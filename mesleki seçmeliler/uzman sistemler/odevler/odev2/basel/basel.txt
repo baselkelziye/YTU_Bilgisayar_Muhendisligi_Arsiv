@@ -1,0 +1,42 @@
+%20011906 basel KELZIYE
+
+%bul fonksiyonu Baslangic(baslangic noktasi),X(degisken),[] (bos liste) alir ve sonucu X uzerinde donderir
+%ornek : bul(koridor,X,[]).
+
+%gereken gercekleri tanimlama
+yolvar(koridor,yemek_odasi).
+yolvar(yemek_odasi,cocuk_odasi).
+yolvar(cocuk_odasi,mutfak).
+yolvar(mutfak,oturma_odasi).   
+yolvar(oturma_odasi,camasir_odasi).
+yolvar(oturma_odasi,salon).
+%yolvar(oturma_odasi,yemek_odasi). ek gercek, dongu olusturyo.
+
+
+sarjaleti(salon). %sarj aleti salonda bulunuyor..
+
+
+yol(X,Y):- yolvar(X,Y);yolvar(Y,X). % her yol gidis gelis olmasi icin..
+
+%verilen eleman verilen dizide gecip gecmedigini kontrol eder.
+%sonsuz donguyu onlemek icin kullanildi
+member(X,[X|_]).
+member(X,[_|Tail]):- member(X,Tail).
+
+
+
+gider(X,X,_,[X]). % bir yerden bir yere gider.
+gider(X,Y,GEZILMIS,[X|T]):- yol(X,Z),
+not(member(Z,GEZILMIS)),
+sarjaleti(Y),
+gider(Z,Y,[Z|GEZILMIS],T).
+
+liste_yazdir([]):-nl. %liste bos ise yeni satir yazdir
+liste_yazdir([Head|Tail]):- write(Head), write('-> '), liste_yazdir(Tail). %ilk elemani yazdir tail i  birdaha yolla
+
+
+bul(Baslangic,X,V):-
+    sarjaleti(X),
+    not(member(Baslangic,V)),
+    gider(Baslangic,X,V,G),
+   liste_yazdir(G).
