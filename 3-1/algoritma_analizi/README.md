@@ -20,6 +20,7 @@ BLM 3021 Dönem 3 Bahar Dersi
   
 ## Faydalı Olabilecek Kaynaklar
 [Çıkmış Sorular](https://drive.google.com/drive/folders/1YTktnEEZZ0IPxE-IW4bws_R9TWyHQVkE)
+
 [Abdul Bari - Introduction to Algorithms](https://www.youtube.com/watch?v=0IAPZzGSbME&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O)
 
 ## Katkı
