@@ -1,0 +1,23 @@
+# Matematik 2
+
+Ders bilgi
+
+
+
+## Derse dair öneriler
+
+- 
+
+
+
+  
+## Faydalı Olabilecek Kaynaklar
+
+
+## Katkı
+
+Katkılara her zaman açığız!
+
+Başlamak `Contributor.md'ye bakın.
+
+Lütfen bu projenin `davranış kurallarına` uyun.
