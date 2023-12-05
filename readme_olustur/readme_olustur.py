@@ -88,10 +88,18 @@ def readme_ye_giris_ekle(giris_bilgileri):
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open('README.md', 'a') as f:
-        f.write(f"\n## {repo_kullanimi_bilgileri['baslik']}\n\n")
+        f.write(f"\n\n\n## {repo_kullanimi_bilgileri['baslik']}\n\n")
         f.write(f"{repo_kullanimi_bilgileri['aciklama']}\n")
+        for aciklama in repo_kullanimi_bilgileri['aciklamalar']:
+            f.write(f"- {aciklama}\n")
+        f.write(f"\n\n{repo_kullanimi_bilgileri['talimat']}\n")
         for talimat in repo_kullanimi_bilgileri['talimatlar']:
             f.write(f"- {talimat}\n")
+        f.write(f"\n\n{repo_kullanimi_bilgileri['kavram']}\n")
+        for kavram in sorted(repo_kullanimi_bilgileri['kavramlar'], key=lambda x: x['kavram'].lower()):
+            f.write(f"- {kavram['kavram']}\n")
+            for aciklama in kavram['aciklamalar']:
+                f.write(f"  - {aciklama}\n")
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open('README.md', 'a') as f:
