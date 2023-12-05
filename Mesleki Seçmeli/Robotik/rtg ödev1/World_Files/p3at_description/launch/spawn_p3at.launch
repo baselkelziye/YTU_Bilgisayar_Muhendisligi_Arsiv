@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="robot_name" default="robot1"/>
+  <arg name="pose_args" default=""/>
+
+  
+  <node pkg="gazebo_ros" type="spawn_model" name="spawn_model_$(arg robot_name)" args="-urdf -param $(arg robot_name)/robot_description -namespace $(arg robot_name) -model pioneer3at_$(arg robot_name) $(arg pose_args)"/>
+
+  <group ns="$(arg robot_name)">
+    
+    <param name="robot_description" command="$(find xacro)/xacro '$(find p3at_description)/urdf/pioneer3at.urdf.xacro' robot_name:=$(arg robot_name)" />
+  
+    <param name="tf_prefix" type="string" value="$(arg robot_name)" />
+  
+    <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+      <!--<remap from="robot_description" to="robot_description_$(arg robot_name)" />-->
+    </node>  
+  </group>
+
+</launch>

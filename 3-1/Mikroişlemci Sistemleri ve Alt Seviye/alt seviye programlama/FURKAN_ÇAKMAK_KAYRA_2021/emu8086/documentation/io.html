@@ -1,0 +1,442 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>I/O ports and Hardware Interrupts</TITLE>
+
+<META name="description" content="the emulation of i/o ports and hardware interrupts">
+
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+<!--- insert -->
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2>
+<B>I/O ports and Hardware Interrupts</B>
+</FONT>
+
+<BR><BR>
+
+<BR>
+
+
+The emulator does not reproduce any input/output devices of the original IBM PC &reg;, however theoretically it may be possible to create emulation of the original ibm pc devices. emu8086 supports user-created virtual devices that can be accessed from assembly language program using <b>in</b> and <b>out</b> instructions.
+devices that can be created by anyone with basic programming experience in any high or low level programming language.
+the simplest virtual device in assembly language can be found in examples: <b>simplest.asm</b>
+<br><br>
+
+
+<HR>
+
+<br>
+<b>Input / Output ports</b>
+<br><br>
+
+
+emu8086 supports additional devices that can be created by anyone with basic programming experience in any language
+device can be written in any language, such as: java, visual basic,
+vc++, delphi, c#, .net or in any other programming language that allow to directly read and write files.
+for more information and sample source code look inside this folder: <B>c:\emu8086\DEVICES\DEVELOPER\</B>
+
+<BR><BR>
+
+The latest version of the emulator has no reserved or fixed I/O ports, input / output addresses for custom
+devices are from <B>0000 to 0FFFFh</B> (0 to 65535), but it is important that two devices that use the same ports do not run simultaneously to avoid hardware conflict.
+
+<BR><BR>
+
+
+Port <font face=fixedsys>100</font> corresponds to byte <font face=fixedsys>100</font> in this file: <b>c:\emu8086.io</b>
+, port <font face=fixedsys>0</font> to byte <font face=fixedsys>0</font>, port <font face=fixedsys>101</font> to byte <font face=fixedsys>101</font>, etc...<br>
+
+
+<BR><BR>
+
+
+
+
+
+
+
+
+
+
+
+<HR>
+<BR>
+<B>Emulation of Hardware Interrupts</B>
+
+
+<br><br>
+
+
+
+  External hardware interrupts can be triggered by external peripheral devices and
+  microcontrollers or by the 8087 mathematical coprocessor.
+
+
+<br><br>
+
+Hardware interrupts are disabled when interrupt flag (IF) is set to 0. when interrupt flag is set to 1,
+the emulator continually checks first 256 bytes of this file <b>c:\emu8086.hw</b>
+if any of the bytes is none-zero the microprocessor transfers control
+to an interrupt handler that matches the triggering byte offset in <b>emu8086.hw</b> file <NOBR>(0 to 255)</NOBR>
+according to the interrupt vector table <NOBR>(memory 0000-0400h)</NOBR> and resets the byte in <b>emu8086.hw</b> to 00.
+
+
+<br><br>
+
+These instructions can be used to disable and enable hardware interrupts:
+
+<br><br>
+<b>cli</b> - clear interrupt flag (disable hardware interrupts).
+<br>
+<b>sti</b> - set interrupt flag (enable hardware interrupts).
+
+<br><br>
+by default hardware interrupts are enabled and are disabled automatically when software or hardware interrupt is in the middle of the execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HR>
+<BR>
+<B>Examples of Custom I/O Devices</B>
+
+<BR><BR>
+Ready devices are available from <B>virtual devices</B> menu of the emulator.
+
+<BR><BR>
+
+<UL>
+
+<li><b>Traffic Lights</b> - port 4 (word)<br><br>
+the traffic lights are controlled by sending data to i/o port 4.<br>
+there are 12 lamps: 4 green, 4 yellow, and 4 red.<br><br>
+
+you can set the state of each lamp by setting its bit:<br><br>
+<b>1</b> - the lamp is turned on.<br>
+<b>0</b> - the lamp is turned off.<br><br>
+
+only 12 low bits of a word are used (0 to 11), last bits (12 to 15) are unused.<br><br>
+
+for example:<BR><BR>
+<FONT FACE="Fixedsys">
+MOV AX, 0000001011110100b<BR>
+OUT 4, AX<BR><BR>
+</FONT>
+
+<IMG SRC="img/traffic.gif">
+
+<BR><BR>
+we use yellow hexadecimal digits in caption (to achieve compact view), here's a conversion:<BR>
+<PRE><FONT FACE="Fixedsys">Hex - Decimal
+
+A   -   10
+B   -   11
+C   -   12    (unused)
+D   -   13    (unused)
+E   -   14    (unused)
+F   -   15    (unused)</FONT></PRE><BR>
+
+
+first operand for <B>OUT</B> instruction is a port number (<B>4</B>), second operand
+is a word (<B>AX</B>) that is written to the port. first operand must be an immediate byte
+value (0..255) or <B>DX</B> register. second operand must be <B>AX</B> or <B>AL</B> only.
+
+<BR><BR>
+
+see also <B>traffic_lights.asm</B> in c:\emu8086\examples.
+
+<BR><BR>
+
+<HR>
+
+<BR>
+if required you can read the data from port using <B>IN</B> instruction, for example:<BR>
+<BR>
+<FONT FACE="Fixedsys">
+IN AX, 4<BR><BR>
+</FONT>
+
+first operand of <B>IN</B> instruction (<B>AX</B>) receives the value from port,
+second operand (<B>4</B>) is a port number. first operand must be <B>AX</B> or <B>AL</B> only.
+second operand must be an immediate byte value (0..255) or <B>DX</B> register.
+<BR><BR>
+<HR>
+<BR><BR>
+</LI>
+
+
+<li><b>Stepper Motor</b> - port 7 (byte)<br><br>
+the stepper motor is controlled by sending data to i/o port 7.<br><br>
+stepper motor is electric motor that can be precisely controlled by
+signals from a computer.<br><br>
+the motor turns through a precise angle each time it receives a signal.<br><br>
+by varying the rate at which signal pulses are produced,
+the motor can be run at different speeds or turned through
+an exact angle and then stopped.<br><br>
+
+This is a basic 3-phase stepper motor, it has 3 magnets controlled by bits <b>0, 1 and 2</b>.
+other bits (3..7) are unused.
+<br><br>
+
+When magnet is working it becomes red. The arrow in the left upper corner shows
+the direction of the last motor move. Green line is here just to see that it is
+really rotating.
+
+<BR><BR>
+
+<IMG SRC="img/stepper.gif" WIDTH=237 HEIGHT=215>
+
+<BR><BR>
+
+For example, the code below will do three clock-wise half-steps:<BR><BR>
+<FONT FACE="Fixedsys">
+MOV AL, 001b   ; initialize.<BR>
+OUT 7, AL<BR><BR>
+
+MOV AL, 011b   ; half step 1.<BR>
+OUT 7, AL<BR><BR>
+
+MOV AL, 010b   ; half step 2.<BR>
+OUT 7, AL<BR><BR>
+
+MOV AL, 110b   ; half step 3.<BR>
+OUT 7, AL<BR><BR>
+</FONT>
+
+If you ever played with magnets you will understand how it works.
+try experimenting, or see <B>stepper_motor.asm</B> in c:\emu8086\examples.
+
+<BR><BR>
+If required you can read the data from port using <B>IN</B> instruction, for example:<BR>
+<BR>
+<FONT FACE="Fixedsys">
+IN AL, 7<BR><BR>
+</FONT>
+
+Stepper motor sets topmost bit of byte value in port 7 when it's ready.
+
+<HR>
+
+<BR><BR>
+
+</LI>
+
+
+<li><b>Robot</b> - port 9 (3 bytes)<br><br>
+
+
+<img src="img/robot.gif" width=530 height=352>
+
+<br><br>
+The robot is controlled by sending data to i/o port 9.<br>
+<br><br>
+
+The first byte (port 9) is a <b>command register</b>. set values to
+this port to make robot do something. supported values:<br><br>
+<table border=1 cellpadding=7>
+<tr>
+<td bgcolor=yellow>decimal value</td><td bgcolor=yellow>binary value</td><td bgcolor=yellow>action</td>
+</tr>
+<tr>
+<td align=center valign=center><b>0</b> </td> <td>00000000</td> <td> do nothing.</td>
+</tr>
+<td align=center valign=center><b>1</b> </td> <td>00000001</td> <td> move forward.</td>
+</tr>
+<tr>
+<td align=center valign=center><b>2</b> </td> <td>00000010</td> <td> turn left.</td>
+</tr>
+<tr>
+<td align=center valign=center><b>3</b> </td> <td>00000011</td> <td> turn right.</td>
+</tr>
+<tr>
+<td align=center valign=center><b>4</b> </td> <td>00000100</td> <td>examine.
+           examines an object in front using sensor. when robot completes the task,
+           result is set to <b>data register</b> and <b>bit #0</b> of <b>status register</b>
+           is set to <b>1</b>.</td>
+</tr>
+
+<tr>
+<td align=center valign=center><b>5</b> </td> <td>00000101</td> <td> switch on a lamp.</td>
+</tr>
+
+<tr>
+<td align=center valign=center><b>6</b> </td> <td>00000110</td> <td> switch off a lamp.</td>
+</tr>
+
+</table>
+
+<BR><BR>
+
+The second byte (port 10) is a <b>data register</b>. this register
+is set after robot completes the <b>examine</b> command:<br><br>
+
+<table border=1 cellpadding=7>
+<tr>
+<td bgcolor=yellow>decimal value</td><td bgcolor=yellow>binary value</td><td bgcolor=yellow>meaning</td>
+</tr>
+<tr>
+<td align=center valign=center><b>255</b></td>  <td>11111111</td> <td>wall</td>
+</tr>
+<tr>
+<td align=center valign=center><b>0</b></td>  <td>00000000</td> <td>nothing</td>
+</tr>
+<tr>
+<td align=center valign=center><b>7</b></td>  <td>00000111</td> <td>switched-on lamp</td>
+</tr>
+<tr>
+<td align=center valign=center><b>8</b></td>  <td>00001000</td> <td>switched-off lamp</td>
+</tr>
+</table>
+
+<br><br>
+
+The third byte (port 11) is a <b>status register</b>. read values from
+this port to determine the state of the robot. each bit has
+a specific property:<br><br>
+<table border=1 cellpadding=7>
+<tr>
+<td bgcolor=yellow><nobr>bit number</nobr></td><td bgcolor=yellow>description</td>
+</tr>
+<tr>
+<td><b>bit #0 </b> </td><td>  <b>zero</b> when there is no new data in <b>data register</b>,
+             <b>one</b> when there is new data in <b>data register</b>.</td>
+</tr>
+<tr>
+<td><b>bit #1 </b> </td><td>  <b>zero</b> when robot is ready for next command,
+      <b>one</b> when robot is busy doing some task.</td>
+</tr>
+<tr>
+<td><b>bit #2 </b> </td><td>  <b>zero</b> when there is no error on last command execution,
+           <b>one</b> when there is an error on command execution (when robot cannot
+           complete the task: move, turn, examine, switch on/off lamp).</td>
+</tr>
+</table>
+
+<br><br>
+
+example:<br>
+<PRE><FONT FACE="Fixedsys">
+MOV AL, 1  ; move forward.
+OUT 9, AL  ;
+
+MOV AL, 3  ; turn right.
+OUT 9, AL  ;
+
+MOV AL, 1  ; move forward.
+OUT 9, AL  ;
+
+MOV AL, 2  ; turn left.
+OUT 9, AL  ;
+
+MOV AL, 1  ; move forward.
+OUT 9, AL  ;
+</FONT></PRE>
+
+<BR>
+
+keep in mind that robot is a
+mechanical creature and it takes
+some time for it to complete
+a task. you should always check bit#1 of <b>status register</b>
+before sending data to port 9, otherwise
+the robot will reject your command and "<font color=red><b>busy!</b></font>" will be
+shown. see <b>robot.asm</b> in c:\emu8086\examples.
+
+
+<BR><BR>
+
+<HR>
+
+<BR>
+
+
+<B>Creating Custom Robo-World Map</B>
+
+<BR><BR>
+
+It is possible to change the default map for the robot using the tool box.<br><br>
+if you click the robot button and place robot over existing robot it
+will turn 90 degrees counter-clock-wise. to manually move the robot
+just place it anywhere else on the map.<br><br>
+
+If you click lamp button and click switched-on lamp
+the lamp will be switched-off, if lamp is
+already switched-off it will be deleted.
+click over empty space will create a new switched-on lamp. <br><br>
+
+Placing wall over existing wall deletes the wall.
+<br><br>
+
+Current version is limited to a single robot only. if you forget to place
+a robot on the map it will be placed in some random coordinates.
+
+<br><br>
+When robot device is closed the map is automatically saved inside this file: <nobr><b>c:\emu8086\devices\robot_map.dat</b></nobr>
+<br>
+It is possible to have several maps by renaming and coping this file before starting the robot device.
+
+<br><br>
+The right-click over the map brings up a popup menu that allows to switch-on or switch-off all the lamps at once.
+<br><br>
+
+<HR>
+
+</LI>
+
+
+</UL>
+
+
+
+
+
+
+<BR><BR>
+
+
+For a list of frequently asked questions click <A HREF="http://www.emu8086.com/dr/emu8086_assembler_solutions_faq.html"><B><u>here</u></B></A>.
+<BR><BR>
+
+
+
+</FONT>
+
+
+<!--- eof -->
+
+
+</BODY>
+
+</HTML>

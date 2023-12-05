@@ -1,0 +1,155 @@
+<html>
+
+	<head>
+		<title>debug</title>
+		<meta name="description" content="Extended Debug for the emulator">
+		<style>
+			a:link {text-decoration: none}
+			a:visited {text-decoration: none}
+			a:hover {text-decoration: none; color:#ff0000}
+		</style>
+	</head>
+
+	<body leftmargin=70 topmargin=70 bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+		<font face=verdana>
+
+
+
+
+
+
+
+			<B>Extended Debug For The Emulator</B>
+
+
+			<br><br>
+
+<!-- s -->
+
+			<ul>
+
+				<li><b>c</b> - compare several bytes (arrays). For example:<br>
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>org</font> 100h
+<font color=#0000FF>jmp</font> a
+v1 <font color=#000064>db</font>  1,4,3,4,5,6,7
+v2 <font color=#000064>db</font>  1,5,3,0,5,6,7
+a:
+<font color=#0000FF>mov</font> <font color=#C80000>ax</font>, v1
+<font color=#0000FF>mov</font> <font color=#C80000>al</font>, v2
+<font color=#0000FF>mov</font> <font color=#C80000>dx</font>, v1
+<font color=#0000FF>mov</font> <font color=#C80000>dl</font>, v2
+<font color=#0000FF>ret</font>
+</font></pre>
+<!-- emu8086 version 4.00-Beta-3    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+			      To compare v1 and v2 type the following:<br><br>
+			      <b> c v1 L 7 v2</b><br><br>
+
+					<b>L</b> denotes the size of the array.	If L parameter is not specified this command compares 8 bytes by default. For example to compare 8 bytes at offsets CS:100 and CS:233 type the following:<br><br>
+
+				  <b> c 100 233</b><br><br>
+
+				  It is also possible to use registers as parameters, for example:<br><br>
+
+				  <b>c SI L 20h DI</b><br><br>
+
+				  The command outputs only those addresses with values that are different. <br>
+				  Equal bytes are not printed out.
+				  <br><br>
+
+				<li><b>i</b> - input and display byte from a specified port. For example:
+					<br><br>
+					<b>i 123</b>
+					<br><br>
+					To input a word value use <b>iw</b> command.
+					<br><br>
+
+
+				<li><b>o</b> - output byte to a specified port. For example:
+					<br><br>
+					<b>o 123 55</b>
+					<br><br>
+					To output a word value use <b>ow</b> command. For example:
+					<br><br>
+					<b>ow 123 5512</b>
+					<br><br>
+
+
+
+				<li><b>d</b> - dump 128 bytes at specified address. For example:
+					<br><br>
+
+				    <b>d ds:3 </b><br>
+				    <b>d ds:[bx] </b><br>
+				    <b>d ds:[bx+si] </b><br>
+				    <b>d bx + 5</b><br>
+				    <b>d 10 </b>
+					<br><br>
+				    If no segment is specified CS is used by default. Square brackets are optional.
+				    Subsequent use of <b>d</b> command without parameters shows next block of the memory.
+					<br><br>
+					<b> L </b> parameter can be used to specify the number of bytes to dump. For example:
+
+					There must be spaces around L to distingush from variable offset, for example:
+					<br><br>
+                    <b>d lion L 10</b>
+                    <br><br>
+					The above command dumps 16 bytes at offset of a variable called lion.
+					<br><br>
+					If requred to denote variable L, declared as <b>L db 5</b>, brackets must be used. For example:
+					<br><br>
+					<b>d [L]</b>
+					<br>
+					<b>d [L] L 1</b>
+                    <br><br>
+
+				<li><b>t</b> - single step.
+					<br><br>
+
+				<li><b>p</b> - step over (procedure or interrupt).
+					<br><br>
+
+				<li><b>r</b> - show all registers and current instruction at CS:IP.
+					<br><br>
+
+					<ul>
+						<li><b>rf</b> - view/set flags.
+						<li><b>r</b> [register name] - view/set register value.
+					</ul>
+					<br><br>
+
+
+			</ul>
+
+			<br><br>
+			Note: All output values are in hex. All input parameters must be in hex. The <b>h</b> suffix is not required.<br><br>
+			The debug commands and output may not be compatible with the original Microsoft debug because of the enhanced features. The original debug cannot process commands such as: <br>
+			<b>d bx+si</b><br>
+			<b>iw 100</b><br>
+			<b>ow 100 1234</b><br>
+			...
+			<br><br>
+
+			More commands are to be added in the nearest future.
+
+			<br><br>
+			<font size=1>
+				<a href="http://www.microsoft.com" target="_blank">Microsoft</a> &reg; is a registered trademark of Microsoft Corporation.<br>
+			</font>
+
+			<br><br>
+
+			<!-- e -->
+
+
+
+			<a href="http://www.emu8086.com/dr/emu8086_assembler_solutions_faq.html">Frequently asked questions</a>
+
+		</font>
+
+	</body>
+
+</html>

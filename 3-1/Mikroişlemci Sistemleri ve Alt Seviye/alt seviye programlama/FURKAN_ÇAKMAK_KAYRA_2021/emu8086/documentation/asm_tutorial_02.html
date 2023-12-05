@@ -1,0 +1,324 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 2)</TITLE>
+
+<META name="description" content="Memory Access using 8086 Assembler">
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 2)</B>
+</FONT>
+
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Memory Access</B></FONT>
+<BR><BR>
+
+to access memory we can use these four registers: <B>BX, SI, DI, BP</B>.<BR>
+combining these registers inside <B>[ ]</B> symbols, we can get different memory locations.
+these combinations are supported (addressing modes):
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+
+<TABLE BORDER=1 COLS=3 CELLPADDING=10>
+<TR>
+
+<TD>
+[BX + SI]<BR>
+[BX + DI]<BR>
+[BP + SI]<BR>
+[BP + DI]<BR>
+</TD>
+
+<TD>
+[SI]<BR>
+[DI]<BR>
+d16 (variable offset only)<BR>
+[BX]<BR>
+</TD>
+
+<TD>
+[BX + SI + d8]<BR>
+[BX + DI + d8]<BR>
+[BP + SI + d8]<BR>
+[BP + DI + d8]<BR>
+</TD>
+
+</TR>
+
+<TR>
+
+<TD>
+[SI + d8]<BR>
+[DI + d8]<BR>
+[BP + d8]<BR>
+[BX + d8]<BR>
+</TD>
+
+<TD>
+[BX + SI + d16]<BR>
+[BX + DI + d16] <BR>
+[BP + SI + d16]<BR>
+[BP + DI + d16]<BR>
+</TD>
+
+<TD>
+[SI + d16]<BR>
+[DI + d16]<BR>
+[BP + d16]<BR>
+[BX + d16]<BR>
+</TD>
+
+</TR>
+</TABLE>
+
+</FONT>
+
+<BR>
+
+<B>d8</B> - stays for 8 bit signed immediate displacement (for example: 22, 55h, -1, etc...)<BR><BR>
+
+<B>d16</B> - stays for 16 bit signed immediate displacement (for example: 300, 5517h, -259, etc...).<BR><BR>
+
+displacement can be a immediate value or offset of a variable, or even both.
+if there are several values, assembler evaluates all values and calculates a single immediate value..<BR><BR>
+
+displacement can be inside or outside of the <B>[ ]</B> symbols, assembler
+generates the same machine code for both ways.
+<BR><BR>
+
+displacement is a <B>signed</B> value, so it can be both positive or negative.
+<BR><BR>
+
+generally the compiler takes care about difference
+between <B>d8</B> and <B>d16</B>, and generates the required machine code.
+
+<BR><BR><BR>
+
+for example, let's assume that <B>DS = 100</B>, <B>BX = 30</B>, <B>SI = 70</B>.<BR>
+The following addressing mode:
+<B>[BX + SI] + 25</B>
+<BR>
+is calculated by processor to this physical address: <NOBR><B>100 * 16 + 30 + 70 + 25 = 1725</B>.</NOBR>
+<BR><BR>
+by default <B>DS</B> segment register is used for all modes
+except those with <B>BP</B> register, for these <B>SS</B> segment
+register is used.
+
+<BR><BR>
+there is an easy way to remember all those possible combinations using this chart:
+<BR><BR>
+<IMG SRC="img/addressing_mode.gif">
+<BR>
+you can form all valid combinations by taking only one item from each column or skipping
+the column by not taking anything from it. as you see <B>BX</B> and <B>BP</B> never go
+together. <B>SI</B> and <B>DI</B> also don't go together.
+here are an examples of a valid
+addressing modes: &nbsp; &nbsp;
+<B>[BX+5]</B>  &nbsp; &nbsp;   , &nbsp; &nbsp;  <B>[BX+SI]</B>  &nbsp; &nbsp;   , &nbsp; &nbsp;  <B>[DI+BX-4]</B>
+
+<BR><BR><BR>
+
+<HR>
+
+<BR><BR>
+the value in segment register (CS, DS, SS, ES) is called a <B>segment</B>,<BR>
+and the value in purpose register (BX, SI, DI, BP) is called an <B>offset</B>.<BR>
+When DS contains value <B>1234h</B> and SI contains the value <B>7890h</B> it can be also recorded
+as <B>1234:7890</B>. The physical address will be 1234h * 10h + 7890h = 19BD0h.
+
+<BR><BR>
+
+if zero is added to a decimal number it is multiplied by 10, however <B>10h = 16</B>, so
+if zero is added to  a hexadecimal value, it is multiplied by 16, for example:
+
+<BR><BR>
+
+7h  = 7 <BR>
+70h = 112
+
+<BR><BR><BR>
+
+<HR>
+
+<BR><BR>
+in order to say the compiler about data type,<BR>
+these prefixes should be used:<BR><BR>
+<B>byte ptr</B> - for byte.<BR>
+<B>word ptr</B> - for word (two bytes).<BR><BR>
+for example:<BR>
+<PRE><FONT FACE="Fixedsys">byte ptr [BX]     ; byte access.
+    or
+word ptr [BX]     ; word access.
+</FONT></PRE>
+assembler supports shorter prefixes as well:<BR><BR>
+<b>b.</b> - for <b>byte ptr</b><br>
+<b>w.</b> - for <b>word ptr</b><br><br>
+in certain cases the assembler can calculate the data type automatically.
+<BR><BR><BR>
+
+<HR>
+
+
+
+<BR>
+
+<FONT SIZE=+2><B><U>MOV</U> instruction</B></FONT>
+<BR><BR>
+
+<UL>
+
+	<LI>
+	copies the <B>second operand</B> (source) to the <B>first
+	operand</B> (destination).<BR><BR>
+	</LI>
+
+	<LI>
+	the source operand can be an immediate value,
+	general-purpose register or memory location.<BR><BR>
+	</LI>
+
+	<LI>
+	the destination register can be a general-purpose register, or memory location.<BR><BR>
+	</LI>
+
+	<LI>
+	both operands must be the same size, which can be a byte or a word.
+	</LI>
+</UL>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+
+these types of operands are supported:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	MOV REG, memory<BR>
+	MOV memory, REG<BR>
+	MOV REG, REG<BR>
+	MOV memory, immediate<BR>
+	MOV REG, immediate
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>:<FONT SIZE=-1> AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.</FONT><BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...<BR><BR>
+<B>immediate</B>: 5, -24, 3Fh, 10001101b, etc...<BR><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+
+for segment registers only these types of <B>MOV</B> are supported:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	MOV SREG, memory<BR>
+	MOV memory, SREG<BR>
+	MOV REG, SREG<BR>
+	MOV SREG, REG<BR>
+</FONT>
+</BLOCKQUOTE>
+
+<B>SREG</B>: DS, ES, SS, and only as second operand: CS.<BR><BR>
+<B>REG</B>:<FONT SIZE=-1> AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.</FONT><BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...<BR><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+the <B>MOV</B> instruction <U>cannot</U> be used to set the value of
+the <B>CS</B> and <B>IP</B> registers.
+
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+here is a short program that demonstrates the use of <B>MOV</B> instruction:
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font face="Terminal">
+<font color=#000064>ORG</font> 100h           <font color=#008000>; this directive required for a simple 1 segment .com program. </font>
+<font color=#0000FF>MOV</font> <font color=#C80000>AX</font>, 0B800h     <font color=#008000>; set AX to hexadecimal value of B800h. </font>
+<font color=#0000FF>MOV</font> <font color=#800000>DS</font>, <font color=#C80000>AX</font>         <font color=#008000>; copy value of AX to DS. </font>
+<font color=#0000FF>MOV</font> <font color=#C80000>CL</font>, <font color=#800080>'A'</font>        <font color=#008000>; set CL to ASCII code of 'A', it is 41h. </font>
+<font color=#0000FF>MOV</font> <font color=#C80000>CH</font>, 1101_1111b <font color=#008000>; set CH to binary value. </font>
+<font color=#0000FF>MOV</font> <font color=#C80000>BX</font>, 15Eh       <font color=#008000>; set BX to 15Eh. </font>
+<font color=#0000FF>MOV</font> <font color=#0064C8>[</font><font color=#C80000>BX</font><font color=#0064C8>]</font>, <font color=#C80000>CX</font>       <font color=#008000>; copy contents of CX to memory at B800:015E </font>
+<font color=#0000FF>RET</font>                <font color=#008000>; returns to operating system. </font>
+
+</font></pre>
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+</TD></TR></TABLE>
+
+<BR><BR>
+you can <B>copy &amp; paste</B> the above program to the code editor,
+and press [<B>Compile and Emulate</B>] button (or press <B>F5</B> key on your keyboard).<BR>
+<BR>
+the emulator window should open with this program loaded, click
+<NOBR>[<B>Single Step</B>]</NOBR>
+button and watch the register values.<BR>
+<BR><BR>
+how to do <B>copy &amp; paste</B>: <BR>
+<OL>
+<LI>
+select the above text using mouse, click before the text
+and drag it down until everything is selected.<BR><BR></LI>
+
+<LI>press <B>Ctrl + C</B> combination to copy.<BR><BR></LI>
+
+<LI>go to the source editor and press <B>Ctrl + V</B>
+combination to paste.</LI>
+
+</OL>
+<BR><BR>
+
+as you may guess, "<B>;</B>" is used for comments, anything after "<B>;</B>" symbol
+is ignored by compiler.<BR><BR>
+<BR>
+you should see something like that when program finishes:<BR><BR>
+<IMG SRC="img/screen01.gif">
+
+<BR><BR>
+actually the above program writes directly to video memory, so you may see that <B>MOV</B>
+is a very powerful instruction.
+
+<BR><BR><BR>
+
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_01.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_03.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+<BR>
+
+</FONT>
+
+
+
+
+
+</BODY>
+
+</HTML>

@@ -1,0 +1,90 @@
+--A1
+DROP TABLE T;
+CREATE TABLE T (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+INSERT INTO T (id, name)
+SELECT generate_series(1, 5), 'a'
+UNION ALL
+SELECT generate_series(6, 10), 'b';
+
+-- H1 hareketi: 'b' olan satırları 'a' yapma
+BEGIN;
+UPDATE T SET name = 'a' WHERE name = 'b';
+-- H2 hareketi: 'a' olan satırları 'b' yapma
+UPDATE T SET name = 'b' WHERE name = 'a';
+-- İşlemi tamamla
+COMMIT;
+select * from T order by id
+
+
+
+
+--A2
+
+DROP TABLE T;
+CREATE TABLE T (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+INSERT INTO T (id, name)
+SELECT generate_series(1, 5), 'a'
+UNION ALL
+SELECT generate_series(6, 10), 'b';
+
+
+-- H2 hareketi: 'a' olan satırları 'b' yapma
+UPDATE T SET name = 'b' WHERE name = 'a';
+-- H1 hareketi: 'b' olan satırları 'a' yapma
+BEGIN;
+UPDATE T SET name = 'a' WHERE name = 'b';
+-- İşlemi tamamla
+COMMIT;
+select * from T order by id
+
+
+--B1 YANA GEÇ COMMIT ETME
+DROP TABLE T;
+CREATE TABLE T (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+INSERT INTO T (id, name)
+SELECT generate_series(1, 5), 'a'
+UNION ALL
+SELECT generate_series(6, 10), 'b';
+
+-- H1 hareketi: 'b' olan satırları 'a' yapma
+BEGIN;
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+UPDATE T SET name = 'a' WHERE name = 'b';
+COMMIT;
+
+select * from T order by id
+
+
+--C1 YANA GEÇ COMMIT ETME
+DROP TABLE T;
+CREATE TABLE T (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
+
+INSERT INTO T (id, name)
+SELECT generate_series(1, 5), 'a'
+UNION ALL
+SELECT generate_series(6, 10), 'b';
+
+-- H1 hareketi: 'b' olan satırları 'a' yapma
+BEGIN;
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+UPDATE T SET name = 'a' WHERE name = 'b';
+COMMIT;
+
+select * from T order by id
+
+
