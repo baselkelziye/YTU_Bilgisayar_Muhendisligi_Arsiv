@@ -874,12 +874,50 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
     - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
 
+
+
 ## Repo Kullanımı
 
-Bu repository'de yer alan ders notlarını ve materyallerini kullanmak için:
-- İlgili dersin klasörünü açın.
-- Notlar ve diğer materyaller arasında gezinin.
+Açıklamalar:
+- 1-1 -> 1. sınıf Güz dönemi
+- 1-2 -> 1. sınıf Bahar dönemi
+- 2-1 -> 2. sınıf Güz dönemi
+- 2-2 -> 2. sınıf Bahar dönemi
+- 3-1 -> 3. sınıf Güz dönemi
+- 3-2 -> 3. sınıf Bahar dönemi
+- 4-1 -> 4. sınıf Güz dönemi
+- 4-2 -> 4. sınıf Bahar dönemi
+- Mesleki Seçmeli -> Mesleki Seçmeli dersler
+- Ara Projeler -> yapılıp yüklenen ara projeler
+- Bitirme Projesi -> yapılıp yüklenen bitirme projeleri
+- readme_olustur -> readme dosyası oluşturmak için kullanılan python kodu
+- burada olmayan bazı çıkmışlara https://drive.google.com/drive/folders/1Cp56VdpdRpAKaAEXbiShMvs23jPNjT1k adresinden ulaşabilirsiniz.
+
+
+Talimatlar:
+- İlgili dönemin/türün klasörünü aç.
+- İlgili dersin klasörünü aç.
+- Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.
+- Ödevler lablar vs. cevapları %100 doğru değildir.
+- Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin.
+
+
+Kavramlar:
+- Ara Proje
+  - Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.
+  - Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
+  - Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.
+  - Ara Proje ve Bitirme Projesi 3 parçadadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.
+  - Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir.
+- Bitirme Projesi
+  - Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
+- Lab
+  - Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
+  - Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
 
 ## Yazarın Notları
 
 - Bölüm dersleri özelinde neredeyse her dersin çıkmış soruları var ve hocalar sınavlarda ya bu sorulara benzer ya da aynı sorular soruyorlar. Benzer şekilde ödev için konuşmak gerekirse ödevlerin büyük bir kısmını ya interneteki kaynaklardan, ya da geçmiş yıllardan alıp biraz değiştirerek ya da değiştirmeden hazırlıyorlar. Labları da geçen senelerin lablarıyla benzer ya da aynı hazırlıyorlar. Bu sebeplerden dolayı eski kaynaklardan faydalanmak çok önemli.
+- Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
+- Mesleki seçmeli derslerin çeşitliliği bolognada gördüğünüz kadar bol değil. Genelde hep aynı mesleki seçimlik dersler açılır. Her sene 1-2 tane farklı mesleki seçmeli açılır.
+- Dersi iyi anlatıp aynı zamanda geçmekte de sizi zorlamayacak hocalar BD, MFA
