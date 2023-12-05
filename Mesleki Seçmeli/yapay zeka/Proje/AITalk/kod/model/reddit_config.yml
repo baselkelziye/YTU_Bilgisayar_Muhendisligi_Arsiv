@@ -1,0 +1,11 @@
+https : "https://old.reddit.com/"
+
+no_of_pages : 1
+#provide a list of subreddits you want to scrape
+subreddits: ["r/CasualIAmA", "r/casualconversation", "r/artificial", "r/MachineLearning", "r/LanguageTechnology"]
+
+# Sorting type, set to hot, new, rising, controversial, top, or gilded
+sort : "top" 
+
+# Sorting timespan, set to hour, week, month, year, or all.
+time : "all"
