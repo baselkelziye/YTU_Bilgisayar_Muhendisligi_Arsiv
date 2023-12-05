@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="x_pos" default="-1.990936"/>
+  <arg name="y_pos" default="6.853780"/>
+  <arg name="z_pos" default="3.0"/>
+  
+<arg name="paused" default="false"/>
+<arg name="use_sim_time" default="true"/>
+<arg name="gui" default="true"/>
+<arg name="verbose" default="false"/>
+<arg name="world_name" default="worlds/my.world"/>
+
+<!-- Launch gazebo -->
+<node name="gazebo" pkg="gazebo_ros" type="gzserver" respawn="false"
+  output="screen" args="$(find p3at_gazebo)/worlds/my.world"/>
+
+<node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
+
+<param name="robot_description" command="$(find xacro)/xacro '$(find p3at_description)/urdf/pioneer3at.urdf.xacro' robot_name:='/' " />
+
+<node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param /robot_description -model pioneer3at"/>
+
+<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
+
+</launch>
