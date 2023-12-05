@@ -1,0 +1,450 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 3)</TITLE>
+
+<META name="description" content="Variables - 8086 assembler tutorial for beginners">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 3)</B>
+</FONT>
+
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Variables</B></FONT>
+<BR><BR>
+
+Variable is a memory location. For a programmer it is much easier to have some
+value be kept in a variable named "<B>var1</B>" then at the address 5A73:235B,
+especially when you have 10 or more variables.
+
+<BR><BR>
+Our compiler supports two types of variables: <B>BYTE</B> and <B>WORD</B>.
+
+<BR><BR>
+
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+Syntax for a variable declaration:<BR><BR>
+<I><U>name</U></I> <B>DB</B> <I><U>value</U></I><BR><BR>
+<I><U>name</U></I> <B>DW</B> <I><U>value</U></I><BR><BR>
+
+<B>DB</B> - stays for <U>D</U>efine <U>B</U>yte.<BR>
+<B>DW</B> - stays for <U>D</U>efine <U>W</U>ord.<BR>
+<BR>
+
+<I><U>name</U></I> - can be any letter or digit combination,
+                     though it should start with a letter.
+                     It's possible to declare unnamed variables
+                     by not specifying the name (this variable
+                     will have an address but no name).<BR><BR>
+<I><U>value</U></I> - can be any numeric value in any supported
+                      numbering system (hexadecimal, binary, or decimal),
+                      or "<B>?</B>" symbol for variables that are not
+                      initialized.
+</TD></TR></TABLE>
+
+
+<BR><BR>
+As you probably know from <I>part 2</I> of this tutorial,
+<B>MOV</B> instruction is used to copy values from source to destination.
+<BR>
+Let's see another example with <B>MOV</B> instruction:
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+MOV AL, var1
+MOV BX, var2
+
+RET    ; stops the program.
+
+VAR1 DB 7
+var2 DW 1234h
+</FONT></PRE>
+</TD></TR></TABLE>
+<BR>
+Copy the above code to the source editor, and press <B>F5</B> key to
+compile it and load in the emulator.
+You should get something like:
+<BR><BR>
+<IMG SRC="img/tut3a.gif" WIDTH=371 HEIGHT=347>
+<BR><BR>
+As you see this looks a lot like our example, except that variables are replaced
+with actual memory locations. When compiler makes machine code, it automatically
+replaces all variable names with their <B>offsets</B>. By default segment is
+loaded in <B>DS</B> register (when <B>COM</B> files is loaded the value
+of <B>DS</B> register is set to the same value as <B>CS</B> register - code segment).
+
+<BR><BR>
+In memory list first row is an <B>offset</B>, second row is a
+<B>hexadecimal value</B>, third row is <B>decimal value</B>, and last row is
+an <B>ASCII</B> character value.
+
+<BR><BR>
+Compiler is not case sensitive, so "<B>VAR1</B>" and "<B>var1</B>" refer to the same variable.
+
+<BR><BR>
+The offset of <B>VAR1</B> is <B>0108h</B>, and full address is <B>0B56:0108</B>.
+<BR><BR>
+The offset of <B>var2</B> is <B>0109h</B>, and full address is <B>0B56:0109</B>,
+this variable is a <B>WORD</B> so it occupies <B>2 BYTES</B>.
+It is assumed that low byte is stored at lower address,
+so <B>34h</B> is located before <B>12h</B>.
+
+<BR><BR>
+You can see that there are some other instructions after the <B>RET</B>
+instruction,
+this happens because disassembler has no idea about where the data starts,
+it just processes the values in memory and it understands them as
+valid 8086 instructions (we will learn them later).<BR>
+You can even write the same program using <B>DB</B> directive only:
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+DB 0A0h
+DB 08h
+DB 01h
+
+DB 8Bh
+DB 1Eh
+DB 09h
+DB 01h
+
+DB 0C3h
+
+DB 7
+
+DB 34h
+DB 12h
+</FONT></PRE>
+</TD></TR></TABLE>
+<BR>
+Copy the above code to the source editor, and press <B>F5</B> key to
+compile and load it in the emulator. You should get the same disassembled code,
+and the same functionality!
+
+<BR><BR>
+As you may guess, the compiler just converts the program source to
+the set of bytes, this set is called <B>machine code</B>, processor
+understands the <B>machine code</B> and executes it.
+
+<BR><BR>
+<B>ORG 100h</B> is a compiler directive (it tells compiler how to
+handle the source code). This directive is very important when you
+work with variables. It tells compiler that the executable file
+will be loaded at the <B>offset</B> of 100h (256 bytes), so compiler
+should calculate the correct address for all variables when
+it replaces the variable names with their <B>offsets</B>.
+Directives are never converted to any real <B>machine code</B>.<BR>
+Why executable file is loaded at <B>offset</B> of <B>100h</B>? Operating
+system keeps some data about the program in the first 256 bytes of
+the <B>CS</B> (code segment), such as command line parameters and etc.<BR>
+Though this is true for <B>COM</B> files only, <B>EXE</B> files are loaded
+at offset of <B>0000</B>, and generally use special segment for variables.
+Maybe we'll talk more about <B>EXE</B> files later.
+
+<BR><BR>
+
+<HR>
+
+<BR>
+
+<FONT SIZE=+2><B>Arrays</B></FONT>
+<BR><BR>
+
+Arrays can be seen as chains of variables. A text string is an example of a
+byte array, each character is presented as an ASCII code value (0..255).
+
+<BR><BR>
+Here are some array definition examples:<BR><BR>
+<FONT FACE="Fixedsys">
+a DB 48h, 65h, 6Ch, 6Ch, 6Fh, 00h<BR>
+b DB 'Hello', 0
+</FONT>
+
+<BR><BR>
+<I>b</I> is an exact copy of the <I>a</I> array, when compiler sees
+a string inside quotes it automatically converts it to set of bytes. This
+chart shows a part of the memory where these arrays are declared:<BR><BR>
+
+<IMG SRC="img/array.gif" WIDTH=487 HEIGHT=109>
+
+<BR><BR>
+
+You can access the value of any element in array using square brackets,
+for example:<BR>
+<FONT FACE="Fixedsys">
+MOV AL, a[3]
+</FONT>
+<BR><BR>
+You can also use any of the memory index registers <B>BX, SI, DI, BP</B>,
+for example:<BR>
+<FONT FACE="Fixedsys">
+MOV SI, 3<BR>
+MOV AL, a[SI]<BR>
+</FONT>
+
+<BR><BR>
+
+If you need to declare a large array you can use <B>DUP</B> operator.<BR>
+The syntax for <B>DUP</B>:<BR><BR>
+<FONT FACE="Fixedsys">
+<U>number</U> DUP ( <U>value(s)</U> )
+</FONT>
+<BR>
+<U>number</U> - number of duplicate to make (any constant value).<BR>
+<U>value</U> - expression that DUP will duplicate.<BR><BR>
+
+for example:<BR>
+<FONT FACE="Fixedsys">
+c DB 5 DUP(9)
+</FONT>
+<BR>
+is an alternative way of declaring:<BR>
+<FONT FACE="Fixedsys">
+c DB 9, 9, 9, 9, 9
+</FONT>
+<BR><BR>
+
+one more example:<BR>
+<FONT FACE="Fixedsys">
+d DB 5 DUP(1, 2)
+</FONT>
+<BR>
+is an alternative way of declaring:<BR>
+<FONT FACE="Fixedsys">
+d DB 1, 2, 1, 2, 1, 2, 1, 2, 1, 2
+</FONT>
+<BR><BR>
+Of course, you can use <B>DW</B> instead of <B>DB</B> if it's required to keep
+values larger then 255, or smaller then -128. <B>DW</B> cannot be used
+to declare strings.
+
+<BR><BR>
+
+<HR>
+
+<BR>
+
+<FONT SIZE=+2><B>Getting the Address of a Variable</B></FONT>
+<BR><BR>
+
+There is <B>LEA</B> (Load Effective Address) instruction and
+alternative <B>OFFSET</B> operator. Both <B>OFFSET</B> and
+<B>LEA</B> can be used to get the offset address of the variable.<BR>
+<B>LEA</B> is more powerful because it also allows you to get the address of
+an indexed variables. Getting the address of the variable can be very useful
+in some situations, for example when you need to pass parameters to a procedure.
+<BR><BR>
+
+<HR>
+
+<BR>
+<B>Reminder:</B><BR>
+<FONT SIZE=1>
+In order to tell the compiler about data type,<BR>
+these prefixes should be used:<BR><BR>
+<B>BYTE PTR</B> - for byte.<BR>
+<B>WORD PTR</B> - for word (two bytes).<BR><BR>
+For example:<BR>
+<PRE><FONT FACE="Fixedsys">BYTE PTR [BX]     ; byte access.
+    or
+WORD PTR [BX]     ; word access.
+</FONT></PRE>
+assembler supports shorter prefixes as well:<BR><BR>
+<B>b.</B> - for <B>BYTE PTR</B><BR>
+<B>w.</B> - for <B>WORD PTR</B><BR><BR>
+in certain cases the assembler can calculate the data type automatically.
+<BR><BR>
+</FONT>
+<HR>
+
+<BR><BR>
+
+Here is first example:
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+MOV    AL, VAR1              ; check value of VAR1 by moving it to AL.
+
+LEA    BX, VAR1              ; get address of VAR1 in BX.
+
+MOV    BYTE PTR [BX], 44h    ; modify the contents of VAR1.
+
+MOV    AL, VAR1              ; check value of VAR1 by moving it to AL.
+
+RET
+
+VAR1   DB  22h
+
+END
+</FONT></PRE>
+</TD></TR></TABLE>
+<BR><BR>
+Here is another example, that uses <B>OFFSET</B> instead of <B>LEA</B>:
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+MOV    AL, VAR1              ; check value of VAR1 by moving it to AL.
+
+MOV    BX, OFFSET VAR1       ; get address of VAR1 in BX.
+
+MOV    BYTE PTR [BX], 44h    ; modify the contents of VAR1.
+
+MOV    AL, VAR1              ; check value of VAR1 by moving it to AL.
+
+RET
+
+VAR1   DB  22h
+
+END
+</FONT></PRE>
+</TD></TR></TABLE>
+<BR>
+
+Both examples have the same functionality.<BR><BR>
+These lines:<BR>
+<FONT FACE="Fixedsys">
+LEA    BX, VAR1<BR>
+MOV    BX, OFFSET VAR1
+</FONT>
+<BR>
+are even compiled into the same machine code: <FONT FACE="Fixedsys">MOV    BX, num</FONT><BR>
+<I>num</I> is a 16 bit value of the variable offset.
+
+<BR><BR>
+Please note that only these registers can be used
+inside square brackets (as memory pointers):
+<B>BX, SI, DI, BP</B>!<BR>
+(see previous part of the tutorial).
+
+
+<BR><BR>
+
+<HR>
+
+<BR>
+
+<FONT SIZE=+2><B>Constants</B></FONT>
+<BR><BR>
+
+Constants are just like variables, but they exist only until your program
+is compiled (assembled). After definition of a constant its value cannot
+be changed. To define constants <B>EQU</B> directive is used:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+name EQU &lt; any expression >
+</FONT>
+</BLOCKQUOTE>
+<BR>
+For example:<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<FONT FACE="Fixedsys">
+k EQU 5<BR>
+<BR>
+MOV AX, k
+</FONT>
+</TD></TR></TABLE>
+<BR><BR>
+The above example is functionally identical to code:<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<FONT FACE="Fixedsys">
+MOV AX, 5
+</FONT>
+</TD></TR></TABLE>
+
+
+<BR><BR>
+
+<HR>
+<BR>
+
+You can view variables while your program executes by selecting "<B>Variables</B>"
+from the "<B>View</B>" menu of emulator.
+
+<BR><BR>
+<IMG SRC="img/varview.gif">
+
+<BR><BR>
+
+To view arrays you should click on a variable and set <B>Elements</B> property
+to array size. In assembly language there are not strict data types, so any variable
+can be presented as an array.
+
+<BR><BR>
+Variable can be viewed in any numbering system:<BR>
+<UL>
+<LI><B>HEX</B> - hexadecimal (base 16).<BR></LI>
+<LI><B>BIN</B> - binary (base 2).<BR></LI>
+<LI><B>OCT</B> - octal (base 8).<BR></LI>
+<LI><B>SIGNED</B> - signed decimal (base 10).<BR></LI>
+<LI><B>UNSIGNED</B> - unsigned decimal (base 10).<BR></LI>
+<LI><B>CHAR</B> - ASCII char code (there are 256 symbols, some symbols are invisible).</LI>
+</UL>
+<BR>
+You can edit a variable's value when your program is running, simply double click it,
+or select it and click <B>Edit</B> button.
+
+<BR><BR>
+It is possible to enter numbers in any system, hexadecimal numbers should have
+"<B>h</B>" suffix, binary "<B>b</B>" suffix, octal "<B>o</B>" suffix, decimal numbers
+require no suffix. String can be entered this way:<BR>
+<B>'hello world', 0</B><BR>
+(this string is zero terminated).<BR><BR>
+Arrays may be entered this way:<BR>
+<B>1, 2, 3, 4, 5</B><BR>
+(the array can be array of bytes or words, it depends whether <B>BYTE</B> or <B>WORD</B> is selected
+for edited variable).
+<BR><BR>
+Expressions are automatically converted, for example:<BR>
+when this expression is entered:<BR>
+<B>5 + 2</B><BR>
+it will be converted to <B>7</B> etc...
+
+<BR><BR>
+
+<HR>
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_02.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_04.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+<BR>
+
+</FONT>
+
+
+
+
+</BODY>
+
+</HTML>

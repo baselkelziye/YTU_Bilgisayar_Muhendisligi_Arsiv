@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+		<title>stop on condition</title>
+		<style>
+			a:link {text-decoration: none}
+			a:visited {text-decoration: none}
+			a:hover {text-decoration: none; color:#ff0000}
+		</style>
+	</head>
+
+	<body leftmargin=70 topmargin=70 bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+		<font face=verdana>
+
+
+			<!-- s -->
+
+
+			<font size=+1><B>stop on condition</B><font>
+
+			<br><br>
+			this feature is accessible from <b>debug -&gt; stop on condition</b> menu of the emulator.
+			<br><br>
+			<ul>
+
+				<li>
+					stop on condition works only when its window is open.
+					<br><br>
+				</li>
+
+				<li>
+					expression can be decimal, binary or hexadecimal, for example:
+					<pre><font face=fixedsys>5</font></pre>
+					<pre><font face=fixedsys>101b</font></pre>
+					<pre><font face=fixedsys>34h</font></pre>
+					<b>h</b> suffix must be added to any a hexadecimal values in the expression, for example:
+					<pre><font face=fixedsys>12h</font></pre>
+				</li>
+
+				<li>
+					boolean logic and mathematical operators can be used, for example:
+					<pre><font face=fixedsys>1234h + 1</font></pre>
+					<pre><font face=fixedsys>0FFh - 101b</font></pre>
+					<pre><font face=fixedsys>5 &lt;&lt; 2 </font></pre>
+<table border=1 bordercolor=black cellpadding=0><tr><td bordercolor=white>
+<pre><font face=fixedsys>
+~       not (inverts all bits).
+*       multiply.
+/       divide.
+%       modulus.
++       sum.
+-       subtract (and unary -).
+&lt;&lt;      shift left.
+&gt;&gt;      shift right.
+&       bitwise AND.
+^       bitwise XOR.
+|       bitwise OR.
+</font></pre></td></tr></table>
+<br>
+				</li>
+
+				<li>
+					offset and segment values (for memory <b>byte / word</b>) are always in hex. no suffix is requred.
+					<br><br>
+				</li>
+
+
+			</ul>
+
+			<br><br>
+
+
+			<!-- e -->
+
+
+
+			<a href="http://www.emu8086.com/dr/emu8086_assembler_solutions_faq.html">frequently asked questions</a>
+
+		</font>
+
+	</body>
+
+</html>

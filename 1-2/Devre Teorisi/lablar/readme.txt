@@ -1,0 +1,1 @@
+cevapların doğruluğu %100 değildir

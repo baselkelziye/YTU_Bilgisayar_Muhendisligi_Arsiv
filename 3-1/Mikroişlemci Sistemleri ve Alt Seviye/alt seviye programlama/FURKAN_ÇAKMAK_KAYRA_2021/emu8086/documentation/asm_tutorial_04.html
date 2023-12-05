@@ -1,0 +1,136 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 4)</TITLE>
+
+<META name="description" content="Interrupts - 8086 Assembler">
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 4)</B>
+</FONT>
+
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Interrupts</B></FONT>
+<BR><BR>
+
+Interrupts can be seen as a number of functions. These functions make
+the programming much easier, instead of writing a code to print
+a character you can simply call the interrupt and it will do everything
+for you. There are also interrupt functions that work with disk drive
+and other hardware. We call such functions <B>software interrupts</B>.
+<BR><BR>
+Interrupts are also triggered by different hardware,
+these are called <B>hardware interrupts</B>. Currently we are interested
+in <B>software interrupts</B> only.
+<BR><BR>
+
+<BR>
+To make a <B>software interrupt</B> there is an <B>INT</B> instruction,
+it has very simple syntax:
+<BLOCKQUOTE>
+<B>INT value</B>
+</BLOCKQUOTE>
+Where <B>value</B> can be a number between 0 to 255 (or 0 to 0FFh),<BR>
+generally we will use hexadecimal numbers.
+<BR>
+You may think that there are only 256 functions, but that is not correct.
+Each interrupt may have sub-functions.
+<BR>
+To specify a sub-function <B>AH</B> register should be set before calling
+interrupt.<BR>
+Each interrupt may have up to 256 sub-functions
+(so we get <NOBR>256 * 256 = 65536</NOBR> functions).
+In general <B>AH</B> register is used, but sometimes other registers
+maybe in use. Generally other registers are used to pass parameters
+and data to sub-function.<BR><BR>
+
+The following example uses <B>INT 10h</B> sub-function <B>0Eh</B> to
+type a "Hello!" message. This functions displays a character on
+the screen, advancing the cursor and scrolling the screen as necessary.
+
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+
+ORG    100h	; instruct compiler to make simple single segment .com file.
+
+; The sub-function that we are using
+; does not modify the AH register on
+; return, so we may set it only once.
+
+MOV    AH, 0Eh    ; select sub-function.
+
+; INT 10h / 0Eh sub-function
+; receives an ASCII code of the
+; character that will be printed
+; in AL register.
+
+MOV    AL, 'H'    ; ASCII code: 72
+INT    10h        ; print it!
+
+MOV    AL, 'e'    ; ASCII code: 101
+INT    10h        ; print it!
+
+MOV    AL, 'l'    ; ASCII code: 108
+INT    10h        ; print it!
+
+MOV    AL, 'l'    ; ASCII code: 108
+INT    10h        ; print it!
+
+MOV    AL, 'o'    ; ASCII code: 111
+INT    10h        ; print it!
+
+MOV    AL, '!'    ; ASCII code: 33
+INT    10h        ; print it!
+
+RET               ; returns to operating system.
+</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+Copy &amp; paste the above program to the source code editor,
+and press [<B>Compile and Emulate</B>] button. Run it!
+
+<BR><BR>
+
+See <A HREF="8086_bios_and_dos_interrupts.html"><B>list of supported interrupts</B></A>
+for more information about interrupts.
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_03.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_05.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+<BR>
+
+</FONT>
+
+
+
+
+</BODY>
+
+</HTML>

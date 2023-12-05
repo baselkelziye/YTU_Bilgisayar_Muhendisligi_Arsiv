@@ -1,0 +1,8 @@
+--B1 C1
+
+-- H1 hareketi: 'alice' hesabından 200 lira çekme
+BEGIN;
+UPDATE accounts SET amount = amount - 200 WHERE client = 'alice';
+
+COMMIT;
+

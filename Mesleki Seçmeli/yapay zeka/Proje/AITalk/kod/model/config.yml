@@ -1,0 +1,23 @@
+num_layers: 4
+target_vocab_size: 16000
+d_model: 128
+dff: 512
+num_heads: 8
+dropout_rate: 0.1
+storage_path: null
+max_length: 40
+epochs: 100
+batch_size: 64
+ckpt_path : null
+# save a checkpoint every x epochs
+checkpoint: 5
+max_checkpoint: 10
+# select a custom checkpoint to start with
+# (else it will automatically select the latest checkpoint)
+custom_checkpoint: "checkpoints/train/ckpt-20" #path/to/ckpt-{int}
+reddit_data: True
+
+# train/eval/test/script
+mode: "test"
+eval_limit: 10
+exit_phrase: ".exit"

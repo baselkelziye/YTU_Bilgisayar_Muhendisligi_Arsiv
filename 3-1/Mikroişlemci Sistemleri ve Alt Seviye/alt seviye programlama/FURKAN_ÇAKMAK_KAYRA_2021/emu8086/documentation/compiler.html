@@ -1,0 +1,389 @@
+
+<HTML>
+
+<HEAD>
+
+<title>compiling the  assembly code</title>
+
+<META name="description" content="Compiling Assembly Code">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2>
+<b>compiling the assembly code</b>
+</font>
+
+<BR><BR>
+
+<BR>
+
+<IMG SRC="img/compile01.gif">
+
+<BR><BR>
+
+type your code inside the text area, and click <b>compile</b>
+button. you will be asked for a place where to save the compiled file.<br>
+after successful compilation you can click <b>emulate</b> button to
+load the compiled file in emulator.
+
+<BR><BR>
+
+<HR>
+ <B>the output file type directives:</b><br><br>
+<pre>
+<font face="fixedsys">
+	     #make_com#
+	     #make_bin#
+	     #make_boot#
+	     #make_exe#</font></pre>
+you can insert these directives in the source code to specify the
+required output type for the file. only if compiler cannot determine the output type automatically and it when it
+cannot find any of these directives it may ask you for <i>output type</i> before creating the file.
+<BR><BR>
+there is virtually no difference between how .com and .bin are assembled because these files are raw binary files,
+but .exe file has a special header in the beginning of the file that is used by the operating system
+to determine some properties of the executable file.
+<BR><BR>
+
+
+<HR>
+
+<BR>
+<b>description of output file types:</b>
+<BR><BR>
+<UL>
+	<LI>
+	<B>#make_com#</B> - the oldest and the simplest format of an executable file,
+	such files are loaded with 100h prefix (256 bytes). Select <B>Clean</B> from
+	the <B>New</B> menu if you plan to compile a COM file. Compiler directive
+	<B>ORG 100h</B> should be added before the code. Execution always starts
+	from the first byte of the file. This file type is selected automatically if <B>org 100h</B> directive is found in the code.<BR>
+	supported by DOS and Windows Command Prompt.
+	<BR><BR><BR><BR>
+    </LI>
+
+	<LI>
+	<b>#make_exe#</b> - more advanced format of an executable file. not limited
+	by size and number of segments. stack segment should be defined in the
+	program. you may select <b>exe template</b> from the <b>new</b> menu in
+	to create a simple exe program with pre-defined data, stack, and code segments.<br>
+	the entry point (where execution starts) is defined by a programmer. this file type is selected automatically if <b>stack</b> segment is found.<br>
+	supported by dos and windows command prompt.
+	<BR><BR><BR><BR>
+    </LI>
+
+	<LI>
+	<B>#make_bin#</B> - a simple executable file. You can define the values
+	of all registers, segment and offset for memory area where this file will
+	be loaded. When loading "<B>MY.BIN</B>" file to emulator
+	it will look for a "<B>MY.BINF</B>" file,
+	and load "<B>MY.BIN</B>" file to location specified
+	in "<B>MY.BINF</B>" file, registers are also set using
+	information in that file (open this file in a text editor to edit or investigate).
+	<BR>
+	in case the emulator is not able to find "<B>MY.BINF</B>"
+	file, current register values are used
+	and "<B>MY.BIN</B>" file is loaded at current <B>CS:IP</B>.
+	<BR>
+	the execution starts from values in <B>CS:IP</B>.<BR>
+	bin file type is not unique to the emulator, however the directives are unique and will not work if .bin file is executed outside of the emulator because their output is stored in a separate file independently from pure binary code.
+
+	<BR><BR>
+
+   <!-- 1.25 -->
+
+
+    <B>.BINF</B> file is created automatically if assembler finds any of the following directives.<BR><BR>
+    these directives can be inserted into any part of the source code to preset registers or memory before starting the program's execution:
+    <TABLE BORDER=1 CELLPADDING=10 WIDTH=80%><TR><TD>
+    <PRE><FONT FACE="Fixedsys">
+	#make_bin#
+	#LOAD_SEGMENT=1234#
+	#LOAD_OFFSET=0000#
+	#AL=12#
+	#AH=34#
+	#BH=00#
+	#BL=00#
+	#CH=00#
+	#CL=00#
+	#DH=00#
+	#DL=00#
+	#DS=0000#
+	#ES=0000#
+	#SI=0000#
+	#DI=0000#
+	#BP=0000#
+	#CS=1234#
+	#IP=0000#
+	#SS=0000#
+	#SP=0000#
+	#MEM=0100:FFFE,00FF-0100:FF00,F4#</FONT></PRE>
+	</TABLE>
+   <!-- end -->
+<BR>
+	all values must be in hexadecimal.<BR><BR>
+
+	when not specified these values are set by default:<BR>
+	<FONT COLOR=GREEN>
+	<B>LOAD_SEGMENT = 0100</B><BR>
+	<B>LOAD_OFFSET  = 0000</B><BR>
+	<B>CS = ES = SS = DS = 0100</B><BR>
+	<B>IP = 0000</B><BR>
+	</FONT>
+ <BR>
+
+	if <B>LOAD_SEGMENT</B> and <B>LOAD_OFFSET</B> are not defined, then
+	<B>CS</B> and <B>IP</B>	values are used and vice-versa.
+	<BR><BR>
+
+
+
+"#mem=..." directive can be used to write values to memory before program starts <BR>
+ <b>#MEM=nnnn,[bytestring]-nnnn:nnnn,[bytestring]# </b><BR>
+ for example:<BR>
+ <b>#MEM=1000,01ABCDEF0122-0200,1233#</b><BR>
+ all values are in hex, nnnn - for physical address, or (nnnn:nnnn) for logical address.<BR>
+ <font size=+1><b>-</b></font> separates the entries. spaces are allowed inside.
+ <BR><BR>
+ note: all values are in hex. hexadecimal suffix/prefix is not required. for each byte there must be exactly 2 characters, for example: 0A, 12 or 00.
+<BR><BR>
+
+
+
+
+
+
+if none of the above directives directives are preset in source code, binf file is not created.<BR>
+when emulator loads .bin file without .binf file it will use <B>c:\emu8086\default.binf</B> instead.
+<BR>
+this also applies to any other files with extensions that are unfamiliar to the emulator.
+
+
+
+<HR>
+<BR>
+
+	the format of a typical <B>".BINF</B>" file:<BR><BR>
+	<TABLE BORDER=1 CELLPADDING=10 WIDTH=80%><TR><TD>
+	<PRE>
+	<FONT FACE="Fixedsys">
+	8000         ; load to segment.
+	0000         ; load to offset.
+	55           ;   AL
+	66           ;   AH
+	77           ;   BL
+	88           ;   BH
+	99           ;   CL
+	AA           ;   CH
+	BB           ;   DL
+	CC           ;   DH
+	DDEE         ;   DS
+	ABCD         ;   ES
+	EF12         ;   SI
+	3456         ;   DI
+	7890         ;   BP
+	8000         ;   CS
+	0000         ;   IP
+	C123         ;   SS
+	D123         ;   SP </FONT>	</PRE>
+	</TD></TR></TABLE>
+	<BR>
+	we can observe that first goes a number in hexadecimal form and then a comment.<BR>
+	Comments are added just to make some order, when emulator loads a <B>BINF</B>
+	file it does not care about comments it just looks for a values on specific
+	lines, so line order is very important.
+<BR>
+    <B>NOTE: existing .binf file is automatically overwritten on re-compile.</B>
+<HR>
+
+
+	<BR>
+	In case <B>load to offset</B> value is not zero (0000), <B>ORG ????h</B> should
+	be added to the source of a <B>.BIN</B> file where <B>????h</B> is the <I>loading offset</I>,
+	this should be done to allow compiler calculate correct addresses.
+	<BR><BR>
+
+   <BR><BR>
+    </LI>
+
+	<LI>
+	<B>#make_boot#</B> - this type is a copy of the first track
+                       of a floppy disk (boot sector). the only difference from #make_bin# is that loading segment is predefined to 0000:7c00h (this value is written to accompanied .binf file). in fact you can use #make_bin# without any lack of performance, however to make correct test in emulator you will need to add these directives: #cs=0#  and #ip=7c00#  - assembler writes these values into .binf file.
+	<BR>
+     You can write a boot sector of
+     a virtual floppy (FLOPPY_0) via menu in
+     emulator:<BR>
+     <b>[virtual drive] -> [write 512 bytes at 7c00 to boot sector]</b>
+     <br>
+     first you should compile a <B>.bin</B> file and
+     load it in emulator (see "<B>micro-os_loader.asm</B>" and "<B>micro-os_kernel.asm</B>"
+     in c:\emu8086\examples for more information).
+
+     <BR><BR>
+     then select <b>[virtual drive] -> [boot from floppy]</b> menu to boot
+     emulator from a virtual floppy.
+
+     <BR><BR>
+     then, if you are curious, you may write
+     the same files to real floppy and
+     boot your computer from it. you can use
+     "writebin.asm" from c:\emu8086\examples\<BR>
+      micro-operating system does not have ms-dos/windows compatible boot sector, so it's better
+      to use an empty floppy disk. refer to <A href="asm_tutorial_11.html">tutorial 11</A> for more information.
+	<BR>
+    compiler directive
+	<b>org 7c00h</b> should be added before the code, when computer
+	starts it loads first track of a floppy disk at the address 0000:7c00.
+	<br>
+	the size of a <b>boot record</b> file should be less then 512 bytes
+	(limited by the size of a disk sector).
+	<br>
+	execution always starts	from the first byte of the file.<br>
+	this file type is unique to emu8086 emulator.
+	<br><br>
+    </li>
+
+</UL>
+
+<HR>
+
+<BR>
+<B>error processing</B>
+
+<BR><BR>
+assembly language compiler (or assembler) reports about errors in a separate information window:
+<br><br>
+
+<IMG SRC="img/compile03.gif">
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">MOV DS, 100</FONT> - is illegal instruction because
+segment registers cannot
+be set directly, general purpose register should be used, for example<BR>
+<FONT FACE="Fixedsys">
+MOV AX, 100<BR>
+MOV DS, AX
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">MOV AL, 300</FONT> - is illegal instruction because
+<B>AL</B> register has only 8 bits, and thus maximum value for it is 255 (or 11111111b),
+and the minimum is -128.<BR>
+
+<BR><BR>
+
+<HR>
+
+<BR>
+
+
+<!-- obsolete -->
+<!--
+Compiler makes several passes before generating the correct
+machine code, if it finds an error and does not complete the required
+number of passes it may show incorrect error messages. For example:
+
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+MOV AX, 0
+MOV CX, 5
+m1: INC AX
+LOOP m1                ; not a real error!
+
+MOV AL, 0FFFFh         ; error is here.
+
+RET</FONT></PRE>
+
+<FONT FACE="MS Sans Serif" SIZE=2>
+List of generated errors:<BR>
+(7) Condition Jump out of range!: LOOP m1<BR>
+(9) Wrong parameters: MOV  AL, 0FFFFh<BR>
+(9) Operands do not match: Second operand is over 8 bits! <BR>
+</FONT>
+
+<BR>
+First error message (7) is incorrect, compiler did not finish calculating
+the offsets for labels, so it presumes that the offset of <B>m1</B> label
+is <B>0000</B>, that address is out of the range because we start at offset <B>100h</B>.
+(note: wrong error message does not appear in the latest version of emu8086).
+
+<BR><BR>
+
+Make correction to this line: <B>MOV AL, 0FFFFh</B>
+(AL cannot hold <B>0FFFFh</B> value). This fixes both errors!
+For example:
+<BR><BR>
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+MOV AX, 0
+MOV CX, 5
+m1: INC AX
+LOOP m1                ; same code, but no error!
+
+MOV AL, 0FFh           ; fixed!
+
+RET</FONT></PRE>
+
+<HR>
+
+
+
+-->
+
+
+
+
+
+<BR>
+When saving an assembled file, compiler also saves 2 other files that are later used
+by the emulator to show original source code when you run the binary executable, and select corresponding lines.
+Very often the original code differs from the disabled code because there are no comments,
+no segment and no variable declarations. Compiler directives produce no binary code,
+but everything is converted to pure machine code.
+Sometimes a single original instruction is assembled into several machine code instructions, this is done mainly for the compatibility with
+original 8086 microprocessor (for example <B>ROL AL, 5</B> is assembled into five sequential <B>ROL AL, 1</B> instructions).
+
+<UL>
+
+<LI> <B>*.~asm</B> - this file contains the original source code that was used to
+                     make an executable file.<BR><BR></LI>
+
+<LI> <B>*.debug</B> - this file has information that enables the
+                      emulator select lines of original source code while
+                      running the machine code.<BR><BR></LI>
+
+<LI> <B>*.symbol</B> - symbol table, it contains information that enables to show
+                       the "variables" window. It is a plain text file, so you may
+                       view it in any text editor  (including emu8086 source editor).
+						<BR><BR></LI>
+
+<LI> <B>*.binf</B> - this ASCII file contains information
+                      that is used by emulator to load BIN file at specified
+                      location, and set register values prior execution;
+                      (created only if an executable is a BIN file).
+						<BR><BR></LI>
+
+
+</UL>
+
+<HR>
+
+</FONT>
+
+
+<BR>
+
+
+
+</BODY>
+
+</HTML>
