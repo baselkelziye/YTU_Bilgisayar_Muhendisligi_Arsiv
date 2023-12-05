@@ -1,0 +1,642 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 7)</TITLE>
+
+<META name="description" content="Program Flow Control - Tutorial for Beginners">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 7)</B>
+</FONT>
+
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>program flow control</B></FONT>
+<BR><BR>
+
+controlling the program flow is a very important thing, this is where
+your program can make decisions according to certain conditions.
+
+<BR><BR>
+
+<UL>
+
+<LI><B>unconditional jumps</B><BR><BR>
+ The basic instruction that transfers control to another point in the program is <B>JMP</B>.
+ <BR><BR>
+ The basic syntax of <B>JMP</B> instruction:
+ <BLOCKQUOTE>
+ <FONT FACE="Fixedsys">
+ JMP <U>label</U>
+ </FONT>
+ </BLOCKQUOTE>
+
+ To declare a <I>label</I> in your program, just type its name and add "<B>:</B>"
+ to the end, label can be any character combination but it cannot start with
+ a number, for example here are 3 legal label definitions:
+ <BLOCKQUOTE>
+ <FONT FACE="Fixedsys">
+ label1:<BR>
+ label2:<BR>
+ a:
+ </FONT>
+ </BLOCKQUOTE>
+ Label can be declared on a separate line or before any other instruction, for example:
+ <BLOCKQUOTE>
+ <FONT FACE="Fixedsys">
+ x1:<BR>
+ MOV AX, 1<BR><BR>
+ x2: MOV AX, 2<BR>
+ </FONT>
+ </BLOCKQUOTE>
+
+ here's an example of <B>JMP</B> instruction:<BR><BR>
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>org</font>    100h
+
+<font color=#0000FF>mov</font>    <font color=#C80000>ax</font>, 5          <font color=#008000>; set ax to 5. </font>
+<font color=#0000FF>mov</font>    <font color=#C80000>bx</font>, 2          <font color=#008000>; set bx to 2. </font>
+
+<font color=#0000FF>jmp</font>    calc           <font color=#008000>; go to 'calc'. </font>
+
+back:  <font color=#0000FF>jmp</font> stop       <font color=#008000>; go to 'stop'. </font>
+
+calc:
+<font color=#0000FF>add</font>    <font color=#C80000>ax</font>, <font color=#C80000>bx</font>         <font color=#008000>; add bx to ax. </font>
+<font color=#0000FF>jmp</font>    back           <font color=#008000>; go 'back'. </font>
+
+stop:
+
+<font color=#0000FF>ret</font>                   <font color=#008000>; return to operating system. </font>
+
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+<BR>
+
+Of course there is an easier way to calculate the some of two numbers,
+but it's still a good example of <B>JMP</B> instruction.
+
+<BR>
+As you can see from this example <B>JMP</B> is able to transfer control both
+forward and backward.
+It can jump anywhere in current code segment (65,535 bytes).
+
+<BR><BR><BR>
+
+</LI>
+
+
+<LI><B>Short Conditional Jumps</B><BR><BR>
+
+ Unlike <B>JMP</B> instruction that does an unconditional jump, there are instructions
+ that do a conditional jumps (jump only when some conditions are in act).
+ These instructions are divided in three groups, first group just test single flag, second
+ compares numbers as signed, and third compares numbers as unsigned.
+
+ <BR><BR>
+
+	<B>Jump instructions that test single flag</B>
+	<BR><BR>
+
+	<FONT FACE="Fixedsys">
+
+	<TABLE BORDER=1 CELLPADDING=7>
+	<TR>
+	<TD BGCOLOR=yellow>Instruction</TD> <TD BGCOLOR=yellow>Description</TD>
+	<TD BGCOLOR=yellow>Condition</TD>
+	<TD BGCOLOR=yellow>Opposite Instruction</TD>
+	</TR>
+
+	<TR>
+    <TD>JZ , JE</TD> <TD>Jump if Zero (Equal).</TD> <TD>&nbsp;ZF = 1</TD> <TD>JNZ, JNE</TD>
+	</TR>
+
+	<TR>
+    <TD><NOBR>JC , JB, JNAE</NOBR></TD> <TD>Jump if Carry (Below, Not Above Equal).</TD>
+    <TD>&nbsp;CF = 1</TD> <TD>JNC, JNB, JAE</TD>
+	</TR>
+
+	<TR>
+    <TD>JS</TD> <TD>Jump if Sign.</TD> <TD>&nbsp;SF = 1</TD> <TD>JNS</TD>
+	</TR>
+
+	<TR>
+    <TD>JO</TD> <TD>Jump if Overflow.</TD> <TD>&nbsp;OF = 1</TD> <TD>JNO</TD>
+	</TR>
+
+	<TR>
+    <TD>JPE, JP</TD> <TD>Jump if Parity Even.</TD> <TD>&nbsp;PF = 1</TD> <TD>JPO</TD>
+	</TR>
+
+
+
+	<TR>
+    <TD>JNZ , JNE</TD> <TD>Jump if Not Zero (Not Equal).</TD> <TD>&nbsp;ZF = 0</TD> <TD>JZ, JE</TD>
+	</TR>
+
+	<TR>
+    <TD><NOBR>JNC , JNB, JAE</NOBR></TD> <TD>Jump if Not Carry (Not Below, Above Equal).</TD>
+    <TD>&nbsp;CF = 0</TD> <TD>JC, JB, JNAE</TD>
+	</TR>
+
+	<TR>
+    <TD>JNS</TD> <TD>Jump if Not Sign.</TD> <TD>&nbsp;SF = 0</TD> <TD>JS</TD>
+	</TR>
+
+	<TR>
+    <TD>JNO</TD> <TD>Jump if Not Overflow.</TD> <TD>&nbsp;OF = 0</TD> <TD>JO</TD>
+	</TR>
+
+	<TR>
+    <TD>JPO, JNP</TD> <TD>Jump if Parity Odd (No Parity).</TD> <TD>&nbsp;PF = 0</TD> <TD>JPE, JP</TD>
+	</TR>
+
+	</TABLE>
+
+	</FONT>
+
+	<BR><BR>
+	as you may already notice there are some instructions that do that same thing, that's correct,
+	they even are assembled into the same machine code, so it's good to remember that
+	when you compile <B>JE</B> instruction - you will get it disassembled as: <B>JZ</B>, <B>JC</B> is assembled the same as <B>JB</B> etc...<BR>
+	different names are used to make programs easier to understand, to code and most importantly to remember. very offset dissembler has no clue what the original instruction was look like that's why it uses the most common name.
+
+<BR><BR>
+
+if you emulate this code you will see that all instructions are assembled into <B>JNB</B>, the operational code (opcode) for this instruction is <B>73h</B> this instruction has fixed length of two bytes, the second byte is number of bytes to add to the <B>IP</B> register if the condition is true. because the instruction has only 1 byte to keep the offset it is limited to pass control to -128 bytes back or 127 bytes forward, this value is always signed.
+
+
+
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+   <font color=#0000FF>jnc</font> a
+   <font color=#0000FF>jnb</font> a
+   <font color=#0000FF>jae</font> a
+
+   <font color=#0000FF>mov</font> <font color=#C80000>ax</font>, 4
+a: <font color=#0000FF>mov</font> <font color=#C80000>ax</font>, 5
+<font color=#0000FF>ret</font>
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+
+
+<BR><BR><BR>
+
+	<B>Jump instructions for signed numbers</B>
+	<BR><BR>
+
+	<FONT FACE="Fixedsys">
+
+	<TABLE BORDER=1 CELLPADDING=7>
+	<TR>
+	<TD BGCOLOR=yellow>Instruction</TD> <TD BGCOLOR=yellow>Description</TD>
+	<TD BGCOLOR=yellow>Condition</TD>
+	<TD BGCOLOR=yellow>Opposite Instruction</TD>
+	</TR>
+
+	<TR>
+    <TD>JE , JZ</TD> <TD>Jump if Equal (<FONT COLOR=red>=</FONT>).<BR>
+                           Jump if Zero.</TD>
+                           <TD ALIGN=Center>ZF = 1</TD> <TD>JNE, JNZ</TD>
+	</TR>
+
+	<TR>
+    <TD>JNE , JNZ</TD> <TD>Jump if Not Equal (<FONT COLOR=red>&lt;&gt;</FONT>).<BR>
+                           Jump if Not Zero.</TD>
+                           <TD ALIGN=Center>ZF = 0</TD> <TD>JE, JZ</TD>
+	</TR>
+
+	<TR>
+    <TD>JG , JNLE</TD> <TD>Jump if Greater (<FONT COLOR=red>></FONT>).<BR>
+                           Jump if Not Less or Equal <NOBR>(<FONT COLOR=red>not &lt;=</FONT>).</NOBR></TD>
+                           <TD ALIGN=Center>ZF = 0<BR>and<BR>SF = OF</TD> <TD>JNG, JLE</TD>
+	</TR>
+
+	<TR>
+    <TD>JL , JNGE</TD> <TD>Jump if Less (<FONT COLOR=red><</FONT>).<BR>
+                           Jump if Not Greater or Equal <NOBR>(<FONT COLOR=red>not &gt;=</FONT>).</NOBR></TD>
+                           <TD ALIGN=Center>SF &lt;> OF</TD> <TD>JNL, JGE</TD>
+	</TR>
+
+	<TR>
+    <TD>JGE , JNL</TD> <TD><NOBR>Jump if Greater or Equal (<FONT COLOR=red>&gt;=</FONT>).</NOBR><BR>
+                           Jump if Not Less  (<FONT COLOR=red>not &lt;</FONT>).</TD>
+                           <TD ALIGN=Center>SF = OF</TD> <TD>JNGE, JL</TD>
+	</TR>
+
+
+	<TR>
+    <TD>JLE , JNG</TD> <TD><NOBR>Jump if Less or Equal (<FONT COLOR=red>&lt;=</FONT>).</NOBR><BR>
+                           Jump if Not Greater  <NOBR>(<FONT COLOR=red>not &gt;</FONT>).</NOBR></TD>
+                           <TD ALIGN=Center>ZF = 1<BR>or<BR>SF &lt;&gt; OF</TD> <TD>JNLE, JG</TD>
+	</TR>
+
+	</TABLE>
+
+	</FONT>
+
+	<BR><BR>
+
+	<FONT FACE="Fixedsys">&lt;&gt;</FONT> - sign means not equal.
+
+
+<BR><BR><BR>
+
+	<B>Jump instructions for unsigned numbers</B>
+	<BR><BR>
+
+	<FONT FACE="Fixedsys">
+
+	<TABLE BORDER=1 CELLPADDING=7>
+	<TR>
+	<TD BGCOLOR=yellow>Instruction</TD> <TD BGCOLOR=yellow>Description</TD>
+	<TD BGCOLOR=yellow>Condition</TD>
+	<TD BGCOLOR=yellow>Opposite Instruction</TD>
+	</TR>
+
+	<TR>
+    <TD>JE , JZ</TD> <TD>Jump if Equal (<FONT COLOR=red>=</FONT>).<BR>
+                           Jump if Zero.</TD>
+                           <TD ALIGN=Center>ZF = 1</TD> <TD>JNE, JNZ</TD>
+	</TR>
+
+	<TR>
+    <TD>JNE , JNZ</TD> <TD>Jump if Not Equal (<FONT COLOR=red><></FONT>).<BR>
+                           Jump if Not Zero.</TD>
+                           <TD ALIGN=Center>ZF = 0</TD> <TD>JE, JZ</TD>
+	</TR>
+
+	<TR>
+    <TD>JA , JNBE</TD> <TD>Jump if Above (<FONT COLOR=red>></FONT>).<BR>
+                           Jump if Not Below or Equal <NOBR>(<FONT COLOR=red>not &lt;=</FONT>).</NOBR></TD>
+                           <TD ALIGN=Center>CF = 0<BR>and<BR>ZF = 0</TD> <TD>JNA, JBE</TD>
+	</TR>
+
+
+	<TR>
+    <TD><NOBR>JB , JNAE, JC</NOBR></TD> <TD>Jump if Below  (<FONT COLOR=red>&lt;</FONT>).<BR>
+                           Jump if Not Above or Equal <NOBR>(<FONT COLOR=red>not &gt;=</FONT>).</NOBR><BR>
+                           Jump if Carry.</TD>
+                           <TD ALIGN=Center>CF = 1</TD> <TD>JNB, JAE, JNC</TD>
+	</TR>
+
+
+	<TR>
+    <TD><NOBR>JAE , JNB, JNC</NOBR></TD> <TD>Jump if Above or Equal (<FONT COLOR=red>&gt;=</FONT>).<BR>
+                           Jump if Not Below <NOBR>(<FONT COLOR=red>not &lt;</FONT>).</NOBR><BR>
+                           Jump if Not Carry.</TD>
+                           <TD ALIGN=Center>CF = 0</TD> <TD>JNAE, JB</TD>
+	</TR>
+
+
+	<TR>
+    <TD><NOBR>JBE , JNA</NOBR></TD> <TD>Jump if Below or Equal (<FONT COLOR=red>&lt;=</FONT>).<BR>
+                           Jump if Not Above <NOBR>(<FONT COLOR=red>not &gt;</FONT>).</NOBR></TD>
+                           <TD ALIGN=Center>CF = 1<BR>or<BR>ZF = 1</TD> <TD>JNBE, JA</TD>
+	</TR>
+
+	</TABLE>
+
+	</FONT>
+
+
+	<BR><BR>
+	Generally, when it is required to compare numeric values <B>CMP</B> instruction
+	is used (it does the same as <B>SUB</B> (subtract) instruction, but does not keep
+	the result,	just affects the flags).<BR><BR>
+	The logic is very simple, for example:<BR>
+	it's required to compare
+	<FONT FACE="Fixedsys">5</FONT> and <FONT FACE="Fixedsys">2</FONT>,<BR>
+	<FONT FACE="Fixedsys">5 - 2 = 3</FONT><BR>
+	the result is not zero (Zero Flag
+	is set to <FONT FACE="Fixedsys">0</FONT>).
+
+	<BR><BR>
+	Another example:<BR>
+	it's required to compare <FONT FACE="Fixedsys">7</FONT> and
+	<FONT FACE="Fixedsys">7</FONT>,<BR>
+    <FONT FACE="Fixedsys">7 - 7 = 0</FONT><BR>
+    the result is zero! (Zero Flag
+	is set to <FONT FACE="Fixedsys">1</FONT> and <B>JZ</B> or <B>JE</B> will do the jump).
+
+	<BR><BR>
+ here's an example of <B>CMP</B> instruction and conditional jump:<BR><BR>
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>include</font> <font color=#800080>"emu8086.inc"</font>
+
+<font color=#000064>org</font>    100h
+
+<font color=#0000FF>mov</font>    <font color=#C80000>al</font>, 25     <font color=#008000>; set al to 25. </font>
+<font color=#0000FF>mov</font>    <font color=#C80000>bl</font>, 10     <font color=#008000>; set bl to 10. </font>
+
+<font color=#0000FF>cmp</font>    <font color=#C80000>al</font>, <font color=#C80000>bl</font>     <font color=#008000>; compare al - bl. </font>
+
+<font color=#0000FF>je</font>     equal      <font color=#008000>; jump if al = bl (zf = 1). </font>
+
+putc   <font color=#800080>'n'</font>        <font color=#008000>; if it gets here, then al &lt;&gt; bl, </font>
+<font color=#0000FF>jmp</font>    stop       <font color=#008000>; so print 'n', and jump to stop. </font>
+
+equal:            <font color=#008000>; if gets here, </font>
+putc   <font color=#800080>'y'</font>        <font color=#008000>; then al = bl, so print 'y'. </font>
+
+stop:
+
+<font color=#0000FF>ret</font>               <font color=#008000>; gets here no matter what. </font>
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+<BR><BR>
+try the above example with different numbers for <B>AL</B> and <B>BL</B>,
+open flags by clicking on flags button, use single step
+and see what happens. you can use <b>F5</b> hotkey to recompile and reload the program into the emulator.
+
+<BR><BR>
+
+
+<HR>
+
+<BR>
+
+
+
+
+<!-- 20 -->
+
+
+
+	<B>loops</B>
+	<BR><BR>
+
+	<FONT FACE="Fixedsys">
+
+	<TABLE BORDER=1 CELLPADDING=7>
+	<TR>
+	<TD BGCOLOR=yellow>instruction</TD>
+	<TD BGCOLOR=yellow align=center>operation and jump condition</TD>
+	<TD BGCOLOR=yellow>opposite instruction</TD>
+	</TR>
+
+	<TR>
+    <TD>LOOP</TD> <TD>decrease cx, jump to label if cx not zero. </TD> <TD>DEC CX <FONT SIZE=1 FACE=Verdana>and</FONT> JCXZ</TD>
+	</TR>
+
+	<TR>
+    <TD>LOOPE</TD> <TD>decrease cx, jump to label if cx not zero and equal (zf = 1).</TD>  <TD>LOOPNE</TD>
+	</TR>
+
+	<TR>
+    <TD>LOOPNE</TD> <TD>decrease cx, jump to label if cx not zero and not equal (zf = 0). </TD> <TD>LOOPE</TD>
+	</TR>
+
+	<TR>
+    <TD>LOOPNZ</TD> <TD>decrease cx, jump to label if cx not zero and zf = 0.</TD> <TD>LOOPZ</TD>
+	</TR>
+
+	<TR>
+    <TD>LOOPZ</TD> <TD>decrease cx, jump to label if cx not zero and zf = 1. </TD> <TD>LOOPNZ</TD>
+	</TR>
+
+	<TR>
+    <TD>JCXZ</TD> <TD>jump to label if cx is zero. </TD> <TD>OR CX, CX <FONT SIZE=1 FACE=Verdana>and</FONT> JNZ</TD>
+	</TR>
+
+
+	</TABLE>
+
+	</FONT>
+
+	<BR><BR>
+
+	loops are basically the same jumps, it is possible to code loops without using the loop instruction, by just
+	using conditional jumps and compare, and this is just what loop does. all loop instructions use <B>CX</B> register to count steps, as you know CX register has 16 bits and the maximum value it can hold is 65535 or FFFF, however with some agility it is possible to put one loop into another, and another into another two, and three and etc... and receive a nice value of 65535 * 65535 * 65535 ....till infinity.... or the end of ram or stack memory. it is possible store original value of cx register using <B>push cx</B> instruction and return it to original when the internal loop ends with <B>pop cx</B>, for example:
+
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>org</font> 100h
+
+<font color=#0000FF>mov</font> <font color=#C80000>bx</font>, 0  <font color=#008000>; total step counter. </font>
+
+<font color=#0000FF>mov</font> <font color=#C80000>cx</font>, 5
+k1: <font color=#0000FF>add</font> <font color=#C80000>bx</font>, 1
+    <font color=#0000FF>mov</font> <font color=#C80000>al</font>, <font color=#800080>'1'</font>
+    <font color=#0000FF>mov</font> <font color=#C80000>ah</font>, 0eh
+    <font color=#0000FF>int</font> 10h
+    <font color=#0000FF>push</font> <font color=#C80000>cx</font>
+    <font color=#0000FF>mov</font> <font color=#C80000>cx</font>, 5
+      k2: <font color=#0000FF>add</font> <font color=#C80000>bx</font>, 1
+      <font color=#0000FF>mov</font> <font color=#C80000>al</font>, <font color=#800080>'2'</font>
+      <font color=#0000FF>mov</font> <font color=#C80000>ah</font>, 0eh
+      <font color=#0000FF>int</font> 10h
+      <font color=#0000FF>push</font> <font color=#C80000>cx</font>
+         <font color=#0000FF>mov</font> <font color=#C80000>cx</font>, 5
+         k3: <font color=#0000FF>add</font> <font color=#C80000>bx</font>, 1
+         <font color=#0000FF>mov</font> <font color=#C80000>al</font>, <font color=#800080>'3'</font>
+         <font color=#0000FF>mov</font> <font color=#C80000>ah</font>, 0eh
+         <font color=#0000FF>int</font> 10h
+         <font color=#0000FF>loop</font> k3    <font color=#008000>; internal in internal loop. </font>
+      <font color=#0000FF>pop</font>  <font color=#C80000>cx</font>
+      <font color=#0000FF>loop</font>  k2      <font color=#008000>; internal loop. </font>
+    <font color=#0000FF>pop</font> <font color=#C80000>cx</font>
+<font color=#0000FF>loop</font> k1             <font color=#008000>; external loop. </font>
+
+<font color=#0000FF>ret</font>
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+
+bx counts total number of steps, by default emulator shows values in hexadecimal, you can double click the register to see the value in all available bases.
+
+<BR><BR>
+	just like all other conditional jumps loops have an opposite companion that can help to create workarounds, when the address of desired location is too far assemble automatically assembles reverse and long jump instruction, making total of 5 bytes instead of just 2, it can be seen in disassembler as well.
+	<BR><BR>
+
+
+
+<BR>
+
+for more detailed description and examples refer to <A HREF="8086_instruction_set.html"><B>complete 8086 instruction set</B></A>
+
+
+
+<!-- 20e -->
+
+
+
+
+
+
+
+
+
+
+
+<BR><BR>
+
+
+<HR>
+
+<BR>
+All conditional jumps have one big limitation, unlike <B>JMP</B> instruction
+they can only jump <B>127</B> bytes forward and <B>128</B> bytes backward (note that most
+instructions are assembled into 3 or more bytes).
+<BR><BR>
+We can easily avoid this limitation using a cute trick:<BR><BR>
+		<UL>
+		<LI>Get an opposite conditional jump instruction from the table above,
+			make it jump to <I>label_x</I>.
+			 <BR><BR></LI>
+		<LI>Use <B>JMP</B> instruction to jump to desired location.
+			 <BR><BR></LI>
+		<LI>Define <I>label_x:</I> just after the <B>JMP</B> instruction.
+			 <BR><BR></LI>
+		</UL>
+
+		<I>label_x:</I> - can be any valid label name, but there must not be two or more labels with the same name.
+
+		<BR><BR>
+
+		here's an example:<BR><BR>
+
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>include</font> <font color=#800080>"emu8086.inc"</font>
+
+<font color=#000064>org</font>    100h
+
+<font color=#0000FF>mov</font>    <font color=#C80000>al</font>, 5
+<font color=#0000FF>mov</font>    <font color=#C80000>bl</font>, 5
+
+<font color=#0000FF>cmp</font>    <font color=#C80000>al</font>, <font color=#C80000>bl</font>     <font color=#008000>; compare al - bl. </font>
+
+
+<font color=#008000>; je equal        ; there is only 1 byte </font>
+
+
+
+<font color=#0000FF>jne</font>    not_equal  <font color=#008000>; jump if al &lt;&gt; bl (zf = 0). </font>
+<font color=#0000FF>jmp</font>    equal
+not_equal:
+
+
+<font color=#0000FF>add</font>    <font color=#C80000>bl</font>, <font color=#C80000>al</font>
+<font color=#0000FF>sub</font>    <font color=#C80000>al</font>, 10
+<font color=#0000FF>xor</font>    <font color=#C80000>al</font>, <font color=#C80000>bl</font>
+
+<font color=#0000FF>jmp</font> skip_data
+<font color=#000064>db</font> 256 dup(0)     <font color=#008000>; 256 bytes </font>
+skip_data:
+
+
+putc   <font color=#800080>'n'</font>        <font color=#008000>; if it gets here, then al &lt;&gt; bl, </font>
+<font color=#0000FF>jmp</font>    stop       <font color=#008000>; so print 'n', and jump to stop. </font>
+
+equal:            <font color=#008000>; if gets here, </font>
+putc   <font color=#800080>'y'</font>        <font color=#008000>; then al = bl, so print 'y'. </font>
+
+stop:
+
+<font color=#0000FF>ret</font>
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+</UL>
+
+<BR><BR>
+
+<FONT COLOR=green>Note: the latest version of the integrated 8086 assembler automatically creates a workaround by replacing the conditional jump with the opposite, and adding big unconditional jump. To check if you have the latest version of emu8086 click <B>help-&gt; check for an update</b> from the menu.</font>
+
+<BR><BR>
+
+
+<HR>
+
+<BR>
+Another, yet rarely used method is providing an immediate value instead
+of label. When immediate value starts with $ relative jump
+is performed, otherwise compiler calculates instruction that jumps directly
+to given offset. For example:<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=2 face="Terminal">
+<font color=#000064>org</font>    100h
+
+<font color=#008000>; unconditional jump forward: </font>
+<font color=#008000>; skip over next 3 bytes + itself  </font>
+<font color=#008000>; the machine code of short jmp instruction takes 2 bytes.  </font>
+<font color=#0000FF>jmp</font> $3<font color=#0064C8>+</font>2
+a <font color=#000064>db</font> 3    <font color=#008000>; 1 byte. </font>
+b <font color=#000064>db</font> 4    <font color=#008000>; 1 byte. </font>
+c <font color=#000064>db</font> 4    <font color=#008000>; 1 byte. </font>
+
+<font color=#008000>; conditional jump back 5 bytes: </font>
+<font color=#0000FF>mov</font> <font color=#C80000>bl</font>,9
+<font color=#0000FF>dec</font> <font color=#C80000>bl</font>      <font color=#008000>; 2 bytes. </font>
+<font color=#0000FF>cmp</font> <font color=#C80000>bl</font>, 0   <font color=#008000>; 3 bytes. </font>
+<font color=#0000FF>jne</font> $<font color=#0064C8>-</font>5     <font color=#008000>; jump 5 bytes back </font>
+
+<font color=#0000FF>ret</font>
+
+
+</font></pre>
+<!-- emu8086 version 3.27xo    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+
+</TD></TR></TABLE>
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_06.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_08.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+
+<BR>
+
+</FONT>
+
+
+</BODY>
+
+</HTML>

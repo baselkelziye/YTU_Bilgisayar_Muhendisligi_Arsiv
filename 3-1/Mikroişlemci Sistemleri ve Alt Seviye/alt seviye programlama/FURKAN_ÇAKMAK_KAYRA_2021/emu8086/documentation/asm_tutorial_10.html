@@ -1,0 +1,231 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 10)</TITLE>
+
+<META name="description" content="Macros for 8086 Assembler">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 10)</B>
+</FONT>
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Macros</B></FONT>
+<BR><BR>
+
+
+
+Macros are just like procedures, but not really. Macros look like procedures,
+but they exist only until your code is compiled, after compilation all macros
+are replaced with real instructions. If you declared a macro and never used it
+in your code, compiler will simply ignore it.
+<B><A HREF="asm_tutorial_05.html">emu8086.inc</A></B> is a good example of how macros can be used, this file
+contains several macros to make coding easier for you.
+
+
+<BR><BR>
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+Macro definition:
+
+<BR>
+<PRE>
+<FONT FACE="Fixedsys">
+name    MACRO  [parameters,...]
+
+             &lt;instructions>
+
+ENDM</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+Unlike procedures, macros should be defined above the
+code that uses it, for example:
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+<PRE><FONT FACE="Fixedsys">MyMacro    MACRO  p1, p2, p3
+
+     MOV AX, p1
+     MOV BX, p2
+     MOV CX, p3
+
+ENDM
+
+ORG 100h
+
+MyMacro 1, 2, 3
+
+MyMacro 4, 5, DX
+
+RET</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+The above code is expanded into:<BR><BR>
+<FONT FACE="Fixedsys">
+MOV AX, 00001h<BR>
+MOV BX, 00002h<BR>
+MOV CX, 00003h<BR>
+MOV AX, 00004h<BR>
+MOV BX, 00005h<BR>
+MOV CX, DX<BR>
+</FONT>
+
+<BR>
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+
+<BR>
+Some important facts about <B>macros</B> and <B>procedures</B>:
+<UL>
+
+<LI>When you want to use a procedure you should use <B>CALL</B> instruction,
+for example:<BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+CALL MyProc
+</FONT>
+</BLOCKQUOTE>
+</LI>
+
+<LI>
+When you want to use a macro, you can just type its name.
+For example:<BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+MyMacro
+</FONT>
+</BLOCKQUOTE>
+</LI>
+
+
+<LI>
+Procedure is located at some specific address in memory, and if you
+use the same procedure 100 times, the CPU will transfer control
+to this part of the memory. The control will be returned back to
+the program by <B>RET</B> instruction. The <B>stack</B> is used
+to keep the return address. The <B>CALL</B> instruction takes
+about 3 bytes, so the size of the output executable file
+grows very insignificantly, no matter how many time the procedure
+is used.<BR><BR>
+</LI>
+
+<LI>
+Macro is expanded directly in program's code. So if you use the
+same macro 100 times, the compiler expands the macro 100 times, making
+the output executable file larger and larger, each time all
+instructions of a macro are inserted.<BR><BR>
+</LI>
+
+
+<LI>
+You should use <B>stack</B> or any general purpose registers
+to pass parameters to procedure.
+<BR><BR>
+</LI>
+
+<LI>
+To pass parameters to macro, you can just type them after the
+macro name. For example:
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+MyMacro 1, 2, 3
+</FONT>
+</BLOCKQUOTE>
+</LI>
+
+
+<LI>To mark the end of the macro <B>ENDM</B> directive is enough.<BR><BR>
+</LI>
+
+<LI>To mark the end of the procedure, you should type the name of the
+procedure before the <B>ENDP</B> directive.
+</LI>
+
+</UL>
+
+</TD></TR></TABLE>
+
+
+<BR><BR>
+Macros are expanded directly in code, therefore if there are labels inside the
+macro definition you may get "Duplicate declaration" error when macro is used
+for twice or more. To avoid such problem, use <B>LOCAL</B> directive followed
+by names of variables, labels or procedure names. For example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=80%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+MyMacro2    MACRO
+	LOCAL label1, label2
+
+	CMP  AX, 2
+	JE label1
+	CMP  AX, 3
+	JE label2
+	label1:
+		 INC  AX
+	label2:
+		 ADD  AX, 2
+ENDM
+
+
+ORG 100h
+
+MyMacro2
+
+MyMacro2
+
+RET</FONT></PRE>
+</TD></TR></TABLE>
+
+
+<BR><BR>
+If you plan to use your macros in several programs, it may be a good idea to place
+all macros in a separate file. Place that file in <B>Inc</B> folder and
+use <B>INCLUDE <I>file-name</I></B> directive to use macros.
+See <A HREF="asm_tutorial_05.html"><B>Library of common functions - emu8086.inc</B></A>
+for an example of such file.
+
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_09.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_11.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+
+<BR>
+
+</FONT>
+
+
+
+</BODY>
+
+</HTML>

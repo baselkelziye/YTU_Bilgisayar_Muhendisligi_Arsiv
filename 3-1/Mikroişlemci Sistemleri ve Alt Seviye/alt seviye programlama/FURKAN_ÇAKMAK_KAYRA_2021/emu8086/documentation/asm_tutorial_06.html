@@ -1,0 +1,340 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 6)</TITLE>
+
+<META name="description" content="Arithmetic and Logic Instructions">
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 6)</B>
+</FONT>
+
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Arithmetic and Logic Instructions</B></FONT>
+<BR><BR>
+
+Most Arithmetic and Logic Instructions affect the processor status register
+(or <B>Flags</B>)
+<BR><BR>
+<IMG SRC="img/flags.gif">
+
+<BR><BR>
+As you may see there are 16 bits in this register, each bit is called a <B>flag</B>
+and can take a value of <B>1</B> or <B>0</B>.
+<BR><BR>
+
+<UL>
+
+<LI><B>Carry Flag (CF)</B> - this flag is set to <B>1</B> when there is
+an <B>unsigned overflow</B>.
+For example when you add bytes <B>255 + 1</B> (result is not in range 0...255).
+When there is no overflow this flag is set to <B>0</B>.
+
+<BR><BR>
+</LI>
+
+<LI><B>Zero Flag (ZF)</B> - set to <B>1</B> when result is <B>zero</B>.
+For none zero result this flag is set to <B>0</B>.
+
+<BR><BR>
+</LI>
+
+<LI><B>Sign Flag (SF)</B> - set to <B>1</B> when result is <B>negative</B>.
+When result is <B>positive</B> it is set to <B>0</B>. Actually this flag
+take the value of the most significant bit.
+
+
+<BR><BR>
+</LI>
+
+<LI><B>Overflow Flag (OF)</B> - set to <B>1</B> when there is a <B>signed overflow</B>.
+For example, when you add bytes <B>100 + 50</B> (result is not in range -128...127).
+
+<BR><BR>
+</LI>
+
+<LI><B>Parity Flag (PF)</B> - this flag is set to <B>1</B> when there is even number
+                         of one bits in result, and to <B>0</B> when there is odd
+                         number of one bits. Even if result is a word only 8 low
+                         bits are analyzed!
+
+<BR><BR>
+</LI>
+
+<LI><B>Auxiliary Flag (AF)</B> - set to <B>1</B> when there is an <B>unsigned overflow</B>
+                            for low nibble (4 bits).
+
+<BR><BR>
+</LI>
+
+<LI><B>Interrupt enable Flag (IF)</B> - when this flag is set to <B>1</B> CPU reacts to
+interrupts from external devices.
+
+<BR><BR>
+</LI>
+
+<LI><B>Direction Flag (DF)</B> - this flag is used by some instructions to process
+data chains, when this flag is set to <B>0</B> - the processing is done forward,
+when this flag is set to <B>1</B> the processing is done backward.
+
+<BR><BR>
+</LI>
+
+</UL>
+
+<HR>
+
+<BR>
+
+There are 3 groups of instructions.<BR><BR>
+
+<HR>
+<BR>
+
+First group: <B>ADD</B>, <B>SUB</B>,<B>CMP</B>, <B>AND</B>, <B>TEST</B>,
+                        <B>OR</B>, <B>XOR</B><BR><BR>
+
+
+These types of operands are supported:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>:<FONT SIZE=-1> AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.</FONT><BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...<BR><BR>
+<B>immediate</B>: 5, -24, 3Fh, 10001101b, etc...<BR><BR>
+
+After operation between operands, result is always stored in first operand.
+<B>CMP</B> and <B>TEST</B> instructions affect flags only and do not store a
+result (these instruction are used to make decisions during program execution).
+
+<BR><BR>
+
+These instructions affect these flags only:<BR>
+&nbsp; &nbsp; &nbsp; &nbsp;<B>CF</B>, <B>ZF</B>,
+<B>SF</B>, <B>OF</B>, <B>PF</B>, <B>AF</B>.<BR><BR>
+
+<UL>
+
+<LI><B>ADD</B> - add second operand to first.
+<BR><BR></LI>
+
+<LI><B>SUB</B> - Subtract second operand to first.
+<BR><BR></LI>
+
+<LI><B>CMP</B> - Subtract second operand from first <B>for flags only</B>.
+<BR><BR></LI>
+
+<LI><B>AND</B> - Logical AND between all bits of two operands. These rules
+                 apply:<BR>
+                 <BLOCKQUOTE>
+                 <FONT FACE="Fixedsys">
+                 1 AND 1 = 1<BR>
+                 1 AND 0 = 0<BR>
+                 0 AND 1 = 0<BR>
+                 0 AND 0 = 0<BR>
+                 </FONT>
+                 </BLOCKQUOTE>
+				 As you see we get <B>1</B> only when both bits are <B>1</B>.
+<BR><BR></LI>
+
+<LI><B>TEST</B> - The same as <B>AND</B> but <B>for flags only</B>.
+<BR><BR></LI>
+
+<LI><B>OR</B> - Logical OR between all bits of two operands. These rules
+                 apply:<BR>
+                 <BLOCKQUOTE>
+                 <FONT FACE="Fixedsys">
+                 1 OR 1 = 1<BR>
+                 1 OR 0 = 1<BR>
+                 0 OR 1 = 1<BR>
+                 0 OR 0 = 0<BR>
+                 </FONT>
+                 </BLOCKQUOTE>
+				 As you see we get <B>1</B> every time when at least
+				 one of the bits is <B>1</B>.
+<BR><BR></LI>
+
+<LI><B>XOR</B> - Logical XOR (exclusive OR) between all bits of two operands.
+				 These rules apply:<BR>
+                 <BLOCKQUOTE>
+                 <FONT FACE="Fixedsys">
+                 1 XOR 1 = 0<BR>
+                 1 XOR 0 = 1<BR>
+                 0 XOR 1 = 1<BR>
+                 0 XOR 0 = 0<BR>
+                 </FONT>
+                 </BLOCKQUOTE>
+				 As you see we get <B>1</B> every time when bits
+				 are different from each other.
+<BR><BR></LI>
+
+</UL>
+
+<HR>
+<BR>
+
+Second group: <B>MUL</B>, <B>IMUL</B>, <B>DIV</B>, <B>IDIV</B><BR><BR>
+
+These types of operands are supported:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	REG<BR>
+	memory<BR>
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>:<FONT SIZE=-1> AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.</FONT><BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...<BR><BR>
+
+<B>MUL</B> and <B>IMUL</B> instructions affect these flags only:<BR>
+&nbsp; &nbsp; &nbsp; &nbsp;<B>CF</B>, <B>OF</B><BR>
+When result is over operand size these flags are set to <B>1</B>, when result
+fits in operand size these flags are set to <B>0</B>.
+<BR><BR>
+
+For <B>DIV</B> and <B>IDIV</B> flags are undefined.<BR><BR>
+
+<UL>
+
+<LI><B>MUL</B> - Unsigned multiply:
+				 <BLOCKQUOTE>
+				 	 when operand is a <B>byte</B>:<BR>
+					 <FONT FACE="Fixedsys">AX = AL * operand</FONT>.
+				 </BLOCKQUOTE>
+
+				 <BLOCKQUOTE>
+				    when operand is a <B>word</B>:<BR>
+					<FONT FACE="Fixedsys">(DX AX) = AX * operand</FONT>.
+				 </BLOCKQUOTE>
+</LI>
+
+<LI><B>IMUL</B> - Signed multiply:
+				 <BLOCKQUOTE>
+				 	 when operand is a <B>byte</B>:<BR>
+					 <FONT FACE="Fixedsys">AX = AL * operand</FONT>.
+				 </BLOCKQUOTE>
+
+				 <BLOCKQUOTE>
+				    when operand is a <B>word</B>:<BR>
+					<FONT FACE="Fixedsys">(DX AX) = AX * operand</FONT>.
+				 </BLOCKQUOTE>
+</LI>
+
+<LI><B>DIV</B> - Unsigned divide:
+				 <BLOCKQUOTE>
+				 	 when operand is a <B>byte</B>:<BR>
+					 <FONT FACE="Fixedsys">AL = AX / operand<BR>
+					 AH = remainder (modulus).
+					 </FONT>.
+				 </BLOCKQUOTE>
+
+				 <BLOCKQUOTE>
+				    when operand is a <B>word</B>:<BR>
+					<FONT FACE="Fixedsys">AX = (DX AX) / operand<BR>
+					DX = remainder (modulus).
+					</FONT>.
+				 </BLOCKQUOTE>
+</LI>
+
+<LI><B>IDIV</B> - Signed divide:
+				 <BLOCKQUOTE>
+				 	 when operand is a <B>byte</B>:<BR>
+					 <FONT FACE="Fixedsys">AL = AX / operand<BR>
+					 AH = remainder (modulus).
+					 </FONT>.
+				 </BLOCKQUOTE>
+
+				 <BLOCKQUOTE>
+				    when operand is a <B>word</B>:<BR>
+					<FONT FACE="Fixedsys">AX = (DX AX) / operand<BR>
+					DX = remainder (modulus).
+					</FONT>.
+				 </BLOCKQUOTE>
+</LI>
+</UL>
+
+<HR>
+<BR>
+
+Third group: <B>INC</B>, <B>DEC</B>, <B>NOT</B>, <B>NEG</B><BR><BR>
+
+These types of operands are supported:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	REG<BR>
+	memory<BR>
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>:<FONT SIZE=-1> AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.</FONT><BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...<BR><BR>
+
+<B>INC</B>, <B>DEC</B> instructions affect these flags only:<BR>
+&nbsp; &nbsp; &nbsp; &nbsp;<B>ZF</B>, <B>SF</B>, <B>OF</B>, <B>PF</B>, <B>AF</B>.<BR><BR>
+
+<B>NOT</B> instruction does not affect any flags!<BR><BR>
+
+<B>NEG</B> instruction affects these flags only:<BR>
+&nbsp; &nbsp; &nbsp; &nbsp;<B>CF</B>, <B>ZF</B>, <B>SF</B>, <B>OF</B>, <B>PF</B>, <B>AF</B>.<BR><BR>
+
+
+<UL>
+
+<LI><B>NOT</B> - Reverse each bit of operand.
+<BR><BR>
+</LI>
+
+<LI><B>NEG</B> - Make operand negative (two's complement).
+				Actually it reverses each bit of operand and then
+				adds 1 to it. For example 5 will become -5, and -2 will
+				become 2.
+</LI>
+
+</UL>
+
+
+
+<HR>
+
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_05.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_07.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+<BR>
+
+</FONT>
+
+</BODY>
+
+</HTML>

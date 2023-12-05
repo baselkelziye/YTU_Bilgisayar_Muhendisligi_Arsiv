@@ -1,0 +1,200 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 8)</TITLE>
+
+<META name="description" content="Procedures - Tutorial for Beginners">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 8)</B>
+</FONT>
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Procedures</B></FONT>
+<BR><BR>
+
+Procedure is a part of code that can be called from your
+program in order to make some specific task. Procedures
+make program more structural and easier to understand.
+Generally procedure returns to the same point from where it was
+called.
+<BR><BR>
+ The syntax for procedure declaration:
+ <BLOCKQUOTE>
+ <FONT FACE="Fixedsys">
+ <U>name</U> PROC<BR><BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ; here goes the code<BR>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ;  of the procedure ...<BR><BR>
+ RET<BR>
+ <U>name</U> ENDP
+
+ </FONT>
+ </BLOCKQUOTE>
+
+<BR>
+<U>name</U> - is the procedure name, the same name should be in the top and the bottom,
+              this is used to check correct closing of procedures.
+
+<BR><BR>
+Probably, you already know that <B>RET</B> instruction is used to return
+to operating system. The same instruction is used to return from procedure
+(actually operating system sees your program as a special procedure).
+
+<BR><BR>
+<B>PROC</B> and <B>ENDP</B> are compiler directives, so they are not assembled
+into any real machine code. Compiler just remembers the address of procedure.
+
+<BR><BR>
+<B>CALL</B> instruction is used to call a procedure.
+
+<BR><BR>
+Here is an example:
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG    100h
+
+CALL   m1
+
+MOV    AX, 2
+
+RET                   ; return to operating system.
+
+m1     PROC
+MOV    BX, 5
+RET                   ; return to caller.
+m1     ENDP
+
+END</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+The above example calls procedure <B>m1</B>, does <B>MOV BX, 5</B>, and returns
+to the next instruction after <B>CALL</B>: <B>MOV AX, 2</B>.
+
+<BR><BR>
+There are several ways to pass parameters to procedure, the easiest way to
+pass parameters is by using registers, here is another example of a procedure
+that receives two parameters in <B>AL</B> and <B>BL</B> registers, multiplies
+these parameters and returns the result in <B>AX</B> register:
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG    100h
+
+MOV    AL, 1
+MOV    BL, 2
+
+CALL   m2
+CALL   m2
+CALL   m2
+CALL   m2
+
+RET                   ; return to operating system.
+
+m2     PROC
+MUL    BL             ; AX = AL * BL.
+RET                   ; return to caller.
+m2     ENDP
+
+END</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+In the above example value of <B>AL</B> register is update every time
+the procedure is called, <B>BL</B> register stays unchanged, so this
+algorithm calculates <B>2</B> in power of <B>4</B>,<BR>
+so final result in <B>AX</B> register is <B>16</B> (or 10h).
+
+<BR><BR>
+<HR>
+<BR>
+
+Here goes another example,<BR> that uses a procedure
+to print a <I>Hello World!</I> message:
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG    100h
+
+LEA    SI, msg        ; load address of msg to SI.
+
+CALL   print_me
+
+RET                   ; return to operating system.
+
+; ==========================================================
+; this procedure prints a string, the string should be null
+; terminated (have zero in the end),
+; the string address should be in SI register:
+print_me     PROC
+
+next_char:
+    CMP  b.[SI], 0    ; check for zero to stop
+    JE   stop         ;
+
+    MOV  AL, [SI]     ; next get ASCII char.
+
+    MOV  AH, 0Eh      ; teletype function number.
+    INT  10h          ; using interrupt to print a char in AL.
+
+    ADD  SI, 1        ; advance index of string array.
+
+    JMP  next_char    ; go back, and type another char.
+
+stop:
+RET                   ; return to caller.
+print_me     ENDP
+; ==========================================================
+
+msg    DB  'Hello World!', 0   ; null terminated string.
+
+END</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+"<B>b.</B>" - prefix before [SI] means that we need to compare bytes,
+not words. When you need to compare words add "<B>w.</B>" prefix instead.
+When one of the compared operands is a register it's not required because
+compiler knows the size of each register.
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_07.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_09.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+<BR>
+
+</FONT>
+
+
+
+
+</BODY>
+
+</HTML>
