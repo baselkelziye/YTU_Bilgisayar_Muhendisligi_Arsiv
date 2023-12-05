@@ -1,0 +1,5788 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 instructions</TITLE>
+
+<META name="description" content="Complete 8086 instruction set">
+
+<META name="keywords" content="8086, instruction, set, complete instruction set, example, mov, add, inc, sub, xor, xchg">
+
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2>
+<B>Complete 8086 instruction set</B>
+</FONT>
+
+<A NAME="top1"> &nbsp; </A>
+<!-- 116 instructions -->
+
+<HR>
+<BR>
+Quick reference:<BR><BR>
+<FONT FACE="Fixedsys">
+
+<TABLE BORDER=0 WIDTH=100%>
+<TR>
+
+<TD>
+<A HREF="#AAA">AAA</A>  <BR>
+<A HREF="#AAD">AAD</A>  <BR>
+<A HREF="#AAM">AAM</A>  <BR>
+<A HREF="#AAS">AAS</A>  <BR>
+<A HREF="#ADC">ADC</A>  <BR>
+<A HREF="#ADD">ADD</A>  <BR>
+<A HREF="#AND">AND</A>  <BR>
+
+<A HREF="#CALL">CALL</A>  <BR>
+<A HREF="#CBW">CBW</A>  <BR>
+<A HREF="#CLC">CLC</A>  <BR>
+<A HREF="#CLD">CLD</A>  <BR>
+<A HREF="#CLI">CLI</A>  <BR>
+<A HREF="#CMC">CMC</A>  <BR>
+<A HREF="#CMP">CMP</A>  <BR>
+</TD><TD>
+<A HREF="#CMPSB">CMPSB</A>  <BR>
+<A HREF="#CMPSW">CMPSW</A>  <BR>
+<A HREF="#CWD">CWD</A>  <BR>
+<A HREF="#DAA">DAA</A>  <BR>
+<A HREF="#DAS">DAS</A>  <BR>
+<A HREF="#DEC">DEC</A>  <BR>
+<A HREF="#DIV">DIV</A>  <BR>
+
+<A HREF="#HLT">HLT</A>  <BR>
+
+<A HREF="#IDIV">IDIV</A>  <BR>
+<A HREF="#IMUL">IMUL</A>  <BR>
+
+<A HREF="#IN">IN</A>  <BR>
+
+<A HREF="#INC">INC</A>  <BR>
+<A HREF="#INT">INT</A>  <BR>
+<A HREF="#INTO">INTO</A>  <BR>
+<A HREF="#IRET">IRET</A>  <BR>
+<A HREF="#JA">JA</A>  <BR>
+</TD><TD>
+<A HREF="#JAE">JAE</A>  <BR>
+<A HREF="#JB">JB</A>  <BR>
+<A HREF="#JBE">JBE</A>  <BR>
+<A HREF="#JC">JC</A>  <BR>
+<A HREF="#JCXZ">JCXZ</A>  <BR>
+<A HREF="#JE">JE</A>  <BR>
+<A HREF="#JG">JG</A>  <BR>
+
+<A HREF="#JGE">JGE</A>  <BR>
+<A HREF="#JL">JL</A>  <BR>
+<A HREF="#JLE">JLE</A>  <BR>
+<A HREF="#JMP">JMP</A>  <BR>
+<A HREF="#JNA">JNA</A>  <BR>
+<A HREF="#JNAE">JNAE</A>  <BR>
+<A HREF="#JNB">JNB</A>  <BR>
+</TD><TD>
+<A HREF="#JNBE">JNBE</A>  <BR>
+<A HREF="#JNC">JNC</A>  <BR>
+<A HREF="#JNE">JNE</A>  <BR>
+<A HREF="#JNG">JNG</A>  <BR>
+<A HREF="#JNGE">JNGE</A>  <BR>
+<A HREF="#JNL">JNL</A>  <BR>
+<A HREF="#JNLE">JNLE</A>  <BR>
+
+<A HREF="#JNO">JNO</A>  <BR>
+<A HREF="#JNP">JNP</A>  <BR>
+<A HREF="#JNS">JNS</A>  <BR>
+<A HREF="#JNZ">JNZ</A>  <BR>
+<A HREF="#JO">JO</A>  <BR>
+<A HREF="#JP">JP</A>  <BR>
+<A HREF="#JPE">JPE</A>  <BR>
+</TD><TD>
+<A HREF="#JPO">JPO</A>  <BR>
+<A HREF="#JS">JS</A>  <BR>
+<A HREF="#JZ">JZ</A>  <BR>
+<A HREF="#LAHF">LAHF</A>  <BR>
+<A HREF="#LDS">LDS</A>  <BR>
+<A HREF="#LEA">LEA</A>  <BR>
+<A HREF="#LES">LES</A>  <BR>
+
+<A HREF="#LODSB">LODSB</A>  <BR>
+<A HREF="#LODSW">LODSW</A>  <BR>
+<A HREF="#LOOP">LOOP</A>  <BR>
+<A HREF="#LOOPE">LOOPE</A>  <BR>
+<A HREF="#LOOPNE">LOOPNE</A>  <BR>
+<A HREF="#LOOPNZ">LOOPNZ</A>  <BR>
+<A HREF="#LOOPZ">LOOPZ</A>  <BR>
+</TD><TD>
+<A HREF="#MOV">MOV</A>  <BR>
+<A HREF="#MOVSB">MOVSB</A>  <BR>
+<A HREF="#MOVSW">MOVSW</A>  <BR>
+<A HREF="#MUL">MUL</A>  <BR>
+<A HREF="#NEG">NEG</A>  <BR>
+<A HREF="#NOP">NOP</A>  <BR>
+
+<A HREF="#NOT">NOT</A>  <BR>
+
+<A HREF="#OR">OR</A>  <BR>
+
+<A HREF="#OUT">OUT</A>  <BR>
+
+<A HREF="#POP">POP</A>  <BR>
+<A HREF="#POPA">POPA</A>  <BR>
+<A HREF="#POPF">POPF</A>  <BR>
+<A HREF="#PUSH">PUSH</A>  <BR>
+<A HREF="#PUSHA">PUSHA</A>  <BR>
+<A HREF="#PUSHF">PUSHF</A>  <BR>
+<A HREF="#RCL">RCL</A>  <BR>
+</TD><TD>
+<A HREF="#RCR">RCR</A>  <BR>
+<A HREF="#REP">REP</A>  <BR>
+<A HREF="#REPE">REPE</A>  <BR>
+<A HREF="#REPNE">REPNE</A>  <BR>
+<A HREF="#REPNZ">REPNZ</A>  <BR>
+<A HREF="#REPZ">REPZ</A>  <BR>
+<A HREF="#RET">RET</A>  <BR>
+
+<A HREF="#RETF">RETF</A>  <BR>
+<A HREF="#ROL">ROL</A>  <BR>
+<A HREF="#ROR">ROR</A>  <BR>
+<A HREF="#SAHF">SAHF</A>  <BR>
+<A HREF="#SAL">SAL</A>  <BR>
+<A HREF="#SAR">SAR</A>  <BR>
+<A HREF="#SBB">SBB</A>  <BR>
+</TD><TD>
+<A HREF="#SCASB">SCASB</A>  <BR>
+<A HREF="#SCASW">SCASW</A>  <BR>
+<A HREF="#SHL">SHL</A>  <BR>
+<A HREF="#SHR">SHR</A>  <BR>
+<A HREF="#STC">STC</A>  <BR>
+<A HREF="#STD">STD</A>  <BR>
+<A HREF="#STI">STI</A>  <BR>
+
+<A HREF="#STOSB">STOSB</A>  <BR>
+<A HREF="#STOSW">STOSW</A>  <BR>
+<A HREF="#SUB">SUB</A>  <BR>
+<A HREF="#TEST">TEST</A>  <BR>
+<A HREF="#XCHG">XCHG</A>  <BR>
+<A HREF="#XLATB">XLATB</A>  <BR>
+<A HREF="#XOR">XOR</A>  <BR>
+</TD>
+</TR>
+</TABLE>
+
+</FONT>
+<BR><BR>
+
+<HR>
+
+
+Operand types:<BR><BR>
+
+<B>REG</B>: AX, BX, CX, DX, AH, AL, BL, BH, CH, CL, DH, DL, DI, SI, BP, SP.<BR><BR>
+
+<B>SREG</B>: DS, ES, SS, and only as second operand: CS.<BR><BR>
+
+<B>memory</B>: [BX], [BX+SI+7], variable, etc...(see <A HREF="asm_tutorial_02.html"><B>Memory Access</B></A>).<BR><BR>
+
+<B>immediate</B>: 5, -24, 3Fh, 10001101b, etc...<BR><BR>
+
+<HR>
+
+<BR>
+Notes:<BR><BR>
+<UL>
+<LI>When two operands are required for an instruction they are separated by comma. For example:<BR><BR>
+	<FONT FACE="Fixedsys">
+	REG, memory
+	</FONT>
+	<BR><BR></LI>
+<LI>When there are two operands, both operands must have the same size (except shift and rotate
+    instructions). For example:<BR><BR>
+    <FONT FACE="Fixedsys">
+	AL, DL<BR>
+	DX, AX<BR>
+	<FONT COLOR=#005555>
+	m1 DB ?<BR>
+	</FONT>
+	AL, m1<BR>
+	<FONT COLOR=#005555>
+	m2 DW ?<BR>
+	</FONT>
+	AX, m2
+	</FONT>
+	<BR><BR>
+    </LI>
+	<LI>Some instructions allow several operand combinations.
+	 For example:<BR><BR>
+	<FONT FACE="Fixedsys">
+		memory, immediate<BR>
+		REG, immediate<BR><BR>
+		memory, REG<BR>
+		REG, SREG
+	</FONT><BR><BR>
+	</LI>
+
+ <LI>Some examples contain macros, so it is advisable to use <NOBR><B>Shift + F8</B></NOBR>
+ hot key to <I>Step Over</I> (to make macro code execute at maximum speed set <B>step delay</B>
+ to zero), otherwise emulator will step through each instruction of a macro.
+ Here is an example that uses PRINTN macro:
+ <PRE>
+ <FONT FACE="Fixedsys">
+   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 1
+   MOV BL, 2
+   PRINTN 'Hello World!'   ; macro.
+   MOV CL, 3
+   PRINTN 'Welcome!'       ; macro.
+   RET</FONT></PRE>
+ </LI>
+
+</UL>
+<BR>
+
+<HR>
+<BR><BR>
+These marks are used to show the state of the flags:<BR><BR>
+<B>1</B> - instruction sets this flag to <B>1</B>.<BR>
+<B>0</B> - instruction sets this flag to <B>0</B>.<BR>
+<B>r</B> - flag value depends on result of the instruction.<BR>
+<B>?</B> - flag value is undefined (maybe <B>1</B> or <B>0</B>).<BR>
+<BR><BR>
+
+<HR>
+
+<BR><BR><B>
+Some instructions generate exactly the same machine code, so disassembler
+may have a problem decoding to your original code. This is especially
+important for Conditional Jump instructions (see
+"<A HREF="asm_tutorial_07.html">Program Flow Control</A>"
+in Tutorials for more information).</B>
+<BR><BR><BR>
+<HR>
+
+<BR><BR>
+Instructions in alphabetical order:
+
+<BR><BR>
+
+<TABLE BORDER=1 WIDTH=100% CELLPADDING=10>
+
+<TR>
+<TD>Instruction</TD> <TD>Operands</TD> <TD>Description
+			<A NAME="AAA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+AAA
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+ASCII Adjust after Addition.<BR>
+Corrects result in AH and AL after addition
+when working with BCD values. <BR><BR> It works according to the following Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if low nibble of AL > 9 or AF = 1 then:<BR>
+<UL>
+<LI>AL = AL + 6</LI>
+<LI>AH = AH + 1</LI>
+<LI>AF = 1</LI>
+<LI>CF = 1</LI>
+</UL>
+else
+<UL>
+<LI>AF = 0</LI>
+<LI>CF = 0</LI>
+</UL>
+in both cases:<BR>
+clear the high nibble of AL.
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 15   ; AH = 00, AL = 0Fh
+AAA          ; AH = 01, AL = 05
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="AAD">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+AAD
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+ASCII Adjust before Division.<BR>
+Prepares two BCD values for division. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AL = (AH * 10) + AL</LI>
+<LI>AH = 0</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 0105h   ; AH = 01, AL = 05
+AAD             ; AH = 00, AL = 0Fh (15)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>?</TD> <TD>r</TD> <TD>r</TD> <TD>?</TD> <TD>r</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="AAM">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+AAM
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+ASCII Adjust after Multiplication.<BR>
+Corrects the result of multiplication of two BCD values. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AH = AL / 10</LI>
+<LI>AL = remainder</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 15   ; AL = 0Fh
+AAM          ; AH = 01, AL = 05
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>?</TD> <TD>r</TD> <TD>r</TD> <TD>?</TD> <TD>r</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="AAS">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+AAS
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+ASCII Adjust after Subtraction.<BR>
+Corrects result in AH and AL after subtraction
+when working with BCD values. <BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+if low nibble of AL > 9 or AF = 1 then:<BR>
+<UL>
+<LI>AL = AL - 6</LI>
+<LI>AH = AH - 1</LI>
+<LI>AF = 1</LI>
+<LI>CF = 1</LI>
+</UL>
+else
+<UL>
+<LI>AF = 0</LI>
+<LI>CF = 0</LI>
+</UL>
+in both cases:<BR>
+clear the high nibble of AL.
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 02FFh  ; AH = 02, AL = 0FFh
+AAS            ; AH = 01, AL = 09
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="ADC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+ADC
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Add with Carry.<BR>
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 = operand1 + operand2 + CF
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">STC        ; set CF = 1
+MOV AL, 5  ; AL = 5
+ADC AL, 1  ; AL = 7
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="ADD">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+ADD
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Add.<BR>
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 = operand1 + operand2
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 5   ; AL = 5
+ADD AL, -3  ; AL = 2
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="AND">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+AND
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Logical AND between all bits of two operands. Result is stored in operand1.<BR><BR>
+These rules apply:<BR><BR>
+<FONT FACE="Fixedsys">
+1 AND 1 = 1<BR>
+1 AND 0 = 0<BR>
+0 AND 1 = 0<BR>
+0 AND 0 = 0<BR>
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 'a'        ; AL = 01100001b
+AND AL, 11011111b  ; AL = 01000001b  ('A')
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> </TR>
+<TR> <TD>0</TD> <TD>r</TD> <TD>r</TD> <TD>0</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CALL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CALL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	procedure name<BR>
+	label<BR>
+	4-byte address<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Transfers control to procedure, return address is (IP) is pushed to
+stack. <I>4-byte address</I> may be entered in this form:
+<FONT FACE="Fixedsys">1234h:5678h</FONT>, first value is a segment second
+value is an offset (this is a far call, so CS is also pushed to stack).<BR>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h  ; for COM file.
+
+CALL p1
+
+ADD AX, 1
+
+RET         ; return to OS.
+
+p1 PROC     ; procedure declaration.
+    MOV AX, 1234h
+    RET     ; return to caller.
+p1 ENDP</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CBW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CBW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Convert byte into word. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if high bit of AL = 1 then:
+<UL>
+<LI>AH = 255 (0FFh)</LI>
+</UL>
+<BR>
+else
+<UL>
+<LI>AH = 0</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 0   ; AH = 0, AL = 0
+MOV AL, -5  ; AX = 000FBh (251)
+CBW         ; AX = 0FFFBh (-5)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CLC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CLC
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Clear Carry flag. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+CF = 0
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> </TR>
+<TR> <TD>0</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CLD">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CLD
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Clear Direction flag. SI and DI will be incremented by chain
+instructions: CMPSB, CMPSW, LODSB, LODSW, MOVSB, MOVSW, STOSB, STOSW. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+DF = 0
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>D</TD> </TR>
+<TR> <TD>0</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CLI">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CLI
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Clear Interrupt enable flag. This disables hardware interrupts. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+IF = 0
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>I</TD> </TR>
+<TR> <TD>0</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CMC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CMC
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Complement Carry flag. Inverts value of CF. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if CF = 1 then CF = 0<BR>
+if CF = 0 then CF = 1<BR>
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> </TR>
+<TR> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CMP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CMP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Compare.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 - operand2
+<BR><BR>
+result is not stored anywhere, flags are set (OF, SF, ZF, AF, PF, CF) according
+to result.
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 5
+MOV BL, 5
+CMP AL, BL  ; AL = 5, ZF = 1 (so equal!)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CMPSB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CMPSB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Compare bytes: <NOBR>ES:[DI] from DS:[SI].</NOBR> <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>DS:[SI] - ES:[DI]<BR></LI>
+<LI>set flags according to result:<BR> OF, SF, ZF, AF, PF, CF<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 1</LI>
+	<LI>DI = DI + 1</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 1</LI>
+	<LI>DI = DI - 1</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<BR>
+open <B>cmpsb.asm</B> from c:\emu8086\examples
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CMPSW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CMPSW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Compare words: <NOBR>ES:[DI] from DS:[SI].</NOBR> <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>DS:[SI] - ES:[DI]<BR></LI>
+<LI>set flags according to result:<BR> OF, SF, ZF, AF, PF, CF<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 2</LI>
+	<LI>DI = DI + 2</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 2</LI>
+	<LI>DI = DI - 2</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+example:<BR>
+open <B>cmpsw.asm</B> from c:\emu8086\examples
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="CWD">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+CWD
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Convert Word to Double word. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if high bit of AX = 1 then:
+<UL>
+<LI>DX = 65535 (0FFFFh)</LI>
+</UL>
+<BR>
+else
+<UL>
+<LI>DX = 0</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV DX, 0   ; DX = 0
+MOV AX, 0   ; AX = 0
+MOV AX, -5  ; DX AX = 00000h:0FFFBh
+CWD         ; DX AX = 0FFFFh:0FFFBh
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="DAA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+DAA
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Decimal adjust After Addition.<BR>
+Corrects the result of addition of two packed BCD values. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if low nibble of AL > 9 or AF = 1 then:<BR>
+<UL>
+<LI>AL = AL + 6</LI>
+<LI>AF = 1</LI>
+</UL>
+if AL > 9Fh or CF = 1 then:
+<UL>
+<LI>AL = AL + 60h</LI>
+<LI>CF = 1</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 0Fh  ; AL = 0Fh (15)
+DAA          ; AL = 15h
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="DAS">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+DAS
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Decimal adjust After Subtraction.<BR>
+Corrects the result of subtraction of two packed BCD values. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+if low nibble of AL > 9 or AF = 1 then:<BR>
+<UL>
+<LI>AL = AL - 6</LI>
+<LI>AF = 1</LI>
+</UL>
+if AL > 9Fh or CF = 1 then:
+<UL>
+<LI>AL = AL - 60h</LI>
+<LI>CF = 1</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 0FFh  ; AL = 0FFh (-1)
+DAS           ; AL = 99h, CF = 1
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="DEC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+DEC
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Decrement.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand = operand - 1
+<BR><BR>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 255  ; AL = 0FFh (255 or -1)
+DEC AL       ; AL = 0FEh (254 or -2)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+CF - unchanged!
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="DIV">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+DIV
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Unsigned divide.
+<BR><BR>Algorithm:<BR><BR>
+ <BLOCKQUOTE>
+	 when operand is a <B>byte</B>:<BR>
+	 <FONT FACE="Fixedsys">AL = AX / operand<BR>
+	 AH = remainder (modulus)
+	 </FONT>
+ </BLOCKQUOTE>
+
+ <BLOCKQUOTE>
+	when operand is a <B>word</B>:<BR>
+	<FONT FACE="Fixedsys">AX = (DX AX) / operand<BR>
+	DX = remainder (modulus)
+	</FONT>
+ </BLOCKQUOTE>
+ Example:<PRE><FONT FACE="Fixedsys">MOV AX, 203   ; AX = 00CBh
+MOV BL, 4
+DIV BL        ; AL = 50 (32h), AH = 3
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="HLT">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+HLT
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Halt the System.<BR><BR>
+
+ Example:<PRE><FONT FACE="Fixedsys">MOV AX, 5
+HLT</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="IDIV">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+IDIV
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Signed divide.
+<BR><BR>Algorithm:<BR><BR>
+ <BLOCKQUOTE>
+	 when operand is a <B>byte</B>:<BR>
+	 <FONT FACE="Fixedsys">AL = AX / operand<BR>
+	 AH = remainder (modulus)
+	 </FONT>
+ </BLOCKQUOTE>
+
+ <BLOCKQUOTE>
+	when operand is a <B>word</B>:<BR>
+	<FONT FACE="Fixedsys">AX = (DX AX) / operand<BR>
+	DX = remainder (modulus)
+	</FONT>
+ </BLOCKQUOTE>
+ Example:<PRE><FONT FACE="Fixedsys">MOV AX, -203 ; AX = 0FF35h
+MOV BL, 4
+IDIV BL      ; AL = -50 (0CEh), AH = -3 (0FDh)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="IMUL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+IMUL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Signed multiply.
+<BR><BR>Algorithm:<BR><BR>
+ <BLOCKQUOTE>
+	 when operand is a <B>byte</B>:<BR>
+	 <FONT FACE="Fixedsys">AX = AL * operand</FONT>.
+ </BLOCKQUOTE>
+
+ <BLOCKQUOTE>
+	when operand is a <B>word</B>:<BR>
+	<FONT FACE="Fixedsys">(DX AX) = AX * operand</FONT>.
+ </BLOCKQUOTE>
+  Example:<PRE><FONT FACE="Fixedsys">MOV AL, -2
+MOV BL, -4
+IMUL BL      ; AX = 8
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>?</TD> <TD>?</TD> <TD>r</TD> <TD>?</TD> <TD>?</TD> </TR>
+</TABLE>
+CF=OF=0 when result fits into operand of IMUL.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="IN">&nbsp;</A>
+</TD>
+</TR>
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+IN
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	AL, im.byte<BR>
+	AL, DX<BR>
+	AX, im.byte<BR>
+	AX, DX
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Input from port into <B>AL</B> or <B>AX</B>.<BR>
+Second operand is a port number. If required to access
+port number over 255 - <B>DX</B> register should be used.
+<BR>Example:<PRE><FONT FACE="Fixedsys">IN AX, 4  ; get status of traffic lights.
+IN AL, 7  ; get status of stepper-motor.
+</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="INC">&nbsp;</A>
+</TD>
+</TR>
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+INC
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Increment.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand = operand + 1
+<BR>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 4
+INC AL       ; AL = 5
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+CF - unchanged!
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="INT">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+INT
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>immediate byte</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Interrupt numbered by immediate byte (0..255).
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	Push to stack:
+	<UL>
+	<LI>flags register</LI>
+	<LI>CS</LI>
+	<LI>IP</LI>
+	</UL>
+
+	<LI>IF = 0</LI>
+
+	<LI>Transfer control to interrupt procedure</LI>
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AH, 0Eh  ; teletype.
+MOV AL, 'A'
+INT 10h      ; BIOS interrupt.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> <TD>I</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> <TD>0</TD></TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="INTO">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+INTO
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Interrupt 4 if Overflow flag is 1.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+if OF = 1 then INT 4
+<BR>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">; -5 - 127 = -132 (not in -128..127)
+; the result of SUB is wrong (124),
+; so OF = 1 is set:
+MOV AL, -5
+SUB AL, 127   ; AL = 7Ch (124)
+INTO          ; process error.
+RET</FONT></PRE>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="IRET">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+IRET
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Interrupt Return.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	Pop from stack:
+	<UL>
+	<LI>IP</LI>
+	<LI>CS</LI>
+	<LI>flags register</LI>
+	</UL>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6><CENTER>popped</CENTER></TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JA
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Above second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if (CF = 0) and (ZF = 0) then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 250
+   CMP AL, 5
+   JA label1
+   PRINT 'AL is not above 5'
+   JMP exit
+label1:
+   PRINT 'AL is above 5'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JAE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JAE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Above or Equal to second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 5
+   CMP AL, 5
+   JAE label1
+   PRINT 'AL is not above or equal to 5'
+   JMP exit
+label1:
+   PRINT 'AL is above or equal to 5'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JB
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Below second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 1
+   CMP AL, 5
+   JB  label1
+   PRINT 'AL is not below 5'
+   JMP exit
+label1:
+   PRINT 'AL is below 5'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JBE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JBE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Below or Equal to second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 1 or ZF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 5
+   CMP AL, 5
+   JBE  label1
+   PRINT 'AL is not below or equal to 5'
+   JMP exit
+label1:
+   PRINT 'AL is below or equal to 5'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JC
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Carry flag is set to 1.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 255
+   ADD AL, 1
+   JC  label1
+   PRINT 'no carry.'
+   JMP exit
+label1:
+   PRINT 'has carry.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JCXZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JCXZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if CX register is 0.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CX = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV CX, 0
+   JCXZ label1
+   PRINT 'CX is not zero.'
+   JMP exit
+label1:
+   PRINT 'CX is zero.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Equal to second operand (as set by CMP instruction).
+Signed/Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if ZF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 5
+   CMP AL, 5
+   JE  label1
+   PRINT 'AL is not equal to 5.'
+   JMP exit
+label1:
+   PRINT 'AL is equal to 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JG">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JG
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Greater then second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if (ZF = 0) and (SF = OF) then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 5
+   CMP AL, -5
+   JG  label1
+   PRINT 'AL is not greater -5.'
+   JMP exit
+label1:
+   PRINT 'AL is greater -5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JGE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JGE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Greater or Equal to second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF = OF then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 2
+   CMP AL, -5
+   JGE  label1
+   PRINT 'AL &lt; -5'
+   JMP exit
+label1:
+   PRINT 'AL >= -5'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Less then second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF &lt;> OF then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, -2
+   CMP AL, 5
+   JL  label1
+   PRINT 'AL >= 5.'
+   JMP exit
+label1:
+   PRINT 'AL &lt; 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JLE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JLE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Less or Equal to second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF &lt;> OF or ZF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, -2
+   CMP AL, 5
+   JLE label1
+   PRINT 'AL > 5.'
+   JMP exit
+label1:
+   PRINT 'AL &lt;= 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JMP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JMP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	label<BR>
+	4-byte address<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Unconditional Jump.
+Transfers control to another part of the program.
+<I>4-byte address</I> may be entered in this form:
+<FONT FACE="Fixedsys">1234h:5678h</FONT>, first value is a segment second
+value is an offset.<BR>
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	always jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+   ORG 100h
+   MOV AL, 5
+   JMP label1    ; jump over 2 lines!
+   PRINT 'Not Jumped!'
+   MOV AL, 0
+label1:
+   PRINT 'Got Here!'
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNA
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Above second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 1 or ZF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, 5
+   JNA label1
+   PRINT 'AL is above 5.'
+   JMP exit
+label1:
+   PRINT 'AL is not above 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNAE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNAE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Above and Not Equal to second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, 5
+   JNAE label1
+   PRINT 'AL >= 5.'
+   JMP exit
+label1:
+   PRINT 'AL &lt; 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNB
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Below second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 7
+   CMP AL, 5
+   JNB label1
+   PRINT 'AL &lt; 5.'
+   JMP exit
+label1:
+   PRINT 'AL >= 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNBE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNBE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Below and Not Equal to second operand (as set by CMP instruction).
+Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if (CF = 0) and (ZF = 0) then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 7
+   CMP AL, 5
+   JNBE label1
+   PRINT 'AL &lt;= 5.'
+   JMP exit
+label1:
+   PRINT 'AL > 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNC
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Carry flag is set to 0.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if CF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   ADD AL, 3
+   JNC  label1
+   PRINT 'has carry.'
+   JMP exit
+label1:
+   PRINT 'no carry.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Equal to second operand (as set by CMP instruction).
+Signed/Unsigned.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if ZF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, 3
+   JNE  label1
+   PRINT 'AL = 3.'
+   JMP exit
+label1:
+   PRINT 'Al &lt;> 3.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNG">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNG
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Greater then second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if (ZF = 1) and (SF &lt;> OF) then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, 3
+   JNG  label1
+   PRINT 'AL > 3.'
+   JMP exit
+label1:
+   PRINT 'Al &lt;= 3.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNGE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNGE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Greater and Not Equal to second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF &lt;> OF then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, 3
+   JNGE  label1
+   PRINT 'AL >= 3.'
+   JMP exit
+label1:
+   PRINT 'Al &lt; 3.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Less then second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF = OF then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, -3
+   JNL label1
+   PRINT 'AL &lt; -3.'
+   JMP exit
+label1:
+   PRINT 'Al >= -3.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNLE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNLE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if first operand is Not Less and Not Equal to second operand (as set by CMP instruction).
+Signed.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if (SF = OF) and (ZF = 0) then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 2
+   CMP AL, -3
+   JNLE label1
+   PRINT 'AL &lt;= -3.'
+   JMP exit
+label1:
+   PRINT 'Al > -3.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNO">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNO
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Not Overflow.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if OF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; -5 - 2 = -7 (inside -128..127)
+; the result of SUB is correct,
+; so OF = 0:
+
+include 'emu8086.inc'
+
+ORG 100h
+  MOV AL, -5
+  SUB AL, 2   ; AL = 0F9h (-7)
+JNO  label1
+  PRINT 'overflow!'
+JMP exit
+label1:
+  PRINT 'no overflow.'
+exit:
+  RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if No Parity (odd). Only 8 low bits of result are checked.
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if PF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000111b   ; AL = 7
+   OR  AL, 0           ; just set flags.
+   JNP label1
+   PRINT 'parity even.'
+   JMP exit
+label1:
+   PRINT 'parity odd.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNS">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNS
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Not Signed (if positive).
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000111b   ; AL = 7
+   OR  AL, 0           ; just set flags.
+   JNS label1
+   PRINT 'signed.'
+   JMP exit
+label1:
+   PRINT 'not signed.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JNZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JNZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Not Zero (not equal).
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if ZF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000111b   ; AL = 7
+   OR  AL, 0           ; just set flags.
+   JNZ label1
+   PRINT 'zero.'
+   JMP exit
+label1:
+   PRINT 'not zero.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JO">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JO
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Overflow.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if OF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; -5 - 127 = -132 (not in -128..127)
+; the result of SUB is wrong (124),
+; so OF = 1 is set:
+
+include 'emu8086.inc'
+
+org 100h
+  MOV AL, -5
+  SUB AL, 127   ; AL = 7Ch (124)
+JO  label1
+  PRINT 'no overflow.'
+JMP exit
+label1:
+  PRINT 'overflow!'
+exit:
+  RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Parity (even). Only 8 low bits of result are checked.
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if PF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000101b   ; AL = 5
+   OR  AL, 0           ; just set flags.
+   JP label1
+   PRINT 'parity odd.'
+   JMP exit
+label1:
+   PRINT 'parity even.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JPE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JPE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Parity Even. Only 8 low bits of result are checked.
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if PF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000101b   ; AL = 5
+   OR  AL, 0           ; just set flags.
+   JPE label1
+   PRINT 'parity odd.'
+   JMP exit
+label1:
+   PRINT 'parity even.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JPO">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JPO
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Parity Odd. Only 8 low bits of result are checked.
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if PF = 0 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 00000111b   ; AL = 7
+   OR  AL, 0           ; just set flags.
+   JPO label1
+   PRINT 'parity even.'
+   JMP exit
+label1:
+   PRINT 'parity odd.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JS">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JS
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Signed (if negative).
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if SF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 10000000b   ; AL = -128
+   OR  AL, 0           ; just set flags.
+   JS label1
+   PRINT 'not signed.'
+   JMP exit
+label1:
+   PRINT 'signed.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="JZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+JZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Short Jump if Zero (equal).
+Set by CMP, SUB, ADD, TEST, AND, OR, XOR instructions.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	if ZF = 1 then jump
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AL, 5
+   CMP AL, 5
+   JZ  label1
+   PRINT 'AL is not equal to 5.'
+   JMP exit
+label1:
+   PRINT 'AL is equal to 5.'
+exit:
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LAHF">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LAHF
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Load AH from 8 low bits of Flags register.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	AH = flags register<BR>
+</UL>
+<PRE><FONT FACE="Fixedsys">
+AH bit:   7    6   5    4   3    2   1    0
+        [SF] [ZF] [0] [AF] [0] [PF] [1] [CF]</FONT>
+</PRE>
+bits 1, 3, 5 are reserved.
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LDS">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LDS
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Load memory double word into word register and DS.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+    <LI>REG = first word</LI>
+	<LI>DS = second word</LI>
+</UL>
+</FONT>
+<BR>
+Example:
+<PRE>
+<FONT FACE="Fixedsys">
+
+ORG 100h
+
+LDS AX, m
+
+RET
+
+m  DW  1234h
+   DW  5678h
+
+END
+</FONT>
+</PRE>
+AX is set to 1234h, DS is set to 5678h.
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LEA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LEA
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Load Effective Address.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+    <LI>REG = address of memory (offset)</LI>
+</UL>
+</FONT>
+<BR><BR>
+Example:
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=3 face="Terminal">
+<font color=#0000FF>MOV</font> <font color=#C80000>BX</font>, 35h
+<font color=#0000FF>MOV</font> <font color=#C80000>DI</font>, 12h
+<font color=#0000FF>LEA</font> <font color=#C80000>SI</font>, <font color=#0064C8>[</font><font color=#C80000>BX</font><font color=#0064C8>+</font><font color=#C80000>DI</font><font color=#0064C8>]</font>    <font color=#008000>; SI = 35h + 12h = 47h </font>
+</font></pre>
+<!-- emu8086 version 4.00-Beta-19    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+Note: The integrated 8086 assembler automatically replaces <b>LEA</b> with a
+more efficient <b>MOV</b> where possible.
+For example:
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=3 face="Terminal">
+<font color=#000064>org</font> 100h
+<font color=#0000FF>LEA</font> <font color=#C80000>AX</font>, m       <font color=#008000>; AX = offset of m</font>
+<font color=#0000FF>RET</font>
+m  <font color=#000064>dw</font>  1234h
+<font color=#000064>END</font>
+</font></pre>
+<!-- emu8086 version 4.00-Beta-19    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+
+			<A NAME="LES">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LES
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Load memory double word into word register and ES.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+    <LI>REG = first word</LI>
+	<LI>ES = second word</LI>
+</UL>
+</FONT>
+<BR>
+Example:
+<PRE>
+<FONT FACE="Fixedsys">
+
+ORG 100h
+
+LES AX, m
+
+RET
+
+m  DW  1234h
+   DW  5678h
+
+END
+</FONT>
+</PRE>
+AX is set to 1234h, ES is set to 5678h.
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LODSB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LODSB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Load byte at DS:[SI] into AL. Update SI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AL = DS:[SI]<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 1</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 1</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:
+<PRE>
+<FONT FACE="Fixedsys">
+ORG 100h
+
+LEA SI, a1
+MOV CX, 5
+MOV AH, 0Eh
+
+m: LODSB
+INT 10h
+LOOP m
+
+RET
+
+a1 DB 'H', 'e', 'l', 'l', 'o'</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LODSW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LODSW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Load word at DS:[SI] into AX. Update SI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AX = DS:[SI]<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 2</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 2</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:
+<PRE>
+<FONT FACE="Fixedsys">
+ORG 100h
+
+LEA SI, a1
+MOV CX, 5
+
+REP LODSW   ; finally there will be 555h in AX.
+
+RET
+
+a1 dw 111h, 222h, 333h, 444h, 555h</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LOOP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LOOP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Decrease CX, jump to label if CX not zero. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>CX = CX - 1<BR></LI>
+<LI>if CX &lt;> 0 then
+	<UL>
+	<LI>jump</LI>
+	</UL>
+	else
+	<UL>
+	<LI>no jump, continue</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">   include 'emu8086.inc'
+
+   ORG 100h
+   MOV CX, 5
+label1:
+   PRINTN 'loop!'
+   LOOP label1
+   RET</FONT></PRE>
+
+   <FONT FACE="Fixedsys">
+   <TABLE BORDER=1 NOSHADE>
+   <TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+   <TR> <TD COLSPAN=6>unchanged</TD> </TR>
+   </TABLE>
+   </FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LOOPE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LOOPE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Decrease CX, jump to label if CX not zero and Equal (ZF = 1). <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>CX = CX - 1<BR></LI>
+<LI>if (CX &lt;> 0) and (ZF = 1) then
+	<UL>
+	<LI>jump</LI>
+	</UL>
+	else
+	<UL>
+	<LI>no jump, continue</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; Loop until result fits into AL alone,
+; or 5 times. The result will be over 255
+; on third loop (100+100+100),
+; so loop will exit.
+
+   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AX, 0
+   MOV CX, 5
+label1:
+   PUTC '*'
+   ADD AX, 100
+   CMP AH, 0
+   LOOPE label1
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LOOPNE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LOOPNE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Decrease CX, jump to label if CX not zero and Not Equal (ZF = 0). <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>CX = CX - 1<BR></LI>
+<LI>if (CX &lt;> 0) and (ZF = 0) then
+	<UL>
+	<LI>jump</LI>
+	</UL>
+	else
+	<UL>
+	<LI>no jump, continue</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; Loop until '7' is found,
+; or 5 times.
+
+   include 'emu8086.inc'
+
+   ORG 100h
+   MOV SI, 0
+   MOV CX, 5
+label1:
+   PUTC '*'
+   MOV AL, v1[SI]
+   INC SI         ; next byte (SI=SI+1).
+   CMP AL, 7
+   LOOPNE label1
+   RET
+   v1 db 9, 8, 7, 6, 5</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LOOPNZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LOOPNZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Decrease CX, jump to label if CX not zero and ZF = 0. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>CX = CX - 1<BR></LI>
+<LI>if (CX &lt;> 0) and (ZF = 0) then
+	<UL>
+	<LI>jump</LI>
+	</UL>
+	else
+	<UL>
+	<LI>no jump, continue</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; Loop until '7' is found,
+; or 5 times.
+
+   include 'emu8086.inc'
+
+   ORG 100h
+   MOV SI, 0
+   MOV CX, 5
+label1:
+   PUTC '*'
+   MOV AL, v1[SI]
+   INC SI         ; next byte (SI=SI+1).
+   CMP AL, 7
+   LOOPNZ label1
+   RET
+   v1 db 9, 8, 7, 6, 5</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="LOOPZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+LOOPZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>label</NOBR>
+</FONT>
+
+</TD>
+<TD>
+
+Decrease CX, jump to label if CX not zero and ZF = 1. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>CX = CX - 1<BR></LI>
+<LI>if (CX &lt;> 0) and (ZF = 1) then
+	<UL>
+	<LI>jump</LI>
+	</UL>
+	else
+	<UL>
+	<LI>no jump, continue</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">; Loop until result fits into AL alone,
+; or 5 times. The result will be over 255
+; on third loop (100+100+100),
+; so loop will exit.
+
+   include 'emu8086.inc'
+
+   ORG 100h
+   MOV AX, 0
+   MOV CX, 5
+label1:
+   PUTC '*'
+   ADD AX, 100
+   CMP AH, 0
+   LOOPZ label1
+   RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="MOV">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+MOV
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate<BR><BR>
+
+	SREG, memory<BR>
+	memory, SREG<BR>
+	REG, SREG<BR>
+	SREG, REG
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Copy operand2 to operand1.<BR><BR>
+The MOV instruction <U>cannot</U>:
+<UL>
+<LI>set the value of the CS and IP registers.</LI>
+<LI>copy value of one segment register to another segment register (should copy to general register first).</LI>
+<LI>copy immediate value to segment register (should copy to general register first).</LI>
+</UL>
+<BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<BLOCKQUOTE>
+operand1 = operand2
+</BLOCKQUOTE>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h
+MOV AX, 0B800h    ; set AX = B800h (VGA memory).
+MOV DS, AX        ; copy value of AX to DS.
+MOV CL, 'A'       ; CL = 41h (ASCII code).
+MOV CH, 01011111b ; CL = color attribute.
+MOV BX, 15Eh      ; BX = position on screen.
+MOV [BX], CX      ; w.[0B800h:015Eh] = CX.
+RET               ; returns to operating system.
+</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="MOVSB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+MOVSB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Copy byte at DS:[SI] to ES:[DI].
+Update SI and DI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>ES:[DI] = DS:[SI]<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 1</LI>
+	<LI>DI = DI + 1</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 1</LI>
+	<LI>DI = DI - 1</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+CLD
+LEA SI, a1
+LEA DI, a2
+MOV CX, 5
+REP MOVSB
+
+RET
+
+a1 DB 1,2,3,4,5
+a2 DB 5 DUP(0)</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="MOVSW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+MOVSW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Copy <b>word</b> at DS:[SI] to ES:[DI].
+Update SI and DI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>ES:[DI] = DS:[SI]<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>SI = SI + 2</LI>
+	<LI>DI = DI + 2</LI>
+	</UL>
+	else
+	<UL>
+	<LI>SI = SI - 2</LI>
+	<LI>DI = DI - 2</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+CLD
+LEA SI, a1
+LEA DI, a2
+MOV CX, 5
+REP MOVSW
+
+RET
+
+a1 DW 1,2,3,4,5
+a2 DW 5 DUP(0)</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="MUL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+MUL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Unsigned multiply.
+<BR><BR>Algorithm:<BR><BR>
+ <BLOCKQUOTE>
+	 when operand is a <B>byte</B>:<BR>
+	 <FONT FACE="Fixedsys">AX = AL * operand</FONT>.
+ </BLOCKQUOTE>
+
+ <BLOCKQUOTE>
+	when operand is a <B>word</B>:<BR>
+	<FONT FACE="Fixedsys">(DX AX) = AX * operand</FONT>.
+ </BLOCKQUOTE>
+   Example:<PRE><FONT FACE="Fixedsys">MOV AL, 200   ; AL = 0C8h
+MOV BL, 4
+MUL BL        ; AX = 0320h (800)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>?</TD> <TD>?</TD> <TD>r</TD> <TD>?</TD> <TD>?</TD> </TR>
+</TABLE>
+CF=OF=0 when high section of the result is zero.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="NEG">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+NEG
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Negate. Makes operand negative (two's complement).
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>Invert all bits of the operand</LI>
+ <LI>Add 1 to inverted operand</LI>
+ </UL>
+ </FONT>
+    Example:<PRE><FONT FACE="Fixedsys">MOV AL, 5   ; AL = 05h
+NEG AL      ; AL = 0FBh (-5)
+NEG AL      ; AL = 05h (5)
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="NOP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+NOP
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+No Operation.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>Do nothing<BR></LI>
+</UL>
+</FONT>
+    Example:<PRE><FONT FACE="Fixedsys">; do nothing, 3 times:
+NOP
+NOP
+NOP
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="NOT">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+NOT
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	memory<BR>
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Invert each bit of the operand.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>if bit is 1 turn it to 0.<BR></LI>
+<LI>if bit is 0 turn it to 1.<BR></LI>
+</UL>
+</FONT>
+    Example:<PRE><FONT FACE="Fixedsys">MOV AL, 00011011b
+NOT AL   ; AL = 11100100b
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="OR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+OR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Logical OR between all bits of two operands.
+Result is stored in first operand.<BR><BR>
+These rules apply:<BR><BR>
+<FONT FACE="Fixedsys">
+1 OR 1 = 1<BR>
+1 OR 0 = 1<BR>
+0 OR 1 = 1<BR>
+0 OR 0 = 0<BR>
+</FONT>
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AL, 'A'       ; AL = 01000001b
+OR AL, 00100000b  ; AL = 01100001b  ('a')
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>0</TD> <TD>r</TD> <TD>r</TD> <TD>0</TD> <TD>r</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="OUT">&nbsp;</A>
+</TD>
+</TR>
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+OUT
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	im.byte, AL<BR>
+	im.byte, AX<BR>
+	DX, AL<BR>
+	DX, AX
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Output from <B>AL</B> or <B>AX</B> to port.<BR>
+First operand is a port number. If required to access
+port number over 255 - <B>DX</B> register should be used.
+
+<BR><BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 0FFFh ; Turn on all
+OUT 4, AX     ; traffic lights.
+
+MOV AL, 100b  ; Turn on the third
+OUT 7, AL     ; magnet of the stepper-motor.</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="POP">&nbsp;</A>
+</TD>
+</TR>
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+POP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	SREG<BR>
+	memory
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Get 16 bit value from the stack.
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>operand = SS:[SP] (top of the stack)</LI>
+ <LI>SP = SP + 2</LI>
+ </UL>
+ </FONT>
+ <BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 1234h
+PUSH AX
+POP  DX     ; DX = 1234h
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="POPA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+POPA
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Pop all general purpose registers DI, SI, BP, SP, BX, DX, CX, AX from the stack.<BR>
+SP value is ignored, it is Popped but not set to SP register).<BR><BR>
+Note: this instruction works only on <B>80186</B> CPU and later!
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>POP DI</LI>
+ <LI>POP SI</LI>
+ <LI>POP BP</LI>
+ <LI>POP xx (SP value ignored)</LI>
+ <LI>POP BX</LI>
+ <LI>POP DX</LI>
+ <LI>POP CX</LI>
+ <LI>POP AX</LI>
+ </UL>
+ </FONT>
+
+ <FONT FACE="Fixedsys">
+ <TABLE BORDER=1 NOSHADE>
+ <TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+ <TR> <TD COLSPAN=6>unchanged</TD> </TR>
+ </TABLE>
+ </FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="POPF">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+POPF
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Get flags register from the stack.
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>flags = SS:[SP] (top of the stack)</LI>
+ <LI>SP = SP + 2</LI>
+ </UL>
+ </FONT>
+
+ <FONT FACE="Fixedsys">
+ <TABLE BORDER=1 NOSHADE>
+ <TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+ <TR> <TD COLSPAN=6><CENTER>popped</CENTER></TD> </TR>
+ </TABLE>
+ </FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="PUSH">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+PUSH
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG<BR>
+	SREG<BR>
+	memory<BR>
+	immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Store 16 bit value in the stack.<BR><BR>
+
+Note: <B>PUSH immediate</B> works only on 80186 CPU and later!
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>SP = SP - 2</LI>
+ <LI>SS:[SP] (top of the stack) = operand</LI>
+ </UL>
+ </FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">MOV AX, 1234h
+PUSH AX
+POP  DX     ; DX = 1234h
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="PUSHA">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+PUSHA
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Push all general purpose registers AX, CX, DX, BX, SP, BP, SI, DI in the stack.<BR>
+Original value of SP register (before PUSHA) is used.<BR><BR>
+Note: this instruction works only on <B>80186</B> CPU and later!
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+	<LI>PUSH AX</LI>
+	<LI>PUSH CX</LI>
+	<LI>PUSH DX</LI>
+	<LI>PUSH BX</LI>
+	<LI>PUSH SP</LI>
+	<LI>PUSH BP</LI>
+	<LI>PUSH SI</LI>
+	<LI>PUSH DI</LI>
+ </UL>
+ </FONT>
+
+ <FONT FACE="Fixedsys">
+ <TABLE BORDER=1 NOSHADE>
+ <TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+ <TR> <TD COLSPAN=6>unchanged</TD> </TR>
+ </TABLE>
+ </FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="PUSHF">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+PUSHF
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Store flags register in the stack.
+<BR><BR>Algorithm:<BR><BR>
+ <FONT FACE="Fixedsys">
+ <UL>
+ <LI>SP = SP - 2</LI>
+ <LI>SS:[SP] (top of the stack) = flags</LI>
+ </UL>
+ </FONT>
+
+ <FONT FACE="Fixedsys">
+ <TABLE BORDER=1 NOSHADE>
+ <TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+ <TR> <TD COLSPAN=6>unchanged</TD> </TR>
+ </TABLE>
+ </FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+ 			<A NAME="RCL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+RCL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Rotate operand1 left through Carry Flag. The number of rotates is set by operand2.
+<BR>
+When <B>immediate</B> is greater then 1, assembler generates several
+<B>RCL xx, 1</B> instructions because 8086 has machine code only for this
+instruction (the same principle works for all other shift/rotate instructions).
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	shift all bits left, the bit that goes off is set to
+	CF and previous value of CF is inserted to the right-most position.
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">STC               ; set carry (CF=1).
+MOV AL, 1Ch       ; AL = 00011100b
+RCL AL, 1         ; AL = 00111001b,  CF=0.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="RCR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+RCR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Rotate operand1 right through Carry Flag. The number of rotates is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	shift all bits right, the bit that goes off is set to
+	CF and previous value of CF is inserted to the left-most position.
+</UL>
+</FONT>
+<BR>Example:<PRE><FONT FACE="Fixedsys">STC               ; set carry (CF=1).
+MOV AL, 1Ch       ; AL = 00011100b
+RCR AL, 1         ; AL = 10001110b,  CF=0.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="REP">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+REP
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>chain instruction</NOBR><BR>
+</FONT>
+</TD>
+<TD>
+
+Repeat following MOVSB, MOVSW, LODSB, LODSW, STOSB, STOSW instructions
+CX times.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+check_cx:<BR><BR>
+if CX &lt;> 0 then
+<UL>
+	<LI>do following <U>chain instruction</U></LI>
+	<LI>CX = CX - 1</LI>
+	<LI>go back to check_cx</LI>
+</UL>
+else
+<UL>
+	<LI>exit from REP cycle</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> </TR>
+<TR> <TD>r</TD>  </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="REPE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+REPE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>chain instruction</NOBR><BR>
+</FONT>
+</TD>
+<TD>
+
+Repeat following CMPSB, CMPSW, SCASB, SCASW instructions
+while ZF = 1 (result is Equal), maximum CX times.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+check_cx:<BR><BR>
+if CX &lt;> 0 then
+<UL>
+	<LI>do following <U>chain instruction</U></LI>
+	<LI>CX = CX - 1</LI>
+	<LI>if ZF = 1 then:
+		<UL>
+		<LI>go back to check_cx</LI>
+		</UL>
+	else
+		<UL>
+		<LI>exit from REPE cycle</LI>
+		</UL>
+	</LI>
+</UL>
+else
+<UL>
+	<LI>exit from REPE cycle</LI>
+</UL>
+</FONT>
+example:<BR>
+open <B>cmpsb.asm</B> from c:\emu8086\examples
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> </TR>
+<TR> <TD>r</TD>  </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="REPNE">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+REPNE
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>chain instruction</NOBR><BR>
+</FONT>
+</TD>
+<TD>
+
+Repeat following CMPSB, CMPSW, SCASB, SCASW instructions
+while ZF = 0 (result is Not Equal), maximum CX times.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+check_cx:<BR><BR>
+if CX &lt;> 0 then
+<UL>
+	<LI>do following <U>chain instruction</U></LI>
+	<LI>CX = CX - 1</LI>
+	<LI>if ZF = 0 then:
+		<UL>
+		<LI>go back to check_cx</LI>
+		</UL>
+	else
+		<UL>
+		<LI>exit from REPNE cycle</LI>
+		</UL>
+	</LI>
+</UL>
+else
+<UL>
+	<LI>exit from REPNE cycle</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> </TR>
+<TR> <TD>r</TD>  </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="REPNZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+REPNZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>chain instruction</NOBR><BR>
+</FONT>
+</TD>
+<TD>
+
+Repeat following CMPSB, CMPSW, SCASB, SCASW instructions
+while ZF = 0 (result is Not Zero), maximum CX times.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+check_cx:<BR><BR>
+if CX &lt;> 0 then
+<UL>
+	<LI>do following <U>chain instruction</U></LI>
+	<LI>CX = CX - 1</LI>
+	<LI>if ZF = 0 then:
+		<UL>
+		<LI>go back to check_cx</LI>
+		</UL>
+	else
+		<UL>
+		<LI>exit from REPNZ cycle</LI>
+		</UL>
+	</LI>
+</UL>
+else
+<UL>
+	<LI>exit from REPNZ cycle</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> </TR>
+<TR> <TD>r</TD>  </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="REPZ">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+REPZ
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>chain instruction</NOBR><BR>
+</FONT>
+</TD>
+<TD>
+
+Repeat following CMPSB, CMPSW, SCASB, SCASW instructions
+while ZF = 1 (result is Zero), maximum CX times.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+check_cx:<BR><BR>
+if CX &lt;> 0 then
+<UL>
+	<LI>do following <U>chain instruction</U></LI>
+	<LI>CX = CX - 1</LI>
+	<LI>if ZF = 1 then:
+		<UL>
+		<LI>go back to check_cx</LI>
+		</UL>
+	else
+		<UL>
+		<LI>exit from REPZ cycle</LI>
+		</UL>
+	</LI>
+</UL>
+else
+<UL>
+	<LI>exit from REPZ cycle</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>Z</TD> </TR>
+<TR> <TD>r</TD>  </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="RET">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+RET
+</FONT>
+</TD>
+<TD>No operands<BR>
+or even immediate</TD>
+<TD>
+
+Return from near procedure.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>
+		Pop from stack:
+		<UL>
+		<LI>IP</LI>
+		</UL>
+	</LI>
+	<LI>
+	if <U>immediate</U> operand is present:
+	<NOBR>SP = SP + operand</NOBR>
+	</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h  ; for COM file.
+
+CALL p1
+
+ADD AX, 1
+
+RET         ; return to OS.
+
+p1 PROC     ; procedure declaration.
+    MOV AX, 1234h
+    RET     ; return to caller.
+p1 ENDP</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="RETF">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+RETF
+</FONT>
+</TD>
+<TD>No operands<BR>
+or even immediate</TD>
+<TD>
+
+Return from Far procedure.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>
+		Pop from stack:
+		<UL>
+		<LI>IP</LI>
+		<LI>CS</LI>
+		</UL>
+	</LI>
+	<LI>
+	if <U>immediate</U> operand is present:
+	<NOBR>SP = SP + operand</NOBR>
+	</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="ROL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+ROL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Rotate operand1 left. The number of rotates is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	shift all bits left, the bit that goes off is set to
+	CF and the same bit is inserted to the right-most position.
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 1Ch       ; AL = 00011100b
+ROL AL, 1         ; AL = 00111000b,  CF=0.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="ROR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+ROR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Rotate operand1 right. The number of rotates is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	shift all bits right, the bit that goes off is set to
+	CF and the same bit is inserted to the left-most position.
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 1Ch       ; AL = 00011100b
+ROR AL, 1         ; AL = 00001110b,  CF=0.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SAHF">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SAHF
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Store AH register into low 8 bits of Flags register.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	flags register = AH<BR>
+</UL>
+<PRE><FONT FACE="Fixedsys">
+AH bit:   7    6   5    4   3    2   1    0
+        [SF] [ZF] [0] [AF] [0] [PF] [1] [CF]</FONT>
+</PRE>
+bits 1, 3, 5 are reserved.
+</FONT>
+
+<BR><BR>
+
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SAL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SAL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Shift Arithmetic operand1 Left. The number of shifts is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>Shift all bits left, the bit that goes off is set to CF.</LI>
+	<LI>Zero bit is inserted to the right-most position.</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 0E0h      ; AL = 11100000b
+SAL AL, 1         ; AL = 11000000b,  CF=1.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SAR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SAR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Shift Arithmetic operand1 Right. The number of shifts is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>Shift all bits right, the bit that goes off is set to CF.</LI>
+	<LI>The sign bit that is inserted to the left-most position has
+	    the same value as before shift.</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 0E0h      ; AL = 11100000b
+SAR AL, 1         ; AL = 11110000b,  CF=0.
+
+MOV BL, 4Ch       ; BL = 01001100b
+SAR BL, 1         ; BL = 00100110b,  CF=0.
+
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SBB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SBB
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Subtract with Borrow.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 = operand1 - operand2 - CF
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">STC
+MOV AL, 5
+SBB AL, 3    ; AL = 5 - 3 - 1 = 1
+
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SCASB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SCASB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Compare bytes: <NOBR>AL from ES:[DI].</NOBR> <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AL - ES:[DI]<BR></LI>
+<LI>set flags according to result:<BR> OF, SF, ZF, AF, PF, CF<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>DI = DI + 1</LI>
+	</UL>
+	else
+	<UL>
+	<LI>DI = DI - 1</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SCASW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SCASW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Compare words: <NOBR>AX from ES:[DI].</NOBR> <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>AX - ES:[DI]<BR></LI>
+<LI>set flags according to result:<BR> OF, SF, ZF, AF, PF, CF<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>DI = DI + 2</LI>
+	</UL>
+	else
+	<UL>
+	<LI>DI = DI - 2</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SHL">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SHL
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Shift operand1 Left. The number of shifts is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>Shift all bits left, the bit that goes off is set to CF.</LI>
+	<LI>Zero bit is inserted to the right-most position.</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 11100000b
+SHL AL, 1         ; AL = 11000000b,  CF=1.
+
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SHR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SHR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>memory, immediate</NOBR><BR>
+	<NOBR>REG, immediate</NOBR><BR><BR>
+	<NOBR>memory, CL</NOBR><BR>
+	<NOBR>REG, CL</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Shift operand1 Right. The number of shifts is set by operand2.
+
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+	<LI>Shift all bits right, the bit that goes off is set to CF.</LI>
+	<LI>Zero bit is inserted to the left-most position.</LI>
+</UL>
+</FONT>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 00000111b
+SHR AL, 1         ; AL = 00000011b,  CF=1.
+
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>O</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+OF=0 if first operand keeps original sign.
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="STC">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+STC
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Set Carry flag. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+CF = 1
+</FONT>
+
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> </TR>
+<TR> <TD>1</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="STD">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+STD
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Set Direction flag. SI and DI will be decremented by chain
+instructions: CMPSB, CMPSW, LODSB, LODSW, MOVSB, MOVSW, STOSB, STOSW. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+DF = 1
+</FONT>
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>D</TD> </TR>
+<TR> <TD>1</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="STI">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+STI
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Set Interrupt enable flag. This enables hardware interrupts. <BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+IF = 1
+</FONT>
+<BR><BR>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>I</TD> </TR>
+<TR> <TD>1</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="STOSB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+STOSB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Store byte in AL into ES:[DI]. Update DI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>ES:[DI] = AL<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>DI = DI + 1</LI>
+	</UL>
+	else
+	<UL>
+	<LI>DI = DI - 1</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:
+<PRE>
+<FONT FACE="Fixedsys">
+ORG 100h
+
+LEA DI, a1
+MOV AL, 12h
+MOV CX, 5
+
+REP STOSB
+
+RET
+
+a1 DB 5 dup(0)</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="STOSW">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+STOSW
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Store word in AX into ES:[DI]. Update DI.<BR><BR>Algorithm:
+<BR><BR>
+<FONT FACE="Fixedsys">
+<UL>
+<LI>ES:[DI] = AX<BR></LI>
+<LI>if DF = 0 then
+	<UL>
+	<LI>DI = DI + 2</LI>
+	</UL>
+	else
+	<UL>
+	<LI>DI = DI - 2</LI>
+	</UL>
+</LI>
+</UL>
+</FONT>
+Example:
+<PRE><FONT FACE="Fixedsys">
+ORG 100h
+
+LEA DI, a1
+MOV AX, 1234h
+MOV CX, 5
+
+REP STOSW
+
+RET
+
+a1 DW 5 dup(0)</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="SUB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+SUB
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Subtract.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 = operand1 - operand2
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 5
+SUB AL, 1         ; AL = 4
+
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="TEST">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+TEST
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Logical AND between all bits of two operands for flags only.
+These flags are effected: <B>ZF, SF, PF.</B>
+Result is not stored anywhere.<BR><BR>
+These rules apply:<BR><BR>
+<FONT FACE="Fixedsys">
+1 AND 1 = 1<BR>
+1 AND 0 = 0<BR>
+0 AND 1 = 0<BR>
+0 AND 0 = 0<BR>
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 00000101b
+TEST AL, 1         ; ZF = 0.
+TEST AL, 10b       ; ZF = 1.
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> </TR>
+<TR> <TD>0</TD> <TD>r</TD> <TD>r</TD> <TD>0</TD> <TD>r</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="XCHG">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+XCHG
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Exchange values of two operands.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+operand1 &lt; - > operand2
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 5
+MOV AH, 2
+XCHG AL, AH   ; AL = 2, AH = 5
+XCHG AL, AH   ; AL = 5, AH = 2
+RET</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="XLATB">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+XLATB
+</FONT>
+</TD>
+<TD>No operands</TD>
+<TD>
+
+Translate byte from table.<BR>
+Copy value of memory byte at <NOBR>DS:[BX + unsigned AL]</NOBR> to
+AL register.
+<BR><BR>Algorithm:<BR><BR>
+<FONT FACE="Fixedsys">
+AL = DS:[BX + unsigned AL]
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">
+ORG 100h
+LEA BX, dat
+MOV AL, 2
+XLATB     ; AL = 33h
+
+RET
+
+dat DB 11h, 22h, 33h, 44h, 55h</FONT></PRE>
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD COLSPAN=6>unchanged</TD> </TR>
+</TABLE>
+</FONT>
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+			<A NAME="XOR">&nbsp;</A>
+</TD>
+</TR>
+
+
+
+
+
+
+
+<TR>
+<TD>
+<FONT FACE="Fixedsys">
+XOR
+</FONT>
+</TD>
+<TD>
+<FONT FACE="Fixedsys">
+	<NOBR>
+	REG, memory<BR>
+	memory, REG<BR>
+	REG, REG<BR>
+	memory, immediate<BR>
+	REG, immediate
+	</NOBR>
+</FONT>
+</TD>
+<TD>
+
+Logical XOR (Exclusive OR) between all bits of two operands.
+Result is stored in first operand.<BR><BR>
+These rules apply:<BR><BR>
+<FONT FACE="Fixedsys">
+1 XOR 1 = 0<BR>
+1 XOR 0 = 1<BR>
+0 XOR 1 = 1<BR>
+0 XOR 0 = 0<BR>
+</FONT>
+<BR><BR>
+Example:<PRE><FONT FACE="Fixedsys">MOV AL, 00000111b
+XOR AL, 00000010b    ; AL = 00000101b
+RET</FONT></PRE>
+
+
+<FONT FACE="Fixedsys">
+<TABLE BORDER=1 NOSHADE>
+<TR> <TD>C</TD> <TD>Z</TD> <TD>S</TD> <TD>O</TD> <TD>P</TD> <TD>A</TD> </TR>
+<TR> <TD>0</TD> <TD>r</TD> <TD>r</TD> <TD>0</TD> <TD>r</TD> <TD>?</TD> </TR>
+</TABLE>
+</FONT>
+
+<A HREF="#top1"><IMG ALIGN=right WIDTH=41 HEIGHT=36 SRC="img/back_to_top.gif" BORDER=0 ALT="Back to Top"></A>
+
+</TD>
+</TR>
+
+
+
+
+
+
+
+</TABLE>
+
+<BR><BR>
+
+<HR>
+
+<BR><BR><BR>
+<CENTER>
+<FONT SIZE=2>
+copyright &copy; 2005 <A HREF="http://www.emu8086.com">emu8086.com</A><BR>
+all rights reserved.<BR>
+
+</FONT>
+</CENTER>
+
+</FONT>
+
+
+<BR>
+
+
+
+</BODY>
+
+</HTML>
+

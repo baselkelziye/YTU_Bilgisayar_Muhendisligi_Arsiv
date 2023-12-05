@@ -1,0 +1,442 @@
+
+emu8086
+
+The Microprocessor Emulator of 8086 Microprocessor (Intel and AMD compatible)
+And Integrated 8086 Assembler + Flat Assembler (FASM)
+
+
+Version 4.08
+======================
+
+Fix for ADC and SBB emulation.
+
+
+Version 4.07
+======================
+
+Command line parameter bug fix.
+
+
+Version 4.06
+======================
+
+Bug fixes:
+1) Var window (DD & DQ)
+2) AX always returns 0 for INT 21h/3F when EOF.
+
+
+Version 4.05
+======================
+
+Several virtual devices can be launched using the #start=...# directive.
+
+
+Version 4.04
+======================
+
+#masm# directive should be used to invoke MASM assembler.
+
+EMU8086 integrated assembler has similar to MASM syntax, but
+may not be compatible with all of its advanced macro features.
+
+"MASM_PATH" must be set in emu8086.ini to point at MASM working directory.
+By default: C:\MASM611\ 
+
+Please note: MASM assembler is not included in EMU8086 pack, it should
+be acquired separately from Microsoft. MASM installation is not required
+unless you need 100% compatibility or faster assembling speeds.
+
+In addition, a minor bug with showing incorrect variable values
+for specific code combinations, is fixed for FASM assembler.
+
+
+Version 4.03
+============
+
+To turn off strict syntax checking set "STRICT_SYNTAX=false" in 
+c:\emu8086\emu8086.ini (line 62), in this version the strict
+syntax option is turned on by default.
+
+Minor bug with address calculation is fixed.
+
+Drag & drop bug is fixed for filenames containing spaces.
+
+
+Version 4.02
+============
+
+The step-back button allows to execute instructions backwards.
+
+Font size of logical flag analyser can be modified in emu8086.ini
+
+The keyboard buffer is now visible and can be flushed with a click.
+
+It's possible to use _ to separate nibbles of long binary values,
+for example:      mov ax, 1000_0011_0001_1111b
+
+All devices are external, source codes of the devices can be found
+in this folder c:\emu8086\devices\developer\
+
+All ports from 0 to 65535 are free for custom i/o devices.
+
+All devices must be recompiled with new location of IO file.
+new location is: c:\emu8086.io 
+
+Default code templates can be customised in c:\emu8086\inc 
+
+External button loads windows debug.exe after the compilation.
+
+Default fonts for memory, emulator screen and disassembly
+are changed to Terminal, if your system does not have an appropriate
+Terminal font you can set it back to Fixedsys from options.
+
+Far call is supported, see examples: far_call.asm and far_call_advanced.asm
+
+Default output type for boot records is now .bin -- .boot output type
+is obsolete. .binf file has the information required for the emulator
+to know the loading prefix, for boot record it is 0000:7c00 (CS=0, IP=7c00).
+if there is no .binf file associated with .bin file, then default.binf
+is used by the emulator to determine where to load the binary file.
+
+Recent files menu is not reset with other options.
+
+More ASCII extensions can be added to emu8086.ini, files that are
+considered ASCII are loaded into the source editor rather than the emulator.
+
+c:\emu8086\FLOPPY_0 - virtual floppy drive is empty by default,
+previously it was pre-loaded with micro operating system example.
+
+Command prompt can be launched in output folder right after the compilation,
+or from emulator's view menu.
+
+SEG directive returns cs when there are no defined segments.
+assembler automatically replaces code like this: mov dx, seg var1
+with this: mov dx, cs
+
+There is no practical use for this when compiling tiny and simple .com file,
+because it usually has only one segment and can relocate itself without
+the need of relocation tables.
+
+New interrupt function available INT 21h/43h - get/set file attributes.
+example is in c:\emu8086\examples\attrib.asm 
+
+mov dx, offset file ; zero terminated file name.
+mov ah, 43h
+
+mov al, 0  ; get attributes.
+mov al, 1  ; set attributes.
+
+; cx - attributes:
+
+ mov cx, 0       ;  normal - no attributes.
+ mov cx, 1       ;  read-only.
+ mov cx, 2       ;  hidden.
+ mov cx, 4       ;  system
+ mov cx, 7       ;  hidden, system & read-only.
+
+Interrupt documentation is only partly updated, 
+this function is not documented yet, but there is
+an example in c:\emu8086\examples\attrib.asm 
+note: it may look like the file suddenly disappears unless you set 
+the settings of file manager to show system and hidden files.
+
+Programs can be started in real environment - external button and menu.
+
+OUT instruction can be undone with step-back as well.
+
+Moving cars added to traffic lights device, example: traffic_lights.asm
+
+Automatic workaround for short relative jumps updated, to overcome
+jump limit of +/-127 bytes, short conditional jumps are replaced
+with the opposite instruction and one normal jump, then cpu just either 
+skips over normal jump, if original condition is false, or doesn't if
+original condition is true. for more information refer to tutorial 7.
+
+WRITEBIN.ASM utility is updated, this little program can be used to 
+write bin file to boot record of a floppy drive and make it bootable.
+now it's possible to write a complete micro-operating system on a floppy
+drive. to use this utility you need to compile it first. it works from
+command line. to write a boot record type this:
+		writebin loader.bin
+to write kernel type this:
+		writebin kernel.bin /k
+this utility should be used with micro-operating system example:
+   micro-os_loader.asm       and       micro-os_kernel.asm
+however, it is not limited to these files and can be used with other
+files, for example it can be used to test timer.asm as well.
+
+Double word definition is supported:
+
+mydoubles dd 12345678h
+
+; it is equal to:
+
+mywords   dw 5678h
+          dw 1234h
+
+;  or
+
+mybytes   db  78h
+          db  56h
+          db  34h
+          db  12h
+
+; exactly 32 bits
+binn dd 00010010001101000101011001111000b
+; load double word to dx:ax
+mov ax, binn
+mov dx, [binn+2]
+
+Default vdrive path can be changed in emu8086.ini
+
+Long jump is supported, for example:
+
+	jmp far addr
+
+	addr dd 1235:5124h
+
+Most of the file operations can be undone with step back.
+all file write operations are undone when file open function is undone.
+byte-by-byte undo is not allowed.
+
+Major mouse driver interrupts are implemented.
+see mouse.asm and mouse2.asm in c:\emu8086\examples.
+
+New example of a simplest virtual device in pure assembly language is created.
+see simplest.asm in examples.
+
+New directive added:
+#start=mydevice.exe#
+the emulator starts the specified executable from c:\emu8086\devices\ folder
+when this directive is found in the original source code. 
+previous method of searching filenames in comments is obsolete.
+
+External debug.exe can be easily launched by F12 hotkey.
+it can be used along with the log button to check validity of the emulator if results are disputable.
+hotkey for the emulator's log button is F11.
+
+Hardware interrupts are enabled.
+when interrupt flag is 1, the emulator continually checks first 256 bytes of this file c:\emu8086.hw
+if any of the bytes is none-zero the microprocessor transfers control
+to an interrupt handler that matches the trigerring byte offset in emu8086.hw file (0 to 255)
+according to the interrupt vector table (memory 0000-0400h) and resets the byte in emu8086.hw to 00.
+
+Tab codes (9) are expanded as specified by ascii standard.
+The bell code (7) produces a short beep. for example:
+mov al, 7
+mov ah, 0eh
+int 10h
+
+The startup window can be turned off/on from emu8086.ini
+
+"#mem=..." directive can be used to write values to memory before program starts
+(for .bin files that run in the emulator only).
+#MEM=nnnnn,[bytestring]-nnnn:nnnn,[bytestring]#
+for example:
+#MEM=0100:FFFE,00FF-0100:FF00,F4#
+all values must be in hex. address can be physical (nnnnn) or logical (nnnn:nnnn).
+ "-" separates the entries. spaces inside byte strings are ignored.
+default.binf is updated to automatically stop the program when RET instruction is executed.
+ SP register is set to FFFE. MEM directive sets value FF00 to top of the stack 
+(it is used by first RET to set IP register to that offset). 
+F4 is an opcode for HLT instruction. F4 is written to offset FF00. 
+
+Java executable files (.jar and .class) are automatically added to virtual devices menu of the emulator.
+
+Automated translation tool is to be developed in the near future to help the translators.
+
+The log button is renamed to debug. binary/ascii dump is enabled, for example:
+d ds:[bx]
+d ds:0100
+d 100
+
+More improvements to extended debug (debug commands and output may not be compatible
+with the original Microsoft debug because of the enhanced features).
+for more information visit:
+http://www.emu8086.com/dr/debug.html
+
+Stop on condition feature is added to the emulator. It allows to stop the execution
+when a value of some register or byte in RAM changes or becomes equal to a specified expression.
+(accessible from [debug] -> [stop on condition] menu).
+
+The assembly code can be automatically exported to HTML format for publishing or printing,
+preserving the coloured syntax and highlight. Click file->export to html...
+
+The listing file is generated automatically (*.list)
+listing allows to see what assembler really does, when and why.
+this new feature can be turned off in emu8086.ini by setting listing=false
+
+Listing line numbers start from the same line as in the source editor.
+
+Relative jumps are updated for compatibility with MASM, from now on:
+   jmp $3   ; jumps 3 bytes from the location counter.
+to jump over 3 bytes after jmp instruction use  jmp $3+2   or jmp $5
+because the size of the machine code for jmp instruction is 2 bytes.
+
+Unless the executable file is manually saved these file extensions are used now:
+   .com_    ,    .exe_     ,     .bin_
+the emulator loads these files automatically when they are double clicked.
+
+By default STRICT_SYNTAX=false is set in emu8086.ini
+if you want the assembler to generate errors set STRICT_SYNTAX=true , for example:
+    mov ax, v1
+    v1 db 5
+    v2 db 7
+Note: this and other emu8086.ini settings do not apply to fasm assembler.
+
+To disable the screen window pop-up when program terminates set:
+ACTIVATE_SCREEN_WHEN_STOPPED=false
+(emu8086.ini) 
+
+Licence agreement is updated once again, refer to LICENCE.txt for more information.
+
+Option to trim lines of the original source code can be turned off by setting:
+TRIM_ORIGINAL_SOURCE=false in emu8086.ini
+
+The emulator shows physical memory addresses in the memory list.
+
+New tabled memory viewer/editor, click "aux" button.
+
+
+It is possible to enter any effective address for the memory list,
+and even a variable name to specify an offset, for example: 
+
+CS:[BX+2]  
+DS:var2
+DS:[SI]
+
+This works both for integrated and tabbed memory viewer and for disassembly list.
+
+New format for the symbol table.
+The symbol table and listing are appended to the aux button.
+
+New debug command: c
+Compare bytes. For example to compare 16 bytes at offsets 100 and 200 type:
+c 100 L 10 200
+L - denotes the length. Equal bytes are not printed out.
+Parameters can be variables or registers, for example:
+C SI L 2 DI
+If L parameter is not used the command compares 8 bytes by default.
+
+Font sizes are set to 12 if default Terminal font has width less than 8 pixels
+To prevent messing the letter D with 0 (localized versions of Windows XP only).
+The fix can be turned off by setting FIX_SMALL_FONTS=true in emu8086.ini
+
+More interrupts enabled: 
+INT 21h/AH=57h,AL=0/1 
+INT 21h/AH=4Eh/AH=4Fh
+INT 21H/AH=48h
+
+Stop on condition is added to "aux" button of the emulator.
+In addition to general registers it's possible to stop when any of the flags is changed.
+
+The integrity check is added to micro-os kernel to prevent running arbitrary code when it is loaded
+to sector 1 instead of sector 2. When base offset is not 0 the kernel prints out "F" and reboots.
+To prevent this failure the kernel must be written to sector 2 and boot loader to sector 1.
+
+Improved MASM compatibility.
+This code sets the difference of offsets of a and b to ax:
+         a:
+         mov ax, b-a
+         ret
+         b db 5         
+; Previously it was required to use the OFFSET directive, like this:
+         mov ax, offset b - offset a    
+
+Fix for multi-line comments, for example:
+comment *
+          This is my 
+              multi-line 
+                   comment!
+*
+Note: the syntax highlight remains unchanged.
+It is highly recommended to select blocks of texts and use Ctrl+Q and Ctrl+W key combinations instead.
+Ctrl+Q comments a block of text, and Ctrl+W uncomments block of text.
+
+To pass VGA checks it's now possible to use VGA state emulation. Just add this line on top:
+  #START=VGA_STATE.exe#
+Source code for that simplest device is available in c:\emu8086\DEVICES\DEVELOPER\sources
+Example: worm2.asm from Antiquenties: http://groups.yahoo.com/group/emu8086/files/Antiquities
+
+Screen activation can be turned off completely by setting this property in emu8086.ini:
+ACTIVATE_SCREEN=false
+If set "false" the emulator screen is not activated and the "screen" button has to be pushed to see the output.
+
+Esc hotkey is cancelled to prevent conflicts with programs that wait for that key,
+and from now on by default: SCREEN_HOTKEYS=true  in emu8086.ini
+if set "SCREEN_HOTKEYS=false" the emulator screen does not accept hot-keys such as F8, F6, etc... 
+and these keys are written to the keyboard buffer.
+
+The .RADIX directive is supported, for example:
+.radix 2
+mov ax, 101        ; AX = 5
+.radix 16
+mov ax, 101        ; AX = 101h
+.radix 10
+mov ax, 20         ; AX = 20
+.radix 8
+mov ax, 20         ; AX = 16
+Note: suffixes have priority over the radix directive: "h", "o", "b", "d".
+Therefore, hexadecimal numbers that has D or B as the last digit must ALWAYS have an h suffix or 0x prefix.
+This makes the radix directive not practically useful, because it's simpler to add h suffixes to all hexadecimal numbers. 
+For example:
+.RADIX 16
+DW 123D         ; = 123d (decimal, not 123Dh) 
+DB 101B         ; = 00000101b (binary, not 101Bh) 
+DW 8F0B         ; WRONG (b suffix)
+DW 8F0Bh        ; correct 
+DW 0x8F0B       ; correct 
+MOV AX, 0ABCD   ; WRONG  (d suffix)
+MOV AX, 0ABCDh  ; correct
+MOV AX, 0ABCE   ; correct
+
+The interrupt list is updated.
+
+The FASM incorporation. The integration with Flat Assembler.
+The incorporation should allow easy jump from 16 bit to 32 bit and Linux Programming.
+To assemble with FASM add this directive to the top of the source code: #fasm#
+Sometimes the FASM assembler is launched automatically when there are directives that
+are incompatible with the integrated 8086 assembler, or when comment starts by "fasm example".
+The emulator does not emulate 32bit code and Windows/GUI interfaces.
+To test 32 bit or Windows/GUI programs it's possible to click "external" -> "run".
+
+
+Hardware support for relative jumps over 127 bytes - for FASM generated code.
+
+Improved integration: variables / symbol table.
+
+FPU support (Beta!)
+To use any FPU instruction there should be #fasm# or "format mz" directive on top.
+disassembler may show:
+   FCOMP st0, st1
+   FCOM  st0, st1
+   FXCHG st0, st1
+however the correct syntax for FASM is:
+   FCOMP st1
+   FCOM  st1
+   FXCHG st1
+
+See fasm_compatibility.asm in examples.
+
+Syntax fix for:
+    MOV AH, v+1
+    RET
+    v DB 55h, 77h
+However, the above syntax is ridiculous. Recommended (Intel) syntax is:
+    MOV AH, [v+1]
+    RET
+    v DB 55h, 77h
+
+Integrated assembler shows correct error message for:
+    s1 db "Hello World", 0Dh, 0Ah '$'
+In the above code comma is missing before '$'. Corrected:
+    s1 db "Hello World", 0Dh, 0Ah, '$'
+This fix is for integrated assembler only. FASM assembler is not effected.
+
+
+---------------
+Copyright emu8086.com (c) 2005 All rights reserved.
+Intel is a registered trademark of Intel Corporation.
+AMD is a registered trademark of AMD Corporation.
+Microsoft is a registered trademark of Microsoft Corporation.
+

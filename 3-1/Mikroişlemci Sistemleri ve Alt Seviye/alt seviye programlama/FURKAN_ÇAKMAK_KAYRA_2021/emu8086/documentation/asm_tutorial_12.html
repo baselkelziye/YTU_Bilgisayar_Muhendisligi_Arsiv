@@ -1,0 +1,187 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 12)</TITLE>
+
+<META name="description" content="Controlling External Devices">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 12)</B>
+</FONT>
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Controlling External Devices</B></FONT>
+<BR><BR><BR>
+
+There are 7 devices attached to the emulator: traffic lights, stepper-motor, LED display, thermometer, printer,
+robot and simple test device. You can view devices when you click "<B>Virtual Devices</B>" menu of the emulator.<BR><BR>
+
+For technical information see <A HREF="io.html"><B>I/O ports</B></A> section of emu8086
+reference.<BR><BR>
+In general, it is possible to use any x86 family CPU to control all kind of devices,
+the difference maybe in base I/O port number, this can be altered using some tricky
+electronic equipment. Usually the "<B>.bin</B>" file is written into the Read Only
+Memory (ROM) chip, the system reads program from that chip, loads it in RAM module
+and runs the program. This principle is used for many modern devices such
+as micro-wave ovens and etc...
+<BR><BR>
+
+<HR>
+<BR>
+
+<B>Traffic Lights</B><BR><BR>
+
+<IMG SRC="img/traffic.gif">
+
+<BR><BR>
+Usually to control the traffic lights an array (table) of values is used. In
+certain periods of time the value is read from the array and sent to a port.
+For example:
+
+
+
+
+
+<!-- START AUTOMATIC ASM TO HTML EXPORT -->
+<pre><font size=3 face="Terminal">
+<font color=#008000>; controlling external device with 8086 microprocessor. </font>
+<font color=#008000>; realistic test for c:\emu8086\devices\Traffic_Lights.exe </font>
+
+#start=Traffic_Lights.exe#
+
+name <font color=#800080>"traffic"</font>
+
+
+<font color=#0000FF>mov</font> <font color=#C80000>ax</font>, all_red
+<font color=#0000FF>out</font> 4, <font color=#C80000>ax</font>
+
+
+<font color=#0000FF>mov</font> <font color=#C80000>si</font>, <font color=#000064>offset</font> situation
+
+
+next:
+<font color=#0000FF>mov</font> <font color=#C80000>ax</font>, <font color=#0064C8>[</font><font color=#C80000>si</font><font color=#0064C8>]</font>
+<font color=#0000FF>out</font> 4, <font color=#C80000>ax</font>
+
+<font color=#008000>; wait 5 seconds (5 million microseconds) </font>
+<font color=#0000FF>mov</font>     <font color=#C80000>cx</font>, 4Ch    <font color=#008000>;    004C4B40h = 5,000,000 </font>
+<font color=#0000FF>mov</font>     <font color=#C80000>dx</font>, 4B40h
+<font color=#0000FF>mov</font>     <font color=#C80000>ah</font>, 86h
+<font color=#0000FF>int</font>     15h
+
+
+<font color=#0000FF>add</font> <font color=#C80000>si</font>, 2 <font color=#008000>; next situation </font>
+<font color=#0000FF>cmp</font> <font color=#C80000>si</font>, sit_end
+<font color=#0000FF>jb</font>  next
+<font color=#0000FF>mov</font> <font color=#C80000>si</font>, <font color=#000064>offset</font> situation
+<font color=#0000FF>jmp</font> next
+
+
+<font color=#008000>;                        FEDC_BA98_7654_3210 </font>
+situation        <font color=#000064>dw</font>      0000_0011_0000_1100b
+s1               <font color=#000064>dw</font>      0000_0110_1001_1010b
+s2               <font color=#000064>dw</font>      0000_1000_0110_0001b
+s3               <font color=#000064>dw</font>      0000_1000_0110_0001b
+s4               <font color=#000064>dw</font>      0000_0100_1101_0011b
+sit_end = $
+
+
+all_red          <font color=#000064>equ</font>     0000_0010_0100_1001b
+
+
+</font></pre>
+<!-- emu8086 version 4.00-Beta-12    -->
+<!-- STOP AUTOMATIC ASM TO HTML EXPORT -->
+
+
+
+<HR>
+
+<BR>
+<B>Stepper-Motor</B>
+<BR><BR>
+
+<IMG SRC="img/stepper.gif" WIDTH=237 HEIGHT=215>
+
+<BR><BR>
+
+The motor can be half stepped by turning on pair of
+magnets, followed by a single and so on.<BR><BR>
+
+The motor can be full stepped by turning on pair of magnets, followed
+by another pair of magnets and in the end followed by a single magnet and so on.
+The best way to make full step is to make two half steps.<BR><BR>
+
+Half step is equal to <B>11.25</B> degrees.<BR>
+Full step is equal to <B>22.5</B> degrees.<BR><BR>
+
+The motor can be turned both clock-wise and counter-clock-wise.<BR><BR>
+
+open <B>stepper_motor.asm</B> from c:\emu8086\examples
+<BR><BR>
+See also <A HREF="io.html"><B>I/O ports</B></A> section of emu8086
+reference.<BR><BR>
+
+<BR><BR>
+
+<HR>
+
+<BR>
+<B>Robot</B>
+<BR><BR>
+
+<IMG SRC="img/robot.gif" WIDTH=530 HEIGHT=352>
+
+<BR><BR>
+Complete list of robot instruction set is given in
+<A HREF="io.html"><B>I/O ports</B></A> section of emu8086
+reference.<BR><BR>
+
+To control the robot a complex algorithm should be used to achieve
+maximum efficiency. The simplest, yet very inefficient, is random moving
+algorithm, open <B>robot.asm</B> from c:\emu8086\examples
+
+<BR><BR>
+It is also possible to use a data table (just like for Traffic Lights), this
+can be good if robot always works in the same surroundings.
+<BR><BR>
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_11.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_end.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+
+<BR>
+
+</FONT>
+
+
+
+</BODY>
+
+</HTML>
