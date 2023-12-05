@@ -66,12 +66,17 @@ def dersleri_readme_ye_ekle(dersler):
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
             f.write(f"\n### {donem}\n")
             for ders in gruplanmis_dersler[donem]:
+                f.write("\n\n")
                 f.write(f"- **{ders['ad']}**\n")
                 f.write(f"  - **Ders Tipi:** {ders['tip']}\n")
                 f.write(f"  - **Hakkında:** {ders['hakkinda']}\n")
                 f.write("  - **Yıldız Sayıları:**\n")
                 f.write(f"    - Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                 f.write(f"    - Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
+                if "dersi_veren_hocalar" in ders:
+                    f.write("  - **Dersi Yürüten Akademisyenler:**\n")
+                    for hoca in ders["dersi_veren_hocalar"]:
+                        f.write(f"    - {hoca}\n")
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
     with open('README.md', 'w') as f:
