@@ -1,0 +1,172 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 1)</TITLE>
+
+<META name="description" content="what is assembly language? startup tutorial for beginners.">
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 1)</B>
+</FONT>
+
+<BR><BR>
+<BR>
+
+this tutorial is intended for those who are not familiar with assembler at all,
+or have a very distant idea about it. of course if you have knowledge of some high level
+programming language (java, basic, c/c++, pascal...) that may help you a lot.
+<br>
+but even if you are familiar with assembler, it is still a good idea to look
+through this document in order to study emu8086 syntax.
+<br><br>
+it is assumed that you have some knowledge about number representation (hex/bin),
+if not it is highly recommended to study
+<a href="numbering_systems_tutorial.html"><b>numbering systems tutorial</b></a>
+before you proceed.
+
+<BR><BR><BR>
+
+<FONT SIZE=+2><B>what is assembly language?</B></FONT>
+<BR><BR>
+
+assembly language is a low level programming language.
+you need to get some knowledge about computer structure
+in order to understand anything.
+the simple computer model as i see it:<br>
+
+<IMG SRC="img/model.gif" WIDTH=382 HEIGHT=241>
+
+<BR> the <B>system bus</B> (shown in yellow) connects the various components
+of a computer.<BR>
+The <B>CPU</B> is the heart of the computer, most of computations occur inside the <B>CPU</B>.<BR>
+<B>RAM</B> is a place to where the programs are loaded in order to be executed.
+
+<BR><BR><BR>
+
+<FONT SIZE=+2><B>inside the CPU</B></FONT>
+<BR><BR>
+
+<IMG SRC="img/cpu.gif" WIDTH=540 HEIGHT=284><BR><BR>
+
+<B>general purpose registers</B><BR><BR>
+8086 CPU has 8 general purpose registers, each register has its own name:
+<BR>
+<UL>
+<LI>	<B>AX</B> - the accumulator register (divided into <B>AH / AL</B>).</LI>
+<LI>	<B>BX</B> - the base address register (divided into <B>BH / BL</B>).</LI>
+<LI>	<B>CX</B> - the count register (divided into <B>CH / CL</B>).</LI>
+<LI>	<B>DX</B> - the data register (divided into <B>DH / DL</B>).</LI>
+<LI>	<B>SI</B> - source index register.</LI>
+<LI>	<B>DI</B> - destination index register.</LI>
+<LI>	<B>BP</B> - base pointer.</LI>
+<LI>	<B>SP</B> - stack pointer.</LI>
+</UL>
+<BR>
+despite the name of a register, it's the programmer who determines
+the usage for each general purpose register. the main purpose of a register is to
+keep a number (variable). the size of the above registers is 16 bit, it's something
+like: <b>0011000000111001b</b> (in binary form), or <b>12345</b> in decimal (human) form.
+
+<BR><BR>
+4 general purpose registers (AX, BX, CX, DX) are made of two separate 8 bit
+registers, for example if AX=
+<B><FONT COLOR=RED>00110000</FONT><FONT COLOR=BLUE>00111001</FONT>b</B>,
+then AH=<B><FONT COLOR=RED>00110000</FONT>b</B>
+and AL=<B><FONT COLOR=BLUE>00111001</FONT>b</B>. therefore, when you modify any of the 8 bit
+registers 16 bit register is also updated, and vice-versa. the same is for other 3 registers,
+"H" is for high and "L" is for low part.
+
+<BR><BR>
+because registers are located inside the cpu,
+they are much faster than memory. accessing a memory location
+requires the use of a system bus, so it takes much longer.
+accessing data in a register usually takes no time.
+therefore, you should try to keep variables in the registers.
+register sets are very small and most registers have special
+purposes which limit their use as variables, but they
+are still an excellent place to store temporary data of
+calculations.
+
+<BR><BR>
+<B>segment registers</B><BR><BR>
+
+<UL>
+<LI>	<B>CS</B> - points at the segment containing the current program.</LI>
+<LI>	<B>DS</B> - generally points at segment where variables are defined.</LI>
+<LI>	<B>ES</B> - extra segment register, it's up to a coder to define its usage.</LI>
+<LI>	<B>SS</B> - points at the segment containing the stack.</LI>
+</UL>
+
+although it is possible to store any data in the
+segment registers, this is never a good idea.
+the segment registers have a very special purpose
+- pointing at accessible blocks of memory.
+<BR><BR>
+segment registers work together with general purpose register to access
+any memory value. For example if we would like to access memory at the physical
+address <B>12345h</B> (hexadecimal), we should set the <B>DS = 1230h</B> and
+<B>SI = 0045h</B>. This is good, since this way we can
+access much more memory than with a single register that is limited to 16 bit values.<BR>
+CPU makes a calculation of physical address by multiplying the segment register by 10h
+and adding general purpose register to it <NOBR>(1230h * 10h + 45h = 12345h):</NOBR><BR>
+<IMG SRC="img/effective_address.gif" WIDTH=63 HEIGHT=75>
+
+<BR>
+the address formed with 2 registers is called an <B>effective address</B>.
+<BR>
+by default <B>BX, SI</B> and <B>DI</B> registers work with <B>DS</B> segment register;<BR>
+<B>BP</B> and <B>SP</B> work with <B>SS</B> segment register.<BR>
+Other general purpose registers cannot form an effective address!
+<BR>
+also, although <B>BX</B> can form an effective address, <B>BH</B> and <B>BL</B> cannot.
+
+
+<BR><BR>
+<B>special purpose registers</B><BR><BR>
+
+<UL>
+<LI>	<B>IP</B> - the instruction pointer.</LI>
+<LI>	<B>flags register</B> - determines the current state of the microprocessor.</LI>
+</UL>
+<BR>
+<B>IP</B> register always works together with <B>CS</B> segment register and it points
+to currently executing instruction.<BR>
+<B>flags register</B> is modified automatically by CPU after mathematical operations,
+this allows to determine the type of the result, and to determine conditions
+to transfer control to other parts of the program.<BR>
+generally you cannot access these registers directly, the way you can access AX and other general registers, but it is possible to change values of system registers using some tricks that you will learn a little bit later.
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_02.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+
+<BR>
+
+</FONT>
+
+
+
+
+</BODY>
+
+</HTML>

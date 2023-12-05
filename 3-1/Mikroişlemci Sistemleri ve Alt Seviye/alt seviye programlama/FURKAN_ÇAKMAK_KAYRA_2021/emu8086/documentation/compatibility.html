@@ -1,0 +1,231 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>MASM / TASM compatibility</TITLE>
+
+<META name="description" content="MASM / TASM compatibility">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2>
+<B>MASM / TASM compatibility</B>
+</FONT>
+
+<BR><BR><BR>
+
+syntax of emu8086 is fully compatible with all major assemblers including
+<I>MASM</I> and <I>TASM</I>; &nbsp; though some directives are unique to this assembler.
+ &nbsp;
+If required to compile using any other assembler you may need to comment out
+these directives, and any other directives that start with a '<B>#</B>' sign:
+
+<pre><font face="fixedsys">#make_bin#
+#make_boot#
+#cs=...#
+         etc...</font></pre>
+
+
+<BR>
+<HR>
+<BR>
+
+emu8086 ignores the <B>ASSUME</B> directive.
+&nbsp; manual attachment of <B>CS:</B>, <B>DS:</B>, <B>ES:</B>
+or <B>SS:</B> segment prefixes is preferred, and required by emu8086 when data is
+in segment other then <B>DS</B>. for example:
+
+
+
+<PRE><FONT FACE="Fixedsys">mov ah, [bx]        <FONT COLOR=green>; read byte from DS:BX</FONT>
+mov ah, es:[bx]     <FONT COLOR=green>; read byte from ES:BX</FONT></FONT></PRE>
+<BR>
+
+
+
+<HR>
+<BR>
+
+emu8086 does not require to define segment when you compile
+segmentless <B>COM</B> file, however <I>MASM</I> and <I>TASM</I> may require this,
+for example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+name test
+
+CSEG    SEGMENT     ; code segment starts here.
+
+ORG 100h
+
+start:  MOV AL, 5   ; some sample code...
+        MOV BL, 2
+        XOR AL, BL
+        XOR BL, AL
+        XOR AL, BL
+
+        RET
+
+CSEG    ENDS        ; code segment ends here.
+
+END     start       ; stop compiler, and set entry point.</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+entry point for <B>COM</B> file should always be at <B>0100h</B>, however in <I>MASM</I> and <I>TASM</I> you may need to manually
+set an entry point using <B>END</B> directive even if there is no way to set it to some other location.
+emu8086 works just fine, with or without it; however error message is generated if entry point is set but it is not 100h (the starting offset for com executable).
+the entry point of com files is always the first byte.
+
+<BR><BR>
+
+
+if you compile this code with Microsoft Assembler or with Borland Turbo Assembler, you should get <B>test.com</B> file (11 bytes), right click it and select <B><NOBR>send to</NOBR></B> and <B>emu8086</B>.
+You can see that the disassembled code doesn't contain any directives and it is identical
+to code that emu8086  produces even without all those tricky directives.
+
+<BR><BR>
+
+    emu8086 has almost 100% compatibility with other similar 16 bit assemblers.
+    the code that is assembled by emu8086 can easily be assembled with other assemblers such as TASM or MASM,
+    however not every code that assembles by TASM or MASM can be assembled by emu8086.
+
+
+<HR>
+
+<BR>
+
+a template used by emu8086  to create <B>EXE</B> files is fully compatible
+with <I>MASM</I> and <I>TASM</I>.
+
+<BR><BR>
+
+the majority of <B>EXE</B> files produced by <I>MASM</I> are identical to those produced by <I>emu8086</I>.
+ &nbsp;
+ However, it may not be exactly the same as TASM's executables because
+<I>TASM</I> does not calculate the checksum, and has slightly different EXE file structure, but in general it
+produces quite the same machine code.
+
+<BR><BR>
+note:  there are several ways to encode the same machine instructions for the 8086 CPU,
+so generated machine code may vary when compiled on different compilers.
+
+
+<BR><BR>
+
+<HR>
+
+<BR>
+emu8086 integrated assembler supports shorter versions of <B>byte ptr</B> and <B>word ptr</B>,
+these are: <B>b.</B> and <B>w.</B><BR><BR>
+
+for <I>MASM</I> and <I>TASM</I> you have to replace <B>w.</B> and <B>w.</B> with
+<B>byte ptr</B> and <B>word ptr</B> accordingly.<BR><BR>
+
+for example:
+<pre><font face="fixedsys">lea bx, var1
+mov word ptr [bx], 1234h ; works everywhere.
+mov w.[bx], 1234h        ; same instruction / shorter emu8086 syntax.
+hlt
+
+var1  db  0
+var2  db  0
+</font></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HR>
+
+<BR><BR>
+
+<B>LABEL</B> directive may not be supported by all assemblers, for example:
+
+<PRE><FONT FACE="Fixedsys">	  TEST1 LABEL BYTE
+	  ; ...
+	  LEA DX,TEST1
+</FONT></PRE>
+
+the above code should be replaced with this alternative construction:
+
+<PRE><FONT FACE="Fixedsys">          TEST1:
+          ; ...
+	  MOV DX, TEST1
+</FONT></PRE>
+
+the offset of <B>TEST1</B> is loaded into <B>DX</B> register. this solutions works for the majority of leading assemblers.
+
+
+
+<BR><BR>
+
+
+<HR>
+
+<BR><BR>
+
+
+
+<A HREF="http://www.emu8086.com/dr/emu8086_assembler_solutions_faq.html"><B>frequently asked questions</B></A>
+<BR><BR>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</FONT>
+
+
+
+
+<BR>
+
+
+
+</BODY>
+
+</HTML>

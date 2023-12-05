@@ -1,0 +1,43 @@
+Printer.exe - device for emu8086
+
+code updated: July 19, 2005 (single instance check).
+
+
+
+Andrew Nelis (andrewn@nipltd.com)
+
+Date: 20 Feb 2003
+
+Description: Simple line printer device
+
+** Usage **
+
+Start up printer.exe. Now the printer can be accessed through port 130 (decimal).
+
+Controlling it is simple, you just 'out' a byte to the printer port and it'll print out
+the corresponding character onto the page, then clear the port back to zero once its
+done, that way you can tell when it's time to pass it the next character.
+
+A few things to note:
+
+If the char value is greater than 31, then it'll just be printed straight out.
+Below and including that, it's won't be printed (they wouldn't come out anyway?)
+apart from the ones that I've implemented:
+
+07 - Bell. Well I had to didn't I?  ;)
+08 - Backspace, move print head left one character
+10 - Line feed
+13 - Carriage return
+
+The below 32 control codes are actually ascii control codes.
+
+Well, have a good play with it - the VB source is included too if you're interested.
+
+** Notes/Todo **
+
+- Please email me if you have any coments/requests, bug fixes.
+- It's not finished yet, apart from the basic functionality.
+- Not a lot distinguishes it from the user screen, I was trying to get a printer head moving across (see the .bmps)
+  the screen but couldn't figure out why VB wasn't moving it. Also maybe it could be joined with a real printer?
+  And it's interface could be closer to that of a real parallel port.
+- Must sleeeeppp .....
