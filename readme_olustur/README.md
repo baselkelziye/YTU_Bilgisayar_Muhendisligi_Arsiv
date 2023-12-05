@@ -2,7 +2,7 @@
 
 Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır.
 
-## ��indekiler
+## İçindekiler
 
 - [Hocalar](#hocalar)
 - [Dersler](#dersler)
@@ -21,10 +21,715 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 
 ### Doç Dr. M. Amaç Güvensan
 - **Ofis:** EEF-DZ35
-- **Ara�t�rma Sayfas�:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
-- **Hakk�nda:** Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
-- **Verdi�i Dersler:**
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
+- **Hakkında:** Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+- **Verdiği Dersler:**
   - Bilgisayar Bilimlerine Giriş
   - Algoritma Analizi
   - Mobil Programlamaya Giriş
-- **Y�ld�z Say�lar�:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★☆☆☆☆☆☆
+
+
+
+### Doç Dr. Mehmet Sıddık Aktaş
+- **Ofis:** EEF-DZ31
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
+- **Hakkında:** Harf notunu güzel verir.
+- **Verdiği Dersler:**
+  - Nesneye Yönelik Programlama
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+
+
+
+### Doç. Dr. Ali Can Karaca
+- **Ofis:** 
+- **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
+- **Hakkında:** İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+- **Verdiği Dersler:**
+  - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - Bilgisayar Donanımı
+  - Gömülü Sistemler
+  - Sayısal İşaret İşleme
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+
+
+
+### Doç. Dr. Gökhan Bilgin
+- **Ofis:** EEF-D218
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
+- **Hakkında:** Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+- **Verdiği Dersler:**
+  - Lojik Devreler
+  - Elektronik Devreler
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim: ★★★★☆☆☆☆☆☆
+
+
+
+### Dr. Ahmet Elbir
+- **Ofis:** Her dersi verebilir. Standart anlatır.
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
+- **Hakkında:** 
+- **Verdiği Dersler:**
+  - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - Sayısal İşaret İşleme
+  - Sayısal Analiz
+  - Ayrık Matematik
+  - İşletim Sistemleri
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★☆☆
+  - Derste Eğlenir Miyim: ★★★★★★☆☆☆☆
+
+
+
+### Dr. Erkan Uslu
+- **Ofis:** EEF - D034
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
+- **Hakkında:** Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
+- **Verdiği Dersler:**
+  - Bilgisayar Donanımı
+  - Mikroişlemci Sistemleri
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★★★★★★☆
+
+
+
+### Dr. Furkan Çakmak
+- **Ofis:** EEF-D122
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
+- **Hakkında:** İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+- **Verdiği Dersler:**
+  - Nesneye Yönelik Programlama
+  - Robot Teknolojisine Giriş
+  - Alt Seviye Programlama
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★★
+  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+
+
+
+### Dr. Göksel Biricik
+- **Ofis:** EEF-D127
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
+- **Hakkında:** Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
+- **Verdiği Dersler:**
+  - Mesleki Hukuk ve Etik
+  - Veri Yapıları ve Algoritmalar
+  - Bilgisayar Bilimlerine Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★☆☆
+  - Derste Eğlenir Miyim: ★★★★★★★★★★
+
+
+
+### Dr. H.İrem Türkmen
+- **Ofis:** EEF-DZ32
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
+- **Hakkında:** 
+- **Verdiği Dersler:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: bilinmiyor
+  - Dersi Kolay Geçer Miyim: bilinmiyor
+  - Dersi Öğrenir Miyim: bilinmiyor
+  - Derste Eğlenir Miyim: bilinmiyor
+
+
+
+### Dr. Hamza Osman İlhan
+- **Ofis:** EEF-D124
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
+- **Hakkında:** Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+- **Verdiği Dersler:**
+  - Lojik Devreler
+  - Elektronik Devreler
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★★★★☆☆☆
+
+
+
+### Dr. M. Utku Kalay
+- **Ofis:** EEF-D214
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
+- **Hakkında:** Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+- **Verdiği Dersler:**
+  - Veritabanı Yönetimi
+  - Veritabanı Sistemlerinin Gerçekleştirilmesi
+  - Veri Tabanı Sistemlerinde Güncel Konular
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+
+
+
+### Dr. Oğuz Altun
+- **Ofis:** EEF-DZ36
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
+- **Hakkında:** Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+- **Verdiği Dersler:**
+  - İstatistik ve Olasılık Hesapları
+  - Hesaplama Kuramı
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+
+
+
+### Dr. Yunus Emre Selçuk
+- **Ofis:** EEF-D129
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
+- **Hakkında:** İşini sever. Sakindir.
+- **Verdiği Dersler:**
+  - Nesneye Yönelik Programlama
+  - Yapısal Programlama
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+
+
+
+### Prof. Dr. Banu Diri
+- **Ofis:** EEF-D222
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
+- **Hakkında:** Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
+- **Verdiği Dersler:**
+  - Sayısal Analiz
+  - Ayrık Matematik
+  - Doğal Dil İşlemeye Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
+  - Derste Eğlenir Miyim: ★★★★★★★★★☆
+
+
+
+### Prof. Dr. M. Elif Karslıgil
+- **Ofis:** EEF-D217
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
+- **Hakkında:** Sert bir mizacı var. Sınavlarda zor sorar.
+- **Verdiği Dersler:**
+  - Algoritma Analizi
+  - Görüntü İşleme
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+
+
+
+### Prof. Dr. M. Fatih Amasyalı
+- **Ofis:** EEF-D213
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
+- **Hakkında:** Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+- **Verdiği Dersler:**
+  - Yapısal Programlamaya Giriş
+  - Yapay Zeka
+  - Uzman Sistemlere Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★★
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim: ★★★★★★★★★★
+  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+
+
+
+### Prof. Dr. Oya Kalipsiz
+- **Ofis:** EEF-D131
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
+- **Hakkında:** Sakin bir hoca, iyi niyetli, yoklama alır.
+- **Verdiği Dersler:**
+  - Sistem Analizi ve Tasarımı
+  - Yazılım Mühendisliği
+  - Yazılım Kalite ve Test Süreci
+  - Yönetim Bilgi Sistemleri
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: ★★★☆☆☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+  - Dersi Öğrenir Miyim: ★★★☆☆☆☆☆☆☆
+  - Derste Eğlenir Miyim: ★★★☆☆☆☆☆☆☆
+
+
+
+### Prof. Dr. Songül Varlı
+- **Ofis:** EEF-D221
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
+- **Hakkında:** 
+- **Verdiği Dersler:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: bilinmiyor
+  - Dersi Kolay Geçer Miyim: bilinmiyor
+  - Dersi Öğrenir Miyim: bilinmiyor
+  - Derste Eğlenir Miyim: bilinmiyor
+
+
+
+### Prof. Dr. Sırma Yavuz
+- **Ofis:** EEF-D130
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
+- **Hakkında:** 
+- **Verdiği Dersler:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı: bilinmiyor
+  - Dersi Kolay Geçer Miyim: bilinmiyor
+  - Dersi Öğrenir Miyim: bilinmiyor
+  - Derste Eğlenir Miyim: bilinmiyor
+
+
+
+## Dersler
+Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.
+
+
+
+
+### 1. Yıl - Güz
+- **Bilgisayar Bilimlerine Giriş**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Fizik 1**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Matematik 1**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Lineer Cebir**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **İş Sağlığı ve Güvenliği 1**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **İleri İngilizce 1**
+  - **Ders Tipi:** Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Atatürk İlkeleri ve İnkılâp Tarihi 1**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 1. Yıl - Bahar
+- **Yapısal Programlamaya Giriş**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Sayısal Analiz**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Devre Teorisi**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **İş Sağlığı ve Güvenliği 2**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Mühendisler için Yarıiletken Fiziği**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Matematik 2**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **İleri İngilizce 2**
+  - **Ders Tipi:** Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 2. Yıl - Güz
+- **İstatistik ve Olasılık Hesapları**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Alt Seviye Programlama**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yapısal Programlama**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Bilgisayar Mühendisleri için Sinyaller ve Sistemler**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Seminer**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Ayrık Matematik**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Lojik Devreler**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 2. Yıl - Bahar
+- **Nesneye Yönelik Programlama**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Bilgisayar Donanımı**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Elektronik Devreler**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Sistem Analizi ve Tasarımı**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Hesaplama Kuramı**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veri Yapıları ve Algoritmalar**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 3. Yıl - Güz
+- **İşletim Sistemleri**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Algoritma Analizi**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Mikroişlemci Sistemleri**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veritabanı Yönetimi**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veri İletişimi**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 3. Yıl - Bahar
+- **Ağ Teknolojileri**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Genel Staj**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Bilgisayar Projesi**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Mesleki Hukuk ve Etik**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yazılım Mühendisliği**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 4. Yıl - Güz
+- **Bilişim Sistemleri Güvenliği**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Gömülü Sistemler**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Türkçe 1**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### 4. Yıl - Bahar
+- **Atatürk İlkeleri ve İnkılâp Tarihi 2**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Mesleki Staj**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Bitirme Çalışması**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Türkçe 2**
+  - **Ders Tipi:** Zorunlu
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+### Mesleki Seçmeli
+- **Bilgiye Erişim Ve Arama Motorları**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Oyun Geliştirmeye Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Mobil Programlamaya Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Sistem Programlama**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **İstatistiksel Veri Analizi**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Sayısal İşaret İşleme**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Bilgisayar Grafiğine Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Biyoenformatiğe Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Büyük Veri İşleme Ve Analizi**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yapay Zeka**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yapay Sinir Ağlarına Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Görüntü İşleme**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Doğal Dil İşlemeye Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Uzman Sistemlere Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veri Tabanı Sistemlerinde Güncel Konular**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veritabanı Sistemlerinin Gerçekleştirilmesi**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yönetim Bilgi Sistemleri**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Dağıtık Sistemler**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Veri Madenciliğine Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Robot Teknolojisine Giriş**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+- **Yazılım Kalite ve Test Süreci**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** 
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+## Repo Kullanımı
+
+Bu repository'de yer alan ders notlarını ve materyallerini kullanmak için:
+- İlgili dersin klasörünü açın.
+- Notlar ve diğer materyaller arasında gezinin.
+
+## Yazarın Notları
+
+- Bölüm dersleri özelinde neredeyse her dersin çıkmış soruları var ve hocalar sınavlarda ya bu sorulara benzer ya da aynı sorular soruyorlar. Benzer şekilde ödev için konuşmak gerekirse ödevlerin büyük bir kısmını ya interneteki kaynaklardan, ya da geçmiş yıllardan alıp biraz değiştirerek ya da değiştirmeden hazırlıyorlar. Labları da geçen senelerin lablarıyla benzer ya da aynı hazırlıyorlar. Bu sebeplerden dolayı eski kaynaklardan faydalanmak çok önemli.
