@@ -1,0 +1,229 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 5)</TITLE>
+
+<META name="description" content="Library of common functions - emu8086.inc">
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 5)</B>
+</FONT>
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>Library of common functions - emu8086.inc</B></FONT>
+<BR><BR>
+
+To make programming easier there are some common functions that can
+be included in your program. To make your program use functions defined
+in other file you should use the <B>INCLUDE</B> directive followed by
+a file name. Compiler automatically searches for the file in the same
+folder where the source file is located, and if it cannot find the file
+there - it searches in <B>Inc</B> folder.
+
+<BR><BR>
+Currently you may not be able to fully understand the contents of the <B>emu8086.inc</B>
+(located in <B>Inc</B> folder), but it's OK, since you only need to understand
+what it can do.
+
+<BR><BR>
+To use any of the functions in <B>emu8086.inc</B> you should have the following line
+in the beginning of your source file:<BR><BR>
+
+<FONT FACE="Fixedsys">
+include 'emu8086.inc'
+</FONT>
+
+
+<BR><BR>
+
+<HR>
+
+<BR>
+<B>emu8086.inc</B> defines the following <B>macros</B>:<BR><BR>
+<UL>
+
+<LI><B>PUTC char</B> - macro with 1 parameter, prints out an ASCII char at current cursor position.<BR><BR></LI>
+
+<LI><B>GOTOXY col, row</B> - macro with 2 parameters, sets cursor position.<BR><BR></LI>
+
+<LI><B>PRINT string</B> - macro with 1 parameter, prints out a string.<BR><BR></LI>
+
+
+<LI><B>PRINTN string</B> - macro with 1 parameter, prints out a string.
+			The same as PRINT but automatically adds "carriage return" at the end of the string.<BR><BR></LI>
+
+<LI><B>CURSOROFF</B> - turns off the text cursor.<BR><BR></LI>
+
+<LI><B>CURSORON</B> - turns on the text cursor.<BR><BR></LI>
+
+
+</UL>
+
+To use any of the above macros simply type its name somewhere in your code,
+and if required parameters, for example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+include emu8086.inc
+
+ORG    100h
+
+PRINT 'Hello World!'
+
+GOTOXY 10, 5
+
+PUTC 65           ; 65 - is an ASCII code for 'A'
+PUTC 'B'
+
+RET               ; return to operating system.
+END               ; directive to stop the compiler.
+</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+
+When compiler process your source code it searches the <B>emu8086.inc</B> file
+for declarations of the macros and replaces the macro names with real code.
+Generally macros are relatively small parts of code, frequent
+use of a macro may make your executable too big (procedures are better
+for size optimization).
+<BR><BR>
+
+<HR>
+
+<BR>
+
+<B>emu8086.inc</B> also defines the following <B>procedures</B>:<BR><BR>
+<UL>
+
+<LI><B>PRINT_STRING</B> - procedure to print a null terminated
+ string at current cursor position,
+ receives address of string in <B>DS:SI</B>
+ register.
+ To use it declare: <B>DEFINE_PRINT_STRING</B>
+  before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>PTHIS</B> - procedure to print a null terminated
+ string at current cursor position (just as PRINT_STRING),
+ but receives address of string from Stack.
+ The ZERO TERMINATED string should be defined just after
+ the CALL instruction. For example:<BR><BR>
+ <FONT FACE="Fixedsys">
+ CALL PTHIS<BR>
+ db 'Hello World!', 0<BR><BR>
+ </FONT>
+ To use it declare: <B>DEFINE_PTHIS</B>
+  before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>GET_STRING</B> - procedure to get a null terminated
+string from a user, the received string is written to buffer
+at <B>DS:DI</B>, buffer size should be in <B>DX</B>.
+Procedure stops the input when 'Enter' is pressed.
+ To use it declare: <B>DEFINE_GET_STRING</B>
+  before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>CLEAR_SCREEN</B> - procedure to clear the screen,
+(done by scrolling entire screen window),
+and set cursor position to top of it.
+ To use it declare: <B>DEFINE_CLEAR_SCREEN</B>
+  before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>SCAN_NUM</B> - procedure that
+ gets the multi-digit SIGNED number from the keyboard,
+ and stores the result in <B>CX</B> register.
+ To use it declare: <B>DEFINE_SCAN_NUM</B>
+ before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>PRINT_NUM</B> - procedure that prints a signed number in <B>AX</B> register.
+To use it declare: <B>DEFINE_PRINT_NUM</B>
+ <U>and</U> <B>DEFINE_PRINT_NUM_UNS</B> before <B>END</B> directive.<BR><BR></LI>
+
+<LI><B>PRINT_NUM_UNS</B> - procedure that prints out an unsigned
+number in <B>AX</B> register.
+ To use it declare: <B>DEFINE_PRINT_NUM_UNS</B>
+  before <B>END</B> directive.<BR><BR></LI>
+
+</UL>
+
+<BR>
+To use any of the above procedures you should first declare the
+function in the bottom of your file (but before the <B>END</B> directive), and then
+use <B>CALL</B> instruction followed by a procedure name.
+For example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+include 'emu8086.inc'
+
+ORG    100h
+
+LEA    SI, msg1       ; ask for the number
+CALL   print_string   ;
+CALL   scan_num       ; get number in CX.
+
+MOV    AX, CX         ; copy the number to AX.
+
+; print the following string:
+CALL   pthis
+DB  13, 10, 'You have entered: ', 0
+
+CALL   print_num      ; print number in AX.
+
+RET                   ; return to operating system.
+
+msg1   DB  'Enter the number: ', 0
+
+DEFINE_SCAN_NUM
+DEFINE_PRINT_STRING
+DEFINE_PRINT_NUM
+DEFINE_PRINT_NUM_UNS  ; required for print_num.
+DEFINE_PTHIS
+
+END                   ; directive to stop the compiler.
+</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+First compiler processes the declarations (these are just regular the macros
+that are expanded to procedures). When compiler gets to <B>CALL</B>
+instruction it replaces the procedure name with the address of the code
+where the procedure is declared. When <B>CALL</B> instruction is executed control
+is transferred to procedure. This is quite useful, since even if you
+call the same procedure 100 times in your code you will still have relatively
+small executable size. Seems complicated, isn't it? That's ok, with the
+time you will learn more, currently it's required that you understand the
+basic principle.
+
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_04.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_06.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+<BR>
+
+</FONT>
+
+</BODY>
+
+</HTML>
