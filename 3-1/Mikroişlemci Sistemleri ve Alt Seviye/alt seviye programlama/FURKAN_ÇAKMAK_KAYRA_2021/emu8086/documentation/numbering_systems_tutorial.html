@@ -1,0 +1,450 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Numbering Systems Tutorial</TITLE>
+
+<META name="description" content="Numbering Systems Tutorials">
+
+<META name="keywords" content="numbering systems tutorial, 8086, hex, oct, bin, binary, hexadecimal, octal, ocatal">
+
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+
+<FONT SIZE=+2>
+<B>Numbering Systems Tutorial</B>
+</FONT>
+
+
+
+<BR>
+
+<HR>
+<BR>
+<FONT SIZE=+2><B>What is it?</B></FONT>
+<BR><BR>
+
+<!--
+There are many ways to represent the same numeric value, previously
+homo sapiens was using sticks to count, so number 5 was represented as:<BR>
+<B>&nbsp;&nbsp; | &nbsp;&nbsp; | &nbsp;&nbsp; | &nbsp;&nbsp; | &nbsp;&nbsp; |</B><BR>
+(five sticks).
+<BR><BR>
+
+
+Using sticks to count isn't a good idea, modern decimal system is much better,
+don't you think?
+-->
+
+
+There are many ways to represent the same numeric value. Long ago, humans used
+sticks to count, and later learned how to draw pictures of sticks in the ground
+and eventually on paper. So, the number 5 was first represented as:
+<NOBR>
+<STRONG>|&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp; </STRONG></NOBR>(for five sticks).
+
+<BR><BR>
+Later on, the Romans began using different symbols for multiple numbers
+of sticks:<NOBR>
+<STRONG>|&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;
+|&nbsp;&nbsp;&nbsp;</STRONG></NOBR>still meant three sticks,
+&nbsp;but a&nbsp;&nbsp; <STRONG>V&nbsp;&nbsp; </STRONG>
+now meant five sticks,
+and an&nbsp;&nbsp; <STRONG>X&nbsp;&nbsp; </STRONG> was used to represent ten of them.
+
+<BR><BR>
+Using sticks to count was a great idea for its time. And using
+symbols instead of real sticks was much better. &nbsp;
+
+<!--
+One of the best ways to represent a number today is by using the modern decimal system.
+Why? Because it includes the major breakthrough of using a symbol to
+represent the idea of counting <I><STRONG>nothing</STRONG></I>. &nbsp;
+About 1500 years ago in India, <STRONG>zero</STRONG>
+(<STRONG>0</STRONG>) was first used as a number. &nbsp;
+It was later used in the Middle East as the Arabic,
+<I>sifr</I>. And was finally introduced to the West as the Latin, <I>zephiro</I>.
+
+&nbsp;Soon you'll see just how valuable an idea this is for all modern number systems.
+-->
+
+
+<BR><BR>
+<HR>
+<BR>
+<FONT SIZE=+2><B>Decimal System</B></FONT>
+<BR><BR>
+
+<!--We, humans use decimal representation to count.
+In decimal system there are 10 digits:-->
+
+Most people today use decimal representation to count.
+In the decimal system there are 10 digits:
+
+<BR><BR>
+<B>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</B><BR><BR>
+These digits can represent any value, for example:<BR>
+<B>754</B>.<BR>
+The value is formed by the sum of each digit, multiplied by
+the <B>base</B> (in this case it is <B>10</B> because there are
+10 digits in decimal system) in power of digit position (counting from zero):<BR><BR>
+<!-- 7 * 10^2 + 5 * 10^1 + 4 * 10^0  =  700 + 50 + 4 = 754 -->
+<IMG SRC="img/num1.gif" WIDTH=448 HEIGHT=108>
+<BR><BR>
+Position of each digit is very important!
+for example if you place "7" to the end:<BR>
+<B>547</B><BR>
+it will be another value:<BR><BR>
+<!-- 5 * 10^2 + 4 * 10^1 + 7 * 10^0  =  500 + 40 + 7 = 547 -->
+<IMG SRC="img/num2.gif" WIDTH=448 HEIGHT=108>
+
+<BR><BR>
+<B>Important note:</B> any number in power of zero is 1, even
+zero in power of zero is 1:<BR>
+<IMG SRC="img/num3.gif" WIDTH=306 HEIGHT=60>
+
+<BR><BR>
+
+<HR>
+<BR>
+<FONT SIZE=+2><B>Binary System</B></FONT>
+
+<BR><BR>
+Computers are not as smart as humans are (or not yet),
+it's easy to make an electronic machine with two states: <B>on</B> and <B>off</B>,
+or <B>1</B> and <B>0</B>.<BR>
+Computers use binary system, binary system uses 2 digits:
+<BR><BR>
+<B>0, 1</B><BR><BR>
+
+And thus the <B>base</B> is <B>2</B>.
+
+<BR><BR>
+Each digit in a binary number is called a <B>BIT</B>, 4 bits form a <B>NIBBLE</B>,
+8 bits form a <B>BYTE</B>, two bytes form a <B>WORD</B>, two words form
+a <B>DOUBLE WORD</B> (rarely used):<BR>
+<BR>
+<IMG SRC="img/num4.gif" WIDTH=339 HEIGHT=126>
+
+<BR><BR>
+There is a convention to add <B>"b"</B> in the end of a binary number, this way we
+can determine that 101b is a binary number with decimal value of 5.
+
+<BR><BR>
+The binary number <B>10100101b</B> equals to decimal value of 165:
+<BR><BR>
+
+<!--
+10100101b =
+ =  1 * 2^7 + 0 * 2^6 + 1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 =
+ =  128     + 0       + 32      + 0       + 0       + 4       + 0       + 1 = 165
+-->
+
+<IMG SRC="img/num5.gif">
+
+
+<BR><BR>
+
+<HR>
+<BR>
+<FONT SIZE=+2><B>Hexadecimal System</B></FONT>
+
+<BR><BR>
+Hexadecimal System uses 16 digits:<BR><BR>
+<B>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</B><BR><BR>
+
+And thus the <B>base</B> is <B>16</B>.
+<BR><BR>
+Hexadecimal numbers are compact and easy to read.<BR>
+It is very easy to convert numbers from binary system to hexadecimal system and vice-versa,
+every nibble (4 bits) can be converted to a hexadecimal digit using this table:
+<BR><BR>
+<A NAME="hextable">&nbsp;</A>
+<TABLE BORDER=0 COLS=2 CELLSPACING=10>
+
+<TR>
+<TD>
+			<TABLE BORDER=1 COLS=3>
+
+			<TR>
+			<TD><B>Decimal<BR>(base 10)</B></TD>
+			<TD><B>Binary<BR>(base 2)</B></TD>
+			<TD><B>Hexadecimal<BR>(base 16)</B></TD>
+			</TR>
+
+			<TR>
+			<TD>0</TD> <TD>0000</TD> <TD>0</TD>
+			</TR>
+
+			<TR>
+			<TD>1</TD> <TD>0001</TD> <TD>1</TD>
+			</TR>
+
+			<TR>
+			<TD>2</TD> <TD>0010</TD> <TD>2</TD>
+			</TR>
+
+			<TR>
+			<TD>3</TD> <TD>0011</TD> <TD>3</TD>
+			</TR>
+
+			<TR>
+			<TD>4</TD> <TD>0100</TD> <TD>4</TD>
+			</TR>
+
+			<TR>
+			<TD>5</TD> <TD>0101</TD> <TD>5</TD>
+			</TR>
+
+			<TR>
+			<TD>6</TD> <TD>0110</TD> <TD>6</TD>
+			</TR>
+
+			<TR>
+			<TD>7</TD> <TD>0111</TD> <TD>7</TD>
+			</TR>
+
+			<TR>
+			<TD>8</TD> <TD>1000</TD> <TD>8</TD>
+			</TR>
+
+			<TR>
+			<TD>9</TD> <TD>1001</TD> <TD>9</TD>
+			</TR>
+
+			<TR>
+			<TD>10</TD> <TD>1010</TD> <TD>A</TD>
+			</TR>
+
+			<TR>
+			<TD>11</TD> <TD>1011</TD> <TD>B</TD>
+			</TR>
+
+			<TR>
+			<TD>12</TD> <TD>1100</TD> <TD>C</TD>
+			</TR>
+
+			<TR>
+			<TD>13</TD> <TD>1101</TD> <TD>D</TD>
+			</TR>
+
+			<TR>
+			<TD>14</TD> <TD>1110</TD> <TD>E</TD>
+			</TR>
+
+			<TR>
+			<TD>15</TD> <TD>1111</TD> <TD>F</TD>
+			</TR>
+
+			</TABLE>
+
+</TD>
+<TD>
+<IMG SRC="img/num7.gif">
+</TD>
+
+</TR>
+
+</TABLE>
+
+<BR><BR>
+There is a convention to add <B>"h"</B> in the end of a hexadecimal number, this way we
+can determine that 5Fh is a hexadecimal number with decimal value of 95.<BR>
+We also add <B>"0"</B> (zero) in the beginning of hexadecimal numbers that begin with a letter (A..F),
+for example <B>0E120h</B>.
+
+<BR><BR>
+The hexadecimal number <B>1234h</B> is equal to decimal value of 4660:<BR><BR>
+<!--
+1 * 16^3 + 2 * 16^2 + 3 * 16^1 + 4 * 16^0 = 4096 + 512 + 48 + 4 = 4660
+-->
+<IMG SRC="img/num6.gif" WIDTH=592 HEIGHT=134>
+
+<BR><BR>
+
+
+<HR>
+<BR>
+<FONT SIZE=+2><B>Converting from Decimal System to Any Other</B></FONT>
+
+<BR><BR>
+
+In order to convert from decimal system, to any other system, it is required
+to divide the decimal value by the <B>base</B> of the desired system, each time
+you should remember the <B>result</B> and keep the <B>remainder</B>, the
+divide process continues until the <B>result</B> is zero.<BR><BR>
+The <B>remainders</B> are then used to represent a value in that system.
+
+<BR><BR>
+
+Let's convert the value of <B>39</B> (base <U>10</U>) to
+<I>Hexadecimal System</I> (base <U>16</U>):
+<BR><BR>
+
+<IMG SRC="img/num8.gif" WIDTH=420 HEIGHT=185>
+
+<BR><BR>
+
+As you see we got this hexadecimal number: <B>27h</B>.<BR>
+All remainders were below <B>10</B> in the above example, so
+we do not use any letters.
+
+<BR><BR>
+
+Here is another more complex example:<BR>
+let's convert decimal number <B>43868</B> to hexadecimal form:<BR><BR>
+
+<IMG SRC="img/num9.gif" WIDTH=419 HEIGHT=310>
+
+<BR><BR>
+The result is <B>0AB5Ch</B>, we are using <A HREF="#hextable">the above table</A>
+to convert remainders over <B>9</B> to corresponding letters.
+
+<BR><BR>
+Using the same principle we can convert to binary form (using <B>2</B> as the divider),
+or convert to hexadecimal number, and then convert it to binary number using
+<A HREF="#hextable">the above table</A>:<BR><BR>
+
+<IMG SRC="img/num10.gif" WIDTH=233 HEIGHT=88>
+
+<BR><BR>
+As you see we got this binary number: <B>1010101101011100b</B>
+
+<BR><BR>
+
+<HR>
+<BR>
+<FONT SIZE=+2><B>Signed Numbers</B></FONT>
+
+<BR><BR>
+
+There is no way to say for sure whether the hexadecimal byte <B>0FFh</B> is
+positive or negative, it can represent both decimal value "<B>255</B>" and "<B>- 1</B>".
+
+<BR><BR>
+
+8 bits can be used to create <B>256</B> combinations (including zero), so we simply
+presume that first <B>128</B> combinations (<B>0..127</B>) will represent positive numbers
+and next <B>128</B> combinations (<B>128..256</B>) will represent negative numbers.
+
+<BR><BR>
+In order to get "<B>- 5</B>", we should subtract <B>5</B> from the number of
+combinations (<B>256</B>), so it we'll get: <NOBR><B>256 - 5 = 251</B>.</NOBR>
+
+<BR><BR>
+
+Using this complex way to represent negative numbers has some meaning, in math
+when you add "<B>- 5</B>" to "<B>5</B>" you should get zero.<BR>
+This is what happens when processor adds two bytes <B>5</B> and <B>251</B>,
+the result gets over <B>255</B>, because of the overflow processor gets zero!
+<BR><BR>
+
+<IMG SRC="img/num11.gif" WIDTH=271 HEIGHT=191>
+
+<BR><BR>
+When combinations <B>128..256</B> are used the high bit is always <B>1</B>, so
+this maybe used to determine the sign of a number.
+
+<BR><BR>
+The same principle is used for <B>words</B> (16 bit values),
+16 bits create <B>65536</B> combinations, first 32768 combinations (<B>0..32767</B>)
+are used to represent positive numbers, and next 32768 combinations (<B>32767..65535</B>)
+represent negative numbers.
+
+<BR><BR>
+
+<HR>
+
+<BR>
+There are some handy tools in emu8086 to convert numbers, and make
+calculations of any numerical expressions, all you need is a
+click on <B>Math</B> menu:
+
+<BR><BR>
+
+<IMG SRC="img/num12.gif">
+
+<BR><BR>
+
+<B>Base converter</B> allows you to convert numbers from any system and
+to any system. Just type a value in any text-box, and the value
+will be automatically converted to all other systems. You can work both
+with <B>8 bit</B> and <B>16 bit</B> values.
+
+<BR><BR>
+
+<B>Multi base calculator</B> can be used to make calculations between
+numbers in different systems and convert numbers from one system to another.
+Type an expression and press enter, result will appear in chosen numbering system.
+You can work with values up to <B>32 bits</B>. When <B>Signed</B> is checked
+evaluator assumes that all values (except decimal and double words) should be treated as
+<B>signed</B>. Double words are always treated as signed values, so
+<B>0FFFFFFFFh</B> is converted to <B>-1</B>.<BR>
+For example you want to calculate: <FONT FACE="Fixedsys">
+<NOBR>0FFFFh * 10h + 0FFFFh</NOBR></FONT>
+(maximum memory location that can be accessed by 8086 CPU).
+If you check <B>Signed</B> and <B>Word</B> you will get
+<FONT FACE="Fixedsys">-17</FONT> (because it is evaluated as
+<FONT FACE="Fixedsys"><NOBR>(-1) * 16 + (-1) </NOBR></FONT>. To make
+calculation with unsigned values uncheck <B>Signed</B>
+so that the evaluation will be <FONT FACE="Fixedsys"><NOBR>65535 * 16 + 65535</NOBR></FONT>
+and you should get <FONT FACE="Fixedsys">1114095</FONT>.
+<BR>You can also use the <B>base converter</B> to convert
+non-decimal digits to signed decimal values, and
+do the calculation with decimal values (if it's easier for you).
+
+<BR><BR>
+These operation are supported:<BR>
+<PRE><FONT FACE="Fixedsys">
+~       not (inverts all bits).
+*       multiply.
+/       divide.
+%       modulus.
++       sum.
+-       subtract (and unary -).
+<<      shift left.
+>>      shift right.
+&       bitwise AND.
+^       bitwise XOR.
+|       bitwise OR.
+</FONT></PRE>
+<BR>
+
+Binary numbers must have "<B>b</B>" suffix, example:<BR>
+<FONT FACE="Fixedsys"> 00011011b</FONT><BR><BR>
+
+Hexadecimal numbers must have "<B>h</B>" suffix, and start with a zero<BR>
+when first digit is a letter (A..F), example:<BR>
+<FONT FACE="Fixedsys"> 0ABCDh</FONT><BR><BR>
+
+Octal (base 8) numbers must have "<B>o</B>" suffix, example:<BR>
+<FONT FACE="Fixedsys"> 77o</FONT><BR><BR>
+
+
+<BR><BR><BR>
+
+<HR>
+
+<CENTER>
+<A HREF="asm_tutorial_01.html"><B> >>> Next Tutorial >>> </B></A>
+</CENTER>
+
+<HR>
+
+
+<BR>
+
+</FONT>
+
+</BODY>
+
+</HTML>

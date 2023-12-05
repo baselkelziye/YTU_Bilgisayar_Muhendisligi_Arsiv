@@ -1,0 +1,38 @@
+; multi-segment executable file template.
+
+; flat assembler syntax
+
+
+format MZ   
+
+entry code_seg:start ; set entry point
+
+stack 256
+    
+      
+segment data_seg
+	; add your data here!
+	pkey db "press any key...$"
+	
+	  
+segment code_seg
+start:
+; set segment registers:
+    mov ax, data_seg
+    mov ds, ax
+    mov es, ax
+
+    ; add your code here
+            
+    mov dx, pkey
+    mov ah, 9
+    int 21h        ; output string at ds:dx
+    
+    ; wait for any key....    
+    mov ah, 1
+    int 21h
+    
+    mov ax, 4c00h ; exit to operating system.
+    int 21h    
+
+

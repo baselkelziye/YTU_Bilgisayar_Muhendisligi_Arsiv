@@ -1,0 +1,45 @@
+< THE SYMBOL TABLE >  noname.exe_  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+SSEG                     	00000     	-5        	SEGMENT   	(ITSELF)  
+DQ                       	00000     	1         	VAR       	SSEG      
+DSEG                     	00008     	-5        	SEGMENT   	(ITSELF)  
+MSG1                     	00000     	1         	VAR       	DSEG      
+MSG2                     	00015     	1         	VAR       	DSEG      
+HATA                     	00029     	1         	VAR       	DSEG      
+SONUC                    	00062     	1         	VAR       	DSEG      
+N                        	0006C     	2         	VAR       	DSEG      
+DIZI                     	0006E     	2         	VAR       	DSEG      
+LINK                     	00136     	2         	VAR       	DSEG      
+ENKCK                    	001FE     	2         	VAR       	DSEG      
+CSEG                     	00028     	-5        	SEGMENT   	(ITSELF)  
+ANA                      	00000     	-1        	FAR       	CSEG      
+L1                       	0001B     	-1        	LABEL     	CSEG      
+L6_LOC1TMP               	00031     	-1        	LABEL     	CSEG      
+KL2                      	00043     	-1        	LABEL     	CSEG      
+L4_LOC1TMP               	00053     	-1        	LABEL     	CSEG      
+L3_LOC1TMP               	00063     	-1        	LABEL     	CSEG      
+L1_LOC1TMP               	00071     	-1        	LABEL     	CSEG      
+L5_LOC1TMP               	000A7     	-1        	LABEL     	CSEG      
+GETC                     	000B4     	-1        	NEAR      	CSEG      
+PUTC                     	000B9     	-1        	NEAR      	CSEG      
+GETN                     	000C4     	-1        	NEAR      	CSEG      
+GETN_START               	000C7     	-1        	LABEL     	CSEG      
+NEW                      	000CE     	-1        	LABEL     	CSEG      
+NEGATIVE                 	000D9     	-1        	LABEL     	CSEG      
+CTRL_NUM                 	000DE     	-1        	LABEL     	CSEG      
+ERROR                    	000F7     	-1        	LABEL     	CSEG      
+FIN_READ                 	000FF     	-1        	LABEL     	CSEG      
+FIN_GETN                 	00108     	-1        	LABEL     	CSEG      
+PUTN                     	0010C     	-1        	NEAR      	CSEG      
+CALC_DIGITS              	00122     	-1        	LABEL     	CSEG      
+DISP_LOOP                	0012F     	-1        	LABEL     	CSEG      
+END_DISP_LOOP            	0013A     	-1        	LABEL     	CSEG      
+PUT_STR                  	0013D     	-1        	NEAR      	CSEG      
+PUT_LOOP                 	00142     	-1        	LABEL     	CSEG      
+PUT_FIN                  	0014E     	-1        	LABEL     	CSEG      
+===================================================================================================
+[ 26.12.2021  --  13:34:50 ] 
+< END >
+ 

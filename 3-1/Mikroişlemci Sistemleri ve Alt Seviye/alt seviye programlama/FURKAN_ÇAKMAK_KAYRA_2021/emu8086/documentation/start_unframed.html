@@ -1,0 +1,72 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>emu8086 assembler</TITLE>
+
+<META name="description" content="8086 assembler tutorial for beginners">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2><B>Where to start?</B></FONT>
+<BR><BR>
+
+
+<OL>
+
+<LI>
+Click <B>code examples</B> and select <B>Hello, world</B>. A code example with many comments should open. All comments are green and they take up about <B>90%</B> of all text, so don't be scared by this tiny <I>"Hello Word"</I> code. The compiled executable is only about <B>100</B> bytes long, because it uses no interrupts and has only one loop for color <I>highlighting</I> the text. All other code is straight-forward and writes directly to video memory.<BR><BR>
+</LI>
+
+<LI>
+To run this example in the emulator, click <B>emulate</B> (or press <B>F5</B>). The program then attmepts to assemble and save the executable to <B>c:\emu8086\MyBuild</B>. If the assembler succeeds in creating the file, the emulator will also automatically load it into memory.<BR><BR>
+</LI>
+
+<LI>
+You can then click <B>single step</B> (or press <B>F8</B>) to step through the code one instruction at a time, observing changes in registers and the emulator screen. You can also click <B>step back</B> (or press <B>F6</B>) to see what happens when reversing those changes.<BR><BR>
+</LI>
+
+<LI>
+There are many ways to print <I>"Hello,World"</I> in assembly language, and this certainly isn't the shortest way. If you click <B>examples</B> and browse <B>c:\emu8086\examples</B>, you'll find <B>HelloWorld.asm</B> which assembles into only a <B>30</B>-byte executable. Unlike the previous example which carries out each step by itself, this one is much smaller because it uses a built-in interrupt function of the operating system to write to the display.<BR><BR>
+</LI>
+
+</OL>
+
+
+<BR><BR>
+
+
+The integrated 8086 assembler can generate console programs that can be executed on any computer that
+runs x86 machine code (Intel/AMD architecture)
+
+<BR><BR>
+
+The architecture of the 8086 Intel microprocessor is called &quot;Von Neumann architecture&quot; after
+the mathematician who conceived of the design.
+
+<BR><BR>
+
+NOTE: A CPU can interpret the contents of memory as either instructions or data; there's no difference 
+in the individual bytes of memory, only the way in which they're arranged. Because of this, 
+it's even possible for programs to re-write their own instructions, then execute the instructions they've changed.
+
+
+
+<BR><BR><BR>
+
+
+
+
+
+<BR>
+
+</FONT>
+
+</BODY>
+
+</HTML>
