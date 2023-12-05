@@ -1,0 +1,79 @@
+--A1
+DROP TABLE accounts;
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    client TEXT,
+    amount NUMERIC
+);
+
+INSERT INTO accounts (client, amount) VALUES ('alice', 1000.00), ('bob', 100.00), ('bob', 900.00);
+
+BEGIN;
+UPDATE accounts SET amount = amount - 200 WHERE client = 'alice';
+COMMIT;
+SELECT amount FROM accounts WHERE client = 'alice';
+
+
+
+
+
+
+--A2
+DROP TABLE accounts;
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    client TEXT,
+    amount NUMERIC
+);
+
+INSERT INTO accounts (client, amount) VALUES ('alice', 1000.00), ('bob', 100.00), ('bob', 900.00);
+SELECT withdraw_from_alice();
+
+CREATE OR REPLACE FUNCTION withdraw_from_alice() RETURNS numeric AS $$
+DECLARE
+    current_amount numeric;
+BEGIN
+    -- H1 hareketi: 'alice' hesabından 200 lira çekme
+    BEGIN
+		SELECT amount INTO current_amount FROM accounts WHERE client = 'alice';
+		UPDATE accounts SET amount = amount - 200 WHERE client = 'alice';
+    END;
+
+    -- H2 hareketi: 'alice' hesabını sorgulama
+    RETURN current_amount;
+END;
+$$ LANGUAGE plpgsql;
+
+
+--B1 ÖNCE YANA GEÇ
+DROP TABLE accounts;
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    client TEXT,
+    amount NUMERIC
+);
+
+INSERT INTO accounts (client, amount) VALUES ('alice', 1000.00), ('bob', 100.00), ('bob', 900.00);
+
+-- H2 hareketi: 'alice' hesabını sorgulama
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+SELECT amount FROM accounts WHERE client = 'alice';
+
+--C1 ÖNCE YANA GEÇ
+
+DROP TABLE accounts;
+CREATE TABLE accounts (
+    id SERIAL PRIMARY KEY,
+    client TEXT,
+    amount NUMERIC
+);
+
+INSERT INTO accounts (client, amount) VALUES ('alice', 1000.00), ('bob', 100.00), ('bob', 900.00);
+
+
+-- H2 hareketi: 'alice' hesabını sorgulama
+BEGIN;
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+SELECT amount FROM accounts WHERE client = 'alice';
+COMMIT;
+

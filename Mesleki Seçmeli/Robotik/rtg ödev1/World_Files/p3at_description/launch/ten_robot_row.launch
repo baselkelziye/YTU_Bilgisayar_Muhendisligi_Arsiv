@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="column" default="0"/>
+  <arg name="pose_arg_x" default="0"/>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_0"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 0"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_1"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 1"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_2"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 2"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_3"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 3"/> 
+  </include>  
+  
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_4"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 4"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_5"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 5"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_6"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 6"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_7"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 7"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_8"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 8"/> 
+  </include>
+
+  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
+    <arg name="robot_name" value="robot_$(arg column)_9"/>
+    <arg name="pose_args" value="$(arg pose_arg_x) -y 9"/> 
+  </include>
+  
+  
+</launch>
+
+

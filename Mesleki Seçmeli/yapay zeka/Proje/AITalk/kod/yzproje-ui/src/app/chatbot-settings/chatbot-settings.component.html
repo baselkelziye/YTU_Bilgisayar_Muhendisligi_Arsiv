@@ -1,0 +1,10 @@
+<div style="float: left; width: 100%; display: flex; justify-content: center; padding: 20px 0;">
+    <mat-form-field>
+        <mat-label>
+            Select Model
+        </mat-label>
+        <mat-select [formControl]="modelSelectControl" (selectionChange)="onModelSelectChange()">
+            <mat-option [value]="type.key" *ngFor="let type of langModels">{{type.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
