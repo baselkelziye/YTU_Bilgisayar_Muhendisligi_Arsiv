@@ -1,0 +1,233 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 9)</TITLE>
+
+<META name="description" content="The Stack - Tutorial for Beginners">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+
+
+<FONT SIZE=+1>
+<B>8086 assembler tutorial for beginners (part 9)</B>
+</FONT>
+
+
+
+<BR><BR>
+
+<FONT SIZE=+2><B>The Stack</B></FONT>
+<BR><BR>
+
+Stack is an area of memory for keeping temporary data.
+Stack is used by <B>CALL</B> instruction to keep return address for procedure,
+<B>RET</B> instruction gets this value from the stack and returns
+to that offset. Quite the same thing happens when <B>INT</B> instruction calls
+an interrupt, it stores in stack flag register, code segment and offset. <B>IRET</B>
+instruction is used to return from interrupt call.
+
+<BR><BR>
+We can also use the stack to keep any other data,<BR>
+there are two instructions that work with the stack:<BR><BR>
+
+<B>PUSH</B> - stores 16 bit value in the stack.<BR><BR>
+
+<B>POP</B> - gets 16 bit value from the stack.<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+
+Syntax for <B>PUSH</B> instruction:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	PUSH REG<BR>
+	PUSH SREG<BR>
+	PUSH memory<BR>
+	PUSH immediate<BR>
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>: AX, BX, CX, DX, DI, SI, BP, SP.<BR><BR>
+<B>SREG</B>: DS, ES, SS, CS.<BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], 16 bit variable, etc...<BR><BR>
+<B>immediate</B>: 5, -24, 3Fh, 10001101b, etc...<BR><BR>
+
+</TD></TR></TABLE>
+
+<BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=100%><TR><TD>
+
+Syntax for <B>POP</B> instruction:<BR><BR>
+<BLOCKQUOTE>
+<FONT FACE="Fixedsys">
+	POP REG<BR>
+	POP SREG<BR>
+	POP memory<BR>
+</FONT>
+</BLOCKQUOTE>
+
+<B>REG</B>: AX, BX, CX, DX, DI, SI, BP, SP.<BR><BR>
+<B>SREG</B>: DS, ES, SS, (except CS).<BR><BR>
+<B>memory</B>: [BX], [BX+SI+7], 16 bit variable, etc...<BR><BR>
+
+</TD></TR></TABLE>
+
+<BR><BR>
+Notes:
+<UL>
+<LI><B>PUSH</B> and <B>POP</B> work with 16 bit values only!<BR><BR></LI>
+
+<LI>Note: <B>PUSH immediate</B> works only on 80186 CPU and later!</LI>
+
+</UL>
+
+<BR><BR>
+The stack uses <B>LIFO</B> (Last In First Out) algorithm,<BR>
+this means that if we push these values one by one into the stack:<BR>
+<B>1, 2, 3, 4, 5</B><BR>
+the first value that we will get on pop will be <B>5</B>,
+then <B>4</B>, <B>3</B>, <B>2</B>, and only then <B>1</B>.
+<BR><BR>
+
+<IMG SRC="img/stack.gif" WIDTH=224 HEIGHT=253>
+
+<BR><BR>
+
+It is very important to do equal number of <B>PUSH</B>s and <B>POP</B>s,
+otherwise the stack maybe corrupted and it will be impossible to return
+to operating system.
+As you already know we use <B>RET</B> instruction to return to operating
+system, so when program starts there is a return address in stack (generally
+it's 0000h).
+
+
+<BR><BR>
+
+<B>PUSH</B> and <B>POP</B> instruction are especially useful because we don't
+have too much registers to operate with, so here is a trick:
+<UL>
+<LI>Store original value of the register in stack (using <B>PUSH</B>).<BR><BR></LI>
+<LI>Use the register for any purpose.<BR><BR></LI>
+<LI>Restore the original value of the register from stack (using <B>POP</B>).</LI>
+</UL>
+
+<BR>
+Here is an example:
+<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG    100h
+
+MOV    AX, 1234h
+PUSH   AX          ; store value of AX in stack.
+
+MOV    AX, 5678h   ; modify the AX value.
+
+POP    AX          ; restore the original value of AX.
+
+RET
+
+END</FONT></PRE>
+</TD></TR></TABLE>
+
+<BR><BR>
+Another use of the stack is for exchanging the values,<BR>
+here is an example:<BR><BR>
+
+
+<TABLE BORDER=1 CELLPADDING=10 WIDTH=50%><TR><TD>
+<PRE><FONT FACE="Fixedsys">
+ORG    100h
+
+MOV    AX, 1212h   ; store 1212h in AX.
+MOV    BX, 3434h   ; store 3434h in BX
+
+
+PUSH   AX          ; store value of AX in stack.
+PUSH   BX          ; store value of BX in stack.
+
+POP    AX          ; set AX to original value of BX.
+POP    BX          ; set BX to original value of AX.
+
+RET
+
+END</FONT></PRE>
+</TD></TR></TABLE>
+<BR>
+The exchange happens because stack uses <B>LIFO</B> (Last In First Out) algorithm,
+so when we push <B>1212h</B> and then <B>3434h</B>, on pop we will first get <B>3434h</B>
+and only after it <B>1212h</B>.
+
+<BR><BR>
+
+<HR>
+
+<BR>
+The stack memory area is set by <B>SS</B> (Stack Segment) register, and <B>SP</B> (Stack
+Pointer) register. Generally operating system sets values of these registers on
+program start.
+
+<BR><BR>
+
+"<B>PUSH <I>source</I></B>" instruction does the following:<BR>
+<UL>
+<LI>Subtract <B>2</B> from <B>SP</B> register.<BR><BR></LI>
+<LI>Write the value of <B><I>source</I></B> to the address <B>SS:SP</B>.</LI>
+</UL>
+
+<BR>
+
+"<B>POP <I>destination</I></B>" instruction does the following:<BR>
+<UL>
+<LI>Write the value at the address <B>SS:SP</B> to <B><I>destination</I></B>.<BR><BR></LI>
+<LI>Add <B>2</B> to <B>SP</B> register.</LI>
+</UL>
+
+<BR>
+The current address pointed by <B>SS:SP</B> is called <B>the top of the stack</B>.
+<BR><BR>
+
+For <B>COM</B> files stack segment is generally the code segment, and
+stack pointer is set to value of <B>0FFFEh</B>.
+At the address <B>SS:0FFFEh</B>
+stored a return address for <B>RET</B> instruction that is executed in the end
+of the program.
+
+<BR><BR>
+You can visually see the stack operation by clicking on [<B>Stack</B>] button
+on emulator window. The top of the stack is marked with "<B>&lt;</B>" sign.
+
+
+<BR><BR><BR>
+
+<HR>
+<CENTER>
+<A HREF="asm_tutorial_08.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt; </B></A>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<A HREF="asm_tutorial_10.html"><B> &gt;&gt;&gt; Next Part &gt;&gt;&gt; </B></A>
+</CENTER>
+<HR>
+
+
+
+<BR>
+
+</FONT>
+
+
+
+</BODY>
+
+</HTML>

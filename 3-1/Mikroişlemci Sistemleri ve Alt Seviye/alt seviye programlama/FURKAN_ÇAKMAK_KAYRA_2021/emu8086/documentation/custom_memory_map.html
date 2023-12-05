@@ -1,0 +1,104 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Custom Memory Map</TITLE>
+
+<META name="description" content="Custom Memory Map">
+
+<META name="keywords" content="custom memory map, assembly, 8086 assembler, reference, description, 80186">
+
+
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+<FONT FACE="Verdana" SIZE=3>
+
+<FONT SIZE=+2>
+<B>Custom Memory Map</B>
+</FONT>
+
+<BR><BR>
+
+<BR>
+
+You can define your own memory map (different from IBM-PC).
+It is required to create this file: <NOBR><B>c:\emu8086\custom_memory_map.inf</B></NOBR>
+then you can use the following format to add settings into that configuration file:<BR><BR>
+
+<FONT FACE="Fixedsys">
+address - filename<BR>
+...
+</FONT>
+
+<BR><BR>
+
+for example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+
+<FONT FACE="Fixedsys">
+0000:0000 - System.bin<BR>
+F000:0000 - Rom.bin<BR>
+12AC - Data.dat<BR>
+</FONT>
+
+</TD></TR>
+</TABLE>
+
+<BR><BR>
+Address can be both physical (without ":") or logical, value must be in
+hexadecimal form. Emulator will look for
+the file name after the "-" and load it into the memory at the specified address.
+
+<BR><BR>
+Emulator will not update <B>System information area (memory from 00400h to 00500h)</B>
+if your configuration file has "<B>NO_SYS_INFO</B>" directive (on a separate line).
+for example:<BR><BR>
+
+<TABLE BORDER=1 CELLPADDING=10><TR><TD>
+
+<FONT FACE="Fixedsys">
+NO_SYS_INFO<BR>
+0000:0000 - System.bin<BR>
+F000:0000 - Rom.bin<BR>
+12AC - Data.dat<BR>
+</FONT>
+
+</TD></TR>
+</TABLE>
+
+<BR><BR>
+emulator will allow you to load "<B>.bin</B>" files to any memory address
+(be careful not to load them over your custom system/data area).
+
+
+
+<BR><BR>
+<B>Warning!</B> standard interrupts will not work when you change the memory map,
+unless you provide your own replacement for them.
+To disable changes just delete or rename "<B>custom_memory_map.inf</B>" file,
+and restart emu8086.
+
+
+<BR><BR>
+<BR>See also:
+<A HREF="memory.html"><B>Global Memory Table</B></A>
+<BR><BR><BR>
+
+</FONT>
+
+
+
+<BR>
+
+
+
+</BODY>
+
+</HTML>

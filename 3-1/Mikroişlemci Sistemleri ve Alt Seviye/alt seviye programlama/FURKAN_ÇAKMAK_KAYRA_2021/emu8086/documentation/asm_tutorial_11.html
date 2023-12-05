@@ -1,0 +1,253 @@
+
+<HTML>
+
+<HEAD>
+
+<TITLE>8086 assembler tutorial for beginners (part 11)</TITLE>
+
+<META name="description" content="Making your own Operating System">
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#0000FF" alink="#FF0000">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <FONT FACE="Verdana" SIZE=3> <FONT SIZE=+1> <B>8086 assembler tutorial     for beginners (part 11)</B> </FONT> <BR>
+      <BR>
+      <FONT SIZE=+2><B>making your own operating system</B></FONT> <BR>
+      <BR>
+      <BR>
+      Usually, when a computer starts it will try to load the first 512-byte sector
+      (that's Cylinder <b>0</b>, Head <b>0</b>, Sector <b>1</b>) from any diskette
+      in your <b>A:</b> drive to memory location <B>0000h:7C00h</B> and give it control.
+      If this fails, the BIOS tries to use the MBR of the first hard drive instead.<BR>
+      <BR>
+      This tutorial covers booting up from a floppy drive, the same principles
+      are used to boot from a hard drive. But using a floppy drive has several
+      advantages:
+      <UL>
+        <LI>you can keep your existing operating system intact (windows, dos, linux, unix, be-os...).<BR>
+          <BR>
+        </LI>
+        <LI>it is easy and safe to modify the boot record of a floppy disk.</LI>
+      </UL>
+      <BR>
+      example of a simple floppy disk boot program:<BR>
+      <BR>
+      <TABLE BORDER=1 CELLPADDING=10 WIDTH=70%>
+        <TR>
+          <TD>
+            <PRE>
+<FONT FACE="Fixedsys">
+; directive to create BOOT file:
+#make_boot#
+
+; Boot record is loaded at 0000:7C00,
+; so inform compiler to make required
+; corrections:
+ORG 7C00h
+
+PUSH    CS   ; make sure DS=CS
+POP     DS
+
+; load message address into SI register:
+LEA SI, msg
+
+; teletype function id:
+MOV AH, 0Eh
+
+print:   MOV AL, [SI]
+         CMP AL, 0
+         JZ done
+         INT 10h   ; print using teletype.
+         INC SI
+         JMP print
+
+; wait for 'any key':
+done:      MOV AH, 0
+           INT 16h
+
+
+; store magic value at 0040h:0072h:
+;   0000h - cold boot.
+;   1234h - warm boot.
+MOV     AX, 0040h
+MOV     DS, AX
+MOV     w.[0072h], 0000h ; cold boot.
+
+JMP	0FFFFh:0000h	 ; reboot!
+
+
+new_line EQU 13, 10
+
+msg DB  'Hello This is My First Boot Program!'
+    DB  new_line, 'Press any key to reboot', 0
+</FONT></PRE>
+          </TD>
+        </TR>
+      </TABLE>
+      <BR>
+      <BR>
+      copy the above example to the source editor and press <NOBR><B>emulate</B></NOBR>. the emulator automatically loads <B>.bin</B> file to <B>0000h:7C00h</B> (it uses supplementary .binf file to know where to load).
+      <BR><BR>
+
+
+
+
+      you can run it just like a regular program, or you can use the <b>virtual
+      drive</b> menu to <b>write 512 bytes at 7c00h to boot sector</b>
+      of a virtual floppy drive (it's "<B>FLOPPY_0</B>" file in Emulator's folder).
+
+	after your program is written  to the virtual floppy drive, you can select <b>boot
+		  from floppy</b> from <b>virtual drive</b> menu.
+      <BR>
+      <BR>
+
+      <IMG SRC="img/white_boot_sector.png">
+
+
+      <BR><BR>
+      <b>.bin</b> files for boot records are limited to 512 bytes (sector size). if your new
+      operating system is going to grow over this size, you will need to use a
+      boot program to load data from other sectors (just like <i>micro-os_loader.asm</i> does). an example of a tiny operating    system can be found in c:\emu8086\examples:
+      <br><br>
+      <b>micro-os_loader.asm</b><br>
+      <b>micro-os_kernel.asm</b><br>
+      <BR>
+      <BR>
+      To create extensions for your operating system (over 512 bytes), you can
+      use additional sectors of a floppy disk. It's recommended to use "<B>.bin</B>" files for this purpose
+      (to create "<B>.bin</B>" file select "<B>BIN Template</B>" from "<B>File</B>" -> "<B>New</B>" menu). <BR>
+      <BR>
+      To write "<B>.bin</B>" file to virtual floppy, select <B>"Write .bin file
+      to floppy..."</B> from <B>"Virtual drive"</B> menu of emulator, you should write it anywhere but the boot sector (which is Cylinder: <B>0</B>, Head: <B>0</B>, Sector: <B>1</B>).
+
+      <BR>
+      <BR>
+
+      <IMG SRC="img/write_bin_menu.png">
+
+      <BR>
+      <BR>
+
+      <IMG SRC="img/write_bin.gif">
+
+      <BR>
+      <BR>
+
+      you can use this utility to write <b>.bin</b> files to virtual floppy disk ("<b>FLOPPY_0</b>" file), instead of "<b>write 512 bytes at 7c00h to boot sector</b>" menu. however, you should remember that
+      <b>.bin</b> file that is designed to be a boot record should always be written to cylinder: <b>0</b>, head: <b>0</b>, sector: <b>1</b><br>
+      <br>
+      <TABLE BORDER=1 CELLPADDING=8>
+        <TR>
+          <TD> Boot Sector Location:<BR>
+            <BLOCKQUOTE> <FONT FACE="Fixedsys"> Cylinder: 0<br>
+              Head: 0<br>
+              Sector: 1<BR>
+              </FONT> </BLOCKQUOTE>
+            </TD>
+        </TR>
+      </TABLE>
+
+
+      <BR>
+
+      to write .bin files to real floppy disk use writebin.asm, just compile it to com file and run it from command prompt. to write a boot record type: <B>writebin loader.bin</B> ; to write kernel module type: <B>writebin kernel.bin /k</B><BR>
+      <b>/k</b> - parameter tells the program to write the file at sector 2 instead of sector 1. it does not matter in what order you write the files onto floppy drive, but it does matter where you write them.
+
+
+
+
+      <BR>
+
+      <HR>
+      <BR>
+
+
+      <b>mote:</b> this boot record is not
+      MS-DOS/Windows compatible boot sector, it's not even Linux or Unix compatible, operating system may not allow you to read or write files on this diskette until you re-format it, therefore make sure the diskette you use doesn't contain any important information. however you can write and read  anything to and from this disk using low level disk access interrupts, it's even possible to protect valuable information from the others this way; even if someone gets the disk he will probably think that it's empty and will reformat it because it's the default option in windows operating system... such a good type of self destructing data carrier :)<BR>
+      <BR>
+      <HR>
+
+
+
+
+
+
+      </FONT>
+
+
+
+
+      <p><FONT FACE="Verdana" SIZE=3>
+
+
+        <br>
+        idealized floppy drive and diskette structure: <br>
+        <br>
+        <img src="img/floppy.gif" width=367 height=374> <br>
+        </font></p>
+      <p><font face="verdana" size=3>for a <b>1440 kb</b> diskette:<br>
+        </font></p>
+      <font face="verdana" size=3><ul>
+        <li>floppy disk has 2 sides, and there are 2 heads; one for each side
+          (<b>0..1</b>), the drive heads move above the surface of the disk on
+          each side.<br>
+          <br>
+        </li>
+        <li>each side has 80 cylinders (numbered <b>0..79</b>).<br>
+          <br>
+        </li>
+        <li>each cylinder has 18 sectors (<b>1..18</b>).<br>
+          <br>
+        </li>
+        <li>each sector has <b>512</b> bytes.<br>
+          <br>
+        </li>
+        <li>total size of floppy disk is: 2 x 80 x 18 x 512 = <b>1,474,560</b> bytes.<br>
+          <br>
+        </li>
+      </ul>
+
+      note: the MS-DOS (windows) formatted floppy disk has slightly less free space on it (by about 16,896 bytes)
+      because the operating system needs place to store file names and directory structure (often called FAT or file system allocation table).
+      more file names - less disk space.
+      the most efficient way to store files is to write them directly to sectors instead of using file system,
+      and in some cases it is also the most reliable way, if you know how to use it.
+
+      <BR><BR>
+
+      to read sectors from floppy drive use <A HREF="8086_bios_and_dos_interrupts.html#int13h_02h" TARGET="_blank"><B>INT
+      13h / AH = 02h</B></A>. <BR>
+      <BR>
+      <BR>
+      <HR>
+      <CENTER>
+        <A HREF="asm_tutorial_10.html"><B> &lt;&lt;&lt; previous part &lt;&lt;&lt;
+        </B></A> &nbsp;&nbsp;&nbsp;&nbsp; <A HREF="asm_tutorial_12.html"><B> >>>
+        Next Part >>> </B></A>
+      </CENTER>
+      <HR>
+      <BR>
+      </FONT>
+
+
+
+
+
+
+</BODY>
+
+</HTML>

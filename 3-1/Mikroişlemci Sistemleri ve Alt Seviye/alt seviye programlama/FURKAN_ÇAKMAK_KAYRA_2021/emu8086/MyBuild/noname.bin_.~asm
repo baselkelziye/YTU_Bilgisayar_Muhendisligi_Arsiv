@@ -1,0 +1,9 @@
+MOV BX, 55H
+MOV AX,10H
+LEA SI,[BX];Load effective adress
+LEA DI,[10H]
+CLD
+MOV CX,4
+REP MOVSB
+
+
