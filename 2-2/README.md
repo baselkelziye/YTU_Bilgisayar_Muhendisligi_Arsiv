@@ -36,6 +36,7 @@
 
 #### Derse Dair Öneriler
 
+##### Öneri sahibi: X
 - Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
 - ödevleri yapın
 
@@ -56,6 +57,7 @@
 
 #### Derse Dair Öneriler
 
+##### Öneri sahibi: X
 - şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli
 
 #### Faydalı Olabilecek Kaynaklar
@@ -75,6 +77,7 @@
 
 #### Derse Dair Öneriler
 
+##### Öneri sahibi: X
 - ders full ezber
 - Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
 - Proje konusu ve birçok proje örneği githubda mevcut.
@@ -96,6 +99,7 @@
 
 #### Derse Dair Öneriler
 
+##### Öneri sahibi: X
 - vize görece kolay olur yüksek kalırsan geçersin
 
 #### Faydalı Olabilecek Kaynaklar
@@ -115,6 +119,7 @@
 
 #### Derse Dair Öneriler
 
+##### Öneri sahibi: X
 - ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar
 
 #### Faydalı Olabilecek Kaynaklar

@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz.
 
 ## Faydalı Olabilecek Kaynaklar
