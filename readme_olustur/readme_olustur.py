@@ -2,7 +2,7 @@ import json
 import os
 import difflib
 
-CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh"
+CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 ANA_README_YOLU = "../README.md"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
@@ -35,15 +35,15 @@ def hocalari_readme_ye_ekle(bilgiler):
                 f.write(f"  - {ders}\n")
             f.write("- **Yıldız Sayıları:**\n")
             if hoca['anlatim_puani'] != 0:
-                f.write(f"  - Dersi Zevkli Anlatır Mı: {puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
-                f.write(f"  - Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(hoca['kolaylik_puani'])}\n")
-                f.write(f"  - Dersi Öğrenir Miyim: {puanlari_yildiza_cevir(hoca['ogretme_puani'])}\n")
-                f.write(f"  - Derste Eğlenir Miyim: {puanlari_yildiza_cevir(hoca['eglence_puani'])}\n")
+                f.write(f"  - Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
+                f.write(f"  - Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca['kolaylik_puani'])}\n")
+                f.write(f"  - Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca['ogretme_puani'])}\n")
+                f.write(f"  - Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca['eglence_puani'])}\n")
             else:
-                f.write("  - Dersi Zevkli Anlatır Mı: bilinmiyor\n")
-                f.write("  - Dersi Kolay Geçer Miyim: bilinmiyor\n")
-                f.write("  - Dersi Öğrenir Miyim: bilinmiyor\n")
-                f.write("  - Derste Eğlenir Miyim: bilinmiyor\n")
+                f.write("  - Dersi Zevkli Anlatır Mı:\tbilinmiyor\n")
+                f.write("  - Dersi Kolay Geçer Miyim:\tbilinmiyor\n")
+                f.write("  - Dersi Öğrenir Miyim:\tbilinmiyor\n")
+                f.write("  - Derste Eğlenir Miyim:\tbilinmiyor\n")
 
 
 def donem_siralamasi(donem_key):
@@ -218,7 +218,8 @@ def donemlere_gore_readme_olustur(donemler):
             f.write("## Genel Tavsiyeler\n\n")
             for tavsiye in donem['genel_tavsiyeler']:
                 f.write(f"- {tavsiye}\n")
-            f.write("## Dönemin Zorunlu Dersleri\n\n")
+            if donem["donem_adi"] != "Mesleki Seçmeli Dersler":
+                f.write("## Dönemin Zorunlu Dersleri\n\n")
 def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:

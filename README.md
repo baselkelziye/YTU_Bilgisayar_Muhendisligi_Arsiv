@@ -29,10 +29,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Algoritma Analizi
   - Mobil Programlamaya Giriş
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★☆☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
 
 
 
@@ -44,10 +44,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 - **Verdiği Dersler:**
   - Nesneye Yönelik Programlama
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
-  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
 
 
 
@@ -62,10 +62,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Gömülü Sistemler
   - Sayısal İşaret İşleme
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
 
 
 
@@ -78,10 +78,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Lojik Devreler
   - Elektronik Devreler
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
-  - Derste Eğlenir Miyim: ★★★★☆☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
 
 
 
@@ -96,10 +96,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Ayrık Matematik
   - İşletim Sistemleri
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★☆☆
-  - Derste Eğlenir Miyim: ★★★★★★☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
 
 
 
@@ -112,10 +112,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Bilgisayar Donanımı
   - Mikroişlemci Sistemleri
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★★★★★★☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★★★☆
 
 
 
@@ -129,10 +129,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Robot Teknolojisine Giriş
   - Alt Seviye Programlama
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★★
-  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
 
 
 
@@ -146,10 +146,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Veri Yapıları ve Algoritmalar
   - Bilgisayar Bilimlerine Giriş
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★☆☆
-  - Derste Eğlenir Miyim: ★★★★★★★★★★
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - Derste Eğlenir Miyim:	★★★★★★★★★★
 
 
 
@@ -159,10 +159,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 - **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: bilinmiyor
-  - Dersi Kolay Geçer Miyim: bilinmiyor
-  - Dersi Öğrenir Miyim: bilinmiyor
-  - Derste Eğlenir Miyim: bilinmiyor
+  - Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - Dersi Kolay Geçer Miyim:	bilinmiyor
+  - Dersi Öğrenir Miyim:	bilinmiyor
+  - Derste Eğlenir Miyim:	bilinmiyor
 
 
 
@@ -175,10 +175,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Lojik Devreler
   - Elektronik Devreler
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★★★★☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★☆☆☆
 
 
 
@@ -192,10 +192,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Veritabanı Sistemlerinin Gerçekleştirilmesi
   - Veri Tabanı Sistemlerinde Güncel Konular
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
-  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
 
 
 
@@ -208,10 +208,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - İstatistik ve Olasılık Hesapları
   - Hesaplama Kuramı
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-  - Dersi Öğrenir Miyim: ★★★★★☆☆☆☆☆
-  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
 
 
 
@@ -224,10 +224,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Nesneye Yönelik Programlama
   - Yapısal Programlama
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
-  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
 
 
 
@@ -241,10 +241,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Ayrık Matematik
   - Doğal Dil İşlemeye Giriş
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★☆
-  - Derste Eğlenir Miyim: ★★★★★★★★★☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★★★☆
 
 
 
@@ -257,10 +257,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Algoritma Analizi
   - Görüntü İşleme
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★☆☆☆
-  - Derste Eğlenir Miyim: ★★★★★☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
 
 
 
@@ -274,10 +274,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Yapay Zeka
   - Uzman Sistemlere Giriş
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★★★★★★★★
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-  - Dersi Öğrenir Miyim: ★★★★★★★★★★
-  - Derste Eğlenir Miyim: ★★★★★★★★☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
 
 
 
@@ -292,10 +292,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Yazılım Kalite ve Test Süreci
   - Yönetim Bilgi Sistemleri
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: ★★★☆☆☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
-  - Dersi Öğrenir Miyim: ★★★☆☆☆☆☆☆☆
-  - Derste Eğlenir Miyim: ★★★☆☆☆☆☆☆☆
+  - Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★★
+  - Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
 
 
 
@@ -305,10 +305,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 - **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: bilinmiyor
-  - Dersi Kolay Geçer Miyim: bilinmiyor
-  - Dersi Öğrenir Miyim: bilinmiyor
-  - Derste Eğlenir Miyim: bilinmiyor
+  - Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - Dersi Kolay Geçer Miyim:	bilinmiyor
+  - Dersi Öğrenir Miyim:	bilinmiyor
+  - Derste Eğlenir Miyim:	bilinmiyor
 
 
 
@@ -318,10 +318,10 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 - **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı: bilinmiyor
-  - Dersi Kolay Geçer Miyim: bilinmiyor
-  - Dersi Öğrenir Miyim: bilinmiyor
-  - Derste Eğlenir Miyim: bilinmiyor
+  - Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - Dersi Kolay Geçer Miyim:	bilinmiyor
+  - Dersi Öğrenir Miyim:	bilinmiyor
+  - Derste Eğlenir Miyim:	bilinmiyor
 
 
 

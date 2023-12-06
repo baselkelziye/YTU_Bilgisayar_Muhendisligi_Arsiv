@@ -19,6 +19,6 @@
 
 ## Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 - Abraham-Silberschatz-Operating-System-Concepts-10th-2018
 - kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
