@@ -22,7 +22,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Doç Dr. M. Amaç Güvensan
 - **Ofis:** EEF-DZ35
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
-- **Hakkında:** Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+- **Öğrenci Görüşleri:**
+  - X: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
 - **Verdiği Dersler:**
   - Bilgisayar Bilimlerine Giriş
   - Algoritma Analizi
@@ -38,7 +39,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Doç Dr. Mehmet Sıddık Aktaş
 - **Ofis:** EEF-DZ31
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
-- **Hakkında:** Harf notunu güzel verir.
+- **Öğrenci Görüşleri:**
+  - X: Harf notunu güzel verir.
 - **Verdiği Dersler:**
   - Nesneye Yönelik Programlama
 - **Yıldız Sayıları:**
@@ -52,7 +54,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Doç. Dr. Ali Can Karaca
 - **Ofis:** 
 - **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
-- **Hakkında:** İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+- **Öğrenci Görüşleri:**
+  - X: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
 - **Verdiği Dersler:**
   - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
   - Bilgisayar Donanımı
@@ -69,7 +72,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Doç. Dr. Gökhan Bilgin
 - **Ofis:** EEF-D218
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
-- **Hakkında:** Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+- **Öğrenci Görüşleri:**
+  - X: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
 - **Verdiği Dersler:**
   - Lojik Devreler
   - Elektronik Devreler
@@ -84,7 +88,7 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Ahmet Elbir
 - **Ofis:** Her dersi verebilir. Standart anlatır.
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
-- **Hakkında:** 
+- **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
   - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
   - Sayısal İşaret İşleme
@@ -102,7 +106,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Erkan Uslu
 - **Ofis:** EEF - D034
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
-- **Hakkında:** Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
+- **Öğrenci Görüşleri:**
+  - X: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
 - **Verdiği Dersler:**
   - Bilgisayar Donanımı
   - Mikroişlemci Sistemleri
@@ -117,7 +122,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Furkan Çakmak
 - **Ofis:** EEF-D122
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
-- **Hakkında:** İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+- **Öğrenci Görüşleri:**
+  - X: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
 - **Verdiği Dersler:**
   - Nesneye Yönelik Programlama
   - Robot Teknolojisine Giriş
@@ -133,7 +139,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Göksel Biricik
 - **Ofis:** EEF-D127
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
-- **Hakkında:** Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
+- **Öğrenci Görüşleri:**
+  - X: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
 - **Verdiği Dersler:**
   - Mesleki Hukuk ve Etik
   - Veri Yapıları ve Algoritmalar
@@ -149,7 +156,7 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. H.İrem Türkmen
 - **Ofis:** EEF-DZ32
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
-- **Hakkında:** 
+- **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
   - Dersi Zevkli Anlatır Mı: bilinmiyor
@@ -162,7 +169,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Hamza Osman İlhan
 - **Ofis:** EEF-D124
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
-- **Hakkında:** Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+- **Öğrenci Görüşleri:**
+  - X: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
 - **Verdiği Dersler:**
   - Lojik Devreler
   - Elektronik Devreler
@@ -177,7 +185,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. M. Utku Kalay
 - **Ofis:** EEF-D214
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
-- **Hakkında:** Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+- **Öğrenci Görüşleri:**
+  - X: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
 - **Verdiği Dersler:**
   - Veritabanı Yönetimi
   - Veritabanı Sistemlerinin Gerçekleştirilmesi
@@ -193,7 +202,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Oğuz Altun
 - **Ofis:** EEF-DZ36
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
-- **Hakkında:** Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+- **Öğrenci Görüşleri:**
+  - X: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
 - **Verdiği Dersler:**
   - İstatistik ve Olasılık Hesapları
   - Hesaplama Kuramı
@@ -208,7 +218,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Dr. Yunus Emre Selçuk
 - **Ofis:** EEF-D129
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
-- **Hakkında:** İşini sever. Sakindir.
+- **Öğrenci Görüşleri:**
+  - X: İşini sever. Sakindir.
 - **Verdiği Dersler:**
   - Nesneye Yönelik Programlama
   - Yapısal Programlama
@@ -223,7 +234,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. Banu Diri
 - **Ofis:** EEF-D222
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
-- **Hakkında:** Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
+- **Öğrenci Görüşleri:**
+  - X: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
 - **Verdiği Dersler:**
   - Sayısal Analiz
   - Ayrık Matematik
@@ -239,7 +251,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. M. Elif Karslıgil
 - **Ofis:** EEF-D217
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
-- **Hakkında:** Sert bir mizacı var. Sınavlarda zor sorar.
+- **Öğrenci Görüşleri:**
+  - X: Sert bir mizacı var. Sınavlarda zor sorar.
 - **Verdiği Dersler:**
   - Algoritma Analizi
   - Görüntü İşleme
@@ -254,7 +267,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. M. Fatih Amasyalı
 - **Ofis:** EEF-D213
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
-- **Hakkında:** Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+- **Öğrenci Görüşleri:**
+  - X: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
 - **Verdiği Dersler:**
   - Yapısal Programlamaya Giriş
   - Yapay Zeka
@@ -270,7 +284,8 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. Oya Kalıpsız
 - **Ofis:** EEF-D131
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
-- **Hakkında:** Sakin bir hoca, iyi niyetli, yoklama alır.
+- **Öğrenci Görüşleri:**
+  - X: Sakin bir hoca, iyi niyetli, yoklama alır.
 - **Verdiği Dersler:**
   - Sistem Analizi ve Tasarımı
   - Yazılım Mühendisliği
@@ -287,7 +302,7 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. Songül Varlı
 - **Ofis:** EEF-D221
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
-- **Hakkında:** 
+- **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
   - Dersi Zevkli Anlatır Mı: bilinmiyor
@@ -300,7 +315,7 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 ### Prof. Dr. Sırma Yavuz
 - **Ofis:** EEF-D130
 - **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
-- **Hakkında:** 
+- **Öğrenci Görüşleri:**
 - **Verdiği Dersler:**
 - **Yıldız Sayıları:**
   - Dersi Zevkli Anlatır Mı: bilinmiyor
