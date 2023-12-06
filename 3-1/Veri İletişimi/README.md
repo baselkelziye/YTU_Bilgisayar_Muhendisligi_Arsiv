@@ -5,7 +5,8 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+- **Hakkında:**
+  - X: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

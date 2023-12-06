@@ -3,8 +3,10 @@
 ## Ders Bilgileri
 
 - **Yıl:** 0
-- **Dönem:** Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+- **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
+- **Hakkında:**
+  - X: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★☆☆
