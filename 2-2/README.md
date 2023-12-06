@@ -14,7 +14,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+- **Hakkında:**
+  - X: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -30,7 +31,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+- **Hakkında:**
+  - X: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -51,7 +53,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+- **Hakkında:**
+  - X: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -71,7 +74,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+- **Hakkında:**
+  - X: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -93,7 +97,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+- **Hakkında:**
+  - X: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
@@ -113,7 +118,8 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+- **Hakkında:**
+  - X: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
 - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 

@@ -14,7 +14,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+- **Hakkında:**
+  - X: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -35,7 +36,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -51,7 +53,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -67,7 +70,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+- **Hakkında:**
+  - X: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
@@ -83,7 +87,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -99,7 +104,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Seçmeli
-- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -115,7 +121,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+- **Hakkında:**
+  - X: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
 - **Kolaylık Puanı:** ★★★★★★★★★★
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 

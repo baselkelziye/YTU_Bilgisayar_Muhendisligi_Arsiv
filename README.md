@@ -336,7 +336,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Bilgisayar Bilimlerine Giriş**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+  - **Hakkında:**
+    - X: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -348,7 +349,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Fizik 1**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok alakası yok. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -356,7 +358,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Matematik 1**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
@@ -364,7 +367,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Lineer Cebir**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+  - **Hakkında:**
+    - X: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
@@ -372,7 +376,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İş Sağlığı ve Güvenliği 1**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok alakası yok. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -380,7 +385,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İleri İngilizce 1**
   - **Ders Tipi:** Seçmeli
-  - **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -388,7 +394,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Atatürk İlkeleri ve İnkılâp Tarihi 1**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+  - **Hakkında:**
+    - X: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -398,7 +405,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yapısal Programlamaya Giriş**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+  - **Hakkında:**
+    - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -409,7 +417,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Sayısal Analiz**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+  - **Hakkında:**
+    - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -420,7 +429,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Devre Teorisi**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+  - **Hakkında:**
+    - X: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
@@ -431,7 +441,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İş Sağlığı ve Güvenliği 2**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok alakası yok. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -439,7 +450,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mühendisler için Yarıiletken Fiziği**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+  - **Hakkında:**
+    - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -447,7 +459,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Matematik 2**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
@@ -455,7 +468,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İleri İngilizce 2**
   - **Ders Tipi:** Seçmeli
-  - **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - **Hakkında:**
+    - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -465,7 +479,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İstatistik ve Olasılık Hesapları**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
+  - **Hakkında:**
+    - X: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
@@ -476,7 +491,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Alt Seviye Programlama**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+  - **Hakkında:**
+    - X: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -487,7 +503,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yapısal Programlama**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - **Hakkında:**
+    - X: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -498,7 +515,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Bilgisayar Mühendisleri için Sinyaller ve Sistemler**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+  - **Hakkında:**
+    - X: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -509,7 +527,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Ayrık Matematik**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+  - **Hakkında:**
+    - X: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -520,7 +539,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Lojik Devreler**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Güzel bir ders, geçmesi kolay.
+  - **Hakkında:**
+    - X: Güzel bir ders, geçmesi kolay.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -530,7 +550,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Nesneye Yönelik Programlama**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+  - **Hakkında:**
+    - X: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -538,7 +559,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Bilgisayar Donanımı**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+  - **Hakkında:**
+    - X: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -546,7 +568,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Elektronik Devreler**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+  - **Hakkında:**
+    - X: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -554,7 +577,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Sistem Analizi ve Tasarımı**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+  - **Hakkında:**
+    - X: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -562,7 +586,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Hesaplama Kuramı**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+  - **Hakkında:**
+    - X: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
@@ -570,7 +595,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veri Yapıları ve Algoritmalar**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+  - **Hakkında:**
+    - X: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -580,7 +606,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **İşletim Sistemleri**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+  - **Hakkında:**
+    - X: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -588,7 +615,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Algoritma Analizi**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+  - **Hakkında:**
+    - X: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -596,7 +624,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mikroişlemci Sistemleri**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+  - **Hakkında:**
+    - X: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
@@ -604,7 +633,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veritabanı Yönetimi**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
+  - **Hakkında:**
+    - X: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -612,7 +642,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veri İletişimi**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+  - **Hakkında:**
+    - X: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -622,7 +653,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Ağ Teknolojileri**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Gerekli bir ders ama aşırı ezber.
+  - **Hakkında:**
+    - X: Gerekli bir ders ama aşırı ezber.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
@@ -630,7 +662,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Genel Staj**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
+  - **Hakkında:**
+    - X: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -638,7 +671,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Bilgisayar Projesi**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
+  - **Hakkında:**
+    - X: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -646,7 +680,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mesleki Hukuk ve Etik**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
+  - **Hakkında:**
+    - X: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
@@ -654,7 +689,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yazılım Mühendisliği**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Sistem analizi gibi bir ders. Ezber.
+  - **Hakkında:**
+    - X: Sistem analizi gibi bir ders. Ezber.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
@@ -680,7 +716,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mesleki Staj**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
+  - **Hakkında:**
+    - X: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -688,7 +725,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Bitirme Çalışması**
   - **Ders Tipi:** Zorunlu
-  - **Hakkında:** Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+  - **Hakkında:**
+    - X: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -712,6 +750,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Gömülü Sistemler**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:**
+    - X: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -733,7 +773,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mobil Programlamaya Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+  - **Hakkında:**
+    - X: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -757,7 +798,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Sayısal İşaret İşleme**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Sİnyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+  - **Hakkında:**
+    - X: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
@@ -789,7 +831,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yapay Zeka**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
+  - **Hakkında:**
+    - X: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -813,7 +856,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Doğal Dil İşlemeye Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+  - **Hakkında:**
+    - X: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -830,7 +874,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veri Tabanı Sistemlerinde Güncel Konular**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
+  - **Hakkında:**
+    - X: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -849,7 +894,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yönetim Bilgi Sistemleri**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Sistem analizine benzer.
+  - **Hakkında:**
+    - X: Sistem analizine benzer.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -866,6 +912,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veri Madenciliğine Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:**
+    - X: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -873,7 +921,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Robot Teknolojisine Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
-  - **Hakkında:** Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+  - **Hakkında:**
+    - X: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
