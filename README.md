@@ -8,6 +8,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - [Dersler](#dersler)
 - [Repo Kullanımı](#repo-kullanımı)
 - [Yazarın Notları](#yazarın-notları)
+- [Katkıda Bulunanlar](#katkıda-bulunanlar)
 
 
 
@@ -990,3 +991,13 @@ Kavramlar:
 - Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
 - Mesleki seçmeli derslerin çeşitliliği bolognada gördüğünüz kadar bol değil. Genelde hep aynı mesleki seçimlik dersler açılır. Her sene 1-2 tane farklı mesleki seçmeli açılır.
 - Dersi iyi anlatıp aynı zamanda geçmekte de sizi zorlamayacak hocalar BD, MFA
+
+
+## Katkıda Bulunanlar
+
+Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin.
+
+- Ali Albayrak
+  - Github Adresi: 
+- Basel Kelziye
+  - Github Adresi: https://github.com/baselkelziye
