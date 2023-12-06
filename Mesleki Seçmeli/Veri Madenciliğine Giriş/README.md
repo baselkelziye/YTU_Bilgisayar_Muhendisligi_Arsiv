@@ -5,7 +5,7 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆

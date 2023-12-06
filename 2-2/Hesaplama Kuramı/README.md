@@ -5,7 +5,7 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆

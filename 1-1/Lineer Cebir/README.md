@@ -5,7 +5,7 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆

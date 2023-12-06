@@ -5,7 +5,7 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Sistem analizine benzer.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆

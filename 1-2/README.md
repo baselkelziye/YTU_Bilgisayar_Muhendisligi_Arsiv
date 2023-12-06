@@ -14,7 +14,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
@@ -35,7 +35,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
@@ -56,7 +56,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
@@ -77,7 +77,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
@@ -94,7 +94,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
@@ -111,7 +111,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
@@ -128,7 +128,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Seçmeli
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
