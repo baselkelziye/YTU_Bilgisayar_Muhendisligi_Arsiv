@@ -19,35 +19,97 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
 
 
 
-### Doç Dr. M. Amaç Güvensan
-- **Ofis:** EEF-DZ35
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
+### Prof. Dr. Banu Diri
+- **Ofis:** EEF-D222
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - **Öğrenci Görüşleri:**
-  - X: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+  - X: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
 - **Verdiği Dersler:**
-  - Bilgisayar Bilimlerine Giriş
+  - Sayısal Analiz
+  - Ayrık Matematik
+  - Doğal Dil İşlemeye Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★★★★★★☆
+
+
+
+### Prof. Dr. M. Elif Karslıgil
+- **Ofis:** EEF-D217
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
+- **Öğrenci Görüşleri:**
+  - X: Sert bir mizacı var. Sınavlarda zor sorar.
+- **Verdiği Dersler:**
   - Algoritma Analizi
-  - Mobil Programlamaya Giriş
+  - Görüntü İşleme
 - **Yıldız Sayıları:**
   - Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-
-
-
-### Doç Dr. Mehmet Sıddık Aktaş
-- **Ofis:** EEF-DZ31
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
-- **Öğrenci Görüşleri:**
-  - X: Harf notunu güzel verir.
-- **Verdiği Dersler:**
-  - Nesneye Yönelik Programlama
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
   - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+
+
+
+### Prof. Dr. M. Fatih Amasyalı
+- **Ofis:** EEF-D213
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
+- **Öğrenci Görüşleri:**
+  - X: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+- **Verdiği Dersler:**
+  - Yapısal Programlamaya Giriş
+  - Yapay Zeka
+  - Uzman Sistemlere Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
+
+
+
+### Prof. Dr. Oya Kalıpsız
+- **Ofis:** EEF-D131
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
+- **Öğrenci Görüşleri:**
+  - X: Sakin bir hoca, iyi niyetli, yoklama alır.
+- **Verdiği Dersler:**
+  - Sistem Analizi ve Tasarımı
+  - Yazılım Mühendisliği
+  - Yazılım Kalite ve Test Süreci
+  - Yönetim Bilgi Sistemleri
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★★★
+  - Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
+
+
+
+### Prof. Dr. Songül Varlı
+- **Ofis:** EEF-D221
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
+- **Öğrenci Görüşleri:**
+- **Verdiği Dersler:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - Dersi Kolay Geçer Miyim:	bilinmiyor
+  - Dersi Öğrenir Miyim:	bilinmiyor
+  - Derste Eğlenir Miyim:	bilinmiyor
+
+
+
+### Prof. Dr. Sırma Yavuz
+- **Ofis:** EEF-D130
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
+- **Öğrenci Görüşleri:**
+- **Verdiği Dersler:**
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - Dersi Kolay Geçer Miyim:	bilinmiyor
+  - Dersi Öğrenir Miyim:	bilinmiyor
+  - Derste Eğlenir Miyim:	bilinmiyor
 
 
 
@@ -82,6 +144,38 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
   - Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+
+
+
+### Doç. Dr. M. Amaç Güvensan
+- **Ofis:** EEF-DZ35
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
+- **Öğrenci Görüşleri:**
+  - X: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+- **Verdiği Dersler:**
+  - Bilgisayar Bilimlerine Giriş
+  - Algoritma Analizi
+  - Mobil Programlamaya Giriş
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+
+
+
+### Doç. Dr. Mehmet Sıddık Aktaş
+- **Ofis:** EEF-DZ31
+- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
+- **Öğrenci Görüşleri:**
+  - X: Harf notunu güzel verir.
+- **Verdiği Dersler:**
+  - Nesneye Yönelik Programlama
+- **Yıldız Sayıları:**
+  - Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
 
 
 
@@ -228,100 +322,6 @@ Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde
   - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - Derste Eğlenir Miyim:	★★★★★★★★☆☆
-
-
-
-### Prof. Dr. Banu Diri
-- **Ofis:** EEF-D222
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
-- **Öğrenci Görüşleri:**
-  - X: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
-- **Verdiği Dersler:**
-  - Sayısal Analiz
-  - Ayrık Matematik
-  - Doğal Dil İşlemeye Giriş
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - Derste Eğlenir Miyim:	★★★★★★★★★☆
-
-
-
-### Prof. Dr. M. Elif Karslıgil
-- **Ofis:** EEF-D217
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
-- **Öğrenci Görüşleri:**
-  - X: Sert bir mizacı var. Sınavlarda zor sorar.
-- **Verdiği Dersler:**
-  - Algoritma Analizi
-  - Görüntü İşleme
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-
-
-
-### Prof. Dr. M. Fatih Amasyalı
-- **Ofis:** EEF-D213
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
-- **Öğrenci Görüşleri:**
-  - X: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
-- **Verdiği Dersler:**
-  - Yapısal Programlamaya Giriş
-  - Yapay Zeka
-  - Uzman Sistemlere Giriş
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - Dersi Öğrenir Miyim:	★★★★★★★★★★
-  - Derste Eğlenir Miyim:	★★★★★★★★☆☆
-
-
-
-### Prof. Dr. Oya Kalıpsız
-- **Ofis:** EEF-D131
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
-- **Öğrenci Görüşleri:**
-  - X: Sakin bir hoca, iyi niyetli, yoklama alır.
-- **Verdiği Dersler:**
-  - Sistem Analizi ve Tasarımı
-  - Yazılım Mühendisliği
-  - Yazılım Kalite ve Test Süreci
-  - Yönetim Bilgi Sistemleri
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-  - Dersi Kolay Geçer Miyim:	★★★★★★★★★★
-  - Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-  - Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
-
-
-
-### Prof. Dr. Songül Varlı
-- **Ofis:** EEF-D221
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
-- **Öğrenci Görüşleri:**
-- **Verdiği Dersler:**
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	bilinmiyor
-  - Dersi Kolay Geçer Miyim:	bilinmiyor
-  - Dersi Öğrenir Miyim:	bilinmiyor
-  - Derste Eğlenir Miyim:	bilinmiyor
-
-
-
-### Prof. Dr. Sırma Yavuz
-- **Ofis:** EEF-D130
-- **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
-- **Öğrenci Görüşleri:**
-- **Verdiği Dersler:**
-- **Yıldız Sayıları:**
-  - Dersi Zevkli Anlatır Mı:	bilinmiyor
-  - Dersi Kolay Geçer Miyim:	bilinmiyor
-  - Dersi Öğrenir Miyim:	bilinmiyor
-  - Derste Eğlenir Miyim:	bilinmiyor
 
 
 
