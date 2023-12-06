@@ -5,14 +5,15 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
+- **Hakkında:** Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★★★★★☆☆
+  - **Gereklilik Puanı:** ★★★★★★★★★★
 
 ## Derse Dair Öneriler
 
-- Dersi Geçmek için: Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
-- 2-ödevleri yapın
+- Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
+- ödevleri yapın
 
 ## Faydalı Olabilecek Kaynaklar
 

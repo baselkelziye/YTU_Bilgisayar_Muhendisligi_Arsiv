@@ -5,13 +5,16 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
+- **Hakkında:** Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+  - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 ## Derse Dair Öneriler
 
 - ders full ezber
+- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
+- Proje konusu ve birçok proje örneği githubda mevcut.
 
 ## Faydalı Olabilecek Kaynaklar
 
