@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
 - ödevleri yapın
 

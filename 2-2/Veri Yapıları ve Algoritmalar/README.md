@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar
 
 ## Faydalı Olabilecek Kaynaklar

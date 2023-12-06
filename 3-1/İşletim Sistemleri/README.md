@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - Lablardan tam puan almanız lazım.
 - Çıkmış çözmeniz lazım.
 

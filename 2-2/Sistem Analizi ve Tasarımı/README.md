@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - ders full ezber
 - Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
 - Proje konusu ve birçok proje örneği githubda mevcut.
