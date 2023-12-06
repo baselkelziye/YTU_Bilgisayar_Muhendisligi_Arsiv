@@ -5,7 +5,7 @@
 - **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Güzel bir ders, geçmesi kolay.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★★☆

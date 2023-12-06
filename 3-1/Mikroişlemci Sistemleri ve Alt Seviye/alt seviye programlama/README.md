@@ -5,7 +5,7 @@
 - **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆

@@ -5,7 +5,7 @@
 - **Yıl:** 3
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Sistem analizi gibi bir ders. Ezber.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆

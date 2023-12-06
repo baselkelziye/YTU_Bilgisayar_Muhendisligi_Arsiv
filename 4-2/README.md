@@ -29,7 +29,7 @@
 - **Yıl:** 4
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
 - **Kolaylık Puanı:** ★★★★★★★★★★
 - **Gereklilik Puanı:** ★★★★★★★★★★
@@ -46,7 +46,7 @@
 - **Yıl:** 4
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★

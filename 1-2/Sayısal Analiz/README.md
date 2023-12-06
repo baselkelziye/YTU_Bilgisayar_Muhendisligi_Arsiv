@@ -5,7 +5,7 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆

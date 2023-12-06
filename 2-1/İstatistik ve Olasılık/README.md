@@ -5,7 +5,7 @@
 - **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆

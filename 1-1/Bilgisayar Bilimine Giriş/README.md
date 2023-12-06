@@ -5,7 +5,7 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
