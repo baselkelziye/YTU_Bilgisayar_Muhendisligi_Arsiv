@@ -78,8 +78,9 @@
 - **Yıl:** 3
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Sistem analizi gibi bir ders. Ezber.
+- **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+- **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
 
 #### Faydalı Olabilecek Kaynaklar
