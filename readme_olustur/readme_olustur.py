@@ -27,7 +27,9 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"\n\n\n### {hoca['ad']}\n")
             f.write(f"- **Ofis:** {hoca['ofis']}\n")
             f.write(f"- **Araştırma Sayfası:** [{hoca['link']}]({hoca['link']})\n")
-            f.write(f"- **Hakkında:** {hoca['hakkinda']}\n")
+            f.write(f"- **Öğrenci Görüşleri:**\n")
+            for gorus in hoca['ogrenci_gorusleri']:
+                f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
             f.write("- **Verdiği Dersler:**\n")
             for ders in hoca["dersler"]:
                 f.write(f"  - {ders}\n")
