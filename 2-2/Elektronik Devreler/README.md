@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli
 
 ## Faydalı Olabilecek Kaynaklar

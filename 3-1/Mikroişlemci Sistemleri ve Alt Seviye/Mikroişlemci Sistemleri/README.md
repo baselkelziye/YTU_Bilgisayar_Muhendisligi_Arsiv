@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.
 - Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.
 - Dersin vizesi zor oluyor genelde, final kolay.
