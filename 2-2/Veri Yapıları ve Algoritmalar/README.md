@@ -5,9 +5,10 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
+- **Hakkında:** Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
+  - **Gereklilik Puanı:** ★★★★★★★★★★
 
 ## Derse Dair Öneriler
 

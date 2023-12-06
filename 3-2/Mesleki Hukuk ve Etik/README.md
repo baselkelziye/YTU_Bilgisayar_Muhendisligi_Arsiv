@@ -5,9 +5,10 @@
 - **Yıl:** 3
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
+- **Hakkında:** Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★★★★★★★
+  - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
 
 ## Faydalı Olabilecek Kaynaklar
