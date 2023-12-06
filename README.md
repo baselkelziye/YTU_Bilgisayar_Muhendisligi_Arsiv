@@ -645,20 +645,6 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 ### 4. Yıl - Güz
 
 
-- **Bilişim Sistemleri Güvenliği**
-  - **Ders Tipi:** Zorunlu
-  - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
-
-
-- **Gömülü Sistemler**
-  - **Ders Tipi:** Zorunlu
-  - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
-
-
 - **Türkçe 1**
   - **Ders Tipi:** Zorunlu
   - **Yıldız Sayıları:**
@@ -677,16 +663,18 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mesleki Staj**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Bitirme Çalışması**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Türkçe 2**
@@ -696,6 +684,20 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
 
 ### Mesleki Seçmeli
+
+
+- **Bilişim Sistemleri Güvenliği**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+
+
+- **Gömülü Sistemler**
+  - **Ders Tipi:** Mesleki Seçmeli
+  - **Yıldız Sayıları:**
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
 
 
 - **Bilgiye Erişim Ve Arama Motorları**
@@ -714,9 +716,12 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mobil Programlamaya Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+  - **Dersi Yürüten Akademisyenler:**
+    - MAG
 
 
 - **Sistem Programlama**
@@ -735,9 +740,13 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Sayısal İşaret İşleme**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Sİnyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - ACK
+    - AEL
 
 
 - **Bilgisayar Grafiğine Giriş**
@@ -763,9 +772,12 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yapay Zeka**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+  - **Dersi Yürüten Akademisyenler:**
+    - MFA
 
 
 - **Yapay Sinir Ağlarına Giriş**
@@ -784,9 +796,12 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Doğal Dil İşlemeye Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+  - **Dersi Yürüten Akademisyenler:**
+    - BD
 
 
 - **Uzman Sistemlere Giriş**
