@@ -1,23 +1,16 @@
 # Matematik 2
 
-Ders bilgi
+## Ders Bilgileri
+
+- **Yıl:** 1
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Yıldız Sayıları:**
+  - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+  - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
 
-
-## Derse dair öneriler
-
-- 
-
-
-
-  
 ## Faydalı Olabilecek Kaynaklar
 
-
-## Katkı
-
-Katkılara her zaman açığız!
-
-Başlamak `Contributor.md'ye bakın.
-
-Lütfen bu projenin `davranış kurallarına` uyun.
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
