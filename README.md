@@ -505,69 +505,78 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Lojik Devreler**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Güzel bir ders, geçmesi kolay.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
 
 ### 2. Yıl - Bahar
 
 
 - **Nesneye Yönelik Programlama**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Bilgisayar Donanımı**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Elektronik Devreler**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
 
 
 - **Sistem Analizi ve Tasarımı**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
 
 
 - **Hesaplama Kuramı**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
 
 
 - **Veri Yapıları ve Algoritmalar**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 ### 3. Yıl - Güz
 
 
 - **İşletim Sistemleri**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Algoritma Analizi**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Mikroişlemci Sistemleri**
@@ -579,46 +588,52 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veritabanı Yönetimi**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Veri İletişimi**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
 
 ### 3. Yıl - Bahar
 
 
 - **Ağ Teknolojileri**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Gerekli bir ders ama aşırı ezber.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
 
 
 - **Genel Staj**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Bilgisayar Projesi**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
 
 
 - **Mesleki Hukuk ve Etik**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
 
 
 - **Yazılım Mühendisliği**
@@ -869,6 +884,11 @@ Kavramlar:
 - Lab
   - Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
   - Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
+- Staj
+  - Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
+  - Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
+  - Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.
+  - Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor.
 
 ## Yazarın Notları
 

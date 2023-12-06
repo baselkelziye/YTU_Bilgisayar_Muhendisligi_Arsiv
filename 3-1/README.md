@@ -14,8 +14,9 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 #### Derse Dair Öneriler
 
@@ -35,8 +36,9 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+- **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 
 #### Faydalı Olabilecek Kaynaklar
@@ -71,8 +73,9 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
+- **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 
 #### Faydalı Olabilecek Kaynaklar
@@ -86,8 +89,9 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★☆
 
 
 #### Faydalı Olabilecek Kaynaklar

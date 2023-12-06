@@ -114,8 +114,9 @@
 - **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Güzel bir ders, geçmesi kolay.
+- **Kolaylık Puanı:** ★★★★★★★★★☆
+- **Gereklilik Puanı:** ★★★★★★★★★☆
 
 
 #### Faydalı Olabilecek Kaynaklar
