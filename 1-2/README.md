@@ -14,7 +14,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+- **Hakkında:**
+  - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -34,7 +35,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+- **Hakkında:**
+  - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -54,7 +56,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+- **Hakkında:**
+  - X: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
@@ -74,7 +77,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -90,7 +94,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+- **Hakkında:**
+  - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -106,7 +111,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -122,7 +128,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Seçmeli
-- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 

@@ -5,7 +5,8 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:** Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+- **Hakkında:**
+  - X: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

@@ -5,7 +5,8 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:** Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+- **Hakkında:**
+  - X: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★☆☆☆☆☆

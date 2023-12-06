@@ -74,8 +74,10 @@ def dersleri_readme_ye_ekle(dersler):
                 f.write("\n\n")
                 f.write(f"- **{ders['ad']}**\n")
                 f.write(f"  - **Ders Tipi:** {ders['tip']}\n")
-                if ders['hakkinda']:
-                    f.write(f"  - **Hakkında:** {ders['hakkinda']}\n")
+                if ders['ogrenci_gorusleri']:
+                    f.write(f"  - **Hakkında:**\n")
+                    for gorus in ders['ogrenci_gorusleri']:
+                        f.write(f"    - {gorus['kisi']}: {gorus['yorum']}\n")
                 f.write("  - **Yıldız Sayıları:**\n")
                 f.write(f"    - Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                 f.write(f"    - Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
@@ -167,8 +169,10 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         f.write(f"- **Yıl:** {ders['yil']}\n")
         f.write(f"- **Dönem:** {ders['donem']}\n")
         f.write(f"- **Ders Tipi:** {ders['tip']}\n")
-        if ders['hakkinda']:
-            f.write(f"- **Hakkında:** {ders['hakkinda']}\n")
+        if ders['ogrenci_gorusleri']:
+            f.write(f"- **Hakkında:**\n")
+            for gorus in ders['ogrenci_gorusleri']:
+                f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
         f.write("- **Yıldız Sayıları:**\n")
         f.write(f"  - **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
         f.write(f"  - **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
@@ -227,8 +231,10 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     f.write(f"- **Yıl:** {ders['yil']}\n")
                     f.write(f"- **Dönem:** {ders['donem']}\n")
                     f.write(f"- **Ders Tipi:** {ders['tip']}\n")
-                    if ders['hakkinda']:
-                        f.write(f"- **Hakkında:** {ders['hakkinda']}\n")
+                    if ders['ogrenci_gorusleri']:
+                        f.write(f"- **Hakkında:**\n")
+                        for gorus in ders['ogrenci_gorusleri']:
+                            f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
                     f.write(f"- **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                     f.write(f"- **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
 

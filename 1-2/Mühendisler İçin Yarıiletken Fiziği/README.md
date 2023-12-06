@@ -5,7 +5,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+- **Hakkında:**
+  - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆

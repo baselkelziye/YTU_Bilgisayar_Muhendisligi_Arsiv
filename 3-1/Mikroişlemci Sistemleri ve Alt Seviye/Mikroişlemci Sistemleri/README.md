@@ -5,7 +5,8 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+- **Hakkında:**
+  - X: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★☆☆☆☆

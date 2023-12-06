@@ -5,7 +5,8 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:** Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+- **Hakkında:**
+  - X: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆
