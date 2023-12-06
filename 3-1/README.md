@@ -52,8 +52,9 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+- **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
 #### Derse Dair Öneriler
 
