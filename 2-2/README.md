@@ -22,7 +22,7 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
 ### Bilgisayar Donanımı
 
@@ -44,7 +44,7 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
 ### Elektronik Devreler
 
@@ -65,7 +65,7 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
 ### Sistem Analizi ve Tasarımı
 
@@ -88,7 +88,7 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
 ### Hesaplama Kuramı
 
@@ -109,7 +109,7 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
 ### Veri Yapıları ve Algoritmalar
 
@@ -130,4 +130,4 @@
 
 #### Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
