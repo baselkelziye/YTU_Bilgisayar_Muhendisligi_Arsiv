@@ -5,7 +5,7 @@
 - **Yıl:** 3
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:**
+- **Öğrenci Görüşleri:**
   - X: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★★★

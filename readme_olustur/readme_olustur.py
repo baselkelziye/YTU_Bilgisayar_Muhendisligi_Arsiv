@@ -75,7 +75,7 @@ def dersleri_readme_ye_ekle(dersler):
                 f.write(f"- **{ders['ad']}**\n")
                 f.write(f"  - **Ders Tipi:** {ders['tip']}\n")
                 if ders['ogrenci_gorusleri']:
-                    f.write(f"  - **Hakkında:**\n")
+                    f.write(f"  - **Öğrenci Görüşleri:**\n")
                     for gorus in ders['ogrenci_gorusleri']:
                         f.write(f"    - {gorus['kisi']}: {gorus['yorum']}\n")
                 f.write("  - **Yıldız Sayıları:**\n")
@@ -170,7 +170,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         f.write(f"- **Dönem:** {ders['donem']}\n")
         f.write(f"- **Ders Tipi:** {ders['tip']}\n")
         if ders['ogrenci_gorusleri']:
-            f.write(f"- **Hakkında:**\n")
+            f.write(f"- **Öğrenci Görüşleri:**\n")
             for gorus in ders['ogrenci_gorusleri']:
                 f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
         f.write("- **Yıldız Sayıları:**\n")
@@ -232,7 +232,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     f.write(f"- **Dönem:** {ders['donem']}\n")
                     f.write(f"- **Ders Tipi:** {ders['tip']}\n")
                     if ders['ogrenci_gorusleri']:
-                        f.write(f"- **Hakkında:**\n")
+                        f.write(f"- **Öğrenci Görüşleri:**\n")
                         for gorus in ders['ogrenci_gorusleri']:
                             f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
                     f.write(f"- **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
