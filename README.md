@@ -581,9 +581,10 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Mikroişlemci Sistemleri**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
 
 
 - **Veritabanı Yönetimi**
@@ -638,9 +639,10 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Yazılım Mühendisliği**
   - **Ders Tipi:** Zorunlu
+  - **Hakkında:** Sistem analizi gibi bir ders. Ezber.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
 
 ### 4. Yıl - Güz
 
@@ -813,9 +815,12 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 
 - **Veri Tabanı Sistemlerinde Güncel Konular**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - MUK
 
 
 - **Veritabanı Sistemlerinin Gerçekleştirilmesi**
@@ -823,13 +828,18 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - MUK
 
 
 - **Yönetim Bilgi Sistemleri**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Sistem analizine benzer.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - OK
 
 
 - **Dağıtık Sistemler**
@@ -842,15 +852,18 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
 - **Veri Madenciliğine Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
 
 
 - **Robot Teknolojisine Giriş**
   - **Ders Tipi:** Mesleki Seçmeli
+  - **Hakkında:** Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
   - **Yıldız Sayıları:**
-    - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+    - Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - FÇ
 
 
 - **Yazılım Kalite ve Test Süreci**
@@ -858,6 +871,8 @@ Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktad�
   - **Yıldız Sayıları:**
     - Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+  - **Dersi Yürüten Akademisyenler:**
+    - OK
 
 
 

@@ -270,9 +270,9 @@
         "yil": 3,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
+        "hakkinda": "Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.",
+        "kolaylik_puani": 30,
+        "gereklilik_puani": 60,
         "derse_dair_oneriler":["Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.","Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.","Dersin vizesi zor oluyor genelde, final kolay."],
         "faydali_olabilecek_kaynaklar":["80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"]
     },
@@ -334,9 +334,9 @@
         "yil": 3,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Sistem analizi gibi bir ders. Ezber.",
+        "kolaylik_puani": 50,
+        "gereklilik_puani": 10
     },
     {
         "ad": "Bilişim Sistemleri Güvenliği",
@@ -535,9 +535,10 @@
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.",
+        "kolaylik_puani": 30,
+        "gereklilik_puani": 40,
+        "dersi_veren_hocalar":["MUK"]
     },
     {
         "ad": "Veritabanı Sistemlerinin Gerçekleştirilmesi",
@@ -546,16 +547,18 @@
         "tip": "Mesleki Seçmeli",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "dersi_veren_hocalar":["MUK"]
     },
     {
         "ad": "Yönetim Bilgi Sistemleri",
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Sistem analizine benzer.",
+        "kolaylik_puani": 70,
+        "gereklilik_puani": 40,
+        "dersi_veren_hocalar":["OK"]
     },
     {
         "ad": "Dağıtık Sistemler",
@@ -569,20 +572,21 @@
     {
         "ad": "Veri Madenciliğine Giriş",
         "yil": 0,
-        "donem": "",
+        "donem": "Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.",
         "tip": "Mesleki Seçmeli",
         "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "kolaylik_puani": 70,
+        "gereklilik_puani": 80
     },
     {
         "ad": "Robot Teknolojisine Giriş",
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.",
+        "kolaylik_puani": 40,
+        "gereklilik_puani": 50,
+        "dersi_veren_hocalar":["FÇ"]
     },
     {
         "ad": "Yazılım Kalite ve Test Süreci",
@@ -591,7 +595,8 @@
         "tip": "Mesleki Seçmeli",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "dersi_veren_hocalar":["OK"]
     }
     
     
