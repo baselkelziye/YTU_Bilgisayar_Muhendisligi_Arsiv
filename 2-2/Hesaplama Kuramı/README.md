@@ -12,6 +12,7 @@
 
 ## Derse Dair Öneriler
 
+### Öneri sahibi: X
 - vize görece kolay olur yüksek kalırsan geçersin
 
 ## Faydalı Olabilecek Kaynaklar

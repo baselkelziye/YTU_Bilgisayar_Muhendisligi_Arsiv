@@ -16,26 +16,47 @@
         "readme_olustur -> readme dosyası oluşturmak için kullanılan python kodu",
         "burada olmayan bazı çıkmış sorulara/lablara/ödevlere https://drive.google.com/drive/folders/1Cp56VdpdRpAKaAEXbiShMvs23jPNjT1k adresinden ulaşabilirsiniz."
     ],
-    "talimat":"Talimatlar:",
-    "talimatlar":["İlgili dönemin/türün klasörünü aç.",
-                "İlgili dersin klasörünü aç.",
-                "Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.",
-                "Ödevler lablar vs. cevapları %100 doğru değildir.",
-                "Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin."],
+    "talimat": "Talimatlar:",
+    "talimatlar": [
+        "İlgili dönemin/türün klasörünü aç.",
+        "İlgili dersin klasörünü aç.",
+        "Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.",
+        "Ödevler lablar vs. cevapları %100 doğru değildir.",
+        "Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin."
+    ],
     "kavram": "Kavramlar:",
-    "kavramlar": [{"kavram":"Lab", 
-                    "aciklamalar":["Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.",
-                                 "Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)"]},
-                    {"kavram":"Ara Proje",
-                    "aciklamalar":["Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.",
-                                "Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.",
-                                "Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.",
-                                "Ara Proje ve Bitirme Projesi 3 parçadadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.",
-                                "Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir."]},
-                    {"kavram":"Bitirme Projesi",
-                    "aciklamalar":["Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır."]},
-                    {"kavram":"Staj","aciklamalar":["Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.",
-                                "Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.",
-                                "Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.",
-                                "Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor."]}]
+    "kavramlar": [
+        {
+            "kavram": "Lab",
+            "aciklamalar": [
+                "Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.",
+                "Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)"
+            ]
+        },
+        {
+            "kavram": "Ara Proje",
+            "aciklamalar": [
+                "Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.",
+                "Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.",
+                "Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.",
+                "Ara Proje ve Bitirme Projesi 3 parçadadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.",
+                "Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir."
+            ]
+        },
+        {
+            "kavram": "Bitirme Projesi",
+            "aciklamalar": [
+                "Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır."
+            ]
+        },
+        {
+            "kavram": "Staj",
+            "aciklamalar": [
+                "Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.",
+                "Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.",
+                "Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.",
+                "Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor."
+            ]
+        }
+    ]
 }
