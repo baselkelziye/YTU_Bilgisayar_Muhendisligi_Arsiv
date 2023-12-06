@@ -182,37 +182,37 @@
         "yil": 2,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Güzel bir ders, geçmesi kolay.",
+        "kolaylik_puani": 90,
+        "gereklilik_puani": 90
     },
     {
         "ad": "Nesneye Yönelik Programlama",
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.",
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Bilgisayar Donanımı",
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
-        "derse_dair_oneriler":["Dersi Geçmek için: Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)","2-ödevleri yapın"]
+        "hakkinda": "Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.",
+        "kolaylik_puani": 80,
+        "gereklilik_puani": 100,
+        "derse_dair_oneriler":["Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)","ödevleri yapın"]
     },
     {
         "ad": "Elektronik Devreler",
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
+        "hakkinda": "Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.",
+        "kolaylik_puani": 70,
+        "gereklilik_puani": 40,
         "derse_dair_oneriler":["şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli"]
     },
     {
@@ -220,38 +220,39 @@
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
-        "derse_dair_oneriler":["ders full ezber"]
+        "hakkinda": "Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.",
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 80,
+        "derse_dair_oneriler":["ders full ezber","Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.",
+                                "Proje konusu ve birçok proje örneği githubda mevcut."]
     },
     {
         "ad": "Hesaplama Kuramı",
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
-        "derse_dair_oneriler":["vize görece kolay olur yükse kalırsan geçersin"]
+        "hakkinda": "Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor",
+        "kolaylik_puani": 65,
+        "gereklilik_puani": 70,
+        "derse_dair_oneriler":["vize görece kolay olur yüksek kalırsan geçersin"]
     },
     {
         "ad": "Veri Yapıları ve Algoritmalar",
         "yil": 2,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
+        "hakkinda": "Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.",
+        "kolaylik_puani": 40,
+        "gereklilik_puani": 100,
         "derse_dair_oneriler":["ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar"]
     },{
         "ad": "İşletim Sistemleri",
         "yil": 3,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
+        "hakkinda": "Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.",
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 100,
         "faydali_olabilecek_kaynaklar":["Abraham-Silberschatz-Operating-System-Concepts-10th-2018","kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."],
         "derse_dair_oneriler":["Lablardan tam puan almanız lazım.","Çıkmış çözmeniz lazım."]
     },
@@ -260,9 +261,9 @@
         "yil": 3,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.",
+        "kolaylik_puani": 30,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Mikroişlemci Sistemleri",
@@ -280,53 +281,53 @@
         "yil": 3,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.",
+        "kolaylik_puani": 70,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Veri İletişimi",
         "yil": 3,
         "donem": "Güz",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.",
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 90
     },{
         "ad": "Ağ Teknolojileri",
         "yil": 3,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Gerekli bir ders ama aşırı ezber.",
+        "kolaylik_puani": 50,
+        "gereklilik_puani": 70
     },
     {
         "ad": "Genel Staj",
         "yil": 3,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.",
+        "kolaylik_puani": 100,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Bilgisayar Projesi",
         "yil": 3,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.",
+        "kolaylik_puani": 70,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Mesleki Hukuk ve Etik",
         "yil": 3,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.",
+        "kolaylik_puani": 100,
+        "gereklilik_puani": 20
     },
     {
         "ad": "Yazılım Mühendisliği",

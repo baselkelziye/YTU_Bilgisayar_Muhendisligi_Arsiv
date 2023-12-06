@@ -14,8 +14,9 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 
 #### Faydalı Olabilecek Kaynaklar
@@ -29,13 +30,14 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+- **Kolaylık Puanı:** ★★★★★★★★☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 #### Derse Dair Öneriler
 
-- Dersi Geçmek için: Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
-- 2-ödevleri yapın
+- Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
+- ödevleri yapın
 
 #### Faydalı Olabilecek Kaynaklar
 
@@ -48,8 +50,9 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+- **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
 #### Derse Dair Öneriler
 
@@ -66,12 +69,15 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 #### Derse Dair Öneriler
 
 - ders full ezber
+- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
+- Proje konusu ve birçok proje örneği githubda mevcut.
 
 #### Faydalı Olabilecek Kaynaklar
 
@@ -84,12 +90,13 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+- **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
 #### Derse Dair Öneriler
 
-- vize görece kolay olur yükse kalırsan geçersin
+- vize görece kolay olur yüksek kalırsan geçersin
 
 #### Faydalı Olabilecek Kaynaklar
 
@@ -102,8 +109,9 @@
 - **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Hakkında:** Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+- **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
+- **Gereklilik Puanı:** ★★★★★★★★★★
 
 #### Derse Dair Öneriler
 
