@@ -340,21 +340,21 @@
     },
     {
         "ad": "Bilişim Sistemleri Güvenliği",
-        "yil": 4,
-        "donem": "Güz",
-        "tip": "Zorunlu",
+        "yil": 0,
+        "donem": "",
+        "tip": "Mesleki Seçmeli",
         "hakkinda": "",
         "kolaylik_puani": 0,
         "gereklilik_puani": 0
     },
     {
         "ad": "Gömülü Sistemler",
-        "yil": 4,
-        "donem": "Güz",
-        "tip": "Zorunlu",
+        "yil": 0,
+        "donem": "raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.",
+        "tip": "Mesleki Seçmeli",
         "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 80
     },
     {
         "ad": "Türkçe 1",
@@ -378,18 +378,18 @@
         "yil": 4,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.",
+        "kolaylik_puani": 100,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Bitirme Çalışması",
         "yil": 4,
         "donem": "Bahar",
         "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.",
+        "kolaylik_puani": 60,
+        "gereklilik_puani": 100
     },
     {
         "ad": "Türkçe 2",
@@ -423,9 +423,10 @@
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.",
+        "kolaylik_puani": 40,
+        "gereklilik_puani": 90,
+        "dersi_veren_hocalar":["MAG"]
     },
     {
         "ad": "Sistem Programlama",
@@ -450,9 +451,10 @@
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Sİnyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.",
+        "kolaylik_puani": 80,
+        "gereklilik_puani": 60,
+        "dersi_veren_hocalar":["ACK","AEL"]
     },
     {
         "ad": "Bilgisayar Grafiğine Giriş",
@@ -485,9 +487,10 @@
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.",
+        "kolaylik_puani": 80,
+        "gereklilik_puani": 90,
+        "dersi_veren_hocalar":["MFA"]
     },
     {
         "ad": "Yapay Sinir Ağlarına Giriş",
@@ -512,9 +515,11 @@
         "yil": 0,
         "donem": "",
         "tip": "Mesleki Seçmeli",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "hakkinda": "Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.",
+        "kolaylik_puani": 80,
+        "gereklilik_puani": 90,
+        "dersi_veren_hocalar":["BD"],
+        "derse_dair_oneriler":["Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz."]
     },
     {
         "ad": "Uzman Sistemlere Giriş",
