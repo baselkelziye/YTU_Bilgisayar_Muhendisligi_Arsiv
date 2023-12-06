@@ -202,7 +202,8 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["Dersi Geçmek için: Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)","2-ödevleri yapın"]
     },
     {
         "ad": "Elektronik Devreler",
@@ -211,7 +212,8 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli"]
     },
     {
         "ad": "Sistem Analizi ve Tasarımı",
@@ -220,7 +222,8 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["ders full ezber"]
     },
     {
         "ad": "Hesaplama Kuramı",
@@ -229,7 +232,8 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["vize görece kolay olur yükse kalırsan geçersin"]
     },
     {
         "ad": "Veri Yapıları ve Algoritmalar",
@@ -238,7 +242,8 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar"]
     },{
         "ad": "İşletim Sistemleri",
         "yil": 3,
@@ -246,7 +251,9 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "faydali_olabilecek_kaynaklar":["Abraham-Silberschatz-Operating-System-Concepts-10th-2018","kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."],
+        "derse_dair_oneriler":["Lablardan tam puan almanız lazım.","Çıkmış çözmeniz lazım."]
     },
     {
         "ad": "Algoritma Analizi",
@@ -264,7 +271,9 @@
         "tip": "Zorunlu",
         "hakkinda": "",
         "kolaylik_puani": 0,
-        "gereklilik_puani": 0
+        "gereklilik_puani": 0,
+        "derse_dair_oneriler":["Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.","Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.","Dersin vizesi zor oluyor genelde, final kolay."],
+        "faydali_olabilecek_kaynaklar":["80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"]
     },
     {
         "ad": "Veritabanı Yönetimi",

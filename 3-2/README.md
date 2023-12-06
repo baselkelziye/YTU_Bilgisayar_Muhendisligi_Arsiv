@@ -1,4 +1,83 @@
-# YTU_Bilgisayar_Muhendisligi_Arsiv
+# 3. Sınıf Bahar
 
-Dosyalar Sınıf-Dönem şeklinde ayrılıyor.
-ör: 3-1 -> 3. Sınıf 1. dönemi
+## Genel Tavsiyeler
+
+- Düzenli ders çalışmayı ihmal etmeyin
+- Lab uygulamalarına katılın
+## Dönemin Zorunlu Dersleri
+
+
+### Ağ Teknolojileri
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Genel Staj
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Bilgisayar Projesi
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Mesleki Hukuk ve Etik
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Yazılım Mühendisliği
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
