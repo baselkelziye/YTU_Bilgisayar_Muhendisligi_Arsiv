@@ -5,7 +5,8 @@
 - **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+- **Hakkında:**
+  - X: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★★☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

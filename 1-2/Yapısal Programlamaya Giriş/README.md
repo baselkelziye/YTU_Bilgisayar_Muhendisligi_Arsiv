@@ -5,7 +5,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+- **Hakkında:**
+  - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

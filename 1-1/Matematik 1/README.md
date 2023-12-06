@@ -5,7 +5,8 @@
 - **Yıl:** 1
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- **Hakkında:**
+  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆

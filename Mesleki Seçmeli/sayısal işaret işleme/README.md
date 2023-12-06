@@ -5,7 +5,8 @@
 - **Yıl:** 0
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
-- **Hakkında:** Sİnyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+- **Hakkında:**
+  - X: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆
   - **Gereklilik Puanı:** ★★★★★★☆☆☆☆

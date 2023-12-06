@@ -5,7 +5,8 @@
 - **Yıl:** 3
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+- **Hakkında:**
+  - X: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

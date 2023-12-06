@@ -5,7 +5,8 @@
 - **Yıl:** 1
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
-- **Hakkında:** Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+- **Hakkında:**
+  - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆
   - **Gereklilik Puanı:** ★★★★★★★★☆☆
