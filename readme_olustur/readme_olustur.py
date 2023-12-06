@@ -117,7 +117,12 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
         f.write(f"\n## {yazar_notlari['baslik']}\n\n")
         for aciklama in yazar_notlari['aciklamalar']:
             f.write(f"- {aciklama}\n")
-
+def readme_katkida_bulunanlar_ekle(veri):
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
+        f.write(f"\n\n## {veri['bolum_adi']}\n\n")
+        f.write(f"{veri['bolum_aciklamasi']}\n\n")
+        for katkida_bulunan in veri['katkida_bulunanlar']:
+            f.write(f"- {katkida_bulunan['ad']}\n  - Github Adresi: {katkida_bulunan['github_link']}\n")
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
@@ -130,13 +135,14 @@ dersler = json_oku('dersler.json')
 # JSON dosyasından hocaları oku ve README'ye ekle
 hocalar = json_oku('hocalar.json')
 giris_bilgileri = json_oku('giris.json')
-
+katkida_bulunanlar = json_oku('katkida_bulunanlar.json')
 
 readme_ye_giris_ekle(giris_bilgileri)
 hocalari_readme_ye_ekle(hocalar)
 dersleri_readme_ye_ekle(dersler)
 readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
 readme_ye_yazar_notlari_ekle(yazar_notlari)
+readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
 
 """
 BURASI ANA README OLUŞTURMA KISMI
