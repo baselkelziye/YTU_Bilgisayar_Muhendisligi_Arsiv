@@ -1,0 +1,10 @@
+matrix[0][0] = *(*(matrix))
+&matrix[0][0] = (*(matrix))
+matrix[i][j] = *((*(matrix)) + (i * COLS + j))
+matrix[i][j] = *(*(matrix + i) + j)
+&matrix[i][j] = (*(matrix + i) + j)
+matrix[i][j] = *(matrix[i] + j)
+&matrix[i][j] = (matrix[i] + j)
+matrix[i][j] = (*(matrix + i))[j]
+???&matrix[i][j] = &(*(matrix + i))[j]
+&matrix[i][j] = ((*(matrix)) + (i * COLS + j)) =(*(matrix + i) + j)
