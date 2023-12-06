@@ -2,12 +2,12 @@
 
 ## Ders Bilgileri
 
-- **Yıl:** 4
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
+- **Yıl:** 0
+- **Dönem:** raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+- **Ders Tipi:** Mesleki Seçmeli
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+  - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 
 ## Faydalı Olabilecek Kaynaklar
