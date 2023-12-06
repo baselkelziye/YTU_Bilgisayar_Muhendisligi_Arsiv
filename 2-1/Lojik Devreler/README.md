@@ -1,8 +1,8 @@
-# Algoritma Analizi
+# Lojik Devreler
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**

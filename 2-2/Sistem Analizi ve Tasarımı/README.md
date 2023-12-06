@@ -1,14 +1,17 @@
-# Algoritma Analizi
+# Sistem Analizi ve Tasarımı
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
+- **Yıl:** 2
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+## Derse Dair Öneriler
+
+- ders full ezber
 
 ## Faydalı Olabilecek Kaynaklar
 

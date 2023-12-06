@@ -1,12 +1,13 @@
-# Algoritma Analizi
+# Mühendisler için Yarıiletken Fiziği
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
+- **Yıl:** 1
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
+- **Hakkında:** Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 

@@ -1,4 +1,53 @@
-# YTU_Bilgisayar_Muhendisligi_Arsiv
+# 4. Sınıf Güz
 
-Dosyalar Sınıf-Dönem şeklinde ayrılıyor.
-ör: 3-1 -> 3. Sınıf 1. dönemi
+## Genel Tavsiyeler
+
+- Düzenli ders çalışmayı ihmal etmeyin
+- Lab uygulamalarına katılın
+## Dönemin Zorunlu Dersleri
+
+
+### Bilişim Sistemleri Güvenliği
+
+#### Ders Bilgileri
+
+- **Yıl:** 4
+- **Dönem:** Güz
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Gömülü Sistemler
+
+#### Ders Bilgileri
+
+- **Yıl:** 4
+- **Dönem:** Güz
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Türkçe 1
+
+#### Ders Bilgileri
+
+- **Yıl:** 4
+- **Dönem:** Güz
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh

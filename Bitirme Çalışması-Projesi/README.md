@@ -1,9 +1,9 @@
-# Algoritma Analizi
+# Bitirme Çalışması
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
+- **Yıl:** 4
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆

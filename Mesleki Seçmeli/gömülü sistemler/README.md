@@ -1,8 +1,8 @@
-# Algoritma Analizi
+# Gömülü Sistemler
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 4
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**

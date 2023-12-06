@@ -1,4 +1,4 @@
-# 3. Sınıf Bahar
+# 2. Sınıf Bahar
 
 ## Genel Tavsiyeler
 
@@ -7,11 +7,11 @@
 ## Dönemin Zorunlu Dersleri
 
 
-### Ağ Teknolojileri
+### Nesneye Yönelik Programlama
 
 #### Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
@@ -22,61 +22,92 @@
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Genel Staj
+### Bilgisayar Donanımı
 
 #### Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+#### Derse Dair Öneriler
+
+- Dersi Geçmek için: Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
+- 2-ödevleri yapın
 
 #### Faydalı Olabilecek Kaynaklar
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Bilgisayar Projesi
+### Elektronik Devreler
 
 #### Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+#### Derse Dair Öneriler
+
+- şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli
 
 #### Faydalı Olabilecek Kaynaklar
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Mesleki Hukuk ve Etik
+### Sistem Analizi ve Tasarımı
 
 #### Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+#### Derse Dair Öneriler
+
+- ders full ezber
 
 #### Faydalı Olabilecek Kaynaklar
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Yazılım Mühendisliği
+### Hesaplama Kuramı
 
 #### Ders Bilgileri
 
-- **Yıl:** 3
+- **Yıl:** 2
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+#### Derse Dair Öneriler
+
+- vize görece kolay olur yükse kalırsan geçersin
+
+#### Faydalı Olabilecek Kaynaklar
+
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Veri Yapıları ve Algoritmalar
+
+#### Ders Bilgileri
+
+- **Yıl:** 2
+- **Dönem:** Bahar
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+#### Derse Dair Öneriler
+
+- ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar
 
 #### Faydalı Olabilecek Kaynaklar
 
