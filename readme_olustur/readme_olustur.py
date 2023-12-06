@@ -6,7 +6,10 @@ CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUF
 ANA_README_YOLU = "../README.md"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
-
+unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
+def hoca_siralama_anahtari(hoca):
+    unvan = hoca['ad'].split()[0]  # İsmin ilk kelimesini (unvanı) al
+    return (unvanlarin_onceligi.get(unvan, 4), hoca['ad'])  # Unvan önceliği ve tam ad
 # JSON dosyasından hocaların bilgilerini okuyan fonksiyon
 def json_oku(json_dosyasi):
     with open(json_dosyasi, 'r') as f:
@@ -23,7 +26,7 @@ def hocalari_readme_ye_ekle(bilgiler):
     with open(ANA_README_YOLU, 'a') as f:
         f.write(f"\n\n\n## {bilgiler['bolum_adi']}\n")
         f.write(f"{bilgiler['bolum_aciklamasi']}\n\n\n\n")
-        for hoca in sorted(bilgiler['hocalar'], key=lambda x: x['ad']):
+        for hoca in sorted(bilgiler['hocalar'], key=hoca_siralama_anahtari):
             f.write(f"\n\n\n### {hoca['ad']}\n")
             f.write(f"- **Ofis:** {hoca['ofis']}\n")
             f.write(f"- **Araştırma Sayfası:** [{hoca['link']}]({hoca['link']})\n")
