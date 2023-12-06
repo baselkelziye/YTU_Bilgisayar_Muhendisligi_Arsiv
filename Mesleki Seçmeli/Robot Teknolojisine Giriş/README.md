@@ -1,10 +1,10 @@
-# Algoritma Analizi
+# Robot Teknolojisine Giriş
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
+- **Yıl:** 0
+- **Dönem:** 
+- **Ders Tipi:** Mesleki Seçmeli
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆

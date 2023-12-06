@@ -1,13 +1,13 @@
-# Matematik 2
+# Matematik 1
 
 ## Ders Bilgileri
 
 - **Yıl:** 1
-- **Dönem:** Bahar
+- **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Hakkında:** Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+  - **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
 

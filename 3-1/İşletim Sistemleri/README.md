@@ -1,4 +1,4 @@
-# Algoritma Analizi
+# İşletim Sistemleri
 
 ## Ders Bilgileri
 
@@ -9,7 +9,13 @@
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+## Derse Dair Öneriler
+
+- Lablardan tam puan almanız lazım.
+- Çıkmış çözmeniz lazım.
 
 ## Faydalı Olabilecek Kaynaklar
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+- Abraham-Silberschatz-Operating-System-Concepts-10th-2018
+- kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.

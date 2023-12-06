@@ -1,14 +1,17 @@
-# Algoritma Analizi
+# Hesaplama Kuramı
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
+- **Yıl:** 2
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+## Derse Dair Öneriler
+
+- vize görece kolay olur yükse kalırsan geçersin
 
 ## Faydalı Olabilecek Kaynaklar
 

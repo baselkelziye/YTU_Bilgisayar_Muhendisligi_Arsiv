@@ -1,4 +1,4 @@
-# 3. Sınıf Bahar
+# 3. Sınıf Güz
 
 ## Genel Tavsiyeler
 
@@ -7,12 +7,33 @@
 ## Dönemin Zorunlu Dersleri
 
 
-### Ağ Teknolojileri
+### İşletim Sistemleri
 
 #### Ders Bilgileri
 
 - **Yıl:** 3
-- **Dönem:** Bahar
+- **Dönem:** Güz
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+#### Derse Dair Öneriler
+
+- Lablardan tam puan almanız lazım.
+- Çıkmış çözmeniz lazım.
+
+#### Faydalı Olabilecek Kaynaklar
+
+- Abraham-Silberschatz-Operating-System-Concepts-10th-2018
+- kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Algoritma Analizi
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
@@ -22,12 +43,33 @@
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Genel Staj
+### Mikroişlemci Sistemleri
 
 #### Ders Bilgileri
 
 - **Yıl:** 3
-- **Dönem:** Bahar
+- **Dönem:** Güz
+- **Ders Tipi:** Zorunlu
+- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+#### Derse Dair Öneriler
+
+- Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.
+- Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.
+- Dersin vizesi zor oluyor genelde, final kolay.
+
+#### Faydalı Olabilecek Kaynaklar
+
+- 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
+- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
+
+### Veritabanı Yönetimi
+
+#### Ders Bilgileri
+
+- **Yıl:** 3
+- **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
@@ -37,42 +79,12 @@
 
 - çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
 
-### Bilgisayar Projesi
+### Veri İletişimi
 
 #### Ders Bilgileri
 
 - **Yıl:** 3
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
-
-### Mesleki Hukuk ve Etik
-
-#### Ders Bilgileri
-
-- **Yıl:** 3
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/18dDLare1YYboOECajOGKHxU0Zlv0cRWh
-
-### Yazılım Mühendisliği
-
-#### Ders Bilgileri
-
-- **Yıl:** 3
-- **Dönem:** Bahar
+- **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆

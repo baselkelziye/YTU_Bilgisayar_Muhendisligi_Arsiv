@@ -1,4 +1,4 @@
-# Algoritma Analizi
+# Veri İletişimi
 
 ## Ders Bilgileri
 

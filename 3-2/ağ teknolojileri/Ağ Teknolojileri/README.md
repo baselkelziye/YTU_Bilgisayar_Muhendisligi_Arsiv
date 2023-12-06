@@ -1,9 +1,9 @@
-# Algoritma Analizi
+# Ağ Teknolojileri
 
 ## Ders Bilgileri
 
 - **Yıl:** 3
-- **Dönem:** Güz
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆

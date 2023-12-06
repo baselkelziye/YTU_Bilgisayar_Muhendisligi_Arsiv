@@ -1,9 +1,9 @@
-# Algoritma Analizi
+# Nesneye Yönelik Programlama
 
 ## Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
+- **Yıl:** 2
+- **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆

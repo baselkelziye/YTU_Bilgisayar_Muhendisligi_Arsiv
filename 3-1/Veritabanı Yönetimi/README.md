@@ -1,4 +1,4 @@
-# Algoritma Analizi
+# Veritabanı Yönetimi
 
 ## Ders Bilgileri
 
