@@ -1,0 +1,21 @@
+**Edit test.c
+**to compile and to see some files for compilation phases of program
+-----------------------------------------------
+gcc test.c -save-temps -o my_test
+> gcc : our c compiler program
+> test.c : source code to compile and than to execute
+> -save-temps : flag used to save temporary files of compilation
+> -o mytest: flag is used to rename the executable file
+-->Note: We have to add gcc into environmental variables before compilation
+------------------------------------------------
+Phases:
+
+** Preprocessing(test.c -> test.i): subsitution is performed for macros, includes, etc.; and comments are removed.
+** Compilation (test.i -> test.s) : conversion from source code into assembly code, is performed. In this file, we can see assembly equivalents of some source codes 
+such as + -> ADD, = -> MOV. We, however, might still observe some C codes like printf, as they are already compiled codes to link into executable program. 
+** Translation (test.s -> test.o) : translation from assembly code into machine code. Here, compiled codes like printf are not included yet. 
+** Linking: ([test.o +..+ *.o files]->my_test.exe) : Combining .o files into executable file, my_test.c. The size is dramatically increased because other compiled codes are linked.
+
+Sources: 
+https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/
+https://medium.com/@msenell/derleyi·ci·-compiler-ve-yorumlayici-interpreter-üzeri·ne-bi·r-deneme-d8656619ef6
