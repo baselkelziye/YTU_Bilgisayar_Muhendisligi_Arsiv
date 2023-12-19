@@ -987,7 +987,7 @@ Kavramlar:
 - Vize
   - İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
   - Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
-  - 2. Vize her derste olmaz. 2. Vizesi olmayan dersin 2. Vize haftasında konusu (hoca aksini belirmedikçe) işlenir.
+  - İkinci Vize her derste olmaz. 2. Vizesi olmayan dersin 2. Vize haftasında konusu (hoca aksini belirmedikçe) işlenir.
   - Hocalar genelde önceki senelerdeki sorulara benzer/aynı sorular sorarlar.
 
 ## Yazarın Notları
