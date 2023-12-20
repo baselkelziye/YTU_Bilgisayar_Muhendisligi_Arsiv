@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Gerekli bir ders ama aşırı ezber.
+  - kulhane: Gerekli bir ders ama aşırı ezber.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★☆☆☆

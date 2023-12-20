@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Sistem analizi gibi bir ders. Ezber.
+  - kulhane: Sistem analizi gibi bir ders. Ezber.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
   - **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆

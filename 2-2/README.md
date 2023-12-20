@@ -15,7 +15,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+  - kulhane: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -32,7 +32,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+  - kulhane: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -54,7 +54,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+  - kulhane: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -75,7 +75,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+  - kulhane: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -98,7 +98,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+  - kulhane: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
@@ -119,7 +119,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+  - kulhane: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
 - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 

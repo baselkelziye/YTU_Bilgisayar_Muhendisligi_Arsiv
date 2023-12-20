@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Güzel bir ders, geçmesi kolay.
+  - kulhane: Güzel bir ders, geçmesi kolay.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★★☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆
