@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+  - kulhane: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★★☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆

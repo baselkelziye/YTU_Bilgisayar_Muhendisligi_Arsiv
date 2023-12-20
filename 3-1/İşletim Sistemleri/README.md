@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+  - kulhane: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

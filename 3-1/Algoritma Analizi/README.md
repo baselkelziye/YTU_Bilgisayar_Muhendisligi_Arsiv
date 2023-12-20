@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+  - kulhane: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

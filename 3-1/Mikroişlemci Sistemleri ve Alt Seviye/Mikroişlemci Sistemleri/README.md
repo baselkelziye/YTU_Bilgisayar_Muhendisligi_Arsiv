@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+  - kulhane: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★☆☆☆☆

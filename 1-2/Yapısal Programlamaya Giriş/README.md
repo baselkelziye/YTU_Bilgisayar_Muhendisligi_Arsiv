@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+  - kulhane: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

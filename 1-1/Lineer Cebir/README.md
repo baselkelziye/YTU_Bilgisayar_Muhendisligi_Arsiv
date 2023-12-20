@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+  - kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
