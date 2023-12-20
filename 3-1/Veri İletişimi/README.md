@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+  - kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

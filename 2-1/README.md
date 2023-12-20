@@ -15,7 +15,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
+  - kulhane: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -36,7 +36,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+  - kulhane: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
 - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -57,7 +57,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - kulhane: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -78,7 +78,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+  - kulhane: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -99,7 +99,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+  - kulhane: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - **Kolaylık Puanı:** ★★★★★★★★★☆
 - **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -120,7 +120,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Güzel bir ders, geçmesi kolay.
+  - kulhane: Güzel bir ders, geçmesi kolay.
 - **Kolaylık Puanı:** ★★★★★★★★★☆
 - **Gereklilik Puanı:** ★★★★★★★★★☆
 

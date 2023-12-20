@@ -6,7 +6,7 @@
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
 - **Öğrenci Görüşleri:**
-  - X: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+  - kulhane: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆
   - **Gereklilik Puanı:** ★★★★★★☆☆☆☆
