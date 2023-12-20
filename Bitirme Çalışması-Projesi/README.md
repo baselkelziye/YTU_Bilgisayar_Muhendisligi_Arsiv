@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+  - kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+  - kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
