@@ -1,6 +1,6 @@
 # Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Ders Notları
 
-Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla ya da derslerle alakalı hakaret içermeyen yorumlarını bizimle anonim olarak paylaşabilirsin.
+Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link](https://forms.gle/fL4Q131wWjKc7sPz7) [yildiz için bu link](https://forms.gle/s6ZMrQG4q578pEzm7) ya da derslerle alakalı hakaret içermeyen yorumlarını bizimle anonim olarak paylaşabilirsin.
 
 ## İçindekiler
 
