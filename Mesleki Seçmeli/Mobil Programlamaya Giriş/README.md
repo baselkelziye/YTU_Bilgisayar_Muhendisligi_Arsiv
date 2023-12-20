@@ -6,7 +6,7 @@
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
 - **Öğrenci Görüşleri:**
-  - X: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+  - kulhane: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★☆

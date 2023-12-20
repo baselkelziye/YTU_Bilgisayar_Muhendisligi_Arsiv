@@ -30,7 +30,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
+  - kulhane: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
 - **Kolaylık Puanı:** ★★★★★★★★★★
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -47,7 +47,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+  - kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
 - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 

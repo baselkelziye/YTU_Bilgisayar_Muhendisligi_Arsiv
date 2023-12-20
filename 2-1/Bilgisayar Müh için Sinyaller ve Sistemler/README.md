@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+  - kulhane: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆

@@ -6,7 +6,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - kulhane: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

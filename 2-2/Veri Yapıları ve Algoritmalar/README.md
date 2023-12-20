@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+  - kulhane: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

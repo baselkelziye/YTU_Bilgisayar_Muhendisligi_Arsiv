@@ -6,7 +6,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+  - kulhane: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★★★☆☆
   - **Gereklilik Puanı:** ★★★★★★★★★★

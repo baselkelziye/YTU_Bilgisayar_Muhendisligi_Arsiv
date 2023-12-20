@@ -15,7 +15,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+  - kulhane: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -36,7 +36,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+  - kulhane: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -57,7 +57,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+  - kulhane: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
 - **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
@@ -78,7 +78,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok alakası yok. Kalmamak lazım.
+  - kulhane: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -95,7 +95,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+  - kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -112,7 +112,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -129,7 +129,7 @@
 - **Dönem:** Bahar
 - **Ders Tipi:** Seçmeli
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 

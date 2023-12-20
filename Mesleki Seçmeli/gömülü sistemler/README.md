@@ -6,7 +6,7 @@
 - **Dönem:** 
 - **Ders Tipi:** Mesleki Seçmeli
 - **Öğrenci Görüşleri:**
-  - X: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+  - kulhane: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
 - **Yıldız Sayıları:**
   - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - **Gereklilik Puanı:** ★★★★★★★★☆☆

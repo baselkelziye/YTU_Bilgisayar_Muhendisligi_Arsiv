@@ -15,7 +15,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+  - kulhane: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -37,7 +37,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok alakası yok. Kalmamak lazım.
+  - kulhane: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -54,7 +54,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -71,7 +71,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+  - kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
@@ -88,7 +88,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok alakası yok. Kalmamak lazım.
+  - kulhane: Bölümle çok alakası yok. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -105,7 +105,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Seçmeli
 - **Öğrenci Görüşleri:**
-  - X: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - **Kolaylık Puanı:** ★★★★★★★★☆☆
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -122,7 +122,7 @@
 - **Dönem:** Güz
 - **Ders Tipi:** Zorunlu
 - **Öğrenci Görüşleri:**
-  - X: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+  - kulhane: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
 - **Kolaylık Puanı:** ★★★★★★★★★★
 - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
