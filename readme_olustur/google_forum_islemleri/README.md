@@ -8,7 +8,7 @@ Bu proje, Yıldız Teknik Üniversitesi'ndeki hocaları puanlamak ve bu puanlar�
 
 - **Amaç:** Bu script, `hocalar.json` dosyasında bulunan hoca adlarını çeker ve bu adları Google Formlar'da kullanılmak üzere bir CSV dosyasına kaydeder.
 - **Nasıl Çalışır:** `hocalar.json` dosyasını okur, hocaların adlarını alır ve bu adları `hocalar.csv` adlı bir dosyaya kaydeder.
-- **Kullanımı:** Scripti çalıştırmak için, `hocalar.json` dosyasının aynı dizinde bulunması gerekmektedir.
+- **Kullanımı:** Scripti çalıştırmak için, `hocalar.json` dosyasının alt  dizinde bulunması gerekmektedir.
 
 ### yildizlari_guncelle.py
 
