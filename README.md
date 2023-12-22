@@ -2,6 +2,10 @@
 
 Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link](https://forms.gle/fL4Q131wWjKc7sPz7) [yildiz için bu link](https://forms.gle/s6ZMrQG4q578pEzm7) ya da derslerle alakalı [yorum için bu link](https://forms.gle/SzNmK1w4rVaKE4ee8) [yildiz için bu link](https://forms.gle/3njZjmhm215YCAxe6) hakaret içermeyen yorumlarını ve puanlamalarını bizimle anonim olarak paylaşabilirsin.
 
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Arşiv+Görüntülenme+Sayısı" width="700" height="100"/>
+</p>
+
 ## 📌 İçindekiler
 
 - 🔗 [Repo Kullanımı](#-repo-kullanımı)
