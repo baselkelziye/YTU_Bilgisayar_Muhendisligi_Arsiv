@@ -29,7 +29,7 @@
 
 - Vize soruları bazen buradan birebir alınıyor: https://www.mcqscenter.com/computer-science/operating-system
 - Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Algoritma Analizi
 
@@ -46,7 +46,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mikroişlemci Sistemleri
 
@@ -70,7 +70,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Veritabanı Yönetimi
 
@@ -87,7 +87,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Veri İletişimi
 
@@ -104,4 +104,4 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
