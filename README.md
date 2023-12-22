@@ -12,366 +12,6 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-## 🎓 Hocalar
-📚 Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır.
-
-
-
-
-
-
-### 👩‍🏫 Prof. Dr. Banu Diri 
-- 🚪 **Ofis:** EEF-D222
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
-  - 👤 astro: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Sayısal Analiz
-  - 📖 Ayrık Matematik
-  - 📖 Doğal Dil İşlemeye Giriş
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-  - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👩‍🏫 Prof. Dr. M. Elif Karslıgil 
-- 🚪 **Ofis:** EEF-D217
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sert bir mizacı var. Sınavlarda zor sorar.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Algoritma Analizi
-  - 📖 Görüntü İşleme
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Prof. Dr. M. Fatih Amasyalı 
-- 🚪 **Ofis:** EEF-D213
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
-  - 👤 astro: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Yapısal Programlamaya Giriş
-  - 📖 Yapay Zeka
-  - 📖 Uzman Sistemlere Giriş
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👩‍🏫 Prof. Dr. Oya Kalıpsız 
-- 🚪 **Ofis:** EEF-D131
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sakin bir hoca, iyi niyetli, yoklama alır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Sistem Analizi ve Tasarımı
-  - 📖 Yazılım Mühendisliği
-  - 📖 Yazılım Kalite ve Test Süreci
-  - 📖 Yönetim Bilgi Sistemleri
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👩‍🏫 Prof. Dr. Songül Varlı 
-- 🚪 **Ofis:** EEF-D221
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👩‍🏫 Prof. Dr. Sırma Yavuz 
-- 🚪 **Ofis:** EEF-D130
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Doç. Dr. Ali Can Karaca 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
-  - 📖 Bilgisayar Donanımı
-  - 📖 Gömülü Sistemler
-  - 📖 Sayısal İşaret İşleme
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Doç. Dr. Gökhan Bilgin 
-- 🚪 **Ofis:** EEF-D218
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
-  - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Lojik Devreler
-  - 📖 Elektronik Devreler
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-  - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (13 oy)
-- 🚪 **Ofis:** EEF-DZ35
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Bilgisayar Bilimlerine Giriş
-  - 📖 Algoritma Analizi
-  - 📖 Mobil Programlamaya Giriş
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş 
-- 🚪 **Ofis:** EEF-DZ31
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Harf notunu güzel verir.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Nesneye Yönelik Programlama
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Ahmet Elbir 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
-  - 📖 Sayısal İşaret İşleme
-  - 📖 Sayısal Analiz
-  - 📖 Ayrık Matematik
-  - 📖 İşletim Sistemleri
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Erkan Uslu 
-- 🚪 **Ofis:** EEF - D034
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
-  - 👤 Nakliyeci Sefer: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
-  - 👤 astro: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Bilgisayar Donanımı
-  - 📖 Mikroişlemci Sistemleri
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Furkan Çakmak 
-- 🚪 **Ofis:** EEF-D122
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Nesneye Yönelik Programlama
-  - 📖 Robot Teknolojisine Giriş
-  - 📖 Alt Seviye Programlama
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Göksel Biricik 
-- 🚪 **Ofis:** EEF-D127
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
-  - 👤 Nakliyeci Sefer: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
-  - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Mesleki Hukuk ve Etik
-  - 📖 Veri Yapıları ve Algoritmalar
-  - 📖 Bilgisayar Bilimlerine Giriş
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👩‍🏫 Dr. H.İrem Türkmen 
-- 🚪 **Ofis:** EEF-DZ32
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Hamza Osman İlhan 
-- 🚪 **Ofis:** EEF-D124
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Lojik Devreler
-  - 📖 Elektronik Devreler
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-  - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. M. Utku Kalay 
-- 🚪 **Ofis:** EEF-D214
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Veritabanı Yönetimi
-  - 📖 Veritabanı Sistemlerinin Gerçekleştirilmesi
-  - 📖 Veri Tabanı Sistemlerinde Güncel Konular
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Oğuz Altun 
-- 🚪 **Ofis:** EEF-DZ36
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 İstatistik ve Olasılık Hesapları
-  - 📖 Hesaplama Kuramı
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-### 👨‍🏫 Dr. Yunus Emre Selçuk 
-- 🚪 **Ofis:** EEF-D129
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İşini sever. Sakindir.
-  - 👤 astro: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Nesneye Yönelik Programlama
-  - 📖 Yapısal Programlama
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
 ## 📚 Dersler 
 📄 Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.
 
@@ -1103,6 +743,367 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#prof-dr-oya-kalıpsız)
+
+
+
+## 🎓 Hocalar
+📚 Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır.
+
+
+
+
+
+
+### 👩‍🏫 Prof. Dr. Banu Diri 
+- 🚪 **Ofis:** EEF-D222
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
+  - 👤 astro: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Sayısal Analiz
+  - 📖 Ayrık Matematik
+  - 📖 Doğal Dil İşlemeye Giriş
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+  - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Prof. Dr. M. Elif Karslıgil 
+- 🚪 **Ofis:** EEF-D217
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Sert bir mizacı var. Sınavlarda zor sorar.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Algoritma Analizi
+  - 📖 Görüntü İşleme
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Prof. Dr. M. Fatih Amasyalı 
+- 🚪 **Ofis:** EEF-D213
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+  - 👤 astro: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Yapısal Programlamaya Giriş
+  - 📖 Yapay Zeka
+  - 📖 Uzman Sistemlere Giriş
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Prof. Dr. Oya Kalıpsız 
+- 🚪 **Ofis:** EEF-D131
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Sakin bir hoca, iyi niyetli, yoklama alır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Sistem Analizi ve Tasarımı
+  - 📖 Yazılım Mühendisliği
+  - 📖 Yazılım Kalite ve Test Süreci
+  - 📖 Yönetim Bilgi Sistemleri
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Prof. Dr. Songül Varlı 
+- 🚪 **Ofis:** EEF-D221
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Prof. Dr. Sırma Yavuz 
+- 🚪 **Ofis:** EEF-D130
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Doç. Dr. Ali Can Karaca 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - 📖 Bilgisayar Donanımı
+  - 📖 Gömülü Sistemler
+  - 📖 Sayısal İşaret İşleme
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Doç. Dr. Gökhan Bilgin 
+- 🚪 **Ofis:** EEF-D218
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+  - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Lojik Devreler
+  - 📖 Elektronik Devreler
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (13 oy)
+- 🚪 **Ofis:** EEF-DZ35
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+  - 👤 astro: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Bilgisayar Bilimlerine Giriş
+  - 📖 Algoritma Analizi
+  - 📖 Mobil Programlamaya Giriş
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş 
+- 🚪 **Ofis:** EEF-DZ31
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Harf notunu güzel verir.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Nesneye Yönelik Programlama
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Ahmet Elbir 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - 📖 Sayısal İşaret İşleme
+  - 📖 Sayısal Analiz
+  - 📖 Ayrık Matematik
+  - 📖 İşletim Sistemleri
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Erkan Uslu 
+- 🚪 **Ofis:** EEF - D034
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
+  - 👤 Nakliyeci Sefer: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
+  - 👤 astro: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Bilgisayar Donanımı
+  - 📖 Mikroişlemci Sistemleri
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Furkan Çakmak 
+- 🚪 **Ofis:** EEF-D122
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Nesneye Yönelik Programlama
+  - 📖 Robot Teknolojisine Giriş
+  - 📖 Alt Seviye Programlama
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Göksel Biricik 
+- 🚪 **Ofis:** EEF-D127
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
+  - 👤 Nakliyeci Sefer: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
+  - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Mesleki Hukuk ve Etik
+  - 📖 Veri Yapıları ve Algoritmalar
+  - 📖 Bilgisayar Bilimlerine Giriş
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Dr. H.İrem Türkmen 
+- 🚪 **Ofis:** EEF-DZ32
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Hamza Osman İlhan 
+- 🚪 **Ofis:** EEF-D124
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Lojik Devreler
+  - 📖 Elektronik Devreler
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. M. Utku Kalay 
+- 🚪 **Ofis:** EEF-D214
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Veritabanı Yönetimi
+  - 📖 Veritabanı Sistemlerinin Gerçekleştirilmesi
+  - 📖 Veri Tabanı Sistemlerinde Güncel Konular
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Oğuz Altun 
+- 🚪 **Ofis:** EEF-DZ36
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 İstatistik ve Olasılık Hesapları
+  - 📖 Hesaplama Kuramı
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Dr. Yunus Emre Selçuk 
+- 🚪 **Ofis:** EEF-D129
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: İşini sever. Sakindir.
+  - 👤 astro: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Nesneye Yönelik Programlama
+  - 📖 Yapısal Programlama
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
