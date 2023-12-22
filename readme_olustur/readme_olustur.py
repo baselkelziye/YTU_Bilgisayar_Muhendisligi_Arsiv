@@ -6,6 +6,8 @@ CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUF
 ANA_README_YOLU = "../README.md"
 YILDIZ_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
 HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
+DERS_OYLAMA_LINKI = "https://forms.gle/3njZjmhm215YCAxe6"
+DERS_YORUMLAMA_LINKI = "https://forms.gle/SzNmK1w4rVaKE4ee8"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
@@ -83,24 +85,37 @@ def dersleri_readme_ye_ekle(dersler):
         if donem_key not in gruplanmis_dersler:
             gruplanmis_dersler[donem_key] = []
         gruplanmis_dersler[donem_key].append(ders)
-
+    en_populer_ders_oy_sayisi = 0
+    en_populer_ders_adi = ""
+    if 'en_populer_ders' in dersler and 'ders_adi' in dersler['en_populer_ders']:
+        en_populer_ders_adi = dersler['en_populer_ders']['ders_adi']
+        if 'oy_sayisi' in dersler['en_populer_ders']:
+            en_populer_ders_oy_sayisi = dersler['en_populer_ders']['oy_sayisi']
+    
     with open(ANA_README_YOLU, 'a') as f:
-        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']}\n")
+        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']} \n")
         f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
 
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
             f.write(f"\n### 🗓 {donem}\n")
             for ders in gruplanmis_dersler[donem]:
                 f.write("\n\n")
-                f.write(f"- 📘 **{ders['ad']}**\n")
+                populer_isaret = "👑" if ders['ad'] == en_populer_ders_adi else ""
+                populer_bilgi = f" En popüler ders ({en_populer_ders_oy_sayisi} oy)" if ders['ad'] == en_populer_ders_adi else ""
+                f.write(f"- 📘 **{ders['ad']}** {populer_isaret}{populer_bilgi}\n")
                 f.write(f"  - 🏷️ **Ders Tipi:** {ders['tip']}\n")
                 if ders['ogrenci_gorusleri']:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders['ogrenci_gorusleri']:
                         f.write(f"    - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
+                    f.write(f"  - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+
                 f.write("  - ⭐ **Yıldız Sayıları:**\n")
                 f.write(f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                 f.write(f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
+                if "oy_sayisi" in ders:
+                    f.write(f"  - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+
                 if "dersi_veren_hocalar" in ders:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
