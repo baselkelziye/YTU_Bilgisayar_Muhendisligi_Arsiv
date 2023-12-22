@@ -31,8 +31,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [G1](#dr-göksel-biricik)
-    - [MAG](#doç-dr-m-amaç-güvensan)
+    - [G1](#-dr-göksel-biricik)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-13-oy)
 
 
 - 📘 **Fizik 1** 
@@ -113,8 +113,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MFA](#prof-dr-m-fatih-amasyalı)
-    - [AEL](#dr-ahmet-elbir)
+    - [MFA](#-prof-dr-m-fatih-amasyalı)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Sayısal Analiz** 
@@ -127,8 +127,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#prof-dr-banu-diri)
-    - [AEL](#dr-ahmet-elbir)
+    - [BD](#-prof-dr-banu-diri)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Devre Teorisi** 
@@ -199,8 +199,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [OA](#dr-oğuz-altun)
-    - [SY](#prof-dr-sırma-yavuz)
+    - [OA](#-dr-oğuz-altun)
+    - [SY](#-prof-dr-sırma-yavuz)
 
 
 - 📘 **Alt Seviye Programlama** 
@@ -213,8 +213,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [EU](#dr-erkan-uslu)
-    - [FÇ](#dr-furkan-çakmak)
+    - [EU](#-dr-erkan-uslu)
+    - [FÇ](#-dr-furkan-çakmak)
 
 
 - 📘 **Yapısal Programlama** 
@@ -227,8 +227,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [YES](#dr-yunus-emre-selçuk)
-    - [AEL](#dr-ahmet-elbir)
+    - [YES](#-dr-yunus-emre-selçuk)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Bilgisayar Mühendisleri için Sinyaller ve Sistemler** 
@@ -241,8 +241,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [ACK](#doç-dr-ali-can-karaca)
-    - [AEL](#dr-ahmet-elbir)
+    - [ACK](#-doç-dr-ali-can-karaca)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Ayrık Matematik** 
@@ -255,8 +255,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#prof-dr-banu-diri)
-    - [AEL](#dr-ahmet-elbir)
+    - [BD](#-prof-dr-banu-diri)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Lojik Devreler** 
@@ -560,7 +560,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#doç-dr-m-amaç-güvensan)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-13-oy)
 
 
 - 📘 **Sistem Programlama** 
@@ -589,8 +589,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [ACK](#doç-dr-ali-can-karaca)
-    - [AEL](#dr-ahmet-elbir)
+    - [ACK](#-doç-dr-ali-can-karaca)
+    - [AEL](#-dr-ahmet-elbir)
 
 
 - 📘 **Bilgisayar Grafiğine Giriş** 
@@ -627,7 +627,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MFA](#prof-dr-m-fatih-amasyalı)
+    - [MFA](#-prof-dr-m-fatih-amasyalı)
 
 
 - 📘 **Yapay Sinir Ağlarına Giriş** 
@@ -656,7 +656,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#prof-dr-banu-diri)
+    - [BD](#-prof-dr-banu-diri)
 
 
 - 📘 **Uzman Sistemlere Giriş** 
@@ -677,7 +677,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MUK](#dr-m-utku-kalay)
+    - [MUK](#-dr-m-utku-kalay)
 
 
 - 📘 **Veritabanı Sistemlerinin Gerçekleştirilmesi** 
@@ -687,7 +687,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MUK](#dr-m-utku-kalay)
+    - [MUK](#-dr-m-utku-kalay)
 
 
 - 📘 **Yönetim Bilgi Sistemleri** 
@@ -700,7 +700,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [OK](#prof-dr-oya-kalıpsız)
+    - [OK](#-prof-dr-oya-kalıpsız)
 
 
 - 📘 **Dağıtık Sistemler** 
@@ -732,7 +732,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [FÇ](#dr-furkan-çakmak)
+    - [FÇ](#-dr-furkan-çakmak)
 
 
 - 📘 **Yazılım Kalite ve Test Süreci** 
@@ -742,7 +742,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [OK](#prof-dr-oya-kalıpsız)
+    - [OK](#-prof-dr-oya-kalıpsız)
 
 
 
