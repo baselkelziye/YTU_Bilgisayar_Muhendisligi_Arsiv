@@ -1,17 +1,17 @@
-# Veri İletişimi
+# 📚 Veri İletişimi
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 3
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-  - **Gereklilik Puanı:** ★★★★★★★★★☆
+- 📅 **Yıl:** 3
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh

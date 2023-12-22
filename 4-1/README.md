@@ -1,23 +1,23 @@
-# 4. Sınıf Güz
+# 📅 4. Sınıf Güz
 
-## Genel Tavsiyeler
+## 📝 Genel Tavsiyeler
 
-- Düzenli ders çalışmayı ihmal etmeyin
-- Lab uygulamalarına katılın
-## Dönemin Zorunlu Dersleri
-
-
-### Türkçe 1
-
-#### Ders Bilgileri
-
-- **Yıl:** 4
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 💡 Düzenli ders çalışmayı ihmal etmeyin
+- 💡 Lab uygulamalarına katılın
+## 📚 Dönemin Zorunlu Dersleri
 
 
-#### Faydalı Olabilecek Kaynaklar
+### 📘 Türkçe 1
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh

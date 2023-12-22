@@ -4,6 +4,7 @@ import difflib
 
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 ANA_README_YOLU = "../README.md"
+YILDIZ_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
@@ -24,29 +25,42 @@ def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
 def hocalari_readme_ye_ekle(bilgiler):
     bilgiler['hocalar'] = [hoca for hoca in bilgiler['hocalar'] if hoca['ad'] != '']
     with open(ANA_README_YOLU, 'a') as f:
-        f.write(f"\n\n\n## {bilgiler['bolum_adi']}\n")
-        f.write(f"{bilgiler['bolum_aciklamasi']}\n\n\n\n")
+        f.write(f"\n\n\n## 🎓 {bilgiler['bolum_adi']}\n")
+        f.write(f"📚 {bilgiler['bolum_aciklamasi']}\n\n\n\n")
+        en_populer_hoca_oy_sayisi = 0
+        en_populer_hoca_adi = ""
+        if 'en_populer_hoca' in bilgiler and 'hoca_adi' in bilgiler['en_populer_hoca']:
+            en_populer_hoca_adi = bilgiler['en_populer_hoca']['hoca_adi']
+            if 'oy_sayisi' in bilgiler['en_populer_hoca']:
+                en_populer_hoca_oy_sayisi = bilgiler['en_populer_hoca']['oy_sayisi']
+        
         for hoca in sorted(bilgiler['hocalar'], key=hoca_siralama_anahtari):
-            f.write(f"\n\n\n### {hoca['ad']}\n")
-            f.write(f"- **Ofis:** {hoca['ofis']}\n")
-            f.write(f"- **Araştırma Sayfası:** [{hoca['link']}]({hoca['link']})\n")
-            f.write(f"- **Öğrenci Görüşleri:**\n")
+            populer_isaret = "👑" if hoca['ad'] == en_populer_hoca_adi else ""
+            hoca_emoji = "👨‍🏫" if hoca['erkek_mi'] else "👩‍🏫"
+            populer_bilgi = f" En popüler hoca ({en_populer_hoca_oy_sayisi} oy)" if hoca['ad'] == en_populer_hoca_adi else ""
+            f.write(f"\n\n\n### {hoca_emoji} {hoca['ad']} {populer_isaret}{populer_bilgi}\n")
+            f.write(f"- 🚪 **Ofis:** {hoca['ofis']}\n")
+            f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca['link']}]({hoca['link']})\n")
+            f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
+
             for gorus in hoca['ogrenci_gorusleri']:
                 f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
-            f.write("- **Verdiği Dersler:**\n")
+            f.write("- 📚 **Verdiği Dersler:**\n")
             for ders in hoca["dersler"]:
                 f.write(f"  - {ders}\n")
-            f.write("- **Yıldız Sayıları:**\n")
+            f.write(f"- ⭐ **Yıldız Sayıları:**\n")
             if hoca['anlatim_puani'] != 0:
-                f.write(f"  - Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
-                f.write(f"  - Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca['kolaylik_puani'])}\n")
-                f.write(f"  - Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca['ogretme_puani'])}\n")
-                f.write(f"  - Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca['eglence_puani'])}\n")
+                f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
+                f.write(f"  - 🛣️ Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca['kolaylik_puani'])}\n")
+                f.write(f"  - 🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca['ogretme_puani'])}\n")
+                f.write(f"  - 🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca['eglence_puani'])}\n")
             else:
-                f.write("  - Dersi Zevkli Anlatır Mı:\tbilinmiyor\n")
-                f.write("  - Dersi Kolay Geçer Miyim:\tbilinmiyor\n")
-                f.write("  - Dersi Öğrenir Miyim:\tbilinmiyor\n")
-                f.write("  - Derste Eğlenir Miyim:\tbilinmiyor\n")
+                f.write("  - 🎭 Dersi Zevkli Anlatır Mı:\tbilinmiyor\n")
+                f.write("  - 🛣️ Dersi Kolay Geçer Miyim:\tbilinmiyor\n")
+                f.write("  - 🧠 Dersi Öğrenir Miyim:\tbilinmiyor\n")
+                f.write("  - 🎉 Derste Eğlenir Miyim:\tbilinmiyor\n")
+            if "oy_sayisi" in hoca:
+                f.write(f"  - ℹ️ Yıldızlar {hoca['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) oylamaya katılabilirsiniz.\n")
 
 
 def donem_siralamasi(donem_key):
@@ -68,61 +82,65 @@ def dersleri_readme_ye_ekle(dersler):
         gruplanmis_dersler[donem_key].append(ders)
 
     with open(ANA_README_YOLU, 'a') as f:
-        f.write(f"\n\n\n## {dersler['bolum_adi']}\n")
-        f.write(f"{dersler['bolum_aciklamasi']}\n\n\n\n")
+        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']}\n")
+        f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
 
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
-            f.write(f"\n### {donem}\n")
+            f.write(f"\n### 🗓 {donem}\n")
             for ders in gruplanmis_dersler[donem]:
                 f.write("\n\n")
-                f.write(f"- **{ders['ad']}**\n")
-                f.write(f"  - **Ders Tipi:** {ders['tip']}\n")
+                f.write(f"- 📘 **{ders['ad']}**\n")
+                f.write(f"  - 🏷️ **Ders Tipi:** {ders['tip']}\n")
                 if ders['ogrenci_gorusleri']:
-                    f.write(f"  - **Öğrenci Görüşleri:**\n")
+                    f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders['ogrenci_gorusleri']:
-                        f.write(f"    - {gorus['kisi']}: {gorus['yorum']}\n")
-                f.write("  - **Yıldız Sayıları:**\n")
-                f.write(f"    - Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-                f.write(f"    - Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
+                        f.write(f"    - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
+                f.write("  - ⭐ **Yıldız Sayıları:**\n")
+                f.write(f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+                f.write(f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
                 if "dersi_veren_hocalar" in ders:
-                    f.write("  - **Dersi Yürüten Akademisyenler:**\n")
+                    f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
                         f.write(f"    - {hoca}\n")
+
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
     with open(ANA_README_YOLU, 'w') as f:
-        f.write(f"# {giris_bilgileri['baslik']}\n\n")
+        f.write(f"# 📖 {giris_bilgileri['baslik']}\n\n")  # Kitap emoji başlığı temsil eder
         f.write(f"{giris_bilgileri['aciklama']}\n\n")
-        f.write("## İçindekiler\n\n")
+        f.write("## 📌 İçindekiler\n\n")  # Sabitleme pimi içindekileri temsil eder
         for item in giris_bilgileri['icindekiler']:
-            f.write(f"- {item}\n")
+            f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
+
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, 'a') as f:
-        f.write(f"\n\n\n## {repo_kullanimi_bilgileri['baslik']}\n\n")
+        f.write(f"\n\n\n## 🛠 {repo_kullanimi_bilgileri['baslik']}\n\n")  # Araç kutusu emojisi
         f.write(f"{repo_kullanimi_bilgileri['aciklama']}\n")
         for aciklama in repo_kullanimi_bilgileri['aciklamalar']:
-            f.write(f"- {aciklama}\n")
-        f.write(f"\n\n{repo_kullanimi_bilgileri['talimat']}\n")
+            f.write(f"- 📋 {aciklama}\n")  # Not defteri emojisi
+        f.write(f"\n\n📝 {repo_kullanimi_bilgileri['talimat']}\n")  # Yazma emojisi
         for talimat in repo_kullanimi_bilgileri['talimatlar']:
-            f.write(f"- {talimat}\n")
-        f.write(f"\n\n{repo_kullanimi_bilgileri['kavram']}\n")
+            f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
+        f.write(f"\n\n🔍 {repo_kullanimi_bilgileri['kavram']}\n")  # Büyüteç emojisi
         for kavram in sorted(repo_kullanimi_bilgileri['kavramlar'], key=lambda x: x['kavram'].lower()):
-            f.write(f"- {kavram['kavram']}\n")
+            f.write(f"- 💡 {kavram['kavram']}\n")  # Ampul emojisi, fikir veya kavramı temsil eder
             for aciklama in kavram['aciklamalar']:
-                f.write(f"  - {aciklama}\n")
+                f.write(f"  - 📘 {aciklama}\n")  # Kitap emojisi, açıklamalar için
+
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open(ANA_README_YOLU, 'a') as f:
-        f.write(f"\n## {yazar_notlari['baslik']}\n\n")
+        f.write(f"\n## ✍️ {yazar_notlari['baslik']}\n\n")  # Kalem emoji, yazarı temsil eder
         for aciklama in yazar_notlari['aciklamalar']:
-            f.write(f"- {aciklama}\n")
+            f.write(f"- 📝 {aciklama}\n")  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
+
 def readme_katkida_bulunanlar_ekle(veri):
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
-        f.write(f"\n\n## {veri['bolum_adi']}\n\n")
+        f.write(f"\n\n## 🤝 {veri['bolum_adi']}\n\n")  # El sıkışma emoji, işbirliğini ve katkıyı temsil eder
         f.write(f"{veri['bolum_aciklamasi']}\n\n")
         for katkida_bulunan in veri['katkida_bulunanlar']:
-            f.write(f"- {katkida_bulunan['ad']}\n  - Github Adresi: {katkida_bulunan['github_link']}\n")
+            f.write(f"- 👤 {katkida_bulunan['ad']}\n  - 🔗 Github Adresi: {katkida_bulunan['github_link']}\n")  # Kişi ve link emojisi
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
@@ -171,38 +189,39 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
 def ders_klasorune_readme_olustur(ders, dosya_yolu):
     with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
         # Ders başlığı
-        f.write(f"# {ders['ad']}\n\n")
+        f.write(f"# 📚 {ders['ad']}\n\n")
 
         # Ders bilgileri
-        f.write("## Ders Bilgileri\n\n")
-        f.write(f"- **Yıl:** {ders['yil']}\n")
-        f.write(f"- **Dönem:** {ders['donem']}\n")
-        f.write(f"- **Ders Tipi:** {ders['tip']}\n")
+        f.write("## ℹ️ Ders Bilgileri\n\n")
+        f.write(f"- 📅 **Yıl:** {ders['yil']}\n")
+        f.write(f"- 📆 **Dönem:** {ders['donem']}\n")
+        f.write(f"- 🏫 **Ders Tipi:** {ders['tip']}\n")
         if ders['ogrenci_gorusleri']:
-            f.write(f"- **Öğrenci Görüşleri:**\n")
+            f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             for gorus in ders['ogrenci_gorusleri']:
-                f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
-        f.write("- **Yıldız Sayıları:**\n")
-        f.write(f"  - **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-        f.write(f"  - **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+                f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
+        f.write("- ⭐ **Yıldız Sayıları:**\n")
+        f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+        f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
 
         if "derse_dair_oneriler" in ders:
             # Derse dair öneriler
-            f.write("## Derse Dair Öneriler\n\n")
+            f.write("## 📝 Derse Dair Öneriler\n\n")
             for oneriler in ders['derse_dair_oneriler']:
-                f.write(f"### Öneri sahibi: {oneriler['oneri_sahibi']}\n")
+                f.write(f"### 💡 Öneri sahibi: {oneriler['oneri_sahibi']}\n")
                 for oneri in oneriler['oneriler']:
                     f.write(f"- {oneri}\n")
-        f.write("\n## Faydalı Olabilecek Kaynaklar\n\n")
-        f.write(f"- çıkmışlar: {CIKMISLAR_LINKI}\n")
+        f.write("\n## 📖 Faydalı Olabilecek Kaynaklar\n\n")
+        f.write(f"- 📄 çıkmışlar: {CIKMISLAR_LINKI}\n")
         if "faydali_olabilecek_kaynaklar" in ders:
             # Faydalı olabilecek kaynaklar
             for kaynak in ders['faydali_olabilecek_kaynaklar']:
                 f.write(f"- {kaynak}\n")
         if "dersi_veren_hocalar" in ders:
-            f.write("\n## Dersi Yürüten Akademisyenler:\n")
+            f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders["dersi_veren_hocalar"]:
                 f.write(f"- {hoca}\n")
+
             
 for ders in dersler['dersler']:
     ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("../",ders["ad"])
@@ -223,12 +242,13 @@ def donemlere_gore_readme_olustur(donemler):
     for donem in donemler['donemler']:
         dosya_yolu = os.path.join(donem['dosya_yolu'], 'README.md')
         with open(dosya_yolu, 'w', encoding='utf-8') as f:
-            f.write(f"# {donem['donem_adi']}\n\n")
-            f.write("## Genel Tavsiyeler\n\n")
+            f.write(f"# 📅 {donem['donem_adi']}\n\n")  # Takvim emoji, dönemi temsil eder
+            f.write("## 📝 Genel Tavsiyeler\n\n")  # Not defteri ve kalem emoji, tavsiyeleri temsil eder
             for tavsiye in donem['genel_tavsiyeler']:
-                f.write(f"- {tavsiye}\n")
+                f.write(f"- 💡 {tavsiye}\n")  # Ampul emoji, fikir veya tavsiye temsil eder
             if donem["donem_adi"] != "Mesleki Seçmeli Dersler":
-                f.write("## Dönemin Zorunlu Dersleri\n\n")
+                f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")  # Kitap emoji, zorunlu dersleri temsil eder
+
 def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:
@@ -236,33 +256,34 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
             if ders['yil'] == donem['yil'] and ders['donem'] == donem['donem']:
                 dosya_yolu = os.path.join(donem['dosya_yolu'], 'README.md')
                 with open(dosya_yolu, 'a', encoding='utf-8') as f:
-                    f.write(f"\n### {ders['ad']}\n\n")
-                    f.write("#### Ders Bilgileri\n\n")
-                    f.write(f"- **Yıl:** {ders['yil']}\n")
-                    f.write(f"- **Dönem:** {ders['donem']}\n")
-                    f.write(f"- **Ders Tipi:** {ders['tip']}\n")
+                    f.write(f"\n### 📘 {ders['ad']}\n\n")  # Kitap emoji, ders adını temsil eder
+                    f.write("#### 📄 Ders Bilgileri\n\n")  # Kağıt emoji, ders bilgilerini temsil eder
+                    f.write(f"- 📅 **Yıl:** {ders['yil']}\n")
+                    f.write(f"- 📆 **Dönem:** {ders['donem']}\n")
+                    f.write(f"- 🏫 **Ders Tipi:** {ders['tip']}\n")
                     if ders['ogrenci_gorusleri']:
-                        f.write(f"- **Öğrenci Görüşleri:**\n")
+                        f.write(f"- 💬 **Öğrenci Görüşleri:**\n")  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
                         for gorus in ders['ogrenci_gorusleri']:
-                            f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
-                    f.write(f"- **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-                    f.write(f"- **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+                            f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")  # Kişi emoji, öğrenciyi temsil eder
+                    f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+                    f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
 
                     if "derse_dair_oneriler" in ders:
-                        f.write("#### Derse Dair Öneriler\n\n")
+                        f.write("#### 💡 Derse Dair Öneriler\n\n")  # Ampul emoji, önerileri temsil eder
                         for oneriler in ders['derse_dair_oneriler']:
-                            f.write(f"##### Öneri sahibi: {oneriler['oneri_sahibi']}\n")
+                            f.write(f"##### 📌 Öneri sahibi: {oneriler['oneri_sahibi']}\n")  # Sabitleme pimi emoji, öneri sahibini temsil eder
                             for oneri in oneriler['oneriler']:
                                 f.write(f"- {oneri}\n")
-                    f.write("\n#### Faydalı Olabilecek Kaynaklar\n\n")
+                    f.write("\n#### 📚 Faydalı Olabilecek Kaynaklar\n\n")  # Kitap emoji, kaynakları temsil eder
                     if "faydali_olabilecek_kaynaklar" in ders:
                         for kaynak in ders['faydali_olabilecek_kaynaklar']:
                             f.write(f"- {kaynak}\n")
-                    f.write(f"- çıkmışlar: {CIKMISLAR_LINKI}\n")
+                    f.write(f"- 📄 çıkmışlar: {CIKMISLAR_LINKI}\n")
                     if "dersi_veren_hocalar" in ders:
-                        f.write("\n#### Dersi Yürüten Akademisyenler:\n")
+                        f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
                             f.write(f"- {hoca}\n")
+
 donemler = json_oku('donemler.json')
 donemlere_gore_readme_olustur(donemler)
 ders_bilgilerini_readme_ile_birlestir(dersler['dersler'], donemler['donemler'])
