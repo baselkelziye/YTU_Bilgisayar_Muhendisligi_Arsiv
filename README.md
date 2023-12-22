@@ -4,11 +4,12 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 ## 📌 İçindekiler
 
-- 🔗 [Hocalar](#hocalar)
-- 🔗 [Dersler](#dersler)
-- 🔗 [Repo Kullanımı](#repo-kullanımı)
-- 🔗 [Yazarın Notları](#yazarın-notları)
-- 🔗 [Katkıda Bulunanlar](#katkıda-bulunanlar)
+- 🔗 [Hocalar](#-hocalar)
+- 🔗 [Dersler](#-dersler)
+- 🔗 [Repo Kullanımı](#-repo-kullanımı)
+- 🔗 [Yazarın Notları](#%EF%B8%8F-yazarın-notları)
+- 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
+- 🔗 [Hoca Kısaltmaları](#-hoca-kısaltmaları)
 
 
 
@@ -1162,6 +1163,27 @@ Açıklamalar:
 - 📝 Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
 - 📝 Mesleki seçmeli derslerin çeşitliliği bolognada gördüğünüz kadar bol değil. Genelde hep aynı mesleki seçimlik dersler açılır. Her sene 1-2 tane farklı mesleki seçmeli açılır.
 - 📝 Dersi iyi anlatıp aynı zamanda geçmekte de sizi zorlamayacak hocalar BD, MFA
+## 📚 Hoca Kısaltmaları
+
+- ACK : Doç. Dr. Ali Can Karaca
+- AEL : Dr. Ahmet Elbir
+- BD : Prof. Dr. Banu Diri
+- EU : Dr. Erkan Uslu
+- FÇ : Dr. Furkan Çakmak
+- G1 : Dr. Göksel Biricik
+- GB : Doç. Dr. Gökhan Bilgin
+- HOİ : Dr. Hamza Osman İlhan
+- HT : Dr. H.İrem Türkmen
+- MAG : Doç. Dr. M. Amaç Güvensan
+- MEK : Prof. Dr. M. Elif Karslıgil
+- MFA : Prof. Dr. M. Fatih Amasyalı
+- MSA : Doç. Dr. Mehmet Sıddık Aktaş
+- MUK : Dr. M. Utku Kalay
+- OA : Dr. Oğuz Altun
+- OK : Prof. Dr. Oya Kalıpsız
+- SV : Prof. Dr. Songül Varlı
+- SY : Prof. Dr. Sırma Yavuz
+- YES : Dr. Yunus Emre Selçuk
 
 
 ## 🤝 Katkıda Bulunanlar
