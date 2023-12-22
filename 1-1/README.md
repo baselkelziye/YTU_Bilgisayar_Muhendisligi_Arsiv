@@ -1,132 +1,132 @@
-# 1. Sınıf Güz
+# 📅 1. Sınıf Güz
 
-## Genel Tavsiyeler
+## 📝 Genel Tavsiyeler
 
-- Düzenli ders çalışmayı ihmal etmeyin
-- Lab uygulamalarına katılın
-## Dönemin Zorunlu Dersleri
-
-
-### Bilgisayar Bilimlerine Giriş
-
-#### Ders Bilgileri
-
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
-- **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 💡 Düzenli ders çalışmayı ihmal etmeyin
+- 💡 Lab uygulamalarına katılın
+## 📚 Dönemin Zorunlu Dersleri
 
 
-#### Faydalı Olabilecek Kaynaklar
+### 📘 Bilgisayar Bilimlerine Giriş
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+#### 📄 Ders Bilgileri
 
-#### Dersi Yürüten Akademisyenler:
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ZCT
 - G1
 - MAG
 
-### Fizik 1
+### 📘 Fizik 1
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok alakası yok. Kalmamak lazım.
-- **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Matematik 1
-
-#### Ders Bilgileri
-
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Lineer Cebir
+### 📘 Matematik 1
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
-- **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### İş Sağlığı ve Güvenliği 1
-
-#### Ders Bilgileri
-
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok alakası yok. Kalmamak lazım.
-- **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### İleri İngilizce 1
+### 📘 Lineer Cebir
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- **Kolaylık Puanı:** ★★★★★★★★☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Atatürk İlkeleri ve İnkılâp Tarihi 1
-
-#### Ders Bilgileri
-
-- **Yıl:** 1
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
-- **Kolaylık Puanı:** ★★★★★★★★★★
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 İş Sağlığı ve Güvenliği 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 İleri İngilizce 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh

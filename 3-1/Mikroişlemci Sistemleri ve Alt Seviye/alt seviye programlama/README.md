@@ -1,21 +1,21 @@
-# Alt Seviye Programlama
+# 📚 Alt Seviye Programlama
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 2
-- **Dönem:** Güz
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 📅 **Yıl:** 2
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-## Dersi Yürüten Akademisyenler:
+## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
 - EU

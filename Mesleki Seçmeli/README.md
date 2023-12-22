@@ -1,401 +1,401 @@
-# Mesleki Seçmeli Dersler
+# 📅 Mesleki Seçmeli Dersler
 
-## Genel Tavsiyeler
+## 📝 Genel Tavsiyeler
 
-- Düzenli ders çalışmayı ihmal etmeyin
-- Lab uygulamalarına katılın
+- 💡 Düzenli ders çalışmayı ihmal etmeyin
+- 💡 Lab uygulamalarına katılın
 
-### Bilişim Sistemleri Güvenliği
+### 📘 Bilişim Sistemleri Güvenliği
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Gömülü Sistemler
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
-- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Bilgiye Erişim Ve Arama Motorları
+### 📘 Gömülü Sistemler
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Oyun Geliştirmeye Giriş
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Mobil Programlamaya Giriş
+### 📘 Bilgiye Erişim Ve Arama Motorları
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
-- **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-- **Gereklilik Puanı:** ★★★★★★★★★☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+### 📘 Oyun Geliştirmeye Giriş
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Mobil Programlamaya Giriş
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MAG
 
-### Sistem Programlama
+### 📘 Sistem Programlama
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### İstatistiksel Veri Analizi
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Sayısal İşaret İşleme
+### 📘 İstatistiksel Veri Analizi
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
-- **Kolaylık Puanı:** ★★★★★★★★☆☆
-- **Gereklilik Puanı:** ★★★★★★☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+### 📘 Sayısal İşaret İşleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
 - AEL
 
-### Bilgisayar Grafiğine Giriş
+### 📘 Bilgisayar Grafiğine Giriş
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Biyoenformatiğe Giriş
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Büyük Veri İşleme Ve Analizi
+### 📘 Biyoenformatiğe Giriş
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Yapay Zeka
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
-- **Kolaylık Puanı:** ★★★★★★★★☆☆
-- **Gereklilik Puanı:** ★★★★★★★★★☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+### 📘 Büyük Veri İşleme Ve Analizi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Yapay Zeka
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
 
-### Yapay Sinir Ağlarına Giriş
+### 📘 Yapay Sinir Ağlarına Giriş
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Görüntü İşleme
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Doğal Dil İşlemeye Giriş
+### 📘 Görüntü İşleme
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
-- **Kolaylık Puanı:** ★★★★★★★★☆☆
-- **Gereklilik Puanı:** ★★★★★★★★★☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
-#### Derse Dair Öneriler
 
-##### Öneri sahibi: X
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Doğal Dil İşlemeye Giriş
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+
+#### 💡 Derse Dair Öneriler
+
+##### 📌 Öneri sahibi: X
 - Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz.
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
 
-### Uzman Sistemlere Giriş
+### 📘 Uzman Sistemlere Giriş
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Veri Tabanı Sistemlerinde Güncel Konular
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
-- **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+### 📘 Veri Tabanı Sistemlerinde Güncel Konular
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
+- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
 
-### Veritabanı Sistemlerinin Gerçekleştirilmesi
+### 📘 Veritabanı Sistemlerinin Gerçekleştirilmesi
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
 
-### Yönetim Bilgi Sistemleri
+### 📘 Yönetim Bilgi Sistemleri
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Sistem analizine benzer.
-- **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Sistem analizine benzer.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
 
-### Dağıtık Sistemler
+### 📘 Dağıtık Sistemler
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Veri Madenciliğine Giriş
-
-#### Ders Bilgileri
-
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
-- **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Robot Teknolojisine Giriş
+### 📘 Veri Madenciliğine Giriş
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
-- **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-- **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+### 📘 Robot Teknolojisine Giriş
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
 
-### Yazılım Kalite ve Test Süreci
+### 📘 Yazılım Kalite ve Test Süreci
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-#### Dersi Yürüten Akademisyenler:
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
