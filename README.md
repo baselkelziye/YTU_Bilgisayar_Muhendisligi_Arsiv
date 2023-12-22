@@ -28,7 +28,7 @@ Açıklamalar:
 - 📋 Ara Projeler -> yapılıp yüklenen ara projeler
 - 📋 Bitirme Projesi -> yapılıp yüklenen bitirme projeleri
 - 📋 readme_olustur -> readme dosyası oluşturmak için kullanılan python kodu
-- 📋 burada olmayan bazı çıkmış sorulara/lablara/ödevlere https://drive.google.com/drive/folders/1Cp56VdpdRpAKaAEXbiShMvs23jPNjT1k adresinden ulaşabilirsiniz.
+- 📋 burada olmayan bazı çıkmış sorulara/lablara/ödevlere [linkten](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh) ulaşabilirsiniz.
 
 
 📝 Talimatlar:
