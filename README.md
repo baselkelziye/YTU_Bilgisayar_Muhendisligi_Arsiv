@@ -1200,3 +1200,5 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
   - 🔗 Github Adresi: https://github.com/mrbesher
 - 👤 Rayene Bech
   - 🔗 Github Adresi: https://github.com/rayenebech
+- 👤 Rameş Aliyev
+  - 🔗 Github Adresi: https://github.com/ramesaliyev
