@@ -1191,8 +1191,12 @@ Açıklamalar:
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin.
 
 - 👤 Ali Albayrak
-  - 🔗 Github Adresi: 
+  - 🔗 Github Adresi: https://github.com/Ali-Albayrak
 - 👤 Basel Kelziye
   - 🔗 Github Adresi: https://github.com/baselkelziye
 - 👤 Muhammed Kayra Bulut
   - 🔗 Github Adresi: https://github.com/kaayra2000
+- 👤 Besher Alkurdi
+  - 🔗 Github Adresi: https://github.com/mrbesher
+- 👤 Rayene Bech
+  - 🔗 Github Adresi: https://github.com/rayenebech
