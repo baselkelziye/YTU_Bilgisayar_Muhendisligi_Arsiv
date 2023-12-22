@@ -28,7 +28,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+  - 👤 Traktör Reis: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -75,7 +75,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+  - 👤 Traktör Reis: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -125,7 +125,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+  - 👤 Traktör Reis: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
@@ -191,7 +191,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
+  - 👤 Traktör Reis: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -241,7 +241,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+  - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -280,7 +280,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
+  - 👤 Traktör Reis: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -318,7 +318,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sistem analizine benzer.
+  - 👤 Traktör Reis: Sistem analizine benzer.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -353,7 +353,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+  - 👤 Traktör Reis: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -370,7 +370,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+  - 👤 Traktör Reis: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 

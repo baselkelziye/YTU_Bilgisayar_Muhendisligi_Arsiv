@@ -15,7 +15,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Gerekli bir ders ama aşırı ezber.
+  - 👤 Traktör Reis: Gerekli bir ders ama aşırı ezber.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
@@ -32,7 +32,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
+  - 👤 Traktör Reis: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -49,7 +49,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
+  - 👤 Traktör Reis: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -66,7 +66,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
+  - 👤 Traktör Reis: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -83,7 +83,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sistem analizi gibi bir ders. Ezber.
+  - 👤 Traktör Reis: Sistem analizi gibi bir ders. Ezber.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 

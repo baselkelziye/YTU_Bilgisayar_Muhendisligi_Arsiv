@@ -15,7 +15,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+  - 👤 Traktör Reis: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
 - ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -36,7 +36,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+  - 👤 Traktör Reis: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -57,7 +57,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+  - 👤 Traktör Reis: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
@@ -76,7 +76,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -93,7 +93,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -110,7 +110,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -127,7 +127,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 

@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+  - 👤 Traktör Reis: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆

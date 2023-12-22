@@ -6,7 +6,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+  - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆

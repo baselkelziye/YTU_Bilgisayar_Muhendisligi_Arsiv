@@ -76,7 +76,7 @@ Açıklamalar:
 - 📘 **Bilgisayar Bilimlerine Giriş** 👑 En popüler ders (1 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
+    - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -90,7 +90,7 @@ Açıklamalar:
 - 📘 **Fizik 1** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -101,7 +101,7 @@ Açıklamalar:
 - 📘 **Matematik 1** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -112,7 +112,7 @@ Açıklamalar:
 - 📘 **Lineer Cebir** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+    - 👤 Traktör Reis: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -123,7 +123,7 @@ Açıklamalar:
 - 📘 **İş Sağlığı ve Güvenliği 1** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -134,7 +134,7 @@ Açıklamalar:
 - 📘 **İleri İngilizce 1** 
   - 🏷️ **Ders Tipi:** Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -145,7 +145,7 @@ Açıklamalar:
 - 📘 **Atatürk İlkeleri ve İnkılâp Tarihi 1** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+    - 👤 Traktör Reis: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -158,7 +158,7 @@ Açıklamalar:
 - 📘 **Yapısal Programlamaya Giriş** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+    - 👤 Traktör Reis: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
@@ -172,7 +172,7 @@ Açıklamalar:
 - 📘 **Sayısal Analiz** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+    - 👤 Traktör Reis: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -186,7 +186,7 @@ Açıklamalar:
 - 📘 **Devre Teorisi** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+    - 👤 Traktör Reis: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
@@ -198,7 +198,7 @@ Açıklamalar:
 - 📘 **İş Sağlığı ve Güvenliği 2** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -209,7 +209,7 @@ Açıklamalar:
 - 📘 **Mühendisler için Yarıiletken Fiziği** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+    - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -220,7 +220,7 @@ Açıklamalar:
 - 📘 **Matematik 2** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -231,7 +231,7 @@ Açıklamalar:
 - 📘 **İleri İngilizce 2** 
   - 🏷️ **Ders Tipi:** Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+    - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -244,7 +244,7 @@ Açıklamalar:
 - 📘 **İstatistik ve Olasılık Hesapları** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
+    - 👤 Traktör Reis: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
@@ -258,7 +258,7 @@ Açıklamalar:
 - 📘 **Alt Seviye Programlama** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+    - 👤 Traktör Reis: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -272,7 +272,7 @@ Açıklamalar:
 - 📘 **Yapısal Programlama** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+    - 👤 Traktör Reis: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -286,7 +286,7 @@ Açıklamalar:
 - 📘 **Bilgisayar Mühendisleri için Sinyaller ve Sistemler** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+    - 👤 Traktör Reis: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -300,7 +300,7 @@ Açıklamalar:
 - 📘 **Ayrık Matematik** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+    - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
@@ -314,7 +314,7 @@ Açıklamalar:
 - 📘 **Lojik Devreler** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir ders, geçmesi kolay.
+    - 👤 Traktör Reis: Güzel bir ders, geçmesi kolay.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
@@ -327,7 +327,7 @@ Açıklamalar:
 - 📘 **Nesneye Yönelik Programlama** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+    - 👤 Traktör Reis: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -338,7 +338,7 @@ Açıklamalar:
 - 📘 **Bilgisayar Donanımı** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+    - 👤 Traktör Reis: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -349,7 +349,7 @@ Açıklamalar:
 - 📘 **Elektronik Devreler** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+    - 👤 Traktör Reis: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -360,7 +360,7 @@ Açıklamalar:
 - 📘 **Sistem Analizi ve Tasarımı** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+    - 👤 Traktör Reis: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -371,7 +371,7 @@ Açıklamalar:
 - 📘 **Hesaplama Kuramı** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+    - 👤 Traktör Reis: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -382,7 +382,7 @@ Açıklamalar:
 - 📘 **Veri Yapıları ve Algoritmalar** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+    - 👤 Traktör Reis: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -395,7 +395,7 @@ Açıklamalar:
 - 📘 **İşletim Sistemleri** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+    - 👤 Traktör Reis: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -406,7 +406,7 @@ Açıklamalar:
 - 📘 **Algoritma Analizi** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+    - 👤 Traktör Reis: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -417,7 +417,7 @@ Açıklamalar:
 - 📘 **Mikroişlemci Sistemleri** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+    - 👤 Traktör Reis: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -428,7 +428,7 @@ Açıklamalar:
 - 📘 **Veritabanı Yönetimi** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
+    - 👤 Traktör Reis: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -439,7 +439,7 @@ Açıklamalar:
 - 📘 **Veri İletişimi** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+    - 👤 Traktör Reis: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -452,7 +452,7 @@ Açıklamalar:
 - 📘 **Ağ Teknolojileri** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Gerekli bir ders ama aşırı ezber.
+    - 👤 Traktör Reis: Gerekli bir ders ama aşırı ezber.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -463,7 +463,7 @@ Açıklamalar:
 - 📘 **Genel Staj** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
+    - 👤 Traktör Reis: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -474,7 +474,7 @@ Açıklamalar:
 - 📘 **Bilgisayar Projesi** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
+    - 👤 Traktör Reis: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -485,7 +485,7 @@ Açıklamalar:
 - 📘 **Mesleki Hukuk ve Etik** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
+    - 👤 Traktör Reis: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -496,7 +496,7 @@ Açıklamalar:
 - 📘 **Yazılım Mühendisliği** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Sistem analizi gibi bir ders. Ezber.
+    - 👤 Traktör Reis: Sistem analizi gibi bir ders. Ezber.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -517,7 +517,7 @@ Açıklamalar:
 - 📘 **Çok Displinli Tasarım Projesi** 
   - 🏷️ **Ders Tipi:** Seçmeli 4
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
+    - 👤 Traktör Reis: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -538,7 +538,7 @@ Açıklamalar:
 - 📘 **Mesleki Staj** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
+    - 👤 Traktör Reis: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -549,7 +549,7 @@ Açıklamalar:
 - 📘 **Bitirme Çalışması** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+    - 👤 Traktör Reis: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -578,7 +578,7 @@ Açıklamalar:
 - 📘 **Gömülü Sistemler** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+    - 👤 Traktör Reis: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -605,7 +605,7 @@ Açıklamalar:
 - 📘 **Mobil Programlamaya Giriş** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+    - 👤 Traktör Reis: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -634,7 +634,7 @@ Açıklamalar:
 - 📘 **Sayısal İşaret İşleme** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+    - 👤 Traktör Reis: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -672,7 +672,7 @@ Açıklamalar:
 - 📘 **Yapay Zeka** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
+    - 👤 Traktör Reis: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -701,7 +701,7 @@ Açıklamalar:
 - 📘 **Doğal Dil İşlemeye Giriş** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+    - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -722,7 +722,7 @@ Açıklamalar:
 - 📘 **Veri Tabanı Sistemlerinde Güncel Konular** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
+    - 👤 Traktör Reis: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -745,7 +745,7 @@ Açıklamalar:
 - 📘 **Yönetim Bilgi Sistemleri** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Sistem analizine benzer.
+    - 👤 Traktör Reis: Sistem analizine benzer.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -766,7 +766,7 @@ Açıklamalar:
 - 📘 **Veri Madenciliğine Giriş** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+    - 👤 Traktör Reis: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -777,7 +777,7 @@ Açıklamalar:
 - 📘 **Robot Teknolojisine Giriş** 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+    - 👤 Traktör Reis: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -810,7 +810,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
+  - 👤 Traktör Reis: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
   - 👤 astro: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -830,7 +830,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D217
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sert bir mizacı var. Sınavlarda zor sorar.
+  - 👤 Traktör Reis: Sert bir mizacı var. Sınavlarda zor sorar.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Algoritma Analizi
@@ -848,7 +848,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D213
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+  - 👤 Traktör Reis: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
   - 👤 astro: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -868,7 +868,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D131
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sakin bir hoca, iyi niyetli, yoklama alır.
+  - 👤 Traktör Reis: Sakin bir hoca, iyi niyetli, yoklama alır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Sistem Analizi ve Tasarımı
@@ -918,7 +918,7 @@ Açıklamalar:
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+  - 👤 Traktör Reis: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
@@ -938,7 +938,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D218
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+  - 👤 Traktör Reis: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
   - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -957,7 +957,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+  - 👤 Traktör Reis: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
   - 👤 astro: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -977,7 +977,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-DZ31
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Harf notunu güzel verir.
+  - 👤 Traktör Reis: Harf notunu güzel verir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Nesneye Yönelik Programlama
@@ -1014,7 +1014,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF - D034
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
+  - 👤 Traktör Reis: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
   - 👤 Nakliyeci Sefer: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
   - 👤 astro: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -1034,7 +1034,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D122
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+  - 👤 Traktör Reis: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Nesneye Yönelik Programlama
@@ -1053,7 +1053,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D127
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
+  - 👤 Traktör Reis: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
   - 👤 Nakliyeci Sefer: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
   - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -1089,7 +1089,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D124
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+  - 👤 Traktör Reis: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Lojik Devreler
@@ -1107,7 +1107,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D214
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+  - 👤 Traktör Reis: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Veritabanı Yönetimi
@@ -1126,7 +1126,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-DZ36
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+  - 👤 Traktör Reis: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 İstatistik ve Olasılık Hesapları
@@ -1144,7 +1144,7 @@ Açıklamalar:
 - 🚪 **Ofis:** EEF-D129
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İşini sever. Sakindir.
+  - 👤 Traktör Reis: İşini sever. Sakindir.
   - 👤 astro: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
