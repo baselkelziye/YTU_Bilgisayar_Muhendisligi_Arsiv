@@ -44,10 +44,10 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
 
             for gorus in hoca['ogrenci_gorusleri']:
-                f.write(f"  - {gorus['kisi']}: {gorus['yorum']}\n")
+                f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
             f.write("- 📚 **Verdiği Dersler:**\n")
             for ders in hoca["dersler"]:
-                f.write(f"  - {ders}\n")
+                f.write(f"  - 📖 {ders}\n")
             f.write(f"- ⭐ **Yıldız Sayıları:**\n")
             if hoca['anlatim_puani'] != 0:
                 f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
