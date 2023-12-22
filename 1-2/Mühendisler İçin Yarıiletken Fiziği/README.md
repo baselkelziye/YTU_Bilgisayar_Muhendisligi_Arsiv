@@ -1,17 +1,17 @@
-# Mühendisler için Yarıiletken Fiziği
+# 📚 Mühendisler için Yarıiletken Fiziği
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 1
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-  - **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
