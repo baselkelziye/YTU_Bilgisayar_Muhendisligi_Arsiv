@@ -8,16 +8,22 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "kulhane",
-                    "yorum": "İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir"
+                    "yorum": "Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var."
                 }
             ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 80,
+            "kolaylik_puani": 70,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
-                "ZCT",
-                "G1",
-                "MAG"
-            ]
+                {
+                    "kisaltma": "G1",
+                    "ad": "Dr. Göksel Biricik"
+                },
+                {
+                    "kisaltma": "MAG",
+                    "ad": "Doç. Dr. M. Amaç Güvensan"
+                }
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Fizik 1",
@@ -117,8 +123,14 @@
             "kolaylik_puani": 20,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
-                "MFA",
-                "AEL"
+                {
+                    "kisaltma": "MFA",
+                    "ad": "Prof. Dr. M. Fatih Amasyalı"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -135,8 +147,14 @@
             "kolaylik_puani": 80,
             "gereklilik_puani": 75,
             "dersi_veren_hocalar": [
-                "BD",
-                "AEL"
+                {
+                    "kisaltma": "BD",
+                    "ad": "Prof. Dr. Banu Diri"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -152,8 +170,7 @@
             ],
             "kolaylik_puani": 0,
             "gereklilik_puani": 10,
-            "dersi_veren_hocalar": [
-            ]
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 2",
@@ -225,8 +242,14 @@
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
             "dersi_veren_hocalar": [
-                "OA",
-                "SY"
+                {
+                    "kisaltma": "OA",
+                    "ad": "Dr. Oğuz Altun"
+                },
+                {
+                    "kisaltma": "SY",
+                    "ad": "Prof. Dr. Sırma Yavuz"
+                }
             ]
         },
         {
@@ -243,8 +266,14 @@
             "kolaylik_puani": 30,
             "gereklilik_puani": 80,
             "dersi_veren_hocalar": [
-                "FÇ",
-                "EU"
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                },
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                }
             ]
         },
         {
@@ -261,8 +290,14 @@
             "kolaylik_puani": 60,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
-                "YES",
-                "AEL"
+                {
+                    "kisaltma": "YES",
+                    "ad": "Dr. Yunus Emre Selçuk"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -279,8 +314,14 @@
             "kolaylik_puani": 50,
             "gereklilik_puani": 40,
             "dersi_veren_hocalar": [
-                "ACK",
-                "AEL1"
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -297,8 +338,14 @@
             "kolaylik_puani": 90,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
-                "BD",
-                "AEL"
+                {
+                    "kisaltma": "BD",
+                    "ad": "Prof. Dr. Banu Diri"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -637,8 +684,9 @@
             "donem": "Güz",
             "tip": "Zorunlu",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "kolaylik_puani": 100,
+            "gereklilik_puani": 10,
+            "oy_sayisi": 1
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
@@ -718,7 +766,10 @@
             "kolaylik_puani": 40,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
-                "MAG"
+                {
+                    "kisaltma": "MAG",
+                    "ad": "Doç. Dr. M. Amaç Güvensan"
+                }
             ]
         },
         {
@@ -753,8 +804,14 @@
             "kolaylik_puani": 80,
             "gereklilik_puani": 60,
             "dersi_veren_hocalar": [
-                "ACK",
-                "AEL"
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                },
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
             ]
         },
         {
@@ -798,7 +855,10 @@
             "kolaylik_puani": 80,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
-                "MFA"
+                {
+                    "kisaltma": "MFA",
+                    "ad": "Prof. Dr. M. Fatih Amasyalı"
+                }
             ]
         },
         {
@@ -833,7 +893,10 @@
             "kolaylik_puani": 80,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
-                "BD"
+                {
+                    "kisaltma": "BD",
+                    "ad": "Prof. Dr. Banu Diri"
+                }
             ],
             "derse_dair_oneriler": [
                 {
@@ -867,7 +930,10 @@
             "kolaylik_puani": 30,
             "gereklilik_puani": 40,
             "dersi_veren_hocalar": [
-                "MUK"
+                {
+                    "kisaltma": "MUK",
+                    "ad": "Dr. M. Utku Kalay"
+                }
             ]
         },
         {
@@ -879,7 +945,10 @@
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
             "dersi_veren_hocalar": [
-                "MUK"
+                {
+                    "kisaltma": "MUK",
+                    "ad": "Dr. M. Utku Kalay"
+                }
             ]
         },
         {
@@ -896,7 +965,10 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 40,
             "dersi_veren_hocalar": [
-                "OK"
+                {
+                    "kisaltma": "OK",
+                    "ad": "Prof. Dr. Oya Kalıpsız"
+                }
             ]
         },
         {
@@ -936,7 +1008,10 @@
             "kolaylik_puani": 40,
             "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
-                "FÇ"
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                }
             ]
         },
         {
@@ -948,7 +1023,10 @@
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
             "dersi_veren_hocalar": [
-                "OK"
+                {
+                    "kisaltma": "OK",
+                    "ad": "Prof. Dr. Oya Kalıpsız"
+                }
             ]
         },
         {
@@ -967,5 +1045,9 @@
         }
     ],
     "bolum_adi": "Dersler",
-    "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
+    "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
+    "en_populer_ders": {
+        "ders_adi": "Bilgisayar Bilimlerine Giriş",
+        "oy_sayisi": 1
+    }
 }

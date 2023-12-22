@@ -18,4 +18,4 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
-- AEL1
+- AEL

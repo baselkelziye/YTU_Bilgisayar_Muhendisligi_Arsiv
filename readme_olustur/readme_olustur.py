@@ -1,6 +1,7 @@
 import json
 import os
 import difflib
+import re
 
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 ANA_README_YOLU = "../README.md"
@@ -73,7 +74,15 @@ def donem_siralamasi(donem_key):
         return (999, 999)  # Mesleki Seçmeli dersleri en sona koy
     yil, donem = donem_key.split(" - ")
     return (int(yil.split('.')[0]), 0 if donem == "Güz" else 1)
-
+def baslik_linki_olustur(baslik):
+    # Emoji ve özel karakterleri kaldır
+    baslik = re.sub(r'[^\w\s-]', '', baslik)
+    # Çoklu boşlukları tek boşluk yap
+    baslik = re.sub(r'\s+', ' ', baslik)
+    # Boşlukları '-' ile değiştir
+    baslik = baslik.replace(' ', '-').lower()
+    # Oluşturulan linki döndür
+    return f"(#{baslik})"
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
     gruplanmis_dersler = {}
@@ -122,7 +131,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if "dersi_veren_hocalar" in ders:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
-                        f.write(f"    - {hoca}\n")
+                        f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca['ad'])}\n")
 
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
@@ -241,7 +250,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         if "dersi_veren_hocalar" in ders:
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders["dersi_veren_hocalar"]:
-                f.write(f"- {hoca}\n")
+                f.write(f"- {hoca['kisaltma']}\n")
 
             
 for ders in dersler['dersler']:
@@ -303,7 +312,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     if "dersi_veren_hocalar" in ders:
                         f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
-                            f.write(f"- {hoca}\n")
+                            f.write(f"- {hoca['kisaltma']}\n")
 
 donemler = json_oku('donemler.json')
 donemlere_gore_readme_olustur(donemler)
