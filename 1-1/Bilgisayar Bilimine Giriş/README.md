@@ -6,10 +6,10 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+  - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
 
 ## 📖 Faydalı Olabilecek Kaynaklar
