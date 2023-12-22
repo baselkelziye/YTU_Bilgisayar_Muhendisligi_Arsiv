@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+  - 👤 Traktör Reis: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
