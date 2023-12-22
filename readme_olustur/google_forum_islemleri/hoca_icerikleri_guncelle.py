@@ -21,7 +21,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                 # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
                 gorus_var_mi = False
                 for gorus in hoca['ogrenci_gorusleri']:
-                    if gorus['kisi'] == kisi:
+                    if gorus['kisi'].lower() == kisi.lower():
                         gorus['yorum'] = yorum
                         gorus_var_mi = True
                         break
