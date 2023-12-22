@@ -283,7 +283,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
                 for oneri in oneriler['oneriler']:
                     f.write(f"- {oneri}\n")
         f.write("\n## 📖 Faydalı Olabilecek Kaynaklar\n\n")
-        f.write(f"- 📄 çıkmışlar: {CIKMISLAR_LINKI}\n")
+        f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
         if "faydali_olabilecek_kaynaklar" in ders:
             # Faydalı olabilecek kaynaklar
             for kaynak in ders['faydali_olabilecek_kaynaklar']:
@@ -349,7 +349,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     if "faydali_olabilecek_kaynaklar" in ders:
                         for kaynak in ders['faydali_olabilecek_kaynaklar']:
                             f.write(f"- {kaynak}\n")
-                    f.write(f"- 📄 çıkmışlar: {CIKMISLAR_LINKI}\n")
+                    f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
                     if "dersi_veren_hocalar" in ders:
                         f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
