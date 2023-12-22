@@ -43,7 +43,7 @@ def guncelle_ders_yildizlari(data, sheets_url):
     # En yüksek oy sayısına sahip hocayı bul
     en_populer_ders = ders_oy_sayisi.idxmax()
     en_populer_ders_oy_sayisi = ders_oy_sayisi.max()
-    data["en_populer_ders"] = {"ders_adi":en_populer_ders, "oy_sayisi":en_populer_ders_oy_sayisi}
+    data["en_populer_ders"] = {"ders_adi":en_populer_ders, "oy_sayisi":int(en_populer_ders_oy_sayisi)}
     for ders in data['dersler']:
         name = ders.get('ad')
         if name in yildizlar_grouped.index:
@@ -58,5 +58,8 @@ with open(os.path.join("..",json_file_path), 'r', encoding='utf-8') as file:
 guncelle_ogrenci_gorusleri(data,DERS_YORUMLARI_DOSYASI)
 guncelle_ders_yildizlari(data, DERS_YILDIZLARI_DOSYASI)
 
-with open(json_file_path, 'w', encoding='utf-8') as file:
+
+with open(os.path.join(json_file_path), 'w', encoding='utf-8') as file:
     json.dump(data, file, ensure_ascii=False, indent=4)
+
+os.system(f"cp {json_file_path} ../{json_file_path}")
