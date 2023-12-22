@@ -5,6 +5,7 @@ import difflib
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 ANA_README_YOLU = "../README.md"
 YILDIZ_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
+HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
@@ -45,6 +46,8 @@ def hocalari_readme_ye_ekle(bilgiler):
 
             for gorus in hoca['ogrenci_gorusleri']:
                 f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
+            f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+
             f.write("- 📚 **Verdiği Dersler:**\n")
             for ders in hoca["dersler"]:
                 f.write(f"  - 📖 {ders}\n")
@@ -60,7 +63,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                 f.write("  - 🧠 Dersi Öğrenir Miyim:\tbilinmiyor\n")
                 f.write("  - 🎉 Derste Eğlenir Miyim:\tbilinmiyor\n")
             if "oy_sayisi" in hoca:
-                f.write(f"  - ℹ️ Yıldızlar {hoca['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) oylamaya katılabilirsiniz.\n")
+                f.write(f"  - ℹ️ Yıldızlar {hoca['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
 
 
 def donem_siralamasi(donem_key):
