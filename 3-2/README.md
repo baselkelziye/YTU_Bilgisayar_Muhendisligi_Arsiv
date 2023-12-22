@@ -22,7 +22,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Genel Staj
 
@@ -39,7 +39,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Bilgisayar Projesi
 
@@ -56,7 +56,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mesleki Hukuk ve Etik
 
@@ -73,7 +73,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Yazılım Mühendisliği
 
@@ -90,4 +90,4 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
