@@ -145,7 +145,44 @@ def readme_ye_giris_ekle(giris_bilgileri):
         f.write("## 📌 İçindekiler\n\n")  # Sabitleme pimi içindekileri temsil eder
         for item in giris_bilgileri['icindekiler']:
             f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
+def hoca_kisaltma_olustur(isim):
+    """
+    Bir isimden kısaltma oluşturur ve unvanları (Doç. Dr., Prof. Dr., Dr. vb.) atar.
+    Örneğin "Prof. Dr. Ahmet Elbir" için "AEL", "Dr. Göksel Biricik" için "GB" döndürür.
+    """
+    # Unvanları ve noktaları kaldır
+    for unvan in ["Prof. Dr.", "Doç. Dr.", "Dr.", "Prof.", "Doç."]:
+        isim = isim.replace(unvan, "")
+    isim = isim.replace(".", "").strip()
+    if "Elbir" in isim:
+        return "AEL"
+    if "Biricik" in isim:
+        return "G1"
+    # İsimleri ayır ve baş harfleri al
+    parcalar = isim.split()
+    if len(parcalar) == 1:  # Eğer sadece bir isim varsa
+        return parcalar[0][:2].upper()
+    else:
+        # İlk iki ismin baş harflerini ve son ismin ilk harfini al
+        kisaltma = ''.join(parca[0].upper() for parca in parcalar[:-1])
+        kisaltma += parcalar[-1][0].upper()
+        if len(parcalar[-1]) == 1:  # Eğer son isim sadece bir harf ise (örneğin "M.")
+            kisaltma += str(len(parcalar))  # Sıra numarasını ekle (örneğin "MAG" yerine "MAG1")
+        return kisaltma
 
+def readmeye_hocalar_icin_kisaltmalar_ekle(data):
+    """
+    Verilen hocalar listesi için kısaltmalar oluşturur ve bunları bir Markdown biçiminde döndürür.
+    """
+    kisaltmalar = {}
+    for hoca in data["hocalar"]:
+        kisaltma = hoca_kisaltma_olustur(hoca["ad"])
+        kisaltmalar[kisaltma] = hoca["ad"]
+    with open(ANA_README_YOLU, 'a') as f:
+        f.write("## 📚 Hoca Kısaltmaları\n\n")
+        for kisaltma in sorted(kisaltmalar.keys()):
+            ad = kisaltmalar[kisaltma]
+            f.write(f"- {kisaltma} : {ad}\n")
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, 'a') as f:
@@ -194,8 +231,8 @@ dersleri_readme_ye_ekle(dersler)
 hocalari_readme_ye_ekle(hocalar)
 readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
 readme_ye_yazar_notlari_ekle(yazar_notlari)
+readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
 readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
-
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
