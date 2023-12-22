@@ -35,6 +35,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Proje](https://www.youtube.com/watch?v=wfL-sVkdhFM&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Bilgiye Erişim Ve Arama Motorları
@@ -82,6 +83,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Proje](https://www.youtube.com/watch?v=kM1AJ7EmRNw&t=30s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=krNkTsZ1Cq8&t=6s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -198,6 +200,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
