@@ -1,6 +1,6 @@
 # 📖 Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Ders Notları
 
-Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link](https://forms.gle/fL4Q131wWjKc7sPz7) [yildiz için bu link](https://forms.gle/s6ZMrQG4q578pEzm7) ya da derslerle alakalı hakaret içermeyen yorumlarını bizimle anonim olarak paylaşabilirsin.
+Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link](https://forms.gle/fL4Q131wWjKc7sPz7) [yildiz için bu link](https://forms.gle/s6ZMrQG4q578pEzm7) ya da derslerle alakalı [yorum için bu link](https://forms.gle/SzNmK1w4rVaKE4ee8) [yildiz için bu link](https://forms.gle/3njZjmhm215YCAxe6) hakaret içermeyen yorumlarını ve puanlamalarını bizimle anonim olarak paylaşabilirsin.
 
 ## 📌 İçindekiler
 
@@ -36,7 +36,7 @@ Açıklamalar:
 - 👉 İlgili dersin klasörünü aç.
 - 👉 Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.
 - 👉 Ödevler lablar vs. cevapları %100 doğru değildir.
-- 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin.
+- 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin ya da merge request atabilirsin.
 
 
 🔍 Kavramlar:
