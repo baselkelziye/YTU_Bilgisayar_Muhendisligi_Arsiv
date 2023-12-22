@@ -77,12 +77,10 @@ def donem_siralamasi(donem_key):
 def baslik_linki_olustur(baslik):
     # Emoji ve özel karakterleri kaldır
     baslik = re.sub(r'[^\w\s-]', '', baslik)
-    # Çoklu boşlukları tek boşluk yap
-    baslik = re.sub(r'\s+', ' ', baslik)
     # Boşlukları '-' ile değiştir
     baslik = baslik.replace(' ', '-').lower()
     # Oluşturulan linki döndür
-    return f"(#{baslik})"
+    return f"(#-{baslik})"
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
     gruplanmis_dersler = {}
@@ -131,7 +129,13 @@ def dersleri_readme_ye_ekle(dersler):
                 if "dersi_veren_hocalar" in ders:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
-                        f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca['ad'])}\n")
+                        if hoca['ad'] != hocalar['en_populer_hoca']['hoca_adi']:
+                            f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca['ad'])}\n")
+                        else:
+                            populer_isaret = "👑"
+                            populer_bilgi = f" En popüler hoca ({hocalar['en_populer_hoca']['oy_sayisi']} oy)" if hoca['ad'] == hocalar['en_populer_hoca']['hoca_adi'] else ""
+                            hoca_id = f'{hoca["ad"]} {populer_isaret}{populer_bilgi}'
+                            f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca_id)}\n")
 
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
