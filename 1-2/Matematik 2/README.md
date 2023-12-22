@@ -1,17 +1,17 @@
-# Matematik 2
+# 📚 Matematik 2
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 1
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-  - **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
