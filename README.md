@@ -5,6 +5,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 <p align="center">
 <img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Arşiv+Görüntülenme+Sayısı" width="700" height="100"/>
 </p>
+
 ## 📌 İçindekiler
 
 - 🔗 [Repo Kullanımı](#-repo-kullanımı)
