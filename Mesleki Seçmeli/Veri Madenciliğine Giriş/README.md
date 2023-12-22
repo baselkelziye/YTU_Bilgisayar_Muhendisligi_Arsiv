@@ -1,17 +1,17 @@
-# Veri Madenciliğine Giriş
+# 📚 Veri Madenciliğine Giriş
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 0
-- **Dönem:** 
-- **Ders Tipi:** Mesleki Seçmeli
-- **Öğrenci Görüşleri:**
-  - kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★★★★★☆☆☆
-  - **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh

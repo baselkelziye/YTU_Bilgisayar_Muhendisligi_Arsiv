@@ -1,21 +1,21 @@
-# Elektronik Devreler
+# 📚 Elektronik Devreler
 
-## Ders Bilgileri
+## ℹ️ Ders Bilgileri
 
-- **Yıl:** 2
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
-- **Yıldız Sayıları:**
-  - **Kolaylık Puanı:** ★★★★★★★☆☆☆
-  - **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+- 📅 **Yıl:** 2
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+- ⭐ **Yıldız Sayıları:**
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
-## Derse Dair Öneriler
+## 📝 Derse Dair Öneriler
 
-### Öneri sahibi: X
+### 💡 Öneri sahibi: X
 - şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli
 
-## Faydalı Olabilecek Kaynaklar
+## 📖 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh

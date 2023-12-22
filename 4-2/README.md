@@ -1,72 +1,72 @@
-# 4. Sınıf Bahar
+# 📅 4. Sınıf Bahar
 
-## Genel Tavsiyeler
+## 📝 Genel Tavsiyeler
 
-- Düzenli ders çalışmayı ihmal etmeyin
-- Lab uygulamalarına katılın
-## Dönemin Zorunlu Dersleri
-
-
-### Atatürk İlkeleri ve İnkılâp Tarihi 2
-
-#### Ders Bilgileri
-
-- **Yıl:** 4
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 💡 Düzenli ders çalışmayı ihmal etmeyin
+- 💡 Lab uygulamalarına katılın
+## 📚 Dönemin Zorunlu Dersleri
 
 
-#### Faydalı Olabilecek Kaynaklar
+### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+#### 📄 Ders Bilgileri
 
-### Mesleki Staj
-
-#### Ders Bilgileri
-
-- **Yıl:** 4
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
-- **Kolaylık Puanı:** ★★★★★★★★★★
-- **Gereklilik Puanı:** ★★★★★★★★★★
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
 
-### Bitirme Çalışması
+### 📘 Mesleki Staj
 
-#### Ders Bilgileri
+#### 📄 Ders Bilgileri
 
-- **Yıl:** 4
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Öğrenci Görüşleri:**
-  - kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
-- **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- **Gereklilik Puanı:** ★★★★★★★★★★
-
-
-#### Faydalı Olabilecek Kaynaklar
-
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
-
-### Türkçe 2
-
-#### Ders Bilgileri
-
-- **Yıl:** 4
-- **Dönem:** Bahar
-- **Ders Tipi:** Zorunlu
-- **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
 
-#### Faydalı Olabilecek Kaynaklar
+#### 📚 Faydalı Olabilecek Kaynaklar
 
-- çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Bitirme Çalışması
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
+
+### 📘 Türkçe 2
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 çıkmışlar: https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh
