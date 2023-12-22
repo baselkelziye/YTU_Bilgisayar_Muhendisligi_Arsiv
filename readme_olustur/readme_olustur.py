@@ -142,7 +142,7 @@ def readme_ye_giris_ekle(giris_bilgileri):
     with open(ANA_README_YOLU, 'w') as f:
         f.write(f"# 📖 {giris_bilgileri['baslik']}\n\n")  # Kitap emoji başlığı temsil eder
         f.write(f"{giris_bilgileri['aciklama']}\n\n")
-        f.write('<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Arşiv+Görüntülenme+Sayısı" width="700" height="100"/>\n</p>\n')
+        f.write('<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Arşiv+Görüntülenme+Sayısı" width="400" height="auto"/>\n</p>\n')
         f.write("## 📌 İçindekiler\n\n")  # Sabitleme pimi içindekileri temsil eder
         for item in giris_bilgileri['icindekiler']:
             f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
