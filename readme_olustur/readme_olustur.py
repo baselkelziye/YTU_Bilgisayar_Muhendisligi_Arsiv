@@ -108,14 +108,17 @@ def dersleri_readme_ye_ekle(dersler):
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders['ogrenci_gorusleri']:
                         f.write(f"    - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
-                    f.write(f"  - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+                    f.write(f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
 
                 f.write("  - ⭐ **Yıldız Sayıları:**\n")
                 f.write(f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                 f.write(f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
                 if "oy_sayisi" in ders:
-                    f.write(f"  - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
-
+                    f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                else:
+                    f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                
+                    
                 if "dersi_veren_hocalar" in ders:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
