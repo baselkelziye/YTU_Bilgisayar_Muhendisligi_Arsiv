@@ -24,11 +24,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
+  - 👤 kulhane: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
 - 📚 **Verdiği Dersler:**
-  - Sayısal Analiz
-  - Ayrık Matematik
-  - Doğal Dil İşlemeye Giriş
+  - 📖 Sayısal Analiz
+  - 📖 Ayrık Matematik
+  - 📖 Doğal Dil İşlemeye Giriş
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -42,10 +42,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D217
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Sert bir mizacı var. Sınavlarda zor sorar.
+  - 👤 kulhane: Sert bir mizacı var. Sınavlarda zor sorar.
 - 📚 **Verdiği Dersler:**
-  - Algoritma Analizi
-  - Görüntü İşleme
+  - 📖 Algoritma Analizi
+  - 📖 Görüntü İşleme
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
@@ -59,11 +59,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D213
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
+  - 👤 kulhane: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
 - 📚 **Verdiği Dersler:**
-  - Yapısal Programlamaya Giriş
-  - Yapay Zeka
-  - Uzman Sistemlere Giriş
+  - 📖 Yapısal Programlamaya Giriş
+  - 📖 Yapay Zeka
+  - 📖 Uzman Sistemlere Giriş
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -77,12 +77,12 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D131
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Sakin bir hoca, iyi niyetli, yoklama alır.
+  - 👤 kulhane: Sakin bir hoca, iyi niyetli, yoklama alır.
 - 📚 **Verdiği Dersler:**
-  - Sistem Analizi ve Tasarımı
-  - Yazılım Mühendisliği
-  - Yazılım Kalite ve Test Süreci
-  - Yönetim Bilgi Sistemleri
+  - 📖 Sistem Analizi ve Tasarımı
+  - 📖 Yazılım Mühendisliği
+  - 📖 Yazılım Kalite ve Test Süreci
+  - 📖 Yönetim Bilgi Sistemleri
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -124,12 +124,12 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+  - 👤 kulhane: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
 - 📚 **Verdiği Dersler:**
-  - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
-  - Bilgisayar Donanımı
-  - Gömülü Sistemler
-  - Sayısal İşaret İşleme
+  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - 📖 Bilgisayar Donanımı
+  - 📖 Gömülü Sistemler
+  - 📖 Sayısal İşaret İşleme
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -143,10 +143,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D218
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+  - 👤 kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
 - 📚 **Verdiği Dersler:**
-  - Lojik Devreler
-  - Elektronik Devreler
+  - 📖 Lojik Devreler
+  - 📖 Elektronik Devreler
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -160,11 +160,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
+  - 👤 kulhane: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
 - 📚 **Verdiği Dersler:**
-  - Bilgisayar Bilimlerine Giriş
-  - Algoritma Analizi
-  - Mobil Programlamaya Giriş
+  - 📖 Bilgisayar Bilimlerine Giriş
+  - 📖 Algoritma Analizi
+  - 📖 Mobil Programlamaya Giriş
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -178,9 +178,9 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-DZ31
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Harf notunu güzel verir.
+  - 👤 kulhane: Harf notunu güzel verir.
 - 📚 **Verdiği Dersler:**
-  - Nesneye Yönelik Programlama
+  - 📖 Nesneye Yönelik Programlama
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -195,11 +195,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
 - 📚 **Verdiği Dersler:**
-  - Bilgisayar Mühendisleri için Sinyaller ve Sistemler
-  - Sayısal İşaret İşleme
-  - Sayısal Analiz
-  - Ayrık Matematik
-  - İşletim Sistemleri
+  - 📖 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
+  - 📖 Sayısal İşaret İşleme
+  - 📖 Sayısal Analiz
+  - 📖 Ayrık Matematik
+  - 📖 İşletim Sistemleri
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -213,10 +213,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF - D034
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
+  - 👤 kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
 - 📚 **Verdiği Dersler:**
-  - Bilgisayar Donanımı
-  - Mikroişlemci Sistemleri
+  - 📖 Bilgisayar Donanımı
+  - 📖 Mikroişlemci Sistemleri
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -230,11 +230,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D122
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+  - 👤 kulhane: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
 - 📚 **Verdiği Dersler:**
-  - Nesneye Yönelik Programlama
-  - Robot Teknolojisine Giriş
-  - Alt Seviye Programlama
+  - 📖 Nesneye Yönelik Programlama
+  - 📖 Robot Teknolojisine Giriş
+  - 📖 Alt Seviye Programlama
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -248,11 +248,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D127
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
+  - 👤 kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
 - 📚 **Verdiği Dersler:**
-  - Mesleki Hukuk ve Etik
-  - Veri Yapıları ve Algoritmalar
-  - Bilgisayar Bilimlerine Giriş
+  - 📖 Mesleki Hukuk ve Etik
+  - 📖 Veri Yapıları ve Algoritmalar
+  - 📖 Bilgisayar Bilimlerine Giriş
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -280,10 +280,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D124
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+  - 👤 kulhane: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
 - 📚 **Verdiği Dersler:**
-  - Lojik Devreler
-  - Elektronik Devreler
+  - 📖 Lojik Devreler
+  - 📖 Elektronik Devreler
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -297,11 +297,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D214
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+  - 👤 kulhane: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
 - 📚 **Verdiği Dersler:**
-  - Veritabanı Yönetimi
-  - Veritabanı Sistemlerinin Gerçekleştirilmesi
-  - Veri Tabanı Sistemlerinde Güncel Konular
+  - 📖 Veritabanı Yönetimi
+  - 📖 Veritabanı Sistemlerinin Gerçekleştirilmesi
+  - 📖 Veri Tabanı Sistemlerinde Güncel Konular
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
@@ -315,10 +315,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-DZ36
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+  - 👤 kulhane: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
 - 📚 **Verdiği Dersler:**
-  - İstatistik ve Olasılık Hesapları
-  - Hesaplama Kuramı
+  - 📖 İstatistik ve Olasılık Hesapları
+  - 📖 Hesaplama Kuramı
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -332,10 +332,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** EEF-D129
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
 - 💬 **Öğrenci Görüşleri:**
-  - kulhane: İşini sever. Sakindir.
+  - 👤 kulhane: İşini sever. Sakindir.
 - 📚 **Verdiği Dersler:**
-  - Nesneye Yönelik Programlama
-  - Yapısal Programlama
+  - 📖 Nesneye Yönelik Programlama
+  - 📖 Yapısal Programlama
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
