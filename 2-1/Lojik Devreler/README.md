@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders, geçmesi kolay.
+  - 👤 Traktör Reis: Güzel bir ders, geçmesi kolay.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★★☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
