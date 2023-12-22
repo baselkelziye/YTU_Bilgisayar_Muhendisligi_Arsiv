@@ -1,1053 +1,1051 @@
 {
-    "dersler": [
-        {
-            "ad": "Bilgisayar Bilimlerine Giriş",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 100,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "G1",
-                    "ad": "Dr. Göksel Biricik"
-                },
-                {
-                    "kisaltma": "MAG",
-                    "ad": "Doç. Dr. M. Amaç Güvensan"
-                }
-            ],
-            "oy_sayisi": 1
-        },
-        {
-            "ad": "Fizik 1",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Matematik 1",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 20
-        },
-        {
-            "ad": "Lineer Cebir",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 30
-        },
-        {
-            "ad": "İş Sağlığı ve Güvenliği 1",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "İleri İngilizce 1",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
-            "yil": 1,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok."
-                }
-            ],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Yapısal Programlamaya Giriş",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor."
-                }
-            ],
-            "kolaylik_puani": 20,
-            "gereklilik_puani": 100,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "MFA",
-                    "ad": "Prof. Dr. M. Fatih Amasyalı"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Sayısal Analiz",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor"
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 75,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "BD",
-                    "ad": "Prof. Dr. Banu Diri"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Devre Teorisi",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor"
-                }
-            ],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 10,
-            "dersi_veren_hocalar": []
-        },
-        {
-            "ad": "İş Sağlığı ve Güvenliği 2",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Mühendisler için Yarıiletken Fiziği",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber."
-                }
-            ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Matematik 2",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 20
-        },
-        {
-            "ad": "İleri İngilizce 2",
-            "yil": 1,
-            "donem": "Bahar",
-            "tip": "Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "İstatistik ve Olasılık Hesapları",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor."
-                }
-            ],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "OA",
-                    "ad": "Dr. Oğuz Altun"
-                },
-                {
-                    "kisaltma": "SY",
-                    "ad": "Prof. Dr. Sırma Yavuz"
-                }
-            ]
-        },
-        {
-            "ad": "Alt Seviye Programlama",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor."
-                }
-            ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 80,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "EU",
-                    "ad": "Dr. Erkan Uslu"
-                },
-                {
-                    "kisaltma": "FÇ",
-                    "ad": "Dr. Furkan Çakmak"
-                }
-            ]
-        },
-        {
-            "ad": "Yapısal Programlama",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "YES",
-                    "ad": "Dr. Yunus Emre Selçuk"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Bilgisayar Mühendisleri için Sinyaller ve Sistemler",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor."
-                }
-            ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 40,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "ACK",
-                    "ad": "Doç. Dr. Ali Can Karaca"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Ayrık Matematik",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
-                }
-            ],
-            "kolaylik_puani": 90,
-            "gereklilik_puani": 90,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "BD",
-                    "ad": "Prof. Dr. Banu Diri"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Lojik Devreler",
-            "yil": 2,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir ders, geçmesi kolay."
-                }
-            ],
-            "kolaylik_puani": 90,
-            "gereklilik_puani": 90
-        },
-        {
-            "ad": "Nesneye Yönelik Programlama",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Bilgisayar Donanımı",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 100,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)",
-                        "ödevleri yapın"
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Elektronik Devreler",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 40,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli"
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Sistem Analizi ve Tasarımı",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 80,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "ders full ezber",
-                        "Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.",
-                        "Proje konusu ve birçok proje örneği githubda mevcut."
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Hesaplama Kuramı",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor"
-                }
-            ],
-            "kolaylik_puani": 65,
-            "gereklilik_puani": 70,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "vize görece kolay olur yüksek kalırsan geçersin"
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Veri Yapıları ve Algoritmalar",
-            "yil": 2,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor."
-                }
-            ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 100,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar"
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "İşletim Sistemleri",
-            "yil": 3,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100,
-            "faydali_olabilecek_kaynaklar": [
-                "Vize soruları bazen buradan birebir alınıyor: https://www.mcqscenter.com/computer-science/operating-system",
-                "Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."
-            ],
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "Lablardan tam puan almanız lazım.",
-                        "Çıkmış çözmeniz lazım."
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Algoritma Analizi",
-            "yil": 3,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri."
-                }
-            ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Mikroişlemci Sistemleri",
-            "yil": 3,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor."
-                }
-            ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 60,
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.",
-                        "Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.",
-                        "Dersin vizesi zor oluyor genelde, final kolay."
-                    ]
-                }
-            ],
-            "faydali_olabilecek_kaynaklar": [
-                "80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"
-            ]
-        },
-        {
-            "ad": "Veritabanı Yönetimi",
-            "yil": 3,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Veri İletişimi",
-            "yil": 3,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 90
-        },
-        {
-            "ad": "Ağ Teknolojileri",
-            "yil": 3,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Gerekli bir ders ama aşırı ezber."
-                }
-            ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 70
-        },
-        {
-            "ad": "Genel Staj",
-            "yil": 3,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor."
-                }
-            ],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Bilgisayar Projesi",
-            "yil": 3,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Mesleki Hukuk ve Etik",
-            "yil": 3,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var."
-                }
-            ],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 20
-        },
-        {
-            "ad": "Yazılım Mühendisliği",
-            "yil": 3,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Sistem analizi gibi bir ders. Ezber."
-                }
-            ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 10
-        },
-        {
-            "ad": "Bilişim Sistemleri Güvenliği",
-            "yil": 0,
-            "donem": "",
-            "ogrenci_gorusleri": [],
-            "tip": "Mesleki Seçmeli",
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Gömülü Sistemler",
-            "yil": 0,
-            "donem": "",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders."
-                }
-            ],
-            "tip": "Mesleki Seçmeli",
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 80
-        },
-        {
-            "ad": "Türkçe 1",
-            "yil": 4,
-            "donem": "Güz",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 10,
-            "oy_sayisi": 1
-        },
-        {
-            "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
-            "yil": 4,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Mesleki Staj",
-            "yil": 4,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü."
-                }
-            ],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Bitirme Çalışması",
-            "yil": 4,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek."
-                }
-            ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100
-        },
-        {
-            "ad": "Türkçe 2",
-            "yil": 4,
-            "donem": "Bahar",
-            "tip": "Zorunlu",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Bilgiye Erişim Ve Arama Motorları",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Oyun Geliştirmeye Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Mobil Programlamaya Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor."
-                }
-            ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 90,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "MAG",
-                    "ad": "Doç. Dr. M. Amaç Güvensan"
-                }
-            ]
-        },
-        {
-            "ad": "Sistem Programlama",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "İstatistiksel Veri Analizi",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Sayısal İşaret İşleme",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 60,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "ACK",
-                    "ad": "Doç. Dr. Ali Can Karaca"
-                },
-                {
-                    "kisaltma": "AEL",
-                    "ad": "Dr. Ahmet Elbir"
-                }
-            ]
-        },
-        {
-            "ad": "Bilgisayar Grafiğine Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Biyoenformatiğe Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Büyük Veri İşleme Ve Analizi",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Yapay Zeka",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 90,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "MFA",
-                    "ad": "Prof. Dr. M. Fatih Amasyalı"
-                }
-            ]
-        },
-        {
-            "ad": "Yapay Sinir Ağlarına Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Görüntü İşleme",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Doğal Dil İşlemeye Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 90,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "BD",
-                    "ad": "Prof. Dr. Banu Diri"
-                }
-            ],
-            "derse_dair_oneriler": [
-                {
-                    "oneri_sahibi": "X",
-                    "oneriler": [
-                        "Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz."
-                    ]
-                }
-            ]
-        },
-        {
-            "ad": "Uzman Sistemlere Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Veri Tabanı Sistemlerinde Güncel Konular",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders."
-                }
-            ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 40,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "MUK",
-                    "ad": "Dr. M. Utku Kalay"
-                }
-            ]
-        },
-        {
-            "ad": "Veritabanı Sistemlerinin Gerçekleştirilmesi",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "MUK",
-                    "ad": "Dr. M. Utku Kalay"
-                }
-            ]
-        },
-        {
-            "ad": "Yönetim Bilgi Sistemleri",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Sistem analizine benzer."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 40,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "OK",
-                    "ad": "Prof. Dr. Oya Kalıpsız"
-                }
-            ]
-        },
-        {
-            "ad": "Dağıtık Sistemler",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0
-        },
-        {
-            "ad": "Veri Madenciliğine Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor."
-                }
-            ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 80
-        },
-        {
-            "ad": "Robot Teknolojisine Giriş",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor."
-                }
-            ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 50,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "FÇ",
-                    "ad": "Dr. Furkan Çakmak"
-                }
-            ]
-        },
-        {
-            "ad": "Yazılım Kalite ve Test Süreci",
-            "yil": 0,
-            "donem": "",
-            "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": [
-                {
-                    "kisaltma": "OK",
-                    "ad": "Prof. Dr. Oya Kalıpsız"
-                }
-            ]
-        },
-        {
-            "ad": "Çok Displinli Tasarım Projesi",
-            "yil": 4,
-            "donem": "Güz",
-            "tip": "Seçmeli 4",
-            "ogrenci_gorusleri": [
-                {
-                    "kisi": "kulhane",
-                    "yorum": "6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin."
-                }
-            ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 0
+  "dersler": [
+    {
+      "ad": "Bilgisayar Bilimlerine Giriş",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var."
         }
-    ],
-    "bolum_adi": "Dersler",
-    "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
-    "en_populer_ders": {
-        "ders_adi": "Bilgisayar Bilimlerine Giriş",
-        "oy_sayisi": 1
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 100,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "G1",
+          "ad": "Dr. Göksel Biricik"
+        },
+        {
+          "kisaltma": "MAG",
+          "ad": "Doç. Dr. M. Amaç Güvensan"
+        }
+      ],
+      "oy_sayisi": 1
+    },
+    {
+      "ad": "Fizik 1",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 50,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Matematik 1",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 20
+    },
+    {
+      "ad": "Lineer Cebir",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 30
+    },
+    {
+      "ad": "İş Sağlığı ve Güvenliği 1",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "İleri İngilizce 1",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
+      "yil": 1,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok."
+        }
+      ],
+      "kolaylik_puani": 100,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Yapısal Programlamaya Giriş",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor."
+        }
+      ],
+      "kolaylik_puani": 20,
+      "gereklilik_puani": 100,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "MFA",
+          "ad": "Prof. Dr. M. Fatih Amasyalı"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Sayısal Analiz",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor"
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 75,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "BD",
+          "ad": "Prof. Dr. Banu Diri"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Devre Teorisi",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor"
+        }
+      ],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 10,
+      "dersi_veren_hocalar": []
+    },
+    {
+      "ad": "İş Sağlığı ve Güvenliği 2",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Mühendisler için Yarıiletken Fiziği",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber."
+        }
+      ],
+      "kolaylik_puani": 30,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Matematik 2",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 50,
+      "gereklilik_puani": 20
+    },
+    {
+      "ad": "İleri İngilizce 2",
+      "yil": 1,
+      "donem": "Bahar",
+      "tip": "Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "İstatistik ve Olasılık Hesapları",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor."
+        }
+      ],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "OA",
+          "ad": "Dr. Oğuz Altun"
+        },
+        {
+          "kisaltma": "SY",
+          "ad": "Prof. Dr. Sırma Yavuz"
+        }
+      ]
+    },
+    {
+      "ad": "Alt Seviye Programlama",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor."
+        }
+      ],
+      "kolaylik_puani": 30,
+      "gereklilik_puani": 80,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "EU",
+          "ad": "Dr. Erkan Uslu"
+        },
+        {
+          "kisaltma": "FÇ",
+          "ad": "Dr. Furkan Çakmak"
+        }
+      ]
+    },
+    {
+      "ad": "Yapısal Programlama",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 100,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "YES",
+          "ad": "Dr. Yunus Emre Selçuk"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Bilgisayar Mühendisleri için Sinyaller ve Sistemler",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor."
+        }
+      ],
+      "kolaylik_puani": 50,
+      "gereklilik_puani": 40,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "ACK",
+          "ad": "Doç. Dr. Ali Can Karaca"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Ayrık Matematik",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
+        }
+      ],
+      "kolaylik_puani": 90,
+      "gereklilik_puani": 90,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "BD",
+          "ad": "Prof. Dr. Banu Diri"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Lojik Devreler",
+      "yil": 2,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir ders, geçmesi kolay."
+        }
+      ],
+      "kolaylik_puani": 90,
+      "gereklilik_puani": 90
+    },
+    {
+      "ad": "Nesneye Yönelik Programlama",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Bilgisayar Donanımı",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 100,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)",
+            "ödevleri yapın"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Elektronik Devreler",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 40,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Sistem Analizi ve Tasarımı",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 80,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "ders full ezber",
+            "Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.",
+            "Proje konusu ve birçok proje örneği githubda mevcut."
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Hesaplama Kuramı",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor"
+        }
+      ],
+      "kolaylik_puani": 65,
+      "gereklilik_puani": 70,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": ["vize görece kolay olur yüksek kalırsan geçersin"]
+        }
+      ]
+    },
+    {
+      "ad": "Veri Yapıları ve Algoritmalar",
+      "yil": 2,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor."
+        }
+      ],
+      "kolaylik_puani": 40,
+      "gereklilik_puani": 100,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar"
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "İşletim Sistemleri",
+      "yil": 3,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 100,
+      "faydali_olabilecek_kaynaklar": [
+        "Vize soruları bazen buradan birebir alınıyor: https://www.mcqscenter.com/computer-science/operating-system",
+        "Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."
+      ],
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "Lablardan tam puan almanız lazım.",
+            "Çıkmış çözmeniz lazım."
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Algoritma Analizi",
+      "yil": 3,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri."
+        }
+      ],
+      "kolaylik_puani": 30,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Mikroişlemci Sistemleri",
+      "yil": 3,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor."
+        }
+      ],
+      "kolaylik_puani": 30,
+      "gereklilik_puani": 60,
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "Bu ders düşünüldüğü gibi zor değil, takip edildiği ve lab-ödevler yapıldığı sürece rahatlıkla geçersiniz.",
+            "Çok iyi alt seviye bilmenize gerek yok bu dersi geçmek için, basit komutları bilmeniz yeterli.",
+            "Dersin vizesi zor oluyor genelde, final kolay."
+          ]
+        }
+      ],
+      "faydali_olabilecek_kaynaklar": [
+        "80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"
+      ]
+    },
+    {
+      "ad": "Veritabanı Yönetimi",
+      "yil": 3,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Veri İletişimi",
+      "yil": 3,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 90
+    },
+    {
+      "ad": "Ağ Teknolojileri",
+      "yil": 3,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Gerekli bir ders ama aşırı ezber."
+        }
+      ],
+      "kolaylik_puani": 50,
+      "gereklilik_puani": 70
+    },
+    {
+      "ad": "Genel Staj",
+      "yil": 3,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor."
+        }
+      ],
+      "kolaylik_puani": 100,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Bilgisayar Projesi",
+      "yil": 3,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Mesleki Hukuk ve Etik",
+      "yil": 3,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var."
+        }
+      ],
+      "kolaylik_puani": 100,
+      "gereklilik_puani": 20
+    },
+    {
+      "ad": "Yazılım Mühendisliği",
+      "yil": 3,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Sistem analizi gibi bir ders. Ezber."
+        }
+      ],
+      "kolaylik_puani": 50,
+      "gereklilik_puani": 10
+    },
+    {
+      "ad": "Bilişim Sistemleri Güvenliği",
+      "yil": 0,
+      "donem": "",
+      "ogrenci_gorusleri": [],
+      "tip": "Mesleki Seçmeli",
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Gömülü Sistemler",
+      "yil": 0,
+      "donem": "",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders."
+        }
+      ],
+      "tip": "Mesleki Seçmeli",
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 80
+    },
+    {
+      "ad": "Türkçe 1",
+      "yil": 4,
+      "donem": "Güz",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 100,
+      "gereklilik_puani": 10,
+      "oy_sayisi": 1
+    },
+    {
+      "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
+      "yil": 4,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Mesleki Staj",
+      "yil": 4,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü."
+        }
+      ],
+      "kolaylik_puani": 100,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Bitirme Çalışması",
+      "yil": 4,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek."
+        }
+      ],
+      "kolaylik_puani": 60,
+      "gereklilik_puani": 100
+    },
+    {
+      "ad": "Türkçe 2",
+      "yil": 4,
+      "donem": "Bahar",
+      "tip": "Zorunlu",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Bilgiye Erişim Ve Arama Motorları",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Oyun Geliştirmeye Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Mobil Programlamaya Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor."
+        }
+      ],
+      "kolaylik_puani": 40,
+      "gereklilik_puani": 90,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "MAG",
+          "ad": "Doç. Dr. M. Amaç Güvensan"
+        }
+      ]
+    },
+    {
+      "ad": "Sistem Programlama",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "İstatistiksel Veri Analizi",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Sayısal İşaret İşleme",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 60,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "ACK",
+          "ad": "Doç. Dr. Ali Can Karaca"
+        },
+        {
+          "kisaltma": "AEL",
+          "ad": "Dr. Ahmet Elbir"
+        }
+      ]
+    },
+    {
+      "ad": "Bilgisayar Grafiğine Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Biyoenformatiğe Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Büyük Veri İşleme Ve Analizi",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Yapay Zeka",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 90,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "MFA",
+          "ad": "Prof. Dr. M. Fatih Amasyalı"
+        }
+      ]
+    },
+    {
+      "ad": "Yapay Sinir Ağlarına Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Görüntü İşleme",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Doğal Dil İşlemeye Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 90,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "BD",
+          "ad": "Prof. Dr. Banu Diri"
+        }
+      ],
+      "derse_dair_oneriler": [
+        {
+          "oneri_sahibi": "X",
+          "oneriler": [
+            "Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz."
+          ]
+        }
+      ]
+    },
+    {
+      "ad": "Uzman Sistemlere Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Veri Tabanı Sistemlerinde Güncel Konular",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders."
+        }
+      ],
+      "kolaylik_puani": 30,
+      "gereklilik_puani": 40,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "MUK",
+          "ad": "Dr. M. Utku Kalay"
+        }
+      ]
+    },
+    {
+      "ad": "Veritabanı Sistemlerinin Gerçekleştirilmesi",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "MUK",
+          "ad": "Dr. M. Utku Kalay"
+        }
+      ]
+    },
+    {
+      "ad": "Yönetim Bilgi Sistemleri",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Sistem analizine benzer."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 40,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "OK",
+          "ad": "Prof. Dr. Oya Kalıpsız"
+        }
+      ]
+    },
+    {
+      "ad": "Dağıtık Sistemler",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0
+    },
+    {
+      "ad": "Veri Madenciliğine Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor."
+        }
+      ],
+      "kolaylik_puani": 70,
+      "gereklilik_puani": 80
+    },
+    {
+      "ad": "Robot Teknolojisine Giriş",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor."
+        }
+      ],
+      "kolaylik_puani": 40,
+      "gereklilik_puani": 50,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "FÇ",
+          "ad": "Dr. Furkan Çakmak"
+        }
+      ]
+    },
+    {
+      "ad": "Yazılım Kalite ve Test Süreci",
+      "yil": 0,
+      "donem": "",
+      "tip": "Mesleki Seçmeli",
+      "ogrenci_gorusleri": [],
+      "kolaylik_puani": 0,
+      "gereklilik_puani": 0,
+      "dersi_veren_hocalar": [
+        {
+          "kisaltma": "OK",
+          "ad": "Prof. Dr. Oya Kalıpsız"
+        }
+      ]
+    },
+    {
+      "ad": "Çok Displinli Tasarım Projesi",
+      "yil": 4,
+      "donem": "Güz",
+      "tip": "Seçmeli 4",
+      "ogrenci_gorusleri": [
+        {
+          "kisi": "kulhane",
+          "yorum": "6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin."
+        }
+      ],
+      "kolaylik_puani": 80,
+      "gereklilik_puani": 0
     }
+  ],
+  "bolum_adi": "Dersler",
+  "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
+  "en_populer_ders": {
+    "ders_adi": "Bilgisayar Bilimlerine Giriş",
+    "oy_sayisi": 1
+  }
 }
