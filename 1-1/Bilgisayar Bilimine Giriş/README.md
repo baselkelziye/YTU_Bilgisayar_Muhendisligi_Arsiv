@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
+  - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★

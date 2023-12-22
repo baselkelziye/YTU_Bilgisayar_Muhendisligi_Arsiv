@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆

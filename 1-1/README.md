@@ -15,7 +15,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
+  - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -36,7 +36,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -53,7 +53,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
@@ -70,7 +70,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
+  - 👤 Traktör Reis: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
@@ -87,7 +87,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok alakası yok. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -104,7 +104,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -121,7 +121,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+  - 👤 Traktör Reis: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 

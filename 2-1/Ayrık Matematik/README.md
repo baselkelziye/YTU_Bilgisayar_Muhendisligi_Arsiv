@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+  - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★★☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆

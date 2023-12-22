@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
+  - 👤 Traktör Reis: Çok gerekli bir ders değil. Labları çok yoruyor. Sınavlarda çıkmış bakmadan geçilmesi zor.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆

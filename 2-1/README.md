@@ -15,7 +15,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
+  - 👤 Traktör Reis: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
@@ -36,7 +36,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+  - 👤 Traktör Reis: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
@@ -57,7 +57,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - 👤 Traktör Reis: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -78,7 +78,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+  - 👤 Traktör Reis: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
@@ -99,7 +99,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+  - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -120,7 +120,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Güzel bir ders, geçmesi kolay.
+  - 👤 Traktör Reis: Güzel bir ders, geçmesi kolay.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 

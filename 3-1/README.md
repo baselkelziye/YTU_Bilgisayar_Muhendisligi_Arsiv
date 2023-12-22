@@ -15,7 +15,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
+  - 👤 Traktör Reis: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -39,7 +39,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+  - 👤 Traktör Reis: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -56,7 +56,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+  - 👤 Traktör Reis: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
@@ -80,7 +80,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
+  - 👤 Traktör Reis: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -97,7 +97,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
+  - 👤 Traktör Reis: Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
