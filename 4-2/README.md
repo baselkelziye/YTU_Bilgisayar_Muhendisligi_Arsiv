@@ -30,7 +30,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
+  - 👤 Traktör Reis: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
@@ -47,7 +47,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+  - 👤 Traktör Reis: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 

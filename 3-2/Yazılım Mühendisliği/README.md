@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: Sistem analizi gibi bir ders. Ezber.
+  - 👤 Traktör Reis: Sistem analizi gibi bir ders. Ezber.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆

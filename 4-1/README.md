@@ -30,7 +30,7 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Seçmeli 4
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 kulhane: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
+  - 👤 Traktör Reis: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
