@@ -153,6 +153,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 kulhane: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
+  - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Lojik Devreler
@@ -203,7 +204,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 ### 👨‍🏫 Dr. Ahmet Elbir 
-- 🚪 **Ofis:** Her dersi verebilir. Standart anlatır.
+- 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -228,6 +229,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 kulhane: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
   - 👤 Nakliyeci Sefer: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
+  - 👤 astro: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Bilgisayar Donanımı
@@ -266,6 +268,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 kulhane: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
   - 👤 Nakliyeci Sefer: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
+  - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Mesleki Hukuk ve Etik
@@ -355,6 +358,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 kulhane: İşini sever. Sakindir.
+  - 👤 astro: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Nesneye Yönelik Programlama
@@ -377,14 +381,14 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 ### 🗓 1. Yıl - Güz
 
 
-- 📘 **Bilgisayar Bilimlerine Giriş** 
+- 📘 **Bilgisayar Bilimlerine Giriş** 👑 En popüler ders (1 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 kulhane: İlk dönemin bölümle alakalı tek dersi. Algoritma mantığı öğretilir. Koddan daha çok akış diyagramına odaklanılır. Kodlama dili olarak 'c' öğretilir. Hocaya bağlı olarak bu dili öğretme oranı değişebilir
+    - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - ZCT
@@ -814,8 +818,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 📘 **Türkçe 1** 
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1168,3 +1172,5 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
   - 🔗 Github Adresi: 
 - 👤 Basel Kelziye
   - 🔗 Github Adresi: https://github.com/baselkelziye
+- 👤 Muhammed Kayra Bulut
+  - 🔗 Github Adresi: https://github.com/kaayra2000
