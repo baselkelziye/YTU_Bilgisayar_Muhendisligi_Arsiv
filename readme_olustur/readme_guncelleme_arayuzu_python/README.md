@@ -25,10 +25,10 @@ Projede kullanılan PyQt5 ve diğer kütüphaneleri yüklemek için aşağıdaki
 
 
 pip3 install PyQt5
-# Diğer gerekli kütüphaneler varsa, aşağıdaki gibi yükleyin:
+Diğer gerekli kütüphaneler varsa, aşağıdaki gibi yükleyin:
 pip3 install requests
 pip3 install json5
-# ... ve diğer gerekli kütüphaneler ...
+ ... ve diğer gerekli kütüphaneler ...
 
 
 ### Projeyi çalıştırmak
