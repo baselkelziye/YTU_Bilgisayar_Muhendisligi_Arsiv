@@ -1,9 +1,11 @@
 import sys
-import subprocess
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout,QMessageBox
+from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout,QProgressDialog, QMessageBox
+from PyQt5.QtCore import Qt
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
+from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
+from script_calistirici_thread import ScriptRunnerThread
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -32,6 +34,7 @@ class App(QWidget):
         self.buttons[0].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
         self.buttons[1].clicked.connect(self.acYazarinNotlari)
         self.buttons[2].clicked.connect(self.acHocaEkleGuncelle)
+        self.buttons[3].clicked.connect(self.acDersEkleGuncelle)
         self.buttons[4].clicked.connect(self.readmeScriptiCalistir)
         # Butonları pencereye ekle
         for btn in self.buttons:
@@ -52,25 +55,30 @@ class App(QWidget):
         # Katkıda Bulunan Güncelle penceresini aç
         self.hocaEkleGuncelleWindow = HocaEkleGuncelleWindow()
         self.hocaEkleGuncelleWindow.show()
+    def acDersEkleGuncelle(self):
+        # Katkıda Bulunan Güncelle penceresini aç
+        self.dersEkleGuncelleWindow = DersEkleGuncelleWindow()
+        self.dersEkleGuncelleWindow.show()
 
     def readmeScriptiCalistir(self):
-        try:
-            # Dizin yollarını belirleyin
-            google_forum_islemleri_path = '../google_forum_islemleri'
-            readme_olustur_path = '..'
+        self.progressDialog = QProgressDialog("README.md dosyaları oluşturuluyor...", "İptal", 0, 0, self)
+        self.progressDialog.setCancelButton(None)  # İptal butonunu devre dışı bırak
+        self.progressDialog.setWindowModality(Qt.WindowModal)
+        self.progressDialog.show()
 
-            # Python script'lerini çalıştırın
-            subprocess.run('python3 hoca_icerikleri_guncelle.py\n', shell=True, cwd=google_forum_islemleri_path)
-            subprocess.run('python3 ders_icerikleri_guncelle.py\n', shell=True, cwd=google_forum_islemleri_path)
-            subprocess.run('python3 readme_olustur.py\n', shell=True, cwd=readme_olustur_path)
+        paths = ('../google_forum_islemleri', '..')
+        self.thread = ScriptRunnerThread(paths)
+        self.thread.finished.connect(self.onFinished)
+        self.thread.error.connect(self.onError)
+        self.thread.start()
 
-            # İşlem tamamlandığında kullanıcıya bilgi ver
-            QMessageBox.information(self, 'Başarılı', 'README.md dosyaları güncellendi!')
+    def onFinished(self):
+        self.progressDialog.close()
+        QMessageBox.information(self, 'Başarılı', 'README.md dosyaları güncellendi!')
 
-        except subprocess.CalledProcessError as e:
-            # Hata oluşursa kullanıcıya hata mesajı göster
-            QMessageBox.critical(self, 'Hata', f'Bir hata oluştu: {e}')
-
+    def onError(self, message):
+        self.progressDialog.close()
+        QMessageBox.critical(self, 'Hata', f'Bir hata oluştu: {message}')
 
 
 if __name__ == '__main__':
