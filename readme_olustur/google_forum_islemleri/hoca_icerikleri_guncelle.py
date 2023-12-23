@@ -52,7 +52,7 @@ en_populer_hoca_oy_sayisi = hoca_oy_sayisi.max()
 json_file_path = 'hocalar.json'  # JSON dosyasının yolu
 with open(os.path.join("..",json_file_path), 'r', encoding='utf-8') as file:
     data = json.load(file)
-data["en_populer_hoca"] = {"hoca_adi":en_populer_hoca, "oy_sayisi":en_populer_hoca_oy_sayisi}
+data["en_populer_hoca"] = {"hoca_adi":en_populer_hoca, "oy_sayisi":int(en_populer_hoca_oy_sayisi)}
 for hoca in data['hocalar']:
     name = hoca.get('ad')
     if name in yildizlar_grouped.index:
