@@ -1,28 +1,33 @@
 import sys
 import json
-from PyQt5.QtWidgets import (QApplication, QDialog, QPushButton, QVBoxLayout, 
-                             QTextEdit, QLabel, QMessageBox)
+from PyQt5.QtWidgets import (QLineEdit, QDialog, QPushButton, QVBoxLayout, 
+                             QDesktopWidget, QLabel, QMessageBox)
 import requests  # requests modülünü içe aktar
 
 JSON_DOSYASI = '../katkida_bulunanlar.json'
 
 class KatkidaBulunanEkleWindow(QDialog):
-    def __init__(self):
+    def __init__(self, parent):
         super().__init__()
         self.setModal(True)
+        self.parent = parent
+        self.title = 'Katkıda Bulunan Ekle'
         self.initUI()
         
     def initUI(self):
-        self.setWindowTitle('Katkıda Bulunan Ekle')
+        self.setWindowTitle(self.title)
+        self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
+        self.resize(500, 200)  # Pencerenin başlangıç boyutunu ayarlayın
+
         layout = QVBoxLayout()
         
         # Ad ve GitHub Linki için giriş alanları
         self.name_label = QLabel('Ad:')
-        self.name_input = QTextEdit()
+        self.name_input = QLineEdit()
         self.github_label = QLabel('GitHub Kullanıcı Adı:')
-        self.github_input = QTextEdit()
+        self.github_input = QLineEdit()
         self.ekle_btn = QPushButton('Ekle', self)
-        
+        self.ekle_btn.setStyleSheet("background-color: green;")
         # Butona basıldığında ekleme işlevini çalıştır
         self.ekle_btn.clicked.connect(self.ekle)
 
@@ -34,11 +39,20 @@ class KatkidaBulunanEkleWindow(QDialog):
         layout.addWidget(self.ekle_btn)
         
         self.setLayout(layout)
+        self.center()  # Pencereyi ekranın merkezine yerleştir
+        self.show()
+
+    def center(self):
+        # Pencereyi ekranın ortasına al
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
 
     def ekle(self):
         # Giriş alanlarından bilgileri al
-        ad = self.name_input.toPlainText().strip() 
-        github_kullanici_adi = self.github_input.toPlainText().strip() 
+        ad = self.name_input.text()
+        github_kullanici_adi = self.github_input.text()
         github_url = f"https://github.com/{github_kullanici_adi}"
 
         if ad and github_kullanici_adi:
@@ -64,6 +78,7 @@ class KatkidaBulunanEkleWindow(QDialog):
                     with open(JSON_DOSYASI, 'w') as file:
                         json.dump(data, file,ensure_ascii=False, indent=4)
                     QMessageBox.information(self, 'Başarılı', 'Katkıda bulunan eklendi!')
+                    self.parent.butonlariYenile()
                     self.close()
             except Exception as e:
                 QMessageBox.critical(self, 'Hata', f'Bir hata oluştu: {e}')
