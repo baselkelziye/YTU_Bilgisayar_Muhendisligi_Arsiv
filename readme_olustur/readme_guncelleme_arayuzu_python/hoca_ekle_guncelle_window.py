@@ -35,7 +35,7 @@ class HocaEkleGuncelleWindow(QDialog):
 
     def hocalariYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r') as file:
+            with open(JSON_DOSYASI, 'r',encoding='utf-8') as file:
                 self.data = json.load(file)
 
                 def unvan_ve_isim_ayir(hoca):
@@ -210,7 +210,7 @@ class HocaDuzenlemeWindow(QDialog):
     def kaydetVeKapat(self):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
-            with open(JSON_DOSYASI, 'w') as file:
+            with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.hocalariYenile()

@@ -17,7 +17,7 @@ def hoca_siralama_anahtari(hoca):
     return (unvanlarin_onceligi.get(unvan, 4), hoca['ad'])  # Unvan önceliği ve tam ad
 # JSON dosyasından hocaların bilgilerini okuyan fonksiyon
 def json_oku(json_dosyasi):
-    with open(json_dosyasi, 'r') as f:
+    with open(json_dosyasi, 'r', encoding='utf-8') as f:
         return json.load(f)
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     if puan % 10 !=0:
@@ -28,7 +28,7 @@ def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
 # Bilgileri README'ye ekleyen fonksiyon
 def hocalari_readme_ye_ekle(bilgiler):
     bilgiler['hocalar'] = [hoca for hoca in bilgiler['hocalar'] if hoca['ad'] != '']
-    with open(ANA_README_YOLU, 'a') as f:
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n\n\n## 🎓 {bilgiler['bolum_adi']}\n")
         f.write(f"📚 {bilgiler['bolum_aciklamasi']}\n\n\n\n")
         en_populer_hoca_oy_sayisi = 0
@@ -99,7 +99,7 @@ def dersleri_readme_ye_ekle(dersler):
         if 'oy_sayisi' in dersler['en_populer_ders']:
             en_populer_ders_oy_sayisi = dersler['en_populer_ders']['oy_sayisi']
     
-    with open(ANA_README_YOLU, 'a') as f:
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n\n\n## 📚 {dersler['bolum_adi']} \n")
         f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
 
@@ -141,7 +141,7 @@ def dersleri_readme_ye_ekle(dersler):
 
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
-    with open(ANA_README_YOLU, 'w') as f:
+    with open(ANA_README_YOLU, 'w',encoding='utf-8') as f:
         f.write(f"# 📖 {giris_bilgileri['baslik']}\n\n")  # Kitap emoji başlığı temsil eder
         f.write(f"{giris_bilgileri['aciklama']}\n\n")
         f.write('<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>\n</p>\n\n')
@@ -181,14 +181,14 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
     for hoca in data["hocalar"]:
         kisaltma = hoca_kisaltma_olustur(hoca["ad"])
         kisaltmalar[kisaltma] = hoca["ad"]
-    with open(ANA_README_YOLU, 'a') as f:
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write("## 📚 Hoca Kısaltmaları\n\n")
         for kisaltma in sorted(kisaltmalar.keys()):
             ad = kisaltmalar[kisaltma]
             f.write(f"- {kisaltma} : {ad}\n")
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
-    with open(ANA_README_YOLU, 'a') as f:
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n\n\n## 🛠 {repo_kullanimi_bilgileri['baslik']}\n\n")  # Araç kutusu emojisi
         f.write(f"{repo_kullanimi_bilgileri['aciklama']}\n")
         for aciklama in repo_kullanimi_bilgileri['aciklamalar']:
@@ -204,7 +204,7 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
 
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
-    with open(ANA_README_YOLU, 'a') as f:
+    with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n## ✍️ {yazar_notlari['baslik']}\n\n")  # Kalem emoji, yazarı temsil eder
         for aciklama in yazar_notlari['aciklamalar']:
             f.write(f"- 📝 {aciklama}\n")  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
