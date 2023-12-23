@@ -2,8 +2,40 @@
 
 Bu README dosyası, projenin ana bileşenlerini ve her bir Python dosyasının işlevlerini açıklar.
 
-## Nasıl çalıştırırım?
-python3 main.py komutu ile çalıştırabilirsin.
+## Nasıl Çalıştırılır
+
+Bu bölümde, projeyi yerel makinenizde nasıl çalıştırabileceğinize dair adımlar anlatılmaktadır.
+
+### Python 3 Kurulumu
+
+1. Python'un en son sürümünü [Python'un resmi web sitesinden](https://www.python.org/downloads/) indirin.
+2. İndirilen yükleyiciyi çalıştırın.
+3. Kurulum sırasında "Add Python 3.x to PATH" seçeneğini işaretleyin.
+4. Kurulumu tamamlayın.
+
+### pip3 Kurulumu
+
+pip, Python için paket yöneticisidir ve genellikle Python ile birlikte gelir.
+
+- Python'ı yükledikten sonra, komut istemcisinde `python -m ensurepip --upgrade` komutunu çalıştırarak pip'in en son sürümünün yüklü olduğundan emin olun.
+
+### Gerekli Kütüphanelerin Kurulumu
+
+Projede kullanılan PyQt5 ve diğer kütüphaneleri yüklemek için aşağıdaki komutları kullanın:
+
+
+pip3 install PyQt5
+# Diğer gerekli kütüphaneler varsa, aşağıdaki gibi yükleyin:
+pip3 install requests
+pip3 install json5
+# ... ve diğer gerekli kütüphaneler ...
+
+
+### Projeyi çalıştırmak
+python3 main.py
+
+### Ne işe yarar
+Readme oluşturmak için kullanılan json dosyalarına veri ekler sielr ve veri günceller
 
 ## Dosyalar ve İşlevleri
 
