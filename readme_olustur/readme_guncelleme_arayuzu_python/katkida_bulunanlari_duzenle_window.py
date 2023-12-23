@@ -1,5 +1,6 @@
 import requests
 import json
+from urllib.parse import urlparse
 from PyQt5.QtWidgets import QWidget, QVBoxLayout,QDesktopWidget,QHBoxLayout, QPushButton, QMessageBox, QDialog, QLabel, QLineEdit, QScrollArea
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
 JSON_YOLU = "../katkida_bulunanlar.json"
@@ -38,7 +39,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def butonlariYukle(self):
         # JSON dosyasını oku ve butonları oluştur
         try:
-            with open(JSON_YOLU, 'r') as file:
+            with open(JSON_YOLU, 'r',encoding='utf-8') as file:
                 self.data = json.load(file)
                 for kisi in self.data['katkida_bulunanlar']:
                     btn = QPushButton(kisi['ad'], self)
@@ -83,8 +84,16 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         # Ad ve GitHub Linki için giriş alanları
         self.ad_label = QLabel('Ad:')
         self.ad_input = QLineEdit(self.kisi['ad'])
-        self.github_label = QLabel('GitHub Linki:')
-        self.github_input = QLineEdit(self.kisi['github_link'])
+        self.github_label = QLabel('GitHub Adı:')
+        # Örnek bir GitHub linki
+        github_link = self.kisi['github_link']
+
+        # URL'yi ayrıştır
+        parsed_link = urlparse(github_link)
+
+        # Path'i '/' karakterine göre böl ve son parçayı al (genellikle kullanıcı adı)
+        github_user = parsed_link.path.strip('/').split('/')[-1]
+        self.github_input = QLineEdit(github_user)
 
         # Butonlar için yatay layout
         buttonsLayout = QHBoxLayout()
@@ -121,7 +130,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
                 del self.data['katkida_bulunanlar'][index]  # Kişiyi listeden sil
 
                 # JSON dosyasını güncelle (Eğer dosyaya kaydedilmesi gerekiyorsa)
-                with open(JSON_YOLU, 'w') as file:
+                with open(JSON_YOLU, 'w',encoding='utf-8') as file:
                     json.dump(self.data, file, indent=4, ensure_ascii=False)
 
                 # Ana penceredeki listeyi yenile
@@ -145,7 +154,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         emin_mi = QMessageBox.question(self, 'Onay', 'Değişiklikleri kaydetmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         
         if emin_mi == QMessageBox.Yes:
-            yeni_github_link = self.github_input.text()
+            base_url = "https://github.com/"
+            yeni_github_link = base_url + self.github_input.text()
             # Linkin varlığını kontrol et
             try:
                 response = requests.get(yeni_github_link)
@@ -160,7 +170,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
             self.kisi['ad'] = self.ad_input.text()
             self.kisi['github_link'] = yeni_github_link
             try:
-                with open(JSON_YOLU, 'w') as file:
+                with open(JSON_YOLU, 'w',encoding='utf-8') as file:
                     json.dump(self.data, file, ensure_ascii=False, indent=4)
                 QMessageBox.information(self, 'Başarılı', 'Katkıda bulunan güncellendi!')
                 self.parent.butonlariYenile()  # Ana pencerenin butonlarını yenile

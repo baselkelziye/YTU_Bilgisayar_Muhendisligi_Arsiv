@@ -1,7 +1,9 @@
-
 # Proje Dokümantasyonu
 
 Bu README dosyası, projenin ana bileşenlerini ve her bir Python dosyasının işlevlerini açıklar.
+
+## Nasıl çalıştırırım?
+python3 main.py komutu ile çalıştırabilirsin.
 
 ## Dosyalar ve İşlevleri
 

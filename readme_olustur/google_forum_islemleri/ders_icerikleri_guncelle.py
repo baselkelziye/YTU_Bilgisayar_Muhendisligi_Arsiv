@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import json
+import shutil
 DERS_YILDIZLARI_DOSYASI = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
 DERS_YORUMLARI_DOSYASI = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
 
@@ -61,5 +62,5 @@ guncelle_ders_yildizlari(data, DERS_YILDIZLARI_DOSYASI)
 
 with open(os.path.join(json_file_path), 'w', encoding='utf-8') as file:
     json.dump(data, file, ensure_ascii=False, indent=4)
-
-os.system(f"cp {json_file_path} ../{json_file_path}")
+# Dosyayı kopyalamak için:
+shutil.copy(json_file_path, os.path.join("..",json_file_path))
