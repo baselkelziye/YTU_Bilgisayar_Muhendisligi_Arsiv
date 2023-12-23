@@ -59,7 +59,7 @@ class KatkidaBulunanEkleWindow(QDialog):
             try:
                 
                 # JSON dosyasını aç ve oku
-                with open(JSON_DOSYASI, 'r+') as file:
+                with open(JSON_DOSYASI, 'r+',encoding='utf-8') as file:
                     data = json.load(file)
 
                 # Case insensitive karşılaştırma yaparak ad ve URL kontrol et
@@ -75,7 +75,7 @@ class KatkidaBulunanEkleWindow(QDialog):
                         return
                     # Yeni veriyi ekle ve dosyayı güncelle
                     data['katkida_bulunanlar'].append({"ad": ad, "github_link": github_url})
-                    with open(JSON_DOSYASI, 'w') as file:
+                    with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
                         json.dump(data, file,ensure_ascii=False, indent=4)
                     QMessageBox.information(self, 'Başarılı', 'Katkıda bulunan eklendi!')
                     self.parent.butonlariYenile()

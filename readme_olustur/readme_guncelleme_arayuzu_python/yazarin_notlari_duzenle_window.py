@@ -35,7 +35,7 @@ class YazarinNotlariWindow(QDialog):
 
     def notlariYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r') as file:
+            with open(JSON_DOSYASI, 'r',encoding='utf-8') as file:
                 self.data = json.load(file)
                 for idx, not_ in enumerate(self.data['aciklamalar']):
                     btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
@@ -131,7 +131,7 @@ class NotDuzenleWindow(QDialog):
                 self.data['aciklamalar'][self.idx] = yeni_not
 
             try:
-                with open(JSON_DOSYASI, 'w') as file:
+                with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
                     json.dump(self.data, file, ensure_ascii=False, indent=4)
                 QMessageBox.information(self, 'Başarılı', 'Yazarın notları güncellendi!')
                 self.parent.notlariYenile()
@@ -148,7 +148,7 @@ class NotDuzenleWindow(QDialog):
     def kaydetVeKapat(self):
         # Değişiklikleri kaydet ve pencereyi kapat
         try:
-            with open(JSON_DOSYASI, 'w') as file:
+            with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.notlariYenile()
