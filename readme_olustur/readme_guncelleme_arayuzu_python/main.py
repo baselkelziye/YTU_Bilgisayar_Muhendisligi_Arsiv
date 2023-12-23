@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout,QProgressDialog, QMessageBox
+from PyQt5.QtWidgets import QApplication,QDesktopWidget, QWidget, QPushButton, QVBoxLayout,QProgressDialog, QMessageBox
 from PyQt5.QtCore import Qt
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
@@ -9,19 +9,15 @@ from script_calistirici_thread import ScriptRunnerThread
 class App(QWidget):
     def __init__(self):
         super().__init__()
-        self.title = 'PyQt5 Butonlar'
-        self.left = 100
-        self.top = 100
+        self.title = 'Readme Düzenleyici'
         self.width = 320
         self.height = 200
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle(self.title)
-        self.setGeometry(self.left, self.top, self.width, self.height)
 
         layout = QVBoxLayout()
-
         # Butonları oluştur
         self.buttons = [
             QPushButton('Katkıda Bulunan Ekle/Güncelle'),
@@ -43,6 +39,14 @@ class App(QWidget):
         # Layout'u ayarla
         self.setLayout(layout)
         self.show()
+        self.center(),
+
+    def center(self):
+        # Pencereyi ekranın ortasına al
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.bottomRight())
     def acKatkidaBulunanEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.katkidaBulunanGuncelleWindow = KatkidaBulunanGuncelleWindow()
@@ -61,9 +65,10 @@ class App(QWidget):
         self.dersEkleGuncelleWindow.show()
 
     def readmeScriptiCalistir(self):
-        self.progressDialog = QProgressDialog("README.md dosyaları oluşturuluyor...", "İptal", 0, 0, self)
+        self.progressDialog = QProgressDialog("README.md dosyaları oluşturuluyor...", None, 0, 0, self)
         self.progressDialog.setCancelButton(None)  # İptal butonunu devre dışı bırak
         self.progressDialog.setWindowModality(Qt.WindowModal)
+        self.progressDialog.setWindowFlags(self.progressDialog.windowFlags() & ~Qt.WindowCloseButtonHint)  # Kapatma butonunu devre dışı bırak
         self.progressDialog.show()
 
         paths = ('../google_forum_islemleri', '..')

@@ -10,9 +10,9 @@ class ScriptRunnerThread(QThread):
 
     def run(self):
         try:
-            subprocess.run('python3 hoca_icerikleri_guncelle.py\n', shell=True, cwd=self.google_forum_islemleri_path)
-            subprocess.run('python3 ders_icerikleri_guncelle.py\n', shell=True, cwd=self.google_forum_islemleri_path)
-            subprocess.run('python3 readme_olustur.py\n', shell=True, cwd=self.readme_olustur_path)
+            subprocess.run('python3 hoca_icerikleri_guncelle.py\n', shell=True, cwd=self.google_forum_islemleri_path, check=True)
+            subprocess.run('python3 ders_icerikleri_guncelle.py\n', shell=True, cwd=self.google_forum_islemleri_path, check=True)
+            subprocess.run('python3 readme_olustur.py\n', shell=True, cwd=self.readme_olustur_path, check=True)
             self.finished.emit()
         except subprocess.CalledProcessError as e:
             self.error.emit(str(e))

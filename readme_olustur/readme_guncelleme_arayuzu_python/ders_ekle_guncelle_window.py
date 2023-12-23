@@ -1,10 +1,35 @@
-import sys
+import os
 import json
 from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QApplication, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
 JSON_PATH = '../dersler.json'
 HOCA_JSON_PATH = '../hocalar.json'
-
+def hoca_kisaltma_olustur(isim):
+    """
+    Bir isimden kısaltma oluşturur ve unvanları (Doç. Dr., Prof. Dr., Dr. vb.) atar.
+    Örneğin "Prof. Dr. Ahmet Elbir" için "AEL", "Dr. Göksel Biricik" için "GB" döndürür.
+    """
+    if not  isim:
+        return None
+    # Unvanları ve noktaları kaldır
+    for unvan in ["Prof. Dr.", "Doç. Dr.", "Dr.", "Prof.", "Doç."]:
+        isim = isim.replace(unvan, "")
+    isim = isim.replace(".", "").strip()
+    if "Elbir" in isim:
+        return "AEL"
+    if "Biricik" in isim:
+        return "G1"
+    # İsimleri ayır ve baş harfleri al
+    parcalar = isim.split()
+    if len(parcalar) == 1:  # Eğer sadece bir isim varsa
+        return parcalar[0][:2].upper()
+    else:
+        # İlk iki ismin baş harflerini ve son ismin ilk harfini al
+        kisaltma = ''.join(parca[0].upper() for parca in parcalar[:-1])
+        kisaltma += parcalar[-1][0].upper()
+        if len(parcalar[-1]) == 1:  # Eğer son isim sadece bir harf ise (örneğin "M.")
+            kisaltma += str(len(parcalar))  # Sıra numarasını ekle (örneğin "MAG" yerine "MAG1")
+        return kisaltma
 class DersEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -38,8 +63,18 @@ class DersEkleGuncelleWindow(QDialog):
    
     def dersleriYukle(self):
         try:
-            # Türkçe karakterlere göre sıralama için locale ayarla
+            # Öncelikle Türkçe locale'i dene
             locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
+        except locale.Error:
+            try:
+                # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
+                #os.system('sudo locale-gen tr_TR.UTF-8')
+                # Alternatif olarak başka bir Türkçe locale dene
+                locale.setlocale(locale.LC_ALL, 'tr_TR')
+            except locale.Error:
+                # Varsayılan locale'e geri dön
+                locale.setlocale(locale.LC_ALL, '')
+        try:
 
             with open(JSON_PATH, 'r') as file:
                 self.data = json.load(file)
@@ -70,17 +105,18 @@ class DersEkleGuncelleWindow(QDialog):
         self.dersleriYukle()
 
 class DersDuzenlemeWindow(QDialog):
-    def __init__(self, ders, data, parent):
-        super().__init__()
+    def __init__(self, ders,data, parent):
+        super().__init__(parent)
         self.ders = ders
         self.data = data
         self.parent = parent
         self.setModal(True)
+        self.hocalarComboBoxlar = []  # Hoca seçimi için ComboBox'lar listesi
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle('Ders Düzenle/Ekle')
-        self.setGeometry(100, 100, 400, 600)  # Pencere boyutunu ayarla
+        self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu ayarla
 
         self.layout = QVBoxLayout(self)
 
@@ -112,11 +148,30 @@ class DersDuzenlemeWindow(QDialog):
         if self.ders:
             self.tipInput.setCurrentText(self.ders['tip'])
         self.layout.addWidget(self.tipInput)
-
-        # Dersi veren hocalar için alan
-        self.layout.addWidget(QLabel('Dersi Veren Hocalar (Kısaltma):'))
-        self.hocalarInput = QLineEdit(','.join(hoca['kisaltma'] for hoca in self.ders['dersi_veren_hocalar']) if self.ders and 'dersi_veren_hocalar' in self.ders else '')
-        self.layout.addWidget(self.hocalarInput)
+        self.layout.addWidget(QLabel('Dersi Veren Hocalar'))
+        # Dersi veren hocalar için ComboBox'lar
+        # Mevcut hocaları yükle
+        with open(HOCA_JSON_PATH, 'r') as file:
+            hoca_data = json.load(file)
+        # Hoca adlarını ve kısaltmalarını hazırla
+        self.hoca_listesi = [(h['ad'], hoca_kisaltma_olustur(h['ad'])) for h in hoca_data['hocalar']]
+        # Hocalar için kaydırılabilir alan oluştur
+        self.hocaScrollArea = QScrollArea(self)  # ScrollArea oluştur
+        self.hocaScrollArea.setWidgetResizable(True)
+        
+        # Hocaların gösterileceği widget
+        self.hocaScrollWidget = QWidget()
+        self.hocalarLayout = QVBoxLayout(self.hocaScrollWidget)
+        self.hocaScrollArea.setWidget(self.hocaScrollWidget)  # ScrollArea'ya widget ekle
+        self.layout.addWidget(self.hocaScrollArea)  # Ana layout'a ScrollArea ekle
+        if self.ders and 'dersi_veren_hocalar' in self.ders:
+            for hoca in self.ders['dersi_veren_hocalar']:
+                self.ekleHocaComboBox(hoca)
+        # Ekle (+) butonu
+        self.ekleHocaBtn = QPushButton('Dersi Veren Hoca Ekle', self)
+        self.ekleHocaBtn.setStyleSheet("background-color: lightblue;")
+        self.ekleHocaBtn.clicked.connect(self.ekleHocaComboBox)
+        self.layout.addWidget(self.ekleHocaBtn)
 
         # Kaydet ve Sil butonları (sil butonu sadece düzenleme modunda görünür)
         buttonsLayout = QHBoxLayout()
@@ -137,46 +192,85 @@ class DersDuzenlemeWindow(QDialog):
 
         self.layout.addLayout(buttonsLayout)
 
+    def ekleHocaComboBox(self, hoca=None):
+        
+
+        # Yeni ComboBox oluştur
+        comboBox = QComboBox(self)
+        for ad, kisaltma in self.hoca_listesi:
+            comboBox.addItem(f"{ad} ({kisaltma})", kisaltma)  # Ad ve kısaltmayı ekle
+
+        # Eğer kısaltma verildiyse, onu ComboBox'da seç
+        if hoca:
+            comboBox.setCurrentText(f"{hoca['ad']} ({hoca['kisaltma']})")
+
+        # Sil (-) butonu
+        silBtn = QPushButton('Dersi Veren Hocayı Sil', self)
+        silBtn.setStyleSheet("background-color: rgb(255, 102, 102);")
+        silBtn.clicked.connect(lambda: self.silHocaComboBox(comboBox, silBtn))
+
+        hocaLayout = QHBoxLayout()
+        hocaLayout.addWidget(comboBox)
+        hocaLayout.addWidget(silBtn)
+        self.hocalarLayout.addLayout(hocaLayout)  # Hoca layout'una ekle, bu self.hocaScrollWidget'a bağlı
+
+
+        # ComboBox listesini güncelle
+        self.hocalarComboBoxlar.append((comboBox, silBtn))
+
+    def silHocaComboBox(self, comboBox, silBtn):
+        # ComboBox ve sil butonunu kaldır
+        self.hocalarLayout.removeWidget(comboBox)
+        comboBox.deleteLater()
+        self.hocalarLayout.removeWidget(silBtn)
+        silBtn.deleteLater()
+        # Listeden kaldır
+        self.hocalarComboBoxlar.remove((comboBox, silBtn))
+
     def kaydet(self):
         ad = self.adInput.text().strip()
         yil = int(self.yilInput.currentText())
         donem = self.donemInput.currentText()
         tip = self.tipInput.currentText()
-        hocalar = [{'kisaltma': hoca.strip()} for hoca in self.hocalarInput.text().split(',') if hoca.strip()]
-
+        # Seçili hocaların kısaltmalarını al
+        hocalar_kisaltmalar = [combo.currentData() for combo, _ in self.hocalarComboBoxlar]
+        
+        # Kısaltmaların benzersiz olup olmadığını kontrol et
+        if len(hocalar_kisaltmalar) != len(set(hocalar_kisaltmalar)):
+            QMessageBox.warning(self, 'Hata', 'Aynı hocayı birden fazla kez seçemezsiniz!')
+            return
+        # Seçili hocaların kısaltmalarını al
+        hocalar = [{'kisaltma': combo.currentData(), 'ad': combo.currentText().split(' (')[0]}
+                   for combo, _ in self.hocalarComboBoxlar]
+        
         # Ders adı boş olamaz kontrolü
         if not ad:
             QMessageBox.warning(self, 'Hata', 'Ders adı boş olamaz!')
             return
 
-        # Mevcut dersleri kontrol et
-        if any(ders['ad'].lower() == ad.lower() for ders in self.data['dersler'] if ders != self.ders):
+        # Mevcut dersleri kontrol et (yeni ders ekleniyorsa)
+        if not self.ders and any(d['ad'].lower() == ad.lower() for d in self.data['dersler']):
             QMessageBox.warning(self, 'Hata', 'Bu isimde bir ders zaten var!')
             return
 
-        # Ders ekleme veya güncelleme işlemi için onay iste
-        onay_mesaji = 'Dersi güncellemek istediğinden emin misin?' if self.ders else 'Yeni dersi eklemek istediğinden emin misin?'
-        emin_mi = QMessageBox.question(self, 'Onay', onay_mesaji, QMessageBox.Yes | QMessageBox.No)
+        # Ders bilgilerini güncelle veya yeni ders ekle
+        ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
+        if self.ders:  # Düzenleme modunda
+            self.data['dersler'].remove(self.ders)
+            self.data['dersler'].append(ders_data)
+        else:  # Ekleme modunda
+            self.data['dersler'].append(ders_data)
 
-        if emin_mi == QMessageBox.Yes:
-            # Ders bilgilerini güncelle veya yeni ders ekle
-            if self.ders:  # Düzenleme modunda
-                self.ders.update({"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar})
-            else:  # Ekleme modunda
-                yeni_ders = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
-                self.data['dersler'].append(yeni_ders)
-
-            # Değişiklikleri kaydet
-            self.kaydetVeKapat()
-        else:
-            # Kullanıcı işlemi iptal etti
-            QMessageBox.information(self, 'İptal Edildi', 'İşlem iptal edildi.')
-
+        # Değişiklikleri kaydet
+        self.kaydetVeKapat()
 
     def sil(self):
-        # Dersi sil
+        if not self.ders:
+            QMessageBox.warning(self, 'Hata', 'Silinecek ders bulunamadı!')
+            return
+
         emin_mi = QMessageBox.question(self, 'Onay', f'{self.ders["ad"]} dersini silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
-        if emin_mi == QMessageBox.Yes and self.ders:
+        if emin_mi == QMessageBox.Yes:
             self.data['dersler'].remove(self.ders)
             self.kaydetVeKapat()
 
