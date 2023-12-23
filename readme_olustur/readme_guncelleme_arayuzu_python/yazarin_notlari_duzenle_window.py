@@ -1,6 +1,6 @@
 import sys
 import json
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
+from PyQt5.QtWidgets import QDialog, QVBoxLayout, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
 JSON_DOSYASI = '../yazarin_notlari.json'
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
@@ -9,7 +9,7 @@ class YazarinNotlariWindow(QDialog):
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('Yazarın Notları')
+        self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
         self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu büyüt
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
@@ -72,13 +72,15 @@ class NotDuzenleWindow(QDialog):
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('Not Düzenle')
+        if self.idx is not None:  # Düzenleme modunda
+            self.setWindowTitle('Not Düzenle')
+        else:
+            self.setWindowTitle('Not Ekle')
         self.resize(400, 300)  # Pencereyi daha büyük aç
         self.layout = QVBoxLayout(self)
 
         # QTextEdit ile çok satırlı metin alanı oluştur
         self.notInput = QTextEdit(self)
-        self.notInput.setWordWrapMode(True)  # Uzun metinleri yeni satıra taşı
         if self.idx is not None:  # Düzenleme modunda
             self.notInput.setText(self.data['aciklamalar'][self.idx])
         self.layout.addWidget(self.notInput)
@@ -103,6 +105,14 @@ class NotDuzenleWindow(QDialog):
             buttonLayout.addWidget(self.silBtn)
 
         self.layout.addLayout(buttonLayout)  # Buton düzenini ana düzene ekle
+        self.center()  # Pencereyi ekranın merkezine yerleştir.
+
+    def center(self):
+        # Pencereyi ekranın ortasına al
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
 
     def kaydet(self):
         yeni_not = self.notInput.toPlainText().strip() 
