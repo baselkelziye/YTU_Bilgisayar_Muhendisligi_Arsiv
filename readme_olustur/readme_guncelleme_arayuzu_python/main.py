@@ -10,13 +10,13 @@ class App(QWidget):
     def __init__(self):
         super().__init__()
         self.title = 'Readme Düzenleyici'
-        self.width = 320
+        self.width = 540
         self.height = 200
         self.initUI()
 
     def initUI(self):
         self.setWindowTitle(self.title)
-
+        self.resize(self.width, self.height)
         layout = QVBoxLayout()
         # Butonları oluştur
         self.buttons = [
@@ -46,7 +46,7 @@ class App(QWidget):
         qr = self.frameGeometry()
         cp = QDesktopWidget().availableGeometry().center()
         qr.moveCenter(cp)
-        self.move(qr.bottomRight())
+        self.move(qr.topLeft())
     def acKatkidaBulunanEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.katkidaBulunanGuncelleWindow = KatkidaBulunanGuncelleWindow()
@@ -66,6 +66,7 @@ class App(QWidget):
 
     def readmeScriptiCalistir(self):
         self.progressDialog = QProgressDialog("README.md dosyaları oluşturuluyor...", None, 0, 0, self)
+        self.progressDialog.setWindowTitle("Yürütülüyor...")
         self.progressDialog.setCancelButton(None)  # İptal butonunu devre dışı bırak
         self.progressDialog.setWindowModality(Qt.WindowModal)
         self.progressDialog.setWindowFlags(self.progressDialog.windowFlags() & ~Qt.WindowCloseButtonHint)  # Kapatma butonunu devre dışı bırak
