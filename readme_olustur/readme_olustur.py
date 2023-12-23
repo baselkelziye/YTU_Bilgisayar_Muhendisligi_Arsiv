@@ -111,15 +111,17 @@ def dersleri_readme_ye_ekle(dersler):
                 populer_bilgi = f" En popüler ders ({en_populer_ders_oy_sayisi} oy)" if ders['ad'] == en_populer_ders_adi else ""
                 f.write(f"- 📘 **{ders['ad']}** {populer_isaret}{populer_bilgi}\n")
                 f.write(f"  - 🏷️ **Ders Tipi:** {ders['tip']}\n")
-                if ders['ogrenci_gorusleri']:
+                if 'ogrenci_gorusleri' in ders and ders['ogrenci_gorusleri']:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders['ogrenci_gorusleri']:
                         f.write(f"    - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
                     f.write(f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
 
                 f.write("  - ⭐ **Yıldız Sayıları:**\n")
-                f.write(f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-                f.write(f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
+                if 'kolaylik_puani' in ders:
+                    f.write(f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+                if 'gereklilik_puani' in ders:
+                    f.write(f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n")
                 if "oy_sayisi" in ders:
                     f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                 else:
@@ -268,7 +270,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         f.write(f"- 📅 **Yıl:** {ders['yil']}\n")
         f.write(f"- 📆 **Dönem:** {ders['donem']}\n")
         f.write(f"- 🏫 **Ders Tipi:** {ders['tip']}\n")
-        if ders['ogrenci_gorusleri']:
+        if 'ogrenci_gorusleri' and ders['ogrenci_gorusleri']:
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             for gorus in ders['ogrenci_gorusleri']:
                 f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
