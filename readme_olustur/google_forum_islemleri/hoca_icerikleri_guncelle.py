@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 import os
-
+import shutil
 
 temel_puan = 30
 # Google Sheets dosyasının URL'si
@@ -69,4 +69,5 @@ guncelle_ogrenci_gorusleri(data, yorumlar_sheets_url)
 with open(json_file_path, 'w', encoding='utf-8') as file:
     json.dump(data, file, ensure_ascii=False, indent=4)
 
-os.system(f"cp {json_file_path} ../{json_file_path}")
+# Dosyayı kopyalamak için:
+shutil.copy(json_file_path, os.path.join("..",json_file_path))

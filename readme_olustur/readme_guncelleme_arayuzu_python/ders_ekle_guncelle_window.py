@@ -76,7 +76,7 @@ class DersEkleGuncelleWindow(QDialog):
                 locale.setlocale(locale.LC_ALL, '')
         try:
 
-            with open(JSON_PATH, 'r') as file:
+            with open(JSON_PATH, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
                 # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
                 sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
@@ -151,7 +151,7 @@ class DersDuzenlemeWindow(QDialog):
         self.layout.addWidget(QLabel('Dersi Veren Hocalar'))
         # Dersi veren hocalar için ComboBox'lar
         # Mevcut hocaları yükle
-        with open(HOCA_JSON_PATH, 'r') as file:
+        with open(HOCA_JSON_PATH, 'r',encoding='utf-8') as file:
             hoca_data = json.load(file)
         # Hoca adlarını ve kısaltmalarını hazırla
         self.hoca_listesi = [(h['ad'], hoca_kisaltma_olustur(h['ad'])) for h in hoca_data['hocalar']]
@@ -277,7 +277,7 @@ class DersDuzenlemeWindow(QDialog):
     def kaydetVeKapat(self):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
-            with open(JSON_PATH, 'w') as file:
+            with open(JSON_PATH, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.dersleriYenile()
