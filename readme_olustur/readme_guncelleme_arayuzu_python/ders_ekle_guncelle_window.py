@@ -48,10 +48,15 @@ class DersEkleGuncelleWindow(QDialog):
         self.ekleBtn.clicked.connect(self.dersEkle)
         self.mainLayout.addWidget(self.ekleBtn)
 
+        # Ders sayısını gösteren etiket
+        self.dersSayisiLabel = QLabel('Toplam 0 ders')
+        self.dersSayisiLabel.setFixedHeight(20)
+        self.mainLayout.addWidget(self.dersSayisiLabel)
+
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.scrollArea.setWidgetResizable(True)
-        
+
         # Dersleri gösterecek widget
         self.scrollWidget = QWidget()
         self.derslerLayout = QVBoxLayout(self.scrollWidget)
@@ -78,6 +83,9 @@ class DersEkleGuncelleWindow(QDialog):
 
             with open(JSON_PATH, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
+                ders_sayisi = len(self.data['dersler'])  # Ders sayısını hesapla
+                self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
+
                 # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
                 sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
 
