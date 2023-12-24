@@ -335,7 +335,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     f.write(f"- 📅 **Yıl:** {ders['yil']}\n")
                     f.write(f"- 📆 **Dönem:** {ders['donem']}\n")
                     f.write(f"- 🏫 **Ders Tipi:** {ders['tip']}\n")
-                    if ders['ogrenci_gorusleri']:
+                    if 'ogrenci_gorusleri' in ders and ders['ogrenci_gorusleri']:
                         f.write(f"- 💬 **Öğrenci Görüşleri:**\n")  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
                         for gorus in ders['ogrenci_gorusleri']:
                             f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")  # Kişi emoji, öğrenciyi temsil eder
