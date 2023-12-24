@@ -4,6 +4,14 @@ from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLi
 import locale
 JSON_PATH = '../dersler.json'
 HOCA_JSON_PATH = '../hocalar.json'
+
+# Hoca adlarını ve kısaltmalarını hazırla
+unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3}
+def hoca_sirala(hoca):
+    ad = hoca[0].strip()
+    unvan = next((u for u in unvanlar if ad.startswith(u)), None)
+    return (unvanlar.get(unvan, 4), ad)
+
 def hoca_kisaltma_olustur(isim):
     """
     Bir isimden kısaltma oluşturur ve unvanları (Doç. Dr., Prof. Dr., Dr. vb.) atar.
@@ -136,9 +144,9 @@ class DersDuzenlemeWindow(QDialog):
         # Ders yılı için alan
         self.layout.addWidget(QLabel('Yıl:'))
         self.yilInput = QComboBox(self)
-        self.yilInput.addItems(['1', '2', '3', '4'])
+        self.yilInput.addItems(['0','1', '2', '3', '4'])
         if self.ders:
-            self.yilInput.setCurrentIndex(self.ders['yil'] - 1)
+            self.yilInput.setCurrentIndex(self.ders['yil'])
         self.layout.addWidget(self.yilInput)
 
         # Ders dönemi için alan
@@ -161,8 +169,15 @@ class DersDuzenlemeWindow(QDialog):
         # Mevcut hocaları yükle
         with open(HOCA_JSON_PATH, 'r',encoding='utf-8') as file:
             hoca_data = json.load(file)
-        # Hoca adlarını ve kısaltmalarını hazırla
-        self.hoca_listesi = [(h['ad'], hoca_kisaltma_olustur(h['ad'])) for h in hoca_data['hocalar']]
+
+        hoca_listesi = [
+            (h['ad'], hoca_kisaltma_olustur(h['ad']))
+            for h in hoca_data['hocalar']
+            if h['ad'].strip() and hoca_kisaltma_olustur(h['ad']).strip()
+        ]
+
+        self.hoca_listesi = sorted(hoca_listesi, key=hoca_sirala)
+
         # Hocalar için kaydırılabilir alan oluştur
         self.hocaScrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.hocaScrollArea.setWidgetResizable(True)
@@ -237,7 +252,10 @@ class DersDuzenlemeWindow(QDialog):
 
     def kaydet(self):
         ad = self.adInput.text().strip()
-        yil = int(self.yilInput.currentText())
+        try:
+            yil = int(self.yilInput.currentText())
+        except:
+            yil = 0
         donem = self.donemInput.currentText()
         tip = self.tipInput.currentText()
         # Seçili hocaların kısaltmalarını al
@@ -263,11 +281,20 @@ class DersDuzenlemeWindow(QDialog):
 
         # Ders bilgilerini güncelle veya yeni ders ekle
         ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
+        # Dersi bulma ve güncelleme
         if self.ders:  # Düzenleme modunda
-            self.data['dersler'].remove(self.ders)
-            self.data['dersler'].append(ders_data)
+            # Mevcut dersin referansını bulun
+            mevcut_ders = next((d for d in self.data['dersler'] if d == self.ders), None)
+            if mevcut_ders:
+                # Yalnızca belirli alanları güncelleyin
+                mevcut_ders["ad"] = ad
+                mevcut_ders["yil"] = yil
+                mevcut_ders["donem"] = donem
+                mevcut_ders["tip"] = tip
+                mevcut_ders["dersi_veren_hocalar"] = hocalar
         else:  # Ekleme modunda
             self.data['dersler'].append(ders_data)
+
 
         # Değişiklikleri kaydet
         self.kaydetVeKapat()
