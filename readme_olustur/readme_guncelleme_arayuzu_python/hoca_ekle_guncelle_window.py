@@ -21,10 +21,15 @@ class HocaEkleGuncelleWindow(QDialog):
         self.ekleBtn.clicked.connect(self.hocaEkle)
         self.mainLayout.addWidget(self.ekleBtn)
 
+        # Hoca sayısını gösteren etiket
+        self.hocaSayisiLabel = QLabel('Toplam 0 hoca')
+        self.hocaSayisiLabel.setFixedHeight(20)
+        self.mainLayout.addWidget(self.hocaSayisiLabel)
+
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.scrollArea.setWidgetResizable(True)
-        
+
         # Hocaları gösterecek iç içe geçmiş widget'lar oluştur
         self.scrollWidget = QWidget()
         self.hocalarLayout = QVBoxLayout(self.scrollWidget)
@@ -35,9 +40,10 @@ class HocaEkleGuncelleWindow(QDialog):
 
     def hocalariYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r',encoding='utf-8') as file:
+            with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
-
+                hoca_sayisi = len(self.data['hocalar'])  # Hoca sayısını hesapla
+                self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
                 def unvan_ve_isim_ayir(hoca):
                     # Ünvanları ve sıralama önceliklerini tanımla
                     unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3, '': 4}

@@ -1,6 +1,6 @@
 import sys
 import json
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
+from PyQt5.QtWidgets import QDialog, QVBoxLayout,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
 JSON_DOSYASI = '../yazarin_notlari.json'
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
@@ -20,6 +20,11 @@ class YazarinNotlariWindow(QDialog):
         self.ekleBtn.clicked.connect(self.notEkle)
         self.mainLayout.addWidget(self.ekleBtn)  # Ana layout'a ekle butonunu ekle
 
+        # Not sayısını gösteren etiket
+        self.notSayisiLabel = QLabel('Toplam 0 not')
+        self.notSayisiLabel.setFixedHeight(20)
+        self.mainLayout.addWidget(self.notSayisiLabel)
+
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.scrollArea.setWidgetResizable(True)
@@ -35,14 +40,18 @@ class YazarinNotlariWindow(QDialog):
 
     def notlariYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r',encoding='utf-8') as file:
+            with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
+                not_sayisi = len(self.data['aciklamalar'])  # Not sayısını hesapla
+                self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
+
                 for idx, not_ in enumerate(self.data['aciklamalar']):
                     btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
                     btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
                     self.notlarLayout.addWidget(btn)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
+
 
 
 
