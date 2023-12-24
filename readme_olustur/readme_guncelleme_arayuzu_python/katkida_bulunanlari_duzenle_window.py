@@ -16,7 +16,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu ayarla
-
+        self.setMinimumHeight(200)
+        self.setMinimumWidth(600)
         self.mainLayout = QVBoxLayout(self)  # Ana layout
 
         # Ekle butonu
@@ -39,18 +40,20 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def butonlariYukle(self):
         # JSON dosyasını oku ve butonları oluştur
         try:
-            with open(JSON_YOLU, 'r',encoding='utf-8') as file:
+            with open(JSON_YOLU, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
+                katkidaBulunanSayisi = len(self.data['katkida_bulunanlar'])  # Toplam katkıda bulunan sayısı
+                self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
+                self.katkidaBulunanSayisiLabel.setFixedHeight(20)
+                self.layout.addWidget(self.katkidaBulunanSayisiLabel)
+
                 for kisi in self.data['katkida_bulunanlar']:
                     btn = QPushButton(kisi['ad'], self)
                     btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
                     self.layout.addWidget(btn)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-    def acKatkidaBulunanEkle(self):
-        # Katkıda Bulunan Ekle penceresini aç
-        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self)
-        self.katkidaBulunanEkleWindow.show()
+
     def butonlariYenile(self):
         # Mevcut butonları temizle
         for i in reversed(range(self.layout.count())): 
@@ -60,6 +63,9 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         
         # Yeniden butonları yükle
         self.butonlariYukle()
+    def acKatkidaBulunanEkle(self):
+        # Katkıda Bulunan Ekle penceresini aç
+        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self)
 
     def duzenle(self, kisi):
         self.duzenlemePenceresi = KatkidaBulunanDuzenleWindow(kisi, self.data, self)
