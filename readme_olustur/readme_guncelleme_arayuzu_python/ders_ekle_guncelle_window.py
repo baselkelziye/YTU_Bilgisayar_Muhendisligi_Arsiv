@@ -152,7 +152,7 @@ class DersDuzenlemeWindow(QDialog):
         # Ders dönemi için alan
         self.layout.addWidget(QLabel('Dönem:'))
         self.donemInput = QComboBox(self)
-        self.donemInput.addItems(['Güz', 'Bahar'])
+        self.donemInput.addItems(['Yok','Güz', 'Bahar'])
         if self.ders:
             self.donemInput.setCurrentText(self.ders['donem'])
         self.layout.addWidget(self.donemInput)
@@ -279,8 +279,6 @@ class DersDuzenlemeWindow(QDialog):
             QMessageBox.warning(self, 'Hata', 'Bu isimde bir ders zaten var!')
             return
 
-        # Ders bilgilerini güncelle veya yeni ders ekle
-        ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
         # Dersi bulma ve güncelleme
         if self.ders:  # Düzenleme modunda
             # Mevcut dersin referansını bulun
@@ -289,10 +287,12 @@ class DersDuzenlemeWindow(QDialog):
                 # Yalnızca belirli alanları güncelleyin
                 mevcut_ders["ad"] = ad
                 mevcut_ders["yil"] = yil
-                mevcut_ders["donem"] = donem
+                mevcut_ders["donem"] = donem if donem != 'Yok' else ''
                 mevcut_ders["tip"] = tip
                 mevcut_ders["dersi_veren_hocalar"] = hocalar
         else:  # Ekleme modunda
+            # Ders bilgilerini güncelle veya yeni ders ekle
+            ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
             self.data['dersler'].append(ders_data)
 
 
