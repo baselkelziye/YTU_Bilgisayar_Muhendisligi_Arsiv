@@ -45,7 +45,8 @@
                 }
             ],
             "kolaylik_puani": 50,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Matematik 1",
@@ -59,7 +60,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 20
+            "gereklilik_puani": 20,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Lineer Cebir",
@@ -73,7 +75,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 30
+            "gereklilik_puani": 30,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 1",
@@ -87,7 +90,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İleri İngilizce 1",
@@ -101,7 +105,8 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
@@ -115,7 +120,8 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Yapısal Programlamaya Giriş",
@@ -192,7 +198,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Mühendisler için Yarıiletken Fiziği",
@@ -206,7 +213,8 @@
                 }
             ],
             "kolaylik_puani": 30,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Matematik 2",
@@ -220,7 +228,8 @@
                 }
             ],
             "kolaylik_puani": 50,
-            "gereklilik_puani": 20
+            "gereklilik_puani": 20,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İleri İngilizce 2",
@@ -234,7 +243,8 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İstatistik ve Olasılık Hesapları",
@@ -368,7 +378,17 @@
                 }
             ],
             "kolaylik_puani": 90,
-            "gereklilik_puani": 90
+            "gereklilik_puani": 90,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "GB",
+                    "ad": "Doç. Dr. Gökhan Bilgin"
+                },
+                {
+                    "kisaltma": "HOİ",
+                    "ad": "Dr. Hamza Osman İlhan"
+                }
+            ]
         },
         {
             "ad": "Nesneye Yönelik Programlama",
@@ -382,7 +402,21 @@
                 }
             ],
             "kolaylik_puani": 60,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MSA",
+                    "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
+                },
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                },
+                {
+                    "ad": "Dr. Yunus Emre Selçuk",
+                    "kisaltma": "YES"
+                }
+            ]
         },
         {
             "ad": "Bilgisayar Donanımı",
@@ -405,6 +439,16 @@
                         "ödevleri yapın"
                     ]
                 }
+            ],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                },
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                }
             ]
         },
         {
@@ -426,6 +470,16 @@
                     "oneriler": [
                         "şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli"
                     ]
+                }
+            ],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "HOİ",
+                    "ad": "Dr. Hamza Osman İlhan"
+                },
+                {
+                    "kisaltma": "GB",
+                    "ad": "Doç. Dr. Gökhan Bilgin"
                 }
             ]
         },
@@ -451,6 +505,16 @@
                         "Proje konusu ve birçok proje örneği githubda mevcut."
                     ]
                 }
+            ],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "OK",
+                    "ad": "Prof. Dr. Oya Kalıpsız"
+                },
+                {
+                    "kisaltma": "G1",
+                    "ad": "Dr. Göksel Biricik"
+                }
             ]
         },
         {
@@ -472,6 +536,12 @@
                     "oneriler": [
                         "vize görece kolay olur yüksek kalırsan geçersin"
                     ]
+                }
+            ],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "OA",
+                    "ad": "Dr. Oğuz Altun"
                 }
             ]
         },
@@ -497,6 +567,12 @@
                     "oneriler": [
                         "ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar"
                     ]
+                }
+            ],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "G1",
+                    "ad": "Dr. Göksel Biricik"
                 }
             ]
         },
@@ -525,7 +601,8 @@
                         "Çıkmış çözmeniz lazım."
                     ]
                 }
-            ]
+            ],
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Algoritma Analizi",
@@ -579,7 +656,8 @@
             ],
             "faydali_olabilecek_kaynaklar": [
                 "80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"
-            ]
+            ],
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Veritabanı Yönetimi",
@@ -593,7 +671,13 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MUK",
+                    "ad": "Dr. M. Utku Kalay"
+                }
+            ]
         },
         {
             "ad": "Veri İletişimi",
@@ -607,7 +691,13 @@
                 }
             ],
             "kolaylik_puani": 60,
-            "gereklilik_puani": 90
+            "gereklilik_puani": 90,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                }
+            ]
         },
         {
             "ad": "Ağ Teknolojileri",
@@ -636,7 +726,8 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Bilgisayar Projesi",
@@ -650,7 +741,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Mesleki Hukuk ve Etik",
@@ -664,7 +756,8 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 20
+            "gereklilik_puani": 20,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Yazılım Mühendisliği",
@@ -681,7 +774,8 @@
                 "[Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir."
             ],
             "kolaylik_puani": 50,
-            "gereklilik_puani": 10
+            "gereklilik_puani": 10,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Bilişim Sistemleri Güvenliği",
@@ -690,7 +784,8 @@
             "ogrenci_gorusleri": [],
             "tip": "Mesleki Seçmeli",
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Gömülü Sistemler",
@@ -707,7 +802,13 @@
             ],
             "tip": "Mesleki Seçmeli",
             "kolaylik_puani": 60,
-            "gereklilik_puani": 80
+            "gereklilik_puani": 80,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                }
+            ]
         },
         {
             "ad": "Türkçe 1",
@@ -717,7 +818,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 100,
             "gereklilik_puani": 10,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
@@ -741,7 +843,8 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Bitirme Çalışması",
@@ -758,7 +861,8 @@
                 "[Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir."
             ],
             "kolaylik_puani": 60,
-            "gereklilik_puani": 100
+            "gereklilik_puani": 100,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Türkçe 2",
@@ -767,7 +871,8 @@
             "tip": "Zorunlu",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Bilgiye Erişim Ve Arama Motorları",
@@ -776,7 +881,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Oyun Geliştirmeye Giriş",
@@ -785,7 +891,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Mobil Programlamaya Giriş",
@@ -817,7 +924,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "İstatistiksel Veri Analizi",
@@ -826,7 +934,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Sayısal İşaret İşleme",
@@ -859,7 +968,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Biyoenformatiğe Giriş",
@@ -868,7 +978,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Büyük Veri İşleme Ve Analizi",
@@ -877,7 +988,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Yapay Zeka",
@@ -909,7 +1021,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Görüntü İşleme",
@@ -918,7 +1031,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Doğal Dil İşlemeye Giriş",
@@ -955,7 +1069,13 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MFA",
+                    "ad": "Prof. Dr. M. Fatih Amasyalı"
+                }
+            ]
         },
         {
             "ad": "Veri Tabanı Sistemlerinde Güncel Konular",
@@ -1019,7 +1139,8 @@
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Veri Madenciliğine Giriş",
@@ -1033,7 +1154,8 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 80
+            "gereklilik_puani": 80,
+            "dersi_veren_hocalar": []
         },
         {
             "ad": "Robot Teknolojisine Giriş",
@@ -1082,7 +1204,8 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 0
+            "gereklilik_puani": 0,
+            "dersi_veren_hocalar": []
         }
     ],
     "bolum_adi": "Dersler",
