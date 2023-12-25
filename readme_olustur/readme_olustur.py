@@ -12,6 +12,47 @@ DERS_YORUMLAMA_LINKI = "https://forms.gle/SzNmK1w4rVaKE4ee8"
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
+
+def benzerlik_skoru(str1, str2):
+    return difflib.SequenceMatcher(None, str1, str2).ratio() * 100
+def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
+    en_iyi_eslesme = None
+    en_yuksek_yuzde = 0
+
+    for dizin_yolu, alt_dizinler, _ in os.walk(baslangic_yolu):
+        for klasor_ad in alt_dizinler:
+            # Eşleşme skoru hesaplama
+            skor = benzerlik_skoru(aranan_ad,klasor_ad)
+            # Her iki yüzde de %50'den büyükse, eşleşme olarak kabul et
+            if skor > en_yuksek_yuzde:
+                en_yuksek_yuzde = skor
+                en_iyi_eslesme = os.path.join(dizin_yolu, klasor_ad)
+
+    return None if (en_yuksek_yuzde < 71 or (len(en_iyi_eslesme.split(os.sep)) < 3 and "Projesi" not in en_iyi_eslesme)) else en_iyi_eslesme
+
+def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"):
+    """
+    Yerel bir klasör yolunu GitHub reposundaki karşılık gelen klasörün URL'sine dönüştürür.
+    Göreceli yolları (../) kaldırır ve boşlukları uygun bir şekilde değiştirir.
+
+    :param klasor_yolu: Yerel sistemdeki klasör yolu (örn. "ders_notlari/ISL101").
+    :param repo_url: GitHub'daki repository'nin URL'si.
+    :return: GitHub'daki klasör için tam URL.
+    """
+    if klasor_yolu is None:
+        return None
+    klasor_yolu = klasor_yolu.replace("../", "")
+    # Göreceli yolları kaldır
+    klasor_yolu = os.path.normpath(klasor_yolu)
+    # Windows yollarını düzeltmek için (örn. "klasör\alt_klasör" -> "klasör/alt_klasör")
+    klasor_yolu = klasor_yolu.replace("\\", "/")
+
+    # Boşlukları "%20" ile değiştir
+    klasor_yolu = klasor_yolu.replace(" ", "%20")
+
+    # GitHub'daki tam URL'yi oluştur
+    github_klasor_url = f"{repo_url}/tree/main/{klasor_yolu}"
+    return github_klasor_url
 def hoca_siralama_anahtari(hoca):
     unvan = hoca['ad'].split()[0]  # İsmin ilk kelimesini (unvanı) al
     return (unvanlarin_onceligi.get(unvan, 4), hoca['ad'])  # Unvan önceliği ve tam ad
@@ -73,7 +114,9 @@ def hocalari_readme_ye_ekle(bilgiler):
                 f.write("  - 🎉 Derste Eğlenir Miyim:\tbilinmiyor\n")
             if "oy_sayisi" in hoca:
                 f.write(f"  - ℹ️ Yıldızlar {hoca['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
-
+            else:
+                f.write(f"  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+            
 
 def donem_siralamasi(donem_key):
     if donem_key == "Mesleki Seçmeli":
@@ -134,7 +177,7 @@ def dersleri_readme_ye_ekle(dersler):
                     f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                 
                     
-                if "dersi_veren_hocalar" in ders:
+                if "dersi_veren_hocalar" in ders and len(ders["dersi_veren_hocalar"]) > 0:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders["dersi_veren_hocalar"]:
                         if hoca['ad'] != hocalar['en_populer_hoca']['hoca_adi']:
@@ -144,6 +187,9 @@ def dersleri_readme_ye_ekle(dersler):
                             populer_bilgi = f" En popüler hoca ({hocalar['en_populer_hoca']['oy_sayisi']} oy)" if hoca['ad'] == hocalar['en_populer_hoca']['hoca_adi'] else ""
                             hoca_id = f'{hoca["ad"]} {populer_isaret}{populer_bilgi}'
                             f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca_id)}\n")
+                ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("../", ders['ad'])
+                if ders_klasor_yolu is not None:
+                    f.write(f"  - 📂 [Ders Klasörü]({(yerel_yoldan_github_linkine(ders_klasor_yolu))})\n")
 
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
@@ -225,22 +271,6 @@ BURASI ANA README OLUŞTURMA KISMI
 BURASI DERSLER README OLUŞTURMA KISMI
 """
 
-def benzerlik_skoru(str1, str2):
-    return difflib.SequenceMatcher(None, str1, str2).ratio() * 100
-def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
-    en_iyi_eslesme = None
-    en_yuksek_yuzde = 0
-
-    for dizin_yolu, alt_dizinler, _ in os.walk(baslangic_yolu):
-        for klasor_ad in alt_dizinler:
-            # Eşleşme skoru hesaplama
-            skor = benzerlik_skoru(aranan_ad,klasor_ad)
-            # Her iki yüzde de %50'den büyükse, eşleşme olarak kabul et
-            if skor > en_yuksek_yuzde:
-                en_yuksek_yuzde = skor
-                en_iyi_eslesme = os.path.join(dizin_yolu, klasor_ad)
-
-    return None if (en_yuksek_yuzde < 71 or (len(en_iyi_eslesme.split(os.sep)) < 3 and "Projesi" not in en_iyi_eslesme)) else en_iyi_eslesme
 def ders_klasorune_readme_olustur(ders, dosya_yolu):
     with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
         # Ders başlığı
@@ -258,7 +288,11 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         f.write("- ⭐ **Yıldız Sayıları:**\n")
         f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
         f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
-
+        if "oy_sayisi" in ders:
+            f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+        else:
+            f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+        
         if "derse_dair_oneriler" in ders:
             # Derse dair öneriler
             f.write("## 📝 Derse Dair Öneriler\n\n")
@@ -272,7 +306,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
             # Faydalı olabilecek kaynaklar
             for kaynak in ders['faydali_olabilecek_kaynaklar']:
                 f.write(f"- {kaynak}\n")
-        if "dersi_veren_hocalar" in ders:
+        if "dersi_veren_hocalar" in ders and len(ders["dersi_veren_hocalar"]) > 0:
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders["dersi_veren_hocalar"]:
                 f.write(f"- {hoca['kisaltma']}\n")
@@ -322,7 +356,11 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                             f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")  # Kişi emoji, öğrenciyi temsil eder
                     f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
                     f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
-
+                    if "oy_sayisi" in ders:
+                        f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                    else:
+                        f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                    
                     if "derse_dair_oneriler" in ders:
                         f.write("#### 💡 Derse Dair Öneriler\n\n")  # Ampul emoji, önerileri temsil eder
                         for oneriler in ders['derse_dair_oneriler']:
@@ -334,7 +372,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                         for kaynak in ders['faydali_olabilecek_kaynaklar']:
                             f.write(f"- {kaynak}\n")
                     f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
-                    if "dersi_veren_hocalar" in ders:
+                    if "dersi_veren_hocalar" in ders and len(ders["dersi_veren_hocalar"]) > 0:
                         f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
                             f.write(f"- {hoca['kisaltma']}\n")
