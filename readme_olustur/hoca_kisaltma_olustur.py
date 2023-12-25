@@ -1,0 +1,1 @@
+readme_guncelleme_arayuzu_python/hoca_kisaltma_olustur.py
