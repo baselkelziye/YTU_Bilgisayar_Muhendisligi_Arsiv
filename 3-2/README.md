@@ -43,6 +43,8 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+
 ### 📘 Bilgisayar Projesi
 
 #### 📄 Ders Bilgileri
@@ -59,6 +61,8 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Mesleki Hukuk ve Etik
 
@@ -77,6 +81,8 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+
 ### 📘 Yazılım Mühendisliği
 
 #### 📄 Ders Bilgileri
@@ -94,3 +100,5 @@
 
 - [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

@@ -53,7 +53,13 @@ def hocalari_readme_ye_ekle(bilgiler):
 
             f.write("- 📚 **Verdiği Dersler:**\n")
             for ders in hoca["dersler"]:
-                f.write(f"  - 📖 {ders}\n")
+                if ders != dersler['en_populer_ders']['ders_adi']:
+                    f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}\n")
+                else:
+                    populer_isaret = "👑"
+                    populer_bilgi = f" En popüler ders ({dersler['en_populer_ders']['oy_sayisi']} oy)" if ders == dersler['en_populer_ders']['ders_adi'] else ""
+                    ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
+                    f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
             f.write(f"- ⭐ **Yıldız Sayıları:**\n")
             if hoca['anlatim_puani'] != 0:
                 f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
@@ -109,7 +115,7 @@ def dersleri_readme_ye_ekle(dersler):
                 f.write("\n\n")
                 populer_isaret = "👑" if ders['ad'] == en_populer_ders_adi else ""
                 populer_bilgi = f" En popüler ders ({en_populer_ders_oy_sayisi} oy)" if ders['ad'] == en_populer_ders_adi else ""
-                f.write(f"- 📘 **{ders['ad']}** {populer_isaret}{populer_bilgi}\n")
+                f.write(f"#### 📘 {ders['ad']} {populer_isaret}{populer_bilgi}\n")
                 f.write(f"  - 🏷️ **Ders Tipi:** {ders['tip']}\n")
                 if 'ogrenci_gorusleri' in ders and ders['ogrenci_gorusleri']:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
