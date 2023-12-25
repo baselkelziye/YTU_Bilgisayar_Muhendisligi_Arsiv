@@ -1,10 +1,23 @@
-import requests
+import locale
 import json
 from urllib.parse import urlparse
 from PyQt5.QtWidgets import QWidget, QVBoxLayout,QDesktopWidget,QHBoxLayout, QPushButton, QMessageBox, QDialog, QLabel, QLineEdit, QScrollArea
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
+from threadler import KatkiKaydetThread
+from progress_dialog import CustomProgressDialog
 JSON_YOLU = "../katkida_bulunanlar.json"
-
+try:
+    # Öncelikle Türkçe locale'i dene
+    locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
+except locale.Error:
+    try:
+        # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
+        #os.system('sudo locale-gen tr_TR.UTF-8')
+        # Alternatif olarak başka bir Türkçe locale dene
+        locale.setlocale(locale.LC_ALL, 'tr_TR')
+    except locale.Error:
+        # Varsayılan locale'e geri dön
+        locale.setlocale(locale.LC_ALL, '')
 
 class KatkidaBulunanGuncelleWindow(QDialog):
     def __init__(self):
@@ -42,6 +55,12 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         try:
             with open(JSON_YOLU, 'r', encoding='utf-8') as file:
                 self.data = json.load(file)
+                self.data['katkida_bulunanlar'] = sorted(
+                            [kisi for kisi in self.data['katkida_bulunanlar'] if kisi['ad'].strip() and kisi['github_link'].strip()],
+                            key=lambda kisi: locale.strxfrm(kisi['ad'].lower())
+                        )
+
+
                 katkidaBulunanSayisi = len(self.data['katkida_bulunanlar'])  # Toplam katkıda bulunan sayısı
                 self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
                 self.katkidaBulunanSayisiLabel.setFixedHeight(20)
@@ -103,7 +122,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
 
         # Butonlar için yatay layout
         buttonsLayout = QHBoxLayout()
-
+        self.progressDialog = CustomProgressDialog('Kontrol Ediliyor...', self)
+        self.progressDialog.close()
         # Değişiklikleri Kaydet butonu
         self.kaydet_btn = QPushButton('Değişiklikleri Kaydet', self)
         self.kaydet_btn.setStyleSheet("background-color: green;")
@@ -156,30 +176,22 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.move(qr.topLeft())
 
     def kaydet(self):
-        # Değişiklikleri onayla ve kaydet
         emin_mi = QMessageBox.question(self, 'Onay', 'Değişiklikleri kaydetmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         
         if emin_mi == QMessageBox.Yes:
-            base_url = "https://github.com/"
-            yeni_github_link = base_url + self.github_input.text()
-            # Linkin varlığını kontrol et
-            try:
-                response = requests.get(yeni_github_link)
-                if response.status_code == 404:
-                    QMessageBox.warning(self, 'Hata', 'GitHub linki geçerli değil!')
-                    return
-            except requests.exceptions.RequestException as e:
-                QMessageBox.critical(self, 'Hata', f'GitHub linki kontrol edilirken bir hata oluştu: {e}')
-                return
+            ad = self.ad_input.text()
+            github_kullanici_adi = self.github_input.text()
 
-            # Değişiklikleri uygula ve JSON dosyasını güncelle
-            self.kisi['ad'] = self.ad_input.text()
-            self.kisi['github_link'] = yeni_github_link
-            try:
-                with open(JSON_YOLU, 'w',encoding='utf-8') as file:
-                    json.dump(self.data, file, ensure_ascii=False, indent=4)
-                QMessageBox.information(self, 'Başarılı', 'Katkıda bulunan güncellendi!')
-                self.parent.butonlariYenile()  # Ana pencerenin butonlarını yenile
-                self.close()
-            except Exception as e:
-                QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
+            self.thread = KatkiKaydetThread(self.kisi, ad, github_kullanici_adi, self.data, JSON_YOLU,self)
+            self.thread.finished.connect(self.islemSonucu)
+            # ProgressDialog'u göster
+            self.progressDialog.show()
+            self.thread.start()
+    def islemSonucu(self, success, message):
+        self.progressDialog.hide()
+        if success:
+            QMessageBox.information(self, 'Başarılı', message)
+            self.parent.butonlariYenile()  # Ana pencerenin butonlarını yenile
+            self.close()
+        else:
+            QMessageBox.warning(self, 'Hata', message)

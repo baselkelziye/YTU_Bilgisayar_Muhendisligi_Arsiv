@@ -5,7 +5,8 @@ from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
-from script_calistirici_thread import ScriptRunnerThread
+from progress_dialog import CustomProgressDialog
+from threadler import ScriptRunnerThread
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -26,6 +27,9 @@ class App(QWidget):
             QPushButton('Ders Ekle/Güncelle'),
             QPushButton('Readme Scripti Çalıştır')
         ]
+
+        self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
+        self.progressDialog.close()
         # Her butona tıklama işleyicisi ekle
         self.buttons[0].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
         self.buttons[1].clicked.connect(self.acYazarinNotlari)
@@ -65,11 +69,6 @@ class App(QWidget):
         self.dersEkleGuncelleWindow.show()
 
     def readmeScriptiCalistir(self):
-        self.progressDialog = QProgressDialog("README.md dosyaları oluşturuluyor...", None, 0, 0, self)
-        self.progressDialog.setWindowTitle("Yürütülüyor...")
-        self.progressDialog.setCancelButton(None)  # İptal butonunu devre dışı bırak
-        self.progressDialog.setWindowModality(Qt.WindowModal)
-        self.progressDialog.setWindowFlags(self.progressDialog.windowFlags() & ~Qt.WindowCloseButtonHint)  # Kapatma butonunu devre dışı bırak
         self.progressDialog.show()
 
         paths = ('../google_forum_islemleri', '..')
