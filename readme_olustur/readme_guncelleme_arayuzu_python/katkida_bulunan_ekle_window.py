@@ -2,6 +2,8 @@ import sys
 import json
 from PyQt5.QtWidgets import (QLineEdit, QDialog, QPushButton, QVBoxLayout, 
                              QDesktopWidget, QLabel, QMessageBox)
+from threadler import KatkiEkleThread  
+from progress_dialog import CustomProgressDialog
 import requests  # requests modülünü içe aktar
 
 JSON_DOSYASI = '../katkida_bulunanlar.json'
@@ -20,7 +22,8 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.resize(500, 200)  # Pencerenin başlangıç boyutunu ayarlayın
 
         layout = QVBoxLayout()
-        
+        self.progressDialog = CustomProgressDialog('Kontrol Ediliyor...', self)
+        self.progressDialog.close()
         # Ad ve GitHub Linki için giriş alanları
         self.name_label = QLabel('Ad:')
         self.name_input = QLineEdit()
@@ -29,7 +32,7 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.ekle_btn = QPushButton('Ekle', self)
         self.ekle_btn.setStyleSheet("background-color: green;")
         # Butona basıldığında ekleme işlevini çalıştır
-        self.ekle_btn.clicked.connect(self.ekle)
+        self.ekle_btn.clicked.connect(self.kaydet)
 
         # Arayüze elemanları ekle
         layout.addWidget(self.name_label)
@@ -48,39 +51,21 @@ class KatkidaBulunanEkleWindow(QDialog):
         cp = QDesktopWidget().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
-
-    def ekle(self):
-        # Giriş alanlarından bilgileri al
+    def kaydet(self):
+        # Thread örneğini oluştur
         ad = self.name_input.text()
         github_kullanici_adi = self.github_input.text()
-        github_url = f"https://github.com/{github_kullanici_adi}"
-
-        if ad and github_kullanici_adi:
-            try:
-                
-                # JSON dosyasını aç ve oku
-                with open(JSON_DOSYASI, 'r+',encoding='utf-8') as file:
-                    data = json.load(file)
-
-                # Case insensitive karşılaştırma yaparak ad ve URL kontrol et
-                if any(kisi['ad'].lower() == ad.lower() for kisi in data['katkida_bulunanlar']):
-                    QMessageBox.warning(self, 'Hata', 'Bu isim zaten mevcut!')
-                elif any(kisi['github_link'] == github_url for kisi in data['katkida_bulunanlar']):
-                    QMessageBox.warning(self, 'Hata', 'Bu GitHub linki zaten eklenmiş!')
-                else:
-                    # GitHub URL'sinin varlığını kontrol et
-                    response = requests.get(github_url)
-                    if response.status_code == 404:
-                        QMessageBox.warning(self, 'Hata', 'GitHub kullanıcı adı geçerli değil!')
-                        return
-                    # Yeni veriyi ekle ve dosyayı güncelle
-                    data['katkida_bulunanlar'].append({"ad": ad, "github_link": github_url})
-                    with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
-                        json.dump(data, file,ensure_ascii=False, indent=4)
-                    QMessageBox.information(self, 'Başarılı', 'Katkıda bulunan eklendi!')
-                    self.parent.butonlariYenile()
-                    self.close()
-            except Exception as e:
-                QMessageBox.critical(self, 'Hata', f'Bir hata oluştu: {e}')
+        self.thread = KatkiEkleThread(ad, github_kullanici_adi, JSON_DOSYASI,self)
+        self.thread.finished.connect(self.islemSonucu)
+        # ProgressDialog'u göster
+        self.progressDialog.show()
+        self.thread.start()
+    def islemSonucu(self, success, message):
+        self.progressDialog.close()
+        if success:
+            QMessageBox.information(self, 'Başarılı', message)
+            # Gerekli güncellemeleri yapın ve pencereyi kapatın
+            self.parent.butonlariYenile()
+            self.close()
         else:
-            QMessageBox.warning(self, 'Hata', 'Ad ve GitHub kullanıcı adı alanları boş bırakılamaz!')
+            QMessageBox.warning(self, 'Hata', message)
