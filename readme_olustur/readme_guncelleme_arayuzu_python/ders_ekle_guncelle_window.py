@@ -1,7 +1,8 @@
-import os
 import json
 from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QApplication, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
+from pathlib import Path
+from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 JSON_PATH = '../dersler.json'
 HOCA_JSON_PATH = '../hocalar.json'
 
@@ -11,33 +12,6 @@ def hoca_sirala(hoca):
     ad = hoca[0].strip()
     unvan = next((u for u in unvanlar if ad.startswith(u)), None)
     return (unvanlar.get(unvan, 4), ad)
-
-def hoca_kisaltma_olustur(isim):
-    """
-    Bir isimden kısaltma oluşturur ve unvanları (Doç. Dr., Prof. Dr., Dr. vb.) atar.
-    Örneğin "Prof. Dr. Ahmet Elbir" için "AEL", "Dr. Göksel Biricik" için "GB" döndürür.
-    """
-    if not  isim:
-        return None
-    # Unvanları ve noktaları kaldır
-    for unvan in ["Prof. Dr.", "Doç. Dr.", "Dr.", "Prof.", "Doç."]:
-        isim = isim.replace(unvan, "")
-    isim = isim.replace(".", "").strip()
-    if "Elbir" in isim:
-        return "AEL"
-    if "Biricik" in isim:
-        return "G1"
-    # İsimleri ayır ve baş harfleri al
-    parcalar = isim.split()
-    if len(parcalar) == 1:  # Eğer sadece bir isim varsa
-        return parcalar[0][:2].upper()
-    else:
-        # İlk iki ismin baş harflerini ve son ismin ilk harfini al
-        kisaltma = ''.join(parca[0].upper() for parca in parcalar[:-1])
-        kisaltma += parcalar[-1][0].upper()
-        if len(parcalar[-1]) == 1:  # Eğer son isim sadece bir harf ise (örneğin "M.")
-            kisaltma += str(len(parcalar))  # Sıra numarasını ekle (örneğin "MAG" yerine "MAG1")
-        return kisaltma
 class DersEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -268,7 +242,7 @@ class DersDuzenlemeWindow(QDialog):
         # Seçili hocaların kısaltmalarını al
         hocalar = [{'kisaltma': combo.currentData(), 'ad': combo.currentText().split(' (')[0]}
                    for combo, _ in self.hocalarComboBoxlar]
-        
+    
         # Ders adı boş olamaz kontrolü
         if not ad:
             QMessageBox.warning(self, 'Hata', 'Ders adı boş olamaz!')
@@ -294,8 +268,9 @@ class DersDuzenlemeWindow(QDialog):
             # Ders bilgilerini güncelle veya yeni ders ekle
             ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
             self.data['dersler'].append(ders_data)
+    
 
-
+        self.hocaDersleriniGuncelle(ad, hocalar)
         # Değişiklikleri kaydet
         self.kaydetVeKapat()
 
@@ -308,7 +283,36 @@ class DersDuzenlemeWindow(QDialog):
         if emin_mi == QMessageBox.Yes:
             self.data['dersler'].remove(self.ders)
             self.kaydetVeKapat()
+    def hocaDersleriniGuncelle(self, ders_adi, veren_hocalar):
+        # JSON dosyasını aç ve verileri yükle
+        json_dosyasi = Path(HOCA_JSON_PATH)
+        if not json_dosyasi.exists():
+            print("Hoca JSON dosyası bulunamadı.")
+            return
 
+        with open(json_dosyasi, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        hoca_adlari = [hoca["ad"] for hoca in veren_hocalar]
+        # Hocalar listesinde dolaş
+        for hoca in data.get("hocalar", []):
+            hoca_adi = hoca.get("ad")
+            mevcut_dersler = hoca.get("dersler", [])
+
+            if hoca_adi in hoca_adlari:
+                # Eğer hoca bu dersi zaten veriyorsa, devam et
+                if ders_adi not in mevcut_dersler:
+                    mevcut_dersler.append(ders_adi)
+            else:
+                # Eğer hoca bu dersi vermiyorsa ve ders listesinde varsa, çıkar
+                if ders_adi in mevcut_dersler:
+                    mevcut_dersler.remove(ders_adi)
+
+            # Güncellenmiş ders listesini hoca profiline ekle
+            hoca["dersler"] = mevcut_dersler
+
+        # Değişiklikleri JSON dosyasına yaz
+        with open(json_dosyasi, 'w', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
     def kaydetVeKapat(self):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
