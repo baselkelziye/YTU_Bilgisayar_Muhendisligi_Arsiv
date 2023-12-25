@@ -21,10 +21,10 @@
                 }
             ],
             "anlatim_puani": 91,
-            "kolaylik_puani": 81,
-            "ogretme_puani": 90,
-            "eglence_puani": 89,
-            "oy_sayisi": 12
+            "kolaylik_puani": 82,
+            "ogretme_puani": 91,
+            "eglence_puani": 90,
+            "oy_sayisi": 13
         },
         {
             "ad": "Prof. Dr. Oya Kalıpsız",
@@ -70,10 +70,10 @@
                 }
             ],
             "anlatim_puani": 96,
-            "kolaylik_puani": 81,
-            "ogretme_puani": 96,
+            "kolaylik_puani": 83,
+            "ogretme_puani": 97,
             "eglence_puani": 95,
-            "oy_sayisi": 9
+            "oy_sayisi": 10
         },
         {
             "ad": "Prof. Dr. M. Elif Karslıgil",
@@ -101,7 +101,9 @@
             "ofis": "EEF-D130",
             "link": "http://avesis.yildiz.edu.tr/smyavuz/",
             "erkek_mi": false,
-            "dersler": [],
+            "dersler": [
+                "İstatistik ve Olasılık Hesapları"
+            ],
             "ogrenci_gorusleri": [],
             "anlatim_puani": 58,
             "kolaylik_puani": 65,
@@ -141,11 +143,11 @@
                     "yorum": "derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer."
                 }
             ],
-            "anlatim_puani": 77,
-            "kolaylik_puani": 75,
-            "ogretme_puani": 73,
-            "eglence_puani": 68,
-            "oy_sayisi": 4
+            "anlatim_puani": 81,
+            "kolaylik_puani": 80,
+            "ogretme_puani": 79,
+            "eglence_puani": 70,
+            "oy_sayisi": 5
         },
         {
             "ad": "Doç. Dr. M. Amaç Güvensan",
@@ -242,8 +244,8 @@
             "link": "http://avesis.yildiz.edu.tr/yselcuk/",
             "erkek_mi": true,
             "dersler": [
-                "Nesneye Yönelik Programlama",
-                "Yapısal Programlama"
+                "Yapısal Programlama",
+                "Nesneye Yönelik Programlama"
             ],
             "ogrenci_gorusleri": [
                 {
@@ -269,7 +271,8 @@
             "dersler": [
                 "Mesleki Hukuk ve Etik",
                 "Veri Yapıları ve Algoritmalar",
-                "Bilgisayar Bilimlerine Giriş"
+                "Bilgisayar Bilimlerine Giriş",
+                "Sistem Analizi ve Tasarımı"
             ],
             "ogrenci_gorusleri": [
                 {
@@ -298,7 +301,8 @@
             "erkek_mi": true,
             "dersler": [
                 "Bilgisayar Donanımı",
-                "Mikroişlemci Sistemleri"
+                "Mikroişlemci Sistemleri",
+                "Alt Seviye Programlama"
             ],
             "ogrenci_gorusleri": [
                 {
@@ -387,7 +391,9 @@
                 "Sayısal İşaret İşleme",
                 "Sayısal Analiz",
                 "Ayrık Matematik",
-                "İşletim Sistemleri"
+                "İşletim Sistemleri",
+                "Yapısal Programlama",
+                "Yapısal Programlamaya Giriş"
             ],
             "ogrenci_gorusleri": [
                 {
@@ -395,11 +401,11 @@
                     "yorum": "Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum."
                 }
             ],
-            "anlatim_puani": 81,
-            "kolaylik_puani": 78,
-            "ogretme_puani": 83,
-            "eglence_puani": 74,
-            "oy_sayisi": 10
+            "anlatim_puani": 83,
+            "kolaylik_puani": 77,
+            "ogretme_puani": 85,
+            "eglence_puani": 73,
+            "oy_sayisi": 11
         },
         {
             "ad": "Dr. Furkan Çakmak",
@@ -408,7 +414,8 @@
             "dersler": [
                 "Nesneye Yönelik Programlama",
                 "Robot Teknolojisine Giriş",
-                "Alt Seviye Programlama"
+                "Alt Seviye Programlama",
+                "Veri İletişimi"
             ],
             "erkek_mi": true,
             "ogrenci_gorusleri": [
