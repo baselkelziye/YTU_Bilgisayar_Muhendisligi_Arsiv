@@ -15,12 +15,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Gömülü Sistemler
 
@@ -34,6 +33,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -53,12 +53,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Oyun Geliştirmeye Giriş
 
@@ -70,12 +69,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Mobil Programlamaya Giriş
 
@@ -89,6 +87,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -108,12 +107,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 İstatistiksel Veri Analizi
 
@@ -125,12 +123,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Sayısal İşaret İşleme
 
@@ -144,6 +141,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -163,12 +161,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Biyoenformatiğe Giriş
 
@@ -180,12 +177,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Büyük Veri İşleme Ve Analizi
 
@@ -197,12 +193,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Yapay Zeka
 
@@ -216,6 +211,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -235,12 +231,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Görüntü İşleme
 
@@ -252,12 +247,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Doğal Dil İşlemeye Giriş
 
@@ -268,9 +262,11 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+  - 👤 Tehlikeli Pinokyo : Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: X
@@ -293,6 +289,7 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -313,6 +310,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -331,6 +329,7 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -351,6 +350,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -369,12 +369,11 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Veri Madenciliğine Giriş
 
@@ -388,12 +387,11 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Robot Teknolojisine Giriş
 
@@ -407,6 +405,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -425,6 +424,7 @@
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 

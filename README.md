@@ -90,8 +90,7 @@ Açıklamalar:
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-14-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Bilgisayar%20Bilimine%20Giriş)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
 
 
 #### 📘 Fizik 1 
@@ -114,7 +113,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Matematik%201)
 
 
 #### 📘 Lineer Cebir 
@@ -126,7 +124,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Lineer%20Cebir)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 1 
@@ -160,7 +157,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
 
 ### 🗓 1. Yıl - Bahar
 
@@ -177,7 +173,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-2/Yapısal%20Programlamaya%20Giriş)
 
 
 #### 📘 Sayısal Analiz 
@@ -190,9 +185,8 @@ Açıklamalar:
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-14-oy)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-2/Sayısal%20Analiz)
 
 
 #### 📘 Devre Teorisi 
@@ -204,7 +198,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-2/Devre%20Teorisi)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 2 
@@ -227,7 +220,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-2/Mühendisler%20İçin%20Yarıiletken%20Fiziği)
 
 
 #### 📘 Matematik 2 
@@ -239,7 +231,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-2/Matematik%202)
 
 
 #### 📘 İleri İngilizce 2 
@@ -267,13 +258,13 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/İstatistik%20ve%20Olasılık%20Hesapları)
 
 
 #### 📘 Alt Seviye Programlama 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
+    - 👤 Tehlikeli Pinokyo : Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -297,13 +288,13 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Yapısal%20Programlama)
 
 
 #### 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
+    - 👤 Tehlikeli Pinokyo : Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -312,7 +303,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Bilgisayar%20Müh%20için%20Sinyaller%20ve%20Sistemler)
 
 
 #### 📘 Ayrık Matematik 
@@ -325,9 +315,8 @@ Açıklamalar:
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-14-oy)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Ayrık%20Matematik)
 
 
 #### 📘 Lojik Devreler 
@@ -342,7 +331,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Lojik%20Devreler)
 
 ### 🗓 2. Yıl - Bahar
 
@@ -360,13 +348,13 @@ Açıklamalar:
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
     - [FÇ](#-dr-furkan-çakmak)
     - [YES](#-dr-yunus-emre-selçuk)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Nesneye%20Yonelik%20Programlama)
 
 
 #### 📘 Bilgisayar Donanımı 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
+    - 👤 Tehlikeli Pinokyo : Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali...
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -375,7 +363,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Bilgisayar%20Donanımı)
 
 
 #### 📘 Elektronik Devreler 
@@ -390,7 +377,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Elektronik%20Devreler)
 
 
 #### 📘 Sistem Analizi ve Tasarımı 
@@ -405,7 +391,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Sistem%20Analizi%20ve%20Tasarımı)
 
 
 #### 📘 Hesaplama Kuramı 
@@ -419,7 +404,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Hesaplama%20Kuramı)
 
 
 #### 📘 Veri Yapıları ve Algoritmalar 
@@ -433,7 +417,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
 
@@ -447,13 +430,13 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/İşletim%20Sistemleri)
 
 
 #### 📘 Algoritma Analizi 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+    - 👤 Tehlikeli Pinokyo : Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -461,8 +444,7 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-14-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Algoritma%20Analizi)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
 
 
 #### 📘 Mikroişlemci Sistemleri 
@@ -488,7 +470,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veritabanı%20Yönetimi)
 
 
 #### 📘 Veri İletişimi 
@@ -502,7 +483,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20İletişimi)
 
 ### 🗓 3. Yıl - Bahar
 
@@ -516,7 +496,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/ağ%20teknolojileri)
 
 
 #### 📘 Genel Staj 
@@ -551,7 +530,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Mesleki%20Hukuk%20ve%20Etik)
 
 
 #### 📘 Yazılım Mühendisliği 
@@ -563,7 +541,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Yazılım%20Mühendisliği)
 
 ### 🗓 4. Yıl - Güz
 
@@ -596,7 +573,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
 
 
 #### 📘 Mesleki Staj 
@@ -638,7 +614,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/bilişim%20sistemleri%20güvenliği)
 
 
 #### 📘 Gömülü Sistemler 
@@ -652,7 +627,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/gömülü%20sistemler)
 
 
 #### 📘 Bilgiye Erişim Ve Arama Motorları 
@@ -681,8 +655,7 @@ Açıklamalar:
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-14-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Mobil%20Programlamaya%20Giriş)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
 
 
 #### 📘 Sistem Programlama 
@@ -713,7 +686,6 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/sayısal%20işaret%20işleme)
 
 
 #### 📘 Bilgisayar Grafiğine Giriş 
@@ -722,7 +694,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Bilgisayar%20Grafiğine%20Giriş)
 
 
 #### 📘 Biyoenformatiğe Giriş 
@@ -731,7 +702,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/biyoenformatiğe%20giriş)
 
 
 #### 📘 Büyük Veri İşleme Ve Analizi 
@@ -753,7 +723,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/yapay%20zeka)
 
 
 #### 📘 Yapay Sinir Ağlarına Giriş 
@@ -776,14 +745,14 @@ Açıklamalar:
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+    - 👤 Tehlikeli Pinokyo : Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Doğal%20Dil%20İşlemeye%20Giriş)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-14-oy)
 
 
 #### 📘 Uzman Sistemlere Giriş 
@@ -794,7 +763,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Uzman%20Sistemler)
 
 
 #### 📘 Veri Tabanı Sistemlerinde Güncel Konular 
@@ -831,7 +799,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/yönetim%20bilişim%20sistemleri)
 
 
 #### 📘 Dağıtık Sistemler 
@@ -851,7 +818,6 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Veri%20Madenciliğine%20Giriş)
 
 
 #### 📘 Robot Teknolojisine Giriş 
@@ -865,7 +831,6 @@ Açıklamalar:
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Mesleki%20Seçmeli/Robot%20Teknolojisine%20Giriş)
 
 
 #### 📘 Yazılım Kalite ve Test Süreci 
@@ -887,23 +852,24 @@ Açıklamalar:
 
 
 
-### 👩‍🏫 Prof. Dr. Banu Diri 
+### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (14 oy)
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
   - 👤 astro: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
+  - 👤 Tehlikeli Pinokyo: Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
   - 📖 [Ayrık Matematik](#-ayrık-matematik)
   - 📖 [Doğal Dil İşlemeye Giriş](#-doğal-dil-i̇şlemeye-giriş)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-  - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -912,6 +878,7 @@ Açıklamalar:
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Sert bir mizacı var. Sınavlarda zor sorar.
+  - 👤 Tehlikeli Pinokyo : iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
@@ -921,7 +888,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -931,6 +898,7 @@ Açıklamalar:
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
   - 👤 astro: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
+  - 👤 Tehlikeli Pinokyo : Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -941,7 +909,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-  - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -950,6 +918,7 @@ Açıklamalar:
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Sakin bir hoca, iyi niyetli, yoklama alır.
+  - 👤 Tehlikeli Pinokyo : Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
@@ -958,10 +927,10 @@ Açıklamalar:
   - 📖 [Yönetim Bilgi Sistemleri](#-yönetim-bilgi-sistemleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1022,20 +991,21 @@ Açıklamalar:
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
   - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
+  - 👤 Tehlikeli Pinokyo : Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :) 
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
   - 📖 [Elektronik Devreler](#-elektronik-devreler)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
-### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (14 oy)
+### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1077,6 +1047,7 @@ Açıklamalar:
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 violancello: Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum.
+  - 👤 Tehlikeli Pinokyo : Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
@@ -1091,7 +1062,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1112,7 +1083,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1132,7 +1103,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1187,7 +1158,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1206,7 +1177,7 @@ Açıklamalar:
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1276,7 +1247,7 @@ Açıklamalar:
 
 ## 🤝 Katkıda Bulunanlar
 
-Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin.
+Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
 
 - 👤 Ali Albayrak
   - 🔗 Github Adresi: https://github.com/Ali-Albayrak
@@ -1292,3 +1263,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
   - 🔗 Github Adresi: https://github.com/ramesaliyev
 - 👤 Muhammed Ali Şen
   - 🔗 Github Adresi: https://github.com/shenmali
+- 👤 Asude Merve Ekiz
+  - 🔗 Github Adresi: https://github.com/asudemerveekiz
+- 👤 Sait Yalçın
+  - 🔗 Github Adresi: https://github.com/saityalcn
+- 👤 Muhammed Eren Şekkeli
+  - 🔗 Github Adresi: https://github.com/mErenSekkeli

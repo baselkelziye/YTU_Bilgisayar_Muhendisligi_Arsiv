@@ -19,12 +19,11 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Genel Staj
 
@@ -38,12 +37,11 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Bilgisayar Projesi
 
@@ -57,12 +55,11 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Mesleki Hukuk ve Etik
 
@@ -76,12 +73,11 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Yazılım Mühendisliği
 
@@ -95,10 +91,9 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

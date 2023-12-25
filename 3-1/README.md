@@ -19,6 +19,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: X
@@ -31,8 +32,6 @@
 - Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-
 ### 📘 Algoritma Analizi
 
 #### 📄 Ders Bilgileri
@@ -42,9 +41,11 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
+  - 👤 Tehlikeli Pinokyo : Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -67,6 +68,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: X
@@ -78,8 +80,6 @@
 
 - 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 
 ### 📘 Veritabanı Yönetimi
 
@@ -93,6 +93,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -113,6 +114,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
