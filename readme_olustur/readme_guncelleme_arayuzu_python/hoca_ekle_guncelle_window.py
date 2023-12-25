@@ -1,8 +1,25 @@
 import requests
+import locale
 import json
-from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QComboBox, QLineEdit,QTextEdit, QLabel, QApplication, QHBoxLayout, QFrame, QScrollArea, QWidget)
-
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QSizePolicy, QPushButton,QProgressDialog, QMessageBox, QComboBox, QLineEdit,QTextEdit, QLabel, QApplication, QHBoxLayout, QFrame, QScrollArea, QWidget)
+from threadler import HocaKaydetThread
+from progress_dialog import CustomProgressDialog
+from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 JSON_DOSYASI = '../hocalar.json'
+DERSLER_JSON_PATH = '../dersler.json'
+try:
+    # Öncelikle Türkçe locale'i dene
+    locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
+except locale.Error:
+    try:
+        # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
+        #os.system('sudo locale-gen tr_TR.UTF-8')
+        # Alternatif olarak başka bir Türkçe locale dene
+        locale.setlocale(locale.LC_ALL, 'tr_TR')
+    except locale.Error:
+        # Varsayılan locale'e geri dön
+        locale.setlocale(locale.LC_ALL, '')
 class HocaEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -89,6 +106,7 @@ class HocaDuzenlemeWindow(QDialog):
         self.hoca = hoca
         self.data = data
         self.parent = parent
+        self.derslerComboBoxlar = []  # Hoca seçimi için ComboBox'lar listesi
         self.setModal(True)
         self.initUI()
 
@@ -133,28 +151,96 @@ class HocaDuzenlemeWindow(QDialog):
         if self.hoca:
             self.erkekMiInput.setCurrentIndex(0 if self.hoca['erkek_mi'] else 1)
         self.layout.addWidget(self.erkekMiInput)
-
-        # Hoca dersleri için alan
-        self.layout.addWidget(QLabel('Dersler (virgülle ayrılmış):'))
-        self.derslerInput = QLineEdit(','.join(self.hoca['dersler']) if self.hoca and 'dersler' in self.hoca else '')
-        self.layout.addWidget(self.derslerInput)
-
+        self.progressDialog = CustomProgressDialog('Kontrol Ediliyor...', self)
+        self.progressDialog.close()
         # Diğer bilgiler ve dersler buraya eklenebilir
-
+        self.dersler = self.dersleriYukle()
+        # Derslerin sadece 'ad' alanını al ve adlarına göre sırala
+        self.dersler = sorted([ders['ad'] for ders in self.dersler], key=locale.strxfrm)
+        self.layout.addWidget(QLabel('Hocanın Verdiği Dersler'))
+        
+        # Hocalar için kaydırılabilir alan oluştur
+        self.derslerScorllArea = QScrollArea(self)  # ScrollArea oluştur
+        self.derslerScorllArea.setWidgetResizable(True)
+        # Hocaların gösterileceği widget
+        self.dersScrollWidget = QWidget()
+        # ScrollArea genişliğini dersScrollWidget genişliğiyle sınırla
+        self.dersScrollWidget.setMinimumWidth(self.derslerScorllArea.width())
+        self.dersScrollWidget.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Expanding)
+        self.derslerLayout = QVBoxLayout(self.dersScrollWidget)
+        self.derslerScorllArea.setWidget(self.dersScrollWidget)  # ScrollArea'ya widget ekle
+        self.layout.addWidget(self.derslerScorllArea)  # Ana layout'a ScrollArea ekle
+        if self.hoca and 'dersler' in self.hoca:
+            for ders in self.hoca['dersler']:
+                self.dersEkleComboBox(ders)
+        # Ekle (+) butonu
+        self.ekleHocaBtn = QPushButton('Hocanın Verdiği Ders Ekle', self)
+        self.ekleHocaBtn.setStyleSheet("background-color: lightblue;")
+        self.ekleHocaBtn.clicked.connect(self.dersEkleComboBox)
+        self.layout.addWidget(self.ekleHocaBtn)
         # Kaydet ve Sil butonları (sil butonu sadece düzenleme modunda görünür)
+        buttonsLayout = QHBoxLayout()
+
         if self.hoca is not None:
             self.kaydetBtn = QPushButton('Değişiklikleri Kaydet', self)
         else:
             self.kaydetBtn = QPushButton('Ekle', self)
         self.kaydetBtn.setStyleSheet("background-color: green;")
         self.kaydetBtn.clicked.connect(self.kaydet)
-        self.layout.addWidget(self.kaydetBtn)
+        buttonsLayout.addWidget(self.kaydetBtn)  # buttonsLayout'a Kaydet butonunu ekle
 
         if self.hoca:
             self.silBtn = QPushButton('Hocayı Sil', self)
             self.silBtn.clicked.connect(self.sil)
             self.silBtn.setStyleSheet("background-color: red;")
-            self.layout.addWidget(self.silBtn)
+            buttonsLayout.addWidget(self.silBtn)  # buttonsLayout'a Sil butonunu ekle
+
+        # Yatay düzeni ana düzene ekle
+        self.layout.addLayout(buttonsLayout)
+    def dersEkleComboBox(self,hoca_ders=None):
+        # Yeni ComboBox oluştur
+        comboBox = QComboBox(self)
+        for ders in self.dersler:
+            comboBox.addItem(ders)  # Ad ve kısaltmayı ekle
+
+        # Eğer kısaltma verildiyse, onu ComboBox'da seç
+        if hoca_ders:
+            comboBox.setCurrentText(hoca_ders)
+
+        # Sil (-) butonu
+        silBtn = QPushButton('Hocanın Verdiği Dersi Sil', self)
+        silBtn.setStyleSheet("background-color: rgb(255, 102, 102);")
+        silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
+
+        derslerLayout = QHBoxLayout()
+        derslerLayout.addWidget(comboBox)
+        derslerLayout.addWidget(silBtn)
+        self.derslerLayout.addLayout(derslerLayout)  # Hoca layout'una ekle, bu self.hocaScrollWidget'a bağlı
+
+
+        # ComboBox listesini güncelle
+        self.derslerComboBoxlar.append((comboBox, silBtn))
+    def silDersComboBox(self, comboBox, silBtn):
+        # ComboBox ve sil butonunu kaldır
+        self.derslerLayout.removeWidget(comboBox)
+        comboBox.deleteLater()
+        self.derslerLayout.removeWidget(silBtn)
+        silBtn.deleteLater()
+        # Listeden kaldır
+        self.derslerComboBoxlar.remove((comboBox, silBtn))
+    def secilenDersleriDondur(self):
+        ders_listesi = []
+        for derslerComboboxTuple in self.derslerComboBoxlar:
+            comboBox = derslerComboboxTuple[0]
+            ders_listesi.append(comboBox.currentText())
+
+        return ders_listesi  # Ders listesini döndür
+
+
+    def dersleriYukle(self):
+        with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
+            ders_data = json.load(file)
+        return ders_data['dersler']
     def ayiklaUnvan(self, ad):
         unvanlar = ['Prof. Dr.', 'Doç. Dr.', 'Dr.']
         for unvan in unvanlar:
@@ -175,51 +261,58 @@ class HocaDuzenlemeWindow(QDialog):
             QMessageBox.critical(self, 'Geçersiz URL', f'URL kontrolü sırasında bir hata oluştu: {e}')
             return False
     def kaydet(self):
-        ad = self.adInput.text()
-        if not ad:
-            QMessageBox.warning(self, 'Hata', 'Hoca adı boş olamaz!')
-            return
+        self.thread = HocaKaydetThread(self.hoca, self.data, self)
+        self.thread.finished.connect(self.islemTamamlandi)  # İşlem bittiğinde çağrılacak fonksiyon
+        self.thread.error.connect(self.hataMesajiGoster)  # Hata mesajı sinyalini bağla
+        # ProgressDialog'u göster
+        self.progressDialog.show()
+        self.thread.start()  # Thread'i başlat
 
-        ofis = self.ofisInput.text().strip()
-        link = self.linkInput.text().strip()
-        erkek_mi = self.erkekMiInput.currentText() == 'Evet'
-        dersler = [ders.strip() for ders in self.derslerInput.text().split(',') if ders.strip()]
-        if link and not self.check_url(link):
-            QMessageBox.warning(self, 'Hata', 'Güncelleme başarısız!!!')
-            return  # Eğer URL geçerli değilse fonksiyondan çık
-        if self.hoca:  # Düzenleme modunda
-            self.hoca.update({
-                "ad":self.unvanInput.currentText() + " " + ad,
-                "ofis": ofis,
-                "link": link,
-                "erkek_mi": erkek_mi,
-                "dersler": dersler
-            })
-        else:  # Ekleme modunda
-            yeni_hoca = {
-                "ad":self.unvanInput.currentText()+ " " + ad,
-                "ofis": ofis,
-                "link": link,
-                "erkek_mi": erkek_mi,
-                "dersler": dersler
-            }
-            self.data['hocalar'].append(yeni_hoca)
-
-        self.kaydetVeKapat()
+    def islemTamamlandi(self):
+        # ProgressBar'ı gizle ve gerekli güncellemeleri yap
+        self.progressDialog.hide()
+        self.kaydetVeKapat()  # Kaydetme işlemini tamamla
+    def hataMesajiGoster(self, message):
+        # ProgressBar'ı gizle ve gerekli güncellemeleri yap
+        self.progressDialog.hide()
+        QMessageBox.warning(self, 'Hata', message)
     def sil(self):
         # Hocayı sil
         emin_mi = QMessageBox.question(self, 'Onay', 'Hocayı silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         if emin_mi == QMessageBox.Yes and self.hoca:
             self.data['hocalar'].remove(self.hoca)
             self.kaydetVeKapat()
+    def derslereHocayiEkle(self):
+        secilen_dersler = self.secilenDersleriDondur()
+        ad = self.unvanInput.currentText() + " " + self.adInput.text()
+        kisaltma = hoca_kisaltma_olustur(ad)
+
+        try:
+            with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
+                dersler_data = json.load(file)
+
+            for ders in dersler_data.get("dersler", []):
+                # Eğer ders seçilen dersler listesindeyse ve hoca bu dersi vermiyorsa, hocayı ekleyin
+                if ders['ad'] in secilen_dersler and not any(hoca['kisaltma'] == kisaltma for hoca in ders.get("dersi_veren_hocalar", [])):
+                    ders.setdefault("dersi_veren_hocalar", []).append({"ad": ad, "kisaltma": kisaltma})
+                # Eğer ders seçilen dersler listesinde değilse ve hoca bu dersi veriyorsa, hocayı çıkarın
+                elif ders['ad'] not in secilen_dersler:
+                    ders["dersi_veren_hocalar"] = [hoca for hoca in ders.get("dersi_veren_hocalar", []) if hoca['kisaltma'] != kisaltma]
+
+            with open(DERSLER_JSON_PATH, 'w', encoding='utf-8') as file:
+                json.dump(dersler_data, file, ensure_ascii=False, indent=4)
+
+        except Exception as e:
+            QMessageBox.critical(self, 'Hata', f'Dosya işlenirken bir hata oluştu: {e}')
 
     def kaydetVeKapat(self):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
+            self.derslereHocayiEkle()
             with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
-            QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.hocalariYenile()
+            QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.close()
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
