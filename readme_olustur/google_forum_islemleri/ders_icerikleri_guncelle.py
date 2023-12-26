@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import json
 import shutil
+from icerik_kontrol import *
 DERS_YILDIZLARI_DOSYASI = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
 DERS_YORUMLARI_DOSYASI = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
 
@@ -9,28 +10,31 @@ DERS_YORUMLARI_DOSYASI = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyG
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     df = pd.read_csv(sheets_url)
-
-    # Her hoca için yorumları güncelle
+    df = df.dropna()  # NaN içeren tüm satırları kaldır
+    # Her ders için yorumları güncelle
     for index, row in df.iterrows():
         ders_adi = row['Ders Seç']
         kisi = row['İsmin Nasıl Gözüksün']
         yorum = row['Ders hakkındaki yorumun']
-
-        for hoca in data['dersler']:
-            if hoca['ad'] == ders_adi:
-                # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
-                gorus_var_mi = False
-                if 'ogrenci_gorusleri' not in hoca:
-                    hoca['ogrenci_gorusleri'] = []
-                for gorus in hoca['ogrenci_gorusleri']:
-                    if gorus['kisi'].lower() == kisi.lower():
-                        gorus['yorum'] = yorum
-                        gorus_var_mi = True
-                        break
-                
-                # Yeni yorum ekle
-                if not gorus_var_mi:
-                    hoca['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
+        icerikKontrol = IcerikKontrol("ders")
+        if not pd.isna(yorum) and icerikKontrol.pozitif_mi(yorum):
+            yorum = icerikKontrol.metin_on_isleme(yorum)
+            for ders in data['dersler']:
+                if ders['ad'] == ders_adi:
+                    # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
+                    gorus_var_mi = False
+                    if 'ogrenci_gorusleri' not in ders:
+                        ders['ogrenci_gorusleri'] = []
+                    for gorus in ders['ogrenci_gorusleri']:
+                        if gorus['kisi'].lower() == kisi.lower():
+                            gorus['yorum'] = yorum
+                            gorus_var_mi = True
+                            break
+                    
+                    # Yeni yorum ekle
+                    if not gorus_var_mi:
+                        ders['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
+    icerikKontrol.dosya_yaz()
 def guncelle_ders_yildizlari(data, sheets_url):
     
     # Veriyi indir ve DataFrame olarak oku
