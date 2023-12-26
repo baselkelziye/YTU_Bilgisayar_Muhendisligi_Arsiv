@@ -10,7 +10,6 @@ class YazarinNotlariWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
-        self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu büyüt
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
 
