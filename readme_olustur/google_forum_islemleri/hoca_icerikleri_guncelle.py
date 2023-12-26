@@ -3,35 +3,39 @@ import json
 import os
 import shutil
 
+from icerik_kontrol import *
 temel_puan = 30
 # Google Sheets dosyasının URL'si
 yildizlar_sheets_url = "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/export?format=csv"
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     df = pd.read_csv(sheets_url)
-
+    df = df.dropna()  # NaN içeren tüm satırları kaldır
+    
     # Her hoca için yorumları güncelle
     for index, row in df.iterrows():
         hoca_adi = row['Hoca seç']
         kisi = row['İsmin nasıl gözüksün']
         yorum = row['Hoca hakkındaki yorumun']
-
-        for hoca in data['hocalar']:
-            if hoca['ad'] == hoca_adi:
-                # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
-                gorus_var_mi = False
-                if 'ogrenci_gorusleri' not in hoca:
-                    hoca['ogrenci_gorusleri'] = []
-                for gorus in hoca['ogrenci_gorusleri']:
-                    if gorus['kisi'].lower() == kisi.lower():
-                        gorus['yorum'] = yorum
-                        gorus_var_mi = True
-                        break
-                
-                # Yeni yorum ekle
-                if not gorus_var_mi:
-                    hoca['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
-
+        icerikKontrol = IcerikKontrol("hoca")
+        if not pd.isna(yorum) and icerikKontrol.pozitif_mi(yorum):
+            yorum = icerikKontrol.metin_on_isleme(yorum)
+            for hoca in data['hocalar']:
+                if hoca['ad'] == hoca_adi:
+                    # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
+                    gorus_var_mi = False
+                    if 'ogrenci_gorusleri' not in hoca:
+                        hoca['ogrenci_gorusleri'] = []
+                    for gorus in hoca['ogrenci_gorusleri']:
+                        if gorus['kisi'].lower() == kisi.lower():
+                            gorus['yorum'] = yorum
+                            gorus_var_mi = True
+                            break
+                    
+                    # Yeni yorum ekle
+                    if not gorus_var_mi:
+                        hoca['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
+    icerikKontrol.dosya_yaz()
 # Google Sheets URL'si
 yorumlar_sheets_url = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
 
