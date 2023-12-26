@@ -1169,7 +1169,7 @@ Açıklamalar:
 
 
 
-### 👩‍🏫 Dr. H.İrem Türkmen 
+### 👩‍🏫 Dr. H. İrem Türkmen 
 - 🚪 **Ofis:** EEF-DZ32
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1272,7 +1272,7 @@ Açıklamalar:
 - G1 : Dr. Göksel Biricik
 - GB : Doç. Dr. Gökhan Bilgin
 - HOİ : Dr. Hamza Osman İlhan
-- HT : Dr. H.İrem Türkmen
+- HİT : Dr. H. İrem Türkmen
 - MAG : Doç. Dr. M. Amaç Güvensan
 - MEK : Prof. Dr. M. Elif Karslıgil
 - MFA : Prof. Dr. M. Fatih Amasyalı
