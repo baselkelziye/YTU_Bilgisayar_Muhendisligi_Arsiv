@@ -1,5 +1,5 @@
 import json
-from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QApplication, QComboBox, QScrollArea, QWidget, QHBoxLayout)
+from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
@@ -70,15 +70,43 @@ class DersEkleGuncelleWindow(QDialog):
 
                 # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
                 sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
-
                 for ders in sorted_dersler:
-                    btn = QPushButton(f"{ders['ad']}", self.scrollWidget)
-                    btn.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
-                    self.derslerLayout.addWidget(btn)
+                    # Her ders için bir satır oluştur
+                    dersSatiri = QHBoxLayout()
+
+                    # Büyük ders butonu
+                    btnDers = QPushButton(f"{ders['ad']}", self.scrollWidget)
+                    btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
+                    btnDers.setStyleSheet("background-color: blue;")  # Mavi renk, belirlenen boyut
+                    btnDers.setMinimumWidth(350)
+                    dersSatiri.addWidget(btnDers)
+
+                    # Kaynak Ekle butonu
+                    btnKaynakEkle = QPushButton("Kaynak Ekle/Güncelle", self.scrollWidget)
+                    btnKaynakEkle.clicked.connect(lambda checked, a=ders: self.kaynakEkle(a))
+                    btnKaynakEkle.setStyleSheet("background-color: green;")  # Yeşil renk, küçültülmüş genişlik
+                    dersSatiri.addWidget(btnKaynakEkle)
+
+                    # Öneri Ekle butonu
+                    btnOneriEkle = QPushButton("Öneri Ekle/Güncelle", self.scrollWidget)
+                    btnOneriEkle.clicked.connect(lambda checked, a=ders: self.oneriEkle(a))
+                    btnOneriEkle.setStyleSheet("background-color: red;")  # Kırmızı renk, küçültülmüş genişlik
+                    dersSatiri.addWidget(btnOneriEkle)
+
+                    # Ders satırını dersler layout'una ekle
+                    self.derslerLayout.addLayout(dersSatiri)
+
+
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-
-
+    def oneriEkle(self, ders):
+        # Öneri ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
+        self.oneriDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, 'derse_dair_oneriler', self)
+        self.oneriDuzenleyiciPenceresi.show()
+    def kaynakEkle(self, ders):
+        # Kaynak ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
+        self.kaynakDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, 'faydali_olabilecek_kaynaklar', self)
+        self.kaynakDuzenleyiciPenceresi.show()
     def dersEkle(self):
         self.dersDuzenlemePenceresi = DersDuzenlemeWindow(None, self.data, self)
         self.dersDuzenlemePenceresi.show()
@@ -88,11 +116,289 @@ class DersEkleGuncelleWindow(QDialog):
         self.dersDuzenlemePenceresi.show()
 
     def dersleriYenile(self):
+        # Layout'taki tüm widget'ları temizle
         for i in reversed(range(self.derslerLayout.count())): 
-            widgetToRemove = self.derslerLayout.itemAt(i).widget()
-            self.derslerLayout.removeWidget(widgetToRemove)
-            widgetToRemove.setParent(None)
+            layoutItem = self.derslerLayout.itemAt(i)
+            if layoutItem is not None:
+                widgetToRemove = layoutItem.widget()
+                if widgetToRemove is not None:  # Widget varsa kaldır
+                    widgetToRemove.setParent(None)
         self.dersleriYukle()
+
+class KaynakVeOneriDuzenleyici(QDialog):
+    def __init__(self, ders, tur, parent):
+        super().__init__()
+        self.ders = ders
+        self.setModal(True)
+        self.parent = parent
+        self.tur = tur  # 'faydali_olabilecek_kaynaklar' veya 'derse_dair_oneriler'
+        self.initUI()
+
+    def initUI(self):
+        if self.tur == 'faydali_olabilecek_kaynaklar':
+            self.setWindowTitle(f"{self.ders['ad']} - Kaynaklar")
+        else:
+            self.setWindowTitle(f"{self.ders['ad']} - {self.tur.replace('_', ' ').title()}")
+        self.setGeometry(100, 100, 600, 400)
+
+        self.layout = QVBoxLayout(self)
+
+        # Ekle butonu
+        self.ekleBtn = QPushButton('Ekle', self)
+        self.ekleBtn.setStyleSheet("background-color: green;")  # Ekle butonunu yeşil yap
+        self.ekleBtn.clicked.connect(self.yeniElemanEkle)
+        self.layout.addWidget(self.ekleBtn)
+        self.resize(600, 100)
+
+        # Mevcut kaynaklar/öneriler için butonları oluştur
+        self.elemanlariYukle()
+ 
+
+    def elemanlariYukle(self):
+        if self.tur in self.ders:
+            for j, eleman in enumerate(self.ders[self.tur]):
+                if self.tur == 'derse_dair_oneriler':
+                    if 'oneriler' in eleman:
+                        for i, oneri in enumerate(eleman['oneriler']):
+                            satirLayout = QHBoxLayout()
+                            label = QLabel(f"Öneri Sahibi: {eleman['oneri_sahibi']}", self)
+                            satirLayout.addWidget(label)
+
+                            # Bilgi (mesaj) butonu
+                            infoBtn = QPushButton(oneri, self)
+                            infoBtn.clicked.connect(lambda checked, a=eleman, j=j, i=i: self.elemanDuzenle(a, j, oneri_index=i))
+                            satirLayout.addWidget(infoBtn)
+                            # Silme butonu
+                            deleteBtn = QPushButton("Sil", self)
+                            deleteBtn.setStyleSheet("background-color: red; color: white;")  # Silme butonunu kırmızı yap
+                            deleteBtn.clicked.connect(lambda checked, a=eleman, j=j, i=i: self.elemanSil(a, oneri_index=i, sahip_index=j))
+                            satirLayout.addWidget(deleteBtn)
+                            # Satır düzenini ana düzene ekle
+                            self.layout.addLayout(satirLayout)
+
+                else:
+                    satirLayout = QHBoxLayout()
+                    # Bilgi (mesaj) butonu
+                    infoBtn = QPushButton(eleman, self)
+                    infoBtn.clicked.connect(lambda checked, a=eleman, j=j: self.elemanDuzenle(a, oneri_index=j))
+                    satirLayout.addWidget(infoBtn)
+
+                    # Silme butonu
+                    deleteBtn = QPushButton("Sil", self)
+                    deleteBtn.setStyleSheet("background-color: red; color: white;")  # Silme butonunu kırmızı yap
+                    deleteBtn.clicked.connect(lambda checked, a=eleman, j=j: self.elemanSil(a, oneri_index=j))
+                    satirLayout.addWidget(deleteBtn)
+                    # Satır düzenini ana düzene ekle
+                    self.layout.addLayout(satirLayout)
+
+    def elemanSil(self, eleman, sahip_index=None, oneri_index=None):
+        # Kullanıcıya silme işlemi için onay sor
+        emin_mi = QMessageBox.question(self, 'Onay', 'Bu öğeyi silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+
+        if emin_mi == QMessageBox.Yes:
+            # JSON dosyasını aç ve güncelle
+            with open(JSON_PATH, 'r+', encoding='utf-8') as file:
+                data = json.load(file)
+
+                # İlgili dersi data içinden bul
+                ders = next((d for d in data['dersler'] if d['ad'] == self.ders['ad']), None)
+                if ders and self.tur in ders:
+                    if self.tur == 'derse_dair_oneriler' and sahip_index is not None and oneri_index is not None:
+                        # İlgili öneriyi sil
+                        del ders[self.tur][sahip_index]['oneriler'][oneri_index]
+                        if len(ders[self.tur][sahip_index]['oneriler']) < 1:
+                            # Öneri sahibinin önerisi kalmadı, öneri sahibini de sil
+                            del ders[self.tur][sahip_index]
+                            if len(ders[self.tur]) < 1:
+                                # Öneri kalmadı, alanı sil
+                                del ders[self.tur]
+                    elif self.tur != 'derse_dair_oneriler' and oneri_index is not None:
+                        # İlgili kaynağı sil
+                        del ders[self.tur][oneri_index]
+                        if len(ders[self.tur]) < 1:
+                            # Kaynak kalmadı, alanı sil
+                            del ders[self.tur]
+                    # Değişiklikleri dosyaya yaz
+                    file.seek(0)
+                    json.dump(data, file, ensure_ascii=False, indent=4)
+                    file.truncate()
+
+            # Arayüzü güncelle
+            self.arayuzuGuncelle()
+
+    def arayuzuGuncelle(self):
+        # Ebeveyn sınıfın dersleri yenileme metodunu çağır
+        if self.parent and hasattr(self.parent, 'dersleriYenile'):
+            self.parent.dersleriYenile()
+
+            # Ebeveynin veri setinde güncellenmiş ders bilgisini bul
+            guncellenmisDers = next((ders for ders in self.parent.data['dersler'] if ders['ad'] == self.ders['ad']), None)
+            if guncellenmisDers:
+                # self.ders'i güncellenmiş bilgiyle değiştir
+                self.ders = guncellenmisDers
+
+        # Mevcut butonları ve etiketleri temizle
+        self.temizle()
+
+        # Güncellenmiş ders bilgileriyle elemanları yeniden yükle
+        self.elemanlariYukle()
+
+    def temizle(self):
+        # Ekleme butonunu koru ve diğer widget'ları kaldır
+        for i in reversed(range(self.layout.count())):
+            widget = self.layout.itemAt(i).widget()
+            if widget is not None and widget != self.ekleBtn:  # Ekleme butonu değilse kaldır
+                self.layout.removeWidget(widget)
+                widget.deleteLater()
+    def temizle(self):
+        # Ekleme butonunu koru ve diğer widget'ları kaldır
+        for i in reversed(range(self.layout.count())):
+            layoutItem = self.layout.itemAt(i)
+
+            if layoutItem.widget() == self.ekleBtn:
+                # Ekleme butonunu koru
+                continue
+
+            if layoutItem.widget():
+                # Eğer düzgün bir widget ise, kaldır
+                widget = layoutItem.widget()
+                self.layout.removeWidget(widget)
+                widget.deleteLater()
+            elif layoutItem.layout():
+                # Eğer bir alt düzen (sub-layout) ise, onun içindeki widget'ları kaldır
+                self.temizleAltDuzen(layoutItem.layout())
+
+    def temizleAltDuzen(self, layout):
+        # Alt düzen içindeki widget'ları kaldır
+        for i in reversed(range(layout.count())):
+            layoutItem = layout.itemAt(i)
+
+            if layoutItem.widget():
+                widget = layoutItem.widget()
+                layout.removeWidget(widget)
+                widget.deleteLater()
+            elif layoutItem.layout():
+                # İç içe başka bir alt düzen varsa, onu da temizle
+                self.temizleAltDuzen(layoutItem.layout())
+
+    def yeniElemanEkle(self):
+        # Yeni eleman ekleme dialogunu aç
+        self.eklemeDialogu = YeniElemanEklemeDialog(self.tur, parent=self, ders=self.ders)
+        self.eklemeDialogu.show()
+
+    def elemanDuzenle(self, eleman, sahip_index=None, oneri_index=None):
+        # Mevcut elemanı düzenleme dialogunu aç
+        self.duzenlemeDialogu = YeniElemanEklemeDialog(self.tur, sahip_index, oneri_index, eleman, parent=self, ders=self.ders)
+        self.duzenlemeDialogu.show()
+class YeniElemanEklemeDialog(QDialog):
+    def __init__(self, tur,sahip_index=None , oneri_index=None, mevcutEleman=None, parent=None, ders=None):
+        super().__init__()
+        self.tur = tur
+        self.setModal(True)
+        self.parent = parent
+        self.sahip_index = sahip_index  # Güncellenecek önerinin indeksi
+        self.oneri_index = oneri_index  # Güncellenecek önerinin indeksi
+        self.mevcutEleman = mevcutEleman  # Güncellenecek mevcut eleman
+        self.ders = ders
+        self.initUI()
+
+    def initUI(self):
+        self.layout = QVBoxLayout(self)
+
+        # Öneri sahibi ve öneri için etiket ve metin alanı
+        if self.tur == 'derse_dair_oneriler':
+            self.label = QLabel('Öneri Sahibi:', self)
+            self.layout.addWidget(self.label)
+            self.sahibiEdit = QLineEdit(self)
+            if self.mevcutEleman:
+                self.sahibiEdit.setText(self.mevcutEleman['oneri_sahibi'])
+            self.layout.addWidget(self.sahibiEdit)
+            self.label = QLabel('Öneri:', self)
+        else:
+            self.label = QLabel('Kaynak:', self)
+
+
+        self.layout.addWidget(self.label)
+        self.metinEdit = QTextEdit(self)
+        if self.mevcutEleman and self.tur == 'derse_dair_oneriler':
+            self.metinEdit.setText(self.mevcutEleman['oneriler'][self.oneri_index])
+        else:
+            self.metinEdit.setText(self.mevcutEleman)
+        self.layout.addWidget(self.metinEdit)
+
+        # Kaydet butonu
+        self.kaydetBtn = QPushButton('Kaydet', self)
+        self.kaydetBtn.clicked.connect(self.kaydet)
+        self.layout.addWidget(self.kaydetBtn)
+
+    def kaydet(self):
+        oneriSahibi = self.sahibiEdit.text() if self.tur == 'derse_dair_oneriler' else None
+        metin = self.metinEdit.toPlainText()
+        if (not oneriSahibi and self.tur == 'derse_dair_oneriler') or not metin:
+            QMessageBox.warning(self, 'Hata', 'Öneri sahibi ve öneri boş olamaz!')
+            return
+        emin_mi = QMessageBox.question(self, 'Onay', f'Değişiklikleri Kaydetmek İstediğine Emin Misin?', QMessageBox.Yes | QMessageBox.No)
+        if emin_mi != QMessageBox.Yes:
+            return
+        # JSON dosyasını aç ve güncelle
+        with open(JSON_PATH, 'r+', encoding='utf-8') as file:
+            data = json.load(file)
+
+            ders = next((ders for ders in data['dersler'] if ders['ad'] == self.ders['ad']), None)
+            if not ders:
+                print("Belirtilen adla ders bulunamadı!")
+                return  # Ders bulunamazsa
+            if self.tur != 'derse_dair_oneriler':
+                # Faydalı olabilecek kaynaklar için işlemler
+                if self.oneri_index is None:
+                    # Yeni kaynak ekle
+                    if "faydali_olabilecek_kaynaklar" in ders:
+                        ders['faydali_olabilecek_kaynaklar'].append(metin)
+                    else:
+                        ders['faydali_olabilecek_kaynaklar'] = [metin]
+                else:
+                    # Mevcut kaynağı güncelle
+                    ders['faydali_olabilecek_kaynaklar'][self.oneri_index] = metin
+            else:
+                # Derse dair öneriler için işlemler
+                if oneriSahibi:
+                    # Mevcut öneri sahibi değerini al
+                    mevcutSahibi = self.ders['derse_dair_oneriler'][self.sahip_index]['oneri_sahibi'] if self.sahip_index is not None else None
+
+                    if mevcutSahibi != oneriSahibi:
+                        # Öneri sahibi değişti, eski öneriyi sil
+                        if self.sahip_index is not None and self.oneri_index is not None:
+                            del ders['derse_dair_oneriler'][self.sahip_index]['oneriler'][self.oneri_index]
+                            if len(ders['derse_dair_oneriler'][self.sahip_index]['oneriler']) < 1:
+                                del ders['derse_dair_oneriler'][self.sahip_index]
+                        # Yeni sahip için öneriyi ekle veya mevcut sahibi bul
+                        if "derse_dair_oneriler" in ders:
+                            matched = next((o for o in ders['derse_dair_oneriler'] if o['oneri_sahibi'] == oneriSahibi), None)
+                        else:
+                            ders['derse_dair_oneriler'] = []
+                            matched = None
+                        if not matched:
+                            # Yeni sahibi ve öneriyi ekle
+                            matched = {'oneri_sahibi': oneriSahibi, 'oneriler': []}
+                            ders['derse_dair_oneriler'].append(matched)
+                    else:
+                        # Öneri sahibi aynı, mevcut sahibi kullan
+                        matched = ders['derse_dair_oneriler'][self.sahip_index]
+
+                    # Öneri ekle veya güncelle
+                    if self.oneri_index is None or mevcutSahibi != oneriSahibi:
+                        # Yeni öneri ekle
+                        matched['oneriler'].append(metin)
+                    else:
+                        # Mevcut öneriyi güncelle
+                        matched['oneriler'][self.oneri_index] = metin
+            # Dosyayı baştan aç, güncellenmiş veriyi yaz ve kapat
+            file.seek(0)
+            json.dump(data, file, ensure_ascii=False, indent=4)
+            file.truncate()
+        QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
+        self.parent.arayuzuGuncelle()
+        self.close()
 
 class DersDuzenlemeWindow(QDialog):
     def __init__(self, ders,data, parent):

@@ -297,9 +297,10 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
             # Derse dair öneriler
             f.write("## 📝 Derse Dair Öneriler\n\n")
             for oneriler in ders['derse_dair_oneriler']:
-                f.write(f"### 💡 Öneri sahibi: {oneriler['oneri_sahibi']}\n")
-                for oneri in oneriler['oneriler']:
-                    f.write(f"- {oneri}\n")
+                if len(oneriler['oneriler']) > 0:
+                    f.write(f"### 💡 Öneri sahibi: {oneriler['oneri_sahibi']}\n")
+                    for oneri in oneriler['oneriler']:
+                        f.write(f"- {oneri}\n")
         f.write("\n## 📖 Faydalı Olabilecek Kaynaklar\n\n")
         f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
         if "faydali_olabilecek_kaynaklar" in ders:
@@ -364,9 +365,10 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                     if "derse_dair_oneriler" in ders:
                         f.write("#### 💡 Derse Dair Öneriler\n\n")  # Ampul emoji, önerileri temsil eder
                         for oneriler in ders['derse_dair_oneriler']:
-                            f.write(f"##### 📌 Öneri sahibi: {oneriler['oneri_sahibi']}\n")  # Sabitleme pimi emoji, öneri sahibini temsil eder
-                            for oneri in oneriler['oneriler']:
-                                f.write(f"- {oneri}\n")
+                            if len(oneriler['oneriler']) > 0:
+                                f.write(f"##### 📌 Öneri sahibi: {oneriler['oneri_sahibi']}\n")  # Sabitleme pimi emoji, öneri sahibini temsil eder
+                                for oneri in oneriler['oneriler']:
+                                    f.write(f"- {oneri}\n")
                     f.write("\n#### 📚 Faydalı Olabilecek Kaynaklar\n\n")  # Kitap emoji, kaynakları temsil eder
                     if "faydali_olabilecek_kaynaklar" in ders:
                         for kaynak in ders['faydali_olabilecek_kaynaklar']:
