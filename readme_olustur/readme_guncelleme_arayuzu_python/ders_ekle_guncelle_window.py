@@ -20,7 +20,6 @@ class DersEkleGuncelleWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Ders Ekle/Güncelle')
-        self.setGeometry(100, 100, 800, 600)  # Pencere boyutunu ayarla
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
 
@@ -139,7 +138,6 @@ class KaynakVeOneriDuzenleyici(QDialog):
             self.setWindowTitle(f"{self.ders['ad']} - Kaynaklar")
         else:
             self.setWindowTitle(f"{self.ders['ad']} - {self.tur.replace('_', ' ').title()}")
-        self.setGeometry(100, 100, 600, 400)
 
         self.layout = QVBoxLayout(self)
 
@@ -412,7 +410,6 @@ class DersDuzenlemeWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Ders Düzenle/Ekle')
-        self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu ayarla
 
         self.layout = QVBoxLayout(self)
 
