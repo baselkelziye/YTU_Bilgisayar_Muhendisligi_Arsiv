@@ -11,9 +11,10 @@
   - 🛤️ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 ## 📝 Derse Dair Öneriler
 
-### 💡 Öneri sahibi: X
+### 💡 Öneri sahibi: Traktör Reis
 - ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar
 
 ## 📖 Faydalı Olabilecek Kaynaklar

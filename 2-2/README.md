@@ -46,7 +46,7 @@
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
-##### 📌 Öneri sahibi: X
+##### 📌 Öneri sahibi: Traktör Reis
 - Çıkmış çözün (sınavlar çıkmışlarla neredeyse aynı oluyor test, büt klasik oluyor büte kalma)
 - ödevleri yapın
 
@@ -73,7 +73,7 @@
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
-##### 📌 Öneri sahibi: X
+##### 📌 Öneri sahibi: Traktör Reis
 - şimdiye kadar sadece çıkmış sordular eski sınavlardan birini sorup geçiyorlar genelde örnek sorular önemli
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -99,7 +99,7 @@
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
-##### 📌 Öneri sahibi: X
+##### 📌 Öneri sahibi: Traktör Reis
 - ders full ezber
 - Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
 - Proje konusu ve birçok proje örneği githubda mevcut.
@@ -127,7 +127,7 @@
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
-##### 📌 Öneri sahibi: X
+##### 📌 Öneri sahibi: Traktör Reis
 - vize görece kolay olur yüksek kalırsan geçersin
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -152,7 +152,7 @@
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
-##### 📌 Öneri sahibi: X
+##### 📌 Öneri sahibi: Traktör Reis
 - ödevleri yapmazsanız geçemezsiniz zaman harcayan herkes yapabilir çok zor değiller zaman alıyorlar
 
 #### 📚 Faydalı Olabilecek Kaynaklar

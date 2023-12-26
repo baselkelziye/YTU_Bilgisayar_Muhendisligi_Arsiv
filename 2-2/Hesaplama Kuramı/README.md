@@ -11,9 +11,10 @@
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 ## 📝 Derse Dair Öneriler
 
-### 💡 Öneri sahibi: X
+### 💡 Öneri sahibi: Traktör Reis
 - vize görece kolay olur yüksek kalırsan geçersin
 
 ## 📖 Faydalı Olabilecek Kaynaklar
