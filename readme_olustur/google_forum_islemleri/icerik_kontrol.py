@@ -1,7 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import re
-
+import hunspell
 class IcerikKontrol:
     def __init__(self, tip): 
         # Karaliste dosyasının adı
@@ -34,15 +34,39 @@ class IcerikKontrol:
     def metin_on_isleme(self,text):
         if self.pozitif_mi(text):
             self.sikintili_yorumlar.append(text)
-        yazim_hatasi_duzeltildi = self.yazim_hatasi_duzelt(text)
+        yazim_hatasi_duzeltildi = self.yazim_duzeltici(text)
         if yazim_hatasi_duzeltildi != text:
             self.yazim_hatasi_duzeltilen_yorumlar.append(f"{text} -> {yazim_hatasi_duzeltildi}")
         sansurlu_yorum = self.sansurle(yazim_hatasi_duzeltildi)
         if yazim_hatasi_duzeltildi != sansurlu_yorum:
             self.sansurlenen_yorumlar.append(f"Ana metin: {text} -> Yazım hatası düzeltilmiş metin: {yazim_hatasi_duzeltildi} -> Sansürlü Metin:{sansurlu_yorum}")
         return sansurlu_yorum
-    def yazim_hatasi_duzelt(self,text):
-        return text
+    def yazim_duzeltici(self,metin):
+        return metin
+        # Hunspell nesnesini oluştur ve Türkçe sözlük dosyalarını yükle
+        hspell = hunspell.HunSpell('/usr/share/hunspell/tr_TR.dic', '/usr/share/hunspell/tr_TR.aff')
+        
+        duzeltilmis_kelimeler = []
+        
+        # Metni kelimelere ayır
+        kelimeler = metin.split()
+        
+        for kelime in kelimeler:
+            # Eğer kelime doğru yazılmışsa, doğrudan listeye ekle
+            if hspell.spell(kelime):
+                duzeltilmis_kelimeler.append(kelime)
+            else:
+                # Eğer kelime yanlış yazılmışsa, önerilen düzeltmeleri al
+                oneriler = hspell.suggest(kelime)
+                if oneriler:
+                    # İlk öneriyi al ve listeye ekle
+                    duzeltilmis_kelimeler.append(oneriler[0])
+                else:
+                    # Eğer öneri yoksa, orijinal kelimeyi ekle
+                    duzeltilmis_kelimeler.append(kelime)
+        
+        # Düzeltilmiş kelimeleri birleştir ve döndür
+        return ' '.join(duzeltilmis_kelimeler)
     def dosya_yaz(self):
         with open(f"sikintili_{self.tip}_yorumlar.txt", "w", encoding="utf-8") as f:
             f.write("\n".join(self.sikintili_yorumlar))
