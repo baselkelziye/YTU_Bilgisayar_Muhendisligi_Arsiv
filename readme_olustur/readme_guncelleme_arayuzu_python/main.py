@@ -1,6 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication,QDesktopWidget, QWidget, QPushButton, QVBoxLayout,QProgressDialog, QMessageBox
-from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QApplication,QDesktopWidget, QWidget, QPushButton, QVBoxLayout, QMessageBox
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from ders_ekle_guncelle_window import DersEkleGuncelleWindow
@@ -27,7 +26,10 @@ class App(QWidget):
             QPushButton('Ders Ekle/Güncelle'),
             QPushButton('Readme Scripti Çalıştır')
         ]
-
+        # Her düğme için farklı bir renk ayarla
+        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33']
+        for button, color in zip(self.buttons, colors):
+            button.setStyleSheet(f'background-color: {color};')
         self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
         self.progressDialog.close()
         # Her butona tıklama işleyicisi ekle
@@ -69,14 +71,20 @@ class App(QWidget):
         self.dersEkleGuncelleWindow.show()
 
     def readmeScriptiCalistir(self):
-        self.progressDialog.show()
+        # Kullanıcıya scripti çalıştırmak isteyip istemediğini sor
+        reply = QMessageBox.question(self, 'Onay', 
+                                    "Scripti çalıştırmak istediğinize emin misiniz?",
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
 
-        paths = ('../google_forum_islemleri', '..')
-        self.thread = ScriptRunnerThread(paths)
-        self.thread.finished.connect(self.onFinished)
-        self.thread.error.connect(self.onError)
-        self.thread.start()
+        # Eğer kullanıcı 'Evet' dediyse scripti çalıştır
+        if reply == QMessageBox.Yes:
+            self.progressDialog.show()
 
+            paths = ('../google_forum_islemleri', '..')
+            self.thread = ScriptRunnerThread(paths)
+            self.thread.finished.connect(self.onFinished)
+            self.thread.error.connect(self.onError)
+            self.thread.start()
     def onFinished(self):
         self.progressDialog.close()
         QMessageBox.information(self, 'Başarılı', 'README.md dosyaları güncellendi!')
