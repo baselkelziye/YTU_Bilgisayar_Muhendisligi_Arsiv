@@ -6,6 +6,7 @@ from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
 from progress_dialog import CustomProgressDialog
 from threadler import ScriptRunnerThread
+from repu_kullanimi_window import RepoKullanimiDialog
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -24,10 +25,11 @@ class App(QWidget):
             QPushButton('Yazarın Notları Ekle/Güncelle'),
             QPushButton('Hoca Ekle/Güncelle'),
             QPushButton('Ders Ekle/Güncelle'),
+            QPushButton('Repo Kullanımı Düzenle'),
             QPushButton('Readme Scripti Çalıştır')
         ]
         # Her düğme için farklı bir renk ayarla
-        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33']
+        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33','#FF5733']
         for button, color in zip(self.buttons, colors):
             button.setStyleSheet(f'background-color: {color};')
         self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
@@ -37,7 +39,8 @@ class App(QWidget):
         self.buttons[1].clicked.connect(self.acYazarinNotlari)
         self.buttons[2].clicked.connect(self.acHocaEkleGuncelle)
         self.buttons[3].clicked.connect(self.acDersEkleGuncelle)
-        self.buttons[4].clicked.connect(self.readmeScriptiCalistir)
+        self.buttons[4].clicked.connect(self.repoKullanimiDuzenle)
+        self.buttons[5].clicked.connect(self.readmeScriptiCalistir)
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -46,7 +49,9 @@ class App(QWidget):
         self.setLayout(layout)
         self.show()
         self.center(),
-
+    def repoKullanimiDuzenle(self):
+        self.repoKullanimiGuncelleWindow = RepoKullanimiDialog()
+        self.repoKullanimiGuncelleWindow.show()
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
