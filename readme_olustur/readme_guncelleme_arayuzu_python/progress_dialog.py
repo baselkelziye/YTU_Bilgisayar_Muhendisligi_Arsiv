@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import QApplication, QProgressDialog, QProgressBar
-from PyQt5.QtCore import Qt, QEvent
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import QProgressDialog
 
 class CustomProgressDialog(QProgressDialog):
     def __init__(self, title, parent=None):
@@ -9,6 +9,10 @@ class CustomProgressDialog(QProgressDialog):
     def init_ui(self):
         # İptal butonunu kaldır
         self.setCancelButton(None)
+        
+        # Pencere başlık çubuğunu kaldır
+        self.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
+        
         self.setWindowModality(Qt.WindowModal)
         self.setMinimumDuration(0)
         self.setAutoClose(True)
@@ -28,4 +32,3 @@ class CustomProgressDialog(QProgressDialog):
 
         # Sürekli dönen bir hale getir
         self.setRange(0, 0)
-

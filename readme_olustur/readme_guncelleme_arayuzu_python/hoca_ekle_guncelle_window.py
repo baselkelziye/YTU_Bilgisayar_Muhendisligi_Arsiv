@@ -28,8 +28,6 @@ class HocaEkleGuncelleWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Hocaları Ekle/Güncelle')
-        self.setGeometry(100, 100, 800, 600)  # Pencere boyutunu büyüt
-
         self.mainLayout = QVBoxLayout(self)  # Ana layout
 
         # Hoca ekleme butonu
@@ -115,7 +113,6 @@ class HocaDuzenlemeWindow(QDialog):
             self.setWindowTitle('Hoca Düzenle')
         else:
             self.setWindowTitle('Hoca Ekle')
-        self.setGeometry(100, 100, 400, 600)  # Pencere boyutunu ayarla
 
         self.layout = QVBoxLayout(self)
         # Ünvan için alan
