@@ -28,7 +28,6 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle(self.title)
-        self.setGeometry(100, 100, 600, 400)  # Pencere boyutunu ayarla
         self.setMinimumHeight(200)
         self.setMinimumWidth(600)
         self.mainLayout = QVBoxLayout(self)  # Ana layout
