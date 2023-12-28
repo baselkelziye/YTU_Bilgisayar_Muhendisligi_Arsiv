@@ -1,61 +1,35 @@
-Nasıl kullanılır
-hocalar.json dosyası hoca bilgilerini içerir ve readmeleri oluşturmakta kullanılır
-formatı şu şekildedir
-{
-    "hocalar": [{
-            "ad": "Prof. Dr. Banu Diri",
-            "ofis": "EEF-D222",
-            "link": "http://avesis.yildiz.edu.tr/diri/",
-            "dersler": ["Sayısal Analiz", "Ayrık Matematik", "Doğal Dil İşlemeye Giriş"],
-            "hakkinda": "Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.",
-            "anlatim_puani": 90,
-            "kolaylik_puani": 90,
-            "ogretme_puani": 90,
-            "eglence_puani": 90
-}]}
 
-giris.json readme dosyasının giriş bilgilerini içerir ve formatı şu şekildedir
-{
-    "baslik": "Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Ders Notları",
-    
-    "aciklama": "Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır."
-    
-    ,"icindekiler": [
-        "[Hocalar](#hocalar)",
-        "[Dersler](#dersler)",
-        "[Repo Kullanımı](#repo-kullanımı)",
-        "[Yazarın Notları](#yazarın-notları)"
-    ]
-}
+# Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Ders Notları
 
+Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır.
 
-donemler.json dönem bilgilerini tutar ve formatı şu şekildedir
-{
-    "donemler": [
-      {
-        "dosya_yolu": "../1-1",
-        "donem_adi": "1. Sınıf Güz",
-        "genel_tavsiyeler": ["Düzenli ders çalışmayı ihmal etmeyin", "Lab uygulamalarına katılın"],
-        "yil": 1,
-        "donem": "Güz"
-      }]}
+## Gereksinimleri İndirme 📦
 
-dersler.json ders bilgilerini tutar ve formatı şu şekildedir
+Projeyi başarıyla çalıştırabilmek için aşağıdaki adımları izleyerek gerekli kütüphaneleri ve bağımlılıkları yükleyiniz:
 
-{"dersler":[
-    {"ad": "İşletim Sistemleri",
-        "yil": 3,
-        "donem": "Güz",
-        "tip": "Zorunlu",
-        "hakkinda": "",
-        "kolaylik_puani": 0,
-        "gereklilik_puani": 0,
-        "faydali_olabilecek_kaynaklar":["Abraham-Silberschatz-Operating-System-Concepts-10th-2018","kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."],
-        "derse_dair_oneriler":["Lablardan tam puan almanız lazım.","Çıkmış çözmeniz lazım."],
-        "dersi_veren_hocalar":["ZCT","G1","MAG"]
-    }]}
+1. **Python 3 Kurulumu:** Projeyi çalıştırmak için Python 3'ün bilgisayarınızda yüklü olması gerekmektedir. Python'ı [buradan](https://www.python.org/downloads/) indirebilirsiniz (linux için `sudo apt install python3`). Kurulum tamamlandıktan sonra terminali açın ve `python3 --version` komutu ile kurulumun başarılı olduğunu doğrulayın. 🐍
 
-repo_kullanimi.json reponun nasıl kullanılacağı bilgilerini tutar
-yazarin_notlari.json ek notları tutar
+2. **Pip3 Kurulumu:** Pip, Python paketlerini yönetmek için kullanılan bir araçtır. Python 3 ile birlikte genellikle otomatik olarak yüklenir. Kurulumunu doğrulamak için terminali açın ve `pip3 --version` komutunu çalıştırın. Eğer kurulu değilse, [Pip'in resmi belgelerini](https://pip.pypa.io/en/stable/installing/) takip ederek kurulum yapabilirsiniz.(linux için `sudo apt install python3-pip`) 🛠️
 
-bu dosyalarla kök klasörde, her dersin klasöründe ve her dönemin klasöründe readme dosyaları oluşur
+3. **Gerekli Kütüphanelerin Yüklenmesi:** Projede kullanılan kütüphaneleri yüklemek için, terminalinize `pip3 install -r gereksinimler.txt` komutunu girin. Bu komut, `gereksinimler.txt` dosyasında listelenen tüm paketleri yükleyecektir. 📚
+## Nasıl Kullanılır
+
+Proje dosyaları arasında, hocalar, dersler, dönemler ve diğer bilgileri içeren JSON formatında çeşitli dosyalar bulunmaktadır. Bu dosyalar, projenin çeşitli yerlerinde kullanılarak dinamik bir içerik oluşturur.
+
+Örneğin:
+- `hocalar.json` hoca bilgilerini içerir ve README'leri oluşturmakta kullanılır.
+- `dersler.json` ders bilgilerini tutar.
+- `donemler.json` dönem bilgilerini tutar.
+- `giris.json` README dosyasının giriş bilgilerini içerir.
+
+Bu dosyalarla birlikte, her dersin ve her dönemin klasöründe README dosyaları oluşturulur.
+
+### Projeyi Çalıştırmak
+
+Projeyi çalıştırmak için aşağıdaki adımı izleyin:
+
+```bash
+python3 readme_olustur.py
+```
+
+Bu komut, projenin kök klasöründeki tüm ilgili dosyaları okuyacak ve gerekli README dosyalarını oluşturacaktır.
