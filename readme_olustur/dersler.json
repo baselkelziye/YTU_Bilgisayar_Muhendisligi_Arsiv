@@ -662,8 +662,8 @@
                     "yorum": "Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor."
                 }
             ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 60,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 30,
             "derse_dair_oneriler": [
                 {
                     "oneri_sahibi": "Traktör Reis",
@@ -677,7 +677,8 @@
             "faydali_olabilecek_kaynaklar": [
                 "80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"
             ],
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Veritabanı Yönetimi",
@@ -1263,7 +1264,7 @@
             ]
         },
         {
-            "ad": "Mikroişlemci Sistemleri ve Assamly Dili",
+            "ad": "Mikroişlemci Sistemleri ve Assembly Dili",
             "yil": 3,
             "donem": "Güz",
             "tip": "Zorunlu",
