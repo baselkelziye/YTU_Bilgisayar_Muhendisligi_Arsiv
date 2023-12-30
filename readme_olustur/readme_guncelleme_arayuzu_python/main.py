@@ -7,6 +7,7 @@ from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
 from progress_dialog import CustomProgressDialog
 from threadler import ScriptRunnerThread
 from repu_kullanimi_window import RepoKullanimiDialog
+import os
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -100,6 +101,13 @@ class App(QWidget):
 
 
 if __name__ == '__main__':
+        # Çalıştırılabilir dosyanın yolunu ve dizinini belirle
+    if getattr(sys, 'frozen', False):
+        # PyInstaller tarafından oluşturulmuş bir çalıştırılabilir dosya çalışıyorsa
+        application_path = os.path.dirname(sys.executable)
+        application_path = os.path.join(application_path, "..")
+        os.chdir(application_path)
+
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
