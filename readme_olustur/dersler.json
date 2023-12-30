@@ -104,9 +104,10 @@
                     "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
                 }
             ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 10,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
@@ -366,7 +367,7 @@
                     "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
                 }
             ],
-            "kolaylik_puani": 90,
+            "kolaylik_puani": 50,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
                 {
@@ -377,7 +378,8 @@
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Lojik Devreler",
@@ -467,7 +469,8 @@
                     "kisaltma": "EU",
                     "ad": "Dr. Erkan Uslu"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Elektronik Devreler",
@@ -577,8 +580,8 @@
             "faydali_olabilecek_kaynaklar": [
                 "[Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir."
             ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 90,
             "derse_dair_oneriler": [
                 {
                     "oneri_sahibi": "Traktör Reis",
@@ -592,7 +595,8 @@
                     "kisaltma": "G1",
                     "ad": "Dr. Göksel Biricik"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "İşletim Sistemleri",
@@ -693,14 +697,15 @@
                     "yorum": "Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay."
                 }
             ],
-            "kolaylik_puani": 70,
+            "kolaylik_puani": 90,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MUK",
                     "ad": "Dr. M. Utku Kalay"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Veri İletişimi",
@@ -750,7 +755,8 @@
             ],
             "kolaylik_puani": 100,
             "gereklilik_puani": 100,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Bilgisayar Projesi",
@@ -765,7 +771,8 @@
             ],
             "kolaylik_puani": 70,
             "gereklilik_puani": 100,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Mesleki Hukuk ve Etik",
@@ -1199,8 +1206,9 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 80,
-            "dersi_veren_hocalar": []
+            "gereklilik_puani": 90,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Robot Teknolojisine Giriş",
