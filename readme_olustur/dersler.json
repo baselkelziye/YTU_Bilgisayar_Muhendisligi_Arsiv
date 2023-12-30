@@ -319,6 +319,10 @@
                 {
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
+                },
+                {
+                    "kisaltma": "HİT",
+                    "ad": "Dr. H. İrem Türkmen"
                 }
             ]
         },
@@ -898,7 +902,12 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MSA",
+                    "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
+                }
+            ]
         },
         {
             "ad": "Oyun Geliştirmeye Giriş",
@@ -951,7 +960,12 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                }
+            ]
         },
         {
             "ad": "Sayısal İşaret İşleme",
@@ -1048,7 +1062,12 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MEK",
+                    "ad": "Prof. Dr. M. Elif Karslıgil"
+                }
+            ]
         },
         {
             "ad": "Doğal Dil İşlemeye Giriş",
@@ -1226,6 +1245,66 @@
             "kolaylik_puani": 80,
             "gereklilik_puani": 0,
             "dersi_veren_hocalar": []
+        },
+        {
+            "ad": "Bilgisayar Mühendisleri İçin Diferansiyel Denklemler",
+            "yil": 2,
+            "donem": "Güz",
+            "tip": "Zorunlu",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MFA",
+                    "ad": "Prof. Dr. M. Fatih Amasyalı"
+                },
+                {
+                    "kisaltma": "SY",
+                    "ad": "Prof. Dr. Sırma Yavuz"
+                }
+            ]
+        },
+        {
+            "ad": "Mikroişlemci Sistemleri ve Assamly Dili",
+            "yil": 3,
+            "donem": "Güz",
+            "tip": "Zorunlu",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                },
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                }
+            ]
+        },
+        {
+            "ad": "Seminer ve Meslek Etiği",
+            "yil": 3,
+            "donem": "Güz",
+            "tip": "Zorunlu",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "BD",
+                    "ad": "Prof. Dr. Banu Diri"
+                },
+                {
+                    "kisaltma": "HOİ",
+                    "ad": "Dr. Hamza Osman İlhan"
+                }
+            ]
+        },
+        {
+            "ad": "Veri İletişimi ve Bilgi Ağları",
+            "yil": 3,
+            "donem": "Güz",
+            "tip": "Zorunlu",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                }
+            ]
         }
     ],
     "bolum_adi": "Dersler",
