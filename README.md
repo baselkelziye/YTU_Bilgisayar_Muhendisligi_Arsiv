@@ -485,8 +485,8 @@ Açıklamalar:
     - 👤 Traktör Reis: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Mikroişlemci%20Sistemleri%20ve%20Alt%20Seviye/Mikroişlemci%20Sistemleri)
 
@@ -519,7 +519,7 @@ Açıklamalar:
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20İletişimi)
 
 
-#### 📘 Mikroişlemci Sistemleri ve Assamly Dili 
+#### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
@@ -1167,6 +1167,8 @@ Açıklamalar:
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
   - 📖 [Alt Seviye Programlama](#-alt-seviye-programlama)
   - 📖 [Mikroişlemci Sistemleri ve Assamly Dili](#-mikroişlemci-sistemleri-ve-assamly-dili)
+  - 📖 [Mikroişlemci Sistemleri ve Assambly Dili](#-mikroişlemci-sistemleri-ve-assambly-dili)
+  - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -1189,6 +1191,8 @@ Açıklamalar:
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
   - 📖 [Mikroişlemci Sistemleri ve Assamly Dili](#-mikroişlemci-sistemleri-ve-assamly-dili)
   - 📖 [Veri İletişimi ve Bilgi Ağları](#-veri-i̇letişimi-ve-bilgi-ağları)
+  - 📖 [Mikroişlemci Sistemleri ve Assambly Dili](#-mikroişlemci-sistemleri-ve-assambly-dili)
+  - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
