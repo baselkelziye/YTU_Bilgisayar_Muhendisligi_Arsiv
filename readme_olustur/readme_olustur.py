@@ -359,8 +359,12 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                         f.write(f"- 💬 **Öğrenci Görüşleri:**\n")  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
                         for gorus in ders['ogrenci_gorusleri']:
                             f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")  # Kişi emoji, öğrenciyi temsil eder
-                    f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-                    f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+                    if 'kolaylik_puani' in ders:
+                        f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+                        f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+                    else:
+                        f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(1)}\n")
+                        f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(1)}\n\n")
                     if "oy_sayisi" in ders:
                         f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                     else:

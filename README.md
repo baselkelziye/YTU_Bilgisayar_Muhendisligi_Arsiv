@@ -298,6 +298,7 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
     - [AEL](#-dr-ahmet-elbir)
+    - [HİT](#-dr-h-i̇rem-türkmen)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Yapısal%20Programlama)
 
 
@@ -345,6 +346,15 @@ Açıklamalar:
     - [GB](#-doç-dr-gökhan-bilgin)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Lojik%20Devreler)
+
+
+#### 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler 
+  - 🏷️ **Ders Tipi:** Zorunlu
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MFA](#-prof-dr-m-fatih-amasyalı)
+    - [SY](#-prof-dr-sırma-yavuz)
 
 ### 🗓 2. Yıl - Bahar
 
@@ -508,6 +518,33 @@ Açıklamalar:
     - [FÇ](#-dr-furkan-çakmak)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20İletişimi)
 
+
+#### 📘 Mikroişlemci Sistemleri ve Assamly Dili 
+  - 🏷️ **Ders Tipi:** Zorunlu
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [FÇ](#-dr-furkan-çakmak)
+    - [EU](#-dr-erkan-uslu)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Mikroişlemci%20Sistemleri%20ve%20Alt%20Seviye)
+
+
+#### 📘 Seminer ve Meslek Etiği 
+  - 🏷️ **Ders Tipi:** Zorunlu
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-14-oy)
+    - [HOİ](#-dr-hamza-osman-i̇lhan)
+
+
+#### 📘 Veri İletişimi ve Bilgi Ağları 
+  - 🏷️ **Ders Tipi:** Zorunlu
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [FÇ](#-dr-furkan-çakmak)
+
 ### 🗓 3. Yıl - Bahar
 
 
@@ -665,6 +702,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
 
 
 #### 📘 Oyun Geliştirmeye Giriş 
@@ -703,6 +742,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [ACK](#-doç-dr-ali-can-karaca)
 
 
 #### 📘 Sayısal İşaret İşleme 
@@ -774,6 +815,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MEK](#-prof-dr-m-elif-karslıgil)
 
 
 #### 📘 Doğal Dil İşlemeye Giriş 
@@ -904,6 +947,7 @@ Açıklamalar:
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
   - 📖 [Ayrık Matematik](#-ayrık-matematik)
   - 📖 [Doğal Dil İşlemeye Giriş](#-doğal-dil-i̇şlemeye-giriş)
+  - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
@@ -944,6 +988,7 @@ Açıklamalar:
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [Yapay Zeka](#-yapay-zeka)
   - 📖 [Uzman Sistemlere Giriş](#-uzman-sistemlere-giriş)
+  - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
@@ -996,6 +1041,7 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
+  - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
@@ -1016,6 +1062,7 @@ Açıklamalar:
   - 📖 [Bilgisayar Donanımı](#-bilgisayar-donanımı)
   - 📖 [Gömülü Sistemler](#-gömülü-sistemler)
   - 📖 [Sayısal İşaret İşleme](#-sayısal-i̇şaret-i̇şleme)
+  - 📖 [İstatistiksel Veri Analizi](#-i̇statistiksel-veri-analizi)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1073,6 +1120,7 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
+  - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1118,6 +1166,7 @@ Açıklamalar:
   - 📖 [Bilgisayar Donanımı](#-bilgisayar-donanımı)
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
   - 📖 [Alt Seviye Programlama](#-alt-seviye-programlama)
+  - 📖 [Mikroişlemci Sistemleri ve Assamly Dili](#-mikroişlemci-sistemleri-ve-assamly-dili)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -1138,6 +1187,8 @@ Açıklamalar:
   - 📖 [Robot Teknolojisine Giriş](#-robot-teknolojisine-giriş)
   - 📖 [Alt Seviye Programlama](#-alt-seviye-programlama)
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
+  - 📖 [Mikroişlemci Sistemleri ve Assamly Dili](#-mikroişlemci-sistemleri-ve-assamly-dili)
+  - 📖 [Veri İletişimi ve Bilgi Ağları](#-veri-i̇letişimi-ve-bilgi-ağları)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -1175,6 +1226,7 @@ Açıklamalar:
 - 💬 **Öğrenci Görüşleri:**
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
+  - 📖 [Yapısal Programlama](#-yapısal-programlama)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1193,6 +1245,7 @@ Açıklamalar:
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
   - 📖 [Elektronik Devreler](#-elektronik-devreler)
+  - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
