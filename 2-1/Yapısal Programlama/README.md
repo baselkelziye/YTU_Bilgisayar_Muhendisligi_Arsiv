@@ -20,3 +20,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - YES
 - AEL
+- HİT
