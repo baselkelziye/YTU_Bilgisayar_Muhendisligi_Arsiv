@@ -1,4 +1,4 @@
-# 📚 Mikroişlemci Sistemleri ve Assamly Dili
+# 📚 Mikroişlemci Sistemleri ve Assembly Dili
 
 ## ℹ️ Ders Bilgileri
 
