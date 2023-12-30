@@ -59,6 +59,9 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- MSA
+
 ### 📘 Oyun Geliştirmeye Giriş
 
 #### 📄 Ders Bilgileri
@@ -128,6 +131,9 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- ACK
 
 ### 📘 Sayısal İşaret İşleme
 
@@ -252,6 +258,9 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- MEK
 
 ### 📘 Doğal Dil İşlemeye Giriş
 
