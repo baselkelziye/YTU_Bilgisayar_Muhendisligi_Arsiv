@@ -109,7 +109,7 @@ urls = [
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
 i = 0
-timeout = 3
+timeout = 180
 div = 3
 print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
