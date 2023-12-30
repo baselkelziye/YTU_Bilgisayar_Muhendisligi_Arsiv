@@ -34,19 +34,22 @@ def send_error_email(error_message):
     {error_message}
     """
     send_anonymous_email("Hata oluştu", text, receiver_email)
+
 def check_for_updates(url):
-    # Belirtilen URL'den .csv dosyasını indir
+
+    # Belirtilen URL'den .xlsx dosyasını indir
     response = requests.get(url)
-    data = response.text
-    
+    data = response.content
+
     # İndirilen verinin hash değerini hesapla
-    current_hash = hashlib.md5(data.encode()).hexdigest()
-    
+    current_hash = hashlib.md5(data).hexdigest()
+
     # Eğer bu URL daha önce kontrol edildiyse ve hash değeri değişmişse, güncelleme olduğunu bildir
     if url in previous_hashes and previous_hashes[url] != current_hash:
         print(f"Değişiklik bulundu: {url}")
+        previous_hashes[url] = current_hash
         return True
-    
+
     # Güncel hash değerini kaydet
     previous_hashes[url] = current_hash
     return False
@@ -98,15 +101,16 @@ def update_repository():
 
 # URL'leri kontrol et
 urls = [
-    "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/export?format=csv",
-    "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv",
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv",
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
+    "https://docs.google.com/spreadsheets/d/1d9B_YSk6em2wBAR85PutZkNAoSy_ET1-ojcjU3ypLE8/pub?output=csv",
+    "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/pub?output=csv",
+    "https://docs.google.com/spreadsheets/d/12Gv8QS5py8jBmbylnyLCZdZ-oxCSsVlXZUVW4JvvHAE/pub?output=csv",
+    "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/pub?output=csv"
 ]
-# Dosyaların eski hash değerlerini saklamak için bir sözlük
+# Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
 i = 0
-update_repository()
+timeout = 3
+div = 3
 print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
 while True:
@@ -118,6 +122,6 @@ while True:
             print(f"Güncelleme yok: {url}")
     i += 1
     print(f"{i}. kontrol tamamlandı.")
-    for k in range(0, 1):
-        print(f"{180-k} saniye sonra kontrol edilecek.")
-        time.sleep(3)
+    for k in range(0, int(timeout/div)):
+        print(f"{timeout-k*div} saniye sonra kontrol edilecek.", end='\r')  # '\r' ile satırın başına dön
+        time.sleep(div)
