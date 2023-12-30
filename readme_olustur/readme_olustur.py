@@ -281,13 +281,17 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
         f.write(f"- 📅 **Yıl:** {ders['yil']}\n")
         f.write(f"- 📆 **Dönem:** {ders['donem']}\n")
         f.write(f"- 🏫 **Ders Tipi:** {ders['tip']}\n")
-        if 'ogrenci_gorusleri' and ders['ogrenci_gorusleri']:
+        if 'ogrenci_gorusleri' in ders and ders['ogrenci_gorusleri']:
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             for gorus in ders['ogrenci_gorusleri']:
                 f.write(f"  - 👤 {gorus['kisi']}: {gorus['yorum']}\n")
         f.write("- ⭐ **Yıldız Sayıları:**\n")
-        f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
-        f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+        if 'kolaylik_puani' in ders:
+            f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders['kolaylik_puani'])}\n")
+            f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders['gereklilik_puani'])}\n\n")
+        else:
+            f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(1)}\n")
+            f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(1)}\n\n")
         if "oy_sayisi" in ders:
             f.write(f"    - ℹ️ Yıldızlar {ders['oy_sayisi']} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
         else:
