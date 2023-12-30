@@ -76,7 +76,7 @@ class DersEkleGuncelleWindow(QDialog):
                     # Büyük ders butonu
                     btnDers = QPushButton(f"{ders['ad']}", self.scrollWidget)
                     btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
-                    btnDers.setStyleSheet("background-color: blue;")  # Mavi renk, belirlenen boyut
+                    btnDers.setStyleSheet("QPushButton {background-color: blue; color: white;}")
                     btnDers.setMinimumWidth(350)
                     dersSatiri.addWidget(btnDers)
 
@@ -115,14 +115,25 @@ class DersEkleGuncelleWindow(QDialog):
         self.dersDuzenlemePenceresi.show()
 
     def dersleriYenile(self):
-        # Layout'taki tüm widget'ları temizle
-        for i in reversed(range(self.derslerLayout.count())): 
-            layoutItem = self.derslerLayout.itemAt(i)
-            if layoutItem is not None:
-                widgetToRemove = layoutItem.widget()
-                if widgetToRemove is not None:  # Widget varsa kaldır
-                    widgetToRemove.setParent(None)
+    # Layout'taki tüm widget'ları temizle
+        while self.derslerLayout.count():
+            layoutItem = self.derslerLayout.takeAt(0)
+            if layoutItem.widget() is not None:
+                layoutItem.widget().deleteLater()
+            elif layoutItem.layout() is not None:
+                self.clearLayout(layoutItem.layout())
+
         self.dersleriYukle()
+
+    def clearLayout(self, layout):
+        while layout.count():
+            item = layout.takeAt(0)
+            widget = item.widget()
+            if widget is not None:
+                widget.deleteLater()
+            else:
+                self.clearLayout(item.layout())
+
 
 class KaynakVeOneriDuzenleyici(QDialog):
     def __init__(self, ders, tur, parent):
