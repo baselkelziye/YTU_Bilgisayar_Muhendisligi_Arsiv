@@ -286,7 +286,7 @@
                 }
             ],
             "kolaylik_puani": 30,
-            "gereklilik_puani": 80,
+            "gereklilik_puani": 70,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "EU",
@@ -296,7 +296,8 @@
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Yapısal Programlama",
@@ -389,8 +390,8 @@
                     "yorum": "Güzel bir ders, geçmesi kolay."
                 }
             ],
-            "kolaylik_puani": 90,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 80,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "GB",
@@ -400,7 +401,8 @@
                     "kisaltma": "HOİ",
                     "ad": "Dr. Hamza Osman İlhan"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Nesneye Yönelik Programlama",
@@ -1036,14 +1038,15 @@
             "faydali_olabilecek_kaynaklar": [
                 "Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir."
             ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 90,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MFA",
                     "ad": "Prof. Dr. M. Fatih Amasyalı"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Yapay Sinir Ağlarına Giriş",
@@ -1086,7 +1089,7 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 90,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -1100,7 +1103,8 @@
                         "Derse çalışmak için ve ödevleri daha kolay kavramak için kaynak olarak geçmiş proje/ödevlerden faydalanabilirsiniz."
                     ]
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Uzman Sistemlere Giriş",
@@ -1163,14 +1167,15 @@
                     "yorum": "Sistem analizine benzer."
                 }
             ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 40,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "OK",
                     "ad": "Prof. Dr. Oya Kalıpsız"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Dağıtık Sistemler",
