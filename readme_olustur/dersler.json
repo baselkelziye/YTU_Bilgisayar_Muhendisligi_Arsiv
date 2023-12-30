@@ -719,14 +719,15 @@
                     "yorum": "Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var."
                 }
             ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 40,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Ağ Teknolojileri",
