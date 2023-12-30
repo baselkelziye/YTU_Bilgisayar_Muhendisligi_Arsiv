@@ -10,7 +10,7 @@
   - 👤 Tehlikeli Pinokyo : Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
