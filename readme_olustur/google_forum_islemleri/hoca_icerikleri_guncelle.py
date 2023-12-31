@@ -34,7 +34,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                     
                     # Yeni yorum ekle
                     if not gorus_var_mi:
-                        hoca['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
+                        hoca['ogrenci_gorusleri'].append({'kisi': kisi.lower().title(), 'yorum': yorum})
     icerikKontrol.dosya_yaz()
 # Google Sheets URL'si
 yorumlar_sheets_url = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
