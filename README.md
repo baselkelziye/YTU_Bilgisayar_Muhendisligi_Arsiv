@@ -77,7 +77,7 @@ Açıklamalar:
 ### 🗓 1. Yıl - Güz
 
 
-#### 📘 Bilgisayar Bilimlerine Giriş 
+#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (3 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
@@ -87,7 +87,7 @@ Açıklamalar:
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MAG](#-doç-dr-m-amaç-güvensan)
@@ -124,8 +124,8 @@ Açıklamalar:
     - 👤 Traktör Reis: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Lineer%20Cebir)
 
@@ -161,7 +161,7 @@ Açıklamalar:
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
 
@@ -204,7 +204,7 @@ Açıklamalar:
     - 👤 Traktör Reis: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi)
@@ -314,8 +314,8 @@ Açıklamalar:
     - 👤 Tehlikeli Pinokyo : Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
@@ -330,8 +330,8 @@ Açıklamalar:
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri--en-popüler-hoca-14-oy)
     - [AEL](#-dr-ahmet-elbir)
@@ -679,7 +679,7 @@ Açıklamalar:
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Bitirme%20Çalışması-Projesi)
 
 
-#### 📘 Türkçe 2 👑 En popüler ders (3 oy)
+#### 📘 Türkçe 2 
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -693,8 +693,8 @@ Açıklamalar:
 #### 📘 Bilişim Sistemleri Güvenliği 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli/bilişim%20sistemleri%20güvenliği)
 
@@ -1128,7 +1128,7 @@ Açıklamalar:
   - 👤 astro: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-3-oy)
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
 - ⭐ **Yıldız Sayıları:**
@@ -1241,7 +1241,7 @@ Açıklamalar:
 - 📚 **Verdiği Dersler:**
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-3-oy)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
