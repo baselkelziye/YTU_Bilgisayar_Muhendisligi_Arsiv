@@ -17,3 +17,6 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 - [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
+
+## 😔 İçerik yok
+- Henüz dersle alakalı bir döküman yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
