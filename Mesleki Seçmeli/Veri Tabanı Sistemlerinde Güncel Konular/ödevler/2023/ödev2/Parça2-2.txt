@@ -1,0 +1,14 @@
+--B1
+-- H2 hareketi: 'a' olan satırları 'b' yapma
+BEGIN;
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+UPDATE T SET name = 'b' WHERE name = 'a';
+COMMIT;
+
+
+--C1
+-- H2 hareketi: 'a' olan satırları 'b' yapma
+BEGIN;
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+UPDATE T SET name = 'b' WHERE name = 'a';
+COMMIT;
