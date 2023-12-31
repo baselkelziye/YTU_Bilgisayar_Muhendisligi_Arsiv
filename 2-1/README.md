@@ -85,8 +85,8 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
   - 👤 Tehlikeli Pinokyo : Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
@@ -108,9 +108,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
 - ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
