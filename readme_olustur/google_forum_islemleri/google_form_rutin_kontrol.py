@@ -73,10 +73,23 @@ def update_repository():
     
     # Git ve Python komutlarını sırayla çalıştır
     try:
+         # Sahnelenmemiş değişiklikleri stash et
+        if not execute_command("git stash"):
+            print("Değişiklikler stash edilemedi, script durduruluyor.")
+            return 
+        if not execute_command('git pull --rebase origin main'):
+            # Stash'i geri yükle
+            execute_command("git stash pop")
+            return 
         if not execute_command("git fetch"):
-            return
+            # Stash'i geri yükle
+            execute_command("git stash pop")
+            return 
         if not execute_command("git clean -fdx"):
-            return
+            # Stash'i geri yükle
+            execute_command("git stash pop")
+            return 
+        execute_command('git stash pop')
         if not execute_command("python3 hoca_icerikleri_guncelle.py"):
             return
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
