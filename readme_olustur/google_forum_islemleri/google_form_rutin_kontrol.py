@@ -7,32 +7,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-receiver_email = "kayrabulut39@gmail.com"
-def send_anonymous_email(subject, message, to_email):
-    # E-posta içeriğini ayarla
-    msg = MIMEText(message)
-    msg['Subject'] = subject
-    msg['From'] = 'anonymous@example.com'
-    msg['To'] = to_email
-
-    # SMTP sunucusuna bağlan (örnek olarak smtp.example.com)
-    server = smtplib.SMTP('smtp.example.com', 25)  # 25 genellikle anonim SMTP için kullanılan porttur.
-    server.ehlo()
-    
-    # E-postayı gönder
-    server.sendmail('anonymous@example.com', [to_email], msg.as_string())
-    
-    # Bağlantıyı kapat
-    server.close()
-def send_error_email(error_message):
-    # E-posta gövdesini oluştur
-    text = f"""\
-    Merhaba,
-    Bir hata oluştu:
-    {error_message}
-    """
-    send_anonymous_email("Hata oluştu", text, receiver_email)
-
 def check_for_updates(url):
 
     # Belirtilen URL'den .xlsx dosyasını indir
@@ -101,12 +75,10 @@ def update_repository():
             return
         if not execute_command("git push"):
             return
-        send_anonymous_email("YTU REPO GÜNCELLENDİ","Ytü repo robot tarafından başarıyla güncellendi...", receiver_email)
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}"
         print(error_message)
-        send_error_email(error_message)
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
@@ -118,6 +90,7 @@ urls = [
     "https://docs.google.com/spreadsheets/d/12Gv8QS5py8jBmbylnyLCZdZ-oxCSsVlXZUVW4JvvHAE/pub?output=csv",
     "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/pub?output=csv"
 ]
+
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
 i = 0
