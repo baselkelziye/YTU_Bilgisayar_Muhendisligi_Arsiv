@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Dağıtık Sistemler
 
 ## ℹ️ Ders Bilgileri
 

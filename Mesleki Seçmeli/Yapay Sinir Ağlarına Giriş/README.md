@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Yapay Sinir Ağlarına Giriş
 
 ## ℹ️ Ders Bilgileri
 

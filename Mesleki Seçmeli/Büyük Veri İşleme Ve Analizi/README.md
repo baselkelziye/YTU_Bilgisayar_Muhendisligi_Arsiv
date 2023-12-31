@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Büyük Veri İşleme Ve Analizi
 
 ## ℹ️ Ders Bilgileri
 
