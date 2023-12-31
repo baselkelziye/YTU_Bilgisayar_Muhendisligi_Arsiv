@@ -11,10 +11,6 @@
                     "yorum": "Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var."
                 },
                 {
-                    "kisi": "kulhane",
-                    "yorum": "Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var."
-                },
-                {
                     "kisi": "violancello",
                     "yorum": "Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur."
                 }
@@ -747,9 +743,10 @@
                     "yorum": "Gerekli bir ders ama aşırı ezber."
                 }
             ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 70,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 80,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Genel Staj",

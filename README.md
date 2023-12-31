@@ -81,7 +81,6 @@ Açıklamalar:
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
-    - 👤 kulhane: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
     - 👤 violancello: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
@@ -567,8 +566,8 @@ Açıklamalar:
     - 👤 Traktör Reis: Gerekli bir ders ama aşırı ezber.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/ağ%20teknolojileri)
 
