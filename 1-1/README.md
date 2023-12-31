@@ -7,6 +7,24 @@
 ## 📚 Dönemin Zorunlu Dersleri
 
 
+### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 Traktör Reis: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
 ### 📘 Bilgisayar Bilimlerine Giriş
 
 #### 📄 Ders Bilgileri
@@ -48,7 +66,25 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
-### 📘 Matematik 1
+### 📘 İleri İngilizce 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+### 📘 İş Sağlığı ve Güvenliği 1
 
 #### 📄 Ders Bilgileri
 
@@ -56,9 +92,9 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
@@ -84,53 +120,17 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
-### 📘 İş Sağlığı ve Güvenliği 1
+### 📘 Matematik 1
 
 #### 📄 Ders Bilgileri
 
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-### 📘 İleri İngilizce 1
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 1
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
-
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 1
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
-- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
