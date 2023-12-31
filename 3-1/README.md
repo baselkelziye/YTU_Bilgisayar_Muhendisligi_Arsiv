@@ -130,6 +130,8 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 Traktör Reis: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette. 
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
