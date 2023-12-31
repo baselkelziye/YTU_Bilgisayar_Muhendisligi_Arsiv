@@ -913,14 +913,15 @@
             "donem": "",
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MSA",
                     "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Oyun Geliştirmeye Giriş",
