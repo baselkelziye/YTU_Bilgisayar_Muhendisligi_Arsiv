@@ -1,13 +1,13 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Türkçe 1
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 0
-- 📆 **Dönem:** 
-- 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 📅 **Yıl:** 4
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★★★
+  - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 

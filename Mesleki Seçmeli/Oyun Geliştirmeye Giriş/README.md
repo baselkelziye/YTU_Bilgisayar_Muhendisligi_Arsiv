@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Oyun Geliştirmeye Giriş
 
 ## ℹ️ Ders Bilgileri
 
