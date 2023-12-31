@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Grafiğine Giriş
+# 📚 Sistem Programlama
 
 ## ℹ️ Ders Bilgileri
 

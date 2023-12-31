@@ -4,7 +4,7 @@ import difflib
 import re
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
-ANA_README_YOLU = "../README.md"
+ANA_README_YOLU = os.path.join("..","README.md")
 YILDIZ_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
 HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
 DERS_OYLAMA_LINKI = "https://forms.gle/3njZjmhm215YCAxe6"
@@ -33,7 +33,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
 def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"):
     """
     Yerel bir klasör yolunu GitHub reposundaki karşılık gelen klasörün URL'sine dönüştürür.
-    Göreceli yolları (../) kaldırır ve boşlukları uygun bir şekilde değiştirir.
+    Göreceli yolları (..) kaldırır ve boşlukları uygun bir şekilde değiştirir.
 
     :param klasor_yolu: Yerel sistemdeki klasör yolu (örn. "ders_notlari/ISL101").
     :param repo_url: GitHub'daki repository'nin URL'si.
@@ -41,7 +41,7 @@ def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselk
     """
     if klasor_yolu is None:
         return None
-    klasor_yolu = klasor_yolu.replace("../", "")
+    klasor_yolu = klasor_yolu.replace("..", "")
     # Göreceli yolları kaldır
     klasor_yolu = os.path.normpath(klasor_yolu)
     # Windows yollarını düzeltmek için (örn. "klasör\alt_klasör" -> "klasör/alt_klasör")
@@ -187,7 +187,7 @@ def dersleri_readme_ye_ekle(dersler):
                             populer_bilgi = f" En popüler hoca ({hocalar['en_populer_hoca']['oy_sayisi']} oy)" if hoca['ad'] == hocalar['en_populer_hoca']['hoca_adi'] else ""
                             hoca_id = f'{hoca["ad"]} {populer_isaret}{populer_bilgi}'
                             f.write(f"    - [{hoca['kisaltma']}]{baslik_linki_olustur(hoca_id)}\n")
-                ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("../", ders['ad'])
+                ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("..", ders['ad'])
                 if ders_klasor_yolu is not None:
                     f.write(f"  - 📂 [Ders Klasörü]({(yerel_yoldan_github_linkine(ders_klasor_yolu))})\n")
 
@@ -271,7 +271,7 @@ BURASI ANA README OLUŞTURMA KISMI
 BURASI DERSLER README OLUŞTURMA KISMI
 """
 
-def ders_klasorune_readme_olustur(ders, dosya_yolu):
+def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = False):
     with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
         # Ders başlığı
         f.write(f"# 📚 {ders['ad']}\n\n")
@@ -315,12 +315,38 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu):
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders["dersi_veren_hocalar"]:
                 f.write(f"- {hoca['kisaltma']}\n")
-
+        if klasor_sonradan_olustu:
+            f.write("\n## 😔 İçerik yok\n")
+            f.write(f"- {dersler['ders_klasoru_bulunamadi_mesaji']}\n")
+def ders_klasoru_olustur(ders):
+    if ders['donem'] == "":
+        yol = os.path.join("..","Mesleki Seçmeli")
+        ders_klasor_yolu = os.path.join(yol,ders["ad"])
+    elif ders['tip'] == "Seçmeli 4":
+        ders_klasor_yolu = os.path.join("..",ders["ad"])
+    elif ders['donem'] == "Güz":
+        ders_klasor_yolu = os.path.join("..",f"{ders['yil']}-1",ders["ad"])
+    else:
+        ders_klasor_yolu = os.path.join("..",f"{ders['yil']}-2",ders["ad"])
+    os.makedirs(ders_klasor_yolu, exist_ok=True)
+    return ders_klasor_yolu
+def klasorde_baska_dosya_var_mi(ders_klasoru):
+    icerikler = os.listdir(ders_klasoru)
+    # README.md dosyasını çıkar
+    icerikler = [dosya for dosya in icerikler if dosya.lower() != "readme.md"]
+    return len(icerikler) > 0  # Eğer içerikler listesi boş değilse, başka dosya var demektir.
             
 for ders in dersler['dersler']:
-    ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("../",ders["ad"])
-    if ders_klasoru:
-        ders_klasorune_readme_olustur(ders, ders_klasoru)
+    ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("..",ders["ad"])
+    if ders_klasoru is not None:
+        baska_dosya_var_mi= klasorde_baska_dosya_var_mi(ders_klasoru)
+        if not baska_dosya_var_mi:
+            ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
+        else:
+            ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = False)
+    else:
+        ders_klasoru = ders_klasoru_olustur(ders)
+        ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
 """
 BURASI DERSLER README OLUŞTURMA KISMI
 """

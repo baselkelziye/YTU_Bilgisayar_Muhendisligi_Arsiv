@@ -1,12 +1,12 @@
-# 📚 Bitirme Çalışması
+# 📚 Nesneye Yönelik Programlama
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 4
+- 📅 **Yıl:** 2
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+  - 👤 Traktör Reis: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
@@ -16,7 +16,11 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-- [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
+
+## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- MSA
+- FÇ
+- YES
 
 ## 😔 İçerik yok
 - Henüz dersle alakalı bir döküman yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
