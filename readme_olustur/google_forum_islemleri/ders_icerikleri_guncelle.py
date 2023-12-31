@@ -33,7 +33,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                     
                     # Yeni yorum ekle
                     if not gorus_var_mi:
-                        ders['ogrenci_gorusleri'].append({'kisi': kisi, 'yorum': yorum})
+                        ders['ogrenci_gorusleri'].append({'kisi': kisi.lower().title(), 'yorum': yorum})
     icerikKontrol.dosya_yaz()
 def guncelle_ders_yildizlari(data, sheets_url):
     
