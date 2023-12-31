@@ -7,28 +7,6 @@
 ## 📚 Dönemin Zorunlu Dersleri
 
 
-### 📘 İstatistik ve Olasılık Hesapları
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 2
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- OA
-- SY
-
 ### 📘 Alt Seviye Programlama
 
 #### 📄 Ders Bilgileri
@@ -52,7 +30,7 @@
 - EU
 - FÇ
 
-### 📘 Yapısal Programlama
+### 📘 Ayrık Matematik
 
 #### 📄 Ders Bilgileri
 
@@ -60,20 +38,19 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
+  - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
+- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- YES
+- BD
 - AEL
-- HİT
 
 ### 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
 
@@ -98,7 +75,27 @@
 - ACK
 - AEL
 
-### 📘 Ayrık Matematik
+### 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 2
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- MFA
+- SY
+
+### 📘 İstatistik ve Olasılık Hesapları
 
 #### 📄 Ders Bilgileri
 
@@ -106,19 +103,19 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+  - 👤 Traktör Reis: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor.
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- BD
-- AEL
+- OA
+- SY
 
 ### 📘 Lojik Devreler
 
@@ -142,15 +139,17 @@
 - GB
 - HOİ
 
-### 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
+### 📘 Yapısal Programlama
 
 #### 📄 Ders Bilgileri
 
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- ⭐ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 Traktör Reis: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
@@ -159,5 +158,6 @@
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- MFA
-- SY
+- YES
+- AEL
+- HİT

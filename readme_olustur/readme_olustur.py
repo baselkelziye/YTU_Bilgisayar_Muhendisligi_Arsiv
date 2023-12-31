@@ -242,26 +242,43 @@ def readme_katkida_bulunanlar_ekle(veri):
         f.write(f"{veri['bolum_aciklamasi']}\n\n")
         for katkida_bulunan in veri['katkida_bulunanlar']:
             f.write(f"- 👤 {katkida_bulunan['ad']}\n  - 🔗 Github Adresi: {katkida_bulunan['github_link']}\n")  # Kişi ve link emojisi
+def sıralama_anahtarı(ders):
+    yıl_sıralaması = [1, 2, 3, 4, 0]
+    dönem_sıralaması = ['Güz', 'Bahar', '']
+
+    yıl = yıl_sıralaması.index(ders['yil']) if ders['yil'] in yıl_sıralaması else len(yıl_sıralaması)
+    dönem = dönem_sıralaması.index(ders['donem']) if ders['donem'] in dönem_sıralaması else len(dönem_sıralaması)
+    ad = ders['ad'].lower()
+
+    return yıl, dönem, ad
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
+print("README.md oluşturuluyor...")
 # JSON dosyasından yazar notlarını oku ve README'ye ekle
 yazar_notlari = json_oku('yazarin_notlari.json')
 # JSON dosyasından repo kullanımı bilgilerini oku ve README'ye ekle
 repo_kullanimi_bilgileri = json_oku('repo_kullanimi.json')
 # JSON dosyasından dersleri oku ve README'ye ekle
 dersler = json_oku('dersler.json')
+dersler['dersler'] = sorted(dersler['dersler'], key=sıralama_anahtarı)
 # JSON dosyasından hocaları oku ve README'ye ekle
 hocalar = json_oku('hocalar.json')
 giris_bilgileri = json_oku('giris.json')
 katkida_bulunanlar = json_oku('katkida_bulunanlar.json')
-
+print("Giriş bilgileri README'ye ekleniyor...")
 readme_ye_giris_ekle(giris_bilgileri)
+print("Repo kullanımı README'ye ekleniyor...")
 readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
+print("Ders bilgileri README'ye ekleniyor...")
 dersleri_readme_ye_ekle(dersler)
+print("Hoca bilgileri README'ye ekleniyor...")
 hocalari_readme_ye_ekle(hocalar)
+print("Yazar notları README'ye ekleniyor...")
 readme_ye_yazar_notlari_ekle(yazar_notlari)
+print("Hoca kısaltmaları README'ye ekleniyor...")
 readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
+print("Katkıda bulunanlar README'ye ekleniyor...")
 readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
 """
 BURASI ANA README OLUŞTURMA KISMI
@@ -270,7 +287,7 @@ BURASI ANA README OLUŞTURMA KISMI
 """
 BURASI DERSLER README OLUŞTURMA KISMI
 """
-
+print("Dersler README.md oluşturuluyor...")
 def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = False):
     with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
         # Ders başlığı
@@ -337,6 +354,7 @@ def klasorde_baska_dosya_var_mi(ders_klasoru):
     return len(icerikler) > 0  # Eğer içerikler listesi boş değilse, başka dosya var demektir.
             
 for ders in dersler['dersler']:
+    print(f"{ders['ad']} README.md oluşturuluyor...")
     ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("..",ders["ad"])
     if ders_klasoru is not None:
         baska_dosya_var_mi= klasorde_baska_dosya_var_mi(ders_klasoru)
@@ -347,6 +365,7 @@ for ders in dersler['dersler']:
     else:
         ders_klasoru = ders_klasoru_olustur(ders)
         ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
+    print(f"{ders['ad']} README.md oluşturuldu.")
 """
 BURASI DERSLER README OLUŞTURMA KISMI
 """
@@ -355,11 +374,12 @@ BURASI DERSLER README OLUŞTURMA KISMI
 """
 Burası Dönem Readme oluşturma kısmı
 """
-
+print("Dönem README'leri oluşturuluyor...")
 def donemlere_gore_readme_olustur(donemler):
 
     # Her dönem için README.md oluştur
     for donem in donemler['donemler']:
+        print(f"{donem['donem_adi']} README.md oluşturuluyor...")
         dosya_yolu = os.path.join(donem['dosya_yolu'], 'README.md')
         with open(dosya_yolu, 'w', encoding='utf-8') as f:
             f.write(f"# 📅 {donem['donem_adi']}\n\n")  # Takvim emoji, dönemi temsil eder
@@ -368,10 +388,12 @@ def donemlere_gore_readme_olustur(donemler):
                 f.write(f"- 💡 {tavsiye}\n")  # Ampul emoji, fikir veya tavsiye temsil eder
             if donem["donem_adi"] != "Mesleki Seçmeli Dersler":
                 f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")  # Kitap emoji, zorunlu dersleri temsil eder
+        print(f"{donem['donem_adi']} README.md oluşturuldu.")
 
 def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:
+        print(f"{ders['ad']} README.md dönemine ekleniyor...")
         for donem in donemler:
             if ders['yil'] == donem['yil'] and ders['donem'] == donem['donem']:
                 dosya_yolu = os.path.join(donem['dosya_yolu'], 'README.md')
@@ -412,7 +434,10 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                         f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
                             f.write(f"- {hoca['kisaltma']}\n")
+        print(f"{ders['ad']} README.md dönemine eklendi.")
 
 donemler = json_oku('donemler.json')
+print("Dönem bilgileri README'ye ekleniyor...")
 donemlere_gore_readme_olustur(donemler)
+print("Ders bilgileri README'ye ekleniyor...")
 ders_bilgilerini_readme_ile_birlestir(dersler['dersler'], donemler['donemler'])
