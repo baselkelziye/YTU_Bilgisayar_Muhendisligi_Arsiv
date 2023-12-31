@@ -40,10 +40,10 @@
                     "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
                 }
             ],
-            "kolaylik_puani": 20,
-            "gereklilik_puani": 40,
+            "kolaylik_puani": 35,
+            "gereklilik_puani": 25,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Matematik 1",
@@ -105,7 +105,7 @@
             "kolaylik_puani": 60,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
@@ -345,8 +345,8 @@
                     "yorum": "Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders"
                 }
             ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 60,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "ACK",
@@ -357,7 +357,7 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Ayrık Matematik",
@@ -370,8 +370,8 @@
                     "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
                 }
             ],
-            "kolaylik_puani": 45,
-            "gereklilik_puani": 80,
+            "kolaylik_puani": 56,
+            "gereklilik_puani": 83,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -382,7 +382,7 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 3
         },
         {
             "ad": "Lojik Devreler",
@@ -648,8 +648,8 @@
             "faydali_olabilecek_kaynaklar": [
                 "[Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir."
             ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MEK",
@@ -659,7 +659,8 @@
                     "kisaltma": "MAG",
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Mikroişlemci Sistemleri",
@@ -722,15 +723,15 @@
                     "yorum": "Gerekli bir ders ama sınavda aşırı ezber soruluyor. Bir de sunumu var."
                 }
             ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 85,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Ağ Teknolojileri",
@@ -743,10 +744,10 @@
                     "yorum": "Gerekli bir ders ama aşırı ezber."
                 }
             ],
-            "kolaylik_puani": 30,
+            "kolaylik_puani": 40,
             "gereklilik_puani": 80,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Genel Staj",
@@ -1130,14 +1131,15 @@
             "donem": "",
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 40,
+            "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MFA",
                     "ad": "Prof. Dr. M. Fatih Amasyalı"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Veri Tabanı Sistemlerinde Güncel Konular",
@@ -1268,9 +1270,10 @@
                     "yorum": "6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin."
                 }
             ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 70,
+            "gereklilik_puani": 10,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Bilgisayar Mühendisleri İçin Diferansiyel Denklemler",
