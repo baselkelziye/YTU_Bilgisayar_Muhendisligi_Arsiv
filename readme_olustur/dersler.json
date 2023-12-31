@@ -19,7 +19,7 @@
                     "yorum": "Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur."
                 }
             ],
-            "kolaylik_puani": 55,
+            "kolaylik_puani": 60,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
@@ -31,7 +31,7 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 3
         },
         {
             "ad": "Fizik 1",
@@ -75,9 +75,10 @@
                     "yorum": "Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli."
                 }
             ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 30,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 80,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 1",
@@ -122,8 +123,9 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "gereklilik_puani": 10,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Yapısal Programlamaya Giriş",
@@ -185,9 +187,10 @@
                     "yorum": "Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor"
                 }
             ],
-            "kolaylik_puani": 0,
+            "kolaylik_puani": 70,
             "gereklilik_puani": 10,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 2",
@@ -346,8 +349,8 @@
                     "yorum": "Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders"
                 }
             ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 40,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 60,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "ACK",
@@ -357,7 +360,8 @@
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Ayrık Matematik",
@@ -370,8 +374,8 @@
                     "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
                 }
             ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 45,
+            "gereklilik_puani": 80,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -382,7 +386,7 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Lojik Devreler",
@@ -818,9 +822,10 @@
             "donem": "",
             "ogrenci_gorusleri": [],
             "tip": "Mesleki Seçmeli",
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 40,
+            "dersi_veren_hocalar": [],
+            "oy_sayisi": 1
         },
         {
             "ad": "Gömülü Sistemler",
@@ -1343,7 +1348,7 @@
     "bolum_adi": "Dersler",
     "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
     "en_populer_ders": {
-        "ders_adi": "Türkçe 2",
+        "ders_adi": "Bilgisayar Bilimlerine Giriş",
         "oy_sayisi": 3
     },
     "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
