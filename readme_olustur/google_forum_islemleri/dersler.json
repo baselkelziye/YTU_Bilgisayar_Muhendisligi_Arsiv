@@ -906,7 +906,7 @@
             "kolaylik_puani": 100,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Bilgiye Erişim Ve Arama Motorları",
@@ -1146,13 +1146,14 @@
                 }
             ],
             "kolaylik_puani": 30,
-            "gereklilik_puani": 40,
+            "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MUK",
                     "ad": "Dr. M. Utku Kalay"
                 }
-            ]
+            ],
+            "oy_sayisi": 1
         },
         {
             "ad": "Veritabanı Sistemlerinin Gerçekleştirilmesi",
@@ -1335,5 +1336,6 @@
     "en_populer_ders": {
         "ders_adi": "Bilgisayar Bilimlerine Giriş",
         "oy_sayisi": 2
-    }
+    },
+    "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
 }
