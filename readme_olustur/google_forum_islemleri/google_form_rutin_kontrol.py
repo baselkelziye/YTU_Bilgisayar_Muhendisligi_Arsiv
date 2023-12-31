@@ -7,7 +7,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-
+receiver_email = "kayrabulut39@gmail.com"
 def send_anonymous_email(subject, message, to_email):
     # E-posta içeriğini ayarla
     msg = MIMEText(message)
@@ -25,8 +25,6 @@ def send_anonymous_email(subject, message, to_email):
     # Bağlantıyı kapat
     server.close()
 def send_error_email(error_message):
-    receiver_email = "kayrabulut39@gmail.com"
-
     # E-posta gövdesini oluştur
     text = f"""\
     Merhaba,
@@ -103,6 +101,7 @@ def update_repository():
             return
         if not execute_command("git push"):
             return
+        send_anonymous_email("YTU REPO GÜNCELLENDİ","Ytü repo robot tarafından başarıyla güncellendi...", receiver_email)
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}"
