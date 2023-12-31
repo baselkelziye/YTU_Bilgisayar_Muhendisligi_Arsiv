@@ -522,6 +522,8 @@ Açıklamalar:
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
