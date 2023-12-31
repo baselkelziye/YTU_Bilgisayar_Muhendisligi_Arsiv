@@ -8,8 +8,8 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+  - 🛤️ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
