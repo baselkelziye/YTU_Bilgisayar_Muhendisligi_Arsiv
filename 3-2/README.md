@@ -25,6 +25,9 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
+
 ### 📘 Bilgisayar Projesi
 
 #### 📄 Ders Bilgileri
@@ -79,6 +82,12 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- G1
+
+#### ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
+
 ### 📘 Yazılım Mühendisliği
 
 #### 📄 Ders Bilgileri
@@ -97,3 +106,6 @@
 
 - [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- OK

@@ -177,6 +177,8 @@ Açıklamalar:
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 İleri İngilizce 2 
@@ -273,6 +275,8 @@ Açıklamalar:
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Ayrık Matematik 
@@ -393,6 +397,8 @@ Açıklamalar:
     - [HOİ](#-dr-hamza-osman-i̇lhan)
     - [GB](#-doç-dr-gökhan-bilgin)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Elektronik%20Devreler)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Hesaplama Kuramı 
@@ -481,6 +487,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [AEL](#-dr-ahmet-elbir)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/İşletim%20Sistemleri)
 
 
@@ -493,7 +501,12 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [EU](#-dr-erkan-uslu)
+    - [FÇ](#-dr-furkan-çakmak)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroişlemci%20Sistemleri)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
@@ -533,6 +546,8 @@ Açıklamalar:
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Veri%20İletişimi%20ve%20Bilgi%20Ağları/Veri%20İletişimi)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Veri İletişimi ve Bilgi Ağları 
@@ -570,6 +585,8 @@ Açıklamalar:
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/ağ%20teknolojileri)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Bilgisayar Projesi 
@@ -605,7 +622,11 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [G1](#-dr-göksel-biricik)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Seminer%20ve%20Meslek%20Etiği/Mesleki%20Hukuk%20ve%20Etik)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Yazılım Mühendisliği 
@@ -617,6 +638,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OK](#-prof-dr-oya-kalıpsız)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Yazılım%20Mühendisliği)
 
 ### 🗓 4. Yıl - Güz
@@ -816,6 +839,8 @@ Açıklamalar:
     - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OA](#-dr-oğuz-altun)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli/Oyun%20Geliştirmeye%20Giriş)
 
 
@@ -1034,9 +1059,9 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
-  - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
   - 📖 [Yazılım Kalite ve Test Süreci](#-yazılım-kalite-ve-test-süreci)
   - 📖 [Yönetim Bilgi Sistemleri](#-yönetim-bilgi-sistemleri)
+  - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
@@ -1169,9 +1194,9 @@ Açıklamalar:
   - 📖 [Sayısal İşaret İşleme](#-sayısal-i̇şaret-i̇şleme)
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
   - 📖 [Ayrık Matematik](#-ayrık-matematik)
-  - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
+  - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1191,11 +1216,11 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Donanımı](#-bilgisayar-donanımı)
-  - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
   - 📖 [Alt Seviye Programlama](#-alt-seviye-programlama)
   - 📖 [Mikroişlemci Sistemleri ve Assamly Dili](#-mikroişlemci-sistemleri-ve-assamly-dili)
   - 📖 [Mikroişlemci Sistemleri ve Assambly Dili](#-mikroişlemci-sistemleri-ve-assambly-dili)
   - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
+  - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -1220,6 +1245,7 @@ Açıklamalar:
   - 📖 [Veri İletişimi ve Bilgi Ağları](#-veri-i̇letişimi-ve-bilgi-ağları)
   - 📖 [Mikroişlemci Sistemleri ve Assambly Dili](#-mikroişlemci-sistemleri-ve-assambly-dili)
   - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
+  - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
@@ -1238,10 +1264,10 @@ Açıklamalar:
   - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-4-oy)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
+  - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1314,6 +1340,7 @@ Açıklamalar:
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
   - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
+  - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆

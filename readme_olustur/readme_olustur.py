@@ -190,7 +190,9 @@ def dersleri_readme_ye_ekle(dersler):
                 ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("..", ders['ad'])
                 if ders_klasor_yolu is not None:
                     f.write(f"  - 📂 [Ders Klasörü]({(yerel_yoldan_github_linkine(ders_klasor_yolu))})\n")
-
+                if 'guncel_mi' in ders and not ders['guncel_mi']:
+                    f.write("  - ℹ️ Dersin içeriği güncel değil\n")
+                    f.write(f"    - {dersler['guncel_olmayan_ders_aciklamasi']}\n")
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
     with open(ANA_README_YOLU, 'w',encoding='utf-8') as f:
@@ -335,6 +337,9 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = Fal
         if klasor_sonradan_olustu:
             f.write("\n## 😔 İçerik yok\n")
             f.write(f"- {dersler['ders_klasoru_bulunamadi_mesaji']}\n")
+        if 'guncel_mi' in ders and not ders['guncel_mi']:
+            f.write("\n## ℹ️ Dersin içeriği güncel değil\n")
+            f.write(f"- {dersler['guncel_olmayan_ders_aciklamasi']}\n")
 def ders_klasoru_olustur(ders):
     if ders['donem'] == "":
         yol = os.path.join("..","Mesleki Seçmeli")
@@ -390,7 +395,7 @@ def donemlere_gore_readme_olustur(donemler):
                 f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")  # Kitap emoji, zorunlu dersleri temsil eder
         print(f"{donem['donem_adi']} README.md oluşturuldu.")
 
-def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
+def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders_aciklamasi):
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:
         print(f"{ders['ad']} README.md dönemine ekleniyor...")
@@ -434,10 +439,13 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler):
                         f.write("\n#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")  # Kadın öğretmen emoji, akademisyenleri temsil eder (cinsiyete göre değişebilir)
                         for hoca in ders["dersi_veren_hocalar"]:
                             f.write(f"- {hoca['kisaltma']}\n")
+                    if 'guncel_mi' in ders and not ders['guncel_mi']:
+                        f.write("\n#### ℹ️ Dersin içeriği güncel değil\n")
+                        f.write(f"- {guncel_olmayan_ders_aciklamasi}\n")
         print(f"{ders['ad']} README.md dönemine eklendi.")
 
 donemler = json_oku('donemler.json')
 print("Dönem bilgileri README'ye ekleniyor...")
 donemlere_gore_readme_olustur(donemler)
 print("Ders bilgileri README'ye ekleniyor...")
-ders_bilgilerini_readme_ile_birlestir(dersler['dersler'], donemler['donemler'])
+ders_bilgilerini_readme_ile_birlestir(dersler['dersler'], donemler['donemler'], dersler['guncel_olmayan_ders_aciklamasi'])
