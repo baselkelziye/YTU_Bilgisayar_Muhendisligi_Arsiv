@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QVBoxLayout, QPushButton, QApplication, QInputDialog, QMessageBox, QHBoxLayout
+from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QApplication, QInputDialog, QMessageBox, QHBoxLayout
 import json
 from PyQt5.QtCore import Qt
 class TalimatDialog(QDialog):
@@ -11,6 +11,14 @@ class TalimatDialog(QDialog):
     def initUI(self):
         self.setWindowTitle("Talimat Ekle/Düzenle")
         self.layout = QVBoxLayout(self)
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.layout.addWidget(self.clearFiltersButton)
+        self.talimatSayisiLabel = QLabel(self)
+        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')
+        self.layout.addWidget(self.talimatSayisiLabel)
 
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)
@@ -32,7 +40,52 @@ class TalimatDialog(QDialog):
         ekleBtn.clicked.connect(self.talimatEkle)
         self.layout.addWidget(ekleBtn)
 
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak talimat:')
+            if ok:
+                self.searchTalimat(text)
 
+    def searchTalimat(self, query):
+        if query == "":
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, kavram in enumerate(self.repo_data['talimatlar']):
+            layout = self.scrollLayout.itemAt(idx)
+            if isinstance(layout, QHBoxLayout):
+                match = query.lower() in kavram.lower()
+                for i in range(layout.count()):
+                    widget = layout.itemAt(i).widget()
+                    if widget:
+                        widget.setVisible(match)
+                if match:
+                    size += 1
+        if size == len(self.repo_data['talimatlar']):
+            self.clearFilters(is_clicked=False)
+            return
+        self.talimatSayisiLabel.setText(f'{size} talimat bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
+
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                    'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.scrollLayout.count()):
+                layout = self.scrollLayout.itemAt(i)
+                if isinstance(layout, QHBoxLayout):  # Burayı QHBoxLayout olarak değiştirdik
+                    for j in range(layout.count()):
+                        widget = layout.itemAt(j).widget()
+                        if widget:
+                            widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')  # kavram sayısını etikette güncelle
+   
     def jsonVeriOku(self):
         try:
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
@@ -44,7 +97,8 @@ class TalimatDialog(QDialog):
     def talimatListele(self):
         # Mevcut talimatları temizle
         self.temizle()
-
+        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
         for i, talimat in enumerate(self.repo_data["talimatlar"]):
             talimatLayout = QHBoxLayout()
             
@@ -220,6 +274,13 @@ class KavramDialog(QDialog):
     def initUI(self):
         self.setWindowTitle("Kavram Ekle/Düzenle")
         self.layout = QVBoxLayout(self)
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.layout.addWidget(self.clearFiltersButton)
+        self.kavramSayisiLabel = QLabel(self)
+        self.layout.addWidget(self.kavramSayisiLabel)
 
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)
@@ -246,10 +307,57 @@ class KavramDialog(QDialog):
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
             return None
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak açıklama:')
+            if ok:
+                self.searchKavram(text)
 
+    def searchKavram(self, query):
+        if query == "":
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, kavram in enumerate(self.repo_data['kavramlar']):
+            layout = self.scrollLayout.itemAt(idx)
+            kavram = kavram["kavram"]
+            if isinstance(layout, QHBoxLayout):
+                match = query.lower() in kavram.lower()
+                for i in range(layout.count()):
+                    widget = layout.itemAt(i).widget()
+                    if widget:
+                        widget.setVisible(match)
+                if match:
+                    size += 1
+        if size == len(self.repo_data['kavramlar']):
+            self.clearFilters(is_clicked=False)
+            return
+        self.kavramSayisiLabel.setText(f'{size} kavram bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
+
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                    'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.scrollLayout.count()):
+                layout = self.scrollLayout.itemAt(i)
+                if isinstance(layout, QHBoxLayout):  # Burayı QHBoxLayout olarak değiştirdik
+                    for j in range(layout.count()):
+                        widget = layout.itemAt(j).widget()
+                        if widget:
+                            widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data["kavramlar"])} kavram')  # kavram sayısını etikette güncelle
+   
     def kavramListele(self):
         self.temizle()
-
+        self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data["kavramlar"])} kavram')
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
         for i, kavram in enumerate(self.repo_data["kavramlar"]):
             kavramLayout = QHBoxLayout()
             
@@ -339,6 +447,14 @@ class AciklamaDialog(QDialog):
     def initUI(self):
         self.setWindowTitle("Açıklama Ekle/Düzenle")
         self.layout = QVBoxLayout(self)
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.layout.addWidget(self.clearFiltersButton)
+        self.aciklamaSayisiLabel = QLabel(self)
+        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')
+        self.layout.addWidget(self.aciklamaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)
@@ -365,9 +481,55 @@ class AciklamaDialog(QDialog):
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
             return None
 
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak açıklama:')
+            if ok:
+                self.searchAciklama(text)
+
+    def searchAciklama(self, query):
+        if query == "":
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, aciklama in enumerate(self.repo_data['aciklamalar']):
+            layout = self.scrollLayout.itemAt(idx)
+            if isinstance(layout, QHBoxLayout):
+                match = query.lower() in aciklama.lower()
+                for i in range(layout.count()):
+                    widget = layout.itemAt(i).widget()
+                    if widget:
+                        widget.setVisible(match)
+                if match:
+                    size += 1
+        if size == len(self.repo_data['aciklamalar']):
+            self.clearFilters(is_clicked=False)
+            return
+        self.aciklamaSayisiLabel.setText(f'{size} açıklama bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
+
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                    'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.scrollLayout.count()):
+                layout = self.scrollLayout.itemAt(i)
+                if isinstance(layout, QHBoxLayout):  # Burayı QHBoxLayout olarak değiştirdik
+                    for j in range(layout.count()):
+                        widget = layout.itemAt(j).widget()
+                        if widget:
+                            widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle
     def aciklamaListele(self):
         self.temizle()
-
+        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
         for i, aciklama in enumerate(self.repo_data["aciklamalar"]):
             aciklamaLayout = QHBoxLayout()
             
