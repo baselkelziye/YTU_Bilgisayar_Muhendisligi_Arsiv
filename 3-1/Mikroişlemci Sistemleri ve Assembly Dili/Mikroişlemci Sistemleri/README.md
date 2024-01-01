@@ -23,3 +23,10 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 - 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
+
+## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- EU
+- FÇ
+
+## ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
