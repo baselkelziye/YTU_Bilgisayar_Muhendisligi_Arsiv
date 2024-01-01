@@ -2,7 +2,7 @@ import requests
 import locale
 import json
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QSizePolicy, QPushButton,QProgressDialog, QMessageBox, QComboBox, QLineEdit,QTextEdit, QLabel, QApplication, QHBoxLayout, QFrame, QScrollArea, QWidget)
+from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QInputDialog,QSizePolicy, QPushButton,QProgressDialog, QMessageBox, QComboBox, QLineEdit,QTextEdit, QLabel, QApplication, QHBoxLayout, QFrame, QScrollArea, QWidget)
 from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
@@ -29,7 +29,11 @@ class HocaEkleGuncelleWindow(QDialog):
     def initUI(self):
         self.setWindowTitle('Hocaları Ekle/Güncelle')
         self.mainLayout = QVBoxLayout(self)  # Ana layout
-
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.mainLayout.addWidget(self.clearFiltersButton)
         # Hoca ekleme butonu
         self.ekleBtn = QPushButton('Hoca Ekle', self)
         self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
@@ -52,7 +56,46 @@ class HocaEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.hocalariYukle()
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak hoca:')
+            if ok:
+                self.searchHocalar(text)
+    # Filtreleri temizleme fonksiyonu
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                    'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.hocalarLayout.count()):
+                widget = self.hocalarLayout.itemAt(i).widget()
+                if isinstance(widget, QPushButton):
+                    widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.hocaSayisiLabel.setText(f'Toplam {len(self.data["hocalar"])} hoca')  # Hoca sayısını etikette güncelle
+    def searchHocalar(self, query):
+        if query == '':
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, hoca in enumerate(self.sorted_hocalar):
+            hoca_ad = hoca['ad']
+            widget = self.hocalarLayout.itemAt(idx).widget()
+            if isinstance(widget, QPushButton):
+                if query.lower() in hoca_ad.lower():
+                    widget.show()
+                    size += 1
+                else:
+                    widget.hide()
+        if size == len(self.sorted_hocalar):
+            self.clearFilters(is_clicked=False)
+            return
+        self.hocaSayisiLabel.setText(f'{size} hoca bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
     def hocalariYukle(self):
         try:
             with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
@@ -69,13 +112,15 @@ class HocaEkleGuncelleWindow(QDialog):
                     return unvanlar[''], ad  # Eğer ünvan yoksa
 
                 # Hocaları önce ünvanlarına, sonra adlarına göre sırala
-                sorted_hocalar = sorted(self.data['hocalar'], key=lambda hoca: unvan_ve_isim_ayir(hoca))
+                self.sorted_hocalar = sorted(self.data['hocalar'], key=lambda hoca: unvan_ve_isim_ayir(hoca))
 
-                for hoca in sorted_hocalar:
-                    if hoca['ad']:
+                for hoca in self.sorted_hocalar:
+                    if hoca['ad'] != '':
                         btn = QPushButton(f"{hoca['ad']}", self.scrollWidget)
                         btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
                         self.hocalarLayout.addWidget(btn)
+                    else:
+                        self.sorted_hocalar.remove(hoca)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
 
@@ -96,6 +141,7 @@ class HocaEkleGuncelleWindow(QDialog):
             self.hocalarLayout.removeWidget(widgetToRemove)
             widgetToRemove.setParent(None)
         self.hocalariYukle()
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
 
 # Hoca Düzenleme/Ekleme Penceresi
 class HocaDuzenlemeWindow(QDialog):

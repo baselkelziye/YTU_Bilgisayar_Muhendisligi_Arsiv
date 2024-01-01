@@ -1,9 +1,10 @@
 import locale
 import json
 from urllib.parse import urlparse
-from PyQt5.QtWidgets import QWidget, QVBoxLayout,QDesktopWidget,QHBoxLayout, QPushButton, QMessageBox, QDialog, QLabel, QLineEdit, QScrollArea
+from PyQt5.QtWidgets import QWidget, QVBoxLayout, QInputDialog,QDesktopWidget,QHBoxLayout, QPushButton, QMessageBox, QDialog, QLabel, QLineEdit, QScrollArea
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
 from threadler import KatkiKaydetThread
+from PyQt5.QtCore import Qt
 from progress_dialog import CustomProgressDialog
 JSON_YOLU = "../katkida_bulunanlar.json"
 try:
@@ -31,7 +32,11 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.setMinimumHeight(200)
         self.setMinimumWidth(600)
         self.mainLayout = QVBoxLayout(self)  # Ana layout
-
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.mainLayout.addWidget(self.clearFiltersButton)
         # Ekle butonu
         self.ekleBtn = QPushButton("Ekle", self)
         self.ekleBtn.clicked.connect(self.acKatkidaBulunanEkle)
@@ -49,6 +54,46 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.butonlariYukle()
+    def searchNotes(self, query):
+        if not query:
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, katkida_bulunan in enumerate(self.data['katkida_bulunanlar']):
+            widget = self.layout.itemAt(idx + 1).widget()
+            katkida_bulunan_adi = katkida_bulunan['ad']
+            if isinstance(widget, QPushButton):
+                if query.lower() in katkida_bulunan_adi.lower():
+                    widget.show()
+                    size += 1
+                else:
+                    widget.hide()
+        if size == len(self.data['katkida_bulunanlar']):
+            self.clearFilters(is_clicked=False)
+            return
+        self.katkidaBulunanSayisiLabel.setText(f'{size} sonuç bulundu.')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak kelime:')
+            if ok:
+                self.searchNotes(text)
+
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                        'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.layout.count()):
+                widget = self.layout.itemAt(i).widget()
+                if isinstance(widget, QPushButton):
+                    widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.katkidaBulunanSayisiLabel.setText(f'Toplam {len(self.data["katkida_bulunanlar"])} katkıda bulunan var.')  # Not sayısını etikette güncelle
     def butonlariYukle(self):
         # JSON dosyasını oku ve butonları oluştur
         try:
@@ -81,6 +126,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         
         # Yeniden butonları yükle
         self.butonlariYukle()
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
     def acKatkidaBulunanEkle(self):
         # Katkıda Bulunan Ekle penceresini aç
         self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self)
