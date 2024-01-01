@@ -56,6 +56,9 @@
 - Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- AEL
+
 ### 📘 Mikroişlemci Sistemleri
 
 #### 📄 Ders Bilgileri
@@ -80,6 +83,13 @@
 
 - 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- EU
+- FÇ
+
+#### ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 ### 📘 Mikroişlemci Sistemleri ve Assembly Dili
 
@@ -143,6 +153,9 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
+
+#### ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 ### 📘 Veri İletişimi ve Bilgi Ağları
 

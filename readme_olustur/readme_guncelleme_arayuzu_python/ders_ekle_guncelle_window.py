@@ -487,11 +487,17 @@ class DersDuzenlemeWindow(QDialog):
         if self.ders:
             self.donemInput.setCurrentText(self.ders['donem'])
         self.layout.addWidget(self.donemInput)
+        self.layout.addWidget(QLabel('Ders Güncel Mi:'))
+        self.guncelMi = QComboBox(self)
+        self.guncelMi.addItems(['False','True'])
+        if self.ders:
+            self.guncelMi.setCurrentText('True' if 'guncel_mi' in self.ders and self.ders['guncel_mi'] else 'False')
+        self.layout.addWidget(self.guncelMi)
 
         # Ders tipi için alan
         self.layout.addWidget(QLabel('Tip:'))
         self.tipInput = QComboBox(self)
-        self.tipInput.addItems(['Zorunlu', 'Seçmeli', 'Seçmeli4', 'Mesleki Seçmeli'])
+        self.tipInput.addItems(['Zorunlu', 'Seçmeli', 'Seçmeli 4', 'Mesleki Seçmeli'])
         if self.ders:
             self.tipInput.setCurrentText(self.ders['tip'])
         self.layout.addWidget(self.tipInput)
@@ -588,6 +594,7 @@ class DersDuzenlemeWindow(QDialog):
         except:
             yil = 0
         donem = self.donemInput.currentText()
+        guncel_mi = self.guncelMi.currentText() == "True"
         tip = self.tipInput.currentText()
         # Seçili hocaların kısaltmalarını al
         hocalar_kisaltmalar = [combo.currentData() for combo, _ in self.hocalarComboBoxlar]
@@ -621,9 +628,10 @@ class DersDuzenlemeWindow(QDialog):
                 mevcut_ders["donem"] = donem if donem != 'Yok' else ''
                 mevcut_ders["tip"] = tip
                 mevcut_ders["dersi_veren_hocalar"] = hocalar
+                mevcut_ders["guncel_mi"] = guncel_mi
         else:  # Ekleme modunda
             # Ders bilgilerini güncelle veya yeni ders ekle
-            ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar}
+            ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar, "guncel_mi": guncel_mi}
             self.data['dersler'].append(ders_data)
     
 
