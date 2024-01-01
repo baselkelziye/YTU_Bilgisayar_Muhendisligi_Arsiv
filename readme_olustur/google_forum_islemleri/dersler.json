@@ -15,8 +15,8 @@
                     "yorum": "Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur."
                 }
             ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 62,
+            "gereklilik_puani": 82,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "G1",
@@ -27,7 +27,7 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 3
+            "oy_sayisi": 4
         },
         {
             "ad": "Fizik 1",
@@ -119,9 +119,9 @@
                 }
             ],
             "kolaylik_puani": 100,
-            "gereklilik_puani": 10,
+            "gereklilik_puani": 15,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Yapısal Programlamaya Giriş",
@@ -288,8 +288,8 @@
                     "yorum": "Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders..."
                 }
             ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 70,
+            "kolaylik_puani": 35,
+            "gereklilik_puani": 65,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "EU",
@@ -300,7 +300,7 @@
                     "ad": "Dr. Furkan Çakmak"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Yapısal Programlama",
@@ -370,8 +370,8 @@
                     "yorum": "Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla."
                 }
             ],
-            "kolaylik_puani": 56,
-            "gereklilik_puani": 83,
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 82,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -382,7 +382,7 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 3
+            "oy_sayisi": 4
         },
         {
             "ad": "Lojik Devreler",
@@ -648,8 +648,8 @@
             "faydali_olabilecek_kaynaklar": [
                 "[Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir."
             ],
-            "kolaylik_puani": 20,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 50,
+            "gereklilik_puani": 95,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MEK",
@@ -660,7 +660,7 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Mikroişlemci Sistemleri",
@@ -745,9 +745,9 @@
                 }
             ],
             "kolaylik_puani": 40,
-            "gereklilik_puani": 80,
+            "gereklilik_puani": 83,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 3
         },
         {
             "ad": "Genel Staj",
@@ -865,10 +865,10 @@
             "donem": "Bahar",
             "tip": "Zorunlu",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 100,
-            "gereklilik_puani": 10,
+            "kolaylik_puani": 95,
+            "gereklilik_puani": 15,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2
         },
         {
             "ad": "Mesleki Staj",
@@ -1349,7 +1349,7 @@
     "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
     "en_populer_ders": {
         "ders_adi": "Bilgisayar Bilimlerine Giriş",
-        "oy_sayisi": 3
+        "oy_sayisi": 4
     },
     "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
 }
