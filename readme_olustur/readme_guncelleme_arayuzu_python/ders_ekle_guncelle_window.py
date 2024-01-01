@@ -1,5 +1,6 @@
 import json
-from PyQt5.QtWidgets import (QDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (QDialog,QInputDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
@@ -22,7 +23,11 @@ class DersEkleGuncelleWindow(QDialog):
         self.setWindowTitle('Ders Ekle/Güncelle')
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
-
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.mainLayout.addWidget(self.clearFiltersButton)
         # Ders ekleme butonu
         self.ekleBtn = QPushButton('Ders Ekle', self)
         self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
@@ -46,7 +51,43 @@ class DersEkleGuncelleWindow(QDialog):
 
         self.dersleriYukle()
 
-   
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak ders:')
+            if ok:
+                self.searchDersler(text)
+    def searchDersler(self, query):
+        size = 0
+        for idx, ders in enumerate(self.sorted_dersler):
+            layout = self.derslerLayout.itemAt(idx)
+            if isinstance(layout, QHBoxLayout):
+                match = query.lower() in ders['ad'].lower()
+                for i in range(layout.count()):
+                    widget = layout.itemAt(i).widget()
+                    if widget:
+                        widget.setVisible(match)
+                if match:
+                    size += 1
+        self.dersSayisiLabel.setText(f'{size} ders bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                        'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                        QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.derslerLayout.count()):
+                layout = self.derslerLayout.itemAt(i)
+                if isinstance(layout, QHBoxLayout):
+                    for j in range(layout.count()):
+                        widget = layout.itemAt(j).widget()
+                        if widget:
+                            widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.dersSayisiLabel.setText(f'Toplam {len(self.data["dersler"])} ders')  # Ders sayısını etikette güncelle
     def dersleriYukle(self):
         try:
             # Öncelikle Türkçe locale'i dene
@@ -68,8 +109,8 @@ class DersEkleGuncelleWindow(QDialog):
                 self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
 
                 # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
-                sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
-                for ders in sorted_dersler:
+                self.sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
+                for ders in self.sorted_dersler:
                     # Her ders için bir satır oluştur
                     dersSatiri = QHBoxLayout()
 
@@ -98,6 +139,7 @@ class DersEkleGuncelleWindow(QDialog):
 
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
+    
     def oneriEkle(self, ders):
         # Öneri ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
         self.oneriDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, 'derse_dair_oneriler', self)
@@ -124,6 +166,7 @@ class DersEkleGuncelleWindow(QDialog):
                 self.clearLayout(layoutItem.layout())
 
         self.dersleriYukle()
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
 
     def clearLayout(self, layout):
         while layout.count():

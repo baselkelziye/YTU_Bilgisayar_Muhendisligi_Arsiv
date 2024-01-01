@@ -1,6 +1,7 @@
 import sys
 import json
-from PyQt5.QtWidgets import QDialog, QVBoxLayout,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
+from PyQt5.QtWidgets import QDialog,QLineEdit,QVBoxLayout, QInputDialog,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
+from PyQt5.QtCore import Qt
 JSON_DOSYASI = '../yazarin_notlari.json'
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
@@ -12,7 +13,11 @@ class YazarinNotlariWindow(QDialog):
         self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
-
+        self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
+        self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
+        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
+        self.mainLayout.addWidget(self.clearFiltersButton)
         # Not ekleme butonu
         self.ekleBtn = QPushButton('Not Ekle', self)
         self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
@@ -36,7 +41,45 @@ class YazarinNotlariWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.notlariYukle()
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+            text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak kelime:')
+            if ok:
+                self.searchNotes(text)
+    # Filtreleri temizleme fonksiyonu
+    def clearFilters(self, is_clicked=True):
+        if is_clicked:
+            reply = QMessageBox.question(self, 'Filtreleri Temizle', 
+                                    'Filtreleri temizlemek istediğinize emin misiniz?', 
+                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        if not is_clicked or reply == QMessageBox.Yes:
+            for i in range(self.notlarLayout.count()):
+                widget = self.notlarLayout.itemAt(i).widget()
+                if isinstance(widget, QPushButton):
+                    widget.show()
+            self.clearFiltersButton.hide()  # Temizle butonunu gizle
+            self.notSayisiLabel.setText(f'Toplam {len(self.data["aciklamalar"])} not')  # Not sayısını etikette güncelle
+    def searchNotes(self, query):
+        if not query:
+            self.clearFilters(is_clicked=False)
+            return
+        size = 0
+        for idx, not_ in enumerate(self.data['aciklamalar']):
+            widget = self.notlarLayout.itemAt(idx).widget()
+            if isinstance(widget, QPushButton):
+                if query.lower() in not_.lower():
+                    widget.show()
+                    size += 1
+                else:
+                    widget.hide()
+        if size == len(self.data['aciklamalar']):
+            self.clearFilters(is_clicked=False)
+            return
+        self.notSayisiLabel.setText(f'{size} not bulundu')
+        if query:
+            self.clearFiltersButton.show()
+        else:
+            self.clearFiltersButton.hide()
     def notlariYukle(self):
         try:
             with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
@@ -61,6 +104,7 @@ class YazarinNotlariWindow(QDialog):
             self.notlarLayout.removeWidget(widgetToRemove)
             widgetToRemove.setParent(None)
         self.notlariYukle()
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
 
     def notEkle(self):
         self.duzenlemePenceresi = NotDuzenleWindow(None, self.data, self)
