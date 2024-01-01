@@ -21,3 +21,6 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - EU
 - FÇ
+
+## ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
