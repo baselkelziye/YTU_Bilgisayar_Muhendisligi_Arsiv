@@ -94,26 +94,33 @@ class KatkidaBulunanGuncelleWindow(QDialog):
                     widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
             self.katkidaBulunanSayisiLabel.setText(f'Toplam {len(self.data["katkida_bulunanlar"])} katkıda bulunan var.')  # Not sayısını etikette güncelle
-    def butonlariYukle(self):
-        # JSON dosyasını oku ve butonları oluştur
+    def jsonDosyasiniYukle(self):
         try:
             with open(JSON_YOLU, 'r', encoding='utf-8') as file:
-                self.data = json.load(file)
-                self.data['katkida_bulunanlar'] = sorted(
-                            [kisi for kisi in self.data['katkida_bulunanlar'] if kisi['ad'].strip() and kisi['github_link'].strip()],
-                            key=lambda kisi: locale.strxfrm(kisi['ad'].lower())
-                        )
+                return json.load(file)
+        except FileNotFoundError:
+            return json.loads('{}')
+    def butonlariYukle(self):
+        # JSON dosyasını oku ve butonları oluştur
+        self.data = self.jsonDosyasiniYukle()
+        try:
+            if 'katkida_bulunanlar' not in self.data:
+                self.data['katkida_bulunanlar'] = []
+            self.data['katkida_bulunanlar'] = sorted(
+                        [kisi for kisi in self.data['katkida_bulunanlar'] if kisi['ad'].strip() and kisi['github_link'].strip()],
+                        key=lambda kisi: locale.strxfrm(kisi['ad'].lower())
+                    )
 
 
-                katkidaBulunanSayisi = len(self.data['katkida_bulunanlar'])  # Toplam katkıda bulunan sayısı
-                self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
-                self.katkidaBulunanSayisiLabel.setFixedHeight(20)
-                self.layout.addWidget(self.katkidaBulunanSayisiLabel)
+            katkidaBulunanSayisi = len(self.data['katkida_bulunanlar'])  # Toplam katkıda bulunan sayısı
+            self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
+            self.katkidaBulunanSayisiLabel.setFixedHeight(20)
+            self.layout.addWidget(self.katkidaBulunanSayisiLabel)
 
-                for kisi in self.data['katkida_bulunanlar']:
-                    btn = QPushButton(kisi['ad'], self)
-                    btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
-                    self.layout.addWidget(btn)
+            for kisi in self.data['katkida_bulunanlar']:
+                btn = QPushButton(kisi['ad'], self)
+                btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
+                self.layout.addWidget(btn)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
 

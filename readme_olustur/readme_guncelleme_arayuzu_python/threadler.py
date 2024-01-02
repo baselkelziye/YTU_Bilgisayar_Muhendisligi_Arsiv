@@ -73,8 +73,16 @@ class KatkiEkleThread(QThread):
     def run(self):
         try:
             # JSON dosyasını aç ve oku
-            with open(self.JSON_DOSYASI, 'r+', encoding='utf-8') as file:
-                data = json.load(file)
+            try:
+                with open(self.JSON_DOSYASI, 'r+', encoding='utf-8') as file:
+                    data = json.load(file)
+            except FileNotFoundError:
+                data = {"katkida_bulunanlar": []}
+            if 'bolum_adi' not in data:
+                data['bolum_adi'] = 'Katkıda Bulunanlar'
+            if 'bolum_aciklamasi' not in data:
+                data['bolum_aciklamasi'] = "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
+           
             if not self.ad or not self.github_kullanici_adi:
                 self.finished.emit(False, 'Ad ve GitHub kullanıcı adı boş olamaz!')
                 return
