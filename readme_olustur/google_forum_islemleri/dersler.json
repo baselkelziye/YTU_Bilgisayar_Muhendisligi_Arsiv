@@ -27,7 +27,8 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 4
+            "oy_sayisi": 4,
+            "guncel_mi": true
         },
         {
             "ad": "Fizik 1",
@@ -43,7 +44,8 @@
             "kolaylik_puani": 35,
             "gereklilik_puani": 25,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Matematik 1",
@@ -58,7 +60,8 @@
             ],
             "kolaylik_puani": 70,
             "gereklilik_puani": 20,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Lineer Cebir",
@@ -74,7 +77,8 @@
             "kolaylik_puani": 55,
             "gereklilik_puani": 80,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 1",
@@ -89,7 +93,8 @@
             ],
             "kolaylik_puani": 70,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "İleri İngilizce 1",
@@ -105,7 +110,8 @@
             "kolaylik_puani": 60,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 1",
@@ -121,7 +127,8 @@
             "kolaylik_puani": 100,
             "gereklilik_puani": 15,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Yapısal Programlamaya Giriş",
@@ -146,7 +153,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Sayısal Analiz",
@@ -170,7 +178,8 @@
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Devre Teorisi",
@@ -186,7 +195,8 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": false
         },
         {
             "ad": "İş Sağlığı ve Güvenliği 2",
@@ -201,7 +211,8 @@
             ],
             "kolaylik_puani": 70,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Mühendisler için Yarıiletken Fiziği",
@@ -214,9 +225,11 @@
                     "yorum": "Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber."
                 }
             ],
-            "kolaylik_puani": 30,
-            "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "kolaylik_puani": 50,
+            "gereklilik_puani": 20,
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Matematik 2",
@@ -232,7 +245,8 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "İleri İngilizce 2",
@@ -247,7 +261,8 @@
             ],
             "kolaylik_puani": 80,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "İstatistik ve Olasılık Hesapları",
@@ -271,7 +286,8 @@
                     "kisaltma": "SY",
                     "ad": "Prof. Dr. Sırma Yavuz"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Alt Seviye Programlama",
@@ -300,7 +316,8 @@
                     "ad": "Dr. Furkan Çakmak"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": false
         },
         {
             "ad": "Yapısal Programlama",
@@ -328,7 +345,8 @@
                     "kisaltma": "HİT",
                     "ad": "Dr. H. İrem Türkmen"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Bilgisayar Mühendisleri için Sinyaller ve Sistemler",
@@ -357,7 +375,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Ayrık Matematik",
@@ -382,7 +401,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 4
+            "oy_sayisi": 4,
+            "guncel_mi": true
         },
         {
             "ad": "Lojik Devreler",
@@ -407,7 +427,8 @@
                     "ad": "Dr. Hamza Osman İlhan"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Nesneye Yönelik Programlama",
@@ -432,10 +453,11 @@
                     "ad": "Dr. Furkan Çakmak"
                 },
                 {
-                    "ad": "Dr. Yunus Emre Selçuk",
-                    "kisaltma": "YES"
+                    "kisaltma": "YES",
+                    "ad": "Dr. Yunus Emre Selçuk"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Bilgisayar Donanımı",
@@ -452,7 +474,7 @@
                     "yorum": "Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali..."
                 }
             ],
-            "kolaylik_puani": 80,
+            "kolaylik_puani": 75,
             "gereklilik_puani": 100,
             "derse_dair_oneriler": [
                 {
@@ -473,7 +495,8 @@
                     "ad": "Dr. Erkan Uslu"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Elektronik Devreler",
@@ -506,7 +529,8 @@
                     "ad": "Doç. Dr. Gökhan Bilgin"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": false
         },
         {
             "ad": "Sistem Analizi ve Tasarımı",
@@ -540,7 +564,8 @@
                     "kisaltma": "G1",
                     "ad": "Dr. Göksel Biricik"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Hesaplama Kuramı",
@@ -568,7 +593,8 @@
                     "kisaltma": "OA",
                     "ad": "Dr. Oğuz Altun"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Veri Yapıları ve Algoritmalar",
@@ -600,7 +626,8 @@
                     "ad": "Dr. Göksel Biricik"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "İşletim Sistemleri",
@@ -628,7 +655,13 @@
                     ]
                 }
             ],
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "AEL",
+                    "ad": "Dr. Ahmet Elbir"
+                }
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Algoritma Analizi",
@@ -660,7 +693,8 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Mikroişlemci Sistemleri",
@@ -688,8 +722,18 @@
             "faydali_olabilecek_kaynaklar": [
                 "80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak"
             ],
-            "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                },
+                {
+                    "kisaltma": "FÇ",
+                    "ad": "Dr. Furkan Çakmak"
+                }
+            ],
+            "oy_sayisi": 1,
+            "guncel_mi": false
         },
         {
             "ad": "Veritabanı Yönetimi",
@@ -710,7 +754,8 @@
                     "ad": "Dr. M. Utku Kalay"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Veri İletişimi",
@@ -731,7 +776,8 @@
                     "ad": "Dr. Furkan Çakmak"
                 }
             ],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": false
         },
         {
             "ad": "Ağ Teknolojileri",
@@ -747,7 +793,8 @@
             "kolaylik_puani": 40,
             "gereklilik_puani": 83,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 3
+            "oy_sayisi": 3,
+            "guncel_mi": false
         },
         {
             "ad": "Genel Staj",
@@ -763,7 +810,8 @@
             "kolaylik_puani": 100,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Bilgisayar Projesi",
@@ -776,10 +824,11 @@
                     "yorum": "Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev."
                 }
             ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 95,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Mesleki Hukuk ve Etik",
@@ -794,7 +843,13 @@
             ],
             "kolaylik_puani": 100,
             "gereklilik_puani": 20,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "G1",
+                    "ad": "Dr. Göksel Biricik"
+                }
+            ],
+            "guncel_mi": false
         },
         {
             "ad": "Yazılım Mühendisliği",
@@ -812,7 +867,13 @@
             ],
             "kolaylik_puani": 50,
             "gereklilik_puani": 10,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "OK",
+                    "ad": "Prof. Dr. Oya Kalıpsız"
+                }
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Bilişim Sistemleri Güvenliği",
@@ -823,7 +884,8 @@
             "kolaylik_puani": 75,
             "gereklilik_puani": 50,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Gömülü Sistemler",
@@ -846,7 +908,8 @@
                     "kisaltma": "ACK",
                     "ad": "Doç. Dr. Ali Can Karaca"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Türkçe 1",
@@ -857,7 +920,8 @@
             "kolaylik_puani": 100,
             "gereklilik_puani": 10,
             "oy_sayisi": 1,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
@@ -868,7 +932,8 @@
             "kolaylik_puani": 95,
             "gereklilik_puani": 15,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "guncel_mi": true
         },
         {
             "ad": "Mesleki Staj",
@@ -883,7 +948,8 @@
             ],
             "kolaylik_puani": 100,
             "gereklilik_puani": 100,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Bitirme Çalışması",
@@ -901,7 +967,8 @@
             ],
             "kolaylik_puani": 60,
             "gereklilik_puani": 100,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Türkçe 2",
@@ -909,10 +976,11 @@
             "donem": "Bahar",
             "tip": "Zorunlu",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 100,
+            "kolaylik_puani": 97,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 3
+            "oy_sayisi": 4,
+            "guncel_mi": true
         },
         {
             "ad": "Bilgiye Erişim Ve Arama Motorları",
@@ -928,7 +996,8 @@
                     "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Oyun Geliştirmeye Giriş",
@@ -938,7 +1007,13 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "OA",
+                    "ad": "Dr. Oğuz Altun"
+                }
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Mobil Programlamaya Giriş",
@@ -962,7 +1037,8 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Sistem Programlama",
@@ -972,7 +1048,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "İstatistiksel Veri Analizi",
@@ -987,7 +1064,8 @@
                     "kisaltma": "ACK",
                     "ad": "Doç. Dr. Ali Can Karaca"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Sayısal İşaret İşleme",
@@ -1011,7 +1089,8 @@
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Bilgisayar Grafiğine Giriş",
@@ -1021,7 +1100,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Biyoenformatiğe Giriş",
@@ -1031,7 +1111,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Büyük Veri İşleme Ve Analizi",
@@ -1041,7 +1122,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Yapay Zeka",
@@ -1065,7 +1147,8 @@
                     "ad": "Prof. Dr. M. Fatih Amasyalı"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Yapay Sinir Ağlarına Giriş",
@@ -1075,7 +1158,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Görüntü İşleme",
@@ -1090,7 +1174,8 @@
                     "kisaltma": "MEK",
                     "ad": "Prof. Dr. M. Elif Karslıgil"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Doğal Dil İşlemeye Giriş",
@@ -1123,7 +1208,8 @@
                     ]
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Uzman Sistemlere Giriş",
@@ -1139,7 +1225,8 @@
                     "ad": "Prof. Dr. M. Fatih Amasyalı"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Veri Tabanı Sistemlerinde Güncel Konular",
@@ -1160,7 +1247,8 @@
                     "ad": "Dr. M. Utku Kalay"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Veritabanı Sistemlerinin Gerçekleştirilmesi",
@@ -1175,7 +1263,8 @@
                     "kisaltma": "MUK",
                     "ad": "Dr. M. Utku Kalay"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Yönetim Bilgi Sistemleri",
@@ -1196,7 +1285,8 @@
                     "ad": "Prof. Dr. Oya Kalıpsız"
                 }
             ],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Dağıtık Sistemler",
@@ -1206,7 +1296,8 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": []
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
         },
         {
             "ad": "Veri Madenciliğine Giriş",
@@ -1222,7 +1313,8 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 90,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Robot Teknolojisine Giriş",
@@ -1242,7 +1334,8 @@
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Yazılım Kalite ve Test Süreci",
@@ -1257,7 +1350,8 @@
                     "kisaltma": "OK",
                     "ad": "Prof. Dr. Oya Kalıpsız"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Çok Displinli Tasarım Projesi",
@@ -1273,7 +1367,8 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "guncel_mi": true
         },
         {
             "ad": "Bilgisayar Mühendisleri İçin Diferansiyel Denklemler",
@@ -1289,7 +1384,8 @@
                     "kisaltma": "SY",
                     "ad": "Prof. Dr. Sırma Yavuz"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Mikroişlemci Sistemleri ve Assembly Dili",
@@ -1314,7 +1410,8 @@
                     "kisi": "Traktör Reis",
                     "yorum": "Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette. "
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Seminer ve Meslek Etiği",
@@ -1330,7 +1427,8 @@
                     "kisaltma": "HOİ",
                     "ad": "Dr. Hamza Osman İlhan"
                 }
-            ]
+            ],
+            "guncel_mi": true
         },
         {
             "ad": "Veri İletişimi ve Bilgi Ağları",
@@ -1342,7 +1440,8 @@
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
-            ]
+            ],
+            "guncel_mi": true
         }
     ],
     "bolum_adi": "Dersler",
@@ -1351,5 +1450,6 @@
         "ders_adi": "Bilgisayar Bilimlerine Giriş",
         "oy_sayisi": 4
     },
-    "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
+    "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
+    "guncel_olmayan_ders_aciklamasi": "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
 }
