@@ -96,31 +96,42 @@ class HocaEkleGuncelleWindow(QDialog):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
-    def hocalariYukle(self):
+    def jsonDosyasiniYukle(self):
         try:
             with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
-                self.data = json.load(file)
-                hoca_sayisi = len(self.data['hocalar'])  # Hoca sayısını hesapla
-                self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
-                def unvan_ve_isim_ayir(hoca):
-                    # Ünvanları ve sıralama önceliklerini tanımla
-                    unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3, '': 4}
-                    ad = hoca['ad']
-                    for unvan in unvanlar:
-                        if ad.startswith(unvan):
-                            return unvanlar[unvan], ad[len(unvan):].strip()  # Ünvanın önceliği ve adı döndür
-                    return unvanlar[''], ad  # Eğer ünvan yoksa
+                return json.load(file)
+        except Exception as e:
+            return json.loads('{}')
+    def hocalariYukle(self):
+        self.data = self.jsonDosyasiniYukle()
+        try:
+            if 'bolum_adi' not in self.data:
+                self.data['bolum_adi'] = 'Hocalar'
+            if 'bolum_aciklamasi' not in self.data:
+                self.data['bolum_aciklamasi'] = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."
+            if 'hocalar' not in self.data:
+                self.data['hocalar'] = []
+            hoca_sayisi = len(self.data['hocalar'])  # Hoca sayısını hesapla
+            self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
+            def unvan_ve_isim_ayir(hoca):
+                # Ünvanları ve sıralama önceliklerini tanımla
+                unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3, '': 4}
+                ad = hoca['ad']
+                for unvan in unvanlar:
+                    if ad.startswith(unvan):
+                        return unvanlar[unvan], ad[len(unvan):].strip()  # Ünvanın önceliği ve adı döndür
+                return unvanlar[''], ad  # Eğer ünvan yoksa
 
-                # Hocaları önce ünvanlarına, sonra adlarına göre sırala
-                self.sorted_hocalar = sorted(self.data['hocalar'], key=lambda hoca: unvan_ve_isim_ayir(hoca))
+            # Hocaları önce ünvanlarına, sonra adlarına göre sırala
+            self.sorted_hocalar = sorted(self.data['hocalar'], key=lambda hoca: unvan_ve_isim_ayir(hoca))
 
-                for hoca in self.sorted_hocalar:
-                    if hoca['ad'] != '':
-                        btn = QPushButton(f"{hoca['ad']}", self.scrollWidget)
-                        btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
-                        self.hocalarLayout.addWidget(btn)
-                    else:
-                        self.sorted_hocalar.remove(hoca)
+            for hoca in self.sorted_hocalar:
+                if hoca['ad'] != '':
+                    btn = QPushButton(f"{hoca['ad']}", self.scrollWidget)
+                    btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
+                    self.hocalarLayout.addWidget(btn)
+                else:
+                    self.sorted_hocalar.remove(hoca)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
 
