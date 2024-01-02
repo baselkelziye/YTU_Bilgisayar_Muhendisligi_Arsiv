@@ -48,11 +48,13 @@ def update_repository():
          # Sahnelenmemiş değişiklikleri stash et
         if not execute_command("git stash"):
             print("Değişiklikler stash edilemedi, script durduruluyor.")
-            return 
+            return
         if not execute_command('git pull --rebase origin main'):
-            # Stash'i geri yükle
-            execute_command("git stash pop")
-            return 
+            print("Rebase sırasında conflict oluştu, HEAD'e resetleniyor...")
+            if not execute_command("git reset --hard HEAD"):
+                print("Reset sırasında conflict oluştu, script durduruluyor.")
+                execute_command("git stash pop")
+                return
         if not execute_command("git fetch"):
             # Stash'i geri yükle
             execute_command("git stash pop")
@@ -61,20 +63,24 @@ def update_repository():
             # Stash'i geri yükle
             execute_command("git stash pop")
             return 
-        execute_command('git stash pop')
         if not execute_command("python3 hoca_icerikleri_guncelle.py"):
             return
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
             return 
         os.chdir("..")
-        if not execute_command("python3 readme_olustur.py"):
+        if not execute_command("python3 readme_olustur.py"): 
+            execute_command('git stash pop')
             return
-        if not execute_command("git add --all"):
-         return
-        if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'):
+        if not execute_command("git add --all"): 
+            execute_command('git stash pop')
             return
-        if not execute_command("git push"):
+        if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'): 
+            execute_command('git stash pop')
             return
+        if not execute_command("git push"):  
+            execute_command('git stash pop')
+            return 
+        execute_command('git stash pop')
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}"
