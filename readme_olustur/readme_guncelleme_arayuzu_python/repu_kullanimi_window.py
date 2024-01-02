@@ -591,9 +591,10 @@ class AciklamaDialog(QDialog):
         self.yenile()
 
 class RepoKullanimiDialog(QDialog):
-    def __init__(self):
+    def __init__(self, json_dosyasi='../repo_kullanimi.json'):
         super().__init__()
         self.setModal(True)
+        self.json_dosyasi = json_dosyasi
         self.initUI()
         
     def initUI(self):
@@ -617,6 +618,38 @@ class RepoKullanimiDialog(QDialog):
         aciklamaBtn.clicked.connect(self.acAciklamaDialog)
         aciklamaBtn.setStyleSheet("background-color: lightcoral; color: black;")  # Kırmızı renk
         layout.addWidget(aciklamaBtn)
+        self.jsonKontrol()
+    # JSON dosyasını oku
+    def jsonVeriOku(self):
+        try:
+            with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
+                return json.load(file)
+        except Exception as e:
+            QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
+            return json.loads('{}')
+    # JSON dosyasını güncelle
+    def jsonGuncelle(self):
+        with open(self.json_dosyasi, 'w', encoding='utf-8') as file:
+            json.dump(self.repo_data, file, indent=4, ensure_ascii=False)
+    # JSON dosyasını kontrol et
+    def jsonKontrol(self):
+        self.repo_data = self.jsonVeriOku()
+        if "baslik" not in self.repo_data:
+            self.repo_data["baslik"] = "Repo Kullanımı"
+        if "talimat" not in self.repo_data:
+            self.repo_data["talimat"] = "Talimatlar:"
+        if "kavram" not in self.repo_data:
+            self.repo_data["kavram"] = "Kavramlar:"
+        if "aciklama" not in self.repo_data:
+            self.repo_data["aciklama"] = "Açıklamalar:"
+        if "talimatlar" not in self.repo_data:
+            self.repo_data["talimatlar"] = []
+        if "kavramlar" not in self.repo_data:
+            self.repo_data["kavramlar"] = []
+        if "aciklamalar" not in self.repo_data:
+            self.repo_data["aciklamalar"] = []
+        self.jsonGuncelle()
+       
 
     def acTalimatDialog(self):
         dialog = TalimatDialog()

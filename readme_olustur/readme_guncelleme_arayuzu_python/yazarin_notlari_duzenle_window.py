@@ -80,17 +80,26 @@ class YazarinNotlariWindow(QDialog):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
-    def notlariYukle(self):
+    def jsonDosyasiniYukle(self):
         try:
             with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
-                self.data = json.load(file)
-                not_sayisi = len(self.data['aciklamalar'])  # Not sayısını hesapla
-                self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
+                return json.load(file)
+        except Exception as e:
+            return json.loads('{}')
+    def notlariYukle(self):
+        self.data = self.jsonDosyasiniYukle()
+        try:
+            if 'aciklamalar' not in self.data:
+                self.data['aciklamalar'] = []
+            if 'baslik' not in self.data:
+                self.data['baslik'] = 'Yazarın Notları'
+            not_sayisi = len(self.data['aciklamalar'])  # Not sayısını hesapla
+            self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
 
-                for idx, not_ in enumerate(self.data['aciklamalar']):
-                    btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
-                    btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
-                    self.notlarLayout.addWidget(btn)
+            for idx, not_ in enumerate(self.data['aciklamalar']):
+                btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
+                btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
+                self.notlarLayout.addWidget(btn)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
 
