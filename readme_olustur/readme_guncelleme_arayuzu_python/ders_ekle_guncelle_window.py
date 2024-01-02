@@ -88,6 +88,12 @@ class DersEkleGuncelleWindow(QDialog):
                             widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
             self.dersSayisiLabel.setText(f'Toplam {len(self.data["dersler"])} ders')  # Ders sayısını etikette güncelle
+    def jsonDosyasiniYukle(self):
+        try:
+            with open(JSON_PATH, 'r', encoding='utf-8') as file:
+                return json.load(file)
+        except:
+            return json.loads('{}')
     def dersleriYukle(self):
         try:
             # Öncelikle Türkçe locale'i dene
@@ -102,39 +108,49 @@ class DersEkleGuncelleWindow(QDialog):
                 # Varsayılan locale'e geri dön
                 locale.setlocale(locale.LC_ALL, '')
         try:
+            self.data = self.jsonDosyasiniYukle()
+            if 'dersler' not in self.data:
+                self.data['dersler'] = []
+            if 'bolum_adi' not in self.data:
+                self.data['bolum_adi'] = 'Dersler'
+            if 'bolum_aciklamasi' not in self.data:
+                self['bolum_aciklamasi'] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
+            if 'ders_klasoru_bulunamadi_mesaji' not in self.data:
+                self.data['ders_klasoru_bulunamadi_mesaji'] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
+            if "guncel_olmayan_ders_aciklamasi" not in self.data:
+                self.data["guncel_olmayan_ders_aciklamasi"] = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
+                
 
-            with open(JSON_PATH, 'r', encoding='utf-8') as file:
-                self.data = json.load(file)
-                ders_sayisi = len(self.data['dersler'])  # Ders sayısını hesapla
-                self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
+            ders_sayisi = len(self.data['dersler'])  # Ders sayısını hesapla
+            self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
 
-                # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
-                self.sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
-                for ders in self.sorted_dersler:
-                    # Her ders için bir satır oluştur
-                    dersSatiri = QHBoxLayout()
+            # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
+            self.sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
+            for ders in self.sorted_dersler:
+                # Her ders için bir satır oluştur
+                dersSatiri = QHBoxLayout()
 
-                    # Büyük ders butonu
-                    btnDers = QPushButton(f"{ders['ad']}", self.scrollWidget)
-                    btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
-                    btnDers.setStyleSheet("QPushButton {background-color: blue; color: white;}")
-                    btnDers.setMinimumWidth(350)
-                    dersSatiri.addWidget(btnDers)
+                # Büyük ders butonu
+                btnDers = QPushButton(f"{ders['ad']}", self.scrollWidget)
+                btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
+                btnDers.setStyleSheet("QPushButton {background-color: blue; color: white;}")
+                btnDers.setMinimumWidth(350)
+                dersSatiri.addWidget(btnDers)
 
-                    # Kaynak Ekle butonu
-                    btnKaynakEkle = QPushButton("Kaynak Ekle/Güncelle", self.scrollWidget)
-                    btnKaynakEkle.clicked.connect(lambda checked, a=ders: self.kaynakEkle(a))
-                    btnKaynakEkle.setStyleSheet("background-color: green;")  # Yeşil renk, küçültülmüş genişlik
-                    dersSatiri.addWidget(btnKaynakEkle)
+                # Kaynak Ekle butonu
+                btnKaynakEkle = QPushButton("Kaynak Ekle/Güncelle", self.scrollWidget)
+                btnKaynakEkle.clicked.connect(lambda checked, a=ders: self.kaynakEkle(a))
+                btnKaynakEkle.setStyleSheet("background-color: green;")  # Yeşil renk, küçültülmüş genişlik
+                dersSatiri.addWidget(btnKaynakEkle)
 
-                    # Öneri Ekle butonu
-                    btnOneriEkle = QPushButton("Öneri Ekle/Güncelle", self.scrollWidget)
-                    btnOneriEkle.clicked.connect(lambda checked, a=ders: self.oneriEkle(a))
-                    btnOneriEkle.setStyleSheet("background-color: red;")  # Kırmızı renk, küçültülmüş genişlik
-                    dersSatiri.addWidget(btnOneriEkle)
+                # Öneri Ekle butonu
+                btnOneriEkle = QPushButton("Öneri Ekle/Güncelle", self.scrollWidget)
+                btnOneriEkle.clicked.connect(lambda checked, a=ders: self.oneriEkle(a))
+                btnOneriEkle.setStyleSheet("background-color: red;")  # Kırmızı renk, küçültülmüş genişlik
+                dersSatiri.addWidget(btnOneriEkle)
 
-                    # Ders satırını dersler layout'una ekle
-                    self.derslerLayout.addLayout(dersSatiri)
+                # Ders satırını dersler layout'una ekle
+                self.derslerLayout.addLayout(dersSatiri)
 
 
         except Exception as e:
