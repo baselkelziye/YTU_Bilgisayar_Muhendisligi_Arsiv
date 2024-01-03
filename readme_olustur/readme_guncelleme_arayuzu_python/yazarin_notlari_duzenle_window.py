@@ -1,8 +1,8 @@
 import sys
 import json
-from PyQt5.QtWidgets import QDialog,QLineEdit,QVBoxLayout, QInputDialog,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
+from PyQt5.QtWidgets import QDialog,QVBoxLayout, QInputDialog,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
 from PyQt5.QtCore import Qt
-JSON_DOSYASI = '../yazarin_notlari.json'
+from degiskenler import YAZARIN_NOTLARI_JSON_PATH, ACIKLAMALAR, BASLIK
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -58,13 +58,13 @@ class YazarinNotlariWindow(QDialog):
                 if isinstance(widget, QPushButton):
                     widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.notSayisiLabel.setText(f'Toplam {len(self.data["aciklamalar"])} not')  # Not sayısını etikette güncelle
+            self.notSayisiLabel.setText(f'Toplam {len(self.data[ACIKLAMALAR])} not')  # Not sayısını etikette güncelle
     def searchNotes(self, query):
         if not query:
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, not_ in enumerate(self.data['aciklamalar']):
+        for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
             widget = self.notlarLayout.itemAt(idx).widget()
             if isinstance(widget, QPushButton):
                 if query.lower() in not_.lower():
@@ -72,7 +72,7 @@ class YazarinNotlariWindow(QDialog):
                     size += 1
                 else:
                     widget.hide()
-        if size == len(self.data['aciklamalar']):
+        if size == len(self.data[ACIKLAMALAR]):
             self.clearFilters(is_clicked=False)
             return
         self.notSayisiLabel.setText(f'{size} not bulundu')
@@ -82,21 +82,21 @@ class YazarinNotlariWindow(QDialog):
             self.clearFiltersButton.hide()
     def jsonDosyasiniYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
+            with open(YAZARIN_NOTLARI_JSON_PATH, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
             return json.loads('{}')
     def notlariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
-            if 'aciklamalar' not in self.data:
-                self.data['aciklamalar'] = []
-            if 'baslik' not in self.data:
-                self.data['baslik'] = 'Yazarın Notları'
-            not_sayisi = len(self.data['aciklamalar'])  # Not sayısını hesapla
+            if ACIKLAMALAR not in self.data:
+                self.data[ACIKLAMALAR] = []
+            if BASLIK not in self.data:
+                self.data[BASLIK] = 'Yazarın Notları'
+            not_sayisi = len(self.data[ACIKLAMALAR])  # Not sayısını hesapla
             self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
 
-            for idx, not_ in enumerate(self.data['aciklamalar']):
+            for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
                 btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
                 self.notlarLayout.addWidget(btn)
@@ -143,7 +143,7 @@ class NotDuzenleWindow(QDialog):
         # QTextEdit ile çok satırlı metin alanı oluştur
         self.notInput = QTextEdit(self)
         if self.idx is not None:  # Düzenleme modunda
-            self.notInput.setText(self.data['aciklamalar'][self.idx])
+            self.notInput.setText(self.data[ACIKLAMALAR][self.idx])
         self.layout.addWidget(self.notInput)
 
         # Butonları yan yana koymak için QHBoxLayout kullan
@@ -187,12 +187,12 @@ class NotDuzenleWindow(QDialog):
         if emin_mi == QMessageBox.Yes:
             yeni_not = self.notInput.toPlainText().strip()
             if self.idx is None:  # Ekleme modunda
-                self.data['aciklamalar'].append(yeni_not)
+                self.data[ACIKLAMALAR].append(yeni_not)
             else:  # Düzenleme modunda
-                self.data['aciklamalar'][self.idx] = yeni_not
+                self.data[ACIKLAMALAR][self.idx] = yeni_not
 
             try:
-                with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
+                with open(YAZARIN_NOTLARI_JSON_PATH, 'w',encoding='utf-8') as file:
                     json.dump(self.data, file, ensure_ascii=False, indent=4)
                 QMessageBox.information(self, 'Başarılı', 'Yazarın notları güncellendi!')
                 self.parent.notlariYenile()
@@ -204,12 +204,12 @@ class NotDuzenleWindow(QDialog):
         if self.idx is not None:
             emin_mi = QMessageBox.question(self, 'Onay', 'Notu silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
             if emin_mi == QMessageBox.Yes:
-                del self.data['aciklamalar'][self.idx]
+                del self.data[ACIKLAMALAR][self.idx]
                 self.kaydetVeKapat()
     def kaydetVeKapat(self):
         # Değişiklikleri kaydet ve pencereyi kapat
         try:
-            with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
+            with open(YAZARIN_NOTLARI_JSON_PATH, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.notlariYenile()
