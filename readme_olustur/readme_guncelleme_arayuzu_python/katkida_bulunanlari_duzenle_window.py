@@ -6,7 +6,7 @@ from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
 from threadler import KatkiKaydetThread
 from PyQt5.QtCore import Qt
 from progress_dialog import CustomProgressDialog
-JSON_YOLU = "../katkida_bulunanlar.json"
+from degiskenler import KATKIDA_BULUNANLAR_JSON_PATH, KATKIDA_BULUNANLAR, AD, GITHUB_LINK
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -59,16 +59,16 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, katkida_bulunan in enumerate(self.data['katkida_bulunanlar']):
+        for idx, katkida_bulunan in enumerate(self.data[KATKIDA_BULUNANLAR]):
             widget = self.layout.itemAt(idx + 1).widget()
-            katkida_bulunan_adi = katkida_bulunan['ad']
+            katkida_bulunan_adi = katkida_bulunan[AD]
             if isinstance(widget, QPushButton):
                 if query.lower() in katkida_bulunan_adi.lower():
                     widget.show()
                     size += 1
                 else:
                     widget.hide()
-        if size == len(self.data['katkida_bulunanlar']):
+        if size == len(self.data[KATKIDA_BULUNANLAR]):
             self.clearFilters(is_clicked=False)
             return
         self.katkidaBulunanSayisiLabel.setText(f'{size} sonuç bulundu.')
@@ -93,10 +93,10 @@ class KatkidaBulunanGuncelleWindow(QDialog):
                 if isinstance(widget, QPushButton):
                     widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.katkidaBulunanSayisiLabel.setText(f'Toplam {len(self.data["katkida_bulunanlar"])} katkıda bulunan var.')  # Not sayısını etikette güncelle
+            self.katkidaBulunanSayisiLabel.setText(f'Toplam {len(self.data[KATKIDA_BULUNANLAR])} katkıda bulunan var.')  # Not sayısını etikette güncelle
     def jsonDosyasiniYukle(self):
         try:
-            with open(JSON_YOLU, 'r', encoding='utf-8') as file:
+            with open(KATKIDA_BULUNANLAR_JSON_PATH, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except FileNotFoundError:
             return json.loads('{}')
@@ -104,21 +104,21 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         # JSON dosyasını oku ve butonları oluştur
         self.data = self.jsonDosyasiniYukle()
         try:
-            if 'katkida_bulunanlar' not in self.data:
-                self.data['katkida_bulunanlar'] = []
-            self.data['katkida_bulunanlar'] = sorted(
-                        [kisi for kisi in self.data['katkida_bulunanlar'] if kisi['ad'].strip() and kisi['github_link'].strip()],
-                        key=lambda kisi: locale.strxfrm(kisi['ad'].lower())
+            if KATKIDA_BULUNANLAR not in self.data:
+                self.data[KATKIDA_BULUNANLAR] = []
+            self.data[KATKIDA_BULUNANLAR] = sorted(
+                        [kisi for kisi in self.data[KATKIDA_BULUNANLAR] if kisi[AD].strip() and kisi[GITHUB_LINK].strip()],
+                        key=lambda kisi: locale.strxfrm(kisi[AD].lower())
                     )
 
 
-            katkidaBulunanSayisi = len(self.data['katkida_bulunanlar'])  # Toplam katkıda bulunan sayısı
+            katkidaBulunanSayisi = len(self.data[KATKIDA_BULUNANLAR])  # Toplam katkıda bulunan sayısı
             self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
             self.katkidaBulunanSayisiLabel.setFixedHeight(20)
             self.layout.addWidget(self.katkidaBulunanSayisiLabel)
 
-            for kisi in self.data['katkida_bulunanlar']:
-                btn = QPushButton(kisi['ad'], self)
+            for kisi in self.data[KATKIDA_BULUNANLAR]:
+                btn = QPushButton(kisi[AD], self)
                 btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
                 self.layout.addWidget(btn)
         except Exception as e:
@@ -160,10 +160,10 @@ class KatkidaBulunanDuzenleWindow(QDialog):
 
         # Ad ve GitHub Linki için giriş alanları
         self.ad_label = QLabel('Ad:')
-        self.ad_input = QLineEdit(self.kisi['ad'])
+        self.ad_input = QLineEdit(self.kisi[AD])
         self.github_label = QLabel('GitHub Adı:')
         # Örnek bir GitHub linki
-        github_link = self.kisi['github_link']
+        github_link = self.kisi[GITHUB_LINK]
 
         # URL'yi ayrıştır
         parsed_link = urlparse(github_link)
@@ -200,20 +200,20 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.show()
     def sil(self):
         # Silme işlemini onayla
-        emin_mi = QMessageBox.question(self, 'Onay', f'{self.kisi["ad"]} adlı kişiyi silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
+        emin_mi = QMessageBox.question(self, 'Onay', f'{self.kisi[AD]} adlı kişiyi silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
             try:
                 # Kişiyi data listesinden sil
-                index = self.data['katkida_bulunanlar'].index(self.kisi)  # Kişinin index'ini bul
-                del self.data['katkida_bulunanlar'][index]  # Kişiyi listeden sil
+                index = self.data[KATKIDA_BULUNANLAR].index(self.kisi)  # Kişinin index'ini bul
+                del self.data[KATKIDA_BULUNANLAR][index]  # Kişiyi listeden sil
 
                 # JSON dosyasını güncelle (Eğer dosyaya kaydedilmesi gerekiyorsa)
-                with open(JSON_YOLU, 'w',encoding='utf-8') as file:
+                with open(KATKIDA_BULUNANLAR_JSON_PATH, 'w',encoding='utf-8') as file:
                     json.dump(self.data, file, indent=4, ensure_ascii=False)
 
                 # Ana penceredeki listeyi yenile
                 self.parent.butonlariYenile()
-                QMessageBox.information(self, 'Silindi', f'{self.kisi["ad"]} adlı kişi başarıyla silindi.')
+                QMessageBox.information(self, 'Silindi', f'{self.kisi[AD]} adlı kişi başarıyla silindi.')
                 self.close()
 
             except ValueError:
@@ -234,7 +234,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
             ad = self.ad_input.text()
             github_kullanici_adi = self.github_input.text()
 
-            self.thread = KatkiKaydetThread(self.kisi, ad, github_kullanici_adi, self.data, JSON_YOLU,self)
+            self.thread = KatkiKaydetThread(self.kisi, ad, github_kullanici_adi, self.data, KATKIDA_BULUNANLAR_JSON_PATH,self)
             self.thread.finished.connect(self.islemSonucu)
             # ProgressDialog'u göster
             self.progressDialog.show()

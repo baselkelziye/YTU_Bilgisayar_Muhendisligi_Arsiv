@@ -4,11 +4,14 @@ from PyQt5.QtWidgets import (QDialog,QInputDialog, QVBoxLayout, QPushButton, QMe
 import locale
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
-JSON_PATH = '../dersler.json'
-HOCA_JSON_PATH = '../hocalar.json'
+from degiskenler import (HOCALAR,ONERILER,DERSE_DAIR_ONERILER,DERSLER,AD,
+                          BOLUM_ACIKLAMASI, BOLUM_ADI, DERS_KLASORU_BULUNAMADI_MESAJI,
+                            GUNCEL_OLMAYAN_DERS_ACIKLAMASI,DERSLER_JSON_PATH ,HOCALAR_JSON_PATH,
+                              FAYDALI_OLABILECEK_KAYNAKLAR, YIL, DONEM, TIP, YOK, 
+                              DERSI_VEREN_HOCALAR, GUNCEL_MI, ONERI_SAHIBI, PROF_DR, DOC_DR, DR)
 
 # Hoca adlarını ve kısaltmalarını hazırla
-unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3}
+unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
 def hoca_sirala(hoca):
     ad = hoca[0].strip()
     unvan = next((u for u in unvanlar if ad.startswith(u)), None)
@@ -61,7 +64,7 @@ class DersEkleGuncelleWindow(QDialog):
         for idx, ders in enumerate(self.sorted_dersler):
             layout = self.derslerLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in ders['ad'].lower()
+                match = query.lower() in ders[AD].lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -87,10 +90,10 @@ class DersEkleGuncelleWindow(QDialog):
                         if widget:
                             widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.dersSayisiLabel.setText(f'Toplam {len(self.data["dersler"])} ders')  # Ders sayısını etikette güncelle
+            self.dersSayisiLabel.setText(f'Toplam {len(self.data[DERSLER])} ders')  # Ders sayısını etikette güncelle
     def jsonDosyasiniYukle(self):
         try:
-            with open(JSON_PATH, 'r', encoding='utf-8') as file:
+            with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except:
             return {}
@@ -109,29 +112,29 @@ class DersEkleGuncelleWindow(QDialog):
                 locale.setlocale(locale.LC_ALL, '')
         try:
             self.data = self.jsonDosyasiniYukle()
-            if 'dersler' not in self.data:
-                self.data['dersler'] = []
-            if 'bolum_adi' not in self.data:
-                self.data['bolum_adi'] = 'Dersler'
-            if 'bolum_aciklamasi' not in self.data:
-                self.data['bolum_aciklamasi'] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
-            if 'ders_klasoru_bulunamadi_mesaji' not in self.data:
-                self.data['ders_klasoru_bulunamadi_mesaji'] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
-            if "guncel_olmayan_ders_aciklamasi" not in self.data:
-                self.data["guncel_olmayan_ders_aciklamasi"] = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
+            if DERSLER not in self.data:
+                self.data[DERSLER] = []
+            if BOLUM_ADI not in self.data:
+                self.data[BOLUM_ADI] = 'Dersler'
+            if BOLUM_ACIKLAMASI not in self.data:
+                self.data[BOLUM_ACIKLAMASI] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
+            if DERS_KLASORU_BULUNAMADI_MESAJI not in self.data:
+                self.data[DERS_KLASORU_BULUNAMADI_MESAJI] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
+            if GUNCEL_OLMAYAN_DERS_ACIKLAMASI not in self.data:
+                self.data[GUNCEL_OLMAYAN_DERS_ACIKLAMASI] = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
                 
 
-            ders_sayisi = len(self.data['dersler'])  # Ders sayısını hesapla
+            ders_sayisi = len(self.data[DERSLER])  # Ders sayısını hesapla
             self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
 
             # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
-            self.sorted_dersler = sorted(self.data['dersler'], key=lambda d: locale.strxfrm(d['ad'].lower()))
+            self.sorted_dersler = sorted(self.data[DERSLER], key=lambda d: locale.strxfrm(d[AD].lower()))
             for ders in self.sorted_dersler:
                 # Her ders için bir satır oluştur
                 dersSatiri = QHBoxLayout()
 
                 # Büyük ders butonu
-                btnDers = QPushButton(f"{ders['ad']}", self.scrollWidget)
+                btnDers = QPushButton(f"{ders[AD]}", self.scrollWidget)
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
                 btnDers.setStyleSheet("QPushButton {background-color: blue; color: white;}")
                 btnDers.setMinimumWidth(350)
@@ -158,11 +161,11 @@ class DersEkleGuncelleWindow(QDialog):
     
     def oneriEkle(self, ders):
         # Öneri ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
-        self.oneriDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, 'derse_dair_oneriler', self)
+        self.oneriDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, DERSE_DAIR_ONERILER, self)
         self.oneriDuzenleyiciPenceresi.show()
     def kaynakEkle(self, ders):
         # Kaynak ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
-        self.kaynakDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, 'faydali_olabilecek_kaynaklar', self)
+        self.kaynakDuzenleyiciPenceresi = KaynakVeOneriDuzenleyici(ders, FAYDALI_OLABILECEK_KAYNAKLAR, self)
         self.kaynakDuzenleyiciPenceresi.show()
     def dersEkle(self):
         self.dersDuzenlemePenceresi = DersDuzenlemeWindow(None, self.data, self)
@@ -204,10 +207,10 @@ class KaynakVeOneriDuzenleyici(QDialog):
         self.initUI()
 
     def initUI(self):
-        if self.tur == 'faydali_olabilecek_kaynaklar':
-            self.setWindowTitle(f"{self.ders['ad']} - Kaynaklar")
+        if self.tur == FAYDALI_OLABILECEK_KAYNAKLAR:
+            self.setWindowTitle(f"{self.ders[AD]} - Kaynaklar")
         else:
-            self.setWindowTitle(f"{self.ders['ad']} - {self.tur.replace('_', ' ').title()}")
+            self.setWindowTitle(f"{self.ders[AD]} - {self.tur.replace('_', ' ').title()}")
 
         self.layout = QVBoxLayout(self)
 
@@ -225,11 +228,11 @@ class KaynakVeOneriDuzenleyici(QDialog):
     def elemanlariYukle(self):
         if self.tur in self.ders:
             for j, eleman in enumerate(self.ders[self.tur]):
-                if self.tur == 'derse_dair_oneriler':
-                    if 'oneriler' in eleman:
-                        for i, oneri in enumerate(eleman['oneriler']):
+                if self.tur == DERSE_DAIR_ONERILER:
+                    if ONERILER in eleman:
+                        for i, oneri in enumerate(eleman[ONERILER]):
                             satirLayout = QHBoxLayout()
-                            label = QLabel(f"Öneri Sahibi: {eleman['oneri_sahibi']}", self)
+                            label = QLabel(f"Öneri Sahibi: {eleman[ONERI_SAHIBI]}", self)
                             satirLayout.addWidget(label)
 
                             # Bilgi (mesaj) butonu
@@ -265,22 +268,22 @@ class KaynakVeOneriDuzenleyici(QDialog):
 
         if emin_mi == QMessageBox.Yes:
             # JSON dosyasını aç ve güncelle
-            with open(JSON_PATH, 'r+', encoding='utf-8') as file:
+            with open(DERSLER_JSON_PATH, 'r+', encoding='utf-8') as file:
                 data = json.load(file)
 
                 # İlgili dersi data içinden bul
-                ders = next((d for d in data['dersler'] if d['ad'] == self.ders['ad']), None)
+                ders = next((d for d in data[DERSLER] if d[AD] == self.ders[AD]), None)
                 if ders and self.tur in ders:
-                    if self.tur == 'derse_dair_oneriler' and sahip_index is not None and oneri_index is not None:
+                    if self.tur == DERSE_DAIR_ONERILER and sahip_index is not None and oneri_index is not None:
                         # İlgili öneriyi sil
-                        del ders[self.tur][sahip_index]['oneriler'][oneri_index]
-                        if len(ders[self.tur][sahip_index]['oneriler']) < 1:
+                        del ders[self.tur][sahip_index][ONERILER][oneri_index]
+                        if len(ders[self.tur][sahip_index][ONERILER]) < 1:
                             # Öneri sahibinin önerisi kalmadı, öneri sahibini de sil
                             del ders[self.tur][sahip_index]
                             if len(ders[self.tur]) < 1:
                                 # Öneri kalmadı, alanı sil
                                 del ders[self.tur]
-                    elif self.tur != 'derse_dair_oneriler' and oneri_index is not None:
+                    elif self.tur != DERSE_DAIR_ONERILER and oneri_index is not None:
                         # İlgili kaynağı sil
                         del ders[self.tur][oneri_index]
                         if len(ders[self.tur]) < 1:
@@ -300,7 +303,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
             self.parent.dersleriYenile()
 
             # Ebeveynin veri setinde güncellenmiş ders bilgisini bul
-            guncellenmisDers = next((ders for ders in self.parent.data['dersler'] if ders['ad'] == self.ders['ad']), None)
+            guncellenmisDers = next((ders for ders in self.parent.data[DERSLER] if ders[AD] == self.ders[AD]), None)
             if guncellenmisDers:
                 # self.ders'i güncellenmiş bilgiyle değiştir
                 self.ders = guncellenmisDers
@@ -374,12 +377,12 @@ class YeniElemanEklemeDialog(QDialog):
         self.layout = QVBoxLayout(self)
 
         # Öneri sahibi ve öneri için etiket ve metin alanı
-        if self.tur == 'derse_dair_oneriler':
+        if self.tur == DERSE_DAIR_ONERILER:
             self.label = QLabel('Öneri Sahibi:', self)
             self.layout.addWidget(self.label)
             self.sahibiEdit = QLineEdit(self)
             if self.mevcutEleman:
-                self.sahibiEdit.setText(self.mevcutEleman['oneri_sahibi'])
+                self.sahibiEdit.setText(self.mevcutEleman[ONERI_SAHIBI])
             self.layout.addWidget(self.sahibiEdit)
             self.label = QLabel('Öneri:', self)
         else:
@@ -388,8 +391,8 @@ class YeniElemanEklemeDialog(QDialog):
 
         self.layout.addWidget(self.label)
         self.metinEdit = QTextEdit(self)
-        if self.mevcutEleman and self.tur == 'derse_dair_oneriler':
-            self.metinEdit.setText(self.mevcutEleman['oneriler'][self.oneri_index])
+        if self.mevcutEleman and self.tur == DERSE_DAIR_ONERILER:
+            self.metinEdit.setText(self.mevcutEleman[ONERILER][self.oneri_index])
         else:
             self.metinEdit.setText(self.mevcutEleman)
         self.layout.addWidget(self.metinEdit)
@@ -400,66 +403,66 @@ class YeniElemanEklemeDialog(QDialog):
         self.layout.addWidget(self.kaydetBtn)
 
     def kaydet(self):
-        oneriSahibi = self.sahibiEdit.text() if self.tur == 'derse_dair_oneriler' else None
+        oneriSahibi = self.sahibiEdit.text() if self.tur == DERSE_DAIR_ONERILER else None
         metin = self.metinEdit.toPlainText()
-        if (not oneriSahibi and self.tur == 'derse_dair_oneriler') or not metin:
+        if (not oneriSahibi and self.tur == DERSE_DAIR_ONERILER) or not metin:
             QMessageBox.warning(self, 'Hata', 'Öneri sahibi ve öneri boş olamaz!')
             return
         emin_mi = QMessageBox.question(self, 'Onay', f'Değişiklikleri Kaydetmek İstediğine Emin Misin?', QMessageBox.Yes | QMessageBox.No)
         if emin_mi != QMessageBox.Yes:
             return
         # JSON dosyasını aç ve güncelle
-        with open(JSON_PATH, 'r+', encoding='utf-8') as file:
+        with open(DERSLER_JSON_PATH, 'r+', encoding='utf-8') as file:
             data = json.load(file)
 
-            ders = next((ders for ders in data['dersler'] if ders['ad'] == self.ders['ad']), None)
+            ders = next((ders for ders in data[DERSLER] if ders[AD] == self.ders[AD]), None)
             if not ders:
                 print("Belirtilen adla ders bulunamadı!")
                 return  # Ders bulunamazsa
-            if self.tur != 'derse_dair_oneriler':
+            if self.tur != DERSE_DAIR_ONERILER:
                 # Faydalı olabilecek kaynaklar için işlemler
                 if self.oneri_index is None:
                     # Yeni kaynak ekle
-                    if "faydali_olabilecek_kaynaklar" in ders:
-                        ders['faydali_olabilecek_kaynaklar'].append(metin)
+                    if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
+                        ders[FAYDALI_OLABILECEK_KAYNAKLAR].append(metin)
                     else:
-                        ders['faydali_olabilecek_kaynaklar'] = [metin]
+                        ders[FAYDALI_OLABILECEK_KAYNAKLAR] = [metin]
                 else:
                     # Mevcut kaynağı güncelle
-                    ders['faydali_olabilecek_kaynaklar'][self.oneri_index] = metin
+                    ders[FAYDALI_OLABILECEK_KAYNAKLAR][self.oneri_index] = metin
             else:
                 # Derse dair öneriler için işlemler
                 if oneriSahibi:
                     # Mevcut öneri sahibi değerini al
-                    mevcutSahibi = self.ders['derse_dair_oneriler'][self.sahip_index]['oneri_sahibi'] if self.sahip_index is not None else None
+                    mevcutSahibi = self.ders[DERSE_DAIR_ONERILER][self.sahip_index][ONERI_SAHIBI] if self.sahip_index is not None else None
 
                     if mevcutSahibi != oneriSahibi:
                         # Öneri sahibi değişti, eski öneriyi sil
                         if self.sahip_index is not None and self.oneri_index is not None:
-                            del ders['derse_dair_oneriler'][self.sahip_index]['oneriler'][self.oneri_index]
-                            if len(ders['derse_dair_oneriler'][self.sahip_index]['oneriler']) < 1:
-                                del ders['derse_dair_oneriler'][self.sahip_index]
+                            del ders[DERSE_DAIR_ONERILER][self.sahip_index][ONERILER][self.oneri_index]
+                            if len(ders[DERSE_DAIR_ONERILER][self.sahip_index][ONERILER]) < 1:
+                                del ders[DERSE_DAIR_ONERILER][self.sahip_index]
                         # Yeni sahip için öneriyi ekle veya mevcut sahibi bul
                         if "derse_dair_oneriler" in ders:
-                            matched = next((o for o in ders['derse_dair_oneriler'] if o['oneri_sahibi'] == oneriSahibi), None)
+                            matched = next((o for o in ders[DERSE_DAIR_ONERILER] if o[ONERI_SAHIBI] == oneriSahibi), None)
                         else:
-                            ders['derse_dair_oneriler'] = []
+                            ders[DERSE_DAIR_ONERILER] = []
                             matched = None
                         if not matched:
                             # Yeni sahibi ve öneriyi ekle
-                            matched = {'oneri_sahibi': oneriSahibi, 'oneriler': []}
-                            ders['derse_dair_oneriler'].append(matched)
+                            matched = {ONERI_SAHIBI: oneriSahibi, ONERILER: []}
+                            ders[DERSE_DAIR_ONERILER].append(matched)
                     else:
                         # Öneri sahibi aynı, mevcut sahibi kullan
-                        matched = ders['derse_dair_oneriler'][self.sahip_index]
+                        matched = ders[DERSE_DAIR_ONERILER][self.sahip_index]
 
                     # Öneri ekle veya güncelle
                     if self.oneri_index is None or mevcutSahibi != oneriSahibi:
                         # Yeni öneri ekle
-                        matched['oneriler'].append(metin)
+                        matched[ONERILER].append(metin)
                     else:
                         # Mevcut öneriyi güncelle
-                        matched['oneriler'][self.oneri_index] = metin
+                        matched[ONERILER][self.oneri_index] = metin
             # Dosyayı baştan aç, güncellenmiş veriyi yaz ve kapat
             file.seek(0)
             json.dump(data, file, ensure_ascii=False, indent=4)
@@ -485,7 +488,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # Ders adı için alan
         self.layout.addWidget(QLabel('Ders Adı:'))
-        self.adInput = QLineEdit(self.ders['ad'] if self.ders else '')
+        self.adInput = QLineEdit(self.ders[AD] if self.ders else '')
         self.layout.addWidget(self.adInput)
 
         # Ders yılı için alan
@@ -521,14 +524,14 @@ class DersDuzenlemeWindow(QDialog):
         # Dersi veren hocalar için ComboBox'lar
         # Mevcut hocaları yükle
         try:
-            with open(HOCA_JSON_PATH, 'r',encoding='utf-8') as file:
+            with open(HOCALAR_JSON_PATH, 'r',encoding='utf-8') as file:
                 hoca_data = json.load(file)
         except:
-            hoca_data = {'hocalar': []}
+            hoca_data = {HOCALAR: []}
         hoca_listesi = [
-            (h['ad'], hoca_kisaltma_olustur(h['ad']))
-            for h in hoca_data['hocalar']
-            if h['ad'].strip() and hoca_kisaltma_olustur(h['ad']).strip()
+            (h[AD], hoca_kisaltma_olustur(h[AD]))
+            for h in hoca_data[HOCALAR]
+            if h[AD].strip() and hoca_kisaltma_olustur(h[AD]).strip()
         ]
 
         self.hoca_listesi = sorted(hoca_listesi, key=hoca_sirala)
@@ -582,7 +585,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # Eğer kısaltma verildiyse, onu ComboBox'da seç
         if hoca:
-            comboBox.setCurrentText(f"{hoca['ad']} ({hoca['kisaltma']})")
+            comboBox.setCurrentText(f"{hoca[AD]} ({hoca['kisaltma']})")
 
         # Sil (-) butonu
         silBtn = QPushButton('Dersi Veren Hocayı Sil', self)
@@ -624,7 +627,7 @@ class DersDuzenlemeWindow(QDialog):
             QMessageBox.warning(self, 'Hata', 'Aynı hocayı birden fazla kez seçemezsiniz!')
             return
         # Seçili hocaların kısaltmalarını al
-        hocalar = [{'kisaltma': combo.currentData(), 'ad': combo.currentText().split(' (')[0]}
+        hocalar = [{'kisaltma': combo.currentData(), AD: combo.currentText().split(' (')[0]}
                    for combo, _ in self.hocalarComboBoxlar]
     
         # Ders adı boş olamaz kontrolü
@@ -633,26 +636,26 @@ class DersDuzenlemeWindow(QDialog):
             return
 
         # Mevcut dersleri kontrol et (yeni ders ekleniyorsa)
-        if not self.ders and any(d['ad'].lower() == ad.lower() for d in self.data['dersler']):
+        if not self.ders and any(d[AD].lower() == ad.lower() for d in self.data[DERSLER]):
             QMessageBox.warning(self, 'Hata', 'Bu isimde bir ders zaten var!')
             return
 
         # Dersi bulma ve güncelleme
         if self.ders:  # Düzenleme modunda
             # Mevcut dersin referansını bulun
-            mevcut_ders = next((d for d in self.data['dersler'] if d == self.ders), None)
+            mevcut_ders = next((d for d in self.data[DERSLER] if d == self.ders), None)
             if mevcut_ders:
                 # Yalnızca belirli alanları güncelleyin
-                mevcut_ders["ad"] = ad
-                mevcut_ders["yil"] = yil
-                mevcut_ders["donem"] = donem if donem != 'Yok' else ''
-                mevcut_ders["tip"] = tip
-                mevcut_ders["dersi_veren_hocalar"] = hocalar
-                mevcut_ders["guncel_mi"] = guncel_mi
+                mevcut_ders[AD] = ad
+                mevcut_ders[YIL] = yil
+                mevcut_ders[DONEM] = donem if donem != YOK else ''
+                mevcut_ders[TIP] = tip
+                mevcut_ders[DERSI_VEREN_HOCALAR] = hocalar
+                mevcut_ders[GUNCEL_MI] = guncel_mi
         else:  # Ekleme modunda
             # Ders bilgilerini güncelle veya yeni ders ekle
-            ders_data = {"ad": ad, "yil": yil, "donem": donem, "tip": tip, "dersi_veren_hocalar": hocalar, "guncel_mi": guncel_mi}
-            self.data['dersler'].append(ders_data)
+            ders_data = {AD: ad, YIL: yil, DONEM: donem, TIP: tip, DERSI_VEREN_HOCALAR: hocalar, GUNCEL_MI: guncel_mi}
+            self.data[DERSLER].append(ders_data)
     
 
         self.hocaDersleriniGuncelle(ad, hocalar)
@@ -664,24 +667,24 @@ class DersDuzenlemeWindow(QDialog):
             QMessageBox.warning(self, 'Hata', 'Silinecek ders bulunamadı!')
             return
 
-        emin_mi = QMessageBox.question(self, 'Onay', f'{self.ders["ad"]} dersini silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
+        emin_mi = QMessageBox.question(self, 'Onay', f'{self.ders[AD]} dersini silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
-            self.data['dersler'].remove(self.ders)
+            self.data[DERSLER].remove(self.ders)
             self.kaydetVeKapat()
     def hocaDersleriniGuncelle(self, ders_adi, veren_hocalar):
         # JSON dosyasını aç ve verileri yükle
-        json_dosyasi = Path(HOCA_JSON_PATH)
+        json_dosyasi = Path(HOCALAR_JSON_PATH)
         if not json_dosyasi.exists():
             print("Hoca JSON dosyası bulunamadı.")
             return
 
         with open(json_dosyasi, 'r', encoding='utf-8') as file:
             data = json.load(file)
-        hoca_adlari = [hoca["ad"] for hoca in veren_hocalar]
+        hoca_adlari = [hoca[AD] for hoca in veren_hocalar]
         # Hocalar listesinde dolaş
-        for hoca in data.get("hocalar", []):
-            hoca_adi = hoca.get("ad")
-            mevcut_dersler = hoca.get("dersler", [])
+        for hoca in data.get(HOCALAR, []):
+            hoca_adi = hoca.get(AD)
+            mevcut_dersler = hoca.get(DERSLER, [])
 
             if hoca_adi in hoca_adlari:
                 # Eğer hoca bu dersi zaten veriyorsa, devam et
@@ -693,7 +696,7 @@ class DersDuzenlemeWindow(QDialog):
                     mevcut_dersler.remove(ders_adi)
 
             # Güncellenmiş ders listesini hoca profiline ekle
-            hoca["dersler"] = mevcut_dersler
+            hoca[DERSLER] = mevcut_dersler
 
         # Değişiklikleri JSON dosyasına yaz
         with open(json_dosyasi, 'w', encoding='utf-8') as file:
@@ -701,7 +704,7 @@ class DersDuzenlemeWindow(QDialog):
     def kaydetVeKapat(self):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
-            with open(JSON_PATH, 'w',encoding='utf-8') as file:
+            with open(DERSLER_JSON_PATH, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.dersleriYenile()

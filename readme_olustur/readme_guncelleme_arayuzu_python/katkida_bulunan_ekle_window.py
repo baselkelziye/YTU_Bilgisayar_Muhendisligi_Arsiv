@@ -1,12 +1,9 @@
-import sys
-import json
 from PyQt5.QtWidgets import (QLineEdit, QDialog, QPushButton, QVBoxLayout, 
                              QDesktopWidget, QLabel, QMessageBox)
 from threadler import KatkiEkleThread  
 from progress_dialog import CustomProgressDialog
-import requests  # requests modülünü içe aktar
+from degiskenler import KATKIDA_BULUNANLAR_JSON_PATH
 
-JSON_DOSYASI = '../katkida_bulunanlar.json'
 
 class KatkidaBulunanEkleWindow(QDialog):
     def __init__(self, parent):
@@ -55,7 +52,7 @@ class KatkidaBulunanEkleWindow(QDialog):
         # Thread örneğini oluştur
         ad = self.name_input.text()
         github_kullanici_adi = self.github_input.text()
-        self.thread = KatkiEkleThread(ad, github_kullanici_adi, JSON_DOSYASI,self)
+        self.thread = KatkiEkleThread(ad, github_kullanici_adi, KATKIDA_BULUNANLAR_JSON_PATH,self)
         self.thread.finished.connect(self.islemSonucu)
         # ProgressDialog'u göster
         self.progressDialog.show()
