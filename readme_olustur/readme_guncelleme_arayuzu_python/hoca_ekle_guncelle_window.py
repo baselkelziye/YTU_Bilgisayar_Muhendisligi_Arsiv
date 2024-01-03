@@ -252,6 +252,9 @@ class HocaDuzenlemeWindow(QDialog):
         # Yatay düzeni ana düzene ekle
         self.layout.addLayout(buttonsLayout)
     def dersEkleComboBox(self,hoca_ders=None):
+        if len(self.dersler) == 0:
+            QMessageBox.critical(self, 'Hata', 'Herhangi bir ders bulunamadı. Lütfen önce ders ekleyin.')
+            return
         # Yeni ComboBox oluştur
         comboBox = QComboBox(self)
         for ders in self.dersler:
@@ -292,9 +295,12 @@ class HocaDuzenlemeWindow(QDialog):
 
 
     def dersleriYukle(self):
-        with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
-            ders_data = json.load(file)
-        return ders_data['dersler']
+        try:
+            with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
+                ders_data = json.load(file)
+            return ders_data['dersler']
+        except Exception as e:
+            return []
     def ayiklaUnvan(self, ad):
         unvanlar = ['Prof. Dr.', 'Doç. Dr.', 'Dr.']
         for unvan in unvanlar:
@@ -340,11 +346,13 @@ class HocaDuzenlemeWindow(QDialog):
         secilen_dersler = self.secilenDersleriDondur()
         ad = self.unvanInput.currentText() + " " + self.adInput.text()
         kisaltma = hoca_kisaltma_olustur(ad)
-
         try:
             with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
                 dersler_data = json.load(file)
+        except Exception as e:
+            dersler_data = {'dersler': []}  # JSON yükleme yerine doğrudan bir sözlük atayın
 
+        try:
             for ders in dersler_data.get("dersler", []):
                 # Eğer ders seçilen dersler listesindeyse ve hoca bu dersi vermiyorsa, hocayı ekleyin
                 if ders['ad'] in secilen_dersler and not any(hoca['kisaltma'] == kisaltma for hoca in ders.get("dersi_veren_hocalar", [])):

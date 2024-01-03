@@ -91,8 +91,7 @@ class TalimatDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-            return None
+            return {"talimatlar": []}
 
     def talimatListele(self):
         # Mevcut talimatları temizle
@@ -305,8 +304,7 @@ class KavramDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-            return None
+            return {"kavramlar": []}
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
             text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak açıklama:')
@@ -478,8 +476,7 @@ class AciklamaDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-            return None
+            return {"aciklamalar": []}
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
@@ -625,8 +622,7 @@ class RepoKullanimiDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
-            return json.loads('{}')
+            return {}
     # JSON dosyasını güncelle
     def jsonGuncelle(self):
         with open(self.json_dosyasi, 'w', encoding='utf-8') as file:
