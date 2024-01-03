@@ -6,8 +6,7 @@ from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QInputDialog,QSizePolicy, QPus
 from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
-JSON_DOSYASI = '../hocalar.json'
-DERSLER_JSON_PATH = '../dersler.json'
+from degiskenler import HOCALAR_JSON_PATH, DERSLER_JSON_PATH, DERSLER, AD, DERSI_VEREN_HOCALAR, BOLUM_ADI, BOLUM_ACIKLAMASI, HOCALAR, KISALTMA, PROF_DR, DOC_DR, DR
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -73,14 +72,14 @@ class HocaEkleGuncelleWindow(QDialog):
                 if isinstance(widget, QPushButton):
                     widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.hocaSayisiLabel.setText(f'Toplam {len(self.data["hocalar"])} hoca')  # Hoca sayısını etikette güncelle
+            self.hocaSayisiLabel.setText(f'Toplam {len(self.data[HOCALAR])} hoca')  # Hoca sayısını etikette güncelle
     def searchHocalar(self, query):
         if query == '':
             self.clearFilters(is_clicked=False)
             return
         size = 0
         for idx, hoca in enumerate(self.sorted_hocalar):
-            hoca_ad = hoca['ad']
+            hoca_ad = hoca[AD]
             widget = self.hocalarLayout.itemAt(idx).widget()
             if isinstance(widget, QPushButton):
                 if query.lower() in hoca_ad.lower():
@@ -98,36 +97,36 @@ class HocaEkleGuncelleWindow(QDialog):
             self.clearFiltersButton.hide()
     def jsonDosyasiniYukle(self):
         try:
-            with open(JSON_DOSYASI, 'r', encoding='utf-8') as file:
+            with open(HOCALAR_JSON_PATH, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
             return json.loads('{}')
     def hocalariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
-            if 'bolum_adi' not in self.data:
-                self.data['bolum_adi'] = 'Hocalar'
-            if 'bolum_aciklamasi' not in self.data:
-                self.data['bolum_aciklamasi'] = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."
-            if 'hocalar' not in self.data:
-                self.data['hocalar'] = []
-            hoca_sayisi = len(self.data['hocalar'])  # Hoca sayısını hesapla
+            if BOLUM_ADI not in self.data:
+                self.data[BOLUM_ADI] = 'Hocalar'
+            if BOLUM_ACIKLAMASI not in self.data:
+                self.data[BOLUM_ACIKLAMASI] = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."
+            if HOCALAR not in self.data:
+                self.data[HOCALAR] = []
+            hoca_sayisi = len(self.data[HOCALAR])  # Hoca sayısını hesapla
             self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
             def unvan_ve_isim_ayir(hoca):
                 # Ünvanları ve sıralama önceliklerini tanımla
-                unvanlar = {'Prof. Dr.': 1, 'Doç. Dr.': 2, 'Dr.': 3, '': 4}
-                ad = hoca['ad']
+                unvanlar = {PROF_DR: 1, DOC_DR: 2,DR: 3, '': 4}
+                ad = hoca[AD]
                 for unvan in unvanlar:
                     if ad.startswith(unvan):
                         return unvanlar[unvan], ad[len(unvan):].strip()  # Ünvanın önceliği ve adı döndür
                 return unvanlar[''], ad  # Eğer ünvan yoksa
 
             # Hocaları önce ünvanlarına, sonra adlarına göre sırala
-            self.sorted_hocalar = sorted(self.data['hocalar'], key=lambda hoca: unvan_ve_isim_ayir(hoca))
+            self.sorted_hocalar = sorted(self.data[HOCALAR], key=lambda hoca: unvan_ve_isim_ayir(hoca))
 
             for hoca in self.sorted_hocalar:
-                if hoca['ad'] != '':
-                    btn = QPushButton(f"{hoca['ad']}", self.scrollWidget)
+                if hoca[AD] != '':
+                    btn = QPushButton(f"{hoca[AD]}", self.scrollWidget)
                     btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
                     self.hocalarLayout.addWidget(btn)
                 else:
@@ -175,11 +174,11 @@ class HocaDuzenlemeWindow(QDialog):
         # Ünvan için alan
         self.layout.addWidget(QLabel('Ünvan:'))
         self.unvanInput = QComboBox(self)
-        unvanlar = ['Prof. Dr.', 'Doç. Dr.', 'Dr.']
+        unvanlar = [PROF_DR, DOC_DR, DR]
         self.unvanInput.addItems(unvanlar)
         self.layout.addWidget(self.unvanInput)
         # Hoca adı için alan
-        ad = self.hoca['ad'] if self.hoca else ''
+        ad = self.hoca[AD] if self.hoca else ''
         ad, unvan = self.ayiklaUnvan(ad)
          # Ünvanı ayarla
         if unvan in unvanlar:
@@ -209,8 +208,8 @@ class HocaDuzenlemeWindow(QDialog):
         self.progressDialog.close()
         # Diğer bilgiler ve dersler buraya eklenebilir
         self.dersler = self.dersleriYukle()
-        # Derslerin sadece 'ad' alanını al ve adlarına göre sırala
-        self.dersler = sorted([ders['ad'] for ders in self.dersler], key=locale.strxfrm)
+        # Derslerin sadece AD alanını al ve adlarına göre sırala
+        self.dersler = sorted([ders[AD] for ders in self.dersler], key=locale.strxfrm)
         self.layout.addWidget(QLabel('Hocanın Verdiği Dersler'))
         
         # Hocalar için kaydırılabilir alan oluştur
@@ -224,8 +223,8 @@ class HocaDuzenlemeWindow(QDialog):
         self.derslerLayout = QVBoxLayout(self.dersScrollWidget)
         self.derslerScorllArea.setWidget(self.dersScrollWidget)  # ScrollArea'ya widget ekle
         self.layout.addWidget(self.derslerScorllArea)  # Ana layout'a ScrollArea ekle
-        if self.hoca and 'dersler' in self.hoca:
-            for ders in self.hoca['dersler']:
+        if self.hoca and DERSLER in self.hoca:
+            for ders in self.hoca[DERSLER]:
                 self.dersEkleComboBox(ders)
         # Ekle (+) butonu
         self.ekleHocaBtn = QPushButton('Hocanın Verdiği Ders Ekle', self)
@@ -298,11 +297,11 @@ class HocaDuzenlemeWindow(QDialog):
         try:
             with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
                 ders_data = json.load(file)
-            return ders_data['dersler']
+            return ders_data[DERSLER]
         except Exception as e:
             return []
     def ayiklaUnvan(self, ad):
-        unvanlar = ['Prof. Dr.', 'Doç. Dr.', 'Dr.']
+        unvanlar = [PROF_DR, DOC_DR, DR]
         for unvan in unvanlar:
             if ad.startswith(unvan):
                 return ad[len(unvan)+1:], unvan  # İsim ve ünvanı ayır
@@ -340,7 +339,7 @@ class HocaDuzenlemeWindow(QDialog):
         # Hocayı sil
         emin_mi = QMessageBox.question(self, 'Onay', 'Hocayı silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
         if emin_mi == QMessageBox.Yes and self.hoca:
-            self.data['hocalar'].remove(self.hoca)
+            self.data[HOCALAR].remove(self.hoca)
             self.kaydetVeKapat()
     def derslereHocayiEkle(self):
         secilen_dersler = self.secilenDersleriDondur()
@@ -350,16 +349,16 @@ class HocaDuzenlemeWindow(QDialog):
             with open(DERSLER_JSON_PATH, 'r', encoding='utf-8') as file:
                 dersler_data = json.load(file)
         except Exception as e:
-            dersler_data = {'dersler': []}  # JSON yükleme yerine doğrudan bir sözlük atayın
+            dersler_data = {DERSLER: []}  # JSON yükleme yerine doğrudan bir sözlük atayın
 
         try:
-            for ders in dersler_data.get("dersler", []):
+            for ders in dersler_data.get(DERSLER, []):
                 # Eğer ders seçilen dersler listesindeyse ve hoca bu dersi vermiyorsa, hocayı ekleyin
-                if ders['ad'] in secilen_dersler and not any(hoca['kisaltma'] == kisaltma for hoca in ders.get("dersi_veren_hocalar", [])):
-                    ders.setdefault("dersi_veren_hocalar", []).append({"ad": ad, "kisaltma": kisaltma})
+                if ders[AD] in secilen_dersler and not any(hoca[KISALTMA] == kisaltma for hoca in ders.get(DERSI_VEREN_HOCALAR, [])):
+                    ders.setdefault(DERSI_VEREN_HOCALAR, []).append({AD: ad, KISALTMA: kisaltma})
                 # Eğer ders seçilen dersler listesinde değilse ve hoca bu dersi veriyorsa, hocayı çıkarın
-                elif ders['ad'] not in secilen_dersler:
-                    ders["dersi_veren_hocalar"] = [hoca for hoca in ders.get("dersi_veren_hocalar", []) if hoca['kisaltma'] != kisaltma]
+                elif ders[AD] not in secilen_dersler:
+                    ders[DERSI_VEREN_HOCALAR] = [hoca for hoca in ders.get(DERSI_VEREN_HOCALAR, []) if hoca[KISALTMA] != kisaltma]
 
             with open(DERSLER_JSON_PATH, 'w', encoding='utf-8') as file:
                 json.dump(dersler_data, file, ensure_ascii=False, indent=4)
@@ -371,7 +370,7 @@ class HocaDuzenlemeWindow(QDialog):
         # Değişiklikleri JSON dosyasına kaydet ve pencereyi kapat
         try:
             self.derslereHocayiEkle()
-            with open(JSON_DOSYASI, 'w',encoding='utf-8') as file:
+            with open(HOCALAR_JSON_PATH, 'w',encoding='utf-8') as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             self.parent.hocalariYenile()
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
