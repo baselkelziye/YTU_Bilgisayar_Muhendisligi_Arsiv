@@ -1402,21 +1402,21 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 - 👤 Ali Albayrak
   - 🔗 Github Adresi: https://github.com/Ali-Albayrak
-- 👤 Basel Kelziye
-  - 🔗 Github Adresi: https://github.com/baselkelziye
-- 👤 Muhammed Kayra Bulut
-  - 🔗 Github Adresi: https://github.com/kaayra2000
-- 👤 Besher Alkurdi
-  - 🔗 Github Adresi: https://github.com/mrbesher
-- 👤 Rayene Bech
-  - 🔗 Github Adresi: https://github.com/rayenebech
-- 👤 Rameş Aliyev
-  - 🔗 Github Adresi: https://github.com/ramesaliyev
-- 👤 Muhammed Ali Şen
-  - 🔗 Github Adresi: https://github.com/shenmali
 - 👤 Asude Merve Ekiz
   - 🔗 Github Adresi: https://github.com/asudemerveekiz
-- 👤 Sait Yalçın
-  - 🔗 Github Adresi: https://github.com/saityalcn
+- 👤 Basel Kelziye
+  - 🔗 Github Adresi: https://github.com/baselkelziye
+- 👤 Besher Alkurdi
+  - 🔗 Github Adresi: https://github.com/mrbesher
+- 👤 Muhammed Ali Şen
+  - 🔗 Github Adresi: https://github.com/shenmali
 - 👤 Muhammed Eren Şekkeli
   - 🔗 Github Adresi: https://github.com/mErenSekkeli
+- 👤 Muhammed Kayra Bulut
+  - 🔗 Github Adresi: https://github.com/kaayra2000
+- 👤 Rameş Aliyev
+  - 🔗 Github Adresi: https://github.com/ramesaliyev
+- 👤 Rayene Bech
+  - 🔗 Github Adresi: https://github.com/rayenebech
+- 👤 Sait Yalçın
+  - 🔗 Github Adresi: https://github.com/saityalcn
