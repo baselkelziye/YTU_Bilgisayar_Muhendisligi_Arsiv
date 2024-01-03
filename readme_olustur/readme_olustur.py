@@ -2,7 +2,7 @@ import json
 import os
 import difflib
 import re
-from hoca_kisaltma_olustur import hoca_kisaltma_olustur
+from readme_guncelleme_arayuzu_python.hoca_kisaltma_olustur import hoca_kisaltma_olustur
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 ANA_README_YOLU = os.path.join("..","README.md")
 YILDIZ_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
