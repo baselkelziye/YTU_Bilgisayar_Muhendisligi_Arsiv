@@ -1,8 +1,9 @@
 from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QApplication, QInputDialog, QMessageBox, QHBoxLayout
 import json
 from PyQt5.QtCore import Qt
+from degiskenler import REPO_KULLANIMI_JSON_PATH, ACIKLAMA, TALIMAT, KAVRAM, ACIKLAMALAR, TALIMATLAR, KAVRAMLAR, BASLIK
 class TalimatDialog(QDialog):
-    def __init__(self, json_dosyasi='../repo_kullanimi.json'):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -17,7 +18,7 @@ class TalimatDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.talimatSayisiLabel = QLabel(self)
-        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')
+        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data[TALIMATLAR])} talimat')
         self.layout.addWidget(self.talimatSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -84,21 +85,21 @@ class TalimatDialog(QDialog):
                         if widget:
                             widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')  # kavram sayısını etikette güncelle
+            self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data[TALIMATLAR])} talimat')  # kavram sayısını etikette güncelle
    
     def jsonVeriOku(self):
         try:
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            return {"talimatlar": []}
+            return {TALIMATLAR: []}
 
     def talimatListele(self):
         # Mevcut talimatları temizle
         self.temizle()
-        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data["talimatlar"])} talimat')
+        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data[TALIMATLAR])} talimat')
         self.clearFiltersButton.hide()  # Temizle butonunu gizle
-        for i, talimat in enumerate(self.repo_data["talimatlar"]):
+        for i, talimat in enumerate(self.repo_data[TALIMATLAR]):
             talimatLayout = QHBoxLayout()
             
             talimatBtn = QPushButton(talimat, self)
@@ -136,23 +137,23 @@ class TalimatDialog(QDialog):
 
     def talimatDuzenle(self, index):
         # Düzenleme dialogunu aç
-        talimat = self.repo_data["talimatlar"][index]
+        talimat = self.repo_data[TALIMATLAR][index]
         yeni_talimat, ok = QInputDialog.getText(self, "Talimat Düzenle", "Talimat:", QLineEdit.Normal, talimat)
         if ok and yeni_talimat:
-            self.repo_data["talimatlar"][index] = yeni_talimat
+            self.repo_data[TALIMATLAR][index] = yeni_talimat
             self.jsonGuncelle()
 
 
     def talimatSil(self, index):
         emin_mi = QMessageBox.question(self, 'Onay', 'Bu talimatı silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
-            del self.repo_data["talimatlar"][index]
+            del self.repo_data[TALIMATLAR][index]
             self.jsonGuncelle()
 
     def talimatEkle(self):
         yeni_talimat, ok = QInputDialog.getText(self, "Talimat Ekle", "Yeni Talimat:")
         if ok and yeni_talimat:
-            self.repo_data["talimatlar"].append(yeni_talimat)
+            self.repo_data[TALIMATLAR].append(yeni_talimat)
             self.jsonGuncelle()
 
     def jsonGuncelle(self):
@@ -165,7 +166,7 @@ class KavramDetayDialog(QDialog):
         self.repo_data = repo_data
         self.kavram_index = kavram_index
         self.kavram_adi = kavram_adi
-        self.kavram = self.repo_data["kavramlar"][self.kavram_index]
+        self.kavram = self.repo_data[KAVRAMLAR][self.kavram_index]
         self.setModal(True)
         self.initUI()
 
@@ -212,7 +213,7 @@ class KavramDetayDialog(QDialog):
 
     def aciklamaListele(self):
         self.temizle()
-        for i, aciklama in enumerate(self.kavram["aciklamalar"]):
+        for i, aciklama in enumerate(self.kavram[ACIKLAMALAR]):
             aciklamaLayout = QHBoxLayout()
 
             aciklamaLabel = QLabel(aciklama, self)
@@ -234,7 +235,7 @@ class KavramDetayDialog(QDialog):
             self.scrollLayout.addLayout(aciklamaLayout)
 
     def aciklamaDuzenle(self, index):
-        eski_aciklama = self.kavram["aciklamalar"][index]
+        eski_aciklama = self.kavram[ACIKLAMALAR][index]
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Düzenle", "Açıklama:", text=eski_aciklama)
         
         if ok and yeni_aciklama:
@@ -244,7 +245,7 @@ class KavramDetayDialog(QDialog):
 
             if emin_mi == QMessageBox.Yes:
                 # Kullanıcı onay verirse, değişikliği yap
-                self.kavram["aciklamalar"][index] = yeni_aciklama
+                self.kavram[ACIKLAMALAR][index] = yeni_aciklama
                 self.parent().jsonGuncelle()
                 self.aciklamaListele()
 
@@ -252,18 +253,18 @@ class KavramDetayDialog(QDialog):
     def aciklamaSil(self, index):
         emin_mi = QMessageBox.question(self, 'Onay', 'Bu açıklamayı silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
-            del self.kavram["aciklamalar"][index]
+            del self.kavram[ACIKLAMALAR][index]
             self.parent().jsonGuncelle()
             self.aciklamaListele()
 
     def aciklamaEkle(self):
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Ekle", "Yeni Açıklama:")
         if ok and yeni_aciklama:
-            self.kavram["aciklamalar"].append(yeni_aciklama)
+            self.kavram[ACIKLAMALAR].append(yeni_aciklama)
             self.parent().jsonGuncelle()
             self.aciklamaListele()
 class KavramDialog(QDialog):
-    def __init__(self, json_dosyasi='../repo_kullanimi.json'):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -304,7 +305,7 @@ class KavramDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            return {"kavramlar": []}
+            return {KAVRAMLAR: []}
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
             text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak açıklama:')
@@ -316,9 +317,9 @@ class KavramDialog(QDialog):
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, kavram in enumerate(self.repo_data['kavramlar']):
+        for idx, kavram in enumerate(self.repo_data[KAVRAMLAR]):
             layout = self.scrollLayout.itemAt(idx)
-            kavram = kavram["kavram"]
+            kavram = kavram[KAVRAM]
             if isinstance(layout, QHBoxLayout):
                 match = query.lower() in kavram.lower()
                 for i in range(layout.count()):
@@ -327,7 +328,7 @@ class KavramDialog(QDialog):
                         widget.setVisible(match)
                 if match:
                     size += 1
-        if size == len(self.repo_data['kavramlar']):
+        if size == len(self.repo_data[KAVRAMLAR]):
             self.clearFilters(is_clicked=False)
             return
         self.kavramSayisiLabel.setText(f'{size} kavram bulundu')
@@ -350,17 +351,17 @@ class KavramDialog(QDialog):
                         if widget:
                             widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data["kavramlar"])} kavram')  # kavram sayısını etikette güncelle
+            self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data[KAVRAMLAR])} kavram')  # kavram sayısını etikette güncelle
    
     def kavramListele(self):
         self.temizle()
-        self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data["kavramlar"])} kavram')
+        self.kavramSayisiLabel.setText(f'Toplam {len(self.repo_data[KAVRAMLAR])} kavram')
         self.clearFiltersButton.hide()  # Temizle butonunu gizle
-        for i, kavram in enumerate(self.repo_data["kavramlar"]):
+        for i, kavram in enumerate(self.repo_data[KAVRAMLAR]):
             kavramLayout = QHBoxLayout()
             
             # Kavram adını gösteren buton
-            kavramBtn = QPushButton(kavram["kavram"], self)
+            kavramBtn = QPushButton(kavram[KAVRAM], self)
             kavramBtn.clicked.connect(lambda checked, index=i: self.kavramDuzenle(index))
             kavramBtn.setStyleSheet("background-color: lightgreen; color: black;")
             kavramBtn.setMaximumWidth(500)
@@ -383,14 +384,14 @@ class KavramDialog(QDialog):
             self.scrollLayout.addLayout(kavramLayout)
 
     def kavramAdiDuzenle(self, index):
-        eski_kavram = self.repo_data["kavramlar"][index]["kavram"]
+        eski_kavram = self.repo_data[KAVRAMLAR][index][KAVRAM]
         yeni_kavram, ok = QInputDialog.getText(self, "Kavram Adı Düzenle", "Kavram Adı:", text=eski_kavram)
         
         if ok and yeni_kavram:
             emin_mi = QMessageBox.question(self, 'Onay', 'Kavram adını değiştirmek istediğinizden emin misiniz?',
                                         QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
             if emin_mi == QMessageBox.Yes:
-                self.repo_data["kavramlar"][index]["kavram"] = yeni_kavram
+                self.repo_data[KAVRAMLAR][index][KAVRAM] = yeni_kavram
                 self.jsonGuncelle()
                 self.kavramListele()
 
@@ -414,19 +415,19 @@ class KavramDialog(QDialog):
 
     def kavramDuzenle(self, index):
         # Katkıda Bulunan Güncelle penceresini aç
-        self.yazarinNotlariWindow = KavramDetayDialog(self, self.repo_data, index, self.repo_data["kavramlar"][index]["kavram"])
+        self.yazarinNotlariWindow = KavramDetayDialog(self, self.repo_data, index, self.repo_data[KAVRAMLAR][index][KAVRAM])
         self.yazarinNotlariWindow.show()
 
     def kavramSil(self, index):
         emin_mi = QMessageBox.question(self, 'Onay', 'Bu kavramı silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
-            del self.repo_data["kavramlar"][index]
+            del self.repo_data[KAVRAMLAR][index]
             self.jsonGuncelle()
 
     def kavramEkle(self):
         yeni_kavram, ok = QInputDialog.getText(self, "Kavram Ekle", "Yeni Kavram:")
         if ok and yeni_kavram:
-            self.repo_data["kavramlar"].append({"kavram": yeni_kavram, "aciklamalar": []})
+            self.repo_data[KAVRAMLAR].append({KAVRAM: yeni_kavram, ACIKLAMALAR: []})
             self.jsonGuncelle()
 
     def jsonGuncelle(self):
@@ -435,7 +436,7 @@ class KavramDialog(QDialog):
         self.yenile()
 
 class AciklamaDialog(QDialog):
-    def __init__(self, json_dosyasi='../repo_kullanimi.json'):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -451,7 +452,7 @@ class AciklamaDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.aciklamaSayisiLabel = QLabel(self)
-        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')
+        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')
         self.layout.addWidget(self.aciklamaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -476,7 +477,7 @@ class AciklamaDialog(QDialog):
             with open(self.json_dosyasi, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except Exception as e:
-            return {"aciklamalar": []}
+            return {ACIKLAMALAR: []}
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
@@ -489,7 +490,7 @@ class AciklamaDialog(QDialog):
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, aciklama in enumerate(self.repo_data['aciklamalar']):
+        for idx, aciklama in enumerate(self.repo_data[ACIKLAMALAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
                 match = query.lower() in aciklama.lower()
@@ -499,7 +500,7 @@ class AciklamaDialog(QDialog):
                         widget.setVisible(match)
                 if match:
                     size += 1
-        if size == len(self.repo_data['aciklamalar']):
+        if size == len(self.repo_data[ACIKLAMALAR]):
             self.clearFilters(is_clicked=False)
             return
         self.aciklamaSayisiLabel.setText(f'{size} açıklama bulundu')
@@ -522,12 +523,12 @@ class AciklamaDialog(QDialog):
                         if widget:
                             widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle
+            self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')  # Açıklama sayısını etikette güncelle
     def aciklamaListele(self):
         self.temizle()
-        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data["aciklamalar"])} açıklama')  # Açıklama sayısını etikette güncelle
+        self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')  # Açıklama sayısını etikette güncelle self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')  # Açıklama sayısını etikette güncelle
         self.clearFiltersButton.hide()  # Temizle butonunu gizle
-        for i, aciklama in enumerate(self.repo_data["aciklamalar"]):
+        for i, aciklama in enumerate(self.repo_data[ACIKLAMALAR]):
             aciklamaLayout = QHBoxLayout()
             
             aciklamaBtn = QPushButton(aciklama, self)
@@ -564,22 +565,22 @@ class AciklamaDialog(QDialog):
         self.adjustSize()  # Pencere boyutunu içeriklere göre ayarla
 
     def aciklamaDuzenle(self, index):
-        aciklama = self.repo_data["aciklamalar"][index]
+        aciklama = self.repo_data[ACIKLAMALAR][index]
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Düzenle", "Açıklama:", QLineEdit.Normal, aciklama)
         if ok and yeni_aciklama:
-            self.repo_data["aciklamalar"][index] = yeni_aciklama
+            self.repo_data[ACIKLAMALAR][index] = yeni_aciklama
             self.jsonGuncelle()
 
     def aciklamaSil(self, index):
         emin_mi = QMessageBox.question(self, 'Onay', 'Bu açıklamayı silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
-            del self.repo_data["aciklamalar"][index]
+            del self.repo_data[ACIKLAMALAR][index]
             self.jsonGuncelle()
 
     def aciklamaEkle(self):
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Ekle", "Yeni Açıklama:")
         if ok and yeni_aciklama:
-            self.repo_data["aciklamalar"].append(yeni_aciklama)
+            self.repo_data[ACIKLAMALAR].append(yeni_aciklama)
             self.jsonGuncelle()
 
     def jsonGuncelle(self):
@@ -588,7 +589,7 @@ class AciklamaDialog(QDialog):
         self.yenile()
 
 class RepoKullanimiDialog(QDialog):
-    def __init__(self, json_dosyasi='../repo_kullanimi.json'):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
         self.setModal(True)
         self.json_dosyasi = json_dosyasi
@@ -630,20 +631,20 @@ class RepoKullanimiDialog(QDialog):
     # JSON dosyasını kontrol et
     def jsonKontrol(self):
         self.repo_data = self.jsonVeriOku()
-        if "baslik" not in self.repo_data:
-            self.repo_data["baslik"] = "Repo Kullanımı"
-        if "talimat" not in self.repo_data:
-            self.repo_data["talimat"] = "Talimatlar:"
-        if "kavram" not in self.repo_data:
-            self.repo_data["kavram"] = "Kavramlar:"
-        if "aciklama" not in self.repo_data:
-            self.repo_data["aciklama"] = "Açıklamalar:"
-        if "talimatlar" not in self.repo_data:
-            self.repo_data["talimatlar"] = []
-        if "kavramlar" not in self.repo_data:
-            self.repo_data["kavramlar"] = []
-        if "aciklamalar" not in self.repo_data:
-            self.repo_data["aciklamalar"] = []
+        if BASLIK not in self.repo_data:
+            self.repo_data[BASLIK] = "Repo Kullanımı"
+        if TALIMAT not in self.repo_data:
+            self.repo_data[TALIMAT] = "Talimatlar:"
+        if KAVRAM not in self.repo_data:
+            self.repo_data[KAVRAM] = "Kavramlar:"
+        if ACIKLAMA not in self.repo_data:
+            self.repo_data[ACIKLAMA] = "Açıklamalar:"
+        if TALIMATLAR not in self.repo_data:
+            self.repo_data[TALIMATLAR] = []
+        if KAVRAMLAR not in self.repo_data:
+            self.repo_data[KAVRAMLAR] = []
+        if ACIKLAMALAR not in self.repo_data:
+            self.repo_data[ACIKLAMALAR] = []
         self.jsonGuncelle()
        
 
