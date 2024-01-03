@@ -9,8 +9,10 @@ if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
 
+# Klasörler için benzerlik skoru hesaplayan fonksiyon
 def benzerlik_skoru(str1, str2):
     return difflib.SequenceMatcher(None, str1, str2).ratio() * 100
+# En iyi eşleşmeyi bulan fonksiyon
 def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
     en_iyi_eslesme = None
     en_yuksek_yuzde = 0
@@ -26,6 +28,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
 
     return None if (en_yuksek_yuzde < 71 or (len(en_iyi_eslesme.split(os.sep)) < 3 and "Projesi" not in en_iyi_eslesme)) else en_iyi_eslesme
 
+# GitHub'daki klasör için tam URL oluşturan fonksiyon
 def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"):
     """
     Yerel bir klasör yolunu GitHub reposundaki karşılık gelen klasörün URL'sine dönüştürür.
@@ -49,6 +52,7 @@ def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselk
     # GitHub'daki tam URL'yi oluştur
     github_klasor_url = f"{repo_url}/tree/main/{klasor_yolu}"
     return github_klasor_url
+
 def hoca_siralama_anahtari(hoca):
     unvan = hoca[AD].split()[0]  # İsmin ilk kelimesini (unvanı) al
     return (unvanlarin_onceligi.get(unvan, 4), hoca[AD])  # Unvan önceliği ve tam ad
@@ -119,6 +123,7 @@ def donem_siralamasi(donem_key):
         return (999, 999)  # Mesleki Seçmeli dersleri en sona koy
     yil, donem = donem_key.split(" - ")
     return (int(yil.split('.')[0]), 0 if donem == "Güz" else 1)
+
 def baslik_linki_olustur(baslik):
     # Emoji ve özel karakterleri kaldır
     baslik = re.sub(r'[^\w\s-]', '', baslik)
