@@ -93,7 +93,7 @@ class DersEkleGuncelleWindow(QDialog):
             with open(JSON_PATH, 'r', encoding='utf-8') as file:
                 return json.load(file)
         except:
-            return json.loads('{}')
+            return {}
     def dersleriYukle(self):
         try:
             # Öncelikle Türkçe locale'i dene
@@ -114,9 +114,9 @@ class DersEkleGuncelleWindow(QDialog):
             if 'bolum_adi' not in self.data:
                 self.data['bolum_adi'] = 'Dersler'
             if 'bolum_aciklamasi' not in self.data:
-                self['bolum_aciklamasi'] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
+                self.data['bolum_aciklamasi'] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
             if 'ders_klasoru_bulunamadi_mesaji' not in self.data:
-                self.data['ders_klasoru_bulunamadi_mesaji'] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
+                self.data['ders_klasoru_bulunamadi_mesaji'] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
             if "guncel_olmayan_ders_aciklamasi" not in self.data:
                 self.data["guncel_olmayan_ders_aciklamasi"] = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
                 
@@ -520,9 +520,11 @@ class DersDuzenlemeWindow(QDialog):
         self.layout.addWidget(QLabel('Dersi Veren Hocalar'))
         # Dersi veren hocalar için ComboBox'lar
         # Mevcut hocaları yükle
-        with open(HOCA_JSON_PATH, 'r',encoding='utf-8') as file:
-            hoca_data = json.load(file)
-
+        try:
+            with open(HOCA_JSON_PATH, 'r',encoding='utf-8') as file:
+                hoca_data = json.load(file)
+        except:
+            hoca_data = {'hocalar': []}
         hoca_listesi = [
             (h['ad'], hoca_kisaltma_olustur(h['ad']))
             for h in hoca_data['hocalar']
@@ -569,7 +571,9 @@ class DersDuzenlemeWindow(QDialog):
         self.layout.addLayout(buttonsLayout)
 
     def ekleHocaComboBox(self, hoca=None):
-        
+        if len(self.hoca_listesi) < 1:
+            QMessageBox.warning(self, 'Hata', 'Hoca listesi boş!')
+            return
 
         # Yeni ComboBox oluştur
         comboBox = QComboBox(self)
