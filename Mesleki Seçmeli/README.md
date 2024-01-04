@@ -412,6 +412,8 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 Selim Bey: Yazılımı test etmek lazım.
 - ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
 
