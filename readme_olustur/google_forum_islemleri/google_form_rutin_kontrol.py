@@ -38,6 +38,11 @@ def execute_command(command):
         print(f"Komut hatası: {e.stderr.decode()}")
         return False
     return True
+def is_working_directory_clean():
+    # 'git status' komutunu kullanarak çalışma dizininin temiz olup olmadığını kontrol edin.
+    # Eğer 'git status' çıktısında "nothing to commit, working tree clean" ifadesi varsa, bu dizin temizdir.
+    return "nothing to commit, working tree clean" in os.popen('git status').read()
+
 def update_repository():
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
@@ -45,20 +50,21 @@ def update_repository():
     
     # Git ve Python komutlarını sırayla çalıştır
     try:
-         # Sahnelenmemiş değişiklikleri stash et
-        if not execute_command("git stash"):
-            print("Değişiklikler stash edilemedi, script durduruluyor.")
-            return
+        if not execute_command("git fetch"):
+            # Stash'i geri yükle
+            execute_command("git stash pop")
+            return 
+        # Sahnelenmemiş değişiklikleri stash et
+        if not is_working_directory_clean() and not execute_command("git stash"):
+            if not execute_command("git reset --hard HEAD"):
+                print("Reset başarısız, script durduruluyor.")
+                return
         if not execute_command('git pull --rebase origin main'):
             print("Rebase sırasında conflict oluştu, HEAD'e resetleniyor...")
             if not execute_command("git reset --hard HEAD"):
                 print("Reset sırasında conflict oluştu, script durduruluyor.")
                 execute_command("git stash pop")
                 return
-        if not execute_command("git fetch"):
-            # Stash'i geri yükle
-            execute_command("git stash pop")
-            return 
         if not execute_command("git clean -fdx"):
             # Stash'i geri yükle
             execute_command("git stash pop")
