@@ -8,7 +8,10 @@ from degiskenler import (HOCALAR,ONERILER,DERSE_DAIR_ONERILER,DERSLER,AD,
                           BOLUM_ACIKLAMASI, BOLUM_ADI, DERS_KLASORU_BULUNAMADI_MESAJI,
                             GUNCEL_OLMAYAN_DERS_ACIKLAMASI,DERSLER_JSON_PATH ,HOCALAR_JSON_PATH,
                               FAYDALI_OLABILECEK_KAYNAKLAR, YIL, DONEM, TIP, YOK, 
-                              DERSI_VEREN_HOCALAR, GUNCEL_MI, ONERI_SAHIBI, PROF_DR, DOC_DR, DR)
+                              DERSI_VEREN_HOCALAR, GUNCEL_MI, ONERI_SAHIBI, PROF_DR, DOC_DR, DR,
+                                VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI,
+                                VARSAYILAN_DERS_BOLUM_ACIKLAMASI,VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI,
+                                VARSAYILAN_DERS_BOLUM_ADI)
 
 # Hoca adlarını ve kısaltmalarını hazırla
 unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
@@ -115,13 +118,13 @@ class DersEkleGuncelleWindow(QDialog):
             if DERSLER not in self.data:
                 self.data[DERSLER] = []
             if BOLUM_ADI not in self.data:
-                self.data[BOLUM_ADI] = 'Dersler'
+                self.data[BOLUM_ADI] = VARSAYILAN_DERS_BOLUM_ADI
             if BOLUM_ACIKLAMASI not in self.data:
-                self.data[BOLUM_ACIKLAMASI] = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
+                self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_DERS_BOLUM_ACIKLAMASI
             if DERS_KLASORU_BULUNAMADI_MESAJI not in self.data:
-                self.data[DERS_KLASORU_BULUNAMADI_MESAJI] = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
+                self.data[DERS_KLASORU_BULUNAMADI_MESAJI] = VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI
             if GUNCEL_OLMAYAN_DERS_ACIKLAMASI not in self.data:
-                self.data[GUNCEL_OLMAYAN_DERS_ACIKLAMASI] = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
+                self.data[GUNCEL_OLMAYAN_DERS_ACIKLAMASI] = VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI
                 
 
             ders_sayisi = len(self.data[DERSLER])  # Ders sayısını hesapla
@@ -545,8 +548,8 @@ class DersDuzenlemeWindow(QDialog):
         self.hocalarLayout = QVBoxLayout(self.hocaScrollWidget)
         self.hocaScrollArea.setWidget(self.hocaScrollWidget)  # ScrollArea'ya widget ekle
         self.layout.addWidget(self.hocaScrollArea)  # Ana layout'a ScrollArea ekle
-        if self.ders and 'dersi_veren_hocalar' in self.ders:
-            for hoca in self.ders['dersi_veren_hocalar']:
+        if self.ders and DERSI_VEREN_HOCALAR in self.ders:
+            for hoca in self.ders[DERSI_VEREN_HOCALAR]:
                 self.ekleHocaComboBox(hoca)
         # Ekle (+) butonu
         self.ekleHocaBtn = QPushButton('Dersi Veren Hoca Ekle', self)
