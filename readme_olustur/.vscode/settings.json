@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "python.analysis.extraPaths": [
+        "./readme_guncelleme_arayuzu_python"
+    ],
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.python"
+    },
+}
