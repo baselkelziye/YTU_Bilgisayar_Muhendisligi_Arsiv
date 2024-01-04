@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QInputDialog,QSizePolicy, QPus
 from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
-from degiskenler import HOCALAR_JSON_PATH, DERSLER_JSON_PATH, DERSLER, AD, DERSI_VEREN_HOCALAR, BOLUM_ADI, BOLUM_ACIKLAMASI, HOCALAR, KISALTMA, PROF_DR, DOC_DR, DR
+from degiskenler import VARSAYILAN_HOCA_BOLUM_ADI, VARSAYILAN_HOCA_BOLUM_ACIKLAMASI,HOCALAR_JSON_PATH, DERSLER_JSON_PATH, DERSLER, AD, DERSI_VEREN_HOCALAR, BOLUM_ADI, BOLUM_ACIKLAMASI, HOCALAR, KISALTMA, PROF_DR, DOC_DR, DR
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -105,9 +105,9 @@ class HocaEkleGuncelleWindow(QDialog):
         self.data = self.jsonDosyasiniYukle()
         try:
             if BOLUM_ADI not in self.data:
-                self.data[BOLUM_ADI] = 'Hocalar'
+                self.data[BOLUM_ADI] = VARSAYILAN_HOCA_BOLUM_ADI
             if BOLUM_ACIKLAMASI not in self.data:
-                self.data[BOLUM_ACIKLAMASI] = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."
+                self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_HOCA_BOLUM_ACIKLAMASI
             if HOCALAR not in self.data:
                 self.data[HOCALAR] = []
             hoca_sayisi = len(self.data[HOCALAR])  # Hoca sayısını hesapla
