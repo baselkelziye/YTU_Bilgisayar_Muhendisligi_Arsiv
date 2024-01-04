@@ -275,8 +275,8 @@
                     "yorum": "Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor."
                 }
             ],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 10,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "OA",
@@ -287,7 +287,8 @@
                     "ad": "Prof. Dr. Sırma Yavuz"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Alt Seviye Programlama",
