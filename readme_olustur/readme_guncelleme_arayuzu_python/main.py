@@ -6,7 +6,7 @@ from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
 from progress_dialog import CustomProgressDialog
 from threadler import ScriptRunnerThread
-from repu_kullanimi_window import RepoKullanimiDialog
+from repo_kullanimi_window import RepoKullanimiDialog
 import os
 class App(QWidget):
     def __init__(self):
