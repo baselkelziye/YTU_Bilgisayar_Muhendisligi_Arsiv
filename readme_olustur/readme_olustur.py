@@ -2,7 +2,17 @@ import json
 import os
 import difflib
 import re
-from readme_guncelleme_arayuzu_python.hoca_kisaltma_olustur import hoca_kisaltma_olustur
+import sys
+# Mevcut dosyanın bulunduğu dizini al
+current_directory = os.path.dirname(os.path.abspath(__file__))
+# Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
+relative_path = 'readme_guncelleme_arayuzu_python'
+# Göreceli yolu tam yola çevir
+absolute_path = os.path.join(current_directory, relative_path)
+# Tam yolu sys.path listesine ekle
+sys.path.append(absolute_path)
+
+from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 
 if os.path.exists(ANA_README_YOLU):
