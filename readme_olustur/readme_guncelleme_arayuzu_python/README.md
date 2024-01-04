@@ -178,9 +178,9 @@ Bu arayüzü kullanarak katkıda bulunan bilgilerini yönetmek için aşağıdak
 
 Bu dosya, projenin topluluk yönetimini kolaylaştıran önemli bir parçası olarak hizmet eder ve kullanıcıların projeye katkıda bulunan kişileri verimli bir şekilde yönetmesine olanak tanır.
 
-### 6. repu_kullanimi_window.py
+### 6. repo_kullanimi_window.py
 
-Bu bölüm, `repu_kullanimi_window.py` dosyasının işlevlerini ve nasıl kullanılacağını açıklar. Bu dosya, kullanıcılara repo kullanım talimatlarını eklemek, düzenlemek ve görüntülemek için grafiksel bir arayüz sağlar.
+Bu bölüm, `repo_kullanimi_window.py` dosyasının işlevlerini ve nasıl kullanılacağını açıklar. Bu dosya, kullanıcılara repo kullanım talimatlarını eklemek, düzenlemek ve görüntülemek için grafiksel bir arayüz sağlar.
 
 #### Özellikler 🌟
 
