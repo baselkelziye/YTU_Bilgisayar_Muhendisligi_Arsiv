@@ -107,10 +107,10 @@
                     "yorum": "Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım."
                 }
             ],
-            "kolaylik_puani": 60,
+            "kolaylik_puani": 56,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 2,
+            "oy_sayisi": 3,
             "guncel_mi": true
         },
         {
@@ -1343,7 +1343,12 @@
             "yil": 0,
             "donem": "",
             "tip": "Mesleki Seçmeli",
-            "ogrenci_gorusleri": [],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Selim Bey",
+                    "yorum": "Yazılımı test etmek lazım."
+                }
+            ],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
             "dersi_veren_hocalar": [
@@ -1363,12 +1368,16 @@
                 {
                     "kisi": "Traktör Reis",
                     "yorum": "6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin."
+                },
+                {
+                    "kisi": "Selim Bey",
+                    "yorum": "bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın."
                 }
             ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 10,
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 30,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 1,
+            "oy_sayisi": 2,
             "guncel_mi": true
         },
         {
