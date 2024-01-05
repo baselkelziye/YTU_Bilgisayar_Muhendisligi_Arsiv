@@ -38,10 +38,6 @@ def execute_command(command):
         print(f"Komut hatası: {e.stderr.decode()}")
         return False
     return True
-def is_working_directory_clean():
-    # 'git status' komutunu kullanarak çalışma dizininin temiz olup olmadığını kontrol edin.
-    # Eğer 'git status' çıktısında "nothing to commit, working tree clean" ifadesi varsa, bu dizin temizdir.
-    return "nothing to commit, working tree clean" in os.popen('git status').read()
 
 def update_repository():
     # Mevcut çalışma dizinini sakla
@@ -51,42 +47,33 @@ def update_repository():
     # Git ve Python komutlarını sırayla çalıştır
     try:
         if not execute_command("git fetch"):
-            # Stash'i geri yükle
-            execute_command("git stash pop")
+            print("Fetch sırasında conflict oluştu, script durduruluyor.")
             return 
-        # Sahnelenmemiş değişiklikleri stash et
-        if not is_working_directory_clean() and not execute_command("git stash"):
-            if not execute_command("git reset --hard HEAD"):
-                print("Reset başarısız, script durduruluyor.")
-                return
-        if not execute_command('git pull --rebase origin main'):
-            print("Rebase sırasında conflict oluştu, HEAD'e resetleniyor...")
-            if not execute_command("git reset --hard HEAD"):
-                print("Reset sırasında conflict oluştu, script durduruluyor.")
-                execute_command("git stash pop")
-                return
-        if not execute_command("git clean -fdx"):
-            # Stash'i geri yükle
-            execute_command("git stash pop")
-            return 
+        if not execute_command("git reset --hard origin/main"):
+            print("Reset sırasında conflict oluştu, script durduruluyor.")
+            return
+        if not execute_command("git pull"):
+            print("Pull sırasında conflict oluştu, script durduruluyor.")
+            return
         if not execute_command("python3 hoca_icerikleri_guncelle.py"):
+            print("Hoca içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
+            print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return 
         os.chdir("..")
-        if not execute_command("python3 readme_olustur.py"): 
-            execute_command('git stash pop')
+        if not execute_command("python3 readme_olustur.py"):
+            print("README.md oluşturulurken hata oluştu, script durduruluyor.")
             return
         if not execute_command("git add --all"): 
-            execute_command('git stash pop')
+            print("Git add sırasında conflict oluştu, script durduruluyor.")
             return
         if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'): 
-            execute_command('git stash pop')
+            print("Git commit sırasında conflict oluştu, script durduruluyor.")
             return
-        if not execute_command("git push"):  
-            execute_command('git stash pop')
-            return 
-        execute_command('git stash pop')
+        if not execute_command("git push"):
+            print("Git push sırasında conflict oluştu, script durduruluyor.")
+            return
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}"
