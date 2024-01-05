@@ -30,12 +30,12 @@ def execute_command(command):
     print(f"Komut çalıştırılıyor: {command}")
     try:
         # Komutu çalıştır ve çıktıyı yakala
-        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding="utf-8")
+        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         # Komut başarıyla çalıştıysa, çıktıyı yazdır
-        print(result.stdout)
+        print(result.stdout.decode())
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır ve script'i durdur
-        print(f"Komut hatası: {e.stderr}")
+        print(f"Komut hatası: {e.stderr.decode()}")
         return False
     return True
 
@@ -62,9 +62,7 @@ def update_repository():
             print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return 
         os.chdir("..")
-        if not execute_command("python3 readme_olustur.py"):
-            print("README.md oluşturulurken hata oluştu, script durduruluyor.")
-            return
+        os.system("python3 readme_olustur.py")
         if not execute_command("git add --all"): 
             print("Git add sırasında conflict oluştu, script durduruluyor.")
             return
@@ -97,7 +95,6 @@ timeout = 180
 div = 3
 print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
-update_repository()
 while True:
     for key, url in urls.items():
         if check_for_updates(url):
