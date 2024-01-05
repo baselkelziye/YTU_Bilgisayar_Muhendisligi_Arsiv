@@ -129,6 +129,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Güzel bir ders, geçmesi kolay.
+  - 👤 Ufouser: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur 
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
