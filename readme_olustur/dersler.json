@@ -1358,15 +1358,16 @@
                     "yorum": "Yazılımı test etmek lazım."
                 }
             ],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 70,
+            "gereklilik_puani": 90,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "OK",
                     "ad": "Prof. Dr. Oya Kalıpsız"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Çok Displinli Tasarım Projesi",
