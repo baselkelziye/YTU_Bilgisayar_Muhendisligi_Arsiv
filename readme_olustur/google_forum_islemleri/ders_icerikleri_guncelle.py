@@ -16,9 +16,9 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         ders_adi = row['Ders Seç']
         kisi = row['İsmin Nasıl Gözüksün']
         yorum = row['Ders hakkındaki yorumun']
-        icerikKontrol = IcerikKontrol("ders")
-        if not pd.isna(yorum) and icerikKontrol.pozitif_mi(yorum):
-            yorum = icerikKontrol.metin_on_isleme(yorum)
+        # icerikKontrol = IcerikKontrol("ders")
+        if not pd.isna(yorum):# and icerikKontrol.pozitif_mi(yorum):
+            # yorum = icerikKontrol.metin_on_isleme(yorum)
             for ders in data['dersler']:
                 if ders['ad'] == ders_adi:
                     # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
@@ -34,7 +34,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                     # Yeni yorum ekle
                     if not gorus_var_mi:
                         ders['ogrenci_gorusleri'].append({'kisi': kisi.lower().title(), 'yorum': yorum})
-    icerikKontrol.dosya_yaz()
+    # icerikKontrol.dosya_yaz()
 def guncelle_ders_yildizlari(data, sheets_url):
     
     # Veriyi indir ve DataFrame olarak oku

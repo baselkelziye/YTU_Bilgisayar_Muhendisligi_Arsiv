@@ -17,9 +17,9 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         hoca_adi = row['Hoca seç']
         kisi = row['İsmin nasıl gözüksün']
         yorum = row['Hoca hakkındaki yorumun']
-        icerikKontrol = IcerikKontrol("hoca")
-        if not pd.isna(yorum) and icerikKontrol.pozitif_mi(yorum):
-            yorum = icerikKontrol.metin_on_isleme(yorum)
+        # icerikKontrol = IcerikKontrol("hoca")
+        if not pd.isna(yorum):# and icerikKontrol.pozitif_mi(yorum):
+            # yorum = icerikKontrol.metin_on_isleme(yorum)
             for hoca in data['hocalar']:
                 if hoca['ad'] == hoca_adi:
                     # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
@@ -35,7 +35,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                     # Yeni yorum ekle
                     if not gorus_var_mi:
                         hoca['ogrenci_gorusleri'].append({'kisi': kisi.lower().title(), 'yorum': yorum})
-    icerikKontrol.dosya_yaz()
+    # icerikKontrol.dosya_yaz()
 # Google Sheets URL'si
 yorumlar_sheets_url = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
 
@@ -62,10 +62,10 @@ data["en_populer_hoca"] = {"hoca_adi":en_populer_hoca, "oy_sayisi":int(en_popule
 for hoca in data['hocalar']:
     name = hoca.get('ad')
     if name in yildizlar_grouped.index:
-        hoca['anlatim_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar güzel anlatır?'] * 10 * 0.7) + temel_puan
-        hoca['kolaylik_puani'] = int(yildizlar_grouped.loc[name, 'Dersini geçmek ne kadar kolaydır?'] * 10 * 0.7) + temel_puan
-        hoca['ogretme_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar iyi öğretir?'] * 10* 0.7) + temel_puan
-        hoca['eglence_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar eğlenceli anlatır?'] * 10 * 0.7) + temel_puan
+        hoca['anlatim_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar güzel anlatır?'] * 10)
+        hoca['kolaylik_puani'] = int(yildizlar_grouped.loc[name, 'Dersini geçmek ne kadar kolaydır?'] * 10) 
+        hoca['ogretme_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar iyi öğretir?'] * 10)
+        hoca['eglence_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar eğlenceli anlatır?'] * 10)
         hoca['oy_sayisi'] = int(hoca_oy_sayisi[name])
 
 # Fonksiyonu çağır ve JSON dosyasını güncelle
