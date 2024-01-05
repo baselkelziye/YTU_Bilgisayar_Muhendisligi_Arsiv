@@ -1006,7 +1006,7 @@ Açıklamalar:
   - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
   - ℹ️ Yıldızlar 15 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
@@ -1025,9 +1025,9 @@ Açıklamalar:
   - 📖 [Görüntü İşleme](#-görüntü-i̇şleme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
   - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1047,9 +1047,9 @@ Açıklamalar:
   - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
   - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1067,10 +1067,10 @@ Açıklamalar:
   - 📖 [Yönetim Bilgi Sistemleri](#-yönetim-bilgi-sistemleri)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1082,10 +1082,10 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
   - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1099,10 +1099,10 @@ Açıklamalar:
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
   - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1120,10 +1120,10 @@ Açıklamalar:
   - 📖 [Sayısal İşaret İşleme](#-sayısal-i̇şaret-i̇şleme)
   - 📖 [İstatistiksel Veri Analizi](#-i̇statistiksel-veri-analizi)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
   - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1140,10 +1140,10 @@ Açıklamalar:
   - 📖 [Lojik Devreler](#-lojik-devreler)
   - 📖 [Elektronik Devreler](#-elektronik-devreler)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
   - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1161,9 +1161,9 @@ Açıklamalar:
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
   - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1178,10 +1178,10 @@ Açıklamalar:
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
   - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1202,10 +1202,10 @@ Açıklamalar:
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
   - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1226,10 +1226,10 @@ Açıklamalar:
   - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1252,9 +1252,9 @@ Açıklamalar:
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
   - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1273,9 +1273,9 @@ Açıklamalar:
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
   - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
@@ -1290,9 +1290,9 @@ Açıklamalar:
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
   - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1308,10 +1308,10 @@ Açıklamalar:
   - 📖 [Elektronik Devreler](#-elektronik-devreler)
   - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
   - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1327,10 +1327,10 @@ Açıklamalar:
   - 📖 [Veritabanı Sistemlerinin Gerçekleştirilmesi](#-veritabanı-sistemlerinin-gerçekleştirilmesi)
   - 📖 [Veri Tabanı Sistemlerinde Güncel Konular](#-veri-tabanı-sistemlerinde-güncel-konular)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1346,10 +1346,10 @@ Açıklamalar:
   - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
   - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
@@ -1367,8 +1367,8 @@ Açıklamalar:
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
   - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ## ✍️ Yazarın Notları
