@@ -1,7 +1,6 @@
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
+"""from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import re
-import hunspell
 class IcerikKontrol:
     def __init__(self, tip): 
         # Karaliste dosyasının adı
@@ -93,3 +92,4 @@ class IcerikKontrol:
         return True
         # Pozitif skor ne kadar düşükse içerik o kadar olumsuz (muhtemelen küfür veya hakaret içeriyor)
         return positive_score > 0.4  # Eşiği ayarlayabilirsiniz
+"""
