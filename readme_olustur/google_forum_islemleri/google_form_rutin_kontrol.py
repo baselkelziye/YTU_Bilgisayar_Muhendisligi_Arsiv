@@ -30,12 +30,12 @@ def execute_command(command):
     print(f"Komut çalıştırılıyor: {command}")
     try:
         # Komutu çalıştır ve çıktıyı yakala
-        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding="utf-8")
         # Komut başarıyla çalıştıysa, çıktıyı yazdır
-        print(result.stdout.decode())
+        print(result.stdout)
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır ve script'i durdur
-        print(f"Komut hatası: {e.stderr.decode()}")
+        print(f"Komut hatası: {e.stderr}")
         return False
     return True
 
@@ -97,6 +97,7 @@ timeout = 180
 div = 3
 print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
+update_repository()
 while True:
     for key, url in urls.items():
         if check_for_updates(url):
