@@ -83,12 +83,12 @@ def update_repository():
         os.chdir(original_directory)
 
 # URL'leri kontrol et
-urls = [
-    "https://docs.google.com/spreadsheets/d/1d9B_YSk6em2wBAR85PutZkNAoSy_ET1-ojcjU3ypLE8/pub?output=csv",
-    "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/pub?output=csv",
-    "https://docs.google.com/spreadsheets/d/12Gv8QS5py8jBmbylnyLCZdZ-oxCSsVlXZUVW4JvvHAE/pub?output=csv",
-    "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/pub?output=csv"
-]
+urls = {
+    "DERS YORUMLAMA": "https://docs.google.com/spreadsheets/d/1d9B_YSk6em2wBAR85PutZkNAoSy_ET1-ojcjU3ypLE8/pub?output=csv",
+    "HOCA YORUMLAMA": "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/pub?output=csv",
+    "DERS ÖZELLİKLERİ OYLAMA": "https://docs.google.com/spreadsheets/d/12Gv8QS5py8jBmbylnyLCZdZ-oxCSsVlXZUVW4JvvHAE/pub?output=csv",
+    "HOCA ÖZELLİKLERİ OYLAMA": "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/pub?output=csv"
+}
 
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
@@ -98,12 +98,12 @@ div = 3
 print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
 while True:
-    for url in urls:
+    for key, url in urls.items():
         if check_for_updates(url):
-            print(f"Güncelleme tespit edildi: {url}")
+            print(f"Güncelleme tespit edildi: {key}")
             update_repository()
         else:
-            print(f"Güncelleme yok: {url}")
+            print(f"Güncelleme yok: {key}")
     i += 1
     print(f"{i}. kontrol tamamlandı.")
     for k in range(0, int(timeout/div)):
