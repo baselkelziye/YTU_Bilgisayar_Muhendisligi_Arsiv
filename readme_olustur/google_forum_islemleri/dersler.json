@@ -641,8 +641,8 @@
                     "yorum": "Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor."
                 }
             ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 100,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 90,
             "faydali_olabilecek_kaynaklar": [
                 "Vize soruları bazen buradan birebir alınıyor: https://www.mcqscenter.com/computer-science/operating-system",
                 "Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış."
@@ -662,7 +662,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Algoritma Analizi",
