@@ -31,5 +31,12 @@ Projeyi çalıştırmak için aşağıdaki adımı izleyin:
 ```bash
 python3 readme_olustur.py
 ```
+Eğer rutin şekilde google form girdilerinin dinlenip güncelleme işlemi yapılmasını istiyorsanız
+Linux için
+```bash
+./rutin_kontrol.sh
+```
+Windows için `rutin_kontrol.bat`
+komutlarını kullanabilirsiniz.
 
 Bu komut, projenin kök klasöründeki tüm ilgili dosyaları okuyacak ve gerekli README dosyalarını oluşturacaktır.
