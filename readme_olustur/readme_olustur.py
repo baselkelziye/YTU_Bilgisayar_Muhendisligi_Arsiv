@@ -396,6 +396,7 @@ def donemlere_gore_readme_olustur(donemler):
     # Her dönem için README.md oluştur
     for donem in donemler[DONEMLER]:
         print(f"{donem[DONEM_ADI]} README.md oluşturuluyor...")
+        os.makedirs(donem[DOSYA_YOLU], exist_ok=True)
         dosya_yolu = os.path.join(donem[DOSYA_YOLU], 'README.md')
         with open(dosya_yolu, 'w', encoding='utf-8') as f:
             f.write(f"# 📅 {donem[DONEM_ADI]}\n\n")  # Takvim emoji, dönemi temsil eder
