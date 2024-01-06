@@ -6,7 +6,7 @@ from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
 from threadler import KatkiKaydetThread
 from PyQt5.QtCore import Qt
 from progress_dialog import CustomProgressDialog
-from degiskenler import KATKIDA_BULUNANLAR_JSON_PATH, KATKIDA_BULUNANLAR, AD, GITHUB_LINK
+from degiskenler import *
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -33,14 +33,14 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.setMinimumWidth(600)
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Ekle butonu
         self.ekleBtn = QPushButton("Ekle", self)
         self.ekleBtn.clicked.connect(self.acKatkidaBulunanEkle)
-        self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.mainLayout.addWidget(self.ekleBtn)
 
         # Kaydırılabilir alan oluştur
@@ -120,6 +120,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             for kisi in self.data[KATKIDA_BULUNANLAR]:
                 btn = QPushButton(kisi[AD], self)
                 btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
+                btn.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 self.layout.addWidget(btn)
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya okunurken bir hata oluştu: {e}')
@@ -178,13 +179,13 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.progressDialog.close()
         # Değişiklikleri Kaydet butonu
         self.kaydet_btn = QPushButton('Değişiklikleri Kaydet', self)
-        self.kaydet_btn.setStyleSheet("background-color: green;")
+        self.kaydet_btn.setStyleSheet(EKLE_BUTONU_STILI)
         self.kaydet_btn.clicked.connect(self.kaydet)
         buttonsLayout.addWidget(self.kaydet_btn)
 
         # Sil butonu
         self.sil_btn = QPushButton('Sil', self)
-        self.sil_btn.setStyleSheet("background-color: red;")
+        self.sil_btn.setStyleSheet(SIL_BUTONU_STILI)
         self.sil_btn.clicked.connect(self.sil)
         buttonsLayout.addWidget(self.sil_btn)
 
