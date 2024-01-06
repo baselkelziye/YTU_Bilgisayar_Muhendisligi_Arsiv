@@ -8,6 +8,7 @@ from progress_dialog import CustomProgressDialog
 from threadler import ScriptRunnerThread
 from repo_kullanimi_window import RepoKullanimiDialog
 from giris_ekle_guncelle_window import GirisEkleGuncelleWindow
+from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
 import os
 class App(QWidget):
     def __init__(self):
@@ -24,6 +25,7 @@ class App(QWidget):
         # Butonları oluştur
         self.buttons = [
             QPushButton('Giriş Güncelle'),
+            QPushButton('Dönem Ekle/Güncelle'),
             QPushButton('Katkıda Bulunan Ekle/Güncelle'),
             QPushButton('Yazarın Notları Ekle/Güncelle'),
             QPushButton('Hoca Ekle/Güncelle'),
@@ -32,19 +34,20 @@ class App(QWidget):
             QPushButton('Readme Scripti Çalıştır'),
         ]
         # Her düğme için farklı bir renk ayarla
-        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33', '#FF5733', '#33FFF3']
+        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33', '#FF5733', '#33FF3F','#33FFF3']
         for button, color in zip(self.buttons, colors):
             button.setStyleSheet(f'background-color: {color};')
         self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
         self.progressDialog.close()
         # Her butona tıklama işleyicisi ekle
         self.buttons[0].clicked.connect(self.acGirisEkleGuncelle)
-        self.buttons[1].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
-        self.buttons[2].clicked.connect(self.acYazarinNotlari)
-        self.buttons[3].clicked.connect(self.acHocaEkleGuncelle)
-        self.buttons[4].clicked.connect(self.acDersEkleGuncelle)
-        self.buttons[5].clicked.connect(self.repoKullanimiDuzenle)
-        self.buttons[6].clicked.connect(self.readmeScriptiCalistir)
+        self.buttons[1].clicked.connect(self.acDonemEkleGuncelle)
+        self.buttons[2].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
+        self.buttons[3].clicked.connect(self.acYazarinNotlari)
+        self.buttons[4].clicked.connect(self.acHocaEkleGuncelle)
+        self.buttons[5].clicked.connect(self.acDersEkleGuncelle)
+        self.buttons[6].clicked.connect(self.repoKullanimiDuzenle)
+        self.buttons[7].clicked.connect(self.readmeScriptiCalistir)
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -52,7 +55,11 @@ class App(QWidget):
         # Layout'u ayarla
         self.setLayout(layout)
         self.show()
-        self.center(),
+        self.center()
+    def acDonemEkleGuncelle(self):
+        # Dönem Ekle/Güncelle penceresini aç
+        self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow()
+        self.donemEkleGuncelleWindow.show()
     def repoKullanimiDuzenle(self):
         self.repoKullanimiGuncelleWindow = RepoKullanimiDialog()
         self.repoKullanimiGuncelleWindow.show()
