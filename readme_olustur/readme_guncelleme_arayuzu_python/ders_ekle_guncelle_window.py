@@ -5,7 +5,7 @@ import locale
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
-
+from metin_islemleri import kisaltMetin
 # Hoca adlarını ve kısaltmalarını hazırla
 unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
 def hoca_sirala(hoca):
@@ -20,7 +20,7 @@ class DersEkleGuncelleWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Ders Ekle/Güncelle')
-
+        self.setMinimumSize(700, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)
@@ -232,7 +232,8 @@ class KaynakVeOneriDuzenleyici(QDialog):
                             satirLayout.addWidget(label)
 
                             # Bilgi (mesaj) butonu
-                            infoBtn = QPushButton(oneri, self)
+                            infoBtn = QPushButton(kisaltMetin(oneri), self)
+                            infoBtn.setToolTip(oneri)
                             infoBtn.clicked.connect(lambda checked, a=eleman, j=j, i=i: self.elemanDuzenle(a, j, oneri_index=i))
                             satirLayout.addWidget(infoBtn)
                             # Silme butonu
@@ -246,7 +247,8 @@ class KaynakVeOneriDuzenleyici(QDialog):
                 else:
                     satirLayout = QHBoxLayout()
                     # Bilgi (mesaj) butonu
-                    infoBtn = QPushButton(eleman, self)
+                    infoBtn = QPushButton(kisaltMetin(eleman), self)
+                    infoBtn.setToolTip(eleman)
                     infoBtn.clicked.connect(lambda checked, a=eleman, j=j: self.elemanDuzenle(a, oneri_index=j))
                     satirLayout.addWidget(infoBtn)
 
@@ -371,7 +373,7 @@ class YeniElemanEklemeDialog(QDialog):
 
     def initUI(self):
         self.layout = QVBoxLayout(self)
-
+        self.setMinimumSize(400, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Öneri sahibi ve öneri için etiket ve metin alanı
         if self.tur == DERSE_DAIR_ONERILER:
             self.label = QLabel('Öneri Sahibi:', self)
@@ -481,7 +483,7 @@ class DersDuzenlemeWindow(QDialog):
         self.setWindowTitle('Ders Düzenle/Ekle')
 
         self.layout = QVBoxLayout(self)
-
+        self.setMinimumSize(400, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Ders adı için alan
         self.layout.addWidget(QLabel('Ders Adı:'))
         self.adInput = QLineEdit(self.ders[AD] if self.ders else '')
