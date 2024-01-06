@@ -2,7 +2,7 @@ import sys
 import json
 from PyQt5.QtWidgets import QDialog,QVBoxLayout, QInputDialog,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
 from PyQt5.QtCore import Qt
-from degiskenler import YAZARIN_NOTLARI_JSON_PATH, ACIKLAMALAR, BASLIK
+from degiskenler import *
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -15,12 +15,12 @@ class YazarinNotlariWindow(QDialog):
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Not ekleme butonu
         self.ekleBtn = QPushButton('Not Ekle', self)
-        self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan, beyaz yazı
         self.ekleBtn.clicked.connect(self.notEkle)
         self.mainLayout.addWidget(self.ekleBtn)  # Ana layout'a ekle butonunu ekle
 
@@ -155,14 +155,14 @@ class NotDuzenleWindow(QDialog):
         else:
             self.kaydetBtn = QPushButton('Ekle', self)
         self.kaydetBtn.clicked.connect(self.kaydet)
-        self.kaydetBtn.setStyleSheet("background-color: green;")
+        self.kaydetBtn.setStyleSheet(EKLE_BUTONU_STILI)
         buttonLayout.addWidget(self.kaydetBtn)
 
         if self.idx is not None:  # Var olan bir not düzenleniyorsa sil butonunu göster
             # Sil butonu
             self.silBtn = QPushButton('Notu Sil', self)
             self.silBtn.clicked.connect(self.notSil)
-            self.silBtn.setStyleSheet("background-color: red;")
+            self.silBtn.setStyleSheet(SIL_BUTONU_STILI)
             buttonLayout.addWidget(self.silBtn)
 
         self.layout.addLayout(buttonLayout)  # Buton düzenini ana düzene ekle

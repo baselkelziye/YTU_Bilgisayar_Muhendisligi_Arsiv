@@ -123,9 +123,9 @@ def hocalari_readme_ye_ekle(bilgiler):
                 f.write("  - 🧠 Dersi Öğrenir Miyim:\tbilinmiyor\n")
                 f.write("  - 🎉 Derste Eğlenir Miyim:\tbilinmiyor\n")
             if OY_SAYISI in hoca:
-                f.write(f"  - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                f.write(f"  - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
             else:
-                f.write(f"  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten]({YILDIZ_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                f.write(f"  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
             
 
 def donem_siralamasi(donem_key):
