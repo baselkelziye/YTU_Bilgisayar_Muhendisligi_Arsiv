@@ -81,7 +81,7 @@ def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     return '★' * dolu_yildiz_sayisi + '☆' * bos_yildiz_sayisi
 # Bilgileri README'ye ekleyen fonksiyon
 def hocalari_readme_ye_ekle(bilgiler):
-    if HOCALAR not in bilgiler or len(bilgiler[HOCALAR]) == 0:
+    if HOCALAR not in bilgiler or len(bilgiler[HOCALAR]) !=0:
         bilgiler[HOCALAR] = [hoca for hoca in bilgiler[HOCALAR] if hoca[AD] != '']
     else:
         print("Hoca bilgileri bulunamadı.")
@@ -120,14 +120,13 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"\n\n\n### {hoca_emoji} {hoca[AD]} {populer_isaret}{populer_bilgi}\n")
             f.write(f"- 🚪 **Ofis:** {hoca[OFIS]}\n")
             f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca[LINK]}]({hoca[LINK]})\n")
+            f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             if OGRENCI_GORUSLERI in hoca and isinstance(hoca[OGRENCI_GORUSLERI], list) and len(hoca[OGRENCI_GORUSLERI]) > 0:
-                f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
                 for gorus in hoca[OGRENCI_GORUSLERI]:
                     f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
-                f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+            f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+            f.write("- 📚 **Verdiği Dersler:**\n")
             if DERSLER in hoca and isinstance(hoca[DERSLER], list) and len(hoca[DERSLER]) > 0:
-                f.write("- 📚 **Verdiği Dersler:**\n")
-                
                 for ders in hoca[DERSLER]:
                     if ders != dersler['en_populer_ders']['ders_adi']:
                         f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}\n")
@@ -136,6 +135,8 @@ def hocalari_readme_ye_ekle(bilgiler):
                         populer_bilgi = f" En popüler ders ({dersler['en_populer_ders'][OY_SAYISI]} oy)" if ders == dersler['en_populer_ders']['ders_adi'] else ""
                         ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
                         f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
+            else:
+                f.write("  - 📖 Ders bilgileri bulunamadı.\n")
             f.write(f"- ⭐ **Yıldız Sayıları:**\n")
             if ANLATIM_PUANI in hoca and isinstance(hoca[ANLATIM_PUANI], int) and hoca[ANLATIM_PUANI] > 0:
                 f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca[ANLATIM_PUANI])}\n")
@@ -171,7 +172,7 @@ def baslik_linki_olustur(baslik):
     return f"(#-{baslik})"
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
-    if DERSLER not in dersler or isinstance(dersler[DERSLER], list):
+    if DERSLER not in dersler or not isinstance(dersler[DERSLER], list):
         dersler[DERSLER] = []
     gruplanmis_dersler = {}
     for ders in dersler[DERSLER]:
@@ -252,8 +253,9 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
     """
     kisaltmalar = {}
     for hoca in data[HOCALAR]:
-        kisaltma = hoca_kisaltma_olustur(hoca[AD])
-        kisaltmalar[kisaltma] = hoca[AD]
+        if AD in hoca and hoca[AD] != "":
+            kisaltma = hoca_kisaltma_olustur(hoca[AD])
+            kisaltmalar[kisaltma] = hoca[AD]
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write("## 📚 Hoca Kısaltmaları\n\n")
         for kisaltma in sorted(kisaltmalar.keys()):
