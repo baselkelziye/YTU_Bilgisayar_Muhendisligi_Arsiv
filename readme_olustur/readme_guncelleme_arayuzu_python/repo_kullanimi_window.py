@@ -18,7 +18,6 @@ class TalimatDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.talimatSayisiLabel = QLabel(self)
-        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data[TALIMATLAR])} talimat')
         self.layout.addWidget(self.talimatSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -36,10 +35,10 @@ class TalimatDialog(QDialog):
         self.yenile()
         
         # Ekle butonunu ekle
-        ekleBtn = QPushButton("Talimat Ekle", self)
-        ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
-        ekleBtn.clicked.connect(self.talimatEkle)
-        self.layout.addWidget(ekleBtn)
+        self.ekleBtn = QPushButton("Talimat Ekle", self)
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
+        self.ekleBtn.clicked.connect(self.talimatEkle)
+        self.layout.addWidget(self.ekleBtn)
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
@@ -52,7 +51,7 @@ class TalimatDialog(QDialog):
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, kavram in enumerate(self.repo_data['talimatlar']):
+        for idx, kavram in enumerate(self.repo_data[TALIMATLAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
                 match = query.lower() in kavram.lower()
@@ -62,7 +61,7 @@ class TalimatDialog(QDialog):
                         widget.setVisible(match)
                 if match:
                     size += 1
-        if size == len(self.repo_data['talimatlar']):
+        if size == len(self.repo_data[TALIMATLAR]):
             self.clearFilters(is_clicked=False)
             return
         self.talimatSayisiLabel.setText(f'{size} talimat bulundu')
