@@ -13,8 +13,8 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 from degiskenler import *
-DERS_YILDIZLARI_DOSYASI = DERS_OYLAMA_LINKI
-DERS_YORUMLARI_DOSYASI = DERS_YORUMLAMA_LINKI
+DERS_YILDIZLARI_DOSYASI = DERS_OYLAMA_LINKI_CSV
+DERS_YORUMLARI_DOSYASI = DERS_YORUMLAMA_LINKI_CSV
 
 
 def guncelle_ogrenci_gorusleri(data, sheets_url):
