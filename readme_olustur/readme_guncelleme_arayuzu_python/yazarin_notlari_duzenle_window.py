@@ -3,6 +3,7 @@ import json
 from PyQt5.QtWidgets import QDialog,QVBoxLayout, QInputDialog,QLabel, QDesktopWidget, QWidget, QPushButton, QHBoxLayout, QMessageBox, QTextEdit, QApplication, QScrollArea
 from PyQt5.QtCore import Qt
 from degiskenler import *
+from metin_islemleri import kisaltMetin
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
@@ -97,7 +98,8 @@ class YazarinNotlariWindow(QDialog):
             self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
 
             for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
-                btn = QPushButton(f"Not {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
+                btn = QPushButton(f"Not {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget)  # İlk 30 karakteri göster
+                btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
                 self.notlarLayout.addWidget(btn)
         except Exception as e:
