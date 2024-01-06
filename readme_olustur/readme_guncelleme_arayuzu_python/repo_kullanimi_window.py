@@ -1,7 +1,7 @@
-from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QApplication, QInputDialog, QMessageBox, QHBoxLayout
+from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QInputDialog, QMessageBox, QHBoxLayout
 import json
 from PyQt5.QtCore import Qt
-from degiskenler import REPO_KULLANIMI_JSON_PATH, ACIKLAMA, TALIMAT, KAVRAM, ACIKLAMALAR, TALIMATLAR, KAVRAMLAR, BASLIK
+from degiskenler import *
 class TalimatDialog(QDialog):
     def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
@@ -14,7 +14,7 @@ class TalimatDialog(QDialog):
         self.layout = QVBoxLayout(self)
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.talimatSayisiLabel = QLabel(self)
@@ -37,7 +37,7 @@ class TalimatDialog(QDialog):
         
         # Ekle butonunu ekle
         ekleBtn = QPushButton("Talimat Ekle", self)
-        ekleBtn.setStyleSheet("background-color: green; color: white;")
+        ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
         ekleBtn.clicked.connect(self.talimatEkle)
         self.layout.addWidget(ekleBtn)
 
@@ -104,12 +104,12 @@ class TalimatDialog(QDialog):
             
             talimatBtn = QPushButton(talimat, self)
             talimatBtn.clicked.connect(lambda checked, index=i: self.talimatDuzenle(index))
-            talimatBtn.setStyleSheet("background-color: lightgreen; color: black;")
+            talimatBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             talimatLayout.addWidget(talimatBtn, 3)
             talimatBtn.setMaximumWidth(500)
             
             silBtn = QPushButton("Sil", self)
-            silBtn.setStyleSheet("background-color: red; color: white;")
+            silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.talimatSil(index))
             silBtn.setFixedWidth(50)
             talimatLayout.addWidget(silBtn, 1)
@@ -189,7 +189,7 @@ class KavramDetayDialog(QDialog):
         self.aciklamaListele()
 
         self.ekleBtn = QPushButton("Açıklama Ekle", self)
-        self.ekleBtn.setStyleSheet("background-color: green; color: white;")
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
         self.ekleBtn.clicked.connect(self.aciklamaEkle)
         self.layout.addWidget(self.ekleBtn)
 
@@ -223,12 +223,12 @@ class KavramDetayDialog(QDialog):
 
 
             duzenleBtn = QPushButton("Düzenle", self)
-            duzenleBtn.setStyleSheet("background-color: green; color: white;")
+            duzenleBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             duzenleBtn.clicked.connect(lambda checked, index=i: self.aciklamaDuzenle(index))
             aciklamaLayout.addWidget(duzenleBtn)
 
             silBtn = QPushButton("Sil", self)
-            silBtn.setStyleSheet("background-color: red; color: white;")
+            silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.aciklamaSil(index))
             aciklamaLayout.addWidget(silBtn)
 
@@ -276,7 +276,7 @@ class KavramDialog(QDialog):
         self.layout = QVBoxLayout(self)
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.kavramSayisiLabel = QLabel(self)
@@ -296,7 +296,7 @@ class KavramDialog(QDialog):
 
         # Ekle butonunu ekle
         ekleBtn = QPushButton("Kavram Ekle", self)
-        ekleBtn.setStyleSheet("background-color: green; color: white;")
+        ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
         ekleBtn.clicked.connect(self.kavramEkle)
         self.layout.addWidget(ekleBtn)
 
@@ -369,14 +369,14 @@ class KavramDialog(QDialog):
 
             # Kavramı düzenleme butonu
             duzenleBtn = QPushButton("Adı Düzenle", self)
-            duzenleBtn.setStyleSheet("background-color: orange; color: white;")
+            duzenleBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             duzenleBtn.clicked.connect(lambda checked, index=i: self.kavramAdiDuzenle(index))
             duzenleBtn.setFixedWidth(70)
             kavramLayout.addWidget(duzenleBtn, 1)
             
             # Kavramı silme butonu
             silBtn = QPushButton("Sil", self)
-            silBtn.setStyleSheet("background-color: red; color: white;")
+            silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.kavramSil(index))
             silBtn.setFixedWidth(50)
             kavramLayout.addWidget(silBtn, 1)
@@ -448,7 +448,7 @@ class AciklamaDialog(QDialog):
         self.layout = QVBoxLayout(self)
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.aciklamaSayisiLabel = QLabel(self)
@@ -468,7 +468,7 @@ class AciklamaDialog(QDialog):
 
         # Ekle butonunu ekle
         ekleBtn = QPushButton("Açıklama Ekle", self)
-        ekleBtn.setStyleSheet("background-color: green; color: white;")
+        ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)
         ekleBtn.clicked.connect(self.aciklamaEkle)
         self.layout.addWidget(ekleBtn)
 
@@ -533,11 +533,13 @@ class AciklamaDialog(QDialog):
             
             aciklamaBtn = QPushButton(aciklama, self)
             aciklamaBtn.clicked.connect(lambda checked, index=i: self.aciklamaDuzenle(index))
-            aciklamaBtn.setStyleSheet("background-color: lightgreen; color: black;")
+            aciklamaBtn.setStyleSheet(
+                GUNCELLE_BUTTON_STILI
+            )
             aciklamaLayout.addWidget(aciklamaBtn, 3)
             aciklamaBtn.setMaximumWidth(500)
             silBtn = QPushButton("Sil", self)
-            silBtn.setStyleSheet("background-color: red; color: white;")
+            silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.aciklamaSil(index))
             silBtn.setFixedWidth(50)
             aciklamaLayout.addWidget(silBtn, 1)
@@ -562,7 +564,6 @@ class AciklamaDialog(QDialog):
 
     def yenile(self):
         self.aciklamaListele()
-        self.adjustSize()  # Pencere boyutunu içeriklere göre ayarla
 
     def aciklamaDuzenle(self, index):
         aciklama = self.repo_data[ACIKLAMALAR][index]
