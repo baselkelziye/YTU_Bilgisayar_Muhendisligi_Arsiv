@@ -1,26 +1,27 @@
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from degiskenler import *
-from PyQt5.QtWidgets import QApplication,QLabel, QMessageBox, QPushButton, QDesktopWidget, QHBoxLayout, QDialog, QVBoxLayout, QTextEdit, QInputDialog
-import sys
+from PyQt5.QtWidgets import QLabel, QMessageBox, QPushButton, QDesktopWidget, QHBoxLayout, QDialog, QVBoxLayout, QTextEdit, QInputDialog
+from metin_islemleri import kisaltMetin
 import json
 
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
-    def __init__(self, json_path = GIRIS_JSON_PATH):
+    def __init__(self):
         super().__init__()
-        self.json_path = json_path
     def initUI(self):
         super().initUI()
         self.baslik_label = QLabel('Başlık:', self)
         self.mainLayout.insertWidget(1, self.baslik_label)
-        self.baslik_duzenle_btn = QPushButton(self.data[BASLIK], self)
+        self.baslik_duzenle_btn = QPushButton(kisaltMetin(self.data[BASLIK]), self)
         self.baslik_duzenle_btn.clicked.connect(lambda: self.aciklamaDuzenle(BASLIK))
+        self.baslik_duzenle_btn.setToolTip(self.data[BASLIK])  # Tam metni araç ipucu olarak ekle
         self.mainLayout.insertWidget(2, self.baslik_duzenle_btn)
         self.aciklama_label = QLabel('Açıklama:', self)
         self.mainLayout.insertWidget(3, self.aciklama_label)
-        self.aciklama_duzenle_btn = QPushButton(self.data[ACIKLAMA], self)
+        self.aciklama_duzenle_btn = QPushButton(kisaltMetin(self.data[ACIKLAMA]), self)
+        self.aciklama_duzenle_btn.setToolTip(self.data[ACIKLAMA])  # Tam metni araç ipucu olarak ekle
         self.aciklama_duzenle_btn.clicked.connect(lambda: self.aciklamaDuzenle(ACIKLAMA))
         self.mainLayout.insertWidget(4, self.aciklama_duzenle_btn) 
-        self.ekleBtn.setText('İçerik Ekle')
+        self.ekleBtn.setText('İçindekiler Ekle')
         self.setWindowTitle('Giriş Güncelleme')
     def notlariYukle(self):
         self.data = self.jsonDosyasiniYukle()
@@ -32,10 +33,11 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             if ACIKLAMA not in self.data:
                 self.data[ACIKLAMA] = VARSAYILAN_GIRIS_ACIKLAMA
             icindekiler_sayisi = len(self.data[ICINDEKILER])  # Not sayısını hesapla
-            self.notSayisiLabel.setText(f'Toplam {icindekiler_sayisi} içerik')  # Not sayısını etikette güncelle
+            self.notSayisiLabel.setText(f'Toplam {icindekiler_sayisi} içindekiler')  # Not sayısını etikette güncelle
 
             for idx, not_ in enumerate(self.data[ICINDEKILER]):
-                btn = QPushButton(f"İçerik {idx + 1}: {not_[:30]}...", self.scrollWidget)  # İlk 30 karakteri göster
+                btn = QPushButton(f"İçindekiler {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget)  # İlk 30 karakteri göster
+                btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
                 self.notlarLayout.addWidget(btn)
         except Exception as e:
@@ -58,7 +60,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 if isinstance(widget, QPushButton):
                     widget.show()
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
-            self.notSayisiLabel.setText(f'Toplam {len(self.data[ICINDEKILER])} içerik')  # Not sayısını etikette güncelle
+            self.notSayisiLabel.setText(f'Toplam {len(self.data[ICINDEKILER])} içindekiler')  # Not sayısını etikette güncelle
     def searchNotes(self, query):
         if not query:
             self.clearFilters(is_clicked=False)
@@ -75,7 +77,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         if size == len(self.data[ICINDEKILER]):
             self.clearFilters(is_clicked=False)
             return
-        self.notSayisiLabel.setText(f'{size} içerik bulundu')
+        self.notSayisiLabel.setText(f'{size} içindekiler bulundu')
         if query:
             self.clearFiltersButton.show()
         else:
@@ -88,6 +90,12 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
 
         if ok and yeni_aciklama != eski_aciklama:
             self.data[anahtar] = yeni_aciklama
+            if baslik == "Başlık":
+                self.baslik_duzenle_btn.setText(kisaltMetin(yeni_aciklama))
+                self.baslik_duzenle_btn.setToolTip(yeni_aciklama)
+            else:
+                self.aciklama_duzenle_btn.setText(kisaltMetin(yeni_aciklama))
+                self.aciklama_duzenle_btn.setToolTip(yeni_aciklama)
             self.kaydet()
 
     def kaydet(self):
@@ -146,15 +154,15 @@ class IcindekilerDuzenleWindow(QDialog):
         self.move(qr.topLeft())
 
     def kaydet(self):
-        yeni_icerik = self.input.toPlainText().strip()
-        if not yeni_icerik:
-            QMessageBox.warning(self, 'Hata', 'İçerik boş olamaz!')
+        yeni_icindekiler = self.input.toPlainText().strip()
+        if not yeni_icindekiler:
+            QMessageBox.warning(self, 'Hata', 'İçindekiler boş olamaz!')
             return
 
         if self.idx is None:
-            self.data[ICINDEKILER].append(yeni_icerik)
+            self.data[ICINDEKILER].append(yeni_icindekiler)
         else:
-            self.data[ICINDEKILER][self.idx] = yeni_icerik
+            self.data[ICINDEKILER][self.idx] = yeni_icindekiler
 
         self.kaydetVeKapat()
 
