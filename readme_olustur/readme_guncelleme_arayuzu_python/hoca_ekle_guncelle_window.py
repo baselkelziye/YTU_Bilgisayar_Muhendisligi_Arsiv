@@ -28,6 +28,7 @@ class HocaEkleGuncelleWindow(QDialog):
     def initUI(self):
         self.setWindowTitle('Hocaları Ekle/Güncelle')
         self.mainLayout = QVBoxLayout(self)  # Ana layout
+        self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
@@ -170,7 +171,7 @@ class HocaDuzenlemeWindow(QDialog):
             self.setWindowTitle('Hoca Düzenle')
         else:
             self.setWindowTitle('Hoca Ekle')
-
+        self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.layout = QVBoxLayout(self)
         # Ünvan için alan
         self.layout.addWidget(QLabel('Ünvan:'))

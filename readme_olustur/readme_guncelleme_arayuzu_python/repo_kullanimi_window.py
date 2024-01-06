@@ -2,6 +2,7 @@ from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInp
 import json
 from PyQt5.QtCore import Qt
 from degiskenler import *
+from metin_islemleri import kisaltMetin
 class TalimatDialog(QDialog):
     def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
@@ -101,7 +102,8 @@ class TalimatDialog(QDialog):
         for i, talimat in enumerate(self.repo_data[TALIMATLAR]):
             talimatLayout = QHBoxLayout()
             
-            talimatBtn = QPushButton(talimat, self)
+            talimatBtn = QPushButton(kisaltMetin(talimat), self)
+            # talimatBtn.setToolTip(talimat)
             talimatBtn.clicked.connect(lambda checked, index=i: self.talimatDuzenle(index))
             talimatBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             talimatLayout.addWidget(talimatBtn, 3)
@@ -215,7 +217,8 @@ class KavramDetayDialog(QDialog):
         for i, aciklama in enumerate(self.kavram[ACIKLAMALAR]):
             aciklamaLayout = QHBoxLayout()
 
-            aciklamaLabel = QLabel(aciklama, self)
+            aciklamaLabel = QLabel(kisaltMetin(aciklama), self)
+            aciklamaLabel.setToolTip(aciklama)
             aciklamaLabel.setWordWrap(True)
             aciklamaLabel.setFixedWidth(420)  # Maksimum yükseklik değerini istediğiniz bir değere ayarlayın
             aciklamaLayout.addWidget(aciklamaLabel)
@@ -360,7 +363,8 @@ class KavramDialog(QDialog):
             kavramLayout = QHBoxLayout()
             
             # Kavram adını gösteren buton
-            kavramBtn = QPushButton(kavram[KAVRAM], self)
+            kavramBtn = QPushButton(kisaltMetin(kavram[KAVRAM]), self)
+            kavramBtn.setToolTip(kavram[KAVRAM])
             kavramBtn.clicked.connect(lambda checked, index=i: self.kavramDuzenle(index))
             kavramBtn.setStyleSheet("background-color: lightgreen; color: black;")
             kavramBtn.setMaximumWidth(500)
@@ -530,7 +534,8 @@ class AciklamaDialog(QDialog):
         for i, aciklama in enumerate(self.repo_data[ACIKLAMALAR]):
             aciklamaLayout = QHBoxLayout()
             
-            aciklamaBtn = QPushButton(aciklama, self)
+            aciklamaBtn = QPushButton(kisaltMetin(aciklama), self)
+            # aciklamaBtn.setToolTip(aciklama)
             aciklamaBtn.clicked.connect(lambda checked, index=i: self.aciklamaDuzenle(index))
             aciklamaBtn.setStyleSheet(
                 GUNCELLE_BUTTON_STILI
