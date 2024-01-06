@@ -16,7 +16,7 @@ sys.path.append(absolute_path)
 from degiskenler import *
 temel_puan = 30
 # Google Sheets dosyasının URL'si
-yildizlar_sheets_url = HOCA_OYLAMA_LINKI
+yildizlar_sheets_url = HOCA_OYLAMA_LINKI_CSV
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     df = pd.read_csv(sheets_url)
@@ -47,13 +47,14 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                         hoca[OGRENCI_GORUSLERI].append({KISI: kisi.lower().title(), YORUM: yorum})
     # icerikKontrol.dosya_yaz()
 # Google Sheets URL'si
-yorumlar_sheets_url = HOCA_YORULMALA_LINKI
+yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 
 # Veriyi indir ve DataFrame olarak oku
 yildizlar_df = pd.read_csv(yildizlar_sheets_url)
 
 
 # Sadece sayısal sütunları al ve ortalama hesapla
+print(yildizlar_df.columns)
 yildizlar_numeric_columns = yildizlar_df.columns.drop([ZAMAN_DAMGASI, HOCA_SEC])  # Sayısal olmayan sütunları çıkar
 yildizlar_grouped = yildizlar_df.groupby(HOCA_SEC)[yildizlar_numeric_columns].mean()
 
