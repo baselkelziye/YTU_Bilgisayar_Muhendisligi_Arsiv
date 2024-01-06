@@ -72,8 +72,7 @@ def json_oku(json_dosyasi):
         with open(json_dosyasi, 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        print(f"{json_dosyasi} dosyası bulunamadı. Lütfen tüm json dosyalarını oluşturuduğunuzdan emin olun.")
-        exit(1)
+        return None
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     if puan % 10 !=0:
         puan +=10
@@ -82,41 +81,63 @@ def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     return '★' * dolu_yildiz_sayisi + '☆' * bos_yildiz_sayisi
 # Bilgileri README'ye ekleyen fonksiyon
 def hocalari_readme_ye_ekle(bilgiler):
-    bilgiler[HOCALAR] = [hoca for hoca in bilgiler[HOCALAR] if hoca[AD] != '']
+    if HOCALAR not in bilgiler or len(bilgiler[HOCALAR]) == 0:
+        bilgiler[HOCALAR] = [hoca for hoca in bilgiler[HOCALAR] if hoca[AD] != '']
+    else:
+        print("Hoca bilgileri bulunamadı.")
+        return
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
-        f.write(f"\n\n\n## 🎓 {bilgiler['bolum_adi']}\n")
-        f.write(f"📚 {bilgiler['bolum_aciklamasi']}\n\n\n\n")
+        if BOLUM_ADI in bilgiler:
+            f.write(f"\n\n\n## 🎓 {bilgiler[BOLUM_ADI]}\n")
+        else:
+            print("Hocalar Bölüm adı bulunamadı.")
+        if BOLUM_ACIKLAMASI in bilgiler:
+            f.write(f"📚 {bilgiler[BOLUM_ACIKLAMASI]}\n\n\n\n")
+        else:
+            print("Hocalar Bölüm açıklaması bulunamadı.")
         en_populer_hoca_oy_sayisi = 0
         en_populer_hoca_adi = ""
         if EN_POPULER_HOCA in bilgiler and HOCA_ADI in bilgiler[EN_POPULER_HOCA]:
             en_populer_hoca_adi = bilgiler[EN_POPULER_HOCA][HOCA_ADI]
             if OY_SAYISI in bilgiler[EN_POPULER_HOCA]:
                 en_populer_hoca_oy_sayisi = bilgiler[EN_POPULER_HOCA][OY_SAYISI]
+            else:
+                en_populer_hoca_oy_sayisi = 1
+                print("En popüler hoca oy sayısı bulunamadı.")
+        else:
+            print("En popüler hoca bilgileri bulunamadı.")
         
         for hoca in sorted(bilgiler[HOCALAR], key=hoca_siralama_anahtari):
-            populer_isaret = "👑" if hoca[AD] == en_populer_hoca_adi else ""
+            if AD not in hoca:
+                hoca[AD] = ""
+            if OFIS not in hoca:
+                hoca[OFIS] = ""
+            if LINK not in hoca:
+                hoca[LINK] = ""
+            populer_isaret = "👑" if AD in hoca and  hoca[AD] == en_populer_hoca_adi else ""
             hoca_emoji = "👨‍🏫" if hoca[ERKEK_MI] else "👩‍🏫"
             populer_bilgi = f" En popüler hoca ({en_populer_hoca_oy_sayisi} oy)" if hoca[AD] == en_populer_hoca_adi else ""
             f.write(f"\n\n\n### {hoca_emoji} {hoca[AD]} {populer_isaret}{populer_bilgi}\n")
             f.write(f"- 🚪 **Ofis:** {hoca[OFIS]}\n")
             f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca[LINK]}]({hoca[LINK]})\n")
-            if OGRENCI_GORUSLERI in hoca:
+            if OGRENCI_GORUSLERI in hoca and isinstance(hoca[OGRENCI_GORUSLERI], list) and len(hoca[OGRENCI_GORUSLERI]) > 0:
                 f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
                 for gorus in hoca[OGRENCI_GORUSLERI]:
                     f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
                 f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
-
-            f.write("- 📚 **Verdiği Dersler:**\n")
-            for ders in hoca[DERSLER]:
-                if ders != dersler['en_populer_ders']['ders_adi']:
-                    f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}\n")
-                else:
-                    populer_isaret = "👑"
-                    populer_bilgi = f" En popüler ders ({dersler['en_populer_ders'][OY_SAYISI]} oy)" if ders == dersler['en_populer_ders']['ders_adi'] else ""
-                    ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
-                    f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
+            if DERSLER in hoca and isinstance(hoca[DERSLER], list) and len(hoca[DERSLER]) > 0:
+                f.write("- 📚 **Verdiği Dersler:**\n")
+                
+                for ders in hoca[DERSLER]:
+                    if ders != dersler['en_populer_ders']['ders_adi']:
+                        f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}\n")
+                    else:
+                        populer_isaret = "👑"
+                        populer_bilgi = f" En popüler ders ({dersler['en_populer_ders'][OY_SAYISI]} oy)" if ders == dersler['en_populer_ders']['ders_adi'] else ""
+                        ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
+                        f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
             f.write(f"- ⭐ **Yıldız Sayıları:**\n")
-            if ANLATIM_PUANI in hoca and hoca[ANLATIM_PUANI] != 0:
+            if ANLATIM_PUANI in hoca and isinstance(hoca[ANLATIM_PUANI], int) and hoca[ANLATIM_PUANI] > 0:
                 f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca[ANLATIM_PUANI])}\n")
                 f.write(f"  - 🛣️ Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca[KOLAYLIK_PUANI])}\n")
                 f.write(f"  - 🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca[OGRETME_PUNAI])}\n")
@@ -126,7 +147,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                 f.write("  - 🛣️ Dersi Kolay Geçer Miyim:\tbilinmiyor\n")
                 f.write("  - 🧠 Dersi Öğrenir Miyim:\tbilinmiyor\n")
                 f.write("  - 🎉 Derste Eğlenir Miyim:\tbilinmiyor\n")
-            if OY_SAYISI in hoca:
+            if OY_SAYISI in hoca and isinstance(hoca[OY_SAYISI], int) and hoca[OY_SAYISI] > 0:
                 f.write(f"  - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
             else:
                 f.write(f"  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
@@ -134,9 +155,12 @@ def hocalari_readme_ye_ekle(bilgiler):
 
 def donem_siralamasi(donem_key):
     if donem_key == "Mesleki Seçmeli":
-        return (999, 999)  # Mesleki Seçmeli dersleri en sona koy
-    yil, donem = donem_key.split(" - ")
-    return (int(yil.split('.')[0]), 0 if donem == "Güz" else 1)
+        return (998, 998)  # Mesleki Seçmeli dersleri en sona koy
+    try:
+        yil, donem = donem_key.split(" - ")
+        return (int(yil.split('.')[0]), 0 if donem == "Güz" else 1)
+    except:
+        return (999, 999)
 
 def baslik_linki_olustur(baslik):
     # Emoji ve özel karakterleri kaldır
@@ -147,21 +171,26 @@ def baslik_linki_olustur(baslik):
     return f"(#-{baslik})"
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
+    if DERSLER not in dersler or isinstance(dersler[DERSLER], list):
+        dersler[DERSLER] = []
     gruplanmis_dersler = {}
     for ders in dersler[DERSLER]:
-        if ders[YIL] > 0:
+        if YIL in ders and ders[YIL] > 0:
             donem_key = f"{ders[YIL]}. Yıl - {ders[DONEM]}"
-        else:
+        elif TIP in ders:
             donem_key = ders[TIP]
+        else:
+            print("Ders bilgileri bulunamadı.")
+            continue
         if donem_key not in gruplanmis_dersler:
             gruplanmis_dersler[donem_key] = []
         gruplanmis_dersler[donem_key].append(ders)
     en_populer_ders_oy_sayisi = 0
     en_populer_ders_adi = ""
-    if 'en_populer_ders' in dersler and 'ders_adi' in dersler['en_populer_ders']:
-        en_populer_ders_adi = dersler['en_populer_ders']['ders_adi']
-        if OY_SAYISI in dersler['en_populer_ders']:
-            en_populer_ders_oy_sayisi = dersler['en_populer_ders'][OY_SAYISI]
+    if EN_POPULER_DERS in dersler and DERS_ADI in dersler[EN_POPULER_DERS]:
+        en_populer_ders_adi = dersler[EN_POPULER_DERS][DERS_ADI]
+        if OY_SAYISI in dersler[EN_POPULER_DERS]:
+            en_populer_ders_oy_sayisi = dersler[EN_POPULER_DERS][OY_SAYISI]
     
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n\n\n## 📚 {dersler['bolum_adi']} \n")
@@ -283,20 +312,39 @@ dersler[DERSLER] = sorted(dersler[DERSLER], key=sıralama_anahtarı)
 hocalar = json_oku(HOCALAR_JSON_NAME)
 giris_bilgileri = json_oku(GIRIS_JSON_NAME)
 katkida_bulunanlar = json_oku(KATKIDA_BULUNANLAR_JSON_NAME)
-print("Giriş bilgileri README'ye ekleniyor...")
-readme_ye_giris_ekle(giris_bilgileri)
-print("Repo kullanımı README'ye ekleniyor...")
-readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
-print("Ders bilgileri README'ye ekleniyor...")
-dersleri_readme_ye_ekle(dersler)
-print("Hoca bilgileri README'ye ekleniyor...")
-hocalari_readme_ye_ekle(hocalar)
-print("Yazar notları README'ye ekleniyor...")
-readme_ye_yazar_notlari_ekle(yazar_notlari)
-print("Hoca kısaltmaları README'ye ekleniyor...")
-readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
-print("Katkıda bulunanlar README'ye ekleniyor...")
-readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
+if giris_bilgileri is not None:
+    print("Giriş bilgileri README'ye ekleniyor...")
+    readme_ye_giris_ekle(giris_bilgileri)
+else:
+    print("Giriş bilgileri bulunamadı...")
+if repo_kullanimi_bilgileri is not None:
+    print("Repo kullanımı README'ye ekleniyor...")
+    readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
+else:
+    print("Repo kullanımı bilgileri bulunamadı...")
+if dersler is not None:
+    print("Ders bilgileri README'ye ekleniyor...")
+    dersleri_readme_ye_ekle(dersler)
+if hocalar is not None:
+    print("Hoca bilgileri README'ye ekleniyor...")
+    hocalari_readme_ye_ekle(hocalar)
+else:
+    print("Hoca bilgileri bulunamadı...")
+if yazar_notlari is not None:
+    print("Yazar notları README'ye ekleniyor...")
+    readme_ye_yazar_notlari_ekle(yazar_notlari)
+else:
+    print("Yazar notları bulunamadı...")
+if hocalar is not None:
+    print("Hoca kısaltmaları README'ye ekleniyor...")
+    readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
+else:
+    print("Hoca kısaltmaları bulunamadı...")
+if katkida_bulunanlar is not None:
+    print("Katkıda bulunanlar README'ye ekleniyor...")
+    readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
+else:
+    print("Katkıda bulunanlar bulunamadı...")
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
@@ -304,7 +352,6 @@ BURASI ANA README OLUŞTURMA KISMI
 """
 BURASI DERSLER README OLUŞTURMA KISMI
 """
-print("Dersler README.md oluşturuluyor...")
 def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = False):
     with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
         # Ders başlığı
@@ -372,20 +419,23 @@ def klasorde_baska_dosya_var_mi(ders_klasoru):
     # README.md dosyasını çıkar
     icerikler = [dosya for dosya in icerikler if dosya.lower() != "readme.md"]
     return len(icerikler) > 0  # Eğer içerikler listesi boş değilse, başka dosya var demektir.
-            
-for ders in dersler[DERSLER]:
-    print(f"{ders[AD]} README.md oluşturuluyor...")
-    ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("..",ders[AD])
-    if ders_klasoru is not None:
-        baska_dosya_var_mi= klasorde_baska_dosya_var_mi(ders_klasoru)
-        if not baska_dosya_var_mi:
-            ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
+if dersler is not None:  
+    print("Dersler README.md oluşturuluyor...")          
+    for ders in dersler[DERSLER]:
+        print(f"{ders[AD]} README.md oluşturuluyor...")
+        ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("..",ders[AD])
+        if ders_klasoru is not None:
+            baska_dosya_var_mi= klasorde_baska_dosya_var_mi(ders_klasoru)
+            if not baska_dosya_var_mi:
+                ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
+            else:
+                ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = False)
         else:
-            ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = False)
-    else:
-        ders_klasoru = ders_klasoru_olustur(ders)
-        ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
-    print(f"{ders[AD]} README.md oluşturuldu.")
+            ders_klasoru = ders_klasoru_olustur(ders)
+            ders_klasorune_readme_olustur(ders, ders_klasoru, klasor_sonradan_olustu = True)
+        print(f"{ders[AD]} README.md oluşturuldu.")
+else:
+    print("Ders bilgileri bulunamadı.")
 """
 BURASI DERSLER README OLUŞTURMA KISMI
 """
@@ -394,9 +444,7 @@ BURASI DERSLER README OLUŞTURMA KISMI
 """
 Burası Dönem Readme oluşturma kısmı
 """
-print("Dönem README'leri oluşturuluyor...")
 def donemlere_gore_readme_olustur(donemler):
-
     # Her dönem için README.md oluştur
     for donem in donemler[DONEMLER]:
         print(f"{donem[DONEM_ADI]} README.md oluşturuluyor...")
@@ -461,7 +509,11 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders
         print(f"{ders[AD]} README.md dönemine eklendi.")
 
 donemler = json_oku(DONEMLER_JSON_NAME)
-print("Dönem bilgileri README'ye ekleniyor...")
-donemlere_gore_readme_olustur(donemler)
-print("Ders bilgileri README'ye ekleniyor...")
-ders_bilgilerini_readme_ile_birlestir(dersler[DERSLER], donemler[DONEMLER], dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI])
+if donemler is not None:
+    print("Dönem README'leri oluşturuluyor...")
+    print("Dönem bilgileri README'ye ekleniyor...")
+    donemlere_gore_readme_olustur(donemler)
+    print("Ders bilgileri README'ye ekleniyor...")
+    ders_bilgilerini_readme_ile_birlestir(dersler[DERSLER], donemler[DONEMLER], dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI])
+else:
+    print("Dönem bilgileri bulunamadı.")
