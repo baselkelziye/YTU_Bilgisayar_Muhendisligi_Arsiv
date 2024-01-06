@@ -54,7 +54,6 @@ yildizlar_df = pd.read_csv(yildizlar_sheets_url)
 
 
 # Sadece sayısal sütunları al ve ortalama hesapla
-print(yildizlar_df.columns)
 yildizlar_numeric_columns = yildizlar_df.columns.drop([ZAMAN_DAMGASI, HOCA_SEC])  # Sayısal olmayan sütunları çıkar
 yildizlar_grouped = yildizlar_df.groupby(HOCA_SEC)[yildizlar_numeric_columns].mean()
 
