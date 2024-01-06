@@ -4,8 +4,8 @@ import os
 import subprocess
 import time
 import sys
-sys.append(os.path.join(os.path.dirname(__file__), '..', "readme_guncelleme_arayuzu_python"))
-from degiskenler import DERS_YORUMLAMA_LINKI, HOCA_YORUMLAMA_LINKI, DERS_OZELLIKLERI_OYLAMA_LINKI, HOCA_OZELLIKLERI_OYLAMA_LINKI
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', "readme_guncelleme_arayuzu_python"))
+from degiskenler import *
 def check_for_updates(key, url):
 
     # Belirtilen URL'den .xlsx dosyasını indir
@@ -81,10 +81,10 @@ def update_repository():
 
 # URL'leri kontrol et
 urls = {
-    "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI,
-    "HOCA YORUMLAMA": HOCA_YORUMLAMA_LINKI,
-    "DERS ÖZELLİKLERİ OYLAMA":DERS_OZELLIKLERI_OYLAMA_LINKI, 
-    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OZELLIKLERI_OYLAMA_LINKI
+    "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
+    "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
+    "DERS ÖZELLİKLERİ OYLAMA":DERS_OYLAMA_LINKI_CSV, 
+    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV
 }
 
 # Dosyaların son boyutlarını saklamak için bir sözlük
