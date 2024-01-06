@@ -51,7 +51,8 @@ KATKIDA_BULUNANLAR = "katkida_bulunanlar"
 GITHUB_LINK = "github_link"
 ## GIRIS SAYFASINA OZEL DEGISKENLER
 ICINDEKILER = "icindekiler"
-
+## DONEM SAYFASINA OZEL DEGISKENLER
+GENEL_TAVSIYELER = "genel_tavsiyeler"
 # LINKLER
 CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
 HOCA_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
@@ -89,7 +90,8 @@ YAZARIN_NOTLARI_JSON_NAME = "yazarin_notlari.json"
 YAZARIN_NOTLARI_JSON_PATH = os.path.join("..", YAZARIN_NOTLARI_JSON_NAME)
 GIRIS_JSON_NAME = "giris.json"
 GIRIS_JSON_PATH = os.path.join("..", GIRIS_JSON_NAME)
-
+DONEMLER_JSON_NAME = "donemler.json"
+DONEMLER_JSON_PATH = os.path.join("..", DONEMLER_JSON_NAME)
 
 # UNVAN KISALTMALARI
 PROF_DR = "Prof. Dr."

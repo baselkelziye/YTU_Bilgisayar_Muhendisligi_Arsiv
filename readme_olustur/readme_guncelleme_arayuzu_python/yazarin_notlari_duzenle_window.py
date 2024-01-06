@@ -11,7 +11,7 @@ class YazarinNotlariWindow(QDialog):
 
     def initUI(self):
         self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
-
+        self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
