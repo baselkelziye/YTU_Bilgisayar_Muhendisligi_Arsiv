@@ -8,7 +8,7 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★★★
+  - 🛤️ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
