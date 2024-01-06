@@ -4,14 +4,7 @@ from PyQt5.QtWidgets import (QDialog,QInputDialog, QVBoxLayout, QPushButton, QMe
 import locale
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
-from degiskenler import (HOCALAR,ONERILER,DERSE_DAIR_ONERILER,DERSLER,AD,
-                          BOLUM_ACIKLAMASI, BOLUM_ADI, DERS_KLASORU_BULUNAMADI_MESAJI,
-                            GUNCEL_OLMAYAN_DERS_ACIKLAMASI,DERSLER_JSON_PATH ,HOCALAR_JSON_PATH,
-                              FAYDALI_OLABILECEK_KAYNAKLAR, YIL, DONEM, TIP, YOK, 
-                              DERSI_VEREN_HOCALAR, GUNCEL_MI, ONERI_SAHIBI, PROF_DR, DOC_DR, DR,
-                                VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI,
-                                VARSAYILAN_DERS_BOLUM_ACIKLAMASI,VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI,
-                                VARSAYILAN_DERS_BOLUM_ADI)
+from degiskenler import *
 
 # Hoca adlarını ve kısaltmalarını hazırla
 unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
@@ -30,13 +23,13 @@ class DersEkleGuncelleWindow(QDialog):
 
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Ders ekleme butonu
         self.ekleBtn = QPushButton('Ders Ekle', self)
-        self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.ekleBtn.clicked.connect(self.dersEkle)
         self.mainLayout.addWidget(self.ekleBtn)
 
@@ -139,20 +132,20 @@ class DersEkleGuncelleWindow(QDialog):
                 # Büyük ders butonu
                 btnDers = QPushButton(f"{ders[AD]}", self.scrollWidget)
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
-                btnDers.setStyleSheet("QPushButton {background-color: blue; color: white;}")
+                btnDers.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 btnDers.setMinimumWidth(350)
                 dersSatiri.addWidget(btnDers)
 
                 # Kaynak Ekle butonu
                 btnKaynakEkle = QPushButton("Kaynak Ekle/Güncelle", self.scrollWidget)
                 btnKaynakEkle.clicked.connect(lambda checked, a=ders: self.kaynakEkle(a))
-                btnKaynakEkle.setStyleSheet("background-color: green;")  # Yeşil renk, küçültülmüş genişlik
+                btnKaynakEkle.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil renk, küçültülmüş genişlik
                 dersSatiri.addWidget(btnKaynakEkle)
 
                 # Öneri Ekle butonu
                 btnOneriEkle = QPushButton("Öneri Ekle/Güncelle", self.scrollWidget)
                 btnOneriEkle.clicked.connect(lambda checked, a=ders: self.oneriEkle(a))
-                btnOneriEkle.setStyleSheet("background-color: red;")  # Kırmızı renk, küçültülmüş genişlik
+                btnOneriEkle.setStyleSheet(SIL_BUTONU_STILI)  # Kırmızı renk, küçültülmüş genişlik
                 dersSatiri.addWidget(btnOneriEkle)
 
                 # Ders satırını dersler layout'una ekle
@@ -219,7 +212,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
 
         # Ekle butonu
         self.ekleBtn = QPushButton('Ekle', self)
-        self.ekleBtn.setStyleSheet("background-color: green;")  # Ekle butonunu yeşil yap
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Ekle butonunu yeşil yap
         self.ekleBtn.clicked.connect(self.yeniElemanEkle)
         self.layout.addWidget(self.ekleBtn)
         self.resize(600, 100)
@@ -244,7 +237,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
                             satirLayout.addWidget(infoBtn)
                             # Silme butonu
                             deleteBtn = QPushButton("Sil", self)
-                            deleteBtn.setStyleSheet("background-color: red; color: white;")  # Silme butonunu kırmızı yap
+                            deleteBtn.setStyleSheet(SIL_BUTONU_STILI)  # Silme butonunu kırmızı yap
                             deleteBtn.clicked.connect(lambda checked, a=eleman, j=j, i=i: self.elemanSil(a, oneri_index=i, sahip_index=j))
                             satirLayout.addWidget(deleteBtn)
                             # Satır düzenini ana düzene ekle
@@ -259,7 +252,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
 
                     # Silme butonu
                     deleteBtn = QPushButton("Sil", self)
-                    deleteBtn.setStyleSheet("background-color: red; color: white;")  # Silme butonunu kırmızı yap
+                    deleteBtn.setStyleSheet(SIL_BUTONU_STILI)  # Silme butonunu kırmızı yap
                     deleteBtn.clicked.connect(lambda checked, a=eleman, j=j: self.elemanSil(a, oneri_index=j))
                     satirLayout.addWidget(deleteBtn)
                     # Satır düzenini ana düzene ekle
@@ -553,7 +546,7 @@ class DersDuzenlemeWindow(QDialog):
                 self.ekleHocaComboBox(hoca)
         # Ekle (+) butonu
         self.ekleHocaBtn = QPushButton('Dersi Veren Hoca Ekle', self)
-        self.ekleHocaBtn.setStyleSheet("background-color: lightblue;")
+        self.ekleHocaBtn.setStyleSheet(VEREN_EKLE_BUTONU_STILI)
         self.ekleHocaBtn.clicked.connect(self.ekleHocaComboBox)
         self.layout.addWidget(self.ekleHocaBtn)
 
@@ -564,14 +557,14 @@ class DersDuzenlemeWindow(QDialog):
         else:
             self.kaydetBtn = QPushButton('Ekle', self)
         
-        self.kaydetBtn.setStyleSheet("background-color: green;")
+        self.kaydetBtn.setStyleSheet(EKLE_BUTONU_STILI)
         self.kaydetBtn.clicked.connect(self.kaydet)
         buttonsLayout.addWidget(self.kaydetBtn)
 
         if self.ders:
             self.silBtn = QPushButton('Dersi Sil', self)
             self.silBtn.clicked.connect(self.sil)
-            self.silBtn.setStyleSheet("background-color: red;")
+            self.silBtn.setStyleSheet(SIL_BUTONU_STILI)
             buttonsLayout.addWidget(self.silBtn)
 
         self.layout.addLayout(buttonsLayout)
@@ -592,7 +585,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # Sil (-) butonu
         silBtn = QPushButton('Dersi Veren Hocayı Sil', self)
-        silBtn.setStyleSheet("background-color: rgb(255, 102, 102);")
+        silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silHocaComboBox(comboBox, silBtn))
 
         hocaLayout = QHBoxLayout()

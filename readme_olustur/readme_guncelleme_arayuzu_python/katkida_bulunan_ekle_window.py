@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import (QLineEdit, QDialog, QPushButton, QVBoxLayout,
                              QDesktopWidget, QLabel, QMessageBox)
 from threadler import KatkiEkleThread  
 from progress_dialog import CustomProgressDialog
-from degiskenler import KATKIDA_BULUNANLAR_JSON_PATH
+from degiskenler import *
 
 
 class KatkidaBulunanEkleWindow(QDialog):
@@ -27,7 +27,7 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.github_label = QLabel('GitHub Kullanıcı Adı:')
         self.github_input = QLineEdit()
         self.ekle_btn = QPushButton('Ekle', self)
-        self.ekle_btn.setStyleSheet("background-color: green;")
+        self.ekle_btn.setStyleSheet(EKLE_BUTONU_STILI)
         # Butona basıldığında ekleme işlevini çalıştır
         self.ekle_btn.clicked.connect(self.kaydet)
 

@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (QDialog,QVBoxLayout, QInputDialog,QSizePolicy, QPus
 from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
-from degiskenler import VARSAYILAN_HOCA_BOLUM_ADI, VARSAYILAN_HOCA_BOLUM_ACIKLAMASI,HOCALAR_JSON_PATH, DERSLER_JSON_PATH, DERSLER, AD, DERSI_VEREN_HOCALAR, BOLUM_ADI, BOLUM_ACIKLAMASI, HOCALAR, KISALTMA, PROF_DR, DOC_DR, DR
+from degiskenler import *
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -30,12 +30,12 @@ class HocaEkleGuncelleWindow(QDialog):
         self.mainLayout = QVBoxLayout(self)  # Ana layout
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
-        self.clearFiltersButton.setStyleSheet("background-color: blue; color: white;")  # Mavi arka plan
+        self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Hoca ekleme butonu
         self.ekleBtn = QPushButton('Hoca Ekle', self)
-        self.ekleBtn.setStyleSheet("background-color: green;")  # Yeşil arka plan
+        self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.ekleBtn.clicked.connect(self.hocaEkle)
         self.mainLayout.addWidget(self.ekleBtn)
 
@@ -128,6 +128,7 @@ class HocaEkleGuncelleWindow(QDialog):
                 if hoca[AD] != '':
                     btn = QPushButton(f"{hoca[AD]}", self.scrollWidget)
                     btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
+                    btn.setStyleSheet(GUNCELLE_BUTTON_STILI)
                     self.hocalarLayout.addWidget(btn)
                 else:
                     self.sorted_hocalar.remove(hoca)
@@ -228,7 +229,7 @@ class HocaDuzenlemeWindow(QDialog):
                 self.dersEkleComboBox(ders)
         # Ekle (+) butonu
         self.ekleHocaBtn = QPushButton('Hocanın Verdiği Ders Ekle', self)
-        self.ekleHocaBtn.setStyleSheet("background-color: lightblue;")
+        self.ekleHocaBtn.setStyleSheet(VEREN_EKLE_BUTONU_STILI)
         self.ekleHocaBtn.clicked.connect(self.dersEkleComboBox)
         self.layout.addWidget(self.ekleHocaBtn)
         # Kaydet ve Sil butonları (sil butonu sadece düzenleme modunda görünür)
@@ -238,14 +239,14 @@ class HocaDuzenlemeWindow(QDialog):
             self.kaydetBtn = QPushButton('Değişiklikleri Kaydet', self)
         else:
             self.kaydetBtn = QPushButton('Ekle', self)
-        self.kaydetBtn.setStyleSheet("background-color: green;")
+        self.kaydetBtn.setStyleSheet(EKLE_BUTONU_STILI)
         self.kaydetBtn.clicked.connect(self.kaydet)
         buttonsLayout.addWidget(self.kaydetBtn)  # buttonsLayout'a Kaydet butonunu ekle
 
         if self.hoca:
             self.silBtn = QPushButton('Hocayı Sil', self)
             self.silBtn.clicked.connect(self.sil)
-            self.silBtn.setStyleSheet("background-color: red;")
+            self.silBtn.setStyleSheet(SIL_BUTONU_STILI)
             buttonsLayout.addWidget(self.silBtn)  # buttonsLayout'a Sil butonunu ekle
 
         # Yatay düzeni ana düzene ekle
@@ -265,7 +266,7 @@ class HocaDuzenlemeWindow(QDialog):
 
         # Sil (-) butonu
         silBtn = QPushButton('Hocanın Verdiği Dersi Sil', self)
-        silBtn.setStyleSheet("background-color: rgb(255, 102, 102);")
+        silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
 
         derslerLayout = QHBoxLayout()
