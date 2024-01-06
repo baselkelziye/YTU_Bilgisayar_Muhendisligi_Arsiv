@@ -68,8 +68,12 @@ def hoca_siralama_anahtari(hoca):
     return (unvanlarin_onceligi.get(unvan, 4), hoca[AD])  # Unvan önceliği ve tam ad
 # JSON dosyasından hocaların bilgilerini okuyan fonksiyon
 def json_oku(json_dosyasi):
-    with open(json_dosyasi, 'r', encoding='utf-8') as f:
-        return json.load(f)
+    try:
+        with open(json_dosyasi, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"{json_dosyasi} dosyası bulunamadı. Lütfen tüm json dosyalarını oluşturuduğunuzdan emin olun.")
+        exit(1)
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     if puan % 10 !=0:
         puan +=10
@@ -269,16 +273,16 @@ BURASI ANA README OLUŞTURMA KISMI
 """
 print("README.md oluşturuluyor...")
 # JSON dosyasından yazar notlarını oku ve README'ye ekle
-yazar_notlari = json_oku('yazarin_notlari.json')
+yazar_notlari = json_oku(YAZARIN_NOTLARI_JSON_NAME)
 # JSON dosyasından repo kullanımı bilgilerini oku ve README'ye ekle
-repo_kullanimi_bilgileri = json_oku('repo_kullanimi.json')
+repo_kullanimi_bilgileri = json_oku(REPO_KULLANIMI_JSON_NAME)
 # JSON dosyasından dersleri oku ve README'ye ekle
-dersler = json_oku('dersler.json')
+dersler = json_oku(DERSLER_JSON_NAME)
 dersler[DERSLER] = sorted(dersler[DERSLER], key=sıralama_anahtarı)
 # JSON dosyasından hocaları oku ve README'ye ekle
-hocalar = json_oku('hocalar.json')
-giris_bilgileri = json_oku('giris.json')
-katkida_bulunanlar = json_oku('katkida_bulunanlar.json')
+hocalar = json_oku(HOCALAR_JSON_NAME)
+giris_bilgileri = json_oku(GIRIS_JSON_NAME)
+katkida_bulunanlar = json_oku(KATKIDA_BULUNANLAR_JSON_NAME)
 print("Giriş bilgileri README'ye ekleniyor...")
 readme_ye_giris_ekle(giris_bilgileri)
 print("Repo kullanımı README'ye ekleniyor...")
@@ -456,7 +460,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders
                         f.write(f"- {guncel_olmayan_ders_aciklamasi}\n")
         print(f"{ders[AD]} README.md dönemine eklendi.")
 
-donemler = json_oku('donemler.json')
+donemler = json_oku(DONEMLER_JSON_NAME)
 print("Dönem bilgileri README'ye ekleniyor...")
 donemlere_gore_readme_olustur(donemler)
 print("Ders bilgileri README'ye ekleniyor...")
