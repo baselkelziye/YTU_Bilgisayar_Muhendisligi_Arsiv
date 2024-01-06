@@ -89,6 +89,12 @@ urls = {
 
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
+for key, url in urls.items():
+    # URL'lerin hash değerlerini hesapla
+    response = requests.get(url)
+    data = response.content
+    previous_hashes[url] = hashlib.md5(data).hexdigest()
+update_repository()
 i = 0
 timeout = 180
 div = 3
