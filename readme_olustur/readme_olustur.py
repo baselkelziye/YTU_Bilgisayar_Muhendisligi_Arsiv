@@ -100,11 +100,11 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"\n\n\n### {hoca_emoji} {hoca[AD]} {populer_isaret}{populer_bilgi}\n")
             f.write(f"- 🚪 **Ofis:** {hoca[OFIS]}\n")
             f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca[LINK]}]({hoca[LINK]})\n")
-            f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
-
-            for gorus in hoca[OGRENCI_GORUSLERI]:
-                f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
-            f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
+            if OGRENCI_GORUSLERI in hoca:
+                f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
+                for gorus in hoca[OGRENCI_GORUSLERI]:
+                    f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
+                f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
 
             f.write("- 📚 **Verdiği Dersler:**\n")
             for ders in hoca[DERSLER]:
@@ -116,11 +116,11 @@ def hocalari_readme_ye_ekle(bilgiler):
                     ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
                     f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
             f.write(f"- ⭐ **Yıldız Sayıları:**\n")
-            if hoca['anlatim_puani'] != 0:
-                f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca['anlatim_puani'])}\n")
+            if ANLATIM_PUANI in hoca and hoca[ANLATIM_PUANI] != 0:
+                f.write(f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca[ANLATIM_PUANI])}\n")
                 f.write(f"  - 🛣️ Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca[KOLAYLIK_PUANI])}\n")
-                f.write(f"  - 🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca['ogretme_puani'])}\n")
-                f.write(f"  - 🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca['eglence_puani'])}\n")
+                f.write(f"  - 🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca[OGRETME_PUNAI])}\n")
+                f.write(f"  - 🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca[EGLENCE_PUANI])}\n")
             else:
                 f.write("  - 🎭 Dersi Zevkli Anlatır Mı:\tbilinmiyor\n")
                 f.write("  - 🛣️ Dersi Kolay Geçer Miyim:\tbilinmiyor\n")
