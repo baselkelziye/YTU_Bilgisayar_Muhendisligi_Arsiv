@@ -154,8 +154,10 @@ class TalimatDialog(QDialog):
     def talimatEkle(self):
         yeni_talimat, ok = QInputDialog.getText(self, "Talimat Ekle", "Yeni Talimat:")
         if ok and yeni_talimat:
-            self.repo_data[TALIMATLAR].append(yeni_talimat)
-            self.jsonGuncelle()
+            cevap = QMessageBox.question(self, 'Onay', 'Talimatı eklemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.repo_data[TALIMATLAR].append(yeni_talimat)
+                self.jsonGuncelle()
 
     def jsonGuncelle(self):
         with open(self.json_dosyasi, 'w', encoding='utf-8') as file:
@@ -262,9 +264,11 @@ class KavramDetayDialog(QDialog):
     def aciklamaEkle(self):
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Ekle", "Yeni Açıklama:")
         if ok and yeni_aciklama:
-            self.kavram[ACIKLAMALAR].append(yeni_aciklama)
-            self.parent().jsonGuncelle()
-            self.aciklamaListele()
+            cevap = QMessageBox.question(self, 'Onay', 'Açıklama eklemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.kavram[ACIKLAMALAR].append(yeni_aciklama)
+                self.parent().jsonGuncelle()
+                self.aciklamaListele()
 class KavramDialog(QDialog):
     def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
@@ -430,8 +434,10 @@ class KavramDialog(QDialog):
     def kavramEkle(self):
         yeni_kavram, ok = QInputDialog.getText(self, "Kavram Ekle", "Yeni Kavram:")
         if ok and yeni_kavram:
-            self.repo_data[KAVRAMLAR].append({KAVRAM: yeni_kavram, ACIKLAMALAR: []})
-            self.jsonGuncelle()
+            cevap = QMessageBox.question(self, 'Onay', 'Kavram eklemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.repo_data[KAVRAMLAR].append({KAVRAM: yeni_kavram, ACIKLAMALAR: []})
+                self.jsonGuncelle()
 
     def jsonGuncelle(self):
         with open(self.json_dosyasi, 'w', encoding='utf-8') as file:
@@ -585,8 +591,10 @@ class AciklamaDialog(QDialog):
     def aciklamaEkle(self):
         yeni_aciklama, ok = QInputDialog.getText(self, "Açıklama Ekle", "Yeni Açıklama:")
         if ok and yeni_aciklama:
-            self.repo_data[ACIKLAMALAR].append(yeni_aciklama)
-            self.jsonGuncelle()
+            cevap = QMessageBox.question(self, 'Onay', 'Açıklama eklemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.repo_data[ACIKLAMALAR].append(yeni_aciklama)
+                self.jsonGuncelle()
 
     def jsonGuncelle(self):
         with open(self.json_dosyasi, 'w', encoding='utf-8') as file:
