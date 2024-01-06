@@ -3,11 +3,10 @@ import hashlib
 import os
 import subprocess
 import time
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-def check_for_updates(url):
+import sys
+sys.append(os.path.join(os.path.dirname(__file__), '..', "readme_guncelleme_arayuzu_python"))
+from degiskenler import DERS_YORUMLAMA_LINKI, HOCA_YORUMLAMA_LINKI, DERS_OZELLIKLERI_OYLAMA_LINKI, HOCA_OZELLIKLERI_OYLAMA_LINKI
+def check_for_updates(key, url):
 
     # Belirtilen URL'den .xlsx dosyasını indir
     response = requests.get(url)
@@ -18,7 +17,7 @@ def check_for_updates(url):
 
     # Eğer bu URL daha önce kontrol edildiyse ve hash değeri değişmişse, güncelleme olduğunu bildir
     if url in previous_hashes and previous_hashes[url] != current_hash:
-        print(f"Değişiklik bulundu: {url}")
+        print(f"Değişiklik bulundu: {key}")
         previous_hashes[url] = current_hash
         return True
 
@@ -82,10 +81,10 @@ def update_repository():
 
 # URL'leri kontrol et
 urls = {
-    "DERS YORUMLAMA": "https://docs.google.com/spreadsheets/d/1d9B_YSk6em2wBAR85PutZkNAoSy_ET1-ojcjU3ypLE8/pub?output=csv",
-    "HOCA YORUMLAMA": "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/pub?output=csv",
-    "DERS ÖZELLİKLERİ OYLAMA": "https://docs.google.com/spreadsheets/d/12Gv8QS5py8jBmbylnyLCZdZ-oxCSsVlXZUVW4JvvHAE/pub?output=csv",
-    "HOCA ÖZELLİKLERİ OYLAMA": "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/pub?output=csv"
+    "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI,
+    "HOCA YORUMLAMA": HOCA_YORUMLAMA_LINKI,
+    "DERS ÖZELLİKLERİ OYLAMA":DERS_OZELLIKLERI_OYLAMA_LINKI, 
+    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OZELLIKLERI_OYLAMA_LINKI
 }
 
 # Dosyaların son boyutlarını saklamak için bir sözlük
@@ -97,7 +96,7 @@ print("Script çalışıyor...")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
 while True:
     for key, url in urls.items():
-        if check_for_updates(url):
+        if check_for_updates(key,url):
             print(f"Güncelleme tespit edildi: {key}")
             update_repository()
         else:

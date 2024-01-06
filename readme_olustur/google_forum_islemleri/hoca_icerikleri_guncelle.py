@@ -4,9 +4,19 @@ import os
 import shutil
 
 from icerik_kontrol import *
+import sys
+# Mevcut dosyanın bulunduğu dizini al
+current_directory = os.path.dirname(os.path.abspath(__file__))
+# Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
+relative_path = os.path.join("..", "readme_guncelleme_arayuzu_python")
+# Göreceli yolu tam yola çevir
+absolute_path = os.path.join(current_directory, relative_path)
+# Tam yolu sys.path listesine ekle
+sys.path.append(absolute_path)
+from degiskenler import *
 temel_puan = 30
 # Google Sheets dosyasının URL'si
-yildizlar_sheets_url = "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/export?format=csv"
+yildizlar_sheets_url = HOCA_OYLAMA_LINKI
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     df = pd.read_csv(sheets_url)
@@ -14,59 +24,59 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     
     # Her hoca için yorumları güncelle
     for index, row in df.iterrows():
-        hoca_adi = row['Hoca seç']
-        kisi = row['İsmin nasıl gözüksün']
-        yorum = row['Hoca hakkındaki yorumun']
+        hoca_adi = row[HOCA_SEC]
+        kisi = row[ISMIN_NASIL_GOZUKSUN_HOCA]
+        yorum = row[HOCA_HAKKINDAKI_YORUMUN]
         # icerikKontrol = IcerikKontrol("hoca")
         if not pd.isna(yorum):# and icerikKontrol.pozitif_mi(yorum):
             # yorum = icerikKontrol.metin_on_isleme(yorum)
-            for hoca in data['hocalar']:
-                if hoca['ad'] == hoca_adi:
+            for hoca in data[HOCALAR]:
+                if hoca[AD] == hoca_adi:
                     # Eğer bu kisi için daha önce bir yorum yapılmışsa, güncelle
                     gorus_var_mi = False
-                    if 'ogrenci_gorusleri' not in hoca:
-                        hoca['ogrenci_gorusleri'] = []
-                    for gorus in hoca['ogrenci_gorusleri']:
-                        if gorus['kisi'].lower() == kisi.lower():
-                            gorus['yorum'] = yorum
+                    if OGRENCI_GORUSLERI not in hoca:
+                        hoca[OGRENCI_GORUSLERI] = []
+                    for gorus in hoca[OGRENCI_GORUSLERI]:
+                        if gorus[KISI].lower() == kisi.lower():
+                            gorus[YORUM] = yorum
                             gorus_var_mi = True
                             break
                     
                     # Yeni yorum ekle
                     if not gorus_var_mi:
-                        hoca['ogrenci_gorusleri'].append({'kisi': kisi.lower().title(), 'yorum': yorum})
+                        hoca[OGRENCI_GORUSLERI].append({KISI: kisi.lower().title(), YORUM: yorum})
     # icerikKontrol.dosya_yaz()
 # Google Sheets URL'si
-yorumlar_sheets_url = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
+yorumlar_sheets_url = HOCA_YORULMALA_LINKI
 
 # Veriyi indir ve DataFrame olarak oku
 yildizlar_df = pd.read_csv(yildizlar_sheets_url)
 
 
 # Sadece sayısal sütunları al ve ortalama hesapla
-yildizlar_numeric_columns = yildizlar_df.columns.drop(['Zaman damgası', 'Hoca seç'])  # Sayısal olmayan sütunları çıkar
-yildizlar_grouped = yildizlar_df.groupby('Hoca seç')[yildizlar_numeric_columns].mean()
+yildizlar_numeric_columns = yildizlar_df.columns.drop([ZAMAN_DAMGASI, HOCA_SEC])  # Sayısal olmayan sütunları çıkar
+yildizlar_grouped = yildizlar_df.groupby(HOCA_SEC)[yildizlar_numeric_columns].mean()
 
 # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
-hoca_oy_sayisi = yildizlar_df['Hoca seç'].value_counts()
+hoca_oy_sayisi = yildizlar_df[HOCA_SEC].value_counts()
 
 # En yüksek oy sayısına sahip hocayı bul
 en_populer_hoca = hoca_oy_sayisi.idxmax()
 en_populer_hoca_oy_sayisi = hoca_oy_sayisi.max()
 
 # JSON dosyasını oku
-json_file_path = 'hocalar.json'  # JSON dosyasının yolu
+json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
 with open(os.path.join("..",json_file_path), 'r', encoding='utf-8') as file:
     data = json.load(file)
-data["en_populer_hoca"] = {"hoca_adi":en_populer_hoca, "oy_sayisi":int(en_populer_hoca_oy_sayisi)}
-for hoca in data['hocalar']:
-    name = hoca.get('ad')
+data[EN_POPULER_HOCA] = {HOCA_ADI:en_populer_hoca, OY_SAYISI:int(en_populer_hoca_oy_sayisi)}
+for hoca in data[HOCALAR]:
+    name = hoca.get(AD)
     if name in yildizlar_grouped.index:
-        hoca['anlatim_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar güzel anlatır?'] * 10)
-        hoca['kolaylik_puani'] = int(yildizlar_grouped.loc[name, 'Dersini geçmek ne kadar kolaydır?'] * 10) 
-        hoca['ogretme_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar iyi öğretir?'] * 10)
-        hoca['eglence_puani'] = int(yildizlar_grouped.loc[name, 'Dersi ne kadar eğlenceli anlatır?'] * 10)
-        hoca['oy_sayisi'] = int(hoca_oy_sayisi[name])
+        hoca[ANLATIM_PUANI] = int(yildizlar_grouped.loc[name, DERSI_NE_KADAR_GÜZEL_ANLATIR] * 10)
+        hoca[KOLAYLIK_PUANI] = int(yildizlar_grouped.loc[name, DERSINI_GECMEK_NE_KADAR_KOLAYDIR] * 10) 
+        hoca[OGRETME_PUNAI] = int(yildizlar_grouped.loc[name, DERSI_NE_KADAR_IYI__OGRETIR] * 10)
+        hoca[EGLENCE_PUANI] = int(yildizlar_grouped.loc[name, DERSI_NE_KADAR_EGLENCELI_ANLATIR] * 10)
+        hoca[OY_SAYISI] = int(hoca_oy_sayisi[name])
 
 # Fonksiyonu çağır ve JSON dosyasını güncelle
 guncelle_ogrenci_gorusleri(data, yorumlar_sheets_url)
