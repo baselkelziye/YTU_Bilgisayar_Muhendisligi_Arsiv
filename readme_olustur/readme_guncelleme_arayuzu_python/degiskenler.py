@@ -40,6 +40,8 @@ GEREKLILIK_PUANI = "gereklilik_puani"
 DERSI_VEREN_HOCALAR = "dersi_veren_hocalar"
 GUNCEL_MI = "guncel_mi"
 ONERI_SAHIBI = "oneri_sahibi"
+EN_POPULER_DERS = "en_populer_ders"
+DERS_ADI = "ders_adi"
 
 ## HOCAYA OZEL DEGISKENLER
 ERKEK_MI = "erkek_mi"
@@ -107,3 +109,34 @@ SIL_BUTONU_STILI = "background-color: red; color: white;"
 TEMIZLE_BUTONU_STILI = "background-color: orange; color: white;"
 VEREN_EKLE_BUTONU_STILI = "background-color: lightblue;"
 GUNCELLE_BUTTON_STILI = "background-color: blue; color: white;"
+
+
+# JSON ANAHTARLARI
+
+## HOCALAR
+ANLATIM_PUANI = "anlatim_puani"
+OGRETME_PUNAI = "ogretme_puani"
+EGLENCE_PUANI = "eglence_puani"
+
+
+# GOOGLE FORM DEĞİŞKENLERİ
+
+## ORTAK
+ZAMAN_DAMGASI = "Zaman damgası"
+
+## DERSLER
+
+DERS_SEC = "Ders Seç"
+ISMIN_NASIL_GORUNSUN = "İsmin Nasıl Gözüksün"
+DERS_HAKKINDAKI_YORUMUN = "Ders hakkındaki yorumun"
+DERS_MESLEKI_ACIDAN_GEREKLI_MI = "Ders mesleki açıdan gerekli mi?"
+DERSI_GECMEK_NE_KADAR_KOLAY = "Dersi geçmek ne kadar kolay?"
+
+## HOCALAR
+HOCA_SEC = "Hoca seç"
+ISMIN_NASIL_GOZUKSUN_HOCA = "İsmin nasıl gözüksün"
+HOCA_HAKKINDAKI_YORUMUN = 'Hoca hakkındaki yorumun'
+DERSI_NE_KADAR_GÜZEL_ANLATIR = 'Dersi ne kadar güzel anlatır?'
+DERSINI_GECMEK_NE_KADAR_KOLAYDIR = 'Dersini geçmek ne kadar kolaydır?'
+DERSI_NE_KADAR_IYI__OGRETIR = 'Dersi ne kadar iyi öğretir?'
+DERSI_NE_KADAR_EGLENCELI_ANLATIR = 'Dersi ne kadar eğlenceli anlatır?'
