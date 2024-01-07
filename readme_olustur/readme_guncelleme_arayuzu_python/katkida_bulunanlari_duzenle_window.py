@@ -7,6 +7,7 @@ from threadler import KatkiKaydetThread
 from PyQt5.QtCore import Qt
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
+from PyQt5.QtGui import QIcon
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -26,7 +27,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.setModal(True)
         self.title = 'Katkıda Bulunanları Ekle/Güncelle'
         self.initUI()
-
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setMinimumHeight(200)
@@ -152,6 +154,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.title = "Katkıda Bulunanı Güncelle"
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         self.setWindowTitle(self.title)

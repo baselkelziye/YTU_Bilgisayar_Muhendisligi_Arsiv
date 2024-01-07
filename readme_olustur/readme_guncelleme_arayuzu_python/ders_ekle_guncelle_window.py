@@ -2,6 +2,7 @@ import json
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import (QDialog,QInputDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
+from PyQt5.QtGui import QIcon
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
@@ -17,6 +18,8 @@ class DersEkleGuncelleWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         self.setWindowTitle('Ders Ekle/Güncelle')
@@ -201,6 +204,8 @@ class KaynakVeOneriDuzenleyici(QDialog):
         self.parent = parent
         self.tur = tur  # 'faydali_olabilecek_kaynaklar' veya 'derse_dair_oneriler'
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
 
     def initUI(self):
         if self.tur == FAYDALI_OLABILECEK_KAYNAKLAR:
@@ -370,6 +375,8 @@ class YeniElemanEklemeDialog(QDialog):
         self.mevcutEleman = mevcutEleman  # Güncellenecek mevcut eleman
         self.ders = ders
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
 
     def initUI(self):
         self.layout = QVBoxLayout(self)
@@ -478,6 +485,8 @@ class DersDuzenlemeWindow(QDialog):
         self.setModal(True)
         self.hocalarComboBoxlar = []  # Hoca seçimi için ComboBox'lar listesi
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         self.setWindowTitle('Ders Düzenle/Ekle')
