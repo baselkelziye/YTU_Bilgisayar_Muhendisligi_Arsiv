@@ -1,0 +1,191 @@
+; oncelikle mod kontrol
+;mod kontrol yapilir
+;term 1 input icin
+; term2 output icin
+
+
+
+mystak segment para stack 'stack'
+	dw 20 dup()
+mystak ends
+mydata segment para 'data'
+mydata ends
+
+mycode segment para 'code'
+	assume cs:mycode ds:mydata ss:mystak
+
+	main proc far
+		mov ax, mydata
+		mov dx,ax
+		
+		;mod + kontrol1 1
+		mov dx, 102h
+		mov al, 01001101b; mod ilk deger 8 bit data 1 bit stop no parity
+		out dx, al 
+		
+		mov al, 01000000b; kontol yazmaci internal reset
+		out dx, al
+		
+		;mod + kontrol1 2
+		mov al, 01001101b ; mod ilk in aynisi
+		out dx, al
+		
+		mov al, 00000101b; kontrol yazmacci no internal reset
+		
+		iletisim_basla:
+			;mov dx, 0100h
+			
+			;transmit ready mi
+			in al , dx
+			shr al,1
+			test al, 01h
+			jz iletisim_basla
+			
+		; transmit ready veriyi ilet
+		mov dx , 0100h
+		mov al, 41h
+		out dx, al 
+		; veri iletildi
+		
+		; receive ready mi
+		mov dx, 102h
+		rxrdy_bekle:
+		in al , dx
+		shr al,1 
+		test al, 02h
+		jz rxrdy_bekle
+		
+		;receive ready data in 
+		mov dx , 100h
+		in al, dx 
+		;;pass
+		jmp iletisim_basla
+		
+	
+		retf
+	main endp
+		
+
+		
+
+
+	
+mycode ends
+
+	end main
+
+
+
+	;mod + kontrol2 1
+		
+		
+		
+		
+		;mod + kontrol2 2
+		
+		
+		
+		;veri alis verisi
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		----------------------
+		
+		mystak segment para stack 'stack'
+	dw 20 dup(0)
+mystak ends
+mydata segment para 'data'
+mydata ends
+
+mycode segment para 'code'
+assume cs:mycode, ds:mydata, ss:mystak
+
+	main proc far
+		mov ax, mydata
+		mov dx,ax
+		
+		;mod + kontrol1 1
+		mov dx, 102h
+		mov al, 01001101b; mod ilk deger 8 bit data 1 bit stop no parity
+		out dx, al 
+		
+		mov al, 01000000b; kontol yazmaci internal reset
+		out dx, al
+		
+		;mod + kontrol1 2
+		mov al, 01001101b ; mod ilk in aynisi
+		out dx, al
+		
+		mov al, 00000101b; kontrol yazmacci no internal reset
+		
+		iletisim_basla:
+			;mov dx, 0100h
+			
+			;transmit ready mi
+			in al , dx
+			shr al,1
+			test al, 01h
+			jz iletisim_basla
+			
+		; transmit ready veriyi ilet
+		mov dx , 0100h
+		mov al, 41h
+		out dx, al 
+		; veri iletildi
+		
+		; receive ready mi
+		mov dx, 102h
+		rxrdy_bekle:
+		in al , dx
+		shr al,1 
+		test al, 02h
+		jz rxrdy_bekle
+		
+		;receive ready data in 
+		mov dx , 100h
+		in al, dx 
+		;;pass
+		jmp iletisim_basla
+		
+	
+		
+	main endp
+		
+
+		
+
+
+	
+mycode ends
+
+	end main
+
+
+
+	;mod + kontrol2 1
+		
+		
+		
+		
+		;mod + kontrol2 2
+		
+		
+		
+		;veri alis verisi
+		
+		
+
+
+
+		
+		-------------------
+		
+		

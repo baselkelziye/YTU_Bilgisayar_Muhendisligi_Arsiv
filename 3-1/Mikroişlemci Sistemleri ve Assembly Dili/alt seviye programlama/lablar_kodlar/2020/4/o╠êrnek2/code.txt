@@ -1,0 +1,167 @@
+; butona bas seven segmentte gor                            
+;2 adet 8255 mod1 de handshakingle haberlessin
+;8255lerin port a lari veri akisi icin port c ler handshaking icin
+;buton bagli oldugu 8255 e port b den
+;7 segment de port b den
+
+
+
+
+;8255 _1 I  output cr 66h
+;common cathode
+
+
+
+
+;8255 _2 yi input yonunde ayarla cr 67h
+;normalde 0 basili halde 1
+
+CODE    SEGMENT PUBLIC 'CODE'
+        ASSUME CS:CODE
+
+START:
+     
+	 mov al,0b8h ; cw ayarlama 1.8255 
+	 out 66h,al
+	 mov al,0a2h ; cw ayarlama 2.8255
+	 out 67h,al
+	
+		 	 
+endless:
+
+	
+
+tus_basili:
+in al, 63h
+cmp al,00h
+je tus_basili
+;----------- tus var degerini bulma
+test al , 08h
+jnz sekizyaz
+test al, 04h
+jnz dortyaz
+test al,02h
+jnz ikiyaz
+test al,01h
+jnz biryaz
+
+sekizyaz:
+mov al, 7fh
+out 61h , al
+jmp strobe
+
+dortyaz:
+mov al, 00111100b
+out 61h ,al
+jmp strobe
+ikiyaz:
+mov al, 01011011b
+out 61h,al
+jmp strobe
+biryaz:
+mov al 00000110b
+out 61h , al
+
+strobe:; tus okunup 7 segment degeri porta ya koyuldu
+mov al , 80h
+out al, 65h; port c7 vasitasiyla obf yollandi, ilk 8255 bunu strobe olarak algilayacak
+
+
+read_strobe:
+; ilk 8255 strobe bekliyor.
+in al , 64h ;portc den strobe beliyoruz
+test al , 40h
+jz read_strobe
+
+
+in al, 60h
+out 62h,al
+
+
+
+
+
+
+jmp endless
+
+	
+       
+CODE    ENDS
+        END START
+		
+		
+		;------------------------------------------------------------
+		
+		
+		CODE    SEGMENT PUBLIC 'CODE'
+        ASSUME CS:CODE
+
+START:
+     
+	 mov al,0b8h ; cw ayarlama 1.8255 
+	 out 66h,al
+	 mov al,0a2h ; cw ayarlama 2.8255
+	 out 67h,al
+	
+		 	 
+endless:
+
+	
+
+tus_basili:
+in al, 63h
+cmp al,00h
+je tus_basili
+;----------- tus var degerini bulma
+test al , 08h
+jnz sekizyaz
+test al, 04h
+jnz dortyaz
+test al,02h
+jnz ikiyaz
+test al,01h
+jnz biryaz
+
+sekizyaz:
+mov al, 7fh
+out 61h , al
+jmp strobe
+
+dortyaz:
+mov al, 00111100b
+out 61h ,al
+jmp strobe
+ikiyaz:
+mov al, 01011011b
+out 61h,al
+jmp strobe
+biryaz:
+mov al ,00000110b
+out 61h , al
+
+strobe:; tus okunup 7 segment degeri porta ya koyuldu
+mov al , 80h
+out 65h, al; port c7 vasitasiyla obf yollandi, ilk 8255 bunu strobe olarak algilayacak
+
+
+read_strobe:
+; ilk 8255 strobe bekliyor.
+in al , 64h ;portc den strobe beliyoruz
+test al , 10h
+jnz read_strobe
+
+
+in al, 60h
+out 62h,al
+
+
+
+
+
+
+jmp endless
+
+	
+       
+CODE    ENDS
+        END START
