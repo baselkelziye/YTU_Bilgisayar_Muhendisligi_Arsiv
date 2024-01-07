@@ -14,4 +14,4 @@ echo Ders icerikleri guncelleniyor...
 python3 ders_icerikleri_guncelle.py
 
 echo Islem tamamlandi.
-pause
+exit /b 0

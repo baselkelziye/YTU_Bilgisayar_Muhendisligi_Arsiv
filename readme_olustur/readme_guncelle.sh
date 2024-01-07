@@ -10,3 +10,4 @@ git config --global i18n.logOutputEncoding utf-8
 export LANG=en_US.UTF-8
 
 echo "Islem tamamlandi."
+exit 0
