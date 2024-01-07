@@ -9,6 +9,7 @@ from threadler import ScriptRunnerThread
 from repo_kullanimi_window import RepoKullanimiDialog
 from giris_ekle_guncelle_window import GirisEkleGuncelleWindow
 from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
+from git_islemleri_window import GitIslemleriWindow
 import os
 class App(QWidget):
     def __init__(self):
@@ -31,7 +32,7 @@ class App(QWidget):
             QPushButton('Hoca Ekle/Güncelle'),
             QPushButton('Ders Ekle/Güncelle'),
             QPushButton('Repo Kullanımı Düzenle'),
-            QPushButton('Readme Scripti Çalıştır'),
+            QPushButton('Git İşlemleri'),
         ]
         # Her düğme için farklı bir renk ayarla
         colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33', '#FF5733', '#33FF3F','#33FFF3']
@@ -47,7 +48,7 @@ class App(QWidget):
         self.buttons[4].clicked.connect(self.acHocaEkleGuncelle)
         self.buttons[5].clicked.connect(self.acDersEkleGuncelle)
         self.buttons[6].clicked.connect(self.repoKullanimiDuzenle)
-        self.buttons[7].clicked.connect(self.readmeScriptiCalistir)
+        self.buttons[7].clicked.connect(self.gitIslemleri)
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -90,21 +91,9 @@ class App(QWidget):
         self.dersEkleGuncelleWindow = DersEkleGuncelleWindow()
         self.dersEkleGuncelleWindow.show()
 
-    def readmeScriptiCalistir(self):
-        # Kullanıcıya scripti çalıştırmak isteyip istemediğini sor
-        reply = QMessageBox.question(self, 'Onay', 
-                                    "Scripti çalıştırmak istediğinize emin misiniz?",
-                                    QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
-
-        # Eğer kullanıcı 'Evet' dediyse scripti çalıştır
-        if reply == QMessageBox.Yes:
-            self.progressDialog.show()
-
-            paths = ('../google_forum_islemleri', '..')
-            self.thread = ScriptRunnerThread(paths)
-            self.thread.finished.connect(self.onFinished)
-            self.thread.error.connect(self.onError)
-            self.thread.start()
+    def gitIslemleri(self):
+        self.gitIslemleriWindow = GitIslemleriWindow()
+        self.gitIslemleriWindow.show()
     def onFinished(self):
         self.progressDialog.close()
         QMessageBox.information(self, 'Başarılı', 'README.md dosyaları güncellendi!')
