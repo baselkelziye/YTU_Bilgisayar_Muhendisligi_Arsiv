@@ -2,6 +2,7 @@ import subprocess
 from PyQt5.QtCore import QThread, pyqtSignal
 import json
 import requests
+import os
 class ScriptRunnerThread(QThread):
     finished = pyqtSignal()
     error = pyqtSignal(str)
@@ -141,37 +142,17 @@ class CMDScriptRunnerThread(QThread):
     finished = pyqtSignal(str)
     error = pyqtSignal(str)
     info = pyqtSignal(str)
-    def __init__(self, cmd, creationflags=subprocess.CREATE_NO_WINDOW):
+    def __init__(self, cmd):
         super().__init__()
         self.cmd = cmd
-        self.creationflags = creationflags
 
     def run(self):
         try:
-            process = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, 
-                                           creationflags=self.creationflags, shell=True)
-            
-            # Çıktıyı ve hataları gerçek zamanlı olarak oku ve yazdır
-            while True:
-                output_line = process.stdout.readline()
-                if output_line:
-                    self.info.emit(output_line.strip())  # Çıktıyı konsola yazdır
-                error_line = process.stderr.readline()
-                if error_line:
-                    self.info.emit(error_line.strip())  # Hataları konsola yazdır
-
-                # İşlem bittiğinde döngüden çık
-                if output_line == '' and error_line == '' and process.poll() is not None:
-                    break
-            # İşlem sonucunu kontrol et
-            if process.returncode != 0:
-                # Tüm hataları birleştir ve sinyal gönder
-                errors = process.stderr.read().strip()
-                self.error.emit(errors)
+            result = os.system(self.cmd)
+            if result == 0:
+                self.finished.emit("İşlem başarıyla tamamlandı")
             else:
-                # Tüm çıktıları birleştir ve sinyal gönder
-                output = process.stdout.read().strip()
-                self.finished.emit(output)
+                self.error.emit(f"Komut başarısız oldu, çıkış kodu: {result}")
 
         except Exception as e:
-            self.error.emit(str(e))
+            self.error.emit(f"Hata oluştu: {str(e)}")
