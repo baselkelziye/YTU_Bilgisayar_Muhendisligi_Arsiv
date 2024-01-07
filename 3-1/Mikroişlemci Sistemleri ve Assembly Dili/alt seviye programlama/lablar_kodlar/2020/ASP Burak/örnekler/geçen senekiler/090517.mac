@@ -1,0 +1,9 @@
+yazdirln macro necla
+		yazdir necla
+		yazdir ln 
+		endm
+yazdir	macro mualla	
+		lea dx,mualla
+		mov ah,09
+		int 21h
+		endm
