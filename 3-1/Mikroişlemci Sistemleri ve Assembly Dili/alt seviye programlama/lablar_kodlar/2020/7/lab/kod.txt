@@ -1,0 +1,114 @@
+CODE    SEGMENT PARA 'CODE'
+        ASSUME CS:CODE, DS:DATA, SS:STAK
+STAK    SEGMENT PARA STACK 'STACK'
+        DW 20 DUP(?)
+STAK    ENDS
+
+DATA    SEGMENT PARA 'DATA'
+	samples db 30 dup(88)
+DATA    ENDS
+
+
+START PROC far
+        MOV AX, DATA
+	MOV DS, AX
+	
+ENDLESS:
+
+	CALL _ADDRESSCHECK
+
+       
+	
+
+
+
+mov dx, 0006h
+mov al, 10010000b
+out dx,al
+
+
+
+mov dx, 0806h
+mov al, 00110100b
+out dx, al
+mov al,2 
+mov dx, 0800h 
+out dx, al
+xor al, al
+out dx, al
+
+	
+	mov cx, 3
+	count3sc:
+
+		
+		push cx
+		mov cx,10
+		hz_10:
+			
+			mov dx, 0000h
+			pA0:
+			in al, dx 
+			
+			test al, 01h 
+			jz pA0
+			
+			mov al, 0fbh
+			mov dx , 0200h
+			out dx, al
+			
+			mov dx, 0400h
+		
+			in al , dx
+			test al , 10h
+			jnz wait_intr
+		
+			mov dx, 0200h
+			in al , dx
+
+			mov samples[si], al
+			inc si
+			loop hz_10
+
+		pop cx
+
+		loop count3sc
+aga:
+xor si,si
+mov cx,30
+mov dx,0600h
+osilo:
+
+mov al, samples[si]
+out dx, al
+inc si
+loop osilo
+jmp aga
+
+
+
+	 
+
+	RET
+START ENDP
+
+_ADDRESSCHECK PROC NEAR 
+        MOV AL,  00H
+	MOV DX, 10030H
+	OUT DX, AL
+RET
+_ADDRESSCHECK ENDP
+
+
+delay proc near
+push cx
+mov cx,00ffh
+lab1:
+loop lab1
+pop cx 
+ret
+delay endp
+
+	
+CODE    ENDS
+        END START
