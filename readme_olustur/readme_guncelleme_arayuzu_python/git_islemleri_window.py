@@ -27,7 +27,7 @@ class GitIslemleriWindow(QDialog):
         self.colors = [
             "background-color: red;",
             "background-color: green;",
-            "background-color: blue;",
+            "background-color: #33FFF3;",
             "background-color: yellow;",
             "background-color: pink;"
         ]
@@ -52,18 +52,16 @@ class GitIslemleriWindow(QDialog):
         self.is_windows = sys.platform.startswith('win')
 
     
-    def run_script(self, script_path, creationflags = subprocess.CREATE_NO_WINDOW):
+    def run_script(self, script_path, baslik):
         cevap = QMessageBox.question(self, 'Onay', 'İşlemi başlatmak istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No)
         if cevap == QMessageBox.No:
             QMessageBox.information(self, 'İptal', 'İşlem iptal edildi.')
             return
         self.original_dir = os.getcwd()
         os.chdir("..")
-
-        cmd = ["cmd.exe", "/c", script_path] if self.is_windows else ["/bin/bash", script_path]
-        progress = CustomProgressDialog('İşlem yapılıyor...', self)
+        progress = CustomProgressDialog(baslik, self)
         # Thread'i başlat
-        self.thread = CMDScriptRunnerThread(cmd, creationflags=creationflags)
+        self.thread = CMDScriptRunnerThread(script_path)
         self.thread.finished.connect(progress.close)
         self.thread.error.connect(progress.close)
         self.thread.finished.connect(self.on_finished)
@@ -73,26 +71,26 @@ class GitIslemleriWindow(QDialog):
         progress.show()
 
     def on_finished(self, output):
-        QMessageBox.information(self, 'Başarılı', 'İşlem başarıyla tamamlandı!\n' + output)
+        QMessageBox.information(self, 'Başarılı', output)
         os.chdir(self.original_dir)
 
     def on_error(self, errors):
-        QMessageBox.critical(self, 'Hata', 'Bir hata oluştu:\n' + errors)
+        QMessageBox.critical(self, 'Hata', errors)
         os.chdir(self.original_dir)
     def info(self, message):
         None
 
     def update_google_form(self):
-        self.run_script(GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH)
+        self.run_script(GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH, baslik = "Google Form Güncelleniyor...")
 
     def update_readme(self):
-        self.run_script(README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH)
+        self.run_script(README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH, baslik = "README.md Güncelleniyor...")
 
     def push_changes(self):
-        self.run_script(DEGISIKLIKLERI_GITHUBA_YOLLA_BAT if self.is_windows else DEGISIKLIKLERI_GITHUBA_YOLLA_SH)
+        self.run_script(DEGISIKLIKLERI_GITHUBA_YOLLA_BAT if self.is_windows else DEGISIKLIKLERI_GITHUBA_YOLLA_SH, baslik = "Değişiklikler Github'a Pushlanıyor...")
 
     def update_interface(self):
-        self.run_script(ARAYUZU_GITHULA_ESITLE_BAT if self.is_windows else ARAYUZU_GITHULA_ESITLE_SH)
+        self.run_script(ARAYUZU_GITHULA_ESITLE_BAT if self.is_windows else ARAYUZU_GITHULA_ESITLE_SH, baslik="Arayüz Kodları Güncelleniyor...")
 
     def start_routine_check(self):
-        self.run_script(RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH, creationflags=subprocess.CREATE_NEW_CONSOLE)
+        self.run_script(RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH, baslik="Rutin Kontrol Yapılıyor...")
