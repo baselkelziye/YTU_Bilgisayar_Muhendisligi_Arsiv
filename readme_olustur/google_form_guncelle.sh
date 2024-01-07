@@ -21,3 +21,4 @@ python3 ders_icerikleri_guncelle.py
 cd "$CURRENT_DIR"
 
 echo "Islem tamamlandi."
+exit 0
