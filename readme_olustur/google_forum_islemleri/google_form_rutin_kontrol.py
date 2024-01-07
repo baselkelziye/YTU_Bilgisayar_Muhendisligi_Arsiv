@@ -63,6 +63,7 @@ def update_repository():
             return 
         os.chdir("..")
         os.system("python3 readme_olustur.py")
+        os.chdir("..")
         if not execute_command("git add --all"): 
             print("Git add sırasında conflict oluştu, script durduruluyor.")
             return
