@@ -7,6 +7,7 @@ from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
+from PyQt5.QtGui import QIcon
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -24,7 +25,8 @@ class HocaEkleGuncelleWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.initUI()
-
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
     def initUI(self):
         self.setWindowTitle('Hocaları Ekle/Güncelle')
         self.mainLayout = QVBoxLayout(self)  # Ana layout
@@ -165,6 +167,8 @@ class HocaDuzenlemeWindow(QDialog):
         self.derslerComboBoxlar = []  # Hoca seçimi için ComboBox'lar listesi
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         if self.hoca is not None:
