@@ -70,7 +70,7 @@ rutin_kontrol.bat
 ```
 dosyasını çalıştırmanız gerekiyor.
 
-Dosyalarda yapılan değişiklikleri githuba yüklemek için
+Üst klasördeki dosyalarda yapılan değişiklikleri githuba yüklemek için
 Linux için
 ```bash
 ./degisiklikleri_githuba_yolla.sh
@@ -82,7 +82,7 @@ degisiklikleri_githuba_yolla.bat
 dosyasını çalıştırmanız gerekiyor.
 
 
-Dosyalarda yapılan değişiklikleri githubdan çekmek için
+Üst klasördeki dosyalarda yapılan değişiklikleri githubdan çekmek için
 Linux için
 ```bash
 ./degisiklikleri_githubdan_cek.sh
@@ -94,3 +94,14 @@ degisiklikleri_githubdan_cek.bat
 dosyasını çalıştırmanız gerekiyor.
 
 ℹ️ Bu işlem risklidir. Eğer yerelde yapılmış değişiklikler varsa kaybolabilir !!!!
+
+Arayüz kodundaki güncellemeleri almak için
+Linux için
+```bash
+./arayuzu_githubla_esitle.sh
+```
+Windows için
+```bat
+arayuzu_githubla_esitle.bat
+```
+dosyasını çalıştırmanız gerekiyor.
