@@ -2,6 +2,7 @@ from repo_kullanimi_window import TalimatDialog
 from PyQt5.QtWidgets import QPushButton, QHBoxLayout, QMessageBox,QScrollArea, QWidget, QInputDialog, QLineEdit,QSizePolicy, QComboBox, QLabel, QVBoxLayout, QDialog 
 from degiskenler import *
 from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 import json
 class DonemEkleGuncelleWindow(TalimatDialog):
     def __init__(self):
@@ -10,6 +11,8 @@ class DonemEkleGuncelleWindow(TalimatDialog):
         self.ekleBtn.setWindowTitle('Dönem Ekle')
         self.ekleBtn.setText('Dönem Ekle')
         self.ekleBtn.clicked.connect(self.donemEkle)
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
     def talimatListele(self):
         # Mevcut dönemleri temizle
         self.temizle()
@@ -108,6 +111,8 @@ class DonemDuzenlemeWindow(QDialog):
         self.donem = donem
         self.data = data
         self.parent = parent
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
         self.setWindowTitle('Dönem Düzenle')
         self.initUI()
     def initUI(self):
