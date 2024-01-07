@@ -1,0 +1,20 @@
+pop_all		macro
+			pop di
+			pop si
+			pop dx
+			pop cx
+			pop bx
+			pop ax
+			endm 	
+		
+		push_all	macro 
+			push ax
+			push bx
+			push cx
+			push dx
+			push si
+			push di
+			endm
+carp2		macro parm1
+			shl parm1,1
+			endm 
