@@ -151,7 +151,7 @@ README_GUNCELLE = "readme_guncelle"
 DEGISIKLIKLERI_GITHUBA_YOLLA = "degisiklikleri_githuba_yolla"
 HOCA_ICERIKLERI_GUNCELLE = "hoca_icerikleri_guncelle"
 RUTIN_KONTROL = "rutin_kontrol"
-ARAYUZU_GITHULA_ESITLE = "arayuzu_githula_esitle"
+ARAYUZU_GITHULA_ESITLE = "arayuzu_githubla_esitle"
 ## BAT DOSYALARI
 GOOGLE_FORM_GUNCELLE_BAT = GOOGLE_FORM_GUNCELLE + ".bat"
 README_GUNCELLE_BAT = README_GUNCELLE + ".bat"
