@@ -13,5 +13,6 @@ git config --global i18n.logOutputEncoding utf-8
 CHCP 65001
 REM Değişiklikleri ekler, commit yapar ve push yapar.
 git add --all
-git commit -m "değişiklikler senkronize edildi"
+git commit -m "değişiklikler senkronize edildi (bat dosyasıyla)"
 git push
+exit /b 0

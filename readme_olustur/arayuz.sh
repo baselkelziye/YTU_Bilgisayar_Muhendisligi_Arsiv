@@ -33,3 +33,4 @@ cd "$(dirname "$0")/readme_guncelleme_arayuzu_python"
 python3 main.py &
 
 echo "İşlem tamamlandı."
+exit 0
