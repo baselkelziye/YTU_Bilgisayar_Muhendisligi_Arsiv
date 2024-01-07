@@ -137,3 +137,42 @@ class KatkiKaydetThread(QThread):
             self.finished.emit(True, 'Katkıda bulunan güncellendi!')
         except Exception as e:
             self.finished.emit(False, f'Dosya yazılırken bir hata oluştu: {e}')
+class CMDScriptRunnerThread(QThread):
+    finished = pyqtSignal(str)
+    error = pyqtSignal(str)
+
+    def __init__(self, cmd):
+        super().__init__()
+        self.cmd = cmd
+
+    def run(self):
+        try:
+            print(f'Komut: {self.cmd}')
+            process = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, 
+                                           creationflags=subprocess.CREATE_NO_WINDOW)
+            
+            # Çıktıyı ve hataları gerçek zamanlı olarak oku ve yazdır
+            while True:
+                output_line = process.stdout.readline()
+                if output_line:
+                    print(output_line.strip())  # Çıktıyı konsola yazdır
+                error_line = process.stderr.readline()
+                if error_line:
+                    print(error_line.strip())  # Hataları konsola yazdır
+
+                # İşlem bittiğinde döngüden çık
+                if output_line == '' and error_line == '' and process.poll() is not None:
+                    break
+            print("bitti")
+            # İşlem sonucunu kontrol et
+            if process.returncode != 0:
+                # Tüm hataları birleştir ve sinyal gönder
+                errors = process.stderr.read().strip()
+                self.error.emit(errors)
+            else:
+                # Tüm çıktıları birleştir ve sinyal gönder
+                output = process.stdout.read().strip()
+                self.finished.emit(output)
+
+        except Exception as e:
+            self.error.emit(str(e))

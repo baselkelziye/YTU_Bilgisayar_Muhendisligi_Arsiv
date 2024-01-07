@@ -1,8 +1,10 @@
 import sys
 import os
 import subprocess
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QPushButton
+from PyQt5.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox
 from degiskenler import *
+from progress_dialog import CustomProgressDialog
+from threadler import CMDScriptRunnerThread
 class GitIslemleriWindow(QDialog):
     def __init__(self):
         super(GitIslemleriWindow, self).__init__()
@@ -49,16 +51,34 @@ class GitIslemleriWindow(QDialog):
         # İşletim sistemi kontrolü
         self.is_windows = sys.platform.startswith('win')
 
-    def run_script(self, script_name):
-        # Üst dizine çık
-        parent_dir = os.path.dirname(os.path.abspath(__file__))
-        script_path = os.path.join(parent_dir, script_name)
-        
-        # İşletim sistemine göre komutu seç ve çalıştır
-        if self.is_windows:
-            subprocess.run(["cmd.exe", "/c", script_path])
-        else:
-            subprocess.run(["/bin/bash", script_path])
+    
+    def run_script(self, script_path):
+        cevap = QMessageBox.question(self, 'Onay', 'İşlemi başlatmak istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No)
+        if cevap == QMessageBox.No:
+            QMessageBox.information(self, 'İptal', 'İşlem iptal edildi.')
+            return
+        self.original_dir = os.getcwd()
+        os.chdir("..")
+
+        cmd = ["cmd.exe", "/c", script_path] if self.is_windows else ["/bin/bash", script_path]
+        progress = CustomProgressDialog('İşlem yapılıyor...', self)
+        # Thread'i başlat
+        self.thread = CMDScriptRunnerThread(cmd)
+        self.thread.finished.connect(progress.close)
+        self.thread.error.connect(progress.close)
+        self.thread.finished.connect(self.on_finished)
+        self.thread.error.connect(self.on_error)
+        self.thread.start()
+        progress.show()
+
+    def on_finished(self, output):
+        QMessageBox.information(self, 'Başarılı', 'İşlem başarıyla tamamlandı!\n' + output)
+        os.chdir(self.original_dir)
+
+    def on_error(self, errors):
+        QMessageBox.critical(self, 'Hata', 'Bir hata oluştu:\n' + errors)
+        os.chdir(self.original_dir)
+
 
     def update_google_form(self):
         self.run_script(GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH)
