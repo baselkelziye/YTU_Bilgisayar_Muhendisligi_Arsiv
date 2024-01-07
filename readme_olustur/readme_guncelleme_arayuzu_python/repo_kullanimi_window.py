@@ -3,6 +3,7 @@ import json
 from PyQt5.QtCore import Qt
 from degiskenler import *
 from metin_islemleri import kisaltMetin
+from PyQt5.QtGui import QIcon
 class TalimatDialog(QDialog):
     def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
@@ -10,6 +11,8 @@ class TalimatDialog(QDialog):
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
     def initUI(self):
         self.setWindowTitle("Talimat Ekle/Düzenle")
         self.layout = QVBoxLayout(self)
@@ -172,6 +175,8 @@ class KavramDetayDialog(QDialog):
         self.kavram = self.repo_data[KAVRAMLAR][self.kavram_index]
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         if self.kavram_adi is None:
@@ -276,6 +281,8 @@ class KavramDialog(QDialog):
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
         
     def initUI(self):
         self.setWindowTitle("Kavram Ekle/Düzenle")
@@ -451,6 +458,8 @@ class AciklamaDialog(QDialog):
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
         
     def initUI(self):
         self.setWindowTitle("Açıklama Ekle/Düzenle")
@@ -607,6 +616,8 @@ class RepoKullanimiDialog(QDialog):
         self.setModal(True)
         self.json_dosyasi = json_dosyasi
         self.initUI()
+        if os.path.exists(OSMANLI_ICO_PATH):
+            self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
         
     def initUI(self):
         self.setWindowTitle("Repo Kullanımı Düzenleme")

@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox
 from degiskenler import *
 from progress_dialog import CustomProgressDialog
 from threadler import CMDScriptRunnerThread
+from PyQt5.QtGui import QIcon
 class GitIslemleriWindow(QDialog):
     def __init__(self):
         super(GitIslemleriWindow, self).__init__()
@@ -13,7 +14,8 @@ class GitIslemleriWindow(QDialog):
         self.setMinimumSize(300, 200)
         # Dialog layout
         self.layout = QVBoxLayout()
-
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
         # Butonlar ve renkler
         self.buttons = [

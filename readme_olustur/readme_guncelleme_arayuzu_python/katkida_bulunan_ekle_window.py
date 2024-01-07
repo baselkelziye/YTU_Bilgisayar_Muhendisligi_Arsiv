@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import (QLineEdit, QDialog, QPushButton, QVBoxLayout,
 from threadler import KatkiEkleThread  
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
-
+from PyQt5.QtGui import QIcon
 
 class KatkidaBulunanEkleWindow(QDialog):
     def __init__(self, parent):
@@ -12,7 +12,8 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.parent = parent
         self.title = 'Katkıda Bulunan Ekle'
         self.initUI()
-        
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
     def initUI(self):
         self.setWindowTitle(self.title)
         self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
