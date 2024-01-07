@@ -140,30 +140,29 @@ class KatkiKaydetThread(QThread):
 class CMDScriptRunnerThread(QThread):
     finished = pyqtSignal(str)
     error = pyqtSignal(str)
-
-    def __init__(self, cmd):
+    info = pyqtSignal(str)
+    def __init__(self, cmd, creationflags=subprocess.CREATE_NO_WINDOW):
         super().__init__()
         self.cmd = cmd
+        self.creationflags = creationflags
 
     def run(self):
         try:
-            print(f'Komut: {self.cmd}')
             process = subprocess.Popen(self.cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, 
-                                           creationflags=subprocess.CREATE_NO_WINDOW)
+                                           creationflags=self.creationflags, shell=True)
             
             # Çıktıyı ve hataları gerçek zamanlı olarak oku ve yazdır
             while True:
                 output_line = process.stdout.readline()
                 if output_line:
-                    print(output_line.strip())  # Çıktıyı konsola yazdır
+                    self.info.emit(output_line.strip())  # Çıktıyı konsola yazdır
                 error_line = process.stderr.readline()
                 if error_line:
-                    print(error_line.strip())  # Hataları konsola yazdır
+                    self.info.emit(error_line.strip())  # Hataları konsola yazdır
 
                 # İşlem bittiğinde döngüden çık
                 if output_line == '' and error_line == '' and process.poll() is not None:
                     break
-            print("bitti")
             # İşlem sonucunu kontrol et
             if process.returncode != 0:
                 # Tüm hataları birleştir ve sinyal gönder

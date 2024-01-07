@@ -588,8 +588,8 @@
                     "yorum": "Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor"
                 }
             ],
-            "kolaylik_puani": 65,
-            "gereklilik_puani": 70,
+            "kolaylik_puani": 40,
+            "gereklilik_puani": 50,
             "derse_dair_oneriler": [
                 {
                     "oneri_sahibi": "Traktör Reis",
@@ -604,7 +604,8 @@
                     "ad": "Dr. Oğuz Altun"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Veri Yapıları ve Algoritmalar",
