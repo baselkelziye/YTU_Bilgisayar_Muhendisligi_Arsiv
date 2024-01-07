@@ -61,6 +61,7 @@ def update_repository():
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
             print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return 
+        os.chdir("readme_olustur")
         os.chdir("..")
         os.system("python3 readme_olustur.py")
         if not execute_command("git add --all"): 
