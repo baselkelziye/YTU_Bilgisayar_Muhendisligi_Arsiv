@@ -45,6 +45,7 @@ def update_repository():
     
     # Git ve Python komutlarını sırayla çalıştır
     try:
+        os.chdir("../..")
         if not execute_command("git fetch"):
             print("Fetch sırasında conflict oluştu, script durduruluyor.")
             return 
