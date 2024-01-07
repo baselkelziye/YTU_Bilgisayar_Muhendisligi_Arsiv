@@ -2,6 +2,7 @@
 # Bu script, bir Git reposunda çalıştırıldığında değişiklikleri senkronize eder.
 
 # Mevcut dizinin bir Git reposu olup olmadığını kontrol eder.
+cd ..
 git rev-parse --is-inside-work-tree > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Bu dizin bir Git reposu değil."
