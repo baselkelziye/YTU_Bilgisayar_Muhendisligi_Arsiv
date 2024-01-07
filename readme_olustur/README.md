@@ -25,18 +25,72 @@ Proje dosyaları arasında, hocalar, dersler, dönemler ve diğer bilgileri içe
 Bu dosyalarla birlikte, her dersin ve her dönemin klasöründe README dosyaları oluşturulur.
 
 ### Projeyi Çalıştırmak
-
-Projeyi çalıştırmak için aşağıdaki adımı izleyin:
-
+Ders/Hoca vb. içeriklerini güncelleme arayüzünü çalıştırmak istiyorsanız
+Linux için
 ```bash
-python3 readme_olustur.py
+./arayuz.sh
 ```
+Windows için
+```bat
+arayuz.bat
+```
+dosyasını çalıştırmanız gerekiyor.
+
+
+README.md içeriklerinin json dosyalarına göre güncellenmesini istiyorsanız
+Linux için
+```bash
+./readme_guncelle.sh
+```
+Windows için
+```bat
+readme_guncelle.bat
+```
+dosyasını çalıştırmanız gerekiyor.
+
+Oy/Yorumların google formdan çekilip json dosyalarının oylara göre göre güncellenmesini istiyorsanız
+Linux için
+```bash
+./google_form_guncelle.sh
+```
+Windows için
+```bat
+google_form_guncelle.bat
+```
+dosyasını çalıştırmanız gerekiyor.
+
 Eğer rutin şekilde google form girdilerinin dinlenip güncelleme işlemi yapılmasını istiyorsanız
 Linux için
 ```bash
 ./rutin_kontrol.sh
 ```
-Windows için `rutin_kontrol.bat`
-komutlarını kullanabilirsiniz.
+Windows için
+```bat
+rutin_kontrol.bat
+```
+dosyasını çalıştırmanız gerekiyor.
 
-Bu komut, projenin kök klasöründeki tüm ilgili dosyaları okuyacak ve gerekli README dosyalarını oluşturacaktır.
+Dosyalarda yapılan değişiklikleri githuba yüklemek için
+Linux için
+```bash
+./degisiklikleri_githuba_yolla.sh
+```
+Windows için
+```bat
+degisiklikleri_githuba_yolla.bat
+```
+dosyasını çalıştırmanız gerekiyor.
+
+
+Dosyalarda yapılan değişiklikleri githubdan çekmek için
+Linux için
+```bash
+./degisiklikleri_githubdan_cek.sh
+```
+Windows için
+```bat
+degisiklikleri_githubdan_cek.bat
+```
+dosyasını çalıştırmanız gerekiyor.
+
+ℹ️ Bu işlem risklidir. Eğer yerelde yapılmış değişiklikler varsa kaybolabilir !!!!
