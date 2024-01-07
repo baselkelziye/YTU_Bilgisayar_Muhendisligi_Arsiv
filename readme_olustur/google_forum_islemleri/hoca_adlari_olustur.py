@@ -1,13 +1,22 @@
 import json
 import csv
+import sys
+import os
+# Mevcut dosyanın bulunduğu dizini al
+current_directory = os.path.dirname(os.path.abspath(__file__))
+# Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
+relative_path = os.path.join("..", "readme_guncelleme_arayuzu_python")
+# Göreceli yolu tam yola çevir
+absolute_path = os.path.join(current_directory, relative_path)
+# Tam yolu sys.path listesine ekle
+sys.path.append(absolute_path)
 
+from degiskenler import HOCALAR_JSON_PATH, HOCALAR, AD
 """
     Google forumlar için hoca adları csv dosyası oluşturur.
 """
-
-
 # Dosya yolu
-json_file_path = '../hocalar.json'  # JSON dosyasının yolu
+json_file_path = HOCALAR_JSON_PATH  # JSON dosyasının yolu
 
 # JSON dosyasını oku
 with open(json_file_path, 'r', encoding='utf-8') as file:
@@ -39,7 +48,7 @@ def sirala_ve_ayir(hocalar_listesi):
     return sirali_hocalar
 
 # Hoca adlarını işle ve unvanları at
-hoca_names = [hoca['ad'] for hoca in data['hocalar']]
+hoca_names = [hoca[AD] for hoca in data[HOCALAR] if hoca[AD]]
 hoca_names = sirala_ve_ayir(hoca_names)
 # CSV dosyası oluştur
 csv_file_path = 'hoca_listesi.csv'  # Oluşturulacak CSV dosyasının yolu
