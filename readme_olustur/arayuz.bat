@@ -1,6 +1,8 @@
 @echo off
 cls
-
+git config --global i18n.commitEncoding utf-8
+git config --global i18n.logOutputEncoding utf-8
+CHCP 65001
 :: Python'un yüklü olup olmadığını kontrol edin
 python3 --version >nul 2>&1
 if %errorlevel% neq 0 (
@@ -23,7 +25,7 @@ if %errorlevel% neq 0 (
 echo Gerekli kutuphaneler kontrol ediliyor ve yukleniyor...
 
 :: gereksinimler.txt dosyasındaki her paketi kontrol et
-for /F %%i in (gereksinimler.txt) do (
+for /F %%i in (%~dp0\gereksinimler.txt) do (
     pip show %%i >nul 2>&1
     if not %errorlevel%==0 (
         echo %%i yukleniyor...
