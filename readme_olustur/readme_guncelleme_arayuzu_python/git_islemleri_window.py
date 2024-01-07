@@ -52,7 +52,7 @@ class GitIslemleriWindow(QDialog):
         self.is_windows = sys.platform.startswith('win')
 
     
-    def run_script(self, script_path):
+    def run_script(self, script_path, creationflags = subprocess.CREATE_NO_WINDOW):
         cevap = QMessageBox.question(self, 'Onay', 'İşlemi başlatmak istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No)
         if cevap == QMessageBox.No:
             QMessageBox.information(self, 'İptal', 'İşlem iptal edildi.')
@@ -63,11 +63,12 @@ class GitIslemleriWindow(QDialog):
         cmd = ["cmd.exe", "/c", script_path] if self.is_windows else ["/bin/bash", script_path]
         progress = CustomProgressDialog('İşlem yapılıyor...', self)
         # Thread'i başlat
-        self.thread = CMDScriptRunnerThread(cmd)
+        self.thread = CMDScriptRunnerThread(cmd, creationflags=creationflags)
         self.thread.finished.connect(progress.close)
         self.thread.error.connect(progress.close)
         self.thread.finished.connect(self.on_finished)
         self.thread.error.connect(self.on_error)
+        self.thread.info.connect(self.info)
         self.thread.start()
         progress.show()
 
@@ -78,7 +79,8 @@ class GitIslemleriWindow(QDialog):
     def on_error(self, errors):
         QMessageBox.critical(self, 'Hata', 'Bir hata oluştu:\n' + errors)
         os.chdir(self.original_dir)
-
+    def info(self, message):
+        None
 
     def update_google_form(self):
         self.run_script(GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH)
@@ -93,4 +95,4 @@ class GitIslemleriWindow(QDialog):
         self.run_script(ARAYUZU_GITHULA_ESITLE_BAT if self.is_windows else ARAYUZU_GITHULA_ESITLE_SH)
 
     def start_routine_check(self):
-        self.run_script(RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH)
+        self.run_script(RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH, creationflags=subprocess.CREATE_NEW_CONSOLE)
