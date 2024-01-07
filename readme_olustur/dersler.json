@@ -1271,15 +1271,16 @@
             "donem": "",
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 30,
+            "gereklilik_puani": 10,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MUK",
                     "ad": "Dr. M. Utku Kalay"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Yönetim Bilgi Sistemleri",
