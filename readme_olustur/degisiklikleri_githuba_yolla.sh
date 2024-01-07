@@ -16,3 +16,4 @@ export LANG=en_US.UTF-8
 git add --all
 git commit -m "değişiklikler senkronize edildi"
 git push
+exit 0

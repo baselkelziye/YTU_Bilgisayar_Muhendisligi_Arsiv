@@ -11,3 +11,4 @@ IF NOT %ERRORLEVEL% == 0 (
 REM Uzak depodaki değişiklikleri çeker ve yerel depoya birleştirir.
 git fetch --all
 git reset --hard origin/master
+exit /b 0

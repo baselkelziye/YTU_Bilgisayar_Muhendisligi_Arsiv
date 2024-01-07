@@ -38,3 +38,4 @@ cd %~dp0\readme_guncelleme_arayuzu_python
 start pythonw main.py
 
 echo İşlem tamamlandı.
+exit /b 0
