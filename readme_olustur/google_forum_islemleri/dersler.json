@@ -1120,10 +1120,11 @@
             "donem": "",
             "tip": "Mesleki Seçmeli",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 100,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Büyük Veri İşleme Ve Analizi",
