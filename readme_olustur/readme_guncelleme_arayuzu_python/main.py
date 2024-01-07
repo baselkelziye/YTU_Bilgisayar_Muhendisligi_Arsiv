@@ -1,11 +1,12 @@
 import sys
 from PyQt5.QtWidgets import QApplication,QDesktopWidget, QWidget, QPushButton, QVBoxLayout, QMessageBox
+from PyQt5.QtGui import QIcon
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
 from progress_dialog import CustomProgressDialog
-from threadler import ScriptRunnerThread
+from degiskenler import SELCUKLU_ICO_PATH
 from repo_kullanimi_window import RepoKullanimiDialog
 from giris_ekle_guncelle_window import GirisEkleGuncelleWindow
 from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
@@ -18,6 +19,9 @@ class App(QWidget):
         self.width = 540
         self.height = 200
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
+
 
     def initUI(self):
         self.setWindowTitle(self.title)

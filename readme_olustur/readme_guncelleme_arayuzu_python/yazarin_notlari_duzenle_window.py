@@ -4,11 +4,14 @@ from PyQt5.QtWidgets import QDialog,QVBoxLayout, QInputDialog,QLabel, QDesktopWi
 from PyQt5.QtCore import Qt
 from degiskenler import *
 from metin_islemleri import kisaltMetin
+from PyQt5.QtGui import QIcon
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
@@ -133,6 +136,8 @@ class NotDuzenleWindow(QDialog):
         self.parent = parent
         self.setModal(True)
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         if self.idx is not None:  # Düzenleme modunda

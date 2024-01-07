@@ -3,6 +3,7 @@ from degiskenler import *
 from PyQt5.QtWidgets import QLabel, QMessageBox, QPushButton, QDesktopWidget, QHBoxLayout, QDialog, QVBoxLayout, QTextEdit, QInputDialog
 from metin_islemleri import kisaltMetin
 import json
+from PyQt5.QtGui import QIcon
 
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
     def __init__(self):
@@ -23,6 +24,8 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         self.mainLayout.insertWidget(4, self.aciklama_duzenle_btn) 
         self.ekleBtn.setText('İçindekiler Ekle')
         self.setWindowTitle('Giriş Güncelleme')
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
     def notlariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
@@ -121,6 +124,8 @@ class IcindekilerDuzenleWindow(QDialog):
         self.setModal(True)
         self.data = data
         self.initUI()
+        if os.path.exists(SELCUKLU_ICO_PATH):
+            self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
         self.setWindowTitle('İçindekileri Düzenle' if self.idx is not None else 'İçindekiler Ekle')
