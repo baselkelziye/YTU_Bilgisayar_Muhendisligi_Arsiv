@@ -42,7 +42,6 @@ def update_repository():
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
     print("Güncellemeler uygulanıyor...")
-    
     # Git ve Python komutlarını sırayla çalıştır
     try:
         os.chdir("../..")
@@ -55,13 +54,13 @@ def update_repository():
         if not execute_command("git pull"):
             print("Pull sırasında conflict oluştu, script durduruluyor.")
             return
+        os.chdir(original_directory)
         if not execute_command("python3 hoca_icerikleri_guncelle.py"):
             print("Hoca içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
             print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return 
-        os.chdir("readme_olustur")
         os.chdir("..")
         os.system("python3 readme_olustur.py")
         if not execute_command("git add --all"): 
