@@ -6,3 +6,4 @@ git config --global i18n.logOutputEncoding utf-8
 
 export LANG=en_US.UTF-8
 python3 google_form_rutin_kontrol.py
+exit 0
