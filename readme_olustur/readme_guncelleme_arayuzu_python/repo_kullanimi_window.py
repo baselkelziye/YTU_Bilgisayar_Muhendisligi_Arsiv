@@ -615,6 +615,7 @@ class RepoKullanimiDialog(QDialog):
         super().__init__()
         self.setModal(True)
         self.json_dosyasi = json_dosyasi
+        self.jsonKontrol()
         self.initUI()
         if os.path.exists(OSMANLI_ICO_PATH):
             self.setWindowIcon(QIcon(OSMANLI_ICO_PATH))
@@ -622,7 +623,15 @@ class RepoKullanimiDialog(QDialog):
     def initUI(self):
         self.setWindowTitle("Repo Kullanımı Düzenleme")
         layout = QVBoxLayout(self)
-
+        # Başlık Label
+        baslikLabel = QLabel("Başlık: ", self)
+        layout.addWidget(baslikLabel)
+        # Başlık Buton
+        self.baslikBtn = QPushButton(kisaltMetin(self.repo_data[BASLIK]), self)
+        self.baslikBtn.setToolTip(self.repo_data[BASLIK])
+        self.baslikBtn.clicked.connect(self.baslikDuzenle)
+        self.baslikBtn.setStyleSheet(BASLIK_BUTON_STILI)
+        layout.addWidget(self.baslikBtn)
         # Talimat Ekle/Düzenle butonu
         talimatBtn = QPushButton('Talimat Ekle/Düzenle', self)
         talimatBtn.clicked.connect(self.acTalimatDialog)
@@ -640,7 +649,19 @@ class RepoKullanimiDialog(QDialog):
         aciklamaBtn.clicked.connect(self.acAciklamaDialog)
         aciklamaBtn.setStyleSheet("background-color: lightcoral; color: black;")  # Kırmızı renk
         layout.addWidget(aciklamaBtn)
-        self.jsonKontrol()
+    def baslikDuzenle(self):
+        eski_baslik = self.repo_data[BASLIK]
+        yeni_baslik, ok = QInputDialog.getText(self, "Başlık Düzenle", "Başlık:", QLineEdit.Normal, eski_baslik)
+        if ok and yeni_baslik:
+            cevap = QMessageBox.question(self, 'Onay', 'Başlığı değiştirmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.repo_data[BASLIK] = yeni_baslik
+                self.jsonGuncelle()
+                self.baslikBtn.setText(kisaltMetin(self.repo_data[BASLIK]))
+                self.baslikBtn.setToolTip(self.repo_data[BASLIK])
+                QMessageBox.information(self, 'Başlık Düzenlendi', 'Başlık başarıyla düzenlendi.')
+            else:
+                QMessageBox.information(self, 'Başlık Düzenlenemedi', 'Başlık düzenlenemedi.')
     # JSON dosyasını oku
     def jsonVeriOku(self):
         try:
