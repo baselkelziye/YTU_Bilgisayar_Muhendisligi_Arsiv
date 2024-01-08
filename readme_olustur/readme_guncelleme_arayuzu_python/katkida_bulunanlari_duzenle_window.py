@@ -8,6 +8,7 @@ from PyQt5.QtCore import Qt
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
 from PyQt5.QtGui import QIcon
+from metin_islemleri import kisaltMetin
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -26,6 +27,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.title = 'Katkıda Bulunanları Ekle/Güncelle'
+        # JSON dosyasını oku
+        self.data = self.jsonDosyasiniYukle()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -34,13 +37,32 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.setMinimumHeight(200)
         self.setMinimumWidth(600)
         self.mainLayout = QVBoxLayout(self)  # Ana layout
+        # Filtreleme için arama kutusu
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
+        # Bölüm adı label
+        self.bolumAdiLabel = QLabel('Bölüm Adı: ')
+        self.mainLayout.addWidget(self.bolumAdiLabel)
+        # Bölüm adı düzenleme butonu
+        self.bolumAdiDuzenleBtn = QPushButton(kisaltMetin(self.data[BOLUM_ADI]), self)
+        self.bolumAdiDuzenleBtn.setToolTip(self.data[BOLUM_ADI])
+        self.bolumAdiDuzenleBtn.setStyleSheet(BASLIK_BUTON_STILI)
+        self.bolumAdiDuzenleBtn.clicked.connect(self.bolumAdiDuzenle)
+        self.mainLayout.addWidget(self.bolumAdiDuzenleBtn)
+        # Bölüm açıklaması label
+        self.bolumAciklamaLabel = QLabel('Bölüm Açıklaması: ')
+        self.mainLayout.addWidget(self.bolumAciklamaLabel)
+        # Bölüm açıklaması düzenleme butonu
+        self.bolumAciklamaDuzenleBtn = QPushButton(kisaltMetin(self.data[BOLUM_ACIKLAMASI]), self)
+        self.bolumAciklamaDuzenleBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.bolumAciklamaDuzenleBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
+        self.bolumAciklamaDuzenleBtn.clicked.connect(self.bolumAciklamasiDuzenle)
+        self.mainLayout.addWidget(self.bolumAciklamaDuzenleBtn)
         # Ekle butonu
-        self.ekleBtn = QPushButton("Ekle", self)
+        self.ekleBtn = QPushButton("Katkıda Bulunan Ekle", self)
         self.ekleBtn.clicked.connect(self.acKatkidaBulunanEkle)
         self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.mainLayout.addWidget(self.ekleBtn)
@@ -56,6 +78,36 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.butonlariYukle()
+    def bolumAdiDuzenle(self):
+        # Bölüm adını düzenle
+        text, ok = QInputDialog.getText(self, 'Bölüm Adı', 'Bölüm adı: ', QLineEdit.Normal, self.data[BOLUM_ADI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', f'Bölüm adını "{text}" olarak değiştirmek istediğine emin misin?', QMessageBox.Yes | QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ADI] = text
+                self.bolumAdiDuzenleBtn.setText(kisaltMetin(text))
+                self.jsonDosyasiniKaydet()
+                self.bolumAdiDuzenleBtn.setToolTip(text)
+                QMessageBox.information(self, 'Başarılı', 'Bölüm adı başarıyla değiştirildi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm adı değiştirilmedi.')
+    def bolumAciklamasiDuzenle(self):
+        # Bölüm açıklamasını düzenle
+        text, ok = QInputDialog.getMultiLineText(self, 'Bölüm Açıklaması', 'Bölüm açıklaması: ', self.data[BOLUM_ACIKLAMASI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', f'Bölüm açıklamasını "{text}" olarak değiştirmek istediğine emin misin?', QMessageBox.Yes | QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ACIKLAMASI] = text
+                self.bolumAciklamaDuzenleBtn.setText(kisaltMetin(text))
+                self.jsonDosyasiniKaydet()
+                self.bolumAciklamaDuzenleBtn.setToolTip(text)
+                QMessageBox.information(self, 'Başarılı', 'Bölüm açıklaması başarıyla değiştirildi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm açıklaması değiştirilmedi.')
+    def jsonDosyasiniKaydet(self):
+        # JSON dosyasını güncelle
+        with open(KATKIDA_BULUNANLAR_JSON_PATH, 'w', encoding='utf-8') as file:
+            json.dump(self.data, file, indent=4, ensure_ascii=False)
     def searchNotes(self, query):
         if not query:
             self.clearFilters(is_clicked=False)

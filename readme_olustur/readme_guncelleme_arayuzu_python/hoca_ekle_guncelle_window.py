@@ -8,6 +8,7 @@ from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from PyQt5.QtGui import QIcon
+from metin_islemleri import kisaltMetin
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -24,6 +25,7 @@ class HocaEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.data = self.jsonDosyasiniYukle()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -36,6 +38,24 @@ class HocaEkleGuncelleWindow(QDialog):
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
+        # Bölüm adı label
+        self.bolumAdiLabel = QLabel("Bölüm Adı:")
+        self.mainLayout.addWidget(self.bolumAdiLabel)
+        # Bölüm adı buton
+        self.bolumAdiBtn = QPushButton(kisaltMetin(self.data[BOLUM_ADI]))
+        self.bolumAdiBtn.setStyleSheet(BASLIK_BUTON_STILI)
+        self.bolumAdiBtn.clicked.connect(self.bolumAdiDuzenle)
+        self.bolumAdiBtn.setToolTip(self.data[BOLUM_ADI])
+        self.mainLayout.addWidget(self.bolumAdiBtn)
+        # Bölüm açıklaması label
+        self.bolumAciklamasiLabel = QLabel("Bölüm Açıklaması:")
+        self.mainLayout.addWidget(self.bolumAciklamasiLabel)
+        # Bölüm açıklaması buton
+        self.bolumAciklamasiBtn = QPushButton(kisaltMetin(self.data[BOLUM_ACIKLAMASI]))
+        self.bolumAciklamasiBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
+        self.bolumAciklamasiBtn.clicked.connect(self.bolumAciklamaDuzenle)
+        self.bolumAciklamasiBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.mainLayout.addWidget(self.bolumAciklamasiBtn)
         # Hoca ekleme butonu
         self.ekleBtn = QPushButton('Hoca Ekle', self)
         self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
@@ -58,6 +78,33 @@ class HocaEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.hocalariYukle()
+    def bolumAciklamaDuzenle(self):
+        text, ok = QInputDialog.getMultiLineText(self, 'Bölüm Açıklaması', 'Bölüm açıklaması:', text=self.data[BOLUM_ACIKLAMASI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', 'Bölüm açıklamasını güncellemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ACIKLAMASI] = text
+                self.bolumAciklamasiBtn.setText(kisaltMetin(text))
+                self.bolumAciklamasiBtn.setToolTip(text)
+                self.jsonKaydet()
+                QMessageBox.information(self, 'Başarılı', 'Bölüm açıklaması güncellendi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm açıklaması güncellenmedi.')
+    def bolumAdiDuzenle(self):
+        text, ok = QInputDialog.getText(self, 'Bölüm Adı', 'Bölüm adı:', QLineEdit.Normal, text=self.data[BOLUM_ADI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', 'Bölüm adını güncellemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ADI] = text
+                self.bolumAdiBtn.setText(kisaltMetin(text))
+                self.bolumAdiBtn.setToolTip(text)
+                self.jsonKaydet()
+                QMessageBox.information(self, 'Başarılı', 'Bölüm adı güncellendi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm adı güncellenmedi.')
+    def jsonKaydet(self):
+        with open(HOCALAR_JSON_PATH, 'w', encoding='utf-8') as file:
+            json.dump(self.data, file, ensure_ascii=False, indent=4)
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
             text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak hoca:')
