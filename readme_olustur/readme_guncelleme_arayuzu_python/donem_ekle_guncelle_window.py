@@ -7,8 +7,8 @@ import json
 class DonemEkleGuncelleWindow(TalimatDialog):
     def __init__(self):
         super().__init__(json_dosyasi=DONEMLER_JSON_PATH)
+        self.setWindowTitle('Dönem Ekle/Güncelle')
         self.ekleBtn.clicked.disconnect()
-        self.ekleBtn.setWindowTitle('Dönem Ekle')
         self.ekleBtn.setText('Dönem Ekle')
         self.ekleBtn.clicked.connect(self.donemEkle)
         if os.path.exists(SELCUKLU_ICO_PATH):
@@ -16,9 +16,9 @@ class DonemEkleGuncelleWindow(TalimatDialog):
     def talimatListele(self):
         # Mevcut dönemleri temizle
         self.temizle()
-        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data[DONEMLER])} dönem')
+        self.talimatSayisiLabel.setText(f'Toplam {len(self.repo_data.get(DONEMLER,[]))} dönem')
         self.clearFiltersButton.hide()  # Temizle butonunu gizle
-        for i, donem in enumerate(self.repo_data[DONEMLER]):
+        for i, donem in enumerate(self.repo_data.get(DONEMLER,[])):
             donemLayout = QHBoxLayout()
             
             donembtn = QPushButton(donem[DONEM_ADI], self)
@@ -120,7 +120,6 @@ class DonemDuzenlemeWindow(QDialog):
         self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Ana layout
         self.mainLayout = QVBoxLayout()
-
         # Dönem adı
         donemAdiLayout = QHBoxLayout()
         self.donemAdiLabel = QLabel('Dönem Adı:', self)
@@ -128,12 +127,11 @@ class DonemDuzenlemeWindow(QDialog):
         donemAdiLayout.addWidget(self.donemAdiLabel)
         donemAdiLayout.addWidget(self.donemAdiLineEdit)
         self.mainLayout.addLayout(donemAdiLayout)
-
         # Yıl seçimi
         yilLayout = QHBoxLayout()
         self.yilLabel = QLabel('Yıl:', self)
         self.yilComboBox = QComboBox(self)
-        self.yilComboBox.addItems(['0', '1', '2', '3', '4'])  # 0'dan 4'e yıllar
+        self.yilComboBox.addItems(DONEM_YILLARI)  # 0'dan 4'e yıllar
         yilLayout.addWidget(self.yilLabel)
         yilLayout.addWidget(self.yilComboBox)
         self.mainLayout.addLayout(yilLayout)
@@ -142,18 +140,11 @@ class DonemDuzenlemeWindow(QDialog):
         donemLayout = QHBoxLayout()
         self.donemLabel = QLabel('Dönem:', self)
         self.donemComboBox = QComboBox(self)
-        self.donemComboBox.addItems(['','Güz', 'Bahar'])  # Dönemler
+        self.donemComboBox.addItems(DONEMLER_DIZISI)  # Dönemler
         donemLayout.addWidget(self.donemLabel)
         donemLayout.addWidget(self.donemComboBox)
         self.mainLayout.addLayout(donemLayout)
 
-        # Dosya yolu
-        dosyaYoluLayout = QHBoxLayout()
-        self.dosyaYoluLabel = QLabel('Dosya Yolu:', self)
-        self.dosyaYoluLineEdit = QLineEdit(self)
-        dosyaYoluLayout.addWidget(self.dosyaYoluLabel)
-        dosyaYoluLayout.addWidget(self.dosyaYoluLineEdit)
-        self.mainLayout.addLayout(dosyaYoluLayout)
         # Hocalar için kaydırılabilir alan oluştur
         self.tavsiyelerScrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.tavsiyelerScrollArea.setWidgetResizable(True)
@@ -181,13 +172,12 @@ class DonemDuzenlemeWindow(QDialog):
         if self.donem and GENEL_TAVSIYELER in self.donem:
             for tavsiye in self.donem[GENEL_TAVSIYELER]:
                 self.tavsiyeEkleLabel(tavsiye)
-            self.donemAdiLineEdit.setText(self.donem[DONEM_ADI])
-            self.yilComboBox.setCurrentIndex(self.donem[YIL])
-            donem_index = self.donemComboBox.findText(self.donem[DONEM])
+            self.donemAdiLineEdit.setText(self.donem.get(DONEM_ADI, ''))
+            self.yilComboBox.setCurrentText(str(self.donem.get(YIL, 1)))
+            donem_index = self.donemComboBox.findText(self.donem.get(DONEM, ''))
             # Eğer indeks geçerliyse, combobox'ı bu indekse ayarlayın
             if donem_index != -1:
                 self.donemComboBox.setCurrentIndex(donem_index)
-            self.dosyaYoluLineEdit.setText(self.donem[DOSYA_YOLU].replace('../',''))
     def tavsiyeEkleLabel(self, tavsiye=None):
         # Yeni QLineEdit oluştur
         editLabel = QLineEdit(self)
@@ -216,10 +206,15 @@ class DonemDuzenlemeWindow(QDialog):
         if not donem_adi:
             QMessageBox.warning(self, 'Hata', 'Dönem adı boş olamaz!')
             return False
-        dosya_yolu = self.dosyaYoluLineEdit.text().strip()
-        if not dosya_yolu:
-            QMessageBox.warning(self, 'Hata', 'Dosya yolu boş olamaz!')
-            return False
+        yil = int(self.yilComboBox.currentText())
+        donem_data = self.donemComboBox.currentText()
+        for index,donem in enumerate(self.data.get(DONEMLER, [])):
+            if donem.get(YIL,-1) == yil and donem.get(DONEM, '') == donem_data:
+                if self.index is None or index != self.index:
+                    QMessageBox.warning(self, 'Hata', 'Bu yıl-dönem ikilisi zaten mevcut!')
+                    return False
+                else:
+                    break
         return True
     def kaydet(self):
         cevap = QMessageBox.question(self, 'Onay', 'Değişiklikleri kaydetmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
@@ -227,13 +222,11 @@ class DonemDuzenlemeWindow(QDialog):
             return
         if not self.girdiKontrol():
             return
-        donem_adi = self.donemAdiLineEdit.text().strip()
-        yil = self.yilComboBox.currentIndex()
+        yil = int(self.yilComboBox.currentText())
         donem = self.donemComboBox.currentText()
-        dosya_yolu = self.dosyaYoluLineEdit.text().strip()
         genel_tavsiyeler = []
         tum_widgets = topluWidgetBul(self.tavsiyelerLayout)
-
+        donem_adi = self.donemAdiLineEdit.text().strip()
         for widget in tum_widgets:
             if isinstance(widget, QLineEdit):
                 genel_tavsiyeler.append(widget.text().strip())
@@ -241,7 +234,6 @@ class DonemDuzenlemeWindow(QDialog):
                 DONEM_ADI: donem_adi,
                 YIL: yil,
                 DONEM: donem,
-                DOSYA_YOLU: os.path.join('..', dosya_yolu),
                 GENEL_TAVSIYELER: genel_tavsiyeler
             }
         if self.index is None:
@@ -249,8 +241,8 @@ class DonemDuzenlemeWindow(QDialog):
         else:
             self.data[DONEMLER][self.index] = data
         self.parent.jsonGuncelle()
-        self.parent.talimatListele()
         QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi.')
+        self.parent.talimatListele()
         self.close()
 def topluWidgetBul(layout):
     widgets = []
