@@ -9,6 +9,7 @@ class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.data = self.jsonDosyasiniYukle()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -17,11 +18,21 @@ class YazarinNotlariWindow(QDialog):
         self.setWindowTitle('Yazarın Notları Ekle/Düzenle')
         self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.mainLayout = QVBoxLayout(self)  # Ana layout
+        # Filtreleme için QLineEdit oluştur
         self.clearFiltersButton = QPushButton('Filtreleri Temizle', self)
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
+        # Başlık etiketi
+        self.baslikLabel = QLabel("Başlık: ")
+        self.mainLayout.addWidget(self.baslikLabel)
+        # Başlık butonu
+        self.baslikBtn = QPushButton(kisaltMetin(self.data[BASLIK]), self)
+        self.baslikBtn.setStyleSheet(BASLIK_BUTON_STILI)
+        self.baslikBtn.clicked.connect(self.baslikDuzenle)
+        self.baslikBtn.setToolTip(self.data[BASLIK])
+        self.mainLayout.addWidget(self.baslikBtn)
         # Not ekleme butonu
         self.ekleBtn = QPushButton('Not Ekle', self)
         self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan, beyaz yazı
@@ -50,6 +61,25 @@ class YazarinNotlariWindow(QDialog):
             text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak kelime:')
             if ok:
                 self.searchNotes(text)
+    def jsonKaydet(self):
+        try:
+            with open(YAZARIN_NOTLARI_JSON_PATH, 'w',encoding='utf-8') as file:
+                json.dump(self.data, file, ensure_ascii=False, indent=4)
+        except Exception as e:
+            QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
+    def baslikDuzenle(self):
+        yeni_baslik, ok = QInputDialog.getText(self, 'Başlık Düzenle', 'Başlık:', text=self.data[BASLIK])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', 'Başlığı değiştirmek istediğine emin misin?', QMessageBox.Yes | QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BASLIK] = yeni_baslik
+                self.baslikBtn.setText(kisaltMetin(yeni_baslik))
+                self.baslikBtn.setToolTip(yeni_baslik)
+                self.jsonKaydet()
+                QMessageBox.information(self, 'Başarılı', 'Başlık güncellendi!')
+            else:
+                QMessageBox.information(self, 'İptal', 'Başlık değiştirilmedi!')
+
     # Filtreleri temizleme fonksiyonu
     def clearFilters(self, is_clicked=True):
         if is_clicked:

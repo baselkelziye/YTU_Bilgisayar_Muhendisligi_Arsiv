@@ -113,6 +113,8 @@ SIL_BUTONU_STILI = "background-color: red; color: white;"
 TEMIZLE_BUTONU_STILI = "background-color: orange; color: white;"
 VEREN_EKLE_BUTONU_STILI = "background-color: lightblue;"
 GUNCELLE_BUTTON_STILI = "background-color: blue; color: white;"
+BASLIK_BUTON_STILI = "background-color: lightblue; color: black;"
+ACIKLAMA_BUTON_STILI = "background-color: lightgreen; color: black;"
 
 
 # JSON ANAHTARLARI
