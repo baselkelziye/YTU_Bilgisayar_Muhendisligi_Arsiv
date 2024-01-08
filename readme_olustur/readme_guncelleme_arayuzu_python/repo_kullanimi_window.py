@@ -627,8 +627,9 @@ class RepoKullanimiDialog(QDialog):
         baslikLabel = QLabel("Başlık: ", self)
         layout.addWidget(baslikLabel)
         # Başlık Buton
-        self.baslikBtn = QPushButton(kisaltMetin(self.repo_data[BASLIK]), self)
-        self.baslikBtn.setToolTip(self.repo_data[BASLIK])
+        baslik = self.repo_data.get(BASLIK, VARSAYILAN_REPO_KULLANIMI_BOLUM_ADI)
+        self.baslikBtn = QPushButton(kisaltMetin(baslik), self)
+        self.baslikBtn.setToolTip(baslik)
         self.baslikBtn.clicked.connect(self.baslikDuzenle)
         self.baslikBtn.setStyleSheet(BASLIK_BUTON_STILI)
         layout.addWidget(self.baslikBtn)
@@ -677,13 +678,13 @@ class RepoKullanimiDialog(QDialog):
     def jsonKontrol(self):
         self.repo_data = self.jsonVeriOku()
         if BASLIK not in self.repo_data:
-            self.repo_data[BASLIK] = "Repo Kullanımı"
+            self.repo_data[BASLIK] = VARSAYILAN_REPO_KULLANIMI_BOLUM_ADI
         if TALIMAT not in self.repo_data:
-            self.repo_data[TALIMAT] = "Talimatlar:"
+            self.repo_data[TALIMAT] = VARSAYILAN_TALIMATLAR_BOLUM_ADI
         if KAVRAM not in self.repo_data:
-            self.repo_data[KAVRAM] = "Kavramlar:"
+            self.repo_data[KAVRAM] = VARSAYILAN_KAVRAMLAR_BOLUM_ADI
         if ACIKLAMA not in self.repo_data:
-            self.repo_data[ACIKLAMA] = "Açıklamalar:"
+            self.repo_data[ACIKLAMA] = VARSAYILAN_ACIKLAMALAR_BOLUM_ADI
         if TALIMATLAR not in self.repo_data:
             self.repo_data[TALIMATLAR] = []
         if KAVRAMLAR not in self.repo_data:

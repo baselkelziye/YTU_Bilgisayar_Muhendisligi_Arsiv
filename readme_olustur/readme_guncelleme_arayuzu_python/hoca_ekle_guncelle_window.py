@@ -26,6 +26,8 @@ class HocaEkleGuncelleWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.data = self.jsonDosyasiniYukle()
+        if self.ilklendir():
+            self.jsonKaydet()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -38,23 +40,25 @@ class HocaEkleGuncelleWindow(QDialog):
         self.clearFiltersButton.setStyleSheet(TEMIZLE_BUTONU_STILI)  # Mavi arka plan
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
+        bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_HOCA_BOLUM_ADI)
+        aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_HOCA_BOLUM_ACIKLAMASI)
         # Bölüm adı label
         self.bolumAdiLabel = QLabel("Bölüm Adı:")
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı buton
-        self.bolumAdiBtn = QPushButton(kisaltMetin(self.data[BOLUM_ADI]))
+        self.bolumAdiBtn = QPushButton(kisaltMetin(bolum_adi))
         self.bolumAdiBtn.setStyleSheet(BASLIK_BUTON_STILI)
         self.bolumAdiBtn.clicked.connect(self.bolumAdiDuzenle)
-        self.bolumAdiBtn.setToolTip(self.data[BOLUM_ADI])
+        self.bolumAdiBtn.setToolTip(bolum_adi)
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
         self.bolumAciklamasiLabel = QLabel("Bölüm Açıklaması:")
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
-        self.bolumAciklamasiBtn = QPushButton(kisaltMetin(self.data[BOLUM_ACIKLAMASI]))
+        self.bolumAciklamasiBtn = QPushButton(kisaltMetin(aciklama))
         self.bolumAciklamasiBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
         self.bolumAciklamasiBtn.clicked.connect(self.bolumAciklamaDuzenle)
-        self.bolumAciklamasiBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.bolumAciklamasiBtn.setToolTip(aciklama)
         self.mainLayout.addWidget(self.bolumAciklamasiBtn)
         # Hoca ekleme butonu
         self.ekleBtn = QPushButton('Hoca Ekle', self)
@@ -151,15 +155,21 @@ class HocaEkleGuncelleWindow(QDialog):
                 return json.load(file)
         except Exception as e:
             return json.loads('{}')
+    def ilklendir(self):
+        ilklendirildi_mi = False
+        if BOLUM_ADI not in self.data:
+            self.data[BOLUM_ADI] = VARSAYILAN_HOCA_BOLUM_ADI
+            ilklendirildi_mi = True
+        if BOLUM_ACIKLAMASI not in self.data:
+            self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_HOCA_BOLUM_ACIKLAMASI
+            ilklendirildi_mi = True
+        if HOCALAR not in self.data:
+            self.data[HOCALAR] = []
+            ilklendirildi_mi = True
+        return ilklendirildi_mi
     def hocalariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
-            if BOLUM_ADI not in self.data:
-                self.data[BOLUM_ADI] = VARSAYILAN_HOCA_BOLUM_ADI
-            if BOLUM_ACIKLAMASI not in self.data:
-                self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_HOCA_BOLUM_ACIKLAMASI
-            if HOCALAR not in self.data:
-                self.data[HOCALAR] = []
             hoca_sayisi = len(self.data[HOCALAR])  # Hoca sayısını hesapla
             self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
             def unvan_ve_isim_ayir(hoca):
