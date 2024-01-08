@@ -10,16 +10,15 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         super().__init__()
     def initUI(self):
         super().initUI()
-        self.baslik_label = QLabel('Başlık:', self)
-        self.mainLayout.insertWidget(1, self.baslik_label)
-        self.baslik_duzenle_btn = QPushButton(kisaltMetin(self.data[BASLIK]), self)
-        self.baslik_duzenle_btn.clicked.connect(lambda: self.aciklamaDuzenle(BASLIK))
-        self.baslik_duzenle_btn.setToolTip(self.data[BASLIK])  # Tam metni araç ipucu olarak ekle
-        self.mainLayout.insertWidget(2, self.baslik_duzenle_btn)
+        baslik = self.data.get(BASLIK, VARSAYILAN_GIRIS_BASLIK)
+        aciklama = self.data.get(ACIKLAMA, VARSAYILAN_GIRIS_ACIKLAMA)
+        self.baslikBtn.setText(kisaltMetin(baslik))
+        self.baslikBtn.setToolTip(baslik)
         self.aciklama_label = QLabel('Açıklama:', self)
         self.mainLayout.insertWidget(3, self.aciklama_label)
-        self.aciklama_duzenle_btn = QPushButton(kisaltMetin(self.data[ACIKLAMA]), self)
-        self.aciklama_duzenle_btn.setToolTip(self.data[ACIKLAMA])  # Tam metni araç ipucu olarak ekle
+        self.aciklama_duzenle_btn = QPushButton(kisaltMetin(aciklama), self)
+        self.aciklama_duzenle_btn.setStyleSheet(ACIKLAMA_BUTON_STILI)
+        self.aciklama_duzenle_btn.setToolTip(aciklama)  # Tam metni araç ipucu olarak ekle
         self.aciklama_duzenle_btn.clicked.connect(lambda: self.aciklamaDuzenle(ACIKLAMA))
         self.mainLayout.insertWidget(4, self.aciklama_duzenle_btn) 
         self.ekleBtn.setText('İçindekiler Ekle')
@@ -85,7 +84,8 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
-    
+    def baslikDuzenle(self):
+        self.aciklamaDuzenle(BASLIK)
     def aciklamaDuzenle(self, anahtar):
         eski_aciklama = self.data.get(anahtar, "")
         baslik = "Başlık" if anahtar == BASLIK else "Açıklama"
@@ -94,8 +94,8 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         if ok and yeni_aciklama != eski_aciklama:
             self.data[anahtar] = yeni_aciklama
             if baslik == "Başlık":
-                self.baslik_duzenle_btn.setText(kisaltMetin(yeni_aciklama))
-                self.baslik_duzenle_btn.setToolTip(yeni_aciklama)
+                self.baslikBtn.setText(kisaltMetin(yeni_aciklama))
+                self.baslikBtn.setToolTip(yeni_aciklama)
             else:
                 self.aciklama_duzenle_btn.setText(kisaltMetin(yeni_aciklama))
                 self.aciklama_duzenle_btn.setToolTip(yeni_aciklama)

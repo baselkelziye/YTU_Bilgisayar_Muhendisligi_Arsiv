@@ -10,6 +10,8 @@ class YazarinNotlariWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.data = self.jsonDosyasiniYukle()
+        if self.ilklendir():
+            self.jsonKaydet()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -28,10 +30,11 @@ class YazarinNotlariWindow(QDialog):
         self.baslikLabel = QLabel("Başlık: ")
         self.mainLayout.addWidget(self.baslikLabel)
         # Başlık butonu
-        self.baslikBtn = QPushButton(kisaltMetin(self.data[BASLIK]), self)
+        baslik = self.data.get(BASLIK, VARSAYILAN_YAZARIN_NOTLARI_BOLUM_ADI)
+        self.baslikBtn = QPushButton(kisaltMetin(baslik), self)
         self.baslikBtn.setStyleSheet(BASLIK_BUTON_STILI)
         self.baslikBtn.clicked.connect(self.baslikDuzenle)
-        self.baslikBtn.setToolTip(self.data[BASLIK])
+        self.baslikBtn.setToolTip(baslik)
         self.mainLayout.addWidget(self.baslikBtn)
         # Not ekleme butonu
         self.ekleBtn = QPushButton('Not Ekle', self)
@@ -120,13 +123,18 @@ class YazarinNotlariWindow(QDialog):
                 return json.load(file)
         except Exception as e:
             return json.loads('{}')
+    def ilklendir(self):
+        ilklendirildi = False
+        if ACIKLAMALAR not in self.data:
+            self.data[ACIKLAMALAR] = []
+            ilklendirildi = True
+        if BASLIK not in self.data:
+            self.data[BASLIK] = VARSAYILAN_YAZARIN_NOTLARI_BOLUM_ADI
+            ilklendirildi = True
+        return ilklendirildi
     def notlariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
-            if ACIKLAMALAR not in self.data:
-                self.data[ACIKLAMALAR] = []
-            if BASLIK not in self.data:
-                self.data[BASLIK] = 'Yazarın Notları'
             not_sayisi = len(self.data[ACIKLAMALAR])  # Not sayısını hesapla
             self.notSayisiLabel.setText(f'Toplam {not_sayisi} not')  # Not sayısını etikette güncelle
 

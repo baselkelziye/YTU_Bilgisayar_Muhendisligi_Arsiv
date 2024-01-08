@@ -82,6 +82,19 @@ VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI =  "Henüz dersle alakalı bir döküm
 VARSAYILAN_GIRIS_BASLIK = "Yıldız Teknik Üniversitesi X Mühendisliği Ders Notları"
 VARSAYILAN_GIRIS_ACIKLAMA = f"Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link]({HOCA_YORULMALA_LINKI}) [yildiz için bu link]({HOCA_OYLAMA_LINKI}) ya da derslerle alakalı [yorum için bu link]({DERS_YORUMLAMA_LINKI}) [yildiz için bu link]({DERS_OYLAMA_LINKI}) hakaret içermeyen yorumlarını ve puanlamalarını bizimle anonim olarak paylaşabilirsin."
 
+## KATKIDA BULUNANLAR
+VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI = "Katkıda Bulunanlar"
+VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ACIKLAMASI = "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
+
+## YAZARIN NOTLARI
+VARSAYILAN_YAZARIN_NOTLARI_BOLUM_ADI = "Yazarın Notları"
+
+## REPONUN KULLANIMI
+VARSAYILAN_REPO_KULLANIMI_BOLUM_ADI = "Repo Kullanımı"
+VARSAYILAN_TALIMATLAR_BOLUM_ADI = "Talimatlar"
+VARSAYILAN_KAVRAMLAR_BOLUM_ADI = "Kavramlar"
+VARSAYILAN_ACIKLAMALAR_BOLUM_ADI = "Açıklamalar"
+
 # DOSYA ADLARI
 DERSLER_JSON_NAME = "dersler.json"
 DERSLER_JSON_PATH = os.path.join("..", DERSLER_JSON_NAME)
@@ -179,3 +192,16 @@ OSMANLI_ICO = "osmanli.png"
 ## IKON YOLLARI
 OSMANLI_ICO_PATH = os.path.join(IKON_PATH, OSMANLI_ICO)
 SELCUKLU_ICO_PATH = os.path.join(IKON_PATH, SELCUKLU_ICO)
+
+# DONEMLER
+MESLEKI_SECMELI = "Mesleki Seçmeli"
+GUZ = "Güz"
+BAHAR = "Bahar"
+SECMELI_4 = "Seçmeli 4"
+SECMELI = "Seçmeli"
+ZORUNLU = "Zorunlu"
+DERS_TIPLERI = [ZORUNLU,SECMELI, SECMELI_4, MESLEKI_SECMELI]
+DONEM_YILLARI = ['1', '2', '3', '4']
+DONEMLER_DIZISI = [GUZ, BAHAR]
+DONEMLER_DIZISI_YOKLA_BERABER = [YOK, GUZ, BAHAR]
+
