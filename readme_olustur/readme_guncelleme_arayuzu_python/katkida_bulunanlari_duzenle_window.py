@@ -29,6 +29,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.title = 'Katkıda Bulunanları Ekle/Güncelle'
         # JSON dosyasını oku
         self.data = self.jsonDosyasiniYukle()
+        if self.ilklendir():
+            self.jsonDosyasiniKaydet()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -47,8 +49,10 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.bolumAdiLabel = QLabel('Bölüm Adı: ')
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı düzenleme butonu
-        self.bolumAdiDuzenleBtn = QPushButton(kisaltMetin(self.data[BOLUM_ADI]), self)
-        self.bolumAdiDuzenleBtn.setToolTip(self.data[BOLUM_ADI])
+        bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI)
+        aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ACIKLAMASI)
+        self.bolumAdiDuzenleBtn = QPushButton(kisaltMetin(bolum_adi), self)
+        self.bolumAdiDuzenleBtn.setToolTip(bolum_adi)  # Tam metni araç ipucu olarak ekle
         self.bolumAdiDuzenleBtn.setStyleSheet(BASLIK_BUTON_STILI)
         self.bolumAdiDuzenleBtn.clicked.connect(self.bolumAdiDuzenle)
         self.mainLayout.addWidget(self.bolumAdiDuzenleBtn)
@@ -56,8 +60,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.bolumAciklamaLabel = QLabel('Bölüm Açıklaması: ')
         self.mainLayout.addWidget(self.bolumAciklamaLabel)
         # Bölüm açıklaması düzenleme butonu
-        self.bolumAciklamaDuzenleBtn = QPushButton(kisaltMetin(self.data[BOLUM_ACIKLAMASI]), self)
-        self.bolumAciklamaDuzenleBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.bolumAciklamaDuzenleBtn = QPushButton(kisaltMetin(aciklama), self)
+        self.bolumAciklamaDuzenleBtn.setToolTip(aciklama)  # Tam metni araç ipucu olarak ekle
         self.bolumAciklamaDuzenleBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
         self.bolumAciklamaDuzenleBtn.clicked.connect(self.bolumAciklamasiDuzenle)
         self.mainLayout.addWidget(self.bolumAciklamaDuzenleBtn)
@@ -154,18 +158,26 @@ class KatkidaBulunanGuncelleWindow(QDialog):
                 return json.load(file)
         except FileNotFoundError:
             return json.loads('{}')
+    def ilklendir(self):
+        ilklendirildi_mi = False
+        if KATKIDA_BULUNANLAR not in self.data:
+            self.data[KATKIDA_BULUNANLAR] = []
+            ilklendirildi_mi = True
+        if BOLUM_ADI not in self.data:
+            self.data[BOLUM_ADI] = VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI
+            ilklendirildi_mi = True
+        if BOLUM_ACIKLAMASI not in self.data:
+            self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ACIKLAMASI
+            ilklendirildi_mi = True
+        return ilklendirildi_mi
     def butonlariYukle(self):
         # JSON dosyasını oku ve butonları oluştur
         self.data = self.jsonDosyasiniYukle()
+        self.data[KATKIDA_BULUNANLAR] = sorted(
+            [kisi for kisi in self.data[KATKIDA_BULUNANLAR] if kisi[AD].strip() and kisi[GITHUB_LINK].strip()],
+            key=lambda kisi: locale.strxfrm(kisi[AD].lower())
+        )
         try:
-            if KATKIDA_BULUNANLAR not in self.data:
-                self.data[KATKIDA_BULUNANLAR] = []
-            self.data[KATKIDA_BULUNANLAR] = sorted(
-                        [kisi for kisi in self.data[KATKIDA_BULUNANLAR] if kisi[AD].strip() and kisi[GITHUB_LINK].strip()],
-                        key=lambda kisi: locale.strxfrm(kisi[AD].lower())
-                    )
-
-
             katkidaBulunanSayisi = len(self.data[KATKIDA_BULUNANLAR])  # Toplam katkıda bulunan sayısı
             self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
             self.katkidaBulunanSayisiLabel.setFixedHeight(20)
