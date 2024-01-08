@@ -18,6 +18,8 @@ class DersEkleGuncelleWindow(QDialog):
         super().__init__()
         self.setModal(True)
         self.data = self.jsonDosyasiniYukle()
+        if self.ilklendir():
+            self.jsonKaydet()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -34,20 +36,22 @@ class DersEkleGuncelleWindow(QDialog):
         # Bölüm adı label
         self.bolumAdiLabel = QLabel(f'Bölüm Adı: ')
         self.mainLayout.addWidget(self.bolumAdiLabel)
+        bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_DERS_BOLUM_ADI)
+        aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_DERS_BOLUM_ACIKLAMASI)
         # Bölüm adı buton
-        self.bolumAdiBtn = QPushButton(f"{kisaltMetin(self.data[BOLUM_ADI])}", self)
+        self.bolumAdiBtn = QPushButton(f"{kisaltMetin(bolum_adi)}", self)
         self.bolumAdiBtn.clicked.connect(self.bolumAdiDuzenle)
         self.bolumAdiBtn.setStyleSheet(BASLIK_BUTON_STILI)
-        self.bolumAdiBtn.setToolTip(self.data[BOLUM_ADI])
+        self.bolumAdiBtn.setToolTip(bolum_adi)
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
         self.bolumAciklamasiLabel = QLabel(f'Bölüm Açıklaması: ')
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
-        self.bolumAciklamasiBtn = QPushButton(f"{kisaltMetin(self.data[BOLUM_ACIKLAMASI])}", self)
+        self.bolumAciklamasiBtn = QPushButton(f"{kisaltMetin(aciklama)}", self)
         self.bolumAciklamasiBtn.clicked.connect(self.bolumAciklamasiDuzenle)
         self.bolumAciklamasiBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
-        self.bolumAciklamasiBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.bolumAciklamasiBtn.setToolTip(aciklama)
         self.mainLayout.addWidget(self.bolumAciklamasiBtn)
         # Ders ekleme butonu
         self.ekleBtn = QPushButton('Ders Ekle', self)
@@ -141,6 +145,25 @@ class DersEkleGuncelleWindow(QDialog):
                 return json.load(file)
         except:
             return {}
+    def ilklendir(self):
+        ilklendirildi_mi = False
+        if DERSLER not in self.data:
+            self.data[DERSLER] = []
+            ilklendirildi_mi = True
+        if BOLUM_ADI not in self.data:
+            self.data[BOLUM_ADI] = VARSAYILAN_DERS_BOLUM_ADI
+            ilklendirildi_mi = True
+        if BOLUM_ACIKLAMASI not in self.data:
+            self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_DERS_BOLUM_ACIKLAMASI
+            ilklendirildi_mi = True
+        if DERS_KLASORU_BULUNAMADI_MESAJI not in self.data:
+            self.data[DERS_KLASORU_BULUNAMADI_MESAJI] = VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI
+            ilklendirildi_mi = True
+        if GUNCEL_OLMAYAN_DERS_ACIKLAMASI not in self.data:
+            self.data[GUNCEL_OLMAYAN_DERS_ACIKLAMASI] = VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI
+            ilklendirildi_mi = True
+        return ilklendirildi_mi
+                
     def dersleriYukle(self):
         try:
             # Öncelikle Türkçe locale'i dene
@@ -156,18 +179,6 @@ class DersEkleGuncelleWindow(QDialog):
                 locale.setlocale(locale.LC_ALL, '')
         try:
             self.data = self.jsonDosyasiniYukle()
-            if DERSLER not in self.data:
-                self.data[DERSLER] = []
-            if BOLUM_ADI not in self.data:
-                self.data[BOLUM_ADI] = VARSAYILAN_DERS_BOLUM_ADI
-            if BOLUM_ACIKLAMASI not in self.data:
-                self.data[BOLUM_ACIKLAMASI] = VARSAYILAN_DERS_BOLUM_ACIKLAMASI
-            if DERS_KLASORU_BULUNAMADI_MESAJI not in self.data:
-                self.data[DERS_KLASORU_BULUNAMADI_MESAJI] = VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI
-            if GUNCEL_OLMAYAN_DERS_ACIKLAMASI not in self.data:
-                self.data[GUNCEL_OLMAYAN_DERS_ACIKLAMASI] = VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI
-                
-
             ders_sayisi = len(self.data[DERSLER])  # Ders sayısını hesapla
             self.dersSayisiLabel.setText(f'Toplam {ders_sayisi} ders')  # Ders sayısını etikette güncelle
 
@@ -540,7 +551,7 @@ class DersDuzenlemeWindow(QDialog):
         self.setMinimumSize(400, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Ders adı için alan
         self.layout.addWidget(QLabel('Ders Adı:'))
-        self.adInput = QLineEdit(self.ders[AD] if self.ders else '')
+        self.adInput = QLineEdit(self.ders.get(AD,"") if self.ders else '')
         self.layout.addWidget(self.adInput)
 
         # Ders yılı için alan
@@ -548,15 +559,15 @@ class DersDuzenlemeWindow(QDialog):
         self.yilInput = QComboBox(self)
         self.yilInput.addItems(['0','1', '2', '3', '4'])
         if self.ders:
-            self.yilInput.setCurrentIndex(self.ders['yil'])
+            self.yilInput.setCurrentIndex(self.ders.get(YIL,0))
         self.layout.addWidget(self.yilInput)
 
         # Ders dönemi için alan
         self.layout.addWidget(QLabel('Dönem:'))
         self.donemInput = QComboBox(self)
-        self.donemInput.addItems(['Yok','Güz', 'Bahar'])
+        self.donemInput.addItems(DONEMLER_DIZISI_YOKLA_BERABER)
         if self.ders:
-            self.donemInput.setCurrentText(self.ders['donem'])
+            self.donemInput.setCurrentText(self.ders.get(DONEM,YOK))
         self.layout.addWidget(self.donemInput)
         self.layout.addWidget(QLabel('Ders Güncel Mi:'))
         self.guncelMi = QComboBox(self)
@@ -568,9 +579,9 @@ class DersDuzenlemeWindow(QDialog):
         # Ders tipi için alan
         self.layout.addWidget(QLabel('Tip:'))
         self.tipInput = QComboBox(self)
-        self.tipInput.addItems(['Zorunlu', 'Seçmeli', 'Seçmeli 4', 'Mesleki Seçmeli'])
+        self.tipInput.addItems(DERS_TIPLERI)
         if self.ders:
-            self.tipInput.setCurrentText(self.ders['tip'])
+            self.tipInput.setCurrentText(self.ders.get(TIP, DERS_TIPLERI[0]))
         self.layout.addWidget(self.tipInput)
         self.layout.addWidget(QLabel('Dersi Veren Hocalar'))
         # Dersi veren hocalar için ComboBox'lar
@@ -671,6 +682,22 @@ class DersDuzenlemeWindow(QDialog):
         donem = self.donemInput.currentText()
         guncel_mi = self.guncelMi.currentText() == "True"
         tip = self.tipInput.currentText()
+        if (yil != 0 or donem != YOK) and tip == MESLEKI_SECMELI:
+            if yil != 0:
+                QMessageBox.warning(self, 'Hata', 'Yıl bilgisi olan dersler mesleki seçmeli olamaz!')
+                return
+            else:
+                QMessageBox.warning(self, 'Hata', 'Dönem bilgisi olan dersler mesleki seçmeli olamaz!')
+                return
+        if (yil == 0 or donem == YOK) and  tip != MESLEKI_SECMELI:
+            if yil == 0:
+                QMessageBox.warning(self, 'Hata', 'Mesleki seçmeli olmayan dersler yıl bilgisi içermelidir!')
+                return
+            else:
+                QMessageBox.warning(self, 'Hata', 'Mesleki seçmeli olmayan dersler dönem bilgisi içermelidir!')
+                return
+        
+
         # Seçili hocaların kısaltmalarını al
         hocalar_kisaltmalar = [combo.currentData() for combo, _ in self.hocalarComboBoxlar]
         
@@ -679,7 +706,7 @@ class DersDuzenlemeWindow(QDialog):
             QMessageBox.warning(self, 'Hata', 'Aynı hocayı birden fazla kez seçemezsiniz!')
             return
         # Seçili hocaların kısaltmalarını al
-        hocalar = [{'kisaltma': combo.currentData(), AD: combo.currentText().split(' (')[0]}
+        hocalar = [{KISALTMA: combo.currentData(), AD: combo.currentText().split(' (')[0]}
                    for combo, _ in self.hocalarComboBoxlar]
     
         # Ders adı boş olamaz kontrolü
