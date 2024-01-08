@@ -17,6 +17,7 @@ class DersEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.data = self.jsonDosyasiniYukle()
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -30,6 +31,24 @@ class DersEkleGuncelleWindow(QDialog):
         self.clearFiltersButton.clicked.connect(lambda: self.clearFilters(is_clicked=True))
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
+        # Bölüm adı label
+        self.bolumAdiLabel = QLabel(f'Bölüm Adı: ')
+        self.mainLayout.addWidget(self.bolumAdiLabel)
+        # Bölüm adı buton
+        self.bolumAdiBtn = QPushButton(f"{kisaltMetin(self.data[BOLUM_ADI])}", self)
+        self.bolumAdiBtn.clicked.connect(self.bolumAdiDuzenle)
+        self.bolumAdiBtn.setStyleSheet(BASLIK_BUTON_STILI)
+        self.bolumAdiBtn.setToolTip(self.data[BOLUM_ADI])
+        self.mainLayout.addWidget(self.bolumAdiBtn)
+        # Bölüm açıklaması label
+        self.bolumAciklamasiLabel = QLabel(f'Bölüm Açıklaması: ')
+        self.mainLayout.addWidget(self.bolumAciklamasiLabel)
+        # Bölüm açıklaması buton
+        self.bolumAciklamasiBtn = QPushButton(f"{kisaltMetin(self.data[BOLUM_ACIKLAMASI])}", self)
+        self.bolumAciklamasiBtn.clicked.connect(self.bolumAciklamasiDuzenle)
+        self.bolumAciklamasiBtn.setStyleSheet(ACIKLAMA_BUTON_STILI)
+        self.bolumAciklamasiBtn.setToolTip(self.data[BOLUM_ACIKLAMASI])
+        self.mainLayout.addWidget(self.bolumAciklamasiBtn)
         # Ders ekleme butonu
         self.ekleBtn = QPushButton('Ders Ekle', self)
         self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
@@ -52,7 +71,33 @@ class DersEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.dersleriYukle()
-
+    def bolumAciklamasiDuzenle(self):
+        yeni_baslik, ok = QInputDialog.getMultiLineText(self, 'Bölüm Açıklaması', 'Bölüm Açıklamasını Giriniz:', self.data[BOLUM_ACIKLAMASI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', 'Bölüm açıklamasını güncellemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ACIKLAMASI] = yeni_baslik
+                self.bolumAciklamasiBtn.setText(kisaltMetin(yeni_baslik))
+                self.bolumAciklamasiBtn.setToolTip(yeni_baslik)
+                self.jsonKaydet()
+                QMessageBox.information(self, 'Başarılı', 'Bölüm açıklaması güncellendi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm açıklaması güncellenmedi.')
+    def bolumAdiDuzenle(self):
+        yeni_baslik, ok = QInputDialog.getText(self, 'Bölüm Adı', 'Bölüm Adını Giriniz:', QLineEdit.Normal, self.data[BOLUM_ADI])
+        if ok:
+            cevap = QMessageBox.question(self, 'Onay', 'Bölüm adını güncellemek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+            if cevap == QMessageBox.Yes:
+                self.data[BOLUM_ADI] = yeni_baslik
+                self.bolumAdiBtn.setText(kisaltMetin(yeni_baslik))
+                self.bolumAdiBtn.setToolTip(yeni_baslik)
+                self.jsonKaydet()
+                QMessageBox.information(self, 'Başarılı', 'Bölüm adı güncellendi.')
+            else:
+                QMessageBox.information(self, 'İptal', 'Bölüm adı güncellenmedi.')
+    def jsonKaydet(self):
+        with open(DERSLER_JSON_PATH, 'w', encoding='utf-8') as file:
+            json.dump(self.data, file, ensure_ascii=False, indent=4)
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
             text, ok = QInputDialog.getText(self, 'Arama', 'Aranacak ders:')
