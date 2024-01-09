@@ -1051,6 +1051,7 @@ Açıklamalar:
   - 👤 Traktör Reis: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
   - 👤 astro: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
   - 👤 Tehlikeli Pinokyo : Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.
+  - 👤 Madmax: Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -1148,6 +1149,7 @@ Açıklamalar:
   - 👤 Traktör Reis: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
   - 👤 astro: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
   - 👤 Tehlikeli Pinokyo : Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :) 
+  - 👤 Madmax: Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
@@ -1279,6 +1281,7 @@ Açıklamalar:
   - 👤 Traktör Reis: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
   - 👤 Nakliyeci Sefer: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
   - 👤 astro: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
+  - 👤 Madmax: Dersi çok iyi anlatır. Sorduğunuz soruyu da elinden geldiğince, sorunun saçma olup olmadığına bakmadan cevaplar. Şiddetle tavsiye edilir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
