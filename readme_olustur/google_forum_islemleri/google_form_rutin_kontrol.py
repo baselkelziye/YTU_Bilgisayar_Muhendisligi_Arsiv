@@ -6,6 +6,7 @@ import time
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', "readme_guncelleme_arayuzu_python"))
 from degiskenler import *
+from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
 def check_for_updates(key, url):
 
     # Belirtilen URL'den .xlsx dosyasını indir
@@ -80,8 +81,8 @@ def update_repository():
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
-
-# URL'leri kontrol et
+konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
+# URL'leri kontrol et        
 urls = {
     "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
     "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
