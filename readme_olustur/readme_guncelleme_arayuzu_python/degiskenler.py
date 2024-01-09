@@ -205,3 +205,13 @@ DONEM_YILLARI = ['1', '2', '3', '4']
 DONEMLER_DIZISI = [GUZ, BAHAR]
 DONEMLER_DIZISI_YOKLA_BERABER = [YOK, GUZ, BAHAR]
 
+# GİRİŞ SAYFASI
+GERI_BILDIRIM_KISMI =f""" ## 🗣️ Geri Bildirimde Bulunun
+
+📬 Öğrenciler ve hocalar, derslerle ilgili hakaret içermeyen geri bildirimlerinizi aşağıdaki linkler aracılığıyla anonim olarak paylaşabilirsiniz.
+
+- [✍️ **Hocalar için yorum linki**]({HOCA_YORULMALA_LINKI})
+- [⭐ **Hocalar için yıldız linki**]({HOCA_OYLAMA_LINKI})
+- [✍️ **Dersler için yorum linki**]({DERS_YORUMLAMA_LINKI})
+- [⭐ **Dersler için yıldız linki**]({DERS_OYLAMA_LINKI})
+"""

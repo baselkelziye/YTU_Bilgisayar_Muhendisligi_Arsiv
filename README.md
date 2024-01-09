@@ -1,7 +1,15 @@
 # 📖 Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği Ders Notları
 
-Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link](https://forms.gle/fL4Q131wWjKc7sPz7) [yildiz için bu link](https://forms.gle/s6ZMrQG4q578pEzm7) ya da derslerle alakalı [yorum için bu link](https://forms.gle/SzNmK1w4rVaKE4ee8) [yildiz için bu link](https://forms.gle/3njZjmhm215YCAxe6) hakaret içermeyen yorumlarını ve puanlamalarını bizimle anonim olarak paylaşabilirsin.
+Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır.
 
+ ## 🗣️ Geri Bildirimde Bulunun
+
+📬 Öğrenciler ve hocalar, derslerle ilgili hakaret içermeyen geri bildirimlerinizi aşağıdaki linkler aracılığıyla anonim olarak paylaşabilirsiniz.
+
+- [✍️ **Hocalar için yorum linki**](https://forms.gle/WbwDxHUz6ebJA7t36)
+- [⭐ **Hocalar için yıldız linki**](https://forms.gle/s6ZMrQG4q578pEzm7)
+- [✍️ **Dersler için yorum linki**](https://forms.gle/SzNmK1w4rVaKE4ee8)
+- [⭐ **Dersler için yıldız linki**](https://forms.gle/3njZjmhm215YCAxe6)
 <p align="center">
 <img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>
 </p>
