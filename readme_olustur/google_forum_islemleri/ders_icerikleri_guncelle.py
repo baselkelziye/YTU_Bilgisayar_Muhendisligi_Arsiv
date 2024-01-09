@@ -14,9 +14,9 @@ absolute_path = os.path.join(current_directory, relative_path)
 sys.path.append(absolute_path)
 from degiskenler import *
 from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
-konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
-DERS_YILDIZLARI_DOSYASI = DERS_OYLAMA_LINKI_CSV
-DERS_YORUMLARI_DOSYASI = DERS_YORUMLAMA_LINKI_CSV
+ANAHTAR_VE_LINKLER = konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
+DERS_YILDIZLARI_DOSYASI = ANAHTAR_VE_LINKLER.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV)
+DERS_YORUMLARI_DOSYASI = ANAHTAR_VE_LINKLER.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV)
 
 
 def guncelle_ogrenci_gorusleri(data, sheets_url):

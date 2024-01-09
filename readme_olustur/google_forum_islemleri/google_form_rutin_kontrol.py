@@ -81,13 +81,13 @@ def update_repository():
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
-konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
+ANAHTAR_VE_LINKLER = konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
 # URL'leri kontrol et        
 urls = {
-    "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
-    "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
-    "DERS ÖZELLİKLERİ OYLAMA":DERS_OYLAMA_LINKI_CSV, 
-    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV
+    "DERS YORUMLAMA": ANAHTAR_VE_LINKLER.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV),
+    "HOCA YORUMLAMA": ANAHTAR_VE_LINKLER.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV),
+    "DERS ÖZELLİKLERİ OYLAMA":ANAHTAR_VE_LINKLER.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV),
+    "HOCA ÖZELLİKLERİ OYLAMA": ANAHTAR_VE_LINKLER.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
 }
 
 # Dosyaların son boyutlarını saklamak için bir sözlük
