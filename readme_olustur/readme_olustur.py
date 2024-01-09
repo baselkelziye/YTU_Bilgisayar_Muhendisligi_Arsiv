@@ -140,7 +140,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                         f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}\n")
                     else:
                         populer_isaret = "👑"
-                        populer_bilgi = f" En popüler ders ({dersler[EN_POPULER_DERS][OY_SAYISI] if EN_POPULER_DERS in dersler else "0"} oy)" if EN_POPULER_DERS in dersler and ders == dersler[EN_POPULER_DERS][DERS_ADI] else ""
+                        populer_bilgi = f" En popüler ders ({dersler[EN_POPULER_DERS][OY_SAYISI] if EN_POPULER_DERS in dersler else 0} oy)" if EN_POPULER_DERS in dersler and ders == dersler[EN_POPULER_DERS][DERS_ADI] else ""
                         ders_id = f'{ders} {populer_isaret}{populer_bilgi}'
                         f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
             else:
@@ -201,6 +201,8 @@ def dersleri_readme_ye_ekle(dersler):
         if OY_SAYISI in dersler[EN_POPULER_DERS]:
             en_populer_ders_oy_sayisi = dersler[EN_POPULER_DERS][OY_SAYISI]
     
+    en_populer_hoca_adi = "" if EN_POPULER_HOCA not in hocalar else hocalar[EN_POPULER_HOCA][HOCA_ADI]
+    en_populer_hoca_oy_sayisi = 0 if EN_POPULER_HOCA not in hocalar else hocalar[EN_POPULER_HOCA][OY_SAYISI]
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n\n\n## 📚 {dersler['bolum_adi']} \n")
         f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
@@ -233,13 +235,15 @@ def dersleri_readme_ye_ekle(dersler):
                 if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
                     for hoca in ders[DERSI_VEREN_HOCALAR]:
-                        if EN_POPULER_HOCA in hocalar and hoca[AD] != hocalar[EN_POPULER_HOCA][HOCA_ADI]:
-                            f.write(f"    - [{hoca[KISALTMA]}]{baslik_linki_olustur(hoca[AD])}\n")
-                        else:
+                        hoca_kisaltma = hoca.get(KISALTMA, "")
+                        hoca_ad = hoca.get(AD, "")
+                        if hoca_ad != en_populer_hoca_adi:
+                            f.write(f"    - [{hoca_kisaltma}]{baslik_linki_olustur(hoca_ad)}\n")
+                        elif en_populer_hoca_adi != "":
                             populer_isaret = "👑"
-                            populer_bilgi = f" En popüler hoca ({hocalar[EN_POPULER_HOCA][OY_SAYISI] if EN_POPULER_HOCA in hocalar else "0"} oy)" if hoca[AD] ==  EN_POPULER_HOCA in hocalar and hocalar[EN_POPULER_HOCA][HOCA_ADI] else ""
-                            hoca_id = f'{hoca[AD]} {populer_isaret}{populer_bilgi}'
-                            f.write(f"    - [{hoca[KISALTMA]}]{baslik_linki_olustur(hoca_id)}\n")
+                            populer_bilgi = f" En popüler hoca ({en_populer_hoca_oy_sayisi} oy)"
+                            hoca_id = f'{hoca_ad} {populer_isaret}{populer_bilgi}'
+                            f.write(f"    - [{hoca_kisaltma}]{baslik_linki_olustur(hoca_id)}\n")
                 ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("..", ders[AD])
                 if ders_klasor_yolu is not None:
                     f.write(f"  - 📂 [Ders Klasörü]({(yerel_yoldan_github_linkine(ders_klasor_yolu))})\n")
