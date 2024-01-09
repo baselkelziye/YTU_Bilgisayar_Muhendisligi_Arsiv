@@ -1126,6 +1126,7 @@ Açıklamalar:
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
+  - 👤 Madmax: Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
