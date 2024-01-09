@@ -5,6 +5,8 @@ import shutil
 
 from icerik_kontrol import *
 import sys
+from csv_kontrol_et import csv_kontrol_et
+import time
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
 # Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
@@ -23,6 +25,10 @@ yildizlar_sheets_url = HOCA_OYLAMA_LINKI_CSV
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     df = pd.read_csv(sheets_url)
+    if not csv_kontrol_et(df, [ZAMAN_DAMGASI, HOCA_SEC, ISMIN_NASIL_GOZUKSUN_HOCA, HOCA_HAKKINDAKI_YORUMUN]):
+        print("CSV dosyası hatalı, script durduruluyor.")
+        time.sleep(10)
+        return
     df = df.dropna()  # NaN içeren tüm satırları kaldır
     
     # Her hoca için yorumları güncelle
@@ -54,7 +60,10 @@ yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 
 # Veriyi indir ve DataFrame olarak oku
 yildizlar_df = pd.read_csv(yildizlar_sheets_url)
-
+if not csv_kontrol_et(yildizlar_df, [ZAMAN_DAMGASI, HOCA_SEC, DERSI_NE_KADAR_GÜZEL_ANLATIR, DERSINI_GECMEK_NE_KADAR_KOLAYDIR, DERSI_NE_KADAR_IYI__OGRETIR, DERSI_NE_KADAR_EGLENCELI_ANLATIR]):
+    print("CSV dosyası hatalı, script durduruluyor.")
+    time.sleep(10)
+    exit()
 
 # Sadece sayısal sütunları al ve ortalama hesapla
 yildizlar_numeric_columns = yildizlar_df.columns.drop([ZAMAN_DAMGASI, HOCA_SEC])  # Sayısal olmayan sütunları çıkar
