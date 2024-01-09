@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QLabel, QMessageBox, QPushButton, QDesktopWidget, QH
 from metin_islemleri import kisaltMetin
 import json
 from PyQt5.QtGui import QIcon
-
+from close_event import closeEventHandler
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
     def __init__(self):
         super().__init__()
@@ -151,7 +151,6 @@ class IcindekilerDuzenleWindow(QDialog):
 
         self.layout.addLayout(buttonLayout)
         self.center()
-
     def center(self):
         qr = self.frameGeometry()
         cp = QDesktopWidget().availableGeometry().center()
@@ -182,6 +181,7 @@ class IcindekilerDuzenleWindow(QDialog):
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'İçindekiler güncellendi!')
             self.parent.notlariYenile()
+            self.is_programmatic_close = True
             self.close()
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')

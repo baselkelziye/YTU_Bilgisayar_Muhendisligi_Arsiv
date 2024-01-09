@@ -5,10 +5,12 @@ from PyQt5.QtCore import Qt
 from degiskenler import *
 from metin_islemleri import kisaltMetin
 from PyQt5.QtGui import QIcon
+from close_event import closeEventHandler
 class YazarinNotlariWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
         if self.ilklendir():
             self.jsonKaydet()
@@ -169,6 +171,7 @@ class YazarinNotlariWindow(QDialog):
 class NotDuzenleWindow(QDialog):
     def __init__(self, idx, data, parent):
         super().__init__()
+        self.is_programmatic_close = False
         self.idx = idx
         self.data = data
         self.parent = parent
@@ -212,7 +215,8 @@ class NotDuzenleWindow(QDialog):
 
         self.layout.addLayout(buttonLayout)  # Buton düzenini ana düzene ekle
         self.center()  # Pencereyi ekranın merkezine yerleştir.
-
+    def closeEvent(self, event):
+        closeEventHandler(self, event,self.is_programmatic_close)
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
@@ -241,9 +245,11 @@ class NotDuzenleWindow(QDialog):
                     json.dump(self.data, file, ensure_ascii=False, indent=4)
                 QMessageBox.information(self, 'Başarılı', 'Yazarın notları güncellendi!')
                 self.parent.notlariYenile()
+                self.is_programmatic_close = True
                 self.close()
             except Exception as e:
                 QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
+        
     def notSil(self):
         # Not silme işlevi
         if self.idx is not None:
@@ -258,6 +264,7 @@ class NotDuzenleWindow(QDialog):
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.notlariYenile()
+            self.is_programmatic_close = True
             self.close()
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')

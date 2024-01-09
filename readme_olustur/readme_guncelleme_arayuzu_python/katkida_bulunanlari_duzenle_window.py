@@ -9,6 +9,7 @@ from progress_dialog import CustomProgressDialog
 from degiskenler import *
 from PyQt5.QtGui import QIcon
 from metin_islemleri import kisaltMetin
+from close_event import closeEventHandler
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
@@ -26,6 +27,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.is_programmatic_close = False
         self.title = 'Katkıda Bulunanları Ekle/Güncelle'
         # JSON dosyasını oku
         self.data = self.jsonDosyasiniYukle()
@@ -212,6 +214,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 class KatkidaBulunanDuzenleWindow(QDialog):
     def __init__(self, kisi, data, parent):
         super().__init__()
+        self.is_programmatic_close = False
         self.kisi = kisi
         self.data = data
         self.parent = parent
@@ -267,6 +270,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.setLayout(layout)
         self.center()
         self.show()
+    def closeEvent(self, event):
+        closeEventHandler(self, event, self.is_programmatic_close)
     def sil(self):
         # Silme işlemini onayla
         emin_mi = QMessageBox.question(self, 'Onay', f'{self.kisi[AD]} adlı kişiyi silmek istediğinden emin misin?', QMessageBox.Yes | QMessageBox.No)
@@ -283,6 +288,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
                 # Ana penceredeki listeyi yenile
                 self.parent.butonlariYenile()
                 QMessageBox.information(self, 'Silindi', f'{self.kisi[AD]} adlı kişi başarıyla silindi.')
+                self.is_programmatic_close = True
                 self.close()
 
             except ValueError:
@@ -313,6 +319,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         if success:
             QMessageBox.information(self, 'Başarılı', message)
             self.parent.butonlariYenile()  # Ana pencerenin butonlarını yenile
+            self.is_programmatic_close = True
             self.close()
         else:
             QMessageBox.warning(self, 'Hata', message)
