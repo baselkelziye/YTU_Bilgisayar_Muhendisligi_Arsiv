@@ -14,7 +14,8 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 from degiskenler import *
-temel_puan = 30
+from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
+konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
 # Google Sheets dosyasının URL'si
 yildizlar_sheets_url = HOCA_OYLAMA_LINKI_CSV
 def guncelle_ogrenci_gorusleri(data, sheets_url):

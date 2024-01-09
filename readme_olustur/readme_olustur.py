@@ -15,9 +15,13 @@ sys.path.append(absolute_path)
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from metin_islemleri import *
+from konfigurasyon_json_kontrol import *
 if os.path.exists(ANA_README_YOLU):
     os.remove(ANA_README_YOLU)
 unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
+
+# LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
+konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_NAME)
 
 # Klasörler için benzerlik skoru hesaplayan fonksiyon
 def benzerlik_skoru(str1, str2):
@@ -47,7 +51,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
     return None if (en_yuksek_yuzde < 71 or (len(en_iyi_eslesme.split(os.sep)) < 3 and "Projesi" not in en_iyi_eslesme)) else en_iyi_eslesme
 
 # GitHub'daki klasör için tam URL oluşturan fonksiyon
-def yerel_yoldan_github_linkine(klasor_yolu, repo_url="https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"):
+def yerel_yoldan_github_linkine(klasor_yolu, repo_url=VARSAYILAN_GITHUB_URL):
     """
     Yerel bir klasör yolunu GitHub reposundaki karşılık gelen klasörün URL'sine dönüştürür.
     Göreceli yolları (..) kaldırır ve boşlukları uygun bir şekilde değiştirir.

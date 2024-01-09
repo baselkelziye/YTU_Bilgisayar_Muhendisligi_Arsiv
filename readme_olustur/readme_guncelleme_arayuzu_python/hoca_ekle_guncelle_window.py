@@ -9,6 +9,7 @@ from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from PyQt5.QtGui import QIcon
 from metin_islemleri import kisaltMetin
+# LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')
