@@ -6,11 +6,12 @@ from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from ders_ekle_guncelle_window import DersEkleGuncelleWindow
 from hoca_ekle_guncelle_window import HocaEkleGuncelleWindow
 from progress_dialog import CustomProgressDialog
-from degiskenler import SELCUKLU_ICO_PATH
+from degiskenler import *
 from repo_kullanimi_window import RepoKullanimiDialog
 from giris_ekle_guncelle_window import GirisEkleGuncelleWindow
 from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
 from git_islemleri_window import GitIslemleriWindow
+from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
 class App(QWidget):
     def __init__(self):
@@ -114,7 +115,7 @@ if __name__ == '__main__':
         application_path = os.path.dirname(sys.executable)
         application_path = os.path.join(application_path, "..")
         os.chdir(application_path)
-
+    konfigurasyon_json_guncelle(KONFIGURASYON_JSON_PATH)
     app = QApplication(sys.argv)
     ex = App()
     sys.exit(app.exec_())
