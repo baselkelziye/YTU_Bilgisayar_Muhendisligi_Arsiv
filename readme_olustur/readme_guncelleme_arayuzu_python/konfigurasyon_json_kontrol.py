@@ -56,7 +56,6 @@ def konfigurasyon_json_guncelle(file_path):
         print(f"Konfigurasyon dosyası güncellenirken hata oluştu: {e}")
     return updated
 def update_anahtar_ve_degerler(file_path):
-    global ANAHTAR_VE_LINKLER
     try:
         # JSON dosyasını oku
         with open(file_path, 'r', encoding='utf-8') as file:
@@ -74,22 +73,12 @@ def update_anahtar_ve_degerler(file_path):
                 json.dump(json_data, file, indent=4, ensure_ascii=False)
 
     except Exception as e:
-        return f"Hata: {e}"
+        print(f"Konfigurasyon dosyası güncellenirken hata oluştu: {e}")
+        return ANAHTAR_VE_LINKLER
+    return ANAHTAR_VE_LINKLER
     
-def global_konfigurasyon_degiskenlerini_guncelle():
-    global VARSAYILAN_GITHUB_URL, HOCA_YORULMALA_LINKI, HOCA_OYLAMA_LINKI, DERS_YORUMLAMA_LINKI, DERS_OYLAMA_LINKI, DERS_OYLAMA_LINKI_CSV, DERS_YORUMLAMA_LINKI_CSV, HOCA_OYLAMA_LINKI_CSV, HOCA_YORULMALA_LINKI_CSV
-    VARSAYILAN_GITHUB_URL = ANAHTAR_VE_LINKLER[GITHUB_URL_ANAHTARI]
-    HOCA_YORULMALA_LINKI = ANAHTAR_VE_LINKLER[HOCA_YORUMLAMA_ANAHTARI]
-    HOCA_OYLAMA_LINKI = ANAHTAR_VE_LINKLER[HOCA_OYLAMA_ANAHTARI]
-    DERS_YORUMLAMA_LINKI = ANAHTAR_VE_LINKLER[DERS_YORUMLAMA_ANAHTARI]
-    DERS_OYLAMA_LINKI = ANAHTAR_VE_LINKLER[DERS_OYLAMA_ANAHTARI]
-    DERS_OYLAMA_LINKI_CSV = ANAHTAR_VE_LINKLER[DERS_OYLAMA_CSV_ANAHTARI]
-    DERS_YORUMLAMA_LINKI_CSV = ANAHTAR_VE_LINKLER[DERS_YORUMLAMA_CSV_ANAHTARI]
-    HOCA_OYLAMA_LINKI_CSV = ANAHTAR_VE_LINKLER[HOCA_OYLAMA_CSV_ANAHTARI]
-    HOCA_YORULMALA_LINKI_CSV = ANAHTAR_VE_LINKLER[HOCA_YORUMLAMA_CSV_ANAHTARI]
 
 def konfigurasyon_ilklendirme_islemleri(json_file_path):
     # LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
     konfigurasyon_json_guncelle(json_file_path)
-    update_anahtar_ve_degerler(json_file_path)
-    global_konfigurasyon_degiskenlerini_guncelle()
+    return update_anahtar_ve_degerler(json_file_path)
