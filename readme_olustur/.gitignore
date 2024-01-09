@@ -5,3 +5,5 @@ build
 **/*.json
 **/*.csv
 **/*.txt
+!konfigurasyon.json
+!gereksinimler.txt

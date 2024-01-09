@@ -65,7 +65,18 @@ HOCA_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUA
 HOCA_YORULMALA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
 DERS_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
 DERS_YORUMLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
+VARSAYILAN_GITHUB_URL = "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
 
+GITHUB_URL_ANAHTARI = "github_url"
+CIKMISLAR_ANAHTARI = "cikmislar"
+HOCA_YORUMLAMA_ANAHTARI = "hoca_yorumlama"
+HOCA_OYLAMA_ANAHTARI = "hoca_oylama"
+DERS_YORUMLAMA_ANAHTARI = "ders_yorumlama"
+DERS_OYLAMA_ANAHTARI = "ders_oylama"
+DERS_OYLAMA_CSV_ANAHTARI = "ders_oylama_csv"
+DERS_YORUMLAMA_CSV_ANAHTARI = "ders_yorumlama_csv"
+HOCA_OYLAMA_CSV_ANAHTARI = "hoca_oylama_csv"
+HOCA_YORUMLAMA_CSV_ANAHTARI = "hoca_yorumlama_csv"
 
 # VARSAYILAN DEGISKENLER
 ## HOCALAR
@@ -80,7 +91,7 @@ VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI =  "Henüz dersle alakalı bir döküm
 
 ## GIRIS SAYFASI
 VARSAYILAN_GIRIS_BASLIK = "Yıldız Teknik Üniversitesi X Mühendisliği Ders Notları"
-VARSAYILAN_GIRIS_ACIKLAMA = f"Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır. Hocalarla [yorum için bu link]({HOCA_YORULMALA_LINKI}) [yildiz için bu link]({HOCA_OYLAMA_LINKI}) ya da derslerle alakalı [yorum için bu link]({DERS_YORUMLAMA_LINKI}) [yildiz için bu link]({DERS_OYLAMA_LINKI}) hakaret içermeyen yorumlarını ve puanlamalarını bizimle anonim olarak paylaşabilirsin."
+VARSAYILAN_GIRIS_ACIKLAMA = f"Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümünde verilen derslerin notları, örnek soruları ve ilgili kaynakları barındırmaktadır. Öğrencilerin dersleri daha etkin bir şekilde öğrenmelerini desteklemek amacıyla hazırlanmıştır."
 
 ## KATKIDA BULUNANLAR
 VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI = "Katkıda Bulunanlar"
@@ -111,7 +122,8 @@ GIRIS_JSON_NAME = "giris.json"
 GIRIS_JSON_PATH = os.path.join("..", GIRIS_JSON_NAME)
 DONEMLER_JSON_NAME = "donemler.json"
 DONEMLER_JSON_PATH = os.path.join("..", DONEMLER_JSON_NAME)
-
+KONFIGURASYON_JSON_NAME = "konfigurasyon.json"
+KONFIGURASYON_JSON_PATH = os.path.join("..", KONFIGURASYON_JSON_NAME)
 # UNVAN KISALTMALARI
 PROF_DR = "Prof. Dr."
 DOC_DR = "Doç. Dr."
@@ -215,3 +227,16 @@ GERI_BILDIRIM_KISMI =f""" ## 🗣️ Geri Bildirimde Bulunun
 - [✍️ **Dersler için yorum linki**]({DERS_YORUMLAMA_LINKI})
 - [⭐ **Dersler için yıldız linki**]({DERS_OYLAMA_LINKI})
 """
+
+# KONFIGURASYON
+ANAHTAR_VE_LINKLER = {
+    HOCA_YORUMLAMA_ANAHTARI: HOCA_YORULMALA_LINKI,
+    HOCA_OYLAMA_ANAHTARI: HOCA_OYLAMA_LINKI,
+    DERS_YORUMLAMA_ANAHTARI: DERS_YORUMLAMA_LINKI,
+    DERS_OYLAMA_ANAHTARI: DERS_OYLAMA_LINKI,
+    DERS_OYLAMA_CSV_ANAHTARI: DERS_OYLAMA_LINKI_CSV,
+    DERS_YORUMLAMA_CSV_ANAHTARI: DERS_YORUMLAMA_LINKI_CSV,
+    HOCA_OYLAMA_CSV_ANAHTARI: HOCA_OYLAMA_LINKI_CSV,
+    HOCA_YORUMLAMA_CSV_ANAHTARI: HOCA_YORULMALA_LINKI_CSV,
+    GITHUB_URL_ANAHTARI: VARSAYILAN_GITHUB_URL
+}
