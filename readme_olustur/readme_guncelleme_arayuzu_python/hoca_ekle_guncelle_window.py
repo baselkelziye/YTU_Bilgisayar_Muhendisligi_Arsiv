@@ -25,6 +25,7 @@ class HocaEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
         if self.ilklendir():
             self.jsonKaydet()
@@ -252,12 +253,12 @@ class HocaDuzenlemeWindow(QDialog):
 
         # Hoca ofisi için alan
         self.layout.addWidget(QLabel('Ofis:'))
-        self.ofisInput = QLineEdit(self.hoca['ofis'] if self.hoca else '')
+        self.ofisInput = QLineEdit(self.hoca.get(OFIS, "") if self.hoca else '')
         self.layout.addWidget(self.ofisInput)
 
         # Hoca linki için alan
         self.layout.addWidget(QLabel('Link:'))
-        self.linkInput = QLineEdit(self.hoca['link'] if self.hoca else '')
+        self.linkInput = QLineEdit(self.hoca.get(LINK, "") if self.hoca else '')
         self.layout.addWidget(self.linkInput)
 
         # Hoca cinsiyet durumu için alan
@@ -265,7 +266,7 @@ class HocaDuzenlemeWindow(QDialog):
         self.erkekMiInput = QComboBox(self)
         self.erkekMiInput.addItems(['Evet', 'Hayır'])
         if self.hoca:
-            self.erkekMiInput.setCurrentIndex(0 if self.hoca['erkek_mi'] else 1)
+            self.erkekMiInput.setCurrentIndex(0 if self.hoca.get(ERKEK_MI,"") else 1)
         self.layout.addWidget(self.erkekMiInput)
         self.progressDialog = CustomProgressDialog('Kontrol Ediliyor...', self)
         self.progressDialog.close()
@@ -281,8 +282,6 @@ class HocaDuzenlemeWindow(QDialog):
         # Hocaların gösterileceği widget
         self.dersScrollWidget = QWidget()
         # ScrollArea genişliğini dersScrollWidget genişliğiyle sınırla
-        self.dersScrollWidget.setMinimumWidth(self.derslerScorllArea.width())
-        self.dersScrollWidget.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Expanding)
         self.derslerLayout = QVBoxLayout(self.dersScrollWidget)
         self.derslerScorllArea.setWidget(self.dersScrollWidget)  # ScrollArea'ya widget ekle
         self.layout.addWidget(self.derslerScorllArea)  # Ana layout'a ScrollArea ekle
@@ -328,6 +327,8 @@ class HocaDuzenlemeWindow(QDialog):
 
         # Sil (-) butonu
         silBtn = QPushButton('Hocanın Verdiği Dersi Sil', self)
+        # Butonun boyutunu maksimuma ayarla
+        silBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
 
@@ -437,6 +438,7 @@ class HocaDuzenlemeWindow(QDialog):
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             self.parent.hocalariYenile()
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
+            self.is_programmatic_close = True
             self.close()
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
