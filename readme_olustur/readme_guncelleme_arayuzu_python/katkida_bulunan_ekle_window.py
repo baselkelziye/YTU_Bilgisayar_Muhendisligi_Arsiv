@@ -4,11 +4,12 @@ from threadler import KatkiEkleThread
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
 from PyQt5.QtGui import QIcon
-
+from close_event import closeEventHandler
 class KatkidaBulunanEkleWindow(QDialog):
     def __init__(self, parent):
         super().__init__()
         self.setModal(True)
+        self.is_programmatic_close = False
         self.parent = parent
         self.title = 'Katkıda Bulunan Ekle'
         self.initUI()
@@ -42,7 +43,8 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.setLayout(layout)
         self.center()  # Pencereyi ekranın merkezine yerleştir
         self.show()
-
+    def closeEvent(self, event):
+        closeEventHandler(self, event, self.is_programmatic_close)
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
@@ -64,6 +66,7 @@ class KatkidaBulunanEkleWindow(QDialog):
             QMessageBox.information(self, 'Başarılı', message)
             # Gerekli güncellemeleri yapın ve pencereyi kapatın
             self.parent.butonlariYenile()
+            self.is_programmatic_close = True
             self.close()
         else:
             QMessageBox.warning(self, 'Hata', message)

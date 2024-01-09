@@ -1,12 +1,13 @@
 import json
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (QDialog,QInputDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
+from PyQt5.QtWidgets import (QSizePolicy, QDialog, QInputDialog, QVBoxLayout, QPushButton, QMessageBox, QLineEdit, QLabel, QTextEdit, QComboBox, QScrollArea, QWidget, QHBoxLayout)
 import locale
 from PyQt5.QtGui import QIcon
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from metin_islemleri import kisaltMetin
+from close_event import closeEventHandler
 # Hoca adlarını ve kısaltmalarını hazırla
 unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
 def hoca_sirala(hoca):
@@ -17,6 +18,7 @@ class DersEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
         self.setModal(True)
+        self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
         if self.ilklendir():
             self.jsonKaydet()
@@ -257,6 +259,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
         super().__init__()
         self.ders = ders
         self.setModal(True)
+        self.is_programmatic_close = False
         self.parent = parent
         self.tur = tur  # 'faydali_olabilecek_kaynaklar' veya 'derse_dair_oneriler'
         self.initUI()
@@ -281,7 +284,6 @@ class KaynakVeOneriDuzenleyici(QDialog):
         # Mevcut kaynaklar/öneriler için butonları oluştur
         self.elemanlariYukle()
  
-
     def elemanlariYukle(self):
         if self.tur in self.ders:
             for j, eleman in enumerate(self.ders[self.tur]):
@@ -425,6 +427,7 @@ class YeniElemanEklemeDialog(QDialog):
         super().__init__()
         self.tur = tur
         self.setModal(True)
+        self.is_programmatic_close = False
         self.parent = parent
         self.sahip_index = sahip_index  # Güncellenecek önerinin indeksi
         self.oneri_index = oneri_index  # Güncellenecek önerinin indeksi
@@ -460,9 +463,11 @@ class YeniElemanEklemeDialog(QDialog):
 
         # Kaydet butonu
         self.kaydetBtn = QPushButton('Kaydet', self)
+        self.kaydetBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.kaydetBtn.clicked.connect(self.kaydet)
         self.layout.addWidget(self.kaydetBtn)
-
+    def closeEvent(self, event):
+        closeEventHandler(self, event,self.is_programmatic_close)
     def kaydet(self):
         oneriSahibi = self.sahibiEdit.text() if self.tur == DERSE_DAIR_ONERILER else None
         metin = self.metinEdit.toPlainText()
@@ -530,11 +535,13 @@ class YeniElemanEklemeDialog(QDialog):
             file.truncate()
         QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
         self.parent.arayuzuGuncelle()
+        self.is_programmatic_close = True
         self.close()
 
 class DersDuzenlemeWindow(QDialog):
     def __init__(self, ders,data, parent):
         super().__init__(parent)
+        self.is_programmatic_close = False
         self.ders = ders
         self.data = data
         self.parent = parent
@@ -635,7 +642,9 @@ class DersDuzenlemeWindow(QDialog):
             buttonsLayout.addWidget(self.silBtn)
 
         self.layout.addLayout(buttonsLayout)
-
+    # Kapatma tuşuna basılırsa emin misin diye sor
+    def closeEvent(self, event):
+        closeEventHandler(self, event, self.is_programmatic_close)
     def ekleHocaComboBox(self, hoca=None):
         if len(self.hoca_listesi) < 1:
             QMessageBox.warning(self, 'Hata', 'Hoca listesi boş!')
@@ -652,6 +661,8 @@ class DersDuzenlemeWindow(QDialog):
 
         # Sil (-) butonu
         silBtn = QPushButton('Dersi Veren Hocayı Sil', self)
+        # Butonun genişliğini sabitle
+        silBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silHocaComboBox(comboBox, silBtn))
 
@@ -787,6 +798,7 @@ class DersDuzenlemeWindow(QDialog):
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, 'Başarılı', 'Değişiklikler kaydedildi!')
             self.parent.dersleriYenile()
+            self.is_programmatic_close = True
             self.close()
         except Exception as e:
             QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')

@@ -45,7 +45,7 @@ class DonemEkleGuncelleWindow(TalimatDialog):
         except Exception as e:
             return {DONEMLER: []}
     def talimatSil(self, index):
-        emin_mi = QMessageBox.question(self, 'Onay', 'Bu talimatı silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
+        emin_mi = QMessageBox.question(self, 'Onay', 'Bu dönemi silmek istediğinize emin misiniz?', QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
         if emin_mi == QMessageBox.Yes:
             del self.repo_data[DONEMLER][index]
             self.jsonGuncelle()
