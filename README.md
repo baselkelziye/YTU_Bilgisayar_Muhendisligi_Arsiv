@@ -89,7 +89,7 @@ Açıklamalar:
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
 
 
-#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (4 oy)
+#### 📘 Bilgisayar Bilimlerine Giriş 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 Traktör Reis: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
@@ -672,12 +672,12 @@ Açıklamalar:
 ### 🗓 4. Yıl - Bahar
 
 
-#### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2 
+#### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2 👑 En popüler ders (5 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
 
 
@@ -1160,7 +1160,7 @@ Açıklamalar:
   - 👤 astro: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-4-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
 - ⭐ **Yıldız Sayıları:**
@@ -1273,7 +1273,7 @@ Açıklamalar:
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-4-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
