@@ -15,18 +15,29 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 from degiskenler import *
-from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
-ANAHTAR_VE_LINKLER = konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
-DERS_YILDIZLARI_DOSYASI = ANAHTAR_VE_LINKLER.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV)
-DERS_YORUMLARI_DOSYASI = ANAHTAR_VE_LINKLER.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV)
+SLEEP_TIME = 10
+try:
+    with open(KONFIGURASYON_JSON_PATH, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+        DERS_OYLAMA_LINKI_CSV = data.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV)
+        DERS_YORUMLAMA_LINKI_CSV = data.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV)
+except Exception as e:
+    print(f"Konfigurasyon dosyası okunurken hata oluştu varsayılan değerler kullanılacak: {e}")
+DERS_YILDIZLARI_DOSYASI = DERS_OYLAMA_LINKI_CSV
+DERS_YORUMLARI_DOSYASI = DERS_YORUMLAMA_LINKI_CSV
 
 
 def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
-    df = pd.read_csv(sheets_url)
+    try:
+        df = pd.read_csv(sheets_url)
+    except Exception as e:
+        print(f"CSV dosyası okunurken hata oluştu: {e}")
+        time.sleep(SLEEP_TIME)
+        return
     if not csv_kontrol_et(df, [ZAMAN_DAMGASI, DERS_SEC, ISMIN_NASIL_GORUNSUN, DERS_HAKKINDAKI_YORUMUN]):
         print("CSV dosyası hatalı, script durduruluyor.")
-        time.sleep(10)
+        time.sleep(SLEEP_TIME)
         return
     df = df.dropna()  # NaN içeren tüm satırları kaldır
     # Her ders için yorumları güncelle
@@ -55,11 +66,16 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     # icerikKontrol.dosya_yaz()
 def guncelle_ders_yildizlari(data, sheets_url):
     
-    # Veriyi indir ve DataFrame olarak oku
-    yildizlar_df = pd.read_csv(sheets_url)
+    try:
+        # Veriyi indir ve DataFrame olarak oku
+        yildizlar_df = pd.read_csv(sheets_url)
+    except Exception as e:
+        print(f"CSV dosyası okunurken hata oluştu: {e}")
+        time.sleep(SLEEP_TIME)
+        return
     if not csv_kontrol_et(yildizlar_df, [ZAMAN_DAMGASI, DERS_SEC, DERSI_GECMEK_NE_KADAR_KOLAY, DERS_MESLEKI_ACIDAN_GEREKLI_MI]):
         print("CSV dosyası hatalı, script durduruluyor.")
-        time.sleep(10)
+        time.sleep(SLEEP_TIME)
         return
 
     # Sadece sayısal sütunları al ve ortalama hesapla
