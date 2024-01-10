@@ -29,6 +29,16 @@ with open(KONFIGURASYON_JSON_NAME, 'r', encoding='utf-8') as f:
     DERS_YORUMLAMA_LINKI = anahtar_ve_linkler.get(DERS_YORUMLAMA_ANAHTARI, DERS_YORUMLAMA_LINKI)
     DERS_OYLAMA_LINKI = anahtar_ve_linkler.get(DERS_OYLAMA_ANAHTARI, DERS_OYLAMA_LINKI)
 
+# GİRİŞ SAYFASI
+GERI_BILDIRIM_KISMI =f""" ## 🗣️ Geri Bildirimde Bulunun
+
+📬 Öğrenciler ve hocalar, derslerle ilgili hakaret içermeyen geri bildirimlerinizi aşağıdaki linkler aracılığıyla anonim olarak paylaşabilirsiniz.
+
+- [✍️ **Hocalar için yorum linki**]({HOCA_YORULMALA_LINKI})
+- [⭐ **Hocalar için yıldız linki**]({HOCA_OYLAMA_LINKI})
+- [✍️ **Dersler için yorum linki**]({DERS_YORUMLAMA_LINKI})
+- [⭐ **Dersler için yıldız linki**]({DERS_OYLAMA_LINKI})
+"""
 
 # Klasörler için benzerlik skoru hesaplayan fonksiyon
 def benzerlik_skoru(str1, str2):
@@ -170,7 +180,7 @@ def hocalari_readme_ye_ekle(bilgiler):
             if OY_SAYISI in hoca and isinstance(hoca[OY_SAYISI], int) and hoca[OY_SAYISI] > 0:
                 f.write(f"  - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
             else:
-                f.write(f"  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                f.write(f"  - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
             
 
 def donem_siralamasi(donem_key):
@@ -240,7 +250,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if OY_SAYISI in ders:
                     f.write(f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                 else:
-                    f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                    f.write(f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                 
                     
                 if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
@@ -402,7 +412,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = Fal
         if OY_SAYISI in ders:
             f.write(f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
         else:
-            f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+            f.write(f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
         
         if DERSE_DAIR_ONERILER in ders:
             # Derse dair öneriler
@@ -511,7 +521,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders
                     if OY_SAYISI in ders:
                         f.write(f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                     else:
-                        f.write(f"    - ℹ️ Yıldızlar {1} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
+                        f.write(f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n")
                     
                     if DERSE_DAIR_ONERILER in ders:
                         f.write("#### 💡 Derse Dair Öneriler\n\n")  # Ampul emoji, önerileri temsil eder
