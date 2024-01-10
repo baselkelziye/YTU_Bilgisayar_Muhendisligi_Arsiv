@@ -264,9 +264,10 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 0,
+            "gereklilik_puani": 10,
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "İstatistik ve Olasılık Hesapları",
@@ -558,7 +559,7 @@
                     "yorum": "Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var."
                 }
             ],
-            "kolaylik_puani": 60,
+            "kolaylik_puani": 80,
             "gereklilik_puani": 80,
             "derse_dair_oneriler": [
                 {
@@ -580,7 +581,8 @@
                     "ad": "Dr. Göksel Biricik"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Hesaplama Kuramı",
