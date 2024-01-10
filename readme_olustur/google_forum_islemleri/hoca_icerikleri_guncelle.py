@@ -16,18 +16,27 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 from degiskenler import *
-from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
-ANAHTAR_VE_LINKLER = konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
-HOCA_OYLAMA_LINKI_CSV = ANAHTAR_VE_LINKLER.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
-HOCA_YORULMALA_LINKI_CSV = ANAHTAR_VE_LINKLER.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV)
+SLEEP_TIME = 10
+try:
+    with open(KONFIGURASYON_JSON_PATH, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+        HOCA_OYLAMA_LINKI_CSV = data.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
+        HOCA_YORULMALA_LINKI_CSV = data.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV)
+except Exception as e:
+    print(f"Konfigurasyon dosyası okunurken hata oluştu varsayılan değerler kullanılacak: {e}")
 # Google Sheets dosyasının URL'si
 yildizlar_sheets_url = HOCA_OYLAMA_LINKI_CSV
 def guncelle_ogrenci_gorusleri(data, sheets_url):
-    # Google Sheets verisini indir
-    df = pd.read_csv(sheets_url)
+    try:
+        # Google Sheets verisini indir
+        df = pd.read_csv(sheets_url)
+    except Exception as e:
+        print(f"CSV dosyası okunurken hata oluştu: {e}")
+        time.sleep(SLEEP_TIME)
+        return
     if not csv_kontrol_et(df, [ZAMAN_DAMGASI, HOCA_SEC, ISMIN_NASIL_GOZUKSUN_HOCA, HOCA_HAKKINDAKI_YORUMUN]):
         print("CSV dosyası hatalı, script durduruluyor.")
-        time.sleep(10)
+        time.sleep(SLEEP_TIME)
         return
     df = df.dropna()  # NaN içeren tüm satırları kaldır
     
@@ -59,10 +68,15 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
 yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 
 # Veriyi indir ve DataFrame olarak oku
-yildizlar_df = pd.read_csv(yildizlar_sheets_url)
+try:
+    yildizlar_df = pd.read_csv(yildizlar_sheets_url)
+except Exception as e:
+    print(f"CSV dosyası okunurken hata oluştu: {e}")
+    time.sleep(SLEEP_TIME)
+    exit()
 if not csv_kontrol_et(yildizlar_df, [ZAMAN_DAMGASI, HOCA_SEC, DERSI_NE_KADAR_GÜZEL_ANLATIR, DERSINI_GECMEK_NE_KADAR_KOLAYDIR, DERSI_NE_KADAR_IYI__OGRETIR, DERSI_NE_KADAR_EGLENCELI_ANLATIR]):
     print("CSV dosyası hatalı, script durduruluyor.")
-    time.sleep(10)
+    time.sleep(SLEEP_TIME)
     exit()
 
 # Sadece sayısal sütunları al ve ortalama hesapla

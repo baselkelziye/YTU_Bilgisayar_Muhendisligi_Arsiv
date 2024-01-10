@@ -31,7 +31,6 @@ def get_git_repo_url():
         # Eğer mevcut dizin bir git reposu değilse
         return "Mevcut dizin bir git reposu değil."
 def konfigurasyon_json_guncelle(file_path):
-    global ANAHTAR_VE_LINKLER
     # Anahtarları kontrol et ve güncelle
     updated = False
     try:
@@ -41,7 +40,9 @@ def konfigurasyon_json_guncelle(file_path):
                 data = json.load(file)
         else:
             data = {}
-
+        if GITHUB_URL_ANAHTARI not in data or not isinstance(data[GITHUB_URL_ANAHTARI], str):
+            data[GITHUB_URL_ANAHTARI] = get_git_repo_url()
+            updated = True
         for key, default_link in ANAHTAR_VE_LINKLER.items():
             if key not in data or not isinstance(data[key], str) or not urllib.parse.urlparse(data[key]).scheme:
                 data[key] = default_link
@@ -55,30 +56,3 @@ def konfigurasyon_json_guncelle(file_path):
     except Exception as e:
         print(f"Konfigurasyon dosyası güncellenirken hata oluştu: {e}")
     return updated
-def update_anahtar_ve_degerler(file_path):
-    try:
-        # JSON dosyasını oku
-        with open(file_path, 'r', encoding='utf-8') as file:
-            json_data = json.load(file)
-        # Anahtarları kontrol et ve güncelle
-        updated = False
-        for key, value in ANAHTAR_VE_LINKLER.items():
-            # JSON verisinde anahtarı güncelle
-            ANAHTAR_VE_LINKLER[key] = json_data.get(key, value)
-            updated = True
-
-        # Eğer güncelleme yapıldıysa, dosyayı yeniden yaz
-        if updated:
-            with open(file_path, 'w', encoding='utf-8') as file:
-                json.dump(json_data, file, indent=4, ensure_ascii=False)
-
-    except Exception as e:
-        print(f"Konfigurasyon dosyası güncellenirken hata oluştu: {e}")
-        return ANAHTAR_VE_LINKLER
-    return ANAHTAR_VE_LINKLER
-    
-
-def konfigurasyon_ilklendirme_islemleri(json_file_path):
-    # LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
-    konfigurasyon_json_guncelle(json_file_path)
-    return update_anahtar_ve_degerler(json_file_path)
