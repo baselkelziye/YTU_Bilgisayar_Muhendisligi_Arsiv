@@ -44,7 +44,7 @@ def konfigurasyon_json_guncelle(file_path):
             data[GITHUB_URL_ANAHTARI] = get_git_repo_url()
             updated = True
         for key, default_link in ANAHTAR_VE_LINKLER.items():
-            if key not in data or not isinstance(data[key], str) or not urllib.parse.urlparse(data[key]).scheme:
+            if key not in data or not isinstance(data[key], str) or (not urllib.parse.urlparse(data[key]).scheme and key != DOKUMANLAR_REPO_YOLU_ANAHTARI):
                 data[key] = default_link
                 updated = True
 
