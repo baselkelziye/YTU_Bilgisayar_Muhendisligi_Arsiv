@@ -83,10 +83,15 @@ def guncelle_ders_yildizlari(data, sheets_url):
     yildizlar_grouped = yildizlar_df.groupby(DERS_SEC)[yildizlar_numeric_columns].mean()
     # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
     ders_oy_sayisi = yildizlar_df[DERS_SEC].value_counts()
+    # Eğer veri setinde hiç veri yoksa, hata vermesini önlemek için kontrol ekle
+    if len(ders_oy_sayisi) > 0:
+        en_populer_ders = ders_oy_sayisi.idxmax()
+        en_populer_ders_oy_sayisi = ders_oy_sayisi.max()
+    else:
+        en_populer_ders = "MEVCUT DEĞİL"  # veya uygun bir varsayılan değer
+        en_populer_ders_oy_sayisi = 0  # veya uygun bir varsayılan değer
 
-    # En yüksek oy sayısına sahip hocayı bul
-    en_populer_ders = ders_oy_sayisi.idxmax()
-    en_populer_ders_oy_sayisi = ders_oy_sayisi.max()
+
     data[EN_POPULER_DERS] = {DERS_ADI:en_populer_ders, OY_SAYISI:int(en_populer_ders_oy_sayisi)}
     for ders in data[DERSLER]:
         name = ders.get(AD)
