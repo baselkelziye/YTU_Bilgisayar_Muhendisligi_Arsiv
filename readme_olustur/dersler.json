@@ -1106,8 +1106,8 @@
                     "yorum": "Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı."
                 }
             ],
-            "kolaylik_puani": 80,
-            "gereklilik_puani": 60,
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 50,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "ACK",
@@ -1118,7 +1118,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Bilgisayar Grafiğine Giriş",
@@ -1358,15 +1359,16 @@
                     "yorum": "Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor."
                 }
             ],
-            "kolaylik_puani": 40,
-            "gereklilik_puani": 50,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 40,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Yazılım Kalite ve Test Süreci",
