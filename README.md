@@ -1325,6 +1325,7 @@ Açıklamalar:
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
   - 👤 Nanadaime: Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et.
+  - 👤 Ufouser: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir 
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
