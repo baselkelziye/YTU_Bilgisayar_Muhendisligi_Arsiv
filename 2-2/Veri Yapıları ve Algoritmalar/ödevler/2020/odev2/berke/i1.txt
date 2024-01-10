@@ -1,0 +1,27 @@
+mkdir a
+mkdir a
+mkdir b
+mkdir c
+chdir a
+mkdir d
+chdir ..
+chdir d
+chdir ..
+rmdir a
+dir
+count
+rmdir d
+rmdir b
+dir
+rmdir c
+dir
+chdir a
+dir
+rmdir d
+dir
+chdir ..
+dir
+rmdir a
+chdir ..
+dir
+exit
