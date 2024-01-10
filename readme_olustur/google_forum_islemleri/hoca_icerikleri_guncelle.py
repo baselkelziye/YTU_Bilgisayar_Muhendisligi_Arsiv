@@ -86,9 +86,13 @@ yildizlar_grouped = yildizlar_df.groupby(HOCA_SEC)[yildizlar_numeric_columns].me
 # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
 hoca_oy_sayisi = yildizlar_df[HOCA_SEC].value_counts()
 
-# En yüksek oy sayısına sahip hocayı bul
-en_populer_hoca = hoca_oy_sayisi.idxmax()
-en_populer_hoca_oy_sayisi = hoca_oy_sayisi.max()
+# Eğer veri setinde hiç veri yoksa, hata vermesini önlemek için kontrol ekle
+if len(hoca_oy_sayisi) > 0:
+    en_populer_hoca = hoca_oy_sayisi.idxmax()
+    en_populer_hoca_oy_sayisi = hoca_oy_sayisi.max()
+else:
+    en_populer_hoca = "MEVCUT DEĞİL"  # veya uygun bir varsayılan değer
+    en_populer_hoca_oy_sayisi = 0  # veya uygun bir varsayılan değer
 
 # JSON dosyasını oku
 json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
