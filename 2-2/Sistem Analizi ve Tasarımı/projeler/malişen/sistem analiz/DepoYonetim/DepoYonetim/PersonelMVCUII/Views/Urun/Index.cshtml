@@ -1,0 +1,59 @@
+﻿@using PersonelMVCUII.Models.EntityFramework
+@model List<Urun>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<a class="btn btn-success" href="/Urun/Yeni">Yeni Ürün</a>
+<h2>Ürün Listesi</h2>
+<table class="table table-bordered" id="tblUrunler">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ürün Adı</th>
+            <th>Son Tüketim Tarihi</th>
+            <th>Ürün Fiyatı</th>
+            <th>Toplam Ürün Sayısı</th>
+            <th>Kategori</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ürün in Model)
+        {
+        <tr>
+            <td>@ürün.Id</td>
+            <td>@ürün.UrunAdi</td>
+            @if (ürün.SonTuketimTarihi < DateTime.Now)
+            {
+                <td>@ürün.SonTuketimTarihi SKT Geçmiş</td>
+            }
+            else
+            {
+                   <td>@ürün.SonTuketimTarihi</td>
+            }
+
+            <td>@ürün.UrunFiyati</td>
+            <td>@ürün.ToplamUrunSayisi</td>
+            <td>@ürün.Kategori</td>
+            <td><a class="btn btn-primary" href="/Urun/Guncelle/@ürün.Id">Güncelle</a></td>
+            <td><a class="btn btn-warning btnUrunSil" data-id="@ürün.Id">Sil</a></td>
+            @*<td>@Html.ActionLink("Personelleri Göster", "PersonelleriListele", "Personel",
+        new { id = departman.Id }, new {@class="btn btn-primary"})</td>*@
+            <!--<td>-->
+            @*@Ajax.ActionLink("Personelleri Göster", "PersonelleriListele", "Personel",
+        new { id = ürün.Id }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "personelListesi" }, new { @class = "btn btn-primary" })*@
+            <!--</td>-->
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+<div id="personelListesi"></div>
+
+
+
+
