@@ -1,0 +1,35 @@
+﻿ @model List<PersonelMVCUII.Models.EntityFramework.Raf>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("Yeni Raf","Yeni",null,new {@class="btn btn-success" })
+<h2>Raf Listesi</h2>
+<table class=" table table-bordered" id="tblRaflar">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kapasite</th>
+            <th>Anlık Kapasite</th>
+            <th>Rafın Kategorisi</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var raf in Model)
+        {
+        <tr>
+            <td>@raf.Id</td>
+            <td>@raf.Kapasite</td>
+            <td>@raf.AnlıkKapasite</td>
+            <td>@raf.Kategori.Kategoriler</td>
+            <td>@Html.ActionLink("Güncelle", "Guncelle", new { id = raf.Id }, new { @class = "btn btn-success" })</td>
+            <td><a class="btn btn-warning btnRafSil" data-id="@raf.Id">Sil</a></td>
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+

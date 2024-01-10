@@ -1,0 +1,38 @@
+﻿@model PersonelMVCUII.Models.EntityFramework.Kullanici
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <div class="container">
+        @ViewBag.Mesaj
+        @using (Html.BeginForm("Login", "Security", FormMethod.Post))
+        {
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.KullaniciAdi)
+                @Html.TextBoxFor(m => m.KullaniciAdi, new { @class = "form-control", placeholder = "Kullanıcı Adı" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Sifre)
+                @Html.PasswordFor(m => m.Sifre, new { @class = "form-control", placeholder = "Parola" })
+            </div>
+            <button type="submit" class="btn btn-block btn-success">Giriş Yap </button>
+
+        }
+    </div>
+</body>
+</html>
