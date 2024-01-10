@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PersonelMVCUII.RouteConfig">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Controllers.KategoriController">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAgAQAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\KategoriController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Controllers.KullaniciController">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\KullaniciController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Controllers.RafController">
+    <Position X="13" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAgAQAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\RafController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Controllers.SecurityController">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\SecurityController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Controllers.UrunController">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAgAQAAAAAAAEAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UrunController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.DepoYonetimSistemiEntities">
+    <Position X="2.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACCAIAAACAAAAEAAAEAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Models\EntityFramework\Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.Kategori">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EntityFramework\Kategori.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.Kullanici">
+    <Position X="9.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EntityFramework\Kullanici.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.Raf">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAAAAACAAAAAAAAAAAgAAEAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Models\EntityFramework\Raf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.Urun">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAACAABAAAAAAAAAgAEAAIAAAAAAAAAIA=</HashCode>
+      <FileName>Models\EntityFramework\Urun.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Models.EntityFramework.UrunRafBilgisi">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAEAACAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EntityFramework\UrunRafBilgisi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.Security.KullanıcıRol">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAEEAAwAAAEAAAAAAAABAAAAAAAAAIAAAAEAAEQAAA=</HashCode>
+      <FileName>Security\KullanıcıRol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.ViewModel.MesajViewModel">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAgAAAAACABAAAAAAAA=</HashCode>
+      <FileName>ViewModel\MesajViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.ViewModel.KullaniciViewModel">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAQAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.ViewModel.UrunViewModel">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAABQAAAAAAAAgAAAAIAAAAAAAAAIA=</HashCode>
+      <FileName>ViewModel\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.ViewModel.RafViewModel">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAIAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PersonelMVCUII.ViewModel.UrunRafViewModel">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAEAACAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

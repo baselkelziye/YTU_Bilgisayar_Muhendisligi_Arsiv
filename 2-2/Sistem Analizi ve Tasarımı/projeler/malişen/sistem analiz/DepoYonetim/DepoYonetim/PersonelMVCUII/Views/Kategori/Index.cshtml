@@ -1,0 +1,29 @@
+﻿ @model List<PersonelMVCUII.Models.EntityFramework.Kategori>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kategori Listesi</h2>
+<table class=" table table-bordered" id="tblKategoriler">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Kategoriler</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var kategori in Model)
+        {
+        <tr>
+            <td>@kategori.Id</td>
+            <td>@kategori.Kategoriler</td>
+            
+        </tr>
+        }
+
+    </tbody>
+</table>
+
+
