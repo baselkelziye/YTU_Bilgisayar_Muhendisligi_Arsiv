@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DepoYonetimSistemiModelStoreContainer" CdmEntityContainer="DepoYonetimSistemiEntities">
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="Rol" ColumnName="Rol" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UrunRafBilgisi">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.UrunRafBilgisi">
+        <MappingFragment StoreEntitySet="UrunRafBilgisi">
+          <ScalarProperty Name="RafId" ColumnName="RafId" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Raf">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.Raf">
+        <MappingFragment StoreEntitySet="Raf">
+          <ScalarProperty Name="AnlıkKapasite" ColumnName="AnlıkKapasite" />
+          <ScalarProperty Name="Kapasite" ColumnName="Kapasite" />
+          <ScalarProperty Name="KategoriId" ColumnName="KategoriId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategori">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="Kategoriler" ColumnName="Kategoriler" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="DepoYonetimSistemiModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="ToplamUrunSayisi" ColumnName="ToplamUrunSayisi" />
+          <ScalarProperty Name="UrunFiyati" ColumnName="UrunFiyati" />
+          <ScalarProperty Name="SonTuketimTarihi" ColumnName="SonTuketimTarihi" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="Kategori" ColumnName="Kategori" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

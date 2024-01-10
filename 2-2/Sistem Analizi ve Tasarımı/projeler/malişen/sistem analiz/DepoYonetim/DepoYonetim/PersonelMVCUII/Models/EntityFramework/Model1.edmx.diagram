@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7031446ff43d4dd2be51f513213fac9a" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.Kullanici" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.UrunRafBilgisi" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.Raf" Width="1.5" PointX="3" PointY="10.75" />
+        <AssociationConnector Association="DepoYonetimSistemiModel.FK_UrunRafBilgisi_Raf1" />
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.Kategori" Width="1.5" PointX="0.75" PointY="9.25" />
+        <AssociationConnector Association="DepoYonetimSistemiModel.FK_Raf_Kategori" />
+        <EntityTypeShape EntityType="DepoYonetimSistemiModel.Urun" Width="1.5" PointX="5.375" PointY="1" />
+        <AssociationConnector Association="DepoYonetimSistemiModel.FK_UrunRafBilgisi_Urun" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

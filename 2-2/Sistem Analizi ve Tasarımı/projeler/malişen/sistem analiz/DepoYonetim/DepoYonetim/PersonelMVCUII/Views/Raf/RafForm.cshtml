@@ -1,0 +1,34 @@
+﻿@model PersonelMVCUII.Models.EntityFramework.Raf
+@{
+    ViewBag.Title = "Yeni";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Raf Formu</h2>
+<div id="mesaj"></div>
+@using (Ajax.BeginForm("Kaydet", "Raf", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "mesaj" }))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Kapasite)
+        @Html.TextBoxFor(m => m.Kapasite, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Kapasite)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Kategori.Kategoriler)
+        @Html.TextAreaFor(m => m.Kategori.Kategoriler,  new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Kategori.Kategoriler)
+    </div>
+
+
+
+
+    @Html.HiddenFor(m => m.Id)
+    <button type="submit" class="btn btn-success">Kaydet</button>
+}
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
