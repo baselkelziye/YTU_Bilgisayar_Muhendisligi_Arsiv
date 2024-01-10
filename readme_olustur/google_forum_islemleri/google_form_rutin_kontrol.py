@@ -3,10 +3,10 @@ import hashlib
 import os
 import subprocess
 import time
+import json
 import sys
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', "readme_guncelleme_arayuzu_python"))
 from degiskenler import *
-from konfigurasyon_json_kontrol import konfigurasyon_ilklendirme_islemleri
 def check_for_updates(key, url):
 
     # Belirtilen URL'den .xlsx dosyasını indir
@@ -81,15 +81,24 @@ def update_repository():
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
-ANAHTAR_VE_LINKLER = konfigurasyon_ilklendirme_islemleri(KONFIGURASYON_JSON_PATH)
-# URL'leri kontrol et        
-urls = {
-    "DERS YORUMLAMA": ANAHTAR_VE_LINKLER.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV),
-    "HOCA YORUMLAMA": ANAHTAR_VE_LINKLER.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV),
-    "DERS ÖZELLİKLERİ OYLAMA":ANAHTAR_VE_LINKLER.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV),
-    "HOCA ÖZELLİKLERİ OYLAMA": ANAHTAR_VE_LINKLER.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
-}
-
+try:
+    with open(KONFIGURASYON_JSON_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+        # URL'leri kontrol et        
+        urls = {
+            "DERS YORUMLAMA": data.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV),
+            "HOCA YORUMLAMA": data.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV),
+            "DERS ÖZELLİKLERİ OYLAMA":data.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV),
+            "HOCA ÖZELLİKLERİ OYLAMA": data.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
+        }
+except Exception as e:
+    print(f"Konfigurasyon dosyası okunurken hata oluştu varsayılan değerler kullanılacak: {e}")
+    urls = {
+        "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
+        "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
+        "DERS ÖZELLİKLERİ OYLAMA": DERS_OYLAMA_LINKI_CSV,
+        "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV
+    }
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
 for key, url in urls.items():
