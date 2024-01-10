@@ -10,9 +10,9 @@ def donem_sayisi_getir(donem):
     elif donem == BAHAR:
         return 2
     return 0
-def donem_dosya_yolu_getir(donem):
+def donem_dosya_yolu_getir(donem,DOKUMANLAR_REPO_YOLU=".."):
     if donem is not None and donem.get(YIL,0) != 0 and donem.get(DONEM,"") != "":
-        return os.path.join("..",f"{donem.get(YIL,1)}-{donem_sayisi_getir(donem.get(DONEM,GUZ))}")
+        return os.path.join(DOKUMANLAR_REPO_YOLU,f"{donem.get(YIL,1)}-{donem_sayisi_getir(donem.get(DONEM,GUZ))}")
     if donem is not None and donem.get(AD,"") != "":
-        return os.path.join("..",donem.get(AD,""))
-    return os.path.join("..",MESLEKI_SECMELI)
+        return os.path.join(DOKUMANLAR_REPO_YOLU,donem.get(AD,""))
+    return os.path.join(DOKUMANLAR_REPO_YOLU,MESLEKI_SECMELI)
