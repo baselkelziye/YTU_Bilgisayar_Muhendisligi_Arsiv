@@ -1259,6 +1259,7 @@ Açıklamalar:
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
+  - 👤 Ufouser: Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum 
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
