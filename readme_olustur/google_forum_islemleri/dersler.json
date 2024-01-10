@@ -59,9 +59,10 @@
                 }
             ],
             "kolaylik_puani": 70,
-            "gereklilik_puani": 20,
+            "gereklilik_puani": 30,
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Lineer Cebir",
@@ -169,7 +170,7 @@
                 }
             ],
             "kolaylik_puani": 80,
-            "gereklilik_puani": 75,
+            "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -180,7 +181,8 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Devre Teorisi",
@@ -210,10 +212,11 @@
                     "yorum": "Bölümle çok alakası yok. Kalmamak lazım."
                 }
             ],
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 90,
+            "gereklilik_puani": 30,
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Mühendisler için Yarıiletken Fiziği",
@@ -332,7 +335,7 @@
                     "yorum": "Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı."
                 }
             ],
-            "kolaylik_puani": 60,
+            "kolaylik_puani": 40,
             "gereklilik_puani": 100,
             "dersi_veren_hocalar": [
                 {
@@ -348,7 +351,8 @@
                     "ad": "Dr. H. İrem Türkmen"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 1
         },
         {
             "ad": "Bilgisayar Mühendisleri için Sinyaller ve Sistemler",
