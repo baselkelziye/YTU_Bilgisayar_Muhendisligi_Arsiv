@@ -28,6 +28,8 @@ with open(KONFIGURASYON_JSON_NAME, 'r', encoding='utf-8') as f:
     HOCA_OYLAMA_LINKI = anahtar_ve_linkler.get(HOCA_OYLAMA_ANAHTARI, HOCA_OYLAMA_LINKI)
     DERS_YORUMLAMA_LINKI = anahtar_ve_linkler.get(DERS_YORUMLAMA_ANAHTARI, DERS_YORUMLAMA_LINKI)
     DERS_OYLAMA_LINKI = anahtar_ve_linkler.get(DERS_OYLAMA_ANAHTARI, DERS_OYLAMA_LINKI)
+    DOKUMANLAR_REPO_YOLU = anahtar_ve_linkler.get(DOKUMANLAR_REPO_YOLU_ANAHTARI, DOKUMANLAR_REPO_YOLU)
+    ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU, README_MD)
 
 # GİRİŞ SAYFASI
 GERI_BILDIRIM_KISMI =f""" ## 🗣️ Geri Bildirimde Bulunun
@@ -79,7 +81,7 @@ def yerel_yoldan_github_linkine(klasor_yolu, repo_url=VARSAYILAN_GITHUB_URL):
     """
     if klasor_yolu is None:
         return None
-    klasor_yolu = klasor_yolu.replace("..", "")
+    klasor_yolu = klasor_yolu.replace(DOKUMANLAR_REPO_YOLU, "")
     # Göreceli yolları kaldır
     klasor_yolu = os.path.normpath(klasor_yolu)
     # Windows yollarını düzeltmek için (örn. "klasör\alt_klasör" -> "klasör/alt_klasör")
@@ -265,7 +267,7 @@ def dersleri_readme_ye_ekle(dersler):
                             populer_bilgi = f" En popüler hoca ({en_populer_hoca_oy_sayisi} oy)"
                             hoca_id = f'{hoca_ad} {populer_isaret}{populer_bilgi}'
                             f.write(f"    - [{hoca_kisaltma}]{baslik_linki_olustur(hoca_id)}\n")
-                ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul("..", ders[AD])
+                ders_klasor_yolu = en_iyi_eslesen_klasor_yolu_bul(DOKUMANLAR_REPO_YOLU, ders[AD])
                 if ders_klasor_yolu is not None:
                     f.write(f"  - 📂 [Ders Klasörü]({(yerel_yoldan_github_linkine(ders_klasor_yolu))})\n")
                 if GUNCEL_MI in ders and not ders[GUNCEL_MI]:
@@ -389,7 +391,7 @@ BURASI ANA README OLUŞTURMA KISMI
 BURASI DERSLER README OLUŞTURMA KISMI
 """
 def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = False):
-    with open(os.path.join(dosya_yolu,"README.md"), 'w', encoding='utf-8') as f:
+    with open(os.path.join(dosya_yolu,README_MD), 'w', encoding='utf-8') as f:
         # Ders başlığı
         f.write(f"# 📚 {ders[AD]}\n\n")
 
@@ -445,7 +447,7 @@ def dersin_donemini_getir(ders):
         return {AD:ders.get(TIP,"")}
 def ders_klasoru_olustur(ders):
     donem = dersin_donemini_getir(ders)
-    donem_yolu = donem_dosya_yolu_getir(donem)
+    donem_yolu = donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU)
     ders_klasor_yolu = os.path.join(donem_yolu, ders.get(AD,""))
     os.makedirs(ders_klasor_yolu, exist_ok=True)
     return ders_klasor_yolu
@@ -458,7 +460,7 @@ if dersler is not None:
     print("Dersler README.md oluşturuluyor...")          
     for ders in dersler[DERSLER]:
         print(f"{ders[AD]} README.md oluşturuluyor...")
-        ders_klasoru = en_iyi_eslesen_klasor_yolu_bul("..",ders[AD])
+        ders_klasoru = en_iyi_eslesen_klasor_yolu_bul(DOKUMANLAR_REPO_YOLU,ders[AD])
         if ders_klasoru is not None:
             baska_dosya_var_mi= klasorde_baska_dosya_var_mi(ders_klasoru)
             if not baska_dosya_var_mi:
@@ -483,9 +485,9 @@ def donemlere_gore_readme_olustur(donemler):
     # Her dönem için README.md oluştur
     for donem in donemler[DONEMLER]:
         print(f"{donem[DONEM_ADI]} README.md oluşturuluyor...")
-        donem_dosya_yolu = donem_dosya_yolu_getir(donem)
+        donem_dosya_yolu = donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU)
         os.makedirs(donem_dosya_yolu, exist_ok=True)
-        dosya_yolu = os.path.join(donem_dosya_yolu, 'README.md')
+        dosya_yolu = os.path.join(donem_dosya_yolu, README_MD)
         with open(dosya_yolu, 'w', encoding='utf-8') as f:
             f.write(f"# 📅 {donem[DONEM_ADI]}\n\n")  # Takvim emoji, dönemi temsil eder
             f.write("## 📝 Genel Tavsiyeler\n\n")  # Not defteri ve kalem emoji, tavsiyeleri temsil eder
@@ -501,7 +503,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders
         print(f"{ders[AD]} README.md dönemine ekleniyor...")
         for donem in donemler:
             if ders[YIL] == donem[YIL] and ders[DONEM] == donem[DONEM]:
-                dosya_yolu = os.path.join(donem_dosya_yolu_getir(donem), 'README.md')
+                dosya_yolu = os.path.join(donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU), README_MD)
                 with open(dosya_yolu, 'a', encoding='utf-8') as f:
                     f.write(f"\n### 📘 {ders[AD]}\n\n")  # Kitap emoji, ders adını temsil eder
                     f.write("#### 📄 Ders Bilgileri\n\n")  # Kağıt emoji, ders bilgilerini temsil eder
