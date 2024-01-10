@@ -240,10 +240,10 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
-- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -261,10 +261,10 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
