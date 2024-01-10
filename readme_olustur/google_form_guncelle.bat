@@ -2,7 +2,7 @@
 cls
 
 :: Klasöre git
-cd google_forum_islemleri
+cd %~dp0\google_forum_islemleri
 git config --global i18n.commitEncoding utf-8
 git config --global i18n.logOutputEncoding utf-8
 CHCP 65001
