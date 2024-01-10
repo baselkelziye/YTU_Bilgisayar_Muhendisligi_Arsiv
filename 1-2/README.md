@@ -55,10 +55,10 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
+- 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -110,9 +110,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 Traktör Reis: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
