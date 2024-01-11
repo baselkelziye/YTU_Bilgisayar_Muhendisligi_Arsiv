@@ -182,7 +182,6 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         try:
             katkidaBulunanSayisi = len(self.data[KATKIDA_BULUNANLAR])  # Toplam katkıda bulunan sayısı
             self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
-            self.katkidaBulunanSayisiLabel.setFixedHeight(20)
             self.layout.addWidget(self.katkidaBulunanSayisiLabel)
 
             for kisi in self.data[KATKIDA_BULUNANLAR]:

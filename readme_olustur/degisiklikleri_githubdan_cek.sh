@@ -17,5 +17,5 @@ fi
 
 # Uzak depodaki değişiklikleri çeker ve yerel depoya birleştirir.
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/main
 exit 0
