@@ -1,4 +1,4 @@
-import os
+import os, json
 # GENEL DEGISKENLER
 ## ORTAK DEGISKENLER
 DERSLER = "dersler"
@@ -56,17 +56,6 @@ ICINDEKILER = "icindekiler"
 ## DONEM SAYFASINA OZEL DEGISKENLER
 GENEL_TAVSIYELER = "genel_tavsiyeler"
 # LINKLER
-CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
-HOCA_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
-HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
-DERS_OYLAMA_LINKI = "https://forms.gle/3njZjmhm215YCAxe6"
-DERS_YORUMLAMA_LINKI = "https://forms.gle/SzNmK1w4rVaKE4ee8"
-HOCA_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/export?format=csv"
-HOCA_YORULMALA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
-DERS_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
-DERS_YORUMLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
-VARSAYILAN_GITHUB_URL = "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
-
 GITHUB_URL_ANAHTARI = "github_url"
 CIKMISLAR_ANAHTARI = "cikmislar"
 HOCA_YORUMLAMA_ANAHTARI = "hoca_yorumlama"
@@ -107,27 +96,103 @@ VARSAYILAN_KAVRAMLAR_BOLUM_ADI = "Kavramlar"
 VARSAYILAN_ACIKLAMALAR_BOLUM_ADI = "Açıklamalar"
 
 # DOSYA ADLARI
-BIR_UST_DIZIN = ".."
-DOKUMANLAR_REPO_YOLU = ".."
-DERSLER_JSON_NAME = "dersler.json"
-DERSLER_JSON_PATH = os.path.join(BIR_UST_DIZIN, DERSLER_JSON_NAME)
-HOCALAR_JSON_NAME = "hocalar.json"
-HOCALAR_JSON_PATH = os.path.join(BIR_UST_DIZIN, HOCALAR_JSON_NAME)
 README_MD = "README.md"
-DOKUMANLAR_REPO_YOLU_ANAHTARI = "dokumanlar_repo_yolu"
-ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU,README_MD)
-KATKIDA_BULUNANLAR_JSON_NAME = "katkida_bulunanlar.json"
-KATKIDA_BULUNANLAR_JSON_PATH = os.path.join(BIR_UST_DIZIN, KATKIDA_BULUNANLAR_JSON_NAME)
-REPO_KULLANIMI_JSON_NAME = "repo_kullanimi.json"
-REPO_KULLANIMI_JSON_PATH = os.path.join(BIR_UST_DIZIN, REPO_KULLANIMI_JSON_NAME)
-YAZARIN_NOTLARI_JSON_NAME = "yazarin_notlari.json"
-YAZARIN_NOTLARI_JSON_PATH = os.path.join(BIR_UST_DIZIN, YAZARIN_NOTLARI_JSON_NAME)
-GIRIS_JSON_NAME = "giris.json"
-GIRIS_JSON_PATH = os.path.join(BIR_UST_DIZIN, GIRIS_JSON_NAME)
-DONEMLER_JSON_NAME = "donemler.json"
-DONEMLER_JSON_PATH = os.path.join(BIR_UST_DIZIN, DONEMLER_JSON_NAME)
+BIR_UST_DIZIN = ".."
+GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
+JSON_DOSYALARI_DEPOSU_DOSYA_ADI = "json_depo_bilgileri.txt"
+JSON_DOSYALARI_DEPOSU_DOSYA_YOLU = os.path.join(BIR_UST_DIZIN, JSON_DOSYALARI_DEPOSU_DOSYA_ADI)
+JSON_DOSYALARI_DEPOSU = None
+README_GUNCELLEME_PYTHON = "readme_guncelleme_arayuzu_python"
+try:
+   
+    curr_dir = os.getcwd()
+    curr_dir = os.path.basename(curr_dir)
+    if GOOGLE_FORM_ISLEMLERI in curr_dir or README_GUNCELLEME_PYTHON in curr_dir:
+        tmp_json_depo_dosyasi = JSON_DOSYALARI_DEPOSU_DOSYA_YOLU
+    else:
+        tmp_json_depo_dosyasi = JSON_DOSYALARI_DEPOSU_DOSYA_ADI
+    if not os.path.exists(tmp_json_depo_dosyasi):
+        with open(tmp_json_depo_dosyasi, "w", encoding="utf-8") as json_depo_dosyasi:
+            json_depo_dosyasi.write(".")
+        
+
+
+    with open(tmp_json_depo_dosyasi, "r", encoding="utf-8") as json_depo_dosyasi:
+        for line in json_depo_dosyasi:
+            if JSON_DOSYALARI_DEPOSU is not None:
+                JSON_DOSYALARI_DEPOSU = os.path.join(JSON_DOSYALARI_DEPOSU, line.strip())
+            else:
+                JSON_DOSYALARI_DEPOSU = line.strip()
+except FileNotFoundError:
+    JSON_DOSYALARI_DEPOSU = ""
+DERSLER_JSON_NAME = "dersler.json"
+DERSLER_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, DERSLER_JSON_NAME)
+DERSLER_JSON_PATH = os.path.join(BIR_UST_DIZIN, DERSLER_JSON_NAME)
+
+HOCALAR_JSON_NAME = "hocalar.json"
+HOCALAR_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, HOCALAR_JSON_NAME)
+HOCALAR_JSON_PATH = os.path.join(BIR_UST_DIZIN, HOCALAR_JSON_NAME)
+
 KONFIGURASYON_JSON_NAME = "konfigurasyon.json"
+KONFIGURASYON_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, KONFIGURASYON_JSON_NAME)
 KONFIGURASYON_JSON_PATH = os.path.join(BIR_UST_DIZIN, KONFIGURASYON_JSON_NAME)
+
+KATKIDA_BULUNANLAR_JSON_NAME = "katkida_bulunanlar.json"
+KATKIDA_BULUNANLAR_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, KATKIDA_BULUNANLAR_JSON_NAME)
+KATKIDA_BULUNANLAR_JSON_PATH = os.path.join(BIR_UST_DIZIN, KATKIDA_BULUNANLAR_JSON_NAME)
+
+REPO_KULLANIMI_JSON_NAME = "repo_kullanimi.json"
+REPO_KULLANIMI_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, REPO_KULLANIMI_JSON_NAME)
+REPO_KULLANIMI_JSON_PATH = os.path.join(BIR_UST_DIZIN, REPO_KULLANIMI_JSON_NAME)
+
+YAZARIN_NOTLARI_JSON_NAME = "yazarin_notlari.json"
+YAZARIN_NOTLARI_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, YAZARIN_NOTLARI_JSON_NAME)
+YAZARIN_NOTLARI_JSON_PATH = os.path.join(BIR_UST_DIZIN, YAZARIN_NOTLARI_JSON_NAME)
+
+GIRIS_JSON_NAME = "giris.json"
+GIRIS_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, GIRIS_JSON_NAME)
+GIRIS_JSON_PATH = os.path.join(BIR_UST_DIZIN, GIRIS_JSON_NAME)
+
+DONEMLER_JSON_NAME = "donemler.json"
+DONEMLER_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, DONEMLER_JSON_NAME)
+DONEMLER_JSON_PATH = os.path.join(BIR_UST_DIZIN, DONEMLER_JSON_NAME)
+
+DOKUMANLAR_REPO_YOLU_ANAHTARI = "dokumanlar_repo_yolu"
+try:
+    if os.path.exists(KONFIGURASYON_JSON_PATH):
+        tmp_konf_path = KONFIGURASYON_JSON_PATH
+    elif os.path.exists(KONFIGURASYON_JSON_NAME):
+        tmp_konf_path = KONFIGURASYON_JSON_NAME
+    with open(tmp_konf_path, "r", encoding="utf-8") as konf_dosyasi:
+        tmp_konf = json.load(konf_dosyasi)
+        VARSAYILAN_GITHUB_URL = tmp_konf[GITHUB_URL_ANAHTARI]
+        DOKUMANLAR_REPO_YOLU = os.path.join(tmp_konf[DOKUMANLAR_REPO_YOLU_ANAHTARI])
+        CIKMISLAR_LINKI = tmp_konf[CIKMISLAR_ANAHTARI]
+        HOCA_OYLAMA_LINKI = tmp_konf[HOCA_OYLAMA_ANAHTARI]
+        HOCA_YORULMALA_LINKI = tmp_konf[HOCA_YORUMLAMA_ANAHTARI]
+        DERS_OYLAMA_LINKI = tmp_konf[DERS_OYLAMA_ANAHTARI]
+        DERS_YORUMLAMA_LINKI = tmp_konf[DERS_YORUMLAMA_ANAHTARI]
+        HOCA_OYLAMA_LINKI_CSV = tmp_konf[HOCA_OYLAMA_CSV_ANAHTARI]
+        HOCA_YORULMALA_LINKI_CSV = tmp_konf[HOCA_YORUMLAMA_CSV_ANAHTARI]
+        DERS_OYLAMA_LINKI_CSV = tmp_konf[DERS_OYLAMA_CSV_ANAHTARI]
+        DERS_YORUMLAMA_LINKI_CSV = tmp_konf[DERS_YORUMLAMA_CSV_ANAHTARI]
+
+except:
+    print("Konfigurasyon dosyası bulunamadı. Varsayılan konfigurasyonlar kullanılacak.")
+    DOKUMANLAR_REPO_YOLU = os.path.join(JSON_DOSYALARI_DEPOSU, BIR_UST_DIZIN)
+    CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
+    HOCA_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
+    HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
+    DERS_OYLAMA_LINKI = "https://forms.gle/3njZjmhm215YCAxe6"
+    DERS_YORUMLAMA_LINKI = "https://forms.gle/SzNmK1w4rVaKE4ee8"
+    HOCA_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1w386auUiJaGwoUAmmkEgDtIRSeUplmDz0AZkM09xPTk/export?format=csv"
+    HOCA_YORULMALA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
+    DERS_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
+    DERS_YORUMLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
+    VARSAYILAN_GITHUB_URL = "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
+
+
+ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU,README_MD)
 # UNVAN KISALTMALARI
 PROF_DR = "Prof. Dr."
 DOC_DR = "Doç. Dr."
@@ -232,5 +297,6 @@ ANAHTAR_VE_LINKLER = {
     HOCA_OYLAMA_CSV_ANAHTARI: HOCA_OYLAMA_LINKI_CSV,
     HOCA_YORUMLAMA_CSV_ANAHTARI: HOCA_YORULMALA_LINKI_CSV,
     GITHUB_URL_ANAHTARI: VARSAYILAN_GITHUB_URL,
-    DOKUMANLAR_REPO_YOLU_ANAHTARI: DOKUMANLAR_REPO_YOLU
+    DOKUMANLAR_REPO_YOLU_ANAHTARI: DOKUMANLAR_REPO_YOLU,
+    CIKMISLAR_ANAHTARI: CIKMISLAR_LINKI
 }
