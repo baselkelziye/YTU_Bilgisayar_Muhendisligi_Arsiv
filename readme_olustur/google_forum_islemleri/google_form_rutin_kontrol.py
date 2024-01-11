@@ -45,7 +45,8 @@ def update_repository():
     print("Güncellemeler uygulanıyor...")
     # Git ve Python komutlarını sırayla çalıştır
     try:
-        os.chdir("../..")
+        repo_yolu = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
+        os.chdir(repo_yolu)
         if not execute_command("git fetch"):
             print("Fetch sırasında conflict oluştu, script durduruluyor.")
             return 
@@ -62,9 +63,9 @@ def update_repository():
         if not execute_command("python3 ders_icerikleri_guncelle.py"):
             print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return 
-        os.chdir("..")
+        os.chdir(BIR_UST_DIZIN)
         os.system("python3 readme_olustur.py")
-        os.chdir("..")
+        os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"): 
             print("Git add sırasında conflict oluştu, script durduruluyor.")
             return
