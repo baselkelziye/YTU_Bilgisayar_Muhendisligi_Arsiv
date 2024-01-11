@@ -25,15 +25,22 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         self.setWindowTitle('Giriş Güncelleme')
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
+    def ilklendir(self):
+        ilklendirildi = False
+        if ICINDEKILER not in self.data:
+            self.data[ICINDEKILER] = []
+            ilklendirildi = True
+        if BASLIK not in self.data:
+            self.data[BASLIK] = VARSAYILAN_GIRIS_BASLIK
+            ilklendirildi = True
+        if ACIKLAMA not in self.data:
+            self.data[ACIKLAMA] = VARSAYILAN_GIRIS_ACIKLAMA
+            ilklendirildi = True
+        return ilklendirildi
+        
     def notlariYukle(self):
         self.data = self.jsonDosyasiniYukle()
         try:
-            if ICINDEKILER not in self.data:
-                self.data[ICINDEKILER] = []
-            if BASLIK not in self.data:
-                self.data[BASLIK] = VARSAYILAN_GIRIS_BASLIK
-            if ACIKLAMA not in self.data:
-                self.data[ACIKLAMA] = VARSAYILAN_GIRIS_ACIKLAMA
             icindekiler_sayisi = len(self.data[ICINDEKILER])  # Not sayısını hesapla
             self.notSayisiLabel.setText(f'Toplam {icindekiler_sayisi} içindekiler')  # Not sayısını etikette güncelle
 
@@ -50,6 +57,13 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 return json.load(file)
         except Exception as e:
             return json.loads('{}')
+    def jsonKaydet(self):
+        try:
+            with open(GIRIS_JSON_PATH, 'w',encoding='utf-8') as file:
+                json.dump(self.data, file, ensure_ascii=False, indent=4)
+        except Exception as e:
+            QMessageBox.critical(self, 'Hata', f'Dosya yazılırken bir hata oluştu: {e}')
+    
      # Filtreleri temizleme fonksiyonu
     def clearFilters(self, is_clicked=True):
         if is_clicked:
