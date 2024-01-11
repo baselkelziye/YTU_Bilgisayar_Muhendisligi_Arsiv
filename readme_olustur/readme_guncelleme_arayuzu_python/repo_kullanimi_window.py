@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QInputDialog, QMessageBox, QHBoxLayout
+from PyQt5.QtWidgets import QFrame, QWidget,QScrollArea,QDialog, QLabel, QLineEdit, QInputDialog, QVBoxLayout, QPushButton, QInputDialog, QMessageBox, QHBoxLayout
 import json
 from PyQt5.QtCore import Qt
 from degiskenler import *
@@ -115,7 +115,6 @@ class TalimatDialog(QDialog):
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.talimatSil(index))
-            silBtn.setFixedWidth(50)
             talimatLayout.addWidget(silBtn, 1)
             
             self.scrollLayout.addLayout(talimatLayout)
@@ -385,14 +384,12 @@ class KavramDialog(QDialog):
             duzenleBtn = QPushButton("Adı Düzenle", self)
             duzenleBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             duzenleBtn.clicked.connect(lambda checked, index=i: self.kavramAdiDuzenle(index))
-            duzenleBtn.setFixedWidth(70)
             kavramLayout.addWidget(duzenleBtn, 1)
             
             # Kavramı silme butonu
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.kavramSil(index))
-            silBtn.setFixedWidth(50)
             kavramLayout.addWidget(silBtn, 1)
             
             self.scrollLayout.addLayout(kavramLayout)
@@ -560,7 +557,6 @@ class AciklamaDialog(QDialog):
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.aciklamaSil(index))
-            silBtn.setFixedWidth(50)
             aciklamaLayout.addWidget(silBtn, 1)
             
             self.scrollLayout.addLayout(aciklamaLayout)
@@ -614,6 +610,7 @@ class RepoKullanimiDialog(QDialog):
     def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__()
         self.setModal(True)
+        self.setMinimumSize(600, 300)
         self.json_dosyasi = json_dosyasi
         self.jsonKontrol()
         self.initUI()
@@ -623,12 +620,9 @@ class RepoKullanimiDialog(QDialog):
     def initUI(self):
         self.setWindowTitle("Repo Kullanımı Düzenleme")
         layout = QVBoxLayout(self)
-        # Başlık Label
-        baslikLabel = QLabel("Başlık: ", self)
-        layout.addWidget(baslikLabel)
         # Başlık Buton
         baslik = self.repo_data.get(BASLIK, VARSAYILAN_REPO_KULLANIMI_BOLUM_ADI)
-        self.baslikBtn = QPushButton(kisaltMetin(baslik), self)
+        self.baslikBtn = QPushButton("Başlık: " + kisaltMetin(baslik), self)
         self.baslikBtn.setToolTip(baslik)
         self.baslikBtn.clicked.connect(self.baslikDuzenle)
         self.baslikBtn.setStyleSheet(BASLIK_BUTON_STILI)
@@ -638,7 +632,6 @@ class RepoKullanimiDialog(QDialog):
         talimatBtn.clicked.connect(self.acTalimatDialog)
         talimatBtn.setStyleSheet("background-color: lightblue; color: black;")  # Mavi renk
         layout.addWidget(talimatBtn)
-
         # Kavram Ekle/Düzenle butonu
         kavramBtn = QPushButton('Kavram Ekle/Düzenle', self)
         kavramBtn.clicked.connect(self.acKavramDialog)
@@ -658,7 +651,7 @@ class RepoKullanimiDialog(QDialog):
             if cevap == QMessageBox.Yes:
                 self.repo_data[BASLIK] = yeni_baslik
                 self.jsonGuncelle()
-                self.baslikBtn.setText(kisaltMetin(self.repo_data[BASLIK]))
+                self.baslikBtn.setText(self.baslikBtn.text().replace(eski_baslik,kisaltMetin(self.repo_data[BASLIK])))
                 self.baslikBtn.setToolTip(self.repo_data[BASLIK])
                 QMessageBox.information(self, 'Başlık Düzenlendi', 'Başlık başarıyla düzenlendi.')
             else:
