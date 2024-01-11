@@ -1,0 +1,98 @@
+/* Ana pencere stilini ayarla */
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+/* Butonlar için stil */
+QPushButton {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    min-width: 80px;
+    min-height: 30px;
+}
+
+QPushButton:hover {
+    background-color: #0056b3;
+}
+
+QPushButton:pressed {
+    background-color: #003d7a;
+}
+
+/* Label'lar için stil */
+QLabel {
+    color: #2c3e50; /* Koyu mavi/gri tonu */
+    font-size: 16px; /* Daha büyük font boyutu */
+    font-weight: bold; /* Kalın yazı stili */
+    background-color: #ecf0f1; /* Hafif gri arka plan */
+    padding: 4px; /* İç boşluk */
+    border-radius: 4px; /* Yuvarlatılmış köşeler */
+}
+
+
+/* Edit kutuları için stil */
+QLineEdit {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    min-height: 20px;
+}
+
+QDialog {
+    background-color: #f2f2f2; /* Arka plan rengi */
+    border: 1px solid #c0c0c0; /* Kenarlık */
+}
+
+/* Combo box için stil */
+QComboBox {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    min-height: 20px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+/* Scroll bar için stil */
+QScrollBar:vertical {
+    border: none;
+    background: #eee;
+    width: 10px;
+    margin: 20px 0 20px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #ccc;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+/* Tab widget için stil */
+QTabWidget::pane {
+    border-top: 2px solid #ccc;
+}
+
+QTabBar::tab {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+QTabBar::tab:selected {
+    background: #f0f0f0;
+    border-color: #ccc;
+}
+
+QTabBar::tab:!selected {
+    background: #e0e0e0;
+    margin-top: 2px;
+}

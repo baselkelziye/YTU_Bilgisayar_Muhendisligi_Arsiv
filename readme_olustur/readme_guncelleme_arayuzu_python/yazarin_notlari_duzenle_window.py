@@ -46,7 +46,6 @@ class YazarinNotlariWindow(QDialog):
 
         # Not sayısını gösteren etiket
         self.notSayisiLabel = QLabel('Toplam 0 not')
-        self.notSayisiLabel.setFixedHeight(20)
         self.mainLayout.addWidget(self.notSayisiLabel)
 
         # Kaydırılabilir alan oluştur

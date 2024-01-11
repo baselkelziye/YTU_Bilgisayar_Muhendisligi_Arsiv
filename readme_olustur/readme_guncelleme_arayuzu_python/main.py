@@ -40,7 +40,7 @@ class App(QWidget):
             QPushButton('Git İşlemleri'),
         ]
         # Her düğme için farklı bir renk ayarla
-        colors = ['#FF5733', '#33FF57', '#3357FF', '#F333FF', '#FFFF33', '#FF5733', '#33FF3F','#33FFF3']
+        colors = ['#C0392B', '#27AE60', '#2980B9', '#8E44AD', '#F39C12', '#D35400', '#16A085', '#2C3E50']
         for button, color in zip(self.buttons, colors):
             button.setStyleSheet(f'background-color: {color};')
         self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
@@ -117,5 +117,9 @@ if __name__ == '__main__':
         os.chdir(application_path)
     konfigurasyon_json_guncelle(KONFIGURASYON_JSON_PATH)
     app = QApplication(sys.argv)
+    # Stil dosyasını oku
+    with open(STIL_QSS, "r") as f:
+        _style = f.read()
+        app.setStyleSheet(_style)
     ex = App()
     sys.exit(app.exec_())

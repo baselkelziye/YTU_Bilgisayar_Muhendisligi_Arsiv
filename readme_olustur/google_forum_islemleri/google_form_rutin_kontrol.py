@@ -43,6 +43,8 @@ def update_repository():
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
     print("Güncellemeler uygulanıyor...")
+    readme_guncelle_sc = README_GUNCELLE_BAT if sys.platform.startswith('win') else README_GUNCELLE_SH
+    google_form_guncelle_sc = GOOGLE_FORM_GUNCELLE_BAT if sys.platform.startswith('win') else GOOGLE_FORM_GUNCELLE_SH
     # Git ve Python komutlarını sırayla çalıştır
     try:
         repo_yolu = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
@@ -56,15 +58,11 @@ def update_repository():
         if not execute_command("git pull"):
             print("Pull sırasında conflict oluştu, script durduruluyor.")
             return
-        os.chdir(original_directory)
-        if not execute_command("python3 hoca_icerikleri_guncelle.py"):
-            print("Hoca içerikleri güncellenirken hata oluştu, script durduruluyor.")
+        os.chdir(os.path.join(original_directory, BIR_UST_DIZIN))
+        if not execute_command(google_form_guncelle_sc):
+            print("Google form içerikleri güncellenirken hata oluştu, script durduruluyor.")
             return
-        if not execute_command("python3 ders_icerikleri_guncelle.py"):
-            print("Ders içerikleri güncellenirken hata oluştu, script durduruluyor.")
-            return 
-        os.chdir(BIR_UST_DIZIN)
-        os.system("python3 readme_olustur.py")
+        os.system(readme_guncelle_sc)
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"): 
             print("Git add sırasında conflict oluştu, script durduruluyor.")
