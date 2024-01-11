@@ -30,7 +30,6 @@ class DonemEkleGuncelleWindow(TalimatDialog):
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.talimatSil(index))
-            silBtn.setFixedWidth(50)
             donemLayout.addWidget(silBtn, 1)
             
             self.scrollLayout.addLayout(donemLayout)
