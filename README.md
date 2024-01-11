@@ -27,7 +27,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 ## 🛠 Repo Kullanımı
 
-Açıklamalar:
+### ⚙️ Açıklamalar:
 - 📋 1-1 -> 1. sınıf Güz dönemi
 - 📋 1-2 -> 1. sınıf Bahar dönemi
 - 📋 2-1 -> 2. sınıf Güz dönemi
@@ -43,7 +43,7 @@ Açıklamalar:
 - 📋 burada olmayan bazı çıkmış sorulara/lablara/ödevlere [linkten](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh) ulaşabilirsiniz.
 
 
-📝 Talimatlar:
+### 📝 Talimatlar:
 - 👉 İlgili dönemin/türün klasörünü aç.
 - 👉 İlgili dersin klasörünü aç.
 - 👉 Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.
@@ -51,7 +51,7 @@ Açıklamalar:
 - 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin ya da merge request atabilirsin.
 
 
-🔍 Kavramlar:
+### 🔍 Kavramlar:
 - 💡 Ara Proje
   - 📘 Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.
   - 📘 Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
