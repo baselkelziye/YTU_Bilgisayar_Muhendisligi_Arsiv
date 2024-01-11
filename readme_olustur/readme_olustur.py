@@ -291,24 +291,24 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
-        f.write(f"\n\n\n## 🛠 {repo_kullanimi_bilgileri['baslik']}\n\n")  # Araç kutusu emojisi
-        f.write(f"{repo_kullanimi_bilgileri['aciklama']}\n")
-        for aciklama in repo_kullanimi_bilgileri['aciklamalar']:
+        f.write(f"\n\n\n## 🛠 {repo_kullanimi_bilgileri[BASLIK]}\n\n")  # Araç kutusu emojisi
+        f.write(f"### ⚙️ {repo_kullanimi_bilgileri[ACIKLAMA]}\n")
+        for aciklama in repo_kullanimi_bilgileri[ACIKLAMALAR]:
             f.write(f"- 📋 {aciklama}\n")  # Not defteri emojisi
-        f.write(f"\n\n📝 {repo_kullanimi_bilgileri['talimat']}\n")  # Yazma emojisi
-        for talimat in repo_kullanimi_bilgileri['talimatlar']:
+        f.write(f"\n\n### 📝 {repo_kullanimi_bilgileri[TALIMAT]}\n")  # Yazma emojisi
+        for talimat in repo_kullanimi_bilgileri[TALIMATLAR]:
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
-        f.write(f"\n\n🔍 {repo_kullanimi_bilgileri['kavram']}\n")  # Büyüteç emojisi
-        for kavram in sorted(repo_kullanimi_bilgileri['kavramlar'], key=lambda x: x['kavram'].lower()):
-            f.write(f"- 💡 {kavram['kavram']}\n")  # Ampul emojisi, fikir veya kavramı temsil eder
-            for aciklama in kavram['aciklamalar']:
+        f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
+        for kavram in sorted(repo_kullanimi_bilgileri[KAVRAMLAR], key=lambda x: x[KAVRAM].lower()):
+            f.write(f"- 💡 {kavram[KAVRAM]}\n")  # Ampul emojisi, fikir veya kavramı temsil eder
+            for aciklama in kavram[ACIKLAMALAR]:
                 f.write(f"  - 📘 {aciklama}\n")  # Kitap emojisi, açıklamalar için
 
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open(ANA_README_YOLU, 'a', encoding='utf-8') as f:
         f.write(f"\n## ✍️ {yazar_notlari['baslik']}\n\n")  # Kalem emoji, yazarı temsil eder
-        for aciklama in yazar_notlari['aciklamalar']:
+        for aciklama in yazar_notlari[ACIKLAMALAR]:
             f.write(f"- 📝 {aciklama}\n")  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
 
 def readme_katkida_bulunanlar_ekle(veri):
