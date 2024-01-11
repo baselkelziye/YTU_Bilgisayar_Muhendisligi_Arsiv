@@ -81,24 +81,12 @@ def update_repository():
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
-try:
-    with open(KONFIGURASYON_JSON_PATH, "r", encoding="utf-8") as f:
-        data = json.load(f)
-        # URL'leri kontrol et        
-        urls = {
-            "DERS YORUMLAMA": data.get(DERS_YORUMLAMA_CSV_ANAHTARI, DERS_YORUMLAMA_LINKI_CSV),
-            "HOCA YORUMLAMA": data.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV),
-            "DERS ÖZELLİKLERİ OYLAMA":data.get(DERS_OYLAMA_CSV_ANAHTARI, DERS_OYLAMA_LINKI_CSV),
-            "HOCA ÖZELLİKLERİ OYLAMA": data.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
-        }
-except Exception as e:
-    print(f"Konfigurasyon dosyası okunurken hata oluştu varsayılan değerler kullanılacak: {e}")
-    urls = {
-        "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
-        "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
-        "DERS ÖZELLİKLERİ OYLAMA": DERS_OYLAMA_LINKI_CSV,
-        "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV
-    }
+urls = {
+    "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
+    "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
+    "DERS ÖZELLİKLERİ OYLAMA": DERS_OYLAMA_LINKI_CSV,
+    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV
+}
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
 for key, url in urls.items():

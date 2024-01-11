@@ -90,17 +90,19 @@ class GitIslemleriWindow(QDialog):
         self.run_script(README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH, baslik = "README.md Güncelleniyor...")
 
     def push_changes(self):
-        try:
-            with open(KONFIGURASYON_JSON_PATH, "r", encoding="utf-8") as f:
-                konfigurasyon = json.load(f)
-                DOKUMANLAR_REPO_YOLU = konfigurasyon[DOKUMANLAR_REPO_YOLU_ANAHTARI]
-        except Exception as e:
-            print(f"Konfigürasyon dosyası okunamadı. Varsayılan değerler kullanılacak. hata:{e}")
         bat_dosyasi = DEGISIKLIKLERI_GITHUBA_YOLLA_BAT if self.is_windows else DEGISIKLIKLERI_GITHUBA_YOLLA_SH
         bat_scripti = bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU
         self.run_script(bat_scripti, baslik = "Değişiklikler Github'a Pushlanıyor...")
 
     def update_interface(self):
+        # Git status kontrolü
+        stream = os.popen('git status')
+        output = stream.read()
+
+        # Değişiklik olup olmadığını kontrol et
+        if "nothing to commit, working tree clean" not in output:
+            QMessageBox.critical(None, "Hata", "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.")
+            return
         self.run_script(ARAYUZU_GITHULA_ESITLE_BAT if self.is_windows else ARAYUZU_GITHULA_ESITLE_SH, baslik="Arayüz Kodları Güncelleniyor...")
 
     def start_routine_check(self):

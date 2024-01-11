@@ -17,13 +17,7 @@ absolute_path = os.path.join(current_directory, relative_path)
 sys.path.append(absolute_path)
 from degiskenler import *
 SLEEP_TIME = 10
-try:
-    with open(KONFIGURASYON_JSON_PATH, 'r', encoding='utf-8') as file:
-        data = json.load(file)
-        HOCA_OYLAMA_LINKI_CSV = data.get(HOCA_OYLAMA_CSV_ANAHTARI, HOCA_OYLAMA_LINKI_CSV)
-        HOCA_YORULMALA_LINKI_CSV = data.get(HOCA_YORUMLAMA_CSV_ANAHTARI, HOCA_YORULMALA_LINKI_CSV)
-except Exception as e:
-    print(f"Konfigurasyon dosyası okunurken hata oluştu varsayılan değerler kullanılacak: {e}")
+
 # Google Sheets dosyasının URL'si
 yildizlar_sheets_url = HOCA_OYLAMA_LINKI_CSV
 def guncelle_ogrenci_gorusleri(data, sheets_url):
@@ -96,7 +90,7 @@ else:
 
 # JSON dosyasını oku
 json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
-with open(os.path.join("..",json_file_path), 'r', encoding='utf-8') as file:
+with open(os.path.join(BIR_UST_DIZIN,json_file_path), 'r', encoding='utf-8') as file:
     data = json.load(file)
 data[EN_POPULER_HOCA] = {HOCA_ADI:en_populer_hoca, OY_SAYISI:int(en_populer_hoca_oy_sayisi)}
 for hoca in data[HOCALAR]:
@@ -111,9 +105,9 @@ for hoca in data[HOCALAR]:
 # Fonksiyonu çağır ve JSON dosyasını güncelle
 guncelle_ogrenci_gorusleri(data, yorumlar_sheets_url)
 
-
-with open(json_file_path, 'w', encoding='utf-8') as file:
+json_file_name = os.path.basename(json_file_path)
+with open(json_file_name, 'w', encoding='utf-8') as file:
     json.dump(data, file, ensure_ascii=False, indent=4)
 
 # Dosyayı kopyalamak için:
-shutil.copy(json_file_path, os.path.join("..",json_file_path))
+shutil.copy(json_file_name, os.path.join(BIR_UST_DIZIN,json_file_path))

@@ -25,7 +25,7 @@ if %errorlevel% neq 0 (
 echo Gerekli kutuphaneler kontrol ediliyor ve yukleniyor...
 
 :: gereksinimler.txt dosyasındaki her paketi kontrol et
-for /F %%i in (%~dp0\gereksinimler.txt) do (
+for /F %%i in ("%~dp0\gereksinimler.txt") do (
     pip show %%i >nul 2>&1
     if not %errorlevel%==0 (
         echo %%i yukleniyor...
