@@ -22,15 +22,6 @@ unvanlarin_onceligi = {"Prof.": 1, "Doç.": 2, "Dr.": 3}
 
 # LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
 konfigurasyon_json_guncelle(KONFIGURASYON_JSON_NAME)
-with open(KONFIGURASYON_JSON_NAME, 'r', encoding='utf-8') as f:
-    anahtar_ve_linkler = json.load(f)
-    HOCA_YORULMALA_LINKI = anahtar_ve_linkler.get(HOCA_YORUMLAMA_ANAHTARI, HOCA_YORULMALA_LINKI)
-    HOCA_OYLAMA_LINKI = anahtar_ve_linkler.get(HOCA_OYLAMA_ANAHTARI, HOCA_OYLAMA_LINKI)
-    DERS_YORUMLAMA_LINKI = anahtar_ve_linkler.get(DERS_YORUMLAMA_ANAHTARI, DERS_YORUMLAMA_LINKI)
-    DERS_OYLAMA_LINKI = anahtar_ve_linkler.get(DERS_OYLAMA_ANAHTARI, DERS_OYLAMA_LINKI)
-    DOKUMANLAR_REPO_YOLU = anahtar_ve_linkler.get(DOKUMANLAR_REPO_YOLU_ANAHTARI, DOKUMANLAR_REPO_YOLU)
-    ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU, README_MD)
-
 # GİRİŞ SAYFASI
 GERI_BILDIRIM_KISMI =f""" ## 🗣️ Geri Bildirimde Bulunun
 
@@ -63,7 +54,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
             # Eşleşme skoru hesaplama
             skor = benzerlik_skoru(aranan_ad,klasor_ad)
             # Her iki yüzde de %50'den büyükse, eşleşme olarak kabul et
-            if skor > en_yuksek_yuzde and klasor_derinligi_bul(dizin_yolu) < 4:
+            if skor > en_yuksek_yuzde and klasor_derinligi_bul(dizin_yolu.replace(baslangic_yolu, "")) < 4:
                 en_yuksek_yuzde = skor
                 en_iyi_eslesme = os.path.join(dizin_yolu, klasor_ad)
 
@@ -436,7 +427,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = Fal
                 f.write(f"- {hoca[KISALTMA]}\n")
         if klasor_sonradan_olustu:
             f.write("\n## 😔 İçerik yok\n")
-            f.write(f"- {dersler['ders_klasoru_bulunamadi_mesaji']}\n")
+            f.write(f"- {dersler[DERS_KLASORU_BULUNAMADI_MESAJI]}\n")
         if GUNCEL_MI in ders and not ders[GUNCEL_MI]:
             f.write("\n## ℹ️ Dersin içeriği güncel değil\n")
             f.write(f"- {dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI]}\n")
