@@ -50,6 +50,7 @@ def konfigurasyon_json_guncelle(file_path):
 
         # Eğer güncelleme yapıldıysa, dosyayı yeniden yaz
         if updated:
+            os.makedirs(os.path.dirname(file_path), exist_ok=True)
             with open(file_path, 'w', encoding='utf-8') as file:
                 json.dump(data, file, indent=4, ensure_ascii=False)
 

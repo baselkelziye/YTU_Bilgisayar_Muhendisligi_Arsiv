@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-
+cd "$(dirname "$0")
 # Python script'lerini çalıştır
 echo "Readmeler guncelleniyor..."
 python3 readme_olustur.py
