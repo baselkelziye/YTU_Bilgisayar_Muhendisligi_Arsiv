@@ -70,7 +70,6 @@ class HocaEkleGuncelleWindow(QDialog):
 
         # Hoca sayısını gösteren etiket
         self.hocaSayisiLabel = QLabel('Toplam 0 hoca')
-        self.hocaSayisiLabel.setFixedHeight(20)
         self.mainLayout.addWidget(self.hocaSayisiLabel)
 
         # Kaydırılabilir alan oluştur

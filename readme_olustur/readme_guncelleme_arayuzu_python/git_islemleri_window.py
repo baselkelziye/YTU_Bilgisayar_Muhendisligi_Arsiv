@@ -28,12 +28,13 @@ class GitIslemleriWindow(QDialog):
         ]
 
         self.colors = [
-            "background-color: red;",
-            "background-color: green;",
-            "background-color: #33FFF3;",
-            "background-color: yellow;",
-            "background-color: pink;"
+            "background-color: #C0392B; color: white;",  # Kırmızı
+            "background-color: #27AE60; color: white;",  # Yeşil
+            "background-color: #1ABC9C; color: white;",  # Açık Mavi/Turkuaz
+            "background-color: #F1C40F; color: black;",  # Sarı
+            "background-color: #FF69B4; color: white;"   # Pembe
         ]
+
 
         # Buton fonksiyonları
         self.functions = [

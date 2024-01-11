@@ -96,6 +96,7 @@ VARSAYILAN_KAVRAMLAR_BOLUM_ADI = "Kavramlar"
 VARSAYILAN_ACIKLAMALAR_BOLUM_ADI = "Açıklamalar"
 
 # DOSYA ADLARI
+STIL_QSS = "stil.qss"
 README_MD = "README.md"
 BIR_UST_DIZIN = ".."
 GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
@@ -202,13 +203,14 @@ DR = "Dr."
 # STİLLER
 
 ## BUTON STİLLERİ
-EKLE_BUTONU_STILI = "background-color: green; color: white;"
-SIL_BUTONU_STILI = "background-color: red; color: white;"
-TEMIZLE_BUTONU_STILI = "background-color: orange; color: white;"
-VEREN_EKLE_BUTONU_STILI = "background-color: lightblue;"
-GUNCELLE_BUTTON_STILI = "background-color: blue; color: white;"
-BASLIK_BUTON_STILI = "background-color: lightblue; color: black;"
-ACIKLAMA_BUTON_STILI = "background-color: lightgreen; color: black;"
+EKLE_BUTONU_STILI = "background-color: #27AE60; color: white;"          # Yeşil
+SIL_BUTONU_STILI = "background-color: #C0392B; color: white;"          # Kırmızı
+TEMIZLE_BUTONU_STILI = "background-color: #F39C12; color: white;"      # Turuncu
+VEREN_EKLE_BUTONU_STILI = "background-color: #3498DB; color: white;"   # Açık Mavi
+GUNCELLE_BUTTON_STILI = "background-color: #2980B9; color: white;"     # Mavi
+BASLIK_BUTON_STILI = "background-color: #95A5A6; color: white;"        # Açık Gri
+ACIKLAMA_BUTON_STILI = "background-color: #2ECC71; color: white;"      # Açık Yeşil
+
 
 
 # JSON ANAHTARLARI
@@ -245,21 +247,18 @@ DERSI_NE_KADAR_EGLENCELI_ANLATIR = 'Dersi ne kadar eğlenceli anlatır?'
 GOOGLE_FORM_GUNCELLE = "google_form_guncelle"
 README_GUNCELLE = "readme_guncelle"
 DEGISIKLIKLERI_GITHUBA_YOLLA = "degisiklikleri_githuba_yolla"
-HOCA_ICERIKLERI_GUNCELLE = "hoca_icerikleri_guncelle"
 RUTIN_KONTROL = "rutin_kontrol"
 ARAYUZU_GITHULA_ESITLE = "arayuzu_githubla_esitle"
 ## BAT DOSYALARI
 GOOGLE_FORM_GUNCELLE_BAT = GOOGLE_FORM_GUNCELLE + ".bat"
 README_GUNCELLE_BAT = README_GUNCELLE + ".bat"
 DEGISIKLIKLERI_GITHUBA_YOLLA_BAT = DEGISIKLIKLERI_GITHUBA_YOLLA + ".bat"
-HOCA_ICERIKLERI_GUNCELLE_BAT = HOCA_ICERIKLERI_GUNCELLE + ".bat"
 RUTIN_KONTROL_BAT = RUTIN_KONTROL + ".bat"
 ARAYUZU_GITHULA_ESITLE_BAT = ARAYUZU_GITHULA_ESITLE + ".bat"
 ## SH DOSYALARI
 GOOGLE_FORM_GUNCELLE_SH = GOOGLE_FORM_GUNCELLE + ".sh"
 README_GUNCELLE_SH = README_GUNCELLE + ".sh"
 DEGISIKLIKLERI_GITHUBA_YOLLA_SH = DEGISIKLIKLERI_GITHUBA_YOLLA + ".sh"
-HOCA_ICERIKLERI_GUNCELLE_SH = HOCA_ICERIKLERI_GUNCELLE + ".sh"
 RUTIN_KONTROL_SH = RUTIN_KONTROL + ".sh"
 ARAYUZU_GITHULA_ESITLE_SH = ARAYUZU_GITHULA_ESITLE + ".sh"
 

@@ -63,7 +63,6 @@ class DersEkleGuncelleWindow(QDialog):
 
         # Ders sayısını gösteren etiket
         self.dersSayisiLabel = QLabel('Toplam 0 ders')
-        self.dersSayisiLabel.setFixedHeight(20)
         self.mainLayout.addWidget(self.dersSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -191,7 +190,7 @@ class DersEkleGuncelleWindow(QDialog):
                 dersSatiri = QHBoxLayout()
 
                 # Büyük ders butonu
-                btnDers = QPushButton(f"{ders[AD]}", self.scrollWidget)
+                btnDers = QPushButton(kisaltMetin(ders.get(AD,""), maks_uzunluk=42), self.scrollWidget)
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
                 btnDers.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 btnDers.setMinimumWidth(350)
@@ -445,12 +444,14 @@ class YeniElemanEklemeDialog(QDialog):
             self.label = QLabel('Öneri Sahibi:', self)
             self.layout.addWidget(self.label)
             self.sahibiEdit = QLineEdit(self)
+            self.setWindowTitle('Öneri Ekle' if self.oneri_index is None else 'Öneri Güncelle')
             if self.mevcutEleman:
                 self.sahibiEdit.setText(self.mevcutEleman[ONERI_SAHIBI])
             self.layout.addWidget(self.sahibiEdit)
             self.label = QLabel('Öneri:', self)
         else:
             self.label = QLabel('Kaynak:', self)
+            self.setWindowTitle('Kaynak Ekle' if self.oneri_index is None else 'Kaynak Güncelle')
 
 
         self.layout.addWidget(self.label)
