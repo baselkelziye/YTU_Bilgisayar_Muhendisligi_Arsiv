@@ -1103,8 +1103,8 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
