@@ -45,7 +45,8 @@ class HocaEkleGuncelleWindow(QDialog):
         bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_HOCA_BOLUM_ADI)
         aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_HOCA_BOLUM_ACIKLAMASI)
         # Bölüm adı label
-        self.bolumAdiLabel = QLabel("Bölüm Adı:")
+        self.bolumAdiLabel = QLabel("Bölüm Adı")
+        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı buton
         self.bolumAdiBtn = QPushButton(kisaltMetin(bolum_adi))
@@ -54,7 +55,8 @@ class HocaEkleGuncelleWindow(QDialog):
         self.bolumAdiBtn.setToolTip(bolum_adi)
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
-        self.bolumAciklamasiLabel = QLabel("Bölüm Açıklaması:")
+        self.bolumAciklamasiLabel = QLabel("Bölüm Açıklaması")
+        self.bolumAciklamasiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
         self.bolumAciklamasiBtn = QPushButton(kisaltMetin(aciklama))
@@ -70,6 +72,7 @@ class HocaEkleGuncelleWindow(QDialog):
 
         # Hoca sayısını gösteren etiket
         self.hocaSayisiLabel = QLabel('Toplam 0 hoca')
+        self.hocaSayisiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.hocaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -236,7 +239,9 @@ class HocaDuzenlemeWindow(QDialog):
         self.setMinimumSize(500, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.layout = QVBoxLayout(self)
         # Ünvan için alan
-        self.layout.addWidget(QLabel('Ünvan:'))
+        self.unvan_label = QLabel('Ünvan')
+        self.unvan_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.unvan_label)
         self.unvanInput = QComboBox(self)
         unvanlar = [PROF_DR, DOC_DR, DR]
         self.unvanInput.addItems(unvanlar)
@@ -247,22 +252,30 @@ class HocaDuzenlemeWindow(QDialog):
          # Ünvanı ayarla
         if unvan in unvanlar:
             self.unvanInput.setCurrentIndex(unvanlar.index(unvan))
-        self.layout.addWidget(QLabel('Ad:'))
+        self.ad_label = QLabel('Ad')
+        self.ad_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.ad_label)
         self.adInput = QLineEdit(ad)
         self.layout.addWidget(self.adInput)
 
         # Hoca ofisi için alan
-        self.layout.addWidget(QLabel('Ofis:'))
+        self.ofis_label = QLabel('Ofis')
+        self.ofis_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.ofis_label)
         self.ofisInput = QLineEdit(self.hoca.get(OFIS, "") if self.hoca else '')
         self.layout.addWidget(self.ofisInput)
 
         # Hoca linki için alan
-        self.layout.addWidget(QLabel('Link:'))
+        self.link_label = QLabel('Link')
+        self.link_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.link_label)
         self.linkInput = QLineEdit(self.hoca.get(LINK, "") if self.hoca else '')
         self.layout.addWidget(self.linkInput)
 
         # Hoca cinsiyet durumu için alan
-        self.layout.addWidget(QLabel('Erkek mi?'))
+        self.erkek_mi_label = QLabel('Erkek mi?')
+        self.erkek_mi_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.erkek_mi_label)
         self.erkekMiInput = QComboBox(self)
         self.erkekMiInput.addItems(['Evet', 'Hayır'])
         if self.hoca:
@@ -274,7 +287,9 @@ class HocaDuzenlemeWindow(QDialog):
         self.dersler = self.dersleriYukle()
         # Derslerin sadece AD alanını al ve adlarına göre sırala
         self.dersler = sorted([ders[AD] for ders in self.dersler], key=locale.strxfrm)
-        self.layout.addWidget(QLabel('Hocanın Verdiği Dersler'))
+        self.hocanin_verdig_dersler_label = QLabel('Hocanın Verdiği Dersler')
+        self.hocanin_verdig_dersler_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.hocanin_verdig_dersler_label)
         
         # Hocalar için kaydırılabilir alan oluştur
         self.derslerScorllArea = QScrollArea(self)  # ScrollArea oluştur

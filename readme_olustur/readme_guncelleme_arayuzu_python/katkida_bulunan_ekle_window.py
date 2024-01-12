@@ -4,6 +4,7 @@ from threadler import KatkiEkleThread
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
 from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import Qt
 from close_event import closeEventHandler
 class KatkidaBulunanEkleWindow(QDialog):
     def __init__(self, parent):
@@ -24,9 +25,11 @@ class KatkidaBulunanEkleWindow(QDialog):
         self.progressDialog = CustomProgressDialog('Kontrol Ediliyor...', self)
         self.progressDialog.close()
         # Ad ve GitHub Linki için giriş alanları
-        self.name_label = QLabel('Ad:')
+        self.name_label = QLabel('Ad')
+        self.name_label.setAlignment(Qt.AlignCenter)
         self.name_input = QLineEdit()
-        self.github_label = QLabel('GitHub Kullanıcı Adı:')
+        self.github_label = QLabel('GitHub Kullanıcı Adı')
+        self.github_label.setAlignment(Qt.AlignCenter)
         self.github_input = QLineEdit()
         self.ekle_btn = QPushButton('Ekle', self)
         self.ekle_btn.setStyleSheet(EKLE_BUTONU_STILI)
