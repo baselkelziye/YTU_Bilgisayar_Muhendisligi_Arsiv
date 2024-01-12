@@ -1,0 +1,10 @@
+
+Ödevde 1,2,4,8 sayýlarýný (veya isterseniz 0,1,...,9 demiþtik) 7-segmentte sembolize eden HEX deðerlerini bir listede tutun (DIGITS vs. gibi). "common anode common cathode hex values" þeklinde google'da arama yaparak görsellerden örnekleri görebilirsiniz (veya hocalarýn örneklerini inceleyiniz). Örneðin 1 sayýsý için yanmasý gereken 2 bacak ve sönük kalmasý gereken diðerlerinin binary deðerinin HEX karþýlýklarý sizin için önemli.
+
+if 1 için XXXXX (maskeleme, orlama, andleme, ..., vs)
+if 2 için XXXXX "
+if 4 için XXXXX "
+if 8 için XXXXX "
+
+gibi hepsini ayrý ayrý kontrol etmenizi isteMiyoruz. Ýndis üzerinden yukarýdaki diziye eriþen bir kod tasarýmý yapýnýz.
+
