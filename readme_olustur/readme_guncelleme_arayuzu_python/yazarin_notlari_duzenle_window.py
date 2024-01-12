@@ -29,7 +29,8 @@ class YazarinNotlariWindow(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Başlık etiketi
-        self.baslikLabel = QLabel("Başlık: ")
+        self.baslikLabel = QLabel("Başlık")
+        self.baslikLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.baslikLabel)
         # Başlık butonu
         baslik = self.data.get(BASLIK, VARSAYILAN_YAZARIN_NOTLARI_BOLUM_ADI)
@@ -46,6 +47,7 @@ class YazarinNotlariWindow(QDialog):
 
         # Not sayısını gösteren etiket
         self.notSayisiLabel = QLabel('Toplam 0 not')
+        self.notSayisiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.notSayisiLabel)
 
         # Kaydırılabilir alan oluştur

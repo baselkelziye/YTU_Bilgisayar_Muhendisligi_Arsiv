@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Bölümle çok alakası yok. Kalmamak lazım.
+  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★★☆
   - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆

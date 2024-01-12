@@ -22,6 +22,7 @@ class TalimatDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.talimatSayisiLabel = QLabel(self)
+        self.talimatSayisiLabel.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.talimatSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -224,6 +225,7 @@ class KavramDetayDialog(QDialog):
             aciklamaLayout = QHBoxLayout()
 
             aciklamaLabel = QLabel(kisaltMetin(aciklama), self)
+            aciklamaLabel.setAlignment(Qt.AlignCenter)
             aciklamaLabel.setToolTip(aciklama)
             aciklamaLabel.setWordWrap(True)
             aciklamaLabel.setFixedWidth(420)  # Maksimum yükseklik değerini istediğiniz bir değere ayarlayın
@@ -292,6 +294,7 @@ class KavramDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.kavramSayisiLabel = QLabel(self)
+        self.kavramSayisiLabel.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.kavramSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -468,6 +471,7 @@ class AciklamaDialog(QDialog):
         self.layout.addWidget(self.clearFiltersButton)
         self.aciklamaSayisiLabel = QLabel(self)
         self.aciklamaSayisiLabel.setText(f'Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama')
+        self.aciklamaSayisiLabel.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.aciklamaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
