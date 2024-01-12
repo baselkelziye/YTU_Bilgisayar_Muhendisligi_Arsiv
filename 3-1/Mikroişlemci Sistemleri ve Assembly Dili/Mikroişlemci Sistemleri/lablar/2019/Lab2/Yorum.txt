@@ -1,0 +1,13 @@
+"8255 KULLANARAK ve Port A için 068H adresinden baþlayarak adresleme hesabýný yapýnýz. Ardýþýk olarak çift adreste yer alan Port B’ye baðlý common anode 7-segment display ve Port A’da bulunan (en düþün anlamlý bit en düþük anlamlý portta olacak þekilde) 4 butonu aþaðýda anlatýlan þekilde, uygun assembly kodu vasýtasý ile bir araya getiriniz."
+
+"7 segment gösterge common cathode olacak þekilde seçilecek ve herhangi bir decoder kullanýlmayacak."
+
+Yukarýdaki ifadeler ödev metni içerisinde faklý yerlerde geçmektedir. Bununla ilgili açýklama yapabilir misiniz?
+
+-----------------------------------------
+
+Giriþ çýkýþ birimlerini 8255 ile süreceksiniz. 1 giriþ birimi var 4 pull-down butondan oluþuyor sadece. Bu 4 elemana sahip giriþ cihazý Port A'ya, ki onun adresi 068H olarak verilmiþ, baðlanacak. 4-bit butondan gelen veri (4 bacak; kablo) sýrasýyla PA0 PA1 PA2 PA3 'e baðlanacak. 4-bitlik veri kontrol edilip iþlenirken en düþük anlamlý bit PA0, en yüksek anlamlý bit ise PA3 pinlerinden okunacak.
+
+Alýnan veri istenildiði þekilde iþlendikten sonra (assembly tarafýnda istenen algoritma) , 7-segment display'e basýlacak. Bu da Port A'ya göre ardýþýk çift adreste yani 06AH'da bulunan Port B'ye baðlanacak. Bu noktada isteriler kýsmýnda yazýlan bilgi; yani common cathode gösterge seçmeniz bizim için kritik. 1. ödevde olduðu gibi 7-segmentin veri alan 8 bitini siz süreceksiniz. Decoder de kullanýn diyebilirdik ama onu kullanmadan direkt 8255'e PB0...PB8 olarak 7-segmenti baðlayýnýz.
+
+Tasarým dosyasýnda zaten kullanýlacak tüm elemanlarý (1-2 lojik kapý hariç) verdik. Bu aþamada önce iþlemciden gelen ve latch'i süren baðlantýlarý, sonra da adresleme için konulan decoder i kurun. Decoder çýkýþý 8255'i CS üzerinden kontrol ediyordu. I/O cihazlarýný (butonlar ve 7-segment) baðladýktan sonra kodlamaya geçin.
