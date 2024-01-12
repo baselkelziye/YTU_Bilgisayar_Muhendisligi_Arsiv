@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<PROJECT IID="5" BUILDPATH="K:/PRODEV/IMAGE/TEMP/91574a579f3b43cd8417d533c732513a/8086" VERSION="805" NAME="8086" CONFIGURATION="Debug">
+ <FILES ATTACH="1">
+  <FILE ATTACH="1" GROUP="Source Files" NAME="8086/main.c"/>
+  <FILE ATTACH="1" GROUP="Source Files" NAME="8086/rtl.asm"/>
+  <FILE ATTACH="1" GROUP="Header Files" NAME="8086/7seg.h"/>
+  <FILE ATTACH="1" GROUP="Source Files" NAME="8086/board.c"/>
+  <FILE ATTACH="1" GROUP="Header Files" NAME="8086/board.h"/>
+  <FILE ATTACH="1" GROUP="Source Files" NAME="8086/calc.c"/>
+  <FILE ATTACH="1" GROUP="Header Files" NAME="8086/calc.h"/>
+  <FILE ATTACH="1" GROUP="Library Files" NAME="8086/math.lib"/>
+  <FILE ATTACH="1" GROUP="Firmware Files" NAME="8086/Debug/Debug.exe" FIRMWARE="1"/>
+ </FILES>
+ <CONFIGURATION CRC="bb35216b6cd446605a7f09a7e3935590" TARGET="Debug" COMPILER="Digital Mars C" NAME="Debug">
+  <CONTROLLER FAMILY="8086" TYPE="8086"/>
+  <FILE TOOL="LD" NAME="8086/Debug/Debug.exe">
+   <FILE TOOL="CC" NAME="8086/Debug/main.obj">
+    <FILE NAME="8086/main.c"/>
+   </FILE>
+   <FILE TOOL="ASM" NAME="8086/Debug/rtl.obj">
+    <FILE NAME="8086/rtl.asm"/>
+   </FILE>
+   <FILE TOOL="CC" NAME="8086/Debug/board.obj">
+    <FILE NAME="8086/board.c"/>
+   </FILE>
+   <FILE TOOL="CC" NAME="8086/Debug/calc.obj">
+    <FILE NAME="8086/calc.c"/>
+   </FILE>
+   <FILE NAME="8086/math.lib"/>
+  </FILE>
+  <FILE NAME="8086/7seg.h"/>
+  <FILE NAME="8086/board.h"/>
+  <FILE NAME="8086/calc.h"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="/CO"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="/NODEF:" VALUE="SDS"/>
+  <OPTION TOOL="LD" NAME="" VALUE="/NOD"/>
+  <OPTION TOOL="LD" NAME="" VALUE="/DEB"/>
+  <OPTION TOOL="LD" NAME="" VALUE="/DEBUGB"/>
+  <OPTION TOOL="LD" NAME="" VALUE="/STACK:1024"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-ms"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-0"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-c"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/c"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/Zm"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/Zi"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/Zd"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/Zf"/>
+ </CONFIGURATION>
+ <CONFIGURATION CRC="856c73b170762c381e109b5afb360dab" TARGET="Release" COMPILER="Digital Mars C" NAME="Release">
+  <CONTROLLER FAMILY="8086" TYPE="8086"/>
+  <FILE TOOL="LD">
+   <FILE TOOL="CC">
+    <FILE NAME="8086/main.c"/>
+   </FILE>
+   <FILE TOOL="ASM">
+    <FILE NAME="8086/rtl.asm"/>
+   </FILE>
+   <FILE TOOL="CC">
+    <FILE NAME="8086/board.c"/>
+   </FILE>
+   <FILE TOOL="CC">
+    <FILE NAME="8086/calc.c"/>
+   </FILE>
+   <FILE NAME="8086/math.lib"/>
+  </FILE>
+  <FILE NAME="8086/7seg.h"/>
+  <FILE NAME="8086/board.h"/>
+  <FILE NAME="8086/calc.h"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="/CO"/>
+  <OPTION DEFAULT="1" TOOL="LD" NAME="/NODEF:" VALUE="SDS"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-g"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-ms"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-0"/>
+  <OPTION DEFAULT="1" TOOL="CC" NAME="-c"/>
+  <OPTION DEFAULT="1" TOOL="ASM" NAME="/c"/>
+ </CONFIGURATION>
+</PROJECT>
