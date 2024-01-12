@@ -300,7 +300,7 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
         f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(repo_kullanimi_bilgileri[KAVRAMLAR], key=lambda x: x[KAVRAM].lower()):
-            f.write(f"- 💡 {kavram[KAVRAM]}\n")  # Ampul emojisi, fikir veya kavramı temsil eder
+            f.write(f"- 💡 **{kavram[KAVRAM]}**\n")  # Ampul emojisi, fikir veya kavramı temsil eder
             for aciklama in kavram[ACIKLAMALAR]:
                 f.write(f"  - 📘 {aciklama}\n")  # Kitap emojisi, açıklamalar için
 
