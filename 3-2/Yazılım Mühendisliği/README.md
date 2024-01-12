@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Sistem analizi gibi bir ders. Ezber.
+  - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆

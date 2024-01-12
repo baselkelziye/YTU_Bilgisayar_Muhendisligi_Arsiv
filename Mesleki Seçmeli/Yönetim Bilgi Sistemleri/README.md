@@ -6,7 +6,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Sistem analizine benzer.
+  - 👤 **_Traktör Reis_**: Sistem analizine benzer.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆

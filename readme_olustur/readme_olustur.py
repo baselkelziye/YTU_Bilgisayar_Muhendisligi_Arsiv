@@ -145,7 +145,7 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             if OGRENCI_GORUSLERI in hoca and isinstance(hoca[OGRENCI_GORUSLERI], list) and len(hoca[OGRENCI_GORUSLERI]) > 0:
                 for gorus in hoca[OGRENCI_GORUSLERI]:
-                    f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
+                    f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
             f.write(f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
             f.write("- 📚 **Verdiği Dersler:**\n")
             if DERSLER in hoca and isinstance(hoca[DERSLER], list) and len(hoca[DERSLER]) > 0:
@@ -232,7 +232,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders[OGRENCI_GORUSLERI]:
-                        f.write(f"    - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
+                        f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
                     f.write(f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n")
 
                 f.write("  - ⭐ **Yıldız Sayıları:**\n")
@@ -394,7 +394,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu = Fal
         if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             for gorus in ders[OGRENCI_GORUSLERI]:
-                f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")
+                f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
         f.write("- ⭐ **Yıldız Sayıları:**\n")
         if KOLAYLIK_PUANI in ders:
             f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders[KOLAYLIK_PUANI])}\n")
@@ -504,7 +504,7 @@ def ders_bilgilerini_readme_ile_birlestir(dersler, donemler, guncel_olmayan_ders
                     if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
                         f.write(f"- 💬 **Öğrenci Görüşleri:**\n")  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
                         for gorus in ders[OGRENCI_GORUSLERI]:
-                            f.write(f"  - 👤 {gorus[KISI]}: {gorus[YORUM]}\n")  # Kişi emoji, öğrenciyi temsil eder
+                            f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")  # Kişi emoji, öğrenciyi temsil eder
                     if KOLAYLIK_PUANI in ders:
                         f.write(f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders[KOLAYLIK_PUANI])}\n")
                         f.write(f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders[GEREKLILIK_PUANI])}\n\n")

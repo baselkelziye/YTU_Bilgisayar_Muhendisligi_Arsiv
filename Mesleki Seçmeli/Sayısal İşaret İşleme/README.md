@@ -6,7 +6,7 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+  - 👤 **_Traktör Reis_**: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆

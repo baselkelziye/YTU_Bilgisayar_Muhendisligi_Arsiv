@@ -1,10 +1,11 @@
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from degiskenler import *
-from PyQt5.QtWidgets import QLabel, QMessageBox, QPushButton, QDesktopWidget, QHBoxLayout, QDialog, QVBoxLayout, QTextEdit, QInputDialog
+from PyQt5.QtWidgets import QLabel, QLineEdit, QMessageBox, QPushButton, QDesktopWidget, QHBoxLayout, QDialog, QVBoxLayout, QTextEdit, QInputDialog
 from metin_islemleri import kisaltMetin
 import json
+from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QIcon
-from close_event import closeEventHandler
+import re
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
     def __init__(self):
         super().__init__()
@@ -14,7 +15,8 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         aciklama = self.data.get(ACIKLAMA, VARSAYILAN_GIRIS_ACIKLAMA)
         self.baslikBtn.setText(kisaltMetin(baslik))
         self.baslikBtn.setToolTip(baslik)
-        self.aciklama_label = QLabel('Açıklama:', self)
+        self.aciklama_label = QLabel('Açıklama', self)
+        self.aciklama_label.setAlignment(Qt.AlignCenter)
         self.mainLayout.insertWidget(3, self.aciklama_label)
         self.aciklama_duzenle_btn = QPushButton(kisaltMetin(aciklama), self)
         self.aciklama_duzenle_btn.setStyleSheet(ACIKLAMA_BUTON_STILI)
@@ -137,6 +139,20 @@ class IcindekilerDuzenleWindow(QDialog):
         self.idx = idx
         self.setModal(True)
         self.data = data
+        if self.idx is not None and self.data:
+            metin = self.data[ICINDEKILER][self.idx]
+        else:
+            metin = ''
+        desen = r"\[(.*?)\]\((.*?)\)"
+        eslesme = re.search(desen, metin)
+        self.capa = None
+        self.baslik = None
+        # eşleşme var mı kontrolü
+        if eslesme:
+            self.baslik = eslesme.group(1)
+            # eşleşme iki tane varsa ikincisi çapa oluyor büyüktür 2 kotnrolü
+            if eslesme.lastindex > 1:
+                self.capa = eslesme.group(2)
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
@@ -145,11 +161,26 @@ class IcindekilerDuzenleWindow(QDialog):
         self.setWindowTitle('İçindekileri Düzenle' if self.idx is not None else 'İçindekiler Ekle')
         self.resize(400, 300)
         self.layout = QVBoxLayout(self)
-
-        self.input = QTextEdit(self)
-        if self.idx is not None and self.data:
-            self.input.setText(self.data[ICINDEKILER][self.idx])
-        self.layout.addWidget(self.input)
+        # başlık için label bileşeni
+        self.baslik_label = QLabel('İçerik Başlığı', self)
+        self.baslik_label.setAlignment(Qt.AlignCenter)
+        self.baslik_label.setToolTip('İçerik başlığı giriniz. (Örneği Hocalar)')
+        self.layout.addWidget(self.baslik_label)
+        # başlık için line edit bileşeni 
+        self.baslik_input = QLineEdit(self)
+        if self.baslik is not None:
+            self.baslik_input.setText(self.baslik)
+        self.layout.addWidget(self.baslik_input)
+        # başlığa ait çapa için label bileşeni
+        self.capa_label = QLabel('İçerik Çapası', self)
+        self.capa_label.setAlignment(Qt.AlignCenter)
+        self.capa_label.setToolTip('İçerik çapası giriniz. (Örneği hocalar) Çapa, içerik başlığına tıklanınca sayfanın o kısmına gitmek için kullanılır.')
+        self.layout.addWidget(self.capa_label)
+        # başlığa ait çapa için line edit bileşeni
+        self.capa_input = QLineEdit(self)
+        if self.capa is not None:
+            self.capa_input.setText(self.capa)
+        self.layout.addWidget(self.capa_input)
 
         buttonLayout = QHBoxLayout()
         self.kaydetBtn = QPushButton('Değişiklikleri Kaydet' if self.idx is not None else 'Ekle', self)
@@ -172,11 +203,15 @@ class IcindekilerDuzenleWindow(QDialog):
         self.move(qr.topLeft())
 
     def kaydet(self):
-        yeni_icindekiler = self.input.toPlainText().strip()
-        if not yeni_icindekiler:
-            QMessageBox.warning(self, 'Hata', 'İçindekiler boş olamaz!')
+        baslik = self.baslik_input.text().strip()
+        if not baslik:
+            QMessageBox.warning(self, 'Hata', 'Başlık boş olamaz!')
             return
-
+        capa = self.capa_input.text().strip()
+        if not capa:
+            QMessageBox.warning(self, 'Hata', 'Çapa boş olamaz!')
+            return
+        yeni_icindekiler = f"[{baslik}]({capa})"
         if self.idx is None:
             self.data[ICINDEKILER].append(yeni_icindekiler)
         else:
