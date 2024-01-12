@@ -31,8 +31,8 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Seçmeli 4
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
-  - 👤 Selim Bey: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
+  - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
+  - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 

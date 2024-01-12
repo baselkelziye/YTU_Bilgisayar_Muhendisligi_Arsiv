@@ -121,14 +121,16 @@ class DonemDuzenlemeWindow(QDialog):
         self.mainLayout = QVBoxLayout()
         # Dönem adı
         donemAdiLayout = QHBoxLayout()
-        self.donemAdiLabel = QLabel('Dönem Adı:', self)
+        self.donemAdiLabel = QLabel('Dönem Adı', self)
+        self.donemAdiLabel.setAlignment(Qt.AlignCenter)
         self.donemAdiLineEdit = QLineEdit(self)
         donemAdiLayout.addWidget(self.donemAdiLabel)
         donemAdiLayout.addWidget(self.donemAdiLineEdit)
         self.mainLayout.addLayout(donemAdiLayout)
         # Yıl seçimi
         yilLayout = QHBoxLayout()
-        self.yilLabel = QLabel('Yıl:', self)
+        self.yilLabel = QLabel('Yıl', self)
+        self.yilLabel.setAlignment(Qt.AlignCenter)
         self.yilComboBox = QComboBox(self)
         self.yilComboBox.addItems(DONEM_YILLARI)  # 0'dan 4'e yıllar
         yilLayout.addWidget(self.yilLabel)
@@ -137,7 +139,8 @@ class DonemDuzenlemeWindow(QDialog):
 
         # Dönem seçimi
         donemLayout = QHBoxLayout()
-        self.donemLabel = QLabel('Dönem:', self)
+        self.donemLabel = QLabel('Dönem', self)
+        self.donemLabel.setAlignment(Qt.AlignCenter)
         self.donemComboBox = QComboBox(self)
         self.donemComboBox.addItems(DONEMLER_DIZISI)  # Dönemler
         donemLayout.addWidget(self.donemLabel)

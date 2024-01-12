@@ -49,6 +49,12 @@ def update_repository():
     try:
         repo_yolu = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
         os.chdir(repo_yolu)
+        stream = os.popen('git status')
+        output = stream.read()
+        if "nothing to commit, working tree clean" not in output:
+            print("Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.")
+            time.sleep(10)
+            exit(1)
         if not execute_command("git fetch"):
             print("Fetch sırasında conflict oluştu, script durduruluyor.")
             return 
