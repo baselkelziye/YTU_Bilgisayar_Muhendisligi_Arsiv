@@ -52,7 +52,7 @@ def update_repository():
         stream = os.popen('git status')
         output = stream.read()
         if "nothing to commit, working tree clean" not in output:
-            print("Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.")
+            print("Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın. Script durduruluyor.")
             time.sleep(10)
             exit(1)
         if not execute_command("git fetch"):

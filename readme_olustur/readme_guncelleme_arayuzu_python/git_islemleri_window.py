@@ -1,7 +1,7 @@
 import sys
 import os
 import subprocess
-from PyQt5.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox
+from PyQt5.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox, QInputDialog, QLineEdit
 from degiskenler import *
 from progress_dialog import CustomProgressDialog
 from threadler import CMDScriptRunnerThread
@@ -91,8 +91,15 @@ class GitIslemleriWindow(QDialog):
         self.run_script(README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH, baslik = "README.md Güncelleniyor...")
 
     def push_changes(self):
+        commit_mesaji, ok_pressed = QInputDialog.getText(self, "Commit Mesajı", "Lütfen commit mesajını giriniz:", QLineEdit.Normal, "")
+        if not ok_pressed:
+            QMessageBox.information(self, 'İptal', 'İşlem iptal edildi.')
+            return
+        if not commit_mesaji:
+            QMessageBox.critical(self, 'Hata', 'Lütfen commit mesajını giriniz.')
+            return
         bat_dosyasi = DEGISIKLIKLERI_GITHUBA_YOLLA_BAT if self.is_windows else DEGISIKLIKLERI_GITHUBA_YOLLA_SH
-        bat_scripti = bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU
+        bat_scripti = bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU + " \"" + commit_mesaji + "\""
         self.run_script(bat_scripti, baslik = "Değişiklikler Github'a Pushlanıyor...")
 
     def update_interface(self):
