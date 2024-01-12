@@ -1,0 +1,7 @@
+Proje dosyasında ki bağlantıları eksiksiz yapınız, aksi halde kodunuz çalışmayacakltır.
+Dikkat etmeniz gerekenler:
+
+Adres çözümleme
+Adres ve Data Buslarının bağlanması
+ChipSelect, ChipEnable ve Adres Seçim Uçları
+7seg ve Tuş devresinin bağlantıları
