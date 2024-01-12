@@ -52,23 +52,23 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 ### 🔍 Kavramlar:
-- 💡 Ara Proje
+- 💡 **Ara Proje**
   - 📘 Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.
   - 📘 Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
   - 📘 Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.
   - 📘 Ara Proje ve Bitirme Projesi 3 parçadadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.
   - 📘 Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir.
-- 💡 Bitirme Projesi
+- 💡 **Bitirme Projesi**
   - 📘 Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
-- 💡 Lab
+- 💡 **Lab**
   - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
-- 💡 Staj
+- 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
   - 📘 Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.
   - 📘 Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor.
-- 💡 Vize
+- 💡 **Vize**
   - 📘 İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
   - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
   - 📘 İkinci Vize her derste olmaz. 2. Vizesi olmayan dersin 2. Vize haftasında konusu (hoca aksini belirmedikçe) işlenir.
