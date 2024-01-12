@@ -36,7 +36,8 @@ class DersEkleGuncelleWindow(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Bölüm adı label
-        self.bolumAdiLabel = QLabel(f'Bölüm Adı: ')
+        self.bolumAdiLabel = QLabel(f'Bölüm Adı')
+        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_DERS_BOLUM_ADI)
         aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_DERS_BOLUM_ACIKLAMASI)
@@ -47,7 +48,8 @@ class DersEkleGuncelleWindow(QDialog):
         self.bolumAdiBtn.setToolTip(bolum_adi)
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
-        self.bolumAciklamasiLabel = QLabel(f'Bölüm Açıklaması: ')
+        self.bolumAciklamasiLabel = QLabel(f'Bölüm Açıklaması')
+        self.bolumAciklamasiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
         self.bolumAciklamasiBtn = QPushButton(f"{kisaltMetin(aciklama)}", self)
@@ -63,6 +65,7 @@ class DersEkleGuncelleWindow(QDialog):
 
         # Ders sayısını gösteren etiket
         self.dersSayisiLabel = QLabel('Toplam 0 ders')
+        self.dersSayisiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.dersSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -291,6 +294,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
                         for i, oneri in enumerate(eleman[ONERILER]):
                             satirLayout = QHBoxLayout()
                             label = QLabel(f"Öneri Sahibi: {eleman[ONERI_SAHIBI]}", self)
+                            label.setAlignment(Qt.AlignCenter)
                             satirLayout.addWidget(label)
 
                             # Bilgi (mesaj) butonu
@@ -441,19 +445,19 @@ class YeniElemanEklemeDialog(QDialog):
         self.setMinimumSize(400, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Öneri sahibi ve öneri için etiket ve metin alanı
         if self.tur == DERSE_DAIR_ONERILER:
-            self.label = QLabel('Öneri Sahibi:', self)
+            self.label = QLabel('Öneri Sahibi', self)
+            self.label.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(self.label)
             self.sahibiEdit = QLineEdit(self)
             self.setWindowTitle('Öneri Ekle' if self.oneri_index is None else 'Öneri Güncelle')
             if self.mevcutEleman:
                 self.sahibiEdit.setText(self.mevcutEleman[ONERI_SAHIBI])
             self.layout.addWidget(self.sahibiEdit)
-            self.label = QLabel('Öneri:', self)
+            self.label = QLabel('Öneri', self)
         else:
-            self.label = QLabel('Kaynak:', self)
+            self.label = QLabel('Kaynak', self)
             self.setWindowTitle('Kaynak Ekle' if self.oneri_index is None else 'Kaynak Güncelle')
-
-
+        self.label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.label)
         self.metinEdit = QTextEdit(self)
         if self.mevcutEleman and self.tur == DERSE_DAIR_ONERILER:
@@ -558,12 +562,16 @@ class DersDuzenlemeWindow(QDialog):
         self.layout = QVBoxLayout(self)
         self.setMinimumSize(400, 200)  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Ders adı için alan
-        self.layout.addWidget(QLabel('Ders Adı:'))
+        ders_adi_label = QLabel('Ders Adı', self)
+        ders_adi_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(ders_adi_label)
         self.adInput = QLineEdit(self.ders.get(AD,"") if self.ders else '')
         self.layout.addWidget(self.adInput)
 
         # Ders yılı için alan
-        self.layout.addWidget(QLabel('Yıl:'))
+        yil_label = QLabel('Yıl', self)
+        yil_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(yil_label)
         self.yilInput = QComboBox(self)
         self.yilInput.addItems(['0','1', '2', '3', '4'])
         if self.ders:
@@ -571,13 +579,17 @@ class DersDuzenlemeWindow(QDialog):
         self.layout.addWidget(self.yilInput)
 
         # Ders dönemi için alan
-        self.layout.addWidget(QLabel('Dönem:'))
+        donem_label = QLabel('Dönem', self)
+        donem_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(donem_label)
         self.donemInput = QComboBox(self)
         self.donemInput.addItems(DONEMLER_DIZISI_YOKLA_BERABER)
         if self.ders:
             self.donemInput.setCurrentText(self.ders.get(DONEM,YOK))
         self.layout.addWidget(self.donemInput)
-        self.layout.addWidget(QLabel('Ders Güncel Mi:'))
+        ders_guncel_mi_label = QLabel('Ders Güncel Mi', self)
+        ders_guncel_mi_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(ders_guncel_mi_label)
         self.guncelMi = QComboBox(self)
         self.guncelMi.addItems(['False','True'])
         if self.ders:
@@ -585,13 +597,17 @@ class DersDuzenlemeWindow(QDialog):
         self.layout.addWidget(self.guncelMi)
 
         # Ders tipi için alan
-        self.layout.addWidget(QLabel('Tip:'))
+        tip_label = QLabel('Tip', self)
+        tip_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(tip_label)
         self.tipInput = QComboBox(self)
         self.tipInput.addItems(DERS_TIPLERI)
         if self.ders:
             self.tipInput.setCurrentText(self.ders.get(TIP, DERS_TIPLERI[0]))
         self.layout.addWidget(self.tipInput)
-        self.layout.addWidget(QLabel('Dersi Veren Hocalar'))
+        dersi_veren_hocalar_label = QLabel('Dersi Veren Hocalar', self)
+        dersi_veren_hocalar_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(dersi_veren_hocalar_label)
         # Dersi veren hocalar için ComboBox'lar
         # Mevcut hocaları yükle
         try:

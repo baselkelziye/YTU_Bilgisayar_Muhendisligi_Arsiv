@@ -6,8 +6,8 @@
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
-  - 👤 Tehlikeli Pinokyo : Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
+  - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
+  - 👤 **_Tehlikeli Pinokyo _**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★

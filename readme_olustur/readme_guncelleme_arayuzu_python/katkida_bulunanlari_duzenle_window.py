@@ -48,7 +48,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Bölüm adı label
-        self.bolumAdiLabel = QLabel('Bölüm Adı: ')
+        self.bolumAdiLabel = QLabel('Bölüm Adı')
+        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı düzenleme butonu
         bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI)
@@ -59,7 +60,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.bolumAdiDuzenleBtn.clicked.connect(self.bolumAdiDuzenle)
         self.mainLayout.addWidget(self.bolumAdiDuzenleBtn)
         # Bölüm açıklaması label
-        self.bolumAciklamaLabel = QLabel('Bölüm Açıklaması: ')
+        self.bolumAciklamaLabel = QLabel('Bölüm Açıklaması')
+        self.bolumAciklamaLabel.setAlignment(Qt.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamaLabel)
         # Bölüm açıklaması düzenleme butonu
         self.bolumAciklamaDuzenleBtn = QPushButton(kisaltMetin(aciklama), self)
@@ -182,6 +184,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         try:
             katkidaBulunanSayisi = len(self.data[KATKIDA_BULUNANLAR])  # Toplam katkıda bulunan sayısı
             self.katkidaBulunanSayisiLabel = QLabel(f'Toplam {katkidaBulunanSayisi} katkıda bulunan var.')  # Sayıyı gösteren etiket
+            self.katkidaBulunanSayisiLabel.setAlignment(Qt.AlignCenter)
             self.layout.addWidget(self.katkidaBulunanSayisiLabel)
 
             for kisi in self.data[KATKIDA_BULUNANLAR]:
@@ -230,9 +233,11 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.resize(500, 200)
 
         # Ad ve GitHub Linki için giriş alanları
-        self.ad_label = QLabel('Ad:')
+        self.ad_label = QLabel('Ad')
+        self.ad_label.setAlignment(Qt.AlignCenter)
         self.ad_input = QLineEdit(self.kisi[AD])
-        self.github_label = QLabel('GitHub Adı:')
+        self.github_label = QLabel('GitHub Adı')
+        self.github_label.setAlignment(Qt.AlignCenter)
         # Örnek bir GitHub linki
         github_link = self.kisi[GITHUB_LINK]
 
