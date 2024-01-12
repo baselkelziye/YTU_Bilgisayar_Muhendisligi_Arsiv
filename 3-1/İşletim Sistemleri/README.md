@@ -21,7 +21,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-- Vize soruları bazen buradan birebir alınıyor: https://www.mcqscenter.com/computer-science/operating-system
+- [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) 
 - Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
