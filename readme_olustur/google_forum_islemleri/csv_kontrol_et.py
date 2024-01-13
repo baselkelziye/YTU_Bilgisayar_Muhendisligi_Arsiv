@@ -1,4 +1,6 @@
 import pandas as pd
+
+
 def csv_kontrol_et(df, kontrol_edilecek_elemanlar):
     is_valid = True
     # DataFrame sütun başlıklarını al
