@@ -98,6 +98,7 @@ VARSAYILAN_KAVRAMLAR_BOLUM_ADI = "Kavramlar"
 VARSAYILAN_ACIKLAMALAR_BOLUM_ADI = "Açıklamalar"
 
 # DOSYA ADLARI
+KARA_LISTE_TXT = "kara_liste.txt"
 STIL_QSS = "stil.qss"
 README_MD = "README.md"
 BIR_UST_DIZIN = ".."
@@ -314,3 +315,17 @@ ANAHTAR_VE_LINKLER = {
     ).lstrip("\\/"),
     CIKMISLAR_ANAHTARI: CIKMISLAR_LINKI,
 }
+
+
+# KARA LİSTE OKUMA
+KARA_LISTE = []
+try:
+    with open(
+        os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI, KARA_LISTE_TXT),
+        "r",
+        encoding="utf-8",
+    ) as kara_liste_dosyasi:
+        for line in kara_liste_dosyasi:
+            KARA_LISTE.append(line.strip().lower())
+except FileNotFoundError:
+    KARA_LISTE = []
