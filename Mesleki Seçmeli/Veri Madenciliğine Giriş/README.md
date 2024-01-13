@@ -2,8 +2,6 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 0
-- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
