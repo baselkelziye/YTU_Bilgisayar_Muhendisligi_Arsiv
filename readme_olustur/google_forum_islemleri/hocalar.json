@@ -33,7 +33,8 @@
             "kolaylik_puani": 77,
             "ogretme_puani": 84,
             "eglence_puani": 85,
-            "oy_sayisi": 19
+            "oy_sayisi": 19,
+            "hoca_aktif_gorevde_mi": true
         },
         {
             "ad": "Prof. Dr. Oya Kalıpsız",
@@ -116,11 +117,11 @@
                     "yorum": "iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim."
                 }
             ],
-            "anlatim_puani": 65,
-            "kolaylik_puani": 52,
-            "ogretme_puani": 62,
-            "eglence_puani": 51,
-            "oy_sayisi": 12
+            "anlatim_puani": 60,
+            "kolaylik_puani": 49,
+            "ogretme_puani": 58,
+            "eglence_puani": 48,
+            "oy_sayisi": 13
         },
         {
             "ad": "Prof. Dr. Sırma Yavuz",
@@ -469,11 +470,11 @@
                     "yorum": "Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor."
                 }
             ],
-            "anlatim_puani": 71,
-            "kolaylik_puani": 64,
-            "ogretme_puani": 74,
-            "eglence_puani": 56,
-            "oy_sayisi": 15
+            "anlatim_puani": 68,
+            "kolaylik_puani": 60,
+            "ogretme_puani": 71,
+            "eglence_puani": 53,
+            "oy_sayisi": 16
         },
         {
             "ad": "Dr. Furkan Çakmak",
@@ -528,6 +529,30 @@
             "kolaylik_puani": 100,
             "ogretme_puani": 30,
             "eglence_puani": 30
+        },
+        {
+            "ad": "Dr. Ziya Cihan Tayşi",
+            "ofis": "",
+            "link": "https://avesis.yildiz.edu.tr/cihan",
+            "erkek_mi": true,
+            "dersler": [],
+            "hoca_aktif_gorevde_mi": true
+        },
+        {
+            "ad": "Prof. Dr. Hasan Hüseyin Balık",
+            "ofis": "",
+            "link": "https://avesis.yildiz.edu.tr/balik",
+            "erkek_mi": true,
+            "dersler": [],
+            "hoca_aktif_gorevde_mi": false
+        },
+        {
+            "ad": "Prof. Dr. Nizamettin Aydın",
+            "ofis": "",
+            "link": "https://avesis.itu.edu.tr/naydin",
+            "erkek_mi": true,
+            "dersler": [],
+            "hoca_aktif_gorevde_mi": false
         }
     ],
     "bolum_adi": "Hocalar",
