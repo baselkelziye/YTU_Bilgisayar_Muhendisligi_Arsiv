@@ -179,12 +179,14 @@ class HocaEkleGuncelleWindow(QDialog):
             self.hocaSayisiLabel.setText(f'Toplam {hoca_sayisi} hoca')  # Hoca sayısını etikette güncelle
             def unvan_ve_isim_ayir(hoca):
                 # Ünvanları ve sıralama önceliklerini tanımla
-                unvanlar = {PROF_DR: 1, DOC_DR: 2,DR: 3, '': 4}
                 ad = hoca[AD]
-                for unvan in unvanlar:
+                for idx, unvan in enumerate(unvanlar):
                     if ad.startswith(unvan):
-                        return unvanlar[unvan], ad[len(unvan):].strip()  # Ünvanın önceliği ve adı döndür
-                return unvanlar[''], ad  # Eğer ünvan yoksa
+                        # Ünvanın indeksi (önceliği) ve adı döndür
+                        return idx, ad[len(unvan):].strip()
+
+                # Eğer ünvan yoksa, listenin uzunluğu ve adı döndür
+                return len(unvanlar), ad
 
             # Hocaları önce ünvanlarına, sonra adlarına göre sırala
             self.sorted_hocalar = sorted(self.data[HOCALAR], key=lambda hoca: unvan_ve_isim_ayir(hoca))
@@ -244,7 +246,6 @@ class HocaDuzenlemeWindow(QDialog):
         self.unvan_label.setAlignment(Qt.AlignCenter)
         self.layout.addWidget(self.unvan_label)
         self.unvanInput = QComboBox(self)
-        unvanlar = [PROF_DR, DOC_DR, DR]
         self.unvanInput.addItems(unvanlar)
         self.layout.addWidget(self.unvanInput)
         # Hoca adı için alan
@@ -389,7 +390,6 @@ class HocaDuzenlemeWindow(QDialog):
         except Exception as e:
             return []
     def ayiklaUnvan(self, ad):
-        unvanlar = [PROF_DR, DOC_DR, DR]
         for unvan in unvanlar:
             if ad.startswith(unvan):
                 return ad[len(unvan)+1:], unvan  # İsim ve ünvanı ayır

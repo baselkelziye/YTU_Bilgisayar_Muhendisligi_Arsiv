@@ -1,4 +1,4 @@
-from degiskenler import DOC_DR, DR, PROF_DR
+from degiskenler import *
 def hoca_kisaltma_olustur(isim):
     """
     Bir isimden kısaltma oluşturur ve unvanları (Doç. Dr., Prof. Dr., Dr. vb.) atar.
@@ -7,7 +7,7 @@ def hoca_kisaltma_olustur(isim):
     if not  isim:
         return None
     # Unvanları ve noktaları kaldır
-    for unvan in [PROF_DR, DOC_DR, DR, "Prof.", "Doç."]:
+    for unvan in unvanlar:
         isim = isim.replace(unvan, "")
     isim = isim.replace(".", "").strip()
     if "Elbir" in isim:

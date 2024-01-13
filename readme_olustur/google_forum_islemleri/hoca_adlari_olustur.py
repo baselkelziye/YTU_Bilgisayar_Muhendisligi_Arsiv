@@ -11,7 +11,7 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 
-from degiskenler import HOCALAR_JSON_PATH, HOCALAR, AD
+from degiskenler import *
 """
     Google forumlar için hoca adları csv dosyası oluşturur.
 """
@@ -26,22 +26,13 @@ def sirala_ve_ayir(hocalar_listesi):
     Hocaların adlarını, ünvanlarına göre önceliklendirilmiş bir sırayla sıralar.
     Önce 'Prof. Dr.', sonra 'Doç. Dr.', ardından 'Dr.' ve son olarak ünvanı olmayanları sıralar.
     """
-    # Unvanlara öncelik değerleri atayalım.
-    unvanlar = {
-        "Prof. Dr.": 1,
-        "Prof.": 1,
-        "Doç. Dr.": 2,
-        "Doç.": 2,
-        "Dr.": 3
-    }
-
     def unvan_önceligi(hoca_adi):
-        # Hocanın adındaki unvanı bul ve öncelik değerini döndür
-        for unvan, öncelik in unvanlar.items():
+        for idx, unvan in enumerate(unvanlar):
             if hoca_adi.startswith(unvan):
-                return öncelik
-        # Eğer hiçbir unvan eşleşmiyorsa, varsayılan olarak en düşük önceliği (en yüksek sayıyı) ver
-        return max(unvanlar.values()) + 1
+                # Listede bulunan ünvanın indeksini döndür (1 ekleyerek 1'den başlat)
+                return idx + 1
+        # Eğer hiçbir unvan eşleşmiyorsa, listenin uzunluğu + 1 değerini ver
+        return len(unvanlar) + 1
 
     # Hocaların adlarını önceliklere göre ve alfabetik sıraya göre sırala
     sirali_hocalar = sorted(hocalar_listesi, key=lambda hoca: (unvan_önceligi(hoca), hoca))
