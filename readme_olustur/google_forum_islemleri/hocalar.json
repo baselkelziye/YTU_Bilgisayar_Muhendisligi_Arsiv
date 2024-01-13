@@ -536,7 +536,12 @@
             "link": "https://avesis.yildiz.edu.tr/cihan",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 10,
+            "kolaylik_puani": 30,
+            "ogretme_puani": 10,
+            "eglence_puani": 10,
+            "oy_sayisi": 1
         },
         {
             "ad": "Prof. Dr. Hasan Hüseyin Balık",
@@ -544,7 +549,12 @@
             "link": "https://avesis.yildiz.edu.tr/balik",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": false
+            "hoca_aktif_gorevde_mi": false,
+            "anlatim_puani": 40,
+            "kolaylik_puani": 50,
+            "ogretme_puani": 40,
+            "eglence_puani": 60,
+            "oy_sayisi": 1
         },
         {
             "ad": "Prof. Dr. Nizamettin Aydın",
@@ -552,7 +562,12 @@
             "link": "https://avesis.itu.edu.tr/naydin",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": false
+            "hoca_aktif_gorevde_mi": false,
+            "anlatim_puani": 30,
+            "kolaylik_puani": 80,
+            "ogretme_puani": 30,
+            "eglence_puani": 30,
+            "oy_sayisi": 1
         }
     ],
     "bolum_adi": "Hocalar",
