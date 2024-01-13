@@ -2,8 +2,6 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 0
-- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
