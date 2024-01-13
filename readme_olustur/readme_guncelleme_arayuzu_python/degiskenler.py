@@ -71,6 +71,7 @@ HOCA_YORUMLAMA_CSV_ANAHTARI = "hoca_yorumlama_csv"
 ## HOCALAR
 VARSAYILAN_HOCA_BOLUM_ACIKLAMASI = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."  
 VARSAYILAN_HOCA_BOLUM_ADI = "Hocalar"
+VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI = "Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir."
 
 ## DERSLER
 VARSAYILAN_DERS_BOLUM_ADI = "Dersler" 
@@ -236,6 +237,7 @@ DERSI_GECMEK_NE_KADAR_KOLAY = "Dersi geçmek ne kadar kolay?"
 
 ## HOCALAR
 HOCA_SEC = "Hoca seç"
+HOCA_AKTIF_GOREVDE_MI = "hoca_aktif_gorevde_mi"
 ISMIN_NASIL_GOZUKSUN_HOCA = "İsmin nasıl gözüksün"
 HOCA_HAKKINDAKI_YORUMUN = 'Hoca hakkındaki yorumun'
 DERSI_NE_KADAR_GÜZEL_ANLATIR = 'Dersi ne kadar güzel anlatır?'
