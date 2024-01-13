@@ -15,7 +15,9 @@ echo Hoca icerikleri guncelleniyor...
 python3 hoca_icerikleri_guncelle.py
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Hoca icerikleri guncelleme script'i basarisiz oldu.
-    pause
+    IF "%~1" == "" (
+        pause
+    )
     cd "%ORIGINAL_DIR%"
     exit /b 1
 )
@@ -24,7 +26,9 @@ echo Ders icerikleri guncelleniyor...
 python3 ders_icerikleri_guncelle.py
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Ders icerikleri guncelleme script'i basarisiz oldu.
-    pause
+    IF "%~1" == "" (
+        pause
+    )
     cd "%ORIGINAL_DIR%"
     exit /b 1
 )
@@ -33,5 +37,7 @@ IF %ERRORLEVEL% NEQ 0 (
 cd "%ORIGINAL_DIR%"
 
 echo Islem tamamlandi.
-pause
+IF "%~1" == "" (
+        pause
+    )
 exit /b 0

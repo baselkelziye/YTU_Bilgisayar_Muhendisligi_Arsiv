@@ -7,7 +7,9 @@ echo "Readmeler guncelleniyor..."
 python3 readme_olustur.py
 if [ $? -ne 0 ]; then
     echo "Hata: Readme oluşturma script'i başarısız oldu."
+    if [ -z "$1" ]; then
     read -p "Devam etmek için enter'a basın..."
+fi
     exit 1
 fi
 
@@ -16,5 +18,7 @@ git config --global i18n.logOutputEncoding utf-8
 export LANG=en_US.UTF-8
 
 echo "Islem tamamlandi."
-read -p "Devam etmek için enter'a basın..."
+if [ -z "$1" ]; then
+    read -p "Devam etmek için enter'a basın..."
+fi
 exit 0

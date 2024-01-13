@@ -9,10 +9,14 @@ echo Readme icerikleri guncelleniyor...
 python3 readme_olustur.py
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Readme icerikleri guncelleme script'i basarisiz oldu.
-    pause
+    IF "%~1" == "" (
+        pause
+    )
     exit /b 1
 )
 
 echo Islem tamamlandi.
-pause
+IF "%~1" == "" (
+        pause
+    )
 exit /b 0
