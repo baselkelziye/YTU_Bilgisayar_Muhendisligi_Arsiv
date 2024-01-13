@@ -2,8 +2,6 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 0
-- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Selim Bey_**: Yazılımı test etmek lazım.
