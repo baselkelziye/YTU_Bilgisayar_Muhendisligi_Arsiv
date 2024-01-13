@@ -12,7 +12,7 @@ absolute_path = os.path.join(current_directory, relative_path)
 # Tam yolu sys.path listesine ekle
 sys.path.append(absolute_path)
 
-from degiskenler import DERSLER_JSON_PATH, DERSLER, AD
+from degiskenler import *
 # Türkçe karakterlerin doğru sıralanabilmesi için Türkçe locale ayarını kullanacağız.
 # Sistem locale ayarlarınızın bu dili desteklediğinden emin olun.
 locale.setlocale(locale.LC_ALL, 'tr_TR.utf8')
