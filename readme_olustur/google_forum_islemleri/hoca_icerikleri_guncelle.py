@@ -45,7 +45,8 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     for index, row in df.iterrows():
         hoca_adi = row[HOCA_SEC]
         kisi = row[ISMIN_NASIL_GOZUKSUN_HOCA]
-        yorum = row[HOCA_HAKKINDAKI_YORUMUN]
+        # Yorumu alma ve sansürleme işlemi
+        yorum = metin_sansurle(row.get(HOCA_HAKKINDAKI_YORUMUN, ""))
         # icerikKontrol = IcerikKontrol("hoca")
         if not pd.isna(yorum):  # and icerikKontrol.pozitif_mi(yorum):
             # yorum = icerikKontrol.metin_on_isleme(yorum)
