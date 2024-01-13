@@ -534,8 +534,9 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
 
         # Ders bilgileri
         f.write("## ℹ️ Ders Bilgileri\n\n")
-        f.write(f"- 📅 **Yıl:** {ders[YIL]}\n")
-        f.write(f"- 📆 **Dönem:** {ders[DONEM]}\n")
+        if ders.get(TIP, MESLEKI_SECMELI) != MESLEKI_SECMELI:
+            f.write(f"- 📅 **Yıl:** {ders[YIL]}\n")
+            f.write(f"- 📆 **Dönem:** {ders[DONEM]}\n")
         f.write(f"- 🏫 **Ders Tipi:** {ders[TIP]}\n")
         if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
