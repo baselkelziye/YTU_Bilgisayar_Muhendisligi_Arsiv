@@ -18,14 +18,36 @@ else
 fi
 
 # Mevcut dizinin bir Git reposu olup olmadığını kontrol eder.
-cd "$(dirname "$0")/$REPO_PATH"
+cd "$(dirname "$0")/$REPO_PATH" || { echo "Hata: Belirtilen yola gidilemedi."; read -p "Devam etmek için enter'a basın..."; exit 1; }
 git rev-parse --is-inside-work-tree > /dev/null 2>&1
 if [ $? -ne 0 ]; then
     echo "Bu dizin bir Git reposu değil."
+    read -p "Devam etmek için enter'a basın..."
     exit 1
 fi
+
 # Değişiklikleri ekler, commit yapar ve push yapar.
 git add --all
+if [ $? -ne 0 ]; then
+    echo "Hata: Dosyalar eklenemedi."
+    read -p "Devam etmek için enter'a basın..."
+    exit 1
+fi
+
 git commit -m "$COMMIT_MESSAGE"
+if [ $? -ne 0 ]; then
+    echo "Hata: Commit yapılamadı."
+    read -p "Devam etmek için enter'a basın..."
+    exit 1
+fi
+
 git push
+if [ $? -ne 0 ]; then
+    echo "Hata: Değişiklikler push edilemedi."
+    read -p "Devam etmek için enter'a basın..."
+    exit 1
+fi
+
+echo "Değişiklikler başarıyla senkronize edildi."
+read -p "Devam etmek için enter'a basın..."
 exit 0

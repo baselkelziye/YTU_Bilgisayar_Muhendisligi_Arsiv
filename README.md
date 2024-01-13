@@ -291,7 +291,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
-  - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider 
+  - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -350,7 +350,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay.
-  - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur 
+  - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -479,7 +479,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
   - 👤 **_Tehlikeli Pinokyo _**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
-  - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi  komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor. 
+  - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -525,7 +525,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette. 
+  - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -1189,7 +1189,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
   - 👤 **_astro_**: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
-  - 👤 **_Tehlikeli Pinokyo _**: Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :) 
+  - 👤 **_Tehlikeli Pinokyo _**: Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)
   - 👤 **_Madmax_**: Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -1295,7 +1295,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İyi anlatır. Hitabeti güzeldir. Bazı derslerde fazla zorlar.
-  - 👤 **_Ufouser_**: Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum 
+  - 👤 **_Ufouser_**: Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
@@ -1361,7 +1361,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
   - 👤 **_Nanadaime_**: Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et.
-  - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir 
+  - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
@@ -1420,7 +1420,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İşini sever. Sakindir.
   - 👤 **_astro_**: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
-  - 👤 **_Ufouser_**: Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda 
+  - 👤 **_Ufouser_**: Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)

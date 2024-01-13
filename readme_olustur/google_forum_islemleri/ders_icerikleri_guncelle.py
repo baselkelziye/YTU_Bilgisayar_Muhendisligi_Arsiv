@@ -42,7 +42,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     for index, row in df.iterrows():
         ders_adi = row[DERS_SEC]
         kisi = row[ISMIN_NASIL_GORUNSUN]
-        yorum = row[DERS_HAKKINDAKI_YORUMUN]
+        yorum = metin_sansurle(row.get(DERS_HAKKINDAKI_YORUMUN, ""))
         # icerikKontrol = IcerikKontrol("ders")
         if not pd.isna(yorum):  # and icerikKontrol.pozitif_mi(yorum):
             # yorum = icerikKontrol.metin_on_isleme(yorum)
