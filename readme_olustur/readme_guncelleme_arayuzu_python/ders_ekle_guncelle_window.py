@@ -9,11 +9,12 @@ from degiskenler import *
 from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
 # Hoca adlarını ve kısaltmalarını hazırla
-unvanlar = {PROF_DR: 1, DOC_DR: 2, DR: 3}
 def hoca_sirala(hoca):
     ad = hoca[0].strip()
-    unvan = next((u for u in unvanlar if ad.startswith(u)), None)
-    return (unvanlar.get(unvan, 4), ad)
+    # Ünvanı kontrol et ve bulunursa indeksini al, bulunamazsa None döndür
+    unvan_indeksi = next((i for i, u in enumerate(unvanlar) if ad.startswith(u)), None)
+    # Eğer ünvan bulunamazsa, listenin uzunluğunu + 1 kullan
+    return (unvan_indeksi if unvan_indeksi is not None else len(unvanlar), ad)
 class DersEkleGuncelleWindow(QDialog):
     def __init__(self):
         super().__init__()
