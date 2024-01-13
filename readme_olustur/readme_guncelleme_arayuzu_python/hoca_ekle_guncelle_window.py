@@ -136,10 +136,11 @@ class HocaEkleGuncelleWindow(QDialog):
             self.clearFilters(is_clicked=False)
             return
         size = 0
-        for idx, hoca in enumerate(self.sorted_hocalar):
-            hoca_ad = hoca[AD]
-            widget = self.hocalarLayout.itemAt(idx).widget()
+        layout_count = self.hocalarLayout.count()
+        for i in range(layout_count):
+            widget = self.hocalarLayout.itemAt(i).widget()
             if isinstance(widget, QPushButton):
+                hoca_ad = widget.text()
                 if query.lower() in hoca_ad.lower():
                     widget.show()
                     size += 1
@@ -271,7 +272,15 @@ class HocaDuzenlemeWindow(QDialog):
         self.layout.addWidget(self.link_label)
         self.linkInput = QLineEdit(self.hoca.get(LINK, "") if self.hoca else '')
         self.layout.addWidget(self.linkInput)
-
+        # Hoca aktif görevde mi için alan
+        self.aktif_mi_label = QLabel('Aktif görevde mi?')
+        self.aktif_mi_label.setAlignment(Qt.AlignCenter)
+        self.layout.addWidget(self.aktif_mi_label)
+        self.aktifGorevdeInput = QComboBox(self)
+        self.aktifGorevdeInput.addItems(['Evet', 'Hayır'])
+        if self.hoca:
+            self.aktifGorevdeInput.setCurrentIndex(0 if self.hoca.get(HOCA_AKTIF_GOREVDE_MI,True) else 1)
+        self.layout.addWidget(self.aktifGorevdeInput)
         # Hoca cinsiyet durumu için alan
         self.erkek_mi_label = QLabel('Erkek mi?')
         self.erkek_mi_label.setAlignment(Qt.AlignCenter)

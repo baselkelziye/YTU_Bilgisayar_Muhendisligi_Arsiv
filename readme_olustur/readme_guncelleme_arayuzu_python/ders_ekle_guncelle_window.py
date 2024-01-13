@@ -113,16 +113,21 @@ class DersEkleGuncelleWindow(QDialog):
                 self.searchDersler(text)
     def searchDersler(self, query):
         size = 0
-        for idx, ders in enumerate(self.sorted_dersler):
-            layout = self.derslerLayout.itemAt(idx)
+        layout_count = self.derslerLayout.count()
+        for i in range(layout_count):
+            layout = self.derslerLayout.itemAt(i)
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in ders[AD].lower()
+                ders_ad = layout.itemAt(0).widget().text()
+                match = query.lower() in ders_ad.lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
                         widget.setVisible(match)
                 if match:
                     size += 1
+        if size == len(self.sorted_dersler):
+            self.clearFilters(is_clicked=False)
+            return
         self.dersSayisiLabel.setText(f'{size} ders bulundu')
         if query:
             self.clearFiltersButton.show()
