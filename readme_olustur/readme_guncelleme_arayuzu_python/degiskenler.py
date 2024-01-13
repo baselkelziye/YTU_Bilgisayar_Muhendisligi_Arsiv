@@ -1,4 +1,5 @@
 import os, json
+
 # GENEL DEGISKENLER
 ## ORTAK DEGISKENLER
 DERSLER = "dersler"
@@ -69,15 +70,15 @@ HOCA_YORUMLAMA_CSV_ANAHTARI = "hoca_yorumlama_csv"
 
 # VARSAYILAN DEGISKENLER
 ## HOCALAR
-VARSAYILAN_HOCA_BOLUM_ACIKLAMASI = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."  
+VARSAYILAN_HOCA_BOLUM_ACIKLAMASI = "Bu bölüm, Yıldız Teknik Üniversitesi X Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  0-10 yıldız arasında yapılmıştır."
 VARSAYILAN_HOCA_BOLUM_ADI = "Hocalar"
 VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI = "Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir."
 
 ## DERSLER
-VARSAYILAN_DERS_BOLUM_ADI = "Dersler" 
-VARSAYILAN_DERS_BOLUM_ACIKLAMASI = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."           
+VARSAYILAN_DERS_BOLUM_ADI = "Dersler"
+VARSAYILAN_DERS_BOLUM_ACIKLAMASI = "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler."
 VARSAYILAN_GUNCEL_OLMAYAN_DERS_ACIKLAMASI = "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
-VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI =  "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."      
+VARSAYILAN_DERS_KLASORU_BULUNAMADI_MESAJI = "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç..."
 
 ## GIRIS SAYFASI
 VARSAYILAN_GIRIS_BASLIK = "Yıldız Teknik Üniversitesi X Mühendisliği Ders Notları"
@@ -102,11 +103,12 @@ README_MD = "README.md"
 BIR_UST_DIZIN = ".."
 GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
 JSON_DOSYALARI_DEPOSU_DOSYA_ADI = "json_depo_bilgileri.txt"
-JSON_DOSYALARI_DEPOSU_DOSYA_YOLU = os.path.join(BIR_UST_DIZIN, JSON_DOSYALARI_DEPOSU_DOSYA_ADI)
+JSON_DOSYALARI_DEPOSU_DOSYA_YOLU = os.path.join(
+    BIR_UST_DIZIN, JSON_DOSYALARI_DEPOSU_DOSYA_ADI
+)
 JSON_DOSYALARI_DEPOSU = None
 README_GUNCELLEME_PYTHON = "readme_guncelleme_arayuzu_python"
 try:
-   
     curr_dir = os.getcwd()
     curr_dir = os.path.basename(curr_dir)
     if GOOGLE_FORM_ISLEMLERI in curr_dir or README_GUNCELLEME_PYTHON in curr_dir:
@@ -116,13 +118,13 @@ try:
     if not os.path.exists(tmp_json_depo_dosyasi):
         with open(tmp_json_depo_dosyasi, "w", encoding="utf-8") as json_depo_dosyasi:
             json_depo_dosyasi.write(".")
-        
-
 
     with open(tmp_json_depo_dosyasi, "r", encoding="utf-8") as json_depo_dosyasi:
         for line in json_depo_dosyasi:
             if JSON_DOSYALARI_DEPOSU is not None:
-                JSON_DOSYALARI_DEPOSU = os.path.join(JSON_DOSYALARI_DEPOSU, line.strip())
+                JSON_DOSYALARI_DEPOSU = os.path.join(
+                    JSON_DOSYALARI_DEPOSU, line.strip()
+                )
             else:
                 JSON_DOSYALARI_DEPOSU = line.strip()
 except FileNotFoundError:
@@ -140,7 +142,9 @@ KONFIGURASYON_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, KONFIGURASYON_JSON
 KONFIGURASYON_JSON_PATH = os.path.join(BIR_UST_DIZIN, KONFIGURASYON_JSON_NAME)
 
 KATKIDA_BULUNANLAR_JSON_NAME = "katkida_bulunanlar.json"
-KATKIDA_BULUNANLAR_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, KATKIDA_BULUNANLAR_JSON_NAME)
+KATKIDA_BULUNANLAR_JSON_NAME = os.path.join(
+    JSON_DOSYALARI_DEPOSU, KATKIDA_BULUNANLAR_JSON_NAME
+)
 KATKIDA_BULUNANLAR_JSON_PATH = os.path.join(BIR_UST_DIZIN, KATKIDA_BULUNANLAR_JSON_NAME)
 
 REPO_KULLANIMI_JSON_NAME = "repo_kullanimi.json"
@@ -148,7 +152,9 @@ REPO_KULLANIMI_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, REPO_KULLANIMI_JS
 REPO_KULLANIMI_JSON_PATH = os.path.join(BIR_UST_DIZIN, REPO_KULLANIMI_JSON_NAME)
 
 YAZARIN_NOTLARI_JSON_NAME = "yazarin_notlari.json"
-YAZARIN_NOTLARI_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, YAZARIN_NOTLARI_JSON_NAME)
+YAZARIN_NOTLARI_JSON_NAME = os.path.join(
+    JSON_DOSYALARI_DEPOSU, YAZARIN_NOTLARI_JSON_NAME
+)
 YAZARIN_NOTLARI_JSON_PATH = os.path.join(BIR_UST_DIZIN, YAZARIN_NOTLARI_JSON_NAME)
 
 GIRIS_JSON_NAME = "giris.json"
@@ -168,7 +174,9 @@ try:
     with open(tmp_konf_path, "r", encoding="utf-8") as konf_dosyasi:
         tmp_konf = json.load(konf_dosyasi)
         VARSAYILAN_GITHUB_URL = tmp_konf[GITHUB_URL_ANAHTARI]
-        DOKUMANLAR_REPO_YOLU = os.path.join(JSON_DOSYALARI_DEPOSU, tmp_konf[DOKUMANLAR_REPO_YOLU_ANAHTARI])
+        DOKUMANLAR_REPO_YOLU = os.path.join(
+            JSON_DOSYALARI_DEPOSU, tmp_konf[DOKUMANLAR_REPO_YOLU_ANAHTARI]
+        )
         CIKMISLAR_LINKI = tmp_konf[CIKMISLAR_ANAHTARI]
         HOCA_OYLAMA_LINKI = tmp_konf[HOCA_OYLAMA_ANAHTARI]
         HOCA_YORULMALA_LINKI = tmp_konf[HOCA_YORUMLAMA_ANAHTARI]
@@ -182,7 +190,9 @@ try:
 except:
     print("Konfigurasyon dosyası bulunamadı. Varsayılan konfigurasyonlar kullanılacak.")
     DOKUMANLAR_REPO_YOLU = os.path.join(JSON_DOSYALARI_DEPOSU, BIR_UST_DIZIN)
-    CIKMISLAR_LINKI = "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
+    CIKMISLAR_LINKI = (
+        "https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh"
+    )
     HOCA_OYLAMA_LINKI = "https://forms.gle/s6ZMrQG4q578pEzm7"
     HOCA_YORULMALA_LINKI = "https://forms.gle/WbwDxHUz6ebJA7t36"
     DERS_OYLAMA_LINKI = "https://forms.gle/3njZjmhm215YCAxe6"
@@ -191,10 +201,12 @@ except:
     HOCA_YORULMALA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/1mexaMdOeB-hWLVP4MI_xmnKwGBuwoRDk6gY9zXDycyI/export?format=csv"
     DERS_OYLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDFicOFbJu9Fnc4Hl0mFuuaC0L4PiEmUFkkJrgocwWGWs1wB3TyN1zd4okW8svC6IT2HMIe64NQUUy/pub?output=csv"
     DERS_YORUMLAMA_LINKI_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvGyGLQxobIpaVdQItSpqEoiwJ0DIIHE9kVvCHhfKQ7yYR16c2tI_ix4Z9d2tA4aLt2c4fTLGxlL-s/pub?output=csv"
-    VARSAYILAN_GITHUB_URL = "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
+    VARSAYILAN_GITHUB_URL = (
+        "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
+    )
 
 
-ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU,README_MD)
+ANA_README_YOLU = os.path.join(DOKUMANLAR_REPO_YOLU, README_MD)
 # UNVAN KISALTMALARI
 PROF_DR = "Prof. Dr."
 DOC_DR = "Doç. Dr."
@@ -204,14 +216,13 @@ unvanlar = [PROF_DR, DOC_DR, DR]
 # STİLLER
 
 ## BUTON STİLLERİ
-EKLE_BUTONU_STILI = "background-color: #27AE60; color: white;"          # Yeşil
-SIL_BUTONU_STILI = "background-color: #C0392B; color: white;"          # Kırmızı
-TEMIZLE_BUTONU_STILI = "background-color: #F39C12; color: white;"      # Turuncu
-VEREN_EKLE_BUTONU_STILI = "background-color: #3498DB; color: white;"   # Açık Mavi
-GUNCELLE_BUTTON_STILI = "background-color: #2980B9; color: white;"     # Mavi
-BASLIK_BUTON_STILI = "background-color: #95A5A6; color: white;"        # Açık Gri
-ACIKLAMA_BUTON_STILI = "background-color: #2ECC71; color: white;"      # Açık Yeşil
-
+EKLE_BUTONU_STILI = "background-color: #27AE60; color: white;"  # Yeşil
+SIL_BUTONU_STILI = "background-color: #C0392B; color: white;"  # Kırmızı
+TEMIZLE_BUTONU_STILI = "background-color: #F39C12; color: white;"  # Turuncu
+VEREN_EKLE_BUTONU_STILI = "background-color: #3498DB; color: white;"  # Açık Mavi
+GUNCELLE_BUTTON_STILI = "background-color: #2980B9; color: white;"  # Mavi
+BASLIK_BUTON_STILI = "background-color: #95A5A6; color: white;"  # Açık Gri
+ACIKLAMA_BUTON_STILI = "background-color: #2ECC71; color: white;"  # Açık Yeşil
 
 
 # JSON ANAHTARLARI
@@ -239,11 +250,11 @@ DERSI_GECMEK_NE_KADAR_KOLAY = "Dersi geçmek ne kadar kolay?"
 HOCA_SEC = "Hoca seç"
 HOCA_AKTIF_GOREVDE_MI = "hoca_aktif_gorevde_mi"
 ISMIN_NASIL_GOZUKSUN_HOCA = "İsmin nasıl gözüksün"
-HOCA_HAKKINDAKI_YORUMUN = 'Hoca hakkındaki yorumun'
-DERSI_NE_KADAR_GÜZEL_ANLATIR = 'Dersi ne kadar güzel anlatır?'
-DERSINI_GECMEK_NE_KADAR_KOLAYDIR = 'Dersini geçmek ne kadar kolaydır?'
-DERSI_NE_KADAR_IYI__OGRETIR = 'Dersi ne kadar iyi öğretir?'
-DERSI_NE_KADAR_EGLENCELI_ANLATIR = 'Dersi ne kadar eğlenceli anlatır?'
+HOCA_HAKKINDAKI_YORUMUN = "Hoca hakkındaki yorumun"
+DERSI_NE_KADAR_GÜZEL_ANLATIR = "Dersi ne kadar güzel anlatır?"
+DERSINI_GECMEK_NE_KADAR_KOLAYDIR = "Dersini geçmek ne kadar kolaydır?"
+DERSI_NE_KADAR_IYI__OGRETIR = "Dersi ne kadar iyi öğretir?"
+DERSI_NE_KADAR_EGLENCELI_ANLATIR = "Dersi ne kadar eğlenceli anlatır?"
 
 # DOSYA ADLARI
 GOOGLE_FORM_GUNCELLE = "google_form_guncelle"
@@ -282,8 +293,8 @@ BAHAR = "Bahar"
 SECMELI_4 = "Seçmeli 4"
 SECMELI = "Seçmeli"
 ZORUNLU = "Zorunlu"
-DERS_TIPLERI = [ZORUNLU,SECMELI, SECMELI_4, MESLEKI_SECMELI]
-DONEM_YILLARI = ['1', '2', '3', '4']
+DERS_TIPLERI = [ZORUNLU, SECMELI, SECMELI_4, MESLEKI_SECMELI]
+DONEM_YILLARI = ["1", "2", "3", "4"]
 DONEMLER_DIZISI = [GUZ, BAHAR]
 DONEMLER_DIZISI_YOKLA_BERABER = [YOK, GUZ, BAHAR]
 
@@ -298,6 +309,8 @@ ANAHTAR_VE_LINKLER = {
     HOCA_OYLAMA_CSV_ANAHTARI: HOCA_OYLAMA_LINKI_CSV,
     HOCA_YORUMLAMA_CSV_ANAHTARI: HOCA_YORULMALA_LINKI_CSV,
     GITHUB_URL_ANAHTARI: VARSAYILAN_GITHUB_URL,
-    DOKUMANLAR_REPO_YOLU_ANAHTARI: DOKUMANLAR_REPO_YOLU.replace(JSON_DOSYALARI_DEPOSU, "").lstrip("\\/"),
-    CIKMISLAR_ANAHTARI: CIKMISLAR_LINKI
+    DOKUMANLAR_REPO_YOLU_ANAHTARI: DOKUMANLAR_REPO_YOLU.replace(
+        JSON_DOSYALARI_DEPOSU, ""
+    ).lstrip("\\/"),
+    CIKMISLAR_ANAHTARI: CIKMISLAR_LINKI,
 }

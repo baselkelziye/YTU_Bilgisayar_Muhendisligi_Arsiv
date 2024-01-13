@@ -1,5 +1,12 @@
 import sys
-from PyQt5.QtWidgets import QApplication,QDesktopWidget, QWidget, QPushButton, QVBoxLayout, QMessageBox
+from PyQt5.QtWidgets import (
+    QApplication,
+    QDesktopWidget,
+    QWidget,
+    QPushButton,
+    QVBoxLayout,
+    QMessageBox,
+)
 from PyQt5.QtGui import QIcon
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
@@ -13,16 +20,17 @@ from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
 from git_islemleri_window import GitIslemleriWindow
 from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
+
+
 class App(QWidget):
     def __init__(self):
         super().__init__()
-        self.title = 'Readme Düzenleyici'
+        self.title = "Readme Düzenleyici"
         self.width = 540
         self.height = 200
         self.initUI()
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
-
 
     def initUI(self):
         self.setWindowTitle(self.title)
@@ -30,20 +38,31 @@ class App(QWidget):
         layout = QVBoxLayout()
         # Butonları oluştur
         self.buttons = [
-            QPushButton('Giriş Güncelle'),
-            QPushButton('Dönem Ekle/Güncelle'),
-            QPushButton('Katkıda Bulunan Ekle/Güncelle'),
-            QPushButton('Yazarın Notları Ekle/Güncelle'),
-            QPushButton('Hoca Ekle/Güncelle'),
-            QPushButton('Ders Ekle/Güncelle'),
-            QPushButton('Repo Kullanımı Düzenle'),
-            QPushButton('Git İşlemleri'),
+            QPushButton("Giriş Güncelle"),
+            QPushButton("Dönem Ekle/Güncelle"),
+            QPushButton("Katkıda Bulunan Ekle/Güncelle"),
+            QPushButton("Yazarın Notları Ekle/Güncelle"),
+            QPushButton("Hoca Ekle/Güncelle"),
+            QPushButton("Ders Ekle/Güncelle"),
+            QPushButton("Repo Kullanımı Düzenle"),
+            QPushButton("Git İşlemleri"),
         ]
         # Her düğme için farklı bir renk ayarla
-        colors = ['#C0392B', '#27AE60', '#2980B9', '#8E44AD', '#F39C12', '#D35400', '#16A085', '#2C3E50']
+        colors = [
+            "#C0392B",
+            "#27AE60",
+            "#2980B9",
+            "#8E44AD",
+            "#F39C12",
+            "#D35400",
+            "#16A085",
+            "#2C3E50",
+        ]
         for button, color in zip(self.buttons, colors):
-            button.setStyleSheet(f'background-color: {color};')
-        self.progressDialog = CustomProgressDialog('README.md dosyaları güncelleniyor...', self)
+            button.setStyleSheet(f"background-color: {color};")
+        self.progressDialog = CustomProgressDialog(
+            "README.md dosyaları güncelleniyor...", self
+        )
         self.progressDialog.close()
         # Her butona tıklama işleyicisi ekle
         self.buttons[0].clicked.connect(self.acGirisEkleGuncelle)
@@ -62,35 +81,43 @@ class App(QWidget):
         self.setLayout(layout)
         self.show()
         self.center()
+
     def acDonemEkleGuncelle(self):
         # Dönem Ekle/Güncelle penceresini aç
         self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow()
         self.donemEkleGuncelleWindow.show()
+
     def repoKullanimiDuzenle(self):
         self.repoKullanimiGuncelleWindow = RepoKullanimiDialog()
         self.repoKullanimiGuncelleWindow.show()
+
     def acGirisEkleGuncelle(self):
         # Giriş Güncelle penceresini aç
         self.girisEkleGuncelleWindow = GirisEkleGuncelleWindow()
         self.girisEkleGuncelleWindow.show()
+
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
         cp = QDesktopWidget().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
+
     def acKatkidaBulunanEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.katkidaBulunanGuncelleWindow = KatkidaBulunanGuncelleWindow()
         self.katkidaBulunanGuncelleWindow.show()
+
     def acYazarinNotlari(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.yazarinNotlariWindow = YazarinNotlariWindow()
         self.yazarinNotlariWindow.show()
+
     def acHocaEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.hocaEkleGuncelleWindow = HocaEkleGuncelleWindow()
         self.hocaEkleGuncelleWindow.show()
+
     def acDersEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
         self.dersEkleGuncelleWindow = DersEkleGuncelleWindow()
@@ -99,18 +126,19 @@ class App(QWidget):
     def gitIslemleri(self):
         self.gitIslemleriWindow = GitIslemleriWindow()
         self.gitIslemleriWindow.show()
+
     def onFinished(self):
         self.progressDialog.close()
-        QMessageBox.information(self, 'Başarılı', 'README.md dosyaları güncellendi!')
+        QMessageBox.information(self, "Başarılı", "README.md dosyaları güncellendi!")
 
     def onError(self, message):
         self.progressDialog.close()
-        QMessageBox.critical(self, 'Hata', f'Bir hata oluştu: {message}')
+        QMessageBox.critical(self, "Hata", f"Bir hata oluştu: {message}")
 
 
-if __name__ == '__main__':
-        # Çalıştırılabilir dosyanın yolunu ve dizinini belirle
-    if getattr(sys, 'frozen', False):
+if __name__ == "__main__":
+    # Çalıştırılabilir dosyanın yolunu ve dizinini belirle
+    if getattr(sys, "frozen", False):
         # PyInstaller tarafından oluşturulmuş bir çalıştırılabilir dosya çalışıyorsa
         application_path = os.path.dirname(sys.executable)
         application_path = os.path.join(application_path, "..")
