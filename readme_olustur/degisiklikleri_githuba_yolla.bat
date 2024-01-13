@@ -15,7 +15,9 @@ cd %~dp0\%REPO_PATH%
 git rev-parse --is-inside-work-tree >nul 2>&1
 IF NOT %ERRORLEVEL% == 0 (
     echo Bu dizin bir Git reposu değil.
-    pause
+    IF "%~3" == "" (
+        pause
+    )
     exit /b 1
 )
 
@@ -23,24 +25,32 @@ REM Değişiklikleri ekler, commit yapar ve push yapar.
 git add --all
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Dosyalar eklenemedi.
-    pause
+    IF "%~3" == "" (
+        pause
+    )
     exit /b 1
 )
 
 git commit -m "%COMMIT_MESSAGE%"
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Commit yapılamadı.
-    pause
+    IF "%~3" == "" (
+        pause
+    )
     exit /b 1
 )
 
 git push
 IF %ERRORLEVEL% NEQ 0 (
     echo Hata: Değişiklikler push edilemedi.
-    pause
+    IF "%~3" == "" (
+        pause
+    )
     exit /b 1
 )
 
 echo Değişiklikler başarıyla senkronize edildi.
-pause
+IF "%~3" == "" (
+        pause
+    )
 exit /b 0
