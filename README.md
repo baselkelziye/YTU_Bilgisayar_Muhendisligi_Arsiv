@@ -1031,6 +1031,23 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
+### 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/balik](https://avesis.yildiz.edu.tr/balik)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+
+
+
 ### 👩‍🏫 Prof. Dr. M. Elif Karslıgil 
 - 🚪 **Ofis:** EEF-D217
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
@@ -1070,6 +1087,23 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
   - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.itu.edu.tr/naydin](https://avesis.itu.edu.tr/naydin)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
 
 
@@ -1398,6 +1432,22 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
   - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
+
+
+### 👨‍🏫 Dr. Ziya Cihan Tayşi 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/cihan](https://avesis.yildiz.edu.tr/cihan)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
 ## ✍️ Yazarın Notları
 
 - 📝 Bölüm dersleri özelinde neredeyse her dersin çıkmış soruları var ve hocalar sınavlarda ya bu sorulara benzer ya da aynı sorular soruyorlar. Benzer şekilde ödev için konuşmak gerekirse ödevlerin büyük bir kısmını ya interneteki kaynaklardan, ya da geçmiş yıllardan alıp biraz değiştirerek ya da değiştirmeden hazırlıyorlar. Labları da geçen senelerin lablarıyla benzer ya da aynı hazırlıyorlar. Bu sebeplerden dolayı eski kaynaklardan faydalanmak çok önemli.
@@ -1413,6 +1463,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - FÇ : Dr. Furkan Çakmak
 - G1 : Dr. Göksel Biricik
 - GB : Doç. Dr. Gökhan Bilgin
+- HHB : Prof. Dr. Hasan Hüseyin Balık
 - HOİ : Dr. Hamza Osman İlhan
 - HİT : Dr. H. İrem Türkmen
 - MAG : Doç. Dr. M. Amaç Güvensan
@@ -1420,11 +1471,13 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - MFA : Prof. Dr. M. Fatih Amasyalı
 - MSA : Doç. Dr. Mehmet Sıddık Aktaş
 - MUK : Dr. M. Utku Kalay
+- NA : Prof. Dr. Nizamettin Aydın
 - OA : Dr. Oğuz Altun
 - OK : Prof. Dr. Oya Kalıpsız
 - SV : Prof. Dr. Songül Varlı
 - SY : Prof. Dr. Sırma Yavuz
 - YES : Dr. Yunus Emre Selçuk
+- ZCT : Dr. Ziya Cihan Tayşi
 
 
 ## 🤝 Katkıda Bulunanlar
