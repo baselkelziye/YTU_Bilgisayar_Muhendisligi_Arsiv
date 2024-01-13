@@ -1,3 +1,37 @@
+import os, sys
+
+# Mevcut dosyanın bulunduğu dizini al
+current_directory = os.path.dirname(os.path.abspath(__file__))
+# Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
+relative_path = os.path.join("..", "readme_guncelleme_arayuzu_python")
+# Göreceli yolu tam yola çevir
+absolute_path = os.path.join(current_directory, relative_path)
+# Tam yolu sys.path listesine ekle
+sys.path.append(absolute_path)
+from degiskenler import *
+
+
+def kelime_isle(kelime):
+    # Küçük harfe çevir
+    kucuk_kelime = kelime.lower()
+
+    if kucuk_kelime in KARA_LISTE:
+        # Karalistede varsa, sansürlenmiş halini döndür
+        return "[sansürlendi]"
+    # Kelimeyi döndür
+    return kelime
+
+
+def metin_sansurle(metin):
+    # Metni kelimelere ayır
+    kelimeler = metin.split()
+    islenmis_kelimeler = []
+    # Karalistedeki kelimeleri kontrol et
+    for kelime in kelimeler:
+        islenmis_kelimeler.append(kelime_isle(kelime))
+    return " ".join(islenmis_kelimeler)
+
+
 """from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import re
