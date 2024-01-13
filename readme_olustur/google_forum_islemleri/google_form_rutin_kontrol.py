@@ -85,12 +85,12 @@ def update_repository():
             print("Pull sırasında conflict oluştu, script durduruluyor.")
             return
         os.chdir(os.path.join(original_directory, BIR_UST_DIZIN))
-        if not execute_command(google_form_guncelle_sc):
+        if not execute_command(google_form_guncelle_sc + " bosa_bekleme"):
             print(
                 "Google form içerikleri güncellenirken hata oluştu, script durduruluyor."
             )
             return
-        os.system(readme_guncelle_sc)
+        os.system(readme_guncelle_sc + " bosa_bekleme")
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"):
             print("Git add sırasında conflict oluştu, script durduruluyor.")
