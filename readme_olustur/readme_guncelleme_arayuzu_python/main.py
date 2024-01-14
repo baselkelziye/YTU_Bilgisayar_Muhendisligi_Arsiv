@@ -39,12 +39,12 @@ class App(QWidget):
         # Butonları oluştur
         self.buttons = [
             QPushButton("Giriş Güncelle"),
-            QPushButton("Dönem Ekle/Güncelle"),
-            QPushButton("Katkıda Bulunan Ekle/Güncelle"),
-            QPushButton("Yazarın Notları Ekle/Güncelle"),
-            QPushButton("Hoca Ekle/Güncelle"),
-            QPushButton("Ders Ekle/Güncelle"),
             QPushButton("Repo Kullanımı Düzenle"),
+            QPushButton("Ders Ekle/Güncelle"),
+            QPushButton("Hoca Ekle/Güncelle"),
+            QPushButton("Yazarın Notları Ekle/Güncelle"),
+            QPushButton("Katkıda Bulunan Ekle/Güncelle"),
+            QPushButton("Dönem Ekle/Güncelle"),
             QPushButton("Git İşlemleri"),
         ]
         # Her düğme için farklı bir renk ayarla
@@ -66,12 +66,12 @@ class App(QWidget):
         self.progressDialog.close()
         # Her butona tıklama işleyicisi ekle
         self.buttons[0].clicked.connect(self.acGirisEkleGuncelle)
-        self.buttons[1].clicked.connect(self.acDonemEkleGuncelle)
-        self.buttons[2].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
-        self.buttons[3].clicked.connect(self.acYazarinNotlari)
-        self.buttons[4].clicked.connect(self.acHocaEkleGuncelle)
-        self.buttons[5].clicked.connect(self.acDersEkleGuncelle)
-        self.buttons[6].clicked.connect(self.repoKullanimiDuzenle)
+        self.buttons[1].clicked.connect(self.repoKullanimiDuzenle)
+        self.buttons[2].clicked.connect(self.acDersEkleGuncelle)
+        self.buttons[3].clicked.connect(self.acHocaEkleGuncelle)
+        self.buttons[4].clicked.connect(self.acYazarinNotlari)
+        self.buttons[5].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
+        self.buttons[6].clicked.connect(self.acDonemEkleGuncelle)
         self.buttons[7].clicked.connect(self.gitIslemleri)
         # Butonları pencereye ekle
         for btn in self.buttons:
