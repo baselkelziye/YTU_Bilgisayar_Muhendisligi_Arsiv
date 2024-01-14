@@ -187,7 +187,7 @@ class DonemDuzenlemeWindow(QDialog):
         self.donemLabel = QLabel("Dönem", self)
         self.donemLabel.setAlignment(Qt.AlignCenter)
         self.donemComboBox = QComboBox(self)
-        self.donemComboBox.addItems(DONEMLER_DIZISI)  # Dönemler
+        self.donemComboBox.addItems(DONEMLER_DIZISI_YOKLA_BERABER)  # Dönemler
         donemLayout.addWidget(self.donemLabel)
         donemLayout.addWidget(self.donemComboBox)
         self.mainLayout.addLayout(donemLayout)
@@ -285,6 +285,7 @@ class DonemDuzenlemeWindow(QDialog):
             return
         yil = int(self.yilComboBox.currentText())
         donem = self.donemComboBox.currentText()
+        donem = "" if donem == YOK else donem
         genel_tavsiyeler = []
         tum_widgets = topluWidgetBul(self.tavsiyelerLayout)
         donem_adi = self.donemAdiLineEdit.text().strip()
