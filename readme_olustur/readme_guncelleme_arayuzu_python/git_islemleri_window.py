@@ -31,9 +31,10 @@ class GitIslemleriWindow(QDialog):
         self.buttons = [
             QPushButton("Google Form Güncelle"),
             QPushButton("Readme Güncelle"),
-            QPushButton("Değişiklikleri Github'a Pushla"),
             QPushButton("Arayüz Kodlarını Güncelle"),
+            QPushButton("Dosya Değişikliklerini Github'dan Çek"),
             QPushButton("Rutin Kontrolü Başlat"),
+            QPushButton("Değişiklikleri Github'a Pushla"),
         ]
 
         self.colors = [
@@ -42,15 +43,17 @@ class GitIslemleriWindow(QDialog):
             "background-color: #1ABC9C; color: white;",  # Açık Mavi/Turkuaz
             "background-color: #F1C40F; color: black;",  # Sarı
             "background-color: #FF69B4; color: white;",  # Pembe
+            "background-color: #3498DB; color: white;",  # Mavi
         ]
 
         # Buton fonksiyonları
         self.functions = [
             self.update_google_form,
             self.update_readme,
-            self.push_changes,
             self.update_interface,
+            self.update_dosyalar_repo,
             self.start_routine_check,
+            self.push_changes,
         ]
         # Butonları dialog'a ekleme, renklendirme ve bağlama
         for btn, color, func in zip(self.buttons, self.colors, self.functions):
@@ -63,11 +66,11 @@ class GitIslemleriWindow(QDialog):
         # İşletim sistemi kontrolü
         self.is_windows = sys.platform.startswith("win")
 
-    def run_script(self, script_path, baslik):
+    def run_script(self, script_path, baslik, islem=""):
         cevap = QMessageBox.question(
             self,
             "Onay",
-            "İşlemi başlatmak istediğinize emin misiniz?",
+            f"{islem} işlemini başlatmak istediğinize emin misiniz?",
             QMessageBox.Yes | QMessageBox.No,
         )
         if cevap == QMessageBox.No:
@@ -101,12 +104,14 @@ class GitIslemleriWindow(QDialog):
         self.run_script(
             GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH,
             baslik="Google Form Güncelleniyor...",
+            islem="Google Form Güncelleme",
         )
 
     def update_readme(self):
         self.run_script(
             README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH,
             baslik="README.md Güncelleniyor...",
+            islem="README.md Güncelleme",
         )
 
     def push_changes(self):
@@ -131,13 +136,55 @@ class GitIslemleriWindow(QDialog):
         bat_scripti = (
             bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU + ' "' + commit_mesaji + '"'
         )
-        self.run_script(bat_scripti, baslik="Değişiklikler Github'a Pushlanıyor...")
+        self.run_script(
+            bat_scripti,
+            baslik="Dosya Değişiklikleri Github'a Pushlanıyor...",
+            islem="Dosya Değişikliklerini Github'a Pushlama",
+        )
+
+    def update_dosyalar_repo(self):
+        if not self.git_degisiklik_kontrol(
+            os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
+        ):
+            return
+        bat_dosyasi = (
+            DEGISIKLIKLERI_GITHUBDAN_CEK_BAT
+            if self.is_windows
+            else DEGISIKLIKLERI_GITHUBDAN_CEK_SH
+        )
+        bat_scripti = bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU
+        self.run_script(
+            bat_scripti,
+            baslik="Dosya Değişiklikleri Github'dan Çekiliyor...",
+            islem="Dosya Değişikliklerini Github'dan Çekme",
+        )
 
     def update_interface(self):
+        if not self.git_degisiklik_kontrol():
+            return
+        self.run_script(
+            ARAYUZU_GITHULA_ESITLE_BAT
+            if self.is_windows
+            else ARAYUZU_GITHULA_ESITLE_SH,
+            baslik="Arayüz Kodları Güncelleniyor...",
+            islem="Arayüz Kodları Güncelleme",
+        )
+
+    def start_routine_check(self):
+        self.run_script(
+            RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH,
+            baslik="Rutin Kontrol Yapılıyor...",
+            islem="Rutin Kontrol",
+        )
+
+    def git_degisiklik_kontrol(self, git_dizin_yolu="."):
+        # ilk dizini kaydet
+        original_dir = os.getcwd()
         # Git status kontrolü
+        os.chdir(git_dizin_yolu)
         stream = os.popen("git status")
         output = stream.read()
-
+        degisiklik_var_mi = False
         # Değişiklik olup olmadığını kontrol et
         if "nothing to commit, working tree clean" not in output:
             QMessageBox.critical(
@@ -145,16 +192,7 @@ class GitIslemleriWindow(QDialog):
                 "Hata",
                 "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.",
             )
-            return
-        self.run_script(
-            ARAYUZU_GITHULA_ESITLE_BAT
-            if self.is_windows
-            else ARAYUZU_GITHULA_ESITLE_SH,
-            baslik="Arayüz Kodları Güncelleniyor...",
-        )
-
-    def start_routine_check(self):
-        self.run_script(
-            RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH,
-            baslik="Rutin Kontrol Yapılıyor...",
-        )
+            degisiklik_var_mi = True
+        # İlk dizine geri dön
+        os.chdir(original_dir)
+        return degisiklik_var_mi == False
