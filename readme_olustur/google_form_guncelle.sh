@@ -16,7 +16,9 @@ echo "Hoca icerikleri guncelleniyor..."
 python3 hoca_icerikleri_guncelle.py
 if [ $? -ne 0 ]; then
     echo "Hata: Hoca icerikleri guncelleme script'i basarisiz oldu."
+    if [ -z "$1" ]; then
     read -p "Devam etmek için enter'a basın..."
+fi
     exit 1
 fi
 
@@ -24,7 +26,9 @@ echo "Ders icerikleri guncelleniyor..."
 python3 ders_icerikleri_guncelle.py
 if [ $? -ne 0 ]; then
     echo "Hata: Ders icerikleri guncelleme script'i basarisiz oldu."
+    if [ -z "$1" ]; then
     read -p "Devam etmek için enter'a basın..."
+fi
     exit 1
 fi
 
@@ -32,5 +36,7 @@ fi
 cd "$CURRENT_DIR"
 
 echo "Islem tamamlandi."
-read -p "Devam etmek için enter'a basın..."
+if [ -z "$1" ]; then
+    read -p "Devam etmek için enter'a basın..."
+fi
 exit 0
