@@ -35,7 +35,7 @@ for /F %%i in ("%~dp0\gereksinimler.txt") do (
 
 :: readme_olusturma_arayuzu klasörüne çıkın ve main.py'yi çalıştırın
 cd %~dp0\readme_guncelleme_arayuzu_python
-start pythonw main.py
+start /B python3 main.py
 
 echo İşlem tamamlandı.
 exit /b 0
