@@ -332,3 +332,10 @@ try:
             KARA_LISTE.append(line.strip().lower())
 except FileNotFoundError:
     KARA_LISTE = []
+
+# gitgub'dan sonraki kısmını al
+STAR_URL = VARSAYILAN_GITHUB_URL.split("github.com/")[1]
+STAR_HISTORY = f"""
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos={STAR_URL}&type=Date)](https://star-history.com/#{STAR_URL}&Date)
+"""
