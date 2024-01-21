@@ -1504,3 +1504,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
   - 🔗 Github Adresi: https://github.com/rayenebech
 - 👤 Sait Yalçın
   - 🔗 Github Adresi: https://github.com/saityalcn
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
