@@ -32,6 +32,18 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         print(f"CSV dosyası okunurken hata oluştu: {e}")
         time.sleep(SLEEP_TIME)
         return
+    # Öncelikle mevcut sütun isimlerini alın
+    mevcut_sutun_isimleri = df.columns
+    # Yeni isimleri bir sözlük yapısında belirtin
+    yeniden_adlandirma = {
+        mevcut_sutun_isimleri[0]: ZAMAN_DAMGASI,
+        mevcut_sutun_isimleri[1]: HOCA_SEC,
+        mevcut_sutun_isimleri[2]: ISMIN_NASIL_GOZUKSUN_HOCA,
+        mevcut_sutun_isimleri[3]: HOCA_HAKKINDAKI_YORUMUN,
+    }
+
+    # DataFrame'i yeniden adlandırın
+    df = df.rename(columns=yeniden_adlandirma)
     if not csv_kontrol_et(
         df,
         [ZAMAN_DAMGASI, HOCA_SEC, ISMIN_NASIL_GOZUKSUN_HOCA, HOCA_HAKKINDAKI_YORUMUN],
@@ -80,6 +92,22 @@ except Exception as e:
     print(f"CSV dosyası okunurken hata oluştu: {e}")
     time.sleep(SLEEP_TIME)
     exit()
+# Mevcut sütun isimlerini alın
+mevcut_sutun_isimleri = yildizlar_df.columns
+
+# Yeni isimleri bir sözlük yapısında belirtin
+yeniden_adlandirma = {
+    mevcut_sutun_isimleri[0]: ZAMAN_DAMGASI,
+    mevcut_sutun_isimleri[1]: HOCA_SEC,
+    mevcut_sutun_isimleri[2]: DERSI_NE_KADAR_GÜZEL_ANLATIR,
+    mevcut_sutun_isimleri[3]: DERSINI_GECMEK_NE_KADAR_KOLAYDIR,
+    mevcut_sutun_isimleri[4]: DERSI_NE_KADAR_IYI__OGRETIR,
+    mevcut_sutun_isimleri[5]: DERSI_NE_KADAR_EGLENCELI_ANLATIR,
+}
+
+# DataFrame'i yeniden adlandırın
+yildizlar_df = yildizlar_df.rename(columns=yeniden_adlandirma)
+
 if not csv_kontrol_et(
     yildizlar_df,
     [
