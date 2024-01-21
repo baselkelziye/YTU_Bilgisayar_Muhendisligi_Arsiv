@@ -451,6 +451,11 @@ def readme_katkida_bulunanlar_ekle(veri):
             )  # Kişi ve link emojisi
 
 
+def readmeye_star_history_ekle():
+    with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
+        f.write(STAR_HISTORY)
+
+
 def sıralama_anahtarı(ders):
     yıl_sıralaması = [1, 2, 3, 4, 0]
     dönem_sıralaması = ["Güz", "Bahar", ""]
@@ -518,6 +523,8 @@ if katkida_bulunanlar is not None:
     readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
 else:
     print("Katkıda bulunanlar bulunamadı...")
+print("Star history README'ye ekleniyor...")
+readmeye_star_history_ekle()
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
