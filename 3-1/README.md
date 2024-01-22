@@ -69,6 +69,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
+  - 👤 **_Violancello_**: Bölümün açık ara en zor dersi. Tüm derslere girin çünkü koptuğunuz an toparlaması çok zor, özellikle de Mikro konularını kaçırdınız mı yandınız. Geçebilmek için lab ve ödevlerden puan almak için çok önemli çünkü sınavların ortalaması 20-30 gibi oluyor. Zor ama kaliteli ve öğretici, mühendis olduğunuzu hissettiren bir ders.
 - ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
