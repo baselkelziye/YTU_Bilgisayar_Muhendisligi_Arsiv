@@ -20,6 +20,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - HOİ
