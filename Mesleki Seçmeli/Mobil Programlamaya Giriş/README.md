@@ -15,6 +15,7 @@
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 - [Proje](https://www.youtube.com/watch?v=kM1AJ7EmRNw&t=30s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=krNkTsZ1Cq8&t=6s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1lgCUMrXtOB5hv1ZcvF3TGYFgXBeToUxf?usp=drive_link)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MAG

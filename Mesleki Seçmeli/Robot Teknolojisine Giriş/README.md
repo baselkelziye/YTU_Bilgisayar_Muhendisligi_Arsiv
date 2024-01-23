@@ -14,6 +14,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1by3F9SOph83Ft7VlWtgqy48qb42R4ZzP?usp=drive_link)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
