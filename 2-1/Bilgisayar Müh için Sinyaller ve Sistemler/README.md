@@ -17,6 +17,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
