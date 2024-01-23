@@ -1285,11 +1285,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 📖 [Mikroişlemci Sistemleri ve Assembly Dili](#-mikroişlemci-sistemleri-ve-assembly-dili)
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1483,31 +1483,31 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - YES : Dr. Yunus Emre Selçuk
 - ZCT : Dr. Ziya Cihan Tayşi
 
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
+
 
 ## 🤝 Katkıda Bulunanlar
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
 
-- 👤 Ali Albayrak
-  - 🔗 Github Adresi: https://github.com/Ali-Albayrak
-- 👤 Asude Merve Ekiz
-  - 🔗 Github Adresi: https://github.com/asudemerveekiz
-- 👤 Basel Kelziye
-  - 🔗 Github Adresi: https://github.com/baselkelziye
-- 👤 Besher Alkurdi
-  - 🔗 Github Adresi: https://github.com/mrbesher
-- 👤 Muhammed Ali Şen
-  - 🔗 Github Adresi: https://github.com/shenmali
-- 👤 Muhammed Eren Şekkeli
-  - 🔗 Github Adresi: https://github.com/mErenSekkeli
-- 👤 Muhammed Kayra Bulut
-  - 🔗 Github Adresi: https://github.com/kaayra2000
-- 👤 Rameş Aliyev
-  - 🔗 Github Adresi: https://github.com/ramesaliyev
-- 👤 Rayene Bech
-  - 🔗 Github Adresi: https://github.com/rayenebech
-- 👤 Sait Yalçın
-  - 🔗 Github Adresi: https://github.com/saityalcn
-
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
+- ✨👤✨ Ali Albayrak ✨
+  - 🔗 [Github Profili](https://github.com/Ali-Albayrak)
+- ✨👤✨ Asude Merve Ekiz ✨
+  - 🔗 [Github Profili](https://github.com/asudemerveekiz)
+- ✨👤✨ Basel Kelziye ✨
+  - 🔗 [Github Profili](https://github.com/baselkelziye)
+- ✨👤✨ Besher Alkurdi ✨
+  - 🔗 [Github Profili](https://github.com/mrbesher)
+- ✨👤✨ Muhammed Ali Şen ✨
+  - 🔗 [Github Profili](https://github.com/shenmali)
+- ✨👤✨ Muhammed Eren Şekkeli ✨
+  - 🔗 [Github Profili](https://github.com/mErenSekkeli)
+- ✨👤✨ Muhammed Kayra Bulut ✨
+  - 🔗 [Github Profili](https://github.com/kaayra2000)
+- ✨👤✨ Rameş Aliyev ✨
+  - 🔗 [Github Profili](https://github.com/ramesaliyev)
+- ✨👤✨ Rayene Bech ✨
+  - 🔗 [Github Profili](https://github.com/rayenebech)
+- ✨👤✨ Sait Yalçın ✨
+  - 🔗 [Github Profili](https://github.com/saityalcn)
