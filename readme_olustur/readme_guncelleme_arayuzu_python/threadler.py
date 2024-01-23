@@ -184,9 +184,13 @@ class KatkiKaydetThread(QThread):
             self.finished.emit(False, f"Dosya yazılırken bir hata oluştu: {e}")
 
 
-def enqueue_output(out, queue):
-    for line in iter(out.readline, ""):
-        queue.put(line)
+def enqueue_output(out, queue, run_flag):
+    while run_flag.is_set():
+        line = out.readline()
+        if line:
+            queue.put(line)
+        else:
+            break
     out.close()
 
 
@@ -215,11 +219,14 @@ class CMDScriptRunnerThread(QThread):
         q_stdout = queue.Queue()
         q_stderr = queue.Queue()
 
+        run_flag = threading.Event()
+        run_flag.set()
+
         t_stdout = threading.Thread(
-            target=enqueue_output, args=(process.stdout, q_stdout)
+            target=enqueue_output, args=(process.stdout, q_stdout, run_flag)
         )
         t_stderr = threading.Thread(
-            target=enqueue_output, args=(process.stderr, q_stderr)
+            target=enqueue_output, args=(process.stderr, q_stderr, run_flag)
         )
 
         t_stdout.start()
@@ -247,7 +254,7 @@ class CMDScriptRunnerThread(QThread):
                 # Süreç durumu kontrol et.
                 if process.poll() is not None:
                     break  # Süreç tamamlandı.
-
+            run_flag.clear()  # Bu, thread'lerin döngüsünü sonlandıracak.
             # Sürecin tamamlandığını ve thread'lerin sonlanmasını bekle
             t_stdout.join()
             t_stderr.join()
