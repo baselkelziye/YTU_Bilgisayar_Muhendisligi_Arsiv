@@ -16,3 +16,4 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link)

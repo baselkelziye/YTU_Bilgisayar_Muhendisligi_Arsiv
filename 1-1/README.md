@@ -42,6 +42,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UFw-BQXsy567TdLto8TLRKwG6VFoOvKf?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -118,6 +119,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Matematik 1
@@ -136,4 +138,5 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ua0NzmwJBWeNQx3QPgUDU4N_C2-MzSjn?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)

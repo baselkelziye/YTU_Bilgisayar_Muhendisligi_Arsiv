@@ -6,7 +6,7 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 Traktör Reis: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+  - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
@@ -16,6 +16,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MSA

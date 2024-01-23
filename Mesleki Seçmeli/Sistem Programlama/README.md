@@ -12,3 +12,4 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1AA-5rviscY-exCbEIezxePvLP_UQsDQZ?usp=drive_link)
