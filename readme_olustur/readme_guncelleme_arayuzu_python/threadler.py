@@ -184,13 +184,9 @@ class KatkiKaydetThread(QThread):
             self.finished.emit(False, f"Dosya yazılırken bir hata oluştu: {e}")
 
 
-def enqueue_output(out, queue, run_flag):
-    while run_flag.is_set():
-        line = out.readline()
-        if line:
-            queue.put(line)
-        else:
-            break
+def enqueue_output(out, queue):
+    for line in iter(out.readline, ""):
+        queue.put(line)
     out.close()
 
 
@@ -208,25 +204,23 @@ class CMDScriptRunnerThread(QThread):
     def run(self):
         son_hata_mesaj = ""
         son_bilgi_mesaj = ""
+        encoding = "iso-8859-1" if "win" in sys.platform else "utf-8"
         process = subprocess.Popen(
             self.cmd,
             shell=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
-            encoding="utf-8",  # UTF-8 encoding ekledik.
+            encoding=encoding,  # iso-8859-1 encoding ekledik.
         )
         q_stdout = queue.Queue()
         q_stderr = queue.Queue()
 
-        run_flag = threading.Event()
-        run_flag.set()
-
         t_stdout = threading.Thread(
-            target=enqueue_output, args=(process.stdout, q_stdout, run_flag)
+            target=enqueue_output, args=(process.stdout, q_stdout)
         )
         t_stderr = threading.Thread(
-            target=enqueue_output, args=(process.stderr, q_stderr, run_flag)
+            target=enqueue_output, args=(process.stderr, q_stderr)
         )
 
         t_stdout.start()
@@ -249,12 +243,12 @@ class CMDScriptRunnerThread(QThread):
 
                 while not q_stderr.empty():
                     son_hata_mesaj = q_stderr.get().strip()
-                    self.error.emit(son_hata_mesaj)
+                    self.info.emit(son_hata_mesaj)
 
                 # Süreç durumu kontrol et.
                 if process.poll() is not None:
                     break  # Süreç tamamlandı.
-            run_flag.clear()  # Bu, thread'lerin döngüsünü sonlandıracak.
+
             # Sürecin tamamlandığını ve thread'lerin sonlanmasını bekle
             t_stdout.join()
             t_stderr.join()
