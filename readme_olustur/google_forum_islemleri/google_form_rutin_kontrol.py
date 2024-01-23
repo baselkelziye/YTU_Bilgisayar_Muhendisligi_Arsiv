@@ -9,6 +9,7 @@ sys.path.append(
     os.path.join(os.path.dirname(__file__), "..", "readme_guncelleme_arayuzu_python")
 )
 from degiskenler import *
+from cikti_yazdirma import custom_write, custom_write_error
 
 
 def check_for_updates(key, url):
@@ -21,7 +22,7 @@ def check_for_updates(key, url):
 
     # Eğer bu URL daha önce kontrol edildiyse ve hash değeri değişmişse, güncelleme olduğunu bildir
     if url in previous_hashes and previous_hashes[url] != current_hash:
-        sys.stdout.write(f"Değişiklik bulundu: {key}\n")
+        custom_write(f"Değişiklik bulundu: {key}\n")
         previous_hashes[url] = current_hash
         return True
 
@@ -31,7 +32,7 @@ def check_for_updates(key, url):
 
 
 def execute_command(command):
-    sys.stdout.write(f"Komut çalıştırılıyor: {command}\n")
+    custom_write(f"Komut çalıştırılıyor: {command}\n")
     try:
         # Komutu çalıştır ve çıktıyı yakala
         result = subprocess.run(
@@ -42,10 +43,10 @@ def execute_command(command):
             stderr=subprocess.PIPE,
         )
         # Komut başarıyla çalıştıysa, çıktıyı yazdır
-        sys.stdout.write(result.stdout.decode()+ "\n")
+        custom_write(result.stdout.decode() + "\n")
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır ve script'i durdur
-        sys.stderr.write(f"Komut hatası: {e.stderr.decode()}\n")
+        custom_write_error(f"Komut hatası: {e.stderr.decode()}\n")
         return False
     return True
 
@@ -53,10 +54,12 @@ def execute_command(command):
 def update_repository():
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
-    sys.stdout.write("Güncellemeler uygulanıyor...\n")
+    custom_write("Güncellemeler uygulanıyor...\n")
     readme_guncelle_komutu = f"python3 readme_olustur.py"
     # google form güncelle komutu
-    google_form_guncelle_komutu = f"python3 hoca_icerikleri_guncelle.py && python3 ders_icerikleri_guncelle.py"
+    google_form_guncelle_komutu = (
+        f"python3 hoca_icerikleri_guncelle.py && python3 ders_icerikleri_guncelle.py"
+    )
     # Git ve Python komutlarını sırayla çalıştır
     try:
         repo_yolu = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
@@ -64,22 +67,26 @@ def update_repository():
         stream = os.popen("git status")
         output = stream.read()
         if "nothing to commit, working tree clean" not in output:
-            sys.stderr.write(
+            custom_write_error(
                 "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın. Script durduruluyor."
             )
             exit(1)
         if not execute_command("git fetch"):
-            sys.stderr.write("Fetch sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error(
+                "Fetch sırasında conflict oluştu, script durduruluyor.\n"
+            )
             return
         if not execute_command("git reset --hard origin/main"):
-            sys.stderr.write("Reset sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error(
+                "Reset sırasında conflict oluştu, script durduruluyor.\n"
+            )
             return
         if not execute_command("git pull"):
-            sys.stderr.write("Pull sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error("Pull sırasında conflict oluştu, script durduruluyor.\n")
             return
         os.chdir(original_directory)
         if not execute_command(google_form_guncelle_komutu):
-            sys.stderr.write(
+            custom_write_error(
                 "Google form içerikleri güncellenirken hata oluştu, script durduruluyor."
             )
             return
@@ -87,18 +94,24 @@ def update_repository():
         os.system(readme_guncelle_komutu)
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"):
-            sys.stderr.write("Git add sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error(
+                "Git add sırasında conflict oluştu, script durduruluyor.\n"
+            )
             return
         if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'):
-            sys.stderr.write("Git commit sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error(
+                "Git commit sırasında conflict oluştu, script durduruluyor.\n"
+            )
             return
         if not execute_command("git push"):
-            sys.stderr.write("Git push sırasında conflict oluştu, script durduruluyor.\n")
+            custom_write_error(
+                "Git push sırasında conflict oluştu, script durduruluyor.\n"
+            )
             return
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}"
-        sys.stderr.write(error_message)
+        custom_write_error(error_message)
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
         os.chdir(original_directory)
@@ -121,19 +134,19 @@ update_repository()
 i = 0
 timeout = 180
 div = 3
-sys.stdout.write("Script çalışıyor...\n")
+custom_write("Script çalışıyor...\n")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
 while True:
     for key, url in urls.items():
         if check_for_updates(key, url):
-            sys.stdout.write(f"Güncelleme tespit edildi: {key}\n")
+            custom_write(f"Güncelleme tespit edildi: {key}\n")
             update_repository()
         else:
-            sys.stdout.write(f"Güncelleme yok: {key}\n")
+            custom_write(f"Güncelleme yok: {key}\n")
     i += 1
-    sys.stdout.write(f"{i}. kontrol tamamlandı.\n")
+    custom_write(f"{i}. kontrol tamamlandı.\n")
     for k in range(0, int(timeout / div)):
-        sys.stdout.write(
+        custom_write(
             f"{timeout-k*div} saniye sonra kontrol edilecek.\n"
         )  # '\r' ile satırın başına dön
         time.sleep(div)
