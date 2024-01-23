@@ -23,6 +23,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UqeiZKjms40t1aZmv70D82XrtBU3jC2C?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### ℹ️ Dersin içeriği güncel değil
@@ -80,6 +81,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1d_csNBvomRdHoheEuwZ-UJpqS8UYMTNm?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mühendisler için Yarıiletken Fiziği
@@ -98,6 +100,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Sayısal Analiz
@@ -116,6 +119,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -138,6 +142,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/12XtTMnoavz1FXqoc9KRWrsNdBP194h9R?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

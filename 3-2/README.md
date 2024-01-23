@@ -23,6 +23,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### ℹ️ Dersin içeriği güncel değil

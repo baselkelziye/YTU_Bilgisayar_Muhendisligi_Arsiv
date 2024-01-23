@@ -29,6 +29,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -55,6 +56,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -84,6 +86,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ubihV7hfig2n6gawM_gEWUyQb5M-rXCi?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -105,6 +108,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -134,6 +138,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -161,6 +166,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
+- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link)
 - 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
