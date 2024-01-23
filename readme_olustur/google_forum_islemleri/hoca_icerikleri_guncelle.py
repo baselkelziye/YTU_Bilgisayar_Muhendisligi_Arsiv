@@ -2,12 +2,11 @@ import pandas as pd
 import json
 import os
 import shutil
-
 from icerik_kontrol import *
 import sys
 from csv_kontrol_et import csv_kontrol_et
-import time
 
+sys.stdout.write("Hoca içerikleri güncelleniyor...\n")
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
 # Göreceli yol (örneğin, bu dizinden 'readme_guncelleme_arayuzu_python' klasörüne giden yol)
@@ -29,9 +28,8 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         # Google Sheets verisini indir
         df = pd.read_csv(sheets_url)
     except Exception as e:
-        print(f"CSV dosyası okunurken hata oluştu: {e}")
-        time.sleep(SLEEP_TIME)
-        return
+        sys.stderr.write(f"CSV dosyası okunurken hata oluştu: {e}\n")
+        exit(1)
     # Öncelikle mevcut sütun isimlerini alın
     mevcut_sutun_isimleri = df.columns
     # Yeni isimleri bir sözlük yapısında belirtin
@@ -48,9 +46,8 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         df,
         [ZAMAN_DAMGASI, HOCA_SEC, ISMIN_NASIL_GOZUKSUN_HOCA, HOCA_HAKKINDAKI_YORUMUN],
     ):
-        print("CSV dosyası hatalı, script durduruluyor.")
-        time.sleep(SLEEP_TIME)
-        return
+        sys.stderr.write("CSV dosyası hatalı, script durduruluyor.\n")
+        exit(1)
     df = df.dropna()  # NaN içeren tüm satırları kaldır
 
     # Her hoca için yorumları güncelle
@@ -89,9 +86,8 @@ yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 try:
     yildizlar_df = pd.read_csv(yildizlar_sheets_url)
 except Exception as e:
-    print(f"CSV dosyası okunurken hata oluştu: {e}")
-    time.sleep(SLEEP_TIME)
-    exit()
+    sys.stderr.write(f"CSV dosyası okunurken hata oluştu: {e}\n")
+    exit(1)
 # Mevcut sütun isimlerini alın
 mevcut_sutun_isimleri = yildizlar_df.columns
 
@@ -119,9 +115,8 @@ if not csv_kontrol_et(
         DERSI_NE_KADAR_EGLENCELI_ANLATIR,
     ],
 ):
-    print("CSV dosyası hatalı, script durduruluyor.")
-    time.sleep(SLEEP_TIME)
-    exit()
+    sys.stderr.write("CSV dosyası hatalı, script durduruluyor.\n")
+    exit(1)
 
 # Sadece sayısal sütunları al ve ortalama hesapla
 yildizlar_numeric_columns = yildizlar_df.columns.drop(
@@ -174,3 +169,4 @@ with open(json_file_name, "w", encoding="utf-8") as file:
 
 # Dosyayı kopyalamak için:
 shutil.copy(json_file_name, os.path.join(BIR_UST_DIZIN, json_file_path))
+sys.stdout.write("Hoca içerikleri güncellendi.\n")

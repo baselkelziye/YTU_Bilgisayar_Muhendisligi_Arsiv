@@ -96,3 +96,15 @@ QTabBar::tab:!selected {
     background: #e0e0e0;
     margin-top: 2px;
 }
+
+
+QProgressBar {
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #05B8CC;
+    width: 20px;
+}
