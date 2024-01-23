@@ -2,8 +2,12 @@ import subprocess
 from PyQt5.QtCore import QThread, pyqtSignal
 import json
 import requests
-import os
+import select
 from degiskenler import *
+import subprocess
+import threading
+import queue
+import sys
 
 
 class ScriptRunnerThread(QThread):
@@ -180,22 +184,88 @@ class KatkiKaydetThread(QThread):
             self.finished.emit(False, f"Dosya yazılırken bir hata oluştu: {e}")
 
 
+def enqueue_output(out, queue):
+    for line in iter(out.readline, ""):
+        queue.put(line)
+    out.close()
+
+
 class CMDScriptRunnerThread(QThread):
     finished = pyqtSignal(str)
     error = pyqtSignal(str)
     info = pyqtSignal(str)
 
-    def __init__(self, cmd):
+    def __init__(self, cmd, baslik=None):
         super().__init__()
         self.cmd = cmd
+        self.calismaya_devam_et = True
+        self.baslik = baslik
 
     def run(self):
-        try:
-            result = os.system(self.cmd)
-            if result == 0:
-                self.finished.emit("İşlem başarıyla tamamlandı")
-            else:
-                self.error.emit(f"Komut başarısız oldu, çıkış kodu: {result}")
+        son_hata_mesaj = ""
+        son_bilgi_mesaj = ""
+        process = subprocess.Popen(
+            self.cmd,
+            shell=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",  # UTF-8 encoding ekledik.
+        )
+        q_stdout = queue.Queue()
+        q_stderr = queue.Queue()
 
+        t_stdout = threading.Thread(
+            target=enqueue_output, args=(process.stdout, q_stdout)
+        )
+        t_stderr = threading.Thread(
+            target=enqueue_output, args=(process.stderr, q_stderr)
+        )
+
+        t_stdout.start()
+        t_stderr.start()
+
+        try:
+            while True:
+                if not self.calismaya_devam_et:
+                    mesaj = "İşlem kullanıcı tarafından iptal edildi."
+                    bilgi = mesaj if self.baslik is None else f"{self.baslik}\n{mesaj}"
+                    # Süreci durdur
+                    process.terminate()  # ya da process.kill() kullanılabilir
+                    self.error.emit(bilgi)
+                    return
+
+                # stdout ve stderr kuyruklarını kontrol et.
+                while not q_stdout.empty():
+                    son_bilgi_mesaj = q_stdout.get().strip()
+                    self.info.emit(son_bilgi_mesaj)
+
+                while not q_stderr.empty():
+                    son_hata_mesaj = q_stderr.get().strip()
+                    self.error.emit(son_hata_mesaj)
+
+                # Süreç durumu kontrol et.
+                if process.poll() is not None:
+                    break  # Süreç tamamlandı.
+
+            # Sürecin tamamlandığını ve thread'lerin sonlanmasını bekle
+            t_stdout.join()
+            t_stderr.join()
+
+            # İşlem tamamlandığında çıkış kodunu kontrol et
+            if process.returncode == 0:
+                self.finished.emit(
+                    f"İşlem başarıyla tamamlandı.\nSon Mesaj: {son_bilgi_mesaj}"
+                )
+            else:
+                # stderr'den hata mesajlarını oku ve emit et
+                if son_hata_mesaj == "":
+                    son_hata_mesaj = son_bilgi_mesaj
+                self.error.emit(
+                    f"Komut başarısız oldu, çıkış kodu: {process.returncode}, Hata: {son_hata_mesaj}"
+                )
         except Exception as e:
             self.error.emit(f"Hata oluştu: {str(e)}")
+
+    def durdur(self):
+        self.calismaya_devam_et = False

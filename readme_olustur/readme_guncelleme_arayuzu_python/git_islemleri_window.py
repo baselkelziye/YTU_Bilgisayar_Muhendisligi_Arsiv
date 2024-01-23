@@ -1,6 +1,6 @@
 import sys
 import os
-import subprocess
+import textwrap
 from PyQt5.QtWidgets import (
     QDialog,
     QVBoxLayout,
@@ -10,11 +10,11 @@ from PyQt5.QtWidgets import (
     QLineEdit,
 )
 from degiskenler import *
-from progress_dialog import CustomProgressDialog
+from progress_dialog import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
 from PyQt5.QtGui import QIcon
-import json
-
+from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
+from PyQt5.QtCore import Qt
 
 class GitIslemleriWindow(QDialog):
     def __init__(self):
@@ -34,6 +34,7 @@ class GitIslemleriWindow(QDialog):
             QPushButton("Arayüz Kodlarını Güncelle"),
             QPushButton("Dosya Değişikliklerini Github'dan Çek"),
             QPushButton("Rutin Kontrolü Başlat"),
+            QPushButton("Hoca/Ders Adlarını Al (Google Form'a Kopyalamak İçin)"),
             QPushButton("Değişiklikleri Github'a Pushla"),
         ]
 
@@ -43,6 +44,7 @@ class GitIslemleriWindow(QDialog):
             "background-color: #1ABC9C; color: white;",  # Açık Mavi/Turkuaz
             "background-color: #F1C40F; color: black;",  # Sarı
             "background-color: #FF69B4; color: white;",  # Pembe
+            "background-color: #8E44AD; color: white;",  # Mor
             "background-color: #3498DB; color: white;",  # Mavi
         ]
 
@@ -53,6 +55,7 @@ class GitIslemleriWindow(QDialog):
             self.update_interface,
             self.update_dosyalar_repo,
             self.start_routine_check,
+            self.hoca_ders_adlari_ac,
             self.push_changes,
         ]
         # Butonları dialog'a ekleme, renklendirme ve bağlama
@@ -65,8 +68,10 @@ class GitIslemleriWindow(QDialog):
 
         # İşletim sistemi kontrolü
         self.is_windows = sys.platform.startswith("win")
-
-    def run_script(self, script_path, baslik, islem=""):
+    def hoca_ders_adlari_ac(self):
+        hoca_ders_adlari_window = HocaDersAdlariWindow(self)
+        hoca_ders_adlari_window.exec_()    
+    def run_script(self, script_path, baslik, islem="", dizin = BIR_UST_DIZIN):
         cevap = QMessageBox.question(
             self,
             "Onay",
@@ -77,41 +82,69 @@ class GitIslemleriWindow(QDialog):
             QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
             return
         self.original_dir = os.getcwd()
-        os.chdir("..")
-        progress = CustomProgressDialog(baslik, self)
+        os.chdir(dizin)
+        self.progress_dialog = CustomProgressDialogWithCancel(baslik, self, self.thread_durduruluyor)
         # Thread'i başlat
-        self.thread = CMDScriptRunnerThread(script_path)
-        self.thread.finished.connect(progress.close)
-        self.thread.error.connect(progress.close)
+        self.thread = CMDScriptRunnerThread(script_path,islem)
         self.thread.finished.connect(self.on_finished)
         self.thread.error.connect(self.on_error)
         self.thread.info.connect(self.info)
         self.thread.start()
-        progress.show()
-
+        self.progress_dialog.show()
+    def thread_durduruluyor(self):
+        cevap = QMessageBox.question(
+                self,
+                "Onay",
+                f"İşlemi durdurmak istediğinize emin misiniz?",
+                QMessageBox.Yes | QMessageBox.No,
+            )
+        if cevap == QMessageBox.No:
+            return
+        self.progress_dialog.setLabelText("İşlem durduruluyor...")
+        self.progress_dialog.setCancelButton(None)
+        self.thread.durdur()
     def on_finished(self, output):
+        self.progress_dialog.close()
+        del self.thread
+        del self.progress_dialog
         QMessageBox.information(self, "Başarılı", output)
         os.chdir(self.original_dir)
 
     def on_error(self, errors):
+        self.progress_dialog.close()
+        del self.thread
+        del self.progress_dialog
         QMessageBox.critical(self, "Hata", errors)
         os.chdir(self.original_dir)
 
-    def info(self, message):
-        None
+    def info(self, message, maxlen=35):
+        # Mesajı belirli bir uzunlukta parçalara ayır, kelimeleri tam böl
+        wrapped_message = textwrap.fill(message, maxlen)
+
+        # Güncellenmiş mesajı etiket metni olarak ayarla
+        self.progress_dialog.setLabelText(wrapped_message)
 
     def update_google_form(self):
+        komut = "python3 hoca_icerikleri_guncelle.py"
+        komut += " && python3 ders_icerikleri_guncelle.py"
+        yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
         self.run_script(
-            GOOGLE_FORM_GUNCELLE_BAT if self.is_windows else GOOGLE_FORM_GUNCELLE_SH,
+            komut,
             baslik="Google Form Güncelleniyor...",
             islem="Google Form Güncelleme",
+            dizin = yol
         )
 
     def update_readme(self):
+        # bir üst dizine geçip python3 readme_olustur.py çalışıp geri ana dizzine gelcez
+        komut = "python3 readme_olustur.py"
+        yol = BIR_UST_DIZIN
+        # workind dir değişecek
         self.run_script(
-            README_GUNCELLE_BAT if self.is_windows else README_GUNCELLE_SH,
+            komut,
             baslik="README.md Güncelleniyor...",
             islem="README.md Güncelleme",
+            dizin = yol
         )
 
     def push_changes(self):
@@ -128,16 +161,12 @@ class GitIslemleriWindow(QDialog):
         if not commit_mesaji:
             QMessageBox.critical(self, "Hata", "Lütfen commit mesajını giriniz.")
             return
-        bat_dosyasi = (
-            DEGISIKLIKLERI_GITHUBA_YOLLA_BAT
-            if self.is_windows
-            else DEGISIKLIKLERI_GITHUBA_YOLLA_SH
-        )
-        bat_scripti = (
-            bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU + ' "' + commit_mesaji + '"'
-        )
+        # burada git -C komtutu çalışacak önce git reposu mu diye kontrol edilecek
+        komut = f"git -C {DOKUMANLAR_REPO_YOLU} add --all"
+        komut = komut + f" && git -C {DOKUMANLAR_REPO_YOLU} commit -m \"{commit_mesaji}\""
+        komut = komut + f" && git -C {DOKUMANLAR_REPO_YOLU} push"
         self.run_script(
-            bat_scripti,
+            komut,
             baslik="Dosya Değişiklikleri Github'a Pushlanıyor...",
             islem="Dosya Değişikliklerini Github'a Pushlama",
         )
@@ -147,14 +176,9 @@ class GitIslemleriWindow(QDialog):
             os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
         ):
             return
-        bat_dosyasi = (
-            DEGISIKLIKLERI_GITHUBDAN_CEK_BAT
-            if self.is_windows
-            else DEGISIKLIKLERI_GITHUBDAN_CEK_SH
-        )
-        bat_scripti = bat_dosyasi + " " + DOKUMANLAR_REPO_YOLU
+        komut = f"git -C {DOKUMANLAR_REPO_YOLU} pull"
         self.run_script(
-            bat_scripti,
+            komut,
             baslik="Dosya Değişiklikleri Github'dan Çekiliyor...",
             islem="Dosya Değişikliklerini Github'dan Çekme",
         )
@@ -162,19 +186,21 @@ class GitIslemleriWindow(QDialog):
     def update_interface(self):
         if not self.git_degisiklik_kontrol():
             return
+        komut = "git pull"
         self.run_script(
-            ARAYUZU_GITHULA_ESITLE_BAT
-            if self.is_windows
-            else ARAYUZU_GITHULA_ESITLE_SH,
+            komut,
             baslik="Arayüz Kodları Güncelleniyor...",
             islem="Arayüz Kodları Güncelleme",
         )
 
     def start_routine_check(self):
+        komut = "python3 google_form_rutin_kontrol.py"
+        yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
         self.run_script(
-            RUTIN_KONTROL_BAT if self.is_windows else RUTIN_KONTROL_SH,
+            komut,
             baslik="Rutin Kontrol Yapılıyor...",
             islem="Rutin Kontrol",
+            dizin = yol
         )
 
     def git_degisiklik_kontrol(self, git_dizin_yolu="."):
