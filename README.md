@@ -1451,6 +1451,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
 ## ✍️ Yazarın Notları
 
@@ -1491,23 +1492,23 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
 
-- ✨👤✨ Ali Albayrak ✨
-  - 🔗 [Github Profili](https://github.com/Ali-Albayrak)
-- ✨👤✨ Asude Merve Ekiz ✨
-  - 🔗 [Github Profili](https://github.com/asudemerveekiz)
-- ✨👤✨ Basel Kelziye ✨
-  - 🔗 [Github Profili](https://github.com/baselkelziye)
-- ✨👤✨ Besher Alkurdi ✨
-  - 🔗 [Github Profili](https://github.com/mrbesher)
-- ✨👤✨ Muhammed Ali Şen ✨
-  - 🔗 [Github Profili](https://github.com/shenmali)
-- ✨👤✨ Muhammed Eren Şekkeli ✨
-  - 🔗 [Github Profili](https://github.com/mErenSekkeli)
-- ✨👤✨ Muhammed Kayra Bulut ✨
-  - 🔗 [Github Profili](https://github.com/kaayra2000)
-- ✨👤✨ Rameş Aliyev ✨
-  - 🔗 [Github Profili](https://github.com/ramesaliyev)
-- ✨👤✨ Rayene Bech ✨
-  - 🔗 [Github Profili](https://github.com/rayenebech)
-- ✨👤✨ Sait Yalçın ✨
-  - 🔗 [Github Profili](https://github.com/saityalcn)
+- 💫 **_*Ali Albayrak*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/Ali-Albayrak)
+- 💫 **_*Asude Merve Ekiz*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/asudemerveekiz)
+- 💫 **_*Basel Kelziye*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/baselkelziye)
+- 💫 **_*Besher Alkurdi*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/mrbesher)
+- 💫 **_*Muhammed Ali Şen*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/shenmali)
+- 💫 **_*Muhammed Eren Şekkeli*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/mErenSekkeli)
+- 💫 **_*Muhammed Kayra Bulut*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/kaayra2000)
+- 💫 **_*Rameş Aliyev*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/ramesaliyev)
+- 💫 **_*Rayene Bech*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/rayenebech)
+- 💫 **_*Sait Yalçın*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/saityalcn)
