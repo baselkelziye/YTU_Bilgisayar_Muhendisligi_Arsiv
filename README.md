@@ -1505,29 +1505,29 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Muhammed Ali Şen</i></b> 💫</p>
-<p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Sait Yalçın</i></b> 💫</p>
-<p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Ali Albayrak</i></b> 💫</p>
-<p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Asude Merve Ekiz</i></b> 💫</p>
-<p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</p>
-<p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</p>
-<p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-eren-sekkeli/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Muhammed Kayra Bulut</i></b> 💫</p>
 <p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Rameş Aliyev</i></b> 💫</p>
-<p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramesaliyev/'><b>LinkedIn Profili</b></a></p>
 
 <p align='center'>💫 <b><i>Rayene Bech</i></b> 💫</p>
-<p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/rayenebech99/'><b>LinkedIn Profili</b></a></p>
 
