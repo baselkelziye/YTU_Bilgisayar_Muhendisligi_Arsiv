@@ -1470,57 +1470,64 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 📝 Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
 - 📝 Mesleki seçmeli derslerin çeşitliliği bolognada gördüğünüz kadar bol değil. Genelde hep aynı mesleki seçimlik dersler açılır. Her sene 1-2 tane farklı mesleki seçmeli açılır.
 - 📝 Dersi iyi anlatıp aynı zamanda geçmekte de sizi zorlamayacak hocalar BD, MFA
-## 📚 Hoca Kısaltmaları
+<h2 align='center'>📚 Hoca Kısaltmaları</h2>
 
-- ACK : Doç. Dr. Ali Can Karaca
-- AEL : Dr. Ahmet Elbir
-- BD : Prof. Dr. Banu Diri
-- EU : Dr. Erkan Uslu
-- FÇ : Dr. Furkan Çakmak
-- G1 : Dr. Göksel Biricik
-- GB : Doç. Dr. Gökhan Bilgin
-- HHB : Prof. Dr. Hasan Hüseyin Balık
-- HOİ : Dr. Hamza Osman İlhan
-- HİT : Dr. H. İrem Türkmen
-- MAG : Doç. Dr. M. Amaç Güvensan
-- MEK : Prof. Dr. M. Elif Karslıgil
-- MFA : Prof. Dr. M. Fatih Amasyalı
-- MSA : Doç. Dr. Mehmet Sıddık Aktaş
-- MUK : Dr. M. Utku Kalay
-- NA : Prof. Dr. Nizamettin Aydın
-- OA : Dr. Oğuz Altun
-- OK : Prof. Dr. Oya Kalıpsız
-- SV : Prof. Dr. Songül Varlı
-- SY : Prof. Dr. Sırma Yavuz
-- YES : Dr. Yunus Emre Selçuk
-- ZCT : Dr. Ziya Cihan Tayşi
+<p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
+<p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
+<p align='center'>🔹 <b>BD</b> &emsp; Prof. Dr. Banu Diri 🔹</p>
+<p align='center'>🔹 <b>EU</b> &emsp; Dr. Erkan Uslu 🔹</p>
+<p align='center'>🔹 <b>FÇ</b> &emsp; Dr. Furkan Çakmak 🔹</p>
+<p align='center'>🔹 <b>G1</b> &emsp; Dr. Göksel Biricik 🔹</p>
+<p align='center'>🔹 <b>GB</b> &emsp; Doç. Dr. Gökhan Bilgin 🔹</p>
+<p align='center'>🔹 <b>HHB</b> &emsp; Prof. Dr. Hasan Hüseyin Balık 🔹</p>
+<p align='center'>🔹 <b>HOİ</b> &emsp; Dr. Hamza Osman İlhan 🔹</p>
+<p align='center'>🔹 <b>HİT</b> &emsp; Dr. H. İrem Türkmen 🔹</p>
+<p align='center'>🔹 <b>MAG</b> &emsp; Doç. Dr. M. Amaç Güvensan 🔹</p>
+<p align='center'>🔹 <b>MEK</b> &emsp; Prof. Dr. M. Elif Karslıgil 🔹</p>
+<p align='center'>🔹 <b>MFA</b> &emsp; Prof. Dr. M. Fatih Amasyalı 🔹</p>
+<p align='center'>🔹 <b>MSA</b> &emsp; Doç. Dr. Mehmet Sıddık Aktaş 🔹</p>
+<p align='center'>🔹 <b>MUK</b> &emsp; Dr. M. Utku Kalay 🔹</p>
+<p align='center'>🔹 <b>NA</b> &emsp; Prof. Dr. Nizamettin Aydın 🔹</p>
+<p align='center'>🔹 <b>OA</b> &emsp; Dr. Oğuz Altun 🔹</p>
+<p align='center'>🔹 <b>OK</b> &emsp; Prof. Dr. Oya Kalıpsız 🔹</p>
+<p align='center'>🔹 <b>SV</b> &emsp; Prof. Dr. Songül Varlı 🔹</p>
+<p align='center'>🔹 <b>SY</b> &emsp; Prof. Dr. Sırma Yavuz 🔹</p>
+<p align='center'>🔹 <b>YES</b> &emsp; Dr. Yunus Emre Selçuk 🔹</p>
+<p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
 
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
-
-
-## 🤝 Katkıda Bulunanlar
+<h2 align='center'>🤝 Katkıda Bulunanlar</h2>
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
 
-- 💫 **_*Basel Kelziye*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/baselkelziye)
-  - 🔗 [**LinkedIn Profili**](https://www.linkedin.com/in/basel-kelziye-080997197)
-- 💫 **_*Muhammed Ali Şen*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/shenmali)
-- 💫 **_*Sait Yalçın*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/saityalcn)
-- 💫 **_*Ali Albayrak*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/Ali-Albayrak)
-- 💫 **_*Asude Merve Ekiz*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/asudemerveekiz)
-- 💫 **_*Besher Alkurdi*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/mrbesher)
-- 💫 **_*Muhammed Eren Şekkeli*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/mErenSekkeli)
-- 💫 **_*Muhammed Kayra Bulut*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/kaayra2000)
-- 💫 **_*Rameş Aliyev*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/ramesaliyev)
-- 💫 **_*Rayene Bech*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/rayenebech)
+<p align='center'>💫 <b><i>Basel Kelziye</i></b> 💫</p>
+<p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Muhammed Ali Şen</i></b> 💫</p>
+<p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Sait Yalçın</i></b> 💫</p>
+<p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Ali Albayrak</i></b> 💫</p>
+<p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Asude Merve Ekiz</i></b> 💫</p>
+<p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</p>
+<p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</p>
+<p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Muhammed Kayra Bulut</i></b> 💫</p>
+<p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Rameş Aliyev</i></b> 💫</p>
+<p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a></p>
+
+<p align='center'>💫 <b><i>Rayene Bech</i></b> 💫</p>
+<p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a></p>
+
