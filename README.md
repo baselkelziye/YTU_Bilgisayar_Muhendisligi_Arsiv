@@ -22,6 +22,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 [Yazarın Notları](#%EF%B8%8F-yazarın-notları)
 - 🔗 [Hoca Kısaltmaları](#-hoca-kısaltmaları)
 - 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
+- 🔗 [Yıldız Geçmişi](#star-history)
 
 
 
