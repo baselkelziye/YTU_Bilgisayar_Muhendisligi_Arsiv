@@ -13,6 +13,7 @@ from PyQt5.QtWidgets import (
     QLabel,
     QLineEdit,
     QScrollArea,
+    QComboBox,
 )
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
 from threadler import KatkiKaydetThread
@@ -282,7 +283,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 
 class KatkidaBulunanDuzenleWindow(QDialog):
     def __init__(self, kisi, data, parent):
-        super().__init__()
+        super().__init__(parent)
         self.is_programmatic_close = False
         self.kisi = kisi
         self.data = data
@@ -296,8 +297,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
     def initUI(self):
         self.setWindowTitle(self.title)
         layout = QVBoxLayout(self)
-        self.setMinimumSize(500, 200)
-        self.resize(500, 200)
+        self.setMinimumSize(600, 200)
 
         # Ad ve GitHub Linki için giriş alanları
         self.ad_label = QLabel("Ad")
@@ -314,7 +314,11 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         # Path'i '/' karakterine göre böl ve son parçayı al (genellikle kullanıcı adı)
         github_user = parsed_link.path.strip("/").split("/")[-1]
         self.github_input = QLineEdit(github_user)
-
+        self.katkida_bulunma_orani_label = QLabel("Katkıda Bulunma Oranı")
+        self.katkida_bulunma_orani_label.setAlignment(Qt.AlignCenter)
+        self.katkida_bulunma_orani = QComboBox()
+        self.katkida_bulunma_orani.addItems(KATKIDA_BULUNMA_ORANI_DIZI)
+        self.katkida_bulunma_orani.setCurrentText(self.kisi.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1]))
         # Butonlar için yatay layout
         buttonsLayout = QHBoxLayout()
         self.progressDialog = CustomProgressDialog("Kontrol Ediliyor...", self)
@@ -336,6 +340,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         layout.addWidget(self.ad_input)
         layout.addWidget(self.github_label)
         layout.addWidget(self.github_input)
+        layout.addWidget(self.katkida_bulunma_orani_label)
+        layout.addWidget(self.katkida_bulunma_orani)
         layout.addLayout(buttonsLayout)  # Butonlar için yatay layout'u ekle
 
         self.setLayout(layout)
@@ -402,6 +408,7 @@ class KatkidaBulunanDuzenleWindow(QDialog):
                 github_kullanici_adi,
                 self.data,
                 KATKIDA_BULUNANLAR_JSON_PATH,
+                self.katkida_bulunma_orani.currentText(),
                 self,
             )
             self.thread.finished.connect(self.islemSonucu)

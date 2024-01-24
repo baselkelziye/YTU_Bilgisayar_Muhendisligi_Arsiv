@@ -889,6 +889,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # ComboBox listesini güncelle
         self.hocalarComboBoxlar.append((comboBox, silBtn))
+        QMessageBox.information(self, "Bilgi", "Listeye bir hoca eklendi!")
 
     def silHocaComboBox(self, comboBox, silBtn):
         # ComboBox ve sil butonunu kaldır
