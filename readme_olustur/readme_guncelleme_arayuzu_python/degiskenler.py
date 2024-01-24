@@ -345,8 +345,8 @@ except FileNotFoundError:
     KARA_LISTE = []
 
 # gitgub'dan sonraki kısmını al
-STAR_URL = VARSAYILAN_GITHUB_URL.split("github.com/")[1]
-STAR_HISTORY = f"""
-## Star History
-[![Star History Chart](https://api.star-history.com/svg?repos={STAR_URL}&type=Date)](https://star-history.com/#{STAR_URL}&Date)
+YILDIZ_URL = VARSAYILAN_GITHUB_URL.split("github.com/")[1]
+YILDIZ_GECMISI = f"""
+## Yıldız Geçmişi
+[![Star History Chart](https://api.star-history.com/svg?repos={YILDIZ_URL}&type=Date)](https://star-history.com/#{YILDIZ_URL}&Date)
 """
