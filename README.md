@@ -1503,16 +1503,18 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
 
+- 💫 **_*Basel Kelziye*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/baselkelziye)
+- 💫 **_*Muhammed Ali Şen*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/shenmali)
+- 💫 **_*Sait Yalçın*_** 💫
+  - 🔗 [**Github Profili**](https://github.com/saityalcn)
 - 💫 **_*Ali Albayrak*_** 💫
   - 🔗 [**Github Profili**](https://github.com/Ali-Albayrak)
 - 💫 **_*Asude Merve Ekiz*_** 💫
   - 🔗 [**Github Profili**](https://github.com/asudemerveekiz)
-- 💫 **_*Basel Kelziye*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/baselkelziye)
 - 💫 **_*Besher Alkurdi*_** 💫
   - 🔗 [**Github Profili**](https://github.com/mrbesher)
-- 💫 **_*Muhammed Ali Şen*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/shenmali)
 - 💫 **_*Muhammed Eren Şekkeli*_** 💫
   - 🔗 [**Github Profili**](https://github.com/mErenSekkeli)
 - 💫 **_*Muhammed Kayra Bulut*_** 💫
@@ -1521,5 +1523,3 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
   - 🔗 [**Github Profili**](https://github.com/ramesaliyev)
 - 💫 **_*Rayene Bech*_** 💫
   - 🔗 [**Github Profili**](https://github.com/rayenebech)
-- 💫 **_*Sait Yalçın*_** 💫
-  - 🔗 [**Github Profili**](https://github.com/saityalcn)
