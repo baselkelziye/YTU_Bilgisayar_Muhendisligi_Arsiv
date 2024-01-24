@@ -94,9 +94,10 @@ class HocaKaydetThread(QThread):
 class KatkiEkleThread(QThread):
     finished = pyqtSignal(bool, str)  # İşlem sonucu ve mesaj için sinyal
 
-    def __init__(self, ad, github_kullanici_adi, JSON_DOSYASI, parent=None):
+    def __init__(self, ad, github_kullanici_adi, JSON_DOSYASI, katkida_bulunma_orani,parent=None,):
         super(KatkiEkleThread, self).__init__(parent)
         self.ad = ad
+        self.katkida_bulunma_orani = katkida_bulunma_orani
         self.github_kullanici_adi = github_kullanici_adi
         self.github_url = f"https://github.com/{self.github_kullanici_adi}"
         self.JSON_DOSYASI = JSON_DOSYASI
@@ -138,7 +139,7 @@ class KatkiEkleThread(QThread):
 
                 # Yeni veriyi ekle ve dosyayı güncelle
                 data[KATKIDA_BULUNANLAR].append(
-                    {AD: self.ad, GITHUB_LINK: self.github_url}
+                    {AD: self.ad, GITHUB_LINK: self.github_url, KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani}
                 )
                 with open(self.JSON_DOSYASI, "w", encoding="utf-8") as file:
                     json.dump(data, file, ensure_ascii=False, indent=4)
@@ -150,12 +151,13 @@ class KatkiEkleThread(QThread):
 class KatkiKaydetThread(QThread):
     finished = pyqtSignal(bool, str)  # İşlem sonucu ve mesaj için sinyal
 
-    def __init__(self, kisi, ad, github_kullanici_adi, data, JSON_YOLU, parent=None):
+    def __init__(self, kisi, ad, github_kullanici_adi, data, JSON_YOLU,katkida_bulunma_orani ,parent=None):
         super(KatkiKaydetThread, self).__init__(parent)
         self.kisi = kisi
         self.ad = ad
         self.github_kullanici_adi = github_kullanici_adi
         self.data = data
+        self.katkida_bulunma_orani = katkida_bulunma_orani
         self.github_url = "https://github.com/" + self.github_kullanici_adi
         self.JSON_YOLU = JSON_YOLU
 
@@ -175,6 +177,7 @@ class KatkiKaydetThread(QThread):
         # Değişiklikleri uygula ve JSON dosyasını güncelle
         self.kisi[AD] = self.ad
         self.kisi[GITHUB_LINK] = self.github_url
+        self.kisi[KATKIDA_BULUNMA_ORANI] = self.katkida_bulunma_orani
         try:
             with open(self.JSON_YOLU, "w", encoding="utf-8") as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
