@@ -399,10 +399,13 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
             kisaltma = hoca_kisaltma_olustur(hoca[AD])
             kisaltmalar[kisaltma] = hoca[AD]
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write("## 📚 Hoca Kısaltmaları\n\n")
+        f.write("<h2 align='center'>📚 Hoca Kısaltmaları</h2>\n\n")
         for kisaltma in sorted(kisaltmalar.keys()):
             ad = kisaltmalar[kisaltma]
-            f.write(f"- {kisaltma} : {ad}\n")
+            # Kısaltmayı kalın yap, emoji ile çevrele ve ad ile arasına tab benzeri boşluk ekle
+            f.write(f"<p align='center'>🔹 <b>{kisaltma}</b> &emsp; {ad} 🔹</p>\n")
+
+
 
 
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
@@ -441,21 +444,22 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
 
 
 def readme_katkida_bulunanlar_ekle(veri):
-    # Önce 'katkida_bulunma_orani', sonra 'ad' özelliklerine göre sırala
     veri['katkida_bulunanlar'] = sorted(veri['katkida_bulunanlar'], 
-                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get('katkida_bulunma_orani',KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad'])
-                                        )
+                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get('katkida_bulunma_orani',KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad']))
+
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"\n\n## 🤝 {veri['bolum_adi']}\n\n")
+        # Bölüm başlığını ortala
+        f.write(f"<h2 align='center'>🤝 {veri['bolum_adi']}</h2>\n\n")
         f.write(f"{veri['bolum_aciklamasi']}\n\n")
         for katkida_bulunan in veri["katkida_bulunanlar"]:
-            # Katkıda bulunanların isimlerini kalın ve italik ile vurgula
-            f.write(
-                f"- 💫 **_*{katkida_bulunan.get(AD,'')}*_** 💫\n"
-            )
-            for iletisim_bilgileri in katkida_bulunan.get(ILETISIM_BILGILERI, []):
-                f.write(f"  - 🔗 [**{iletisim_bilgileri.get(BASLIK,'')}**]({iletisim_bilgileri.get(LINK, '')})\n")
-
+            # Katkıda bulunanların isimlerini merkezde ve kalın italik olarak vurgula
+            f.write(f"<p align='center'>💫 <b><i>{katkida_bulunan.get(AD,'')}</i></b> 💫</p>\n")
+            
+            # İletişim bilgilerini yan yana yaz
+            iletisim_bilgileri_html = " &nbsp".join([f"<a href='{bilgi.get(LINK, '')}'><b>{bilgi.get(BASLIK, '')}</b></a>" for bilgi in katkida_bulunan.get(ILETISIM_BILGILERI, [])])
+            if iletisim_bilgileri_html:
+                f.write(f"<p align='center'>{iletisim_bilgileri_html}</p>\n")
+            f.write("\n")
 
 def readmeye_star_history_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:

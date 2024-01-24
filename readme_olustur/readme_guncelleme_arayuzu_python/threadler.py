@@ -140,14 +140,16 @@ class KatkiEkleThread(QThread):
                 self.kisi[AD] = self.ad
                 self.kisi[ILETISIM_BILGILERI] = self.iletisim_bilgileri[ILETISIM_BILGILERI]
                 self.kisi[KATKIDA_BULUNMA_ORANI] = self.katkida_bulunma_orani
+                mesaj = "Katkıda bulunan güncellendi!"
             else:
                 # Yeni veriyi ekle ve dosyayı güncelle
                 self.data[KATKIDA_BULUNANLAR].append(
                     {AD: self.ad, ILETISIM_BILGILERI: self.iletisim_bilgileri[ILETISIM_BILGILERI], KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani}
                 )
+                mesaj = "Katkıda bulunan eklendi!"
             with open(self.JSON_DOSYASI, "w", encoding="utf-8") as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
-            self.finished.emit(True, "Katkıda bulunan eklendi!")
+            self.finished.emit(True, mesaj)
         except Exception as e:
             self.finished.emit(False, f"Bir hata oluştu: {e}")
 
