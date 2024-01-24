@@ -451,8 +451,10 @@ def readme_katkida_bulunanlar_ekle(veri):
         for katkida_bulunan in veri["katkida_bulunanlar"]:
             # Katkıda bulunanların isimlerini kalın ve italik ile vurgula
             f.write(
-                f"- 💫 **_*{katkida_bulunan[AD]}*_** 💫\n  - 🔗 [**Github Profili**]({katkida_bulunan['github_link']})\n"
+                f"- 💫 **_*{katkida_bulunan.get(AD,'')}*_** 💫\n"
             )
+            for iletisim_bilgileri in katkida_bulunan.get(ILETISIM_BILGILERI, []):
+                f.write(f"  - 🔗 [**{iletisim_bilgileri.get(BASLIK,'')}**]({iletisim_bilgileri.get(LINK, '')})\n")
 
 
 def readmeye_star_history_ekle():

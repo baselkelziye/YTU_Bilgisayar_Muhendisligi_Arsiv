@@ -733,6 +733,10 @@
                 {
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
+                },
+                {
+                    "ad": "Dr. Ziya Cihan Tayşi",
+                    "kisaltma": "ZCT"
                 }
             ],
             "guncel_mi": true,
@@ -862,6 +866,10 @@
                 {
                     "kisaltma": "FÇ",
                     "ad": "Dr. Furkan Çakmak"
+                },
+                {
+                    "ad": "Dr. Ziya Cihan Tayşi",
+                    "kisaltma": "ZCT"
                 }
             ],
             "oy_sayisi": 2,
@@ -880,7 +888,12 @@
             ],
             "kolaylik_puani": 40,
             "gereklilik_puani": 83,
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "ad": "Prof. Dr. Hasan Hüseyin Balık",
+                    "kisaltma": "HHB"
+                }
+            ],
             "oy_sayisi": 3,
             "guncel_mi": false,
             "faydali_olabilecek_kaynaklar": [
@@ -976,7 +989,12 @@
             "tip": "Mesleki Seçmeli",
             "kolaylik_puani": 75,
             "gereklilik_puani": 50,
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "ad": "Prof. Dr. Hasan Hüseyin Balık",
+                    "kisaltma": "HHB"
+                }
+            ],
             "oy_sayisi": 2,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
@@ -1204,7 +1222,12 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 0,
             "gereklilik_puani": 0,
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "ad": "Dr. Ziya Cihan Tayşi",
+                    "kisaltma": "ZCT"
+                }
+            ],
             "guncel_mi": true
         },
         {
