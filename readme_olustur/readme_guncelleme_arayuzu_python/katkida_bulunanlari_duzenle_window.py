@@ -15,15 +15,15 @@ from PyQt5.QtWidgets import (
     QScrollArea,
     QComboBox,
 )
+import re
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
-from threadler import KatkiKaydetThread
+from threadler import KatkiEkleThread
 from PyQt5.QtCore import Qt
-from progress_dialog import CustomProgressDialog
 from degiskenler import *
 from PyQt5.QtGui import QIcon
 from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
-
+from katkida_bulunan_ekle_window import BaseKatkidaBulunanWindow
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, "tr_TR.UTF-8")
@@ -239,7 +239,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             [
                 kisi
                 for kisi in self.data[KATKIDA_BULUNANLAR]
-                if kisi[AD].strip() and kisi[GITHUB_LINK].strip()
+                if kisi[AD].strip() 
             ],
             key=lambda kisi: locale.strxfrm(kisi[AD].lower()),
         )
@@ -274,55 +274,32 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 
     def acKatkidaBulunanEkle(self):
         # Katkıda Bulunan Ekle penceresini aç
-        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self)
+        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self, self.data)
 
     def duzenle(self, kisi):
         self.duzenlemePenceresi = KatkidaBulunanDuzenleWindow(kisi, self.data, self)
         self.duzenlemePenceresi.show()
 
 
-class KatkidaBulunanDuzenleWindow(QDialog):
+class KatkidaBulunanDuzenleWindow(BaseKatkidaBulunanWindow):
     def __init__(self, kisi, data, parent):
-        super().__init__(parent)
-        self.is_programmatic_close = False
+        self.title = "Katkıda Bulunanı Güncelle"
         self.kisi = kisi
         self.data = data
         self.parent = parent
-        self.title = "Katkıda Bulunanı Güncelle"
-        self.setModal(True)
-        self.initUI()
+        super().__init__(parent)
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
     def initUI(self):
+        super().initUI()
         self.setWindowTitle(self.title)
-        layout = QVBoxLayout(self)
-        self.setMinimumSize(600, 200)
-
-        # Ad ve GitHub Linki için giriş alanları
-        self.ad_label = QLabel("Ad")
-        self.ad_label.setAlignment(Qt.AlignCenter)
-        self.ad_input = QLineEdit(self.kisi[AD])
-        self.github_label = QLabel("GitHub Adı")
-        self.github_label.setAlignment(Qt.AlignCenter)
+        self.ad_input.setText(self.kisi[AD])
         # Örnek bir GitHub linki
-        github_link = self.kisi[GITHUB_LINK]
-
-        # URL'yi ayrıştır
-        parsed_link = urlparse(github_link)
-
-        # Path'i '/' karakterine göre böl ve son parçayı al (genellikle kullanıcı adı)
-        github_user = parsed_link.path.strip("/").split("/")[-1]
-        self.github_input = QLineEdit(github_user)
-        self.katkida_bulunma_orani_label = QLabel("Katkıda Bulunma Oranı")
-        self.katkida_bulunma_orani_label.setAlignment(Qt.AlignCenter)
-        self.katkida_bulunma_orani = QComboBox()
-        self.katkida_bulunma_orani.addItems(KATKIDA_BULUNMA_ORANI_DIZI)
+        self.iletisim_bilgileri = self.kisi.get(ILETISIM_BILGILERI, [])
         self.katkida_bulunma_orani.setCurrentText(self.kisi.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1]))
         # Butonlar için yatay layout
         buttonsLayout = QHBoxLayout()
-        self.progressDialog = CustomProgressDialog("Kontrol Ediliyor...", self)
-        self.progressDialog.close()
         # Değişiklikleri Kaydet butonu
         self.kaydet_btn = QPushButton("Değişiklikleri Kaydet", self)
         self.kaydet_btn.setStyleSheet(EKLE_BUTONU_STILI)
@@ -334,18 +311,8 @@ class KatkidaBulunanDuzenleWindow(QDialog):
         self.sil_btn.setStyleSheet(SIL_BUTONU_STILI)
         self.sil_btn.clicked.connect(self.sil)
         buttonsLayout.addWidget(self.sil_btn)
-
-        # Arayüze elemanları ekle
-        layout.addWidget(self.ad_label)
-        layout.addWidget(self.ad_input)
-        layout.addWidget(self.github_label)
-        layout.addWidget(self.github_input)
-        layout.addWidget(self.katkida_bulunma_orani_label)
-        layout.addWidget(self.katkida_bulunma_orani)
-        layout.addLayout(buttonsLayout)  # Butonlar için yatay layout'u ekle
-
-        self.setLayout(layout)
-        self.center()
+        self.layout.addLayout(buttonsLayout)
+        self.iletisimBilgileriniYukle()
         self.show()
 
     def closeEvent(self, event):
@@ -383,38 +350,6 @@ class KatkidaBulunanDuzenleWindow(QDialog):
                 # Eğer kişi listede bulunamazsa
                 QMessageBox.critical(self, "Hata", "Silinecek kişi bulunamadı.")
 
-    def center(self):
-        # Pencereyi ekranın ortasına al
-        qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
-        qr.moveCenter(cp)
-        self.move(qr.topLeft())
-
-    def kaydet(self):
-        emin_mi = QMessageBox.question(
-            self,
-            "Onay",
-            "Değişiklikleri kaydetmek istediğinden emin misin?",
-            QMessageBox.Yes | QMessageBox.No,
-        )
-
-        if emin_mi == QMessageBox.Yes:
-            ad = self.ad_input.text()
-            github_kullanici_adi = self.github_input.text()
-
-            self.thread = KatkiKaydetThread(
-                self.kisi,
-                ad,
-                github_kullanici_adi,
-                self.data,
-                KATKIDA_BULUNANLAR_JSON_PATH,
-                self.katkida_bulunma_orani.currentText(),
-                self,
-            )
-            self.thread.finished.connect(self.islemSonucu)
-            # ProgressDialog'u göster
-            self.progressDialog.show()
-            self.thread.start()
 
     def islemSonucu(self, success, message):
         self.progressDialog.hide()
@@ -425,3 +360,11 @@ class KatkidaBulunanDuzenleWindow(QDialog):
             self.close()
         else:
             QMessageBox.warning(self, "Hata", message)
+    def iletisimBilgileriniYukle(self):
+        try:
+            for idx, iletisim_bilgisi in enumerate(self.iletisim_bilgileri):
+                baslik = iletisim_bilgisi.get(BASLIK,"")
+                link = iletisim_bilgisi.get(LINK,"")
+                self.iletisimBilgisiEkle(baslik,link)
+        except Exception as e:
+            QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
