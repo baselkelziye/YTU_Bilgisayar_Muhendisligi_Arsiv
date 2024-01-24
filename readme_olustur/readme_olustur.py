@@ -445,8 +445,9 @@ def readme_katkida_bulunanlar_ekle(veri):
         f.write(f"\n\n## 🤝 {veri['bolum_adi']}\n\n")
         f.write(f"{veri['bolum_aciklamasi']}\n\n")
         for katkida_bulunan in veri["katkida_bulunanlar"]:
+            # Katkıda bulunanların isimlerini kalın ve italik ile vurgula
             f.write(
-                f"- ✨👤✨ {katkida_bulunan[AD]} ✨\n  - 🔗 [Github Profili]({katkida_bulunan['github_link']})\n"
+                f"- 💫 **_*{katkida_bulunan[AD]}*_** 💫\n  - 🔗 [**Github Profili**]({katkida_bulunan['github_link']})\n"
             )
 
 
@@ -577,11 +578,12 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
                     for oneri in oneriler[ONERILER]:
                         f.write(f"- {oneri}\n")
         f.write("\n## 📖 Faydalı Olabilecek Kaynaklar\n\n")
-        f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
         if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
             # Faydalı olabilecek kaynaklar
             for kaynak in ders[FAYDALI_OLABILECEK_KAYNAKLAR]:
-                f.write(f"- {kaynak}\n")
+                f.write(f"- 📄 {kaynak} ✨\n")
+        
+        f.write(GENEL_CIKMIS_SORULAR_METNI)
         if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders[DERSI_VEREN_HOCALAR]:
@@ -739,8 +741,8 @@ def ders_bilgilerini_readme_ile_birlestir(
                     # Kitap emoji, kaynakları temsil eder
                     if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
                         for kaynak in ders[FAYDALI_OLABILECEK_KAYNAKLAR]:
-                            f.write(f"- {kaynak}\n")
-                    f.write(f"- 📄 [Çıkmış Sorular]({CIKMISLAR_LINKI})\n")
+                            f.write(f"- 📄 {kaynak} ✨\n")
+                    f.write(GENEL_CIKMIS_SORULAR_METNI)
                     if (
                         DERSI_VEREN_HOCALAR in ders
                         and len(ders[DERSI_VEREN_HOCALAR]) > 0
