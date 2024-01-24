@@ -94,32 +94,28 @@ class HocaKaydetThread(QThread):
 class KatkiEkleThread(QThread):
     finished = pyqtSignal(bool, str)  # İşlem sonucu ve mesaj için sinyal
 
-    def __init__(self, ad, github_kullanici_adi, JSON_DOSYASI, katkida_bulunma_orani,parent=None,):
+    def __init__(self, ad,kisi, iletisim_bilgileri, JSON_DOSYASI, katkida_bulunma_orani,data,parent=None,):
         super(KatkiEkleThread, self).__init__(parent)
         self.ad = ad
+        self.kisi = kisi
+        self.data = data
         self.katkida_bulunma_orani = katkida_bulunma_orani
-        self.github_kullanici_adi = github_kullanici_adi
-        self.github_url = f"https://github.com/{self.github_kullanici_adi}"
+        self.iletisim_bilgileri = iletisim_bilgileri
         self.JSON_DOSYASI = JSON_DOSYASI
 
     def run(self):
         try:
-            # JSON dosyasını aç ve oku
-            try:
-                with open(self.JSON_DOSYASI, "r+", encoding="utf-8") as file:
-                    data = json.load(file)
-            except FileNotFoundError:
-                data = {KATKIDA_BULUNANLAR: []}
-            if BOLUM_ADI not in data:
-                data[BOLUM_ADI] = "Katkıda Bulunanlar"
-            if BOLUM_ACIKLAMASI not in data:
-                data[
+            if BOLUM_ADI not in self.data:
+                self.data[BOLUM_ADI] = "Katkıda Bulunanlar"
+            if BOLUM_ACIKLAMASI not in self.data:
+                self.data[
                     BOLUM_ACIKLAMASI
                 ] = "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
 
-            if not self.ad or not self.github_kullanici_adi:
-                self.finished.emit(False, "Ad ve GitHub kullanıcı adı boş olamaz!")
+            if not self.ad:
+                self.finished.emit(False, "Ad kullanıcı adı boş olamaz!")
                 return
+            """
             # Kontrolleri gerçekleştir
             if any(
                 kisi[AD].lower() == self.ad.lower() for kisi in data[KATKIDA_BULUNANLAR]
@@ -130,60 +126,30 @@ class KatkiEkleThread(QThread):
                 for kisi in data[KATKIDA_BULUNANLAR]
             ):
                 self.finished.emit(False, "Bu GitHub linki zaten eklenmiş!")
-            else:
+            else:"""
                 # GitHub URL'sinin varlığını kontrol et
-                response = requests.get(self.github_url)
+            for iletisim_bilgileri in self.iletisim_bilgileri[ILETISIM_BILGILERI]:
+                link = iletisim_bilgileri.get(LINK, None)
+                response = requests.get(link)
                 if response.status_code == 404:
-                    self.finished.emit(False, "GitHub kullanıcı adı geçerli değil!")
+                    self.finished.emit(False, f"{link} linki geçerli değil!")
                     return
-
+            
+            # Değişiklikleri uygula ve JSON dosyasını güncelle
+            if self.kisi is not None:
+                self.kisi[AD] = self.ad
+                self.kisi[ILETISIM_BILGILERI] = self.iletisim_bilgileri[ILETISIM_BILGILERI]
+                self.kisi[KATKIDA_BULUNMA_ORANI] = self.katkida_bulunma_orani
+            else:
                 # Yeni veriyi ekle ve dosyayı güncelle
-                data[KATKIDA_BULUNANLAR].append(
-                    {AD: self.ad, GITHUB_LINK: self.github_url, KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani}
+                self.data[KATKIDA_BULUNANLAR].append(
+                    {AD: self.ad, ILETISIM_BILGILERI: self.iletisim_bilgileri[ILETISIM_BILGILERI], KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani}
                 )
-                with open(self.JSON_DOSYASI, "w", encoding="utf-8") as file:
-                    json.dump(data, file, ensure_ascii=False, indent=4)
-                self.finished.emit(True, "Katkıda bulunan eklendi!")
+            with open(self.JSON_DOSYASI, "w", encoding="utf-8") as file:
+                json.dump(self.data, file, ensure_ascii=False, indent=4)
+            self.finished.emit(True, "Katkıda bulunan eklendi!")
         except Exception as e:
             self.finished.emit(False, f"Bir hata oluştu: {e}")
-
-
-class KatkiKaydetThread(QThread):
-    finished = pyqtSignal(bool, str)  # İşlem sonucu ve mesaj için sinyal
-
-    def __init__(self, kisi, ad, github_kullanici_adi, data, JSON_YOLU,katkida_bulunma_orani ,parent=None):
-        super(KatkiKaydetThread, self).__init__(parent)
-        self.kisi = kisi
-        self.ad = ad
-        self.github_kullanici_adi = github_kullanici_adi
-        self.data = data
-        self.katkida_bulunma_orani = katkida_bulunma_orani
-        self.github_url = "https://github.com/" + self.github_kullanici_adi
-        self.JSON_YOLU = JSON_YOLU
-
-    def run(self):
-        # GitHub linkinin varlığını kontrol et
-        try:
-            response = requests.get(self.github_url)
-            if response.status_code == 404:
-                self.finished.emit(False, "GitHub linki geçerli değil!")
-                return
-        except requests.exceptions.RequestException as e:
-            self.finished.emit(
-                False, f"GitHub linki kontrol edilirken bir hata oluştu: {e}"
-            )
-            return
-
-        # Değişiklikleri uygula ve JSON dosyasını güncelle
-        self.kisi[AD] = self.ad
-        self.kisi[GITHUB_LINK] = self.github_url
-        self.kisi[KATKIDA_BULUNMA_ORANI] = self.katkida_bulunma_orani
-        try:
-            with open(self.JSON_YOLU, "w", encoding="utf-8") as file:
-                json.dump(self.data, file, ensure_ascii=False, indent=4)
-            self.finished.emit(True, "Katkıda bulunan güncellendi!")
-        except Exception as e:
-            self.finished.emit(False, f"Dosya yazılırken bir hata oluştu: {e}")
 
 
 def enqueue_output(out, queue):

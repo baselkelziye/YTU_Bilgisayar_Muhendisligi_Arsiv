@@ -53,10 +53,15 @@ EN_POPULER_HOCA = "en_populer_hoca"
 KATKIDA_BULUNANLAR = "katkida_bulunanlar"
 GITHUB_LINK = "github_link"
 KATKIDA_BULUNMA_ORANI = "katkida_bulunma_orani"
+ILETISIM_BILGILERI = "iletisim_bilgileri"
 ## GIRIS SAYFASINA OZEL DEGISKENLER
 ICINDEKILER = "icindekiler"
 ## DONEM SAYFASINA OZEL DEGISKENLER
 GENEL_TAVSIYELER = "genel_tavsiyeler"
+
+# ÇAPA DESENİ
+capa_deseni = r"\[(.*?)\]\((.*?)\)"
+
 # LINKLER
 GITHUB_URL_ANAHTARI = "github_url"
 CIKMISLAR_ANAHTARI = "cikmislar"
