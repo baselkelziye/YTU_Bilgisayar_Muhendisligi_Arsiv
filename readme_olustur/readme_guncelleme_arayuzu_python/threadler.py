@@ -2,7 +2,6 @@ import subprocess
 from PyQt5.QtCore import QThread, pyqtSignal
 import json
 import requests
-import select
 from degiskenler import *
 import subprocess
 import threading
