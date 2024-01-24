@@ -51,7 +51,6 @@ def execute_command(command):
             error_output = process.stderr.read()
             if error_output:
                 custom_write_error(error_output + "\n")
-                return False
             # İşlem sonucunu kontrol et
             process.wait()
             if process.returncode != 0:
@@ -63,7 +62,7 @@ def execute_command(command):
     return True
 
 
-def update_repository():
+def update_repository(deneme_sayisi=0):
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
     custom_write("Güncellemeler uygulanıyor...\n")
@@ -121,6 +120,8 @@ def update_repository():
                 "Git push sırasında conflict oluştu, script durduruluyor.\n"
             )
             return
+        custom_write(f"{deneme_sayisi}. güncelleme başarıyla uygulandı.\n")
+        time.sleep(10)
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
         error_message = f"Script hatası: {e}\n"
@@ -153,7 +154,7 @@ while True:
     for key, url in urls.items():
         if check_for_updates(key, url):
             custom_write(f"Güncelleme tespit edildi: {key}\n")
-            update_repository()
+            update_repository(i)
         else:
             custom_write(f"Güncelleme yok: {key}\n")
     i += 1
