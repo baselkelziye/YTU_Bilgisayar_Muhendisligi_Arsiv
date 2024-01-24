@@ -94,7 +94,16 @@ class HocaKaydetThread(QThread):
 class KatkiEkleThread(QThread):
     finished = pyqtSignal(bool, str)  # İşlem sonucu ve mesaj için sinyal
 
-    def __init__(self, ad,kisi, iletisim_bilgileri, JSON_DOSYASI, katkida_bulunma_orani,data,parent=None,):
+    def __init__(
+        self,
+        ad,
+        kisi,
+        iletisim_bilgileri,
+        JSON_DOSYASI,
+        katkida_bulunma_orani,
+        data,
+        parent=None,
+    ):
         super(KatkiEkleThread, self).__init__(parent)
         self.ad = ad
         self.kisi = kisi
@@ -127,24 +136,30 @@ class KatkiEkleThread(QThread):
             ):
                 self.finished.emit(False, "Bu GitHub linki zaten eklenmiş!")
             else:"""
-                # GitHub URL'sinin varlığını kontrol et
+            # GitHub URL'sinin varlığını kontrol et
             for iletisim_bilgileri in self.iletisim_bilgileri[ILETISIM_BILGILERI]:
                 link = iletisim_bilgileri.get(LINK, None)
                 response = requests.get(link)
                 if response.status_code == 404:
                     self.finished.emit(False, f"{link} linki geçerli değil!")
                     return
-            
+
             # Değişiklikleri uygula ve JSON dosyasını güncelle
             if self.kisi is not None:
                 self.kisi[AD] = self.ad
-                self.kisi[ILETISIM_BILGILERI] = self.iletisim_bilgileri[ILETISIM_BILGILERI]
+                self.kisi[ILETISIM_BILGILERI] = self.iletisim_bilgileri[
+                    ILETISIM_BILGILERI
+                ]
                 self.kisi[KATKIDA_BULUNMA_ORANI] = self.katkida_bulunma_orani
                 mesaj = "Katkıda bulunan güncellendi!"
             else:
                 # Yeni veriyi ekle ve dosyayı güncelle
                 self.data[KATKIDA_BULUNANLAR].append(
-                    {AD: self.ad, ILETISIM_BILGILERI: self.iletisim_bilgileri[ILETISIM_BILGILERI], KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani}
+                    {
+                        AD: self.ad,
+                        ILETISIM_BILGILERI: self.iletisim_bilgileri[ILETISIM_BILGILERI],
+                        KATKIDA_BULUNMA_ORANI: self.katkida_bulunma_orani,
+                    }
                 )
                 mesaj = "Katkıda bulunan eklendi!"
             with open(self.JSON_DOSYASI, "w", encoding="utf-8") as file:
@@ -174,14 +189,13 @@ class CMDScriptRunnerThread(QThread):
     def run(self):
         son_hata_mesaj = ""
         son_bilgi_mesaj = ""
-        encoding = "iso-8859-1" if "win" in sys.platform else "utf-8"
         process = subprocess.Popen(
             self.cmd,
             shell=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
-            encoding=encoding,  # iso-8859-1 encoding ekledik.
+            encoding=default_encoding,  # iso-8859-1 encoding ekledik.
         )
         q_stdout = queue.Queue()
         q_stderr = queue.Queue()
@@ -208,12 +222,16 @@ class CMDScriptRunnerThread(QThread):
 
                 # stdout ve stderr kuyruklarını kontrol et.
                 while not q_stdout.empty():
-                    son_bilgi_mesaj = q_stdout.get().strip()
-                    self.info.emit(son_bilgi_mesaj)
+                    tmp_msj = q_stdout.get().strip()
+                    if tmp_msj != "":
+                        son_bilgi_mesaj = tmp_msj
+                        self.info.emit(son_bilgi_mesaj)
 
                 while not q_stderr.empty():
-                    son_hata_mesaj = q_stderr.get().strip()
-                    self.info.emit(son_hata_mesaj)
+                    tmp_msj = q_stderr.get().strip()
+                    if tmp_msj != "":
+                        son_hata_mesaj = tmp_msj
+                        self.info.emit(son_hata_mesaj)
 
                 # Süreç durumu kontrol et.
                 if process.poll() is not None:
