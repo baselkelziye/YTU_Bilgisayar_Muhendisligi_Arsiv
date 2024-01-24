@@ -442,6 +442,7 @@ class HocaDuzenlemeWindow(QDialog):
 
         # ComboBox listesini güncelle
         self.derslerComboBoxlar.append((comboBox, silBtn))
+        QMessageBox.information(self, "Başarılı", "Listeye bir ders eklendi.")
 
     def silDersComboBox(self, comboBox, silBtn):
         # ComboBox ve sil butonunu kaldır

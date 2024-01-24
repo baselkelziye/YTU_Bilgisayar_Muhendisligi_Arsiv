@@ -441,6 +441,10 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
 
 
 def readme_katkida_bulunanlar_ekle(veri):
+    # Önce 'katkida_bulunma_orani', sonra 'ad' özelliklerine göre sırala
+    veri['katkida_bulunanlar'] = sorted(veri['katkida_bulunanlar'], 
+                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get('katkida_bulunma_orani',KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad'])
+                                        )
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(f"\n\n## 🤝 {veri['bolum_adi']}\n\n")
         f.write(f"{veri['bolum_aciklamasi']}\n\n")
