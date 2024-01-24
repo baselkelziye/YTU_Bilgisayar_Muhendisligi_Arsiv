@@ -23,8 +23,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### ℹ️ Dersin içeriği güncel değil
 - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
@@ -45,7 +45,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Genel Staj
 
@@ -63,7 +63,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mesleki Hukuk ve Etik
 
@@ -81,7 +81,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
@@ -105,8 +105,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir.
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
