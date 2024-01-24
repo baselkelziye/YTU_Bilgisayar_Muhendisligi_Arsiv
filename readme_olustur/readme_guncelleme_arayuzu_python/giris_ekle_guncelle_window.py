@@ -164,33 +164,30 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             QMessageBox.critical(self, "Hata", f"Dosya yazılırken bir hata oluştu: {e}")
 
     def notEkle(self):
-        self.duzenlemePenceresi = IcindekilerDuzenleWindow(None, self.data, self)
+        self.duzenlemePenceresi = IcindekilerDuzenleWindow(None, self.data,"",ICINDEKILER, GIRIS_JSON_PATH, self)
         self.duzenlemePenceresi.show()
 
     def notDuzenle(self, idx):
-        self.duzenlemePenceresi = IcindekilerDuzenleWindow(idx, self.data, self)
+        self.duzenlemePenceresi = IcindekilerDuzenleWindow(idx, self.data, self.data.get(ICINDEKILER,[""])[idx],ICINDEKILER, GIRIS_JSON_PATH, self)
         self.duzenlemePenceresi.show()
 
 
 class IcindekilerDuzenleWindow(QDialog):
-    def __init__(self, idx, data, parent):
-        super().__init__()
+    def __init__(self, idx, data, metin, key, json_path, parent):
+        super().__init__(parent)
         self.parent = parent
         self.idx = idx
         self.setModal(True)
         self.data = data
-        if self.idx is not None and self.data:
-            metin = self.data[ICINDEKILER][self.idx]
-        else:
-            metin = ""
-        desen = r"\[(.*?)\]\((.*?)\)"
-        eslesme = re.search(desen, metin)
+        self.key = key
+        self.json_path = json_path
+        eslesme = re.search(capa_deseni, metin)
         self.capa = None
         self.baslik = None
         # eşleşme var mı kontrolü
         if eslesme:
             self.baslik = eslesme.group(1)
-            # eşleşme iki tane varsa ikincisi çapa oluyor büyüktür 2 kotnrolü
+            # eşleşme iki tane varsa ikincisi çapa oluyor büyüktür 2 kontrolü
             if eslesme.lastindex > 1:
                 self.capa = eslesme.group(2)
         self.initUI()
@@ -260,20 +257,20 @@ class IcindekilerDuzenleWindow(QDialog):
             return
         yeni_icindekiler = f"[{baslik}]({capa})"
         if self.idx is None:
-            self.data[ICINDEKILER].append(yeni_icindekiler)
+            self.data[self.key].append(yeni_icindekiler)
         else:
-            self.data[ICINDEKILER][self.idx] = yeni_icindekiler
+            self.data[self.key][self.idx] = yeni_icindekiler
 
         self.kaydetVeKapat()
 
     def sil(self):
         if self.idx is not None:
-            del self.data[ICINDEKILER][self.idx]
+            del self.data[self.key][self.idx]
             self.kaydetVeKapat()
 
     def kaydetVeKapat(self):
         try:
-            with open(GIRIS_JSON_PATH, "w", encoding="utf-8") as file:
+            with open(self.json_path, "w", encoding="utf-8") as file:
                 json.dump(self.data, file, ensure_ascii=False, indent=4)
             QMessageBox.information(self, "Başarılı", "İçindekiler güncellendi!")
             self.parent.notlariYenile()
