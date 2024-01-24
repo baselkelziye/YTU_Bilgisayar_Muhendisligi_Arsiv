@@ -8,9 +8,8 @@ from PyQt5.QtWidgets import (
     QComboBox,
     QWidget,
     QScrollArea,
-    QHBoxLayout
+    QHBoxLayout,
 )
-import re
 from threadler import KatkiEkleThread
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
@@ -18,11 +17,13 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 from close_event import closeEventHandler
 from metin_islemleri import kisaltMetin
+
+
 class BaseKatkidaBulunanWindow(QDialog):
     def __init__(self, parent):
         super().__init__(parent)
         self.setModal(True)
-        self.iletisim_bilgisi_sayisi=0
+        self.iletisim_bilgisi_sayisi = 0
         self.iletisim_bilgileri_dizisi = {}
         self.is_programmatic_close = False
         self.initUI()
@@ -47,8 +48,12 @@ class BaseKatkidaBulunanWindow(QDialog):
         self.katkida_bulunma_orani.setCurrentText(KATKIDA_BULUNMA_ORANI_DIZI[-1])
         # Not ekleme butonu
         self.iletisimBilgisiEkleBtn = QPushButton("İletişim Bilgisi Ekle", self)
-        self.iletisimBilgisiEkleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan, beyaz yazı
-        self.iletisimBilgisiEkleBtn.clicked.connect(lambda: self.iletisimBilgisiEkle("",""))
+        self.iletisimBilgisiEkleBtn.setStyleSheet(
+            EKLE_BUTONU_STILI
+        )  # Yeşil arka plan, beyaz yazı
+        self.iletisimBilgisiEkleBtn.clicked.connect(
+            lambda: self.iletisimBilgisiEkle("", "")
+        )
         # Not sayısını gösteren etiket
         self.iletisimBilgisiLabel = QLabel("Toplam 0 iletişim bilgisi")
         self.iletisimBilgisiLabel.setAlignment(Qt.AlignCenter)
@@ -59,7 +64,9 @@ class BaseKatkidaBulunanWindow(QDialog):
 
         # Linkleri gösterecek iç içe geçmiş widget'lar oluştur
         self.scrollWidget = QWidget()
-        self.iletisimBilgisiLayout = QVBoxLayout(self.scrollWidget)  # Linkler için QVBoxLayout
+        self.iletisimBilgisiLayout = QVBoxLayout(
+            self.scrollWidget
+        )  # Linkler için QVBoxLayout
 
         self.scrollArea.setWidget(self.scrollWidget)  # ScrollArea'ya widget ekle
         # Arayüze elemanları ekle
@@ -72,6 +79,7 @@ class BaseKatkidaBulunanWindow(QDialog):
         self.layout.addWidget(self.scrollArea)  # Ana layout'a ScrollArea ekle
 
         self.setLayout(self.layout)
+
     def iletisimBilgisiEkle(self, baslik="", link=""):
         self.iletisim_bilgisi_sayisi += 1
         text_layout = QHBoxLayout()
@@ -96,9 +104,16 @@ class BaseKatkidaBulunanWindow(QDialog):
 
         # Layout'u ana QVBoxLayout'e ekle
         self.iletisimBilgisiLayout.addLayout(text_layout)
-        self.iletisimBilgisiLabel.setText("Toplam {} iletişim bilgisi".format(self.iletisim_bilgisi_sayisi))
+        self.iletisimBilgisiLabel.setText(
+            "Toplam {} iletişim bilgisi".format(self.iletisim_bilgisi_sayisi)
+        )
         if baslik == "" and link == "":
-            QMessageBox.information(self, "Bilgi", "İletişim bilgisi başarıyla eklendi! Göremiyorsanız aşağıya doğru kaydırın.")
+            QMessageBox.information(
+                self,
+                "Bilgi",
+                "İletişim bilgisi başarıyla eklendi! Göremiyorsanız aşağıya doğru kaydırın.",
+            )
+
     def silSatir(self, layout):
         self.iletisim_bilgisi_sayisi -= 1
         # Belirtilen layout içindeki widget'ları temizle
@@ -110,7 +125,10 @@ class BaseKatkidaBulunanWindow(QDialog):
         # Layout'u ana QVBoxLayout'den çıkar ve temizle
         self.iletisimBilgisiLayout.removeItem(layout)
         layout.deleteLater()
-        self.iletisimBilgisiLabel.setText("Toplam {} iletişim bilgisi".format(self.iletisim_bilgisi_sayisi))
+        self.iletisimBilgisiLabel.setText(
+            "Toplam {} iletişim bilgisi".format(self.iletisim_bilgisi_sayisi)
+        )
+
     def kaydet(self):
         ad = self.ad_input.text()
         if ad == "":
@@ -139,6 +157,7 @@ class BaseKatkidaBulunanWindow(QDialog):
             # ProgressDialog'u göster
             self.progressDialog.show()
             self.thread.start()
+
     def iletisimBilgileriYukle(self):
         self.iletisim_bilgileri_dizisi[ILETISIM_BILGILERI] = []
         for i in range(self.iletisimBilgisiLayout.count()):
@@ -157,8 +176,10 @@ class BaseKatkidaBulunanWindow(QDialog):
                     {BASLIK: iletisim_bilgisi_baslik, LINK: iletisim_bilgisi_link}
                 )
         return True
+
+
 class KatkidaBulunanEkleWindow(BaseKatkidaBulunanWindow):
-    def __init__(self, data ,parent):
+    def __init__(self, data, parent):
         self.title = "Katkıda Bulunan Ekle"
         super().__init__(parent)
         self.parent = parent
