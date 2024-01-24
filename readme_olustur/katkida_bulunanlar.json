@@ -1,46 +1,55 @@
 {
-    "katkida_bulunanlar": [
-        {
-            "ad": "Ali Albayrak",
-            "github_link": "https://github.com/Ali-Albayrak"
-        },
-        {
-            "ad": "Asude Merve Ekiz",
-            "github_link": "https://github.com/asudemerveekiz"
-        },
-        {
-            "ad": "Basel Kelziye",
-            "github_link": "https://github.com/baselkelziye"
-        },
-        {
-            "ad": "Besher Alkurdi",
-            "github_link": "https://github.com/mrbesher"
-        },
-        {
-            "ad": "Muhammed Ali Şen",
-            "github_link": "https://github.com/shenmali"
-        },
-        {
-            "ad": "Muhammed Eren Şekkeli",
-            "github_link": "https://github.com/mErenSekkeli"
-        },
-        {
-            "ad": "Muhammed Kayra Bulut",
-            "github_link": "https://github.com/kaayra2000"
-        },
-        {
-            "ad": "Rameş Aliyev",
-            "github_link": "https://github.com/ramesaliyev"
-        },
-        {
-            "ad": "Rayene Bech",
-            "github_link": "https://github.com/rayenebech"
-        },
-        {
-            "ad": "Sait Yalçın",
-            "github_link": "https://github.com/saityalcn"
-        }
-    ],
-    "bolum_adi": "Katkıda Bulunanlar",
-    "bolum_aciklamasi": "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
+  "katkida_bulunanlar": [
+    {
+      "ad": "Ali Albayrak",
+      "github_link": "https://github.com/Ali-Albayrak",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Asude Merve Ekiz",
+      "github_link": "https://github.com/asudemerveekiz",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Basel Kelziye",
+      "github_link": "https://github.com/baselkelziye",
+      "katkida_bulunma_orani": "Çok"
+    },
+    {
+      "ad": "Besher Alkurdi",
+      "github_link": "https://github.com/mrbesher",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Muhammed Ali Şen",
+      "github_link": "https://github.com/shenmali",
+      "katkida_bulunma_orani": "Orta"
+    },
+    {
+      "ad": "Muhammed Eren Şekkeli",
+      "github_link": "https://github.com/mErenSekkeli",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Muhammed Kayra Bulut",
+      "github_link": "https://github.com/kaayra2000"
+    },
+    {
+      "ad": "Rameş Aliyev",
+      "github_link": "https://github.com/ramesaliyev",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Rayene Bech",
+      "github_link": "https://github.com/rayenebech",
+      "katkida_bulunma_orani": "Az"
+    },
+    {
+      "ad": "Sait Yalçın",
+      "github_link": "https://github.com/saityalcn",
+      "katkida_bulunma_orani": "Orta"
+    }
+  ],
+  "bolum_adi": "Katkıda Bulunanlar",
+  "bolum_aciklamasi": "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
 }
