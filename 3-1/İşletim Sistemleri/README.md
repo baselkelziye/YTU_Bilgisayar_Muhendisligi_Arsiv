@@ -20,10 +20,10 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-- [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı.
-- Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link)
+- 📄 [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
+- 📄 Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış. ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AEL

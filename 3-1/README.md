@@ -25,9 +25,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir.
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MEK
@@ -54,10 +54,10 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı.
-- Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış.
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
+- 📄 Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış. ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AEL
@@ -85,9 +85,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 80X86 Assembly Dili, Tasarım ve Çevre Birimleri - Ahmet Tevfik Inan - Erkan Uslu - Furkan Çakmak ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - EU
@@ -112,8 +112,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
@@ -133,8 +133,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1qu7cB8noSxQKZTaqhc7y0RbSYREUpBOi?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1qu7cB8noSxQKZTaqhc7y0RbSYREUpBOi?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
@@ -156,7 +156,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
@@ -178,8 +178,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
@@ -200,8 +200,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hXpPlnHi6lWRF6WyOQcHDy-DZ9ItstzB?usp=drive_link)
-- 📄 [Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hXpPlnHi6lWRF6WyOQcHDy-DZ9ItstzB?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
