@@ -19,6 +19,7 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
+- ZCT
 
 ## ℹ️ Dersin içeriği güncel değil
 - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
