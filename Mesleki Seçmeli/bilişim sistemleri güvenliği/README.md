@@ -13,3 +13,6 @@
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1lf90yTz5l0Cvm04Da8AzO2xUa4Z3XJrq?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
+## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- HHB
