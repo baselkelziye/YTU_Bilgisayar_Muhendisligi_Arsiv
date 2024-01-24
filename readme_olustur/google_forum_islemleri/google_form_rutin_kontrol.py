@@ -34,20 +34,31 @@ def check_for_updates(key, url):
 def execute_command(command):
     custom_write(f"Komut çalıştırılıyor: {command}\n")
     try:
-        # Komutu çalıştır ve çıktıyı yakala
-        result = subprocess.run(
+        # Komutu çalıştır
+        with subprocess.Popen(
             command,
             shell=True,
-            check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            encoding=default_encoding,
-        )
-        # Komut başarıyla çalıştıysa, çıktıyı yazdır
-        custom_write(result.stdout + "\n")
+            text=True,
+            bufsize=1,
+            universal_newlines=True,
+        ) as process:
+            # Standart çıktıyı oku
+            for line in process.stdout:
+                custom_write(line + "\n")
+            # Hata çıktısını oku
+            error_output = process.stderr.read()
+            if error_output:
+                custom_write_error(error_output + "\n")
+                return False
+            # İşlem sonucunu kontrol et
+            process.wait()
+            if process.returncode != 0:
+                raise subprocess.CalledProcessError(process.returncode, command)
     except subprocess.CalledProcessError as e:
-        # Komut hata ile sonuçlanırsa, hatayı yazdır ve script'i durdur
-        custom_write_error(f"Komut hatası: {e.stderr}\n")
+        # Komut hata ile sonuçlanırsa, hatayı yazdır
+        custom_write_error(f"Komut hatası: {e}\n")
         return False
     return True
 
