@@ -1,4 +1,4 @@
-import os, json
+import os, json, locale
 
 # GENEL DEGISKENLER
 ## ORTAK DEGISKENLER
@@ -309,7 +309,7 @@ SECMELI = "Seçmeli"
 ZORUNLU = "Zorunlu"
 DERS_TIPLERI = [ZORUNLU, SECMELI, SECMELI_4, MESLEKI_SECMELI]
 DONEM_YILLARI = ["0", "1", "2", "3", "4"]
-KATKIDA_BULUNMA_ORANI_DIZI = ["Çok","Orta","Az"]
+KATKIDA_BULUNMA_ORANI_DIZI = ["Çok", "Orta", "Az"]
 DONEMLER_DIZISI = [GUZ, BAHAR]
 DONEMLER_DIZISI_YOKLA_BERABER = [YOK, GUZ, BAHAR]
 
@@ -350,3 +350,5 @@ YILDIZ_GECMISI = f"""
 ## Yıldız Geçmişi
 [![Star History Chart](https://api.star-history.com/svg?repos={YILDIZ_URL}&type=Date)](https://star-history.com/#{YILDIZ_URL}&Date)
 """
+
+default_encoding = locale.getpreferredencoding()
