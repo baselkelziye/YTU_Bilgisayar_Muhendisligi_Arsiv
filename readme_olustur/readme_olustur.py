@@ -461,9 +461,9 @@ def readme_katkida_bulunanlar_ekle(veri):
                 f.write(f"<p align='center'>{iletisim_bilgileri_html}</p>\n")
             f.write("\n")
 
-def readmeye_star_history_ekle():
+def readmeye_yildiz_gecmisi_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(STAR_HISTORY)
+        f.write(YILDIZ_GECMISI)
 
 
 def sıralama_anahtarı(ders):
@@ -528,8 +528,8 @@ if hocalar is not None:
     readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
 else:
     custom_write_error("Hoca kısaltmaları bulunamadı...\n")
-custom_write("Star history README'ye ekleniyor...\n")
-readmeye_star_history_ekle()
+custom_write("Yıldız geçmişi README'ye ekleniyor...\n")
+readmeye_yildiz_gecmisi_ekle()
 if katkida_bulunanlar is not None:
     custom_write("Katkıda bulunanlar README'ye ekleniyor...\n")
     readme_katkida_bulunanlar_ekle(katkida_bulunanlar)

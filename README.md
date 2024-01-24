@@ -1496,7 +1496,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 <p align='center'>🔹 <b>YES</b> &emsp; Dr. Yunus Emre Selçuk 🔹</p>
 <p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
 
-## Star History
+## Yıldız Geçmişi
 [![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
 <h2 align='center'>🤝 Katkıda Bulunanlar</h2>
 
