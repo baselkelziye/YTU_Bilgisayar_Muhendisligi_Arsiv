@@ -1505,6 +1505,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 - 💫 **_*Basel Kelziye*_** 💫
   - 🔗 [**Github Profili**](https://github.com/baselkelziye)
+  - 🔗 [**LinkedIn Profili**](https://www.linkedin.com/in/basel-kelziye-080997197)
 - 💫 **_*Muhammed Ali Şen*_** 💫
   - 🔗 [**Github Profili**](https://github.com/shenmali)
 - 💫 **_*Sait Yalçın*_** 💫
