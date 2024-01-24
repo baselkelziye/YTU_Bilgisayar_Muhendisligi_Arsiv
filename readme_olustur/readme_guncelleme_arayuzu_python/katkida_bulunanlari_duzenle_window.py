@@ -5,7 +5,6 @@ from PyQt5.QtWidgets import (
     QWidget,
     QVBoxLayout,
     QInputDialog,
-    QDesktopWidget,
     QHBoxLayout,
     QPushButton,
     QMessageBox,
@@ -13,7 +12,6 @@ from PyQt5.QtWidgets import (
     QLabel,
     QLineEdit,
     QScrollArea,
-    QComboBox,
 )
 import re
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
@@ -24,6 +22,7 @@ from PyQt5.QtGui import QIcon
 from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
 from katkida_bulunan_ekle_window import BaseKatkidaBulunanWindow
+
 try:
     # Öncelikle Türkçe locale'i dene
     locale.setlocale(locale.LC_ALL, "tr_TR.UTF-8")
@@ -99,6 +98,11 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.ekleBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.mainLayout.addWidget(self.ekleBtn)
 
+        self.katkidaBulunanSayisiLabel = QLabel(
+            f"Toplam {0} katkıda bulunan var."
+        )  # Sayıyı gösteren etiket
+        self.katkidaBulunanSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.mainLayout.addWidget(self.katkidaBulunanSayisiLabel)
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
         self.scrollArea.setWidgetResizable(True)
@@ -236,22 +240,16 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         # JSON dosyasını oku ve butonları oluştur
         self.data = self.jsonDosyasiniYukle()
         self.data[KATKIDA_BULUNANLAR] = sorted(
-            [
-                kisi
-                for kisi in self.data[KATKIDA_BULUNANLAR]
-                if kisi[AD].strip() 
-            ],
+            [kisi for kisi in self.data[KATKIDA_BULUNANLAR] if kisi[AD].strip()],
             key=lambda kisi: locale.strxfrm(kisi[AD].lower()),
         )
         try:
             katkidaBulunanSayisi = len(
                 self.data[KATKIDA_BULUNANLAR]
             )  # Toplam katkıda bulunan sayısı
-            self.katkidaBulunanSayisiLabel = QLabel(
+            self.katkidaBulunanSayisiLabel.setText(
                 f"Toplam {katkidaBulunanSayisi} katkıda bulunan var."
             )  # Sayıyı gösteren etiket
-            self.katkidaBulunanSayisiLabel.setAlignment(Qt.AlignCenter)
-            self.layout.addWidget(self.katkidaBulunanSayisiLabel)
 
             for kisi in self.data[KATKIDA_BULUNANLAR]:
                 btn = QPushButton(kisi[AD], self)
@@ -274,7 +272,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 
     def acKatkidaBulunanEkle(self):
         # Katkıda Bulunan Ekle penceresini aç
-        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self, self.data)
+        self.katkidaBulunanEkleWindow = KatkidaBulunanEkleWindow(self.data, self)
 
     def duzenle(self, kisi):
         self.duzenlemePenceresi = KatkidaBulunanDuzenleWindow(kisi, self.data, self)
@@ -297,7 +295,9 @@ class KatkidaBulunanDuzenleWindow(BaseKatkidaBulunanWindow):
         self.ad_input.setText(self.kisi[AD])
         # Örnek bir GitHub linki
         self.iletisim_bilgileri = self.kisi.get(ILETISIM_BILGILERI, [])
-        self.katkida_bulunma_orani.setCurrentText(self.kisi.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1]))
+        self.katkida_bulunma_orani.setCurrentText(
+            self.kisi.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])
+        )
         # Butonlar için yatay layout
         buttonsLayout = QHBoxLayout()
         # Değişiklikleri Kaydet butonu
@@ -350,7 +350,6 @@ class KatkidaBulunanDuzenleWindow(BaseKatkidaBulunanWindow):
                 # Eğer kişi listede bulunamazsa
                 QMessageBox.critical(self, "Hata", "Silinecek kişi bulunamadı.")
 
-
     def islemSonucu(self, success, message):
         self.progressDialog.hide()
         if success:
@@ -360,11 +359,12 @@ class KatkidaBulunanDuzenleWindow(BaseKatkidaBulunanWindow):
             self.close()
         else:
             QMessageBox.warning(self, "Hata", message)
+
     def iletisimBilgileriniYukle(self):
         try:
             for idx, iletisim_bilgisi in enumerate(self.iletisim_bilgileri):
-                baslik = iletisim_bilgisi.get(BASLIK,"")
-                link = iletisim_bilgisi.get(LINK,"")
-                self.iletisimBilgisiEkle(baslik,link)
+                baslik = iletisim_bilgisi.get(BASLIK, "")
+                link = iletisim_bilgisi.get(LINK, "")
+                self.iletisimBilgisiEkle(baslik, link)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
