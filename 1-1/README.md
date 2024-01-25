@@ -48,6 +48,7 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
 - MAG
+- ZCT
 
 ### 📘 Fizik 1
 
