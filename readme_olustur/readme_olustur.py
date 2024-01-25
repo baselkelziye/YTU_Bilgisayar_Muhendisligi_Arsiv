@@ -186,7 +186,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                 and len(hoca[OGRENCI_GORUSLERI]) > 0
             ):
                 for gorus in hoca[OGRENCI_GORUSLERI]:
-                    f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
+                    f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
             f.write(
                 f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
             )
@@ -320,7 +320,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders[OGRENCI_GORUSLERI]:
-                        f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
+                        f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
                     f.write(
                         f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
                     )
@@ -558,7 +558,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
         if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
             for gorus in ders[OGRENCI_GORUSLERI]:
-                f.write(f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n")
+                f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
         f.write("- ⭐ **Yıldız Sayıları:**\n")
         if KOLAYLIK_PUANI in ders:
             f.write(
@@ -711,7 +711,7 @@ def ders_bilgilerini_readme_ile_birlestir(
                         )  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
                         for gorus in ders[OGRENCI_GORUSLERI]:
                             f.write(
-                                f"  - 👤 **_{gorus[KISI]}_**: {gorus[YORUM]}\n"
+                                f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n"
                             )  # Kişi emoji, öğrenciyi temsil eder
                     if KOLAYLIK_PUANI in ders:
                         f.write(

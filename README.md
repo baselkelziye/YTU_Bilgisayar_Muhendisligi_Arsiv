@@ -274,7 +274,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
-  - 👤 **_Tehlikeli Pinokyo _**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
+  - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -308,7 +308,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
-  - 👤 **_Tehlikeli Pinokyo _**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
+  - 👤 **_Tehlikeli Pinokyo_**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -385,7 +385,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
-  - 👤 **_Tehlikeli Pinokyo _**: Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali...
+  - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali...
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -479,7 +479,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
-  - 👤 **_Tehlikeli Pinokyo _**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
+  - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
   - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
@@ -800,7 +800,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli
   - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
-  - 👤 **_Tehlikeli Pinokyo _**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
+  - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -1064,7 +1064,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sert bir mizacı var. Sınavlarda zor sorar.
-  - 👤 **_Tehlikeli Pinokyo _**: iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim.
+  - 👤 **_Tehlikeli Pinokyo_**: iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
@@ -1084,7 +1084,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
   - 👤 **_astro_**: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
-  - 👤 **_Tehlikeli Pinokyo _**: Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.
+  - 👤 **_Tehlikeli Pinokyo_**: Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.
   - 👤 **_Madmax_**: Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız.
   - 👤 **_Violancello_**: Bilim aşkıyla yanıp tutuşan mükemmel bir hoca. Yapay zeka başta olmak üzere verdiği derslerde işin bilimsel mantığını öğretir, sınavları da kalitelidir boş detaylara takılmaz öğrencilere işlem ameleliği yaptırmaz. Bazı hocalar öğrenciye hayatı zorlaştırmakla uğraştırken Fatih hocam 2024'ün ilk haftasında 3 makale yayınladı bile :)
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -1124,7 +1124,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sakin bir hoca, iyi niyetli, yoklama alır.
-  - 👤 **_Tehlikeli Pinokyo _**: Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
+  - 👤 **_Tehlikeli Pinokyo_**: Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
@@ -1201,7 +1201,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
   - 👤 **_astro_**: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
-  - 👤 **_Tehlikeli Pinokyo _**: Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)
+  - 👤 **_Tehlikeli Pinokyo_**: Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)
   - 👤 **_Madmax_**: Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.
   - 👤 **_Violancello_**: Derste sakız çiğnenmesi gibi önemsiz detaylara takılıyor, 30 hoca için sorun olmayan durum niye onun için sorun oluyor anlamıyorum açıkçası. Bunun dışında dersleri gayet güzel anlatıyor.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -1260,7 +1260,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_violancello_**: Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum.
-  - 👤 **_Tehlikeli Pinokyo _**: Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor.
+  - 👤 **_Tehlikeli Pinokyo_**: Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
