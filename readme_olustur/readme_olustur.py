@@ -264,7 +264,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                     f"  - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
                 )
             if hoca.get(HOCA_AKTIF_GOREVDE_MI, True) == False:
-                f.write(f"  - ℹ️ {VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI}.\n")
+                f.write(f"- ℹ️ {VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI}.\n")
 
 
 def donem_siralamasi(donem_key):
