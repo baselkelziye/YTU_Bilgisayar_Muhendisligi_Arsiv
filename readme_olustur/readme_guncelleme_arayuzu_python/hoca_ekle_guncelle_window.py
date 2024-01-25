@@ -43,8 +43,8 @@ except locale.Error:
 
 
 class HocaEkleGuncelleWindow(QDialog):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent=None):
+        super().__init__(parent)
         self.setModal(True)
         self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
@@ -291,7 +291,7 @@ class HocaEkleGuncelleWindow(QDialog):
 # Hoca Düzenleme/Ekleme Penceresi
 class HocaDuzenlemeWindow(QDialog):
     def __init__(self, hoca, data, parent):
-        super().__init__()
+        super().__init__(parent)
         self.hoca = hoca
         self.data = data
         self.parent = parent
@@ -420,9 +420,9 @@ class HocaDuzenlemeWindow(QDialog):
         # Yeni ComboBox oluştur
         comboBox = QComboBox(self)
         for ders in self.dersler:
-            comboBox.addItem(ders)  # Ad ve kısaltmayı ekle
+            comboBox.addItem(ders)  # dersi ekle
 
-        # Eğer kısaltma verildiyse, onu ComboBox'da seç
+        # Eğer ders verildiyse, onu ComboBox'da seç
         if hoca_ders:
             comboBox.setCurrentText(hoca_ders)
 
@@ -442,7 +442,8 @@ class HocaDuzenlemeWindow(QDialog):
 
         # ComboBox listesini güncelle
         self.derslerComboBoxlar.append((comboBox, silBtn))
-        QMessageBox.information(self, "Başarılı", "Listeye bir ders eklendi.")
+        if not hoca_ders:
+            QMessageBox.information(self, "Başarılı", "Listeye bir ders eklendi.")
 
     def silDersComboBox(self, comboBox, silBtn):
         # ComboBox ve sil butonunu kaldır

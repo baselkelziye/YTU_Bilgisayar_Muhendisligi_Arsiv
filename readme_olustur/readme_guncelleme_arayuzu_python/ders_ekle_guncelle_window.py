@@ -34,8 +34,8 @@ def hoca_sirala(hoca):
 
 
 class DersEkleGuncelleWindow(QDialog):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,parent=None):
+        super().__init__(parent)
         self.setModal(True)
         self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
@@ -889,7 +889,8 @@ class DersDuzenlemeWindow(QDialog):
 
         # ComboBox listesini güncelle
         self.hocalarComboBoxlar.append((comboBox, silBtn))
-        QMessageBox.information(self, "Bilgi", "Listeye bir hoca eklendi!")
+        if not hoca:
+            QMessageBox.information(self, "Bilgi", "Listeye bir hoca eklendi!")
 
     def silHocaComboBox(self, comboBox, silBtn):
         # ComboBox ve sil butonunu kaldır
