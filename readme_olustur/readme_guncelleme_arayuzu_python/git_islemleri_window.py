@@ -17,8 +17,8 @@ from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
 from PyQt5.QtCore import Qt
 
 class GitIslemleriWindow(QDialog):
-    def __init__(self):
-        super(GitIslemleriWindow, self).__init__()
+    def __init__(self,parent=None):
+        super(GitIslemleriWindow, self).__init__(parent)
         self.setModal(True)
         self.setWindowTitle("Git İşlemleri")
         self.setMinimumSize(300, 200)
@@ -86,7 +86,10 @@ class GitIslemleriWindow(QDialog):
         self.progress_dialog = CustomProgressDialogWithCancel(baslik, self, self.thread_durduruluyor)
         # Thread'i başlat
         self.thread = CMDScriptRunnerThread(script_path,islem)
-        self.thread.finished.connect(self.on_finished)
+        if script_path == "git pull":
+            self.thread.finished.connect(self.interface_updated_succesfully)
+        else:
+            self.thread.finished.connect(self.on_finished)
         self.thread.error.connect(self.on_error)
         self.thread.info.connect(self.info)
         self.thread.start()
@@ -192,6 +195,12 @@ class GitIslemleriWindow(QDialog):
             baslik="Arayüz Kodları Güncelleniyor...",
             islem="Arayüz Kodları Güncelleme",
         )
+    def interface_updated_succesfully(self):
+        QMessageBox.information(
+            self,
+            "Bilgi",
+            "Arayüz kodları güncellendi. Lütfen programı yeniden başlatın.")
+        sys.exit()
 
     def start_routine_check(self):
         komut = "python3 google_form_rutin_kontrol.py"

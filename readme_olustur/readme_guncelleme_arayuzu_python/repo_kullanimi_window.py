@@ -20,8 +20,8 @@ from PyQt5.QtGui import QIcon
 
 
 class TalimatDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
-        super().__init__()
+    def __init__(self,parent=None ,json_dosyasi=REPO_KULLANIMI_JSON_PATH):
+        super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
@@ -756,8 +756,8 @@ class AciklamaDialog(QDialog):
 
 
 class RepoKullanimiDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
-        super().__init__()
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent=None):
+        super().__init__(parent)
         self.setModal(True)
         self.setMinimumSize(600, 300)
         self.json_dosyasi = json_dosyasi

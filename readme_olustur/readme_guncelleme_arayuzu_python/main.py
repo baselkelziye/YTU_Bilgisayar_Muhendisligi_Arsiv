@@ -84,16 +84,16 @@ class App(QWidget):
 
     def acDonemEkleGuncelle(self):
         # Dönem Ekle/Güncelle penceresini aç
-        self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow()
+        self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow(parent=self)
         self.donemEkleGuncelleWindow.show()
 
     def repoKullanimiDuzenle(self):
-        self.repoKullanimiGuncelleWindow = RepoKullanimiDialog()
+        self.repoKullanimiGuncelleWindow = RepoKullanimiDialog(parent=self)
         self.repoKullanimiGuncelleWindow.show()
 
     def acGirisEkleGuncelle(self):
         # Giriş Güncelle penceresini aç
-        self.girisEkleGuncelleWindow = GirisEkleGuncelleWindow()
+        self.girisEkleGuncelleWindow = GirisEkleGuncelleWindow(parent=self)
         self.girisEkleGuncelleWindow.show()
 
     def center(self):
@@ -105,26 +105,26 @@ class App(QWidget):
 
     def acKatkidaBulunanEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
-        self.katkidaBulunanGuncelleWindow = KatkidaBulunanGuncelleWindow()
+        self.katkidaBulunanGuncelleWindow = KatkidaBulunanGuncelleWindow(parent=self)
         self.katkidaBulunanGuncelleWindow.show()
 
     def acYazarinNotlari(self):
         # Katkıda Bulunan Güncelle penceresini aç
-        self.yazarinNotlariWindow = YazarinNotlariWindow()
+        self.yazarinNotlariWindow = YazarinNotlariWindow(parent=self)
         self.yazarinNotlariWindow.show()
 
     def acHocaEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
-        self.hocaEkleGuncelleWindow = HocaEkleGuncelleWindow()
+        self.hocaEkleGuncelleWindow = HocaEkleGuncelleWindow(parent=self)
         self.hocaEkleGuncelleWindow.show()
 
     def acDersEkleGuncelle(self):
         # Katkıda Bulunan Güncelle penceresini aç
-        self.dersEkleGuncelleWindow = DersEkleGuncelleWindow()
+        self.dersEkleGuncelleWindow = DersEkleGuncelleWindow(parent=self)
         self.dersEkleGuncelleWindow.show()
 
     def gitIslemleri(self):
-        self.gitIslemleriWindow = GitIslemleriWindow()
+        self.gitIslemleriWindow = GitIslemleriWindow(parent=self)
         self.gitIslemleriWindow.show()
 
     def onFinished(self):
