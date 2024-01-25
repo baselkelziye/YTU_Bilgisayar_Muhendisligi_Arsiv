@@ -195,7 +195,7 @@ class CMDScriptRunnerThread(QThread):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
-            encoding=default_encoding,  # iso-8859-1 encoding ekledik.
+            encoding=default_encoding,
         )
         q_stdout = queue.Queue()
         q_stderr = queue.Queue()
