@@ -1832,7 +1832,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 [![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
 <h2 align='center'>🤝 Katkıda Bulunanlar</h2>
 
-Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin.
+Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya ekleyebilirsiniz, bizimle iletişime geçebilirsiniz. Ya da merge request gönderebilirsiniz.
 
 <p align='center'>💫 <b><i>Basel Kelziye</i></b> 💫</p>
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
