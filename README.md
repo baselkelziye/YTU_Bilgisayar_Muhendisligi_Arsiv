@@ -498,9 +498,9 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 👤 **_Traktör Reis_**: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AEL](#-dr-ahmet-elbir)
     - [ZCT](#-dr-ziya-cihan-tayşi)
@@ -1465,6 +1465,310 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
+
+
+### 👨‍🏫 Arş. Grv. Alper Eğitmen 
+- 🚪 **Ofis:** EEF-D209
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aegitmen/](http://avesis.yildiz.edu.tr/aegitmen/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Burak Ahmet ÖZDEN 
+- 🚪 **Ofis:** D-024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Elif AŞICI 
+- 🚪 **Ofis:** D-033
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Elçin GÜVEYİ 
+- 🚪 **Ofis:** D-022
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/eguveyi/](https://avesis.yildiz.edu.tr/eguveyi/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Emre PARLAK 
+- 🚪 **Ofis:** D024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/emre.parlak](https://avesis.yildiz.edu.tr/emre.parlak)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Hatice ERDİRİK 
+- 🚪 **Ofis:** D-032
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17253](https://avesis.yildiz.edu.tr/17253)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Himmet Toprak KESGİN 
+- 🚪 **Ofis:** D-211
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Kübra ADALI 
+- 🚪 **Ofis:** D-211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/adalik/](https://avesis.yildiz.edu.tr/adalik/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Meliha Gizem ÇELİK 
+- 🚪 **Ofis:** D-022
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/gizem.celik](https://avesis.yildiz.edu.tr/gizem.celik)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Muhammed Enes ÖZELBAŞ 
+- 🚪 **Ofis:** D-030
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Mustafa CEBECİ 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17285](https://avesis.yildiz.edu.tr/17285)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Mustafa Mert KARA 
+- 🚪 **Ofis:** D-030
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/mmkara/](https://avesis.yildiz.edu.tr/mmkara/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Muzaffer Kaan YÜCE 
+- 🚪 **Ofis:** D-025
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu 
+- 🚪 **Ofis:** EEF-DZ24
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/nurguly/](http://avesis.yildiz.edu.tr/nurguly/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Rukiye BAŞKARA 
+- 🚪 **Ofis:** D-022
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Sercan Aygün 
+- 🚪 **Ofis:** EEF-DZ26
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ayguns/](http://avesis.yildiz.edu.tr/ayguns/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👩‍🏫 Arş. Grv. Sultan Sevgi TURGUT 
+- 🚪 **Ofis:** D-211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/sturgut/](https://avesis.yildiz.edu.tr/sturgut/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. Ömer Mutlu Türk KAYA 
+- 🚪 **Ofis:** D-033
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+### 👨‍🏫 Arş. Grv. İdris DEMİR 
+- 🚪 **Ofis:** D-025
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
+  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
+  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
+  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
 ## ✍️ Yazarın Notları
 
 - 📝 Bölüm dersleri özelinde neredeyse her dersin çıkmış soruları var ve hocalar sınavlarda ya bu sorulara benzer ya da aynı sorular soruyorlar. Benzer şekilde ödev için konuşmak gerekirse ödevlerin büyük bir kısmını ya interneteki kaynaklardan, ya da geçmiş yıllardan alıp biraz değiştirerek ya da değiştirmeden hazırlıyorlar. Labları da geçen senelerin lablarıyla benzer ya da aynı hazırlıyorlar. Bu sebeplerden dolayı eski kaynaklardan faydalanmak çok önemli.
@@ -1474,27 +1778,46 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 <h2 align='center'>📚 Hoca Kısaltmaları</h2>
 
 <p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
+<p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
 <p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
+<p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet ÖZDEN 🔹</p>
 <p align='center'>🔹 <b>BD</b> &emsp; Prof. Dr. Banu Diri 🔹</p>
+<p align='center'>🔹 <b>EA</b> &emsp; Arş. Grv. Elif AŞICI 🔹</p>
+<p align='center'>🔹 <b>EG</b> &emsp; Arş. Grv. Elçin GÜVEYİ 🔹</p>
+<p align='center'>🔹 <b>EP</b> &emsp; Arş. Grv. Emre PARLAK 🔹</p>
 <p align='center'>🔹 <b>EU</b> &emsp; Dr. Erkan Uslu 🔹</p>
 <p align='center'>🔹 <b>FÇ</b> &emsp; Dr. Furkan Çakmak 🔹</p>
 <p align='center'>🔹 <b>G1</b> &emsp; Dr. Göksel Biricik 🔹</p>
 <p align='center'>🔹 <b>GB</b> &emsp; Doç. Dr. Gökhan Bilgin 🔹</p>
+<p align='center'>🔹 <b>HE</b> &emsp; Arş. Grv. Hatice ERDİRİK 🔹</p>
 <p align='center'>🔹 <b>HHB</b> &emsp; Prof. Dr. Hasan Hüseyin Balık 🔹</p>
 <p align='center'>🔹 <b>HOİ</b> &emsp; Dr. Hamza Osman İlhan 🔹</p>
+<p align='center'>🔹 <b>HTK</b> &emsp; Arş. Grv. Himmet Toprak KESGİN 🔹</p>
 <p align='center'>🔹 <b>HİT</b> &emsp; Dr. H. İrem Türkmen 🔹</p>
+<p align='center'>🔹 <b>KA</b> &emsp; Arş. Grv. Kübra ADALI 🔹</p>
 <p align='center'>🔹 <b>MAG</b> &emsp; Doç. Dr. M. Amaç Güvensan 🔹</p>
+<p align='center'>🔹 <b>MC</b> &emsp; Arş. Grv. Mustafa CEBECİ 🔹</p>
 <p align='center'>🔹 <b>MEK</b> &emsp; Prof. Dr. M. Elif Karslıgil 🔹</p>
+<p align='center'>🔹 <b>MEÖ</b> &emsp; Arş. Grv. Muhammed Enes ÖZELBAŞ 🔹</p>
 <p align='center'>🔹 <b>MFA</b> &emsp; Prof. Dr. M. Fatih Amasyalı 🔹</p>
+<p align='center'>🔹 <b>MGÇ</b> &emsp; Arş. Grv. Meliha Gizem ÇELİK 🔹</p>
+<p align='center'>🔹 <b>MKY</b> &emsp; Arş. Grv. Muzaffer Kaan YÜCE 🔹</p>
+<p align='center'>🔹 <b>MMK</b> &emsp; Arş. Grv. Mustafa Mert KARA 🔹</p>
 <p align='center'>🔹 <b>MSA</b> &emsp; Doç. Dr. Mehmet Sıddık Aktaş 🔹</p>
 <p align='center'>🔹 <b>MUK</b> &emsp; Dr. M. Utku Kalay 🔹</p>
 <p align='center'>🔹 <b>NA</b> &emsp; Prof. Dr. Nizamettin Aydın 🔹</p>
+<p align='center'>🔹 <b>NY</b> &emsp; Arş. Grv. Nurgül Yüzbaşıoğlu 🔹</p>
 <p align='center'>🔹 <b>OA</b> &emsp; Dr. Oğuz Altun 🔹</p>
 <p align='center'>🔹 <b>OK</b> &emsp; Prof. Dr. Oya Kalıpsız 🔹</p>
+<p align='center'>🔹 <b>RB</b> &emsp; Arş. Grv. Rukiye BAŞKARA 🔹</p>
+<p align='center'>🔹 <b>SA</b> &emsp; Arş. Grv. Sercan Aygün 🔹</p>
+<p align='center'>🔹 <b>SST</b> &emsp; Arş. Grv. Sultan Sevgi TURGUT 🔹</p>
 <p align='center'>🔹 <b>SV</b> &emsp; Prof. Dr. Songül Varlı 🔹</p>
 <p align='center'>🔹 <b>SY</b> &emsp; Prof. Dr. Sırma Yavuz 🔹</p>
 <p align='center'>🔹 <b>YES</b> &emsp; Dr. Yunus Emre Selçuk 🔹</p>
 <p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
+<p align='center'>🔹 <b>ÖMTK</b> &emsp; Arş. Grv. Ömer Mutlu Türk KAYA 🔹</p>
+<p align='center'>🔹 <b>İD</b> &emsp; Arş. Grv. İdris DEMİR 🔹</p>
 
 ## Yıldız Geçmişi
 [![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
