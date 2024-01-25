@@ -20,8 +20,8 @@ import re
 
 
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent):
+        super().__init__(parent)
 
     def initUI(self):
         super().initUI()
