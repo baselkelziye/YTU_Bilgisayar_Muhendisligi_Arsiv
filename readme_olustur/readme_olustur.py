@@ -158,7 +158,21 @@ def hocalari_readme_ye_ekle(bilgiler):
         else:
             custom_write_error("En popüler hoca bilgileri bulunamadı.\n")
 
+        unvan_sayaci = 0
+
         for hoca in sorted(bilgiler[HOCALAR], key=hoca_siralama_anahtari):
+            if unvan_sayaci < len(unvanlar) and hoca[AD].startswith(unvanlar[unvan_sayaci]):
+                tmp_unvan = ""
+                if unvan_sayaci == 0:
+                    tmp_unvan = "Profesörler"
+                elif unvan_sayaci == 1:
+                    tmp_unvan = "Doçentler"
+                elif unvan_sayaci == 2:
+                    tmp_unvan = "Doktor Öğretim Üyeleri"
+                else:
+                    tmp_unvan = "Araştırma Görevlileri"
+                f.write(f"\n### {tmp_unvan}\n")
+                unvan_sayaci += 1
             if AD not in hoca:
                 hoca[AD] = ""
             if OFIS not in hoca:
@@ -175,7 +189,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                 else ""
             )
             f.write(
-                f"\n\n\n### {hoca_emoji} {hoca[AD]} {populer_isaret}{populer_bilgi}\n"
+                f"\n\n\n#### {hoca_emoji} {hoca[AD].strip()} {populer_isaret}{populer_bilgi}\n"
             )
             f.write(f"- 🚪 **Ofis:** {hoca[OFIS]}\n")
             f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca[LINK]}]({hoca[LINK]})\n")
