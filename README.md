@@ -1056,7 +1056,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
   - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
 
 
@@ -1116,7 +1116,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
 
 
@@ -1468,7 +1468,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
 ### Araştırma Görevlileri
 
