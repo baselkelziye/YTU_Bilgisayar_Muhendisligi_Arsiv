@@ -22,8 +22,8 @@ from close_event import closeEventHandler
 
 
 class YazarinNotlariWindow(QDialog):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, parent):
+        super().__init__(parent)
         self.setModal(True)
         self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()

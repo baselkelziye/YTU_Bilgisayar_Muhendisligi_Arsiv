@@ -38,8 +38,8 @@ except locale.Error:
 
 
 class KatkidaBulunanGuncelleWindow(QDialog):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,parent=None):
+        super().__init__(parent)
         self.setModal(True)
         self.is_programmatic_close = False
         self.title = "Katkıda Bulunanları Ekle/Güncelle"

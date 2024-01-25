@@ -20,8 +20,8 @@ import json
 
 
 class DonemEkleGuncelleWindow(TalimatDialog):
-    def __init__(self):
-        super().__init__(json_dosyasi=DONEMLER_JSON_PATH)
+    def __init__(self, parent=None):
+        super().__init__(parent,json_dosyasi=DONEMLER_JSON_PATH)
         self.setWindowTitle("Dönem Ekle/Güncelle")
         self.ekleBtn.clicked.disconnect()
         self.ekleBtn.setText("Dönem Ekle")
