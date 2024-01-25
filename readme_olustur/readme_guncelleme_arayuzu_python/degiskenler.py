@@ -352,3 +352,10 @@ YILDIZ_GECMISI = f"""
 """
 
 default_encoding = locale.getpreferredencoding()
+
+
+# PY DOSYALARI
+README_OLUSTUR_PY = "readme_olustur.py"
+HOCA_ICERIKLERI_GUNCELLE_PY = "hoca_icerikleri_guncelle.py"
+DERS_ICERIKLERI_GUNCELLE_PY = "ders_icerikleri_guncelle.py"
+RUTIN_KONTROL_PY = "google_form_rutin_kontrol.py"

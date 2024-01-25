@@ -66,10 +66,10 @@ def update_repository(deneme_sayisi=0):
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
     custom_write("Güncellemeler uygulanıyor...\n")
-    readme_guncelle_komutu = f"python3 readme_olustur.py"
+    readme_guncelle_komutu = f"python3 {README_OLUSTUR_PY}"
     # google form güncelle komutu
     google_form_guncelle_komutu = (
-        f"python3 hoca_icerikleri_guncelle.py && python3 ders_icerikleri_guncelle.py"
+        f"python3 {HOCA_ICERIKLERI_GUNCELLE_PY} && python3 {DERS_ICERIKLERI_GUNCELLE_PY}"
     )
     # Git ve Python komutlarını sırayla çalıştır
     try:
@@ -146,6 +146,7 @@ for key, url in urls.items():
     previous_hashes[url] = hashlib.md5(data).hexdigest()
 update_repository()
 i = 0
+guncelleme_sayisi = 0
 timeout = 180
 div = 3
 custom_write("Script çalışıyor...\n")
@@ -154,13 +155,13 @@ while True:
     for key, url in urls.items():
         if check_for_updates(key, url):
             custom_write(f"Güncelleme tespit edildi: {key}\n")
-            update_repository(i)
+            guncelleme_sayisi += 1
+            update_repository(guncelleme_sayisi)
         else:
             custom_write(f"Güncelleme yok: {key}\n")
     i += 1
-    custom_write(f"{i}. kontrol tamamlandı.\n")
     for k in range(0, int(timeout / div)):
         custom_write(
-            f"{timeout-k*div} saniye sonra kontrol edilecek.\n"
+            f"{timeout-k*div} saniye sonra kontrol edilecek. Kontol sayısı {i}\n"
         )  # '\r' ile satırın başına dön
         time.sleep(div)
