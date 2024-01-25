@@ -1016,9 +1016,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
+### Profesörler
 
 
-### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (19 oy)
+
+#### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (19 oy)
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1041,7 +1043,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık 
+#### 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/balik](https://avesis.yildiz.edu.tr/balik)
 - 💬 **Öğrenci Görüşleri:**
@@ -1059,7 +1061,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Prof. Dr. M. Elif Karslıgil 
+#### 👩‍🏫 Prof. Dr. M. Elif Karslıgil 
 - 🚪 **Ofis:** EEF-D217
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/elif/](http://avesis.yildiz.edu.tr/elif/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1078,7 +1080,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Prof. Dr. M. Fatih Amasyalı 
+#### 👨‍🏫 Prof. Dr. M. Fatih Amasyalı 
 - 🚪 **Ofis:** EEF-D213
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1102,7 +1104,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
+#### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.itu.edu.tr/naydin](https://avesis.itu.edu.tr/naydin)
 - 💬 **Öğrenci Görüşleri:**
@@ -1119,7 +1121,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Prof. Dr. Oya Kalıpsız 
+#### 👩‍🏫 Prof. Dr. Oya Kalıpsız 
 - 🚪 **Ofis:** EEF-D131
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/kalipsiz/](http://avesis.yildiz.edu.tr/kalipsiz/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1140,7 +1142,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Prof. Dr. Songül Varlı 
+#### 👩‍🏫 Prof. Dr. Songül Varlı 
 - 🚪 **Ofis:** EEF-D221
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1156,7 +1158,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Prof. Dr. Sırma Yavuz 
+#### 👩‍🏫 Prof. Dr. Sırma Yavuz 
 - 🚪 **Ofis:** EEF-D130
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/smyavuz/](http://avesis.yildiz.edu.tr/smyavuz/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1171,9 +1173,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
+### Doçentler
 
 
-### 👨‍🏫 Doç. Dr. Ali Can Karaca 
+
+#### 👨‍🏫 Doç. Dr. Ali Can Karaca 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
 - 💬 **Öğrenci Görüşleri:**
@@ -1195,7 +1199,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Doç. Dr. Gökhan Bilgin 
+#### 👨‍🏫 Doç. Dr. Gökhan Bilgin 
 - 🚪 **Ofis:** EEF-D218
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1217,7 +1221,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
+#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1237,7 +1241,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş 
+#### 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş 
 - 🚪 **Ofis:** EEF-DZ31
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1253,9 +1257,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
+### Doktor Öğretim Üyeleri
 
 
-### 👨‍🏫 Dr. Ahmet Elbir 
+
+#### 👨‍🏫 Dr. Ahmet Elbir 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1279,7 +1285,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Erkan Uslu 
+#### 👨‍🏫 Dr. Erkan Uslu 
 - 🚪 **Ofis:** EEF - D034
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1303,7 +1309,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Furkan Çakmak 
+#### 👨‍🏫 Dr. Furkan Çakmak 
 - 🚪 **Ofis:** EEF-D122
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/fcakmak/](http://avesis.yildiz.edu.tr/fcakmak/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1330,7 +1336,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Göksel Biricik 
+#### 👨‍🏫 Dr. Göksel Biricik 
 - 🚪 **Ofis:** EEF-D127
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbiricik/](http://avesis.yildiz.edu.tr/gbiricik/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1353,7 +1359,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Dr. H. İrem Türkmen 
+#### 👩‍🏫 Dr. H. İrem Türkmen 
 - 🚪 **Ofis:** EEF-DZ32
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1369,7 +1375,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Hamza Osman İlhan 
+#### 👨‍🏫 Dr. Hamza Osman İlhan 
 - 🚪 **Ofis:** EEF-D124
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1390,7 +1396,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. M. Utku Kalay 
+#### 👨‍🏫 Dr. M. Utku Kalay 
 - 🚪 **Ofis:** EEF-D214
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1409,7 +1415,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Oğuz Altun 
+#### 👨‍🏫 Dr. Oğuz Altun 
 - 🚪 **Ofis:** EEF-DZ36
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1428,7 +1434,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Yunus Emre Selçuk 
+#### 👨‍🏫 Dr. Yunus Emre Selçuk 
 - 🚪 **Ofis:** EEF-D129
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1448,7 +1454,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Dr. Ziya Cihan Tayşi 
+#### 👨‍🏫 Dr. Ziya Cihan Tayşi 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/cihan](https://avesis.yildiz.edu.tr/cihan)
 - 💬 **Öğrenci Görüşleri:**
@@ -1465,9 +1471,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
   - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 
+### Araştırma Görevlileri
 
 
-### 👨‍🏫 Arş. Grv. Alper Eğitmen 
+
+#### 👨‍🏫 Arş. Grv. Alper Eğitmen 
 - 🚪 **Ofis:** EEF-D209
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aegitmen/](http://avesis.yildiz.edu.tr/aegitmen/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1483,7 +1491,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Burak Ahmet ÖZDEN 
+#### 👨‍🏫 Arş. Grv. Burak Ahmet ÖZDEN 
 - 🚪 **Ofis:** D-024
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
 - 💬 **Öğrenci Görüşleri:**
@@ -1499,7 +1507,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Elif AŞICI 
+#### 👩‍🏫 Arş. Grv. Elif AŞICI 
 - 🚪 **Ofis:** D-033
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1515,7 +1523,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Elçin GÜVEYİ 
+#### 👩‍🏫 Arş. Grv. Elçin GÜVEYİ 
 - 🚪 **Ofis:** D-022
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/eguveyi/](https://avesis.yildiz.edu.tr/eguveyi/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1531,7 +1539,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Emre PARLAK 
+#### 👨‍🏫 Arş. Grv. Emre PARLAK 
 - 🚪 **Ofis:** D024
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/emre.parlak](https://avesis.yildiz.edu.tr/emre.parlak)
 - 💬 **Öğrenci Görüşleri:**
@@ -1547,7 +1555,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Hatice ERDİRİK 
+#### 👩‍🏫 Arş. Grv. Hatice ERDİRİK 
 - 🚪 **Ofis:** D-032
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17253](https://avesis.yildiz.edu.tr/17253)
 - 💬 **Öğrenci Görüşleri:**
@@ -1563,7 +1571,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Himmet Toprak KESGİN 
+#### 👨‍🏫 Arş. Grv. Himmet Toprak KESGİN 
 - 🚪 **Ofis:** D-211
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1579,7 +1587,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Kübra ADALI 
+#### 👩‍🏫 Arş. Grv. Kübra ADALI 
 - 🚪 **Ofis:** D-211
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/adalik/](https://avesis.yildiz.edu.tr/adalik/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1595,7 +1603,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Meliha Gizem ÇELİK 
+#### 👩‍🏫 Arş. Grv. Meliha Gizem ÇELİK 
 - 🚪 **Ofis:** D-022
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/gizem.celik](https://avesis.yildiz.edu.tr/gizem.celik)
 - 💬 **Öğrenci Görüşleri:**
@@ -1611,7 +1619,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Muhammed Enes ÖZELBAŞ 
+#### 👨‍🏫 Arş. Grv. Muhammed Enes ÖZELBAŞ 
 - 🚪 **Ofis:** D-030
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1627,7 +1635,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Mustafa CEBECİ 
+#### 👨‍🏫 Arş. Grv. Mustafa CEBECİ 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17285](https://avesis.yildiz.edu.tr/17285)
 - 💬 **Öğrenci Görüşleri:**
@@ -1643,7 +1651,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Mustafa Mert KARA 
+#### 👨‍🏫 Arş. Grv. Mustafa Mert KARA 
 - 🚪 **Ofis:** D-030
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/mmkara/](https://avesis.yildiz.edu.tr/mmkara/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1659,7 +1667,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Muzaffer Kaan YÜCE 
+#### 👨‍🏫 Arş. Grv. Muzaffer Kaan YÜCE 
 - 🚪 **Ofis:** D-025
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1675,7 +1683,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu 
+#### 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu 
 - 🚪 **Ofis:** EEF-DZ24
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/nurguly/](http://avesis.yildiz.edu.tr/nurguly/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1691,7 +1699,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Rukiye BAŞKARA 
+#### 👩‍🏫 Arş. Grv. Rukiye BAŞKARA 
 - 🚪 **Ofis:** D-022
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1707,7 +1715,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Sercan Aygün 
+#### 👨‍🏫 Arş. Grv. Sercan Aygün 
 - 🚪 **Ofis:** EEF-DZ26
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ayguns/](http://avesis.yildiz.edu.tr/ayguns/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1723,7 +1731,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👩‍🏫 Arş. Grv. Sultan Sevgi TURGUT 
+#### 👩‍🏫 Arş. Grv. Sultan Sevgi TURGUT 
 - 🚪 **Ofis:** D-211
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/sturgut/](https://avesis.yildiz.edu.tr/sturgut/)
 - 💬 **Öğrenci Görüşleri:**
@@ -1739,7 +1747,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. Ömer Mutlu Türk KAYA 
+#### 👨‍🏫 Arş. Grv. Ömer Mutlu Türk KAYA 
 - 🚪 **Ofis:** D-033
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -1755,7 +1763,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 
 
 
-### 👨‍🏫 Arş. Grv. İdris DEMİR 
+#### 👨‍🏫 Arş. Grv. İdris DEMİR 
 - 🚪 **Ofis:** D-025
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
 - 💬 **Öğrenci Görüşleri:**
