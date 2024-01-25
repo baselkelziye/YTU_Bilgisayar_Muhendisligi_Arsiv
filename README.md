@@ -22,7 +22,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 [Yazarın Notları](#%EF%B8%8F-yazarın-notları)
 - 🔗 [Hoca Kısaltmaları](#-hoca-kısaltmaları)
 - 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
-- 🔗 [Yıldız Geçmişi](#star-history)
+- 🔗 [Yıldız Geçmişi](#yıldız-geçmişi)
 
 
 
@@ -1771,11 +1771,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	bilinmiyor
-  - 🛣️ Dersi Kolay Geçer Miyim:	bilinmiyor
-  - 🧠 Dersi Öğrenir Miyim:	bilinmiyor
-  - 🎉 Derste Eğlenir Miyim:	bilinmiyor
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ## ✍️ Yazarın Notları
 
