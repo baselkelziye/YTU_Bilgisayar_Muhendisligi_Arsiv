@@ -1510,6 +1510,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🚪 **Ofis:** D-033
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Yusuf Taha Körkem, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca anlayamayınca kalkıp Yusuf Taha anlatmıştı.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
