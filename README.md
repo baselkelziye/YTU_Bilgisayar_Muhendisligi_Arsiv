@@ -50,6 +50,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 👉 Burada ders ile ilgili yüklenmiş olan notlar, ödevler, lablar, projeler, slaytlar vb. bulunur.
 - 👉 Ödevler lablar vs. cevapları %100 doğru değildir.
 - 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin ya da merge request atabilirsin.
+- 👉 Büyük dosyalar github üstünden açılamadığı için, repoyu yerel bilgisayarınıza indirip açmanız tavsiye edilir...
 
 
 ### 🔍 Kavramlar:
@@ -608,7 +609,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/ağ%20teknolojileri)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Veri%20İletişimi%20ve%20Bilgi%20Ağları/ağ%20teknolojileri)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
