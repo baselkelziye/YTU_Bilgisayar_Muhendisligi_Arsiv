@@ -22,3 +22,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
 - MAG
+- ZCT
