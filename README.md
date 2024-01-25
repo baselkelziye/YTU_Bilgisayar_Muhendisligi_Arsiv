@@ -23,6 +23,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 [Hoca Kısaltmaları](#-hoca-kısaltmaları)
 - 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
 - 🔗 [Yıldız Geçmişi](#yıldız-geçmişi)
+- 🔗 [Dökümanlara Katkı Linki](https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ)
 
 
 
