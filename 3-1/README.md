@@ -16,7 +16,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
-  - 👤 **_Tehlikeli Pinokyo _**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
+  - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir.
   - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor.
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★

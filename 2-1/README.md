@@ -16,7 +16,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
-  - 👤 **_Tehlikeli Pinokyo _**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
+  - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
@@ -66,7 +66,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
-  - 👤 **_Tehlikeli Pinokyo _**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
+  - 👤 **_Tehlikeli Pinokyo_**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
