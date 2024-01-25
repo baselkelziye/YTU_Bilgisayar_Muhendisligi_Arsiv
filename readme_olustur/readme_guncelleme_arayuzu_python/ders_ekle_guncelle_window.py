@@ -271,11 +271,10 @@ class DersEkleGuncelleWindow(QDialog):
 
                 # Büyük ders butonu
                 btnDers = QPushButton(
-                    kisaltMetin(ders.get(AD, ""), maks_uzunluk=42), self.scrollWidget
+                    kisaltMetin(ders.get(AD, ""), maks_uzunluk=48), self.scrollWidget
                 )
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
                 btnDers.setStyleSheet(GUNCELLE_BUTTON_STILI)
-                btnDers.setMinimumWidth(350)
                 dersSatiri.addWidget(btnDers)
 
                 # Kaynak Ekle butonu
@@ -294,6 +293,7 @@ class DersEkleGuncelleWindow(QDialog):
                 btnOneriEkle.setStyleSheet(
                     SIL_BUTONU_STILI
                 )  # Kırmızı renk, küçültülmüş genişlik
+                btnDers.setSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Fixed)
                 dersSatiri.addWidget(btnOneriEkle)
 
                 # Ders satırını dersler layout'una ekle
