@@ -128,8 +128,8 @@ class GitIslemleriWindow(QDialog):
         self.progress_dialog.setLabelText(wrapped_message)
 
     def update_google_form(self):
-        komut = "python3 hoca_icerikleri_guncelle.py"
-        komut += " && python3 ders_icerikleri_guncelle.py"
+        komut = f"python3 {HOCA_ICERIKLERI_GUNCELLE_PY}"
+        komut += f" && python3 {DERS_ICERIKLERI_GUNCELLE_PY}"
         yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
         self.run_script(
             komut,
@@ -140,7 +140,7 @@ class GitIslemleriWindow(QDialog):
 
     def update_readme(self):
         # bir üst dizine geçip python3 readme_olustur.py çalışıp geri ana dizzine gelcez
-        komut = "python3 readme_olustur.py"
+        komut = f"python3 {README_OLUSTUR_PY}"
         yol = BIR_UST_DIZIN
         # workind dir değişecek
         self.run_script(
@@ -203,7 +203,7 @@ class GitIslemleriWindow(QDialog):
         sys.exit()
 
     def start_routine_check(self):
-        komut = "python3 google_form_rutin_kontrol.py"
+        komut = f"python3 {RUTIN_KONTROL_PY}"
         yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
         self.run_script(
             komut,

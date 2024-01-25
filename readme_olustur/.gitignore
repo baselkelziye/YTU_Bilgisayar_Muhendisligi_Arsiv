@@ -1,8 +1,9 @@
 readme_guncelleme_arayuzu
 **/__pycache__
 dist
-build
 **/*.json
 **/*.csv
 **/*.txt
 !gereksinimler.txt
+**/dist
+**/build
