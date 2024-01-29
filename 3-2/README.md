@@ -109,6 +109,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
+- 📄 Çıkmış sorular [linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
