@@ -276,6 +276,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 Çıkmış sorualr [linki](https://drive.google.com/drive/folders/1K60JxKxGp4trP3NTK_GV41IP9FJ1HeAY?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -411,6 +412,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 Çıkmış sorular [linki](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
