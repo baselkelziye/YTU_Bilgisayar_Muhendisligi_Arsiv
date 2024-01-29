@@ -16,5 +16,5 @@
 - 📄 Çıkmış sorular [linki](https://drive.google.com/drive/folders/1AYcmjk-pa2CV7H6Olqt80vEavnGyQklI?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
-## 😔 İçerik yok
-- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
+## Dökümanlar
+- Dersin tüm slaytlarının birleştirilmiş hali ATA2_ALL_SLIDES.pdf dosyasındadır. Sınavlar tamamen slayttaki bilgilerden sorulmaktadır.
