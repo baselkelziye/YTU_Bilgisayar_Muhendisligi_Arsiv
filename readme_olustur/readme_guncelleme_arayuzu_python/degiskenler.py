@@ -234,6 +234,8 @@ VEREN_EKLE_BUTONU_STILI = "background-color: #3498DB; color: white;"  # Açık M
 GUNCELLE_BUTTON_STILI = "background-color: #2980B9; color: white;"  # Mavi
 BASLIK_BUTON_STILI = "background-color: #95A5A6; color: white;"  # Açık Gri
 ACIKLAMA_BUTON_STILI = "background-color: #2ECC71; color: white;"  # Açık Yeşil
+YUKARI_BUTON_STILI = "background-color: #2ecc71; color: white;"  # Açık Yeşil
+ASAGI_BUTON_STILI = "background-color: #95a5a6; color: white;"  # Gri
 
 
 # JSON ANAHTARLARI
