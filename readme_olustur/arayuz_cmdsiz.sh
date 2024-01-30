@@ -30,7 +30,7 @@ done < gereksinimler.txt
 
 # readme_olusturma_arayuzu klasörüne çıkın ve main.py'yi çalıştırın
 cd "$(dirname "$0")/readme_guncelleme_arayuzu_python"
-python3 main.py
+pythonw main.py
 
 echo "İşlem tamamlandı."
 exit 0
