@@ -16,8 +16,6 @@ from degiskenler import *
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 from close_event import closeEventHandler
-from metin_islemleri import kisaltMetin
-
 
 class BaseKatkidaBulunanWindow(QDialog):
     def __init__(self, parent):

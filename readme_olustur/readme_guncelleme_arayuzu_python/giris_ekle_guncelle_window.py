@@ -9,9 +9,8 @@ from PyQt5.QtWidgets import (
     QHBoxLayout,
     QDialog,
     QVBoxLayout,
-    QTextEdit,
-    QInputDialog,
 )
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from metin_islemleri import kisaltMetin
 import json
 from PyQt5.QtCore import Qt
@@ -139,7 +138,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
     def aciklamaDuzenle(self, anahtar):
         eski_aciklama = self.data.get(anahtar, "")
         baslik = "Başlık" if anahtar == BASLIK else "Açıklama"
-        yeni_aciklama, ok = QInputDialog.getMultiLineText(
+        yeni_aciklama, ok = SatirAtlayanInputDialog.getMultiLineText(
             self, f"{baslik} Düzenle", "Açıklama:", eski_aciklama
         )
 
