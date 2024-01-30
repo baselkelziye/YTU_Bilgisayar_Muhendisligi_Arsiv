@@ -426,7 +426,8 @@ class HocaDuzenlemeWindow(QDialog):
         # Sil (-) butonu
         silBtn = QPushButton("Hocanın Verdiği Dersi Sil", self)
         # Butonun boyutunu maksimuma ayarla
-        silBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
+        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        silBtn.setSizePolicy(sizePolicy)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
 
