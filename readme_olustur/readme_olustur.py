@@ -60,7 +60,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
     for dizin_yolu, alt_dizinler, _ in os.walk(baslangic_yolu):
         for klasor_ad in alt_dizinler:
             # Eşleşme skoru hesaplama
-            skor = benzerlik_skoru(aranan_ad, klasor_ad)
+            skor = benzerlik_skoru(aranan_ad.lower(), klasor_ad.lower())
             # Örneğin Matematik 1 için Matematik 2 döndürmesin diye ek kontrol
             # ilk kontrol Matematik 1 için Matematik 2'yi, ikinci kontrol Matematik 2 için Matematik 1'i döndürmesin diye
             if ('1' in aranan_ad and '2' in klasor_ad) or ('2' in aranan_ad and '1' in klasor_ad):
@@ -75,7 +75,7 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
     return (
         None
         if (
-            en_yuksek_yuzde < 71
+            en_yuksek_yuzde < 88
             or (
                 len(en_iyi_eslesme.split(os.sep)) < 3
                 and "Projesi" not in en_iyi_eslesme
