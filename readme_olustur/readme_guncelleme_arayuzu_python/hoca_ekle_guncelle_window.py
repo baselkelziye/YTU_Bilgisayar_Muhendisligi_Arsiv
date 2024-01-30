@@ -16,6 +16,7 @@ from PyQt5.QtWidgets import (
     QScrollArea,
     QWidget,
 )
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
@@ -109,7 +110,7 @@ class HocaEkleGuncelleWindow(QDialog):
         self.hocalariYukle()
 
     def bolumAciklamaDuzenle(self):
-        text, ok = QInputDialog.getMultiLineText(
+        text, ok = SatirAtlayanInputDialog.getMultiLineText(
             self,
             "Bölüm Açıklaması",
             "Bölüm açıklaması:",
