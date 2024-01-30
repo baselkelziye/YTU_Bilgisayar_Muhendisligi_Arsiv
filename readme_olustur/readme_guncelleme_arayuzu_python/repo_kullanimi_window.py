@@ -12,6 +12,7 @@ from PyQt5.QtWidgets import (
     QMessageBox,
     QHBoxLayout,
 )
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 import json
 from PyQt5.QtCore import Qt
 from degiskenler import *
@@ -173,12 +174,30 @@ class TalimatDialog(QDialog):
     def talimatDuzenle(self, index):
         # Düzenleme dialogunu aç
         talimat = self.repo_data[TALIMATLAR][index]
-        yeni_talimat, ok = QInputDialog.getText(
-            self, "Talimat Düzenle", "Talimat:", QLineEdit.Normal, talimat
+        yeni_talimat, ok = SatirAtlayanInputDialog.getMultiLineText(
+            self, "Talimat Düzenle", "Talimat:", talimat
         )
+        info_baslik = "İptal"
+        info_mesaj = "Talimat düzenleme işlemi iptal edildi."
         if ok and yeni_talimat:
-            self.repo_data[TALIMATLAR][index] = yeni_talimat
-            self.jsonGuncelle()
+            # Kullanıcıya onay sorusu sor
+            emin_mi = QMessageBox.question(
+                self,
+                "Onay",
+                "Talimatı değiştirmek istediğinizden emin misiniz?",
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.No,
+            )
+            if emin_mi == QMessageBox.Yes:
+                # Kullanıcı onay verirse, değişikliği yap
+                self.repo_data[TALIMATLAR][index] = yeni_talimat
+                self.jsonGuncelle()
+                info_baslik = "Başarılı"
+                info_mesaj = "Talimat düzenlendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
 
     def talimatSil(self, index):
         emin_mi = QMessageBox.question(
@@ -193,7 +212,9 @@ class TalimatDialog(QDialog):
             self.jsonGuncelle()
 
     def talimatEkle(self):
-        yeni_talimat, ok = QInputDialog.getText(self, "Talimat Ekle", "Yeni Talimat:")
+        yeni_talimat, ok = SatirAtlayanInputDialog.getMultiLineText(self, "Talimat Ekle", "Yeni Talimat:")
+        info_baslik = "İptal"
+        info_mesaj = "Talimat ekleme işlemi iptal edildi."
         if ok and yeni_talimat:
             cevap = QMessageBox.question(
                 self,
@@ -205,6 +226,13 @@ class TalimatDialog(QDialog):
             if cevap == QMessageBox.Yes:
                 self.repo_data[TALIMATLAR].append(yeni_talimat)
                 self.jsonGuncelle()
+                info_baslik = "Başarılı"
+                info_mesaj = "Talimat eklendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
+
 
     def jsonGuncelle(self):
         with open(self.json_dosyasi, "w", encoding="utf-8") as file:
@@ -295,10 +323,11 @@ class KavramDetayDialog(QDialog):
 
     def aciklamaDuzenle(self, index):
         eski_aciklama = self.kavram[ACIKLAMALAR][index]
-        yeni_aciklama, ok = QInputDialog.getText(
+        yeni_aciklama, ok = SatirAtlayanInputDialog.getMultiLineText(
             self, "Açıklama Düzenle", "Açıklama:", text=eski_aciklama
         )
-
+        inf0_baslik = "İptal"
+        info_mesaj = "Açıklama düzenleme işlemi iptal edildi."
         if ok and yeni_aciklama:
             # Kullanıcıya onay sorusu sor
             emin_mi = QMessageBox.question(
@@ -314,6 +343,12 @@ class KavramDetayDialog(QDialog):
                 self.kavram[ACIKLAMALAR][index] = yeni_aciklama
                 self.parent().jsonGuncelle()
                 self.aciklamaListele()
+                info_baslik = "Başarılı"
+                info_mesaj = "Açıklama düzenlendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
 
     def aciklamaSil(self, index):
         emin_mi = QMessageBox.question(
@@ -329,9 +364,11 @@ class KavramDetayDialog(QDialog):
             self.aciklamaListele()
 
     def aciklamaEkle(self):
-        yeni_aciklama, ok = QInputDialog.getText(
+        yeni_aciklama, ok = SatirAtlayanInputDialog.getMultiLineText(
             self, "Açıklama Ekle", "Yeni Açıklama:"
         )
+        info_baslik = "İptal"
+        info_mesaj = "Açıklama ekleme işlemi iptal edildi."
         if ok and yeni_aciklama:
             cevap = QMessageBox.question(
                 self,
@@ -344,6 +381,12 @@ class KavramDetayDialog(QDialog):
                 self.kavram[ACIKLAMALAR].append(yeni_aciklama)
                 self.parent().jsonGuncelle()
                 self.aciklamaListele()
+                info_baslik = "Başarılı"
+                info_mesaj = "Açıklama eklendi." 
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."     
+        QMessageBox.information(self, info_baslik, info_mesaj)
 
 
 class KavramDialog(QDialog):
@@ -397,7 +440,7 @@ class KavramDialog(QDialog):
 
     def keyPressEvent(self, event):
         if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
-            text, ok = QInputDialog.getText(self, "Arama", "Aranacak açıklama:")
+            text, ok = QInputDialog.getText(self, "Arama", "Aranacak kavram:")
             if ok:
                 self.searchKavram(text)
 
@@ -714,12 +757,28 @@ class AciklamaDialog(QDialog):
 
     def aciklamaDuzenle(self, index):
         aciklama = self.repo_data[ACIKLAMALAR][index]
-        yeni_aciklama, ok = QInputDialog.getText(
-            self, "Açıklama Düzenle", "Açıklama:", QLineEdit.Normal, aciklama
+        yeni_aciklama, ok = SatirAtlayanInputDialog.getMultiLineText(
+            self, "Açıklama Düzenle", "Açıklama:", aciklama
         )
+        info_baslik = "İptal"
+        info_mesaj = "Açıklama düzenleme işlemi iptal edildi."
         if ok and yeni_aciklama:
-            self.repo_data[ACIKLAMALAR][index] = yeni_aciklama
-            self.jsonGuncelle()
+            emin_mi = QMessageBox.question(
+                self,
+                "Onay",
+                "Açıklamayı değiştirmek istediğinizden emin misiniz?",
+                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.No,
+            )
+            if emin_mi == QMessageBox.Yes:
+                self.repo_data[ACIKLAMALAR][index] = yeni_aciklama
+                self.jsonGuncelle()
+                info_baslik = "Başarılı"
+                info_mesaj = "Açıklama düzenlendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
 
     def aciklamaSil(self, index):
         emin_mi = QMessageBox.question(
@@ -734,9 +793,11 @@ class AciklamaDialog(QDialog):
             self.jsonGuncelle()
 
     def aciklamaEkle(self):
-        yeni_aciklama, ok = QInputDialog.getText(
+        yeni_aciklama, ok = SatirAtlayanInputDialog.getMultiLineText(
             self, "Açıklama Ekle", "Yeni Açıklama:"
         )
+        info_baslik = "İptal"
+        info_mesaj = "Açıklama ekleme işlemi iptal edildi."
         if ok and yeni_aciklama:
             cevap = QMessageBox.question(
                 self,
@@ -748,7 +809,12 @@ class AciklamaDialog(QDialog):
             if cevap == QMessageBox.Yes:
                 self.repo_data[ACIKLAMALAR].append(yeni_aciklama)
                 self.jsonGuncelle()
-
+                info_baslik = "Başarılı"
+                info_mesaj = "Açıklama eklendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
     def jsonGuncelle(self):
         with open(self.json_dosyasi, "w", encoding="utf-8") as file:
             json.dump(self.repo_data, file, indent=4, ensure_ascii=False)
@@ -804,6 +870,8 @@ class RepoKullanimiDialog(QDialog):
         yeni_baslik, ok = QInputDialog.getText(
             self, "Başlık Düzenle", "Başlık:", QLineEdit.Normal, eski_baslik
         )
+        info_baslik = "İptal"
+        info_mesaj = "Başlık düzenleme işlemi iptal edildi."
         if ok and yeni_baslik:
             cevap = QMessageBox.question(
                 self,
@@ -821,13 +889,12 @@ class RepoKullanimiDialog(QDialog):
                     )
                 )
                 self.baslikBtn.setToolTip(self.repo_data[BASLIK])
-                QMessageBox.information(
-                    self, "Başlık Düzenlendi", "Başlık başarıyla düzenlendi."
-                )
-            else:
-                QMessageBox.information(
-                    self, "Başlık Düzenlenemedi", "Başlık düzenlenemedi."
-                )
+                info_baslik = "Başarılı"
+                info_mesaj = "Başlık düzenlendi."
+        if ok:
+            info_baslik = "Uyarı"
+            info_mesaj = "Açıklama boş bırakılamaz."
+        QMessageBox.information(self, info_baslik, info_mesaj)
 
     # JSON dosyasını oku
     def jsonVeriOku(self):
