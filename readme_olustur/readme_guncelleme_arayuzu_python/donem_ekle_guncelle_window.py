@@ -7,7 +7,6 @@ from PyQt5.QtWidgets import (
     QWidget,
     QInputDialog,
     QLineEdit,
-    QSizePolicy,
     QComboBox,
     QLabel,
     QVBoxLayout,
