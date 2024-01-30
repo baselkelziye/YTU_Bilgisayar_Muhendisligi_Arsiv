@@ -6,15 +6,13 @@ from PyQt5.QtWidgets import (
     QVBoxLayout,
     QPushButton,
     QMessageBox,
-    QInputDialog,
-    QLineEdit,
 )
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from degiskenler import *
 from progress_dialog import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
 from PyQt5.QtGui import QIcon
 from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
-from PyQt5.QtCore import Qt
 
 
 class GitIslemleriWindow(QDialog):
@@ -158,12 +156,10 @@ class GitIslemleriWindow(QDialog):
         )
 
     def push_changes(self):
-        commit_mesaji, ok_pressed = QInputDialog.getText(
+        commit_mesaji, ok_pressed = SatirAtlayanInputDialog.getMultiLineText(
             self,
             "Commit Mesajı",
-            "Lütfen commit mesajını giriniz:",
-            QLineEdit.Normal,
-            "",
+            "Lütfen commit mesajını giriniz:"
         )
         if not ok_pressed:
             QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
