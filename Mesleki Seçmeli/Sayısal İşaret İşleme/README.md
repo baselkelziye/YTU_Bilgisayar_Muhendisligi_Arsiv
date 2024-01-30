@@ -13,9 +13,12 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 Çıkmış sorualr [linki](https://drive.google.com/drive/folders/1K60JxKxGp4trP3NTK_GV41IP9FJ1HeAY?usp=drive_link) ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1K60JxKxGp4trP3NTK_GV41IP9FJ1HeAY?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
 - AEL
+
+## 😔 İçerik yok
+- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
