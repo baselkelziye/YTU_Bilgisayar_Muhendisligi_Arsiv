@@ -113,6 +113,7 @@ class GitIslemleriWindow(QDialog):
 
     def on_finished(self, output):
         self.progress_dialog.close()
+        self.thread.wait()
         del self.thread
         del self.progress_dialog
         QMessageBox.information(self, "Başarılı", output)
@@ -120,6 +121,7 @@ class GitIslemleriWindow(QDialog):
 
     def on_error(self, errors):
         self.progress_dialog.close()
+        self.thread.quit()
         del self.thread
         del self.progress_dialog
         QMessageBox.critical(self, "Hata", errors)
