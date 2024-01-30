@@ -9,6 +9,7 @@ from PyQt5.QtWidgets import (
     QHBoxLayout,
     QDialog,
     QVBoxLayout,
+    QSizePolicy
 )
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from metin_islemleri import kisaltMetin
@@ -67,15 +68,60 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             )  # Not sayısını etikette güncelle
 
             for idx, not_ in enumerate(self.data[ICINDEKILER]):
+                btn_layout = QHBoxLayout()
                 btn = QPushButton(
                     f"İçindekiler {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget
                 )  # İlk 30 karakteri göster
                 btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
-                self.notlarLayout.addWidget(btn)
+                sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+                btn.setSizePolicy(sizePolicy)
+                btn_layout.addWidget(btn)
+                # Yukarı Taşı butonu
+                upBtn = QPushButton("Yukarı çıkar", self.scrollWidget)
+                upBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i-1))
+                upBtn.setStyleSheet(YUKARI_BUTON_STILI)
+                btn_layout.addWidget(upBtn)
+
+                # Aşağı Taşı butonu
+                downBtn = QPushButton("Aşağı indir", self.scrollWidget)
+                downBtn.setStyleSheet(ASAGI_BUTON_STILI)
+                downBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i+1))
+                btn_layout.addWidget(downBtn)
+                self.notlarLayout.addLayout(btn_layout)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
 
+    def notTasi(self, idx, idx2):
+        total_items = self.notlarLayout.count()
+
+        # Negatif indeksleri dönüştür
+        if idx < 0:
+            idx += total_items
+        if idx2 < 0:
+            idx2 += total_items
+        idx %= total_items
+        idx2 %= total_items
+        self.btnSwap(
+            self.notlarLayout.itemAt(idx).layout().itemAt(0).widget(),  # Mevcut buton
+            self.notlarLayout.itemAt(idx2).layout().itemAt(0).widget(),  # Bir alttaki buton
+            idx,
+            idx2
+        )
+
+    # buton swap işi
+    def btnSwap(self, btn1, btn2, idx1, idx2):
+        tmp_text = btn1.toolTip()
+        btn1.setText(f"İçindekiler {idx1 + 1}: {kisaltMetin(btn2.toolTip())}")
+        btn1.setToolTip(btn2.toolTip())
+        btn2.setText(f"İçindekiler {idx2 + 1}: {kisaltMetin(tmp_text)}")
+        btn2.setToolTip(tmp_text)
+        self.data[ICINDEKILER][idx1], self.data[ICINDEKILER][idx2] = (
+            self.data[ICINDEKILER][idx2],
+            self.data[ICINDEKILER][idx1],
+        )
+        self.jsonKaydet()
+    
     def jsonDosyasiniYukle(self):
         try:
             with open(GIRIS_JSON_PATH, "r", encoding="utf-8") as file:
