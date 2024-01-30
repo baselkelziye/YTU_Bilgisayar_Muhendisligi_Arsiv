@@ -16,8 +16,9 @@ from PyQt5.QtGui import QIcon
 from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
 from PyQt5.QtCore import Qt
 
+
 class GitIslemleriWindow(QDialog):
-    def __init__(self,parent=None):
+    def __init__(self, parent=None):
         super(GitIslemleriWindow, self).__init__(parent)
         self.setModal(True)
         self.setWindowTitle("Git İşlemleri")
@@ -68,10 +69,12 @@ class GitIslemleriWindow(QDialog):
 
         # İşletim sistemi kontrolü
         self.is_windows = sys.platform.startswith("win")
+
     def hoca_ders_adlari_ac(self):
         hoca_ders_adlari_window = HocaDersAdlariWindow(self)
-        hoca_ders_adlari_window.exec_()    
-    def run_script(self, script_path, baslik, islem="", dizin = BIR_UST_DIZIN):
+        hoca_ders_adlari_window.exec_()
+
+    def run_script(self, script_path, baslik, islem="", dizin=BIR_UST_DIZIN):
         cevap = QMessageBox.question(
             self,
             "Onay",
@@ -83,9 +86,11 @@ class GitIslemleriWindow(QDialog):
             return
         self.original_dir = os.getcwd()
         os.chdir(dizin)
-        self.progress_dialog = CustomProgressDialogWithCancel(baslik, self, self.thread_durduruluyor)
+        self.progress_dialog = CustomProgressDialogWithCancel(
+            baslik, self, self.thread_durduruluyor
+        )
         # Thread'i başlat
-        self.thread = CMDScriptRunnerThread(script_path,islem)
+        self.thread = CMDScriptRunnerThread(script_path, islem)
         if script_path == "git pull":
             self.thread.finished.connect(self.interface_updated_succesfully)
         else:
@@ -94,18 +99,20 @@ class GitIslemleriWindow(QDialog):
         self.thread.info.connect(self.info)
         self.thread.start()
         self.progress_dialog.show()
+
     def thread_durduruluyor(self):
         cevap = QMessageBox.question(
-                self,
-                "Onay",
-                f"İşlemi durdurmak istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-            )
+            self,
+            "Onay",
+            f"İşlemi durdurmak istediğinize emin misiniz?",
+            QMessageBox.Yes | QMessageBox.No,
+        )
         if cevap == QMessageBox.No:
             return
         self.progress_dialog.setLabelText("İşlem durduruluyor...")
         self.progress_dialog.setCancelButton(None)
         self.thread.durdur()
+
     def on_finished(self, output):
         self.progress_dialog.close()
         del self.thread
@@ -135,7 +142,7 @@ class GitIslemleriWindow(QDialog):
             komut,
             baslik="Google Form Güncelleniyor...",
             islem="Google Form Güncelleme",
-            dizin = yol
+            dizin=yol,
         )
 
     def update_readme(self):
@@ -147,7 +154,7 @@ class GitIslemleriWindow(QDialog):
             komut,
             baslik="README.md Güncelleniyor...",
             islem="README.md Güncelleme",
-            dizin = yol
+            dizin=yol,
         )
 
     def push_changes(self):
@@ -166,7 +173,7 @@ class GitIslemleriWindow(QDialog):
             return
         # burada git -C komtutu çalışacak önce git reposu mu diye kontrol edilecek
         komut = f"git -C {DOKUMANLAR_REPO_YOLU} add --all"
-        komut = komut + f" && git -C {DOKUMANLAR_REPO_YOLU} commit -m \"{commit_mesaji}\""
+        komut = komut + f' && git -C {DOKUMANLAR_REPO_YOLU} commit -m "{commit_mesaji}"'
         komut = komut + f" && git -C {DOKUMANLAR_REPO_YOLU} push"
         self.run_script(
             komut,
@@ -178,6 +185,11 @@ class GitIslemleriWindow(QDialog):
         if not self.git_degisiklik_kontrol(
             os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
         ):
+            QMessageBox.critical(
+                None,
+                "Hata",
+                "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.",
+            )
             return
         komut = f"git -C {DOKUMANLAR_REPO_YOLU} pull"
         self.run_script(
@@ -188,28 +200,36 @@ class GitIslemleriWindow(QDialog):
 
     def update_interface(self):
         if not self.git_degisiklik_kontrol():
-            return
-        komut = "git pull"
+            cevap = QMessageBox.question(
+                self,
+                "Onay",
+                f"Yerelde değişiklikleriniz var ve işleme devam ederseniz değişiklikleriniz silinecek. Devam etmek istediğinize emin misiniz?",
+                QMessageBox.Yes | QMessageBox.No,
+            )
+            if cevap == QMessageBox.No:
+                QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
+                return
+        # hard reset komutu
+        komut = "git fetch --all && git reset --hard origin/main"
         self.run_script(
             komut,
             baslik="Arayüz Kodları Güncelleniyor...",
             islem="Arayüz Kodları Güncelleme",
         )
+
     def interface_updated_succesfully(self):
         QMessageBox.information(
             self,
             "Bilgi",
-            "Arayüz kodları güncellendi. Lütfen programı yeniden başlatın.")
+            "Arayüz kodları güncellendi. Lütfen programı yeniden başlatın.",
+        )
         sys.exit()
 
     def start_routine_check(self):
         komut = f"python3 {RUTIN_KONTROL_PY}"
         yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
         self.run_script(
-            komut,
-            baslik="Rutin Kontrol Yapılıyor...",
-            islem="Rutin Kontrol",
-            dizin = yol
+            komut, baslik="Rutin Kontrol Yapılıyor...", islem="Rutin Kontrol", dizin=yol
         )
 
     def git_degisiklik_kontrol(self, git_dizin_yolu="."):
@@ -222,11 +242,6 @@ class GitIslemleriWindow(QDialog):
         degisiklik_var_mi = False
         # Değişiklik olup olmadığını kontrol et
         if "nothing to commit, working tree clean" not in output:
-            QMessageBox.critical(
-                None,
-                "Hata",
-                "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın.",
-            )
             degisiklik_var_mi = True
         # İlk dizine geri dön
         os.chdir(original_dir)
