@@ -43,7 +43,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 📋 Ara Projeler -> yapılıp yüklenen ara projeler
 - 📋 Bitirme Projesi -> yapılıp yüklenen bitirme projeleri
 - 📋 readme_olustur -> readme dosyası oluşturmak için kullanılan python kodu
-- 📋 Burada olmayan bazı çıkmış sorulara/lablara/ödevlere [linkten](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh) ulaşabilirsiniz.
+- 📋 Burada olmayan bazı [çıkmış sorulara](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=drive_link)/lablara/ödevlere [linkten](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh) ulaşabilirsiniz. 
 
 
 ### 📝 Talimatlar:
