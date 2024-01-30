@@ -1,73 +1,120 @@
-/* Ana pencere stilini ayarla */
+/* Ana Pencere Stili */
 QMainWindow {
-    background-color: #f0f0f0;
+    background-color: #f2f2f2; /* Arka plan rengi */
+    border: 1px solid #dcdcdc; /* Kenarlık rengi */
 }
 
-/* Butonlar için stil */
+/* QPushButton Genel Stil */
 QPushButton {
     color: white;
-    background-color: #007bff;
+    background-color: #3498db; /* Daha parlak mavi ton */
     border: none;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 8px 15px; /* Daha fazla padding */
+    border-radius: 5px; /* Daha yuvarlatılmış köşeler */
+    font-size: 14px; /* Daha büyük font */
+    font-weight: medium; /* Orta kalınlıkta font */
     min-width: 80px;
     min-height: 30px;
 }
 
+/* QPushButton Hover Durumu */
 QPushButton:hover {
-    background-color: #0056b3;
+    background-color: #2980b9; /* Koyu mavi ton */
 }
 
+/* QPushButton Pressed Durumu */
 QPushButton:pressed {
-    background-color: #003d7a;
+    background-color: #1c598a; /* Daha koyu mavi ton */
 }
 
-/* Label'lar için stil */
+/* QPushButton Odaklanma Durumu */
+QPushButton:focus {
+    border: 2px solid #ff5733; /* Örnek olarak kırmızı bir odak rengi */
+    outline: none; /* Odak rengi için varsayılan kontur kaldırma */
+}
+
+
+/* Label'lar için Stil */
 QLabel {
-    color: #2c3e50; /* Koyu mavi/gri tonu */
-    font-size: 16px; /* Daha büyük font boyutu */
-    font-weight: bold; /* Kalın yazı stili */
-    background-color: #ecf0f1; /* Hafif gri arka plan */
-    padding: 4px; /* İç boşluk */
-    border-radius: 4px; /* Yuvarlatılmış köşeler */
+    color: #34495e; /* Daha koyu mavi/gri tonu */
+    font-size: 14px;
+    font-weight: normal; /* Normal yazı stili */
+    background-color: transparent; /* Şeffaf arka plan */
+    padding: 2px; /* Daha az padding */
+    border-radius: 2px; /* Daha az yuvarlak köşeler */
 }
 
-
-/* Edit kutuları için stil */
+/* QLineEdit Genel Stili */
 QLineEdit {
-    border: 1px solid #ccc;
-    padding: 5px;
-    border-radius: 3px;
-    min-height: 20px;
+    border: 1px solid #3498db; /* Modern kenarlık rengi */
+    border-radius: 6px; /* Daha yuvarlatılmış köşeler */
+    padding: 8px;
+    min-height: 30px;
+    background-color: #ffffff; /* Beyaz arka plan */
+    color: #333333; /* Metin rengi */
 }
 
-QDialog {
-    background-color: #f2f2f2; /* Arka plan rengi */
-    border: 1px solid #c0c0c0; /* Kenarlık */
+/* Placeholder Metni */
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Placeholder metin rengi */
 }
 
-/* Combo box için stil */
+/* Clear Button */
+QLineEdit::clear-button {
+    image: url(":/icons/clear.png"); /* Temizleme simgesi */
+    width: 16px;
+    height: 16px;
+    padding-right: 8px;
+}
+
+/* Clear Button Hover Durumu */
+QLineEdit::clear-button:hover {
+    image: url(":/icons/clear-hover.png"); /* Hover durumunda simge değişikliği */
+}
+
+/* Clear Button Basınç Durumu */
+QLineEdit::clear-button:pressed {
+    image: url(":/icons/clear-pressed.png"); /* Basıldığında simge değişikliği */
+}
+/* QComboBox Odaklanma Durumu*/
+QLineEdit:focus {
+    border-color: #ff5733;
+}
+
+/* QComboBox Genel Stili */
 QComboBox {
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
     padding: 5px;
-    min-height: 20px;
+    border-color: #3498db;
+    min-height: 25px;
+}
+/* QComboBox Odaklanma Durumu*/
+QComboBox:focus {
+    border-color: #ff5733;
 }
 
+/* QComboBox Açılır Menü Stili */
 QComboBox::drop-down {
     border: none;
 }
 
-/* Scroll bar için stil */
+/* QComboBox Basınç Durumu */
+QComboBox:pressed, QComboBox::drop-down:pressed {
+    background-color: #ecf0f1; /* Açık renk arka plan */
+}
+
+
+/* Scroll Bar için Stil */
 QScrollBar:vertical {
     border: none;
-    background: #eee;
-    width: 10px;
-    margin: 20px 0 20px 0;
+    background: #ecf0f1;
+    width: 12px;
+    margin: 20px 0;
 }
 
 QScrollBar::handle:vertical {
-    background: #ccc;
+    background: #bdc3c7;
     min-height: 20px;
 }
 
@@ -76,35 +123,85 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     background: none;
 }
 
-/* Tab widget için stil */
-QTabWidget::pane {
-    border-top: 2px solid #ccc;
-}
 
-QTabBar::tab {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-bottom: none;
-}
-
-QTabBar::tab:selected {
-    background: #f0f0f0;
-    border-color: #ccc;
-}
-
-QTabBar::tab:!selected {
-    background: #e0e0e0;
-    margin-top: 2px;
-}
-
-
+/* ProgressBar için Stil */
 QProgressBar {
-    border: 2px solid grey;
+    border: 1px solid #bdc3c7;
     border-radius: 5px;
-    text-align: center;
+    background-color: #ecf0f1;
+    height: 20px;
+    text-align: center; /* İlerleme yüzdesini ortala */
 }
 
 QProgressBar::chunk {
-    background-color: #05B8CC;
-    width: 20px;
+    background-color: #3498db; /* Parlak mavi renk */
+    border-radius: 4px; /* Yuvarlatılmış köşeler */
+}
+
+
+/* Genel Liste Stili */
+QListWidget {
+    background-color: #f2f2f2;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+
+/* Liste Öğeleri Stili */
+QListWidget::item {
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    padding: 0.5px;
+    margin: 1px;
+}
+
+QListWidget::item:hover {
+    background-color: #dcdde1;
+}
+
+QListWidget::item:selected {
+    background-color: #bdc3c7;
+    color: white;
+}
+
+/* Kaydırma Çubukları Stili */
+QListWidget::verticalScrollBar {
+    width: 10px;
+}
+
+QListWidget::verticalScrollBar::handle {
+    background-color: #bdc3c7;
+    border-radius: 5px;
+}
+
+QListWidget::verticalScrollBar::add-line, QListWidget::verticalScrollBar::sub-line {
+    border: none;
+    background: none;
+}
+
+/* Focus Stili */
+QListWidget::item:focus {
+    border: 1px solid #3498db;
+}
+
+/* QDialog Genel Stil */
+QDialog {
+    background-color: #ffffff; /* Arka plan rengi */
+    border: 1px solid #dcdcdc; /* Kenarlık rengi */
+    border-radius: 6px; /* Köşe yuvarlatma */
+}
+
+/* QTextEdit Genel Stil */
+QTextEdit {
+    background-color: #ffffff; /* Arka plan rengi */
+    color: #333333; /* Metin rengi */
+    border: 1px solid #3498db; /* Kenarlık rengi */
+    border-radius: 6px; /* Köşe yuvarlatma */
+    padding: 8px;
+    min-height: 100px; /* Minimum yükseklik */
+}
+
+/* QTextEdit Odaklanma Durumu */
+QTextEdit:focus {
+    border-color: #ff5733; /* Örnek olarak kırmızı bir odak rengi */
+    outline: none; /* Odak rengi için varsayılan kontur kaldırma */
 }
