@@ -910,30 +910,30 @@ class DersDuzenlemeWindow(QDialog):
         donem = self.donemInput.currentText()
         guncel_mi = self.guncelMi.currentText() == "True"
         tip = self.tipInput.currentText()
-        if (yil != 0 or donem != YOK) and tip == MESLEKI_SECMELI:
-            if yil != 0:
-                QMessageBox.warning(
-                    self, "Hata", "Yıl bilgisi olan dersler mesleki seçmeli olamaz!"
-                )
-                return
-            else:
-                QMessageBox.warning(
-                    self, "Hata", "Dönem bilgisi olan dersler mesleki seçmeli olamaz!"
-                )
-                return
-        if (yil == 0 or donem == YOK) and tip != MESLEKI_SECMELI:
+        if (yil == 0 or donem == YOK) and tip == ZORUNLU:
             if yil == 0:
                 QMessageBox.warning(
+                    self, "Hata", "Yıl bilgisi olmayan dersler " + ZORUNLU + " olamaz!"
+                )
+                return
+            else:
+                QMessageBox.warning(
+                    self, "Hata", "Dönem bilgisi olmayan dersler " + ZORUNLU + " olamaz!"
+                )
+                return
+        if (yil != 0 or donem != YOK) and tip != ZORUNLU:
+            if yil != 0:
+                QMessageBox.warning(
                     self,
                     "Hata",
-                    "Mesleki seçmeli olmayan dersler yıl bilgisi içermelidir!",
+                    ZORUNLU +" olmayan dersler yıl bilgisi içermemelidir!",
                 )
                 return
             else:
                 QMessageBox.warning(
                     self,
                     "Hata",
-                    "Mesleki seçmeli olmayan dersler dönem bilgisi içermelidir!",
+                    ZORUNLU + " olmayan dersler dönem bilgisi içermemelidir!",
                 )
                 return
 
