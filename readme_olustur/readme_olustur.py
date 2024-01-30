@@ -456,22 +456,31 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
 
 
 def readme_katkida_bulunanlar_ekle(veri):
-    veri['katkida_bulunanlar'] = sorted(veri['katkida_bulunanlar'], 
-                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get('katkida_bulunma_orani',KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad']))
+    veri[KATKIDA_BULUNANLAR] = sorted(veri[KATKIDA_BULUNANLAR], 
+                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad']))
+    # Katkı oranlarına göre emojiler (örnek)
+    EMOJILER = ["👑", "🌟", "💫", "✨", "🔹"]  # Bu listeyi ihtiyacınıza göre düzenleyin
 
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         # Bölüm başlığını ortala
         f.write(f"<h2 align='center'>🤝 {veri['bolum_adi']}</h2>\n\n")
-        f.write(f"{veri['bolum_aciklamasi']}\n\n")
-        for katkida_bulunan in veri["katkida_bulunanlar"]:
-            # Katkıda bulunanların isimlerini merkezde ve kalın italik olarak vurgula
-            f.write(f"<p align='center'>💫 <b><i>{katkida_bulunan.get(AD,'')}</i></b> 💫</p>\n")
+        f.write(f"{veri[BOLUM_ACIKLAMASI]}\n\n")
+        for katkida_bulunan in veri[KATKIDA_BULUNANLAR]:
+            oran = katkida_bulunan.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])
+            oran_index = KATKIDA_BULUNMA_ORANI_DIZI.index(oran)
+            emoji = EMOJILER[oran_index]  # Katkı oranına göre emoji seçimi
+            # Başlık seviyesini belirle
+            header_size = min(len(KATKIDA_BULUNMA_ORANI_DIZI) + oran_index, 6)  # En fazla <h6> kullanılabilir
+            header_tag = f"h{header_size}"
+            # Katkıda bulunanların isimlerini belirlenen başlık etiketi ile yaz
+            f.write(f"<{header_tag} align='center'>{emoji} <b><i>{katkida_bulunan.get(AD,'')}</i></b> {emoji}</{header_tag}>\n")
             
             # İletişim bilgilerini yan yana yaz
             iletisim_bilgileri_html = " &nbsp".join([f"<a href='{bilgi.get(LINK, '')}'><b>{bilgi.get(BASLIK, '')}</b></a>" for bilgi in katkida_bulunan.get(ILETISIM_BILGILERI, [])])
             if iletisim_bilgileri_html:
                 f.write(f"<p align='center'>{iletisim_bilgileri_html}</p>\n")
             f.write("\n")
+
 
 def readmeye_yildiz_gecmisi_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
