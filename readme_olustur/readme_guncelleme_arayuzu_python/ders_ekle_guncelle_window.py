@@ -22,7 +22,7 @@ from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
-
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 
 # Hoca adlarını ve kısaltmalarını hazırla
 def hoca_sirala(hoca):
@@ -104,7 +104,7 @@ class DersEkleGuncelleWindow(QDialog):
         self.dersleriYukle()
 
     def bolumAciklamasiDuzenle(self):
-        yeni_baslik, ok = QInputDialog.getMultiLineText(
+        yeni_baslik, ok = SatirAtlayanInputDialog.getMultiLineText(
             self,
             "Bölüm Açıklaması",
             "Bölüm Açıklamasını Giriniz:",

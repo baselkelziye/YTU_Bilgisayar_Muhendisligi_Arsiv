@@ -1,6 +1,6 @@
 import locale
 import json
-from urllib.parse import urlparse
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from PyQt5.QtWidgets import (
     QWidget,
     QVBoxLayout,
@@ -13,9 +13,7 @@ from PyQt5.QtWidgets import (
     QLineEdit,
     QScrollArea,
 )
-import re
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
-from threadler import KatkiEkleThread
 from PyQt5.QtCore import Qt
 from degiskenler import *
 from PyQt5.QtGui import QIcon
@@ -140,7 +138,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
 
     def bolumAciklamasiDuzenle(self):
         # Bölüm açıklamasını düzenle
-        text, ok = QInputDialog.getMultiLineText(
+        text, ok = SatirAtlayanInputDialog.getMultiLineText(
             self, "Bölüm Açıklaması", "Bölüm açıklaması: ", self.data[BOLUM_ACIKLAMASI]
         )
         if ok:
