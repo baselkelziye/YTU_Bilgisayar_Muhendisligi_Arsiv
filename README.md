@@ -66,11 +66,18 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 💡 **Lab**
   - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
+- 💡 **Shiningstar Programı**
+  - 📘 Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shiningstar-Program%C4%B1-Ba%C5%9Fvurular%C4%B1--G%C3%BCncelleme-Tarihi--22-09-2023-) erişebilirsiniz.
+  - 📘 Bu program 2023-2024 eğitim öğretim yılı Güz döneminde ilk öğrencilerini aldı. Program henüz **Lisans** dönemindeyken **Yüksek Lisans** yapabilmenizi sağlıyor.
+  - 📘 İşleyişi şu şekilde, örneğin ortalamanız **3**'ün üzerinde. Programa başvuru hakkında sahipsiniz. Örneğin **3. sınıf 1. dönem** programa başvurdunuz ve 1 tane **Yüksek Lisans** dersi aldınız. Sonrasında bu dersten **başarlılı (CB)** oldunuz. Benzer şekilde **4. sınıf 2. dönem**e kadar en az 5 dersi alıp başarılı sayıldınız. O zaman **sınavsız** ve **mülakatsız** bir şekilde (minimum gereksinim olan Ales sınavından 55 almak gerekiyor)  Yıldız'da **Yüksek Lisans**a başlayabilirsiniz ve aynı zamanda geçtiğiniz tüm derslerden de **muafsınız**. Yüksek Lisans'ta toplam [9 ders](http://www.bologna.yildiz.edu.tr/index.php?r=program/view&id=279&aid=3) vermek gerekiyor. 
+  - 📘 2023 yılında hafifletilen müfredatla birlikte bu programı başarıyla tamamlamak oldukça kolay. **4. sınıf**'ta **5** dersin tamamı çok rahat şekilde verilir.
+  - 📘 Herhangi bir **Lisans** dersi, herhangi bir **Yüksek Lisans** dersinden en az 2 kat daha kolay. Gözünüz korkmasın. Bu program yeni olduğu için henüz pek bilinmiyor ve **2023 güz dönemi**nde başvuru yapan çok olmadı. Ama aşırı kolay ve aynı zamanda **kaldığınız dersler Lisans ortalamasını asla etkilemiyor.** Yani başvurup denemekten zarar gelmez.
+  - 📘 **Yüksek Lisans**'ı genelde 35 yaş üstü evli barklı insanlar maaşları yükselsin diye öylesine yaptıkları için rekabet neredeyse **hiç** yok. Yani çok az bir eforla dersi **AA-BA** gibi bir notla geçmek mümkün. Çünkü bırakın derse çalışma oranını, derslere katılım oranı bile **aşırı düşük**.
 - 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
   - 📘 Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.
-  - 📘 Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor.
+  - 📘 **Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor.** Mesela dönem içi sadece 2 gününüz boş ve bundan dolayı staj yapamıyorsunuz. O zaman sigortalı ve bilgisayar mühendisliğiyle ilgili bir şirkette o günler çalışabilirsiniz. Mesela **15 hafta** boyunca haftada **2 gün** çalıştınız ve sigortanız yattı diyelim, o zaman 30 iş günü çalışmış olursunuz ve bunu normal staj süreciyle uğraşmadan staja saydırabilirsiniz. Yok **staj defteriymiş** yok **cd**'ymiş uğraşmazsınız.
 - 💡 **Vize**
   - 📘 İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
   - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
