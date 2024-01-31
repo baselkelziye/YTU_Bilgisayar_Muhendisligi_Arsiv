@@ -1,6 +1,6 @@
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QProgressDialog, QPushButton
-from PyQt5.QtCore import QEvent
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QProgressDialog, QPushButton
+from PyQt6.QtCore import QEvent
 
 
 class CustomProgressDialog(QProgressDialog):
@@ -12,9 +12,9 @@ class CustomProgressDialog(QProgressDialog):
         # İptal butonunu kaldır
         self.setCancelButton(None)
         # Pencere başlık çubuğunu kaldır
-        self.setWindowFlags(Qt.Dialog | Qt.FramelessWindowHint)
+        self.setWindowFlags(Qt.WindowType.Dialog | Qt.WindowType.FramelessWindowHint)
 
-        self.setWindowModality(Qt.WindowModal)
+        self.setWindowModality(Qt.WindowModality.WindowModal)
         self.setMinimumDuration(0)
         self.setAutoClose(True)
         # Sürekli dönen bir hale getir
@@ -32,7 +32,7 @@ class CustomProgressDialogWithCancel(CustomProgressDialog):
         # İptal butonunun tıklama olayını engellemek için event filter ekleyin
         self.iptal_butonu.installEventFilter(self)
     def eventFilter(self, obj, event):
-        if obj == self.iptal_butonu and event.type() == QEvent.MouseButtonPress:
+        if obj == self.iptal_butonu and event.type() == QEvent.Type.MouseButtonPress:
             self.fonksiyon()
             return True
 

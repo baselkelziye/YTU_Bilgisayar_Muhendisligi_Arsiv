@@ -1,7 +1,7 @@
 import sys
 import json
 import locale
-from PyQt5.QtWidgets import QApplication, QDialog, QHBoxLayout, QListWidget, QPushButton, QVBoxLayout, QMessageBox
+from PyQt6.QtWidgets import QApplication, QDialog, QHBoxLayout, QListWidget, QPushButton, QVBoxLayout, QMessageBox
 from degiskenler import *
 # Türkçe karakterler için locale ayarları
 locale.setlocale(locale.LC_ALL, "tr_TR.utf8")

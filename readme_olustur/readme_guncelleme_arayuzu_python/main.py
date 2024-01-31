@@ -1,13 +1,12 @@
 import sys
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QApplication,
-    QDesktopWidget,
     QWidget,
     QPushButton,
     QVBoxLayout,
     QMessageBox,
 )
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon, QGuiApplication
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from ders_ekle_guncelle_window import DersEkleGuncelleWindow
@@ -99,7 +98,7 @@ class App(QWidget):
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
+        cp = QGuiApplication.instance().primaryScreen().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
@@ -150,4 +149,4 @@ if __name__ == "__main__":
         _style = f.read()
         app.setStyleSheet(_style)
     ex = App()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

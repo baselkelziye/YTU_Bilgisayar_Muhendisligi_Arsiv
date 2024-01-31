@@ -1,8 +1,8 @@
 import requests
 import locale
 import json
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (
     QDialog,
     QVBoxLayout,
     QInputDialog,
@@ -21,7 +21,7 @@ from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon, QKeyEvent
 from metin_islemleri import kisaltMetin
 
 # LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
@@ -68,7 +68,7 @@ class HocaEkleGuncelleWindow(QDialog):
         aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_HOCA_BOLUM_ACIKLAMASI)
         # Bölüm adı label
         self.bolumAdiLabel = QLabel("Bölüm Adı")
-        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAdiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı buton
         self.bolumAdiBtn = QPushButton(kisaltMetin(bolum_adi))
@@ -78,7 +78,7 @@ class HocaEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
         self.bolumAciklamasiLabel = QLabel("Bölüm Açıklaması")
-        self.bolumAciklamasiLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAciklamasiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
         self.bolumAciklamasiBtn = QPushButton(kisaltMetin(aciklama))
@@ -94,7 +94,7 @@ class HocaEkleGuncelleWindow(QDialog):
 
         # Hoca sayısını gösteren etiket
         self.hocaSayisiLabel = QLabel("Toplam 0 hoca")
-        self.hocaSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.hocaSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.hocaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -121,9 +121,9 @@ class HocaEkleGuncelleWindow(QDialog):
                 self,
                 "Onay",
                 "Bölüm açıklamasını güncellemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ACIKLAMASI] = text
                 self.bolumAciklamasiBtn.setText(kisaltMetin(text))
                 self.bolumAciklamasiBtn.setToolTip(text)
@@ -138,16 +138,16 @@ class HocaEkleGuncelleWindow(QDialog):
 
     def bolumAdiDuzenle(self):
         text, ok = QInputDialog.getText(
-            self, "Bölüm Adı", "Bölüm adı:", QLineEdit.Normal, text=self.data[BOLUM_ADI]
+            self, "Bölüm Adı", "Bölüm adı:", QLineEdit.EchoMode.Normal, text=self.data[BOLUM_ADI]
         )
         if ok:
             cevap = QMessageBox.question(
                 self,
                 "Onay",
                 "Bölüm adını güncellemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ADI] = text
                 self.bolumAdiBtn.setText(kisaltMetin(text))
                 self.bolumAdiBtn.setToolTip(text)
@@ -161,7 +161,7 @@ class HocaEkleGuncelleWindow(QDialog):
             json.dump(self.data, file, ensure_ascii=False, indent=4)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak hoca:")
             if ok:
                 self.searchHocalar(text)
@@ -173,10 +173,10 @@ class HocaEkleGuncelleWindow(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.hocalarLayout.count()):
                 widget = self.hocalarLayout.itemAt(i).widget()
                 if isinstance(widget, QPushButton):
@@ -304,12 +304,12 @@ class HocaDuzenlemeWindow(QDialog):
         else:
             self.setWindowTitle("Hoca Ekle")
         self.setMinimumSize(
-            500, 200
+            600, 650
         )  # Pencerenin en küçük olabileceği boyutu ayarlayın
         self.layout = QVBoxLayout(self)
         # Ünvan için alan
         self.unvan_label = QLabel("Ünvan")
-        self.unvan_label.setAlignment(Qt.AlignCenter)
+        self.unvan_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.unvan_label)
         self.unvanInput = QComboBox(self)
         self.unvanInput.addItems(unvanlar)
@@ -321,27 +321,27 @@ class HocaDuzenlemeWindow(QDialog):
         if unvan in unvanlar:
             self.unvanInput.setCurrentIndex(unvanlar.index(unvan))
         self.ad_label = QLabel("Ad")
-        self.ad_label.setAlignment(Qt.AlignCenter)
+        self.ad_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.ad_label)
         self.adInput = QLineEdit(ad)
         self.layout.addWidget(self.adInput)
 
         # Hoca ofisi için alan
         self.ofis_label = QLabel("Ofis")
-        self.ofis_label.setAlignment(Qt.AlignCenter)
+        self.ofis_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.ofis_label)
         self.ofisInput = QLineEdit(self.hoca.get(OFIS, "") if self.hoca else "")
         self.layout.addWidget(self.ofisInput)
 
         # Hoca linki için alan
         self.link_label = QLabel("Link")
-        self.link_label.setAlignment(Qt.AlignCenter)
+        self.link_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.link_label)
         self.linkInput = QLineEdit(self.hoca.get(LINK, "") if self.hoca else "")
         self.layout.addWidget(self.linkInput)
         # Hoca aktif görevde mi için alan
         self.aktif_mi_label = QLabel("Aktif görevde mi?")
-        self.aktif_mi_label.setAlignment(Qt.AlignCenter)
+        self.aktif_mi_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.aktif_mi_label)
         self.aktifGorevdeInput = QComboBox(self)
         self.aktifGorevdeInput.addItems(["Evet", "Hayır"])
@@ -352,7 +352,7 @@ class HocaDuzenlemeWindow(QDialog):
         self.layout.addWidget(self.aktifGorevdeInput)
         # Hoca cinsiyet durumu için alan
         self.erkek_mi_label = QLabel("Erkek mi?")
-        self.erkek_mi_label.setAlignment(Qt.AlignCenter)
+        self.erkek_mi_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.erkek_mi_label)
         self.erkekMiInput = QComboBox(self)
         self.erkekMiInput.addItems(["Evet", "Hayır"])
@@ -366,7 +366,7 @@ class HocaDuzenlemeWindow(QDialog):
         # Derslerin sadece AD alanını al ve adlarına göre sırala
         self.dersler = sorted([ders[AD] for ders in self.dersler], key=locale.strxfrm)
         self.hocanin_verdig_dersler_label = QLabel("Hocanın Verdiği Dersler")
-        self.hocanin_verdig_dersler_label.setAlignment(Qt.AlignCenter)
+        self.hocanin_verdig_dersler_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.hocanin_verdig_dersler_label)
 
         # Hocalar için kaydırılabilir alan oluştur
@@ -407,7 +407,9 @@ class HocaDuzenlemeWindow(QDialog):
 
         # Yatay düzeni ana düzene ekle
         self.layout.addLayout(buttonsLayout)
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_S and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            self.kaydet()
     def dersEkleComboBox(self, hoca_ders=None):
         if len(self.dersler) == 0:
             QMessageBox.critical(
@@ -426,7 +428,7 @@ class HocaDuzenlemeWindow(QDialog):
         # Sil (-) butonu
         silBtn = QPushButton("Hocanın Verdiği Dersi Sil", self)
         # Butonun boyutunu maksimuma ayarla
-        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         silBtn.setSizePolicy(sizePolicy)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
@@ -493,6 +495,15 @@ class HocaDuzenlemeWindow(QDialog):
             return False
 
     def kaydet(self):
+        cevap = QMessageBox.question(
+            self,
+            "Onay",
+            "Değişiklikleri kaydetmek istediğinize emin misiniz?",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+        )
+        if cevap == QMessageBox.StandardButton.No:
+            QMessageBox.information(self, "İptal", "Değişiklikler kaydedilmedi.")
+            return
         self.thread = HocaKaydetThread(self.hoca, self.data, self)
         self.thread.finished.connect(
             self.islemTamamlandi
@@ -518,9 +529,9 @@ class HocaDuzenlemeWindow(QDialog):
             self,
             "Onay",
             "Hocayı silmek istediğinden emin misin?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes and self.hoca:
+        if emin_mi == QMessageBox.StandardButton.Yes and self.hoca:
             self.data[HOCALAR].remove(self.hoca)
             self.kaydetVeKapat()
 
