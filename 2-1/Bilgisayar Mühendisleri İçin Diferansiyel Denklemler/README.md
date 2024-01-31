@@ -13,11 +13,9 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hNpNMVPmbuGqAzHEKXY3T5L38v5GkTXn?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
 - SY
-
-## 😔 İçerik yok
-- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
