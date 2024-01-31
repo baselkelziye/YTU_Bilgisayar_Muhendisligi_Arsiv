@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+  xmlns:xacro="http://ros.org/wiki/xacro"
+  >
+
+  <!-- Chassis -->
+  <link name="base_link">
+    <inertial>
+      <mass value="14.0"/>
+      <origin xyz="0 0 0.177"/>
+      <inertia ixx="0.14711667" ixy="0.0" ixz="0.0"
+        iyy="0.334951167" iyz="0.0"
+        izz="0.3978345"/>
+    </inertial>
+    <visual name="base_visual">
+      <origin xyz="0 0 0.18" rpy="0 0 0"/>
+      <geometry name="pioneer_geom">
+        <mesh filename="package://p3at_description/meshes/p3at_meshes/chassis.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.18" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.501 0.3 0.19"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="p3at_front_left_wheel">
+    <inertial>
+      <mass value="1.5"/>	
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.005240625" ixy="0" ixz="0"
+        iyy="0.005240625" iyz="0" izz="0.009075"/>
+    </inertial>
+    <visual name="visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry name="geom">
+        <mesh filename="package://p3at_description/meshes/p3at_meshes/wheel.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.110" length="0.075"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="p3at_front_left_wheel_joint" type="continuous">
+    <axis xyz="0 0 -1"/>
+    <limit effort="100" velocity="100" />
+    <joint_properties damping="0.7"/>
+    <origin xyz="0.125 0.2010 0.11" rpy="1.5707 0 0"/>
+    <parent link="base_link"/>
+    <child link="p3at_front_left_wheel"/>
+  </joint>
+
+  <link name="p3at_front_right_wheel">
+    <inertial>
+      <mass value="1.5"/>	
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.005240625" ixy="0" ixz="0"
+        iyy="0.005240625" iyz="0" izz="0.009075"/>
+    </inertial>
+    <visual name="visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry name="geom">
+        <mesh filename="package://p3at_description/meshes/p3at_meshes/wheel.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.110" length="0.075"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="p3at_front_right_wheel_joint" type="continuous">
+    <axis xyz="0 0 -1"/>
+    <limit effort="100" velocity="100" />
+    <joint_properties damping="0.7"/>
+    <origin xyz="0.125 -0.2010 0.11" rpy="1.5707 0 0"/>
+    <parent link="base_link"/>
+    <child link="p3at_front_right_wheel"/>
+  </joint>
+
+
+
+  <link name="p3at_rear_left_wheel">
+    <inertial>
+      <mass value="1.5"/>	
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.005240625" ixy="0" ixz="0"
+        iyy="0.005240625" iyz="0" izz="0.009075"/>
+    </inertial>
+    <visual name="visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry name="geom">
+        <mesh filename="package://p3at_description/meshes/p3at_meshes/wheel.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.110" length="0.075"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="p3at_rear_left_wheel_joint" type="continuous">
+    <axis xyz="0 0 -1"/>
+    <limit effort="100" velocity="100" />
+    <joint_properties damping="0.7"/>
+    <origin xyz="-0.125 0.2010 0.11" rpy="1.5707 0 0"/>
+    <parent link="base_link"/>
+    <child link="p3at_rear_left_wheel"/>
+  </joint>
+
+  <link name="p3at_rear_right_wheel">
+    <inertial>
+      <mass value="1.5"/>	
+      <origin xyz="0 0 0"/>
+      <inertia ixx="0.005240625" ixy="0" ixz="0"
+        iyy="0.005240625" iyz="0" izz="0.009075"/>
+    </inertial>
+    <visual name="visual">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry name="geom">
+        <mesh filename="package://p3at_description/meshes/p3at_meshes/wheel.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.110" length="0.075"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="p3at_rear_right_wheel_joint" type="continuous">
+    <axis xyz="0 0 -1"/>
+    <limit effort="100" velocity="100" />
+    <joint_properties damping="0.7"/>
+    <origin xyz="-0.125 -0.2010 0.11" rpy="1.5707 0 0"/>
+    <parent link="base_link"/>
+    <child link="p3at_rear_right_wheel"/>
+  </joint>
+
+  <gazebo>
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+      <updateRate>100.0</updateRate>
+      <robotNamespace>$(arg robot_name)</robotNamespace>
+      <leftFrontJoint>p3at_front_left_wheel_joint</leftFrontJoint>
+      <rightFrontJoint>p3at_front_right_wheel_joint</rightFrontJoint>
+      <leftRearJoint>p3at_rear_left_wheel_joint</leftRearJoint>
+      <rightRearJoint>p3at_rear_right_wheel_joint</rightRearJoint>
+      <wheelSeparation>0.4</wheelSeparation>
+      <wheelDiameter>0.215</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <torque>200</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <broadcastTF>true</broadcastTF>
+    </plugin>
+  </gazebo>
+
+</robot>
