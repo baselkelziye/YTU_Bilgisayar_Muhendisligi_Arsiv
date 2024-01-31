@@ -1,7 +1,7 @@
 import sys
 import os
 import textwrap
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QDialog,
     QVBoxLayout,
     QPushButton,
@@ -11,7 +11,7 @@ from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from degiskenler import *
 from progress_dialog import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon
 from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
 
 
@@ -70,16 +70,16 @@ class GitIslemleriWindow(QDialog):
 
     def hoca_ders_adlari_ac(self):
         hoca_ders_adlari_window = HocaDersAdlariWindow(self)
-        hoca_ders_adlari_window.exec_()
+        hoca_ders_adlari_window.exec()
 
     def run_script(self, script_path, baslik, islem="", dizin=BIR_UST_DIZIN):
         cevap = QMessageBox.question(
             self,
             "Onay",
             f"{islem} işlemini başlatmak istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if cevap == QMessageBox.No:
+        if cevap == QMessageBox.StandardButton.No:
             QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
             return
         self.original_dir = os.getcwd()
@@ -89,7 +89,7 @@ class GitIslemleriWindow(QDialog):
         )
         # Thread'i başlat
         self.thread = CMDScriptRunnerThread(script_path, islem)
-        if script_path == "git pull":
+        if script_path == "git fetch --all && git reset --hard origin/main":
             self.thread.finished.connect(self.interface_updated_succesfully)
         else:
             self.thread.finished.connect(self.on_finished)
@@ -103,9 +103,9 @@ class GitIslemleriWindow(QDialog):
             self,
             "Onay",
             f"İşlemi durdurmak istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if cevap == QMessageBox.No:
+        if cevap == QMessageBox.StandardButton.No:
             return
         self.progress_dialog.setLabelText("İşlem durduruluyor...")
         self.progress_dialog.setCancelButton(None)
@@ -202,9 +202,9 @@ class GitIslemleriWindow(QDialog):
                 self,
                 "Onay",
                 f"Yerelde değişiklikleriniz var ve işleme devam ederseniz değişiklikleriniz silinecek. Devam etmek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.No:
+            if cevap == QMessageBox.StandardButton.No:
                 QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
                 return
         # hard reset komutu

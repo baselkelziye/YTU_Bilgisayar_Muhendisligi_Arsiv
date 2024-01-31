@@ -1,5 +1,4 @@
-from PyQt5.QtWidgets import (
-    QFrame,
+from PyQt6.QtWidgets import (
     QWidget,
     QScrollArea,
     QDialog,
@@ -11,13 +10,14 @@ from PyQt5.QtWidgets import (
     QInputDialog,
     QMessageBox,
     QHBoxLayout,
+    QSizePolicy,
 )
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 import json
-from PyQt5.QtCore import Qt
+from PyQt6.QtCore import Qt
 from degiskenler import *
 from metin_islemleri import kisaltMetin
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon
 
 
 class TalimatDialog(QDialog):
@@ -41,7 +41,7 @@ class TalimatDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.talimatSayisiLabel = QLabel(self)
-        self.talimatSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.talimatSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.talimatSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -51,7 +51,7 @@ class TalimatDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
 
         # ScrollArea için minimum boyutu belirle
         self.scrollArea.setMinimumSize(580, 300)
@@ -65,7 +65,7 @@ class TalimatDialog(QDialog):
         self.layout.addWidget(self.ekleBtn)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak talimat:")
             if ok:
                 self.searchTalimat(text)
@@ -100,10 +100,10 @@ class TalimatDialog(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.scrollLayout.count()):
                 layout = self.scrollLayout.itemAt(i)
                 if isinstance(
@@ -185,10 +185,10 @@ class TalimatDialog(QDialog):
                 self,
                 "Onay",
                 "Talimatı değiştirmek istediğinizden emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if emin_mi == QMessageBox.Yes:
+            if emin_mi == QMessageBox.StandardButton.Yes:
                 # Kullanıcı onay verirse, değişikliği yap
                 self.repo_data[TALIMATLAR][index] = yeni_talimat
                 self.jsonGuncelle()
@@ -204,10 +204,10 @@ class TalimatDialog(QDialog):
             self,
             "Onay",
             "Bu talimatı silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             del self.repo_data[TALIMATLAR][index]
             self.jsonGuncelle()
 
@@ -220,10 +220,10 @@ class TalimatDialog(QDialog):
                 self,
                 "Onay",
                 "Talimatı eklemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.repo_data[TALIMATLAR].append(yeni_talimat)
                 self.jsonGuncelle()
                 info_baslik = "Başarılı"
@@ -299,12 +299,10 @@ class KavramDetayDialog(QDialog):
             aciklamaLayout = QHBoxLayout()
 
             aciklamaLabel = QLabel(kisaltMetin(aciklama), self)
-            aciklamaLabel.setAlignment(Qt.AlignCenter)
+            aciklamaLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
             aciklamaLabel.setToolTip(aciklama)
             aciklamaLabel.setWordWrap(True)
-            aciklamaLabel.setFixedWidth(
-                420
-            )  # Maksimum yükseklik değerini istediğiniz bir değere ayarlayın
+            aciklamaLabel.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
             aciklamaLayout.addWidget(aciklamaLabel)
 
             duzenleBtn = QPushButton("Düzenle", self)
@@ -334,11 +332,11 @@ class KavramDetayDialog(QDialog):
                 self,
                 "Onay",
                 "Açıklamayı değiştirmek istediğinizden emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
 
-            if emin_mi == QMessageBox.Yes:
+            if emin_mi == QMessageBox.StandardButton.Yes:
                 # Kullanıcı onay verirse, değişikliği yap
                 self.kavram[ACIKLAMALAR][index] = yeni_aciklama
                 self.parent().jsonGuncelle()
@@ -355,10 +353,10 @@ class KavramDetayDialog(QDialog):
             self,
             "Onay",
             "Bu açıklamayı silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             del self.kavram[ACIKLAMALAR][index]
             self.parent().jsonGuncelle()
             self.aciklamaListele()
@@ -374,10 +372,10 @@ class KavramDetayDialog(QDialog):
                 self,
                 "Onay",
                 "Açıklama eklemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.kavram[ACIKLAMALAR].append(yeni_aciklama)
                 self.parent().jsonGuncelle()
                 self.aciklamaListele()
@@ -410,7 +408,7 @@ class KavramDialog(QDialog):
         self.clearFiltersButton.hide()  # Başlangıçta temizle butonunu gizle
         self.layout.addWidget(self.clearFiltersButton)
         self.kavramSayisiLabel = QLabel(self)
-        self.kavramSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.kavramSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.kavramSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -420,7 +418,7 @@ class KavramDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         # ScrollArea için minimum boyutu belirle
         self.scrollArea.setMinimumSize(650, 300)
         self.yenile()
@@ -439,7 +437,7 @@ class KavramDialog(QDialog):
             return {KAVRAMLAR: []}
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kavram:")
             if ok:
                 self.searchKavram(text)
@@ -475,10 +473,10 @@ class KavramDialog(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.scrollLayout.count()):
                 layout = self.scrollLayout.itemAt(i)
                 if isinstance(
@@ -539,10 +537,10 @@ class KavramDialog(QDialog):
                 self,
                 "Onay",
                 "Kavram adını değiştirmek istediğinizden emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if emin_mi == QMessageBox.Yes:
+            if emin_mi == QMessageBox.StandardButton.Yes:
                 self.repo_data[KAVRAMLAR][index][KAVRAM] = yeni_kavram
                 self.jsonGuncelle()
                 self.kavramListele()
@@ -579,10 +577,10 @@ class KavramDialog(QDialog):
             self,
             "Onay",
             "Bu kavramı silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             del self.repo_data[KAVRAMLAR][index]
             self.jsonGuncelle()
 
@@ -593,10 +591,10 @@ class KavramDialog(QDialog):
                 self,
                 "Onay",
                 "Kavram eklemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.repo_data[KAVRAMLAR].append({KAVRAM: yeni_kavram, ACIKLAMALAR: []})
                 self.jsonGuncelle()
 
@@ -630,7 +628,7 @@ class AciklamaDialog(QDialog):
         self.aciklamaSayisiLabel.setText(
             f"Toplam {len(self.repo_data[ACIKLAMALAR])} açıklama"
         )
-        self.aciklamaSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.aciklamaSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.aciklamaSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -640,7 +638,7 @@ class AciklamaDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
         self.scrollArea.setMinimumSize(580, 300)
         self.yenile()
 
@@ -658,7 +656,7 @@ class AciklamaDialog(QDialog):
             return {ACIKLAMALAR: []}
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak açıklama:")
             if ok:
                 self.searchAciklama(text)
@@ -693,10 +691,10 @@ class AciklamaDialog(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.scrollLayout.count()):
                 layout = self.scrollLayout.itemAt(i)
                 if isinstance(
@@ -767,10 +765,10 @@ class AciklamaDialog(QDialog):
                 self,
                 "Onay",
                 "Açıklamayı değiştirmek istediğinizden emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if emin_mi == QMessageBox.Yes:
+            if emin_mi == QMessageBox.StandardButton.Yes:
                 self.repo_data[ACIKLAMALAR][index] = yeni_aciklama
                 self.jsonGuncelle()
                 info_baslik = "Başarılı"
@@ -785,10 +783,10 @@ class AciklamaDialog(QDialog):
             self,
             "Onay",
             "Bu açıklamayı silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             del self.repo_data[ACIKLAMALAR][index]
             self.jsonGuncelle()
 
@@ -803,10 +801,10 @@ class AciklamaDialog(QDialog):
                 self,
                 "Onay",
                 "Açıklama eklemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.repo_data[ACIKLAMALAR].append(yeni_aciklama)
                 self.jsonGuncelle()
                 info_baslik = "Başarılı"
@@ -868,7 +866,7 @@ class RepoKullanimiDialog(QDialog):
     def baslikDuzenle(self):
         eski_baslik = self.repo_data[BASLIK]
         yeni_baslik, ok = QInputDialog.getText(
-            self, "Başlık Düzenle", "Başlık:", QLineEdit.Normal, eski_baslik
+            self, "Başlık Düzenle", "Başlık:", QLineEdit.EchoMode.Normal, eski_baslik
         )
         info_baslik = "İptal"
         info_mesaj = "Başlık düzenleme işlemi iptal edildi."
@@ -877,10 +875,10 @@ class RepoKullanimiDialog(QDialog):
                 self,
                 "Onay",
                 "Başlığı değiştirmek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.repo_data[BASLIK] = yeni_baslik
                 self.jsonGuncelle()
                 self.baslikBtn.setText(
@@ -930,12 +928,12 @@ class RepoKullanimiDialog(QDialog):
 
     def acTalimatDialog(self):
         dialog = TalimatDialog()
-        dialog.exec_()
+        dialog.exec()
 
     def acKavramDialog(self):
         dialog = KavramDialog()
-        dialog.exec_()
+        dialog.exec()
 
     def acAciklamaDialog(self):
         dialog = AciklamaDialog()
-        dialog.exec_()
+        dialog.exec()

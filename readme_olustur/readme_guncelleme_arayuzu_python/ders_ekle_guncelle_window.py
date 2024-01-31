@@ -1,6 +1,6 @@
 import json
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (
     QSizePolicy,
     QDialog,
     QInputDialog,
@@ -16,7 +16,7 @@ from PyQt5.QtWidgets import (
     QHBoxLayout,
 )
 import locale
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
@@ -60,7 +60,7 @@ class DersEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Bölüm adı label
         self.bolumAdiLabel = QLabel(f"Bölüm Adı")
-        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAdiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_DERS_BOLUM_ADI)
         aciklama = self.data.get(BOLUM_ACIKLAMASI, VARSAYILAN_DERS_BOLUM_ACIKLAMASI)
@@ -72,7 +72,7 @@ class DersEkleGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.bolumAdiBtn)
         # Bölüm açıklaması label
         self.bolumAciklamasiLabel = QLabel(f"Bölüm Açıklaması")
-        self.bolumAciklamasiLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAciklamasiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamasiLabel)
         # Bölüm açıklaması buton
         self.bolumAciklamasiBtn = QPushButton(f"{kisaltMetin(aciklama)}", self)
@@ -88,7 +88,7 @@ class DersEkleGuncelleWindow(QDialog):
 
         # Ders sayısını gösteren etiket
         self.dersSayisiLabel = QLabel("Toplam 0 ders")
-        self.dersSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.dersSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.dersSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -115,10 +115,10 @@ class DersEkleGuncelleWindow(QDialog):
                 self,
                 "Onay",
                 "Bölüm açıklamasını güncellemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ACIKLAMASI] = yeni_baslik
                 self.bolumAciklamasiBtn.setText(kisaltMetin(yeni_baslik))
                 self.bolumAciklamasiBtn.setToolTip(yeni_baslik)
@@ -136,7 +136,7 @@ class DersEkleGuncelleWindow(QDialog):
             self,
             "Bölüm Adı",
             "Bölüm Adını Giriniz:",
-            QLineEdit.Normal,
+            QLineEdit.EchoMode.Normal,
             self.data[BOLUM_ADI],
         )
         if ok:
@@ -144,10 +144,10 @@ class DersEkleGuncelleWindow(QDialog):
                 self,
                 "Onay",
                 "Bölüm adını güncellemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ADI] = yeni_baslik
                 self.bolumAdiBtn.setText(kisaltMetin(yeni_baslik))
                 self.bolumAdiBtn.setToolTip(yeni_baslik)
@@ -161,7 +161,7 @@ class DersEkleGuncelleWindow(QDialog):
             json.dump(self.data, file, ensure_ascii=False, indent=4)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak ders:")
             if ok:
                 self.searchDersler(text)
@@ -172,7 +172,7 @@ class DersEkleGuncelleWindow(QDialog):
         for i in range(layout_count):
             layout = self.derslerLayout.itemAt(i)
             if isinstance(layout, QHBoxLayout):
-                ders_ad = layout.itemAt(0).widget().text()
+                ders_ad = layout.itemAt(0).widget().toolTip()
                 match = query.lower() in ders_ad.lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
@@ -195,10 +195,10 @@ class DersEkleGuncelleWindow(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.derslerLayout.count()):
                 layout = self.derslerLayout.itemAt(i)
                 if isinstance(layout, QHBoxLayout):
@@ -268,11 +268,12 @@ class DersEkleGuncelleWindow(QDialog):
             for ders in self.sorted_dersler:
                 # Her ders için bir satır oluştur
                 dersSatiri = QHBoxLayout()
-
+                ders_adi = ders.get(AD, "")
                 # Büyük ders butonu
                 btnDers = QPushButton(
-                    kisaltMetin(ders.get(AD, ""), maks_uzunluk=48), self.scrollWidget
+                    kisaltMetin(ders_adi, maks_uzunluk=30), self.scrollWidget
                 )
+                btnDers.setToolTip(ders_adi)
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
                 btnDers.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 dersSatiri.addWidget(btnDers)
@@ -293,7 +294,7 @@ class DersEkleGuncelleWindow(QDialog):
                 btnOneriEkle.setStyleSheet(
                     SIL_BUTONU_STILI
                 )  # Kırmızı renk, küçültülmüş genişlik
-                btnDers.setSizePolicy(QSizePolicy.MinimumExpanding, QSizePolicy.Fixed)
+                btnDers.setSizePolicy(QSizePolicy.Policy.MinimumExpanding, QSizePolicy.Policy.Fixed)
                 dersSatiri.addWidget(btnOneriEkle)
 
                 # Ders satırını dersler layout'una ekle
@@ -388,7 +389,7 @@ class KaynakVeOneriDuzenleyici(QDialog):
                             label = QLabel(
                                 f"Öneri Sahibi: {eleman[ONERI_SAHIBI]}", self
                             )
-                            label.setAlignment(Qt.AlignCenter)
+                            label.setAlignment(Qt.AlignmentFlag.AlignCenter)
                             satirLayout.addWidget(label)
 
                             # Bilgi (mesaj) butonu
@@ -444,11 +445,11 @@ class KaynakVeOneriDuzenleyici(QDialog):
             self,
             "Onay",
             "Bu öğeyi silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
 
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             # JSON dosyasını aç ve güncelle
             with open(DERSLER_JSON_PATH, "r+", encoding="utf-8") as file:
                 data = json.load(file)
@@ -482,7 +483,6 @@ class KaynakVeOneriDuzenleyici(QDialog):
 
             # Arayüzü güncelle
             self.arayuzuGuncelle()
-
     def arayuzuGuncelle(self):
         # Ebeveyn sınıfın dersleri yenileme metodunu çağır
         if self.parent and hasattr(self.parent, "dersleriYenile"):
@@ -594,7 +594,7 @@ class YeniElemanEklemeDialog(QDialog):
         # Öneri sahibi ve öneri için etiket ve metin alanı
         if self.tur == DERSE_DAIR_ONERILER:
             self.label = QLabel("Öneri Sahibi", self)
-            self.label.setAlignment(Qt.AlignCenter)
+            self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
             self.layout.addWidget(self.label)
             self.sahibiEdit = QLineEdit(self)
             self.setWindowTitle(
@@ -609,7 +609,7 @@ class YeniElemanEklemeDialog(QDialog):
             self.setWindowTitle(
                 "Kaynak Ekle" if self.oneri_index is None else "Kaynak Güncelle"
             )
-        self.label.setAlignment(Qt.AlignCenter)
+        self.label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.label)
         self.metinEdit = QTextEdit(self)
         if self.mevcutEleman and self.tur == DERSE_DAIR_ONERILER:
@@ -623,7 +623,9 @@ class YeniElemanEklemeDialog(QDialog):
         self.kaydetBtn.setStyleSheet(EKLE_BUTONU_STILI)  # Yeşil arka plan
         self.kaydetBtn.clicked.connect(self.kaydet)
         self.layout.addWidget(self.kaydetBtn)
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_S and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            self.kaydet()
     def closeEvent(self, event):
         closeEventHandler(self, event, self.is_programmatic_close)
 
@@ -632,6 +634,9 @@ class YeniElemanEklemeDialog(QDialog):
             self.sahibiEdit.text() if self.tur == DERSE_DAIR_ONERILER else None
         )
         metin = self.metinEdit.toPlainText()
+        if not oneriSahibi and self.tur == DERSE_DAIR_ONERILER:
+            QMessageBox.warning(self, "Hata", "Kaynak boş olamaz!")
+            return
         if (not oneriSahibi and self.tur == DERSE_DAIR_ONERILER) or not metin:
             QMessageBox.warning(self, "Hata", "Öneri sahibi ve öneri boş olamaz!")
             return
@@ -639,9 +644,9 @@ class YeniElemanEklemeDialog(QDialog):
             self,
             "Onay",
             f"Değişiklikleri Kaydetmek İstediğine Emin Misin?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if emin_mi != QMessageBox.Yes:
+        if emin_mi != QMessageBox.StandardButton.Yes:
             return
         # JSON dosyasını aç ve güncelle
         with open(DERSLER_JSON_PATH, "r+", encoding="utf-8") as file:
@@ -748,18 +753,18 @@ class DersDuzenlemeWindow(QDialog):
 
         self.layout = QVBoxLayout(self)
         self.setMinimumSize(
-            400, 200
+            535, 570
         )  # Pencerenin en küçük olabileceği boyutu ayarlayın
         # Ders adı için alan
         ders_adi_label = QLabel("Ders Adı", self)
-        ders_adi_label.setAlignment(Qt.AlignCenter)
+        ders_adi_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(ders_adi_label)
         self.adInput = QLineEdit(self.ders.get(AD, "") if self.ders else "")
         self.layout.addWidget(self.adInput)
 
         # Ders yılı için alan
         yil_label = QLabel("Yıl", self)
-        yil_label.setAlignment(Qt.AlignCenter)
+        yil_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(yil_label)
         self.yilInput = QComboBox(self)
         self.yilInput.addItems(["0", "1", "2", "3", "4"])
@@ -769,7 +774,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # Ders dönemi için alan
         donem_label = QLabel("Dönem", self)
-        donem_label.setAlignment(Qt.AlignCenter)
+        donem_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(donem_label)
         self.donemInput = QComboBox(self)
         self.donemInput.addItems(DONEMLER_DIZISI_YOKLA_BERABER)
@@ -777,7 +782,7 @@ class DersDuzenlemeWindow(QDialog):
             self.donemInput.setCurrentText(self.ders.get(DONEM, YOK))
         self.layout.addWidget(self.donemInput)
         ders_guncel_mi_label = QLabel("Ders Güncel Mi", self)
-        ders_guncel_mi_label.setAlignment(Qt.AlignCenter)
+        ders_guncel_mi_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(ders_guncel_mi_label)
         self.guncelMi = QComboBox(self)
         self.guncelMi.addItems(["False", "True"])
@@ -791,7 +796,7 @@ class DersDuzenlemeWindow(QDialog):
 
         # Ders tipi için alan
         tip_label = QLabel("Tip", self)
-        tip_label.setAlignment(Qt.AlignCenter)
+        tip_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(tip_label)
         self.tipInput = QComboBox(self)
         self.tipInput.addItems(DERS_TIPLERI)
@@ -799,7 +804,7 @@ class DersDuzenlemeWindow(QDialog):
             self.tipInput.setCurrentText(self.ders.get(TIP, DERS_TIPLERI[0]))
         self.layout.addWidget(self.tipInput)
         dersi_veren_hocalar_label = QLabel("Dersi Veren Hocalar", self)
-        dersi_veren_hocalar_label.setAlignment(Qt.AlignCenter)
+        dersi_veren_hocalar_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(dersi_veren_hocalar_label)
         # Dersi veren hocalar için ComboBox'lar
         # Mevcut hocaları yükle
@@ -858,7 +863,9 @@ class DersDuzenlemeWindow(QDialog):
     # Kapatma tuşuna basılırsa emin misin diye sor
     def closeEvent(self, event):
         closeEventHandler(self, event, self.is_programmatic_close)
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_S and event.modifiers() == Qt.KeyboardModifier.ControlModifier:
+            self.kaydet()
     def ekleHocaComboBox(self, hoca=None):
         if len(self.hoca_listesi) < 1:
             QMessageBox.warning(self, "Hata", "Hoca listesi boş!")
@@ -876,7 +883,6 @@ class DersDuzenlemeWindow(QDialog):
         # Sil (-) butonu
         silBtn = QPushButton("Dersi Veren Hocayı Sil", self)
         # Butonun genişliğini sabitle
-        silBtn.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Maximum)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silHocaComboBox(comboBox, silBtn))
 
@@ -936,7 +942,14 @@ class DersDuzenlemeWindow(QDialog):
                     ZORUNLU + " olmayan dersler dönem bilgisi içermemelidir!",
                 )
                 return
-
+        cevap = QMessageBox.question(
+            self,
+            "Onay",
+            "Değişiklikleri Kaydetmek İstediğine Emin Misin?",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+        )
+        if cevap != QMessageBox.StandardButton.Yes:
+            return
         # Seçili hocaların kısaltmalarını al
         hocalar_kisaltmalar = [
             combo.currentData() for combo, _ in self.hocalarComboBoxlar
@@ -1003,9 +1016,9 @@ class DersDuzenlemeWindow(QDialog):
             self,
             "Onay",
             f"{self.ders[AD]} dersini silmek istediğinden emin misin?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             self.data[DERSLER].remove(self.ders)
             self.kaydetVeKapat()
 

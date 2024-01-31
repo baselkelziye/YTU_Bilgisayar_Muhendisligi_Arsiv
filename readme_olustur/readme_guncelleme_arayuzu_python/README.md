@@ -26,7 +26,7 @@ Bu bölüm, `main.py` dosyasının işlevlerini ve nasıl kullanılacağını a�
 
 #### Özellikler 🌟
 
-- **Grafiksel Kullanıcı Arayüzü (GUI)**: PyQt5 kütüphanesini kullanarak oluşturulmuş, kullanıcı dostu bir arayüz sunar.
+- **Grafiksel Kullanıcı Arayüzü (GUI)**: PyQt6 kütüphanesini kullanarak oluşturulmuş, kullanıcı dostu bir arayüz sunar.
 - **Modül Entegrasyonu**: Diğer modüllerle (örneğin, `katkida_bulunanlari_duzenle_window`, `yazarin_notlari_duzenle_window`, vb.) entegrasyon sağlar, bu sayede uygulamanın farklı fonksiyonları arasında geçiş yapılabilir.
 - **Butonlar ve İşlevsellik**: Kullanıcıların farklı işlemleri gerçekleştirmesine olanak tanıyan çeşitli butonlar içerir.
 
@@ -40,11 +40,10 @@ Bu dosyayı çalıştırarak uygulamanın ana arayüzünü başlatırsınız:
 
 #### Geliştirme Notları
 
-- Arayüz, PyQt5 kütüphanesi kullanılarak geliştirilmiştir.
+- Arayüz, PyQt6 kütüphanesi kullanılarak geliştirilmiştir.
 - Uygulamanın modüler yapısı, kolay güncelleme ve bakım sağlar.
 
 Bu dosya, projenin merkezi ve başlangıç noktası olarak hizmet eder ve kullanıcıların projenin diğer modüllerine kolayca erişmesini sağlar.
-
 
 ### 2. hoca_ekle_guncelle_window.py
 
@@ -53,7 +52,7 @@ Bu bölüm, `hoca_ekle_guncelle_window.py` dosyasının işlevlerini, içerdiği
 #### Özellikler 🌟
 
 - **Hoca Ekleme/Güncelleme**: Kullanıcılar, hocaların bilgilerini ekleyebilir ve mevcut bilgileri güncelleyebilir.
-- **Kullanıcı Dostu Arayüz**: PyQt5 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
+- **Kullanıcı Dostu Arayüz**: PyQt6 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
 - **JSON Entegrasyonu**: Hoca bilgileri, `.json` formatında kaydedilir ve bu dosyadan okunur, bu sayede kolayca güncellenebilir ve yönetilebilir.
 
 #### Kullanımı
@@ -78,7 +77,6 @@ Bu arayüzü kullanarak hoca bilgilerini yönetmek için aşağıdaki adımları
 
 Bu dosya, projenin eğitim yönetimini kolaylaştıran önemli bir parçası olarak hizmet eder ve kullanıcıların hoca bilgilerini verimli bir şekilde yönetmesine olanak tanır.
 
-
 ### 3. katkida_bulunanlari_duzenle_window.py
 
 Bu bölüm, `katkida_bulunanlari_duzenle_window.py` dosyasının işlevlerini, içerdiği sınıfları ve fonksiyonları kapsamlı bir şekilde açıklar. Bu dosya, projeye katkıda bulunanları düzenlemek ve yönetmek için kullanılan bir grafiksel kullanıcı arayüzü sağlar.
@@ -86,7 +84,7 @@ Bu bölüm, `katkida_bulunanlari_duzenle_window.py` dosyasının işlevlerini, i
 #### Özellikler 🌟
 
 - **Katkıda Bulunanları Düzenleme/Güncelleme**: Kullanıcılar, katkıda bulunan kişilerin bilgilerini düzenleyebilir ve güncelleyebilir.
-- **Kullanıcı Dostu Arayüz**: PyQt5 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
+- **Kullanıcı Dostu Arayüz**: PyQt6 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
 - **JSON Entegrasyonu**: Katkıda bulunanların bilgileri, `.json` formatında kaydedilir ve bu dosyadan okunur, bu sayede kolayca güncellenebilir ve yönetilebilir.
 
 #### Kullanımı
@@ -111,7 +109,6 @@ Bu arayüzü kullanarak katkıda bulunanların bilgilerini yönetmek için aşa�
 
 Bu dosya, projenin topluluk yönetimini kolaylaştıran önemli bir parçası olarak hizmet eder ve kullanıcıların katkıda bulunan kişileri verimli bir şekilde yönetmesine olanak tanır.
 
-
 ### 4. yazarin_notlari_duzenle_window.py
 
 Bu bölüm, `yazarin_notlari_duzenle_window.py` dosyasının işlevlerini, içerdiği sınıfları ve fonksiyonları kapsamlı bir şekilde açıklar. Bu dosya, yazarın notlarını eklemek, düzenlemek ve görüntülemek için kullanılan bir grafiksel kullanıcı arayüzü sağlar.
@@ -119,7 +116,7 @@ Bu bölüm, `yazarin_notlari_duzenle_window.py` dosyasının işlevlerini, içer
 #### Özellikler 🌟
 
 - **Not Ekleme/Düzenleme**: Kullanıcılar, yazarın notlarını ekleyebilir ve mevcut notları düzenleyebilir.
-- **Kullanıcı Dostu Arayüz**: PyQt5 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
+- **Kullanıcı Dostu Arayüz**: PyQt6 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
 - **JSON Entegrasyonu**: Notlar, `.json` formatında kaydedilir ve bu dosyadan okunur, bu sayede kolayca güncellenebilir ve yönetilebilir.
 
 #### Kullanımı
@@ -145,7 +142,6 @@ Bu arayüzü kullanarak yazarın notlarını yönetmek için aşağıdaki adıml
 
 Bu dosya, projenin dokümantasyon ve not yönetimini kolaylaştıran önemli bir parçası olarak hizmet eder ve kullanıcıların yazarın notlarını verimli bir şekilde yönetmesine olanak tanır.
 
-
 ### 5. katkida_bulunan_ekle_window.py
 
 Bu bölüm, `katkida_bulunan_ekle_window.py` dosyasının işlevlerini, içerdiği sınıfları ve fonksiyonları kapsamlı bir şekilde açıklar. Bu dosya, projeye katkıda bulunanları eklemek için kullanılan bir grafiksel kullanıcı arayüzü sağlar.
@@ -153,7 +149,7 @@ Bu bölüm, `katkida_bulunan_ekle_window.py` dosyasının işlevlerini, içerdi�
 #### Özellikler 🌟
 
 - **Katkıda Bulunan Ekleme**: Kullanıcılar, projeye katkıda bulunan kişilerin adını ve GitHub bağlantısını ekleyebilir.
-- **Kullanıcı Dostu Arayüz**: PyQt5 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
+- **Kullanıcı Dostu Arayüz**: PyQt6 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
 - **JSON Entegrasyonu**: Katkıda bulunan bilgileri, `.json` formatında kaydedilir ve bu dosyadan okunur, bu sayede kolayca güncellenebilir ve yönetilebilir.
 
 #### Kullanımı
@@ -198,10 +194,11 @@ Bu arayüzü kullanarak repo kullanım talimatlarını yönetmek için aşağıd
 
 #### Geliştirme Notları
 
-- Arayüz, PyQt5 kütüphanesi kullanılarak geliştirilmiştir.
+- Arayüz, PyQt6 kütüphanesi kullanılarak geliştirilmiştir.
 - JSON dosyası, talimatların kalıcı bir şekilde saklanması için kullanılır.
 
 Bu dosya, projenin daha geniş bir parçası olarak, kullanıcılara daha verimli ve anlaşılır bir repo yönetimi deneyimi sunmayı amaçlamaktadır.
+
 ### 7. threadler.py
 
 Bu bölüm, `threadler.py` dosyasının işlevlerini ve nasıl kullanılacağını açıklar. Bu dosya, çeşitli arka plan işlemlerini yönetmek ve uygulamanın yanıt verme kabiliyetini korurken ağır görevleri gerçekleştirmek için thread (iş parçacığı) sınıflarını tanımlar.
@@ -222,7 +219,7 @@ Bu threadler, ağır işlemleri arka planda çalıştırmak ve uygulamanın akı
 
 #### Geliştirme Notları
 
-- Threadler, PyQt5'in `QThread` sınıfını kullanarak oluşturulmuştur.
+- Threadler, PyQt6'in `QThread` sınıfını kullanarak oluşturulmuştur.
 - İşlemler sırasında oluşan hatalar, kullanıcıya geri bildirim sağlamak için sinyaller aracılığıyla iletilir.
 
 Bu dosya, uygulamanın performansını ve kullanıcı deneyimini iyileştirmek için önemli bir rol oynar. Arka planda gerçekleşen işlemler sayesinde, uygulama daha akıcı ve yanıt verir bir hale gelir.
@@ -234,7 +231,7 @@ Bu bölüm, `ders_ekle_guncelle_window.py` dosyasının işlevlerini, içerdiği
 #### Özellikler 🌟
 
 - **Ders Ekleme/Güncelleme**: Kullanıcılar, ders bilgilerini ekleyebilir ve mevcut ders bilgilerini güncelleyebilir.
-- **Kullanıcı Dostu Arayüz**: PyQt5 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
+- **Kullanıcı Dostu Arayüz**: PyQt6 kullanılarak geliştirilen bu arayüz, kolay ve anlaşılır bir kullanım sunar.
 - **JSON Entegrasyonu**: Ders bilgileri, `.json` formatında kaydedilir ve bu dosyadan okunur, bu sayede kolayca güncellenebilir ve yönetilebilir.
 
 #### Kullanımı
@@ -290,4 +287,4 @@ Bu dosya, hoca isimlerini yönetirken ve onlara atıfta bulunurken tutarlılık 
 
 ## Genel Bakış 🌐
 
-Her bir dosya, belirli görevler için özel arayüzler ve işlevler sağlayarak kullanıcı arayüzüne odaklanır. İmport edilen modüller ve kütüphaneler, bu dosyaların PyQt5 kütüphanesini kullanarak grafiksel kullanıcı arayüzü (GUI) bileşenleri oluşturduğunu göstermektedir.
+Her bir dosya, belirli görevler için özel arayüzler ve işlevler sağlayarak kullanıcı arayüzüne odaklanır. İmport edilen modüller ve kütüphaneler, bu dosyaların PyQt6 kütüphanesini kullanarak grafiksel kullanıcı arayüzü (GUI) bileşenleri oluşturduğunu göstermektedir.
