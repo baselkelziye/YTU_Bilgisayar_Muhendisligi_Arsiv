@@ -425,10 +425,10 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sistem analizine benzer.
-- ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
