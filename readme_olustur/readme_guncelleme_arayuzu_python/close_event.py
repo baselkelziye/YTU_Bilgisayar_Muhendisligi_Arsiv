@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import QMessageBox
+from PyQt6.QtWidgets import QMessageBox
 
 
 def closeEventHandler(parent, event, is_programmatic_close):
@@ -9,10 +9,10 @@ def closeEventHandler(parent, event, is_programmatic_close):
         parent,
         "Kapat",
         "Değişiklikleri kaydetmeden kapatmak istediğine emin misin?",
-        QMessageBox.Yes | QMessageBox.No,
-        QMessageBox.No,
+        QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+        QMessageBox.StandardButton.No,
     )
-    if reply == QMessageBox.Yes:
+    if reply == QMessageBox.StandardButton.Yes:
         event.accept()
         QMessageBox.information(parent, "İptal", "Değişiklikler kaydedilmedi.")
     else:

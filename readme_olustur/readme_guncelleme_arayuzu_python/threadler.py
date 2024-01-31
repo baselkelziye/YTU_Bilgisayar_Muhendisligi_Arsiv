@@ -1,13 +1,11 @@
 import subprocess
-from PyQt5.QtCore import QThread, pyqtSignal
+from PyQt6.QtCore import QThread, pyqtSignal
 import json
 import requests
 from degiskenler import *
 import subprocess
 import threading
 import queue
-import sys
-
 
 # Uzun süren işlemi gerçekleştirecek thread sınıfı
 class HocaKaydetThread(QThread):

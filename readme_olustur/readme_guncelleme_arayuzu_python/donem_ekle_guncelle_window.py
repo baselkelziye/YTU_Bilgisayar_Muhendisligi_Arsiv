@@ -1,5 +1,5 @@
 from repo_kullanimi_window import TalimatDialog
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QPushButton,
     QHBoxLayout,
     QMessageBox,
@@ -13,8 +13,8 @@ from PyQt5.QtWidgets import (
     QDialog,
 )
 from degiskenler import *
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QIcon
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon
 import json
 
 
@@ -68,10 +68,10 @@ class DonemEkleGuncelleWindow(TalimatDialog):
             self,
             "Onay",
             "Bu dönemi silmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             del self.repo_data[DONEMLER][index]
             self.jsonGuncelle()
 
@@ -106,10 +106,10 @@ class DonemEkleGuncelleWindow(TalimatDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.scrollLayout.count()):
                 layout = self.scrollLayout.itemAt(i)
                 if isinstance(
@@ -137,7 +137,7 @@ class DonemEkleGuncelleWindow(TalimatDialog):
         self.donemDuzenlemePenceresi.show()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak talimat:")
             if ok:
                 self.searchDonem(text)
@@ -166,7 +166,7 @@ class DonemDuzenlemeWindow(QDialog):
         # Dönem adı
         donemAdiLayout = QHBoxLayout()
         self.donemAdiLabel = QLabel("Dönem Adı", self)
-        self.donemAdiLabel.setAlignment(Qt.AlignCenter)
+        self.donemAdiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.donemAdiLineEdit = QLineEdit(self)
         donemAdiLayout.addWidget(self.donemAdiLabel)
         donemAdiLayout.addWidget(self.donemAdiLineEdit)
@@ -174,7 +174,7 @@ class DonemDuzenlemeWindow(QDialog):
         # Yıl seçimi
         yilLayout = QHBoxLayout()
         self.yilLabel = QLabel("Yıl", self)
-        self.yilLabel.setAlignment(Qt.AlignCenter)
+        self.yilLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.yilComboBox = QComboBox(self)
         self.yilComboBox.addItems(DONEM_YILLARI)  # 0'dan 4'e yıllar
         yilLayout.addWidget(self.yilLabel)
@@ -184,7 +184,7 @@ class DonemDuzenlemeWindow(QDialog):
         # Dönem seçimi
         donemLayout = QHBoxLayout()
         self.donemLabel = QLabel("Dönem", self)
-        self.donemLabel.setAlignment(Qt.AlignCenter)
+        self.donemLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.donemComboBox = QComboBox(self)
         self.donemComboBox.addItems(DONEMLER_DIZISI_YOKLA_BERABER)  # Dönemler
         donemLayout.addWidget(self.donemLabel)
@@ -269,16 +269,18 @@ class DonemDuzenlemeWindow(QDialog):
                 else:
                     break
         return True
-
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key.Key_S and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+            self.kaydet()
     def kaydet(self):
         cevap = QMessageBox.question(
             self,
             "Onay",
             "Değişiklikleri kaydetmek istediğinize emin misiniz?",
-            QMessageBox.Yes | QMessageBox.No,
-            QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
         )
-        if cevap == QMessageBox.No:
+        if cevap == QMessageBox.StandardButton.No:
             return
         if not self.girdiKontrol():
             return

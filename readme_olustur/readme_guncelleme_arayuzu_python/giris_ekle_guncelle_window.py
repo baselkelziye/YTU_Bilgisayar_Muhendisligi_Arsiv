@@ -1,11 +1,10 @@
 from yazarin_notlari_duzenle_window import YazarinNotlariWindow
 from degiskenler import *
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QLabel,
     QLineEdit,
     QMessageBox,
     QPushButton,
-    QDesktopWidget,
     QHBoxLayout,
     QDialog,
     QVBoxLayout,
@@ -14,8 +13,8 @@ from PyQt5.QtWidgets import (
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from metin_islemleri import kisaltMetin
 import json
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QIcon
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon, QGuiApplication
 import re
 
 
@@ -30,7 +29,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         self.baslikBtn.setText(kisaltMetin(baslik))
         self.baslikBtn.setToolTip(baslik)
         self.aciklama_label = QLabel("Açıklama", self)
-        self.aciklama_label.setAlignment(Qt.AlignCenter)
+        self.aciklama_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.insertWidget(3, self.aciklama_label)
         self.aciklama_duzenle_btn = QPushButton(kisaltMetin(aciklama), self)
         self.aciklama_duzenle_btn.setStyleSheet(ACIKLAMA_BUTON_STILI)
@@ -74,7 +73,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 )  # İlk 30 karakteri göster
                 btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
-                sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Preferred)
+                sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
                 btn.setSizePolicy(sizePolicy)
                 btn_layout.addWidget(btn)
                 # Yukarı Taşı butonu
@@ -143,10 +142,10 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.notlarLayout.count()):
                 widget = self.notlarLayout.itemAt(i).widget()
                 if isinstance(widget, QPushButton):
@@ -247,7 +246,7 @@ class IcindekilerDuzenleWindow(QDialog):
         self.layout = QVBoxLayout(self)
         # başlık için label bileşeni
         self.baslik_label = QLabel("İçerik Başlığı", self)
-        self.baslik_label.setAlignment(Qt.AlignCenter)
+        self.baslik_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.baslik_label.setToolTip("İçerik başlığı giriniz. (Örneği Hocalar)")
         self.layout.addWidget(self.baslik_label)
         # başlık için line edit bileşeni
@@ -257,7 +256,7 @@ class IcindekilerDuzenleWindow(QDialog):
         self.layout.addWidget(self.baslik_input)
         # başlığa ait çapa için label bileşeni
         self.capa_label = QLabel("İçerik Çapası", self)
-        self.capa_label.setAlignment(Qt.AlignCenter)
+        self.capa_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.capa_label.setToolTip(
             "İçerik çapası giriniz. (Örneği hocalar) Çapa, içerik başlığına tıklanınca sayfanın o kısmına gitmek için kullanılır."
         )
@@ -286,10 +285,12 @@ class IcindekilerDuzenleWindow(QDialog):
         self.center()
 
     def center(self):
+        # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
+        cp = QGuiApplication.instance().primaryScreen().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
+
 
     def kaydet(self):
         baslik = self.baslik_input.text().strip()
