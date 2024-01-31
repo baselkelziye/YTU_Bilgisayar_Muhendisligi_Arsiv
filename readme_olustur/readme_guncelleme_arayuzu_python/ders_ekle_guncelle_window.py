@@ -37,6 +37,7 @@ class DersEkleGuncelleWindow(QDialog):
     def __init__(self,parent=None):
         super().__init__(parent)
         self.setModal(True)
+        self.parent = parent
         self.is_programmatic_close = False
         self.data = self.jsonDosyasiniYukle()
         if self.ilklendir():
@@ -273,7 +274,9 @@ class DersEkleGuncelleWindow(QDialog):
                 btnDers = QPushButton(
                     kisaltMetin(ders_adi, maks_uzunluk=30), self.scrollWidget
                 )
-                btnDers.setToolTip(ders_adi)
+                # hocaları alt alta ver
+                tmp_tool_tip = f"{AD}:{ders.get(AD,'')}\n{YIL}:{ders.get(YIL, '')}\n{DONEM}:{ders.get(DONEM, '')}\n{GUNCEL_MI}:{ders.get(GUNCEL_MI, '')}\n{TIP}:{ders.get(TIP, '')}\n{DERSI_VEREN_HOCALAR}\n" + '\n'.join([hoca.get(AD,'') for hoca in ders.get(DERSI_VEREN_HOCALAR,[])])
+                btnDers.setToolTip(tmp_tool_tip)
                 btnDers.clicked.connect(lambda checked, a=ders: self.dersDuzenle(a))
                 btnDers.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 dersSatiri.addWidget(btnDers)
@@ -301,7 +304,7 @@ class DersEkleGuncelleWindow(QDialog):
                 self.derslerLayout.addLayout(dersSatiri)
 
         except Exception as e:
-            QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
+            QMessageBox.critical(self.parent, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
 
     def oneriEkle(self, ders):
         # Öneri ekleme için KaynakVeOneriDuzenleyici sınıfını kullanarak bir pencere aç
