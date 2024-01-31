@@ -258,6 +258,14 @@ class HocaEkleGuncelleWindow(QDialog):
                 if hoca[AD] != "":
                     btn = QPushButton(f"{hoca[AD]}", self.scrollWidget)
                     btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
+                    # derslerini alt alta ver
+                    tmp_tool_tip = f"{AD}: {hoca.get(AD,'')}\n"
+                    tmp_tool_tip+= f"{OFIS}: {hoca.get(OFIS,'')}\n"
+                    tmp_tool_tip +=  f"{LINK}: {hoca.get(LINK,'')}\n"
+                    tmp_tool_tip +=  f"{HOCA_AKTIF_GOREVDE_MI}: {hoca.get(HOCA_AKTIF_GOREVDE_MI,'')}\n"
+                    tmp_tool_tip +=  f"{ERKEK_MI}: {hoca[ERKEK_MI]}\n"
+                    tmp_tool_tip +=  f"{DERSLER}\n" + "\n".join([ders for ders in hoca.get(DERSLER,[])])
+                    btn.setToolTip(tmp_tool_tip)
                     btn.setStyleSheet(GUNCELLE_BUTTON_STILI)
                     self.hocalarLayout.addWidget(btn)
                 else:
