@@ -29,6 +29,22 @@
 #### ℹ️ Dersin içeriği güncel değil
 - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
+### 📘 Devre Teorisi ve Elektronik Devreler
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 1
+- 📆 **Dönem:** Bahar
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
 ### 📘 İleri İngilizce 2
 
 #### 📄 Ders Bilgileri
@@ -40,24 +56,6 @@
   - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
-
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-### 📘 İş Sağlığı ve Güvenliği 2
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 1
-- 📆 **Dönem:** Bahar
-- 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
-- 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
@@ -126,7 +124,7 @@
 - BD
 - AEL
 
-### 📘 Yapısal Programlamaya Giriş
+### 📘 Yapısal Programlama
 
 #### 📄 Ders Bilgileri
 
@@ -134,17 +132,18 @@
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
-- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
+  - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/12XtTMnoavz1FXqoc9KRWrsNdBP194h9R?usp=drive_link) ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1nJk-sz7MxNxKtEsGwJkR5OgS8eft7HAE?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- MFA
+- YES
 - AEL
+- HİT
