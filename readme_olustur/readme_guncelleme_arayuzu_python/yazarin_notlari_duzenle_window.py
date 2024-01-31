@@ -1,23 +1,21 @@
 import sys
 import json
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QDialog,
     QVBoxLayout,
     QInputDialog,
     QLabel,
-    QDesktopWidget,
     QWidget,
     QPushButton,
     QHBoxLayout,
     QMessageBox,
     QTextEdit,
-    QApplication,
     QScrollArea,
 )
-from PyQt5.QtCore import Qt
+from PyQt6.QtCore import Qt
 from degiskenler import *
 from metin_islemleri import kisaltMetin
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon, QGuiApplication
 from close_event import closeEventHandler
 
 
@@ -49,7 +47,7 @@ class YazarinNotlariWindow(QDialog):
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Başlık etiketi
         self.baslikLabel = QLabel("Başlık")
-        self.baslikLabel.setAlignment(Qt.AlignCenter)
+        self.baslikLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.baslikLabel)
         # Başlık butonu
         baslik = self.data.get(BASLIK, VARSAYILAN_YAZARIN_NOTLARI_BOLUM_ADI)
@@ -66,7 +64,7 @@ class YazarinNotlariWindow(QDialog):
 
         # Not sayısını gösteren etiket
         self.notSayisiLabel = QLabel("Toplam 0 not")
-        self.notSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.notSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.notSayisiLabel)
 
         # Kaydırılabilir alan oluştur
@@ -83,7 +81,7 @@ class YazarinNotlariWindow(QDialog):
         self.notlariYukle()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kelime:")
             if ok:
                 self.searchNotes(text)
@@ -104,9 +102,9 @@ class YazarinNotlariWindow(QDialog):
                 self,
                 "Onay",
                 "Başlığı değiştirmek istediğine emin misin?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BASLIK] = yeni_baslik
                 self.baslikBtn.setText(kisaltMetin(yeni_baslik))
                 self.baslikBtn.setToolTip(yeni_baslik)
@@ -122,10 +120,10 @@ class YazarinNotlariWindow(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.notlarLayout.count()):
                 widget = self.notlarLayout.itemAt(i).widget()
                 if isinstance(widget, QPushButton):
@@ -184,7 +182,7 @@ class YazarinNotlariWindow(QDialog):
 
             for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
                 btn = QPushButton(
-                    f"Not {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget
+                    f"Not {idx + 1}: {kisaltMetin(not_, maks_uzunluk=50)}", self.scrollWidget
                 )  # İlk 30 karakteri göster
                 btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
@@ -264,7 +262,7 @@ class NotDuzenleWindow(QDialog):
     def center(self):
         # Pencereyi ekranın ortasına al
         qr = self.frameGeometry()
-        cp = QDesktopWidget().availableGeometry().center()
+        cp = QGuiApplication.instance().primaryScreen().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
 
@@ -278,16 +276,16 @@ class NotDuzenleWindow(QDialog):
                 self,
                 "Onay",
                 "Değişiklikleri kaydetmek istediğinden emin misin?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
         else:
             emin_mi = QMessageBox.question(
                 self,
                 "Onay",
                 "Eklemek istediğine emin misin?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             yeni_not = self.notInput.toPlainText().strip()
             if self.idx is None:  # Ekleme modunda
                 self.data[ACIKLAMALAR].append(yeni_not)
@@ -315,9 +313,9 @@ class NotDuzenleWindow(QDialog):
                 self,
                 "Onay",
                 "Notu silmek istediğinden emin misin?",
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if emin_mi == QMessageBox.Yes:
+            if emin_mi == QMessageBox.StandardButton.Yes:
                 del self.data[ACIKLAMALAR][self.idx]
                 self.kaydetVeKapat()
 
