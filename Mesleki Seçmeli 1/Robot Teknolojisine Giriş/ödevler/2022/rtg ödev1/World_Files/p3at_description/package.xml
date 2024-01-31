@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package>
+  <name>p3at_description</name>
+  <version>1.0.0</version>
+  <description>
+    Pioneer 3at description
+  </description>
+
+  <license>Apache 2.0</license>
+  <maintainer email="nate@osrfoundation.org">Nate Koenig</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+</package>

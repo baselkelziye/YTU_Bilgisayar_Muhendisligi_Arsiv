@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="paused" default="false"/>
+<arg name="use_sim_time" default="true"/>
+<arg name="gui" default="true"/>
+<arg name="verbose" default="false"/>
+<arg name="world_name" default="worlds/empty.world"/>
+
+<!-- Launch gazebo -->
+<node name="gazebo" pkg="gazebo_ros" type="gzserver" respawn="false"
+output="screen" args="$(find p3at_gazebo)/worlds/p3at.world" />
+<node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
+
+</launch>
