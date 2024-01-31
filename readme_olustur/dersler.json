@@ -1658,7 +1658,11 @@
             "donem": "Bahar",
             "tip": "Zorunlu",
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "faydali_olabilecek_kaynaklar": [
+                "Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1)",
+                ":star:[Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link):star:"
+            ]
         },
         {
             "ad": "Bilgisayar Mühendisliğinde Güncel Konular",
@@ -1677,6 +1681,12 @@
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "[Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5IZPgFCbULx0oEQAdYumGVgD3r6u_zY?usp=drive_link)"
+            ],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Traktör Reis",
+                    "yorum": "Seçmeli olarak almasanız daha iyi olur."
+                }
             ]
         }
     ],
