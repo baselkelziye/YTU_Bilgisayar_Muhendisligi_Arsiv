@@ -1,4 +1,4 @@
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QLineEdit,
     QDialog,
     QPushButton,
@@ -9,12 +9,13 @@ from PyQt5.QtWidgets import (
     QWidget,
     QScrollArea,
     QHBoxLayout,
+    QSizePolicy,
 )
 from threadler import KatkiEkleThread
 from progress_dialog import CustomProgressDialog
 from degiskenler import *
-from PyQt5.QtGui import QIcon
-from PyQt5.QtCore import Qt
+from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import Qt
 from close_event import closeEventHandler
 
 class BaseKatkidaBulunanWindow(QDialog):
@@ -37,10 +38,10 @@ class BaseKatkidaBulunanWindow(QDialog):
         self.progressDialog.close()
         # Ad ve GitHub Linki için giriş alanları
         self.ad_label = QLabel("Ad")
-        self.ad_label.setAlignment(Qt.AlignCenter)
+        self.ad_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.ad_input = QLineEdit()
         self.katkida_bulunma_orani_label = QLabel("Katkıda Bulunma Oranı")
-        self.katkida_bulunma_orani_label.setAlignment(Qt.AlignCenter)
+        self.katkida_bulunma_orani_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.katkida_bulunma_orani = QComboBox()
         self.katkida_bulunma_orani.addItems(KATKIDA_BULUNMA_ORANI_DIZI)
         self.katkida_bulunma_orani.setCurrentText(KATKIDA_BULUNMA_ORANI_DIZI[-1])
@@ -54,7 +55,7 @@ class BaseKatkidaBulunanWindow(QDialog):
         )
         # Not sayısını gösteren etiket
         self.iletisimBilgisiLabel = QLabel("Toplam 0 iletişim bilgisi")
-        self.iletisimBilgisiLabel.setAlignment(Qt.AlignCenter)
+        self.iletisimBilgisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
@@ -84,18 +85,23 @@ class BaseKatkidaBulunanWindow(QDialog):
 
         # Başlık için QLabel ve QLineEdit oluştur
         label_baslik = QLabel("Başlık")
+        label_baslik.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
         iletisim_bilgisi_baslik = QLineEdit(baslik)
+        iletisim_bilgisi_baslik.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
         text_layout.addWidget(label_baslik)
         text_layout.addWidget(iletisim_bilgisi_baslik)
 
         # Link için QLabel ve QLineEdit oluştur
         label_link = QLabel("Link")
+        label_link.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
         iletisim_bilgisi_link = QLineEdit(link)
+        iletisim_bilgisi_link.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
         text_layout.addWidget(label_link)
         text_layout.addWidget(iletisim_bilgisi_link)
 
         # Sil butonu ekle
         sil_butonu = QPushButton("Sil")
+        sil_butonu.setSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sil_butonu.setStyleSheet(SIL_BUTONU_STILI)
         sil_butonu.clicked.connect(lambda: self.silSatir(text_layout))
         text_layout.addWidget(sil_butonu)
@@ -138,10 +144,10 @@ class BaseKatkidaBulunanWindow(QDialog):
             self,
             "Onay",
             "Değişiklikleri kaydetmek istediğinden emin misin?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
 
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             self.thread = KatkiEkleThread(
                 ad,
                 self.kisi,

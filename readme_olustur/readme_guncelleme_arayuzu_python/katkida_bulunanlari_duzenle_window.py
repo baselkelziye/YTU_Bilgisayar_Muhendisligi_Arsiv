@@ -1,7 +1,7 @@
 import locale
 import json
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QWidget,
     QVBoxLayout,
     QInputDialog,
@@ -14,9 +14,9 @@ from PyQt5.QtWidgets import (
     QScrollArea,
 )
 from katkida_bulunan_ekle_window import KatkidaBulunanEkleWindow
-from PyQt5.QtCore import Qt
+from PyQt6.QtCore import Qt
 from degiskenler import *
-from PyQt5.QtGui import QIcon
+from PyQt6.QtGui import QIcon
 from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
 from katkida_bulunan_ekle_window import BaseKatkidaBulunanWindow
@@ -64,7 +64,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.clearFiltersButton)
         # Bölüm adı label
         self.bolumAdiLabel = QLabel("Bölüm Adı")
-        self.bolumAdiLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAdiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAdiLabel)
         # Bölüm adı düzenleme butonu
         bolum_adi = self.data.get(BOLUM_ADI, VARSAYILAN_KATKIDA_BULUNANLAR_BOLUM_ADI)
@@ -80,7 +80,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.mainLayout.addWidget(self.bolumAdiDuzenleBtn)
         # Bölüm açıklaması label
         self.bolumAciklamaLabel = QLabel("Bölüm Açıklaması")
-        self.bolumAciklamaLabel.setAlignment(Qt.AlignCenter)
+        self.bolumAciklamaLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.bolumAciklamaLabel)
         # Bölüm açıklaması düzenleme butonu
         self.bolumAciklamaDuzenleBtn = QPushButton(kisaltMetin(aciklama), self)
@@ -99,7 +99,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.katkidaBulunanSayisiLabel = QLabel(
             f"Toplam {0} katkıda bulunan var."
         )  # Sayıyı gösteren etiket
-        self.katkidaBulunanSayisiLabel.setAlignment(Qt.AlignCenter)
+        self.katkidaBulunanSayisiLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.mainLayout.addWidget(self.katkidaBulunanSayisiLabel)
         # Kaydırılabilir alan oluştur
         self.scrollArea = QScrollArea(self)  # ScrollArea oluştur
@@ -116,16 +116,16 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def bolumAdiDuzenle(self):
         # Bölüm adını düzenle
         text, ok = QInputDialog.getText(
-            self, "Bölüm Adı", "Bölüm adı: ", QLineEdit.Normal, self.data[BOLUM_ADI]
+            self, "Bölüm Adı", "Bölüm adı: ", QLineEdit.EchoMode.Normal, self.data[BOLUM_ADI]
         )
         if ok:
             cevap = QMessageBox.question(
                 self,
                 "Onay",
                 f'Bölüm adını "{text}" olarak değiştirmek istediğine emin misin?',
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ADI] = text
                 self.bolumAdiDuzenleBtn.setText(kisaltMetin(text))
                 self.jsonDosyasiniKaydet()
@@ -146,9 +146,9 @@ class KatkidaBulunanGuncelleWindow(QDialog):
                 self,
                 "Onay",
                 f'Bölüm açıklamasını "{text}" olarak değiştirmek istediğine emin misin?',
-                QMessageBox.Yes | QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
             )
-            if cevap == QMessageBox.Yes:
+            if cevap == QMessageBox.StandardButton.Yes:
                 self.data[BOLUM_ACIKLAMASI] = text
                 self.bolumAciklamaDuzenleBtn.setText(kisaltMetin(text))
                 self.jsonDosyasiniKaydet()
@@ -172,7 +172,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             return
         size = 0
         for idx, katkida_bulunan in enumerate(self.data[KATKIDA_BULUNANLAR]):
-            widget = self.layout.itemAt(idx + 1).widget()
+            widget = self.layout.itemAt(idx).widget()
             katkida_bulunan_adi = katkida_bulunan[AD]
             if isinstance(widget, QPushButton):
                 if query.lower() in katkida_bulunan_adi.lower():
@@ -190,7 +190,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             self.clearFiltersButton.hide()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_F and event.modifiers() & Qt.ControlModifier:
+        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kelime:")
             if ok:
                 self.searchNotes(text)
@@ -201,10 +201,10 @@ class KatkidaBulunanGuncelleWindow(QDialog):
                 self,
                 "Filtreleri Temizle",
                 "Filtreleri temizlemek istediğinize emin misiniz?",
-                QMessageBox.Yes | QMessageBox.No,
-                QMessageBox.No,
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
             )
-        if not is_clicked or reply == QMessageBox.Yes:
+        if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.layout.count()):
                 widget = self.layout.itemAt(i).widget()
                 if isinstance(widget, QPushButton):
@@ -322,9 +322,9 @@ class KatkidaBulunanDuzenleWindow(BaseKatkidaBulunanWindow):
             self,
             "Onay",
             f"{self.kisi[AD]} adlı kişiyi silmek istediğinden emin misin?",
-            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
         )
-        if emin_mi == QMessageBox.Yes:
+        if emin_mi == QMessageBox.StandardButton.Yes:
             try:
                 # Kişiyi data listesinden sil
                 index = self.data[KATKIDA_BULUNANLAR].index(
