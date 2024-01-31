@@ -103,6 +103,8 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Seçmeli olarak almasanız daha iyi olur.
 - ⭐ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
