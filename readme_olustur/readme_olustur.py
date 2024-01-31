@@ -711,8 +711,10 @@ def ders_bilgilerini_readme_ile_birlestir(
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:
         custom_write(f"{ders[AD]} README.md dönemine ekleniyor...\n")
+        count = 0
         for donem in donemler:
             if ders[TIP] == donem[DONEM_ADI] or ders[YIL] == donem[YIL] and ders[DONEM] == donem[DONEM] and not (ders[YIL] == 0 or ders[DONEM] == ""):
+                count += 1
                 dosya_yolu = os.path.join(
                     donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU), README_MD
                 )
@@ -785,6 +787,8 @@ def ders_bilgilerini_readme_ile_birlestir(
                     if GUNCEL_MI in ders and not ders[GUNCEL_MI]:
                         f.write("\n#### ℹ️ Dersin içeriği güncel değil\n")
                         f.write(f"- {guncel_olmayan_ders_aciklamasi}\n")
+                if count > 1:
+                    break
         custom_write(f"{ders[AD]} README.md dönemine eklendi.\n")
 
 
