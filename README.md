@@ -666,6 +666,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Uluslararası Pazarlama 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Seçmeli olarak almasanız daha iyi olur.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
