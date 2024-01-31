@@ -927,21 +927,6 @@ class DersDuzenlemeWindow(QDialog):
                     self, "Hata", "Dönem bilgisi olmayan dersler " + ZORUNLU + " olamaz!"
                 )
                 return
-        if (yil != 0 or donem != YOK) and tip != ZORUNLU:
-            if yil != 0:
-                QMessageBox.warning(
-                    self,
-                    "Hata",
-                    ZORUNLU +" olmayan dersler yıl bilgisi içermemelidir!",
-                )
-                return
-            else:
-                QMessageBox.warning(
-                    self,
-                    "Hata",
-                    ZORUNLU + " olmayan dersler dönem bilgisi içermemelidir!",
-                )
-                return
         cevap = QMessageBox.question(
             self,
             "Onay",

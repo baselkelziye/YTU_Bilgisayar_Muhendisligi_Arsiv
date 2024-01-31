@@ -57,30 +57,6 @@
 - BD
 - AEL
 
-### 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 2
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
-  - 👤 **_Tehlikeli Pinokyo_**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
-- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
-
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- ACK
-- AEL
-
 ### 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
 
 #### 📄 Ders Bilgileri
@@ -148,7 +124,7 @@
 - GB
 - HOİ
 
-### 📘 Yapısal Programlama
+### 📘 Nesneye Yönelik Programlama
 
 #### 📄 Ders Bilgileri
 
@@ -156,18 +132,18 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
-- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
+  - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1nJk-sz7MxNxKtEsGwJkR5OgS8eft7HAE?usp=drive_link) ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- MSA
+- FÇ
 - YES
-- AEL
-- HİT

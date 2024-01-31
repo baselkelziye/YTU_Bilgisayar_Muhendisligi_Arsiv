@@ -22,6 +22,6 @@ def donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU=".."):
             DOKUMANLAR_REPO_YOLU,
             f"{donem.get(YIL,1)}-{donem_sayisi_getir(donem.get(DONEM,GUZ))}",
         )
-    if donem is not None and donem.get(AD, "") != "":
-        return os.path.join(DOKUMANLAR_REPO_YOLU, donem.get(AD, ""))
-    return os.path.join(DOKUMANLAR_REPO_YOLU, MESLEKI_SECMELI)
+    if donem is not None and donem.get(DONEM_ADI, "") != "":
+        return os.path.join(DOKUMANLAR_REPO_YOLU, donem.get(DONEM_ADI, ""))
+    return os.path.join(DOKUMANLAR_REPO_YOLU, MESLEKI_SECMELI_1)
