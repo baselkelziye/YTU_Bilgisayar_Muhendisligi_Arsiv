@@ -3,7 +3,7 @@
 ## ℹ️ Ders Bilgileri
 
 - 📅 **Yıl:** 2
-- 📆 **Dönem:** Bahar
+- 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.

@@ -699,7 +699,7 @@ def donemlere_gore_readme_olustur(donemler):
                 f.write(
                     f"- 💡 {tavsiye}\n"
                 )  # Ampul emoji, fikir veya tavsiye temsil eder
-            if donem[DONEM_ADI] != "Mesleki Seçmeli Dersler":
+            if donem.get(YIL,0) != 0:
                 f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")
                 # Kitap emoji, zorunlu dersleri temsil eder
         custom_write(f"{donem[DONEM_ADI]} README.md oluşturuldu.\n")
@@ -712,7 +712,7 @@ def ders_bilgilerini_readme_ile_birlestir(
     for ders in dersler:
         custom_write(f"{ders[AD]} README.md dönemine ekleniyor...\n")
         for donem in donemler:
-            if ders[YIL] == donem[YIL] and ders[DONEM] == donem[DONEM]:
+            if ders[TIP] == donem[DONEM_ADI] or ders[YIL] == donem[YIL] and ders[DONEM] == donem[DONEM] and not (ders[YIL] == 0 or ders[DONEM] == ""):
                 dosya_yolu = os.path.join(
                     donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU), README_MD
                 )

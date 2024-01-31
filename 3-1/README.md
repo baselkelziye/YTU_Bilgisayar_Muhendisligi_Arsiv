@@ -33,6 +33,24 @@
 - MEK
 - MAG
 
+### 📘 Genel Staj
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 3
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümün belirlediği alanlarda herhangi bir şirkette 30 iş günü çalışmak gerekiyor.
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
+
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
 ### 📘 İşletim Sistemleri
 
 #### 📄 Ders Bilgileri
@@ -141,6 +159,22 @@
 - BD
 - HOİ
 
+### 📘 Türkçe 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 3
+- 📆 **Dönem:** Güz
+- 🏫 **Ders Tipi:** Zorunlu
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
+
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+
 ### 📘 Veri İletişimi
 
 #### 📄 Ders Bilgileri
@@ -165,27 +199,6 @@
 
 #### ℹ️ Dersin içeriği güncel değil
 - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
-
-### 📘 Veri İletişimi ve Bilgi Ağları
-
-#### 📄 Ders Bilgileri
-
-- 📅 **Yıl:** 3
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Zorunlu
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
-
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-
-#### 📚 Faydalı Olabilecek Kaynaklar
-
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
-- 📄 [Bu linkte çok temiz çıkarılmış notlar var](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgi%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
-
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- FÇ
 
 ### 📘 Veritabanı Yönetimi
 
