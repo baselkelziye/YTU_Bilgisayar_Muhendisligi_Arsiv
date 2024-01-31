@@ -145,8 +145,11 @@ if __name__ == "__main__":
     konfigurasyon_json_guncelle(KONFIGURASYON_JSON_PATH)
     app = QApplication(sys.argv)
     # Stil dosyasını oku
-    with open(STIL_QSS, "r") as f:
-        _style = f.read()
-        app.setStyleSheet(_style)
+    try:
+        with open(STIL_QSS, "r", encoding="utf-8") as f:
+            _style = f.read()
+            app.setStyleSheet(_style)
+    except:
+        pass
     ex = App()
     sys.exit(app.exec())
