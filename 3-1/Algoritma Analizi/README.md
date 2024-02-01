@@ -14,6 +14,10 @@
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+## 📝 Derse Dair Öneriler
+
+### 💡 Öneri sahibi: Traktör Reis
+- Ders aslında anlatıldığı kadar zor değil. İnsanların en büyük kalma sebebi dersi gözlerinde büyütmeleri. Tamamen psikolojik. Dersi geçmek için sadece zaman ayırmak gerekiyor. Ödevleri ve projeyi yapmak için zaman ayırırsanız çok rahat bir şekilde yapar ve dersi de çok rahat bir şekilde geçersiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 

@@ -39,6 +39,14 @@
                 "[Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz)",
                 "[Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz)",
                 "[Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz)"
+            ],
+            "derse_dair_oneriler": [
+                {
+                    "oneri_sahibi": "Traktör Reis",
+                    "oneriler": [
+                        "İlk dönemin bölümle alakalı tek dersi diyebilirim. Bu derste yazılım geçmişi olan insanlar başlangıçta, geçmişi olmayanlara fark atar.  O fark dönem sonuna doğru azalır. Çünkü bu ders, algoritma açısından çok temel kavramları anlatmak üzerine bir derstir. Bu kavramları anlaması da zaman ayırınca zor değildir. Hatta dersi verdikten bi 3 ay sonra, geçmiş konular çocuk oyuncağı gibi gelecektir. Sınıfta her şeyi cevaplayan birileri olacaktır. Onlar muhtemelen dersi 2. defa alıyorlar. Ondan dolayı moral bozmaya gerek yok. Dersin projesine vakit ayırınca ve biraz da internetten hazır problemler bulup, bunların diyagramlarını çizmeye çalışınca dersi geçmek zor değil."
+                    ]
+                }
             ]
         },
         {
@@ -805,7 +813,15 @@
                 }
             ],
             "oy_sayisi": 4,
-            "guncel_mi": true
+            "guncel_mi": true,
+            "derse_dair_oneriler": [
+                {
+                    "oneri_sahibi": "Traktör Reis",
+                    "oneriler": [
+                        "Ders aslında anlatıldığı kadar zor değil. İnsanların en büyük kalma sebebi dersi gözlerinde büyütmeleri. Tamamen psikolojik. Dersi geçmek için sadece zaman ayırmak gerekiyor. Ödevleri ve projeyi yapmak için zaman ayırırsanız çok rahat bir şekilde yapar ve dersi de çok rahat bir şekilde geçersiniz."
+                    ]
+                }
+            ]
         },
         {
             "ad": "Mikroişlemci Sistemleri",
@@ -1301,7 +1317,12 @@
             "ogrenci_gorusleri": [],
             "kolaylik_puani": 100,
             "gereklilik_puani": 100,
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "NA",
+                    "ad": "Prof. Dr. Nizamettin Aydın"
+                }
+            ],
             "guncel_mi": true,
             "oy_sayisi": 1,
             "faydali_olabilecek_kaynaklar": [
