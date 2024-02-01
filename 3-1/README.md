@@ -27,6 +27,10 @@
 
 - 📄 [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link) ✨
+- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=xggsTaFKfr8&ab_channel=MertTunaKurnaz) ✨
+- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=ki9gnOJahas&ab_channel=MelihTuna%C4%B0PEK) ✨
+- 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=OMcNmKqCihk&ab_channel=TalhaCicek) ✨
+- 📄 [Proje için örnek video 4](https://www.youtube.com/watch?v=_aKpZq7s7dY&ab_channel=enis) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
