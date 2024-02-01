@@ -16,6 +16,8 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link) ✨
+- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=eQOqd2qvkJE&ab_channel=TolgaZiftci) ✨
+- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=889IY3UeJDQ&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
