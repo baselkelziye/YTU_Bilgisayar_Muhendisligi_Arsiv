@@ -132,6 +132,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ubihV7hfig2n6gawM_gEWUyQb5M-rXCi?usp=drive_link) ✨
+- 📄 [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Hesaplama%20Kuram%C4%B1/slaytlar_notlar/2022/slayt%20%C3%BCst%C3%BCne%20not%20al%C4%B1nm%C4%B1%C5%9F) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -208,6 +209,7 @@
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link) ✨
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
+- 📄 [Güzel çıkarılmış not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/Veri%20Yap%C4%B1lar%C4%B1%20Ve%20Algoritmalar%20.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
