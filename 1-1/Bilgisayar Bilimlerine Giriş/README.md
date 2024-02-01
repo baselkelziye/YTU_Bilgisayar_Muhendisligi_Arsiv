@@ -13,6 +13,10 @@
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
     - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+## 📝 Derse Dair Öneriler
+
+### 💡 Öneri sahibi: Traktör Reis
+- İlk dönemin bölümle alakalı tek dersi diyebilirim. Bu derste yazılım geçmişi olan insanlar başlangıçta, geçmişi olmayanlara fark atar.  O fark dönem sonuna doğru azalır. Çünkü bu ders, algoritma açısından çok temel kavramları anlatmak üzerine bir derstir. Bu kavramları anlaması da zaman ayırınca zor değildir. Hatta dersi verdikten bi 3 ay sonra, geçmiş konular çocuk oyuncağı gibi gelecektir. Sınıfta her şeyi cevaplayan birileri olacaktır. Onlar muhtemelen dersi 2. defa alıyorlar. Ondan dolayı moral bozmaya gerek yok. Dersin projesine vakit ayırınca ve biraz da internetten hazır problemler bulup, bunların diyagramlarını çizmeye çalışınca dersi geçmek zor değil.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
