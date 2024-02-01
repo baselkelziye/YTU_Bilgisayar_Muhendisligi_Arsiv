@@ -21,6 +21,8 @@
 
 - 📄 [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link) ✨
+- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
+- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
