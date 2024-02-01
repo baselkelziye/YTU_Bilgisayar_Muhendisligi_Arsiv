@@ -54,6 +54,7 @@
 
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
+- 📄 [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mesleki Hukuk ve Etik
