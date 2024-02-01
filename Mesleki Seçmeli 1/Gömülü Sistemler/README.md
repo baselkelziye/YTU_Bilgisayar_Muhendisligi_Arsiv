@@ -16,6 +16,9 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Proje](https://www.youtube.com/watch?v=wfL-sVkdhFM&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 [Hocaların hazırladığı 2021-2022 projeleri tanıtım videosu](https://www.youtube.com/watch?v=uU6Qw8xgokU&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
+- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=ETFdrZZc5sY&ab_channel=mehmet%C3%A7alo%C4%9Flu) ✨
+- 📄 [Hocaların hazırladığı 2022-2023 projeleri tanıtım videosu](https://www.youtube.com/watch?v=PHACPjpUpHM&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

@@ -45,6 +45,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=jdYA1Jk1HWM&ab_channel=YunusKaratepe) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Türkçe 2
