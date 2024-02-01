@@ -102,9 +102,9 @@
   - 👤 **_Traktör Reis_**: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
   - 👤 **_Violancello_**: Bölümün açık ara en zor dersi. Tüm derslere girin çünkü koptuğunuz an toparlaması çok zor, özellikle de Mikro konularını kaçırdınız mı yandınız. Geçebilmek için lab ve ödevlerden puan almak için çok önemli çünkü sınavların ortalaması 20-30 gibi oluyor. Zor ama kaliteli ve öğretici, mühendis olduğunuzu hissettiren bir ders.
 - ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
@@ -135,9 +135,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette.
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
