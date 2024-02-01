@@ -20,6 +20,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ubihV7hfig2n6gawM_gEWUyQb5M-rXCi?usp=drive_link) ✨
+- 📄 [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Hesaplama%20Kuram%C4%B1/slaytlar_notlar/2022/slayt%20%C3%BCst%C3%BCne%20not%20al%C4%B1nm%C4%B1%C5%9F) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
