@@ -1,2 +1,5 @@
 * text=auto
+*.txt text eol=lf 
+*.json text eol=lf 
+*.md text eol=lf 
 * text !filter !merge !diff
