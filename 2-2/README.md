@@ -81,6 +81,10 @@
 - 📄 :star:[Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link):star: ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- EU
+- ACK
+
 ### 📘 Elektronik Devreler
 
 #### 📄 Ders Bilgileri
@@ -214,3 +218,5 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
+- MEK
+- MAG
