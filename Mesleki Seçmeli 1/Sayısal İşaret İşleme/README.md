@@ -21,3 +21,4 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
 - AEL
+- EU
