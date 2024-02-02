@@ -28,3 +28,5 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
+- MEK
+- MAG
