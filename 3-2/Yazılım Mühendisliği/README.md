@@ -21,3 +21,5 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
+- YES
+- MSA

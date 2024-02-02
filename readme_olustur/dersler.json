@@ -726,6 +726,14 @@
                 {
                     "kisaltma": "G1",
                     "ad": "Dr. Göksel Biricik"
+                },
+                {
+                    "kisaltma": "MEK",
+                    "ad": "Prof. Dr. M. Elif Karslıgil"
+                },
+                {
+                    "kisaltma": "MAG",
+                    "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
             "oy_sayisi": 1,
@@ -1033,6 +1041,14 @@
                 {
                     "kisaltma": "OK",
                     "ad": "Prof. Dr. Oya Kalıpsız"
+                },
+                {
+                    "kisaltma": "YES",
+                    "ad": "Dr. Yunus Emre Selçuk"
+                },
+                {
+                    "kisaltma": "MSA",
+                    "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
                 }
             ],
             "guncel_mi": true,
@@ -1291,6 +1307,10 @@
                 {
                     "kisaltma": "AEL",
                     "ad": "Dr. Ahmet Elbir"
+                },
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
                 }
             ],
             "guncel_mi": true,
@@ -1552,7 +1572,12 @@
             ],
             "kolaylik_puani": 70,
             "gereklilik_puani": 90,
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "GB",
+                    "ad": "Doç. Dr. Gökhan Bilgin"
+                }
+            ],
             "oy_sayisi": 1,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
@@ -1728,7 +1753,16 @@
             "yil": 1,
             "donem": "Bahar",
             "tip": "Zorunlu",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "HOİ",
+                    "ad": "Dr. Hamza Osman İlhan"
+                },
+                {
+                    "kisaltma": "GB",
+                    "ad": "Doç. Dr. Gökhan Bilgin"
+                }
+            ],
             "guncel_mi": true
         },
         {
@@ -1736,7 +1770,16 @@
             "yil": 2,
             "donem": "Bahar",
             "tip": "Zorunlu",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                },
+                {
+                    "kisaltma": "ACK",
+                    "ad": "Doç. Dr. Ali Can Karaca"
+                }
+            ],
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1)",
@@ -1770,6 +1813,19 @@
             "kolaylik_puani": 70,
             "gereklilik_puani": 10,
             "oy_sayisi": 1
+        },
+        {
+            "ad": "İleri Ağ Programlama",
+            "yil": 0,
+            "donem": "yok",
+            "tip": "Mesleki Seçmeli 1",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "HOİ",
+                    "ad": "Dr. Hamza Osman İlhan"
+                }
+            ],
+            "guncel_mi": true
         }
     ],
     "bolum_adi": "Dersler",
