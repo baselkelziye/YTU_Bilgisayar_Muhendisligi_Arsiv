@@ -1823,6 +1823,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h4>
+<p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a></p>
 
 <h4 align='center'>🌟 <b><i>Muhammed Ali Şen</i></b> 🌟</h4>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
