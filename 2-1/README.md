@@ -18,9 +18,9 @@
   - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor.
   - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders...
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -43,10 +43,10 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla.
   - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
 
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -64,10 +64,10 @@
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -113,9 +113,9 @@
   - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay.
   - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 

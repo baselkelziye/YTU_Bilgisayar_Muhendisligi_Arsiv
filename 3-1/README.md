@@ -21,7 +21,7 @@
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
@@ -134,10 +134,10 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette.
-- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -221,9 +221,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 

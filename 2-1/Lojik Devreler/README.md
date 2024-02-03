@@ -10,9 +10,9 @@
   - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
