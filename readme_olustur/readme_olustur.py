@@ -316,8 +316,8 @@ def dersleri_readme_ye_ekle(dersler):
         0 if EN_POPULER_HOCA not in hocalar else hocalar[EN_POPULER_HOCA][OY_SAYISI]
     )
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"<details>\n<summary><b>📚 {dersler['bolum_adi']}</b></summary>\n\n")
-        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']}\n")
+        f.write(f"<details>\n<summary><b>📖 {dersler['bolum_adi']}</b></summary>\n\n")
+        f.write(f"\n\n\n## 📖 {dersler['bolum_adi']}\n")
         f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
 
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
@@ -399,8 +399,8 @@ def readme_ye_giris_ekle(giris_bilgileri):
         f.write(
             '<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>\n</p>\n\n'
         )
-        f.write("<details>\n<summary><b>📚 İçindekiler</b></summary>\n\n")
-        f.write("## 📚 İçindekiler\n\n")
+        f.write("<details>\n<summary><b>🗂 İçindekiler</b></summary>\n\n")
+        f.write("## 🗂 İçindekiler\n\n")
         for item in giris_bilgileri["icindekiler"]:
             f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
         f.write("</details>\n\n")
@@ -415,8 +415,8 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
             kisaltma = hoca_kisaltma_olustur(hoca[AD])
             kisaltmalar[kisaltma] = hoca[AD]
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"<details>\n<summary><b>📚 Hoca Kısaltmaları</b></summary>\n\n")
-        f.write("<h2 align='center'>📚 Hoca Kısaltmaları</h2>\n\n")
+        f.write(f"<details>\n<summary><b>🆎 Hoca Kısaltmaları</b></summary>\n\n")
+        f.write("<h2 align='center'>🆎 Hoca Kısaltmaları</h2>\n\n")
         for kisaltma in sorted(kisaltmalar.keys()):
             ad = kisaltmalar[kisaltma]
             # Kısaltmayı kalın yap, emoji ile çevrele ve ad ile arasına tab benzeri boşluk ekle
@@ -452,9 +452,9 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"<details>\n<summary><b>✍️ {yazar_notlari['baslik']}</b></summary>\n\n")
+        f.write(f"<details>\n<summary><b>🖋 {yazar_notlari['baslik']}</b></summary>\n\n")
         f.write(
-            f"\n## ✍️ {yazar_notlari['baslik']}\n\n"
+            f"\n## 🖋 {yazar_notlari['baslik']}\n\n"
         )  # Kalem emoji, yazarı temsil eder
         for aciklama in yazar_notlari[ACIKLAMALAR]:
             f.write(
