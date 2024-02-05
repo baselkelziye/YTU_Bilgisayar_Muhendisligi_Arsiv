@@ -175,7 +175,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             widget = self.layout.itemAt(idx).widget()
             katkida_bulunan_adi = katkida_bulunan[AD]
             if isinstance(widget, QPushButton):
-                if query.lower() in katkida_bulunan_adi.lower():
+                if query.replace('İ','i').lower() in katkida_bulunan_adi.replace('İ','i').lower():
                     widget.show()
                     size += 1
                 else:

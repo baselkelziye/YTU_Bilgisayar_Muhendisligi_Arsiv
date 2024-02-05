@@ -84,7 +84,7 @@ class DonemEkleGuncelleWindow(TalimatDialog):
             layout = self.scrollLayout.itemAt(idx)
             donem_adi = donem[DONEM_ADI]
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in donem_adi.lower()
+                match = query.replace('İ','i').lower() in donem_adi.replace('İ','i').lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
