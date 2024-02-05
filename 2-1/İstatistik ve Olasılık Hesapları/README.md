@@ -17,6 +17,7 @@
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/15OgFx9BIu8Gur6ra1izx2N7-6Z2BfAim?usp=drive_link) ✨
 - 📄 [Güzel çıkarılmış el yazısı not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021_EFE_G%C4%B0RG%C4%B0N/el_yaz%C4%B1s%C4%B1_notlar) ✨
+- 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/Nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) GitHub'dan açılmıyorsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
