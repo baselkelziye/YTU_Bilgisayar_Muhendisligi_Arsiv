@@ -52,13 +52,23 @@ def execute_command(command):
             if error_output:
                 custom_write_error(error_output + "\n")
             # İşlem sonucunu kontrol et
-            process.wait()
+            process.wait(timeout=20)
             if process.returncode != 0:
                 raise subprocess.CalledProcessError(process.returncode, command)
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır
         custom_write_error(f"Komut hatası: {e}\n")
         return False
+    except subprocess.TimeoutExpired:
+        # Zaman aşımı durumunda işlemi sonlandır
+        process.kill()
+        # Zaman aşımına uğrayan işlemin çıktısını oku
+        outs, errs = process.communicate()
+        custom_write("Komut zaman aşımına uğradı, işlem güvenli bir şekilde sonlandırıldı.\n")
+        if outs:
+            custom_write(outs)
+        if errs:
+            custom_write_error(errs)
     return True
 
 
@@ -83,7 +93,7 @@ def update_repository(deneme_sayisi=0):
             )
             exit(1)
 
-        if not execute_command("git fetch"):
+        if not execute_command("git fetch --all"):
             custom_write_error(
                 "Fetch sırasında conflict oluştu, script durduruluyor.\n"
             )
@@ -92,9 +102,6 @@ def update_repository(deneme_sayisi=0):
             custom_write_error(
                 "Reset sırasında conflict oluştu, script durduruluyor.\n"
             )
-            return
-        if not execute_command("git pull"):
-            custom_write_error("Pull sırasında conflict oluştu, script durduruluyor.\n")
             return
         os.chdir(original_directory)
         if not execute_command(google_form_guncelle_komutu):
@@ -107,17 +114,17 @@ def update_repository(deneme_sayisi=0):
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"):
             custom_write_error(
-                "Git add sırasında conflict oluştu, script durduruluyor.\n"
+                "Git add işlemi başarısız..."
             )
             return
         if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'):
             custom_write_error(
-                "Git commit sırasında conflict oluştu, script durduruluyor.\n"
+                "Git commit işlemi başarısız, muhtemelen herhangi bir dosya değişmedi..."
             )
             return
         if not execute_command("git push"):
             custom_write_error(
-                "Git push sırasında conflict oluştu, script durduruluyor.\n"
+                "Git push işlemi başarısız..."
             )
             return
         custom_write(f"{deneme_sayisi}. güncelleme başarıyla uygulandı.\n")
