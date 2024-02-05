@@ -90,7 +90,43 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 self.notlarLayout.addLayout(btn_layout)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
+    def notlariTemizle(self):
+        # Layout içinde dolaş ve her bir item'ı sil
+        for i in reversed(range(self.notlarLayout.count())): 
+            layoutItem = self.notlarLayout.itemAt(i)
+            # Eğer layout item bir widget'a sahipse, widget'ı sil
+            if layoutItem.widget():
+                widget = layoutItem.widget()
+                self.notlarLayout.removeWidget(widget)  # Widget'ı layout'tan çıkar
+                widget.deleteLater()  # Widget'ı bellekten tamamen sil
+            # Eğer layout item başka bir layout ise, bu layout'u sil
+            elif layoutItem.layout():
+                subLayout = layoutItem.layout()
+                self.layoutuTemizle(subLayout)  # Alt layout'u temizle
+                subLayout.deleteLater()  # Alt layout'u bellekten tamamen sil
+            # Eğer layout item bir spacer ise, onu çıkar
+            elif layoutItem.spacerItem():
+                self.notlarLayout.removeItem(layoutItem)  # Spacer item'ı layout'tan çıkar
 
+    def layoutuTemizle(self, layout):
+        # Verilen layout içinde dolaş ve her bir item'ı sil
+        for i in reversed(range(layout.count())): 
+            layoutItem = layout.itemAt(i)
+            if layoutItem.widget():
+                widget = layoutItem.widget()
+                layout.removeWidget(widget)
+                widget.deleteLater()
+            elif layoutItem.layout():
+                subLayout = layoutItem.layout()
+                self.layoutuTemizle(subLayout)
+                subLayout.deleteLater()
+            elif layoutItem.spacerItem():
+                layout.removeItem(layoutItem)
+
+    def notlariYenile(self):
+        self.notlariTemizle()
+        self.notlariYukle()
+        self.clearFiltersButton.hide()  # Temizle butonunu gizle
     def notTasi(self, idx, idx2):
         total_items = self.notlarLayout.count()
 
