@@ -174,7 +174,7 @@ class DersEkleGuncelleWindow(QDialog):
             layout = self.derslerLayout.itemAt(i)
             if isinstance(layout, QHBoxLayout):
                 ders_ad = layout.itemAt(0).widget().toolTip()
-                match = query.lower() in ders_ad.lower()
+                match = query.replace('İ','i').lower() in ders_ad.replace('İ','i').lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
