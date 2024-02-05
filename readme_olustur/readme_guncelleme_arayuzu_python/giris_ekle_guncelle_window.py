@@ -147,9 +147,8 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             )
         if not is_clicked or reply == QMessageBox.StandardButton.Yes:
             for i in range(self.notlarLayout.count()):
-                widget = self.notlarLayout.itemAt(i).widget()
-                if isinstance(widget, QPushButton):
-                    widget.show()
+                layout = self.notlarLayout.itemAt(i)
+                self.layoutGorunumDegistir(layout, True)
             self.clearFiltersButton.hide()  # Temizle butonunu gizle
             self.notSayisiLabel.setText(
                 f"Toplam {len(self.data[ICINDEKILER])} içindekiler"
@@ -161,13 +160,13 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             return
         size = 0
         for idx, not_ in enumerate(self.data[ICINDEKILER]):
-            widget = self.notlarLayout.itemAt(idx).widget()
+            widget = self.notlarLayout.itemAt(idx).itemAt(0).widget()
             if isinstance(widget, QPushButton):
-                if query.lower() in not_.lower():
-                    widget.show()
+                if query.replace('İ','i').lower() in not_.replace('İ','i').lower():
+                    self.layoutGorunumDegistir(self.notlarLayout.itemAt(idx), gorunum=True)
                     size += 1
                 else:
-                    widget.hide()
+                    self.layoutGorunumDegistir(self.notlarLayout.itemAt(idx), gorunum=False)
         if size == len(self.data[ICINDEKILER]):
             self.clearFilters(is_clicked=False)
             return
@@ -176,7 +175,15 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
-
+    def layoutGorunumDegistir(self,layout , gorunum):
+        for i in range(layout.count()):
+            item = layout.itemAt(i)
+            widget = item.widget()
+            if widget is not None:  # Eğer item bir widget ise
+                if gorunum:
+                    widget.show()
+                else:
+                    widget.hide()
     def baslikDuzenle(self):
         self.aciklamaDuzenle(BASLIK)
 
