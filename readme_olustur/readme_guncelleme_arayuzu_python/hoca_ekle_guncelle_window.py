@@ -196,7 +196,7 @@ class HocaEkleGuncelleWindow(QDialog):
             widget = self.hocalarLayout.itemAt(i).widget()
             if isinstance(widget, QPushButton):
                 hoca_ad = widget.text()
-                if query.lower() in hoca_ad.lower():
+                if query.replace('İ','i').lower() in hoca_ad.replace('İ','i').lower():
                     widget.show()
                     size += 1
                 else:

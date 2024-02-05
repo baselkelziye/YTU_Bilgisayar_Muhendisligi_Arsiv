@@ -78,7 +78,7 @@ class TalimatDialog(QDialog):
         for idx, kavram in enumerate(self.repo_data[TALIMATLAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in kavram.lower()
+                match = query.replace('İ','i').lower() in kavram.replace('İ','i').lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -451,7 +451,7 @@ class KavramDialog(QDialog):
             layout = self.scrollLayout.itemAt(idx)
             kavram = kavram[KAVRAM]
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in kavram.lower()
+                match = query.replace('İ','i').lower() in kavram.replace('İ','i').lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -669,7 +669,7 @@ class AciklamaDialog(QDialog):
         for idx, aciklama in enumerate(self.repo_data[ACIKLAMALAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
-                match = query.lower() in aciklama.lower()
+                match = query.replace('İ','i').lower() in aciklama.replace('İ','i').lower()
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
