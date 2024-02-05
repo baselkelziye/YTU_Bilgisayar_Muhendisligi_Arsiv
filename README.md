@@ -22,7 +22,7 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 [Repo Kullanımı](#-repo-kullanımı)
 - 🔗 [Dersler](#-dersler)
 - 🔗 [Hocalar](#-hocalar)
-- 🔗 [Yazarın Notları](#%EF%B8%8F-yazarın-notları)
+- 🔗 [Yazarın Notları](#-yazarın-notları)
 - 🔗 [Shiningstar Programı](#shiningstar)
 - 🔗 [Hoca Kısaltmaları](#-hoca-kısaltmaları)
 - 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
