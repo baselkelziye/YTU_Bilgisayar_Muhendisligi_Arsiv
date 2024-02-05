@@ -1894,6 +1894,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h4 align='center'>🌟 <b><i>Muhammed Ali Şen</i></b> 🌟</h4>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>🌟 <b><i>Muhammed Nasır Sabır</i></b> 🌟</h4>
+<p align='center'><a href='https://github.com/nasirsabir'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/nasirsabir'><b>LinkedIn Profili</b></a></p>
+
 <h4 align='center'>🌟 <b><i>Sait Yalçın</i></b> 🌟</h4>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
