@@ -335,7 +335,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders[OGRENCI_GORUSLERI]:
-                        f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
+                        f.write(f"    - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
                     f.write(
                         f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
                     )
