@@ -28,7 +28,8 @@
 - 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=OMcNmKqCihk&ab_channel=TalhaCicek) ✨
 - 📄 [Proje için örnek video 4](https://www.youtube.com/watch?v=_aKpZq7s7dY&ab_channel=enis) ✨
 - 📄 [Elle çıkarılmış ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2022/not.pdf) ✨
-- 📄 [Elle çııkarılmış daha güzel 2 ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2019) ✨
+- 📄 [Elle çıkarılmış daha güzel 2 ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2019) ✨
+- 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
