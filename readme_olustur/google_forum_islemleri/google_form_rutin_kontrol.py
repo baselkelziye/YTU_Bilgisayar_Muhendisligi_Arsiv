@@ -4,6 +4,7 @@ import os
 import subprocess
 import time
 import sys
+import threading
 
 sys.path.append(
     os.path.join(os.path.dirname(__file__), "..", "readme_guncelleme_arayuzu_python")
@@ -31,6 +32,14 @@ def check_for_updates(key, url):
     return False
 
 
+def read_stream(stream, callback):
+    while True:
+        line = stream.readline()
+        if not line:
+            break
+        callback(line)
+
+
 def execute_command(command):
     custom_write(f"Komut çalıştırılıyor: {command}\n")
     try:
@@ -41,34 +50,31 @@ def execute_command(command):
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
-            bufsize=1,
-            universal_newlines=True,
         ) as process:
-            # Standart çıktıyı oku
-            for line in process.stdout:
-                custom_write(line + "\n")
-            # Hata çıktısını oku
-            error_output = process.stderr.read()
-            if error_output:
-                custom_write_error(error_output + "\n")
+            # Standart çıktı ve hata çıktısını okuyacak thread'leri oluştur
+            stdout_thread = threading.Thread(
+                target=read_stream, args=(process.stdout, custom_write)
+            )
+            stderr_thread = threading.Thread(
+                target=read_stream, args=(process.stderr, custom_write_error)
+            )
+
+            # Thread'leri başlat
+            stdout_thread.start()
+            stderr_thread.start()
+
+            # Thread'lerin işlemi tamamlamasını bekle
+            stdout_thread.join()
+            stderr_thread.join()
+
             # İşlem sonucunu kontrol et
-            process.wait(timeout=20)
+            process.wait()
             if process.returncode != 0:
                 raise subprocess.CalledProcessError(process.returncode, command)
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır
         custom_write_error(f"Komut hatası: {e}\n")
         return False
-    except subprocess.TimeoutExpired:
-        # Zaman aşımı durumunda işlemi sonlandır
-        process.kill()
-        # Zaman aşımına uğrayan işlemin çıktısını oku
-        outs, errs = process.communicate()
-        custom_write("Komut zaman aşımına uğradı, işlem güvenli bir şekilde sonlandırıldı.\n")
-        if outs:
-            custom_write(outs)
-        if errs:
-            custom_write_error(errs)
     return True
 
 
@@ -78,9 +84,7 @@ def update_repository(deneme_sayisi=0):
     custom_write("Güncellemeler uygulanıyor...\n")
     readme_guncelle_komutu = f"python3 {README_OLUSTUR_PY}"
     # google form güncelle komutu
-    google_form_guncelle_komutu = (
-        f"python3 {HOCA_ICERIKLERI_GUNCELLE_PY} && python3 {DERS_ICERIKLERI_GUNCELLE_PY}"
-    )
+    google_form_guncelle_komutu = f"python3 {HOCA_ICERIKLERI_GUNCELLE_PY} && python3 {DERS_ICERIKLERI_GUNCELLE_PY}"
     # Git ve Python komutlarını sırayla çalıştır
     try:
         repo_yolu = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
@@ -106,26 +110,22 @@ def update_repository(deneme_sayisi=0):
         os.chdir(original_directory)
         if not execute_command(google_form_guncelle_komutu):
             custom_write_error(
-                "Google form içerikleri güncellenirken hata oluştu, script durduruluyor."
+                "Google form içerikleri güncellenirken hata oluştu, script durduruluyor.\n"
             )
             return
         os.chdir(BIR_UST_DIZIN)
         os.system(readme_guncelle_komutu)
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"):
-            custom_write_error(
-                "Git add işlemi başarısız..."
-            )
+            custom_write_error("Git add işlemi başarısız...\n")
             return
         if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'):
             custom_write_error(
-                "Git commit işlemi başarısız, muhtemelen herhangi bir dosya değişmedi..."
+                "Git commit işlemi başarısız, muhtemelen herhangi bir dosya değişmedi...\n"
             )
             return
         if not execute_command("git push"):
-            custom_write_error(
-                "Git push işlemi başarısız..."
-            )
+            custom_write_error("Git push işlemi başarısız...\n")
             return
         custom_write(f"{deneme_sayisi}. güncelleme başarıyla uygulandı.\n")
         time.sleep(10)
