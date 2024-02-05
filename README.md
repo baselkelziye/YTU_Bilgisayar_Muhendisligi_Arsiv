@@ -15,9 +15,9 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 </p>
 
 <details>
-<summary><b>📚 İçindekiler</b></summary>
+<summary><b>🗂 İçindekiler</b></summary>
 
-## 📚 İçindekiler
+## 🗂 İçindekiler
 
 - 🔗 [Repo Kullanımı](#-repo-kullanımı)
 - 🔗 [Dersler](#-dersler)
@@ -97,12 +97,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 </details>
 
 <details>
-<summary><b>📚 Dersler</b></summary>
+<summary><b>📖 Dersler</b></summary>
 
 
 
 
-## 📚 Dersler
+## 📖 Dersler
 📄 Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.
 
 
@@ -1819,10 +1819,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 </details>
 
 <details>
-<summary><b>✍️ Yazarın Notları</b></summary>
+<summary><b>🖋 Yazarın Notları</b></summary>
 
 
-## ✍️ Yazarın Notları
+## 🖋 Yazarın Notları
 
 - 📝 Bölüm dersleri özelinde neredeyse her dersin çıkmış soruları var ve hocalar sınavlarda ya bu sorulara benzer ya da aynı sorular soruyorlar. Benzer şekilde ödev için konuşmak gerekirse ödevlerin büyük bir kısmını ya interneteki kaynaklardan, ya da geçmiş yıllardan alıp biraz değiştirerek ya da değiştirmeden hazırlıyorlar. Labları da geçen senelerin lablarıyla benzer ya da aynı hazırlıyorlar. Bu sebeplerden dolayı eski kaynaklardan faydalanmak çok önemli.
 - 📝 Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
@@ -1831,9 +1831,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 </details>
 
 <details>
-<summary><b>📚 Hoca Kısaltmaları</b></summary>
+<summary><b>🆎 Hoca Kısaltmaları</b></summary>
 
-<h2 align='center'>📚 Hoca Kısaltmaları</h2>
+<h2 align='center'>🆎 Hoca Kısaltmaları</h2>
 
 <p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
 <p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
