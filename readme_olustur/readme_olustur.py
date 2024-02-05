@@ -142,6 +142,7 @@ def hocalari_readme_ye_ekle(bilgiler):
         return
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         if BOLUM_ADI in bilgiler:
+            f.write(f"<details>\n<summary><b>🎓 {bilgiler[BOLUM_ADI]}</b></summary>\n\n")
             f.write(f"\n\n\n## 🎓 {bilgiler[BOLUM_ADI]}\n")
         else:
             custom_write_error("Hocalar Bölüm adı bulunamadı.\n")
@@ -263,6 +264,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                 )
             if hoca.get(HOCA_AKTIF_GOREVDE_MI, True) == False:
                 f.write(f"- ℹ️ {VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI}.\n")
+        f.write("</details>\n\n")
 
 
 def donem_siralamasi(donem_key):
@@ -314,7 +316,8 @@ def dersleri_readme_ye_ekle(dersler):
         0 if EN_POPULER_HOCA not in hocalar else hocalar[EN_POPULER_HOCA][OY_SAYISI]
     )
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']} \n")
+        f.write(f"<details>\n<summary><b>📚 {dersler['bolum_adi']}</b></summary>\n\n")
+        f.write(f"\n\n\n## 📚 {dersler['bolum_adi']}\n")
         f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
 
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
@@ -383,7 +386,7 @@ def dersleri_readme_ye_ekle(dersler):
                 if GUNCEL_MI in ders and not ders[GUNCEL_MI]:
                     f.write("  - ℹ️ Dersin içeriği güncel değil\n")
                     f.write(f"    - {dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI]}\n")
-
+        f.write("</details>\n\n")
 
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
@@ -396,10 +399,11 @@ def readme_ye_giris_ekle(giris_bilgileri):
         f.write(
             '<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>\n</p>\n\n'
         )
-        f.write("## 📌 İçindekiler\n\n")  # Sabitleme pimi içindekileri temsil eder
+        f.write("<details>\n<summary><b>📚 İçindekiler</b></summary>\n\n")
+        f.write("## 📚 İçindekiler\n\n")
         for item in giris_bilgileri["icindekiler"]:
             f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
-
+        f.write("</details>\n\n")
 
 def readmeye_hocalar_icin_kisaltmalar_ekle(data):
     """
@@ -411,18 +415,20 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
             kisaltma = hoca_kisaltma_olustur(hoca[AD])
             kisaltmalar[kisaltma] = hoca[AD]
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
+        f.write(f"<details>\n<summary><b>📚 Hoca Kısaltmaları</b></summary>\n\n")
         f.write("<h2 align='center'>📚 Hoca Kısaltmaları</h2>\n\n")
         for kisaltma in sorted(kisaltmalar.keys()):
             ad = kisaltmalar[kisaltma]
             # Kısaltmayı kalın yap, emoji ile çevrele ve ad ile arasına tab benzeri boşluk ekle
             f.write(f"<p align='center'>🔹 <b>{kisaltma}</b> &emsp; {ad} 🔹</p>\n")
-
+        f.write("</details>\n\n")
 
 
 
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
+        f.write(f"<details>\n<summary><b>🛠 {repo_kullanimi_bilgileri[BASLIK]}</b></summary>\n\n")
         f.write(
             f"\n\n\n## 🛠 {repo_kullanimi_bilgileri[BASLIK]}\n\n"
         )  # Araç kutusu emojisi
@@ -441,11 +447,12 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
             )  # Ampul emojisi, fikir veya kavramı temsil eder
             for aciklama in kavram[ACIKLAMALAR]:
                 f.write(f"  - 📘 {aciklama}\n")  # Kitap emojisi, açıklamalar için
-
+        f.write("</details>\n\n")
 
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
+        f.write(f"<details>\n<summary><b>✍️ {yazar_notlari['baslik']}</b></summary>\n\n")
         f.write(
             f"\n## ✍️ {yazar_notlari['baslik']}\n\n"
         )  # Kalem emoji, yazarı temsil eder
@@ -453,7 +460,7 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
             f.write(
                 f"- 📝 {aciklama}\n"
             )  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
-
+        f.write("</details>\n\n")
 
 def readme_katkida_bulunanlar_ekle(veri):
     veri[KATKIDA_BULUNANLAR] = sorted(veri[KATKIDA_BULUNANLAR], 
@@ -463,6 +470,7 @@ def readme_katkida_bulunanlar_ekle(veri):
 
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         # Bölüm başlığını ortala
+        f.write(f"<details>\n<summary><b>🤝 {veri['bolum_adi']}</b></summary>\n\n")
         f.write(f"<h2 align='center'>🤝 {veri['bolum_adi']}</h2>\n\n")
         f.write(f"{veri[BOLUM_ACIKLAMASI]}\n\n")
         for katkida_bulunan in veri[KATKIDA_BULUNANLAR]:
@@ -480,7 +488,7 @@ def readme_katkida_bulunanlar_ekle(veri):
             if iletisim_bilgileri_html:
                 f.write(f"<p align='center'>{iletisim_bilgileri_html}</p>\n")
             f.write("\n")
-
+        f.write("</details>\n\n")
 
 def readmeye_yildiz_gecmisi_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
@@ -549,13 +557,13 @@ if hocalar is not None:
     readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
 else:
     custom_write_error("Hoca kısaltmaları bulunamadı...\n")
-custom_write("Yıldız geçmişi README'ye ekleniyor...\n")
-readmeye_yildiz_gecmisi_ekle()
 if katkida_bulunanlar is not None:
     custom_write("Katkıda bulunanlar README'ye ekleniyor...\n")
     readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
 else:
     custom_write_error("Katkıda bulunanlar bulunamadı...\n")
+custom_write("Yıldız geçmişi README'ye ekleniyor...\n")
+readmeye_yildiz_gecmisi_ekle()
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
