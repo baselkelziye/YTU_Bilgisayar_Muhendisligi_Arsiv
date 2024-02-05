@@ -14,7 +14,10 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 <img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>
 </p>
 
-## 📌 İçindekiler
+<details>
+<summary><b>📚 İçindekiler</b></summary>
+
+## 📚 İçindekiler
 
 - 🔗 [Repo Kullanımı](#-repo-kullanımı)
 - 🔗 [Dersler](#-dersler)
@@ -25,6 +28,11 @@ Bu repository, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümü
 - 🔗 [Katkıda Bulunanlar](#-katkıda-bulunanlar)
 - 🔗 [Dökümanlara Katkı Linki](https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ)
 - 🔗 [Yıldız Geçmişi](#yıldız-geçmişi)
+</details>
+
+<details>
+<summary><b>🛠 Repo Kullanımı</b></summary>
+
 
 
 
@@ -86,10 +94,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
   - 📘 İkinci vize her derste olmaz. 2. Vizesi olmayan dersin 2. Vize haftasında konusu (hoca aksini belirmedikçe) işlenir.
   - 📘 Hocalar genelde önceki senelerdeki sorulara benzer/aynı sorular sorarlar.
+</details>
+
+<details>
+<summary><b>📚 Dersler</b></summary>
 
 
 
-## 📚 Dersler 
+
+## 📚 Dersler
 📄 Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.
 
 
@@ -1079,6 +1092,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
+</details>
+
+<details>
+<summary><b>🎓 Hocalar</b></summary>
+
 
 
 
@@ -1798,6 +1816,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
   - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+</details>
+
+<details>
+<summary><b>✍️ Yazarın Notları</b></summary>
+
 
 ## ✍️ Yazarın Notları
 
@@ -1805,6 +1828,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📝 Kendi özelinde zor olan ders sayısı 1-2'yi geçmez. Dersi zorlaştıran hoca faktörüdür. Dersi eğlenceli yapan yine hocadır. Bundan dolayı ders seçiminde ders içeriğine bakarken, dersi veren hocaya da bakmanız çok önemlidir.
 - 📝 Mesleki seçmeli derslerin çeşitliliği bolognada gördüğünüz kadar bol değil. Genelde hep aynı mesleki seçimlik dersler açılır. Her sene 1-2 tane farklı mesleki seçmeli açılır.
 - 📝 Dersi iyi anlatıp aynı zamanda geçmekte de sizi zorlamayacak hocalar BD, MFA
+</details>
+
+<details>
+<summary><b>📚 Hoca Kısaltmaları</b></summary>
+
 <h2 align='center'>📚 Hoca Kısaltmaları</h2>
 
 <p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
@@ -1848,9 +1876,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
 <p align='center'>🔹 <b>ÖMTK</b> &emsp; Arş. Grv. Ömer Mutlu Türk KAYA 🔹</p>
 <p align='center'>🔹 <b>İD</b> &emsp; Arş. Grv. İdris DEMİR 🔹</p>
+</details>
 
-## Yıldız Geçmişi
-[![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
+<details>
+<summary><b>🤝 Katkıda Bulunanlar</b></summary>
+
 <h2 align='center'>🤝 Katkıda Bulunanlar</h2>
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya ekleyebilirsiniz, bizimle iletişime geçebilirsiniz. Ya da merge request gönderebilirsiniz. Burada isminizin yer almasını isterseniz bölüm dersleriyle alakalı, elle tutulur bir katkı yapmanız beklenir.
@@ -1888,3 +1918,8 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>💫 <b><i>Rayene Bech</i></b> 💫</h5>
 <p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/rayenebech99/'><b>LinkedIn Profili</b></a></p>
 
+</details>
+
+
+## Yıldız Geçmişi
+[![Star History Chart](https://api.star-history.com/svg?repos=baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&type=Date)](https://star-history.com/#baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv&Date)
