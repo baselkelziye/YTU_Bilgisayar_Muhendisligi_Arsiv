@@ -1884,6 +1884,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <h2 align='center'>🤝 Katkıda Bulunanlar</h2>
 
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya ekleyebilirsiniz, bizimle iletişime geçebilirsiniz. Ya da merge request gönderebilirsiniz. Burada isminizin yer almasını isterseniz bölüm dersleriyle alakalı, elle tutulur bir katkı yapmanız beklenir.
+📝 **README.md dosyaları python3 scriptiyle oluşturulmaktadır. Bundan dolayı README.md hatalarını düzeltmeniz bir şey ifade etmez. Onun yerine bize bildirmeniz yeterli.**
 
 <h3 align='center'>👑 <b><i>Basel Kelziye</i></b> 👑</h3>
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
