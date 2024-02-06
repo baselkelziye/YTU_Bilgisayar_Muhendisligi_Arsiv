@@ -68,6 +68,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
 
             for idx, not_ in enumerate(self.data[ICINDEKILER]):
                 btn_layout = QHBoxLayout()
+                up_down_btn_layout = QVBoxLayout()
                 btn = QPushButton(
                     f"İçindekiler {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget
                 )  # İlk 30 karakteri göster
@@ -80,13 +81,14 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 upBtn = QPushButton("Yukarı çıkar", self.scrollWidget)
                 upBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i-1))
                 upBtn.setStyleSheet(YUKARI_BUTON_STILI)
-                btn_layout.addWidget(upBtn)
+                up_down_btn_layout.addWidget(upBtn)
 
                 # Aşağı Taşı butonu
                 downBtn = QPushButton("Aşağı indir", self.scrollWidget)
                 downBtn.setStyleSheet(ASAGI_BUTON_STILI)
                 downBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i+1))
-                btn_layout.addWidget(downBtn)
+                up_down_btn_layout.addWidget(downBtn)
+                btn_layout.addLayout(up_down_btn_layout)
                 self.notlarLayout.addLayout(btn_layout)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
@@ -211,15 +213,18 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
-    def layoutGorunumDegistir(self,layout , gorunum):
+    def layoutGorunumDegistir(self, layout, gorunum):
         for i in range(layout.count()):
             item = layout.itemAt(i)
-            widget = item.widget()
-            if widget is not None:  # Eğer item bir widget ise
+            if item.widget() is not None:  # Eğer item bir widget ise
+                widget = item.widget()
                 if gorunum:
                     widget.show()
                 else:
                     widget.hide()
+            elif item.layout() is not None:  # Eğer item bir alt layout ise
+                self.layoutGorunumDegistir(item.layout(), gorunum)  # Fonksiyon kendini rekürsif olarak çağırır
+
     def baslikDuzenle(self):
         self.aciklamaDuzenle(BASLIK)
 
