@@ -1886,40 +1886,40 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya ekleyebilirsiniz, bizimle iletişime geçebilirsiniz. Ya da merge request gönderebilirsiniz. Burada isminizin yer almasını isterseniz bölüm dersleriyle alakalı, elle tutulur bir katkı yapmanız beklenir.
 📝 **README.md dosyaları python3 scriptiyle oluşturulmaktadır. Bundan dolayı README.md hatalarını düzeltmeniz bir şey ifade etmez. Onun yerine bize bildirmeniz yeterli.**
 
-<h3 align='center'>👑 <b><i>Basel Kelziye</i></b> 👑</h3>
+<h1 align='center'>👑 <b><i>Basel Kelziye</i></b> 👑</h1>
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
 
-<h4 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h4>
+<h2 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a></p>
 
-<h4 align='center'>🌟 <b><i>Muhammed Ali Şen</i></b> 🌟</h4>
+<h2 align='center'>🌟 <b><i>Muhammed Ali Şen</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
 
-<h4 align='center'>🌟 <b><i>Muhammed Nasır Sabır</i></b> 🌟</h4>
+<h2 align='center'>🌟 <b><i>Muhammed Nasır Sabır</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/nasirsabir'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/nasirsabir'><b>LinkedIn Profili</b></a></p>
 
-<h4 align='center'>🌟 <b><i>Sait Yalçın</i></b> 🌟</h4>
+<h2 align='center'>🌟 <b><i>Sait Yalçın</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Ali Albayrak</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Ali Albayrak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Asude Merve Ekiz</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Asude Merve Ekiz</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-eren-sekkeli/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Muhammed Kayra Bulut</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Muhammed Kayra Bulut</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Rameş Aliyev</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Rameş Aliyev</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramesaliyev/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>💫 <b><i>Rayene Bech</i></b> 💫</h5>
+<h3 align='center'>💫 <b><i>Rayene Bech</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/rayenebech99/'><b>LinkedIn Profili</b></a></p>
 
 </details>
