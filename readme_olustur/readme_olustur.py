@@ -478,7 +478,7 @@ def readme_katkida_bulunanlar_ekle(veri):
             oran_index = KATKIDA_BULUNMA_ORANI_DIZI.index(oran)
             emoji = EMOJILER[oran_index]  # Katkı oranına göre emoji seçimi
             # Başlık seviyesini belirle
-            header_size = min(len(KATKIDA_BULUNMA_ORANI_DIZI) + oran_index, 6)  # En fazla <h6> kullanılabilir
+            header_size = min(oran_index + 1 , 6)  # En fazla <h6> kullanılabilir
             header_tag = f"h{header_size}"
             # Katkıda bulunanların isimlerini belirlenen başlık etiketi ile yaz
             f.write(f"<{header_tag} align='center'>{emoji} <b><i>{katkida_bulunan.get(AD,'')}</i></b> {emoji}</{header_tag}>\n")
