@@ -2,8 +2,9 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Veri yapıları ve Bilisayar Organizasyonu dersleri bölümle alakalı dersler.
+- 💡 Ödevleri yapınca geçilmeyecek ders yok.
+- 💡 Sistem Analizi ve Tasarımı dersinin projesi için kesinlikle düzgün grup arkadaşları seçmeniz lazım. Yoksa proje zehir olur.
 ## 📚 Dönemin Zorunlu Dersleri
 
 

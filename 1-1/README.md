@@ -2,8 +2,8 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Bu dönemdeki bölümle alakalı tek ders Bilgisayar Bilimlerine Giriş, onun dışındaki dersler lise dersleri gibi.
+- 💡 Bilgisayar Bilimlerine Giriş'in ödevlerine önem verseniz iyi olur.
 ## 📚 Dönemin Zorunlu Dersleri
 
 

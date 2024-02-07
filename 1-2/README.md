@@ -2,8 +2,8 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Bölümle alakalı dersler Sayısal Analiz ve Yapısal Programlama.
+- 💡 Devre Teorisi Allah'ın belası bir ders.
 ## 📚 Dönemin Zorunlu Dersleri
 
 
