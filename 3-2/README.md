@@ -2,8 +2,9 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Yapay zeka güzel ders, MFA iyi anlatır.
+- 💡 Yazılım Mühendisliği, Sistem Analizi ve Tasarımı gibi bir ders. Ezber. Proje grubunu erken belirlemek önemli.
+- 💡 Veri İletişimi ve Bilgisayar Ağları ezber bir ders. Gerekli belki ama sınavı full ezber.
 ## 📚 Dönemin Zorunlu Dersleri
 
 
