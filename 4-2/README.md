@@ -2,8 +2,7 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Okul gerçekten bitti.
 ## 📚 Dönemin Zorunlu Dersleri
 
 
