@@ -2,8 +2,9 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Algoritma Analizi ve Mikroişlemci Sistemleri ve Assembly Dili dersleri ödevleriyle zorlayan dersler. Ödevleri yapmadan da geçmek zor.
+- 💡 Veritabanı Yönetimi dersi basit ve önemli bir ders. Labları ve projeyi yapmak lazım.
+- 💡 İşletim Sistemleri normalde gerekli bir ders ama çok kötü anlatılıyor. Aynı zamanda sınav soruları ezbere dayalı sorular.
 ## 📚 Dönemin Zorunlu Dersleri
 
 

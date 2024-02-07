@@ -2,8 +2,8 @@
 
 ## 📝 Genel Tavsiyeler
 
-- 💡 Düzenli ders çalışmayı ihmal etmeyin
-- 💡 Lab uygulamalarına katılın
+- 💡 Ayrık Matematik, Lojik Devreler ve Nesneye Yönelik Programlama dersleri güzel dersler.
+- 💡 İstatistik Allah'ın belası bir ders.
 ## 📚 Dönemin Zorunlu Dersleri
 
 
