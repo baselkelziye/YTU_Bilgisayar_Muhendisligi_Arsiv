@@ -1316,6 +1316,29 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
+#### 👨‍🏫 Doç. Dr. Hamza Osman İlhan 
+- 🚪 **Ofis:** EEF-D124
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
+  - 👤 **_Nanadaime_**: Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et.
+  - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [Lojik Devreler](#-lojik-devreler)
+  - 📖 [Elektronik Devreler](#-elektronik-devreler)
+  - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
+  - 📖 [Devre Teorisi ve Elektronik Devreler](#-devre-teorisi-ve-elektronik-devreler)
+  - 📖 [İleri Ağ Programlama](#-i̇leri-ağ-programlama)
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
 #### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
@@ -1474,29 +1497,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
   - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Dr. Hamza Osman İlhan 
-- 🚪 **Ofis:** EEF-D124
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/hoilhan/](http://avesis.yildiz.edu.tr/hoilhan/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar.
-  - 👤 **_Nanadaime_**: Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et.
-  - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 [Lojik Devreler](#-lojik-devreler)
-  - 📖 [Elektronik Devreler](#-elektronik-devreler)
-  - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
-  - 📖 [Devre Teorisi ve Elektronik Devreler](#-devre-teorisi-ve-elektronik-devreler)
-  - 📖 [İleri Ağ Programlama](#-i̇leri-ağ-programlama)
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1851,7 +1851,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>GB</b> &emsp; Doç. Dr. Gökhan Bilgin 🔹</p>
 <p align='center'>🔹 <b>HE</b> &emsp; Arş. Grv. Hatice ERDİRİK 🔹</p>
 <p align='center'>🔹 <b>HHB</b> &emsp; Prof. Dr. Hasan Hüseyin Balık 🔹</p>
-<p align='center'>🔹 <b>HOİ</b> &emsp; Dr. Hamza Osman İlhan 🔹</p>
+<p align='center'>🔹 <b>HOİ</b> &emsp; Doç. Dr. Hamza Osman İlhan 🔹</p>
 <p align='center'>🔹 <b>HTK</b> &emsp; Arş. Grv. Himmet Toprak KESGİN 🔹</p>
 <p align='center'>🔹 <b>HİT</b> &emsp; Dr. H. İrem Türkmen 🔹</p>
 <p align='center'>🔹 <b>KA</b> &emsp; Arş. Grv. Kübra ADALI 🔹</p>
