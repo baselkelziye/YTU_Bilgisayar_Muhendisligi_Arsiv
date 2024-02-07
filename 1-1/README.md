@@ -33,6 +33,7 @@
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨
 - 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz) ✨
 - 📄 [Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz) ✨
+- 📄 [Efe'nin efsane notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Bilgisayar%20Bilimlerine%20Giri%C5%9F/slaytlar_notlar/2022/efe'nin%20efsane%20notlar%C4%B1) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
