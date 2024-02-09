@@ -293,8 +293,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
@@ -651,6 +651,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
+    - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -785,8 +786,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Çok%20Displinli%20Tasarım%20Projesi)
 
 ### 🗓 4. Yıl - Bahar
@@ -836,9 +837,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Bilgiye Erişim Ve Arama Motorları 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgiye%20Erişim%20Ve%20Arama%20Motorları)
@@ -847,9 +848,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Bilişim Sistemleri Güvenliği 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilişim%20Sistemleri%20Güvenliği)
@@ -858,9 +859,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Biyoenformatiğe Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [NA](#-prof-dr-nizamettin-aydın)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
@@ -1546,17 +1547,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Traktör Reis_**: İşini sever. Sakindir.
   - 👤 **_astro_**: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
   - 👤 **_Ufouser_**: Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda
+  - 👤 **_Yıldızlı_**: Yunus Emre hocanın en öne çıkan özelliği güleç yüzlülüğü ve derslerdeki ilgi alakası. Dersteyken asla gerilme veya sıkılma olmuyor. Sorular sorulara gerçekten değer vererek cevaplamaya ve anladığınızdan emin olayı önemsiyor. İyi hoca.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-  - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
