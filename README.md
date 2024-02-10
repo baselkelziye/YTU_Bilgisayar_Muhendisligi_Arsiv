@@ -87,8 +87,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
-  - 📘 Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir.
+  - 📘 Ara tatilde yapılabilir ama büte kalmamış olmak ve cumartesi dahil staj yapmak gerekir. Çünkü 5 hafta ara tatil var ve stajların her biri 30 gün. 6x5=30. İstenirse bir stajın bir kısmı (10 ya da 20 gün) da yapılabilir. Mesela 4 hafta, haftada 5 gün staj yapılabilir. Ama bu sefer kalan 10 gün için tekrar staj yeri bulmak ve evrak işleriyle uğraşmak gerekir.
   - 📘 **Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor.** Mesela dönem içi sadece 2 gününüz boş ve bundan dolayı staj yapamıyorsunuz. O zaman sigortalı ve bilgisayar mühendisliğiyle ilgili bir şirkette o günler çalışabilirsiniz. Mesela **15 hafta** boyunca haftada **2 gün** çalıştınız ve sigortanız yattı diyelim, o zaman 30 iş günü çalışmış olursunuz ve bunu normal staj süreciyle uğraşmadan staja saydırabilirsiniz. Yok **staj defteriymiş** yok **cd**'ymiş uğraşmazsınız.
+  - 📘 Staj parça parça yapılabilir. Bu parçalar 10'un katı olmalıdır. Mesela 10 ya da 20 gün olarak yapılabilir. Tabi yine aynı gün sayısına (30 gün) tamamlamanız gerekir.
+  - 📘 Stajı ders seçer gibi seçmiyorsunuz. Yani mesela yazın bir staj yaptınız ve belgeleri teslim ettiniz. Stajınız kabul edildiği anda **obs'ye** işlenir. Dönem içinde ders olarak almıyorsunuz.
+  - 📘 **Genel** staj ve **mesleki** staj arasında pratikte hiçbir fark yoktur. İkisinde de bir _X_ firmasında , evrak işlerini hallederek , 30 gün çalışmış olmak gerekir.
 - 💡 **Vize**
   - 📘 İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
   - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
