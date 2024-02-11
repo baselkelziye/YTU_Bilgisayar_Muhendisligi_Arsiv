@@ -16,4 +16,5 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link) ✨
+- 📄 [Esma'nın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-1/Lineer%20Cebir/slaytlar_notlar/2020/esma%20ekmek%C3%A7i%20notlar%C4%B1.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
