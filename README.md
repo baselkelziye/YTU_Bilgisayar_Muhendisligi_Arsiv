@@ -1920,6 +1920,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Esma Nur Ekmekci</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-eren-sekkeli/'><b>LinkedIn Profili</b></a></p>
 
