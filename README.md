@@ -1187,6 +1187,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Madmax_**: Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız.
   - 👤 **_Violancello_**: Bilim aşkıyla yanıp tutuşan mükemmel bir hoca. Yapay zeka başta olmak üzere verdiği derslerde işin bilimsel mantığını öğretir, sınavları da kalitelidir boş detaylara takılmaz öğrencilere işlem ameleliği yaptırmaz. Bazı hocalar öğrenciye hayatı zorlaştırmakla uğraştırken Fatih hocam 2024'ün ilk haftasında 3 makale yayınladı bile :)
   - 👤 **_Ufouser_**: ders anlatımı iyidir.Sınıavları standarttır çalısan yuksek not alabilir ama çalışmayana derse girmeyene zordur.samimi ve cana yakın bir hocadır.yoklamayı cok takmaz.
+  - 👤 **_Buraya Isim Mi Yazılıyor_**: Diğer yıldız mezunu tayfada olduğu gibi kaliteli bir hocamız. derste kod yazmama gibi bir huyu olsa da teorik olarak ucurur(yapay zeka dersi özellikle kafa acıcı). Bilgisayar ve bitirme projeleri için projeden bağımsız tercih edilebilir cünkü çok anlayışlı birisi. Ders içeriklerini paylaştığı kendi sitesi var. Ödevleri ve sınavları belli bir sisteme oturtmuş işliyor.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
