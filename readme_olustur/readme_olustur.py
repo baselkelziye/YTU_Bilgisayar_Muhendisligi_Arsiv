@@ -116,14 +116,21 @@ def hoca_siralama_anahtari(hoca):
     return (unvanlarin_onceligi.get(unvan, 4), hoca[AD])  # Unvan önceliği ve tam ad
 
 
-# JSON dosyasından hocaların bilgilerini okuyan fonksiyon
+# JSON dosyasını okuyan fonksiyon
 def json_oku(json_dosyasi):
     try:
         with open(json_dosyasi, "r", encoding="utf-8") as f:
             return json.load(f)
     except FileNotFoundError:
         return None
-
+# txt dosyasını okuyan fonksiyon
+def txt_oku(txt_dosyasi):
+    try:
+        with open(txt_dosyasi, 'r', encoding="utf-8") as dosya:
+            # Dosyanın tamamını oku
+            return dosya.read()
+    except FileNotFoundError:
+        return None
 
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     if puan % 10 != 0:
@@ -493,7 +500,13 @@ def readme_katkida_bulunanlar_ekle(veri):
 def readmeye_yildiz_gecmisi_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(YILDIZ_GECMISI)
-
+def readmeye_maas_istatistikleri_ekle(veri):
+    MAAS_BASLIK = "Bölüm Mezunları Maaş İstatistikleri"
+    with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
+        f.write(f"<details>\n<summary><b>💰 {MAAS_BASLIK}</b></summary>\n\n")
+        f.write(f"<h2 align='center'>💰 {MAAS_BASLIK}</h2>\n\n")
+        f.write(veri)
+        f.write("\n</details>\n\n")
 
 def sıralama_anahtarı(ders):
     yıl_sıralaması = [1, 2, 3, 4, 0]
@@ -529,6 +542,7 @@ dersler[DERSLER] = sorted(dersler[DERSLER], key=sıralama_anahtarı)
 hocalar = json_oku(HOCALAR_JSON_NAME)
 giris_bilgileri = json_oku(GIRIS_JSON_NAME)
 katkida_bulunanlar = json_oku(KATKIDA_BULUNANLAR_JSON_NAME)
+maas_istatistikleri = txt_oku(MAAS_ISTATISTIKLERI_TXT_NAME)
 if giris_bilgileri is not None:
     custom_write("Giriş bilgileri README'ye ekleniyor...\n")
     readme_ye_giris_ekle(giris_bilgileri)
@@ -539,6 +553,9 @@ if repo_kullanimi_bilgileri is not None:
     readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
 else:
     custom_write_error("Repo kullanımı bilgileri bulunamadı...\n")
+if maas_istatistikleri is not None:
+    custom_write("Maaş istatistikleri README'ye ekleniyor...\n")
+    readmeye_maas_istatistikleri_ekle(maas_istatistikleri)
 if dersler is not None:
     custom_write("Ders bilgileri README'ye ekleniyor...\n")
     dersleri_readme_ye_ekle(dersler)
