@@ -75,3 +75,8 @@ print(field_avg.to_markdown())
 # Şimdi Markdown formatında sonuçları yazdıralım
 print("\n\n\n#### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları\n")
 print(company_avg.to_markdown())
+# Ankete katılan kişi sayısını hesapla
+katilan_kisi_sayisi = len(df)
+
+# Katılan kişi sayısını yazdır
+print(f"ℹ️  Anket sonuçları: {katilan_kisi_sayisi} kişi üzerinden hesaplanmıştır.")
