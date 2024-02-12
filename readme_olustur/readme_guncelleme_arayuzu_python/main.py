@@ -19,7 +19,7 @@ from donem_ekle_guncelle_window import DonemEkleGuncelleWindow
 from git_islemleri_window import GitIslemleriWindow
 from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
-
+from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 
 class App(QWidget):
     def __init__(self):
@@ -39,6 +39,7 @@ class App(QWidget):
         self.buttons = [
             QPushButton("Giriş Güncelle"),
             QPushButton("Repo Kullanımı Düzenle"),
+            QPushButton("Maaş İstatistikleri Düzenle"),
             QPushButton("Ders Ekle/Güncelle"),
             QPushButton("Hoca Ekle/Güncelle"),
             QPushButton("Yazarın Notları Ekle/Güncelle"),
@@ -50,6 +51,7 @@ class App(QWidget):
         colors = [
             "#C0392B",
             "#27AE60",
+            "#007BFF",
             "#2980B9",
             "#8E44AD",
             "#F39C12",
@@ -66,12 +68,13 @@ class App(QWidget):
         # Her butona tıklama işleyicisi ekle
         self.buttons[0].clicked.connect(self.acGirisEkleGuncelle)
         self.buttons[1].clicked.connect(self.repoKullanimiDuzenle)
-        self.buttons[2].clicked.connect(self.acDersEkleGuncelle)
-        self.buttons[3].clicked.connect(self.acHocaEkleGuncelle)
-        self.buttons[4].clicked.connect(self.acYazarinNotlari)
-        self.buttons[5].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
-        self.buttons[6].clicked.connect(self.acDonemEkleGuncelle)
-        self.buttons[7].clicked.connect(self.gitIslemleri)
+        self.buttons[2].clicked.connect(self.maasIstatistikleriDuzenle)
+        self.buttons[3].clicked.connect(self.acDersEkleGuncelle)
+        self.buttons[4].clicked.connect(self.acHocaEkleGuncelle)
+        self.buttons[5].clicked.connect(self.acYazarinNotlari)
+        self.buttons[6].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
+        self.buttons[7].clicked.connect(self.acDonemEkleGuncelle)
+        self.buttons[8].clicked.connect(self.gitIslemleri)
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -85,7 +88,37 @@ class App(QWidget):
         # Dönem Ekle/Güncelle penceresini aç
         self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow(parent=self)
         self.donemEkleGuncelleWindow.show()
-
+    def maasIstatistikleriDuzenle(self):
+        if os.path.exists(MAAS_ISTATISTIKLERI_TXT_PATH):
+            with open(MAAS_ISTATISTIKLERI_TXT_PATH, 'r', encoding="utf-8") as dosya:
+                icerik = dosya.read()
+        else:
+            icerik = ""
+        yeni_icerik, ok = SatirAtlayanInputDialog.getMultiLineText(
+            self,
+            "Maaş İstatistikleri",
+            "Maaş İstatistikleri Düzenleme",
+            icerik,width=900,height=700
+            )
+        if ok and icerik != yeni_icerik:
+            cevap = QMessageBox.question(
+                self,
+                "Onay",
+                "Maaş İstatistiklerini güncellemek istediğinize emin misiniz?",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+                QMessageBox.StandardButton.No,
+            )
+            if cevap == QMessageBox.StandardButton.Yes:
+                # Yeni içeriği dosyaya yaz
+                with open(MAAS_ISTATISTIKLERI_TXT_PATH, 'w', encoding="utf-8") as dosya:
+                    dosya.write(yeni_icerik)
+                QMessageBox.information(
+                    self, "Başarılı", "Maaş İstatistikleri güncellendi."
+                )
+            else:
+                QMessageBox.information(
+                    self, "İptal", "Maaş İstatistikleri güncellenmedi."
+                )
     def repoKullanimiDuzenle(self):
         self.repoKullanimiGuncelleWindow = RepoKullanimiDialog(parent=self)
         self.repoKullanimiGuncelleWindow.show()

@@ -352,7 +352,7 @@ class DersEkleGuncelleWindow(QDialog):
 
 class KaynakVeOneriDuzenleyici(QDialog):
     def __init__(self, ders, tur, parent):
-        super().__init__()
+        super().__init__(parent)
         self.ders = ders
         self.setModal(True)
         self.is_programmatic_close = False
@@ -576,7 +576,7 @@ class YeniElemanEklemeDialog(QDialog):
         parent=None,
         ders=None,
     ):
-        super().__init__()
+        super().__init__(parent)
         self.tur = tur
         self.setModal(True)
         self.is_programmatic_close = False

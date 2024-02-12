@@ -210,7 +210,7 @@ class YazarinNotlariWindow(QDialog):
 
 class NotDuzenleWindow(QDialog):
     def __init__(self, idx, data, parent):
-        super().__init__()
+        super().__init__(parent)
         self.is_programmatic_close = False
         self.idx = idx
         self.data = data
