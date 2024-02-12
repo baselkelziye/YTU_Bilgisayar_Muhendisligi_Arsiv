@@ -112,7 +112,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
 |----------------------------------------|----------------------------------------|----------------------|
-| 33065.79                     | 47500.00                     | 43.65    |
+| 31892.86                     | 45833.33                     | 43.71    |
 
 
 
@@ -121,10 +121,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Tecrübe Süresi   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
 |:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
-| 0 - 6 ay         |                           34375   |                           53625   |                56      |
-| 6 ay - 1 yıl     |                           31300   |                           41100   |                31.3099 |
-| 1 yıl - 2 yıl    |                           35472.2 |                           50722.2 |                42.9914 |
-| 2 yıl - 4 yıl    |                           15000   |                           26000   |                73.3333 |
+| 0 - 6 ay         |                             30000 |                             47400 |                58      |
+| 6 ay - 1 yıl     |                             31300 |                             41100 |                31.3099 |
+| 1 yıl - 2 yıl    |                             34825 |                             49400 |                41.8521 |
+| 2 yıl - 4 yıl    |                             15000 |                             26000 |                73.3333 |
 
 
 
@@ -132,14 +132,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Pozisyon Alanı         |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
 |:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
-| Backend Geliştirici    |                           38125   |                           52125   |                36.7213 |
-| Full Stack Geliştirici |                           31892.9 |                           49000   |                53.6394 |
-| Gömülü                 |                           37000   |                           52000   |                40.5405 |
-| Kriptoloji             |                           40000   |                           40000   |                 0      |
-| Mobil Geliştirici      |                           38000   |                           55000   |                44.7368 |
-| Oyun Geliştirici       |                           50000   |                           57500   |                15      |
-| Veri Bilimci           |                           28000   |                           48000   |                71.4286 |
-| Yapay Zeka             |                           19833.3 |                           32833.3 |                65.5462 |
+| Backend Geliştirici    |                           33000   |                             46200 |                40      |
+| Full Stack Geliştirici |                           31892.9 |                             49000 |                53.6394 |
+| Gömülü                 |                           37000   |                             52000 |                40.5405 |
+| Kriptoloji             |                           40000   |                             40000 |                 0      |
+| Mobil Geliştirici      |                           38000   |                             55000 |                44.7368 |
+| Oyun Geliştirici       |                           50000   |                             57500 |                15      |
+| Veri Bilimci           |                           28000   |                             48000 |                71.4286 |
+| Yapay Zeka             |                           22125   |                             34000 |                53.6723 |
 
 
 
@@ -148,12 +148,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 | Şirket Adı              |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
 |:------------------------|----------------------------------:|----------------------------------:|-----------------------:|
 | Anadolu Hayat Emeklilik |                             36500 |                             61500 |                68.4932 |
-| Huawei                  |                             28500 |                             40500 |                42.1053 |
+| Huawei                  |                             28750 |                             39000 |                35.6522 |
 | Trendyol                |                             42500 |                             64500 |                51.7647 |
 | TÜBİTAK                 |                             41000 |                             45000 |                 9.7561 |
 | Yapı Kredi              |                             32500 |                             48000 |                47.6923 |
 
-ℹ️  Anket sonuçları: 19 kişi üzerinden hesaplanmıştır.
+ℹ️  Anket sonuçları: 21 kişi üzerinden hesaplanmıştır.
 </details>
 
 <details>
