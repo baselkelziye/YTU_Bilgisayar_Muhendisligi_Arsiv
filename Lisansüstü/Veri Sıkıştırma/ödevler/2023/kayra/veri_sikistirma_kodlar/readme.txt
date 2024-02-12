@@ -1,0 +1,1 @@
+resimler -> https://people.math.sc.edu/Burkardt/data/bmp/bmp.html
