@@ -79,4 +79,4 @@ print(company_avg.to_markdown())
 katilan_kisi_sayisi = len(df)
 
 # Katılan kişi sayısını yazdır
-print(f"ℹ️  Anket sonuçları: {katilan_kisi_sayisi} kişi üzerinden hesaplanmıştır.")
+print(f"\nℹ️  Anket sonuçları: {katilan_kisi_sayisi} kişi üzerinden hesaplanmıştır.")
