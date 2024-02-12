@@ -2,9 +2,9 @@ from PyQt6.QtWidgets import QPushButton, QVBoxLayout, QTextEdit, QDialog, QHBoxL
 from PyQt6.QtGui import QTextOption
 from degiskenler import *
 class SatirAtlayanInputDialog(QDialog):
-    def __init__(self, parent, title, label, text=""):
+    def __init__(self, parent, title, label, text="", width = 400, height=300):
         super().__init__(parent)
-
+        self.resize(width, height)  # Diyalog penceresinin boyutunu ayarla
         self.setWindowTitle(title)
         self.textEdit = QTextEdit(self)
         self.textEdit.setWordWrapMode(QTextOption.WrapMode.WordWrap)  # Otomatik satır kaydırma
@@ -34,8 +34,8 @@ class SatirAtlayanInputDialog(QDialog):
         return self.textEdit.toPlainText()
 
     @staticmethod
-    def getMultiLineText(parent, title, label, text=""):
-        dialog = SatirAtlayanInputDialog(parent, title, label, text)
+    def getMultiLineText(parent, title, label, text="", width=400, height=300):
+        dialog = SatirAtlayanInputDialog(parent, title, label, text, width, height)
         result = dialog.exec()  # PyQt6'da exec_() yerine exec() kullanılır.
         if result == QDialog.DialogCode.Accepted:
             return dialog.getText(), True
