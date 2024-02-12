@@ -388,8 +388,8 @@ class KavramDetayDialog(QDialog):
 
 
 class KavramDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
-        super().__init__()
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent = None):
+        super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
@@ -605,8 +605,8 @@ class KavramDialog(QDialog):
 
 
 class AciklamaDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
-        super().__init__()
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent = None):
+        super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
         self.setModal(True)
@@ -931,9 +931,9 @@ class RepoKullanimiDialog(QDialog):
         dialog.exec()
 
     def acKavramDialog(self):
-        dialog = KavramDialog()
+        dialog = KavramDialog(parent=self)
         dialog.exec()
 
     def acAciklamaDialog(self):
-        dialog = AciklamaDialog()
+        dialog = AciklamaDialog(parent=self)
         dialog.exec()
