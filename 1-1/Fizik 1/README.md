@@ -15,6 +15,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1DP97u6jt1lRFiq6vYgSu4hizGfCMeJ4l?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 😔 İçerik yok

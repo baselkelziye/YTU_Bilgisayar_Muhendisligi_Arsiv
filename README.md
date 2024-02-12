@@ -1097,6 +1097,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
+
+### 🗓 Sosyal Seçmeli 1
+
+
+#### 📘 Felsefeye Giriş 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 </details>
 
 <details>
@@ -1903,6 +1911,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h2 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a></p>
 
+<h2 align='center'>🌟 <b><i>Esma Nur Ekmekci</i></b> 🌟</h2>
+<p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
+
 <h2 align='center'>🌟 <b><i>Muhammed Ali Şen</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
 
@@ -1920,9 +1931,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h3 align='center'>💫 <b><i>Besher Alkurdi</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
-
-<h3 align='center'>💫 <b><i>Esma Nur Ekmekci</i></b> 💫</h3>
-<p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
 
 <h3 align='center'>💫 <b><i>Muhammed Eren Şekkeli</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mErenSekkeli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-eren-sekkeli/'><b>LinkedIn Profili</b></a></p>
