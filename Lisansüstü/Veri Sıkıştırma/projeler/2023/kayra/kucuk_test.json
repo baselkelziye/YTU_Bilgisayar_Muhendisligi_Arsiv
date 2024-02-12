@@ -1,0 +1,92 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "age": 30,
+            "email": "johndoe@example.com",
+            "address": {
+                "street": "123 Main St",
+                "city": "New York",
+                "state": "NY",
+                "zip": "10001"
+            },
+            "orders": [
+                {
+                    "orderId": 101,
+                    "product": "Laptop",
+                    "quantity": 1,
+                    "price": 1000.50
+                },
+                {
+                    "orderId": 102,
+                    "product": "Smartphone",
+                    "quantity": 2,
+                    "price": 500.25
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "age": 25,
+            "email": "janesmith@example.com",
+            "address": {
+                "street": "456 Elm St",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip": "90001"
+            },
+            "orders": [
+                {
+                    "orderId": 103,
+                    "product": "Camera",
+                    "quantity": 1,
+                    "price": 300.75
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Alice Johnson",
+            "age": 28,
+            "email": "alicejohnson@example.com",
+            "address": {
+                "street": "789 Pine St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": "60601"
+            },
+            "orders": []
+        }
+    ],
+    "products": [
+        {
+            "productId": 1,
+            "name": "Laptop",
+            "brand": "TechBrand",
+            "price": 1000.50
+        },
+        {
+            "productId": 2,
+            "name": "Smartphone",
+            "brand": "PhoneBrand",
+            "price": 500.25
+        },
+        {
+            "productId": 3,
+            "name": "Camera",
+            "brand": "CamBrand",
+            "price": 300.75
+        }
+    ],
+    "storeInfo": {
+        "name": "TechStore",
+        "location": "Central Mall",
+        "owner": "Robert Brown",
+        "contact": {
+            "phone": "+1234567890",
+            "email": "techstore@example.com"
+        }
+    }
+}
