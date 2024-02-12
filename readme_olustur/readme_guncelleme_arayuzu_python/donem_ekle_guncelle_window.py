@@ -145,7 +145,7 @@ class DonemEkleGuncelleWindow(TalimatDialog):
 
 class DonemDuzenlemeWindow(QDialog):
     def __init__(self, donem, data, parent, index=None):
-        super().__init__()
+        super().__init__(parent)
         self.setModal(True)
         self.index = index
         self.donem = donem
