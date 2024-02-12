@@ -1177,6 +1177,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
 
 
+#### 📘 Kollektif Öğrenme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MFA](#-prof-dr-m-fatih-amasyalı)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Kollektif%20Öğrenme)
+
+
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -1318,6 +1327,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapay Zeka](#-yapay-zeka)
   - 📖 [Uzman Sistemlere Giriş](#-uzman-sistemlere-giriş)
   - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
+  - 📖 [Kollektif Öğrenme](#-kollektif-öğrenme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
