@@ -118,7 +118,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
-    - 👤 **_violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur.
+    - 👤 **_Violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -1120,7 +1120,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok tatlı bir hoca, derslerini seviyor, yoklamaya biraz önem veriyor, güzel anlatıyor, anlattığını soruyor. Arada sırada çok sinirleniyor.
-  - 👤 **_astro_**: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
+  - 👤 **_Astro_**: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
   - 👤 **_Tehlikeli Pinokyo_**: Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir.
   - 👤 **_Madmax_**: Çok tatlı ve iyi niyetli bir hocamız. Ama sınavları okurken gidişattan puan alırım beklentisine sakın girmeyin. Sonuç doğruysa tam puan alırsınız, tüm işlem aşamaları doğruysa bile sonuç yanlışsa puan almanız çok zor.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -1182,7 +1182,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amasyali/](http://avesis.yildiz.edu.tr/amasyali/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sakin bir hoca, dersi iyi anlatır, anlattığını sorar. Öğretmek için ne kadar kasmak gerekiyorsa o kadar kasar.
-  - 👤 **_astro_**: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
+  - 👤 **_Astro_**: Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim
   - 👤 **_Tehlikeli Pinokyo_**: Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.
   - 👤 **_Madmax_**: Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız.
   - 👤 **_Violancello_**: Bilim aşkıyla yanıp tutuşan mükemmel bir hoca. Yapay zeka başta olmak üzere verdiği derslerde işin bilimsel mantığını öğretir, sınavları da kalitelidir boş detaylara takılmaz öğrencilere işlem ameleliği yaptırmaz. Bazı hocalar öğrenciye hayatı zorlaştırmakla uğraştırken Fatih hocam 2024'ün ilk haftasında 3 makale yayınladı bile :)
@@ -1303,7 +1303,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/gbilgin/](http://avesis.yildiz.edu.tr/gbilgin/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersi basit anlatır. Genelde çıkmış sorar. Bol bol ödev verir.
-  - 👤 **_astro_**: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
+  - 👤 **_Astro_**: derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.
   - 👤 **_Tehlikeli Pinokyo_**: Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)
   - 👤 **_Madmax_**: Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.
   - 👤 **_Violancello_**: Derste sakız çiğnenmesi gibi önemsiz detaylara takılıyor, 30 hoca için sorun olmayan durum niye onun için sorun oluyor anlamıyorum açıkçası. Bunun dışında dersleri gayet güzel anlatıyor.
@@ -1350,7 +1350,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok zorlar. Birüsrü (GERÇEKTEN BİRSÜRÜ) ödev verir. Ödevler öğretir.
-  - 👤 **_astro_**: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
+  - 👤 **_Astro_**: BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!
   - 👤 **_Ufouser_**: ders anlatışı iyi ve ayrıntılıdır bu yüzden sınavları da iyi olur notu kıt verebilir
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -1393,7 +1393,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_violancello_**: Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum.
+  - 👤 **_Violancello_**: Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum.
   - 👤 **_Tehlikeli Pinokyo_**: Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor.
   - 👤 **_Yıldızlı_**: Anlayış ve yardımseverlik konusunda diğer hocalara nispeten çok daha önde gelir. Öğrencilerle ders dışında da iletişim hususunda ilgilidir. Özellikle Ara ve Bitirme projelerini bu hocadan alırsanız iletişim ve sürecin ilerletilmesi konusunda kafanız daha rahat olacaktır.
   - 👤 **_Ufouser_**: ahmet elbir hocamız yoklamayı takan bir hocamızdır sınavları son derece ayrıntı içerir her soylediğine kulak verin her soylediğini sorar sınavlarında elbet bir 30 puanlık zor bir soru olur soruyu yavas yavas cozun yanlıs yerden itibaren çözümu siler bi anda cok az bi puan alırsınız ders anlatımı normaldir
@@ -1421,7 +1421,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
   - 👤 **_Nakliyeci Sefer_**: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
-  - 👤 **_astro_**: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
+  - 👤 **_Astro_**: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Donanımı](#-bilgisayar-donanımı)
@@ -1475,7 +1475,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Dersi eğlenceli anlatır. Güleçtir. Çok kasmaz. Sınavlarda düşük puan verir ama harf notlarını yüksek verir.
   - 👤 **_Nakliyeci Sefer_**: Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .
-  - 👤 **_astro_**: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
+  - 👤 **_Astro_**: dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca
   - 👤 **_Madmax_**: Dersi çok iyi anlatır. Sorduğunuz soruyu da elinden geldiğince, sorunun saçma olup olmadığına bakmadan cevaplar. Şiddetle tavsiye edilir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
@@ -1551,7 +1551,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İşini sever. Sakindir.
-  - 👤 **_astro_**: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
+  - 👤 **_Astro_**: aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...
   - 👤 **_Ufouser_**: Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda
   - 👤 **_Yıldızlı_**: Yunus Emre hocanın en öne çıkan özelliği güleç yüzlülüğü ve derslerdeki ilgi alakası. Dersteyken asla gerilme veya sıkılma olmuyor. Sorular sorulara gerçekten değer vererek cevaplamaya ve anladığınızdan emin olayı önemsiyor. İyi hoca.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.

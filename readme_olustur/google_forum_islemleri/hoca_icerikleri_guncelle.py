@@ -69,6 +69,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                     for gorus in hoca[OGRENCI_GORUSLERI]:
                         if gorus[KISI].lower() == kisi.lower():
                             gorus[YORUM] = yorum
+                            gorus[KISI] = kisi.lower().title()
                             gorus_var_mi = True
                             break
 
