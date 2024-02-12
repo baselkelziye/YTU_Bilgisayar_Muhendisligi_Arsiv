@@ -1155,6 +1155,63 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
 
+### 🗓 Lisansüstü
+
+
+#### 📘 Bilgisayarla Görme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OA](#-dr-oğuz-altun)
+    - [SV](#-prof-dr-songül-varlı)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayarla%20Görme)
+
+
+#### 📘 Nesneye Dayalı Tasarım ve Modelleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [YES](#-dr-yunus-emre-selçuk)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
+
+
+#### 📘 Veri Madenciliği ve Bilgi Keşfi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [SV](#-prof-dr-songül-varlı)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Madenciliği%20ve%20Bilgi%20Keşfi)
+
+
+#### 📘 Veri Sıkıştırma 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-19-oy)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Sıkıştırma)
+
+
+#### 📘 Veri Tabanı Sistemlerinin Gerçeklenmesi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MUK](#-dr-m-utku-kalay)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Tabanı%20Sistemlerinin%20Gerçeklenmesi)
+
+
+#### 📘 Yazılım Kalitesi ve Test Teknikleri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OK](#-prof-dr-oya-kalıpsız)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Yazılım%20Kalitesi%20ve%20Test%20Teknikleri)
+
 ### 🗓 Sosyal Seçmeli 1
 
 
@@ -1195,6 +1252,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Ayrık Matematik](#-ayrık-matematik)
   - 📖 [Doğal Dil İşlemeye Giriş](#-doğal-dil-i̇şlemeye-giriş)
   - 📖 [Seminer ve Meslek Etiği](#-seminer-ve-meslek-etiği)
+  - 📖 [Veri Sıkıştırma](#-veri-sıkıştırma)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1297,6 +1355,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yazılım Kalite ve Test Süreci](#-yazılım-kalite-ve-test-süreci)
   - 📖 [Yönetim Bilgi Sistemleri](#-yönetim-bilgi-sistemleri)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
+  - 📖 [Yazılım Kalitesi ve Test Teknikleri](#-yazılım-kalitesi-ve-test-teknikleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
@@ -1312,7 +1371,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
+  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
+  - 📖 [Veri Madenciliği ve Bilgi Keşfi](#-veri-madenciliği-ve-bilgi-keşfi)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
@@ -1584,6 +1644,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Veritabanı Yönetimi](#-veritabanı-yönetimi)
   - 📖 [Veritabanı Sistemlerinin Gerçekleştirilmesi](#-veritabanı-sistemlerinin-gerçekleştirilmesi)
   - 📖 [Veri Tabanı Sistemlerinde Güncel Konular](#-veri-tabanı-sistemlerinde-güncel-konular)
+  - 📖 [Veri Tabanı Sistemlerinin Gerçeklenmesi](#-veri-tabanı-sistemlerinin-gerçeklenmesi)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -1603,6 +1664,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
   - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
   - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
+  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
@@ -1625,6 +1687,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
+  - 📖 [Nesneye Dayalı Tasarım ve Modelleme](#-nesneye-dayalı-tasarım-ve-modelleme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
