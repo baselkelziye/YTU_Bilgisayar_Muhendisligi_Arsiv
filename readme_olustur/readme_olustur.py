@@ -656,7 +656,7 @@ def dersin_donemini_getir(ders):
     if ders.get(YIL, 0) != 0 and ders.get(DONEM, "") != "":
         return {YIL: ders.get(YIL, 0), DONEM: ders.get(DONEM, "")}
     if ders.get(TIP, "") != "":
-        return {AD: ders.get(TIP, "")}
+        return {DONEM_ADI: ders.get(TIP, "")}
 
 
 def ders_klasoru_olustur(ders):
