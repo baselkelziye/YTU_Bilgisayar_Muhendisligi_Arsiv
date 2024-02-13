@@ -1,46 +1,54 @@
 {
-    // IntelliSense'i kullanmak için, mevcut değişkenlere göz atmak için Ctrl+Space tuşlarını kullanın.
-    // Mevcut özniteliklerin açıklamaları için: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Hoca İçerikleri Güncelle",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/google_forum_islemleri/hoca_icerikleri_guncelle.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/google_forum_islemleri/"
-        },
-        {
-            "name": "Python: Ders İçerikleri Güncelle",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/google_forum_islemleri/ders_icerikleri_guncelle.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/google_forum_islemleri/"
-        },
-        {
-            "name": "Python: REadme Güncelle",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/readme_olustur.py",
-            "console": "integratedTerminal",
-        },
-        {
-            "name": "Python: Arayuz",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/readme_guncelleme_arayuzu_python/main.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/readme_guncelleme_arayuzu_python/"
-        },
-        {
-            "name": "Python: Rutin Kontrol",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/google_forum_islemleri/google_form_rutin_kontrol.py",
-            "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/google_forum_islemleri/"
-        }
-    ]
+  // IntelliSense'i kullanmak için, mevcut değişkenlere göz atmak için Ctrl+Space tuşlarını kullanın.
+  // Mevcut özniteliklerin açıklamaları için: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Hoca İçerikleri Güncelle",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/google_forum_islemleri/hoca_icerikleri_guncelle.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/google_forum_islemleri/"
+    },
+    {
+      "name": "Python: Ders İçerikleri Güncelle",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/google_forum_islemleri/ders_icerikleri_guncelle.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/google_forum_islemleri/"
+    },
+    {
+      "name": "Python: REadme Güncelle",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/readme_olustur.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Python: Arayuz",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/readme_guncelleme_arayuzu_python/main.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/readme_guncelleme_arayuzu_python/"
+    },
+    {
+      "name": "Python: Rutin Kontrol",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/google_forum_islemleri/google_form_rutin_kontrol.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/google_forum_islemleri/"
+    },
+    {
+      "name": "Python: Maaş Oluştur",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/google_forum_islemleri/maas_bilgileri_yazdir.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/google_forum_islemleri/"
+    }
+  ]
 }
