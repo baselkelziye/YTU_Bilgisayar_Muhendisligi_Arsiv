@@ -237,10 +237,10 @@
                     "yorum": "Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor"
                 }
             ],
-            "kolaylik_puani": 33,
-            "gereklilik_puani": 13,
+            "kolaylik_puani": 32,
+            "gereklilik_puani": 20,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 3,
+            "oy_sayisi": 4,
             "guncel_mi": false,
             "faydali_olabilecek_kaynaklar": [
                 "[Çıkmış sorular linki](https://drive.google.com/drive/folders/1UqeiZKjms40t1aZmv70D82XrtBU3jC2C?usp=drive_link)"
@@ -463,8 +463,8 @@
                     "yorum": "Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider"
                 }
             ],
-            "kolaylik_puani": 66,
-            "gereklilik_puani": 80,
+            "kolaylik_puani": 68,
+            "gereklilik_puani": 73,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "BD",
@@ -475,7 +475,7 @@
                     "ad": "Dr. Ahmet Elbir"
                 }
             ],
-            "oy_sayisi": 5,
+            "oy_sayisi": 6,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "[Çıkmış sorular linki](https://drive.google.com/drive/folders/1VcDey9b_Mg6RCz_qrEEgpWgOmYJPCC-b?usp=drive_link)"
@@ -566,8 +566,8 @@
                     "yorum": "Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali..."
                 }
             ],
-            "kolaylik_puani": 60,
-            "gereklilik_puani": 92,
+            "kolaylik_puani": 61,
+            "gereklilik_puani": 88,
             "derse_dair_oneriler": [
                 {
                     "oneri_sahibi": "Traktör Reis",
@@ -587,7 +587,7 @@
                     "ad": "Dr. Erkan Uslu"
                 }
             ],
-            "oy_sayisi": 5,
+            "oy_sayisi": 6,
             "guncel_mi": false,
             "faydali_olabilecek_kaynaklar": [
                 "[Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link)"
@@ -819,7 +819,7 @@
                 "[Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf)"
             ],
             "kolaylik_puani": 35,
-            "gereklilik_puani": 93,
+            "gereklilik_puani": 87,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MEK",
@@ -830,7 +830,7 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 6,
+            "oy_sayisi": 7,
             "guncel_mi": true,
             "derse_dair_oneriler": [
                 {
@@ -1211,15 +1211,15 @@
             "donem": "",
             "tip": "Mesleki Seçmeli 1",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 86,
-            "gereklilik_puani": 56,
+            "kolaylik_puani": 82,
+            "gereklilik_puani": 57,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MSA",
                     "ad": "Doç. Dr. Mehmet Sıddık Aktaş"
                 }
             ],
-            "oy_sayisi": 3,
+            "oy_sayisi": 4,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "[Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1KJOrUtZvDwiccQprOmxQYl-NZYp-P90m?usp=drive_link)"
@@ -1809,7 +1809,10 @@
             "faydali_olabilecek_kaynaklar": [
                 "Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1)",
                 ":star:[Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link):star:"
-            ]
+            ],
+            "kolaylik_puani": 70,
+            "gereklilik_puani": 80,
+            "oy_sayisi": 1
         },
         {
             "ad": "Bilgisayar Mühendisliğinde Güncel Konular",
@@ -1974,7 +1977,7 @@
     "bolum_adi": "Dersler",
     "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
     "en_populer_ders": {
-        "ders_adi": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
+        "ders_adi": "Algoritma Analizi",
         "oy_sayisi": 7
     },
     "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
