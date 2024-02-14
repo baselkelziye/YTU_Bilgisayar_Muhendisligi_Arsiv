@@ -18,7 +18,7 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok gerekli bir ders. 2-3 haftada lojik devreleri özet geçip sonrasında ram, rom vs. birsürü donanımın mantığı anlatılıyor. Aslında güzel ders.
   - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor, ise yaramayan dersler bu kadar zor olmamali...
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
+- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
     - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
@@ -51,7 +51,7 @@
   - 👤 **_Traktör Reis_**: Çok da gereği olmayan bir ders. Ama ödevleri yapınca geçiliyor. Ödevler uğraştırıyor.
   - 👤 **_Tehlikeli Pinokyo_**: Bence en onemli derslerden birisi ama cok onemli degilmis gibi davranilan bir ders
 - ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
