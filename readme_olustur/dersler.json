@@ -1293,15 +1293,16 @@
             "donem": "",
             "tip": "Mesleki Seçmeli 1",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 95,
+            "gereklilik_puani": 10,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "ACK",
                     "ad": "Doç. Dr. Ali Can Karaca"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "oy_sayisi": 2
         },
         {
             "ad": "Sayısal İşaret İşleme",
