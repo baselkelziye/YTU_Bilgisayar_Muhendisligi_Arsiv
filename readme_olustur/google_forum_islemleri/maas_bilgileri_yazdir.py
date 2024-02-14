@@ -3,9 +3,7 @@ url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRrFDdxAdd9KjqQE8oEohHiov
 
 df = pd.read_csv(url)
 
-# '2024 Maaşı (Aylık net ortalama)' sütunundaki eksik değerleri doldur
-df['2024 Maaşı (Aylık net ortalama)'] = df['2024 Maaşı (Aylık net ortalama)'].fillna(df['2023 Maaşı (Aylık net ortalama)'])
-    # Tecrübe süresini sayısal bir değere dönüştüren fonksiyon
+# Tecrübe süresini sayısal bir değere dönüştüren fonksiyon
 def tecrube_suresi_donustur(tecrube):
     if tecrube == '0 - 6 ay':
         return 0.5
@@ -21,7 +19,17 @@ def tecrube_suresi_donustur(tecrube):
         return 0  # Belirsiz değerler için
 def filter_func(x):
     return len(x) > 1
-
+def dfOnIsle(df, startIndex=0, endIndex=1):
+    df = df.round(2).fillna("Bilgi Yok")
+    
+    for i in range(startIndex, endIndex + 1):
+        for j in range(len(df)):
+            try:
+                df.iloc[j, i] = int(df.iloc[j, i])
+            except ValueError:
+                pass  # Metinsel değerler olduğunda hata oluşacak, bu durumda hiçbir şey yapma
+    
+    return df
 # Çalışma Durumuna göre veriyi grupla ve analiz et
 for durum in df['Çalışma Durumu'].unique():
     durum_df = df[df['Çalışma Durumu'] == durum].copy()
@@ -57,7 +65,7 @@ for durum in df['Çalışma Durumu'].unique():
             genel_maas_tablosu = """
 | Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
 |----------------------------------------|----------------------------------------|----------------------|
-| {:.2f}                                 | {:.2f}                                 | {:.2f}               |
+| {:.0f}                                 | {:.0f}                                 | {:.2f}               |
             """.format(general_avg['2023 Maaşı (Aylık net ortalama)'],
                     general_avg['2024 Maaşı (Aylık net ortalama)'],
                     general_increase_rate).strip()
@@ -65,15 +73,19 @@ for durum in df['Çalışma Durumu'].unique():
             print(genel_maas_tablosu)
         # Şimdi Markdown formatında sonuçları yazdıralım (eğer boş değilse)
         if not company_avg.empty:
+            company_avg = dfOnIsle(company_avg)
             print("\n\n\n##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları\n")
             print(company_avg.to_markdown())
         if not field_avg.empty:
+            field_avg = dfOnIsle(field_avg)
             print("\n\n\n##### Alana Göre Maaş Ortalamaları ve Artış Oranları\n")
             print(field_avg.to_markdown())
 
         if not experience_avg.empty:
+            experience_avg = experience_avg.drop(experience_avg.columns[-1], axis=1)
+            experience_avg = dfOnIsle(experience_avg,1,2)
             print("\n\n\n##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları\n")
-            print(experience_avg[['Tecrübe Süresi', '2023 Maaşı (Aylık net ortalama)', '2024 Maaşı (Aylık net ortalama)', 'Maaş Artış Oranı (%)']].to_markdown(index=False))
+            print(experience_avg.to_markdown(index=False))
 
 # Ankete katılan kişi sayısını hesapla
 katilan_kisi_sayisi = len(df)
