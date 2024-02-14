@@ -193,6 +193,8 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Teradata_**: İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 

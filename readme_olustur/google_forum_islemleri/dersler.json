@@ -1292,7 +1292,12 @@
             "yil": 0,
             "donem": "",
             "tip": "Mesleki Seçmeli 1",
-            "ogrenci_gorusleri": [],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Teradata",
+                    "yorum": "İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders."
+                }
+            ],
             "kolaylik_puani": 95,
             "gereklilik_puani": 10,
             "dersi_veren_hocalar": [
