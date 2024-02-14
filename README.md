@@ -1719,6 +1719,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ukalay/](http://avesis.yildiz.edu.tr/ukalay/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Veri tabanını çok iyi bilir. İşini sever. Çok karmaşık anlatır.
+  - 👤 **_Teradata_**: Açıklaması için açıklama gerektiren bir hocadır. Konusu (veri tabanı) hakkında bilmediği yoktur. Rahat bir hocadır, yoklama aldığını görmedim. verdiği seçmeli dersler detay doludur, önermem.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veritabanı Yönetimi](#-veritabanı-yönetimi)
