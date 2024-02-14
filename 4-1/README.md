@@ -79,6 +79,7 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
   - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
+  - 👤 **_Teradata_**: Gereksiz, uğraştırıcı ve 1 kredi. Kolay gelsin.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
