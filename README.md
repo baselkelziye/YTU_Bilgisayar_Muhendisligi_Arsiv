@@ -892,6 +892,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
     - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
+    - 👤 **_Teradata_**: Gereksiz, uğraştırıcı ve 1 kredi. Kolay gelsin.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
