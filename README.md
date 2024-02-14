@@ -1036,6 +1036,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 İstatistiksel Veri Analizi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Teradata_**: İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
