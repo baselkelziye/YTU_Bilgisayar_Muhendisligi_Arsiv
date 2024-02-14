@@ -133,8 +133,7 @@ def txt_oku(txt_dosyasi):
         return None
 
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
-    if puan % 10 != 0:
-        puan += 10
+    puan = round(puan / 10) * 10  # Önce 10'a böl, yuvarla, sonra 10 ile çarp
     dolu_yildiz_sayisi = puan // 10  # Her 10 puan için 1 yıldız
     bos_yildiz_sayisi = max_yildiz_sayisi - dolu_yildiz_sayisi
     return "★" * dolu_yildiz_sayisi + "☆" * bos_yildiz_sayisi
