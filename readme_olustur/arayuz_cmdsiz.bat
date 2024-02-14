@@ -1,4 +1,6 @@
 @echo off
+:: Mevcut konumu kaydet
+set "original_dir=%cd%"
 cls
 git config --global i18n.commitEncoding utf-8
 git config --global i18n.logOutputEncoding utf-8
@@ -37,5 +39,7 @@ for /F %%i in ("%~dp0\gereksinimler.txt") do (
 cd %~dp0\readme_guncelleme_arayuzu_python
 :: pythonw ile main.py'yi çalıştırmayı dene
 start pythonw main.py
+:: Orijinal konuma geri dön
+cd %original_dir%
 echo İşlem tamamlandı.
 exit /b 0
