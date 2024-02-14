@@ -10,7 +10,7 @@
   - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
+  - 🔑 **Gereklilik Puanı:** ★★★☆☆☆☆☆☆☆
 
     - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
