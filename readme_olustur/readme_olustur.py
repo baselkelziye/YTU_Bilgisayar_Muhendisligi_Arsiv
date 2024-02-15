@@ -3,6 +3,7 @@ import os
 import difflib
 import re
 import sys
+import bisect
 
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -112,8 +113,16 @@ def yerel_yoldan_github_linkine(klasor_yolu, repo_url=VARSAYILAN_GITHUB_URL):
 
 
 def hoca_siralama_anahtari(hoca):
+    # Hoca aktif görevde mi kontrolü
+    aktif_gorevde_mi = hoca.get(HOCA_AKTIF_GOREVDE_MI,True)  # True/False değerini al
+    aktiflik_onceligi = 0 if aktif_gorevde_mi else 1  # Aktif hocalar önce gelsin
+
     unvan = hoca[AD].split()[0]  # İsmin ilk kelimesini (unvanı) al
-    return (unvanlarin_onceligi.get(unvan, 4), hoca[AD])  # Unvan önceliği ve tam ad
+    unvan_onceligi = unvanlarin_onceligi.get(unvan, 4)  # Unvan önceliği
+    
+    # Önce aktiflik durumu, sonra unvan önceliği ve en son tam adı dikkate alarak tuple dön
+    return (aktiflik_onceligi, unvan_onceligi, hoca[AD])
+
 
 
 # JSON dosyasını okuyan fonksiyon
@@ -169,7 +178,7 @@ def hocalari_readme_ye_ekle(bilgiler):
             custom_write_error("En popüler hoca bilgileri bulunamadı.\n")
 
         unvan_sayaci = 0
-
+        baslik_str = "\n### {}\n"
         for hoca in sorted(bilgiler[HOCALAR], key=hoca_siralama_anahtari):
             if unvan_sayaci < len(unvanlar) and hoca[AD].startswith(unvanlar[unvan_sayaci]):
                 tmp_unvan = ""
@@ -181,8 +190,13 @@ def hocalari_readme_ye_ekle(bilgiler):
                     tmp_unvan = "Doktor Öğretim Üyeleri"
                 else:
                     tmp_unvan = "Araştırma Görevlileri"
-                f.write(f"\n### {tmp_unvan}\n")
+
+                f.write(baslik_str.format(tmp_unvan))
                 unvan_sayaci += 1
+            elif unvan_sayaci == len(unvanlar) and hoca.get(HOCA_AKTIF_GOREVDE_MI,True) == False:
+                unvan_sayaci += 1
+                f.write(baslik_str.format("Üniversitede Aktif Görevde Olmayan Hocalar"))
+            
             if AD not in hoca:
                 hoca[AD] = ""
             if OFIS not in hoca:
@@ -274,6 +288,10 @@ def hocalari_readme_ye_ekle(bilgiler):
 
 
 def donem_siralamasi(donem_key):
+    if donem_key == LISANSUSTU:
+        return (1499,1499)
+    if donem_key == ARTIK_MUFREDATA_DAHIL_OLMAYAN_DERSLER:
+        return (1500,1500)
     if donem_key == "Mesleki Seçmeli":
         return (998, 998)  # Mesleki Seçmeli dersleri en sona koy
     try:
@@ -291,14 +309,24 @@ def baslik_linki_olustur(baslik):
     # Oluşturulan linki döndür
     return f"(#-{baslik})"
 
-
+def ders_siralama_anahtari(ders):
+    return ders.get(AD, "Z").replace("İ", "i").lower()
+def sıralı_ekle(liste, eleman, anahtar_fonksiyonu):
+    # Elemanın karşılaştırma anahtarını hesapla
+    eleman_anahtar = anahtar_fonksiyonu(eleman)
+    # Liste içinde elemanın ekleneceği konumu bul
+    konum = bisect.bisect_left([anahtar_fonksiyonu(x) for x in liste], eleman_anahtar)
+    # Elemanı doğru konuma ekle
+    liste.insert(konum, eleman)
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
     if DERSLER not in dersler or not isinstance(dersler[DERSLER], list):
         dersler[DERSLER] = []
     gruplanmis_dersler = {}
     for ders in dersler[DERSLER]:
-        if YIL in ders and ders[YIL] > 0:
+        if ders.get(GUNCEL_MI, True) == False:
+            donem_key = ARTIK_MUFREDATA_DAHIL_OLMAYAN_DERSLER
+        elif YIL in ders and ders[YIL] > 0:
             donem_key = f"{ders[YIL]}. Yıl - {ders[DONEM]}"
         elif TIP in ders:
             donem_key = ders[TIP]
@@ -307,7 +335,7 @@ def dersleri_readme_ye_ekle(dersler):
             continue
         if donem_key not in gruplanmis_dersler:
             gruplanmis_dersler[donem_key] = []
-        gruplanmis_dersler[donem_key].append(ders)
+        sıralı_ekle(gruplanmis_dersler[donem_key], ders, ders_siralama_anahtari)
     en_populer_ders_oy_sayisi = 0
     en_populer_ders_adi = ""
     if EN_POPULER_DERS in dersler and DERS_ADI in dersler[EN_POPULER_DERS]:
