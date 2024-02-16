@@ -1971,7 +1971,10 @@
                     "ad": "Dr. M. Utku Kalay"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 50,
+            "oy_sayisi": 1
         },
         {
             "ad": "Kollektif Öğrenme",
@@ -1990,7 +1993,7 @@
     "bolum_adi": "Dersler",
     "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
     "en_populer_ders": {
-        "ders_adi": "Atatürk İlkeleri ve İnkılâp Tarihi 2",
+        "ders_adi": "Algoritma Analizi",
         "oy_sayisi": 7
     },
     "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
