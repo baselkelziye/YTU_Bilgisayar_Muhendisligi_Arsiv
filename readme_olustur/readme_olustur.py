@@ -4,6 +4,10 @@ import difflib
 import re
 import sys
 import bisect
+import locale
+
+# Locale'i Türkçe'ye ayarla
+locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')  # Sisteminize bağlı olarak bu değer değişebilir
 
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -474,7 +478,7 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
         f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(
-            repo_kullanimi_bilgileri[KAVRAMLAR], key=lambda x: x[KAVRAM].lower()
+            repo_kullanimi_bilgileri[KAVRAMLAR], key=lambda x: locale.strxfrm(x[KAVRAM].lower())
         ):
             f.write(
                 f"- 💡 **{kavram[KAVRAM]}**\n"
