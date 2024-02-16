@@ -680,7 +680,12 @@
             "link": "https://avesis.yildiz.edu.tr/sturgut/",
             "erkek_mi": false,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 80,
+            "kolaylik_puani": 60,
+            "ogretme_puani": 90,
+            "eglence_puani": 90,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Mustafa Mert KARA",
@@ -688,7 +693,12 @@
             "link": "https://avesis.yildiz.edu.tr/mmkara/",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 80,
+            "kolaylik_puani": 50,
+            "ogretme_puani": 80,
+            "eglence_puani": 60,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Muzaffer Kaan YÜCE",
@@ -722,6 +732,10 @@
                 {
                     "kisi": "Teradata",
                     "yorum": "Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın."
+                },
+                {
+                    "kisi": "Traktör Reis",
+                    "yorum": "En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı."
                 }
             ]
         },
@@ -769,7 +783,12 @@
                     "kisi": "Traktör Reis",
                     "yorum": "Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Yusuf Taha Körkem, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca Yusuf Taha'nın söylediğini anlayamayınca kalkıp kodun kalanını Yusuf Taha anlatmıştı."
                 }
-            ]
+            ],
+            "anlatim_puani": 30,
+            "kolaylik_puani": 60,
+            "ogretme_puani": 20,
+            "eglence_puani": 10,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Ömer Mutlu Türk KAYA",
@@ -777,7 +796,12 @@
             "link": "",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 90,
+            "kolaylik_puani": 70,
+            "ogretme_puani": 100,
+            "eglence_puani": 50,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Elçin GÜVEYİ",
@@ -786,11 +810,11 @@
             "erkek_mi": false,
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
-            "anlatim_puani": 80,
+            "anlatim_puani": 90,
             "kolaylik_puani": 50,
             "ogretme_puani": 90,
-            "eglence_puani": 70,
-            "oy_sayisi": 1
+            "eglence_puani": 80,
+            "oy_sayisi": 2
         },
         {
             "ad": "Arş. Grv. İdris DEMİR",
@@ -800,10 +824,16 @@
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
             "anlatim_puani": 40,
-            "kolaylik_puani": 70,
-            "ogretme_puani": 30,
-            "eglence_puani": 20,
-            "oy_sayisi": 1
+            "kolaylik_puani": 80,
+            "ogretme_puani": 35,
+            "eglence_puani": 15,
+            "oy_sayisi": 2,
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Traktör Reis",
+                    "yorum": "Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Veritabanı** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti."
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Himmet Toprak KESGİN",
@@ -811,7 +841,12 @@
             "link": "",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 80,
+            "kolaylik_puani": 70,
+            "ogretme_puani": 80,
+            "eglence_puani": 60,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Hatice ERDİRİK",
@@ -820,11 +855,11 @@
             "erkek_mi": false,
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
-            "anlatim_puani": 60,
-            "kolaylik_puani": 70,
-            "ogretme_puani": 60,
-            "eglence_puani": 60,
-            "oy_sayisi": 1
+            "anlatim_puani": 65,
+            "kolaylik_puani": 80,
+            "ogretme_puani": 65,
+            "eglence_puani": 70,
+            "oy_sayisi": 2
         },
         {
             "ad": "Arş. Grv. Meliha Gizem ÇELİK",

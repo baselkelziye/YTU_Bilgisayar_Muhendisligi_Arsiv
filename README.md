@@ -1798,7 +1798,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1810,11 +1814,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1839,10 +1843,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1854,7 +1858,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1863,6 +1871,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/adalik/](https://avesis.yildiz.edu.tr/adalik/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Teradata_**: Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın.
+  - 👤 **_Traktör Reis_**: En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
@@ -1919,7 +1928,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1979,7 +1992,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1991,7 +2008,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
-  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -1999,15 +2020,16 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-025
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Veritabanı** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ### Üniversitede Aktif Görevde Olmayan Hocalar
 
