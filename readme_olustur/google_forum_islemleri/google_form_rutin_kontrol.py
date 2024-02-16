@@ -169,6 +169,6 @@ while True:
     i += 1
     for k in range(0, int(timeout / div)):
         custom_write(
-            f"{timeout-k*div} saniye sonra kontrol edilecek. Kontol sayısı {i}\n"
+            f"{timeout-k*div} saniye sonra kontrol edilecek. Kontol sayısı {i} :: Güncelleme sayısı {guncelleme_sayisi}\n"
         )  # '\r' ile satırın başına dön
         time.sleep(div)
