@@ -44,9 +44,9 @@
   - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
   - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz.
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
