@@ -2020,7 +2020,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-025
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Veritabanı** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti.
+  - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
@@ -2067,7 +2067,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 </details>
 
