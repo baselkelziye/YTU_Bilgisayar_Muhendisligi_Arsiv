@@ -141,10 +141,11 @@ else:
 json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
 with open(os.path.join(BIR_UST_DIZIN, json_file_path), "r", encoding="utf-8") as file:
     data = json.load(file)
-data[EN_POPULER_HOCA] = {
-    HOCA_ADI: en_populer_hoca,
-    OY_SAYISI: int(en_populer_hoca_oy_sayisi),
-}
+if data.get(EN_POPULER_HOCA,{}).get(OY_SAYISI,0) != int(en_populer_hoca_oy_sayisi):
+    data[EN_POPULER_HOCA] = {
+        HOCA_ADI: en_populer_hoca,
+        OY_SAYISI: int(en_populer_hoca_oy_sayisi),
+    }
 for hoca in data[HOCALAR]:
     name = hoca.get(AD)
     if name in yildizlar_grouped.index:
