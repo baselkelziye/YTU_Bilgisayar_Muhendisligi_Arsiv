@@ -54,10 +54,10 @@
 - 📅 **Yıl:** 4
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
+- ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
 - 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
 
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
