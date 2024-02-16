@@ -65,6 +65,14 @@ YTU CE notlar reposu. Bu repository, Yıldız Teknik Üniversitesi Bilgisayar M�
 
 
 ### 🔍 Kavramlar:
+- 💡 **:star::star::star:Shiningstar Programı:star::star::star:**
+  - 📘 <a name="shiningstar"></a>
+Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shiningstar-Program%C4%B1-Ba%C5%9Fvurular%C4%B1--G%C3%BCncelleme-Tarihi--22-09-2023-) erişebilirsiniz.
+  - 📘 Bu program 2023-2024 eğitim öğretim yılı Güz döneminde ilk öğrencilerini aldı. Program henüz **Lisans** dönemindeyken **Yüksek Lisans** yapabilmenizi sağlıyor.
+  - 📘 İşleyişi şu şekilde, örneğin ortalamanız **3**'ün üzerinde. Programa başvuru hakkında sahipsiniz. Örneğin **3. sınıf 1. dönem** programa başvurdunuz ve 1 tane **Yüksek Lisans** dersi aldınız. Sonrasında bu dersten **başarlılı (CB)** oldunuz. Benzer şekilde **4. sınıf 2. dönem**e kadar en az 5 dersi alıp başarılı sayıldınız. O zaman **sınavsız** ve **mülakatsız** bir şekilde (minimum gereksinim olan Ales sınavından 55 almak gerekiyor)  Yıldız'da **Yüksek Lisans**a başlayabilirsiniz ve aynı zamanda geçtiğiniz tüm derslerden de **muafsınız**. Yüksek Lisans'ta toplam [9 ders](http://www.bologna.yildiz.edu.tr/index.php?r=program/view&id=279&aid=3) vermek gerekiyor. 
+  - 📘 2023 yılında hafifletilen müfredatla birlikte bu programı başarıyla tamamlamak oldukça kolay. **4. sınıf**'ta **5** dersin tamamı çok rahat şekilde verilir.
+  - 📘 Herhangi bir **Lisans** dersi, herhangi bir **Yüksek Lisans** dersinden en az 2 kat daha kolay. Gözünüz korkmasın. Bu program yeni olduğu için henüz pek bilinmiyor ve **2023 güz dönemi**nde başvuru yapan çok olmadı. Ama aşırı kolay ve aynı zamanda **kaldığınız dersler Lisans ortalamasını asla etkilemiyor.** Yani başvurup denemekten zarar gelmez.
+  - 📘 **Yüksek Lisans**'ı genelde 35 yaş üstü evli barklı insanlar maaşları yükselsin diye öylesine yaptıkları için rekabet neredeyse **hiç** yok. Yani çok az bir eforla dersi **AA-BA** gibi bir notla geçmek mümkün. Çünkü bırakın derse çalışma oranını, derslere katılım oranı bile **aşırı düşük**.
 - 💡 **Ara Proje**
   - 📘 Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.
   - 📘 Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
@@ -100,14 +108,6 @@ YTU CE notlar reposu. Bu repository, Yıldız Teknik Üniversitesi Bilgisayar M�
   - 📘 Staj parça parça yapılabilir. Bu parçalar 10'un katı olmalıdır. Mesela 10 ya da 20 gün olarak yapılabilir. Tabi yine aynı gün sayısına (30 gün) tamamlamanız gerekir.
   - 📘 Stajı ders seçer gibi seçmiyorsunuz. Yani mesela yazın bir staj yaptınız ve belgeleri teslim ettiniz. Stajınız kabul edildiği anda **obs'ye** işlenir. Dönem içinde ders olarak almıyorsunuz.
   - 📘 **Genel** staj ve **mesleki** staj arasında pratikte hiçbir fark yoktur. İkisinde de bir _X_ firmasında , evrak işlerini hallederek , 30 gün çalışmış olmak gerekir.
-- 💡 **:star::star::star:Shiningstar Programı:star::star::star:**
-  - 📘 <a name="shiningstar"></a>
-Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shiningstar-Program%C4%B1-Ba%C5%9Fvurular%C4%B1--G%C3%BCncelleme-Tarihi--22-09-2023-) erişebilirsiniz.
-  - 📘 Bu program 2023-2024 eğitim öğretim yılı Güz döneminde ilk öğrencilerini aldı. Program henüz **Lisans** dönemindeyken **Yüksek Lisans** yapabilmenizi sağlıyor.
-  - 📘 İşleyişi şu şekilde, örneğin ortalamanız **3**'ün üzerinde. Programa başvuru hakkında sahipsiniz. Örneğin **3. sınıf 1. dönem** programa başvurdunuz ve 1 tane **Yüksek Lisans** dersi aldınız. Sonrasında bu dersten **başarlılı (CB)** oldunuz. Benzer şekilde **4. sınıf 2. dönem**e kadar en az 5 dersi alıp başarılı sayıldınız. O zaman **sınavsız** ve **mülakatsız** bir şekilde (minimum gereksinim olan Ales sınavından 55 almak gerekiyor)  Yıldız'da **Yüksek Lisans**a başlayabilirsiniz ve aynı zamanda geçtiğiniz tüm derslerden de **muafsınız**. Yüksek Lisans'ta toplam [9 ders](http://www.bologna.yildiz.edu.tr/index.php?r=program/view&id=279&aid=3) vermek gerekiyor. 
-  - 📘 2023 yılında hafifletilen müfredatla birlikte bu programı başarıyla tamamlamak oldukça kolay. **4. sınıf**'ta **5** dersin tamamı çok rahat şekilde verilir.
-  - 📘 Herhangi bir **Lisans** dersi, herhangi bir **Yüksek Lisans** dersinden en az 2 kat daha kolay. Gözünüz korkmasın. Bu program yeni olduğu için henüz pek bilinmiyor ve **2023 güz dönemi**nde başvuru yapan çok olmadı. Ama aşırı kolay ve aynı zamanda **kaldığınız dersler Lisans ortalamasını asla etkilemiyor.** Yani başvurup denemekten zarar gelmez.
-  - 📘 **Yüksek Lisans**'ı genelde 35 yaş üstü evli barklı insanlar maaşları yükselsin diye öylesine yaptıkları için rekabet neredeyse **hiç** yok. Yani çok az bir eforla dersi **AA-BA** gibi bir notla geçmek mümkün. Çünkü bırakın derse çalışma oranını, derslere katılım oranı bile **aşırı düşük**.
 - 💡 **Vize**
   - 📘 İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
   - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
