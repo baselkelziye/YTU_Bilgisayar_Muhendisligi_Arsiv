@@ -9,10 +9,10 @@
   - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
   - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
+  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
