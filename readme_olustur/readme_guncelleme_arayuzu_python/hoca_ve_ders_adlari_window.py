@@ -3,11 +3,11 @@ import json
 import locale
 from PyQt6.QtWidgets import QApplication, QDialog, QHBoxLayout, QListWidget, QPushButton, QVBoxLayout, QMessageBox
 from degiskenler import *
-# Türkçe karakterler için locale ayarları
-locale.setlocale(locale.LC_ALL, "tr_TR.utf8")
 
 class HocaDersAdlariWindow(QDialog):
     def __init__(self, parent=None):
+        # Türkçe karakterler için locale ayarları
+        locale.setlocale(locale.LC_ALL, "tr_TR.utf8")
         super().__init__(parent)  # parent'ı super fonksiyonuna geçir
         self.setModal(True)
         self.initUI()
@@ -86,7 +86,7 @@ class HocaDersAdlariWindow(QDialog):
 
             # Hocaların adlarını önceliklere göre ve alfabetik sıraya göre sırala
             sirali_hocalar = sorted(
-                hocalar_listesi, key=lambda hoca: (unvan_önceligi(hoca), hoca)
+                hocalar_listesi, key=lambda hoca: (unvan_önceligi(hoca), locale.strxfrm(hoca))
             )
             return sirali_hocalar
 
