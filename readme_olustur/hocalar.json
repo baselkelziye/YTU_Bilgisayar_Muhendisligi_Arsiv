@@ -322,11 +322,11 @@
                     "yorum": "Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir."
                 }
             ],
-            "anlatim_puani": 32,
-            "kolaylik_puani": 32,
-            "ogretme_puani": 33,
-            "eglence_puani": 16,
-            "oy_sayisi": 8
+            "anlatim_puani": 34,
+            "kolaylik_puani": 35,
+            "ogretme_puani": 35,
+            "eglence_puani": 18,
+            "oy_sayisi": 9
         },
         {
             "ad": "Dr. Yunus Emre Selçuk",
@@ -357,11 +357,11 @@
                     "yorum": "Yunus Emre hocanın en öne çıkan özelliği güleç yüzlülüğü ve derslerdeki ilgi alakası. Dersteyken asla gerilme veya sıkılma olmuyor. Sorular sorulara gerçekten değer vererek cevaplamaya ve anladığınızdan emin olayı önemsiyor. İyi hoca."
                 }
             ],
-            "anlatim_puani": 68,
-            "kolaylik_puani": 82,
-            "ogretme_puani": 68,
-            "eglence_puani": 72,
-            "oy_sayisi": 8
+            "anlatim_puani": 63,
+            "kolaylik_puani": 78,
+            "ogretme_puani": 63,
+            "eglence_puani": 66,
+            "oy_sayisi": 9
         },
         {
             "ad": "Dr. Göksel Biricik",
@@ -619,10 +619,10 @@
             ],
             "hoca_aktif_gorevde_mi": false,
             "anlatim_puani": 10,
-            "kolaylik_puani": 20,
-            "ogretme_puani": 18,
+            "kolaylik_puani": 18,
+            "ogretme_puani": 16,
             "eglence_puani": 10,
-            "oy_sayisi": 5
+            "oy_sayisi": 6
         },
         {
             "ad": "Prof. Dr. Hasan Hüseyin Balık",
@@ -677,7 +677,12 @@
             "link": "http://avesis.yildiz.edu.tr/aegitmen/",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 70,
+            "kolaylik_puani": 50,
+            "ogretme_puani": 70,
+            "eglence_puani": 60,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Sultan Sevgi TURGUT",
@@ -755,7 +760,12 @@
             "link": "https://avesis.yildiz.edu.tr/bozden",
             "erkek_mi": true,
             "dersler": [],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 80,
+            "kolaylik_puani": 70,
+            "ogretme_puani": 80,
+            "eglence_puani": 80,
+            "oy_sayisi": 1
         },
         {
             "ad": "Arş. Grv. Emre PARLAK",
@@ -826,10 +836,10 @@
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
             "anlatim_puani": 90,
-            "kolaylik_puani": 50,
+            "kolaylik_puani": 60,
             "ogretme_puani": 90,
             "eglence_puani": 80,
-            "oy_sayisi": 2
+            "oy_sayisi": 3
         },
         {
             "ad": "Arş. Grv. İdris DEMİR",
@@ -857,11 +867,11 @@
             "erkek_mi": true,
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
-            "anlatim_puani": 80,
-            "kolaylik_puani": 70,
-            "ogretme_puani": 80,
-            "eglence_puani": 60,
-            "oy_sayisi": 1
+            "anlatim_puani": 65,
+            "kolaylik_puani": 60,
+            "ogretme_puani": 65,
+            "eglence_puani": 55,
+            "oy_sayisi": 2
         },
         {
             "ad": "Arş. Grv. Hatice ERDİRİK",
@@ -870,11 +880,11 @@
             "erkek_mi": false,
             "dersler": [],
             "hoca_aktif_gorevde_mi": true,
-            "anlatim_puani": 65,
-            "kolaylik_puani": 80,
-            "ogretme_puani": 65,
-            "eglence_puani": 70,
-            "oy_sayisi": 2
+            "anlatim_puani": 73,
+            "kolaylik_puani": 70,
+            "ogretme_puani": 73,
+            "eglence_puani": 76,
+            "oy_sayisi": 3
         },
         {
             "ad": "Arş. Grv. Meliha Gizem ÇELİK",
