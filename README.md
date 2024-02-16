@@ -93,6 +93,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Bunun yanında bir **Lisans** öğrencisi sonradan dilekçe yoluyla **Yüksek Lisans** dersi alıp **Mesleki Seçmeli 1** yerine saydırabiliyor. Ya da ders seçim günlerinde başka bölümlerden basit bir **programlama** dersi alıp, yine **Mesleki Seçmeli 1** yerine saydırabiliyor. Hatta bi ara kontenjan olmadığı için **Yol Aydınlatması** adında bir dersi birsürü kişi almıştı.
   - 📘 Ayrıca **Sosyal Seçmeli** havuzu da çok geniş, mesela **Basketbol** ya da **Arapça** dersi alabiliyorsunuz. Suryeli arkadaşlar genelde seçmeli olarak **Arapça** dersi alıp rahat ediyorlar.
   - 📘 Bizim bölümde **Ders Seçimi** hep sıkıntılı olmuştur. Bunun da sebebi bazı hocaların rahatlarını bozmak istememesidir. Bunun ceremesini de tabii ki biz öğrenciler çekiyor.
+- 💡 **KOOP**
+  - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
 - 💡 **Lab**
   - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
