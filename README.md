@@ -403,7 +403,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
-    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri--en-popüler-hoca-22-oy)
     - [AEL](#-dr-ahmet-elbir)
@@ -558,7 +558,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 3. Yıl - Güz
 
 
-#### 📘 Algoritma Analizi 👑 En popüler ders (7 oy)
+#### 📘 Algoritma Analizi 👑 En popüler ders (8 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
@@ -568,7 +568,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan)
@@ -729,9 +729,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Traktör Reis_**: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
 
 
@@ -776,9 +776,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2 
   - 🏷️ **Ders Tipi:** Zorunlu
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
 
 
@@ -1186,8 +1186,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
@@ -1203,8 +1203,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
@@ -1361,7 +1361,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Usmanaga_**: Bazı sınavları bile kendisi hazırlamıyor sınav esnasında biz ona sorunca görüyor bizimle beraber kafa yoruyor. Başkasına hazırlatıyor neyse ama hiç bakmamış olması çok kötü. Her sınavında düzeltme yapılması gerekiyor. Bu niye diğer hocalarda olmuyor, niye Elif Hoca'nın her sınavında oluyor? Sınav esnasında düzeltme yapınca her şey çözüldü sanıyorlar ama kimse bizim o yanlışlık yüzünden ne kadar süre harcadığımızı sormuyor ne gibi bir strateji ile sınavı çözdüğümüzü bilmiyor. Sınavları en geç okuyan hocalardan. 1.vizeyi finale 1 hafta kala açıklıyor. Bazen finali büt gecesi açıklıyor sabah bi bakıyorsunuz meğer o gün sınavınız varmış dün gece belli olmuş ve saati geçmiş. Sınav kağıdına itiraz ettirmiyor zaten isteseniz de edemezsiniz çünkü o okuyana kadar kağıdınızı unutmuş oluyorsunuz. Ama dersi iyi anlatıyor. Ha bu arada mail konusunda da çok iyi denemez ama çok kötü de değil. %50 ihtimalle ulaşıyorsunuz. Bence artık bir şey öğretmek gibi bir derdi yok. Ben ne seçmeli ne de zorunlu derslerden Elif Hoca'yı seçmenizi önermezdim. Ama zorunlu derslerde diğer seçenekler de pek iyi değil. Hocayla alakalı bir sorunum gerçekten yok zaten mezunum. Burada kalan arkadaşlara tavsiye vermekten ziyade belki hoca bir gün görür bu yazdıklarımı da bu konularda iyileştirme yapma yoluna gider diye yazıyorum. Çünkü kimse okul boyunca fikirlerimizi sormadı. Tek derdim ilgili kişilerin bu söylediklerimi eleştiri olarak kabul edip en azından birkaç tanesinde iyileştirme yapması. Bunu ifade edebileceğimiz bir platform yok okulda. Ben mezun olduğum okulun daha iyi olmasını istiyorum. Adının iyi anılmasını istiyorum. Saygılarımla.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-7-oy)
+  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-8-oy)
   - 📖 [Görüntü İşleme](#-görüntü-i̇şleme)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
 - ⭐ **Yıldız Sayıları:**
@@ -1555,7 +1555,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
-  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-7-oy)
+  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-8-oy)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
 - ⭐ **Yıldız Sayıları:**
