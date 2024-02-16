@@ -128,11 +128,11 @@ def guncelle_ders_yildizlari(data, sheets_url):
     else:
         en_populer_ders = "MEVCUT DEĞİL"  # veya uygun bir varsayılan değer
         en_populer_ders_oy_sayisi = 0  # veya uygun bir varsayılan değer
-
-    data[EN_POPULER_DERS] = {
+    if data.get(EN_POPULER_DERS,{}).get(OY_SAYISI,0) != int(en_populer_ders_oy_sayisi):
+        data[EN_POPULER_DERS] = {
         DERS_ADI: en_populer_ders,
         OY_SAYISI: int(en_populer_ders_oy_sayisi),
-    }
+        }
     for ders in data[DERSLER]:
         name = ders.get(AD)
         if name in yildizlar_grouped.index:
