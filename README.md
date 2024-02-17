@@ -1503,6 +1503,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir.
   - 👤 **_Madmax_**: Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar.
+  - 👤 **_Gariban_**: Gömülü sistemler dersini aldım. Ders slytlari çok karmaşık ve bazen anlamsız. Sakin bir hoca ve güzel anlatıyor. Sınavlardaki sorular zor olabilir özellikle finalde ama anlattıkları konulardan ve gayet anlamlı sorular. Puanlaması adil olduğunu düşünüyorum ama bazı sorulara fazla puan veriyor olabilir. Genel olarak dersi güzel ve eğiticiydi.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
