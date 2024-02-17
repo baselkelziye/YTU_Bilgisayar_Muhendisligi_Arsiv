@@ -1339,6 +1339,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Tehlikeli Pinokyo_**: Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir.
   - 👤 **_Madmax_**: Çok tatlı ve iyi niyetli bir hocamız. Ama sınavları okurken gidişattan puan alırım beklentisine sakın girmeyin. Sonuç doğruysa tam puan alırsınız, tüm işlem aşamaları doğruysa bile sonuç yanlışsa puan almanız çok zor.
   - 👤 **_Dd_**: İyi hiş bir hoca, yardımcı, anlatımı biraz eksik kalır
+  - 👤 **_Blessed Camel_**: Bölümdeki en neşeli hocadır kendileri. Çoğu derste uykunuz gelirken banu hoca öğrenciyi çok iyi derste tutabilir. Bazen biraz fazla kaçırır ama ders anlatışı da fena değildir. Not konusunda da ortalama sayılır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
