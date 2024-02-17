@@ -8,6 +8,7 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay.
   - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
+  - 👤 **_Blessed Camel_**: Donanım dersi o yüzden pek ilgi çekici gelmiyor ilk başta ama işledikçe sevmeye başlıyorsun ve çok zor da değil. Sonuçta insanı geliştiriyor verimli bir ders
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
