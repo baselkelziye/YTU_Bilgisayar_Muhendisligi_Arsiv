@@ -368,6 +368,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+    - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -383,6 +384,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+    - 👤 **_Blessed Camel_**: Müfredat olarak önemli konuları içerir ve klasik C yazılım dersi olarak sınavları zor olur.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -466,6 +468,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+    - 👤 **_Blessed Camel_**: Bölümün en kritik derslerinden. Alacağınız verim hocanıza göre değişir. Bu dersi alırken asla bölümle yetinmeyin kendinizi ek olarak da geliştirin
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆

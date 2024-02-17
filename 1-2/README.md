@@ -115,6 +115,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
+  - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin
 - ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
 
@@ -138,6 +139,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - 👤 **_Blessed Camel_**: Müfredat olarak önemli konuları içerir ve klasik C yazılım dersi olarak sınavları zor olur.
 - ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 
