@@ -1443,6 +1443,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sakin bir hoca, iyi niyetli, yoklama alır.
   - 👤 **_Tehlikeli Pinokyo_**: Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
+  - 👤 **_Isimsiz_**: iyi hoca fakat verdiği dersler biraz sıkıcı
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
