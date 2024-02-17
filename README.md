@@ -1657,6 +1657,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ufouser_**: Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum
   - 👤 **_Violancello_**: Dersleri güzel anlatan, anlattığı konuların gerçek hayat ve sektördeki uygulamaları hakkında bilgi veren, muhabbeti güzel bir hoca. Fakat harf notlarını çok yüksek tutuyor ve itiraz edince bazen sert tepkiler veriyor.
   - 👤 **_Dd_**: Havalı bir hoca, iyi anlatıyor, odevlerin tailmatları uygulamazsanız kalırsınız (odevin ismi bir boşluk için sıfı verdi)
+  - 👤 **_Blessed Camel_**: Anlatış biçimi olarak çok abartılan ve bence abartıldığı kadar da iyi olmayan bi hoca. Ama öğrencilere aşırı yakındır adam gibi adamdır kendileri. Derste de sektörle ilgili genel kültür bilgileri verir hikayeler anlatır genel olarak faydalı geçer.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
@@ -1705,6 +1706,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** EEF-DZ32
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Hocam tahtaya yazmasanız çok daha iyi olacak aslında. Eğer modunda olduğu bir günde ise 10 numara ders işler hem eğlenceli hem bilgili ama bazen gelip robot gibi anlatıp çıkıyor genel olarak iyi insan ve iyi hocadır
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
@@ -1743,6 +1745,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir.
+  - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
