@@ -1868,6 +1868,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-032
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17253](https://avesis.yildiz.edu.tr/17253)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Çok rahat bir hoca ve bu sizi sinir eder dua edin işiniz düşmesin
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
@@ -2027,6 +2028,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-211
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/sturgut/](https://avesis.yildiz.edu.tr/sturgut/)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Öğrenciyle en iyi empati yapan hoca. Ne işiniz düştüyse gidin illaki yardımcı olur argörler arasında en iyilerinden
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
