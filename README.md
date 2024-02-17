@@ -2095,6 +2095,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/balik](https://avesis.yildiz.edu.tr/balik)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Dd_**: Yoklamayı dikkat eden hoca, ingilizcede anlatıyor i, slaide okur geçer, sınavları kalsik ise soruya aklınıza ne geliyorsa yazın puan verir
+  - 👤 **_Isimsiz_**: 😴
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Ağ Teknolojileri](#-ağ-teknolojileri)
