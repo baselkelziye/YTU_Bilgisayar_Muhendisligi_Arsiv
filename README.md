@@ -1338,6 +1338,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Astro_**: Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.
   - 👤 **_Tehlikeli Pinokyo_**: Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir.
   - 👤 **_Madmax_**: Çok tatlı ve iyi niyetli bir hocamız. Ama sınavları okurken gidişattan puan alırım beklentisine sakın girmeyin. Sonuç doğruysa tam puan alırsınız, tüm işlem aşamaları doğruysa bile sonuç yanlışsa puan almanız çok zor.
+  - 👤 **_Dd_**: İyi hiş bir hoca, yardımcı, anlatımı biraz eksik kalır
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
