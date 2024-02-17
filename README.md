@@ -1806,6 +1806,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-024
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
@@ -1883,6 +1884,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-211
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
@@ -2058,6 +2060,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti.
+  - 👤 **_Blessed Camel_**: Sınavlardan önce bi bizi soymadığı kalıyor ama iyi bir insan
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
