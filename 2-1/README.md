@@ -143,6 +143,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders.
+  - 👤 **_Blessed Camel_**: Bölümün en kritik derslerinden. Alacağınız verim hocanıza göre değişir. Bu dersi alırken asla bölümle yetinmeyin kendinizi ek olarak da geliştirin
 - ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
 

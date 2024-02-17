@@ -7,6 +7,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
+  - 👤 **_Blessed Camel_**: Müfredat olarak önemli konuları içerir ve klasik C yazılım dersi olarak sınavları zor olur.
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
   - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
