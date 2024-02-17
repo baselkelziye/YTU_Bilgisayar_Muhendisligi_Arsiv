@@ -7,6 +7,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
+  - 👤 **_Blessed Camel_**: Kod yazarken başıma şantiyeden beton parçası düşebileceği için çok önemli bir ders millet neden yakınıyor anlamıyorum ?!
 - ⭐ **Yıldız Sayıları:**
   - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
   - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
