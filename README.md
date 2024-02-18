@@ -1825,6 +1825,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Blessed Camel_**: Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır
+  - 👤 **_Traktör Reis_**: Adam gibi adam, amacı öğretmek. Öğrenciyi saçma sapan işlerle zorlamak gibi bir derdi yok. Öğrenciye olabildiğince yardımcı oluyor. Notlandırması da güzel. Güler yüzlü, sizinle yakın iletişim kurmaya çalışıyor. Açık ara en iyi araştırma görevlisi.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
