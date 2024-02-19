@@ -19,8 +19,10 @@ class CustomProgressDialog(QProgressDialog):
         self.setAutoClose(True)
         # Sürekli dönen bir hale getir
         self.setRange(0, 0)
+
+
 class CustomProgressDialogWithCancel(CustomProgressDialog):
-    def __init__(self, title, parent=None, fonksiyon = None):
+    def __init__(self, title, parent=None, fonksiyon=None):
         super().__init__(title, parent)
         self.fonksiyon = fonksiyon
         self.initUI()
@@ -31,6 +33,7 @@ class CustomProgressDialogWithCancel(CustomProgressDialog):
         self.setCancelButton(self.iptal_butonu)
         # İptal butonunun tıklama olayını engellemek için event filter ekleyin
         self.iptal_butonu.installEventFilter(self)
+
     def eventFilter(self, obj, event):
         if obj == self.iptal_butonu and event.type() == QEvent.Type.MouseButtonPress:
             self.fonksiyon()

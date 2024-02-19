@@ -159,9 +159,7 @@ class GitIslemleriWindow(QDialog):
 
     def push_changes(self):
         commit_mesaji, ok_pressed = SatirAtlayanInputDialog.getMultiLineText(
-            self,
-            "Commit Mesajı",
-            "Lütfen commit mesajını giriniz:"
+            self, "Commit Mesajı", "Lütfen commit mesajını giriniz:"
         )
         if not ok_pressed:
             QMessageBox.information(self, "İptal", "İşlem iptal edildi.")

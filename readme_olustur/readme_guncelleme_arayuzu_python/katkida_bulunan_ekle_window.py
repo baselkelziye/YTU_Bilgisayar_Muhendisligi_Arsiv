@@ -18,6 +18,7 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
 from close_event import closeEventHandler
 
+
 class BaseKatkidaBulunanWindow(QDialog):
     def __init__(self, parent):
         super().__init__(parent)
@@ -87,7 +88,9 @@ class BaseKatkidaBulunanWindow(QDialog):
         label_baslik = QLabel("Başlık")
         label_baslik.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
         iletisim_bilgisi_baslik = QLineEdit(baslik)
-        iletisim_bilgisi_baslik.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
+        iletisim_bilgisi_baslik.setSizePolicy(
+            QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum
+        )
         text_layout.addWidget(label_baslik)
         text_layout.addWidget(iletisim_bilgisi_baslik)
 
@@ -95,7 +98,9 @@ class BaseKatkidaBulunanWindow(QDialog):
         label_link = QLabel("Link")
         label_link.setSizePolicy(QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Fixed)
         iletisim_bilgisi_link = QLineEdit(link)
-        iletisim_bilgisi_link.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        iletisim_bilgisi_link.setSizePolicy(
+            QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum
+        )
         text_layout.addWidget(label_link)
         text_layout.addWidget(iletisim_bilgisi_link)
 

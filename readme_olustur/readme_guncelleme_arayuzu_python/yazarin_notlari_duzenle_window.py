@@ -81,7 +81,10 @@ class YazarinNotlariWindow(QDialog):
         self.notlariYukle()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kelime:")
             if ok:
                 self.searchNotes(text)
@@ -141,7 +144,7 @@ class YazarinNotlariWindow(QDialog):
         for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
             widget = self.notlarLayout.itemAt(idx).widget()
             if isinstance(widget, QPushButton):
-                if query.replace('İ','i').lower() in not_.replace('İ','i').lower():
+                if query.replace("İ", "i").lower() in not_.replace("İ", "i").lower():
                     widget.show()
                     size += 1
                 else:
@@ -182,7 +185,8 @@ class YazarinNotlariWindow(QDialog):
 
             for idx, not_ in enumerate(self.data[ACIKLAMALAR]):
                 btn = QPushButton(
-                    f"Not {idx + 1}: {kisaltMetin(not_, maks_uzunluk=50)}", self.scrollWidget
+                    f"Not {idx + 1}: {kisaltMetin(not_, maks_uzunluk=50)}",
+                    self.scrollWidget,
                 )  # İlk 30 karakteri göster
                 btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
