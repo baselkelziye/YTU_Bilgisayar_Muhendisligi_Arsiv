@@ -98,7 +98,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💡 **KOOP**
   - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
 - 💡 **Lab**
-  - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir.
+  - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir. Genelde dönemin ilk 3-4 haftası lablar işlenmez.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
 - 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
