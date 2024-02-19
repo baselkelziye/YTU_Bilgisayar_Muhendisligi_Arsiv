@@ -24,7 +24,7 @@
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
 - 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/Veri%20Yap%C4%B1lar%C4%B1%20Ve%20Algoritmalar%20.pdf) GitHub render edemiyorsa indirin... ✨
-- 📄 [İrem'in el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 [İrem'in el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
