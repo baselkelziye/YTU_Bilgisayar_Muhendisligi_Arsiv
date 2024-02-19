@@ -2220,6 +2220,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h2 align='center'>🌟 <b><i>Sait Yalçın</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Ahmet Akib Gültekin</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/A1A1G2'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7/'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Ali Albayrak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
