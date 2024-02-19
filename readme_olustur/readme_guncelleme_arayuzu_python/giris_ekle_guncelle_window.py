@@ -8,7 +8,7 @@ from PyQt6.QtWidgets import (
     QHBoxLayout,
     QDialog,
     QVBoxLayout,
-    QSizePolicy
+    QSizePolicy,
 )
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from metin_islemleri import kisaltMetin
@@ -74,27 +74,30 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 )  # İlk 30 karakteri göster
                 btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
                 btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
-                sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
+                sizePolicy = QSizePolicy(
+                    QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred
+                )
                 btn.setSizePolicy(sizePolicy)
                 btn_layout.addWidget(btn)
                 # Yukarı Taşı butonu
                 upBtn = QPushButton("Yukarı çıkar", self.scrollWidget)
-                upBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i-1))
+                upBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i - 1))
                 upBtn.setStyleSheet(YUKARI_BUTON_STILI)
                 up_down_btn_layout.addWidget(upBtn)
 
                 # Aşağı Taşı butonu
                 downBtn = QPushButton("Aşağı indir", self.scrollWidget)
                 downBtn.setStyleSheet(ASAGI_BUTON_STILI)
-                downBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i+1))
+                downBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i + 1))
                 up_down_btn_layout.addWidget(downBtn)
                 btn_layout.addLayout(up_down_btn_layout)
                 self.notlarLayout.addLayout(btn_layout)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")
+
     def notlariTemizle(self):
         # Layout içinde dolaş ve her bir item'ı sil
-        for i in reversed(range(self.notlarLayout.count())): 
+        for i in reversed(range(self.notlarLayout.count())):
             layoutItem = self.notlarLayout.itemAt(i)
             # Eğer layout item bir widget'a sahipse, widget'ı sil
             if layoutItem.widget():
@@ -108,11 +111,13 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 subLayout.deleteLater()  # Alt layout'u bellekten tamamen sil
             # Eğer layout item bir spacer ise, onu çıkar
             elif layoutItem.spacerItem():
-                self.notlarLayout.removeItem(layoutItem)  # Spacer item'ı layout'tan çıkar
+                self.notlarLayout.removeItem(
+                    layoutItem
+                )  # Spacer item'ı layout'tan çıkar
 
     def layoutuTemizle(self, layout):
         # Verilen layout içinde dolaş ve her bir item'ı sil
-        for i in reversed(range(layout.count())): 
+        for i in reversed(range(layout.count())):
             layoutItem = layout.itemAt(i)
             if layoutItem.widget():
                 widget = layoutItem.widget()
@@ -129,6 +134,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         self.notlariTemizle()
         self.notlariYukle()
         self.clearFiltersButton.hide()  # Temizle butonunu gizle
+
     def notTasi(self, idx, idx2):
         total_items = self.notlarLayout.count()
 
@@ -141,9 +147,12 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         idx2 %= total_items
         self.btnSwap(
             self.notlarLayout.itemAt(idx).layout().itemAt(0).widget(),  # Mevcut buton
-            self.notlarLayout.itemAt(idx2).layout().itemAt(0).widget(),  # Bir alttaki buton
+            self.notlarLayout.itemAt(idx2)
+            .layout()
+            .itemAt(0)
+            .widget(),  # Bir alttaki buton
             idx,
-            idx2
+            idx2,
         )
 
     # buton swap işi
@@ -158,7 +167,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             self.data[ICINDEKILER][idx1],
         )
         self.jsonKaydet()
-    
+
     def jsonDosyasiniYukle(self):
         try:
             with open(GIRIS_JSON_PATH, "r", encoding="utf-8") as file:
@@ -200,11 +209,15 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
         for idx, not_ in enumerate(self.data[ICINDEKILER]):
             widget = self.notlarLayout.itemAt(idx).itemAt(0).widget()
             if isinstance(widget, QPushButton):
-                if query.replace('İ','i').lower() in not_.replace('İ','i').lower():
-                    self.layoutGorunumDegistir(self.notlarLayout.itemAt(idx), gorunum=True)
+                if query.replace("İ", "i").lower() in not_.replace("İ", "i").lower():
+                    self.layoutGorunumDegistir(
+                        self.notlarLayout.itemAt(idx), gorunum=True
+                    )
                     size += 1
                 else:
-                    self.layoutGorunumDegistir(self.notlarLayout.itemAt(idx), gorunum=False)
+                    self.layoutGorunumDegistir(
+                        self.notlarLayout.itemAt(idx), gorunum=False
+                    )
         if size == len(self.data[ICINDEKILER]):
             self.clearFilters(is_clicked=False)
             return
@@ -213,6 +226,7 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             self.clearFiltersButton.show()
         else:
             self.clearFiltersButton.hide()
+
     def layoutGorunumDegistir(self, layout, gorunum):
         for i in range(layout.count()):
             item = layout.itemAt(i)
@@ -223,7 +237,9 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
                 else:
                     widget.hide()
             elif item.layout() is not None:  # Eğer item bir alt layout ise
-                self.layoutGorunumDegistir(item.layout(), gorunum)  # Fonksiyon kendini rekürsif olarak çağırır
+                self.layoutGorunumDegistir(
+                    item.layout(), gorunum
+                )  # Fonksiyon kendini rekürsif olarak çağırır
 
     def baslikDuzenle(self):
         self.aciklamaDuzenle(BASLIK)
@@ -256,11 +272,20 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             QMessageBox.critical(self, "Hata", f"Dosya yazılırken bir hata oluştu: {e}")
 
     def notEkle(self):
-        self.duzenlemePenceresi = IcindekilerDuzenleWindow(None, self.data,"",ICINDEKILER, GIRIS_JSON_PATH, self)
+        self.duzenlemePenceresi = IcindekilerDuzenleWindow(
+            None, self.data, "", ICINDEKILER, GIRIS_JSON_PATH, self
+        )
         self.duzenlemePenceresi.show()
 
     def notDuzenle(self, idx):
-        self.duzenlemePenceresi = IcindekilerDuzenleWindow(idx, self.data, self.data.get(ICINDEKILER,[""])[idx],ICINDEKILER, GIRIS_JSON_PATH, self)
+        self.duzenlemePenceresi = IcindekilerDuzenleWindow(
+            idx,
+            self.data,
+            self.data.get(ICINDEKILER, [""])[idx],
+            ICINDEKILER,
+            GIRIS_JSON_PATH,
+            self,
+        )
         self.duzenlemePenceresi.show()
 
 
@@ -338,7 +363,6 @@ class IcindekilerDuzenleWindow(QDialog):
         cp = QGuiApplication.instance().primaryScreen().availableGeometry().center()
         qr.moveCenter(cp)
         self.move(qr.topLeft())
-
 
     def kaydet(self):
         baslik = self.baslik_input.text().strip()

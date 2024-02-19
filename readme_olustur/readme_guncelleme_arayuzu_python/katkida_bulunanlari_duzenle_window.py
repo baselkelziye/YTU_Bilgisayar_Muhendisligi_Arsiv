@@ -36,7 +36,7 @@ except locale.Error:
 
 
 class KatkidaBulunanGuncelleWindow(QDialog):
-    def __init__(self,parent=None):
+    def __init__(self, parent=None):
         super().__init__(parent)
         self.setModal(True)
         self.is_programmatic_close = False
@@ -116,7 +116,11 @@ class KatkidaBulunanGuncelleWindow(QDialog):
     def bolumAdiDuzenle(self):
         # Bölüm adını düzenle
         text, ok = QInputDialog.getText(
-            self, "Bölüm Adı", "Bölüm adı: ", QLineEdit.EchoMode.Normal, self.data[BOLUM_ADI]
+            self,
+            "Bölüm Adı",
+            "Bölüm adı: ",
+            QLineEdit.EchoMode.Normal,
+            self.data[BOLUM_ADI],
         )
         if ok:
             cevap = QMessageBox.question(
@@ -175,7 +179,10 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             widget = self.layout.itemAt(idx).widget()
             katkida_bulunan_adi = katkida_bulunan[AD]
             if isinstance(widget, QPushButton):
-                if query.replace('İ','i').lower() in katkida_bulunan_adi.replace('İ','i').lower():
+                if (
+                    query.replace("İ", "i").lower()
+                    in katkida_bulunan_adi.replace("İ", "i").lower()
+                ):
                     widget.show()
                     size += 1
                 else:
@@ -190,7 +197,10 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             self.clearFiltersButton.hide()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kelime:")
             if ok:
                 self.searchNotes(text)
