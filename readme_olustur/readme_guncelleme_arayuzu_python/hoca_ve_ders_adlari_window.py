@@ -1,8 +1,17 @@
 import sys
 import json
 import locale
-from PyQt6.QtWidgets import QApplication, QDialog, QHBoxLayout, QListWidget, QPushButton, QVBoxLayout, QMessageBox
+from PyQt6.QtWidgets import (
+    QApplication,
+    QDialog,
+    QHBoxLayout,
+    QListWidget,
+    QPushButton,
+    QVBoxLayout,
+    QMessageBox,
+)
 from degiskenler import *
+
 
 class HocaDersAdlariWindow(QDialog):
     def __init__(self, parent=None):
@@ -11,7 +20,6 @@ class HocaDersAdlariWindow(QDialog):
         super().__init__(parent)  # parent'ı super fonksiyonuna geçir
         self.setModal(True)
         self.initUI()
-
 
     def initUI(self):
         self.setWindowTitle("Hocalar ve Dersler Listesi")
@@ -45,18 +53,17 @@ class HocaDersAdlariWindow(QDialog):
         # Ana pencereye yatay düzenleyiciyi ekle
         self.setLayout(h_layout)
 
-
     def dersleri_oku_ve_sirala(self, dosya_adi):
         # Türkçe karakterlerin doğru sıralanabilmesi için Türkçe locale ayarını kullanacağız.
         # Sistem locale ayarlarınızın bu dili desteklediğinden emin olun.
         locale.setlocale(locale.LC_ALL, "tr_TR.utf8")
-
 
         def turkce_sirala(ders_listesi):
             """
             Verilen ders adlarını Türkçe karakterleri de dikkate alarak alfabetik sıraya dizer.
             """
             return sorted(ders_listesi, key=locale.strxfrm)
+
         with open(dosya_adi, "r", encoding="utf-8") as dosya:
             veri = json.load(dosya)
 
@@ -64,11 +71,11 @@ class HocaDersAdlariWindow(QDialog):
         ders_adlari = [ders[AD] for ders in veri[DERSLER] if ders[AD]]
         ders_adlari = turkce_sirala(ders_adlari)
         return ders_adlari
+
     def hocalari_oku_ve_sirala(self, dosya_adi):
         # JSON dosyasını oku
         with open(dosya_adi, "r", encoding="utf-8") as file:
             data = json.load(file)
-
 
         def sirala_ve_ayir(hocalar_listesi):
             """
@@ -86,18 +93,21 @@ class HocaDersAdlariWindow(QDialog):
 
             # Hocaların adlarını önceliklere göre ve alfabetik sıraya göre sırala
             sirali_hocalar = sorted(
-                hocalar_listesi, key=lambda hoca: (unvan_önceligi(hoca), locale.strxfrm(hoca))
+                hocalar_listesi,
+                key=lambda hoca: (unvan_önceligi(hoca), locale.strxfrm(hoca)),
             )
             return sirali_hocalar
-
 
         # Hoca adlarını işle ve unvanları at
         hoca_names = [hoca[AD] for hoca in data[HOCALAR] if hoca[AD]]
         hoca_names = sirala_ve_ayir(hoca_names)
         return hoca_names
+
     def kopyala(self, liste_widget):
         # Tüm öğeleri kopyala
-        kopyalanacak_metin = "\n".join([liste_widget.item(i).text() for i in range(liste_widget.count())])
+        kopyalanacak_metin = "\n".join(
+            [liste_widget.item(i).text() for i in range(liste_widget.count())]
+        )
         QApplication.clipboard().setText(kopyalanacak_metin)
 
         # Kopyalama işlemi başarılı mesajı
