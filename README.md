@@ -62,6 +62,7 @@ YTU CE notlar reposu. Bu repository, Yıldız Teknik Üniversitesi Bilgisayar M�
 - 👉 Ödevler lablar vs. cevapları %100 doğru değildir.
 - 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin, <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya (ders notları vb.) ekleyebilirsin ya da merge request atabilirsin.
 - 👉 Büyük dosyalar GitHub üstünden açılamadığı için, repoyu yerel bilgisayarınıza indirip açmanız tavsiye edilir...
+- 👉 Eğer sadece bir klasörü indirmek istiyorsanız [Klasör İndirme Linki](https://download-directory.github.io)'ne tıklayarak ilgili klasörün adresini yapıştırarak indirme işlemini yapabilirsiniz. Kullanımı öğrenmek için [linki](https://www.gitkraken.com/learn/git/github-download#how-to-download-a-folder-from-github) ziyaret edebilirsiniz.
 
 
 ### 🔍 Kavramlar:
