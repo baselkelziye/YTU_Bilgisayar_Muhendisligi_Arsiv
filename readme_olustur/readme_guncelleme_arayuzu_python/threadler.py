@@ -7,6 +7,7 @@ import subprocess
 import threading
 import queue
 
+
 # Uzun süren işlemi gerçekleştirecek thread sınıfı
 class HocaKaydetThread(QThread):
     finished = pyqtSignal()  # İşlem bittiğinde sinyal göndermek için
@@ -82,9 +83,9 @@ class KatkiEkleThread(QThread):
             if BOLUM_ADI not in self.data:
                 self.data[BOLUM_ADI] = "Katkıda Bulunanlar"
             if BOLUM_ACIKLAMASI not in self.data:
-                self.data[
-                    BOLUM_ACIKLAMASI
-                ] = "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
+                self.data[BOLUM_ACIKLAMASI] = (
+                    "Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir. Siz de katkıda bulunmak isterseniz bizimle iletişime geçin. Ya da merge request gönderin."
+                )
 
             if not self.ad:
                 self.finished.emit(False, "Ad kullanıcı adı boş olamaz!")

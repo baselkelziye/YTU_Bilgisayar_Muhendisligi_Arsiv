@@ -21,7 +21,7 @@ from PyQt6.QtGui import QIcon
 
 
 class TalimatDialog(QDialog):
-    def __init__(self,parent=None ,json_dosyasi=REPO_KULLANIMI_JSON_PATH):
+    def __init__(self, parent=None, json_dosyasi=REPO_KULLANIMI_JSON_PATH):
         super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -51,7 +51,9 @@ class TalimatDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+        )
 
         # ScrollArea için minimum boyutu belirle
         self.scrollArea.setMinimumSize(580, 300)
@@ -65,7 +67,10 @@ class TalimatDialog(QDialog):
         self.layout.addWidget(self.ekleBtn)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak talimat:")
             if ok:
                 self.searchTalimat(text)
@@ -78,7 +83,9 @@ class TalimatDialog(QDialog):
         for idx, kavram in enumerate(self.repo_data[TALIMATLAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
-                match = query.replace('İ','i').lower() in kavram.replace('İ','i').lower()
+                match = (
+                    query.replace("İ", "i").lower() in kavram.replace("İ", "i").lower()
+                )
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -212,7 +219,9 @@ class TalimatDialog(QDialog):
             self.jsonGuncelle()
 
     def talimatEkle(self):
-        yeni_talimat, ok = SatirAtlayanInputDialog.getMultiLineText(self, "Talimat Ekle", "Yeni Talimat:")
+        yeni_talimat, ok = SatirAtlayanInputDialog.getMultiLineText(
+            self, "Talimat Ekle", "Yeni Talimat:"
+        )
         info_baslik = "İptal"
         info_mesaj = "Talimat ekleme işlemi iptal edildi."
         if ok and yeni_talimat:
@@ -232,7 +241,6 @@ class TalimatDialog(QDialog):
             info_baslik = "Uyarı"
             info_mesaj = "Açıklama boş bırakılamaz."
         QMessageBox.information(self, info_baslik, info_mesaj)
-
 
     def jsonGuncelle(self):
         with open(self.json_dosyasi, "w", encoding="utf-8") as file:
@@ -302,7 +310,9 @@ class KavramDetayDialog(QDialog):
             aciklamaLabel.setAlignment(Qt.AlignmentFlag.AlignCenter)
             aciklamaLabel.setToolTip(aciklama)
             aciklamaLabel.setWordWrap(True)
-            aciklamaLabel.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+            aciklamaLabel.setSizePolicy(
+                QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding
+            )
             aciklamaLayout.addWidget(aciklamaLabel)
 
             duzenleBtn = QPushButton("Düzenle", self)
@@ -380,15 +390,15 @@ class KavramDetayDialog(QDialog):
                 self.parent().jsonGuncelle()
                 self.aciklamaListele()
                 info_baslik = "Başarılı"
-                info_mesaj = "Açıklama eklendi." 
+                info_mesaj = "Açıklama eklendi."
         if ok and yeni_aciklama == "":
             info_baslik = "Uyarı"
-            info_mesaj = "Açıklama boş bırakılamaz."     
+            info_mesaj = "Açıklama boş bırakılamaz."
         QMessageBox.information(self, info_baslik, info_mesaj)
 
 
 class KavramDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent = None):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent=None):
         super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -418,7 +428,9 @@ class KavramDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+        )
         # ScrollArea için minimum boyutu belirle
         self.scrollArea.setMinimumSize(650, 300)
         self.yenile()
@@ -437,7 +449,10 @@ class KavramDialog(QDialog):
             return {KAVRAMLAR: []}
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak kavram:")
             if ok:
                 self.searchKavram(text)
@@ -451,7 +466,9 @@ class KavramDialog(QDialog):
             layout = self.scrollLayout.itemAt(idx)
             kavram = kavram[KAVRAM]
             if isinstance(layout, QHBoxLayout):
-                match = query.replace('İ','i').lower() in kavram.replace('İ','i').lower()
+                match = (
+                    query.replace("İ", "i").lower() in kavram.replace("İ", "i").lower()
+                )
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -605,7 +622,7 @@ class KavramDialog(QDialog):
 
 
 class AciklamaDialog(QDialog):
-    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent = None):
+    def __init__(self, json_dosyasi=REPO_KULLANIMI_JSON_PATH, parent=None):
         super().__init__(parent)
         self.json_dosyasi = json_dosyasi
         self.repo_data = self.jsonVeriOku()
@@ -638,7 +655,9 @@ class AciklamaDialog(QDialog):
         self.scrollLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.layout.addWidget(self.scrollArea)
-        self.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOff)
+        self.scrollArea.setHorizontalScrollBarPolicy(
+            Qt.ScrollBarPolicy.ScrollBarAlwaysOff
+        )
         self.scrollArea.setMinimumSize(580, 300)
         self.yenile()
 
@@ -656,7 +675,10 @@ class AciklamaDialog(QDialog):
             return {ACIKLAMALAR: []}
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak açıklama:")
             if ok:
                 self.searchAciklama(text)
@@ -669,7 +691,10 @@ class AciklamaDialog(QDialog):
         for idx, aciklama in enumerate(self.repo_data[ACIKLAMALAR]):
             layout = self.scrollLayout.itemAt(idx)
             if isinstance(layout, QHBoxLayout):
-                match = query.replace('İ','i').lower() in aciklama.replace('İ','i').lower()
+                match = (
+                    query.replace("İ", "i").lower()
+                    in aciklama.replace("İ", "i").lower()
+                )
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -813,6 +838,7 @@ class AciklamaDialog(QDialog):
             info_baslik = "Uyarı"
             info_mesaj = "Açıklama boş bırakılamaz."
         QMessageBox.information(self, info_baslik, info_mesaj)
+
     def jsonGuncelle(self):
         with open(self.json_dosyasi, "w", encoding="utf-8") as file:
             json.dump(self.repo_data, file, indent=4, ensure_ascii=False)

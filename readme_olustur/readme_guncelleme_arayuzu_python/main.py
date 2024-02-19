@@ -21,6 +21,7 @@ from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 
+
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -88,9 +89,10 @@ class App(QWidget):
         # Dönem Ekle/Güncelle penceresini aç
         self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow(parent=self)
         self.donemEkleGuncelleWindow.show()
+
     def maasIstatistikleriDuzenle(self):
         if os.path.exists(MAAS_ISTATISTIKLERI_TXT_PATH):
-            with open(MAAS_ISTATISTIKLERI_TXT_PATH, 'r', encoding="utf-8") as dosya:
+            with open(MAAS_ISTATISTIKLERI_TXT_PATH, "r", encoding="utf-8") as dosya:
                 icerik = dosya.read()
         else:
             icerik = ""
@@ -98,8 +100,10 @@ class App(QWidget):
             self,
             "Maaş İstatistikleri",
             "Maaş İstatistikleri Düzenleme",
-            icerik,width=900,height=700
-            )
+            icerik,
+            width=900,
+            height=700,
+        )
         if ok and icerik != yeni_icerik:
             cevap = QMessageBox.question(
                 self,
@@ -110,7 +114,7 @@ class App(QWidget):
             )
             if cevap == QMessageBox.StandardButton.Yes:
                 # Yeni içeriği dosyaya yaz
-                with open(MAAS_ISTATISTIKLERI_TXT_PATH, 'w', encoding="utf-8") as dosya:
+                with open(MAAS_ISTATISTIKLERI_TXT_PATH, "w", encoding="utf-8") as dosya:
                     dosya.write(yeni_icerik)
                 QMessageBox.information(
                     self, "Başarılı", "Maaş İstatistikleri güncellendi."
@@ -119,6 +123,7 @@ class App(QWidget):
                 QMessageBox.information(
                     self, "İptal", "Maaş İstatistikleri güncellenmedi."
                 )
+
     def repoKullanimiDuzenle(self):
         self.repoKullanimiGuncelleWindow = RepoKullanimiDialog(parent=self)
         self.repoKullanimiGuncelleWindow.show()

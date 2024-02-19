@@ -6,8 +6,11 @@ import sys
 import bisect
 import locale
 import unicodedata
+
 # Locale'i Türkçe'ye ayarla
-locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')  # Sisteminize bağlı olarak bu değer değişebilir
+locale.setlocale(
+    locale.LC_ALL, "tr_TR.UTF-8"
+)  # Sisteminize bağlı olarak bu değer değişebilir
 
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -68,7 +71,9 @@ def en_iyi_eslesen_klasor_yolu_bul(baslangic_yolu, aranan_ad):
             skor = benzerlik_skoru(aranan_ad.lower(), klasor_ad.lower())
             # Örneğin Matematik 1 için Matematik 2 döndürmesin diye ek kontrol
             # ilk kontrol Matematik 1 için Matematik 2'yi, ikinci kontrol Matematik 2 için Matematik 1'i döndürmesin diye
-            if ('1' in aranan_ad and '2' in klasor_ad) or ('2' in aranan_ad and '1' in klasor_ad):
+            if ("1" in aranan_ad and "2" in klasor_ad) or (
+                "2" in aranan_ad and "1" in klasor_ad
+            ):
                 skor = 0
             # Her iki yüzde de %50'den büyükse, eşleşme olarak kabul et
             if (
@@ -118,15 +123,14 @@ def yerel_yoldan_github_linkine(klasor_yolu, repo_url=VARSAYILAN_GITHUB_URL):
 
 def hoca_siralama_anahtari(hoca):
     # Hoca aktif görevde mi kontrolü
-    aktif_gorevde_mi = hoca.get(HOCA_AKTIF_GOREVDE_MI,True)  # True/False değerini al
+    aktif_gorevde_mi = hoca.get(HOCA_AKTIF_GOREVDE_MI, True)  # True/False değerini al
     aktiflik_onceligi = 0 if aktif_gorevde_mi else 1  # Aktif hocalar önce gelsin
 
     unvan = hoca[AD].split()[0]  # İsmin ilk kelimesini (unvanı) al
     unvan_onceligi = unvanlarin_onceligi.get(unvan, 4)  # Unvan önceliği
-    
+
     # Önce aktiflik durumu, sonra unvan önceliği ve en son tam adı dikkate alarak tuple dön
     return (aktiflik_onceligi, unvan_onceligi, hoca[AD])
-
 
 
 # JSON dosyasını okuyan fonksiyon
@@ -136,14 +140,17 @@ def json_oku(json_dosyasi):
             return json.load(f)
     except FileNotFoundError:
         return None
+
+
 # txt dosyasını okuyan fonksiyon
 def txt_oku(txt_dosyasi):
     try:
-        with open(txt_dosyasi, 'r', encoding="utf-8") as dosya:
+        with open(txt_dosyasi, "r", encoding="utf-8") as dosya:
             # Dosyanın tamamını oku
             return dosya.read()
     except FileNotFoundError:
         return None
+
 
 def puanlari_yildiza_cevir(puan, max_yildiz_sayisi=10):
     puan = round(puan / 10) * 10  # Önce 10'a böl, yuvarla, sonra 10 ile çarp
@@ -161,7 +168,9 @@ def hocalari_readme_ye_ekle(bilgiler):
         return
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         if BOLUM_ADI in bilgiler:
-            f.write(f"<details>\n<summary><b>🎓 {bilgiler[BOLUM_ADI]}</b></summary>\n\n")
+            f.write(
+                f"<details>\n<summary><b>🎓 {bilgiler[BOLUM_ADI]}</b></summary>\n\n"
+            )
             f.write(f"\n\n\n## 🎓 {bilgiler[BOLUM_ADI]}\n")
         else:
             custom_write_error("Hocalar Bölüm adı bulunamadı.\n")
@@ -184,7 +193,9 @@ def hocalari_readme_ye_ekle(bilgiler):
         unvan_sayaci = 0
         baslik_str = "\n### {}\n"
         for hoca in sorted(bilgiler[HOCALAR], key=hoca_siralama_anahtari):
-            if unvan_sayaci < len(unvanlar) and hoca[AD].startswith(unvanlar[unvan_sayaci]):
+            if unvan_sayaci < len(unvanlar) and hoca[AD].startswith(
+                unvanlar[unvan_sayaci]
+            ):
                 tmp_unvan = ""
                 if unvan_sayaci == 0:
                     tmp_unvan = "Profesörler"
@@ -197,10 +208,13 @@ def hocalari_readme_ye_ekle(bilgiler):
 
                 f.write(baslik_str.format(tmp_unvan))
                 unvan_sayaci += 1
-            elif unvan_sayaci == len(unvanlar) and hoca.get(HOCA_AKTIF_GOREVDE_MI,True) == False:
+            elif (
+                unvan_sayaci == len(unvanlar)
+                and hoca.get(HOCA_AKTIF_GOREVDE_MI, True) == False
+            ):
                 unvan_sayaci += 1
                 f.write(baslik_str.format("Üniversitede Aktif Görevde Olmayan Hocalar"))
-            
+
             if AD not in hoca:
                 hoca[AD] = ""
             if OFIS not in hoca:
@@ -293,9 +307,9 @@ def hocalari_readme_ye_ekle(bilgiler):
 
 def donem_siralamasi(donem_key):
     if donem_key == LISANSUSTU:
-        return (1499,1499)
+        return (1499, 1499)
     if donem_key == ARTIK_MUFREDATA_DAHIL_OLMAYAN_DERSLER:
-        return (1500,1500)
+        return (1500, 1500)
     if donem_key == "Mesleki Seçmeli":
         return (998, 998)  # Mesleki Seçmeli dersleri en sona koy
     try:
@@ -313,8 +327,11 @@ def baslik_linki_olustur(baslik):
     # Oluşturulan linki döndür
     return f"(#-{baslik})"
 
+
 def ders_siralama_anahtari(ders):
     return ders.get(AD, "Z").replace("İ", "i").lower()
+
+
 def sıralı_ekle(liste, eleman, anahtar_fonksiyonu):
     # Elemanın karşılaştırma anahtarını hesapla
     eleman_anahtar = anahtar_fonksiyonu(eleman)
@@ -322,6 +339,8 @@ def sıralı_ekle(liste, eleman, anahtar_fonksiyonu):
     konum = bisect.bisect_left([anahtar_fonksiyonu(x) for x in liste], eleman_anahtar)
     # Elemanı doğru konuma ekle
     liste.insert(konum, eleman)
+
+
 # Dersleri yıl ve döneme göre gruplayıp README'ye ekleyen fonksiyon
 def dersleri_readme_ye_ekle(dersler):
     if DERSLER not in dersler or not isinstance(dersler[DERSLER], list):
@@ -373,7 +392,9 @@ def dersleri_readme_ye_ekle(dersler):
                 if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
                     f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
                     for gorus in ders[OGRENCI_GORUSLERI]:
-                        f.write(f"    - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
+                        f.write(
+                            f"    - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n"
+                        )
                     f.write(
                         f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
                     )
@@ -426,6 +447,7 @@ def dersleri_readme_ye_ekle(dersler):
                     f.write(f"    - {dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI]}\n")
         f.write("</details>\n\n")
 
+
 # Giriş bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
     with open(ANA_README_YOLU, "w", encoding="utf-8") as f:
@@ -442,6 +464,7 @@ def readme_ye_giris_ekle(giris_bilgileri):
         for item in giris_bilgileri["icindekiler"]:
             f.write(f"- 🔗 {item}\n")  # Link emojisi her madde için kullanılır
         f.write("</details>\n\n")
+
 
 def readmeye_hocalar_icin_kisaltmalar_ekle(data):
     """
@@ -462,11 +485,12 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
         f.write("</details>\n\n")
 
 
-
 # Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
-        f.write(f"<details>\n<summary><b>🛠 {repo_kullanimi_bilgileri[BASLIK]}</b></summary>\n\n")
+        f.write(
+            f"<details>\n<summary><b>🛠 {repo_kullanimi_bilgileri[BASLIK]}</b></summary>\n\n"
+        )
         f.write(
             f"\n\n\n## 🛠 {repo_kullanimi_bilgileri[BASLIK]}\n\n"
         )  # Araç kutusu emojisi
@@ -478,15 +502,16 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
         f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(
-                            repo_kullanimi_bilgileri[KAVRAMLAR],
-                            key=lambda x: unicodedata.normalize('NFKD', x[KAVRAM].lower())
-                            ):
+            repo_kullanimi_bilgileri[KAVRAMLAR],
+            key=lambda x: unicodedata.normalize("NFKD", x[KAVRAM].lower()),
+        ):
             f.write(
                 f"- 💡 **{kavram[KAVRAM]}**\n"
             )  # Ampul emojisi, fikir veya kavramı temsil eder
             for aciklama in kavram[ACIKLAMALAR]:
                 f.write(f"  - 📘 {aciklama}\n")  # Kitap emojisi, açıklamalar için
         f.write("</details>\n\n")
+
 
 # Yazar notlarını README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
@@ -501,9 +526,17 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
             )  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
         f.write("</details>\n\n")
 
+
 def readme_katkida_bulunanlar_ekle(veri):
-    veri[KATKIDA_BULUNANLAR] = sorted(veri[KATKIDA_BULUNANLAR], 
-                                        key=lambda x: (KATKIDA_BULUNMA_ORANI_DIZI.index(x.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])), x['ad']))
+    veri[KATKIDA_BULUNANLAR] = sorted(
+        veri[KATKIDA_BULUNANLAR],
+        key=lambda x: (
+            KATKIDA_BULUNMA_ORANI_DIZI.index(
+                x.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])
+            ),
+            x["ad"],
+        ),
+    )
     # Katkı oranlarına göre emojiler (örnek)
     EMOJILER = ["👑", "🌟", "💫", "✨", "🔹"]  # Bu listeyi ihtiyacınıza göre düzenleyin
 
@@ -513,25 +546,37 @@ def readme_katkida_bulunanlar_ekle(veri):
         f.write(f"<h2 align='center'>🤝 {veri['bolum_adi']}</h2>\n\n")
         f.write(f"{veri[BOLUM_ACIKLAMASI]}\n\n")
         for katkida_bulunan in veri[KATKIDA_BULUNANLAR]:
-            oran = katkida_bulunan.get(KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1])
+            oran = katkida_bulunan.get(
+                KATKIDA_BULUNMA_ORANI, KATKIDA_BULUNMA_ORANI_DIZI[-1]
+            )
             oran_index = KATKIDA_BULUNMA_ORANI_DIZI.index(oran)
             emoji = EMOJILER[oran_index]  # Katkı oranına göre emoji seçimi
             # Başlık seviyesini belirle
-            header_size = min(oran_index + 1 , 6)  # En fazla <h6> kullanılabilir
+            header_size = min(oran_index + 1, 6)  # En fazla <h6> kullanılabilir
             header_tag = f"h{header_size}"
             # Katkıda bulunanların isimlerini belirlenen başlık etiketi ile yaz
-            f.write(f"<{header_tag} align='center'>{emoji} <b><i>{katkida_bulunan.get(AD,'')}</i></b> {emoji}</{header_tag}>\n")
-            
+            f.write(
+                f"<{header_tag} align='center'>{emoji} <b><i>{katkida_bulunan.get(AD,'')}</i></b> {emoji}</{header_tag}>\n"
+            )
+
             # İletişim bilgilerini yan yana yaz
-            iletisim_bilgileri_html = " &nbsp".join([f"<a href='{bilgi.get(LINK, '')}'><b>{bilgi.get(BASLIK, '')}</b></a>" for bilgi in katkida_bulunan.get(ILETISIM_BILGILERI, [])])
+            iletisim_bilgileri_html = " &nbsp".join(
+                [
+                    f"<a href='{bilgi.get(LINK, '')}'><b>{bilgi.get(BASLIK, '')}</b></a>"
+                    for bilgi in katkida_bulunan.get(ILETISIM_BILGILERI, [])
+                ]
+            )
             if iletisim_bilgileri_html:
                 f.write(f"<p align='center'>{iletisim_bilgileri_html}</p>\n")
             f.write("\n")
         f.write("</details>\n\n")
 
+
 def readmeye_yildiz_gecmisi_ekle():
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(YILDIZ_GECMISI)
+
+
 def readmeye_maas_istatistikleri_ekle(veri):
     MAAS_BASLIK = "Bölüm Mezunları Maaş İstatistikleri"
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
@@ -539,6 +584,7 @@ def readmeye_maas_istatistikleri_ekle(veri):
         f.write(f"<h2 align='center'>💰 {MAAS_BASLIK}</h2>\n\n")
         f.write(veri)
         f.write("\n</details>\n\n")
+
 
 def sıralama_anahtarı(ders):
     yıl_sıralaması = [1, 2, 3, 4, 0]
@@ -670,7 +716,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
             # Faydalı olabilecek kaynaklar
             for kaynak in ders[FAYDALI_OLABILECEK_KAYNAKLAR]:
                 f.write(f"- 📄 {kaynak} ✨\n")
-        
+
         f.write(GENEL_CIKMIS_SORULAR_METNI)
         if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
@@ -756,7 +802,7 @@ def donemlere_gore_readme_olustur(donemler):
                 f.write(
                     f"- 💡 {tavsiye}\n"
                 )  # Ampul emoji, fikir veya tavsiye temsil eder
-            if donem.get(YIL,0) != 0:
+            if donem.get(YIL, 0) != 0:
                 f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")
                 # Kitap emoji, zorunlu dersleri temsil eder
         custom_write(f"{donem[DONEM_ADI]} README.md oluşturuldu.\n")
@@ -770,7 +816,12 @@ def ders_bilgilerini_readme_ile_birlestir(
         custom_write(f"{ders[AD]} README.md dönemine ekleniyor...\n")
         count = 0
         for donem in donemler:
-            if ders[TIP] == donem[DONEM_ADI] or ders[YIL] == donem[YIL] and ders[DONEM] == donem[DONEM] and not (ders[YIL] == 0 or ders[DONEM] == ""):
+            if (
+                ders[TIP] == donem[DONEM_ADI]
+                or ders[YIL] == donem[YIL]
+                and ders[DONEM] == donem[DONEM]
+                and not (ders[YIL] == 0 or ders[DONEM] == "")
+            ):
                 count += 1
                 dosya_yolu = os.path.join(
                     donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU), README_MD

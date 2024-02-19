@@ -1,13 +1,17 @@
 from PyQt6.QtWidgets import QPushButton, QVBoxLayout, QTextEdit, QDialog, QHBoxLayout
 from PyQt6.QtGui import QTextOption
 from degiskenler import *
+
+
 class SatirAtlayanInputDialog(QDialog):
-    def __init__(self, parent, title, label, text="", width = 400, height=300):
+    def __init__(self, parent, title, label, text="", width=400, height=300):
         super().__init__(parent)
         self.resize(width, height)  # Diyalog penceresinin boyutunu ayarla
         self.setWindowTitle(title)
         self.textEdit = QTextEdit(self)
-        self.textEdit.setWordWrapMode(QTextOption.WrapMode.WordWrap)  # Otomatik satır kaydırma
+        self.textEdit.setWordWrapMode(
+            QTextOption.WrapMode.WordWrap
+        )  # Otomatik satır kaydırma
         self.textEdit.setPlainText(text)
         self.textEdit.setAcceptRichText(False)  # Zengin metin kabul etme
 
