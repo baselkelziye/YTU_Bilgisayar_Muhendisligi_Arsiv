@@ -5,7 +5,7 @@ import re
 import sys
 import bisect
 import locale
-
+import unicodedata
 # Locale'i Türkçe'ye ayarla
 locale.setlocale(locale.LC_ALL, 'tr_TR.UTF-8')  # Sisteminize bağlı olarak bu değer değişebilir
 
@@ -478,8 +478,9 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
         f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(
-            repo_kullanimi_bilgileri[KAVRAMLAR], key=lambda x: locale.strxfrm(x[KAVRAM].lower())
-        ):
+                            repo_kullanimi_bilgileri[KAVRAMLAR],
+                            key=lambda x: unicodedata.normalize('NFKD', x[KAVRAM].lower())
+                            ):
             f.write(
                 f"- 💡 **{kavram[KAVRAM]}**\n"
             )  # Ampul emojisi, fikir veya kavramı temsil eder
