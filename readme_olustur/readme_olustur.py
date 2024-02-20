@@ -538,7 +538,14 @@ def readme_katkida_bulunanlar_ekle(veri):
         ),
     )
     # Katkı oranlarına göre emojiler (örnek)
-    EMOJILER = ["👑", "🌟", "💫", "✨", "🔹"]  # Bu listeyi ihtiyacınıza göre düzenleyin
+    EMOJILER = [
+        "👑",
+        "🌟",
+        "💫",
+        "✨",
+        "🔹",
+        "",
+    ]  # Bu listeyi ihtiyacınıza göre düzenleyin
 
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         # Bölüm başlığını ortala

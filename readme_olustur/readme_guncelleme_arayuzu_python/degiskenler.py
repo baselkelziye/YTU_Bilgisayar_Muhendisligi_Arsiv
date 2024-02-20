@@ -333,7 +333,7 @@ DERS_TIPLERI = [
     LISANSUSTU,
 ]
 DONEM_YILLARI = ["0", "1", "2", "3", "4"]
-KATKIDA_BULUNMA_ORANI_DIZI = ["Çok", "Orta", "Az"]
+KATKIDA_BULUNMA_ORANI_DIZI = ["Çok", "Orta Üst", "Orta", "Orta Alt", "Az", "Çok Az"]
 DONEMLER_DIZISI = [GUZ, BAHAR]
 DONEMLER_DIZISI_YOKLA_BERABER = [YOK, GUZ, BAHAR]
 
