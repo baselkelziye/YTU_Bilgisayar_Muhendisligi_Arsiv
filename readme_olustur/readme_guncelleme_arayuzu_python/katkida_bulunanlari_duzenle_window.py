@@ -177,8 +177,8 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         size = 0
         for idx, katkida_bulunan in enumerate(self.data[KATKIDA_BULUNANLAR]):
             widget = self.layout.itemAt(idx).widget()
-            katkida_bulunan_adi = katkida_bulunan[AD]
             if isinstance(widget, QPushButton):
+                katkida_bulunan_adi = widget.toolTip()
                 if (
                     query.replace("İ", "i").lower()
                     in katkida_bulunan_adi.replace("İ", "i").lower()
@@ -262,6 +262,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
             for kisi in self.data[KATKIDA_BULUNANLAR]:
                 btn = QPushButton(kisi[AD], self)
                 btn.clicked.connect(lambda checked, a=kisi: self.duzenle(a))
+                btn.setToolTip(json.dumps(kisi, indent=4))
                 btn.setStyleSheet(GUNCELLE_BUTTON_STILI)
                 self.layout.addWidget(btn)
         except Exception as e:
