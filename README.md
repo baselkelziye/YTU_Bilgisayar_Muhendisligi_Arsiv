@@ -1038,6 +1038,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
+    - 👤 **_Usmanaga_**: Almayın almayın almayın. Sakın almayın. Aslında bölümdeki genel teamülün aksine ders gerçekten güncel. Utku hoca emek verip hazırlamış ve önemli konular. Hoca derslere hazırlanarak geliyor. Ama bence anlattığı konularda daha az öneme sahip yerlerin üzerinde duruluyor birkaç istisna dışında. Ayrıca Utku Hoca'nın anlatışından memnun kalmadım.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
