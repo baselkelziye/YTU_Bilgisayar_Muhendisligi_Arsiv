@@ -68,6 +68,8 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Usmanaga_**: Bir şey öğrenmezsiniz, almayın. Çıkmış çözüp geçme dersi. Sadece 1.dersi dinlemiştim zar zor. Online dönemdeyken. Çekilecek ders değil hoca da çok hevesli değil. Aslında bu alan çok kıymetli ve epey getirisi var eğer bu alanda çalışacaksanız alın yoksa almanızı tavsiye etmem.
 - ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
 - 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
 
