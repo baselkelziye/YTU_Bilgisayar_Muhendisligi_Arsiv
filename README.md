@@ -1408,6 +1408,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Buraya Isim Mi Yazılıyor_**: Diğer yıldız mezunu tayfada olduğu gibi kaliteli bir hocamız. derste kod yazmama gibi bir huyu olsa da teorik olarak ucurur(yapay zeka dersi özellikle kafa acıcı). Bilgisayar ve bitirme projeleri için projeden bağımsız tercih edilebilir cünkü çok anlayışlı birisi. Ders içeriklerini paylaştığı kendi sitesi var. Ödevleri ve sınavları belli bir sisteme oturtmuş işliyor.
   - 👤 **_Blessed Camel_**: Aşırı zeki bir adam hatta o kadar zeki ki dersi kendi seviyesinde anlattığından hiç bir şey anlayamıyorsunuz. Fazla insan da sevmez ama genel olarak iyi birisidir
   - 👤 **_Isimsiz_**: The Best
+  - 👤 **_Prof. Dr._**: Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -1448,6 +1449,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Traktör Reis_**: Sakin bir hoca, iyi niyetli, yoklama alır.
   - 👤 **_Tehlikeli Pinokyo_**: Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
   - 👤 **_Isimsiz_**: iyi hoca fakat verdiği dersler biraz sıkıcı
+  - 👤 **_Prof. Dr. Oya Kalıpsız_**: Dersleri biraz sıkıcı anlatır, notu da kağıda bakmadan devamsızlığa göre verir
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
