@@ -1450,6 +1450,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Tehlikeli Pinokyo_**: Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.
   - 👤 **_Isimsiz_**: iyi hoca fakat verdiği dersler biraz sıkıcı
   - 👤 **_Prof. Dr. Oya Kalıpsız_**: Dersleri biraz sıkıcı anlatır, notu da kağıda bakmadan devamsızlığa göre verir
+  - 👤 **_Prof. Dr._**: Dersleri biraz sıkıcı anlatır, notu da kağıda bakmadan devamsızlığa göre verir
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
