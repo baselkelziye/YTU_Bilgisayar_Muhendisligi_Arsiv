@@ -110,10 +110,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Dil isteyen okullar var mı?**
 **C:** Almanyada bazı okullar almanca yeterliliği istiyor, bunu en iyi öğrenmenin yolu gitmek istediğiniz okula mail atıp sormak veya geçen senelerde giden birine sormak.
   - 📘 **Tavsiye:** Gitmek istediğiniz okulları daha önce gitmiş birine sorarak en iyi şekilde öğrenebilirsiniz. İşlem adımları da okuldan okula değişebileceği için en iyi onlar yardımcı olacaktır.
-  - 📘 **Faydalı linkler:**
-
-[2023/2024 Erasmus hibe listesi](https://erasmus.yildiz.edu.tr/sayfa/KA-131-%C3%96%C4%9Frenim-Hareketlili%C4%9Fi--Avrupa-Birli%C4%9Fi-%C3%9Clkeleri-/2023---2024-Akademik-Y%C4%B1l%C4%B1-Hibe-Listeleri/906)
-[Erasmusa gidilebilecek Ülkeler ve Okullar](https://erasmus.yildiz.edu.tr/sayfa/KA-131-ANLA%C5%9EMALARI/KA-131-Anla%C5%9Fmalar%C4%B1-G%C3%BCncel/857)
+  - 📘 **Faydalı linkler:**[2023/2024 Erasmus hibe listesi](https://erasmus.yildiz.edu.tr/sayfa/KA-131-%C3%96%C4%9Frenim-Hareketlili%C4%9Fi--Avrupa-Birli%C4%9Fi-%C3%9Clkeleri-/2023---2024-Akademik-Y%C4%B1l%C4%B1-Hibe-Listeleri/906)  [Erasmusa gidilebilecek Ülkeler ve Okullar](https://erasmus.yildiz.edu.tr/sayfa/KA-131-ANLA%C5%9EMALARI/KA-131-Anla%C5%9Fmalar%C4%B1-G%C3%BCncel/857)
 - 💡 **KOOP**
   - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
   - 📘 Şirketlerle bağlantı oluşturabilmek açısından iyidir ama 3 **Mesleki Seçmeli 1** derse göre daha fazla efor harcarsınız.
@@ -149,7 +146,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
 |----------------------------------------|----------------------------------------|----------------------|
-| 32083                                 | 46175                                 | 43.92               |
+| 31307                                 | 44929                                 | 43.51               |
 
 
 
@@ -167,7 +164,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Pozisyon Alanı         |   2023 Maaşı (Aylık net ortalama) | 2024 Maaşı (Aylık net ortalama)   | Maaş Artış Oranı (%)   |
 |:-----------------------|----------------------------------:|:----------------------------------|:-----------------------|
-| Backend Geliştirici    |                             33100 | 46100                             | 39.27                  |
+| Backend Geliştirici    |                             30083 | 41750                             | 38.78                  |
 | Full Stack Geliştirici |                             31964 | 48928                             | 53.07                  |
 | Gömülü                 |                             37000 | 52000                             | 40.54                  |
 | Kriptoloji             |                             40000 | Bilgi Yok                         | Bilgi Yok              |
@@ -182,7 +179,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Tecrübe Süresi   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
 |:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
-| 0 - 6 ay         |                             28083 |                             44083 |                  56.97 |
+| 0 - 6 ay         |                             26214 |                             40642 |                  55.04 |
 | 6 ay - 1 yıl     |                             31300 |                             41375 |                  32.19 |
 | 1 yıl - 2 yıl    |                             34875 |                             49350 |                  41.51 |
 
@@ -236,7 +233,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 |:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
 | 1 yıl - 2 yıl    |                             20770 |                             30775 |                  48.17 |
 
-ℹ️  Anket sonuçları: 23 kişi üzerinden hesaplanmıştır.
+ℹ️  Anket sonuçları: 24 kişi üzerinden hesaplanmıştır.
 </details>
 
 <details>
