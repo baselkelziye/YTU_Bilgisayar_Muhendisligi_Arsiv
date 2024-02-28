@@ -96,6 +96,24 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Ayrıca **Sosyal Seçmeli** havuzu da çok geniş, mesela **Basketbol** ya da **Arapça** dersi alabiliyorsunuz. Suryeli arkadaşlar genelde seçmeli olarak **Arapça** dersi alıp rahat ediyorlar.
   - 📘 Bizim bölümde **Ders Seçimi** hep sıkıntılı olmuştur. Bunun da sebebi bazı hocaların rahatlarını bozmak istememesidir. Bunun ceremesini de tabii ki biz öğrenciler çekiyor.
 - 💡 **Erasmus**
+  - 📘 **S: Erasmus'a nasıl gidebilirim?**
+**C:** Erasmus'a gitmek için, gitmek istediğiniz sınıfın bir yıl öncesinde "Erasmus Dil Sınavı'na" girmeniz gerekmektedir. Bu İngilizce sınav, 50 sorudan oluşur. Ve en son %50 ortalamanız 50% bu sınavın notu hesaplanarak sizin Erasmus puanınız hesaplanır.
+
+  - 📘 **S: Hibe nedir? Okul para desteği sağlıyor mu?**
+**C:** Herkesin notu hesaplandıktan sonra sıralanır ve belirli bir sayıya hibe verilir (her sene miktar değişebilir, bu yüzden net bir sayı söylemek mümkün değildir, geçen senelerin listelerinden fikir alabilirsiniz.)
+  - 📘 **S: Erasmus'a herkes gidebilir mi?**
+**C:** Hemen hemen başvuran herkes gidebilir ancak herkese hibe verilmediği için maddi durumu olmayanlar hibe olmadan zorlanırlar.
+  - 📘 **S: Erasmus Okulumu uzatır mı?**
+**C:** Bu tamamen öğrencinin ders durumuna bağlıdır. Eğer alttan dersiniz varsa ve Erasmus'a giderseniz okulunuzu uzatabilirsiniz. Gitmeden önce ders durumunu tam olarak incelemek önemlidir.
+  - 📘 **S: Ders saydırma işlemi nasıl oluyor?**
+**C:** Gideceğiniz okulun sitesinde İngilizce açılan derslere bakmanız gerekir. Sonra almak istediğiniz dersin karşılığını kendi okulunuzda bulmanız gerekir (içerik olarak). Sonra bu derslerin intibakını yaparsınız. Not: Intibak işlemleri hocalar tarafından anlatılıyor.
+  - 📘 **S: Dil isteyen okullar var mı?**
+**C:** Almanyada bazı okullar almanca yeterliliği istiyor, bunu en iyi öğrenmenin yolu gitmek istediğiniz okula mail atıp sormak veya geçen senelerde giden birine sormak.
+  - 📘 **Tavsiye:** Gitmek istediğiniz okulları daha önce gitmiş birine sorarak en iyi şekilde öğrenebilirsiniz. İşlem adımları da okuldan okula değişebileceği için en iyi onlar yardımcı olacaktır.
+  - 📘 **Faydalı linkler:**
+
+[2023/2024 Erasmus hibe listesi](https://erasmus.yildiz.edu.tr/sayfa/KA-131-%C3%96%C4%9Frenim-Hareketlili%C4%9Fi--Avrupa-Birli%C4%9Fi-%C3%9Clkeleri-/2023---2024-Akademik-Y%C4%B1l%C4%B1-Hibe-Listeleri/906)
+[Erasmusa gidilebilecek Ülkeler ve Okullar](https://erasmus.yildiz.edu.tr/sayfa/KA-131-ANLA%C5%9EMALARI/KA-131-Anla%C5%9Fmalar%C4%B1-G%C3%BCncel/857)
 - 💡 **KOOP**
   - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
   - 📘 Şirketlerle bağlantı oluşturabilmek açısından iyidir ama 3 **Mesleki Seçmeli 1** derse göre daha fazla efor harcarsınız.
