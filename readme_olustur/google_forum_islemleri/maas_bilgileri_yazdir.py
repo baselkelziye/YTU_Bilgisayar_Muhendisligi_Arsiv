@@ -68,7 +68,7 @@ for durum in df["Çalışma Durumu"].unique():
             [mezuniyet_df.columns[4], mezuniyet_df.columns[5]]
         ].mean()
         general_increase_rate = (
-            (general_avg[1] - general_avg[0]) / general_avg[0]
+            (general_avg.iloc[1] - general_avg.iloc[0]) / general_avg.iloc[0]
         ) * 100
 
         # Alana ve tecrübeye göre maaş analizleri
@@ -104,7 +104,7 @@ for durum in df["Çalışma Durumu"].unique():
 |----------------------------------------|----------------------------------------|----------------------|
 | {:.0f}                                 | {:.0f}                                 | {:.2f}               |
             """.format(
-                general_avg[0], general_avg[1], general_increase_rate
+                general_avg.iloc[0], general_avg.iloc[1], general_increase_rate
             ).strip()
             print("\n##### Genel Maaş Ortalamaları ve Artış Oranı\n")
             print(genel_maas_tablosu)
