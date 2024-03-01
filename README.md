@@ -251,7 +251,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 1. Yıl - Güz
 
 
-#### 📘 Bilgisayar Bilimlerine Giriş 
+#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (9 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
@@ -261,7 +261,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MAG](#-doç-dr-m-amaç-güvensan)
@@ -457,7 +457,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SY](#-prof-dr-sırma-yavuz)
@@ -587,7 +587,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 3. Yıl - Güz
 
 
-#### 📘 Algoritma Analizi 👑 En popüler ders (8 oy)
+#### 📘 Algoritma Analizi 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri.
@@ -1273,7 +1273,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Devre%20Teorisi)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
@@ -1402,7 +1402,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Kolpa_**: Dersi öğretmek için ekstra çaba sarf etmesini ve öğrenip öğrenmememizi ciddiye almasını seviyorum. Böyle hoca pek yok üniversitelerde
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-8-oy)
+  - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Görüntü İşleme](#-görüntü-i̇şleme)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
 - ⭐ **Yıldız Sayıları:**
@@ -1606,8 +1606,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Kolpa_**: Ben bu hocayı Elif hocanın erkek versiyonu olarak görüyorum. Neyse, işini seven, uğraş veren, karizmasıyla bizleri etkileyen iyi biridir. Bazı şeyleri gereksiz takıyor vibe'ı veriyor bazen ama olur o kadar
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
-  - 📖 [Algoritma Analizi](#-algoritma-analizi--en-popüler-ders-8-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-9-oy)
+  - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
 - ⭐ **Yıldız Sayıları:**
@@ -1738,7 +1738,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-9-oy)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
@@ -2154,7 +2154,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ted_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-9-oy)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
 - ⭐ **Yıldız Sayıları:**
