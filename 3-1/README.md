@@ -137,9 +137,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette.
 - ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
 
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
