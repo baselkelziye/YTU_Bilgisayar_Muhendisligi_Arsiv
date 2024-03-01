@@ -663,7 +663,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Türkçe%201)
 
 
@@ -828,7 +828,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Türkçe%202)
 
 ### 🗓 Mesleki Seçmeli 1
@@ -1239,7 +1239,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
