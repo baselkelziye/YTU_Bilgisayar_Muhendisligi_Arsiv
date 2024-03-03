@@ -140,6 +140,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir. Genelde dönemin ilk 3-4 haftası lablar işlenmez.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
 - 💡 **Mazeret Sınavı**
+  - 📘 **S: Mazeret Sınavı Nedir?** **C:** Mazeret sınavı, geçerli bir mazereti nedeniyle normal sınav tarihlerinde sınava giremeyen öğrencilere yönelik olarak düzenlenen bir sınavdır.
+  - 📘 **S: Geçerli Mazeret Nedir?** **C:** Cenaze, 3 günlük rapor vb. mazeretler arasında sayılabilir.
+  - 📘 **S: Mazeret Sınavları Ne Zaman Olur?** **C:** Dersin hocası bunun duyurusunu yapacaktır. Bazı hocalar 2. Vize haftasında, bazıları ders döneminin sonunda yapabilmektedir.
+  - 📘 **S: Mazeret Sınavında Hangi Konular Sorulur?** **C:** Mazeret sınavında, öğrencinin kaçırdığı sınavın kapsadığı konular sorulur sanıyorsanız yanılıyorsunuz. Hocanın insiyatifine kalmıştır. Genelde normal sınava göre daha zor ve kapsamlı olur.
+  - 📘 **S: Hangi Sınavların Mazereti Vardır?** **C:** Vize'nin mazeret sınavı vardır. Eğer **Final**'e katılamazsanız zaten büte girersiniz. Lablar vb. içinse hocanın insiyatifine kalmış.
+  - 📘 **S: Mazeret Sınavı İçin Nasıl Başvurulur?** **C:** Bilmiyorum bilen birine sorunca güncellerim.
+  - 📘 **Tavsiye:** Kalmamak daha iyi çünkü genelde mazeret sınavı, asıl sınava göre daha kapsayıcı ve zor oluyor. Aynı zamanda sınav klasikse sınava giren öğrenci sayısı çok az olduğu için hoca sınavı vizeye göre daha ayrıntılı okur. Bu da aynı kağıdı daha üstünkörü okunan bir sınavda verseniz daha yüksek puan alacaksınız anlamına gelir.
 - 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
