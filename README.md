@@ -75,13 +75,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Herhangi bir **Lisans** dersi, herhangi bir **Yüksek Lisans** dersinden en az 2 kat daha kolay. Gözünüz korkmasın. Bu program yeni olduğu için henüz pek bilinmiyor ve **2023 güz dönemi**nde başvuru yapan çok olmadı. Ama aşırı kolay ve aynı zamanda **kaldığınız dersler Lisans ortalamasını asla etkilemiyor.** Yani başvurup denemekten zarar gelmez.
   - 📘 **Yüksek Lisans**'ı genelde 35 yaş üstü evli barklı insanlar maaşları yükselsin diye öylesine yaptıkları için rekabet neredeyse **hiç** yok. Yani çok az bir eforla dersi **AA-BA** gibi bir notla geçmek mümkün. Çünkü bırakın derse çalışma oranını, derslere katılım oranı bile **aşırı düşük**.
 - 💡 **Ara Proje**
-  - 📘 Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir. Ve bir danışman eşliğinde yapılır.
-  - 📘 Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
-  - 📘 Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.
-  - 📘 Ara Proje ve Bitirme Projesi 3 parçadadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.
-  - 📘 Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir.
+  - 📘 **S: Ara Proje Nedir?** **C:** Ara Proje aslında genelde kodlama içeren öğrencinin teklif ettiği ya da hocanın önerdiği ödevdir ve bir danışman eşliğinde yapılır.
+  - 📘 **S: Ara Projede ve Bitirme Projesinde Hoca Bulmak** **C:** Ara projede ve Bitirme projesinde hoca bulmak sonradan zor olduğu için genelde dönem başlamadan önce arayışta olmak gerekir.
+  - 📘 **S: Ara Proje ve Bitirme Projesi Kaç Kişilik Yapılır?** **C:** Ara proje ve Bitirme projesi 1 ya da 2 kişilik (genelde 2) yapılır.
+  - 📘 **S: Ara Proje ve Bitirme Projesi Kaç Parçadan Oluşur?** **C:** Ara Proje ve Bitirme Projesi 3 parçadan oluşur. Bu parçalar her ikisi için de ara rapor (ilk sunulan rapor manasında sadece ara projede değil her ikisinde de mevcut), bitirme raporu (ara raporla benzer şekilde) ve sunumdur.
+  - 📘 **S: Sunumda Jüri Olur mu?** **C:** Sunumda jüri olur. Genelde 2 hoca (biri danışman hoca) 1 tane de asistan olur. Hocalar genelde projeyi pek detaylı incelemez. Gelen asistan çok ayrıntılı sorular sorabilir.
+
 - 💡 **Bitirme Projesi**
-  - 📘 Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
+  - 📘 **S: Bitirme Projesi Nedir?** **C:** Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
 - 💡 **Çan**
   - 📘 **S: Çan eğrisi nedir?** **C:** Üniversitelerde sıkça kullanılan bir notlandırma yöntemidir. Öğrencilerin sınav sonuçlarına göre bir dağılım oluşturulur ve bu dağılıma göre notlar belirlenir. Genellikle, sınıfın ortalaması ve standart sapması hesaplanır, ardından öğrencilerin notları bu istatistiklere göre ayarlanır.
   - 📘 **S: Çan eğrisi nasıl uygulanır?** **C:** Öncelikle, sınav sonuçlarından bir dağılım oluşturulur. Daha sonra, bu dağılımın ortalaması ve standart sapması hesaplanır. Son olarak, öğrencilerin sınav sonuçları bu istatistiklere göre ayarlanarak notları belirlenir. Bu süreç, genellikle otomatik olarak yapılır ve öğrencilerin notlarına doğrudan etki eder.
