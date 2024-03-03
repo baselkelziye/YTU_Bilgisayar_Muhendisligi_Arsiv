@@ -83,6 +83,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💡 **Bitirme Projesi**
   - 📘 Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
 - 💡 **Çan**
+  - 📘 **S: Çan eğrisi nedir?** **C:** Üniversitelerde sıkça kullanılan bir notlandırma yöntemidir. Öğrencilerin sınav sonuçlarına göre bir dağılım oluşturulur ve bu dağılıma göre notlar belirlenir. Genellikle, sınıfın ortalaması ve standart sapması hesaplanır, ardından öğrencilerin notları bu istatistiklere göre ayarlanır.
+  - 📘 **S: Çan eğrisi nasıl uygulanır?** **C:** Öncelikle, sınav sonuçlarından bir dağılım oluşturulur. Daha sonra, bu dağılımın ortalaması ve standart sapması hesaplanır. Son olarak, öğrencilerin sınav sonuçları bu istatistiklere göre ayarlanarak notları belirlenir. Bu süreç, genellikle otomatik olarak yapılır ve öğrencilerin notlarına doğrudan etki eder.
+  - 📘 **S: Hocalar çan eğrisi uygulamak zorunda mıdır?** **C:** Hayır, hocalar çan eğrisi uygulamak zorunda değildir. Notlandırma yöntemi, genellikle her hocanın kendi tercihine bağlıdır. Bazı hocalar çan eğrisini kullanırken, bazıları farklı yöntemler tercih edebilir.
+  - 📘 **S: Bizim bölümde çan eğrisi uygulanıyor mu?** **C:** Bu değişkenlik göstermektedir. Hocaların çok az bir kısmı çan eğrisi uygulamaktadır. Genellikle, hocalar elle belirlenen aralıklar kullanarak harf notu verirler
 - 💡 **Ders Seçimi**
   - 📘 Ders seçimi, her sınıf için ayrı günlerde yapılır ve sonrasında herkesin seçim yapabildiği bağımsız ders kayıt günü vardır.
   - 📘 Örneğin **OBS**'de 1. Sınıf gözüküyorsanız hem 1. Sınıfların ders seçim gününüde hem de **bağımsız ders kaydı** gününde ders alabilirsiniz. Ama ders çıkarma işlemini sadece **bağımsız ders kaydı** gününde yapabilirsiniz. Yani normal ders seçim gününde dersi **eklerken** dikkatli olun.
