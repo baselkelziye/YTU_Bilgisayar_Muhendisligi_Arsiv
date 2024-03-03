@@ -83,6 +83,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 - 💡 **Bitirme Projesi**
   - 📘 **S: Bitirme Projesi Nedir?** **C:** Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
+- 💡 **Büt**
+  - 📘 **S: Bütünleme Sınavı Nedir?** **C:** Bütünleme sınavı, dersin içeriğini ölçmek ve öğrencilerin kapasitesini değerlendirmek için finallerin ardından yapılan bir sınavdır.
+  - 📘 **S: Bütünleme Sınavı Kaç Tane Olur?** **C:** Her ders için bir bütünleme sınavı yapılır.
+  - 📘 **S: Bütünleme Sınavına Kimler Girebilir?** **C:** İlgili dersten kalmış olanlar bütünleme sınavına girmek zorundadır. **Şartlı geçmiş** (DC) olanlarsa bütünleme sınavına isterlerse girerler.
+  - 📘 **S: Bütünleme Sınavına Nasıl Başvurulur?** **C:** Bütünleme sınavı herhangi bir başvuruya tabi değildir. (**DC** alanlar dahil) DC alanlar girerlerse bütünleme sonucu geçerli olur, girmezlerse final sonucu. Ek bir işlem gerekmez.
+  - 📘 **S: Bütünleme Ortalamamı Düşürürse Final Sınavı Notumu Kullanabilir miyim?** **C:** Hayır. Eğer bütünlemeye girdiyseniz artık **Final** notunuz geçersizdir. Mesela harf notunuz **DC** ve bütünlemeye girmeye karar verdiniz. Sonrasında notunuz **DD**'ye düştü. Geçmiş olsun, dersten kaldınız.
+  - 📘 **S: Bütünlemeler Ne Zaman Olur?** **C:** Bütünleme sınavları finallerin bitiminden sonraki pazartesi başlar.
+  - 📘 **S: Bütünleme Haftasında Ders Olur mu?** **C:** Bütünleme haftasında ders olmaz, sadece sınavlar yapılır.
+  - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Konu kapsamı finallerle aynıdır. Ama eğer dersten ileride yığılma oluşturmayacak kadar insan geçmişse kesinlikle **Final**'e göre daha zor olur. Mesela **Bilgisayar Organizasyonu** dersinin **Final**'i testken **Bütünlemesi** klasik olabilir.
 - 💡 **Çan**
   - 📘 **S: Çan eğrisi nedir?** **C:** Üniversitelerde sıkça kullanılan bir notlandırma yöntemidir. Öğrencilerin sınav sonuçlarına göre bir dağılım oluşturulur ve bu dağılıma göre notlar belirlenir. Genellikle, sınıfın ortalaması ve standart sapması hesaplanır, ardından öğrencilerin notları bu istatistiklere göre ayarlanır.
   - 📘 **S: Çan eğrisi nasıl uygulanır?** **C:** Öncelikle, sınav sonuçlarından bir dağılım oluşturulur. Daha sonra, bu dağılımın ortalaması ve standart sapması hesaplanır. Son olarak, öğrencilerin sınav sonuçları bu istatistiklere göre ayarlanarak notları belirlenir. Bu süreç, genellikle otomatik olarak yapılır ve öğrencilerin notlarına doğrudan etki eder.
@@ -116,12 +125,19 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 **C:** Almanyada bazı okullar almanca yeterliliği istiyor, bunu en iyi öğrenmenin yolu gitmek istediğiniz okula mail atıp sormak veya geçen senelerde giden birine sormak.
   - 📘 **Tavsiye:** Gitmek istediğiniz okulları daha önce gitmiş birine sorarak en iyi şekilde öğrenebilirsiniz. İşlem adımları da okuldan okula değişebileceği için en iyi onlar yardımcı olacaktır.
   - 📘 **Faydalı linkler:**[2023/2024 Erasmus hibe listesi](https://erasmus.yildiz.edu.tr/sayfa/KA-131-%C3%96%C4%9Frenim-Hareketlili%C4%9Fi--Avrupa-Birli%C4%9Fi-%C3%9Clkeleri-/2023---2024-Akademik-Y%C4%B1l%C4%B1-Hibe-Listeleri/906)  [Erasmusa gidilebilecek Ülkeler ve Okullar](https://erasmus.yildiz.edu.tr/sayfa/KA-131-ANLA%C5%9EMALARI/KA-131-Anla%C5%9Fmalar%C4%B1-G%C3%BCncel/857)
+- 💡 **Final**
+  - 📘 **S: Final Nedir?** **C:** Final, dersin içeriğini ölçmek ve öğrencilerin kapasitesini değerlendirmek için dönem sonunda yapılan bir sınavdır. Genelde işlenen tüm konuları kapsar.
+  - 📘 **S: Final Kaç Tane Olur?** **C:** Her ders için bir final sınavı yapılır. Bazı hocalar Final yerine proje verebilir.
+  - 📘 **S: Finaller Ne Zaman Olur?** **C:** Finaller 15. hafta, ders dönemi bittikten sonra olur.
+  - 📘 **S: Final Haftasında Ders Olur mu?** **C:** Final haftasında ders olmaz, sadece sınavlar yapılır. Zaten ders dönemi bitmiştir.
+  - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Hocalar finallerde genellikle dönem boyunca işlenen konuları kapsayan sorular sorarlar ve önceki senelerdeki sorulara benzer veya aynı soruları kullanırlar.
 - 💡 **KOOP**
   - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
   - 📘 Şirketlerle bağlantı oluşturabilmek açısından iyidir ama 3 **Mesleki Seçmeli 1** derse göre daha fazla efor harcarsınız.
 - 💡 **Lab**
   - 📘 Lab aslında uygulamalı derslerdeki uygulama sınavı anlamına gelmektedir. Genelde dönemin ilk 3-4 haftası lablar işlenmez.
   - 📘 Genelde kodlama, devre oluşturma gibi pratik sınavlar olsa da, bazı derslerin labları kağıtta olabilmektedir. (Veri Tabanı)
+- 💡 **Mazeret Sınavı**
 - 💡 **Staj**
   - 📘 Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
@@ -131,10 +147,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 Stajı ders seçer gibi seçmiyorsunuz. Yani mesela yazın bir staj yaptınız ve belgeleri teslim ettiniz. Stajınız kabul edildiği anda **obs'ye** işlenir. Dönem içinde ders olarak almıyorsunuz.
   - 📘 **Genel** staj ve **mesleki** staj arasında pratikte hiçbir fark yoktur. İkisinde de bir _X_ firmasında , evrak işlerini hallederek , 30 gün çalışmış olmak gerekir.
 - 💡 **Vize**
-  - 📘 İlk vizeler (hoca aksini belirtmedikçe) genelde 8. hafta olur
-  - 📘 Dersin vize haftasında vizesi olmadığı zaman (hoca aksini belirmedikçe) büyük ihtimalle ders vardır.
-  - 📘 İkinci vize her derste olmaz. 2. Vizesi olmayan dersin 2. Vize haftasında konusu (hoca aksini belirmedikçe) işlenir.
-  - 📘 Hocalar genelde önceki senelerdeki sorulara benzer/aynı sorular sorarlar.
+  - 📘 **S: Vize Nedir?** **C:** Vize, dersin içeriğini ölçmek ve öğrencilerin seviyesini değerlendirmek için dönem ortasında yapılan bir sınavdır.
+  - 📘 **S: Vize Kaç Tane Olur?** **C:** Vize sayısı dersin gereksinimlerine ve hocanın tercihine bağlıdır. Genellikle bir ya da iki vize yapılır.
+  - 📘 **S: İlk Vizeler Ne Zaman Olur?** **C:** İlk vizeler genellikle 8. hafta olur, hoca aksini belirtmedikçe. 8. haftadan sonrası zaten ölüm :(
+  - 📘 **S: Vize Haftasında Ders Olur mu?** **C:** Dersin vize haftasında vizesi olmadığı zaman, büyük ihtimalle ders vardır, hoca aksini belirtmedikçe.
+  - 📘 **S: İkinci Vize Her Derste Olur mu?** **C:** İkinci vize her derste olmaz. İkinci vizesi olmayan dersin 2. vize haftasında konusu işlenir, hoca aksini belirtmedikçe.
+  - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Hocalar genellikle önceki senelerdeki sorulara benzer veya aynı soruları sorarlar.
 </details>
 
 <details>
