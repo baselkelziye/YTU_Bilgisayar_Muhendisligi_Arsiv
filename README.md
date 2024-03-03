@@ -83,7 +83,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 - 💡 **Bitirme Projesi**
   - 📘 **S: Bitirme Projesi Nedir?** **C:** Ara projeyle benzerdir. Ama projenin konusu bir tık daha ileri seviye olmalıdır.
-- 💡 **Büt**
+- 💡 **Bütünleme**
   - 📘 **S: Bütünleme Sınavı Nedir?** **C:** Bütünleme sınavı, dersin içeriğini ölçmek ve öğrencilerin kapasitesini değerlendirmek için finallerin ardından yapılan bir sınavdır.
   - 📘 **S: Bütünleme Sınavı Kaç Tane Olur?** **C:** Her ders için bir bütünleme sınavı yapılır.
   - 📘 **S: Bütünleme Sınavına Kimler Girebilir?** **C:** İlgili dersten kalmış olanlar bütünleme sınavına girmek zorundadır. **Şartlı geçmiş** (DC) olanlarsa bütünleme sınavına isterlerse girerler.
@@ -92,6 +92,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Bütünlemeler Ne Zaman Olur?** **C:** Bütünleme sınavları finallerin bitiminden sonraki pazartesi başlar.
   - 📘 **S: Bütünleme Haftasında Ders Olur mu?** **C:** Bütünleme haftasında ders olmaz, sadece sınavlar yapılır.
   - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Konu kapsamı finallerle aynıdır. Ama eğer dersten ileride yığılma oluşturmayacak kadar insan geçmişse kesinlikle **Final**'e göre daha zor olur. Mesela **Bilgisayar Organizasyonu** dersinin **Final**'i testken **Bütünlemesi** klasik olabilir.
+  - 📘 **Tavsiye**: Kalmayın
 - 💡 **Çan**
   - 📘 **S: Çan eğrisi nedir?** **C:** Üniversitelerde sıkça kullanılan bir notlandırma yöntemidir. Öğrencilerin sınav sonuçlarına göre bir dağılım oluşturulur ve bu dağılıma göre notlar belirlenir. Genellikle, sınıfın ortalaması ve standart sapması hesaplanır, ardından öğrencilerin notları bu istatistiklere göre ayarlanır.
   - 📘 **S: Çan eğrisi nasıl uygulanır?** **C:** Öncelikle, sınav sonuçlarından bir dağılım oluşturulur. Daha sonra, bu dağılımın ortalaması ve standart sapması hesaplanır. Son olarak, öğrencilerin sınav sonuçları bu istatistiklere göre ayarlanarak notları belirlenir. Bu süreç, genellikle otomatik olarak yapılır ve öğrencilerin notlarına doğrudan etki eder.
@@ -131,6 +132,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Finaller Ne Zaman Olur?** **C:** Finaller 15. hafta, ders dönemi bittikten sonra olur.
   - 📘 **S: Final Haftasında Ders Olur mu?** **C:** Final haftasında ders olmaz, sadece sınavlar yapılır. Zaten ders dönemi bitmiştir.
   - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Hocalar finallerde genellikle dönem boyunca işlenen konuları kapsayan sorular sorarlar ve önceki senelerdeki sorulara benzer veya aynı soruları kullanırlar.
+  - 📘 **Tavsiye:** Aman ha büte kalmayın. Eğer yeterince kişi geçmiş olursa zorlu bir büt sizi bekliyor olacak.
 - 💡 **KOOP**
   - 📘 Bu program başvurulup firmalardan birinden kabul alındıktan sonra dönem boyunca haftada belli saat fiili olarak çalışılıp, bu çalışmanın **Mesleki Seçmeli 1** derslerinin bir kısmı yerine saydırıldığı bir programdır.
   - 📘 Şirketlerle bağlantı oluşturabilmek açısından iyidir ama 3 **Mesleki Seçmeli 1** derse göre daha fazla efor harcarsınız.
