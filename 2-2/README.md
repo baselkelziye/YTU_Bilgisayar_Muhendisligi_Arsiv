@@ -181,7 +181,7 @@
 
 ##### 📌 Öneri sahibi: Traktör Reis
 - ders full ezber
-- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
+- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıkta kalırsın.
 - Proje konusu ve birçok proje örneği githubda mevcut.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
