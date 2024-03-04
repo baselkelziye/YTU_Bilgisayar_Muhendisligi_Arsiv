@@ -23,7 +23,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UqeiZKjms40t1aZmv70D82XrtBU3jC2C?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UqeiZKjms40t1aZmv70D82XrtBU3jC2C?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### ℹ️ Dersin içeriği güncel değil
@@ -43,7 +43,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -84,7 +84,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1d_csNBvomRdHoheEuwZ-UJpqS8UYMTNm?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1d_csNBvomRdHoheEuwZ-UJpqS8UYMTNm?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mühendisler için Yarıiletken Fiziği
@@ -104,8 +104,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link) ✨
-- 📄 [El Yazısı Not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link) ✨
+- 📄 **Not:** [El Yazısı Not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Sayısal Analiz
@@ -125,7 +125,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -149,7 +149,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1nJk-sz7MxNxKtEsGwJkR5OgS8eft7HAE?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1nJk-sz7MxNxKtEsGwJkR5OgS8eft7HAE?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

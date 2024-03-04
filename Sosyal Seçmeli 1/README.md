@@ -20,7 +20,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5IZPgFCbULx0oEQAdYumGVgD3r6u_zY?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5IZPgFCbULx0oEQAdYumGVgD3r6u_zY?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Felsefeye Giriş
@@ -37,5 +37,5 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1-Z0Rd7tW8ySNVd_DekaU2g2gWrWPUbu-?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1-Z0Rd7tW8ySNVd_DekaU2g2gWrWPUbu-?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)

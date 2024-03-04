@@ -16,7 +16,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
