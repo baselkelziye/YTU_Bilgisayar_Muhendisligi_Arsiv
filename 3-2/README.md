@@ -54,9 +54,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
-- 📄 [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Mesleki Hukuk ve Etik
@@ -115,8 +115,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
 - 📄 [Bu linkte çok temiz çıkarılmış notlar var](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgi%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021) ✨
+- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -139,11 +139,11 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=7OZYkBDAqws&ab_channel=%C3%96mer%C3%87al%C4%B1%C5%9Fkan) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨
+- 📄 Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -165,8 +165,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
+- 📄 [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
