@@ -29,12 +29,12 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UFw-BQXsy567TdLto8TLRKwG6VFoOvKf?usp=drive_link) ✨
-- 📄 [Efe'nin efsane notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Bilgisayar%20Bilimlerine%20Giri%C5%9F/slaytlar_notlar/2022/efe'nin%20efsane%20notlar%C4%B1) ✨
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=Xi_Tmubnw-0&ab_channel=S%C3%BCmG%C3%BCl) ✨
-- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨
-- 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz) ✨
-- 📄 [Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UFw-BQXsy567TdLto8TLRKwG6VFoOvKf?usp=drive_link) ✨
+- 📄 **Not:** [Efe'nin efsane notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/1-1/Bilgisayar%20Bilimlerine%20Giri%C5%9F/slaytlar_notlar/2022/efe'nin%20efsane%20notlar%C4%B1) ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=Xi_Tmubnw-0&ab_channel=S%C3%BCmG%C3%BCl) ✨
+- 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨
+- 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz) ✨
+- 📄 **Proje:** [Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -58,7 +58,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1DP97u6jt1lRFiq6vYgSu4hizGfCMeJ4l?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1DP97u6jt1lRFiq6vYgSu4hizGfCMeJ4l?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 İleri İngilizce 1
@@ -114,8 +114,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link) ✨
-- 📄 [Esma'nın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-1/Lineer%20Cebir/slaytlar_notlar/2020/esma%20ekmek%C3%A7i%20notlar%C4%B1.pdf) GitHub'da açılmazsa indirin. ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link) ✨
+- 📄 **Not:** [Esma'nın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-1/Lineer%20Cebir/slaytlar_notlar/2020/esma%20ekmek%C3%A7i%20notlar%C4%B1.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 ### 📘 Matematik 1
@@ -134,5 +134,5 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ua0NzmwJBWeNQx3QPgUDU4N_C2-MzSjn?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ua0NzmwJBWeNQx3QPgUDU4N_C2-MzSjn?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
