@@ -30,7 +30,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -57,8 +57,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link) ✨
-- 📄 [Esma'nın SS notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Bilgisayar%20M%C3%BCh%20i%C3%A7in%20Sinyaller%20ve%20Sistemler/slaytlar_notlar/2022/Esma'n%C4%B1n%20ss%20notlar%C4%B1.docx) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1-vbsuBWeH-6pERcq4DPnR4OFo98oHKGP?usp=drive_link) ✨
+- 📄 **Not:** [Esma'nın SS notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Bilgisayar%20M%C3%BCh%20i%C3%A7in%20Sinyaller%20ve%20Sistemler/slaytlar_notlar/2022/Esma'n%C4%B1n%20ss%20notlar%C4%B1.docx) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -79,9 +79,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1) ✨
-- 📄 :star:[Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link):star: ✨
-- 📄 [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1/slaytlar_notlar/2022/kayra.pdf) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1bafJ2kAlW-yJAKjph-jU5jJPP-dj5HKJ?usp=drive_link) ✨
+- 📄 **Güncellenmiş Ders:** Dersin adı eskiden *Bilgisayar Donanımı*ydı. Bundan dolayı [kaynakların bir kısmı burada.](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1) ✨
+- 📄 **Not:** [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1/slaytlar_notlar/2022/kayra.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -108,8 +108,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link) ✨
-- 📄 [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link) ✨
+- 📄 **Not:** [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -139,8 +139,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ubihV7hfig2n6gawM_gEWUyQb5M-rXCi?usp=drive_link) ✨
-- 📄 [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Hesaplama%20Kuram%C4%B1/slaytlar_notlar/2022/slayt%20%C3%BCst%C3%BCne%20not%20al%C4%B1nm%C4%B1%C5%9F) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ubihV7hfig2n6gawM_gEWUyQb5M-rXCi?usp=drive_link) ✨
+- 📄 **Not:** [Üstüne not alınmış slaytlar](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Hesaplama%20Kuram%C4%B1/slaytlar_notlar/2022/slayt%20%C3%BCst%C3%BCne%20not%20al%C4%B1nm%C4%B1%C5%9F) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -186,8 +186,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
-- 📄 [Melihin 2024 Notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2024/melih) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
+- 📄 **Not:** [Melihin 2024 Notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2024/melih) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -214,12 +214,12 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link) ✨
-- 📄 [İrem'in el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
-- 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/Veri%20Yap%C4%B1lar%C4%B1%20Ve%20Algoritmalar%20.pdf) GitHub render edemiyorsa indirin... ✨
-- 📄 [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
-- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link) ✨
+- 📄 **Not:** [İrem'in el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/Veri%20Yap%C4%B1lar%C4%B1%20Ve%20Algoritmalar%20.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
+- 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
