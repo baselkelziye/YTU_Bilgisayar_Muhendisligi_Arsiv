@@ -30,15 +30,15 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1USYM6BpcQYzJxxtQtGbPWs4Kw9cwtMsR?usp=drive_link) ✨
+- 📄 [Elle çıkarılmış daha güzel 2 ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2019) ✨
+- 📄 [Elle çıkarılmış ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2022/not.pdf) ✨
+- 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) ✨
+- 📄 [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=xggsTaFKfr8&ab_channel=MertTunaKurnaz) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=ki9gnOJahas&ab_channel=MelihTuna%C4%B0PEK) ✨
 - 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=OMcNmKqCihk&ab_channel=TalhaCicek) ✨
 - 📄 [Proje için örnek video 4](https://www.youtube.com/watch?v=_aKpZq7s7dY&ab_channel=enis) ✨
-- 📄 [Elle çıkarılmış ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2022/not.pdf) ✨
-- 📄 [Elle çıkarılmış daha güzel 2 ders notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2019) ✨
-- 📄 [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Algoritma%20Analizi/slaytlar_notlar/2021/nas%C4%B1r%C4%B1n%20el%20yaz%C4%B1s%C4%B1%20notu.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -84,9 +84,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
 - 📄 Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış. ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link) ✨
+- 📄 [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

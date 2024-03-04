@@ -720,8 +720,13 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
                         f.write(f"- {oneri}\n")
         f.write("\n## 📖 Faydalı Olabilecek Kaynaklar\n\n")
         if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
-            # Faydalı olabilecek kaynaklar
-            for kaynak in ders[FAYDALI_OLABILECEK_KAYNAKLAR]:
+            # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
+            sirali_kaynaklar = sorted(
+                ders[FAYDALI_OLABILECEK_KAYNAKLAR], key=locale.strxfrm
+            )
+
+            # Sıralanmış kaynakları dosyaya yazdır
+            for kaynak in sirali_kaynaklar:
                 f.write(f"- 📄 {kaynak} ✨\n")
 
         f.write(GENEL_CIKMIS_SORULAR_METNI)
@@ -888,7 +893,13 @@ def ders_bilgilerini_readme_ile_birlestir(
                     f.write("\n#### 📚 Faydalı Olabilecek Kaynaklar\n\n")
                     # Kitap emoji, kaynakları temsil eder
                     if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
-                        for kaynak in ders[FAYDALI_OLABILECEK_KAYNAKLAR]:
+                        # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
+                        sirali_kaynaklar = sorted(
+                            ders[FAYDALI_OLABILECEK_KAYNAKLAR], key=locale.strxfrm
+                        )
+
+                        # Sıralanmış kaynakları dosyaya yazdır
+                        for kaynak in sirali_kaynaklar:
                             f.write(f"- 📄 {kaynak} ✨\n")
                     f.write(GENEL_CIKMIS_SORULAR_METNI)
                     if (
