@@ -162,8 +162,8 @@
 - 📄 **Not:** [Wordde yazılmış not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/Mesleki%20Se%C3%A7meli%201/G%C3%B6m%C3%BCl%C3%BC%20Sistemler/slaytlar_notlar/not.docx) ✨
 - 📄 **Proje:** [Hocaların hazırladığı 2021-2022 projeleri tanıtım videosu](https://www.youtube.com/watch?v=uU6Qw8xgokU&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
 - 📄 **Proje:** [Hocaların hazırladığı 2022-2023 projeleri tanıtım videosu](https://www.youtube.com/watch?v=PHACPjpUpHM&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
-- 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=wfL-sVkdhFM&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=ETFdrZZc5sY&ab_channel=mehmet%C3%A7alo%C4%9Flu) ✨
+- 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=wfL-sVkdhFM&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -229,10 +229,10 @@
 - 📄 **Ödev:** [Ödev için örnek video 1](https://www.youtube.com/watch?v=uNxWwgBSkOk&ab_channel=EmirAksoy) ✨
 - 📄 **Ödev:** [Ödev için örnek video 2](https://www.youtube.com/watch?v=reKSrD_uth0&ab_channel=AhmetBar%C4%B1%C5%9FYerlikaya) ✨
 - 📄 **Ödev:** [Ödev için örnek video 3](https://www.youtube.com/watch?v=16YYWwL-wy8&ab_channel=%C4%B0pekKo%C3%A7) ✨
-- 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=kM1AJ7EmRNw&t=30s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=krNkTsZ1Cq8&t=6s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=0kmPcTPKlY4&ab_channel=%C4%B0pekKo%C3%A7) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=oz7IAfazAes&ab_channel=AhmetBar%C4%B1%C5%9FYerlikaya) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=dQdlxry7LL0&ab_channel=Bar%C4%B1%C5%9FCanY%C4%B1lmaz) ✨
+- 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=kM1AJ7EmRNw&t=30s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=krNkTsZ1Cq8&t=6s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
