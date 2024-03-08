@@ -722,7 +722,8 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
         if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
             # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
             sirali_kaynaklar = sorted(
-                ders[FAYDALI_OLABILECEK_KAYNAKLAR], key=locale.strxfrm
+                ders[FAYDALI_OLABILECEK_KAYNAKLAR],
+                key=lambda x: unicodedata.normalize("NFKD", x).lower()
             )
 
             # Sıralanmış kaynakları dosyaya yazdır
@@ -895,7 +896,8 @@ def ders_bilgilerini_readme_ile_birlestir(
                     if FAYDALI_OLABILECEK_KAYNAKLAR in ders:
                         # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
                         sirali_kaynaklar = sorted(
-                            ders[FAYDALI_OLABILECEK_KAYNAKLAR], key=locale.strxfrm
+                            ders[FAYDALI_OLABILECEK_KAYNAKLAR],
+                            key=lambda x: unicodedata.normalize("NFKD", x).lower()
                         )
 
                         # Sıralanmış kaynakları dosyaya yazdır
