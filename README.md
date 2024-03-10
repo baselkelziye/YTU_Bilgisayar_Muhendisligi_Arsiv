@@ -1710,8 +1710,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Traktör Reis_**: Konusunda çok bilgilidir. Derste konudan konuya atlarsa aklınız karışabilir.
   - 👤 **_Nakliyeci Sefer_**: Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.
   - 👤 **_Astro_**: okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.
-  - 👤 **_Anarcho Primitivism_**: Robotlar konusunda çok bilgilidir. Ne ironiktir de karakteri de robot gibidir. Hatta chat gpt falan Erkan hocamızın yanında daha insan kalır. En azından konuşması vs insanların üslubuna daha yakındır. Ya bu Erkan hocanın okul dışındaki halini merak ediyorum. Arkadaşlarıyla vs ne konuşuyor, ne yapıyor. İşlemciler dışında bir şeyden bahsederken hayal edemiyorum kendisini. Online derste deprem olunca hiçbir şey yokmuş gibi derse devam eden birisi sonuçta. Ders anlatırken de hiç düşünmez buradakiler beni anlıyor mu diye. Yardırır kendine göre. Herkes kendi gibi robot ve anlatılanları direkt kaydediyor sanar. Aslında ders anlatışını sanki öğrenciler hali hazırda konuyu biliyorlar da tekrar etmeye gelmişler gibi yapar. Yepyeni bir konudan bahsediyorsa bile en temelini anlatmaz, direkt detay verir.
   - 👤 **_Ufouser_**: Erkan hocam çok bilgilidir eksiksiz bilgi verir bu yüzden bazen fazla bilgi de verebilir dersini hızlı anlatır bu yüzden dersi anlaması biraz zor olabilir sınavları standarttır robotik grubu vardır hocayla diyalog kurmak kolaydır iyi bir hocadır yoklama alır vizeler zamanında okur
+  - 👤 **_Kolpa_**: Robotlar konusunda çok bilgilidir. Ne ironiktir de karakteri de robot gibidir. Hatta chat gpt falan Erkan hocamızın yanında daha insan kalır. En azından konuşması vs insanların üslubuna daha yakındır. Ya bu Erkan hocanın okul dışındaki halini merak ediyorum. Arkadaşlarıyla vs ne konuşuyor, ne yapıyor. İşlemciler dışında bir şeyden bahsederken hayal edemiyorum kendisini. Online derste deprem olunca hiçbir şey yokmuş gibi derse devam eden birisi sonuçta. Ders anlatırken de hiç düşünmez buradakiler beni anlıyor mu diye. Yardırır kendine göre. Herkes kendi gibi robot ve anlatılanları direkt kaydediyor sanar. Aslında ders anlatışını sanki öğrenciler hali hazırda konuyu biliyorlar da tekrar etmeye gelmişler gibi yapar. Yepyeni bir konudan bahsediyorsa bile en temelini anlatmaz, direkt detay verir.
+  - 👤 **_8086_**: Bölümün en değerli hocasıdır, Sizi insan yerine koyarak iletişim kurar. Çok gayretlidir, genelde zor dersleri verir.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Donanımı](#-bilgisayar-donanımı)
@@ -1725,9 +1726,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-  - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -2186,7 +2187,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/cihan](https://avesis.yildiz.edu.tr/cihan)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Ted_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine
+  - 👤 **_Kolpa_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-9-oy)
