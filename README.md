@@ -1172,6 +1172,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 Lisansüstü
 
 
+#### 📘 Araştırma Yöntemleri ve Bilimsel Etik 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [AD](#-dr-ayşe-dalgalı)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
+
+
 #### 📘 Bilgisayarla Görme 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -1327,6 +1336,17 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [HOİ](#-dr-hamza-osman-i̇lhan)
     - [GB](#-doç-dr-gökhan-bilgin)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
+
+
+#### 📘 İleri Algoritma Analizi Ve Tasarımı 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [HİT](#-dr-h-i̇rem-türkmen)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20Algoritma%20Analizi%20Ve%20Tasarımı)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -1703,6 +1723,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
+#### 👩‍🏫 Dr. Ayşe Dalgalı 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [Araştırma Yöntemleri ve Bilimsel Etik](#-araştırma-yöntemleri-ve-bilimsel-etik)
+- ⭐ **Yıldız Sayıları:**
+  - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
 #### 👨‍🏫 Dr. Erkan Uslu 
 - 🚪 **Ofis:** EEF - D034
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/euslu/](http://avesis.yildiz.edu.tr/euslu/)
@@ -1795,6 +1827,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
+  - 📖 [İleri Algoritma Analizi Ve Tasarımı](#-i̇leri-algoritma-analizi-ve-tasarımı)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -2220,6 +2253,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <h2 align='center'>🆎 Hoca Kısaltmaları</h2>
 
 <p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
+<p align='center'>🔹 <b>AD</b> &emsp; Dr. Ayşe Dalgalı 🔹</p>
 <p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
 <p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
 <p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet ÖZDEN 🔹</p>
