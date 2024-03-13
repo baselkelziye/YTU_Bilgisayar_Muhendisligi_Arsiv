@@ -14,6 +14,9 @@ from PyQt6.QtWidgets import (
     QHBoxLayout,
     QListWidgetItem,
 )
+import textwrap
+from progress_dialog import CustomProgressDialogWithCancel
+from threadler import CMDScriptRunnerThread
 
 
 class GitHelper:
@@ -229,10 +232,56 @@ class GitDialog(QDialog):
                 self, "İptal Edildi", "Pushlama işlemi iptal edildi."
             )
             return
-        GitHelper.git_commit(self.repo_path, commit_msg)
-        GitHelper.git_push(self.repo_path)
+        self.commit_and_push(commit_msg=commit_msg)
         QMessageBox.information(self, "Başarılı", "Değişiklikler başarıyla pushlandı.")
         self.close()
+
+    def commit_and_push(self, commit_msg):
+        self.progress_dialog = CustomProgressDialogWithCancel(
+            "Pushlanıyor", self, self.thread_durduruluyor
+        )
+        komut = f"git -C {self.repo_path} commit -m {commit_msg} && git -C {self.repo_path} push"
+        # Thread'i başlat
+        self.thread = CMDScriptRunnerThread(komut, "Git Push")
+        self.thread.finished.connect(self.on_finished)
+        self.thread.error.connect(self.on_error)
+        self.thread.info.connect(self.info)
+        self.thread.start()
+        self.progress_dialog.show()
+
+    def on_error(self, errors):
+        self.progress_dialog.close()
+        self.thread.quit()
+        del self.thread
+        del self.progress_dialog
+        QMessageBox.critical(self, "Hata", errors)
+
+    def info(self, message, maxlen=35):
+        # Mesajı belirli bir uzunlukta parçalara ayır, kelimeleri tam böl
+        wrapped_message = textwrap.fill(message, maxlen)
+
+        # Güncellenmiş mesajı etiket metni olarak ayarla
+        self.progress_dialog.setLabelText(wrapped_message)
+
+    def on_finished(self, output):
+        self.progress_dialog.close()
+        self.thread.wait()
+        del self.thread
+        del self.progress_dialog
+        QMessageBox.information(self, "Başarılı", output)
+
+    def thread_durduruluyor(self):
+        cevap = QMessageBox.question(
+            self,
+            "Onay",
+            f"İşlemi durdurmak istediğinize emin misiniz?",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+        )
+        if cevap == QMessageBox.StandardButton.No:
+            return
+        self.progress_dialog.setLabelText("İşlem durduruluyor...")
+        self.progress_dialog.setCancelButton(None)
+        self.thread.durdur()
 
 
 class FileItemWidget(QWidget):
