@@ -232,8 +232,8 @@ class GitDialog(QDialog):
                 self, "İptal Edildi", "Pushlama işlemi iptal edildi."
             )
             return
+        commit_msg = '"' + commit_msg + '"'
         self.commit_and_push(commit_msg=commit_msg)
-        QMessageBox.information(self, "Başarılı", "Değişiklikler başarıyla pushlandı.")
         self.close()
 
     def commit_and_push(self, commit_msg):
