@@ -17,7 +17,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OA
@@ -37,7 +37,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - YES
@@ -56,7 +56,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AD
@@ -75,7 +75,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - HİT
@@ -97,7 +97,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
@@ -116,7 +116,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - SV
@@ -136,7 +136,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular](https://drive.google.com/drive/folders/1rAzRhhkAbRF8jPhqrNIb7Y2QZy-kkiNd?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
@@ -155,7 +155,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
@@ -174,7 +174,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
