@@ -2326,6 +2326,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h4 align='center'>✨ <b><i>Muhammed Nasır Sabır</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/nasirsabir'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/nasirsabir'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Önder Görmez</i></b> ✨</h4>
+<p align='center'><a href='https://www.linkedin.com/in/%C3%B6nder-g%C3%B6rmez-251b9462'><b>Github Profili</b></a> &nbsp<a href='https://github.com/ondergormez'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Ahmet Akib Gültekin</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/A1A1G2'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7/'><b>LinkedIn Profili</b></a></p>
 
