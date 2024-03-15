@@ -164,7 +164,7 @@ def hocalari_readme_ye_ekle(bilgiler):
     if HOCALAR not in bilgiler or len(bilgiler[HOCALAR]) != 0:
         bilgiler[HOCALAR] = [hoca for hoca in bilgiler[HOCALAR] if hoca[AD] != ""]
     else:
-        custom_write_error("Hoca bilgileri bulunamadı.\n")
+        custom_write_error("Hoca bilgileri bulunamadi.\n")
         return
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         if BOLUM_ADI in bilgiler:
@@ -173,11 +173,11 @@ def hocalari_readme_ye_ekle(bilgiler):
             )
             f.write(f"\n\n\n## 🎓 {bilgiler[BOLUM_ADI]}\n")
         else:
-            custom_write_error("Hocalar Bölüm adı bulunamadı.\n")
+            custom_write_error("Hocalar Bolum adi bulunamadi.\n")
         if BOLUM_ACIKLAMASI in bilgiler:
             f.write(f"📚 {bilgiler[BOLUM_ACIKLAMASI]}\n\n\n\n")
         else:
-            custom_write_error("Hocalar Bölüm açıklaması bulunamadı.\n\n")
+            custom_write_error("Hocalar Bolum aciklamasi bulunamadi.\n\n")
         en_populer_hoca_oy_sayisi = 0
         en_populer_hoca_adi = ""
         if EN_POPULER_HOCA in bilgiler and HOCA_ADI in bilgiler[EN_POPULER_HOCA]:
@@ -186,9 +186,9 @@ def hocalari_readme_ye_ekle(bilgiler):
                 en_populer_hoca_oy_sayisi = bilgiler[EN_POPULER_HOCA][OY_SAYISI]
             else:
                 en_populer_hoca_oy_sayisi = 1
-                custom_write_error("En popüler hoca oy sayısı bulunamadı.\n")
+                custom_write_error("En populer hoca oy sayisi bulunamadi.\n")
         else:
-            custom_write_error("En popüler hoca bilgileri bulunamadı.\n")
+            custom_write_error("En populer hoca bilgileri bulunamadi.\n")
 
         unvan_sayaci = 0
         baslik_str = "\n### {}\n"
@@ -448,7 +448,7 @@ def dersleri_readme_ye_ekle(dersler):
         f.write("</details>\n\n")
 
 
-# Giriş bilgilerini README'ye ekleyen fonksiyon
+# Giris bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_giris_ekle(giris_bilgileri):
     with open(ANA_README_YOLU, "w", encoding="utf-8") as f:
         f.write(
@@ -485,7 +485,7 @@ def readmeye_hocalar_icin_kisaltmalar_ekle(data):
         f.write("</details>\n\n")
 
 
-# Repo kullanımı bilgilerini README'ye ekleyen fonksiyon
+# Repo kullanimi bilgilerini README'ye ekleyen fonksiyon
 def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(
@@ -513,7 +513,7 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
         f.write("</details>\n\n")
 
 
-# Yazar notlarını README'ye ekleyen fonksiyon
+# Yazar notlarinı README'ye ekleyen fonksiyon
 def readme_ye_yazar_notlari_ekle(yazar_notlari):
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(f"<details>\n<summary><b>🖋 {yazar_notlari['baslik']}</b></summary>\n\n")
@@ -523,7 +523,7 @@ def readme_ye_yazar_notlari_ekle(yazar_notlari):
         for aciklama in yazar_notlari[ACIKLAMALAR]:
             f.write(
                 f"- 📝 {aciklama}\n"
-            )  # Not defteri ve kalem emoji, notları ve düşünceleri temsil eder
+            )  # Not defteri ve kalem emoji, notlari ve düşünceleri temsil eder
         f.write("</details>\n\n")
 
 
@@ -615,10 +615,10 @@ def sıralama_anahtarı(ders):
 """
 BURASI ANA README OLUŞTURMA KISMI
 """
-custom_write("README.md oluşturuluyor...\n")
-# JSON dosyasından yazar notlarını oku ve README'ye ekle
+custom_write("README.md olusturuluyor...\n")
+# JSON dosyasından yazar notlarinı oku ve README'ye ekle
 yazar_notlari = json_oku(YAZARIN_NOTLARI_JSON_NAME)
-# JSON dosyasından repo kullanımı bilgilerini oku ve README'ye ekle
+# JSON dosyasından repo kullanimi bilgilerini oku ve README'ye ekle
 repo_kullanimi_bilgileri = json_oku(REPO_KULLANIMI_JSON_NAME)
 # JSON dosyasından dersleri oku ve README'ye ekle
 dersler = json_oku(DERSLER_JSON_NAME)
@@ -629,17 +629,17 @@ giris_bilgileri = json_oku(GIRIS_JSON_NAME)
 katkida_bulunanlar = json_oku(KATKIDA_BULUNANLAR_JSON_NAME)
 maas_istatistikleri = txt_oku(MAAS_ISTATISTIKLERI_TXT_NAME)
 if giris_bilgileri is not None:
-    custom_write("Giriş bilgileri README'ye ekleniyor...\n")
+    custom_write("Giris bilgileri README'ye ekleniyor...\n")
     readme_ye_giris_ekle(giris_bilgileri)
 else:
-    custom_write("Giriş bilgileri bulunamadı...\n")
+    custom_write("Giris bilgileri bulunamadi...\n")
 if repo_kullanimi_bilgileri is not None:
-    custom_write("Repo kullanımı README'ye ekleniyor...\n")
+    custom_write("Repo kullanimi README'ye ekleniyor...\n")
     readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri)
 else:
-    custom_write_error("Repo kullanımı bilgileri bulunamadı...\n")
+    custom_write_error("Repo kullanimi bilgileri bulunamadi...\n")
 if maas_istatistikleri is not None:
-    custom_write("Maaş istatistikleri README'ye ekleniyor...\n")
+    custom_write("Maas istatistikleri README'ye ekleniyor...\n")
     readmeye_maas_istatistikleri_ekle(maas_istatistikleri)
 if dersler is not None:
     custom_write("Ders bilgileri README'ye ekleniyor...\n")
@@ -648,23 +648,23 @@ if hocalar is not None:
     custom_write("Hoca bilgileri README'ye ekleniyor...\n")
     hocalari_readme_ye_ekle(hocalar)
 else:
-    custom_write_error("Hoca bilgileri bulunamadı...\n")
+    custom_write_error("Hoca bilgileri bulunamadi...\n")
 if yazar_notlari is not None:
-    custom_write("Yazar notları README'ye ekleniyor...\n")
+    custom_write("Yazar notlari README'ye ekleniyor...\n")
     readme_ye_yazar_notlari_ekle(yazar_notlari)
 else:
-    custom_write_error("Yazar notları bulunamadı...\n")
+    custom_write_error("Yazar notlari bulunamadi...\n")
 if hocalar is not None:
-    custom_write("Hoca kısaltmaları README'ye ekleniyor...\n")
+    custom_write("Hoca kisaltmalari README'ye ekleniyor...\n")
     readmeye_hocalar_icin_kisaltmalar_ekle(hocalar)
 else:
-    custom_write_error("Hoca kısaltmaları bulunamadı...\n")
+    custom_write_error("Hoca kisaltmalari bulunamadi...\n")
 if katkida_bulunanlar is not None:
-    custom_write("Katkıda bulunanlar README'ye ekleniyor...\n")
+    custom_write("Katkida bulunanlar README'ye ekleniyor...\n")
     readme_katkida_bulunanlar_ekle(katkida_bulunanlar)
 else:
-    custom_write_error("Katkıda bulunanlar bulunamadı...\n")
-custom_write("Yıldız geçmişi README'ye ekleniyor...\n")
+    custom_write_error("Katkida bulunanlar bulunamadi...\n")
+custom_write("Yildiz gecmisi README'ye ekleniyor...\n")
 readmeye_yildiz_gecmisi_ekle()
 """
 BURASI ANA README OLUŞTURMA KISMI
@@ -768,9 +768,9 @@ def klasorde_baska_dosya_var_mi(ders_klasoru):
 
 
 if dersler is not None:
-    custom_write("Dersler README.md oluşturuluyor...\n")
+    custom_write("Dersler README.md olusturuluyor...\n")
     for ders in dersler[DERSLER]:
-        custom_write(f"{ders[AD]} README.md oluşturuluyor...\n")
+        custom_write(f"{ders[AD]} README.md olusturuluyor...\n")
         ders_klasoru = en_iyi_eslesen_klasor_yolu_bul(DOKUMANLAR_REPO_YOLU, ders[AD])
         if ders_klasoru is not None:
             baska_dosya_var_mi = klasorde_baska_dosya_var_mi(ders_klasoru)
@@ -787,7 +787,7 @@ if dersler is not None:
             ders_klasorune_readme_olustur(
                 ders, ders_klasoru, klasor_sonradan_olustu=True
             )
-        custom_write(f"{ders[AD]} README.md oluşturuldu.\n")
+        custom_write(f"{ders[AD]} README.md olusturuldu.\n")
 else:
     custom_write_error("Ders bilgileri bulunamadı.\n")
 """
@@ -803,7 +803,7 @@ Burası Dönem Readme oluşturma kısmı
 def donemlere_gore_readme_olustur(donemler):
     # Her dönem için README.md oluştur
     for donem in donemler[DONEMLER]:
-        custom_write(f"{donem[DONEM_ADI]} README.md oluşturuluyor...\n")
+        custom_write(f"{donem[DONEM_ADI]} README.md olusturuluyor...\n")
         donem_dosya_yolu = donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU)
         os.makedirs(donem_dosya_yolu, exist_ok=True)
         dosya_yolu = os.path.join(donem_dosya_yolu, README_MD)
@@ -818,7 +818,7 @@ def donemlere_gore_readme_olustur(donemler):
             if donem.get(YIL, 0) != 0:
                 f.write("## 📚 Dönemin Zorunlu Dersleri\n\n")
                 # Kitap emoji, zorunlu dersleri temsil eder
-        custom_write(f"{donem[DONEM_ADI]} README.md oluşturuldu.\n")
+        custom_write(f"{donem[DONEM_ADI]} README.md olusturuldu.\n")
 
 
 def ders_bilgilerini_readme_ile_birlestir(
@@ -826,7 +826,7 @@ def ders_bilgilerini_readme_ile_birlestir(
 ):
     # Her ders için ilgili dönem README'sine ekle
     for ders in dersler:
-        custom_write(f"{ders[AD]} README.md dönemine ekleniyor...\n")
+        custom_write(f"{ders[AD]} README.md donemine ekleniyor...\n")
         count = 0
         for donem in donemler:
             if (
@@ -917,17 +917,17 @@ def ders_bilgilerini_readme_ile_birlestir(
                         f.write(f"- {guncel_olmayan_ders_aciklamasi}\n")
                 if count > 1:
                     break
-        custom_write(f"{ders[AD]} README.md dönemine eklendi.\n")
+        custom_write(f"{ders[AD]} README.md donemine eklendi.\n")
 
 
 donemler = json_oku(DONEMLER_JSON_NAME)
 if donemler is not None:
-    custom_write("Dönem README'leri oluşturuluyor...\n")
-    custom_write("Dönem bilgileri README'ye ekleniyor...\n")
+    custom_write("Donem README'leri olusturuluyor...\n")
+    custom_write("Donem bilgileri README'ye ekleniyor...\n")
     donemlere_gore_readme_olustur(donemler)
     custom_write("Ders bilgileri README'ye ekleniyor...\n")
     ders_bilgilerini_readme_ile_birlestir(
         dersler[DERSLER], donemler[DONEMLER], dersler[GUNCEL_OLMAYAN_DERS_ACIKLAMASI]
     )
 else:
-    custom_write_error("Dönem bilgileri bulunamadı.\n")
+    custom_write_error("Donem bilgileri bulunamadi.\n")
