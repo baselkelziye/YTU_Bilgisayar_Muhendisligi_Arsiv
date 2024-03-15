@@ -1181,6 +1181,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
 
 
+#### 📘 Bilgisayar Güvenliği ve Kriptografi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+
+#### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+
 #### 📘 Bilgisayarla Görme 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -1200,6 +1212,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Büyük%20Veri%20Analitiği)
 
 
+#### 📘 İleri Optimizasyon 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+
 #### 📘 Kollektif Öğrenme 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -1216,6 +1234,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
+
+
+#### 📘 Olasılık, Rastgele Değişkenler ve Stokastik Prosesler 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
@@ -1260,6 +1284,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Yazılım%20Kalitesi%20ve%20Test%20Teknikleri)
+
+
+#### 📘 Çok Değişkenli İstatiksel Veri Analizi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ### 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler
 
@@ -1354,6 +1384,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HİT](#-dr-h-i̇rem-türkmen)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20Algoritma%20Analizi%20Ve%20Tasarımı)
+  - ℹ️ Dersin içeriği güncel değil
+    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
+
+
+#### 📘 İleri İşletim Sistemleri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 

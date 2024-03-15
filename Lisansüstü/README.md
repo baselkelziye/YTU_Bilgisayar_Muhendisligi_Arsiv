@@ -63,6 +63,38 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - AD
 
+### 📘 Bilgisayar Güvenliği ve Kriptografi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+
+### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+
 ### 📘 Büyük Veri Analitiği
 
 #### 📄 Ders Bilgileri
@@ -102,6 +134,41 @@
 #### ℹ️ Dersin içeriği güncel değil
 - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
+### 📘 İleri İşletim Sistemleri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+
+#### ℹ️ Dersin içeriği güncel değil
+- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
+
+### 📘 İleri Optimizasyon
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+
 ### 📘 Kollektif Öğrenme
 
 #### 📄 Ders Bilgileri
@@ -120,6 +187,22 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
+
+### 📘 Olasılık, Rastgele Değişkenler ve Stokastik Prosesler
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 ### 📘 Veri Madenciliği ve Bilgi Keşfi
 
@@ -197,3 +280,19 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
+
+### 📘 Çok Değişkenli İstatiksel Veri Analizi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
+- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
+
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
