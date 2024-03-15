@@ -149,7 +149,6 @@ class TalimatDialog(QDialog):
             )
             talimatBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             talimatLayout.addWidget(talimatBtn, 3)
-            talimatBtn.setMaximumWidth(500)
 
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
@@ -524,7 +523,6 @@ class KavramDialog(QDialog):
                 lambda checked, index=i: self.kavramDuzenle(index)
             )
             kavramBtn.setStyleSheet("background-color: lightgreen; color: black;")
-            kavramBtn.setMaximumWidth(500)
             kavramLayout.addWidget(kavramBtn, 3)
 
             # Kavramı düzenleme butonu
@@ -750,7 +748,6 @@ class AciklamaDialog(QDialog):
             )
             aciklamaBtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             aciklamaLayout.addWidget(aciklamaBtn, 3)
-            aciklamaBtn.setMaximumWidth(500)
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
             silBtn.clicked.connect(lambda checked, index=i: self.aciklamaSil(index))

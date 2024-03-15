@@ -303,10 +303,18 @@ ARAYUZU_GITHULA_ESITLE_SH = ARAYUZU_GITHULA_ESITLE + ".sh"
 IKON_PATH = "ikonlar"
 SELCUKLU_ICO = "selcuklu.png"
 OSMANLI_ICO = "osmanli.png"
+SAVE_ICO = "save.png"
+DELETE_ICO = "delete.png"
+INFO_ICO = "info.png"
+RESTORE_ICO = "restore.jpeg"
 
 ## IKON YOLLARI
 OSMANLI_ICO_PATH = os.path.join(IKON_PATH, OSMANLI_ICO)
 SELCUKLU_ICO_PATH = os.path.join(IKON_PATH, SELCUKLU_ICO)
+SAVE_ICO_PATH = os.path.join(IKON_PATH, SAVE_ICO)
+DELETE_ICO_PATH = os.path.join(IKON_PATH, DELETE_ICO)
+INFO_ICO_PATH = os.path.join(IKON_PATH, INFO_ICO)
+RESTORE_ICO_PATH = os.path.join(IKON_PATH, RESTORE_ICO)
 
 # DONEMLER
 MESLEKI_SECMELI = "Mesleki Seçmeli"

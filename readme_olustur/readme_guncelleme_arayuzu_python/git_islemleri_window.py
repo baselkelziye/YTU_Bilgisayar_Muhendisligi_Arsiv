@@ -1,12 +1,7 @@
 import sys
 import os
 import textwrap
-from PyQt6.QtWidgets import (
-    QDialog,
-    QVBoxLayout,
-    QPushButton,
-    QMessageBox,
-)
+from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox, QApplication
 from degiskenler import *
 from progress_dialog import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
@@ -166,6 +161,9 @@ class GitIslemleriWindow(QDialog):
             return
         gitDialog = GitDialog(yol, self)
         gitDialog.show()
+        # Uygulamanın olay döngüsünü zorla işleyin
+        QApplication.processEvents()
+        gitDialog.getStatusToInterface()
 
     def update_dosyalar_repo(self):
         if not self.git_degisiklik_kontrol(
