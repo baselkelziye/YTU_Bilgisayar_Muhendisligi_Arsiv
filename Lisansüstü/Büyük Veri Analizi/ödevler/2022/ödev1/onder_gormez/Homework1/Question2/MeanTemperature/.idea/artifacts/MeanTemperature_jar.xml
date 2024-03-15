@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MeanTemperature:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MeanTemperature_jar</output-path>
+    <root id="archive" name="MeanTemperature.jar">
+      <element id="module-output" name="MeanTemperature" />
+      <element id="library" level="project" name="google.code.maven.play.plugin.apache.hadoop.core" />
+      <element id="library" level="project" name="eclipse.ecf.apache.log4j" />
+    </root>
+  </artifact>
+</component>
