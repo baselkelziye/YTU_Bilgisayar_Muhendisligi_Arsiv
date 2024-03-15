@@ -136,8 +136,12 @@ class KatkiEkleThread(QThread):
 
 
 def enqueue_output(out, queue):
+
     for line in iter(out.readline, ""):
-        queue.put(line)
+        try:
+            queue.put(line)
+        except:
+            queue.put("Çözümlenemeyen karakter kodlaması")
     out.close()
 
 

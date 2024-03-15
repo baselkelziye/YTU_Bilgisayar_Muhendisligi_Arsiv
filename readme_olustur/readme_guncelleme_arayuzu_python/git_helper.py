@@ -1,5 +1,12 @@
 import subprocess
-from degiskenler import SIL_BUTONU_STILI, EKLE_BUTONU_STILI
+from degiskenler import (
+    SIL_BUTONU_STILI,
+    EKLE_BUTONU_STILI,
+    SAVE_ICO_PATH,
+    DELETE_ICO_PATH,
+    RESTORE_ICO_PATH,
+    INFO_ICO_PATH,
+)
 from PyQt6.QtWidgets import (
     QDialog,
     QVBoxLayout,
@@ -15,13 +22,49 @@ from PyQt6.QtWidgets import (
     QListWidgetItem,
     QSplitter,
 )
-from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import Qt, QTimer, QSize
 import textwrap
-from progress_dialog import CustomProgressDialogWithCancel
+from progress_dialog import CustomProgressDialogWithCancel, CustomProgressDialog
 from threadler import CMDScriptRunnerThread
+import difflib
+import os
 
 
 class GitHelper:
+    @staticmethod
+    def get_file_content_at_commit(repo_path, file_path, commit_hash):
+        if commit_hash == "WORKING":  # "WORKING" özel bir anahtar olarak kullanılıyor
+            # Dosyanın çalışma kopyasındaki şu anki içeriğini oku
+            full_path = os.path.join(repo_path, file_path)
+            try:
+                with open(full_path, "r", encoding="utf-8") as file:
+                    return file.read()
+            except FileNotFoundError:
+                return "Dosya Silindi"
+            except IOError as e:
+                print("Dosya okuma hatası:", e)
+                return ""
+        else:
+            # Belirli bir commit'teki dosya içeriğini git show ile al
+            if file_path[0] == '"':
+                file_path = file_path[1 : len(file_path) - 1]
+            cmd = [
+                "git",
+                "-C",
+                repo_path,
+                "show",
+                "{}:{}".format(commit_hash, file_path),
+            ]
+            try:
+                output = subprocess.check_output(
+                    cmd, stderr=subprocess.STDOUT, universal_newlines=True
+                )
+                return output
+            except subprocess.CalledProcessError as e:
+                print("Git show hatası:", e.output)
+                return ""
+
     @staticmethod
     def set_git_quotepath_off(repo_path):
         # Git yapılandırmasını değiştirmek için git config komutunu çağır
@@ -45,7 +88,7 @@ class GitHelper:
     def git_add(repo_path, file_path):
         if file_path[0] != '"':
             file_path = '"' + file_path + '"'
-        subprocess.run(f"git -C {repo_path} add {file_path}", shell=True)
+        subprocess.run(f"git -C {repo_path} add -- {file_path}", shell=True)
 
     @staticmethod
     def git_add_all(repo_path):
@@ -59,7 +102,7 @@ class GitHelper:
     def git_reset(repo_path, file_path):
         if file_path[0] != '"':
             file_path = '"' + file_path + '"'
-        subprocess.run(f"git -C {repo_path} reset {file_path}", shell=True)
+        subprocess.run(f"git -C {repo_path} reset -- {file_path}", shell=True)
 
     @staticmethod
     def git_commit(repo_path, message):
@@ -71,7 +114,10 @@ class GitHelper:
 
     @staticmethod
     def git_restore(repo_path, file_path):
-        subprocess.run(["git", "-C", repo_path, "restore", "file_path"])
+        subprocess.run(
+            f"git -C {repo_path} restore -- {file_path}",
+            shell=True,
+        )
 
     @staticmethod
     def git_diff(repo_path, file_name):
@@ -97,6 +143,10 @@ class GitDialog(QDialog):
         self.setModal(True)
         self.repo_path = repo_path
         self.setMinimumSize(550, 650)
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.processNextItem)
+        self.status_lines = []
+        self.current_index = 0  # Şu an işlenmekte olan satırın indeksi
         self.initUI()
 
     def initUI(self):
@@ -111,7 +161,6 @@ class GitDialog(QDialog):
         self.stagedList = QListWidget()
         self.commitMessage = QTextEdit()
         self.amendCheckBox = QCheckBox("Amend")
-        self.amendCheckBox.setEnabled(False)
         pushButton = QPushButton("Değişiklikleri Pushla")
         add_all_btn = QPushButton("Tüm değişiklikleri ekle")
         add_all_btn.setStyleSheet(EKLE_BUTONU_STILI)
@@ -144,7 +193,42 @@ class GitDialog(QDialog):
         add_all_btn.clicked.connect(self.tumDegisiklikleriEkle)
         pushButton.clicked.connect(self.pushChanges)
         delete_all_btn.clicked.connect(self.tumDegisiklikleriSil)
+
+    def getStatusToInterface(self):
         self.populateChanges()
+        self.setupInitTimer()
+
+    def setupInitTimer(self):
+        # QTimer nesnesi oluşturulur
+        self.init_timer = QTimer(self)
+        # QTimer sinyali ile `processNextLine` metodunu bağla
+        self.init_timer.timeout.connect(self.processNextLine)
+        # QTimer'ı başlat (her 10 ms de bir)
+        self.init_timer.start(10)
+
+    def populateChanges(self):
+        self.init_progress_dialog = CustomProgressDialog("Arayüz yükleniyor...", self)
+        # GitHelper'dan gelen durum satırlarını al
+        self.status_lines = GitHelper.git_status(self.repo_path)
+        self.current_index = 0  # İndeksi sıfırla
+        self.init_progress_dialog.show()
+        # Timer'ı manuel olarak burada başlatabilirsiniz ya da başka bir yerde başlatmış olabilirsiniz
+        # Eğer burada başlatmak istiyorsanız, yorumu kaldırın:
+        # self.init_timer.start(10)
+
+    def processNextLine(self):
+        if self.current_index < len(self.status_lines):
+            line = self.status_lines[self.current_index]
+            if len(line) > 0:
+                if line.startswith(" ") or line.startswith("??"):
+                    self.addFileItem(self.unstagedList, line[3:], is_staged=False)
+                else:
+                    self.addFileItem(self.stagedList, line[3:], is_staged=True)
+            self.current_index += 1
+        else:
+            self.init_timer.stop()  # Listenin sonuna ulaştığımızda timer'ı durdur
+            self.init_progress_dialog.close()
+            del self.init_progress_dialog
 
     def tumDegisiklikleriEkle(self):
         if len(self.unstagedList) == 0:
@@ -165,9 +249,18 @@ class GitDialog(QDialog):
             )
             return
 
-        for unstagedItem in self.getItemsFromListWidget(self.unstagedList):
-            unstagedItem.onButtonClick()
-        GitHelper.git_add_all(self.repo_path)
+        self.itemsToProcess = iter(self.getItemsFromListWidget(self.unstagedList))
+        self.timer.start(
+            30
+        )  # 10 ms (0.01 saniye) aralıklarla `processNextItem`'ı çağır
+        komut = f"git -C {self.repo_path} add --all"
+        self.git_progress_dialog = CustomProgressDialog(
+            "Arayüz değişiklikleri uyguluyor", self
+        )
+        self.git_progress_dialog.show()
+        self.komut_calistir(
+            "Tüm Elemanları Ekleme", "Ekleniyor", komut, kapansin_mi=False
+        )
 
     def tumDegisiklikleriSil(self):
         if len(self.stagedList) == 0:
@@ -186,19 +279,30 @@ class GitDialog(QDialog):
                 self, "İptal Edildi", "Tüm değişiklikleri iptal işlemi iptal edildi."
             )
             return
+        self.itemsToProcess = iter(self.getItemsFromListWidget(self.stagedList))
+        self.timer.start(
+            30
+        )  # 10 ms (0.01 saniye) aralıklarla `processNextItem`'ı çağır
+        komut = f"git -C {self.repo_path} reset HEAD"
+        self.git_progress_dialog = CustomProgressDialog(
+            "Arayüz değişiklikleri uyguluyor", self
+        )
+        self.git_progress_dialog.show()
+        self.komut_calistir(
+            "Tüm Elemanları Çıkarma", "Çıkarılıyor", komut, kapansin_mi=False
+        )
 
-        for unstagedItem in self.getItemsFromListWidget(self.stagedList):
-            unstagedItem.onButtonClick()
-        GitHelper.git_reset_all(self.repo_path)
-
-    def populateChanges(self):
-        status_lines = GitHelper.git_status(self.repo_path)
-        for line in status_lines:
-            if len(line) > 0:
-                if line.startswith(" ") or line.startswith("??"):
-                    self.addFileItem(self.unstagedList, line[3:], is_staged=False)
-                else:
-                    self.addFileItem(self.stagedList, line[3:], is_staged=True)
+    def processNextItem(self):
+        try:
+            # Sonraki öğeyi al ve işle
+            unstagedItem = next(self.itemsToProcess)
+            unstagedItem.onButtonClick(git_komutunu_uygula=False)
+        except StopIteration:
+            # İşlenecek öğe kalmadıysa, timer'ı durdur
+            self.timer.stop()
+            self.git_progress_dialog.close()
+            del self.git_progress_dialog
+            QMessageBox.information(self, "Başarılı", "Arayüz Değişiklikleri Uygulandı")
 
     def addFileItem(self, list_widget, file_name, is_staged):
         item = QListWidgetItem(list_widget)
@@ -229,7 +333,7 @@ class GitDialog(QDialog):
                 break  # Eşleşme bulunduğunda döngüden çık
 
     def pushChanges(self):
-        if self.stagedList.count() == 0:
+        if self.stagedList.count() == 0 and not self.amendCheckBox.isChecked():
             QMessageBox.warning(self, "Hata", "Kaydedilen dosya yok.")
             return
 
@@ -250,17 +354,24 @@ class GitDialog(QDialog):
                 self, "İptal Edildi", "Pushlama işlemi iptal edildi."
             )
             return
-        commit_msg = '"' + commit_msg + '"'
-        self.commit_and_push(commit_msg=commit_msg)
-
-    def commit_and_push(self, commit_msg):
-        self.progress_dialog = CustomProgressDialogWithCancel(
-            "Pushlanıyor", self, self.thread_durduruluyor
+        if self.amendCheckBox.isChecked():
+            komut = f'git -C "{self.repo_path}" commit --amend -m "{commit_msg}" && git -C "{self.repo_path}" push --force-with-lease'
+        else:
+            komut = f'git -C "{self.repo_path}" commit -m "{commit_msg}" && git -C "{self.repo_path}" push'
+        self.komut_calistir(
+            thread_basligi="Git Push", baslik="Pushlanıyor", komut=komut
         )
-        komut = f"git -C {self.repo_path} commit -m {commit_msg} && git -C {self.repo_path} push"
+
+    def komut_calistir(self, thread_basligi, baslik, komut, kapansin_mi=True):
+        self.progress_dialog = CustomProgressDialogWithCancel(
+            baslik, self, self.thread_durduruluyor
+        )
         # Thread'i başlat
-        self.thread = CMDScriptRunnerThread(komut, "Git Push")
-        self.thread.finished.connect(self.on_finished)
+        self.thread = CMDScriptRunnerThread(komut, thread_basligi)
+        if kapansin_mi:
+            self.thread.finished.connect(self.on_finished)
+        else:
+            self.thread.finished.connect(self.kapanmadan_on_finished)
         self.thread.error.connect(self.on_error)
         self.thread.info.connect(self.info)
         self.thread.start()
@@ -280,12 +391,16 @@ class GitDialog(QDialog):
         # Güncellenmiş mesajı etiket metni olarak ayarla
         self.progress_dialog.setLabelText(wrapped_message)
 
-    def on_finished(self, output):
+    def kapanmadan_on_finished(self, output):
+        self.on_finished(output=output, kapansin_mi=False)
+
+    def on_finished(self, output, kapansin_mi=True):
         self.progress_dialog.close()
         self.thread.wait()
         del self.thread
         del self.progress_dialog
-        self.close()
+        if kapansin_mi:
+            self.close()
         QMessageBox.information(self, "Başarılı", output)
 
     def thread_durduruluyor(self):
@@ -315,32 +430,62 @@ class FileItemWidget(QWidget):
         btn_layout = QVBoxLayout()
         self.label = QLabel()
         self.label.setSizePolicy(getMaxSizeYatay())
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek
-        # burası güncellenecek restore buton eklenecek GitHelper.git_restore
         self.label.setText(self.elideText(self.file_name))
         self.label.setToolTip(self.file_name)  # Tam dosya adını tooltip olarak ekleme
-        button = QPushButton("Kaydet" if not self.is_staged else "Sil")
-        button.setStyleSheet(SIL_BUTONU_STILI if self.is_staged else EKLE_BUTONU_STILI)
-        button.clicked.connect(self.onButtonClick)
-        diff_btn = QPushButton("Farkı Gör")
+        btns = []
+        # Kaydet/Sil butonu
+        save_delete_button = QPushButton()
+        save_delete_button.setIcon(
+            QIcon(SAVE_ICO_PATH if not self.is_staged else DELETE_ICO_PATH)
+        )  # İkon yolu
+        save_delete_button.clicked.connect(lambda: self.onButtonClick(True))
+        btns.append(save_delete_button)
+        # Farkı Gör butonu
+        diff_btn = QPushButton()
+        diff_btn.setIcon(QIcon(INFO_ICO_PATH))  # İkon yolu
         diff_btn.clicked.connect(self.showGitDiff)
-        btn_layout.addWidget(button)
-        btn_layout.addWidget(diff_btn)
+        btns.append(diff_btn)
+        if not self.is_staged:
+            # Restore butonu
+            restore_btn = QPushButton()
+            restore_btn.setIcon(QIcon(RESTORE_ICO_PATH))  # İkon yolu
+            restore_btn.clicked.connect(self.onRestoreClick)
+            btns.append(restore_btn)
+        # Buton boyutlarını ayarla
+        for btn in btns:
+            btn.setStyleSheet("min-width: 12px; min-height: 12px;")
+            btn.setFixedSize(QSize(12, 60))  # Küçük buton boyutu
+            btn_layout.addWidget(btn)
+
         layout.addWidget(self.label)
         layout.addLayout(btn_layout)
         self.setLayout(layout)
+
+    def onRestoreClick(self):
+        reply = QMessageBox.question(
+            self,
+            "Emin Misiniz?",
+            f"{self.file_name} Dosyasının tüm değişikliklerini eski haline getirmek istediğinize emin misiniz? (İşlem geri alınamaz!!!)",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.No,
+        )
+        if reply == QMessageBox.StandardButton.No:
+            QMessageBox.information(
+                self,
+                "İptal Edildi",
+                "Dosyanın tüm değişikliklerini eski haline getirme işlemi iptal edildi.",
+            )
+            return
+        GitHelper.git_restore(self.parent.repo_path, self.file_name)
+        if self.is_staged:
+            self.parent.removeFileItem(self.parent.stagedList, self.file_name)
+        else:
+            self.parent.removeFileItem(self.parent.unstagedList, self.file_name)
+        QMessageBox.information(
+            self,
+            "Başarılı!!!",
+            f"{self.file_name} dosyasının tüm değişiklikleri orjinal haline getirildi...",
+        )
 
     def elideText(self, text, max_length=40):
         if len(text) <= max_length:
@@ -351,59 +496,80 @@ class FileItemWidget(QWidget):
             suffix_length = keep_length - prefix_length
             return text[:prefix_length] + "..." + text[-suffix_length:]
 
-    def onButtonClick(self):
+    def onButtonClick(self, git_komutunu_uygula=True):
         if self.is_staged:
             self.parent.removeFileItem(self.parent.stagedList, self.file_name)
             self.parent.addFileItem(
                 self.parent.unstagedList, self.file_name, is_staged=not self.is_staged
             )
-            GitHelper.git_reset(self.parent.repo_path, self.file_name)
+            if git_komutunu_uygula:
+                GitHelper.git_reset(self.parent.repo_path, self.file_name)
         else:
             self.parent.removeFileItem(self.parent.unstagedList, self.file_name)
             self.parent.addFileItem(
                 self.parent.stagedList, self.file_name, is_staged=not self.is_staged
             )
-            GitHelper.git_add(self.parent.repo_path, self.file_name)
+            if git_komutunu_uygula:
+                GitHelper.git_add(self.parent.repo_path, self.file_name)
 
     def showGitDiff(self):
-        diff_output = GitHelper.git_diff(self.parent.repo_path, self.file_name)
-        diffWindow = DiffWindow(diff_output, diff_output, self)
+        original_content = GitHelper.get_file_content_at_commit(
+            self.parent.repo_path, self.file_name, "main"
+        )
+        modified_content = GitHelper.get_file_content_at_commit(
+            self.parent.repo_path, self.file_name, "WORKING"
+        )
+
+        diffWindow = DiffWindow(
+            original_content,
+            modified_content,
+            self,
+        )
         diffWindow.show()
 
 
 class DiffWindow(QDialog):
-    # DİFF GÖSTERİLMİYOR ŞU AN DÜZENLENECEK
-    def __init__(self, old_text, new_text, parent=None):
-        super().__init__(parent=parent)
+    def __init__(self, original_text, modified_text, parent=None):
+        super().__init__(parent)
         self.setModal(True)
-        self.setMinimumSize(400, 400)
-        self.old_text = old_text
-        self.new_text = new_text
-        self.initUI()
+        self.setWindowTitle("FARK Penceresi")
+        original_layout = QVBoxLayout()
+        modified_layout = QVBoxLayout()
+        original_label = QLabel("Orjinal Hali")
+        modified_label = QLabel("Değişmiş Hali")
+        modified_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        original_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        original_layout.addWidget(original_label)
+        modified_layout.addWidget(modified_label)
+        self.original_text_edit = QTextEdit()
+        self.modified_text_edit = QTextEdit()
 
-    def initUI(self):
-        # Layoutları tanımla
-        self.layout = QHBoxLayout()
-        self.eski_layout = QVBoxLayout()
-        self.yeni_layout = QVBoxLayout()
+        self.original_text_edit.setReadOnly(True)
+        self.modified_text_edit.setReadOnly(True)
 
-        self.eski_layout.addWidget(QLabel("Eskisi"))
-        # Eski metni göster
-        self.oldTextEdit = QTextEdit()
-        self.oldTextEdit.setPlainText(self.old_text)
-        self.oldTextEdit.setReadOnly(True)
+        layout = QHBoxLayout()
+        original_layout.addWidget(self.original_text_edit)
+        modified_layout.addWidget(self.modified_text_edit)
+        layout.addLayout(original_layout)
+        layout.addLayout(modified_layout)
+        self.setLayout(layout)
 
-        self.eski_layout.addWidget(self.oldTextEdit)
-        self.yeni_layout.addWidget(QLabel("Yenisi"))
-        # Yeni metni göster
-        self.newTextEdit = QTextEdit()
-        self.newTextEdit.setPlainText(self.new_text)
-        self.newTextEdit.setReadOnly(True)
-        self.yeni_layout.addWidget(self.newTextEdit)
-        # Layoutlara widget'ları ekle
-        self.layout.addLayout(self.eski_layout)
-        self.layout.addLayout(self.yeni_layout)
+        self.show_diff(original_text, modified_text)
 
-        # Ana pencerenin layout'unu ayarla
-        self.setLayout(self.layout)
-        self.setWindowTitle("Fark Gösterici")
+    def show_diff(self, original_text, modified_text):
+        diff = difflib.ndiff(
+            original_text.splitlines(keepends=True),
+            modified_text.splitlines(keepends=True),
+        )
+
+        original_display = ""
+        modified_display = ""
+
+        for line in diff:
+            if line.startswith("-"):
+                original_display += f'<span style="background-color: #FFCCCC;">{line[2:].rstrip()}</span><br>'
+            elif line.startswith("+"):
+                modified_display += f'<span style="background-color: #CCFFCC;">{line[2:].rstrip()}</span><br>'
+
+        self.original_text_edit.setHtml(original_display)
+        self.modified_text_edit.setHtml(modified_display)
