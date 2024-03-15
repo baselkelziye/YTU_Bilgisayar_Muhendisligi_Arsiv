@@ -13,7 +13,5 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
-
-## 😔 İçerik yok
-- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...
