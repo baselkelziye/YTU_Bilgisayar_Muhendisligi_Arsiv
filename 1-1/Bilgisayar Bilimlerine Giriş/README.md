@@ -27,7 +27,7 @@
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz) ✨
 - 📄 **Proje:** [Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
