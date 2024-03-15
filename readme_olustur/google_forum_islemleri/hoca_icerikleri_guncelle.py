@@ -28,6 +28,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     try:
         # Google Sheets verisini indir
         df = pd.read_csv(sheets_url)
+        df.to_csv(HOCALAR_YORUM_CSV_PATH, index=False)
     except Exception as e:
         custom_write_error(f"CSV dosyası okunurken hata oluştu: {e}\n")
         exit(1)
@@ -87,6 +88,7 @@ yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 # Veriyi indir ve DataFrame olarak oku
 try:
     yildizlar_df = pd.read_csv(yildizlar_sheets_url)
+    yildizlar_df.to_csv(HOCALAR_YILDIZ_CSV_PATH, index=False)
 except Exception as e:
     custom_write_error(f"CSV dosyası okunurken hata oluştu: {e}\n")
     exit(1)
