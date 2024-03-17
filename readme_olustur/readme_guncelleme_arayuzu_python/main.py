@@ -20,7 +20,7 @@ from git_islemleri_window import GitIslemleriWindow
 from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
-
+from konfigurasyon_window import KonfigurasyonDialog
 
 class App(QWidget):
     def __init__(self):
@@ -46,6 +46,7 @@ class App(QWidget):
             QPushButton("Yazarın Notları Ekle/Güncelle"),
             QPushButton("Katkıda Bulunan Ekle/Güncelle"),
             QPushButton("Dönem Ekle/Güncelle"),
+            QPushButton("Konfigürasyon Düzenle"),
             QPushButton("Git İşlemleri"),
         ]
         # Her düğme için farklı bir renk ayarla
@@ -58,6 +59,7 @@ class App(QWidget):
             "#F39C12",
             "#D35400",
             "#16A085",
+            "#9B59B6",
             "#2C3E50",
         ]
         for button, color in zip(self.buttons, colors):
@@ -75,7 +77,8 @@ class App(QWidget):
         self.buttons[5].clicked.connect(self.acYazarinNotlari)
         self.buttons[6].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
         self.buttons[7].clicked.connect(self.acDonemEkleGuncelle)
-        self.buttons[8].clicked.connect(self.gitIslemleri)
+        self.buttons[8].clicked.connect(self.acKonfigurasyonDuzenle)
+        self.buttons[9].clicked.connect(self.gitIslemleri)
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -89,7 +92,10 @@ class App(QWidget):
         # Dönem Ekle/Güncelle penceresini aç
         self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow(parent=self)
         self.donemEkleGuncelleWindow.show()
-
+    def acKonfigurasyonDuzenle(self):
+        # Dönem Ekle/Güncelle penceresini aç
+        self.konfigurasyonDialog = KonfigurasyonDialog(parent=self)
+        self.konfigurasyonDialog.show()
     def maasIstatistikleriDuzenle(self):
         if os.path.exists(MAAS_ISTATISTIKLERI_TXT_PATH):
             with open(MAAS_ISTATISTIKLERI_TXT_PATH, "r", encoding="utf-8") as dosya:
