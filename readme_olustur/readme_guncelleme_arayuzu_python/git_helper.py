@@ -7,6 +7,7 @@ from degiskenler import (
     RESTORE_ICO_PATH,
     INFO_ICO_PATH,
 )
+from metin_islemleri import elideText
 from PyQt6.QtWidgets import (
     QDialog,
     QVBoxLayout,
@@ -430,7 +431,7 @@ class FileItemWidget(QWidget):
         btn_layout = QVBoxLayout()
         self.label = QLabel()
         self.label.setSizePolicy(getMaxSizeYatay())
-        self.label.setText(self.elideText(self.file_name))
+        self.label.setText(elideText(self.file_name))
         self.label.setToolTip(self.file_name)  # Tam dosya adını tooltip olarak ekleme
         btns = []
         # Kaydet/Sil butonu
@@ -487,14 +488,6 @@ class FileItemWidget(QWidget):
             f"{self.file_name} dosyasının tüm değişiklikleri orjinal haline getirildi...",
         )
 
-    def elideText(self, text, max_length=40):
-        if len(text) <= max_length:
-            return text
-        else:
-            keep_length = max_length - 3  # 3 karakter "..." için ayrıldı
-            prefix_length = keep_length // 2
-            suffix_length = keep_length - prefix_length
-            return text[:prefix_length] + "..." + text[-suffix_length:]
 
     def onButtonClick(self, git_komutunu_uygula=True):
         if self.is_staged:
