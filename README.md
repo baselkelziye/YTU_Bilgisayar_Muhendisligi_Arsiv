@@ -632,7 +632,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan)
@@ -1532,6 +1532,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Blessed Camel_**: Aşırı zeki bir adam hatta o kadar zeki ki dersi kendi seviyesinde anlattığından hiç bir şey anlayamıyorsunuz. Fazla insan da sevmez ama genel olarak iyi birisidir
   - 👤 **_Isimsiz_**: The Best
   - 👤 **_Prof. Dr._**: Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi.
+  - 👤 **_Prolog_**: Ders dinlemeye değil, podcast dinlemeye gelirdim. Çok eğlenceli anlatır, konusuna hakim. Öğrenciyi zorlamaz.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -1661,6 +1662,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Madmax_**: Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.
   - 👤 **_Violancello_**: Derste sakız çiğnenmesi gibi önemsiz detaylara takılıyor, 30 hoca için sorun olmayan durum niye onun için sorun oluyor anlamıyorum açıkçası. Bunun dışında dersleri gayet güzel anlatıyor.
   - 👤 **_Blessed Camel_**: Disiplin abidesi. Sınavları genelde ortalama oluyor çok not da kırmıyor ama dönem boyunca insanı çok yoruyor. Devamsızlık en fazla önem gösterdiği şeydir
+  - 👤 **_Karnaugh Haritası_**: Dönemin ilk dersinde her zaman geç gelenleri almayacağını söyler, ilerde onları aşağılayarak alır. Sınıfa hakimdir, Dersini iyi anlatır. Anlattığını sorar.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
@@ -1754,6 +1756,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Yıldızlı_**: Anlayış ve yardımseverlik konusunda diğer hocalara nispeten çok daha önde gelir. Öğrencilerle ders dışında da iletişim hususunda ilgilidir. Özellikle Ara ve Bitirme projelerini bu hocadan alırsanız iletişim ve sürecin ilerletilmesi konusunda kafanız daha rahat olacaktır.
   - 👤 **_Ufouser_**: ahmet elbir hocamız yoklamayı takan bir hocamızdır sınavları son derece ayrıntı içerir her soylediğine kulak verin her soylediğini sorar sınavlarında elbet bir 30 puanlık zor bir soru olur soruyu yavas yavas cozun yanlıs yerden itibaren çözümu siler bi anda cok az bi puan alırsınız ders anlatımı normaldir
   - 👤 **_Blessed Camel_**: Okuldaki en çalışkan en disiplinli hocadır öyle ki ahmet hoca olmasa bölüm kepenk kapatır tam bir joker gibi adam. Ama bir o kadar da öğrenciyi yorar kazık gibi sınav yapar sabrederseniz seversiniz. Yoklamayı takmaz
+  - 👤 **_Joseph Fourier_**: Sinyaller ve sistemler finalini sınav esansında okumaya başlayan hocadır. Sınav okuması o kadar hızlı ki sınavdan çıkar çıkmaz öğrenciler arasında AEL sınavı açıkladı şakası yapılır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
@@ -1822,6 +1825,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Violancello_**: Dersleri güzel anlatan, anlattığı konuların gerçek hayat ve sektördeki uygulamaları hakkında bilgi veren, muhabbeti güzel bir hoca. Fakat harf notlarını çok yüksek tutuyor ve itiraz edince bazen sert tepkiler veriyor.
   - 👤 **_Dd_**: Havalı bir hoca, iyi anlatıyor, odevlerin tailmatları uygulamazsanız kalırsınız (odevin ismi bir boşluk için sıfı verdi)
   - 👤 **_Blessed Camel_**: Anlatış biçimi olarak çok abartılan ve bence abartıldığı kadar da iyi olmayan bi hoca. Ama öğrencilere aşırı yakındır adam gibi adamdır kendileri. Derste de sektörle ilgili genel kültür bilgileri verir hikayeler anlatır genel olarak faydalı geçer.
+  - 👤 **_Kıymetli Arkadaşlar_**: Derste sürekli kıymetli arkadaşlar, söz konusu gibi cümleler kullanır. Kurallara çok riyat eder, güzel anlatır. Bu bölümde kuralsızlık yapılacak son hocadır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
