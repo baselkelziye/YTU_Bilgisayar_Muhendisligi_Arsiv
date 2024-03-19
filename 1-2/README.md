@@ -14,8 +14,9 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümün en gereksiz derslerinden bir tanesi. Hem de çok zor. Mesleki olarak çok bir şey katmıyor 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
@@ -66,8 +67,9 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Seçmeli
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
@@ -87,8 +89,9 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
@@ -112,9 +115,10 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
-  - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber. 
+  - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -136,9 +140,10 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
-  - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor 
+  - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -163,9 +168,10 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı.
-  - 👤 **_Blessed Camel_**: Müfredat olarak önemli konuları içerir ve klasik C yazılım dersi olarak sınavları zor olur.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Hem algoritma hem 'c' dilindeki yapılar (struct, pointer vs) öğretiliyor. Projesi uğraştırıcı. 
+  - 👤 **_Blessed Camel_**: Müfredat olarak önemli konuları içerir ve klasik C yazılım dersi olarak sınavları zor olur. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★

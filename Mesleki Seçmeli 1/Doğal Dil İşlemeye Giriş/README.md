@@ -5,9 +5,10 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
-  - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli. 
+  - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★

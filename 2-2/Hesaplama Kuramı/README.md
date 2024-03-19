@@ -5,8 +5,9 @@
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Aslında gerekli bir ders ama hocanın anlatım kabiliyeti dersin tüm havasını etkiliyor 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆

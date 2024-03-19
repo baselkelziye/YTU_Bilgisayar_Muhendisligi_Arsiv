@@ -5,9 +5,10 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor.
-  - 👤 **_Violancello_**: Bölümün açık ara en zor dersi. Tüm derslere girin çünkü koptuğunuz an toparlaması çok zor, özellikle de Mikro konularını kaçırdınız mı yandınız. Geçebilmek için lab ve ödevlerden puan almak için çok önemli çünkü sınavların ortalaması 20-30 gibi oluyor. Zor ama kaliteli ve öğretici, mühendis olduğunuzu hissettiren bir ders.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Dersin kendisi zor değil ve mantığını kavramak uğraşınca mümkün. Ama ödev lab vs. çok yoruyor. 
+  - 👤 **_Violancello_**: Bölümün açık ara en zor dersi. Tüm derslere girin çünkü koptuğunuz an toparlaması çok zor, özellikle de Mikro konularını kaçırdınız mı yandınız. Geçebilmek için lab ve ödevlerden puan almak için çok önemli çünkü sınavların ortalaması 20-30 gibi oluyor. Zor ama kaliteli ve öğretici, mühendis olduğunuzu hissettiren bir ders. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆

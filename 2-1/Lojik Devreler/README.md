@@ -5,10 +5,11 @@
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay.
-  - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
-  - 👤 **_Blessed Camel_**: Donanım dersi o yüzden pek ilgi çekici gelmiyor ilk başta ama işledikçe sevmeye başlıyorsun ve çok zor da değil. Sonuçta insanı geliştiriyor verimli bir ders
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay. 
+  - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+  - 👤 **_Blessed Camel_**: Donanım dersi o yüzden pek ilgi çekici gelmiyor ilk başta ama işledikçe sevmeye başlıyorsun ve çok zor da değil. Sonuçta insanı geliştiriyor verimli bir ders ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆

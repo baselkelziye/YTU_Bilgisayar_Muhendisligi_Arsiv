@@ -13,8 +13,9 @@
 - 📅 **Yıl:** 4
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
@@ -51,8 +52,9 @@
 - 📅 **Yıl:** 4
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Üniversite Mesleki Seçmeli
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -86,10 +88,11 @@
 - 📅 **Yıl:** 4
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 2
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin.
-  - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın.
-  - 👤 **_Teradata_**: Gereksiz, uğraştırıcı ve 1 kredi. Kolay gelsin.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin. 
+  - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+  - 👤 **_Teradata_**: Gereksiz, uğraştırıcı ve 1 kredi. Kolay gelsin. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆

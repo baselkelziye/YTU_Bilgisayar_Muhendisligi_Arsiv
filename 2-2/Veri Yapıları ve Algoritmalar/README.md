@@ -5,8 +5,9 @@
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★

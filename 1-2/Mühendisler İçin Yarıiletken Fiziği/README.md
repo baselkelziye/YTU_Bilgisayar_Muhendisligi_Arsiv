@@ -5,9 +5,10 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber.
-  - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber. 
+  - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆

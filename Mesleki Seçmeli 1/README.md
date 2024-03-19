@@ -78,8 +78,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Usmanaga_**: Bir şey öğrenmezsiniz, almayın. Çıkmış çözüp geçme dersi. Sadece 1.dersi dinlemiştim zar zor. Online dönemdeyken. Çekilecek ders değil hoca da çok hevesli değil. Aslında bu alan çok kıymetli ve epey getirisi var eğer bu alanda çalışacaksanız alın yoksa almanızı tavsiye etmem.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Usmanaga_**: Bir şey öğrenmezsiniz, almayın. Çıkmış çözüp geçme dersi. Sadece 1.dersi dinlemiştim zar zor. Online dönemdeyken. Çekilecek ders değil hoca da çok hevesli değil. Aslında bu alan çok kıymetli ve epey getirisi var eğer bu alanda çalışacaksanız alın yoksa almanızı tavsiye etmem. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -138,9 +139,10 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
-  - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli. 
+  - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
@@ -167,8 +169,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -213,8 +216,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Teradata_**: İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Teradata_**: İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
@@ -237,8 +241,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
@@ -294,8 +299,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
@@ -319,8 +325,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
@@ -383,8 +390,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
@@ -411,9 +419,10 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
-  - 👤 **_Usmanaga_**: Almayın almayın almayın. Sakın almayın. Aslında bölümdeki genel teamülün aksine ders gerçekten güncel. Utku hoca emek verip hazırlamış ve önemli konular. Hoca derslere hazırlanarak geliyor. Ama bence anlattığı konularda daha az öneme sahip yerlerin üzerinde duruluyor birkaç istisna dışında. Ayrıca Utku Hoca'nın anlatışından memnun kalmadım.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders. 
+  - 👤 **_Usmanaga_**: Almayın almayın almayın. Sakın almayın. Aslında bölümdeki genel teamülün aksine ders gerçekten güncel. Utku hoca emek verip hazırlamış ve önemli konular. Hoca derslere hazırlanarak geliyor. Ama bence anlattığı konularda daha az öneme sahip yerlerin üzerinde duruluyor birkaç istisna dışında. Ayrıca Utku Hoca'nın anlatışından memnun kalmadım. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
@@ -473,8 +482,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Selim Bey_**: Yazılımı test etmek lazım.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Selim Bey_**: Yazılımı test etmek lazım. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
@@ -497,8 +507,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Sistem analizine benzer.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Sistem analizine benzer. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
