@@ -112,6 +112,7 @@ def yillaraGoreYildizSayisiDondur(yildizlar_yil_hoca_grouped, ad):
                 row[DERSI_NE_KADAR_EGLENCELI_ANLATIR] * YILDIZ_KATSAYISI
             ),
             YIL: yil[1],
+            OY_SAYISI: int(row[OY_SAYISI]),
         }
         yildizlar_listesi.append(yildizlar)
 
@@ -173,6 +174,12 @@ yildizlar_df[YIL] = pd.to_datetime(
 yildizlar_yil_hoca_grouped = yildizlar_df.groupby([HOCA_SEC, YIL])[
     yildizlar_numeric_columns
 ].mean()
+
+# Grup boyutlarını hesapla ve bir sütun olarak ekle
+grup_boyutlari = yildizlar_df.groupby([HOCA_SEC, YIL]).size().rename(OY_SAYISI)
+
+# Ortalamalar ve grup boyutları DataFrame'lerini birleştir
+yildizlar_yil_hoca_grouped = yildizlar_yil_hoca_grouped.join(grup_boyutlari)
 
 # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
 hoca_oy_sayisi = yildizlar_df[HOCA_SEC].value_counts()

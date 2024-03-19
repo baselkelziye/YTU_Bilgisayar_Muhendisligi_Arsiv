@@ -297,7 +297,6 @@ DERSINI_GECMEK_NE_KADAR_KOLAYDIR = "Dersini geçmek ne kadar kolaydır?"
 DERSI_NE_KADAR_IYI__OGRETIR = "Dersi ne kadar iyi öğretir?"
 DERSI_NE_KADAR_EGLENCELI_ANLATIR = "Dersi ne kadar eğlenceli anlatır?"
 
-
 YILDIZ_KATSAYISI = 10
 
 # DOSYA ADLARI

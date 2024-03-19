@@ -108,6 +108,7 @@ def yillaraGoreYildizSayisiDondur(yildizlar_yil_ders_grouped, ad):
                 row[DERS_MESLEKI_ACIDAN_GEREKLI_MI] * YILDIZ_KATSAYISI
             ),
             YIL: yil[1],
+            OY_SAYISI: int(row[OY_SAYISI]),
         }
         yildizlar_listesi.append(yildizlar)
 
@@ -158,10 +159,16 @@ def guncelle_ders_yildizlari(data, sheets_url):
         yildizlar_df.iloc[:, 0], format="%d.%m.%Y %H:%M:%S"
     ).dt.year
 
-    # bunun amacı yıllara göre ortalama yansıtabilmek
+    # Ortalamaları hesapla
     yildizlar_yil_ders_grouped = yildizlar_df.groupby([DERS_SEC, YIL])[
         yildizlar_numeric_columns
     ].mean()
+    # Grup boyutlarını hesapla ve bir sütun olarak ekle
+    grup_boyutlari = yildizlar_df.groupby([DERS_SEC, YIL]).size().rename(OY_SAYISI)
+
+    # Ortalamalar ve grup boyutları DataFrame'lerini birleştir
+    yildizlar_yil_ders_grouped = yildizlar_yil_ders_grouped.join(grup_boyutlari)
+
     yildizlar_grouped = yildizlar_df.groupby(DERS_SEC)[yildizlar_numeric_columns].mean()
     # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
     ders_oy_sayisi = yildizlar_df[DERS_SEC].value_counts()
