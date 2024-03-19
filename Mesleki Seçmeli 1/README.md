@@ -12,9 +12,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -28,9 +26,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -48,9 +46,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -70,9 +68,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Usmanaga_**: Bir şey öğrenmezsiniz, almayın. Çıkmış çözüp geçme dersi. Sadece 1.dersi dinlemiştim zar zor. Online dönemdeyken. Çekilecek ders değil hoca da çok hevesli değil. Aslında bu alan çok kıymetli ve epey getirisi var eğer bu alanda çalışacaksanız alın yoksa almanızı tavsiye etmem.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -90,9 +88,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -108,9 +106,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -127,9 +123,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir mesleki seçmeli ders. Yapay zeka konularını da içeriyor. Zevkli.
   - 👤 **_Tehlikeli Pinokyo_**: Buyuk cogunlugun yardımlaşmayla gectigi basit bir ders
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
@@ -152,9 +148,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: raspberry pi 1 ve 2 kullanarak verilen konular arasından proje yapılması isteniyor. Eğlenceli bir ders.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -176,9 +172,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -197,9 +191,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Teradata_**: İstatistik Ve Olasılık Hesapları dersinin artık nasıl oluyorsa daha sıkıcı hâli. Uğraştırıcı tarafı Hocası olan basit bir ders.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★★
-- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -218,9 +212,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Ders güzel aslında, ama sınavları özellikle ezber. Ödevleri ve projeleri çok zor. Günler alıyor.
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -245,9 +239,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★★☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -266,9 +260,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders. Python veya C++ bilerek derse gelmek iyi olur. Projeleri bunları bilerek yapılabiliyor. Proje/ödevleri zor.
-- ⭐ **Kolaylık Puanı:** ★★☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -288,9 +282,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sinyaller ve sistemlerin devamı gibi ama ayrık zamanı kapsadığı için daha kolayı.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -310,9 +304,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -327,9 +319,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -348,9 +340,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders. Yapay zeka konularının br kısmını da kapsıyor.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -371,9 +363,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Veri tabanının aşırı ayrıntılı hali. Sıkıcı bir ders.
   - 👤 **_Usmanaga_**: Almayın almayın almayın. Sakın almayın. Aslında bölümdeki genel teamülün aksine ders gerçekten güncel. Utku hoca emek verip hazırlamış ve önemli konular. Hoca derslere hazırlanarak geliyor. Ama bence anlattığı konularda daha az öneme sahip yerlerin üzerinde duruluyor birkaç istisna dışında. Ayrıca Utku Hoca'nın anlatışından memnun kalmadım.
-- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -391,9 +383,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -410,9 +402,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -428,9 +418,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Selim Bey_**: Yazılımı test etmek lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -449,9 +439,9 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sistem analizine benzer.
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
@@ -473,9 +463,7 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** yok
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- ⭐ **Kolaylık Puanı:** ☆☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ☆☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar

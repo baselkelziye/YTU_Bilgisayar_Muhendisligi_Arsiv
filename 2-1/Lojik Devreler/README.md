@@ -10,9 +10,8 @@
   - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur
   - 👤 **_Blessed Camel_**: Donanım dersi o yüzden pek ilgi çekici gelmiyor ilk başta ama işledikçe sevmeye başlıyorsun ve çok zor da değil. Sonuçta insanı geliştiriyor verimli bir ders
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar

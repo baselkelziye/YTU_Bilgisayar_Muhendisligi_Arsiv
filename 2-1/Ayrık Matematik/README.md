@@ -10,9 +10,8 @@
   - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider
   - 👤 **_Blessed Camel_**: Aslında çok basit bir ders işlenen bir çok şeyi önceden zaten biliyorsunuz ama sınavlarında acayip bir şekilde kasıp her şeyden puan kırıyorlar.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
     - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar

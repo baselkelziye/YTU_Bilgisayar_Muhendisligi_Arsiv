@@ -9,9 +9,8 @@
   - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor
   - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar

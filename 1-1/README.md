@@ -18,9 +18,9 @@
   - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var.
   - 👤 **_Violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur.
   - 👤 **_Blessed Camel_**: Ders işleyişi ne kadar zevkli de olsa (flowchart hariç ) sınavlarında boncuk boncuk terliyorsunuz AA geçmek gerçekten takdir edilesi
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
@@ -52,9 +52,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
   - 👤 **_Darthshadoww_**: YKS fizigin biraz daha ileri seviyesi. Fizigi seviyorsaniz pratiklerle, cikmis sorularla rahat gecebilecegeniz bir ders. Son gun cikmislarla halledilecek bir ezber degil. Cogu sorulari pratige dayali islem gerektiren sorulardir. TYT ve AYT karisimi bir fizik diyebilirm hatirladigim kadariyla
-- ⭐ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -71,9 +71,9 @@
 - 🏫 **Ders Tipi:** Seçmeli
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★☆☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -90,9 +90,9 @@
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
   - 👤 **_Blessed Camel_**: Kod yazarken başıma şantiyeden beton parçası düşebileceği için çok önemli bir ders millet neden yakınıyor anlamıyorum ?!
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -108,9 +108,9 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -128,9 +128,9 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★☆☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
