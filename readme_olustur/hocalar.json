@@ -19,31 +19,66 @@
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi."
+                    "yorum": "Hoca işin mantığını anlatma derdinde, güncel teknolojileri yakalamak imkansız zaten ama tüm derslerinde o konunun nasıl bu aşamaya kadar geldiğini, problemin kaynağı ve çözüm metodolojilerini kavramanı istiyor ve çok güzel anlatıyor. Zaten özellikle üzerinde durduğu kavramanı istediği konuyu da sınavda soruyor. Bölüm boyunca en keyif aldığım hocalardan biriydi.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo",
-                    "yorum": "Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir."
+                    "yorum": "Düsunceli, anlayisli ve iyi niyetli. Bölümü sevdiren hocalardan birisidir.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Madmax",
-                    "yorum": "Çok tatlı ve iyi niyetli bir hocamız. Ama sınavları okurken gidişattan puan alırım beklentisine sakın girmeyin. Sonuç doğruysa tam puan alırsınız, tüm işlem aşamaları doğruysa bile sonuç yanlışsa puan almanız çok zor."
+                    "yorum": "Çok tatlı ve iyi niyetli bir hocamız. Ama sınavları okurken gidişattan puan alırım beklentisine sakın girmeyin. Sonuç doğruysa tam puan alırsınız, tüm işlem aşamaları doğruysa bile sonuç yanlışsa puan almanız çok zor.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Dd",
-                    "yorum": "İyi hiş bir hoca, yardımcı, anlatımı biraz eksik kalır"
+                    "yorum": "İyi hiş bir hoca, yardımcı, anlatımı biraz eksik kalır",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Bölümdeki en neşeli hocadır kendileri. Çoğu derste uykunuz gelirken banu hoca öğrenciyi çok iyi derste tutabilir. Bazen biraz fazla kaçırır ama ders anlatışı da fena değildir. Not konusunda da ortalama sayılır."
+                    "yorum": "Bölümdeki en neşeli hocadır kendileri. Çoğu derste uykunuz gelirken banu hoca öğrenciyi çok iyi derste tutabilir. Bazen biraz fazla kaçırır ama ders anlatışı da fena değildir. Not konusunda da ortalama sayılır.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Isimsiz",
-                    "yorum": "dersi çok eğlenceli anlatır ondan almayı tavsiye ederim"
+                    "yorum": "dersi çok eğlenceli anlatır ondan almayı tavsiye ederim",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Kolpa",
-                    "yorum": "Agresifliği ve espirili tavrı derse odağımı artırır her zaman"
+                    "yorum": "Agresifliği ve espirili tavrı derse odağımı artırır her zaman",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 20
+                    }
                 }
             ],
             "anlatim_puani": 84,
@@ -51,7 +86,23 @@
             "ogretme_puani": 85,
             "eglence_puani": 87,
             "oy_sayisi": 23,
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 85,
+                    "kolaylik_puani": 75,
+                    "ogretme_puani": 86,
+                    "eglence_puani": 85,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 83,
+                    "kolaylik_puani": 83,
+                    "ogretme_puani": 83,
+                    "eglence_puani": 91,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Prof. Dr. Oya Kalıpsız",
@@ -72,11 +123,21 @@
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo ",
-                    "yorum": "Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz."
+                    "yorum": "Verdigi dersler bölüm icin onemli ama gereksiz fazla kredi, tek kredilik dersler, kolaylikla gecersiniz.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Isimsiz",
-                    "yorum": "iyi hoca fakat verdiği dersler biraz sıkıcı"
+                    "yorum": "iyi hoca fakat verdiği dersler biraz sıkıcı",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Prof. Dr. Oya Kalıpsız",
@@ -84,14 +145,35 @@
                 },
                 {
                     "kisi": "Prof. Dr.",
-                    "yorum": "Dersleri biraz sıkıcı anlatır, notu da kağıda bakmadan devamsızlığa göre verir"
+                    "yorum": "Dersleri biraz sıkıcı anlatır, notu da kağıda bakmadan devamsızlığa göre verir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 23
+                    }
                 }
             ],
             "anlatim_puani": 32,
             "kolaylik_puani": 72,
             "ogretme_puani": 37,
             "eglence_puani": 24,
-            "oy_sayisi": 7
+            "oy_sayisi": 7,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 30,
+                    "kolaylik_puani": 73,
+                    "ogretme_puani": 36,
+                    "eglence_puani": 23,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 50,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 40,
+                    "eglence_puani": 30,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Prof. Dr. M. Fatih Amasyalı",
@@ -112,43 +194,93 @@
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim"
+                    "yorum": "Algoritma YZ yi çok kavratıyor. Bir problemi en optimum şekilde nasıl çözeriz. Aşama aşama önce en kötü çözümden sonrasında en iyiye nasıl ulaşırızı güzel kavratıyor. Sınavları da ona göre zorlukta. Ama iş hayatında da bir geliştirme yaparken önce en kötüsünden çözüyor sonrasında tecrübe kazandıkça daha iyi çözümlere yol alıyorsunuz. İşte bunun nasıl geliştiğini anlatan hoca. tavsiye ederim",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo ",
-                    "yorum": "Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin."
+                    "yorum": "Dunya umrunda degil, bilgili ve donanimli hocalardan, kimseyle polemige girmez dersi gecmeyi hakediyorsan gecersin.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Madmax",
-                    "yorum": "Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız."
+                    "yorum": "Ders anlatımı çok iyi. Somutlamaları ve interaktif anlatım yöntemleri sayesinde dersi kesinlikle çok iyi anlayacaksınız.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Violancello",
-                    "yorum": "Bilim aşkıyla yanıp tutuşan mükemmel bir hoca. Yapay zeka başta olmak üzere verdiği derslerde işin bilimsel mantığını öğretir, sınavları da kalitelidir boş detaylara takılmaz öğrencilere işlem ameleliği yaptırmaz. Bazı hocalar öğrenciye hayatı zorlaştırmakla uğraştırken Fatih hocam 2024'ün ilk haftasında 3 makale yayınladı bile :)"
+                    "yorum": "Bilim aşkıyla yanıp tutuşan mükemmel bir hoca. Yapay zeka başta olmak üzere verdiği derslerde işin bilimsel mantığını öğretir, sınavları da kalitelidir boş detaylara takılmaz öğrencilere işlem ameleliği yaptırmaz. Bazı hocalar öğrenciye hayatı zorlaştırmakla uğraştırken Fatih hocam 2024'ün ilk haftasında 3 makale yayınladı bile :)",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "ders anlatımı iyidir.Sınıavları standarttır çalısan yuksek not alabilir ama çalışmayana derse girmeyene zordur.samimi ve cana yakın bir hocadır.yoklamayı cok takmaz."
+                    "yorum": "ders anlatımı iyidir.Sınıavları standarttır çalısan yuksek not alabilir ama çalışmayana derse girmeyene zordur.samimi ve cana yakın bir hocadır.yoklamayı cok takmaz.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Buraya Isim Mi Yazılıyor",
-                    "yorum": "Diğer yıldız mezunu tayfada olduğu gibi kaliteli bir hocamız. derste kod yazmama gibi bir huyu olsa da teorik olarak ucurur(yapay zeka dersi özellikle kafa acıcı). Bilgisayar ve bitirme projeleri için projeden bağımsız tercih edilebilir cünkü çok anlayışlı birisi. Ders içeriklerini paylaştığı kendi sitesi var. Ödevleri ve sınavları belli bir sisteme oturtmuş işliyor."
+                    "yorum": "Diğer yıldız mezunu tayfada olduğu gibi kaliteli bir hocamız. derste kod yazmama gibi bir huyu olsa da teorik olarak ucurur(yapay zeka dersi özellikle kafa acıcı). Bilgisayar ve bitirme projeleri için projeden bağımsız tercih edilebilir cünkü çok anlayışlı birisi. Ders içeriklerini paylaştığı kendi sitesi var. Ödevleri ve sınavları belli bir sisteme oturtmuş işliyor.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 11
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Aşırı zeki bir adam hatta o kadar zeki ki dersi kendi seviyesinde anlattığından hiç bir şey anlayamıyorsunuz. Fazla insan da sevmez ama genel olarak iyi birisidir"
+                    "yorum": "Aşırı zeki bir adam hatta o kadar zeki ki dersi kendi seviyesinde anlattığından hiç bir şey anlayamıyorsunuz. Fazla insan da sevmez ama genel olarak iyi birisidir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Isimsiz ",
-                    "yorum": "The Best"
+                    "yorum": "The Best",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Prof. Dr.",
-                    "yorum": "Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi."
+                    "yorum": "Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 23
+                    }
                 },
                 {
                     "kisi": "Prolog",
-                    "yorum": "Ders dinlemeye değil, podcast dinlemeye gelirdim. Çok eğlenceli anlatır, konusuna hakim. Öğrenciyi zorlamaz."
+                    "yorum": "Ders dinlemeye değil, podcast dinlemeye gelirdim. Çok eğlenceli anlatır, konusuna hakim. Öğrenciyi zorlamaz.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 3,
+                        "gun": 18
+                    }
                 }
             ],
             "anlatim_puani": 92,
@@ -156,7 +288,23 @@
             "ogretme_puani": 92,
             "eglence_puani": 87,
             "oy_sayisi": 14,
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 92,
+                    "kolaylik_puani": 73,
+                    "ogretme_puani": 93,
+                    "eglence_puani": 87,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 93,
+                    "kolaylik_puani": 76,
+                    "ogretme_puani": 90,
+                    "eglence_puani": 86,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Prof. Dr. M. Elif Karslıgil",
@@ -175,19 +323,39 @@
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo ",
-                    "yorum": "iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim."
+                    "yorum": "iyi bir insan olabilir ama Elif hocadan ders almamayi tercih ederim.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Usmanaga",
-                    "yorum": "Bazı sınavları bile kendisi hazırlamıyor sınav esnasında biz ona sorunca görüyor bizimle beraber kafa yoruyor. Başkasına hazırlatıyor neyse ama hiç bakmamış olması çok kötü. Her sınavında düzeltme yapılması gerekiyor. Bu niye diğer hocalarda olmuyor, niye Elif Hoca'nın her sınavında oluyor? Sınav esnasında düzeltme yapınca her şey çözüldü sanıyorlar ama kimse bizim o yanlışlık yüzünden ne kadar süre harcadığımızı sormuyor ne gibi bir strateji ile sınavı çözdüğümüzü bilmiyor. Sınavları en geç okuyan hocalardan. 1.vizeyi finale 1 hafta kala açıklıyor. Bazen finali büt gecesi açıklıyor sabah bi bakıyorsunuz meğer o gün sınavınız varmış dün gece belli olmuş ve saati geçmiş. Sınav kağıdına itiraz ettirmiyor zaten isteseniz de edemezsiniz çünkü o okuyana kadar kağıdınızı unutmuş oluyorsunuz. Ama dersi iyi anlatıyor. Ha bu arada mail konusunda da çok iyi denemez ama çok kötü de değil. %50 ihtimalle ulaşıyorsunuz. Bence artık bir şey öğretmek gibi bir derdi yok. Ben ne seçmeli ne de zorunlu derslerden Elif Hoca'yı seçmenizi önermezdim. Ama zorunlu derslerde diğer seçenekler de pek iyi değil. Hocayla alakalı bir sorunum gerçekten yok zaten mezunum. Burada kalan arkadaşlara tavsiye vermekten ziyade belki hoca bir gün görür bu yazdıklarımı da bu konularda iyileştirme yapma yoluna gider diye yazıyorum. Çünkü kimse okul boyunca fikirlerimizi sormadı. Tek derdim ilgili kişilerin bu söylediklerimi eleştiri olarak kabul edip en azından birkaç tanesinde iyileştirme yapması. Bunu ifade edebileceğimiz bir platform yok okulda. Ben mezun olduğum okulun daha iyi olmasını istiyorum. Adının iyi anılmasını istiyorum. Saygılarımla."
+                    "yorum": "Bazı sınavları bile kendisi hazırlamıyor sınav esnasında biz ona sorunca görüyor bizimle beraber kafa yoruyor. Başkasına hazırlatıyor neyse ama hiç bakmamış olması çok kötü. Her sınavında düzeltme yapılması gerekiyor. Bu niye diğer hocalarda olmuyor, niye Elif Hoca'nın her sınavında oluyor? Sınav esnasında düzeltme yapınca her şey çözüldü sanıyorlar ama kimse bizim o yanlışlık yüzünden ne kadar süre harcadığımızı sormuyor ne gibi bir strateji ile sınavı çözdüğümüzü bilmiyor. Sınavları en geç okuyan hocalardan. 1.vizeyi finale 1 hafta kala açıklıyor. Bazen finali büt gecesi açıklıyor sabah bi bakıyorsunuz meğer o gün sınavınız varmış dün gece belli olmuş ve saati geçmiş. Sınav kağıdına itiraz ettirmiyor zaten isteseniz de edemezsiniz çünkü o okuyana kadar kağıdınızı unutmuş oluyorsunuz. Ama dersi iyi anlatıyor. Ha bu arada mail konusunda da çok iyi denemez ama çok kötü de değil. %50 ihtimalle ulaşıyorsunuz. Bence artık bir şey öğretmek gibi bir derdi yok. Ben ne seçmeli ne de zorunlu derslerden Elif Hoca'yı seçmenizi önermezdim. Ama zorunlu derslerde diğer seçenekler de pek iyi değil. Hocayla alakalı bir sorunum gerçekten yok zaten mezunum. Burada kalan arkadaşlara tavsiye vermekten ziyade belki hoca bir gün görür bu yazdıklarımı da bu konularda iyileştirme yapma yoluna gider diye yazıyorum. Çünkü kimse okul boyunca fikirlerimizi sormadı. Tek derdim ilgili kişilerin bu söylediklerimi eleştiri olarak kabul edip en azından birkaç tanesinde iyileştirme yapması. Bunu ifade edebileceğimiz bir platform yok okulda. Ben mezun olduğum okulun daha iyi olmasını istiyorum. Adının iyi anılmasını istiyorum. Saygılarımla.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 4
+                    }
                 },
                 {
                     "kisi": "Isimsiz ",
-                    "yorum": "mükemmel anlatır fakat vize ve final notlarını açıklamayı çok geciktirir"
+                    "yorum": "mükemmel anlatır fakat vize ve final notlarını açıklamayı çok geciktirir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Kolpa",
-                    "yorum": "Dersi öğretmek için ekstra çaba sarf etmesini ve öğrenip öğrenmememizi ciddiye almasını seviyorum. Böyle hoca pek yok üniversitelerde"
+                    "yorum": "Dersi öğretmek için ekstra çaba sarf etmesini ve öğrenip öğrenmememizi ciddiye almasını seviyorum. Böyle hoca pek yok üniversitelerde",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 20
+                    }
                 }
             ],
             "anlatim_puani": 63,
@@ -195,7 +363,23 @@
             "ogretme_puani": 61,
             "eglence_puani": 52,
             "oy_sayisi": 15,
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 51,
+                    "ogretme_puani": 67,
+                    "eglence_puani": 58,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 55,
+                    "kolaylik_puani": 45,
+                    "ogretme_puani": 54,
+                    "eglence_puani": 44,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Prof. Dr. Sırma Yavuz",
@@ -211,7 +395,16 @@
             "kolaylik_puani": 50,
             "ogretme_puani": 50,
             "eglence_puani": 30,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 40,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 50,
+                    "eglence_puani": 30,
+                    "yil": 2023
+                }
+            ]
         },
         {
             "ad": "Prof. Dr. Songül Varlı",
@@ -225,14 +418,35 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Gariban",
-                    "yorum": "Söngül hocadan Bilgisayar Donanımı (Bilgisayar Organizasyonu) ve bitirme aldım. Bilgisayar donanımı dersi sevkliyidi ve hoca güzel anlatıyordu. Online olduğu için sınavlar hakkında pek bir şey diyemem ama sınavlar zor değildi. Bitirmeye gelince, bu sebeplerden dolayı bu hocadan proje hiç alınmaz: 1- Proje veri gerektiriyordu ve veriyi bir organizasiyondan talep etmek için bize bir link vermişti ama bu orginizasyon ancak 5 hafta sonra veriyi verdi. Bu esnada veri hocanın eilinde olmasına rağmen bize vermek istemedi ve böylece projemiz 5 hafta geç kaldı. 2- Hoca ile iletişim kurmak çok zordu. Maillere geç cevap veriyor ve projenin son 3 haftasında defalarca mail göndermemize rağmen bize dönmüyordu. 3- Hoca, sunumdan 24 saat önce beklenmedik bir istekte bulundu (istediğini sabaha kadar uyumayark sunuma ekleyebildik :) ). 4- Projede istediğinden fazla model eğitmemize, sunumda çalışmamızı \"iyi ve çok kapsamlı\" olarak övdüğüne ve bize makale yazmamızı teklif etmesine rağmen projemize nispeten düşük bir not verdi. Özetle, hocayla iletişim zor, hiç yardımcı değil, çok şey ister, not vermz."
+                    "yorum": "Söngül hocadan Bilgisayar Donanımı (Bilgisayar Organizasyonu) ve bitirme aldım. Bilgisayar donanımı dersi sevkliyidi ve hoca güzel anlatıyordu. Online olduğu için sınavlar hakkında pek bir şey diyemem ama sınavlar zor değildi. Bitirmeye gelince, bu sebeplerden dolayı bu hocadan proje hiç alınmaz: 1- Proje veri gerektiriyordu ve veriyi bir organizasiyondan talep etmek için bize bir link vermişti ama bu orginizasyon ancak 5 hafta sonra veriyi verdi. Bu esnada veri hocanın eilinde olmasına rağmen bize vermek istemedi ve böylece projemiz 5 hafta geç kaldı. 2- Hoca ile iletişim kurmak çok zordu. Maillere geç cevap veriyor ve projenin son 3 haftasında defalarca mail göndermemize rağmen bize dönmüyordu. 3- Hoca, sunumdan 24 saat önce beklenmedik bir istekte bulundu (istediğini sabaha kadar uyumayark sunuma ekleyebildik :) ). 4- Projede istediğinden fazla model eğitmemize, sunumda çalışmamızı \"iyi ve çok kapsamlı\" olarak övdüğüne ve bize makale yazmamızı teklif etmesine rağmen projemize nispeten düşük bir not verdi. Özetle, hocayla iletişim zor, hiç yardımcı değil, çok şey ister, not vermz.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 16
+                    }
                 }
             ],
             "anlatim_puani": 67,
             "kolaylik_puani": 57,
             "ogretme_puani": 55,
             "eglence_puani": 47,
-            "oy_sayisi": 4
+            "oy_sayisi": 4,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 40,
+                    "ogretme_puani": 50,
+                    "eglence_puani": 30,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 66,
+                    "kolaylik_puani": 63,
+                    "ogretme_puani": 56,
+                    "eglence_puani": 53,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Doç. Dr. Gökhan Bilgin",
@@ -252,34 +466,80 @@
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer."
+                    "yorum": "derslerine gecikmeyin, soru sormaktan çekinmeyin, direk derste ne anlatıyorsa o çıkar, fazlasını bilmene gerek kalmaz. Bu adamın derslerinde geçmiş yılların sorularını bulan geçer.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo ",
-                    "yorum": "Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)"
+                    "yorum": "Secmeli derslerini gecmeyeni döverler, bi defasinda test seklindeki sinavda dogru cevaplari isaretlemisti, yazici hatasi isteyen isaretlesin demisti :)",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Madmax",
-                    "yorum": "Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden."
+                    "yorum": "Dersi olabildiğince kompakt anlatır ve anlatmadığı en ufak bir şeyi de sınavda sormaz. Dersine girip biraz da çalışırsanız gayet yüksek puan alabilirsiniz derslerinden.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Violancello",
-                    "yorum": "Derste sakız çiğnenmesi gibi önemsiz detaylara takılıyor, 30 hoca için sorun olmayan durum niye onun için sorun oluyor anlamıyorum açıkçası. Bunun dışında dersleri gayet güzel anlatıyor."
+                    "yorum": "Derste sakız çiğnenmesi gibi önemsiz detaylara takılıyor, 30 hoca için sorun olmayan durum niye onun için sorun oluyor anlamıyorum açıkçası. Bunun dışında dersleri gayet güzel anlatıyor.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Disiplin abidesi. Sınavları genelde ortalama oluyor çok not da kırmıyor ama dönem boyunca insanı çok yoruyor. Devamsızlık en fazla önem gösterdiği şeydir"
+                    "yorum": "Disiplin abidesi. Sınavları genelde ortalama oluyor çok not da kırmıyor ama dönem boyunca insanı çok yoruyor. Devamsızlık en fazla önem gösterdiği şeydir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Karnaugh Haritası",
-                    "yorum": "Dönemin ilk dersinde her zaman geç gelenleri almayacağını söyler, ilerde onları aşağılayarak alır. Sınıfa hakimdir, Dersini iyi anlatır. Anlattığını sorar."
+                    "yorum": "Dönemin ilk dersinde her zaman geç gelenleri almayacağını söyler, ilerde onları aşağılayarak alır. Sınıfa hakimdir, Dersini iyi anlatır. Anlattığını sorar.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 3,
+                        "gun": 18
+                    }
                 }
             ],
             "anlatim_puani": 68,
             "kolaylik_puani": 70,
             "ogretme_puani": 68,
             "eglence_puani": 54,
-            "oy_sayisi": 9
+            "oy_sayisi": 9,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 68,
+                    "kolaylik_puani": 71,
+                    "ogretme_puani": 66,
+                    "eglence_puani": 55,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 66,
+                    "ogretme_puani": 73,
+                    "eglence_puani": 53,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Doç. Dr. M. Amaç Güvensan",
@@ -299,26 +559,62 @@
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!"
+                    "yorum": "BBG ve Algoritma için çok iyi anlatan bir hoca. Ama anlattığını da görmek istiyor. Malumunuz algoritma problemleri biraz kafa yormak ve o bakış açısını kazanmakla ilgili bunun için de aynı konuyu 3-4 kere dinlemeniz üzerine kafa yormanız gerekli. Ama hoca bunu tek defada anlatınca kavrandığını düşünerek aynı soruyu ikinci kez sorduğunda cevap verilmesini bekleyen bir tip. Bu konuda da öğrenciye çok üst perdeden yaklaşıyor. Egonuz ezilebilir dikkat !!!",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "ders anlatışı iyi ve ayrıntılıdır bu yüzden sınavları da iyi olur notu kıt verebilir"
+                    "yorum": "ders anlatışı iyi ve ayrıntılıdır bu yüzden sınavları da iyi olur notu kıt verebilir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 7
+                    }
                 },
                 {
                     "kisi": "Dd",
-                    "yorum": "İyi anlatıyor, her şeye hakkını verir, dikkat ediyor, anlatırken her şeyi kayıtedin"
+                    "yorum": "İyi anlatıyor, her şeye hakkını verir, dikkat ediyor, anlatırken her şeyi kayıtedin",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Kolpa",
-                    "yorum": "Ben bu hocayı Elif hocanın erkek versiyonu olarak görüyorum. Neyse, işini seven, uğraş veren, karizmasıyla bizleri etkileyen iyi biridir. Bazı şeyleri gereksiz takıyor vibe'ı veriyor bazen ama olur o kadar"
+                    "yorum": "Ben bu hocayı Elif hocanın erkek versiyonu olarak görüyorum. Neyse, işini seven, uğraş veren, karizmasıyla bizleri etkileyen iyi biridir. Bazı şeyleri gereksiz takıyor vibe'ı veriyor bazen ama olur o kadar",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 20
+                    }
                 }
             ],
             "anlatim_puani": 64,
             "kolaylik_puani": 36,
             "ogretme_puani": 64,
             "eglence_puani": 42,
-            "oy_sayisi": 21
+            "oy_sayisi": 21,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 72,
+                    "kolaylik_puani": 41,
+                    "ogretme_puani": 73,
+                    "eglence_puani": 45,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 50,
+                    "kolaylik_puani": 27,
+                    "ogretme_puani": 45,
+                    "eglence_puani": 35,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Doç. Dr. Mehmet Sıddık Aktaş",
@@ -337,14 +633,35 @@
                 },
                 {
                     "kisi": "Usmanaga",
-                    "yorum": "Asla ama asla ders almayın. Çok ilgisiz çok sorumsuz bir hocamız. Hala çıkmış soru paylaşacak mesela. Ders anlatımı hakkında bir şey demeyeceğim ama diğer konularda kesinlikle madur olursunuz. Kendisi bize çıkmış soruları paylaşacağını söyledi. Her hafta bir sonraki hafta paylaşacağını söyledi. Yok. Vizeye yok finale girdik hala yok. Mezun oldum hala yok. Derse gelmeyeceğini o sabah söylüyor zaten dersi sabahtan. Sınavları çok geç okuyor maillere dönmüyor. Ödevlere de çok iyi bakıyor denemez. Uzak durun derslerinden. İngilizcesi iyi onun hakkını vereyim."
+                    "yorum": "Asla ama asla ders almayın. Çok ilgisiz çok sorumsuz bir hocamız. Hala çıkmış soru paylaşacak mesela. Ders anlatımı hakkında bir şey demeyeceğim ama diğer konularda kesinlikle madur olursunuz. Kendisi bize çıkmış soruları paylaşacağını söyledi. Her hafta bir sonraki hafta paylaşacağını söyledi. Yok. Vizeye yok finale girdik hala yok. Mezun oldum hala yok. Derse gelmeyeceğini o sabah söylüyor zaten dersi sabahtan. Sınavları çok geç okuyor maillere dönmüyor. Ödevlere de çok iyi bakıyor denemez. Uzak durun derslerinden. İngilizcesi iyi onun hakkını vereyim.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 7
+                    }
                 }
             ],
             "anlatim_puani": 60,
             "kolaylik_puani": 62,
             "ogretme_puani": 60,
             "eglence_puani": 46,
-            "oy_sayisi": 5
+            "oy_sayisi": 5,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 60,
+                    "ogretme_puani": 73,
+                    "eglence_puani": 63,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 45,
+                    "kolaylik_puani": 65,
+                    "ogretme_puani": 40,
+                    "eglence_puani": 20,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. M. Utku Kalay",
@@ -364,14 +681,35 @@
                 },
                 {
                     "kisi": "Teradata",
-                    "yorum": "Açıklaması için açıklama gerektiren bir hocadır. Konusu (veri tabanı) hakkında bilmediği yoktur. Rahat bir hocadır, yoklama aldığını görmedim. verdiği seçmeli dersler detay doludur, önermem."
+                    "yorum": "Açıklaması için açıklama gerektiren bir hocadır. Konusu (veri tabanı) hakkında bilmediği yoktur. Rahat bir hocadır, yoklama aldığını görmedim. verdiği seçmeli dersler detay doludur, önermem.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 14
+                    }
                 }
             ],
             "anlatim_puani": 28,
             "kolaylik_puani": 58,
             "ogretme_puani": 37,
             "eglence_puani": 12,
-            "oy_sayisi": 10
+            "oy_sayisi": 10,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 30,
+                    "kolaylik_puani": 52,
+                    "ogretme_puani": 35,
+                    "eglence_puani": 12,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 23,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 40,
+                    "eglence_puani": 10,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Oğuz Altun",
@@ -391,14 +729,35 @@
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d"
+                    "yorum": "Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 }
             ],
             "anlatim_puani": 34,
             "kolaylik_puani": 35,
             "ogretme_puani": 35,
             "eglence_puani": 18,
-            "oy_sayisi": 9
+            "oy_sayisi": 9,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 32,
+                    "kolaylik_puani": 27,
+                    "ogretme_puani": 31,
+                    "eglence_puani": 17,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 40,
+                    "kolaylik_puani": 65,
+                    "ogretme_puani": 50,
+                    "eglence_puani": 25,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Yunus Emre Selçuk",
@@ -418,22 +777,53 @@
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için..."
+                    "yorum": "aslında alanında (yazılım mühendisliği, OOP) çok bilgili bir hoca, ama muhtelemen ailevi problemlerinden dolayı derse ilgisi bir hayli düşük. Bu da öğrenciyi olumsuz etkiliyor. Şeker gibi tatlı ama çok fazla göremeyeceğiniz biri. Kendini geliştirmek isteyenlerin değil dersi geçeyim de nolursa olsun diyenler için...",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda"
+                    "yorum": "Dersi standart bir şekilde anlatır yoklama almaz sınavda bol puan verir ama sınavı hazırlamadığı için anlatmadığı şeyler çıkar büyük ihtimalle diger hocanın soyledikle çıkar sınavda",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 12
+                    }
                 },
                 {
                     "kisi": "Yıldızlı",
-                    "yorum": "Yunus Emre hocanın en öne çıkan özelliği güleç yüzlülüğü ve derslerdeki ilgi alakası. Dersteyken asla gerilme veya sıkılma olmuyor. Sorular sorulara gerçekten değer vererek cevaplamaya ve anladığınızdan emin olayı önemsiyor. İyi hoca."
+                    "yorum": "Yunus Emre hocanın en öne çıkan özelliği güleç yüzlülüğü ve derslerdeki ilgi alakası. Dersteyken asla gerilme veya sıkılma olmuyor. Sorular sorulara gerçekten değer vererek cevaplamaya ve anladığınızdan emin olayı önemsiyor. İyi hoca.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 9
+                    }
                 }
             ],
             "anlatim_puani": 63,
             "kolaylik_puani": 78,
             "ogretme_puani": 63,
             "eglence_puani": 66,
-            "oy_sayisi": 9
+            "oy_sayisi": 9,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 76,
+                    "kolaylik_puani": 86,
+                    "ogretme_puani": 73,
+                    "eglence_puani": 86,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 56,
+                    "kolaylik_puani": 75,
+                    "ogretme_puani": 58,
+                    "eglence_puani": 56,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Göksel Biricik",
@@ -453,26 +843,62 @@
                 },
                 {
                     "kisi": "Nakliyeci Sefer",
-                    "yorum": "Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır ."
+                    "yorum": "Dersi eğlenceli anlatmaya çalışır, yoklamaya çok takmaz, geç girenlere laf söylemez. Öğrencileri bırakmamaya çalışır .",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca"
+                    "yorum": "dersleri eğlenceli, öğrenciyle muhabbeti seven bir hoca. Konusu da basitçe anlatıp geçiyor. Aynı dersi veren diğer hocalara göre bir tık az öğrenebilirsiniz ama yeterli bilgiyi alırsınız. Çok sevimli bir hoca",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Madmax",
-                    "yorum": "Dersi çok iyi anlatır. Sorduğunuz soruyu da elinden geldiğince, sorunun saçma olup olmadığına bakmadan cevaplar. Şiddetle tavsiye edilir."
+                    "yorum": "Dersi çok iyi anlatır. Sorduğunuz soruyu da elinden geldiğince, sorunun saçma olup olmadığına bakmadan cevaplar. Şiddetle tavsiye edilir.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Anonim",
-                    "yorum": "Kendisinden bitirme ve ders aldım. Çok tatlı hoca. Sesi podcastlik. Bitirmede çok yardımcı oldu oneririm"
+                    "yorum": "Kendisinden bitirme ve ders aldım. Çok tatlı hoca. Sesi podcastlik. Bitirmede çok yardımcı oldu oneririm",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 19
+                    }
                 }
             ],
             "anlatim_puani": 66,
             "kolaylik_puani": 60,
             "ogretme_puani": 66,
             "eglence_puani": 66,
-            "oy_sayisi": 3
+            "oy_sayisi": 3,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 80,
+                    "kolaylik_puani": 65,
+                    "ogretme_puani": 80,
+                    "eglence_puani": 85,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 40,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 40,
+                    "eglence_puani": 30,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Erkan Uslu",
@@ -496,30 +922,71 @@
                 },
                 {
                     "kisi": "Nakliyeci Sefer",
-                    "yorum": "Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir."
+                    "yorum": "Çok bilgilidir, derse karşı sorumludur. İyi anlatmaya çalışır, ödevleri, dersleri ve sınavları genelde zorlayıcıdır. Bölümün en kaliteli hocalarından biridir.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Astro",
-                    "yorum": "okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca."
+                    "yorum": "okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "Erkan hocam çok bilgilidir eksiksiz bilgi verir bu yüzden bazen fazla bilgi de verebilir dersini hızlı anlatır bu yüzden dersi anlaması biraz zor olabilir sınavları standarttır robotik grubu vardır hocayla diyalog kurmak kolaydır iyi bir hocadır yoklama alır vizeler zamanında okur"
+                    "yorum": "Erkan hocam çok bilgilidir eksiksiz bilgi verir bu yüzden bazen fazla bilgi de verebilir dersini hızlı anlatır bu yüzden dersi anlaması biraz zor olabilir sınavları standarttır robotik grubu vardır hocayla diyalog kurmak kolaydır iyi bir hocadır yoklama alır vizeler zamanında okur",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Kolpa",
-                    "yorum": "Robotlar konusunda çok bilgilidir. Ne ironiktir de karakteri de robot gibidir. Hatta chat gpt falan Erkan hocamızın yanında daha insan kalır. En azından konuşması vs insanların üslubuna daha yakındır. Ya bu Erkan hocanın okul dışındaki halini merak ediyorum. Arkadaşlarıyla vs ne konuşuyor, ne yapıyor. İşlemciler dışında bir şeyden bahsederken hayal edemiyorum kendisini. Online derste deprem olunca hiçbir şey yokmuş gibi derse devam eden birisi sonuçta. Ders anlatırken de hiç düşünmez buradakiler beni anlıyor mu diye. Yardırır kendine göre. Herkes kendi gibi robot ve anlatılanları direkt kaydediyor sanar. Aslında ders anlatışını sanki öğrenciler hali hazırda konuyu biliyorlar da tekrar etmeye gelmişler gibi yapar. Yepyeni bir konudan bahsediyorsa bile en temelini anlatmaz, direkt detay verir."
+                    "yorum": "Robotlar konusunda çok bilgilidir. Ne ironiktir de karakteri de robot gibidir. Hatta chat gpt falan Erkan hocamızın yanında daha insan kalır. En azından konuşması vs insanların üslubuna daha yakındır. Ya bu Erkan hocanın okul dışındaki halini merak ediyorum. Arkadaşlarıyla vs ne konuşuyor, ne yapıyor. İşlemciler dışında bir şeyden bahsederken hayal edemiyorum kendisini. Online derste deprem olunca hiçbir şey yokmuş gibi derse devam eden birisi sonuçta. Ders anlatırken de hiç düşünmez buradakiler beni anlıyor mu diye. Yardırır kendine göre. Herkes kendi gibi robot ve anlatılanları direkt kaydediyor sanar. Aslında ders anlatışını sanki öğrenciler hali hazırda konuyu biliyorlar da tekrar etmeye gelmişler gibi yapar. Yepyeni bir konudan bahsediyorsa bile en temelini anlatmaz, direkt detay verir.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 20
+                    }
                 },
                 {
                     "kisi": "8086",
-                    "yorum": "Bölümün en değerli hocasıdır, Sizi insan yerine koyarak iletişim kurar. Çok gayretlidir, genelde zor dersleri verir."
+                    "yorum": "Bölümün en değerli hocasıdır, Sizi insan yerine koyarak iletişim kurar. Çok gayretlidir, genelde zor dersleri verir.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 3,
+                        "gun": 10
+                    }
                 }
             ],
             "anlatim_puani": 54,
             "kolaylik_puani": 43,
             "ogretme_puani": 57,
             "eglence_puani": 40,
-            "oy_sayisi": 14
+            "oy_sayisi": 14,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 45,
+                    "kolaylik_puani": 35,
+                    "ogretme_puani": 50,
+                    "eglence_puani": 28,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 58,
+                    "ogretme_puani": 70,
+                    "eglence_puani": 62,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Doç. Dr. Hamza Osman İlhan",
@@ -540,11 +1007,21 @@
                 },
                 {
                     "kisi": "Nanadaime",
-                    "yorum": "Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et."
+                    "yorum": "Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 5
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir"
+                    "yorum": "Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 }
             ],
             "anlatim_puani": 58,
@@ -552,7 +1029,23 @@
             "ogretme_puani": 57,
             "eglence_puani": 48,
             "oy_sayisi": 9,
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 57,
+                    "kolaylik_puani": 72,
+                    "ogretme_puani": 55,
+                    "eglence_puani": 48,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 65,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 65,
+                    "eglence_puani": 50,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. H. İrem Türkmen",
@@ -566,18 +1059,37 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Hocam tahtaya yazmasanız çok daha iyi olacak aslında. Eğer modunda olduğu bir günde ise 10 numara ders işler hem eğlenceli hem bilgili ama bazen gelip robot gibi anlatıp çıkıyor genel olarak iyi insan ve iyi hocadır"
+                    "yorum": "Hocam tahtaya yazmasanız çok daha iyi olacak aslında. Eğer modunda olduğu bir günde ise 10 numara ders işler hem eğlenceli hem bilgili ama bazen gelip robot gibi anlatıp çıkıyor genel olarak iyi insan ve iyi hocadır",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Teradata",
-                    "yorum": "Öğrenciyi sever, ders anlatmayı sever, öğrencinin tavsiyesini ciddiye bile alır daha ne olsun. Dersini çalışarak hak ederek iyi notla geçersin. Yeni başladı, yakında robota bağlamaz umarım diğer çoğu hoca gibi."
+                    "yorum": "Öğrenciyi sever, ders anlatmayı sever, öğrencinin tavsiyesini ciddiye bile alır daha ne olsun. Dersini çalışarak hak ederek iyi notla geçersin. Yeni başladı, yakında robota bağlamaz umarım diğer çoğu hoca gibi.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 21
+                    }
                 }
             ],
             "anlatim_puani": 100,
             "kolaylik_puani": 65,
             "ogretme_puani": 85,
             "eglence_puani": 75,
-            "oy_sayisi": 2
+            "oy_sayisi": 2,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 100,
+                    "kolaylik_puani": 65,
+                    "ogretme_puani": 85,
+                    "eglence_puani": 75,
+                    "yil": 2023
+                }
+            ]
         },
         {
             "ad": "Doç. Dr. Ali Can Karaca",
@@ -599,18 +1111,44 @@
                 },
                 {
                     "kisi": "Madmax",
-                    "yorum": "Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar."
+                    "yorum": "Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Gariban",
-                    "yorum": "Gömülü sistemler dersini aldım. Ders slytlari çok karmaşık ve bazen anlamsız. Sakin bir hoca ve güzel anlatıyor. Sınavlardaki sorular zor olabilir özellikle finalde ama anlattıkları konulardan ve gayet anlamlı sorular. Puanlaması adil olduğunu düşünüyorum ama bazı sorulara fazla puan veriyor olabilir. Genel olarak dersi güzel ve eğiticiydi."
+                    "yorum": "Gömülü sistemler dersini aldım. Ders slytlari çok karmaşık ve bazen anlamsız. Sakin bir hoca ve güzel anlatıyor. Sınavlardaki sorular zor olabilir özellikle finalde ama anlattıkları konulardan ve gayet anlamlı sorular. Puanlaması adil olduğunu düşünüyorum ama bazı sorulara fazla puan veriyor olabilir. Genel olarak dersi güzel ve eğiticiydi.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 18
+                    }
                 }
             ],
             "anlatim_puani": 70,
             "kolaylik_puani": 69,
             "ogretme_puani": 72,
             "eglence_puani": 67,
-            "oy_sayisi": 10
+            "oy_sayisi": 10,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 74,
+                    "kolaylik_puani": 68,
+                    "ogretme_puani": 77,
+                    "eglence_puani": 70,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 60,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 60,
+                    "eglence_puani": 60,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Ahmet Elbir",
@@ -629,34 +1167,80 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Violancello",
-                    "yorum": "Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum."
+                    "yorum": "Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 23
+                    }
                 },
                 {
                     "kisi": "Tehlikeli Pinokyo ",
-                    "yorum": "Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor."
+                    "yorum": "Bölümdeki en ilkeli hoca diyebilirim. En cok elini tasin altina koyan insan. Cabalayani bir sekilde geciriyor.",
+                    "tarih": {
+                        "yil": 2023,
+                        "ay": 12,
+                        "gun": 25
+                    }
                 },
                 {
                     "kisi": "Yıldızlı",
-                    "yorum": "Anlayış ve yardımseverlik konusunda diğer hocalara nispeten çok daha önde gelir. Öğrencilerle ders dışında da iletişim hususunda ilgilidir. Özellikle Ara ve Bitirme projelerini bu hocadan alırsanız iletişim ve sürecin ilerletilmesi konusunda kafanız daha rahat olacaktır."
+                    "yorum": "Anlayış ve yardımseverlik konusunda diğer hocalara nispeten çok daha önde gelir. Öğrencilerle ders dışında da iletişim hususunda ilgilidir. Özellikle Ara ve Bitirme projelerini bu hocadan alırsanız iletişim ve sürecin ilerletilmesi konusunda kafanız daha rahat olacaktır.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 4
+                    }
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "ahmet elbir hocamız yoklamayı takan bir hocamızdır sınavları son derece ayrıntı içerir her soylediğine kulak verin her soylediğini sorar sınavlarında elbet bir 30 puanlık zor bir soru olur soruyu yavas yavas cozun yanlıs yerden itibaren çözümu siler bi anda cok az bi puan alırsınız ders anlatımı normaldir"
+                    "yorum": "ahmet elbir hocamız yoklamayı takan bir hocamızdır sınavları son derece ayrıntı içerir her soylediğine kulak verin her soylediğini sorar sınavlarında elbet bir 30 puanlık zor bir soru olur soruyu yavas yavas cozun yanlıs yerden itibaren çözümu siler bi anda cok az bi puan alırsınız ders anlatımı normaldir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Okuldaki en çalışkan en disiplinli hocadır öyle ki ahmet hoca olmasa bölüm kepenk kapatır tam bir joker gibi adam. Ama bir o kadar da öğrenciyi yorar kazık gibi sınav yapar sabrederseniz seversiniz. Yoklamayı takmaz"
+                    "yorum": "Okuldaki en çalışkan en disiplinli hocadır öyle ki ahmet hoca olmasa bölüm kepenk kapatır tam bir joker gibi adam. Ama bir o kadar da öğrenciyi yorar kazık gibi sınav yapar sabrederseniz seversiniz. Yoklamayı takmaz",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Joseph Fourier",
-                    "yorum": "Sinyaller ve sistemler finalini sınav esansında okumaya başlayan hocadır. Sınav okuması o kadar hızlı ki sınavdan çıkar çıkmaz öğrenciler arasında AEL sınavı açıkladı şakası yapılır."
+                    "yorum": "Sinyaller ve sistemler finalini sınav esansında okumaya başlayan hocadır. Sınav okuması o kadar hızlı ki sınavdan çıkar çıkmaz öğrenciler arasında AEL sınavı açıkladı şakası yapılır.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 3,
+                        "gun": 18
+                    }
                 }
             ],
             "anlatim_puani": 65,
             "kolaylik_puani": 60,
             "ogretme_puani": 68,
             "eglence_puani": 52,
-            "oy_sayisi": 20
+            "oy_sayisi": 20,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 75,
+                    "kolaylik_puani": 66,
+                    "ogretme_puani": 76,
+                    "eglence_puani": 59,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 47,
+                    "kolaylik_puani": 47,
+                    "ogretme_puani": 52,
+                    "eglence_puani": 38,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Dr. Furkan Çakmak",
@@ -682,30 +1266,71 @@
                 },
                 {
                     "kisi": "Ufouser",
-                    "yorum": "Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum"
+                    "yorum": "Dersin teorik kısımlarını uygulamarda gösterdiği için çokça uygulama yapar bu yüzden daha iyi öğrettiğini düşünüyorum",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 10
+                    }
                 },
                 {
                     "kisi": "Violancello",
-                    "yorum": "Dersleri güzel anlatan, anlattığı konuların gerçek hayat ve sektördeki uygulamaları hakkında bilgi veren, muhabbeti güzel bir hoca. Fakat harf notlarını çok yüksek tutuyor ve itiraz edince bazen sert tepkiler veriyor."
+                    "yorum": "Dersleri güzel anlatan, anlattığı konuların gerçek hayat ve sektördeki uygulamaları hakkında bilgi veren, muhabbeti güzel bir hoca. Fakat harf notlarını çok yüksek tutuyor ve itiraz edince bazen sert tepkiler veriyor.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 22
+                    }
                 },
                 {
                     "kisi": "Dd",
-                    "yorum": "Havalı bir hoca, iyi anlatıyor, odevlerin tailmatları uygulamazsanız kalırsınız (odevin ismi bir boşluk için sıfı verdi)"
+                    "yorum": "Havalı bir hoca, iyi anlatıyor, odevlerin tailmatları uygulamazsanız kalırsınız (odevin ismi bir boşluk için sıfı verdi)",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Anlatış biçimi olarak çok abartılan ve bence abartıldığı kadar da iyi olmayan bi hoca. Ama öğrencilere aşırı yakındır adam gibi adamdır kendileri. Derste de sektörle ilgili genel kültür bilgileri verir hikayeler anlatır genel olarak faydalı geçer."
+                    "yorum": "Anlatış biçimi olarak çok abartılan ve bence abartıldığı kadar da iyi olmayan bi hoca. Ama öğrencilere aşırı yakındır adam gibi adamdır kendileri. Derste de sektörle ilgili genel kültür bilgileri verir hikayeler anlatır genel olarak faydalı geçer.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Kıymetli Arkadaşlar",
-                    "yorum": "Derste sürekli kıymetli arkadaşlar, söz konusu gibi cümleler kullanır. Kurallara çok riayet eder, güzel anlatır. Bu bölümde kuralsızlık yapılacak son hocadır."
+                    "yorum": "Derste sürekli kıymetli arkadaşlar, söz konusu gibi cümleler kullanır. Kurallara çok riayet eder, güzel anlatır. Bu bölümde kuralsızlık yapılacak son hocadır.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 3,
+                        "gun": 18
+                    }
                 }
             ],
             "anlatim_puani": 78,
             "kolaylik_puani": 30,
             "ogretme_puani": 71,
             "eglence_puani": 65,
-            "oy_sayisi": 9
+            "oy_sayisi": 9,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 81,
+                    "kolaylik_puani": 27,
+                    "ogretme_puani": 72,
+                    "eglence_puani": 65,
+                    "yil": 2023
+                },
+                {
+                    "anlatim_puani": 60,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 60,
+                    "eglence_puani": 70,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "",
@@ -748,7 +1373,21 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Kolpa",
-                    "yorum": "Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine"
+                    "yorum": "Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 20
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 10,
+                    "kolaylik_puani": 18,
+                    "ogretme_puani": 15,
+                    "eglence_puani": 10,
+                    "yil": 2024
                 }
             ]
         },
@@ -770,11 +1409,30 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Dd",
-                    "yorum": "Yoklamayı dikkat eden hoca, ingilizcede anlatıyor i, slaide okur geçer, sınavları kalsik ise soruya aklınıza ne geliyorsa yazın puan verir"
+                    "yorum": "Yoklamayı dikkat eden hoca, ingilizcede anlatıyor i, slaide okur geçer, sınavları kalsik ise soruya aklınıza ne geliyorsa yazın puan verir",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Isimsiz ",
-                    "yorum": "😴"
+                    "yorum": "😴",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 25,
+                    "kolaylik_puani": 55,
+                    "ogretme_puani": 25,
+                    "eglence_puani": 35,
+                    "yil": 2024
                 }
             ]
         },
@@ -795,7 +1453,21 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Isimsiz ",
-                    "yorum": "😴"
+                    "yorum": "😴",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 20,
+                    "kolaylik_puani": 75,
+                    "ogretme_puani": 20,
+                    "eglence_puani": 20,
+                    "yil": 2024
                 }
             ]
         },
@@ -826,7 +1498,16 @@
             "kolaylik_puani": 50,
             "ogretme_puani": 70,
             "eglence_puani": 60,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 70,
+                    "eglence_puani": 60,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Sultan Sevgi TURGUT",
@@ -843,7 +1524,21 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Blessed Camel ",
-                    "yorum": "Öğrenciyle en iyi empati yapan hoca. Ne işiniz düştüyse gidin illaki yardımcı olur argörler arasında en iyilerinden"
+                    "yorum": "Öğrenciyle en iyi empati yapan hoca. Ne işiniz düştüyse gidin illaki yardımcı olur argörler arasında en iyilerinden",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 80,
+                    "kolaylik_puani": 55,
+                    "ogretme_puani": 85,
+                    "eglence_puani": 85,
+                    "yil": 2024
                 }
             ]
         },
@@ -858,7 +1553,16 @@
             "kolaylik_puani": 50,
             "ogretme_puani": 80,
             "eglence_puani": 60,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 80,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 80,
+                    "eglence_puani": 60,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Muzaffer Kaan YÜCE",
@@ -879,7 +1583,16 @@
             "kolaylik_puani": 50,
             "ogretme_puani": 70,
             "eglence_puani": 30,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 70,
+                    "eglence_puani": 30,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Kübra ADALI",
@@ -896,11 +1609,30 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Teradata",
-                    "yorum": "Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın."
+                    "yorum": "Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 14
+                    }
                 },
                 {
                     "kisi": "Traktör Reis",
-                    "yorum": "En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı."
+                    "yorum": "En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 16
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 10,
+                    "kolaylik_puani": 80,
+                    "ogretme_puani": 30,
+                    "eglence_puani": 10,
+                    "yil": 2024
                 }
             ]
         },
@@ -919,11 +1651,30 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır"
+                    "yorum": "Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
                 },
                 {
                     "kisi": "Traktör Reis",
-                    "yorum": "Adam gibi adam, amacı öğretmek. Öğrenciyi saçma sapan işlerle zorlamak gibi bir derdi yok. Öğrenciye olabildiğince yardımcı oluyor. Notlandırması da güzel. Güler yüzlü, sizinle yakın iletişim kurmaya çalışıyor. Açık ara en iyi araştırma görevlisi."
+                    "yorum": "Adam gibi adam, amacı öğretmek. Öğrenciyi saçma sapan işlerle zorlamak gibi bir derdi yok. Öğrenciye olabildiğince yardımcı oluyor. Notlandırması da güzel. Güler yüzlü, sizinle yakın iletişim kurmaya çalışıyor. Açık ara en iyi araştırma görevlisi.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 18
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 80,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 80,
+                    "eglence_puani": 80,
+                    "yil": 2024
                 }
             ]
         },
@@ -946,7 +1697,16 @@
             "kolaylik_puani": 50,
             "ogretme_puani": 70,
             "eglence_puani": 40,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 70,
+                    "kolaylik_puani": 50,
+                    "ogretme_puani": 70,
+                    "eglence_puani": 40,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Rukiye BAŞKARA",
@@ -966,14 +1726,28 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Traktör Reis",
-                    "yorum": "Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Yusuf Taha Körkem, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca Yusuf Taha'nın söylediğini anlayamayınca kalkıp kodun kalanını Yusuf Taha anlatmıştı."
+                    "yorum": "Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Yusuf Taha Körkem, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca Yusuf Taha'nın söylediğini anlayamayınca kalkıp kodun kalanını Yusuf Taha anlatmıştı.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 1,
+                        "gun": 25
+                    }
                 }
             ],
             "anlatim_puani": 30,
             "kolaylik_puani": 60,
             "ogretme_puani": 20,
             "eglence_puani": 10,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 30,
+                    "kolaylik_puani": 60,
+                    "ogretme_puani": 20,
+                    "eglence_puani": 10,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Ömer Mutlu Türk KAYA",
@@ -986,7 +1760,16 @@
             "kolaylik_puani": 70,
             "ogretme_puani": 100,
             "eglence_puani": 50,
-            "oy_sayisi": 1
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 90,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 100,
+                    "eglence_puani": 50,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. Elçin GÜVEYİ",
@@ -999,7 +1782,16 @@
             "kolaylik_puani": 60,
             "ogretme_puani": 90,
             "eglence_puani": 80,
-            "oy_sayisi": 3
+            "oy_sayisi": 3,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 90,
+                    "kolaylik_puani": 60,
+                    "ogretme_puani": 90,
+                    "eglence_puani": 80,
+                    "yil": 2024
+                }
+            ]
         },
         {
             "ad": "Arş. Grv. İdris DEMİR",
@@ -1016,11 +1808,30 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Traktör Reis",
-                    "yorum": "Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti."
+                    "yorum": "Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 16
+                    }
                 },
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Sınavlardan önce bi bizi soymadığı kalıyor ama iyi bir insan"
+                    "yorum": "Sınavlardan önce bi bizi soymadığı kalıyor ama iyi bir insan",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 40,
+                    "kolaylik_puani": 80,
+                    "ogretme_puani": 35,
+                    "eglence_puani": 15,
+                    "yil": 2024
                 }
             ]
         },
@@ -1039,7 +1850,21 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor"
+                    "yorum": "Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 65,
+                    "kolaylik_puani": 60,
+                    "ogretme_puani": 65,
+                    "eglence_puani": 55,
+                    "yil": 2024
                 }
             ]
         },
@@ -1058,7 +1883,21 @@
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Blessed Camel",
-                    "yorum": "Çok rahat bir hoca ve bu sizi sinir eder dua edin işiniz düşmesin"
+                    "yorum": "Çok rahat bir hoca ve bu sizi sinir eder dua edin işiniz düşmesin",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 2,
+                        "gun": 17
+                    }
+                }
+            ],
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 73,
+                    "kolaylik_puani": 70,
+                    "ogretme_puani": 73,
+                    "eglence_puani": 76,
+                    "yil": 2024
                 }
             ]
         },
