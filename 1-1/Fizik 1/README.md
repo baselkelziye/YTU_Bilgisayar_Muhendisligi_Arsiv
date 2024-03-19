@@ -9,9 +9,8 @@
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
   - 👤 **_Darthshadoww_**: YKS fizigin biraz daha ileri seviyesi. Fizigi seviyorsaniz pratiklerle, cikmis sorularla rahat gecebilecegeniz bir ders. Son gun cikmislarla halledilecek bir ezber degil. Cogu sorulari pratige dayali islem gerektiren sorulardir. TYT ve AYT karisimi bir fizik diyebilirm hatirladigim kadariyla
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★☆☆☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar

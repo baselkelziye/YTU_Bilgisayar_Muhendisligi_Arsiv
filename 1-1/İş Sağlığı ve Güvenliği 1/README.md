@@ -9,9 +9,8 @@
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım.
   - 👤 **_Blessed Camel_**: Kod yazarken başıma şantiyeden beton parçası düşebileceği için çok önemli bir ders millet neden yakınıyor anlamıyorum ?!
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
-  - 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
