@@ -80,17 +80,27 @@ def derseOgrenciGorusuBasliginiYaz(f, ders, girinti=""):
         )
 
 
-def derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti, yil=""):
+def derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti, oy_sayisi, yil=""):
     f.write(
         f"{girinti}  - ✅ {yil}Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(kolaylik_puani)}\n"
     )
     f.write(
         f"{girinti}  - 🎯 {yil}Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(gereklilik_puani)}\n"
     )
+    f.write(
+        f"{girinti}    - ℹ️ Yıldızlar {oy_sayisi} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+    )
 
 
 def hocayaYildizYaz(
-    f, anlatim_puani, kolaylik_puani, ogretme_puani, eglence_puani, girinti, yil=""
+    f,
+    anlatim_puani,
+    kolaylik_puani,
+    ogretme_puani,
+    eglence_puani,
+    girinti,
+    oy_sayisi,
+    yil="",
 ):
     f.write(
         f"{girinti}  - {yil}🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(anlatim_puani)}\n"
@@ -104,6 +114,9 @@ def hocayaYildizYaz(
     f.write(
         f"{girinti}  - {yil}🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(eglence_puani)}\n"
     )
+    f.write(
+        f"{girinti}    - ℹ️ Yıldızlar {oy_sayisi} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+    )
 
 
 def hocaninYildizBasliginiYaz(f, hoca, girinti=""):
@@ -116,9 +129,7 @@ def hocaninYildizBasliginiYaz(f, hoca, girinti=""):
             hoca.get(OGRETME_PUNAI, 0),
             hoca.get(EGLENCE_PUANI, 0),
             girinti,
-        )
-        f.write(
-            f"{girinti}    - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+            hoca[OY_SAYISI],
         )
     else:
         f.write(
@@ -137,6 +148,7 @@ def hocaninYildizBasliginiYaz(f, hoca, girinti=""):
                 yildiz_bilgileri.get(OGRETME_PUNAI, 0),
                 yildiz_bilgileri.get(EGLENCE_PUANI, 0),
                 girinti + ek_girinti,
+                yildiz_bilgileri.get(OY_SAYISI, 0),
                 f"{yil} Yılında ",
             )
 
@@ -146,9 +158,8 @@ def dersinYildizBasliginiYaz(f, ders, girinti=""):
     if OY_SAYISI in ders:
         kolaylik_puani = ders.get(KOLAYLIK_PUANI, 1)
         gereklilik_puani = ders.get(GEREKLILIK_PUANI, 1)
-        derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti)
-        f.write(
-            f"{girinti}    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+        derseYildizYaz(
+            f, kolaylik_puani, gereklilik_puani, girinti, ders.get(OY_SAYISI, 0)
         )
     else:
         f.write(
@@ -165,6 +176,7 @@ def dersinYildizBasliginiYaz(f, ders, girinti=""):
                 yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
                 yildiz_bilgileri.get(GEREKLILIK_PUANI, 0),
                 girinti + ek_girinti,
+                yildiz_bilgileri.get(OY_SAYISI, 0),
                 f"{yil} Yılında ",
             )
 
