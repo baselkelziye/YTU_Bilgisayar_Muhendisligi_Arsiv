@@ -5,8 +5,9 @@
 - 📅 **Yıl:** 1
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
