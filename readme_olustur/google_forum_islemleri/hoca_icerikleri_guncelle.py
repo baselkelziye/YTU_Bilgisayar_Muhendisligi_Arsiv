@@ -58,6 +58,14 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         kisi = row[ISMIN_NASIL_GOZUKSUN_HOCA]
         # Yorumu alma ve sansürleme işlemi
         yorum = metin_sansurle(row.get(HOCA_HAKKINDAKI_YORUMUN, ""))
+        yorum_tarihi = pd.to_datetime(
+            row[0], format="%d.%m.%Y %H:%M:%S"
+        )  # tarih bilgisi
+        yorum_tarihi = {
+            YIL: yorum_tarihi.year,
+            AY: yorum_tarihi.month,
+            GUN: yorum_tarihi.day,
+        }
         # icerikKontrol = IcerikKontrol("hoca")
         if not pd.isna(yorum):  # and icerikKontrol.pozitif_mi(yorum):
             # yorum = icerikKontrol.metin_on_isleme(yorum)
@@ -71,15 +79,43 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                         if gorus[KISI].lower() == kisi.lower():
                             gorus[YORUM] = yorum
                             gorus[KISI] = kisi.lower().title()
+                            gorus[TARIH] = yorum_tarihi
                             gorus_var_mi = True
                             break
 
                     # Yeni yorum ekle
                     if not gorus_var_mi:
                         hoca[OGRENCI_GORUSLERI].append(
-                            {KISI: kisi.lower().title(), YORUM: yorum}
+                            {
+                                KISI: kisi.lower().title(),
+                                YORUM: yorum,
+                                TARIH: yorum_tarihi,
+                            }
                         )
     # icerikKontrol.dosya_yaz()
+
+
+def yillaraGoreYildizSayisiDondur(yildizlar_yil_hoca_grouped, ad):
+    # Hoca adına ve yıla göre gruplanmış veriden, belirtilen hoca için verileri filtrele
+    hoca_filtr = yildizlar_yil_hoca_grouped.xs(ad, level=HOCA_SEC, drop_level=False)
+
+    # Filtrelenmiş veri üzerinde iterasyon yaparak her bir yıl için ders değerlendirmelerini topla
+    yildizlar_listesi = []
+    for yil, row in hoca_filtr.iterrows():
+        yildizlar = {
+            ANLATIM_PUANI: int(row[DERSI_NE_KADAR_GUZEL_ANLATIR] * YILDIZ_KATSAYISI),
+            KOLAYLIK_PUANI: int(
+                row[DERSINI_GECMEK_NE_KADAR_KOLAYDIR] * YILDIZ_KATSAYISI
+            ),
+            OGRETME_PUNAI: int(row[DERSI_NE_KADAR_IYI__OGRETIR] * YILDIZ_KATSAYISI),
+            EGLENCE_PUANI: int(
+                row[DERSI_NE_KADAR_EGLENCELI_ANLATIR] * YILDIZ_KATSAYISI
+            ),
+            YIL: yil[1],
+        }
+        yildizlar_listesi.append(yildizlar)
+
+    return yildizlar_listesi
 
 
 # Google Sheets URL'si
@@ -99,7 +135,7 @@ mevcut_sutun_isimleri = yildizlar_df.columns
 yeniden_adlandirma = {
     mevcut_sutun_isimleri[0]: ZAMAN_DAMGASI,
     mevcut_sutun_isimleri[1]: HOCA_SEC,
-    mevcut_sutun_isimleri[2]: DERSI_NE_KADAR_GÜZEL_ANLATIR,
+    mevcut_sutun_isimleri[2]: DERSI_NE_KADAR_GUZEL_ANLATIR,
     mevcut_sutun_isimleri[3]: DERSINI_GECMEK_NE_KADAR_KOLAYDIR,
     mevcut_sutun_isimleri[4]: DERSI_NE_KADAR_IYI__OGRETIR,
     mevcut_sutun_isimleri[5]: DERSI_NE_KADAR_EGLENCELI_ANLATIR,
@@ -113,7 +149,7 @@ if not csv_kontrol_et(
     [
         ZAMAN_DAMGASI,
         HOCA_SEC,
-        DERSI_NE_KADAR_GÜZEL_ANLATIR,
+        DERSI_NE_KADAR_GUZEL_ANLATIR,
         DERSINI_GECMEK_NE_KADAR_KOLAYDIR,
         DERSI_NE_KADAR_IYI__OGRETIR,
         DERSI_NE_KADAR_EGLENCELI_ANLATIR,
@@ -122,11 +158,21 @@ if not csv_kontrol_et(
     custom_write_error("CSV dosyası hatalı, script durduruluyor.\n")
     exit(1)
 
+yildizlar_df = yildizlar_df.dropna()
 # Sadece sayısal sütunları al ve ortalama hesapla
 yildizlar_numeric_columns = yildizlar_df.columns.drop(
     [ZAMAN_DAMGASI, HOCA_SEC]
 )  # Sayısal olmayan sütunları çıkar
 yildizlar_grouped = yildizlar_df.groupby(HOCA_SEC)[yildizlar_numeric_columns].mean()
+# Yorum tarihinden yılı çıkarıp yeni bir sütun oluştur
+yildizlar_df[YIL] = pd.to_datetime(
+    yildizlar_df.iloc[:, 0], format="%d.%m.%Y %H:%M:%S"
+).dt.year
+
+# bunun amacı yıllara göre ortalama yansıtabilmek
+yildizlar_yil_hoca_grouped = yildizlar_df.groupby([HOCA_SEC, YIL])[
+    yildizlar_numeric_columns
+].mean()
 
 # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
 hoca_oy_sayisi = yildizlar_df[HOCA_SEC].value_counts()
@@ -143,27 +189,34 @@ else:
 json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
 with open(os.path.join(BIR_UST_DIZIN, json_file_path), "r", encoding="utf-8") as file:
     data = json.load(file)
+# en popüler hoca aynı oy sayısına sahip başka hoca varsa değişmesin
 if data.get(EN_POPULER_HOCA, {}).get(OY_SAYISI, 0) != int(en_populer_hoca_oy_sayisi):
     data[EN_POPULER_HOCA] = {
         HOCA_ADI: en_populer_hoca,
         OY_SAYISI: int(en_populer_hoca_oy_sayisi),
     }
 for hoca in data[HOCALAR]:
-    name = hoca.get(AD)
+    name = hoca.get(AD, "")
     if name in yildizlar_grouped.index:
         hoca[ANLATIM_PUANI] = int(
-            yildizlar_grouped.loc[name, DERSI_NE_KADAR_GÜZEL_ANLATIR] * 10
+            yildizlar_grouped.loc[name, DERSI_NE_KADAR_GUZEL_ANLATIR] * YILDIZ_KATSAYISI
         )
         hoca[KOLAYLIK_PUANI] = int(
-            yildizlar_grouped.loc[name, DERSINI_GECMEK_NE_KADAR_KOLAYDIR] * 10
+            yildizlar_grouped.loc[name, DERSINI_GECMEK_NE_KADAR_KOLAYDIR]
+            * YILDIZ_KATSAYISI
         )
         hoca[OGRETME_PUNAI] = int(
-            yildizlar_grouped.loc[name, DERSI_NE_KADAR_IYI__OGRETIR] * 10
+            yildizlar_grouped.loc[name, DERSI_NE_KADAR_IYI__OGRETIR] * YILDIZ_KATSAYISI
         )
         hoca[EGLENCE_PUANI] = int(
-            yildizlar_grouped.loc[name, DERSI_NE_KADAR_EGLENCELI_ANLATIR] * 10
+            yildizlar_grouped.loc[name, DERSI_NE_KADAR_EGLENCELI_ANLATIR]
+            * YILDIZ_KATSAYISI
         )
         hoca[OY_SAYISI] = int(hoca_oy_sayisi[name])
+    if name in yildizlar_yil_hoca_grouped.index:
+        hoca[YILLARA_GORE_YILDIZ_SAYILARI] = yillaraGoreYildizSayisiDondur(
+            yildizlar_yil_hoca_grouped, ad=name
+        )
 
 # Fonksiyonu çağır ve JSON dosyasını güncelle
 guncelle_ogrenci_gorusleri(data, yorumlar_sheets_url)

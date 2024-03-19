@@ -45,6 +45,130 @@ GERI_BILDIRIM_KISMI = f""" ## 🗣️ Geri Bildirimde Bulunun
 """
 
 
+def gorustenTarihGetir(gorus):
+    gorus_tarihi = ""
+    if TARIH in gorus:
+        ay = gorus.get(TARIH, {}).get(AY)
+        ay = f"{ay}" if ay > 9 else f"0{ay}"
+        gorus_tarihi = f"{ay}.{gorus.get(TARIH,{}).get(YIL)}"
+        gorus_tarihi = f"ℹ️ Yorum **{gorus_tarihi}** tarihinde yapılmıştır."
+    return gorus_tarihi
+
+
+def hocayaOgrenciGorusuBasliginiYaz(f, hoca, girinti=""):
+    gorusler = hoca.get(OGRENCI_GORUSLERI, [])
+    if len(gorusler) > 0:
+        for gorus in gorusler:
+            f.write(
+                f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]} {gorustenTarihGetir(gorus)}\n"
+            )
+    f.write(
+        f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
+    )
+
+
+def derseOgrenciGorusuBasliginiYaz(f, ders, girinti=""):
+    gorusler = ders.get(OGRENCI_GORUSLERI, [])
+    if len(gorusler) > 0:
+        f.write(f"{girinti}- 💭 **Öğrenci Görüşleri:**\n")
+        for gorus in gorusler:
+            f.write(
+                f"{girinti}  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]} {gorustenTarihGetir(gorus)}\n"
+            )
+        f.write(
+            f"{girinti}    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
+        )
+
+
+def derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti, yil=""):
+    f.write(
+        f"{girinti}  - ✅ {yil}Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(kolaylik_puani)}\n"
+    )
+    f.write(
+        f"{girinti}  - 🎯 {yil}Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(gereklilik_puani)}\n"
+    )
+
+
+def hocayaYildizYaz(
+    f, anlatim_puani, kolaylik_puani, ogretme_puani, eglence_puani, girinti, yil=""
+):
+    f.write(
+        f"{girinti}  - {yil}🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(anlatim_puani)}\n"
+    )
+    f.write(
+        f"{girinti}  - {yil}🛣️ Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(kolaylik_puani)}\n"
+    )
+    f.write(
+        f"{girinti}  - {yil}🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(ogretme_puani)}\n"
+    )
+    f.write(
+        f"{girinti}  - {yil}🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(eglence_puani)}\n"
+    )
+
+
+def hocaninYildizBasliginiYaz(f, hoca, girinti=""):
+    f.write(f"{girinti}- ⭐ **Yıldız Sayıları:**\n")
+    if OY_SAYISI in hoca and isinstance(hoca[OY_SAYISI], int) and hoca[OY_SAYISI] > 0:
+        hocayaYildizYaz(
+            f,
+            hoca.get(ANLATIM_PUANI, 0),
+            hoca.get(KOLAYLIK_PUANI, 0),
+            hoca.get(OGRETME_PUNAI, 0),
+            hoca.get(EGLENCE_PUANI, 0),
+            girinti,
+        )
+        f.write(
+            f"{girinti}    - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+        )
+    else:
+        f.write(
+            f"{girinti}    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+        )
+        return
+    ek_girinti = "  "
+    if YILLARA_GORE_YILDIZ_SAYILARI in hoca:
+        for yildiz_bilgileri in hoca[YILLARA_GORE_YILDIZ_SAYILARI]:
+            yil = yildiz_bilgileri.get(YIL, "bilinmiyor")
+            f.write(f"{girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
+            hocayaYildizYaz(
+                f,
+                yildiz_bilgileri.get(ANLATIM_PUANI, 0),
+                yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
+                yildiz_bilgileri.get(OGRETME_PUNAI, 0),
+                yildiz_bilgileri.get(EGLENCE_PUANI, 0),
+                girinti + ek_girinti,
+                f"{yil} Yılında ",
+            )
+
+
+def dersinYildizBasliginiYaz(f, ders, girinti=""):
+    f.write(f"{girinti}- ⭐ **Yıldız Sayıları:**\n")
+    if OY_SAYISI in ders:
+        kolaylik_puani = ders.get(KOLAYLIK_PUANI, 1)
+        gereklilik_puani = ders.get(GEREKLILIK_PUANI, 1)
+        derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti)
+        f.write(
+            f"{girinti}    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+        )
+    else:
+        f.write(
+            f"{girinti}    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
+        )
+        return
+    ek_girinti = "  "
+    if YILLARA_GORE_YILDIZ_SAYILARI in ders:
+        for yildiz_bilgileri in ders[YILLARA_GORE_YILDIZ_SAYILARI]:
+            yil = yildiz_bilgileri.get(YIL, "bilinmiyor")
+            f.write(f"{girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
+            derseYildizYaz(
+                f,
+                yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
+                yildiz_bilgileri.get(GEREKLILIK_PUANI, 0),
+                girinti + ek_girinti,
+                f"{yil} Yılında ",
+            )
+
+
 # Klasörler için benzerlik skoru hesaplayan fonksiyon
 def benzerlik_skoru(str1, str2):
     return difflib.SequenceMatcher(None, str1, str2).ratio() * 100
@@ -236,16 +360,7 @@ def hocalari_readme_ye_ekle(bilgiler):
             f.write(f"- 🚪 **Ofis:** {hoca[OFIS]}\n")
             f.write(f"- 🔗 **Araştırma Sayfası:** [{hoca[LINK]}]({hoca[LINK]})\n")
             f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
-            if (
-                OGRENCI_GORUSLERI in hoca
-                and isinstance(hoca[OGRENCI_GORUSLERI], list)
-                and len(hoca[OGRENCI_GORUSLERI]) > 0
-            ):
-                for gorus in hoca[OGRENCI_GORUSLERI]:
-                    f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
-            f.write(
-                f"  - ℹ️ Siz de [linkten]({HOCA_YORULMALA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
-            )
+            hocayaOgrenciGorusuBasliginiYaz(f, hoca)
             f.write("- 📚 **Verdiği Dersler:**\n")
             if (
                 DERSLER in hoca
@@ -270,36 +385,7 @@ def hocalari_readme_ye_ekle(bilgiler):
                         f.write(f"  - 📖 [{ders}]{baslik_linki_olustur(ders_id)}\n")
             else:
                 f.write("  - 📖 Ders bilgileri bulunamadı.\n")
-            f.write(f"- ⭐ **Yıldız Sayıları:**\n")
-            if (
-                ANLATIM_PUANI in hoca
-                and isinstance(hoca[ANLATIM_PUANI], int)
-                and hoca[ANLATIM_PUANI] > 0
-            ):
-                f.write(
-                    f"  - 🎭 Dersi Zevkli Anlatır Mı:\t{puanlari_yildiza_cevir(hoca[ANLATIM_PUANI])}\n"
-                )
-                f.write(
-                    f"  - 🛣️ Dersi Kolay Geçer Miyim:\t{puanlari_yildiza_cevir(hoca[KOLAYLIK_PUANI])}\n"
-                )
-                f.write(
-                    f"  - 🧠 Dersi Öğrenir Miyim:\t{puanlari_yildiza_cevir(hoca[OGRETME_PUNAI])}\n"
-                )
-                f.write(
-                    f"  - 🎉 Derste Eğlenir Miyim:\t{puanlari_yildiza_cevir(hoca[EGLENCE_PUANI])}\n"
-                )
-            if (
-                OY_SAYISI in hoca
-                and isinstance(hoca[OY_SAYISI], int)
-                and hoca[OY_SAYISI] > 0
-            ):
-                f.write(
-                    f"  - ℹ️ Yıldızlar {hoca[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                )
-            else:
-                f.write(
-                    f"  - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({HOCA_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                )
+            hocaninYildizBasliginiYaz(f, hoca)
             if hoca.get(HOCA_AKTIF_GOREVDE_MI, True) == False:
                 f.write(f"- ℹ️ {VARSAYILAN_HOCA_AKTIF_GOREVDE_DEGIL_MESAJI}.\n")
         f.write("</details>\n\n")
@@ -374,8 +460,8 @@ def dersleri_readme_ye_ekle(dersler):
     )
     with open(ANA_README_YOLU, "a", encoding="utf-8") as f:
         f.write(f"<details>\n<summary><b>📖 {dersler['bolum_adi']}</b></summary>\n\n")
-        f.write(f"\n\n\n## 📖 {dersler['bolum_adi']}\n")
-        f.write(f"📄 {dersler['bolum_aciklamasi']}\n\n\n\n")
+        f.write(f"\n\n\n## 📖 {dersler[BOLUM_ADI]}\n")
+        f.write(f"📄 {dersler[BOLUM_ACIKLAMASI]}\n\n\n\n")
 
         for donem in sorted(gruplanmis_dersler.keys(), key=donem_siralamasi):
             f.write(f"\n### 🗓 {donem}\n")
@@ -389,33 +475,8 @@ def dersleri_readme_ye_ekle(dersler):
                 )
                 f.write(f"#### 📘 {ders[AD]} {populer_isaret}{populer_bilgi}\n")
                 f.write(f"  - 🏷️ **Ders Tipi:** {ders[TIP]}\n")
-                if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
-                    f.write(f"  - 💭 **Öğrenci Görüşleri:**\n")
-                    for gorus in ders[OGRENCI_GORUSLERI]:
-                        f.write(
-                            f"    - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n"
-                        )
-                    f.write(
-                        f"    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.\n"
-                    )
-
-                f.write("  - ⭐ **Yıldız Sayıları:**\n")
-                if KOLAYLIK_PUANI in ders:
-                    f.write(
-                        f"    - ✅ Dersi Kolay Geçer Miyim: {puanlari_yildiza_cevir(ders[KOLAYLIK_PUANI])}\n"
-                    )
-                if GEREKLILIK_PUANI in ders:
-                    f.write(
-                        f"    - 🎯 Ders Mesleki Açıdan Gerekli Mi: {puanlari_yildiza_cevir(ders[GEREKLILIK_PUANI])}\n"
-                    )
-                if OY_SAYISI in ders:
-                    f.write(
-                        f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                    )
-                else:
-                    f.write(
-                        f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                    )
+                derseOgrenciGorusuBasliginiYaz(f, ders, girinti="  ")
+                dersinYildizBasliginiYaz(f, ders, girinti="  ")
 
                 if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
                     f.write("  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**\n")
@@ -686,30 +747,8 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
             f.write(f"- 📅 **Yıl:** {ders[YIL]}\n")
             f.write(f"- 📆 **Dönem:** {ders[DONEM]}\n")
         f.write(f"- 🏫 **Ders Tipi:** {ders[TIP]}\n")
-        if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
-            f.write(f"- 💬 **Öğrenci Görüşleri:**\n")
-            for gorus in ders[OGRENCI_GORUSLERI]:
-                f.write(f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n")
-        f.write("- ⭐ **Yıldız Sayıları:**\n")
-        if KOLAYLIK_PUANI in ders:
-            f.write(
-                f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders[KOLAYLIK_PUANI])}\n"
-            )
-            f.write(
-                f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders[GEREKLILIK_PUANI])}\n\n"
-            )
-        else:
-            f.write(f"  - 🛤️ **Kolaylık Puanı:** {puanlari_yildiza_cevir(1)}\n")
-            f.write(f"  - 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(1)}\n\n")
-        if OY_SAYISI in ders:
-            f.write(
-                f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-            )
-        else:
-            f.write(
-                f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-            )
-
+        derseOgrenciGorusuBasliginiYaz(f, ders)
+        dersinYildizBasliginiYaz(f, ders)
         if DERSE_DAIR_ONERILER in ders:
             # Derse dair öneriler
             f.write("## 📝 Derse Dair Öneriler\n\n")
@@ -723,7 +762,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
             # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
             sirali_kaynaklar = sorted(
                 ders[FAYDALI_OLABILECEK_KAYNAKLAR],
-                key=lambda x: unicodedata.normalize("NFKD", x).lower()
+                key=lambda x: unicodedata.normalize("NFKD", x).lower(),
             )
 
             # Sıralanmış kaynakları dosyaya yazdır
@@ -849,36 +888,8 @@ def ders_bilgilerini_readme_ile_birlestir(
                     f.write(f"- 📅 **Yıl:** {ders[YIL]}\n")
                     f.write(f"- 📆 **Dönem:** {ders[DONEM]}\n")
                     f.write(f"- 🏫 **Ders Tipi:** {ders[TIP]}\n")
-                    if OGRENCI_GORUSLERI in ders and ders[OGRENCI_GORUSLERI]:
-                        f.write(
-                            f"- 💬 **Öğrenci Görüşleri:**\n"
-                        )  # Konuşma balonu emoji, öğrenci görüşlerini temsil eder
-                        for gorus in ders[OGRENCI_GORUSLERI]:
-                            f.write(
-                                f"  - 👤 **_{gorus[KISI].strip()}_**: {gorus[YORUM]}\n"
-                            )  # Kişi emoji, öğrenciyi temsil eder
-                    if KOLAYLIK_PUANI in ders:
-                        f.write(
-                            f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(ders[KOLAYLIK_PUANI])}\n"
-                        )
-                        f.write(
-                            f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(ders[GEREKLILIK_PUANI])}\n\n"
-                        )
-                    else:
-                        f.write(
-                            f"- ⭐ **Kolaylık Puanı:** {puanlari_yildiza_cevir(1)}\n"
-                        )
-                        f.write(
-                            f"- 🔑 **Gereklilik Puanı:** {puanlari_yildiza_cevir(1)}\n\n"
-                        )
-                    if OY_SAYISI in ders:
-                        f.write(
-                            f"    - ℹ️ Yıldızlar {ders[OY_SAYISI]} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                        )
-                    else:
-                        f.write(
-                            f"    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
-                        )
+                    derseOgrenciGorusuBasliginiYaz(f, ders)
+                    dersinYildizBasliginiYaz(f, ders)
 
                     if DERSE_DAIR_ONERILER in ders:
                         f.write(
@@ -897,7 +908,7 @@ def ders_bilgilerini_readme_ile_birlestir(
                         # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
                         sirali_kaynaklar = sorted(
                             ders[FAYDALI_OLABILECEK_KAYNAKLAR],
-                            key=lambda x: unicodedata.normalize("NFKD", x).lower()
+                            key=lambda x: unicodedata.normalize("NFKD", x).lower(),
                         )
 
                         # Sıralanmış kaynakları dosyaya yazdır
