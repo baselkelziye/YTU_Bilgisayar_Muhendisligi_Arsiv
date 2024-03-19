@@ -138,7 +138,11 @@ class HocaEkleGuncelleWindow(QDialog):
 
     def bolumAdiDuzenle(self):
         text, ok = QInputDialog.getText(
-            self, "Bölüm Adı", "Bölüm adı:", QLineEdit.EchoMode.Normal, text=self.data[BOLUM_ADI]
+            self,
+            "Bölüm Adı",
+            "Bölüm adı:",
+            QLineEdit.EchoMode.Normal,
+            text=self.data[BOLUM_ADI],
         )
         if ok:
             cevap = QMessageBox.question(
@@ -161,7 +165,10 @@ class HocaEkleGuncelleWindow(QDialog):
             json.dump(self.data, file, ensure_ascii=False, indent=4)
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak hoca:")
             if ok:
                 self.searchHocalar(text)
@@ -196,7 +203,7 @@ class HocaEkleGuncelleWindow(QDialog):
             widget = self.hocalarLayout.itemAt(i).widget()
             if isinstance(widget, QPushButton):
                 hoca_ad = widget.text()
-                if query.replace('İ','i').lower() in hoca_ad.replace('İ','i').lower():
+                if query.replace("İ", "i").lower() in hoca_ad.replace("İ", "i").lower():
                     widget.show()
                     size += 1
                 else:
@@ -260,11 +267,13 @@ class HocaEkleGuncelleWindow(QDialog):
                     btn.clicked.connect(lambda checked, a=hoca: self.hocaDuzenle(a))
                     # derslerini alt alta ver
                     tmp_tool_tip = f"{AD}: {hoca.get(AD,'')}\n"
-                    tmp_tool_tip+= f"{OFIS}: {hoca.get(OFIS,'')}\n"
-                    tmp_tool_tip +=  f"{LINK}: {hoca.get(LINK,'')}\n"
-                    tmp_tool_tip +=  f"{HOCA_AKTIF_GOREVDE_MI}: {hoca.get(HOCA_AKTIF_GOREVDE_MI,'')}\n"
-                    tmp_tool_tip +=  f"{ERKEK_MI}: {hoca[ERKEK_MI]}\n"
-                    tmp_tool_tip +=  f"{DERSLER}\n" + "\n".join([ders for ders in hoca.get(DERSLER,[])])
+                    tmp_tool_tip += f"{OFIS}: {hoca.get(OFIS,'')}\n"
+                    tmp_tool_tip += f"{LINK}: {hoca.get(LINK,'')}\n"
+                    tmp_tool_tip += f"{HOCA_AKTIF_GOREVDE_MI}: {hoca.get(HOCA_AKTIF_GOREVDE_MI,'')}\n"
+                    tmp_tool_tip += f"{ERKEK_MI}: {hoca[ERKEK_MI]}\n"
+                    tmp_tool_tip += f"{DERSLER}\n" + "\n".join(
+                        [ders for ders in hoca.get(DERSLER, [])]
+                    )
                     btn.setToolTip(tmp_tool_tip)
                     btn.setStyleSheet(GUNCELLE_BUTTON_STILI)
                     self.hocalarLayout.addWidget(btn)
@@ -415,9 +424,14 @@ class HocaDuzenlemeWindow(QDialog):
 
         # Yatay düzeni ana düzene ekle
         self.layout.addLayout(buttonsLayout)
+
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_S and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_S
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             self.kaydet()
+
     def dersEkleComboBox(self, hoca_ders=None):
         if len(self.dersler) == 0:
             QMessageBox.critical(
@@ -436,7 +450,9 @@ class HocaDuzenlemeWindow(QDialog):
         # Sil (-) butonu
         silBtn = QPushButton("Hocanın Verdiği Dersi Sil", self)
         # Butonun boyutunu maksimuma ayarla
-        sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
+        sizePolicy = QSizePolicy(
+            QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding
+        )
         silBtn.setSizePolicy(sizePolicy)
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.clicked.connect(lambda: self.silDersComboBox(comboBox, silBtn))
