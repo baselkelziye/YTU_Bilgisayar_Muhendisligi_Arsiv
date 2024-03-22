@@ -23,7 +23,7 @@ def check_for_updates(key, url):
 
     # Eğer bu URL daha önce kontrol edildiyse ve hash değeri değişmişse, güncelleme olduğunu bildir
     if url in previous_hashes and previous_hashes[url] != current_hash:
-        custom_write(f"Değişiklik bulundu: {key}\n")
+        custom_write(f"Degisiklik bulundu: {key}\n")
         previous_hashes[url] = current_hash
         return True
 
@@ -41,7 +41,7 @@ def read_stream(stream, callback):
 
 
 def execute_command(command):
-    custom_write(f"Komut çalıştırılıyor: {command}\n")
+    custom_write(f"Komut calisitiriliyor: {command}\n")
     try:
         # Komutu çalıştır
         with subprocess.Popen(
@@ -73,7 +73,7 @@ def execute_command(command):
                 raise subprocess.CalledProcessError(process.returncode, command)
     except subprocess.CalledProcessError as e:
         # Komut hata ile sonuçlanırsa, hatayı yazdır
-        custom_write_error(f"Komut hatası: {e}\n")
+        custom_write_error(f"Komut hatasi: {e}\n")
         return False
     return True
 
@@ -81,7 +81,7 @@ def execute_command(command):
 def update_repository(deneme_sayisi=0):
     # Mevcut çalışma dizinini sakla
     original_directory = os.getcwd()
-    custom_write("Güncellemeler uygulanıyor...\n")
+    custom_write("Guncellemeler uygulaniyor...\n")
     readme_guncelle_komutu = f"python3 {README_OLUSTUR_PY}"
     # google form güncelle komutu
     google_form_guncelle_komutu = f"python3 {HOCA_ICERIKLERI_GUNCELLE_PY} && python3 {DERS_ICERIKLERI_GUNCELLE_PY}"
@@ -93,45 +93,45 @@ def update_repository(deneme_sayisi=0):
         output = stream.read()
         if "nothing to commit, working tree clean" not in output:
             custom_write_error(
-                "Dizinde değişiklikler var. Lütfen önce bu değişiklikleri commit yapın veya geri alın. Script durduruluyor.\n"
+                "Dizinde degisiklikler var. Lutfen once bu degisiklikleri commit yapin veya geri alin. Script durduruluyor.\n"
             )
             exit(1)
 
         if not execute_command("git fetch --all"):
             custom_write_error(
-                "Fetch sırasında conflict oluştu, script durduruluyor.\n"
+                "Fetch sirasinda conflict olustu, script durduruluyor.\n"
             )
             return
         if not execute_command("git reset --hard origin/main"):
             custom_write_error(
-                "Reset sırasında conflict oluştu, script durduruluyor.\n"
+                "Reset sirasinda conflict olustu, script durduruluyor.\n"
             )
             return
         os.chdir(original_directory)
         if not execute_command(google_form_guncelle_komutu):
             custom_write_error(
-                "Google form içerikleri güncellenirken hata oluştu, script durduruluyor.\n"
+                "Google form icerikleri guncellenirken hata olustu, script durduruluyor.\n"
             )
             return
         os.chdir(BIR_UST_DIZIN)
         os.system(readme_guncelle_komutu)
         os.chdir(DOKUMANLAR_REPO_YOLU)
         if not execute_command("git add --all"):
-            custom_write_error("Git add işlemi başarısız...\n")
+            custom_write_error("Git add islemi basarisiz...\n")
             return
         if not execute_command('git commit -m "rutin readme güncellemesi (robot)"'):
             custom_write_error(
-                "Git commit işlemi başarısız, muhtemelen herhangi bir dosya değişmedi...\n"
+                "Git commit islemi basarisiz, muhtemelen herhangi bir dosya degismedi...\n"
             )
             return
         if not execute_command("git push"):
-            custom_write_error("Git push işlemi başarısız...\n")
+            custom_write_error("Git push islemi basarisiz...\n")
             return
-        custom_write(f"{deneme_sayisi}. güncelleme başarıyla uygulandı.\n")
+        custom_write(f"{deneme_sayisi}. guncelleme basariyla uygulandi.\n")
         time.sleep(10)
     except Exception as e:
         # Hata oluşursa, hatayı yazdır ve e-posta gönder
-        error_message = f"Script hatası: {e}\n"
+        error_message = f"Script hatasi: {e}\n"
         custom_write_error(error_message)
     finally:
         # Başlangıç dizinine geri dön, hata olsa bile
@@ -141,8 +141,8 @@ def update_repository(deneme_sayisi=0):
 urls = {
     "DERS YORUMLAMA": DERS_YORUMLAMA_LINKI_CSV,
     "HOCA YORUMLAMA": HOCA_YORULMALA_LINKI_CSV,
-    "DERS ÖZELLİKLERİ OYLAMA": DERS_OYLAMA_LINKI_CSV,
-    "HOCA ÖZELLİKLERİ OYLAMA": HOCA_OYLAMA_LINKI_CSV,
+    "DERS OZELLIKLERI OYLAMA": DERS_OYLAMA_LINKI_CSV,
+    "HOCA OZELLIKLERI OYLAMA": HOCA_OYLAMA_LINKI_CSV,
 }
 # Dosyaların son boyutlarını saklamak için bir sözlük
 previous_hashes = {}
@@ -156,19 +156,19 @@ i = 0
 guncelleme_sayisi = 0
 timeout = 180
 div = 3
-custom_write("Script çalışıyor...\n")
+custom_write("Script calisiyor...\n")
 # Sonsuz döngü içinde URL'leri kontrol et ve güncelle
 while True:
     for key, url in urls.items():
         if check_for_updates(key, url):
-            custom_write(f"Güncelleme tespit edildi: {key}\n")
+            custom_write(f"Guncelleme tespit edildi: {key}\n")
             guncelleme_sayisi += 1
             update_repository(guncelleme_sayisi)
         else:
-            custom_write(f"Güncelleme yok: {key}\n")
+            custom_write(f"Guncelleme yok: {key}\n")
     i += 1
     for k in range(0, int(timeout / div)):
         custom_write(
-            f"{timeout-k*div} saniye sonra kontrol edilecek. Kontol sayısı {i} :: Güncelleme sayısı {guncelleme_sayisi}\n"
+            f"{timeout-k*div} saniye sonra kontrol edilecek. Kontol sayisi {i} :: Guncelleme sayisi {guncelleme_sayisi}\n"
         )  # '\r' ile satırın başına dön
         time.sleep(div)

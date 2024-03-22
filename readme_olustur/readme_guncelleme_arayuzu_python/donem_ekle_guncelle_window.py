@@ -20,7 +20,7 @@ import json
 
 class DonemEkleGuncelleWindow(TalimatDialog):
     def __init__(self, parent=None):
-        super().__init__(parent,json_dosyasi=DONEMLER_JSON_PATH)
+        super().__init__(parent, json_dosyasi=DONEMLER_JSON_PATH)
         self.setWindowTitle("Dönem Ekle/Güncelle")
         self.ekleBtn.clicked.disconnect()
         self.ekleBtn.setText("Dönem Ekle")
@@ -42,7 +42,6 @@ class DonemEkleGuncelleWindow(TalimatDialog):
             donembtn.clicked.connect(lambda checked, index=i: self.donemDuzenle(index))
             donembtn.setStyleSheet(GUNCELLE_BUTTON_STILI)
             donemLayout.addWidget(donembtn, 3)
-            donembtn.setMaximumWidth(500)
 
             silBtn = QPushButton("Sil", self)
             silBtn.setStyleSheet(SIL_BUTONU_STILI)
@@ -84,7 +83,10 @@ class DonemEkleGuncelleWindow(TalimatDialog):
             layout = self.scrollLayout.itemAt(idx)
             donem_adi = donem[DONEM_ADI]
             if isinstance(layout, QHBoxLayout):
-                match = query.replace('İ','i').lower() in donem_adi.replace('İ','i').lower()
+                match = (
+                    query.replace("İ", "i").lower()
+                    in donem_adi.replace("İ", "i").lower()
+                )
                 for i in range(layout.count()):
                     widget = layout.itemAt(i).widget()
                     if widget:
@@ -137,7 +139,10 @@ class DonemEkleGuncelleWindow(TalimatDialog):
         self.donemDuzenlemePenceresi.show()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_F and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_F
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             text, ok = QInputDialog.getText(self, "Arama", "Aranacak talimat:")
             if ok:
                 self.searchDonem(text)
@@ -236,7 +241,6 @@ class DonemDuzenlemeWindow(QDialog):
 
         # Sil (-) butonu
         silBtn = QPushButton("-", self)
-        silBtn.setMaximumWidth(40)  # Butonun genişliğini sabitle
         silBtn.setStyleSheet(SIL_BUTONU_STILI)
         silBtn.setText("Sil")
         silBtn.clicked.connect(lambda: self.silTavsiye(editLabel, silBtn))
@@ -269,9 +273,14 @@ class DonemDuzenlemeWindow(QDialog):
                 else:
                     break
         return True
+
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key.Key_S and event.modifiers() & Qt.KeyboardModifier.ControlModifier:
+        if (
+            event.key() == Qt.Key.Key_S
+            and event.modifiers() & Qt.KeyboardModifier.ControlModifier
+        ):
             self.kaydet()
+
     def kaydet(self):
         cevap = QMessageBox.question(
             self,

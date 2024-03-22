@@ -14,7 +14,14 @@ def donem_sayisi_getir(donem):
     elif donem == BAHAR:
         return 2
     return 0
-
+def elideText(text, max_length=40):
+        if len(text) <= max_length:
+            return text
+        else:
+            keep_length = max_length - 3  # 3 karakter "..." için ayrıldı
+            prefix_length = keep_length // 2
+            suffix_length = keep_length - prefix_length
+            return text[:prefix_length] + "..." + text[-suffix_length:]
 
 def donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU=".."):
     if donem is not None and donem.get(YIL, 0) != 0 and donem.get(DONEM, "") != "":

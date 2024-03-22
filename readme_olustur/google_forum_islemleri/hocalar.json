@@ -145,6 +145,10 @@
                 {
                     "kisi": "Prof. Dr.",
                     "yorum": "Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi."
+                },
+                {
+                    "kisi": "Prolog",
+                    "yorum": "Ders dinlemeye değil, podcast dinlemeye gelirdim. Çok eğlenceli anlatır, konusuna hakim. Öğrenciyi zorlamaz."
                 }
             ],
             "anlatim_puani": 92,
@@ -265,6 +269,10 @@
                 {
                     "kisi": "Blessed Camel",
                     "yorum": "Disiplin abidesi. Sınavları genelde ortalama oluyor çok not da kırmıyor ama dönem boyunca insanı çok yoruyor. Devamsızlık en fazla önem gösterdiği şeydir"
+                },
+                {
+                    "kisi": "Karnaugh Haritası",
+                    "yorum": "Dönemin ilk dersinde her zaman geç gelenleri almayacağını söyler, ilerde onları aşağılayarak alır. Sınıfa hakimdir, Dersini iyi anlatır. Anlattığını sorar."
                 }
             ],
             "anlatim_puani": 68,
@@ -495,19 +503,23 @@
                     "yorum": "okulun en zeki hocalarından biri, bence MFA ile kapışır :D donanım anlamında çok bilgili, bazen dili düşüncesine yetişemez havaya bakarak konuşur. Ama çok hızlı konuşuyor ve cümle kurarken o kadar hassas olduğunu görüyorsunuz ki hatalı cümle kurmamaya çok çalışıyor. Konusunda her türlü soruya cevap verir kafanda soru işareti bırakmaz. Sınavlarında hep zeka ölçer sorular sorar. Yani konuyu anlayıp kavraman yetmez bir de çözmen gereken bir zeka sorusu vardır. Pratik düşünemezsen o soruyu çözemezsin. Ama öğrenmekten ve öğretmekten zevk alan bir hoca."
                 },
                 {
-                    "kisi": "Anarcho Primitivism",
+                    "kisi": "Ufouser",
+                    "yorum": "Erkan hocam çok bilgilidir eksiksiz bilgi verir bu yüzden bazen fazla bilgi de verebilir dersini hızlı anlatır bu yüzden dersi anlaması biraz zor olabilir sınavları standarttır robotik grubu vardır hocayla diyalog kurmak kolaydır iyi bir hocadır yoklama alır vizeler zamanında okur"
+                },
+                {
+                    "kisi": "Kolpa",
                     "yorum": "Robotlar konusunda çok bilgilidir. Ne ironiktir de karakteri de robot gibidir. Hatta chat gpt falan Erkan hocamızın yanında daha insan kalır. En azından konuşması vs insanların üslubuna daha yakındır. Ya bu Erkan hocanın okul dışındaki halini merak ediyorum. Arkadaşlarıyla vs ne konuşuyor, ne yapıyor. İşlemciler dışında bir şeyden bahsederken hayal edemiyorum kendisini. Online derste deprem olunca hiçbir şey yokmuş gibi derse devam eden birisi sonuçta. Ders anlatırken de hiç düşünmez buradakiler beni anlıyor mu diye. Yardırır kendine göre. Herkes kendi gibi robot ve anlatılanları direkt kaydediyor sanar. Aslında ders anlatışını sanki öğrenciler hali hazırda konuyu biliyorlar da tekrar etmeye gelmişler gibi yapar. Yepyeni bir konudan bahsediyorsa bile en temelini anlatmaz, direkt detay verir."
                 },
                 {
-                    "kisi": "Ufouser",
-                    "yorum": "Erkan hocam çok bilgilidir eksiksiz bilgi verir bu yüzden bazen fazla bilgi de verebilir dersini hızlı anlatır bu yüzden dersi anlaması biraz zor olabilir sınavları standarttır robotik grubu vardır hocayla diyalog kurmak kolaydır iyi bir hocadır yoklama alır vizeler zamanında okur"
+                    "kisi": "8086",
+                    "yorum": "Bölümün en değerli hocasıdır, Sizi insan yerine koyarak iletişim kurar. Çok gayretlidir, genelde zor dersleri verir."
                 }
             ],
-            "anlatim_puani": 50,
-            "kolaylik_puani": 42,
-            "ogretme_puani": 53,
-            "eglence_puani": 36,
-            "oy_sayisi": 13
+            "anlatim_puani": 54,
+            "kolaylik_puani": 43,
+            "ogretme_puani": 57,
+            "eglence_puani": 40,
+            "oy_sayisi": 14
         },
         {
             "ad": "Doç. Dr. Hamza Osman İlhan",
@@ -548,7 +560,8 @@
             "link": "http://avesis.yildiz.edu.tr/irem/",
             "erkek_mi": false,
             "dersler": [
-                "Yapısal Programlama"
+                "Yapısal Programlama",
+                "İleri Algoritma Analizi Ve Tasarımı"
             ],
             "ogrenci_gorusleri": [
                 {
@@ -633,6 +646,10 @@
                 {
                     "kisi": "Blessed Camel",
                     "yorum": "Okuldaki en çalışkan en disiplinli hocadır öyle ki ahmet hoca olmasa bölüm kepenk kapatır tam bir joker gibi adam. Ama bir o kadar da öğrenciyi yorar kazık gibi sınav yapar sabrederseniz seversiniz. Yoklamayı takmaz"
+                },
+                {
+                    "kisi": "Joseph Fourier",
+                    "yorum": "Sinyaller ve sistemler finalini sınav esansında okumaya başlayan hocadır. Sınav okuması o kadar hızlı ki sınavdan çıkar çıkmaz öğrenciler arasında AEL sınavı açıkladı şakası yapılır."
                 }
             ],
             "anlatim_puani": 65,
@@ -678,6 +695,10 @@
                 {
                     "kisi": "Blessed Camel",
                     "yorum": "Anlatış biçimi olarak çok abartılan ve bence abartıldığı kadar da iyi olmayan bi hoca. Ama öğrencilere aşırı yakındır adam gibi adamdır kendileri. Derste de sektörle ilgili genel kültür bilgileri verir hikayeler anlatır genel olarak faydalı geçer."
+                },
+                {
+                    "kisi": "Kıymetli Arkadaşlar",
+                    "yorum": "Derste sürekli kıymetli arkadaşlar, söz konusu gibi cümleler kullanır. Kurallara çok riayet eder, güzel anlatır. Bu bölümde kuralsızlık yapılacak son hocadır."
                 }
             ],
             "anlatim_puani": 78,
@@ -726,7 +747,7 @@
             "oy_sayisi": 7,
             "ogrenci_gorusleri": [
                 {
-                    "kisi": "Ted",
+                    "kisi": "Kolpa",
                     "yorum": "Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine"
                 }
             ]
@@ -1047,6 +1068,16 @@
             "link": "https://avesis.yildiz.edu.tr/gizem.celik",
             "erkek_mi": false,
             "dersler": [],
+            "hoca_aktif_gorevde_mi": true
+        },
+        {
+            "ad": "Dr. Ayşe Dalgalı",
+            "ofis": "",
+            "link": "",
+            "erkek_mi": false,
+            "dersler": [
+                "Araştırma Yöntemleri ve Bilimsel Etik"
+            ],
             "hoca_aktif_gorevde_mi": true
         }
     ],

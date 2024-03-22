@@ -15,17 +15,26 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber.
-- ⭐ **Kolaylık Puanı:** ★★★★★☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★☆
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
     - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2023 yılı için yıldız bilgileri*
+    - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - HHB
@@ -40,13 +49,22 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
-  - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz.
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev. 
+  - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2023 yılı için yıldız bilgileri*
+    - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
@@ -54,10 +72,10 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
-- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
-- 📄 [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Proje:** [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
+- 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 ### 📘 Mesleki Hukuk ve Etik
 
@@ -66,16 +84,21 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★★☆☆
-- 🔑 **Gereklilik Puanı:** ★★☆☆☆☆☆☆☆☆
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Çok gerekli bir ders değil. Ezber bir ders. Bir de sunumu var. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - G1
@@ -90,16 +113,21 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü.
-- ⭐ **Kolaylık Puanı:** ★☆☆☆☆☆☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Genel stajdan pek bi farkı yok adı mesleki sadece. 30 iş günü. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 ### 📘 Veri İletişimi ve Bilgisayar Ağları
 
@@ -108,16 +136,21 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- ⭐ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★☆☆☆
-
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
-- 📄 [Bu linkte çok temiz çıkarılmış notlar var](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgi%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
+- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Rameş'in notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/rame%C5%9F%20el%20yaz%C4%B1s%C4%B1) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - FÇ
@@ -129,22 +162,31 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor.
-  - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor. 
+  - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2023 yılı için yıldız bilgileri*
+    - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
+    - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=7OZYkBDAqws&ab_channel=%C3%96mer%C3%87al%C4%B1%C5%9Fkan) ✨
-- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
-- 📄 [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=7OZYkBDAqws&ab_channel=%C3%96mer%C3%87al%C4%B1%C5%9Fkan) ✨
+- 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
+- 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨
+- 📄 **Proje:** Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
@@ -156,18 +198,23 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber.
-- ⭐ **Kolaylık Puanı:** ★★★★★★★☆☆☆
-- 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
-
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
+- 📄 **Proje:** [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK

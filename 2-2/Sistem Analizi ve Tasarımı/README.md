@@ -5,24 +5,29 @@
 - 📅 **Yıl:** 2
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Zevksiz ve ezber bir ders. Ama mesleki açıdan da gerekli. Sınavları olmasa güzel bir ders aslında. Bir projesi var. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★★★☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★☆☆
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 ## 📝 Derse Dair Öneriler
 
 ### 💡 Öneri sahibi: Traktör Reis
 - ders full ezber
-- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıtka kalırsın.
+- Grup projesi veriliyor. Erkenden grup bulmak gerekiyor yoksa açıkta kalırsın.
 - Proje konusu ve birçok proje örneği githubda mevcut.
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
+- 📄 **Not:** [Melihin 2024 Notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2024/melih) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK

@@ -1,18 +1,13 @@
 import sys
 import os
 import textwrap
-from PyQt6.QtWidgets import (
-    QDialog,
-    QVBoxLayout,
-    QPushButton,
-    QMessageBox,
-)
-from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
+from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox, QApplication
 from degiskenler import *
 from progress_dialog import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
 from PyQt6.QtGui import QIcon
 from hoca_ve_ders_adlari_window import HocaDersAdlariWindow
+from git_helper import GitDialog, GitHelper
 
 
 class GitIslemleriWindow(QDialog):
@@ -158,24 +153,17 @@ class GitIslemleriWindow(QDialog):
         )
 
     def push_changes(self):
-        commit_mesaji, ok_pressed = SatirAtlayanInputDialog.getMultiLineText(
-            self, "Commit Mesajı", "Lütfen commit mesajını giriniz:"
-        )
-        if not ok_pressed:
-            QMessageBox.information(self, "İptal", "İşlem iptal edildi.")
+        yol = os.path.join(BIR_UST_DIZIN, DOKUMANLAR_REPO_YOLU)
+        if len(GitHelper.git_status(yol)) == 0:
+            QMessageBox.information(
+                self, "Temiz", "Şu anda herhangi bir değişiklik yok"
+            )
             return
-        if not commit_mesaji:
-            QMessageBox.critical(self, "Hata", "Lütfen commit mesajını giriniz.")
-            return
-        # burada git -C komtutu çalışacak önce git reposu mu diye kontrol edilecek
-        komut = f"git -C {DOKUMANLAR_REPO_YOLU} add --all"
-        komut = komut + f' && git -C {DOKUMANLAR_REPO_YOLU} commit -m "{commit_mesaji}"'
-        komut = komut + f" && git -C {DOKUMANLAR_REPO_YOLU} push"
-        self.run_script(
-            komut,
-            baslik="Dosya Değişiklikleri Github'a Pushlanıyor...",
-            islem="Dosya Değişikliklerini Github'a Pushlama",
-        )
+        gitDialog = GitDialog(yol, self)
+        gitDialog.show()
+        # Uygulamanın olay döngüsünü zorla işleyin
+        QApplication.processEvents()
+        gitDialog.getStatusToInterface()
 
     def update_dosyalar_repo(self):
         if not self.git_degisiklik_kontrol(

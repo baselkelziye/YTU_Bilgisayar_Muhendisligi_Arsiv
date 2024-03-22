@@ -5,13 +5,17 @@
 - 📅 **Yıl:** 4
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Ara projenin biraz daha proje konusu zor olan hali. En önemli şey danışman hocaların kontenjanları dolmadan, iyi hoca seçebilmek. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★☆☆☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 ## 📝 Derse Dair Öneriler
 
 ### 💡 Öneri sahibi: Traktör Reis
@@ -19,6 +23,6 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=jdYA1Jk1HWM&ab_channel=YunusKaratepe) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Proje:** [Bitirme Çalışması](https://www.youtube.com/watch?v=7UhqY_zOXfE&t=70s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=jdYA1Jk1HWM&ab_channel=YunusKaratepe) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)

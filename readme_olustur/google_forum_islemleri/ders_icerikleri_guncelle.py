@@ -29,6 +29,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
     # Google Sheets verisini indir
     try:
         df = pd.read_csv(sheets_url)
+        df.to_csv(DERSLER_YORUM_CSV_PATH, index=False)
     except Exception as e:
         custom_write_error(f"CSV dosyası okunurken hata oluştu: {e}")
         exit(1)
@@ -57,6 +58,14 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         ders_adi = row[DERS_SEC]
         kisi = row[ISMIN_NASIL_GORUNSUN]
         yorum = metin_sansurle(row.get(DERS_HAKKINDAKI_YORUMUN, ""))
+        yorum_tarihi = pd.to_datetime(
+            row[0], format="%d.%m.%Y %H:%M:%S"
+        )  # tarih bilgisi
+        yorum_tarihi = {
+            YIL: yorum_tarihi.year,
+            AY: yorum_tarihi.month,
+            GUN: yorum_tarihi.day,
+        }
         # icerikKontrol = IcerikKontrol("ders")
         if not pd.isna(yorum):  # and icerikKontrol.pozitif_mi(yorum):
             # yorum = icerikKontrol.metin_on_isleme(yorum)
@@ -70,21 +79,47 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
                         if gorus[KISI].lower() == kisi.lower():
                             gorus[YORUM] = yorum
                             gorus[KISI] = kisi.lower().title()
+                            gorus[TARIH] = yorum_tarihi
                             gorus_var_mi = True
                             break
 
                     # Yeni yorum ekle
                     if not gorus_var_mi:
                         ders[OGRENCI_GORUSLERI].append(
-                            {KISI: kisi.lower().title(), YORUM: yorum}
+                            {
+                                KISI: kisi.lower().title(),
+                                YORUM: yorum,
+                                TARIH: yorum_tarihi,
+                            }
                         )
     # icerikKontrol.dosya_yaz()
+
+
+def yillaraGoreYildizSayisiDondur(yildizlar_yil_ders_grouped, ad):
+    # Hoca adına ve yıla göre gruplanmış veriden, belirtilen hoca için verileri filtrele
+    ders_filtr = yildizlar_yil_ders_grouped.xs(ad, level=DERS_SEC, drop_level=False)
+
+    # Filtrelenmiş veri üzerinde iterasyon yaparak her bir yıl için ders değerlendirmelerini topla
+    yildizlar_listesi = []
+    for yil, row in ders_filtr.iterrows():
+        yildizlar = {
+            KOLAYLIK_PUANI: int(row[DERSI_GECMEK_NE_KADAR_KOLAY] * YILDIZ_KATSAYISI),
+            GEREKLILIK_PUANI: int(
+                row[DERS_MESLEKI_ACIDAN_GEREKLI_MI] * YILDIZ_KATSAYISI
+            ),
+            YIL: yil[1],
+            OY_SAYISI: int(row[OY_SAYISI]),
+        }
+        yildizlar_listesi.append(yildizlar)
+
+    return yildizlar_listesi
 
 
 def guncelle_ders_yildizlari(data, sheets_url):
     try:
         # Veriyi indir ve DataFrame olarak oku
         yildizlar_df = pd.read_csv(sheets_url)
+        yildizlar_df.to_csv(DERSLER_YILDIZ_CSV_PATH, index=False)
     except Exception as e:
         custom_write_error(f"CSV dosyası okunurken hata oluştu: {e}\n")
         exit(1)
@@ -113,11 +148,27 @@ def guncelle_ders_yildizlari(data, sheets_url):
     ):
         custom_write_error("CSV dosyası hatalı, script durduruluyor.\n")
         exit(1)
-
+    yildizlar_df = yildizlar_df.dropna()
     # Sadece sayısal sütunları al ve ortalama hesapla
     yildizlar_numeric_columns = yildizlar_df.columns.drop(
         [ZAMAN_DAMGASI, DERS_SEC]
     )  # Sayısal olmayan sütunları çıkar
+
+    # Yorum tarihinden yılı çıkarıp yeni bir sütun oluştur
+    yildizlar_df[YIL] = pd.to_datetime(
+        yildizlar_df.iloc[:, 0], format="%d.%m.%Y %H:%M:%S"
+    ).dt.year
+
+    # Ortalamaları hesapla
+    yildizlar_yil_ders_grouped = yildizlar_df.groupby([DERS_SEC, YIL])[
+        yildizlar_numeric_columns
+    ].mean()
+    # Grup boyutlarını hesapla ve bir sütun olarak ekle
+    grup_boyutlari = yildizlar_df.groupby([DERS_SEC, YIL]).size().rename(OY_SAYISI)
+
+    # Ortalamalar ve grup boyutları DataFrame'lerini birleştir
+    yildizlar_yil_ders_grouped = yildizlar_yil_ders_grouped.join(grup_boyutlari)
+
     yildizlar_grouped = yildizlar_df.groupby(DERS_SEC)[yildizlar_numeric_columns].mean()
     # Hocaların aldığı oyların (yani kaç defa seçildiğinin) frekansını hesapla
     ders_oy_sayisi = yildizlar_df[DERS_SEC].value_counts()
@@ -139,12 +190,18 @@ def guncelle_ders_yildizlari(data, sheets_url):
         name = ders.get(AD)
         if name in yildizlar_grouped.index:
             ders[KOLAYLIK_PUANI] = int(
-                yildizlar_grouped.loc[name, DERSI_GECMEK_NE_KADAR_KOLAY] * 10
+                yildizlar_grouped.loc[name, DERSI_GECMEK_NE_KADAR_KOLAY]
+                * YILDIZ_KATSAYISI
             )
             ders[GEREKLILIK_PUANI] = int(
-                yildizlar_grouped.loc[name, DERS_MESLEKI_ACIDAN_GEREKLI_MI] * 10
+                yildizlar_grouped.loc[name, DERS_MESLEKI_ACIDAN_GEREKLI_MI]
+                * YILDIZ_KATSAYISI
             )
             ders[OY_SAYISI] = int(ders_oy_sayisi[name])
+        if name in yildizlar_yil_ders_grouped.index:
+            ders[YILLARA_GORE_YILDIZ_SAYILARI] = yillaraGoreYildizSayisiDondur(
+                yildizlar_yil_ders_grouped, ad=name
+            )
 
 
 # JSON dosyasını oku

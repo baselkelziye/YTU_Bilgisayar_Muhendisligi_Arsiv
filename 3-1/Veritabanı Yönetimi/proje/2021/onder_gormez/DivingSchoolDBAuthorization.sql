@@ -1,0 +1,1 @@
+prices a herkes erişemiyor olsun ki anlamlı bir database olsun.

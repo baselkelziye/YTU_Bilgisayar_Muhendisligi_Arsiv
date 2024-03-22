@@ -5,14 +5,22 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Bahar
 - 🏫 **Ders Tipi:** Zorunlu
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev.
-  - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz.
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bir danışman hocaya bağlı 1 yada 2 (genelde 2) kişi yapılan dönem boyu süren karmaşık ve ayrıntılı ödev. 
+  - 👤 **_Yıldızlı_**: Grup arkadaşı faktörü aşşırı önemli, diğer derslerin yükünün yanında projeye gerekli vakti ayırabileceğinden emin olduğunuz kişiyi seçmeye bulmaya çalışın. Bunun için dönem başlamadan bir süre önce gözünüze kestirmiş olmanız ve ona göre hazırlıklı olmanız iyi olur. Bununla birlikte hoca seçimi de önemli, hocaların ilgi alaka düzeyleri birbirinden çok farklı. Bu yüzden üst dönemlerle iletişime geçip hangi hocanın ne kadar ilgili olduğuna ve beklenti seviyelerine dair bilgilendirmeler almanızı tavsiye ederim. Son olarak, duyurulardaki yönlendirmeleri ve rapor yönergesinde (Latex şablonun içinde yer alıyor) verilen yönlendirmeleri dikkate alın. Raporun kapsamı çok önemli değil ama yeterki başlıklara doğru şekilde değinilmiş olsun ve çok iyi olmasa da birkaç diyagram eklemeniz raporu şekilli şükullu göstermesi kabilinden artıdır. Üst dönemlerden yapanların raporlarına erişebilirsiniz aşağı yukarı neye benzemesi gerektiği hakkında fikriniz olur. Turnitin AI tespit edebiliyor o yüzden ChatGPT çıktılarını değiştirin, paraphrase edin, Guillbot ve translate yardımıyla AI detection'u bypass edebilirsiniz. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - 🛤️ **Kolaylık Puanı:** ★★★★★★☆☆☆☆
-  - 🔑 **Gereklilik Puanı:** ★★★★★★★★★★
-
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
     - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2023 yılı için yıldız bilgileri*
+    - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+    - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📅 *2024 yılı için yıldız bilgileri*
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 ## 📝 Derse Dair Öneriler
 
 ### 💡 Öneri sahibi: Traktör Reis
@@ -20,7 +28,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
-- 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
-- 📄 [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh)
+- 📄 **Proje:** [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
+- 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
+- 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
