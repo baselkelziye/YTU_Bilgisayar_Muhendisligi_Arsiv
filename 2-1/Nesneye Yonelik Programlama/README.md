@@ -24,6 +24,7 @@
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=eQOqd2qvkJE&ab_channel=TolgaZiftci) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=889IY3UeJDQ&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MSA

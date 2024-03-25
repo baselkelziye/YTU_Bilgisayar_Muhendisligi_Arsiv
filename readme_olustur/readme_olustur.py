@@ -782,6 +782,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
                 f.write(f"- 📄 {kaynak} ✨\n")
 
         f.write(GENEL_CIKMIS_SORULAR_METNI)
+        f.write(f"  - ℹ️ {FAYDALI_OLABILECEK_KAYNAKLAR_UYARI_MESAJI}\n")
         if DERSI_VEREN_HOCALAR in ders and len(ders[DERSI_VEREN_HOCALAR]) > 0:
             f.write("\n## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:\n")
             for hoca in ders[DERSI_VEREN_HOCALAR]:
@@ -927,6 +928,7 @@ def ders_bilgilerini_readme_ile_birlestir(
                         for kaynak in sirali_kaynaklar:
                             f.write(f"- 📄 {kaynak} ✨\n")
                     f.write(GENEL_CIKMIS_SORULAR_METNI)
+                    f.write(f"  - ℹ️ {FAYDALI_OLABILECEK_KAYNAKLAR_UYARI_MESAJI}\n")
                     if (
                         DERSI_VEREN_HOCALAR in ders
                         and len(ders[DERSI_VEREN_HOCALAR]) > 0
