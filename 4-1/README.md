@@ -32,6 +32,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Bilgisayar Mühendisliğinde Güncel Konular
 
@@ -46,6 +47,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Yapısal Programlamaya Giriş
 
@@ -80,6 +82,7 @@
 - 📄 [Proje için örnek video 5](https://www.youtube.com/watch?v=uMhSY8xuRis&ab_channel=%C3%96merA%C5%9Fk%C4%B1n) ✨
 - 📄 [Proje için örnek video 6](https://www.youtube.com/watch?v=wByfS3Wlq7M&ab_channel=DuyguErduran) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
@@ -109,3 +112,4 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
