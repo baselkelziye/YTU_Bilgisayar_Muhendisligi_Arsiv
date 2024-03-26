@@ -3114,6 +3114,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Mehmet Ali Duran</i></b> </h6>
+<p align='center'><a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197/'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Melih Alçık</i></b> </h6>
 <p align='center'><a href='https://github.com/darthshadoww'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/melih-alcik-086087171/'><b>LinkedIn Profili</b></a></p>
 
