@@ -3099,8 +3099,14 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Esma Nur Çilekaya</i></b> 🔹</h5>
+<p align='center'><a href='https://www.linkedin.com/in/esma-nur-%C3%A7ilekaya'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Gülsüm İrem Baş</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/irembas'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/g%C3%BCls%C3%BCm-irem-ba%C5%9F/'><b>LinkedIn Profili</b></a></p>
+
+<h5 align='center'>🔹 <b><i>Mehmet Ali Duran</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
@@ -3113,9 +3119,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
-
-<h6 align='center'> <b><i>Mehmet Ali Duran</i></b> </h6>
-<p align='center'><a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Melih Alçık</i></b> </h6>
 <p align='center'><a href='https://github.com/darthshadoww'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/melih-alcik-086087171/'><b>LinkedIn Profili</b></a></p>
