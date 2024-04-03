@@ -3117,6 +3117,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Arda Mike</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/arda-mike-149a75294/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Batuhan Odçıkın</i></b> </h6>
+<p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
 
