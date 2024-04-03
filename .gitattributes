@@ -17,4 +17,14 @@ Lisansüstü/Bilgisayarla[[:space:]]Görme/projeler/2023/kayra/video.mp4 filter=
 .git/lfs/objects/7e/d4/7ed4f60d638e873235a38c9ca5afdd3945a08eacd45a409cf829f618fa39ef2b filter=lfs diff=lfs merge=lfs -text
 .git/lfs/objects/46/e7/46e773418559b8096059fb39c800eb72a0dd85636a84ac0fe4efac174bf161a5 filter=lfs diff=lfs merge=lfs -text
 3-2/Veri[[:space:]]İletişimi[[:space:]]ve[[:space:]]Bilgisayar[[:space:]]Ağları/Veri[[:space:]]İletişimi/slaytlar_notlar/2021/rameş[[:space:]]el[[:space:]]yazısı/el[[:space:]]yazısı[[:space:]]not-sıkıştırılmış.pdf filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
+*.mkv filter=lfs diff=lfs merge=lfs -text
+*.flv filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.doc filter=lfs diff=lfs merge=lfs -text
+*.ppt filter=lfs diff=lfs merge=lfs -text
+*.wmv filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
 * text !filter !merge !diff
