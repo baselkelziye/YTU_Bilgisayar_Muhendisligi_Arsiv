@@ -22,6 +22,7 @@ import os
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from konfigurasyon_window import KonfigurasyonDialog
 
+
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -92,10 +93,12 @@ class App(QWidget):
         # Dönem Ekle/Güncelle penceresini aç
         self.donemEkleGuncelleWindow = DonemEkleGuncelleWindow(parent=self)
         self.donemEkleGuncelleWindow.show()
+
     def acKonfigurasyonDuzenle(self):
         # Dönem Ekle/Güncelle penceresini aç
         self.konfigurasyonDialog = KonfigurasyonDialog(parent=self)
         self.konfigurasyonDialog.show()
+
     def maasIstatistikleriDuzenle(self):
         if os.path.exists(MAAS_ISTATISTIKLERI_TXT_PATH):
             with open(MAAS_ISTATISTIKLERI_TXT_PATH, "r", encoding="utf-8") as dosya:

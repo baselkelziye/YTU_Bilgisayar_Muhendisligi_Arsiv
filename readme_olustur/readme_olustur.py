@@ -529,9 +529,7 @@ def readme_ye_giris_ekle(giris_bilgileri):
         )  # Kitap emoji başlığı temsil eder
         f.write(f"{giris_bilgileri['aciklama']}\n\n")
         f.write(GERI_BILDIRIM_KISMI)
-        f.write(
-            '<p align="center">\n<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>\n</p>\n\n'
-        )
+        f.write(TIKLANMA_SAYISI)
         f.write("<details>\n<summary><b>🗂 İçindekiler</b></summary>\n\n")
         f.write("## 🗂 İçindekiler\n\n")
         for item in giris_bilgileri["icindekiler"]:
@@ -567,13 +565,17 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
         f.write(
             f"\n\n\n## 🛠 {repo_kullanimi_bilgileri[BASLIK]}\n\n"
         )  # Araç kutusu emojisi
-        f.write(f"### ⚙️ {repo_kullanimi_bilgileri[ACIKLAMA]}\n")
+        f.write(f"### ⚙️ {repo_kullanimi_bilgileri[ACIKLAMA]}:\n")
         for aciklama in repo_kullanimi_bilgileri[ACIKLAMALAR]:
             f.write(f"- 📋 {aciklama}\n")  # Not defteri emojisi
-        f.write(f"\n\n### 📝 {repo_kullanimi_bilgileri[TALIMAT]}\n")  # Yazma emojisi
+        f.write(f"\n\n### 📝 {repo_kullanimi_bilgileri[TALIMAT]}:\n")  # Yazma emojisi
         for talimat in repo_kullanimi_bilgileri[TALIMATLAR]:
             f.write(f"- 👉 {talimat}\n")  # İşaret parmağı emojisi
-        f.write(f"\n\n### 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
+        f.write("</details>\n\n")
+        f.write(
+            f"<details>\n<summary><b>🔍 {repo_kullanimi_bilgileri[KAVRAM]}</b></summary>\n\n"
+        )
+        f.write(f"\n\n## 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(
             repo_kullanimi_bilgileri[KAVRAMLAR],
             key=lambda x: unicodedata.normalize("NFKD", x[KAVRAM].lower()),
