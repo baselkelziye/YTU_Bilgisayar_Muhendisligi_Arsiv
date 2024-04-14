@@ -1,4 +1,5 @@
 import os, json, locale
+from github_metin_islemleri import github_kullanici_adi_getir
 
 # GENEL DEGISKENLER
 ## ORTAK DEGISKENLER
@@ -241,8 +242,6 @@ except:
     VARSAYILAN_GITHUB_URL = (
         "https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv"
     )
-
-
 GENEL_CIKMIS_SORULAR_METNI = f"- 📄 [Genel Çıkmış Sorular]({CIKMISLAR_LINKI})\n"
 
 
@@ -411,6 +410,8 @@ YILDIZ_GECMISI = f"""
 [![Star History Chart](https://api.star-history.com/svg?repos={YILDIZ_URL}&type=Date)](https://star-history.com/#{YILDIZ_URL}&Date)
 """
 
+GITHUB_KULLANICI_ADI = github_kullanici_adi_getir(VARSAYILAN_GITHUB_URL)
+TIKLANMA_SAYISI = f'<p align="center">\n<img src="https://komarev.com/ghpvc/?username={GITHUB_KULLANICI_ADI}&label=Görüntülenme+Sayısı&abbreviated=true&style=for-the-badge&color=orange" width="400" height="auto"/>\n</p>\n\n'
 default_encoding = locale.getpreferredencoding()
 
 

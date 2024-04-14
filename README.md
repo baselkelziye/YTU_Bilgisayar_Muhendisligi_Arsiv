@@ -11,7 +11,7 @@ YTU CE notlar reposu. Bu repository, Yıldız Teknik Üniversitesi Bilgisayar M�
 - [✍️ **Dersler için yorum linki**](https://forms.gle/SzNmK1w4rVaKE4ee8)
 - [⭐ **Dersler için yıldız linki**](https://forms.gle/3njZjmhm215YCAxe6)
 <p align="center">
-<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı" width="400" height="auto"/>
+<img src="https://komarev.com/ghpvc/?username=baselkelziye&label=Görüntülenme+Sayısı&abbreviated=true&style=for-the-badge&color=orange" width="400" height="auto"/>
 </p>
 
 <details>
@@ -63,9 +63,14 @@ YTU CE notlar reposu. Bu repository, Yıldız Teknik Üniversitesi Bilgisayar M�
 - 👉 Eksik gördüğün yerler ya da katkıda bulunmak için eklemek istediğin dosyalar olursa bizimle iletişime geçebilirsin, <a href="https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ" class="bold-link"> 📁 Linkten</a> dosya (ders notları vb.) ekleyebilirsin ya da merge request atabilirsin.
 - 👉 Büyük dosyalar GitHub üstünden açılamadığı için, repoyu yerel bilgisayarınıza indirip açmanız tavsiye edilir...
 - 👉 Eğer sadece bir klasörü indirmek istiyorsanız [Klasör İndirme Linki](https://download-directory.github.io)'ne tıklayarak ilgili klasörün adresini yapıştırarak indirme işlemini yapabilirsiniz. Kullanımı öğrenmek için [linki](https://www.gitkraken.com/learn/git/github-download#how-to-download-a-folder-from-github) ziyaret edebilirsiniz.
+</details>
+
+<details>
+<summary><b>🔍 Kavramlar</b></summary>
 
 
-### 🔍 Kavramlar:
+
+## 🔍 Kavramlar
 - 💡 **:star::star::star:Shiningstar Programı:star::star::star:**
   - 📘 <a name="shiningstar"></a>
 Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shiningstar-Program%C4%B1-Ba%C5%9Fvurular%C4%B1--G%C3%BCncelleme-Tarihi--22-09-2023-) erişebilirsiniz.
