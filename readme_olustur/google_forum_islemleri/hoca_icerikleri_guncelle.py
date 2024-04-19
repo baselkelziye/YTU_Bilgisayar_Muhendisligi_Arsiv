@@ -59,7 +59,7 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         # Yorumu alma ve sansürleme işlemi
         yorum = metin_sansurle(row.get(HOCA_HAKKINDAKI_YORUMUN, ""))
         yorum_tarihi = pd.to_datetime(
-            row[0], format="%d.%m.%Y %H:%M:%S"
+            row.iloc[0], format="%d.%m.%Y %H:%M:%S"
         )  # tarih bilgisi
         yorum_tarihi = {
             YIL: yorum_tarihi.year,
