@@ -2302,6 +2302,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ufouser_**: ahmet elbir hocamız yoklamayı takan bir hocamızdır sınavları son derece ayrıntı içerir her soylediğine kulak verin her soylediğini sorar sınavlarında elbet bir 30 puanlık zor bir soru olur soruyu yavas yavas cozun yanlıs yerden itibaren çözümu siler bi anda cok az bi puan alırsınız ders anlatımı normaldir ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Blessed Camel_**: Okuldaki en çalışkan en disiplinli hocadır öyle ki ahmet hoca olmasa bölüm kepenk kapatır tam bir joker gibi adam. Ama bir o kadar da öğrenciyi yorar kazık gibi sınav yapar sabrederseniz seversiniz. Yoklamayı takmaz ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Joseph Fourier_**: Sinyaller ve sistemler finalini sınav esansında okumaya başlayan hocadır. Sınav okuması o kadar hızlı ki sınavdan çıkar çıkmaz öğrenciler arasında AEL sınavı açıkladı şakası yapılır. ℹ️ Yorum **03.2024** tarihinde yapılmıştır.
+  - 👤 **_07_**: Bölümün Joker Hocası ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
