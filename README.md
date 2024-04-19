@@ -2262,17 +2262,19 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Harf notunu güzel verir. 
   - 👤 **_Usmanaga_**: Asla ama asla ders almayın. Çok ilgisiz çok sorumsuz bir hocamız. Hala çıkmış soru paylaşacak mesela. Ders anlatımı hakkında bir şey demeyeceğim ama diğer konularda kesinlikle madur olursunuz. Kendisi bize çıkmış soruları paylaşacağını söyledi. Her hafta bir sonraki hafta paylaşacağını söyledi. Yok. Vizeye yok finale girdik hala yok. Mezun oldum hala yok. Derse gelmeyeceğini o sabah söylüyor zaten dersi sabahtan. Sınavları çok geç okuyor maillere dönmüyor. Ödevlere de çok iyi bakıyor denemez. Uzak durun derslerinden. İngilizcesi iyi onun hakkını vereyim. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Messi_**: Bölümün en iyi hocalarından biri ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Scientist_**: Bölümün en bilgili hocalarından biri. Dersleri gerçekten süper, bol bol bilgi verir ve gerçekten öğrenilecek çok şey sunar. Derslerini eğer biraz çaba gösterirseniz yüksek notlar alarak geçebilirsiniz. Sizi gereksiz ödevlerle boğmaz ya da saçma projelerle yormaz. Hocaya ulaşmak biraz zor olabilir çünkü genellikle yoğun oluyor, sabırlı olmanız lazım. Ayrıca İngilizceyi mükemmel bir şekilde konuşuyor, yani İngilizce derslerinde anlamakta zorlanmazsınız. Bölümdeki İngilizce derslerinde tercih edilebilecek tek hocadır. ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
   - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
     - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -2280,11 +2282,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
-    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
-    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ### Doktor Öğretim Üyeleri
 
@@ -2672,13 +2674,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
     - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
     - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
     - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
     - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
