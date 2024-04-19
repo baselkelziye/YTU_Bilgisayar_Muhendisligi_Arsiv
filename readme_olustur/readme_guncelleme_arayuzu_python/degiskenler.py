@@ -1,5 +1,5 @@
 import os, json, locale
-from github_metin_islemleri import github_kullanici_adi_getir
+from github_metin_islemleri import github_kullanici_adi_getir, hash_url_39
 
 # GENEL DEGISKENLER
 ## ORTAK DEGISKENLER
@@ -411,6 +411,11 @@ YILDIZ_GECMISI = f"""
 """
 
 GITHUB_KULLANICI_ADI = github_kullanici_adi_getir(VARSAYILAN_GITHUB_URL)
+GITHUB_KULLANICI_ADI = (
+    GITHUB_KULLANICI_ADI
+    if GITHUB_KULLANICI_ADI == "baselkelziye"
+    else hash_url_39(VARSAYILAN_GITHUB_URL)
+)
 TIKLANMA_SAYISI = f'<p align="center">\n<img src="https://komarev.com/ghpvc/?username={GITHUB_KULLANICI_ADI}&label=Görüntülenme+Sayısı&abbreviated=true&style=for-the-badge&color=orange" width="400" height="auto"/>\n</p>\n\n'
 default_encoding = locale.getpreferredencoding()
 
