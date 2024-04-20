@@ -3031,7 +3031,18 @@
                     "ad": "Dr. H. İrem Türkmen"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "kolaylik_puani": 100,
+            "gereklilik_puani": 100,
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "kolaylik_puani": 100,
+                    "gereklilik_puani": 100,
+                    "yil": 2024,
+                    "oy_sayisi": 1
+                }
+            ]
         },
         {
             "ad": "Büyük Veri Analitiği",
