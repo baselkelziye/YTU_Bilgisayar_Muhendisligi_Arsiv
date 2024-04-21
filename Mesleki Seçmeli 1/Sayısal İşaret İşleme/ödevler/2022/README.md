@@ -1,0 +1,1 @@
+# Dersi veren hoca Ali Can Karaca

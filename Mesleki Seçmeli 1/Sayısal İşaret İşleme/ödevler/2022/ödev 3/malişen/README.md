@@ -1,0 +1,1 @@
+# Ödevden 100 aldı
