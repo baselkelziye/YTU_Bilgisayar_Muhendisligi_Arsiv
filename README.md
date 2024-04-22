@@ -2166,6 +2166,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Blessed Camel_**: Disiplin abidesi. Sınavları genelde ortalama oluyor çok not da kırmıyor ama dönem boyunca insanı çok yoruyor. Devamsızlık en fazla önem gösterdiği şeydir ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Karnaugh Haritası_**: Dönemin ilk dersinde her zaman geç gelenleri almayacağını söyler, ilerde onları aşağılayarak alır. Sınıfa hakimdir, Dersini iyi anlatır. Anlattığını sorar. ℹ️ Yorum **03.2024** tarihinde yapılmıştır.
   - 👤 **_B_**: Dersi slayttan işliyor , bence çok monoton geçiyor . Derse geç kalanları almıyor o konuda katı. Ortalama genel olarak ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Med_**: Zaman konusunda biraz ciddi olsa bile çok anlayışlı, ders anlatımı bana iyi geldmedi tek derse çok şey anlatıyor, sınav kendisi hazırlıyorsa zorluyor cidden ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
