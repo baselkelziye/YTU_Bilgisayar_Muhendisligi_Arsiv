@@ -1,2 +1,2 @@
-# Muhammed ALi Lale'nin yaptığı ödev
-100 aldı
+# 2021-2022 Güz Dönemi
+* 100 aldı
