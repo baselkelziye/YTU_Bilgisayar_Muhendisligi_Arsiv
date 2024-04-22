@@ -3161,6 +3161,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Rayene Bech</i></b> </h6>
 <p align='center'><a href='https://github.com/rayenebech'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/rayenebech99/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Saadettin Berber</i></b> </h6>
+<p align='center'><a href='https://github.com/saadettinBerber'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saadettin-berber-5635b51ba'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Şehmus Yakut</i></b> </h6>
 <p align='center'><a href='https://github.com/SehmusYakut'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sehmus-yakut/'><b>LinkedIn Profili</b></a></p>
 
