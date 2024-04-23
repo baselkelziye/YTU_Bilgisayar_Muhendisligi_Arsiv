@@ -2174,11 +2174,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Devre Teorisi ve Elektronik Devreler](#-devre-teorisi-ve-elektronik-devreler)
   - 📖 [Veri Madenciliğine Giriş](#-veri-madenciliğine-giriş)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
     - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
@@ -2186,11 +2186,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
       - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
-    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
     - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -2590,8 +2590,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
     - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
@@ -2599,11 +2599,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
-    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
     - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-      - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ### Araştırma Görevlileri
 
