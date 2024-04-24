@@ -15,7 +15,7 @@ from PyQt6.QtWidgets import (
     QWidget,
     QHBoxLayout,
 )
-import locale
+import unicodedata
 from PyQt6.QtGui import QIcon
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
@@ -244,18 +244,6 @@ class DersEkleGuncelleWindow(QDialog):
 
     def dersleriYukle(self):
         try:
-            # Öncelikle Türkçe locale'i dene
-            locale.setlocale(locale.LC_ALL, "tr_TR.UTF-8")
-        except locale.Error:
-            try:
-                # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
-                # os.system('sudo locale-gen tr_TR.UTF-8')
-                # Alternatif olarak başka bir Türkçe locale dene
-                locale.setlocale(locale.LC_ALL, "tr_TR")
-            except locale.Error:
-                # Varsayılan locale'e geri dön
-                locale.setlocale(locale.LC_ALL, "")
-        try:
             self.data = self.jsonDosyasiniYukle()
             ders_sayisi = len(self.data[DERSLER])  # Ders sayısını hesapla
             self.dersSayisiLabel.setText(
@@ -264,7 +252,7 @@ class DersEkleGuncelleWindow(QDialog):
 
             # Dersleri ders adına göre Türkçe alfabetik olarak sırala (büyük/küçük harf duyarsız)
             self.sorted_dersler = sorted(
-                self.data[DERSLER], key=lambda d: locale.strxfrm(d[AD].lower())
+                self.data[DERSLER], key=lambda d: unicodedata.normalize(NFKD,d[AD]).lower()
             )
             for ders in self.sorted_dersler:
                 # Her ders için bir satır oluştur

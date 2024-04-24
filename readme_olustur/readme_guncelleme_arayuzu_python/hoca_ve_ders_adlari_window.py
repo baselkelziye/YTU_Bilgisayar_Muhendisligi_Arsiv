@@ -1,6 +1,5 @@
-import sys
 import json
-import locale
+import unicodedata
 from PyQt6.QtWidgets import (
     QApplication,
     QDialog,
@@ -15,8 +14,6 @@ from degiskenler import *
 
 class HocaDersAdlariWindow(QDialog):
     def __init__(self, parent=None):
-        # Türkçe karakterler için locale ayarları
-        locale.setlocale(locale.LC_ALL, "tr_TR.utf8")
         super().__init__(parent)  # parent'ı super fonksiyonuna geçir
         self.setModal(True)
         self.initUI()
@@ -54,15 +51,12 @@ class HocaDersAdlariWindow(QDialog):
         self.setLayout(h_layout)
 
     def dersleri_oku_ve_sirala(self, dosya_adi):
-        # Türkçe karakterlerin doğru sıralanabilmesi için Türkçe locale ayarını kullanacağız.
-        # Sistem locale ayarlarınızın bu dili desteklediğinden emin olun.
-        locale.setlocale(locale.LC_ALL, "tr_TR.utf8")
 
         def turkce_sirala(ders_listesi):
             """
             Verilen ders adlarını Türkçe karakterleri de dikkate alarak alfabetik sıraya dizer.
             """
-            return sorted(ders_listesi, key=locale.strxfrm)
+            return sorted(ders_listesi, key=lambda x: unicodedata.normalize(NFKD, x))
 
         with open(dosya_adi, "r", encoding="utf-8") as dosya:
             veri = json.load(dosya)
@@ -94,7 +88,7 @@ class HocaDersAdlariWindow(QDialog):
             # Hocaların adlarını önceliklere göre ve alfabetik sıraya göre sırala
             sirali_hocalar = sorted(
                 hocalar_listesi,
-                key=lambda hoca: (unvan_önceligi(hoca), locale.strxfrm(hoca)),
+                key=lambda hoca: (unvan_önceligi(hoca), unicodedata.normalize(NFKD, hoca)),
             )
             return sirali_hocalar
 
