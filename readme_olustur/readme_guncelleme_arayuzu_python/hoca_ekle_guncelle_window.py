@@ -1,5 +1,5 @@
 import requests
-import locale
+import unicodedata
 import json
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (
@@ -21,22 +21,8 @@ from threadler import HocaKaydetThread
 from progress_dialog import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
-from PyQt6.QtGui import QIcon, QKeyEvent
+from PyQt6.QtGui import QIcon
 from metin_islemleri import kisaltMetin
-
-# LİNKLERİN TUTULDUĞU VERİELRİ KONTROL EDİP OLMAYAN DEĞERLERİ GÜNCELLEME
-try:
-    # Öncelikle Türkçe locale'i dene
-    locale.setlocale(locale.LC_ALL, "tr_TR.UTF-8")
-except locale.Error:
-    try:
-        # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
-        # os.system('sudo locale-gen tr_TR.UTF-8')
-        # Alternatif olarak başka bir Türkçe locale dene
-        locale.setlocale(locale.LC_ALL, "tr_TR")
-    except locale.Error:
-        # Varsayılan locale'e geri dön
-        locale.setlocale(locale.LC_ALL, "")
 
 
 class HocaEkleGuncelleWindow(QDialog):
@@ -244,17 +230,22 @@ class HocaEkleGuncelleWindow(QDialog):
             self.hocaSayisiLabel.setText(
                 f"Toplam {hoca_sayisi} hoca"
             )  # Hoca sayısını etikette güncelle
-
+            def turkce_kucult(text):
+                # Unicode normalizasyonu
+                text = unicodedata.normalize('NFKD', text)
+                # Türkçe İ ve ı harflerinin doğru dönüşümü için özel durum
+                text = text.lower().strip()
+                return text
             def unvan_ve_isim_ayir(hoca):
                 # Ünvanları ve sıralama önceliklerini tanımla
                 ad = hoca[AD]
                 for idx, unvan in enumerate(unvanlar):
                     if ad.startswith(unvan):
                         # Ünvanın indeksi (önceliği) ve adı döndür
-                        return idx, ad[len(unvan) :].strip()
+                        return idx, turkce_kucult(ad[len(unvan) :])
 
                 # Eğer ünvan yoksa, listenin uzunluğu ve adı döndür
-                return len(unvanlar), ad
+                return len(unvanlar), turkce_kucult(ad)
 
             # Hocaları önce ünvanlarına, sonra adlarına göre sırala
             self.sorted_hocalar = sorted(
@@ -381,7 +372,7 @@ class HocaDuzenlemeWindow(QDialog):
         # Diğer bilgiler ve dersler buraya eklenebilir
         self.dersler = self.dersleriYukle()
         # Derslerin sadece AD alanını al ve adlarına göre sırala
-        self.dersler = sorted([ders[AD] for ders in self.dersler], key=locale.strxfrm)
+        self.dersler = sorted([ders[AD] for ders in self.dersler], key=lambda x: unicodedata.normalize(NFKD, x))
         self.hocanin_verdig_dersler_label = QLabel("Hocanın Verdiği Dersler")
         self.hocanin_verdig_dersler_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.hocanin_verdig_dersler_label)

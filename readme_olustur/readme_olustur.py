@@ -4,13 +4,7 @@ import difflib
 import re
 import sys
 import bisect
-import locale
 import unicodedata
-
-# Locale'i Türkçe'ye ayarla
-locale.setlocale(
-    locale.LC_ALL, "tr_TR.UTF-8"
-)  # Sisteminize bağlı olarak bu değer değişebilir
 
 # Mevcut dosyanın bulunduğu dizini al
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -578,7 +572,7 @@ def readme_ye_repo_kullanimi_ekle(repo_kullanimi_bilgileri):
         f.write(f"\n\n## 🔍 {repo_kullanimi_bilgileri[KAVRAM]}\n")  # Büyüteç emojisi
         for kavram in sorted(
             repo_kullanimi_bilgileri[KAVRAMLAR],
-            key=lambda x: unicodedata.normalize("NFKD", x[KAVRAM].lower()),
+            key=lambda x: unicodedata.normalize(NFKD, x[KAVRAM].lower()),
         ):
             f.write(
                 f"- 💡 **{kavram[KAVRAM]}**\n"
@@ -776,7 +770,7 @@ def ders_klasorune_readme_olustur(ders, dosya_yolu, klasor_sonradan_olustu=False
             # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
             sirali_kaynaklar = sorted(
                 ders[FAYDALI_OLABILECEK_KAYNAKLAR],
-                key=lambda x: unicodedata.normalize("NFKD", x).lower(),
+                key=lambda x: unicodedata.normalize(NFKD, x).lower(),
             )
 
             # Sıralanmış kaynakları dosyaya yazdır
@@ -923,7 +917,7 @@ def ders_bilgilerini_readme_ile_birlestir(
                         # Faydalı olabilecek kaynakları Türkçe alfabetik sıraya göre sırala
                         sirali_kaynaklar = sorted(
                             ders[FAYDALI_OLABILECEK_KAYNAKLAR],
-                            key=lambda x: unicodedata.normalize("NFKD", x).lower(),
+                            key=lambda x: unicodedata.normalize(NFKD, x).lower(),
                         )
 
                         # Sıralanmış kaynakları dosyaya yazdır

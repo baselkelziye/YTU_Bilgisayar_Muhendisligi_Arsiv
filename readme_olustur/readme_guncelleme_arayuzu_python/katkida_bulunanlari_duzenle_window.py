@@ -1,4 +1,4 @@
-import locale
+import unicodedata
 import json
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from PyQt6.QtWidgets import (
@@ -21,18 +21,6 @@ from metin_islemleri import kisaltMetin
 from close_event import closeEventHandler
 from katkida_bulunan_ekle_window import BaseKatkidaBulunanWindow
 
-try:
-    # Öncelikle Türkçe locale'i dene
-    locale.setlocale(locale.LC_ALL, "tr_TR.UTF-8")
-except locale.Error:
-    try:
-        # eğer sistemde tr dili yoksa linuxta böyle yüklenebilir
-        # os.system('sudo locale-gen tr_TR.UTF-8')
-        # Alternatif olarak başka bir Türkçe locale dene
-        locale.setlocale(locale.LC_ALL, "tr_TR")
-    except locale.Error:
-        # Varsayılan locale'e geri dön
-        locale.setlocale(locale.LC_ALL, "")
 
 
 class KatkidaBulunanGuncelleWindow(QDialog):
@@ -249,7 +237,7 @@ class KatkidaBulunanGuncelleWindow(QDialog):
         self.data = self.jsonDosyasiniYukle()
         self.data[KATKIDA_BULUNANLAR] = sorted(
             [kisi for kisi in self.data[KATKIDA_BULUNANLAR] if kisi[AD].strip()],
-            key=lambda kisi: locale.strxfrm(kisi[AD].lower()),
+            key=lambda kisi:  unicodedata.normalize('NFKD', kisi[AD]).lower(),
         )
         try:
             katkidaBulunanSayisi = len(
