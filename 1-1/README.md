@@ -20,17 +20,17 @@
   - 👤 **_Blessed Camel_**: Ders işleyişi ne kadar zevkli de olsa (flowchart hariç ) sınavlarında boncuk boncuk terliyorsunuz AA geçmek gerçekten takdir edilesi ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
-    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+    - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+      - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 #### 💡 Derse Dair Öneriler
 
 ##### 📌 Öneri sahibi: Traktör Reis
