@@ -296,11 +296,11 @@
                     }
                 }
             ],
-            "anlatim_puani": 92,
-            "kolaylik_puani": 73,
-            "ogretme_puani": 92,
-            "eglence_puani": 86,
-            "oy_sayisi": 15,
+            "anlatim_puani": 93,
+            "kolaylik_puani": 75,
+            "ogretme_puani": 93,
+            "eglence_puani": 87,
+            "oy_sayisi": 16,
             "hoca_aktif_gorevde_mi": true,
             "yillara_gore_yildiz_sayilari": [
                 {
@@ -312,12 +312,12 @@
                     "oy_sayisi": 11
                 },
                 {
-                    "anlatim_puani": 92,
-                    "kolaylik_puani": 72,
-                    "ogretme_puani": 90,
-                    "eglence_puani": 85,
+                    "anlatim_puani": 94,
+                    "kolaylik_puani": 78,
+                    "ogretme_puani": 92,
+                    "eglence_puani": 88,
                     "yil": 2024,
-                    "oy_sayisi": 4
+                    "oy_sayisi": 5
                 }
             ]
         },
@@ -1333,11 +1333,11 @@
                     }
                 }
             ],
-            "anlatim_puani": 66,
-            "kolaylik_puani": 60,
-            "ogretme_puani": 67,
-            "eglence_puani": 50,
-            "oy_sayisi": 21,
+            "anlatim_puani": 67,
+            "kolaylik_puani": 61,
+            "ogretme_puani": 68,
+            "eglence_puani": 51,
+            "oy_sayisi": 22,
             "yillara_gore_yildiz_sayilari": [
                 {
                     "anlatim_puani": 75,
@@ -1348,12 +1348,12 @@
                     "oy_sayisi": 13
                 },
                 {
-                    "anlatim_puani": 52,
-                    "kolaylik_puani": 48,
-                    "ogretme_puani": 51,
-                    "eglence_puani": 35,
+                    "anlatim_puani": 56,
+                    "kolaylik_puani": 54,
+                    "ogretme_puani": 55,
+                    "eglence_puani": 40,
                     "yil": 2024,
-                    "oy_sayisi": 8
+                    "oy_sayisi": 9
                 }
             ]
         },
@@ -2050,7 +2050,33 @@
             "dersler": [
                 "Araştırma Yöntemleri ve Bilimsel Etik"
             ],
-            "hoca_aktif_gorevde_mi": true
+            "hoca_aktif_gorevde_mi": true,
+            "anlatim_puani": 25,
+            "kolaylik_puani": 90,
+            "ogretme_puani": 25,
+            "eglence_puani": 35,
+            "oy_sayisi": 2,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "anlatim_puani": 25,
+                    "kolaylik_puani": 90,
+                    "ogretme_puani": 25,
+                    "eglence_puani": 35,
+                    "yil": 2024,
+                    "oy_sayisi": 2
+                }
+            ],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Traktör Reis",
+                    "yorum": "Hoca çok heyecanlı. Notlandırması bence adil değil. Derste dikkat çekene düşük puan veriyor.",
+                    "tarih": {
+                        "yil": 2024,
+                        "ay": 6,
+                        "gun": 2
+                    }
+                }
+            ]
         }
     ],
     "bolum_adi": "Hocalar",
