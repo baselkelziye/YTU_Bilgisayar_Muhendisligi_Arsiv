@@ -1,0 +1,32 @@
+addi x6, x0, 40 /02800313
+addi x5, x0, 20 / 01400293
+addi x4, x0, 20 /01400213
+beq x5,x6,60/02628863 //02530E63 
+sub x2, x5, x4 /40428133
+addi x9, x0, 160 / 0a000493
+add x2,x2,x2 /00210133
+add x2,x2,x2 /00210133 (slli x2, x2, 2)
+add x3,x5,x5 /005281b3
+add x3,x3,x3 /003181b3 (slli x3, x5, 2)
+lw x8, 0(x2) /00012403
+lw x7,0(x3) /0001a383
+add x7,x7,x7 /007383b3
+add x7,x7,x7 /007383b3 (slli x7,x7,2)
+add x9,x9,x7 /007484b3
+sw x8,0(x9) /0084a023
+addi x5, x5,1 / 00128293
+JAL x0,-56  /fc9ff06f
+addi x6, x0, 160 / 0a000313
+addi x4, x0, 240 /0f000213
+beq x4,x6,12 /00430C63
+lw x3,0(x6) /00032183
+addi x6,x6,4 /00430313
+jal x0,-12 /ff5ff06f
+
+
+
+X5 ve x6 for döngüleri için, x5 devamlı artırılarak x6 ile kıyaslanır
+x4 20 yi tutmak için subi olmadığından 20 bu şekilde çıkarıldı
+x2 arr a erişirken x3 counta erişmektedir.
+x8 arrdan okunan değeri, x7 count dizisinden okunan değeri tutmaktadır
+x9 result içinde dönerek her seferinde sıfırlanır ve count*4 kadar arttırılarak doğru hücreye veriyi koyar
