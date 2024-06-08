@@ -930,6 +930,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Veri İletişimi ve Bilgisayar Ağları 
   - 🏷️ **Ders Tipi:** Zorunlu
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Teradata_**: klasik FÇ dersidir bilerek biraz anlatmadığını sorar sınavda ortalamanın yüksek olmasını istemediğinden ama dersine giren 50 üzeri ortalama garantiler ezber bir ders olduğundan. Projesi de basit uğraştırıcı değil. ℹ️ Yorum **06.2024** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
