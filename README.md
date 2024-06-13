@@ -3196,6 +3196,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Yusuf Enes Kurt</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/yusuf-enes-kurt/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Zehra Aksoy</i></b> </h6>
+<p align='center'><a href='https://www.linkedin.com/in/zehra-aksoy-124a01174'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Şehmus Yakut</i></b> </h6>
 <p align='center'><a href='https://github.com/SehmusYakut'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sehmus-yakut/'><b>LinkedIn Profili</b></a></p>
 
