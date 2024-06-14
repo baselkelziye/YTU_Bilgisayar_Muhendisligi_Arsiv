@@ -7,7 +7,7 @@
 
 **Projeyi Tavsiye Eder Misin?:** Evet
 
-**Hocayı Tavsiye Eder Misin?:** ?
+**Hocayı Tavsiye Eder Misin?:** Evet
 
 ## Projenin Konusu
 Proje, yapay zeka ve makine öğrenimi ile ilgilidir. Modellerin eğitiminde metin ve emoji çiftleri kullanılarak performans karşılaştırması yapılmıştır. Basit manada birkaç tane modeli, metin (tweet) - emoji çiftleriyle eğitip modellerin performanslarını kıyaslamak üzerinedir. Örneğin, `Bugün hava çok güzel 🌬️` gibi çiftler kullanılmıştır.
