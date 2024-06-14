@@ -21,7 +21,7 @@ Proje hocanın verdiği 9 tane ana başlık arasından bir başlık seçilerek, 
 - Community Detection Algorithms
 - Parallel and Distributed Graph Algorithms 
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Sunum + Rapor** %40 (genel ağırlık etkisi)
 
 ## Proje Süreci

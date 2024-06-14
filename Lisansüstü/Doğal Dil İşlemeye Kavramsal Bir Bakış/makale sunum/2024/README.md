@@ -13,7 +13,7 @@
 ## Proje Tanımı
 Bir makale seçilerek makale hakkında sunum + rapor oluşturma.
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Sunum + Rapor:** %30 (genel ağırlık etkisi)
 
 ## Proje Süreci

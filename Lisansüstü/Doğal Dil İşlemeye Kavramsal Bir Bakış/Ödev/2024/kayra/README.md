@@ -4,7 +4,7 @@
 * **Kişi Sayısı:** 1
 * **Rapor Notu:** 100
 
-## Projede Neler Yapıldı
+## Ödevde Neler Yapıldı
 * REGEX yazıldı.
 * Rapor oluşturuldu.
 * Rapor yüklendi.

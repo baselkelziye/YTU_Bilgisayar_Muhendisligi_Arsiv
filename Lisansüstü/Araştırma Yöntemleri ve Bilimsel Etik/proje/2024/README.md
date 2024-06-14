@@ -14,7 +14,7 @@
 Bu proje, TÜBİTAK 1001 proje teklif raporunun doldurulmasını ve sunulmasını kapsamaktadır. Öğrencilerden, belirledikleri bir konuda ayrıntılı bir TÜBİTAK 1001 proje teklif raporu hazırlamaları ve bu raporu sözlü olarak sunmaları istenmiştir.
 
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Rapor:** %30 (genel ağırlık etkisi)
 * **Sunum:** %30 (genel ağırlık etkisi)
 
