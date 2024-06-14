@@ -2,7 +2,7 @@
 
 ## Ders Bilgileri
 **Ders Adı:** Doğal Dil İşlemeye Giriş
-**Dersi Veren Hoca:** Banu Diri
+**Dersi Veren Hoca(lar):** Banu Diri
 **Ders Dönemi:** 2023-2024 Güz Dönemi  
 
 ## Not Bilgileri
