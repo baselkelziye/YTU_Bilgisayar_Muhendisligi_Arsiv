@@ -2,12 +2,16 @@
 
 ## Ders Bilgileri
 **Ders Adı:** Seminer (YL)
+
 **Dersi Veren Hoca:** Hamza Osman İlhan
+
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Proje Bilgileri
 **Proje Kişi Sayısı:** 1 Kişi
+
 **Proje Süresi:** Yaklaşık 2 ay
+
 **Proje Zorluğu:** Orta 
 
 ## Proje Tanımı

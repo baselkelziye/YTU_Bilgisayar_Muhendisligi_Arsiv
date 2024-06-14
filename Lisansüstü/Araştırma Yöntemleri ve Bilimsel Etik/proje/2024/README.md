@@ -2,12 +2,16 @@
 
 ## Ders Bilgileri
 **Ders Adı:** Araştırma Yöntemleri ve Bilimsel Etik
+
 **Dersi Veren Hoca:** Ayşe Dalgalı  
+
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Proje Bilgileri
 **Proje Kişi Sayısı:** 5 Kişi (Duruma Göre 5 ve kişiyi de hoca kabul etti)
+
 **Proje Süresi:** Yaklaşık 2 ay
+
 **Proje Zorluğu:** Orta 
 
 ## Proje Tanımı
