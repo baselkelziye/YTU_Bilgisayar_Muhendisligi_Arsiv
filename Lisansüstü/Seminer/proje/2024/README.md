@@ -1,16 +1,25 @@
-# Dersi veren hocalar
-Hamza Osman İlhan
-# Ders tarihi
-Bu ders 2023-2024 Eğitim Öğretim Yılı Bahar Dönemi'nde verilmiştir.
-# Bilgi
-* Vize-Final hiçbir şey yok. Sadece sunum ve raporu var. 
-* Harf notu olmadığı için geçtin ya da geçmedin bilgisini obs'ye işliyorlar.
-* Yoklama var %50 yüz yüzede %50
-* 3. Haftadan itibaren sunumlar başladı. 
-* Rapor(25 sayfa) ve sunum
-* Konuyu biz seçcez form var
-* Enstitü sayfasında seminerle alakalı bölümde ayrıntı var.
-* Danışman olmak zorunda değil
-* Çok önemli formu erken doldur (ne kadar erken doldurursan o kadar geç sunarsın ve slaytı hazırlamaya o kadar vaktin olur)
-* En az 3 makaleye baksak iyi olur 
-* Sınav yok
+# 2023-2024 Bahar Dönemi
+
+## Ders Bilgileri
+**Ders Adı:** Seminer (YL)
+**Dersi Veren Hoca:** Hamza Osman İlhan
+**Ders Dönemi:** 2023-2024 Bahar Dönemi  
+
+## Proje Bilgileri
+**Proje Kişi Sayısı:** 1 Kişi
+**Proje Süresi:** Yaklaşık 2 ay
+**Proje Zorluğu:** Orta 
+
+## Proje Tanımı
+Bir konu seçilerek o konuda en az 3 makale taranarak sunum + raport oluşturma.
+
+## Nota Dağılımı
+* **Rapor:** %50 (genel ağırlık etkisi)
+* **Sunum:** %50 (genel ağırlık etkisi)
+
+## Proje Süreci
+1. **Proje Konusu ve Sunum Tarihi Seçimi:** Hocanın verdiği excel üzerinden boş olan bir tarihe proje adını yazdık. Önce yazan istediği tarihi kaptı.
+1. **Rapor Yazımı:** Tez formatına uygun minimum 25 sayfa rapor yazıldı. (minimum 3 makale tarandı)
+1. **Sunum Hazırlama:** Konuyla alakalı sunum hazırlandı
+1. **Sunum:** Hazırlanan sunum sınıfta sunulmuştur. (yüz yüze)
+1. **Rapor:** Hazırlanan rapor final haftasında yüklenmiştir.
