@@ -13,7 +13,7 @@
 ## Proje Tanımı
 Doğal dil işlemeyle alakalı bir ürün ortaya koyma.
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Sunum + Rapor:** %40 (genel ağırlık etkisi)
 
 ## Proje Süreci

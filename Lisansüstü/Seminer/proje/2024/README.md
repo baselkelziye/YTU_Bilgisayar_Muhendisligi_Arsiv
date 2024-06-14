@@ -11,9 +11,9 @@
 **Proje Zorluğu:** Orta 
 
 ## Proje Tanımı
-Bir konu seçilerek o konuda en az 3 makale taranarak sunum + raport oluşturma.
+Bir konu seçilerek o konuda en az 3 makale taranarak sunum + rapor oluşturma.
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Rapor:** %50 (genel ağırlık etkisi)
 * **Sunum:** %50 (genel ağırlık etkisi)
 
