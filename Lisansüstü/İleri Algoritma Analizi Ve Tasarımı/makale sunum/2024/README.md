@@ -2,12 +2,16 @@
 
 ## Ders Bilgileri
 **Ders Adı:** İleri Algoritma Analizi ve Tasarımı
+
 **Dersi Veren Hoca:** Hafiza İrem Türkmen 
+
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Proje Bilgileri
 **Proje Kişi Sayısı:** 1 Kişi
+
 **Proje Süresi:** Yaklaşık 2 ay
+
 **Proje Zorluğu:** Orta
 
 ## Proje Tanımı

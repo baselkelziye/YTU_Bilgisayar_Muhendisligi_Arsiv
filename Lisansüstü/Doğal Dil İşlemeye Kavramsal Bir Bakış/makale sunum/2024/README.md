@@ -2,12 +2,16 @@
 
 ## Ders Bilgileri
 **Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
+
 **Dersi Veren Hoca:** Banu Diri
+
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Proje Bilgileri
 **Proje Kişi Sayısı:** 1 Kişi
+
 **Proje Süresi:** Yaklaşık 2 ay
+
 **Proje Zorluğu:** Orta 
 
 ## Proje Tanımı

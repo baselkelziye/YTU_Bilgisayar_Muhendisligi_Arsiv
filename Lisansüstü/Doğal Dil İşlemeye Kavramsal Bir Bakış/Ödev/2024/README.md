@@ -2,18 +2,22 @@
 
 ## Ders Bilgileri
 **Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
+
 **Dersi Veren Hoca:** Banu Diri
+
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Ödev Bilgileri
 **Ödev Kişi Sayısı:** 1 Kişi
+
 **Ödev Süresi:** Yaklaşık 2 hafta
+
 **Ödev Zorluğu:** Kolay 
 
 ## Ödev Tanımı
 Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
 
-## Nota Dağılımı
+## Not Dağılımı
 * **Rapor:** %10 (genel ağırlık etkisi)
 
 ## Ödev Süreci
