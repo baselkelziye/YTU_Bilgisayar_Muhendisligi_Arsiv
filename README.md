@@ -142,7 +142,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💡 **Final**
   - 📘 **S: Final Nedir?** **C:** Final, dersin içeriğini ölçmek ve öğrencilerin kapasitesini değerlendirmek için dönem sonunda yapılan bir sınavdır. Genelde işlenen tüm konuları kapsar.
   - 📘 **S: Final Kaç Tane Olur?** **C:** Her ders için bir final sınavı yapılır. Bazı hocalar Final yerine proje verebilir.
-  - 📘 **S: Finaller Ne Zaman Olur?** **C:** Finaller 15. hafta, ders dönemi bittikten sonra olur.
+  - 📘 **S: Finaller Ne Zaman Olur?** **C:** Finaller 16. hafta, ders dönemi bittikten sonra olur.
   - 📘 **S: Final Haftasında Ders Olur mu?** **C:** Final haftasında ders olmaz, sadece sınavlar yapılır. Zaten ders dönemi bitmiştir.
   - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Hocalar finallerde genellikle dönem boyunca işlenen konuları kapsayan sorular sorarlar ve önceki senelerdeki sorulara benzer veya aynı soruları kullanırlar.
   - 📘 **Tavsiye:** Aman ha büte kalmayın. Eğer yeterince kişi geçmiş olursa zorlu bir büt sizi bekliyor olacak.
