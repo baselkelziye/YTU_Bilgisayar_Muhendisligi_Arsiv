@@ -16,6 +16,7 @@ import json
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon, QGuiApplication
 import re
+from helpers.yukari_asagi_dugme_dizilimi import YukariAsagiDugmeDizilimi
 
 
 class GirisEkleGuncelleWindow(YazarinNotlariWindow):
@@ -67,30 +68,17 @@ class GirisEkleGuncelleWindow(YazarinNotlariWindow):
             )  # Not sayısını etikette güncelle
 
             for idx, not_ in enumerate(self.data[ICINDEKILER]):
-                btn_layout = QHBoxLayout()
-                up_down_btn_layout = QVBoxLayout()
-                btn = QPushButton(
-                    f"İçindekiler {idx + 1}: {kisaltMetin(not_)}", self.scrollWidget
-                )  # İlk 30 karakteri göster
-                btn.setToolTip(not_)  # Tam metni araç ipucu olarak ekle
-                btn.clicked.connect(lambda checked, i=idx: self.notDuzenle(i))
-                sizePolicy = QSizePolicy(
-                    QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred
+                ana_fonksiyon = lambda checked, i=idx: self.notDuzenle(i)
+                buton_aciklama = f"İçindekiler {idx + 1}: {kisaltMetin(not_)}"
+                yukari_fonksiyon = lambda checked, i=idx: self.notTasi(i, i - 1)
+                asagi_fonksiyon = lambda checked, i=idx: self.notTasi(i, i + 1)
+                btn_layout = YukariAsagiDugmeDizilimi(
+                    ana_fonksiyon,
+                    yukari_fonksiyon,
+                    asagi_fonksiyon,
+                    buton_aciklama,
+                    not_,
                 )
-                btn.setSizePolicy(sizePolicy)
-                btn_layout.addWidget(btn)
-                # Yukarı Taşı butonu
-                upBtn = QPushButton("Yukarı çıkar", self.scrollWidget)
-                upBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i - 1))
-                upBtn.setStyleSheet(YUKARI_BUTON_STILI)
-                up_down_btn_layout.addWidget(upBtn)
-
-                # Aşağı Taşı butonu
-                downBtn = QPushButton("Aşağı indir", self.scrollWidget)
-                downBtn.setStyleSheet(ASAGI_BUTON_STILI)
-                downBtn.clicked.connect(lambda checked, i=idx: self.notTasi(i, i + 1))
-                up_down_btn_layout.addWidget(downBtn)
-                btn_layout.addLayout(up_down_btn_layout)
                 self.notlarLayout.addLayout(btn_layout)
         except Exception as e:
             QMessageBox.critical(self, "Hata", f"Dosya okunurken bir hata oluştu: {e}")

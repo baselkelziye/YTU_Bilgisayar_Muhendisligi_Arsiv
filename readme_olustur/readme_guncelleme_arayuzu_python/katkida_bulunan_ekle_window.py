@@ -12,7 +12,7 @@ from PyQt6.QtWidgets import (
     QSizePolicy,
 )
 from threadler import KatkiEkleThread
-from progress_dialog import CustomProgressDialog
+from helpers.progress_dialog_helper import CustomProgressDialog
 from degiskenler import *
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt
