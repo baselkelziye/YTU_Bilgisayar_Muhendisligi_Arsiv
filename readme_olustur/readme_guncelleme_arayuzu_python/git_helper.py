@@ -26,7 +26,10 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import Qt, QTimer, QSize
 import textwrap
-from progress_dialog import CustomProgressDialogWithCancel, CustomProgressDialog
+from helpers.progress_dialog_helper import (
+    CustomProgressDialogWithCancel,
+    CustomProgressDialog,
+)
 from threadler import CMDScriptRunnerThread
 import difflib
 import os
@@ -487,7 +490,6 @@ class FileItemWidget(QWidget):
             "Başarılı!!!",
             f"{self.file_name} dosyasının tüm değişiklikleri orjinal haline getirildi...",
         )
-
 
     def onButtonClick(self, git_komutunu_uygula=True):
         if self.is_staged:

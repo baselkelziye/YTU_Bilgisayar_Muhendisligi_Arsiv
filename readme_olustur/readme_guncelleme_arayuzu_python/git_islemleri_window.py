@@ -3,7 +3,7 @@ import os
 import textwrap
 from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox, QApplication
 from degiskenler import *
-from progress_dialog import CustomProgressDialogWithCancel
+from helpers.progress_dialog_helper import CustomProgressDialogWithCancel
 from threadler import CMDScriptRunnerThread
 from PyQt6.QtGui import QIcon
 from hoca_ve_ders_adlari_window import HocaDersAdlariWindow

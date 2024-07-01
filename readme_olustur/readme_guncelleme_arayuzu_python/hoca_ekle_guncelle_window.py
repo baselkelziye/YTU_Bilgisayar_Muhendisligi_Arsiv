@@ -18,7 +18,7 @@ from PyQt6.QtWidgets import (
 )
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from threadler import HocaKaydetThread
-from progress_dialog import CustomProgressDialog
+from helpers.progress_dialog_helper import CustomProgressDialog
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
 from PyQt6.QtGui import QIcon
@@ -230,12 +230,14 @@ class HocaEkleGuncelleWindow(QDialog):
             self.hocaSayisiLabel.setText(
                 f"Toplam {hoca_sayisi} hoca"
             )  # Hoca sayısını etikette güncelle
+
             def turkce_kucult(text):
                 # Unicode normalizasyonu
-                text = unicodedata.normalize('NFKD', text)
+                text = unicodedata.normalize("NFKD", text)
                 # Türkçe İ ve ı harflerinin doğru dönüşümü için özel durum
                 text = text.lower().strip()
                 return text
+
             def unvan_ve_isim_ayir(hoca):
                 # Ünvanları ve sıralama önceliklerini tanımla
                 ad = hoca[AD]
@@ -372,7 +374,10 @@ class HocaDuzenlemeWindow(QDialog):
         # Diğer bilgiler ve dersler buraya eklenebilir
         self.dersler = self.dersleriYukle()
         # Derslerin sadece AD alanını al ve adlarına göre sırala
-        self.dersler = sorted([ders[AD] for ders in self.dersler], key=lambda x: unicodedata.normalize(NFKD, x))
+        self.dersler = sorted(
+            [ders[AD] for ders in self.dersler],
+            key=lambda x: unicodedata.normalize(NFKD, x),
+        )
         self.hocanin_verdig_dersler_label = QLabel("Hocanın Verdiği Dersler")
         self.hocanin_verdig_dersler_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.layout.addWidget(self.hocanin_verdig_dersler_label)
