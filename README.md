@@ -3189,6 +3189,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Muhammed Kayra Bulut</i></b> </h6>
 <p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
 
+<h6 align='center'> <b><i>Osman Emre Yılmaz</i></b> </h6>
+<p align='center'><a href='https://github.com/OsmanEmreYilmaz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/osman-emre-/'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Rameş Aliyev</i></b> </h6>
 <p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramesaliyev/'><b>LinkedIn Profili</b></a></p>
 
