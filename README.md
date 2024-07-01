@@ -174,6 +174,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Vize Haftasında Ders Olur mu?** **C:** Dersin vize haftasında vizesi olmadığı zaman, büyük ihtimalle ders vardır, hoca aksini belirtmedikçe.
   - 📘 **S: İkinci Vize Her Derste Olur mu?** **C:** İkinci vize her derste olmaz. İkinci vizesi olmayan dersin 2. vize haftasında konusu işlenir, hoca aksini belirtmedikçe.
   - 📘 **S: Hocalar Nasıl Sorular Sorar?** **C:** Hocalar genellikle önceki senelerdeki sorulara benzer veya aynı soruları sorarlar.
+- 💡 **Yaz Okulu**
+  - 📘 **S: Yaz okulu nedir?** **C:** Yaz okulu, **bahar dönemi**nden sonraki dönem olan **yaz dönemi**nin genelde kullanılan ismidir.
+  - 📘 **S: Yaz okulunda hangi dersleri alabilirim?** **C:** Açılan tüm dersleri alabilirsiniz. Almak istediğiniz dersin alttan olmak gibi bir zorunluluğu yok. Yani bir ya da daha sonraki dönemlerden de ders alabilirsiniz. Aynı zamanda önceden alıp geçtiğiniz bir dersi de not yükseltmek için alabilirsiniz. Yani aslında normal bir dönem gibi.
+  - 📘 **S: Yaz okulu süresi ne kadar?** **C:** Süresi 5 hafta. Her hafta 3 katı ders işleniyor ve bu şekilde normal dönem haftası kadar ders işlenmiş oluyor.
+  - 📘 **S: Yaz okulunda ne kadar ders alabilirim?** **C:** **9 kredi**yi geçmeyecek kadar ders alabilirsiniz.
+  - 📘 **S: Yaz okulunda nölüm derslerinden hangileri açılıyor?** **C:** Neredeyse hiçbir bölüm dersi açılmıyor. Bundan dolayı **bölüm dersleri** özelinde plan yapmaktansa, **servis dersleri** ya da **seçmeli dersler** için plan yapmak daha mantıklı olacaktır.
+  - 📘 **S: Yaz okulu alırsam staj yapabilir miyim?** **C:** Normal dönemdeki gibi, dersinizin olmadığı günler staj yapabilirsiniz. Ders olan günlerde staj yapamazsınız.
+  - 📘 **S: Yaz okulunda geçtiğim bir dersten kalırsam ne olur?** **C:** Tebrikler. Artık kaldınız. Tekrar almanız gerekir.
 </details>
 
 <details>
