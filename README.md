@@ -157,6 +157,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Hangi Sınavların Mazereti Vardır?** **C:** Vize'nin mazeret sınavı vardır. Eğer **Final**'e katılamazsanız zaten büte girersiniz. Lablar vb. içinse hocanın insiyatifine kalmış.
   - 📘 **S: Mazeret Sınavı İçin Nasıl Başvurulur?** **C:** Bilmiyorum bilen birine sorunca güncellerim.
   - 📘 **Tavsiye:** Kalmamak daha iyi çünkü genelde mazeret sınavı, asıl sınava göre daha kapsayıcı ve zor oluyor. Aynı zamanda sınav klasikse sınava giren öğrenci sayısı çok az olduğu için hoca sınavı vizeye göre daha ayrıntılı okur. Bu da aynı kağıdı daha üstünkörü okunan bir sınavda verseniz daha yüksek puan alacaksınız anlamına gelir.
+- 💡 **OBS**
+  - 📘 **S: OBS nedir?** **C:** OBS genel olarak notlarla alakalı durumları takip ettiğimiz ortamdır. Bunun yanında her dönem başındaki ders seçimi de buradan yapılmaktadır.
+  - 📘 **S: OBS'de nelere erişebiliriz?** **C:** Halihazırda aldığımız derslerin notlarına, kendimizin geçmiş dönem ortalamalarına ve anlık ortalamasına vb. erişilebilir.
+- 💡 **Online Yıldız**
+  - 📘 **S: Online Yıldız nedir?** **C:** Uzaktan derslerin takip edildiği ortamdır. Aynı zamanda hocalar buradaki ders duvarı kısmından duyuru yapabilir ve döküman yükleyebilir.
+  - 📘 **S: Online Yıldız'daki ders kayıtlarına erişilebilir mi?** **C:** Evet, önceki dönemlerde aldığınız derslerin kayıtlarına video ambarı kısmından erişilebilir. Aynı zamanda halihazırda aldığınız derslerin kayıtlarına da online derslere girdiğiniz kısımdan erişebilirsiniz. Geçmişte almadığınız ya da halihazırda almıyor olduğunuz derslerin kayıtlarına erişmek illegal olsa da çoğu kişi bu işlemi yapar.
 - 💡 **Staj**
   - 📘 **S: Staj Nedir?** **C:** Bölümle alakalı herhangi bir şirkette, üniversiteye bildirerek çalışma işlemidir.
   - 📘 **S: Staj Dönem İçi Yapılabilir mi?** **C:** Dönem içi yapılabilir ama haftada en az 2 günün boş olması lazımdır.
