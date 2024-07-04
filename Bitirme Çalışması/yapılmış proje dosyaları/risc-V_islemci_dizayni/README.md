@@ -1,6 +1,10 @@
 # 2022-2023 Güz Dönemi
 
 ## Proje Bilgileri
+**Proje Adı:** RISC-V PROCESSOR DESIGN WITH ADVANCED HARDWARE FEATURES
+
+**Proje Sahibi/Sahipleri** Ahmet Akib Gültekin - Basel Kelziye
+
 **Projeyi Veren Hoca:** Erkan USLU
 
 **Proje Notu:** AA

@@ -1,6 +1,10 @@
 # 2022-2023 Güz Dönemi
 
 ## Proje Bilgileri
+**Proje Adı:** BİR DUYGU ANALİZ YÖNTEMİ OLARAK METİNDEN EMOJİ TAHMİNİ
+
+**Proje Sahibi/Sahipleri** Muhammet Ali Şen - Muhammed Kayra Bulut
+
 **Projeyi Veren Hoca:** Ali Can Karaca
 
 **Proje Notu:** AA
