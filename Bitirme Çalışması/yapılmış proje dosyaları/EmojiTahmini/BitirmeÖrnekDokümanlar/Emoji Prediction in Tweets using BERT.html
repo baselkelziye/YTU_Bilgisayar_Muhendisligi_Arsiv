@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://ar5iv.labs.arxiv.org/html/2307.02054v2 -->
+<html lang="en" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>[2307.02054] Emoji Prediction in Tweets using BERT</title><meta property="og:description" content="In recent years, the use of emojis in social media has increased dramatically, making them an important element in understanding online communication. However, predicting the meaning of emojis in a given text is a chal…">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Emoji Prediction in Tweets using BERT">
+<meta name="twitter:image:src" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta name="twitter:image:alt" content="ar5iv logo">
+<meta property="og:title" content="Emoji Prediction in Tweets using BERT">
+<meta property="og:site_name" content="ar5iv">
+<meta property="og:image" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ar5iv.labs.arxiv.org/html/2307.02054">
+
+<!--Generated on Wed Feb 28 19:20:25 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<script>
+  function detectColorScheme(){
+    var theme="light";
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if(current_theme){
+      if(current_theme == "dark"){
+        theme = "dark";
+      } }
+    else if(!window.matchMedia) { return false; }
+    else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      theme = "dark"; }
+    if (theme=="dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light"); } }
+
+  detectColorScheme();
+
+  function toggleColorScheme(){
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if (current_theme) {
+      if (current_theme == "light") {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+      else {
+        localStorage.setItem("ar5iv_theme", "light"); } }
+    else {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+    detectColorScheme(); }
+</script>
+<link media="all" rel="stylesheet" href="./Emoji Prediction in Tweets using BERT_files/ar5iv-fonts.0.7.9.min.css"><link media="all" rel="stylesheet" href="./Emoji Prediction in Tweets using BERT_files/ar5iv.0.7.9.min.css"><link media="all" rel="stylesheet" href="./Emoji Prediction in Tweets using BERT_files/ar5iv-site.0.2.2.css">
+</head>
+<div><template shadowrootmode="open"><style>.skip-silence-bar{all:initial;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#fff;max-height:25px;background:#293033;border-radius:25px;align-items:center;padding:8px 8px 8px 20px;font-family:Poppins,sans-serif;animation:animate-in-command-bar .5s;display:flex;position:fixed;bottom:1rem;right:1rem}.skip-silence-bar .bar-text{align-items:center;display:flex}.skip-silence-bar .info{text-decoration:underline;color:#565656!important}.skip-silence-bar .speed-setting{display:flex}.skip-silence-bar .speed-setting label{white-space:nowrap;align-items:center;margin-right:5px;display:flex}.skip-silence-bar .slider-setting .setting-info{align-items:center;margin-top:0;display:flex}.skip-silence-bar .slider-setting input{display:none}@keyframes animate-in-command-bar{0%{opacity:0}}.skip-silence-bar-collapsed{color:#fff;width:40px;height:40px;cursor:pointer;background:#293033;border-radius:50%;justify-content:center;align-items:center;animation:animate-in-command-collapsed .5s;display:flex;position:fixed;bottom:1rem;right:1rem}@keyframes animate-in-command-collapsed{0%{opacity:0}}.skip-silence-bar,.skip-silence-bar-collapsed{z-index:100000}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:400;src:url(poppins-devanagari-400-normal.20fc2635.woff2)format("woff2"),url(poppins-all-400-normal.0298587e.woff)format("woff");unicode-range:U+900-97F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:400;src:url(poppins-latin-ext-400-normal.9f87e1a8.woff2)format("woff2"),url(poppins-all-400-normal.0298587e.woff)format("woff");unicode-range:U+100-24F,U+259,U+1E??,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:400;src:url(poppins-latin-400-normal.53f07e8c.woff2)format("woff2"),url(poppins-all-400-normal.0298587e.woff)format("woff");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:600;src:url(poppins-devanagari-600-normal.5b72b0b7.woff2)format("woff2"),url(poppins-all-600-normal.29420735.woff)format("woff");unicode-range:U+900-97F,U+1CD0-1CF6,U+1CF8-1CF9,U+200C-200D,U+20A8,U+20B9,U+25CC,U+A830-A839,U+A8E0-A8FB}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:600;src:url(poppins-latin-ext-600-normal.472ef062.woff2)format("woff2"),url(poppins-all-600-normal.29420735.woff)format("woff");unicode-range:U+100-24F,U+259,U+1E??,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Poppins;font-style:normal;font-display:swap;font-weight:600;src:url(poppins-latin-600-normal.15391d77.woff2)format("woff2"),url(poppins-all-600-normal.29420735.woff)format("woff");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.skip-silence-bar .header{justify-content:center;align-items:center;margin-left:15px;display:flex}.skip-silence-bar{all:initial;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#fff;max-height:25px;background:#293033;border-radius:25px;align-items:center;padding:8px 8px 8px 20px;font-family:Poppins,sans-serif;animation:animate-in-command-bar .5s;display:flex;position:fixed;bottom:1rem;right:1rem}.skip-silence-bar .bar-text{align-items:center;display:flex}.skip-silence-bar .info{text-decoration:underline;color:#565656!important}.skip-silence-bar .speed-setting{display:flex}.skip-silence-bar .speed-setting label{white-space:nowrap;align-items:center;margin-right:5px;display:flex}.skip-silence-bar .slider-setting .setting-info{align-items:center;margin-top:0;display:flex}.skip-silence-bar .slider-setting input{display:none}.skip-silence-bar-collapsed{color:#fff;width:40px;height:40px;cursor:pointer;background:#293033;border-radius:50%;justify-content:center;align-items:center;animation:animate-in-command-collapsed .5s;display:flex;position:fixed;bottom:1rem;right:1rem}.skip-silence-bar,.skip-silence-bar-collapsed{z-index:100000}</style><div id="plasmo-shadow-container" style="z-index: 1; position: absolute;"><div id="plasmo-mount-container" style="display: flex; position: relative; top: 0px; left: 0px;"></div></div></template></div><body class="vsc-initialized">
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Emoji Prediction in Tweets using BERT
+<br class="ltx_break">
+</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><sup id="id1.1.id1" class="ltx_sup"></sup> Muhammad Osama Nusrat
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation"><span id="id2.2.id1" class="ltx_text ltx_font_italic">Department of Computing</span>
+<br class="ltx_break"><span id="id3.3.id2" class="ltx_text ltx_font_italic">Fast Nuces
+<br class="ltx_break"></span>Islamabad, Pakistan 
+<br class="ltx_break">i212169@nu.edu.pk
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><sup id="id4.1.id1" class="ltx_sup"></sup> Zeeshan Habib
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation"><span id="id5.2.id1" class="ltx_text ltx_font_italic">Department of Computing</span>
+<br class="ltx_break"><span id="id6.3.id2" class="ltx_text ltx_font_italic">Fast Nuces
+<br class="ltx_break"></span>Islamabad, Pakistan 
+<br class="ltx_break">i212193@nu.edu.pk
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><sup id="id7.1.id1" class="ltx_sup"></sup> Mehreen Alam
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation"><span id="id8.2.id1" class="ltx_text ltx_font_italic">Department of Computing</span>
+<br class="ltx_break"><span id="id9.3.id2" class="ltx_text ltx_font_italic">Fast Nuces
+<br class="ltx_break"></span>Islamabad, Pakistan 
+<br class="ltx_break">mehreen.alam@nu.edu.pk
+</span></span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><sup id="id10.1.id1" class="ltx_sup"></sup> Saad Ahmed Jamal
+</span><span class="ltx_author_notes">
+<span class="ltx_contact ltx_role_affiliation"><span id="id11.2.id1" class="ltx_text ltx_font_italic">Department of Computer Science</span>
+<br class="ltx_break"><span id="id12.3.id2" class="ltx_text ltx_font_italic">Université Bretagne Sud
+<br class="ltx_break"></span>Vannes, France 
+<br class="ltx_break">jamal.e2107235@etud.univ-ubs.fr
+
+</span></span></span>
+</div>
+
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p id="id13.id1" class="ltx_p">In recent years, the use of emojis in social media has increased dramatically, making them an important element in understanding online communication. However, predicting the meaning of emojis in a given text is a challenging task due to their ambiguous nature. In this study, we propose a transformer-based approach for emoji prediction using BERT, a widely-used pre-trained language model. We fine-tuned BERT on a large corpus of text (tweets) containing both text and emojis to predict the most appropriate emoji for a given text. Our experimental results demonstrate that our approach outperforms several state-of-the-art models in predicting emojis with an accuracy of over 75 percent. This work has potential applications in natural language processing, sentiment analysis, and social media marketing.</p>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">I </span><span id="S1.1.1" class="ltx_text ltx_font_smallcaps">Introduction</span>
+</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p id="S1.p1.1" class="ltx_p">In the past few years, social media has emerged as a prolific source of data for numerous research fields, with natural language processing (NLP) being one of them. As a result of the widespread use of mobile devices and the internet, social media platforms such as Twitter have become a popular means for people to express their emotions, opinions, and sentiments on various topics. In this context, emojis have become a popular way of conveying emotions and sentiments in text-based communication. Emojis are small pictograms that represent emotions, objects, or concepts and are widely used on social media platforms.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p id="S1.p2.1" class="ltx_p">Emoji prediction is a task that involves predicting the most appropriate emoji to use in a given textual conversation based on the context of the conversation. This task is essential in improving the effectiveness of communication on social media platforms, especially in situations where the text is ambiguous, and the use of emojis can add clarity to the message.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p id="S1.p3.1" class="ltx_p">To address the challenge of emoji prediction, recent studies have explored the use of transformer models, particularly the Bidirectional Encoder Representations from Transformers (BERT) model. BERT is a powerful pre-trained transformer model that has shown state-of-the-art performance in a wide range of natural language processing tasks.</p>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p id="S1.p4.1" class="ltx_p">The use of BERT in emoji prediction involves fine-tuning the model on a large dataset of tweets or other social media posts to learn the contextual relationships between the text and the appropriate emojis. The fine-tuned model can then be used to predict the most appropriate emoji to use in a given context.</p>
+</div>
+<div id="S1.p5" class="ltx_para">
+<p id="S1.p5.1" class="ltx_p">Despite the promising results reported by recent studies on emoji prediction using transformer models, there are still some challenges that need to be addressed. One of the challenges is the lack of large, diverse datasets for training and evaluating the models. Another challenge is the diversity of emojis used in different languages and cultures, which requires the development of language-specific and culture-specific models.</p>
+</div>
+<div id="S1.p6" class="ltx_para">
+<p id="S1.p6.1" class="ltx_p">In this context, this study explores the use of BERT for emoji prediction in a dataset of tweets. We fine-tune the BERT model on a large dataset of tweets and evaluated its performance on a test set of tweets. We also examined the impact of different factors, such as the size of the training data and the number of emojis, on the performance of the model. The findings of this study provided insights into the effectiveness of transformer models for emoji prediction and can contribute to the development of more accurate and efficient emoji prediction models for social media platforms.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">II </span><span id="S2.1.1" class="ltx_text ltx_font_smallcaps">Literature Review</span>
+</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p id="S2.p1.1" class="ltx_p">The authors present a groundbreaking approach to pre-train language models that that has since become one of the most influential contributions to NLP in recent years <cite class="ltx_cite ltx_citemacro_citep">(Devlin&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>., <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib2" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2018</a>)</cite> . They proposed an approach called BERT, Bidirectional Encoder Representations from Transformers, is a deep learning architecture that uses a bidirectional transformer network to pre-train a language model on a large amount of unlabelled datasets. The model is then fine-tuned on some NLP tasks like text classification or question answering. They have described their approach to pretraining BERT, including the use of a novel masked language modeling objective that randomly masks tokens in the input sequence and then model predict the masked tokens based on the surrounding context. This objective allows BERT to capture both local and global context in the input sequence, resulting in a highly contextualized representation of language. The authors also describe their use of a next-sentence prediction objective, which helps BERT capture the relationship between two sentences in a document.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p id="S2.p2.1" class="ltx_p">The author argue that language models, which are traditionally trained to predict the next word in a sentence or the likelihood of a sentence given a context, can be viewed as multitask learners that can perform a variety of tasks without explicit supervision <cite class="ltx_cite ltx_citemacro_citep">(Radford&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>., <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib7" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2019</a>)</cite>. They propose a method for training language models on a diverse set of tasks, including sentiment analysis, question answering, and language translation, without any labelled data. The model is trained on a new dataset of millions of webpages called WebText. The approach, called Unsupervised Multi-task Learning (UMT), manipulating the vast amounts of unannotated text available on the internet to train a single neural network on multiple tasks simultaneously. By sharing the parameters across tasks, the model is able to learn from the common underlying structure of language and perform well on a range of tasks. The authors also introduce a new benchmark, called the General Language Understanding Evaluation (GLUE), which measures the performance of language models on a suite of diverse NLP tasks. Using UMT, they achieve state-of-the-art results on the GLUE benchmark, outperforming previous approaches that relied on supervised learning.</p>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p id="S2.p3.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Wei&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib9" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2021</a>)</cite> proposed a new approach to enhance the zero-shot learning ability of language models by combining the pre-training and fine-tuning paradigm with prompting. Their method involves fine-tuning a pre-trained model with 137 billion parameters on a range of datasets described through instructions. By evaluating the model’s performance on previously unseen tasks, the authors demonstrated that their instruction-tuned model, FLAN (Finetuned Language Net), outperformed its untuned counterpart by a significant margin in a zero-shot setting. Additionally, FLAN surpassed GPT-3 in zero-shot performance on 20 out of 25 datasets evaluated, indicating its superior performance.</p>
+</div>
+<div id="S2.p4" class="ltx_para">
+<p id="S2.p4.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Felbo&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib3" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2017</a>)</cite> proposed a novel sentiment, emotion, and sarcasm detection approach using millions of emoji occurrences as a weakly supervised learning signal. The authors introduce the DeepMoji model, a deep learning architecture based on long short-term memory (LSTM) networks. The model is pre-trained on a large dataset containing 1.2 billion tweets with emoji, allowing it to learn semantic representations of text from these noisy labels. This pre-training approach helps learn effective representations for downstream tasks such as sentiment analysis, emotion recognition, and sarcasm detection. The DeepMoji model demonstrates state-of-the-art performance on several benchmarks, outperforming existing methods. This work highlights the potential of using emojis as a weak supervision signal to learn domain-agnostic representations that can be effectively used for various natural language processing tasks.</p>
+</div>
+<div id="S2.p5" class="ltx_para">
+<p id="S2.p5.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Ma&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib5" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2020</a>)</cite> build upon the work of <cite class="ltx_cite ltx_citemacro_citet">Felbo&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib3" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2017</a>)</cite> by exploring the problem of emoji prediction more comprehensively. The authors introduce several extensions to the DeepMoji model, such as incorporating attention mechanisms, leveraging tweet metadata, and utilizing pre-trained language models like BERT. The authors also present a new benchmark dataset called ’EmoBank’, which is collected from Twitter and contains 4.7 million tweets with emoji. EmoBank is designed to evaluate models on various emoji prediction tasks, such as predicting the presence, absence, and type of emojis in a given text. The extended model shows improved performance compared to the original DeepMoji model and other baselines, demonstrating the effectiveness of the proposed extensions.</p>
+</div>
+<div id="S2.p6" class="ltx_para">
+<p id="S2.p6.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Wolf&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib10" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2019</a>)</cite> proposed a novel neural network architecture called the Transformer, which relies solely on self-attention mechanisms, discarding the need for traditional recurrent or convolutional layers. The authors argue that attention mechanisms can model long-range dependencies and parallel computation more effectively than LSTMs or CNNs, thus addressing some of the limitations of these traditional architectures. The Transformer model achieves state-of-the-art results on various natural language processing tasks, including machine translation and language modeling. This work has significantly impacted the field, inspiring a range of follow-up research and developing powerful pre-trained language models such as BERT and GPT-2.</p>
+</div>
+<div id="S2.p7" class="ltx_para">
+<p id="S2.p7.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Brown&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib1" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2020</a>)</cite> introduced a new language model called GPT 3 which was an advancement to GPT 2 as it solved some of the problems which were addressed in the previous language model. GPT-2 required rigorous fine tuning to do a specific task. GPT-3 solved this problem as it does not require a lot of fine tuning to do a particular task such as in language translation, GPT 3 can translate a sentence from one language to another with just a few samples whereas in GPT-2 we had to provide relatively more samples so that the model perform well. Similarly GPT-3 outperforms GPT-2 in question answering, filling missing words in a sentence, using new words in the sentence which are not present in the vocabulary, doing calculations and many other tasks. We can confidently say GPT-3 is a better short learner than GPT-2. By few shot, we mean the ability to learn with few examples. The reason for the success of GPT-3 is that it has more parameters than GPT-2. GPT-3 contains 175 billion massive parameters compared to GPT-2 which has only 1.5 billion parameters. GPT-3 has brought ease in many NLP domains where we had very less labeled data and it was nearly impossible to get results with such small labeled examples. GPT-3 has made it solvable now. For e.g we can build a chatbot for a travel agency with very few examples with GPT-3 whereas previously, we required huge amounts of labeled data to do the same task. The author also highlighted some limitations of the GPT-3 model which included that GPT-3 does not understand the context of the document properly for e.g if we ask it to write a summary of a scientific paper it will fail to capture all important points and write a summary. Moreover if we ask it to generate a response for a complaint it may output a random response which may not address the user’s problem. GPT-3 also has another limitation as it generates biased outputs because it is trained on a data which is more male biased. For e.g it may write negatively about woman such as woman are not suitable for leadership positions and woman cannot drive safe etc which is not okay.</p>
+</div>
+<div id="S2.p8" class="ltx_para">
+<p id="S2.p8.1" class="ltx_p"><cite class="ltx_cite ltx_citemacro_citet">Vaswani&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib8" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2017</a>)</cite> discussed how transformers have revolutionized natural language processing tasks. Transformers have enabled machines to generate human-like content. Transformer architecture was introduced in 2017 in the famous paper ’ATTENTION IS ALL YOU NEED’. It solved several previous issues addressed in RNN, such as bottleneck problems and long-range dependency issue problems. RNNs cannot capture information when sentences are long due to vanishing gradient issues. Transformer solved this problem because it is based on a self-attention mechanism focusing on the sentence’s essential parts. Moreover, the transformer uses multi-head attention, which means it consists of multiple attention mechanism which helps to focus on multiple parts of the input sentence in parallel. Each head focuses on different parts of the input sentence. One head can focus on the sentence’s subject, the other on an object, and the third on the object. In multi-head attention, instead of a single context vector, multiple context vectors are generated, which contain the input sentence information, which results in a better performance than when we use a single attention mechanism. Moreover, transformers are faster than recurrent neural networks as they can handle parallel processing. We can use transformers to do many tasks by fine-tuning them on small datasets, as it has been trained on large datasets. Transformers use an attention mechanism which makes it great for summarizing articles and research papers because it focuses on essential parts of the documents and then gathers all those critical points to generate a summary. The author then introduced a library called TRANSFORMERS which is an open-source library that students and scientists can use to do NLP tasks more efficiently. Primary purpose of building this library was to provide ease to the people. Instead of writing code from scratch, they can use this library which would save time and energy. This library can be used to do multiple NLP tasks such as sentiment analysis, text classification, question answering, and language generation. The library contains many pre-trained models, such as BERT. GPT-2. RoBERTa, DistilBERT, T5 etc. These models have been trained on a massive amount of text data, such as Wikipedia, and these pre-trained models can then be fine-tuned to our task. means These pretrained models requires less training time and fewer data instead of training from scratch.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">III </span><span id="S3.1.1" class="ltx_text ltx_font_smallcaps">Methodology</span>
+</h2>
+
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS1.5.1.1" class="ltx_text">III-A</span> </span><span id="S3.SS1.6.2" class="ltx_text ltx_font_italic">Pipeline</span>
+</h3>
+
+<div id="S3.SS1.p1" class="ltx_para">
+<p id="S3.SS1.p1.1" class="ltx_p">A methodological outline, the process for developing the natural language processing (NLP) model using a
+neural network is shown in figure <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#S3.F1" title="Figure 1 ‣ III-A Pipeline ‣ III Methodology ‣ Emoji Prediction in Tweets using BERT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>. The model was built using keras python library.
+In the following, we will go through each step:</p>
+</div>
+<figure id="S3.F1" class="ltx_figure"><img src="./Emoji Prediction in Tweets using BERT_files/pipeline.png" id="S3.F1.1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="354" height="92" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>Pipeline</figcaption>
+</figure>
+<div id="S3.SS1.p2" class="ltx_para">
+<p id="S3.SS1.p2.1" class="ltx_p">Dataset collection
+was the initial step, where data was gathered, needed to train and evaluate the NLP model. The dataset that relevant was scrutinized and it contained a representative sample of the text and emojis. The quality of collected dataset directly influences the performance and generalization ability of deep learning model.</p>
+</div>
+<div id="S3.SS1.p3" class="ltx_para">
+<p id="S3.SS1.p3.1" class="ltx_p">Raw text data that scrubbed contained noise, inconsistencies, and irrelevant information. Preprocessing steps included cleaning, stemming and transforming the data to make it suitable for training. This included tasks like removing punctuation, converting text to lowercase, handling special characters, and dealing with missing values.
+It was one of the most time consuming task. Stemming is a natural language processing (NLP) technique used to reduce words to their base or root form, which may not be a valid word itself but can still convey the word’s essential meaning [10]. The process involves removing prefixes, suffixes, and other inflections from words to obtain the core linguistic stem. In Python, the Natural Language Toolkit (NLTK) and other libraries provide various stemming algorithms. For this task, NLTK was used. Also, the impact of using stemming was assessed on the results.</p>
+</div>
+<div id="S3.SS1.p4" class="ltx_para">
+<p id="S3.SS1.p4.1" class="ltx_p">Tokenization and Embedding involved breaking down the text into smaller units called tokens and to represent words as numerical vectors in a high-dimensional space. These vectors capture semantic relationships and contextual information between words, allowing machine learning models to better understand and process textual data. In this context, tokens were usually words. It is a crucial step because it converts text data into a format that a neural network can understand and process. The result of this step is represented as a unique integer index array.</p>
+</div>
+<div id="S3.SS1.p5" class="ltx_para">
+<p id="S3.SS1.p5.1" class="ltx_p">Finetuning included the process of training a pre-existing neural network model on your specific task or dataset. The BERT model pretrained on large language corpora to learn general language features was finetuned on our dataset. Finetuning involved updating the model’s parameters to make it more specialized and accurate for predicting multiple emojis.</p>
+</div>
+<div id="S3.SS1.p6" class="ltx_para">
+<p id="S3.SS1.p6.1" class="ltx_p">After finetuning the model, the performance of model was accessed through a set of evaluation metrics on train, validation and test sets. The model was trained on the training set and then evaluated on the test set.
+Once the model was trained and evaluated, it was used for making predictions on new, unseen data. Inference included to the process of feeding new text inputs to the trained model and obtaining predictions.</p>
+</div>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS2.5.1.1" class="ltx_text">III-B</span> </span><span id="S3.SS2.6.2" class="ltx_text ltx_font_italic">Dataset</span>
+</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<p id="S3.SS2.p1.1" class="ltx_p">The first dataset containing tweets and label emojis were stored in a csv file. It was a small dataset comprising of 132 rows for training and 56 rows for testing. There were 5 emoji classes in the dataset. The train test split ratio was selected as 70:30.</p>
+</div>
+<div id="S3.SS2.p2" class="ltx_para">
+<p id="S3.SS2.p2.1" class="ltx_p">The second dataset has 2 csv files, Train and Test. Train contained tweets with the emoji label in coded form. There were 69,832 tweets in train while the test had 25,920 tweets. In-addition, there were two supplementary csv file Mapping and Output. Mapping file contained emojis with their label mapping. The fourth csv file output, contained unique ids. There were 20 emoji classes in this dataset while the train test split ratio was kept as same.</p>
+</div>
+<div id="S3.SS2.p3" class="ltx_para">
+<p id="S3.SS2.p3.1" class="ltx_p">The smaller dataset 1 served as initial setup for the model before actual training on larger dataset 2. After the initial setup and some level of learning from the smaller dataset, the model was then further trained using a larger and more comprehensive dataset. This second phase of training, using the larger dataset, aimed to improve the model’s performance and accuracy by exposing it to a wider range of data.</p>
+</div>
+</section>
+<section id="S3.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS3.5.1.1" class="ltx_text">III-C</span> </span><span id="S3.SS3.6.2" class="ltx_text ltx_font_italic">Evaluation Metric</span>
+</h3>
+
+<div id="S3.SS3.p1" class="ltx_para">
+<p id="S3.SS3.p1.1" class="ltx_p">Training and Validation loss were monitored while the model was being trained.
+For testing,
+we have used F1 score as our evaluation metric while keeping in view precision, accuracy, recall values as well.
+Following is the formula for the metric for F1 Score.</p>
+</div>
+<div id="S3.SS3.p2" class="ltx_para">
+<table id="S3.E1" class="ltx_equation ltx_eqn_table">
+
+<tbody><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.E1.m1.2" class="ltx_Math" alttext="F_{1}Score=2*\frac{(Precision*Recall)}{(Precision+Recall)}" display="block"><semantics id="S3.E1.m1.2a"><mrow id="S3.E1.m1.2.3" xref="S3.E1.m1.2.3.cmml"><mrow id="S3.E1.m1.2.3.2" xref="S3.E1.m1.2.3.2.cmml"><msub id="S3.E1.m1.2.3.2.2" xref="S3.E1.m1.2.3.2.2.cmml"><mi id="S3.E1.m1.2.3.2.2.2" xref="S3.E1.m1.2.3.2.2.2.cmml">F</mi><mn id="S3.E1.m1.2.3.2.2.3" xref="S3.E1.m1.2.3.2.2.3.cmml">1</mn></msub><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.3.2.1" xref="S3.E1.m1.2.3.2.1.cmml">​</mo><mi id="S3.E1.m1.2.3.2.3" xref="S3.E1.m1.2.3.2.3.cmml">S</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.3.2.1a" xref="S3.E1.m1.2.3.2.1.cmml">​</mo><mi id="S3.E1.m1.2.3.2.4" xref="S3.E1.m1.2.3.2.4.cmml">c</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.3.2.1b" xref="S3.E1.m1.2.3.2.1.cmml">​</mo><mi id="S3.E1.m1.2.3.2.5" xref="S3.E1.m1.2.3.2.5.cmml">o</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.3.2.1c" xref="S3.E1.m1.2.3.2.1.cmml">​</mo><mi id="S3.E1.m1.2.3.2.6" xref="S3.E1.m1.2.3.2.6.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.3.2.1d" xref="S3.E1.m1.2.3.2.1.cmml">​</mo><mi id="S3.E1.m1.2.3.2.7" xref="S3.E1.m1.2.3.2.7.cmml">e</mi></mrow><mo id="S3.E1.m1.2.3.1" xref="S3.E1.m1.2.3.1.cmml">=</mo><mrow id="S3.E1.m1.2.3.3" xref="S3.E1.m1.2.3.3.cmml"><mn id="S3.E1.m1.2.3.3.2" xref="S3.E1.m1.2.3.3.2.cmml">2</mn><mo lspace="0.222em" rspace="0.222em" id="S3.E1.m1.2.3.3.1" xref="S3.E1.m1.2.3.3.1.cmml">∗</mo><mfrac id="S3.E1.m1.2.2" xref="S3.E1.m1.2.2.cmml"><mrow id="S3.E1.m1.1.1.1.1" xref="S3.E1.m1.1.1.1.1.1.cmml"><mo stretchy="false" id="S3.E1.m1.1.1.1.1.2" xref="S3.E1.m1.1.1.1.1.1.cmml">(</mo><mrow id="S3.E1.m1.1.1.1.1.1" xref="S3.E1.m1.1.1.1.1.1.cmml"><mrow id="S3.E1.m1.1.1.1.1.1.2" xref="S3.E1.m1.1.1.1.1.1.2.cmml"><mrow id="S3.E1.m1.1.1.1.1.1.2.2" xref="S3.E1.m1.1.1.1.1.1.2.2.cmml"><mi id="S3.E1.m1.1.1.1.1.1.2.2.2" xref="S3.E1.m1.1.1.1.1.1.2.2.2.cmml">P</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.3" xref="S3.E1.m1.1.1.1.1.1.2.2.3.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1a" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.4" xref="S3.E1.m1.1.1.1.1.1.2.2.4.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1b" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.5" xref="S3.E1.m1.1.1.1.1.1.2.2.5.cmml">c</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1c" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.6" xref="S3.E1.m1.1.1.1.1.1.2.2.6.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1d" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.7" xref="S3.E1.m1.1.1.1.1.1.2.2.7.cmml">s</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1e" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.8" xref="S3.E1.m1.1.1.1.1.1.2.2.8.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1f" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.9" xref="S3.E1.m1.1.1.1.1.1.2.2.9.cmml">o</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.2.2.1g" xref="S3.E1.m1.1.1.1.1.1.2.2.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.2.2.10" xref="S3.E1.m1.1.1.1.1.1.2.2.10.cmml">n</mi></mrow><mo lspace="0.222em" rspace="0.222em" id="S3.E1.m1.1.1.1.1.1.2.1" xref="S3.E1.m1.1.1.1.1.1.2.1.cmml">∗</mo><mi id="S3.E1.m1.1.1.1.1.1.2.3" xref="S3.E1.m1.1.1.1.1.1.2.3.cmml">R</mi></mrow><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.1" xref="S3.E1.m1.1.1.1.1.1.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.3" xref="S3.E1.m1.1.1.1.1.1.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.1a" xref="S3.E1.m1.1.1.1.1.1.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.4" xref="S3.E1.m1.1.1.1.1.1.4.cmml">c</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.1b" xref="S3.E1.m1.1.1.1.1.1.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.5" xref="S3.E1.m1.1.1.1.1.1.5.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.1c" xref="S3.E1.m1.1.1.1.1.1.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.6" xref="S3.E1.m1.1.1.1.1.1.6.cmml">l</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.1.1.1.1.1.1d" xref="S3.E1.m1.1.1.1.1.1.1.cmml">​</mo><mi id="S3.E1.m1.1.1.1.1.1.7" xref="S3.E1.m1.1.1.1.1.1.7.cmml">l</mi></mrow><mo stretchy="false" id="S3.E1.m1.1.1.1.1.3" xref="S3.E1.m1.1.1.1.1.1.cmml">)</mo></mrow><mrow id="S3.E1.m1.2.2.2.1" xref="S3.E1.m1.2.2.2.1.1.cmml"><mo stretchy="false" id="S3.E1.m1.2.2.2.1.2" xref="S3.E1.m1.2.2.2.1.1.cmml">(</mo><mrow id="S3.E1.m1.2.2.2.1.1" xref="S3.E1.m1.2.2.2.1.1.cmml"><mrow id="S3.E1.m1.2.2.2.1.1.2" xref="S3.E1.m1.2.2.2.1.1.2.cmml"><mi id="S3.E1.m1.2.2.2.1.1.2.2" xref="S3.E1.m1.2.2.2.1.1.2.2.cmml">P</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.3" xref="S3.E1.m1.2.2.2.1.1.2.3.cmml">r</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1a" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.4" xref="S3.E1.m1.2.2.2.1.1.2.4.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1b" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.5" xref="S3.E1.m1.2.2.2.1.1.2.5.cmml">c</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1c" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.6" xref="S3.E1.m1.2.2.2.1.1.2.6.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1d" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.7" xref="S3.E1.m1.2.2.2.1.1.2.7.cmml">s</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1e" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.8" xref="S3.E1.m1.2.2.2.1.1.2.8.cmml">i</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1f" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.9" xref="S3.E1.m1.2.2.2.1.1.2.9.cmml">o</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.2.1g" xref="S3.E1.m1.2.2.2.1.1.2.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.2.10" xref="S3.E1.m1.2.2.2.1.1.2.10.cmml">n</mi></mrow><mo id="S3.E1.m1.2.2.2.1.1.1" xref="S3.E1.m1.2.2.2.1.1.1.cmml">+</mo><mrow id="S3.E1.m1.2.2.2.1.1.3" xref="S3.E1.m1.2.2.2.1.1.3.cmml"><mi id="S3.E1.m1.2.2.2.1.1.3.2" xref="S3.E1.m1.2.2.2.1.1.3.2.cmml">R</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.3.1" xref="S3.E1.m1.2.2.2.1.1.3.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.3.3" xref="S3.E1.m1.2.2.2.1.1.3.3.cmml">e</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.3.1a" xref="S3.E1.m1.2.2.2.1.1.3.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.3.4" xref="S3.E1.m1.2.2.2.1.1.3.4.cmml">c</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.3.1b" xref="S3.E1.m1.2.2.2.1.1.3.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.3.5" xref="S3.E1.m1.2.2.2.1.1.3.5.cmml">a</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.3.1c" xref="S3.E1.m1.2.2.2.1.1.3.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.3.6" xref="S3.E1.m1.2.2.2.1.1.3.6.cmml">l</mi><mo lspace="0em" rspace="0em" id="S3.E1.m1.2.2.2.1.1.3.1d" xref="S3.E1.m1.2.2.2.1.1.3.1.cmml">​</mo><mi id="S3.E1.m1.2.2.2.1.1.3.7" xref="S3.E1.m1.2.2.2.1.1.3.7.cmml">l</mi></mrow></mrow><mo stretchy="false" id="S3.E1.m1.2.2.2.1.3" xref="S3.E1.m1.2.2.2.1.1.cmml">)</mo></mrow></mfrac></mrow></mrow><annotation-xml encoding="MathML-Content" id="S3.E1.m1.2b"><apply id="S3.E1.m1.2.3.cmml" xref="S3.E1.m1.2.3"><eq id="S3.E1.m1.2.3.1.cmml" xref="S3.E1.m1.2.3.1"></eq><apply id="S3.E1.m1.2.3.2.cmml" xref="S3.E1.m1.2.3.2"><times id="S3.E1.m1.2.3.2.1.cmml" xref="S3.E1.m1.2.3.2.1"></times><apply id="S3.E1.m1.2.3.2.2.cmml" xref="S3.E1.m1.2.3.2.2"><csymbol cd="ambiguous" id="S3.E1.m1.2.3.2.2.1.cmml" xref="S3.E1.m1.2.3.2.2">subscript</csymbol><ci id="S3.E1.m1.2.3.2.2.2.cmml" xref="S3.E1.m1.2.3.2.2.2">𝐹</ci><cn type="integer" id="S3.E1.m1.2.3.2.2.3.cmml" xref="S3.E1.m1.2.3.2.2.3">1</cn></apply><ci id="S3.E1.m1.2.3.2.3.cmml" xref="S3.E1.m1.2.3.2.3">𝑆</ci><ci id="S3.E1.m1.2.3.2.4.cmml" xref="S3.E1.m1.2.3.2.4">𝑐</ci><ci id="S3.E1.m1.2.3.2.5.cmml" xref="S3.E1.m1.2.3.2.5">𝑜</ci><ci id="S3.E1.m1.2.3.2.6.cmml" xref="S3.E1.m1.2.3.2.6">𝑟</ci><ci id="S3.E1.m1.2.3.2.7.cmml" xref="S3.E1.m1.2.3.2.7">𝑒</ci></apply><apply id="S3.E1.m1.2.3.3.cmml" xref="S3.E1.m1.2.3.3"><times id="S3.E1.m1.2.3.3.1.cmml" xref="S3.E1.m1.2.3.3.1"></times><cn type="integer" id="S3.E1.m1.2.3.3.2.cmml" xref="S3.E1.m1.2.3.3.2">2</cn><apply id="S3.E1.m1.2.2.cmml" xref="S3.E1.m1.2.2"><divide id="S3.E1.m1.2.2.3.cmml" xref="S3.E1.m1.2.2"></divide><apply id="S3.E1.m1.1.1.1.1.1.cmml" xref="S3.E1.m1.1.1.1.1"><times id="S3.E1.m1.1.1.1.1.1.1.cmml" xref="S3.E1.m1.1.1.1.1.1.1"></times><apply id="S3.E1.m1.1.1.1.1.1.2.cmml" xref="S3.E1.m1.1.1.1.1.1.2"><times id="S3.E1.m1.1.1.1.1.1.2.1.cmml" xref="S3.E1.m1.1.1.1.1.1.2.1"></times><apply id="S3.E1.m1.1.1.1.1.1.2.2.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2"><times id="S3.E1.m1.1.1.1.1.1.2.2.1.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.1"></times><ci id="S3.E1.m1.1.1.1.1.1.2.2.2.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.2">𝑃</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.3.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.3">𝑟</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.4.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.4">𝑒</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.5.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.5">𝑐</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.6.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.6">𝑖</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.7.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.7">𝑠</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.8.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.8">𝑖</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.9.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.9">𝑜</ci><ci id="S3.E1.m1.1.1.1.1.1.2.2.10.cmml" xref="S3.E1.m1.1.1.1.1.1.2.2.10">𝑛</ci></apply><ci id="S3.E1.m1.1.1.1.1.1.2.3.cmml" xref="S3.E1.m1.1.1.1.1.1.2.3">𝑅</ci></apply><ci id="S3.E1.m1.1.1.1.1.1.3.cmml" xref="S3.E1.m1.1.1.1.1.1.3">𝑒</ci><ci id="S3.E1.m1.1.1.1.1.1.4.cmml" xref="S3.E1.m1.1.1.1.1.1.4">𝑐</ci><ci id="S3.E1.m1.1.1.1.1.1.5.cmml" xref="S3.E1.m1.1.1.1.1.1.5">𝑎</ci><ci id="S3.E1.m1.1.1.1.1.1.6.cmml" xref="S3.E1.m1.1.1.1.1.1.6">𝑙</ci><ci id="S3.E1.m1.1.1.1.1.1.7.cmml" xref="S3.E1.m1.1.1.1.1.1.7">𝑙</ci></apply><apply id="S3.E1.m1.2.2.2.1.1.cmml" xref="S3.E1.m1.2.2.2.1"><plus id="S3.E1.m1.2.2.2.1.1.1.cmml" xref="S3.E1.m1.2.2.2.1.1.1"></plus><apply id="S3.E1.m1.2.2.2.1.1.2.cmml" xref="S3.E1.m1.2.2.2.1.1.2"><times id="S3.E1.m1.2.2.2.1.1.2.1.cmml" xref="S3.E1.m1.2.2.2.1.1.2.1"></times><ci id="S3.E1.m1.2.2.2.1.1.2.2.cmml" xref="S3.E1.m1.2.2.2.1.1.2.2">𝑃</ci><ci id="S3.E1.m1.2.2.2.1.1.2.3.cmml" xref="S3.E1.m1.2.2.2.1.1.2.3">𝑟</ci><ci id="S3.E1.m1.2.2.2.1.1.2.4.cmml" xref="S3.E1.m1.2.2.2.1.1.2.4">𝑒</ci><ci id="S3.E1.m1.2.2.2.1.1.2.5.cmml" xref="S3.E1.m1.2.2.2.1.1.2.5">𝑐</ci><ci id="S3.E1.m1.2.2.2.1.1.2.6.cmml" xref="S3.E1.m1.2.2.2.1.1.2.6">𝑖</ci><ci id="S3.E1.m1.2.2.2.1.1.2.7.cmml" xref="S3.E1.m1.2.2.2.1.1.2.7">𝑠</ci><ci id="S3.E1.m1.2.2.2.1.1.2.8.cmml" xref="S3.E1.m1.2.2.2.1.1.2.8">𝑖</ci><ci id="S3.E1.m1.2.2.2.1.1.2.9.cmml" xref="S3.E1.m1.2.2.2.1.1.2.9">𝑜</ci><ci id="S3.E1.m1.2.2.2.1.1.2.10.cmml" xref="S3.E1.m1.2.2.2.1.1.2.10">𝑛</ci></apply><apply id="S3.E1.m1.2.2.2.1.1.3.cmml" xref="S3.E1.m1.2.2.2.1.1.3"><times id="S3.E1.m1.2.2.2.1.1.3.1.cmml" xref="S3.E1.m1.2.2.2.1.1.3.1"></times><ci id="S3.E1.m1.2.2.2.1.1.3.2.cmml" xref="S3.E1.m1.2.2.2.1.1.3.2">𝑅</ci><ci id="S3.E1.m1.2.2.2.1.1.3.3.cmml" xref="S3.E1.m1.2.2.2.1.1.3.3">𝑒</ci><ci id="S3.E1.m1.2.2.2.1.1.3.4.cmml" xref="S3.E1.m1.2.2.2.1.1.3.4">𝑐</ci><ci id="S3.E1.m1.2.2.2.1.1.3.5.cmml" xref="S3.E1.m1.2.2.2.1.1.3.5">𝑎</ci><ci id="S3.E1.m1.2.2.2.1.1.3.6.cmml" xref="S3.E1.m1.2.2.2.1.1.3.6">𝑙</ci><ci id="S3.E1.m1.2.2.2.1.1.3.7.cmml" xref="S3.E1.m1.2.2.2.1.1.3.7">𝑙</ci></apply></apply></apply></apply></apply></annotation-xml><annotation encoding="application/x-tex" id="S3.E1.m1.2c">F_{1}Score=2*\frac{(Precision*Recall)}{(Precision+Recall)}</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+</table>
+</div>
+</section>
+<section id="S3.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS4.5.1.1" class="ltx_text">III-D</span> </span><span id="S3.SS4.6.2" class="ltx_text ltx_font_italic">Approach</span>
+</h3>
+
+<div id="S3.SS4.p1" class="ltx_para">
+<p id="S3.SS4.p1.1" class="ltx_p">BERT is a highly advanced pre-trained language model developed by Google that uses a bidirectional approach and deep neural network to better understand natural language by analyzing the entire input sequence in both directions during training, leading to more accurate language processing and understanding. It has been widely used in various natural language processing tasks, improving the accuracy and effectiveness of NLP applications and inspiring the development of other advanced pre-trained language models <cite class="ltx_cite ltx_citemacro_citep">(Devlin&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>., <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib2" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2018</a>)</cite>.
+BERT has several advantages, making it a popular choice for natural language processing tasks. Firstly, it uses a bidirectional approach during training, which allows it to better understand the context of words in a sentence. This can lead to more accurate language processing and understanding than other language models that only process text in one direction.
+Secondly, BERT has been pre-trained on a large corpus of text data, allowing it to capture many language patterns and nuances. This makes it highly effective for various NLP tasks, such as question answering, sentiment analysis, and language translation.
+Several other pretrained models, designed for different tasks, were tried to check the performance including the model used by <cite class="ltx_cite ltx_citemacro_citet">Jamal&nbsp;<span class="ltx_ERROR undefined">\BBA</span> Aribisala (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib4" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2023</a>)</cite> for multi task learning and <cite class="ltx_cite ltx_citemacro_citet">Nusrat&nbsp;<span class="ltx_ERROR undefined">\BOthers</span>. (<a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#bib.bib6" title="" class="ltx_ref"><span class="ltx_ERROR undefined">\APACyear</span>2020</a>)</cite> for hydrological modeling. Finally, BERT has inspired the development of other advanced pre-trained language models, such as GPT-3 and RoBERTa. These models build on BERT’s success and improve its architecture, resulting in even better performance in natural language processing tasks.</p>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">IV </span><span id="S4.1.1" class="ltx_text ltx_font_smallcaps">Results &amp; Discussion</span>
+</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p id="S4.p1.1" class="ltx_p">The deep learning model contained a BERT pretrained model and a dense network. For the dense network, different settings for number of hidden layers and neurons were experimented. The characteristics of selected model for the task included three dense layers with pooling layers.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p id="S4.p2.1" class="ltx_p">The fine tuned model was used to predict emojis on the unseen data. Figure <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#S4.F2" title="Figure 2 ‣ IV Results &amp; Discussion ‣ Emoji Prediction in Tweets using BERT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> shows a snapshot that the model correctly predicts the emojis corresponding to the tweets of test dataset.</p>
+</div>
+<figure id="S4.F2" class="ltx_figure"><img src="./Emoji Prediction in Tweets using BERT_files/output_crop.png" id="S4.F2.1.g1" class="ltx_graphics ltx_centering ltx_img_portrait" width="189" height="444" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Actual output vs predicted output</figcaption>
+</figure>
+<div id="S4.p3" class="ltx_para">
+<p id="S4.p3.1" class="ltx_p">Precision, recall, F1 score, and accuracy were observed as 75.4%, 73.2%, 73%, and 73.2%, respectively on dataset 1.
+Similarly on dataset 2 the values of precision,recall, F1 score, and accuracy were
+40%, 60%, 46%, and 60%, respectively.
+The model was trained for 10 epochs for dataset 1 and 800 epochs for dataset 2. The results suggest that on dataset 2, the model’s precision was relatively low at 40%, indicating that it made a significant number of false positive predictions. However, it achieved a recall value is indicating that it captured a reasonable portion of actual positive instances.
+These results provide insights into how well the model is performing in terms of both false positives and false negatives in dataset 2.</p>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p id="S4.p4.1" class="ltx_p">The training curve as in figure <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#S4.F3" title="Figure 3 ‣ IV Results &amp; Discussion ‣ Emoji Prediction in Tweets using BERT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a> displays the progression of the training loss as the BERT model was iteratively trained over a certain number of epochs. As depicted, the training loss exhibits an initial fluctuation during the early epochs, which is indicative of the model’s exposure to diverse patterns within the training data.</p>
+</div>
+<div id="S4.p5" class="ltx_para">
+<p id="S4.p5.1" class="ltx_p">Subsequently, the training loss consistently decreases, indicative of the model effectively capturing the underlying structures and representations within the data. This phase of diminishing loss continues until convergence is reached, where further reductions in loss become marginal. The smooth convergence demonstrates the BERT model’s ability to learn intricate linguistic features from the training data.
+The training and validation loss decreased as the number of epochs increased and the accuracy increased with increase in the number of epochs.
+This effect can be seen in figure <a href="https://ar5iv.labs.arxiv.org/html/2307.02054v2#S4.F3" title="Figure 3 ‣ IV Results &amp; Discussion ‣ Emoji Prediction in Tweets using BERT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>.</p>
+</div>
+<figure id="S4.F3" class="ltx_figure"><img src="./Emoji Prediction in Tweets using BERT_files/appendix1_Comparison.jpg" id="S4.F3.1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="589" height="217" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>Accuracy and Losses, orange curve represents training Loss while blue curve represents validation loss</figcaption>
+</figure>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">V </span><span id="S5.1.1" class="ltx_text ltx_font_smallcaps">Conclusion</span>
+</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p id="S5.p1.1" class="ltx_p">In conclusion, this study demonstrated the effectiveness of using BERT for emoji prediction on a dataset of tweets. We found that with fine-tuning a pre-trained BERT model on a dataset of labeled tweets, state-of-the-art results can be achieved on this task. Our experiments showed that the BERT- model based approach outperforms traditional machine learning models and other deep learning models. Additionally, our study highlights the importance of pre-processing techniques such as tokenization and stemming for improving model performance. Furthermore, it was found that using tweet-specific features such as hashtags and user mentions as input features can further improve model performance. Results suggest that BERT can be a valuable tool for predicting emojis in tweets, which can be useful for a variety of applications such as social media monitoring and sentiment analysis.</p>
+</div>
+</section>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_font_smallcaps ltx_title_section">Dataset and Code Availability</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p id="Sx1.p1.1" class="ltx_p">The datasets used for this research are available on kaggle through the following link
+<a target="_blank" href="https://www.kaggle.com/datasets/alvinrindra/emojify" title="" class="ltx_ref ltx_href">https://www.kaggle.com/datasets/alvinrindra/emojify,</a>
+<a target="_blank" href="https://www.kaggle.com/code/sakthinarayanan/emoji-predictor/input" title="" class="ltx_ref ltx_href">https://www.kaggle.com/code/sakthinarayanan/emoji-predictor/input.</a>
+The developed code is made available at Github: <a target="_blank" href="https://github.com/mnusrat786/emoji-prediction-with-transformer" title="" class="ltx_ref ltx_href">https://github.com/mnusrat786/emoji-prediction-with-transformer</a></p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Brown&nbsp;<span id="bib.bib1.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib1.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2020)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib1.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>brown2020language<span id="bib.bib1.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Brown, T<span id="bib.bib1.8.3" class="ltx_ERROR undefined">\BPBI</span>B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P.<span id="bib.bib1.9.4" class="ltx_ERROR undefined">\BDBL</span>Amodei, D.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib1.10.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2020.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib1.11.1" class="ltx_ERROR undefined">\APACrefbtitle</span>Language Models are Few-Shot Learners. Language models are
+few-shot learners.
+<span id="bib.bib1.12.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib1.13.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Devlin&nbsp;<span id="bib.bib2.5.5.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib2.6.6.2" class="ltx_ERROR undefined">\APACyear</span>2018)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib2.7.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>DBLP:journals/corr/abs-1810-04805<span id="bib.bib2.8.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Devlin, J., Chang, M., Lee, K.<span id="bib.bib2.9.3" class="ltx_ERROR undefined">\BCBL</span>&nbsp;<span id="bib.bib2.10.4" class="ltx_ERROR undefined">\BBA</span> Toutanova, K.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.11.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2018.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.12.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib2.13.2" class="ltx_ERROR undefined">\APACrefatitle</span>BERT: Pre-training of Deep Bidirectional Transformers
+for Language Understanding BERT: pre-training of deep bidirectional
+transformers for language understanding.<span id="bib.bib2.14.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.15.1" class="ltx_ERROR undefined">\APACjournalVolNumPages</span>CoRRabs/1810.04805.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib2.16.1" class="ltx_ERROR undefined">{APACrefURL}</span> <a target="_blank" href="http://arxiv.org/abs/1810.04805" title="" class="ltx_ref ltx_url ltx_font_typewriter">http://arxiv.org/abs/1810.04805</a> 
+<span id="bib.bib2.17.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib2.18.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Felbo&nbsp;<span id="bib.bib3.5.5.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib3.6.6.2" class="ltx_ERROR undefined">\APACyear</span>2017)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib3.7.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>Felbo_2017<span id="bib.bib3.8.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Felbo, B., Mislove, A., Søgaard, A., Rahwan, I.<span id="bib.bib3.9.3" class="ltx_ERROR undefined">\BCBL</span>&nbsp;<span id="bib.bib3.10.4" class="ltx_ERROR undefined">\BBA</span> Lehmann, S.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.11.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2017.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.12.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib3.13.2" class="ltx_ERROR undefined">\APACrefatitle</span>Using millions of emoji occurrences to learn any-domain
+representations for detecting sentiment, emotion and sarcasm Using millions
+of emoji occurrences to learn any-domain representations for detecting
+sentiment, emotion and sarcasm.<span id="bib.bib3.14.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.15.1" class="ltx_ERROR undefined">\BIn</span> <span id="bib.bib3.16.2" class="ltx_ERROR undefined">\APACrefbtitle</span>Proceedings of the 2017 Conference on Empirical Methods
+in Natural Language Processing. Proceedings of the 2017 conference on
+empirical methods in natural language processing.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.17.1" class="ltx_ERROR undefined">\APACaddressPublisher</span>Association for Computational Linguistics.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.18.1" class="ltx_ERROR undefined">{APACrefURL}</span> <a target="_blank" href="https://doi.org/10.18653%2Fv1%2Fd17-1169" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://doi.org/10.18653%2Fv1%2Fd17-1169</a>
+
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib3.19.1" class="ltx_ERROR undefined">{APACrefDOI}</span> <span id="bib.bib3.20.2" class="ltx_ERROR undefined">\doi</span>10.18653/v1/d17-1169 
+<span id="bib.bib3.21.3" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib3.22.4" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Jamal&nbsp;<span id="bib.bib4.4.4.1" class="ltx_ERROR undefined">\BBA</span> Aribisala (<span id="bib.bib4.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2023)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib4.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>jamal2023data<span id="bib.bib4.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Jamal, S<span id="bib.bib4.8.3" class="ltx_ERROR undefined">\BPBI</span>A.<span id="bib.bib4.9.4" class="ltx_ERROR undefined">\BCBT</span>&nbsp;<span id="bib.bib4.10.5" class="ltx_ERROR undefined">\BBA</span> Aribisala, A.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib4.11.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2023.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib4.12.1" class="ltx_ERROR undefined">\APACrefbtitle</span>Data Fusion for Multi-Task Learning of Building Extraction and
+Height Estimation. Data fusion for multi-task learning of building
+extraction and height estimation.
+<span id="bib.bib4.13.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib4.14.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Ma&nbsp;<span id="bib.bib5.5.5.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib5.6.6.2" class="ltx_ERROR undefined">\APACyear</span>2020)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib5.7.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>ma2020emoji<span id="bib.bib5.8.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Ma, W., Liu, R., Wang, L.<span id="bib.bib5.9.3" class="ltx_ERROR undefined">\BCBL</span>&nbsp;<span id="bib.bib5.10.4" class="ltx_ERROR undefined">\BBA</span> Vosoughi, S.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib5.11.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2020.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib5.12.1" class="ltx_ERROR undefined">\APACrefbtitle</span>Emoji Prediction: Extensions and Benchmarking. Emoji
+prediction: Extensions and benchmarking.
+<span id="bib.bib5.13.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib5.14.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Nusrat&nbsp;<span id="bib.bib6.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib6.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2020)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib6.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>app10196878<span id="bib.bib6.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Nusrat, A., Gabriel, H<span id="bib.bib6.8.3" class="ltx_ERROR undefined">\BPBI</span>F., Haider, S., Ahmad, S., Shahid, M.<span id="bib.bib6.9.4" class="ltx_ERROR undefined">\BCBL</span>&nbsp;<span id="bib.bib6.10.5" class="ltx_ERROR undefined">\BBA</span> Ahmed&nbsp;Jamal, S.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.11.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2020.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.12.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib6.13.2" class="ltx_ERROR undefined">\APACrefatitle</span>Application of Machine Learning Techniques to Delineate
+Homogeneous Climate Zones in River Basins of Pakistan for Hydro-Climatic
+Change Impact Studies Application of machine learning techniques to
+delineate homogeneous climate zones in river basins of pakistan for
+hydro-climatic change impact studies.<span id="bib.bib6.14.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.15.1" class="ltx_ERROR undefined">\APACjournalVolNumPages</span>Applied Sciences1019.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.16.1" class="ltx_ERROR undefined">{APACrefURL}</span> <a target="_blank" href="https://www.mdpi.com/2076-3417/10/19/6878" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://www.mdpi.com/2076-3417/10/19/6878</a>
+
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib6.17.1" class="ltx_ERROR undefined">{APACrefDOI}</span> <span id="bib.bib6.18.2" class="ltx_ERROR undefined">\doi</span>10.3390/app10196878 
+<span id="bib.bib6.19.3" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib6.20.4" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib7" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Radford&nbsp;<span id="bib.bib7.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib7.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2019)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib7.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>Radford2019LanguageMA<span id="bib.bib7.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Radford, A., Wu, J., Child, R., Luan, D., Amodei, D.<span id="bib.bib7.8.3" class="ltx_ERROR undefined">\BCBL</span>&nbsp;<span id="bib.bib7.9.4" class="ltx_ERROR undefined">\BBA</span> Sutskever, I.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib7.10.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2019.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib7.11.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib7.12.2" class="ltx_ERROR undefined">\APACrefatitle</span>Language Models are Unsupervised Multitask Learners
+Language models are unsupervised multitask learners.<span id="bib.bib7.13.3" class="ltx_ERROR undefined">\BBCQ</span>.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib7.14.1" class="ltx_ERROR undefined">{APACrefURL}</span> <a target="_blank" href="https://api.semanticscholar.org/CorpusID:160025533" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://api.semanticscholar.org/CorpusID:160025533</a>
+
+<span id="bib.bib7.15.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib7.16.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib8" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Vaswani&nbsp;<span id="bib.bib8.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib8.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2017)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib8.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>NIPS2017_3f5ee243<span id="bib.bib8.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A<span id="bib.bib8.8.3" class="ltx_ERROR undefined">\BPBI</span>N.<span id="bib.bib8.9.4" class="ltx_ERROR undefined">\BDBL</span>Polosukhin, I.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.10.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2017.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.11.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib8.12.2" class="ltx_ERROR undefined">\APACrefatitle</span>Attention is All you Need Attention is all you
+need.<span id="bib.bib8.13.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.14.1" class="ltx_ERROR undefined">\BIn</span> I.&nbsp;Guyon&nbsp;<span id="bib.bib8.15.2" class="ltx_ERROR undefined">\BOthers</span>.&nbsp;(<span id="bib.bib8.16.3" class="ltx_ERROR undefined">\BEDS</span>), <span id="bib.bib8.17.4" class="ltx_ERROR undefined">\APACrefbtitle</span>Advances in Neural
+Informationyo Systems Advances in neural informationyo systems&nbsp;(<span id="bib.bib8.18.5" class="ltx_ERROR undefined">\BVOL</span>&nbsp;30).
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.19.1" class="ltx_ERROR undefined">\APACaddressPublisher</span>Curran Associates, Inc.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib8.20.1" class="ltx_ERROR undefined">{APACrefURL}</span>
+<a target="_blank" href="https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf</a>
+
+<span id="bib.bib8.21.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib8.22.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib9" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Wei&nbsp;<span id="bib.bib9.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib9.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2021)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib9.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>DBLP:journals/corr/abs-2109-01652<span id="bib.bib9.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Wei, J., Bosma, M., Zhao, V<span id="bib.bib9.8.3" class="ltx_ERROR undefined">\BPBI</span>Y., Guu, K., Yu, A<span id="bib.bib9.9.4" class="ltx_ERROR undefined">\BPBI</span>W., Lester, B.<span id="bib.bib9.10.5" class="ltx_ERROR undefined">\BDBL</span>Le, Q<span id="bib.bib9.11.6" class="ltx_ERROR undefined">\BPBI</span>V.&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.12.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2021.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.13.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib9.14.2" class="ltx_ERROR undefined">\APACrefatitle</span>Finetuned Language Models Are Zero-Shot Learners
+Finetuned language models are zero-shot learners.<span id="bib.bib9.15.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.16.1" class="ltx_ERROR undefined">\APACjournalVolNumPages</span>CoRRabs/2109.01652.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib9.17.1" class="ltx_ERROR undefined">{APACrefURL}</span> <a target="_blank" href="https://arxiv.org/abs/2109.01652" title="" class="ltx_ref ltx_url ltx_font_typewriter">https://arxiv.org/abs/2109.01652</a> 
+<span id="bib.bib9.18.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib9.19.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+<li id="bib.bib10" class="ltx_bibitem">
+<span class="ltx_tag ltx_role_refnum ltx_tag_bibitem">Wolf&nbsp;<span id="bib.bib10.4.4.1" class="ltx_ERROR undefined">\BOthers</span>. (<span id="bib.bib10.5.5.2" class="ltx_ERROR undefined">\APACyear</span>2019)</span>
+<span class="ltx_bibblock">
+<span id="bib.bib10.6.1" class="ltx_ERROR undefined">\APACinsertmetastar</span>wolf2019huggingface<span id="bib.bib10.7.2" class="ltx_ERROR undefined">{APACrefauthors}</span>Wolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A.<span id="bib.bib10.8.3" class="ltx_ERROR undefined">\BDBL</span>others&nbsp;
+</span>
+<span class="ltx_bibblock"><span id="bib.bib10.9.1" class="ltx_ERROR undefined">\APACrefYearMonthDay</span>2019.
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib10.10.1" class="ltx_ERROR undefined">\BBOQ</span><span id="bib.bib10.11.2" class="ltx_ERROR undefined">\APACrefatitle</span>Huggingface’s transformers: State-of-the-art natural
+language processing Huggingface’s transformers: State-of-the-art natural
+language processing.<span id="bib.bib10.12.3" class="ltx_ERROR undefined">\BBCQ</span>
+
+</span>
+<span class="ltx_bibblock"><span id="bib.bib10.13.1" class="ltx_ERROR undefined">\APACjournalVolNumPages</span>arXiv preprint arXiv:1910.03771.
+<span id="bib.bib10.14.2" class="ltx_ERROR undefined">\PrintBackRefs</span><span id="bib.bib10.15.3" class="ltx_ERROR undefined">\CurrentBib</span>
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+<div class="ar5iv-footer"><a href="https://ar5iv.labs.arxiv.org/html/2307.02053" class="ar5iv-nav-button ar5iv-nav-button-prev">◄</a>
+    <a class="ar5iv-home-button" href="https://ar5iv.labs.arxiv.org/"><img height="40" alt="ar5iv homepage" src="./Emoji Prediction in Tweets using BERT_files/ar5iv.png"></a>
+    <a href="https://ar5iv.labs.arxiv.org/feeling_lucky" class="ar5iv-text-button">Feeling<br>lucky?</a>
+    <a href="https://ar5iv.labs.arxiv.org/log/2307.02054" class="ar5iv-text-button ar5iv-severity-error">Conversion<br>report</a>
+    <a class="ar5iv-text-button" target="_blank" href="https://github.com/dginev/ar5iv/issues/new?template=improve-article--arxiv-id-.md&amp;title=Improve+article+2307.02054">Report<br>an issue</a>
+    <a href="https://arxiv.org/abs/2307.02054" class="ar5iv-text-button arxiv-ui-theme">View&nbsp;original<br>on&nbsp;arXiv</a><a href="https://ar5iv.labs.arxiv.org/html/2307.02056" class="ar5iv-nav-button ar5iv-nav-button-next">►</a>
+</div><footer class="ltx_page_footer">
+<a class="ar5iv-toggle-color-scheme" href="javascript:toggleColorScheme()" title="Toggle ar5iv color scheme"><span class="color-scheme-icon"></span></a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/license" target="_blank">Copyright</a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/policies/privacy_policy" target="_blank">Privacy Policy</a>
+
+<div class="ltx_page_logo">Generated  on Wed Feb 28 19:20:25 2024 by <a target="_blank" href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+
+    <script>
+      var canMathML = typeof(MathMLElement) == "function";
+      if (!canMathML) {
+        var body = document.querySelector("body");
+        body.firstElementChild.setAttribute('style', 'opacity: 0;');
+        var loading = document.createElement("div");
+        loading.setAttribute("id", "mathjax-loading-spinner");
+        var message = document.createElement("div");
+        message.setAttribute("id", "mathjax-loading-message");
+        message.innerText = "Typesetting Equations...";
+        body.prepend(loading);
+        body.prepend(message);
+
+        var el = document.createElement("script");
+        el.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+        document.querySelector("head").appendChild(el);
+
+        window.MathJax = {
+          startup: {
+            pageReady: () => {
+              return MathJax.startup.defaultPageReady().then(() => {
+                body.removeChild(loading);
+                body.removeChild(message);
+                body.firstElementChild.removeAttribute('style');
+              }); } } };
+      }
+    </script>
+    <script>
+    // Auxiliary function, building the preview feature when
+    // an inline citation is clicked
+    function clicked_cite(e) {
+      e.preventDefault();
+      let cite = this.closest('.ltx_cite');
+      let next = cite.nextSibling;
+      if (next && next.nodeType == Node.ELEMENT_NODE && next.getAttribute('class') == "ar5iv-bibitem-preview") {
+        next.remove();
+        return; }
+      // Before adding a preview modal,
+      // cleanup older previews, in case they're still open
+      document.querySelectorAll('span.ar5iv-bibitem-preview').forEach(function(node) {
+        node.remove();
+      })
+
+      // Create the preview
+      preview = document.createElement('span');
+      preview.setAttribute('class','ar5iv-bibitem-preview');
+      let target = document.getElementById(this.getAttribute('href').slice(1));
+      target.childNodes.forEach(function (child) {
+        preview.append(child.cloneNode(true));
+      });
+      let close_x = document.createElement('button');
+      close_x.setAttribute("aria-label","Close modal for bibliography item preview");
+      close_x.textContent = "×";
+      close_x.setAttribute('class', 'ar5iv-button-close-preview');
+      close_x.setAttribute('onclick','this.parentNode.remove()');
+      preview.append(close_x);
+      preview.querySelectorAll('.ltx_tag_bibitem').forEach(function(node) {
+        node.remove();
+      });
+      cite.parentNode.insertBefore(preview, cite.nextSibling);
+      return;
+    }
+    // Global Document initialization:
+    // - assign the preview feature to all inline citation links
+    document.querySelectorAll(".ltx_cite .ltx_ref").forEach(function (link) {
+      link.addEventListener("click", clicked_cite);
+    });
+    </script>
+    
+
+<scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"><template shadowrootmode="open"><div id="root-scribe-elem" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: rgb(15, 23, 42);"><div></div><div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;"><ol tabindex="-1" class="fixed bottom-auto right-0 top-0 z-[10000000] flex max-h-screen min-w-[300px] max-w-[360px] p-4"></ol></div></div><link rel="stylesheet" href="chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css"></template></scribe-shadow><deepl-input-controller><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body></html>
