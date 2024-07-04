@@ -1,6 +1,10 @@
-# 2022-2023 Güz Dönemi
+# 2024-2025 Güz Dönemi
 
 ## Proje Bilgileri
+**Proje Adı:** EMOJI PREDICTION AND MODEL ANALYSIS WITH NATURAL LANGUAGE PROCESSING
+
+**Proje Sahibi/Sahipleri** Muhammet Ali Şen - Muhammed Kayra Bulut
+
 **Projeyi Veren Hoca:** Ahmet Mehmet
 
 **Proje Notu:** AA
