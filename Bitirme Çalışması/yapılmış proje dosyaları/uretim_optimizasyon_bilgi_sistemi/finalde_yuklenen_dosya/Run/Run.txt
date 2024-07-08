@@ -1,0 +1,6 @@
+Ön Yüz: Ön yüz kodları visual studio code uygulamasında açılır ve terminal açılarak npm install komutu çalıştırılır. Bu sayede paketler indirilmiş olur ve daha sonra npm run dev komutu ile ön yüz ayağa kaldırılır.
+
+Arka Uç: Arka uç kodları Intellij Idea uygulamasında açılır ve sağda bulunan maven tabına gidilir daha sonra bu tab'da bulunan indirme ikonuna tıklanarak paketlerin yüklenmesi sağlanır. Paketler yüklendikten sonra uygulama üzerinden run tuşuna basılarak arka uç çalışır.
+
+Optimizasyon Algoritması Servisi: Optimizasyon algoritması kodlarının bulunduğu klasör visual studio code uygulamasında açılır. Daha sonra terminal üzerinden pip install komutları ile gerekli kütüphaneler kurulur. Kütüphaneler kurulduktan sonra python app.py komutu ile uygulama çalıştırılır.
+
