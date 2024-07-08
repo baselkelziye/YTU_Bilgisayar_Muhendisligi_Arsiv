@@ -1,23 +1,16 @@
 # 2023-2024 Bahar Dönemi
 
 ## Genel Bilgiler
-* **Kişi Sayısı:** 
-* **Rapor + Sunum Notu:** 
+* **Kişi Sayısı:** Bireysel ödev
+* **Rapor + Sunum Notu:** 100
 
-## Ödev Teklifi (Varsa)
-* **Makale:** 
-* **Zorluk Derecesi:** 
-* **Alan:** 
-* **Tavsiye Eder Misin:** 
 
 ## Ödevde Neler Yapıldı
-* YTÜ öğrencilerinin yorumlarıyla bir model eğitildi.
-* Rapor hazırlandı.
-* Hoca sunum günü atadı.
-* Çevrimiçi şekilde sunum yapıldı.
-* Rapor final zamanında yüklendi.
-
-## Ek Bilgiler (Varsa)
-
+* Bu ödevde double linked-list yapısı tasarlamamız isteniyor.
+* Temel olarak yapıyı kurup fonksiyonları yazıyoruz ekleme, silme, vs...
+* Dosyadan okuma fonksiyonları ile verileri okuyoruz.
+* İstenen spesifik özellikler var bunları kazandırıyoruz
+* İstenen formatta rapor yazıyoruz ve ödevimiz tamamdır.
 
 ## Tavsiye (Varsa)
+* Genel olarak bu dönem verilen veri yapıları ve algoritmalar ödevleri kolay-orta seviyedeydi, dersleri takip edip uygulama derslerine girenler çok rahat tam puan alabilirler diye düşünüyorum. Çünkü bazen böyle yapsanız dahi iyi not alamadığınız dersler olabilir.
