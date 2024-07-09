@@ -1,0 +1,1 @@
+Projede Öncelikle riscv32im_pipelined_cpu isimli vivado projesi oluşturulmalıdır. Sonrasında Cache_deneme.srcs klasöründeki source ve testbench dosyalar buraya eklenmelidir. Ayrıca gcc2.txt yerel bilgisayara çekilip global adresi main_tb.v de değiştirlmesi gerekmektedir. Sonrasında vivado üzerinden Run işlemi ile proje çalışması beklenmektedir.

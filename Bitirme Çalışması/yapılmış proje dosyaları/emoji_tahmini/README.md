@@ -5,7 +5,7 @@
 
 **Proje Sahibi/Sahipleri** Şamil Öztürk
 
-**Projeyi Veren Hoca:** Prof. Dr. Mehmet Akif Amasyalı
+**Projeyi Veren Hoca:** Prof. Dr. Mehmet Fatih Amasyalı
 
 **Proje Notu:** BA
 
