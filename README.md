@@ -172,6 +172,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📘 **S: Genel Staj ve Mesleki Stajın Farkı Nedir?** **C:** **Genel** staj ve **mesleki** staj arasında pratikte hiçbir fark yoktur. İkisinde de bir _X_ firmasında , evrak işlerini hallederek , 30 gün çalışmış olmak gerekir.
   - 📘 **S: Staj Saydırma Nedir?** **C:** Bunlarla uğraşmak istemezseniz, 30 gün sigorta girişiniz varsa staja sayıdırılabiliyor. Mesela dönem içi sadece 2 gününüz boş ve bundan dolayı staj yapamıyorsunuz. O zaman sigortalı ve bilgisayar mühendisliğiyle ilgili bir şirkette o günler çalışabilirsiniz. Mesela **15 hafta** boyunca haftada **2 gün** çalıştınız ve sigortanız yattı diyelim, o zaman 30 iş günü çalışmış olursunuz ve bunu normal staj süreciyle uğraşmadan staja saydırabilirsiniz. Yok **staj defteriymiş** yok **cd**'ymiş uğraşmazsınız.
   - 📘 **S: Nasıl Staj Saydırırım?** **C:**  Dilekçe ve ek olarak 3 belge talep ediliyor.  Kendinize göre doldurabileceğiniz dilekçe formunun drive [linki](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Genel%20Staj/staj%20sayd%C4%B1rma%20dilek%C3%A7e%20%C3%B6rne%C4%9Fi.docx), **Sigortalı İşe Giriş Bildirgesi, Sigorta Tescil ve Hizmet Dökümü, 4a Sigortalı Tescil Kaydı**.Bu belgelerin tamamı e-devlet üzerinde mevcut. Geçmişe yönelik çalışmanız bu şekilde otomatik olarak staj olarak sayılacak. Ekstra olarak staj defteri doldurma, şirkete belge imzalatma gibi süreçlerden muafsınız. Ek olarak staj yapılan yerin **Bilgisayar Mühendisliği** alanında faaliyet göstermesi gerekiyor Lütfen bunu gözden kaçırmayın.
+  - 📘 **S: Nasıl Kaçıncı Sınıfta Yapılabilir?** **C:** Staj 1. Sınıf dahil okula başlar başlamaz yapılabilir. Bazı bu süreçleri bilmeyen memurların sözlerine inanmayın. Staj 2. Sınıftan itibaren değil değil 1. Sınıf dahil her sınıfta yapılabilir.
+  - 📘 **S: Sigortayı Okul Karşılıyor mu?** **C:** Evet.
   - 📘 **Faydalı Linkler:** [Staj Belgeleri Linki](https://ce.yildiz.edu.tr/genel-sayfa/tr/staj-belgeleri)
 - 💡 **Vize**
   - 📘 **S: Vize Nedir?** **C:** Vize, dersin içeriğini ölçmek ve öğrencilerin seviyesini değerlendirmek için dönem ortasında yapılan bir sınavdır.
@@ -2231,6 +2233,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Traktör Reis_**: Dersi iyi anlatır. Notu ortalama verir. Genelde çıkmış sorar. 
   - 👤 **_Nanadaime_**: Güzel hocadır severim kendisini ama bazen ders esnasında dikkati kaybolana kızabiliyor. Telefonda ders ile alakalı bir şeyler baksan bile gözü seni kesebilir. Her an kızabilir dikkat et. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
   - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+  - 👤 **_Nakliyeci Sefer_**: Dersine geç gelir (gelirse şayet). ℹ️ Yorum **07.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Lojik Devreler](#-lojik-devreler)
