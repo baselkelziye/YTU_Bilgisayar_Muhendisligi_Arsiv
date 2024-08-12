@@ -3148,7 +3148,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://github.com/baselkelziye'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/basel-kelziye-080997197'><b>LinkedIn Profili</b></a></p>
 
 <h2 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h2>
-<p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a></p>
+<p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/efe-girgin-820576219/'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
@@ -3158,6 +3158,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h4 align='center'>✨ <b><i>Muhammed Nasır Sabır</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/nasirsabir'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/nasirsabir'><b>LinkedIn Profili</b></a></p>
+
+<h4 align='center'>✨ <b><i>Yusuf Taha Körkem</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/tahakorkem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/tahakorkem'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Önder Görmez</i></b> ✨</h4>
 <p align='center'><a href='https://www.linkedin.com/in/%C3%B6nder-g%C3%B6rmez-251b9462'><b>Github Profili</b></a> &nbsp<a href='https://github.com/ondergormez'><b>LinkedIn Profili</b></a></p>
