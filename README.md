@@ -3150,6 +3150,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h2 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/efe-girgin-820576219/'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Mehmet Ali Duran</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
+
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
 
@@ -3176,9 +3179,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h5 align='center'>🔹 <b><i>Gülsüm İrem Baş</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/irembas'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/g%C3%BCls%C3%BCm-irem-ba%C5%9F/'><b>LinkedIn Profili</b></a></p>
-
-<h5 align='center'>🔹 <b><i>Mehmet Ali Duran</i></b> 🔹</h5>
-<p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
