@@ -3187,6 +3187,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Sinem Sarak</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Ahmed Zeer</i></b> </h6>
+<p align='center'><a href='https://github.com/AhmedZeer'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmedzeer/'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Ali Albayrak</i></b> </h6>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
