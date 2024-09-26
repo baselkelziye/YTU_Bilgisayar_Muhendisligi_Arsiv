@@ -1,27 +1,23 @@
-# 2023-2024 Bahar Dönemi
+# 2023-2024 Güz Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
+**Ders Adı:** Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
 
-**Dersi Veren Hoca(lar):** Banu Diri
+**Dersi Veren Hoca(lar):** Ahmet Elbir
 
-**Ders Dönemi:** 2023-2024 Bahar Dönemi  
+**Ders Dönemi:** 2023-2024 Güz Dönemi  
 
 ## Ödev Bilgileri
 
-**Ödev Kişi Sayısı:** 1 Kişi
+**Ödev Kişi Sayısı:** 2 Kişi
 
 **Ödev Süresi:** Yaklaşık 2 hafta
 
-**Ödev Zorluğu:** Kolay 
+**Ödev Zorluğu:** Orta 
 
 ## Ödev Tanımı
-Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
+n terimli diferansiyel denklem kavramı , sabit katsayılı doğrusal adi diferansiyel denkleminin Runge Kutta-4 yöntemiyle sayısal çözümünü C dilinde kodlama.
 
 ## Not Dağılımı
-* **Rapor:** %10 (genel ağırlık etkisi)
 
 ## Ödev Süreci
-1. **REGEX Yazımı:** Hocanın verdiği dosyadaki adresleri bulan REGEX yazıldı
-1. **Rapor Yazımı:** Bulunan adreslerin, oranın vs. gösterildiği bir rapor yazıldı.
-1. **Rapor:** Hazırlanan rapor final haftasında yüklenmiştir.
