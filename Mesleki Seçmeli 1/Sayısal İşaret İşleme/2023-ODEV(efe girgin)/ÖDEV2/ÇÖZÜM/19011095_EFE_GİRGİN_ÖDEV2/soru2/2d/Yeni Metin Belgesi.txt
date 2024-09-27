@@ -1,0 +1,14 @@
+Filtrenin h(n,m) yanıtı, merkezi bir piksel ile komşu pikseller arasındaki ortalama almayı temsil eder,
+bu da her bir piksel değerinin çevresindeki 8 komşusuyla toplanıp 9'a bölünmesiyle elde edilir.
+
+Bu tür bir filtre, g düşük geçiren (low-pass) bir filtre olarak kullanılır ve 
+görüntü üzerinde yumuşatma (blurring) veya gürültü azaltma (noise reduction) işlemlerinde etkilidir. 
+
+Filtrenin etkisi, her bir pikselin değerinin komşularının değerleriyle birlikte ortalama alınmasıyla düşük
+ frekanslı bileşenleri koruyup yüksek frekanslı bileşenleri (gürültü veya kenar gibi detaylar) azaltarak yumuşak bir görüntü elde etmektir.
+
+Bu özel filtre, merkezi piksel ve birinci dereceden komşuları için 1/9 ve ikinci dereceden komşuları 
+için 1/9 ağırlıklandırma faktörlerine sahiptir. 
+Bu simetrik ağırlıklandırma, filtrelenmiş görüntünün homojen bir şekilde yumuşatılmasını sağlar.
+
+

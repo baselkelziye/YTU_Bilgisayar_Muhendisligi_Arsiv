@@ -1,0 +1,11 @@
+
+Bu filtre, merkezi pikselin etrafındaki sekiz komşu piksele 
+(hem birinci hem de ikinci derece komşular) belirli oranlarda ağırlık veren bir alçak geçiren filtredir. Ağırlıklar simetrik olacak şekilde dağıtılmıştır, 
+bu da filtrelenmiş görüntünün homojen bir şekilde yumuşatılmasına yardımcı olur.
+
+Bu filtrede merkezi piksel 1/16, birinci derece komşular 1/8 ve ikinci derece komşular 
+1/16 ağırlık almakta; merkezdeki piksele en yakın olan dört komşu ise 1/4 ağırlık almaktadır. 
+Bu durum, merkeze yakın piksellerin daha etkili olduğu ve dolayısıyla merkeze uzaklaştıkça 
+etkinin azaldığı anlamına gelir. Bu tür bir ağırlık dağılımı, genellikle kenarları daha belirgin tutarken 
+görüntü üzerinde hafif bir yumuşatma etkisi yaratır.
+
