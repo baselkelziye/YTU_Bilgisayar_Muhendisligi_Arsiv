@@ -1,0 +1,7 @@
+Evet, var. Aliasing'i önlemek için kullanılan normalize frekans değerinin limiti, 
+örnekleme teoremine göre belirlenir. Bu teorem, sinyalin en yüksek frekansının örnekleme frekansının 
+yarısından daha az olması gerektiğini belirtir. 
+Eğer 2D görüntü için konuşuyorsak, bu limit örneklenen piksellerin çözünürlüğüne ve kullanılan örnekleme matrisine 
+bağlıdır. Örnekleme matrisi daha yoğun olduğunda, daha yüksek frekanslarda bile aliasing oluşmaz. 
+Ancak, pratikte, aliasing'i tamamen önlemek için normalize frekansın 0.5 (yarı Nyquist frekansı) veya daha az olması 
+önerilir.
