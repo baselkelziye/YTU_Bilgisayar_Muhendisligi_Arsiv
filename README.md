@@ -3181,6 +3181,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Gülsüm İrem Baş</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/irembas'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/g%C3%BCls%C3%BCm-irem-ba%C5%9F/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Halil Uluoglu</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/haliluluoglu'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/halil-uluoglu'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
