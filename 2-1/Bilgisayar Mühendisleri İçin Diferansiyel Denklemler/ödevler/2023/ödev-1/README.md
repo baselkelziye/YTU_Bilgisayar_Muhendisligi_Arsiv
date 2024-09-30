@@ -3,25 +3,15 @@
 ## Ders Bilgileri
 **Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
 
-**Dersi Veren Hoca(lar):** Banu Diri
+**Dersi Veren Hoca(lar):** Mehmet Fatih Amasyalı
 
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Ödev Bilgileri
 
-**Ödev Kişi Sayısı:** 1 Kişi
+**Ödev Kişi Sayısı:** 2 Kişi
 
-**Ödev Süresi:** Yaklaşık 2 hafta
-
-**Ödev Zorluğu:** Kolay 
+**Ödev Zorluğu:** zor 
 
 ## Ödev Tanımı
-Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
-
-## Not Dağılımı
-* **Rapor:** %10 (genel ağırlık etkisi)
-
-## Ödev Süreci
-1. **REGEX Yazımı:** Hocanın verdiği dosyadaki adresleri bulan REGEX yazıldı
-1. **Rapor Yazımı:** Bulunan adreslerin, oranın vs. gösterildiği bir rapor yazıldı.
-1. **Rapor:** Hazırlanan rapor final haftasında yüklenmiştir.
+İki sınıflı metin sınıflandırma, ör: verilen haber spor haberi mi ekonomi haberi mi ? 
