@@ -5,14 +5,16 @@
 
 **Dersi Veren Hoca(lar):** Gökhan Bilgin
 
-**Ders Dönemi:** 2023-2024 Bahar Dönemi  
+**Ders Dönemi:** 2023-2024 Güz Dönemi  
 
 ## Ödev Bilgileri
 
 **Ödev Kişi Sayısı:** 1 Kişi
 
-**Ödev Süresi:** Yaklaşık 2 hafta
+**Ödev Süresi:** Yaklaşık 1 hafta
 
 **Ödev Zorluğu:** Kolay 
 
 ## Ödev Tanımı
+
+Hocanın istediği lojik devreyi simülasyon ortamında hazırlayıp yapılan ödevin dosyasını ve raporunu hazırlamak.
