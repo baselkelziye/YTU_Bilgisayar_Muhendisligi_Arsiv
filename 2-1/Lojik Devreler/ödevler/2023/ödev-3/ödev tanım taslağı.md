@@ -1,11 +1,11 @@
 # 2023-2024 Bahar Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
+**Ders Adı:** Lojik Devreler
 
-**Dersi Veren Hoca(lar):** Banu Diri
+**Dersi Veren Hoca(lar):** Gökhan Bilgin
 
-**Ders Dönemi:** 2023-2024 Bahar Dönemi  
+**Ders Dönemi:** 2023-2024 Güz Dönemi  
 
 ## Ödev Bilgileri
 
@@ -16,12 +16,4 @@
 **Ödev Zorluğu:** Kolay 
 
 ## Ödev Tanımı
-Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
-
-## Not Dağılımı
-* **Rapor:** %10 (genel ağırlık etkisi)
-
-## Ödev Süreci
-1. **REGEX Yazımı:** Hocanın verdiği dosyadaki adresleri bulan REGEX yazıldı
-1. **Rapor Yazımı:** Bulunan adreslerin, oranın vs. gösterildiği bir rapor yazıldı.
-1. **Rapor:** Hazırlanan rapor final haftasında yüklenmiştir.
+Verilen sayaç ya da şifre devresi gibi bir devreyi flip floplar ile gerçekleme
