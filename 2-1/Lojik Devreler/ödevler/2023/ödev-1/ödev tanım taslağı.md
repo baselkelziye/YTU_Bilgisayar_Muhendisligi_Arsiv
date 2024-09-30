@@ -1,9 +1,9 @@
 # 2023-2024 Bahar Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:** Doğal Dil İşlemeye Kavramsal Bir Bakış
+**Ders Adı:** Lojik Devreler
 
-**Dersi Veren Hoca(lar):** Banu Diri
+**Dersi Veren Hoca(lar):** Gökhan Bilgin
 
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
@@ -16,7 +16,7 @@
 **Ödev Zorluğu:** Kolay 
 
 ## Ödev Tanımı
-Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
+
 
 ## Not Dağılımı
 * **Rapor:** %10 (genel ağırlık etkisi)
