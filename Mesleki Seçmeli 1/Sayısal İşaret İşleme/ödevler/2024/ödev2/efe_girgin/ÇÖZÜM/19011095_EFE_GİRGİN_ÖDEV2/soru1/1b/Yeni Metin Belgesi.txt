@@ -1,0 +1,6 @@
+Evet, aliasing oluşmaması için bir frekans limiti vardır. 
+Sinüzoidal dalga formunun düzgün bir şekilde örneklenebilmesi için en yüksek frekansın,
+ örnekleme frekansının yarısından az olması gerekir, bu da Nyquist Teoremi olarak bilinir.
+ Görüntülerde, bu limit piksel çözünürlüğüne ve uygulanan dönüşüm matrisinin yoğunluğuna bağlı olarak değişir.
+ Genellikle, aliasing'i engellemek için kullanılan normalize frekansın 0.5 
+(yarı Nyquist frekansı) veya daha az olması tavsiye edilir.
