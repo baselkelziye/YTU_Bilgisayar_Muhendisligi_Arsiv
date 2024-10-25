@@ -31,12 +31,12 @@ YTU CE notlar deposu. Bu depo, Yıldız Teknik Üniversitesi Bilgisayar Mühendi
 </details>
 
 <details>
-<summary><b>🛠 Repo Kullanımı</b></summary>
+<summary><b>🛠 Depo Kullanımı</b></summary>
 
 
 
 
-## 🛠 Repo Kullanımı
+## 🛠 Depo Kullanımı
 
 ### ⚙️ Açıklamalar:
 - 📋 1-1 -> 1. sınıf Güz dönemi
@@ -47,10 +47,14 @@ YTU CE notlar deposu. Bu depo, Yıldız Teknik Üniversitesi Bilgisayar Mühendi
 - 📋 3-2 -> 3. sınıf Bahar dönemi
 - 📋 4-1 -> 4. sınıf Güz dönemi
 - 📋 4-2 -> 4. sınıf Bahar dönemi
-- 📋 Mesleki Seçmeli -> Mesleki Seçmeli dersler
+- 📋 Lisansüstü -> Lisansüstü dersler
+- 📋 Çok Displinli Tasarım Projesi -> Mesleki Seçmeli 2
+- 📋 Sosyal Seçmeli 1 -> Sosyal Seçmeli dersler
+- 📋 Mesleki Seçmeli 1 -> Mesleki Seçmeli dersler
 - 📋 Ara Projeler -> yapılıp yüklenen ara projeler
 - 📋 Bitirme Projesi -> yapılıp yüklenen bitirme projeleri
 - 📋 readme_olustur -> readme dosyası oluşturmak için kullanılan python kodu
+- 📋 taslaklar -> eski yazılmış staj defteri ve readme örnekleri
 - 📋 :star::star::star:Burada olmayan bazı [çıkmış sorulara](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=drive_link)/lablara/ödevlere [linkten](https://drive.google.com/drive/folders/1LI_Bo7kWqI2krHTw0noUFl9crfZSlrZh) ulaşabilirsiniz. :star::star::star:
 - 📋 :star::star::star:[BÜYÜK VE KARIŞIK ARŞİV LİNKİ](https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Ei5C2iB-XwJEv7KG6CwzYw4Bn8hUPB8MsB7HCghD-vVyZQ?e=pTT4HI):star::star::star:
 
