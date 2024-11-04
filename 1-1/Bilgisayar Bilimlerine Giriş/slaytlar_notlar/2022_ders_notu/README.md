@@ -1,4 +1,4 @@
-# 2023-2024 Güz Dönemi
+# 2022-2023 Güz Dönemi
 
 ## Ders Bilgileri
 **Ders Adı:** Bilgisayar Bilimlerine Giriş
@@ -8,15 +8,15 @@
 **Ders Dönemi:** 2023-2024 Güz Dönemi  
 
 ## Not Bilgileri
-**Not Sahibi:** Yusuf E. E.
+**Not Sahibi:** Yusuf Erdem Erdem
 
 **Not Tipi:** El Yazısı
 
-**Not Kapsamı:** Eksik bilinmiyor.
+**Not Kapsamı:** 2023-2024 BBG müfredatının tamamıdır.
 
-**Not Ayrıntı Oranı:** Bilinmiyor.
+**Not Ayrıntı Oranı:** Derste yazılan veya hocanın ağzından çıkan her şey.
 
-**Not Ne Kadar Yeterli?:** Not dönem için yeterli.
+**Not Ne Kadar Yeterli?:** Bilgilerin üstüne biraz algoritma pratiği AA aldırır.
 
 ## Ek Bilgiler (Varsa)
 Dersi Amaç Hoca'dan aldım.
