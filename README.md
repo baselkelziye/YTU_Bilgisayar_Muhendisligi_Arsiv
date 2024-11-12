@@ -3195,11 +3195,17 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Halil Uluoglu</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/haliluluoglu'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/halil-uluoglu'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Osman Yiğit Küçükkıratlı</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/yigitkiratli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yigitkucukkiratli/'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Sinem Sarak</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
+
+<h5 align='center'>🔹 <b><i>Yusuf Erdem Erdem</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/erdem-erdem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusuf-erdem-941685258/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Ahmed Zeer</i></b> </h6>
 <p align='center'><a href='https://github.com/AhmedZeer'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmedzeer/'><b>LinkedIn Profili</b></a></p>
