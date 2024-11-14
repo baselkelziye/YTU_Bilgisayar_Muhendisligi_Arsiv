@@ -2478,7 +2478,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
     - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
@@ -2486,11 +2486,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
       - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2024 yılı için yıldız bilgileri*
-    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+    - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+    - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+    - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -2644,10 +2644,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Nesneye Dayalı Tasarım ve Modelleme](#-nesneye-dayalı-tasarım-ve-modelleme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   - 📅 *2023 yılı için yıldız bilgileri*
     - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
     - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
@@ -2659,7 +2659,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
     - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
     - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ### Araştırma Görevlileri
 
@@ -3221,6 +3221,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Burak Başol</i></b> </h6>
+<p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Mahmut Esad Erman</i></b> </h6>
 <p align='center'><a href='https://github.com/MahmutEsadErman'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mahmut-esad-erman/'><b>LinkedIn Profili</b></a></p>
