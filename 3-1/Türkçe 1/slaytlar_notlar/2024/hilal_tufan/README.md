@@ -1,7 +1,7 @@
 # 2024-2025 Güz Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:** Fizik 1
+**Ders Adı:** Türkçe 1
 
 **Dersi Veren Hoca(lar):** Hilal Tufan
 
