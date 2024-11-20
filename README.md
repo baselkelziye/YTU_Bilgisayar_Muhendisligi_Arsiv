@@ -831,12 +831,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2024 yılı için yıldız bilgileri*
       - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-      - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+        - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AEL](#-dr-ahmet-elbir)
     - [ZCT](#-dr-ziya-cihan-tayşi)
@@ -3257,6 +3257,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Yusuf Enes Kurt</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/yusuf-enes-kurt/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yusuf İbin</i></b> </h6>
+<p align='center'><a href='https://www.linkedin.com/in/yusuf-ibin-1b6b68331/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Zehra Aksoy</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/zehra-aksoy-124a01174'><b>LinkedIn Profili</b></a></p>
