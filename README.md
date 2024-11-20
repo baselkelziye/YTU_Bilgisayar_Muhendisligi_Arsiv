@@ -3168,6 +3168,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Mehmet Ali Duran</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Burak Başol</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
+
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
 
@@ -3224,9 +3227,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
-
-<h6 align='center'> <b><i>Burak Başol</i></b> </h6>
-<p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Mahmut Esad Erman</i></b> </h6>
 <p align='center'><a href='https://github.com/MahmutEsadErman'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mahmut-esad-erman/'><b>LinkedIn Profili</b></a></p>
