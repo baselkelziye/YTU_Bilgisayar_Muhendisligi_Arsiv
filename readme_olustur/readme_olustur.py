@@ -84,7 +84,23 @@ def derseYildizYaz(f, kolaylik_puani, gereklilik_puani, girinti, oy_sayisi, yil=
     f.write(
         f"{girinti}    - ℹ️ Yıldızlar {oy_sayisi} oy üzerinden hesaplanmıştır. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.\n"
     )
+# tıklanınca açılan oku oluşturmak için 
+def detay_etiketleri_olustur(baslik: str, girinti: str = "") -> tuple:
+    """
+    Detay etiketlerini oluşturur.
 
+    Args:
+        baslik (str): Detay etiketinin başlığı
+        girinti (str): Detay etiketinin içeriğinin girintisini belirler
+
+    Returns:
+        tuple: Açılış ve kapanış etiketlerini içeren tuple
+
+    """
+    acilis = f"{girinti}<details>\n"
+    acilis += f"{girinti}<summary><b>{baslik}</b></summary>\n\n"
+    kapanis = f"{girinti}</details>\n"
+    return acilis, kapanis
 
 def hocayaYildizYaz(
     f,
@@ -131,20 +147,24 @@ def hocaninYildizBasliginiYaz(f, hoca, girinti=""):
         )
         return
     ek_girinti = "  "
+    yeni_girinti = girinti + ek_girinti
+    detay_etiketi_acilis, detay_etiketi_kapanis = detay_etiketleri_olustur("📅 Yıllara Göre Yıldız Sayıları", yeni_girinti)
     if YILLARA_GORE_YILDIZ_SAYILARI in hoca:
+        f.write(detay_etiketi_acilis)
         for yildiz_bilgileri in hoca[YILLARA_GORE_YILDIZ_SAYILARI]:
             yil = yildiz_bilgileri.get(YIL, "bilinmiyor")
-            f.write(f"{girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
+            f.write(f"{yeni_girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
             hocayaYildizYaz(
                 f,
                 yildiz_bilgileri.get(ANLATIM_PUANI, 0),
                 yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
                 yildiz_bilgileri.get(OGRETME_PUNAI, 0),
                 yildiz_bilgileri.get(EGLENCE_PUANI, 0),
-                girinti + ek_girinti,
+                yeni_girinti + ek_girinti,
                 yildiz_bilgileri.get(OY_SAYISI, 0),
                 f"{yil} Yılında ",
             )
+        f.write(detay_etiketi_kapanis)
 
 
 def dersinYildizBasliginiYaz(f, ders, girinti=""):
@@ -161,18 +181,22 @@ def dersinYildizBasliginiYaz(f, ders, girinti=""):
         )
         return
     ek_girinti = "  "
+    yeni_girinti = girinti + ek_girinti
+    detay_etiketi_acilis, detay_etiketi_kapanis = detay_etiketleri_olustur("📅 Yıllara Göre Yıldız Sayıları", yeni_girinti)
     if YILLARA_GORE_YILDIZ_SAYILARI in ders:
+        f.write(detay_etiketi_acilis)
         for yildiz_bilgileri in ders[YILLARA_GORE_YILDIZ_SAYILARI]:
             yil = yildiz_bilgileri.get(YIL, "bilinmiyor")
-            f.write(f"{girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
+            f.write(f"{yeni_girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*\n")
             derseYildizYaz(
                 f,
                 yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
                 yildiz_bilgileri.get(GEREKLILIK_PUANI, 0),
-                girinti + ek_girinti,
+                yeni_girinti + ek_girinti,
                 yildiz_bilgileri.get(OY_SAYISI, 0),
                 f"{yil} Yılında ",
             )
+        f.write(detay_etiketi_kapanis)
 
 
 # Klasörler için benzerlik skoru hesaplayan fonksiyon
