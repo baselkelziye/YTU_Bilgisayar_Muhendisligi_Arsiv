@@ -1,5 +1,7 @@
 # Text-Classification-With-3-Different-Methods-Implemented-in-C
 
+source is available at [link](https://github.com/MahmutEsadErman/Text-Classification-With-3-Different-Methods-Implemented-in-C)
+
 This project implements classification of articles which is written about two different subjects. We used three different methods and finally we compared their results. The three methods we used are:
 
 1. Gradient Descent
