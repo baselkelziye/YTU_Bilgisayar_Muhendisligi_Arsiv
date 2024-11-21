@@ -955,7 +955,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
-      - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -966,7 +966,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 📅 *2024 yılı için yıldız bilgileri*
         - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
-          - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+          - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
@@ -3686,6 +3686,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Muhammed Kayra Bulut</i></b> </h6>
 <p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Necmettin Bera Çalık</i></b> </h6>
+<p align='center'><a href='https://github.com/necmettin1461'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/necmeddin-bera-%C3%A7al%C4%B1k-9217461b0'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Osman Emre Yılmaz</i></b> </h6>
 <p align='center'><a href='https://github.com/OsmanEmreYilmaz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/osman-emre-/'><b>LinkedIn Profili</b></a></p>
