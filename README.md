@@ -2239,6 +2239,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Isimsiz_**: dersi çok eğlenceli anlatır ondan almayı tavsiye ederim ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Kolpa_**: Agresifliği ve espirili tavrı derse odağımı artırır her zaman ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_B_**: İyi hoca. Güzel sohbet ediyor arada. ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Üçx_**: Kesinlikle çok sempatik ve oldukça anaç duran bir karakter. Ama sanki derslerde ufak tefek çok fazla hata yapıyor. Bunları törpülese çok daha iyi bir hoca olabilir. Akademik çıktı olarak da bölümümüzün bir numarası. <3 ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Sayısal Analiz](#-sayısal-analiz)
@@ -2325,6 +2326,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Isimsiz_**: The Best ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Prof. Dr._**: Dersleri keyiflidir. Anlattığı konulara genel olarak hakim birisi. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Prolog_**: Ders dinlemeye değil, podcast dinlemeye gelirdim. Çok eğlenceli anlatır, konusuna hakim. Öğrenciyi zorlamaz. ℹ️ Yorum **03.2024** tarihinde yapılmıştır.
+  - 👤 **_Üçx_**: Akademik olarak en fazla çabalayan ve alanını en fazla obsesyon haline getiren hocamız olabilir. Kendisi gibi birkaç tane daha akademisyen olsaydı bölümümüz kesinlikle daha iyi olurdu. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -2868,6 +2870,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Madmax_**: Dersi çok iyi anlatır. Sorduğunuz soruyu da elinden geldiğince, sorunun saçma olup olmadığına bakmadan cevaplar. Şiddetle tavsiye edilir. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
   - 👤 **_Anonim_**: Kendisinden bitirme ve ders aldım. Çok tatlı hoca. Sesi podcastlik. Bitirmede çok yardımcı oldu oneririm ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Isimsiz_**: kendisi adamın dibidir ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Üçx_**: BBG dersi için en uygun hoca olduğunu düşünüyorum, insanın bilgisayar bilimleri iştahını kabartıyor. Keşke daha fazla ders anlatsa. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
@@ -3201,6 +3204,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Blessed Camel_**: Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Üçx_**: ArGör'ler içinde bölüm mezunu olan bir tek Toprak hoca var sanırım, kendisi farkını belli ediyor. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
