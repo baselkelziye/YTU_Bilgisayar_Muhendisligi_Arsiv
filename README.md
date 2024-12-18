@@ -3682,6 +3682,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Melih Alçık</i></b> </h6>
 <p align='center'><a href='https://github.com/darthshadoww'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/melih-alcik-086087171/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Mert Güler</i></b> </h6>
+<p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
+
 <h6 align='center'> <b><i>Muhammed Ali Lale</i></b> </h6>
 <p align='center'><a href='https://github.com/malilale'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-ali-lale-59a633265'><b>LinkedIn Profili</b></a></p>
 
