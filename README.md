@@ -2498,6 +2498,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Traktör Reis_**: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir. 
   - 👤 **_Madmax_**: Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
   - 👤 **_Gariban_**: Gömülü sistemler dersini aldım. Ders slytlari çok karmaşık ve bazen anlamsız. Sakin bir hoca ve güzel anlatıyor. Sınavlardaki sorular zor olabilir özellikle finalde ama anlattıkları konulardan ve gayet anlamlı sorular. Puanlaması adil olduğunu düşünüyorum ama bazı sorulara fazla puan veriyor olabilir. Genel olarak dersi güzel ve eğiticiydi. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Kadir Hoca_**: Dersini ortalama anlatır, Dümenden Yapay zeka projeleri verir, TÜBİTAK projeleriyle uğraşır. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Mühendisleri için Sinyaller ve Sistemler](#-bilgisayar-mühendisleri-için-sinyaller-ve-sistemler)
@@ -2624,6 +2625,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ufouser_**: ders anlatışı iyi ve ayrıntılıdır bu yüzden sınavları da iyi olur notu kıt verebilir ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Dd_**: İyi anlatıyor, her şeye hakkını verir, dikkat ediyor, anlatırken her şeyi kayıtedin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Kolpa_**: Ben bu hocayı Elif hocanın erkek versiyonu olarak görüyorum. Neyse, işini seven, uğraş veren, karizmasıyla bizleri etkileyen iyi biridir. Bazı şeyleri gereksiz takıyor vibe'ı veriyor bazen ama olur o kadar ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Sosyal Mesafe_**: 2025 Yılında hala sosyal mesafeye dikkat eden hocamızdır. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-16-oy)
