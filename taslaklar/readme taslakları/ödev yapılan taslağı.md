@@ -3,6 +3,7 @@
 ## Genel Bilgiler
 * **Kişi Sayısı:** 2
 * **Rapor + Sunum Notu:** 50
+* **Kişi(ler):** Osman Oruç Aydın, Ceyda
 
 ## Ödev Teklifi (Varsa)
 * **Makale:** YTUCEth Bot
