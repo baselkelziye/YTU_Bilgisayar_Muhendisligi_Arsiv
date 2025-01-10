@@ -317,7 +317,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 |----------------------------------|--------------------|
 | Mezunların % kaçı işsiz          | %11.11 |
 | Mezun olmayanların % kaçı işsiz  | %28.57 |
-| Yurt dışında çalışanların oranı  | %96.55 |
+| Yurt dışında çalışmayanların oranı  | %96.55 |
 
 
 ### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
