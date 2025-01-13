@@ -19,6 +19,21 @@
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
+### 📘 Osmanlı Devletinin Toplumsal Yapısı
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Uluslararası Pazarlama
 
 #### 📄 Ders Bilgileri
@@ -71,5 +86,20 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1-Z0Rd7tW8ySNVd_DekaU2g2gWrWPUbu-?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Muhasebe Organizasyonu
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

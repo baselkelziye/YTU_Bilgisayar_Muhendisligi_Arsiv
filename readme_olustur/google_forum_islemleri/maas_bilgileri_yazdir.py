@@ -43,9 +43,9 @@ yurtdisi_calisan_orani = len(df[df.iloc[:, 3] == "Evet"]) / len(df[df.iloc[:,2] 
 markdown_tablo = f"""
 | **Durum**                        | **Oran (%)**       |
 |----------------------------------|--------------------|
-| Mezunların % kaçı işsiz          | %{mezun_calismayan_orani:.2f} |
-| Mezun olmayanların % kaçı işsiz  | %{mezun_olmayan_calisma_orani:.2f} |
-| Yurt dışında çalışanların oranı  | %{yurtdisi_calisan_orani:.2f} |
+| Mezunların % kaçı işsiz               | %{mezun_calismayan_orani:.2f} |
+| Mezun olmayanların % kaçı işsiz       | %{mezun_olmayan_calisma_orani:.2f} |
+| Yurt dışında çalışmayanların oranı    | %{yurtdisi_calisan_orani:.2f} |
 """
 # Markdown tablosunu yazdır
 print(markdown_tablo)

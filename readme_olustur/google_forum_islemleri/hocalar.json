@@ -102,8 +102,8 @@
             "anlatim_puani": 86,
             "kolaylik_puani": 78,
             "ogretme_puani": 86,
-            "eglence_puani": 86,
-            "oy_sayisi": 26,
+            "eglence_puani": 87,
+            "oy_sayisi": 27,
             "hoca_aktif_gorevde_mi": true,
             "yillara_gore_yildiz_sayilari": [
                 {
@@ -121,6 +121,14 @@
                     "eglence_puani": 88,
                     "yil": 2024,
                     "oy_sayisi": 12
+                },
+                {
+                    "anlatim_puani": 100,
+                    "kolaylik_puani": 90,
+                    "ogretme_puani": 90,
+                    "eglence_puani": 100,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -1537,10 +1545,10 @@
             ],
             "hoca_aktif_gorevde_mi": false,
             "anlatim_puani": 10,
-            "kolaylik_puani": 18,
+            "kolaylik_puani": 17,
             "ogretme_puani": 15,
             "eglence_puani": 10,
-            "oy_sayisi": 7,
+            "oy_sayisi": 8,
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Kolpa",
@@ -1560,6 +1568,14 @@
                     "eglence_puani": 10,
                     "yil": 2024,
                     "oy_sayisi": 7
+                },
+                {
+                    "anlatim_puani": 10,
+                    "kolaylik_puani": 10,
+                    "ogretme_puani": 10,
+                    "eglence_puani": 10,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -2164,6 +2180,6 @@
     "bolum_aciklamasi": "Bu bölüm, Yıldız Teknik Üniversitesi Bilgisayar Mühendisliği bölümündeki hocaların detaylı bilgilerini içerir. Hocaların adları, ofis bilgileri, araştırma sayfalarının bağlantıları ve verdikleri bazı dersler bu bölümde listelenmektedir. Öğrenciler ve diğer ilgililer için hocalar hakkında temel bilgiler ve iletişim detayları sunulmaktadır. Hocaların puanlamaları tamamen subjektiftir ve  1-10 yıldız arasında yapılmıştır.",
     "en_populer_hoca": {
         "hoca_adi": "Prof. Dr. Banu Diri",
-        "oy_sayisi": 26
+        "oy_sayisi": 27
     }
 }

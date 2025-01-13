@@ -315,9 +315,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | **Durum**                        | **Oran (%)**       |
 |----------------------------------|--------------------|
-| Mezunların % kaçı işsiz          | %11.11 |
-| Mezun olmayanların % kaçı işsiz  | %28.57 |
-| Yurt dışında çalışmayanların oranı  | %96.55 |
+| Mezunların % kaçı işsiz               | %11.11 |
+| Mezun olmayanların % kaçı işsiz       | %28.57 |
+| Yurt dışında çalışmayanların oranı    | %96.55 |
 
 
 ### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
@@ -735,7 +735,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-26-oy)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-27-oy)
     - [AEL](#-dr-ahmet-elbir)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Sayısal%20Analiz)
 
@@ -791,7 +791,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-26-oy)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-27-oy)
     - [AEL](#-dr-ahmet-elbir)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Ayrık%20Matematik)
 
@@ -1153,7 +1153,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-26-oy)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-27-oy)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Seminer%20ve%20Meslek%20Etiği)
 
@@ -1216,7 +1216,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -1228,6 +1228,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
           - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Bilgisayar%20Projesi)
 
@@ -1591,7 +1595,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-26-oy)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-27-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
 
 
@@ -1896,6 +1900,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [OK](#-prof-dr-oya-kalıpsız)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yönetim%20Bilgi%20Sistemleri)
 
+
+#### 📘 Yöneylem Araştırması 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yöneylem%20Araştırması)
+
 ### 🗓 Sosyal Seçmeli 1
 
 
@@ -1921,6 +1932,20 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Felsefeye%20Giriş)
+
+
+#### 📘 Muhasebe Organizasyonu 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Muhasebe%20Organizasyonu)
+
+
+#### 📘 Osmanlı Devletinin Toplumsal Yapısı 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
 
 
 #### 📘 Uluslararası Pazarlama 
@@ -2097,7 +2122,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-26-oy)
+    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-27-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Sıkıştırma)
 
 
@@ -2390,7 +2415,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (26 oy)
+#### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (27 oy)
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
@@ -2416,7 +2441,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-    - ℹ️ Yıldızlar 26 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 27 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -2432,6 +2457,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
       - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
         - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3687,7 +3718,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3697,6 +3728,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
       - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 </details>
@@ -3829,6 +3866,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Ahmet Erman</i></b> </h6>
 <p align='center'><a href='https://github.com/AhmetErman'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-erman-59043a267/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Ahmet Furkan Çınarka</i></b> </h6>
+<p align='center'><a href='https://github.com/Furkancinarka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmetfurkan%C3%A7%C4%B1narka'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Ali Albayrak</i></b> </h6>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
