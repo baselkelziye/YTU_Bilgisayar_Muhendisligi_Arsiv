@@ -1532,10 +1532,10 @@
                     }
                 }
             ],
-            "kolaylik_puani": 55,
-            "gereklilik_puani": 95,
+            "kolaylik_puani": 58,
+            "gereklilik_puani": 96,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 4,
+            "oy_sayisi": 5,
             "guncel_mi": true,
             "derse_dair_oneriler": [
                 {
@@ -1562,6 +1562,12 @@
                     "gereklilik_puani": 93,
                     "yil": 2024,
                     "oy_sayisi": 3
+                },
+                {
+                    "kolaylik_puani": 70,
+                    "gereklilik_puani": 100,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -3142,6 +3148,30 @@
             "ad": "Davranış Bilimi",
             "yil": 0,
             "donem": "",
+            "tip": "Sosyal Seçmeli 1",
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
+        },
+        {
+            "ad": "Osmanlı Devletinin Toplumsal Yapısı",
+            "yil": 0,
+            "donem": "",
+            "tip": "Sosyal Seçmeli 1",
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
+        },
+        {
+            "ad": "Yöneylem Araştırması",
+            "yil": 0,
+            "donem": "yok",
+            "tip": "Mesleki Seçmeli 1",
+            "dersi_veren_hocalar": [],
+            "guncel_mi": true
+        },
+        {
+            "ad": "Muhasebe Organizasyonu",
+            "yil": 0,
+            "donem": "yok",
             "tip": "Sosyal Seçmeli 1",
             "dersi_veren_hocalar": [],
             "guncel_mi": true

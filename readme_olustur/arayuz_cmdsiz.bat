@@ -35,7 +35,7 @@ if not exist "%VENV_DIR%" (
 )
 
 :: Sanal ortamı etkinleştirin
-call "%VENV_DIR%\Scripts\activate.bat"
+call "%VENV_DIR%\Scripts\activate"
 
 :: Gerekli kütüphaneleri yükleyin
 echo Gerekli kutuphaneler kontrol ediliyor ve yukleniyor...
