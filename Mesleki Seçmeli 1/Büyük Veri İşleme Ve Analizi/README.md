@@ -22,5 +22,5 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1Y9GsiJLU9QwoG9uto5Qq4kadXJc4ya43?usp=drive_link) ✨
 - 📄 **Proje:** [GitHub'dan örnek proje dökümanları](https://github.com/tahtaciburak/bigdata-term-project) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

@@ -30,7 +30,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
 - 📄 **Not:** [El yazısı not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/slaytlar_notlar/2022/notlar) ✨
 - 📄 **Not:** [Nasırın el yazısı alt seviye notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/slaytlar_notlar/2021/nas%C4%B1r%20el%20yaz%C4%B1s%C4%B1.pdf) render edilemiyorsa indirin... ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

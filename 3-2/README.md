@@ -38,7 +38,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -88,7 +88,7 @@
 - 📄 **Proje:** [GitHub'da örnek proje dökümanları](https://github.com/SuleymanAliburakCinar/Price-Prediction-Application-for-Melbourne-City) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=4AgsiBP-zRU&ab_channel=ETS) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=nyzR1vEWTHc&ab_channel=TolgaZiftci) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Mesleki Hukuk ve Etik
@@ -116,7 +116,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -150,7 +150,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Veri İletişimi ve Bilgisayar Ağları
@@ -181,7 +181,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
 - 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 **Not:** [Rameş'in notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/rame%C5%9F%20el%20yaz%C4%B1s%C4%B1) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -222,7 +222,7 @@
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨
 - 📄 **Proje:** Proje/[Ödev](https://www.youtube.com/watch?v=Zt5yucbBEZI&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -255,7 +255,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
 - 📄 **Proje:** [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

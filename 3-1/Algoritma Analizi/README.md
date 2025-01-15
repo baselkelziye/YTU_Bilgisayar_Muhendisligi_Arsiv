@@ -39,7 +39,7 @@
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=OMcNmKqCihk&ab_channel=TalhaCicek) ✨
 - 📄 **Proje:** [Proje için örnek video 4](https://www.youtube.com/watch?v=_aKpZq7s7dY&ab_channel=enis) ✨
 - 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=qi6SI2Bf-_Q&t=8s&ab_channel=MuhammetKayraBulut)/[Ödev](https://www.youtube.com/watch?v=mjKFSLJ4C0g&t=1s&ab_channel=MuhammetKayraBulut) için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
