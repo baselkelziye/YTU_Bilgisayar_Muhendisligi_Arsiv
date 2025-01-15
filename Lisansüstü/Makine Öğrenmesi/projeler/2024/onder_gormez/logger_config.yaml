@@ -1,0 +1,40 @@
+version: 1
+
+formatters:
+  detailed:
+    format: '[%(levelname)s] [%(asctime)s.%(msecs)03dZ] [%(name)s] [%(filename)s:%(lineno)d] %(message)s'
+    datefmt: '%Y-%m-%dT%H:%M:%S'
+  simple:
+    format: '[%(levelname)s] [%(asctime)s.%(msecs)03dZ] %(message)s'
+    datefmt: '%Y-%m-%dT%H:%M:%S'
+
+handlers:
+  console_debug_detailed:
+    class: logging.StreamHandler
+    level: DEBUG # and higher
+    formatter: detailed
+    stream: ext://sys.stdout
+  console_debug_simple:
+    class: logging.StreamHandler
+    level: DEBUG # and higher
+    formatter: simple
+    stream: ext://sys.stdout
+  console_error:
+    class: logging.StreamHandler
+    level: ERROR
+    formatter: detailed
+    stream: ext://sys.stderr
+
+loggers:
+  default_logger:
+    level: DEBUG
+    handlers: [console_debug_simple]
+    propagate: no
+  error_logger:
+    level: ERROR
+    handlers: [console_error]
+    propagate: no
+
+# root:
+#   level: DEBUG
+#   handlers: [console_debug, console_info, console_warning, console_error]
