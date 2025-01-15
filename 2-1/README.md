@@ -37,7 +37,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -79,7 +79,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1VcDey9b_Mg6RCz_qrEEgpWgOmYJPCC-b?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -112,7 +112,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hNpNMVPmbuGqAzHEKXY3T5L38v5GkTXn?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -149,7 +149,7 @@
 - 📄 **Not:** [Efe Girgin'in notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/efe_girgin) ✨
 - 📄 **Not:** [Esma Nur Çilekaya'nın elyazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2023/esma_nur_cilekaya/not.pdf) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/muhammed_nasir_sabir/not.pdf) GitHub'dan açılmıyorsa indirin. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -190,7 +190,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1X6kT7E10Z85QGRTOK5r7NuckHfYuYW54?usp=drive_link) ✨
 - 📄 **Not:** [Çok güzel çıkarılmış ders notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Lojik%20Devreler/slaytlar_notlar/2021/efe'nin%20notlar%C4%B1%20%C3%A7ok%20g%C3%BCzeller) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-1/Lojik%20Devreler/slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -226,7 +226,7 @@
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1zKtjd9DCbePaRoQbQbF-banQ71u-_AqN?usp=drive_link) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=eQOqd2qvkJE&ab_channel=TolgaZiftci) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=889IY3UeJDQ&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

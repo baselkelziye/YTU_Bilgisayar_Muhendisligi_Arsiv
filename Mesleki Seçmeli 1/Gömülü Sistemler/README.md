@@ -28,7 +28,7 @@
 - 📄 **Proje:** [Hocaların hazırladığı 2022-2023 projeleri tanıtım videosu](https://www.youtube.com/watch?v=PHACPjpUpHM&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=ETFdrZZc5sY&ab_channel=mehmet%C3%A7alo%C4%9Flu) ✨
 - 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=wfL-sVkdhFM&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

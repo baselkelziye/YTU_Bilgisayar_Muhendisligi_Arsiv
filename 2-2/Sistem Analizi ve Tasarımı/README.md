@@ -31,7 +31,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
 - 📄 **Not:** [Melihin 2024 Notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1/slaytlar_notlar/2024/melih) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

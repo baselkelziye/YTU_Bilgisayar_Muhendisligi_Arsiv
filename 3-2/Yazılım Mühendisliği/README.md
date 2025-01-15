@@ -25,7 +25,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link) ✨
 - 📄 **Proje:** [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

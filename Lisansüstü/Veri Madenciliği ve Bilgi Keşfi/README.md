@@ -21,7 +21,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:

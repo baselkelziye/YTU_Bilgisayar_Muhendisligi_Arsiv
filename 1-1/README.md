@@ -48,7 +48,7 @@
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=DQL9nIjVT4s&ab_channel=RubarG%C3%BCnd%C3%BCz) ✨
 - 📄 **Proje:** [Proje için örnek video 4](https://www.youtube.com/watch?v=MhEUc9Rndvk&ab_channel=MertTunaKurnaz) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
@@ -87,7 +87,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış Sorular Linki](https://drive.google.com/drive/folders/1DP97u6jt1lRFiq6vYgSu4hizGfCMeJ4l?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 İleri İngilizce 1
@@ -119,7 +119,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 İş Sağlığı ve Güvenliği 1
@@ -148,7 +148,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Lineer Cebir
@@ -182,7 +182,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1RP4nCQInEXmM37EqY38MDMNV2YD2WMik?usp=drive_link) ✨
 - 📄 **Not:** [Esma'nın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-1/Lineer%20Cebir/slaytlar_notlar/2020/esma%20ekmek%C3%A7i%20notlar%C4%B1.pdf) GitHub'da açılmazsa indirin. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Matematik 1
@@ -211,5 +211,5 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ua0NzmwJBWeNQx3QPgUDU4N_C2-MzSjn?usp=drive_link) ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

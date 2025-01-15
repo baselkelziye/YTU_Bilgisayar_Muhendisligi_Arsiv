@@ -37,7 +37,7 @@
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
 - 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
-- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf?usp=sharing)
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
