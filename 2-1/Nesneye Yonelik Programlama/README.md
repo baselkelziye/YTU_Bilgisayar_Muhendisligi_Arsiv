@@ -8,6 +8,7 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders. 
   - 👤 **_Blessed Camel_**: Bölümün en kritik derslerinden. Alacağınız verim hocanıza göre değişir. Bu dersi alırken asla bölümle yetinmeyin kendinizi ek olarak da geliştirin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Yıldızsefiri_**: Ders çok zor değil ama biraz emek istiyor. FÇ nin dersleri güzel ve eğlenceli geçiyor ama notları bol değil. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
