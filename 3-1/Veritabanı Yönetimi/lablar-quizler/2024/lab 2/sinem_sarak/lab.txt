@@ -1,0 +1,157 @@
+BLM3041 Veritabanı Yönetimi 2.Quizi 12.12.2024  B GRUBU 
+Öğrenci No: 22011647
+Ad: Sinem          Soyad: Sarak
+
+1-) Şirkette en düşük maaşa sahip departman yöneticisinin ismini ve soyismini iki farklı yöntemle bulunuz. (15p)
+
+1. yöntem: min kullanımı:
+
+select fname,lname
+from employee join department on (mgrssn = ssn)
+where salary = (select min(salary)
+from employee join department on (mgrssn = ssn))
+
+2. yöntem: kıyaslayarak en küçük maaşı bulma
+
+select distinct fname,lname
+from employee
+where ssn in (select ssn from employee join department on (mgrssn = ssn))
+AND salary <= ALL(select distinct salary
+from employee
+where ssn in (select ssn from employee join department on (mgrssn = ssn)))
+
+sonuç:
+
+"fname"		"lname"
+"Franklin"	"Wong"
+
+--------------------------------------------------------------------------------------
+2-) Her bir departmanda maaşı 30000’den büyük olan kaç çalışan olduğunu departman isimlerine göre listeleyiniz. 
+Maaşı 30000’den büyük olan çalışan sayısı 3’ten az olan departmanları dahil etmeyiniz. (15p)
+
+
+SELECT count(ssn) as numberofemployees, dname
+FROM employee join department on (dno = dnumber)
+where salary>30000
+group by dname
+having count(ssn)> 3
+
+
+"numberofemployees"	"dname"
+13			"Sales"
+10			"Hardware"
+8			"Software"
+
+
+--------------------------------------------------------------------------------------
+
+
+3-)  Hiçbir projede görev almayan çalışanlardan en büyük SSN numarasına sahip olanı bulunuz.(15p)
+
+
+select max(ssn)
+from employee
+where ssn not in (select essn
+from employee join works_on on (ssn = essn))
+
+
+"max"
+"666666602"
+
+--------------------------------------------------------------------------------------
+
+
+4-) “Research” departmanına bağlı kaç proje yürütüldüğünü bulan ve döndüren pl/pgSQL fonksiyonunu yazınız (fonksiyon sayı döndürmelidir). 
+Fonksiyonu çağırınız. (15p)
+
+fonksiyon:
+
+CREATE or replace FUNCTION getProjectCount (projectName varchar(20))
+RETURNS integer AS $$
+	DECLARE projectnum integer;
+BEGIN
+
+	select count(pnumber) into projectnum
+	from department join project on (dnum = dnumber)
+	where dname = projectname
+	group by dname;
+return projectnum;
+END; $$ LANGUAGE 'plpgsql';
+
+
+çağırılması:
+
+select getProjectCount('Research')
+
+sonucu:
+
+"getprojectcount"
+3
+
+--------------------------------------------------------------------------------------
+
+
+5-)  “Administration” departmanında maaşı departman ortalamasının altında kalan kişilerin maaşına 
+500 ekleyen pl/pgSQL fonksiyonunu yazınız. Fonksiyonu çağırınız.(20p)
+
+
+fonksiyon:
+
+CREATE or replace FUNCTION raiseSalary ()
+RETURNS void AS $$
+	DECLARE avgSalary integer;
+BEGIN
+
+	select avg(salary) into avgSalary
+	from department join employee on (dno = dnumber)
+	where dname = 'Administration';
+
+	update employee 
+	set salary = salary + 500
+	where salary<avgSalary;
+END; $$ LANGUAGE 'plpgsql';
+
+
+çağrılması:
+
+select raiseSalary ()
+
+--------------------------------------------------------------------------------------
+
+
+6-) SSN numarası verilen çalışanın 2 veya daha fazla çocuğu var ise 'çocuk yardımı alacak', yoksa 'yardım alamaz' şeklinde dönüş yapan pl/pgSQL fonksiyonunu yazınız.
+'123456789' SSN numaralı çalışan için fonksiyonu çağırınız. (20p)
+(ipucu: RETURNS TEXT olarak belirttikten sonra fonksiyon içerisinde RETURN 'blah'; yazmak metin ifadesi döndürür.)
+
+fonksiyon:
+
+
+CREATE or replace FUNCTION getkidshelp (employeessn char(9))
+RETURNS TEXT AS $$
+	DECLARE numberofkids integer;
+BEGIN
+
+	select count(*) into numberofkids
+	from dependent join employee on (ssn = essn)
+	where relationship <> 'Spouse' AND ssn = employeessn
+	group by ssn;
+
+	if numberofkids < 2 then
+		RETURN 'yardım alamaz';
+	ELSE
+		RETURN 'çocuk yardımı alacak';
+	end if;
+	
+END; $$ LANGUAGE 'plpgsql';
+
+
+çağrılması:
+
+select getkidshelp ('123456789')
+
+sonuç:
+
+"çocuk yardımı alacak"
+
+
+
