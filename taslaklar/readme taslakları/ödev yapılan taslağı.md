@@ -2,8 +2,10 @@
 
 ## Genel Bilgiler
 * **Kişi Sayısı:** 2
-* **Rapor + Sunum Notu:** 50
+* **Ödev Notu:** 95
+* **Ortalamaya Katkısı:** %20
 * **Kişi(ler):** Osman Oruç Aydın, Ceyda
+* **Ders Yürütücüsü** Ali Gökhan Yavuz
 
 ## Ödev Teklifi (Varsa)
 * **Makale:** YTUCEth Bot
