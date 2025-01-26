@@ -1,0 +1,153 @@
+BLM3041 Veritabanı Yönetimi 3.Quizi 02.01.2025  B GRUBU 
+Öğrenci No: 22011647
+Ad: Sinem   Soyad: Sarak
+--Tüm sorular 20 puandır. SÜRE: 50 dk. Yükleme için +5 dk süre olacaktır.  Başarılar.
+
+1-) /*SSN numarası verilen çalışanın akraba sayısının 3 ve üzeri olması durumunda ekrana 
+'Çalışanın 3 ve üzeri sayıda akrabası bulunmaktadır.' şeklinde hata mesajı (Raise Exception) yazdıran fonksiyonu yazınız.
+Fonksiyonu '123456789' SSN numaralı çalışan için çağırınız.*/
+
+
+CEVAP: 
+
+	FONKSİYON:
+
+create or replace function soru1(emp_ssn char(9)) returns void as $$
+DECLARE
+	rel_count integer;		
+BEGIN
+	select count(*) from employee join dependent on ssn = essn and employee.ssn =emp_ssn into rel_count ;
+		if rel_count > 2 then
+			raise exception 'Çalışanın 3 ve üzeri sayıda akrabası bulunmaktadır.';
+		end if;
+END;
+$$ LANGUAGE 'plpgsql';
+
+	ÇAĞRILMASI:
+
+select soru1('123456789')
+
+
+------------------------------------------------------------------------------------------
+
+
+
+2-) /* Bir projenin ismini ve lokasyonunu barındıran bir tür (record) tanımlayın.*/
+
+CEVAP:
+create type soru2type as (project_name varchar(25), project_location varchar(15));
+
+------------------------------------------------------------------------------------------
+
+3-) /*Cursor kullanarak, ismi verilen şehirlerde yürütülen projelerin isimlerini ve bağlı bulundukları departman adlarını
+Raise Info ile ekrana yazdıran fonksiyonu yazınız. Fonksiyonu 'Houston' şehri için çağırınız.*/  
+
+CEVAP: 
+	FONKSİYON
+create or replace function soru3(city varchar(15)) returns void as $$
+DECLARE
+	
+	project_city_cursor cursor for select pname, dname from project join department on dnumber = dnum where plocation = city;
+BEGIN
+	for p in project_city_cursor loop
+		Raise info 'Project name: % department: %', p.pname,p.dname;
+	end loop;
+END;
+$$ LANGUAGE 'plpgsql';
+
+	ÇAĞRILMASI:
+
+select soru3('Houston')
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+4-) /* Bir çalışan bir projeye atanmadan önce bu proje numarasının geçerli olup olmadığını kontrol eden
+ve geçersiz ise 'Gecersiz proje numarası' şeklinde hata mesajı (Raise Exception) yazdıran trigger ve fonksiyonunu yazınız.
+Trigger'ı tetikleyen SQL ifadesini yazınız.*/
+
+CEVAP:
+
+	TRIGGER:
+create trigger soru4trigger
+BEFORE INSERT
+ON works_on
+for each row execute procedure soru4func();
+
+	FONKSIYON:
+
+create or replace function soru4func() returns trigger as $$
+BEGIN
+	if new.pno not in (select pnumber from project) then
+		raise exception 'Gecersiz proje numarası';
+		return null;
+	else 
+		return new;
+	end if;
+END;
+$$ LANGUAGE 'plpgsql';
+
+
+	TETIKLEME CASE1: GEÇERSİZ PNO
+
+INSERT INTO works_on VALUES ('123456789', 100, 12)
+
+	TETIKLEME CASE2: GEÇERLİ PNO
+
+INSERT INTO works_on VALUES ('123456789', 92, 12)
+
+------------------------------------------------------------------------------------------
+
+
+5-) /*Bir departmanın bir şehirde ofisi açılırken önceden açılmış toplam 3 ve üzeri sayıda farklı şehirde ofisi bulunuyorsa 
+bu şehirde ofis açmaya izin vermeyen triggerı ve fonksiyonunu yazınız. Triggerı tetikleyecek SQL ifadesini yazınız.*/
+
+CEVAP: 
+	TRIGGER:
+	
+create trigger soru5trigger
+BEFORE INSERT
+ON dept_locations
+for each row execute procedure soru5func();
+
+	FONKSIYON:
+
+create or replace function soru5func() returns trigger as $$
+DECLARE 
+	ofis_count integer;
+BEGIN
+	select count(dlocation) from dept_locations where dnumber = new.dnumber into ofis_count ;
+		if ofis_count > 2 then
+			raise exception 'Bu departmanin cok fazla ofisi var, yenisi acilamaz';
+			return null;
+		else
+			return new;
+		end if;
+END;
+$$ LANGUAGE 'plpgsql';
+	
+
+	TETIKLEME CASE1: OFİS AÇILABİLİR
+
+INSERT INTO dept_locations VALUES (1, 'Istanbul')
+
+	TETIKLEME CASE2: OFİS AÇILAMAZ
+
+INSERT INTO dept_locations VALUES (5, 'Istanbul')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
