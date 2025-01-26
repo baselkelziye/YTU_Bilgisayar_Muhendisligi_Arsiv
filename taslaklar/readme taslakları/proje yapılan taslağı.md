@@ -4,6 +4,10 @@
 * **Kişi Sayısı:** 1
 * **Rapor + Sunum Notu:** 95
 
+## Ödev Notları ve Ortalamalar
+- **Sunum:** 85, süre aşımından ötürü notumun kırıldığını düşünüyorum. Ortalama: 90,88
+- **Rapor:** 91, Ortalama: 87,42
+
 ## Proje Teklifi (Varsa)
 * **Makale:** Almanac —Retrieval-Augmented Language Models for Clinical Medicine
 * **Zorluk Derecesi:** Orta
