@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: -color-bg-default;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mertguler.GUI.Universal.Lists.DoctorListGUI">
+   <children>
+      <AnchorPane layoutX="37.0" layoutY="58.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); -fx-background-color:  -color-bg-default; -fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20;" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="58.0">
+         <children>
+            <TreeTableView fx:id="doctorsTable" layoutX="-1.0" layoutY="37.0" maxHeight="800.0" maxWidth="800.0" prefHeight="349.0" prefWidth="528.0" style="-fx-background-color: -color-bg-default; -fx-background-radius: 0 0 20 20; -fx-border-radius: 0 0 20 20;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="37.0">
+               <columns>
+                  <TreeTableColumn fx:id="nameColumn" prefWidth="155.0" text="Name" />
+                  <TreeTableColumn fx:id="idColumn" prefWidth="155.0" text="Diploma ID" />
+                  <TreeTableColumn fx:id="rendezvousColumn" prefWidth="142.0" text="Appointments" />
+               </columns>
+               <columnResizePolicy>
+                  <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#copy" onMenuValidation="#copy" text="Copy" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TreeTableView>
+            <Separator layoutY="24.0" prefHeight="25.0" prefWidth="531.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 0);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="528.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <Label alignment="CENTER" layoutX="1.0" layoutY="7.0" text="Doctors">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/doctor-menu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox alignment="CENTER" layoutX="86.97802734375" layoutY="463.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="86.97802734375" AnchorPane.rightAnchor="69.0">
+         <children>
+            <Text fill="#98a2b2" opacity="0.8" strokeType="OUTSIDE" strokeWidth="0.0" text="You can copy data with CTRL + C or with right click and copy" wrappingWidth="443.8262405395508">
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

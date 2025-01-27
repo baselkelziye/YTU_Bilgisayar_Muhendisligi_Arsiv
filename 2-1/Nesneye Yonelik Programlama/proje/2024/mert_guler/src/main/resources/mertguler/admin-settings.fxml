@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mertguler.GUI.Admin.AdminSettingsGUI">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="427.0" prefWidth="443.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); -fx-background-color:  -color-bg-default; -fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20;">
+         <children>
+            <Separator layoutY="24.0" prefHeight="25.0" prefWidth="531.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="528.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <Label alignment="CENTER" layoutX="1.0" layoutY="7.0" text="Settings">
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/settings.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" layoutX="56.0" layoutY="93.0" prefHeight="281.0" prefWidth="370.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="93.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="203.0" prefWidth="370.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="327.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 2, 0, 0, 0); -fx-background-color:  -color-bg-default; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);">
+                           <children>
+                              <Spinner fx:id="perPatientSpinner" focusTraversable="false" layoutX="235.0" layoutY="7.0" prefHeight="39.0" prefWidth="81.0" />
+                              <Label layoutX="14.0" layoutY="17.0" opacity="0.7" text="Max Appointment Per Patient">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="53.0" prefWidth="281.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 2, 0, 0, 0); -fx-background-color:  -color-bg-default; -fx-border-radius: 10 10 10 10; -fx-background-radius: 10 10 10 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);">
+                           <children>
+                              <Spinner fx:id="dayLimitSpinner" focusTraversable="false" layoutX="188.0" layoutY="6.0" prefHeight="39.0" prefWidth="81.0" />
+                              <Label layoutX="14.0" layoutY="17.0" opacity="0.7" text="Appointment Day Limit">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#saveToSystem" prefHeight="38.0" prefWidth="154.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);" text="Save to System" textFill="#363636">
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#saveToFile" prefHeight="38.0" prefWidth="154.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);" text="Save to File" textFill="#363636">
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="370.0" spacing="20.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#loadDefaults" prefHeight="38.0" prefWidth="154.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);" text="Load Defaults" textFill="#363636">
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#loadFromFile" prefHeight="38.0" prefWidth="154.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);" text="Load from File" textFill="#363636">
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="dataLabel" alignment="CENTER" layoutX="63.0" layoutY="383.0" prefHeight="20.0" prefWidth="327.0">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="#ee4040" layoutX="26.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 0);" text="These settings are experimental. Only for test purposes." wrappingWidth="398.7562901490471" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="6.173317982302706">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Text>
+            <Text fill="#ee4040" layoutX="21.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 2, 0, 0, 0);" text="Changes might broke the serialized data. Not recommended." wrappingWidth="415.8266820176973" AnchorPane.bottomAnchor="337.2421875" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="6.173317982302706" AnchorPane.topAnchor="73.0">
+               <font>
+                  <Font name="SansSerif Regular" size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

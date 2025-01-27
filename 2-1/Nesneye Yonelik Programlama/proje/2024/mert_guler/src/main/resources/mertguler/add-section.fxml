@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mertguler.GUI.Admin.Section.AddSectionGUI">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: -color-bg-default;">
+         <children>
+            <AnchorPane layoutX="66.0" layoutY="62.0" prefHeight="397.0" prefWidth="465.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0); -fx-background-color:  -color-bg-default; -fx-border-radius: 20 20 20 20; -fx-background-radius: 20 20 20 20;" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="62.0">
+               <children>
+                  <Separator layoutY="24.0" prefHeight="25.0" prefWidth="531.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <HBox alignment="CENTER" prefHeight="39.0" prefWidth="357.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Pane>
+                           <children>
+                              <Label alignment="CENTER" layoutX="1.0" layoutY="7.0" text="Add Section">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="SansSerif Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" layoutX="107.0" layoutY="51.0" prefHeight="310.0" prefWidth="252.0">
+                     <children>
+                        <TextField fx:id="nameField" focusTraversable="false" onAction="#check" prefHeight="49.0" prefWidth="242.0" promptText="Section Name" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="5.0" right="5.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="hospitalBox" focusTraversable="false" prefHeight="49.0" prefWidth="242.0" promptText="Hospital" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <ToggleButton fx:id="childSwitch" mnemonicParsing="false" onAction="#changeChild" prefHeight="48.0" prefWidth="107.0" text="Child Only">
+                           <VBox.margin>
+                              <Insets bottom="30.0" />
+                           </VBox.margin>
+                        </ToggleButton>
+                        <Button mnemonicParsing="false" onAction="#check" prefHeight="38.0" prefWidth="87.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);" text="Add" textFill="#363636">
+                           <font>
+                              <Font name="SansSerif Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
