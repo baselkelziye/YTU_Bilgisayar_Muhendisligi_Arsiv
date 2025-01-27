@@ -7,11 +7,12 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor. 
+  - 👤 **_Sort Sort Sort_**: Başka alan başka konu yokmuş gibi hep sort hep algoritma, bu mühendislikte o kadar çeşitli ders olacakken sırf bu algoritmq flowchart mantığını 2 derste anlatıp bitirmek varken öğrencileri bıktırmanın mantığı yok. Mesela işletim sistemi gibi farklı dersler görelim. Bbg dahil 3-4 algoritma C dersi görmek yerine sayısını azaltmak zor olmamalı. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -22,6 +23,10 @@
     - 📅 *2024 yılı için yıldız bilgileri*
       - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
       - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
+      - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 ## 📝 Derse Dair Öneriler
