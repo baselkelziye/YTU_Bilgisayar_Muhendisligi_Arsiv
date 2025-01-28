@@ -10,11 +10,12 @@
   - 👤 **_Violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
   - 👤 **_Blessed Camel_**: Ders işleyişi ne kadar zevkli de olsa (flowchart hariç ) sınavlarında boncuk boncuk terliyorsunuz AA geçmek gerçekten takdir edilesi ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Anonim_**: ortalamanın yüksek olma sebebi tüm üst dönemlerin yükseltmek için alttan alması dersi . Temeli olmayan biri için 1.dönemin en zor dersi ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Sien_**: Bu ders bana kalırsa tam bir bubi tuzağı. Çoğu şeyin mantıksal ve yorumlanabilir olmasından dolayı kolayca yapılabilir izlenimi veriyor ama oldukça pratik yapmayı ve temellerini iyi anlamayı gerektiriyor. Derslerden önce bir hazırlığın şart olduğunu düşünüyorum, hocalar bazen çok kullanılan ama yine de alana özgü kavramları açıklamadan sıkça kullanabiliyor ve bazı ağzı bozuklar önceden öğrendiği 3-4 kavram üstünden hocaya inatla soru sormayı ve dersi bulandırmayı çok seviyor. Biraz içine girdikçe aşina olunan şeyler hepsi. İlk başta yabancı gelebilir. Ama pek yapılamayacak bir şey de yok. Sözel kısımları sınavda çıkmaz deyip atlamayın hatta mantığıyla öğrenin çünkü çıkıyor. Algoritma ve kod kısmında bol bol pratik gerekli hatta yapabilirseniz dış kaynaklardan da beslenin. Burada büyük resmi görmeye çalışıyorsunuz ve senenin başında hiçbir şey bilmeyip buradan 2-3 alan ve biraz kod yazmayı bile öğrenerek çıksanız baya kârda olduğunuzu söylemem gerekli, o yüzden çatır çutur kod yazamıyorum, kavramları sular seller gibi aktaramıyorum tarzı üzülmenize gerek yok. Kısaca anladığınızdan emin olun çünkü bölüm derslerinin temeli burada oluşuyor ve sonradan bilmem kaç yazılım dili öğrenip tüm alanları da deneseniz mantığı oturmamışsa tıkanmanıza sebep olur. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 23 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 24 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -29,7 +30,7 @@
     - 📅 *2025 yılı için yıldız bilgileri*
       - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
       - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 ## 📝 Derse Dair Öneriler
 

@@ -485,18 +485,19 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 1. Yıl - Güz
 
 
-#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (23 oy)
+#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (24 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
     - 👤 **_Violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
     - 👤 **_Blessed Camel_**: Ders işleyişi ne kadar zevkli de olsa (flowchart hariç ) sınavlarında boncuk boncuk terliyorsunuz AA geçmek gerçekten takdir edilesi ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Anonim_**: ortalamanın yüksek olma sebebi tüm üst dönemlerin yükseltmek için alttan alması dersi . Temeli olmayan biri için 1.dönemin en zor dersi ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+    - 👤 **_Sien_**: Bu ders bana kalırsa tam bir bubi tuzağı. Çoğu şeyin mantıksal ve yorumlanabilir olmasından dolayı kolayca yapılabilir izlenimi veriyor ama oldukça pratik yapmayı ve temellerini iyi anlamayı gerektiriyor. Derslerden önce bir hazırlığın şart olduğunu düşünüyorum, hocalar bazen çok kullanılan ama yine de alana özgü kavramları açıklamadan sıkça kullanabiliyor ve bazı ağzı bozuklar önceden öğrendiği 3-4 kavram üstünden hocaya inatla soru sormayı ve dersi bulandırmayı çok seviyor. Biraz içine girdikçe aşina olunan şeyler hepsi. İlk başta yabancı gelebilir. Ama pek yapılamayacak bir şey de yok. Sözel kısımları sınavda çıkmaz deyip atlamayın hatta mantığıyla öğrenin çünkü çıkıyor. Algoritma ve kod kısmında bol bol pratik gerekli hatta yapabilirseniz dış kaynaklardan da beslenin. Burada büyük resmi görmeye çalışıyorsunuz ve senenin başında hiçbir şey bilmeyip buradan 2-3 alan ve biraz kod yazmayı bile öğrenerek çıksanız baya kârda olduğunuzu söylemem gerekli, o yüzden çatır çutur kod yazamıyorum, kavramları sular seller gibi aktaramıyorum tarzı üzülmenize gerek yok. Kısaca anladığınızdan emin olun çünkü bölüm derslerinin temeli burada oluşuyor ve sonradan bilmem kaç yazılım dili öğrenip tüm alanları da deneseniz mantığı oturmamışsa tıkanmanıza sebep olur. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 23 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 24 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -511,7 +512,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 📅 *2025 yılı için yıldız bilgileri*
         - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-          - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+          - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
@@ -732,7 +733,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -740,6 +741,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
           - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Mühendisler%20İçin%20Yarıiletken%20Fiziği)
 
@@ -2982,7 +2987,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Floyd-Warshall Algoritması_**: Kendisi beni 30 dk aşağılama rekoru kırmıştır. Diyeceklerim bu kadardır. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-23-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
@@ -3271,18 +3276,19 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Isimsiz_**: kendisi adamın dibidir ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
   - 👤 **_Üçx_**: BBG dersi için en uygun hoca olduğunu düşünüyorum, insanın bilgisayar bilimleri iştahını kabartıyor. Keşke daha fazla ders anlatsa. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - 👤 **_R3_**: Geçen yıl BBG yi G1 den almıştım ders anlatımı ve öğrenciyi derste tutma açısından bence çok iyi BBG adına mükemmel hocaydı bence ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Sien_**: Hocadan bbg dersini aldım. Hazırlık okuyup bölüme başlamıştım. Hoca öncelikli olarak bence oldukça öğrenci dostu, sohbet ederken vs. çekinmemi gerektirecek bir durum olmadı. Derslerde de bizi genelde konuşturmaya çalışıyordu. Puanlama konusunda da gerektiği gibi davrandığını düşünüyorum, kıt kanaat vermiyor ama yaptığına puan alıyorsun gibi. Sadece bazı derslerde temposunu daha iyi ayarlaması lazım bence, bazı slaytları vs. fazla hızlı anlattı ve bence çok slayt üzerinden gitmesi de hocanın bizim nerelerde takılacağımızı vs. tahmin etmesini zorlaştırıyor. Zaten önümüzde kaynak var gibi düşünüyor olabilir ama bir şeyi ne kadar en başından ve tane tane anlatırsa bence o kadar iyi. Dersin en beğendiğim yanları ise bize algoritmalar hakkında vs. olsun sıkça soru sorup ve birlikte tahtaya yazarak düşünmemizi sağlaması ve ileriye dönük konular hakkında birkaç kavram/konuyu çaktırmadan çıtlatması olmuştur. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-23-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3300,10 +3306,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2025 yılı için yıldız bilgileri*
       - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3702,7 +3708,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3714,10 +3720,10 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2025 yılı için yıldız bilgileri*
       - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -4007,7 +4013,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Kolpa_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-23-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
 - ⭐ **Yıldız Sayıları:**

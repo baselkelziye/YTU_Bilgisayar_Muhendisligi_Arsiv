@@ -41,10 +41,19 @@
                         "ay": 1,
                         "gun": 26
                     }
+                },
+                {
+                    "kisi": "Sien",
+                    "yorum": "Bu ders bana kalırsa tam bir bubi tuzağı. Çoğu şeyin mantıksal ve yorumlanabilir olmasından dolayı kolayca yapılabilir izlenimi veriyor ama oldukça pratik yapmayı ve temellerini iyi anlamayı gerektiriyor. Derslerden önce bir hazırlığın şart olduğunu düşünüyorum, hocalar bazen çok kullanılan ama yine de alana özgü kavramları açıklamadan sıkça kullanabiliyor ve bazı ağzı bozuklar önceden öğrendiği 3-4 kavram üstünden hocaya inatla soru sormayı ve dersi bulandırmayı çok seviyor. Biraz içine girdikçe aşina olunan şeyler hepsi. İlk başta yabancı gelebilir. Ama pek yapılamayacak bir şey de yok. Sözel kısımları sınavda çıkmaz deyip atlamayın hatta mantığıyla öğrenin çünkü çıkıyor. Algoritma ve kod kısmında bol bol pratik gerekli hatta yapabilirseniz dış kaynaklardan da beslenin. Burada büyük resmi görmeye çalışıyorsunuz ve senenin başında hiçbir şey bilmeyip buradan 2-3 alan ve biraz kod yazmayı bile öğrenerek çıksanız baya kârda olduğunuzu söylemem gerekli, o yüzden çatır çutur kod yazamıyorum, kavramları sular seller gibi aktaramıyorum tarzı üzülmenize gerek yok. Kısaca anladığınızdan emin olun çünkü bölüm derslerinin temeli burada oluşuyor ve sonradan bilmem kaç yazılım dili öğrenip tüm alanları da deneseniz mantığı oturmamışsa tıkanmanıza sebep olur.",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 1,
+                        "gun": 28
+                    }
                 }
             ],
-            "kolaylik_puani": 57,
-            "gereklilik_puani": 90,
+            "kolaylik_puani": 58,
+            "gereklilik_puani": 91,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "G1",
@@ -59,7 +68,7 @@
                     "kisaltma": "ZCT"
                 }
             ],
-            "oy_sayisi": 23,
+            "oy_sayisi": 24,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UFw-BQXsy567TdLto8TLRKwG6VFoOvKf?usp=drive_link)",
@@ -91,10 +100,10 @@
                     "oy_sayisi": 13
                 },
                 {
-                    "kolaylik_puani": 62,
-                    "gereklilik_puani": 95,
+                    "kolaylik_puani": 65,
+                    "gereklilik_puani": 96,
                     "yil": 2025,
-                    "oy_sayisi": 7
+                    "oy_sayisi": 8
                 }
             ]
         },
@@ -531,11 +540,11 @@
                     }
                 }
             ],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 36,
+            "kolaylik_puani": 47,
+            "gereklilik_puani": 35,
             "dersi_veren_hocalar": [],
             "guncel_mi": true,
-            "oy_sayisi": 3,
+            "oy_sayisi": 4,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link)",
                 "**Not:** [El Yazısı Not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf)"
@@ -546,6 +555,12 @@
                     "gereklilik_puani": 36,
                     "yil": 2024,
                     "oy_sayisi": 3
+                },
+                {
+                    "kolaylik_puani": 40,
+                    "gereklilik_puani": 30,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -3460,7 +3475,7 @@
     "bolum_aciklamasi": "Bu bölümde, tüm dersler hakkında detaylı bilgiler ve kaynaklar bulunmaktadır. Öğrenciler bu bölümü kullanarak ders materyallerine ve içeriklerine ulaşabilirler.",
     "en_populer_ders": {
         "ders_adi": "Bilgisayar Bilimlerine Giriş",
-        "oy_sayisi": 23
+        "oy_sayisi": 24
     },
     "ders_klasoru_bulunamadi_mesaji": "Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...",
     "guncel_olmayan_ders_aciklamasi": "Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir."
