@@ -1,0 +1,1 @@
+hoca tüm dersleri bu slayttan işliyor.
