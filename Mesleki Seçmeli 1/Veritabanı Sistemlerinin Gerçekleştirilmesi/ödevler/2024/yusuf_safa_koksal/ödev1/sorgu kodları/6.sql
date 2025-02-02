@@ -1,0 +1,1 @@
+SELECT MIN(b), MAX(b) FROM T;
