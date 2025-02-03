@@ -1,0 +1,1 @@
+raporda açıklandı herhangi bir sql sorgusuna gerek yok.
