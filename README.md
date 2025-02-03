@@ -2042,14 +2042,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
       - 📅 *2025 yılı için yıldız bilgileri*
         - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★★★
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
 
@@ -4136,6 +4136,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h4 align='center'>✨ <b><i>Muhammed Nasır Sabır</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/nasirsabir'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/nasirsabir'><b>LinkedIn Profili</b></a></p>
+
+<h4 align='center'>✨ <b><i>Yusuf Safa Köksal</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/yusufsafaa'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusufsafakoksal/'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Yusuf Taha Körkem</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/tahakorkem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/tahakorkem'><b>LinkedIn Profili</b></a></p>
