@@ -30,7 +30,7 @@
 - Yapay sinir ağları implementasyonları
 - Doğal dil işleme uygulamaları
 
-**Veri Kümeleri:** Uygulamalarda kullanılan veri setleri de klasörde mevcut
+**Veri Kümeleri:** Uygulamalarda kullanılan veri kümeleri de klasörde mevcut
 
 **Ek Kaynaklar:**
 
