@@ -16,7 +16,7 @@
 ## Lab Tanımı
 
 ## Not Dağılımı
-
+Notum:82
 
 ## Lab Notları ve Ortalamalar
 

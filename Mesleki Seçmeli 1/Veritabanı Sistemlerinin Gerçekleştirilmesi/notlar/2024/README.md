@@ -6,14 +6,14 @@
 **Dersi Veren Hoca(lar):** Mustafa Utku Kalay
 
 ## Not Bilgileri
-**Not Sahibi:** 
+**Not Sahibi:** Mustafa Utku Kalay
 
 **Not Tipi:** Bilgisayar
 
-**Not Kapsamı:**
+**Not Kapsamı:** Sınavlar için hazırlık soruları
 
-**Not Ayrıntı Oranı:**
+**Not Ayrıntı Oranı:** Çok fazla ayrıntılı, anlaması zor
 
-**Not Ne Kadar Yeterli?:**
+**Not Ne Kadar Yeterli?:** Yeterli değil ve zor olduğundan sadece nota bakarak girerseniz 30'u geçemezsiniz
 
 ## Ek Bilgiler (Varsa)

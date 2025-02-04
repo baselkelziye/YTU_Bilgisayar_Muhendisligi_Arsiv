@@ -7,11 +7,11 @@
 
 ## Ödev Bilgileri
 
-**Ödev Kişi Sayısı:**
+**Ödev Kişi Sayısı:** 1
 
-**Ödev Süresi:** 
+**Ödev Süresi:** 2-3 Hafta
 
-**Ödev Zorluğu:**
+**Ödev Zorluğu:** Zor
 
 ## Ödev Teklifi (Varsa)
 
@@ -20,15 +20,16 @@
 
 
 ## Not Dağılımı
-
+%10
 
 ## Ödev Notları ve Ortalamalar
-
+Notum: 80, Ortalama: 86
 
 ## Ödevde Neler Yapıldı
-* 
-* 
-## Ek Bilgiler (Varsa)
+* Anladıklarımız ile rapor yazıldı
+* Video çekmeye gerek yoktu
 
+## Ek Bilgiler (Varsa)
+* Hocanın dediği şeyleri ekstra yaparak bonus puan alma şansı vardı ama istenilen şeyler çok vakit ve emek istiyordu
 
 ## Tavsiye (Varsa)
