@@ -3,7 +3,7 @@
 ## Ders Bilgileri
 **Ders Adı:** Nesneye Yönelik Programlama
 
-**Dersi Veren Hoca(lar):** Mustafa Utku Kalay
+**Dersi Veren Hoca(lar):** Furkan Çakmak
 
 ## Lab Bilgileri
 
@@ -16,7 +16,7 @@
 ## Lab Tanımı
 
 ## Not Dağılımı
-
+Notum:100
 
 ## Lab Notları ve Ortalamalar
 
