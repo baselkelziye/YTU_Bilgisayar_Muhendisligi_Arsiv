@@ -11,17 +11,17 @@
 
 **Lab Süresi:** 
 
-**Lab Zorluğu:**  
+**Lab Zorluğu:** Süre yetmediğinden zordu
 
 ## Lab Tanımı
 
 ## Not Dağılımı
-
+Notum:90
 
 ## Lab Notları ve Ortalamalar
 
 ## Labda Neler Yapıldı
-* 
+* Dosya işlemleri
 * 
 
 
