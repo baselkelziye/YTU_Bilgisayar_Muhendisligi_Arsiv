@@ -23,5 +23,5 @@ Matrixler üzerinde yol bulma algoritması yazıldı.
 
 ## Ödev Süreci
 1. **İndirme:** Ödev online.yildiz.edu.tr adresinden indirildi.
-1. **Çözme:** Kağıda çözümü yapıldı.
+1. **Çözme:** C'de çözüm yapıldı.
 1. **Yükleme:** Çözüm online.yildiz.edu.tr adresine yüklendi.
