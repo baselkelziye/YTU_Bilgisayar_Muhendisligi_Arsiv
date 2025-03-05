@@ -4192,6 +4192,8 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Ahmet Furkan Çınarka</i></b> </h6>
 <p align='center'><a href='https://github.com/Furkancinarka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmetfurkan%C3%A7%C4%B1narka'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Ahmet Zahid Can</i></b> </h6>
+
 <h6 align='center'> <b><i>Ali Albayrak</i></b> </h6>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
