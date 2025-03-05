@@ -2091,7 +2091,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [AD](#-dr-ayşe-dalgalı)
+    - [AÖ](#-dr-ayşe-öcal)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
 
 
@@ -2209,6 +2209,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Olasılık,%20Rastgele%20Değişkenler%20ve%20Stokastik%20Prosesler)
+
+
+#### 📘 Olasılıksal Robotik 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [EU](#-dr-erkan-uslu)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Olasılıksal%20Robotik)
 
 
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
@@ -3125,7 +3134,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👩‍🏫 Dr. Ayşe Dalgalı 
+#### 👩‍🏫 Dr. Ayşe Öcal 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** []()
 - 💬 **Öğrenci Görüşleri:**
@@ -3183,6 +3192,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Mikroişlemci Sistemleri](#-mikroişlemci-sistemleri)
   - 📖 [Bilgisayar Organizasyonu](#-bilgisayar-organizasyonu)
   - 📖 [Sayısal İşaret İşleme](#-sayısal-i̇şaret-i̇şleme)
+  - 📖 [Olasılıksal Robotik](#-olasılıksal-robotik)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
@@ -4059,9 +4069,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <h2 align='center'>🆎 Hoca Kısaltmaları</h2>
 
 <p align='center'>🔹 <b>ACK</b> &emsp; Doç. Dr. Ali Can Karaca 🔹</p>
-<p align='center'>🔹 <b>AD</b> &emsp; Dr. Ayşe Dalgalı 🔹</p>
 <p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
 <p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
+<p align='center'>🔹 <b>AÖ</b> &emsp; Dr. Ayşe Öcal 🔹</p>
 <p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet ÖZDEN 🔹</p>
 <p align='center'>🔹 <b>BD</b> &emsp; Prof. Dr. Banu Diri 🔹</p>
 <p align='center'>🔹 <b>EA</b> &emsp; Arş. Grv. Elif AŞICI 🔹</p>

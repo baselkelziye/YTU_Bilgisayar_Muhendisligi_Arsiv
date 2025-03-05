@@ -3304,6 +3304,10 @@
                 {
                     "ad": "Dr. Ayşe Dalgalı",
                     "kisaltma": "AD"
+                },
+                {
+                    "ad": "Dr. Ayşe Öcal",
+                    "kisaltma": "AÖ"
                 }
             ],
             "guncel_mi": true,
@@ -3468,6 +3472,19 @@
             "donem": "yok",
             "tip": "Lisansüstü",
             "dersi_veren_hocalar": [],
+            "guncel_mi": true
+        },
+        {
+            "ad": "Olasılıksal Robotik",
+            "yil": 0,
+            "donem": "yok",
+            "tip": "Lisansüstü",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "EU",
+                    "ad": "Dr. Erkan Uslu"
+                }
+            ],
             "guncel_mi": true
         }
     ],
