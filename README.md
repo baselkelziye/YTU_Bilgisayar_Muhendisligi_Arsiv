@@ -2612,6 +2612,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Kolpa_**: Dersi öğretmek için ekstra çaba sarf etmesini ve öğrenip öğrenmememizi ciddiye almasını seviyorum. Böyle hoca pek yok üniversitelerde ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Floyd-Warshall Algoritması_**: Esferi safirin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Ifdöngüsü_**: 10 sene önce yazdığı ders notlarını örneklerine kadar birebir aynı şekilde tahtaya geçirir, öğrencilere “kırmızılı” gibi üzerindeki kıyafet rengine göre hitap eder, maillere dönmez, sınavları son gün açıklar, harf notunu düzgün yapmaz. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Sivrisineksaz_**: Çok fazla söze gerek yok --> ekşi + ytuce>personel>emeğigeçenler ℹ️ Yorum **03.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
@@ -2622,7 +2623,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 17 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 18 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -2643,7 +2644,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -2666,6 +2667,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Üçx_**: Akademik olarak en fazla çabalayan ve alanını en fazla obsesyon haline getiren hocamız olabilir. Kendisi gibi birkaç tane daha akademisyen olsaydı bölümümüz kesinlikle daha iyi olurdu. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
   - 👤 **_Med_**: Differential equations aldım gerçekten iyi bi hoca ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_R3_**: Diferansiyeli mfa dan aldım , birazda dersin içeriğinden kaynaklı anlattığı bazı şeyler havada kalıyor , bilim aşkıyla yanıp tutuşan bir hoca ders haricinde hiçbir şey umrunda değil muhtemelen keşke bu tarz daha fazla hocamız olsa ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Nick_**: Verdiği ödev dosyaları okunarak anlaşılmaz . ℹ️ Yorum **03.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
@@ -4141,6 +4143,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Mert Güler</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
+
 <h4 align='center'>✨ <b><i>Muhammed Ali Şen</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
 
@@ -4168,16 +4173,13 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Halil Uluoglu</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/haliluluoglu'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/halil-uluoglu'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>🔹 <b><i>Mert Güler</i></b> 🔹</h5>
-<p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
-
 <h5 align='center'>🔹 <b><i>Osman Yiğit Küçükkıratlı</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/yigitkiratli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yigitkucukkiratli/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
-<h5 align='center'>🔹 <b><i>Yusuf Erdem Erdem</i></b> 🔹</h5>
+<h5 align='center'>🔹 <b><i>Yusuf Erdem</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/erdem-erdem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusuf-erdem-941685258/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Şevval Çabuk</i></b> 🔹</h5>
