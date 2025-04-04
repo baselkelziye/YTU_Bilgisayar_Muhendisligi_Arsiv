@@ -15,14 +15,6 @@ This project implements a fully connected neural network (MLP) from scratch in C
 - **Shuffle and batch processing**
 - **Memory management** for efficient computation
 
-## File Structure
-- `main.c` - Entry point for training and testing the model
-- `network.c` - Neural network implementation
-- `network.h` - Neural network structures and function prototypes
-- `data.c` - Functions for reading and processing datasets
-- `data.h` - Data structure definitions
-- `utils.c` - Helper functions (randomization, activation, etc.)
-- `utils.h` - Utility function prototypes
 
 ## How It Works
 ### 1. Network Structure
@@ -49,28 +41,6 @@ Compile the code using `gcc`:
 gcc -o neural_net main.c network.c data.c utils.c -lm
 ```
 
-### Running the Program
-#### Training
-Run the program with a dataset file:
-```sh
-./neural_net train dataset.txt
-```
-
-#### Testing
-Test the trained model:
-```sh
-./neural_net test dataset.txt
-```
-
-#### Saving and Loading the Model
-To save the trained model:
-```sh
-./neural_net save model.dat
-```
-To load and use a saved model:
-```sh
-./neural_net load model.dat
-```
 
 ## Results
 - Achieved **96% classification accuracy** on the handwritten digit dataset.
@@ -80,8 +50,4 @@ To load and use a saved model:
 - Implement Convolutional Neural Networks (CNNs) for better accuracy
 - Experiment with different activation functions and loss functions
 - Optimize memory usage for handling larger datasets
-
-
-## License
-This project is licensed under the **MIT License**.
 
