@@ -20,8 +20,8 @@ Tanım.pdf e göz atabilirsiniz.
 * Proje sunum videosu çekildi.
 
 ## Ek Bilgiler
-Ödev 3 haftaydı ama 1 haftası vizelere denk geldi. Süre açısından biraz sıkıntı yaşadık.
-Veri boyutu fazla olduğu için tüm eğitim verisini yüklemedim.
+* Ödev 3 haftaydı ama 1 haftası vizelere denk geldi. Süre açısından biraz sıkıntı yaşadık.
+* Veri boyutu fazla olduğu için tüm eğitim verisini yüklemedim.
 
 ## Tavsiye 
 Ödev verilmeden önce biraz araştırma yaparsanız işiniz daha kolay olur. Eğer bu alana ilginiz varsa mümkün olduğunca kendi başınıza uğraşmaya çalışın , çok şey öğretiyor .
