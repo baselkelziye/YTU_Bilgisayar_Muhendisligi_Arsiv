@@ -38,7 +38,7 @@ The neural network consists of multiple layers:
 ### Compilation
 Compile the code using `gcc`:
 ```sh
-gcc -o neural_net main.c network.c data.c utils.c -lm
+gcc -o neural_net main.c
 ```
 
 
