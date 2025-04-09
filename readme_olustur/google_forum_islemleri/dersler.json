@@ -1297,8 +1297,8 @@
                 "**Not:** [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/nasir) GitHub render edemiyorsa indirin...",
                 "**Not:** [İrem'in el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin..."
             ],
-            "kolaylik_puani": 23,
-            "gereklilik_puani": 86,
+            "kolaylik_puani": 20,
+            "gereklilik_puani": 75,
             "derse_dair_oneriler": [
                 {
                     "oneri_sahibi": "Traktör Reis",
@@ -1321,7 +1321,7 @@
                     "ad": "Doç. Dr. M. Amaç Güvensan"
                 }
             ],
-            "oy_sayisi": 3,
+            "oy_sayisi": 4,
             "guncel_mi": true,
             "yillara_gore_yildiz_sayilari": [
                 {
@@ -1338,9 +1338,9 @@
                 },
                 {
                     "kolaylik_puani": 10,
-                    "gereklilik_puani": 70,
+                    "gereklilik_puani": 55,
                     "yil": 2025,
-                    "oy_sayisi": 1
+                    "oy_sayisi": 2
                 }
             ]
         },
@@ -2528,8 +2528,8 @@
             "donem": "",
             "tip": "Mesleki Seçmeli 1",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 50,
-            "gereklilik_puani": 20,
+            "kolaylik_puani": 43,
+            "gereklilik_puani": 26,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "MUK",
@@ -2537,13 +2537,19 @@
                 }
             ],
             "guncel_mi": true,
-            "oy_sayisi": 2,
+            "oy_sayisi": 3,
             "yillara_gore_yildiz_sayilari": [
                 {
                     "kolaylik_puani": 50,
                     "gereklilik_puani": 20,
                     "yil": 2024,
                     "oy_sayisi": 2
+                },
+                {
+                    "kolaylik_puani": 30,
+                    "gereklilik_puani": 40,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -3143,9 +3149,9 @@
                 }
             ],
             "guncel_mi": true,
-            "kolaylik_puani": 70,
-            "gereklilik_puani": 70,
-            "oy_sayisi": 1,
+            "kolaylik_puani": 55,
+            "gereklilik_puani": 75,
+            "oy_sayisi": 2,
             "faydali_olabilecek_kaynaklar": [
                 "**Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Bilgisayarla%20G%C3%B6rme/slaytlar_notlar/2022/onder_gormez%20markdown)"
             ],
@@ -3154,6 +3160,12 @@
                     "kolaylik_puani": 70,
                     "gereklilik_puani": 70,
                     "yil": 2024,
+                    "oy_sayisi": 1
+                },
+                {
+                    "kolaylik_puani": 40,
+                    "gereklilik_puani": 80,
+                    "yil": 2025,
                     "oy_sayisi": 1
                 }
             ]
@@ -3490,7 +3502,18 @@
                     "ad": "Dr. Erkan Uslu"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "kolaylik_puani": 60,
+            "gereklilik_puani": 50,
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "kolaylik_puani": 60,
+                    "gereklilik_puani": 50,
+                    "yil": 2025,
+                    "oy_sayisi": 1
+                }
+            ]
         }
     ],
     "bolum_adi": "Dersler",
