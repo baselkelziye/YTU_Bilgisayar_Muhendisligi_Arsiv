@@ -24,8 +24,7 @@
 ### İlk Görüşme
 * Süre: 45 dakika
 * Biçim: Grup mülakatı. Online.
-* Görüşülen kişi sayısı: 3 ikci, benden başka 7 aday vardı görüşmede.
-* Görüşülen Kişi(ler):
+* Görüşülen kişi sayısı: 3 kişi, benden başka 7 aday vardı görüşmede.
 
 #### Grup mülakatı nasıl gerçekleşti?
 1. En başta kısa bir tanışma faslı gerçekleşiyor. Sizinle beraber mülakata gelenler farklı farklı departmanlardan. Aynı departmanı hedefleyenler de var olabiliyor, rastgele dağıtılıyor. Sonrasında ekibe bir case veriliyor. Ufaktan anlatılıyor. Elinizde bir de döküman oluyor. Ekibe 30 dakika veriliyor ve bu problemi çözmeniz isteniyor.
