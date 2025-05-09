@@ -1,0 +1,346 @@
+$date
+	Wed Apr 16 15:37:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_8x1_32bit_tb $end
+$var wire 32 ! result [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 32 # b [31:0] $end
+$var reg 32 $ c [31:0] $end
+$var reg 32 % d [31:0] $end
+$var reg 32 & e [31:0] $end
+$var reg 32 ' f [31:0] $end
+$var reg 32 ( g [31:0] $end
+$var reg 32 ) h [31:0] $end
+$var reg 3 * select [2:0] $end
+$scope module mux $end
+$var wire 32 + a [31:0] $end
+$var wire 32 , b [31:0] $end
+$var wire 32 - c [31:0] $end
+$var wire 32 . d [31:0] $end
+$var wire 32 / e [31:0] $end
+$var wire 32 0 f [31:0] $end
+$var wire 32 1 g [31:0] $end
+$var wire 32 2 h [31:0] $end
+$var wire 3 3 select [2:0] $end
+$var wire 32 4 result [31:0] $end
+$var wire 32 5 out6 [31:0] $end
+$var wire 32 6 out5 [31:0] $end
+$var wire 32 7 out4 [31:0] $end
+$var wire 32 8 out3 [31:0] $end
+$var wire 32 9 out2 [31:0] $end
+$var wire 32 : out1 [31:0] $end
+$scope module mux1 $end
+$var wire 32 ; a [31:0] $end
+$var wire 32 < b [31:0] $end
+$var wire 1 = select $end
+$var wire 32 > out [31:0] $end
+$upscope $end
+$scope module mux2 $end
+$var wire 32 ? a [31:0] $end
+$var wire 32 @ b [31:0] $end
+$var wire 1 A select $end
+$var wire 32 B out [31:0] $end
+$upscope $end
+$scope module mux3 $end
+$var wire 32 C a [31:0] $end
+$var wire 32 D b [31:0] $end
+$var wire 1 E select $end
+$var wire 32 F out [31:0] $end
+$upscope $end
+$scope module mux4 $end
+$var wire 32 G a [31:0] $end
+$var wire 32 H b [31:0] $end
+$var wire 1 I select $end
+$var wire 32 J out [31:0] $end
+$upscope $end
+$scope module mux5 $end
+$var wire 32 K a [31:0] $end
+$var wire 32 L b [31:0] $end
+$var wire 1 M select $end
+$var wire 32 N out [31:0] $end
+$upscope $end
+$scope module mux6 $end
+$var wire 32 O a [31:0] $end
+$var wire 32 P b [31:0] $end
+$var wire 1 Q select $end
+$var wire 32 R out [31:0] $end
+$upscope $end
+$scope module mux7 $end
+$var wire 32 S a [31:0] $end
+$var wire 32 T b [31:0] $end
+$var wire 1 U select $end
+$var wire 32 V out [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1 V
+0U
+b101 T
+b1 S
+b101 R
+0Q
+b111 P
+b101 O
+b1 N
+0M
+b11 L
+b1 K
+b111 J
+0I
+b1000 H
+b111 G
+b101 F
+0E
+b110 D
+b101 C
+b11 B
+0A
+b100 @
+b11 ?
+b1 >
+0=
+b10 <
+b1 ;
+b1 :
+b11 9
+b101 8
+b111 7
+b1 6
+b101 5
+b1 4
+b0 3
+b1000 2
+b111 1
+b110 0
+b101 /
+b100 .
+b11 -
+b10 ,
+b1 +
+b0 *
+b1000 )
+b111 (
+b110 '
+b101 &
+b100 %
+b11 $
+b10 #
+b1 "
+b1 !
+$end
+#10
+b10 !
+b10 4
+b10 V
+b10 6
+b10 N
+b10 S
+b110 5
+b110 R
+b110 T
+b10 :
+b10 >
+b10 K
+b100 9
+b100 B
+b100 L
+b110 8
+b110 F
+b110 O
+b1000 7
+b1000 J
+b1000 P
+1=
+1A
+1E
+1I
+b1 *
+b1 3
+#20
+b11 !
+b11 4
+b11 V
+b1 :
+b1 >
+b1 K
+b11 9
+b11 B
+b11 L
+b101 8
+b101 F
+b101 O
+b111 7
+b111 J
+b111 P
+b11 6
+b11 N
+b11 S
+b111 5
+b111 R
+b111 T
+0=
+0A
+0E
+0I
+1M
+1Q
+b10 *
+b10 3
+#30
+b100 !
+b100 4
+b100 V
+b100 6
+b100 N
+b100 S
+b1000 5
+b1000 R
+b1000 T
+b10 :
+b10 >
+b10 K
+b100 9
+b100 B
+b100 L
+b110 8
+b110 F
+b110 O
+b1000 7
+b1000 J
+b1000 P
+1=
+1A
+1E
+1I
+b11 *
+b11 3
+#40
+b1 :
+b1 >
+b1 K
+b11 9
+b11 B
+b11 L
+b101 8
+b101 F
+b101 O
+b111 7
+b111 J
+b111 P
+b1 6
+b1 N
+b1 S
+b101 5
+b101 R
+b101 T
+b101 !
+b101 4
+b101 V
+0=
+0A
+0E
+0I
+0M
+0Q
+1U
+b100 *
+b100 3
+#50
+b110 !
+b110 4
+b110 V
+b10 6
+b10 N
+b10 S
+b110 5
+b110 R
+b110 T
+b10 :
+b10 >
+b10 K
+b100 9
+b100 B
+b100 L
+b110 8
+b110 F
+b110 O
+b1000 7
+b1000 J
+b1000 P
+1=
+1A
+1E
+1I
+b101 *
+b101 3
+#60
+b111 !
+b111 4
+b111 V
+b1 :
+b1 >
+b1 K
+b11 9
+b11 B
+b11 L
+b101 8
+b101 F
+b101 O
+b111 7
+b111 J
+b111 P
+b11 6
+b11 N
+b11 S
+b111 5
+b111 R
+b111 T
+0=
+0A
+0E
+0I
+1M
+1Q
+b110 *
+b110 3
+#70
+b1000 !
+b1000 4
+b1000 V
+b100 6
+b100 N
+b100 S
+b1000 5
+b1000 R
+b1000 T
+b10 :
+b10 >
+b10 K
+b100 9
+b100 B
+b100 L
+b110 8
+b110 F
+b110 O
+b1000 7
+b1000 J
+b1000 P
+1=
+1A
+1E
+1I
+b111 *
+b111 3
+#80
