@@ -4160,6 +4160,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Mehmet Ali Duran</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Mert Güler</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Sinem Sarak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
 
@@ -4168,9 +4171,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
-
-<h4 align='center'>✨ <b><i>Mert Güler</i></b> ✨</h4>
-<p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Muhammed Ali Şen</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/shenmali'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/alimshen/'><b>LinkedIn Profili</b></a></p>
