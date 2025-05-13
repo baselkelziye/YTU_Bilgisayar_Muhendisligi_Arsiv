@@ -292,6 +292,7 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor. 
   - 👤 **_Sort Sort Sort_**: Başka alan başka konu yokmuş gibi hep sort hep algoritma, bu mühendislikte o kadar çeşitli ders olacakken sırf bu algoritmq flowchart mantığını 2 derste anlatıp bitirmek varken öğrencileri bıktırmanın mantığı yok. Mesela işletim sistemi gibi farklı dersler görelim. Bbg dahil 3-4 algoritma C dersi görmek yerine sayısını azaltmak zor olmamalı. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Algobıkkın_**: Algoritma derslerinden biri, sınavları zor olur, seven niş bir kitlesi var fakat çoğu kişiyi bölümden soğutur. ℹ️ Yorum **05.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
