@@ -4195,6 +4195,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Ahmet Akib Gültekin</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/A1A1G2'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Ahmet Mahir Demirelli</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/Ahmet-MahirDEMIRELLI'><b>Github Profili</b></a> &nbsp<a href='https://linktr.ee/ahmet.mahir.demirelli'><b>Linktree Bağlantısı</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
@@ -4224,9 +4227,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Ahmet Furkan Çınarka</i></b> </h6>
 <p align='center'><a href='https://github.com/Furkancinarka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmetfurkan%C3%A7%C4%B1narka'><b>LinkedIn Profili</b></a></p>
-
-<h6 align='center'> <b><i>Ahmet Mahir Demirelli</i></b> </h6>
-<p align='center'><a href='https://github.com/Ahmet-MahirDEMIRELLI'><b>Github Profili</b></a> &nbsp<a href='https://linktr.ee/ahmet.mahir.demirelli'><b>Linktree Bağlantısı</b></a></p>
 
 <h6 align='center'> <b><i>Ahmet Zahid Can</i></b> </h6>
 

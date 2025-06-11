@@ -1,0 +1,227 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.6">
+  <diagram id="NiqwegcwMW-YQBYTOG_-" name="Sayfa -2">
+    <mxGraphModel dx="2068" dy="1096" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WTSkTveRq80-6S289IP9-1" value="calling" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="358.00000000000017" y="980.6542861187825" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="507.55673513513506" y="980.6542861187825" />
+            </Array>
+            <mxPoint x="990.4" y="980.6565017438809" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-2" value="Selected Vehicle&lt;div&gt;Test Drive Request&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="358" y="1166.5675895346562" as="sourcePoint" />
+            <mxPoint x="990.4" y="1166.5675895346562" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-4" value="Vehicle List" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=7;curved=0;rounded=0;strokeWidth=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990.4" y="1109.3641779067254" as="sourcePoint" />
+            <mxPoint x="358.00000000000017" y="1109.3700191001662" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-5" value="TestDriveRequest" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1325.2" y="325.63" width="199.4" height="1474.37" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-7" value="Customer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="246.4" y="325.63" width="199.4" height="1614.37" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-7" vertex="1">
+          <mxGeometry x="89.73" y="239.7" width="19.94" height="1310.3" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-9" value="Dealer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1687.32" y="325.63" width="198.4" height="1464.37" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-10" value="Alternative" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=150;height=30;" parent="1" vertex="1">
+          <mxGeometry x="110" y="608.8343261623301" width="634.91" height="330.00000000000006" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-11" value="If customer is registered" style="text;html=1;" parent="WTSkTveRq80-6S289IP9-10" vertex="1">
+          <mxGeometry width="100" height="20" relative="1" as="geometry">
+            <mxPoint x="10" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-12" value="else" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" parent="WTSkTveRq80-6S289IP9-10" vertex="1">
+          <mxGeometry y="157.30938197680996" width="595.1999999999999" height="14.300852906982724" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-13" value="calling" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="251.60337297297292" y="28.70734759834286" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="520.8006702702702" y="28.599490188867176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-14" value="Redirect to main page" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=7;curved=0;rounded=0;strokeWidth=1;" parent="WTSkTveRq80-6S289IP9-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520.8" y="100.10597034887905" as="sourcePoint" />
+            <mxPoint x="248" y="100.10597034887905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-15" value="Redirect to registration page" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=7;curved=0;rounded=0;strokeWidth=1;" parent="WTSkTveRq80-6S289IP9-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520.8" y="228.8136465117236" as="sourcePoint" />
+            <mxPoint x="248" y="228.8136465117236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-16" value="Login" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-10" vertex="1">
+          <mxGeometry x="435.51" y="-277.45" width="199.4" height="597.45" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-16" vertex="1">
+          <mxGeometry x="89.72640000000001" y="286.0742615512824" width="19.939199999999996" height="283.085383293723" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-19" value="Create" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1015.2" y="1195.1692953486217" as="sourcePoint" />
+            <mxPoint x="1414.9388" y="1195.1692953486217" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-22" value="Send request&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1440" y="1250.0035598835352" as="sourcePoint" />
+            <mxPoint x="1777.3172" y="1250.0035598835352" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-29" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="1423.9829418603454" width="124" height="28.60170581396545" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-30" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;TestDriver&lt;br&gt;&lt;div&gt;RequestPage&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="904.44" y="325.63" width="197.56" height="1474.37" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-31" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-30" vertex="1">
+          <mxGeometry x="89.73" y="614.94" width="21.87" height="845.06" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-32" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-30" vertex="1">
+          <mxGeometry x="104.56216216216224" y="697.9219059534526" width="12.4" height="57.2034116279309" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-33" value="loadVehicle()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-30" target="WTSkTveRq80-6S289IP9-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110.76216216216223" y="669.3202001394872" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="147.96216216216223" y="712.2227588604353" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-34" value="ShowMessage(&quot;Bu araç için geçerli fiyat teklifi bulunuyor.&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="994.5925405405399" y="1524.0889122092244" as="sourcePoint" />
+            <mxPoint x="358" y="1524.0889122092244" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-35" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1414.94" y="1166.57" width="19.94" height="603.43" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-37" value="Warehouse" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="2081.6" y="320" width="198.4" height="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-49" value="Alternative" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=150;height=30;" parent="1" vertex="1">
+          <mxGeometry x="1241" y="1330" width="970" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-50" value="If stock available" style="text;html=1;" parent="WTSkTveRq80-6S289IP9-49" vertex="1">
+          <mxGeometry width="100" height="20" relative="1" as="geometry">
+            <mxPoint x="10" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-51" value="else" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" parent="WTSkTveRq80-6S289IP9-49" vertex="1">
+          <mxGeometry y="50" width="970" height="37.15" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-24" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-49" vertex="1">
+          <mxGeometry x="535.55" y="-90" width="19.94" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-60" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-49" vertex="1">
+          <mxGeometry x="929" y="87.15" width="19.94" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-59" value="&lt;span style=&quot;padding: 0px 0px 0px 2px;&quot;&gt;&lt;span style=&quot;font-family: Consolas; font-size: 10pt; white-space-collapse: preserve;&quot;&gt;&lt;span style=&quot;background-color: rgb(212, 212, 212);&quot;&gt;pullVehicleToDealerFromWarehouse()&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-49" edge="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="555.49" y="102.85" as="sourcePoint" />
+            <mxPoint x="929" y="100.00000000000009" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-61" value="ShowMessage(&quot;Stoktan araç çekme başarılı&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&quot;)&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-49" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="929.0025405405399" y="150" as="sourcePoint" />
+            <mxPoint x="559" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-64" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="WTSkTveRq80-6S289IP9-49" vertex="1">
+          <mxGeometry x="550" y="240" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-65" value="dateControl()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-49" target="WTSkTveRq80-6S289IP9-64" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="585" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-57" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="1791" y="1280" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-58" value="stockControl()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="1" target="WTSkTveRq80-6S289IP9-57" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1796" y="1260" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1826" y="1290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-66" value="Alternative" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;recursiveResize=0;container=1;collapsible=0;width=150;height=30;" parent="1" vertex="1">
+          <mxGeometry x="120" y="1620" width="1820" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-67" value="If date available" style="text;html=1;" parent="WTSkTveRq80-6S289IP9-66" vertex="1">
+          <mxGeometry width="100" height="20" relative="1" as="geometry">
+            <mxPoint x="10" y="40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-68" value="else" style="line;strokeWidth=1;dashed=1;labelPosition=center;verticalLabelPosition=bottom;align=left;verticalAlign=top;spacingLeft=20;spacingTop=15;html=1;whiteSpace=wrap;" parent="WTSkTveRq80-6S289IP9-66" vertex="1">
+          <mxGeometry y="50" width="1820" height="37.15" as="geometry" />
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-75" value="Request is approved" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1660" y="40" as="sourcePoint" />
+            <mxPoint x="1310" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-76" value="Request is denied" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" source="WTSkTveRq80-6S289IP9-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1680.00254054054" y="110" as="sourcePoint" />
+            <mxPoint x="1310" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-26" value="ShowMessage(&quot;Talep onaylandı.&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1286.5925405405399" y="50.004647674310945" as="sourcePoint" />
+            <mxPoint x="900" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-77" value="ShowMessage(&quot;Test sürüşü gerçekleştirildi&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" target="WTSkTveRq80-6S289IP9-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="866.5925405405399" y="60.004647674310945" as="sourcePoint" />
+            <mxPoint x="480" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-78" value="ShowMessage(&quot;Talep reddedildi.&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1286.5925405405399" y="140.00464767431095" as="sourcePoint" />
+            <mxPoint x="900" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WTSkTveRq80-6S289IP9-79" value="ShowMessage(&quot;Talep reddedildi.&quot;)" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" parent="WTSkTveRq80-6S289IP9-66" source="WTSkTveRq80-6S289IP9-31" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="626.5925405405399" y="150.00464767431095" as="sourcePoint" />
+            <mxPoint x="240" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

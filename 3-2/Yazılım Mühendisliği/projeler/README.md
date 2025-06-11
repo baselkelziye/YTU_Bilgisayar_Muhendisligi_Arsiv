@@ -1,1 +1,0 @@
-- [2024-2025 Bahar Gr5](https://github.com/Ahmet-MahirDEMIRELLI/Birinci_El_Arac_Satis_Bilgi_Sistemi)
