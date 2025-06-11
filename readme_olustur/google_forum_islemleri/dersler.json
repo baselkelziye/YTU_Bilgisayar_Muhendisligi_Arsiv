@@ -1296,6 +1296,15 @@
                         "ay": 5,
                         "gun": 13
                     }
+                },
+                {
+                    "kisi": "Emperor",
+                    "yorum": "Gerekli bir ders. Dersi dinleyin dinlemeyin video ambarı izleyip ödev/ lab yaparsanız sıkıntı yaşamazsınız. Verince tekrar almayın",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 6,
+                        "gun": 10
+                    }
                 }
             ],
             "faydali_olabilecek_kaynaklar": [
@@ -1820,8 +1829,8 @@
                 "**Proje:** [Proje](https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/) için eski öğrencilerin github paylaşımlarına bakılabilir.",
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14mW28KsJdi_vgqfp4k92IW_PQ-OoLVju?usp=drive_link)"
             ],
-            "kolaylik_puani": 63,
-            "gereklilik_puani": 83,
+            "kolaylik_puani": 72,
+            "gereklilik_puani": 75,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "OK",
@@ -1837,13 +1846,19 @@
                 }
             ],
             "guncel_mi": true,
-            "oy_sayisi": 3,
+            "oy_sayisi": 4,
             "yillara_gore_yildiz_sayilari": [
                 {
                     "kolaylik_puani": 63,
                     "gereklilik_puani": 83,
                     "yil": 2024,
                     "oy_sayisi": 3
+                },
+                {
+                    "kolaylik_puani": 100,
+                    "gereklilik_puani": 50,
+                    "yil": 2025,
+                    "oy_sayisi": 1
                 }
             ]
         },
