@@ -7,6 +7,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor. 
+  - 👤 **_Havalırumuz_**: Dersin ne kadar sıkıcı anlatıldığına bakmayın veya bu ders benim ne işime yarayacak demeyin. Özellikle kitaptan çalışmanızı tavsiye ediyorum. Ne kadar hocalar derslerde bahsetmese bile gömülü sistemlerde çalışacak biri için olmazsa olmaz bir ders. İlerde gireceğiniz iş sadece RTOS (Gerçek Zamanlı İşletim Sistemi) ile ilgili bile olabilir (benim durumumda böyle). Böyle bir durumda keşke bu derse daha çok önem verseymişim dersiniz. ℹ️ Yorum **06.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
