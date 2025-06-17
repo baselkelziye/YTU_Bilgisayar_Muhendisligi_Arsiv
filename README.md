@@ -1177,6 +1177,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor. 
+    - 👤 **_Havalırumuz_**: Dersin ne kadar sıkıcı anlatıldığına bakmayın veya bu ders benim ne işime yarayacak demeyin. Özellikle kitaptan çalışmanızı tavsiye ediyorum. Ne kadar hocalar derslerde bahsetmese bile gömülü sistemlerde çalışacak biri için olmazsa olmaz bir ders. İlerde gireceğiniz iş sadece RTOS (Gerçek Zamanlı İşletim Sistemi) ile ilgili bile olabilir (benim durumumda böyle). Böyle bir durumda keşke bu derse daha çok önem verseymişim dersiniz. ℹ️ Yorum **06.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -2122,7 +2123,17 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayar%20Sistemleri%20ve%20Ağ%20Güvenliği)
 
 
