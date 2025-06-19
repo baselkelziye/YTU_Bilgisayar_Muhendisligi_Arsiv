@@ -10,7 +10,7 @@
 * **Toplam:** %7.5
 
 ## Ödev Notları ve Ortalamalar
-- **Toplam:** 100
+- **Toplam:** 90
 
 
 
