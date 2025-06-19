@@ -1,0 +1,34 @@
+/* src/features/genre/GenrePage.css */
+.genre-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1.5rem;
+}
+
+.genre-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.loading {
+    text-align: center;
+    color: #aaa;
+    margin: 2rem 0;
+}
+
+/* ↓ Mobile düzenleme */
+@media (max-width: 768px) {
+    .genre-page {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0;            /* kenarlar arası ekstra boşluk kapatıldı */
+    }
+    .genre-content {
+        width: 100%;
+        padding: 0;
+    }
+}

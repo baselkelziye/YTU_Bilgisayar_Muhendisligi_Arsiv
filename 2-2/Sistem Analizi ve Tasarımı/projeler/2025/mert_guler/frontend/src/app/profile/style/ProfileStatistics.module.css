@@ -1,0 +1,151 @@
+/* ProfileStatistics.module.css */
+
+.profileStats {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+/* 1) Genel grid ayarı */
+.cardsContainer {
+    display: grid;
+    gap: 16px;
+    /* her kart en az 150px, en fazla 1fr alarak satırları otomatik doldurur */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+}
+
+/* 2) Kartların temel stili */
+.baseCard {
+    width: 100%;
+    max-width: 250px;       /* istersen clamp ile oynayabilirsin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+
+.watchedCard {
+    background-color: #0f2818;
+    border: 1px solid #1e5631;
+}
+
+.watchlistCard {
+    background-color: #0f1a2a;
+    border: 1px solid #1e3a5f;
+}
+
+.likedCard {
+    background-color: #2a0f0f;
+    border: 1px solid #5f1e1e;
+}
+
+.iconBase {
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watchedIcon {
+    background-color: #1e5631;
+}
+
+.watchlistIcon {
+    background-color: #1e3a5f;
+}
+
+.likedIcon {
+    background-color: #5f1e1e;
+}
+
+.count {
+    font-size: clamp(24px, 5vw, 48px);
+    font-weight: bold;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.label {
+    color: #d1d1d1;
+}
+
+.movieList {
+    margin-top: 1.5rem;
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+}
+
+.movieListHeader {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+
+.sliderContainer {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 8px;
+}
+
+.profileNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profilePrev {
+    left: 8px;
+}
+
+.profileNext {
+    right: 8px;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    padding: 16px;
+}
+
+.empty {
+    color: #aaa;
+    text-align: center;
+    padding: 16px;
+}
+@media (max-width: 767px) {
+    .profileNav{
+        display: none;
+    }
+}@media (max-width: 580px)  {
+    .cardsContainer {
+        /* tek sütun */
+        grid-template-columns: 1fr;
+    }
+    .baseCard {
+        /* ekran genişliğine çok dayanmasın, en fazla 350px olsun */
+        max-width: 350px;
+        /* istersen yana yatay boşluk ekleyebilirsin */
+        margin: 0 auto;
+    }
+}

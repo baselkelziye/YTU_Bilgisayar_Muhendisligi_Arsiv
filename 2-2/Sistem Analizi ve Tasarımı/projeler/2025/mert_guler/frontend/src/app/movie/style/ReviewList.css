@@ -1,0 +1,254 @@
+/* Base Styles */
+.review-list {
+    padding: 1rem;
+    background-color: #121212; /* Dark background color for the whole page */
+    color: #ffffff; /* White text for better contrast on dark background */
+    border-radius: 8px; /* Rounded corners for modern look */
+}
+
+.review-card {
+    padding: 15px;
+    background-color: #1f1f1f; /* Darker card background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1); /* Soft shadow */
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s ease; /* Hover effect for card */
+}
+
+.review-card:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+}
+
+.author {
+    font-weight: bold;
+    color: #b0b0b0; /* Lighter gray for author's name */
+}
+
+.author-name {
+    color: #00bcd4; /* Cyan color for clickable usernames */
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.author-name:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 10px;
+    color: #e0e0e0; /* Slightly lighter gray for content */
+}
+
+.spoiler-button {
+    background-color: #ff4d4d; /* Red color for the "Show Spoiler" button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.spoiler-button:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+.spoiler-message {
+    color: #ff4d4d; /* Red for revealed spoilers */
+    font-weight: bold;
+}
+
+/* Comment Section */
+.comment-section {
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #333; /* Dark border for text area */
+    border-radius: 5px;
+    resize: none;
+    background-color: #333; /* Dark background for the text area */
+    color: white; /* White text inside text area */
+}
+
+.spoiler-checkbox {
+    margin-top: 10px;
+}
+
+.btn-comment {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Cyan color for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comment:hover {
+    background-color: #0097a7; /* Darker cyan on hover */
+}
+
+/* Pagination Controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-button {
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Cyan button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #0097a7; /* Darker cyan on hover */
+}
+
+.pagination-info {
+    font-size: 16px;
+    color: #b0b0b0; /* Light gray for pagination text */
+}
+/* under existing rules… */
+
+/* smaller username under name */
+.username {
+    display: block;
+    font-size: 0.8rem;
+    color: #b0b0b0;
+    margin-top: 2px;
+}
+
+/* container for edit & report buttons */
+.comment-actions {
+    margin-top: 10px;
+    gap: 8px;
+    display: flex;
+}
+
+/* Report button */
+.report-button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /*margin-right: 8px;*/
+    transition: background-color 0.3s ease;
+}
+.report-button:hover {
+    background-color: #e64a19;
+}
+
+/* Edit button */
+.edit-button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    /*margin-right: 8px;*/
+    transition: background-color 0.3s ease;
+}
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+/* Inline edit section */
+.edit-section textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Save/Cancel buttons */
+.save-button,
+.cancel-button {
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-top: 8px;
+    transition: background-color 0.3s ease;
+}
+.save-button {
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: white;
+}
+.save-button:hover {
+    background-color: #388e3c;
+}
+.cancel-button {
+    background-color: #9e9e9e;
+    color: white;
+}
+.cancel-button:hover {
+    background-color: #757575;
+}
+
+/* === align spoiler, edit & report on one line === */
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* inline group for Edit / Report */
+.comment-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* === timestamp, slightly muted below the comment === */
+.timestamp {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 4px;
+}
+
+.delete-button {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: #c62828;
+}
+
+/* Tarihin yanındaki “edited” etiketi */
+.edited-label {
+    font-style: italic;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 0.5rem;
+}
+
+.mention-link {
+    color: #00a9e6;
+    text-decoration: none;
+}

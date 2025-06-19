@@ -1,0 +1,216 @@
+/* full-height two-column layout */
+.search-page-container {
+    display: grid;
+    grid-template-columns: 200px auto;
+    /*height: calc(100vh - var(--navbar-height));*/
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* left sidebar */
+.search-filters {
+    background-color: #000;
+    border-right: 1px solid #333;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+}
+
+.search-filters h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.search-filters label {
+    display: block;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.search-filters input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* right content area */
+.search-content {
+    padding: 2rem;
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* top search bar */
+.search-input-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-input-form input[type="text"] {
+    flex: 1;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #111;
+    color: #fff;
+}
+
+.search-input-form button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search-input-form button:hover {
+    background-color: #bf0810;
+}
+
+/* grid of result cards */
+.results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+/* generic card style—applies to both users and movies */
+/* CARD İÇİN ORTAK AYARLAR */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;   /* Link üzerindeyse alt çizgi yok */
+    color: inherit;          /* Link rengi metin rengiyle aynı olsun */
+    height: 100%;            /* Grid hücresi kadar uzansın */
+}
+
+/* Resim boyutlandırma */
+.card img {
+    width: 100%;
+    max-height: 180px;       /* Tüm kart resimleri aynı yüksekliğe sığsın */
+    object-fit: cover;       /* Kırpma yaparak doldursun */
+    border-radius: 4px;
+}
+
+/* Başlık (isim / film adı) hizalama */
+.card h5 {
+    margin: 0.75rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Kart altındaki ikon/metin grubu */
+.card-footer {
+    margin-top: auto;        /* Üstteki içeriği itti, hep kartın dibine yapıştı */
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+
+/* Kalp ve göz metin + ikonlarını hizala */
+.card-footer span {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+/* İsteğe bağlı: kalp ikonunu kırmızı yap */
+.card-footer span:first-child {
+    color: #e50914;
+}
+
+
+/* pagination controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/*.pagination button {*/
+/*    padding: 0.5rem 1rem;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    background-color: #222;*/
+/*    color: #fff;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.pagination button:disabled {*/
+/*    opacity: 0.4;*/
+/*    cursor: not-allowed;*/
+/*}*/
+
+/*.pagination span {*/
+/*    color: #aaa;*/
+/*}*/
+
+/* MOBILE / SMALL TABLET */
+@media (max-width: 768px) {
+    /* Stack filters above content */
+    .search-page-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    /* Filters become a top bar */
+    .search-filters {
+        border-right: none;
+        border-bottom: 1px solid #333;
+        padding: 1rem;
+    }
+
+    /* Content gets its own padding */
+    .search-content {
+        padding: 1rem;
+    }
+
+    /* search bar stacks vertically */
+    .search-input-form {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-input-form input[type="text"],
+    .search-input-form button {
+        width: 100%;
+    }
+
+    .search-input-form button {
+        margin-top: 0.5rem;
+    }
+
+    /* Tighter grid for results */
+    .results-list {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+        display: grid;
+        align-items: stretch;
+    }
+
+    /* Make pagination buttons full-width-ish */
+    .pagination {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .pagination button {
+        width: 100%;
+    }
+}

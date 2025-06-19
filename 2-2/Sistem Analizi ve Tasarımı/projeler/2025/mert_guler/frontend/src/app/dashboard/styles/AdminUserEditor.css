@@ -1,0 +1,233 @@
+/* src/app/dashboard/styles/AdminUserEditor.css */
+.admin-user-editor {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: var(--text-main);
+}
+
+.admin-user-editor h2 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+/* Search controls */
+.admin-user-editor .controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.admin-user-editor .controls input {
+    flex: 1;
+    padding: 0.6rem;
+    background: #2a2a2a;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+}
+
+.admin-user-editor .controls button {
+    padding: 0.6rem 1.2rem;
+    background: var(--highlight);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.admin-user-editor .controls button:hover:not(:disabled) {
+    background: #00b39f;
+}
+
+.admin-user-editor .controls button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* User list */
+.admin-user-editor ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-user-editor ul li {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 0.5rem;
+    background: var(--bg-card);
+}
+
+.admin-user-editor ul li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.admin-user-editor ul li.selected {
+    background: var(--highlight);
+    color: #000;
+}
+
+/* Detail & edit panels */
+.admin-user-editor .user-info,
+.admin-user-editor .edit-user {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.admin-user-editor .user-info h3,
+.admin-user-editor .edit-user h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.admin-user-editor .edit-user label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.admin-user-editor .edit-user input,
+.admin-user-editor .edit-user textarea {
+    width: 100%;
+    padding: 0.6rem;
+    background: #2a2a2a;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+    font: inherit;
+    margin-top: 0.25rem;
+}
+
+.admin-user-editor .edit-user textarea {
+    resize: vertical;
+    min-height: 4rem;
+}
+
+/* Action buttons */
+.admin-user-editor .edit-user .actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.admin-user-editor .edit-user .actions button {
+    padding: 0.6rem 1.2rem;
+    background: var(--accent);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.admin-user-editor .edit-user .actions button:hover:not(:disabled) {
+    background: var(--accent-light);
+}
+
+.admin-user-editor .edit-user .actions button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* secondary “Cancel” button */
+.admin-user-editor .edit-user .actions button.cancel {
+    background: var(--border);
+    color: var(--text-main);
+}
+
+.admin-user-editor .edit-user .actions button.cancel:hover:not(:disabled) {
+    background: #555;
+}
+
+/* Delete confirmation */
+.admin-user-editor .edit-user .delete-confirm {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.admin-user-editor .edit-user .delete-confirm .confirm {
+    padding: 0.6rem 1.2rem;
+    background: #f56260;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.admin-user-editor .edit-user .delete-confirm .confirm:hover:not(:disabled) {
+    background: #ff786e;
+}
+
+.admin-user-editor .edit-user .delete-confirm .cancel {
+    padding: 0.6rem 1.2rem;
+    background: var(--border);
+    color: var(--text-main);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.admin-user-editor .edit-user .delete-confirm .cancel:hover:not(:disabled) {
+    background: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-user-editor .controls {
+        flex-direction: column;
+    }
+    .admin-user-editor .controls input,
+    .admin-user-editor .controls button {
+        width: 100%;
+    }
+    .admin-user-editor ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .admin-user-editor .edit-user .actions {
+        flex-direction: column;
+    }
+    .admin-user-editor .edit-user .actions button {
+        width: 100%;
+    }
+    .admin-user-editor .edit-user .delete-confirm {
+        flex-direction: column;
+    }
+    .admin-user-editor .edit-user .delete-confirm .confirm,
+    .admin-user-editor .edit-user .delete-confirm .cancel {
+        width: 100%;
+    }
+}
+/* AdminUserEditor.css */
+.admin-user-editor .edit-user select {
+    width: 100%;
+    padding: 0.6rem;
+    background: #2a2a2a;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+    font: inherit;
+    margin-top: 0.25rem;
+}

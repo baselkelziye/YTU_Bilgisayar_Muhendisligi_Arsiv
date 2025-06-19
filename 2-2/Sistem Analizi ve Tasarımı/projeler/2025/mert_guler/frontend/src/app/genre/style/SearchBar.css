@@ -1,0 +1,30 @@
+/* src/features/genre/components/SearchBar.css */
+.search-bar {
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.search-bar input::placeholder {
+    color: #777;
+}
+
+/* ↓ Mobilde biraz daha kompakt */
+@media (max-width: 768px) {
+    .search-bar {
+        margin-bottom: 0.75rem;
+    }
+    .search-bar input {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
