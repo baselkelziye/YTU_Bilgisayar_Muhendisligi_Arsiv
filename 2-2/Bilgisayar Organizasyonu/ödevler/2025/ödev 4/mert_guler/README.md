@@ -4,13 +4,13 @@
 **Dersi Veren Hoca(lar):** EU - ACK - HOI
 
 ## Ödev Tanımı
-Ödev 3
+Ödev 4
 
 ## Not Dağılımı
 * **Toplam:** %7.5
 
 ## Ödev Notları ve Ortalamalar
-- **Toplam:** 90
+- **Toplam:** 100
 
 
 
