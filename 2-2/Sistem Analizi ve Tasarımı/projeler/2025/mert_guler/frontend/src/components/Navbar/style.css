@@ -1,0 +1,117 @@
+/* src/app/components/Navbar.css */
+
+.navbar {
+    background: #111;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo-text {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Iowan Old Style", serif;
+}
+.navbar-logo-text img {
+    width: 32px;    /* adjust to your desired width */
+    height: 32px;   /* adjust to your desired height */
+    bottom: -10px;
+    margin-right: 8px;
+    object-fit: contain;
+    /* if you want the svg to inherit text color: */
+    filter:  sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Menü linkleri */
+.navbar-menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-link {
+    color: #ccc;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+.navbar-link:hover {
+    color: #fff;
+}
+
+.navbar-link.active {
+    color: #fff;
+    border-bottom: 2px solid #e50914; /* vurgulu alt çizgi */
+}
+
+/* Loading state */
+.navbar-link.loading {
+    color: #888;
+    cursor: default;
+}
+
+/* Logout button */
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    display: inline-block;
+}
+
+.logout-button:hover {
+    color: #e50914;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #111;
+        flex-direction: column;
+        gap: 0;
+        display: none;
+    }
+    .navbar-menu.open {
+        display: flex;
+    }
+    .navbar-link {
+        padding: 1rem;
+        border-top: 1px solid #222;
+    }
+    .logout-button {
+        text-align: left;
+        width: 100%;
+        padding: 1rem;
+        border-top: 1px solid #222;
+    }
+}

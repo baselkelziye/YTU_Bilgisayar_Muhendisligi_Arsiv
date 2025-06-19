@@ -1,0 +1,71 @@
+/* src/app/dashboard/styles/AdminStats.css */
+.admin-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.summary-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--text-main);
+}
+.summary-card h4 {
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+    font-size: 1rem;
+}
+.summary-card span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.chart-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--text-main);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+.chart-card h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1rem;
+    color: var(--accent);
+    text-align: center;
+}
+
+/* Recharts tooltip & legend uyumu */
+.recharts-tooltip-item,
+.recharts-tooltip-label,
+.recharts-legend-item-text {
+    fill: var(--text-main) !important;
+}
+
+/* … mevcut AdminStats.css içeriği … */
+
+.chart-empty {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 1rem 0;
+}
+/* ─── AdminStats.css ─── */
+@media (max-width: 768px) {
+    .admin-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+    .chart-card,
+    .summary-card {
+        padding: 0.75rem;
+    }
+    .chart-card h3 {
+        font-size: 0.9rem;
+    }
+}
+

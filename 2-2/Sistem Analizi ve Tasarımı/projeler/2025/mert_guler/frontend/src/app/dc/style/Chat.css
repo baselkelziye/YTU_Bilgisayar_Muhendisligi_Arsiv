@@ -1,0 +1,319 @@
+/* --------------------
+   style/Chat.css
+   -------------------- */
+
+/* -- Layout Grid -- */
+.chat-page {
+    display: grid;
+    grid-template-columns: 280px 1fr 280px;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "top-left   main     main-right"
+    "main-left  main     main-right";
+    height: 90vh;
+    margin: 0 auto;
+    background: #2f3136;
+    color: #ddd;
+    position: relative;
+}
+.load-more {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.75rem auto;
+    color: #fff;
+    background: #40444b;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    text-decoration: none; /* eğer link ise */
+}
+
+.load-more:hover {
+    background: #4f535c;
+    transform: translateY(-2px);
+}
+
+.load-more:active {
+    transform: translateY(0);
+}
+
+
+/* -- Hamburger Menu Button -- */
+.hamburger-menu {
+    display: none;
+    position: fixed;
+    top: 65px;
+    right: 16px;
+    z-index: 1;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #36393f;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.6s ease;
+}
+
+/* -- Mobile Overlay -- */
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: opacity 0.6s ease-in-out; /* ← fade transition */
+}
+
+/* -- Friends Search/Header Panel -- */
+.chat-page .top-left {
+    grid-area: top-left;
+    padding: 1rem;
+    background: #36393f;
+    border-bottom: 1px solid #202225;
+}
+
+/* -- Friends List Panel -- */
+.chat-page .main-left {
+    grid-area: main-left;
+    display: flex;
+    flex-direction: column;
+    background: #36393f;
+    border-right: 1px solid #202225;
+}
+
+.friends-header {
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-bottom: 1px solid #202225;
+}
+
+.friends-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem 1rem;
+}
+
+.friend-container {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.friend-container:hover { background: #4f535c33; }
+.friend-container.selected { background: #3a3f47; }
+
+.friend-container .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.friend-container span { color: #fff; }
+
+/* -- Chat Panel -- */
+.chat-page .main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background: #36393f;
+    border-left: 1px solid #202225;
+}
+
+/* Header */
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-bottom: 1px solid #202225;
+}
+.chat-header .back-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ddd;
+}
+.chat-header .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat-header .name { font-weight: 600; color: #fff; }
+.chat-header .status-text-small { font-size: 0.85rem; color: #8e9297; }
+
+/* Messages */
+.messages {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.message-item {
+    max-width: 75%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    word-wrap: break-word;
+}
+.message-item.them { background: #2f3136; align-self: flex-start; }
+.message-item.me  { background: #cc1a1a; color: #fff; align-self: flex-end; }
+
+.message-time,
+.message-seen {
+    font-size: 0.75rem;
+    color: #8e9297;
+    margin-top: 0.25rem;
+    text-align: right;
+}
+
+/* Input */
+.message-input {
+    display: flex;
+    padding: 0.5rem;
+    border-top: 1px solid #202225;
+}
+.message-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    background: #40444b;
+    color: #dcddde;
+    margin-right: 0.5rem;
+}
+.message-input input:focus { outline: none; }
+.message-input button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #72767d;
+}
+.message-input button:hover { color: #fff; }
+
+/* -- User Info / Right Panel -- */
+.chat-page .main-right {
+    grid-area: main-right;
+    padding: 1rem;
+    background: #2f3136;
+    border-left: 1px solid #202225;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.main-right .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.main-right h3 { margin: 1rem 0 .5rem; color: #fff; }
+
+/* -- Role Badge -- */
+.role-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: default;
+}
+.role-badge:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+.role-badge--admin   { background: linear-gradient(135deg, #f87171 0%, #ef4444 100%); }
+.role-badge--user    { background: linear-gradient(135deg, #4ade80 0%, #22d3ee 100%); }
+.role-badge--default { background: #6b7280; }
+
+/* -- Responsive: Mobile Styles -- */
+
+@media (max-width: 1024px) {
+    .chat-page {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "main"
+            "main";
+        height: 90vh;
+
+    }
+
+    /* Show hamburger menu */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Hide side panels by default */
+    .chat-page .top-left,
+    .chat-page .main-left {
+        display: none;
+        position: fixed;
+        right: -280px;
+        transition: right 0.3s ease;
+        z-index: 20;
+    }
+
+    /* Show side panel when open */
+    .chat-page .top-left.mobile-open,
+    .chat-page .main-left.mobile-open {
+        display: block;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 280px;
+        overflow-y: auto;
+    }
+
+    /* Show overlay when menu is open */
+    .mobile-overlay {
+        display: block;
+    }
+
+    /* Position top-left for mobile */
+    .chat-page .top-left.mobile-open {
+        top: 0;
+        height: auto;
+    }
+
+    /* Position main-left for mobile */
+    .chat-page .main-left.mobile-open {
+        top: 70px;
+        bottom: 0;
+        height: calc(100% - 70px);
+        right: 0;                         /* slide into view */
+
+    }
+
+    /* Hide user info panel */
+    .chat-page .main-right {
+        display: none;
+    }
+}

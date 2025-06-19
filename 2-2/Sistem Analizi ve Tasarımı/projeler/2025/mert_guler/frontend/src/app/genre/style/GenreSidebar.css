@@ -1,0 +1,56 @@
+/* src/features/genre/components/GenreSidebar.css */
+.genre-sidebar {
+    background-color: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #ccc;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.genre-sidebar h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.genre-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.genre-sidebar li {
+    margin-bottom: 0.75rem;
+}
+
+.genre-sidebar a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.genre-sidebar a.active {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ↓ Mobile düzenleme: yatay kaydırılabilir tür çubuğu */
+@media (max-width: 768px) {
+    .genre-sidebar {
+        background: none;
+        padding: 0.75rem 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0;
+    }
+    .genre-sidebar ul {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        -webkit-overflow-scrolling: touch;
+    }
+    .genre-sidebar li {
+        margin: 0;
+        white-space: nowrap;
+    }
+}

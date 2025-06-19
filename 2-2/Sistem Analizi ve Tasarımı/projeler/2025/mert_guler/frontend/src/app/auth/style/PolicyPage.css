@@ -1,0 +1,33 @@
+.policy-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #504d4d;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.policy-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.policy-container h2 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+}
+.policy-container p {
+    line-height: 1.6;
+    margin-top: 0.75rem;
+}
+.btn-back {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color .2s;
+}
+.btn-back:hover {
+    text-decoration: underline;
+}

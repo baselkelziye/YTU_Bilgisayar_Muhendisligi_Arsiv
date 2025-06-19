@@ -1,0 +1,44 @@
+/* src/features/genre/components/Pagination.css */
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.pagination button {
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background: #2a2a2a;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.pagination button.active {
+    background: #444;
+    color: #fff;
+}
+.pagination button.ellipsis {
+    background: none;
+    color: #ccc;
+    cursor: default;
+}
+/* ↓ Mobilde düğmeler daha sıkı ve satır kaymasına izin ver */
+@media (max-width: 768px) {
+    .pagination {
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+    .pagination button {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}
