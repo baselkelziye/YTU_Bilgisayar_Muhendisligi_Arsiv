@@ -1,0 +1,50 @@
+/* src/features/genre/components/MovieGrid.css */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.movie-card {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/*.movie-card img {*/
+/*    width: 100%;*/
+/*    border-radius: 6px;*/
+/*    object-fit: cover;*/
+/*    display: block;*/
+/*}*/
+
+.movie-title {
+    margin: 0.5rem 0 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #fff;
+}
+.movie-poster {
+    width: 100%;
+    max-height: 100px;
+    /*aspect-ratio: 2 / 3;       !* en-boy oranını 2:3 olarak sabitliyoruz *!*/
+    object-fit: cover;         /* kırpma ve ortalama ayarı */
+    background-color: #222;    /* şeffaf kısımlar için koyu arka plan */
+    border-radius: 6px;        /* köşeleri aynı olsun */
+    display: block;
+}
+/* ↓ Mobilde sütun sayısını ve boşlukları azalt */
+@media (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.75rem;
+    }
+    .movie-card img {
+        border-radius: 4px;
+    }
+    .movie-title {
+        font-size: 0.9rem;
+    }
+}

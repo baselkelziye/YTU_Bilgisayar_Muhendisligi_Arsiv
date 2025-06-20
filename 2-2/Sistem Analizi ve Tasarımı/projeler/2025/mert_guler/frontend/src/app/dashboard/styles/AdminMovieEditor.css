@@ -1,0 +1,121 @@
+/* src/app/dashboard/styles/AdminMovieEditor.css */
+.admin-movie-editor {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    color: var(--text-main);
+}
+
+.admin-movie-editor h2 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.controls input {
+    flex: 1;
+    padding: 0.6rem;
+    background: #2a2a2a;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+}
+
+.controls button {
+    padding: 0.6rem 1.2rem;
+    background: var(--highlight);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.controls button:hover:not(:disabled) {
+    background: #00b39f;
+}
+
+.controls button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.movie-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-row label {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.form-row input,
+.form-row textarea {
+    padding: 0.6rem;
+    background: #2a2a2a;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text-main);
+    font: inherit;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 4rem;
+}
+
+.actions {
+    text-align: right;
+}
+
+.actions button {
+    padding: 0.6rem 1.2rem;
+    background: var(--accent);
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.actions button:hover {
+    background: var(--accent-light);
+}
+/* ─── AdminMovieEditor.css ─── */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+    }
+    .controls input,
+    .controls button {
+        width: 100%;
+    }
+    .movie-form {
+        padding: 0;
+    }
+    .actions {
+        text-align: center;
+    }
+    .actions button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+

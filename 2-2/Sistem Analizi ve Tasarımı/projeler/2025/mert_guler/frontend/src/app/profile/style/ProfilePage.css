@@ -1,0 +1,741 @@
+/* Main container */
+.profile-page {
+    background-color: #121212;
+    color: #e0e0e0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+/* Header */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-header h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+.action-button:hover {
+    color: #fff;
+}
+
+/* Content layout */
+.profile-content {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Left column */
+.profile-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-avatar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 80%;
+    aspect-ratio: 1 / 1; /* Her zaman kare */
+    object-fit: cover;
+}
+
+/* Social stats - updated for friend actions */
+.social-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    color: #aaa;
+}
+
+.stat-item:hover {
+    color: #fff;
+}
+
+.friend-action-icon {
+    color: #3498db;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+}
+
+/* User info */
+.user-info,
+.user-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.info-row,
+.list-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.info-label,
+.list-label {
+    color: #aaa;
+}
+
+.info-value,
+.list-value {
+    color: #e0e0e0;
+}
+
+/* About’ı ayrı bir kutu haline getirdik */
+.about-section {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+}
+.about-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #fff;
+}
+.about-content {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ddd;
+    /* Eğer kullanıcı biyografisinde\n karakterleri varsa düzgün satır atlamak için: */
+    white-space: pre-wrap;
+}
+/* Friends section */
+.friends-section {
+    margin-top: 1rem;
+}
+
+.friends-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    margin-bottom: 1rem;
+}
+.friends-header::before,
+.friends-header::after {
+    content: "";
+    flex: 1;           /* çizgiyi olabildiğince uzatır */
+    height: 1px;       /* çizgi kalınlığı */
+    background: #555;  /* çizgi rengi */
+}
+
+.friends-header::before {
+    margin-right: 0.5rem;  /* yazı ile çizgi arası boşluk */
+}
+
+.friends-header::after {
+    margin-left: 0.5rem;   /* yazı ile çizgi arası boşluk */
+}
+
+
+.friends-count {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.friends-tabs {
+    margin-left: auto;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.tab-button.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.friend-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.friend-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+.friend-name {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* Right column */
+.profile-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 0;
+    /*overflow: hidden;*/
+    max-width: 1000px;
+}
+
+/* Statistics section */
+.statistics-section h2,
+.profile-updates h2,
+.liked-movies-section h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+.movie-stats {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.movie-stats h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.progress-segment {
+    height: 100%;
+}
+
+.progress-segment.watching {
+    background-color: #3498db;
+}
+
+.progress-segment.completed {
+    background-color: #2ecc71;
+}
+
+.progress-segment.on-hold {
+    background-color: #f39c12;
+}
+
+.progress-segment.dropped {
+    background-color: #e74c3c;
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-row {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.stat-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.watching-dot {
+    background-color: #3498db;
+}
+
+.completed-dot {
+    background-color: #2ecc71;
+}
+
+.on-hold-dot {
+    background-color: #f39c12;
+}
+
+.dropped-dot {
+    background-color: #e74c3c;
+}
+
+.stat-name {
+    flex: 1;
+}
+
+.stat-count {
+    font-weight: bold;
+}
+
+.stat-row.total {
+    margin-top: 0.5rem;
+    border-top: 1px solid #333;
+    padding-top: 0.5rem;
+}
+
+/* Horizontal scrolling for liked movies */
+.horizontal-scroll-container {
+    overflow-x: auto;
+    padding-bottom: 1rem; /* Space for scrollbar */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.movie-cards-container {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+/*.movie-card {*/
+/*    flex: 0 0 auto;*/
+/*    width: 150px;*/
+/*    background-color: #1e1e1e;*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.2s;*/
+/*}*/
+
+/*.movie-card:hover {*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+/*.movie-poster {*/
+/*    width: 100%;*/
+/*    height: 225px; !* 3:2 aspect ratio for the poster *!*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.movie-poster-img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
+
+.movie-info {
+    padding: 0.75rem;
+}
+
+.movie-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+.movie-rating {
+    color: #f39c12;
+}
+
+/* Profile updates */
+.profile-updates {
+    margin-top: 1rem;
+}
+
+.updates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.update-item {
+    display: flex;
+    gap: 1rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.update-poster img {
+    width: 80px;
+    height: 120px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.update-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.update-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.update-header h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.update-year,
+.update-genre {
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.update-rating {
+    margin-left: auto;
+    color: #f39c12;
+    font-size: 0.9rem;
+}
+
+.update-description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #bbb;
+}
+
+.update-status {
+    margin-top: auto;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.status-badge.want-to-watch {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+}
+.status-badge.watched {
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #3498db;
+}
+.status-badge.liked {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+.update-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-left-column {
+        order: 1;
+    }
+
+    .profile-right-column {
+        order: 2;
+    }
+
+    .friends-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .friends-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .update-item {
+        flex-direction: column;
+    }
+
+    .update-poster img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-content {
+        padding: 1rem;
+    }
+
+    .friends-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ProfileLeftColumn.css */
+
+/* Container’lara biraz iç boşluk ve arka plan ekleyelim */
+.profile-left-column .sent-requests,
+.profile-left-column .received-requests {
+    background-color: rgba(115, 115, 115, 0.55);
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Başlık ile liste arasına boşluk */
+.profile-left-column .sent-requests h3,
+.profile-left-column .received-requests h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Listeyi max-height ile sınırla ve overflow ver */
+.profile-left-column .sent-requests ul,
+.profile-left-column .received-requests ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;       /* ihtiyaca göre ayarla */
+    overflow-y: auto;
+}
+
+/* Liste öğelerini kompakt flex düzenine al */
+.profile-left-column .sent-requests li,
+.profile-left-column .received-requests li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Son elemanda alt sınırı kaldır */
+.profile-left-column .sent-requests li:last-child,
+.profile-left-column .received-requests li:last-child {
+    border-bottom: none;
+}
+
+/* Profil görselini küçült ve yuvarlak yap */
+.profile-left-column .sent-requests img,
+.profile-left-column .received-requests img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+/* Kullanıcı adına biraz esneklik ver */
+.profile-left-column .sent-requests li a,
+.profile-left-column .received-requests li a {
+    flex: 1;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Butonları sıkıştır ve tutarlı boyutta yap */
+.profile-left-column .sent-requests li button,
+.profile-left-column .received-requests li button {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    background-color: #9c9393;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* “Accept” butonu için ayrı renk (isteğe bağlı) */
+.profile-left-column .received-requests li button:first-of-type {
+    background-color: rgba(205, 21, 0, 0.87);
+}
+
+/* Mobilde tam genişlik */
+@media (max-width: 640px) {
+    .profile-left-column .sent-requests ul,
+    .profile-left-column .received-requests ul {
+        max-height: 150px;
+    }
+}
+
+.activity-card {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px; /* Make the card wider */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .activity-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-text {
+    font-size: 16px;
+  }
+  
+  .avatar-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .activity-time {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  
+  .activity-card {
+    padding: 16px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-text {
+    font-size: 16px;
+  }
+  
+  .activitymovie-poster {
+    width: 80px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .activitymovie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .activity-time {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+.profile-updates .show-more {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.profile-updates .show-more:hover {
+    color: #fff;
+    border-color: #888;
+}

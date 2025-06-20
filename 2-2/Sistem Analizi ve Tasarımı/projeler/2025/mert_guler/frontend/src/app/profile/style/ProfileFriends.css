@@ -1,0 +1,42 @@
+/* src/features/profile/style/ProfileFriends.css */
+
+/* Container flex ile kaydırılabilir kart listesi */
+.profile-friends-section {
+    display: flex;
+    gap: 0.5rem;    /* 1rem’den 0.5rem’e düşürdük */
+    overflow-x: auto;
+}
+
+/* Her bir arkadaş kartı */
+.profile-friend-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;       /* Kart genişliği */
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+
+
+}
+
+/* Avatar resmi */
+.profile-friend-avatar img {
+    width: 80px;        /* Sabit genişlik */
+    height: 80px;       /* Sabit yükseklik */
+    object-fit: cover;  /* Taşmayı kırpar */
+    aspect-ratio: 1/1;
+    border-radius: 50%; /* Tam daire için */
+}
+
+/* Kullanıcı adı alanı */
+.profile-friend-info {
+    margin-top: 0.5rem;
+}
+
+.profile-friend-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    /* Yatayda ortalamak için zaten text-align: center var */
+}

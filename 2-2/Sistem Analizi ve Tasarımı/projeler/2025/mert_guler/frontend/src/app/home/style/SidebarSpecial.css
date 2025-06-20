@@ -1,0 +1,77 @@
+.sidebar-popular {
+    flex: 1;               /* parent .hero-sidebar içinde tam boyunu kapla */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar-popular ul {
+    flex: 1;               /* üstteki başlık haric tüm alanı kapla */
+    overflow-y: auto;      /* taşanın scroll olsun */
+    padding-right: 0.5rem; /* scrollbar kapatınca padding ver */
+}
+.sidebar-popular h3 {
+    margin: 0 0 1rem;
+    font-size: 1.25rem;
+}
+
+.sidebar-popular .loading {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.sidebar-popular li {
+    margin-bottom: 0.75rem;
+}
+
+.sidebar-popular .item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-popular .item img {
+    max-width: 144px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.sidebar-popular .item span {
+    font-size: 0.9rem;
+}
+
+/* SidebarSpecial.css */
+
+/* Firefox için */
+.sidebar-popular ul {
+    scrollbar-width: thin;              /* ince scrollbar */
+    scrollbar-color: #444 transparent;  /* thumb rengi ve track transparent */
+}
+
+/* WebKit (Chrome, Safari) için */
+.sidebar-popular ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar-popular ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-popular ul::-webkit-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 4px;
+}
+
+.sidebar-popular ul::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Mobilde sidebar’ı alt tarafa al veya gizle */
+@media (max-width: 768px) {
+    .sidebar-popular {
+        display: none;
+    }
+}
