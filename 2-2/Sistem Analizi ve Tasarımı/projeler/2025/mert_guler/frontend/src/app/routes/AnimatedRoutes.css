@@ -1,0 +1,26 @@
+/* src/components/AnimatedRoutes.css */
+
+.fade-wrapper {
+    /* tam ekranı kaplasın */
+    background-color: black;
+    min-height: 85vh;
+    width: 100%;
+}
+
+/* Hızlı exit: eski içerik 100 ms’de kaybolsun */
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 100ms ease-out;
+}
+
+/* Yavaş enter: yeni içerik 500 ms’de gelsin */
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}

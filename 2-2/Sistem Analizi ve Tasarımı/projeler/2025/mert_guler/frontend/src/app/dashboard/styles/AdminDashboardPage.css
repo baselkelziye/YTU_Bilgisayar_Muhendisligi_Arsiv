@@ -1,0 +1,65 @@
+:root {
+    --bg-page: #121212;
+    --bg-card: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #888888;
+    --accent: #bb86fc;
+    --accent-light: #d2b5ff;
+    --highlight: #03dac6;
+    --border: #333333;
+}
+.admin-dashboard {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.admin-loading {
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.admin-dashboard__wrap {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.admin-dashboard__content {
+    flex: 1;
+}
+
+.admin-stats {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.admin-stats h3 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+/* ─── AdminDashboardPage.css ─── */
+@media (max-width: 768px) {
+    .admin-dashboard {
+        padding: 1rem;
+    }
+    .admin-dashboard__wrap {
+        flex-direction: column;
+    }
+    .admin-sidebar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .admin-dashboard__content {
+        width: 100%;
+    }
+}

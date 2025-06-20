@@ -1,0 +1,50 @@
+.crew-list {
+    margin-bottom: 2rem;
+}
+
+.crew-list h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.crew-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.crew-list li {
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.crew-expand-btn {
+    background: none;
+    border: none;
+    color: #e50914;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI', sans-serif;
+    text-decoration: underline;
+}
+
+.crew-expand-btn:hover {
+    color: #ff1a3c;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .crew-list h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+    .crew-list li {
+        font-size: 0.9rem;
+    }
+    .crew-expand-btn {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,36 @@
+/*:root {*/
+/*    --card-width: 200px;*/
+/*    --card-height: 120px; !* 5:3 oran gibi daha yatay bir görünüm *!*/
+/*}*/
+
+/*!* Kart: sabit genişlik *!*/
+/*.slider-card {*/
+/*    flex: 0 0 var(--card-width);*/
+/*    margin-right: 1rem;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*!* Poster alanı: grid benzeri görünüm için sabit kutu *!*/
+/*.slider-poster {*/
+/*    width: var(--card-width);*/
+/*    height: var(--card-height);*/
+/*    overflow: hidden;*/
+/*    border-radius: 6px;*/
+/*    background-color: #222;*/
+/*    display: grid;*/
+/*    place-items: center; !* Görsel ortalansın *!*/
+/*}*/
+
+/*!* Görsel: kutuya sığacak şekilde ayarlanır *!*/
+/*.slider-poster img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;   !* Kırp ama orantıyı koru *!*/
+/*    display: block;*/
+/*}*/
+.section {
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
+    /*gap: 1.5rem; !* Increased gap to add more space between cards *!*/
+    /*margin-bottom: 1.5rem;*/
+}

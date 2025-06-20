@@ -1,0 +1,62 @@
+:root {
+    --card-width: 200px;
+    --card-height: 120px; /* 5:3 oran gibi daha yatay bir görünüm */
+}
+
+/* Kart: sabit genişlik */
+.slider-card {
+    flex: 0 0 var(--card-width);
+    margin-right: 1rem;
+    text-decoration: none;
+    display: block; /* Flex ile düzenleme */
+}
+
+/* Kartlar arasındaki boşluk */
+.slider-container {
+    display: flex;
+    gap: 1rem; /* Kartlar arası boşluk */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+/* Poster alanı: grid benzeri görünüm için sabit kutu */
+.slider-poster {
+    width: var(--card-width);
+    height: var(--card-height);
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #222;
+    display: grid;
+    place-items: center; /* Görsel ortalansın */
+}
+
+/* Görsel: kutuya sığacak şekilde ayarlanır */
+.slider-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Kırp ama orantıyı koru */
+    display: block;
+}
+
+/* ===== Mobil Düzenlemeler ===== */
+@media (max-width: 768px) {
+    :root {
+        --card-width: 150px;  /* Mobilde daha küçük kart genişliği */
+        --card-height: 90px;  /* Mobilde daha küçük kart yüksekliği */
+    }
+
+    .slider-container {
+        gap: 0.75rem; /* Mobilde kartlar arasındaki boşluk azaltıldı */
+    }
+
+    .slider-card {
+        flex: 0 0 var(--card-width); /* Kart genişliği mobilde küçültülür */
+    }
+
+    .slider-poster {
+        width: var(--card-width);
+        height: var(--card-height);
+    }
+}
