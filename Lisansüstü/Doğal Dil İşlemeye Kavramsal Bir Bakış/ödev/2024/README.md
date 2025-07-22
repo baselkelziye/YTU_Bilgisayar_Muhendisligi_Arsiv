@@ -23,4 +23,4 @@ Hocanın verdiği metindeki adresleri bulan bir REGEX yazma.
 ## Ödev Süreci
 1. **REGEX Yazımı:** Hocanın verdiği dosyadaki adresleri bulan REGEX yazıldı
 1. **Rapor Yazımı:** Bulunan adreslerin, oranın vs. gösterildiği bir rapor yazıldı.
-1. **Rapor:** Hazırlanan rapor final haftasında yüklenmiştir.
+1. **Rapor:** Hazırlanan rapor son teslim tarihinde yüklenmiştir.
