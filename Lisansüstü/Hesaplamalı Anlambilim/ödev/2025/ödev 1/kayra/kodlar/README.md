@@ -1,0 +1,6 @@
+# GSM8K TR Semantik Benzerlik Analizi
+
+Bu depo, Hesaplamalı Anlambilim dersi kapsamında, Türkçe GSM8K veri kümesi üzerinde soru-cevap çiftleri arasındaki anlamsal benzerlik analizini içermektedir. Çalışmada, 1000 rastgele seçilmiş soru-cevap çifti üzerinde, MTEB liderlik tablosunda üst sıralarda yer alan çok dilli 5 farklı embedding modeli ve turkish-colbert modeli kullanılarak benzerlik ölçümleri gerçekleştirilmiştir. Proje, soru-cevap eşleşmelerinde top1 ve top5 başarı ölçütlerini hesaplamakta ve t-SNE ile 2 boyutlu görselleştirmeler sunmaktadır. Ayrıntılı bilgi için *tanım.pdf* dosyasına bakabilirsiniz.
+
+# Nasıl kullanılır?
+İlk olarak `rastge_soru_cevap_ikilisi_getir` klasörü altındaki main.py dosyası çalıştırılarak, rastgele 1000 soru-cevap çifti elde edilir (ayrıntılı bilgi almak için klasör altındaki `README.md` dosyası incelenebilir). Daha sonra `benzerlik_olcumu` klasörü altındaki main.py dosyası çalıştırılarak, bu soru-cevap çiftleri üzerinde benzerlik ölçümleri yapılır (ayrıntılı bilgi almak için klasör altındaki `README.md` dosyası incelenebilir). Bu vesileyle `ytu-ce-cosmos/gsm8k_tr` veri kümesi vasıtasıyla modellerin başarımları ölçülmüş olur. Görsel ve metinsel sonuçlar `benzerlik_olcumu` klasörü altındaki `similarity_results` ve `top1_top5_results` klasörlerine kaydedilir. 
