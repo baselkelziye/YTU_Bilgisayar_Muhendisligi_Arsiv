@@ -2958,7 +2958,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -2975,11 +2975,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
         - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3391,11 +3391,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [İleri Algoritma Analizi Ve Tasarımı](#-i̇leri-algoritma-analizi-ve-tasarımı)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3416,7 +3416,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -4192,6 +4192,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Sinem Sarak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Batuhan Odçıkın</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
+
 <h4 align='center'>✨ <b><i>Burak Başol</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
 
@@ -4259,9 +4262,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Arda Mike</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/arda-mike-149a75294/'><b>LinkedIn Profili</b></a></p>
-
-<h6 align='center'> <b><i>Batuhan Odçıkın</i></b> </h6>
-<p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
