@@ -1,0 +1,46 @@
+//Bu text dosyası ekran çıktısını "png olarak açamayanlar için" örnek oluşturması amacıyla oluşturulmuş bir dosyadır.
+****** Müşteriler ******
+Customer Name: Allan, Location: Washington
+Customer Name: Jhon, Location: NYC
+Customer Name: Lily, Location: Kansas
+Customer Name: Arthur, Location: Detroit
+Customer Name: Frank, Location: NYC
+Customer Name: Joe, Location: Seattle
+
+****** Ürünler ******
+Product ID: 1, Product: Grain, Remaining Stock: 100
+Product ID: 2, Product: Steel, Remaining Stock: 100
+Product ID: 3, Product: Plastic, Remaining Stock: 100
+
+****** Siparişler ******
+Allan purchased 42 of Plastic
+Jhon purchased 62 of Steel
+Insufficient stock for product: Plastic. Only 58 units are available. Remaining stock has been provided.
+Lily purchased 61 of Grain
+Insufficient stock for product: Grain. Only 39 units are available. Remaining stock has been provided.
+Insufficient stock for product: Plastic. Only 0 units are available. Remaining stock has been provided.
+Insufficient stock for product: Plastic. Only 0 units are available. Remaining stock has been provided.
+
+****** Shipping Status ******
+Plastic could not be shipped to Allan
+Steel could not be shipped to Jhon
+Grain could not be shipped to Lily
+All orders have been successfully shipped to Arthur
+All orders have been successfully shipped to Frank
+All orders have been successfully shipped to Joe
+
+****** Market Inventory ******
+Product ID: 1, Product: Grain, Remaining Stock: 0
+Product ID: 2, Product: Steel, Remaining Stock: 38
+Product ID: 3, Product: Plastic, Remaining Stock: 0
+
+****** Customer Spendings ******
+Customer: Allan, Total Spending: $9660.0
+Customer: Jhon, Total Spending: $18600.0
+Customer: Lily, Total Spending: $6100.0
+Customer: Arthur, Total Spending: $0.0
+Customer: Frank, Total Spending: $0.0
+Customer: Joe, Total Spending: $0.0
+
+****** Total Income ******
+Total Market Income: $34360.0

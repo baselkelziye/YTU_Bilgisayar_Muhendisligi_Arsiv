@@ -8,7 +8,7 @@
 **Ders Dönemi:** 2023-2024 Bahar Dönemi  
 
 ## Proje Bilgileri
-**Proje Kişi Sayısı:** 5 Kişi (Duruma Göre 5 ve kişiyi de hoca kabul etti)
+**Proje Kişi Sayısı:** 5 Kişi (Duruma Göre 5 ve 6 kişiyi de hoca kabul etti)
 
 **Proje Süresi:** Yaklaşık 2 ay
 
