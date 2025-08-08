@@ -2695,7 +2695,7 @@
                 }
             ],
             "kolaylik_puani": 20,
-            "gereklilik_puani": 40,
+            "gereklilik_puani": 60,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "FÇ",
@@ -2703,7 +2703,7 @@
                 }
             ],
             "guncel_mi": true,
-            "oy_sayisi": 1,
+            "oy_sayisi": 2,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1by3F9SOph83Ft7VlWtgqy48qb42R4ZzP?usp=drive_link)"
             ],
@@ -2712,6 +2712,12 @@
                     "kolaylik_puani": 20,
                     "gereklilik_puani": 40,
                     "yil": 2024,
+                    "oy_sayisi": 1
+                },
+                {
+                    "kolaylik_puani": 20,
+                    "gereklilik_puani": 80,
+                    "yil": 2025,
                     "oy_sayisi": 1
                 }
             ]
