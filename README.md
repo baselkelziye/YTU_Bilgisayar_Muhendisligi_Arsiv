@@ -1823,14 +1823,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
       - 📅 *2024 yılı için yıldız bilgileri*
         - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
@@ -3158,11 +3162,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 26 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 27 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3179,11 +3183,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
         - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -4183,6 +4187,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h2 align='center'>🌟 <b><i>Mert Güler</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Burak Başol</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Esma Nur Çilekaya</i></b> 💫</h3>
 <p align='center'><a href='https://www.linkedin.com/in/esma-nur-%C3%A7ilekaya'><b>LinkedIn Profili</b></a></p>
 
@@ -4194,9 +4201,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h4 align='center'>✨ <b><i>Batuhan Odçıkın</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
-
-<h4 align='center'>✨ <b><i>Burak Başol</i></b> ✨</h4>
-<p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
