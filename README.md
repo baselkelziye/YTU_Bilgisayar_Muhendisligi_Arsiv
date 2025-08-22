@@ -1209,11 +1209,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Mehmet Akpinar_**: Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_8255_**: Mikro kısmı nasıl öğretilemez bunu öğreniyorsunuz. Bence bu 2 ders çok seyrek yanına devre teorisi ve organizasyon da eklensin. toplam 10 ödev değil 30 ödev yapalım. haftasonumuza 1 lab değil 3 lab yapalım. Böyle devam. Sonra dersi seneye 200 kişiye anlatırlar.. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_.Asm_**: Dersleri birleştirecez diye saçma sapan bir şey çıkarmışlar ortaya, daha o hafta anlatılanı kavramadan başka bir konuya geçiliyor, 1 hafta kaçırırsan her şey birbirine giriyor, 8 lab 2 ödev verip bütün dönem haftasonlarını kilitliyor, öğrenci dostu olsun derken zulüm gibi bir şey olmuş. Bu 2 dersi ayrı ayrı anlatsalar hem daha anlaşılır olur hem de bu kadar vakit yemez. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+    - 👤 **_Mikrodanbıktım_**: bu dersi geçmenin yolu lab ve ödevleri yapmak sanırım. onu yapamayınca 100.kez almak zorunda kaldım. bu ders yüzünden mezun olamadım. yanlış doğruyu götürmese ne olur sanki? bu kadar ağır olmasının hiçbir manası yok. ℹ️ Yorum **08.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-      - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -1227,8 +1228,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
       - 📅 *2025 yılı için yıldız bilgileri*
         - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
-        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
