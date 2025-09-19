@@ -529,9 +529,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Anonim_**: 2024 fizik 1 ytu tarihinin en basit sinavlarindan olusmustur ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -544,9 +544,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
       - 📅 *2025 yılı için yıldız bilgileri*
-        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
-          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+          - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Fizik%201)
 
@@ -4312,6 +4312,11 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Zehra Aksoy</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/zehra-aksoy-124a01174'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>İbrahim Farhan Shlaka</i></b> </h6>
+<p align='center'><a href='https://github.com/Ibrahim-Farhan-Shlaka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ibrahim-farhan-shlaka-528b291b4/'><b>LinkedIn Profili
+
+</b></a></p>
 
 <h6 align='center'> <b><i>Şehmus Yakut</i></b> </h6>
 <p align='center'><a href='https://github.com/SehmusYakut'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sehmus-yakut/'><b>LinkedIn Profili</b></a></p>
