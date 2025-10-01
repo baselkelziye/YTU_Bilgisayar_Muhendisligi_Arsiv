@@ -2262,14 +2262,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
       - 📅 *2025 yılı için yıldız bilgileri*
         - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
@@ -4314,9 +4314,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://www.linkedin.com/in/zehra-aksoy-124a01174'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>İbrahim Farhan Shlaka</i></b> </h6>
-<p align='center'><a href='https://github.com/Ibrahim-Farhan-Shlaka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ibrahim-farhan-shlaka-528b291b4/'><b>LinkedIn Profili
-
-</b></a></p>
+<p align='center'><a href='https://github.com/Ibrahim-Farhan-Shlaka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ibrahim-farhan-shlaka-528b291b4/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Şehmus Yakut</i></b> </h6>
 <p align='center'><a href='https://github.com/SehmusYakut'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sehmus-yakut/'><b>LinkedIn Profili</b></a></p>
