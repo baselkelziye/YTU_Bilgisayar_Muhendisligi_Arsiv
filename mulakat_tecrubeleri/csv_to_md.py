@@ -93,6 +93,8 @@ class OutputPathBuilder:
     def __init__(self, base_dir: Path) -> None:
         self.base_dir = base_dir
         self.base_dir.mkdir(parents=True, exist_ok=True)
+        # Her yıl klasörü için şirket bazında sayaç tut
+        self.company_counters: Dict[str, Dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
     def build(self, row: Dict[str, str], index: int) -> Path:
         mulakat_tarihi = (row.get('Mülakat Tarihi') or '').strip()
@@ -100,7 +102,16 @@ class OutputPathBuilder:
         year_folder = str(year) if year else 'Tarihsiz'
 
         company = FilenameSanitizer.sanitize(row.get('Mülakatı Yapan Şirket Adı', 'bilinmeyen'))
-        filename = f"{company}_{index}.md"
+        
+        # Bu yıl klasöründeki bu şirket için sayacı artır
+        self.company_counters[year_folder][company] += 1
+        count = self.company_counters[year_folder][company]
+        
+        # Eğer aynı şirketten birden fazla varsa sayı ekle
+        if count == 1:
+            filename = f"{company}.md"
+        else:
+            filename = f"{company}_{count}.md"
 
         target_dir = self.base_dir / year_folder
         target_dir.mkdir(parents=True, exist_ok=True)
