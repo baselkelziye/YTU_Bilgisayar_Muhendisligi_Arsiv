@@ -11,24 +11,24 @@
 * Mülakatlar Bittikten Sonraki Dönüt Süresi: 3 gün
 
 ## Ön Hazırlık
-* İş ilanına nasıl başvuruldu: Cv attım
+* İş ilanına nasıl başvuruldu: CV attım
 * Başvurudan mülakata kadar geçen süre: 2 hafta
 
 ## Mülakat Süreci
 
 ### 1. Teknik Mülakatı
-* **Süre**: 30dk
+* **Süre**: 30 dk
 * **Biçim**: Zoom
 * **Görüşülen kişi sayısı**: 7
 * **Mülakatı yapan**: Birim müdürleri
 
 #### Sorulan Sorular
-Bildiğimi belirttiğim dillerdeki kolaydan zora interaktif sorular soruldu
+Bildiğimi belirttiğim dillerdeki kolaydan zora interaktif sorular soruldu.
 
 ## Genel Değerlendirme ve Öğrenilen Dersler
 * **Mülakat Zorluk Derecesi**: 3
 * **Mülakat Atmosferi**: Resmi
-* **Gelecek Mülakatlar İçin Tavsiyeler**: Bildiğin konulara göre seni o birim seçiyor. Az bildiğin yada üzerine çalışmak istemediğin konuları söylemesen daha iyi olur.
+* **Gelecek Mülakatlar İçin Tavsiyeler**: Bildiğin konulara göre seni o birim seçiyor. Az bildiğin ya da üzerine çalışmak istemediğin konuları söylemesen daha iyi olur.
 
 ## Ek Notlar
 * Diğer şirketlere göre kolay ve yorucu olmayan bir süreç.
