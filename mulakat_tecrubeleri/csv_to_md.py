@@ -144,14 +144,15 @@ def create_markdown(row):
     
     # Alt Mülakatlar - DÜZELTİLMİŞ BÖLÜM
     alt_mulakat_sayisi = row.get('Toplam Kaç Tane Alt Mülakata Girdiniz', '').strip()
-    
+
     if alt_mulakat_sayisi:
         markdown.append("## Mülakat Süreci")
         markdown.append("")
         
-        # Tüm alt mülakatları kontrol et
-        mulakat_bulundu = False
-        for i in range(10):  # Maksimum 10 alt mülakat varsayalım
+        # Tüm olası alt mülakatları kontrol et ve dolu olanları topla
+        dolu_mulakatlar = []
+
+        for i in range(5):  # Maksimum 5 alt mülakat varsayalım
             # İlk mülakat için suffix yok, diğerleri için _1, _2, _3...
             suffix = '' if i == 0 else f'_{i}'
             
@@ -159,41 +160,40 @@ def create_markdown(row):
             tip = row.get(tip_key, '').strip()
             
             if tip:
-                mulakat_bulundu = True
-                markdown.append(f"### {i+1}. {tip}")
-                
                 sure_key = f'Alt Mülakat Süresi{suffix}'
                 bicim_key = f'Alt Mülakat Biçimi{suffix}'
                 kisi_key = f'Alt Mülakatta Görüşülen Kişi Sayısı{suffix}'
                 yapan_key = f'Mülakatı Yapan Kişi(ler){suffix}'
-                
-                sure = row.get(sure_key, '').strip()
-                bicim = row.get(bicim_key, '').strip()
-                kisi = row.get(kisi_key, '').strip()
-                yapan = row.get(yapan_key, '').strip()
-                
-                if sure:
-                    markdown.append(f"* **Süre**: {sure}")
-                if bicim:
-                    markdown.append(f"* **Biçim**: {bicim}")
-                if kisi:
-                    markdown.append(f"* **Görüşülen kişi sayısı**: {kisi}")
-                if yapan:
-                    markdown.append(f"* **Mülakatı yapan**: {yapan}")
-                
                 sorular_key = f'Alt Mülakat Sırasında Size Sorulan Sorular{suffix}'
-                sorular = row.get(sorular_key, '').strip()
                 
-                if sorular:
-                    markdown.append("")
-                    markdown.append("#### Sorulan Sorular")
-                    markdown.append(sorular)
-                
+                dolu_mulakatlar.append({
+                    'tip': tip,
+                    'sure': row.get(sure_key, '').strip(),
+                    'bicim': row.get(bicim_key, '').strip(),
+                    'kisi': row.get(kisi_key, '').strip(),
+                    'yapan': row.get(yapan_key, '').strip(),
+                    'sorular': row.get(sorular_key, '').strip()
+                })
+        
+        # Dolu mülakatları sırayla yazdır (1'den başlayarak numaralandır)
+        for idx, mulakat in enumerate(dolu_mulakatlar, start=1):
+            markdown.append(f"### {idx}. {mulakat['tip']}")
+            
+            if mulakat['sure']:
+                markdown.append(f"* **Süre**: {mulakat['sure']}")
+            if mulakat['bicim']:
+                markdown.append(f"* **Biçim**: {mulakat['bicim']}")
+            if mulakat['kisi']:
+                markdown.append(f"* **Görüşülen kişi sayısı**: {mulakat['kisi']}")
+            if mulakat['yapan']:
+                markdown.append(f"* **Mülakatı yapan**: {mulakat['yapan']}")
+            
+            if mulakat['sorular']:
                 markdown.append("")
-            else:
-                # Eğer bu indekste mülakat yoksa, döngüyü kır
-                if mulakat_bulundu:
-                    break
+                markdown.append("#### Sorulan Sorular")
+                markdown.append(mulakat['sorular'])
+            
+            markdown.append("")
     
     # Genel Değerlendirme
     markdown.append("## Genel Değerlendirme ve Öğrenilen Dersler")
