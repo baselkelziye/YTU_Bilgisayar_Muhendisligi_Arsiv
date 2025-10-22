@@ -289,8 +289,11 @@ class CSVToMarkdownConverter:
         self.path_builder = path_builder
         self.writer = writer
 
-    def run(self) -> None:
+    def run(self, skip_count: int = 0) -> None:
         for index, row in enumerate(self.source.rows(), start=1):
+            if index <= skip_count:
+                print(f"⊘ Atlandı: Kayıt {index}")
+                continue
             content = self.generator.generate(row)
             target_path = self.path_builder.build(row, index)
             self.writer.write(target_path, content)
@@ -301,6 +304,13 @@ class CSVToMarkdownConverter:
 def parse_args():
     parser = argparse.ArgumentParser(
         description="CSV dosyasından yıllara göre klasörlenmiş Markdown mülakat notları oluşturur."
+    )
+    parser.add_argument(
+        'skip',
+        type=int,
+        nargs='?',
+        default=0,
+        help='Kaçıncı kayıttan itibaren işleneceği (varsayılan: 0, tüm kayıtlar işlenir)'
     )
     parser.add_argument(
         'csv',
@@ -316,12 +326,15 @@ def parse_args():
     return parser.parse_args()
 
 
-def main(csv_file: str, output_dir: Optional[str]) -> int:
+def main(skip_count: int, csv_file: str, output_dir: Optional[str]) -> int:
     csv_path = Path(csv_file)
     source = CSVInterviewSource(csv_path)
     if not source.exists():
         print(f"❌ Hata: '{csv_file}' dosyası bulunamadı!")
         return 1
+
+    if skip_count > 0:
+        print(f"ℹ️  İlk {skip_count} kayıt atlanacak...\n")
 
     base_dir = Path(output_dir) if output_dir else Path.cwd()
     converter = CSVToMarkdownConverter(
@@ -330,11 +343,11 @@ def main(csv_file: str, output_dir: Optional[str]) -> int:
         path_builder=OutputPathBuilder(base_dir),
         writer=FileWriter(),
     )
-    converter.run()
+    converter.run(skip_count)
     print("\n✓ Tüm dosyalar başarıyla oluşturuldu!")
     return 0
 
 
 if __name__ == "__main__":
     args = parse_args()
-    raise SystemExit(main(args.csv, args.output_dir))
+    raise SystemExit(main(args.skip, args.csv, args.output_dir))
