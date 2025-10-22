@@ -1585,16 +1585,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Türkçe%202)
 
-### 🗓 Mesleki Seçmeli
-
-
-#### 📘 Blokzincir Temelleri 
-  - 🏷️ **Ders Tipi:** Mesleki Seçmeli
-  - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [YES](#-dr-yunus-emre-selçuk)
-
 ### 🗓 Mesleki Seçmeli 1
 
 
@@ -1671,6 +1661,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [NA](#-prof-dr-nizamettin-aydın)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
+
+
+#### 📘 Blokzincir Temelleri 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [OA](#-dr-oğuz-altun)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Blokzincir%20Temelleri)
 
 
 #### 📘 Büyük Veri İşleme Ve Analizi 
@@ -3494,6 +3493,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
   - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
   - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
+  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
@@ -3541,7 +3541,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
   - 📖 [Nesneye Dayalı Tasarım ve Modelleme](#-nesneye-dayalı-tasarım-ve-modelleme)
-  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
