@@ -2,7 +2,8 @@
 
 ## Mülakat Bilgileri
 * Şirket: TUBİTAK BİLGEM
-* Şirket Konumu: İstanbul
+* Şirket Konumu: Gebze
+* Mülakata Giren Kişi: Ahmet Akib Gültekin
 * İş Türü: Bursiyer
 * Mülakat Tarihi: 27.02.2023
 * Mülakat Sürecinin Toplam Süresi: 1 saat
