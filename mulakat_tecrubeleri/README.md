@@ -7,16 +7,23 @@ YTU Bilgisayar Mühendisliği öğrencilerinin ve mezunlarının iş başvurular
 ```
 mulakat_tecrubeleri/
 ├── yıl/
-│   ├── tecrube_1.md
-│   └── tecrube_2.md
+│   ├── Sirket_Adi.md
+│   └── Diger_Sirket.md
 ├── 2023/
-│   ├── turkcell_genc_yetenek.md
-│   └── TUBİTAK_BİLGEM_4.md
+│   ├── Turkcell.md
+│   └── TUBİTAK.md
+├── 2025/
+│   ├── Kuveyt_Türk.md
+│   ├── Kuveyt_Türk_2.md
+│   └── Architecht.md
 └── csv_to_md.py
 ```
 
 - 📅 **Yıl klasörleri**: Her yıl için ayrı klasör (örn: `2023/`, `2025/`)
-- 📄 **Dosya adlandırma**: `Sirket_Adi.md` veya `Sirket_Adi.md` biçiminde
+- 📄 **Dosya adlandırma**: 
+  - Tek mülakat: `Sirket_Adi.md`
+  - Aynı şirketten birden fazla mülakat: `Sirket_Adi_2.md`, `Sirket_Adi_3.md` şeklinde
+  - Her yıl klasörü kendi içinde bağımsız sayaç kullanır
 - 🔧 **csv_to_md.py**: CSV biçimindeki mülakat tecrübelerini otomatik olarak yıllara göre Markdown dosyalarına dönüştüren Python scripti
 
 ## 🛠️ csv_to_md.py Kullanımı
@@ -25,6 +32,7 @@ Script, CSV dosyasındaki mülakat verilerini okuyarak:
 - Tarihe göre otomatik yıl klasörleri oluşturur
 - Her mülakat için ayrı Markdown dosyası üretir
 - Şirket adına göre dosya adı belirler
+- Aynı şirketten birden fazla mülakat varsa otomatik sayı ekler (her yıl kendi içinde sayar)
 - SOLID prensiplerine uygun, modüler yapıda geliştirilmiştir
 
 ```bash
