@@ -3,8 +3,7 @@
 ## Mülakat Bilgileri
 * Şirket: Turkcell
 * Şirket Konumu: İstanbul
-* Mülakata Giren Kişi: -
-* İş Türü: Yarı Zamanlı
+* İş Türü: Yarı Zamanlı 
 * Mülakat Tarihi: Mayıs 2023
 * Mülakat Sürecinin Toplam Süresi: Testler hariç 3 ay
 * Yapılan Mülakatların Toplam Süresi: 2 saat (Ayrı ayrı mülakatlar yapıldıysa toplam süresi)
