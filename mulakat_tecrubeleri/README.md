@@ -1,6 +1,6 @@
 # 💼 Mülakat Tecrübeleri
 
-YTU Bilgisayar Mühendisliği öğrencilerinin ve mezunlarının iş başvuruları ve mülakatlarındaki deneyimlerini paylaştığı bölüm.
+YTU Bilgisayar Mühendisliği öğrencilerinin ve mezunlarının iş başvuruları ve mülakatlarındaki deneyimlerini paylaştığı bölüm. Sen de deneyimlerini paylaşmak istiyorsan [buraya tıklayarak](https://forms.gle/H2KYPTdtA5TV23ce8) formu doldurabilirsin! (anket yaklaşık 20 dakika sürmektedir)
 
 ## 📂 Klasör Yapısı
 
