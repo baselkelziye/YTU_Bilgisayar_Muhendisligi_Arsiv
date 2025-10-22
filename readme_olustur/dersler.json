@@ -3602,15 +3602,18 @@
         {
             "ad": "Blokzincir Temelleri",
             "yil": 0,
-            "donem": "yok",
-            "tip": "Mesleki Seçmeli",
+            "donem": "",
+            "tip": "Mesleki Seçmeli 1",
             "dersi_veren_hocalar": [
                 {
-                    "kisaltma": "YES",
-                    "ad": "Dr. Yunus Emre Selçuk"
+                    "kisaltma": "OA",
+                    "ad": "Dr. Oğuz Altun"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "faydali_olabilecek_kaynaklar": [
+                "**Video:** [Video Serisi Linki](https://youtube.com/playlist?list=PLoVRRjQbqYFw4wJ-oh-_iGPBiSvwDtUw0&si=gU58kAPlqzfCRaYO)"
+            ]
         }
     ],
     "bolum_adi": "Dersler",
