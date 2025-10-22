@@ -3,6 +3,7 @@ import csv
 import os
 from datetime import datetime
 from pathlib import Path
+from collections import defaultdict
 
 def csv_to_markdown(csv_file, output_dir=None):
     """
@@ -21,9 +22,23 @@ def csv_to_markdown(csv_file, output_dir=None):
     base_dir.mkdir(parents=True, exist_ok=True)
 
     with csv_path.open('r', encoding='utf-8') as file:
-        csv_reader = csv.DictReader(file)
+        # CSV'yi satır satır oku ve tekrarlanan sütunları işle
+        reader = csv.reader(file)
+        headers = next(reader)
         
-        for index, row in enumerate(csv_reader, start=1):
+        # Tekrarlanan sütun isimlerini say ve yeniden adlandır
+        header_counts = defaultdict(int)
+        new_headers = []
+        for header in headers:
+            if header_counts[header] > 0:
+                new_headers.append(f"{header}_{header_counts[header]}")
+            else:
+                new_headers.append(header)
+            header_counts[header] += 1
+        
+        for index, row_data in enumerate(reader, start=1):
+            row = dict(zip(new_headers, row_data))
+            
             # Mülakat tarihinden yılı al
             mulakat_tarihi = row.get('Mülakat Tarihi', '')
             yil = extract_year(mulakat_tarihi)
@@ -127,37 +142,46 @@ def create_markdown(row):
                 markdown.append(f"* {label}: {value}")
         markdown.append("")
     
-    # Alt Mülakatlar
+    # Alt Mülakatlar - DÜZELTİLMİŞ BÖLÜM
     alt_mulakat_sayisi = row.get('Toplam Kaç Tane Alt Mülakata Girdiniz', '').strip()
     
     if alt_mulakat_sayisi:
         markdown.append("## Mülakat Süreci")
         markdown.append("")
         
-        # 5 alt mülakat için kontrol et
-        for i in range(1, 6):
-            tip_key = f'Alt Mülakat Tipi' if i == 1 else f'Alt Mülakat Tipi.{i-1}'
+        # Tüm alt mülakatları kontrol et
+        mulakat_bulundu = False
+        for i in range(10):  # Maksimum 10 alt mülakat varsayalım
+            # İlk mülakat için suffix yok, diğerleri için _1, _2, _3...
+            suffix = '' if i == 0 else f'_{i}'
+            
+            tip_key = f'Alt Mülakat Tipi{suffix}'
             tip = row.get(tip_key, '').strip()
             
             if tip:
-                markdown.append(f"### {tip}")
+                mulakat_bulundu = True
+                markdown.append(f"### {i+1}. {tip}")
                 
-                sure_key = f'Alt Mülakat Süresi' if i == 1 else f'Alt Mülakat Süresi.{i-1}'
-                bicim_key = f'Alt Mülakat Biçimi' if i == 1 else f'Alt Mülakat Biçimi.{i-1}'
-                kisi_key = f'Alt Mülakatta Görüşülen Kişi Sayısı' if i == 1 else f'Alt Mülakatta Görüşülen Kişi Sayısı.{i-1}'
+                sure_key = f'Alt Mülakat Süresi{suffix}'
+                bicim_key = f'Alt Mülakat Biçimi{suffix}'
+                kisi_key = f'Alt Mülakatta Görüşülen Kişi Sayısı{suffix}'
+                yapan_key = f'Mülakatı Yapan Kişi(ler){suffix}'
                 
                 sure = row.get(sure_key, '').strip()
                 bicim = row.get(bicim_key, '').strip()
                 kisi = row.get(kisi_key, '').strip()
+                yapan = row.get(yapan_key, '').strip()
                 
                 if sure:
-                    markdown.append(f"* Süre: {sure}")
+                    markdown.append(f"* **Süre**: {sure}")
                 if bicim:
-                    markdown.append(f"* Biçim: {bicim}")
+                    markdown.append(f"* **Biçim**: {bicim}")
                 if kisi:
-                    markdown.append(f"* Görüşülen kişi sayısı: {kisi}")
+                    markdown.append(f"* **Görüşülen kişi sayısı**: {kisi}")
+                if yapan:
+                    markdown.append(f"* **Mülakatı yapan**: {yapan}")
                 
-                sorular_key = f'Alt Mülakat Sırasında Size Sorulan Sorular' if i == 1 else f'Alt Mülakat Sırasında Size Sorulan Sorular.{i-1}'
+                sorular_key = f'Alt Mülakat Sırasında Size Sorulan Sorular{suffix}'
                 sorular = row.get(sorular_key, '').strip()
                 
                 if sorular:
@@ -166,6 +190,10 @@ def create_markdown(row):
                     markdown.append(sorular)
                 
                 markdown.append("")
+            else:
+                # Eğer bu indekste mülakat yoksa, döngüyü kır
+                if mulakat_bulundu:
+                    break
     
     # Genel Değerlendirme
     markdown.append("## Genel Değerlendirme ve Öğrenilen Dersler")
