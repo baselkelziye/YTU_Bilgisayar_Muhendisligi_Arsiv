@@ -4,15 +4,15 @@
 * Şirket Konumu: ULUSLARARASI
 * İş Türü: Tam Zamanlı
 * Mülakat Tarihi: 22.08.2024
-* Mülakat Sürecinin Toplam Süresi: Bir ay
+* Mülakat Sürecinin Toplam Süresi: 1 Ay
 * Yapılan Mülakatların Toplam Süresi: 3
 * Mülakat Yeri: Uzaktan
-* Mülakatlar Bittikten Sonraki Dönüt Süresi: iki üç hafta içinde tam hatırlamiyorum
+* Mülakatlar Bittikten Sonraki Dönüt Süresi: 2-3 Hafta
 
 ## Ön Hazırlık
 * İş ilanına nasıl başvuruldu: Coderspace
-* Hazırlık için kullanılan kaynaklar: Not tekrarı, kodlama soru cozumu
-* Hazırlık süresince üzerinde durulan konular: Python, sql
+* Hazırlık için kullanılan kaynaklar: Not tekrarı, kodlama soru çözümü
+* Hazırlık süresince üzerinde durulan konular: Python, SQL
 
 ## Mülakat Süreci
 
@@ -20,13 +20,15 @@
 * **Biçim**: Uzaktan
 
 #### Sorulan Sorular
-Güçlü yönlerin vs
+* Güçlü yönlerin neler?
 
 ### 2. Kodlama Mülakatı
-* **Biçim**: Uzakatan
+* **Biçim**: Uzaktan
 
 #### Sorulan Sorular
-Python, sql, algoritma
+* Python
+* SQL
+* Algoritma
 
 ## Genel Değerlendirme ve Öğrenilen Dersler
 * **Mülakat Zorluk Derecesi**: 3
