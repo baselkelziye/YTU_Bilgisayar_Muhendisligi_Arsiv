@@ -5,10 +5,10 @@
 * Şirket Konumu: İstanbul
 * İş Türü: Tam Zamanlı
 * Mülakat Tarihi: 24.10.2024
-* Mülakat Sürecinin Toplam Süresi: 5 ay
-* Yapılan Mülakatların Toplam Süresi: 3 saat
+* Mülakat Sürecinin Toplam Süresi: 5 Ay
+* Yapılan Mülakatların Toplam Süresi: 3 Saat
 * Mülakat Yeri: İkisi de
-* Mülakatlar Bittikten Sonraki Dönüt Süresi: 2 hafta
+* Mülakatlar Bittikten Sonraki Dönüt Süresi: 2 Hafta
 
 ## Ön Hazırlık
 * İş ilanına nasıl başvuruldu: Şirket Web Sitesi
@@ -19,28 +19,31 @@
 ## Mülakat Süreci
 
 ### 1. Teknik Mülakatı
-* **Süre**: 45 dk
+* **Süre**: 45 Dakika
 * **Biçim**: Video Konferans
 * **Görüşülen kişi sayısı**: 2
 
 #### Sorulan Sorular
-Neural Networkler, Aktivasyon fonksiyon Türleri vs.
+* Neural Network'ler
+* Aktivasyon Fonksiyon Türleri
 
 ### 2. İK/HR Mülakatı
-* **Süre**: 45 dk
+* **Süre**: 45 Dakika
 * **Biçim**: Yüz yüze
 * **Görüşülen kişi sayısı**: 2
 
 #### Sorulan Sorular
-Kişisel çalışma yöntemleri\nTakım çalışmasına yatkınlık
+* Kişisel çalışma yöntemleri
+* Takım çalışmasına yatkınlık
 
 ### 3. Teknik Mülakatı
-* **Süre**: 45 dk
+* **Süre**: 45 Dakika
 * **Biçim**: Video Konferans
 * **Görüşülen kişi sayısı**: 1
 
 #### Sorulan Sorular
-Kişisel tanıtım\nTemel Yapay Zeka soruları
+* Kişisel tanıtım
+* Temel Yapay Zeka soruları
 
 ## Genel Değerlendirme ve Öğrenilen Dersler
 * **Mülakat Zorluk Derecesi**: 4
