@@ -9,13 +9,13 @@
 - **Rapor:** 91, Ortalama: 87,42
 
 ## Proje Teklifi (Varsa)
-* **Makale:** Almanac —Retrieval-Augmented Language Models for Clinical Medicine
+* **Makale:** Almanac — Retrieval-Augmented Language Models for Clinical Medicine
 * **Zorluk Derecesi:** Orta
 * **Alan:** Yapay Zeka
-* **Tavsiye Eder Misin:** Evet
+* **Tavsiye Eder misin:** Evet
 
 ## Projede Neler Yapıldı
-* *Almanac —Retrieval-Augmented Language Models for Clinical Medicine* Makalesi Seçildi
+* *Almanac — Retrieval-Augmented Language Models for Clinical Medicine* makalesi seçildi.
 * Makaleyle ilgili sunum hazırlandı.
 * Rapor hazırlandı.
 * Hoca sunum günü atadı.

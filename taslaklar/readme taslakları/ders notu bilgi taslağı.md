@@ -19,4 +19,4 @@
 **Not Ne Kadar Yeterli?:** Not ilk 5 hafta için gayet yeterli. Geriye kalan zamanlarda pek üstüne düşmedim.
 
 ## Ek Bilgiler (Varsa)
-Dersi Banu Hoca'dan aldım ama notları genelde Ahmet Elbir'in online kayıtlarını dinleyerek tuttum.
+Dersi Banu Hoca'dan aldım ama notları genelde Ahmet Elbir'in çevrimiçi kayıtlarını dinleyerek tuttum.

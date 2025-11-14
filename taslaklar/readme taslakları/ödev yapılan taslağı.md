@@ -16,10 +16,10 @@
 **Ödev Zorluğu:** Kolay 
 
 ## Ödev Teklifi (Varsa)
-* **Makale:** YTUCEth Bot
+* **Konu:** YTUCEth Bot
 * **Zorluk Derecesi:** Orta
 * **Alan:** Yapay Zeka
-* **Tavsiye Eder Misin:** Evet
+* **Tavsiye Eder misin:** Evet
 
 ## Ödev Tanımı
 Seçilmiş olan konuyla ilgili bir sunum hazırlayıp derste sunma ve sunumla ilgili olarak bir rapor hazırlama.
