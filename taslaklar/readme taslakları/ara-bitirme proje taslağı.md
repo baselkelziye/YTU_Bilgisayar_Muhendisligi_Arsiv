@@ -9,7 +9,7 @@
 
 **Proje Notu:** AA
 
-**Projeyi Tavsiye Eder Misin?:** Evet
+**Projeyi Tavsiye Eder misin?:** Evet
 
 **Hoca Süreci Nasıl Yönetti?:** Takibi yapmıyor, senin ilgilenmen lazım. İlgilendiğinde yardımcı oluyor.
 

@@ -22,8 +22,8 @@ Doğal dil işlemeyle alakalı bir ürün ortaya koyma.
 * **Sunum + Rapor:** %40 (genel ağırlık etkisi)
 
 ## Proje Süreci
-1. **Proje Konusu:** Hoca'nın oluşturduğu excel'e proje konuları ve gruplar girildi.
+1. **Proje Konusu:** Hoca'nın oluşturduğu Excel'e proje konuları ve gruplar girildi.
 1. **Proje Hazırlama:** Proje konusunun kapsadığı bir ürün ortaya çıkarıldı.
 1. **Rapor Yazımı:** Projenin süreçlerini anlatan rapor yazıldı.
-1. **Sunum:** Proje rapor üzerinden ya da bir sunum üzerinden hocaya anlatıldı ve çalıştırıldı. (çevrimiçi)
-1. **Rapor:** Hazırlanan rapor final tarihinde yüklenmiştir..
+1. **Sunum:** Proje rapor üzerinden ya da bir sunum üzerinden hocaya anlatıldı ve çalıştırıldı (çevrimiçi).
+1. **Rapor:** Hazırlanan rapor final tarihinde yüklenmiştir.
