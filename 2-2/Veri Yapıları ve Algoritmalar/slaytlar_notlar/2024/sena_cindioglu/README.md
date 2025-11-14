@@ -1,7 +1,7 @@
 # 2023-2024 Bahar Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:**  Veri yapıları 
+**Ders Adı:** Veri Yapıları
 
 **Dersi Veren Hoca(lar):** Mine Elif Karslıgil
 
@@ -9,13 +9,13 @@
 
 ## Not Bilgileri
 
-**Not Sahibi:** Sena cindioğlu
+**Not Sahibi:** Sena Cindioğlu
 
 **Not Tipi:** El Yazısı
 
-**Not Kapsamı:**Hocanın çizdiği tüm flowchart ve kodları içerir
+**Not Kapsamı:** Hocanın çizdiği tüm flowchart ve kodları içerir
 
-**Not Ayrıntı Oranı:** Hocanın söylediği her şeyi not aldım. 
+**Not Ayrıntı Oranı:** Hocanın söylediği her şeyi not aldım.
 
-**Not Ne Kadar Yeterli?:** ilk haftalar çok ayrıntılı sona doğru azalıyor
+**Not Ne Kadar Yeterli?:** İlk haftalar çok ayrıntılı, sona doğru azalıyor
 
