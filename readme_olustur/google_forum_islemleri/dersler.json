@@ -652,8 +652,8 @@
                     }
                 }
             ],
-            "kolaylik_puani": 42,
-            "gereklilik_puani": 36,
+            "kolaylik_puani": 36,
+            "gereklilik_puani": 33,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "OA",
@@ -665,7 +665,7 @@
                 }
             ],
             "guncel_mi": true,
-            "oy_sayisi": 5,
+            "oy_sayisi": 6,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/15OgFx9BIu8Gur6ra1izx2N7-6Z2BfAim?usp=drive_link)",
                 "**Not:** [Efe Girgin'in notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/efe_girgin)",
@@ -680,10 +680,10 @@
                     "oy_sayisi": 4
                 },
                 {
-                    "kolaylik_puani": 100,
-                    "gereklilik_puani": 30,
+                    "kolaylik_puani": 55,
+                    "gereklilik_puani": 25,
                     "yil": 2025,
-                    "oy_sayisi": 1
+                    "oy_sayisi": 2
                 }
             ]
         },
@@ -3114,6 +3114,15 @@
                         "ay": 4,
                         "gun": 10
                     }
+                },
+                {
+                    "kisi": "R3",
+                    "yorum": "Ders zor ama düzenli takip edilip ödevleri yapınca hallediliyor . Mesleki acıdan ne kadar gerekli tartisilir ama kesinlikle ufuk açıcı bir ders bence",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 11,
+                        "gun": 12
+                    }
                 }
             ]
         },
@@ -3602,15 +3611,18 @@
         {
             "ad": "Blokzincir Temelleri",
             "yil": 0,
-            "donem": "yok",
-            "tip": "Mesleki Seçmeli",
+            "donem": "",
+            "tip": "Mesleki Seçmeli 1",
             "dersi_veren_hocalar": [
                 {
-                    "kisaltma": "YES",
-                    "ad": "Dr. Yunus Emre Selçuk"
+                    "kisaltma": "OA",
+                    "ad": "Dr. Oğuz Altun"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "faydali_olabilecek_kaynaklar": [
+                "**Video:** [Video Serisi Linki](https://youtube.com/playlist?list=PLoVRRjQbqYFw4wJ-oh-_iGPBiSvwDtUw0&si=gU58kAPlqzfCRaYO)"
+            ]
         }
     ],
     "bolum_adi": "Dersler",
