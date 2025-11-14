@@ -102,6 +102,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Add Rd Rs1 Rs2_**: Ders biraz zor ama önemli ℹ️ Yorum **04.2025** tarihinde yapılmıştır.
+  - 👤 **_R3_**: Ders zor ama düzenli takip edilip ödevleri yapınca hallediliyor . Mesleki acıdan ne kadar gerekli tartisilir ama kesinlikle ufuk açıcı bir ders bence ℹ️ Yorum **11.2025** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
