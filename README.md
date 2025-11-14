@@ -4214,6 +4214,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Mehmet Ali Duran</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Sena Cindioğlu</i></b> 💫</h3>
+<p align='center'><a href='https://www.linkedin.com/in/sena-cindio%C4%9Flu/'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Sinem Sarak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
 
@@ -4258,9 +4261,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
-
-<h5 align='center'>🔹 <b><i>Sena Cindioğlu</i></b> 🔹</h5>
-<p align='center'><a href='https://github.com/sanajin33'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sena-cindio%C4%9Flu/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Yusuf Erdem</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/erdem-erdem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusuf-erdem-941685258/'><b>LinkedIn Profili</b></a></p>
