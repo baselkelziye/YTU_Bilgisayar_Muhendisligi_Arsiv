@@ -1464,7 +1464,7 @@
                     }
                 },
                 {
-                    "kisi": "Mehmet Akpinar",
+                    "kisi": "Maki",
                     "yorum": "Maalesef hocalarimiz sinavlari gec aciklayarak ve maillerimize neredeyse donmeyerek bizi magdur durumda birakmislardir. Sinavlarin gec aciklanmasindan mutevellit butunlemeye kalip kalmadigimizdan haberdar olamamamiz ve butunlemeden bir gun once tam olarak sinavin aciklanmasindan oturu tam olarak hazirlanamayisimiz bizi magdur etmistir. Tesekkurler.",
                     "tarih": {
                         "yil": 2025,
@@ -2895,15 +2895,6 @@
                     }
                 },
                 {
-                    "kisi": "Mehmet Akpinar",
-                    "yorum": "Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir.",
-                    "tarih": {
-                        "yil": 2025,
-                        "ay": 1,
-                        "gun": 26
-                    }
-                },
-                {
                     "kisi": "8255",
                     "yorum": "Mikro kısmı nasıl öğretilemez bunu öğreniyorsunuz. Bence bu 2 ders çok seyrek yanına devre teorisi ve organizasyon da eklensin. toplam 10 ödev değil 30 ödev yapalım. haftasonumuza 1 lab değil 3 lab yapalım. Böyle devam. Sonra dersi seneye 200 kişiye anlatırlar..",
                     "tarih": {
@@ -2928,6 +2919,15 @@
                         "yil": 2025,
                         "ay": 8,
                         "gun": 22
+                    }
+                },
+                {
+                    "kisi": "Maki",
+                    "yorum": "Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir.",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 1,
+                        "gun": 26
                     }
                 }
             ],
@@ -3569,7 +3569,18 @@
             "donem": "yok",
             "tip": "Lisansüstü",
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 80,
+            "oy_sayisi": 1,
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "kolaylik_puani": 80,
+                    "gereklilik_puani": 80,
+                    "yil": 2025,
+                    "oy_sayisi": 1
+                }
+            ]
         },
         {
             "ad": "Olasılıksal Robotik",

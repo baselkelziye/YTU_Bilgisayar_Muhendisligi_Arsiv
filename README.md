@@ -1130,6 +1130,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
     - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
     - 👤 **_Apollo13_**: zor bir ders ℹ️ Yorum **10.2024** tarihinde yapılmıştır.
+    - 👤 **_Maki_**: Maalesef hocalarimiz sinavlari gec aciklayarak ve maillerimize neredeyse donmeyerek bizi magdur durumda birakmislardir. Sinavlarin gec aciklanmasindan mutevellit butunlemeye kalip kalmadigimizdan haberdar olamamamiz ve butunlemeden bir gun once tam olarak sinavin aciklanmasindan oturu tam olarak hazirlanamayisimiz bizi magdur etmistir. Tesekkurler. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -1209,6 +1210,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_8255_**: Mikro kısmı nasıl öğretilemez bunu öğreniyorsunuz. Bence bu 2 ders çok seyrek yanına devre teorisi ve organizasyon da eklensin. toplam 10 ödev değil 30 ödev yapalım. haftasonumuza 1 lab değil 3 lab yapalım. Böyle devam. Sonra dersi seneye 200 kişiye anlatırlar.. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_.Asm_**: Dersleri birleştirecez diye saçma sapan bir şey çıkarmışlar ortaya, daha o hafta anlatılanı kavramadan başka bir konuya geçiliyor, 1 hafta kaçırırsan her şey birbirine giriyor, 8 lab 2 ödev verip bütün dönem haftasonlarını kilitliyor, öğrenci dostu olsun derken zulüm gibi bir şey olmuş. Bu 2 dersi ayrı ayrı anlatsalar hem daha anlaşılır olur hem de bu kadar vakit yemez. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Mikrodanbıktım_**: bu dersi geçmenin yolu lab ve ödevleri yapmak sanırım. onu yapamayınca 100.kez almak zorunda kaldım. bu ders yüzünden mezun olamadım. yanlış doğruyu götürmese ne olur sanki? bu kadar ağır olmasının hiçbir manası yok. ℹ️ Yorum **08.2025** tarihinde yapılmıştır.
+    - 👤 **_Maki_**: Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
@@ -2235,7 +2237,17 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Makine Öğrenmesi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Makine%20Öğrenmesi)
 
 
