@@ -3837,6 +3837,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🚪 **Ofis:** D-022
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/gizem.celik](https://avesis.yildiz.edu.tr/gizem.celik)
 - 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Terim_**: iyi ℹ️ Yorum **11.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
