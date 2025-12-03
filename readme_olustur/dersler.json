@@ -3178,7 +3178,27 @@
                     "ad": "Dr. Hamza Osman İlhan"
                 }
             ],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Nick",
+                    "yorum": "almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi.",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 12,
+                        "gun": 1
+                    }
+                },
+                {
+                    "kisi": "Yok",
+                    "yorum": "almayın",
+                    "tarih": {
+                        "yil": 2025,
+                        "ay": 12,
+                        "gun": 3
+                    }
+                }
+            ]
         },
         {
             "ad": "Felsefeye Giriş",
