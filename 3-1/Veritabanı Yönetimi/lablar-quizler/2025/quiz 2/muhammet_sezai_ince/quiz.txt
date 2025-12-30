@@ -1,0 +1,82 @@
+BLM3041 Veritabanı Yönetimi 2.Quizi 19.12.2025    Süre: 50 dk
+Öğrenci Numarası: 
+Ad: Muhammet Sezai    Soyad: İnce
+
+1-)En fazla sayıda farklı lokasyonda ofisi bulunan departmanın ismini veren SQL sorgusunu yazınız.
+
+select d.dname from department d
+join dept_locations l on d.dnumber = l.dnumber
+group by d.dname
+having count(distinct l.dlocation) = (
+    select max(cnt)
+    from (
+		select count(distinct dlocation) as cnt 
+		from dept_locations 
+		group by dnumber)
+	);
+
+2-) Ortalama maaş 45000 den büyük olan sonuçlar gösterilecek şekilde her departman numarası için 
+her bir cinsiyetten kaç çalışan olduğunu ve bu grubun ortalama maaşını veren SQL sorgusunu yazınız.
+
+select sex, dno, count(*), avg(salary) from employee group by dno, sex having avg(salary) > 45000;
+
+3-) "Research" departmanına bağlı olarak yürütülen projelerde çalışan kişilerin bir üst seviyedeki 
+yöneticilerinin çalıştığı projelerin isimlerini listeleyen PL/pgSQL fonksiyonunu yazınız.
+
+create or replace function research_yonetici_projeleri()
+returns table(pname varchar(25))
+as 
+$$
+begin
+	return query
+    select distinct p2.pname
+	from department d
+    join employee e on d.dnumber = e.dno
+    join works_on w on e.ssn = w.essn
+    join employee m on e.superssn = m.ssn
+    join works_on w2 on m.ssn = w2.essn
+    join project p2 on w2.pno = p2.pnumber
+    where d.dname = 'Research';
+end;
+$$ 
+language plpgsql;
+
+select * from research_yonetici_projeleri();
+
+
+4-) Proje numarası, proje ismi ve projenin bağlı bulunduğu departman ismini tutan "project_info" isimli yeni bir veri türü tanımlayın.
+
+create type project_info as (
+    pnumber integer,
+    pname   varchar(25),
+    dname   varchar(25)
+);
+
+
+5-) Ad ve soyad bilgisi verilen çalışanın akrabalarının isimlerini ve akrabalık derecelerini cursor kullanarak
+bilgi mesajı olarak yazdıran PL/pgSQL fonksiyonunu yazınız.(15p) Fonksiyonu çağırınız.(5p)
+
+
+create or replace function calisan_akrabalari(p_fname varchar, p_lname varchar)
+returns void
+as
+$$
+declare
+    cur cursor for
+        select d.dependent_name, d.relationship
+        from employee e
+        join dependent d on e.ssn = d.essn
+        where e.fname = p_fname and e.lname = p_lname;
+
+begin
+	for satir in cur loop
+		raise info 'Akraba: %, Iliski: %', satir.dependent_name, satir.relationship;
+	end loop;
+end;
+$$
+language plpgsql;
+
+select calisan_akrabalari('Franklin', 'Wong');
+
+
+
