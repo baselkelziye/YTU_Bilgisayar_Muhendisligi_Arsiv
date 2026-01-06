@@ -4133,6 +4133,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Kolpa_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Anon_**: süper ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
+  - 👤 **_Yok_**: Almayın dersini mersini. Dersin adına dersin içeriğine ders seçmeden önce bakıp almayın kardeşim. Ne verdiği ödev projelerde açıklayıcıdır ne de örnekçidir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Ansi99_**: Hoca o kadar kötü ki yorum yapmayacam, onun yerine mercimek çorbası tarifi vericem. Malzemeler -2 su bardağı kırmızı mercimek -1 adet soğan -2 yemek kaşığı un -1 adet havuç -Yarım yemek kaşığı biber ya da domates salçası (rengi kırmızı olsun isterseniz artırabilir ya da hiç kullanmayabilirsiniz) -1 tatlı kaşığı tuz -Yarım çay kaşığı karabiber -1 çay kaşığı kimyon (isteğe bağlı) -2 litre sıcak su -5 yemek kaşığı sıvı yağ Sosu için: 2 yemek kaşığı tereyağı 1 tatlı kaşığı kırmızı toz biber Nasıl Yapılır? -Kırmızı mercimek çorbası için sıvı yağı tencereye alınarak yemeklik doğranan soğanlar hafif pembeleşinceye kadar kavrulur. -Daha sonra un ilave edilerek kısık ateşte kavurmaya devam edilir. -Salça kullanılacak ise salça ilave edilir, kavrulduktan sonra küp küp doğranmış havuç ve iyice yıkanıp suyu süzülen mercimekler ilave edilir. -Üzerine su eklenerek karıştırılır ve tencerenin kapağı kapatılır. Çorbamız kaynayana kadar orta ateşte, kaynadıktan sonra mercimekler ve havuçlar yumuşayana kadar ara ara karıştırılarak kısık ateşte pişirilir. -Çorba piştikten sonra el blenderı ile güzelce ezilir. Eğer blenderiniz yoksa süzgeçten de geçirebilirsiniz. -Karabiber, tuz ve isteğe bağlı olarak kimyon eklenir ve karıştırılır. 5 dakika daha pişirilerek ocaktan alınır. -Kıvamı koyu gelirse size, bir miktar su ilave edilerek bir taşım kaynatılır. -Bu arada küçük bir tavaya iki yemek kaşığı tereyağı alınır, kızdırılır ve bir tatlı kaşığı kırmızı toz biber eklenerek ocaktan alınır. -Mercimek çorbası servis kasesine alındıktan sonra üzerine kırmızı biberli sos gezdirilir ve bir dilim limon ile servis edilir. Mercimek çorbası tarifimi deneyeceklere şimdiden afiyet olsun. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_-_**: Uzak durun ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
@@ -4141,9 +4144,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -4158,6 +4161,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
