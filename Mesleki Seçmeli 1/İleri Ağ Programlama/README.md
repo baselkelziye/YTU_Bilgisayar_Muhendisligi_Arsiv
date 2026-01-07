@@ -7,7 +7,7 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Nick_**: almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
-  - 👤 **_Yok_**: almayın ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
+  - 👤 **_Yok_**: alma ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
