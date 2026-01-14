@@ -1,4 +1,4 @@
-package lab3;
+package sevval_cabuk;
 
 public class Main {
     public static void main(String[] args) {
