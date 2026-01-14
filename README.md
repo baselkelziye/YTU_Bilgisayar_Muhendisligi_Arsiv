@@ -4288,6 +4288,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h4 align='center'>✨ <b><i>Önder Görmez</i></b> ✨</h4>
 <p align='center'><a href='https://www.linkedin.com/in/%C3%B6nder-g%C3%B6rmez-251b9462'><b>Github Profili</b></a> &nbsp<a href='https://github.com/ondergormez'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Şevval Çabuk</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/sewowashere'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/%C5%9Fevval-%C3%A7abuk-9b0675336/'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Ahmet Akib Gültekin</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/A1A1G2'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7/'><b>LinkedIn Profili</b></a></p>
 
@@ -4311,9 +4314,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h5 align='center'>🔹 <b><i>Yusuf Erdem</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/erdem-erdem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusuf-erdem-941685258/'><b>LinkedIn Profili</b></a></p>
-
-<h5 align='center'>🔹 <b><i>Şevval Çabuk</i></b> 🔹</h5>
-<p align='center'><a href='https://github.com/sewowashere'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/%C5%9Fevval-%C3%A7abuk-9b0675336/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Ahmed Zeer</i></b> </h6>
 <p align='center'><a href='https://github.com/AhmedZeer'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmedzeer/'><b>LinkedIn Profili</b></a></p>
