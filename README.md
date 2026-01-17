@@ -517,7 +517,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-    - [MAG](#-doç-dr-m-amaç-güvensan)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Bilgisayar%20Bilimlerine%20Giriş)
 
@@ -773,7 +773,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-31-oy)
+    - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Sayısal%20Analiz)
 
@@ -838,7 +838,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-31-oy)
+    - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Ayrık%20Matematik)
 
@@ -1118,7 +1118,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
@@ -1151,7 +1151,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Algoritma%20Analizi)
 
 
@@ -1254,7 +1254,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-31-oy)
+    - [BD](#-prof-dr-banu-diri)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Seminer%20ve%20Meslek%20Etiği)
 
@@ -1717,7 +1717,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-31-oy)
+    - [BD](#-prof-dr-banu-diri)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
 
 
@@ -1819,7 +1819,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#-doç-dr-m-amaç-güvensan)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
 
 
@@ -2354,7 +2354,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [BD](#-prof-dr-banu-diri--en-popüler-hoca-31-oy)
+    - [BD](#-prof-dr-banu-diri)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Sıkıştırma)
 
 
@@ -2647,7 +2647,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👩‍🏫 Prof. Dr. Banu Diri 👑 En popüler hoca (31 oy)
+#### 👩‍🏫 Prof. Dr. Banu Diri 
 - 🚪 **Ofis:** EEF-D222
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/diri/](http://avesis.yildiz.edu.tr/diri/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3083,7 +3083,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
+#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (32 oy)
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3097,6 +3097,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Anonim_**: Dersler gayet verimli bir sekilde islendi Amac hocanin ciddiyetle dersi anlatmasi ve ders esnasinda bizleri sorunlar hakkinda dusunmeye itmesi çok verimliydi. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Topolojik Sort_**: Tahtaya yazdığı notlar vs anlaşılır değil. çok sade çok kuru. anlamak için ekstradan araştırma yapmak gerek ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Floyd-Warshall Algoritması_**: Kendisi beni 30 dk aşağılama rekoru kırmıştır. Diyeceklerim bu kadardır. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Hakiki_**: Hocayı çok övülüyor diye sabah bekleyerek seçtim ama açıkcası beklediğimi pek bulamadım. Dersler biraz havada işlendi bazı kavramlar gökten indi gibi geldi. Konu hakkında çok bilgili olduğu zaten açık ama bizim döneme mi özel biraz havada geçti gibi geldi dersler. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
@@ -3108,7 +3109,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 30 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 32 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3130,6 +3131,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
         - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3436,16 +3443,17 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Teradata_**: Öğrenciyi sever, ders anlatmayı sever, öğrencinin tavsiyesini ciddiye bile alır daha ne olsun. Dersini çalışarak hak ederek iyi notla geçersin. Yeni başladı, yakında robota bağlamaz umarım diğer çoğu hoca gibi. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Yok_**: Hocadan dersleri anlamıyorum sınavda da puan vermiyor en küçük şeyde kırıyor derste bazı konuların üstünde durmadığını düşünüyorum daha söylenecek çok şey var o yüzden burada kesiyorum ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Med_**: Amaç hoca kadar iyi anlatamıyor ama elinden geleni yapıyor, bazen sınavı değerlendirirken hata yapıyor ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Küçük Iskender_**: Dersi eğlenceli anlatıyor, öğrenciye sıcak davranıyor. Biraz kısık sesle anlatıyor ön sıralarda oturmak lazım. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
   - 📖 [İleri Algoritma Analizi Ve Tasarımı](#-i̇leri-algoritma-analizi-ve-tasarımı)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3467,6 +3475,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
