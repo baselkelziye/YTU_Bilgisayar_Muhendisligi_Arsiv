@@ -485,7 +485,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 1. Yıl - Güz
 
 
-#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (24 oy)
+#### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (25 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
@@ -498,7 +498,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 24 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 25 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -514,10 +514,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2026 yılı için yıldız bilgileri*
+        - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+        - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-33-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Bilgisayar%20Bilimlerine%20Giriş)
 
@@ -1118,7 +1122,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-33-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
@@ -1151,7 +1155,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-33-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Algoritma%20Analizi)
 
 
@@ -1819,7 +1823,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-32-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-33-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
 
 
@@ -2812,6 +2816,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 🔗 **Araştırma Sayfası:** [https://avesis.itu.edu.tr/naydin](https://avesis.itu.edu.tr/naydin)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Nick_**: iyi ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Biyoenformatiğe Giriş](#-biyoenformatiğe-giriş)
@@ -3083,7 +3088,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (32 oy)
+#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (33 oy)
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3100,7 +3105,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Hakiki_**: Hocayı çok övülüyor diye sabah bekleyerek seçtim ama açıkcası beklediğimi pek bulamadım. Dersler biraz havada işlendi bazı kavramlar gökten indi gibi geldi. Konu hakkında çok bilgili olduğu zaten açık ama bizim döneme mi özel biraz havada geçti gibi geldi dersler. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-25-oy)
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
   - 📖 [Mobil Programlamaya Giriş](#-mobil-programlamaya-giriş)
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
@@ -3109,7 +3114,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 32 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 33 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3132,11 +3137,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
         - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
       - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3401,7 +3406,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-25-oy)
   - 📖 [Sistem Analizi ve Tasarımı](#-sistem-analizi-ve-tasarımı)
   - 📖 [Mesleki Hukuk ve Etik](#-mesleki-hukuk-ve-etik)
 - ⭐ **Yıldız Sayıları:**
@@ -4154,7 +4159,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Talon_**: Derslerde öğrenciye karşı saygılı bir tutum yok ve alaycı davranışlar sıkça görülüyor. Derste çalışan öğrenciler bile gereksiz şekilde zor durumda bırakılabiliyor. Verilen projeler yeterince açıklanmıyor, beklentiler net olmadığı için öğrenciler mağdur oluyor. Dersin büyük bir kısmı verimsiz geçiyor, konu anlatımı yetersiz kalıyor. Zaman yönetimi zayıf olduğu için ders süresi etkili kullanılmıyor. Öğrenci-öğretmen iletişimi sağlıklı değil ve bu da öğrenme motivasyonunu ciddi şekilde düşürüyor. Kendisinin dersini almayı düşünenlerin bu durumu göz önünde bulundurması faydalı olur. Sonra ağlamayın orada şurada... Verdiği derslerin ismine ve dersin içerik konulara hayran kalıyorsanız dahi almayın. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-24-oy)
+  - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-25-oy)
   - 📖 [İşletim Sistemleri](#-i̇şletim-sistemleri)
   - 📖 [Veri İletişimi](#-veri-i̇letişimi)
 - ⭐ **Yıldız Sayıları:**
