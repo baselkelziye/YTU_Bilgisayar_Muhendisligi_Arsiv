@@ -2066,7 +2066,7 @@
             "kolaylik_puani": 16,
             "ogretme_puani": 14,
             "eglence_puani": 10,
-            "oy_sayisi": 9,
+            "oy_sayisi": 10,
             "ogrenci_gorusleri": [
                 {
                     "kisi": "Kolpa",
@@ -2121,6 +2121,15 @@
                         "ay": 1,
                         "gun": 7
                     }
+                },
+                {
+                    "kisi": "Mağdur",
+                    "yorum": "Çok ilginç bir ders anlatma şekli var. Her yeni konuda 20 dakika boyunca öğrencilere soru soruyor. Daha konu işlenmediği için verilen yanlış cevaplarla dalga geçiyor. 20 dakikanın ardından cevapların hangi kısımları doğru hangi kısımları yanlış diye anlamaya çalışırken kısa ve yetersiz bir şekilde konuyu açıklıyor ve hızlıca sonraki konuya geçiyor, bazen hiç açıklamadan geçiyor. İnteraktif ders anlatımı yapmaya çalışıyor sanırım ama ders anlatımı kısmı eksik. Dersin %70'ini bu şekilde \"anlatıyor\" kalan kısmını da evde okuyun diyip size bırakıyor. Bir de dersin sonunda tek tek isim okuyacak kadar yoklamayı ciddiye alıyor, diğer hocaların derslerine de giremiyorsunuz. Ders seçiminde erken uyanıp başka hoca seçseniz bile sınavları saçma bir şekilde zorlayıp sizi bir şekilde etkiliyor (2026 Vaka-i İşletim Sistemi). Ders dışında soru sormaya çalıştığınızda soru mantıklı olsa bile sizi aşağılayıp cevaplamadan gönderiyor. Varlığı ile bölümün kalitesini yarıya düşüren bir hoca.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 22
+                    }
                 }
             ],
             "yillara_gore_yildiz_sayilari": [
@@ -2146,7 +2155,7 @@
                     "ogretme_puani": 10,
                     "eglence_puani": 10,
                     "yil": 2026,
-                    "oy_sayisi": 1
+                    "oy_sayisi": 2
                 }
             ]
         },
