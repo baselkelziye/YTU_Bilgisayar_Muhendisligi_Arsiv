@@ -5,6 +5,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **Emperor**:Alabiliyorsanız alın bence. Proje dersi, hoca kimseye düşük vermek istemyor(MSA) vize ve finali kolay. Çalışma materyali mevcut. Projeye uğraşıyorsunuz sadece ona da 5 gün baksanız halledersiniz. Çanı oldukça iyi. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
