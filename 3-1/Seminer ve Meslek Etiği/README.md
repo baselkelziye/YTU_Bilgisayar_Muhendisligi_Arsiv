@@ -5,6 +5,9 @@
 - 📅 **Yıl:** 3
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **Emperor**: Rahat geçersiniz de yüksek geçmeniz için slaytı okumanız lazım. Biraz şansa bağlı sınav notlarınız. Sunumda süreyi geçmeyin çok az da yapmayın puan kırıyorlar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
