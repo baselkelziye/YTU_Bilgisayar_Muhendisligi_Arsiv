@@ -7,7 +7,6 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Selim Bey_**: Yazılımı test etmek lazım. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
-  - 👤 **Emperor**: Son derece sıkıcı bir ders. Sırf ders programına uyduğu için alıyor insanlar. Çanı iyi. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -29,6 +28,3 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
-
-## 😔 İçerik yok
-- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...

@@ -241,6 +241,15 @@
                         "ay": 1,
                         "gun": 26
                     }
+                },
+                {
+                    "kisi": "Emperor",
+                    "yorum": "Son derece gerekli, birçok ders buradan temel alıyor ve eğer düşük geçerseniz tekrar alın. Sınavına gidip geçiyorsunuz bölüm dersi gibi lab ödev quiz uğraşı yok.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 24
+                    }
                 }
             ],
             "kolaylik_puani": 70,
@@ -895,6 +904,15 @@
                         "yil": 2025,
                         "ay": 1,
                         "gun": 26
+                    }
+                },
+                {
+                    "kisi": "Emperor",
+                    "yorum": "Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 24
                     }
                 }
             ],
@@ -2359,7 +2377,17 @@
             "yil": 0,
             "donem": "",
             "tip": "Mesleki Seçmeli 1",
-            "ogrenci_gorusleri": [],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Emperor",
+                    "yorum": "Güzel bir ders, anlatılanlar işe yarıyor, vize ve final son derece kolay. projesine dikkat etmek lazım. Çanı iyi. MSA veriyor.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 24
+                    }
+                }
+            ],
             "kolaylik_puani": 35,
             "gereklilik_puani": 60,
             "dersi_veren_hocalar": [],
@@ -3213,6 +3241,15 @@
                         "ay": 1,
                         "gun": 6
                     }
+                },
+                {
+                    "kisi": "Hata Yapmış Birisi",
+                    "yorum": "zçt veriyorsa sakın almayın",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 24
+                    }
                 }
             ],
             "kolaylik_puani": 30,
@@ -3573,7 +3610,18 @@
             "donem": "",
             "tip": "Sosyal Seçmeli 1",
             "dersi_veren_hocalar": [],
-            "guncel_mi": true
+            "guncel_mi": true,
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Emperor",
+                    "yorum": "Selahattin Şamil Fidandan alırsanız ortalamanızı yükselten bir ders olur. öyle çok bişey öğrenicem beklentisiyle girmeyin zaten genel kültür. slayt çalışıyorsunuz birebir çıkıyor zaten 90-100 gibi notlar alıyorsunuz. Ayrıca hoca ödev veriyor onu da eğer bir sınavdan düşük alırsanız kullanabilirsiniz. Ders genel olarak çok uğraş gerektirmeyen standart bir seçmeli sınav haftası uğraşırsınız 2-3 saat maks.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 1,
+                        "gun": 24
+                    }
+                }
+            ]
         },
         {
             "ad": "Osmanlı Devletinin Toplumsal Yapısı",
