@@ -6,7 +6,8 @@
 - 📆 **Dönem:** Güz
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay. 
+  - 👤 **_Traktör Reis_**: Posgre SQL anlatılıyor. Labları ve projesi var ama acayip yormuyor. Dersin mantığını kavramak kolay.
+  - 👤 **Emperor**: Gerekli bir ders ama derse gidecekseniz asla Muk'tan almayın. Adam konuşamıyor. En ön sırada bile olsanız duyamazsınız.Yasemin hoca veriyorsa ondan alın yoksa evde kendiniz çalışın. Gerekli ve aşırı zor olmayan bir ders. Erkenden başlarsanız AA kolay verilir.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
