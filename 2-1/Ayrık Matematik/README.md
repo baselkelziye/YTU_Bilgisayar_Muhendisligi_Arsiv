@@ -10,6 +10,7 @@
   - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
   - 👤 **_Blessed Camel_**: Aslında çok basit bir ders işlenen bir çok şeyi önceden zaten biliyorsunuz ama sınavlarında acayip bir şekilde kasıp her şeyden puan kırıyorlar. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_R3_**: Ders müfredat açısından basit ama sınavları zor oluyor çalışınca yapılabilen bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Emperor_**: Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆

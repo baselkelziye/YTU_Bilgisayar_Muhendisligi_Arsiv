@@ -614,6 +614,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli. 
     - 👤 **_Anonim_**: Duzenli calisan ana kitap ve cikmislari cozen herkesin aa verebilecegi duzeyde zorluk ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+    - 👤 **_Emperor_**: Son derece gerekli, birçok ders buradan temel alıyor ve eğer düşük geçerseniz tekrar alın. Sınavına gidip geçiyorsunuz bölüm dersi gibi lab ödev quiz uğraşı yok. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -820,6 +821,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
     - 👤 **_Blessed Camel_**: Aslında çok basit bir ders işlenen bir çok şeyi önceden zaten biliyorsunuz ama sınavlarında acayip bir şekilde kasıp her şeyden puan kırıyorlar. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_R3_**: Ders müfredat açısından basit ama sınavları zor oluyor çalışınca yapılabilen bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+    - 👤 **_Emperor_**: Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -1680,6 +1682,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Büyük Veri İşleme Ve Analizi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Emperor_**: Güzel bir ders, anlatılanlar işe yarıyor, vize ve final son derece kolay. projesine dikkat etmek lazım. Çanı iyi. MSA veriyor. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
@@ -1761,6 +1766,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Nick_**: almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
     - 👤 **_Yok_**: alma ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Hata Yapmış Birisi_**: zçt veriyorsa sakın almayın ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
@@ -2060,6 +2066,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Davranış Bilimi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Emperor_**: Selahattin Şamil Fidandan alırsanız ortalamanızı yükselten bir ders olur. öyle çok bişey öğrenicem beklentisiyle girmeyin zaten genel kültür. slayt çalışıyorsunuz birebir çıkıyor zaten 90-100 gibi notlar alıyorsunuz. Ayrıca hoca ödev veriyor onu da eğer bir sınavdan düşük alırsanız kullanabilirsiniz. Ders genel olarak çok uğraş gerektirmeyen standart bir seçmeli sınav haftası uğraşırsınız 2-3 saat maks. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Davranış%20Bilimi)
@@ -3103,6 +3112,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Topolojik Sort_**: Tahtaya yazdığı notlar vs anlaşılır değil. çok sade çok kuru. anlamak için ekstradan araştırma yapmak gerek ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Floyd-Warshall Algoritması_**: Kendisi beni 30 dk aşağılama rekoru kırmıştır. Diyeceklerim bu kadardır. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Hakiki_**: Hocayı çok övülüyor diye sabah bekleyerek seçtim ama açıkcası beklediğimi pek bulamadım. Dersler biraz havada işlendi bazı kavramlar gökten indi gibi geldi. Konu hakkında çok bilgili olduğu zaten açık ama bizim döneme mi özel biraz havada geçti gibi geldi dersler. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Sort Sort Sort Sortt_**: Millet uzayı çıkıyor, AI'ler gelişiyor adam sabah akşam sort. Başka bişi yok malesef, bölüm 4-5 tane C dersi var biraz daha artmalı çok az. Web - mobil programlama vs ne gerek var dimi böyle dersleri alıp napacağız ? Ama sonra ödevler web UI isterler CDTP de mobil isterler. Sort yazmaya devam knk. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-25-oy)
@@ -4183,6 +4193,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_-_**: Uzak durun ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Talon_**: Derslerde öğrenciye karşı saygılı bir tutum yok ve alaycı davranışlar sıkça görülüyor. Derste çalışan öğrenciler bile gereksiz şekilde zor durumda bırakılabiliyor. Verilen projeler yeterince açıklanmıyor, beklentiler net olmadığı için öğrenciler mağdur oluyor. Dersin büyük bir kısmı verimsiz geçiyor, konu anlatımı yetersiz kalıyor. Zaman yönetimi zayıf olduğu için ders süresi etkili kullanılmıyor. Öğrenci-öğretmen iletişimi sağlıklı değil ve bu da öğrenme motivasyonunu ciddi şekilde düşürüyor. Kendisinin dersini almayı düşünenlerin bu durumu göz önünde bulundurması faydalı olur. Sonra ağlamayın orada şurada... Verdiği derslerin ismine ve dersin içerik konulara hayran kalıyorsanız dahi almayın. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Mağdur_**: Çok ilginç bir ders anlatma şekli var. Her yeni konuda 20 dakika boyunca öğrencilere soru soruyor. Daha konu işlenmediği için verilen yanlış cevaplarla dalga geçiyor. 20 dakikanın ardından cevapların hangi kısımları doğru hangi kısımları yanlış diye anlamaya çalışırken kısa ve yetersiz bir şekilde konuyu açıklıyor ve hızlıca sonraki konuya geçiyor, bazen hiç açıklamadan geçiyor. İnteraktif ders anlatımı yapmaya çalışıyor sanırım ama ders anlatımı kısmı eksik. Dersin %70'ini bu şekilde "anlatıyor" kalan kısmını da evde okuyun diyip size bırakıyor. Bir de dersin sonunda tek tek isim okuyacak kadar yoklamayı ciddiye alıyor, diğer hocaların derslerine de giremiyorsunuz. Ders seçiminde erken uyanıp başka hoca seçseniz bile sınavları saçma bir şekilde zorlayıp sizi bir şekilde etkiliyor (2026 Vaka-i İşletim Sistemi). Ders dışında soru sormaya çalıştığınızda soru mantıklı olsa bile sizi aşağılayıp cevaplamadan gönderiyor. Varlığı ile bölümün kalitesini yarıya düşüren bir hoca. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Kafası Bozulmuş Mağdur Öğrenci_**: Bu adama 2 dk dayanamıyorum, sabrım tükeniyor.. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Işletmeme Sistemi_**: yakında bu kişiden dolayı öğrenciler okul uzatır bir yere not alınız ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Sarisin_**: dersini almayın, hayatımın en büyük hatasıydı ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-25-oy)
@@ -4193,7 +4206,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -4214,7 +4227,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 </details>

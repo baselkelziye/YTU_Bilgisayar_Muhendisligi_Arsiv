@@ -185,6 +185,7 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli. 
   - 👤 **_Anonim_**: Duzenli calisan ana kitap ve cikmislari cozen herkesin aa verebilecegi duzeyde zorluk ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Emperor_**: Son derece gerekli, birçok ders buradan temel alıyor ve eğer düşük geçerseniz tekrar alın. Sınavına gidip geçiyorsunuz bölüm dersi gibi lab ödev quiz uğraşı yok. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
