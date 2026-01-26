@@ -12,11 +12,12 @@
   - 👤 **_.Asm_**: Dersleri birleştirecez diye saçma sapan bir şey çıkarmışlar ortaya, daha o hafta anlatılanı kavramadan başka bir konuya geçiliyor, 1 hafta kaçırırsan her şey birbirine giriyor, 8 lab 2 ödev verip bütün dönem haftasonlarını kilitliyor, öğrenci dostu olsun derken zulüm gibi bir şey olmuş. Bu 2 dersi ayrı ayrı anlatsalar hem daha anlaşılır olur hem de bu kadar vakit yemez. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Mikrodanbıktım_**: bu dersi geçmenin yolu lab ve ödevleri yapmak sanırım. onu yapamayınca 100.kez almak zorunda kaldım. bu ders yüzünden mezun olamadım. yanlış doğruyu götürmese ne olur sanki? bu kadar ağır olmasının hiçbir manası yok. ℹ️ Yorum **08.2025** tarihinde yapılmıştır.
   - 👤 **_Maki_**: Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Instructionpointer_**: Ödev videonuz 4dkyı geçerse idam ediliyorsunuz. Derste 7 hafta 8086 assembly dili, 7 hafta 8086 mikroişlemci ve çevre birimleri işleniyor. Dersler ayrıkken işlenen bazı konular kırpılıyor, Mikro konuları genellikle hafta hafta birbirinden ayrılmış ve her hafta verilen lablar için ders örnekleri ile işleniyor. Bu arada 4dk ya dikkat edin. Tabiki bölümdeki her donanım dersi gibi yormayı seven bir müfredatı var, haftasonuna verilen, KATILIMI ZORUNLU 8 LAB(ödev) VE 2 ÖDEV(büyük ödev) üstüne sözlüler ve iki ağır dersin ziplenmiş müfredatı ile ruhunuzu emicek bir ders gibi duruyor. 4dk içinde kod ve devrenizi de anlatmanız lazım. Ama neyse ki özellikle mikro ödevlerinin çoğu zor değil, dersi dinleyip, örnekleri inceleyip yapay zekadan yardım alarak yapamayacağınız ödev yok. Bazı aşırı zor olduğu için ödevin SON GÜNÜ ödeve seçenek eklenip asıl istenileni yapanlara 0.3 puancık ekledikleri 3. assembly labı istisna tabiki. 4dk da 500 satır kod mu anlatılır? Ödev ve Labların ortalamaya toplam katkısı %40 olduğundan dersi geçmek çok kolay. Tabiki yeni yönerge yüzünden(final<40 -> FF) finali batırmamanız lazım. Bir de harf notunu bu derste hocalar ağrı dağına çıkarmayı çok seviyor, ödev ve lab ortalamalarının aşırı yüksek olması da sebeplerinden biri. Sınavlara iyi çalışın. Vize ve finalde assembly kısmında detay soru çok ve zincirleme sorular oluyor: Dosbox stack/veri segment çıktısı ya da LST kodu verilip peş peşe "boş yere ne gelir? Çıktı hangi hexadecimal sayı olur?" tarzı sorular var, iyi çalışmazsanız hiçbirini yapamazsınız, birini yanlış yapınca hepsi yanlış gelir, notunuz yarıya iner. Labları yapay zekadan kopyala yapıştır yaparsanız da finalde zincirleme mikro sorularında çuvallarsınız. Biraz yorucu olması haricinde çalışınca zevkli ve zorlamayan bir ders, ha siz yine de 4dk yapın videoyu. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -32,6 +33,10 @@
       - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
       - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 ## 📖 Faydalı Olabilecek Kaynaklar
