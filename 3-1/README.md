@@ -22,6 +22,7 @@
   - 👤 **_Apollo13_**: zor bir ders ℹ️ Yorum **10.2024** tarihinde yapılmıştır.
   - 👤 **_Maki_**: Maalesef hocalarimiz sinavlari gec aciklayarak ve maillerimize neredeyse donmeyerek bizi magdur durumda birakmislardir. Sinavlarin gec aciklanmasindan mutevellit butunlemeye kalip kalmadigimizdan haberdar olamamamiz ve butunlemeden bir gun once tam olarak sinavin aciklanmasindan oturu tam olarak hazirlanamayisimiz bizi magdur etmistir. Tesekkurler. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Instructionpointer_**: Hash gibi çok güzel ve önemli konuları olsa da, bazı kısımları inanılmaz monoton olan, çoğu kişinin de algoritma derslerinden bıktığı için günah keçisi ilan ettiği bu dersten, hocaların 15 dakikalık bazı konuları tabletten tahtaya 2 saatte kopyalaması nedeniyle maalesef fazla verim beklemeyin. ​Sınavlarda hocaların metodolojisine sadık kalmanız zaten kritik. Akışlar her zamanki gibi pratik ve biraz da şansın birleşimi. Dersle alakalı kısımları çok iyi yapmanız lazım çünkü zaten akışlar yüzünden her sınav sürpriz bir notunuz olabilir. ​Ödevler zor değil ancak soru dökümanlarındaki 'tuhaf' anlatımlar/ katı ve uğraştırıcı rapor-video formatı ile rahat bir gününüzü alır, sona bırakmayın. Lab soruları oldukça rastgele ve dengesiz, soru metnini çok dikkatli okuyun. Verilen ekstra lab hakkı bile sizi kurtarmayacak. ​Uygulamalar Kahoot tarzı quiz gibi, maalesef aynı ders gibi çok monoton, sadece 2 3 örnek problem inceleniyor ve sınavla pek alakalı değil, 10 soruluk quizi çözüp geçin. Yüzdesi çok düşük ama bu derste her yerden puan almanın faydası var. ​Keşke çok daha verimli işlenebilseydi ama yine de her şeye rağmen değerli ve güzel bir ders. Her hafta dersi dinleyip not tutar/okursanız zorlanmadan geçersiniz. Ödevleri aksatmayın. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Ayatollah_**: Fena bir ders değil. Sınava 5–6 saat kala konulara bakmak, ilk 50 puanlık kısımdan puan almak için yeterli. Geri kalan 50 puan algoritmik sorulardan (flowchart, C kodu) oluşur, genel olarak geliştirilmesi gereken bir beceridir, Öğrenmesi bir gecede çok da mümkün değil. Hocalar cevabınızı beğenmezse çok puan kırar, adil hissettirmez. Ödev ve labları çok yormaz. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -108,8 +109,8 @@
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -123,8 +124,8 @@
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2026 yılı için yıldız bilgileri*
       - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
-      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 #### 💡 Derse Dair Öneriler
 
@@ -369,7 +370,7 @@
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -386,9 +387,9 @@
       - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2026 yılı için yıldız bilgileri*
-      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 #### 📚 Faydalı Olabilecek Kaynaklar

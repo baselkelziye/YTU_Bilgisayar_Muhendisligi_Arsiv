@@ -12,6 +12,7 @@
   - 👤 **_R3_**: Ders müfredat açısından basit ama sınavları zor oluyor çalışınca yapılabilen bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Emperor_**: Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Cristianoronaldo_**: Genel olarak çok kapsamlı bir ders. Konuları algoritmalardan devrelere kadar uzanıyor. Önemli bir ders, sınavlarda çok dikkat gerektiriyor. Slaytlar yeterli olacaktır önemli kısımları ders kayıtlarından izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Bilgisayarenginarı_**: İçeriği garip, konu kapsamı daha da garip, birkaç dersin karışımı gibi duran tuhaf bir yapıya sahiptir. Sabit bir konuda ilerlenmez ayrı ayrı şeyler anlatılır ve herhangi bir vize ve final nerdeyse birbirine benzemeyecek kadar çok konu barındırır. Ancak her biri basit ve kolay anlaşılabilir olduğundan, dersler düzenli bir şekilde takip edilir ve ara sıra tekrar edilirse hem geçmesi hem yüksek notla vermesi gayet mümkün olan bir derstir. harf notu konusunda banu hocada daha rahat edersiniz. Başarılar ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
