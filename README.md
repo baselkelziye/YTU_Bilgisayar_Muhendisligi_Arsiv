@@ -523,7 +523,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-36-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Bilgisayar%20Bilimlerine%20Giriş)
 
@@ -834,6 +834,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_R3_**: Ders müfredat açısından basit ama sınavları zor oluyor çalışınca yapılabilen bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Emperor_**: Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Cristianoronaldo_**: Genel olarak çok kapsamlı bir ders. Konuları algoritmalardan devrelere kadar uzanıyor. Önemli bir ders, sınavlarda çok dikkat gerektiriyor. Slaytlar yeterli olacaktır önemli kısımları ders kayıtlarından izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Bilgisayarenginarı_**: İçeriği garip, konu kapsamı daha da garip, birkaç dersin karışımı gibi duran tuhaf bir yapıya sahiptir. Sabit bir konuda ilerlenmez ayrı ayrı şeyler anlatılır ve herhangi bir vize ve final nerdeyse birbirine benzemeyecek kadar çok konu barındırır. Ancak her biri basit ve kolay anlaşılabilir olduğundan, dersler düzenli bir şekilde takip edilir ve ara sıra tekrar edilirse hem geçmesi hem yüksek notla vermesi gayet mümkün olan bir derstir. harf notu konusunda banu hocada daha rahat edersiniz. Başarılar ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -980,6 +981,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Blessed Camel_**: Bölümün en kritik derslerinden. Alacağınız verim hocanıza göre değişir. Bu dersi alırken asla bölümle yetinmeyin kendinizi ek olarak da geliştirin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Yıldızsefiri_**: Ders çok zor değil ama biraz emek istiyor. FÇ nin dersleri güzel ve eğlenceli geçiyor ama notları bol değil. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Osbırt_**: Java üzerinden ilerliyor ders. 1. sınıfta temeller C üzerinden atıldığı için nesneye yönelik programlama hiç bilmeyen birinde bir şok etkisi yaratabilse de derslere katılıp, anlamadığınız yerleri sorup, slaylardan tekrar ettiğinizde mantığını kavrıyorsunuz. Pratik yapıp kabiliyet kazanmak önemli. 4 uygulama ve 4 laboratuvarı var: Uygulamalarda asistan hocalar örnek çözümü yapıyorlar, laboratuvarda ise uygulama paralelinde bir soru verilip kodlanması isteniyor. Uygulamalara da dikkat etmek önemli o yüzden. 1 projesi var, erkenden başlayıp planlı programlı ilerlenirse üstesinden gelinir. Finalleri test yaparlarsa Java üzerinden çok soru geldiği oluyor, konuların detaylarına ve java sanal makinesi davranışlarına çalışmak gerekebiliyor o yüzden. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Bilgisayarenginarı_**: Java üzerinden işlenir. İçeriği ve kapsamı güzel, geçmesi görece kolay, yüksek notla geçmek de mümkün olan biraz yoğun bir derstir. her uygulama dersinin ertesi haftası lab yapılarak yazılan koddan not verilir ve toplam 4 labı bulunur; bir adet çift kişilik projesi, birer vize ve final içeren bir sınav takvimi vardır. lablara tekrar yaparak gitmek mühimdir, iyi bir proje arkadaşı seçmelisiniz ve sınavlara güzelce çalışmalısınız. vizede kod yazdırılır, finali genellikle seçmeli olur ve kod yazma becerinizi değil, nesne yönetim becerinizi ve java hakkında ne kadar bilgi ezberleyebileceğinizi ölçer. YES yoklamayı önemsemez, anlatımını beğenmezseniz farklı bir hocanın dersine girme şansınız da var. Başarılar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -1162,7 +1164,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-36-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
@@ -1177,6 +1179,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 👤 **_Apollo13_**: zor bir ders ℹ️ Yorum **10.2024** tarihinde yapılmıştır.
     - 👤 **_Maki_**: Maalesef hocalarimiz sinavlari gec aciklayarak ve maillerimize neredeyse donmeyerek bizi magdur durumda birakmislardir. Sinavlarin gec aciklanmasindan mutevellit butunlemeye kalip kalmadigimizdan haberdar olamamamiz ve butunlemeden bir gun once tam olarak sinavin aciklanmasindan oturu tam olarak hazirlanamayisimiz bizi magdur etmistir. Tesekkurler. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Instructionpointer_**: Hash gibi çok güzel ve önemli konuları olsa da, bazı kısımları inanılmaz monoton olan, çoğu kişinin de algoritma derslerinden bıktığı için günah keçisi ilan ettiği bu dersten, hocaların 15 dakikalık bazı konuları tabletten tahtaya 2 saatte kopyalaması nedeniyle maalesef fazla verim beklemeyin. ​Sınavlarda hocaların metodolojisine sadık kalmanız zaten kritik. Akışlar her zamanki gibi pratik ve biraz da şansın birleşimi. Dersle alakalı kısımları çok iyi yapmanız lazım çünkü zaten akışlar yüzünden her sınav sürpriz bir notunuz olabilir. ​Ödevler zor değil ancak soru dökümanlarındaki 'tuhaf' anlatımlar/ katı ve uğraştırıcı rapor-video formatı ile rahat bir gününüzü alır, sona bırakmayın. Lab soruları oldukça rastgele ve dengesiz, soru metnini çok dikkatli okuyun. Verilen ekstra lab hakkı bile sizi kurtarmayacak. ​Uygulamalar Kahoot tarzı quiz gibi, maalesef aynı ders gibi çok monoton, sadece 2 3 örnek problem inceleniyor ve sınavla pek alakalı değil, 10 soruluk quizi çözüp geçin. Yüzdesi çok düşük ama bu derste her yerden puan almanın faydası var. ​Keşke çok daha verimli işlenebilseydi ama yine de her şeye rağmen değerli ve güzel bir ders. Her hafta dersi dinleyip not tutar/okursanız zorlanmadan geçersiniz. Ödevleri aksatmayın. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Ayatollah_**: Fena bir ders değil. Sınava 5–6 saat kala konulara bakmak, ilk 50 puanlık kısımdan puan almak için yeterli. Geri kalan 50 puan algoritmik sorulardan (flowchart, C kodu) oluşur, genel olarak geliştirilmesi gereken bir beceridir, Öğrenmesi bir gecede çok da mümkün değil. Hocalar cevabınızı beğenmezse çok puan kırar, adil hissettirmez. Ödev ve labları çok yormaz. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -1200,7 +1203,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-36-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Algoritma%20Analizi)
 
 
@@ -1233,8 +1236,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-      - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -1248,8 +1251,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
       - 📅 *2026 yılı için yıldız bilgileri*
         - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
-        - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+        - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AEL](#-dr-ahmet-elbir)
@@ -1359,7 +1362,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -1376,9 +1379,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
       - 📅 *2026 yılı için yıldız bilgileri*
-        - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-        - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+        - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
+        - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
@@ -1903,7 +1906,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-36-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
 
 
@@ -3208,7 +3211,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (36 oy)
+#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (37 oy)
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3236,7 +3239,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 36 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 37 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3259,11 +3262,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
         - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-        - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -4593,6 +4596,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
+
+<h5 align='center'>🔹 <b><i>Enes Utku Selbes</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Gülsüm İrem Baş</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/irembas'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/g%C3%BCls%C3%BCm-irem-ba%C5%9F/'><b>LinkedIn Profili</b></a></p>
