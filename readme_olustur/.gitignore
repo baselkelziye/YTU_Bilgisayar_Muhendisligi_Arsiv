@@ -1,0 +1,10 @@
+readme_guncelleme_arayuzu
+**/__pycache__
+dist
+**/*.json
+**/*.csv
+**/*.txt
+!gereksinimler.txt
+**/dist
+**/build
+**/venv/**
