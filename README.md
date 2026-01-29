@@ -3321,6 +3321,58 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
+
+
+#### 👨‍🏫 Doç. Dr. Oğuz Altun 
+- 🚪 **Ofis:** EEF-DZ36
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir. 
+  - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_R3_**: Olasılığı Oğuz hocadan aldım . İngilizcesi maalesef kötü , ilk 2 vizede sınıf ortalaması çok yüksekti ve vizelerde 2-3 soruda aynı şık vardı bazı kitapçıklarda fazladan soru vardı . Ne denir bilemiyorum , hocalığı dümenden yapıyor bari vizeleri hazırlarken biraz özen göstersin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_?????_**: Her sınavında istisnasız 3-4 yanlış soru olur, bomboş olasılık dersinin her test sınavında istikrarla bu kadar yanlış soru sorabilmek büyük başarı, insanın yaptığı işe biraz saygısı olmalı bence. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
+  - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
+  - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
+  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
+  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 18 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2023 yılı için yıldız bilgileri*
+      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
 ### Doktor Öğretim Üyeleri
 
 
@@ -3706,58 +3758,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Dr. Oğuz Altun 
-- 🚪 **Ofis:** EEF-DZ36
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir. 
-  - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_R3_**: Olasılığı Oğuz hocadan aldım . İngilizcesi maalesef kötü , ilk 2 vizede sınıf ortalaması çok yüksekti ve vizelerde 2-3 soruda aynı şık vardı bazı kitapçıklarda fazladan soru vardı . Ne denir bilemiyorum , hocalığı dümenden yapıyor bari vizeleri hazırlarken biraz özen göstersin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_?????_**: Her sınavında istisnasız 3-4 yanlış soru olur, bomboş olasılık dersinin her test sınavında istikrarla bu kadar yanlış soru sorabilmek büyük başarı, insanın yaptığı işe biraz saygısı olmalı bence. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
-  - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
-  - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
-  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
-  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 18 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2023 yılı için yıldız bilgileri*
-      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
 #### 👨‍🏫 Dr. Yunus Emre Selçuk 
 - 🚪 **Ofis:** EEF-D129
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
@@ -3838,6 +3838,30 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Barış AKKUŞ 
+- 🚪 **Ofis:** D-025
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17591](https://avesis.yildiz.edu.tr/17591)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Begüm Özbay 
+- 🚪 **Ofis:** D-023
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17598](https://avesis.yildiz.edu.tr/17598)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -3983,6 +4007,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Fırat Fuat OLCAY 
+- 🚪 **Ofis:** D-124
+- 🔗 **Araştırma Sayfası:** []()
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -4143,6 +4179,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
+#### 👨‍🏫 Arş. Grv. Muhammet Taha GÖKCAN 
+- 🚪 **Ofis:** D-031
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17639](https://avesis.yildiz.edu.tr/17639)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
 #### 👨‍🏫 Arş. Grv. Mustafa CEBECİ 
 - 🚪 **Ofis:** 
 - 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17285](https://avesis.yildiz.edu.tr/17285)
@@ -4251,6 +4299,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
+#### 👨‍🏫 Arş. Grv. Osman Furkan KARAKUŞ 
+- 🚪 **Ofis:** D-211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/osman.karakus](https://avesis.yildiz.edu.tr/osman.karakus)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
 #### 👩‍🏫 Arş. Grv. Rukiye BAŞKARA 
 - 🚪 **Ofis:** D-022
 - 🔗 **Araştırma Sayfası:** []()
@@ -4311,6 +4371,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Sümeyye Sena KURTVURAN 
+- 🚪 **Ofis:** D-024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17372](https://avesis.yildiz.edu.tr/17372)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 
 
@@ -4380,6 +4452,30 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. İmran Gül 
+- 🚪 **Ofis:** D-006
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17613](https://avesis.yildiz.edu.tr/17613)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Şeyma DERDİYOK 
+- 🚪 **Ofis:** D-209
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17486](https://avesis.yildiz.edu.tr/17486)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 
 ### Üniversitede Aktif Görevde Olmayan Hocalar
 
@@ -4492,12 +4588,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
 <p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
 <p align='center'>🔹 <b>AÖ</b> &emsp; Dr. Ayşe Öcal 🔹</p>
+<p align='center'>🔹 <b>BA</b> &emsp; Arş. Grv. Barış AKKUŞ 🔹</p>
 <p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet ÖZDEN 🔹</p>
 <p align='center'>🔹 <b>BD</b> &emsp; Prof. Dr. Banu Diri 🔹</p>
+<p align='center'>🔹 <b>BÖ</b> &emsp; Arş. Grv. Begüm Özbay 🔹</p>
 <p align='center'>🔹 <b>EA</b> &emsp; Arş. Grv. Elif AŞICI 🔹</p>
 <p align='center'>🔹 <b>EG</b> &emsp; Arş. Grv. Elçin GÜVEYİ 🔹</p>
 <p align='center'>🔹 <b>EP</b> &emsp; Arş. Grv. Emre PARLAK 🔹</p>
 <p align='center'>🔹 <b>EU</b> &emsp; Dr. Erkan Uslu 🔹</p>
+<p align='center'>🔹 <b>FFO</b> &emsp; Arş. Grv. Fırat Fuat OLCAY 🔹</p>
 <p align='center'>🔹 <b>FÇ</b> &emsp; Dr. Furkan Çakmak 🔹</p>
 <p align='center'>🔹 <b>G1</b> &emsp; Dr. Göksel Biricik 🔹</p>
 <p align='center'>🔹 <b>GB</b> &emsp; Doç. Dr. Gökhan Bilgin 🔹</p>
@@ -4516,13 +4615,16 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>MKY</b> &emsp; Arş. Grv. Muzaffer Kaan YÜCE 🔹</p>
 <p align='center'>🔹 <b>MMK</b> &emsp; Arş. Grv. Mustafa Mert KARA 🔹</p>
 <p align='center'>🔹 <b>MSA</b> &emsp; Doç. Dr. Mehmet Sıddık Aktaş 🔹</p>
+<p align='center'>🔹 <b>MTG</b> &emsp; Arş. Grv. Muhammet Taha GÖKCAN 🔹</p>
 <p align='center'>🔹 <b>MUK</b> &emsp; Dr. M. Utku Kalay 🔹</p>
 <p align='center'>🔹 <b>NA</b> &emsp; Prof. Dr. Nizamettin Aydın 🔹</p>
 <p align='center'>🔹 <b>NY</b> &emsp; Arş. Grv. Nurgül Yüzbaşıoğlu 🔹</p>
-<p align='center'>🔹 <b>OA</b> &emsp; Dr. Oğuz Altun 🔹</p>
+<p align='center'>🔹 <b>OA</b> &emsp; Doç. Dr. Oğuz Altun 🔹</p>
+<p align='center'>🔹 <b>OFK</b> &emsp; Arş. Grv. Osman Furkan KARAKUŞ 🔹</p>
 <p align='center'>🔹 <b>OK</b> &emsp; Prof. Dr. Oya Kalıpsız 🔹</p>
 <p align='center'>🔹 <b>RB</b> &emsp; Arş. Grv. Rukiye BAŞKARA 🔹</p>
 <p align='center'>🔹 <b>SA</b> &emsp; Arş. Grv. Sercan Aygün 🔹</p>
+<p align='center'>🔹 <b>SSK</b> &emsp; Arş. Grv. Sümeyye Sena KURTVURAN 🔹</p>
 <p align='center'>🔹 <b>SST</b> &emsp; Arş. Grv. Sultan Sevgi TURGUT 🔹</p>
 <p align='center'>🔹 <b>SV</b> &emsp; Prof. Dr. Songül Varlı 🔹</p>
 <p align='center'>🔹 <b>SY</b> &emsp; Prof. Dr. Sırma Yavuz 🔹</p>
@@ -4530,6 +4632,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
 <p align='center'>🔹 <b>ÖMTK</b> &emsp; Arş. Grv. Ömer Mutlu Türk KAYA 🔹</p>
 <p align='center'>🔹 <b>İD</b> &emsp; Arş. Grv. İdris DEMİR 🔹</p>
+<p align='center'>🔹 <b>İG</b> &emsp; Arş. Grv. İmran Gül 🔹</p>
+<p align='center'>🔹 <b>ŞD</b> &emsp; Arş. Grv. Şeyma DERDİYOK 🔹</p>
 </details>
 
 <details>

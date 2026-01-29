@@ -8,3 +8,9 @@ dist
 **/dist
 **/build
 **/venv/**
+
+# google forum islemleri ve kök dizindeki txt ve json dosyalarını koru
+!*.txt
+!*.json
+!google_forum_islemleri/*.txt
+!google_forum_islemleri/*.json
