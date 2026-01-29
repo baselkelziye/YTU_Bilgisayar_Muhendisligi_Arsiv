@@ -1,0 +1,259 @@
+<details>
+<summary>2023-2024 Yılı İstatistikleri</summary>
+
+### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları ve Artış Oranı
+
+| Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
+|----------------------------------------|----------------------------------------|----------------------|
+| 31307                                 | 45750                                 | 46.13               |
+
+
+
+##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları
+
+| Şirket Adı   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Huawei       |                             28750 |                             39000 |                  35.65 |
+| TÜBİTAK      |                             41000 |                             56500 |                  37.8  |
+| Yapı Kredi   |                             32500 |                             48000 |                  47.69 |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları
+
+| Pozisyon Alanı         |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Backend Geliştirici    |                             30083 |                             41750 |                  38.78 |
+| Full Stack Geliştirici |                             31964 |                             48928 |                  53.07 |
+| Gömülü                 |                             37000 |                             52000 |                  40.54 |
+| Kriptoloji             |                             40000 |                             63000 |                  57.5  |
+| Mobil Geliştirici      |                             28000 |                             41500 |                  48.21 |
+| Oyun Geliştirici       |                             50000 |                             57500 |                  15    |
+| Veri Bilimci           |                             28000 |                             48000 |                  71.43 |
+| Yapay Zeka             |                             24500 |                             36666 |                  49.66 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları
+
+| Tecrübe Süresi   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 0 - 6 ay         |                             26214 |                             40642 |                  55.04 |
+| 6 ay - 1 yıl     |                             31300 |                             45700 |                  46.01 |
+| 1 yıl - 2 yıl    |                             34875 |                             49350 |                  41.51 |
+
+### Yarı Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları ve Artış Oranı
+
+| Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
+|----------------------------------------|----------------------------------------|----------------------|
+| 15000                                 | 26000                                 | 73.33               |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları
+
+| Pozisyon Alanı      |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:--------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Backend Geliştirici |                             15000 |                             26000 |                  73.33 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları
+
+| Tecrübe Süresi   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 2 yıl - 4 yıl    |                             15000 |                             26000 |                  73.33 |
+
+### Yarı Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları ve Artış Oranı
+
+| Ortalama Maaş (Aylık net ortalama) 2023 | Ortalama Maaş (Aylık net ortalama) 2024 | Maaş Artış Oranı (%) |
+|----------------------------------------|----------------------------------------|----------------------|
+| 20770                                 | 30775                                 | 48.17               |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları
+
+| Pozisyon Alanı   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Yapay Zeka       |                             20770 |                             30775 |                  48.17 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları
+
+| Tecrübe Süresi   |   2023 Maaşı (Aylık net ortalama) |   2024 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 1 yıl - 2 yıl    |                             20770 |                             30775 |                  48.17 |
+
+ℹ️  Anket sonuçları: 24 kişi üzerinden hesaplanmıştır.
+
+</details>
+
+<details>
+<summary>2024-2025 Yılı İstatistikleri</summary>
+
+| **Durum**                        | **Oran (%)**       |
+|----------------------------------|--------------------|
+| Mezunların % kaçı işsiz               | %11.11 |
+| Mezun olmayanların % kaçı işsiz       | %28.57 |
+| Yurt dışında çalışmayanların oranı    | %96.55 |
+
+
+### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı
+
+| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 58521              | 66456              | 13.56                |
+
+
+
+##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Şirket Adı   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-------------|----------------------------------:|----------------------------------:|-----------------------:|
+| TÜBİTAK      |                           73333.3 |                           73333.3 |                      0 |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Pozisyon Alanı         |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Backend Geliştirici    |                           42000   |                             50500 |                  20.24 |
+| DevOps Mühendisi       |                           69000   |                             69000 |                   0    |
+| Full Stack Geliştirici |                           59687.5 |                             71250 |                  19.37 |
+| Gömülü                 |                           60000   |                             60000 |                   0    |
+| Kriptoloji             |                           79000   |                             79000 |                   0    |
+| Siber Güvenlik         |                           37500   |                             42500 |                  13.33 |
+| Veri Mühendisi         |                           82000   |                             82000 |                   0    |
+| Yapay Zeka             |                           76333.3 |                             81000 |                   6.11 |
+| e-ticaret              |                           60000   |                             80000 |                  33.33 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Tecrübe Süresi   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 0 - 6 ay         |                           63562.5 |                           64187.5 |                   0.98 |
+| 1 yıl - 2 yıl    |                           51833.3 |                           65888.9 |                  27.12 |
+| 2 yıl - 4 yıl    |                           80000   |                           80000   |                   0    |
+| 6 ay - 1 yıl     |                           58200   |                           68400   |                  17.53 |
+
+### Tam Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı
+
+| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 40000              | 40000              | 0.00                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Pozisyon Alanı       |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:---------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Frontend Geliştirici |                             40000 |                             40000 |                      0 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Tecrübe Süresi   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 1 yıl - 2 yıl    |                             40000 |                             40000 |                      0 |
+
+### Stajyer ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı
+
+| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 18500              | 25500              | 37.84                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Pozisyon Alanı         |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Full Stack Geliştirici |                             22000 |                             26000 |                  18.18 |
+| Gömülü                 |                             15000 |                             25000 |                  66.67 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Tecrübe Süresi   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 0 - 6 ay         |                             18500 |                             25500 |                  37.84 |
+
+
+### Yarı Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı
+
+| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 28000              | 28000              | 0.00                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Pozisyon Alanı    |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Mobil Geliştirici |                             28000 |                             28000 |                      0 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Tecrübe Süresi   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 6 ay - 1 yıl     |                             28000 |                             28000 |                      0 |
+
+### Freelance ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı
+
+| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 70000              | 300000              | 328.57                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Pozisyon Alanı   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| ITSM Danışmanı   |                             70000 |                            300000 |                 328.57 |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+| Tecrübe Süresi   |   2024 Maaşı (Aylık net ortalama) |   2025 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 2 yıl - 4 yıl    |                             70000 |                            300000 |                 328.57 |
+
+ℹ️  Anket sonuçları: 34 kişi üzerinden hesaplanmıştır. 2025 maaş bilgisi verilmeyen kayıtlarda 2025 maaşı sütununda 2024 maaş bilgileri kullanılmıştır.
+</details>
