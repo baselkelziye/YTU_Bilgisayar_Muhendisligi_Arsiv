@@ -2918,7 +2918,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
 - 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.itu.edu.tr/naydin](https://avesis.itu.edu.tr/naydin)
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/naydin](https://avesis.yildiz.edu.tr/naydin)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Nick_**: iyi ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
@@ -2988,7 +2988,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 👩‍🏫 Prof. Dr. Songül Varlı 
 - 🚪 **Ofis:** EEF-D221
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/svarli/](http://avesis.yildiz.edu.tr/svarli/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Gariban_**: Söngül hocadan Bilgisayar Donanımı (Bilgisayar Organizasyonu) ve bitirme aldım. Bilgisayar donanımı dersi sevkliyidi ve hoca güzel anlatıyordu. Online olduğu için sınavlar hakkında pek bir şey diyemem ama sınavlar zor değildi. Bitirmeye gelince, bu sebeplerden dolayı bu hocadan proje hiç alınmaz: 1- Proje veri gerektiriyordu ve veriyi bir organizasiyondan talep etmek için bize bir link vermişti ama bu orginizasyon ancak 5 hafta sonra veriyi verdi. Bu esnada veri hocanın eilinde olmasına rağmen bize vermek istemedi ve böylece projemiz 5 hafta geç kaldı. 2- Hoca ile iletişim kurmak çok zordu. Maillere geç cevap veriyor ve projenin son 3 haftasında defalarca mail göndermemize rağmen bize dönmüyordu. 3- Hoca, sunumdan 24 saat önce beklenmedik bir istekte bulundu (istediğini sabaha kadar uyumayark sunuma ekleyebildik :) ). 4- Projede istediğinden fazla model eğitmemize, sunumda çalışmamızı "iyi ve çok kapsamlı" olarak övdüğüne ve bize makale yazmamızı teklif etmesine rağmen projemize nispeten düşük bir not verdi. Özetle, hocayla iletişim zor, hiç yardımcı değil, çok şey ister, not vermz. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -3052,7 +3052,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 👨‍🏫 Doç. Dr. Ali Can Karaca 
 - 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/ackaraca](https://avesis.yildiz.edu.tr/ackaraca)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir. 
   - 👤 **_Madmax_**: Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
@@ -4592,7 +4592,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://github.com/A1A1G2'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmet-akib-g%C3%BCltekin-0184491b7/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Ahmet Mahir Demirelli</i></b> 🔹</h5>
-<p align='center'><a href='https://github.com/Ahmet-MahirDEMIRELLI'><b>Github Profili</b></a> &nbsp<a href='https://linktr.ee/ahmet.mahir.demirelli'><b>Linktree Bağlantısı</b></a></p>
+<p align='center'><a href='https://github.com/a-mahir-d'><b>Github Profili</b></a> &nbsp<a href='https://linktr.ee/ahmet.mahir.demirelli'><b>Linktree Bağlantısı</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
