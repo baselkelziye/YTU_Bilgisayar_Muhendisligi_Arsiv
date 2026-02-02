@@ -154,6 +154,7 @@
   - 👤 **_R3_**: Vizeleri kolaydı hatalı sorular vardı finali zordu gereksiz bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Osbırt_**: Bölümle hiç alakası olmayan, konuları çok yoğun bir ders. İlk haftalarda bu dersin canıma okuyacağını ayıktım, dönem başından beri bu derse çalıştım. Müfredatı yoğun, konusu çeşit çeşit. İlk haftalarda öğrendiğiniz konular sonraki haftalarda lazım oluyor, temeliniz zayıfsa zorlanıyorsunuz. Bir kez anlayınca çok keyifli oluyor ama anlayana kadar... ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Dd_**: Abartıldığı kadar zor bir ders olduğunu kesinlikle düşünmüyorum. Dersin içeriği tamamen "Probability Course" sitesinin ilk 8 chapterından oluşur. Kurs içeriği gayet açıklayıcıdır, hiçbir şey bilmeden bile başlasanız İngilizce ile sorununuz yoksa asla zorluk yaşamazsınız, yalnızca biraz uzun. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Bilgisayar Enginarı_**: Bölümle alakalı değil. Dersler ve anlatımlar çok zorlayıcı görünse de sınavlar bu sene kolay formatta geldi, dersin işlendiği kitabın bölümlerinin sonundaki sorulara benzer soruldu. Geçmesi kolay ancak yüksek notla vermek biraz şansa bağlı. Başarılar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
