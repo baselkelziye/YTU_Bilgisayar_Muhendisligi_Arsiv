@@ -2810,6 +2810,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Floyd-Warshall Algoritması_**: Esferi safirin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Ifdöngüsü_**: 10 sene önce yazdığı ders notlarını örneklerine kadar birebir aynı şekilde tahtaya geçirir, öğrencilere “kırmızılı” gibi üzerindeki kıyafet rengine göre hitap eder, maillere dönmez, sınavları son gün açıklar, harf notunu düzgün yapmaz. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Sivrisineksaz_**: Çok fazla söze gerek yok --> ekşi + ytuce>personel>emeğigeçenler ℹ️ Yorum **03.2025** tarihinde yapılmıştır.
+  - 👤 **_Sts_**: Milattan önce kalmış müfredatı ve saçma sınavları ile bir daha ders almayacağım biri. Lütfen emekli olsun. ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
