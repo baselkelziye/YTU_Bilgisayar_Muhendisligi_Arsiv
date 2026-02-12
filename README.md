@@ -4707,6 +4707,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Enes Genç</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/enxg'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enxg/'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Enes Utku Selbes</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
 
