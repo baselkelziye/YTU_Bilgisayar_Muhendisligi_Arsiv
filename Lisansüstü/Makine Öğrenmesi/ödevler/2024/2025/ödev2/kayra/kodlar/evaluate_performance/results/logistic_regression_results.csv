@@ -1,0 +1,5 @@
+Yöntem,Özellik Sayısı,Doğruluk (Accuracy),F1-Skoru,Eğitim Süresi (s),C (Regularization)
+Tüm Özellikler,58,0.6552,0.6544,0.4291,1.0
+Filtreleme (Pearson),15,0.6431,0.6413,0.0481,1.0
+Sarmalayıcı (RFE),15,0.6510,0.6502,0.0992,1.0
+Gömülü (Random Forest),15,0.6278,0.6253,0.0546,1.0
