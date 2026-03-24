@@ -19,7 +19,7 @@ fi
 
 # Proje dizinini belirleyin
 PROJECT_DIR="$(dirname "$0")"
-VENV_DIR="$PROJECT_DIR/venv"
+VENV_DIR="$PROJECT_DIR/.venv"
 
 # Sanal ortam oluşturun
 if [ ! -d "$VENV_DIR" ]; then

@@ -2282,6 +2282,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayarla%20Görme)
 
 
+#### 📘 Biyomedikal İşaret ve Görüntü İşleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [GB](#-doç-dr-gökhan-bilgin)
+
+
 #### 📘 Büyük Veri Analitiği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3120,6 +3128,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Elektronik Devreler](#-elektronik-devreler)
   - 📖 [Devre Teorisi ve Elektronik Devreler](#-devre-teorisi-ve-elektronik-devreler)
   - 📖 [Veri Madenciliğine Giriş](#-veri-madenciliğine-giriş)
+  - 📖 [Biyomedikal İşaret ve Görüntü İşleme](#-biyomedikal-i̇şaret-ve-görüntü-i̇şleme)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
@@ -3230,6 +3239,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Hakiki_**: Hocayı çok övülüyor diye sabah bekleyerek seçtim ama açıkcası beklediğimi pek bulamadım. Dersler biraz havada işlendi bazı kavramlar gökten indi gibi geldi. Konu hakkında çok bilgili olduğu zaten açık ama bizim döneme mi özel biraz havada geçti gibi geldi dersler. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Sort Sort Sort Sortt_**: Millet uzayı çıkıyor, AI'ler gelişiyor adam sabah akşam sort. Başka bişi yok malesef, bölüm 4-5 tane C dersi var biraz daha artmalı çok az. Web - mobil programlama vs ne gerek var dimi böyle dersleri alıp napacağız ? Ama sonra ödevler web UI isterler CDTP de mobil isterler. Sort yazmaya devam knk. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
   - 👤 **_Shaw_**: Öğreticidir. Biraz ciddidir ama yeri gelince yumuşatmayı bilir. Kağıt okurken titiz olduğunu düşünüyorum. Gayet iyi bir hocadır. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Tırt_**: sabah sort akşam sort yarın zort ℹ️ Yorum **03.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-28-oy)
@@ -3409,7 +3419,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 35 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 36 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3432,11 +3442,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
         - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -3552,6 +3562,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Üniversitede 25 Ülke Gezen Adam_**: Mikroişlemci dersinde assembly kısmına muazzam hakimdir fakat mikro kısmını çok da iyi bilmemektedir. Kendisi iyi bir hoca olsa da çok üstten bakar. Mümkün mertebe eline düşmemekte fayda var. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Bebek Mavisi_**: öğrencilerle içten ilgili bir hoca. finalin ortasında bile olsan gelip anlayana kadar tek tek anlatır her şeyi. diğer hocalar gibi tuhaf triplere girmiyor, öğrencilere öğrenmeye gelmiş insan muamelesi yapıyor. bir şey sana saçma gelsin hocam bu nasıl saçmalık diye sorun o kararın alınma tarihçesini anlatır size tatmin olursunuz. aşırı kuralcı, obsye yoklama giren çok nadir hocalardan. bir saatin fazla olsun direkt F0 ile kalırsınız. işini seviyor, öğrencileri seviyor, istediğiniz zaman kapısını çalıp girebilirsiniz, ikram kahve içebilirsiniz (randevu alma şartıyla tabi :)) ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Yıpranmış Bebek Mavisi_**: yani. bilgili olduğu derslerde iyi anlatıyor. geçen sene nyp'deki iyi tecrübeme dayanarak bu sene mikro almayı tercih ettim. assembly'ye hakim bir hoca. anlatmasını biliyor, öğrencilere nasıl davranması gerektiğini biliyor (not al ziya), ancak mikroişlemci hakkında çok bir şey bildiğini düşünmüyorum. biliyordur bilmesine, sonuç olarak bir insan kendi kendine çalışsa bir noktada başkalarına anlatabilecek kabiliyete sahip olabiliyor, ancak ya ilgisi çok yok diye umursamıyor ya da gerçekten son dakika hazırlanıp ezbere ilerliyor. bir günün 24 saat olmadığını arka arkaya üçüncü hafta sabah 9'daki derste 20 dakika boyunca anlatınca insanın sabrı biraz sınanıyor. dersi dolduracak bilgin yoksa dersin başlangıç saatini ertele ya da erken bitir. üç grup içinde en düşük notlara sahip hoca, böyle bir dersin sınavlarını "yetişmiyor" bahanesiyle test yapıyor, yoklamayı takmayacak olsaydı asm kısmını FÇ, mikro kısmını EU'dan dinleyin derdim. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Mahlas_**: Bölümün en overrated hocasıdır. ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
@@ -3615,6 +3626,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_R3_**: Geçen yıl BBG yi G1 den almıştım ders anlatımı ve öğrenciyi derste tutma açısından bence çok iyi BBG adına mükemmel hocaydı bence ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Sien_**: Hocadan bbg dersini aldım. Hazırlık okuyup bölüme başlamıştım. Hoca öncelikli olarak bence oldukça öğrenci dostu, sohbet ederken vs. çekinmemi gerektirecek bir durum olmadı. Derslerde de bizi genelde konuşturmaya çalışıyordu. Puanlama konusunda da gerektiği gibi davrandığını düşünüyorum, kıt kanaat vermiyor ama yaptığına puan alıyorsun gibi. Sadece bazı derslerde temposunu daha iyi ayarlaması lazım bence, bazı slaytları vs. fazla hızlı anlattı ve bence çok slayt üzerinden gitmesi de hocanın bizim nerelerde takılacağımızı vs. tahmin etmesini zorlaştırıyor. Zaten önümüzde kaynak var gibi düşünüyor olabilir ama bir şeyi ne kadar en başından ve tane tane anlatırsa bence o kadar iyi. Dersin en beğendiğim yanları ise bize algoritmalar hakkında vs. olsun sıkça soru sorup ve birlikte tahtaya yazarak düşünmemizi sağlaması ve ileriye dönük konular hakkında birkaç kavram/konuyu çaktırmadan çıtlatması olmuştur. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Dd_**: Dersleri eğlenceli ve interaktif anlattığını düşünüyorum. Gerçekten bu işi severek yapıyor, güler yüzlü ve samimidir. Sınavlarda notlandırması biraz düşük olabilir. Labları, sınavları vs aksatmadığınız sürece sırf teorik derse katılmadınız diye devamsızlıktan bırakmaz. Çok iyi hocadır. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Yoda_**: inanilmaz iyi bi insan. dersleri de keyifli. notlandirmasi da guzel. ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Veri Yapıları ve Algoritmalar](#-veri-yapıları-ve-algoritmalar)
@@ -3626,7 +3638,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 13 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3651,9 +3663,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 📅 *2026 yılı için yıldız bilgileri*
       - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
