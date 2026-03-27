@@ -1,0 +1,1 @@
+- ***Yapısal_2024_LabSoruları*** dosyasında 2024 yılından kalma lab sorularının ekran görüntüleri var.
