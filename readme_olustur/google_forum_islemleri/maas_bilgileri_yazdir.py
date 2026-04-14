@@ -1,167 +1,168 @@
+import io
+import sys
 import pandas as pd
+import pyperclip
 
-pd.set_option('future.no_silent_downcasting', True)
-# 1) Veriyi linkten okuma
-url = "https://docs.google.com/spreadsheets/d/e/2PACX--WhA-eNoJZrK/pub?output=csv"
-df = pd.read_csv(url)
+# Sütun indeksleri
+I_ZAMAN       = 0
+I_MEZUN       = 1
+I_CALISIYOR   = 2
+I_TURKIYE     = 3
+I_POZISYON    = 4
+I_OKUL        = 5
+I_SIRKET      = 6
+I_CALISMA_DUR = 7
+I_TECRUBE     = 8
+ESKI_MAAS     = 9
+ZAMLI_MAAS    = 10
 
-# Yeni anket dosyasında sütunların iloc indekslerine göre anlamları:
-#  0 -> Zaman damgası
-#  1 -> Mezun Musunuz? (Evet/Hayır)
-#  2 -> Çalışıyor musunuz? (Evet/Hayır)
-#  3 -> Türkiye'de mi çalışıyorsunuz? (Evet/Hayır)
-#  4 -> Pozisyon Alanı
-#  5 -> Okul
-#  6 -> Şirket Adı
-#  7 -> Çalışma Durumu
-#  8 -> Tecrübe Süresi
-#  9 -> 2024 Maaşı (Aylık net ortalama)
-# 10 -> 2025 Maaşı (Aylık net ortalama)
 
-###############################################################################
-# ÖNCE GENELDE MEZUN OLANLAR VE OLMAYANLAR İÇİN İŞSİZLİK ORANLARINI HESAPLAMA #
-###############################################################################
-mezun_df = df[df.iloc[:, 1] == "Evet"]  # Mezun olanlar
-mezun_calismayan_df = mezun_df[mezun_df.iloc[:, 2] == "Hayır"]  # Mezun olup çalışmayan
-mezun_olmayan_df = df[df.iloc[:, 1] == "Hayır"]  # Mezun olmayanlar
-mezun_olmayan_calismayan_df = mezun_olmayan_df[mezun_olmayan_df.iloc[:, 2] == "Hayır"]
+def veri_yukle(url: str) -> pd.DataFrame:
+    df = pd.read_csv(url)
+    eski_col = df.columns[ESKI_MAAS]
+    yeni_col = df.columns[ZAMLI_MAAS]
+    # Yeni yıl maaşı girilmemişse eski yıl maaşını kullan
+    df[yeni_col] = df[yeni_col].fillna(df[eski_col])
+    return df
 
-# 2) mezun_calismayan_orani = (Mezun olup çalışmayan / Tüm mezunlar) * 100
-if len(mezun_df) > 0:
-    mezun_calismayan_orani = len(mezun_calismayan_df) / len(mezun_df) * 100
-else:
-    mezun_calismayan_orani = 0
 
-# 3) mezun_olmayan_calisma_orani = (Mezun olmayıp çalışmayan / Mezun olmayanların tamamı) * 100
-if len(mezun_olmayan_df) > 0:
-    mezun_olmayan_calisma_orani = len(mezun_olmayan_calismayan_df) / len(mezun_olmayan_df) * 100
-else:
-    mezun_olmayan_calisma_orani = 0
-# 4) Yurt dışında çalışma oranı
-yurtdisi_calisan_orani = len(df[df.iloc[:, 3] == "Evet"]) / len(df[df.iloc[:,2] == "Evet"]) * 100
 
-markdown_tablo = f"""
+def artis_orani_hesapla(df: pd.DataFrame, eski_col: str, yeni_col: str) -> pd.Series:
+    # Yüzdelik artış: (yeni - eski) / eski * 100
+    return (df[yeni_col] - df[eski_col]) / df[eski_col] * 100
+
+
+def temizle(df: pd.DataFrame, maas_kolonlari: list) -> pd.DataFrame:
+    df = df.round(2)
+    # Maaş kolonları sayısal kalmalı, sadece grup/index kolonlarındaki NaN'ları "bilinmiyor" yap
+    non_maas = [c for c in df.columns if c not in maas_kolonlari]
+    df[non_maas] = df[non_maas].astype(object).fillna("bilinmiyor")
+    return df
+
+
+def issizlik_oranlarini_yazdir(df: pd.DataFrame) -> None:
+    # Mezuniyet durumuna göre alt kümeler
+    mezun_df = df[df.iloc[:, I_MEZUN] == "Evet"]
+    mezun_calismayan_df = mezun_df[mezun_df.iloc[:, I_CALISIYOR] == "Hayır"]
+    mezun_olmayan_df = df[df.iloc[:, I_MEZUN] == "Hayır"]
+    mezun_olmayan_calismayan_df = mezun_olmayan_df[mezun_olmayan_df.iloc[:, I_CALISIYOR] == "Hayır"]
+
+    # Oranlar; bölme hatasını önlemek için sıfır kontrolü yap
+    mezun_issiz_orani = len(mezun_calismayan_df) / len(mezun_df) * 100 if len(mezun_df) > 0 else 0
+    mezun_olmayan_issiz_orani = len(mezun_olmayan_calismayan_df) / len(mezun_olmayan_df) * 100 if len(mezun_olmayan_df) > 0 else 0
+    # Yurt dışında çalışanlar / tüm çalışanlar
+    yurtdisi_orani = len(df[df.iloc[:, I_TURKIYE] == "Evet"]) / len(df[df.iloc[:, I_CALISIYOR] == "Evet"]) * 100
+
+    print(f"""
 | **Durum**                        | **Oran (%)**       |
-|----------------------------------|--------------------|
-| Mezunların % kaçı işsiz               | %{mezun_calismayan_orani:.2f} |
-| Mezun olmayanların % kaçı işsiz       | %{mezun_olmayan_calisma_orani:.2f} |
-| Yurt dışında çalışmayanların oranı    | %{yurtdisi_calisan_orani:.2f} |
-"""
-# Markdown tablosunu yazdır
-print(markdown_tablo)
+|----------------------------------|--------------------| 
+| Mezunların % kaçı işsiz               | %{mezun_issiz_orani:.2f} |
+| Mezun olmayanların % kaçı işsiz       | %{mezun_olmayan_issiz_orani:.2f} |
+| Yurt dışında çalışmayanların oranı    | %{yurtdisi_orani:.2f} |
+""")
 
-############################################################################
-# Eski kod iskeleti koruyarak maaş analizlerini 2024–2025 verileriyle yapma #
-############################################################################
 
-# Tecrübe süresini sayısal bir değere dönüştüren fonksiyon
-def tecrube_suresi_donustur(tecrube):
-    if tecrube == "0 - 6 ay":
-        return 0.5
-    elif tecrube == "6 ay - 1 yıl":
-        return 1
-    elif tecrube == "1 yıl - 2 yıl":
-        return 1.5
-    elif tecrube == "2 yıl - 4 yıl":
-        return 3
-    elif tecrube == "4 yıl - 6 yıl":
-        return 5
-    else:
-        return 0  # Belirsiz değerler için tutalım
+def sirket_analizi(mezuniyet_df: pd.DataFrame, eski_col: str, yeni_col: str) -> pd.DataFrame | None:
+    df = mezuniyet_df.dropna(subset=[eski_col, yeni_col])
+    # Tek kişilik şirketleri anlamsız ortalama vermemesi için dışla
+    filtered = df.groupby(df.columns[I_SIRKET]).filter(lambda x: len(x) > 1)
+    if filtered.empty:
+        return None
+    avg = filtered.groupby(filtered.columns[I_SIRKET])[[eski_col, yeni_col]].mean()
+    avg["Maaş Artış Oranı (%)"] = artis_orani_hesapla(avg, eski_col, yeni_col)
+    return temizle(avg, [eski_col, yeni_col, "Maaş Artış Oranı (%)"])
 
-# Filtre fonksiyonu (grup sayısı 1'den büyükse alalım)
-def filter_func(x):
-    return len(x) > 1
 
-# Çalışma Durumuna göre veriyi grupla ve analiz et
-for durum in df.iloc[:, 7].unique():
-    durum_df = df[df.iloc[:, 7] == durum].copy()
+def alan_analizi(mezuniyet_df: pd.DataFrame, eski_col: str, yeni_col: str) -> pd.DataFrame:
+    df = mezuniyet_df.dropna(subset=[eski_col, yeni_col])
+    if df.empty:
+        return df
+    avg = df.groupby(df.columns[I_POZISYON])[[eski_col, yeni_col]].mean()
+    avg["Maaş Artış Oranı (%)"] = artis_orani_hesapla(avg, eski_col, yeni_col)
+    return temizle(avg, [eski_col, yeni_col, "Maaş Artış Oranı (%)"])
 
-    # Mezun Musunuz? -> df.iloc[:, 1]
-    for mezuniyet in durum_df.iloc[:, 1].unique():
-        mezuniyet_df = durum_df[durum_df.iloc[:, 1] == mezuniyet].copy()
-        if mezuniyet_df.empty:
-            continue
 
-        # Ekrana “Mezun” / “Mezun Değil” diye basılacak küçük değişiklik
-        mezun_text = "Mezun" if mezuniyet == "Evet" else "Mezun Değil"
-        print(f"\n### {durum} ve {mezun_text} için Maaş Analizi\n")
+def tecrube_analizi(mezuniyet_df: pd.DataFrame, eski_col: str, yeni_col: str) -> pd.DataFrame:
+    df = mezuniyet_df.dropna(subset=[eski_col, yeni_col]).copy()
+    if df.empty:
+        return df
+    avg = df.groupby(df.columns[I_TECRUBE], as_index=False)[[eski_col, yeni_col]].mean()
+    avg["Maaş Artış Oranı (%)"] = artis_orani_hesapla(avg, eski_col, yeni_col)
+    return temizle(avg, [eski_col, yeni_col, "Maaş Artış Oranı (%)"])
 
-        # Şirket bazında ortalama maaş (2024, 2025) + artış oranı
-        filtered_company_avg = mezuniyet_df.groupby(mezuniyet_df.columns[6]).filter(filter_func)
-        if not filtered_company_avg.empty:
-            company_avg = filtered_company_avg.groupby(filtered_company_avg.columns[6])[
-                [filtered_company_avg.columns[9], filtered_company_avg.columns[10]]
-            ].mean()
-            company_avg["Maaş Artış Oranı (%)"] = (
-                (company_avg[company_avg.columns[1]] - company_avg[company_avg.columns[0]])
-                / company_avg[company_avg.columns[0]]
-            ) * 100
-        filtered_company_avg = filtered_company_avg.round(2)  # Virgülden sonra 2 basamak
-        filtered_company_avg = filtered_company_avg.astype(object)
-        filtered_company_avg.fillna("bilinmiyor", inplace=True)
-        company_avg = company_avg.round(2)  # Virgülden sonra 2 basamak
-        company_avg = company_avg.astype(object)
-        company_avg.fillna("bilinmiyor", inplace=True)
-        # Genel ortalama (2024, 2025) ve artış oranı
-        general_avg = mezuniyet_df[
-            [mezuniyet_df.columns[9], mezuniyet_df.columns[10]]
-        ].mean()
-        if general_avg.isnull().any():
-            general_increase_rate = float('nan')
-        else:
-            general_increase_rate = (
-                (general_avg.iloc[1] - general_avg.iloc[0]) / general_avg.iloc[0] * 100
-            )
 
-        # Alana göre maaş analizleri -> "Pozisyon Alanı" = df.iloc[:, 4]
-        field_avg = mezuniyet_df.groupby(mezuniyet_df.columns[4])[
-            [mezuniyet_df.columns[9], mezuniyet_df.columns[10]]
-        ].mean()
-        field_avg["Maaş Artış Oranı (%)"] = (
-            (field_avg[field_avg.columns[1]] - field_avg[field_avg.columns[0]])
-            / field_avg[field_avg.columns[0]]
-        ) * 100
-        field_avg = field_avg.round(2)  # Virgülden sonra 2 basamak
-        field_avg = field_avg.astype(object)
-        field_avg.fillna("bilinmiyor", inplace=True)
+def genel_analizi_yazdir(mezuniyet_df: pd.DataFrame, eski_col: str, yeni_col: str, eski_yil: int, yeni_yil: int) -> None:
+    general_avg = mezuniyet_df[[eski_col, yeni_col]].mean()
+    # Her iki yıl verisi de yoksa tabloyu yazdırma
+    if general_avg.isnull().any():
+        return
+    artis = (general_avg.iloc[1] - general_avg.iloc[0]) / general_avg.iloc[0] * 100
+    print(f"\n##### Genel Maaş Ortalamaları ({eski_yil}–{yeni_yil}) ve Artış Oranı\n")
+    print(f"| Ortalama Maaş {eski_yil} | Ortalama Maaş {yeni_yil} | Maaş Artış Oranı (%) |")
+    print(f"|-------------------|--------------------|-----------------------|")
+    print(f"| {int(general_avg.iloc[0])}              | {int(general_avg.iloc[1])}              | {artis:.2f}                |")
 
-        # Tecrübe Süresi -> df.iloc[:, 8]
-        mezuniyet_df["Tecrübe Süresi Sayısal"] = mezuniyet_df[mezuniyet_df.columns[8]].apply(tecrube_suresi_donustur)
-        experience_avg = mezuniyet_df.groupby(mezuniyet_df.columns[8], as_index=False)[
-            [mezuniyet_df.columns[9], mezuniyet_df.columns[10]]
-        ].mean()
-        experience_avg["Maaş Artış Oranı (%)"] = (
-            (experience_avg[experience_avg.columns[2]] - experience_avg[experience_avg.columns[1]])
-            / experience_avg[experience_avg.columns[1]]
-        ) * 100
-        experience_avg = experience_avg.round(2)  # Virgülden sonra 2 basamak
-        experience_avg = experience_avg.astype(object)
-        experience_avg.fillna("bilinmiyor", inplace=True)
-        # Sonuçları yazdıralım
-        if not pd.isnull(general_increase_rate):
-            print("\n##### Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı\n")
-            print(f"| Ortalama Maaş 2024 | Ortalama Maaş 2025 | Maaş Artış Oranı (%) |")
-            print(f"|-------------------|--------------------|-----------------------|")
-            print(f"| {int(general_avg.iloc[0])}              | {int(general_avg.iloc[1])}              | {general_increase_rate:.2f}                |")
 
-        if not filtered_company_avg.empty:
-            print("\n\n\n##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)\n")
-            print(company_avg.to_markdown())
+def maas_analizini_yazdir(df: pd.DataFrame, eski_yil: int, yeni_yil: int) -> None:
+    eski_col = df.columns[ESKI_MAAS]
+    yeni_col = df.columns[ZAMLI_MAAS]
 
-        if not field_avg.empty:
-            print("\n\n\n##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)\n")
-            print(field_avg.to_markdown())
+    # Her çalışma durumu (tam zamanlı, stajyer vb.) için ayrı analiz
+    for durum in df.iloc[:, I_CALISMA_DUR].unique():
+        durum_df = df[df.iloc[:, I_CALISMA_DUR] == durum].copy()
 
-        if not experience_avg.empty:
-            print("\n\n\n##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)\n")
-            print(experience_avg.to_markdown(index=False))
+        # Her çalışma durumu içinde mezun/mezun değil ayrımı
+        for mezuniyet in durum_df.iloc[:, I_MEZUN].unique():
+            mezuniyet_df = durum_df[durum_df.iloc[:, I_MEZUN] == mezuniyet].copy()
+            if mezuniyet_df.empty:
+                continue
 
-# Tüm satırları boş olanları filtrele
-df_cleaned = df.dropna(how='all')
+            mezun_text = "Mezun" if mezuniyet == "Evet" else "Mezun Değil"
+            print(f"\n### {durum} ve {mezun_text} için Maaş Analizi\n")
 
-# Katılan kişi sayısını hesapla
-katilan_kisi_sayisi = len(df_cleaned)
+            genel_analizi_yazdir(mezuniyet_df, eski_col, yeni_col, eski_yil, yeni_yil)
 
-# Sonucu yazdır
-print(f"\nℹ️  Anket sonuçları: {katilan_kisi_sayisi} kişi üzerinden hesaplanmıştır.")
+            # Şirket bazlı analiz (en az 2 kişi olan şirketler)
+            company_avg = sirket_analizi(mezuniyet_df, eski_col, yeni_col)
+            if company_avg is not None:
+                print(f"\n\n\n##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları ({eski_yil}–{yeni_yil})\n")
+                print(company_avg.to_markdown())
+
+            # Pozisyon alanı bazlı analiz
+            field_avg = alan_analizi(mezuniyet_df, eski_col, yeni_col)
+            if not field_avg.empty:
+                print(f"\n\n\n##### Alana Göre Maaş Ortalamaları ve Artış Oranları ({eski_yil}–{yeni_yil})\n")
+                print(field_avg.to_markdown())
+
+            # Tecrübe süresi bazlı analiz
+            exp_avg = tecrube_analizi(mezuniyet_df, eski_col, yeni_col)
+            if not exp_avg.empty:
+                print(f"\n\n\n##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları ({eski_yil}–{yeni_yil})\n")
+                print(exp_avg.to_markdown(index=False))
+
+
+def katilimci_sayisini_yazdir(df: pd.DataFrame, yeni_yil: int, eski_yil: int) -> None:
+    print(f"\nℹ️  Anket sonuçları: {len(df.dropna(how='all'))} kişi üzerinden hesaplanmıştır. {yeni_yil} maaş bilgisi verilmeyen kayıtlarda {yeni_yil} maaşı sütununda {eski_yil} maaş bilgileri kullanılmıştır.")
+
+
+def main(eski_yil: int = 2024, yeni_yil: int = 2025) -> None:
+    url = "url"
+    df = veri_yukle(url)
+
+    # Tüm çıktıyı buffer'a al, sonra hem yazdır hem panoya kopyala
+    buffer = io.StringIO()
+    sys.stdout = buffer
+
+    issizlik_oranlarini_yazdir(df)
+    maas_analizini_yazdir(df, eski_yil, yeni_yil)
+    katilimci_sayisini_yazdir(df, yeni_yil, eski_yil)
+
+    sys.stdout = sys.__stdout__
+    cikti = buffer.getvalue()
+    print(cikti)
+    pyperclip.copy(cikti)
+    print("\n✅ Çıktı panoya kopyalandı.")
+
+
+if __name__ == "__main__":
+    main(eski_yil=2024, yeni_yil=2025)

@@ -1,10 +1,15 @@
 import sys
+from typing import Callable
 from PyQt6.QtWidgets import (
     QApplication,
     QWidget,
     QPushButton,
     QVBoxLayout,
     QMessageBox,
+    QHBoxLayout,
+    QLabel,
+    QSpacerItem,
+    QSizePolicy,
 )
 from PyQt6.QtGui import QIcon, QGuiApplication
 from katkida_bulunanlari_duzenle_window import KatkidaBulunanGuncelleWindow
@@ -24,6 +29,21 @@ from konfigurasyon_json_kontrol import konfigurasyon_json_guncelle
 import os
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from konfigurasyon_window import KonfigurasyonDialog
+from surum_yonetimi import VERSION
+
+
+
+class MenuButton(QPushButton):
+    """
+    Ana menü için özelleştirilmiş buton sınıfı.
+    Hem veriyi tutar hem de görselleştirme (buton) mantığını encapsule eder.
+    """
+    def __init__(self, text: str, color: str, function: Callable):
+        super().__init__(text)
+        
+        # Buton stil ve fonksiyon atamaları
+        self.setStyleSheet(color)
+        self.clicked.connect(function)
 
 
 class App(QWidget):
@@ -40,49 +60,36 @@ class App(QWidget):
         self.setWindowTitle(self.title)
         self.resize(self.width, self.height)
         layout = QVBoxLayout()
+        
+        # Version Info (Top Right)
+        top_layout = QHBoxLayout()
+        top_layout.addItem(
+            QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+        )
+        version_label = QLabel(f"Sürüm: {VERSION}")
+        version_label.setObjectName("versionLabel")
+        top_layout.addWidget(version_label)
+        layout.addLayout(top_layout)
+
         # Butonları oluştur
         self.buttons = [
-            QPushButton("Giriş Güncelle"),
-            QPushButton("Repo Kullanımı Düzenle"),
-            QPushButton("Maaş İstatistikleri Düzenle"),
-            QPushButton("Ders Ekle/Güncelle"),
-            QPushButton("Hoca Ekle/Güncelle"),
-            QPushButton("Yazarın Notları Ekle/Güncelle"),
-            QPushButton("Katkıda Bulunan Ekle/Güncelle"),
-            QPushButton("Dönem Ekle/Güncelle"),
-            QPushButton("Konfigürasyon Düzenle"),
-            QPushButton("Git İşlemleri"),
+            MenuButton("Giriş Güncelle", "background-color: #C0392B; color: white;", self.acGirisEkleGuncelle),
+            MenuButton("Repo Kullanımı Düzenle", "background-color: #27AE60; color: white;", self.repoKullanimiDuzenle),
+            MenuButton("Maaş İstatistikleri Düzenle", "background-color: #007BFF; color: white;", self.maasIstatistikleriDuzenle),
+            MenuButton("Ders Ekle/Güncelle", "background-color: #2980B9; color: white;", self.acDersEkleGuncelle),
+            MenuButton("Hoca Ekle/Güncelle", "background-color: #8E44AD; color: white;", self.acHocaEkleGuncelle),
+            MenuButton("Yazarın Notları Ekle/Güncelle", "background-color: #F39C12; color: white;", self.acYazarinNotlari),
+            MenuButton("Katkıda Bulunan Ekle/Güncelle", "background-color: #D35400; color: white;", self.acKatkidaBulunanEkleGuncelle),
+            MenuButton("Dönem Ekle/Güncelle", "background-color: #16A085; color: white;", self.acDonemEkleGuncelle),
+            MenuButton("Konfigürasyon Düzenle", "background-color: #9B59B6; color: white;", self.acKonfigurasyonDuzenle),
+            MenuButton("Git İşlemleri", "background-color: #2C3E50; color: white;", self.gitIslemleri),
         ]
-        # Her düğme için farklı bir renk ayarla
-        colors = [
-            "#C0392B",
-            "#27AE60",
-            "#007BFF",
-            "#2980B9",
-            "#8E44AD",
-            "#F39C12",
-            "#D35400",
-            "#16A085",
-            "#9B59B6",
-            "#2C3E50",
-        ]
-        for button, color in zip(self.buttons, colors):
-            button.setStyleSheet(f"background-color: {color};")
+
         self.progressDialog = CustomProgressDialog(
             "README.md dosyaları güncelleniyor...", self
         )
         self.progressDialog.close()
-        # Her butona tıklama işleyicisi ekle
-        self.buttons[0].clicked.connect(self.acGirisEkleGuncelle)
-        self.buttons[1].clicked.connect(self.repoKullanimiDuzenle)
-        self.buttons[2].clicked.connect(self.maasIstatistikleriDuzenle)
-        self.buttons[3].clicked.connect(self.acDersEkleGuncelle)
-        self.buttons[4].clicked.connect(self.acHocaEkleGuncelle)
-        self.buttons[5].clicked.connect(self.acYazarinNotlari)
-        self.buttons[6].clicked.connect(self.acKatkidaBulunanEkleGuncelle)
-        self.buttons[7].clicked.connect(self.acDonemEkleGuncelle)
-        self.buttons[8].clicked.connect(self.acKonfigurasyonDuzenle)
-        self.buttons[9].clicked.connect(self.gitIslemleri)
+
         # Butonları pencereye ekle
         for btn in self.buttons:
             layout.addWidget(btn)
@@ -172,12 +179,13 @@ class App(QWidget):
         QMessageBox.critical(self, "Hata", f"Bir hata oluştu: {message}")
 
 
-if __name__ == "__main__":
+def main():
+    """Ana uygulama giriş noktası."""
     # Çalıştırılabilir dosyanın yolunu ve dizinini belirle
     if getattr(sys, "frozen", False):
         # PyInstaller tarafından oluşturulmuş bir çalıştırılabilir dosya çalışıyorsa
         application_path = os.path.dirname(sys.executable)
-        application_path = os.path.join(application_path, "..")
+        # Artık main, kök dizinde olduğu için bir üst dizine çıkmaya gerek yok
         os.chdir(application_path)
     konfigurasyon_json_guncelle(KONFIGURASYON_JSON_PATH)
     app = QApplication(sys.argv)
@@ -191,3 +199,7 @@ if __name__ == "__main__":
         pass
     ex = App()
     sys.exit(app.exec())
+
+
+if __name__ == "__main__":
+    main()

@@ -112,7 +112,7 @@ VARSAYILAN_ACIKLAMALAR_BOLUM_ADI = "Açıklamalar"
 FAYDALI_OLABILECEK_KAYNAKLAR_UYARI_MESAJI = "Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez."
 
 # DOSYA ADLARI
-KARA_LISTE_TXT = "kara_liste.txt"
+KARA_LISTE_TXT = "karaliste.txt"
 STIL_QSS = "stil.qss"
 README_MD = "README.md"
 
@@ -121,20 +121,23 @@ def _get_base_paths():
     """
     PyInstaller ve normal Python çalışması için temel yolları hesapla.
     Returns:
-        tuple: (module_dir, project_root, bir_ust_dizin)
+        tuple: (module_dir, project_root, bir_ust_dizin, internal_root)
     """
     if getattr(sys, 'frozen', False):
         # PyInstaller ile paketlenmiş
-        # _MEIPASS: paket içindeki dosyalar
-        # executable dir: dist klasörü
+        # _MEIPASS: paket içindeki dosyalar (geçici dizin)
         bundle_dir = sys._MEIPASS
+        # executable dir: artık proje kökü (kullanıcının çalıştığı dizin)
         exe_dir = os.path.dirname(sys.executable)
-        # Proje kökü: dist'in bir üst dizini
-        project_root = os.path.dirname(exe_dir)
+        
+        # Proje kökü: executable'ın bulunduğu dizin (çıktıların yazılacağı yer)
+        project_root = exe_dir
         # Paket içindeki modül dizini
         module_dir = bundle_dir
-        # BIR_UST_DIZIN artık proje kökü (dist'in bir üst dizini)
+        # BIR_UST_DIZIN: executable'ın bulunduğu dizin (çıktılar buraya)
         bir_ust_dizin = project_root
+        # INTERNAL_ROOT: Paketlenmiş kaynak dosyaları (google_forum_islemleri vs.)
+        internal_root = bundle_dir
     else:
         # Normal Python çalışması
         # Bu dosyanın bulunduğu dizin (readme_guncelleme_arayuzu_python)
@@ -143,46 +146,34 @@ def _get_base_paths():
         project_root = os.path.dirname(module_dir)
         # Göreli yol olarak ".." kullanılabilir ama mutlak yol daha güvenli
         bir_ust_dizin = project_root
+        # Normal çalışmada internal root proje köküdür
+        internal_root = project_root
     
-    return module_dir, project_root, bir_ust_dizin
+    return module_dir, project_root, bir_ust_dizin, internal_root
 
-_MODULE_DIR, _PROJECT_ROOT, BIR_UST_DIZIN = _get_base_paths()
+_MODULE_DIR, _PROJECT_ROOT, BIR_UST_DIZIN, INTERNAL_ROOT = _get_base_paths()
 
 # Göreli yol olarak da sakla (bazı yerler hala bunu bekliyor olabilir)
 BIR_UST_DIZIN_GORELI = ".."
 
-GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
-JSON_DOSYALARI_DEPOSU_DOSYA_ADI = "json_depo_bilgileri.txt"
-JSON_DOSYALARI_DEPOSU_DOSYA_YOLU = os.path.join(
-    BIR_UST_DIZIN, JSON_DOSYALARI_DEPOSU_DOSYA_ADI
-)
-JSON_DOSYALARI_DEPOSU = None
-README_GUNCELLEME_PYTHON = "readme_guncelleme_arayuzu_python"
-try:
-    # Önce proje kökünde ara
-    tmp_json_depo_dosyasi = os.path.join(BIR_UST_DIZIN, JSON_DOSYALARI_DEPOSU_DOSYA_ADI)
-    if not os.path.exists(tmp_json_depo_dosyasi):
-        # Bulunamazsa mevcut dizinde ara (cwd tabanlı eski davranış için)
-        if os.path.exists(JSON_DOSYALARI_DEPOSU_DOSYA_ADI):
-            tmp_json_depo_dosyasi = JSON_DOSYALARI_DEPOSU_DOSYA_ADI
-        else:
-            # Oluştur
-            with open(tmp_json_depo_dosyasi, "w", encoding="utf-8") as json_depo_dosyasi:
-                json_depo_dosyasi.write(".")
 
-    with open(tmp_json_depo_dosyasi, "r", encoding="utf-8") as json_depo_dosyasi:
-        for line in json_depo_dosyasi:
-            if JSON_DOSYALARI_DEPOSU is not None:
-                JSON_DOSYALARI_DEPOSU = os.path.join(
-                    JSON_DOSYALARI_DEPOSU, line.strip()
-                )
-            else:
-                JSON_DOSYALARI_DEPOSU = line.strip()
-except (FileNotFoundError, PermissionError):
-    JSON_DOSYALARI_DEPOSU = ""
+from PyQt6.QtCore import QSettings
+
+GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
+
+settings = QSettings("YTU_Arsiv", "Readme_Guncelleyici")
+JSON_DOSYALARI_DEPOSU = settings.value("json_depo_yolu", ".")
+
+# QSettings'den gelen değer string olmayabilir, garanti edelim
+if not isinstance(JSON_DOSYALARI_DEPOSU, str):
+    JSON_DOSYALARI_DEPOSU = str(JSON_DOSYALARI_DEPOSU)
+
+README_GUNCELLEME_PYTHON = "readme_guncelleme_arayuzu_python"
+
 DERSLER_JSON_NAME = "dersler.json"
 DERSLER_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, DERSLER_JSON_NAME)
 DERSLER_JSON_PATH = os.path.join(BIR_UST_DIZIN, DERSLER_JSON_NAME)
+
 
 HOCALAR_JSON_NAME = "hocalar.json"
 HOCALAR_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, HOCALAR_JSON_NAME)
@@ -434,13 +425,14 @@ ANAHTAR_VE_LINKLER = {
 KARA_LISTE = []
 try:
     with open(
-        os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI, KARA_LISTE_TXT),
+        os.path.join(INTERNAL_ROOT, GOOGLE_FORM_ISLEMLERI, KARA_LISTE_TXT),
         "r",
         encoding="utf-8",
     ) as kara_liste_dosyasi:
         for line in kara_liste_dosyasi:
             KARA_LISTE.append(line.strip().lower())
 except FileNotFoundError:
+    print(f"⚠️ UYARI: Karaliste dosyası bulunamadı! Küfür filtreleme devre dışı. Beklenen yol: {os.path.join(INTERNAL_ROOT, GOOGLE_FORM_ISLEMLERI, KARA_LISTE_TXT)}")
     KARA_LISTE = []
 
 # gitgub'dan sonraki kısmını al

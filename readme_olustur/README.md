@@ -10,11 +10,27 @@ Bu repodaki tüm _**README.md**_ dosyaları bu arayüzle oluşturulmuştur.
 
 Projeyi başarıyla çalıştırabilmek için aşağıdaki adımları izleyerek gerekli kütüphaneleri ve bağımlılıkları yükleyiniz:
 
-1. **Python 3 Kurulumu:** Projeyi çalıştırmak için Python 3'ün bilgisayarınızda yüklü olması gerekmektedir. Python'ı [buradan](https://www.python.org/downloads/) indirebilirsiniz (linux için `sudo apt install python3`). Kurulum tamamlandıktan sonra terminali açın ve `python3 --version` komutu ile kurulumun başarılı olduğunu doğrulayın. 🐍
+1. **Python 3.10+ Kurulumu:** Projeyi çalıştırmak için Python 3.10 veya üzeri bir sürümün bilgisayarınızda yüklü olması gerekmektedir. Python'ı [buradan](https://www.python.org/downloads/) indirebilirsiniz (linux için `sudo apt install python3`). Kurulum tamamlandıktan sonra terminali açın ve `python3 --version` komutu ile kurulumun başarılı olduğunu doğrulayın. 🐍
 
-1. **Pip3 Kurulumu:** Pip, Python paketlerini yönetmek için kullanılan bir araçtır. Python 3 ile birlikte genellikle otomatik olarak yüklenir. Kurulumunu doğrulamak için terminali açın ve `pip3 --version` komutunu çalıştırın. Eğer kurulu değilse, [Pip'in resmi belgelerini](https://pip.pypa.io/en/stable/installing/) takip ederek kurulum yapabilirsiniz.(linux için `sudo apt install python3-pip`) 🛠️
+2. **Pip3 Kurulumu:** Pip, Python paketlerini yönetmek için kullanılan bir araçtır. Python 3 ile birlikte genellikle otomatik olarak yüklenir. Kurulumunu doğrulamak için terminali açın ve `pip3 --version` komutunu çalıştırın. Eğer kurulu değilse, [Pip'in resmi belgelerini](https://pip.pypa.io/en/stable/installing/) takip ederek kurulum yapabilirsiniz. (Linux için `sudo apt install python3-pip`) 🛠️
 
-1. **Gerekli Kütüphanelerin Yüklenmesi:** Projede kullanılan kütüphaneleri yüklemek için, terminalinize `pip3 install -r gereksinimler.txt` komutunu girin. Bu komut, `gereksinimler.txt` dosyasında listelenen tüm paketleri yükleyecektir. 📚
+3. **Projeyi Kurma:** Projeyi kurmak için aşağıdaki komutu çalıştırın: 📚
+
+   ```bash
+   pip3 install .
+   ```
+   Bu komut, `pyproject.toml` dosyasındaki tüm bağımlılıkları otomatik olarak yükleyecektir.
+
+   **Geliştirici Kurulumu (Opsiyonel):**
+   ```bash
+   pip3 install -e ".[dev]"
+   ```
+   Bu komut, projeyi düzenlenebilir modda kurar ve geliştirme araçlarını (pyinstaller, pytest, black, isort, mypy) da yükler.
+
+4. **Bağımlılıklar:**
+   - `requests>=2.25.0` - HTTP istekleri için
+   - `PyQt6>=6.4.0` - Grafik kullanıcı arayüzü için
+   - `pandas>=2.0.0` - Veri işleme için
 
 ## Nasıl Kullanılır
 

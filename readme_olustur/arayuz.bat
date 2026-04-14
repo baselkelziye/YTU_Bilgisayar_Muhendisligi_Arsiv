@@ -1,63 +1,67 @@
 @echo off
 :: Mevcut konumu kaydet
 set "original_dir=%cd%"
-cls
 git config --global i18n.commitEncoding utf-8
 git config --global i18n.logOutputEncoding utf-8
-CHCP 65001
+CHCP 65001 >nul
 
-:: Python'un yüklü olup olmadığını kontrol edin
-python --version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo Python bulunamadi. Lutfen https://www.python.org/downloads/ adresinden yukleyin. [[1]]
-    echo Yukleme sirasinda "Add Python to PATH" secenegini isaretlediginizden emin olun.
-    pause
-    exit /b
+:: Headless mod kontrolü
+set "HEADLESS="
+if "%~1"=="--headless" set "HEADLESS=1"
+if "%~1"=="-q" set "HEADLESS=1"
+
+if not defined HEADLESS (
+    cls
+    echo README Duzenleyici Arayuzu
+    echo ========================================
 )
 
-:: venv modülünün yüklü olup olmadığını kontrol edin
-python -c "import venv" >nul 2>&1
-if %errorlevel% neq 0 (
-    echo venv modulu bulunamadi. Python'unuz ile birlikte otomatik olarak yuklenmesi gerekirdi.
-    echo Yukleme sirasinda bir sorun olmus olabilir. Python'u tekrar yuklemeyi deneyin.
-    pause
-    exit /b
-)
-
-:: Proje dizinini ve sanal ortam dizinini belirleyin
+:: Proje dizinini belirleyin
 set "PROJECT_DIR=%~dp0"
-set "VENV_DIR=%PROJECT_DIR%venv"
+set "EXECUTABLE=%PROJECT_DIR%dist\main.exe"
 
-:: Sanal ortam oluşturun
-if not exist "%VENV_DIR%" (
-    echo Sanal ortam olusturuluyor...
-    python -m venv "%VENV_DIR%"
-)
-
-:: Sanal ortamı etkinleştirin
-call "%VENV_DIR%\Scripts\activate"
-
-:: Gerekli kütüphaneleri yükleyin
-echo Gerekli kutuphaneler kontrol ediliyor ve yukleniyor...
-
-:: gereksinimler.txt dosyasındaki her paketi kontrol et ve yükle
-for /F "tokens=*" %%i in (%PROJECT_DIR%gereksinimler.txt) do (
-    pip show %%i >nul 2>&1
+:: Executable var mı kontrol et, yoksa build al
+if not exist "%EXECUTABLE%" (
+    if not defined HEADLESS echo Executable bulunamadi, build aliniyor...
+    
+    if defined HEADLESS (
+        call "%PROJECT_DIR%build.bat" >nul 2>&1
+    ) else (
+        call "%PROJECT_DIR%build.bat"
+    )
+    
     if %errorlevel% neq 0 (
-        echo %%i yukleniyor...
-        pip install %%i
+        if not defined HEADLESS (
+            echo Build basarisiz!
+            pause
+        )
+        exit /b 1
+    )
+    
+    if not exist "%EXECUTABLE%" (
+        if not defined HEADLESS (
+            echo Build sonrasi executable bulunamadi!
+            pause
+        )
+        exit /b 1
     )
 )
 
-:: readme_olusturma_arayuzu klasörüne çıkın ve main.py'yi çalıştırın
-cd "%PROJECT_DIR%readme_guncelleme_arayuzu_python"
-start python main.py
+:: Arayüzü çalıştır
+if not defined HEADLESS echo Arayuz baslatiliyor...
 
-:: Sanal ortamı deaktive edin
-call deactivate
+if defined HEADLESS (
+    :: Headless mod: pencere olmadan arka planda çalıştır
+    start "" "%EXECUTABLE%"
+) else (
+    :: Normal mod
+    start "" "%EXECUTABLE%"
+)
 
 :: Orijinal konuma geri dön
-cd %original_dir%
-echo İşlem tamamlandı.
-pause
+cd /d %original_dir%
+if not defined HEADLESS (
+    echo Islem tamamlandi.
+    pause
+)
 exit /b 0

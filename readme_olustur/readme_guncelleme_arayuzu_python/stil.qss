@@ -281,3 +281,75 @@ QLabel#surukleBilgiLabel {
     padding: 5px;
     background-color: transparent;
 }
+
+/* Dosya Çakışma Diyaloğu Stilleri */
+QDialog#dosyaCakismaDialog {
+    background-color: #ffffff;
+    border: 1px solid #e67e22;
+    border-radius: 8px;
+}
+
+QLabel#cakismaBaslik {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e67e22;
+    padding: 5px;
+}
+
+QLabel#cakismaAciklama {
+    font-size: 12px;
+    color: #555555;
+    padding: 5px;
+}
+
+QPushButton#yedekleBtn {
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#yedekleBtn:hover {
+    background-color: #2ecc71;
+}
+
+QPushButton#koruBtn {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QPushButton#koruBtn:hover {
+    background-color: #5dade2;
+}
+
+QPushButton#iptalBtn {
+    background-color: #95a5a6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+QPushButton#iptalBtn:hover {
+    background-color: #bdc3c7;
+}
+
+QFrame#cakismaAyirici {
+    background-color: #dddddd;
+    max-height: 1px;
+}
+
+/* Versiyon Etiketi */
+QLabel#versionLabel {
+    color: #7f8c8d;
+    font-weight: bold;
+}

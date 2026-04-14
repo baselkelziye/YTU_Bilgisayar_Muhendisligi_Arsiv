@@ -1,0 +1,62 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - 'v*.*.0' # Matches tags like v1.1.0, v2.0.0, but not v1.1.1
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11' # Or the version matching your project
+
+      - name: Inject version
+        run: |
+          echo "VERSION = '${{ github.ref_name }}'" > readme_guncelleme_arayuzu_python/surum.py
+        shell: bash
+
+      - name: Build with build.bat
+        shell: cmd
+        run: |
+          call build.bat
+
+      - name: Upload Windows Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-windows
+          path: main.exe
+
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Inject version
+        run: |
+          echo "VERSION = '${{ github.ref_name }}'" > readme_guncelleme_arayuzu_python/surum.py
+
+      - name: Make build script executable
+        run: chmod +x build.sh
+
+      - name: Build with build.sh
+        run: ./build.sh
+
+      - name: Upload Ubuntu Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: main-linux
+          path: main
+

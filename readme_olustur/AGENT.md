@@ -21,15 +21,18 @@ ytu_arsiv_readme_olusturma/
 │   ├── threadler.py                     # Arka plan işlemleri için QThread sınıfları
 │   ├── helpers/                         # Yardımcı modüller
 │   └── stil.qss                         # Qt stil dosyası
+├── writers/                            # README bölüm yazıcıları
 ├── google_forum_islemleri/             # Google Form entegrasyonu
 │   ├── google_form_rutin_kontrol.py    # Otomatik form güncelleme kontrolü
 │   ├── ders_icerikleri_guncelle.py     # Ders verilerini formdan çekme
 │   └── hoca_icerikleri_guncelle.py     # Hoca verilerini formdan çekme
+├── pyproject.toml                      # Modern Python proje konfigürasyonu
 ├── readme_olustur.py                   # README.md oluşturma motoru
+├── buffered_writer.py                  # Buffered dosya yazıcısı
+├── folder_cache.py                     # Klasör cache yöneticisi
 ├── konfigurasyon.json                  # Proje ayarları (gitignore'da)
 ├── json_depo_bilgileri.txt             # JSON dosyalarının yolunu belirtir
-├── arayuz.bat / arayuz.sh              # Platformlara göre başlatma scriptleri
-└── gereksinimler.txt                   # Python bağımlılıkları
+└── arayuz.bat / arayuz.sh              # Platformlara göre başlatma scriptleri
 ```
 
 ## Temel Modüller
@@ -210,16 +213,37 @@ class XxxWindow(QDialog):
 3. **`ders_icerikleri_guncelle.py`:** Ders yorumları ve puanlarını işler
 4. **`google_form_rutin_kontrol.py`:** Periyodik olarak formları kontrol eder ve değişiklikleri uygular
 
+## Kurulum
+
+```bash
+# Projeyi kurmak için
+pip3 install .
+
+# Geliştirici modunda kurmak için (opsiyonel)
+pip3 install -e ".[dev]"
+```
+
 ## Çalıştırma
 
-### Geliştirme
+### Arayüz (GUI)
 ```bash
+# Kurulum sonrası komut satırından
+readme-arayuz
+
+# veya doğrudan Python ile
 cd readme_guncelleme_arayuzu_python
 python3 main.py
+
+# veya script ile (Windows/Linux)
+./arayuz.sh  # veya arayuz.bat
 ```
 
 ### README Oluşturma
 ```bash
+# Kurulum sonrası komut satırından
+readme-olustur
+
+# veya doğrudan Python ile
 python3 readme_olustur.py
 ```
 
@@ -249,9 +273,20 @@ python3 google_form_rutin_kontrol.py
 
 ## Bağımlılıklar
 
+### Zorunlu Bağımlılıklar (pyproject.toml)
 ```
-PyQt6         # GUI framework
-requests      # HTTP istekleri (Google Sheets CSV çekme)
+requests>=2.25.0    # HTTP istekleri (Google Sheets CSV çekme)
+PyQt6>=6.4.0        # GUI framework
+pandas>=2.0.0       # Veri işleme
+```
+
+### Geliştirici Bağımlılıkları (opsiyonel)
+```
+pyinstaller>=6.0.0  # Executable oluşturma
+pytest>=7.0.0       # Test framework
+black>=23.0.0       # Kod formatlama
+isort>=5.12.0       # Import sıralama
+mypy>=1.0.0         # Statik tip kontrolü
 ```
 
 ## İlişkili Proje

@@ -1,16 +1,29 @@
-readme_guncelleme_arayuzu
+# Python cache
 **/__pycache__
-dist
+
+# Build artifacts (PyInstaller)
+build/
+dist/
+main
+
+# Virtual environment
+venv/
+.venv/
+
+# JSON, CSV dosyaları (proje verileri için)
 **/*.json
 **/*.csv
-**/*.txt
-!gereksinimler.txt
-**/dist
-**/build
-**/venv/**
 
-# google forum islemleri ve kök dizindeki txt ve json dosyalarını koru
-!*.txt
-!*.json
-!google_forum_islemleri/*.txt
-!google_forum_islemleri/*.json
+# TXT dosyaları (log, temp vb.)
+**/*.txt
+
+# spec dosyaları
+**/*.spec
+
+# İstisnalar - repo'ya dahil edilmesi gereken dosyalar
+!pyproject.toml
+!AGENT.md
+!README.md
+!**/README.md
+!.gitignore
+!**/.gitignore

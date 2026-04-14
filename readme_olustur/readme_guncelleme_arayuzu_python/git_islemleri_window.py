@@ -1,6 +1,7 @@
 import sys
 import os
 import textwrap
+from typing import Callable, Optional
 from PyQt6.QtWidgets import QDialog, QVBoxLayout, QPushButton, QMessageBox, QApplication
 from degiskenler import *
 from helpers.progress_dialog_helper import CustomProgressDialogWithCancel
@@ -21,6 +22,20 @@ if _parent_path not in sys.path:
     sys.path.insert(0, _parent_path)
 
 
+class GitIslemButton(QPushButton):
+    """
+    Git işlemi için özelleştirilmiş buton sınıfı.
+    Hem veriyi tutar hem de görselleştirme (buton) mantığını encapsule eder.
+    """
+    def __init__(self, text: str, color: str, function: Callable, visible_condition: bool = True):
+        super().__init__(text)
+        self.visible_condition = visible_condition
+        
+        # Buton stil ve fonksiyon atamaları
+        self.setStyleSheet(color)
+        self.clicked.connect(function)
+
+
 class GitIslemleriWindow(QDialog):
     def __init__(self, parent=None):
         super(GitIslemleriWindow, self).__init__(parent)
@@ -32,47 +47,63 @@ class GitIslemleriWindow(QDialog):
         if os.path.exists(SELCUKLU_ICO_PATH):
             self.setWindowIcon(QIcon(SELCUKLU_ICO_PATH))
 
-        # Butonlar ve renkler
-        self.buttons = [
-            QPushButton("Google Form Güncelle"),
-            QPushButton("Readme Güncelle"),
-            QPushButton("Arayüz Kodlarını Güncelle"),
-            QPushButton("Dosya Değişikliklerini Github'dan Çek"),
-            QPushButton("Rutin Kontrolü Başlat"),
-            QPushButton("Hoca/Ders Adlarını Al (Google Form'a Kopyalamak İçin)"),
-            QPushButton("Değişiklikleri Github'a Pushla"),
-        ]
-
-        self.colors = [
-            "background-color: #C0392B; color: white;",  # Kırmızı
-            "background-color: #27AE60; color: white;",  # Yeşil
-            "background-color: #1ABC9C; color: white;",  # Açık Mavi/Turkuaz
-            "background-color: #F1C40F; color: black;",  # Sarı
-            "background-color: #FF69B4; color: white;",  # Pembe
-            "background-color: #8E44AD; color: white;",  # Mor
-            "background-color: #3498DB; color: white;",  # Mavi
-        ]
-
-        # Buton fonksiyonları
-        self.functions = [
-            self.update_google_form,
-            self.update_readme,
-            self.update_interface,
-            self.update_dosyalar_repo,
-            self.start_routine_check,
-            self.hoca_ders_adlari_ac,
-            self.push_changes,
-        ]
-        # Butonları dialog'a ekleme, renklendirme ve bağlama
-        for btn, color, func in zip(self.buttons, self.colors, self.functions):
-            btn.setStyleSheet(color)
-            self.layout.addWidget(btn)
-            btn.clicked.connect(func)
-
-        self.setLayout(self.layout)
-
         # İşletim sistemi kontrolü
         self.is_windows = sys.platform.startswith("win")
+
+        # Butonları başlat ve ekle
+        self.init_buttons()
+        
+        self.setLayout(self.layout)
+
+    def init_buttons(self):
+        """
+        Open/Closed Principle (OCP): Yeni buton eklemek için sadece bu listeye yeni bir 
+        GitIslemButton objesi eklemek yeterlidir.
+        """
+        is_frozen = getattr(sys, "frozen", False)
+        
+        buttons = [
+            GitIslemButton(
+                "Google Form Güncelle", 
+                "background-color: #C0392B; color: white;", 
+                self.update_google_form
+            ),
+            GitIslemButton(
+                "Readme Güncelle", 
+                "background-color: #27AE60; color: white;", 
+                self.update_readme
+            ),
+            GitIslemButton(
+                "Arayüz Kodlarını Güncelle", 
+                "background-color: #1ABC9C; color: white;", 
+                self.update_interface,
+                visible_condition=not is_frozen  # Paketlenmiş uygulamada gizle
+            ),
+            GitIslemButton(
+                "Dosya Değişikliklerini Github'dan Çek", 
+                "background-color: #F1C40F; color: black;", 
+                self.update_dosyalar_repo
+            ),
+            GitIslemButton(
+                "Rutin Kontrolü Başlat", 
+                "background-color: #FF69B4; color: white;", 
+                self.start_routine_check
+            ),
+            GitIslemButton(
+                "Hoca/Ders Adlarını Al (Google Form'a Kopyalamak İçin)", 
+                "background-color: #8E44AD; color: white;", 
+                self.hoca_ders_adlari_ac
+            ),
+            GitIslemButton(
+                "Değişiklikleri Github'a Pushla", 
+                "background-color: #3498DB; color: white;", 
+                self.push_changes
+            ),
+        ]
+
+        for btn in buttons:
+            if btn.visible_condition:
+                self.layout.addWidget(btn)
 
     def hoca_ders_adlari_ac(self):
         hoca_ders_adlari_window = HocaDersAdlariWindow(self)
@@ -163,7 +194,8 @@ class GitIslemleriWindow(QDialog):
         from google_forum_islemleri.hoca_icerikleri_guncelle import main as hoca_main
         from google_forum_islemleri.ders_icerikleri_guncelle import main as ders_main
         
-        yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
+        # INTERNAL_ROOT: Paketlenmiş kaynak dosyaları (google_forum_islemleri vs.)
+        yol = os.path.join(INTERNAL_ROOT, GOOGLE_FORM_ISLEMLERI)
         self.run_python_function(
             [hoca_main, ders_main],
             baslik="Google Form Güncelleniyor...",
@@ -285,7 +317,8 @@ class GitIslemleriWindow(QDialog):
         # Modülü dinamik olarak import et
         from google_forum_islemleri.google_form_rutin_kontrol import main as rutin_main
         
-        yol = os.path.join(BIR_UST_DIZIN, GOOGLE_FORM_ISLEMLERI)
+        # INTERNAL_ROOT: Paketlenmiş kaynak dosyaları (google_forum_islemleri vs.)
+        yol = os.path.join(INTERNAL_ROOT, GOOGLE_FORM_ISLEMLERI)
         self.run_python_function(
             [rutin_main],
             baslik="Rutin Kontrol Yapılıyor...",

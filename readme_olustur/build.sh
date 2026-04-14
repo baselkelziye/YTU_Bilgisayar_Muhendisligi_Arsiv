@@ -15,7 +15,6 @@ echo "========================================"
 
 # venv klasörünü kontrol et
 VENV_DIR="$SCRIPT_DIR/venv"
-REQUIREMENTS_FILE="$SCRIPT_DIR/gereksinimler.txt"
 
 if [ ! -d "$VENV_DIR" ]; then
     echo -e "${YELLOW}venv bulunamadı, oluşturuluyor...${NC}"
@@ -26,49 +25,58 @@ if [ ! -d "$VENV_DIR" ]; then
         exit 1
     fi
     echo -e "${GREEN}venv oluşturuldu.${NC}"
-    
-    # venv'i aktifle
-    source "$VENV_DIR/bin/activate"
-    
-    # requirements yükle
-    if [ -f "$REQUIREMENTS_FILE" ]; then
-        echo -e "${YELLOW}Gereksinimler yükleniyor...${NC}"
-        pip install --upgrade pip
-        pip install -r "$REQUIREMENTS_FILE"
-        pip install pyinstaller
-        
-        if [ $? -ne 0 ]; then
-            echo -e "${RED}Gereksinimler yüklenemedi!${NC}"
-            exit 1
-        fi
-        echo -e "${GREEN}Gereksinimler yüklendi.${NC}"
-    else
-        echo -e "${RED}gereksinimler.txt bulunamadı!${NC}"
-        exit 1
-    fi
-else
-    echo -e "${GREEN}venv mevcut, aktifleştiriliyor...${NC}"
-    source "$VENV_DIR/bin/activate"
 fi
 
-# spec_dosyalari dizinine geç
-SPEC_DIR="$SCRIPT_DIR/spec_dosyalari"
-cd "$SPEC_DIR"
+# venv'i aktifle
+source "$VENV_DIR/bin/activate"
 
-if [ ! -f "main.spec" ]; then
-    echo -e "${RED}main.spec bulunamadı!${NC}"
+# pip'i güncelle
+pip install --upgrade pip
+
+# Projeyi pyproject.toml ile kur (dev bağımlılıklarıyla birlikte)
+echo -e "${YELLOW}pyproject.toml ile kurulum yapılıyor...${NC}"
+pip install -e ".[dev]"
+
+if [ $? -ne 0 ]; then
+    echo -e "${RED}Kurulum başarısız!${NC}"
     exit 1
 fi
+echo -e "${GREEN}Kurulum tamamlandı.${NC}"
 
 echo -e "${YELLOW}Build başlıyor...${NC}"
 
-# Build al
-pyinstaller main.spec --distpath ../dist --workpath ../build --noconfirm
+# PyInstaller ile build al (pyproject.toml'daki konfigürasyona göre)
+pyinstaller \
+    --name main \
+    --onefile \
+    --console \
+    --distpath "$SCRIPT_DIR/dist" \
+    --workpath "$SCRIPT_DIR/build" \
+    --noconfirm \
+    --add-data "readme_guncelleme_arayuzu_python:." \
+    --add-data "google_forum_islemleri:google_forum_islemleri" \
+    --add-data "writers:writers" \
+    --add-data "readme_olustur.py:." \
+    --add-data "buffered_writer.py:." \
+    --add-data "folder_cache.py:." \
+    --hidden-import pandas \
+    --hidden-import numpy \
+    --hidden-import requests \
+    --hidden-import google_forum_islemleri.ders_icerikleri_guncelle \
+    --hidden-import google_forum_islemleri.hoca_icerikleri_guncelle \
+    --hidden-import google_forum_islemleri.google_form_rutin_kontrol \
+    --hidden-import readme_olustur \
+    --hidden-import buffered_writer \
+    --hidden-import folder_cache \
+    readme_guncelleme_arayuzu_python/main.py
 
 if [ $? -eq 0 ]; then
+    # Dosyayı kök dizine taşı
+    mv "$SCRIPT_DIR/dist/main" "$SCRIPT_DIR/main"
+    
     echo -e "${GREEN}========================================"
     echo -e "Build başarıyla tamamlandı!"
-    echo -e "Executable: $SCRIPT_DIR/dist/main"
+    echo -e "Executable: $SCRIPT_DIR/main"
     echo -e "========================================${NC}"
 else
     echo -e "${RED}Build başarısız oldu!${NC}"

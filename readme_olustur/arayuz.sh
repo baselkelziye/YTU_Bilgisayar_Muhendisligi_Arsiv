@@ -1,50 +1,75 @@
 #!/bin/bash
-clear
 
-# Python'un yüklü olup olmadığını kontrol edin
-if ! command -v python3 &> /dev/null
-then
-    echo "Python 3 bulunamadi. Lutfen https://www.python.org/downloads/ adresinden yukleyin." [[3]]
-    echo "Yukleme sirasinda 'Add Python to PATH' secenegini isaretlediginizden emin olun." [[5]]
-    exit 1
+# Script'in bulunduğu dizini belirle
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Headless mod kontrolü
+HEADLESS=false
+if [[ "$1" == "--headless" ]] || [[ "$1" == "-q" ]]; then
+    HEADLESS=true
 fi
 
-# venv modülünün yüklü olup olmadığını kontrol edin
-if ! python3 -c "import venv" &> /dev/null
-then
-    echo "venv modulu bulunamadi. Python'unuz ile birlikte otomatik olarak yuklenmesi gerekirdi."
-    echo "Yukleme sirasinda bir sorun olmus olabilir. Python'u tekrar yuklemeyi deneyin."
-    exit 1
+# Renk tanımları (headless modda devre dışı)
+if [ "$HEADLESS" = true ]; then
+    RED=''
+    GREEN=''
+    YELLOW=''
+    NC=''
+else
+    RED='\033[0;31m'
+    GREEN='\033[0;32m'
+    YELLOW='\033[1;33m'
+    NC='\033[0m'
+    clear
+    echo -e "${YELLOW}README Düzenleyici Arayüzü${NC}"
+    echo "========================================"
 fi
 
-# Proje dizinini belirleyin
-PROJECT_DIR="$(dirname "$0")"
-VENV_DIR="$PROJECT_DIR/venv"
-
-# Sanal ortam oluşturun
-if [ ! -d "$VENV_DIR" ]; then
-    echo "Sanal ortam olusturuluyor..."
-    python3 -m venv "$VENV_DIR"
-fi
-
-# Sanal ortamı etkinleştirin
-source "$VENV_DIR/bin/activate"
-
-# Gerekli kütüphaneleri yükleyin
-echo "Gerekli kutuphaneler kontrol ediliyor ve yukleniyor..."
-
-while IFS= read -r package
-do
-    if ! pip show "$package" &> /dev/null; then
-        echo "$package yukleniyor..."
-        pip install "$package"
+log() {
+    if [ "$HEADLESS" = false ]; then
+        echo -e "$1"
     fi
-done < "$PROJECT_DIR/gereksinimler.txt"
+}
 
-# readme_olusturma_arayuzu klasörüne çıkın ve main.py'yi çalıştırın
-cd "$PROJECT_DIR/readme_guncelleme_arayuzu_python"
-python3 main.py
-deactivate
+log_error() {
+    if [ "$HEADLESS" = false ]; then
+        echo -e "${RED}$1${NC}"
+    fi
+}
 
-echo "İşlem tamamlandı."
+EXECUTABLE="$SCRIPT_DIR/dist/main"
+
+# Executable var mı kontrol et, yoksa build al
+if [ ! -f "$EXECUTABLE" ]; then
+    log "${YELLOW}Executable bulunamadı, build alınıyor...${NC}"
+    
+    if [ "$HEADLESS" = true ]; then
+        bash "$SCRIPT_DIR/build.sh" > /dev/null 2>&1
+    else
+        bash "$SCRIPT_DIR/build.sh"
+    fi
+    
+    if [ $? -ne 0 ]; then
+        log_error "Build başarısız!"
+        exit 1
+    fi
+    
+    if [ ! -f "$EXECUTABLE" ]; then
+        log_error "Build sonrası executable bulunamadı!"
+        exit 1
+    fi
+fi
+
+# Arayüzü çalıştır
+log "${YELLOW}Arayüz başlatılıyor...${NC}"
+
+if [ "$HEADLESS" = true ]; then
+    # Headless mod: arka planda çalıştır ve hemen çık
+    nohup "$EXECUTABLE" > /dev/null 2>&1 &
+else
+    # Normal mod: uygulama kapanana kadar bekle
+    "$EXECUTABLE"
+fi
+
+log "${GREEN}İşlem tamamlandı.${NC}"
 exit 0

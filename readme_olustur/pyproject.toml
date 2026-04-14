@@ -1,0 +1,157 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ytu-arsiv-readme-olusturma"
+version = "1.0.0"
+description = "Üniversite ders notları arşivi için otomatik README.md dosyaları oluşturan araç seti"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "YTU Bilgisayar Mühendisliği Arşiv Ekibi" }
+]
+keywords = [
+    "readme",
+    "generator",
+    "university",
+    "course-notes",
+    "markdown",
+    "pyqt6"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: X11 Applications :: Qt",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Utilities"
+]
+
+dependencies = [
+    "requests>=2.25.0",
+    "PyQt6>=6.4.0",
+    "pandas>=2.0.0",
+    "pyperclip>=1.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pyinstaller>=6.0.0",
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+readme-olustur = "readme_olustur:main"
+
+[project.gui-scripts]
+readme-arayuz = "readme_guncelleme_arayuzu_python.main:main"
+
+[project.urls]
+Homepage = "https://github.com/kaayra2000/ytu_arsiv_readme_olusturma"
+Repository = "https://github.com/kaayra2000/ytu_arsiv_readme_olusturma"
+Issues = "https://github.com/kaayra2000/ytu_arsiv_readme_olusturma/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "readme_guncelleme_arayuzu_python",
+    "writers",
+    "google_forum_islemleri",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "readme_guncelleme_arayuzu_python/**/*.py",
+    "readme_guncelleme_arayuzu_python/**/*.qss",
+    "readme_guncelleme_arayuzu_python/ikonlar/**",
+    "writers/**/*.py",
+    "google_forum_islemleri/**/*.py",
+    "readme_olustur.py",
+    "buffered_writer.py",
+    "folder_cache.py",
+    "pyproject.toml",
+    "README.md",
+    "AGENT.md",
+    "arayuz.bat",
+    "arayuz.sh",
+    "arayuz_cmdsiz.bat",
+    "arayuz_cmdsiz.sh",
+    "build.sh",
+    "build.bat",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312", "py313"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.venv
+    | venv
+    | __pycache__
+    | build
+    | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = [".git", ".venv", "venv", "__pycache__", "build", "dist"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
+
+[tool.pyinstaller]
+# Ana giriş noktası
+entry_point = "readme_guncelleme_arayuzu_python/main.py"
+name = "main"
+console = true
+onefile = true
+
+# Dahil edilecek veri dosyaları
+datas = [
+    ["readme_guncelleme_arayuzu_python", "."],
+    ["google_forum_islemleri", "google_forum_islemleri"],
+    ["writers", "writers"],
+    ["readme_olustur.py", "."],
+    ["buffered_writer.py", "."],
+    ["folder_cache.py", "."],
+]
+
+# Gizli import'lar
+hiddenimports = [
+    "pandas",
+    "numpy",
+    "requests",
+    "google_forum_islemleri.ders_icerikleri_guncelle",
+    "google_forum_islemleri.hoca_icerikleri_guncelle",
+    "google_forum_islemleri.google_form_rutin_kontrol",
+    "readme_olustur",
+    "buffered_writer",
+    "folder_cache",
+]
+
+# Build seçenekleri
+upx = true
+strip = false
+debug = false
