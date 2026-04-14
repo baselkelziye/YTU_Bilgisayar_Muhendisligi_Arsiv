@@ -167,4 +167,4 @@ def main(eski_yil: int = 2024, yeni_yil: int = 2025) -> None:
 
 
 if __name__ == "__main__":
-    main(eski_yil=2024, yeni_yil=2025)
+    main(eski_yil=2025, yeni_yil=2026)

@@ -1,5 +1,8 @@
 name: Release Build
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -59,4 +62,32 @@ jobs:
         with:
           name: main-linux
           path: main
+
+  publish-release:
+    runs-on: ubuntu-latest
+    needs:
+      - build-windows
+      - build-ubuntu
+    steps:
+      - name: Download Windows Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: main-windows
+          path: release-assets
+
+      - name: Download Ubuntu Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: main-linux
+          path: release-assets
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
+          files: |
+            release-assets/main.exe
+            release-assets/main
 
