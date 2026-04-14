@@ -7,12 +7,12 @@ import pyperclip
 I_ZAMAN       = 0
 I_MEZUN       = 1
 I_CALISIYOR   = 2
-I_TURKIYE     = 3
-I_POZISYON    = 4
-I_OKUL        = 5
-I_SIRKET      = 6
-I_CALISMA_DUR = 7
-I_TECRUBE     = 8
+I_TECRUBE     = 3
+I_TURKIYE     = 4
+I_POZISYON    = 5
+I_OKUL        = 6
+I_SIRKET      = 7
+I_CALISMA_DUR = 8
 ESKI_MAAS     = 9
 ZAMLI_MAAS    = 10
 
@@ -50,8 +50,9 @@ def issizlik_oranlarini_yazdir(df: pd.DataFrame) -> None:
     # Oranlar; bölme hatasını önlemek için sıfır kontrolü yap
     mezun_issiz_orani = len(mezun_calismayan_df) / len(mezun_df) * 100 if len(mezun_df) > 0 else 0
     mezun_olmayan_issiz_orani = len(mezun_olmayan_calismayan_df) / len(mezun_olmayan_df) * 100 if len(mezun_olmayan_df) > 0 else 0
-    # Yurt dışında çalışanlar / tüm çalışanlar
-    yurtdisi_orani = len(df[df.iloc[:, I_TURKIYE] == "Evet"]) / len(df[df.iloc[:, I_CALISIYOR] == "Evet"]) * 100
+    # Yurt dışında çalışanlar / tüm çalışanlar (Türkiye'de çalışmayanlar)
+    calisanlar = df[df.iloc[:, I_CALISIYOR] == "Evet"]
+    yurtdisi_orani = len(calisanlar[calisanlar.iloc[:, I_TURKIYE] == "Hayır"]) / len(calisanlar) * 100 if len(calisanlar) > 0 else 0
 
     print(f"""
 | **Durum**                        | **Oran (%)**       |
