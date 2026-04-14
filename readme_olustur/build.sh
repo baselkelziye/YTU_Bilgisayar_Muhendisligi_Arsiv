@@ -31,11 +31,11 @@ fi
 source "$VENV_DIR/bin/activate"
 
 # pip'i güncelle
-pip install --upgrade pip
+"$VENV_DIR/bin/pip" install --upgrade pip
 
 # Projeyi pyproject.toml ile kur (dev bağımlılıklarıyla birlikte)
 echo -e "${YELLOW}pyproject.toml ile kurulum yapılıyor...${NC}"
-pip install -e ".[dev]"
+"$VENV_DIR/bin/pip" install -e ".[dev]"
 
 if [ $? -ne 0 ]; then
     echo -e "${RED}Kurulum başarısız!${NC}"
@@ -46,7 +46,7 @@ echo -e "${GREEN}Kurulum tamamlandı.${NC}"
 echo -e "${YELLOW}Build başlıyor...${NC}"
 
 # PyInstaller ile build al (pyproject.toml'daki konfigürasyona göre)
-pyinstaller \
+"$VENV_DIR/bin/pyinstaller" \
     --name main \
     --onefile \
     --console \

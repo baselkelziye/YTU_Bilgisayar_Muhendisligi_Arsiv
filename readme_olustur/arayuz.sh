@@ -37,7 +37,7 @@ log_error() {
     fi
 }
 
-EXECUTABLE="$SCRIPT_DIR/dist/main"
+EXECUTABLE="$SCRIPT_DIR/main"
 
 # Executable var mı kontrol et, yoksa build al
 if [ ! -f "$EXECUTABLE" ]; then

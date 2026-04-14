@@ -153,9 +153,11 @@ def main(eski_yil: int = 2024, yeni_yil: int = 2025) -> None:
     buffer = io.StringIO()
     sys.stdout = buffer
 
+    print(f"<details>\n<summary>{eski_yil}-{yeni_yil} Yılı İstatistikleri</summary>\n")
     issizlik_oranlarini_yazdir(df)
     maas_analizini_yazdir(df, eski_yil, yeni_yil)
     katilimci_sayisini_yazdir(df, yeni_yil, eski_yil)
+    print("\n</details>")
 
     sys.stdout = sys.__stdout__
     cikti = buffer.getvalue()
