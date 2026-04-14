@@ -1,0 +1,4 @@
+# Lisans Ders Planı / Modül Kitapçığı
+Yurt içi ve yurt dışı yüksek lisans başvurularında talep edilen ders planı (course plan) ve modül kitapçığı (module handbook) gibi belgeleri temsilen hazırlanmıştır. **RESMİ BELGE NİTELİĞİ TAŞIMAZ!**
+## Dikkat ! ##
+Bölüm ve fakülte tarafından alınan kararlar ile ders planı değişebilmektedir. Bu sebeple belgenin güncelliğini transkriptiniz ile kıyaslayarak kontrol etmeniz tavsiye edilir. Lütfen belgeyi kullanmadan önce bütün kurs isimlerini ve kurs kredilerini transkriptiniz ile kontrol ediniz ve eksikler varsa ekleyiniz/düzenleyiniz. Özellikle mesleki seçmeliler kısmında eksikler olabilir.
