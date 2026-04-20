@@ -146,6 +146,7 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Emperor_**: Güzel bir ders, anlatılanlar işe yarıyor, vize ve final son derece kolay. projesine dikkat etmek lazım. Çanı iyi. MSA veriyor. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Msa Çıkmış Soruyor Kanka Ya_**: ÇIKMIŞ SORMUYOR KARDEŞİM BOŞUNA ÜMİTLENME. O DEVİR BİTTİ. WP GRUBUNDA BAZI D4NG4L4KL4R " kordoşom mesea çokmoş soroyor " der ise ÜMİTLENME. ADAM ÇIKMIŞ SORMUYOR SORMUYOR SORMUYOR !!! yeter.. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆

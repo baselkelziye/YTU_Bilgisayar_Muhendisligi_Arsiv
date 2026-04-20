@@ -497,6 +497,130 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ℹ️  Anket sonuçları: 41 kişi üzerinden hesaplanmıştır. 2025 maaş bilgisi verilmeyen kayıtlarda 2025 maaşı sütununda 2024 maaş bilgileri kullanılmıştır.
 
 </details>
+<details>
+<summary>2025-2026 Yılı İstatistikleri</summary>
+
+
+| **Durum**                        | **Oran (%)**       |
+|----------------------------------|--------------------| 
+| Mezunların % kaçı işsiz               | %13.33 |
+| Mezun olmayanların % kaçı işsiz       | %43.75 |
+| Yurt dışında çalışmayanların oranı    | %89.58 |
+
+
+### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı
+
+| Ortalama Maaş 2025 | Ortalama Maaş 2026 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 85898              | 105179              | 22.45                |
+
+
+
+##### Şirketlere Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Şirket Adı             |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Garanti BBVA Teknoloji |                             76000 |                           97666.7 |                  28.51 |
+| TÜBİTAK                |                            112250 |                          127000   |                  13.14 |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Pozisyon Alanı         |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Araştırma Görevlisi    |                             72000 |                             85500 |                  18.75 |
+| Backend Geliştirici    |                             73250 |                             99500 |                  35.84 |
+| Bulut Mühendisi        |                             50000 |                             58000 |                  16    |
+| Full Stack Geliştirici |                             66400 |                             86895 |                  30.87 |
+| Gömülü                 |                            100000 |                            127500 |                  27.5  |
+| IT Governance          |                             85000 |                            115000 |                  35.29 |
+| Kriptoloji             |                            116750 |                            126000 |                   7.92 |
+| Mobil Geliştirici      |                             70000 |                             90000 |                  28.57 |
+| Product Manager        |                            140000 |                            180000 |                  28.57 |
+| Siber Güvenlik         |                             82500 |                            102500 |                  24.24 |
+| Veri Bilimci           |                             84000 |                            110000 |                  30.95 |
+| Veri Mühendisi         |                            160000 |                            240000 |                  50    |
+| Yapay Zeka             |                            128333 |                            156667 |                  22.08 |
+| Yazılım Test           |                            100000 |                            116000 |                  16    |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Tecrübe Süresi   |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 0 - 6 ay         |                           90000   |                          108000   |                  20    |
+| 1 yıl - 2 yıl    |                           66875   |                           81687.5 |                  22.15 |
+| 2 yıl - 4 yıl    |                           92553.6 |                          121357   |                  31.12 |
+| 4  yıl - 8 yıl   |                          200000   |                          230000   |                  15    |
+| 6 ay - 1 yıl     |                           76857.1 |                          104136   |                  35.49 |
+
+### Tam Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı
+
+| Ortalama Maaş 2025 | Ortalama Maaş 2026 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 52666              | 66800              | 26.84                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Pozisyon Alanı         |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Full Stack Geliştirici |                             45000 |                             60000 |                  33.33 |
+| Veri Mühendisi         |                             63000 |                             85000 |                  34.92 |
+| Yapay Zeka             |                             50000 |                             70000 |                  40    |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Tecrübe Süresi   |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 1 yıl - 2 yıl    |                             54000 |                             72500 |                  34.26 |
+| 2 yıl - 4 yıl    |                             50000 |                             70000 |                  40    |
+
+
+### Yarı Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
+
+
+##### Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı
+
+| Ortalama Maaş 2025 | Ortalama Maaş 2026 | Maaş Artış Oranı (%) |
+|-------------------|--------------------|-----------------------|
+| 20500              | 31500              | 53.66                |
+
+
+
+##### Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Pozisyon Alanı   |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| Kriptoloji       |                             21000 |                             38000 |                  80.95 |
+| Yapay Zeka       |                             20000 |                             25000 |                  25    |
+
+
+
+##### Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+| Tecrübe Süresi   |   2025 Maaşı (Aylık net ortalama) |   2026 Maaşı (Aylık net ortalama) |   Maaş Artış Oranı (%) |
+|:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
+| 1 yıl - 2 yıl    |                             21000 |                             38000 |                  80.95 |
+| 6 ay - 1 yıl     |                             20000 |                             25000 |                  25    |
+
+
+
+ℹ️  Anket sonuçları: 61 kişi üzerinden hesaplanmıştır. 2026 maaş bilgisi verilmeyen kayıtlarda 2026 maaşı sütununda 2025 maaş bilgileri kullanılmıştır.
+
+</details>
+
 </details>
 
 <details>
@@ -1791,6 +1915,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Emperor_**: Güzel bir ders, anlatılanlar işe yarıyor, vize ve final son derece kolay. projesine dikkat etmek lazım. Çanı iyi. MSA veriyor. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Msa Çıkmış Soruyor Kanka Ya_**: ÇIKMIŞ SORMUYOR KARDEŞİM BOŞUNA ÜMİTLENME. O DEVİR BİTTİ. WP GRUBUNDA BAZI D4NG4L4KL4R " kordoşom mesea çokmoş soroyor " der ise ÜMİTLENME. ADAM ÇIKMIŞ SORMUYOR SORMUYOR SORMUYOR !!! yeter.. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -2853,6 +2978,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ifdöngüsü_**: 10 sene önce yazdığı ders notlarını örneklerine kadar birebir aynı şekilde tahtaya geçirir, öğrencilere “kırmızılı” gibi üzerindeki kıyafet rengine göre hitap eder, maillere dönmez, sınavları son gün açıklar, harf notunu düzgün yapmaz. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Sivrisineksaz_**: Çok fazla söze gerek yok --> ekşi + ytuce>personel>emeğigeçenler ℹ️ Yorum **03.2025** tarihinde yapılmıştır.
   - 👤 **_Sts_**: Milattan önce kalmış müfredatı ve saçma sınavları ile bir daha ders almayacağım biri. Lütfen emekli olsun. ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
+  - 👤 **_Farazi_**: Lablarda yapılan quizler yerine lablarda yapılan uygulama derslerine dönmeli diye düşünürken bir taraftan da bilimsel hazırlıklara karşı da hem yoklama hem ders zorluğu hem de genel olarak verdiği herhangi bir derste notlandırma konusunda "gaddar" olduğunu görünce hocanın ilk seçeneği değerlendirme olasılığının düşük olduğunu anlıyorum. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Algoritma Analizi](#-algoritma-analizi)
@@ -3209,7 +3335,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Ufouser_**: Donanım derslerine girer ders anlatışı diksiyonu gayet iyidir ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
   - 👤 **_Nakliyeci Sefer_**: Dersine geç gelir (gelirse şayet). ℹ️ Yorum **07.2024** tarihinde yapılmıştır.
   - 👤 **_Med_**: Dönemin yarısı yurtdışında, yoklama listesinden öğrencileri tahtaya kaldırıyor, harf aralıklarıyla oynuyor bazen, ama iyi bi hoca ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_R3_**: Ders anlatımını iyi ( dönemin yarısında derse gelmiyor ) ama derste biri bir şeyi anlamayıp sorduğunda içinden “ Bunu mu anlamadın yavrum mal mısın “ diye geçiriyor muhtemelen verdiği yanıtlar biraz küçük düşürücü oluyor . ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_R3_**: Ders anlatımını iyi ( dönemin yarısında derse gelmiyor ) ama derste biri bir şeyi anlamayıp sorduğunda içinden “ Bunu mu anlamadın yavrum [sansürlendi] mısın “ diye geçiriyor muhtemelen verdiği yanıtlar biraz küçük düşürücü oluyor . ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Bebek Mavisi_**: rastgele öğrencilerin rastgele yorumlarına takılır, tuhaf kararlar alır. aldığı her karardan sonra şimdi ne gerek vardı dersin. dönemin başında dediğiyle sonunda olanla alakası olmaz. devre dersi alacaksanız gökhan hocadan almayı özen gösterin. en komik anı online derste öğrencilere sinirlenip dersi hızlı hızlı slaytları okuyup işte bu böyle diye anlatıp bitirmesi. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Sisifos_**: Bölüm için asla yeterli değil, çıkmışlardan sorar, derslere kafasına göre gelmez, son gün vizenin ne oranda etkilediğini değiştirir, 2 ay vize okumaz,ai chatbot yerini kolayca doldurabilir diye düşünüyorum boş egosu da çekilmez en azından :d ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
