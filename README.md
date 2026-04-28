@@ -503,9 +503,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | **Durum**                        | **Oran (%)**       |
 |----------------------------------|--------------------| 
-| Mezunların % kaçı işsiz               | %13.33 |
+| Mezunların % kaçı işsiz               | %18.37 |
 | Mezun olmayanların % kaçı işsiz       | %43.75 |
-| Yurt dışında çalışmayanların oranı    | %89.58 |
+| Yurt dışında çalışmayanların oranı    | %89.80 |
 
 
 ### Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
@@ -515,7 +515,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 | Ortalama Maaş 2025 | Ortalama Maaş 2026 | Maaş Artış Oranı (%) |
 |-------------------|--------------------|-----------------------|
-| 85898              | 105179              | 22.45                |
+| 85689              | 105097              | 22.65                |
 
 
 
@@ -544,7 +544,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 | Siber Güvenlik         |                             82500 |                            102500 |                  24.24 |
 | Veri Bilimci           |                             84000 |                            110000 |                  30.95 |
 | Veri Mühendisi         |                            160000 |                            240000 |                  50    |
-| Yapay Zeka             |                            128333 |                            156667 |                  22.08 |
+| Yapay Zeka             |                            116000 |                            143000 |                  23.28 |
 | Yazılım Test           |                            100000 |                            116000 |                  16    |
 
 
@@ -555,7 +555,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 |:-----------------|----------------------------------:|----------------------------------:|-----------------------:|
 | 0 - 6 ay         |                           90000   |                          108000   |                  20    |
 | 1 yıl - 2 yıl    |                           66875   |                           81687.5 |                  22.15 |
-| 2 yıl - 4 yıl    |                           92553.6 |                          121357   |                  31.12 |
+| 2 yıl - 4 yıl    |                           91650   |                          120067   |                  31.01 |
 | 4  yıl - 8 yıl   |                          200000   |                          230000   |                  15    |
 | 6 ay - 1 yıl     |                           76857.1 |                          104136   |                  35.49 |
 
@@ -587,7 +587,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 | 1 yıl - 2 yıl    |                             54000 |                             72500 |                  34.26 |
 | 2 yıl - 4 yıl    |                             50000 |                             70000 |                  40    |
 
-
 ### Yarı Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi
 
 
@@ -615,9 +614,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 | 1 yıl - 2 yıl    |                             21000 |                             38000 |                  80.95 |
 | 6 ay - 1 yıl     |                             20000 |                             25000 |                  25    |
 
-
-
-ℹ️  Anket sonuçları: 61 kişi üzerinden hesaplanmıştır. 2026 maaş bilgisi verilmeyen kayıtlarda 2026 maaşı sütununda 2025 maaş bilgileri kullanılmıştır.
+ℹ️  Anket sonuçları: 65 kişi üzerinden hesaplanmıştır. 2026 maaş bilgisi verilmeyen kayıtlarda 2026 maaşı sütununda 2025 maaş bilgileri kullanılmıştır.
 
 </details>
 
