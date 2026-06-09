@@ -3501,6 +3501,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_R3_**: Olasılığı Oğuz hocadan aldım . İngilizcesi maalesef kötü , ilk 2 vizede sınıf ortalaması çok yüksekti ve vizelerde 2-3 soruda aynı şık vardı bazı kitapçıklarda fazladan soru vardı . Ne denir bilemiyorum , hocalığı dümenden yapıyor bari vizeleri hazırlarken biraz özen göstersin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_?????_**: Her sınavında istisnasız 3-4 yanlış soru olur, bomboş olasılık dersinin her test sınavında istikrarla bu kadar yanlış soru sorabilmek büyük başarı, insanın yaptığı işe biraz saygısı olmalı bence. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_I Am Only Sleeping_**: Derste çok güzel uyutması ile meşhur olan hocaydı. ℹ️ Yorum **05.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
@@ -3577,7 +3578,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 36 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 37 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3603,8 +3604,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
       - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-        - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
@@ -4707,6 +4708,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Büyücü_**: Sıkıntının ingilizce karşılığı problemdir, bu bölümdeki karşılığı da … ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
   - 👤 **_Window Size_**: viba alacak yarışmacı arkadaşlara başarılar bi yandan da geçmiş olsun ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
   - 👤 **_Tırt_**: Bir kişinin laptopuna yapıştırdığı sticker sayısından ne ve nasıl biri olduğunu bilirsiniz az çok.. fazla söze gerek yok ℹ️ Yorum **02.2026** tarihinde yapılmıştır.
+  - 👤 **_[Sansürlendi] Zct_**: 2020 pandemi zamanında hocanın twitterini paylaşmışlardı twitteri de herkese açıktı, nerde [sansürlendi] varsa takip ediyordu, çok komikti. ℹ️ Yorum **05.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Bilgisayar Bilimlerine Giriş](#-bilgisayar-bilimlerine-giriş--en-popüler-ders-28-oy)
@@ -4717,7 +4719,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 19 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 20 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -4738,7 +4740,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 11 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+        - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 </details>
