@@ -16,7 +16,7 @@
 **Proje Zorluğu:** Orta seviyede idi, 1 haftada bitirdim.
 
 ## Ödev Tanımı
-C dili ile bir Panel De Pon oyunu tasarlama
+C dili ile standart kütüphaneyi kullanarak bir Panel De Pon oyunu tasarlama
 
 ## Alınan Not
 * Toplam: 100
