@@ -8,5 +8,9 @@ Yüksek lisans başvurusu zamanında bazı üniversitelerin müfredat bilgisi i�
 ## readme taslakları
 Ödev, not gibi katkıları daha standart bir biçimde takip edilebilir yapmak için kullanılacak taslaklar.
 
+## talimat_taslaklari
+Altyazı, metin veya benzeri kaynaklardan düzenli çıktı üretmek için kullanılacak talimat taslakları.
+
+
 ## staj_defteri_taslaklari
 Staj defteri hazırlamada referans alınabilecek taslaklar.
