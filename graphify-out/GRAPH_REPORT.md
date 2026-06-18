@@ -1,16 +1,16 @@
 # Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-06-18)
 
 ## Corpus Check
-- 3581 files · ~14,380,689 words
+- 3581 files · ~14,380,726 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 25816 nodes · 37775 edges · 4460 communities (2792 shown, 1668 thin omitted)
+- 25816 nodes · 37775 edges · 4459 communities (2790 shown, 1669 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 2489 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `49d8fd85`
+- Built from commit: `6f85fcd3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3195,7 +3195,6 @@
 - [[_COMMUNITY_Community 4075|Community 4075]]
 - [[_COMMUNITY_Community 4076|Community 4076]]
 - [[_COMMUNITY_Community 4077|Community 4077]]
-- [[_COMMUNITY_Community 4078|Community 4078]]
 - [[_COMMUNITY_Community 4079|Community 4079]]
 - [[_COMMUNITY_Community 4080|Community 4080]]
 - [[_COMMUNITY_Community 4081|Community 4081]]
@@ -3390,7 +3389,7 @@
 - 1-file cycle: `Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py -> Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py`
 - 1-file cycle: `readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py -> readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py`
 
-## Communities (4460 total, 1668 thin omitted)
+## Communities (4459 total, 1669 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.07
@@ -3422,7 +3421,7 @@ Nodes (4): FXML, FXML, AdminDashboardGUI, AdminStartGUI
 
 ### Community 7 - "Community 7"
 Cohesion: 0.05
-Nodes (142): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+134 more)
+Nodes (144): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+136 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.04
@@ -3465,8 +3464,8 @@ Cohesion: 0.13
 Nodes (5): Override, String, Timestamp, BeforeAll, Customer
 
 ### Community 18 - "Community 18"
-Cohesion: 0.05
-Nodes (36): FXML, Override, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+28 more)
+Cohesion: 0.04
+Nodes (41): Override, ResourceBundle, String, URL, FXML, Override, ResourceBundle, URL (+33 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.04
@@ -3493,8 +3492,8 @@ Cohesion: 0.09
 Nodes (11): closeEventHandler(), Pencere kapatma olayını yönetir., BaseKatkidaBulunanWindow, KatkidaBulunanEkleWindow, Değişiklik olup olmadığını kontrol et, Başlangıç değerlerini kaydet, İletişim bilgilerini karşılaştırma için al, KatkidaBulunanDuzenleWindow (+3 more)
 
 ### Community 25 - "Community 25"
-Cohesion: 0.22
-Nodes (6): Override, String, String, Mage, Character, Warrior
+Cohesion: 0.33
+Nodes (4): Override, String, Mage, Character
 
 ### Community 26 - "Community 26"
 Cohesion: 0.14
@@ -3505,8 +3504,8 @@ Cohesion: 0.18
 Nodes (20): APIResponse, DeleteMapping, GetMapping, Integer, MovieFrontDTO, MovieRepository, Page, PutMapping (+12 more)
 
 ### Community 28 - "Community 28"
-Cohesion: 0.18
-Nodes (14): Boolean, Long, NotificationService, Override, Page, PrivateMessageDTO, String, Transactional (+6 more)
+Cohesion: 0.12
+Nodes (23): Long, Modifying, Optional, Page, Pageable, PrivateMessage, Query, User (+15 more)
 
 ### Community 29 - "Community 29"
 Cohesion: 0.11
@@ -3537,12 +3536,12 @@ Cohesion: 0.09
 Nodes (42): _(), a(), ae, b(), c(), ce(), d(), E() (+34 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.16
-Nodes (10): City, CRS, HashMap, Hospital, Integer, String, DoctorManager, HospitalManager (+2 more)
+Cohesion: 0.11
+Nodes (15): City, CRS, HashMap, Hospital, Integer, String, CRS, Hospital (+7 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.07
-Nodes (27): allowedAttribute(), applyStyle(), applyStyleOnLoad(), computeAutoPlacement(), _createClass(), _defineProperties(), _defineProperty(), destroy() (+19 more)
+Cohesion: 0.08
+Nodes (19): allowedAttribute(), attachToScrollParents(), _createClass(), _defineProperties(), _defineProperty(), destroy(), disableEventListeners(), getSpecialTransitionEndEvent() (+11 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.13
@@ -3597,8 +3596,8 @@ Cohesion: 0.15
 Nodes (44): clearScreen(), evaluate(), main(), Node, AugmentedMatrix, acsec(), actan(), asec() (+36 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.08
-Nodes (20): ArrayList, Connection, Dealer, String, Vehicle, VehicleStock, AfterAll, BeforeAll (+12 more)
+Cohesion: 0.12
+Nodes (14): ArrayList, Connection, Dealer, String, Vehicle, VehicleStock, ArrayList, Connection (+6 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.14
@@ -3705,8 +3704,8 @@ Cohesion: 0.07
 Nodes (13): String, User, String, User, Override, String, User, String (+5 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.06
-Nodes (82): FILE, stbi_io_callbacks, stbi_uc, stbi__uint16, STBIDEF, resample_row_1(), stbi__blinn_8x8(), stbi__clamp() (+74 more)
+Cohesion: 0.07
+Nodes (80): FILE, stbi_io_callbacks, stbi_uc, stbi__uint16, STBIDEF, resample_row_1(), stbi__blinn_8x8(), stbi__clamp() (+72 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -3765,8 +3764,8 @@ Cohesion: 0.06
 Nodes (36): Bilgisayar Bilimlerine Giriş, AEL, Fatih Amasyalı, Göksel Biricik, Hafıza İrem Türkmen, Mehmet Amaç Güvensan, MFA, Atatürk İlkeleri ve İnkılâp Tarihi 2 (+28 more)
 
 ### Community 95 - "Community 95"
-Cohesion: 0.13
-Nodes (22): Integer, MovieDTO, MovieFrontDTO, MovieFrontResponse, Page, String, GenreRepository, Integer (+14 more)
+Cohesion: 0.14
+Nodes (21): Integer, MovieDTO, MovieFrontDTO, MovieFrontResponse, Page, String, GenreRepository, Integer (+13 more)
 
 ### Community 96 - "Community 96"
 Cohesion: 0.17
@@ -3877,8 +3876,8 @@ Cohesion: 0.07
 Nodes (16): Override, String, Override, String, Override, String, String, String (+8 more)
 
 ### Community 124 - "Community 124"
-Cohesion: 0.08
-Nodes (15): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+7 more)
+Cohesion: 0.09
+Nodes (12): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+4 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.21
@@ -3945,8 +3944,8 @@ Cohesion: 0.15
 Nodes (21): csv_kontrol_et(), guncelle_ders_yildizlari(), guncelle_ogrenci_gorusleri(), main(), Ders içeriklerini Google Form verilerinden güncelleyen ana fonksiyon.     Bu fo, yillaraGoreYildizSayisiDondur(), check_for_updates(), execute_command() (+13 more)
 
 ### Community 141 - "Community 141"
-Cohesion: 0.14
-Nodes (28): attachToScrollParents(), computeStyle(), findCommonOffsetParent(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent() (+20 more)
+Cohesion: 0.16
+Nodes (26): computeStyle(), findCommonOffsetParent(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent(), getOffsetParent() (+18 more)
 
 ### Community 142 - "Community 142"
 Cohesion: 0.22
@@ -3969,8 +3968,8 @@ Cohesion: 0.13
 Nodes (10): String, Customer, LinkedList, String, SuppressWarnings, Test, String, Customer (+2 more)
 
 ### Community 147 - "Community 147"
-Cohesion: 0.13
-Nodes (15): CRS, Scanner, ArrayList, CRS, HospitalMenu, Patient, Rendezvous, Scanner (+7 more)
+Cohesion: 0.36
+Nodes (6): CRS, Scanner, CRS, Scanner, AdminMenu, UserMenu
 
 ### Community 148 - "Community 148"
 Cohesion: 0.07
@@ -4097,16 +4096,16 @@ Cohesion: 0.21
 Nodes (14): APIResponse, Boolean, DeleteMapping, Integer, MovieRepository, PostMapping, PutMapping, ResponseEntity (+6 more)
 
 ### Community 181 - "Community 181"
-Cohesion: 0.17
-Nodes (15): Integer, Page, Pageable, Integer, Page, Pageable, Movie, Page (+7 more)
+Cohesion: 0.16
+Nodes (16): Integer, Page, Pageable, Integer, Page, Pageable, Movie, Page (+8 more)
 
 ### Community 182 - "Community 182"
 Cohesion: 0.20
 Nodes (9): Boolean, Integer, Long, Movie, MovieCommentDTO, MovieFrontDTO, Page, String (+1 more)
 
 ### Community 183 - "Community 183"
-Cohesion: 0.23
-Nodes (3): BigDecimal, String, Vehicle
+Cohesion: 0.08
+Nodes (14): BigDecimal, Connection, String, Warehouse, BigDecimal, String, AfterAll, BeforeAll (+6 more)
 
 ### Community 184 - "Community 184"
 Cohesion: 0.23
@@ -4313,8 +4312,8 @@ Cohesion: 0.11
 Nodes (17): compilerOptions, allowImportingTsExtensions, isolatedModules, lib, module, moduleDetection, moduleResolution, noEmit (+9 more)
 
 ### Community 235 - "Community 235"
-Cohesion: 0.16
-Nodes (14): gomme_modeli_basari_puanlari_cizdir(), gomme_modeli_conf_matris_cizdir(), gomme_modeli_f1_puanlari_cizdir(), gomme_modeli_precision_puanlari_cizdir(), gomme_modeli_recall_puanlari_cizdir(), Her bir gömme modelinin makine öğrenmesi modellerine ait precision puanlarını çi, Her bir gömme modelinin makine öğrenmesi modellerine ait recall puanlarını çizdi, Her bir gömme modelinin makine öğrenmesi modellerine ait F1 puanlarını çizdirir. (+6 more)
+Cohesion: 0.10
+Nodes (20): gomme_modeli_basari_puanlari_cizdir(), gomme_modeli_conf_matris_cizdir(), gomme_modeli_precision_puanlari_cizdir(), gomme_modeli_recall_puanlari_cizdir(), model_shot_puanlari_cizdir(), Her bir gömme modelinin makine öğrenmesi modellerine ait precision puanlarını çi, Her bir gömme modelinin makine öğrenmesi modellerine ait recall puanlarını çizdi, Belirli bir gömme modeli ve makine öğrenmesi modeline ait confusion matrix'i çiz (+12 more)
 
 ### Community 236 - "Community 236"
 Cohesion: 0.13
@@ -4730,7 +4729,7 @@ Nodes (5): Override, ResourceBundle, URL, AddHospitalGUI, DeleteHospitalGUI
 
 ### Community 342 - "Community 342"
 Cohesion: 0.06
-Nodes (31): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Freelance ve Mezun Değil için Maaş Analizi (+23 more)
+Nodes (32): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı (+24 more)
 
 ### Community 343 - "Community 343"
 Cohesion: 0.11
@@ -4833,8 +4832,8 @@ Cohesion: 0.26
 Nodes (3): Person, String, Car
 
 ### Community 369 - "Community 369"
-Cohesion: 0.06
-Nodes (15): String, Gui, String, String, Gui, String, Connection, String (+7 more)
+Cohesion: 0.08
+Nodes (12): String, Connection, String, Connection, String, Connection, String, JFrame (+4 more)
 
 ### Community 370 - "Community 370"
 Cohesion: 0.19
@@ -5009,8 +5008,8 @@ Cohesion: 0.45
 Nodes (4): List, Main, String, Team
 
 ### Community 417 - "Community 417"
-Cohesion: 0.18
-Nodes (26): main(), MainMenu(), power(), print_matrix(), func, Gauss-Seidal, main(), Bisection() (+18 more)
+Cohesion: 0.19
+Nodes (27): main(), MainMenu(), power(), print_matrix(), func, Gauss-Seidal, main(), Bisection() (+19 more)
 
 ### Community 418 - "Community 418"
 Cohesion: 0.07
@@ -5501,8 +5500,8 @@ Cohesion: 0.22
 Nodes (5): Veri kümesini, Group kolonundaki değerlerin oranlarını koruyarak böler.      Arg, Kaggle veri kümesini indirir ve döndürür.      Args:         veri_kumesi_adi (st, veri_kumesi_oku(), veri_kumesini_oranli_bol(), DataFrame
 
 ### Community 557 - "Community 557"
-Cohesion: 0.18
-Nodes (12): model_shot_puanlari_cizdir(), Modellerin zero-shot, 3-shot ve 5-shot doğruluk oranlarını gösteren bar chart ol, get_shot_file_dir(), gomme_dizin_adi_al(), gomme_dizini_al(), kok_dizini_al(), Bu fonksiyon dosyanın bulunduğu dizini döndürür., Bu fonksiyon veri kümelerinin bulunduğu dizini döndürür. (+4 more)
+Cohesion: 0.29
+Nodes (8): gomme_dizin_adi_al(), gomme_dizini_al(), kok_dizini_al(), Bu fonksiyon dosyanın bulunduğu dizini döndürür., Bu fonksiyon veri kümelerinin bulunduğu dizini döndürür., Bu fonksiyon gomme dizin adını döndürür., Bu fonksiyon gomme dizinini döndürür., veri_kumesi_dizin_al()
 
 ### Community 558 - "Community 558"
 Cohesion: 0.07
@@ -5809,8 +5808,8 @@ Cohesion: 0.25
 Nodes (4): AfterAll, BeforeAll, Test, testDealerRequestApproval
 
 ### Community 646 - "Community 646"
-Cohesion: 0.26
-Nodes (21): main(), Numerical_Differentiation(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination(), gaussSeidel() (+13 more)
+Cohesion: 0.25
+Nodes (20): main(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination(), gaussSeidel(), gregoryNewton() (+12 more)
 
 ### Community 647 - "Community 647"
 Cohesion: 0.36
@@ -5894,7 +5893,7 @@ Nodes (22): 3. Hafta - 21 Ekim 2021 Perşembe, Aggregate Functions, Aggregate Fu
 
 ### Community 668 - "Community 668"
 Cohesion: 0.09
-Nodes (22): 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 🗓 4. Yıl - Güz, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler, 📘 Bilgisayar Mühendisliğinde Güncel Konular (+14 more)
+Nodes (23): 🗓 1. Yıl - Bahar, 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 🗓 4. Yıl - Güz, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler (+15 more)
 
 ### Community 671 - "Community 671"
 Cohesion: 0.25
@@ -6165,12 +6164,12 @@ Cohesion: 0.29
 Nodes (6): bolum_aciklamasi, bolum_adi, en_populer_hoca, hoca_adi, oy_sayisi, hocalar
 
 ### Community 751 - "Community 751"
-Cohesion: 0.31
-Nodes (9): Long, Modifying, Optional, Page, Pageable, PrivateMessage, Query, User (+1 more)
+Cohesion: 0.16
+Nodes (6): String, Gui, String, Gui, String, Home
 
 ### Community 752 - "Community 752"
-Cohesion: 0.31
-Nodes (5): BigDecimal, Connection, String, Warehouse, AddCarToStockPage
+Cohesion: 0.22
+Nodes (10): applyStyle(), applyStyleOnLoad(), computeAutoPlacement(), getArea(), isNumeric(), offset(), parseOffset(), setAttributes() (+2 more)
 
 ### Community 753 - "Community 753"
 Cohesion: 0.10
@@ -6330,7 +6329,7 @@ Nodes (5): main(), swap(), totalResult(), totalResultBruteForce(), VAR
 
 ### Community 799 - "Community 799"
 Cohesion: 0.36
-Nodes (3): Connection, String, StartPage
+Nodes (3): Connection, String, WarehouseLoginPage
 
 ### Community 800 - "Community 800"
 Cohesion: 0.10
@@ -6433,8 +6432,8 @@ Cohesion: 0.47
 Nodes (3): f(), f2(), main()
 
 ### Community 828 - "Community 828"
-Cohesion: 0.18
-Nodes (12): get_confusion_matrix_dizini(), get_confusion_matrix_png_yolu(), get_dogruluk_png_yolu(), get_recall_png_yolu(), gomme_basarim_dizin_adi_al(), gomme_basarim_dizini_al(), Bu fonksiyon gomme doğruluk dizinini döndürür., Bu fonksiyon gomme doğruluk dizinini döndürür. (+4 more)
+Cohesion: 0.22
+Nodes (10): gomme_modeli_f1_puanlari_cizdir(), Her bir gömme modelinin makine öğrenmesi modellerine ait F1 puanlarını çizdirir., get_confusion_matrix_dizini(), get_f1_score_png_yolu(), gomme_basarim_dizin_adi_al(), gomme_basarim_dizini_al(), Bu fonksiyon gomme doğruluk dizinini döndürür., Bu fonksiyon gomme doğruluk dizinini döndürür. (+2 more)
 
 ### Community 829 - "Community 829"
 Cohesion: 0.33
@@ -6622,7 +6621,7 @@ Nodes (3): Applicant, VisaType, VisaApplicationSystem
 
 ### Community 894 - "Community 894"
 Cohesion: 0.10
-Nodes (21): Doktor Öğretim Üyeleri, 👨‍🏫 Dr. Ahmet Elbir, 👩‍🏫 Dr. Ayşe Öcal, 👨‍🏫 Dr. Erkan Uslu, 👨‍🏫 Dr. Furkan Çakmak, 👨‍🏫 Dr. Göksel Biricik, 👩‍🏫 Dr. H. İrem Türkmen, 👨‍🏫 Dr. M. Utku Kalay (+13 more)
+Nodes (20): Doktor Öğretim Üyeleri, 👨‍🏫 Doç. Dr. Ali Can Karaca, 👨‍🏫 Doç. Dr. Gökhan Bilgin, 👨‍🏫 Doç. Dr. Hamza Osman İlhan, 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (37 oy), 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş, 👨‍🏫 Doç. Dr. Oğuz Altun, Doçentler (+12 more)
 
 ### Community 895 - "Community 895"
 Cohesion: 0.57
@@ -8065,8 +8064,8 @@ Cohesion: 0.12
 Nodes (15): 🔹 Ders 10 & 11: Makine Öğrenmesi ve Karar Ağaçları, 🔹 Ders 12: Sınıflandırma Sınırları ve Yapay Sinir Ağları, 🔹 Ders 13: Pekiştirmeli Öğrenme (Reinforcement Learning), 🔹 Ders 1: Yapay Zekaya Giriş, 🔹 Ders 2: Tarihsel Gelişim ve Etmenler, 🔹 Ders 3: Arama Problemleri ve Kör Arama, 🔹 Ders 4: Sezgisel Arama ve A* Algoritması, 🔹 Ders 5: Lokal Arama Yöntemleri (+7 more)
 
 ### Community 2577 - "Community 2577"
-Cohesion: 0.10
-Nodes (18): CRS, Doctor, HospitalMenu, Scanner, Section, SectionMenu, CRS, Hospital (+10 more)
+Cohesion: 0.08
+Nodes (25): CRS, Doctor, HospitalMenu, Scanner, Section, SectionMenu, ArrayList, CRS (+17 more)
 
 ### Community 2602 - "Community 2602"
 Cohesion: 0.27
@@ -8570,7 +8569,7 @@ Nodes (8): 3. Week - 16 March 2023 Thursday, 1001 Programı - Değerlendirme For
 
 ### Community 3660 - "Community 3660"
 Cohesion: 0.22
-Nodes (8): 📘 Bilgisayar Güvenliği ve Kriptografi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler, 📘 İleri İşletim Sistemleri, 📅 Lisansüstü
+Nodes (8): 📘 Bilgisayar Güvenliği ve Kriptografi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler, 📅 Lisansüstü, 📘 Makine Öğrenmesi
 
 ### Community 3661 - "Community 3661"
 Cohesion: 0.22
@@ -8621,8 +8620,8 @@ Cohesion: 0.25
 Nodes (7): 2024-2025 Güz Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Not Dağılımı, Ödev Bilgileri, Ödev Notları ve Ortalamalar, Ödev Tanımı
 
 ### Community 3673 - "Community 3673"
-Cohesion: 0.27
-Nodes (5): Override, ResourceBundle, String, URL, DeleteSectionGUI
+Cohesion: 0.25
+Nodes (8): 👩‍🏫 Prof. Dr. Banu Diri, 👩‍🏫 Prof. Dr. M. Elif Karslıgil, 👨‍🏫 Prof. Dr. M. Fatih Amasyalı, 👨‍🏫 Prof. Dr. Nizamettin Aydın, 👩‍🏫 Prof. Dr. Oya Kalıpsız, 👩‍🏫 Prof. Dr. Songül Varlı, 👩‍🏫 Prof. Dr. Sırma Yavuz, Profesörler
 
 ### Community 3674 - "Community 3674"
 Cohesion: 0.29
@@ -9109,8 +9108,8 @@ Cohesion: 0.33
 Nodes (5): 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Oyun Geliştirmeye Giriş
 
 ### Community 3796 - "Community 3796"
-Cohesion: 0.36
-Nodes (3): Connection, String, DealerLoginPage
+Cohesion: 0.33
+Nodes (6): 📘 Davranış Bilimi, 📘 Felsefeye Giriş, 📘 Muhasebe Organizasyonu, 📘 Osmanlı Devletinin Toplumsal Yapısı, 🗓 Sosyal Seçmeli 1, 📘 Uluslararası Pazarlama
 
 ### Community 3797 - "Community 3797"
 Cohesion: 0.33
@@ -9576,21 +9575,17 @@ Nodes (3): Bilgi, Ders tarihi, Dersi veren hocalar
 Cohesion: 0.50
 Nodes (3): Ders Bilgileri, Not Bilgileri, 2023-2024 Güz Dönemi
 
-### Community 3925 - "Community 3925"
-Cohesion: 0.29
-Nodes (7): 🗓 1. Yıl - Bahar, 📘 Devre Teorisi ve Elektronik Devreler, 📘 İleri İngilizce 2, 📘 Matematik 2, 📘 Mühendisler için Yarıiletken Fiziği, 📘 Sayısal Analiz, 📘 Yapısal Programlama
-
-### Community 3926 - "Community 3926"
-Cohesion: 0.29
-Nodes (7): 👨‍🏫 Doç. Dr. Ali Can Karaca, 👨‍🏫 Doç. Dr. Gökhan Bilgin, 👨‍🏫 Doç. Dr. Hamza Osman İlhan, 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (37 oy), 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş, 👨‍🏫 Doç. Dr. Oğuz Altun, Doçentler
-
 ### Community 3929 - "Community 3929"
 Cohesion: 0.53
 Nodes (6): Dataset, Double, timeUsageGroupedTyped(), TimeUsageRow, timeUsageSummaryTyped(), TimeUsageRow
 
 ### Community 3932 - "Community 3932"
-Cohesion: 0.40
-Nodes (5): Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı, Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Şirketlere Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+Cohesion: 0.50
+Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Freelance ve Mezun Değil için Maaş Analizi, Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+### Community 3933 - "Community 3933"
+Cohesion: 0.67
+Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 İleri İşletim Sistemleri
 
 ### Community 3934 - "Community 3934"
 Cohesion: 0.50
@@ -10068,10 +10063,6 @@ Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 İleri 
 Cohesion: 0.67
 Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 İleri Yazılım Mimarisi
 
-### Community 4078 - "Community 4078"
-Cohesion: 0.67
-Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Makine Öğrenmesi
-
 ### Community 4079 - "Community 4079"
 Cohesion: 0.67
 Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Olasılık, Rastgele Değişkenler ve Stokastik Prosesler
@@ -10103,7 +10094,7 @@ Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Yöneyl
 ## Knowledge Gaps
 - **7054 isolated node(s):** `data`, `next`, `data`, `next`, `data` (+7049 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1668 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1669 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
