@@ -1,0 +1,59 @@
+SAYISAL ANALİZ DERSİ DÖNEMPROJESİ – 2026
+
+PROJE KONU BAŞLIKLARI
+1. Bisection Yöntemi
+2. Regula-Falsi Yöntemi
+3. Newton-Raphson Yöntemi
+4. NxN’lik bir matrisin tersi (N dinam ik bir değer olmalıdır, 3-4 gibi küçük sayılar değil)
+5. Cholesky (ALU ) Yöntemi
+6. Gauss Seidal Yöntemi
+7. Sayısal Türev (merkezi, ileri ve geri farklar tümü hesaplanmalı ve seçimsiz ekrana yazılmalı)
+8. Simpson Yöntem i(hem  1/3, hem  de 3/8 hesaplamalı ve seçimsiz ekrana yazılmalı)
+9. Trapez Yöntem i (N değeri kullanıcıdan alınacak
+10.Değişken dönüşümsüz Gregory Newton Enterpolasyonu
+
+DİKKAT: 1, 2, 3, 7, 8 ve 9. yöntem lerde kullanıcıdan polinom , üstel,  trigonometrik,  logaritm ik,  ters trigonometrik olarak 5 farklı türden fonksiyonu klavyeden girilmesi  istenmelidir.
+Kod içerisine doğrudan yazılı olan (hard-coded) fonksiyonlar geçersiz sayılacaktır.
+Okunan bu fonksiyon 5 farklı türden  fonksiyonun  her  türlü  kombinasyonu olabilir.
+Geliştireceğiniz algoritma ne kadar çok türden fonksiyon kombinasyonunu desteklerse, 100 üzerinden  tam  puan  almanız o derece artacaktır.
+
+Örneğin, kullanıcı 1 nolu seçeneği seçtikten sonra aşağıdaki  örneklerdeki  gibi  bir fonksiyonu klavyeden girebilmelidir ve Bisection metodunun diğer parametrelerini de alarak çözüm üretmelidir.
+^ üs operatörü, _  taban operatörü olarak kullanılabilir.
+** sin(x*e^(5x))
+** x^(sin(log_5  (x^3))  : x üzeri  sinüs  (log 5 tabanında x üzeri 3)
+**  log_x(sin((5*x)^2 + sin(5*x)))  : logaritma  x tabanında (sinüs (5x üzeri 2 + sin5x)
+
+PROJE KODLAMA İLE İLGİLİ ÖNEMLİ HUSUSLAR
+● Program  gerçekleme için C dışında hiçbir dil (C++, Java, C# vb) kabul edilmeyecektir. 
+● Program   tasarım ında break  (switch-case hariç), continue ve goto deyim leri kullanımı olmayacaktır.
+● Programı modüler bir şekilde yazmaya, değişken isimlendirme ve kod okunabilirliği kurallarına dikkat ediniz.
+Tek  bir main  fonksiyonunda  yazılan program lar kabul edilmez.
+● Projede dinamik bellek yönetimi (malloc ve diğer fonksiyonlar) ve struct  ile modelleme mutlaka kullanılmalıdır. Çok basit değerlendirme dışı olacaktır.
+● 10 yöntemin tamamı tek bir C dosyasında önceki maddelere uyacak şekilde teslim  edilmelidir. 10 farklı program çözümü kabul edilmez. Puan alamazsınız.
+
+PROJE KONTROLÜ İLE İLGİLİ ÖNEMLİ HUSUSLAR
+1. Proje kontrolü esnasında yukarıda verilen yöntemlerin hepsi tek tek kontrol edilmeyecektir, rastgele seçim yapılarak kontrol yapılacaktır.
+2. Kontrol edilen yöntemler çalışmazsa diğer yöntemler de hatalı kabul edilecektir.
+3.Madde 1 ve 2 sebebiyle tüm  yöntemleri eksiksiz olarak kodlamanız önerilmektedir.
+
+PROJE TESLİMTARİHİ:
+1 HAZİRAN 2026 Saat 23:59’a kadar online.yildiz.edu.tr sistemine yüklenme yapmanız gerekmektedir.
+
+PROJE KONTROL TARİHİ: 2 HAZİRAN 2026 DERS SAATLERİNDE (Online kontrol için link paylaşılacak)
+Proje kontrolü dönem in son  iki haftası ders saatinde ve online olarak yapılacaktır. Kontrol programı ayrıca sizlere ilan edilecektir.
+Whatsapp kanalımızdan yapılacak teslim  ve kontrol işlemleri duyurularını lütfen takip ediniz.
+
+TESLİMEDİLECEKLER: ÖğrenciNo.rar/zip dosyası
+içinde aşağıdakiler teslim  edilmelidir.
+1. Konu başlıklarında verilen yöntemleri içeren TEK bir C programı kodu (ÖğrenciNo.c)
+2. Projedeki yöntem lerin çalışmasını gösteren rapor (ÖğrenciNo.pdf)
+
+Kolaylık olması bakımından örnek proje raporu dosyası da eklenmiştir.
+
+ÖNEMLİ NOT: online.yildiz.edu.tr sistemine sadece zip veya rar dosyası yüklenmelidir. Bunun dışındaki dosyalar veya Google drive/one drive linkleri değerlendirilmeyecektir.
+
+>>>> E-posta ile proje teslimleri kabul edilmez.
+Sisteme zamanında ve başarılı yükleme yaptığınızı gösteren ekran görüntüsünü kanıt olarak kaydediniz.
+Bu kanıt olmadan sunulan mazeretler kabul edilmeyecektir.
+
+Başarılar Dileriz
