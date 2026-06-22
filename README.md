@@ -6214,6 +6214,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Osman Yiğit Küçükkıratlı</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/yigitkiratli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yigitkucukkiratli/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Ramazan Pirinç</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/RamazanrP'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramazan-pr-546692335/'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Sait Yalçın</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/saityalcn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saityalcin/'><b>LinkedIn Profili</b></a></p>
 
@@ -6269,9 +6272,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h6 align='center'> <b><i>Osman Emre Yılmaz</i></b> </h6>
 <p align='center'><a href='https://github.com/OsmanEmreYilmaz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/osman-emre-/'><b>LinkedIn Profili</b></a></p>
-
-<h6 align='center'> <b><i>Ramazan Pirinç</i></b> </h6>
-<p align='center'><a href='https://github.com/RamazanrP'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramazan-pr-546692335/'><b>LinkedIn Profili</b></a></p>
 
 <h6 align='center'> <b><i>Rameş Aliyev</i></b> </h6>
 <p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramesaliyev/'><b>LinkedIn Profili</b></a></p>
