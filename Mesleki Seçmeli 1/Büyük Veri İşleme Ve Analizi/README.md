@@ -1,4 +1,4 @@
-# 📚 Büyük Veri İşleme Ve Analizi
+# 📚 Büyük Veri İşleme ve Analizi
 
 ## ℹ️ Ders Bilgileri
 

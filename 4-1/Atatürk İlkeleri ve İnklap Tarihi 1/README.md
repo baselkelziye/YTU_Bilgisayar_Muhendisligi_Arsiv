@@ -1,4 +1,4 @@
-# 📚 Atatürk İlkeleri ve İnkılâp Tarihi 1
+# 📚 Atatürk İlkeleri ve İnkılap Tarihi 1
 
 ## ℹ️ Ders Bilgileri
 

@@ -1,16 +1,16 @@
 # Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-06-22)
 
 ## Corpus Check
-- 3589 files · ~14,392,657 words
+- 3770 files · ~14,430,391 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 25970 nodes · 38171 edges · 4462 communities (2798 shown, 1664 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 2491 edges (avg confidence: 0.79)
+- 27355 nodes · 39388 edges · 4691 communities (3018 shown, 1673 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 2491 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9a780890`
+- Built from commit: `00d05bf0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3158,7 +3158,9 @@
 - [[_COMMUNITY_Community 4036|Community 4036]]
 - [[_COMMUNITY_Community 4037|Community 4037]]
 - [[_COMMUNITY_Community 4038|Community 4038]]
+- [[_COMMUNITY_Community 4039|Community 4039]]
 - [[_COMMUNITY_Community 4040|Community 4040]]
+- [[_COMMUNITY_Community 4041|Community 4041]]
 - [[_COMMUNITY_Community 4042|Community 4042]]
 - [[_COMMUNITY_Community 4043|Community 4043]]
 - [[_COMMUNITY_Community 4044|Community 4044]]
@@ -3192,6 +3194,7 @@
 - [[_COMMUNITY_Community 4072|Community 4072]]
 - [[_COMMUNITY_Community 4073|Community 4073]]
 - [[_COMMUNITY_Community 4074|Community 4074]]
+- [[_COMMUNITY_Community 4075|Community 4075]]
 - [[_COMMUNITY_Community 4076|Community 4076]]
 - [[_COMMUNITY_Community 4077|Community 4077]]
 - [[_COMMUNITY_Community 4078|Community 4078]]
@@ -3359,19 +3362,243 @@
 - [[_COMMUNITY_Community 4399|Community 4399]]
 - [[_COMMUNITY_Community 4400|Community 4400]]
 - [[_COMMUNITY_Community 4461|Community 4461]]
+- [[_COMMUNITY_Community 4462|Community 4462]]
+- [[_COMMUNITY_Community 4463|Community 4463]]
+- [[_COMMUNITY_Community 4464|Community 4464]]
+- [[_COMMUNITY_Community 4467|Community 4467]]
+- [[_COMMUNITY_Community 4468|Community 4468]]
 - [[_COMMUNITY_Community 4469|Community 4469]]
+- [[_COMMUNITY_Community 4470|Community 4470]]
+- [[_COMMUNITY_Community 4471|Community 4471]]
+- [[_COMMUNITY_Community 4472|Community 4472]]
+- [[_COMMUNITY_Community 4473|Community 4473]]
+- [[_COMMUNITY_Community 4474|Community 4474]]
+- [[_COMMUNITY_Community 4475|Community 4475]]
+- [[_COMMUNITY_Community 4476|Community 4476]]
+- [[_COMMUNITY_Community 4477|Community 4477]]
+- [[_COMMUNITY_Community 4478|Community 4478]]
+- [[_COMMUNITY_Community 4479|Community 4479]]
+- [[_COMMUNITY_Community 4480|Community 4480]]
+- [[_COMMUNITY_Community 4481|Community 4481]]
+- [[_COMMUNITY_Community 4482|Community 4482]]
+- [[_COMMUNITY_Community 4483|Community 4483]]
+- [[_COMMUNITY_Community 4484|Community 4484]]
+- [[_COMMUNITY_Community 4485|Community 4485]]
+- [[_COMMUNITY_Community 4486|Community 4486]]
+- [[_COMMUNITY_Community 4487|Community 4487]]
+- [[_COMMUNITY_Community 4488|Community 4488]]
+- [[_COMMUNITY_Community 4489|Community 4489]]
+- [[_COMMUNITY_Community 4490|Community 4490]]
+- [[_COMMUNITY_Community 4491|Community 4491]]
+- [[_COMMUNITY_Community 4492|Community 4492]]
+- [[_COMMUNITY_Community 4493|Community 4493]]
+- [[_COMMUNITY_Community 4494|Community 4494]]
+- [[_COMMUNITY_Community 4495|Community 4495]]
+- [[_COMMUNITY_Community 4496|Community 4496]]
+- [[_COMMUNITY_Community 4497|Community 4497]]
+- [[_COMMUNITY_Community 4498|Community 4498]]
+- [[_COMMUNITY_Community 4499|Community 4499]]
+- [[_COMMUNITY_Community 4500|Community 4500]]
+- [[_COMMUNITY_Community 4501|Community 4501]]
+- [[_COMMUNITY_Community 4502|Community 4502]]
+- [[_COMMUNITY_Community 4503|Community 4503]]
+- [[_COMMUNITY_Community 4504|Community 4504]]
+- [[_COMMUNITY_Community 4505|Community 4505]]
+- [[_COMMUNITY_Community 4506|Community 4506]]
+- [[_COMMUNITY_Community 4507|Community 4507]]
+- [[_COMMUNITY_Community 4508|Community 4508]]
+- [[_COMMUNITY_Community 4509|Community 4509]]
+- [[_COMMUNITY_Community 4510|Community 4510]]
+- [[_COMMUNITY_Community 4511|Community 4511]]
+- [[_COMMUNITY_Community 4512|Community 4512]]
+- [[_COMMUNITY_Community 4513|Community 4513]]
+- [[_COMMUNITY_Community 4514|Community 4514]]
+- [[_COMMUNITY_Community 4515|Community 4515]]
+- [[_COMMUNITY_Community 4516|Community 4516]]
+- [[_COMMUNITY_Community 4517|Community 4517]]
+- [[_COMMUNITY_Community 4518|Community 4518]]
+- [[_COMMUNITY_Community 4519|Community 4519]]
+- [[_COMMUNITY_Community 4520|Community 4520]]
+- [[_COMMUNITY_Community 4521|Community 4521]]
+- [[_COMMUNITY_Community 4522|Community 4522]]
+- [[_COMMUNITY_Community 4523|Community 4523]]
+- [[_COMMUNITY_Community 4524|Community 4524]]
+- [[_COMMUNITY_Community 4525|Community 4525]]
+- [[_COMMUNITY_Community 4526|Community 4526]]
+- [[_COMMUNITY_Community 4527|Community 4527]]
+- [[_COMMUNITY_Community 4528|Community 4528]]
+- [[_COMMUNITY_Community 4529|Community 4529]]
+- [[_COMMUNITY_Community 4530|Community 4530]]
+- [[_COMMUNITY_Community 4531|Community 4531]]
+- [[_COMMUNITY_Community 4532|Community 4532]]
+- [[_COMMUNITY_Community 4533|Community 4533]]
+- [[_COMMUNITY_Community 4534|Community 4534]]
+- [[_COMMUNITY_Community 4535|Community 4535]]
+- [[_COMMUNITY_Community 4536|Community 4536]]
+- [[_COMMUNITY_Community 4537|Community 4537]]
+- [[_COMMUNITY_Community 4538|Community 4538]]
+- [[_COMMUNITY_Community 4539|Community 4539]]
+- [[_COMMUNITY_Community 4540|Community 4540]]
+- [[_COMMUNITY_Community 4541|Community 4541]]
+- [[_COMMUNITY_Community 4542|Community 4542]]
+- [[_COMMUNITY_Community 4543|Community 4543]]
+- [[_COMMUNITY_Community 4544|Community 4544]]
+- [[_COMMUNITY_Community 4545|Community 4545]]
+- [[_COMMUNITY_Community 4546|Community 4546]]
+- [[_COMMUNITY_Community 4547|Community 4547]]
+- [[_COMMUNITY_Community 4548|Community 4548]]
+- [[_COMMUNITY_Community 4549|Community 4549]]
+- [[_COMMUNITY_Community 4550|Community 4550]]
+- [[_COMMUNITY_Community 4551|Community 4551]]
+- [[_COMMUNITY_Community 4552|Community 4552]]
+- [[_COMMUNITY_Community 4553|Community 4553]]
+- [[_COMMUNITY_Community 4554|Community 4554]]
+- [[_COMMUNITY_Community 4555|Community 4555]]
+- [[_COMMUNITY_Community 4556|Community 4556]]
+- [[_COMMUNITY_Community 4557|Community 4557]]
+- [[_COMMUNITY_Community 4558|Community 4558]]
+- [[_COMMUNITY_Community 4559|Community 4559]]
+- [[_COMMUNITY_Community 4560|Community 4560]]
+- [[_COMMUNITY_Community 4561|Community 4561]]
+- [[_COMMUNITY_Community 4562|Community 4562]]
+- [[_COMMUNITY_Community 4563|Community 4563]]
+- [[_COMMUNITY_Community 4564|Community 4564]]
+- [[_COMMUNITY_Community 4565|Community 4565]]
+- [[_COMMUNITY_Community 4566|Community 4566]]
+- [[_COMMUNITY_Community 4567|Community 4567]]
+- [[_COMMUNITY_Community 4568|Community 4568]]
+- [[_COMMUNITY_Community 4569|Community 4569]]
+- [[_COMMUNITY_Community 4570|Community 4570]]
+- [[_COMMUNITY_Community 4571|Community 4571]]
+- [[_COMMUNITY_Community 4572|Community 4572]]
+- [[_COMMUNITY_Community 4573|Community 4573]]
+- [[_COMMUNITY_Community 4574|Community 4574]]
+- [[_COMMUNITY_Community 4575|Community 4575]]
+- [[_COMMUNITY_Community 4576|Community 4576]]
+- [[_COMMUNITY_Community 4577|Community 4577]]
+- [[_COMMUNITY_Community 4578|Community 4578]]
+- [[_COMMUNITY_Community 4579|Community 4579]]
+- [[_COMMUNITY_Community 4580|Community 4580]]
+- [[_COMMUNITY_Community 4581|Community 4581]]
+- [[_COMMUNITY_Community 4582|Community 4582]]
+- [[_COMMUNITY_Community 4583|Community 4583]]
+- [[_COMMUNITY_Community 4584|Community 4584]]
+- [[_COMMUNITY_Community 4585|Community 4585]]
+- [[_COMMUNITY_Community 4586|Community 4586]]
+- [[_COMMUNITY_Community 4587|Community 4587]]
+- [[_COMMUNITY_Community 4588|Community 4588]]
+- [[_COMMUNITY_Community 4589|Community 4589]]
+- [[_COMMUNITY_Community 4590|Community 4590]]
+- [[_COMMUNITY_Community 4591|Community 4591]]
+- [[_COMMUNITY_Community 4592|Community 4592]]
+- [[_COMMUNITY_Community 4593|Community 4593]]
+- [[_COMMUNITY_Community 4594|Community 4594]]
+- [[_COMMUNITY_Community 4595|Community 4595]]
+- [[_COMMUNITY_Community 4596|Community 4596]]
+- [[_COMMUNITY_Community 4597|Community 4597]]
+- [[_COMMUNITY_Community 4598|Community 4598]]
+- [[_COMMUNITY_Community 4599|Community 4599]]
+- [[_COMMUNITY_Community 4600|Community 4600]]
+- [[_COMMUNITY_Community 4601|Community 4601]]
+- [[_COMMUNITY_Community 4602|Community 4602]]
+- [[_COMMUNITY_Community 4603|Community 4603]]
+- [[_COMMUNITY_Community 4604|Community 4604]]
+- [[_COMMUNITY_Community 4605|Community 4605]]
+- [[_COMMUNITY_Community 4606|Community 4606]]
+- [[_COMMUNITY_Community 4607|Community 4607]]
+- [[_COMMUNITY_Community 4608|Community 4608]]
+- [[_COMMUNITY_Community 4609|Community 4609]]
+- [[_COMMUNITY_Community 4610|Community 4610]]
+- [[_COMMUNITY_Community 4611|Community 4611]]
+- [[_COMMUNITY_Community 4612|Community 4612]]
+- [[_COMMUNITY_Community 4613|Community 4613]]
+- [[_COMMUNITY_Community 4614|Community 4614]]
+- [[_COMMUNITY_Community 4615|Community 4615]]
+- [[_COMMUNITY_Community 4616|Community 4616]]
+- [[_COMMUNITY_Community 4617|Community 4617]]
+- [[_COMMUNITY_Community 4618|Community 4618]]
+- [[_COMMUNITY_Community 4619|Community 4619]]
+- [[_COMMUNITY_Community 4620|Community 4620]]
+- [[_COMMUNITY_Community 4621|Community 4621]]
+- [[_COMMUNITY_Community 4622|Community 4622]]
+- [[_COMMUNITY_Community 4623|Community 4623]]
+- [[_COMMUNITY_Community 4624|Community 4624]]
+- [[_COMMUNITY_Community 4625|Community 4625]]
+- [[_COMMUNITY_Community 4626|Community 4626]]
+- [[_COMMUNITY_Community 4627|Community 4627]]
+- [[_COMMUNITY_Community 4628|Community 4628]]
+- [[_COMMUNITY_Community 4629|Community 4629]]
+- [[_COMMUNITY_Community 4630|Community 4630]]
+- [[_COMMUNITY_Community 4631|Community 4631]]
+- [[_COMMUNITY_Community 4632|Community 4632]]
+- [[_COMMUNITY_Community 4633|Community 4633]]
+- [[_COMMUNITY_Community 4634|Community 4634]]
+- [[_COMMUNITY_Community 4635|Community 4635]]
+- [[_COMMUNITY_Community 4636|Community 4636]]
+- [[_COMMUNITY_Community 4637|Community 4637]]
+- [[_COMMUNITY_Community 4638|Community 4638]]
+- [[_COMMUNITY_Community 4639|Community 4639]]
+- [[_COMMUNITY_Community 4640|Community 4640]]
+- [[_COMMUNITY_Community 4641|Community 4641]]
+- [[_COMMUNITY_Community 4642|Community 4642]]
+- [[_COMMUNITY_Community 4643|Community 4643]]
+- [[_COMMUNITY_Community 4644|Community 4644]]
+- [[_COMMUNITY_Community 4645|Community 4645]]
+- [[_COMMUNITY_Community 4646|Community 4646]]
+- [[_COMMUNITY_Community 4647|Community 4647]]
+- [[_COMMUNITY_Community 4648|Community 4648]]
+- [[_COMMUNITY_Community 4649|Community 4649]]
+- [[_COMMUNITY_Community 4650|Community 4650]]
+- [[_COMMUNITY_Community 4651|Community 4651]]
+- [[_COMMUNITY_Community 4652|Community 4652]]
+- [[_COMMUNITY_Community 4653|Community 4653]]
+- [[_COMMUNITY_Community 4654|Community 4654]]
+- [[_COMMUNITY_Community 4655|Community 4655]]
+- [[_COMMUNITY_Community 4656|Community 4656]]
+- [[_COMMUNITY_Community 4657|Community 4657]]
+- [[_COMMUNITY_Community 4658|Community 4658]]
+- [[_COMMUNITY_Community 4659|Community 4659]]
+- [[_COMMUNITY_Community 4660|Community 4660]]
+- [[_COMMUNITY_Community 4661|Community 4661]]
+- [[_COMMUNITY_Community 4662|Community 4662]]
+- [[_COMMUNITY_Community 4663|Community 4663]]
+- [[_COMMUNITY_Community 4664|Community 4664]]
+- [[_COMMUNITY_Community 4665|Community 4665]]
+- [[_COMMUNITY_Community 4666|Community 4666]]
+- [[_COMMUNITY_Community 4667|Community 4667]]
+- [[_COMMUNITY_Community 4668|Community 4668]]
+- [[_COMMUNITY_Community 4669|Community 4669]]
+- [[_COMMUNITY_Community 4670|Community 4670]]
+- [[_COMMUNITY_Community 4671|Community 4671]]
+- [[_COMMUNITY_Community 4672|Community 4672]]
+- [[_COMMUNITY_Community 4673|Community 4673]]
+- [[_COMMUNITY_Community 4674|Community 4674]]
+- [[_COMMUNITY_Community 4675|Community 4675]]
+- [[_COMMUNITY_Community 4676|Community 4676]]
+- [[_COMMUNITY_Community 4677|Community 4677]]
+- [[_COMMUNITY_Community 4678|Community 4678]]
+- [[_COMMUNITY_Community 4679|Community 4679]]
+- [[_COMMUNITY_Community 4680|Community 4680]]
+- [[_COMMUNITY_Community 4681|Community 4681]]
+- [[_COMMUNITY_Community 4683|Community 4683]]
+- [[_COMMUNITY_Community 4684|Community 4684]]
+- [[_COMMUNITY_Community 4685|Community 4685]]
+- [[_COMMUNITY_Community 4687|Community 4687]]
+- [[_COMMUNITY_Community 4688|Community 4688]]
+- [[_COMMUNITY_Community 4689|Community 4689]]
+- [[_COMMUNITY_Community 4690|Community 4690]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PyObject` - 288 edges
 2. `CYTHON_INLINE` - 133 edges
 3. `$()` - 119 edges
-4. `__Pyx_AddTraceback()` - 105 edges
-5. `CYTHON_UNUSED` - 73 edges
-6. `stbi__context` - 71 edges
-7. `stbi__context` - 70 edges
-8. `IOException` - 67 edges
-9. `show_success()` - 49 edges
-10. `_()` - 47 edges
+4. `🗓 Üniversite Sosyal Seçmeli` - 110 edges
+5. `__Pyx_AddTraceback()` - 105 edges
+6. `CYTHON_UNUSED` - 73 edges
+7. `stbi__context` - 71 edges
+8. `stbi__context` - 70 edges
+9. `IOException` - 67 edges
+10. `show_success()` - 49 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `AEL Harf Notları 2024` --references--> `Ahmet Elbir`  [INFERRED]
@@ -3393,11 +3620,11 @@
 - 1-file cycle: `Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py -> Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py`
 - 1-file cycle: `readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py -> readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py`
 
-## Communities (4462 total, 1664 thin omitted)
+## Communities (4691 total, 1673 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (144): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+136 more)
+Cohesion: 0.07
+Nodes (102): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi__uint32, load_jpeg_image() (+94 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.22
@@ -3413,19 +3640,19 @@ Nodes (83): main(), activation(), backPropagation(), calculateErr(), calculateHi
 
 ### Community 4 - "Community 4"
 Cohesion: 0.05
-Nodes (83): _addNumericSort(), _fnAddColumn(), _fnAddData(), _fnAddOptionsHtml(), _fnAddTr(), _fnAdjustColumnSizing(), _fnAjaxDataSrc(), _fnAjaxParameters() (+75 more)
+Nodes (86): _addNumericSort(), _fnAddColumn(), _fnAddData(), _fnAddOptionsHtml(), _fnAddTr(), _fnAdjustColumnSizing(), _fnAjaxDataSrc(), _fnAjaxParameters() (+78 more)
 
 ### Community 5 - "Community 5"
 Cohesion: 0.07
-Nodes (29): String, String, String, String, String, Object, IOException, ActionListener (+21 more)
+Nodes (30): String, String, String, String, String, Object, IOException, ActionListener (+22 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.05
-Nodes (11): FXML, ResourceBundle, URL, FXML, Image, FXML, ResourceBundle, URL (+3 more)
+Cohesion: 0.07
+Nodes (7): FXML, ResourceBundle, URL, FXML, Image, AdminDashboardGUI, AdminStartGUI
 
 ### Community 7 - "Community 7"
 Cohesion: 0.05
-Nodes (149): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+141 more)
+Nodes (144): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+136 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.04
@@ -3440,12 +3667,12 @@ Cohesion: 0.07
 Nodes (60): applyStyle(), applyStyleOnLoad(), arrow(), attachToScrollParents(), BEHAVIORS, clockwise(), computeAutoPlacement(), computeStyle() (+52 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.08
-Nodes (65): $(), aa(), Ab(), B(), ba(), Bb(), C(), Cb() (+57 more)
+Cohesion: 0.07
+Nodes (67): $(), aa(), Ab(), B(), ba(), Bb(), C(), Cb() (+59 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.06
-Nodes (35): Sürükle-bırak arayüzü için bilgi etiketi oluşturur, Sürükle-bırak ile öğe sıralaması yapılabilen liste widget'ı, Öğe bırakıldığında sıralama değişikliği sinyali gönder, Sürüklenebilir liste öğesi, surukle_bilgi_etiketi(), SuruklemeListe, SuruklemeListeItem, Repo Kullanımı Kavram Düzenleme Ekranı (+27 more)
+Nodes (26): Sürüklenebilir liste öğesi, SuruklemeListeItem, Repo Kullanımı Kavram Düzenleme Ekranı, kisaltMetin(), Metni belirtilen maksimum uzunlukta sınırlar ve gerekirse '...' ile kısaltır., AciklamaDialog, KavramDetayDialog, KavramDialog (+18 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.08
@@ -3460,32 +3687,32 @@ Cohesion: 0.05
 Nodes (40): BinaryTree, Initializes a new instance of the BinaryTree class.          Parameters:, Builds a Huffman tree based on the given frequency dictionary.          Args:, Finds a node in the binary tree based on the given bits.          Args:, Assigns codes to pixels in the binary tree.          Args:             node (Opt, Represents a binary tree used for data compression.      Attributes:         roo, Visualizes the binary tree using Graphviz.          Args:             filename (, check_image_equality() (+32 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.20
-Nodes (17): Long, NotificationDTO, Object, ObjectMapper, Override, Page, String, Transactional (+9 more)
+Cohesion: 0.06
+Nodes (44): Long, Modifying, Notification, Optional, Page, Pageable, Query, Transactional (+36 more)
 
 ### Community 17 - "Community 17"
 Cohesion: 0.13
 Nodes (5): Override, String, Timestamp, BeforeAll, Customer
 
 ### Community 18 - "Community 18"
-Cohesion: 0.04
-Nodes (45): Override, ResourceBundle, URL, FXML, Override, ResourceBundle, URL, FXML (+37 more)
+Cohesion: 0.03
+Nodes (59): Override, ResourceBundle, URL, Override, ResourceBundle, URL, Override, ResourceBundle (+51 more)
 
 ### Community 19 - "Community 19"
-Cohesion: 0.24
-Nodes (15): __Pyx_BufFmt_CheckString(), __Pyx_BufFmt_DescribeTypeChar(), __Pyx_BufFmt_ExpectNumber(), __pyx_buffmt_parse_array(), __Pyx_BufFmt_ParseNumber(), __Pyx_BufFmt_ProcessTypeChunk(), __Pyx_BufFmt_RaiseExpected(), __Pyx_BufFmt_RaiseUnexpectedChar() (+7 more)
+Cohesion: 0.02
+Nodes (107): 📘 16.yüzyıldan Günümüze İstanbulda Dans, 📘 20. Yüzyılda Siyasal Gelişmeler-Toplumsal Hareketler, 📘 Afet Bilgisi ve Farkındalığı, 📘 Aile İşletmeleri ve Kurumsallaşma, 📘 Akademik Türkçe, 📘 Almanca Dil Becerileri, 📘 Almanca Dil Becerilerine Giriş, 📘 Basketbol Temel Teknik Eğitimi (+99 more)
 
 ### Community 20 - "Community 20"
-Cohesion: 0.08
-Nodes (37): APIResponse, DeleteMapping, GetMapping, Integer, Page, PostMapping, ResponseEntity, String (+29 more)
+Cohesion: 0.20
+Nodes (16): Long, NotificationService, ObjectMapper, Override, Page, Transactional, UserActivityService, UserDTO (+8 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.05
-Nodes (36): CustomProgressDialog, CustomProgressDialogWithCancel, CustomProgressDialog sınıfının kurucusudur.          Parameters:         title (, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ka, CustomProgressDialogWithCancel sınıfı, CustomProgressDialog sınıfının iptal buto, CustomProgressDialogWithCancel sınıfının kurucusudur.          Parameters:, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ol, Olay filtresini işleyen fonksiyon. Eğer iptal butonuna tıklanırsa, belirlenen fo (+28 more)
+Cohesion: 0.06
+Nodes (24): CustomProgressDialog, CustomProgressDialogWithCancel, CustomProgressDialog sınıfının kurucusudur.          Parameters:         title (, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ka, CustomProgressDialogWithCancel sınıfı, CustomProgressDialog sınıfının iptal buto, CustomProgressDialogWithCancel sınıfının kurucusudur.          Parameters:, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ol, Olay filtresini işleyen fonksiyon. Eğer iptal butonuna tıklanırsa, belirlenen fo (+16 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.11
-Nodes (13): CRS, HashMap, Long, Patient, Override, ResourceBundle, URL, CRS (+5 more)
+Cohesion: 0.17
+Nodes (9): CRS, HashMap, Long, Patient, Override, ResourceBundle, URL, PatientManager (+1 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.10
@@ -3524,7 +3751,7 @@ Cohesion: 0.06
 Nodes (27): A(), bb(), db(), eb(), fa(), fb(), g(), ga() (+19 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.09
+Cohesion: 0.10
 Nodes (15): String, Subscription, ArrayList, Override, String, Subscription, Journal, Override (+7 more)
 
 ### Community 33 - "Community 33"
@@ -3540,52 +3767,52 @@ Cohesion: 0.09
 Nodes (42): _(), a(), ae, b(), c(), ce(), d(), E() (+34 more)
 
 ### Community 36 - "Community 36"
-Cohesion: 0.08
-Nodes (20): City, CRS, HashMap, Hospital, Integer, String, Override, ResourceBundle (+12 more)
+Cohesion: 0.09
+Nodes (16): City, CRS, HashMap, Hospital, Integer, String, Override, ResourceBundle (+8 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.07
-Nodes (17): allowedAttribute(), _createClass(), _defineProperties(), _defineProperty(), disableEventListeners(), getSpecialTransitionEndEvent(), getWindow(), it() (+9 more)
+Cohesion: 0.08
+Nodes (19): allowedAttribute(), attachToScrollParents(), _createClass(), _defineProperties(), _defineProperty(), destroy(), disableEventListeners(), getSpecialTransitionEndEvent() (+11 more)
 
 ### Community 38 - "Community 38"
-Cohesion: 0.13
-Nodes (47): main(), book, clearScreen(), main(), student, main(), author, bookAuthor (+39 more)
+Cohesion: 0.16
+Nodes (44): book, clearScreen(), main(), student, author, bookAuthor, addAuthor(), addBook() (+36 more)
 
 ### Community 39 - "Community 39"
-Cohesion: 0.04
-Nodes (57): ABC, Any, callable, Bölüm yazıcı base class., Bölüm yazıcı abstract base class.          Her README bölümü için bir writer sın, Bölümü yaz.                  Args:             writer: BufferedReadmeWriter inst, Bölüm adı (logging için)., SectionWriter (+49 more)
+Cohesion: 0.06
+Nodes (34): Any, callable, DerslerWriter, Dersler bölümü yazıcısı., Dersleri yıl ve döneme göre grupla., Dersler bölümünü yaz.                  Args:             writer: BufferedReadmeW, Dersler bölümü yazıcısı., Args:             folder_cache: FolderCache instance (klasör arama için) (+26 more)
 
 ### Community 40 - "Community 40"
-Cohesion: 0.05
-Nodes (37): acceptFriendRequest(), addFriendRequest(), APIResponse, cancelFriendRequest(), fetchFriendsByUUID(), fetchUserActivity(), fetchUserByUsername(), fetchUserMe() (+29 more)
+Cohesion: 0.07
+Nodes (28): acceptFriendRequest(), addFriendRequest(), APIResponse, cancelFriendRequest(), fetchFriendsByUUID(), fetchReceivedFriendRequests(), fetchSentFriendRequests(), fetchUserMe() (+20 more)
 
 ### Community 41 - "Community 41"
-Cohesion: 0.14
-Nodes (8): ChatSingle(), ChatSingleProps, Message, getMessagesWithUser(), sendMessageToUser(), UserMessage, usernameToSlug(), userProfilePath()
+Cohesion: 0.11
+Nodes (11): ChatSingle(), ChatSingleProps, Message, ProfileCardSlider(), ProfileCardSliderProps, ProfileListFriendsProps, getMessagesWithUser(), sendMessageToUser() (+3 more)
 
 ### Community 42 - "Community 42"
 Cohesion: 0.07
 Nodes (17): Override, String, String, Calisan, Calisan, String, Test, String (+9 more)
 
 ### Community 43 - "Community 43"
-Cohesion: 0.14
-Nodes (43): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+35 more)
+Cohesion: 0.12
+Nodes (48): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__build_huffman(), load_jpeg_image() (+40 more)
 
 ### Community 44 - "Community 44"
-Cohesion: 0.08
-Nodes (26): addMovieToWatchlist(), deleteMovieComment(), fetchMovieById(), fetchMovieCasts(), fetchMovieComments(), fetchMovieCrews(), fetchWatchedMoviesByUser(), fetchWatchlistMoviesByUser() (+18 more)
+Cohesion: 0.07
+Nodes (35): addMovieToWatchlist(), deleteMovieComment(), fetchMovieById(), fetchMovieCasts(), fetchMovieComments(), fetchMovieCrews(), fetchWatchedMoviesByUser(), fetchWatchlistMoviesByUser() (+27 more)
 
 ### Community 45 - "Community 45"
 Cohesion: 0.10
 Nodes (36): attachToScrollParents(), computeAutoPlacement(), find(), findCommonOffsetParent(), findIndex(), getBordersSize(), getBoundaries(), getBoundingClientRect() (+28 more)
 
 ### Community 46 - "Community 46"
-Cohesion: 0.07
-Nodes (19): main(), class, QPushButton, draw_fourier_individual_terms(), draw_fourier_signals(), draw_signal_cos(), draw_signal_sin(), MyApp (+11 more)
+Cohesion: 0.06
+Nodes (20): main(), class, QPushButton, draw_fourier_individual_terms(), draw_fourier_signals(), draw_signal_cos(), draw_signal_sin(), MyApp (+12 more)
 
 ### Community 47 - "Community 47"
-Cohesion: 0.14
-Nodes (44): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+36 more)
+Cohesion: 0.12
+Nodes (49): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+41 more)
 
 ### Community 48 - "Community 48"
 Cohesion: 0.11
@@ -3600,12 +3827,12 @@ Cohesion: 0.15
 Nodes (44): clearScreen(), evaluate(), main(), Matrix, Node, Token, AugmentedMatrix, acsec() (+36 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.08
-Nodes (20): ArrayList, Connection, Dealer, String, Vehicle, VehicleStock, AfterAll, BeforeAll (+12 more)
+Cohesion: 0.12
+Nodes (15): ArrayList, Connection, Dealer, String, Vehicle, VehicleStock, ArrayList, Connection (+7 more)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.14
-Nodes (26): fetchFrontMovies(), CardSlider(), CardSliderProps, HeroBanner(), Props, MostLikedMovies(), MostVisitedMovies(), MostWatchedMovies() (+18 more)
+Cohesion: 0.12
+Nodes (28): fetchFrontMovies(), CardSlider(), CardSliderProps, HeroBanner(), Props, MostLikedMovies(), MostVisitedMovies(), MostWatchedMovies() (+20 more)
 
 ### Community 53 - "Community 53"
 Cohesion: 0.11
@@ -3620,12 +3847,12 @@ Cohesion: 0.05
 Nodes (23): Child, Clothing, String, Child, Toy, String, Electronics, String (+15 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.15
-Nodes (16): Optional, String, Override, ResponseCookie, SessionService, SignUpRequest, String, UserRepository (+8 more)
+Cohesion: 0.10
+Nodes (20): Optional, String, Override, ResponseCookie, SessionService, SignUpRequest, String, UserRepository (+12 more)
 
 ### Community 57 - "Community 57"
-Cohesion: 0.10
-Nodes (18): get_git_repo_url(), konfigurasyon_json_guncelle(), donem_dosya_yolu_getir(), donem_sayisi_getir(), main(), README oluşturma ana scripti.  SOLID ve KISS prensiplerine uygun, performans o, Ana README oluşturucu.          Tüm bölümleri orchestrate eder ve performans o, Ders sıralama anahtarı. (+10 more)
+Cohesion: 0.09
+Nodes (21): Data Loader Module ================== Bu modül, veri kümesi yükleme ve bölme işl, get_git_repo_url(), konfigurasyon_json_guncelle(), donem_dosya_yolu_getir(), donem_sayisi_getir(), DataLoader, main(), README oluşturma ana scripti.  SOLID ve KISS prensiplerine uygun, performans o (+13 more)
 
 ### Community 58 - "Community 58"
 Cohesion: 0.05
@@ -3633,7 +3860,7 @@ Nodes (41): dependencies, class-variance-authority, embla-carousel-react, framer
 
 ### Community 59 - "Community 59"
 Cohesion: 0.06
-Nodes (21): String, String, String, String, String, String, String, String (+13 more)
+Nodes (22): String, String, String, String, String, String, String, String (+14 more)
 
 ### Community 61 - "Community 61"
 Cohesion: 0.08
@@ -3652,8 +3879,8 @@ Cohesion: 0.14
 Nodes (38): DoublyLinkedListNode_t, FastLinkedListNode_t, main(), DoublyLinkedListNode_t, DoublyLinkedListNode_t, FastLinkedListNode_t, createFastLinkedListLevels(), createFastLinkedListNode() (+30 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.11
-Nodes (34): FILE, stbi_write_func, STBIWDEF, wchar_t, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file() (+26 more)
+Cohesion: 0.13
+Nodes (34): FILE, stbi_write_func, STBIWDEF, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp() (+26 more)
 
 ### Community 66 - "Community 66"
 Cohesion: 0.23
@@ -3700,16 +3927,16 @@ Cohesion: 0.15
 Nodes (24): Movie, MovieComment, Page, User, UserActivityDTO, Movie, MovieComment, MovieCommentMapper (+16 more)
 
 ### Community 77 - "Community 77"
-Cohesion: 0.08
-Nodes (10): Override, String, Individual, TestCorparation, TestIndividual, TestJournal, TestPaymentInfo, TestSubscription (+2 more)
+Cohesion: 0.06
+Nodes (11): Override, String, Individual, TestCorparation, TestDateInfo, TestIndividual, TestJournal, TestPaymentInfo (+3 more)
 
 ### Community 79 - "Community 79"
 Cohesion: 0.07
 Nodes (13): String, User, String, User, Override, String, User, String (+5 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.09
-Nodes (45): FILE, stbi_io_callbacks, STBIDEF, wchar_t, stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__do_zlib() (+37 more)
+Cohesion: 0.07
+Nodes (80): FILE, stbi_io_callbacks, stbi_uc, stbi__uint16, STBIDEF, resample_row_1(), stbi__blinn_8x8(), stbi__clamp() (+72 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -3724,8 +3951,8 @@ Cohesion: 0.15
 Nodes (33): main(), Tree, chdir(), checkAllocation(), count(), createDirectory(), createTree(), dir() (+25 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.14
-Nodes (10): ArrayList, BigDecimal, Connection, Date, Dealer, ResultSet, String, Vehicle (+2 more)
+Cohesion: 0.08
+Nodes (14): BigDecimal, Override, String, ArrayList, BigDecimal, Connection, Date, Dealer (+6 more)
 
 ### Community 85 - "Community 85"
 Cohesion: 0.31
@@ -3736,8 +3963,8 @@ Cohesion: 0.07
 Nodes (11): Home, String, Customer, Home, String, String, String, Customer (+3 more)
 
 ### Community 87 - "Community 87"
-Cohesion: 0.50
-Nodes (3): bolum_aciklamasi, bolum_adi, katkida_bulunanlar
+Cohesion: 0.08
+Nodes (26): ABC, bolum_aciklamasi, bolum_adi, katkida_bulunanlar, Bölüm yazıcı base class., Bölüm yazıcı abstract base class.          Her README bölümü için bir writer sın, Bölümü yaz.                  Args:             writer: BufferedReadmeWriter inst, Bölüm adı (logging için). (+18 more)
 
 ### Community 88 - "Community 88"
 Cohesion: 0.05
@@ -3760,20 +3987,20 @@ Cohesion: 0.07
 Nodes (31): Ahmet Elbir, Ahmet Hoca, Banu Diri (BD), Bilgisayar Projesi, Bitirme Çalışması, BLM2011 Yapısal Programlama, Doğrusal Denklem Takımlarının Çözümü, Doğrusal Olmayan Denklemlerin Çözümü (+23 more)
 
 ### Community 93 - "Community 93"
-Cohesion: 0.14
-Nodes (7): GirisEkleGuncelleWindow, IcindekilerDuzenleWindow, Son silinen içindekileri geri al, Sürükle-bırak listesinde çift tıklanan öğeyi düzenle, Sürükle-bırak sonrası yeni sıralamayı kaydet, Başlangıç değerlerini kaydet, Değişiklik olup olmadığını kontrol et
+Cohesion: 0.08
+Nodes (23): Sürükle-bırak arayüzü için bilgi etiketi oluşturur, Sürükle-bırak ile öğe sıralaması yapılabilen liste widget'ı, Öğe bırakıldığında sıralama değişikliği sinyali gönder, surukle_bilgi_etiketi(), SuruklemeListe, QDropEvent, QLabel, GirisEkleGuncelleWindow (+15 more)
 
 ### Community 94 - "Community 94"
 Cohesion: 0.06
 Nodes (36): Bilgisayar Bilimlerine Giriş, AEL, Fatih Amasyalı, Göksel Biricik, Hafıza İrem Türkmen, Mehmet Amaç Güvensan, MFA, Atatürk İlkeleri ve İnkılâp Tarihi 2 (+28 more)
 
 ### Community 95 - "Community 95"
-Cohesion: 0.13
-Nodes (22): Integer, MovieDTO, MovieFrontDTO, MovieFrontResponse, Page, String, GenreRepository, Integer (+14 more)
+Cohesion: 0.14
+Nodes (21): Integer, MovieDTO, MovieFrontDTO, MovieFrontResponse, Page, String, GenreRepository, Integer (+13 more)
 
 ### Community 96 - "Community 96"
-Cohesion: 0.17
-Nodes (10): Connection, Customer, String, AfterEach, BeforeAll, Test, JSpinner, JTextField (+2 more)
+Cohesion: 0.18
+Nodes (8): Connection, Customer, String, AfterEach, BeforeAll, Test, TestCustomerRegisterPage, CustomerRegisterPage
 
 ### Community 97 - "Community 97"
 Cohesion: 0.09
@@ -3812,16 +4039,16 @@ Cohesion: 0.12
 Nodes (9): Car, String, Vehicle, Main, String, String, Filo, Vehicle (+1 more)
 
 ### Community 107 - "Community 107"
-Cohesion: 0.05
-Nodes (22): Override, ResourceBundle, URL, Override, ResourceBundle, String, URL, Override (+14 more)
+Cohesion: 0.09
+Nodes (10): String, CRS, Scanner, PatientMenu, DeletePatientGUI, RenamePatientGUI, PatientManager, SelectPatientGUI (+2 more)
 
 ### Community 108 - "Community 108"
-Cohesion: 0.08
-Nodes (42): calculate_accuracy(), calculate_f1_score(), calculate_metrics(), calculate_precision(), calculate_recall(), create_confusion_matrix(), get_classification_report(), get_confusion_matrix_values() (+34 more)
+Cohesion: 0.06
+Nodes (52): get_all_datasets(), load_dataset(), Tüm veri kümelerini yükle ve dict olarak döndür.          Returns:         Dict:, Veri kümesini yükle.          Args:         filename: Yüklenecek dosyanın adı, Veri kümesini özellikler ve hedef değişken olarak ayır.          Args:         d, Veriyi eğitim ve test setlerine böl.          Args:         X: Özellikler DataFr, split_features_target(), split_train_test() (+44 more)
 
 ### Community 109 - "Community 109"
-Cohesion: 0.11
-Nodes (35): FILE, stbi_write_func, STBIWDEF, wchar_t, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file() (+27 more)
+Cohesion: 0.13
+Nodes (33): FILE, stbi_write_func, STBIWDEF, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp() (+25 more)
 
 ### Community 110 - "Community 110"
 Cohesion: 0.08
@@ -3844,16 +4071,16 @@ Cohesion: 0.09
 Nodes (13): Override, String, Book, List, Student, List, T, Test (+5 more)
 
 ### Community 116 - "Community 116"
-Cohesion: 0.11
-Nodes (10): LocalDate, String, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+2 more)
+Cohesion: 0.19
+Nodes (5): FXML, Override, ResourceBundle, URL, DoctorModeGUI
 
 ### Community 117 - "Community 117"
 Cohesion: 0.05
 Nodes (35): Override, RestTemplate, String, String, String, Override, CaptchaService, browserslist (+27 more)
 
 ### Community 118 - "Community 118"
-Cohesion: 0.26
-Nodes (18): NODE, kruskal(), main(), printTree(), sort(), printTree(), edge_list, doThatTree() (+10 more)
+Cohesion: 0.04
+Nodes (48): 🗓 4. Yıl - Güz, 📘 Akıllı Şebekelere Giriş, 📘 Atatürk İlkeleri ve İnkılap Tarihi 1, 📘 Bilgisayar Mühendisliğinde Güncel Konular, 📘 Biyomühendislikte Nanoteknoloji, 📘 Cultural Heritage Management, 📘 Doğal Arıtma, 📘 Endüstriyel Otomasyon (+40 more)
 
 ### Community 119 - "Community 119"
 Cohesion: 0.04
@@ -3868,16 +4095,16 @@ Cohesion: 0.11
 Nodes (25): CUSTOMER, main(), readFromFile(), Eğitim ve Doğrulama Kayıp/Başarım Grafiği, Ödev 1 README, _get_class_indices(), load_and_split_data(), _process_class_splits() (+17 more)
 
 ### Community 122 - "Community 122"
-Cohesion: 0.11
-Nodes (8): Override, String, Override, String, Person, PaymentInfo, Subscriber, Serializable
+Cohesion: 0.09
+Nodes (8): Override, String, String, Ogrenci, Person, DateInfo, PaymentInfo, Serializable
 
 ### Community 123 - "Community 123"
 Cohesion: 0.07
 Nodes (16): Override, String, Override, String, Override, String, String, String (+8 more)
 
 ### Community 124 - "Community 124"
-Cohesion: 0.06
-Nodes (20): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+12 more)
+Cohesion: 0.09
+Nodes (14): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+6 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.21
@@ -3920,8 +4147,8 @@ Cohesion: 0.20
 Nodes (27): clear_stdin(), main(), clear_matrix(), clear_screen(), do_append_new_random_row(), do_check_possible_mov_and_exp(), do_explosion(), do_gravity() (+19 more)
 
 ### Community 135 - "Community 135"
-Cohesion: 0.20
-Nodes (3): Before, Test, TestAll
+Cohesion: 0.12
+Nodes (9): ArrayList, Date, Doctor, Patient, Randezvous, Before, Test, Schedule (+1 more)
 
 ### Community 136 - "Community 136"
 Cohesion: 0.09
@@ -3940,12 +4167,12 @@ Cohesion: 0.19
 Nodes (8): searchFrontMovies(), GenreSidebar(), Props, MovieGrid(), Pagination(), Props, Props, SearchBar()
 
 ### Community 140 - "Community 140"
-Cohesion: 0.16
-Nodes (19): csv_kontrol_et(), guncelle_ders_yildizlari(), guncelle_ogrenci_gorusleri(), main(), Ders içeriklerini Google Form verilerinden güncelleyen ana fonksiyon.     Bu fo, yillaraGoreYildizSayisiDondur(), check_for_updates(), execute_command() (+11 more)
+Cohesion: 0.15
+Nodes (21): csv_kontrol_et(), guncelle_ders_yildizlari(), guncelle_ogrenci_gorusleri(), main(), Ders içeriklerini Google Form verilerinden güncelleyen ana fonksiyon.     Bu fo, yillaraGoreYildizSayisiDondur(), check_for_updates(), execute_command() (+13 more)
 
 ### Community 141 - "Community 141"
-Cohesion: 0.20
-Nodes (21): arrow(), attachToScrollParents(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent(), getOffsetRectRelativeToArbitraryNode() (+13 more)
+Cohesion: 0.16
+Nodes (26): computeStyle(), findCommonOffsetParent(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent(), getOffsetParent() (+18 more)
 
 ### Community 142 - "Community 142"
 Cohesion: 0.22
@@ -3968,12 +4195,12 @@ Cohesion: 0.13
 Nodes (10): String, Customer, LinkedList, String, SuppressWarnings, Test, String, Customer (+2 more)
 
 ### Community 147 - "Community 147"
-Cohesion: 0.14
-Nodes (17): get_all_datasets(), get_dataset_dir(), get_dataset_path(), load_dataset(), Data Loader Module ================== Bu modül, veri kümesi yükleme ve bölme işl, Tüm veri kümelerini yükle ve dict olarak döndür.          Returns:         Dict:, Dataset klasörünün yolunu döndür.          Returns:         str: dataset_files k, Veri kümesi dosyasının tam yolunu döndür.          Args:         filename: Dosya (+9 more)
+Cohesion: 0.12
+Nodes (9): Override, ResourceBundle, URL, ArrayList, Doctor, LocalDate, Rendezvous, Schedule (+1 more)
 
 ### Community 148 - "Community 148"
-Cohesion: 0.07
-Nodes (21): Yazarın Notları Ekranı, apply_minimum_size(), calculate_minimum_size(), get_screen_size(), Ekran çözünürlüğüne göre dinamik boyut hesaplama yardımcı modülü.  Bu modül, pen, Mevcut ekranın kullanılabilir boyutunu döndürür.          Returns:         tuple, Referans çözünürlüğe göre oranlanmış minimum boyut döndürür.          Pencere bo, Widget'a ekran çözünürlüğüne göre oranlanmış minimum boyut uygular.     Aynı zam (+13 more)
+Cohesion: 0.08
+Nodes (14): Yazarın Notları Ekranı, Undo Manager - Silme işlemlerini geri alma yöneticisi  Bu modül, silinen öğeleri, Her pencere için silme işlemlerini geri alma yöneticisi, Args:             max_undo_count: Maksimum geri alma sayısı, Silinen öğeyi kaydet                  Args:             index: Öğenin silindiği, Son silinen öğeyi al                  Returns:             tuple: (index, item_d, Geri alınacak öğe var mı?                  Returns:             bool: Geri alına, Undo geçmişini temizle (+6 more)
 
 ### Community 149 - "Community 149"
 Cohesion: 0.17
@@ -3992,8 +4219,8 @@ Cohesion: 0.06
 Nodes (48): QString, QWidget, QString, QTreeWidgetItem, QWidget, QTreeWidgetItem, QSqlConnectionDialog(), QString (+40 more)
 
 ### Community 153 - "Community 153"
-Cohesion: 0.22
-Nodes (11): clampNonNegative(), fetchAdminStatsAll(), fetchExternalAdminMovieById(), updateAdminMovieById(), apiFetch(), originalFetch, COLORS, AdminStats (+3 more)
+Cohesion: 0.18
+Nodes (13): adminDeleteUserByUuid(), adminUpdateUserByUuid(), clampNonNegative(), fetchAdminStatsAll(), fetchExternalAdminMovieById(), updateAdminMovieById(), apiFetch(), originalFetch (+5 more)
 
 ### Community 154 - "Community 154"
 Cohesion: 0.12
@@ -4013,7 +4240,7 @@ Nodes (24): Theory of Computation Introduction, Pigeonhole Principle, Determinis
 
 ### Community 158 - "Community 158"
 Cohesion: 0.08
-Nodes (18): String, get_mat_function(), get_string_input(), is_comma(), is_constant(), is_delimiter(), is_equation(), is_function() (+10 more)
+Nodes (19): String, get_mat_function(), get_string_input(), is_comma(), is_constant(), is_delimiter(), is_equation(), is_function() (+11 more)
 
 ### Community 159 - "Community 159"
 Cohesion: 0.17
@@ -4056,8 +4283,8 @@ Cohesion: 0.07
 Nodes (26): Devre Teorisi 4, Devre Teorisi Dersi, Digital Logic and Computer Design - M. Morris Mano, Görkem Serbes Not 1, Hamza Osman İlhan, HMW1 Cache Buffer, HMW2 Huffman Tree, HMW3 Boyer Moore (+18 more)
 
 ### Community 171 - "Community 171"
-Cohesion: 0.10
-Nodes (42): a(), at(), Be(), c(), ct(), dt(), $e(), et() (+34 more)
+Cohesion: 0.12
+Nodes (36): a(), at(), Be(), c(), ct(), dt(), $e(), et() (+28 more)
 
 ### Community 172 - "Community 172"
 Cohesion: 0.09
@@ -4096,16 +4323,16 @@ Cohesion: 0.21
 Nodes (14): APIResponse, Boolean, DeleteMapping, Integer, MovieRepository, PostMapping, PutMapping, ResponseEntity (+6 more)
 
 ### Community 181 - "Community 181"
-Cohesion: 0.17
-Nodes (15): Integer, Page, Pageable, Integer, Page, Pageable, Movie, Page (+7 more)
+Cohesion: 0.16
+Nodes (16): Integer, Page, Pageable, Integer, Page, Pageable, Movie, Page (+8 more)
 
 ### Community 182 - "Community 182"
 Cohesion: 0.20
 Nodes (9): Boolean, Integer, Long, Movie, MovieCommentDTO, MovieFrontDTO, Page, String (+1 more)
 
 ### Community 183 - "Community 183"
-Cohesion: 0.23
-Nodes (3): BigDecimal, String, Vehicle
+Cohesion: 0.08
+Nodes (14): BigDecimal, Connection, String, Warehouse, BigDecimal, String, AfterAll, BeforeAll (+6 more)
 
 ### Community 184 - "Community 184"
 Cohesion: 0.23
@@ -4120,8 +4347,8 @@ Cohesion: 0.17
 Nodes (20): cellRange(), clear(), disableMouseSelection(), enableMouseSelection(), eventTrigger(), i18n(), info(), init() (+12 more)
 
 ### Community 187 - "Community 187"
-Cohesion: 0.09
-Nodes (22): CreateDirectoryDialog, ReadDialog, RemoveDialog, RemoveDirectoryDialog, TableDialog, WriteDialog, DateAverageDialog, MinMaxReviewDialog (+14 more)
+Cohesion: 0.08
+Nodes (25): String, CreateDirectoryDialog, ReadDialog, RemoveDialog, RemoveDirectoryDialog, TableDialog, WriteDialog, JDialog (+17 more)
 
 ### Community 188 - "Community 188"
 Cohesion: 0.26
@@ -4156,12 +4383,12 @@ Cohesion: 0.27
 Nodes (20): main(), FILE, calculateHistogram(), changeColor(), changePixel(), createEPGM(), createPGM(), decodeEPGM() (+12 more)
 
 ### Community 196 - "Community 196"
-Cohesion: 0.21
-Nodes (21): main(), FILE, add_to_list(), calculate_table_entrys(), create_entry(), create_node(), find_nearest_prime(), free_allocated_memory() (+13 more)
+Cohesion: 0.05
+Nodes (87): NODE, NODE, main(), main(), STACK, main(), createNode(), main() (+79 more)
 
 ### Community 197 - "Community 197"
-Cohesion: 0.15
-Nodes (19): get_dataset_dir(), get_feature_ranking(), get_top_features(), load_processed_dataset(), normalize_scores(), Dataset Helper Module ===================== Bu modül, veri kümesi yükleme, kayde, Skorları 0-1 aralığına normalize et.          Args:         scores: Ham skorlar, Özellik skorlarını sıralayarak DataFrame olarak döndür.          Args:         f (+11 more)
+Cohesion: 0.12
+Nodes (23): get_dataset_dir(), get_feature_ranking(), get_top_features(), load_processed_dataset(), normalize_scores(), Dataset Helper Module ===================== Bu modül, veri kümesi yükleme, kayde, Skorları 0-1 aralığına normalize et.          Args:         scores: Ham skorlar, Özellik skorlarını sıralayarak DataFrame olarak döndür.          Args:         f (+15 more)
 
 ### Community 198 - "Community 198"
 Cohesion: 0.04
@@ -4181,7 +4408,7 @@ Nodes (13): String, Customer, List, String, String, Customer, List, String (+5 m
 
 ### Community 202 - "Community 202"
 Cohesion: 0.11
-Nodes (11): Override, ResourceBundle, URL, ArrayList, Doctor, Hospital, Object, Override (+3 more)
+Nodes (11): FXML, Override, ResourceBundle, URL, Doctor, Hospital, Object, Override (+3 more)
 
 ### Community 203 - "Community 203"
 Cohesion: 0.17
@@ -4236,12 +4463,12 @@ Cohesion: 0.24
 Nodes (7): Boolean, Long, Page, PrivateMessageDTO, String, UUID, UserMessageService
 
 ### Community 216 - "Community 216"
-Cohesion: 0.09
-Nodes (21): SearchCategory, SearchResponse, searchUsersMovies(), SpringPage, ProfileCardSlider(), ProfileCardSliderProps, ProfileListFriendsProps, Props (+13 more)
+Cohesion: 0.18
+Nodes (9): SearchCategory, SearchResponse, searchUsersMovies(), SpringPage, Props, Props, PageSlice, Props (+1 more)
 
 ### Community 217 - "Community 217"
-Cohesion: 0.18
-Nodes (24): Array, Column, DataFrame, Dataset, Double, List, String, StructType (+16 more)
+Cohesion: 0.22
+Nodes (18): Array, Column, DataFrame, List, String, StructType, classifiedColumns(), dfSchema() (+10 more)
 
 ### Community 218 - "Community 218"
 Cohesion: 0.16
@@ -4320,8 +4547,8 @@ Cohesion: 0.13
 Nodes (3): applyStyleOnLoad(), offset(), parseOffset()
 
 ### Community 237 - "Community 237"
-Cohesion: 0.23
-Nodes (12): Long, Modifying, Optional, Query, Session, Transactional, UUID, Transactions (+4 more)
+Cohesion: 0.08
+Nodes (24): 📘 Davranış Bilimi, 📘 Davranışsal Açıdan Kurumsal İtibar, 📘 Ekonomi Politikaları, 📘 Felsefeye Giriş, 📘 Finansal ve Maliyet Muhasebesi, 📘 Girişimcilik, 📘 Hukukun Genel Kavramları, 📘 İnsan Kaynakları Yönetimi (İşletme) (+16 more)
 
 ### Community 238 - "Community 238"
 Cohesion: 0.13
@@ -4391,10 +4618,6 @@ Nodes (11): main(), partition(), printArray(), quickSort(), swap(), main(), part
 Cohesion: 0.17
 Nodes (4): String, String, Kitap, Main
 
-### Community 255 - "Community 255"
-Cohesion: 0.11
-Nodes (11): String, String, String, String, String, InsufficientStockError, ProductShippingError, Exception (+3 more)
-
 ### Community 256 - "Community 256"
 Cohesion: 0.17
 Nodes (9): String, List, Staff, String, String, Main, Staff, AcademicStaff (+1 more)
@@ -4404,8 +4627,8 @@ Cohesion: 0.21
 Nodes (7): Integer, Override, String, Mage, Team, Rogue, Warrior
 
 ### Community 258 - "Community 258"
-Cohesion: 0.06
-Nodes (32): FXML, Override, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+24 more)
+Cohesion: 0.07
+Nodes (23): FXML, Override, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+15 more)
 
 ### Community 259 - "Community 259"
 Cohesion: 0.13
@@ -4444,8 +4667,8 @@ Cohesion: 0.15
 Nodes (15): Computer Networks and the Internet, Application Layer, Application Layer, Transport Layer, Transport Layer, The Network Layer: Data Plane, The Network Layer: Control Plane, The Link Layer and LANs (+7 more)
 
 ### Community 269 - "Community 269"
-Cohesion: 0.10
-Nodes (7): CommercialVehicle, PersonalVehicle, CommercialVehicle, PersonalVehicle, String, Car, Vehicle
+Cohesion: 0.12
+Nodes (5): CommercialVehicle, PersonalVehicle, CommercialVehicle, PersonalVehicle, Vehicle
 
 ### Community 270 - "Community 270"
 Cohesion: 0.18
@@ -4500,8 +4723,8 @@ Cohesion: 0.18
 Nodes (8): NCDCRecordParser, YearTemperatureMapper, String, Text, Context, LongWritable, Override, Text
 
 ### Community 283 - "Community 283"
-Cohesion: 0.09
-Nodes (23): Electronic Devices and Circuit Theory - Boylestad, Elektronik Devreler Slayt 00, Elektronik Devreler Dersi, Electronic Devices - Floyd, Lab Föyü (2023), Hamza Osman Kayra, Proje Raporu (Kayra, Akib, Basel, MaliAbi), Lab 0 (2021) (+15 more)
+Cohesion: 0.14
+Nodes (14): Electronic Devices and Circuit Theory - Boylestad, Elektronik Devreler Slayt 00, Elektronik Devreler Dersi, Electronic Devices - Floyd, Lab Föyü (2023), Hamza Osman Kayra, Proje Raporu (Kayra, Akib, Basel, MaliAbi), Lab 0 (2021) (+6 more)
 
 ### Community 284 - "Community 284"
 Cohesion: 0.14
@@ -4568,8 +4791,8 @@ Cohesion: 0.20
 Nodes (7): HashMap, Integer, List, Product, String, Z, Customer
 
 ### Community 300 - "Community 300"
-Cohesion: 0.38
-Nodes (13): NODE, main(), calculateHeight(), calculateLength(), createFastLinkedList(), createInitialLinkedList(), createLinkedList(), createNode() (+5 more)
+Cohesion: 0.14
+Nodes (21): __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_Init(), __Pyx_CyFunction_traverse(), __Pyx_FetchCommonType() (+13 more)
 
 ### Community 301 - "Community 301"
 Cohesion: 0.36
@@ -4580,12 +4803,12 @@ Cohesion: 0.34
 Nodes (13): main(), myvariable, determineM(), determineType(), getKey(), insert(), isPrime(), lookUp() (+5 more)
 
 ### Community 303 - "Community 303"
-Cohesion: 0.06
-Nodes (33): 📅 3. Sınıf Bahar, 📘 Ağ Teknolojileri, 📘 Bilgisayar Projesi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+25 more)
+Cohesion: 0.07
+Nodes (28): 📅 3. Sınıf Bahar, 📘 Bilgisayar Projesi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+20 more)
 
 ### Community 304 - "Community 304"
-Cohesion: 0.10
-Nodes (17): QThread, clear_progress_callback(), is_stop_requested(), Thread'den progress dialog'a mesaj göndermek için callback ayarla., Durdurma isteği gönder., Durdurma isteği var mı kontrol et., request_stop(), set_progress_callback() (+9 more)
+Cohesion: 0.11
+Nodes (15): QThread, clear_progress_callback(), Thread'den progress dialog'a mesaj göndermek için callback ayarla., Durdurma isteği gönder., request_stop(), set_progress_callback(), CMDScriptRunnerThread, enqueue_output() (+7 more)
 
 ### Community 305 - "Community 305"
 Cohesion: 0.23
@@ -4724,16 +4947,16 @@ Cohesion: 0.11
 Nodes (18): Ali Can Karaca, News Articles Dataset Backup, Business News Text, Conda Environment Configuration, Bir Duygu Analiz Yöntemi Olarak Metinden Emoji Tahmini, 2022-2023 Güz Dönemi, Proje Bilgileri, Projenin Konusu (+10 more)
 
 ### Community 341 - "Community 341"
-Cohesion: 0.30
-Nodes (9): Long, Modifying, Notification, Optional, Page, Pageable, Query, Transactional (+1 more)
+Cohesion: 0.17
+Nodes (14): Geçici bildirim (Toast Notification) modülü. Kullanıcıya kısa süreli mesajlar gö, Geçici bildirim widget'ı - belirli süre sonra otomatik kapanır, Başarı bildirimi göster, Hata bildirimi göster, Uyarı bildirimi göster, Bilgi bildirimi göster, Bildirimi göster.                  Args:             message: Gösterilecek mesaj, Toast'ı parent widget'ın veya ekranın alt ortasına konumlandır (+6 more)
 
 ### Community 342 - "Community 342"
-Cohesion: 0.06
-Nodes (35): Alana Göre Maaş Ortalamaları ve Artış Oranları, Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları, Alana Göre Maaş Ortalamaları ve Artış Oranları (+27 more)
+Cohesion: 0.14
+Nodes (14): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Alana Göre Maaş Ortalamaları ve Artış Oranları, Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı, Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı, Genel Maaş Ortalamaları ve Artış Oranı, 🔍 Kavramlar, Stajyer ve Mezun için Maaş Analizi (+6 more)
 
 ### Community 343 - "Community 343"
-Cohesion: 0.27
-Nodes (19): Token, get_mat_equation(), infix_to_postfix(), solver_process_op_or_func(), syntax_check_msg_advanced(), syntax_check_msg_basic(), token_list_add(), token_list_get_last() (+11 more)
+Cohesion: 0.24
+Nodes (22): Token, calculate_simson_1_3(), calculate_simson_3_8(), get_mat_equation(), infix_to_postfix(), solver_process_op_or_func(), solver_solve(), syntax_check_msg_advanced() (+14 more)
 
 ### Community 344 - "Community 344"
 Cohesion: 0.11
@@ -4856,12 +5079,12 @@ Cohesion: 0.20
 Nodes (7): ConstraintValidatorContext, Override, String, ChangePassword, SignUpRequest, PasswordValidator, ValidPassword
 
 ### Community 376 - "Community 376"
-Cohesion: 0.36
-Nodes (12): main(), STACK, calculateBitLength(), decimalToBinary(), differenceBtwnZerosAndOnes(), generateSignificantBitsForNegativeDecimals(), generateSignificantBitsForPositiveDecimals(), initStack() (+4 more)
+Cohesion: 0.23
+Nodes (12): APIResponse, DeleteMapping, GetMapping, Integer, Page, PostMapping, ResponseEntity, String (+4 more)
 
 ### Community 377 - "Community 377"
-Cohesion: 0.37
-Nodes (12): createNode(), main(), mainMenu(), printList(), readFromFile(), addNode(), counterQuery(), countSize() (+4 more)
+Cohesion: 0.20
+Nodes (4): FXML, ResourceBundle, URL, ReceptionistGUI
 
 ### Community 378 - "Community 378"
 Cohesion: 0.41
@@ -4876,8 +5099,8 @@ Cohesion: 0.38
 Nodes (11): main(), calculateMedian(), closer(), findDistance(), findMin(), findRectangle(), inputArray(), printStruct() (+3 more)
 
 ### Community 381 - "Community 381"
-Cohesion: 0.31
-Nodes (20): calculate_simson_1_3(), calculate_simson_3_8(), derivative_backward(), derivative_central(), derivative_forward(), get_double_input(), method_closed(), method_newton_raphson() (+12 more)
+Cohesion: 0.24
+Nodes (21): clear_stdin(), main(), get_double_input(), get_integer_input(), get_method(), get_vector_input(), method_closed(), method_gauss_seidal() (+13 more)
 
 ### Community 382 - "Community 382"
 Cohesion: 0.17
@@ -4888,16 +5111,16 @@ Cohesion: 0.06
 Nodes (30): 1. Week - 2 October 2023 Monday, Adaptive Compression, Asymetric Compression, Bits per Chars, Bits per Pixels, Codec, Compressor / Encoder / Kodlayıcı, Corpus (+22 more)
 
 ### Community 384 - "Community 384"
-Cohesion: 0.08
-Nodes (25): ACK, EU, FÇ, Bilgisayar Donanımı Ders Bilgileri (Eski), Bilgisayar Organizasyonu, Bilgisayar Organizasyonu Notları, Bilgisayar Organizasyonu Örnek Soru, 📚 Bilgisayar Organizasyonu (+17 more)
+Cohesion: 0.15
+Nodes (13): ACK, EU, FÇ, Bilgisayar Donanımı Ders Bilgileri (Eski), 📚 Bilgisayar Organizasyonu, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri (+5 more)
 
 ### Community 385 - "Community 385"
 Cohesion: 0.15
 Nodes (10): # TODO: Implement the forward pass for the three-layer convolutional net,  #, # TODO: Implement the backward pass for the three-layer convolutional net, #, # NOTE: To ensure that your implementation matches ours and you pass the   #, Evaluate loss and gradient for the three-layer convolutional network.          I, A three-layer convolutional network with the following architecture:      conv -, Initialize a new network.          Inputs:         - input_dim: Tuple (C, H, W), # TODO: Initialize weights and biases for the three-layer convolutional    #, # IMPORTANT: For this assignment, you can assume that the padding          # (+2 more)
 
 ### Community 386 - "Community 386"
-Cohesion: 0.22
-Nodes (13): _fnBuildHead(), _fnDetectHeader(), _fnGetUniqueThs(), Ham Veri Saçılım Grafiği, detect_header(), load_data(), main(), plot_data() (+5 more)
+Cohesion: 0.29
+Nodes (10): Ham Veri Saçılım Grafiği, detect_header(), load_data(), main(), plot_data(), Dosyadan sayısal veriyi yükler; CSV dosyalarında varsa başlığı atlar.      (n_ör, İki sınav notunun etiketlere göre renklendirildiği saçılım grafiğini çizer ve ka, Bir dosyanın ilk boş olmayan satırının başlık olup olmadığını tespit eder. (+2 more)
 
 ### Community 387 - "Community 387"
 Cohesion: 0.26
@@ -4920,8 +5143,8 @@ Cohesion: 0.17
 Nodes (11): cikmislar, ders_oylama, ders_oylama_csv, ders_yorumlama, ders_yorumlama_csv, dokumanlar_repo_yolu, github_url, hoca_oylama (+3 more)
 
 ### Community 392 - "Community 392"
-Cohesion: 0.16
-Nodes (15): clockwise(), computeAutoPlacement(), enableEventListeners(), findIndex(), flip(), getArea(), getOppositePlacement(), getOppositeVariation() (+7 more)
+Cohesion: 0.15
+Nodes (17): arrow(), clockwise(), enableEventListeners(), find(), findIndex(), flip(), getOppositePlacement(), getOppositeVariation() (+9 more)
 
 ### Community 393 - "Community 393"
 Cohesion: 0.24
@@ -5003,12 +5226,16 @@ Nodes (3): Override, String, Urun
 Cohesion: 0.19
 Nodes (7): Doctor, Doctor, List, Patient, Treatment, Z, Hospital
 
+### Community 414 - "Community 414"
+Cohesion: 0.28
+Nodes (5): LocalDate, String, ResourceBundle, URL, DateManager
+
 ### Community 415 - "Community 415"
 Cohesion: 0.45
 Nodes (4): List, Main, String, Team
 
 ### Community 417 - "Community 417"
-Cohesion: 0.19
+Cohesion: 0.18
 Nodes (27): main(), MainMenu(), power(), print_matrix(), func, Gauss-Seidal, main(), Bisection() (+19 more)
 
 ### Community 418 - "Community 418"
@@ -5016,8 +5243,8 @@ Cohesion: 0.07
 Nodes (29): Soru 1, Önder GÖRMEZ - 21501035, Bilimsel Hazırlık Öğrencisi, BLM2022 Bilgisayar Donanımı, Cache Kısmı, CPU Tipini Tespit Etme, CPU Özelliklerini Detaylı Olarak Görme, Genel Yorumlar (+21 more)
 
 ### Community 419 - "Community 419"
-Cohesion: 0.21
-Nodes (9): fetchReceivedFriendRequests(), fetchSentFriendRequests(), AuthContext, AuthContextType, AuthProvider(), AuthProviderProps, clearUserFromStorage(), getUserFromStorage() (+1 more)
+Cohesion: 0.31
+Nodes (9): Optional, Page, Pageable, Query, User, UserFriendRequest, UserFriendRequestDTO, UserFriendRequestsRepository (+1 more)
 
 ### Community 421 - "Community 421"
 Cohesion: 0.24
@@ -5148,8 +5375,8 @@ Cohesion: 0.24
 Nodes (3): Reservation, String, Customer
 
 ### Community 456 - "Community 456"
-Cohesion: 0.31
-Nodes (5): BigDecimal, Connection, String, Warehouse, AddCarToStockPage
+Cohesion: 0.23
+Nodes (5): FXML, Override, ResourceBundle, URL, SelectDoctorGUI
 
 ### Community 457 - "Community 457"
 Cohesion: 0.29
@@ -5244,8 +5471,8 @@ Cohesion: 0.11
 Nodes (17): Hash Table Implementation Notes, Hashing, PNP3 Slaytı, 🗓 3. Yıl - Güz, 📘 Algoritma Analizi, M. Amaç Güvensan, Boyer Moore String Search, Branch and Bound (+9 more)
 
 ### Community 481 - "Community 481"
-Cohesion: 0.07
-Nodes (28): 📅 2. Sınıf Güz, 📘 Alt Seviye Programlama, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+20 more)
+Cohesion: 0.09
+Nodes (23): 📅 2. Sınıf Güz, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+15 more)
 
 ### Community 482 - "Community 482"
 Cohesion: 0.22
@@ -5504,8 +5731,8 @@ Cohesion: 0.18
 Nodes (12): model_shot_puanlari_cizdir(), Modellerin zero-shot, 3-shot ve 5-shot doğruluk oranlarını gösteren bar chart ol, get_shot_file_dir(), gomme_dizin_adi_al(), gomme_dizini_al(), kok_dizini_al(), Bu fonksiyon dosyanın bulunduğu dizini döndürür., Bu fonksiyon veri kümelerinin bulunduğu dizini döndürür. (+4 more)
 
 ### Community 558 - "Community 558"
-Cohesion: 0.07
-Nodes (32): Araştırma Görevlileri, 👨‍🏫 Arş. Grv. Alper Eğitmen, 👨‍🏫 Arş. Grv. Barış Akkuş, 👨‍🏫 Arş. Grv. Begüm Özbay, 👨‍🏫 Arş. Grv. Burak Ahmet Özden, 👩‍🏫 Arş. Grv. Elif Aşıcı, 👩‍🏫 Arş. Grv. Elçin Güveyi, 👨‍🏫 Arş. Grv. Emre Parlak (+24 more)
+Cohesion: 0.08
+Nodes (25): Araştırma Görevlileri, 👨‍🏫 Arş. Grv. Barış Akkuş, 👨‍🏫 Arş. Grv. Begüm Özbay, 👨‍🏫 Arş. Grv. Burak Ahmet Özden, 👩‍🏫 Arş. Grv. Elif Aşıcı, 👩‍🏫 Arş. Grv. Elçin Güveyi, 👨‍🏫 Arş. Grv. Emre Parlak, 👨‍🏫 Arş. Grv. Fırat Fuat Olcay (+17 more)
 
 ### Community 559 - "Community 559"
 Cohesion: 0.22
@@ -5728,8 +5955,8 @@ Cohesion: 0.36
 Nodes (5): Object, Override, Session, AbstractAuthenticationToken, AuthenticationToken
 
 ### Community 626 - "Community 626"
-Cohesion: 0.13
-Nodes (29): main(), Matrix, namespace, namespace, get_matrix_input(), get_matrix_size_input(), get_size_input(), get_vector_input() (+21 more)
+Cohesion: 0.25
+Nodes (17): Matrix, get_matrix_input(), get_matrix_size_input(), get_size_input(), matrix_create(), matrix_delete(), matrix_find_pivot_row(), matrix_identity_create() (+9 more)
 
 ### Community 627 - "Community 627"
 Cohesion: 0.39
@@ -5796,8 +6023,8 @@ Cohesion: 0.08
 Nodes (24): 🎯 En Önemli Özellikler, 🔬 Feature Selection Genel Analiz Raporu, Filtreleme Yöntemi (Pearson Korelasyonu), Filtreleme Yöntemi (Pearson Korelasyonu), Genel Değerlendirme, Gömülü Yöntem (Random Forest), Gömülü Yöntem (Random Forest), İki Yöntemde Ortak Bulunan (Yüksek Güvenilirlik) (+16 more)
 
 ### Community 643 - "Community 643"
-Cohesion: 0.25
-Nodes (4): BigDecimal, Override, String, SaleRecord
+Cohesion: 0.17
+Nodes (12): Bilgisayar Organizasyonu, Bilgisayar Organizasyonu Notları, Bilgisayar Organizasyonu Örnek Soru, CPU Cache and TLB Details Table, Esma Nur Çilekaya Course Notes Metadata, Göksel Biricik, Mert Guler Odev 3 README, Mert Guler Odev 3 Sonuc (+4 more)
 
 ### Community 644 - "Community 644"
 Cohesion: 0.25
@@ -5808,12 +6035,12 @@ Cohesion: 0.25
 Nodes (4): AfterAll, BeforeAll, Test, testDealerRequestApproval
 
 ### Community 646 - "Community 646"
-Cohesion: 0.25
-Nodes (20): main(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination(), gaussSeidel(), gregoryNewton() (+12 more)
+Cohesion: 0.24
+Nodes (22): main(), Gauss Elimination, main(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination() (+14 more)
 
 ### Community 647 - "Community 647"
-Cohesion: 0.08
-Nodes (13): String, Connection, String, Connection, String, Connection, String, Warehouse (+5 more)
+Cohesion: 0.36
+Nodes (4): Connection, String, Warehouse, WarehouseMainPage
 
 ### Community 648 - "Community 648"
 Cohesion: 0.25
@@ -5884,16 +6111,16 @@ Cohesion: 0.09
 Nodes (22): Akim, Asal, Baglar, Dagilim Fonksiyonu, Difuzyon, Elektron Yogunlugu, Fermi Enerjisi, Fermi Seviyesinin Yeri (+14 more)
 
 ### Community 666 - "Community 666"
-Cohesion: 0.53
-Nodes (6): tokenize_type_to_data(), var_list_add(), var_list_add_predefined_vars(), var_list_get_index(), var_list_init(), variable_add_token()
+Cohesion: 0.31
+Nodes (13): derivative_backward(), derivative_central(), derivative_forward(), tokenize_type_to_data(), var_list_add(), var_list_add_predefined_vars(), var_list_get_index(), var_list_get_non_consts() (+5 more)
 
 ### Community 667 - "Community 667"
 Cohesion: 0.09
 Nodes (22): 3. Hafta - 21 Ekim 2021 Perşembe, Aggregate Functions, Aggregate Functions - GROUP BY, Aggregate Functions - HAVING Clause, ALTER TABLE, Basic Query Structure, CREATE TABLE Construct, DELETE (+14 more)
 
 ### Community 668 - "Community 668"
-Cohesion: 0.06
-Nodes (31): 🗓 1. Yıl - Bahar, 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 🗓 4. Yıl - Güz, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler (+23 more)
+Cohesion: 0.08
+Nodes (25): 🗓 1. Yıl - Bahar, 🗓 2. Yıl - Bahar, 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler, 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler (+17 more)
 
 ### Community 671 - "Community 671"
 Cohesion: 0.25
@@ -5984,8 +6211,8 @@ Cohesion: 0.32
 Nodes (3): Override, String, Kisi
 
 ### Community 702 - "Community 702"
-Cohesion: 0.35
-Nodes (11): main(), addLast(), BelongedFiles(), delete_file(), delete_node(), deleteNodeLinkedList(), dosya_ekle(), findMin() (+3 more)
+Cohesion: 0.36
+Nodes (3): Override, String, Subscriber
 
 ### Community 705 - "Community 705"
 Cohesion: 0.52
@@ -5996,7 +6223,7 @@ Cohesion: 0.43
 Nodes (5): Long, Page, Pageable, UserActivity, UserActivityRepository
 
 ### Community 707 - "Community 707"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (8): Collection, Journal, Override, Subscriber, String, Distributor, Main, TestDistributor
 
 ### Community 708 - "Community 708"
@@ -6033,7 +6260,7 @@ Nodes (21): 1. Hafta - 9 Kasım 2021 Salı, 1. Hello World, 2. Info Echo, 3. Ech
 
 ### Community 716 - "Community 716"
 Cohesion: 0.04
-Nodes (88): PyInit_im2col_cython(), __Pyx__ArgTypeTest(), __pyx_array___dealloc__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(), __pyx_array___setitem__(), __pyx_bisect_code_objects(), __Pyx_check_single_interpreter() (+80 more)
+Nodes (82): PyInit_im2col_cython(), __Pyx__ArgTypeTest(), __pyx_array___dealloc__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(), __pyx_array___setitem__(), __pyx_bisect_code_objects(), __Pyx_BufFmt_CheckString() (+74 more)
 
 ### Community 717 - "Community 717"
 Cohesion: 0.29
@@ -6168,12 +6395,12 @@ Cohesion: 0.29
 Nodes (6): bolum_aciklamasi, bolum_adi, en_populer_hoca, hoca_adi, oy_sayisi, hocalar
 
 ### Community 751 - "Community 751"
-Cohesion: 0.24
-Nodes (10): computeStyle(), destroy(), findCommonOffsetParent(), getOffsetParent(), getRoot(), getRoundedOffsets(), getSupportedPropertyName(), isModifierEnabled() (+2 more)
+Cohesion: 0.22
+Nodes (9): 📘 Alt Seviye Programlama, 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler, 📘 Ağ Teknolojileri, 📘 Bilgisayar Donanımı, 📘 Devre Teorisi, 📘 Elektronik Devreler, 📘 Mesleki Hukuk ve Etik, 📘 Mikroişlemci Sistemleri (+1 more)
 
 ### Community 752 - "Community 752"
 Cohesion: 0.22
-Nodes (11): applyStyle(), applyStyleOnLoad(), find(), hide(), isModifierRequired(), isNumeric(), offset(), parseOffset() (+3 more)
+Nodes (10): applyStyle(), applyStyleOnLoad(), computeAutoPlacement(), getArea(), isNumeric(), offset(), parseOffset(), setAttributes() (+2 more)
 
 ### Community 753 - "Community 753"
 Cohesion: 0.10
@@ -6268,12 +6495,12 @@ Cohesion: 0.47
 Nodes (3): CommercialVehicle, VehicleRegistrationSystem, String
 
 ### Community 782 - "Community 782"
-Cohesion: 0.33
-Nodes (3): Schedule, String, Doctor
+Cohesion: 0.29
+Nodes (4): Schedule, String, Doctor, Person
 
 ### Community 783 - "Community 783"
-Cohesion: 0.15
-Nodes (10): Date, Doctor, Patient, ArrayList, Date, Doctor, Patient, Randezvous (+2 more)
+Cohesion: 0.33
+Nodes (4): Date, Doctor, Patient, Randezvous
 
 ### Community 784 - "Community 784"
 Cohesion: 0.25
@@ -6330,10 +6557,6 @@ Nodes (20): Bilişim Sistemleri Güvenliği 2. Hafta, Prof. Dr. Ali Gökhan YAVU
 ### Community 798 - "Community 798"
 Cohesion: 0.67
 Nodes (5): main(), swap(), totalResult(), totalResultBruteForce(), VAR
-
-### Community 799 - "Community 799"
-Cohesion: 0.24
-Nodes (5): Override, ResourceBundle, String, URL, DeleteDoctorGUI
 
 ### Community 800 - "Community 800"
 Cohesion: 0.10
@@ -6625,7 +6848,7 @@ Nodes (3): Applicant, VisaType, VisaApplicationSystem
 
 ### Community 894 - "Community 894"
 Cohesion: 0.20
-Nodes (10): Doktor Öğretim Üyeleri, 👨‍🏫 Dr. Ahmet Elbir, 👩‍🏫 Dr. Ayşe Öcal, 👨‍🏫 Dr. Erkan Uslu, 👨‍🏫 Dr. Furkan Çakmak, 👨‍🏫 Dr. Göksel Biricik, 👩‍🏫 Dr. H.İrem Türkmen, 👨‍🏫 Dr. M. Utku Kalay (+2 more)
+Nodes (10): Doktor Öğretim Üyeleri, 👨‍🏫 Dr. Ahmet Elbir, 👩‍🏫 Dr. Ayşe Öcal, 👨‍🏫 Dr. Erkan Uslu, 👨‍🏫 Dr. Furkan Çakmak, 👨‍🏫 Dr. Göksel Biricik, 👩‍🏫 Dr. H. İrem Türkmen, 👨‍🏫 Dr. M. Utku Kalay (+2 more)
 
 ### Community 895 - "Community 895"
 Cohesion: 0.57
@@ -6700,8 +6923,8 @@ Cohesion: 0.40
 Nodes (5): Seriler Uygulama 2, Seriler 4, Doğru ve Düzlem Denklemleri, Diziler 1, Matematik Uygulama 3
 
 ### Community 915 - "Community 915"
-Cohesion: 0.07
-Nodes (28): 📘 Bilgisayar Grafiğine Giriş, 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📘 Bilgisayar Mühendisliğinde Özel Konular 3, 📘 Bilgiye Erişim Ve Arama Motorları, 📘 Bilişim Sistemleri Güvenliği, 📘 Biyoenformatiğe Giriş, 📘 Büyük Veri İşleme Ve Analizi (+20 more)
+Cohesion: 0.05
+Nodes (44): 📘 Ayrık Olay Simülasyonu, 📘 Bilgisayar Grafiğine Giriş, 📘 Bilgisayar Mimarisi, 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📘 Bilgisayar Mühendisliğinde Özel Konular 3, 📘 Bilgiye Erişim ve Arama Motorları, 📘 Bilişim Sistemleri Güvenliği (+36 more)
 
 ### Community 916 - "Community 916"
 Cohesion: 0.70
@@ -6752,8 +6975,8 @@ Cohesion: 0.40
 Nodes (5): Metinden Emoji Tahmini (Emoji Prediction), Emoji Prediction in Tweets using BERT, Emoji Prediction LSTM, EPUTION at SemEval-2018 Task 2, Metinden Emoji Tahmini Final Raporu
 
 ### Community 931 - "Community 931"
-Cohesion: 0.14
-Nodes (9): adminDeleteUserByUuid(), adminUpdateUserByUuid(), SearchCategory, SearchResponse, searchUsersMovies(), Pageable, PaginatedResponse, Sort (+1 more)
+Cohesion: 0.09
+Nodes (22): SearchCategory, SearchResponse, searchUsersMovies(), AuthContext, AuthContextType, AuthProvider(), AuthProviderProps, clearUserFromStorage() (+14 more)
 
 ### Community 932 - "Community 932"
 Cohesion: 0.33
@@ -7019,9 +7242,13 @@ Nodes (3): hesapla(), ilkyap(), main()
 Cohesion: 0.67
 Nodes (3): FILE, main(), splittingIntoTrainingAndTest()
 
+### Community 1101 - "Community 1101"
+Cohesion: 0.36
+Nodes (5): FXML, Override, ResourceBundle, URL, PatientListGUI
+
 ### Community 1108 - "Community 1108"
-Cohesion: 0.25
-Nodes (6): Long, NotificationDTO, Page, String, User, NotificationService
+Cohesion: 0.36
+Nodes (3): Connection, String, StartPage
 
 ### Community 1127 - "Community 1127"
 Cohesion: 0.10
@@ -7564,12 +7791,12 @@ Cohesion: 0.52
 Nodes (4): Connection, LocalDate, Override, TestDriveRequest
 
 ### Community 1350 - "Community 1350"
-Cohesion: 0.27
-Nodes (5): Override, ResourceBundle, String, URL, DeleteSectionGUI
+Cohesion: 0.25
+Nodes (8): 📘 Derleyici Tasarımı, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📘 Oyun Geliştirmeye Giriş
 
 ### Community 1353 - "Community 1353"
-Cohesion: 0.36
-Nodes (6): CRS, Scanner, CRS, Scanner, AdminMenu, UserMenu
+Cohesion: 0.14
+Nodes (15): CRS, Scanner, ArrayList, CRS, HospitalMenu, Patient, Rendezvous, Scanner (+7 more)
 
 ### Community 1357 - "Community 1357"
 Cohesion: 0.67
@@ -7948,7 +8175,7 @@ Cohesion: 0.67
 Nodes (3): augmentWidthOrHeight(), curCSS(), getWidthOrHeight()
 
 ### Community 1534 - "Community 1534"
-Cohesion: 0.36
+Cohesion: 0.38
 Nodes (3): Connection, String, DealerLoginPage
 
 ### Community 1535 - "Community 1535"
@@ -7984,7 +8211,7 @@ Cohesion: 0.11
 Nodes (18): 10. Hafta - 6 Aralık 2021 Pazartesi, Basic Concepts, Bounded-Buffer Problem, Chapter 6: CPU Scheduling, Condition Variables, CPU Scheduler, Dining-Philosophers Problem, Dispatcher (+10 more)
 
 ### Community 1564 - "Community 1564"
-Cohesion: 0.27
+Cohesion: 0.24
 Nodes (17): bisection_yontemi(), degerbulan(), faktoriyel_hesaplayan(), fark_operator(), fonksiyonun_turevi(), gauss_eleminasyon(), gauss_seidal(), gregory_newton() (+9 more)
 
 ### Community 1568 - "Community 1568"
@@ -8052,12 +8279,12 @@ Cohesion: 0.11
 Nodes (17): 10. Week - 6 December 2022 Tuesday, A Major Step Backwards?, Fault Tolerance, Introduction to Apache Spark, MLlib Algorithms, MLlib + SQL, Move it onto a Cluster, Operations on RDDs (+9 more)
 
 ### Community 2277 - "Community 2277"
-Cohesion: 0.11
-Nodes (17): 📘 Davranış Bilimi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar (+9 more)
+Cohesion: 0.22
+Nodes (8): 📘 Davranış Bilimi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler, 📅 Sosyal Seçmeli 1, 📘 Uluslararası Pazarlama
 
 ### Community 2279 - "Community 2279"
-Cohesion: 0.12
-Nodes (16): 📅 4. Sınıf Güz, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1, 📘 Bilgisayar Mühendisliğinde Güncel Konular, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler: (+8 more)
+Cohesion: 0.20
+Nodes (9): 📅 4. Sınıf Güz, 📘 Atatürk İlkeleri ve İnkılap Tarihi 1, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Dönemin Zorunlu Dersleri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler (+1 more)
 
 ### Community 2304 - "Community 2304"
 Cohesion: 0.12
@@ -8076,8 +8303,8 @@ Cohesion: 0.12
 Nodes (16): 6. Hafta - 8 Kasım 2021 Pazartesi, Checksum, Cyclic Redundency Check, FDM (Frequency Division Multiplexing), Hamming Code/Distance, Hata Anlama, Hata Anlama ve Düzeltme, Hata Düzeltme (+8 more)
 
 ### Community 2320 - "Community 2320"
-Cohesion: 0.15
-Nodes (10): YukariAsagiDugmeDizilimi, QHBoxLayout, Metin değişip değişmediğini kontrol et., İptal butonuna basıldığında değişiklik kontrolü yap., Tek satırlık metin girişi dialogunu göster ve sonucu döndür., Metin değişip değişmediğini kontrol et., İptal butonuna basıldığında değişiklik kontrolü yap., Tek satırlık metin girişi için değişiklik kontrolü yapan dialog. (+2 more)
+Cohesion: 0.19
+Nodes (8): Metin değişip değişmediğini kontrol et., İptal butonuna basıldığında değişiklik kontrolü yap., Tek satırlık metin girişi dialogunu göster ve sonucu döndür., Metin değişip değişmediğini kontrol et., İptal butonuna basıldığında değişiklik kontrolü yap., Tek satırlık metin girişi için değişiklik kontrolü yapan dialog., SatirAtlayanInputDialog, TekSatirInputDialog
 
 ### Community 2324 - "Community 2324"
 Cohesion: 0.12
@@ -8088,12 +8315,12 @@ Cohesion: 0.12
 Nodes (15): 🔹 Ders 10 & 11: Makine Öğrenmesi ve Karar Ağaçları, 🔹 Ders 12: Sınıflandırma Sınırları ve Yapay Sinir Ağları, 🔹 Ders 13: Pekiştirmeli Öğrenme (Reinforcement Learning), 🔹 Ders 1: Yapay Zekaya Giriş, 🔹 Ders 2: Tarihsel Gelişim ve Etmenler, 🔹 Ders 3: Arama Problemleri ve Kör Arama, 🔹 Ders 4: Sezgisel Arama ve A* Algoritması, 🔹 Ders 5: Lokal Arama Yöntemleri (+7 more)
 
 ### Community 2577 - "Community 2577"
-Cohesion: 0.09
-Nodes (16): CRS, Doctor, HospitalMenu, Scanner, Section, SectionMenu, CRS, Hospital (+8 more)
+Cohesion: 0.10
+Nodes (19): ArrayList, CRS, Doctor, HospitalMenu, Scanner, Section, SectionMenu, CRS (+11 more)
 
 ### Community 2602 - "Community 2602"
-Cohesion: 0.24
-Nodes (18): stbi__write_context, va_list, stbi_write_bmp_core(), stbi_write_jpg_core(), stbi_write_tga_core(), stbiw__jpg_calcBits(), stbiw__jpg_DCT(), stbiw__jpg_processDU() (+10 more)
+Cohesion: 0.27
+Nodes (16): stbi__write_context, va_list, stbi_write_bmp_core(), stbi_write_tga_core(), stbiw__linear_to_rgbe(), stbiw__outfile(), stbiw__write1(), stbiw__write3() (+8 more)
 
 ### Community 2630 - "Community 2630"
 Cohesion: 0.12
@@ -8116,8 +8343,8 @@ Cohesion: 0.12
 Nodes (15): 3. Hafta - 18 Ekim 2021 Pazartesi, Chapter 2 Operating System Structures, Dual-Mode, I/O Subsystem, Interrupt Driven (Hardware and Software), Kernel Data Structures, Mass Storage Management, Operating System Services (+7 more)
 
 ### Community 3176 - "Community 3176"
-Cohesion: 0.12
-Nodes (15): Gauss Elimination, Gregory Newton Interpolation, Screenshot: Gauss-Seidal Method Execution, Numerical Analysis Software Menu Screenshot, Screenshot: Gauss Elimination Method Execution, Screenshot: Numerical Differentiation (Forward/Backward), Screenshot: Simpson Method for Area Calculation, Screenshot: Gregory Newton Interpolation Forward Difference Table (+7 more)
+Cohesion: 0.15
+Nodes (13): Gregory Newton Interpolation, Screenshot: Gauss-Seidal Method Execution, Numerical Analysis Software Menu Screenshot, Screenshot: Gauss Elimination Method Execution, Screenshot: Numerical Differentiation (Forward/Backward), Screenshot: Simpson Method for Area Calculation, Screenshot: Gregory Newton Interpolation Forward Difference Table, Mehmet Ali Duran Proje Raporu (+5 more)
 
 ### Community 3452 - "Community 3452"
 Cohesion: 0.12
@@ -8272,8 +8499,8 @@ Cohesion: 0.17
 Nodes (11): 3. Week - 16 October 2023 Monday, Değişken Uzunluklu Kodlar (Variable Size Codes), Fiziksel Model, İstatistiksel Modeller, Markov Model, Modeller, Move to Front Kodlama, Olasılık Model (+3 more)
 
 ### Community 3580 - "Community 3580"
-Cohesion: 0.15
-Nodes (12): 📘 Bilgisayar Grafiğine Giriş, 📘 Dağıtık Sistemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar (+4 more)
+Cohesion: 0.11
+Nodes (18): 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📘 Dağıtık Sistemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+10 more)
 
 ### Community 3581 - "Community 3581"
 Cohesion: 0.17
@@ -8932,11 +9159,11 @@ Cohesion: 0.29
 Nodes (6): Example Results, Feature Works, Question 1, References, Steps, Troubleshooting
 
 ### Community 3745 - "Community 3745"
-Cohesion: 0.29
-Nodes (7): 🗓 2. Yıl - Bahar, 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler, 📘 Bilgisayar Organizasyonu, 📘 Hesaplama Kuramı, 📘 İş Sağlığı ve Güvenliği 2, 📘 Sistem Analizi ve Tasarımı, 📘 Veri Yapıları ve Algoritmalar
+Cohesion: 0.38
+Nodes (3): Connection, String, WarehouseLoginPage
 
 ### Community 3746 - "Community 3746"
-Cohesion: 0.36
+Cohesion: 0.38
 Nodes (3): Connection, String, CustomerLoginPage
 
 ### Community 3747 - "Community 3747"
@@ -9048,12 +9275,12 @@ Cohesion: 0.40
 Nodes (5): OA, SV, Bilgisayarla Görme, Veri Madenciliği ve Bilgi Keşfi, 📘 Blokzincir Temelleri
 
 ### Community 3774 - "Community 3774"
-Cohesion: 0.33
-Nodes (5): 📚 Alt Seviye Programlama, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, ℹ️ Dersin içeriği güncel değil
+Cohesion: 0.40
+Nodes (4): 📚 Alt Seviye Programlama, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
 
 ### Community 3775 - "Community 3775"
-Cohesion: 0.33
-Nodes (5): 📚 Ağ Teknolojileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, ℹ️ Dersin içeriği güncel değil
+Cohesion: 0.40
+Nodes (4): 📚 Ağ Teknolojileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
 
 ### Community 3776 - "Community 3776"
 Cohesion: 0.33
@@ -9061,7 +9288,7 @@ Nodes (5): 📚 Bilgisayar Projesi, 📝 Derse Dair Öneriler, 📖 Faydalı Ola
 
 ### Community 3777 - "Community 3777"
 Cohesion: 0.33
-Nodes (5): 📚 Bilgiye Erişim Ve Arama Motorları, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+Nodes (5): 📚 Bilgiye Erişim ve Arama Motorları, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
 
 ### Community 3778 - "Community 3778"
 Cohesion: 0.33
@@ -9116,8 +9343,8 @@ Cohesion: 0.33
 Nodes (5): ADAM Optimizer, plots.ipynb, Result, Some Plots, Text-Classification-With-3-Different-Methods-Implemented-in-C
 
 ### Community 3792 - "Community 3792"
-Cohesion: 0.33
-Nodes (6): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📘 Doğal Dil İşlemeye Giriş, 📚 Faydalı Olabilecek Kaynaklar, 📌 Öneri sahibi: Traktör Reis
+Cohesion: 0.15
+Nodes (14): 📘 Ayrık Olay Simülasyonu, 📘 Bilgisayar Mühendisliğinde Özel Konular 3, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 💡 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler: (+6 more)
 
 ### Community 3793 - "Community 3793"
 Cohesion: 0.33
@@ -9325,7 +9552,7 @@ Nodes (4): 📚 Bilgisayar Mühendisleri için Sinyaller ve Sistemler, 👨‍�
 
 ### Community 3852 - "Community 3852"
 Cohesion: 0.40
-Nodes (4): 📚 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
+Nodes (4): 📚 Bilgisayar Mühendisleri için Diferansiyel Denklemler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
 
 ### Community 3853 - "Community 3853"
 Cohesion: 0.40
@@ -9476,8 +9703,8 @@ Cohesion: 0.40
 Nodes (4): 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Olasılıksal Robotik
 
 ### Community 3890 - "Community 3890"
-Cohesion: 0.50
-Nodes (4): clear_stdin(), get_integer_input(), get_method(), Method
+Cohesion: 0.29
+Nodes (7): 👨‍🏫 Arş. Grv. Alper Eğitmen, 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu, 👨‍🏫 Arş. Grv. Sercan Aygün, 👨‍🏫 Dr. Ziya Cihan Tayşi, 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık, 👨‍🏫 Prof. Dr. Nizamettin Aydın, Üniversitede Aktif Görevde Olmayan Hocalar
 
 ### Community 3891 - "Community 3891"
 Cohesion: 0.40
@@ -9611,10 +9838,6 @@ Nodes (3): Bilgi, Ders tarihi, Dersi veren hocalar
 Cohesion: 0.50
 Nodes (3): Ders Bilgileri, Not Bilgileri, 2023-2024 Güz Dönemi
 
-### Community 3924 - "Community 3924"
-Cohesion: 0.50
-Nodes (3): String, Patient, Person
-
 ### Community 3925 - "Community 3925"
 Cohesion: 0.50
 Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Temel Japonca 1
@@ -9622,6 +9845,10 @@ Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Temel
 ### Community 3929 - "Community 3929"
 Cohesion: 0.40
 Nodes (4): 2025-2026 Bahar Dönemi, Ders Bilgileri, Ek Bilgiler, Not Bilgileri
+
+### Community 3932 - "Community 3932"
+Cohesion: 0.33
+Nodes (5): 📚 16.yüzyıldan Günümüze İstanbulda Dans, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
 
 ### Community 3933 - "Community 3933"
 Cohesion: 0.50
@@ -9749,7 +9976,7 @@ Nodes (3): 2023-2024 Güz Dönemi, Ders Bilgileri, Not Bilgileri
 
 ### Community 3966 - "Community 3966"
 Cohesion: 0.50
-Nodes (3): 📚 Atatürk İlkeleri ve İnkılâp Tarihi 1, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
+Nodes (3): 📚 Atatürk İlkeleri ve İnkılap Tarihi 1, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
 
 ### Community 3967 - "Community 3967"
 Cohesion: 0.50
@@ -9781,7 +10008,7 @@ Nodes (3): 📚 Büyük Veri Analitiği, 📖 Faydalı Olabilecek Kaynaklar, ℹ
 
 ### Community 3974 - "Community 3974"
 Cohesion: 0.50
-Nodes (3): 📚 Büyük Veri İşleme Ve Analizi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
+Nodes (3): 📚 Büyük Veri İşleme ve Analizi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri
 
 ### Community 3975 - "Community 3975"
 Cohesion: 0.50
@@ -9940,16 +10167,16 @@ Cohesion: 0.50
 Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Matematik 2
 
 ### Community 4014 - "Community 4014"
-Cohesion: 0.18
-Nodes (11): 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Bilgisayar Mühendisliğinde Özel Konular 3, 📘 Bilgiye Erişim Ve Arama Motorları, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler: (+3 more)
+Cohesion: 0.20
+Nodes (11): 📘 Alt Seviye Programlama, 📘 Bilgisayar Grafiğine Giriş, 📘 Bilgiye Erişim ve Arama Motorları, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler: (+3 more)
 
 ### Community 4015 - "Community 4015"
 Cohesion: 0.50
 Nodes (4): 📘 Bilişim Sistemleri Güvenliği, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar
 
 ### Community 4016 - "Community 4016"
-Cohesion: 0.29
-Nodes (7): 📘 Biyoenformatiğe Giriş, 📘 Büyük Veri İşleme Ve Analizi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar
+Cohesion: 0.50
+Nodes (4): 📘 Biyoenformatiğe Giriş, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar
 
 ### Community 4017 - "Community 4017"
 Cohesion: 0.50
@@ -9964,8 +10191,8 @@ Cohesion: 0.50
 Nodes (4): 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📘 Görüntü İşleme
 
 ### Community 4020 - "Community 4020"
-Cohesion: 0.50
-Nodes (4): 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📘 İstatistiksel Veri Analizi
+Cohesion: 0.25
+Nodes (8): 📘 Bulanık Mantık, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📘 İstatistiksel Veri Analizi
 
 ### Community 4021 - "Community 4021"
 Cohesion: 0.50
@@ -10039,9 +10266,17 @@ Nodes (3): Gereksinimler, GSM8K Türkçe Veri Kümesi Çıkarıcı, Proje Hakkı
 Cohesion: 0.67
 Nodes (3): 📘 Büyük Veri Analitiği, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
 
+### Community 4039 - "Community 4039"
+Cohesion: 0.33
+Nodes (5): 📚 20. Yüzyılda Siyasal Gelişmeler-Toplumsal Hareketler, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
 ### Community 4040 - "Community 4040"
 Cohesion: 0.50
 Nodes (3): Ders Bilgileri, Ek Bilgiler, Not Bilgileri
+
+### Community 4041 - "Community 4041"
+Cohesion: 0.33
+Nodes (6): wchar_t, wchar_t, wchar_t, stbi_convert_wchar_to_utf8(), stbiw_convert_wchar_to_utf8(), stbiw_convert_wchar_to_utf8()
 
 ### Community 4042 - "Community 4042"
 Cohesion: 0.50
@@ -10069,7 +10304,7 @@ Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Çok 
 
 ### Community 4048 - "Community 4048"
 Cohesion: 0.50
-Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Çok Displinli Tasarım Projesi
+Nodes (3): 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Çok Disiplinli Tasarım Projesi
 
 ### Community 4049 - "Community 4049"
 Cohesion: 0.50
@@ -10082,6 +10317,10 @@ Nodes (3): load_dataset(), Veri kümesini yükleyen fonksiyon.      Returns:    
 ### Community 4074 - "Community 4074"
 Cohesion: 0.67
 Nodes (3): 📘 Bilgisayar Sistemleri ve Ağ Güvenliği, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4075 - "Community 4075"
+Cohesion: 0.33
+Nodes (5): 📚 Afet Bilgisi ve Farkındalığı, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
 
 ### Community 4076 - "Community 4076"
 Cohesion: 0.67
@@ -10104,8 +10343,8 @@ Cohesion: 0.67
 Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Çok Değişkenli İstatiksel Veri Analizi
 
 ### Community 4085 - "Community 4085"
-Cohesion: 0.67
-Nodes (3): 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
+Cohesion: 0.33
+Nodes (5): 📚 Aile İşletmeleri ve Kurumsallaşma, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
 
 ### Community 4086 - "Community 4086"
 Cohesion: 0.67
@@ -10116,8 +10355,868 @@ Cohesion: 0.67
 Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Yöneylem Araştırması
 
 ### Community 4287 - "Community 4287"
+Cohesion: 0.33
+Nodes (5): 📚 Akademik Türkçe, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4462 - "Community 4462"
+Cohesion: 0.33
+Nodes (5): 📚 Akıllı Şebekelere Giriş, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4463 - "Community 4463"
+Cohesion: 0.33
+Nodes (5): 📚 Almanca Dil Becerileri, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4464 - "Community 4464"
+Cohesion: 0.33
+Nodes (5): 📚 Almanca Dil Becerilerine Giriş, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4467 - "Community 4467"
+Cohesion: 0.33
+Nodes (5): 📚 Ayrık Olay Simülasyonu, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4468 - "Community 4468"
+Cohesion: 0.33
+Nodes (5): 📚 Basketbol Temel Teknik Eğitimi, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4469 - "Community 4469"
+Cohesion: 0.33
+Nodes (5): 📚 Bağımlılık ve Bağımlılıkla Mücadele, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4470 - "Community 4470"
+Cohesion: 0.33
+Nodes (5): 📚 Beden Farkındalığı ve Nefes Teknikleri, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4471 - "Community 4471"
+Cohesion: 0.33
+Nodes (5): 📚 Beslenme ve Sağlık, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4472 - "Community 4472"
+Cohesion: 0.33
+Nodes (5): 📚 Bilgisayar Mimarisi, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4473 - "Community 4473"
+Cohesion: 0.33
+Nodes (5): 📚 Bilim Felsefesi, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4474 - "Community 4474"
+Cohesion: 0.33
+Nodes (5): 📚 Bilim Tarihi, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4475 - "Community 4475"
+Cohesion: 0.33
+Nodes (5): 📚 Biyomühendislikte Nanoteknoloji, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4476 - "Community 4476"
+Cohesion: 0.33
+Nodes (5): 📚 Biçimsel Diller ve Soyut Makineler, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4477 - "Community 4477"
+Cohesion: 0.33
+Nodes (5): 📚 Bulanık Mantık, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4478 - "Community 4478"
+Cohesion: 0.33
+Nodes (5): 📚 Cultural Heritage Management, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4479 - "Community 4479"
+Cohesion: 0.33
+Nodes (5): 📚 Davranışsal Açıdan Kurumsal İtibar, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4480 - "Community 4480"
+Cohesion: 0.33
+Nodes (5): 📚 Demokrasi Kültürünün İlke ve Kurumları, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4481 - "Community 4481"
+Cohesion: 0.33
+Nodes (5): 📚 Deprem ve Planlama, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4482 - "Community 4482"
+Cohesion: 0.33
+Nodes (5): 📚 Derleyici Tasarımı, 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4483 - "Community 4483"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Dosya Düzenleme, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4484 - "Community 4484"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Doğal Arıtma, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4485 - "Community 4485"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Doğrudan Pazarlama, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4486 - "Community 4486"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Dünya Uygarlıkları, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4487 - "Community 4487"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Ekonomi Politikaları, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4488 - "Community 4488"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Ekonomi Politikaları ve Uygulamaları, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4489 - "Community 4489"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Endüstriyel Otomasyon, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4490 - "Community 4490"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Enerji Ekonomisi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4491 - "Community 4491"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Enerji ve Doğal Kaynaklar Ekonomisi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4492 - "Community 4492"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Etkili İletişim Ve Hazırlıksız Sunum Becerileri, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4493 - "Community 4493"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Evrim ve Moleküler Ekoloji, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4494 - "Community 4494"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Eğitim Felsefesi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4495 - "Community 4495"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Eğitim Teknolojilerinde Güncel Uygulamalar, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4496 - "Community 4496"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📚 Eğitim Yönetimi, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4497 - "Community 4497"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Finansal ve Maliyet Muhasebesi, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4498 - "Community 4498"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Fotoğraf Teknikleri, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4499 - "Community 4499"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Futbol ve Temel Hareket Öğretimi, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4500 - "Community 4500"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Gemi Kaynaklı Deniz Kirliliği, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4501 - "Community 4501"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4502 - "Community 4502"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Gençlik ve Eğitim, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4503 - "Community 4503"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Gerçek Zamanlı Bilgisayar Sistemleri, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4504 - "Community 4504"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Girişimcilik, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4505 - "Community 4505"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Grafik Tasarım Araçları, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4506 - "Community 4506"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Gönüllülük Çalışmaları, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4507 - "Community 4507"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Güzel Konuşma ve Diksiyon, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4508 - "Community 4508"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Gıda Okur Yazarlığı, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4509 - "Community 4509"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Halk oyunları Temel Figür Eğitimi, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4510 - "Community 4510"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Halkla İlişkiler (İİBF), ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4511 - "Community 4511"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Halkla İlişkiler (STF), ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4512 - "Community 4512"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Haritacılık Bilim Tarihi, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4513 - "Community 4513"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hayatın İçinde Fizik, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4514 - "Community 4514"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hayatın İçinde Kimya, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4515 - "Community 4515"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hentbol Temel Teknik Eğitimi, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4516 - "Community 4516"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hukukun Genel Kavramları, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4517 - "Community 4517"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, 📚 Hücresel Haberleşme Sistemleri 1, ℹ️ Ders Bilgileri, 😔 İçerik yok
+
+### Community 4518 - "Community 4518"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İmalat Teknikleri, 😔 İçerik yok
+
+### Community 4519 - "Community 4519"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İngilizce Akademik Yazma ve Sunum Becerileri, 😔 İçerik yok
+
+### Community 4520 - "Community 4520"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnovasyon ve Girişimcilik, 😔 İçerik yok
+
+### Community 4521 - "Community 4521"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnsan Hakları, 😔 İçerik yok
+
+### Community 4522 - "Community 4522"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnsan Kaynakları Yönetimi, 😔 İçerik yok
+
+### Community 4523 - "Community 4523"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnsan Merkezli Yapay Zeka, 😔 İçerik yok
+
+### Community 4524 - "Community 4524"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnşaat Mevzuatına Giriş, 😔 İçerik yok
+
+### Community 4525 - "Community 4525"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İstanbul: Dün, Bugün ve Yarın, 😔 İçerik yok
+
+### Community 4526 - "Community 4526"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İstatistik ve Bilimsel Düşünme, 😔 İçerik yok
+
+### Community 4527 - "Community 4527"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletme Bilimine Giriş
+
+### Community 4528 - "Community 4528"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletme Lojistiğinin Temelleri
+
+### Community 4529 - "Community 4529"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmede Mesleki Eğitim 1
+
+### Community 4530 - "Community 4530"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmede Mesleki Eğitim 2
+
+### Community 4531 - "Community 4531"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmede Mesleki Eğitim 3
+
+### Community 4532 - "Community 4532"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmelerde İnovasyon Yönetimi
+
+### Community 4533 - "Community 4533"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kablosuz ve Mobil Ağlar
+
+### Community 4534 - "Community 4534"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kariyer Planlama
+
+### Community 4535 - "Community 4535"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kariyer ve Çalışma Psikolojisi
+
+### Community 4536 - "Community 4536"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Katılımcı Kent Yönetiminde Proje Yönetim Süreci
+
+### Community 4537 - "Community 4537"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kent Okumaları
+
+### Community 4538 - "Community 4538"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kişisel Farkındalık ve Gelişim
+
+### Community 4539 - "Community 4539"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Korfbol Temel Teknik Eğitimi
+
+### Community 4540 - "Community 4540"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kültür Yönetimi ve Etkenleri 2
+
+### Community 4541 - "Community 4541"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Kültürel Çalışmalar ve Kimlik
+
+### Community 4542 - "Community 4542"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Lineer Cebirde Kavramlar ve İspatlar
+
+### Community 4543 - "Community 4543"
+Cohesion: 0.53
+Nodes (6): Dataset, Double, timeUsageGroupedTyped(), TimeUsageRow, timeUsageSummaryTyped(), TimeUsageRow
+
+### Community 4544 - "Community 4544"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Makine Teknolojisi Tarihi
+
+### Community 4545 - "Community 4545"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Malzeme Dünyası
+
+### Community 4546 - "Community 4546"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Masal ve Hikaye Anlatıcılığı
+
+### Community 4547 - "Community 4547"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Matematik Tarihi
+
+### Community 4548 - "Community 4548"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Matematiksel Modelleme
+
+### Community 4549 - "Community 4549"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Medya Okuryazarlığı
+
+### Community 4550 - "Community 4550"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mekatronik Sistem Entegrasyonu
+
+### Community 4551 - "Community 4551"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mikroişlemcili Sistem Tasarımı
+
+### Community 4552 - "Community 4552"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mimarlık Tarihi
+
+### Community 4553 - "Community 4553"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Modern Türk Edebiyatında Edebi Tartışmalar
+
+### Community 4554 - "Community 4554"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mühendisler için Kuantum Fiziği
+
+### Community 4555 - "Community 4555"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mühendislik Ekonomisi
+
+### Community 4556 - "Community 4556"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mühendislikte İnovasyon ve Girişimcilik
+
+### Community 4557 - "Community 4557"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mühendislikte Sayısal Yöntemler ve Uygulamaları
+
+### Community 4558 - "Community 4558"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Mühendislikte Temel Optimizasyon Kavramları
+
+### Community 4559 - "Community 4559"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Müzecilik ve Müzeografi
+
+### Community 4560 - "Community 4560"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Navigasyon ve Kinematik Konumlama
+
+### Community 4561 - "Community 4561"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 NFT'ye Giriş
+
+### Community 4562 - "Community 4562"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Nicel Karar Verme Teknikleri 1
+
+### Community 4563 - "Community 4563"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Patent ve Ticarileşme
+
+### Community 4564 - "Community 4564"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Pazarlama
+
+### Community 4565 - "Community 4565"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Physiological Control Systems
+
+### Community 4566 - "Community 4566"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Pilates Temel Eğitimi
+
+### Community 4567 - "Community 4567"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Psikolojiye Giriş
+
+### Community 4568 - "Community 4568"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Risk Yönetimi
+
+### Community 4569 - "Community 4569"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sanal Evrene Giriş (Metaverse)
+
+### Community 4570 - "Community 4570"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sanat Tarihi
+
+### Community 4571 - "Community 4571"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sanat ve Mimarlık Tarihine Giriş
+
+### Community 4572 - "Community 4572"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Satış Yönetimi
+
+### Community 4573 - "Community 4573"
+Cohesion: 0.33
+Nodes (6): i(), In(), l(), pt(), s(), t()
+
+### Community 4574 - "Community 4574"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sinemada Mekan ve Tarih
+
+### Community 4575 - "Community 4575"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Siyasal İdeolojiler: Kuram ve Tarih
+
+### Community 4576 - "Community 4576"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Siyaset Felsefesi
+
+### Community 4577 - "Community 4577"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sosyal Antropoloji
+
+### Community 4578 - "Community 4578"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sosyal Politikalar İktisadı
+
+### Community 4579 - "Community 4579"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmelerde İletişim
+
+### Community 4580 - "Community 4580"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sosyoloji
+
+### Community 4581 - "Community 4581"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Sürdürülebilirlik ve Eğitim
+
+### Community 4582 - "Community 4582"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Takım Kurma ve Geliştirme
+
+### Community 4583 - "Community 4583"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Tarih ve Sinema
+
+### Community 4584 - "Community 4584"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Teknik İletişim
+
+### Community 4585 - "Community 4585"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Aktüerya Matematiği
+
+### Community 4586 - "Community 4586"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Arapça 1
+
+### Community 4587 - "Community 4587"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Arapça 2
+
+### Community 4588 - "Community 4588"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Farsça 1
+
+### Community 4589 - "Community 4589"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Fransızca 1
+
+### Community 4590 - "Community 4590"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Fransızca 2
+
+### Community 4591 - "Community 4591"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel İspanyolca 1
+
+### Community 4592 - "Community 4592"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel İspanyolca 2
+
+### Community 4593 - "Community 4593"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel İtalyanca 1
+
+### Community 4594 - "Community 4594"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel İtalyanca 2
+
+### Community 4595 - "Community 4595"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Rusça 1
+
+### Community 4596 - "Community 4596"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Yunanca 1
+
+### Community 4597 - "Community 4597"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Yunanca 2
+
+### Community 4598 - "Community 4598"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Yüzme Teknikleri Eğitimi
+
+### Community 4599 - "Community 4599"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Temel Çince 1
+
+### Community 4600 - "Community 4600"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Tenis Teknik ve Taktik Eğitimi
+
+### Community 4601 - "Community 4601"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Toplumsal Dönüşüm Sürecinde Kadın
+
+### Community 4602 - "Community 4602"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Toplumsal Yapılar ve Tarihsel Dönüşümler
+
+### Community 4603 - "Community 4603"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Trafik Güvenliği
+
+### Community 4604 - "Community 4604"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Tüketici Davranışı
+
+### Community 4605 - "Community 4605"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk Dili Tarihi
+
+### Community 4606 - "Community 4606"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk İdare Tarihi
+
+### Community 4607 - "Community 4607"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk Kültür Coğrafyası
+
+### Community 4608 - "Community 4608"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk Kültür Tarihi
+
+### Community 4609 - "Community 4609"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türk Öykü ve Romanı
+
+### Community 4610 - "Community 4610"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türkiye Coğrafya ve Jeopolitiği
+
+### Community 4611 - "Community 4611"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Türkçe Öğretiminde Edebi Metinler
+
+### Community 4612 - "Community 4612"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Uluslararası İlişkilerde Temel Konular
+
+### Community 4613 - "Community 4613"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Uydu Haberleşmesi
+
+### Community 4614 - "Community 4614"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Uygarlık tarihi
+
+### Community 4615 - "Community 4615"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Veri Tabanı Sistemlerinin İç Yapısı
+
+### Community 4616 - "Community 4616"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Voleybolda Temel Teknik Eğitimi
+
+### Community 4617 - "Community 4617"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yapay Zekaya Giriş
+
+### Community 4618 - "Community 4618"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yapı Dinamiği
+
+### Community 4619 - "Community 4619"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yazılım Sektöründe Çevik Dönüşüm ve Uygulama Pratikleri
+
+### Community 4620 - "Community 4620"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yeditepe İstanbul
+
+### Community 4621 - "Community 4621"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yoga ve Anatomi
+
+### Community 4622 - "Community 4622"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Yükseköğretimde Temel Hak Ve Sorumluluklar
+
+### Community 4623 - "Community 4623"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çağdaş Toplum ve İletişim
+
+### Community 4624 - "Community 4624"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevik Yaklaşımlarla Yazılım Geliştirme
+
+### Community 4625 - "Community 4625"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevre Kimyası ve Teknolojisi
+
+### Community 4626 - "Community 4626"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevre ve Ekoloji
+
+### Community 4627 - "Community 4627"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevre ve Halk Sağlığı
+
+### Community 4628 - "Community 4628"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevre ve İnsan
+
+### Community 4629 - "Community 4629"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çevresel Vatandaşlık ve Eğitim
+
+### Community 4630 - "Community 4630"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çocuklarla Felsefe
+
+### Community 4631 - "Community 4631"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Çok Sesli Müziğe Giriş
+
+### Community 4632 - "Community 4632"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Örgütlerde Takım Oluşturma ve Geliştirme
+
+### Community 4633 - "Community 4633"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Örgütsel Etik
+
+### Community 4634 - "Community 4634"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Örün Servisleri ve Servis Odaklı Mimari
+
+### Community 4635 - "Community 4635"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 İşletmelerde İletişim
+
+### Community 4636 - "Community 4636"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Üretim Yönetimi
+
+### Community 4637 - "Community 4637"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Şehir Ekonomisi
+
+### Community 4638 - "Community 4638"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Şehir Sosyolojisi
+
+### Community 4639 - "Community 4639"
+Cohesion: 0.33
+Nodes (5): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 😔 İçerik yok, 📚 Şifreleme
+
+### Community 4640 - "Community 4640"
+Cohesion: 0.40
+Nodes (4): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 İnsan Kaynakları Yönetimi (İşletme)
+
+### Community 4641 - "Community 4641"
+Cohesion: 0.40
+Nodes (4): 📝 Derse Dair Öneriler, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Modernite ve Tüketim Toplumu
+
+### Community 4642 - "Community 4642"
+Cohesion: 0.40
+Nodes (5): Alana Göre Maaş Ortalamaları ve Artış Oranları, Genel Maaş Ortalamaları ve Artış Oranı, Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları, Şirketlere Göre Maaş Ortalamaları ve Artış Oranları
+
+### Community 4647 - "Community 4647"
+Cohesion: 0.50
+Nodes (4): 📘 Ağ Teknolojileri, 📄 Ders Bilgileri, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4648 - "Community 4648"
+Cohesion: 0.50
+Nodes (4): 📘 Bilgisayar Mimarisi, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4649 - "Community 4649"
+Cohesion: 0.50
+Nodes (4): 📘 Biçimsel Diller ve Soyut Makineler, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4650 - "Community 4650"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Veri Tabanı Sistemlerinin İç Yapısı
+
+### Community 4651 - "Community 4651"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Çevik Yaklaşımlarla Yazılım Geliştirme
+
+### Community 4652 - "Community 4652"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Örün Servisleri ve Servis Odaklı Mimari
+
+### Community 4653 - "Community 4653"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📘 Dosya Düzenleme, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4654 - "Community 4654"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri
+
+### Community 4655 - "Community 4655"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Gerçek Zamanlı Bilgisayar Sistemleri
+
+### Community 4656 - "Community 4656"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletmede Mesleki Eğitim 1
+
+### Community 4657 - "Community 4657"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletmede Mesleki Eğitim 2
+
+### Community 4658 - "Community 4658"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletmede Mesleki Eğitim 3
+
+### Community 4659 - "Community 4659"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Kablosuz ve Mobil Ağlar
+
+### Community 4660 - "Community 4660"
+Cohesion: 0.50
+Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı, Stajyer ve Mezun Değil için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+### Community 4661 - "Community 4661"
+Cohesion: 0.50
+Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Freelance ve Mezun Değil için Maaş Analizi, Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
+
+### Community 4662 - "Community 4662"
+Cohesion: 0.50
+Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı, Tam Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
+
+### Community 4663 - "Community 4663"
+Cohesion: 0.50
+Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları, Genel Maaş Ortalamaları ve Artış Oranı, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları, Yarı Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi
+
+### Community 4664 - "Community 4664"
+Cohesion: 0.50
+Nodes (4): 📘 Davranışsal Açıdan Kurumsal İtibar, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4665 - "Community 4665"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Hukukun Genel Kavramları
+
+### Community 4666 - "Community 4666"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İnsan Kaynakları Yönetimi (İşletme)
+
+### Community 4667 - "Community 4667"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletme Bilimine Giriş
+
+### Community 4668 - "Community 4668"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletmelerde İletişim
+
+### Community 4669 - "Community 4669"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 İşletmelerde İnovasyon Yönetimi
+
+### Community 4670 - "Community 4670"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Kariyer ve Çalışma Psikolojisi
+
+### Community 4671 - "Community 4671"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Nicel Karar Verme Teknikleri 1
+
+### Community 4672 - "Community 4672"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Pazarlama
+
+### Community 4673 - "Community 4673"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Satış Yönetimi
+
+### Community 4674 - "Community 4674"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Tüketici Davranışı
+
+### Community 4675 - "Community 4675"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Türk İdare Tarihi
+
+### Community 4676 - "Community 4676"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Örgütlerde Takım Oluşturma ve Geliştirme
+
+### Community 4677 - "Community 4677"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Örgütsel Etik
+
+### Community 4678 - "Community 4678"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Üretim Yönetimi
+
+### Community 4679 - "Community 4679"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📘 Ekonomi Politikaları, 📚 Faydalı Olabilecek Kaynaklar
+
+### Community 4680 - "Community 4680"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Finansal ve Maliyet Muhasebesi
+
+### Community 4681 - "Community 4681"
+Cohesion: 0.50
+Nodes (4): 📄 Ders Bilgileri, 💡 Derse Dair Öneriler, 📚 Faydalı Olabilecek Kaynaklar, 📘 Girişimcilik
+
+### Community 4685 - "Community 4685"
 Cohesion: 0.67
-Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Sistem Programlama
+Nodes (3): 📘 Büyük Veri İşleme ve Analizi, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
 
 ## Ambiguous Edges - Review These
 - `Lagrange Enterpolasyonu` → `En Küçük Kareler Yöntemi`  [AMBIGUOUS]
@@ -10132,9 +11231,9 @@ Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Sistem 
   3-1/Algoritma Analizi/ödevler/2019/ödev 1/halil_uluoglu/Input.txt · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **7075 isolated node(s):** `data`, `next`, `data`, `next`, `data` (+7070 more)
+- **8053 isolated node(s):** `data`, `next`, `data`, `next`, `data` (+8048 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1664 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1673 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -10149,7 +11248,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `Halil Uluoğlu Ödev 1 Input` and `Algoritma Analizi Ödev 2 (2019) Tanımı`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `Vector` connect `Community 626` to `Community 1354`, `Community 707`, `Community 1349`?**
-  _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `getChar()` connect `Community 38` to `Community 134`, `Community 137`, `Community 3890`, `Community 50`, `Community 83`, `Community 377`, `Community 158`?**
-  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `Vector` connect `Community 381` to `Community 707`, `Community 1349`, `Community 1354`, `Community 4683`, `Community 4684`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `getChar()` connect `Community 38` to `Community 196`, `Community 134`, `Community 137`, `Community 4688`, `Community 4689`, `Community 50`, `Community 4690`, `Community 83`, `Community 381`, `Community 158`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._

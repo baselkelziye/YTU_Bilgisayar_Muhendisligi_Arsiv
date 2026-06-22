@@ -2,9 +2,9 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 3
-- 📆 **Dönem:** Bahar
-- 🏫 **Ders Tipi:** Zorunlu
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber. 
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -33,6 +33,3 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - HHB
-
-## ℹ️ Dersin içeriği güncel değil
-- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.

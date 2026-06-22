@@ -3,7 +3,7 @@
 ## ℹ️ Ders Bilgileri
 
 - 📅 **Yıl:** 0
-- 📆 **Dönem:** yok
+- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
