@@ -72,10 +72,11 @@ class DerslerWriter(SectionWriter):
         """Yıldız bölümünü yaz."""
         writer.writeline(f"{girinti}- ⭐ **Yıldız Sayıları:**")
         
-        if OY_SAYISI in ders:
+        oy_sayisi = ders.get(OY_SAYISI)
+        if isinstance(oy_sayisi, int) and oy_sayisi > 0:
             kolaylik = ders.get(KOLAYLIK_PUANI, 1)
             gereklilik = ders.get(GEREKLILIK_PUANI, 1)
-            self._write_yildizlar(writer, kolaylik, gereklilik, girinti, ders.get(OY_SAYISI, 0))
+            self._write_yildizlar(writer, kolaylik, gereklilik, girinti, oy_sayisi)
         else:
             writer.writeline(f"{girinti}    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.")
             return
@@ -84,7 +85,7 @@ class DerslerWriter(SectionWriter):
         ek_girinti = "  "
         yeni_girinti = girinti + ek_girinti
         
-        if YILLARA_GORE_YILDIZ_SAYILARI in ders:
+        if ders.get(YILLARA_GORE_YILDIZ_SAYILARI):
             acilis, kapanis = detay_etiketleri_olustur("📅 Yıllara Göre Yıldız Sayıları", yeni_girinti)
             writer.write(acilis)
             

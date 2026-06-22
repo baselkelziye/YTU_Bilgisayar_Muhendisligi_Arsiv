@@ -87,7 +87,7 @@ class HocalarWriter(SectionWriter):
         ek_girinti = "  "
         yeni_girinti = girinti + ek_girinti
         
-        if YILLARA_GORE_YILDIZ_SAYILARI in hoca:
+        if hoca.get(YILLARA_GORE_YILDIZ_SAYILARI):
             acilis, kapanis = detay_etiketleri_olustur("📅 Yıllara Göre Yıldız Sayıları", yeni_girinti)
             writer.write(acilis)
             
