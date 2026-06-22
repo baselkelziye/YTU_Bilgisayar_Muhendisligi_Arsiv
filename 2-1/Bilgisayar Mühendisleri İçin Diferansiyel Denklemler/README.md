@@ -1,4 +1,4 @@
-# 📚 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
+# 📚 Bilgisayar Mühendisleri için Diferansiyel Denklemler
 
 ## ℹ️ Ders Bilgileri
 

@@ -2,9 +2,9 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 2
-- 📆 **Dönem:** Güz
-- 🏫 **Ders Tipi:** Zorunlu
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor. 
   - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders... ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
@@ -34,6 +34,3 @@
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - EU
 - FÇ
-
-## ℹ️ Dersin içeriği güncel değil
-- Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.

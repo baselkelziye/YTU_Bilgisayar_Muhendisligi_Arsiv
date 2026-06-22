@@ -2,8 +2,8 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 4
-- 📆 **Dönem:** Güz
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Üniversite Mesleki Seçmeli
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor. 

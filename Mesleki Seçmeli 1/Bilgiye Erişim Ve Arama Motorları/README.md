@@ -1,4 +1,4 @@
-# 📚 Bilgiye Erişim Ve Arama Motorları
+# 📚 Bilgiye Erişim ve Arama Motorları
 
 ## ℹ️ Ders Bilgileri
 

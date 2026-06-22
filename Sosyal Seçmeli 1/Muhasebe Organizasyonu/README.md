@@ -3,8 +3,8 @@
 ## ℹ️ Ders Bilgileri
 
 - 📅 **Yıl:** 0
-- 📆 **Dönem:** yok
-- 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Üniversite Sosyal Seçmeli
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 

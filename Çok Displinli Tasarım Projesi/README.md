@@ -1,4 +1,4 @@
-# 📚 Çok Displinli Tasarım Projesi
+# 📚 Çok Disiplinli Tasarım Projesi
 
 ## ℹ️ Ders Bilgileri
 

@@ -5,6 +5,102 @@
 - 💡 Düzenli ders çalışmayı ihmal etmeyin
 - 💡 Lab uygulamalarına katılın
 
+### 📘 Alt Seviye Programlama
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor. 
+  - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders... ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2023 yılı için yıldız bilgileri*
+      - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+      - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+      - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- EU
+- FÇ
+
+### 📘 Ayrık Olay Simülasyonu
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Ağ Teknolojileri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber. 
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+    - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2023 yılı için yıldız bilgileri*
+      - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+      - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+      - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- HHB
+
 ### 📘 Bilgisayar Grafiğine Giriş
 
 #### 📄 Ders Bilgileri
@@ -14,6 +110,29 @@
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Bilgisayar Mimarisi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
@@ -72,7 +191,7 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MEK
 
-### 📘 Bilgiye Erişim Ve Arama Motorları
+### 📘 Bilgiye Erişim ve Arama Motorları
 
 #### 📄 Ders Bilgileri
 
@@ -170,6 +289,29 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - NA
 
+### 📘 Biçimsel Diller ve Soyut Makineler
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Blokzincir Temelleri
 
 #### 📄 Ders Bilgileri
@@ -189,7 +331,30 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OA
 
-### 📘 Büyük Veri İşleme Ve Analizi
+### 📘 Bulanık Mantık
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Büyük Veri İşleme ve Analizi
 
 #### 📄 Ders Bilgileri
 
@@ -235,6 +400,52 @@
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
+### 📘 Derleyici Tasarımı
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Dosya Düzenleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Doğal Dil İşlemeye Giriş
 
 #### 📄 Ders Bilgileri
@@ -270,6 +481,52 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
+
+### 📘 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Gerçek Zamanlı Bilgisayar Sistemleri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Gömülü Sistemler
 
@@ -326,6 +583,43 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MEK
 
+### 📘 İleri Ağ Programlama
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Nick_**: almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
+  - 👤 **_Yok_**: alma ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Hata Yapmış Birisi_**: zçt veriyorsa sakın almayın ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+      - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
+- HOİ
+
 ### 📘 İstatistiksel Veri Analizi
 
 #### 📄 Ders Bilgileri
@@ -356,6 +650,98 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - ACK
+
+### 📘 İşletmede Mesleki Eğitim 1
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İşletmede Mesleki Eğitim 2
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İşletmede Mesleki Eğitim 3
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Kablosuz ve Mobil Ağlar
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Mobil Programlamaya Giriş
 
@@ -611,6 +997,29 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
 
+### 📘 Veri Tabanı Sistemlerinin İç Yapısı
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Veritabanı Sistemlerinin Gerçekleştirilmesi
 
 #### 📄 Ders Bilgileri
@@ -689,6 +1098,29 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
 
+### 📘 Yazılım Sektöründe Çevik Dönüşüm ve Uygulama Pratikleri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Yönetim Bilgi Sistemleri
 
 #### 📄 Ders Bilgileri
@@ -729,52 +1161,61 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
 
-### 📘 İleri Ağ Programlama
+### 📘 Yöneylem Araştırması
 
 #### 📄 Ders Bilgileri
 
 - 📅 **Yıl:** 0
-- 📆 **Dönem:** yok
+- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
-- 💭 **Öğrenci Görüşleri:**
-  - 👤 **_Nick_**: almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
-  - 👤 **_Yok_**: alma ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
-  - 👤 **_Hata Yapmış Birisi_**: zçt veriyorsa sakın almayın ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
-    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
-  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-      - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★☆☆☆☆☆☆☆☆☆
-      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
-#### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
-- HOİ
-
-### 📘 Yöneylem Araştırması
+### 📘 Çevik Yaklaşımlarla Yazılım Geliştirme
 
 #### 📄 Ders Bilgileri
 
 - 📅 **Yıl:** 0
-- 📆 **Dönem:** yok
+- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
 - ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Örün Servisleri ve Servis Odaklı Mimari
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- ⭐ **Yıldız Sayıları:**
+  - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+  </details>
+#### 💡 Derse Dair Öneriler
+
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 

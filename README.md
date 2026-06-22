@@ -1032,7 +1032,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Ayrık%20Matematik)
 
 
-#### 📘 Bilgisayar Mühendisleri İçin Diferansiyel Denklemler 
+#### 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Blessed Camel_**: Dersin ilk 8 haftasının dif ile alakası yok tamamen yapay zeka temelleri ve aşırı zor. Daha önce alanla ilgili bilgisi olmayan biri olarak dersleri sadece izliyordum en ufak bir şey anlamadım. 8. haftadan sonrası kolay ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
@@ -1693,7 +1693,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 4. Yıl - Güz
 
 
-#### 📘 Atatürk İlkeleri ve İnkılâp Tarihi 1 
+#### 📘 Atatürk İlkeleri ve İnkılap Tarihi 1 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Gereksiz bir ders. 0 kredi. Yani DC ile geçenle AA ile geçen arasında hiçbir fark yok. 
@@ -1721,41 +1721,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
 
 
-#### 📘 Bilgisayar Mühendisliğinde Güncel Konular 
-  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
-  - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Bilgisayar%20Mühendisliğinde%20Güncel%20Konular)
-
-
-#### 📘 Yapısal Programlamaya Giriş 
-  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
-  - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor. 
-      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
-  - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    <details>
-    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-      - 📅 *2023 yılı için yıldız bilgileri*
-        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-      - 📅 *2024 yılı için yıldız bilgileri*
-        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
-        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    </details>
-  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MFA](#-prof-dr-m-fatih-amasyalı)
-    - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Yapısal%20Programlamaya%20Giriş)
-
-
-#### 📘 Çok Displinli Tasarım Projesi 
+#### 📘 Çok Disiplinli Tasarım Projesi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 2
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin. 
@@ -1841,7 +1807,1924 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Türkçe%202)
 
+### 🗓 Üniversite Sosyal Seçmeli
+
+
+#### 📘 16.yüzyıldan Günümüze İstanbulda Dans 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 20. Yüzyılda Siyasal Gelişmeler-Toplumsal Hareketler 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Afet Bilgisi ve Farkındalığı 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Aile İşletmeleri ve Kurumsallaşma 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Akademik Türkçe 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Almanca Dil Becerileri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Almanca Dil Becerilerine Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Basketbol Temel Teknik Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Bağımlılık ve Bağımlılıkla Mücadele 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Beden Farkındalığı ve Nefes Teknikleri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Beslenme ve Sağlık 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Bilim Felsefesi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Bilim Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Demokrasi Kültürünün İlke ve Kurumları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Deprem ve Planlama 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Doğrudan Pazarlama 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Dünya Uygarlıkları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Ekonomi Politikaları ve Uygulamaları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Etkili İletişim Ve Hazırlıksız Sunum Becerileri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Eğitim Felsefesi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Eğitim Teknolojilerinde Güncel Uygulamalar 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Eğitim Yönetimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Felsefeye Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2024 yılı için yıldız bilgileri*
+        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Felsefeye%20Giriş)
+
+
+#### 📘 Fotoğraf Teknikleri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Futbol ve Temel Hareket Öğretimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Gençlik ve Eğitim 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Grafik Tasarım Araçları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Gönüllülük Çalışmaları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Güzel Konuşma ve Diksiyon 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Halk oyunları Temel Figür Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Halkla İlişkiler (İİBF) 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Halkla İlişkiler (STF) 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Haritacılık Bilim Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Hayatın İçinde Kimya 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Hentbol Temel Teknik Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İngilizce Akademik Yazma ve Sunum Becerileri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnovasyon ve Girişimcilik 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnsan Hakları 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnsan Kaynakları Yönetimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnsan Merkezli Yapay Zeka 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İstanbul: Dün, Bugün ve Yarın 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletme Lojistiğinin Temelleri 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kariyer Planlama 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kişisel Farkındalık ve Gelişim 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Korfbol Temel Teknik Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kültür Yönetimi ve Etkenleri 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kültürel Çalışmalar ve Kimlik 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Lineer Cebirde Kavramlar ve İspatlar 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Makine Teknolojisi Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Masal ve Hikaye Anlatıcılığı 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Matematik Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Medya Okuryazarlığı 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mimarlık Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Modernite ve Tüketim Toplumu 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Modernite%20ve%20Tüketim%20Toplumu)
+
+
+#### 📘 Muhasebe Organizasyonu 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Muhasebe%20Organizasyonu)
+
+
+#### 📘 Mühendislikte İnovasyon ve Girişimcilik 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 NFT'ye Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Osmanlı Devletinin Toplumsal Yapısı 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2025 yılı için yıldız bilgileri*
+        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
+
+
+#### 📘 Patent ve Ticarileşme 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Pilates Temel Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Psikolojiye Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sanal Evrene Giriş (Metaverse) 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sanat Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sanat ve Mimarlık Tarihine Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Siyasal İdeolojiler: Kuram ve Tarih 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Siyaset Felsefesi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sosyal Antropoloji 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sosyoloji 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sürdürülebilirlik ve Eğitim 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Takım Kurma ve Geliştirme 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Tarih ve Sinema 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Arapça 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Arapça 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Farsça 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Fransızca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Fransızca 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel İspanyolca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel İspanyolca 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel İtalyanca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel İtalyanca 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Japonca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
+
+
+#### 📘 Temel Rusça 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Yunanca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Yunanca 2 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Yüzme Teknikleri Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Çince 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Tenis Teknik ve Taktik Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Toplumsal Dönüşüm Sürecinde Kadın 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Toplumsal Yapılar ve Tarihsel Dönüşümler 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Trafik Güvenliği 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türk Dili Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türk Kültür Coğrafyası 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türk Kültür Tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türk Öykü ve Romanı 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türkiye Coğrafya ve Jeopolitiği 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türkçe Öğretiminde Edebi Metinler 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Uygarlık tarihi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Voleybolda Temel Teknik Eğitimi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yeditepe İstanbul 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yoga ve Anatomi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yükseköğretimde Temel Hak Ve Sorumluluklar 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çağdaş Toplum ve İletişim 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çevre ve Ekoloji 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çevre ve İnsan 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çevresel Vatandaşlık ve Eğitim 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çocuklarla Felsefe 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çok Sesli Müziğe Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Şehir Ekonomisi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Şehir Sosyolojisi 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+### 🗓 Üniversite Mesleki Seçmeli
+
+
+#### 📘 Akıllı Şebekelere Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Bilgisayar Mühendisliğinde Güncel Konular 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Bilgisayar%20Mühendisliğinde%20Güncel%20Konular)
+
+
+#### 📘 Biyomühendislikte Nanoteknoloji 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Cultural Heritage Management 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Doğal Arıtma 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Endüstriyel Otomasyon 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Enerji Ekonomisi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Enerji ve Doğal Kaynaklar Ekonomisi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Evrim ve Moleküler Ekoloji 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Gemi Kaynaklı Deniz Kirliliği 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Gıda Okur Yazarlığı 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Hayatın İçinde Fizik 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Hücresel Haberleşme Sistemleri 1 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İmalat Teknikleri 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnşaat Mevzuatına Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İstatistik ve Bilimsel Düşünme 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletmelerde İletişim 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Katılımcı Kent Yönetiminde Proje Yönetim Süreci 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kent Okumaları 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Malzeme Dünyası 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Matematiksel Modelleme 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mekatronik Sistem Entegrasyonu 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mikroişlemcili Sistem Tasarımı 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Modern Türk Edebiyatında Edebi Tartışmalar 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mühendisler için Kuantum Fiziği 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mühendislik Ekonomisi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mühendislikte Sayısal Yöntemler ve Uygulamaları 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Mühendislikte Temel Optimizasyon Kavramları 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Müzecilik ve Müzeografi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Navigasyon ve Kinematik Konumlama 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Physiological Control Systems 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Risk Yönetimi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sinemada Mekan ve Tarih 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Sosyal Politikalar İktisadı 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Teknik İletişim 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Temel Aktüerya Matematiği 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Uluslararası İlişkilerde Temel Konular 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Uydu Haberleşmesi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yapay Zekaya Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yapı Dinamiği 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Yapısal Programlamaya Giriş 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Traktör Reis_**: Önemli bir ders. Programlama dili olarak 'c' anlatılıyor. Çeşitli algoritmalar anlatılıyor. 
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2023 yılı için yıldız bilgileri*
+        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2024 yılı için yıldız bilgileri*
+        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
+        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MFA](#-prof-dr-m-fatih-amasyalı)
+    - [AEL](#-dr-ahmet-elbir)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Yapısal%20Programlamaya%20Giriş)
+
+
+#### 📘 Çevre Kimyası ve Teknolojisi 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Çevre ve Halk Sağlığı 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Şifreleme 
+  - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
 ### 🗓 Mesleki Seçmeli 1
+
+
+#### 📘 Alt Seviye Programlama 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor. 
+    - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders... ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2023 yılı için yıldız bilgileri*
+        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2024 yılı için yıldız bilgileri*
+        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
+        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
+          - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [EU](#-dr-erkan-uslu)
+    - [FÇ](#-dr-furkan-çakmak)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
+
+
+#### 📘 Ayrık Olay Simülasyonu 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Ağ Teknolojileri 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber. 
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+      - 📅 *2023 yılı için yıldız bilgileri*
+        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
+        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
+          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - 📅 *2024 yılı için yıldız bilgileri*
+        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
+          - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    </details>
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [HHB](#-prof-dr-hasan-hüseyin-balık)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
 
 
 #### 📘 Bilgisayar Grafiğine Giriş 
@@ -1849,6 +3732,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Grafiğine%20Giriş)
+
+
+#### 📘 Bilgisayar Mimarisi 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 1 
@@ -1874,7 +3769,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
 
 
-#### 📘 Bilgiye Erişim Ve Arama Motorları 
+#### 📘 Bilgiye Erişim ve Arama Motorları 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -1942,6 +3837,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
 
 
+#### 📘 Biçimsel Diller ve Soyut Makineler 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
 #### 📘 Blokzincir Temelleri 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
@@ -1951,7 +3858,19 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Blokzincir%20Temelleri)
 
 
-#### 📘 Büyük Veri İşleme Ve Analizi 
+#### 📘 Bulanık Mantık 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Büyük Veri İşleme ve Analizi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Emperor_**: Güzel bir ders, anlatılanlar işe yarıyor, vize ve final son derece kolay. projesine dikkat etmek lazım. Çanı iyi. MSA veriyor. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
@@ -1979,6 +3898,30 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Dağıtık%20Sistemler)
 
 
+#### 📘 Derleyici Tasarımı 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Dosya Düzenleme 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
 #### 📘 Doğal Dil İşlemeye Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
@@ -2000,6 +3943,30 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
+
+
+#### 📘 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Gerçek Zamanlı Bilgisayar Sistemleri 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
 
 
 #### 📘 Gömülü Sistemler 
@@ -2081,6 +4048,54 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İstatistiksel%20Veri%20Analizi)
+
+
+#### 📘 İşletmede Mesleki Eğitim 1 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletmede Mesleki Eğitim 2 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletmede Mesleki Eğitim 3 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kablosuz ve Mobil Ağlar 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
 
 
 #### 📘 Mobil Programlamaya Giriş 
@@ -2253,6 +4268,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinde%20Güncel%20Konular)
 
 
+#### 📘 Veri Tabanı Sistemlerinin İç Yapısı 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
 #### 📘 Veritabanı Sistemlerinin Gerçekleştirilmesi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
@@ -2305,6 +4332,18 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yazılım%20Kalite%20ve%20Test%20Süreci)
 
 
+#### 📘 Yazılım Sektöründe Çevik Dönüşüm ve Uygulama Pratikleri 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
 #### 📘 Yönetim Bilgi Sistemleri 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
@@ -2337,6 +4376,30 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yöneylem%20Araştırması)
 
+
+#### 📘 Çevik Yaklaşımlarla Yazılım Geliştirme 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Örün Servisleri ve Servis Odaklı Mimari 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
 ### 🗓 Sosyal Seçmeli 1
 
 
@@ -2350,45 +4413,185 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Davranış%20Bilimi)
 
 
-#### 📘 Felsefeye Giriş 
+#### 📘 Davranışsal Açıdan Kurumsal İtibar 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
-      - 📅 *2024 yılı için yıldız bilgileri*
-        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Felsefeye%20Giriş)
 
 
-#### 📘 Muhasebe Organizasyonu 
+#### 📘 Ekonomi Politikaları 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Muhasebe%20Organizasyonu)
-
-
-#### 📘 Osmanlı Devletinin Toplumsal Yapısı 
-  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
-  - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     <details>
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
-      - 📅 *2025 yılı için yıldız bilgileri*
-        - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★★★
-        - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
-          - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
+
+
+#### 📘 Finansal ve Maliyet Muhasebesi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Girişimcilik 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Hukukun Genel Kavramları 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İnsan Kaynakları Yönetimi (İşletme) 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İnsan%20Kaynakları%20Yönetimi%20(işletme))
+
+
+#### 📘 İşletme Bilimine Giriş 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletmelerde İletişim 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 İşletmelerde İnovasyon Yönetimi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Kariyer ve Çalışma Psikolojisi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Nicel Karar Verme Teknikleri 1 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Pazarlama 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Satış Yönetimi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Tüketici Davranışı 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Türk İdare Tarihi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
 
 
 #### 📘 Uluslararası Pazarlama 
@@ -2410,14 +4613,41 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
 
-### 🗓 Üniversite Sosyal Seçmeli
 
-
-#### 📘 Temel Japonca 1 
-  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+#### 📘 Örgütlerde Takım Oluşturma ve Geliştirme 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Örgütsel Etik 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
+
+
+#### 📘 Üretim Yönetimi 
+  - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+    - ✅ Dersi Kolay Geçer Miyim: ☆☆☆☆☆☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ☆☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 0 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    <details>
+    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    </details>
 
 ### 🗓 Lisansüstü
 
@@ -2710,64 +4940,6 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Çok%20Değişkenli%20İstatiksel%20Veri%20Analizi)
 
 ### 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler
-
-
-#### 📘 Alt Seviye Programlama 
-  - 🏷️ **Ders Tipi:** Zorunlu
-  - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bence gereksiz dip seviye programlama dersi. Ama bilgisayar mühendisliğinin mantığını kavramaya yardımcı oluyor. Zor. 
-    - 👤 **_Tehlikeli Pinokyo_**: Ne ise yaradigini cozemedigim is hayatinda cok az kisinin kullandigi gereksiz bi ders... ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
-      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
-  - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    <details>
-    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-      - 📅 *2023 yılı için yıldız bilgileri*
-        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-      - 📅 *2024 yılı için yıldız bilgileri*
-        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
-          - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    </details>
-  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [EU](#-dr-erkan-uslu)
-    - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
-  - ℹ️ Dersin içeriği güncel değil
-    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
-
-
-#### 📘 Ağ Teknolojileri 
-  - 🏷️ **Ders Tipi:** Zorunlu
-  - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Gerekli bir ders ama aşırı ezber. 
-      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
-  - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-      - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    <details>
-    <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-      - 📅 *2023 yılı için yıldız bilgileri*
-        - ✅ 2023 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
-        - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
-          - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-      - 📅 *2024 yılı için yıldız bilgileri*
-        - ✅ 2024 Yılında Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
-        - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
-          - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-    </details>
-  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
-  - ℹ️ Dersin içeriği güncel değil
-    - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
 
 #### 📘 Bilgisayar Donanımı 
@@ -3800,7 +5972,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👩‍🏫 Dr. H.İrem Türkmen 
+#### 👩‍🏫 Dr. H. İrem Türkmen 
 - 🚪 **Ofis:** EEF-DZ32
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
 - 💬 **Öğrenci Görüşleri:**
@@ -4836,8 +7008,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>HE</b> &emsp; Arş. Grv. Hatice Erdirik 🔹</p>
 <p align='center'>🔹 <b>HHB</b> &emsp; Prof. Dr. Hasan Hüseyin Balık 🔹</p>
 <p align='center'>🔹 <b>HOİ</b> &emsp; Doç. Dr. Hamza Osman İlhan 🔹</p>
-<p align='center'>🔹 <b>HT</b> &emsp; Dr. H.İrem Türkmen 🔹</p>
 <p align='center'>🔹 <b>HTK</b> &emsp; Arş. Grv. Himmet Toprak Kesgin 🔹</p>
+<p align='center'>🔹 <b>HİT</b> &emsp; Dr. H. İrem Türkmen 🔹</p>
 <p align='center'>🔹 <b>KA</b> &emsp; Arş. Grv. Kübra Adalı 🔹</p>
 <p align='center'>🔹 <b>MAG</b> &emsp; Doç. Dr. M. Amaç Güvensan 🔹</p>
 <p align='center'>🔹 <b>MC</b> &emsp; Arş. Grv. Mustafa Cebeci 🔹</p>
