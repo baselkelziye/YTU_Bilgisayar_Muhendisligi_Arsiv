@@ -3194,29 +3194,54 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/naydin](https://avesis.yildiz.edu.tr/naydin)
+#### 👨‍🏫 Prof. Dr. Mehmet Sıddık Aktaş 
+- 🚪 **Ofis:** EEF-DZ31
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
 - 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Nick_**: iyi ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Traktör Reis_**: Harf notunu güzel verir. 
+  - 👤 **_Usmanaga_**: Asla ama asla ders almayın. Çok ilgisiz çok sorumsuz bir hocamız. Hala çıkmış soru paylaşacak mesela. Ders anlatımı hakkında bir şey demeyeceğim ama diğer konularda kesinlikle madur olursunuz. Kendisi bize çıkmış soruları paylaşacağını söyledi. Her hafta bir sonraki hafta paylaşacağını söyledi. Yok. Vizeye yok finale girdik hala yok. Mezun oldum hala yok. Derse gelmeyeceğini o sabah söylüyor zaten dersi sabahtan. Sınavları çok geç okuyor maillere dönmüyor. Ödevlere de çok iyi bakıyor denemez. Uzak durun derslerinden. İngilizcesi iyi onun hakkını vereyim. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Messi_**: Bölümün en iyi hocalarından biri ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Scientist_**: Bölümün en bilgili hocalarından biri. Dersleri gerçekten süper, bol bol bilgi verir ve gerçekten öğrenilecek çok şey sunar. Derslerini eğer biraz çaba gösterirseniz yüksek notlar alarak geçebilirsiniz. Sizi gereksiz ödevlerle boğmaz ya da saçma projelerle yormaz. Hocaya ulaşmak biraz zor olabilir çünkü genellikle yoğun oluyor, sabırlı olmanız lazım. Ayrıca İngilizceyi mükemmel bir şekilde konuşuyor, yani İngilizce derslerinde anlamakta zorlanmazsınız. Bölümdeki İngilizce derslerinde tercih edilebilecek tek hocadır. ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
+  - 👤 **_Kral 2_**: Ahmet elbirden sonra 2. kral sadece dersi slayttan ve bir tık kötü ingilizcesi ile anlatıp aynı cümleyi dolandırarak tekrarlaması dışında sorun yok. Sanırım kral hocaların ortak özelliği dersleri aşırı sıkıcı anlatması olabilir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Jagftype_**: Genel olarak iyi niyetli bir hoca. NYP’yi İngilizce anlatıyor, bazen tekrara düşebiliyor ama iyi anlattığını söyleyebilirim. Yoklama almıyor ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Msa Çıkmış Soruyor Knk Ya_**: sürekli çıkmış sorup sorup şimdi dersini aldık diye çıkmış sormaması... ve bazı beyin eksikliği yaşayan tiplerin "bu adam çıkmış soruyor şıkların yerini bile değiştirmiyor yhaa" diyip whatsapp gruplarında boş boş konuşması derim. dersleri çıkmış sorulmuyor sorulmuyor sorulmuyor. biz o torpilli mezunlardan olamayacağız boşuna ümitlenmeyin. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
-  - 📖 [Biyoenformatiğe Giriş](#-biyoenformatiğe-giriş)
+  - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
+  - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
+  - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
+    - 📅 *2023 yılı için yıldız bilgileri*
+      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
     - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
       - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
@@ -3266,7 +3291,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 👩‍🏫 Prof. Dr. Songül Varlı 
 - 🚪 **Ofis:** EEF-D221
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/svarli/](http://avesis.yildiz.edu.tr/svarli/)
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/sbayrak/](http://avesis.yildiz.edu.tr/sbayrak/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Gariban_**: Söngül hocadan Bilgisayar Donanımı (Bilgisayar Organizasyonu) ve bitirme aldım. Bilgisayar donanımı dersi sevkliyidi ve hoca güzel anlatıyordu. Online olduğu için sınavlar hakkında pek bir şey diyemem ama sınavlar zor değildi. Bitirmeye gelince, bu sebeplerden dolayı bu hocadan proje hiç alınmaz: 1- Proje veri gerektiriyordu ve veriyi bir organizasiyondan talep etmek için bize bir link vermişti ama bu orginizasyon ancak 5 hafta sonra veriyi verdi. Bu esnada veri hocanın eilinde olmasına rağmen bize vermek istemedi ve böylece projemiz 5 hafta geç kaldı. 2- Hoca ile iletişim kurmak çok zordu. Maillere geç cevap veriyor ve projenin son 3 haftasında defalarca mail göndermemize rağmen bize dönmüyordu. 3- Hoca, sunumdan 24 saat önce beklenmedik bir istekte bulundu (istediğini sabaha kadar uyumayark sunuma ekleyebildik :) ). 4- Projede istediğinden fazla model eğitmemize, sunumda çalışmamızı "iyi ve çok kapsamlı" olarak övdüğüne ve bize makale yazmamızı teklif etmesine rağmen projemize nispeten düşük bir not verdi. Özetle, hocayla iletişim zor, hiç yardımcı değil, çok şey ister, not vermz. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
@@ -3329,8 +3354,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 #### 👨‍🏫 Doç. Dr. Ali Can Karaca 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/ackaraca](https://avesis.yildiz.edu.tr/ackaraca)
+- 🚪 **Ofis:** EEF-D215
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17218](https://avesis.yildiz.edu.tr/17218)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: İyi anlatır. Anlattığını sorar. Ödevlerde puanlaması gariptir. 
   - 👤 **_Madmax_**: Ders anlatım ve diğer süreçlerde olabildiğince öğrencilerin faydasını gözetir. Ders anlatımı biraz monoton olsa da sorduğunuz tüm soruları elinden geldiğince cevaplar. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
@@ -3490,118 +3515,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
-
-
-#### 👨‍🏫 Doç. Dr. Mehmet Sıddık Aktaş 
-- 🚪 **Ofis:** EEF-DZ31
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aktas/](http://avesis.yildiz.edu.tr/aktas/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Harf notunu güzel verir. 
-  - 👤 **_Usmanaga_**: Asla ama asla ders almayın. Çok ilgisiz çok sorumsuz bir hocamız. Hala çıkmış soru paylaşacak mesela. Ders anlatımı hakkında bir şey demeyeceğim ama diğer konularda kesinlikle madur olursunuz. Kendisi bize çıkmış soruları paylaşacağını söyledi. Her hafta bir sonraki hafta paylaşacağını söyledi. Yok. Vizeye yok finale girdik hala yok. Mezun oldum hala yok. Derse gelmeyeceğini o sabah söylüyor zaten dersi sabahtan. Sınavları çok geç okuyor maillere dönmüyor. Ödevlere de çok iyi bakıyor denemez. Uzak durun derslerinden. İngilizcesi iyi onun hakkını vereyim. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Messi_**: Bölümün en iyi hocalarından biri ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
-  - 👤 **_Scientist_**: Bölümün en bilgili hocalarından biri. Dersleri gerçekten süper, bol bol bilgi verir ve gerçekten öğrenilecek çok şey sunar. Derslerini eğer biraz çaba gösterirseniz yüksek notlar alarak geçebilirsiniz. Sizi gereksiz ödevlerle boğmaz ya da saçma projelerle yormaz. Hocaya ulaşmak biraz zor olabilir çünkü genellikle yoğun oluyor, sabırlı olmanız lazım. Ayrıca İngilizceyi mükemmel bir şekilde konuşuyor, yani İngilizce derslerinde anlamakta zorlanmazsınız. Bölümdeki İngilizce derslerinde tercih edilebilecek tek hocadır. ℹ️ Yorum **04.2024** tarihinde yapılmıştır.
-  - 👤 **_Kral 2_**: Ahmet elbirden sonra 2. kral sadece dersi slayttan ve bir tık kötü ingilizcesi ile anlatıp aynı cümleyi dolandırarak tekrarlaması dışında sorun yok. Sanırım kral hocaların ortak özelliği dersleri aşırı sıkıcı anlatması olabilir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_Jagftype_**: Genel olarak iyi niyetli bir hoca. NYP’yi İngilizce anlatıyor, bazen tekrara düşebiliyor ama iyi anlattığını söyleyebilirim. Yoklama almıyor ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_Msa Çıkmış Soruyor Knk Ya_**: sürekli çıkmış sorup sorup şimdi dersini aldık diye çıkmış sormaması... ve bazı beyin eksikliği yaşayan tiplerin "bu adam çıkmış soruyor şıkların yerini bile değiştirmiyor yhaa" diyip whatsapp gruplarında boş boş konuşması derim. dersleri çıkmış sorulmuyor sorulmuyor sorulmuyor. biz o torpilli mezunlardan olamayacağız boşuna ümitlenmeyin. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
-  - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
-  - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2023 yılı için yıldız bilgileri*
-      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Doç. Dr. Oğuz Altun 
-- 🚪 **Ofis:** EEF-DZ36
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir. 
-  - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_R3_**: Olasılığı Oğuz hocadan aldım . İngilizcesi maalesef kötü , ilk 2 vizede sınıf ortalaması çok yüksekti ve vizelerde 2-3 soruda aynı şık vardı bazı kitapçıklarda fazladan soru vardı . Ne denir bilemiyorum , hocalığı dümenden yapıyor bari vizeleri hazırlarken biraz özen göstersin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_?????_**: Her sınavında istisnasız 3-4 yanlış soru olur, bomboş olasılık dersinin her test sınavında istikrarla bu kadar yanlış soru sorabilmek büyük başarı, insanın yaptığı işe biraz saygısı olmalı bence. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_I Am Only Sleeping_**: Derste çok güzel uyutması ile meşhur olan hocaydı. ℹ️ Yorum **05.2026** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
-  - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
-  - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
-  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
-  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 18 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2023 yılı için yıldız bilgileri*
-      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
 ### Doktor Öğretim Üyeleri
 
 
 
 #### 👨‍🏫 Dr. Ahmet Elbir 
-- 🚪 **Ofis:** 
+- 🚪 **Ofis:** EEF-D220
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Violancello_**: Açık ara bölümde en sevilen hoca. Dersi çok iyi anlatır, sınavları hızlı okur, öğrencilere her konuda yardımcı olur. Mümkün olduğunca çok dersi kendisinden alın. Tamamen Ahmet Elbir hocamızın çabası sayesinde bölümün müfredatı güncellendi çok daha iyi oldu. Bazen sinirlenir ama sinirlendiği her konuda haklı olduğunu düşünüyorum. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
@@ -3663,8 +3582,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 #### 👩‍🏫 Dr. Ayşe Öcal 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** []()
+- 🚪 **Ofis:** EEF-D210
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17536](https://avesis.yildiz.edu.tr/17536)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Hoca çok heyecanlı. Notlandırması bence adil değil. Derste dikkat çekene düşük puan veriyor. ℹ️ Yorum **06.2024** tarihinde yapılmıştır.
   - 👤 **_Arka Bahçedeki Fare_**: İyi bir insana benziyor, ders anlatımı da gayet başarılı. ℹ️ Yorum **09.2024** tarihinde yapılmıştır.
@@ -3881,7 +3800,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👩‍🏫 Dr. H. İrem Türkmen 
+#### 👩‍🏫 Dr. H.İrem Türkmen 
 - 🚪 **Ofis:** EEF-DZ32
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/irem/](http://avesis.yildiz.edu.tr/irem/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3983,6 +3902,59 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
+#### 👨‍🏫 Dr. Oğuz Altun 
+- 🚪 **Ofis:** EEF-DZ36
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/oaltun/](http://avesis.yildiz.edu.tr/oaltun/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Klasik sınavda sorunun cevabı yanlışsa adalet için, gidiş yoluna bakmadan 0 verir. 
+  - 👤 **_Blessed Camel_**: Dümenden ünide hocalık yapıyor devamsızlık alınsa önce kendi dersten kalır. Ama eyvallah sınavlarında minimum 2-3 hatalı soru çıkar bedavadan puan gelir. Dersleri de ingilizce anlatır :d ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_R3_**: Olasılığı Oğuz hocadan aldım . İngilizcesi maalesef kötü , ilk 2 vizede sınıf ortalaması çok yüksekti ve vizelerde 2-3 soruda aynı şık vardı bazı kitapçıklarda fazladan soru vardı . Ne denir bilemiyorum , hocalığı dümenden yapıyor bari vizeleri hazırlarken biraz özen göstersin ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_?????_**: Her sınavında istisnasız 3-4 yanlış soru olur, bomboş olasılık dersinin her test sınavında istikrarla bu kadar yanlış soru sorabilmek büyük başarı, insanın yaptığı işe biraz saygısı olmalı bence. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_I Am Only Sleeping_**: Derste çok güzel uyutması ile meşhur olan hocaydı. ℹ️ Yorum **05.2026** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
+  - 📖 [Hesaplama Kuramı](#-hesaplama-kuramı)
+  - 📖 [Oyun Geliştirmeye Giriş](#-oyun-geliştirmeye-giriş)
+  - 📖 [Bilgisayarla Görme](#-bilgisayarla-görme)
+  - 📖 [Blokzincir Temelleri](#-blokzincir-temelleri)
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 18 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2023 yılı için yıldız bilgileri*
+      - 2023 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2023 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
 #### 👨‍🏫 Dr. Yunus Emre Selçuk 
 - 🚪 **Ofis:** EEF-D129
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/yselcuk/](http://avesis.yildiz.edu.tr/yselcuk/)
@@ -4036,709 +4008,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
-### Araştırma Görevlileri
-
-
-
-#### 👨‍🏫 Arş. Grv. Alper Eğitmen 
-- 🚪 **Ofis:** EEF-D209
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aegitmen/](http://avesis.yildiz.edu.tr/aegitmen/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Barış AKKUŞ 
-- 🚪 **Ofis:** D-025
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17591](https://avesis.yildiz.edu.tr/17591)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Begüm Özbay 
-- 🚪 **Ofis:** D-023
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17598](https://avesis.yildiz.edu.tr/17598)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Burak Ahmet ÖZDEN 
-- 🚪 **Ofis:** D-024
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Blessed Camel_**: Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Traktör Reis_**: Adam gibi adam, amacı öğretmek. Öğrenciyi saçma sapan işlerle zorlamak gibi bir derdi yok. Öğrenciye olabildiğince yardımcı oluyor. Notlandırması da güzel. Güler yüzlü, sizinle yakın iletişim kurmaya çalışıyor. Açık ara en iyi araştırma görevlisi. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Anonim_**: En iyi araştırma görevlilerindendir. Belki de en iyisi zirvede benim icin 3 kisi var onlardan biri ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👩‍🏫 Arş. Grv. Elif AŞICI 
-- 🚪 **Ofis:** D-033
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Bir arkadaş, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca arkadaşın söylediğini anlayamayınca kalkıp kodun kalanını arkadaş anlatmıştı. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👩‍🏫 Arş. Grv. Elçin GÜVEYİ 
-- 🚪 **Ofis:** D-022
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/eguveyi/](https://avesis.yildiz.edu.tr/eguveyi/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Emre PARLAK 
-- 🚪 **Ofis:** D024
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/emre.parlak](https://avesis.yildiz.edu.tr/emre.parlak)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Jagftype_**: On numara hoca, elektronik ve lojik lablarında hep yardımcı olmaya çalışıyor sağolsun ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Fırat Fuat OLCAY 
-- 🚪 **Ofis:** D-124
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👩‍🏫 Arş. Grv. Hatice ERDİRİK 
-- 🚪 **Ofis:** D-032
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17253](https://avesis.yildiz.edu.tr/17253)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Blessed Camel_**: Çok rahat bir hoca ve bu sizi sinir eder dua edin işiniz düşmesin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Anonim 41At_**: Asistan olarak verdigi lablar zorlamıyor. Çıkmış sorularin benzerleri geliyor. Kendisi oldukça anlayışlı ve iyi bir hoca. anlattıklarından anlamadığınız vs konularında bireysel olarak da yardımcı oluyor. ℹ️ Yorum **07.2024** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Himmet Toprak KESGİN 
-- 🚪 **Ofis:** D-211
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Blessed Camel_**: Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Üçx_**: ArGör'ler içinde bölüm mezunu olan bir tek Toprak hoca var sanırım, kendisi farkını belli ediyor. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👩‍🏫 Arş. Grv. Kübra ADALI 
-- 🚪 **Ofis:** D-211
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/adalik/](https://avesis.yildiz.edu.tr/adalik/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Teradata_**: Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Traktör Reis_**: En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Boş_**: Aşırı kaba bir insan, öğrenciler ile nasıl konuşması gerektiğini bilmiyor, sanırım zamanında çok zorbalamışlar kendisini. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - 👤 **_Bir Birey_**: Öğrencilerle nasıl iletişim kurmasını bilmiyen bir hoca. Saygısız ve çok fazla yersiz bağırıyor. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👩‍🏫 Arş. Grv. Meliha Gizem ÇELİK 
-- 🚪 **Ofis:** D-022
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/gizem.celik](https://avesis.yildiz.edu.tr/gizem.celik)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Terim_**: iyi ℹ️ Yorum **11.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Muhammed Enes ÖZELBAŞ 
-- 🚪 **Ofis:** D-030
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Muhammet Taha GÖKCAN 
-- 🚪 **Ofis:** D-031
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17639](https://avesis.yildiz.edu.tr/17639)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Mustafa CEBECİ 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17285](https://avesis.yildiz.edu.tr/17285)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Mustafa Mert KARA 
-- 🚪 **Ofis:** D-030
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/mmkara/](https://avesis.yildiz.edu.tr/mmkara/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Muzaffer Kaan YÜCE 
-- 🚪 **Ofis:** D-025
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu 
-- 🚪 **Ofis:** EEF-DZ24
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/nurguly/](http://avesis.yildiz.edu.tr/nurguly/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Osman Furkan KARAKUŞ 
-- 🚪 **Ofis:** D-211
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/osman.karakus](https://avesis.yildiz.edu.tr/osman.karakus)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👩‍🏫 Arş. Grv. Rukiye BAŞKARA 
-- 🚪 **Ofis:** D-022
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Sercan Aygün 
-- 🚪 **Ofis:** EEF-DZ26
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ayguns/](http://avesis.yildiz.edu.tr/ayguns/)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👩‍🏫 Arş. Grv. Sultan Sevgi TURGUT 
-- 🚪 **Ofis:** D-211
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/sturgut/](https://avesis.yildiz.edu.tr/sturgut/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Blessed Camel_**: Öğrenciyle en iyi empati yapan hoca. Ne işiniz düştüyse gidin illaki yardımcı olur argörler arasında en iyilerinden ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
-        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2025 yılı için yıldız bilgileri*
-      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. Sümeyye Sena KURTVURAN 
-- 🚪 **Ofis:** D-024
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17372](https://avesis.yildiz.edu.tr/17372)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Ömer Mutlu Türk KAYA 
-- 🚪 **Ofis:** D-033
-- 🔗 **Araştırma Sayfası:** []()
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Jagftype_**: İyi niyetli bir yaklaşımı var, lablarda yardımcı olmaya çalışıyor. Lab öncesi açıklamaları bayağı yeterli oluyor labı yapmak için ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. İdris DEMİR 
-- 🚪 **Ofis:** D-025
-- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Blessed Camel_**: Sınavlardan önce bi bizi soymadığı kalıyor ama iyi bir insan ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Jagftype_**: Öğrencileri pek sevmiyor sanırım, hiç güler yüzlü ya da anlayışlı değil. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
-  - 👤 **_Chatgpt Kullanma Diye 0.7 Sn Var_**: bu zor devirde çet'e karşı direnmeye çalışan ancak insanın kabiliyetlerini çok yanlış yorumlayan bir insan. tuhaf bir şekilde 3. sınıflar harici herkese karşı iyi davranan birisiymiş. değişik. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-    - 📅 *2026 yılı için yıldız bilgileri*
-      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-
-
-
-#### 👨‍🏫 Arş. Grv. İmran Gül 
-- 🚪 **Ofis:** D-006
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17613](https://avesis.yildiz.edu.tr/17613)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-
-
-#### 👨‍🏫 Arş. Grv. Şeyma DERDİYOK 
-- 🚪 **Ofis:** D-209
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17486](https://avesis.yildiz.edu.tr/17486)
-- 💬 **Öğrenci Görüşleri:**
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 Ders bilgileri bulunamadı.
-- ⭐ **Yıldız Sayıları:**
-    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-
-### Üniversitede Aktif Görevde Olmayan Hocalar
-
-
-
-#### 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/balik](https://avesis.yildiz.edu.tr/balik)
-- 💬 **Öğrenci Görüşleri:**
-  - 👤 **_Dd_**: Yoklamayı dikkat eden hoca, ingilizcede anlatıyor i, slaide okur geçer, sınavları kalsik ise soruya aklınıza ne geliyorsa yazın puan verir ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
-- 📚 **Verdiği Dersler:**
-  - 📖 [Ağ Teknolojileri](#-ağ-teknolojileri)
-  - 📖 [Bilişim Sistemleri Güvenliği](#-bilişim-sistemleri-güvenliği)
-- ⭐ **Yıldız Sayıları:**
-  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  <details>
-  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
-
-    - 📅 *2024 yılı için yıldız bilgileri*
-      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
-      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
-      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
-      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
-  </details>
-- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
-
 
 
 #### 👨‍🏫 Dr. Ziya Cihan Tayşi 
-- 🚪 **Ofis:** 
-- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/cihan](https://avesis.yildiz.edu.tr/cihan)
+- 🚪 **Ofis:** EEF-D126
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/cihan/](http://avesis.yildiz.edu.tr/cihan/)
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Kolpa_**: Anlıyorum. Dışarıda herhangi birine dayılanamayan biriyseniz ve üniversitede size öğrencileri ölçüp biçme yetkisi verildiyse bu yetkinizi kullanmak istersiniz. Ama bunun da bi sınırı olur be. Aşşağılık kompleksi bu kadar güçlü olmamalı. Acıyorum böylelerine ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Anon_**: süper ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
@@ -4794,6 +4068,735 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 12 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
+
+### Araştırma Görevlileri
+
+
+
+#### 👨‍🏫 Arş. Grv. Barış Akkuş 
+- 🚪 **Ofis:** EEF-D025
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17591](https://avesis.yildiz.edu.tr/17591)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Begüm Özbay 
+- 🚪 **Ofis:** EEF-D023
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17598](https://avesis.yildiz.edu.tr/17598)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Burak Ahmet Özden 
+- 🚪 **Ofis:** EEF-D024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/bozden](https://avesis.yildiz.edu.tr/bozden)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Ya hocam siz adam gibi adamsınız. Lab hocamızdı ve o kadar yakın davranmıştı ki size keşke hocayla yakın arkadaş olabilsek. Çok da iyi anlatır ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Traktör Reis_**: Adam gibi adam, amacı öğretmek. Öğrenciyi saçma sapan işlerle zorlamak gibi bir derdi yok. Öğrenciye olabildiğince yardımcı oluyor. Notlandırması da güzel. Güler yüzlü, sizinle yakın iletişim kurmaya çalışıyor. Açık ara en iyi araştırma görevlisi. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Anonim_**: En iyi araştırma görevlilerindendir. Belki de en iyisi zirvede benim icin 3 kisi var onlardan biri ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👩‍🏫 Arş. Grv. Elif Aşıcı 
+- 🚪 **Ofis:** EEF-D033
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/elif.asici](https://avesis.yildiz.edu.tr/elif.asici)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Verdirilen dersler konusunda çok bilgi sahibi değildir. Bir keresinde mikro dersinde sınav ya da ödevin çözümünü anlatmaya çalışıyordu. Erkan Hoca'nın kodu üzerinden anlatırken kodun bir satırını yanlış yorumladı. Zaten kendinin de fazla bilgi sahibi olmadığı belliydi. Bir arkadaş, hocam o kodun sebebi sizin anlattığınız gibi değil demişti. Sonra hoca arkadaşın söylediğini anlayamayınca kalkıp kodun kalanını arkadaş anlatmıştı. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👩‍🏫 Arş. Grv. Elçin Güveyi 
+- 🚪 **Ofis:** EEF-D022
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/eguveyi/](https://avesis.yildiz.edu.tr/eguveyi/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Emre Parlak 
+- 🚪 **Ofis:** EEF-D024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/emre.parlak](https://avesis.yildiz.edu.tr/emre.parlak)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Jagftype_**: On numara hoca, elektronik ve lojik lablarında hep yardımcı olmaya çalışıyor sağolsun ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Fırat Fuat Olcay 
+- 🚪 **Ofis:** EEF-D124
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/nr/15100321](https://avesis.yildiz.edu.tr/nr/15100321)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👩‍🏫 Arş. Grv. Hatice Erdirik 
+- 🚪 **Ofis:** EEF-D032
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17253](https://avesis.yildiz.edu.tr/17253)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Çok rahat bir hoca ve bu sizi sinir eder dua edin işiniz düşmesin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Anonim 41At_**: Asistan olarak verdigi lablar zorlamıyor. Çıkmış sorularin benzerleri geliyor. Kendisi oldukça anlayışlı ve iyi bir hoca. anlattıklarından anlamadığınız vs konularında bireysel olarak da yardımcı oluyor. ℹ️ Yorum **07.2024** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+        - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Himmet Toprak Kesgin 
+- 🚪 **Ofis:** EEF-D211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17200/](https://avesis.yildiz.edu.tr/17200/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Üçx_**: ArGör'ler içinde bölüm mezunu olan bir tek Toprak hoca var sanırım, kendisi farkını belli ediyor. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👩‍🏫 Arş. Grv. Kübra Adalı 
+- 🚪 **Ofis:** EEF-D211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/adalik/](https://avesis.yildiz.edu.tr/adalik/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Teradata_**: Öğrenciyi terslemeyi seven, pek sempatik olmayan bir eğitim görevlisidir. Bazı seçmeli derslere ACK yerine girdiği olur, dikkatli seçim yapın. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Traktör Reis_**: En sevilmeyen araştırma görevlisi, yavaş yavaş derslere girmeye başladı. Yakında öğretim üyesi olur. Gayet sıkıcı anlatır aynı zamanda öğrenciye garezi vardır. Bir defasında akşam arkadaşlarla bölümün içinde çekirge öldürmeye çalışırken bizi, başka bölümden sanarak, binadan kovmaya çalışmıştı. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Boş_**: Aşırı kaba bir insan, öğrenciler ile nasıl konuşması gerektiğini bilmiyor, sanırım zamanında çok zorbalamışlar kendisini. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - 👤 **_Bir Birey_**: Öğrencilerle nasıl iletişim kurmasını bilmiyen bir hoca. Saygısız ve çok fazla yersiz bağırıyor. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👩‍🏫 Arş. Grv. Meliha Gizem Çelik 
+- 🚪 **Ofis:** EEF-D022
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/gizem.celik](https://avesis.yildiz.edu.tr/gizem.celik)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Terim_**: iyi ℹ️ Yorum **11.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Muhammed Enes Özelbaş 
+- 🚪 **Ofis:** EEF-D030
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17316](https://avesis.yildiz.edu.tr/17316)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Muhammet Taha Gökcan 
+- 🚪 **Ofis:** EEF-D031
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17639](https://avesis.yildiz.edu.tr/17639)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Mustafa Cebeci 
+- 🚪 **Ofis:** EEF-D124
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17285](https://avesis.yildiz.edu.tr/17285)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Mustafa Mert Kara 
+- 🚪 **Ofis:** EEF-D030
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/mmkara/](https://avesis.yildiz.edu.tr/mmkara/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Muzaffer Kaan Yüce 
+- 🚪 **Ofis:** EEF-D025
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/kaan.yuce](https://avesis.yildiz.edu.tr/kaan.yuce)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Osman Furkan Karakuş 
+- 🚪 **Ofis:** EEF-D211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/osman.karakus](https://avesis.yildiz.edu.tr/osman.karakus)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👩‍🏫 Arş. Grv. Rukiye Başkara 
+- 🚪 **Ofis:** EEF-D022
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/rukiye.baskara](https://avesis.yildiz.edu.tr/rukiye.baskara)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👩‍🏫 Arş. Grv. Sultan Sevgi Turgut 
+- 🚪 **Ofis:** EEF-D211
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/sturgut/](https://avesis.yildiz.edu.tr/sturgut/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Blessed Camel_**: Öğrenciyle en iyi empati yapan hoca. Ne işiniz düştüyse gidin illaki yardımcı olur argörler arasında en iyilerinden ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★★★☆☆
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★☆
+        - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2025 yılı için yıldız bilgileri*
+      - 2025 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2025 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★★
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★★★
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. Sümeyye Sena Kurtvuran 
+- 🚪 **Ofis:** EEF-D024
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17372](https://avesis.yildiz.edu.tr/17372)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Ömer Mutlu Türk Kaya 
+- 🚪 **Ofis:** EEF-D033
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/omer.kaya](https://avesis.yildiz.edu.tr/omer.kaya)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Jagftype_**: İyi niyetli bir yaklaşımı var, lablarda yardımcı olmaya çalışıyor. Lab öncesi açıklamaları bayağı yeterli oluyor labı yapmak için ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★☆☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★★★☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★★
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★★★☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. İdris Demir 
+- 🚪 **Ofis:** EEF-D025
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/idrisd/](http://avesis.yildiz.edu.tr/idrisd/)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Traktör Reis_**: Kral hoca, dersleri dünya umrunda değilmiş gibi anlatır. Ödev/Proje kontrollerinde biraz titiz davranır. Öğrencinin mağdur edildiğini görürse ve kendisi bunu bir nebze olsun giderebilecekse insiyatif alır. Bir defasında **Nesneye Yönelik Programlama** labında süre az (gerçekten az) dediğimizde 1 saat ek süre vermişti. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Blessed Camel_**: Sınavlardan önce bi bizi soymadığı kalıyor ama iyi bir insan ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Jagftype_**: Öğrencileri pek sevmiyor sanırım, hiç güler yüzlü ya da anlayışlı değil. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - 👤 **_Chatgpt Kullanma Diye 0.7 Sn Var_**: bu zor devirde çet'e karşı direnmeye çalışan ancak insanın kabiliyetlerini çok yanlış yorumlayan bir insan. tuhaf bir şekilde 3. sınıflar harici herkese karşı iyi davranan birisiymiş. değişik. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★☆☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★☆☆☆☆☆☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★☆☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+
+
+
+#### 👨‍🏫 Arş. Grv. İmran Gül 
+- 🚪 **Ofis:** EEF-D006
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17613](https://avesis.yildiz.edu.tr/17613)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+
+
+#### 👨‍🏫 Arş. Grv. Şeyma Derdiyok 
+- 🚪 **Ofis:** EEF-D209
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/17486](https://avesis.yildiz.edu.tr/17486)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+
+### Üniversitede Aktif Görevde Olmayan Hocalar
+
+
+
+#### 👨‍🏫 Prof. Dr. Hasan Hüseyin Balık 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/balik](https://avesis.yildiz.edu.tr/balik)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Dd_**: Yoklamayı dikkat eden hoca, ingilizcede anlatıyor i, slaide okur geçer, sınavları kalsik ise soruya aklınıza ne geliyorsa yazın puan verir ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [Ağ Teknolojileri](#-ağ-teknolojileri)
+  - 📖 [Bilişim Sistemleri Güvenliği](#-bilişim-sistemleri-güvenliği)
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+
+
+
+#### 👨‍🏫 Prof. Dr. Nizamettin Aydın 
+- 🚪 **Ofis:** 
+- 🔗 **Araştırma Sayfası:** [https://avesis.yildiz.edu.tr/naydin](https://avesis.yildiz.edu.tr/naydin)
+- 💬 **Öğrenci Görüşleri:**
+  - 👤 **_Isimsiz_**: 😴 ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Nick_**: iyi ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 [Biyoenformatiğe Giriş](#-biyoenformatiğe-giriş)
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★★★☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★☆☆☆☆☆☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★☆☆☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+
+
+
+#### 👨‍🏫 Arş. Grv. Alper Eğitmen 
+- 🚪 **Ofis:** EEF-D209
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aegitmen/](http://avesis.yildiz.edu.tr/aegitmen/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+  - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+  - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+  - 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+  - 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+    - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  <details>
+  <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
+
+    - 📅 *2024 yılı için yıldız bilgileri*
+      - 2024 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★★☆☆☆
+      - 2024 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
+      - 2024 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★★☆☆☆
+      - 2024 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★★☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+  </details>
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+
+
+
+#### 👩‍🏫 Arş. Grv. Nurgül Yüzbaşıoğlu 
+- 🚪 **Ofis:** EEF-DZ24
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/nurguly/](http://avesis.yildiz.edu.tr/nurguly/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+- ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
+
+
+
+#### 👨‍🏫 Arş. Grv. Sercan Aygün 
+- 🚪 **Ofis:** EEF-DZ26
+- 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/ayguns/](http://avesis.yildiz.edu.tr/ayguns/)
+- 💬 **Öğrenci Görüşleri:**
+  - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
+- 📚 **Verdiği Dersler:**
+  - 📖 Ders bilgileri bulunamadı.
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
 - ℹ️ Bu hoca artık aktif görevde değil. Ya emekli olmuş ya da başka bir üniversiteye geçmiş olabilir..
 </details>
 
@@ -4818,52 +4821,52 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 <p align='center'>🔹 <b>AE</b> &emsp; Arş. Grv. Alper Eğitmen 🔹</p>
 <p align='center'>🔹 <b>AEL</b> &emsp; Dr. Ahmet Elbir 🔹</p>
 <p align='center'>🔹 <b>AÖ</b> &emsp; Dr. Ayşe Öcal 🔹</p>
-<p align='center'>🔹 <b>BA</b> &emsp; Arş. Grv. Barış AKKUŞ 🔹</p>
-<p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet ÖZDEN 🔹</p>
+<p align='center'>🔹 <b>BA</b> &emsp; Arş. Grv. Barış Akkuş 🔹</p>
+<p align='center'>🔹 <b>BAÖ</b> &emsp; Arş. Grv. Burak Ahmet Özden 🔹</p>
 <p align='center'>🔹 <b>BD</b> &emsp; Prof. Dr. Banu Diri 🔹</p>
 <p align='center'>🔹 <b>BÖ</b> &emsp; Arş. Grv. Begüm Özbay 🔹</p>
-<p align='center'>🔹 <b>EA</b> &emsp; Arş. Grv. Elif AŞICI 🔹</p>
-<p align='center'>🔹 <b>EG</b> &emsp; Arş. Grv. Elçin GÜVEYİ 🔹</p>
-<p align='center'>🔹 <b>EP</b> &emsp; Arş. Grv. Emre PARLAK 🔹</p>
+<p align='center'>🔹 <b>EA</b> &emsp; Arş. Grv. Elif Aşıcı 🔹</p>
+<p align='center'>🔹 <b>EG</b> &emsp; Arş. Grv. Elçin Güveyi 🔹</p>
+<p align='center'>🔹 <b>EP</b> &emsp; Arş. Grv. Emre Parlak 🔹</p>
 <p align='center'>🔹 <b>EU</b> &emsp; Dr. Erkan Uslu 🔹</p>
-<p align='center'>🔹 <b>FFO</b> &emsp; Arş. Grv. Fırat Fuat OLCAY 🔹</p>
+<p align='center'>🔹 <b>FFO</b> &emsp; Arş. Grv. Fırat Fuat Olcay 🔹</p>
 <p align='center'>🔹 <b>FÇ</b> &emsp; Dr. Furkan Çakmak 🔹</p>
 <p align='center'>🔹 <b>G1</b> &emsp; Dr. Göksel Biricik 🔹</p>
 <p align='center'>🔹 <b>GB</b> &emsp; Prof. Dr. Gökhan Bilgin 🔹</p>
-<p align='center'>🔹 <b>HE</b> &emsp; Arş. Grv. Hatice ERDİRİK 🔹</p>
+<p align='center'>🔹 <b>HE</b> &emsp; Arş. Grv. Hatice Erdirik 🔹</p>
 <p align='center'>🔹 <b>HHB</b> &emsp; Prof. Dr. Hasan Hüseyin Balık 🔹</p>
 <p align='center'>🔹 <b>HOİ</b> &emsp; Doç. Dr. Hamza Osman İlhan 🔹</p>
-<p align='center'>🔹 <b>HTK</b> &emsp; Arş. Grv. Himmet Toprak KESGİN 🔹</p>
-<p align='center'>🔹 <b>HİT</b> &emsp; Dr. H. İrem Türkmen 🔹</p>
-<p align='center'>🔹 <b>KA</b> &emsp; Arş. Grv. Kübra ADALI 🔹</p>
+<p align='center'>🔹 <b>HT</b> &emsp; Dr. H.İrem Türkmen 🔹</p>
+<p align='center'>🔹 <b>HTK</b> &emsp; Arş. Grv. Himmet Toprak Kesgin 🔹</p>
+<p align='center'>🔹 <b>KA</b> &emsp; Arş. Grv. Kübra Adalı 🔹</p>
 <p align='center'>🔹 <b>MAG</b> &emsp; Doç. Dr. M. Amaç Güvensan 🔹</p>
-<p align='center'>🔹 <b>MC</b> &emsp; Arş. Grv. Mustafa CEBECİ 🔹</p>
+<p align='center'>🔹 <b>MC</b> &emsp; Arş. Grv. Mustafa Cebeci 🔹</p>
 <p align='center'>🔹 <b>MEK</b> &emsp; Prof. Dr. M. Elif Karslıgil 🔹</p>
-<p align='center'>🔹 <b>MEÖ</b> &emsp; Arş. Grv. Muhammed Enes ÖZELBAŞ 🔹</p>
+<p align='center'>🔹 <b>MEÖ</b> &emsp; Arş. Grv. Muhammed Enes Özelbaş 🔹</p>
 <p align='center'>🔹 <b>MFA</b> &emsp; Prof. Dr. M. Fatih Amasyalı 🔹</p>
-<p align='center'>🔹 <b>MGÇ</b> &emsp; Arş. Grv. Meliha Gizem ÇELİK 🔹</p>
-<p align='center'>🔹 <b>MKY</b> &emsp; Arş. Grv. Muzaffer Kaan YÜCE 🔹</p>
-<p align='center'>🔹 <b>MMK</b> &emsp; Arş. Grv. Mustafa Mert KARA 🔹</p>
-<p align='center'>🔹 <b>MSA</b> &emsp; Doç. Dr. Mehmet Sıddık Aktaş 🔹</p>
-<p align='center'>🔹 <b>MTG</b> &emsp; Arş. Grv. Muhammet Taha GÖKCAN 🔹</p>
+<p align='center'>🔹 <b>MGÇ</b> &emsp; Arş. Grv. Meliha Gizem Çelik 🔹</p>
+<p align='center'>🔹 <b>MKY</b> &emsp; Arş. Grv. Muzaffer Kaan Yüce 🔹</p>
+<p align='center'>🔹 <b>MMK</b> &emsp; Arş. Grv. Mustafa Mert Kara 🔹</p>
+<p align='center'>🔹 <b>MSA</b> &emsp; Prof. Dr. Mehmet Sıddık Aktaş 🔹</p>
+<p align='center'>🔹 <b>MTG</b> &emsp; Arş. Grv. Muhammet Taha Gökcan 🔹</p>
 <p align='center'>🔹 <b>MUK</b> &emsp; Dr. M. Utku Kalay 🔹</p>
 <p align='center'>🔹 <b>NA</b> &emsp; Prof. Dr. Nizamettin Aydın 🔹</p>
 <p align='center'>🔹 <b>NY</b> &emsp; Arş. Grv. Nurgül Yüzbaşıoğlu 🔹</p>
-<p align='center'>🔹 <b>OA</b> &emsp; Doç. Dr. Oğuz Altun 🔹</p>
-<p align='center'>🔹 <b>OFK</b> &emsp; Arş. Grv. Osman Furkan KARAKUŞ 🔹</p>
+<p align='center'>🔹 <b>OA</b> &emsp; Dr. Oğuz Altun 🔹</p>
+<p align='center'>🔹 <b>OFK</b> &emsp; Arş. Grv. Osman Furkan Karakuş 🔹</p>
 <p align='center'>🔹 <b>OK</b> &emsp; Prof. Dr. Oya Kalıpsız 🔹</p>
-<p align='center'>🔹 <b>RB</b> &emsp; Arş. Grv. Rukiye BAŞKARA 🔹</p>
+<p align='center'>🔹 <b>RB</b> &emsp; Arş. Grv. Rukiye Başkara 🔹</p>
 <p align='center'>🔹 <b>SA</b> &emsp; Arş. Grv. Sercan Aygün 🔹</p>
-<p align='center'>🔹 <b>SSK</b> &emsp; Arş. Grv. Sümeyye Sena KURTVURAN 🔹</p>
-<p align='center'>🔹 <b>SST</b> &emsp; Arş. Grv. Sultan Sevgi TURGUT 🔹</p>
+<p align='center'>🔹 <b>SSK</b> &emsp; Arş. Grv. Sümeyye Sena Kurtvuran 🔹</p>
+<p align='center'>🔹 <b>SST</b> &emsp; Arş. Grv. Sultan Sevgi Turgut 🔹</p>
 <p align='center'>🔹 <b>SV</b> &emsp; Prof. Dr. Songül Varlı 🔹</p>
 <p align='center'>🔹 <b>SY</b> &emsp; Prof. Dr. Sırma Yavuz 🔹</p>
 <p align='center'>🔹 <b>YES</b> &emsp; Dr. Yunus Emre Selçuk 🔹</p>
 <p align='center'>🔹 <b>ZCT</b> &emsp; Dr. Ziya Cihan Tayşi 🔹</p>
-<p align='center'>🔹 <b>ÖMTK</b> &emsp; Arş. Grv. Ömer Mutlu Türk KAYA 🔹</p>
-<p align='center'>🔹 <b>İD</b> &emsp; Arş. Grv. İdris DEMİR 🔹</p>
+<p align='center'>🔹 <b>ÖMTK</b> &emsp; Arş. Grv. Ömer Mutlu Türk Kaya 🔹</p>
+<p align='center'>🔹 <b>İD</b> &emsp; Arş. Grv. İdris Demir 🔹</p>
 <p align='center'>🔹 <b>İG</b> &emsp; Arş. Grv. İmran Gül 🔹</p>
-<p align='center'>🔹 <b>ŞD</b> &emsp; Arş. Grv. Şeyma DERDİYOK 🔹</p>
+<p align='center'>🔹 <b>ŞD</b> &emsp; Arş. Grv. Şeyma Derdiyok 🔹</p>
 </details>
 
 <details>
