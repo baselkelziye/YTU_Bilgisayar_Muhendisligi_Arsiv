@@ -1,0 +1,62 @@
+Question
+
+Duration: 65 min 5 min picad
+
+A digital music platform aims to track users' listening records digitaly. Each line of the provided text file contains the following information for a listening record, in the given order
+
+-Unique stream ID
+
+-Username
+
+-Song title
+
+-Music genre 
+
+-Playback status (Liked, Skipped, Replay)
+
+The purpose of the program is to read the records from a text file, create a linked list sorted in ascending order based on the streamID value, write records with a specific playback status to a separate text file, and update the records in the binary file using the random access method
+
+Your program must include the following features:
+
+1. Create a struct to represent music playback records
+
+2. Read the records from the file named "songs.txt" and transfer the data into a sorted linked list based on the streamID value, in ascending order
+
+3. Priet the sorted linked list to the screen
+
+4. Write the records with a "Skipped" playback status to a file named "skipped.txt"
+
+5. write all records in the linked list to a binary file named "songs.dat"
+
+6. Obtain a streamID value from the user. Use random access on the binary file to locate the record with this ID and update its playback status to "Liked"
+
+7. Use the fread, fwrite, and fseek functions during the update process
+
+8. After the update, print all records in the binary file to the screen
+
+Sample Input File (songs.txt)-------------
+205 Mert Believer Rock Liked
+201 Elif ShapeOfYou Pop Skipped
+220 Can BlindingLights Pop Replay
+210 Zeynep Numb Rock Skipped
+215 Emir CountingStars Indie Liked
+
+File Created (skipped.txt)
+201 Elif ShapeOfYou Pop Skipped
+210 Zeynep Numb Rock Skipped
+
+Sample Program Output-------------------------------
+201 Elif ShapeOfYou Pop Skipped
+205 Mert Believer Rock Liked
+210 Zeynep Numb Rock Skipped
+215 Emir CountingStars Indie Liked
+220 Can BlindingLights Pop Replay
+
+Enter stream ID to Update: 210
+
+Update Binary File Records: (Binary Dosyanın da Sıralı olması istenmişti labda)
+201 Elif ShapeOfYou Pop Skipped
+205 Mert Believer Rock Liked
+210 Zeynep Numb Rock Liked
+215 Emir CountingStars Indie Liked
+220 Can BlindingLights Pop Replay

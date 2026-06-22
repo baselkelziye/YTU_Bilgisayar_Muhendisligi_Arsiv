@@ -1,0 +1,36 @@
+typedef struct{
+    int no;
+    char name[30];
+    float gpa;
+    int interview;
+    int english;
+    int disciplinary;
+} Candidate;
+Initially, a dynamic array with a capacity of 2 must be created.
+Whenever the array becomes full, its capacity must he doubled by using realloc. The input process will stop when -1 is entered as the candidate number.
+A candidate is eligible for the internship if
+the candidate has no disciplinary penalty, and
+the interview score is at least 70, and
+at least one of the following conditions is satisfied.
+gpa >= 2.50
+english >= 80
+Note: Your solution must be based on pointer logic. The structure array must be passed to functions as Candidate array, not as Candidate array[].
+Write the following functions:
+1. void add_candidate ( Candidate** array, int* n, int* capacity, Candidate newCandidate);
+This function must add a new candidate to the dynamic array. If the array is full, the capacity must be doubled and memory must be reallocated using realloc
+2. int eligible_for_internship (Candidate c);
+This function must check whether the given candidate is eligible for the internship. It must return 1 if the candidate is eligible, and 0 otherwise.
+3. int best candidate (Candidate* array, int n);
+The selection must be made only among candidates who are eligible for the internship. 
+First, the candidate with the higher interview score must be selected.
+If there is a tie, the candidate with the higher GPA must be selected.
+"If there is still a tie, the candidate with the higher English score must be selected.
+The function must return the index of the best candidate in the array. If there is no eligible candidate. it must
+return -1.
+4. int borderline_candidate_count (Candidate* array, int n);
+Only candidates who are eligible for the internship must be considered.
+This function must return the number of eligible candidates who satisfy only one of the following two conditions:
+gpa >= 2.50
+english >= 80
+Candidates who satisfy both conditions must not be counted.
+Required output: Print the name and number of the best candidate. Also print the number of eligible candidates who pass through only one of the borderline
