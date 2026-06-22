@@ -2,8 +2,8 @@
 
 ## ℹ️ Ders Bilgileri
 
-- 📅 **Yıl:** 4
-- 📆 **Dönem:** Güz
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Üniversite Mesleki Seçmeli
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.

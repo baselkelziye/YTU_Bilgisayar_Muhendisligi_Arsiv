@@ -4,7 +4,7 @@
 
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
-- 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- 🏫 **Ders Tipi:** Üniversite Sosyal Seçmeli
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆

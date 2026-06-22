@@ -3,8 +3,8 @@
 ## ℹ️ Ders Bilgileri
 
 - 📅 **Yıl:** 0
-- 📆 **Dönem:** yok
-- 🏫 **Ders Tipi:** Sosyal Seçmeli 1
+- 📆 **Dönem:** 
+- 🏫 **Ders Tipi:** Üniversite Sosyal Seçmeli
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
