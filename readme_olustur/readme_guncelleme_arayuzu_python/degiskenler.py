@@ -157,16 +157,9 @@ _MODULE_DIR, _PROJECT_ROOT, BIR_UST_DIZIN, INTERNAL_ROOT = _get_base_paths()
 BIR_UST_DIZIN_GORELI = ".."
 
 
-try:
-    from PyQt6.QtCore import QSettings
-except ImportError:
-    class QSettings:
-        def __init__(self, *args, **kwargs):
-            pass
-        def value(self, key, default=None):
-            if key == "json_depo_yolu":
-                return "."
-            return default
+from PyQt6.QtCore import QSettings
+
+GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
 
 settings = QSettings("YTU_Arsiv", "Readme_Guncelleyici")
 JSON_DOSYALARI_DEPOSU = settings.value("json_depo_yolu", ".")
@@ -176,7 +169,6 @@ if not isinstance(JSON_DOSYALARI_DEPOSU, str):
     JSON_DOSYALARI_DEPOSU = str(JSON_DOSYALARI_DEPOSU)
 
 README_GUNCELLEME_PYTHON = "readme_guncelleme_arayuzu_python"
-GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
 
 DERSLER_JSON_NAME = "dersler.json"
 DERSLER_JSON_NAME = os.path.join(JSON_DOSYALARI_DEPOSU, DERSLER_JSON_NAME)

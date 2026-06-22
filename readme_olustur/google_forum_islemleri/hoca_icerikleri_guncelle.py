@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 import shutil
+import re
 try:
     from google_forum_islemleri.icerik_kontrol import *
     from google_forum_islemleri.csv_kontrol_et import csv_kontrol_et
@@ -22,6 +23,60 @@ from degiskenler import *
 from cikti_yazdirma import custom_write, custom_write_error
 
 SLEEP_TIME = 10
+
+
+def turkce_kucuk_harf(metin):
+    if not metin:
+        return ""
+    map_dict = {'I': 'ı', 'İ': 'i'}
+    res = "".join(map_dict.get(c, c) for c in metin)
+    return res.lower()
+
+
+def hoca_adi_temizle(ad):
+    if not ad:
+        return ""
+    ad_low = turkce_kucuk_harf(ad)
+    
+    unvan_patterns = [
+        r'^prof\b\.?\s*dr\b\.?',
+        r'^prof\b\.?',
+        r'^doç\b\.?\s*dr\b\.?',
+        r'^doç\b\.?',
+        r'^doc\b\.?\s*dr\b\.?',
+        r'^doc\b\.?',
+        r'^yrd\b\.?\s*doç\b\.?\s*dr\b\.?',
+        r'^yrd\b\.?\s*doç\b\.?',
+        r'^yrd\b\.?\s*doc\b\.?\s*dr\b\.?',
+        r'^yrd\b\.?\s*doc\b\.?',
+        r'^dr\b\.?\s*öğr\b\.?\s*üyesi\b',
+        r'^dr\b\.?\s*öğretim\s+üyesi\b',
+        r'^dr\b\.?\s*ogr\b\.?\s*uyesi\b',
+        r'^dr\b\.?\s*ogretim\s+uyesi\b',
+        r'^dr\b\.?',
+        r'^arş\b\.?\s*gör\b\.?\s*dr\b\.?',
+        r'^arş\b\.?\s*gör\b\.?',
+        r'^ars\b\.?\s*gor\b\.?\s*dr\b\.?',
+        r'^ars\b\.?\s*gor\b\.?',
+        r'^öğr\b\.?\s*gör\b\.?\s*dr\b\.?',
+        r'^öğr\b\.?\s*gör\b\.?',
+        r'^ogr\b\.?\s*gor\b\.?\s*dr\b\.?',
+        r'^ogr\b\.?\s*gor\b\.?',
+    ]
+    
+    degisti = True
+    while degisti:
+        degisti = False
+        ad_low = ad_low.strip()
+        for pattern in unvan_patterns:
+            new_ad, count = re.subn(pattern, '', ad_low)
+            if count > 0:
+                ad_low = new_ad
+                degisti = True
+                break
+                
+    ad_low = re.sub(r'\s+', ' ', ad_low).strip()
+    return ad_low
 
 
 def guncelle_ogrenci_gorusleri(data, sheets_url):
@@ -51,6 +106,19 @@ def guncelle_ogrenci_gorusleri(data, sheets_url):
         custom_write_error("CSV dosyası hatalı, script durduruluyor.\n")
         raise SystemExit(1)
     df = df.dropna()  # NaN içeren tüm satırları kaldır
+
+    # Eşleşme sözlüğünü kur
+    isim_esleme = {}
+    for hoca in data[HOCALAR]:
+        original_ad = hoca[AD]
+        temiz_ad = hoca_adi_temizle(original_ad)
+        isim_esleme[temiz_ad] = original_ad
+        
+    def canonical_hoca_adi(csv_ad):
+        temiz_csv_ad = hoca_adi_temizle(csv_ad)
+        return isim_esleme.get(temiz_csv_ad, csv_ad)
+        
+    df[HOCA_SEC] = df[HOCA_SEC].apply(canonical_hoca_adi)
 
     # Her hoca için yorumları güncelle
     for index, row in df.iterrows():
@@ -132,6 +200,22 @@ def main():
     # Google Sheets URL'si
     yorumlar_sheets_url = HOCA_YORULMALA_LINKI_CSV
 
+    # JSON dosyasını oku (eşleme sözlüğü için erkene alındı)
+    json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
+    with open(os.path.join(BIR_UST_DIZIN, json_file_path), "r", encoding="utf-8") as file:
+        data = json.load(file)
+
+    # Eşleşme sözlüğünü kur
+    isim_esleme = {}
+    for hoca in data[HOCALAR]:
+        original_ad = hoca[AD]
+        temiz_ad = hoca_adi_temizle(original_ad)
+        isim_esleme[temiz_ad] = original_ad
+        
+    def canonical_hoca_adi(csv_ad):
+        temiz_csv_ad = hoca_adi_temizle(csv_ad)
+        return isim_esleme.get(temiz_csv_ad, csv_ad)
+
     # Veriyi indir ve DataFrame olarak oku
     try:
         yildizlar_df = pd.read_csv(yildizlar_sheets_url)
@@ -170,6 +254,10 @@ def main():
         raise SystemExit(1)
 
     yildizlar_df = yildizlar_df.dropna()
+    
+    # Hoca isimlerini canonical (json'daki tam isim) haline getir
+    yildizlar_df[HOCA_SEC] = yildizlar_df[HOCA_SEC].apply(canonical_hoca_adi)
+
     # Sadece sayısal sütunları al ve ortalama hesapla
     yildizlar_numeric_columns = yildizlar_df.columns.drop(
         [ZAMAN_DAMGASI, HOCA_SEC]
@@ -202,10 +290,6 @@ def main():
         en_populer_hoca = "MEVCUT DEĞİL"  # veya uygun bir varsayılan değer
         en_populer_hoca_oy_sayisi = 0  # veya uygun bir varsayılan değer
 
-    # JSON dosyasını oku
-    json_file_path = HOCALAR_JSON_NAME  # JSON dosyasının yolu
-    with open(os.path.join(BIR_UST_DIZIN, json_file_path), "r", encoding="utf-8") as file:
-        data = json.load(file)
     # en popüler hoca aynı oy sayısına sahip başka hoca varsa değişmesin
     if data.get(EN_POPULER_HOCA, {}).get(OY_SAYISI, 0) != int(en_populer_hoca_oy_sayisi):
         data[EN_POPULER_HOCA] = {
