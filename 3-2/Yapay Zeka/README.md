@@ -28,7 +28,8 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
+- 📄 **Çıkmış:** [2026 Vize Soruları](./cikmis_sorular/2026/yapay_zeka_vize_2026.pdf) ✨
+- 📄 **Çıkmış:** [Çıkmış sorular linki (Google Drive)](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=7OZYkBDAqws&ab_channel=%C3%96mer%C3%87al%C4%B1%C5%9Fkan) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨
