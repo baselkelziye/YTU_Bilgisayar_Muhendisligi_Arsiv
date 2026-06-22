@@ -158,14 +158,14 @@ def yerel_yoldan_github_linkine(
     repo_url: str = VARSAYILAN_GITHUB_URL
 ) -> Optional[str]:
     """
-    Yerel klasör yolunu GitHub URL'sine dönüştür.
+    Yerel klasör yolunu relative URL'ye dönüştür.
     
     Args:
         klasor_yolu: Yerel klasör yolu
         repo_url: GitHub repo URL'si
     
     Returns:
-        GitHub URL'si veya None
+        Göreceli URL veya None
     """
     if klasor_yolu is None:
         return None
@@ -173,9 +173,10 @@ def yerel_yoldan_github_linkine(
     klasor_yolu = klasor_yolu.replace(DOKUMANLAR_REPO_YOLU, "")
     klasor_yolu = os.path.normpath(klasor_yolu)
     klasor_yolu = klasor_yolu.replace("\\", "/")
+    klasor_yolu = klasor_yolu.lstrip("/")
     klasor_yolu = klasor_yolu.replace(" ", "%20")
     
-    return f"{repo_url}/tree/main/{klasor_yolu}"
+    return f"./{klasor_yolu}"
 
 
 def sirali_ekle(liste: list, eleman: Any, anahtar_fonksiyonu: callable) -> None:
