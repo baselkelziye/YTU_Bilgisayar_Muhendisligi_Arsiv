@@ -1,0 +1,96 @@
+STRUCTURED PROGRAMMING
+
+Lab-3 Session-1
+
+15.05.2026
+
+Duration: 60 min +5 min upload
+
+Upload Link: https://forms.gle/LXXkxHxVux5ib3qPA
+
+Demo Day Event Participation System
+
+Students, graduates, and company representatives will attend the Demo Day event organized by the Department of Computer Engineering. Write a linked list-based C program to keep participant records at the entrance of the event. The program must run through a menu and continue performing operations until the user selects the exit option.
+
+1. Define the struct structure
+
+A struct named Participant must be defined. This struct must include the participant ID, participant name, institution, participant type, and a pointer of its own type. In this way, a self-referential struct structure will be created.
+
+typedef struct Participant (
+
+int id;
+
+char name[50];
+
+char institution [50];
+
+int type;
+
+struct Participant *next;
+
+2. Write the function to create a new participant
+
+The createParticipant function must create a new participant record using the given information and return the created record.
+
+} Participant;
+
+3. Write the function to add a participant to the linked list
+
+The addParticipant function must add the new participant record to the end of the list. If the list is empty, the new record must become the first element of the list.
+
+4. Write the function to list participants
+
+The listParticipants function must print all records in the participant list. If the list is empty, it must display an appropriate warning message.
+
+5. Write the helper function that prints the participant type
+
+The printType function must print the participant type with its explanations. If an invalid type value is entered, it must print "Unknown".
+
+6. Write the function to search for a participant by ID
+
+The searchParticipant function must perform an iterative search in the list according to the participant ID and return the participant if found.
+
+7. Write the recursive function to calculate the number of participants
+
+The countParticipants Recursive function must calculate the number of participants in the list recursively and return the total count.
+
+8. Filter participants using a function pointer
+
+The listFiltered Participants function must print participants according to the filtering function passed to it. A function pointer must be used in this operation.
+
+The isStudent function must identify records whose participant type is "Student".
+
+The isCompanyRepresentative function must identify records whose participant type is "Company
+
+Representative".
+int isStudent(Participant *p);
+
+int is Company Representative (Participant *p);
+
+void list Filtered Participants (Participant "head, int ("filter) (Participant *));
+
+9. Write the function to free memory
+
+The freeParticipants function must release the memory used for the participant list at the end of the program.
+
+10. Create the menu structure
+
+The menu function must print the program options on the screen. The program must continue running through the menu until the user selects the exit option.
+
+Program Menu
+
+-DEMO DAY EVENT PARTICIPATION SYSTEM ---
+
+1-Add participant
+
+2-List participants
+
+3-Search by participant ID
+
+4-Calculate participant count recursively
+
+5-List students
+
+6-List company representatives.
+
+7-Exit
