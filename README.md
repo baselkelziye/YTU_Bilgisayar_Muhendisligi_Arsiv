@@ -1851,6 +1851,29 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Grafiğine%20Giriş)
 
 
+#### 📘 Bilgisayar Mühendisliğinde Özel Konular 1 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+
+
+#### 📘 Bilgisayar Mühendisliğinde Özel Konular 2 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+
+
+#### 📘 Bilgisayar Mühendisliğinde Özel Konular 3 
+  - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MEK](#-prof-dr-m-elif-karslıgil)
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+
+
 #### 📘 Bilgiye Erişim Ve Arama Motorları 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
@@ -2386,6 +2409,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
   - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
+
+### 🗓 Üniversite Sosyal Seçmeli
+
+
+#### 📘 Temel Japonca 1 
+  - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
 
 ### 🗓 Lisansüstü
 
@@ -4854,6 +4886,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h3 align='center'>💫 <b><i>Burak Başol</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
 
+<h3 align='center'>💫 <b><i>Enes Utku Selbes</i></b> 💫</h3>
+<p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
+
 <h3 align='center'>💫 <b><i>Esma Nur Çilekaya</i></b> 💫</h3>
 <p align='center'><a href='https://www.linkedin.com/in/esma-nur-%C3%A7ilekaya'><b>LinkedIn Profili</b></a></p>
 
@@ -4868,9 +4903,6 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h4 align='center'>✨ <b><i>Batuhan Odçıkın</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
-
-<h4 align='center'>✨ <b><i>Enes Utku Selbes</i></b> ✨</h4>
-<p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
 
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
