@@ -675,7 +675,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [G1](#-dr-göksel-biricik)
     - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Bilgisayar%20Bilimlerine%20Giriş)
+  - 📂 [Ders Klasörü](./1-1/Bilgisayar%20Bilimlerine%20Giriş)
 
 
 #### 📘 Fizik 1 
@@ -709,7 +709,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Fizik%201)
+  - 📂 [Ders Klasörü](./1-1/Fizik%201)
 
 
 #### 📘 İleri İngilizce 1 
@@ -737,7 +737,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/İleri%20İngilizce%201)
+  - 📂 [Ders Klasörü](./1-1/İleri%20İngilizce%201)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 1 
@@ -762,7 +762,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/İş%20Sağlığı%20ve%20Güvenliği%201)
+  - 📂 [Ders Klasörü](./1-1/İş%20Sağlığı%20ve%20Güvenliği%201)
 
 
 #### 📘 Lineer Cebir 
@@ -788,7 +788,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★☆☆☆
           - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Lineer%20Cebir)
+  - 📂 [Ders Klasörü](./1-1/Lineer%20Cebir)
 
 
 #### 📘 Matematik 1 
@@ -818,7 +818,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-1/Matematik%201)
+  - 📂 [Ders Klasörü](./1-1/Matematik%201)
 
 ### 🗓 1. Yıl - Bahar
 
@@ -851,7 +851,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler)
+  - 📂 [Ders Klasörü](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler)
 
 
 #### 📘 İleri İngilizce 2 
@@ -871,7 +871,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/İleri%20İngilizce%202)
+  - 📂 [Ders Klasörü](./1-2/İleri%20İngilizce%202)
 
 
 #### 📘 Matematik 2 
@@ -899,7 +899,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Matematik%202)
+  - 📂 [Ders Klasörü](./1-2/Matematik%202)
 
 
 #### 📘 Mühendisler için Yarıiletken Fiziği 
@@ -924,7 +924,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Mühendisler%20İçin%20Yarıiletken%20Fiziği)
+  - 📂 [Ders Klasörü](./1-2/Mühendisler%20İçin%20Yarıiletken%20Fiziği)
 
 
 #### 📘 Sayısal Analiz 
@@ -957,7 +957,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Sayısal%20Analiz)
+  - 📂 [Ders Klasörü](./1-2/Sayısal%20Analiz)
 
 
 #### 📘 Yapısal Programlama 
@@ -986,7 +986,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [YES](#-dr-yunus-emre-selçuk)
     - [AEL](#-dr-ahmet-elbir)
     - [HİT](#-dr-h-i̇rem-türkmen)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Yapısal%20Programlama)
+  - 📂 [Ders Klasörü](./1-2/Yapısal%20Programlama)
 
 ### 🗓 2. Yıl - Güz
 
@@ -1029,7 +1029,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Ayrık%20Matematik)
+  - 📂 [Ders Klasörü](./2-1/Ayrık%20Matematik)
 
 
 #### 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler 
@@ -1062,7 +1062,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Bilgisayar%20Mühendisleri%20İçin%20Diferansiyel%20Denklemler)
+  - 📂 [Ders Klasörü](./2-1/Bilgisayar%20Mühendisleri%20İçin%20Diferansiyel%20Denklemler)
 
 
 #### 📘 İstatistik ve Olasılık Hesapları 
@@ -1098,7 +1098,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/İstatistik%20ve%20Olasılık%20Hesapları)
+  - 📂 [Ders Klasörü](./2-1/İstatistik%20ve%20Olasılık%20Hesapları)
 
 
 #### 📘 Lojik Devreler 
@@ -1138,7 +1138,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Lojik%20Devreler)
+  - 📂 [Ders Klasörü](./2-1/Lojik%20Devreler)
 
 
 #### 📘 Nesneye Yönelik Programlama 
@@ -1174,7 +1174,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
     - [FÇ](#-dr-furkan-çakmak)
     - [YES](#-dr-yunus-emre-selçuk)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-1/Nesneye%20Yonelik%20Programlama)
+  - 📂 [Ders Klasörü](./2-1/Nesneye%20Yonelik%20Programlama)
 
 ### 🗓 2. Yıl - Bahar
 
@@ -1204,7 +1204,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Müh%20için%20Sinyaller%20ve%20Sistemler)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Müh%20için%20Sinyaller%20ve%20Sistemler)
 
 
 #### 📘 Bilgisayar Organizasyonu 
@@ -1236,7 +1236,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Organizasyonu)
 
 
 #### 📘 Hesaplama Kuramı 
@@ -1262,7 +1262,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Hesaplama%20Kuramı)
+  - 📂 [Ders Klasörü](./2-2/Hesaplama%20Kuramı)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 2 
@@ -1282,7 +1282,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/İş%20Sağlığı%20ve%20Güvenliği%202)
+  - 📂 [Ders Klasörü](./2-2/İş%20Sağlığı%20ve%20Güvenliği%202)
 
 
 #### 📘 Sistem Analizi ve Tasarımı 
@@ -1305,7 +1305,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Sistem%20Analizi%20ve%20Tasarımı)
+  - 📂 [Ders Klasörü](./2-2/Sistem%20Analizi%20ve%20Tasarımı)
 
 
 #### 📘 Veri Yapıları ve Algoritmalar 
@@ -1340,7 +1340,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Veri%20Yapıları%20ve%20Algoritmalar)
+  - 📂 [Ders Klasörü](./2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
 
@@ -1379,7 +1379,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Algoritma%20Analizi)
+  - 📂 [Ders Klasörü](./3-1/Algoritma%20Analizi)
 
 
 #### 📘 Genel Staj 
@@ -1399,7 +1399,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2023 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Genel%20Staj)
+  - 📂 [Ders Klasörü](./3-1/Genel%20Staj)
 
 
 #### 📘 İşletim Sistemleri 
@@ -1432,7 +1432,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AEL](#-dr-ahmet-elbir)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/İşletim%20Sistemleri)
+  - 📂 [Ders Klasörü](./3-1/İşletim%20Sistemleri)
 
 
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
@@ -1473,7 +1473,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili)
+  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili)
 
 
 #### 📘 Seminer ve Meslek Etiği 
@@ -1500,7 +1500,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Seminer%20ve%20Meslek%20Etiği)
+  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Etiği)
 
 
 #### 📘 Türkçe 1 
@@ -1525,7 +1525,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Türkçe%201)
+  - 📂 [Ders Klasörü](./3-1/Türkçe%201)
 
 
 #### 📘 Veritabanı Yönetimi 
@@ -1560,7 +1560,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Veritabanı%20Yönetimi)
+  - 📂 [Ders Klasörü](./3-1/Veritabanı%20Yönetimi)
 
 ### 🗓 3. Yıl - Bahar
 
@@ -1591,7 +1591,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Bilgisayar%20Projesi)
+  - 📂 [Ders Klasörü](./Bilgisayar%20Projesi)
 
 
 #### 📘 Mesleki Staj 
@@ -1611,7 +1611,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Mesleki%20Staj)
+  - 📂 [Ders Klasörü](./3-2/Mesleki%20Staj)
 
 
 #### 📘 Veri İletişimi ve Bilgisayar Ağları 
@@ -1633,7 +1633,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları)
+  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları)
 
 
 #### 📘 Yapay Zeka 
@@ -1660,7 +1660,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Yapay%20Zeka)
+  - 📂 [Ders Klasörü](./3-2/Yapay%20Zeka)
 
 
 #### 📘 Yazılım Mühendisliği 
@@ -1688,7 +1688,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [OK](#-prof-dr-oya-kalıpsız)
     - [YES](#-dr-yunus-emre-selçuk)
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Yazılım%20Mühendisliği)
+  - 📂 [Ders Klasörü](./3-2/Yazılım%20Mühendisliği)
 
 ### 🗓 4. Yıl - Güz
 
@@ -1718,7 +1718,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
+  - 📂 [Ders Klasörü](./4-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
 
 
 #### 📘 Çok Disiplinli Tasarım Projesi 
@@ -1741,7 +1741,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
           - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Çok%20Displinli%20Tasarım%20Projesi)
+  - 📂 [Ders Klasörü](./Çok%20Displinli%20Tasarım%20Projesi)
 
 ### 🗓 4. Yıl - Bahar
 
@@ -1764,7 +1764,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
+  - 📂 [Ders Klasörü](./4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
 
 
 #### 📘 Bitirme Çalışması 
@@ -1784,7 +1784,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Bitirme%20Çalışması)
+  - 📂 [Ders Klasörü](./Bitirme%20Çalışması)
 
 
 #### 📘 Türkçe 2 
@@ -1805,7 +1805,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-2/Türkçe%202)
+  - 📂 [Ders Klasörü](./4-2/Türkçe%202)
 
 ### 🗓 Üniversite Sosyal Seçmeli
 
@@ -1820,7 +1820,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/16.yüzyıldan%20Günümüze%20İstanbulda%20Dans)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/16.yüzyıldan%20Günümüze%20İstanbulda%20Dans)
 
 
 #### 📘 20. Yüzyılda Siyasal Gelişmeler-Toplumsal Hareketler 
@@ -1833,7 +1833,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/20.%20Yüzyılda%20Siyasal%20Gelişmeler-Toplumsal%20Hareketler)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/20.%20Yüzyılda%20Siyasal%20Gelişmeler-Toplumsal%20Hareketler)
 
 
 #### 📘 Afet Bilgisi ve Farkındalığı 
@@ -1846,7 +1846,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Afet%20Bilgisi%20ve%20Farkındalığı)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Afet%20Bilgisi%20ve%20Farkındalığı)
 
 
 #### 📘 Aile İşletmeleri ve Kurumsallaşma 
@@ -1859,7 +1859,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Aile%20İşletmeleri%20ve%20Kurumsallaşma)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Aile%20İşletmeleri%20ve%20Kurumsallaşma)
 
 
 #### 📘 Akademik Türkçe 
@@ -1872,7 +1872,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Akademik%20Türkçe)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Akademik%20Türkçe)
 
 
 #### 📘 Almanca Dil Becerileri 
@@ -1885,7 +1885,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerileri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerileri)
 
 
 #### 📘 Almanca Dil Becerilerine Giriş 
@@ -1898,7 +1898,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerilerine%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerilerine%20Giriş)
 
 
 #### 📘 Basketbol Temel Teknik Eğitimi 
@@ -1911,7 +1911,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Basketbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Basketbol%20Temel%20Teknik%20Eğitimi)
 
 
 #### 📘 Bağımlılık ve Bağımlılıkla Mücadele 
@@ -1924,7 +1924,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Bağımlılık%20ve%20Bağımlılıkla%20Mücadele)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bağımlılık%20ve%20Bağımlılıkla%20Mücadele)
 
 
 #### 📘 Beden Farkındalığı ve Nefes Teknikleri 
@@ -1937,7 +1937,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Beden%20Farkındalığı%20ve%20Nefes%20Teknikleri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Beden%20Farkındalığı%20ve%20Nefes%20Teknikleri)
 
 
 #### 📘 Beslenme ve Sağlık 
@@ -1950,7 +1950,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Beslenme%20ve%20Sağlık)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Beslenme%20ve%20Sağlık)
 
 
 #### 📘 Bilim Felsefesi 
@@ -1963,7 +1963,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Bilim%20Felsefesi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bilim%20Felsefesi)
 
 
 #### 📘 Bilim Tarihi 
@@ -1976,7 +1976,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Bilim%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bilim%20Tarihi)
 
 
 #### 📘 Demokrasi Kültürünün İlke ve Kurumları 
@@ -1989,7 +1989,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Demokrasi%20Kültürünün%20İlke%20ve%20Kurumları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Demokrasi%20Kültürünün%20İlke%20ve%20Kurumları)
 
 
 #### 📘 Deprem ve Planlama 
@@ -2002,7 +2002,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Deprem%20ve%20Planlama)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Deprem%20ve%20Planlama)
 
 
 #### 📘 Doğrudan Pazarlama 
@@ -2015,7 +2015,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Doğrudan%20Pazarlama)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Doğrudan%20Pazarlama)
 
 
 #### 📘 Dünya Uygarlıkları 
@@ -2028,7 +2028,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Dünya%20Uygarlıkları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Dünya%20Uygarlıkları)
 
 
 #### 📘 Ekonomi Politikaları ve Uygulamaları 
@@ -2041,7 +2041,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Ekonomi%20Politikaları%20ve%20Uygulamaları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Ekonomi%20Politikaları%20ve%20Uygulamaları)
 
 
 #### 📘 Etkili İletişim Ve Hazırlıksız Sunum Becerileri 
@@ -2054,7 +2054,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Etkili%20İletişim%20Ve%20Hazırlıksız%20Sunum%20Becerileri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Etkili%20İletişim%20Ve%20Hazırlıksız%20Sunum%20Becerileri)
 
 
 #### 📘 Eğitim Felsefesi 
@@ -2067,7 +2067,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Eğitim%20Felsefesi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Felsefesi)
 
 
 #### 📘 Eğitim Teknolojilerinde Güncel Uygulamalar 
@@ -2080,7 +2080,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Eğitim%20Teknolojilerinde%20Güncel%20Uygulamalar)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Teknolojilerinde%20Güncel%20Uygulamalar)
 
 
 #### 📘 Eğitim Yönetimi 
@@ -2093,7 +2093,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Eğitim%20Yönetimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Yönetimi)
 
 
 #### 📘 Felsefeye Giriş 
@@ -2110,7 +2110,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Felsefeye%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Felsefeye%20Giriş)
 
 
 #### 📘 Fotoğraf Teknikleri 
@@ -2123,7 +2123,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Fotoğraf%20Teknikleri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Fotoğraf%20Teknikleri)
 
 
 #### 📘 Futbol ve Temel Hareket Öğretimi 
@@ -2136,7 +2136,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Futbol%20ve%20Temel%20Hareket%20Öğretimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Futbol%20ve%20Temel%20Hareket%20Öğretimi)
 
 
 #### 📘 Gençlik ve Eğitim 
@@ -2149,7 +2149,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Gençlik%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Gençlik%20ve%20Eğitim)
 
 
 #### 📘 Grafik Tasarım Araçları 
@@ -2162,7 +2162,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Grafik%20Tasarım%20Araçları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Grafik%20Tasarım%20Araçları)
 
 
 #### 📘 Gönüllülük Çalışmaları 
@@ -2175,7 +2175,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Gönüllülük%20Çalışmaları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Gönüllülük%20Çalışmaları)
 
 
 #### 📘 Güzel Konuşma ve Diksiyon 
@@ -2188,7 +2188,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Güzel%20Konuşma%20ve%20Diksiyon)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Güzel%20Konuşma%20ve%20Diksiyon)
 
 
 #### 📘 Halk oyunları Temel Figür Eğitimi 
@@ -2201,7 +2201,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Halk%20oyunları%20Temel%20Figür%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halk%20oyunları%20Temel%20Figür%20Eğitimi)
 
 
 #### 📘 Halkla İlişkiler (İİBF) 
@@ -2214,7 +2214,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(İİBF))
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(İİBF))
 
 
 #### 📘 Halkla İlişkiler (STF) 
@@ -2227,7 +2227,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(STF))
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(STF))
 
 
 #### 📘 Haritacılık Bilim Tarihi 
@@ -2240,7 +2240,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Haritacılık%20Bilim%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Haritacılık%20Bilim%20Tarihi)
 
 
 #### 📘 Hayatın İçinde Kimya 
@@ -2253,7 +2253,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Hayatın%20İçinde%20Kimya)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Hayatın%20İçinde%20Kimya)
 
 
 #### 📘 Hentbol Temel Teknik Eğitimi 
@@ -2266,7 +2266,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Hentbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Hentbol%20Temel%20Teknik%20Eğitimi)
 
 
 #### 📘 İngilizce Akademik Yazma ve Sunum Becerileri 
@@ -2279,7 +2279,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İngilizce%20Akademik%20Yazma%20ve%20Sunum%20Becerileri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İngilizce%20Akademik%20Yazma%20ve%20Sunum%20Becerileri)
 
 
 #### 📘 İnovasyon ve Girişimcilik 
@@ -2292,7 +2292,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İnovasyon%20ve%20Girişimcilik)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnovasyon%20ve%20Girişimcilik)
 
 
 #### 📘 İnsan Hakları 
@@ -2305,7 +2305,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İnsan%20Hakları)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Hakları)
 
 
 #### 📘 İnsan Kaynakları Yönetimi 
@@ -2318,7 +2318,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İnsan%20Kaynakları%20Yönetimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Kaynakları%20Yönetimi)
 
 
 #### 📘 İnsan Merkezli Yapay Zeka 
@@ -2331,7 +2331,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İnsan%20Merkezli%20Yapay%20Zeka)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Merkezli%20Yapay%20Zeka)
 
 
 #### 📘 İstanbul: Dün, Bugün ve Yarın 
@@ -2344,7 +2344,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İstanbul:%20Dün,%20Bugün%20ve%20Yarın)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İstanbul:%20Dün,%20Bugün%20ve%20Yarın)
 
 
 #### 📘 İşletme Lojistiğinin Temelleri 
@@ -2357,7 +2357,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/İşletme%20Lojistiğinin%20Temelleri)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İşletme%20Lojistiğinin%20Temelleri)
 
 
 #### 📘 Kariyer Planlama 
@@ -2370,7 +2370,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Kariyer%20Planlama)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kariyer%20Planlama)
 
 
 #### 📘 Kişisel Farkındalık ve Gelişim 
@@ -2383,7 +2383,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Kişisel%20Farkındalık%20ve%20Gelişim)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kişisel%20Farkındalık%20ve%20Gelişim)
 
 
 #### 📘 Korfbol Temel Teknik Eğitimi 
@@ -2396,7 +2396,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Korfbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Korfbol%20Temel%20Teknik%20Eğitimi)
 
 
 #### 📘 Kültür Yönetimi ve Etkenleri 2 
@@ -2409,7 +2409,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Kültür%20Yönetimi%20ve%20Etkenleri%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kültür%20Yönetimi%20ve%20Etkenleri%202)
 
 
 #### 📘 Kültürel Çalışmalar ve Kimlik 
@@ -2422,7 +2422,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Kültürel%20Çalışmalar%20ve%20Kimlik)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kültürel%20Çalışmalar%20ve%20Kimlik)
 
 
 #### 📘 Lineer Cebirde Kavramlar ve İspatlar 
@@ -2435,7 +2435,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Lineer%20Cebirde%20Kavramlar%20ve%20İspatlar)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Lineer%20Cebirde%20Kavramlar%20ve%20İspatlar)
 
 
 #### 📘 Makine Teknolojisi Tarihi 
@@ -2448,7 +2448,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Makine%20Teknolojisi%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Makine%20Teknolojisi%20Tarihi)
 
 
 #### 📘 Masal ve Hikaye Anlatıcılığı 
@@ -2461,7 +2461,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Masal%20ve%20Hikaye%20Anlatıcılığı)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Masal%20ve%20Hikaye%20Anlatıcılığı)
 
 
 #### 📘 Matematik Tarihi 
@@ -2474,7 +2474,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Matematik%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Matematik%20Tarihi)
 
 
 #### 📘 Medya Okuryazarlığı 
@@ -2487,7 +2487,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Medya%20Okuryazarlığı)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Medya%20Okuryazarlığı)
 
 
 #### 📘 Mimarlık Tarihi 
@@ -2500,7 +2500,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Mimarlık%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Mimarlık%20Tarihi)
 
 
 #### 📘 Modernite ve Tüketim Toplumu 
@@ -2513,14 +2513,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Modernite%20ve%20Tüketim%20Toplumu)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Modernite%20ve%20Tüketim%20Toplumu)
 
 
 #### 📘 Muhasebe Organizasyonu 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Muhasebe%20Organizasyonu)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Muhasebe%20Organizasyonu)
 
 
 #### 📘 Mühendislikte İnovasyon ve Girişimcilik 
@@ -2533,7 +2533,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Mühendislikte%20İnovasyon%20ve%20Girişimcilik)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Mühendislikte%20İnovasyon%20ve%20Girişimcilik)
 
 
 #### 📘 NFT'ye Giriş 
@@ -2546,7 +2546,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/NFT'ye%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/NFT'ye%20Giriş)
 
 
 #### 📘 Osmanlı Devletinin Toplumsal Yapısı 
@@ -2563,7 +2563,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
 
 
 #### 📘 Patent ve Ticarileşme 
@@ -2576,7 +2576,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Patent%20ve%20Ticarileşme)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Patent%20ve%20Ticarileşme)
 
 
 #### 📘 Pilates Temel Eğitimi 
@@ -2589,7 +2589,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Pilates%20Temel%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Pilates%20Temel%20Eğitimi)
 
 
 #### 📘 Psikolojiye Giriş 
@@ -2602,7 +2602,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Psikolojiye%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Psikolojiye%20Giriş)
 
 
 #### 📘 Sanal Evrene Giriş (Metaverse) 
@@ -2615,7 +2615,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sanal%20Evrene%20Giriş%20(Metaverse))
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanal%20Evrene%20Giriş%20(Metaverse))
 
 
 #### 📘 Sanat Tarihi 
@@ -2628,7 +2628,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sanat%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanat%20Tarihi)
 
 
 #### 📘 Sanat ve Mimarlık Tarihine Giriş 
@@ -2641,7 +2641,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sanat%20ve%20Mimarlık%20Tarihine%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanat%20ve%20Mimarlık%20Tarihine%20Giriş)
 
 
 #### 📘 Siyasal İdeolojiler: Kuram ve Tarih 
@@ -2654,7 +2654,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Siyasal%20İdeolojiler:%20Kuram%20ve%20Tarih)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Siyasal%20İdeolojiler:%20Kuram%20ve%20Tarih)
 
 
 #### 📘 Siyaset Felsefesi 
@@ -2667,7 +2667,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Siyaset%20Felsefesi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Siyaset%20Felsefesi)
 
 
 #### 📘 Sosyal Antropoloji 
@@ -2680,7 +2680,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sosyal%20Antropoloji)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sosyal%20Antropoloji)
 
 
 #### 📘 Sosyoloji 
@@ -2693,7 +2693,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sosyoloji)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sosyoloji)
 
 
 #### 📘 Sürdürülebilirlik ve Eğitim 
@@ -2706,7 +2706,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Sürdürülebilirlik%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sürdürülebilirlik%20ve%20Eğitim)
 
 
 #### 📘 Takım Kurma ve Geliştirme 
@@ -2719,7 +2719,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Takım%20Kurma%20ve%20Geliştirme)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Takım%20Kurma%20ve%20Geliştirme)
 
 
 #### 📘 Tarih ve Sinema 
@@ -2732,7 +2732,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Tarih%20ve%20Sinema)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Tarih%20ve%20Sinema)
 
 
 #### 📘 Temel Arapça 1 
@@ -2745,7 +2745,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%201)
 
 
 #### 📘 Temel Arapça 2 
@@ -2758,7 +2758,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%202)
 
 
 #### 📘 Temel Farsça 1 
@@ -2771,7 +2771,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Farsça%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Farsça%201)
 
 
 #### 📘 Temel Fransızca 1 
@@ -2784,7 +2784,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%201)
 
 
 #### 📘 Temel Fransızca 2 
@@ -2797,7 +2797,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%202)
 
 
 #### 📘 Temel İspanyolca 1 
@@ -2810,7 +2810,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%201)
 
 
 #### 📘 Temel İspanyolca 2 
@@ -2823,7 +2823,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%202)
 
 
 #### 📘 Temel İtalyanca 1 
@@ -2836,7 +2836,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%201)
 
 
 #### 📘 Temel İtalyanca 2 
@@ -2849,14 +2849,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%202)
 
 
 #### 📘 Temel Japonca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
 
 
 #### 📘 Temel Rusça 1 
@@ -2869,7 +2869,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Rusça%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Rusça%201)
 
 
 #### 📘 Temel Yunanca 1 
@@ -2882,7 +2882,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%201)
 
 
 #### 📘 Temel Yunanca 2 
@@ -2895,7 +2895,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%202)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%202)
 
 
 #### 📘 Temel Yüzme Teknikleri Eğitimi 
@@ -2908,7 +2908,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Yüzme%20Teknikleri%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yüzme%20Teknikleri%20Eğitimi)
 
 
 #### 📘 Temel Çince 1 
@@ -2921,7 +2921,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Temel%20Çince%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Çince%201)
 
 
 #### 📘 Tenis Teknik ve Taktik Eğitimi 
@@ -2934,7 +2934,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Tenis%20Teknik%20ve%20Taktik%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Tenis%20Teknik%20ve%20Taktik%20Eğitimi)
 
 
 #### 📘 Toplumsal Dönüşüm Sürecinde Kadın 
@@ -2947,7 +2947,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Dönüşüm%20Sürecinde%20Kadın)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Dönüşüm%20Sürecinde%20Kadın)
 
 
 #### 📘 Toplumsal Yapılar ve Tarihsel Dönüşümler 
@@ -2960,7 +2960,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Yapılar%20ve%20Tarihsel%20Dönüşümler)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Yapılar%20ve%20Tarihsel%20Dönüşümler)
 
 
 #### 📘 Trafik Güvenliği 
@@ -2973,7 +2973,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Trafik%20Güvenliği)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Trafik%20Güvenliği)
 
 
 #### 📘 Türk Dili Tarihi 
@@ -2986,7 +2986,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türk%20Dili%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Dili%20Tarihi)
 
 
 #### 📘 Türk Kültür Coğrafyası 
@@ -2999,7 +2999,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Coğrafyası)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Coğrafyası)
 
 
 #### 📘 Türk Kültür Tarihi 
@@ -3012,7 +3012,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Tarihi)
 
 
 #### 📘 Türk Öykü ve Romanı 
@@ -3025,7 +3025,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türk%20Öykü%20ve%20Romanı)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Öykü%20ve%20Romanı)
 
 
 #### 📘 Türkiye Coğrafya ve Jeopolitiği 
@@ -3038,7 +3038,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türkiye%20Coğrafya%20ve%20Jeopolitiği)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türkiye%20Coğrafya%20ve%20Jeopolitiği)
 
 
 #### 📘 Türkçe Öğretiminde Edebi Metinler 
@@ -3051,7 +3051,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Türkçe%20Öğretiminde%20Edebi%20Metinler)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türkçe%20Öğretiminde%20Edebi%20Metinler)
 
 
 #### 📘 Uygarlık tarihi 
@@ -3064,7 +3064,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Uygarlık%20tarihi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Uygarlık%20tarihi)
 
 
 #### 📘 Voleybolda Temel Teknik Eğitimi 
@@ -3077,7 +3077,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Voleybolda%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Voleybolda%20Temel%20Teknik%20Eğitimi)
 
 
 #### 📘 Yeditepe İstanbul 
@@ -3090,7 +3090,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Yeditepe%20İstanbul)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yeditepe%20İstanbul)
 
 
 #### 📘 Yoga ve Anatomi 
@@ -3103,7 +3103,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Yoga%20ve%20Anatomi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yoga%20ve%20Anatomi)
 
 
 #### 📘 Yükseköğretimde Temel Hak Ve Sorumluluklar 
@@ -3116,7 +3116,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Yükseköğretimde%20Temel%20Hak%20Ve%20Sorumluluklar)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yükseköğretimde%20Temel%20Hak%20Ve%20Sorumluluklar)
 
 
 #### 📘 Çağdaş Toplum ve İletişim 
@@ -3129,7 +3129,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çağdaş%20Toplum%20ve%20İletişim)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çağdaş%20Toplum%20ve%20İletişim)
 
 
 #### 📘 Çevre ve Ekoloji 
@@ -3142,7 +3142,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20Ekoloji)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20Ekoloji)
 
 
 #### 📘 Çevre ve İnsan 
@@ -3155,7 +3155,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20İnsan)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20İnsan)
 
 
 #### 📘 Çevresel Vatandaşlık ve Eğitim 
@@ -3168,7 +3168,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çevresel%20Vatandaşlık%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevresel%20Vatandaşlık%20ve%20Eğitim)
 
 
 #### 📘 Çocuklarla Felsefe 
@@ -3181,7 +3181,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çocuklarla%20Felsefe)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çocuklarla%20Felsefe)
 
 
 #### 📘 Çok Sesli Müziğe Giriş 
@@ -3194,7 +3194,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Çok%20Sesli%20Müziğe%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çok%20Sesli%20Müziğe%20Giriş)
 
 
 #### 📘 Şehir Ekonomisi 
@@ -3207,7 +3207,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Şehir%20Ekonomisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Şehir%20Ekonomisi)
 
 
 #### 📘 Şehir Sosyolojisi 
@@ -3220,7 +3220,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Sosyal%20Seçmeli/Şehir%20Sosyolojisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Şehir%20Sosyolojisi)
 
 ### 🗓 Üniversite Mesleki Seçmeli
 
@@ -3235,14 +3235,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Akıllı%20Şebekelere%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Akıllı%20Şebekelere%20Giriş)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Güncel Konular 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Bilgisayar%20Mühendisliğinde%20Güncel%20Konular)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Bilgisayar%20Mühendisliğinde%20Güncel%20Konular)
 
 
 #### 📘 Biyomühendislikte Nanoteknoloji 
@@ -3255,7 +3255,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Biyomühendislikte%20Nanoteknoloji)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Biyomühendislikte%20Nanoteknoloji)
 
 
 #### 📘 Cultural Heritage Management 
@@ -3268,7 +3268,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Cultural%20Heritage%20Management)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Cultural%20Heritage%20Management)
 
 
 #### 📘 Doğal Arıtma 
@@ -3281,7 +3281,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Doğal%20Arıtma)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Doğal%20Arıtma)
 
 
 #### 📘 Endüstriyel Otomasyon 
@@ -3294,7 +3294,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Endüstriyel%20Otomasyon)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Endüstriyel%20Otomasyon)
 
 
 #### 📘 Enerji Ekonomisi 
@@ -3307,7 +3307,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Enerji%20Ekonomisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Enerji%20Ekonomisi)
 
 
 #### 📘 Enerji ve Doğal Kaynaklar Ekonomisi 
@@ -3320,7 +3320,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Enerji%20ve%20Doğal%20Kaynaklar%20Ekonomisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Enerji%20ve%20Doğal%20Kaynaklar%20Ekonomisi)
 
 
 #### 📘 Evrim ve Moleküler Ekoloji 
@@ -3333,7 +3333,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Evrim%20ve%20Moleküler%20Ekoloji)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Evrim%20ve%20Moleküler%20Ekoloji)
 
 
 #### 📘 Gemi Kaynaklı Deniz Kirliliği 
@@ -3346,7 +3346,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Gemi%20Kaynaklı%20Deniz%20Kirliliği)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Gemi%20Kaynaklı%20Deniz%20Kirliliği)
 
 
 #### 📘 Gıda Okur Yazarlığı 
@@ -3359,7 +3359,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Gıda%20Okur%20Yazarlığı)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Gıda%20Okur%20Yazarlığı)
 
 
 #### 📘 Hayatın İçinde Fizik 
@@ -3372,7 +3372,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Hayatın%20İçinde%20Fizik)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Hayatın%20İçinde%20Fizik)
 
 
 #### 📘 Hücresel Haberleşme Sistemleri 1 
@@ -3385,7 +3385,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Hücresel%20Haberleşme%20Sistemleri%201)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Hücresel%20Haberleşme%20Sistemleri%201)
 
 
 #### 📘 İmalat Teknikleri 
@@ -3398,7 +3398,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/İmalat%20Teknikleri)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İmalat%20Teknikleri)
 
 
 #### 📘 İnşaat Mevzuatına Giriş 
@@ -3411,7 +3411,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/İnşaat%20Mevzuatına%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İnşaat%20Mevzuatına%20Giriş)
 
 
 #### 📘 İstatistik ve Bilimsel Düşünme 
@@ -3424,7 +3424,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/İstatistik%20ve%20Bilimsel%20Düşünme)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İstatistik%20ve%20Bilimsel%20Düşünme)
 
 
 #### 📘 İşletmelerde İletişim 
@@ -3437,7 +3437,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İşletmelerde%20İletişim)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İşletmelerde%20İletişim)
 
 
 #### 📘 Katılımcı Kent Yönetiminde Proje Yönetim Süreci 
@@ -3450,7 +3450,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Katılımcı%20Kent%20Yönetiminde%20Proje%20Yönetim%20Süreci)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Katılımcı%20Kent%20Yönetiminde%20Proje%20Yönetim%20Süreci)
 
 
 #### 📘 Kent Okumaları 
@@ -3463,7 +3463,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Kent%20Okumaları)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Kent%20Okumaları)
 
 
 #### 📘 Malzeme Dünyası 
@@ -3476,7 +3476,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Malzeme%20Dünyası)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Malzeme%20Dünyası)
 
 
 #### 📘 Matematiksel Modelleme 
@@ -3489,7 +3489,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Matematiksel%20Modelleme)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Matematiksel%20Modelleme)
 
 
 #### 📘 Mekatronik Sistem Entegrasyonu 
@@ -3502,7 +3502,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mekatronik%20Sistem%20Entegrasyonu)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mekatronik%20Sistem%20Entegrasyonu)
 
 
 #### 📘 Mikroişlemcili Sistem Tasarımı 
@@ -3515,7 +3515,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mikroişlemcili%20Sistem%20Tasarımı)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mikroişlemcili%20Sistem%20Tasarımı)
 
 
 #### 📘 Modern Türk Edebiyatında Edebi Tartışmalar 
@@ -3528,7 +3528,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Modern%20Türk%20Edebiyatında%20Edebi%20Tartışmalar)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Modern%20Türk%20Edebiyatında%20Edebi%20Tartışmalar)
 
 
 #### 📘 Mühendisler için Kuantum Fiziği 
@@ -3541,7 +3541,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mühendisler%20için%20Kuantum%20Fiziği)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendisler%20için%20Kuantum%20Fiziği)
 
 
 #### 📘 Mühendislik Ekonomisi 
@@ -3554,7 +3554,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mühendislik%20Ekonomisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislik%20Ekonomisi)
 
 
 #### 📘 Mühendislikte Sayısal Yöntemler ve Uygulamaları 
@@ -3567,7 +3567,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Sayısal%20Yöntemler%20ve%20Uygulamaları)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Sayısal%20Yöntemler%20ve%20Uygulamaları)
 
 
 #### 📘 Mühendislikte Temel Optimizasyon Kavramları 
@@ -3580,7 +3580,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Temel%20Optimizasyon%20Kavramları)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Temel%20Optimizasyon%20Kavramları)
 
 
 #### 📘 Müzecilik ve Müzeografi 
@@ -3593,7 +3593,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Müzecilik%20ve%20Müzeografi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Müzecilik%20ve%20Müzeografi)
 
 
 #### 📘 Navigasyon ve Kinematik Konumlama 
@@ -3606,7 +3606,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Navigasyon%20ve%20Kinematik%20Konumlama)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Navigasyon%20ve%20Kinematik%20Konumlama)
 
 
 #### 📘 Physiological Control Systems 
@@ -3619,7 +3619,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Physiological%20Control%20Systems)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Physiological%20Control%20Systems)
 
 
 #### 📘 Risk Yönetimi 
@@ -3632,7 +3632,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Risk%20Yönetimi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Risk%20Yönetimi)
 
 
 #### 📘 Sinemada Mekan ve Tarih 
@@ -3645,7 +3645,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Sinemada%20Mekan%20ve%20Tarih)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Sinemada%20Mekan%20ve%20Tarih)
 
 
 #### 📘 Sosyal Politikalar İktisadı 
@@ -3658,7 +3658,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Sosyal%20Politikalar%20İktisadı)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Sosyal%20Politikalar%20İktisadı)
 
 
 #### 📘 Teknik İletişim 
@@ -3671,7 +3671,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Teknik%20İletişim)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Teknik%20İletişim)
 
 
 #### 📘 Temel Aktüerya Matematiği 
@@ -3684,7 +3684,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Temel%20Aktüerya%20Matematiği)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Temel%20Aktüerya%20Matematiği)
 
 
 #### 📘 Uluslararası İlişkilerde Temel Konular 
@@ -3697,7 +3697,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Uluslararası%20İlişkilerde%20Temel%20Konular)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Uluslararası%20İlişkilerde%20Temel%20Konular)
 
 
 #### 📘 Uydu Haberleşmesi 
@@ -3710,7 +3710,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Uydu%20Haberleşmesi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Uydu%20Haberleşmesi)
 
 
 #### 📘 Yapay Zekaya Giriş 
@@ -3723,7 +3723,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Yapay%20Zekaya%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapay%20Zekaya%20Giriş)
 
 
 #### 📘 Yapı Dinamiği 
@@ -3736,7 +3736,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Yapı%20Dinamiği)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapı%20Dinamiği)
 
 
 #### 📘 Yapısal Programlamaya Giriş 
@@ -3763,7 +3763,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [AEL](#-dr-ahmet-elbir)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//4-1/Yapısal%20Programlamaya%20Giriş)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapısal%20Programlamaya%20Giriş)
 
 
 #### 📘 Çevre Kimyası ve Teknolojisi 
@@ -3776,7 +3776,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Çevre%20Kimyası%20ve%20Teknolojisi)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Çevre%20Kimyası%20ve%20Teknolojisi)
 
 
 #### 📘 Çevre ve Halk Sağlığı 
@@ -3789,7 +3789,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Çevre%20ve%20Halk%20Sağlığı)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Çevre%20ve%20Halk%20Sağlığı)
 
 
 #### 📘 Şifreleme 
@@ -3802,7 +3802,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Üniversite%20Mesleki%20Seçmeli/Şifreleme)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Şifreleme)
 
 ### 🗓 Mesleki Seçmeli 1
 
@@ -3832,7 +3832,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
+  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
 
 
 #### 📘 Ayrık Olay Simülasyonu 
@@ -3845,7 +3845,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Ayrık%20Olay%20Simülasyonu)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Ayrık%20Olay%20Simülasyonu)
 
 
 #### 📘 Ağ Teknolojileri 
@@ -3871,14 +3871,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
+  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
 
 
 #### 📘 Bilgisayar Grafiğine Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Grafiğine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Grafiğine%20Giriş)
 
 
 #### 📘 Bilgisayar Mimarisi 
@@ -3891,21 +3891,21 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mimarisi)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mimarisi)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 1 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 2 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 3 
@@ -3914,7 +3914,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
 
 
 #### 📘 Bilgiye Erişim ve Arama Motorları 
@@ -3937,7 +3937,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilgiye%20Erişim%20Ve%20Arama%20Motorları)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgiye%20Erişim%20Ve%20Arama%20Motorları)
 
 
 #### 📘 Bilişim Sistemleri Güvenliği 
@@ -3960,7 +3960,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bilişim%20Sistemleri%20Güvenliği)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilişim%20Sistemleri%20Güvenliği)
 
 
 #### 📘 Biyoenformatiğe Giriş 
@@ -3982,7 +3982,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [NA](#-prof-dr-nizamettin-aydın)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
 
 
 #### 📘 Biçimsel Diller ve Soyut Makineler 
@@ -3995,7 +3995,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Biçimsel%20Diller%20ve%20Soyut%20Makineler)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Biçimsel%20Diller%20ve%20Soyut%20Makineler)
 
 
 #### 📘 Blokzincir Temelleri 
@@ -4004,7 +4004,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Blokzincir%20Temelleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Blokzincir%20Temelleri)
 
 
 #### 📘 Bulanık Mantık 
@@ -4017,7 +4017,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Bulanık%20Mantık)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bulanık%20Mantık)
 
 
 #### 📘 Büyük Veri İşleme ve Analizi 
@@ -4038,14 +4038,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
           - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Büyük%20Veri%20İşleme%20Ve%20Analizi)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Büyük%20Veri%20İşleme%20Ve%20Analizi)
 
 
 #### 📘 Dağıtık Sistemler 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Dağıtık%20Sistemler)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Dağıtık%20Sistemler)
 
 
 #### 📘 Derleyici Tasarımı 
@@ -4058,7 +4058,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Derleyici%20Tasarımı)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Derleyici%20Tasarımı)
 
 
 #### 📘 Dosya Düzenleme 
@@ -4071,7 +4071,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Dosya%20Düzenleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Dosya%20Düzenleme)
 
 
 #### 📘 Doğal Dil İşlemeye Giriş 
@@ -4094,7 +4094,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
 
 
 #### 📘 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri 
@@ -4107,7 +4107,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Geniş%20Ölçekli%20Sistemler%20için%20İşletim%20Sistemi%20Mimarileri)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Geniş%20Ölçekli%20Sistemler%20için%20İşletim%20Sistemi%20Mimarileri)
 
 
 #### 📘 Gerçek Zamanlı Bilgisayar Sistemleri 
@@ -4120,7 +4120,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Gerçek%20Zamanlı%20Bilgisayar%20Sistemleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Gerçek%20Zamanlı%20Bilgisayar%20Sistemleri)
 
 
 #### 📘 Gömülü Sistemler 
@@ -4142,7 +4142,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Gömülü%20Sistemler)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Gömülü%20Sistemler)
 
 
 #### 📘 Görüntü İşleme 
@@ -4151,7 +4151,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Görüntü%20İşleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Görüntü%20İşleme)
 
 
 #### 📘 İleri Ağ Programlama 
@@ -4179,7 +4179,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
 
 
 #### 📘 İstatistiksel Veri Analizi 
@@ -4201,7 +4201,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İstatistiksel%20Veri%20Analizi)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İstatistiksel%20Veri%20Analizi)
 
 
 #### 📘 İşletmede Mesleki Eğitim 1 
@@ -4214,7 +4214,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%201)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%201)
 
 
 #### 📘 İşletmede Mesleki Eğitim 2 
@@ -4227,7 +4227,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%202)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%202)
 
 
 #### 📘 İşletmede Mesleki Eğitim 3 
@@ -4240,7 +4240,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%203)
 
 
 #### 📘 Kablosuz ve Mobil Ağlar 
@@ -4253,7 +4253,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Kablosuz%20ve%20Mobil%20Ağlar)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Kablosuz%20ve%20Mobil%20Ağlar)
 
 
 #### 📘 Mobil Programlamaya Giriş 
@@ -4279,7 +4279,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
 
 
 #### 📘 Oyun Geliştirmeye Giriş 
@@ -4298,7 +4298,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Oyun%20Geliştirmeye%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Oyun%20Geliştirmeye%20Giriş)
 
 
 #### 📘 Robot Teknolojisine Giriş 
@@ -4324,7 +4324,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Robot%20Teknolojisine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Robot%20Teknolojisine%20Giriş)
 
 
 #### 📘 Sayısal İşaret İşleme 
@@ -4348,14 +4348,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Sayısal%20İşaret%20İşleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Sayısal%20İşaret%20İşleme)
 
 
 #### 📘 Sistem Programlama 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Sistem%20Programlama)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Sistem%20Programlama)
 
 
 #### 📘 Uzman Sistemlere Giriş 
@@ -4374,7 +4374,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Uzman%20Sistemlere%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Uzman%20Sistemlere%20Giriş)
 
 
 #### 📘 Veri Madenciliğine Giriş 
@@ -4400,7 +4400,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Veri%20Madenciliğine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Madenciliğine%20Giriş)
 
 
 #### 📘 Veri Tabanı Sistemlerinde Güncel Konular 
@@ -4423,7 +4423,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinde%20Güncel%20Konular)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinde%20Güncel%20Konular)
 
 
 #### 📘 Veri Tabanı Sistemlerinin İç Yapısı 
@@ -4436,7 +4436,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinin%20İç%20Yapısı)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinin%20İç%20Yapısı)
 
 
 #### 📘 Veritabanı Sistemlerinin Gerçekleştirilmesi 
@@ -4459,14 +4459,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Veritabanı%20Sistemlerinin%20Gerçekleştirilmesi)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veritabanı%20Sistemlerinin%20Gerçekleştirilmesi)
 
 
 #### 📘 Yapay Sinir Ağlarına Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yapay%20Sinir%20Ağlarına%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yapay%20Sinir%20Ağlarına%20Giriş)
 
 
 #### 📘 Yazılım Kalite ve Test Süreci 
@@ -4488,7 +4488,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yazılım%20Kalite%20ve%20Test%20Süreci)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yazılım%20Kalite%20ve%20Test%20Süreci)
 
 
 #### 📘 Yazılım Sektöründe Çevik Dönüşüm ve Uygulama Pratikleri 
@@ -4501,7 +4501,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yazılım%20Sektöründe%20Çevik%20Dönüşüm%20ve%20Uygulama%20Pratikleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yazılım%20Sektöründe%20Çevik%20Dönüşüm%20ve%20Uygulama%20Pratikleri)
 
 
 #### 📘 Yönetim Bilgi Sistemleri 
@@ -4527,14 +4527,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yönetim%20Bilgi%20Sistemleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yönetim%20Bilgi%20Sistemleri)
 
 
 #### 📘 Yöneylem Araştırması 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Yöneylem%20Araştırması)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yöneylem%20Araştırması)
 
 
 #### 📘 Çevik Yaklaşımlarla Yazılım Geliştirme 
@@ -4547,7 +4547,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Çevik%20Yaklaşımlarla%20Yazılım%20Geliştirme)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Çevik%20Yaklaşımlarla%20Yazılım%20Geliştirme)
 
 
 #### 📘 Örün Servisleri ve Servis Odaklı Mimari 
@@ -4560,7 +4560,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Mesleki%20Seçmeli%201/Örün%20Servisleri%20ve%20Servis%20Odaklı%20Mimari)
+  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Örün%20Servisleri%20ve%20Servis%20Odaklı%20Mimari)
 
 ### 🗓 Sosyal Seçmeli 1
 
@@ -4572,7 +4572,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Davranış%20Bilimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Davranış%20Bilimi)
 
 
 #### 📘 Davranışsal Açıdan Kurumsal İtibar 
@@ -4585,7 +4585,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Davranışsal%20Açıdan%20Kurumsal%20İtibar)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Davranışsal%20Açıdan%20Kurumsal%20İtibar)
 
 
 #### 📘 Ekonomi Politikaları 
@@ -4598,7 +4598,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Ekonomi%20Politikaları)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Ekonomi%20Politikaları)
 
 
 #### 📘 Finansal ve Maliyet Muhasebesi 
@@ -4611,7 +4611,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Finansal%20ve%20Maliyet%20Muhasebesi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Finansal%20ve%20Maliyet%20Muhasebesi)
 
 
 #### 📘 Girişimcilik 
@@ -4624,7 +4624,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Girişimcilik)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Girişimcilik)
 
 
 #### 📘 Hukukun Genel Kavramları 
@@ -4637,7 +4637,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Hukukun%20Genel%20Kavramları)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Hukukun%20Genel%20Kavramları)
 
 
 #### 📘 İnsan Kaynakları Yönetimi (İşletme) 
@@ -4650,7 +4650,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İnsan%20Kaynakları%20Yönetimi%20(işletme))
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İnsan%20Kaynakları%20Yönetimi%20(işletme))
 
 
 #### 📘 İşletme Bilimine Giriş 
@@ -4663,7 +4663,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İşletme%20Bilimine%20Giriş)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İşletme%20Bilimine%20Giriş)
 
 
 #### 📘 İşletmelerde İletişim 
@@ -4676,7 +4676,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İşletmelerde%20İletişim)
+  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İşletmelerde%20İletişim)
 
 
 #### 📘 İşletmelerde İnovasyon Yönetimi 
@@ -4689,7 +4689,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/İşletmelerde%20İnovasyon%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İşletmelerde%20İnovasyon%20Yönetimi)
 
 
 #### 📘 Kariyer ve Çalışma Psikolojisi 
@@ -4702,7 +4702,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Kariyer%20ve%20Çalışma%20Psikolojisi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Kariyer%20ve%20Çalışma%20Psikolojisi)
 
 
 #### 📘 Nicel Karar Verme Teknikleri 1 
@@ -4715,7 +4715,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Nicel%20Karar%20Verme%20Teknikleri%201)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Nicel%20Karar%20Verme%20Teknikleri%201)
 
 
 #### 📘 Pazarlama 
@@ -4728,7 +4728,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Pazarlama)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Pazarlama)
 
 
 #### 📘 Satış Yönetimi 
@@ -4741,7 +4741,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Satış%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Satış%20Yönetimi)
 
 
 #### 📘 Tüketici Davranışı 
@@ -4754,7 +4754,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Tüketici%20Davranışı)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Tüketici%20Davranışı)
 
 
 #### 📘 Türk İdare Tarihi 
@@ -4767,7 +4767,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Türk%20İdare%20Tarihi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Türk%20İdare%20Tarihi)
 
 
 #### 📘 Uluslararası Pazarlama 
@@ -4787,7 +4787,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
 
 
 #### 📘 Örgütlerde Takım Oluşturma ve Geliştirme 
@@ -4800,7 +4800,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Örgütlerde%20Takım%20Oluşturma%20ve%20Geliştirme)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Örgütlerde%20Takım%20Oluşturma%20ve%20Geliştirme)
 
 
 #### 📘 Örgütsel Etik 
@@ -4813,7 +4813,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Örgütsel%20Etik)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Örgütsel%20Etik)
 
 
 #### 📘 Üretim Yönetimi 
@@ -4826,7 +4826,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Sosyal%20Seçmeli%201/Üretim%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Üretim%20Yönetimi)
 
 ### 🗓 Lisansüstü
 
@@ -4847,14 +4847,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AÖ](#-dr-ayşe-öcal)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
+  - 📂 [Ders Klasörü](./Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
 
 
 #### 📘 Bilgisayar Güvenliği ve Kriptografi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayar%20Güvenliği%20ve%20Kriptografi)
+  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayar%20Güvenliği%20ve%20Kriptografi)
 
 
 #### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği 
@@ -4871,7 +4871,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
           - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayar%20Sistemleri%20ve%20Ağ%20Güvenliği)
+  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayar%20Sistemleri%20ve%20Ağ%20Güvenliği)
 
 
 #### 📘 Bilgisayarla Görme 
@@ -4895,7 +4895,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SV](#-prof-dr-songül-varlı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Bilgisayarla%20Görme)
+  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayarla%20Görme)
 
 
 #### 📘 Biyomedikal İşaret ve Görüntü İşleme 
@@ -4904,14 +4904,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Biyomedikal%20İşaret%20ve%20Görüntü%20İşleme)
+  - 📂 [Ders Klasörü](./Lisansüstü/Biyomedikal%20İşaret%20ve%20Görüntü%20İşleme)
 
 
 #### 📘 Büyük Veri Analitiği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Büyük%20Veri%20Analitiği)
+  - 📂 [Ders Klasörü](./Lisansüstü/Büyük%20Veri%20Analitiği)
 
 
 #### 📘 Hesaplamalı Anlambilim 
@@ -4920,7 +4920,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Hesaplamalı%20Anlambilim)
+  - 📂 [Ders Klasörü](./Lisansüstü/Hesaplamalı%20Anlambilim)
 
 
 #### 📘 İleri Algoritma Analizi Ve Tasarımı 
@@ -4939,21 +4939,21 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HİT](#-dr-h-i̇rem-türkmen)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20Algoritma%20Analizi%20Ve%20Tasarımı)
+  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Algoritma%20Analizi%20Ve%20Tasarımı)
 
 
 #### 📘 İleri İşletim Sistemleri 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20İşletim%20Sistemleri)
+  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20İşletim%20Sistemleri)
 
 
 #### 📘 İleri Optimizasyon 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20Optimizasyon)
+  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Optimizasyon)
 
 
 #### 📘 İleri Yazılım Mimarisi 
@@ -4962,7 +4962,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/İleri%20Yazılım%20Mimarisi)
+  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Yazılım%20Mimarisi)
 
 
 #### 📘 Kollektif Öğrenme 
@@ -4971,7 +4971,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Kollektif%20Öğrenme)
+  - 📂 [Ders Klasörü](./Lisansüstü/Kollektif%20Öğrenme)
 
 
 #### 📘 Makine Öğrenmesi 
@@ -4988,7 +4988,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
           - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Makine%20Öğrenmesi)
+  - 📂 [Ders Klasörü](./Lisansüstü/Makine%20Öğrenmesi)
 
 
 #### 📘 Nesneye Dayalı Tasarım ve Modelleme 
@@ -5007,14 +5007,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
+  - 📂 [Ders Klasörü](./Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
 
 
 #### 📘 Olasılık, Rastgele Değişkenler ve Stokastik Prosesler 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Olasılık,%20Rastgele%20Değişkenler%20ve%20Stokastik%20Prosesler)
+  - 📂 [Ders Klasörü](./Lisansüstü/Olasılık,%20Rastgele%20Değişkenler%20ve%20Stokastik%20Prosesler)
 
 
 #### 📘 Olasılıksal Robotik 
@@ -5033,7 +5033,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Olasılıksal%20Robotik)
+  - 📂 [Ders Klasörü](./Lisansüstü/Olasılıksal%20Robotik)
 
 
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
@@ -5052,7 +5052,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [SV](#-prof-dr-songül-varlı)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Madenciliği%20ve%20Bilgi%20Keşfi)
+  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Madenciliği%20ve%20Bilgi%20Keşfi)
 
 
 #### 📘 Veri Sıkıştırma 
@@ -5071,7 +5071,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Sıkıştırma)
+  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Sıkıştırma)
 
 
 #### 📘 Veri Tabanı Sistemlerinin Gerçeklenmesi 
@@ -5090,7 +5090,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Veri%20Tabanı%20Sistemlerinin%20Gerçeklenmesi)
+  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Tabanı%20Sistemlerinin%20Gerçeklenmesi)
 
 
 #### 📘 Yazılım Kalitesi ve Test Teknikleri 
@@ -5109,14 +5109,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Yazılım%20Kalitesi%20ve%20Test%20Teknikleri)
+  - 📂 [Ders Klasörü](./Lisansüstü/Yazılım%20Kalitesi%20ve%20Test%20Teknikleri)
 
 
 #### 📘 Çok Değişkenli İstatiksel Veri Analizi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//Lisansüstü/Çok%20Değişkenli%20İstatiksel%20Veri%20Analizi)
+  - 📂 [Ders Klasörü](./Lisansüstü/Çok%20Değişkenli%20İstatiksel%20Veri%20Analizi)
 
 ### 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler
 
@@ -5146,7 +5146,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donanımı)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donanımı)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -5172,7 +5172,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
         - 🎯 2024 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
           - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
     </details>
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Devre%20Teorisi)
+  - 📂 [Ders Klasörü](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Devre%20Teorisi)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -5201,7 +5201,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler)
+  - 📂 [Ders Klasörü](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -5225,7 +5225,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     </details>
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Seminer%20ve%20Meslek%20Etiği/Mesleki%20Hukuk%20ve%20Etik)
+  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Etiği/Mesleki%20Hukuk%20ve%20Etik)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -5255,7 +5255,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroişlemci%20Sistemleri)
+  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroişlemci%20Sistemleri)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -5284,7 +5284,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main//3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/Veri%20İletişimi)
+  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/Veri%20İletişimi)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 </details>

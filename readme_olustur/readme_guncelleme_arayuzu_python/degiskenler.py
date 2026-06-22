@@ -157,7 +157,16 @@ _MODULE_DIR, _PROJECT_ROOT, BIR_UST_DIZIN, INTERNAL_ROOT = _get_base_paths()
 BIR_UST_DIZIN_GORELI = ".."
 
 
-from PyQt6.QtCore import QSettings
+try:
+    from PyQt6.QtCore import QSettings
+except ImportError:
+    class QSettings:
+        def __init__(self, *args, **kwargs):
+            pass
+        def value(self, key, default=None):
+            if key == "json_depo_yolu":
+                return "."
+            return default
 
 GOOGLE_FORM_ISLEMLERI = "google_forum_islemleri"
 
