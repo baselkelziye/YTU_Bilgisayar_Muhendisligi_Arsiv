@@ -32,10 +32,16 @@ Bu işlemleri gerçekleştirirken aşağıdaki kurallara kesinlikle uy:
 
 - `README.md` içeriğinde şu bölümler yer almalıdır:
   1. **Başlık**: `# [Ders Adı] Ders Kayıtları & Çalışma Özetleri`
-  2. **Genel Bilgiler**: Ders adı, hoca adı, dönem ve akademik yıl.
+  2. **NotebookLM Önemli Notu**: Başlığın hemen altına dikkat çekici bir şekilde şu not eklenmelidir:
+     > **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi daha verimli çalışabilirsiniz.
+  3. **Genel Bilgiler**: Ders adı, hoca adı, dönem ve akademik yıl.
      - 🔍 **Hoca Bilgisinin Okunması:** Hoca adını, `altyazilar/README.md` dosyası içindeki `* **Dersi Veren Akademisyen:** [Hoca Adı]` veya `* **Hoca:** [Hoca Adı]` alanından otomatik olarak oku. Eğer bu dosyadan hoca adı okunamıyorsa kullanıcıya sor.
-  3. **Müfredat ve Belge Dizini Tablosu**: Ders no, ders içeriği/konu başlığı, markdown kaynak notu linki ve PDF indirme linkini içeren tablo.
-  4. **Detaylı Özetler**: Her ders için genel konular ve hocanın özellikle vurguladığı kısımlar.
+  4. **Müfredat ve Belge Dizini Tablosu**: Ders no, ders içeriği/konu başlığı, markdown kaynak notu linki ve PDF indirme linkini içeren tablo.
+  5. **Detaylı Özetler**: Her ders için genel konular, hocanın özellikle vurguladığı kısımlar, daha uzun/detaylı açıklamalar ve NotebookLM kullanım notu.
+
+### 3. README Güncelleme Scriptini Çalıştırma Kuralları
+- Dersin `README.md` dosyası oluşturulduktan/güncellendikten ve `dersler.json` dosyası güncellendikten sonra, projedeki tüm dönem ve ana README dosyalarını otomatik olarak senkronize etmek için `readme_olustur/` dizini altındaki `readme_olustur.py` betiği çalıştırılmalıdır.
+- Çalıştırma komutu: `python3 readme_olustur.py` (Çalışma dizini olarak `readme_olustur` klasörü seçilmelidir).
 
 ## Kullanım
 
