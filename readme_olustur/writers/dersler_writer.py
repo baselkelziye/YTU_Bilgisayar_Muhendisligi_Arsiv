@@ -2,8 +2,7 @@
 from writers.base import SectionWriter
 from writers.yardimci import (
     puanlari_yildiza_cevir, baslik_linki_olustur,
-    gorustenTarihGetir, detay_etiketleri_olustur,
-    ders_siralama_anahtari, donem_siralamasi,
+    gorustenTarihGetir, ders_siralama_anahtari, donem_siralamasi,
     yerel_yoldan_github_linkine, sirali_ekle
 )
 from typing import TYPE_CHECKING, Optional
@@ -19,7 +18,7 @@ from degiskenler import (
     DERSLER, AD, TIP, YIL, DONEM, OY_SAYISI, BOLUM_ADI, BOLUM_ACIKLAMASI,
     EN_POPULER_DERS, DERS_ADI, OGRENCI_GORUSLERI, KISI, YORUM, DERS_YORUMLAMA_LINKI,
     DERS_OYLAMA_LINKI, KOLAYLIK_PUANI, GEREKLILIK_PUANI,
-    YILLARA_GORE_YILDIZ_SAYILARI, GUNCEL_MI, GUNCEL_OLMAYAN_DERS_ACIKLAMASI,
+    GUNCEL_MI, GUNCEL_OLMAYAN_DERS_ACIKLAMASI,
     EN_POPULER_HOCA, HOCA_ADI, DERSI_VEREN_HOCALAR, KISALTMA,
     ARTIK_MUFREDATA_DAHIL_OLMAYAN_DERSLER
 )
@@ -80,28 +79,6 @@ class DerslerWriter(SectionWriter):
         else:
             writer.writeline(f"{girinti}    - ℹ️ Henüz yıldız veren yok. Siz de [linkten]({DERS_OYLAMA_LINKI}) anonim şekilde oylamaya katılabilirsiniz.")
             return
-        
-        # Yıllara göre yıldızlar
-        ek_girinti = "  "
-        yeni_girinti = girinti + ek_girinti
-        
-        if ders.get(YILLARA_GORE_YILDIZ_SAYILARI):
-            acilis, kapanis = detay_etiketleri_olustur("📅 Yıllara Göre Yıldız Sayıları", yeni_girinti)
-            writer.write(acilis)
-            
-            for yildiz_bilgileri in ders[YILLARA_GORE_YILDIZ_SAYILARI]:
-                yil = yildiz_bilgileri.get(YIL, "bilinmiyor")
-                writer.writeline(f"{yeni_girinti + ek_girinti}- 📅 *{yil} yılı için yıldız bilgileri*")
-                self._write_yildizlar(
-                    writer,
-                    yildiz_bilgileri.get(KOLAYLIK_PUANI, 0),
-                    yildiz_bilgileri.get(GEREKLILIK_PUANI, 0),
-                    yeni_girinti + ek_girinti,
-                    yildiz_bilgileri.get(OY_SAYISI, 0),
-                    f"{yil} Yılında "
-                )
-            
-            writer.write(kapanis)
     
     def _grupla_dersler(self, dersler: list) -> dict:
         """Dersleri yıl ve döneme göre grupla."""
