@@ -31,3 +31,9 @@
 - Uygunluk fonksiyonu çözüm kalitesini ölçer.
 - Seçilim iyi bireyleri öne çıkarır.
 - Çaprazlama yeni birey üretir; mutasyon çeşitliliği korur.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Genetik algoritmalar (Genetic Algorithms), doğadaki evrimsel süreçleri ve doğal seçilim mekanizmasını taklit eden popülasyon tabanlı bir lokal arama ve optimizasyon yöntemidir. Arama uzayındaki olası çözümler "kromozom" (genellikle bit dizileri veya reel sayı dizileri) olarak temsil edilir. Algoritma; başlangıç popülasyonunun oluşturulması, her bireyin kalitesini ölçen uygunluk (fitness) fonksiyonunun hesaplanması, rulet tekerleği veya turnuva gibi yöntemlerle ebeveyn seçimi, çaprazlama (crossover - gen değişimi) ve mutasyon (rastgele genetik değişim) adımlarıyla yeni nesiller üretir. Başarının anahtarı, problemin kromozom üzerinde doğru şekilde kodlanması ve çeşitliliğin korunarak lokal minimumlardan kaçınılmasıdır.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

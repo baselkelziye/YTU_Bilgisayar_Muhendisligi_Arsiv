@@ -31,3 +31,9 @@
 - Lokal optimum, global optimum olmak zorunda değildir.
 - Büyük durum uzaylarında lokal arama pratik avantaj sağlayabilir.
 - Komşuluk ve değerlendirme fonksiyonu doğru kurulmazsa sonuçlar yanıltıcı olur.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Lokal arama algoritmaları, hedefe giden yolu saklamak yerine sadece mevcut durumu (current state) ve onun komşularını inceleyerek çalışır. Bu nedenle bellek gereksinimleri son derece azdır (O(1)) ve çok büyük durum uzaylarında tercih edilirler. Tepe Tırmanma (Hill Climbing) algoritması, her adımda mevcut durumun komşuları arasından değeri (uygunluğu) en yüksek olan duruma geçerek sürekli "yukarı" tırmanır. Ancak bu algoritma lokal optimum (yerel en iyi) noktalarına, düzlüklere (plateau) veya sırtlara (ridge) takılarak küresel en iyiye (global optimum) ulaşamayabilir. Bu problemleri aşmak için rastgele adımlarla tırmanma, tavlama benzetimi (simulated annealing) veya lokal ışın arama (local beam search) gibi yöntemler kullanılır.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

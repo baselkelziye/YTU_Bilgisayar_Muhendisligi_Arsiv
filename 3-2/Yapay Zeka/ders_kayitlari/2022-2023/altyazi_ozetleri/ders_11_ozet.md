@@ -33,3 +33,9 @@
 - Karar ağaçları koşullarla veriyi dallara ayırır.
 - Yorumlanabilir modeller karar sürecini açıklamada avantaj sağlar.
 - Makine öğrenmesinde temel varsayım, eğitim verisinden öğrenilen örüntünün yeni veriye aktarılabilmesidir.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Sınıflandırma problemlerinde en yaygın ve açıklanabilir (explainable) modellerden biri Karar Ağaçlarıdır (Decision Trees). Karar ağaçları, veri kümesini belirli özniteliklere göre alt kümelere bölerek ağaç yapısında kurallar oluşturur. Bölme işlemi yapılırken her adımda en homojen alt grupları elde etmek amaçlanır. Bunun için bilgi kazancı (Information Gain) ve entropi (Entropy) veya Gini katsayısı gibi metriklere başvurulur. Entropi, veri kümesindeki belirsizliği/düzensizliği ölçer. Bölme sonrasında entropideki düşüş bilgi kazancını verir. En yüksek bilgi kazancını sağlayan öznitelik kök veya düğüm olarak seçilir. Karar ağaçları, veri hazırlığı gereksiniminin azlığı ve kararların görselleştirilebilir olması nedeniyle son derece güçlüdür ancak aşırı büyüdüklerinde overfitting riski taşırlar; bu durum budama (pruning) yöntemleriyle engellenir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

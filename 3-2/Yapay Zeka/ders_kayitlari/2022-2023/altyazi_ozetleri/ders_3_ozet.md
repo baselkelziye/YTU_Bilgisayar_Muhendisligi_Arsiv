@@ -31,3 +31,9 @@
 - BFS katman katman ilerler; DFS bir dalda derine iner.
 - Maliyet varsa amaç yalnızca hedefe ulaşmak değil, iyi veya en düşük maliyetli yola ulaşmaktır.
 - Durum uzayının büyüklüğü algoritmanın pratikte çalışabilirliğini belirler.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Yapay zekada birçok problem bir arama problemi olarak modellenebilir. Bir arama problemi; başlangıç durumu (initial state), geçiş modeli ve operatörler (actions), hedef testi (goal test) ve yol maliyeti (path cost) bileşenlerinden oluşur. Tüm olası durumların oluşturduğu yapıya durum uzayı (state space) denir. Kör arama (uninformed/blind search) yöntemleri hedefe giden yol hakkında ek sezgisel bilgiye sahip olmayan, sadece durum uzayını sistematik olarak tarayan algoritmalardır. BFS (Breadth-First Search - Enlemesine Arama) durum uzayını seviye seviye arayarak en kısa yolu bulmayı garanti eder (optimaldir) ancak bellek gereksinimi üsteldir. DFS (Depth-First Search - Derinlemesine Arama) ise bir dal boyunca en derine kadar gider; bellek tüketimi düşüktür ancak sonsuz döngülere girebilir ve optimal yolu bulması garanti değildir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
