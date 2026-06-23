@@ -40,6 +40,11 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 
 - Dersten sonra hızlı tekrar yapmak için en önemli noktaları kısa maddeler halinde yaz.
 - Bu bölümde de zaman bağımlı bilgi kullanma.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+- Dersteki konuları, kavramları ve varsa kod/devre örneklerini daha uzun ve detaylı paragraflar halinde açıkla.
+- Bu kısım konuyu daha derinlemesine anlamak veya kaçırılan dersi telafi etmek isteyenler için kapsamlı bilgi içermelidir.
 ```
 
 ### 2. Altyazı Klasörü README.md Kuralları
@@ -70,6 +75,14 @@ Dersler [İlk Ders Tarihi] günü başlamıştır. Dosya adlarındaki `ders_x.sr
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 ```
+
+### 3. Ana Kaynak Listesine (dersler.json) Göreli Yol Ekleme Kuralları
+
+- Dersin altyazı çalışma özetlerine ve ders kayıtlarına kolayca ulaşılabilmesi için, projenin kök dizinindeki `readme_olustur/dersler.json` dosyası güncellenmelidir.
+- İlgili dersin `faydali_olabilecek_kaynaklar` dizisi içerisine, dersin kendi ana dizininden (kökteki ders klasöründen) `ders_kayitlari/` dizinine işaret eden göreli bir yol (relative path) eklenmelidir.
+- Örnekler:
+  - Yapay Zeka için: `"**Ders Kayıtları:** [Yapay Zeka Ders Kayıtları Altyazıları](./ders_kayitlari/)"`
+  - Mikroişlemci Sistemleri ve Assembly Dili için: `"**Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./alt%20seviye%20programlama/ders_kayitlari/)"`
 
 ## Kullanım
 
