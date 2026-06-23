@@ -76,7 +76,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Rayene'in el yazısı notları](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -159,6 +159,7 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber. 
   - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Otlak İNek_**: Yusuf hocadan almayın. Profesör yavaşlığı var. Mümkünse Süreyya, değilse Çiğdem hocadan alın. İşlemlerden, sembollerden değil ezber bilgilerden korkun ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -180,7 +181,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link) ✨
-- 📄 **Not:** [El Yazısı Not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
+- 📄 **Not:** [El Yazısı Not](./1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

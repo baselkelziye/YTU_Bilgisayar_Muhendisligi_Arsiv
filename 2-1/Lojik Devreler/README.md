@@ -41,8 +41,8 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1X6kT7E10Z85QGRTOK5r7NuckHfYuYW54?usp=drive_link) ✨
-- 📄 **Not:** [Çok güzel çıkarılmış ders notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/2-1/Lojik%20Devreler/slaytlar_notlar/2021/efe'nin%20notlar%C4%B1%20%C3%A7ok%20g%C3%BCzeller) ✨
-- 📄 **Not:** [Nasırın el yazısı notu](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/2-1/Lojik%20Devreler/slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
+- 📄 **Not:** [Çok güzel çıkarılmış ders notları](./2-1/Lojik%20Devreler/slaytlar_notlar/2021/efe_girgin) ✨
+- 📄 **Not:** [Nasırın el yazısı notu](./2-1/Lojik%20Devreler/slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
