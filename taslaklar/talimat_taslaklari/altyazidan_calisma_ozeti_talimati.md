@@ -15,6 +15,7 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 - Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi ve benzeri zaman bağımlı veya organizasyonel bilgileri çıkarma.
 - Altyazıda geçen ifadeleri doğrudan kopyalamak yerine anlamı koruyarak temiz ve anlaşılır bir dille yeniden yaz.
 - Konular arasında mantıklı bir sıra kur.
+- Derece ve ayrıntı seviyesini yüksek tutarak, her ana konuyu ve önemli vurguyu açıklayıcı alt maddelerle (iç içe listeler şeklinde) zenginleştir.
 - Gereksiz tekrarları temizle.
 - Emin olmadığın veya altyazıda net olmayan kısımları kesin bilgi gibi yazma.
 - Çıktı Türkçe olmalı.
@@ -26,15 +27,17 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 
 ## Genel Konular
 
-- Derste ele alınan ana konuları madde madde yaz.
-- Her maddenin altında gerekiyorsa kısa açıklama ver.
-- Konuların yalnızca başlığını değil, çalışırken işe yarayacak temel fikrini de belirt.
+- Derste ele alınan birinci ana konu başlığı
+  - Bu konunun içeriği, ne anlama geldiği ve derste anlatılan temel açıklamaları.
+- Derste ele alınan ikinci ana konu başlığı
+  - Bu konunun temel mantığı, çalışma şekli ve önemli teknik detayları.
 
 ## Hocanın Özellikle Vurguladığı Kısımlar
 
-- Hocanın üzerinde özellikle durduğu kavramları, ayrımları, tanımları, yöntemleri veya uyarıları yaz.
-- Vurgu, sınav/ödev duyurusu gibi organizasyonel bir şeyse bu bölüme alma.
-- Mümkünse neden önemli olduğunu kısa bir cümleyle açıkla.
+- Hocanın üzerinde durduğu birinci önemli kavram/uyarı/tanım
+  - Bu kavramın veya uyarının neden kritik olduğu ve hoca tarafından yapılan açıklaması.
+- Hocanın üzerinde durduğu ikinci önemli nokta
+  - Bu noktanın sınav veya uygulamalı çalışmalar için neden önem arz ettiği.
 
 ## Kısa Tekrar Notları
 
