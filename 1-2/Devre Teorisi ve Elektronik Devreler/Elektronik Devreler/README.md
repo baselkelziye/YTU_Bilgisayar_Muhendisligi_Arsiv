@@ -32,7 +32,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aOf9B8FXnHMR2NJwKjOlWVLtUM__Rt4c?usp=drive_link) ✨
-- 📄 **Not:** [Rayene'in el yazısı notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Rayene'in el yazısı notları](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

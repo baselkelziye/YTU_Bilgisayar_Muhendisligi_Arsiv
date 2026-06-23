@@ -29,7 +29,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Bilgisayarla%20G%C3%B6rme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Bilgisayarla%20G%C3%B6rme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -77,8 +77,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Makale:** [Önder'in okumaları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Fletim%20Sistemleri/makale%20sunum%20%C3%B6devleri/2023/ondergormez) ✨
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Fletim%20Sistemleri/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Makale:** [Önder'in okumaları](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Fletim%20Sistemleri/makale%20sunum%20%C3%B6devleri/2023/ondergormez) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Fletim%20Sistemleri/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -104,7 +104,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Nesneye%20Dayal%C4%B1%20Tasar%C4%B1m%20ve%20Modelleme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Nesneye%20Dayal%C4%B1%20Tasar%C4%B1m%20ve%20Modelleme/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -133,7 +133,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -177,8 +177,8 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
-- 📄 **Not:**[Zehra Aksoy'un Notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2024/zehra_aksoy) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:**[Zehra Aksoy'un Notları](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi/slaytlar_notlar/2024/zehra_aksoy) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -212,7 +212,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -323,7 +323,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Olas%C4%B1l%C4%B1k%2C%20Rastgele%20De%C4%9Fi%C5%9Fkenler%20ve%20Stokastik%20Prosesler/slaytlar_notlar/2023/onder_gormez) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Olas%C4%B1l%C4%B1k%2C%20Rastgele%20De%C4%9Fi%C5%9Fkenler%20ve%20Stokastik%20Prosesler/slaytlar_notlar/2023/onder_gormez) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -377,7 +377,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -407,7 +407,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular](https://drive.google.com/drive/folders/1rAzRhhkAbRF8jPhqrNIb7Y2QZy-kkiNd?usp=drive_link) ✨
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -483,6 +483,6 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/tree/main/Lisans%C3%BCst%C3%BC/%C3%87ok%20De%C4%9Fi%C5%9Fkenli%20%C4%B0statiksel%20Veri%20Analizi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/%C3%87ok%20De%C4%9Fi%C5%9Fkenli%20%C4%B0statiksel%20Veri%20Analizi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

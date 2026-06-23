@@ -554,7 +554,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1Mv9VHfoG6Pm4Xs2r50sfIy2gyZf4qzgA?usp=sharing) ✨
-- 📄 **Not:** [Wordde yazılmış not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/Mesleki%20Se%C3%A7meli%201/G%C3%B6m%C3%BCl%C3%BC%20Sistemler/slaytlar_notlar/not.docx) ✨
+- 📄 **Not:** [Wordde yazılmış not](./Mesleki%20Se%C3%A7meli%201/G%C3%B6m%C3%BCl%C3%BC%20Sistemler/slaytlar_notlar/not.docx) ✨
 - 📄 **Proje:** [Hocaların hazırladığı 2021-2022 projeleri tanıtım videosu](https://www.youtube.com/watch?v=uU6Qw8xgokU&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
 - 📄 **Proje:** [Hocaların hazırladığı 2022-2023 projeleri tanıtım videosu](https://www.youtube.com/watch?v=PHACPjpUpHM&ab_channel=Y%C4%B1ld%C4%B1zTeknik%C3%9CniversitesiBilgisayarM%C3%BChendisli%C4%9Fi) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=ETFdrZZc5sY&ab_channel=mehmet%C3%A7alo%C4%9Flu) ✨
@@ -1154,7 +1154,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Elle alınmış not](https://github.com/baselkelziye/YTU_Bilgisayar_Muhendisligi_Arsiv/blob/main/Mesleki%20Se%C3%A7meli%201/Y%C3%B6netim%20Bilgi%20Sistemleri/slaytlar_notlar/2022/El%20Yaz%C4%B1s%C4%B1%20Not.pdf) ✨
+- 📄 **Not:** [Elle alınmış not](./Mesleki%20Se%C3%A7meli%201/Y%C3%B6netim%20Bilgi%20Sistemleri/slaytlar_notlar/2022/El%20Yaz%C4%B1s%C4%B1%20Not.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
