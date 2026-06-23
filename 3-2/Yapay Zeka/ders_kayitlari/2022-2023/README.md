@@ -2,6 +2,7 @@
 
 ### 📋 Genel Bilgiler
 * **Ders:** Yapay Zeka
+* **Hoca:** Prof. Dr. Mehmet Fatih Amasyalı
 * **Dönem:** Bahar
 * **Akademik Yıl:** 2022 - 2023
 

@@ -1,13 +1,16 @@
-# Altyazıdan Çalışma Özeti Çıkarma Talimatı
+# Altyazıdan Çalışma Özeti Çıkarma ve Altyazı README'si Oluşturma Talimatı
 
-Aşağıdaki talimat, ders kaydı altyazısından zaman bağımsız bir çalışma özeti oluşturmak için kullanılabilir.
+Aşağıdaki talimat; ders kaydı altyazılarından zaman bağımsız çalışma özetleri çıkarmak ve altyazıların bulunduğu klasöre standart bir `README.md` belgesi eklemek amacıyla kullanılabilir.
 
 ## Talimat
 
-Sana bir ders kaydının altyazı metni verilecek. Bu altyazıdan, öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar.
+Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör verilecek. Senden istenenler:
+1. Her bir altyazı dosyasından öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar.
+2. Altyazı dosyalarının bulunduğu klasöre (`altyazilar/` dizini altına) aşağıdaki formatta bir `README.md` belgesi oluştur veya mevcutsa güncelle.
+
+### 1. Çalışma Özeti Çıkarma Kuralları
 
 Özeti hazırlarken aşağıdaki kurallara uy:
-
 - Sadece derste işlenen akademik içerikleri dikkate al.
 - Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi ve benzeri zaman bağımlı veya organizasyonel bilgileri çıkarma.
 - Altyazıda geçen ifadeleri doğrudan kopyalamak yerine anlamı koruyarak temiz ve anlaşılır bir dille yeniden yaz.
@@ -16,7 +19,7 @@ Sana bir ders kaydının altyazı metni verilecek. Bu altyazıdan, öğrencinin 
 - Emin olmadığın veya altyazıda net olmayan kısımları kesin bilgi gibi yazma.
 - Çıktı Türkçe olmalı.
 
-## Çıktı Formatı
+#### Özet Çıktı Formatı
 
 ```md
 # Ders Çalışma Özeti
@@ -39,10 +42,39 @@ Sana bir ders kaydının altyazı metni verilecek. Bu altyazıdan, öğrencinin 
 - Bu bölümde de zaman bağımlı bilgi kullanma.
 ```
 
+### 2. Altyazı Klasörü README.md Kuralları
+
+Altyazıların bulunduğu klasörün içindeki `README.md` dosyasını oluştururken/güncellerken şu kurallara uy:
+- **Hoca Bilgisi:** README belgesine dersi veren hoca bilgisini ekle. Eğer dersi veren hoca adını bilmiyorsan, bunu tahmin etmeye çalışma; **kesinlikle kullanıcıya hoca adını sor** ve aldığın cevaba göre ekle.
+- **Hafta Bilgisi ve Eksik Kayıtlar:** Klasördeki `.srt` dosyalarını analiz ederek haftalık listeyi ve varsa eksik haftaları listele.
+- **Format Şablonu:** Aşağıdaki yapıyı birebir referans al:
+
+```md
+# [Ders Adı] Ders Kayıtları Altyazıları
+
+Bu klasör, [Dönem] eğitim öğretim yılı [Dönem] dönemindeki [Ders Adı] ders kayıtlarının altyazılarını içerir.
+
+* **Dersi Veren Akademisyen:** [Hoca Adı]
+
+Dersler [İlk Ders Tarihi] günü başlamıştır. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın ders haftasını gösterir.
+
+## Hafta Bilgisi
+
+- `ders_1.srt`: [Tarih]
+- `ders_2.srt`: [Tarih]
+...
+
+## Eksik Kayıtlar
+
+- [Eksik Hafta No]. hafta [Sebep] nedeniyle kayıt bulunmamaktadır.
+
+**Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
+```
+
 ## Kullanım
 
-Altyazı metnini bu talimatın altına ekleyip modeli çalıştır:
+Aşağıdaki şablonu doldurarak asistan modele iletin:
 
 ```text
-[Buraya dersin .srt altyazı içeriği gelecek.]
+Hedef Altyazı Klasörü: [Buraya klasör yolu gelecek, örn: .../3-2/Yapay Zeka/ders_kayitlari/2022-2023/altyazilar]
 ```
