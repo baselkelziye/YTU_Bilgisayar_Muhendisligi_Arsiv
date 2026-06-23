@@ -31,3 +31,9 @@
 - Maks oyuncu skoru artırmaya, min oyuncu azaltmaya çalışır.
 - Alfa-beta budama gereksiz dalları eler.
 - Büyük oyunlarda derinlik sınırı ve değerlendirme fonksiyonu kullanılır.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Yapay zekada oyun oynama problemleri, rakibin de akıllı ve rasyonel davrandığı dinamik ve düşmanca (adversarial) arama problemleri olarak ele alınır. İki oyunculu sıfır toplamlı (zero-sum) oyunlarda bir oyuncunun kazancı diğerinin kaybına eşittir. Minimax algoritması, bu tür oyunlarda karar vermek için kullanılır. MAX oyuncusu kendi kazancını maksimize etmeye çalışırken, MIN oyuncusu MAX'ın kazancını minimize etmeye çalışır. Oyun ağacının tamamını taramak üstel zaman alacağından (O(b^d)), performansı artırmak için Alfa-Beta Budama (Alpha-Beta Pruning) yöntemi uygulanır. Alfa-Beta budama, optimal kararı değiştirmeden ağacın değerlendirilmesi gerekmeyen dallarını budayarak arama süresini yarı yarıya azaltabilir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

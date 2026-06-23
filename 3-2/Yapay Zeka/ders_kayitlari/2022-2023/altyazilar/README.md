@@ -1,6 +1,8 @@
 # Yapay Zeka Ders Kayıtları Altyazıları
 
-Bu klasör, 2022-2023 eğitim öğretim yılı bahar dönemindeki Yapay Zeka ders kayıtlarının altyazılarını içerir.
+Bu klasör, 2022-2023 eğitim öğretim yılı Bahar dönemindeki Yapay Zeka ders kayıtlarının altyazılarını içerir.
+
+* **Dersi Veren Akademisyen:** Prof. Dr. Mehmet Fatih Amasyalı
 
 Dersler 2 Mart 2023 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın ders haftasını gösterir.
 

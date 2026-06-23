@@ -35,3 +35,9 @@
 - Bilgi gösterimi, bilginin bilgisayarda işlenebilir hale getirilmesidir.
 - Kural tabanlı sistemlerde bilgi, kurallar ve olgularla temsil edilir.
 - Çıkarım, mevcut bilgilerden yeni bilgi üretme sürecidir.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Bilgi gösterimi (Knowledge Representation), akıllı sistemlerin dünyadaki olguları anlayıp çıkarım yapabilmesi için bilgiyi yapılandırılmış bir biçimde saklama yöntemidir. Veri (data) ham gözlemlerden oluşurken, bilgi (knowledge) bu verilerin bir bağlam içinde işlenip anlamlandırılması ve kurallarla ilişkilendirilmesiyle oluşur. Bilgi tabanlı etmenler (Knowledge-based agents), bir bilgi tabanına (Knowledge Base - KB) yeni bilgileri ekleme (TELL) ve bilgi tabanından çıkarım yapma (ASK) yeteneğine sahiptir. Bilgi gösteriminde önermeler mantığı (propositional logic), birinci dereceden mantık (First-Order Logic - FOL), ontolojiler ve anlamsal ağlar (semantic networks) gibi yapılar kullanılır. Çıkarım motorları (inference engines) bu kuralları işleterek yeni ve gizli bilgileri üretir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.

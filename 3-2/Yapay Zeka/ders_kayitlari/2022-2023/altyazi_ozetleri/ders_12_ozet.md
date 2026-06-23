@@ -36,3 +36,9 @@
 - Hiyerarşik, merkez tabanlı ve yoğunluk tabanlı kümeleme farklı yaklaşımlardır.
 - Regresyon sürekli değer tahmini yapar.
 - KNN ve karar ağacı mantığı regresyon problemlerine de uyarlanabilir.
+
+## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+
+Veri noktalarını sınıflarına göre ayıran geometrik çizgilere veya hiper-düzlemlere karar sınırları (decision boundaries) denir. Bazı problemler (örneğin AND/OR mantıksal kapıları) tek bir doğruyla ayrılabilirken (doğrusal karar sınırı), XOR gibi problemler doğrusal olmayan (non-linear) karar sınırları gerektirir. Yapay Sinir Ağları (YSA), doğrusal olmayan bu karmaşık fonksiyonları öğrenmek için tasarlanmış, biyolojik beyin hücrelerinden esinlenen modellerdir. Çok katmanlı algılayıcılar (MLP) aktivasyon fonksiyonları (Sigmoid, ReLU, Tanh) kullanarak doğrusal olmayan ilişkileri başarıyla modeller. Denetimsiz öğrenmede ise etiketlenmemiş verileri benzerliklerine göre gruplamak için K-Ortalamalar (K-Means) ve hiyerarşik kümeleme gibi Kümeleme (Clustering) algoritmaları kullanılır.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
