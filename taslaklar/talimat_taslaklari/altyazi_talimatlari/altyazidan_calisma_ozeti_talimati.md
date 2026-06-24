@@ -84,9 +84,22 @@ Dersler [İlk Ders Tarihi] günü başlamıştır. Dosya adlarındaki `ders_x.sr
 
 - Dersin altyazı çalışma özetlerine ve ders kayıtlarına kolayca ulaşılabilmesi için, projenin kök dizinindeki `readme_olustur/dersler.json` dosyası güncellenmelidir.
 - İlgili dersin `faydali_olabilecek_kaynaklar` dizisi içerisine, dersin kendi ana dizininden (kökteki ders klasöründen) `ders_kayitlari/` dizinine işaret eden göreli bir yol (relative path) eklenmelidir.
+- **Güncel Ders Kontrolü:** Eğer altyazı klasörü kök ders klasörünün altındaki eski/pasif bir ders dizininde bulunuyorsa, kaynak bağlantısını eski/pasif dersin `faydali_olabilecek_kaynaklar` alanına ekleme. Örneğin yapı `dönem/güncel_ders/eskimis_ders/ders_kayitlari/...` biçimindeyse, bağlantı `readme_olustur/dersler.json` içinde `eskimis_ders` kaydına değil kökteki `güncel_ders` kaydına eklenmelidir.
+- Bu durumda göreli yol da güncel ders klasöründen hedef kayıt dizinine gidecek şekilde yazılmalıdır; örnek biçim: `./eskimis_ders/ders_kayitlari/`.
 - Örnekler:
   - Yapay Zeka için: `"**Ders Kayıtları:** [Yapay Zeka Ders Kayıtları Altyazıları](./ders_kayitlari/)"`
   - Mikroişlemci Sistemleri ve Assembly Dili için: `"**Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./alt%20seviye%20programlama/ders_kayitlari/)"`
+  - Güncel ders altındaki eski/pasif ders kayıtları için: `"**Ders Kayıtları:** [Eski Ders Ders Kayıtları Altyazıları](./eskimis_ders/ders_kayitlari/)"`
+
+### 4. Commit Atma Kuralları
+
+- Tüm özetler, `README.md` dosyaları, `dersler.json` güncellemesi ve gerekiyorsa `readme_olustur.py` çıktıları tamamlandıktan sonra `git status` ile değişiklikleri kontrol et.
+- Sadece bu işlemle ilgili dosyaları stage et; kullanıcının başka değişikliklerini commit'e dahil etme.
+- Standart commit mesajı olarak şu kalıbı kullan:
+
+```bash
+git commit -m "özellik: [ders adı] altyazı özetleri eklendi"
+```
 
 ## Kullanım
 
