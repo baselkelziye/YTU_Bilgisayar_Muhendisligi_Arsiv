@@ -1,0 +1,552 @@
+1
+00:00:54,159 --> 00:01:07,090
+Evet merhaba arkadaşlar şu anda katılım biraz düşük 26 kişi var bende 27 28 yine bir 5 dakika içinde artar.
+
+2
+00:01:07,090 --> 00:01:12,689
+Bugünkü uygulama saatimizde sizler için bir ödevimiz var.
+
+3
+00:01:12,689 --> 00:01:19,489
+2 saatlik bir ödev kurgusu online yıldız edutr'den paylaştım.
+
+4
+00:01:19,489 --> 00:01:23,890
+Şu anda aktif olması lazım bir kontrol eder misiniz erişebiliyor musunuz görelim.
+
+5
+00:01:23,890 --> 00:01:47,939
+Tamam.
+
+6
+00:01:47,939 --> 00:01:51,939
+Yüklemeyi de oradan yapacaksınız.
+
+7
+00:01:51,939 --> 00:02:02,189
+Hızlıca bir okuyun bende buradan bir ekran paylaşayım aynı ödevi.
+
+8
+00:02:02,189 --> 00:02:17,870
+Şu şekilde bunu nasıl yapabiliriz şöyle yapsak.
+
+9
+00:02:17,870 --> 00:02:21,870
+Sanırım görebiliyorsunuz değil mi bir sıkıntı yok.
+
+10
+00:02:21,870 --> 00:02:25,870
+Aynı pdf'i buradan da paylaşıyorum şu anda sizinle.
+
+11
+00:02:25,870 --> 00:02:35,870
+Sizlerden istediğim bu ödev kapsamında bir ikili arama ağacı oluşturmak ve ortalama arama derinliğinin nasıl değiştiğini incelemek.
+
+12
+00:02:35,870 --> 00:02:47,870
+Boyuta göre nasıl değiştiğini ortalama aslında karmaşıklıkları algoritmik karmaşıklığın canlı canlı nasıl değiştiğini gözlemlemeniz ve bunu raporlamanız.
+
+13
+00:02:47,870 --> 00:02:53,870
+Büyük bir ihtimalle çoğunuz yazmıştır ama yazmayan varsa tabi biraz daha zorlanacak.
+
+14
+00:02:53,870 --> 00:03:04,870
+İlk olarak sizden bir ikili arama ağacı oluşturmanız yani bir binary search tree oluşturma ve arama kodu yazmanızı isteyeceğim.
+
+15
+00:03:04,870 --> 00:03:10,870
+Ve burada n tane rastgele tam sayıda yer üretip rastgele bir ağaç ikili arama ağacı oluşturacaksınız.
+
+16
+00:03:10,870 --> 00:03:16,870
+Sırayla tek tek böyle işte mesela n eşittir 1000 diyelim 1000 tane rastgele eleman oluşturacaksınız.
+
+17
+00:03:16,870 --> 00:03:20,870
+Ondan sonra da işte birden n'e kadar bunları ikili arama ağacına yerleştireceksiniz.
+
+18
+00:03:20,870 --> 00:03:23,870
+Herhangi bir optimizasyon bilmem ne yok sırayla.
+
+19
+00:03:23,870 --> 00:03:26,870
+Ondan sonra orada rastgele bir sayı seçeceksiniz.
+
+20
+00:03:26,870 --> 00:03:31,870
+Diyelim ki işte 588. sayıyı seçtiniz.
+
+21
+00:03:31,870 --> 00:03:36,870
+O değeri ağaç içinde arayacaksınız kökten başlayarak doğal olarak arayacaksınız.
+
+22
+00:03:36,870 --> 00:03:41,870
+Ve ararken ne kadar yol gittiğinizi yani petinizin uzunluğunu kayıt edeceksiniz.
+
+23
+00:03:41,870 --> 00:03:49,870
+Bir yandan da bu arama işleminin kaç saniye sürdüğünü tabi milisaniye cinsinden olacak ama biz sonuçta saniye yuvarlayacağız.
+
+24
+00:03:49,870 --> 00:03:52,870
+Bu işlemin kaç saniye sürdüğünü de tutacaksınız.
+
+25
+00:03:52,870 --> 00:04:03,870
+Bu işlemi tabi n'in 100'den 10 bine kadar olan bütün değerleri için tekrar tekrar tekrar yapacaksınız.
+
+26
+00:04:03,870 --> 00:04:10,870
+Yani toplamda 9900 tane en değeri için 9900 tane ağaç oluşturmanızı bekliyorum.
+
+27
+00:04:10,870 --> 00:04:17,870
+Ama her bir en değeri için de 100 kere tekrar etmenizi yani 100 kere rastgele ağaç oluşturmanızı.
+
+28
+00:04:17,870 --> 00:04:26,870
+Mesela işte 1000 değeri için 100 kere bunu tekrar tekrar yapmanızı ve elde ettiğiniz uzunluk değerleri ve çalışma sürelerinin ortalamasını almanızı istiyorum.
+
+29
+00:04:26,870 --> 00:04:31,870
+Böylece ne oldu? Her bir en değeri için tek bir ortalama değeriniz kaldı elinizde.
+
+30
+00:04:31,870 --> 00:04:39,870
+Ama tabi şeyleri de atmayın hani 100 tane çalışmanın elde ettiğiniz değerlerini de atmamanız gerekiyor.
+
+31
+00:04:39,870 --> 00:04:44,870
+Neden gerekiyor? Çünkü bonus için şöyle bir grafik çizdirmenizi isteyeceğim.
+
+32
+00:04:44,870 --> 00:04:47,870
+Eğer çizmek istiyorsanız o değerlere de ihtiyacınız olacak tabi ki.
+
+33
+00:04:47,870 --> 00:04:54,870
+Sonrasında bu değerleri yani elinize 9900'lük iki tane dizi olacak aslında.
+
+34
+00:04:54,870 --> 00:05:07,870
+Biri ortalama derinlikleri yani PET'lerin uzunluğunu arama yolu uzunluğunu tutan bir 9900 değer bir de çalışma sürelerini tutan 9900 değer olacak.
+
+35
+00:05:07,870 --> 00:05:13,870
+Sonrasında bunlara bir eğri uyduracaksınız. Nasıl bir eğri uyduracaksınız? Logaritmik bir eğri uyduracaksınız.
+
+36
+00:05:13,870 --> 00:05:17,870
+Ve bunun iki tane kat sayısı olacak. A ve B dediğimiz iki kat sayısı.
+
+37
+00:05:17,870 --> 00:05:20,870
+Bunları hesaplayacaksınız elde edeceksiniz.
+
+38
+00:05:20,870 --> 00:05:29,870
+Ve bu şekilde ben bu deneylerin sonucunda aslında bu ortalama değerler için şöyle bir yaklaşık fonksiyon elde ettim diye bir sonuç üreteceksiniz.
+
+39
+00:05:29,870 --> 00:05:33,870
+Peki neler teslim edeceksiniz? Kodlarınızı yollayacaksınız.
+
+40
+00:05:33,870 --> 00:05:40,870
+Dediğim gibi 9900 tane ortalama PET uzunluğu ve ortalama arama süresi dizilerinin çıktısını oluşturacaksınız.
+
+41
+00:05:40,870 --> 00:05:44,870
+Mümkünse böyle WordXL falan bir şeyin içine koyun paketleyin.
+
+42
+00:05:44,870 --> 00:05:48,870
+Yoksa böyle bütün printoutlar şeklinde falan almanıza vermenize gerek yok.
+
+43
+00:05:48,870 --> 00:05:52,870
+Mümkün olduğunca az sayıda sayfaya sığdırırsanız sevinirim.
+
+44
+00:05:52,870 --> 00:05:59,870
+Uydurduğunuz fonksiyonlar tabii ki A ve kat sayılarıyla yani A, L, N, X, artı ya da eksi, B şeklinde olacak bu.
+
+45
+00:05:59,870 --> 00:06:04,870
+Bonus olarak da mesela burada ben bir örnek grafik sizin için çizdim.
+
+46
+00:06:04,870 --> 00:06:09,870
+Yüzden 10.000'e kadar olan bütün testleriniz için şöyle bir grafik çizeceksiniz.
+
+47
+00:06:09,870 --> 00:06:19,870
+Burada bakım mesela işte birinci şey için elde ettiğim 100 denemenin ortalama şey uzunlukları var.
+
+48
+00:06:19,870 --> 00:06:24,870
+Pet uzunlukları var ve şeyi de şurada bir yerde çıkmış.
+
+49
+00:06:24,870 --> 00:06:30,870
+Yani ben bu Aery'yi uydurduğumda şu kırmızı çizgiyi üzerine nokta nokta oturttuğumda uydurduğum Aery ile birlikte.
+
+50
+00:06:31,870 --> 00:06:39,870
+Aslında şöyle bir function approximation yapmış olacağım ki bu da aslında bir yerde doygunluğa ulaşacak.
+
+51
+00:06:39,870 --> 00:06:47,870
+Hani derste bahsederken işte logaritma en mertebesindedir iki seviyesinin iki civarındadır falan yuvarlamıştık.
+
+52
+00:06:47,870 --> 00:06:52,870
+Bu yuvarlamamızın sonucu aslında şurada şöyle bir grafik olarak çıkacak.
+
+53
+00:06:52,870 --> 00:06:57,870
+Grafiyi çizdirmek zorunda değilsiniz ama çizdirirseniz artı puan alacaksınız.
+
+54
+00:06:57,870 --> 00:07:04,870
+Geldi mi? Yani grafikten bahsettim. Yani burada işte her bir deneme için yüzer tane tekrarımızın nokta nokta değerleri var.
+
+55
+00:07:04,870 --> 00:07:15,870
+Ondan sonra da uydurduğum işte mesela 2.87 lnx art eksi 0.355 gibi bir değeri burada aslında noktalarını kırmızı kırmızı üzerine koydum çizdirdim.
+
+56
+00:07:15,870 --> 00:07:22,870
+Bunu Excel gibi bir ortamda ya da Matlab gibi size kalmış başka bir ya da Python gibi bir ortamda hiç fark etmez.
+
+57
+00:07:22,870 --> 00:07:26,870
+Ya da online bir tool kullanarak herhangi bir şekilde oluşturabilirsiniz.
+
+58
+00:07:26,870 --> 00:07:37,870
+Tamam yani özetle ben sizden kodunuzu özellikle elde ettiğiniz ortalama değer dizilerinin çıktılarını ve uydurduğunuz fonksiyonların kat sayılarını bekliyorum.
+
+59
+00:07:37,870 --> 00:07:40,870
+Ilave olarak da dediğim gibi bu 10 puan burası.
+
+60
+00:07:40,870 --> 00:07:49,870
+Eğer Excel ortamı gibi bir yerde de bu iki grafiyi çizerseniz bunların böyle uydurulmuş hallerini gösterirseniz artı puan artı bir 5 puan daha alırsınız.
+
+61
+00:07:49,870 --> 00:07:55,870
+Yani 15 puan şimdi de gerisine baktığınızda süre ölçmeniz gerekiyor dedim.
+
+62
+00:07:55,870 --> 00:08:06,870
+Süre ölçmek için şuraya örnek çok basit bir kod parçası time header'ından alarak time header'ındaki clock t ve clock fonksiyonlarını bir de clocks per second'ı kullanarak sabitini kullanarak yaptım.
+
+63
+00:08:06,870 --> 00:08:12,870
+Çok basit hani siz bir fonksiyonu çağırmadan önce arama fonksiyonunu bir clock alacaksınız.
+
+64
+00:08:12,870 --> 00:08:17,870
+Bir de fonksiyonu çağırıp bittikten sonra bir clock alıp aradaki farka bakacaksınız.
+
+65
+00:08:17,870 --> 00:08:27,870
+Onu da clocks per second'a böldüğünüzde elinizde saniye cinsinden mesela 0.5 ya da 3.27 gibi bir float değer elde edeceksiniz.
+
+66
+00:08:27,870 --> 00:08:30,870
+Bu tek bir aramanızın aslında dakikası.
+
+67
+00:08:30,870 --> 00:08:35,870
+Her bir enişte bunu 100 kere tekrar edip ortalamasını alacak tek bir ortalama değer aslında bulacaksınız.
+
+68
+00:08:35,870 --> 00:08:42,870
+Eğri uydurma konusunda da belki logaritmik eğri uydurmayı bilmeyenleriniz olabilir diye ben buraya bir kod yazdım.
+
+69
+00:08:42,870 --> 00:08:53,870
+Böyle 20 ile sınırlı anladım siz bunların x ve y değerleri direkt olarak kullanacağını aldım.
+
+70
+00:08:53,870 --> 00:09:02,870
+Esas nane şurada, şuradaki döngü içinde aslında ben katsayıların hesaplanması için gerekli toplam x, toplam y, toplam x, y değerlerini hesaplıyorum.
+
+71
+00:09:03,870 --> 00:09:11,870
+Ve a ve b katsayıların da şurada gördüğünüz iki tane formülle hesaplıyorum.
+
+72
+00:09:11,870 --> 00:09:28,870
+Sonuçta gördüğünüz gibi işte a elen x eksi b şeklinde bir formül, bir denklemi, logaritmik bir eğri denklemi bulmanızı bekliyorum.
+
+73
+00:09:28,870 --> 00:09:33,870
+Bakalım her birinizde ne kadar farklı, ne kadar değişik değerler çıkacak.
+
+74
+00:09:33,870 --> 00:09:38,870
+Bu sayede de işte bir ikili arama ağacının aslında algoritmik karmaşıklığının gerçek hayatta nasıl etkilendiğini,
+
+75
+00:09:38,870 --> 00:09:51,870
+ene bağlı olarak neler yaşadığınızı ya da en arttıkça diner olarak arttıkça aslında sizin arama karmaşığınızın logaritmik ölçekle katsayılı bir logaritmik ölçekle beraber arttığını gözlemlemenizi istiyorum.
+
+76
+00:09:51,870 --> 00:09:53,870
+Bunları da raporlayacaksınız.
+
+77
+00:09:53,870 --> 00:09:58,870
+Gördüğünüz iki saat 10 dakikada konuştuğum için 3.10 geçeye kadar sistemin saatini ayarladım.
+
+78
+00:09:58,870 --> 00:10:11,340
+Bu şekilde sorunuz var mı?
+
+79
+00:10:11,340 --> 00:10:14,340
+Sorumuz link yok.
+
+80
+00:10:14,340 --> 00:10:22,340
+Link şeydi arkadaşlar online yıldız edüterinin ödevler kısmı var ya dersin ödevleri kısmında aktif yüklemeyi de oraya yapacaksınız.
+
+81
+00:10:22,340 --> 00:10:27,649
+Bu pdf'in linki yalnız.
+
+82
+00:10:27,649 --> 00:10:31,649
+Upload'u dediğim gibi sistem üzerinden yapmanız gerekiyor bunu unutmayın.
+
+83
+00:10:32,649 --> 00:10:33,649
+Şuraya da yazayım.
+
+84
+00:10:57,620 --> 00:10:59,620
+Hocam kısa bir soru sorabilir miyim?
+
+85
+00:10:59,620 --> 00:11:03,620
+Her en değerli değeri için 3 kere bir çalıştırma yapacağız.
+
+86
+00:11:03,620 --> 00:11:07,620
+100 tane mi en değeri?
+
+87
+00:11:09,620 --> 00:11:10,620
+10.000 tane mi?
+
+88
+00:11:10,620 --> 00:11:11,620
+9.900 tane.
+
+89
+00:11:11,620 --> 00:11:12,620
+100'den 10.000'e kadar.
+
+90
+00:11:12,620 --> 00:11:14,620
+Tamam anladım.
+
+91
+00:11:14,620 --> 00:11:15,620
+Ben çalıştırdım.
+
+92
+00:11:15,620 --> 00:11:23,620
+Benim şeyde maksimum 10.000 değeri için 100 tekrar kaç saniye tuttu ya?
+
+93
+00:11:23,620 --> 00:11:25,620
+2 saniye mi 3 saniye mi bir şey tuttu?
+
+94
+00:11:25,620 --> 00:11:30,620
+Yani bunu şey yaptığınızda en fazla 30 dakika falan tutar bütün çalıştırma.
+
+95
+00:11:30,620 --> 00:11:34,620
+2 saat içinde rahatlıkla aslında sonuçları elde edebilirsiniz.
+
+96
+00:11:34,620 --> 00:11:37,620
+İşte kodlayacaksınız Excel'e taşıyacaksınız odur budur.
+
+97
+00:11:37,620 --> 00:11:39,620
+2 saat fazlasıyla yeterli bir süre.
+
+98
+00:11:39,620 --> 00:11:43,620
+Yani full kodun çalışması yarım saat sürmüyor bile onu söyleyeyim.
+
+99
+00:11:44,620 --> 00:11:46,620
+Bu şekilde halledin.
+
+100
+00:11:46,620 --> 00:11:49,620
+Tabii önce tek bir tekrar için yapın.
+
+101
+00:11:49,620 --> 00:11:52,620
+Ondan sonra onu 100 tekrar çıkarıp ortalamasını alırsınız.
+
+102
+00:11:52,620 --> 00:11:55,620
+Şey yapın hani onları adım adım ilerleyin.
+
+103
+00:11:55,620 --> 00:11:58,620
+Bir anda bütün işi aynı anda yapmaya çalışmayın.
+
+104
+00:11:58,620 --> 00:12:16,210
+Şöyle tamam.
+
+105
+00:12:16,210 --> 00:12:19,210
+Böyle bir chat ekranına da yazdık.
+
+106
+00:12:20,210 --> 00:12:21,210
+Evet.
+
+107
+00:12:22,210 --> 00:12:24,210
+Şu şeyleri kapatayım.
+
+108
+00:12:25,210 --> 00:12:30,210
+Zaten time ve şey eğri uydurma kodlarında verdim.
+
+109
+00:12:30,210 --> 00:12:34,210
+Artık ikili arama ağacında büyük bir ihtimalle yapmışsınızdır diye düşünüyorum.
+
+110
+00:12:34,210 --> 00:12:39,210
+Implementasyonunu bu sayede hızlı bir şekilde işletir.
+
+111
+00:12:39,210 --> 00:12:49,210
+Sonuçları görüp görselleştirip kodun özellikle de algoritmanın efektifliğini en büyüdükçe nasıl değiştiğini inceleyebilirsiniz diye düşünüyorum.
+
+112
+00:12:49,210 --> 00:13:29,909
+Ödevle alakalı değil ama dersle ilgili genel bir bilgi de vereyim sizlere.
+
+113
+00:13:29,909 --> 00:13:38,909
+Ders notlarını önümüzdeki yani perşembe günü yarın yapacağımız dersin notları dahil dersin duvarına ekledim.
+
+114
+00:13:38,909 --> 00:13:44,909
+Görmüşsünüzdür tek bir pdf olarak bütün slide'ları sizinle paylaştım.
+
+115
+00:13:44,909 --> 00:13:49,909
+Sınava çalışırken de bir hafta net hatta daha fazla bir gün daha fazla süreniz var.
+
+116
+00:13:49,909 --> 00:13:57,909
+Sekiz gün kadar bu şekilde çalışmanızda sınava kadar devam ettirip bitirebilirsiniz.
+
+117
+00:13:57,909 --> 00:14:01,909
+Bu bilgiyi de tekrar paylaşmış olayım.
+
+118
+00:14:01,909 --> 00:14:05,909
+Bir süre daha bekliyorum soru olur mu diye.
+
+119
+00:14:05,909 --> 00:14:14,769
+Ki oldu dizi kullanmayacaksınız canım linkli listeyle yapacaksınız tabii ki.
+
+120
+00:14:14,769 --> 00:14:21,769
+Yani dizi şey diziyle yapmanızı istemiyorum onu yazmaya gerek bile duymadım.
+
+121
+00:14:21,769 --> 00:14:27,769
+Biz linkli listeyi nasıl oluşturduk derste nasıl aradık hani sola sağa sola sağa giderek arıyorduk ya.
+
+122
+00:14:27,769 --> 00:14:41,769
+Küçükse sola büyükse sağa doğru dallan şeklinde diziyle yaparsanız yaparsınız tabii ki yapmazsınız değil ama yapmamanızı tercih ederim.
+
+123
+00:14:41,769 --> 00:14:47,769
+Yani linkli liste yapısıyla daha doğrusu çift pointer yapısıyla yapmanızı tercih ederim.
+
+124
+00:14:47,769 --> 00:14:51,769
+En rastgele tam sayıda kullanıcını almayacaksınız.
+
+125
+00:14:51,769 --> 00:14:56,769
+Şöyle şimdi en eşittir 100'den 10 bine kadar tamam mı.
+
+126
+00:14:56,769 --> 00:15:07,769
+Aslında bu bir döngü olacak ve diyelim ki döngünün bilmem kaçıncı adımındasınız ve en eşittir 5542 değerindesiniz tamam mı.
+
+127
+00:15:07,769 --> 00:15:13,769
+5542 tane rastgele sayı üretip ondan bir ağaç oluşturacaksınız.
+
+128
+00:15:13,769 --> 00:15:18,769
+Ve oradaki herhangi bir sayı içindeki rastgele bir sayıyı arayacaksınız.
+
+129
+00:15:18,769 --> 00:15:24,769
+Tamam bu kadar ve bunu 100 kere tekrar edeceksiniz ama tabii aynı ağaçta değil.
+
+130
+00:15:24,769 --> 00:15:36,769
+Her seferinde ağacı yok edip tekrardan 5542 tane yeni rastgele sayı üretip 5542 lik bir ağaç oluşturup sonrasında yeni rastgele bir sayıyı arayacaksınız tamam mı.
+
+131
+00:15:36,769 --> 00:15:44,769
+100 kere bunu yaptığınızda 5542 en değeri için ortalama bir pet ve ortalama bir süre değeriniz elde olacak onu kenara yazacaksınız.
+
+132
+00:15:44,769 --> 00:15:54,769
+Sonra bunu iyi bir arttırdınız ne oldu 5543'e geçtiniz tekrar 5543 tane rastgele sayı üreteceksiniz.
+
+133
+00:15:54,769 --> 00:16:02,769
+Ağacı oluşturacaksınız bir tane rastgele sayı arayacaksınız sonrasında da bunu 100 kere tekrar edeceksiniz ve ortalamasını alacaksınız.
+
+134
+00:16:02,769 --> 00:16:12,860
+Sonra 5544 için yapacaksınız bu şekilde.
+
+135
+00:16:12,860 --> 00:16:19,860
+Bonus için grafiği çizdirirken tabi 9900 değer belki çok ağır gelebilir o zaman hani 100'er 100'er yürüyebilirsiniz.
+
+136
+00:16:19,860 --> 00:16:25,860
+Mesela 100 200 300 400'üncü en değerlerini sadece grafiğe ekleyebilirsiniz.
+
+137
+00:16:25,860 --> 00:16:35,860
+Bu tabi seçenek grafik oluşsun bakalım yani tabi bonus yani hani direkt olarak grafiği değil esas olarak sizden denklemleri oluşturmanızı bekliyorum.
+
+138
+00:16:35,860 --> 00:17:02,059
+Bir süre daha açık tutacağım ama videoyu kapatacağım chatten sorunuz olursa yazabilirsiniz takipteyim.
+
