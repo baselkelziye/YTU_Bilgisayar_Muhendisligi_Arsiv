@@ -54,6 +54,7 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 
 Altyazıların bulunduğu klasörün içindeki `README.md` dosyasını oluştururken/güncellerken şu kurallara uy:
 - **Hoca Bilgisi:** README belgesine dersi veren hoca bilgisini ekle. Eğer dersi veren hoca adını bilmiyorsan, bunu tahmin etmeye çalışma; **kesinlikle kullanıcıya hoca adını sor** ve aldığın cevaba göre ekle.
+- **İlk Ders Başlangıç Tarihi:** README belgesine dersin ilk başlangıç tarihini ekle. Eğer ilk dersin başlangıç tarihi kullanıcı tarafından verilmemişse veya mevcut dosyalardan kesin olarak anlaşılamıyorsa, bunu tahmin etmeye çalışma; **kesinlikle kullanıcıya ilk dersin başlangıç tarihini sor** ve aldığın cevaba göre ekle.
 - **Hafta Bilgisi ve Eksik Kayıtlar:** Klasördeki `.srt` dosyalarını analiz ederek haftalık listeyi ve varsa eksik haftaları listele.
 - **Format Şablonu:** Aşağıdaki yapıyı birebir referans al:
 
@@ -93,4 +94,5 @@ Aşağıdaki şablonu doldurarak asistan modele iletin:
 
 ```text
 Hedef Altyazı Klasörü: [Buraya klasör yolu gelecek, örn: .../3-2/Yapay Zeka/ders_kayitlari/2022-2023/altyazilar]
+İlk Ders Başlangıç Tarihi: [Biliyorsanız yazın; verilmezse asistan sormalıdır]
 ```
