@@ -24,6 +24,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Veri İletişimi Ders Kayıtları Altyazıları](./Veri%20%C4%B0leti%C5%9Fimi/ders_kayitlari/) ✨
 - 📄 **Not:** [Enes Utku Selbes'in VIBA Notu](./slaytlar_notlar/2026/enes_utku_selbes/viba_not.pdf) ([Sıkıştırılmış versiyonu](./slaytlar_notlar/2026/enes_utku_selbes/viba_not_compressed.pdf)) ✨
 - 📄 **Not:** [Önder'in markdown notları](./3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 **Not:** [Rameş'in notları](./3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/rame%C5%9F%20el%20yaz%C4%B1s%C4%B1) ✨

@@ -56,6 +56,15 @@ python3 taslaklar/talimat_taslaklari/ozetleri_pdfe_donustur.py "[Hedef Dizin]" -
 - Dersin `README.md` dosyası oluşturulduktan/güncellendikten ve `dersler.json` dosyası güncellendikten sonra, projedeki tüm dönem ve ana README dosyalarını otomatik olarak senkronize etmek için `readme_olustur/` dizini altındaki `readme_olustur.py` betiği çalıştırılmalıdır.
 - Çalıştırma komutu: `python3 readme_olustur.py` (Çalışma dizini olarak `readme_olustur` klasörü seçilmelidir).
 
+### 4. Commit Atma Kuralları
+- PDF üretimi, kök `README.md`, `dersler.json` ve `readme_olustur.py` çıktıları tamamlandıktan sonra `git status` ile değişiklikleri kontrol et.
+- Sadece bu işlemle ilgili dosyaları stage et; kullanıcının başka değişikliklerini commit'e dahil etme.
+- Standart commit mesajı olarak şu kalıbı kullan:
+
+```bash
+git commit -m "özellik: [ders adı] özetleri pdfe dönüştürüldü"
+```
+
 ## Kullanım
 
 Hedef dizinin yolunu aşağıdaki formatta belirterek bu talimatı modele iletin:
