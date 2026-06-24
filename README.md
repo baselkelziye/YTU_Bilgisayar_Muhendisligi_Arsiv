@@ -653,7 +653,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 28 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
     - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](./1-1/Bilgisayar%20Bilimlerine%20Giriş)
 
@@ -793,7 +793,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./1-2/Sayısal%20Analiz)
 
 
@@ -809,7 +809,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [HİT](#-dr-h-i̇rem-türkmen)
   - 📂 [Ders Klasörü](./1-2/Yapısal%20Programlama)
 
@@ -833,7 +833,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 16 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./2-1/Ayrık%20Matematik)
 
 
@@ -928,7 +928,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Müh%20için%20Sinyaller%20ve%20Sistemler)
 
 
@@ -1004,7 +1004,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
   - 📂 [Ders Klasörü](./2-2/Veri%20Yapıları%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
@@ -1027,7 +1027,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 14 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
   - 📂 [Ders Klasörü](./3-1/Algoritma%20Analizi)
 
 
@@ -1055,7 +1055,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★☆
       - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
   - 📂 [Ders Klasörü](./3-1/İşletim%20Sistemleri)
 
@@ -2315,7 +2315,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
   - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapısal%20Programlamaya%20Giriş)
 
 
@@ -2629,7 +2629,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
-    - [MAG](#-doç-dr-m-amaç-güvensan--en-popüler-hoca-37-oy)
+    - [MAG](#-doç-dr-m-amaç-güvensan)
   - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
 
 
@@ -2669,7 +2669,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-    - [AEL](#-dr-ahmet-elbir)
+    - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [EU](#-dr-erkan-uslu)
   - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Sayısal%20İşaret%20İşleme)
 
@@ -2808,9 +2808,12 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Emperor_**: Selahattin Şamil Fidandan alırsanız ortalamanızı yükselten bir ders olur. öyle çok bişey öğrenicem beklentisiyle girmeyin zaten genel kültür. slayt çalışıyorsunuz birebir çıkıyor zaten 90-100 gibi notlar alıyorsunuz. Ayrıca hoca ödev veriyor onu da eğer bir sınavdan düşük alırsanız kullanabilirsiniz. Ders genel olarak çok uğraş gerektirmeyen standart bir seçmeli sınav haftası uğraşırsınız 2-3 saat maks. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Mert_**: Dersi Şamil Fidandan online olarak aldım, sınav soruları test ve paylaştığı slaytlardan çıkıyor. Ortalamayı yükseltmek için uygun bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Davranış%20Bilimi)
 
 
@@ -3770,7 +3773,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 👑 En popüler hoca (37 oy)
+#### 👨‍🏫 Doç. Dr. M. Amaç Güvensan 
 - 🚪 **Ofis:** EEF-DZ35
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/amac/](http://avesis.yildiz.edu.tr/amac/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3833,7 +3836,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 
 
-#### 👨‍🏫 Dr. Ahmet Elbir 
+#### 👨‍🏫 Dr. Ahmet Elbir 👑 En popüler hoca (38 oy)
 - 🚪 **Ofis:** EEF-D220
 - 🔗 **Araştırma Sayfası:** [http://avesis.yildiz.edu.tr/aelbir/](http://avesis.yildiz.edu.tr/aelbir/)
 - 💬 **Öğrenci Görüşleri:**
@@ -3863,7 +3866,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆
   - 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
   - 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
-    - ℹ️ Yıldızlar 37 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 38 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -3888,9 +3891,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 📅 *2026 yılı için yıldız bilgileri*
       - 2026 Yılında 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
       - 2026 Yılında 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★☆☆☆☆☆
-      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★☆☆☆☆☆☆
-        - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
+      - 2026 Yılında 🧠 Dersi Öğrenir Miyim:	★★★★★★☆☆☆☆
+      - 2026 Yılında 🎉 Derste Eğlenir Miyim:	★★★★★☆☆☆☆☆
+        - ℹ️ Yıldızlar 10 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/s6ZMrQG4q578pEzm7) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 
