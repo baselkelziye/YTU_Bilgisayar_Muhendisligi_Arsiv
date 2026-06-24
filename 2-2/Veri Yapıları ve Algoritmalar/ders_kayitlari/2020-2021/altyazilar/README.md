@@ -4,12 +4,12 @@ Bu klasör, 2020-2021 eğitim öğretim yılı Güz dönemindeki Veri Yapıları
 
 * **Dersi Veren Akademisyen:** Dr. Göksel Biricik
 
-Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın ders haftasını; `_lab` eki ise aynı haftanın uygulama kaydını gösterir.
+Ders kayıtları 7 Ekim 2020 Çarşamba günü uygulama/lab kaydıyla başlamıştır. İlk teorik ders kaydı 8 Ekim 2020 Perşembe günüdür. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ilgili kaydın ders haftasını; `_lab` eki ise aynı haftanın uygulama kaydını gösterir.
 
 ## Hafta Bilgisi
 
+- `ders_1_lab.srt`: 7 Ekim 2020
 - `ders_1.srt`: 8 Ekim 2020
-- `ders_1_lab.srt`: 8 Ekim 2020
 - `ders_2_lab.srt`: 14 Ekim 2020
 - `ders_2.srt`: 15 Ekim 2020
 - `ders_3_lab.srt`: 21 Ekim 2020
