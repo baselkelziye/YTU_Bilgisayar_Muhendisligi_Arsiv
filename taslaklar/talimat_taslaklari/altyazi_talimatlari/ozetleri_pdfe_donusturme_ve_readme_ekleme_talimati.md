@@ -10,7 +10,20 @@ Bu işlemleri gerçekleştirirken aşağıdaki kurallara kesinlikle uy:
 
 ### 1. PDF Dönüştürme Kuralları
 - `altyazi_ozetleri/` klasörü altındaki her bir `.md` özet dosyasını (örneğin `ders_1_ozet.md`), kök dizinde aynı isimde bir `.pdf` dosyasına (örneğin `ders_1_ozet.pdf`) dönüştür.
-- Dönüştürme işlemi için sistemdeki `pandoc`, `libreoffice`, `weasyprint` gibi mevcut araçlardan birini kullan.
+- Dönüştürme işlemi için projede hazır bulunan `taslaklar/talimat_taslaklari/ozetleri_pdfe_donustur.py` betiğini kullan.
+- Komut, proje kök dizininden şu formatta çalıştırılmalıdır:
+
+```bash
+python3 taslaklar/talimat_taslaklari/ozetleri_pdfe_donustur.py "[Hedef Dizin]"
+```
+
+- PDF dosyalarını güncel olsalar bile yeniden üretmek gerekiyorsa `--force` bayrağı eklenmelidir:
+
+```bash
+python3 taslaklar/talimat_taslaklari/ozetleri_pdfe_donustur.py "[Hedef Dizin]" --force
+```
+
+- Betik arka planda `pandoc` kullanır; bu nedenle PDF üretimi öncesinde sistemde `pandoc` bulunduğunu kontrol et. Betik başarısız olursa hata çıktısını incele ve PDF üretimini tamamlamadan README güncellemesine geçme.
 
 ### 2. README.md Oluşturma ve Yapısal Kurallar
 - Kök dizine eklenecek `README.md` dosyası, ders ve dönemin genel bilgilerini, müfredatı ve her bir dersin detaylı özetlerini/kazanımlarını içermelidir.
