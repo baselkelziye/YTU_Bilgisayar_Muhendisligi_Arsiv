@@ -1,0 +1,4036 @@
+1
+00:00:41,359 --> 00:00:43,359
+Evet arkadaşlar hoş geldiniz.
+
+2
+00:00:45,359 --> 00:00:53,710
+İlk 5 dakika giremedim bilmiyorum siz girebildiniz mi sisteme?
+
+3
+00:00:53,710 --> 00:00:55,710
+Bizde de sorun oldu hocam, dilemedik.
+
+4
+00:00:55,710 --> 00:01:01,710
+Ben arkadaşlara yardırıyorum siz de bir bakın girebiliyor musunuz falan diye böyle bir küçük bir kalp krizi geçiriyordum.
+
+5
+00:01:01,710 --> 00:01:03,710
+Ama açıldı çok şükür ya.
+
+6
+00:01:03,710 --> 00:01:07,709
+Evet biz de gruptan bunu konuşuyorduk whatsapp'tan kimse giremiyor diye.
+
+7
+00:01:07,709 --> 00:01:43,390
+Biraz daha bekleyelim birkaç dakikada.
+
+8
+00:01:43,390 --> 00:04:11,930
+Evet biz başlayalım yeni gelenler de katılırlar.
+
+9
+00:04:12,930 --> 00:04:19,930
+Şimdi bu haftaki konumuz record cursor ve trigger tanımları olacak.
+
+10
+00:04:19,930 --> 00:04:22,930
+Bir geçen haftayı hatırlayalım.
+
+11
+00:04:22,930 --> 00:04:24,930
+Ne yapmıştık geçen hafta?
+
+12
+00:04:24,930 --> 00:04:26,930
+Fonksiyonlara giriş yapmıştık.
+
+13
+00:04:26,930 --> 00:04:28,930
+PRPG SQL fonksiyonuna.
+
+14
+00:04:28,930 --> 00:04:33,170
+Sentaksımız nasıldı?
+
+15
+00:04:33,170 --> 00:04:35,170
+Create ile başlıyorduk.
+
+16
+00:04:35,170 --> 00:04:38,170
+Creator Replace function demiştik.
+
+17
+00:04:38,170 --> 00:04:43,170
+Şu replace kullanmamızda ileride fonksiyon gövdesinde bir değişiklik yaparsak.
+
+18
+00:04:43,170 --> 00:04:46,170
+Fonksiyonu bir kere sadece create function dememiz.
+
+19
+00:04:46,170 --> 00:04:50,170
+Tekrar aynı fonksiyonu yaratamazsın diye bir hata döndürürdü.
+
+20
+00:04:50,170 --> 00:04:52,170
+Biz o yüzden replace de kullanmıyorduk.
+
+21
+00:04:52,170 --> 00:04:57,170
+Bir değişiklik yaptığında komple seçip çalıştırdığımızda tekrar çalışsalı güncellesin diye.
+
+22
+00:04:57,170 --> 00:04:59,170
+Fonksiyona bir isim veriyorduk.
+
+23
+00:04:59,170 --> 00:05:03,170
+Daha sonra fonksiyonların çeşitleri vardı.
+
+24
+00:05:03,170 --> 00:05:06,170
+Kimi fonksiyon kullanıcıdan parametre alırdı.
+
+25
+00:05:06,170 --> 00:05:08,170
+Yani bir parametre gönderedik fonksiyona.
+
+26
+00:05:08,170 --> 00:05:11,170
+O zaman parametre alıyorsa bu fonksiyon normal klasik.
+
+27
+00:05:11,170 --> 00:05:18,170
+Normal klasik bütün programlı modellerinde olduğu gibi şu parantezlerin içerisine gönderdiğimiz parametreleri yazıyorduk.
+
+28
+00:05:18,170 --> 00:05:20,170
+Burada demiştik bir fark şu.
+
+29
+00:05:20,170 --> 00:05:26,170
+Bizim normalde gördüğümüz programlı modellerinde önce tipini verir sonra değişken adını yazarız.
+
+30
+00:05:26,170 --> 00:05:28,170
+Burada tam tersi değişken adı sonra tipi yazıyoruz.
+
+31
+00:05:28,170 --> 00:05:31,170
+Bu şekilde parametreleri yazabiliyorduk.
+
+32
+00:05:31,170 --> 00:05:33,170
+Hatta wake özellik ne demiştik?
+
+33
+00:05:34,170 --> 00:05:46,170
+Dönüş değerini de şurada return kullanmadan, içeride return demeden bir virgül daha atıp aynı parantezin içerisine out deyip hangi değişiklerini döndürmek istiyoruz.
+
+34
+00:05:46,170 --> 00:05:47,170
+Onun tipi nedir?
+
+35
+00:05:47,170 --> 00:05:49,170
+Bunu da yazabiliyorduk.
+
+36
+00:05:49,170 --> 00:05:51,170
+Şimdi geçen hafta yaptığımız basit bir örnek.
+
+37
+00:05:51,170 --> 00:05:54,170
+Verilen iki sayının toplamını buluyordu bu fonksiyon.
+
+38
+00:05:54,170 --> 00:05:59,170
+Numara 1 numara 2 numara 1 numara 2 değişkenleri ben bunları göndereceğim ona.
+
+39
+00:06:00,170 --> 00:06:04,170
+Yine numarik tipte bir sonuç döndürmesi toplam sonucunu döndürmesi.
+
+40
+00:06:04,170 --> 00:06:08,170
+Out'u burada tanımlamadığım için parantez içinde ne diyordum?
+
+41
+00:06:08,170 --> 00:06:09,170
+Geleceğim.
+
+42
+00:06:09,170 --> 00:06:11,170
+Return'ı şuraya yazmam gerekecek.
+
+43
+00:06:11,170 --> 00:06:13,170
+Return tipi yazıyorum.
+
+44
+00:06:13,170 --> 00:06:17,170
+Ne tipinde bir dönüş istediğimi numarik dönsün.
+
+45
+00:06:17,170 --> 00:06:21,170
+As diyorum ve artık fonksiyonu yazmaya başlayacağım.
+
+46
+00:06:21,170 --> 00:06:23,170
+Şöyle bir tag atıyordum buraya.
+
+47
+00:06:23,170 --> 00:06:26,170
+Demiştik ya tek tırnak işareti koyardık.
+
+48
+00:06:26,170 --> 00:06:32,170
+Şimdi burası en başında bir de şurada en sonunda kapama gibi bir özellik olacak bana.
+
+49
+00:06:32,170 --> 00:06:36,170
+Ya da şöyle iki tane şu dolar işaretinden atıyorduk.
+
+50
+00:06:36,170 --> 00:06:41,170
+Şimdi burada benim fonksiyonumda içeride bir yerde bakan tek tırnak kullanmışım.
+
+51
+00:06:41,170 --> 00:06:48,170
+O yüzden buraya sadece tek tırnak koyup ben tek tırnakla açıp tek tırnakla kapamak bu fonksiyon içerisinde hata verecektir.
+
+52
+00:06:48,170 --> 00:06:53,170
+O yüzden bu dolar işaretini kullanmamız daha iyi olacak bizim için.
+
+53
+00:06:53,170 --> 00:06:55,170
+Burada dolar işaretlerini attım.
+
+54
+00:06:55,170 --> 00:06:58,170
+Sonra neydi bir dikler kısmı vardı.
+
+55
+00:06:58,170 --> 00:07:05,170
+Burada şu fonksiyonun begin ve end blokları bu begin ve end kelimeleri arasında yazacağım,
+
+56
+00:07:05,170 --> 00:07:10,170
+esas işleri yürütüleceğim bu kısımda kullanacağım değişkenleri burada tanımlıyordum.
+
+57
+00:07:10,170 --> 00:07:13,170
+Bunların özellikli tiplerini burada belirtiyordum.
+
+58
+00:07:13,170 --> 00:07:17,170
+İşte ben mesela burada toplam diye bir değişken kullanacakmışım.
+
+59
+00:07:17,170 --> 00:07:19,170
+O zaman bunu burada dikler etmem lazım.
+
+60
+00:07:19,170 --> 00:07:21,170
+Toplamın tipi numarik diyorum.
+
+61
+00:07:21,170 --> 00:07:25,170
+İstersen buna bir eşitil, değer, sıfır vesaire bir şey de atayabilirim.
+
+62
+00:07:25,170 --> 00:07:27,170
+Atamazsam da oluyor.
+
+63
+00:07:27,170 --> 00:07:33,170
+Daha sonrasında burada gerekli tanımlamaları yapıp yani burada kullanacağım bir değişkeni önce burada bir söyleyip
+
+64
+00:07:33,170 --> 00:07:37,170
+daha sonra begin ve end arasında istediğim işlemleri yapabiliyorum.
+
+65
+00:07:37,170 --> 00:07:39,170
+Burada toplama neyi eşitledim?
+
+66
+00:07:39,170 --> 00:07:43,170
+Bakın eşitlememizi şu şekilde num1 ve num2'nin toplamına.
+
+67
+00:07:43,170 --> 00:07:45,170
+Şunların num1 ve num2'nin toplamı.
+
+68
+00:07:45,170 --> 00:07:48,170
+Bu bizim tanımladığımız toplam değişkeni olacak.
+
+69
+00:07:48,170 --> 00:07:51,170
+Ve daha sonra da return, toplam diyeceğim.
+
+70
+00:07:51,170 --> 00:07:53,170
+Bir de burada şöyle bir ifade var.
+
+71
+00:07:53,170 --> 00:07:55,170
+Raise notice.
+
+72
+00:07:55,170 --> 00:07:58,170
+Bununla ben ekrana mesaj yazdırabiliyorum.
+
+73
+00:07:58,170 --> 00:08:03,170
+Şunu şu şeyden göstersem daha iyi olacak.
+
+74
+00:08:06,170 --> 00:08:08,170
+Evet, fonksiyonum bu.
+
+75
+00:08:08,170 --> 00:08:11,170
+Ben bunu oluşturdum.
+
+76
+00:08:11,170 --> 00:08:15,170
+Anlattığımız değil mi fonksiyon, toplam olan fonksiyon.
+
+77
+00:08:15,170 --> 00:08:20,170
+Şurada dedim ki bir mesaj yazdırma, mesaj döndürme ifadesi var.
+
+78
+00:08:23,170 --> 00:08:27,170
+Bunun olayı şimdi ben buraya bir değişken verip çalıştırayım.
+
+79
+00:08:27,170 --> 00:08:29,170
+Mesela şöyle örnek bir fonksiyonu.
+
+80
+00:08:29,170 --> 00:08:30,170
+Bu neydi?
+
+81
+00:08:30,170 --> 00:08:36,169
+İki tane parametresini verip çalıştırdığımda direkt sonuç olarak yazdı.
+
+82
+00:08:36,169 --> 00:08:41,169
+Şuradaki mesajlar kısmına da bakın orada raise ile döndürdüm.
+
+83
+00:08:41,169 --> 00:08:43,169
+Raise ile yazdım.
+
+84
+00:08:43,169 --> 00:08:45,169
+İfadeyi döndürdüm.
+
+85
+00:08:45,169 --> 00:08:48,169
+Ben ona notice falan bir şeyler demiştim.
+
+86
+00:08:48,169 --> 00:08:49,169
+Ne demişim ona?
+
+87
+00:08:49,169 --> 00:08:51,169
+Demişim sayı 1 eşittir.
+
+88
+00:08:51,169 --> 00:08:52,169
+Yüzdelik sayı 2 yüzdelik.
+
+89
+00:08:52,169 --> 00:08:56,169
+Yani burada gördüğüm, benim sana gönderdiğim o iki değeri al.
+
+90
+00:08:56,169 --> 00:08:57,169
+Buraya yazdır.
+
+91
+00:08:57,169 --> 00:08:59,169
+Num 1, num 2.
+
+92
+00:08:59,169 --> 00:09:03,169
+Bu şekilde biz ekrana bilgilendirme mesajları yazdırabiliyoruz.
+
+93
+00:09:03,169 --> 00:09:07,169
+Raise ifadesiyle yanına notice geliyor.
+
+94
+00:09:07,169 --> 00:09:11,169
+İşte çeşitlerine bakacağız şimdi onların.
+
+95
+00:09:13,169 --> 00:09:15,169
+Bilgilendirme hatamı.
+
+96
+00:09:15,169 --> 00:09:17,169
+Sen notice yazabiliyorum, exception yazabiliyorum.
+
+97
+00:09:17,169 --> 00:09:19,169
+Burada hata mesajı döndürür.
+
+98
+00:09:19,169 --> 00:09:20,169
+Error yazar.
+
+99
+00:09:20,169 --> 00:09:22,169
+Başka türleri var.
+
+100
+00:09:22,169 --> 00:09:24,169
+Info, warning vs.
+
+101
+00:09:24,169 --> 00:09:26,169
+Bunların hepsi şuraya yazdım.
+
+102
+00:09:26,169 --> 00:09:27,169
+Neyse.
+
+103
+00:09:27,169 --> 00:09:32,169
+Onun tipine mesela eğer bir exception olsa unutur.
+
+104
+00:09:32,169 --> 00:09:35,169
+O zaman error olarak döndürür bana buraya.
+
+105
+00:09:38,169 --> 00:09:40,169
+Mesaj derdi ne dedi?
+
+106
+00:09:40,169 --> 00:09:41,169
+Error olarak verdi.
+
+107
+00:09:41,169 --> 00:09:44,169
+Ben çünkü bunu exception mesajı olarak tanımladım.
+
+108
+00:09:44,169 --> 00:09:47,169
+Yani buraya ben info yazsam şu info 2. üst üste koyacak.
+
+109
+00:09:47,169 --> 00:09:49,169
+Warning yazsam warning diyecek vs.
+
+110
+00:09:49,169 --> 00:09:54,169
+Hiçbir şey yazmazsanız da default hali bunu yine exception olacak.
+
+111
+00:09:54,169 --> 00:09:58,169
+Yani yine error mesajı olarak bunu buraya döndürdüğünü göreceksiniz.
+
+112
+00:09:58,169 --> 00:09:59,169
+Bunu yine çalıştıralım.
+
+113
+00:09:59,169 --> 00:10:01,169
+Error olarak verdi.
+
+114
+00:10:01,169 --> 00:10:04,169
+Başka önemli info vs. bir şey yazsamız.
+
+115
+00:10:04,169 --> 00:10:07,169
+Info 2. üst üste gibi bir şey yazacaktı.
+
+116
+00:10:07,169 --> 00:10:15,179
+Bu şekilde bu ifademizi de kullanabiliyoruz.
+
+117
+00:10:15,179 --> 00:10:17,179
+Ekrana mesaj yazdırmak için.
+
+118
+00:10:17,179 --> 00:10:19,179
+Reis mesaj türü mesajımız.
+
+119
+00:10:19,179 --> 00:10:22,179
+Bu da bir özelliğimizdir SQL'deki.
+
+120
+00:10:22,179 --> 00:10:29,149
+Şimdi bu hafta göreceğimiz bir konu.
+
+121
+00:10:29,149 --> 00:10:32,149
+Yeni bir tür tanımlama.
+
+122
+00:10:32,149 --> 00:10:36,149
+Şimdi biz yaptığımız bu fonksiyon tanımlarında neydi?
+
+123
+00:10:36,149 --> 00:10:39,149
+İşte tek türde bir şey döndürüyorduk.
+
+124
+00:10:39,149 --> 00:10:40,149
+Return maaş diyorduk.
+
+125
+00:10:40,149 --> 00:10:44,149
+Return işte ne bileyim at vs.
+
+126
+00:10:44,149 --> 00:10:50,149
+Tek bir şey döndürüyorduk ama istediğimiz dönüşte birkaç tane veri bir arada olsun isteyebiliriz.
+
+127
+00:10:50,149 --> 00:10:53,149
+Yani adamın adını söyleyen maaşını döndür.
+
+128
+00:10:53,149 --> 00:11:00,149
+Tek bir return ifadesinde birçok değerin bulunmasını isteyebiliriz.
+
+129
+00:11:00,149 --> 00:11:03,149
+Bunun için de bir veri tipi tanımlıyoruz.
+
+130
+00:11:03,149 --> 00:11:05,149
+Yeni bir tip tanımlıyoruz aslında.
+
+131
+00:11:05,149 --> 00:11:07,149
+Sonunda record tanımlıyoruz demişiz.
+
+132
+00:11:07,149 --> 00:11:11,149
+Şimdi yeni bir tip tanımlarken olayımız şu.
+
+133
+00:11:11,149 --> 00:11:15,149
+Hani biz normalde mesela bir ifadeyi neydi?
+
+134
+00:11:15,149 --> 00:11:17,149
+Tipler donanıyor değil mi?
+
+135
+00:11:17,149 --> 00:11:19,149
+Şu fonksiyonunu açayım oradan bakalım.
+
+136
+00:11:19,149 --> 00:11:21,149
+Mesela bu da returns numarik dediğimde bu nedir?
+
+137
+00:11:21,149 --> 00:11:23,149
+Tek bir sayı değişikliğindir.
+
+138
+00:11:23,149 --> 00:11:29,149
+Ama ben öyle bir tip tanımlarım ki bunun içinde bir insanın adı sual ve maaşlı olan bir tipsleri bu.
+
+139
+00:11:29,149 --> 00:11:32,149
+O zaman ben returns o tipin adını veririm.
+
+140
+00:11:32,149 --> 00:11:34,149
+Bana return da bu sefer ne döndürür?
+
+141
+00:11:34,149 --> 00:11:36,149
+Ad sual ve maaş döndürür.
+
+142
+00:11:36,149 --> 00:11:40,149
+Böyle üç tane veriyi içine almış bir şekilde bir sonuç döndürebilir.
+
+143
+00:11:40,149 --> 00:11:44,149
+Onun için işte bu ifadeyi kullanıyoruz.
+
+144
+00:11:44,149 --> 00:11:46,149
+Great type diyoruz.
+
+145
+00:11:46,149 --> 00:11:48,149
+Yeni bir tür oluşturuyorum aslında.
+
+146
+00:11:48,149 --> 00:11:51,149
+Orada oluşturduğum türleri isim veriyorum.
+
+147
+00:11:51,149 --> 00:11:55,149
+Nasıl işte integer'dir, texter vesaire türler var.
+
+148
+00:11:55,149 --> 00:11:57,149
+Ben de kendi türümü istediğim bir ismi veriyorum.
+
+149
+00:11:57,149 --> 00:11:59,149
+As diyorum.
+
+150
+00:11:59,149 --> 00:12:04,149
+Ve daha sonra bunun barındıracağı diğer veriler neler?
+
+151
+00:12:04,149 --> 00:12:06,149
+Mesela örneğe bakalım.
+
+152
+00:12:06,149 --> 00:12:08,149
+Ürünler diye bir tip oluşturmuşum.
+
+153
+00:12:08,149 --> 00:12:10,149
+Great type ürünler.
+
+154
+00:12:10,149 --> 00:12:12,149
+Ez demişim.
+
+155
+00:12:12,149 --> 00:12:15,149
+İşte miktar bir integer, miktarı iki integer.
+
+156
+00:12:15,149 --> 00:12:20,149
+İki tane integer'ı barındıran bir tip olmuş ürünler tipi.
+
+157
+00:12:20,149 --> 00:12:24,149
+Ve ben bununla alakalı ve yeni bir değişken tanımlarken
+
+158
+00:12:24,149 --> 00:12:28,149
+normalde nasıl işte number bir integer diyorsam
+
+159
+00:12:28,149 --> 00:12:33,149
+depo benim tane olmak istediğim bir değişken onun tipi ne?
+
+160
+00:12:33,149 --> 00:12:35,149
+Ürünler.
+
+161
+00:12:35,149 --> 00:12:38,149
+Bu şekilde tip tanımladığım zaman
+
+162
+00:12:38,149 --> 00:12:41,149
+v tabanından o sorgu sonuçlarından direk
+
+163
+00:12:41,149 --> 00:12:44,149
+bir tipte döndürme imkanı oluyor.
+
+164
+00:12:44,149 --> 00:12:52,659
+Şimdi örneğimize geçmeden önce bir hatırlamak maksadıyla
+
+165
+00:12:52,659 --> 00:12:54,659
+bir yardımcı örneğimiz varmış.
+
+166
+00:12:54,659 --> 00:12:56,659
+Ne diyor?
+
+167
+00:12:56,659 --> 00:12:58,659
+SSL'nin verilen bir çalışan var.
+
+168
+00:12:58,659 --> 00:13:02,659
+Direkt buna xsql koduma yazdığımda bunun ismini
+
+169
+00:13:02,659 --> 00:13:06,659
+çalıştığı departmanın ismini ve maaşını nasıl buluyorduk hatırlayalım.
+
+170
+00:13:06,659 --> 00:13:10,659
+Employee ve Departman tablolarını kullanıyorduk.
+
+171
+00:13:10,659 --> 00:13:14,659
+Çalışanın SSL'nin verildiği zaman SSL'nin bu olan çalışanın
+
+172
+00:13:14,659 --> 00:13:17,659
+işte bu iki tabloyu birleştirdiği numberler üzerinden
+
+173
+00:13:17,659 --> 00:13:21,659
+ve nelerini çek, adını, departmanın adını ve maaşını çek.
+
+174
+00:13:21,659 --> 00:13:23,659
+Bunu hatırladık.
+
+175
+00:13:23,659 --> 00:13:25,659
+Böyle bulduğumuz bir sorgunuz bu.
+
+176
+00:13:26,659 --> 00:13:29,659
+Bakalım soru bizden ne istiyor?
+
+177
+00:13:29,659 --> 00:13:35,659
+Şimdi benden istediği fonksiyon da SSL'nin parametri olarak verilen
+
+178
+00:13:35,659 --> 00:13:39,659
+çalışanın ismini, çalıştığı departmanın ismini ve maaşını
+
+179
+00:13:39,659 --> 00:13:42,659
+ekrana yazdıran bloğu yazmamı istemiş.
+
+180
+00:13:42,659 --> 00:13:47,659
+Şimdi benden dönüş tipi, istediği şey dönüş ne?
+
+181
+00:13:47,659 --> 00:13:52,659
+Çalışanın ismi, departmanın ismi ve çalışanın maaşı.
+
+182
+00:13:52,659 --> 00:13:54,659
+Üç tane biri aynı anda istiyor.
+
+183
+00:13:54,659 --> 00:13:57,659
+O zaman ben diyorum ki bir tane tip tanımlıyım.
+
+184
+00:13:57,659 --> 00:14:00,659
+Yeni tur olsun bunun ismi.
+
+185
+00:14:00,659 --> 00:14:02,659
+Bunun içinde üç tane de erişken.
+
+186
+00:14:02,659 --> 00:14:04,659
+Ne bunlar?
+
+187
+00:14:04,659 --> 00:14:08,659
+İsim, kişinin ismini almakla alın.
+
+188
+00:14:08,659 --> 00:14:11,659
+Bu da diğeride departman ismi ve bir de maaş olsun.
+
+189
+00:14:11,659 --> 00:14:13,659
+Bunların tiplerini veriyorum.
+
+190
+00:14:13,659 --> 00:14:14,659
+Ne tipte olduklarında?
+
+191
+00:14:14,659 --> 00:14:16,659
+Yazıyorum yanlarına.
+
+192
+00:14:16,659 --> 00:14:19,659
+Bu şekilde ben yeni bir tip tanımladım.
+
+193
+00:14:19,659 --> 00:14:21,659
+Şimdi fonksiyonumu yazarken,
+
+194
+00:14:21,659 --> 00:14:24,659
+dikkat et iseniz bu create tip yani yeni bir tip tanımlama
+
+195
+00:14:24,659 --> 00:14:27,659
+fonksiyonun içinde olan bir şey değil.
+
+196
+00:14:27,659 --> 00:14:29,659
+Fonksiyon bloğunun dışında yaptığım bir işlem.
+
+197
+00:14:29,659 --> 00:14:32,659
+Yani bunu farklı fonksiyonlar içinde kullanabilirim.
+
+198
+00:14:32,659 --> 00:14:35,659
+Create Type deyip tipimi tanımladıktan sonra şimdi
+
+199
+00:14:35,659 --> 00:14:37,659
+sırada fonksiyonu yazmaya geldi.
+
+200
+00:14:37,659 --> 00:14:40,659
+Fonksiyon parametri olarak ne alacak?
+
+201
+00:14:40,659 --> 00:14:43,659
+Çalışanın SSL'ni alacak.
+
+202
+00:14:43,659 --> 00:14:47,659
+O zaman diyorum ki bu ino gibi bir değişken ismi olsun.
+
+203
+00:14:47,659 --> 00:14:50,659
+Tipi de, hatırlarsanız işte Integer numelik eser vermek yerine
+
+204
+00:14:50,659 --> 00:14:52,659
+şöyle de bir şekilde yazabiliyorduk.
+
+205
+00:14:52,659 --> 00:14:56,659
+Yani o süt, o tablodaki ilgili sütünün tipini al.
+
+206
+00:14:56,659 --> 00:14:58,659
+Böyle bir tip tanımamız vardı.
+
+207
+00:14:58,659 --> 00:15:00,659
+Tipini bilmediğimiz, emin olmadığımız durumlarda
+
+208
+00:15:00,659 --> 00:15:03,659
+bu şekilde yazmamız çok da faydalı oluyordu.
+
+209
+00:15:03,659 --> 00:15:06,659
+Ve taban onu kendisi otomatik bir şekilde dönüştürüyordu
+
+210
+00:15:06,659 --> 00:15:08,659
+ona tipi neyse.
+
+211
+00:15:08,659 --> 00:15:10,659
+Dedim Creatorless Function.
+
+212
+00:15:10,659 --> 00:15:12,659
+Fonksiyonumun adını verdim.
+
+213
+00:15:12,659 --> 00:15:15,659
+Parametre Kulancı'dan gelecek SSL.
+
+214
+00:15:15,659 --> 00:15:18,659
+Ve bunun bakım dönüş tipi ne artık?
+
+215
+00:15:18,659 --> 00:15:20,659
+Yeni tür.
+
+216
+00:15:20,659 --> 00:15:24,659
+Şurada tanımladığım yeni türden bir değişken dönecek.
+
+217
+00:15:24,659 --> 00:15:27,659
+O zaman bunu geleyim, şurada bir deklar edeyim.
+
+218
+00:15:27,659 --> 00:15:31,659
+Diyeyim ki, bilgi diye bir sonuç değişkenim var benim.
+
+219
+00:15:31,659 --> 00:15:33,659
+Onun tipi işte yeni tür.
+
+220
+00:15:33,659 --> 00:15:36,659
+Aynı, demin dediğim gibi bu Integer tanımlama numelik
+
+221
+00:15:36,659 --> 00:15:38,659
+döndürme mantığıyla aynı.
+
+222
+00:15:38,659 --> 00:15:41,659
+Tanımladığım tür neyse, onun adını veriyorum.
+
+223
+00:15:41,659 --> 00:15:43,659
+Benim bilgi diye bir sonuç değişkenim olacak
+
+224
+00:15:43,659 --> 00:15:45,659
+ve o yeni tür tipinde.
+
+225
+00:15:45,659 --> 00:15:48,659
+O zaman Beggin ve Ent arasında şimdi neler yazmışım?
+
+226
+00:15:48,659 --> 00:15:50,659
+Ona bakıyorum.
+
+227
+00:15:50,659 --> 00:15:54,659
+Sorgumuz, demin de bahsettiğimiz gibi neydi?
+
+228
+00:15:54,659 --> 00:15:56,659
+Kulancıdan SSL alacak.
+
+229
+00:15:56,659 --> 00:15:59,659
+Bir kere kullanacağım tablolar hangileri?
+
+230
+00:15:59,659 --> 00:16:01,659
+Employee ve Department'tı.
+
+231
+00:16:01,659 --> 00:16:04,659
+Yeniolar üzerinden bunları join'ladım.
+
+232
+00:16:04,659 --> 00:16:07,659
+Daha sonra şartı sağlayan kaydı elde etmem lazım.
+
+233
+00:16:07,659 --> 00:16:11,659
+İşte, Employee'deki SSL'ni benim göndermiş olduğum
+
+234
+00:16:11,659 --> 00:16:14,659
+fonksiyonun gönderdiği iğne oya eşit olan kaydın.
+
+235
+00:16:14,659 --> 00:16:16,659
+Git neyini al?
+
+236
+00:16:16,659 --> 00:16:19,659
+Et name'ini, dname'ini ve salarisini.
+
+237
+00:16:19,659 --> 00:16:21,659
+Neyi ata?
+
+238
+00:16:21,659 --> 00:16:23,659
+İşte o, bilgi türünü ata.
+
+239
+00:16:23,659 --> 00:16:26,659
+Çünkü bilgi dediğim şey artık 3 tane değişken tutabilir bir tür.
+
+240
+00:16:26,659 --> 00:16:29,659
+Öyle tanımlanmış bir tür.
+
+241
+00:16:29,659 --> 00:16:32,659
+En sonunda da zaten ne yapacağım?
+
+242
+00:16:32,659 --> 00:16:35,659
+Bilgiyi return etmiş olacağım.
+
+243
+00:16:35,659 --> 00:16:37,659
+Orayı bir de Razenote iste.
+
+244
+00:16:37,659 --> 00:16:39,659
+Ekranında bir bilgi yazdırmışız.
+
+245
+00:16:39,659 --> 00:16:41,659
+Nasıl yazdırıyormuşuz bakalım onu da.
+
+246
+00:16:41,659 --> 00:16:46,659
+Şuraya işte isim şudur budur yüzdelik işaretler atıp
+
+247
+00:16:46,659 --> 00:16:49,659
+utanak işaretlerini kapadığımız zaman
+
+248
+00:16:49,659 --> 00:16:52,659
+bundan sonra sırayla buralara neler atayacağımı
+
+249
+00:16:52,659 --> 00:16:54,659
+şurada yazıyorum.
+
+250
+00:16:54,659 --> 00:16:56,659
+Bilginin isim değişkenini buraya koy.
+
+251
+00:16:56,659 --> 00:16:58,659
+Dep isim değişkenini buraya.
+
+252
+00:16:58,659 --> 00:17:03,659
+Maaş kısmını şuraya koy anlamında bir de
+
+253
+00:17:03,659 --> 00:17:05,660
+bilgilendirme mesajı dondurmuşum.
+
+254
+00:17:05,660 --> 00:17:13,690
+Çağırmak istediğimde ne yapıyorum?
+
+255
+00:17:14,690 --> 00:17:18,690
+Select fonksiyon adı ve bir parametre gönderiyorum.
+
+256
+00:17:18,690 --> 00:17:20,690
+Ona bir SSN gönderiyorum.
+
+257
+00:17:20,690 --> 00:17:23,690
+Fonksiyonu silmek istersen ne yapıyordum?
+
+258
+00:17:23,690 --> 00:17:27,690
+Drop function fonksiyonun adı.
+
+259
+00:17:27,690 --> 00:17:33,690
+Ve o fonksiyonun parametresini tipi aldı parametrenin tipini buraya yazıyordu.
+
+260
+00:17:33,690 --> 00:17:36,690
+Bu şekilde de silme işlemini yapabiliyoruz.
+
+261
+00:17:36,690 --> 00:17:45,019
+Evet, record tanımımız bu şekildeydi.
+
+262
+00:17:45,019 --> 00:17:46,019
+Gösterelim.
+
+263
+00:17:46,019 --> 00:17:48,019
+Tipi tanımladık.
+
+264
+00:17:48,019 --> 00:17:57,900
+Ve öyle şekilde atamamızı yaptık.
+
+265
+00:17:57,900 --> 00:18:01,900
+Bir diğer öğreneceğimiz kavramda cursor kavramı olacak.
+
+266
+00:18:01,900 --> 00:18:03,900
+Cursor kullanımı.
+
+267
+00:18:03,900 --> 00:18:08,900
+Şimdi biz sonuçlarımız da diyelim ki bir tablo dönüyor.
+
+268
+00:18:08,900 --> 00:18:14,900
+Ve ben bu tablonun satırlarını okuyarak bir takım işlemler yapmak istiyorum.
+
+269
+00:18:14,900 --> 00:18:18,900
+Belki bu tablonun satırlarındaki o verilerin işte
+
+270
+00:18:18,900 --> 00:18:22,900
+buna alakalı çeşitli fonksiyonlar, sorgular olabilir.
+
+271
+00:18:22,900 --> 00:18:25,900
+O her bir satırdaki bilmem ne değişiklerine üstünden git.
+
+272
+00:18:25,900 --> 00:18:27,900
+Onun değil, şundan küçük mü büyük mü.
+
+273
+00:18:27,900 --> 00:18:32,900
+Tek tek satırları böyle okumak istiyorsam burada bir cursor ifadesi kullanıyorum.
+
+274
+00:18:32,900 --> 00:18:42,900
+Bundan oluşturulması cursor'ın adını verip cursor for deyip sonra query, sorguyu yazmak şeklinde oluyor.
+
+275
+00:18:42,900 --> 00:18:46,900
+Örnek üzerinde görelim daha açıklayıcı olacak o.
+
+276
+00:18:46,900 --> 00:18:50,900
+Şimdi istediği benden ne sorunun bakalım.
+
+277
+00:18:50,900 --> 00:18:52,900
+Bana bir departman numarası verecekmiş.
+
+278
+00:18:52,900 --> 00:18:55,900
+Parametres departman numarası.
+
+279
+00:18:55,900 --> 00:18:58,900
+Burada çalışan kişilerin isimlerini istiyor benden.
+
+280
+00:18:58,900 --> 00:19:00,900
+At, soyat istiyor.
+
+281
+00:19:00,900 --> 00:19:07,900
+Ve bunu da ekrana bir raise info şeklinde böyle mesaj olarak yazdırmamı istiyor.
+
+282
+00:19:07,900 --> 00:19:10,900
+Şimdi ne yapacağım?
+
+283
+00:19:10,900 --> 00:19:12,900
+Fonksiyonumu oluşturdum.
+
+284
+00:19:12,900 --> 00:19:14,900
+Parametresi dinam.
+
+285
+00:19:14,900 --> 00:19:17,900
+Ona bir departman numarası gönderecek.
+
+286
+00:19:17,900 --> 00:19:26,900
+Sonrasında fonksiyonun output olan bir şey göndermesini mesaj olarak göndermesini isteyeceğim burada.
+
+287
+00:19:26,900 --> 00:19:29,900
+Declare'de cursor'ımı tanımlıyorum.
+
+288
+00:19:29,900 --> 00:19:30,900
+Cursor'un tanımlanması.
+
+289
+00:19:30,900 --> 00:19:33,900
+Şimdi ben gelecek bana bir sorgu sonucunda bir tablo gelecek.
+
+290
+00:19:33,900 --> 00:19:35,900
+Tek tek dedim ben bunu cursor'ımla okuyacağım.
+
+291
+00:19:35,900 --> 00:19:37,900
+O imlecime tek tek satırlara bakacağım.
+
+292
+00:19:37,900 --> 00:19:40,900
+Bunun tanımını declare kısmında yapacağım.
+
+293
+00:19:40,900 --> 00:19:43,900
+Burada cursor'ıma bir isim verdim.
+
+294
+00:19:43,900 --> 00:19:45,900
+Yeni cursor.
+
+295
+00:19:45,900 --> 00:19:49,900
+Daha sonra yazış şeklimi sen taksın bu.
+
+296
+00:19:49,900 --> 00:19:51,900
+Cursor for diyorum.
+
+297
+00:19:51,900 --> 00:20:00,900
+Ve hangi tablo oluşacak, hangi tablo için bu cursor'ı oluşturduğumu o sorguyu buraya yazıyorum.
+
+298
+00:20:00,900 --> 00:20:05,900
+Şuradan dönecek sonuçlar içinden bir cursor oluşturdum.
+
+299
+00:20:05,900 --> 00:20:12,900
+Yani şununla oluşturduğum bu cursor ile şuradan dönecek sonuçları satır satır okuyabileceğim.
+
+300
+00:20:12,900 --> 00:20:15,900
+Şimdi buradan dönecek sonuç nasıl bir sonuç?
+
+301
+00:20:15,900 --> 00:20:19,900
+İki tane stuna olan tek tablo employ'ı kullanıyorum.
+
+302
+00:20:19,900 --> 00:20:27,900
+Verdiğim dinham'ın dinham'da bulunan kayıtlı kişilerin ad ve soy adı olacak.
+
+303
+00:20:27,900 --> 00:20:30,900
+Sıra sıra satır satır bir tablo geliyor.
+
+304
+00:20:30,900 --> 00:20:32,900
+Bunu şimdi ben okuyabilirim.
+
+305
+00:20:32,900 --> 00:20:35,900
+Tek tek okuyup o kişilerin adlarını ekrana yazdırabilirim.
+
+306
+00:20:35,900 --> 00:20:38,900
+Bunu da begini ent arasında şu şekilde yapıyorum.
+
+307
+00:20:39,900 --> 00:20:46,900
+Bir kere cursor'ı fordöng üstüne sokmam gerekiyor ki tek tek sıra sıra insin okusun satırları.
+
+308
+00:20:46,900 --> 00:20:51,900
+Bunun için for diyorum satır diyorum.
+
+309
+00:20:51,900 --> 00:20:55,900
+Bu fordöng üstündeki imlecimiz gibi düşünün satır.
+
+310
+00:20:55,900 --> 00:21:03,900
+Nereden? Yeni cursor dediğim bu cursordan artık şu tabloyu tek tek okuyacağım bu satırla.
+
+311
+00:21:03,900 --> 00:21:06,900
+Ne yaptım? Loop diyordum fordöng üstünde loop kullanıyorduk.
+
+312
+00:21:06,900 --> 00:21:14,900
+Daha sonra loop dedim aşağıya şimdi her bir loopta her bir döngü yapacağı işleme yazdım.
+
+313
+00:21:14,900 --> 00:21:16,900
+Ne yapsın?
+
+314
+00:21:16,900 --> 00:21:24,900
+Bana mesaj olarak employ'nin adını, çünkü % adı yer % işaretiyle de soy adımı bana yazdırırsın.
+
+315
+00:21:24,900 --> 00:21:26,900
+Her bir satırı oku.
+
+316
+00:21:26,900 --> 00:21:28,900
+Loop cursor gibi bir tablo var.
+
+317
+00:21:28,900 --> 00:21:34,900
+Bu satırda eşkilenen oku bunları ve ekrana mesaj olarak yazdır demiş oluyor.
+
+318
+00:21:34,900 --> 00:21:42,900
+Şu adı tanımlaması, fonksiyonu çağrılması, classic, select deyip fonksiyon adı verip parametre gönderme,
+
+319
+00:21:42,900 --> 00:21:49,900
+silinmesi de drop function deyip fonksiyon adını verip parametre tipini yazma şeklinde oluyor.
+
+320
+00:21:49,900 --> 00:22:00,059
+Böyle sıra sıra cursor ifademle okuyup inceleyebiliyor.
+
+321
+00:22:00,059 --> 00:22:04,059
+Burada siz birden fazla üstüne olan bir tablo da döndürmüş olabilirsiniz.
+
+322
+00:22:04,059 --> 00:22:07,059
+Bunlar hakkında daha karmaşık işlemler yapıyor olabilirsiniz.
+
+323
+00:22:07,059 --> 00:22:10,059
+Mesela her birinin maaşlarını da döndürdük diyelim.
+
+324
+00:22:10,059 --> 00:22:16,059
+O zaman dersiniz ki satır nokta maaş, mesela bu da farklı şeyler yazılabilir.
+
+325
+00:22:16,059 --> 00:22:22,059
+If satır nokta maaşı şundan küçük olanları listeli vs. gibi böyle çeşitli koşullar olabilir.
+
+326
+00:22:22,059 --> 00:22:27,059
+Bunların hepsine o satır nokta hangi de eşkili istiyorsam yazıp,
+
+327
+00:22:27,059 --> 00:22:35,059
+ilgili koşulları sağlıyor mu, sağlamıyor mu, hatta çeşitli update işlemlerini bile burada gerçekleştirebilirsiniz bu şekilde.
+
+328
+00:22:35,059 --> 00:22:44,450
+Şimdi diğer örneğimize bakalım.
+
+329
+00:22:44,450 --> 00:22:47,450
+Burada da yine bir cursor kullanacağız.
+
+330
+00:22:47,450 --> 00:22:54,450
+Bu sefer bizden ne istiyor? Departmanlı çalışanların toplam maaşını istiyor.
+
+331
+00:22:54,450 --> 00:22:56,450
+Departmanlı numarası verecek yine.
+
+332
+00:22:56,450 --> 00:23:02,450
+Toplam maaşı bulmamızı isteyecek ama, sum fonksiyonu kullanmadan bunu yap diyor.
+
+333
+00:23:02,450 --> 00:23:08,450
+Bunun için de biz normalde sum fonksiyonu da ne yapıyorduk?
+
+334
+00:23:08,450 --> 00:23:23,450
+Direkt select derdik, sum saları derdik, from employee derdik, ver ne derdik, reyna olsa işte senin gönderdiğin reyna ama eşit olanları bulurum ve toplam maaşı bulurum.
+
+335
+00:23:23,450 --> 00:23:28,450
+Ama şimdi bunu sum kullanmayalım, bir değişken bulalım, toplam maaş değişkeni.
+
+336
+00:23:28,450 --> 00:23:32,450
+Bunu atayarak yapalım desek nasıl yapıyormuşuz?
+
+337
+00:23:32,450 --> 00:23:36,450
+Fonksiyonumu oluşturdum parametrede inan.
+
+338
+00:23:36,450 --> 00:23:41,450
+Bu dönüşü numerik tüpte olacak çünkü toplam bir maaş buluyorum, sayısal bir değer dönüşsünü istiyorum.
+
+339
+00:23:41,450 --> 00:23:49,450
+Click layer kısmında fonksiyonu sonucu döndüreceğim, toplam maaş değişkenini tanımladım numerik olarak.
+
+340
+00:23:49,450 --> 00:23:55,450
+Ondan sonra şöyle bir mantı var bu yazılmış fonksiyonu.
+
+341
+00:23:55,450 --> 00:24:02,450
+Ben şöyle bir tablo bulayım, ilgili departmanda çalışanların maaşlarının istelendiği böyle alta alta.
+
+342
+00:24:02,450 --> 00:24:13,450
+Bundaki her bir salariye, toplam maaşı ataya ataya sıra sıra her bir döndüğün her bir evresinde buraya ataya ataya toplam maaşı da biriktireyim bunları toplayıp salarileri.
+
+343
+00:24:13,450 --> 00:24:20,450
+O yüzden begging de, şurada oluşturduğum cursor'ın sonucunda çıkan tabloda ne yapıyorum?
+
+344
+00:24:20,450 --> 00:24:24,450
+Toplam maaş sıfır demişim, sonrasında ne yapacağım?
+
+345
+00:24:24,450 --> 00:24:33,450
+Before döngüsüyle yine for satır diyorum satır her bir döngüdeki benim hangi satırı gösteriyorsam olacak.
+
+346
+00:24:33,450 --> 00:24:38,450
+Şu tanımladığım cursor'ın içerisinde gezecek loop'a girdim.
+
+347
+00:24:38,450 --> 00:24:52,450
+O toplam maaş değişkenine her bir döngüde toplam maaşın o hangi değeri artı o aksi satırdaki saları değerini al ve ata.
+
+348
+00:24:52,450 --> 00:25:02,450
+Bu şekilde cursor'ı bitene kadar, oluşturduğum tablo bitene kadar satır satır toplayıp toplayıp atayacak toplam maaşı.
+
+349
+00:25:02,450 --> 00:25:10,450
+En son bittiği zaman buradaki satırların okuması, döngüden çıkıp return'de bana ne istiyorum?
+
+350
+00:25:10,450 --> 00:25:15,430
+Toplam maaşı döndürmesini istiyorum.
+
+351
+00:25:15,430 --> 00:25:19,640
+Bu da böyle bir örnek.
+
+352
+00:25:19,640 --> 00:25:27,640
+Çağırırken yine departman numarası verip düşürürken de parametre tipini verip düşürüyorum, siliyorum fonksiyonu.
+
+353
+00:25:27,640 --> 00:25:32,369
+Dedikleri kısmında tanımlıyoruz cursor'ı.
+
+354
+00:25:32,369 --> 00:25:35,369
+Bir tablo oluşuyor.
+
+355
+00:25:35,369 --> 00:25:39,369
+Bu tabloyu satır satır okumamı sağlıyor cursor oluşturmak.
+
+356
+00:25:39,369 --> 00:25:47,369
+Sonra bir for döngüsünde tek tek o satırları inceliyorum ve ilgili işlemi gerçekleştirebiliyorum.
+
+357
+00:25:47,369 --> 00:25:49,369
+Burada da toplam maaşı dedik.
+
+358
+00:25:49,369 --> 00:25:57,369
+Her bir satırda toplam maaşın o hangi değeri artı okumakta olduğu maaş değerini atayarak döngüyü tamamlamış oluyor.
+
+359
+00:25:57,369 --> 00:26:11,420
+Bu örneğimiz de bu şekildeydi.
+
+360
+00:26:11,420 --> 00:26:16,420
+Bu örneğin return ile değil de out ile demiş olsaydık.
+
+361
+00:26:16,420 --> 00:26:18,420
+Out'un olayı neydi?
+
+362
+00:26:18,420 --> 00:26:22,420
+Bizi return yazma zahmetinden kurtarmasıydı.
+
+363
+00:26:22,420 --> 00:26:29,420
+Bakın bir öncekinde burayı sadece out yazmamıştık, depart numarayı verip kapamıştık.
+
+364
+00:26:29,420 --> 00:26:30,420
+O zaman neydi?
+
+365
+00:26:30,420 --> 00:26:32,420
+Şuraya returns numarik yazmıştık.
+
+366
+00:26:32,420 --> 00:26:38,420
+Declare kısmında yine neyi döndüreceksen onu tanımlamıştım.
+
+367
+00:26:38,420 --> 00:26:41,420
+O toplam değişkenini tanımlamıştım hatırlayamam.
+
+368
+00:26:41,420 --> 00:26:44,420
+Şurada toplam tanımlamış ve en sonunda don'u return etmemiştim.
+
+369
+00:26:44,420 --> 00:26:46,420
+Don'u yapmadım.
+
+370
+00:26:46,420 --> 00:26:52,420
+Çünkü direkt ona dedim ki samsal isimli bir değişken var toplam salari manasında.
+
+371
+00:26:52,420 --> 00:26:55,420
+Bunu out edeceksin ve bunun tipi numarik.
+
+372
+00:26:55,420 --> 00:27:03,420
+Bunu yazdığım an o hangi tipte bir değişken dönecek ve içeride kullanacağı hangi değişkeni döndüreceğini anlamış oluyor.
+
+373
+00:27:03,420 --> 00:27:11,420
+O yüzden ben buraya bakın salari dediğimi bir daha return etmeme gerek kalmamış fonksiyonun sonunda.
+
+374
+00:27:11,420 --> 00:27:13,420
+Çünkü onu burada en başta belirtmişim.
+
+375
+00:27:13,420 --> 00:27:16,420
+Bunun son değerini bana out et döndür diye.
+
+376
+00:27:16,420 --> 00:27:22,420
+O yüzden diğer bütün tanımlamalarımı bu şekilde büyük değerimi de verip.
+
+377
+00:27:22,420 --> 00:27:31,420
+Daha sonrasında da aynen cursor'ımı tanımladığım burada en pre-recorded'im site satır.
+
+378
+00:27:31,420 --> 00:27:33,420
+Hangi satırdı o an for döngüsü?
+
+379
+00:27:33,420 --> 00:27:39,420
+O satırdaki maaşı al toplam değere koy ve en son buna at.
+
+380
+00:27:39,420 --> 00:27:44,420
+Bu şekilde yazdığımda bakın return kullanmama gerek kalmamış.
+
+381
+00:27:44,420 --> 00:27:51,220
+Şurada bakın buraya eklemişiz.
+
+382
+00:27:52,220 --> 00:27:56,220
+Eğer sun fonksiyonu kullansaydık yazıyorduk.
+
+383
+00:27:56,220 --> 00:28:00,220
+Bu şekilde aggregate function'larımızı da kolayca da yazabiliyorduk.
+
+384
+00:28:00,220 --> 00:28:11,839
+Evet şimdi bu örneğimizde ne istiyormuş bakalım.
+
+385
+00:28:11,839 --> 00:28:16,250
+Numarası verilen bir proje var.
+
+386
+00:28:16,250 --> 00:28:27,559
+Burada çalışanların maaşı verilen değere tam bölünüyorsa o kişilerin adının soyadını ve maaşını yaz.
+
+387
+00:28:27,559 --> 00:28:32,559
+Having kullanma yani biraz döngülere sokacak bizi bu durumda.
+
+388
+00:28:32,559 --> 00:28:39,559
+Şimdi fonksiyonumun bana göndereceği parametreler ne?
+
+389
+00:28:39,559 --> 00:28:44,559
+Bir proje numarası numarası verilen bir proje diyor.
+
+390
+00:28:44,559 --> 00:28:47,559
+Bir proje numarası alacağım parametre olarak.
+
+391
+00:28:47,559 --> 00:28:50,559
+Bir de bir bölen değeri alacağım.
+
+392
+00:28:50,559 --> 00:28:52,559
+Yapmak istediğim mantık şu.
+
+393
+00:28:52,559 --> 00:28:58,420
+Bak son tablosu var ya da proje numaraları vardı.
+
+394
+00:28:58,420 --> 00:29:08,420
+Gidecek buraya bakacak şu numaralı projede çalışan kişiler onların maaşları gelecek burada o kişilerin maaşlarına bakacak.
+
+395
+00:29:08,420 --> 00:29:13,420
+Verdiğim bir de ona bir değer vereceğim işte 10 20 30 ya neyse.
+
+396
+00:29:13,420 --> 00:29:15,420
+O değere tam bölünüyor mu bölünmüyor mu?
+
+397
+00:29:15,420 --> 00:29:19,420
+Eğer bölünüyorsa verdiğimde tam bölünüyorsa bunu yazdır.
+
+398
+00:29:19,420 --> 00:29:24,210
+Böyle bir pozisyon var.
+
+399
+00:29:24,210 --> 00:29:27,210
+Ve bu kişilerin ad-soyad maaş bilgisini istiyorum.
+
+400
+00:29:27,210 --> 00:29:32,210
+Şimdi döndüreceğim şey ad-soyad maaş bilgisi olunca bunu bir tipte gösterebilirim.
+
+401
+00:29:32,210 --> 00:29:35,210
+Önce tipimi bir oluştireyim.
+
+402
+00:29:35,210 --> 00:29:41,210
+Şu satıda bakın ad-soyad ve maaş değişkenlerinin olduğu bir type oluşturmuşum.
+
+403
+00:29:41,210 --> 00:29:44,210
+Tipin ismini de çalışan demişim.
+
+404
+00:29:45,210 --> 00:29:47,210
+İçinde işte isim var.
+
+405
+00:29:47,210 --> 00:29:48,210
+Türü var çağır.
+
+406
+00:29:48,210 --> 00:29:49,210
+Soy isim olacak.
+
+407
+00:29:49,210 --> 00:29:50,210
+Türü var çağır.
+
+408
+00:29:50,210 --> 00:29:51,210
+Maaş olacak.
+
+409
+00:29:51,210 --> 00:29:52,210
+Türü intedir.
+
+410
+00:29:52,210 --> 00:29:54,210
+Tipimi oluşturdum bu tipte istiyorum.
+
+411
+00:29:54,210 --> 00:29:57,210
+Sonra geldim fonksiyonu yazmaya.
+
+412
+00:29:57,210 --> 00:30:01,210
+Fonksiyonu create ettim bir isim verdim.
+
+413
+00:30:01,210 --> 00:30:04,210
+Daha sonra parametrelerini yazdım.
+
+414
+00:30:04,210 --> 00:30:08,210
+Proje numarası ve bölen değeri alacak bir sayısal değer daha alacak.
+
+415
+00:30:08,210 --> 00:30:12,210
+O da maaşı bölüp bölümediğini kontrol edecektik.
+
+416
+00:30:12,210 --> 00:30:16,210
+Return'de şimdi bir dizi döndürmesini isteyeceğim.
+
+417
+00:30:16,210 --> 00:30:21,460
+Çalışan tipinde verileri tutan bir dizi olacak.
+
+418
+00:30:21,460 --> 00:30:25,460
+Çünkü tek bir çalışan dönmeyecek.
+
+419
+00:30:25,460 --> 00:30:28,460
+Bu da birkaç tane çalışan olabilir.
+
+420
+00:30:28,460 --> 00:30:34,460
+O yüzden bunları böyle şu bir tanesi tek bir değer birbirleri ikinci bir değer
+
+421
+00:30:34,460 --> 00:30:39,460
+şeklinde diziye atlayarak bana böyle göstermesini istiyorsam o tipten verilerin
+
+422
+00:30:39,460 --> 00:30:42,460
+tutulduğu diziyi bu şekilde tanımlayabiliyorum.
+
+423
+00:30:43,460 --> 00:30:45,460
+Return's çalışan dedim.
+
+424
+00:30:45,460 --> 00:30:46,460
+As dedim.
+
+425
+00:30:46,460 --> 00:30:47,460
+Açtım.
+
+426
+00:30:48,460 --> 00:30:49,460
+Blow'umu.
+
+427
+00:30:49,460 --> 00:30:51,460
+Şimdi yazmaya başlıyorum.
+
+428
+00:30:52,460 --> 00:30:54,460
+Önce bir tanımlama yapacağım.
+
+429
+00:30:54,460 --> 00:30:58,460
+Burada yine bekler kısmında bir cursor oluşturmak istemişiz.
+
+430
+00:30:58,460 --> 00:31:00,460
+Çünkü niye?
+
+431
+00:31:00,460 --> 00:31:05,460
+Önce ben insanları o verdiği projede çalışan insanları bir listeleyeceğim.
+
+432
+00:31:05,460 --> 00:31:07,460
+Onların maaşlarını bir listeleyeceğim.
+
+433
+00:31:07,460 --> 00:31:10,460
+Sonra da cursor yard'ı mail'ın bir for döngüsüne sokup
+
+434
+00:31:10,460 --> 00:31:16,460
+tek tek o maaşların verdiği o değere şu bölen değerinin tam bölünüp bölünmediğinin
+
+435
+00:31:16,460 --> 00:31:17,460
+kontrolünü yapacağım.
+
+436
+00:31:17,460 --> 00:31:21,460
+Eğer bölünmüşse şu araya atacağım o diziye atacağım.
+
+437
+00:31:21,460 --> 00:31:22,460
+Tamam edeceğim.
+
+438
+00:31:22,460 --> 00:31:23,460
+Bu kayıt alınabilir.
+
+439
+00:31:23,460 --> 00:31:26,460
+Eğer bölünmüyorsa o kayıtı almayacağım.
+
+440
+00:31:26,460 --> 00:31:28,460
+Bunun için bir tane cursor tanımlamışım.
+
+441
+00:31:28,460 --> 00:31:32,460
+Amp cursor şeklinde bir isim vermişim buna.
+
+442
+00:31:32,460 --> 00:31:38,460
+Cursor for select ve şuradan artık istediğim sorgu.
+
+443
+00:31:39,460 --> 00:31:41,460
+Dönmesini istediğim tabloyu yazdım.
+
+444
+00:31:41,460 --> 00:31:43,460
+Nasıl bir tablo istiyoruz?
+
+445
+00:31:43,460 --> 00:31:47,460
+Dedik ki bana verdiğim proje numarası var.
+
+446
+00:31:47,460 --> 00:31:52,460
+Şu pin ama onu onunla aynı olan proje numaralarını al.
+
+447
+00:31:52,460 --> 00:31:58,460
+Şu iki tabloyu en play ve work sonu SSN'ler üzerinden hatırlayalım.
+
+448
+00:31:58,460 --> 00:31:59,460
+Eşleniyordu.
+
+449
+00:31:59,460 --> 00:32:01,460
+Bu iki tablunu nasıl bir böyeğini verdim.
+
+450
+00:32:01,460 --> 00:32:03,460
+Şu ortak alanlar.
+
+451
+00:32:04,460 --> 00:32:09,460
+Bu ikisini eşitleyerek o ikisi de eşit olanları al.
+
+452
+00:32:09,460 --> 00:32:13,460
+Neleri çek bu tablodaki fname last name salarıyı çek.
+
+453
+00:32:13,460 --> 00:32:16,460
+Şimdi bunları çektim.
+
+454
+00:32:16,460 --> 00:32:17,460
+Cursor'um hazır.
+
+455
+00:32:17,460 --> 00:32:23,460
+Ve sonra çalışan array'nin cal olarak bu tipte bir array olacak.
+
+456
+00:32:23,460 --> 00:32:26,460
+Çalışan tipte bir array ona bir isim veriyor.
+
+457
+00:32:26,460 --> 00:32:29,460
+Cal isimli bir isim vermişim.
+
+458
+00:32:30,460 --> 00:32:33,460
+Sonra integer i diyorum.
+
+459
+00:32:33,460 --> 00:32:35,460
+Bu da benim bir count'ım olacak.
+
+460
+00:32:35,460 --> 00:32:37,460
+İşte o dizinin indeksini tutacağım.
+
+461
+00:32:37,460 --> 00:32:39,460
+İndeksleri olacak dizideki.
+
+462
+00:32:39,460 --> 00:32:41,460
+Onu bir arttıracağım sürekli.
+
+463
+00:32:41,460 --> 00:32:45,460
+Dizinin kaçıncı elemanla atıldığımı görsün, bilsin diye.
+
+464
+00:32:45,460 --> 00:32:48,460
+Sonra bunu tanımladım ve bir güne başladım.
+
+465
+00:32:48,460 --> 00:32:50,460
+Geldim.
+
+466
+00:32:50,460 --> 00:32:51,460
+i dedim.
+
+467
+00:32:51,460 --> 00:32:53,460
+İlk değeri 1 olsun.
+
+468
+00:32:53,460 --> 00:33:00,460
+PLPJ SQL'de array'lerin indesleri 1'den başlıyor.
+
+469
+00:33:00,460 --> 00:33:01,460
+Sıfırdan başlamıyor.
+
+470
+00:33:01,460 --> 00:33:05,460
+Yani dizinin ilk elemanının indesi 1 oluyor.
+
+471
+00:33:05,460 --> 00:33:08,460
+O yüzden burada i'yi birden başlatıyoruz.
+
+472
+00:33:08,460 --> 00:33:14,460
+Şimdi dizinin birinci elemanına atacağım kaydı nasıl buluyorum?
+
+473
+00:33:14,460 --> 00:33:19,460
+Yine cursor'ım yardımıyla bir for döngüsüne başladım.
+
+474
+00:33:19,460 --> 00:33:20,460
+Amp record dedim.
+
+475
+00:33:20,460 --> 00:33:22,460
+Bu satırda da ki.
+
+476
+00:33:22,460 --> 00:33:25,460
+O satırda erik bir dediğimiz, söylediğimiz satır.
+
+477
+00:33:25,460 --> 00:33:26,460
+İndi.
+
+478
+00:33:26,460 --> 00:33:28,460
+Bu cursor'dı bu tabloda.
+
+479
+00:33:28,460 --> 00:33:30,460
+Şimdi loop'a girdim.
+
+480
+00:33:30,460 --> 00:33:41,460
+Diyorum ki eğer o satırdaki amp record'daki o an okuduğum satırdaki salari değişkeni o verdiği değere bölündüğünde.
+
+481
+00:33:41,460 --> 00:33:44,460
+Çünkü tam bölünebilmesi ne demek?
+
+482
+00:33:44,460 --> 00:33:48,460
+Kalağını sıfır mı?
+
+483
+00:33:48,460 --> 00:33:53,460
+Eğer böyleyse bu şartı sağlıyorsa okumakta olduğum satırdaki maaş değeri.
+
+484
+00:33:53,460 --> 00:33:54,460
+O halde ne yap?
+
+485
+00:33:54,460 --> 00:34:03,460
+Benim burada tanımladığım o çalışan tipindeki cal isimli diziye gel onun o anki şu an ilk elemandayız.
+
+486
+00:34:03,460 --> 00:34:04,460
+Bir deyiz daha.
+
+487
+00:34:04,460 --> 00:34:07,460
+Birinci elemanı o amp record olsun.
+
+488
+00:34:07,460 --> 00:34:10,460
+O satırdaki değerler olsun.
+
+489
+00:34:10,460 --> 00:34:11,460
+O değerler ne?
+
+490
+00:34:11,460 --> 00:34:13,460
+At, so, yap ve maaş gibi değerler.
+
+491
+00:34:13,460 --> 00:34:15,460
+Bunu bu diziye at.
+
+492
+00:34:15,460 --> 00:34:17,460
+Daha sonra da ne yap?
+
+493
+00:34:17,460 --> 00:34:22,460
+İyi bir arttır ki artık dizinin ikinci elemanına geçmiş olalım.
+
+494
+00:34:22,460 --> 00:34:25,460
+Bu şekilde ilk döngümü yapıyorum.
+
+495
+00:34:25,460 --> 00:34:28,460
+Diğerden sonra artık iyi iki.
+
+496
+00:34:28,460 --> 00:34:32,460
+Geldim ikinci satıra bakıyorum cursor'ın o oluşan tablonun.
+
+497
+00:34:32,460 --> 00:34:35,460
+Bu satırdaki maaş'a bakıyorum.
+
+498
+00:34:35,460 --> 00:34:38,460
+Belki o bu ifadeyi sağladı sağlamadı.
+
+499
+00:34:38,460 --> 00:34:43,460
+Ona göre işlemimi yaparak döngüde ilerliyor.
+
+500
+00:34:43,460 --> 00:34:49,460
+Eğer bunu sağlamazsa zaten hala dizimler de indisi iki dedir.
+
+501
+00:34:49,460 --> 00:34:52,460
+Sağlamışsa indisini bir arttırır.
+
+502
+00:34:52,460 --> 00:34:57,460
+Sıradaki elemanı bulmak için tekrar döngüye devam eder.
+
+503
+00:34:57,460 --> 00:35:00,460
+Bu şekilde ne yaptık?
+
+504
+00:35:00,460 --> 00:35:14,460
+Sağlayan değerleri dizimize atarak sıra sıra elemanlarımızı bulmuş olduk.
+
+505
+00:35:14,460 --> 00:35:17,460
+Bu da bu şekilde bir gösterim.
+
+506
+00:35:17,460 --> 00:35:20,460
+If'ten çıkarken end if diyorduk.
+
+507
+00:35:20,460 --> 00:35:24,460
+Loop for loop'undan çıkarken end loop diyorduk.
+
+508
+00:35:24,460 --> 00:35:27,460
+Daha sonra da döndürmesini istediğim şey ne?
+
+509
+00:35:27,460 --> 00:35:30,460
+Bir çalışan tipi de bir dizi.
+
+510
+00:35:30,460 --> 00:35:33,460
+Döndür diyorum.
+
+511
+00:35:33,460 --> 00:35:36,460
+Diktiriyorum ve bu şekilde fonksiyonumu yazmış oluyorum.
+
+512
+00:35:36,460 --> 00:35:41,960
+Çalıştırmak istediğimde de yine iki tane parametre.
+
+513
+00:35:41,960 --> 00:35:48,960
+Proje numarası ve istediğim bir değeri bölünmesini verdiğimde de ne yapacak?
+
+514
+00:35:48,960 --> 00:35:50,960
+Bunu çalıştırmış olacaktı.
+
+515
+00:35:50,960 --> 00:36:00,610
+Evet, type tanımlamak, tur tanımlamak ve cursor tanımlayıp onu kullanmak
+
+516
+00:36:00,610 --> 00:36:03,610
+genellikle işlemlerimizi böyle gerçekleştirebiliyorduk.
+
+517
+00:36:03,610 --> 00:36:09,610
+İhtiyacımızı uygun şekilde tanımlayıp fonksiyonlarımızı da kullanıyoruz bu tiplere.
+
+518
+00:36:09,610 --> 00:36:13,820
+Hocam bir şey söyledi miyim?
+
+519
+00:36:13,820 --> 00:36:14,820
+Evet.
+
+520
+00:36:14,820 --> 00:36:16,820
+Gözden kaçırdığım bir şey mi var?
+
+521
+00:36:16,820 --> 00:36:21,820
+Bakıyorum da burada i indisimizi if'i bitirdikten sonra yazmamız gerekmez miydi?
+
+522
+00:36:21,820 --> 00:36:25,099
+O zaman arttırmak yani?
+
+523
+00:36:25,099 --> 00:36:40,099
+Şimdi burada bölen değeri eğer sıfırsa o zaman bu benim sağladığım bölen sonuç sıfırsa
+
+524
+00:36:40,099 --> 00:36:45,099
+o zaman bu benim istediğim bir değer bunu o sıradaki elemana koyacağım.
+
+525
+00:36:45,099 --> 00:36:47,099
+Tamam.
+
+526
+00:36:47,099 --> 00:36:52,099
+Ama değilse bunu yapmayacağım.
+
+527
+00:36:52,099 --> 00:36:54,099
+Hala ben ikinci sıradayım.
+
+528
+00:36:54,099 --> 00:36:56,099
+Dizinin hala ikinci sırasına eleman arıyorum.
+
+529
+00:36:56,099 --> 00:36:58,099
+Ha anladım tamam.
+
+530
+00:36:58,099 --> 00:37:00,099
+O zaman tablodu ha.
+
+531
+00:37:00,099 --> 00:37:02,099
+Bir alt satıra geçeceğim ama hala dizinin ikincisine eleman aramaktayım.
+
+532
+00:37:02,099 --> 00:37:09,440
+Onu arttırmıyorum o yüzden.
+
+533
+00:37:09,440 --> 00:37:14,440
+Evet şimdi tip tanımı ve cursor tanımı böyleydi.
+
+534
+00:37:14,440 --> 00:37:21,300
+Bir sonra göreceğimiz konu triggerler olacak.
+
+535
+00:37:21,300 --> 00:37:33,300
+Triggerlerin olayı veri tabanında bazı değişiklikler yapmak istediğimizde öncesinde veya değişiklik yapıldıktan sonrasında
+
+536
+00:37:33,300 --> 00:37:39,300
+tetiklenmesini istediğimiz başka bir yerde başka bir şey değiştirmesini istediğimiz durumlarda kullanıyoruz.
+
+537
+00:37:39,300 --> 00:37:48,300
+Yani ben bir işlem yaptığımda git şurada da şunu yap demek istediğimde burada triggerları, tetikleyicileri kullanıyorum.
+
+538
+00:37:48,300 --> 00:37:52,300
+Triggerları pek çok durumda, pek çok işlem için kullanabilirsiniz.
+
+539
+00:37:52,300 --> 00:37:55,300
+Tanımları nasıl oluyor triggerların?
+
+540
+00:37:55,300 --> 00:38:03,300
+Önceki triggerda gerçekleştirecek işlemler şunlar yani benim gerçekleştireceğim işlemler şunlar oluyor.
+
+541
+00:38:03,300 --> 00:38:09,300
+Insert, update, delay tablolar üzerinde biliyorsunuz VML komutları bunlarla manipüle ediyorduk.
+
+542
+00:38:09,300 --> 00:38:19,300
+Ben bunları yapmadan önce veya sonra ilgili trigger yazarak neler oluşmasını, neler yapılmasını istediğimi belirtebiliyorum veri tabanına.
+
+543
+00:38:19,300 --> 00:38:23,300
+Şimdi create trigger, trigger yaratmanın olayı şöyle.
+
+544
+00:38:23,300 --> 00:38:29,300
+Bir kere create trigger diyorum. Her zaman veri tabanda yeni bir şey oluştururken create ile başlıyorduk.
+
+545
+00:38:29,300 --> 00:38:31,300
+Bu triggera bir isim veriyorum.
+
+546
+00:38:31,300 --> 00:38:36,300
+Daha sonra bu trigger ne zaman çalışacak, ne zaman tetiklenecek burada yapılacak iş?
+
+547
+00:38:36,300 --> 00:38:41,739
+Bir formu afterma ve hangi tabloda yapılacak?
+
+548
+00:38:41,739 --> 00:38:50,739
+Ve eventler tabii ki hangisi, insert, update, delay, hangi tabloda bu işlem olduğunda çalışacak bir trigger?
+
+549
+00:38:50,739 --> 00:38:55,739
+Bunun için diyorum ki şu procedure executed bir trigger fonksiyonu yazıyor.
+
+550
+00:38:55,739 --> 00:39:04,500
+Temel tanımı bu, trigger oluşturmanı ve mutlaka adı bir bunun trigger'ın fonksiyonu var.
+
+551
+00:39:04,500 --> 00:39:12,500
+Fonksiyonu tanımlıyorum. Bu fonksiyonun içerisinde gerçekleştirecek işlem ne ise trigger bunu uyguluyor, yapıyor.
+
+552
+00:39:12,500 --> 00:39:17,500
+Bakalım şöyle şimdi trigger fonksiyonu nasıl tanımlanmış ona bakalım.
+
+553
+00:39:17,500 --> 00:39:24,500
+Normal bir fonksiyon tanımı gibi create or replace function deyip bir fonksiyon ismi verdim.
+
+554
+00:39:24,500 --> 00:39:30,500
+Daha sonra bunların dönüş tipi trigger olacak bu fonksiyon.
+
+555
+00:39:30,500 --> 00:39:35,500
+Bu fonksiyonların her zaman şuradan trigger'ın tanımlığını yaparken,
+
+556
+00:39:35,500 --> 00:39:43,500
+execute etmesini istediğim fonksiyonu V yazdığında burada çalışacak fonksiyonet bir return trigger olan bir fonksiyon.
+
+557
+00:39:43,500 --> 00:39:51,500
+Elzlede minel klasik fonksiyon tanımlının begin ve end arasında bu sefer yapılması gereken işlemlerimi yazıyorum.
+
+558
+00:39:51,500 --> 00:39:57,500
+O trigger tetiklendiğinde namaz işlemler yapılsın ve geriye ne dönsün?
+
+559
+00:39:57,500 --> 00:40:05,500
+Üç tane dönüş tipi var bu trigger'ların. Null dönebilir, alt dönebilir, new dönebilir.
+
+560
+00:40:05,500 --> 00:40:11,500
+Yani bir değişiklik yapmaz veya eski değeri döndürür.
+
+561
+00:40:11,500 --> 00:40:15,500
+Bunu şimdi birazdan göreceğiz eski nedir, yeni nedir veya yeni değeri döndürür.
+
+562
+00:40:15,500 --> 00:40:18,500
+Mesela insert'lerde diyeceğiz ki yeni döndür.
+
+563
+00:40:18,500 --> 00:40:24,500
+Eğer böyle değişiklik yapması uygunsa benim söylediğim şartları sağlıyorsa yeni döndür diyeceğiz.
+
+564
+00:40:24,500 --> 00:40:30,500
+Veya bir update işlemi yapmak istiyor ama ben diyorum ki bu benim istediğim şartları sağlamadı.
+
+565
+00:40:30,500 --> 00:40:32,500
+Trigger'ı burada yazdım oraya.
+
+566
+00:40:32,500 --> 00:40:36,500
+O zaman ne diyorum? Döndürme bunun eski değerini, eski de bırak gibi.
+
+567
+00:40:36,500 --> 00:40:40,500
+Şimdi bu örneklerde görelim.
+
+568
+00:40:40,500 --> 00:40:43,500
+Burada evet insert'e neyi ödedik?
+
+569
+00:40:43,500 --> 00:40:49,500
+Trigger'ı yaratmamız create trigger ile fonksiyonumuz da bu şekilde.
+
+570
+00:40:49,500 --> 00:40:53,500
+Böyle iki aşama bir şekilde bu trigger'ları oluşturuyoruz.
+
+571
+00:40:53,500 --> 00:41:01,719
+Burada da trigger'ların olayları var.
+
+572
+00:41:01,719 --> 00:41:06,719
+Örnekleri canımları anlatarak gidersek daha iyi olacak.
+
+573
+00:41:06,719 --> 00:41:15,719
+Şimdi örneğimizde diyor ki sadece tatil günleri dışında ve mesaj saatleri içinde.
+
+574
+00:41:15,719 --> 00:41:18,719
+Insert yapılmasına izin veren trigger.
+
+575
+00:41:18,719 --> 00:41:22,719
+Yani istediği hafta içinde ve mesaj saati içinde.
+
+576
+00:41:23,719 --> 00:41:30,719
+Bunların dışında olanki zamanı alacak, bakacak.
+
+577
+00:41:30,719 --> 00:41:35,719
+Eğer o zaman bu verdiğim zaman dilimlerinin dışında ise insert yapmayacak.
+
+578
+00:41:35,719 --> 00:41:39,719
+O zaman ben böyle bir trigger tanımlarken ne yapacağım?
+
+579
+00:41:39,719 --> 00:41:44,719
+Diyeceğim ki bu trigger'ın bir kere olayın öncesinde tetiklenmesi bir kontrole girecek.
+
+580
+00:41:44,719 --> 00:41:47,719
+Çünkü before insert diyeceğim buna.
+
+581
+00:41:47,719 --> 00:41:51,719
+Insert işlemi gerçekleştirmeden önce tetiklenmesi gereken bir şey.
+
+582
+00:41:51,719 --> 00:41:57,719
+O zaman ben insert into values bir şeyler yazacağım bunu çalıştır dediğimde hemen bu trigger gidecek.
+
+583
+00:41:57,719 --> 00:42:03,719
+Daha bu veritabına kaydedilmeden bu insert işlemi yapılmadan bu trigger çalışacak.
+
+584
+00:42:03,719 --> 00:42:07,719
+Şimdi tanımlamamız create trigger adını verdik.
+
+585
+00:42:07,719 --> 00:42:11,719
+Hangi tabloya? Employee tablosu dediği için onemployee dedik.
+
+586
+00:42:11,719 --> 00:42:15,719
+Bu sefer for each role execute procedure diyoruz.
+
+587
+00:42:15,719 --> 00:42:20,719
+Burada iki tane tipi var ya for each role ya for each statement deniyor.
+
+588
+00:42:20,719 --> 00:42:24,719
+Bu farkı da for each statement deniyor.
+
+589
+00:42:24,719 --> 00:42:28,719
+Sadece bir kere çalışıyor bu SQL sorgusu.
+
+590
+00:42:28,719 --> 00:42:34,719
+For each role'da da her bir etkilenen satır için çalışıyoruz.
+
+591
+00:42:34,719 --> 00:42:39,719
+Biz genelde her bir satır için yani tek tek sorgu sonucunda bir sürü satırlık bir şey geliyorsa.
+
+592
+00:42:39,719 --> 00:42:43,719
+Mesela ileride yapmak istediğim şeye göre, şu fonksiyona göre.
+
+593
+00:42:43,719 --> 00:42:47,719
+O yüzden bize for each role diye bunu belirtiyoruz.
+
+594
+00:42:48,719 --> 00:42:53,719
+Şimdi fonksiyonun bu. Bu fonksiyon tetiklenecek veritabına bir insert yapmak istediğimde.
+
+595
+00:42:53,719 --> 00:42:56,719
+Bakalım bunun içine nasıl yazmışız?
+
+596
+00:42:56,719 --> 00:43:01,480
+Sorumuz neydi?
+
+597
+00:43:01,480 --> 00:43:09,480
+Mesai saatleri içinde ve half-tablet içini buraya kayıt, insert yapamayacağım.
+
+598
+00:43:09,480 --> 00:43:14,480
+Şimdi fonksiyon tanımlamamda trigger fonksiyonu dedim create fonksiyonuna.
+
+599
+00:43:14,480 --> 00:43:19,480
+Returns'te mutlaka şunu belirtmem gerekiyor. Returns trigger demem gerekiyor.
+
+600
+00:43:19,480 --> 00:43:22,480
+Ezledim, dolayı şeylerimi attım.
+
+601
+00:43:22,480 --> 00:43:25,480
+Şimdi de begin ve end arasını dolduruyorum.
+
+602
+00:43:25,480 --> 00:43:29,480
+SQL'de şöyle bir fonksiyonum varmış.
+
+603
+00:43:29,480 --> 00:43:35,480
+Bunu al, now, şu anki tarihi, zaman vesaireyi çekiyor, günü, yılı, artık neyse.
+
+604
+00:43:35,480 --> 00:43:40,480
+Buradaki day kısaltması bu.
+
+605
+00:43:40,480 --> 00:43:46,480
+Bunların içerikleri, detayları hepsini postgreSQL'in hepsinde, dokümanlar kısmında bulabiliriz.
+
+606
+00:43:46,480 --> 00:43:59,480
+Şimdi bu fonksiyonla day değişkeni buradaki sat ve sat, işte cumartesi ve pazarsa veya şu an hani istemediğim koşulu yazıyorum.
+
+607
+00:43:59,480 --> 00:44:02,480
+Böyleyse yapma bu işlemi diyeceğim ona.
+
+608
+00:44:02,480 --> 00:44:10,480
+Eğer gün, cumartesi veya pazarsa veya yine o anki saati alıyorum bu sefer.
+
+609
+00:44:10,480 --> 00:44:14,480
+Bu da sıfırdan 24'e kadar saatlerin belirtime şekli.
+
+610
+00:44:14,480 --> 00:44:21,480
+Saat de not between 8 ve 18 ise, mesela saatlerini bu şekilde tanımlamışız.
+
+611
+00:44:21,480 --> 00:44:24,480
+Saat de 8 ve 18'in işiyse bu.
+
+612
+00:44:24,480 --> 00:44:28,480
+Bunlar benim istemediğim şartlar.
+
+613
+00:44:28,480 --> 00:44:30,480
+Bu halde ise bu durum.
+
+614
+00:44:30,480 --> 00:44:37,480
+Yapma bu işlemi, gerçekleştirme ve bir hata mesajı da döndürmesini istemişim.
+
+615
+00:44:37,480 --> 00:44:39,480
+Bunu da mesajı olarak ekrana yazdırıyorum.
+
+616
+00:44:39,480 --> 00:44:43,480
+Sadece mesai gününde de saatinde insaf yapabilirsiniz diye.
+
+617
+00:44:43,480 --> 00:44:47,480
+Burada işlem gerçekleştirmiyorum, şey yapma diyorum.
+
+618
+00:44:47,480 --> 00:44:51,480
+Farklı ise yani şu şartların dışındaysa olay.
+
+619
+00:44:51,480 --> 00:44:56,480
+Mesela saat içinde ise, günler bunların dışı ise vs.
+
+620
+00:44:56,480 --> 00:44:59,480
+O zaman gel, ne yap?
+
+621
+00:44:59,480 --> 00:45:02,480
+Return new, o insert işlemini gerçekleştir.
+
+622
+00:45:02,480 --> 00:45:07,480
+Insert işlemlerinde eğer onay vermişsek yapılacaksa, return new yap.
+
+623
+00:45:07,480 --> 00:45:14,480
+Bunun dışında ise bu sağlamayan şartın dışında ise gel ve return new yap.
+
+624
+00:45:14,480 --> 00:45:19,480
+If blog'umu kapattım, fonksiyonumu da bu şekilde bitirmiş oldum.
+
+625
+00:45:22,269 --> 00:45:27,269
+Evet, dedik ki bu trigger, before insert'ten önce çalışacak.
+
+626
+00:45:27,269 --> 00:45:35,480
+Before insert olacak.
+
+627
+00:45:35,480 --> 00:45:38,480
+Tetiklenmesi nasıl olur bir trigger'ın?
+
+628
+00:45:38,480 --> 00:45:40,480
+Bir insert işlemiyle olur.
+
+629
+00:45:40,480 --> 00:45:42,480
+İstediğim değerleri ben yazmışımdır.
+
+630
+00:45:42,480 --> 00:45:48,480
+Insert et dediğimde derhal bu tetiklenir ve bu fonksiyon çalışır.
+
+631
+00:45:48,480 --> 00:45:52,480
+Uygunsa yapar değilse yapmaz.
+
+632
+00:45:53,480 --> 00:45:59,480
+Trigger'ı silmek için de hem drop trigger hem de drop o trigger'ın fonksiyonunu silmem gerekecek.
+
+633
+00:45:59,480 --> 00:46:01,480
+İki aşikamalı bir silme işlemi.
+
+634
+00:46:01,480 --> 00:46:11,780
+Bir başka örneğimize bakalım.
+
+635
+00:46:11,780 --> 00:46:17,780
+Diyor ki departman tablosunda D number kolonundaki değer değişince,
+
+636
+00:46:17,780 --> 00:46:22,780
+employee tablosunda da D number kolonunun değişmesini sağlayan trigger.
+
+637
+00:46:22,780 --> 00:46:24,780
+Şimdi tablolarımıza bakalım.
+
+638
+00:46:24,780 --> 00:46:34,050
+Şurada departman tablosundaki, şurada departman numaraları var.
+
+639
+00:46:34,050 --> 00:46:37,050
+Bunlardan bir değiştiği zaman,
+
+640
+00:46:37,050 --> 00:46:43,050
+buradaki employee'deki D number'un da değişmesini sağlayan trigger.
+
+641
+00:46:43,050 --> 00:46:45,050
+Böyle bir şeye ihtiyacımız var mı? Var.
+
+642
+00:46:45,050 --> 00:46:47,050
+Çünkü niye?
+
+643
+00:46:47,050 --> 00:46:51,050
+Burada gelip ben işte kafama göre bir değişiklik yapamam.
+
+644
+00:46:51,050 --> 00:46:55,050
+Kalkıp research departmanı 5 numarayla gösterirmiş.
+
+645
+00:46:55,050 --> 00:47:00,050
+Ben bunu gideyim 15 yapayım dersem bütün veritabana çökertmiş oluyorum.
+
+646
+00:47:00,050 --> 00:47:03,050
+Hatta bu yüzden ne yapmıştık?
+
+647
+00:47:03,050 --> 00:47:09,050
+Aslında bu SQL şamasında tanınlıydı.
+
+648
+00:47:09,050 --> 00:47:12,050
+Constraintler, kısıtlar ekliyorduk veritabana.
+
+649
+00:47:12,050 --> 00:47:16,050
+Yani buradaki bir, bu tabloda bir kısıt var.
+
+650
+00:47:16,050 --> 00:47:19,050
+Şurayı işaret ediyor, burası burayı işaret ediyor.
+
+651
+00:47:19,050 --> 00:47:22,050
+Burayı kafana göre değiştirme.
+
+652
+00:47:22,050 --> 00:47:24,050
+Çünkü bundan etkilenen başka bir sistem var.
+
+653
+00:47:24,050 --> 00:47:26,050
+Yani ben burayı 15 yaparsam,
+
+654
+00:47:26,050 --> 00:47:31,050
+kalkıp buradaki bir adamın 5 numaralı departmanda çalışıyor görünüyor adam.
+
+655
+00:47:31,050 --> 00:47:34,050
+Ondan sonra adamın çalıştığı departmanı boşa çıkıyor.
+
+656
+00:47:34,050 --> 00:47:35,050
+Öyle bir departman ismi yok.
+
+657
+00:47:35,050 --> 00:47:39,050
+Bunun olmaması için zaten en başında bir kısıt atmıştık.
+
+658
+00:47:39,050 --> 00:47:44,050
+Yani biz burayı değiştirmek istesek veritabana buna izin vermiyor.
+
+659
+00:47:44,050 --> 00:47:48,050
+Company DB'nin kodlarını da, o şama dosyasını incelediğinizde görürsünüz.
+
+660
+00:47:48,050 --> 00:47:50,050
+Kısıtlar eklenmiş durumdadır.
+
+661
+00:47:50,050 --> 00:47:52,050
+Siz burada işlem yapamazsınız.
+
+662
+00:47:52,050 --> 00:47:56,050
+Şimdi benden istediği, soruda benden istediği diyor ki,
+
+663
+00:47:56,050 --> 00:47:58,050
+sen burada bir değişkini,
+
+664
+00:47:58,050 --> 00:48:00,050
+şurayı mesela bu 4 değiştireceksin,
+
+665
+00:48:00,050 --> 00:48:02,050
+işte herhangi bir rakamı değiştirdiğinde,
+
+666
+00:48:02,050 --> 00:48:04,050
+burayı da aynı şekilde güncelle.
+
+667
+00:48:04,050 --> 00:48:06,050
+Zaten olması gereken budur.
+
+668
+00:48:06,050 --> 00:48:09,050
+Burada bir değişiklik yaptığımda bunu da güncellemem gerekir.
+
+669
+00:48:09,050 --> 00:48:11,050
+İşte bunun için Trigger'ı kullanacağım.
+
+670
+00:48:11,050 --> 00:48:13,050
+Ama öncesinde,
+
+671
+00:48:13,050 --> 00:48:17,050
+demiştik bu veritabını Company DB oluşturulurken,
+
+672
+00:48:17,050 --> 00:48:20,050
+tanımlanmış burada bazı kısıtlar var.
+
+673
+00:48:20,050 --> 00:48:23,050
+O yüzden bu kısıtları önce bir kaldırmam lazım.
+
+674
+00:48:23,050 --> 00:48:26,050
+Bunları kaldıramazsam hiçbir şekilde bunu işlem yaptırmaz.
+
+675
+00:48:26,050 --> 00:48:28,050
+Çünkü bir değişiklik yaptırmaz.
+
+676
+00:48:28,050 --> 00:48:31,050
+O yüzden Alter Table Projek deyip,
+
+677
+00:48:31,050 --> 00:48:38,050
+önce bir o Company DB'deki şama dosyalarında var bunlar,
+
+678
+00:48:38,050 --> 00:48:41,050
+o kısıtları bir sileyim önce.
+
+679
+00:48:41,050 --> 00:48:44,050
+Daha sonrasında da ilgilişlemi yapayım.
+
+680
+00:48:44,050 --> 00:48:50,050
+Ben şurada Departman numarasında,
+
+681
+00:48:50,050 --> 00:48:54,050
+burayı güncellediğimde burası güncellensin diyorum ama,
+
+682
+00:48:54,050 --> 00:48:56,050
+burada öyle bir kısıt var ki,
+
+683
+00:48:56,050 --> 00:48:59,050
+değiştirmemle şurası da etkileniyor,
+
+684
+00:48:59,050 --> 00:49:01,050
+şuradaki D-Number kısmı da etkileniyor.
+
+685
+00:49:01,050 --> 00:49:03,050
+Sonra bir yerde daha var,
+
+686
+00:49:03,050 --> 00:49:05,050
+D-Number buralarda da var.
+
+687
+00:49:05,050 --> 00:49:09,050
+O yüzden aslında şurayla ilgili tanımlanmış 3 tane kısıt var,
+
+688
+00:49:09,050 --> 00:49:11,050
+Company DB veritabanında.
+
+689
+00:49:11,050 --> 00:49:14,050
+Bir bu tablo var, bir bu tablo var, bir bu tablo var.
+
+690
+00:49:14,050 --> 00:49:16,050
+Ben bunu değiştirmek istediğimde,
+
+691
+00:49:16,050 --> 00:49:19,050
+burada kısıt var, burada kısıt var, burada kısıt var.
+
+692
+00:49:19,050 --> 00:49:21,050
+O yüzden önce bunların hepsini kaldıracağım.
+
+693
+00:49:21,050 --> 00:49:25,050
+Ondan sonra istediğim şekilde güncellenme yapabileceğim.
+
+694
+00:49:25,050 --> 00:49:29,050
+Drop Constraint dedim, 3 tane tablo demiştik.
+
+695
+00:49:29,050 --> 00:49:34,050
+Üçünün de tek tek o Constraint isimleri varmış bunların.
+
+696
+00:49:34,050 --> 00:49:37,050
+Bunları tek tek verip ne yaptım?
+
+697
+00:49:37,050 --> 00:49:38,050
+Sildim.
+
+698
+00:49:38,050 --> 00:49:40,050
+Constraintleri bu kısıtları bir kaldırdım.
+
+699
+00:49:40,050 --> 00:49:43,050
+Şu an veritabanın özgür durumda.
+
+700
+00:49:43,050 --> 00:49:45,050
+İstediğim şekilde giderim.
+
+701
+00:49:45,050 --> 00:49:47,050
+O kısıtları sildiğim zaman.
+
+702
+00:49:47,050 --> 00:49:49,050
+İstediğim şekilde giderim, burayı değiştiririm.
+
+703
+00:49:49,050 --> 00:49:51,050
+Burayı değiştiririm.
+
+704
+00:49:51,050 --> 00:49:52,050
+Ne dedim?
+
+705
+00:49:52,050 --> 00:49:53,050
+Burada var, o değişmedi.
+
+706
+00:49:53,050 --> 00:49:54,050
+Burada var, o değişmedi.
+
+707
+00:49:54,050 --> 00:49:55,050
+Burada iki değişmedi.
+
+708
+00:49:55,050 --> 00:49:58,050
+O zaman bunu da bir trigger ile güncellemesini isteyeceğim.
+
+709
+00:49:58,050 --> 00:50:00,050
+Burayı değiştirir değil ama bunlar da değişsin.
+
+710
+00:50:00,050 --> 00:50:03,050
+Sonra benden şu an sadece Employee'yi istemiş.
+
+711
+00:50:03,050 --> 00:50:07,050
+O yüzden göreceğimiz örnek Employee'yi nasıl değiştireyim şeklinde olacak.
+
+712
+00:50:08,050 --> 00:50:10,050
+Trigger'ı önce bir oluştireyim.
+
+713
+00:50:10,050 --> 00:50:12,050
+Nasıl bir trigger olacak bu?
+
+714
+00:50:12,050 --> 00:50:17,050
+Bir kere Credit Trigger dedikten sonra After Update diyeceğim.
+
+715
+00:50:17,050 --> 00:50:20,050
+Çünkü burada yapmak istediğim bir update işleme.
+
+716
+00:50:20,050 --> 00:50:23,050
+Departament üzerinde yapmak istediğim şey bir update.
+
+717
+00:50:23,050 --> 00:50:27,050
+Var olan bir değeri, numarayı değiştir, başka bir şey yap.
+
+718
+00:50:27,050 --> 00:50:29,050
+O zaman After Update dedim.
+
+719
+00:50:29,050 --> 00:50:32,050
+Çünkü o değiştikten sonra yapılmasını istediğim bir şey.
+
+720
+00:50:32,050 --> 00:50:36,050
+Orayı değiştirince diğerine de aynı değeri koyacağım.
+
+721
+00:50:36,050 --> 00:50:38,050
+Department tablosundayım.
+
+722
+00:50:38,050 --> 00:50:40,050
+Department üzerinde yap bu değişikliği.
+
+723
+00:50:42,050 --> 00:50:44,050
+Sentax'ın Forage Row Execute Procedure.
+
+724
+00:50:44,050 --> 00:50:48,050
+Ve gerçekleştirmesini istediğim fonksiyon da bu.
+
+725
+00:50:48,050 --> 00:50:50,050
+Çalışmasını istediğim fonksiyon bu olacak.
+
+726
+00:50:50,050 --> 00:50:54,050
+Şimdi gelelim o fonksiyonu nasıl tanımlamışız.
+
+727
+00:50:54,050 --> 00:51:04,610
+Şimdi fonksiyonun olayı bir kere hangi durumda dedik bu trigger tetkileniyor?
+
+728
+00:51:04,610 --> 00:51:05,610
+Update durumunda.
+
+729
+00:51:05,610 --> 00:51:10,610
+Ben şöyle bir şey yazıp veri tabanına gönderdiğimde çalışacaktı bu.
+
+730
+00:51:10,610 --> 00:51:13,610
+Ben yazdığım şeyden de gönderiyorum.
+
+731
+00:51:13,610 --> 00:51:16,610
+Bir kere bir update işleme, Department tabi update işleme.
+
+732
+00:51:16,610 --> 00:51:21,610
+Mesela diyorum ki Department numarası şu olanı, Department numarasını bu yap.
+
+733
+00:51:21,610 --> 00:51:27,610
+Böyle bir sorgu yazdığımda bu fonksiyonun çalışması gerekecek.
+
+734
+00:51:27,610 --> 00:51:32,610
+Şimdi klasik Create Function Returns Trigger.
+
+735
+00:51:32,610 --> 00:51:35,610
+Ve geldim Begüm'le Enterası nasıl oldurmuşum?
+
+736
+00:51:35,610 --> 00:51:41,610
+Diyorum ki burada gelen değerlere göre git Update Employee.
+
+737
+00:51:41,610 --> 00:51:43,610
+Employee'yi update edeceğiz.
+
+738
+00:51:43,610 --> 00:51:47,610
+Employee'deki Dnose tunumu update edeceğiz.
+
+739
+00:51:47,610 --> 00:51:55,610
+Senin o gönderdiğin yeni D number'ı Employee'nin Dnose'u yap.
+
+740
+00:51:55,610 --> 00:51:58,610
+Buradaki yeni hangisi?
+
+741
+00:51:58,610 --> 00:52:01,610
+Şurası. Yeni değerim bu.
+
+742
+00:52:01,610 --> 00:52:06,610
+O new.new D number dediğim set edilmesini istediğim yeni değer.
+
+743
+00:52:06,610 --> 00:52:08,610
+Eski değer hangisi?
+
+744
+00:52:08,610 --> 00:52:09,610
+Değeri.
+
+745
+00:52:09,610 --> 00:52:12,610
+Onu da şartta yazıyorum.
+
+746
+00:52:12,610 --> 00:52:20,610
+Dnose old D number olanı Employee tablosundaki old D number olanı bul.
+
+747
+00:52:20,610 --> 00:52:26,610
+Onu yeni gönderdiğin, yeni set ettiğin değeri buraya da setle.
+
+748
+00:52:26,610 --> 00:52:33,610
+Bu şekilde Department'a yaptığım güncellemeyi Employee'de de yapabiliyorum.
+
+749
+00:52:33,610 --> 00:52:38,610
+New ve old triggerlerde kullanacağım Keyword'lar oluyor.
+
+750
+00:52:38,610 --> 00:52:42,610
+Old'la eski değer özellikle Update'de her ikisini de kullanıyoruz.
+
+751
+00:52:42,610 --> 00:52:45,610
+Update girdim işin içine bir değişmeden önceki değeri var.
+
+752
+00:52:45,610 --> 00:52:47,610
+Bir değiştikten sonraki değerim var.
+
+753
+00:52:47,610 --> 00:52:49,610
+Bunları tutuyor ve tablo'nun.
+
+754
+00:52:49,610 --> 00:52:51,610
+Diyor ki old dediğin senin o zaman 5'ti.
+
+755
+00:52:51,610 --> 00:52:54,610
+Bu 5 olanı bul.
+
+756
+00:52:54,610 --> 00:52:57,610
+Employee'nin Dnose'un da 5 olan kimse.
+
+757
+00:52:57,610 --> 00:53:00,610
+Onunki neyip? Artık yeni numara kaç olmuştu? 2 olmuştu.
+
+758
+00:53:00,610 --> 00:53:03,610
+İşte onu da 2'ye eşit ediyoruz.
+
+759
+00:53:03,610 --> 00:53:05,610
+Bu şekilde bir Update yapıyoruz.
+
+760
+00:53:05,610 --> 00:53:08,610
+Daha sonrasında neye döndürüyorum?
+
+761
+00:53:08,610 --> 00:53:10,610
+Yaptığım bu güncellemeyi döndürüyorum.
+
+762
+00:53:10,610 --> 00:53:12,610
+Yeni değeri döndürüyorum.
+
+763
+00:53:12,610 --> 00:53:18,610
+Bu şekilde Update işleminde nasıl bir trigger tetiklendiğini de görmüş olduk.
+
+764
+00:53:18,610 --> 00:53:29,989
+Bir başka örneğimizi inceleyelim.
+
+765
+00:53:29,989 --> 00:53:40,269
+Bu örnekte de maaş inişine ve %10'dan fazla maaş artışına izin vermeyen trigger.
+
+766
+00:53:40,269 --> 00:53:47,269
+Maaşı indiremiyoruz ve belli bir oranda da arttıramıyoruz.
+
+767
+00:53:47,269 --> 00:53:50,269
+Maaşlar neredeydi? Employee'deydi.
+
+768
+00:53:50,269 --> 00:53:52,269
+Employee'nin saları üstündeydi.
+
+769
+00:53:52,269 --> 00:53:55,269
+Buradaki olay ne o zaman? Bir güncelleme olayı.
+
+770
+00:53:55,269 --> 00:53:58,269
+Yani ben bir Update yapmak istediğimde o saları da.
+
+771
+00:53:58,269 --> 00:54:02,269
+Bunun öncesinde çalışmasının istediğim bir trigger.
+
+772
+00:54:02,269 --> 00:54:05,269
+Yapmadan önce bak bakalım bu şartları sağlıyor mu?
+
+773
+00:54:05,269 --> 00:54:07,269
+Ona göre Update et veya etmiyor.
+
+774
+00:54:07,269 --> 00:54:09,269
+O yüzden Before Update diyorum.
+
+775
+00:54:09,269 --> 00:54:12,269
+Trigger'ı oluşturdum.
+
+776
+00:54:12,269 --> 00:54:17,269
+Tablon OnEmployee, For Each Row, Execute Procedure.
+
+777
+00:54:17,269 --> 00:54:19,269
+Fonksiyonum da bu.
+
+778
+00:54:19,269 --> 00:54:22,269
+Şimdi bakalım fonksiyonumuzu nasıl yazmışız?
+
+779
+00:54:22,269 --> 00:54:29,480
+Maaş azaltamayacağım ve %10'dan fazla da arttıramayacaktım.
+
+780
+00:54:29,480 --> 00:54:32,480
+Fonksiyon başlangıcım klasik.
+
+781
+00:54:32,480 --> 00:54:35,480
+Daha sonra begin kısmına geliyorum.
+
+782
+00:54:35,480 --> 00:54:40,480
+Diyorum ki şimdi bu büyük ihtimalle nasıl tetiklendi?
+
+783
+00:54:40,480 --> 00:54:43,480
+Bir Update işlemiyle tetiklendi değil mi?
+
+784
+00:54:43,480 --> 00:54:45,480
+Update Employee maaşları bu.
+
+785
+00:54:45,480 --> 00:54:52,480
+Bütün heritabanının, bütün el yazılarının tablodaki maaşları %12 zam yap demişim.
+
+786
+00:54:52,480 --> 00:54:54,480
+Böyle bir şey göndermişim mesela.
+
+787
+00:54:54,480 --> 00:54:56,480
+O zaman bu ne yapacak?
+
+788
+00:54:56,480 --> 00:54:58,480
+Gelecek.
+
+789
+00:54:58,480 --> 00:55:04,480
+Şimdi senin bir eski maaş yani o hangi maaş bir de yapmak istediğin yeni maaş var.
+
+790
+00:55:04,480 --> 00:55:09,480
+Bunlarda eğer eski maaş yeniden büyükse
+
+791
+00:55:10,480 --> 00:55:15,480
+ve bu bu arada istemediğim şart bir exception gönderen bir hata mesajı göndereceğim.
+
+792
+00:55:15,480 --> 00:55:17,480
+Bunu gerçekleştirmeyeceğim bir sorgu.
+
+793
+00:55:17,480 --> 00:55:23,480
+Eğer senin eski maaşın daha büyükse, yani sen burada maaş azaltmaya çalışıyorsan
+
+794
+00:55:23,480 --> 00:55:27,480
+veya maaşı %10'dan da fazla zam yapmaya çalışıyorsan
+
+795
+00:55:27,480 --> 00:55:32,480
+yeni maaşın eskisinin %10'dan daha fazla olması ne?
+
+796
+00:55:32,480 --> 00:55:36,480
+Bundan daha fazla olmaya çalışıyorsa ben bu işlemi yapmayacağım diyoruz.
+
+797
+00:55:36,480 --> 00:55:39,480
+Then, B is exception bu mesaj yazdır.
+
+798
+00:55:39,480 --> 00:55:41,480
+Ve alt.
+
+799
+00:55:41,480 --> 00:55:43,480
+Bu işlemi gerçekleştirme eski değerinden alır.
+
+800
+00:55:43,480 --> 00:55:46,480
+Bu adet işleminde alt değerinde kalsın.
+
+801
+00:55:46,480 --> 00:55:51,480
+Değilse eğer bunların dışında bir şartsa o zaman ne yapabilirsin?
+
+802
+00:55:51,480 --> 00:55:53,480
+Değiştirebilirsin, yapabilirsin.
+
+803
+00:55:53,480 --> 00:55:57,480
+Yeni set etmek istediğinde eğer neyse ona döndürebilirsin.
+
+804
+00:55:57,480 --> 00:55:59,480
+O işlemi gerçekleştirebilirsin diyoruz.
+
+805
+00:55:59,480 --> 00:56:02,480
+Adet işlemini gerçekleştirebilirsin diyoruz.
+
+806
+00:56:02,480 --> 00:56:06,480
+Ama şu şartlardaysa, eğer benim istemediğimi yapıyorsa burada
+
+807
+00:56:06,480 --> 00:56:10,480
+maaşı düşürmeye çalışıyordum veya %10'dan fazla bir maaş yapmaya çalışıyorsam
+
+808
+00:56:10,480 --> 00:56:14,480
+o şekilde ne yapıyordum? Bu işlemi gerçekleştirtmiyordum.
+
+809
+00:56:14,480 --> 00:56:20,690
+Tetiklenirken de dedik bir update ile tetiklenecekti bu.
+
+810
+00:56:20,690 --> 00:56:27,690
+Çünkü update trigger'ı da employee'e salarinin böyle varmış.
+
+811
+00:56:27,690 --> 00:56:28,690
+Şimdi bu işlemi ne yapacaktır?
+
+812
+00:56:28,690 --> 00:56:33,690
+Gerçekleştirmeyecektir çünkü %10'dan bir fazla maaş zam mı yapmak istiyorum.
+
+813
+00:56:33,690 --> 00:56:40,769
+Düşürürken de yine trigger'ın adı hangi tabloda tanımlı trigger
+
+814
+00:56:40,769 --> 00:56:46,769
+ve func trigger fonksiyonunu da bu şekilde yazıp drop'larla siliyorum.
+
+815
+00:56:46,769 --> 00:56:48,769
+Düşürmüş oluyorum.
+
+816
+00:56:48,769 --> 00:56:57,019
+Bir başka örneğimize bakalım.
+
+817
+00:56:57,019 --> 00:57:03,019
+Şimdi burada istediği benden departman tablomuza diyor
+
+818
+00:57:03,019 --> 00:57:07,019
+salari ile aynı tipli bir total salari kolonu ekleyin.
+
+819
+00:57:09,260 --> 00:57:12,260
+Salari kolonu ekleyeceğim. Toplam saları.
+
+820
+00:57:12,260 --> 00:57:16,260
+Employee'de maaş sütunu değiştirmek olduğunda bu da değişti.
+
+821
+00:57:16,260 --> 00:57:18,260
+Şimdi istediği şu.
+
+822
+00:57:18,260 --> 00:57:21,260
+Benim departman tablom var.
+
+823
+00:57:21,260 --> 00:57:25,260
+Yeni bir tane sütün ekle diyor şuraya.
+
+824
+00:57:25,260 --> 00:57:30,260
+Bu sütünü diyor ekleyeceğin değerler şu manada total saları.
+
+825
+00:57:30,260 --> 00:57:36,260
+İşte bir numaralı departmanda çalışanların toplam maaşı 500.000'dir.
+
+826
+00:57:36,260 --> 00:57:40,260
+Dört numaralı çalışan, dört numaralı departmandakileri maaş 250.000'dir vs.
+
+827
+00:57:40,260 --> 00:57:45,260
+Böyle sıra sıra toplam maaşların tutulduğu bir total saları sütunu olsun.
+
+828
+00:57:45,260 --> 00:57:47,260
+Bu bilgiyi nereden alacak bu?
+
+829
+00:57:47,260 --> 00:57:50,260
+Employee tablosundan alacak çekecek.
+
+830
+00:57:50,260 --> 00:57:52,260
+Çünkü maaş bilgileri burada.
+
+831
+00:57:52,260 --> 00:57:54,260
+Ekşilerin departman numaraları da burada.
+
+832
+00:57:54,260 --> 00:58:01,260
+O yüzden ben Employee'de bir hangi numaralı departmanda çalışan kaç maaş alıyor
+
+833
+00:58:01,260 --> 00:58:06,260
+Buradan bulup total saları sıra sıra yazacağım.
+
+834
+00:58:06,260 --> 00:58:09,260
+Ama önce bir sütunu oluşturmam lazım.
+
+835
+00:58:09,260 --> 00:58:11,260
+Bu tabloda şu an böyle bir sütun yok.
+
+836
+00:58:11,260 --> 00:58:14,260
+O zaman bu tabloya tablo üzerinde değişiklik yapmak istiyorum.
+
+837
+00:58:14,260 --> 00:58:16,260
+Yeni bir sütunu eklemek istiyorsam.
+
+838
+00:58:16,260 --> 00:58:19,260
+Alter table ile bunu yapabiliyorum.
+
+839
+00:58:19,260 --> 00:58:22,260
+Alter table departman dedim.
+
+840
+00:58:22,260 --> 00:58:24,260
+Add column.
+
+841
+00:58:24,260 --> 00:58:29,260
+Sütünün adı, tipi ve şu anlık sıfır olsun diyorum.
+
+842
+00:58:30,260 --> 00:58:32,260
+Değerleri sıfır.
+
+843
+00:58:32,260 --> 00:58:38,260
+Daha sonrasında o sütünün istediğim değerlerini ekliyorum.
+
+844
+00:58:38,260 --> 00:58:42,260
+Ne diyorum? Set update departman diyorum.
+
+845
+00:58:42,260 --> 00:58:45,260
+Çünkü üstünü yaptım hazırladım.
+
+846
+00:58:45,260 --> 00:58:47,260
+Değerleri sıfır, işme değerleri değiştireceğim.
+
+847
+00:58:47,260 --> 00:58:50,260
+İlgili değerlerle yazacağım orayı.
+
+848
+00:58:50,260 --> 00:58:57,260
+Oranın total saları sütununu git Employee de eşlemeni yap.
+
+849
+00:58:58,260 --> 00:59:02,260
+Bunların saları toplamını bul.
+
+850
+00:59:02,260 --> 00:59:05,260
+Hangi departmanda kaç kişi ne kadar maaş almış.
+
+851
+00:59:05,260 --> 00:59:10,260
+Bunların toplamını bu şekilde bulup yazdırabiliyorum.
+
+852
+00:59:10,260 --> 00:59:18,260
+Tek tek ilgili departmanım arasında kim kaç maaş almış toplamı yazacaktır bana total saları ile.
+
+853
+00:59:18,260 --> 00:59:21,260
+Şimdi tablomu hazırladım.
+
+854
+00:59:21,260 --> 00:59:23,260
+Total saları sütunum hazır.
+
+855
+00:59:23,260 --> 00:59:26,260
+Herkesin kaç ne kadar maaş alıyor.
+
+856
+00:59:26,260 --> 00:59:30,260
+Birinci departmandaki ne kadar, dörtteki ne kadar vs.
+
+857
+00:59:30,260 --> 00:59:32,260
+Bunlar belli.
+
+858
+00:59:32,260 --> 00:59:35,260
+Şimdi benden istediği nasıl bir trigger?
+
+859
+00:59:35,260 --> 00:59:40,260
+Employee tablosunda maaş sütununda bir değişiklik olduğunda diyor.
+
+860
+00:59:40,260 --> 00:59:44,260
+Employee tablosunun maaş sütunundaki değişiklikler.
+
+861
+00:59:44,260 --> 00:59:47,260
+Burada soralım mesela.
+
+862
+00:59:47,260 --> 00:59:51,260
+Yazılacak triggermuz nasıl olacak?
+
+863
+00:59:51,260 --> 00:59:53,260
+Bir formu after mı?
+
+864
+00:59:53,260 --> 00:59:55,260
+Insert mı? Update mı? Delay mı?
+
+865
+00:59:55,260 --> 00:59:59,260
+Veya hangileri? Sizce hangisi olacak bunların?
+
+866
+00:59:59,260 --> 01:00:01,260
+Nasıl bir trigger olacak?
+
+867
+01:00:01,260 --> 01:00:08,449
+Hepsi mi olmalı acaba?
+
+868
+01:00:08,449 --> 01:00:15,449
+Değil mi hepsi olacak çünkü maaş sütununda olacak değişiklik maaşı update de edebilirim.
+
+869
+01:00:15,449 --> 01:00:17,449
+Veya oraya yeni bir employee ekleyebilirim.
+
+870
+01:00:17,449 --> 01:00:19,449
+Insert işlemi olabilir.
+
+871
+01:00:19,449 --> 01:00:21,449
+O zaman da yeni bir maaş değeri eklenir.
+
+872
+01:00:21,449 --> 01:00:24,449
+Veya bir employee artık o tablodan silebilirim.
+
+873
+01:00:24,449 --> 01:00:26,449
+Delay işlemi olabilir.
+
+874
+01:00:26,449 --> 01:00:31,449
+Yani şu işlemlerin hepsinde bir tetiklenecek bir trigger olması gerekiyor.
+
+875
+01:00:31,449 --> 01:00:36,500
+Bakın after diyoruz tabii ki.
+
+876
+01:00:36,500 --> 01:00:43,500
+Çünkü artık veri tabanına employee bir eklenmiştir veya değiştirilmiştir maaşı veya silinmiştir bir employee.
+
+877
+01:00:43,500 --> 01:00:51,500
+Insert or update or delay hepsi bunların üç olduğu durumda da tetiklenecek bir trigger.
+
+878
+01:00:51,500 --> 01:01:02,019
+Yazım şeklim, create trigger, after, insert or update or delay hepsi dahil.
+
+879
+01:01:02,019 --> 01:01:04,019
+Yine de employee de olacak.
+
+880
+01:01:04,019 --> 01:01:09,019
+Employee'ye yapılan bir insert update veya delay işleminde olacak bu tetiklenme.
+
+881
+01:01:09,019 --> 01:01:16,019
+Ve her bir rule için ne yapıyorum, execute'un çalıştırılacak fonksiyonum bu.
+
+882
+01:01:16,019 --> 01:01:22,019
+Şimdi birden fazla işlem tanımladığım zaman hangisinde hangisini yapacağını
+
+883
+01:01:22,019 --> 01:01:25,019
+birden fazla insert update delay yaptım.
+
+884
+01:01:25,019 --> 01:01:27,019
+Şöyle veriyorum.
+
+885
+01:01:27,019 --> 01:01:31,019
+SQL'deki şöyle bir ifade var.
+
+886
+01:01:31,019 --> 01:01:36,019
+Tgop yani oradaki trigger operation'ı neyse.
+
+887
+01:01:36,019 --> 01:01:39,019
+Delay ise bula bula şunu yap.
+
+888
+01:01:39,019 --> 01:01:43,019
+Eğer operator update ise şunu şunu yap.
+
+889
+01:01:43,019 --> 01:01:47,019
+Else dediğim zaten diğeri artık insert durumu.
+
+890
+01:01:47,019 --> 01:01:49,019
+Insert ise şunu yap.
+
+891
+01:01:49,019 --> 01:01:53,019
+Fonksiyonum bu şekilde bir gövdesini tanımlayacağım.
+
+892
+01:01:53,019 --> 01:01:57,019
+Klasik başlangıcım create return belli.
+
+893
+01:01:57,019 --> 01:02:04,019
+Şimdi dediğim gibi buraya üç tane değer verdiğim için o üçünden hangisi gelmiş?
+
+894
+01:02:04,019 --> 01:02:10,500
+Veri tabanında bu trigger çünkü üç farklı yolda da tetiklenebilecek.
+
+895
+01:02:10,500 --> 01:02:12,500
+Insert into yazdığında da tetiklenecek.
+
+896
+01:02:12,500 --> 01:02:16,500
+Update ya da salari dediğimde de tetiklenecek.
+
+897
+01:02:16,500 --> 01:02:21,500
+Veya employee bir create dediğimde de tetiklenecek bir trigger.
+
+898
+01:02:21,500 --> 01:02:22,500
+Hangisi istenmiş?
+
+899
+01:02:22,500 --> 01:02:26,500
+Mesela o an diyelim ki delay çalışmış.
+
+900
+01:02:26,500 --> 01:02:28,500
+Şöyle bir ifade yazıp çalıştırılıyor.
+
+901
+01:02:28,500 --> 01:02:30,500
+Çalıştırılmak isteniyor.
+
+902
+01:02:30,500 --> 01:02:32,500
+Daha sonra ne yapacak bu?
+
+903
+01:02:32,500 --> 01:02:38,500
+Eğer bu delay işlemi ise diyor git department tablosuna bir update yapacaksın.
+
+904
+01:02:38,500 --> 01:02:41,500
+Oranın total salarisi ile ilgili.
+
+905
+01:02:41,500 --> 01:02:45,500
+Tabii önce ilgili dino'yu bul.
+
+906
+01:02:45,500 --> 01:02:51,500
+O çalışan kişinin dino'su hangisiydi silinen dino hangi dino'ydu onu bir bulacak.
+
+907
+01:02:51,500 --> 01:02:54,500
+Sonra total salariden ne yapacak bakın?
+
+908
+01:02:54,500 --> 01:02:59,500
+Total salarinin o değerinden o eski değer diyor artık.
+
+909
+01:02:59,500 --> 01:03:01,500
+Delay işlemi de çünkü eski değer olur.
+
+910
+01:03:01,500 --> 01:03:03,500
+Insert işlemi de yeni değer olur.
+
+911
+01:03:03,500 --> 01:03:05,500
+Alt nokta saları.
+
+912
+01:03:05,500 --> 01:03:11,500
+Alt nokta salarıyı eski maaşı silinen giden maaşı totallan çıkar.
+
+913
+01:03:11,500 --> 01:03:14,940
+Böyle bir update yapıyorum.
+
+914
+01:03:14,940 --> 01:03:15,940
+Tam tersi bakın.
+
+915
+01:03:15,940 --> 01:03:17,940
+Eğer insert olmuş olsaydı.
+
+916
+01:03:17,940 --> 01:03:18,940
+Şurası çünkü else kısmı.
+
+917
+01:03:18,940 --> 01:03:21,940
+Buraya insert anlamına geliyor artık son işlemi.
+
+918
+01:03:21,940 --> 01:03:23,940
+O zaman ne yapacaktı?
+
+919
+01:03:23,940 --> 01:03:25,940
+Bu sefer yeni biri eklenmiştir.
+
+920
+01:03:25,940 --> 01:03:27,940
+Onun bir dino'su vardır.
+
+921
+01:03:27,940 --> 01:03:29,940
+O dino number'ı bul.
+
+922
+01:03:29,940 --> 01:03:31,940
+Şu department tablosunda.
+
+923
+01:03:31,940 --> 01:03:36,940
+İşte onun total salarisine de o yeni gelen maaşı ekle.
+
+924
+01:03:36,940 --> 01:03:40,940
+Insert işlemi de hep new kelimesini kullanacağım.
+
+925
+01:03:40,940 --> 01:03:42,940
+Delaylar da old'u kullanıyorum.
+
+926
+01:03:42,940 --> 01:03:44,940
+Giden değer anlamında öyle düşünün.
+
+927
+01:03:44,940 --> 01:03:50,940
+Update işleminde de hem yeni var hem eski var kullanacağım.
+
+928
+01:03:50,940 --> 01:03:51,940
+Niye?
+
+929
+01:03:51,940 --> 01:03:52,940
+Şöyle olacak.
+
+930
+01:03:52,940 --> 01:03:55,940
+Orada da yine dino'yu bulacağım.
+
+931
+01:03:55,940 --> 01:03:59,940
+Hangi department numarasına ilgili total salarıyı değiştiriyorum.
+
+932
+01:03:59,940 --> 01:04:05,940
+Onu bulduktan sonra diyorum ki o total saları değerinden eski maaşı çıkar.
+
+933
+01:04:05,940 --> 01:04:07,940
+Yeniyi ekle.
+
+934
+01:04:07,940 --> 01:04:09,940
+Böyle bir incelleme yapıyorum.
+
+935
+01:04:09,940 --> 01:04:11,940
+Old salari çıkar.
+
+936
+01:04:11,940 --> 01:04:13,940
+Yenisini ekle.
+
+937
+01:04:13,940 --> 01:04:23,250
+Bu şekilde de birden fazla trigger'ımız birden fazla DML komutuyla tetikleniyorsa nasıl yazacağımızı görmüş olduk.
+
+938
+01:04:23,250 --> 01:04:26,250
+Hocam sorun mu olabilir?
+
+939
+01:04:26,250 --> 01:04:27,250
+Tabii buyur.
+
+940
+01:04:27,250 --> 01:04:30,250
+Şöyle return new yazıyoruz ya.
+
+941
+01:04:30,250 --> 01:04:33,250
+Ama delete'de old kullanacağız dedik.
+
+942
+01:04:33,250 --> 01:04:39,250
+Orada return new old delete içinde geçerli mi oluyor?
+
+943
+01:04:39,250 --> 01:04:41,250
+Bu hepsi için mi return oluyor?
+
+944
+01:04:41,250 --> 01:04:53,250
+Return new'un olayı bu tamamı için artık en son yaptığım güncellemeyi yani en son işlem neyse onu yap manasında.
+
+945
+01:04:53,250 --> 01:04:55,250
+Bunları bunları yap.
+
+946
+01:04:55,250 --> 01:04:56,250
+En son return new.
+
+947
+01:04:56,250 --> 01:05:00,250
+Return null desemize hiçbir şey yapmaz bunları hiç gerçekleştirmez de atıyorum.
+
+948
+01:05:00,250 --> 01:05:04,250
+Ama new diyorum bu işlemleri yap manasında artık son bulduğun değeri yaz şeklinde.
+
+949
+01:05:04,250 --> 01:05:06,250
+Öyle bir ifadeyle verdik.
+
+950
+01:05:06,250 --> 01:05:09,250
+Tamamdır.
+
+951
+01:05:10,250 --> 01:05:12,250
+Ben bir şey soracaktım hocam.
+
+952
+01:05:12,250 --> 01:05:19,250
+Biz derste ayrı bir fonksiyon olarak değil de direct crash function ilk tanımlamayı görmüştük trigger'ları.
+
+953
+01:05:19,250 --> 01:05:26,250
+Orada bir de vende is not null'sa gibi bir kontrol yapıyorduk.
+
+954
+01:05:26,250 --> 01:05:29,250
+Mesela biz şimdi hiç yapmadık onu.
+
+955
+01:05:29,250 --> 01:05:35,250
+Şurada mı crash trigger'dan sonra mı sıra sıra yazdığımız fonksiyonu?
+
+956
+01:05:35,250 --> 01:05:37,250
+Evet biz direkt hepsini burada yazıyorduk.
+
+957
+01:05:37,250 --> 01:05:41,250
+Şu anda bir vent kontrolü koymuştuk.
+
+958
+01:05:41,250 --> 01:05:45,250
+Bunu neden şimdi hiç kullanmadık?
+
+959
+01:05:45,250 --> 01:05:49,250
+Postgre de yazım bu şekilde oluyor.
+
+960
+01:05:49,250 --> 01:05:53,250
+Farklı veritabın sistemlerinde farklı bir şekilde oluyor ama postgre de bu şekilde.
+
+961
+01:05:53,250 --> 01:05:56,250
+Trigger'ı böyle tanımlayıp fonksiyonu burada verip.
+
+962
+01:05:56,250 --> 01:06:01,250
+Daha sonrasında burada da fonksiyonu içinde üşüyoruz bu şekilde.
+
+963
+01:06:01,250 --> 01:06:03,250
+Önceden mail ile sormuştum onu.
+
+964
+01:06:03,250 --> 01:06:06,250
+Hani postgre göstermiyorum derste demişti.
+
+965
+01:06:06,250 --> 01:06:09,250
+Tamamdır.
+
+966
+01:06:09,250 --> 01:06:12,250
+Bu postgre de yazım bu şekilde oluyor.
+
+967
+01:06:12,250 --> 01:06:21,849
+Evet arkadaşlar bu haftaki son örneklerimiz de böyleydi.
+
+968
+01:06:21,849 --> 01:06:25,849
+Dinlediğiniz için teşekkür ediyorum.
+
+969
+01:06:25,849 --> 01:06:29,849
+Bu haftaki biraz böyle dolu dolu baya yoğun konuların olduğu bir ders.
+
+970
+01:06:29,849 --> 01:06:31,849
+Hocam bir şey söyleyecek miyim?
+
+971
+01:06:31,849 --> 01:06:33,849
+Tabii buyur.
+
+972
+01:06:33,849 --> 01:06:39,849
+Şimdi bu projede sorularımızı size daha bakacağız arkadaşlarla da.
+
+973
+01:06:39,849 --> 01:06:41,849
+Yemeğe eğlendim değil mi?
+
+974
+01:06:41,849 --> 01:06:43,849
+Tabii sorabilirsiniz mailime.
+
+975
+01:06:43,849 --> 01:06:45,849
+Ercingu ve yeteceğim mailine.
+
+976
+01:06:45,849 --> 01:06:47,849
+Takıldığımız yerlere, anlamadığımız kısımlara.
+
+977
+01:06:47,849 --> 01:06:48,849
+Bir şey söyleyeceğim.
+
+978
+01:06:48,849 --> 01:06:50,849
+Ben doktor, öbürümsel hazırlıktayim.
+
+979
+01:06:50,849 --> 01:06:54,849
+Şey gelmedi bize de böyle ödeye bilgilendirme şeyi.
+
+980
+01:06:54,849 --> 01:06:56,849
+Yani nereye gönderilecek, ne yapılacak.
+
+981
+01:06:56,849 --> 01:07:00,829
+Utku Hoca'dayım ben.
+
+982
+01:07:00,829 --> 01:07:03,829
+Hani o siste paylaşılmış herhalde ama ben de şeyde gördüm.
+
+983
+01:07:03,829 --> 01:07:05,829
+Ödev mi?
+
+984
+01:07:05,829 --> 01:07:07,829
+Hoca'ya mail at istersen onu.
+
+985
+01:07:07,829 --> 01:07:11,829
+Yani bazı şeyleri gesiz siste paylaşmıyorum falan demişti.
+
+986
+01:07:11,829 --> 01:07:13,829
+Hani bilginiz var mı diye sormak istedim.
+
+987
+01:07:13,829 --> 01:07:17,300
+O da yaklaştı da.
+
+988
+01:07:17,300 --> 01:07:20,300
+Ödevle ilgili benim bilgim yok arkadaşlar.
+
+989
+01:07:20,300 --> 01:07:22,300
+Hoca'yla konuştuğum bir şey değil.
+
+990
+01:07:22,300 --> 01:07:29,300
+O yüzden dersle alakalı ödev vs. olun onu Hoca'yla direkt ona iletirseniz.
+
+991
+01:07:29,300 --> 01:07:31,300
+Daha iyi olur.
+
+992
+01:07:31,300 --> 01:07:33,300
+Proje'yi de size.
+
+993
+01:07:33,300 --> 01:07:36,300
+Proje lab'ın kapsamında olan bir şey.
+
+994
+01:07:36,300 --> 01:07:39,300
+Onunla alakalı sorular olursa bana yazabilirsiniz.
+
+995
+01:07:39,300 --> 01:07:43,300
+Proje konumuzla anlamadığımız ilgili bir şey, anlamadığımız bir şey olursa vs.
+
+996
+01:07:43,300 --> 01:07:44,300
+Tamamdır.
+
+997
+01:07:44,300 --> 01:07:46,300
+Onları konuşuyoruz.
+
+998
+01:07:46,300 --> 01:07:49,300
+Forage Statement'ı var.
+
+999
+01:07:49,300 --> 01:07:52,809
+Forage Role kullandık ama biz.
+
+1000
+01:07:52,809 --> 01:07:57,809
+Forage Role her bir şeye de tek tek çalışsın diye Statement da bir kere çalışırdı çünkü.
+
+1001
+01:07:57,809 --> 01:07:59,809
+Bu şekilde.
+
+1002
+01:07:59,809 --> 01:08:08,579
+Evet başka sorunuz yoksa dersi bitirebiliriz.
+
+1003
+01:08:08,579 --> 01:08:16,449
+Dinlediğiniz için teşekkür ediyorum.
+
+1004
+01:08:16,449 --> 01:08:18,449
+Biz teşekkür ederiz.
+
+1005
+01:08:18,449 --> 01:08:20,449
+Hayırlı akşamlar.
+
+1006
+01:08:20,449 --> 01:08:22,449
+İyi akşamlar olsun.
+
+1007
+01:08:22,449 --> 01:08:24,449
+Görüşmek üzere.
+
+1008
+01:08:24,449 --> 01:08:26,449
+İyi akşamlar.
+
+1009
+01:08:26,449 --> 01:08:28,449
+Görüşürüz.
+
