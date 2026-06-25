@@ -10,6 +10,6 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Önder'in markdown notları](./Lisans%C3%BCst%C3%BC/B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2022/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
