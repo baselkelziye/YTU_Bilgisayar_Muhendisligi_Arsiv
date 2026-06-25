@@ -1,4 +1,4 @@
-# 📚 Etkili İletişim Ve Hazırlıksız Sunum Becerileri
+# 📚 Uygarlık Tarihi
 
 ## ℹ️ Ders Bilgileri
 

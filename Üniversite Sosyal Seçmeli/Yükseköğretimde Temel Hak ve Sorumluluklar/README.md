@@ -1,4 +1,4 @@
-# 📚 Yükseköğretimde Temel Hak Ve Sorumluluklar
+# 📚 Yükseköğretimde Temel Hak ve Sorumluluklar
 
 ## ℹ️ Ders Bilgileri
 
