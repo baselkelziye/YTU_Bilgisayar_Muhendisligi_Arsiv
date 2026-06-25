@@ -50,7 +50,8 @@ python3 taslaklar/talimat_taslaklari/ozetleri_pdfe_donustur.py "[Hedef Dizin]" -
   3. **Genel Bilgiler**: Ders adı, hoca adı, dönem ve akademik yıl.
      - 🔍 **Hoca Bilgisinin Okunması:** Hoca adını, `altyazilar/README.md` dosyası içindeki `* **Dersi Veren Akademisyen:** [Hoca Adı]` veya `* **Hoca:** [Hoca Adı]` alanından otomatik olarak oku. Eğer bu dosyadan hoca adı okunamıyorsa kullanıcıya sor.
   4. **Müfredat ve Belge Dizini Tablosu**: Ders no, ders içeriği/konu başlığı, markdown kaynak notu linki ve PDF indirme linkini içeren tablo.
-  5. **Detaylı Özetler**: Her ders için genel konular (iç içe listeler/nested bullet points halinde detaylı açıklamalı), hocanın özellikle vurguladığı kısımlar (iç içe listeler halinde detaylı açıklamalı), daha uzun/detaylı açıklamalar ve NotebookLM kullanım notu.
+   5. **Detaylı Özetler**: Her ders için genel konular (iç içe listeler/nested bullet points halinde detaylı açıklamalı), hocanın özellikle vurguladığı kısımlar (iç içe listeler halinde detaylı açıklamalı) ve daha uzun/detaylı açıklamalar.
+   6. **NotebookLM Notu (Tekrar)**: Dosyanın en sonunda bir kez NotebookLM kullanım notu eklenmelidir. Bu not her ders bölümünün altında tekrarlanmamalı, sadece dosyanın sonunda tek sefer yer almalıdır.
 
 ### 3. README Güncelleme Scriptini Çalıştırma Kuralları
 - Dersin `README.md` dosyası oluşturulduktan/güncellendikten ve `dersler.json` dosyası güncellendikten sonra, projedeki tüm dönem ve ana README dosyalarını otomatik olarak senkronize etmek için `readme_olustur/` dizini altındaki `readme_olustur.py` betiği çalıştırılmalıdır.
