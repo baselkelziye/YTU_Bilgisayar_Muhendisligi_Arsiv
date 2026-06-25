@@ -1,7 +1,7 @@
 # 2023-2024 Güz Dönemi
 
 ## Ders Bilgileri
-**Ders Adı:** Bilgisayar Mühendisleri İçin Diferansiyel Denklemler
+**Ders Adı:** Bilgisayar Mühendisleri için Diferansiyel Denklemler
 
 **Dersi Veren Hoca(lar):** Ahmet Elbir
 

@@ -48,7 +48,7 @@ YTU CE notlar deposu. Bu depo, Yıldız Teknik Üniversitesi Bilgisayar Mühendi
 - 📋 4-1 -> 4. sınıf Güz dönemi
 - 📋 4-2 -> 4. sınıf Bahar dönemi
 - 📋 Lisansüstü -> Lisansüstü dersler
-- 📋 Çok Displinli Tasarım Projesi -> Mesleki Seçmeli 2
+- 📋 Çok Disiplinli Tasarım Projesi -> Mesleki Seçmeli 2
 - 📋 Sosyal Seçmeli 1 -> Sosyal Seçmeli dersler
 - 📋 Mesleki Seçmeli 1 -> Mesleki Seçmeli dersler
 - 📋 Ara Projeler -> yapılıp yüklenen ara projeler
@@ -777,7 +777,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi)
+  - 📂 [Ders Klasörü](./1-2/M%C3%BChendisler%20i%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi)
 
 
 #### 📘 Sayısal Analiz 
@@ -851,7 +851,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](./2-1/Bilgisayar%20M%C3%BChendisleri%20%C4%B0%C3%A7in%20Diferansiyel%20Denklemler)
+  - 📂 [Ders Klasörü](./2-1/Bilgisayar%20M%C3%BChendisleri%20i%C3%A7in%20Diferansiyel%20Denklemler)
 
 
 #### 📘 İstatistik ve Olasılık Hesapları 
@@ -929,7 +929,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
-  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20M%C3%BCh%20i%C3%A7in%20Sinyaller%20ve%20Sistemler)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20M%C3%BChendisleri%20i%C3%A7in%20Sinyaller%20ve%20Sistemler)
 
 
 #### 📘 Bilgisayar Organizasyonu 
@@ -1218,7 +1218,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./%C3%87ok%20Displinli%20Tasar%C4%B1m%20Projesi)
+  - 📂 [Ders Klasörü](./%C3%87ok%20Disiplinli%20Tasar%C4%B1m%20Projesi)
 
 ### 🗓 4. Yıl - Bahar
 
@@ -1381,11 +1381,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Ekonomi%20Politikalar%C4%B1%20ve%20Uygulamalar%C4%B1)
 
 
-#### 📘 Etkili İletişim Ve Hazırlıksız Sunum Becerileri 
+#### 📘 Etkili İletişim ve Hazırlıksız Sunum Becerileri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Etkili%20%C4%B0leti%C5%9Fim%20Ve%20Haz%C4%B1rl%C4%B1ks%C4%B1z%20Sunum%20Becerileri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Etkili%20%C4%B0leti%C5%9Fim%20ve%20Haz%C4%B1rl%C4%B1ks%C4%B1z%20Sunum%20Becerileri)
 
 
 #### 📘 Eğitim Felsefesi 
@@ -1931,11 +1931,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretiminde%20Edebi%20Metinler)
 
 
-#### 📘 Uygarlık tarihi 
+#### 📘 Uygarlık Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Uygarl%C4%B1k%20tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Uygarl%C4%B1k%20Tarihi)
 
 
 #### 📘 Voleybolda Temel Teknik Eğitimi 
@@ -1959,11 +1959,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Yoga%20ve%20Anatomi)
 
 
-#### 📘 Yükseköğretimde Temel Hak Ve Sorumluluklar 
+#### 📘 Yükseköğretimde Temel Hak ve Sorumluluklar 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Y%C3%BCksek%C3%B6%C4%9Fretimde%20Temel%20Hak%20Ve%20Sorumluluklar)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Y%C3%BCksek%C3%B6%C4%9Fretimde%20Temel%20Hak%20ve%20Sorumluluklar)
 
 
 #### 📘 Çağdaş Toplum ve İletişim 
@@ -2424,7 +2424,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
-  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgiye%20Eri%C5%9Fim%20Ve%20Arama%20Motorlar%C4%B1)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgiye%20Eri%C5%9Fim%20ve%20Arama%20Motorlar%C4%B1)
 
 
 #### 📘 Bilişim Sistemleri Güvenliği 
@@ -2485,7 +2485,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/B%C3%BCy%C3%BCk%20Veri%20%C4%B0%C5%9Fleme%20Ve%20Analizi)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/B%C3%BCy%C3%BCk%20Veri%20%C4%B0%C5%9Fleme%20ve%20Analizi)
 
 
 #### 📘 Dağıtık Sistemler 
@@ -3021,7 +3021,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Hesaplamal%C4%B1%20Anlambilim)
 
 
-#### 📘 İleri Algoritma Analizi Ve Tasarımı 
+#### 📘 İleri Algoritma Analizi ve Tasarımı 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
@@ -3029,7 +3029,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HİT](#-dr-h-i̇rem-türkmen)
-  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Algoritma%20Analizi%20Ve%20Tasar%C4%B1m%C4%B1)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Algoritma%20Analizi%20ve%20Tasar%C4%B1m%C4%B1)
 
 
 #### 📘 İleri İşletim Sistemleri 
@@ -3471,7 +3471,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [Yapay Zeka](#-yapay-zeka)
   - 📖 [Uzman Sistemlere Giriş](#-uzman-sistemlere-giriş)
-  - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
+  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
   - 📖 [Kollektif Öğrenme](#-kollektif-öğrenme)
   - 📖 [Hesaplamalı Anlambilim](#-hesaplamalı-anlambilim)
 - ⭐ **Yıldız Sayıları:**
@@ -3525,7 +3525,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
-  - 📖 [Bilgiye Erişim Ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
+  - 📖 [Bilgiye Erişim ve Arama Motorları](#-bilgiye-erişim-ve-arama-motorları)
   - 📖 [Yazılım Mühendisliği](#-yazılım-mühendisliği)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
@@ -3648,7 +3648,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
-  - 📖 [Bilgisayar Mühendisleri İçin Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
+  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆
@@ -4130,7 +4130,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Yapısal Programlama](#-yapısal-programlama)
-  - 📖 [İleri Algoritma Analizi Ve Tasarımı](#-i̇leri-algoritma-analizi-ve-tasarımı)
+  - 📖 [İleri Algoritma Analizi ve Tasarımı](#-i̇leri-algoritma-analizi-ve-tasarımı)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★★★☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★★☆☆☆☆

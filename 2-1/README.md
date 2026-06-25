@@ -140,9 +140,9 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/15OgFx9BIu8Gur6ra1izx2N7-6Z2BfAim?usp=drive_link) ✨
-- 📄 **Not:** [Efe Girgin'in notları](./2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/efe_girgin) ✨
-- 📄 **Not:** [Esma Nur Çilekaya'nın elyazısı notu](./2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2023/esma_nur_cilekaya/not.pdf) ✨
-- 📄 **Not:** [Nasırın el yazısı notu](./2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/muhammed_nasir_sabir/not.pdf) GitHub'dan açılmıyorsa indirin. ✨
+- 📄 **Not:** [Efe Girgin'in notları](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/efe_girgin) ✨
+- 📄 **Not:** [Esma Nur Çilekaya'nın elyazısı notu](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2023/esma_nur_cilekaya/not.pdf) ✨
+- 📄 **Not:** [Nasırın el yazısı notu](./%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1/slaytlar_notlar/2021/muhammed_nasir_sabir/not.pdf) GitHub'dan açılmıyorsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -193,8 +193,8 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1X6kT7E10Z85QGRTOK5r7NuckHfYuYW54?usp=drive_link) ✨
-- 📄 **Not:** [Çok güzel çıkarılmış ders notları](./2-1/Lojik%20Devreler/slaytlar_notlar/2021/efe_girgin) ✨
-- 📄 **Not:** [Nasırın el yazısı notu](./2-1/Lojik%20Devreler/slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
+- 📄 **Not:** [Çok güzel çıkarılmış ders notları](./Lojik%20Devreler/slaytlar_notlar/2021/efe_girgin) ✨
+- 📄 **Not:** [Nasırın el yazısı notu](./Lojik%20Devreler/slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
