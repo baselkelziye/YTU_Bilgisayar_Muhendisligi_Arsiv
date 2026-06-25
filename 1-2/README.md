@@ -76,7 +76,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Not:** [Rayene'in el yazısı notları](./1-2/Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Rayene'in el yazısı notları](./Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -181,7 +181,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link) ✨
-- 📄 **Not:** [El Yazısı Not](./1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
+- 📄 **Not:** [El Yazısı Not](./M%C3%BChendisler%20i%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -221,7 +221,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Sayısal Analiz Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
+- 📄 **Ders Kayıtları:** [Sayısal Analiz Ders Kayıtları Altyazıları](./) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

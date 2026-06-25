@@ -26,6 +26,6 @@ Ders kayıtları 19 Ekim 2020 Pazartesi günü başlamıştır. Dosya adlarında
 
 ## Çalışma Özetleri
 
-Altyazılardan çıkarılan çalışma özetleri [`../altyazi_ozetleri/`](../altyazi_ozetleri/) klasöründedir.
+Altyazılardan çıkarılan çalışma özetleri [`../altyazi_ozetleri/`](./) klasöründedir.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
