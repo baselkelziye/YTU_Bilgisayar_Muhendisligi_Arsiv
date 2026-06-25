@@ -5,16 +5,16 @@ Aşağıdaki talimat; ders kaydı altyazılarından zaman bağımsız çalışma
 ## Talimat
 
 Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör verilecek. Senden istenenler:
-1. Her bir altyazı dosyasından öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar.
+1. Her bir altyazı dosyasından öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar. Oluşturulan özetleri `altyazilar/` diziniyle aynı seviyede olan `altyazi_ozetleri/` klasörüne kaydet.
 2. Altyazı dosyalarının bulunduğu klasöre (`altyazilar/` dizini altına) aşağıdaki formatta bir `README.md` belgesi oluştur veya mevcutsa güncelle.
 
 ### 1. Çalışma Özeti Çıkarma Kuralları
 
 Özeti hazırlarken aşağıdaki kurallara uy:
-- Sadece derste işlenen akademik içerikleri dikkate al.
-- Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi ve benzeri zaman bağımlı veya organizasyonel bilgileri çıkarma.
+- Sadece derste işlenen **akademik/teorik içerikleri** dikkate al.
+- Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi, Zoom/toplantı organizasyonu, değerlendirme takvimi, notlandırma, laboratuvar organizasyonu ve benzeri zaman bağımlı veya organizasyonel bilgileri **hiçbir şekilde çıkarma**.
 - Altyazıda geçen ifadeleri doğrudan kopyalamak yerine anlamı koruyarak temiz ve anlaşılır bir dille yeniden yaz.
-- Konular arasında mantıklı bir sıra kur.
+- Konular arasında mantıklı sıra kur.
 - Derece ve ayrıntı seviyesini yüksek tutarak, her ana konuyu ve önemli vurguyu açıklayıcı alt maddelerle (iç içe listeler şeklinde) zenginleştir.
 - Gereksiz tekrarları temizle.
 - Emin olmadığın veya altyazıda net olmayan kısımları kesin bilgi gibi yazma.
