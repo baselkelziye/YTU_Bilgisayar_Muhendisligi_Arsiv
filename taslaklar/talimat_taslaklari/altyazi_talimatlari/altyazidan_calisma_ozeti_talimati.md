@@ -5,16 +5,16 @@ Aşağıdaki talimat; ders kaydı altyazılarından zaman bağımsız çalışma
 ## Talimat
 
 Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör verilecek. Senden istenenler:
-1. Her bir altyazı dosyasından öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar.
+1. Her bir altyazı dosyasından öğrencinin daha sonra çalışırken kullanabileceği düzenli ve anlaşılır bir ders özeti çıkar. Oluşturulan özetleri `altyazilar/` diziniyle aynı seviyede olan `altyazi_ozetleri/` klasörüne kaydet.
 2. Altyazı dosyalarının bulunduğu klasöre (`altyazilar/` dizini altına) aşağıdaki formatta bir `README.md` belgesi oluştur veya mevcutsa güncelle.
 
 ### 1. Çalışma Özeti Çıkarma Kuralları
 
 Özeti hazırlarken aşağıdaki kurallara uy:
-- Sadece derste işlenen akademik içerikleri dikkate al.
-- Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi ve benzeri zaman bağımlı veya organizasyonel bilgileri çıkarma.
+- Sadece derste işlenen **akademik/teorik içerikleri** dikkate al.
+- Ödev, sınav, yoklama, dersin ne zaman yapılacağı, sonraki hafta ne işleneceği, teknik aksaklıklar, kayıt bilgisi, Zoom/toplantı organizasyonu, değerlendirme takvimi, notlandırma, laboratuvar organizasyonu ve benzeri zaman bağımlı veya organizasyonel bilgileri **hiçbir şekilde çıkarma**.
 - Altyazıda geçen ifadeleri doğrudan kopyalamak yerine anlamı koruyarak temiz ve anlaşılır bir dille yeniden yaz.
-- Konular arasında mantıklı bir sıra kur.
+- Konular arasında mantıklı sıra kur.
 - Derece ve ayrıntı seviyesini yüksek tutarak, her ana konuyu ve önemli vurguyu açıklayıcı alt maddelerle (iç içe listeler şeklinde) zenginleştir.
 - Gereksiz tekrarları temizle.
 - Emin olmadığın veya altyazıda net olmayan kısımları kesin bilgi gibi yazma.
@@ -22,8 +22,10 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 
 #### Özet Çıktı Formatı
 
+Her özet dosyası şu formata birebir uymalıdır:
+
 ```md
-# Ders Çalışma Özeti
+# Ders X Çalışma Özeti
 
 ## Genel Konular
 
@@ -48,6 +50,16 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 
 - Dersteki konuları, kavramları ve varsa kod/devre örneklerini daha uzun ve detaylı paragraflar halinde açıkla.
 - Bu kısım konuyu daha derinlemesine anlamak veya kaçırılan dersi telafi etmek isteyenler için kapsamlı bilgi içermelidir.
+
+* **Not:** İsterseniz bu dersin altyazı (.srt) dosyasını NotebookLM gibi bir yapay zeka aracına yükleyerek ders hakkında daha detaylı soru-cevaplar yapabilir ve dersi verimli çalışabilirsiniz.
+```
+
+**Önemli:** Eğer bir altyazı dosyasında sadece organizasyonel/lojistik konuşma varsa ve hiç akademik içerik yoksa, dosyayı şu kısa formatta oluştur:
+
+```md
+# Ders X Çalışma Özeti
+
+Bu derste işlenen akademik bir içerik bulunmamaktadır.
 ```
 
 ### 2. Altyazı Klasörü README.md Kuralları
@@ -55,7 +67,7 @@ Sana bir dersin altyazı (.srt) dosyaları ve bu dosyaların bulunduğu klasör 
 Altyazıların bulunduğu klasörün içindeki `README.md` dosyasını oluştururken/güncellerken şu kurallara uy:
 - **Hoca Bilgisi:** README belgesine dersi veren hoca bilgisini ekle. Eğer dersi veren hoca adını bilmiyorsan, bunu tahmin etmeye çalışma; **kesinlikle kullanıcıya hoca adını sor** ve aldığın cevaba göre ekle.
 - **İlk Ders Başlangıç Tarihi:** README belgesine dersin ilk başlangıç tarihini ekle. Eğer ilk dersin başlangıç tarihi kullanıcı tarafından verilmemişse veya mevcut dosyalardan kesin olarak anlaşılamıyorsa, bunu tahmin etmeye çalışma; **kesinlikle kullanıcıya ilk dersin başlangıç tarihini sor** ve aldığın cevaba göre ekle.
-- **Hafta Bilgisi ve Eksik Kayıtlar:** Klasördeki `.srt` dosyalarını analiz ederek haftalık listeyi ve varsa eksik haftaları listele.
+- **Hafta Bilgisi ve Eksik Kayıtlar:** Klasördeki `.srt` dosyalarını analiz ederek haftalık listeyi ve varsa eksik haftaları listele. İlk ders tarihini referans alarak her ders için gerçek tarihi hesapla.
 - **Format Şablonu:** Aşağıdaki yapıyı birebir referans al:
 
 ```md
@@ -69,16 +81,18 @@ Dersler [İlk Ders Tarihi] günü başlamıştır. Dosya adlarındaki `ders_x.sr
 
 ## Hafta Bilgisi
 
-- `ders_1.srt`: [Tarih]
-- `ders_2.srt`: [Tarih]
+- `ders_1.srt`: 9 Ekim 2020
+- `ders_2.srt`: 16 Ekim 2020
 ...
 
 ## Eksik Kayıtlar
 
-- [Eksik Hafta No]. hafta [Sebep] nedeniyle kayıt bulunmamaktadır.
+- 13. hafta kayıt bulunmamaktadır.
 
 **Not:** İsterseniz bu kayıtları NotebookLM gibi bir araca atıp daha istifadeli hale getirebilirsiniz.
 ```
+
+**Önemli:** Her ders satırında `ders_x.srt`: [Gerçek Tarih] formatı kullanılmalıdır. Tarihler, ilk ders başlangıç tarihinden itibaren haftalık periyotla hesaplanır. Hafta sonları, tatiller veya ara sınav haftaları nedeniyle atlanan haftalar varsa tarihler buna göre ayarlanır.
 
 ### 3. Ana Kaynak Listesine (dersler.json) Göreli Yol Ekleme Kuralları
 
