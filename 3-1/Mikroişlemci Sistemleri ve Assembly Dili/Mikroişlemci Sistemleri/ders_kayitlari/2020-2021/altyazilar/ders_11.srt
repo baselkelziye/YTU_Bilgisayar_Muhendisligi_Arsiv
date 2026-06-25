@@ -1,0 +1,4052 @@
+1
+00:02:34,349 --> 00:02:37,349
+Arkadaşlar merhaba sesim geliyor mu?
+
+2
+00:02:37,349 --> 00:02:41,879
+Var mı bir sıkıntı?
+
+3
+00:02:41,879 --> 00:02:42,879
+Geliyor hocam.
+
+4
+00:02:42,879 --> 00:02:43,879
+Geliyor hocam.
+
+5
+00:02:43,879 --> 00:02:44,879
+Tamam.
+
+6
+00:02:44,879 --> 00:02:47,879
+Şu an dersi başka bir ortamda yapıyorum.
+
+7
+00:02:47,879 --> 00:02:50,879
+O yüzden çok fazla monitörüm yok.
+
+8
+00:02:50,879 --> 00:02:54,879
+Yani tek bir laptoptan yaptığım için chati en son okuyacağım arkadaşlar.
+
+9
+00:02:54,879 --> 00:03:00,879
+Sunum sonrasında sorularınız olursa eğer sunum esnasında siz sorabilirsiniz.
+
+10
+00:03:00,879 --> 00:03:04,879
+Veya chati yazarsanız sonradan da dönüp bakabiliriz.
+
+11
+00:03:04,879 --> 00:03:11,289
+Şimdi ki yani chati kontrol edemeyeceğim simultanist olarak aynı anda.
+
+12
+00:03:11,289 --> 00:03:14,289
+Evet başlayalım.
+
+13
+00:03:14,289 --> 00:03:22,289
+10 geçmiş saat bugün biraz bir saniye şöyle bir şey çıktı da.
+
+14
+00:03:22,289 --> 00:03:29,689
+Evet 10 geçmiş saat bugün biraz hızlıca ilerleyeceğiz.
+
+15
+00:03:29,689 --> 00:03:32,689
+Örneklerimiz var göstereceğimiz.
+
+16
+00:03:32,689 --> 00:03:35,689
+Interopta da bir giriş yapmamız lazım öteki konuya.
+
+17
+00:03:35,689 --> 00:03:40,689
+Çünkü bir ocakta tatil olduğu için hani bir hafta kaybımız olacak gibi duruyor.
+
+18
+00:03:40,689 --> 00:03:48,689
+Onun için hani ileride interopta sıkıştırmamak için şimdi bu dersin akabinde bir interopta da giriş yapacağız.
+
+19
+00:03:48,689 --> 00:03:54,689
+Sonrasında da haftaya interop'tan örneği ve interop'tan kendisini biraz daha irdeleyeceğiz.
+
+20
+00:03:54,689 --> 00:04:04,689
+Interop konusu önemli çünkü bu hafta yani esasında ilk konumuz dersimiz bizim sinyal sistemleri arasındaki dönüşümler olacak.
+
+21
+00:04:04,689 --> 00:04:05,689
+Ne demek bu?
+
+22
+00:04:05,689 --> 00:04:14,689
+Aslında dijitalize edilmiş bir sinyalin analog şeklinde dönüştürmeye veya analog bir sinyalin dijitalizeyi nasıl sağlayacağız?
+
+23
+00:04:14,689 --> 00:04:16,689
+Dijital ortama nasıl geçireceğiz?
+
+24
+00:04:16,689 --> 00:04:18,689
+Bunun üzerine olan bir sunum olacak.
+
+25
+00:04:18,689 --> 00:04:33,689
+Normal hani entegre dışında bu iki tekniğin de elektronik dizaynla nasıl yapıldığına dair ufak devrelerle en basit anlamda ya tabii kompleksi anlamda bu amacı yönelik çok devre çeşidi var ama
+
+26
+00:04:33,689 --> 00:04:46,689
+en basit anlamda temelde hani dijital sinyali analog sinyale, analog sinyali dijital sinyale nasıl çevireceğimize dair elektronik devre dizaynlarını vereceğim, izah edeceğim, mantığı otutturacağız yani.
+
+27
+00:04:46,689 --> 00:05:04,689
+Sonrasında da entegre üzerinde bir entegre iki tane farklı DAC ve ADC entegreleri üzerinde yine pinler arasındaki iletişim mikro işlemciyle bağlantı izah edip örneklerle bu konuyu bitireceğiz.
+
+28
+00:05:04,689 --> 00:05:08,689
+Şimdi ilk etapta şunu bilmemiz lazım.
+
+29
+00:05:08,689 --> 00:05:16,689
+Bu dijital dediğimiz sinyal ile analog dediğimiz sinyal arasındaki fark nedir ve işte bunlar birbiri arasındaki dönüşüm neden gereklidir?
+
+30
+00:05:16,689 --> 00:05:26,689
+Şimdi analog zaten hani bu üçüncü sınıf dersi muhtemelen çoğunuz belki signal processing dersi sinyal işleme dersi aldınız veya alacaksınız.
+
+31
+00:05:26,689 --> 00:05:30,689
+Orada da detaylıca zaten bu sinyaller arasındaki dönüşümler anlatılacak.
+
+32
+00:05:31,689 --> 00:05:38,689
+Biz burada biraz daha background'ını oluşan, bezini vermek için kısaca bahsedeceğiz.
+
+33
+00:05:38,689 --> 00:05:50,689
+Bir kere analog dediğimiz sinyaller bizim kontinyoz olarak yani sürekli olarak değişen zaman domeninde yani zaman skalasında her daim değişkenlik gösteren bir sinyal demek.
+
+34
+00:05:50,689 --> 00:05:57,689
+En önemli hani gündelik hayatta fiziki olarak ölçülen değerler aslında hep analogdur.
+
+35
+00:05:57,689 --> 00:06:04,689
+Bir odanın sıcaklığı dendiğinde 23 nokta veya 23 derece deriz ama aslında o 23 değildir.
+
+36
+00:06:04,689 --> 00:06:13,689
+Biz bunu biraz daha ayrık domayına getirmeye çalıştığımızdan örneklemek gibi bir tabir deriz.
+
+37
+00:06:13,689 --> 00:06:19,689
+23 deriz ama aslında 23 nokta 332'dir o söylediğimiz anda örnek verelim.
+
+38
+00:06:19,689 --> 00:06:24,689
+Hemen ama bir milisaniye sonrasında bu değer değişir.
+
+39
+00:06:24,689 --> 00:06:34,689
+Yani analog sinyallerde belli başlı bir discretization yani bir örnekleme, bir sabitleme yapamayız.
+
+40
+00:06:34,689 --> 00:06:39,689
+Gerçekten pür analog bir sinyal ile işlem yapacaksak.
+
+41
+00:06:39,689 --> 00:06:44,689
+Ama tabii bizim sistemlerimiz dijital sistem yani mikro işlemci gibi sistemler.
+
+42
+00:06:45,689 --> 00:06:48,689
+Dijital sistemler quantum bilgisayarları dışında.
+
+43
+00:06:48,689 --> 00:06:55,689
+Yani böyle mikro işlemciler bazında biz bir analog sinyal üzerinde bir işlem yapmak istediğimizde
+
+44
+00:06:55,689 --> 00:07:02,689
+bizim bunu dijital platforma veyahut da öteki tarafta screen mode'a getirmemiz gerekiyor.
+
+45
+00:07:02,689 --> 00:07:07,689
+Bu amaçta da biz bir converter, bir çevirici devresi kullanacağız.
+
+46
+00:07:07,689 --> 00:07:09,689
+Biraz diyagramla anlatalım.
+
+47
+00:07:09,689 --> 00:07:14,689
+Fiziki dünyada bir sıcaklık yok, bir sensör olsun, bir termometre.
+
+48
+00:07:14,689 --> 00:07:20,689
+Bu bir analog sinyal yani sıcaklık bir analog sinyal ama bu termometre dediğimiz yapı
+
+49
+00:07:20,689 --> 00:07:29,689
+esasında bir sensör veya bir transfuser dediğimiz bu analogu elektriksel formatta analog değiştiren bir yapı.
+
+50
+00:07:29,689 --> 00:07:31,689
+Yani esasen gene analog.
+
+51
+00:07:31,689 --> 00:07:45,689
+Yani şöyle 23 derecenin karşılığı belki bir sensör entegresi veya sensör için 12.2 volt iken başka bir sensör için yapısına göre değişken 15 volta tekabülü gelebilir.
+
+52
+00:07:45,689 --> 00:07:54,689
+Ama 23.3, 23.37 dediğimizde o 12 volt olarak kalmayacak, 12.1, 12.2 gibi değişecek.
+
+53
+00:07:54,689 --> 00:08:00,689
+Yani sensörden okuduğumuz değerde bir analog elektriksel sinyal olmuş olacak.
+
+54
+00:08:00,689 --> 00:08:08,689
+Çünkü değişken yani o sıcaklık anlık değiştiği için sensördeki oluşan elektriksel sinyal de yine analog bir şekilde değişiyor.
+
+55
+00:08:08,689 --> 00:08:20,689
+Şimdi bizim bu değişken gerilim veya elektrik boyutundaki sinyali mikro işlemci içerisinde bir module bağlayacağımız vakit bunu diskrit etmemiz gerekir.
+
+56
+00:08:20,689 --> 00:08:35,690
+Yani bunu her daim, her mili mili mili veya işte nano yani nano seviyesinde bir volt değişim analizini yapmak yerine bir örnekleme aralığında sabitlememiz gerekir.
+
+57
+00:08:35,690 --> 00:08:39,690
+Yani bir kuantize dediğimiz örneklem yapmamız gerekir.
+
+58
+00:08:39,690 --> 00:08:47,690
+İşte burada ADC devreleri, analog to digital converter devreleri işimize arayacak.
+
+59
+00:08:48,690 --> 00:08:55,690
+Sonra işlediniz bir sinyali amaç belki de şöyle örnek verelim.
+
+60
+00:08:55,690 --> 00:08:58,690
+Çok müzikle alakam yok ama ANFİ devreleri var.
+
+61
+00:08:58,690 --> 00:09:04,690
+İşte bu ANFİ devrelerin içerisinde bazı mikro işlemci tabanlı yapılar da mevcut olabilir.
+
+62
+00:09:04,690 --> 00:09:13,690
+İşte elektriksel sinyali aldınız, mikro işlemci tabanlı bir yapıda işte bazı etkiler koyup yükseltmek istiyorsunuz.
+
+63
+00:09:13,690 --> 00:09:26,690
+İşte etkileri koyduktan sonra tekrardan yükseltip bizim bir spikra veya yani işte bir hoparlörde bu sesi duymamızı sağlayacak şey için tekrar bunu analog format'a getirmemiz lazım.
+
+64
+00:09:26,690 --> 00:09:30,690
+Bu örnekte de mesela sıcaklığa göre işte 12 örnek verelim.
+
+65
+00:09:30,690 --> 00:09:35,690
+Bir serada 18 derecede yetişen bir meyve sebze var veyahut da bir interval var aralık.
+
+66
+00:09:35,690 --> 00:09:40,690
+15 derece ile 18 derece arasında yetişen bir ürün.
+
+67
+00:09:40,690 --> 00:09:42,690
+15'in altına düşmemesi lazım.
+
+68
+00:09:42,690 --> 00:09:44,690
+18'in üstüne çıkmaması lazım.
+
+69
+00:09:44,690 --> 00:09:50,690
+Yani burada anlık ölçtüğümüz değerlerin mikro işlemci içerisinde bir kontrolü yapılacak.
+
+70
+00:09:50,690 --> 00:09:57,690
+Ve bu kontrolden sonra 18'in üstüne çıktıysa içerisinde sıcaklığı mikro işlemci diyecek ki fanı çalıştıralım.
+
+71
+00:09:57,690 --> 00:10:05,690
+İşte fanın hızında o yüksek derece 20 ise daha hızlı, 19 ise daha düşük çalıştıralım gibi bir karar mekanizması oluşturacağız.
+
+72
+00:10:05,690 --> 00:10:11,690
+Bu noktada şimdi okuduktan sonra, biz bunu analogdan dijitale çevirdikten sonra,
+
+73
+00:10:11,690 --> 00:10:15,690
+mikro işlemci de bunu algıladıktan sonra dijital format'ta,
+
+74
+00:10:15,690 --> 00:10:19,690
+if-else yapısında bir içeriye girdiğinde,
+
+75
+00:10:19,690 --> 00:10:27,690
+tekrardan bizim bir dijital sinyali analog format'a çevirip analog şeklinle sensörleri iletmemiz lazım.
+
+76
+00:10:27,690 --> 00:10:33,690
+Çünkü bizim sensörler, işte motor kontrol devresi olabilir mesela ön sensörü.
+
+77
+00:10:33,690 --> 00:10:39,690
+Orada 5 volt da çok hızlı, mesela siz denemişsinizdir herhangi bir motor da,
+
+78
+00:10:39,690 --> 00:10:44,690
+araç motoru, oyuncak araba motorlarında, 5 volt verdiğinizde çok daha hızlı döner,
+
+79
+00:10:44,690 --> 00:10:46,690
+1.2 volt verdiğinizde daha yavaş döner.
+
+80
+00:10:46,690 --> 00:10:50,690
+Yani elektrikle alakalı bir dönme hızına sahip DC motorlar.
+
+81
+00:10:50,690 --> 00:10:54,690
+Tabii stepler falan farklı da, DC motorlar için konuşalım.
+
+82
+00:10:54,690 --> 00:10:57,690
+Burada da şimdi işte eğer ki içerisi çok sıcaksa,
+
+83
+00:10:57,690 --> 00:11:04,690
+DAC modülünden gelecek olan analog sinyalin daha yüksek olması, daha yüksek ayarlanması gerekir.
+
+84
+00:11:04,690 --> 00:11:13,690
+Veyahut da daha düşük ayarlanarak daha az bir fan hızına sahip bir soğutma sistemine geçilmesi karar mekanizmasına eklenebilir.
+
+85
+00:11:13,690 --> 00:11:20,690
+Bu noktada yani bizim kararımızı tekrardan dijital format'tan analog'a elektriksel sinyale çevrilmesi
+
+86
+00:11:20,690 --> 00:11:34,690
+ve bunu işte transducer yardımıyla bir fiziki dünyadaki fana uyarlanması probleminde bu tarz hani bir duyarga sistemi diyebiliriz aslında.
+
+87
+00:11:34,690 --> 00:11:37,690
+Bu da insandaki gibi hani bir koku alırsınız, yüzünüz ekşir.
+
+88
+00:11:37,690 --> 00:11:42,690
+Bunun gibi işte bir sensördeki bilgiyi kullanıp,
+
+89
+00:11:42,690 --> 00:11:47,690
+outputta eğer yine bir sensör bağlı bir fiziki dünyayla iş yapıyorsak,
+
+90
+00:11:47,690 --> 00:11:53,690
+hem DAC hem de DAC devrilerinin iç içe olduğu yapılar gerekmektedir.
+
+91
+00:11:53,690 --> 00:12:02,690
+Şimdi zamanda sürekli, zamanda ayrık diyoruz, discrete in time, continuous in time diye de geçer bunlar sinyal sistemlerde.
+
+92
+00:12:02,690 --> 00:12:09,690
+Şimdi zamanda sürekli sinyaller, sol üst köşede görüldüğü gibi, bugün tabletim olmadığı için çizemiyorum arkadaşlar.
+
+93
+00:12:09,690 --> 00:12:11,690
+Evet çizemiyorum hakikaten.
+
+94
+00:12:12,690 --> 00:12:19,690
+Sol üst köşede gördüğümüz gibi zaman domayını dediğimiz, yani x-'inin t olduğu domaynlarda,
+
+95
+00:12:19,690 --> 00:12:24,690
+zamana bağlı olarak gerilimlerin her daim değiştiği sinyalleri kastediyoruz.
+
+96
+00:12:24,690 --> 00:12:28,690
+Genliği sürekli ve zamanda sürekli olan bir sinyal.
+
+97
+00:12:28,690 --> 00:12:31,690
+Ama genliği sürekli, zamanda ayrık da olabilir.
+
+98
+00:12:31,690 --> 00:12:40,690
+Ki bu aslında dijitalizenin gücü, çünkü aslında genliği ayrık, zamanda ayrıkla aynı şeye tekabül gelir bu ikisi.
+
+99
+00:12:41,690 --> 00:12:51,690
+Ve en nihayetinde bizim genliği ayrık dahi olsa, zamanda sürekli olan bir sinyali bile mikro işlemci ayıra yani karar mekanizmasında kullanabilir.
+
+100
+00:12:51,690 --> 00:12:54,690
+Bu da bir dijitalleştirme tekniğidir.
+
+101
+00:12:54,690 --> 00:13:01,690
+Ama nihayetinde bizim continuous bir waveform'ımızın, yani zamanda sürekli bile olsa genliğe ayrık,
+
+102
+00:13:01,690 --> 00:13:09,690
+veyahut da zamanda ayrık bile olsa genliği sürekli olabilen bir sinyal, yani bir domaynı da kesinlikle ayrık formata getirmemiz gerekir.
+
+103
+00:13:09,690 --> 00:13:14,970
+Şimdi normalde elektronik olarak nasıl yapılıyor?
+
+104
+00:13:14,970 --> 00:13:16,970
+Bunun mentalitesinden biraz bahsedelim.
+
+105
+00:13:16,970 --> 00:13:18,970
+Bir dijital sinyalimiz var.
+
+106
+00:13:18,970 --> 00:13:20,970
+Yani bir ve sıfırlarımız var.
+
+107
+00:13:20,970 --> 00:13:26,970
+Bir sıfırların olduğu bir bit dizimimiz var diyelim hatta.
+
+108
+00:13:26,970 --> 00:13:34,970
+Mesela bu örnekte üç bitli bir sıfır bir yapısı içeren bir binary sayımız olsun.
+
+109
+00:13:34,970 --> 00:13:40,970
+Şimdi bu birinci diagramda o pump'lardan yararlanılıyor.
+
+110
+00:13:40,970 --> 00:13:42,970
+O pump'un özelliği neydi?
+
+111
+00:13:42,970 --> 00:13:43,970
+Kısaca hatırlayalım.
+
+112
+00:13:43,970 --> 00:13:50,970
+Aslında o pump, şurası sıfıra bağlandığı, yani genelde, hem bir imneç gözüküyor mu arkadaşlar?
+
+113
+00:13:50,970 --> 00:13:52,970
+Onu da bir sorayım.
+
+114
+00:13:52,970 --> 00:13:54,970
+Benim şu mouse'un imneci gözüküyor mu?
+
+115
+00:13:54,970 --> 00:13:56,970
+Yoksa illa şey mi seçmem?
+
+116
+00:13:56,970 --> 00:13:58,970
+Görünüyor hocam.
+
+117
+00:13:58,970 --> 00:13:59,970
+Tamam.
+
+118
+00:13:59,970 --> 00:14:03,970
+Kalemle hep şey olunca onu hiç denemedik.
+
+119
+00:14:03,970 --> 00:14:06,970
+Şimdi burası sıfır olması demek GND'nin.
+
+120
+00:14:06,970 --> 00:14:08,970
+Aslında şuranın da sıfır olması demektir.
+
+121
+00:14:08,970 --> 00:14:09,970
+O pump'ta hatırlarsanız.
+
+122
+00:14:09,970 --> 00:14:18,970
+Ve aslında şuranın sıfır olması yani şu noktanın sıfır olması demek şuradaki V out bölü 4R bölü 7.
+
+123
+00:14:18,970 --> 00:14:20,970
+Hani burada isterseniz X diyelim ilk etapta.
+
+124
+00:14:20,970 --> 00:14:24,970
+V out bölü X'in ki buradaki akım demek.
+
+125
+00:14:24,970 --> 00:14:26,970
+Burası sıfır olduğu için.
+
+126
+00:14:26,970 --> 00:14:31,970
+Şuradan gelen V in diyelim buraya da hani bir tane olduğunu düşünelim.
+
+127
+00:14:31,970 --> 00:14:36,970
+V in bölü R'ye eşit olma kaidesiyle çözülüyordu o pump soruları hatırlarsanız.
+
+128
+00:14:36,970 --> 00:14:39,970
+Çünkü buradan giren akım, buradan giden akıma eşit olması lazım.
+
+129
+00:14:39,970 --> 00:14:43,970
+Çünkü burası yüksek empedansa sahip olduğunu vesaireli bahsediyorduk.
+
+130
+00:14:43,970 --> 00:14:45,970
+Şimdi bunu niye izah ettim?
+
+131
+00:14:45,970 --> 00:14:46,970
+Şu yüzden.
+
+132
+00:14:46,970 --> 00:14:48,970
+Şimdi bu bir toplayıcı devre esasında.
+
+133
+00:14:48,970 --> 00:14:52,970
+Çünkü input'un da pek çok farklı giriş var.
+
+134
+00:14:52,970 --> 00:14:54,970
+Ve bunun hesabı da şöyle yapılmaktaydı.
+
+135
+00:14:54,970 --> 00:14:56,970
+Buradan her bir I'sı.
+
+136
+00:14:56,970 --> 00:14:58,970
+I1, I2, I3 diyelim.
+
+137
+00:14:58,970 --> 00:15:04,970
+Şuradaki ana koldaki I'nı yani buradaki I'ların toplamı buradaki ana koldaki I'yı verecekti.
+
+138
+00:15:04,970 --> 00:15:14,970
+Ve aslında V1, V2, V3 yani V1 bölü R, V2 bölü 2R, V3 bölü 4R buradaki I'yı gösterecekti.
+
+139
+00:15:14,970 --> 00:15:18,970
+Buradan denklemlere eşitlerseniz karşı tarafla V out'la.
+
+140
+00:15:18,970 --> 00:15:33,970
+Aslında bunun formülünün buradaki V'lerin toplamıyla buradaki dirençler arasındaki oranın karpınması şeklinde bir formül çıkıyor.
+
+141
+00:15:33,970 --> 00:15:35,970
+Yani bu aslında bir toplayıcı devre.
+
+142
+00:15:35,970 --> 00:15:39,970
+Burada R2, R4 yapıları şunu sağlıyor bize.
+
+143
+00:15:39,970 --> 00:15:42,970
+MSW dediğimiz en yüksek anlamlı,
+
+144
+00:15:42,970 --> 00:15:45,970
+RSW'de en düşük anlamlı pinlerdi.
+
+145
+00:15:45,970 --> 00:15:52,970
+Ve R'lerle aslında biz bu pinlerin gerilim boyutundaki kazançlara olan katkısına oynamış oluyoruz.
+
+146
+00:15:52,970 --> 00:15:55,970
+Yani şöyle örnek verelim.
+
+147
+00:15:55,970 --> 00:15:58,970
+Kademi alıp mausla olabildiğince yapmaya çalışacağım.
+
+148
+00:15:58,970 --> 00:16:03,970
+Misal 1, 1, 1 verelim.
+
+149
+00:16:03,970 --> 00:16:12,970
+Şimdi 1, 1, 1 verdiğimizde buradaki her bir direncin etkisi olduğundan dolayı nasıl yapacağız veya ilk başta 1, 0, 0 verelim.
+
+150
+00:16:12,970 --> 00:16:14,970
+Hani buralara 0 verdiğimizi düşünelim.
+
+151
+00:16:14,970 --> 00:16:19,970
+1, 0, 0 verdiğimizde aslında efektif olarak ne var burada?
+
+152
+00:16:19,970 --> 00:16:22,970
+Buradaki 1 volt bölü R.
+
+153
+00:16:22,970 --> 00:16:25,970
+Yani aslında eksi R, F.
+
+154
+00:16:25,970 --> 00:16:33,970
+Bölü R in, çarpı V in'di formülünün, V out'taki formülün.
+
+155
+00:16:33,970 --> 00:16:38,970
+Şimdi burası 4R bölü Y'diydi.
+
+156
+00:16:38,970 --> 00:16:39,970
+Bölü R'si var.
+
+157
+00:16:39,970 --> 00:16:44,970
+R'ler gideceğinden dolayı aslında nasıl bir şey oluyor?
+
+158
+00:16:44,970 --> 00:16:47,970
+4R bölü 1 bölü R.
+
+159
+00:16:47,970 --> 00:16:48,970
+4 bölü 7 değil mi?
+
+160
+00:16:48,970 --> 00:16:50,970
+4 bölü 7'lik bir etkiye sahip.
+
+161
+00:16:50,970 --> 00:17:01,970
+Yani şunun 1, 0, 0'ın etkisi bizim girişteki V in neyse V in çarpı 4 bölü 7'lik bir etkiye sahip.
+
+162
+00:17:01,970 --> 00:17:03,970
+Değil mi?
+
+163
+00:17:03,970 --> 00:17:05,970
+Şimdi hepsini 1, 1, 1 verelim.
+
+164
+00:17:06,970 --> 00:17:08,970
+Hepsi işleme dahil olacak.
+
+165
+00:17:08,970 --> 00:17:13,970
+Ve bunların hepsinin toplamı zaten bize 7R'ye tekabül gelecek.
+
+166
+00:17:13,970 --> 00:17:23,970
+Ters döndürdüğümüzde gelecek olan ise yani şu 1, 1, 1 olanı 1 çarpı V in'e denk gelecek.
+
+167
+00:17:23,970 --> 00:17:28,970
+Yani aslında maksimum verdiğimiz gelin V out'ta elde edilmiş olacak.
+
+168
+00:17:28,970 --> 00:17:33,970
+Yani burada bir örnekleme gibi bir yapı oluşturulmuş R2R'yle.
+
+169
+00:17:33,970 --> 00:17:49,970
+Ve buradaki MSB'nin R olması, MSB'nin ne kadar MSB, kaç bitle yapıyorsanız en sonundakinin iki kat arttırması aslında bir ser dizaynında her bitin sola gittiğinde ikiye bölme özelliğinden gelen bir etki.
+
+170
+00:17:49,970 --> 00:17:52,970
+Buranın dezavantajı şu bu devrenin.
+
+171
+00:17:52,970 --> 00:17:59,970
+Mesela 16 bitlik bir dijital sayıyı analog formata çevirmek istiyoruz.
+
+172
+00:17:59,970 --> 00:18:08,970
+16 bit için R, 2R, 4R, 8R yani 200'e 15 neopar o kadar kat R'nin olması gerekiyor değil mi?
+
+173
+00:18:08,970 --> 00:18:13,970
+Yani işte mesela 3 bit de 200'e 2'den 4R'ye kadar çıkartıyoruz.
+
+174
+00:18:13,970 --> 00:18:15,970
+4 bit de 8R olacak.
+
+175
+00:18:15,970 --> 00:18:19,970
+İşte 16 bit de 200'e 15R olacak.
+
+176
+00:18:19,970 --> 00:18:24,970
+Yani bu çok büyük bir yani dizaynda bayağı problemleri olan bir şeydi.
+
+177
+00:18:24,970 --> 00:18:27,970
+Bu yüzden hani ilk etapta bununla bir düşünülmüş.
+
+178
+00:18:27,970 --> 00:18:36,970
+Sonrasında ama daha konsepçinal olan, daha konsepte uygun R, 2R gerilim bölücü devreleri kullanılmış.
+
+179
+00:18:36,970 --> 00:18:38,970
+Şimdi bunu da analiz edelim.
+
+180
+00:18:38,970 --> 00:18:47,970
+Şimdi zaten gerilim bölücü devresini belki böyle yatay çizik diye biraz zor gözüküyor ama şuraya MSB diyeyim.
+
+181
+00:18:47,970 --> 00:18:50,970
+Şuraya da LSB oluyor tabii.
+
+182
+00:18:50,970 --> 00:18:55,440
+Şimdi bu nokta bizim için önemli olan yer.
+
+183
+00:18:55,440 --> 00:18:57,440
+Yukarıdan bakıyorum.
+
+184
+00:18:57,440 --> 00:19:01,440
+Şimdi MSB'den verdiğimi düşünelim sadece.
+
+185
+00:19:01,440 --> 00:19:08,440
+Sadece 2R'lik bir dirençten geçerken aşağı doğru indikçe daha fazla direnç kademelerinden,
+
+186
+00:19:08,440 --> 00:19:15,440
+yani leder mantı, gerilim bölücü mantıyla daha düşük gerilim seviyelerinin üretebilmesini sağlayan bir dizayn.
+
+187
+00:19:15,440 --> 00:19:19,440
+Bu dizaynin avantazi işi şuydu.
+
+188
+00:19:19,440 --> 00:19:21,440
+İsterseniz 8 bit olsun.
+
+189
+00:19:21,440 --> 00:19:28,440
+Hep 2R, 2R, 2R, 2R, en sonundaki 2R olacak şekilde bir dizayn yapmamız sağlanıyor.
+
+190
+00:19:28,440 --> 00:19:31,440
+İsterseniz şöyle bir test de yapabiliriz.
+
+191
+00:19:31,440 --> 00:19:33,440
+Hepsine 0 verelim.
+
+192
+00:19:33,440 --> 00:19:39,440
+Yani 0, 0, 0 kezinde yani genedeye bağlayalım hepsini.
+
+193
+00:19:39,440 --> 00:19:42,440
+2R'den 2R birbirine şu an paralel.
+
+194
+00:19:42,440 --> 00:19:44,440
+Buradan R'ye gelecek.
+
+195
+00:19:44,440 --> 00:19:46,440
+Sonra bu seri buna 2R'ye gelecek.
+
+196
+00:19:46,440 --> 00:19:48,440
+Sonra paralel R'ye gelecek.
+
+197
+00:19:48,440 --> 00:19:50,440
+Seri 2R'ye gelecek.
+
+198
+00:19:50,440 --> 00:19:52,440
+Parallel R'ye gelecek.
+
+199
+00:19:52,440 --> 00:19:59,440
+Aslında şuradaki yani asıl yerdeki yer R kadar bir MSB'sine sahip.
+
+200
+00:19:59,440 --> 00:20:05,440
+Yani buranın bütün direnci şuradaki MSB'si R'nin etkisi dahilinde.
+
+201
+00:20:05,440 --> 00:20:12,440
+Ama bu arttıkça yani nedir arttırdıkça LSB yani bissel dizayn da anlamsızlaşarak,
+
+202
+00:20:12,440 --> 00:20:18,440
+yani önemini kaybederek daha az ve auto etkisi olan bir yapı oluşuyor.
+
+203
+00:20:18,440 --> 00:20:22,619
+Şimdi entegremize bakalım.
+
+204
+00:20:22,619 --> 00:20:27,619
+Tabii bu entegrenin biz R2R modülüyle falan vesaire hiç ilgilenmiyoruz.
+
+205
+00:20:27,619 --> 00:20:29,619
+İçerisinde bunlar R2R modülü var zaten.
+
+206
+00:20:29,619 --> 00:20:33,619
+Sadece şu o pump konması gerekiyor.
+
+207
+00:20:33,619 --> 00:20:36,619
+Çünkü Comparator yapması lazım.
+
+208
+00:20:36,619 --> 00:20:42,619
+Bir referans gerilimiyle bizim ürettiğimizi kıyaslayıp sonucu bize analog olarak vermesi,
+
+209
+00:20:42,619 --> 00:20:44,619
+vein olarak vermesi lazım.
+
+210
+00:20:44,619 --> 00:20:50,619
+Onun dışında bizim hani R dizaynı, 2R dizaynı bunlarla uğraşmayacağız.
+
+211
+00:20:53,619 --> 00:20:58,930
+Şimdi bakalım her zaman gibi bir çipse rektimiz var.
+
+212
+00:20:58,930 --> 00:21:04,180
+Bir çipse rektimiz var.
+
+213
+00:21:04,180 --> 00:21:06,180
+Bir yere bağlanmış.
+
+214
+00:21:06,180 --> 00:21:11,180
+Burada önemli olan belki fark ettiğiniz bir tane write'ım var.
+
+215
+00:21:11,180 --> 00:21:14,180
+Bir de ILE denilen bir kısım var.
+
+216
+00:21:14,180 --> 00:21:16,180
+Bir de ikinci bir write'ım var.
+
+217
+00:21:16,180 --> 00:21:21,180
+Bunlar bir algoritmayla ardı ardı tetiklenmesi gerekecek.
+
+218
+00:21:21,180 --> 00:21:23,180
+Hemen şuna geçelim.
+
+219
+00:21:23,180 --> 00:21:27,180
+Çip select zaten biliyoruz entegrenin enable olup olmamasını sağlayacak.
+
+220
+00:21:27,180 --> 00:21:34,180
+Ama çip select sıfırdan sonra ILE dediğimiz pin de bir olmalı ki,
+
+221
+00:21:34,180 --> 00:21:37,180
+ondan sonra write komutunu kabul ediyor.
+
+222
+00:21:37,180 --> 00:21:39,180
+Bu entegrenin özelliği bu.
+
+223
+00:21:39,180 --> 00:21:42,180
+Çip select'im sıfır olacak, ILE'm de bir olacak.
+
+224
+00:21:42,180 --> 00:21:45,180
+Zaten biz şu an diagramda ILE'ye direkt bir vermişiz,
+
+225
+00:21:45,180 --> 00:21:49,180
+çip select'i yukarıdan geldiği anda write'ı aktif edecekmiş gibi.
+
+226
+00:21:49,180 --> 00:21:52,180
+Çünkü şuradan zaten ILE'ye bir verdiğimiz için.
+
+227
+00:21:52,180 --> 00:21:56,180
+Ama entegrenin çalışma prensibinde çip select sıfır olacak,
+
+228
+00:21:56,180 --> 00:22:00,180
+sonra ILE bir olacak, ondan sonra write'ın komutunu alıyor.
+
+229
+00:22:02,779 --> 00:22:09,779
+Write 1'den enable olabilmesi için ILE ile çip select'in kombinasyonu olması,
+
+230
+00:22:09,779 --> 00:22:11,779
+onların ikisinin de çalışıyor olması lazım.
+
+231
+00:22:11,779 --> 00:22:14,779
+Write 1 aktif load'a çalışıyor.
+
+232
+00:22:14,779 --> 00:22:16,779
+Zaten üstündeki tetikten dolayı.
+
+233
+00:22:16,779 --> 00:22:18,779
+Ama burada sıkıntı şu.
+
+234
+00:22:18,779 --> 00:22:20,779
+Şimdi leçleme yapmamız lazım.
+
+235
+00:22:20,779 --> 00:22:25,779
+Biz bir analog devreyi dijitalize ediyoruz ama leç diye bekletmemiz lazım.
+
+236
+00:22:25,779 --> 00:22:27,779
+Yani discrete etmemiz lazım.
+
+237
+00:22:27,779 --> 00:22:29,779
+Çünkü bu analog sinyal değişkenlik gösterebilir.
+
+238
+00:22:30,779 --> 00:22:32,779
+Buradan girişlerde.
+
+239
+00:22:32,779 --> 00:22:34,779
+Pardon, dijital sinyal karıştı konseptler.
+
+240
+00:22:34,779 --> 00:22:36,779
+Dijitali leçlemem lazım ki,
+
+241
+00:22:36,779 --> 00:22:43,779
+yani o anki dijitalize ettiğim 1-1 sıfırlardaki sinyalin analogunu göreyim.
+
+242
+00:22:43,779 --> 00:22:45,779
+Yani tutmam lazım değil mi?
+
+243
+00:22:45,779 --> 00:22:47,779
+Yoksa değişkenlik gösterebilir.
+
+244
+00:22:47,779 --> 00:22:49,779
+İşte tutmak için de,
+
+245
+00:22:49,779 --> 00:22:52,779
+yani dijital kısmı leçlemek için ise,
+
+246
+00:22:52,779 --> 00:22:56,779
+biz write'ı tekrardan 1'e çekmemiz lazım.
+
+247
+00:22:56,779 --> 00:22:58,779
+Yani write sıfırla veriyi gönderiyoruz.
+
+248
+00:22:58,779 --> 00:23:00,779
+Dijital veriyi.
+
+249
+00:23:00,779 --> 00:23:07,779
+Write 1 ile tekrardan leçleniyor.
+
+250
+00:23:07,779 --> 00:23:09,779
+Sonra,
+
+251
+00:23:09,779 --> 00:23:15,779
+write 2 komutu aktif load'la bizim daç register'ını atamamız lazım sayımız.
+
+252
+00:23:15,779 --> 00:23:18,779
+Binary input'umuzu.
+
+253
+00:23:18,779 --> 00:23:19,779
+Şu an leçlemiştik.
+
+254
+00:23:19,779 --> 00:23:22,779
+Leçlenenin register'a geçmesi lazım input leçten.
+
+255
+00:23:22,779 --> 00:23:27,779
+Tabii bir de bunun Xfer, şuradaki Xfer'in de sıfır olması lazım.
+
+256
+00:23:27,779 --> 00:23:29,779
+Zaten baktığınızda,
+
+257
+00:23:29,779 --> 00:23:31,779
+onları da biz zaten direkt GND'ye,
+
+258
+00:23:31,779 --> 00:23:33,779
+diagramda vermişiz.
+
+259
+00:23:33,779 --> 00:23:34,779
+Yani aslında,
+
+260
+00:23:34,779 --> 00:23:36,779
+olayı baştan alırsak,
+
+261
+00:23:36,779 --> 00:23:37,779
+çipserek ile çipsetiyoruz.
+
+262
+00:23:37,779 --> 00:23:39,779
+Zaten ILA'yı 1 verdiğimiz için,
+
+263
+00:23:39,779 --> 00:23:41,779
+çipserek direkt seçmiş oldu.
+
+264
+00:23:41,779 --> 00:23:43,779
+Write sıfıra indiği anda,
+
+265
+00:23:43,779 --> 00:23:44,779
+diğerleri okunuyor.
+
+266
+00:23:44,779 --> 00:23:46,779
+Ama write tekrardan 1 olması lazım.
+
+267
+00:23:46,779 --> 00:23:50,779
+Ve ikinci write'in sıfıra düşmesi lazım.
+
+268
+00:23:50,779 --> 00:23:51,779
+Ki bu da zaten,
+
+269
+00:23:51,779 --> 00:23:54,779
+şuradaki write sinyalindeki o değişim sayesinde,
+
+270
+00:23:54,779 --> 00:23:56,779
+bir switch sayesinde,
+
+271
+00:23:56,779 --> 00:23:58,779
+ikisini birden etkileyebiliyor bu durum.
+
+272
+00:23:58,779 --> 00:24:00,779
+Şurada gözüküyor zannedersem.
+
+273
+00:24:00,779 --> 00:24:04,779
+Sonra Xfer'i de zaten biz GND'ye verdiğimiz için,
+
+274
+00:24:04,779 --> 00:24:06,779
+direkt okuma işlemini,
+
+275
+00:24:06,779 --> 00:24:09,779
+yani daha doğrusu dijital sayının leçe,
+
+276
+00:24:09,779 --> 00:24:10,779
+sonra da register,
+
+277
+00:24:10,779 --> 00:24:13,779
+duck register'ın atanmasını sağlamış olduk.
+
+278
+00:24:13,779 --> 00:24:15,779
+Bunu söyledik zaten.
+
+279
+00:24:15,779 --> 00:24:20,599
+Sıfırdan yediye dijital input'larımız zaten,
+
+280
+00:24:20,599 --> 00:24:24,599
+yodbirlerimiz birinci duck'ın içerisinde iki tane register var.
+
+281
+00:24:24,599 --> 00:24:26,599
+Birinci registerdeki output'umuz,
+
+282
+00:24:26,599 --> 00:24:28,599
+ikincisi de ikinci registerdeki output'umuz.
+
+283
+00:24:28,599 --> 00:24:31,599
+Şuradaki o pump'a giden kısım.
+
+284
+00:24:32,599 --> 00:24:35,599
+İşte bu R2R yapısı zaten tasarlanmış.
+
+285
+00:24:35,599 --> 00:24:37,599
+Hani bizim bu,
+
+286
+00:24:37,599 --> 00:24:41,599
+şuradaki feedback şurasını düşünmemize gerek yok.
+
+287
+00:24:41,599 --> 00:24:46,599
+Zaten içeride R2R yapısıyla beraber çalışan bir diagrama var.
+
+288
+00:24:46,599 --> 00:24:50,599
+Referans valyosu da GND olarak vereceğiz bu entegrenme.
+
+289
+00:24:50,599 --> 00:24:52,599
+Şimdi bak...
+
+290
+00:24:53,599 --> 00:24:56,980
+Evet, soru mu var? Bir...
+
+291
+00:24:57,980 --> 00:24:59,980
+Yok herhalde.
+
+292
+00:24:59,980 --> 00:25:01,980
+Baktığımızda çipselekle düştük.
+
+293
+00:25:01,980 --> 00:25:04,980
+IL1, hani burada ikisini beraber göstermemiş ama,
+
+294
+00:25:04,980 --> 00:25:05,980
+şuradan anlaşılıyor.
+
+295
+00:25:05,980 --> 00:25:08,980
+Yani IL1 çipselekle sıfır verdiğimizi düşünelim.
+
+296
+00:25:08,980 --> 00:25:10,980
+Sonra write'mız sıfıra indiğinde,
+
+297
+00:25:10,980 --> 00:25:12,980
+data'mız out'tan,
+
+298
+00:25:12,980 --> 00:25:14,980
+sinyal şifreyle,
+
+299
+00:25:14,980 --> 00:25:16,980
+ve data'mız out'tan,
+
+300
+00:25:16,980 --> 00:25:18,980
+sinyal şeklinde elde edebiliyoruz.
+
+301
+00:25:18,980 --> 00:25:22,980
+Burada da VR1 ile 2'yi aynı anda göstermemesinin nedeni şu,
+
+302
+00:25:22,980 --> 00:25:24,980
+ikisini aynı yere bağladığı için,
+
+303
+00:25:24,980 --> 00:25:26,980
+o arada hani ilk başta sıfır verdik,
+
+304
+00:25:26,980 --> 00:25:31,980
+sonra işte 1'e ve sonra sıfıra ani değişim yapıyoruz.
+
+305
+00:25:31,980 --> 00:25:34,980
+O kısım göstermemiş sadece diagramda.
+
+306
+00:25:35,980 --> 00:25:37,980
+Bir örnek bakalım.
+
+307
+00:25:37,980 --> 00:25:41,980
+Dediğim gibi hani bu teknik tabirleri biz kodlarken tabii yapmayacağız.
+
+308
+00:25:41,980 --> 00:25:44,980
+Zaten diagramlar size biliyorsunuz, hazır verin diyor.
+
+309
+00:25:44,980 --> 00:25:48,980
+Ama sadece bu işlem akışının nasıl olduğunu bilirim.
+
+310
+00:25:48,980 --> 00:25:53,450
+İlk etapta adresi DX'e atamışız zaten.
+
+311
+00:25:53,450 --> 00:25:55,450
+Örnekte AL'yi sıfırlamışız.
+
+312
+00:25:55,450 --> 00:25:57,450
+Sonra DX'i,
+
+313
+00:25:57,450 --> 00:25:59,450
+AL'deki sıfır derin DX'e,
+
+314
+00:25:59,450 --> 00:26:02,450
+yani porta yazmışız ve bir delay almışız.
+
+315
+00:26:02,450 --> 00:26:06,450
+Yani burada delay şu yüzden önemli arkadaşlar.
+
+316
+00:26:06,450 --> 00:26:10,450
+Çünkü bu analog bir sinyal üreteceğiz ya sonuçta.
+
+317
+00:26:10,450 --> 00:26:15,450
+Ürettiğimiz sinyalin gürültüsünden etkilenmesi çok muhtemel.
+
+318
+00:26:15,450 --> 00:26:17,450
+Onun için bir delay atıyoruz.
+
+319
+00:26:17,450 --> 00:26:20,450
+Sonrasında bir increment AL'iyle 1 yaptık
+
+320
+00:26:20,450 --> 00:26:22,450
+ve tekrar bu dönem burayı,
+
+321
+00:26:22,450 --> 00:26:26,450
+yani sıfırdan FF kadar DX porta göndermiş olduk verilerimizi.
+
+322
+00:26:26,450 --> 00:26:28,450
+Amaç ne?
+
+323
+00:26:28,450 --> 00:26:30,450
+Zaten şeyde de yapacağız.
+
+324
+00:26:30,450 --> 00:26:33,450
+Yani sıfır sıfır sıfır gönderdiğimizde bu portlara,
+
+325
+00:26:33,450 --> 00:26:36,450
+zaten bizim sıfır voltumuz çıkacak.
+
+326
+00:26:36,450 --> 00:26:38,450
+Sıfır sıfır sıfır 1'i gönderdiğimizde,
+
+327
+00:26:38,450 --> 00:26:42,450
+sıfır nokta 125 miydi neydi öyle bir şey çıkacak.
+
+328
+00:26:42,450 --> 00:26:44,450
+Yani amaç bir sinyal üretmek.
+
+329
+00:26:44,450 --> 00:26:48,450
+Sıfırdan FF kadar belli bir delay'lerle leçleyerek,
+
+330
+00:26:48,450 --> 00:26:52,450
+kendi içerisinde leçleniyor bunlar tabi o delay onu kast ediyor,
+
+331
+00:26:52,450 --> 00:26:56,450
+delay'lerle leçleyerek ve oradan sonra Dark Registrar'ı atayarak,
+
+332
+00:26:56,450 --> 00:27:00,450
+analog bir sinyali elde etmiş oluyoruz sıfırdan FF kadar.
+
+333
+00:27:00,450 --> 00:27:06,450
+Peki sizce nasıl bir sinyal üretmiş oluruz sıfırdan FF kadar bir şey gönderirsem,
+
+334
+00:27:07,450 --> 00:27:09,450
+input'a, disk'lere?
+
+335
+00:27:09,450 --> 00:27:14,450
+Yani ilk başta sıfır sıfır sıfır 7 bit sıfır gönderdim.
+
+336
+00:27:14,450 --> 00:27:16,450
+Tamam bu sıfır volt.
+
+337
+00:27:16,450 --> 00:27:20,450
+Sonra en MSB'sini 1 yaptım.
+
+338
+00:27:20,450 --> 00:27:22,450
+Bir şey olacak.
+
+339
+00:27:22,450 --> 00:27:24,450
+Ne olacağı hani şu an değerleri önemli değil de,
+
+340
+00:27:24,450 --> 00:27:29,789
+nihayetinde nasıl bir sinyal görmem beklenir sizce?
+
+341
+00:27:29,789 --> 00:27:32,789
+Yani mesela bir sinüs görmem gerekir mi?
+
+342
+00:27:32,789 --> 00:27:40,559
+Analyze edelim sinüse benziyor mu?
+
+343
+00:27:41,559 --> 00:27:45,559
+Bir kere yani sizce linear mı yükselecek?
+
+344
+00:27:45,559 --> 00:27:48,559
+Non-linear yani bir sinü sinyali gibi mi yükselecek?
+
+345
+00:27:48,559 --> 00:27:55,839
+Cevap yok mu arkadaşlar?
+
+346
+00:27:55,839 --> 00:28:04,039
+Şimdi biz normalde bir inkrement yapıyoruz ve her birinde 1 bit değişiyor değil mi?
+
+347
+00:28:04,039 --> 00:28:06,039
+Yani bir sayı artıyor.
+
+348
+00:28:06,039 --> 00:28:08,039
+Yani aslında bir step gidiyor.
+
+349
+00:28:08,039 --> 00:28:14,039
+O yüzden benim sinyalim sıfır sıfırda böyle biraz artarak gidip,
+
+350
+00:28:14,039 --> 00:28:18,039
+sonuçta F art şey girişteki al'e artıyor inkrement.
+
+351
+00:28:18,039 --> 00:28:22,039
+Ff olduktan sonra sıfırlanacağı için,
+
+352
+00:28:22,039 --> 00:28:24,039
+niye çizmeyelim?
+
+353
+00:28:24,039 --> 00:28:27,039
+Şöyle bir testere dişi gibi sinyal görmemiz gerekmez mi?
+
+354
+00:28:27,039 --> 00:28:36,059
+Bu kısımda anlamadığımız yer var mı arkadaşlar?
+
+355
+00:28:36,059 --> 00:28:39,059
+Anlamadığımız bir nokta varsa soralım.
+
+356
+00:28:39,059 --> 00:28:49,660
+Gerçi neden testere dişi üreti yani gördüğümüz sinyal neden testere dişi bunu anladık mı?
+
+357
+00:28:49,660 --> 00:28:54,660
+Yani biz sizden bir sinüs dalgası ile üretmenizi isteyebiliriz belki.
+
+358
+00:28:54,660 --> 00:29:02,740
+Neyse arkadaşlar devam edelim.
+
+359
+00:29:02,740 --> 00:29:05,740
+Siz çok ilgili değilsiniz herhalde.
+
+360
+00:29:05,740 --> 00:29:08,740
+Hocam ben bir tane soru sorabilir miyim?
+
+361
+00:29:08,740 --> 00:29:09,740
+Evet.
+
+362
+00:29:09,740 --> 00:29:13,740
+Sinüs dalgası için Ff'den sonra sıfırı düşürmek yerine direkman Ff'den geriye doğru sayıp,
+
+363
+00:29:13,740 --> 00:29:16,740
+ondan sonra devam etmemiz gerekmez mi?
+
+364
+00:29:16,740 --> 00:29:18,740
+Hemen test edelim.
+
+365
+00:29:18,740 --> 00:29:20,740
+Ff'e kadar artıyorum.
+
+366
+00:29:20,740 --> 00:29:23,740
+Ff'den geriye incremental düşüyorum.
+
+367
+00:29:23,740 --> 00:29:25,740
+Sinüse benzemedi ama.
+
+368
+00:29:25,740 --> 00:29:26,740
+Evet.
+
+369
+00:29:26,740 --> 00:29:28,740
+Üçgen dalga.
+
+370
+00:29:28,740 --> 00:29:46,990
+Sinüs dalgasını üretmek için arkadaşlar şöyle bir yani sinüs dalgası için anlık değişen bir eğim yani farklı değerler vermemiz lazım.
+
+371
+00:29:46,990 --> 00:29:50,990
+Bu sinüs dalgası için biraz düşünün tamam mı?
+
+372
+00:29:50,990 --> 00:29:55,990
+Çünkü Tio vereyim size yani güzel bir soru olabilir.
+
+373
+00:29:55,990 --> 00:29:59,400
+Sinüs dalgası için düşünelim.
+
+374
+00:29:59,400 --> 00:30:12,400
+Ama arkadaşın zın dediği kısımda eğer ki Ff arttırdım sonra Ff'den düşürdüysem bir testere dişi ya işte gerçi öteki sharpeningle de benziyor da üçgen dalga diyelim.
+
+375
+00:30:12,400 --> 00:30:16,400
+Üçgen dalganın oluşması mümkün ama sinüs dalgası değil.
+
+376
+00:30:16,400 --> 00:30:21,400
+Sinüs dalgası işini düşünelim arkadaşlar biraz.
+
+377
+00:30:21,400 --> 00:30:24,400
+Tamam.
+
+378
+00:30:24,400 --> 00:30:35,400
+Şimdi DAC ile alakalı örneği olmadı şimdi yapalım veya ADC'yi de anlatıp ikisini beraber mi bakalım?
+
+379
+00:30:35,400 --> 00:30:40,400
+Evet ADC'yi de anlatalım o zaman ikisine sonradan beraber bakalım.
+
+380
+00:30:40,400 --> 00:30:50,769
+ADC'ler ise aslında DAC'nin tam tersi zaten hani analog bir sinyali dijitalize etmek için kullandığımız bir yöntem.
+
+381
+00:30:50,769 --> 00:31:00,769
+Bu daha basit düşünülebilir şöyle ki elektronik olarak dizaynlarda bir comparator opampı kullanılır.
+
+382
+00:31:00,769 --> 00:31:13,769
+Bu comparator'ın amacı şudur iki uçtan yani girişlerinden iki tanesinden referans olanı geçerse eğer in öteki uç yani burası artı bir olur.
+
+383
+00:31:13,769 --> 00:31:15,769
+Yani bir verir sadece.
+
+384
+00:31:16,769 --> 00:31:22,769
+Ama işte referans eğer ki beyin referansın altında kalırsa sıfır olur.
+
+385
+00:31:22,769 --> 00:31:28,769
+Şimdi şöyle valla şey sizde çok zormuş bu iş ya.
+
+386
+00:31:28,769 --> 00:31:32,750
+Şöyle bir örnek verelim.
+
+387
+00:31:32,750 --> 00:31:38,470
+Bir sürü referansın beş volt.
+
+388
+00:31:38,470 --> 00:31:39,470
+Tamam mı?
+
+389
+00:31:39,470 --> 00:31:41,470
+Şuradaki referans beş volt.
+
+390
+00:31:41,470 --> 00:31:44,470
+Şimdi buradaki noktada beş voltu göreceğim değil mi?
+
+391
+00:31:45,470 --> 00:31:49,470
+Şurada şimdi hesaplayamayacağım ama üç buçuk gibi bir şey göreceğim zannedersem.
+
+392
+00:31:49,470 --> 00:31:50,470
+Yo, dört buçuk gibi bir şey göreceğim.
+
+393
+00:31:50,470 --> 00:31:52,470
+Dört nokta iki olabilir.
+
+394
+00:31:52,470 --> 00:31:57,470
+Ya buradaki Re'lere göre bölüne bölüne gidecek bir gerilim bölücü devresi aslında değil mi?
+
+395
+00:31:57,470 --> 00:32:00,470
+Şurası işte üç nokta yedi olsun.
+
+396
+00:32:00,470 --> 00:32:02,470
+Şurası üç nokta iki olsun.
+
+397
+00:32:02,470 --> 00:32:03,470
+Farazi bunlar.
+
+398
+00:32:03,470 --> 00:32:06,470
+Ya sonuçta en nihayetinde şurası sıfır olacak.
+
+399
+00:32:06,470 --> 00:32:07,470
+Değil mi?
+
+400
+00:32:07,470 --> 00:32:10,470
+Ya burası sıfır nokta beş olsun hadi.
+
+401
+00:32:10,470 --> 00:32:12,470
+Gibi bir değer olacak.
+
+402
+00:32:12,470 --> 00:32:17,470
+Şimdi ben vi'ni üç buçuk verirsem, üç buçuk volt diye bir değer verdim.
+
+403
+00:32:17,470 --> 00:32:19,470
+Şimdi buradan bir gelecek.
+
+404
+00:32:19,470 --> 00:32:22,470
+Çünkü beşten, pardon biri nereden geldi ya?
+
+405
+00:32:30,349 --> 00:32:34,349
+Üç buçuk beşten ufak olduğu için sıfır gelecek değil mi?
+
+406
+00:32:34,349 --> 00:32:38,339
+Sıfır gelecek.
+
+407
+00:32:38,339 --> 00:32:40,339
+Şurası sıfır gelecek.
+
+408
+00:32:40,339 --> 00:32:41,339
+Burası sıfır gelecek.
+
+409
+00:32:41,339 --> 00:32:44,339
+Ama üç nokta ikiden büyük olduğu için bir gelecek.
+
+410
+00:32:44,339 --> 00:32:46,339
+Burada bir gelecek.
+
+411
+00:32:46,339 --> 00:32:47,339
+Numerik değerleri bir gelecek.
+
+412
+00:32:47,339 --> 00:32:48,339
+Hepsi büyük.
+
+413
+00:32:48,339 --> 00:32:54,339
+Şimdi bundan sonra şuradaki numerik değerleri bir priority encoder'a sokuyorum.
+
+414
+00:32:54,339 --> 00:32:55,339
+Ne demek bu?
+
+415
+00:32:55,339 --> 00:33:01,339
+En yüksek, şurası MSB, şurası LSB olarak takıldığı inputları verelim düşünelim.
+
+416
+00:33:01,339 --> 00:33:05,339
+En yüksek MSB'nin indisini alır sadece.
+
+417
+00:33:05,339 --> 00:33:11,339
+Ve onu dekoderle encoder ederek, yani dekoderin tam tersi, kodlar.
+
+418
+00:33:11,339 --> 00:33:21,339
+Mesela burada sıfır bir iki üç desek, yani üçüncünü alıp buraya sıfır bir bir diye kodladığını düşüneceğiz.
+
+419
+00:33:21,339 --> 00:33:23,339
+Yani diğerlerinin önemi yok.
+
+420
+00:33:23,339 --> 00:33:31,339
+Ve aslında benim şu an üç buçuk voltum sıfır bir bir olduğunu söyleyen bir yapı.
+
+421
+00:33:31,339 --> 00:33:32,339
+Bu.
+
+422
+00:33:32,339 --> 00:33:33,339
+Anlaşıldı mı?
+
+423
+00:33:33,339 --> 00:33:35,339
+Hani mentalitesi?
+
+424
+00:33:35,339 --> 00:33:38,339
+Normalde yapılan işlem budur arkadaşlar.
+
+425
+00:33:39,339 --> 00:33:43,339
+Tabii biz buna dediğim gibi yine hani şey yapmayacağız.
+
+426
+00:33:43,339 --> 00:33:47,339
+Entegre kullanacağız ama yani mantığını anlayalım diye.
+
+427
+00:33:47,339 --> 00:33:58,150
+Başka bir yöntem ise counter'ları kullanmak yöntemi.
+
+428
+00:33:58,150 --> 00:34:00,150
+Gene bir referans gerilimimiz var.
+
+429
+00:34:00,150 --> 00:34:13,150
+Ama bunun in'in referans gerilimini biz bir içerde counter'la ff'le başlayıp sıfırla başlayıp ff'e doğru giden bir counter'la analog sinyali üretiyoruz.
+
+430
+00:34:13,150 --> 00:34:19,150
+Ve analog sinyalimiz işte maksimum beş volta başladığımı düşünelim.
+
+431
+00:34:19,150 --> 00:34:22,150
+Beş volttan düşürerek bir analog sinyal üretiliyor.
+
+432
+00:34:22,150 --> 00:34:26,150
+Ta ki ve in'imiz eğer ki üç buçuk olduğunu düşünelim gene.
+
+433
+00:34:26,150 --> 00:34:32,150
+Beşten aşağı counter'ı işte büyülterek ona göre de analog sinyali üreterek düşürtüyoruz.
+
+434
+00:34:32,150 --> 00:34:36,150
+Beş volttan üç buçuk altına düşünce buradan bir geliyor.
+
+435
+00:34:36,150 --> 00:34:40,150
+Ve bir geldiği için bu değer direkt şuradaki.
+
+436
+00:34:40,150 --> 00:34:49,150
+Gene aynı şekilde deminki devredeki binary karşılığın yani o anki counter sayısı benim binary karşılığı oluyor bu ve in'in.
+
+437
+00:34:49,150 --> 00:34:53,150
+Bu da bir teknik hani counter'la yapılan.
+
+438
+00:34:53,150 --> 00:34:57,150
+Biz dediğim gibi entegre kullanacağız.
+
+439
+00:34:57,150 --> 00:35:04,150
+Entegre'ye baktığımızda şu şeyi tekrar alayım.
+
+440
+00:35:04,150 --> 00:35:06,150
+Gene bir chip select'imiz var.
+
+441
+00:35:06,150 --> 00:35:08,150
+Gene bir adres çözümlememiz mevcut.
+
+442
+00:35:08,150 --> 00:35:10,150
+Read-write sinyalimiz var.
+
+443
+00:35:10,150 --> 00:35:19,150
+Clock'umuz önemli çünkü buradaki clock aslında demin anlattığım counter mimarisiyle bir leçleme devresi bu.
+
+444
+00:35:19,150 --> 00:35:21,150
+ADC'den kasıt.
+
+445
+00:35:21,150 --> 00:35:25,150
+Sonra bir buranın önemli özelliği bu bacağı arkadaşlar.
+
+446
+00:35:25,150 --> 00:35:27,150
+Bir interrupt'ımız var.
+
+447
+00:35:27,150 --> 00:35:29,150
+Buna değineceğiz sonra.
+
+448
+00:35:29,150 --> 00:35:31,150
+Gene de uçlarımız var.
+
+449
+00:35:31,150 --> 00:35:33,150
+Analog gene de, bedişler gene de için.
+
+450
+00:35:34,150 --> 00:35:39,150
+Referans, clock bunlar ikinci hani ikinci kısımlar için.
+
+451
+00:35:39,150 --> 00:35:42,150
+Şurası digital output'larımız.
+
+452
+00:35:42,150 --> 00:35:44,150
+Bir besleme gelinmemiz var.
+
+453
+00:35:44,150 --> 00:35:47,150
+DB0'umuz LSB yani en anlamsız.
+
+454
+00:35:47,150 --> 00:35:49,150
+MSB'de de V7'imiz oluyor.
+
+455
+00:35:49,150 --> 00:35:53,150
+Şuradan da ve in dediğimiz kısımdan da analog girişimiz veriliyor.
+
+456
+00:35:53,150 --> 00:35:58,150
+Şimdi amaç buradaki analog girişin dijitalize karşılığını almak.
+
+457
+00:35:59,150 --> 00:36:03,150
+Dediğim gibi demin ki hani counter mimarisi vardı ya,
+
+458
+00:36:03,150 --> 00:36:10,150
+bu counter o kısmı yani şuradaki saydıktan sonraki noktada geçtiği anda bir interrupt üretiyor.
+
+459
+00:36:10,150 --> 00:36:21,150
+Ve bu interrupt ile ben aslında ilgili volt'un counter karşılığını aldım, ben hazırım sinyal üretiyorum.
+
+460
+00:36:21,150 --> 00:36:25,150
+Bu sinyal sıfırla tetikleniyor tabii.
+
+461
+00:36:25,150 --> 00:36:37,150
+Bu sinyal bizim başka entegre yani şeyin mikro işlemcinin başka bir pininden verdiğimiz sinyalle bu bir triaktır.
+
+462
+00:36:37,150 --> 00:36:38,150
+Triaktan nasıl çalışır?
+
+463
+00:36:38,150 --> 00:36:44,150
+Şuradaki sıfır olursa şuradaki pini, buradaki interrupt'ı output'a çıkartırız değil mi?
+
+464
+00:36:44,150 --> 00:36:52,150
+Burada da bu IO2'nin kontrolü ile biz AD7'de bir sinyal varsa,
+
+465
+00:36:52,150 --> 00:36:55,150
+demek ki bu çevrim tamamlanmıştır bilgisi alacağız.
+
+466
+00:36:55,150 --> 00:36:59,150
+Yani interrupt'ı kontrol edeceğiz öyle diyelim.
+
+467
+00:36:59,150 --> 00:37:06,139
+Şene baktığımızda işte çipserek evet seçti sonra right sinyalini gönderdik.
+
+468
+00:37:06,139 --> 00:37:14,139
+Eğer ki buz değilse yani not buz modundaysa yani o interrupt bacağı bizim 1'deyse diyelim.
+
+469
+00:37:14,139 --> 00:37:20,139
+Sıfırda olmak demek zaten interrupt oluşturdum buz modundayım demek.
+
+470
+00:37:20,139 --> 00:37:25,139
+1'deyse o zaman ben çevirme işlemini gerçekleştirebiliyorum.
+
+471
+00:37:25,139 --> 00:37:34,139
+Öteki taraftan interrupt'ımız sıfıra düştüğünde, çipserektide seçtiğimizde read işlemi yapacağız.
+
+472
+00:37:34,139 --> 00:37:39,139
+Yani 2 cycle biz mesela bir analog sinyali gönderdik.
+
+473
+00:37:39,139 --> 00:37:48,139
+Çevirdi, çevirdiğini okumak için tekrardan biz şuradaki IO2'yi tetikleyip okuma işlemini yapmamız lazım portlardan.
+
+474
+00:37:48,139 --> 00:37:57,139
+2 cycle'da bir işlem yani aslında sayıcılardan hatırlarsanız bir işlemler gerçekleşince interrupt oluşuyordu.
+
+475
+00:37:57,139 --> 00:38:01,139
+Yani out oluşuyordu ve biz onu interrupt gibi kullanabiliriz demiştik.
+
+476
+00:38:01,139 --> 00:38:07,139
+Burada da aslında bir bu interrupt ki bir sonraki derste de bütün interruptlara değineceğiz.
+
+477
+00:38:07,139 --> 00:38:15,139
+Burada oluşan şey benim çevirme işlemin bittiğini neye göre bittiğini işte içerideki bir counter'ın
+
+478
+00:38:15,139 --> 00:38:25,139
+bu ff'den arkaya doğru saydığında oluşacak daç yani bir analog sinyal ile girişteki gerilimi kıyaslayarak
+
+479
+00:38:25,139 --> 00:38:34,139
+işte bu girişteki gerilimi yani çevirmek istediğimiz gerilimin ilgili counter'ın işte atıyorum 2000.
+
+480
+00:38:34,139 --> 00:38:39,139
+Şöyle bir değer sayıyor ff'den alta doğru saydık.
+
+481
+00:38:40,139 --> 00:38:46,139
+2313'te oluşan volt gerilimi benim V inimden daha düşüğe düştü.
+
+482
+00:38:46,139 --> 00:38:52,420
+5'ten aşağı doğru indi yani ff 5 volt olduğunu düşünelim.
+
+483
+00:38:52,420 --> 00:38:54,420
+Çok zor bu mansu da yazmakta.
+
+484
+00:38:54,420 --> 00:39:00,420
+İşte tabi 16 bit sayıcı ya şöyle yazalım.
+
+485
+00:39:00,420 --> 00:39:09,099
+13'te de 2.5 volt 2.3 volt ama ben V in'de 2.5 volt vermişim.
+
+486
+00:39:09,099 --> 00:39:19,099
+Yani artık V inim bundan büyük olduğu için buradaki luatlama benim şuradaki o anki 2313'ü şu entegreye almamı sağlıyor
+
+487
+00:39:19,099 --> 00:39:24,099
+ve o da benim aslında binary bu değerin binary karşılığı olmuş oluyor.
+
+488
+00:39:24,099 --> 00:39:35,099
+Burada da aynı mantık bu interrupt ile artık girişin şu referansların arasındaki girişin tamamlandığını okuma işlemini yapabileceğimi
+
+489
+00:39:35,099 --> 00:39:44,099
+işlemciden ben IOE2 bacağını sıfırlayarak okuma işlemin için izin veriyorum ve datayı okumuş oluyorum.
+
+490
+00:39:44,099 --> 00:39:47,099
+Örnek kodda göreceğiz.
+
+491
+00:39:47,099 --> 00:39:58,699
+Okumak için bir ADC örneği 0200 bizim adres uzayına yerleştirdiğimiz ADC.
+
+492
+00:39:58,699 --> 00:40:08,699
+Sıfır sıfırladık alemizi ve bunu ADC'nin ilk şuradaki çift selekt için gönderdik IO1 için.
+
+493
+00:40:08,699 --> 00:40:11,699
+Sonra 400'ü bir daha seçtik.
+
+494
+00:40:11,699 --> 00:40:15,699
+Neden? Çünkü 400 dediğimiz yapı aslında şunun adresi.
+
+495
+00:40:15,699 --> 00:40:20,019
+Bunu kontrol edeceğiz.
+
+496
+00:40:20,019 --> 00:40:26,019
+DX'deki bütün 400'deki aleyi alıyoruz ve 80 ile test ediyoruz.
+
+497
+00:40:26,019 --> 00:40:28,019
+Neden 80 ile test ediyoruz?
+
+498
+00:40:28,019 --> 00:40:32,019
+Çünkü AD7 pininden biz kontrol edeceğiz.
+
+499
+00:40:32,019 --> 00:40:34,019
+Interrupt oluştu mu oluşmadı mı.
+
+500
+00:40:34,019 --> 00:40:45,019
+Eğer interrupt oluştuysa 80 ile test ettiğimizde direk geçecek ötekine.
+
+501
+00:40:45,019 --> 00:40:50,019
+Eğer değilse yani not 0 ise tekrar bu interrupt oluşana kadar.
+
+502
+00:40:50,019 --> 00:41:03,019
+Yani içerisindeki V in'deki değer bizim sayıcımız neticesinde oluşan değişken referans değğinin üstünde kalana kadar dönüştürme işlemi devam edecek.
+
+503
+00:41:03,019 --> 00:41:12,019
+Ama 8 artık bilinince interrupt oluşunca yani D7 pininde 1 olunca artık bizim interruptumuz oluştu.
+
+504
+00:41:12,019 --> 00:41:14,019
+Yani çevrim tamamlandı.
+
+505
+00:41:15,019 --> 00:41:20,019
+200'e geri dönüp portdaki data'yı normal alma işlemine geçeceğiz.
+
+506
+00:41:20,019 --> 00:41:25,019
+Yani hangi dijital sayı ise onu elde etmiş olacağız.
+
+507
+00:41:25,019 --> 00:41:29,019
+Sunumda genel bir soru var mı arkadaşlar?
+
+508
+00:41:29,019 --> 00:41:33,190
+Sunumda sorunuz var mı?
+
+509
+00:41:33,190 --> 00:41:43,010
+Örneklere geçeceğim. Olmadığına göre.
+
+510
+00:41:43,010 --> 00:41:45,010
+Örneğinize geçebiliriz.
+
+511
+00:41:45,010 --> 00:42:59,659
+Evet arkadaşlar.
+
+512
+00:42:59,659 --> 00:43:02,659
+DIG örneğinde hemen bir amacı dedim.
+
+513
+00:43:02,659 --> 00:43:07,329
+Dediğimiz gibi bir chip select'imiz vardı.
+
+514
+00:43:07,329 --> 00:43:17,329
+Çalışmanın background'ında VR1'in ilk başta OLE'nin chip select'le beraber kombinasyonuyla VR1'in oluşması.
+
+515
+00:43:17,329 --> 00:43:19,329
+Yani sıfıra düştükten sonra.
+
+516
+00:43:19,329 --> 00:43:27,329
+Sonra yazının içerideki dijital değerlerin leçlenmesi.
+
+517
+00:43:27,329 --> 00:43:31,329
+Sonra VR2 ile rejistere atanması vs.
+
+518
+00:43:31,329 --> 00:43:34,329
+Bu süreç zaten bu bağlantılar ile sağlanıyor.
+
+519
+00:43:34,329 --> 00:43:38,329
+O kısımlar işlem akışına bilmeniz için önemli.
+
+520
+00:43:38,329 --> 00:43:42,329
+Ondan sonra biz aslında okuma işlemi yapacağız.
+
+521
+00:43:42,329 --> 00:43:44,329
+Koduna bakalım.
+
+522
+00:43:44,329 --> 00:43:52,320
+1000H adresi ile şey yapılmış.
+
+523
+00:43:52,320 --> 00:43:55,320
+Onu kontrol etmedik ama EO8 diyor.
+
+524
+00:43:55,320 --> 00:43:57,320
+Bakalım.
+
+525
+00:43:57,320 --> 00:43:59,320
+EO8'imiz 9. pin.
+
+526
+00:43:59,320 --> 00:44:01,320
+EO8'inci pin.
+
+527
+00:44:01,320 --> 00:44:04,320
+Yani ne olmasını bekliyoruz?
+
+528
+00:44:04,320 --> 00:44:06,320
+Kalemide.
+
+529
+00:44:06,320 --> 00:44:11,949
+EO8 8. pin olduğu için.
+
+530
+00:44:11,949 --> 00:44:20,630
+Yani buradan 8'in oluşmasını sağlamamız lazım.
+
+531
+00:44:20,630 --> 00:44:23,630
+Yani 1 1 1 1 gelmesi lazım değil mi?
+
+532
+00:44:23,630 --> 00:44:25,630
+Yani şöyle 1 0 0 0 gelmesi lazım.
+
+533
+00:44:25,630 --> 00:44:28,630
+Yani bizim 12. pin'in 1 olması lazım.
+
+534
+00:44:28,630 --> 00:44:35,360
+E o da zaten koda baktığımızda tekrardan 1000H'e denk geliyor.
+
+535
+00:44:35,360 --> 00:44:37,360
+Bir yanlışlık yok.
+
+536
+00:44:37,360 --> 00:44:39,360
+Devam edelim.
+
+537
+00:44:39,360 --> 00:44:42,360
+Sonra AL'ye 0 atadık.
+
+538
+00:44:42,360 --> 00:44:46,360
+AL'nin değerini direkt port'a atadık.
+
+539
+00:44:46,360 --> 00:44:47,360
+Neden?
+
+540
+00:44:47,360 --> 00:44:52,360
+Çünkü 8. pin seçmek için zaten şuradan çipsilekli göndermiş oluyoruz.
+
+541
+00:44:52,360 --> 00:44:54,360
+Burada önemli nokta.
+
+542
+00:44:54,360 --> 00:44:58,360
+Fark ettiyseniz yuvarlak olmasından dolayı 0 verisi geliyor.
+
+543
+00:44:58,360 --> 00:45:03,360
+0 verisi ile burada da zaten çipsilekli sıfırla titremiş oluyoruz.
+
+544
+00:45:03,360 --> 00:45:06,360
+Sonra ne demişiz?
+
+545
+00:45:06,360 --> 00:45:08,360
+AL'ye 0 atamıştık.
+
+546
+00:45:08,360 --> 00:45:10,360
+AL'yi ünkrement ettik.
+
+547
+00:45:10,360 --> 00:45:11,360
+Arttırdık.
+
+548
+00:45:11,360 --> 00:45:12,360
+Endless'e girdi.
+
+549
+00:45:12,360 --> 00:45:13,360
+Dönüp duracak burada.
+
+550
+00:45:13,360 --> 00:45:15,360
+Bir delay koymuşuz.
+
+551
+00:45:15,360 --> 00:45:19,360
+Delay zaten FF'ten geriye sayan bir CX rejisteriydi.
+
+552
+00:45:19,360 --> 00:45:24,360
+Bu delay oldukça out'a port'a gömüyoruz.
+
+553
+00:45:24,360 --> 00:45:30,360
+Dx portundan yani şuradaki out'tan biz bir değer okuyacağız.
+
+554
+00:45:30,360 --> 00:45:34,360
+Deminki sunumdaki sorunun proteosu.
+
+555
+00:45:34,360 --> 00:45:35,360
+Çalıştıralım.
+
+556
+00:45:35,360 --> 00:45:45,699
+Evet.
+
+557
+00:45:45,699 --> 00:45:47,699
+A kanalına bağlanmış.
+
+558
+00:45:47,699 --> 00:45:53,699
+A kanalına göre baktığımızda deminki gibi test erdişi gibi bir sinyalimiz çıkıyor.
+
+559
+00:45:53,699 --> 00:45:56,699
+Bu da işte şuradan başlıyoruz.
+
+560
+00:45:56,699 --> 00:46:00,699
+Sıfırdan alttırarak inkrementi FF'ye gelince düşüyor.
+
+561
+00:46:00,699 --> 00:46:01,699
+Tekrar sıfırdan altıyor.
+
+562
+00:46:01,699 --> 00:46:02,699
+FF'ye gelince düşüyor.
+
+563
+00:46:02,699 --> 00:46:06,699
+Sıfırdan altıyor gibisinden bir sinyal üretmiş oluyoruz.
+
+564
+00:46:06,699 --> 00:46:13,699
+Yani dijitalize edilmiş olan dijital girişe analog bir sinyal elde etmiş oluyoruz.
+
+565
+00:46:13,699 --> 00:46:17,980
+Var mı sorumuz arkadaşlar burada?
+
+566
+00:46:17,980 --> 00:46:19,980
+Yok herhalde.
+
+567
+00:46:19,980 --> 00:46:28,969
+Hemen ADC örneğine bakalım.
+
+568
+00:46:28,969 --> 00:46:30,969
+ADC öde önemli olan nokta şu arkadaşlar.
+
+569
+00:46:30,969 --> 00:46:32,969
+İki kere adresleme yapacağımızı söyledik.
+
+570
+00:46:32,969 --> 00:46:34,969
+İlk adresimiz EO1.
+
+571
+00:46:34,969 --> 00:46:36,969
+Bizim bu Entegre'ni enable edecek.
+
+572
+00:46:36,969 --> 00:46:41,969
+Sonraki adresimiz ise Entegre'ye bir analog sinyal okuyacağız zaten.
+
+573
+00:46:41,969 --> 00:46:43,969
+Bunu enable eder etmez okumuş olacağız.
+
+574
+00:46:43,969 --> 00:46:53,969
+Okuduktan sonra dijitalize format'a geldiğinde buradaki AD7 pinini kontrol ederek interuptun oluşup oluşmadığını kontrol edeceğiz.
+
+575
+00:46:53,969 --> 00:47:03,969
+Ve interupt oluştuysa da ekrana yazdırılan hani hangi değerleri dijitalize ettiğini göstereceğimiz değerleri alayaya alabiliriz.
+
+576
+00:47:03,969 --> 00:47:05,969
+Veyahut da burada direkt göstermişiz.
+
+577
+00:47:05,969 --> 00:47:07,969
+Koduna bakalım.
+
+578
+00:47:07,969 --> 00:47:10,969
+Adreslemesi 200 demişiz.
+
+579
+00:47:10,969 --> 00:47:13,969
+Yani ne oluyor? 9 mu oluyor?
+
+580
+00:47:13,969 --> 00:47:28,500
+Tamam 00001'den başlamış.
+
+581
+00:47:28,500 --> 00:47:30,500
+EO1.
+
+582
+00:47:31,500 --> 00:47:33,500
+Tamam doğru.
+
+583
+00:47:33,500 --> 00:47:35,500
+DX'e atadık.
+
+584
+00:47:35,500 --> 00:47:37,500
+AL'i DX'e gönderdik.
+
+585
+00:47:37,500 --> 00:47:38,500
+Sıfırla.
+
+586
+00:47:38,500 --> 00:47:40,500
+Sonra 400'e geçtik.
+
+587
+00:47:40,500 --> 00:47:42,500
+Hani artık işlemi şu kısım başlattı.
+
+588
+00:47:42,500 --> 00:47:44,500
+Cipselekle enable etti.
+
+589
+00:47:44,500 --> 00:47:46,500
+Sonra interupt kontrolü için 400'e.
+
+590
+00:47:46,500 --> 00:47:48,500
+Çünkü o da EO2'di.
+
+591
+00:47:48,500 --> 00:47:50,500
+Hatırlarsanız şuradaki.
+
+592
+00:47:50,500 --> 00:47:55,500
+Yukarıdan itibaren sayarsanız o da 400'e tekabül geliyor.
+
+593
+00:47:55,500 --> 00:47:58,500
+Yani şunu demeye çalışıyorum.
+
+594
+00:47:59,500 --> 00:48:01,500
+10 ile 9 pinleri.
+
+595
+00:48:01,500 --> 00:48:03,500
+Yani biri 00001.
+
+596
+00:48:03,500 --> 00:48:04,500
+Bir de 0000.
+
+597
+00:48:04,500 --> 00:48:06,500
+Bir sıfır olduğu için 9 ve 10.
+
+598
+00:48:06,500 --> 00:48:07,500
+O da 200'e.
+
+599
+00:48:07,500 --> 00:48:09,500
+400 olur.
+
+600
+00:48:09,500 --> 00:48:12,500
+Bu iki pinleri adresledikten sonra.
+
+601
+00:48:12,500 --> 00:48:15,500
+400'den de interupt kontrol yapıyoruz.
+
+602
+00:48:15,500 --> 00:48:19,500
+Porttan alaya değer neyse okuyoruz.
+
+603
+00:48:19,500 --> 00:48:21,500
+400'den ama yanlış olmasın.
+
+604
+00:48:21,500 --> 00:48:22,500
+200 değil.
+
+605
+00:48:22,500 --> 00:48:26,500
+400 çünkü bizim şu aşağıdakiydi.
+
+606
+00:48:26,500 --> 00:48:27,500
+Şurası.
+
+607
+00:48:27,500 --> 00:48:31,500
+Sonra biz bunu 80H'la test ediyoruz.
+
+608
+00:48:31,500 --> 00:48:33,500
+Neden 80H?
+
+609
+00:48:33,500 --> 00:48:37,500
+Çünkü diagramda da hatırlarsanız.
+
+610
+00:48:37,500 --> 00:48:42,500
+7. kısım yani D7 pinini kontrol ettiğimiz için.
+
+611
+00:48:42,500 --> 00:48:46,500
+Burayı interupt oluşana kadar kontrol ediyoruz.
+
+612
+00:48:46,500 --> 00:48:50,500
+Ki interupt oluşunca bizim şeyimiz.
+
+613
+00:48:50,500 --> 00:48:54,500
+Yani çevirme işlemimiz ADC için bitmiştir.
+
+614
+00:48:54,500 --> 00:48:57,500
+Dijitalizasyon olmuştur analog sinyaller diyoruz.
+
+615
+00:48:57,500 --> 00:49:00,500
+Sonra da zaten A'yı atamışız değerimize.
+
+616
+00:49:00,500 --> 00:49:05,059
+Şimdi osteoskop bu tarz.
+
+617
+00:49:05,059 --> 00:49:08,059
+Osteoskoplarda bir capture yapmak lazım.
+
+618
+00:49:08,059 --> 00:49:10,059
+A7'miz burada 1 olmuş.
+
+619
+00:49:10,059 --> 00:49:13,059
+Şimdi size biraz bunu yapalım.
+
+620
+00:49:24,500 --> 00:49:32,090
+Şurada data'nın dönüştüğünü görüyoruz.
+
+621
+00:49:32,090 --> 00:49:42,710
+Birazcık arasına şey yaparsak daha iyi gözüküyoruz.
+
+622
+00:49:42,710 --> 00:49:45,710
+Şurada düşen kenarda interupt'un oluştuğunu görüyoruz.
+
+623
+00:49:45,710 --> 00:49:48,710
+Ve interupt oluştuğunda da bir okuma işlemi.
+
+624
+00:49:48,710 --> 00:49:54,710
+analog sinyalini dijitalize formata getirildiğimiz bir sıfırlar gözüküyor.
+
+625
+00:49:54,710 --> 00:49:59,710
+Bu şekilde bir analog sinyali girişteki sinyali.
+
+626
+00:49:59,710 --> 00:50:01,710
+Şurada değiştirebiliriz.
+
+627
+00:50:01,710 --> 00:50:27,449
+Yani dijital sinyali bu şekilde 8-0 şeklinde gösterebiliyoruz.
+
+628
+00:50:27,449 --> 00:50:33,579
+Burada bir sorumuz var mı arkadaşlar?
+
+629
+00:50:33,579 --> 00:50:38,579
+Sadece DAC'de tek cycle, ADC'de iki cycle işlem yaptığımızı unutmayalım.
+
+630
+00:50:38,579 --> 00:50:49,780
+Tamam mıyız? Tamam herhalde.
+
+631
+00:50:49,780 --> 00:50:54,780
+Ara vermeyeceğim arkadaşlar. Erken bitireceğiz zaten.
+
+632
+00:50:54,780 --> 00:50:58,780
+Öteki interupt konusuna geçmeden tekrar soruyorum.
+
+633
+00:50:58,780 --> 00:51:01,780
+ADC ve DAC ile alakalı var mı bir problem?
+
+634
+00:51:01,780 --> 00:51:06,909
+Yok hocam teşekkür ederiz.
+
+635
+00:51:06,909 --> 00:51:11,909
+Tamam o zaman devam ediyoruz.
+
+636
+00:51:11,909 --> 00:51:15,909
+Biraz giriş yapacağız interuptlara.
+
+637
+00:51:15,909 --> 00:51:19,909
+Detaylıca o haftaya inceleyeceğiz örneklerle beraber.
+
+638
+00:51:19,909 --> 00:51:21,909
+Bu hafta bir giriş yapalım.
+
+639
+00:51:21,909 --> 00:51:24,909
+O girişlere hızlıca geçeriz haftaya.
+
+640
+00:51:24,909 --> 00:51:32,539
+Şimdi arkadaşlar interupt dediğimiz çoğu şeyde biz interuptlardan bahsettik esasında.
+
+641
+00:51:32,539 --> 00:51:38,539
+İşte counter'larda out'un oluşunca o out'u bir yerde kurunabileceğimizden bahsettik.
+
+642
+00:51:39,539 --> 00:51:43,539
+Veya işte handshaking'te eknoğulışment,
+
+643
+00:51:43,539 --> 00:51:47,539
+işte karşı tarafı IBF ve strop sinyallerinden bahsederken
+
+644
+00:51:47,539 --> 00:51:50,539
+aslında bir interupt varı yapılardan bahsetmiş bulundu.
+
+645
+00:51:50,539 --> 00:51:54,539
+Burada da aslında bir interupt entegresi kullanacağız
+
+646
+00:51:54,539 --> 00:51:59,539
+ve bu interuptları handle etmek için yani işte pek çok interupt oluşabilir.
+
+647
+00:51:59,539 --> 00:52:02,539
+Bunlardan hangisi öncelikli, hangisi daha önemli,
+
+648
+00:52:02,539 --> 00:52:05,539
+işte memurda bu interuptlar nasıl saklanıyor,
+
+649
+00:52:05,539 --> 00:52:09,539
+bunlar noktasında incelemeler yapacağız.
+
+650
+00:52:09,539 --> 00:52:13,539
+Şimdi interupt deyince iki tane konsept var aslında bilinen.
+
+651
+00:52:13,539 --> 00:52:15,539
+Yip pulling deniyor bir tanesine.
+
+652
+00:52:15,539 --> 00:52:23,539
+Yani siz bir işte karşı taraftan uyaran olmadan ara ara gidip kontrol etme işleminiz.
+
+653
+00:52:23,539 --> 00:52:31,539
+İşte bu örnekte ders çalışırken 5 dakikada bir bir kova doldu mu boş mu diye gidip bakması gibi bir öğrencinin.
+
+654
+00:52:31,539 --> 00:52:37,539
+Yani belli bir kova tarafından size bir uyaran etkinin olmadığı interupt şekli.
+
+655
+00:52:37,539 --> 00:52:40,539
+Bu zaten interupt gibi olmuyor biraz.
+
+656
+00:52:40,539 --> 00:52:44,539
+Hani bu da bir interupt şekli ama yani esasında bu
+
+657
+00:52:44,539 --> 00:52:49,539
+round-robin algoritmasını hatırlarsanız hani bir işi bulup,
+
+658
+00:52:49,539 --> 00:52:54,539
+o işi tamamlayıp sonra o başka işe geçme gibi bir durum var burada da.
+
+659
+00:52:54,539 --> 00:52:59,539
+Yani aslında 71 time interval'larda bir iş devam ederken
+
+660
+00:52:59,539 --> 00:53:03,539
+aralarda öteki işe bakma eylemi.
+
+661
+00:53:03,539 --> 00:53:08,539
+Bu da bir interupt ama bizim mikro işlemcide genelde kullandığımız interupt şekli bu değil.
+
+662
+00:53:08,539 --> 00:53:18,539
+Bir de interupt'ın oluşmasıyla yani normalde bir işte kovaya bir hoplör bağlanmış
+
+663
+00:53:18,539 --> 00:53:25,539
+ama burada yani bir uyaranla bir request olup mikro işlemcinin bu request'e göre eylem yapması.
+
+664
+00:53:25,539 --> 00:53:34,199
+Bu zaten bizim şu an interupt entegresi de yapmaya çalıştığımız işlem olacak.
+
+665
+00:53:34,199 --> 00:53:38,199
+Şimdi interupt'larda yani kesme diyelim bizlere.
+
+666
+00:53:38,199 --> 00:53:42,199
+Kesmeler, pek çok kesme var bu 82-59 entegresinde.
+
+667
+00:53:42,199 --> 00:53:48,199
+Mikro işlemci bazında da interupt pinlerini hızlıca bahsetmiştik zaten doğumsu olarak.
+
+668
+00:53:48,199 --> 00:53:50,199
+Pinleri analiz ederken.
+
+669
+00:53:50,199 --> 00:53:56,199
+Onlarda da uyumlu bir interupt oluşma, oluşturma, söz konusu kaynaklarını kullanmakta.
+
+670
+00:53:56,199 --> 00:54:01,199
+Yazınumsu olarak int, int0 ve int3 interuptlarından bahsedeceğiz.
+
+671
+00:54:01,199 --> 00:54:09,199
+Donanımsa olarak da intr ve non-maskable interupt dediğimiz nmi interuptlarından bahsedeceğiz.
+
+672
+00:54:09,199 --> 00:54:17,199
+Donanım kesmesi yani bu iki interuptlardan da ben interupt'a aldım denen bir sinyal üretilecek
+
+673
+00:54:17,199 --> 00:54:19,199
+ve biz buna int a diyeceğiz.
+
+674
+00:54:20,199 --> 00:54:26,199
+Çünkü karşı tarafta interupt'a alıp almadığını öğrenmesi üzerine kurgulayacağımız,
+
+675
+00:54:26,199 --> 00:54:29,199
+devrelerde kullanacağımız bir yapı bacak.
+
+676
+00:54:29,199 --> 00:54:35,199
+Kesmenin tabii bir de bayrakları da var ki biz işte if dediğimiz,
+
+677
+00:54:35,199 --> 00:54:44,199
+daha önce de işte o bayrakları analiz ederken kısaca bahsettiğimiz if ve tf kesme bayrakları.
+
+678
+00:54:44,199 --> 00:54:48,199
+Bunlardan bahsedeceğiz intf and tf diye geçen.
+
+679
+00:54:49,199 --> 00:54:57,199
+Bir de kesmeye gidince kesmeden dönüş komutu olarak da iret komutunu kullanacağız kesme kaynaklarında.
+
+680
+00:54:58,199 --> 00:55:05,199
+Kesme vektör tablosu dediğimiz tablo arkadaşlar şimdi her bir kesme alt bir programdır esasında değil mi?
+
+681
+00:55:05,199 --> 00:55:07,199
+Yani bir sabrutindir.
+
+682
+00:55:07,199 --> 00:55:12,199
+Yani bir kesme esnasında ne yapmasını istediğimiz bir alt programdır.
+
+683
+00:55:12,199 --> 00:55:18,199
+Şimdi bazıları işte donanım kaynaklı olacak, bazıları işte ismi verilmiş interupt blokları olacak.
+
+684
+00:55:18,199 --> 00:55:20,199
+İşte sıfırla bölünememe gibi.
+
+685
+00:55:20,199 --> 00:55:24,199
+Yani bir sayıyı bir sıfırla bölmeye çalıştığımızda arka planda aslında
+
+686
+00:55:24,199 --> 00:55:30,199
+memori de önceden onun lokasyonu belli bir alt programa, hata programına gider.
+
+687
+00:55:31,199 --> 00:55:34,199
+Yani normal mentalite bu üzerine çalışıyor.
+
+688
+00:55:34,199 --> 00:55:36,199
+Yani bir yere gitmesi gerekiyor.
+
+689
+00:55:36,199 --> 00:55:41,199
+Şimdi kesme vektör tablosundan kastımız bizim bu interupt'ların loketi olacak.
+
+690
+00:55:41,199 --> 00:55:46,199
+Yani yerleşecek havuza boyutlarında yerleşecek yerleri, vektörleri.
+
+691
+00:55:47,199 --> 00:55:53,199
+İşte kesme oluştuğunda mevcut CS ve IP'de, kod segment ve instruction pointer'ın gösterdiği
+
+692
+00:55:53,199 --> 00:56:00,199
+o andaki kodun yerini bırakarak kesme ilişkin fonksiyonunun yer aldığı kodların işlendiği tablo.
+
+693
+00:56:00,199 --> 00:56:06,199
+Yani nerede olduğu, o kodların nerede olduğunun adres bilgisini tutan tablo, öyle diyelim.
+
+694
+00:56:07,199 --> 00:56:13,199
+Yani mesela sıfıra böldüğümüzde direkt o sıfıra bölündüğünde
+
+695
+00:56:13,199 --> 00:56:18,199
+uygulanacak olan kodun adresi kesme vektör tablosunda tutuluyor.
+
+696
+00:56:19,199 --> 00:56:24,199
+Her kesmeye ilişkin fonksiyonlar kesme vektör tablosunda tutuluyor demiştik zaten.
+
+697
+00:56:25,199 --> 00:56:33,199
+Normal 8086'nın tam 1024 byte'lik bir alan ayrılıyor kesme vektör tablosunda
+
+698
+00:56:33,199 --> 00:56:36,199
+ve 256 farklı kesme için ayrılıyor bu.
+
+699
+00:56:36,199 --> 00:56:40,199
+Yani aslında her kesme 4 byte'lik bir alandan oluşuyor.
+
+700
+00:56:41,199 --> 00:56:48,199
+Yani 8 byte'lik bir adres düşünün, 4 adet o adresin üst üste bindirilmiş versiyonu
+
+701
+00:56:48,199 --> 00:56:52,199
+4 byte'lik bir alandan oluşuyor, şöyle şekli de vardı.
+
+702
+00:56:52,199 --> 00:56:55,199
+Bu neden 4 byte'lik bir alan oluşturuyor?
+
+703
+00:56:55,199 --> 00:57:02,199
+Çünkü ilk 2 byte'ı offset'ini, hani kod segment veya extra segment gibi kod segmentler var ya
+
+704
+00:57:02,199 --> 00:57:08,199
+o segmentin içerisinden ne kadar aşağı ne kadar o segmentin başlangıcının
+
+705
+00:57:08,199 --> 00:57:14,199
+o segmentin içerisinde ne kadar yer yukarı gideceğini belirten offset'i tutuyor.
+
+706
+00:57:14,199 --> 00:57:19,199
+Diğer 2 byte'i ise segment adresini tutuyor.
+
+707
+00:57:19,199 --> 00:57:24,199
+Yani aslında CSEP diyoruz ya şu 2 tanesi CSEP gibi algılanabilir.
+
+708
+00:57:24,199 --> 00:57:29,199
+Şu 2 tanesi de IP bilgisi gibi algılanabilir o support'un.
+
+709
+00:57:30,199 --> 00:57:31,199
+Bunları tutuyor.
+
+710
+00:57:32,199 --> 00:57:37,199
+Tabii bazıları rezerve edilmiş, ayrılmış interrupt'lar var.
+
+711
+00:57:37,199 --> 00:57:40,199
+Bir de bunlar pointer arkadaşlar bunu unutmayalım.
+
+712
+00:57:40,199 --> 00:57:44,199
+Tekrar diyorum interrupt'a yazdığımız subroutine buraya yerleşmiyor.
+
+713
+00:57:44,199 --> 00:57:49,199
+Subroutine'in adres bilgisi buraya geliyor, kesme vektör tablosuna.
+
+714
+00:57:51,199 --> 00:57:55,199
+Tamam değil mi? Bu bazen karışıyor çünkü biz programı buraya yazmıyoruz yani.
+
+715
+00:57:56,199 --> 00:58:03,199
+İşte bazı sıfıra bölündüğünde ki olacak olan interrupt kesmesi
+
+716
+00:58:03,199 --> 00:58:07,199
+tip 0 denen diye geçen bir interrupt kesme şekli
+
+717
+00:58:07,199 --> 00:58:17,199
+ve bunun adresi aslında kesme vektör tablosunda 0000 ile 00004 arasında yer edilmiş
+
+718
+00:58:17,199 --> 00:58:21,199
+segment ve offset değerleri bulunan bir adreste yazılı.
+
+719
+00:58:21,199 --> 00:58:29,199
+Tip 1 dediğimiz aslında debak ettiğimizde step by step çalıştırdığımız kodlardaki interrupt.
+
+720
+00:58:29,199 --> 00:58:32,199
+Bunun da adresi belli.
+
+721
+00:58:32,199 --> 00:58:35,199
+NMI non maskable interrupt.
+
+722
+00:58:35,199 --> 00:58:38,199
+Hiçbir şekilde kapatılamayacak olan interrupt.
+
+723
+00:58:38,199 --> 00:58:43,199
+Bu da tip 2 diye geçer. Bunun da adresi belli nerede oldu.
+
+724
+00:58:43,199 --> 00:58:49,199
+Tip 3 dediğimiz, ben single step ile herhalde tip 3'ü karıştırdım arkadaşlar.
+
+725
+00:58:49,199 --> 00:58:53,199
+Breakpoint olan debak yaptığımız tip 3 olabilir.
+
+726
+00:58:53,199 --> 00:58:56,199
+Bunu şu an ben de karıştırdım zannedersem.
+
+727
+00:58:56,199 --> 00:59:05,199
+Overflow, işte aşma biti, iki toplama işlemi yapılıyor veya çarpma işlemi yapılıyor bir overflow mekanizması var.
+
+728
+00:59:05,199 --> 00:59:13,199
+O sırada ne yapması gerektiğini söyleyen interrupt'ın adres bilgisi de burada zaten rezerv edilmiş.
+
+729
+00:59:13,199 --> 00:59:20,199
+Ama bunlar dışında biz kendi interrupt adres yani yazdığımız sub rutinleri bu vektör tablosuna yaslamayacağız mı yazabileceğiz.
+
+730
+00:59:20,199 --> 00:59:27,199
+Yukarıdaki available interrupt pointer'larına biz sub rutinlerimizin adreslerini yazabileceğiz.
+
+731
+00:59:27,199 --> 00:59:37,199
+Ama 80H kadarı yani bunlardan her biri 4 olduğunu düşünürsek yani şurası bir tane yani 20 tanesi.
+
+732
+00:59:37,199 --> 00:59:41,199
+20 mi yapıyor ya yanlış da bölmüş olabilirim.
+
+733
+00:59:41,199 --> 00:59:46,199
+Reserve edilmiş düşünebiliriz.
+
+734
+00:59:46,199 --> 00:59:53,929
+Kesme işleminde arkadaşlar genel olarak zaten bildiğimiz bir şey.
+
+735
+00:59:53,929 --> 00:59:59,929
+İşte kesme geldi, sıradaki işlem bittiğinde işlemci ilk yapacağı şey şu.
+
+736
+00:59:59,929 --> 01:00:02,929
+Hangi tarz bir kesme geldi bunu görmesi lazım.
+
+737
+01:00:02,929 --> 01:00:09,929
+İşte en anlamda en yüksek öncelikli kesme single step kesmesidir yani debak kesmesidir.
+
+738
+01:00:10,929 --> 01:00:19,929
+İkinci öncelikli ise aslında burada NML ile single step'i yani çok da kıyaslamamak lazım ayrı şeyler ama
+
+739
+01:00:19,929 --> 01:00:28,929
+şunu kıyaslarsak NML, Intr ve int şeylerini kesmelerini kıyaslarsak bunlar 3 farklı kesme.
+
+740
+01:00:28,929 --> 01:00:32,929
+En öncelikli kesme non-maskable interrupt'dır.
+
+741
+01:00:32,929 --> 01:00:34,929
+Donanımsal kesmedir yani.
+
+742
+01:00:34,929 --> 01:00:40,929
+İkincisi, ikinci bir donanımasal kesme olan int-r kesmesi sonra da int kesmesidir.
+
+743
+01:00:40,929 --> 01:00:43,929
+Yani int-0, int-1, int-2, int-3 olanlar.
+
+744
+01:00:43,929 --> 01:00:52,369
+Kesme varsa bayrak flekleri yani bayrakla ki o anki durum zaten bir siteye atılır.
+
+745
+01:00:52,369 --> 01:00:54,369
+Sitek rejisterine, push momutuyla.
+
+746
+01:00:54,369 --> 01:01:02,369
+Sonra if ve tf yani interrupt flek ve trap flekleri içerisi 0 oluyor.
+
+747
+01:01:02,369 --> 01:01:05,369
+Çünkü neden bir başka interrupt daha gelmesin diye.
+
+748
+01:01:05,369 --> 01:01:10,369
+Ve işte interrupt'a gelince debug fonksiyonunu kullanamayalım diye.
+
+749
+01:01:10,369 --> 01:01:15,369
+Sonra işte o anki kod segment ve instruction pointer yani
+
+750
+01:01:15,369 --> 01:01:20,369
+alt programa geçmeden önce mevcut kaldığımız yerdeki kod segment ve instruction pointer
+
+751
+01:01:20,369 --> 01:01:29,369
+koda geri döneceğiz ya o nereye dönüleceğin bilgisinin tutulacağımız için onları da bir siteye atıyoruz.
+
+752
+01:01:29,369 --> 01:01:37,369
+Sonra up ve cs'ye yani şu anki mevcut hani içerisi mevcut programdaki
+
+753
+01:01:37,369 --> 01:01:45,369
+instruction pointer ve kod segment adreslerine kesme vektör tablosunda gideceği yerin adresi
+
+754
+01:01:45,369 --> 01:01:53,369
+yani o subroutine'in çalışacağı, interrupt'ın çalıştıracağı subroutine'in kesme vektör tablosundaki adresi yazılır.
+
+755
+01:01:53,369 --> 01:01:55,369
+Çünkü oraya gideceğiz.
+
+756
+01:01:55,369 --> 01:01:58,369
+Sonra kesme alt programı yürütülür.
+
+757
+01:01:58,369 --> 01:02:05,369
+Kesme alt programı sonunda ayreti gördüğü anda ana programa döneceği için ilk etapta up'i pop yapar.
+
+758
+01:02:05,369 --> 01:02:10,369
+Yani ilk başta hatırlarsanız en son push yapmıştık.
+
+759
+01:02:10,369 --> 01:02:15,369
+En son giren ilk çıkacağı için stack'te ilk up'i pop yapacağız.
+
+760
+01:02:15,369 --> 01:02:17,369
+Sonra cs'yi pop yapacağız.
+
+761
+01:02:17,369 --> 01:02:24,369
+Ve en son flek register'ı yani bayrak register'ını pop yapacağız push ettiğimiz için daha önceden.
+
+762
+01:02:24,369 --> 01:02:29,369
+Ve push ederken biz zaten bayrakları sıfırlamamıştık hatırlarsanız.
+
+763
+01:02:29,369 --> 01:02:31,369
+Push ettikten sonra sıfırlamıştık.
+
+764
+01:02:31,369 --> 01:02:38,369
+O yüzden pop yaparken de aslında if ve tf'nin bir olduğu senaryo pop edilmiş olacak.
+
+765
+01:02:38,369 --> 01:02:49,369
+Ve böylelikle ana programa geri döndüğünde yine interrupt kesmesi alabilecek bir flek register'ı pop edilmiş olmuş olacak.
+
+766
+01:02:49,369 --> 01:02:57,449
+Kesme bayrakları interrupt ucu if1 ise kesme oluşturabilir.
+
+767
+01:02:57,449 --> 01:02:59,449
+Intre ucu yani.
+
+768
+01:02:59,449 --> 01:03:01,449
+Donansal interrupt hatırlarsanız.
+
+769
+01:03:01,449 --> 01:03:04,449
+If1 olursa kesme oluşabilir.
+
+770
+01:03:04,449 --> 01:03:07,449
+Mesela kesme oluştuğu if'i niye sıfır yapıyoruz?
+
+771
+01:03:07,449 --> 01:03:13,449
+Çünkü başka bir intre ucundan interrupt gelmesini engellemek için.
+
+772
+01:03:13,449 --> 01:03:18,449
+Tf1 ise komut işledikten sonra debak amaçlı dediğimiz kısım bu.
+
+773
+01:03:18,449 --> 01:03:23,449
+Yani işte bir programa biz debak ederek çalıştırıyoruz ya.
+
+774
+01:03:23,449 --> 01:03:30,449
+İşte orada aslında tf1 register trap bayrağında işlem yapıyoruz.
+
+775
+01:03:30,449 --> 01:03:37,449
+Sta'yla cl' komutları ise biz interrupt bayrağını 1 veya sıfır yapmak için kullanacağız.
+
+776
+01:03:37,449 --> 01:03:38,449
+Ama ne için?
+
+777
+01:03:38,449 --> 01:03:40,449
+If'e interrupt'ı için.
+
+778
+01:03:40,449 --> 01:03:41,449
+If'e bayrağı için.
+
+779
+01:03:41,449 --> 01:03:43,449
+Tf bayrağı için bir komut yok.
+
+780
+01:03:43,449 --> 01:03:46,449
+Tf daha donansal bir bayrak zaten.
+
+781
+01:03:46,449 --> 01:03:50,730
+Bu örneği haftaya yapacağız arkadaşlar.
+
+782
+01:03:50,730 --> 01:03:54,730
+Donansal kesmeleri biraz daha bahsedip sonra bitireceğim zaten.
+
+783
+01:03:54,730 --> 01:04:00,730
+En önemli donansal kesme NMEU ucudur arkadaşlar.
+
+784
+01:04:00,730 --> 01:04:02,730
+Yani non-maskable interrupt.
+
+785
+01:04:02,730 --> 01:04:05,730
+Yani yükselen kenarda bu tetiklenir.
+
+786
+01:04:05,730 --> 01:04:14,730
+Ve yükselen kenarda tetiklenince kesme vektör tablosunun tip 2 diye kastettiğimiz interrupt kesmesini çalıştırır.
+
+787
+01:04:14,730 --> 01:04:16,730
+Şuraya geri dönelim.
+
+788
+01:04:16,730 --> 01:04:18,730
+Yani şuraya da locate etmişiz zaten.
+
+789
+01:04:18,730 --> 01:04:22,730
+Şurada yazan interrupt adresine gider NMEU.
+
+790
+01:04:22,730 --> 01:04:26,010
+Donansal kesme için.
+
+791
+01:04:26,010 --> 01:04:29,010
+Intray'i de donansal kesme.
+
+792
+01:04:29,010 --> 01:04:32,010
+Bunun için intray'nin 1 olmasıyla çalışıyor.
+
+793
+01:04:32,010 --> 01:04:37,010
+Ve işte bu intray için ayrılmış bir bölüm var.
+
+794
+01:04:37,010 --> 01:04:46,010
+Yani buradaki şuraya kadar, şu 1f'e kadar yani şuralara kadar intray'i kullanabileceğimiz bir alana sahip.
+
+795
+01:04:46,010 --> 01:04:49,610
+Pardon şuraya kadar.
+
+796
+01:04:49,610 --> 01:04:51,610
+Şu rezerv kısmına kadar.
+
+797
+01:04:51,610 --> 01:05:05,179
+Burada interrupt'ın bir de oluştuğunda,
+
+798
+01:05:05,179 --> 01:05:09,179
+acknowledgement'ı yani int alsının düştüğünü gözlemliyoruz.
+
+799
+01:05:09,179 --> 01:05:13,179
+Ve işte neyse artık hani data mı okunacak.
+
+800
+01:05:13,179 --> 01:05:22,179
+Yani o data yolunda bir vektör numaranın bizim şeyden kesme vektör tablosundan yüklendiğini gözlemliyoruz.
+
+801
+01:05:22,179 --> 01:05:29,179
+Bu kısımlar haftaya kalsın arkadaşlar.
+
+802
+01:05:29,179 --> 01:05:31,179
+Genel olarak sorunuz var mı interrupt?
+
+803
+01:05:31,179 --> 01:05:34,179
+Hani şu ana kadar çok da bir şey işlemedik ama.
+
+804
+01:05:36,179 --> 01:05:40,179
+Yani aklımıza bulundurmamız gereken nokta şu.
+
+805
+01:05:43,179 --> 01:05:44,179
+Pardon.
+
+806
+01:05:44,179 --> 01:05:48,179
+Yazılımsal ve donansal kesmelerden bahsettik.
+
+807
+01:05:48,179 --> 01:05:53,179
+Ve donanım kesmelerinden en anlamlı kesmenin NMEU olduğundan,
+
+808
+01:05:53,179 --> 01:05:55,179
+non-mascable interrupt olduğundan,
+
+809
+01:05:55,179 --> 01:05:57,179
+sonra intray'e olduk.
+
+810
+01:05:57,179 --> 01:06:02,179
+Ayrıca yazılımsal kesmeler var dedik int ve int 0 int 3 kesmeleri.
+
+811
+01:06:02,179 --> 01:06:04,179
+Bunlardan bahsettik.
+
+812
+01:06:04,179 --> 01:06:09,179
+Donanım sal kesmelerin bir acknowledgement'ı int alsının olduğundan bahsettik.
+
+813
+01:06:09,179 --> 01:06:13,179
+Ve bir kesme rutininde bir kesme oluştuğunda,
+
+814
+01:06:13,179 --> 01:06:16,179
+işte stack'lerin nasıl oynandığı,
+
+815
+01:06:16,179 --> 01:06:22,179
+yani pop push kuşların pop edilip sonra push edilme sıralamından bahsettik.
+
+816
+01:06:23,179 --> 01:06:26,179
+Ve ilgilenen bayrakları da değinmiş bulunduk.
+
+817
+01:06:26,179 --> 01:06:28,179
+Sorumuz var mı?
+
+818
+01:06:28,179 --> 01:06:32,179
+Hocam laboratuvar kapsamında bir olarak yazılabilir miyiz?
+
+819
+01:06:32,179 --> 01:06:37,469
+Evet.
+
+820
+01:06:37,469 --> 01:06:39,469
+Tamam teşekkürler.
+
+821
+01:06:39,469 --> 01:06:46,469
+Evet arkadaşlar şeyi de unutmadan iyi laboratuvar diyince aklıma getirdim.
+
+822
+01:06:46,469 --> 01:06:47,469
+Sağ ol.
+
+823
+01:06:47,469 --> 01:06:49,469
+Sınav kağıtlarınızı okudum.
+
+824
+01:06:49,469 --> 01:06:52,469
+Daha mail ile gönderilenler dışındakileri okudum en azından.
+
+825
+01:06:52,469 --> 01:06:54,469
+Mail'lere bakacağım.
+
+826
+01:06:54,469 --> 01:06:56,469
+Duyurulacak yakında.
+
+827
+01:06:56,469 --> 01:06:59,469
+Ama şikayet gelecektir.
+
+828
+01:06:59,469 --> 01:07:01,469
+Yani neden notun düşük diye.
+
+829
+01:07:01,469 --> 01:07:06,469
+Ben onu bir şeyimden açıklayayım ve eğer ki kağıdımız öyleyse lütfen,
+
+830
+01:07:06,469 --> 01:07:11,469
+yani benim notun niye düşük geldi diye bana yazmayın.
+
+831
+01:07:11,469 --> 01:07:13,469
+Hangi soyuru?
+
+832
+01:07:13,469 --> 01:07:16,469
+İkinci soruydu zannedersem.
+
+833
+01:07:16,469 --> 01:07:19,469
+İkinci sorunun E şıklığıydı zannedersem.
+
+834
+01:07:19,469 --> 01:07:23,469
+Bu kod yazma var ya hani SMB kodunu yazacaktınız.
+
+835
+01:07:23,469 --> 01:07:29,469
+Muhtemelen yani kaç kişi hatırlamıyorum ama bir 20 vardır.
+
+836
+01:07:29,469 --> 01:07:35,469
+20-25 kişi bir kod bulmuş bir yerlerden veya grupta dönmüş bilmiyorum.
+
+837
+01:07:35,469 --> 01:07:39,469
+Bir kere o soru arkadaşlığa dair soruyoruz.
+
+838
+01:07:39,469 --> 01:07:44,469
+Yani geçen senelerde tabii hakkınız soruyu bulup çalışmanız çok mantıklı.
+
+839
+01:07:44,469 --> 01:07:49,469
+Ama ya insan bir bakar soru aynı mı diye.
+
+840
+01:07:49,469 --> 01:07:54,469
+Direkt aynı kodu gördüğüm anda sıfırı yapıştırdım E şıklığı için arkadaşlar.
+
+841
+01:07:54,469 --> 01:07:56,469
+İnsan kodu bir okur.
+
+842
+01:07:56,469 --> 01:07:59,469
+Ya bunun kontrol gördüğü değişmesi gerekiyor.
+
+843
+01:07:59,469 --> 01:08:02,469
+Deyip kontrol gördüğünü değiştirdim.
+
+844
+01:08:02,469 --> 01:08:06,469
+Ha kontrol gördüğünü değiştirenler var bazılarınız.
+
+845
+01:08:06,469 --> 01:08:10,469
+Ama PC1 ile PC4 demişiz soruda.
+
+846
+01:08:10,469 --> 01:08:12,469
+Birinci port ile dördüncü port.
+
+847
+01:08:12,469 --> 01:08:15,469
+Oralardaki kontrolleri değiştirmemiş.
+
+848
+01:08:15,469 --> 01:08:17,470
+Liinler havalarda uçuşluyor.
+
+849
+01:08:17,470 --> 01:08:25,470
+Yani oku şartının li'yi ettiğiniz kısımlar.
+
+850
+01:08:25,470 --> 01:08:29,470
+Yani şunlara daha çok yüksek puan verdim arkadaşlar.
+
+851
+01:08:29,470 --> 01:08:37,470
+Hakikaten kendini mi yapıp kontrol gördüğü işte PC portlarını düzgünce ayarlayıp
+
+852
+01:08:37,470 --> 01:08:39,470
+bazı yerlerde hatalar olabilir.
+
+853
+01:08:39,470 --> 01:08:40,470
+Kehat üstünde yapıyorsunuz.
+
+854
+01:08:40,470 --> 01:08:46,470
+O yüzden dediğim gibi mümkün olduğunca kehat üstünde yaptığınızı bilerek puanlıyoruz zaten.
+
+855
+01:08:46,470 --> 01:08:49,470
+Mükemmel bir kodu yazmanız gerekiyor.
+
+856
+01:08:50,470 --> 01:08:53,470
+Mesela oraları değişmiş bir şekilde.
+
+857
+01:08:53,470 --> 01:08:56,470
+Kodu çalışan bir şekilde yani.
+
+858
+01:08:56,470 --> 01:08:59,470
+Oraları farkında olanlara verdim puan.
+
+859
+01:08:59,470 --> 01:09:03,470
+Ama tutup da ben E şıkkını yapmıştım.
+
+860
+01:09:03,470 --> 01:09:07,470
+Açar bakarım PC1, PC2 kalmıştır.
+
+861
+01:09:07,470 --> 01:09:10,470
+Veya PC0, PC2 miydi hatta?
+
+862
+01:09:10,470 --> 01:09:13,470
+Açar bakarım PC1, PC2 kalmıştır.
+
+863
+01:09:13,470 --> 01:09:17,470
+Ya benzer bir soru vardı geçen senelerde buna ama aynısı değildi.
+
+864
+01:09:17,470 --> 01:09:23,470
+Okun işareti, ortak anot mevzusu, ortak katot mevzusu soruyu tamamen değiştiriyordu esasında.
+
+865
+01:09:23,470 --> 01:09:31,470
+Ya bunu analiz edip, bilmeyip, direkt aynı soruyu yapıştıranlardan direkt sıfırı bastım.
+
+866
+01:09:31,470 --> 01:09:33,470
+Özellikle belirteyim bunu.
+
+867
+01:09:33,470 --> 01:09:35,470
+Yani E şıkkı için konuşuyorum.
+
+868
+01:09:35,470 --> 01:09:39,470
+Zaten ortak anot, PC1, PC2 kalmıştır.
+
+869
+01:09:39,470 --> 01:09:42,470
+Bilmiyorum ya düşünerek yaptınız ya sorunun aynısını yaptınız.
+
+870
+01:09:42,470 --> 01:09:43,470
+O da değişikti zaten.
+
+871
+01:09:43,470 --> 01:09:44,470
+Cevap da değişik.
+
+872
+01:09:44,470 --> 01:09:48,470
+Sonra pull up direnç, pull down direnç.
+
+873
+01:09:48,470 --> 01:09:52,470
+Yani geçen senelerdeki soruda herhalde pull up varmış.
+
+874
+01:09:52,470 --> 01:09:57,470
+Ben de yani soruyu hazırlamadan önce farkında değildim.
+
+875
+01:09:57,470 --> 01:10:02,470
+Pull down sorduk herhalde yanlış hatırlamıyorum.
+
+876
+01:10:02,470 --> 01:10:04,470
+Yani o mevzu farklıydı.
+
+877
+01:10:04,470 --> 01:10:06,470
+Yani çoğu şey farklıydı soruda.
+
+878
+01:10:06,470 --> 01:10:17,470
+Ama bazı arkadaşlar direkt hatta yani Word'e yazmış, PDF'e çevirip göndermiş yani bilgisayar yazısı.
+
+879
+01:10:17,470 --> 01:10:24,470
+Ya garip arkadaşlar yani sınavda tamam yani bence zor değildi.
+
+880
+01:10:24,470 --> 01:10:26,470
+Tekrar sınavda.
+
+881
+01:10:26,470 --> 01:10:32,470
+Yüz beş üzerinden bir sınavda ya böyle sorular, hele hele ikinci soru bence hiç zor değildi.
+
+882
+01:10:32,470 --> 01:10:44,470
+Yani çok böyle uzun uzun diye mesela işte okun her bir pinine ait olan hexadecimal sayıyı hesaplamasanız dahi
+
+883
+01:10:44,470 --> 01:10:48,470
+ana kodu E şıkkımda yazsaydınız ona da zaten puan veririz.
+
+884
+01:10:48,470 --> 01:10:50,470
+Çünkü C şıkkınıydı zannedersem orada yazıyorsunuz.
+
+885
+01:10:50,470 --> 01:10:56,470
+Yani anlamı yok tekrar tekrar oralara şey yapmanızın, datayı oluşturmanızı.
+
+886
+01:10:56,470 --> 01:11:06,470
+Ama yani böyle bir durumunuz varsa ve notunuz düşük geldiyse hocam notunu kontrol edebilir misiniz lütfen demeyin.
+
+887
+01:11:06,470 --> 01:11:11,470
+Çünkü aranızda vardır hani a ben öyle yaptım gerçekten hatırlayanlarınız.
+
+888
+01:11:11,470 --> 01:11:14,470
+Yani o durumda yazmasınlar lütfen.
+
+889
+01:11:14,470 --> 01:11:24,470
+Yani çünkü ben açıkladım şu an yani bu tarz direkt hani hiçbir şeyin değiştirmeyi kopi testi yapanlara sıfır verdim.
+
+890
+01:11:24,470 --> 01:11:26,470
+Kod zaten çalışmıyor.
+
+891
+01:11:26,470 --> 01:11:32,470
+Çünkü başka bir bacağı kontrol edip işte onun not zero olma durumuna göre bir işi yapıyorsunuz.
+
+892
+01:11:32,470 --> 01:11:34,470
+Ama biz öyle bir şey dememişiz.
+
+893
+01:11:34,470 --> 01:11:38,470
+Başka şey kodlardan bir de pull down direnciyle yapmışız.
+
+894
+01:11:38,470 --> 01:11:41,470
+Yani kontrol edeceğiniz şey biraz farklıydı.
+
+895
+01:11:41,470 --> 01:11:44,470
+Yani bu tarz bir bacağı kontrol edebilirsiniz.
+
+896
+01:11:45,470 --> 01:11:47,470
+Ama biz öyle bir şey dememişiz.
+
+897
+01:11:47,470 --> 01:11:51,470
+Başka şey kodlardan bir de pull down direnciyle yapmışız.
+
+898
+01:11:51,470 --> 01:11:54,470
+Yani kontrol edeceğiniz şey biraz farklıydı.
+
+899
+01:11:54,470 --> 01:11:57,470
+Onu söyleyeyim.
+
+900
+01:11:57,470 --> 01:12:00,470
+Başka bakayım sınavlarda, kağıtlarda.
+
+901
+01:12:00,470 --> 01:12:05,470
+Çoğunuz nedense üçüncü soruyu yani kontrol word'ünü bile yapmamış.
+
+902
+01:12:05,470 --> 01:12:13,470
+Yani çünkü kontrol word dediğimiz yapı zaten ikinci sorunun kontrol word ile birebir aynı.
+
+903
+01:12:13,470 --> 01:12:15,470
+Neredeyse yani.
+
+904
+01:12:15,470 --> 01:12:18,470
+Daha tabi maillere okumadım.
+
+905
+01:12:18,470 --> 01:12:21,470
+Dediğim gibi şu anlık mevzu bu.
+
+906
+01:12:21,470 --> 01:12:24,470
+Yakında duyulur zaten.
+
+907
+01:12:24,470 --> 01:12:26,470
+Şu maillenizle hafta sonu okursan.
+
+908
+01:12:26,470 --> 01:12:28,470
+Pazartesi en geç yayınlarım.
+
+909
+01:12:28,470 --> 01:12:32,470
+Lablarınızı o yüzden biraz önem verin arkadaşlar.
+
+910
+01:12:32,470 --> 01:12:34,470
+Not hold olması biraz düşük gibi.
+
+911
+01:12:34,470 --> 01:12:36,470
+Yani bu sorulara düşük gibi.
+
+912
+01:12:36,470 --> 01:12:40,739
+Çünkü çok kolay bu sorular.
+
+913
+01:12:40,739 --> 01:12:43,739
+O üçüncü soruda da arkadaşlar bazılarınız yapmış.
+
+914
+01:12:43,739 --> 01:12:44,739
+Yani şöyle yapmış.
+
+915
+01:12:44,739 --> 01:12:46,739
+Sekizle çarpmış 500'ü mesela.
+
+916
+01:12:46,739 --> 01:12:49,739
+Oradaki byte mevzusu arkadaşlar on buçuk olacak.
+
+917
+01:12:49,739 --> 01:12:50,739
+Sekiz değil.
+
+918
+01:12:50,739 --> 01:12:53,739
+Çünkü orada o soru da şimdi tam hatırlayamıyorum ama.
+
+919
+01:12:53,739 --> 01:12:57,739
+Bir buçuk senkronizasyon filmini bir şeye ayırıyorduk.
+
+920
+01:12:57,739 --> 01:12:59,739
+Hani onları toplayıp 500 ile çarpıp.
+
+921
+01:12:59,739 --> 01:13:01,739
+Böyle şey dediniz 9600 ile.
+
+922
+01:13:01,739 --> 01:13:02,739
+Daha mantıklı oldu.
+
+923
+01:13:02,739 --> 01:13:08,399
+Yani öyle olması gerekiyordu zaten.
+
+924
+01:13:08,399 --> 01:13:09,399
+Tamam.
+
+925
+01:13:09,399 --> 01:13:11,399
+Var mı sizin sorunuz arkadaşlar?
+
+926
+01:13:11,399 --> 01:13:14,399
+Derste veya başta bir şeyle alakalı mı?
+
+927
+01:13:14,399 --> 01:13:21,909
+Yoksa dersiniz bu kadar arkadaşlar.
+
+928
+01:13:21,909 --> 01:13:24,909
+Hepinize iyi hafta sonları, iyi çalışmalar.
+
+929
+01:13:24,909 --> 01:13:30,949
+Ortalama şöyle çıkar bence.
+
+930
+01:13:30,949 --> 01:13:32,949
+Daha hesaplamadım ama.
+
+931
+01:13:32,949 --> 01:13:37,949
+Ya düşüktü dediğim aslında şimdiye kadar ki yükleşencinin vize ortalamalarından yüksek.
+
+932
+01:13:37,949 --> 01:13:39,949
+Ama böyle sorulara düşük.
+
+933
+01:13:39,949 --> 01:13:44,949
+Yani yanlış olmasın şimdi ne diyeceğim ortalama hesaplamadım ama.
+
+934
+01:13:44,949 --> 01:13:46,949
+Bence elinin üstüne çıkar.
+
+935
+01:13:46,949 --> 01:13:48,949
+Yani bence.
+
+936
+01:13:48,949 --> 01:13:53,949
+Ama yani bu sorulara ben bekliyordum ki biraz daha yüksek alırsınız diye.
+
+937
+01:13:53,949 --> 01:13:58,949
+Çünkü bence basitti açık ve net bir bölüm yani.
+
+938
+01:13:58,949 --> 01:14:03,949
+Hele üçüncü soruda belki aklınız 3'ün E şıkkında biraz takıldı.
+
+939
+01:14:03,949 --> 01:14:05,949
+5 puan bonus o yüzden zaten.
+
+940
+01:14:05,949 --> 01:14:09,949
+İşte asenkron değil de senkron yapsaydık kaç bittikten sonra.
+
+941
+01:14:09,949 --> 01:14:11,949
+Öyle bir soru vardı herhalde.
+
+942
+01:14:11,949 --> 01:14:13,949
+Önümde açık değil ama.
+
+943
+01:14:14,949 --> 01:14:18,949
+Ya orada belki biraz kafanız karışabilirdi.
+
+944
+01:14:18,949 --> 01:14:25,949
+Ama o zamana kadar zaten üçüncü sorunun, ikinci sorunun yani ok sorusunun A şıkkı.
+
+945
+01:14:25,949 --> 01:14:27,949
+Zaten adres çözümlemedi.
+
+946
+01:14:27,949 --> 01:14:29,949
+Zaten topu topu.
+
+947
+01:14:29,949 --> 01:14:35,949
+Orada da bazı arkadaşlar mesela A3'ü, A4'ü hiç eklememiş.
+
+948
+01:14:35,949 --> 01:14:39,949
+Bak onlara bir de puan verdim bir tık.
+
+949
+01:14:39,949 --> 01:14:46,949
+Çünkü normalde A3'ün orada olmaması, o adresi spesifik verdiğinde çalışmaması demek.
+
+950
+01:14:46,949 --> 01:14:49,949
+Ama onlara da bir tık verdim.
+
+951
+01:14:49,949 --> 01:14:59,949
+İkinin A şıkkı, B şıkkı, C şıkkı ve D şıkkını yapmak iyi yapmasanız bile zaten 30 puan getiriyordu size.
+
+952
+01:14:59,949 --> 01:15:01,949
+Yanlış hatırlamıyorsam.
+
+953
+01:15:01,949 --> 01:15:06,949
+Yani kodu tutup bir yerlerden bulmak yerine
+
+954
+01:15:06,949 --> 01:15:16,949
+C şıkkı ya A, B, C ve D'ye güzel bir şekilde uğraşıp yapsaydınız o bir de zaten kâfi gelebilirdi diye düşünüyorum.
+
+955
+01:15:16,949 --> 01:15:21,949
+Yani bu sorulara, bu ortalama benim enteresanım.
+
+956
+01:15:21,949 --> 01:15:23,949
+Yani yoksa çok da kötü değil.
+
+957
+01:15:23,949 --> 01:15:25,949
+Ama yani çok yüksek yok.
+
+958
+01:15:25,949 --> 01:15:27,949
+Çok da düşük yok yani.
+
+959
+01:15:27,949 --> 01:15:28,949
+Herkese ortalamada.
+
+960
+01:15:28,949 --> 01:15:29,949
+Biri geldi bana da.
+
+961
+01:15:29,949 --> 01:15:30,949
+Tabii şimdi 50 dedim.
+
+962
+01:15:30,949 --> 01:15:33,949
+40 çıkarsın sonra niye ödediniz dersiniz.
+
+963
+01:15:33,949 --> 01:15:34,949
+Şu an üstüm körü.
+
+964
+01:15:34,949 --> 01:15:39,510
+Hesap atmadım.
+
+965
+01:15:39,510 --> 01:15:42,510
+Tamam arkadaşlar sorumuz başka yoksa.
+
+966
+01:15:42,510 --> 01:15:45,510
+Finale kesinlikle çalışın.
+
+967
+01:15:45,510 --> 01:15:50,510
+Finale kesinlikle PDF'te kontrol faili güvencenizle girmeyin.
+
+968
+01:15:50,510 --> 01:15:53,510
+Çünkü test ve boşluk doldurma kesin olacak.
+
+969
+01:15:53,510 --> 01:15:56,510
+Ama bu sefer lütfen bildiğinizi yapın.
+
+970
+01:15:56,510 --> 01:15:59,510
+Geçin ya ben bunu bulayım diye.
+
+971
+01:16:00,510 --> 01:16:03,510
+Ya bu şuna benziyor.
+
+972
+01:16:03,510 --> 01:16:06,510
+Ya 2 puan mıydı?
+
+973
+01:16:06,510 --> 01:16:07,510
+3 puan mıydı o boşluklar?
+
+974
+01:16:07,510 --> 01:16:08,510
+Ne demek?
+
+975
+01:16:08,510 --> 01:16:13,510
+3 puan almak için 20-30 puanlık kısmı yok ediyorsunuz.
+
+976
+01:16:13,510 --> 01:16:19,510
+Ya bizim hedefimiz zaten sizin bilginizi ölçmek, arama kabiliyetinizi değil.
+
+977
+01:16:19,510 --> 01:16:21,510
+O yüzden bilmiyorsanız geçin.
+
+978
+01:16:21,510 --> 01:16:23,510
+2 puanınızdan olursunuz en kötü.
+
+979
+01:16:23,510 --> 01:16:26,510
+Ama öteki tarafta belki 20 puanlık soruyor.
+
+980
+01:16:26,510 --> 01:16:28,510
+Daha rahat kafayı yaparsınız.
+
+981
+01:16:28,510 --> 01:16:31,510
+Yani arayıp bulacağım diye bildiğinizi yapın arkadaşlar.
+
+982
+01:16:31,510 --> 01:16:36,510
+Yani burada yetiştirememenizin tek şeysi budur yani.
+
+983
+01:16:36,510 --> 01:16:41,510
+Çünkü 90 dakika çok yeterince yani süre...
+
+984
+01:16:41,510 --> 01:16:43,510
+Yani bilen...
+
+985
+01:16:43,510 --> 01:16:45,510
+Yani mesela kaç vardı şu ana kadar?
+
+986
+01:16:45,510 --> 01:16:47,510
+Herhalde bir 90 alan var bir kişi.
+
+987
+01:16:47,510 --> 01:16:48,510
+Şu an hatırlamıyorum kim.
+
+988
+01:16:48,510 --> 01:16:52,510
+Ama yani baktığımda toplasan 2 sayfada bitirmiş işiz artık.
+
+989
+01:16:52,510 --> 01:16:54,510
+Yani arka bölümde bir ders alka.
+
+990
+01:16:54,510 --> 01:16:57,510
+Çok uzun uzun işlem yok yani.
+
+991
+01:16:58,510 --> 01:17:06,739
+Ama oldu başka sorumuz da yoksa iyi çalışmalar.
+
+992
+01:17:07,739 --> 01:17:09,739
+2. vizemiz yok arkadaşlar.
+
+993
+01:17:11,739 --> 01:17:13,739
+Labınız olacak muhtemelen vize haftası.
+
+994
+01:17:13,739 --> 01:17:15,739
+Çünkü boş haftamız yok.
+
+995
+01:17:17,739 --> 01:17:18,739
+Lab olacak.
+
+996
+01:17:18,739 --> 01:17:20,739
+4. lab değil mi o bugün?
+
+997
+01:17:20,739 --> 01:17:21,739
+3 mü o bugün?
+
+998
+01:17:21,739 --> 01:17:22,739
+4 mü 3 mü?
+
+999
+01:17:22,739 --> 01:17:29,189
+Fark ediyorsunuz mü?
+
+1000
+01:17:29,189 --> 01:17:30,189
+4.
+
+1001
+01:17:30,189 --> 01:17:32,189
+E tamam 4.
+
+1002
+01:17:32,189 --> 01:17:37,189
+Zaten 1 ocakta sıkıntıya gireceği için 25'inde 5'i yaparsınız.
+
+1003
+01:17:37,189 --> 01:17:38,189
+Bir grup yani.
+
+1004
+01:17:38,189 --> 01:17:41,189
+1'i tatil 8'inde de öteki grup yapacak.
+
+1005
+01:17:41,189 --> 01:17:47,510
+Zaten dönem bitti.
+
+1006
+01:17:47,510 --> 01:17:50,510
+Lab'a lütfen önem verin lab kurtarıcı olur.
+
+1007
+01:17:50,510 --> 01:17:54,510
+Yani finalde performansı arttırın.
+
+1008
+01:17:54,510 --> 01:17:56,510
+Zaten onu hep diyoruz.
+
+1009
+01:17:56,510 --> 01:17:59,510
+Ama labınıza da önem verin ki sizi kurtarsın.
+
+1010
+01:17:59,510 --> 01:18:04,140
+Tamam arkadaşlar.
+
+1011
+01:18:04,140 --> 01:18:05,140
+Hepinize iyi günler.
+
+1012
+01:18:05,140 --> 01:18:06,140
+İyi çalışmalar.
+
+1013
+01:18:06,140 --> 01:18:07,140
+İyi hafta sunun.
+
