@@ -1,4 +1,4 @@
-# 📚 İleri Algoritma Analizi Ve Tasarımı
+# 📚 İleri Algoritma Analizi ve Tasarımı
 
 ## ℹ️ Ders Bilgileri
 
