@@ -46,7 +46,7 @@ Her özet dosyası şu formata birebir uymalıdır:
 - Dersten sonra hızlı tekrar yapmak için en önemli noktaları kısa maddeler halinde yaz.
 - Bu bölümde de zaman bağımlı bilgi kullanma.
 
-## Detaylı Açıklamalar (Daha Fazla Detay İsteyenler İçin)
+## Detaylı Açıklamalar
 
 - Dersteki konuları, kavramları ve varsa kod/devre örneklerini daha uzun ve detaylı paragraflar halinde açıkla.
 - Bu kısım konuyu daha derinlemesine anlamak veya kaçırılan dersi telafi etmek isteyenler için kapsamlı bilgi içermelidir.
