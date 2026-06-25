@@ -38,7 +38,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hXpPlnHi6lWRF6WyOQcHDy-DZ9ItstzB?usp=drive_link) ✨
 - 📄 **Ders Kayıtları:** [Veritabanı Yönetimi Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
-- 📄 **Not:** [Önder'in markdown notları](./3-1/Veritaban%C4%B1%20Y%C3%B6netimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
+- 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 

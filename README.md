@@ -655,7 +655,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [G1](#-dr-göksel-biricik)
     - [MAG](#-doç-dr-m-amaç-güvensan)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](./1-1/Bilgisayar%20Bilimlerine%20Giriş)
+  - 📂 [Ders Klasörü](./1-1/Bilgisayar%20Bilimlerine%20Giri%C5%9F)
 
 
 #### 📘 Fizik 1 
@@ -681,7 +681,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./1-1/İleri%20İngilizce%201)
+  - 📂 [Ders Klasörü](./1-1/%C4%B0leri%20%C4%B0ngilizce%201)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 1 
@@ -694,7 +694,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./1-1/İş%20Sağlığı%20ve%20Güvenliği%201)
+  - 📂 [Ders Klasörü](./1-1/%C4%B0%C5%9F%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1%20ve%20G%C3%BCvenli%C4%9Fi%201)
 
 
 #### 📘 Lineer Cebir 
@@ -751,7 +751,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./1-2/İleri%20İngilizce%202)
+  - 📂 [Ders Klasörü](./1-2/%C4%B0leri%20%C4%B0ngilizce%202)
 
 
 #### 📘 Matematik 2 
@@ -777,7 +777,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./1-2/Mühendisler%20İçin%20Yarıiletken%20Fiziği)
+  - 📂 [Ders Klasörü](./1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi)
 
 
 #### 📘 Sayısal Analiz 
@@ -794,7 +794,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
-  - 📂 [Ders Klasörü](./1-2/Sayısal%20Analiz)
+  - 📂 [Ders Klasörü](./1-2/Say%C4%B1sal%20Analiz)
 
 
 #### 📘 Yapısal Programlama 
@@ -811,7 +811,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [YES](#-dr-yunus-emre-selçuk)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [HİT](#-dr-h-i̇rem-türkmen)
-  - 📂 [Ders Klasörü](./1-2/Yapısal%20Programlama)
+  - 📂 [Ders Klasörü](./1-2/Yap%C4%B1sal%20Programlama)
 
 ### 🗓 2. Yıl - Güz
 
@@ -834,7 +834,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
-  - 📂 [Ders Klasörü](./2-1/Ayrık%20Matematik)
+  - 📂 [Ders Klasörü](./2-1/Ayr%C4%B1k%20Matematik)
 
 
 #### 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler 
@@ -851,7 +851,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](./2-1/Bilgisayar%20Mühendisleri%20İçin%20Diferansiyel%20Denklemler)
+  - 📂 [Ders Klasörü](./2-1/Bilgisayar%20M%C3%BChendisleri%20%C4%B0%C3%A7in%20Diferansiyel%20Denklemler)
 
 
 #### 📘 İstatistik ve Olasılık Hesapları 
@@ -871,7 +871,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SY](#-prof-dr-sırma-yavuz)
-  - 📂 [Ders Klasörü](./2-1/İstatistik%20ve%20Olasılık%20Hesapları)
+  - 📂 [Ders Klasörü](./2-1/%C4%B0statistik%20ve%20Olas%C4%B1l%C4%B1k%20Hesaplar%C4%B1)
 
 
 #### 📘 Lojik Devreler 
@@ -911,7 +911,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
     - [FÇ](#-dr-furkan-çakmak)
     - [YES](#-dr-yunus-emre-selçuk)
-  - 📂 [Ders Klasörü](./2-1/Nesneye%20Yonelik%20Programlama)
+  - 📂 [Ders Klasörü](./2-1/Nesneye%20Y%C3%B6nelik%20Programlama)
 
 ### 🗓 2. Yıl - Bahar
 
@@ -929,7 +929,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
-  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Müh%20için%20Sinyaller%20ve%20Sistemler)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20M%C3%BCh%20i%C3%A7in%20Sinyaller%20ve%20Sistemler)
 
 
 #### 📘 Bilgisayar Organizasyonu 
@@ -959,7 +959,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](./2-2/Hesaplama%20Kuramı)
+  - 📂 [Ders Klasörü](./2-2/Hesaplama%20Kuram%C4%B1)
 
 
 #### 📘 İş Sağlığı ve Güvenliği 2 
@@ -971,7 +971,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./2-2/İş%20Sağlığı%20ve%20Güvenliği%202)
+  - 📂 [Ders Klasörü](./2-2/%C4%B0%C5%9F%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1%20ve%20G%C3%BCvenli%C4%9Fi%202)
 
 
 #### 📘 Sistem Analizi ve Tasarımı 
@@ -986,7 +986,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](./2-2/Sistem%20Analizi%20ve%20Tasarımı)
+  - 📂 [Ders Klasörü](./2-2/Sistem%20Analizi%20ve%20Tasar%C4%B1m%C4%B1)
 
 
 #### 📘 Veri Yapıları ve Algoritmalar 
@@ -1005,7 +1005,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [G1](#-dr-göksel-biricik)
     - [MEK](#-prof-dr-m-elif-karslıgil)
     - [MAG](#-doç-dr-m-amaç-güvensan)
-  - 📂 [Ders Klasörü](./2-2/Veri%20Yapıları%20ve%20Algoritmalar)
+  - 📂 [Ders Klasörü](./2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar)
 
 ### 🗓 3. Yıl - Güz
 
@@ -1057,7 +1057,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](./3-1/İşletim%20Sistemleri)
+  - 📂 [Ders Klasörü](./3-1/%C4%B0%C5%9Fletim%20Sistemleri)
 
 
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
@@ -1078,7 +1078,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili)
+  - 📂 [Ders Klasörü](./3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili)
 
 
 #### 📘 Seminer ve Meslek Etiği 
@@ -1093,7 +1093,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Etiği)
+  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Eti%C4%9Fi)
 
 
 #### 📘 Türkçe 1 
@@ -1102,7 +1102,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./3-1/Türkçe%201)
+  - 📂 [Ders Klasörü](./3-1/T%C3%BCrk%C3%A7e%201)
 
 
 #### 📘 Veritabanı Yönetimi 
@@ -1117,7 +1117,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](./3-1/Veritabanı%20Yönetimi)
+  - 📂 [Ders Klasörü](./3-1/Veritaban%C4%B1%20Y%C3%B6netimi)
 
 ### 🗓 3. Yıl - Bahar
 
@@ -1158,7 +1158,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları)
+  - 📂 [Ders Klasörü](./3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1)
 
 
 #### 📘 Yapay Zeka 
@@ -1189,7 +1189,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [OK](#-prof-dr-oya-kalıpsız)
     - [YES](#-dr-yunus-emre-selçuk)
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
-  - 📂 [Ders Klasörü](./3-2/Yazılım%20Mühendisliği)
+  - 📂 [Ders Klasörü](./3-2/Yaz%C4%B1l%C4%B1m%20M%C3%BChendisli%C4%9Fi)
 
 ### 🗓 4. Yıl - Güz
 
@@ -1203,7 +1203,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./4-1/Atatürk%20İlkeleri%20ve%20İnklap%20Tarihi%201)
+  - 📂 [Ders Klasörü](./4-1/Atat%C3%BCrk%20%C4%B0lkeleri%20ve%20%C4%B0nk%C4%B1lap%20Tarihi%201)
 
 
 #### 📘 Çok Disiplinli Tasarım Projesi 
@@ -1218,7 +1218,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Çok%20Displinli%20Tasarım%20Projesi)
+  - 📂 [Ders Klasörü](./%C3%87ok%20Displinli%20Tasar%C4%B1m%20Projesi)
 
 ### 🗓 4. Yıl - Bahar
 
@@ -1229,7 +1229,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 9 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./4-2/Atatürk%20İlkeleri%20ve%20İnkılâp%20Tarihi%202)
+  - 📂 [Ders Klasörü](./4-2/Atat%C3%BCrk%20%C4%B0lkeleri%20ve%20%C4%B0nk%C4%B1l%C3%A2p%20Tarihi%202)
 
 
 #### 📘 Bitirme Çalışması 
@@ -1241,7 +1241,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Bitirme%20Çalışması)
+  - 📂 [Ders Klasörü](./Bitirme%20%C3%87al%C4%B1%C5%9Fmas%C4%B1)
 
 
 #### 📘 Türkçe 2 
@@ -1250,7 +1250,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 7 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./4-2/Türkçe%202)
+  - 📂 [Ders Klasörü](./4-2/T%C3%BCrk%C3%A7e%202)
 
 ### 🗓 Üniversite Sosyal Seçmeli
 
@@ -1259,154 +1259,154 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/16.yüzyıldan%20Günümüze%20İstanbulda%20Dans)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/16.y%C3%BCzy%C4%B1ldan%20G%C3%BCn%C3%BCm%C3%BCze%20%C4%B0stanbulda%20Dans)
 
 
 #### 📘 20. Yüzyılda Siyasal Gelişmeler-Toplumsal Hareketler 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/20.%20Yüzyılda%20Siyasal%20Gelişmeler-Toplumsal%20Hareketler)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/20.%20Y%C3%BCzy%C4%B1lda%20Siyasal%20Geli%C5%9Fmeler-Toplumsal%20Hareketler)
 
 
 #### 📘 Afet Bilgisi ve Farkındalığı 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Afet%20Bilgisi%20ve%20Farkındalığı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Afet%20Bilgisi%20ve%20Fark%C4%B1ndal%C4%B1%C4%9F%C4%B1)
 
 
 #### 📘 Aile İşletmeleri ve Kurumsallaşma 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Aile%20İşletmeleri%20ve%20Kurumsallaşma)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Aile%20%C4%B0%C5%9Fletmeleri%20ve%20Kurumsalla%C5%9Fma)
 
 
 #### 📘 Akademik Türkçe 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Akademik%20Türkçe)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Akademik%20T%C3%BCrk%C3%A7e)
 
 
 #### 📘 Almanca Dil Becerileri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerileri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Almanca%20Dil%20Becerileri)
 
 
 #### 📘 Almanca Dil Becerilerine Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Almanca%20Dil%20Becerilerine%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Almanca%20Dil%20Becerilerine%20Giri%C5%9F)
 
 
 #### 📘 Basketbol Temel Teknik Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Basketbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Basketbol%20Temel%20Teknik%20E%C4%9Fitimi)
 
 
 #### 📘 Bağımlılık ve Bağımlılıkla Mücadele 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bağımlılık%20ve%20Bağımlılıkla%20Mücadele)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Ba%C4%9F%C4%B1ml%C4%B1l%C4%B1k%20ve%20Ba%C4%9F%C4%B1ml%C4%B1l%C4%B1kla%20M%C3%BCcadele)
 
 
 #### 📘 Beden Farkındalığı ve Nefes Teknikleri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Beden%20Farkındalığı%20ve%20Nefes%20Teknikleri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Beden%20Fark%C4%B1ndal%C4%B1%C4%9F%C4%B1%20ve%20Nefes%20Teknikleri)
 
 
 #### 📘 Beslenme ve Sağlık 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Beslenme%20ve%20Sağlık)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Beslenme%20ve%20Sa%C4%9Fl%C4%B1k)
 
 
 #### 📘 Bilim Felsefesi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bilim%20Felsefesi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Bilim%20Felsefesi)
 
 
 #### 📘 Bilim Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Bilim%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Bilim%20Tarihi)
 
 
 #### 📘 Demokrasi Kültürünün İlke ve Kurumları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Demokrasi%20Kültürünün%20İlke%20ve%20Kurumları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Demokrasi%20K%C3%BClt%C3%BCr%C3%BCn%C3%BCn%20%C4%B0lke%20ve%20Kurumlar%C4%B1)
 
 
 #### 📘 Deprem ve Planlama 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Deprem%20ve%20Planlama)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Deprem%20ve%20Planlama)
 
 
 #### 📘 Doğrudan Pazarlama 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Doğrudan%20Pazarlama)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Do%C4%9Frudan%20Pazarlama)
 
 
 #### 📘 Dünya Uygarlıkları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Dünya%20Uygarlıkları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/D%C3%BCnya%20Uygarl%C4%B1klar%C4%B1)
 
 
 #### 📘 Ekonomi Politikaları ve Uygulamaları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Ekonomi%20Politikaları%20ve%20Uygulamaları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Ekonomi%20Politikalar%C4%B1%20ve%20Uygulamalar%C4%B1)
 
 
 #### 📘 Etkili İletişim Ve Hazırlıksız Sunum Becerileri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Etkili%20İletişim%20Ve%20Hazırlıksız%20Sunum%20Becerileri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Etkili%20%C4%B0leti%C5%9Fim%20Ve%20Haz%C4%B1rl%C4%B1ks%C4%B1z%20Sunum%20Becerileri)
 
 
 #### 📘 Eğitim Felsefesi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Felsefesi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/E%C4%9Fitim%20Felsefesi)
 
 
 #### 📘 Eğitim Teknolojilerinde Güncel Uygulamalar 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Teknolojilerinde%20Güncel%20Uygulamalar)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/E%C4%9Fitim%20Teknolojilerinde%20G%C3%BCncel%20Uygulamalar)
 
 
 #### 📘 Eğitim Yönetimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Eğitim%20Yönetimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/E%C4%9Fitim%20Y%C3%B6netimi)
 
 
 #### 📘 Felsefeye Giriş 
@@ -1415,245 +1415,245 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Felsefeye%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Felsefeye%20Giri%C5%9F)
 
 
 #### 📘 Fotoğraf Teknikleri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Fotoğraf%20Teknikleri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Foto%C4%9Fraf%20Teknikleri)
 
 
 #### 📘 Futbol ve Temel Hareket Öğretimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Futbol%20ve%20Temel%20Hareket%20Öğretimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Futbol%20ve%20Temel%20Hareket%20%C3%96%C4%9Fretimi)
 
 
 #### 📘 Gençlik ve Eğitim 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Gençlik%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Gen%C3%A7lik%20ve%20E%C4%9Fitim)
 
 
 #### 📘 Grafik Tasarım Araçları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Grafik%20Tasarım%20Araçları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Grafik%20Tasar%C4%B1m%20Ara%C3%A7lar%C4%B1)
 
 
 #### 📘 Gönüllülük Çalışmaları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Gönüllülük%20Çalışmaları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/G%C3%B6n%C3%BCll%C3%BCl%C3%BCk%20%C3%87al%C4%B1%C5%9Fmalar%C4%B1)
 
 
 #### 📘 Güzel Konuşma ve Diksiyon 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Güzel%20Konuşma%20ve%20Diksiyon)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/G%C3%BCzel%20Konu%C5%9Fma%20ve%20Diksiyon)
 
 
 #### 📘 Halk oyunları Temel Figür Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halk%20oyunları%20Temel%20Figür%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Halk%20oyunlar%C4%B1%20Temel%20Fig%C3%BCr%20E%C4%9Fitimi)
 
 
 #### 📘 Halkla İlişkiler (İİBF) 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(İİBF))
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Halkla%20%C4%B0li%C5%9Fkiler%20%28%C4%B0%C4%B0BF%29)
 
 
 #### 📘 Halkla İlişkiler (STF) 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Halkla%20İlişkiler%20(STF))
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Halkla%20%C4%B0li%C5%9Fkiler%20%28STF%29)
 
 
 #### 📘 Haritacılık Bilim Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Haritacılık%20Bilim%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Haritac%C4%B1l%C4%B1k%20Bilim%20Tarihi)
 
 
 #### 📘 Hayatın İçinde Kimya 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Hayatın%20İçinde%20Kimya)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Hayat%C4%B1n%20%C4%B0%C3%A7inde%20Kimya)
 
 
 #### 📘 Hentbol Temel Teknik Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Hentbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Hentbol%20Temel%20Teknik%20E%C4%9Fitimi)
 
 
 #### 📘 İngilizce Akademik Yazma ve Sunum Becerileri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İngilizce%20Akademik%20Yazma%20ve%20Sunum%20Becerileri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0ngilizce%20Akademik%20Yazma%20ve%20Sunum%20Becerileri)
 
 
 #### 📘 İnovasyon ve Girişimcilik 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnovasyon%20ve%20Girişimcilik)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0novasyon%20ve%20Giri%C5%9Fimcilik)
 
 
 #### 📘 İnsan Hakları 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Hakları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0nsan%20Haklar%C4%B1)
 
 
 #### 📘 İnsan Kaynakları Yönetimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Kaynakları%20Yönetimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0nsan%20Kaynaklar%C4%B1%20Y%C3%B6netimi)
 
 
 #### 📘 İnsan Merkezli Yapay Zeka 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İnsan%20Merkezli%20Yapay%20Zeka)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0nsan%20Merkezli%20Yapay%20Zeka)
 
 
 #### 📘 İstanbul: Dün, Bugün ve Yarın 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İstanbul:%20Dün,%20Bugün%20ve%20Yarın)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0stanbul%3A%20D%C3%BCn%2C%20Bug%C3%BCn%20ve%20Yar%C4%B1n)
 
 
 #### 📘 İşletme Lojistiğinin Temelleri 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/İşletme%20Lojistiğinin%20Temelleri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C4%B0%C5%9Fletme%20Lojisti%C4%9Finin%20Temelleri)
 
 
 #### 📘 Kariyer Planlama 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kariyer%20Planlama)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Kariyer%20Planlama)
 
 
 #### 📘 Kişisel Farkındalık ve Gelişim 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kişisel%20Farkındalık%20ve%20Gelişim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Ki%C5%9Fisel%20Fark%C4%B1ndal%C4%B1k%20ve%20Geli%C5%9Fim)
 
 
 #### 📘 Korfbol Temel Teknik Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Korfbol%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Korfbol%20Temel%20Teknik%20E%C4%9Fitimi)
 
 
 #### 📘 Kültür Yönetimi ve Etkenleri 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kültür%20Yönetimi%20ve%20Etkenleri%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/K%C3%BClt%C3%BCr%20Y%C3%B6netimi%20ve%20Etkenleri%202)
 
 
 #### 📘 Kültürel Çalışmalar ve Kimlik 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Kültürel%20Çalışmalar%20ve%20Kimlik)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/K%C3%BClt%C3%BCrel%20%C3%87al%C4%B1%C5%9Fmalar%20ve%20Kimlik)
 
 
 #### 📘 Lineer Cebirde Kavramlar ve İspatlar 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Lineer%20Cebirde%20Kavramlar%20ve%20İspatlar)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Lineer%20Cebirde%20Kavramlar%20ve%20%C4%B0spatlar)
 
 
 #### 📘 Makine Teknolojisi Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Makine%20Teknolojisi%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Makine%20Teknolojisi%20Tarihi)
 
 
 #### 📘 Masal ve Hikaye Anlatıcılığı 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Masal%20ve%20Hikaye%20Anlatıcılığı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Masal%20ve%20Hikaye%20Anlat%C4%B1c%C4%B1l%C4%B1%C4%9F%C4%B1)
 
 
 #### 📘 Matematik Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Matematik%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Matematik%20Tarihi)
 
 
 #### 📘 Medya Okuryazarlığı 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Medya%20Okuryazarlığı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Medya%20Okuryazarl%C4%B1%C4%9F%C4%B1)
 
 
 #### 📘 Mimarlık Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Mimarlık%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Mimarl%C4%B1k%20Tarihi)
 
 
 #### 📘 Modernite ve Tüketim Toplumu 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Modernite%20ve%20Tüketim%20Toplumu)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Modernite%20ve%20T%C3%BCketim%20Toplumu)
 
 
 #### 📘 Muhasebe Organizasyonu 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Muhasebe%20Organizasyonu)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Muhasebe%20Organizasyonu)
 
 
 #### 📘 Mühendislikte İnovasyon ve Girişimcilik 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Mühendislikte%20İnovasyon%20ve%20Girişimcilik)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/M%C3%BChendislikte%20%C4%B0novasyon%20ve%20Giri%C5%9Fimcilik)
 
 
 #### 📘 NFT'ye Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/NFT'ye%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/NFT%27ye%20Giri%C5%9F)
 
 
 #### 📘 Osmanlı Devletinin Toplumsal Yapısı 
@@ -1662,364 +1662,364 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Osmanlı%20Devletinin%20Toplumsal%20Yapısı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Osmanl%C4%B1%20Devletinin%20Toplumsal%20Yap%C4%B1s%C4%B1)
 
 
 #### 📘 Patent ve Ticarileşme 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Patent%20ve%20Ticarileşme)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Patent%20ve%20Ticarile%C5%9Fme)
 
 
 #### 📘 Pilates Temel Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Pilates%20Temel%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Pilates%20Temel%20E%C4%9Fitimi)
 
 
 #### 📘 Psikolojiye Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Psikolojiye%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Psikolojiye%20Giri%C5%9F)
 
 
 #### 📘 Sanal Evrene Giriş (Metaverse) 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanal%20Evrene%20Giriş%20(Metaverse))
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Sanal%20Evrene%20Giri%C5%9F%20%28Metaverse%29)
 
 
 #### 📘 Sanat Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanat%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Sanat%20Tarihi)
 
 
 #### 📘 Sanat ve Mimarlık Tarihine Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sanat%20ve%20Mimarlık%20Tarihine%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Sanat%20ve%20Mimarl%C4%B1k%20Tarihine%20Giri%C5%9F)
 
 
 #### 📘 Siyasal İdeolojiler: Kuram ve Tarih 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Siyasal%20İdeolojiler:%20Kuram%20ve%20Tarih)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Siyasal%20%C4%B0deolojiler%3A%20Kuram%20ve%20Tarih)
 
 
 #### 📘 Siyaset Felsefesi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Siyaset%20Felsefesi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Siyaset%20Felsefesi)
 
 
 #### 📘 Sosyal Antropoloji 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sosyal%20Antropoloji)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Sosyal%20Antropoloji)
 
 
 #### 📘 Sosyoloji 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sosyoloji)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Sosyoloji)
 
 
 #### 📘 Sürdürülebilirlik ve Eğitim 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Sürdürülebilirlik%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/S%C3%BCrd%C3%BCr%C3%BClebilirlik%20ve%20E%C4%9Fitim)
 
 
 #### 📘 Takım Kurma ve Geliştirme 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Takım%20Kurma%20ve%20Geliştirme)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Tak%C4%B1m%20Kurma%20ve%20Geli%C5%9Ftirme)
 
 
 #### 📘 Tarih ve Sinema 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Tarih%20ve%20Sinema)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Tarih%20ve%20Sinema)
 
 
 #### 📘 Temel Arapça 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Arap%C3%A7a%201)
 
 
 #### 📘 Temel Arapça 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Arapça%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Arap%C3%A7a%202)
 
 
 #### 📘 Temel Farsça 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Farsça%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Fars%C3%A7a%201)
 
 
 #### 📘 Temel Fransızca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Frans%C4%B1zca%201)
 
 
 #### 📘 Temel Fransızca 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Fransızca%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Frans%C4%B1zca%202)
 
 
 #### 📘 Temel İspanyolca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20%C4%B0spanyolca%201)
 
 
 #### 📘 Temel İspanyolca 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İspanyolca%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20%C4%B0spanyolca%202)
 
 
 #### 📘 Temel İtalyanca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20%C4%B0talyanca%201)
 
 
 #### 📘 Temel İtalyanca 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20İtalyanca%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20%C4%B0talyanca%202)
 
 
 #### 📘 Temel Japonca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Japonca%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Japonca%201)
 
 
 #### 📘 Temel Rusça 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Rusça%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Rus%C3%A7a%201)
 
 
 #### 📘 Temel Yunanca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Yunanca%201)
 
 
 #### 📘 Temel Yunanca 2 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yunanca%202)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Yunanca%202)
 
 
 #### 📘 Temel Yüzme Teknikleri Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Yüzme%20Teknikleri%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Y%C3%BCzme%20Teknikleri%20E%C4%9Fitimi)
 
 
 #### 📘 Temel Çince 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Temel%20Çince%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20%C3%87ince%201)
 
 
 #### 📘 Tenis Teknik ve Taktik Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Tenis%20Teknik%20ve%20Taktik%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Tenis%20Teknik%20ve%20Taktik%20E%C4%9Fitimi)
 
 
 #### 📘 Toplumsal Dönüşüm Sürecinde Kadın 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Dönüşüm%20Sürecinde%20Kadın)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Toplumsal%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20S%C3%BCrecinde%20Kad%C4%B1n)
 
 
 #### 📘 Toplumsal Yapılar ve Tarihsel Dönüşümler 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Toplumsal%20Yapılar%20ve%20Tarihsel%20Dönüşümler)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Toplumsal%20Yap%C4%B1lar%20ve%20Tarihsel%20D%C3%B6n%C3%BC%C5%9F%C3%BCmler)
 
 
 #### 📘 Trafik Güvenliği 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Trafik%20Güvenliği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Trafik%20G%C3%BCvenli%C4%9Fi)
 
 
 #### 📘 Türk Dili Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Dili%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%20Dili%20Tarihi)
 
 
 #### 📘 Türk Kültür Coğrafyası 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Coğrafyası)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%20K%C3%BClt%C3%BCr%20Co%C4%9Frafyas%C4%B1)
 
 
 #### 📘 Türk Kültür Tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Kültür%20Tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%20K%C3%BClt%C3%BCr%20Tarihi)
 
 
 #### 📘 Türk Öykü ve Romanı 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türk%20Öykü%20ve%20Romanı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%20%C3%96yk%C3%BC%20ve%20Roman%C4%B1)
 
 
 #### 📘 Türkiye Coğrafya ve Jeopolitiği 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türkiye%20Coğrafya%20ve%20Jeopolitiği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrkiye%20Co%C4%9Frafya%20ve%20Jeopoliti%C4%9Fi)
 
 
 #### 📘 Türkçe Öğretiminde Edebi Metinler 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Türkçe%20Öğretiminde%20Edebi%20Metinler)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretiminde%20Edebi%20Metinler)
 
 
 #### 📘 Uygarlık tarihi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Uygarlık%20tarihi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Uygarl%C4%B1k%20tarihi)
 
 
 #### 📘 Voleybolda Temel Teknik Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Voleybolda%20Temel%20Teknik%20Eğitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Voleybolda%20Temel%20Teknik%20E%C4%9Fitimi)
 
 
 #### 📘 Yeditepe İstanbul 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yeditepe%20İstanbul)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Yeditepe%20%C4%B0stanbul)
 
 
 #### 📘 Yoga ve Anatomi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yoga%20ve%20Anatomi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Yoga%20ve%20Anatomi)
 
 
 #### 📘 Yükseköğretimde Temel Hak Ve Sorumluluklar 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Yükseköğretimde%20Temel%20Hak%20Ve%20Sorumluluklar)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Y%C3%BCksek%C3%B6%C4%9Fretimde%20Temel%20Hak%20Ve%20Sorumluluklar)
 
 
 #### 📘 Çağdaş Toplum ve İletişim 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çağdaş%20Toplum%20ve%20İletişim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87a%C4%9Fda%C5%9F%20Toplum%20ve%20%C4%B0leti%C5%9Fim)
 
 
 #### 📘 Çevre ve Ekoloji 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20Ekoloji)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87evre%20ve%20Ekoloji)
 
 
 #### 📘 Çevre ve İnsan 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevre%20ve%20İnsan)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87evre%20ve%20%C4%B0nsan)
 
 
 #### 📘 Çevresel Vatandaşlık ve Eğitim 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çevresel%20Vatandaşlık%20ve%20Eğitim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87evresel%20Vatanda%C5%9Fl%C4%B1k%20ve%20E%C4%9Fitim)
 
 
 #### 📘 Çocuklarla Felsefe 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çocuklarla%20Felsefe)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87ocuklarla%20Felsefe)
 
 
 #### 📘 Çok Sesli Müziğe Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Çok%20Sesli%20Müziğe%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C3%87ok%20Sesli%20M%C3%BCzi%C4%9Fe%20Giri%C5%9F)
 
 
 #### 📘 Şehir Ekonomisi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Şehir%20Ekonomisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C5%9Eehir%20Ekonomisi)
 
 
 #### 📘 Şehir Sosyolojisi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Sosyal%20Seçmeli/Şehir%20Sosyolojisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/%C5%9Eehir%20Sosyolojisi)
 
 ### 🗓 Üniversite Mesleki Seçmeli
 
@@ -2028,280 +2028,280 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Akıllı%20Şebekelere%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Ak%C4%B1ll%C4%B1%20%C5%9Eebekelere%20Giri%C5%9F)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Güncel Konular 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Bilgisayar%20Mühendisliğinde%20Güncel%20Konular)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Bilgisayar%20M%C3%BChendisli%C4%9Finde%20G%C3%BCncel%20Konular)
 
 
 #### 📘 Biyomühendislikte Nanoteknoloji 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Biyomühendislikte%20Nanoteknoloji)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Biyom%C3%BChendislikte%20Nanoteknoloji)
 
 
 #### 📘 Cultural Heritage Management 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Cultural%20Heritage%20Management)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Cultural%20Heritage%20Management)
 
 
 #### 📘 Doğal Arıtma 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Doğal%20Arıtma)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Do%C4%9Fal%20Ar%C4%B1tma)
 
 
 #### 📘 Endüstriyel Otomasyon 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Endüstriyel%20Otomasyon)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/End%C3%BCstriyel%20Otomasyon)
 
 
 #### 📘 Enerji Ekonomisi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Enerji%20Ekonomisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Enerji%20Ekonomisi)
 
 
 #### 📘 Enerji ve Doğal Kaynaklar Ekonomisi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Enerji%20ve%20Doğal%20Kaynaklar%20Ekonomisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Enerji%20ve%20Do%C4%9Fal%20Kaynaklar%20Ekonomisi)
 
 
 #### 📘 Evrim ve Moleküler Ekoloji 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Evrim%20ve%20Moleküler%20Ekoloji)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Evrim%20ve%20Molek%C3%BCler%20Ekoloji)
 
 
 #### 📘 Gemi Kaynaklı Deniz Kirliliği 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Gemi%20Kaynaklı%20Deniz%20Kirliliği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Gemi%20Kaynakl%C4%B1%20Deniz%20Kirlili%C4%9Fi)
 
 
 #### 📘 Gıda Okur Yazarlığı 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Gıda%20Okur%20Yazarlığı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/G%C4%B1da%20Okur%20Yazarl%C4%B1%C4%9F%C4%B1)
 
 
 #### 📘 Hayatın İçinde Fizik 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Hayatın%20İçinde%20Fizik)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Hayat%C4%B1n%20%C4%B0%C3%A7inde%20Fizik)
 
 
 #### 📘 Hücresel Haberleşme Sistemleri 1 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Hücresel%20Haberleşme%20Sistemleri%201)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/H%C3%BCcresel%20Haberle%C5%9Fme%20Sistemleri%201)
 
 
 #### 📘 İmalat Teknikleri 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İmalat%20Teknikleri)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C4%B0malat%20Teknikleri)
 
 
 #### 📘 İnşaat Mevzuatına Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İnşaat%20Mevzuatına%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C4%B0n%C5%9Faat%20Mevzuat%C4%B1na%20Giri%C5%9F)
 
 
 #### 📘 İstatistik ve Bilimsel Düşünme 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İstatistik%20ve%20Bilimsel%20Düşünme)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C4%B0statistik%20ve%20Bilimsel%20D%C3%BC%C5%9F%C3%BCnme)
 
 
 #### 📘 İşletmelerde İletişim 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İşletmelerde%20İletişim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C4%B0%C5%9Fletmelerde%20%C4%B0leti%C5%9Fim)
 
 
 #### 📘 Katılımcı Kent Yönetiminde Proje Yönetim Süreci 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Katılımcı%20Kent%20Yönetiminde%20Proje%20Yönetim%20Süreci)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Kat%C4%B1l%C4%B1mc%C4%B1%20Kent%20Y%C3%B6netiminde%20Proje%20Y%C3%B6netim%20S%C3%BCreci)
 
 
 #### 📘 Kent Okumaları 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Kent%20Okumaları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Kent%20Okumalar%C4%B1)
 
 
 #### 📘 Malzeme Dünyası 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Malzeme%20Dünyası)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Malzeme%20D%C3%BCnyas%C4%B1)
 
 
 #### 📘 Matematiksel Modelleme 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Matematiksel%20Modelleme)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Matematiksel%20Modelleme)
 
 
 #### 📘 Mekatronik Sistem Entegrasyonu 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mekatronik%20Sistem%20Entegrasyonu)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Mekatronik%20Sistem%20Entegrasyonu)
 
 
 #### 📘 Mikroişlemcili Sistem Tasarımı 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mikroişlemcili%20Sistem%20Tasarımı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Mikroi%C5%9Flemcili%20Sistem%20Tasar%C4%B1m%C4%B1)
 
 
 #### 📘 Modern Türk Edebiyatında Edebi Tartışmalar 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Modern%20Türk%20Edebiyatında%20Edebi%20Tartışmalar)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Modern%20T%C3%BCrk%20Edebiyat%C4%B1nda%20Edebi%20Tart%C4%B1%C5%9Fmalar)
 
 
 #### 📘 Mühendisler için Kuantum Fiziği 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendisler%20için%20Kuantum%20Fiziği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/M%C3%BChendisler%20i%C3%A7in%20Kuantum%20Fizi%C4%9Fi)
 
 
 #### 📘 Mühendislik Ekonomisi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislik%20Ekonomisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/M%C3%BChendislik%20Ekonomisi)
 
 
 #### 📘 Mühendislikte Sayısal Yöntemler ve Uygulamaları 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Sayısal%20Yöntemler%20ve%20Uygulamaları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/M%C3%BChendislikte%20Say%C4%B1sal%20Y%C3%B6ntemler%20ve%20Uygulamalar%C4%B1)
 
 
 #### 📘 Mühendislikte Temel Optimizasyon Kavramları 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Mühendislikte%20Temel%20Optimizasyon%20Kavramları)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/M%C3%BChendislikte%20Temel%20Optimizasyon%20Kavramlar%C4%B1)
 
 
 #### 📘 Müzecilik ve Müzeografi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Müzecilik%20ve%20Müzeografi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/M%C3%BCzecilik%20ve%20M%C3%BCzeografi)
 
 
 #### 📘 Navigasyon ve Kinematik Konumlama 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Navigasyon%20ve%20Kinematik%20Konumlama)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Navigasyon%20ve%20Kinematik%20Konumlama)
 
 
 #### 📘 Physiological Control Systems 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Physiological%20Control%20Systems)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Physiological%20Control%20Systems)
 
 
 #### 📘 Risk Yönetimi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Risk%20Yönetimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Risk%20Y%C3%B6netimi)
 
 
 #### 📘 Sinemada Mekan ve Tarih 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Sinemada%20Mekan%20ve%20Tarih)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Sinemada%20Mekan%20ve%20Tarih)
 
 
 #### 📘 Sosyal Politikalar İktisadı 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Sosyal%20Politikalar%20İktisadı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Sosyal%20Politikalar%20%C4%B0ktisad%C4%B1)
 
 
 #### 📘 Teknik İletişim 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Teknik%20İletişim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Teknik%20%C4%B0leti%C5%9Fim)
 
 
 #### 📘 Temel Aktüerya Matematiği 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Temel%20Aktüerya%20Matematiği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Temel%20Akt%C3%BCerya%20Matemati%C4%9Fi)
 
 
 #### 📘 Uluslararası İlişkilerde Temel Konular 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Uluslararası%20İlişkilerde%20Temel%20Konular)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Uluslararas%C4%B1%20%C4%B0li%C5%9Fkilerde%20Temel%20Konular)
 
 
 #### 📘 Uydu Haberleşmesi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Uydu%20Haberleşmesi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Uydu%20Haberle%C5%9Fmesi)
 
 
 #### 📘 Yapay Zekaya Giriş 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapay%20Zekaya%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Yapay%20Zekaya%20Giri%C5%9F)
 
 
 #### 📘 Yapı Dinamiği 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapı%20Dinamiği)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Yap%C4%B1%20Dinami%C4%9Fi)
 
 
 #### 📘 Yapısal Programlamaya Giriş 
@@ -2316,28 +2316,28 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Yapısal%20Programlamaya%20Giriş)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/Yap%C4%B1sal%20Programlamaya%20Giri%C5%9F)
 
 
 #### 📘 Çevre Kimyası ve Teknolojisi 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Çevre%20Kimyası%20ve%20Teknolojisi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C3%87evre%20Kimyas%C4%B1%20ve%20Teknolojisi)
 
 
 #### 📘 Çevre ve Halk Sağlığı 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Çevre%20ve%20Halk%20Sağlığı)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C3%87evre%20ve%20Halk%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1)
 
 
 #### 📘 Şifreleme 
   - 🏷️ **Ders Tipi:** Üniversite Mesleki Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/Şifreleme)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C5%9Eifreleme)
 
 ### 🗓 Mesleki Seçmeli 1
 
@@ -2355,14 +2355,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
+  - 📂 [Ders Klasörü](./3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama)
 
 
 #### 📘 Ayrık Olay Simülasyonu 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Ayrık%20Olay%20Simülasyonu)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Ayr%C4%B1k%20Olay%20Sim%C3%BClasyonu)
 
 
 #### 📘 Ağ Teknolojileri 
@@ -2376,35 +2376,35 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 8 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/ağ%20teknolojileri)
+  - 📂 [Ders Klasörü](./3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/a%C4%9F%20teknolojileri)
 
 
 #### 📘 Bilgisayar Grafiğine Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Grafiğine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20Grafi%C4%9Fine%20Giri%C5%9F)
 
 
 #### 📘 Bilgisayar Mimarisi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mimarisi)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20Mimarisi)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 1 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 2 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203)
 
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 3 
@@ -2413,7 +2413,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgisayar%20Mühendisliğinde%20Özel%20Konular%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203)
 
 
 #### 📘 Bilgiye Erişim ve Arama Motorları 
@@ -2424,7 +2424,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MSA](#-doç-dr-mehmet-sıddık-aktaş)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilgiye%20Erişim%20Ve%20Arama%20Motorları)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgiye%20Eri%C5%9Fim%20Ve%20Arama%20Motorlar%C4%B1)
 
 
 #### 📘 Bilişim Sistemleri Güvenliği 
@@ -2435,7 +2435,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HHB](#-prof-dr-hasan-hüseyin-balık)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bilişim%20Sistemleri%20Güvenliği)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bili%C5%9Fim%20Sistemleri%20G%C3%BCvenli%C4%9Fi)
 
 
 #### 📘 Biyoenformatiğe Giriş 
@@ -2449,14 +2449,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [NA](#-prof-dr-nizamettin-aydın)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Biyoenformatiğe%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Biyoenformati%C4%9Fe%20Giri%C5%9F)
 
 
 #### 📘 Biçimsel Diller ve Soyut Makineler 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Biçimsel%20Diller%20ve%20Soyut%20Makineler)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bi%C3%A7imsel%20Diller%20ve%20Soyut%20Makineler)
 
 
 #### 📘 Blokzincir Temelleri 
@@ -2465,14 +2465,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Blokzincir%20Temelleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Blokzincir%20Temelleri)
 
 
 #### 📘 Bulanık Mantık 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Bulanık%20Mantık)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bulan%C4%B1k%20Mant%C4%B1k)
 
 
 #### 📘 Büyük Veri İşleme ve Analizi 
@@ -2485,28 +2485,28 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★☆☆☆☆
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Büyük%20Veri%20İşleme%20Ve%20Analizi)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/B%C3%BCy%C3%BCk%20Veri%20%C4%B0%C5%9Fleme%20Ve%20Analizi)
 
 
 #### 📘 Dağıtık Sistemler 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Dağıtık%20Sistemler)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Da%C4%9F%C4%B1t%C4%B1k%20Sistemler)
 
 
 #### 📘 Derleyici Tasarımı 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Derleyici%20Tasarımı)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Derleyici%20Tasar%C4%B1m%C4%B1)
 
 
 #### 📘 Dosya Düzenleme 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Dosya%20Düzenleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Dosya%20D%C3%BCzenleme)
 
 
 #### 📘 Doğal Dil İşlemeye Giriş 
@@ -2521,21 +2521,21 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Doğal%20Dil%20İşlemeye%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Do%C4%9Fal%20Dil%20%C4%B0%C5%9Flemeye%20Giri%C5%9F)
 
 
 #### 📘 Geniş Ölçekli Sistemler için İşletim Sistemi Mimarileri 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Geniş%20Ölçekli%20Sistemler%20için%20İşletim%20Sistemi%20Mimarileri)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Geni%C5%9F%20%C3%96l%C3%A7ekli%20Sistemler%20i%C3%A7in%20%C4%B0%C5%9Fletim%20Sistemi%20Mimarileri)
 
 
 #### 📘 Gerçek Zamanlı Bilgisayar Sistemleri 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Gerçek%20Zamanlı%20Bilgisayar%20Sistemleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Ger%C3%A7ek%20Zamanl%C4%B1%20Bilgisayar%20Sistemleri)
 
 
 #### 📘 Gömülü Sistemler 
@@ -2549,7 +2549,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Gömülü%20Sistemler)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/G%C3%B6m%C3%BCl%C3%BC%20Sistemler)
 
 
 #### 📘 Görüntü İşleme 
@@ -2558,7 +2558,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MEK](#-prof-dr-m-elif-karslıgil)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Görüntü%20İşleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
 
 
 #### 📘 İleri Ağ Programlama 
@@ -2574,7 +2574,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HOİ](#-dr-hamza-osman-i̇lhan)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İleri%20Ağ%20Programlama)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C4%B0leri%20A%C4%9F%20Programlama)
 
 
 #### 📘 İstatistiksel Veri Analizi 
@@ -2588,35 +2588,35 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İstatistiksel%20Veri%20Analizi)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C4%B0statistiksel%20Veri%20Analizi)
 
 
 #### 📘 İşletmede Mesleki Eğitim 1 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%201)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C4%B0%C5%9Fletmede%20Mesleki%20E%C4%9Fitim%201)
 
 
 #### 📘 İşletmede Mesleki Eğitim 2 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%202)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C4%B0%C5%9Fletmede%20Mesleki%20E%C4%9Fitim%202)
 
 
 #### 📘 İşletmede Mesleki Eğitim 3 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/İşletmede%20Mesleki%20Eğitim%203)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C4%B0%C5%9Fletmede%20Mesleki%20E%C4%9Fitim%203)
 
 
 #### 📘 Kablosuz ve Mobil Ağlar 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Kablosuz%20ve%20Mobil%20Ağlar)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Kablosuz%20ve%20Mobil%20A%C4%9Flar)
 
 
 #### 📘 Mobil Programlamaya Giriş 
@@ -2630,7 +2630,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MAG](#-doç-dr-m-amaç-güvensan)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Mobil%20Programlamaya%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Mobil%20Programlamaya%20Giri%C5%9F)
 
 
 #### 📘 Oyun Geliştirmeye Giriş 
@@ -2641,7 +2641,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Oyun%20Geliştirmeye%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Oyun%20Geli%C5%9Ftirmeye%20Giri%C5%9F)
 
 
 #### 📘 Robot Teknolojisine Giriş 
@@ -2655,7 +2655,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Robot%20Teknolojisine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Robot%20Teknolojisine%20Giri%C5%9F)
 
 
 #### 📘 Sayısal İşaret İşleme 
@@ -2671,14 +2671,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - [ACK](#-doç-dr-ali-can-karaca)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Sayısal%20İşaret%20İşleme)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Say%C4%B1sal%20%C4%B0%C5%9Faret%20%C4%B0%C5%9Fleme)
 
 
 #### 📘 Sistem Programlama 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Sistem%20Programlama)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Sistem%20Programlama)
 
 
 #### 📘 Uzman Sistemlere Giriş 
@@ -2689,7 +2689,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Uzman%20Sistemlere%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Uzman%20Sistemlere%20Giri%C5%9F)
 
 
 #### 📘 Veri Madenciliğine Giriş 
@@ -2703,7 +2703,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Madenciliğine%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Veri%20Madencili%C4%9Fine%20Giri%C5%9F)
 
 
 #### 📘 Veri Tabanı Sistemlerinde Güncel Konular 
@@ -2718,14 +2718,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinde%20Güncel%20Konular)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Veri%20Taban%C4%B1%20Sistemlerinde%20G%C3%BCncel%20Konular)
 
 
 #### 📘 Veri Tabanı Sistemlerinin İç Yapısı 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veri%20Tabanı%20Sistemlerinin%20İç%20Yapısı)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Veri%20Taban%C4%B1%20Sistemlerinin%20%C4%B0%C3%A7%20Yap%C4%B1s%C4%B1)
 
 
 #### 📘 Veritabanı Sistemlerinin Gerçekleştirilmesi 
@@ -2736,14 +2736,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Veritabanı%20Sistemlerinin%20Gerçekleştirilmesi)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Veritaban%C4%B1%20Sistemlerinin%20Ger%C3%A7ekle%C5%9Ftirilmesi)
 
 
 #### 📘 Yapay Sinir Ağlarına Giriş 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yapay%20Sinir%20Ağlarına%20Giriş)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Yapay%20Sinir%20A%C4%9Flar%C4%B1na%20Giri%C5%9F)
 
 
 #### 📘 Yazılım Kalite ve Test Süreci 
@@ -2757,14 +2757,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yazılım%20Kalite%20ve%20Test%20Süreci)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Yaz%C4%B1l%C4%B1m%20Kalite%20ve%20Test%20S%C3%BCreci)
 
 
 #### 📘 Yazılım Sektöründe Çevik Dönüşüm ve Uygulama Pratikleri 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yazılım%20Sektöründe%20Çevik%20Dönüşüm%20ve%20Uygulama%20Pratikleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Yaz%C4%B1l%C4%B1m%20Sekt%C3%B6r%C3%BCnde%20%C3%87evik%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20ve%20Uygulama%20Pratikleri)
 
 
 #### 📘 Yönetim Bilgi Sistemleri 
@@ -2778,28 +2778,28 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yönetim%20Bilgi%20Sistemleri)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Y%C3%B6netim%20Bilgi%20Sistemleri)
 
 
 #### 📘 Yöneylem Araştırması 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Yöneylem%20Araştırması)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Y%C3%B6neylem%20Ara%C5%9Ft%C4%B1rmas%C4%B1)
 
 
 #### 📘 Çevik Yaklaşımlarla Yazılım Geliştirme 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Çevik%20Yaklaşımlarla%20Yazılım%20Geliştirme)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C3%87evik%20Yakla%C5%9F%C4%B1mlarla%20Yaz%C4%B1l%C4%B1m%20Geli%C5%9Ftirme)
 
 
 #### 📘 Örün Servisleri ve Servis Odaklı Mimari 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Mesleki%20Seçmeli%201/Örün%20Servisleri%20ve%20Servis%20Odaklı%20Mimari)
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/%C3%96r%C3%BCn%20Servisleri%20ve%20Servis%20Odakl%C4%B1%20Mimari)
 
 ### 🗓 Sosyal Seçmeli 1
 
@@ -2814,112 +2814,112 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★★
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Davranış%20Bilimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Davran%C4%B1%C5%9F%20Bilimi)
 
 
 #### 📘 Davranışsal Açıdan Kurumsal İtibar 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Davranışsal%20Açıdan%20Kurumsal%20İtibar)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Davran%C4%B1%C5%9Fsal%20A%C3%A7%C4%B1dan%20Kurumsal%20%C4%B0tibar)
 
 
 #### 📘 Ekonomi Politikaları 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Ekonomi%20Politikaları)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Ekonomi%20Politikalar%C4%B1)
 
 
 #### 📘 Finansal ve Maliyet Muhasebesi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Finansal%20ve%20Maliyet%20Muhasebesi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Finansal%20ve%20Maliyet%20Muhasebesi)
 
 
 #### 📘 Girişimcilik 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Girişimcilik)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Giri%C5%9Fimcilik)
 
 
 #### 📘 Hukukun Genel Kavramları 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Hukukun%20Genel%20Kavramları)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Hukukun%20Genel%20Kavramlar%C4%B1)
 
 
 #### 📘 İnsan Kaynakları Yönetimi (İşletme) 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İnsan%20Kaynakları%20Yönetimi%20(işletme))
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C4%B0nsan%20Kaynaklar%C4%B1%20Y%C3%B6netimi%20%28i%C5%9Fletme%29)
 
 
 #### 📘 İşletme Bilimine Giriş 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İşletme%20Bilimine%20Giriş)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C4%B0%C5%9Fletme%20Bilimine%20Giri%C5%9F)
 
 
 #### 📘 İşletmelerde İletişim 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Üniversite%20Mesleki%20Seçmeli/İşletmelerde%20İletişim)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Mesleki%20Se%C3%A7meli/%C4%B0%C5%9Fletmelerde%20%C4%B0leti%C5%9Fim)
 
 
 #### 📘 İşletmelerde İnovasyon Yönetimi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/İşletmelerde%20İnovasyon%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C4%B0%C5%9Fletmelerde%20%C4%B0novasyon%20Y%C3%B6netimi)
 
 
 #### 📘 Kariyer ve Çalışma Psikolojisi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Kariyer%20ve%20Çalışma%20Psikolojisi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Kariyer%20ve%20%C3%87al%C4%B1%C5%9Fma%20Psikolojisi)
 
 
 #### 📘 Nicel Karar Verme Teknikleri 1 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Nicel%20Karar%20Verme%20Teknikleri%201)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Nicel%20Karar%20Verme%20Teknikleri%201)
 
 
 #### 📘 Pazarlama 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Pazarlama)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Pazarlama)
 
 
 #### 📘 Satış Yönetimi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Satış%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Sat%C4%B1%C5%9F%20Y%C3%B6netimi)
 
 
 #### 📘 Tüketici Davranışı 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Tüketici%20Davranışı)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/T%C3%BCketici%20Davran%C4%B1%C5%9F%C4%B1)
 
 
 #### 📘 Türk İdare Tarihi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Türk%20İdare%20Tarihi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/T%C3%BCrk%20%C4%B0dare%20Tarihi)
 
 
 #### 📘 Uluslararası Pazarlama 
@@ -2931,28 +2931,28 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★☆☆☆☆☆☆☆☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Uluslararası%20Pazarlama)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/Uluslararas%C4%B1%20Pazarlama)
 
 
 #### 📘 Örgütlerde Takım Oluşturma ve Geliştirme 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Örgütlerde%20Takım%20Oluşturma%20ve%20Geliştirme)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C3%96rg%C3%BCtlerde%20Tak%C4%B1m%20Olu%C5%9Fturma%20ve%20Geli%C5%9Ftirme)
 
 
 #### 📘 Örgütsel Etik 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Örgütsel%20Etik)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C3%96rg%C3%BCtsel%20Etik)
 
 
 #### 📘 Üretim Yönetimi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Sosyal%20Seçmeli%201/Üretim%20Yönetimi)
+  - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C3%9Cretim%20Y%C3%B6netimi)
 
 ### 🗓 Lisansüstü
 
@@ -2965,14 +2965,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [AÖ](#-dr-ayşe-öcal)
-  - 📂 [Ders Klasörü](./Lisansüstü/Araştırma%20Yöntemleri%20ve%20Bilimsel%20Etik)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Ara%C5%9Ft%C4%B1rma%20Y%C3%B6ntemleri%20ve%20Bilimsel%20Etik)
 
 
 #### 📘 Bilgisayar Güvenliği ve Kriptografi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayar%20Güvenliği%20ve%20Kriptografi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayar%20G%C3%BCvenli%C4%9Fi%20ve%20Kriptografi)
 
 
 #### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği 
@@ -2981,7 +2981,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayar%20Sistemleri%20ve%20Ağ%20Güvenliği)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi)
 
 
 #### 📘 Bilgisayarla Görme 
@@ -2993,7 +2993,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OA](#-dr-oğuz-altun)
     - [SV](#-prof-dr-songül-varlı)
-  - 📂 [Ders Klasörü](./Lisansüstü/Bilgisayarla%20Görme)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayarla%20G%C3%B6rme)
 
 
 #### 📘 Biyomedikal İşaret ve Görüntü İşleme 
@@ -3002,14 +3002,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [GB](#-doç-dr-gökhan-bilgin)
-  - 📂 [Ders Klasörü](./Lisansüstü/Biyomedikal%20İşaret%20ve%20Görüntü%20İşleme)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Biyomedikal%20%C4%B0%C5%9Faret%20ve%20G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
 
 
 #### 📘 Büyük Veri Analitiği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Büyük%20Veri%20Analitiği)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi)
 
 
 #### 📘 Hesaplamalı Anlambilim 
@@ -3018,7 +3018,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](./Lisansüstü/Hesaplamalı%20Anlambilim)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Hesaplamal%C4%B1%20Anlambilim)
 
 
 #### 📘 İleri Algoritma Analizi Ve Tasarımı 
@@ -3029,21 +3029,21 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HİT](#-dr-h-i̇rem-türkmen)
-  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Algoritma%20Analizi%20Ve%20Tasarımı)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Algoritma%20Analizi%20Ve%20Tasar%C4%B1m%C4%B1)
 
 
 #### 📘 İleri İşletim Sistemleri 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20İşletim%20Sistemleri)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Fletim%20Sistemleri)
 
 
 #### 📘 İleri Optimizasyon 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Optimizasyon)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Optimizasyon)
 
 
 #### 📘 İleri Yazılım Mimarisi 
@@ -3052,7 +3052,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/İleri%20Yazılım%20Mimarisi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Yaz%C4%B1l%C4%B1m%20Mimarisi)
 
 
 #### 📘 Kollektif Öğrenme 
@@ -3061,7 +3061,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MFA](#-prof-dr-m-fatih-amasyalı)
-  - 📂 [Ders Klasörü](./Lisansüstü/Kollektif%20Öğrenme)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Kollektif%20%C3%96%C4%9Frenme)
 
 
 #### 📘 Makine Öğrenmesi 
@@ -3070,7 +3070,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Makine%20Öğrenmesi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Makine%20%C3%96%C4%9Frenmesi)
 
 
 #### 📘 Nesneye Dayalı Tasarım ve Modelleme 
@@ -3081,14 +3081,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
-  - 📂 [Ders Klasörü](./Lisansüstü/Nesneye%20Dayalı%20Tasarım%20ve%20Modelleme)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Nesneye%20Dayal%C4%B1%20Tasar%C4%B1m%20ve%20Modelleme)
 
 
 #### 📘 Olasılık, Rastgele Değişkenler ve Stokastik Prosesler 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Olasılık,%20Rastgele%20Değişkenler%20ve%20Stokastik%20Prosesler)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Olas%C4%B1l%C4%B1k%2C%20Rastgele%20De%C4%9Fi%C5%9Fkenler%20ve%20Stokastik%20Prosesler)
 
 
 #### 📘 Olasılıksal Robotik 
@@ -3099,7 +3099,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](./Lisansüstü/Olasılıksal%20Robotik)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Olas%C4%B1l%C4%B1ksal%20Robotik)
 
 
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
@@ -3110,7 +3110,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [SV](#-prof-dr-songül-varlı)
-  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Madenciliği%20ve%20Bilgi%20Keşfi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Madencili%C4%9Fi%20ve%20Bilgi%20Ke%C5%9Ffi)
 
 
 #### 📘 Veri Sıkıştırma 
@@ -3121,7 +3121,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [BD](#-prof-dr-banu-diri)
-  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Sıkıştırma)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma)
 
 
 #### 📘 Veri Tabanı Sistemlerinin Gerçeklenmesi 
@@ -3132,7 +3132,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
-  - 📂 [Ders Klasörü](./Lisansüstü/Veri%20Tabanı%20Sistemlerinin%20Gerçeklenmesi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Taban%C4%B1%20Sistemlerinin%20Ger%C3%A7eklenmesi)
 
 
 #### 📘 Yazılım Kalitesi ve Test Teknikleri 
@@ -3143,14 +3143,14 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [OK](#-prof-dr-oya-kalıpsız)
-  - 📂 [Ders Klasörü](./Lisansüstü/Yazılım%20Kalitesi%20ve%20Test%20Teknikleri)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Yaz%C4%B1l%C4%B1m%20Kalitesi%20ve%20Test%20Teknikleri)
 
 
 #### 📘 Çok Değişkenli İstatiksel Veri Analizi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./Lisansüstü/Çok%20Değişkenli%20İstatiksel%20Veri%20Analizi)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C3%87ok%20De%C4%9Fi%C5%9Fkenli%20%C4%B0statiksel%20Veri%20Analizi)
 
 ### 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler
 
@@ -3168,7 +3168,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [ACK](#-doç-dr-ali-can-karaca)
     - [EU](#-dr-erkan-uslu)
-  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donanımı)
+  - 📂 [Ders Klasörü](./2-2/Bilgisayar%20Organizasyonu/Bilgisayar%20Donan%C4%B1m%C4%B1)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -3215,7 +3215,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
       - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [G1](#-dr-göksel-biricik)
-  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Etiği/Mesleki%20Hukuk%20ve%20Etik)
+  - 📂 [Ders Klasörü](./3-1/Seminer%20ve%20Meslek%20Eti%C4%9Fi/Mesleki%20Hukuk%20ve%20Etik)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -3233,7 +3233,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [EU](#-dr-erkan-uslu)
     - [FÇ](#-dr-furkan-çakmak)
-  - 📂 [Ders Klasörü](./3-1/Mikroişlemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroişlemci%20Sistemleri)
+  - 📂 [Ders Klasörü](./3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 
@@ -3250,7 +3250,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [FÇ](#-dr-furkan-çakmak)
     - [ZCT](#-dr-ziya-cihan-tayşi)
-  - 📂 [Ders Klasörü](./3-2/Veri%20İletişimi%20ve%20Bilgisayar%20Ağları/Veri%20İletişimi)
+  - 📂 [Ders Klasörü](./3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi)
   - ℹ️ Dersin içeriği güncel değil
     - Bu ders artık müfredata dahil değildir. Ya tamamen kaldırılmış, ya ismi ve içeriği güncellenmiş ya da birleştirilmiş olabilir.
 </details>

@@ -2,6 +2,7 @@
 import os
 import re
 import unicodedata
+import urllib.parse
 from typing import Optional, Any
 
 import sys
@@ -174,8 +175,14 @@ def yerel_yoldan_github_linkine(
     klasor_yolu = os.path.normpath(klasor_yolu)
     klasor_yolu = klasor_yolu.replace("\\", "/")
     klasor_yolu = klasor_yolu.lstrip("/")
-    klasor_yolu = klasor_yolu.replace(" ", "%20")
-    
+
+    # Her bir path bileşenini ayrı ayrı encode et (parantez, Türkçe karakter vb.)
+    parcalar = klasor_yolu.split("/")
+    encode_edilmis_parcalar = [
+        urllib.parse.quote(p, safe="") for p in parcalar
+    ]
+    klasor_yolu = "/".join(encode_edilmis_parcalar)
+
     return f"./{klasor_yolu}"
 
 

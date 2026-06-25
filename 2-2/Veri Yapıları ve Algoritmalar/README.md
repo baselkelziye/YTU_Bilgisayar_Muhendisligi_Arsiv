@@ -40,8 +40,8 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1iNzLkLZDXD29h57sdW_yBBj9cTgI7KXs?usp=drive_link) ✨
 - 📄 **Ders Kayıtları:** [Veri Yapıları ve Algoritmalar Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
-- 📄 **Not:** [İrem'in el yazısı notu](./2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
-- 📄 **Not:** [Nasırın el yazısı notu](./2-2/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar/slaytlar_notlar/2022/nasir) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [İrem'in el yazısı notu](./slaytlar_notlar/2023/veri_yap%C4%B1lar%C4%B1_irem.pdf) GitHub render edemiyorsa indirin... ✨
+- 📄 **Not:** [Nasırın el yazısı notu](./slaytlar_notlar/2022/nasir) GitHub render edemiyorsa indirin... ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=kMb5uhTeeHQ&ab_channel=MehmetBu%C4%9FraAslan) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=lYFZbKSBYtE&ab_channel=M%C3%BCdaferKaymak) ✨
 - 📄 **Proje:** [Proje](https://www.youtube.com/watch?v=KY2pqpdIcDw&t=2s&ab_channel=MuhammetKayraBulut)/Ödev için youtube'da eski öğrencilerin paylaşımlarına bakılabilir. ✨
