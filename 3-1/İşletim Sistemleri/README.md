@@ -40,6 +40,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link) ✨
 - 📄 **Çıkmış:** [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
+- 📄 **Ders Kayıtları:** [İşletim Sistemleri Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Kitap** Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış. ✨
 - 📄 **Not:** [Önder'in markdown notları](./slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

@@ -137,6 +137,7 @@
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1WMipzjoUQvOlniaAeV_0FWJUfkyf4JYh?usp=drive_link) ✨
 - 📄 **Çıkmış:** [Vize soruları bazen buradan birebir alınıyor](https://www.mcqscenter.com/computer-science/operating-system) Bu sitede sol üst köşedeki üç çizgiye tıklayarak ilgili konu başlığını seçmeniz gerekiyor. Konu başlıkları işlenen slaytların başlıklarıyla aynı. ✨
+- 📄 **Ders Kayıtları:** [İşletim Sistemleri Ders Kayıtları Altyazıları](./%C4%B0%C5%9Fletim%20Sistemleri/ders_kayitlari/) ✨
 - 📄 **Kitap** Abraham-Silberschatz-Operating-System-Concepts-10th-2018 kitap oldukça güzel, ders slaytları da bu kitaptan alınmış. ✨
 - 📄 **Not:** [Önder'in markdown notları](./%C4%B0%C5%9Fletim%20Sistemleri/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
@@ -238,7 +239,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./) ✨
+- 📄 **Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/ders_kayitlari/) ✨
 - 📄 **Ders Kayıtları:** [Mikroişlemci Sistemleri Ders Kayıtları Altyazıları](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/ders_kayitlari/2020-2021/altyazilar/) ✨
 - 📄 **Not:** [El yazısı not](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/Mikroi%C5%9Flemci%20Sistemleri/slaytlar_notlar/2022/notlar) ✨
 - 📄 **Not:** [Nasırın el yazısı alt seviye notu](./Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/slaytlar_notlar/2021/nas%C4%B1r%20el%20yaz%C4%B1s%C4%B1.pdf) render edilemiyorsa indirin... ✨
@@ -397,7 +398,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1hXpPlnHi6lWRF6WyOQcHDy-DZ9ItstzB?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Veritabanı Yönetimi Ders Kayıtları Altyazıları](./) ✨
+- 📄 **Ders Kayıtları:** [Veritabanı Yönetimi Ders Kayıtları Altyazıları](./Veritaban%C4%B1%20Y%C3%B6netimi/ders_kayitlari/) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Veritaban%C4%B1%20Y%C3%B6netimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

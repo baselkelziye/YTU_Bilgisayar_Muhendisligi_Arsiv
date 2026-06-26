@@ -29,6 +29,7 @@ from cikti_yazdirma import custom_write, custom_write_error
 
 from folder_cache import FolderCache
 from buffered_writer import BufferedReadmeWriter
+from writers.yardimci import ders_adi_normalize
 from writers import (
     GirisWriter, DerslerWriter, HocalarWriter,
     RepoKullanimiWriter, YazarNotlariWriter, KatkidaBulunanlarWriter,
@@ -120,6 +121,8 @@ class ReadmeGenerator:
         self._load_data()
         self._init_cache()
         self._init_writers()
+        # Ders -> gerçekte bulunduğu klasör eşlemesi (dönem README linkleri için).
+        self._ders_klasorleri: dict[int, str] = {}
     
     def _load_data(self) -> None:
         """Tüm verileri yükle."""
@@ -134,6 +137,12 @@ class ReadmeGenerator:
         self.donemler = self.loader.json_oku(DONEMLER_JSON_NAME)
         self.maas_istatistikleri = self.loader.txt_oku(MAAS_ISTATISTIKLERI_TXT_NAME)
         
+        # Ders adlarındaki bağlaçları normalize et (örn: "Ve" -> "ve")
+        if self.dersler:
+            for ders in self.dersler.get(DERSLER, []):
+                if AD in ders:
+                    ders[AD] = ders_adi_normalize(ders[AD])
+
         # Dersleri sırala
         if self.dersler:
             self.dersler[DERSLER] = sorted(
@@ -251,10 +260,14 @@ class ReadmeGenerator:
                 # Klasör yok, oluştur
                 ders_klasoru = self._ders_klasoru_olustur(ders)
                 klasor_sonradan_olustu = True
-            
+
+            # Dönem README'lerinin bu derse ait klasör-göreceli linkleri doğru
+            # yazabilmesi için çözülen klasörü sakla.
+            self._ders_klasorleri[id(ders)] = ders_klasoru
+
             # README yaz
             writer = BufferedReadmeWriter()
-            self.ders_klasor_writer.write_ders_readme(writer, ders, klasor_sonradan_olustu)
+            self.ders_klasor_writer.write_ders_readme(writer, ders, klasor_sonradan_olustu, ders_klasoru)
             writer.save(os.path.join(ders_klasoru, README_MD))
             
             custom_write(f"{ders_adi} README.md olusturuldu.\n")
@@ -315,13 +328,17 @@ class ReadmeGenerator:
                 if not self._ders_doneme_ait_mi(ders, donem):
                     continue
                 
-                dosya_yolu = os.path.join(
-                    donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU),
-                    README_MD
-                )
-                
+                donem_klasoru = donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU)
+                dosya_yolu = os.path.join(donem_klasoru, README_MD)
+
+                ders_klasoru = self._ders_klasorleri.get(id(ders))
+                if ders_klasoru is None:
+                    ders_klasoru = self.folder_cache.find_best_match(ders.get(AD, ""))
+
                 writer = BufferedReadmeWriter()
-                self.donem_writer.write_ders_to_donem(writer, ders, guncel_olmayan_aciklama)
+                self.donem_writer.write_ders_to_donem(
+                    writer, ders, guncel_olmayan_aciklama, donem_klasoru, ders_klasoru
+                )
                 writer.append_to_file(dosya_yolu)
                 break
             

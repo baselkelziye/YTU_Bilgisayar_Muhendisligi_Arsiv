@@ -95,6 +95,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1squmHCzl5aPrI0QUDJIPxUjr49v4eMDQ?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Ağ Teknolojileri Ders Kayıtları Altyazıları](../3-2/Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/a%C4%9F%20teknolojileri/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -181,10 +182,10 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Çıkmış:** [2026 Final Sınavı](./cikmis_sorular/2026/bmok_2026_final.pdf) ✨
-- 📄 **Çıkmış:** [2026 Vize Sınavı (Çözümlü)](./cikmis_sorular/2026/bmok_2026_vize_cozumlu.pdf) ✨
-- 📄 **Çıkmış:** [Vize Örneği](./cikmis_sorular/2026/bmok_vize_ornegi.pdf) ✨
-- 📄 **Not:** [Enes Utku Selbes'in Ders Notları](./slaytlar_notlar/2026/enes_utku_selbes/bmok_not.pdf) ✨
+- 📄 **Çıkmış:** [2026 Final Sınavı](./Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203/cikmis_sorular/2026/bmok_2026_final.pdf) ✨
+- 📄 **Çıkmış:** [2026 Vize Sınavı (Çözümlü)](./Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203/cikmis_sorular/2026/bmok_2026_vize_cozumlu.pdf) ✨
+- 📄 **Çıkmış:** [Vize Örneği](./Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203/cikmis_sorular/2026/bmok_vize_ornegi.pdf) ✨
+- 📄 **Not:** [Enes Utku Selbes'in Ders Notları](./Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203/slaytlar_notlar/2026/enes_utku_selbes/bmok_not.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -773,6 +774,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1lgCUMrXtOB5hv1ZcvF3TGYFgXBeToUxf?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Mobil Programlamaya Giriş Ders Kayıtları Altyazıları](./Mobil%20Programlamaya%20Giri%C5%9F/ders_kayitlari/) ✨
 - 📄 **Ödev:** [Ödev için örnek video 1](https://www.youtube.com/watch?v=uNxWwgBSkOk&ab_channel=EmirAksoy) ✨
 - 📄 **Ödev:** [Ödev için örnek video 2](https://www.youtube.com/watch?v=reKSrD_uth0&ab_channel=AhmetBar%C4%B1%C5%9FYerlikaya) ✨
 - 📄 **Ödev:** [Ödev için örnek video 3](https://www.youtube.com/watch?v=16YYWwL-wy8&ab_channel=%C4%B0pekKo%C3%A7) ✨
