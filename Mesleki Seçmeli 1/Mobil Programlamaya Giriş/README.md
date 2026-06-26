@@ -28,6 +28,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1lgCUMrXtOB5hv1ZcvF3TGYFgXBeToUxf?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Mobil Programlamaya Giriş Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Ödev:** [Ödev için örnek video 1](https://www.youtube.com/watch?v=uNxWwgBSkOk&ab_channel=EmirAksoy) ✨
 - 📄 **Ödev:** [Ödev için örnek video 2](https://www.youtube.com/watch?v=reKSrD_uth0&ab_channel=AhmetBar%C4%B1%C5%9FYerlikaya) ✨
 - 📄 **Ödev:** [Ödev için örnek video 3](https://www.youtube.com/watch?v=16YYWwL-wy8&ab_channel=%C4%B0pekKo%C3%A7) ✨
