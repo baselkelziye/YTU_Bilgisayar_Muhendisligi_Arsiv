@@ -140,8 +140,8 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1ZuG19YpGv5x3W4cSEyKWqYmtlSzi3ByA?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Veri İletişimi Ders Kayıtları Altyazıları](./) ✨
-- 📄 **Not:** [Enes Utku Selbes'in VIBA Notu](./slaytlar_notlar/2026/enes_utku_selbes/viba_not.pdf) ([Sıkıştırılmış versiyonu](./slaytlar_notlar/2026/enes_utku_selbes/viba_not_compressed.pdf)) ✨
+- 📄 **Ders Kayıtları:** [Veri İletişimi Ders Kayıtları Altyazıları](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/ders_kayitlari/) ✨
+- 📄 **Not:** [Enes Utku Selbes'in VIBA Notu](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/slaytlar_notlar/2026/enes_utku_selbes/viba_not.pdf) ([Sıkıştırılmış versiyonu](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/slaytlar_notlar/2026/enes_utku_selbes/viba_not_compressed.pdf)) ✨
 - 📄 **Not:** [Önder'in markdown notları](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/onder_gormez%20markdown) ✨
 - 📄 **Not:** [Rameş'in notları](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/Veri%20%C4%B0leti%C5%9Fimi/slaytlar_notlar/2021/rame%C5%9F%20el%20yaz%C4%B1s%C4%B1) ✨
 - 📄 **Not:** [Sena'nın 2025 yılı el yazısı notları](./Veri%20%C4%B0leti%C5%9Fimi%20ve%20Bilgisayar%20A%C4%9Flar%C4%B1/slaytlar_notlar/2025/sena_cindioglu/not.pdf) ✨
@@ -181,9 +181,9 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
-- 📄 **Çıkmış:** [2026 Vize Soruları](./cikmis_sorular/2026/yapay_zeka_vize_2026.pdf) ✨
+- 📄 **Çıkmış:** [2026 Vize Soruları](./Yapay%20Zeka/cikmis_sorular/2026/yapay_zeka_vize_2026.pdf) ✨
 - 📄 **Çıkmış:** [Çıkmış sorular linki (Google Drive)](https://drive.google.com/drive/folders/1z5o_bTIxqO2Vg0lXGieD2euzL2xnU9a6?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Yapay Zeka Ders Kayıtları Altyazıları](./) ✨
+- 📄 **Ders Kayıtları:** [Yapay Zeka Ders Kayıtları Altyazıları](./Yapay%20Zeka/ders_kayitlari/) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=7OZYkBDAqws&ab_channel=%C3%96mer%C3%87al%C4%B1%C5%9Fkan) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=yswPNjoC1ms&ab_channel=MehmetHayri%C3%87ak%C4%B1r) ✨
 - 📄 **Proje:** [Proje için örnek video 3](https://www.youtube.com/watch?v=dbY_QdslRw4&ab_channel=O%C4%9FuzhanErcan) ✨

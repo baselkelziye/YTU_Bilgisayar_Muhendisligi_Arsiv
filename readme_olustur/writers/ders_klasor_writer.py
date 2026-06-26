@@ -1,7 +1,8 @@
 """Ders klasörü README yazıcısı."""
 from writers.base import SectionWriter
 from writers.yardimci import (
-    puanlari_yildiza_cevir, gorustenTarihGetir, detay_etiketleri_olustur
+    puanlari_yildiza_cevir, gorustenTarihGetir, detay_etiketleri_olustur,
+    kaynak_linklerini_goreceli_yap
 )
 from typing import TYPE_CHECKING
 import unicodedata
@@ -96,15 +97,16 @@ class DersKlasorWriter(SectionWriter):
     
     def write_ders_readme(
         self, writer: "BufferedReadmeWriter", ders: dict,
-        klasor_sonradan_olustu: bool = False
+        klasor_sonradan_olustu: bool = False, ders_klasoru: str = None
     ) -> None:
         """
         Ders klasörü README'sini yaz.
-        
+
         Args:
             writer: BufferedReadmeWriter instance
             ders: Ders dict'i
             klasor_sonradan_olustu: Klasör sonradan mı oluştu
+            ders_klasoru: README'nin yazılacağı ders klasörünün yolu (link göreceliliği için)
         """
         ders_adi = ders.get(AD, "")
         
@@ -130,6 +132,7 @@ class DersKlasorWriter(SectionWriter):
                 if len(oneriler.get(ONERILER, [])) > 0:
                     writer.writeline(f"### 💡 Öneri sahibi: {oneriler.get(ONERI_SAHIBI, '')}")
                     for oneri in oneriler[ONERILER]:
+                        oneri = kaynak_linklerini_goreceli_yap(oneri, ders_klasoru)
                         writer.writeline(f"- {oneri}")
         
         # Faydalı kaynaklar
@@ -141,6 +144,7 @@ class DersKlasorWriter(SectionWriter):
                 key=lambda x: unicodedata.normalize(NFKD, x).lower()
             )
             for kaynak in sirali_kaynaklar:
+                kaynak = kaynak_linklerini_goreceli_yap(kaynak, ders_klasoru)
                 writer.writeline(f"- 📄 {kaynak} ✨")
         
         writer.write(GENEL_CIKMIS_SORULAR_METNI)
