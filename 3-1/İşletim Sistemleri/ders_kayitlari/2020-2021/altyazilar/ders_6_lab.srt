@@ -1,0 +1,5427 @@
+1
+00:00:06,129 --> 00:09:44,899
+Zaten şimdi açtım. Siz de açtınız mı? Evet arkadaşlar, derse başlıyoruz. Şimdi herhalde hayret bende bende de az var. Bekledik ama şu anda az geçmişsiniz.
+
+2
+00:09:44,899 --> 00:09:55,899
+Baya iyi. Ben de beraber. Arkadaş benimkiler arazi olmuş. Arazi spor. Evet. Geçen hafta kaldığımız yerden devam edeceğiz. Yine Cihan Hocanız anlatacak.
+
+3
+00:09:55,899 --> 00:10:08,980
+Şimdi neredeyiz? Bu arada seçimiz falan geliyor değil mi? Her şey normal. Duyuluyor yani. Bir terslik yok. Çok bir. Benimkiler tamam. Tamam geliyor iki taraftan.
+
+4
+00:10:08,980 --> 00:10:20,820
+Geliyor tamam. Hadi o zaman. Yo hocam çok şey oldu ya. Hani yok anlamında mı? Her şey normal anlamında mı? Bildiğin şey yaptı. Ortalığı karıştırdı.
+
+5
+00:10:20,820 --> 00:10:29,860
+Neyse. İletişimin de sağlıklısı önemli tabi. Şimdi inter-process communication'da da bundan bahsediyor olacağız. Bunu konuşuyor olacağız.
+
+6
+00:10:29,860 --> 00:10:45,340
+Şimdi normal şartlarda bir işletim sistemi içerisinde daha şey yapayım mı? Ortaya doğru gel ki ikisini. Evet bir işletim sistemi içerisinde baktığımız zaman bir işlem tek başına yani bağımsız şekilde çalışıyor olabilir.
+
+7
+00:10:45,340 --> 00:10:55,220
+Tamamen dış ortamdan soyutlanmış şekilde çalışıyor olabilir. Birbirlerinden izole şekilde çalışıyor olabilirler. Ya da bir arada çalışıyor olabilirler.
+
+8
+00:10:55,220 --> 00:11:10,580
+Bir arada çalışmaktan kasıt aslında nedir bir taraftan? Bir işlemin diğer bir işlemin çalışmasına etki etmesi ya da başka bir işlem tarafından o işlemin çalışmasına etki edilebiliyor olması durumudur.
+
+9
+00:11:10,580 --> 00:11:26,139
+Peki biz işlemlerin bağımsız ya da etkileşimli olmasına nasıl bir arada çalışabilir olmasına nasıl karar veriyoruz ya da niçin böyle bir şey diyoruz?
+
+10
+00:11:26,139 --> 00:11:31,779
+Bağımsız olan işlemler teknik olarak baktığınız zaman ilk bakışta şey gibi gözükebilir.
+
+11
+00:11:31,779 --> 00:11:50,899
+Tamamen bağımsız olduğu için kimseyi beklemeden kimselerle bir eş güdünlülük durumu oluşturmadan kendi başına yol aldığı için daha efektif gibi gözükebilir ama aslında kooperatif çalışmak yani iş birliği içerisinde çalışmanın da çeşitli avantajları ve güzellikleri var.
+
+12
+00:11:50,899 --> 00:12:10,820
+Nedir o? Eğer bir işi paralalleştirebiliyorsanız parçalara ayırabiliyorsanız ne yapma şansınız var? İş birliği içerisinde olan işlemlere bu parçaları atayarak işi hızlandırma yani computation speed up dediği şey şansınız var.
+
+13
+00:12:10,820 --> 00:12:23,220
+Bir diğer şey işi daha modüler hale getirebilmek ya da belli açılardan işlem parçaları arasında oluşabilecek problemleri minimize edebilirsiniz.
+
+14
+00:12:23,220 --> 00:12:39,019
+Misal şu an kullandığımız browserlar aşağı yukarı birçoğu tablı çalışma mantığına sahip yani bir browser sayfaya erişmek için bir tab kullanıyorsunuz ama o tab kenarda dururken ne yapıyorsunuz bir tab daha açıyorsunuz ve başka bir sayfaya erişiyorsunuz.
+
+15
+00:12:40,019 --> 00:12:48,419
+Böyle en tane web sayfasına aynı anda erişmeye çalışıyorsunuz bir yola bir buna geçiyorsunuz birinde bir şey tıklayıp sonra öbürüne geçiyorsunuz.
+
+16
+00:12:48,419 --> 00:13:08,940
+Browserlar da bunu destekliyor mesela Chrome yanlış hatırlamıyorsam bunu yaparken aslında birden fazla process kullanıyor işlem kullanıyor bunlardan bir tanesi aslında main process gibi düşünün yani bu size gösterme işini halleden kısım.
+
+17
+00:13:08,940 --> 00:13:26,860
+Bir tanesi aslında interpreter gibi çalışıyor yani her açtığınız web sayfasındaki HTML yorumlayıp düzenleyip oradaki kontrolde bir yapıp size gösterilmesi gereken materyali hazırlayan kısım.
+
+18
+00:13:26,860 --> 00:13:56,860
+Renderer ha deminden beri söyleyemedim niye şey yapıyorum şey yapıyorum etrafında dolanıyorum renderer çıkmıyor bir tanesi ise sizin aslında plug inlerinizi yöneten yani mesela sayfada bir flash varsa o flashla ilgili o process ilgili işlemi yapıp size çıktığı üretiyor şimdi bu yapı şöyle bir güzelliği var bu işi böyle üç prosesle yapmak yerine tek prosesle yapsanız ve tab
+
+19
+00:13:56,860 --> 00:14:26,860
+tablardan birinde mesela rendering işlemiz aslında bir hatta olursa bir exception olursa o aslında bütün tablarınızın tak diye bir anda kapanıp gitmesine neden olacak ama böyle yaptığınız zaman bir izalasyon da sağlamış oluyorsunuz biraz daha stabil bir yapı yapmış oluyorsunuz ne oluyor her tab için aslında bir tane renderer prosesi oluşturuyorsunuz yani üç farklı grup prosesiniz var bir tanesi main process o tabları yönetiyor aslında tabların oluşturması vesaire sinyali
+
+20
+00:14:26,860 --> 00:14:56,840
+bir tanesi o tabları içerisindeki bilginin render edilmesi için yapılıyor ve siz bunu her tab için bir tane yaratıyorsunuz sonrasında bir de işte plug in vesaire varsa onun için proses oluşturuyor dolayısıyla rendering işlemi sırasında bir hata olursa siz en fazla bir tabınızı kaybediyorsunuz ve geri kalanları da çalışmaya kesintisiz düzgün bir şekilde devam edebiliyor dolayısıyla bir convenience sağlamak bir modelatör de oluşturmak için de biz ne yapabiliyoruz işbirliği yapan işlemlerden faydalanan
+
+21
+00:15:26,860 --> 00:15:56,860
+iki tane temel metotlar bunların alt şeylerini kırılımlarını inceleyeceğiz yani önce bu iki kırılımı söyleyeyim bir tanesi paylaşımlı bellek yani şerit memori diğeri de message passing yani mesaj yoluyla haberleşme bunların alt kırılımları olacak yani message passing'i nasıl yaptınız şerit memori'yi nasıl özelliklerle yaptınız zaten ilerleyen site'larda da bunları konuşacağız ama temel olarak buradaki kriter şu
+
+22
+00:15:56,860 --> 00:16:17,860
+şerit memori aslında iki işlemin ortak bir fiziksel bellek alanı üzerinden haberleştirilmesi dolayısıyla normal şartlarda biz neyi bekliyoruz işlemlere ait bellek alanlarının korunuyor olmasını yani bir işlemin başka bir işleme ait bellek alanına yazamıyor erişemiyor okuyamıyor
+
+23
+00:16:18,860 --> 00:16:30,860
+ve fakat şerit memori de her iki işlemin de onayıyla ikisinin birden okuma ve yazımı önünde erişilebileceği bir bellek alanı tahsis ediliyor yapı bu temel olarak
+
+24
+00:16:30,860 --> 00:16:59,860
+message passing'te ise olay aslında ortak bir alanın paylaşılmasıyla değil işlemler arasında hani bildiğiniz mesajların aktarımı ile oluyor bu doğrudan ya da nasıl pardon dolaylı evet onun da devamlı indirekt geliyor aklıma da dolaylı gelmiyor ya da dolaylı şekilde olabilir zaten birazdan
+
+25
+00:17:00,860 --> 00:17:10,859
+bu set ayına konuşacağız yani ben yine yanlış evet şimdi bu slide de aslında bu iki modelin şeysel gösterimine grafiksel gösterimine bakıyoruz
+
+26
+00:17:10,859 --> 00:17:39,859
+sol tarafta message passing üzerinden message passing yöntemi ile bu işin nasıl yapılacağı gösteriliyor sağ tarafta ise şerit memori üzerinden önce sağdan başlayalım tersten gideyim demin anlatırken çünkü ilk şerit dedik normalde A prosesine ait bir bellek alanı var B'ye ait bir bellek alanı var ve bunlar birbiriyle korunuyor bir şekilde birbirinin içine girmiyor kimse B'ye A'ya A'ya B'ye sulanmıyor ama ne yapıyoruz?
+
+27
+00:17:39,859 --> 00:17:52,859
+ortak ulaşa bir bellek alanı tahsis ediyoruz ve bu alanına ikisi de okuma yazma yönünde şey yapabiliyor erişebiliyor sol tarafta gördüğünüz ise message passing bu
+
+28
+00:17:52,859 --> 00:18:17,170
+aslında haberleşmeyi gerçekleştirecek işlemlerin aralarında bir link haberleşme daha doğrusu iletişim linki oluşturulmasıyla gerçeklenen bir yöntem
+
+29
+00:18:17,170 --> 00:18:31,170
+bu linki doğrudan oluşturabileceğiniz gibi yani iki işlem arasında doğrudan iletişim hattı oluşturabileceğiniz gibi bunu mesela işletim sisteminin çekirdeği üzerinden de yapabilirsiniz
+
+30
+00:18:31,170 --> 00:18:41,170
+bu da zaten demin söylediğim şeye girer hani bu işin doğrudan mı dolaylı mı olacağı noktasına girer
+
+31
+00:18:41,170 --> 00:19:00,759
+bir dakika şöyle yapayım burayı zaten konuştuk bu slide'ı çok üzerinde bir daha bir daha geçmenin bir espirisi yok hani onu ilerletiyoruz
+
+32
+00:19:00,759 --> 00:19:14,759
+şimdi haberleşen işbirliği içerisinde bulunan işlemlerle ilgili en temel örnek ya da en temel üzerine konuşulan şey producer consumer problemidir
+
+33
+00:19:14,759 --> 00:19:22,759
+yani bir client server uygulamasını düşündüğünüz zaman aslında mesela orada server bilgiyi üreten yerdir client de o bilgiyi tüketen yerdir
+
+34
+00:19:22,759 --> 00:19:30,759
+daha doğrusu mesela bir web sayfasına bağlandığı zaman orada bir içerik var aslında hani üretilmek burada tam karşılamıyor olabilir ama hazır bir içerik var
+
+35
+00:19:30,759 --> 00:19:43,759
+ve o içeriğin size client istemci tarafına parça parça aktarılması lazım bu anlamda sunucu tarafı bilgiyi hazır olan bilgiyi alıp size parça parça aktaracak
+
+36
+00:19:43,759 --> 00:19:58,759
+yani üretici pozisyonda olacak şey ise istemci ise sunucudan aldığı bilgiyi işleyip ekranda gösterecek böyleyse o ortak alandaki bilgiyi konsüm edecek olan taraf
+
+37
+00:19:58,759 --> 00:20:20,759
+şimdi producer consumer yani üretici tüketici ilişkisine baktığınız zaman bu yapıyı iki farklı şekilde inceleyebiliriz bir tanesi üretici ve tüketici arasındaki buffer alanının sınırsız olması durumu
+
+38
+00:20:20,759 --> 00:20:38,759
+bu aslında hani buffer alanı üzerinde herhangi bir sınır olmaması durumu ama bu hani gerçekçi bir durum değil bu ütopik durum noktası çünkü fiziksel olarak biz her zaman için neyle sınırlıyız bir bellek alanı ile bir storage alanı ile ya da benzeri bir kapasite ile sınırlıyız
+
+39
+00:20:38,759 --> 00:20:53,759
+dolayısıyla bu problemi incelerken hep bounded buffer üzerinden gidiyor olmamız lazım bounded buffer yapısında da hep sabit boyutta bir buffer'a sahip olduğumuz kabul ile devam ediyoruz
+
+40
+00:20:53,759 --> 00:21:08,759
+şimdi bu slide'da şunu görüyorsunuz bir structure var içinin ne olduğu önemli diye sonuçta paylaştığımız aktarmaya çektiğimiz bilginin özelliklerini tutan bir structure o yüzden item diye typef structure tanımlanmış
+
+41
+00:21:08,759 --> 00:21:28,759
+bu itemlerden oluşan buffer size kazar ki burada 10 olarak verilmiş bir dizimiz var iki tane de integer var bu integerlar aslında bir tanesi in bir tanesi out tahmin edeceğiniz üzere in bu buffer'a produsörün koyacağı bilgiyi hangi index'e koyabileceğini söylüyor
+
+42
+00:21:28,759 --> 00:21:53,759
+out ise bir sonraki çıkacak olanı söylüyor burada şunu devam edelim produsör kısmı var
+
+43
+00:21:53,759 --> 00:22:12,759
+burada ne ile sınırlıyız unutmayın buffer size ile sınırlıyız dolayısıyla devamlı buffer size'ın sonuna gelip gelmediğimizi kontrol ediyor olmamız lazım
+
+44
+00:22:12,759 --> 00:22:27,759
+eğer geldiysek bu durumda in ile out mız birbirini tuturacaksa o zaman bekliyor olmamız lazım neyi bekliyor olmamız lazım birinin o buffer'dan bilgiyi çekiyor olmasını bekliyor olmamız lazım
+
+45
+00:22:27,759 --> 00:22:45,759
+o buffer boşaldığı zaman bilgiyi o buffer'ın ilgili in gözüne yerleştireceğiz ve yolumuza devam edeceğiz nasıl devam edeceğiz search alert bounties olduğu için bir aktarıp buffer size'e göre modülünü alarak devam edeceğiz
+
+46
+00:22:45,759 --> 00:23:03,759
+geçmediğinde bu bir geri gelirsem bu slide'da count yanlış yazılmış yani bakıldığı zaman oraya count slide'a yanlış yazmışlar bizle alakalı değil okuduğun zaman satır anlamsız geliyor kafa karışıkmış yazanda değiştirmeye gerek yok
+
+47
+00:23:03,759 --> 00:23:21,759
+bu bir de say sekizinci edişinin dokuzu da böyle değil de onu atladık evet öbür tarafta consumer tarafında neyi kontrol ediyorsunuz buffer'ın dolu olup olmadığını nasıl kontrol edeceksiniz bu durumda in ve out'ın aynı olması durumu mesela initial state'i düşünün ikisi de sıfır
+
+48
+00:23:21,759 --> 00:23:37,759
+çünkü buffer'da bir şey yok koyma konusunda bir sıkıntı yok sıfırıncı gözü koyacaksınız okuyabileceğiniz yer de sıfır başka bir başlayacağınız yer yok ama ikisi aynı iken zaten teknik olarak ne yapıyor olmamız lazım bekliyor olmamız lazım
+
+49
+00:23:37,759 --> 00:24:08,819
+konsüm edecek bir şey yok bununla bunu buluyoruz dolayısıyla bu denge bozulduğu an in ve out'un eşitliği bozulduğu an ki bunun bozulması ancak in'in artmasıyla olacak buffer'dan bilgiyi okuyabilir hale geleceğiz okuduktan sonra da bir sonraki okunabilir yere geçiyor olacağız böyle sövküler bir yapı olacak şimdi
+
+50
+00:24:08,819 --> 00:24:22,819
+burada senin cümleleri bitirmeni bekledim benim grupta ahmet ne diye soruyor shared memory daha mı hızlı message passing mi sence ahmet sesini açıp cevap verebilirsin istersen
+
+51
+00:24:22,819 --> 00:24:34,819
+şimdi aslında orada ben bir şey söylemedim bir cevap versin ahmet bakalım kendi yorumunu yapsın sorduğuna göre duyuyor musun
+
+52
+00:24:34,819 --> 00:24:50,190
+bir saniye benim sesim kapalı galiba senin sesin çok az geldi bir daha bir söyler misin bence shared memory bir soruyla kurtulabileceğini sanmadın değil mi
+
+53
+00:24:50,190 --> 00:25:04,190
+çünkü daha az iş yapıyor o zaman ben şunu söyleyeyim karnel'dan mı geçmiyor o yüzden galiba
+
+54
+00:25:04,190 --> 00:25:18,190
+şimdi aslında bakarsan teknik olarak shared memory dediğimiz zaman haberleşen işlemlerin fiziksel olarak aynı cihaz üzerinde olmasını bekliyoruz bir belli erişimi üzerinden yapıyoruz
+
+55
+00:25:18,190 --> 00:25:33,190
+belli erişimi zaten hızlı gerçekleştirilen bir şey aslında bu sistem mi normal şartlarda tek bir sistemin üzerinde yani tek bir işletim sistemi tek bir makina üzerinde oluşturabileceğimizi düşünüyoruz
+
+56
+00:25:33,190 --> 00:25:43,190
+bir istisnası şey var hani özel donanımlarla birden fazla cihazı belleklerini de birbirine bağlama şansımız var
+
+57
+00:25:43,190 --> 00:25:55,190
+tightly coupled hale itirme şansımız var ama message passing dediğimiz zaman aslında message passing diye yine fiziksel olarak tek bir makine üzerinde bulunan işlemler
+
+58
+00:25:55,190 --> 00:26:07,190
+arasında yapabileceğimiz gibi hem fiziksel hem işletim seviyesi işletim sistemi seviyesi de aynı sistemin içerisinde olan işlemler arasında yapabileceğimiz gibi birbirinden bağımsız sistemler arasında da yapabiliyoruz
+
+59
+00:26:07,190 --> 00:26:09,190
+ben buraya anlatmadım çocuklara
+
+60
+00:26:09,190 --> 00:26:11,190
+sonraki salaklarda var zaten
+
+61
+00:26:11,190 --> 00:26:18,190
+var da hani oraya atladım o yüzden hani bunu da söyleseydim belki soru gelmeyecekti bile
+
+62
+00:26:18,190 --> 00:26:27,190
+dolayısıyla hani message passing mi sheriff memory mi daha hızlı sorusunun cevabı aslında aşağıda neyin olduğu ile de biraz da alakalı
+
+63
+00:26:27,190 --> 00:26:33,190
+ikisi de aynı fiziksel sistem üzerinde aynı işletim sistemi üzerinde ise
+
+64
+00:26:33,190 --> 00:26:39,190
+evet zaten hani büyük ihtimalle sheriff memory çok daha hızlı olacak
+
+65
+00:26:39,190 --> 00:26:49,190
+ama zaten farklı sistemlerden bahsediyorsak da yine sheriff memory'nin kafadan daha iyi olacağını daha hızlı olacağını söyleyebiliriz
+
+66
+00:26:49,190 --> 00:26:55,190
+sheriff memory'deki message passing'e göre önemli farklardan biri
+
+67
+00:26:55,190 --> 00:27:06,190
+kernel işletim sistemi aradaki paylaşılan belliyi verdikten sonra haberleşmenin yönetimi işine girmiyor
+
+68
+00:27:06,190 --> 00:27:12,190
+bu haberleşmenin yönetimini haberleşen uygulamaların kendisinin yapması lazım
+
+69
+00:27:12,190 --> 00:27:20,190
+halbuki message passing'te az önce hocanızın da söylediği gibi soruya verilen cevapta da söylendiği gibi
+
+70
+00:27:20,190 --> 00:27:23,190
+öyle veya böyle kernel işin içine dahil oluyor
+
+71
+00:27:23,190 --> 00:27:27,190
+ister lokal sistemde ister uzaktaki sistemde olsun bunlar
+
+72
+00:27:27,190 --> 00:27:31,190
+o yüzden haberleşmeyi yöneten de ne oluyor?
+
+73
+00:27:31,190 --> 00:27:33,190
+işletim sistemi oluyor
+
+74
+00:27:33,190 --> 00:27:36,190
+o açıdan da bir fark olduğunu unutmamak lazım
+
+75
+00:27:36,190 --> 00:27:40,190
+hangisi daha iyidir hangisi daha hızlıdır?
+
+76
+00:27:40,190 --> 00:27:42,190
+tamamen senaryoya bağlı
+
+77
+00:27:42,190 --> 00:27:47,190
+ama altyapı uygunsa cihan hocanızın dediği gibi
+
+78
+00:27:47,190 --> 00:27:53,190
+uzaktaki sistemlere de bir distributed memory şeklinde birbirlerine bağlayabiliyorsak eğer
+
+79
+00:27:53,190 --> 00:27:55,190
+o zaman sheriff memory daha hızlı
+
+80
+00:27:55,190 --> 00:28:02,190
+ama uzaktaki sisteme başka bir türlü erişim şansım yoksa message göndereceksen o zaman o daha hızlı
+
+81
+00:28:02,190 --> 00:28:04,190
+senaryomuza bakmamız lazım
+
+82
+00:28:04,190 --> 00:28:10,190
+bu arada tabi iki farklı sistemi birbirine memur üzerinden bağlamanın da bir maliyeti var
+
+83
+00:28:10,190 --> 00:28:15,190
+zamanında gördüğünüz üzere çok ciddi bir maliyeti var
+
+84
+00:28:15,190 --> 00:28:20,190
+bu esirle her türk gibi bunun ucuzu yok mu diye sordurturum sana
+
+85
+00:28:20,190 --> 00:28:24,190
+evet ben ilerledim
+
+86
+00:28:24,190 --> 00:28:26,190
+message passing'deyiz
+
+87
+00:28:29,180 --> 00:28:39,769
+bir saniye benim şu kenarları kapat bence oradan şey geldiğinde zaten bu yeri oluyor
+
+88
+00:28:39,769 --> 00:28:40,769
+oluyor mu?
+
+89
+00:28:40,769 --> 00:28:42,769
+slide'den çünkü çok kapanıyor
+
+90
+00:28:42,769 --> 00:28:49,769
+evet bir de önümdekine bakma şeyinden dolayı bir kapa karışıyor iki ekrana bakınca
+
+91
+00:28:49,769 --> 00:28:56,769
+neyse şimdi message passing sisteminde şöyle bir şeyimiz var
+
+92
+00:28:56,769 --> 00:29:01,769
+işlemler arasında mesajları gönderiyor ve alıyor olacağız
+
+93
+00:29:01,769 --> 00:29:08,769
+dolayısıyla da bize genel olarak baktığımız zaman iki tane primitif operasyon sağlanıyor
+
+94
+00:29:08,769 --> 00:29:10,769
+bir tanesi sen, biri de receive
+
+95
+00:29:10,769 --> 00:29:16,769
+şimdi iki tane işlemin burada PVQ olarak işlemlendirilmiş
+
+96
+00:29:16,769 --> 00:29:23,769
+haberleşebilmesi için message passing'de aralarında bir iletişim kanalının oluşturulması
+
+97
+00:29:23,769 --> 00:29:27,769
+bir communication link'in oluşturulması gerekiyor
+
+98
+00:29:27,769 --> 00:29:34,769
+bu kanal üzerinden de send ve receive yani gönderme ve alma işi gerçekleştiriyorlar
+
+99
+00:29:34,769 --> 00:29:41,769
+bu iş fiziksel bir haberleşme linki üzerinden de gerçekleştirilebilir
+
+100
+00:29:41,769 --> 00:29:47,769
+demin bahsedildiğimiz shared memory ya da herhangi bir hardware bus vs. üzerinden de gerçekleştirilebilir
+
+101
+00:29:47,769 --> 00:29:51,769
+ya da lojik seviyede de gerçekleştirilebilir
+
+102
+00:29:51,769 --> 00:29:55,769
+bunda bir sıkıntı yok yani message passing'in güzelliklerinden biri o
+
+103
+00:29:55,769 --> 00:29:59,769
+işi biraz da bağımsız hale getirebiliyoruz
+
+104
+00:29:59,769 --> 00:30:04,769
+az önce işte bak mesela söylediğimiz şey yani
+
+105
+00:30:04,769 --> 00:30:10,769
+shared memory var ama shared memory'i doğrudan haberleşme için kullanmıyoruz
+
+106
+00:30:10,769 --> 00:30:15,769
+onun üzerinde communication link'i oluşturarak message passing yapıyoruz
+
+107
+00:30:15,769 --> 00:30:21,769
+böyle de bir şey uygulanabilir aslında yani bunun olasılıkların sınırı yok diye düşünün
+
+108
+00:30:21,769 --> 00:30:26,769
+shared memory'in var illaki sadece shared memory üzerinden konuşacağım değil
+
+109
+00:30:26,769 --> 00:30:31,769
+shared memory'i bir taşıyıcı olarak aradaki bir communication link olarak kullanma şansın var
+
+110
+00:30:31,769 --> 00:30:37,769
+o aslında yaptığınız şeyi niye ve neye amaçla yaptığınızla da alakalı
+
+111
+00:30:37,769 --> 00:30:42,769
+yani mesela siz message passing'i nasıl olsa aynı sistem üzerinde olsanız da
+
+112
+00:30:42,769 --> 00:30:45,769
+farklı sistemler üzerinde olsanız da sağlayabiliyorsunuz
+
+113
+00:30:45,769 --> 00:30:49,769
+dolayısıyla yapıyı bunun üzerine kurarsınız her şeyiniz böyle çalışır
+
+114
+00:30:49,769 --> 00:30:54,769
+ve fakat bu size ne sağlar bütün sistemler üzerinde çalışabilmeyi sağlar
+
+115
+00:30:54,769 --> 00:30:58,769
+ama şöyle bir optimizasyon da yaparsanız eğer bunlar lokalde çalışıyorlarsa
+
+116
+00:30:58,769 --> 00:31:02,769
+bunu shared memory üzerinden implement edip öyle kullanalım
+
+117
+00:31:02,769 --> 00:31:07,769
+dolayısıyla bugün aynı sistemdeler hızlı çalışıyorlar daha efektif çalışıyorlar
+
+118
+00:31:07,769 --> 00:31:10,769
+yarın öbür sistemime geçtiği zaman çalışmaya devam edecek
+
+119
+00:31:10,769 --> 00:31:14,769
+sadece alttaki shared memory değil de başka bir şey kullanıyor olacak
+
+120
+00:31:14,769 --> 00:31:18,769
+böyle bir modularity şeyi var
+
+121
+00:31:18,769 --> 00:31:23,769
+şimdi burada birkaç tane soru işareti var
+
+122
+00:31:23,769 --> 00:31:26,769
+bana mesaj geldi
+
+123
+00:31:26,769 --> 00:31:29,769
+you have a mail
+
+124
+00:31:29,769 --> 00:31:33,769
+hocam bu bana socket programming hatırlattığı ne kadar bağlantı var değinebilir misiniz
+
+125
+00:31:33,769 --> 00:31:36,769
+değineceğiz zaten [öğrenci] biraz beklersen ona da değineceğiz
+
+126
+00:31:37,769 --> 00:31:40,769
+çünkü şu an işin teori kısmını konuşuyoruz
+
+127
+00:31:40,769 --> 00:31:43,769
+yani ne yapılabilir konuşuyoruz
+
+128
+00:31:43,769 --> 00:31:46,769
+socket programlamayı da konuşacağız
+
+129
+00:31:46,769 --> 00:31:49,769
+Pipe'ı da konuşacağız shared memory de
+
+130
+00:31:49,769 --> 00:31:53,769
+Cosix'in bize sunduğu interprocess communication yöntemlerini de konuşacağız
+
+131
+00:31:53,769 --> 00:31:56,769
+Unix'ten gelen temel mekanizmaları da konuşacağız
+
+132
+00:31:56,769 --> 00:31:59,769
+socket programlamayı da konuşacağız
+
+133
+00:31:59,769 --> 00:32:02,769
+çünkü bunların hepsi aslında interprocess communication'ın bir parçası
+
+134
+00:32:02,769 --> 00:32:07,769
+socket programlaması aslında dediğin gibi interprocess communication'ın üzerine giydirilmiş
+
+135
+00:32:07,769 --> 00:32:10,769
+farklı bir erişim katmanı
+
+136
+00:32:10,769 --> 00:32:14,769
+alt tarafta haberleşme protokolü belirlenmiş
+
+137
+00:32:14,769 --> 00:32:17,769
+üst tarafta da erişim şekli belirlenmiş
+
+138
+00:32:17,769 --> 00:32:21,769
+şu an konuştuğumuz şey aslında siz böyle bir şey yapmaya kalksanız
+
+139
+00:32:21,769 --> 00:32:24,769
+başınıza gelebilecek karşılaşabileceğiniz şeyler
+
+140
+00:32:24,769 --> 00:32:29,769
+neler buralarda vermeniz gereken tasarım kararları neler
+
+141
+00:32:29,769 --> 00:32:32,769
+bunları konuşuyoruz şu an genelden konuşuyoruz
+
+142
+00:32:32,769 --> 00:32:35,769
+biraz sonra da özelleşeceğiz
+
+143
+00:32:35,769 --> 00:32:39,769
+mesela linkleri nasıl oluşturacağım
+
+144
+00:32:39,769 --> 00:32:42,769
+kernel seviyesinde mi oluşturacağım
+
+145
+00:32:42,769 --> 00:32:45,769
+user space'de mi oluşturacağım
+
+146
+00:32:45,769 --> 00:32:48,769
+hangisinde oluşturursam ne olur
+
+147
+00:32:48,769 --> 00:32:55,029
+uzay boşluğunda kaybolur galiba bu sorudan sonra
+
+148
+00:32:55,029 --> 00:33:02,029
+burada bir cevap beklentim vardı
+
+149
+00:33:02,029 --> 00:33:05,029
+bir düşünün üstüne biraz zaman vereyim
+
+150
+00:33:05,029 --> 00:33:08,029
+bir başka soru
+
+151
+00:33:08,029 --> 00:33:11,029
+normal şartlarda haberleşme en az iki işlem arasında olur
+
+152
+00:33:11,029 --> 00:33:15,029
+ama ikiden fazla işlem olursa ne olacak
+
+153
+00:33:15,029 --> 00:33:20,029
+yani bir tane linki ben ikiden fazla prosesle eşleyebilir miyim
+
+154
+00:33:20,029 --> 00:33:23,029
+evet eşleyebilirsiniz diyelim
+
+155
+00:33:23,029 --> 00:33:26,029
+eşlediğiniz zaman
+
+156
+00:33:26,029 --> 00:33:29,029
+olay nasıl dönecek
+
+157
+00:33:29,029 --> 00:33:32,029
+diyelim ki üç tane işleminiz var
+
+158
+00:33:32,029 --> 00:33:35,029
+o işlemlerden biri o linke bir bilgi yazdı
+
+159
+00:33:35,029 --> 00:33:40,029
+bu bilgi hangi işlem tarafından alınacak
+
+160
+00:33:40,029 --> 00:33:43,029
+hangi işleme gitmesi gerekiyor
+
+161
+00:33:43,029 --> 00:33:46,029
+nasıl karar vereceksiniz burada ne yapabilirsiniz
+
+162
+00:33:46,029 --> 00:33:49,029
+misal yaklaşım ne olabilir bu sorunun cevabı
+
+163
+00:33:49,029 --> 00:33:53,029
+biri yazdıysa ilk okuyan bilgiyi alır diyebilirsiniz
+
+164
+00:33:53,029 --> 00:33:57,029
+bir diğeri dedicated reader tanımlayabilirsiniz
+
+165
+00:33:57,029 --> 00:34:03,029
+her halükarda mesajın ya da mesaj geldiğine dair bir uyarı gidecek bir işlem tanımlayabilirsiniz
+
+166
+00:34:03,029 --> 00:34:09,030
+bunun tanımlamasını ya da kimin olacağı işlediğim sitemin tamamen kendi seçimi olabilir
+
+167
+00:34:09,030 --> 00:34:11,030
+bir diğer soru
+
+168
+00:34:11,030 --> 00:34:14,030
+peki ben iki işlem arasında kaç tane link oluşturabilirim
+
+169
+00:34:14,030 --> 00:34:17,030
+yani iki işlem arasında sadece bir link mi oluşturabilirim
+
+170
+00:34:17,030 --> 00:34:20,030
+en tane oluşturabilir miyim
+
+171
+00:34:20,030 --> 00:34:23,030
+bunu birazdan mesela örnekleri konuşurken göreceksiniz
+
+172
+00:34:23,030 --> 00:34:27,030
+bazen bir link değil birden fazla link oluşturmayı tercih ediyoruz
+
+173
+00:34:27,030 --> 00:34:29,030
+neden
+
+174
+00:34:29,030 --> 00:34:36,030
+iletişim hattına misal mesela bir directional mu olacak
+
+175
+00:34:36,030 --> 00:34:37,030
+uni directional mu olacak
+
+176
+00:34:37,030 --> 00:34:40,030
+yani tek yönlü mü olacak iletişim hattı çift yönlü mü olacak
+
+177
+00:34:40,030 --> 00:34:44,030
+eğer tek yönlü olmasına karar verdiyseniz iki işlem arasında
+
+178
+00:34:44,030 --> 00:34:47,030
+her iki yönde de haberleşme olabilmesi için
+
+179
+00:34:47,030 --> 00:34:50,030
+link sayısını bir değil iki tutarsınız
+
+180
+00:34:50,030 --> 00:34:53,030
+böylece A B'ye gönderilir bir link üzerinden gönderilir
+
+181
+00:34:53,030 --> 00:34:56,030
+B de A'ya öbür link üzerinden gönderebilir
+
+182
+00:34:56,030 --> 00:34:58,030
+yaklaşımınız bu da olabilir
+
+183
+00:34:58,030 --> 00:35:00,030
+bu link
+
+184
+00:35:00,030 --> 00:35:04,030
+eğer bir linkten bahsediyorsak bir haberleşme hattından bahsediyorsak
+
+185
+00:35:04,030 --> 00:35:06,030
+bunun kapasitesi ne olacak
+
+186
+00:35:06,030 --> 00:35:14,030
+benzer şekilde bu kapasiteye bağlı olarak siz buradan mesaj göndereceksiniz
+
+187
+00:35:14,030 --> 00:35:17,030
+gönderdiğiniz mesajlar bir yerde birikecek
+
+188
+00:35:17,030 --> 00:35:20,030
+bir yerde birikecek bu birikmenin boyutunu olacak
+
+189
+00:35:20,030 --> 00:35:23,030
+bir buffer alanı vesaire nasıl tanımlanacak
+
+190
+00:35:23,030 --> 00:35:27,030
+bir diğer şey bu mesajların boyutu sabit mi olacak
+
+191
+00:35:27,030 --> 00:35:30,030
+yoksa değişken mi olacak
+
+192
+00:35:30,030 --> 00:35:32,030
+sabit olması ne kazandırırsa
+
+193
+00:35:32,030 --> 00:35:34,030
+implementasyonu kolaylaştırır
+
+194
+00:35:34,030 --> 00:35:37,030
+implementasyon derken işlem tarafında değil
+
+195
+00:35:37,030 --> 00:35:41,030
+işletim sistemi tarafında implementasyonu kolaylaştırır
+
+196
+00:35:41,030 --> 00:35:44,030
+mesajların yönetilmesini kolaylaştırır
+
+197
+00:35:44,030 --> 00:35:48,030
+ama değişken boyutta olabilmesi
+
+198
+00:35:48,030 --> 00:35:52,030
+işlem tarafında yani programcı tarafında işleri kolaylaştırır
+
+199
+00:35:52,030 --> 00:35:55,030
+işletim sistemi tarafında işleri biraz daha zorlaştırır
+
+200
+00:35:55,030 --> 00:35:58,030
+dolayısıyla hangisini yapmayı isteyeceksiniz
+
+201
+00:36:00,030 --> 00:36:04,030
+demin söylediğim şeylerden bir tanesi sorulardan bir tanesi
+
+202
+00:36:04,030 --> 00:36:07,030
+linkleriniz yüne direksiyonu mu olacak bir direksiyonu mu olacak
+
+203
+00:36:07,030 --> 00:36:10,030
+yani tek yönümü çalışacak çift yönümü çalışacak
+
+204
+00:36:10,030 --> 00:36:14,500
+yine yanlış yöntemi başardım
+
+205
+00:36:14,500 --> 00:36:24,650
+şimdi demin konuştuğumuz şeylerden bir tanesi
+
+206
+00:36:24,650 --> 00:36:25,650
+linkler nasıl oluşturulacak
+
+207
+00:36:25,650 --> 00:36:28,650
+linkler direk mi olacak indirek mi olacak
+
+208
+00:36:28,650 --> 00:36:34,650
+eğer direk komunikasyon gerçekleştirilecekse
+
+209
+00:36:34,650 --> 00:36:39,650
+yani PVQ diye isimlendirilmiş işlemleri
+
+210
+00:36:39,650 --> 00:36:44,119
+aralarında bir doğrudan bağlantı olacaksa
+
+211
+00:36:44,119 --> 00:36:47,119
+sendin ve receivin ne yapıyor olması lazım
+
+212
+00:36:47,119 --> 00:36:51,119
+bilgi gönderilecek processin ya da bilginin alınacağı
+
+213
+00:36:51,119 --> 00:36:55,119
+processin kimliğiyle beraber mesajın verilmesi lazım
+
+214
+00:36:55,119 --> 00:37:00,119
+yani B işlemine mesaj göndermek için
+
+215
+00:37:00,119 --> 00:37:02,119
+sen sonra P
+
+216
+00:37:02,119 --> 00:37:04,119
+P burada tabi ki şey olması lazım
+
+217
+00:37:04,119 --> 00:37:08,119
+o processin bir şekilde identif edilmesini sağlayacak falan
+
+218
+00:37:08,119 --> 00:37:09,119
+bilgi olması lazım
+
+219
+00:37:09,119 --> 00:37:12,119
+process ID olabilir ya da başka bir şey olabilir
+
+220
+00:37:12,119 --> 00:37:15,119
+sonrasında da mesajın kendisi olması lazım
+
+221
+00:37:15,119 --> 00:37:17,119
+tezel şekilde
+
+222
+00:37:17,119 --> 00:37:21,119
+receiv edeceğiniz zaman da
+
+223
+00:37:21,119 --> 00:37:25,119
+bunun hangi işlemden receiv edileceğini
+
+224
+00:37:25,119 --> 00:37:28,119
+hangi işlemin gönderdiği mesajın alınacağına dair
+
+225
+00:37:28,119 --> 00:37:31,119
+receive bir parametre aktarıyor olmamız lazım
+
+226
+00:37:31,119 --> 00:37:33,119
+size bir şimdi geldi diye baktım ya
+
+227
+00:37:33,119 --> 00:37:35,119
+ekran bir indi kalktı da
+
+228
+00:37:35,119 --> 00:37:41,119
+şimdi direk komunikasyon dediğimize göre
+
+229
+00:37:41,119 --> 00:37:44,119
+ne olması lazım iki işlemi doğrudan bağlıyoruz
+
+230
+00:37:44,119 --> 00:37:46,119
+dolayısıyla iki işlem arasında
+
+231
+00:37:46,119 --> 00:37:50,119
+sadece bir tane link olmasını bekliyoruz
+
+232
+00:37:50,119 --> 00:37:54,119
+ve bir linkin de doğal olarak sadece iki tane
+
+233
+00:37:54,119 --> 00:37:57,119
+işlemle ilişkilendirilmesini bekliyoruz
+
+234
+00:37:57,119 --> 00:38:04,360
+ünidireksiyonlu olma ihtimalleri var
+
+235
+00:38:04,360 --> 00:38:07,360
+olabilirler direk komunikasyonla ünidireksiyonlu bir sistem
+
+236
+00:38:07,360 --> 00:38:10,360
+yapar mısınız yapar mısınız bununla kısıtlar mısınız
+
+237
+00:38:10,360 --> 00:38:11,360
+olabilir
+
+238
+00:38:11,360 --> 00:38:13,360
+ama genellikle eğer
+
+239
+00:38:13,360 --> 00:38:16,360
+bu dediğimiz şeye takip ediyorsa
+
+240
+00:38:16,360 --> 00:38:19,360
+yani bir link iki işlem iki işlem bir link
+
+241
+00:38:19,360 --> 00:38:23,360
+şeklinde gidiyorsa çoğu zaman bunun bir direksiyonu
+
+242
+00:38:23,360 --> 00:38:26,360
+olması beklenir ya da istenir
+
+243
+00:38:26,360 --> 00:38:31,739
+indirekt yapıyorsak bu işi
+
+244
+00:38:31,739 --> 00:38:36,739
+aslında ne yapıyor olmamız lazım
+
+245
+00:38:36,739 --> 00:38:42,739
+ayrı bir mekanizma üzerinden mesajları alıp
+
+246
+00:38:42,739 --> 00:38:45,739
+veriyor olmamız lazım yani şey gibi düşünün
+
+247
+00:38:45,739 --> 00:38:48,739
+posta servisi gibi düşünün her işlemin bir
+
+248
+00:38:48,739 --> 00:38:52,739
+mail box'ı var ve kendisine gönderilecek olan
+
+249
+00:38:52,739 --> 00:38:55,739
+mesajlar o posta kutusuna atılan mektuplar
+
+250
+00:38:55,739 --> 00:39:00,739
+gibi kenara biriktiriliyor
+
+251
+00:39:00,739 --> 00:39:04,739
+bir de yani işlemlerin haberleşebilmesi için
+
+252
+00:39:04,739 --> 00:39:06,739
+bu mail boxlardan bir tanesini paylaşıyor
+
+253
+00:39:06,739 --> 00:39:08,739
+olmaları lazım
+
+254
+00:39:08,739 --> 00:39:11,739
+bu paylaşma işi sonrasında artık
+
+255
+00:39:11,739 --> 00:39:14,739
+o mail box'a bilgi bırakıp alabilir hale
+
+256
+00:39:14,739 --> 00:39:17,739
+geliyorlar
+
+257
+00:39:17,739 --> 00:39:29,980
+şurada ben şimdi yeni okudum da [öğrenci]
+
+258
+00:39:29,980 --> 00:39:31,980
+yine bir soru sormuş
+
+259
+00:39:31,980 --> 00:39:34,980
+sorumun şey mi multi producer multi
+
+260
+00:39:34,980 --> 00:39:37,980
+consumer desek
+
+261
+00:39:37,980 --> 00:39:40,980
+[öğrenci] böyle bir terim yok multi producer
+
+262
+00:39:40,980 --> 00:39:42,980
+multi consumer diye bir terim yok
+
+263
+00:39:42,980 --> 00:39:44,980
+producer consumer var
+
+264
+00:39:44,980 --> 00:39:47,980
+producer consumer'ın içinde
+
+265
+00:39:47,980 --> 00:39:49,980
+bir tane producer
+
+266
+00:39:49,980 --> 00:39:51,980
+bir tane consumer
+
+267
+00:39:51,980 --> 00:39:53,980
+bir tane producer
+
+268
+00:39:53,980 --> 00:39:55,980
+en tane consumer
+
+269
+00:39:55,980 --> 00:39:57,980
+en tane producer
+
+270
+00:39:57,980 --> 00:39:59,980
+en tane consumer
+
+271
+00:39:59,980 --> 00:40:01,980
+en tane producer
+
+272
+00:40:01,980 --> 00:40:03,980
+bir tane consumer olmak üzere bunun
+
+273
+00:40:03,980 --> 00:40:05,980
+kombinasyonları var
+
+274
+00:40:05,980 --> 00:40:08,980
+yani bire bir, bire en, ene bir, ene en
+
+275
+00:40:08,980 --> 00:40:09,980
+şeklinde
+
+276
+00:40:09,980 --> 00:40:11,980
+ama o zaman problemi
+
+277
+00:40:11,980 --> 00:40:14,980
+hani multi producer, multi consumer gibi ayrı bir
+
+278
+00:40:14,980 --> 00:40:16,980
+problem olarak isimlendirmiyoruz
+
+279
+00:40:16,980 --> 00:40:19,980
+zaten producer consumer probleminin bir
+
+280
+00:40:19,980 --> 00:40:21,980
+altbaşlı olarak isimlendiriyoruz
+
+281
+00:40:21,980 --> 00:40:24,980
+ideal normal şartlarda
+
+282
+00:40:24,980 --> 00:40:26,980
+bir taneye bir tane denk düşüyor
+
+283
+00:40:26,980 --> 00:40:29,980
+problemi öyle basitten başlayıp
+
+284
+00:40:29,980 --> 00:40:31,980
+diğerine şey yapıyoruz
+
+285
+00:40:31,980 --> 00:40:33,980
+şimdi burada tabii
+
+286
+00:40:33,980 --> 00:40:36,980
+multi producer, multi consumer desekten
+
+287
+00:40:36,980 --> 00:40:37,980
+ne kastettiğini
+
+288
+00:40:37,980 --> 00:40:40,980
+bir önce direct communication'ı anlatırken yazdı
+
+289
+00:40:40,980 --> 00:40:41,980
+yanılmıyorsak
+
+290
+00:40:41,980 --> 00:40:43,980
+çünkü sen demin dedin ya mesaj geldi galiba diye
+
+291
+00:40:43,980 --> 00:40:45,980
+o sırada düşen mesaj bu olsa gerek
+
+292
+00:40:45,980 --> 00:40:48,980
+bilmiyorum bununla mı alakalı söylemiştin [öğrenci]
+
+293
+00:40:48,980 --> 00:40:51,980
+yorum yapabilirsen ona cevap ver
+
+294
+00:40:51,980 --> 00:40:55,980
+Implementation Detail'da sormuştum aslında
+
+295
+00:40:55,980 --> 00:40:57,980
+yani sormuştum derken
+
+296
+00:40:57,980 --> 00:41:00,980
+bir şeye karşılık söylemiştim az
+
+297
+00:41:00,980 --> 00:41:02,980
+gibi düşünüyorum
+
+298
+00:41:02,980 --> 00:41:04,980
+Implementation Questions kısmında
+
+299
+00:41:04,980 --> 00:41:07,980
+neye karşılık söyledin pardon
+
+300
+00:41:07,980 --> 00:41:11,980
+tam emin değilim
+
+301
+00:41:11,980 --> 00:41:13,980
+ekranı değiştirdiğin zaman görüyor musun?
+
+302
+00:41:13,980 --> 00:41:15,980
+şimdi hatırlatıcı
+
+303
+00:41:15,980 --> 00:41:20,980
+yani birden fazla process'ın birbiriyle nasıl yaparız gibisinden
+
+304
+00:41:20,980 --> 00:41:23,980
+hani ben de onun için
+
+305
+00:41:23,980 --> 00:41:25,980
+hakkı da bulmayayım dedin
+
+306
+00:41:25,980 --> 00:41:27,980
+işte bak birden fazla
+
+307
+00:41:27,980 --> 00:41:30,980
+yani bir process ile diğer process arasında
+
+308
+00:41:30,980 --> 00:41:33,980
+birden fazla link olabilir mi sorusu
+
+309
+00:41:33,980 --> 00:41:37,980
+multi producer, multi consumer değil
+
+310
+00:41:37,980 --> 00:41:40,980
+az önce Cihan hocanızın anlattığı üzere
+
+311
+00:41:40,980 --> 00:41:43,980
+linkler eğer uni direction olsa
+
+312
+00:41:43,980 --> 00:41:46,980
+ama ben bir direction'dan haberleşme yapmak istiyorsam
+
+313
+00:41:46,980 --> 00:41:49,980
+işin doğası gereği iki process arasında
+
+314
+00:41:49,980 --> 00:41:52,980
+haberleşebilmeleri için iki tane link açmak zorundayım
+
+315
+00:41:52,980 --> 00:41:53,980
+başka çarem yok
+
+316
+00:41:53,980 --> 00:41:57,980
+yani çok pardon burada acaba demek istediğim şu olabilir mi
+
+317
+00:41:57,980 --> 00:41:59,980
+ben bir memori bölgesi tanımlıyım
+
+318
+00:41:59,980 --> 00:42:02,980
+ya da bir message box oluştum
+
+319
+00:42:02,980 --> 00:42:04,980
+ya da message passing sistemi oluştum
+
+320
+00:42:04,980 --> 00:42:05,980
+link oluştum ama öyle bir şey oluştum ki
+
+321
+00:42:05,980 --> 00:42:06,980
+mesh olsun
+
+322
+00:42:06,980 --> 00:42:09,980
+herkes herkesle haberleşebilir olsun
+
+323
+00:42:09,980 --> 00:42:13,980
+herkes yazabilir herkes okuyabilir olsun falan gibi bir şeyi
+
+324
+00:42:13,980 --> 00:42:17,980
+implement etmeye kalkarsam nasıl olur dersen
+
+325
+00:42:17,980 --> 00:42:18,980
+keşmekeş olur
+
+326
+00:42:18,980 --> 00:42:20,980
+altından kalkman çok zor olur
+
+327
+00:42:20,980 --> 00:42:23,980
+şöyle düşünüm sana en üç noktalardan birini örnek
+
+328
+00:42:23,980 --> 00:42:25,980
+iki tane process düşün
+
+329
+00:42:25,980 --> 00:42:29,980
+bu processlerden biri producer, öbürü consumer
+
+330
+00:42:29,980 --> 00:42:33,980
+ve aralarında bir direction'a çalışan beş tane link var
+
+331
+00:42:33,980 --> 00:42:37,980
+producer kendisine bağlı olan beş link'e
+
+332
+00:42:37,980 --> 00:42:40,980
+üretim yapıyor, değer gönderiyor
+
+333
+00:42:40,980 --> 00:42:43,980
+bu beş tane link'e bağlı olan consumer
+
+334
+00:42:43,980 --> 00:42:45,980
+herkes de birer tane process
+
+335
+00:42:45,980 --> 00:42:47,980
+olduklarını unutma
+
+336
+00:42:47,980 --> 00:42:49,980
+kendisine gelenleri de consume ediyor
+
+337
+00:42:49,980 --> 00:42:52,980
+bu şartlar altında ki bu senaryo
+
+338
+00:42:52,980 --> 00:42:55,980
+multi producer, multi consumer değil
+
+339
+00:42:55,980 --> 00:42:56,980
+haberin olarak
+
+340
+00:42:56,980 --> 00:42:57,980
+tamam
+
+341
+00:42:57,980 --> 00:43:02,980
+yani multi producer, multi consumer olması için az önce hani mesh olur
+
+342
+00:43:02,980 --> 00:43:04,980
+dediğimde Cihan hocanız
+
+343
+00:43:04,980 --> 00:43:06,980
+en tane producer'ımız var
+
+344
+00:43:06,980 --> 00:43:08,980
+en tane consumer'ımız var
+
+345
+00:43:08,980 --> 00:43:10,980
+bunlar herhangi bir anda
+
+346
+00:43:10,980 --> 00:43:12,980
+en tane consumer'dan bir tanesi
+
+347
+00:43:12,980 --> 00:43:14,980
+en tane producer'a bağlı
+
+348
+00:43:14,980 --> 00:43:15,980
+diğer bir anda
+
+349
+00:43:15,980 --> 00:43:17,980
+diğer bir producer'a bağlı
+
+350
+00:43:17,980 --> 00:43:20,980
+bu şekilde zaman içerisinde rastgele değişebiliyor
+
+351
+00:43:20,980 --> 00:43:21,980
+şey yapabiliyor
+
+352
+00:43:21,980 --> 00:43:23,980
+böyle bir şey olursa
+
+353
+00:43:23,980 --> 00:43:25,980
+ene enlik bir bağlantıdan bahsediyoruz
+
+354
+00:43:25,980 --> 00:43:28,980
+yoksa iki tane process
+
+355
+00:43:28,980 --> 00:43:31,980
+arasında en tane link olması
+
+356
+00:43:31,980 --> 00:43:35,980
+en tane producer, consumer şey olması
+
+357
+00:43:35,980 --> 00:43:37,980
+ene enlik bir model olduğunu göstermiyor
+
+358
+00:43:37,980 --> 00:43:39,980
+tamam mı?
+
+359
+00:43:39,980 --> 00:43:43,980
+peki bir şey daha söylesem?
+
+360
+00:43:43,980 --> 00:43:45,980
+söyle
+
+361
+00:43:45,980 --> 00:43:47,980
+dersi yavaşlattım ama şey
+
+362
+00:43:47,980 --> 00:43:49,980
+sıkıntı yok, soru sormaz bir sıkıntı yok
+
+363
+00:43:49,980 --> 00:43:51,980
+ama hani biz dese geri soru sorabiliriz
+
+364
+00:43:51,980 --> 00:43:52,980
+hakkımızda olsun
+
+365
+00:43:52,980 --> 00:43:54,980
+aynen, hadi bakalım sor
+
+366
+00:43:54,980 --> 00:43:56,980
+yani bir tane mail box
+
+367
+00:43:56,980 --> 00:43:58,980
+olarak
+
+368
+00:43:58,980 --> 00:44:00,980
+düşünürsek yapı var
+
+369
+00:44:00,980 --> 00:44:02,980
+buna
+
+370
+00:44:02,980 --> 00:44:04,980
+yani şöyle
+
+371
+00:44:04,980 --> 00:44:06,980
+senkronizasyon sorunlarını
+
+372
+00:44:06,980 --> 00:44:08,980
+saymazsak
+
+373
+00:44:08,980 --> 00:44:10,980
+mail box eşittir
+
+374
+00:44:10,980 --> 00:44:12,980
+senkronizasyon
+
+375
+00:44:12,980 --> 00:44:14,980
+mail box dediğim için zaten
+
+376
+00:44:14,980 --> 00:44:16,980
+senkronize bir şekilde yapılmasını garanti eder
+
+377
+00:44:16,980 --> 00:44:18,980
+o şekilde
+
+378
+00:44:18,980 --> 00:44:20,980
+yani buna işte producer var
+
+379
+00:44:20,980 --> 00:44:22,980
+birden fazla process
+
+380
+00:44:22,980 --> 00:44:24,980
+ve buna
+
+381
+00:44:24,980 --> 00:44:26,980
+aynı mail box'a
+
+382
+00:44:26,980 --> 00:44:28,980
+bir şeyler ekleyebiliyor
+
+383
+00:44:28,980 --> 00:44:30,980
+mesaj ekliyor
+
+384
+00:44:30,980 --> 00:44:31,980
+tamam
+
+385
+00:44:31,980 --> 00:44:33,980
+kutuna, posta kutuna
+
+386
+00:44:33,980 --> 00:44:35,980
+posta atıldığında ne oluyor?
+
+387
+00:44:35,980 --> 00:44:37,980
+yani
+
+388
+00:44:37,980 --> 00:44:39,980
+şimdi apartmana girdin
+
+389
+00:44:39,980 --> 00:44:41,980
+sol tarafa baktın
+
+390
+00:44:41,980 --> 00:44:43,980
+orada posta kutun var
+
+391
+00:44:43,980 --> 00:44:45,980
+bugün baktık hiç bir şey görmedin
+
+392
+00:44:45,980 --> 00:44:47,980
+ertesi gün gittin
+
+393
+00:44:47,980 --> 00:44:49,980
+bir tane banka ekstresi gelmiş
+
+394
+00:44:49,980 --> 00:44:51,980
+aldırmadın devam ettin
+
+395
+00:44:51,980 --> 00:44:53,980
+ertesi gün geldin Aydat makbuzu gelmiş
+
+396
+00:44:53,980 --> 00:44:55,980
+ertesi gün geldin
+
+397
+00:44:55,980 --> 00:44:57,980
+Türk Telekom'dan internet faturası gelmiş
+
+398
+00:44:57,980 --> 00:44:59,980
+ertesi gün cep telefonunun faturası gelmiş
+
+399
+00:44:59,980 --> 00:45:01,980
+ertesi gün
+
+400
+00:45:01,980 --> 00:45:03,980
+senin olmayan mesaj gelmiş oraya
+
+401
+00:45:03,980 --> 00:45:05,980
+çünkü Türkiye burası olur
+
+402
+00:45:05,980 --> 00:45:07,980
+bırakırlar kafasını göre
+
+403
+00:45:07,980 --> 00:45:09,980
+ertesi gün köftecinin flyer gelmiş
+
+404
+00:45:09,980 --> 00:45:11,980
+ertesi gün başka bir şey gelmiş
+
+405
+00:45:11,980 --> 00:45:15,550
+ne oldu bunların hepsini?
+
+406
+00:45:15,550 --> 00:45:17,550
+mail box'ını da birikiyorlar değil mi?
+
+407
+00:45:17,550 --> 00:45:19,550
+yani sonra
+
+408
+00:45:19,550 --> 00:45:21,550
+producer da birden
+
+409
+00:45:21,550 --> 00:45:23,550
+consumer da birden
+
+410
+00:45:23,550 --> 00:45:25,550
+fazla olabilir ve
+
+411
+00:45:25,550 --> 00:45:27,550
+aynı şekilde
+
+412
+00:45:27,550 --> 00:45:29,550
+problemleri analiz edebilmen için
+
+413
+00:45:29,550 --> 00:45:31,550
+adım adım düşünmen lazım
+
+414
+00:46:01,550 --> 00:46:03,550
+aslında en başta tasarımcı olarak
+
+415
+00:46:03,550 --> 00:46:05,550
+konuşmuştuk
+
+416
+00:46:05,550 --> 00:46:07,550
+producer consumer da konuştuk aslında
+
+417
+00:46:07,550 --> 00:46:09,550
+unbounded olabilir, bounded olabilir
+
+418
+00:46:09,550 --> 00:46:11,550
+senin mail box'ın evdekinden
+
+419
+00:46:11,550 --> 00:46:13,550
+bahsediyorsak unbounded değil
+
+420
+00:46:13,550 --> 00:46:15,550
+yani bir kapasitesi var
+
+421
+00:46:15,550 --> 00:46:17,550
+3-5 tane doluyor
+
+422
+00:46:17,550 --> 00:46:19,550
+burada da aynı şey geçerli
+
+423
+00:46:19,550 --> 00:46:21,550
+bunu bu şekilde
+
+424
+00:46:21,550 --> 00:46:23,550
+implement ettiğimizde de ne olacak?
+
+425
+00:46:23,550 --> 00:46:25,550
+yaklaşık birazdan konuşacağız
+
+426
+00:46:25,550 --> 00:46:27,550
+ama madem sorduk şimdi konuşalım
+
+427
+00:46:27,550 --> 00:46:29,550
+ne olabilir?
+
+428
+00:46:29,550 --> 00:46:31,550
+o linking kapasitesi
+
+429
+00:46:31,550 --> 00:46:33,550
+sıfır yapabilirsin
+
+430
+00:46:33,550 --> 00:46:35,550
+mesela gitti gitti
+
+431
+00:46:35,550 --> 00:46:37,550
+ne yapabilirsin? limitli yapabilirsin
+
+432
+00:46:37,550 --> 00:46:39,550
+ne yapabilirsin? limitsiz yapabilirsin
+
+433
+00:46:39,550 --> 00:46:41,550
+limitsiz zaten utopik durum
+
+434
+00:46:41,550 --> 00:46:43,550
+olmaz
+
+435
+00:46:43,550 --> 00:46:45,550
+dolayısıyla diğer iki seçenek var
+
+436
+00:46:45,550 --> 00:46:47,550
+bunlara göre de bir
+
+437
+00:46:47,550 --> 00:46:49,550
+bu kabullerine bu tasarım kararlarına göre
+
+438
+00:46:49,550 --> 00:46:51,550
+bir sonuç ortaya çıkacak
+
+439
+00:46:51,550 --> 00:46:53,550
+peki mail box'tan
+
+440
+00:46:53,550 --> 00:46:55,550
+slide'ları da anlatıyor musun?
+
+441
+00:46:55,550 --> 00:46:57,550
+mesajları çekerken ne şansın var?
+
+442
+00:46:57,550 --> 00:46:59,550
+gelen sırayla çekersin
+
+443
+00:46:59,550 --> 00:47:01,550
+yani en altta en eski
+
+444
+00:47:01,550 --> 00:47:03,550
+olanı önce çekersin
+
+445
+00:47:03,550 --> 00:47:05,550
+sonra diğerini çekersin
+
+446
+00:47:05,550 --> 00:47:07,550
+veya bakarsın böyle
+
+447
+00:47:07,550 --> 00:47:09,550
+Cihan Hoca'nın örneğinden
+
+448
+00:47:09,550 --> 00:47:11,550
+o an karnın açtı
+
+449
+00:47:11,550 --> 00:47:13,550
+köftecinin flyer hoşuna gitmiştir
+
+450
+00:47:13,550 --> 00:47:15,550
+ya da adam spesifik olarak
+
+451
+00:47:15,550 --> 00:47:17,550
+mahkemeden tebligat gelmiştir
+
+452
+00:47:17,550 --> 00:47:19,550
+nedir acaba resmi şey?
+
+453
+00:47:19,550 --> 00:47:21,550
+onun önceliği vardır
+
+454
+00:47:21,550 --> 00:47:23,550
+öncelik belirtilmiş olabilir
+
+455
+00:47:23,550 --> 00:47:25,550
+aynı kuyruğa aynı
+
+456
+00:47:25,550 --> 00:47:27,550
+message box'a konulurken
+
+457
+00:47:27,550 --> 00:47:29,550
+mail box'a konulurken
+
+458
+00:47:29,550 --> 00:47:31,550
+öncelik belirtilmiş olabilir
+
+459
+00:47:31,550 --> 00:47:33,550
+yani bu senaryoların hepsi mümkün
+
+460
+00:47:33,550 --> 00:47:35,550
+peki şimdi
+
+461
+00:47:35,550 --> 00:47:37,550
+senin şey noktasına geldiğimizde
+
+462
+00:47:37,550 --> 00:47:39,550
+maltıklı konsümör
+
+463
+00:47:39,550 --> 00:47:41,550
+şimdi diyelim
+
+464
+00:47:41,550 --> 00:47:43,550
+oradan sen mektubu aldın
+
+465
+00:47:43,550 --> 00:47:45,550
+değil mi mail box'a mektubu aldın
+
+466
+00:47:45,550 --> 00:47:47,550
+aldığın mektup orada mı? yok
+
+467
+00:47:47,550 --> 00:47:49,550
+şimdi sen aldın
+
+468
+00:47:49,550 --> 00:47:51,550
+arkandan ben geldim
+
+469
+00:47:51,550 --> 00:47:53,550
+benim aynı mektubu alabilmem mümkün mü?
+
+470
+00:47:53,550 --> 00:47:55,550
+değil, demek ki mail box'a
+
+471
+00:47:55,550 --> 00:47:57,550
+bir mesaj bırakıldıysa
+
+472
+00:47:57,550 --> 00:47:59,550
+birden fazla proses bu mail box'a
+
+473
+00:47:59,550 --> 00:48:01,550
+gelişiyorsa
+
+474
+00:48:01,550 --> 00:48:03,550
+özel olarak bir şey yapmadığımız sürece
+
+475
+00:48:03,550 --> 00:48:05,550
+oradan o mesaj
+
+476
+00:48:05,550 --> 00:48:07,550
+mail box'da bekleyen mesaj
+
+477
+00:48:07,550 --> 00:48:09,550
+alındıysa sonsuza kadar alınmış demektir
+
+478
+00:48:09,550 --> 00:48:11,550
+ama diyebilirsin ki
+
+479
+00:48:11,550 --> 00:48:13,550
+hayır ben çok özel bir mail box
+
+480
+00:48:13,550 --> 00:48:15,550
+tasarladım böyle uygulamadar var
+
+481
+00:48:15,550 --> 00:48:17,550
+bu mail box'a en tane
+
+482
+00:48:17,550 --> 00:48:19,550
+proses bağlı buraya gelen bir
+
+483
+00:48:19,550 --> 00:48:21,550
+mesajın en tane kopyası
+
+484
+00:48:21,550 --> 00:48:23,550
+atılmadan
+
+485
+00:48:23,550 --> 00:48:25,550
+bu mesaj bu mail box'dan
+
+486
+00:48:25,550 --> 00:48:27,550
+uzaklaşmamış olacak
+
+487
+00:48:27,550 --> 00:48:29,550
+yani ne yapmış olacaksın
+
+488
+00:48:29,550 --> 00:48:31,550
+aynı mesajın en kopyasını bütün
+
+489
+00:48:31,550 --> 00:48:33,550
+reseverlere dağıtacaksın
+
+490
+00:48:33,550 --> 00:48:35,550
+broadcast yapacaksın ama bu da
+
+491
+00:48:35,550 --> 00:48:37,550
+farklı bir senaryo normal şartlarda
+
+492
+00:48:37,550 --> 00:48:39,550
+bir mesaj alındıysa alınmıştır
+
+493
+00:48:39,550 --> 00:48:41,550
+tabi belli açılardan
+
+494
+00:48:41,550 --> 00:48:43,550
+iyi mi kötü mü hangi
+
+495
+00:48:43,550 --> 00:48:45,550
+durum için belirlemek lazım ama
+
+496
+00:48:45,550 --> 00:48:47,550
+çok daha karmış yani
+
+497
+00:48:47,550 --> 00:48:49,550
+implementasyonu karmışıklaştıran bir karar bu
+
+498
+00:48:49,550 --> 00:48:51,550
+tasarım kararı ben bunu böyle yapacağım dediğim zaman
+
+499
+00:48:51,550 --> 00:48:53,550
+ve hani
+
+500
+00:48:53,550 --> 00:48:55,550
+mühendislikteki temel şey
+
+501
+00:48:55,550 --> 00:48:57,550
+keep it simple
+
+502
+00:48:57,550 --> 00:48:59,550
+mümkün olduğu kadar bazı işleri
+
+503
+00:48:59,550 --> 00:49:01,550
+basit tutuyor olmanız lazım basit çözümlere
+
+504
+00:49:01,550 --> 00:49:03,550
+yöneliyor olmanız lazım dolayısıyla çok da
+
+505
+00:49:03,550 --> 00:49:05,550
+tercih edebilecek ya da
+
+506
+00:49:05,550 --> 00:49:07,550
+efektif bir şey
+
+507
+00:49:07,550 --> 00:49:09,550
+değil
+
+508
+00:49:09,550 --> 00:49:11,550
+ara verelim mi devam mı edelim nasıl
+
+509
+00:49:11,550 --> 00:49:13,550
+yok bir ara verelim ama ara vermeden önce
+
+510
+00:49:13,550 --> 00:49:15,550
+şunu toparlayalım yani sonuç olarak
+
+511
+00:49:16,550 --> 00:49:18,550
+Cihan hocanızın söylediği gibi ya
+
+512
+00:49:18,550 --> 00:49:20,550
+doğrudan direkt
+
+513
+00:49:20,550 --> 00:49:22,550
+komikasyon var ya da dolayı
+
+514
+00:49:22,550 --> 00:49:24,550
+indirekt komikasyon var
+
+515
+00:49:24,550 --> 00:49:26,550
+direkt
+
+516
+00:49:26,550 --> 00:49:28,550
+komikasyon olduğunda zaten alıcı ve
+
+517
+00:49:28,550 --> 00:49:30,550
+verici birbirlerini bilmek zorundalar
+
+518
+00:49:30,550 --> 00:49:32,550
+link otomatikman
+
+519
+00:49:32,550 --> 00:49:34,550
+oluşturuluyor bu linki
+
+520
+00:49:34,550 --> 00:49:36,550
+oluşturan mekanizma da işletim sisteminin
+
+521
+00:49:36,550 --> 00:49:38,550
+içerisinde ama indirekt
+
+522
+00:49:38,550 --> 00:49:40,550
+komikasyon da işletim
+
+523
+00:49:40,550 --> 00:49:42,550
+sistemi size mailboxlar
+
+524
+00:49:42,550 --> 00:49:44,550
+sağlar bu mailboxlara
+
+525
+00:49:44,550 --> 00:49:46,550
+erişim imkanı sağlar
+
+526
+00:49:46,550 --> 00:49:48,550
+iki tane proses aynı mailboxa eriştiği
+
+527
+00:49:48,550 --> 00:49:50,550
+anda ona izin verildiği
+
+528
+00:49:50,550 --> 00:49:52,550
+anda ikisi arasında
+
+529
+00:49:52,550 --> 00:49:54,550
+link oluşmuş olur mantık bu
+
+530
+00:49:54,550 --> 00:49:56,550
+bu arada benim gruptan bir soru var
+
+531
+00:49:56,550 --> 00:49:58,550
+hocam bugünkü uygulamanın
+
+532
+00:49:58,550 --> 00:50:00,550
+içeriğiyle ilgili bilgi verebilir misiniz diye
+
+533
+00:50:00,550 --> 00:50:02,550
+veriyorum hazır mısınız çok
+
+534
+00:50:02,550 --> 00:50:04,550
+eğleneceksiniz
+
+535
+00:50:04,550 --> 00:50:06,550
+Fuat hocanız duyuru
+
+536
+00:50:06,550 --> 00:50:08,550
+yaptı diye ben biliyorum o hatta
+
+537
+00:50:08,550 --> 00:50:10,550
+bize de linkini gönderdi ben baktım işte
+
+538
+00:50:10,550 --> 00:50:12,550
+bu hafta şey olacak diye
+
+539
+00:50:12,550 --> 00:50:14,550
+şeyle başlayacağız
+
+540
+00:50:14,550 --> 00:50:16,550
+shell programming ile başlayacağız
+
+541
+00:50:16,550 --> 00:50:18,550
+hakikaten eğlenceli
+
+542
+00:50:18,550 --> 00:50:20,550
+örnekler var diye biliyorum ben de
+
+543
+00:50:20,550 --> 00:50:22,550
+çünkü biz kendisiyle konuştuk
+
+544
+00:50:22,550 --> 00:50:24,550
+Cihan hocanızla ben de Fuat hocanızla
+
+545
+00:50:24,550 --> 00:50:26,550
+konuştuk güzel güzel o
+
+546
+00:50:26,550 --> 00:50:28,550
+hani shell ile alakalı bir takım
+
+547
+00:50:28,550 --> 00:50:30,550
+command line
+
+548
+00:50:30,550 --> 00:50:32,550
+interface'i nasıl kullanabilirsiniz
+
+549
+00:50:32,550 --> 00:50:34,550
+nasıl şey yapabilirsiniz
+
+550
+00:50:34,550 --> 00:50:36,550
+hatta orada
+
+551
+00:50:36,550 --> 00:50:38,550
+inter process communication örmeyi bile
+
+552
+00:50:38,550 --> 00:50:40,550
+göreceksiniz bir prosesin çiftısını
+
+553
+00:50:40,550 --> 00:50:42,550
+bir başka prosese yönlendirmeyi
+
+554
+00:50:42,550 --> 00:50:44,550
+bu programming tarafında değil ama
+
+555
+00:50:44,550 --> 00:50:46,550
+shell tarafında
+
+556
+00:50:46,550 --> 00:50:48,550
+uygulama tarafında bunu göreceksiniz
+
+557
+00:50:48,550 --> 00:50:50,550
+sonrasında programming tarafı ile
+
+558
+00:50:50,550 --> 00:50:52,550
+ilgili olarak da Ahmet hocanızla
+
+559
+00:50:52,550 --> 00:50:54,550
+bir uygulama yapacaksınız
+
+560
+00:50:54,550 --> 00:50:56,550
+onun haftasından şuan emin değilim galiba
+
+561
+00:50:56,550 --> 00:50:58,550
+iki hafta sonra da
+
+562
+00:50:58,550 --> 00:51:00,550
+ilk iki hafta shell programming olması lazım
+
+563
+00:51:00,550 --> 00:51:02,550
+sonra şeye geçeceğiz
+
+564
+00:51:02,550 --> 00:51:04,550
+hocam
+
+565
+00:51:04,550 --> 00:51:06,550
+lablarda notlandırma olacak mı
+
+566
+00:51:06,550 --> 00:51:08,550
+her an notlandırma var
+
+567
+00:51:08,550 --> 00:51:10,550
+olacak [öğrenci]
+
+568
+00:51:10,550 --> 00:51:12,550
+sana eksi beş puan
+
+569
+00:51:12,550 --> 00:51:14,550
+nasıl
+
+570
+00:51:16,550 --> 00:51:18,550
+bak [öğrenci] de beş puan aldı
+
+571
+00:51:18,550 --> 00:51:20,550
+ya arkadaşlar
+
+572
+00:51:20,550 --> 00:51:22,550
+laboratuvar adı
+
+573
+00:51:22,550 --> 00:51:24,550
+üzerinde yani laboratuvar
+
+574
+00:51:24,550 --> 00:51:26,550
+da size bu uygulamalar
+
+575
+00:51:26,550 --> 00:51:28,550
+gösterilecek
+
+576
+00:51:28,550 --> 00:51:30,550
+teşekkür edeceğiz
+
+577
+00:51:30,550 --> 00:51:32,550
+yani
+
+578
+00:51:32,550 --> 00:51:34,550
+puan almak için
+
+579
+00:51:34,550 --> 00:51:36,550
+ne olur şey yapmayın
+
+580
+00:51:36,550 --> 00:51:38,550
+devam etmeyin
+
+581
+00:51:38,550 --> 00:51:40,550
+öğrenmek için devam edin
+
+582
+00:51:40,550 --> 00:51:42,550
+basit gelse bile bazı şeyleri görmek
+
+583
+00:51:42,550 --> 00:51:44,550
+tekrar etmek size anlatılması
+
+584
+00:51:44,550 --> 00:51:46,550
+sizi daha
+
+585
+00:51:46,550 --> 00:51:48,550
+şey yapacaktır bilgili hale getirecektir
+
+586
+00:51:48,550 --> 00:51:50,550
+daha deneyimli hale getirecektir
+
+587
+00:51:50,550 --> 00:51:52,550
+şimdi Gökhan hocanızın söylediği gibi
+
+588
+00:51:52,550 --> 00:51:54,550
+olay hani motivasyonunuz öğrenmek üzerine olması lazım
+
+589
+00:51:54,550 --> 00:51:56,550
+bu bir
+
+590
+00:51:56,550 --> 00:51:58,550
+iki
+
+591
+00:52:02,219 --> 00:52:04,219
+iki şöyle bir şey var
+
+592
+00:52:04,219 --> 00:52:06,219
+şimdi o labdan puan almasanız bile
+
+593
+00:52:06,219 --> 00:52:08,219
+bu labda size soru sorulmasa bile
+
+594
+00:52:08,219 --> 00:52:10,219
+bir şeyler anlatılıyor
+
+595
+00:52:10,219 --> 00:52:12,219
+dolayısıyla yarın öbür gün
+
+596
+00:52:12,219 --> 00:52:14,219
+daha önce de ilk derste de anlatmıştık
+
+597
+00:52:14,219 --> 00:52:16,219
+ders kapsumunda
+
+598
+00:52:16,219 --> 00:52:18,219
+ödeme projeler yapıyor olmanız beklenecek
+
+599
+00:52:18,219 --> 00:52:20,219
+orada anlatılan bilgiyi
+
+600
+00:52:20,219 --> 00:52:22,219
+kullanıyor olmanız lazım
+
+601
+00:52:22,219 --> 00:52:24,219
+bu da hani illa puan
+
+602
+00:52:24,219 --> 00:52:26,219
+almak isteyen arkadaşlara
+
+603
+00:52:26,219 --> 00:52:28,219
+duyulur yani bugün o uygulamada
+
+604
+00:52:28,219 --> 00:52:30,219
+direkt bir puan almasınız bile
+
+605
+00:52:30,219 --> 00:52:32,219
+yarın öbür gün o bu uygulamada
+
+606
+00:52:32,219 --> 00:52:34,219
+dolayı öğrendiğiniz
+
+607
+00:52:34,219 --> 00:52:36,219
+anladığınız şeylerle ilgili yapacağınız
+
+608
+00:52:36,219 --> 00:52:38,219
+ödevlerden puan alacaksınız
+
+609
+00:52:38,219 --> 00:52:40,219
+bu da direct
+
+610
+00:52:40,219 --> 00:52:42,219
+pointing diye
+
+611
+00:52:42,219 --> 00:52:44,219
+tahmin ediliyor
+
+612
+00:52:44,219 --> 00:52:46,219
+indirect messaging ve indirect messagingin
+
+613
+00:52:46,219 --> 00:52:48,219
+işte böyle bir şey oluyor
+
+614
+00:52:48,219 --> 00:52:50,219
+neyse ara verelim
+
+615
+00:52:50,219 --> 00:52:52,219
+beş geçiye kadar ara mı verelim
+
+616
+00:52:52,219 --> 00:52:55,460
+beş geçe yeterli mi
+
+617
+00:52:55,460 --> 00:52:57,460
+tamam beş geçe kadar ara verelim
+
+618
+00:52:57,460 --> 00:52:59,460
+çok pardon ömer şey demiş
+
+619
+00:52:59,460 --> 00:53:01,460
+önceden hazırlık yapalım diye sormuştum
+
+620
+00:53:01,460 --> 00:53:03,460
+yani devam ile alakalı değildi demiş tamam
+
+621
+00:53:03,460 --> 00:53:05,460
+devamla alakalı olmasından bağımsız
+
+622
+00:53:05,460 --> 00:53:07,460
+bir hazırlık yapmanız gereken olduğunda
+
+623
+00:53:07,460 --> 00:53:09,460
+biz zaten size bir ilgilendirme yaparız
+
+624
+00:53:09,460 --> 00:53:11,460
+merak etmeyin
+
+625
+00:53:11,460 --> 01:07:07,579
+görüşmek üzere
+
+626
+01:07:07,579 --> 01:07:09,579
+ben de açtım
+
+627
+01:07:09,579 --> 01:07:11,579
+evet devam ediyoruz şimdi arkadaşlar
+
+628
+01:07:11,579 --> 01:07:13,579
+biraz geri sarmak mı gerekiyor
+
+629
+01:07:13,579 --> 01:07:15,579
+direk indirect communication
+
+630
+01:07:15,579 --> 01:07:17,579
+yaptık bence bir sonraki
+
+631
+01:07:17,579 --> 01:07:19,579
+slide'den
+
+632
+01:07:19,579 --> 01:07:21,579
+indirect communication
+
+633
+01:07:21,579 --> 01:07:23,579
+main box kısmı var
+
+634
+01:07:23,579 --> 01:07:25,579
+yok şey olarak söyleyeyim
+
+635
+01:07:25,579 --> 01:07:27,579
+bir özet geçeyim hani
+
+636
+01:07:27,579 --> 01:07:29,579
+geri gelebiliyor musunuz
+
+637
+01:07:29,579 --> 01:07:31,579
+gelicem inşallah
+
+638
+01:07:31,579 --> 01:07:33,579
+yani haliyle ne yapmamız lazım
+
+639
+01:07:33,579 --> 01:07:35,579
+bir main box oluşturulması lazım böyle işte
+
+640
+01:07:35,579 --> 01:07:37,579
+işlemlere baktığınız zaman bir main box oluşturabilirsiniz
+
+641
+01:07:37,579 --> 01:07:39,579
+oluşturduğunuz main box her zaman ne diyoruz
+
+642
+01:07:39,579 --> 01:07:41,579
+arkanızı toplayın diyoruz
+
+643
+01:07:41,579 --> 01:07:43,579
+mesela main box'ı ortadan kaldırmanız bir işlem
+
+644
+01:07:43,579 --> 01:07:45,579
+bunun dışında da sent ve receive
+
+645
+01:07:45,579 --> 01:07:47,579
+işlemleri yani gönderme ve alınma
+
+646
+01:07:47,579 --> 01:07:49,579
+işlemlerini gerçekleştirmeniz lazım
+
+647
+01:07:49,579 --> 01:07:51,579
+bunu da yaparken ne olması lazım
+
+648
+01:07:51,579 --> 01:07:53,579
+send ve receive diye iki primitifiniz var
+
+649
+01:07:53,579 --> 01:07:55,579
+bunların ikisiyle de
+
+650
+01:07:57,579 --> 01:07:59,579
+ikisini de kullanırken
+
+651
+01:07:59,579 --> 01:08:01,579
+neyi belirtiyor olmanız lazım hangi main box'a göndereceksiniz
+
+652
+01:08:01,579 --> 01:08:03,579
+hangi main box'a alacaksınız
+
+653
+01:08:03,579 --> 01:08:05,579
+gönderirken göndereceğiniz mesajı
+
+654
+01:08:05,579 --> 01:08:07,579
+alırken de size gelen
+
+655
+01:08:07,579 --> 01:08:09,579
+mesajı alabileceğiniz parametreye ihtiyacınız var tabi
+
+656
+01:08:13,579 --> 01:08:15,579
+az önce konuştığımız
+
+657
+01:08:15,579 --> 01:08:17,579
+problem durumu hani
+
+658
+01:08:17,579 --> 01:08:19,579
+tasarım
+
+659
+01:08:19,579 --> 01:08:21,579
+kriterlerinden bir tanesi kararlarından bir tanesi
+
+660
+01:08:21,579 --> 01:08:23,579
+bir tanesi demiştik hatta Gökhan hocanın da verdiği bir örnek vardı
+
+661
+01:08:23,579 --> 01:08:25,579
+P1, P2 ve P3
+
+662
+01:08:25,579 --> 01:08:27,579
+bir main box paylaşıyor
+
+663
+01:08:27,579 --> 01:08:29,579
+ismi de A olsun
+
+664
+01:08:29,579 --> 01:08:31,579
+P1 bir main box'ı
+
+665
+01:08:31,579 --> 01:08:33,579
+gönderiyor
+
+666
+01:08:33,579 --> 01:08:35,579
+daha doğrusu P1 gönderen tarafta
+
+667
+01:08:35,579 --> 01:08:37,579
+P2 ve P3 de alıcı tarafta
+
+668
+01:08:37,579 --> 01:08:39,579
+bu durumda ne olur
+
+669
+01:08:39,579 --> 01:08:41,579
+ne olur bu sizin aslında tasarım
+
+670
+01:08:41,579 --> 01:08:43,579
+kararınızla alakalı siz bu işi nasıl
+
+671
+01:08:43,579 --> 01:08:45,579
+handle etmek istiyorsunuz
+
+672
+01:08:45,579 --> 01:08:47,579
+bir tanesi ne olur Gökhan hocanın söylediği demin
+
+673
+01:08:47,579 --> 01:08:49,579
+bir mesajı yani posta kutusundaki
+
+674
+01:08:49,579 --> 01:08:51,579
+o mesajı aldıktan sonra
+
+675
+01:08:51,579 --> 01:08:53,579
+o evdeki ikinci kişi gelip oraya baktığında
+
+676
+01:08:53,579 --> 01:08:55,579
+o mesajı görüyor mu görmüyor
+
+677
+01:08:55,579 --> 01:08:57,579
+bunun illa görülmesini isteyebilir misiniz
+
+678
+01:08:57,579 --> 01:08:59,579
+isteyebilirsiniz
+
+679
+01:08:59,579 --> 01:09:01,579
+dolayısıyla yine anlatıldığı gibi
+
+680
+01:09:01,579 --> 01:09:03,579
+o mesajı
+
+681
+01:09:03,579 --> 01:09:05,579
+eğer o main box'da en tane
+
+682
+01:09:05,579 --> 01:09:07,579
+işlem varsa paylaşım yapan
+
+683
+01:09:07,579 --> 01:09:09,579
+o mesajın en kopyası
+
+684
+01:09:09,579 --> 01:09:11,579
+dağıtılmadan o mesajı oradan
+
+685
+01:09:11,579 --> 01:09:13,579
+kaldırmazsınız bu bir şey olabilir
+
+686
+01:09:13,579 --> 01:09:15,579
+seçenek olabilir
+
+687
+01:09:15,579 --> 01:09:17,579
+aşağıda da zaten
+
+688
+01:09:17,579 --> 01:09:19,579
+benzer şekilde olası alternatif çözünler
+
+689
+01:09:19,579 --> 01:09:21,579
+size şey yapılmış
+
+690
+01:09:21,579 --> 01:09:23,579
+verilmiş
+
+691
+01:09:23,579 --> 01:09:25,579
+bir tanesi
+
+692
+01:09:25,579 --> 01:09:27,579
+öyle bir
+
+693
+01:09:27,579 --> 01:09:29,579
+mail box üç tane process arasında
+
+694
+01:09:29,579 --> 01:09:31,579
+paylaşılmaz en fazla iki process arasında
+
+695
+01:09:31,579 --> 01:09:33,579
+paylaşılır deyip işlemi
+
+696
+01:09:33,579 --> 01:09:35,579
+basitleştirip kafayı kesip
+
+697
+01:09:35,579 --> 01:09:37,579
+atabilirsiniz bir seçenek
+
+698
+01:09:37,579 --> 01:09:39,579
+olabilir dolayısıyla böyle bir yapıyı
+
+699
+01:09:39,579 --> 01:09:41,579
+programmer tarafında
+
+700
+01:09:41,579 --> 01:09:43,579
+kurulması için farklı bir yöntem
+
+701
+01:09:43,579 --> 01:09:45,579
+gizlenmesi gerekecektir
+
+702
+01:09:45,579 --> 01:09:47,579
+bir diğer şey
+
+703
+01:09:47,579 --> 01:09:49,579
+demin konuştuğumuz yapı
+
+704
+01:09:49,579 --> 01:09:51,579
+hani bir işlem
+
+705
+01:09:53,579 --> 01:09:55,579
+receive işlemini
+
+706
+01:09:55,579 --> 01:09:57,579
+sadece bir işlemini yapması
+
+707
+01:09:57,579 --> 01:09:59,579
+durumu olabilir biri yapar ve biter
+
+708
+01:09:59,579 --> 01:10:01,579
+bir diğeri
+
+709
+01:10:01,579 --> 01:10:03,579
+iki tane receiver varsa
+
+710
+01:10:03,579 --> 01:10:05,579
+sistem yani işletim sistemi
+
+711
+01:10:05,579 --> 01:10:07,579
+bunlardan birini dedicated gibi
+
+712
+01:10:07,579 --> 01:10:09,579
+seçebilir ya da
+
+713
+01:10:09,579 --> 01:10:11,579
+o an rastgele birini seçip
+
+714
+01:10:11,579 --> 01:10:13,579
+mesajı ona iletiyor olabilir bunların hepsi
+
+715
+01:10:13,579 --> 01:10:15,579
+aynı yöntemidir
+
+716
+01:10:15,579 --> 01:10:17,579
+şey
+
+717
+01:10:17,579 --> 01:10:19,579
+sinkronizasyon
+
+718
+01:10:19,579 --> 01:10:21,579
+şimdi mail
+
+719
+01:10:21,579 --> 01:10:23,579
+box demin hatırlarsanız gökhan hocanızın
+
+720
+01:10:23,579 --> 01:10:25,579
+söylediği üzere
+
+721
+01:10:25,579 --> 01:10:27,579
+automatically by default
+
+722
+01:10:27,579 --> 01:10:29,579
+sinkronizasyon yapısı sunuyor
+
+723
+01:10:29,579 --> 01:10:31,579
+durumu var
+
+724
+01:10:31,579 --> 01:10:33,579
+burada
+
+725
+01:10:33,579 --> 01:10:35,579
+mesajın aktarım işi
+
+726
+01:10:35,579 --> 01:10:37,579
+blocking ya da
+
+727
+01:10:37,579 --> 01:10:39,579
+non blocking olabilir
+
+728
+01:10:39,579 --> 01:10:41,579
+çoğu zaman
+
+729
+01:10:41,579 --> 01:10:43,579
+doğası gereği sent non blocking
+
+730
+01:10:43,579 --> 01:10:45,579
+bilgiyi gönderir
+
+731
+01:10:45,579 --> 01:10:47,579
+devam edersiniz
+
+732
+01:10:47,579 --> 01:10:49,579
+receive ise blocking ya da non blocking olabilir
+
+733
+01:10:49,579 --> 01:10:51,579
+yani blocking olması ne demek
+
+734
+01:10:51,579 --> 01:10:53,579
+receive operasyonu
+
+735
+01:10:53,579 --> 01:10:55,579
+bilgi var mı diye
+
+736
+01:10:55,579 --> 01:10:57,579
+bakarsınız ve orada bir bilgi
+
+737
+01:10:57,579 --> 01:10:59,579
+olana kadar beklersiniz
+
+738
+01:10:59,579 --> 01:11:01,579
+blocking blokeli çalışıyorsunuzdur
+
+739
+01:11:01,579 --> 01:11:03,579
+ya da mesaj var mı diye bakarsınız
+
+740
+01:11:03,579 --> 01:11:05,579
+mesaj yoksa hayatınıza
+
+741
+01:11:05,579 --> 01:11:07,579
+devam edersiniz bu da non blocking
+
+742
+01:11:07,579 --> 01:11:09,579
+yani durak satmasız
+
+743
+01:11:09,579 --> 01:11:11,579
+molur Türkçesi
+
+744
+01:11:13,579 --> 01:11:17,180
+receive işlemidir
+
+745
+01:11:17,180 --> 01:11:19,180
+zaten bütün ihtimalleri galiba
+
+746
+01:11:19,180 --> 01:11:21,180
+konuştuk
+
+747
+01:11:21,180 --> 01:11:23,180
+şimdi bir
+
+748
+01:11:23,180 --> 01:11:25,180
+mesaj basitinde bir linkten
+
+749
+01:11:25,180 --> 01:11:27,180
+bir komikasyon linkinden bahsediyorsak
+
+750
+01:11:27,180 --> 01:11:29,180
+arada
+
+751
+01:11:29,180 --> 01:11:31,180
+mesajların bir kuyruk yapısına
+
+752
+01:11:31,180 --> 01:11:33,180
+oturtulması lazım o kuyruk yapısı
+
+753
+01:11:33,180 --> 01:11:35,180
+içerisinde de bir içinde
+
+754
+01:11:35,180 --> 01:11:37,180
+bir buffer alanı lazım buradaki
+
+755
+01:11:37,180 --> 01:11:39,180
+bufferingin nasıl yapılacağı
+
+756
+01:11:39,180 --> 01:11:41,180
+şey yapmayayım
+
+757
+01:11:41,180 --> 01:11:43,180
+yanlış söylemeyeyim ama galiba [öğrenci]'in
+
+758
+01:11:43,180 --> 01:11:45,180
+sorusu üzerine konuşurken buna
+
+759
+01:11:45,180 --> 01:11:47,180
+değindiydikten çocuğun ismini yanlış
+
+760
+01:11:47,180 --> 01:11:49,180
+söylemeyeyim
+
+761
+01:11:49,180 --> 01:11:51,180
+burada
+
+762
+01:11:51,180 --> 01:11:53,180
+üç tane
+
+763
+01:11:53,180 --> 01:11:55,180
+şey var seçenek var
+
+764
+01:11:55,180 --> 01:11:57,180
+buffer kullanmazsınız
+
+765
+01:11:57,180 --> 01:11:59,180
+sıfır kapasite bir buffer
+
+766
+01:11:59,180 --> 01:12:01,180
+send edeceğiniz zaman
+
+767
+01:12:01,180 --> 01:12:03,180
+aslında
+
+768
+01:12:03,180 --> 01:12:05,180
+bilginin doğrudan
+
+769
+01:12:05,180 --> 01:12:07,180
+receiver'a gitmesini
+
+770
+01:12:07,180 --> 01:12:09,180
+düşünüyorsunuz ya da planlıyorsunuz demek
+
+771
+01:12:09,180 --> 01:12:11,180
+bu durumda da aslında ne yapmanız lazım
+
+772
+01:12:11,180 --> 01:12:13,180
+sender ve receiver'ın bir yerde buluşması lazım
+
+773
+01:12:13,180 --> 01:12:15,180
+randevulaşması lazım
+
+774
+01:12:15,180 --> 01:12:17,180
+bir nevi
+
+775
+01:12:17,180 --> 01:12:19,180
+o yüzden burada
+
+776
+01:12:19,180 --> 01:12:21,180
+send işlemi de blocking hale
+
+777
+01:12:21,180 --> 01:12:23,180
+geliyor
+
+778
+01:12:23,180 --> 01:12:25,180
+öbür taraftan
+
+779
+01:12:25,180 --> 01:12:27,180
+belirli bir buffer alanı
+
+780
+01:12:27,180 --> 01:12:29,180
+sahip olabilirsiniz
+
+781
+01:12:29,180 --> 01:12:31,180
+bounded kapasite olabilir yani
+
+782
+01:12:31,180 --> 01:12:33,180
+mesela burada M üzerinden
+
+783
+01:12:33,180 --> 01:12:35,180
+minnek bölmüş ne olacak
+
+784
+01:12:35,180 --> 01:12:37,180
+buffer'ınızda yer olduğu sürece
+
+785
+01:12:37,180 --> 01:12:39,180
+send işleminiz
+
+786
+01:12:39,180 --> 01:12:41,180
+non blocking çalışacak tak tak tak
+
+787
+01:12:41,180 --> 01:12:43,180
+buffer'a yerleştireceksiniz
+
+788
+01:12:43,180 --> 01:12:45,180
+ne zamana kadar buffer'da olduğunda
+
+789
+01:12:45,180 --> 01:12:47,180
+artık send yapamayacaksınız blocking hale
+
+790
+01:12:47,180 --> 01:12:49,180
+gelecek send işlemi
+
+791
+01:12:49,180 --> 01:12:51,180
+unbounded kapasite
+
+792
+01:12:51,180 --> 01:12:53,180
+noktasında da sender'ın
+
+793
+01:12:53,180 --> 01:12:55,180
+bir buffer alanı
+
+794
+01:12:55,180 --> 01:12:57,180
+bir limit buffer alanı bir limiti
+
+795
+01:12:57,180 --> 01:12:59,180
+olmadığı için beklemesi gibi bir durum yok
+
+796
+01:12:59,180 --> 01:13:01,180
+send ettim ettim
+
+797
+01:13:01,180 --> 01:13:03,180
+çok güzel bir seçenek olmasına rağmen
+
+798
+01:13:03,180 --> 01:13:05,180
+gerçekçi ya da
+
+799
+01:13:05,180 --> 01:13:07,180
+gerçeklenebilir değil
+
+800
+01:13:07,180 --> 01:13:09,180
+çoğu zaman
+
+801
+01:13:09,180 --> 01:13:11,180
+ilk sıfır kapasite
+
+802
+01:13:11,180 --> 01:13:13,180
+randevu mantığını da belki
+
+803
+01:13:13,180 --> 01:13:15,180
+teknik terimi olarak söylemek lazım
+
+804
+01:13:17,180 --> 01:13:19,180
+teknik terimde de illaki
+
+805
+01:13:19,180 --> 01:13:21,180
+bizim anladığımız halk dilindeki
+
+806
+01:13:21,180 --> 01:13:23,180
+randevu değil
+
+807
+01:13:23,180 --> 01:13:25,180
+randevu diye bir başlık görürseniz
+
+808
+01:13:25,180 --> 01:13:27,180
+google'da iki
+
+809
+01:13:27,180 --> 01:13:29,180
+prosesin beraber sinemaya gidelim
+
+810
+01:13:29,180 --> 01:13:31,180
+değil
+
+811
+01:13:31,180 --> 01:13:33,180
+ciddi anlamda arada sıfır kapasite
+
+812
+01:13:33,180 --> 01:13:35,180
+buffer'da
+
+813
+01:13:35,180 --> 01:13:37,180
+mesajlaşması anlamına geliyor
+
+814
+01:13:37,180 --> 01:13:40,619
+şimdi
+
+815
+01:13:40,619 --> 01:13:42,619
+buraya kadar
+
+816
+01:13:42,619 --> 01:13:44,619
+teorik kısmını konuşmuştuk
+
+817
+01:13:44,619 --> 01:13:46,619
+işin kararları vs
+
+818
+01:13:46,619 --> 01:13:48,619
+hover'ı cover'ı
+
+819
+01:13:48,619 --> 01:13:50,619
+buradan sonra aslında
+
+820
+01:13:50,619 --> 01:13:52,619
+interprocess communication için çeşitli sistemlerde
+
+821
+01:13:52,619 --> 01:13:54,619
+çeşitli yerlerde
+
+822
+01:13:54,619 --> 01:13:56,619
+karşınıza çıkabilecek mekanizmaları
+
+823
+01:13:56,619 --> 01:13:58,619
+konuşuyoruz aslında
+
+824
+01:13:58,619 --> 01:14:00,619
+gerçi buradaki slide'lardaki ya da
+
+825
+01:14:00,619 --> 01:14:02,619
+bu organizasyonun ki
+
+826
+01:14:02,619 --> 01:14:04,619
+sıralama biraz değişik
+
+827
+01:14:04,619 --> 01:14:06,619
+normal şartlarda biz
+
+828
+01:14:06,619 --> 01:14:08,619
+daha farklı bir sıralama
+
+829
+01:14:08,619 --> 01:14:10,619
+elekliyoruz unix'ten gelen standart
+
+830
+01:14:10,619 --> 01:14:12,619
+yöntemlerle pipe'la vs. ile başlıyoruz
+
+831
+01:14:12,619 --> 01:14:14,619
+ama onlar sonunda
+
+832
+01:14:14,619 --> 01:14:16,619
+bu slide'lerde yanlış hatırlamıyorsam
+
+833
+01:14:16,619 --> 01:14:18,619
+ama hani organizasyonun
+
+834
+01:14:18,619 --> 01:14:20,619
+açısından bakacak olursak da ilk
+
+835
+01:14:20,619 --> 01:14:22,619
+shared memory'i konuşmuştuk posix bize
+
+836
+01:14:22,619 --> 01:14:24,619
+bir shared memory yapısı sunuyor
+
+837
+01:14:24,619 --> 01:14:26,619
+ne yapıyorsunuz
+
+838
+01:14:26,619 --> 01:14:30,180
+bir alanın öncelikler
+
+839
+01:14:30,180 --> 01:14:32,180
+öncelikler shared memory olarak
+
+840
+01:14:32,180 --> 01:14:34,180
+yaratılmasını sağlıyorsunuz
+
+841
+01:14:34,180 --> 01:14:36,180
+shm get
+
+842
+01:14:36,180 --> 01:14:38,180
+fonksiyonuyla
+
+843
+01:14:38,180 --> 01:14:40,180
+bunun çok fazla detaylarına girmeyeceğim
+
+844
+01:14:40,180 --> 01:14:42,180
+çünkü uygulamalar arasında geçen ders söyledik
+
+845
+01:14:42,180 --> 01:14:44,180
+ahmet hocanızla beraber
+
+846
+01:14:44,180 --> 01:14:46,180
+interprocess communication ile ilgili
+
+847
+01:14:46,180 --> 01:14:48,180
+yanlış hatırlamıyorsam orada da yine iki hafta kadar
+
+848
+01:14:48,180 --> 01:14:50,180
+uygulama yapıyor olacaksınız
+
+849
+01:14:50,180 --> 01:14:52,180
+detayların orada daha vakıf hale geleceksiniz
+
+850
+01:14:54,180 --> 01:14:56,180
+ama temel olarak baktığınız zaman
+
+851
+01:14:56,180 --> 01:14:58,180
+bir alam yaratıyorsunuz shm get ile
+
+852
+01:14:58,180 --> 01:15:00,180
+shm mat ile
+
+853
+01:15:00,180 --> 01:15:02,180
+o alanı kullanacak
+
+854
+01:15:02,180 --> 01:15:04,180
+diğer işlemlerin
+
+855
+01:15:04,180 --> 01:15:06,180
+o alanı kendi
+
+856
+01:15:06,180 --> 01:15:08,180
+bellek alanına bağlamasını
+
+857
+01:15:08,180 --> 01:15:10,180
+sağlıyorsunuz
+
+858
+01:15:10,180 --> 01:15:12,180
+sonrası da gelsin veri gitsin veri
+
+859
+01:15:12,180 --> 01:15:14,180
+hani oraya yazdığımız herşey artık
+
+860
+01:15:16,180 --> 01:15:18,180
+diğer işlem tarafından ya da
+
+861
+01:15:18,180 --> 01:15:20,180
+diğer işlemler tarafından görülebilir
+
+862
+01:15:20,180 --> 01:15:22,180
+hale geliyor
+
+863
+01:15:22,180 --> 01:15:24,180
+işiniz bittiği zaman da tabi ki
+
+864
+01:15:24,180 --> 01:15:26,180
+detach etmeniz sonunda da
+
+865
+01:15:26,180 --> 01:15:28,180
+destroy etmeniz lazım
+
+866
+01:15:28,180 --> 01:15:30,180
+şimdi bu slide'da da yine
+
+867
+01:15:30,180 --> 01:15:32,180
+şey var okurken
+
+868
+01:15:32,180 --> 01:15:34,180
+ne alakasız diye düşünmeyin arkadaşlar
+
+869
+01:15:34,180 --> 01:15:36,180
+segment ile id arasında bir
+
+870
+01:15:36,180 --> 01:15:38,180
+underscore var o düşmüş
+
+871
+01:15:38,180 --> 01:15:40,180
+shared ile memori arasında
+
+872
+01:15:40,180 --> 01:15:42,180
+bir underscore var o düşmüş
+
+873
+01:15:42,180 --> 01:15:44,180
+aslında onlar değişkenler
+
+874
+01:15:44,180 --> 01:15:46,180
+sol taraftaki atama kısmından bahsediyoruz
+
+875
+01:15:46,180 --> 01:15:48,180
+evet
+
+876
+01:15:48,180 --> 01:15:50,180
+segment boşluk id şeklinde gözüküyor
+
+877
+01:15:50,180 --> 01:15:52,180
+shared memori şeklinde gözüküyor
+
+878
+01:15:52,180 --> 01:15:54,180
+ancak o segment altı çizgi id
+
+879
+01:15:54,180 --> 01:15:56,180
+shared alt çizgi memori
+
+880
+01:15:56,180 --> 01:15:58,180
+ve dikkat edin
+
+881
+01:15:58,180 --> 01:16:00,180
+benzer şekilde değişkenlerin
+
+882
+01:16:00,180 --> 01:16:02,180
+diğer yerlerde kullanımında da
+
+883
+01:16:02,180 --> 01:16:04,180
+sprintf'in içerisinde falan da
+
+884
+01:16:04,180 --> 01:16:06,180
+shared memori destroy'da da benzer
+
+885
+01:16:06,180 --> 01:16:08,180
+şekilde aralar düşmüş olarak
+
+886
+01:16:08,180 --> 01:16:10,180
+kullanıyor aynı alt çizgi eksikleri
+
+887
+01:16:10,180 --> 01:16:12,180
+haklarla ilgili kısımda da var
+
+888
+01:16:12,180 --> 01:16:14,180
+s alt çizgi
+
+889
+01:16:14,180 --> 01:16:16,180
+ur usr olması lazım
+
+890
+01:16:16,180 --> 01:16:18,180
+ya da benzer şekilde
+
+891
+01:16:18,180 --> 01:16:20,180
+onlarda da eksikler var
+
+892
+01:16:24,180 --> 01:16:26,180
+indirect haberleşmeye bakacak olursanız
+
+893
+01:16:26,180 --> 01:16:28,180
+ay pardon
+
+894
+01:16:28,180 --> 01:16:30,180
+message passing kısımda bakacak olursanız
+
+895
+01:16:30,180 --> 01:16:32,180
+mesela
+
+896
+01:16:32,180 --> 01:16:34,180
+mac'lerde
+
+897
+01:16:34,180 --> 01:16:36,180
+macos içerisinde kullanılan haberleşme
+
+898
+01:16:36,180 --> 01:16:38,180
+yöntemi buna bir örnek
+
+899
+01:16:38,180 --> 01:16:40,180
+yine orada
+
+900
+01:16:40,180 --> 01:16:42,180
+ilk başta konuştuğumuz gibi
+
+901
+01:16:42,180 --> 01:16:44,180
+standart bazı çağrılar var
+
+902
+01:16:44,180 --> 01:16:46,180
+send receive üzerinden yapıyorsunuz
+
+903
+01:16:46,180 --> 01:16:48,180
+burada ismi sadece message send ve
+
+904
+01:16:48,180 --> 01:16:50,180
+message receive
+
+905
+01:16:50,180 --> 01:16:54,069
+girmeye gerek yokta
+
+906
+01:16:54,069 --> 01:16:56,069
+az önce konuştuğumuz
+
+907
+01:16:56,069 --> 01:16:58,069
+mailbox'larda port allocate ile
+
+908
+01:16:58,069 --> 01:17:00,069
+oluşturuluyor
+
+909
+01:17:00,069 --> 01:17:02,069
+mailbox'ın eş anlamlısı
+
+910
+01:17:02,069 --> 01:17:04,069
+port aynı zamanda
+
+911
+01:17:04,069 --> 01:17:06,069
+iki terim birbirinin yerine
+
+912
+01:17:06,069 --> 01:17:08,069
+kullanılabiliyor
+
+913
+01:17:10,069 --> 01:17:12,069
+port allocate sonrasında da
+
+914
+01:17:12,069 --> 01:17:14,069
+deallocate ediyorsunuz
+
+915
+01:17:14,069 --> 01:17:16,069
+yani bunu
+
+916
+01:17:16,069 --> 01:17:18,069
+bu şekilde göstermiş
+
+917
+01:17:18,069 --> 01:17:20,069
+olalım
+
+918
+01:17:20,069 --> 01:17:22,069
+bu iş hani sadece
+
+919
+01:17:22,069 --> 01:17:24,069
+unix'te ya da
+
+920
+01:17:24,069 --> 01:17:26,069
+mac'da sınırlı değil
+
+921
+01:17:26,069 --> 01:17:28,069
+windows'da da şey ben geçtim ama
+
+922
+01:17:28,069 --> 01:17:30,069
+geçiyorum ha şimdi geçtim evet
+
+923
+01:17:30,069 --> 01:17:32,069
+windows'da da
+
+924
+01:17:32,069 --> 01:17:34,069
+benzer mekanizmalar var orada
+
+925
+01:17:34,069 --> 01:17:36,069
+local procedure
+
+926
+01:17:36,069 --> 01:17:38,069
+call diye bir mekanizma var
+
+927
+01:17:38,069 --> 01:17:40,069
+o da message passing üzerinden
+
+928
+01:17:40,069 --> 01:17:42,069
+çalışıyor bir geri gelirsen
+
+929
+01:17:42,069 --> 01:17:44,069
+aslında cihan sana zahmet
+
+930
+01:17:44,069 --> 01:17:46,069
+şimdi şurada
+
+931
+01:17:46,069 --> 01:17:48,069
+orijinal mac körnülde
+
+932
+01:17:48,069 --> 01:17:50,069
+message passing üzerinden
+
+933
+01:17:50,069 --> 01:17:52,069
+remote procedure call
+
+934
+01:17:52,069 --> 01:17:54,069
+arayuzu var yani
+
+935
+01:17:54,069 --> 01:17:56,069
+zaten
+
+936
+01:17:56,069 --> 01:17:58,069
+bir mesaj gönderirken
+
+937
+01:17:58,069 --> 01:18:00,069
+o mesajla da ne yapılacağını
+
+938
+01:18:00,069 --> 01:18:02,069
+tarifleyip gönderirsen
+
+939
+01:18:02,069 --> 01:18:04,069
+o zaman karşı tarafta onun üzerinde
+
+940
+01:18:04,069 --> 01:18:06,069
+işlem yaptırmış ve sonucunu da geri
+
+941
+01:18:06,069 --> 01:18:08,069
+almış olursun o mantık
+
+942
+01:18:08,069 --> 01:18:10,069
+evet öyle
+
+943
+01:18:10,069 --> 01:18:12,069
+şimdi windows
+
+944
+01:18:12,069 --> 01:18:14,069
+bunu
+
+945
+01:18:14,069 --> 01:18:16,069
+sadece lokal olarak
+
+946
+01:18:16,069 --> 01:18:18,069
+düşünüyor lokalde gerçekleşebilir
+
+947
+01:18:18,069 --> 01:18:20,069
+diye düşünüyor ve
+
+948
+01:18:20,069 --> 01:18:22,069
+kendi körnülde
+
+949
+01:18:22,069 --> 01:18:24,069
+message passing arayuzunu
+
+950
+01:18:24,069 --> 01:18:26,069
+doğrudan lokal procedure
+
+951
+01:18:26,069 --> 01:18:28,069
+call'a map ediyor çünkü
+
+952
+01:18:28,069 --> 01:18:30,069
+windows'daki
+
+953
+01:18:30,069 --> 01:18:32,069
+distributed processing yapısı daha
+
+954
+01:18:32,069 --> 01:18:34,069
+farklı remote procedure
+
+955
+01:18:34,069 --> 01:18:36,069
+call farklı bir şekilde gerçekleştiriliyor
+
+956
+01:18:36,069 --> 01:18:38,069
+yani geneli
+
+957
+01:18:38,069 --> 01:18:40,069
+windows burada özelleştiriyor
+
+958
+01:18:40,069 --> 01:18:42,069
+evet lokalize bir şekilde
+
+959
+01:18:42,069 --> 01:18:44,069
+yapıyorlar
+
+960
+01:18:44,069 --> 01:18:46,069
+bu şeyine girmeye
+
+961
+01:18:46,069 --> 01:18:48,069
+gerek yok herhalde
+
+962
+01:18:48,069 --> 01:18:50,069
+girmeye gerek yok ama
+
+963
+01:18:50,069 --> 01:18:52,069
+şurada hani connection port
+
+964
+01:18:52,069 --> 01:18:54,069
+demiştik ya port allocate edilecek
+
+965
+01:18:54,069 --> 01:18:56,069
+yani bir tarafta
+
+966
+01:18:56,069 --> 01:18:58,069
+bir mailbox
+
+967
+01:18:58,069 --> 01:19:00,069
+oluşturuluyor
+
+968
+01:19:00,069 --> 01:19:02,069
+client'ın portundan
+
+969
+01:19:02,069 --> 01:19:04,069
+server'ın portuna
+
+970
+01:19:04,069 --> 01:19:06,069
+sanki çift yönlü şey varmış gibi
+
+971
+01:19:06,069 --> 01:19:08,069
+karşılıklı
+
+972
+01:19:08,069 --> 01:19:10,069
+oradan haberleşmeyi yapabilmek için
+
+973
+01:19:10,069 --> 01:19:12,069
+handle'lara ihtiyaçları var
+
+974
+01:19:12,069 --> 01:19:14,069
+sonunda da
+
+975
+01:19:14,069 --> 01:19:16,069
+paylaşım
+
+976
+01:19:16,069 --> 01:19:18,069
+başlıyor zaten
+
+977
+01:19:18,069 --> 01:19:20,069
+ilk dersin başında
+
+978
+01:19:20,069 --> 01:19:22,069
+söylediğimiz bunlara da
+
+979
+01:19:22,069 --> 01:19:24,069
+geleceğiz dediğimiz soketler
+
+980
+01:19:24,069 --> 01:19:26,069
+aslında baktığınız zaman
+
+981
+01:19:26,069 --> 01:19:28,069
+client server mimarasında
+
+982
+01:19:28,069 --> 01:19:30,069
+haberleşme yapacaksınız
+
+983
+01:19:30,069 --> 01:19:32,069
+temelde kullanacağınız şey
+
+984
+01:19:32,069 --> 01:19:34,069
+soketler ve remote procedure
+
+985
+01:19:34,069 --> 01:19:36,069
+call kısmı
+
+986
+01:19:36,069 --> 01:19:38,069
+tabi java'da isim
+
+987
+01:19:38,069 --> 01:19:40,069
+remote method invocation
+
+988
+01:19:40,069 --> 01:19:42,069
+oluyor
+
+989
+01:19:42,069 --> 01:19:44,069
+pipes ise client server mimarisinde
+
+990
+01:19:44,069 --> 01:19:46,069
+ama daha lokal bir mimaride
+
+991
+01:19:46,069 --> 01:19:48,069
+çalışabilir bir yapı
+
+992
+01:19:48,069 --> 01:19:50,069
+soketten başlayacak olursak
+
+993
+01:19:50,069 --> 01:19:52,069
+network tarafında
+
+994
+01:19:52,069 --> 01:19:54,069
+zaten
+
+995
+01:19:54,069 --> 01:19:56,069
+bilgisayar ağları dersinde
+
+996
+01:19:56,069 --> 01:19:58,069
+ya da ağ teknoloji
+
+997
+01:19:58,069 --> 01:20:00,069
+pardon bilgisayar ağları değil ağ teknoloji dersinde
+
+998
+01:20:00,069 --> 01:20:02,069
+zaten daha detayını konuşuyoruz
+
+999
+01:20:02,069 --> 01:20:04,069
+transport seviyesinde
+
+1000
+01:20:04,069 --> 01:20:06,069
+neyimiz var
+
+1001
+01:20:06,069 --> 01:20:08,069
+bir adresimiz var
+
+1002
+01:20:08,069 --> 01:20:10,069
+port diyoruz
+
+1003
+01:20:10,069 --> 01:20:12,069
+port üzerinden
+
+1004
+01:20:12,069 --> 01:20:14,069
+haberleşmek için
+
+1005
+01:20:14,069 --> 01:20:16,069
+client server mimarisinde
+
+1006
+01:20:16,069 --> 01:20:18,069
+iki farklı 3. seviye
+
+1007
+01:20:18,069 --> 01:20:20,069
+adreslerin arkasında
+
+1008
+01:20:20,069 --> 01:20:22,069
+port dediğimiz 4. seviye
+
+1009
+01:20:22,069 --> 01:20:24,069
+adresle ilişkilendirdiğimiz
+
+1010
+01:20:24,069 --> 01:20:26,069
+bir soketimiz var
+
+1011
+01:20:26,069 --> 01:20:28,069
+bu soket üzerinden de
+
+1012
+01:20:28,069 --> 01:20:30,069
+haberleşmeyi sağlıyoruz
+
+1013
+01:20:30,069 --> 01:20:32,069
+çift yönlü olarak sağlıyoruz
+
+1014
+01:20:32,069 --> 01:20:34,069
+3. seviye adresi değil IP adresi
+
+1015
+01:20:34,069 --> 01:20:36,069
+4. seviye adresi de
+
+1016
+01:20:36,069 --> 01:20:38,069
+4. seviyesindeki adres
+
+1017
+01:20:38,069 --> 01:20:40,069
+dolayısıyla port numarası
+
+1018
+01:20:40,069 --> 01:20:43,960
+yani burada
+
+1019
+01:20:43,960 --> 01:20:45,960
+daha fazla aslında
+
+1020
+01:20:45,960 --> 01:20:47,960
+işte iki tarafta
+
+1021
+01:20:47,960 --> 01:20:49,960
+iki tarafta aslında
+
+1022
+01:20:49,960 --> 01:20:51,960
+soket lokalde
+
+1023
+01:20:51,960 --> 01:20:53,960
+bağlantı noktasını ifade ediyor
+
+1024
+01:20:53,960 --> 01:20:55,960
+arada demiştik ya
+
+1025
+01:20:55,960 --> 01:20:57,960
+message passing'de
+
+1026
+01:20:57,960 --> 01:20:59,960
+shared memory kullanılabilir
+
+1027
+01:20:59,960 --> 01:21:01,960
+özel bir hardware bus
+
+1028
+01:21:01,960 --> 01:21:03,960
+kullanılabilir veya bu örnekte
+
+1029
+01:21:03,960 --> 01:21:05,960
+olduğu gibi bir network protokolü
+
+1030
+01:21:05,960 --> 01:21:07,960
+kullanılabilir bu örnekteki
+
+1031
+01:21:07,960 --> 01:21:09,960
+network protokolü TCP IP
+
+1032
+01:21:09,960 --> 01:21:11,960
+ama tek bu kullanılmak zorunda değil
+
+1033
+01:21:11,960 --> 01:21:13,960
+başka kullanılmış zamanında
+
+1034
+01:21:13,960 --> 01:21:15,960
+kullanılmış kendi dönemlerinde
+
+1035
+01:21:15,960 --> 01:21:17,960
+yaygın olan başka network protokolleri de var
+
+1036
+01:21:17,960 --> 01:21:19,960
+zaten burada soket aslında
+
+1037
+01:21:19,960 --> 01:21:21,960
+her iki taraf
+
+1038
+01:21:21,960 --> 01:21:23,960
+içinde kendi IP adresi
+
+1039
+01:21:23,960 --> 01:21:25,960
+port numarası karşı tarafın IP adresi
+
+1040
+01:21:25,960 --> 01:21:27,960
+ve karşı tarafın port numarası
+
+1041
+01:21:27,960 --> 01:21:29,960
+içeren bir hani
+
+1042
+01:21:29,960 --> 01:21:31,960
+dörtlü bilgi
+
+1043
+01:21:31,960 --> 01:21:33,960
+yapıp
+
+1044
+01:21:33,960 --> 01:21:35,960
+devam edelim
+
+1045
+01:21:35,960 --> 01:21:40,010
+remote procedure call
+
+1046
+01:21:40,010 --> 01:21:42,010
+yani
+
+1047
+01:21:42,010 --> 01:21:44,010
+sonuçta network
+
+1048
+01:21:44,010 --> 01:21:46,010
+halinde bir
+
+1049
+01:21:46,010 --> 01:21:48,010
+ağ yapınız varsa
+
+1050
+01:21:48,010 --> 01:21:50,010
+hani bu işi soket programlamı üzerinden
+
+1051
+01:21:50,010 --> 01:21:52,010
+yapmak yerine bir alternatif
+
+1052
+01:21:52,010 --> 01:21:54,010
+remote procedure call ile yapmak
+
+1053
+01:21:54,010 --> 01:21:56,010
+ama eskiden
+
+1054
+01:21:56,010 --> 01:21:58,010
+soket programlamanın bugünkü kadar
+
+1055
+01:21:58,010 --> 01:22:00,010
+yaygınlaşmaması öncesinde
+
+1056
+01:22:00,010 --> 01:22:02,010
+en yaygın olarak
+
+1057
+01:22:02,010 --> 01:22:04,010
+kullanılan yöntem remote
+
+1058
+01:22:04,010 --> 01:22:06,010
+procedure call yöntemiydi
+
+1059
+01:22:06,010 --> 01:22:08,010
+object oriented ile beraber
+
+1060
+01:22:08,010 --> 01:22:10,010
+az önce söyledik remote method invocation
+
+1061
+01:22:10,010 --> 01:22:12,010
+haline dönüştü
+
+1062
+01:22:12,010 --> 01:22:14,010
+ki Java ile
+
+1063
+01:22:14,010 --> 01:22:16,010
+beraber de çok yaygın bir hale geldi
+
+1064
+01:22:16,010 --> 01:22:18,010
+günümüzde de hala da kullanılıyor
+
+1065
+01:22:18,010 --> 01:22:20,010
+arkada
+
+1066
+01:22:20,010 --> 01:22:22,010
+bu işin arkasında yatan temel
+
+1067
+01:22:22,010 --> 01:22:24,010
+fikir şu zaten birbirinden
+
+1068
+01:22:24,010 --> 01:22:26,010
+uzak iki process arasında
+
+1069
+01:22:26,010 --> 01:22:28,010
+bir mesaj gönderiyorsam
+
+1070
+01:22:28,010 --> 01:22:30,010
+bu mesajı boşa göndermiyorum
+
+1071
+01:22:30,010 --> 01:22:32,010
+onun üzerinde bir işlem yapılsın
+
+1072
+01:22:32,010 --> 01:22:34,010
+ve buna bağlı olarak da bir sonuç
+
+1073
+01:22:34,010 --> 01:22:36,010
+döndürülsün diye gönderiyorum
+
+1074
+01:22:36,010 --> 01:22:38,010
+işte hani client soruların
+
+1075
+01:22:38,010 --> 01:22:40,010
+arka tarafındaki şey request
+
+1076
+01:22:40,010 --> 01:22:42,010
+response istek gönderdim cevap
+
+1077
+01:22:42,010 --> 01:22:44,010
+aldım o durumda
+
+1078
+01:22:44,010 --> 01:22:46,010
+sadece mesaj göndermiş
+
+1079
+01:22:46,010 --> 01:22:48,010
+olmakla kalmayalım
+
+1080
+01:22:48,010 --> 01:22:50,010
+mesajı işleyecek olan
+
+1081
+01:22:50,010 --> 01:22:52,010
+karşı taraftaki
+
+1082
+01:22:52,010 --> 01:22:54,010
+procedürü metodu da
+
+1083
+01:22:54,010 --> 01:22:56,010
+belirtelim tabii ki
+
+1084
+01:22:56,010 --> 01:22:58,010
+lokalde bunun adını biliyor olmam
+
+1085
+01:22:58,010 --> 01:23:00,010
+lazım ki karşı tarafta ne çağıracağımı
+
+1086
+01:23:00,010 --> 01:23:02,010
+neyin çağırılması gerektiğini söyleyelim
+
+1087
+01:23:04,010 --> 01:23:06,010
+yani bu
+
+1088
+01:23:06,010 --> 01:23:08,010
+kavram kapsamında
+
+1089
+01:23:08,010 --> 01:23:10,010
+remote procedure call ve hatta
+
+1090
+01:23:10,010 --> 01:23:12,010
+remote method invocation kapsamında
+
+1091
+01:23:12,010 --> 01:23:14,010
+lokalde ismini bildiğin
+
+1092
+01:23:14,010 --> 01:23:16,010
+ve karşı tarafa
+
+1093
+01:23:16,010 --> 01:23:18,010
+hem mesajın aktarılmasını
+
+1094
+01:23:18,010 --> 01:23:20,010
+sağlayan hem de
+
+1095
+01:23:20,010 --> 01:23:22,010
+ilgili karşı taraftaki metodun
+
+1096
+01:23:22,010 --> 01:23:24,010
+procedürün çağırılmasını sağlayan
+
+1097
+01:23:24,010 --> 01:23:26,010
+ama gerçekte implementasyonu
+
+1098
+01:23:26,010 --> 01:23:28,010
+karşı tarafta olan o gölge
+
+1099
+01:23:28,010 --> 01:23:30,010
+yapıya stop diyoruz
+
+1100
+01:23:30,010 --> 01:23:32,010
+stop nedir
+
+1101
+01:23:32,010 --> 01:23:34,010
+hani bu elmanın şeyin falan
+
+1102
+01:23:34,010 --> 01:23:36,010
+böyle uç kısmı vardır ya yersiniz
+
+1103
+01:23:36,010 --> 01:23:38,010
+sap kısmı vardır ya dışarıdan görünen kendisi
+
+1104
+01:23:38,010 --> 01:23:40,010
+değildir aslında
+
+1105
+01:23:40,010 --> 01:23:42,010
+network dünyasında da buna
+
+1106
+01:23:42,010 --> 01:23:44,010
+proxy diyoruz yani proxy eşittir
+
+1107
+01:23:44,010 --> 01:23:46,010
+stop benim tarafımda
+
+1108
+01:23:46,010 --> 01:23:48,010
+görünen kısım
+
+1109
+01:23:48,010 --> 01:23:50,010
+parametrelerin şunları
+
+1110
+01:23:50,010 --> 01:23:52,010
+teknik olarak söyleyelim ki
+
+1111
+01:23:52,010 --> 01:23:54,010
+Ceyhan parametrenin
+
+1112
+01:23:54,010 --> 01:23:56,010
+lokalden
+
+1113
+01:23:56,010 --> 01:23:58,010
+uzakta kullanılabilecek şekilde
+
+1114
+01:23:58,010 --> 01:24:00,010
+paketlenmesine marshaling
+
+1115
+01:24:00,010 --> 01:24:02,010
+deniyor
+
+1116
+01:24:02,010 --> 01:24:04,010
+burada yaptığım zaman marshal oluyor
+
+1117
+01:24:04,010 --> 01:24:06,010
+öbür tarafta unmarshal oluyor
+
+1118
+01:24:06,010 --> 01:24:08,010
+şimdi java'ya
+
+1119
+01:24:08,010 --> 01:24:10,010
+geçtiğiniz zaman buna
+
+1120
+01:24:10,010 --> 01:24:12,010
+serialize ve deserialize
+
+1121
+01:24:12,010 --> 01:24:14,010
+diyoruz hepsi aynı şeyi
+
+1122
+01:24:14,010 --> 01:24:16,010
+ifade ediyor özellikle anlatıyorum ki
+
+1123
+01:24:16,010 --> 01:24:18,010
+hani karşılaşırsa arkadaşlar
+
+1124
+01:24:18,010 --> 01:24:20,010
+bize söylenmedi şey olmadı
+
+1125
+01:24:20,010 --> 01:24:22,010
+olmasın
+
+1126
+01:24:22,010 --> 01:24:24,010
+okey devam
+
+1127
+01:24:26,010 --> 01:24:28,010
+RPC çağrımının
+
+1128
+01:24:28,010 --> 01:24:30,010
+buna bakarsınız az önce çünkü
+
+1129
+01:24:30,010 --> 01:24:32,010
+ayrıntılarını uzun uzun anlattık
+
+1130
+01:24:32,010 --> 01:24:34,010
+nasıl olduğunu işte lokal
+
+1131
+01:24:34,010 --> 01:24:36,010
+pipe kısmı aslında şey
+
+1132
+01:24:36,010 --> 01:24:38,010
+Ahmet Hoca'nıza yapacağınız uygulamada daha detaylı
+
+1133
+01:24:38,010 --> 01:24:40,010
+göreceksiniz ama
+
+1134
+01:24:40,010 --> 01:24:42,010
+Unix
+
+1135
+01:24:42,010 --> 01:24:44,010
+tarihinde ilk
+
+1136
+01:24:44,010 --> 01:24:46,010
+şey yapılan inter process communication
+
+1137
+01:24:46,010 --> 01:24:48,010
+için ortaya atılan yapılardan
+
+1138
+01:24:48,010 --> 01:24:50,010
+bir tanesi
+
+1139
+01:24:50,010 --> 01:24:52,010
+hatta sonrasında bir de fifo
+
+1140
+01:24:52,010 --> 01:24:54,010
+kavramı var named pipe diye geçen
+
+1141
+01:24:54,010 --> 01:24:56,010
+olarak isimlendirilen bir kavram var
+
+1142
+01:24:56,010 --> 01:24:58,010
+çünkü pipeler aslında
+
+1143
+01:24:58,010 --> 01:25:00,010
+ilk
+
+1144
+01:25:00,010 --> 01:25:02,010
+ortaya atıldıklarında sadece
+
+1145
+01:25:02,010 --> 01:25:04,010
+birbirleriyle doğrudan ilişkisi
+
+1146
+01:25:04,010 --> 01:25:06,010
+olan işlemler arasında kullanılabilmek
+
+1147
+01:25:06,010 --> 01:25:08,010
+üzere tanımlanmış
+
+1148
+01:25:08,010 --> 01:25:10,010
+bu doğrudan ilişkide aslında
+
+1149
+01:25:10,010 --> 01:25:12,010
+parent-child olarak tarifliyoruz
+
+1150
+01:25:12,010 --> 01:25:14,010
+şeyi hatırlayın processlerle ilgili konuştuk
+
+1151
+01:25:14,010 --> 01:25:16,010
+ne yapıyoruz bir işlemin
+
+1152
+01:25:16,010 --> 01:25:18,010
+oluşturulması için möncük işlemden
+
+1153
+01:25:18,010 --> 01:25:20,010
+fork sistem çağrısını
+
+1154
+01:25:20,010 --> 01:25:22,010
+çağrıyoruz bu çağrı
+
+1155
+01:25:22,010 --> 01:25:24,010
+yeni bir işlem daha oluşuyor
+
+1156
+01:25:24,010 --> 01:25:26,010
+birinci işlemle bire bir
+
+1157
+01:25:26,010 --> 01:25:28,010
+aynı özelliklere sahip
+
+1158
+01:25:28,010 --> 01:25:30,010
+aslında siz bu çağrı
+
+1159
+01:25:30,010 --> 01:25:32,010
+işlemine fork'u çağırmadan
+
+1160
+01:25:32,010 --> 01:25:34,010
+önce bu çağrı işlemini yapmadan önce
+
+1161
+01:25:34,010 --> 01:25:36,010
+bir tane pipe
+
+1162
+01:25:36,010 --> 01:25:38,010
+oluşturuyorsunuz
+
+1163
+01:25:38,010 --> 01:25:40,010
+çağrı yaptığınız zaman aynı
+
+1164
+01:25:40,010 --> 01:25:42,010
+pipe yeni oluşan işlemin
+
+1165
+01:25:42,010 --> 01:25:44,010
+bünyesinde de oluyor
+
+1166
+01:25:44,010 --> 01:25:46,010
+dolayısıyla bunu da
+
+1167
+01:25:46,010 --> 01:25:48,010
+pipe'ı da
+
+1168
+01:25:48,010 --> 01:25:50,010
+ismi zaten boru iki ucu olan
+
+1169
+01:25:50,010 --> 01:25:52,010
+boru şeklinde düşünün
+
+1170
+01:25:52,010 --> 01:25:54,010
+bir taraftan bilgi yazıp
+
+1171
+01:25:54,010 --> 01:25:56,010
+bir taraftan bilgiyi okuyorsunuz
+
+1172
+01:25:56,010 --> 01:25:58,010
+bunu yapabilmek için de
+
+1173
+01:25:58,010 --> 01:26:00,010
+artık hangi yönde çalışacaksınız
+
+1174
+01:26:00,010 --> 01:26:02,010
+bu yapı tek yönlü
+
+1175
+01:26:02,010 --> 01:26:04,010
+bir taraftaki
+
+1176
+01:26:04,010 --> 01:26:06,010
+ucu kapatıyorsunuz
+
+1177
+01:26:06,010 --> 01:26:08,010
+diğer taraftaki ucu açık bırakıyorsunuz
+
+1178
+01:26:08,010 --> 01:26:10,010
+böylece tek yönlü bir
+
+1179
+01:26:10,010 --> 01:26:12,010
+haberleşme şeyi oluşturuyorsunuz
+
+1180
+01:26:12,010 --> 01:26:14,010
+bununla ilgili bir grafik
+
+1181
+01:26:14,010 --> 01:26:16,010
+olması lazım oraya
+
+1182
+01:26:16,010 --> 01:26:18,010
+bir sonrakiinde bu daha
+
+1183
+01:26:18,010 --> 01:26:20,010
+iyi anlamınızı sağlayacak
+
+1184
+01:26:20,010 --> 01:26:22,010
+normalde parent üzerinde bu pipe'ı
+
+1185
+01:26:22,010 --> 01:26:24,010
+oluşturduğunuz zaman dikkat edin
+
+1186
+01:26:24,010 --> 01:26:26,010
+fd0 ve fd1 diye iki tane
+
+1187
+01:26:26,010 --> 01:26:28,010
+file descriptor var
+
+1188
+01:26:28,010 --> 01:26:30,010
+biri pipe'ın sol tarafını
+
+1189
+01:26:30,010 --> 01:26:32,010
+bir de pipe'ın sağ tarafını
+
+1190
+01:26:32,010 --> 01:26:34,010
+gösteriyor
+
+1191
+01:26:34,010 --> 01:26:36,010
+pipe'ı ilk oluşturduğunuzda böyle bir durum var
+
+1192
+01:26:36,010 --> 01:26:38,010
+bir adım sonra
+
+1193
+01:26:38,010 --> 01:26:40,010
+fork'u yaptığınız zaman child'da da
+
+1194
+01:26:40,010 --> 01:26:42,010
+bu file descriptor'lar aynı şekilde
+
+1195
+01:26:42,010 --> 01:26:44,010
+mevcut yani ikisi de pipe'ın iki
+
+1196
+01:26:44,010 --> 01:26:46,010
+tarafını yazıp iki tarafına
+
+1197
+01:26:46,010 --> 01:26:48,010
+okuma yapabiliyorlar
+
+1198
+01:26:48,010 --> 01:26:50,010
+ve fakat bağlantıları var
+
+1199
+01:26:50,010 --> 01:26:52,010
+bu çok mantıklı değil
+
+1200
+01:26:52,010 --> 01:26:54,010
+çünkü ikisi de aynı yere yazarsa
+
+1201
+01:26:54,010 --> 01:26:56,010
+ortalık birbirine girecek
+
+1202
+01:26:56,010 --> 01:26:58,010
+dolayısıyla işin doğası gereği bunu
+
+1203
+01:26:58,010 --> 01:27:00,010
+unidirectional hale getirmek lazım
+
+1204
+01:27:00,010 --> 01:27:02,010
+sizin amacınız
+
+1205
+01:27:02,010 --> 01:27:04,010
+child'ın
+
+1206
+01:27:04,010 --> 01:27:06,010
+producer parent'ın
+
+1207
+01:27:06,010 --> 01:27:08,010
+consumer olması ise
+
+1208
+01:27:08,010 --> 01:27:10,010
+ona bağlı olarak ilgili
+
+1209
+01:27:10,010 --> 01:27:12,010
+uçları kesiyorsunuz
+
+1210
+01:27:12,010 --> 01:27:14,010
+kırpıyorsunuz
+
+1211
+01:27:14,010 --> 01:27:16,010
+tamam pardon
+
+1212
+01:27:20,010 --> 01:27:22,010
+şimdi
+
+1213
+01:27:22,010 --> 01:27:25,319
+burada aslında
+
+1214
+01:27:25,319 --> 01:27:27,319
+hileyle bu iş gerçekleştiriliyor
+
+1215
+01:27:27,319 --> 01:27:29,319
+biraz böyle akıllı bir yapı
+
+1216
+01:27:29,319 --> 01:27:31,319
+oluşturalım şeklinde
+
+1217
+01:27:31,319 --> 01:27:33,319
+hileli bir şekilde az önce cihan hocasın
+
+1218
+01:27:33,319 --> 01:27:35,319
+dediği gibi process'in kopyasını
+
+1219
+01:27:35,319 --> 01:27:37,319
+aldığımda fork ile
+
+1220
+01:27:37,319 --> 01:27:39,319
+process'teki bütün veri yapıları
+
+1221
+01:27:39,319 --> 01:27:41,319
+işletim sistemi tarafından
+
+1222
+01:27:41,319 --> 01:27:43,319
+tanımlanmış olan yapılar aynen
+
+1223
+01:27:43,319 --> 01:27:45,319
+child'a da geçiyor
+
+1224
+01:27:45,319 --> 01:27:47,319
+ama şu grafik çok net gösteriyor ki
+
+1225
+01:27:47,319 --> 01:27:49,319
+bunu bu haliyle
+
+1226
+01:27:49,319 --> 01:27:51,319
+olduğu gibi kullanmak istersen
+
+1227
+01:27:51,319 --> 01:27:53,319
+kargaşaya sebep olacağım
+
+1228
+01:27:53,319 --> 01:27:55,319
+ondan ötürü benim aslında ne yapmam lazım
+
+1229
+01:27:55,319 --> 01:27:57,319
+iki tane pipe oluşturmam lazım
+
+1230
+01:27:57,319 --> 01:27:59,319
+bir pipe
+
+1231
+01:27:59,319 --> 01:28:01,319
+iki taraflı konuşacaksak
+
+1232
+01:28:01,319 --> 01:28:03,319
+bir direction olacaksak
+
+1233
+01:28:03,319 --> 01:28:05,319
+orada bir hile daha yapıp
+
+1234
+01:28:05,319 --> 01:28:07,319
+pipeline'i iki tane tanımlıyoruz
+
+1235
+01:28:07,319 --> 01:28:09,319
+bu şekilde aslında elimizde iki tane var
+
+1236
+01:28:09,319 --> 01:28:11,319
+birini parent'tan child'a doğru haberleşmek için
+
+1237
+01:28:11,319 --> 01:28:13,319
+diğerini child'tan parent'a doğru haberleşmek için
+
+1238
+01:28:13,319 --> 01:28:15,319
+uygun olacak şekilde
+
+1239
+01:28:15,319 --> 01:28:17,319
+bu file descriptorların bir kısmını
+
+1240
+01:28:17,319 --> 01:28:19,319
+kapatıyoruz
+
+1241
+01:28:19,319 --> 01:28:21,319
+parent'da
+
+1242
+01:28:21,319 --> 01:28:23,319
+0 neydi input'tu
+
+1243
+01:28:23,319 --> 01:28:25,319
+1 neydi output'tu
+
+1244
+01:28:25,319 --> 01:28:27,319
+if child ile parent arasında
+
+1245
+01:28:27,319 --> 01:28:29,319
+haberleşme olmasını istiyorsan
+
+1246
+01:28:29,319 --> 01:28:31,319
+parent'da 0 açık bırakacağım
+
+1247
+01:28:31,319 --> 01:28:33,319
+child'da 1'i açık bırakacağım
+
+1248
+01:28:33,319 --> 01:28:35,319
+ki child'tan yazdığımda parent'ın
+
+1249
+01:28:35,319 --> 01:28:37,319
+0'ndan bu çıksın
+
+1250
+01:28:37,319 --> 01:28:39,319
+tam tersini yapacaksam
+
+1251
+01:28:39,319 --> 01:28:41,319
+parent'tan child'a göndereceksem
+
+1252
+01:28:41,319 --> 01:28:43,319
+parent'a 1'i açık bırakacağım
+
+1253
+01:28:43,319 --> 01:28:45,319
+child'ta da 0 açık bırakacağım
+
+1254
+01:28:45,319 --> 01:28:47,319
+ama hiçbir şekilde
+
+1255
+01:28:47,319 --> 01:28:49,319
+Ahmet hocanızla da yapacağınız örneklerde göreceksiniz
+
+1256
+01:28:49,319 --> 01:28:51,319
+her iki tarafta da her ikisinin açık olması
+
+1257
+01:28:51,319 --> 01:28:53,319
+söz konusu olamaz
+
+1258
+01:28:53,319 --> 01:28:55,319
+çift yönle haberleşmek için bundan iki tane yapmanız lazım
+
+1259
+01:28:55,319 --> 01:28:57,319
+evet
+
+1260
+01:28:57,319 --> 01:28:59,319
+bunun bir sonraki adımı
+
+1261
+01:28:59,319 --> 01:29:01,319
+name pipe diye geçiyor
+
+1262
+01:29:01,319 --> 01:29:03,319
+ama aslında daha yaygın ve bilinen
+
+1263
+01:29:03,319 --> 01:29:05,319
+ismi FIFO
+
+1264
+01:29:05,319 --> 01:29:09,319
+neden böyle bir isimlendirme var
+
+1265
+01:29:09,319 --> 01:29:11,319
+şundan dolayı normalde pipe mekanizmasına
+
+1266
+01:29:11,319 --> 01:29:13,319
+aralarında parent-child
+
+1267
+01:29:13,319 --> 01:29:15,319
+ilişkisi olmayan
+
+1268
+01:29:15,319 --> 01:29:17,319
+herhangi bir
+
+1269
+01:29:17,319 --> 01:29:19,319
+herhangi iki işlem arasında
+
+1270
+01:29:19,319 --> 01:29:21,319
+kullanmanız mümkün değil
+
+1271
+01:29:21,319 --> 01:29:23,319
+çünkü pipe'a referans verebileceğiniz
+
+1272
+01:29:23,319 --> 01:29:25,319
+bir isim yok
+
+1273
+01:29:25,319 --> 01:29:27,319
+kalıcılığı olan bir
+
+1274
+01:29:27,319 --> 01:29:29,319
+yapı değil
+
+1275
+01:29:29,319 --> 01:29:31,319
+proses içinde kalıcılığı olan bir yapı
+
+1276
+01:29:31,319 --> 01:29:33,319
+name pipe yani
+
+1277
+01:29:33,319 --> 01:29:35,319
+FIFO dediğimiz yapı
+
+1278
+01:29:35,319 --> 01:29:37,319
+name denmesinin dediğinin şu
+
+1279
+01:29:37,319 --> 01:29:39,319
+aslında bir ismi var
+
+1280
+01:29:39,319 --> 01:29:41,319
+ve bu isim üzerinden referans göstererek
+
+1281
+01:29:41,319 --> 01:29:43,319
+birbiriyle doğrudan alakası olmayan
+
+1282
+01:29:43,319 --> 01:29:45,319
+yani parent-child ilişkisi olmayan
+
+1283
+01:29:45,319 --> 01:29:47,319
+işlemlerde bu yapıyı kullanabiliyorlar
+
+1284
+01:29:47,319 --> 01:29:49,319
+bir diğer şey
+
+1285
+01:29:49,319 --> 01:29:51,319
+burada haberleşme
+
+1286
+01:29:51,319 --> 01:29:53,319
+unidirectional değil
+
+1287
+01:29:53,319 --> 01:29:55,319
+bidirectional
+
+1288
+01:29:55,319 --> 01:29:57,319
+işletim sisteminde
+
+1289
+01:29:57,319 --> 01:29:59,319
+bir file
+
+1290
+01:29:59,319 --> 01:30:01,319
+aslında pipe'ın giriş-çıkış noktası
+
+1291
+01:30:01,319 --> 01:30:03,319
+giriş noktası olarak
+
+1292
+01:30:03,319 --> 01:30:05,319
+aynen
+
+1293
+01:30:05,319 --> 01:30:07,319
+file sistem üzerinden gelip geçtiriliyor
+
+1294
+01:30:07,319 --> 01:30:09,319
+ama file sistemde
+
+1295
+01:30:09,319 --> 01:30:11,319
+tutulmuyor veri
+
+1296
+01:30:11,319 --> 01:30:13,319
+kernel bunu bildiği için
+
+1297
+01:30:13,319 --> 01:30:15,319
+oraya yazılanı
+
+1298
+01:30:15,319 --> 01:30:17,319
+memori üzerinden
+
+1299
+01:30:17,319 --> 01:30:19,319
+diğer prosese aktarıyor
+
+1300
+01:30:19,319 --> 01:30:21,319
+aynı şekilde diğer prosesden geleni
+
+1301
+01:30:21,319 --> 01:30:23,319
+memori üzerinden
+
+1302
+01:30:23,319 --> 01:30:25,319
+yani iki proses arasında
+
+1303
+01:30:25,319 --> 01:30:27,319
+memori üzerinden onlar
+
+1304
+01:30:27,319 --> 01:30:29,319
+sanki file yazıyormuşçasına
+
+1305
+01:30:29,319 --> 01:30:31,319
+hareket etmelerine rağmen
+
+1306
+01:30:31,319 --> 01:30:33,319
+memori üzerinden haberleşmiş oluyoruz
+
+1307
+01:30:33,319 --> 01:30:35,319
+şeyde yanlış hatırlamıyorsam
+
+1308
+01:30:35,319 --> 01:30:37,319
+zaten konu bitiyor
+
+1309
+01:30:39,319 --> 01:30:41,319
+yani Unix'te
+
+1310
+01:30:41,319 --> 01:30:43,319
+pipe tipindeki filelarda
+
+1311
+01:30:43,319 --> 01:30:45,319
+P yazar
+
+1312
+01:30:45,319 --> 01:30:47,319
+yani nasıl karakter olanlar
+
+1313
+01:30:47,319 --> 01:30:49,319
+C yazar
+
+1314
+01:30:49,319 --> 01:30:51,319
+S yazar
+
+1315
+01:30:51,319 --> 01:30:53,319
+özelliklerine bakıyor
+
+1316
+01:30:53,319 --> 01:30:55,319
+aslında o file sistemde
+
+1317
+01:30:55,319 --> 01:30:57,319
+gözükmesine rağmen
+
+1318
+01:30:57,319 --> 01:30:59,319
+Persistency kernel
+
+1319
+01:30:59,319 --> 01:31:01,319
+seviyesinde olması lazım
+
+1320
+01:31:01,319 --> 01:31:03,319
+tabi tabi yani sistem
+
+1321
+01:31:03,319 --> 01:31:05,319
+restart etse bile
+
+1322
+01:31:05,319 --> 01:31:07,319
+named bir pipe
+
+1323
+01:31:07,319 --> 01:31:09,319
+yok edilmez orada yaşamaya devam eder
+
+1324
+01:31:09,319 --> 01:31:11,319
+erişim haklarına bağlı olarak
+
+1325
+01:31:11,319 --> 01:31:13,319
+prosesler eğer o named pipe'ı
+
+1326
+01:31:13,319 --> 01:31:15,319
+okuyabiliyor veya yazabiliyorsa
+
+1327
+01:31:15,319 --> 01:31:17,319
+ama pipe'ın kendisi yok olmuyor
+
+1328
+01:31:17,319 --> 01:31:19,319
+yani mesajlar
+
+1329
+01:31:19,319 --> 01:31:21,319
+kernel seviyesi
+
+1330
+01:31:21,319 --> 01:31:23,319
+pipe'ın kendisi file system seviyesi
+
+1331
+01:31:23,319 --> 01:31:25,319
+evet
+
+1332
+01:31:25,319 --> 01:31:27,319
+evet
+
+1333
+01:31:27,319 --> 01:31:29,319
+şimdi bundan sonraki konumuz
+
+1334
+01:31:29,319 --> 01:31:31,319
+aslında threadler orayı bu hafta geçelim mi?
+
+1335
+01:31:31,319 --> 01:31:33,319
+haftaya başlayalım bence
+
+1336
+01:31:33,319 --> 01:31:35,319
+haftaya başlayalım temiz olsun böyle başlayıp
+
+1337
+01:31:35,319 --> 01:31:37,319
+yarım kalmasın en azından bugün burayı
+
+1338
+01:31:37,319 --> 01:31:39,319
+paket bir paket halinde bitirdik zaten
+
+1339
+01:31:39,319 --> 01:31:41,319
+şimdi saat üçte laboratlarınız var
+
+1340
+01:31:41,319 --> 01:31:43,319
+siz de biraz soluklanın
+
+1341
+01:31:43,319 --> 01:31:45,319
+koştur koştur buradan oraya olmasın
+
+1342
+01:31:45,319 --> 01:31:47,319
+şimdi burada duralım varsa bir sorunuz
+
+1343
+01:31:47,319 --> 01:31:54,979
+onu alalım
+
+1344
+01:31:54,979 --> 01:31:56,979
+müğüt edip konuşmadık değil mi?
+
+1345
+01:31:56,979 --> 01:31:58,979
+yani gelmeyince
+
+1346
+01:31:58,979 --> 01:32:00,979
+çocuklar bağlı değil mi?
+
+1347
+01:32:00,979 --> 01:32:02,979
+bilemiyorum
+
+1348
+01:32:02,979 --> 01:32:04,979
+neyse o zaman sizde de
+
+1349
+01:32:04,979 --> 01:32:06,979
+herkese de
+
+1350
+01:32:06,979 --> 01:32:08,979
+iyi günler
+
+1351
+01:32:08,979 --> 01:32:10,979
+sorun mu geldi?
+
+1352
+01:32:10,979 --> 01:32:12,979
+hocam çok teşekkürler
+
+1353
+01:32:12,979 --> 01:32:14,979
+hepinize iyi günler
+
+1354
+01:32:14,979 --> 01:32:16,979
+görüşmek üzere arkadaşlar
+
+1355
+01:32:16,979 --> 01:32:18,979
+sağlıcakla kalın
+
+1356
+01:32:18,979 --> 01:32:22,300
+geçmiş olsun
+
+1357
+01:32:22,300 --> 01:32:24,300
+sağ olun hocam

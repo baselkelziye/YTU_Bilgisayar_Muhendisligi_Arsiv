@@ -1,0 +1,3668 @@
+1
+00:00:00,240 --> 00:00:03,779
+Sayısının artması, katılımcılarının artması için bekliyorum.
+
+2
+00:00:03,779 --> 00:00:08,519
+Şu an 17 kişi var Büyük Hava'nda. Gökhan Hoca'nın grup da hızlıca artıyor.
+
+3
+00:00:08,519 --> 00:00:13,480
+Biraz bekleyelim 3-5 dakika sonra başlayacağız.
+
+4
+00:00:13,480 --> 00:07:19,300
+Benim grup, ekran görünüyor mu?
+
+5
+00:07:19,300 --> 00:07:24,100
+Cihan Hoca'nın grubu gördüğünü söyledi. Siz de görüyor musunuz?
+
+6
+00:07:24,100 --> 00:07:25,860
+Bakayım ne yazdınız?
+
+7
+00:07:26,860 --> 00:07:30,860
+Evet süper arkadaşlar şimdi başlıyoruz.
+
+8
+00:07:30,860 --> 00:07:35,860
+Şimdi geçen hafta kaldığımız yerden devam edeceğiz.
+
+9
+00:07:35,860 --> 00:07:40,860
+Senkronizasyon problemini işliyoruz hatırlarsanız.
+
+10
+00:07:40,860 --> 00:07:46,860
+Ne geldi? Uyanın geldi bir tane.
+
+11
+00:07:46,860 --> 00:07:49,860
+Hocam sınav haftaya mı?
+
+12
+00:07:49,860 --> 00:07:52,860
+Bir saniye arkadaşlar, bir dakika. Hocam bir mühitte alalım.
+
+13
+00:07:53,860 --> 00:08:46,049
+Evet arkadaşlar, ses gitmedi.
+
+14
+00:08:46,049 --> 00:08:52,049
+Biz sesi kapattık çünkü kendi aramızda bir konuşma yapmamız gerekiyordu.
+
+15
+00:08:52,049 --> 00:08:59,049
+Sınav haftası, daha doğrusu ikinci sınav 13. hafta olacak arkadaşlar.
+
+16
+00:08:59,049 --> 00:09:03,049
+Yani önümüzdeki hafta değil, ondan sonraki hafta.
+
+17
+00:09:03,049 --> 00:09:05,049
+Ders saatinde yapacağız gene.
+
+18
+00:09:05,049 --> 00:09:07,049
+Evet, bölümü o şekilde duyurmuş.
+
+19
+00:09:07,049 --> 00:09:11,049
+Sınavlar ikinci vizya sınavları ders saatinde yapılacak diye.
+
+20
+00:09:11,049 --> 00:09:17,049
+10 menatörü vizya sınavı ders saatinde yani 1 ile 3 arasında yaparız.
+
+21
+00:09:17,049 --> 00:09:22,049
+Hangi slota yerleşir yani 2 de mi başlar 1 de mi başlar onu zaten...
+
+22
+00:09:22,049 --> 00:09:25,049
+Zaten bizi hikaye tanımladığımız zaman siz de göreceksiniz.
+
+23
+00:09:25,049 --> 00:09:28,049
+Önümüzdeki haftaya iyice netleştirilmiş olarak oluruz.
+
+24
+00:09:28,049 --> 00:09:36,049
+Ve fakat hani en azından bu sınav sıkıntısını ortadan kaldırdık diye tahmin ediyorum şu an.
+
+25
+00:09:36,049 --> 00:09:37,049
+Bence de.
+
+26
+00:09:37,049 --> 00:09:39,049
+Aynen, devam.
+
+27
+00:09:39,049 --> 00:09:41,049
+Sen şimdi ekrana geç ki [öğrenci].
+
+28
+00:09:45,049 --> 00:09:58,049
+Şimdi geçen hafta sinkronizasyonu işlerken en basit yazılımla yapılabilecek çözümlerden donanımla yapılması gerektiğini görmüştük.
+
+29
+00:09:58,049 --> 00:10:03,049
+Donanım çözümünü daha abstrakt özet bir hale getirerek
+
+30
+00:10:03,049 --> 00:10:08,049
+önce mutex lock mekanizmasını işlemiştik.
+
+31
+00:10:08,049 --> 00:10:13,049
+Arkasından da semafor mantığını devreye sokmuştuk.
+
+32
+00:10:13,049 --> 00:10:25,049
+Şimdi bir sinkronizasyon mekanizması ortaya atıldığı zaman bu mekanizmanın işlerliğini ölçmemiz gerekiyor.
+
+33
+00:10:25,049 --> 00:10:27,049
+Bunu test etmemiz gerekiyor.
+
+34
+00:10:27,049 --> 00:10:36,649
+Hatırlarsanız sinkronizasyonla alakalı sıraladığımız birtakım özellikler vardı.
+
+35
+00:10:36,649 --> 00:10:45,649
+İşte mutual exclusion'ı sağlayacaktı, bounded weighting'i sağlayacaktı, gereksiz yere beklemenin önüne geçecekti.
+
+36
+00:10:45,649 --> 00:10:48,649
+Bunları madde madde sizlere vermiştik.
+
+37
+00:10:48,649 --> 00:11:03,649
+İşte burada göreceğimiz problemler aslında ortaya atılan bir sinkronizasyon mekanizmasının sinkronizasyon için uygunluğunu ölçen problemler.
+
+38
+00:11:03,649 --> 00:11:07,649
+Üç tane temel problemimiz var.
+
+39
+00:11:07,649 --> 00:11:14,649
+Bunlar bilişim dünyasında da uygulama gerçekleştirirken,
+
+40
+00:11:14,649 --> 00:11:21,649
+uygulamaların birbirleriyle iletişimi veya uygulama içerisindeki alt parçaların,
+
+41
+00:11:21,649 --> 00:11:28,649
+uygulamaya ayrılmış kaynakları kullanımı ile alakalı senaryollarda da karşımıza çıkıyor.
+
+42
+00:11:28,649 --> 00:11:39,649
+Gerçek hayat problemleri, isimleri ve öyle gerçek hayat tarafından nasıl denk düşer net anlaşılmasa bile,
+
+43
+00:11:39,649 --> 00:11:43,649
+incelediğimiz zaman birebir denk düştüğünü göreceksiniz.
+
+44
+00:11:43,649 --> 00:11:52,649
+Nedir bunlar? Bounded buffer problemi, reader-writer problemi ve dining stozofer problemi.
+
+45
+00:11:52,649 --> 00:11:57,649
+Şimdi bounded buffer ile başlayalım.
+
+46
+00:11:57,649 --> 00:12:04,649
+Adı üzerinde sınırları belirli olan bir bufferımız var.
+
+47
+00:12:04,649 --> 00:12:11,649
+En slota sahip her biri bir item, bir eleman tutuyor.
+
+48
+00:12:11,649 --> 00:12:16,649
+Bu bir karakter olabilir, bir integer olabilir, bir struct olabilir, bir object olabilir.
+
+49
+00:12:16,649 --> 00:12:18,649
+Ne olduğu bize kalmış.
+
+50
+00:12:18,649 --> 00:12:25,649
+Önemli olan tutulacak olan elemandan en fazla n tane tutulabileceği.
+
+51
+00:12:26,649 --> 00:12:30,649
+Problemi çözmek için üç tane semafor kullanıyoruz.
+
+52
+00:12:30,649 --> 00:12:33,649
+Semaforlardan birinin adı mutex.
+
+53
+00:12:33,649 --> 00:12:37,649
+Anlayacağınız üzere mutual exclusion'ı sağlıyor.
+
+54
+00:12:37,649 --> 00:12:47,649
+Mutual exclusion'ı sağlayabilmesi için bu tarz semaforların her zaman bir ile initialize edilmesi gerektiğini söylemiştik.
+
+55
+00:12:47,649 --> 00:12:51,649
+İki tane de counting semaforumuz var.
+
+56
+00:12:51,649 --> 00:12:53,649
+Nereden anlıyoruz bunu?
+
+57
+00:12:53,649 --> 00:12:57,649
+Çünkü bir tanesi full ilk değeri 0 ile başlamış.
+
+58
+00:12:57,649 --> 00:13:01,649
+Diğeri de n'te, ilk değeri n ile başlamış.
+
+59
+00:13:01,649 --> 00:13:09,649
+Demek ki critical section için kullanılmayacak, synchronizasyon için kullanılacak.
+
+60
+00:13:09,649 --> 00:13:12,649
+Buradan o çıkarımı yapabiliriz.
+
+61
+00:13:12,649 --> 00:13:20,649
+Şimdi bakın, producer tarafı hep bunu test ederken sonsuz bir döngü şeklinde olur diyorduk ya.
+
+62
+00:13:20,649 --> 00:13:26,649
+Empty semaforunda bir bekleme çağrısı yapıyor.
+
+63
+00:13:26,649 --> 00:13:30,649
+Empty'nin değeri neydi? Bir önceye dönelim isterseniz.
+
+64
+00:13:30,649 --> 00:13:32,649
+n ilk değeri.
+
+65
+00:13:32,649 --> 00:13:39,649
+n olduğuna göre 0 olana kadar bu do döngüyüsü hiçbir kısıtlama olmadan döner.
+
+66
+00:13:39,649 --> 00:13:41,649
+Birinci kural bu. Çünkü neden?
+
+67
+00:13:41,649 --> 00:13:44,649
+Semaforun değeri pozitifse arttırılır.
+
+68
+00:13:44,649 --> 00:13:50,649
+Ama semaforun değeri azaltılır. Yanlış söyleyin, pozitifse azaltılır.
+
+69
+00:13:50,649 --> 00:13:55,649
+Ama semaforun değeri negatife düşüyorsa nereye gidiyordu?
+
+70
+00:13:55,649 --> 00:13:58,649
+Bu weight system çağrısını yapan bir proses.
+
+71
+00:13:58,649 --> 00:14:00,649
+Weighting kuyruğuna gidiyordu.
+
+72
+00:14:00,649 --> 00:14:03,649
+Şimdi n ile başladı.
+
+73
+00:14:03,649 --> 00:14:05,649
+n-1 oldu.
+
+74
+00:14:05,649 --> 00:14:07,649
+mutex 1'di.
+
+75
+00:14:07,649 --> 00:14:08,649
+0 oldu.
+
+76
+00:14:08,649 --> 00:14:10,649
+İçeriye girildi.
+
+77
+00:14:10,649 --> 00:14:13,649
+Ve oradaki açıklamaya bakın.
+
+78
+00:14:13,649 --> 00:14:16,649
+At next produced item to the buffer.
+
+79
+00:14:16,649 --> 00:14:22,649
+Yani aslında buffer'a erişim bir critical section olarak düşünülmüş.
+
+80
+00:14:22,649 --> 00:14:26,649
+Buffer'a producer erişirken consumer erişmesin.
+
+81
+00:14:26,649 --> 00:14:33,649
+Orada üretilen veri tüketilmeden üzerine yeni bir tanesi yazılmasın.
+
+82
+00:14:34,649 --> 00:14:40,649
+Orada hem sinkronizasyon hem de mutual exclusion sağlansın diye mutex semaforu var.
+
+83
+00:14:40,649 --> 00:14:50,649
+Yeni itemı, yeni elemanı buffer'a yerleştirdikten sonra hemen signal da bu kritik bölgeden çıkıyor.
+
+84
+00:14:50,649 --> 00:14:54,649
+Signal mutex de çıkıyor ve sonrasında da signal full yapıyor.
+
+85
+00:14:54,649 --> 00:14:56,649
+Full'in değeri neydi? 0 idi.
+
+86
+00:14:56,649 --> 00:14:59,649
+Signal full yaptığına göre değeri 1 oldu.
+
+87
+00:14:59,649 --> 00:15:04,649
+Şimdi bu şartlar altında consumer process'ine bakalım.
+
+88
+00:15:04,649 --> 00:15:10,250
+Consumer process'i weight full ile başlıyor.
+
+89
+00:15:10,250 --> 00:15:18,250
+Başlangıçta buffer tamamen boş olduğu için full semaforunun değeri de zaten 0 ile ilgilendirilmiş durumda.
+
+90
+00:15:18,250 --> 00:15:23,250
+O yüzden consumer process'i beklemek zorunda.
+
+91
+00:15:23,250 --> 00:15:26,250
+Niye? 0'ı 1 eksiltirseniz negatif olur.
+
+92
+00:15:26,250 --> 00:15:33,250
+Semaforda negatif olamayacağı için otomatikman process kendini weighting kuyruğunda bulur.
+
+93
+00:15:33,250 --> 00:15:40,250
+Ne zamanki produsör bir tane eleman üretti, bunu buffer'a yerleştirdi.
+
+94
+00:15:40,250 --> 00:15:46,250
+Sonrasında da signal full ile full semaforunu arttırdı.
+
+95
+00:15:46,250 --> 00:15:54,250
+Weight full bekleme durumundan çıktı ve bu process, bu consumer process çalışabilir hale geldi.
+
+96
+00:15:54,250 --> 00:16:08,250
+Ortak alandaki, ortak bufferdaki elemanı almak için ise bu sefer mutex üzerinden, o semafor üzerinden ortak alana erişti.
+
+97
+00:16:08,250 --> 00:16:10,250
+Çünkü neyi biliyoruz?
+
+98
+00:16:10,250 --> 00:16:16,250
+Ortak alana hem produsör erişiyor hem de consumer erişiyor.
+
+99
+00:16:16,250 --> 00:16:22,250
+Biri orada yazma işlemi yaparken diğeri orada okuma işlemi gerçekleşiyor.
+
+100
+00:16:22,250 --> 00:16:31,250
+Bunların senkol bir şekilde ilerleyebilmesi için, sıkıntısız ilerleyebilmesi için böyle bir semaforla korunması lazım.
+
+101
+00:16:31,250 --> 00:16:46,250
+Sonrasında da buffer'ı bir eleman kadar boşalttığımız için signal empty ile produsör'a yeni bir yer açıldı mesajı vermiş oluyoruz.
+
+102
+00:16:46,250 --> 00:16:49,250
+Şimdi bu şartlar altında şöyle düşünebilirsiniz.
+
+103
+00:16:49,250 --> 00:16:59,250
+En tane elemanlı bir buffer var ise herhangi bir anda full ile empty'nin toplamı hep neye eşit olmak zorunda?
+
+104
+00:16:59,250 --> 00:17:02,250
+En değerine eşit olmak zorunda.
+
+105
+00:17:02,250 --> 00:17:06,250
+Çünkü ne kadar doldurulduysa o kadar boşaltılacak.
+
+106
+00:17:06,250 --> 00:17:16,250
+Biri dolu tarafı biri boş tarafı gösterdiğine göre dolu ile boşum toplamı toplam eleman sayısına eşit olmak zorunda.
+
+107
+00:17:16,250 --> 00:17:24,250
+Bu yapının diğer güzel bir tarafı da istediğiniz kadar consumer process çalıştırabilirsiniz değil mi?
+
+108
+00:17:24,250 --> 00:17:32,250
+Çünkü full de mutex de empty de birer semafor.
+
+109
+00:17:32,250 --> 00:17:41,250
+Semaforların zaten weight ve signal sistem çağrıları üzerinden aynı kritik seksiyona girmek isteyen,
+
+110
+00:17:41,250 --> 00:17:51,250
+aynı ortak alan üzerinde işlem yapmak isteyen birden fazla process tarafından kullanılabildiğini görmüştük.
+
+111
+00:17:51,250 --> 00:18:00,250
+Yani bu şartlar altında bizim bir tane produsörümüz, en tane de consumer'ımız olabilir, tüketicimiz olabilir.
+
+112
+00:18:00,250 --> 00:18:09,250
+Ve bu tüketicilerin hepsi şurada görmüş olduğunuz kod parçasını çalıştırsa yeterli olacak.
+
+113
+00:18:09,250 --> 00:18:17,890
+Diğer bir problem leaders writers problemi.
+
+114
+00:18:17,890 --> 00:18:24,890
+Şimdi bu problem aslında karşımıza veri tabanlarında çıkan bir problem.
+
+115
+00:18:24,890 --> 00:18:27,890
+Yani bir veri tabanını modellemiş oluyoruz.
+
+116
+00:18:27,890 --> 00:18:29,890
+Çünkü niye? Şöyle düşünün.
+
+117
+00:18:29,890 --> 00:18:38,890
+Klasik veri tabanı üzerinden gidecek olursak veri tabanına ya okuma ya da yazma yönünde gelişiyoruz.
+
+118
+00:18:38,890 --> 00:18:47,890
+İşte select query'si okuma, insert, update, delete query'leri ise yazma yönünde çalışıyor.
+
+119
+00:18:47,890 --> 00:18:54,890
+Bu durumda veri tabanı ortak paylaşılan bir yapı.
+
+120
+00:18:54,890 --> 00:19:01,890
+Buraya da query'i yapan prosesler aynı anda es zamanlı olarak erişiyorlar.
+
+121
+00:19:01,890 --> 00:19:07,890
+Bir kısmı select yapmak isterken diğer bir kısmı insert, update ve delete yapıyorlar.
+
+122
+00:19:07,890 --> 00:19:19,890
+Bu leaders writers problemi de bunu modellemek için ve bu tarz bir problemdeki problemi çözmek için ortaya atılmış olan
+
+123
+00:19:19,890 --> 00:19:25,890
+synchrojation mekanizmalarının doğruluğunu test etmek için var olan bir problem.
+
+124
+00:19:25,890 --> 00:19:28,890
+Readers'lar sadece okuyabiliyorlar.
+
+125
+00:19:28,890 --> 00:19:31,890
+Herhangi bir şekilde yazma işlemi yapamıyorlar.
+
+126
+00:19:31,890 --> 00:19:33,890
+İşte select kısmını düşünün.
+
+127
+00:19:34,890 --> 00:19:39,890
+Writer'lar ise doğal olarak hem okuyabiliyorlar hem de yazabiliyorlar.
+
+128
+00:19:39,890 --> 00:19:51,890
+Yani insert veya delete sadece silme içerse bile update okuyup düzenli yazma içerdiği için delete ve write burada bir arada yapılabiliyor.
+
+129
+00:19:51,890 --> 00:19:53,890
+Problem ne?
+
+130
+00:19:53,890 --> 00:19:58,890
+Eğer okuma isteği varsa okuma isteğini bekletmemek lazım.
+
+131
+00:19:58,890 --> 00:20:02,890
+Çünkü okuma isteği okunan veri üzerinde değişiklik yapmıyor.
+
+132
+00:20:02,890 --> 00:20:16,890
+Ama okuma isteği öncesinde başlamış bir yazma isteği varsa o zaman okuma isteği yapacak olanların bu yazma isteğinin bitmesini beklemelere gerekir.
+
+133
+00:20:16,890 --> 00:20:19,890
+Şimdi dikkat edin, kritik nokta şu.
+
+134
+00:20:19,890 --> 00:20:24,890
+Yazma işlemi yapılıyorsa okuma işlemi yapacak olan bekliyor.
+
+135
+00:20:24,890 --> 00:20:31,890
+O anda okuma işlemi yapılıyorsa ve yeni bir okuma işlemi geliyorsa bekletilmeden devam ettiriliyor.
+
+136
+00:20:31,890 --> 00:20:40,890
+Çünkü okuma verinin durumunu değiştirmeyeceği için aynı anda pek çok istemci tarafından okunabilir.
+
+137
+00:20:40,890 --> 00:20:49,890
+Burada biz şu anda bu haliyle Reader's Writer's probleminin bir senaryosunu tarifledik.
+
+138
+00:20:49,890 --> 00:20:51,890
+Farklı senaryolar da mevcut.
+
+139
+00:20:51,890 --> 00:21:04,890
+Yani Writer'ların öncelikli olmasının yanı sıra Reader'ların daha öncelikli olduğu senaryolar söz konusu olabilir.
+
+140
+00:21:04,890 --> 00:21:21,890
+Veya arka arkaya birikmiş ve read yapması beklenenlerin arasına girip o anda fazla bir süre, epeyce bir süre beklemiş olan Writer'ı çalıştıracak olan bir durum da söz konusu olabilir.
+
+141
+00:21:21,890 --> 00:21:25,890
+Paylaşılan birimizin data setimiz var.
+
+142
+00:21:25,890 --> 00:21:34,890
+Üç tane semafor, iki tane semafor, bir tane de integer değişkeni tanımlamışız.
+
+143
+00:21:34,890 --> 00:21:43,890
+Bakın semaforların her ikisi de isimlerinden anlayacağımız üzere bu text tarzı yani critical section korumaya yönelik tarzda.
+
+144
+00:21:43,890 --> 00:21:48,890
+O zaman bunlar binary semafor 0 ve 1 değerlerini alabiliyorlar sadece.
+
+145
+00:21:48,890 --> 00:21:52,890
+Read count ise bir integer değişkeni ve 0 ile başlıyor.
+
+146
+00:21:52,890 --> 00:21:56,890
+Bunu yeri geldiğinde arttıracağız, yeri geldiğinde de eksilteceğiz.
+
+147
+00:21:56,890 --> 00:21:58,890
+Neyin ne olduğunu birazdan anlayacağız.
+
+148
+00:21:58,890 --> 00:22:02,890
+Bakın Writer'ı anlamak çok kolay.
+
+149
+00:22:02,890 --> 00:22:08,890
+Writer'ın kontrol etmesi gereken egemen şey write edebilir miyim?
+
+150
+00:22:08,890 --> 00:22:10,890
+Read write mu text.
+
+151
+00:22:11,890 --> 00:22:18,890
+Eğer read write mu text ona write etme hakkı veriyorsa weight'ten aşağıya inecek.
+
+152
+00:22:18,890 --> 00:22:22,890
+Writing işlemini gerçekleştirecek, yazma işlemini gerçekleştirecek.
+
+153
+00:22:22,890 --> 00:22:24,890
+Sonra signal'a da dışarıya çıkacak.
+
+154
+00:22:24,890 --> 00:22:29,890
+Diğer taraftan, reader'ların durumu biraz daha karışık.
+
+155
+00:22:29,890 --> 00:22:32,890
+Neyi söyledik? S zamanlı.
+
+156
+00:22:32,890 --> 00:22:36,890
+Okuma isteği varsa bunları durdurmayalım.
+
+157
+00:22:36,890 --> 00:22:38,890
+Bunlar S zamanlı gerçekleşsin.
+
+158
+00:22:39,890 --> 00:22:45,890
+O anda kaç tane okuma işlemi olduğunun da sayısını tuttuğumuz önemli.
+
+159
+00:22:45,890 --> 00:22:47,890
+Çünkü niye?
+
+160
+00:22:47,890 --> 00:22:55,890
+Son okuma işlemini yapan process dışarıya çıkmadan Writer'lara izin vermemem lazım.
+
+161
+00:22:55,890 --> 00:23:00,890
+Şöyle düşünün bir reader geldi okuma yapıyor.
+
+162
+00:23:00,890 --> 00:23:05,890
+Onun okuması bitmeden ikincisi, üçüncüsü, dördüncüsü, beşincisi geldi.
+
+163
+00:23:05,890 --> 00:23:11,890
+Şimdi sistemde veriyi okuyacak olan beş tane reader var.
+
+164
+00:23:11,890 --> 00:23:19,460
+Kurduğumuz tamamen consistency, tutarlılık modeline bağlı olarak.
+
+165
+00:23:19,460 --> 00:23:29,460
+Şunu söyleyebilirim, diyebilirim ki bu beş tane okuma işlemini yapacak olan process işini bitirmeden Writer'a izin verme.
+
+166
+00:23:29,460 --> 00:23:32,460
+Çünkü neden? Her biri aynı veriyi görsün.
+
+167
+00:23:33,460 --> 00:23:37,460
+Öbür türlü işte birincisi okudu, araya Writer'ı girdi, ikincisi okudu.
+
+168
+00:23:37,460 --> 00:23:39,460
+Farklı ilkinden daha farklı.
+
+169
+00:23:39,460 --> 00:23:42,460
+Üçüncüsü okudu, iki ve üç birbirine aynı.
+
+170
+00:23:42,460 --> 00:23:45,460
+Ama bir ve iki ve üç birbirinden farklı.
+
+171
+00:23:45,460 --> 00:23:47,460
+Bunların oluşmaması lazım.
+
+172
+00:23:47,460 --> 00:23:49,460
+Bu senaryoda böyle.
+
+173
+00:23:49,460 --> 00:23:58,460
+O zaman sistemde de şu anda kaç tane reader olduğunu tutmak için read count değişkeninden yararlanıyorum.
+
+174
+00:23:58,460 --> 00:24:06,460
+Ve eğer read count'un değeri bir ise, bakın bir mutex ile koruyarak giriyorum.
+
+175
+00:24:06,460 --> 00:24:14,460
+Çünkü neden? Bütün prosesler, okuma yazmak isteyen bütün prosesler read count'u bir arttıracaklar.
+
+176
+00:24:14,460 --> 00:24:17,460
+İşlemleri bittiği zaman da bir eksilecekler.
+
+177
+00:24:17,460 --> 00:24:19,460
+Read count'u bir arttırıyorum.
+
+178
+00:24:19,460 --> 00:24:29,460
+Eğer read count'u bir ise, yani okuma yapacak ilk proses o ise, o zaman bu prosesin neyi beklemesi lazım?
+
+179
+00:24:29,460 --> 00:24:31,460
+Writer'ları.
+
+180
+00:24:31,460 --> 00:24:34,460
+Çünkü o sırada bir yazma işlemi gerçekleşiyordu.
+
+181
+00:24:34,460 --> 00:24:38,460
+Yazma işlemi bitmeden reader'ın devam etmemesi gerekiyor.
+
+182
+00:24:38,460 --> 00:24:42,460
+O yüzden şurada gördüğümüz satır var.
+
+183
+00:24:42,460 --> 00:24:47,460
+If read count equals one, then wait read write mutex.
+
+184
+00:24:47,460 --> 00:25:00,339
+O wait read write mutex başarıyla sonuçlandığında, yani ilk reader critical section'dan içeri girip okuma yaptığında,
+
+185
+00:25:00,339 --> 00:25:06,339
+artık diğer gelen reader'ların writer'ları beklemesine gerek yok.
+
+186
+00:25:06,339 --> 00:25:10,339
+Çünkü neden? Diğer gelen reader'lar durduruldu.
+
+187
+00:25:10,339 --> 00:25:20,339
+İlk gelen writer'lar, yanlış söyledim arkadaşlar, diğer gelecek olan writer'lar ilk gelen reader tarafından durduruldu.
+
+188
+00:25:20,339 --> 00:25:27,299
+Sonra her reader işini bitirdiğinde de read count'u bir eksiltiyoruz.
+
+189
+00:25:27,299 --> 00:25:30,299
+Read count eksi eksi var bakın orada.
+
+190
+00:25:30,299 --> 00:25:36,299
+Read count'a sıfıra eşitlendiğinde neyi serbest bırakıyoruz?
+
+191
+00:25:36,299 --> 00:25:43,299
+Yazma ile alakalı olan read count mutex'i çünkü o sırada writer'lar birikmiş olabilir.
+
+192
+00:25:43,299 --> 00:25:49,140
+Mantık bunun üzerine kuruldu.
+
+193
+00:25:49,140 --> 00:26:01,140
+Birinci varyasyon, burada konuştuğumuz varyasyon, hiçbir reader o sırada writer yoksa eğer sistemde bekletilmiyor.
+
+194
+00:26:01,140 --> 00:26:09,140
+Yani bütün reader'lar hemen geldikleri gibi neredeyse kesintisiz bir şekilde beklemeden vereği okuyorlar.
+
+195
+00:26:09,140 --> 00:26:14,140
+Yeter ki o anda aktif olan bir writer olmasın.
+
+196
+00:26:14,140 --> 00:26:24,140
+İkincisi varyasyon ise sistemde kaç tane reader o anda aktif olursa olsun,
+
+197
+00:26:24,140 --> 00:26:28,140
+bu sırada bir writer gelirse ne oluyor?
+
+198
+00:26:28,140 --> 00:26:40,140
+Reader'lara ara veriliyor, hemen ilk fırsatta araya writer giriyor, writer işini yapıyor, çıkıyor, reader'lar kaldıkları yerden devam ediyor.
+
+199
+00:26:40,140 --> 00:26:49,140
+Şimdi burada her ikisinin de starvation'la sonuçlanma durumunu görüyorsunuzdur diye tahmin ediyorum.
+
+200
+00:26:49,140 --> 00:27:05,140
+Birinci varyasyonda sürekli reader'ların arka arkaya kesintisiz gelmesi sonucunda writer'lara hiç zaman verilmeyebilir, writer'ların hiç hakkı olmayabilir.
+
+201
+00:27:05,140 --> 00:27:19,140
+İkincisinde ise arka arkaya writer'ların gelmesi sonucunda reader'lara okumak için zaman tanınmayabilir.
+
+202
+00:27:19,140 --> 00:27:28,140
+Şimdi bu reader-writer problemi çok sıklıkla karşılaştığımız, ihtiyaç duyduğumuz bir programlanma modeli.
+
+203
+00:27:29,140 --> 00:27:40,140
+O yüzden bazı işletim sistemlerinin körnülünde doğrudan reader-writer tipinde çalışan laclar var.
+
+204
+00:27:40,140 --> 00:27:53,140
+Yani nasıl mutex lacımız var ise sistem çağrısı şeklinde reader-writer lacı da gerçekleştirilmiş durumda, implement edilmiş durumda.
+
+205
+00:27:53,140 --> 00:28:13,599
+Şimdi bu problemler arasında en gelişmiş, en karmaşık ve en genel amaçlı olanı ise dining philosopher problem.
+
+206
+00:28:13,599 --> 00:28:19,599
+Bunlar yemek yiyen filozoflar problemi aslında Türkçesi.
+
+207
+00:28:19,599 --> 00:28:23,599
+Şimdi 5 tane filozofumuz var.
+
+208
+00:28:23,599 --> 00:28:29,599
+Gördüğünüz gibi de yuvarlak bir masanın etrafına oturmuşlar.
+
+209
+00:28:29,599 --> 00:28:45,599
+Her birinin önünde bir tabak, sağında ve solunda birer şu Japonların ve Çinlerin kullandığı çubuklar var ya chopstick diye geçiyor, yemek yemek için kullanılan o chopsticklerden var.
+
+210
+00:28:45,599 --> 00:29:04,599
+Tabii ki doğal olarak tahmin edeceğiniz üzere yemek yiyebilmek için herhangi bir filozofun yemek yemek istediği anda iki chopstick'e, iki çubuğa birden sahip olması gerekiyor.
+
+211
+00:29:04,599 --> 00:29:10,599
+Ortada da pirinç var pilav ama bu pilav tane.
+
+212
+00:29:10,599 --> 00:29:12,599
+Ne? Bakın bu çok önemli.
+
+213
+00:29:12,599 --> 00:29:15,599
+Çünkü neyi sembolize ediyor biliyor musunuz?
+
+214
+00:29:15,599 --> 00:29:20,599
+Bir kaynaktan en adet olması durumunu sembolize ediyor.
+
+215
+00:29:20,599 --> 00:29:26,599
+Yani pirinci kaşıkla yemiyoruz, o zaman en tanesini birden bir seferde kullanmış oluyoruz.
+
+216
+00:29:26,599 --> 00:29:32,599
+Halbuki biz kaynak kullanımıyla alakalı size neyi anlatmıştık?
+
+217
+00:29:32,599 --> 00:29:35,599
+Request, Use, Release.
+
+218
+00:29:36,599 --> 00:29:44,599
+Bir kaynaktan da en kopya varsa her kopyası için bu üç aşamanın yaşanması gerekiyor.
+
+219
+00:29:44,599 --> 00:29:49,599
+Şimdi filozoflar bu masanın etrafından kalkmıyorlar.
+
+220
+00:29:49,599 --> 00:29:53,599
+Bütün yaşamlarını bu masanın etrafında geçiriyorlar.
+
+221
+00:29:53,599 --> 00:29:59,599
+Belirli dönemlerde de o eksilen pirinç, pilav ortaya yerleştiriliyor, konuluyor.
+
+222
+00:29:59,599 --> 00:30:03,599
+Peki filozofların hayatı nasıl geçiyor?
+
+223
+00:30:03,599 --> 00:30:16,599
+Filozofların hayatı uyuma, yeme, uyuma, yeme şeklinde, arada da boş kaldıklarında düşünüyorlar.
+
+224
+00:30:16,599 --> 00:30:21,599
+Şimdi bizim açımızda uyuma ve yeme kısmı önemli.
+
+225
+00:30:21,599 --> 00:30:25,599
+Düşünmeyi de aslında belki şey yapabiliriz.
+
+226
+00:30:25,599 --> 00:30:28,599
+Bakın nelere denk düşüyor?
+
+227
+00:30:28,599 --> 00:30:32,599
+Ready state, running state, waiting state.
+
+228
+00:30:32,599 --> 00:30:43,599
+Yani o kadar güzel olayı gerçek hayata yansıtıp modelleyen bir problem ki hakikaten ciddi kaliteli bir problem.
+
+229
+00:30:43,599 --> 00:31:02,039
+Şimdi şöyle düşünün, herhangi bir filozofun bir parça pirinç alabilmesi için iki çok siteyi birden sahip olması gerekiyor.
+
+230
+00:31:02,039 --> 00:31:12,039
+Bakın şöyle yapalım, hepsi aynı anda, bu arada tabii problem orijinalde tek işlemci üzerinde çözülmüş
+
+231
+00:31:12,039 --> 00:31:18,039
+ama günümüzde bunu çözerken her bir filozofun bağımsız bir işlemcide çalıştığını,
+
+232
+00:31:18,039 --> 00:31:25,039
+yani concurrency'den aslında birebir aynı zamanda çalışmayı anladığımızı da unutmamak gerekiyor.
+
+233
+00:31:25,039 --> 00:31:32,039
+Şimdi her filozof aynı anda sağındaki çok siteye yönelsin.
+
+234
+00:31:32,039 --> 00:31:34,039
+Bu durumda ne olur?
+
+235
+00:31:34,039 --> 00:31:38,039
+Hiçbir filozofun solunda çok site kalmaz.
+
+236
+00:31:38,039 --> 00:31:45,039
+Yani hepsi sağındakileri aldığına göre hiçbirinin solunda çok site kalmayacak,
+
+237
+00:31:45,039 --> 00:31:54,039
+hepsi bir tane kaynağı oluşturacak bir tane çok siteyi almış durumda ikincisini almak için de diğerinin bırakmasını beklemek durumunda.
+
+238
+00:31:54,039 --> 00:31:55,039
+Ne oldu?
+
+239
+00:31:55,039 --> 00:32:02,039
+Circular weight oluştuğu, hold and weight oluştuğu, no preemption var, mutual exclusion var,
+
+240
+00:32:02,039 --> 00:32:09,039
+dört tane şartın dördü birden oluştuğu otomatikman deadlock durumu meydana geldi.
+
+241
+00:32:09,039 --> 00:32:15,039
+Şimdi diyebiliriz ki bunu çözmek için hepsi solundakine yönelsin, bir şeye fark etmeyecek,
+
+242
+00:32:15,039 --> 00:32:21,039
+hepsi solundakini aldığında bu sefer sağ taraflarında alabilecekleri chopstick kalmayacak.
+
+243
+00:32:21,039 --> 00:32:27,039
+Yani burada biraz daha akıllı bir çözüm üretmemiz gerekiyor.
+
+244
+00:32:27,039 --> 00:32:34,039
+Üretilen çözümlerden bir tanesi filozofları 0'dan 4'e kadar numaralandıracak olursak,
+
+245
+00:32:34,039 --> 00:32:42,039
+örneğin çift numaraların sağdakileri, tek numaraların soldakileri alması.
+
+246
+00:32:42,039 --> 00:32:47,039
+Ancak dikkat edin, burada da şöyle bir şey olacak.
+
+247
+00:32:47,039 --> 00:32:51,039
+0'dan 4'e kadar kaç tane çift numara var?
+
+248
+00:32:51,039 --> 00:32:53,039
+0, 2, 4.
+
+249
+00:32:53,039 --> 00:32:54,039
+3 tane var.
+
+250
+00:32:54,039 --> 00:32:56,039
+Kaç tane tek numara var?
+
+251
+00:32:56,039 --> 00:32:58,039
+2 tane, 1 ve 3.
+
+252
+00:32:58,039 --> 00:33:04,039
+Hep bu mantıkla yapacak olursak, 0, 2, 4 kullanacak, sonra 1, 3.
+
+253
+00:33:04,039 --> 00:33:06,039
+0, 2, 4 kullanacak, sonra 1, 3.
+
+254
+00:33:06,039 --> 00:33:07,039
+Ne oldu?
+
+255
+00:33:07,039 --> 00:33:09,039
+Bir dengesizlik oluştu.
+
+256
+00:33:09,039 --> 00:33:15,039
+Yani bir turda 3, bir turda 2 tanesi yemek yiyebiliyor.
+
+257
+00:33:15,039 --> 00:33:23,039
+O zaman bu uzun vadede böyle devam edecek olursa, aslında gizli bir gecikme var.
+
+258
+00:33:23,039 --> 00:33:27,039
+Kaynakların eşit paylaşılmaması söz konusu.
+
+259
+00:33:27,039 --> 00:33:30,039
+Starvation yok ama bu tarz bir sorun var.
+
+260
+00:33:30,039 --> 00:33:37,039
+Ve gereksiz beklemeyi ortadan kaldıracaktık ya ihtiyacı olduğunda, gereksiz bir bekleme var.
+
+261
+00:33:37,039 --> 00:33:39,039
+Bunu çözmenin yolu ne?
+
+262
+00:33:39,039 --> 00:33:41,039
+Bunu çözmenin yolu da şu.
+
+263
+00:33:41,039 --> 00:33:57,039
+Bir turda 0, 2, 4, 1, 3 bölümlemesi, 0, 2, 4 sağ, 1, 3 solu alacaksa, bir sonraki tura geçildiğinde 0, 2, 4 diğerini öbürü şey alsın diye.
+
+264
+00:33:57,039 --> 00:34:08,039
+Yani o şeyi öyle bir terse çeviriyoruz ki, hep dengeli bir şekilde 3'leri, 3'ü ve 2'yi kendi içerisinde yer değiştirmiş oluyoruz.
+
+265
+00:34:08,039 --> 00:34:18,039
+Bu sayede de iki tam turun sonunda hepsine eşit miktarda pirinç gitmiş oluyor.
+
+266
+00:34:18,039 --> 00:34:21,039
+Yani eşit miktarda kaynak gitmiş oluyor.
+
+267
+00:34:21,039 --> 00:34:32,039
+Şimdi burada bir sonraki sayfada geçtiğimiz zaman en baştaki o anlattığımız çözüm üzerinden olan çözüm görülecek.
+
+268
+00:34:32,039 --> 00:34:40,039
+Ve bakın önce konuştuğumuz şey, önce chopstick i'yi alıyor.
+
+269
+00:34:40,039 --> 00:34:44,039
+Semafor bu arada, chopstick bir semafor array, semafor dizisi.
+
+270
+00:34:44,039 --> 00:34:46,039
+Chopstick i'yi alıyor.
+
+271
+00:34:46,039 --> 00:34:49,039
+Sonra da i artı bir mod 5'i alıyor.
+
+272
+00:34:49,039 --> 00:34:54,039
+Modüler olarak hesapladığınız için az önce konuştunuz yani.
+
+273
+00:34:54,039 --> 00:35:00,039
+Önce sağdakini almaya çalışıyor, sonra soldakini veya bakış açtığınızda göre önce soldakini, sonra sağdakini.
+
+274
+00:35:00,039 --> 00:35:06,039
+Size az önce yaptığım açıklamadan dolayı bu sayfadaki sorunun cevabını biliyorsunuz.
+
+275
+00:35:06,039 --> 00:35:08,039
+What is the problem with this algorithm?
+
+276
+00:35:08,039 --> 00:35:09,039
+Nedir?
+
+277
+00:35:09,039 --> 00:35:11,039
+Otomatikman deadlock.
+
+278
+00:35:11,039 --> 00:35:21,039
+Çünkü ilk satırda alındıktan sonra herkes sağdakini aldıktan sonra ikinci satırda alınabilecek chopstick kalmıyor.
+
+279
+00:35:21,039 --> 00:35:31,039
+Çünkü onlar bir önceki turdan diğer filozoflar tarafından alınmış olacak.
+
+280
+00:35:31,039 --> 00:35:40,039
+Öyleyse hani geri dönecek olursak buradaki bu verilmiş olan çözüm bu haliyle doğru bir çözüm değil.
+
+281
+00:35:40,039 --> 00:35:47,039
+Az önce anlattığımız, tariflediğimiz problemi görebilmeniz için konulmuş bir çözüm.
+
+282
+00:35:49,510 --> 00:35:57,510
+Şimdi bu slide'larda da bakın ben biraz hızlı gittim, konuyu toparladım.
+
+283
+00:35:57,510 --> 00:35:59,510
+Adım adım burada şey yapıyor.
+
+284
+00:35:59,510 --> 00:36:01,510
+Deadlock handling için.
+
+285
+00:36:03,510 --> 00:36:08,510
+Üçüncü maddede size özellikle tariflediğim ayrıntısıyla anlattığım şey var.
+
+286
+00:36:08,510 --> 00:36:10,510
+Use an asymmetric solution.
+
+287
+00:36:10,510 --> 00:36:25,510
+Yani sağ ve sol tek veya çift numara olmasına göre yer değiştiriyor.
+
+288
+00:36:25,510 --> 00:36:27,510
+Böylece ne yapmış oluyoruz?
+
+289
+00:36:27,510 --> 00:36:35,510
+Beş tane chopstick varsa aynı anda iki tanesinin yemesini sağlamış oluyoruz.
+
+290
+00:36:36,510 --> 00:36:43,840
+Şimdi semaforlar çok güzel, çok iyi.
+
+291
+00:36:43,840 --> 00:36:58,840
+Ancak semaforları kullanırken, kullanım kurallarına dikkat etmez ise otomatikman problemlere sebep oluyoruz.
+
+292
+00:36:58,840 --> 00:37:03,840
+Şeyi hatırlayın, size bunu üzerine basa basa söyledik.
+
+293
+00:37:03,840 --> 00:37:10,840
+İşletim sistemleri Deadlock için çok özel bir çözüm üretmiyorlar.
+
+294
+00:37:10,840 --> 00:37:17,840
+Çünkü Deadlock çözünmesiyle alakalı gerçekleştirecek olan algoritmaların karmaşıklığı yüksek.
+
+295
+00:37:17,840 --> 00:37:22,840
+Onlar için harcanacak olan işlem gücü, boşa harcanmış olan bir işlem gücü.
+
+296
+00:37:22,840 --> 00:37:24,840
+Yani aslında iki tane temel yaklaşım var.
+
+297
+00:37:24,840 --> 00:37:27,840
+Ya Deadlock prevention yapacağız.
+
+298
+00:37:27,840 --> 00:37:31,840
+Ya da olduktan sonra çözmeyi deneyeceğiz.
+
+299
+00:37:31,840 --> 00:37:35,840
+Ve fakat üçüncü bir yöntem daha var.
+
+300
+00:37:35,840 --> 00:37:40,840
+Bırak olsun ve kullanıcı bununla uğraşsın.
+
+301
+00:37:40,840 --> 00:37:49,840
+Şimdi aynen bu noktada signal, weight, mutex derseniz bu sırayla kullanırsanız,
+
+302
+00:37:49,840 --> 00:37:53,840
+critical section, herkesin girebileceği bir critical section'a dönüşüyor.
+
+303
+00:37:53,840 --> 00:37:56,840
+Yani critical section olmaktan çıkıyor.
+
+304
+00:37:56,840 --> 00:38:04,840
+Weight, mutex, weight, mutex derseniz siz girebiliyorsunuz critical section'a ama siz çıkamıyorsunuz.
+
+305
+00:38:04,840 --> 00:38:08,840
+Çıkamadığınız gibi başka girebilen kimse kalmıyor.
+
+306
+00:38:08,840 --> 00:38:25,840
+Veya signal'ın bir tanesini veya iki tanesini unutmak ve kullanmamak daha sıkıntılı başka şu anda doğrudan aklımıza gelmese bile problem olacak durumlara yol uçuyor.
+
+307
+00:38:25,840 --> 00:38:28,840
+Yani race condition'a başlıyor olay.
+
+308
+00:38:28,840 --> 00:38:31,840
+Sonrasında Deadlock ve Starvation'a kadar gidiyor.
+
+309
+00:38:31,840 --> 00:38:35,840
+Burada tabi ki vurgun nereye yapılıyor?
+
+310
+00:38:35,840 --> 00:38:40,840
+Program geliştiren kişinin bunun çok dikkatli kullanmasına yapılıyor.
+
+311
+00:38:40,840 --> 00:38:51,840
+Şimdi sizler bu iş için mühendisi olarak, bunun eğitimini aldığınız için tabi ki her şart altında weight ve signal mekanizmasını,
+
+312
+00:38:51,840 --> 00:39:01,840
+ve ki bounded buffer problemini gördünüz, reader's writers problemini gördünüz, dining closed buffer problemini gördünüz, her şart altında doğru kullanmanız lazım.
+
+313
+00:39:01,840 --> 00:39:06,840
+Ancak bunu her program yazarı için düşünmemiz mümkün değil.
+
+314
+00:39:06,840 --> 00:39:22,840
+O zaman deniyor ki semaforlardan daha üst seviye, daha abstrak yani özet ve bu tarz hataların yapılmasının önüne geçecek yapılar oluştura bilir miyiz?
+
+315
+00:39:22,840 --> 00:39:27,840
+Tabi ki oluşturuluyor. Neden oluşturulmasın? Programatik bir yaklaşım sonuçta.
+
+316
+00:39:27,840 --> 00:39:30,840
+Bu yapılara verilen isim monitor.
+
+317
+00:39:30,840 --> 00:39:34,840
+Monitor izleyici demek, denetleyici demek.
+
+318
+00:39:34,840 --> 00:39:38,840
+Yani bizim ekran diye düşündüğümüz bu monitor değil.
+
+319
+00:39:38,840 --> 00:39:40,840
+Onunla karıştırmayın.
+
+320
+00:39:40,840 --> 00:39:42,840
+Zaten bakın ne diyor?
+
+321
+00:39:42,840 --> 00:39:50,840
+A high level abstraction, üst seviyeden bir özet that provides a convenient and effective mechanism for process synchronization.
+
+322
+00:39:50,840 --> 00:39:57,840
+Convenient kullanımı kolay, efektif de etkin, efektif mekanizma.
+
+323
+00:39:57,840 --> 00:39:58,840
+Bu ne için?
+
+324
+00:39:58,840 --> 00:40:00,840
+Process synchronization için.
+
+325
+00:40:00,840 --> 00:40:03,840
+Ve abstrak bir yapı.
+
+326
+00:40:03,840 --> 00:40:16,119
+Monitorun yapısına girdiğinizde bununla ilgili ayrıntıları incelediğinizde aslında monitor bir klas oldu.
+
+327
+00:40:16,119 --> 00:40:26,119
+O monitor kullanılarak synchronizasyon sağlanacağı zaman da o klasdan bir instance, bir objekt oluşturulduğunu göreceğiz.
+
+328
+00:40:26,119 --> 00:40:31,429
+Monitorun özelliği üçüncü maddede söyleniyor.
+
+329
+00:40:31,429 --> 00:40:37,429
+Only one process may be active within the monitor at a time.
+
+330
+00:40:37,429 --> 00:40:40,429
+Yani ben bir monitor oluşturdum.
+
+331
+00:40:40,429 --> 00:40:42,429
+Bu arada monitor bir kütüphane.
+
+332
+00:40:42,429 --> 00:40:44,429
+Birileri bizim için yazmış.
+
+333
+00:40:44,429 --> 00:40:48,429
+Bunu üst seviye dilin paketi içerisine yerleştirmiş.
+
+334
+00:40:48,429 --> 00:40:51,429
+Yani bu C'de de monitorlar var.
+
+335
+00:40:51,429 --> 00:40:53,429
+C++'da da var.
+
+336
+00:40:53,429 --> 00:40:54,429
+Java'da da var.
+
+337
+00:40:54,429 --> 00:40:55,429
+Python'da da var.
+
+338
+00:40:56,429 --> 00:40:57,429
+Aklınıza gelebilecek.
+
+339
+00:40:57,429 --> 00:41:03,429
+Yani monitor illaki sadece bir dil için yazılabilir.
+
+340
+00:41:03,429 --> 00:41:06,429
+O dile bağlıdır diye bir şey yok.
+
+341
+00:41:06,429 --> 00:41:12,429
+Kuralları uyguladıktan sonra, semafor yapısı olduktan sonra monitoru her dil için yazabiliriz.
+
+342
+00:41:12,429 --> 00:41:15,429
+Ve buradaki esas güzellik, esas önemli bir şey.
+
+343
+00:41:15,429 --> 00:41:20,429
+Onu bir kütüphane olarak, hazır kullanılabilecek bir yapı olarak yazmamız.
+
+344
+00:41:20,429 --> 00:41:27,429
+O zaman monitor yapısı, mesela Reader-Writer problemi için monitor yapısı,
+
+345
+00:41:27,429 --> 00:41:29,429
+bounded buffer problemi için monitor yapısı,
+
+346
+00:41:29,429 --> 00:41:31,429
+bu hazır kenarda duruyor.
+
+347
+00:41:31,429 --> 00:41:35,429
+Ben bundan bir instance oluşturuyorum.
+
+348
+00:41:35,429 --> 00:41:40,429
+Daha sonra bu instance'ı bu monitor üzerinden,
+
+349
+00:41:40,429 --> 00:41:46,429
+o monitorun sağladığı sinkronizasyon mekanizmasına göre konuşacak proseslere paslıyorum.
+
+350
+00:41:46,429 --> 00:41:57,349
+Fakat bu kadar güzel görünmesine rağmen monitorun en sıkıntılı noktalarından biri,
+
+351
+00:41:57,349 --> 00:42:05,349
+her sinkronizasyon problemi için yazdığımız monitor kodu yeterli şekilde efektif olmayabiliyor.
+
+352
+00:42:05,349 --> 00:42:07,349
+Bunu da unutma.
+
+353
+00:42:07,349 --> 00:42:14,349
+Bu arada bakın, şurada monitor yapısının içerisinde bir initialization kod var.
+
+354
+00:42:14,349 --> 00:42:20,349
+Burası monitorun, object-oriented da düşünecek olursak, o yaklaşımda düşünecek olursak,
+
+355
+00:42:20,349 --> 00:42:22,349
+constructor kısmı.
+
+356
+00:42:22,349 --> 00:42:26,349
+Yani o monitordan bir instance oluşturduğunda,
+
+357
+00:42:26,349 --> 00:42:28,349
+önce neresi çalışacak?
+
+358
+00:42:28,349 --> 00:42:30,349
+O initialization kod kısmı çalışacak.
+
+359
+00:42:30,349 --> 00:42:32,349
+Bu da şu anlama geliyor.
+
+360
+00:42:32,349 --> 00:42:38,349
+Az önceki kullandığımız yapılar üzerinden ifade edecek olursak,
+
+361
+00:42:38,349 --> 00:42:41,349
+işte empty n'e mi set edilecek?
+
+362
+00:42:41,349 --> 00:42:44,349
+O arada full 0'a mı set edilecek?
+
+363
+00:42:44,349 --> 00:42:46,349
+O arada mutex 1'e mi set edilecek?
+
+364
+00:42:46,349 --> 00:42:52,349
+O arada böylece iklendirmeler, semafor iltlendirmeleri veya diğer değişken iltlendirmeleri
+
+365
+00:42:52,349 --> 00:42:57,349
+tamamen net ve olması gerektiği gibi gerçekleşecek.
+
+366
+00:42:57,349 --> 00:43:01,349
+Monitorun içerisinde shared variables'lar var.
+
+367
+00:43:01,349 --> 00:43:03,349
+Paylaşılan değişkenler çok doğal.
+
+368
+00:43:03,349 --> 00:43:04,349
+Çok doğal.
+
+369
+00:43:04,349 --> 00:43:07,349
+Zaten prosesler bir araya geldiğinde neden geliyorlardı?
+
+370
+00:43:07,349 --> 00:43:09,349
+Paylaşılan bir şey olması için geliyorlardı.
+
+371
+00:43:09,349 --> 00:43:15,349
+Monitorda paylaşılan değişkenleri korumak için daha üst seviyeden oluşturduğumuz bir yapı ise,
+
+372
+00:43:15,349 --> 00:43:20,349
+o zaman shared variables'ların burada olmasından daha doğal bir şey olamaz.
+
+373
+00:43:20,349 --> 00:43:24,349
+İçeride de, bakın, prosedürler var aynen.
+
+374
+00:43:24,349 --> 00:43:26,349
+Bunlar da neye benziyor?
+
+375
+00:43:26,349 --> 00:43:32,349
+Klaslardaki metot olarak işte p1, pn diye düşünenebilirsiniz.
+
+376
+00:43:32,349 --> 00:43:39,349
+Az önce böyle pseudo-code olarak verilmiş olan monitor yapısını
+
+377
+00:43:39,349 --> 00:43:47,079
+burada böyle daha bir şematik, şekilsel olarak görüyoruz.
+
+378
+00:43:47,079 --> 00:43:53,079
+Monitorda herhangi bir anda sadece bir proses aktif olabilir dedik ya,
+
+379
+00:43:53,079 --> 00:43:56,079
+o zaman bakın monitorun girişinde bir kuyruk var.
+
+380
+00:43:56,079 --> 00:43:59,079
+Sadece bir tanesi aktif olduğuna göre,
+
+381
+00:43:59,079 --> 00:44:04,079
+ben de bu kuyruğu sıralı bir kuyruk olarak modelleyebilirim.
+
+382
+00:44:04,079 --> 00:44:07,079
+O şekilde düşünebilirim.
+
+383
+00:44:07,079 --> 00:44:10,079
+Arka arkaya bunlar bekliyorlar.
+
+384
+00:44:10,079 --> 00:44:15,079
+İçeride operations dediği az önceki metotlar,
+
+385
+00:44:15,079 --> 00:44:17,079
+shared data'yı zaten konuştuk,
+
+386
+00:44:17,079 --> 00:44:20,079
+en altta da initialization kod var.
+
+387
+00:44:20,079 --> 00:44:28,530
+Şimdi, monitorlardan...
+
+388
+00:44:28,530 --> 00:44:31,530
+Ara vermek ister misiniz? İyi misiniz?
+
+389
+00:44:31,530 --> 00:44:32,530
+Evet.
+
+390
+00:44:32,530 --> 00:44:35,530
+Bir dakika öyle verip siz devam edelim isterseniz.
+
+391
+00:44:35,530 --> 00:44:37,530
+Olur arkadaşlar, bir 10 dakika duralım,
+
+392
+00:44:37,530 --> 00:44:38,530
+ondan sonra da devam edelim.
+
+393
+00:44:38,530 --> 00:44:40,530
+Saat 4'te devam ederiz.
+
+394
+00:44:40,530 --> 00:44:43,530
+Zaten çünkü slide'larımız da çok fazla kalmadı.
+
+395
+00:44:43,530 --> 00:44:44,530
+Şey yapabiliriz.
+
+396
+00:44:44,530 --> 00:44:47,530
+Benimkilerde sıkıntı yok.
+
+397
+00:44:47,530 --> 00:44:48,530
+Tamam.
+
+398
+00:44:48,530 --> 00:44:49,530
+OK.
+
+399
+00:44:49,530 --> 00:58:15,630
+Şimdi mute'ı alıyorum.
+
+400
+00:58:15,630 --> 00:58:16,630
+Ben de açtım.
+
+401
+00:58:16,630 --> 00:58:17,630
+Evet, ben de sesi açtım.
+
+402
+00:58:17,630 --> 00:58:18,630
+Kaldığım yerden...
+
+403
+00:58:18,630 --> 00:58:20,630
+Doğru yerdeyiz, tamam.
+
+404
+00:58:20,630 --> 00:58:28,329
+Şimdi bu mutex yapısını gerçekleştirmek için
+
+405
+00:58:28,329 --> 00:58:36,920
+yine weight ve signal mekanizmalarından yararlanacağız.
+
+406
+00:58:36,920 --> 00:58:43,650
+Ancak semafordaki weight ve signal'a göre
+
+407
+00:58:43,650 --> 00:58:47,650
+biraz farklılaştırmış mantıkla çalışan
+
+408
+00:58:47,650 --> 00:58:51,650
+weight ve signal mekanizması var burada.
+
+409
+00:58:51,650 --> 00:58:56,650
+İlk gördüğümüz semaforlardı
+
+410
+00:58:56,650 --> 00:58:59,650
+ve semaforlarda çalışan weight ve signal'dı.
+
+411
+00:58:59,650 --> 00:59:03,650
+Şu anda ise condition variables'lar var.
+
+412
+00:59:03,650 --> 00:59:06,650
+Yani şartlı değişkenler diyebiliriz.
+
+413
+00:59:06,650 --> 00:59:09,650
+Ve bu şartlı değişkenleri kullanarak çalışan
+
+414
+00:59:09,650 --> 00:59:11,650
+weight ve signal var.
+
+415
+00:59:11,650 --> 00:59:16,650
+Her iki taraftaki primitiflerin isimleri de
+
+416
+00:59:16,650 --> 00:59:20,650
+ne yazık ki weight ve signal biraz kafanız karışıyor.
+
+417
+00:59:20,650 --> 00:59:21,650
+Farkındayım.
+
+418
+00:59:21,650 --> 00:59:29,650
+Ancak aslında temelde aynı şeyi anlatıyor,
+
+419
+00:59:29,650 --> 00:59:32,650
+aynı şeyi ifade ediyor.
+
+420
+00:59:32,650 --> 00:59:34,650
+Biraz mantık farkı var.
+
+421
+00:59:34,650 --> 00:59:36,650
+Onu şimdi açıklayacağız size.
+
+422
+00:59:36,650 --> 00:59:44,650
+X condition variable'ı üzerinde iki tane operasyon
+
+423
+00:59:44,650 --> 00:59:46,650
+tanımlanmış durumda.
+
+424
+00:59:46,650 --> 00:59:51,650
+Şimdi hatırlarsanız semaforda weight'in yanında
+
+425
+00:59:51,650 --> 00:59:52,650
+semafor vardı.
+
+426
+00:59:52,650 --> 00:59:54,650
+Semaforun değerine bakıyorduk.
+
+427
+00:59:54,650 --> 00:59:58,650
+Semaforun değeri pozitifse, azaltılabiliyorsa
+
+428
+00:59:58,650 --> 00:59:59,650
+sorun yoktu.
+
+429
+00:59:59,650 --> 01:00:01,650
+Ama negatife düşüyorsa,
+
+430
+01:00:01,650 --> 01:00:03,650
+bu laki oluyordu.
+
+431
+01:00:03,650 --> 01:00:07,650
+Burada ise condition variable'da
+
+432
+01:00:07,650 --> 01:00:09,650
+weight'i kullanarak,
+
+433
+01:00:10,650 --> 01:00:13,650
+ilgili condition variable üzerinden
+
+434
+01:00:13,650 --> 01:00:15,650
+weight'i çağıran
+
+435
+01:00:15,650 --> 01:00:18,650
+prosesin devam etmesi için
+
+436
+01:00:18,650 --> 01:00:21,650
+aynı condition variable üzerinden
+
+437
+01:00:21,650 --> 01:00:24,650
+bir signal yapılmış olması lazımdı.
+
+438
+01:00:24,650 --> 01:00:27,650
+Eğer signal yapılmadıysa,
+
+439
+01:00:27,650 --> 01:00:29,650
+signal yapılana kadar
+
+440
+01:00:29,650 --> 01:00:32,650
+proses beklemeliyordu.
+
+441
+01:00:33,650 --> 01:00:35,650
+Eğer signal yapılmadıysa,
+
+442
+01:00:35,650 --> 01:00:38,650
+signal yapılana kadar
+
+443
+01:00:38,650 --> 01:00:41,650
+proses bekliyor veya thread bekliyor.
+
+444
+01:00:41,650 --> 01:00:42,650
+Yani bakın burada
+
+445
+01:00:42,650 --> 01:00:44,650
+X condition variable,
+
+446
+01:00:44,650 --> 01:00:46,650
+X weight diyoruz.
+
+447
+01:00:46,650 --> 01:00:49,650
+X condition variable'ı üzerinde daha önceden
+
+448
+01:00:49,650 --> 01:00:52,650
+X signal çalıştırılmadıysa,
+
+449
+01:00:52,650 --> 01:00:54,650
+o zaman X weight bekleyecek.
+
+450
+01:00:54,650 --> 01:00:56,650
+Mantık bu.
+
+451
+01:00:56,650 --> 01:00:57,650
+Bir aç parantez,
+
+452
+01:00:57,650 --> 01:01:00,650
+kafa parantez gibi düşünebilirsiniz.
+
+453
+01:01:00,650 --> 01:01:03,650
+Belki üst seviyede.
+
+454
+01:01:03,650 --> 01:01:07,019
+X signal ise
+
+455
+01:01:07,019 --> 01:01:09,019
+şöyle çalışıyor.
+
+456
+01:01:09,019 --> 01:01:14,940
+Eğer
+
+457
+01:01:14,940 --> 01:01:16,940
+X değişkeni üzerinde
+
+458
+01:01:16,940 --> 01:01:18,940
+bir weight yapılmışsa,
+
+459
+01:01:18,940 --> 01:01:21,940
+o değişkeni üzerinden weight yapıp da
+
+460
+01:01:21,940 --> 01:01:23,940
+block'e olmuş olan prosesi
+
+461
+01:01:23,940 --> 01:01:24,940
+serbest bırakıyor.
+
+462
+01:01:24,940 --> 01:01:26,940
+Yani weighting state'den
+
+463
+01:01:26,940 --> 01:01:28,940
+ready state'de aktarıyor.
+
+464
+01:01:28,940 --> 01:01:32,940
+Ancak X condition variable'ı üzerinde
+
+465
+01:01:32,940 --> 01:01:35,940
+bunlara bir weight gerçekleştirmemişse,
+
+466
+01:01:35,940 --> 01:01:39,940
+signal yapılmamış gibi düşünülüyor.
+
+467
+01:01:39,940 --> 01:01:54,070
+Yani hiçbir efekti olmuyor.
+
+468
+01:01:54,070 --> 01:01:57,070
+O zaman bakın,
+
+469
+01:01:57,070 --> 01:02:00,070
+kuyrukları yani
+
+470
+01:02:00,070 --> 01:02:03,070
+semafor giriş çıkışında
+
+471
+01:02:03,070 --> 01:02:04,070
+kuyruklar var,
+
+472
+01:02:04,070 --> 01:02:06,070
+içeride sadece bir tane proses
+
+473
+01:02:06,070 --> 01:02:09,070
+olabilir diye düşündük ya.
+
+474
+01:02:09,070 --> 01:02:11,070
+Monitöre girişi
+
+475
+01:02:11,070 --> 01:02:13,070
+organize etmek için,
+
+476
+01:02:13,070 --> 01:02:15,070
+monitörde sadece bir prosesin
+
+477
+01:02:15,070 --> 01:02:18,070
+olmasını organize etmek için
+
+478
+01:02:18,070 --> 01:02:21,070
+condition variable'lar ile
+
+479
+01:02:21,070 --> 01:02:24,070
+korunmuş kuyruklardan
+
+480
+01:02:24,070 --> 01:02:33,940
+yararlanacağız.
+
+481
+01:02:33,940 --> 01:02:36,940
+Burada senaryolar var.
+
+482
+01:02:36,940 --> 01:02:38,940
+En temel senaryo.
+
+483
+01:02:38,940 --> 01:02:40,940
+Şimdi bakın P prosesi
+
+484
+01:02:40,940 --> 01:02:42,940
+X signal çağırıyor.
+
+485
+01:02:42,940 --> 01:02:44,940
+Ve Q prosesi de
+
+486
+01:02:44,940 --> 01:02:47,940
+X weight sebebiyle
+
+487
+01:02:47,940 --> 01:02:49,940
+suspend edilmiş.
+
+488
+01:02:49,940 --> 01:02:54,929
+Yani weighting'e alınmış durumda.
+
+489
+01:02:54,929 --> 01:02:57,929
+Tek işlemcilik çözümlerden bahsediyoruz.
+
+490
+01:02:57,929 --> 01:02:59,929
+Çünkü olay hep orada başlatılmış.
+
+491
+01:02:59,929 --> 01:03:02,929
+Sonradan çok işlemcilik çözümlere gidilmiş.
+
+492
+01:03:02,929 --> 01:03:06,929
+Tek işlemcilik çözümden bahsettiğimize göre,
+
+493
+01:03:06,929 --> 01:03:09,929
+hem Q hem de P
+
+494
+01:03:09,929 --> 01:03:12,929
+aynı anda çalışamayacağına göre,
+
+495
+01:03:12,929 --> 01:03:14,929
+bir de zaten bu eğer
+
+496
+01:03:14,929 --> 01:03:17,929
+monitör üzerindeki içindeki bir
+
+497
+01:03:17,929 --> 01:03:19,929
+kuyruğu ifade ediyorsa,
+
+498
+01:03:19,929 --> 01:03:21,929
+monitörde ikisinin birden
+
+499
+01:03:21,929 --> 01:03:25,460
+aktif olması mümkün olmadığına göre,
+
+500
+01:03:25,460 --> 01:03:27,460
+mantık gayet basit.
+
+501
+01:03:27,460 --> 01:03:30,460
+P'nin X signalından dolayı
+
+502
+01:03:30,460 --> 01:03:33,460
+Q rezüme ediyorsa,
+
+503
+01:03:33,460 --> 01:03:35,460
+P'nin ne olması gerekiyor?
+
+504
+01:03:35,460 --> 01:03:37,460
+Durdurulması gerekiyor.
+
+505
+01:03:37,460 --> 01:03:39,460
+Yani bakın otomatik mambini oldu.
+
+506
+01:03:39,460 --> 01:03:41,460
+Toggle etme oldu.
+
+507
+01:03:41,460 --> 01:03:45,460
+Biri aktifken, aktifliği kesintiye uğradı.
+
+508
+01:03:45,460 --> 01:03:47,460
+Diğeri durdurulmuşken
+
+509
+01:03:47,460 --> 01:03:50,460
+aktif olmaya çalışmaya başladı.
+
+510
+01:03:50,460 --> 01:03:58,289
+Signal primitifinin iki şekli var.
+
+511
+01:03:58,289 --> 01:04:02,289
+Signal and wait, signal and continue.
+
+512
+01:04:02,289 --> 01:04:06,289
+Signal and wait şeklinde ise,
+
+513
+01:04:06,289 --> 01:04:10,289
+yukarıdaki yine P ve Q'yu kullanarak anlatıyoruz.
+
+514
+01:04:10,289 --> 01:04:17,590
+P, Q monitörden çıkana kadar
+
+515
+01:04:17,590 --> 01:04:19,590
+veya başka bir
+
+516
+01:04:19,590 --> 01:04:22,590
+condition variable sebebiyle
+
+517
+01:04:22,590 --> 01:04:25,590
+wait'ten dolayı
+
+518
+01:04:25,590 --> 01:04:28,590
+kenara alınana kadar beklemek zorunda.
+
+519
+01:04:28,590 --> 01:04:34,340
+Signal and continue'da
+
+520
+01:04:34,340 --> 01:04:39,579
+P'ye signal'ı gönderiyor.
+
+521
+01:04:39,579 --> 01:04:47,210
+Ama Q monitöre ne zaman giriyor?
+
+522
+01:04:47,210 --> 01:04:50,210
+P monitörden çıktığında veya
+
+523
+01:04:50,210 --> 01:04:55,210
+bir başka condition variable üzerinde
+
+524
+01:04:55,210 --> 01:04:58,210
+wait çalıştırdığını.
+
+525
+01:04:58,210 --> 01:05:01,210
+Yani dikkat edin, hiçbir şart altında
+
+526
+01:05:01,210 --> 01:05:04,210
+hiçbir zaman kesinlikle ve kesinlikle
+
+527
+01:05:04,210 --> 01:05:14,059
+iki process aynı anda aktif olmuyorlar.
+
+528
+01:05:14,059 --> 01:05:18,059
+Ya P, Q'ya öncelik veriyor.
+
+529
+01:05:18,059 --> 01:05:20,059
+Q'nun çalışmasını ve monitörden çıkmasını
+
+530
+01:05:20,059 --> 01:05:22,059
+ya da bir başka wait'ten dolayı
+
+531
+01:05:22,059 --> 01:05:24,059
+bloque olmasını bekliyor.
+
+532
+01:05:24,059 --> 01:05:27,059
+Ya da P'ye öncelik veriliyor.
+
+533
+01:05:27,059 --> 01:05:30,059
+P monitörden çıkana veya bir başka
+
+534
+01:05:30,059 --> 01:05:33,059
+condition variable sebebiyle
+
+535
+01:05:33,059 --> 01:05:37,059
+wait yapıp bloque olana kadar Q bekletiliyor.
+
+536
+01:05:37,059 --> 01:05:42,059
+Dikkat edin, birinde Q'nun önceliği var,
+
+537
+01:05:42,059 --> 01:05:45,059
+diğerinde P'nin önceliği var.
+
+538
+01:05:45,059 --> 01:05:47,059
+Bundan dolayı da her ikisinin de
+
+539
+01:05:47,059 --> 01:05:52,059
+birbirine göre artı ve avantajları söz konusu.
+
+540
+01:05:52,059 --> 01:05:56,059
+Şimdi ilk defa monitör implementasyonu
+
+541
+01:05:56,059 --> 01:06:02,199
+Pascal'ın paralel programlamaya uygun olan
+
+542
+01:06:02,199 --> 01:06:08,510
+versiyonu concurrent Pascal'da gerçekleştiriliyor
+
+543
+01:06:08,510 --> 01:06:13,510
+ve orada gerçekleştirilirken de
+
+544
+01:06:13,510 --> 01:06:19,510
+hangi yol seçiliyor o implementasyon da?
+
+545
+01:06:19,510 --> 01:06:24,510
+P, signalı yaptığı anda monitörü
+
+546
+01:06:24,510 --> 01:06:29,510
+otomatikman terk ediyor ve Q
+
+547
+01:06:29,510 --> 01:06:32,510
+wait'ten çıkartılıp resume eder hale,
+
+548
+01:06:32,510 --> 01:06:37,510
+yani ready üzerinden running hale getiriliyor.
+
+549
+01:06:37,510 --> 01:06:40,510
+İşte az önce size söyledik C-sharp'da da monitörler var.
+
+550
+01:06:40,510 --> 01:06:42,510
+Java'da da monitörler var.
+
+551
+01:06:42,510 --> 01:06:46,510
+Mesa diye başka bir eski dönemden gelen
+
+552
+01:06:46,510 --> 01:06:48,510
+programlama dili var.
+
+553
+01:06:48,510 --> 01:06:50,510
+Onda da monitörler var.
+
+554
+01:06:50,510 --> 01:06:54,510
+İsterseniz monitörleri kendiniz de
+
+555
+01:06:54,510 --> 01:06:55,510
+ne yapabilirsiniz?
+
+556
+01:06:55,510 --> 01:06:56,510
+Yazabilirsiniz.
+
+557
+01:06:56,510 --> 01:07:00,510
+Bunu engelleyen bir şey söz konusu değil.
+
+558
+01:07:00,510 --> 01:07:06,920
+Şimdi burada ki slide'ları incelersiniz
+
+559
+01:07:06,920 --> 01:07:09,920
+anlattığımız şekle göre
+
+560
+01:07:09,920 --> 01:07:15,519
+Dining Philosopher probleminin
+
+561
+01:07:15,519 --> 01:07:18,519
+monitör kullanılarak çözülmesi.
+
+562
+01:07:18,519 --> 01:07:22,519
+Bakın temelini ben size anlatayım.
+
+563
+01:07:22,519 --> 01:07:27,519
+Elumeration'a göre 5 tane state var.
+
+564
+01:07:27,519 --> 01:07:29,519
+Elumeration'da ne diyor bakın?
+
+565
+01:07:29,519 --> 01:07:31,519
+Thinking, hungry, eating yani
+
+566
+01:07:31,519 --> 01:07:34,519
+düşünüyor, aç veyahut da yiyor şeklinde.
+
+567
+01:07:34,519 --> 01:07:36,519
+5 tane filosof var.
+
+568
+01:07:36,519 --> 01:07:38,519
+Condition variable var.
+
+569
+01:07:38,519 --> 01:07:40,519
+İşte self denmiş 5 tane.
+
+570
+01:07:40,519 --> 01:07:42,519
+2 tane metodumuz var.
+
+571
+01:07:42,519 --> 01:07:45,519
+Pickup ve put down.
+
+572
+01:07:45,519 --> 01:07:48,519
+Yani chopstick'leri alma ve chopstick'leri
+
+573
+01:07:48,519 --> 01:07:50,519
+bırakma şeklinde.
+
+574
+01:07:50,519 --> 01:07:55,980
+Bir de test diye bir metot var.
+
+575
+01:07:55,980 --> 01:07:58,980
+Test metodu da neyi aslında
+
+576
+01:07:58,980 --> 01:08:01,980
+öngörüyor veyahut da neyi sağlıyor?
+
+577
+01:08:01,980 --> 01:08:04,980
+Hani hatırlarsanız sağ taraftakini alıyorum
+
+578
+01:08:04,980 --> 01:08:07,980
+solu alabilecek miyim veya sol taraftakini alıyorum
+
+579
+01:08:07,980 --> 01:08:09,980
+sağı alabilecek miyim?
+
+580
+01:08:09,980 --> 01:08:12,980
+Buna göre o deadlock oluşmasını
+
+581
+01:08:12,980 --> 01:08:14,980
+engelleyecek tarzda.
+
+582
+01:08:14,980 --> 01:08:17,979
+Dikkat edin initialization kodda
+
+583
+01:08:17,979 --> 01:08:21,979
+herkesin bütün filosofların state'i
+
+584
+01:08:21,979 --> 01:08:24,979
+ne olarak eklendiriliyor?
+
+585
+01:08:24,979 --> 01:08:32,979
+Thinking olarak eklendiriliyor.
+
+586
+01:08:32,979 --> 01:08:35,979
+Bu şekilde modellediğimiz zaman
+
+587
+01:08:35,979 --> 01:08:39,979
+her filosof
+
+588
+01:08:39,979 --> 01:08:42,979
+pick up ve put down
+
+589
+01:08:42,979 --> 01:08:45,979
+metotlarını şurada gördüğünüz kadar
+
+590
+01:08:45,979 --> 01:08:48,979
+basit bir şekilde çağırabiliyor.
+
+591
+01:08:48,979 --> 01:08:51,979
+Ancak burada deadlock yok
+
+592
+01:08:51,979 --> 01:08:54,979
+fakat starvation olabilir.
+
+593
+01:08:54,979 --> 01:08:57,979
+Neden? Hep aynı sırayla
+
+594
+01:08:57,979 --> 01:09:02,930
+filosoflara hep aynı sırayla
+
+595
+01:09:02,930 --> 01:09:05,930
+sıra gelirse
+
+596
+01:09:05,930 --> 01:09:08,930
+bir kısmı daha önce konuştuğumuz gibi
+
+597
+01:09:08,930 --> 01:09:11,930
+öncelikli olacak.
+
+598
+01:09:11,930 --> 01:09:16,930
+İşte 5 tane chopstick olduğuna göre
+
+599
+01:09:16,930 --> 01:09:19,930
+2 tanesi gelecek, diğer 3 tanesi bekleyecek.
+
+600
+01:09:19,930 --> 01:09:22,930
+Bırakıldı, tekrar bir sonraki tur geldi
+
+601
+01:09:22,930 --> 01:09:25,930
+yine aynı 2 tanesi 4 tane chopstick'i aldı.
+
+602
+01:09:25,930 --> 01:09:28,930
+O 2 tanesi yedi, tekrar sıra geldi
+
+603
+01:09:28,930 --> 01:09:31,930
+yine aynı 2 tanesi 4 tane chopstick'i aldı.
+
+604
+01:09:31,930 --> 01:09:34,930
+Böyle olduğu zaman hep aynı 2 tane
+
+605
+01:09:34,930 --> 01:09:37,930
+filozof yemek yemiş olacak, diğer 3 filozof
+
+606
+01:09:37,930 --> 01:09:40,930
+hiç yemek yiyemeyecek.
+
+607
+01:09:40,930 --> 01:09:43,930
+Yani o zaman burada bir de neyin olması gerekiyor?
+
+608
+01:09:43,930 --> 01:09:46,930
+Random bir şekilde bu sıra
+
+609
+01:09:46,930 --> 01:09:49,930
+pas edilebilmesi, döndürülebilmesi
+
+610
+01:09:49,930 --> 01:09:55,939
+gerekiyor.
+
+611
+01:09:55,939 --> 01:09:58,939
+Bir de istersek
+
+612
+01:09:58,939 --> 01:10:01,939
+monitörü semafor kullanarak da
+
+613
+01:10:01,939 --> 01:10:04,939
+gerçekleştirebiliriz.
+
+614
+01:10:04,939 --> 01:10:07,939
+Burada onunla alakalı örnekler verilmiş.
+
+615
+01:10:07,939 --> 01:10:10,939
+Semaforları anlattık, condition variable'ları
+
+616
+01:10:10,939 --> 01:10:13,939
+anlattık, bu şeyleri
+
+617
+01:10:13,939 --> 01:10:16,939
+slide'leri inceleyebilirsiniz.
+
+618
+01:10:16,939 --> 01:10:19,939
+Monitoru zaten condition variable'a nasıl
+
+619
+01:10:19,939 --> 01:10:22,939
+implement ettiğimizin ayrıntısını az önce
+
+620
+01:10:22,939 --> 01:10:25,939
+anlattık, burayı da geçebiliriz.
+
+621
+01:10:25,939 --> 01:10:28,939
+Evet bunu da geçeceğiz.
+
+622
+01:10:28,939 --> 01:10:35,300
+Şimdi monitör kullanıldığında
+
+623
+01:10:35,300 --> 01:10:38,300
+bazı problemler daha özet,
+
+624
+01:10:38,300 --> 01:10:41,300
+abstrakt çözülebilir hale geliyor ama
+
+625
+01:10:41,300 --> 01:10:44,300
+bu sefer başka problemler
+
+626
+01:10:44,300 --> 01:10:47,300
+gündeme geliyor. Bunlardan bir tanesi şu.
+
+627
+01:10:47,300 --> 01:10:52,250
+Az önce Starvation'dan bahsettim ya
+
+628
+01:10:52,250 --> 01:10:55,250
+5 tane filozof var
+
+629
+01:10:55,250 --> 01:10:58,250
+aldılar chopstickleri, kullandılar
+
+630
+01:10:58,250 --> 01:11:01,250
+bıraktılar, bir sonraki turda
+
+631
+01:11:01,250 --> 01:11:04,250
+tekrar alacaklar ama yine
+
+632
+01:11:04,250 --> 01:11:07,250
+aynı iki tanesi alabildi çünkü aynı sırayla
+
+633
+01:11:07,250 --> 01:11:10,250
+ilerlerdi. Bunun sebebi ne?
+
+634
+01:11:10,250 --> 01:11:15,039
+Bunun sebebi şu. Diyelim ki bir
+
+635
+01:11:15,039 --> 01:11:18,039
+X condition variable'ı var ve bu
+
+636
+01:11:18,039 --> 01:11:21,039
+X condition variable üzerinde bekleyen
+
+637
+01:11:21,039 --> 01:11:25,829
+weight ile bekleyen prosesler var.
+
+638
+01:11:25,829 --> 01:11:30,109
+P1, P2, P3, P4 olsun.
+
+639
+01:11:30,109 --> 01:11:33,109
+O şekilde bekliyorlar.
+
+640
+01:11:33,109 --> 01:11:36,109
+Bir prosesin bu condition variable'ı
+
+641
+01:11:36,109 --> 01:11:39,109
+kullanarak signal çağırması lazım ki
+
+642
+01:11:39,109 --> 01:11:42,109
+prosesler serbest kalsın.
+
+643
+01:11:42,109 --> 01:11:45,109
+Eğer biz her seferinde
+
+644
+01:11:45,109 --> 01:11:48,109
+first come first served şeklinde yani
+
+645
+01:11:48,109 --> 01:11:51,109
+ilk şu weight etmişti, ikinci bu weight etmişti,
+
+646
+01:11:51,109 --> 01:11:54,109
+üçüncü bu weight etmişti.
+
+647
+01:11:54,109 --> 01:11:57,109
+Bunları weighting'den aldık,
+
+648
+01:11:57,109 --> 01:12:00,109
+ready'ye gönderdik, ready'den de running'e
+
+649
+01:12:00,109 --> 01:12:03,109
+gönderecek olursak eğer
+
+650
+01:12:03,109 --> 01:12:06,109
+az önce anlattığımız Starvation'ın
+
+651
+01:12:06,109 --> 01:12:09,109
+oluşması için böyle neredeyse çanak tutmuş
+
+652
+01:12:09,109 --> 01:12:13,739
+olacağız. Bunun çözülmesi
+
+653
+01:12:13,739 --> 01:12:16,739
+gerekiyor. Yani orada bir
+
+654
+01:12:16,739 --> 01:12:19,739
+randomization yapılması
+
+655
+01:12:19,739 --> 01:12:24,180
+gerekiyor. Bunun içinde
+
+656
+01:12:24,180 --> 01:12:27,180
+rate'e bir parametre veriyoruz.
+
+657
+01:12:27,180 --> 01:12:30,180
+Bu parametre priority
+
+658
+01:12:30,180 --> 01:12:35,579
+oluyor ve diyoruz ki
+
+659
+01:12:35,579 --> 01:12:38,579
+priority'si en küçük olan kimse
+
+660
+01:12:38,579 --> 01:12:41,579
+önce o ready running'e
+
+661
+01:12:41,579 --> 01:12:44,579
+yani ready üzerinden running'e gider,
+
+662
+01:12:44,579 --> 01:12:47,579
+scheduling'ini ona göre ayarlıyoruz.
+
+663
+01:12:47,579 --> 01:12:50,579
+Bu priority'nin değiştirilmesi
+
+664
+01:12:50,579 --> 01:12:53,579
+priority ile oynanması sonucunda
+
+665
+01:12:53,579 --> 01:12:56,579
+otomatikman bir randomization
+
+666
+01:12:56,579 --> 01:12:59,579
+oluşturabiliyoruz. Yoksa
+
+667
+01:12:59,579 --> 01:13:02,579
+hepsi eşit öncelikte olursa
+
+668
+01:13:02,579 --> 01:13:05,579
+hep eşit sırayla
+
+669
+01:13:05,579 --> 01:13:08,579
+ilerleneceği için
+
+670
+01:13:08,579 --> 01:13:11,579
+sıraya girme
+
+671
+01:13:11,579 --> 01:13:14,579
+sırası ile sıradan çıkma sırası aynı
+
+672
+01:13:14,579 --> 01:13:17,579
+olacağı için bir önceki
+
+673
+01:13:17,579 --> 01:13:20,579
+şeyde anlattığımız, slide üzerinden
+
+674
+01:13:20,579 --> 01:13:23,579
+anlattığımız Starvation olayının
+
+675
+01:13:23,579 --> 01:13:26,579
+oluşma ihtimali çok yüksek.
+
+676
+01:13:26,579 --> 01:13:39,380
+Şimdi burada bir resource allocator
+
+677
+01:13:39,380 --> 01:13:42,380
+diye monitör tariflenmiş. O monitörün
+
+678
+01:13:42,380 --> 01:13:45,380
+kullanımında da dikkat ederseniz
+
+679
+01:13:45,380 --> 01:13:48,380
+her türlü karşılığı var bunun.
+
+680
+01:13:48,380 --> 01:13:51,380
+Equal weight'e denk düşüyor,
+
+681
+01:13:51,380 --> 01:13:54,380
+release'de signal'a denk düşüyor.
+
+682
+01:13:54,380 --> 01:13:57,380
+O yanındaki equity'nin yanındaki
+
+683
+01:13:57,380 --> 01:14:00,380
+priority'yi de
+
+684
+01:14:00,380 --> 01:14:03,380
+ne ile ilişkilendirilmişler?
+
+685
+01:14:03,380 --> 01:14:06,380
+Prosesin o kaynağı
+
+686
+01:14:06,380 --> 01:14:09,380
+ne süreyle kullanacağı bilgisiyle.
+
+687
+01:14:09,380 --> 01:14:12,380
+Ne dedik? Priority'si en düşük olan
+
+688
+01:14:12,380 --> 01:14:15,380
+daha öncelik kazanacak ya, eğer ben bununla
+
+689
+01:14:15,380 --> 01:14:18,380
+ilişkilendirirsem o önceliği niye garanti
+
+690
+01:14:18,380 --> 01:14:21,380
+etmiş olacağım? O kaynağı en kısa
+
+691
+01:14:21,380 --> 01:14:24,380
+kullanacak olan process diğerlerine göre
+
+692
+01:14:24,380 --> 01:14:27,380
+önce kaynağa erişmiş olacak.
+
+693
+01:14:27,380 --> 01:14:30,380
+Bir arkadaşa bakıp çıkacağım diyen adam
+
+694
+01:14:30,380 --> 01:14:33,380
+önce girecek aslında. O kadar. Uzun uzun
+
+695
+01:14:33,380 --> 01:14:39,479
+muhabbet etmeyeceğim, bir bakıp çıkacağım.
+
+696
+01:14:39,479 --> 01:14:42,479
+Durum bu. Burada bu resource allocator'ın
+
+697
+01:14:42,479 --> 01:14:45,479
+implementasyon ayrıntıları var. Buna bakarsınız.
+
+698
+01:14:45,479 --> 01:14:48,479
+Yani sonuçta C sintaksiyle yazılmış
+
+699
+01:14:48,479 --> 01:14:51,479
+rahatlıkla şey yapabileceğiniz,
+
+700
+01:14:51,479 --> 01:14:54,479
+anlayabileceğiniz bir yapı.
+
+701
+01:14:54,479 --> 01:14:57,479
+Sinkronizasyon örneklerine bakalım.
+
+702
+01:14:57,479 --> 01:15:00,479
+Yine Solaris burada klasik Unix
+
+703
+01:15:00,479 --> 01:15:03,479
+olarak, Unix travel olarak karşımızda var.
+
+704
+01:15:03,479 --> 01:15:06,479
+Windows var, Linux var. Bir de doğal olarak
+
+705
+01:15:06,479 --> 01:15:09,479
+P-Thread'de hani görüyoruz ya,
+
+706
+01:15:09,479 --> 01:15:12,479
+POSIX kütüphanesinden örnekler. Onlara bir
+
+707
+01:15:12,479 --> 01:15:15,479
+bakmış oluruz. Şimdi Solaris
+
+708
+01:15:15,479 --> 01:15:18,479
+de Sinkronizasyon için
+
+709
+01:15:18,479 --> 01:15:27,560
+neler var? Adaptif
+
+710
+01:15:27,560 --> 01:15:30,560
+muteks ne? Bakın bu önemli bir şey.
+
+711
+01:15:30,560 --> 01:15:33,560
+Adaptif muteks ne? Spinlock
+
+712
+01:15:33,560 --> 01:15:36,560
+olarak başlıyor. Spinlock neydi? Hani busy
+
+713
+01:15:36,560 --> 01:15:41,260
+waiting'le başlıyor.
+
+714
+01:15:41,260 --> 01:15:45,979
+Eğer birden fazla
+
+715
+01:15:45,979 --> 01:15:48,979
+işlemci varsa ve
+
+716
+01:15:48,979 --> 01:15:51,979
+lock üzerinden, çakışanlardan bir tanesi
+
+717
+01:15:51,979 --> 01:15:54,979
+bir işlemci de değil de diğer işlemci
+
+718
+01:15:54,979 --> 01:15:57,979
+değilse, o zaman işlemci
+
+719
+01:15:57,979 --> 01:16:00,979
+biraz böyle işi kolaylaştırmak için bir tanesi
+
+720
+01:16:00,979 --> 01:16:03,979
+busy waiting'te olacak ama diğer işlemci boşta
+
+721
+01:16:03,979 --> 01:16:06,979
+olacağı için hızlıca çok fazla
+
+722
+01:16:06,979 --> 01:16:09,979
+overhead olmadan size anlatmıştık.
+
+723
+01:16:09,979 --> 01:16:12,979
+İşte wait'ten geldi, ready'ye gitti, ready'den tekrar
+
+724
+01:16:12,979 --> 01:16:15,979
+running'e gitti. O zaman
+
+725
+01:16:15,979 --> 01:16:18,979
+bunun önüne geçmek için diyorlar ki bunu bir
+
+726
+01:16:18,979 --> 01:16:21,979
+spinlock ile yapalım. Çok fazla uğraşmıyor.
+
+727
+01:16:21,979 --> 01:16:24,979
+Ama eğer lock
+
+728
+01:16:24,979 --> 01:16:27,979
+yani block'ta olan
+
+729
+01:16:27,979 --> 01:16:30,979
+sleep'te olan
+
+730
+01:16:30,979 --> 01:16:33,979
+aktif olmayan bir thread,
+
+731
+01:16:33,979 --> 01:16:36,979
+dikkat edin bakın burada thread deniyor. Yani process değil
+
+732
+01:16:36,979 --> 01:16:39,979
+doğrudan thread konuşuluyor. Çünkü ne demiştik size?
+
+733
+01:16:39,979 --> 01:16:42,979
+Process ve thread dedikisinde burada kullanılabilir diye.
+
+734
+01:16:42,979 --> 01:16:45,979
+Thread'te ise o zaman
+
+735
+01:16:45,979 --> 01:16:48,979
+bu spinlock olmaktan çıkartılıyor. Çünkü neden?
+
+736
+01:16:48,979 --> 01:16:51,979
+Ne kadar süre boyunca onun
+
+737
+01:16:51,979 --> 01:16:54,979
+CPU'yu üzerinde kullanıp
+
+738
+01:16:54,979 --> 01:16:57,979
+check edeceğinin garantisi yok.
+
+739
+01:16:57,979 --> 01:17:00,979
+Solaris'te condition variable'lar var.
+
+740
+01:17:00,979 --> 01:17:03,979
+Yani az önce konuştuğumuz condition variable'ı
+
+741
+01:17:03,979 --> 01:17:06,979
+tanımlıyorsunuz. Wait, signal,
+
+742
+01:17:06,979 --> 01:17:09,979
+bunlar söz konusu.
+
+743
+01:17:09,979 --> 01:17:12,979
+Reader writer lock'ları var.
+
+744
+01:17:12,979 --> 01:17:15,979
+Reader writer lock'ları
+
+745
+01:17:15,979 --> 01:17:18,979
+ne için kullanılıyor? Critical section'ınız
+
+746
+01:17:18,979 --> 01:17:21,979
+normal'e göre daha uzun sürecekse,
+
+747
+01:17:21,979 --> 01:17:24,979
+daha fazla statement'a
+
+748
+01:17:24,979 --> 01:17:27,979
+sahipse o zaman
+
+749
+01:17:27,979 --> 01:17:30,979
+reader writer lock'lar üzerinde hani o önceliklendirme
+
+750
+01:17:30,979 --> 01:17:33,979
+vardı ya. Reader'lar öncelikli, writer'lar öncelikli.
+
+751
+01:17:33,979 --> 01:17:36,979
+O olsun diye. Bir de turnstile var.
+
+752
+01:17:36,979 --> 01:17:39,979
+Turnstile turnike demek.
+
+753
+01:17:39,979 --> 01:17:45,220
+Sıraya sokuyor en basit haliyle
+
+754
+01:17:45,220 --> 01:17:48,220
+giriş sırasıyla.
+
+755
+01:17:48,220 --> 01:17:51,220
+Turnstile demiyor. Demek ki Solaris'in
+
+756
+01:17:51,220 --> 01:17:54,220
+kernel'ı ve buna bağlı olarak Solaris'in runtime
+
+757
+01:17:54,220 --> 01:17:57,220
+environment'ı bize adaptive mutex, condition variable,
+
+758
+01:17:57,220 --> 01:18:00,220
+reader writer ve turnstile imkanları
+
+759
+01:18:00,220 --> 01:18:03,220
+tanıyor.
+
+760
+01:18:03,220 --> 01:18:06,220
+Priority inheritance'tan yaramlanıyor.
+
+761
+01:18:06,220 --> 01:18:09,220
+Hatırlarsanız şey vardı. Önceliği düşük ise
+
+762
+01:18:09,220 --> 01:18:12,220
+giremezdi.
+
+763
+01:18:12,220 --> 01:18:15,220
+Daha doğrusu lock'ı aldıysa diğerlerinin girmesine
+
+764
+01:18:15,220 --> 01:18:18,220
+olacaktı. Çünkü kendisi hiç çalışamadığı için.
+
+765
+01:18:18,220 --> 01:18:21,220
+Burada priority inheritance yapıp
+
+766
+01:18:21,220 --> 01:18:24,220
+en yüksek önceliği olan thread neyse
+
+767
+01:18:24,220 --> 01:18:27,220
+o turnstile'deki bekleyen, girmek için
+
+768
+01:18:27,220 --> 01:18:30,220
+bekleyen threadlerin tamamı
+
+769
+01:18:30,220 --> 01:18:33,220
+o önceliğe getiriliyor.
+
+770
+01:18:33,220 --> 01:18:36,220
+Windows'ta spin lock'lar var bakın.
+
+771
+01:18:39,220 --> 01:18:42,220
+Ama bunlar az önceki gibi böyle
+
+772
+01:18:42,220 --> 01:18:45,220
+hiç spin lock'lar falan değil.
+
+773
+01:18:47,220 --> 01:18:50,220
+Artık ilk maddenin bir önemi kalmadı.
+
+774
+01:18:50,220 --> 01:18:53,220
+Tek işlemcili kullanıyorsanız
+
+775
+01:18:53,220 --> 01:18:56,220
+Windows'u ki kullandığınızı düşünmüyorum.
+
+776
+01:18:56,220 --> 01:18:59,220
+En basitinden iki çekirdek, iki core neyse onlardan var.
+
+777
+01:18:59,220 --> 01:19:02,220
+Orada Windows neden yararlanıyor?
+
+778
+01:19:02,220 --> 01:19:05,220
+İnterapların maskelenmesine. Kendisi kernel seviyesinde
+
+779
+01:19:05,220 --> 01:19:08,220
+interapları belirli kapatıp açarak
+
+780
+01:19:08,220 --> 01:19:11,220
+senkronizasyonu sağlıyor.
+
+781
+01:19:11,220 --> 01:19:14,220
+Multiprocesör yapısında spin lock'ı kullanıyor.
+
+782
+01:19:14,220 --> 01:19:17,220
+Bu arada spin lock thread'i
+
+783
+01:19:17,220 --> 01:19:20,220
+never preempted yani
+
+784
+01:19:20,220 --> 01:19:23,220
+busy waiting'de olan bir process preempted
+
+785
+01:19:23,220 --> 01:19:26,220
+edilmiyor. Tasarımı kolaylaştırıyor.
+
+786
+01:19:28,220 --> 01:19:31,220
+Timer event mantığı var.
+
+787
+01:19:31,220 --> 01:19:34,220
+Event mantığı özel eventler arasında
+
+788
+01:19:34,220 --> 01:19:37,220
+neler var? Timer'lar var yani
+
+789
+01:19:37,220 --> 01:19:40,220
+timer üzerinden belli bir süre sonra
+
+790
+01:19:40,220 --> 01:19:43,220
+uyandırılabiliyorsunuz.
+
+791
+01:19:43,220 --> 01:19:46,220
+Devam edebiliyorsunuz.
+
+792
+01:19:46,220 --> 01:19:49,220
+Linux'a geldiğimizde
+
+793
+01:19:49,220 --> 01:19:52,220
+2.6 kernel öncesinde
+
+794
+01:19:52,220 --> 01:19:55,220
+bütün critical section'lar kısa süreli olan
+
+795
+01:19:55,220 --> 01:19:58,220
+critical section'lar
+
+796
+01:19:58,220 --> 01:20:01,220
+interrupt'ların enable disable edilmesiyle gerçekleşiyor.
+
+797
+01:20:01,220 --> 01:20:04,220
+Yani Windows'taki implementasyonun benzeri.
+
+798
+01:20:04,220 --> 01:20:07,220
+2.6 ve sonrasında critical section'lar
+
+799
+01:20:07,220 --> 01:20:10,220
+tamamen preemptive yani
+
+800
+01:20:10,220 --> 01:20:13,220
+critical section'da olan bir process
+
+801
+01:20:13,220 --> 01:20:16,220
+CPU'dan alınabilir. Critical section'ın
+
+802
+01:20:16,220 --> 01:20:19,220
+integrity'si bozulmaz. Devam eder.
+
+803
+01:20:19,220 --> 01:20:22,220
+Sonrasında da bu process
+
+804
+01:20:22,220 --> 01:20:25,220
+running'e geri döndüğünde kalmadığı yerde
+
+805
+01:20:25,220 --> 01:20:28,220
+çalışır. Linux'ta da
+
+806
+01:20:28,220 --> 01:20:31,220
+semaforlar var. Atomic integer'lar var.
+
+807
+01:20:31,220 --> 01:20:34,220
+Atomic integer'lar
+
+808
+01:20:34,220 --> 01:20:37,220
+en kolay mutex'de korunmuş.
+
+809
+01:20:37,220 --> 01:20:40,220
+Auto increment auto decrement imkanı
+
+810
+01:20:40,220 --> 01:20:43,220
+sağlayan o değişkeni eriştiğimizde
+
+811
+01:20:43,220 --> 01:20:46,220
+her erişimizde 1 artıyor veya 1 eksiliyor.
+
+812
+01:20:46,220 --> 01:20:49,220
+Spin lock'ları az önce konuştuk.
+
+813
+01:20:49,220 --> 01:20:52,220
+Reader writer versions of both.
+
+814
+01:20:52,220 --> 01:20:55,220
+Hatırlıyor musunuz? Reader'lara öncelik ve
+
+815
+01:20:55,220 --> 01:20:58,220
+writer'lara öncelik. Her ikisi de var.
+
+816
+01:20:58,220 --> 01:21:01,220
+Son madde yine single CPU
+
+817
+01:21:01,220 --> 01:21:03,220
+var mı?
+
+818
+01:21:03,220 --> 01:21:06,220
+Neyle? Interact'ların enabled ve
+
+819
+01:21:06,220 --> 01:21:09,220
+disabled edilmesiyle sağlanıyor.
+
+820
+01:21:09,220 --> 01:21:12,220
+P-thread mutex lock
+
+821
+01:21:12,220 --> 01:21:15,220
+sağlıyor bize. P-thread kütüphanesi.
+
+822
+01:21:15,220 --> 01:21:18,220
+Doğal olarak host'tan işletim sisteminden
+
+823
+01:21:18,220 --> 01:21:21,220
+bağımsız olarak sağlıyor. Yani alt tarafda
+
+824
+01:21:21,220 --> 01:21:24,220
+işletim sisteminde bunları gerçekleştirecek
+
+825
+01:21:24,220 --> 01:21:27,220
+karşılıkların olması lazım.
+
+826
+01:21:27,220 --> 01:21:30,220
+Mutex lock ve condition variable
+
+827
+01:21:30,220 --> 01:21:33,220
+bir de non-portable olanları var.
+
+828
+01:21:33,220 --> 01:21:36,220
+Spin lock ve read write lock'lar var.
+
+829
+01:21:36,220 --> 01:21:39,220
+Spin lock'ları az önce gördük.
+
+830
+01:21:39,220 --> 01:21:42,220
+50 çeşidi vardı. Interact enabled ve
+
+831
+01:21:42,220 --> 01:21:45,220
+disabled edilen veya adaptif olanı.
+
+832
+01:21:45,220 --> 01:21:48,220
+O yüzden o kısım ilgili işletim sistemine göre
+
+833
+01:21:48,220 --> 01:21:51,220
+değişebiliyor.
+
+834
+01:21:51,220 --> 01:21:54,220
+Şimdi bu noktadan sonra
+
+835
+01:21:54,220 --> 01:21:57,220
+özel programlama metodolojilerinde
+
+836
+01:21:57,220 --> 01:22:00,220
+ve özel donanım yapıları da
+
+837
+01:22:00,220 --> 01:22:03,220
+sinkronizasyon örnekleri var.
+
+838
+01:22:03,220 --> 01:22:06,220
+Transactional memory tarifi var.
+
+839
+01:22:06,220 --> 01:22:09,220
+Open MP tarifi var. Functional programming
+
+840
+01:22:09,220 --> 01:22:12,220
+language kısmı var. Burası
+
+841
+01:22:12,220 --> 01:22:15,220
+olayın fantastik kısmı.
+
+842
+01:22:15,220 --> 01:22:18,220
+Fantastik kısmı.
+
+843
+01:22:18,220 --> 01:22:21,220
+Bu noktadan sonrasını
+
+844
+01:22:21,220 --> 01:22:24,220
+işlemiyoruz.
+
+845
+01:22:24,220 --> 01:22:27,220
+Bu sunumumuz burada da bitiyor.
+
+846
+01:22:27,220 --> 01:22:30,220
+Zaten arkasında kaç slide var.
+
+847
+01:22:30,220 --> 01:22:33,220
+Transact her biri için birer tane var.
+
+848
+01:22:33,220 --> 01:22:36,220
+Onlardan sorumlu değilsiniz.
+
+849
+01:22:36,220 --> 01:22:39,220
+Deadlock'a şimdi girelim mi peki?
+
+850
+01:22:39,220 --> 01:22:42,220
+Yok. Deadlock'ı
+
+851
+01:22:42,220 --> 01:22:45,220
+şu anda güzel güzel anlattık.
+
+852
+01:22:45,220 --> 01:22:48,220
+Önümüzdeki hafta
+
+853
+01:22:48,220 --> 01:22:51,220
+şey yaparız o zaman.
+
+854
+01:22:51,220 --> 01:22:54,220
+Evet arkadaşlar hepinize teşekkürler.
+
+855
+01:22:54,220 --> 01:22:57,220
+İyi haftalar.
+
+856
+01:22:57,220 --> 01:23:00,220
+Bu sistemdeki hatada
+
+857
+01:23:00,220 --> 01:23:03,220
+bir şeyler düzeliyor, başka bir şeyler bozuluyor.
+
+858
+01:23:03,220 --> 01:23:06,220
+Bize bir bilgilendirme gelecektir.
+
+859
+01:23:06,220 --> 01:23:09,220
+Çünkü aynı şeyi tekrar tekrar yapmak istemiyorum.
+
+860
+01:23:09,220 --> 01:23:12,220
+Şöyle bir sıkıntı var
+
+861
+01:23:12,220 --> 01:23:15,220
+gençler.
+
+862
+01:23:15,220 --> 01:23:18,220
+Sizin vize sonuçları olur olmaz.
+
+863
+01:23:18,220 --> 01:23:21,220
+Bir şey söylemeye başladık.
+
+864
+01:23:21,220 --> 01:23:24,220
+Tam böyle yapıyoruz, ediyoruz.
+
+865
+01:23:24,220 --> 01:23:27,220
+Tuhaflıklar fark etmeye başladık.
+
+866
+01:23:27,220 --> 01:23:30,220
+Evet tuhaflık var diye bir açıklama geldi.
+
+867
+01:23:30,220 --> 01:23:33,220
+Düzelilecek diye bir açıklama geldi.
+
+868
+01:23:33,220 --> 01:23:36,220
+Pazartesi hallediyoruz diye sonra bir açıklama geldi.
+
+869
+01:23:36,220 --> 01:23:39,220
+Pazartesi olduğu açıklama gecikti.
+
+870
+01:23:39,220 --> 01:23:42,220
+Hafta oldu.
+
+871
+01:23:42,220 --> 01:23:45,220
+Bir daha açıklandı tamam oldu falan.
+
+872
+01:23:45,220 --> 01:23:48,220
+Bir şey itibariyle.
+
+873
+01:23:48,220 --> 01:23:51,220
+Bu arada teknoloji de son noktadayız.
+
+874
+01:23:51,220 --> 01:23:54,220
+Ama teknolojiyi kullanmakta da en baştayız.
+
+875
+01:23:54,220 --> 01:23:57,220
+Gördüğüm kadarıyla.
+
+876
+01:23:57,220 --> 01:24:00,220
+Çünkü çok temiz ve net bir şekilde verilebilecek doğru yanlış bilgisi
+
+877
+01:24:00,220 --> 01:24:03,220
+egzel tuhaf tuhaf şekillerde veriliyor.
+
+878
+01:24:03,220 --> 01:24:06,220
+Dolayısıyla resmen egze üzerinde mühendislik uygulaması yapıp
+
+879
+01:24:06,220 --> 01:24:09,220
+uğraşmanız gerekiyor.
+
+880
+01:24:09,220 --> 01:24:12,220
+Gerçek ve istediğimiz sonucu alabilmek için.
+
+881
+01:24:12,220 --> 01:24:15,220
+Bu çabayı 40 kere yapmak yerine 1 kere yapmayı tercih ediyoruz.
+
+882
+01:24:15,220 --> 01:24:18,220
+Evet siz biraz meraklanıyorsunuz.
+
+883
+01:24:18,220 --> 01:24:21,220
+Fakat biz de yanlış bir şeyi anons edip ondan sonra
+
+884
+01:24:21,220 --> 01:24:24,220
+öyle değilmiş, böyle demek istemiyoruz.
+
+885
+01:24:24,220 --> 01:24:27,220
+O noktada biraz beklemedeyiz.
+
+886
+01:24:27,220 --> 01:24:30,220
+Ne kadar beklemede kalacağımızı bilemiyoruz.
+
+887
+01:24:30,220 --> 01:24:33,220
+Fakat size hep söylediğimiz bir şey var.
+
+888
+01:24:33,220 --> 01:24:36,220
+En azından benim bütün derslerde söylediğim bir şey.
+
+889
+01:24:36,220 --> 01:24:39,220
+Gökhan Hoca da katılacaktır diye tahmin ediyorum.
+
+890
+01:24:39,220 --> 01:24:42,220
+Çünkü ben öğrenciyken bize de söylüyordu.
+
+891
+01:24:42,220 --> 01:24:45,220
+Bize iyiydi, kötüydü vs.
+
+892
+01:24:45,220 --> 01:24:48,220
+O oldu, yan yattı, çamur'a battı.
+
+893
+01:24:48,220 --> 01:24:51,220
+Bunlara takılıp da ikinci vizenize ya da finalinize
+
+894
+01:24:51,220 --> 01:24:54,220
+şey yapmanın bir esprisi yok.
+
+895
+01:24:54,220 --> 01:24:57,220
+Bunun üzerinden hazırlanmadan çalışmadan esprisi yok.
+
+896
+01:24:57,220 --> 01:25:00,220
+Her birine tek tek bakın, oturun.
+
+897
+01:25:00,220 --> 01:25:03,220
+Şey olarak devam edin yolunuza.
+
+898
+01:25:03,220 --> 01:25:06,220
+En iyisini alabilmek için çalışarak devam edin.
+
+899
+01:25:06,220 --> 01:25:09,220
+Biz de bir an önce bitsin istiyoruz ama
+
+900
+01:25:09,220 --> 01:25:12,220
+ne diyor? Biz bilimsel hazır yüzyıl göndermiş olduğumuz
+
+901
+01:25:12,220 --> 01:25:15,220
+maillerizi göremiyoruz.
+
+902
+01:25:15,220 --> 01:25:18,220
+Gesis kullanıcılara da mail atarsanız.
+
+903
+01:25:18,220 --> 01:25:21,220
+Oooo.
+
+904
+01:25:21,220 --> 01:25:24,220
+Hangi mail'i atarsak?
+
+905
+01:25:24,220 --> 01:25:27,220
+Bugün dersin...
+
+906
+01:25:27,220 --> 01:25:30,220
+Hiç aklımıza gelmedi. Doğrudur [öğrenci].
+
+907
+01:25:30,220 --> 01:25:33,220
+Haklısın.
+
+908
+01:25:33,220 --> 01:25:36,220
+Ama bak, network çalışmış senin haberin olmuş.
+
+909
+01:25:36,220 --> 01:25:39,220
+Süper. İyi bir şey demek ki arka planda.
+
+910
+01:25:39,220 --> 01:25:42,220
+Tamam, bir daha gesise de atarız.
+
+911
+01:25:42,220 --> 01:25:45,220
+Okey, herkese iyi günler arkadaşlar.
+
+912
+01:25:45,220 --> 01:25:48,220
+Bir saniye benim grupta bir şey yazdın mı?
+
+913
+01:25:48,220 --> 01:25:51,220
+Yok.
+
+914
+01:25:51,220 --> 01:25:54,220
+Benim grup uyudu galiba.
+
+915
+01:25:54,220 --> 01:25:57,220
+Haydi görüşürüz arkadaşlar, iyi günler, sağ olun.
+
+916
+01:25:57,220 --> 01:26:00,220
+Şuradan da stop share.
+
+917
+01:26:00,220 --> 01:26:03,220
+Ve...
+
