@@ -27,7 +27,7 @@
 
 - Shell Script Argümanları
   - `$1`, `$2`, ..., `$9`: Komut satırı argümanları.
-  - `$#`: Argüman sayısı.
+  - `\\$#`: Argüman sayısı.
   - `$@`: Tüm argümanlar.
   - `$?`: Son komutun çıkış kodu (exit code).
   - `$$`: Shell'in PID'si.
@@ -38,7 +38,7 @@
   - Dosya testleri: `-f` (dosya), `-d` (dizin), `-r` (okunabilir), `-w` (yazılabilir), `-x` (çalıştırılabilir).
   - `if [ -f dosya ]` dosya var mı, `if [ -d dizin ]` dizin var mı.
   - Mantıksal operatörler: `&&` (ve), `||` (veya).
-  - Tek satır if: `[ $# -gt 3 ] && echo "..."` 
+  - Tek satır if: `[ \\$# -gt 3 ] && echo "..."`
 
 - Döngüler (Loops)
   - `for` döngüsü:
@@ -72,8 +72,8 @@
 - awk'ın Gücü
   - "awk komutunda farklı parametreler de var. Bu find parametresi. Noktalı bilgilerle delimetr'i ayrıca belirtmemiz gerekiyor. Delimetrimiz noktalı virgül. Daha sonra noktalı virgülden parçaları her bir parçayı bir değişken atıyor." Hoca awk'ın parse yeteneğini vurgular.
 
-- $# ile Argüman Sayısı Kontrolü
-  - "Number of anlamına gelir. Bir şeyin sayısıdır aslında. Polar da koyduğunuz zaman bu aslında programa gönderdiğiniz argümanların sayısı. Parametrelerin sayısı demek." Hoca `$#` değişkeninin önemini vurgular.
+- \$# ile Argüman Sayısı Kontrolü
+  - "Number of anlamına gelir. Bir şeyin sayısıdır aslında. Polar da koyduğunuz zaman bu aslında programa gönderdiğiniz argümanların sayısı. Parametrelerin sayısı demek." Hoca `\$#` değişkeninin önemini vurgular.
 
 - if Koşul Yapısının Sözdizimi
   - Hoca açıkça ifade eder: "if'ten sonra bir `den` gelmesi gerekiyor. if condition'ımız, den, gerek komutlarımız, as, gerek komutlarımız ve fi ile bitiyor. Çünkü parantez olmadığı için if'in bitişini fi ile bitiriyoruz."
@@ -95,7 +95,7 @@
 - `if [ koşul ]; then ... fi`: koşul yapısı.
 - `for i in {1..5}; do ... done`: döngü.
 - `while [ koşul ]; do ... done`: döngü.
-- `$#`: argüman sayısı.
+- `\$#`: argüman sayısı.
 - `-eq, -ne, -gt, -lt`: sayısal karşılaştırma.
 - `-f, -d, -r, -w, -x`: dosya testleri.
 
@@ -109,7 +109,7 @@ Ders 7 Lab, shell script programlamanın ileri konularını ele alır. Geçen ha
 
 `bc` (basic calculator) komutu, komut satırında hesap makinesi olarak çalışır. `bc` yazıp Enter ile hesap makinesi açılır. `3 > 1` ifadesi true (1) döner, `4 > 3` ifadesi false (0) döner. Atama operatörü `=` ile yapılır. `bc -l` ile logaritma, üstel fonksiyonlar gibi matematik fonksiyonlar etkinleşir. `echo "scale=4; 22/7" | bc` pipe ile 22/7'yi 4 ondalık hassasiyetle hesaplar.
 
-Shell script argümanları önemli bir konudur. `$1`, `$2`, ... gibi değişkenler komut satırında verilen argümanlara erişim sağlar. `$#` toplam argüman sayısını verir. `$@` tüm argümanları liste olarak verir. `$?` son komutun çıkış kodunu verir (0 = başarılı, 0'dan farklı = hata).
+Shell script argümanları önemli bir konudur. `$1`, `$2`, ... gibi değişkenler komut satırında verilen argümanlara erişim sağlar. `\$#` toplam argüman sayısını verir. `$@` tüm argümanları liste olarak verir. `$?` son komutun çıkış kodunu verir (0 = başarılı, 0'dan farklı = hata).
 
 if koşul yapıları detaylı açıklanır. `if [ koşul ]; then ... elif [ koşul ]; then ... else ... fi` yapısı C'deki if-else yapısına benzer, ancak `[ ]` test komutu yerine kullanılır. Sayısal karşılaştırma operatörleri: `-eq` (eşit), `-ne` (eşit değil), `-gt` (büyük), `-lt` (küçük), `-ge` (büyük eşit), `-le` (küçük eşit). Dosya testleri: `-f` (dosya var mı), `-d` (dizin var mı), `-r` (okunabilir mi), `-w` (yazılabilir mi), `-x` (çalıştırılabilir mi).
 
