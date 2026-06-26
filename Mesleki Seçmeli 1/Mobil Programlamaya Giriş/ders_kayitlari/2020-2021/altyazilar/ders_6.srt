@@ -1,0 +1,4856 @@
+1
+00:03:49,550 --> 00:03:51,550
+Evet arkadaşlar hoş geldiniz.
+
+2
+00:03:51,550 --> 00:03:53,550
+6. haftadayız.
+
+3
+00:03:55,550 --> 00:03:57,550
+Hepinize güzel bir hafta diliyorum.
+
+4
+00:03:57,550 --> 00:03:59,550
+Güzel bir ders olmasını diliyorum.
+
+5
+00:03:59,550 --> 00:04:01,550
+Ve tabi en başında sağlık diliyorum.
+
+6
+00:04:05,550 --> 00:04:11,550
+Bu hafta geçtiğimiz hafta gibi giriş yapmıştık programlamaya kaldığımız yerden devam edeceğiz.
+
+7
+00:04:11,550 --> 00:04:16,550
+Bugün intentsler ve vuvularla ilgili konuşacağız.
+
+8
+00:04:16,550 --> 00:04:23,550
+Arkasından da daha uzun bir süre geçtiğimiz haftalara göre kodlamaya vakit ayırıyor olacağız.
+
+9
+00:04:23,550 --> 00:04:33,550
+O yüzden geçtiğimiz haftaki örnek üzerinden de bir kez daha benzer bir örnek üzerinden geçiyor olacağız.
+
+10
+00:04:33,550 --> 00:04:40,550
+14.05 gibi dersi başlatıyorum normalde ama bugün biraz daha erken başlamak istedim.
+
+11
+00:04:40,550 --> 00:04:45,550
+Çünkü artık biraz daha hızlı gitmemiz gerekiyor.
+
+12
+00:04:45,550 --> 00:04:50,550
+O yüzden bundan sonra 3-4 keçe gibi başlayacağımı varsayabilirsiniz.
+
+13
+00:04:50,550 --> 00:04:53,550
+Sonradan gelen arkadaşlar katılırlar.
+
+14
+00:04:53,550 --> 00:04:59,550
+Bir ricada bulunacağım ve sizin için faydalı olacağını düşündüğüm bir tavsiyem olacak.
+
+15
+00:04:59,550 --> 00:05:07,550
+Zoom görüşmelerinizde ilk açıldığında mikrofon ve kameranın default kapalı olması için
+
+16
+00:05:07,550 --> 00:05:11,550
+Zoom'da Ayarlar ya da Preferences bölümüne giriyorsunuz.
+
+17
+00:05:11,550 --> 00:05:18,550
+Video bölümüne tıkladığınızda ve audio bölümüne tıkladığınızda bir toplantıya katılırken
+
+18
+00:05:18,550 --> 00:05:22,550
+mikrofonumu kapat ve videomu durdur seçenekleri var.
+
+19
+00:05:22,550 --> 00:05:26,550
+Onlara işaretlerseniz hiçbir şekilde zor durumda kalmazsınız.
+
+20
+00:05:26,550 --> 00:05:30,550
+Her hafta bir ya da iki kişi bu duruma düşüyor.
+
+21
+00:05:30,550 --> 00:05:38,550
+İstemediğiniz bir sesin yayına yansıma ihtimali söz konusu.
+
+22
+00:05:38,550 --> 00:05:44,550
+O yüzden buna özen gösterirseniz bu ayarı bir kez yaparsanız bir daha tek yapmanız gereken
+
+23
+00:05:44,550 --> 00:05:50,550
+kamerayı ve mikrofonu bir bağlantı açıldığında açmak olacaktır.
+
+24
+00:05:50,550 --> 00:05:53,550
+Sürekli derse bağlanıyoruz bu zor geliyor diyebilirsiniz ama
+
+25
+00:05:53,550 --> 00:05:59,550
+bir gün istemediğiniz bir durum oluşmaması adına bunu tekrar tavsiye ediyorum.
+
+26
+00:05:59,550 --> 00:06:02,550
+Şimdi biz kendi konumuza geri döneceğiz.
+
+27
+00:06:02,550 --> 00:06:06,550
+Geçtiğimiz hafta bir login ekranı tasarlamıştık.
+
+28
+00:06:06,550 --> 00:06:11,550
+Tasarlamanızı istemiştim ve bunu implement etmenizi istemiştim.
+
+29
+00:06:11,550 --> 00:06:18,550
+Bu login ekranında kişi üç defa yanlış giriş yaptığında login butonunun
+
+30
+00:06:18,550 --> 00:06:23,550
+disable olmasını implement edecektiniz.
+
+31
+00:06:23,550 --> 00:06:29,550
+Hemen arkasında bir sign up login yerine sign in de diyebilirsiniz.
+
+32
+00:06:29,550 --> 00:06:34,550
+Sign up ekranı yazmanızı isteyeceğimi söylemiştim.
+
+33
+00:06:34,550 --> 00:06:41,550
+Bu hafta onu hem yapıyor olacaksınız hem de intant ile ilgili bilgilere edinip
+
+34
+00:06:41,550 --> 00:06:49,019
+burada yarattığınız kullanıcıları görüyor olacaksınız.
+
+35
+00:06:49,019 --> 00:06:54,019
+Ufak bir yapacağınız uygulama ile ilgili bilgi vermek gerekirse bugün ilerleyen
+
+36
+00:06:54,019 --> 00:07:03,019
+dakikalarda Android aktiviteleri üzerinden quiz ya da sınav soruları oluşturacaksınız.
+
+37
+00:07:03,019 --> 00:07:08,019
+Bir soru girişi yapacaksınız. Bunlara şıklar oluşturacaksınız.
+
+38
+00:07:08,019 --> 00:07:11,019
+Doğru şıkkı işaretleyip bunları kaydedeceksiniz.
+
+39
+00:07:11,019 --> 00:07:14,019
+Bir ekran bunu yapmanızı sağlayacak.
+
+40
+00:07:14,019 --> 00:07:19,019
+Başka bir ekran bu soruları görmenizi sağlayacak şeklinde ilerliyor olacağız.
+
+41
+00:07:19,019 --> 00:07:23,019
+Bunu daha sonra başka bir formatta sizden isteyebilirim ödev olarak.
+
+42
+00:07:23,019 --> 00:07:27,019
+Yani bu bir alıştırma sonuçta.
+
+43
+00:07:27,019 --> 00:07:34,019
+Ama en azından bu kısmı yaparsanız sonraki kısımlar daha kolay olacaktır diye düşünüyorum.
+
+44
+00:07:34,019 --> 00:07:39,019
+Şimdi geçtiğimiz hafta slide'da kaldığımız yerden devam edeceğiz.
+
+45
+00:07:39,019 --> 00:07:42,019
+Hemen slide'da paylaşacağım.
+
+46
+00:07:42,019 --> 00:07:56,759
+Kendi ekran görüntümü durduruyorum.
+
+47
+00:07:56,759 --> 00:08:02,759
+Şimdi aslında bütün her şeyi de açmaya çok gerek yok şu anda.
+
+48
+00:08:02,759 --> 00:08:07,759
+Açıkçası share screen üzerinden stop share diyeyim.
+
+49
+00:08:07,759 --> 00:08:16,810
+Sadece ilgili noktaya odaklanın.
+
+50
+00:08:16,810 --> 00:08:19,810
+Evet şimdi slide kısmını aktif hale getirdim.
+
+51
+00:08:19,810 --> 00:08:24,810
+Biz daha önce şundan bahsetmiştik.
+
+52
+00:08:24,810 --> 00:08:29,810
+Uygulamalar arası, aktiviteler arası geçiş gerekli.
+
+53
+00:08:29,810 --> 00:08:35,809
+Hem bilgi taşımak hem de bir butona tıkladığınızda yeni bir aktiviteye geçmek istediğinizde
+
+54
+00:08:35,809 --> 00:08:38,809
+bu geçişi sağlayacak bir komponent gerekli demiştik.
+
+55
+00:08:38,809 --> 00:08:40,809
+İşte bu komponent intent komponanti.
+
+56
+00:08:40,809 --> 00:08:51,809
+Intent komponanti sizin bir aktiviteden başka bir aktiviteye geçişiniz sırasındaki bu görevi gerçekleştiren komponent.
+
+57
+00:08:51,809 --> 00:09:04,809
+Intentlerle hem gitmek istediğiniz aktiviteyi belirtiyorsunuz hem de yapmak istediğiniz işi belirterek buna uygun bir aktivite sisteme eklendiğiyse
+
+58
+00:09:04,809 --> 00:09:09,809
+sistemin o uygun aktiviteleri size listelemesini sağlıyorsunuz.
+
+59
+00:09:09,809 --> 00:09:21,809
+Bu nedenle hem kendi uygulamanız için de aktiviteler arasında gezmenizi sağlıyor intent hem de bir uygulamadan başka bir uygulamaya geçerek
+
+60
+00:09:21,809 --> 00:09:27,809
+o andaki yapmak istediğiniz işi yapabilecek uygulamada gerçekleştirmenizi sağlıyor.
+
+61
+00:09:27,809 --> 00:09:32,809
+Böylece aktiviteler arasında geçişi mümkün kılmış oluyor.
+
+62
+00:09:32,809 --> 00:09:40,809
+Intent'i kullanırken iki tip intent elimizde olacak ki bu ilk temelde ayrım.
+
+63
+00:09:40,809 --> 00:09:42,809
+Daha sonra birkaç tip daha eklenecek.
+
+64
+00:09:42,809 --> 00:09:47,809
+Bunlar explicit intent ve implicit intent olarak adlandırılıyorlar.
+
+65
+00:09:47,809 --> 00:09:52,809
+Burada bu intent tiplerini görüyorsunuz.
+
+66
+00:09:52,809 --> 00:10:04,809
+Explicit intent dediğimiz zaman doğrudan o işi yapacak aktivitenin ya da o aktivitenin ait olduğu packaging ismini belirtiyorsunuz
+
+67
+00:10:04,809 --> 00:10:14,809
+ve sizin bulunduğunuz aktiviteden o gitmek istediğiniz aktiviteye geçişi bu intent ile sağlıyorsunuz ve hedefi net bir şekilde göstermiş oluyorsunuz.
+
+68
+00:10:14,809 --> 00:10:32,809
+Böyle yandan implicit intent de yapmak istediğiniz işin ne olduğunu belirtilen iş tipleriyle ortaya koyup bunu yapabilecek neler varsa sistemden bunu talep ediyorsunuz.
+
+69
+00:10:32,809 --> 00:10:42,809
+Geçtiğimiz haftada bahsetmiştik bir map haritada bir adres gösterilecekse, action view diyorsunuz bir numara aranacaksa
+
+70
+00:10:42,809 --> 00:10:48,809
+işte örneğin bir uygulamada bir numara var, call butonuna bastınız.
+
+71
+00:10:48,809 --> 00:10:50,809
+Bu arama işini sizin uygulamanız yapmıyor.
+
+72
+00:10:50,809 --> 00:11:01,809
+Bu arama işini caller görevini yapan, sizin telefonunuzda bulunan herhangi bir daha önceden bu iş için dedik edilmiş bir uygulama yapıyor.
+
+73
+00:11:01,809 --> 00:11:07,809
+Implicit intent ile siz bu isteğinizi işletim sistemine aktarıyorsunuz.
+
+74
+00:11:07,809 --> 00:11:14,809
+İşletim sistemi de bunu yapabilecek olan uygulamaları size listiliyor. Siz de onun içerisinden seçebiliyorsunuz.
+
+75
+00:11:14,809 --> 00:11:28,809
+Aynı şekilde bir web adresi gösterilecekse bunun için browserlar size orada yüklü olan Chrome olabilir, Safari olabilir, Firefox olabilir, Explorer olabilir gibi bunları size sağlıyor.
+
+76
+00:11:28,809 --> 00:11:32,809
+Sonuçta implicit intent sistem seviyesine kadar çıkıyor.
+
+77
+00:11:32,809 --> 00:11:36,809
+Explicit intent ise uygulama içerisinde kalıyor.
+
+78
+00:11:36,809 --> 00:11:42,809
+O yüzden uygulama içerisinde kalmanız aslında performans açısından daha önemli.
+
+79
+00:11:42,809 --> 00:11:47,809
+Yani doğrudan bir hedefiniz varsa onun için implicit intent tanımlamalısınız.
+
+80
+00:11:47,809 --> 00:11:59,809
+Mutlaka explicit intent ile hedefi göstermelisiniz ki sistem seviyesinde bir yukarıya çıkıp tekrar aşağıya inmek gerekmesin.
+
+81
+00:11:59,809 --> 00:12:03,809
+Bunun için intentlerin farklı etribütleri var.
+
+82
+00:12:03,809 --> 00:12:12,809
+Explicit intentle de genelde target'ın component name field'ını set etmeniz bekleniyor sizden.
+
+83
+00:12:12,809 --> 00:12:18,809
+Bu ya package özelinde oluyor ya da doğrudan klasının ismini vermek şeklinde oluyor.
+
+84
+00:12:18,809 --> 00:12:28,809
+Bu sayede sizin hangi klası çağırdığınızı, hangi activity ekranı çağırdığınızı aslında deklare etmiş oluyorsunuz.
+
+85
+00:12:28,809 --> 00:12:34,809
+Implicit intent'teyse böyle bir component name field'ının doldurulması gerekmiyor.
+
+86
+00:12:34,809 --> 00:12:37,809
+Hatta tam aksine boş bırakılması gerekiyor.
+
+87
+00:12:37,809 --> 00:12:44,809
+Sadece burada hangi aksiyonu alacağınızı intent'e eklemeniz gerekiyor.
+
+88
+00:12:44,809 --> 00:12:48,809
+Şimdi burada çeşitli intent tipleri var.
+
+89
+00:12:48,809 --> 00:12:51,809
+Bu örneğin bir tane numara arayacaksınız.
+
+90
+00:12:51,809 --> 00:12:55,809
+Bu numarayı aramak için bir intent yaratıyorsunuz, yeni bir intent.
+
+91
+00:12:55,809 --> 00:13:06,809
+Bu intent'in constructor'ına örneğin ilgili aksiyonunuzu ve bu aksiyona ait olan bilgiyi ekleyebiliyorsunuz.
+
+92
+00:13:06,809 --> 00:13:15,809
+Uniform resource identifiers üzerinden genelde bu bilgi pars edilecek şekilde oraya aktarılıyor
+
+93
+00:13:15,809 --> 00:13:21,809
+ve oradaki pars edilen bilgi intent'e belirli bir format içerisinde aktarılmış oluyor.
+
+94
+00:13:21,809 --> 00:13:30,809
+Böylece farklı gösterimlerin karmaşıklık yaratmasının önüne geçirilmiş oluyor.
+
+95
+00:13:30,809 --> 00:13:34,809
+Bu bir numarayı aramak için oluşturulan bir intent.
+
+96
+00:13:34,809 --> 00:13:40,809
+Öte yandan biraz önceki harita örneği için bir adres bilgisi eklenmiş.
+
+97
+00:13:40,809 --> 00:13:47,809
+Bu adres bilgisi bu sefer ActionView aksiyonu ile intent'e pas ediliyor.
+
+98
+00:13:47,809 --> 00:13:51,809
+Alt tarafta da bir tane webpage bilgisi eklenmiş.
+
+99
+00:13:51,809 --> 00:13:58,809
+Bu URI bilgisi yine intent'in constructor'ına aktarılıyor.
+
+100
+00:13:58,809 --> 00:14:06,809
+Bunları SetAction, SetData vesaire bunlarla da yapma şansına sahipsiniz arkadaşlar.
+
+101
+00:14:06,809 --> 00:14:15,809
+Yani doğrudan constructor'ı göndermek yerine bunları ilgili metotları çağırarak da gerçekleştirebiliyorsunuz.
+
+102
+00:14:15,809 --> 00:14:21,809
+Şimdi biraz daha farklı bir yapıyı aktaralım.
+
+103
+00:14:21,809 --> 00:14:24,809
+Burada da yine bir email intent yaratıyorsunuz.
+
+104
+00:14:24,809 --> 00:14:27,809
+Bu sefer aksiyonuna ActionSend kullanıyorsunuz.
+
+105
+00:14:27,809 --> 00:14:33,809
+Yani bunu bu bilgi gönderebilecek olan uygulamalarla ilgilendiğinizi söylüyorsunuz.
+
+106
+00:14:33,809 --> 00:14:41,809
+Bunlar kendi Android manifestlerinde zaten intent filter olarak bu yeteneklerini dekler ettikleri için
+
+107
+00:14:41,809 --> 00:14:45,809
+işletim sistemi hangi uygulamaların bunu yapabileceğini biliyor.
+
+108
+00:14:45,809 --> 00:14:50,809
+Ve bu isteğiniz geldiği anda o uygulamaları size listeliyor.
+
+109
+00:14:50,809 --> 00:14:56,809
+Burada tipini belirleyebiliyorsunuz gönderdiğiniz bilginin.
+
+110
+00:14:56,809 --> 00:15:05,809
+Onun ötesinde email'i gönderecek olan uygulamanın ihtiyacı olduğu bilgileri de ona aktarmamız gerekiyor.
+
+111
+00:15:05,809 --> 00:15:08,809
+Örneğin bu email'i kime göndereceksiniz?
+
+112
+00:15:08,809 --> 00:15:16,809
+Siz bu bilgiyi aktarmazsanız otomatik olarak o uygulama açıldığında to kısmı boş kalacaktır.
+
+113
+00:15:16,809 --> 00:15:20,809
+Subject kısmını aktarmazsanız Subject kısmı boş kalacaktır.
+
+114
+00:15:20,809 --> 00:15:24,809
+Bu bilgilere aktarmak için PutExtra metodunu kullanıyoruz.
+
+115
+00:15:24,809 --> 00:15:35,809
+PutExtra metoduna da intentle ilgili tanımlanmış olan her bir aksiyona ait olan bazı sabitler var.
+
+116
+00:15:35,809 --> 00:15:41,809
+O sabit isimlere ilgili değişken isimlerini pas ediyorsunuz.
+
+117
+00:15:41,809 --> 00:15:51,809
+O değişken isimleri üzerinden de oluşturduğunuz emailin içeriğini aslında siz intentle birlikte bu işi yapacak olan uygulamaya,
+
+118
+00:15:51,809 --> 00:15:55,809
+o uygulamadaki aktiviteyi ya da sizin kendi aktivitenize aktarma şansınız oluyor.
+
+119
+00:15:55,809 --> 00:16:06,809
+Demek ki bizim bilgiyi taşımak için intente ihtiyacımız var ve bu intentin içerisinde bilgiyi yerleştirmek için de PutExtra metodundan faydalanıyoruz.
+
+120
+00:16:06,809 --> 00:16:11,809
+Bunların detayını göreceksiniz, çok fazla detayı var.
+
+121
+00:16:11,809 --> 00:16:14,809
+Siz ihtiyaç duydukça zaten öğreniyor olacaksınız.
+
+122
+00:16:14,809 --> 00:16:18,809
+Burada bütün hepsini üzerinden tek tek geçmeyeceğiz.
+
+123
+00:16:18,809 --> 00:16:22,809
+Önemli olan intent komponentini kullanmanız.
+
+124
+00:16:22,809 --> 00:16:33,809
+Bunun içerisindeki SetComponent, SetType, PutExtra, SetData, SetAction gibi metotların olduğunu ve bunların ne işi yaptığını biliyor olmanız yeterli.
+
+125
+00:16:33,809 --> 00:16:43,809
+Öte yandan bir alt örnekte ise bu sefer bir kalendere event eklemek için başka bir aktiviteden geçiş yapıyorsunuz.
+
+126
+00:16:43,809 --> 00:16:53,809
+Yani örneğin bir uygulamanız var ve siz o uygulamadaki bir işi kalendere eklemek istiyorsunuz.
+
+127
+00:16:53,809 --> 00:16:59,809
+Size daha sonra bu kalendirden baktığınızda gözükmesini istiyorsunuz.
+
+128
+00:16:59,809 --> 00:17:09,809
+Bunun için bir intent yaratıyorsunuz ve bunun intentin insert yeteneğinin olması gerektiğini söylüyorsunuz ki bu bize şunu söylüyor.
+
+129
+00:17:09,809 --> 00:17:12,809
+Sizin sisteminizde birden fazla kalender olabilir.
+
+130
+00:17:12,809 --> 00:17:17,809
+Bunların içerisinde hangisini kullanıyorsanız siz onu seçerek ekleyeceksiniz.
+
+131
+00:17:17,809 --> 00:17:21,809
+Sonra işte kalender tipinde bir obje yaratıyorsunuz.
+
+132
+00:17:21,809 --> 00:17:24,809
+Onun özelliklerini set ediyorsunuz.
+
+133
+00:17:24,809 --> 00:17:32,809
+Ve o kalendere eklenmesi gereken bilgiler ne ise yine PutExtra ile intentimizin içine koyuyorsunuz.
+
+134
+00:17:32,809 --> 00:17:44,809
+Ve bu intenti biraz sonra göreceğiniz startActivity metoduyla karşıdaki aktivite ya da diğer uygulama içerisindeki aktiviteye gönderiyorsunuz.
+
+135
+00:17:44,809 --> 00:17:49,809
+Şimdi bir soru var ekrandan.
+
+136
+00:17:49,809 --> 00:17:57,700
+Hocam Multiple Item pas edebildiğimizden bahsetmiş burada da o kısmı anlayamadım ben.
+
+137
+00:17:57,700 --> 00:17:59,700
+Nasıl oluyor bu?
+
+138
+00:17:59,700 --> 00:18:01,700
+Urigili yardımıyla diyor.
+
+139
+00:18:01,700 --> 00:18:15,700
+Yani Multiple Item'dan kastedilen şey mesela örneğin tek bir kişi ismi değil, birden fazla kişinin ismini karşı tarafa aktarmak.
+
+140
+00:18:15,700 --> 00:18:19,700
+Bunun için de biliyorsun array list yapısını kullanabiliyoruz.
+
+141
+00:18:19,700 --> 00:18:27,700
+Uri yapısını oluştururken bu sefer tek bir uri oluşturmak yerine bir tane array list oluşturup onunla birlikte pas edebiliyorsunuz.
+
+142
+00:18:27,700 --> 00:18:36,700
+Yani bir nevi nasıl Jason objelerinde tek bir bilgi göndermek var, birden fazla bilgi dizi şeklinde göndermek var.
+
+143
+00:18:36,700 --> 00:18:38,700
+Aynı şeyi burada da yapabiliyorsunuz.
+
+144
+00:18:38,700 --> 00:18:41,700
+Uri pars yardımıyla mı yapıyor bunu?
+
+145
+00:18:41,700 --> 00:18:43,700
+Efendim?
+
+146
+00:18:43,700 --> 00:18:46,700
+Ben bir şey sormak istiyorum ama.
+
+147
+00:18:46,700 --> 00:18:48,700
+Burada şimdi...
+
+148
+00:18:48,700 --> 00:18:50,700
+Burada bir soru mu bu soru?
+
+149
+00:18:50,700 --> 00:18:51,700
+Evet.
+
+150
+00:18:51,700 --> 00:18:53,700
+Ben aslında böyle bir şey olmuyor.
+
+151
+00:18:53,700 --> 00:18:56,700
+Bitti sandım da herhalde bağlantım biraz yavaş.
+
+152
+00:18:56,700 --> 00:18:57,700
+Kusura bakmayın.
+
+153
+00:18:57,700 --> 00:18:58,700
+Sorun değil.
+
+154
+00:18:58,700 --> 00:19:00,700
+[öğrenci]?
+
+155
+00:19:00,700 --> 00:19:02,700
+Orada mısın?
+
+156
+00:19:02,700 --> 00:19:04,700
+Buradayım Hocam.
+
+157
+00:19:04,700 --> 00:19:07,700
+Buradaki farkı anlatabildim mi?
+
+158
+00:19:07,700 --> 00:19:17,700
+Burada tek bir bilgi göndermektense birden fazla bilgi, array list, uri ile ilgili bir array list oluşturarak gönderme opsiyonunuz var.
+
+159
+00:19:17,700 --> 00:19:19,700
+Bundan bahsediyor.
+
+160
+00:19:19,700 --> 00:19:27,700
+Ben pratik kısmını anlamadım Hocam da şurada uri pars, content, petto, email, bu tam olarak ne yapısı oluyor?
+
+161
+00:19:27,700 --> 00:19:28,700
+Onu bilmiyorum.
+
+162
+00:19:28,700 --> 00:19:31,700
+Uniform Resource Identifier dediğimiz bir yapı var.
+
+163
+00:19:31,700 --> 00:19:51,700
+Sizin oluşturduğunuz string yapıdaki bilgiyi karşı tarafa aktarırken, işte oluşturduğunuz telefon bilgisini, email bilgisini her bir bilgiye nasıl uniform resource locator var web adreslerinde.
+
+164
+00:19:51,700 --> 00:19:56,700
+Bunlar tek bir sizin sayfanızı temsil ediyor.
+
+165
+00:19:56,700 --> 00:20:05,700
+Burada da bilgileriniz için her bir bilgi için uniform resource identifier tanımlayarak bilginizin unikliğini de aslında oluşturmuş oluyorsunuz.
+
+166
+00:20:05,700 --> 00:20:11,700
+Önce o bilgiyi belli bir formatta karşı tarafa taşıma şansına sahip oluyorsunuz.
+
+167
+00:20:11,700 --> 00:20:25,269
+Eğer hala anlaşılmadıysa ilerleyen saatte örneğe geçtiğimiz zaman bir kez daha bu kısmı konuşuruz [öğrenci].
+
+168
+00:20:25,269 --> 00:20:29,380
+Teşekkürler Hocam.
+
+169
+00:20:30,380 --> 00:20:33,380
+Evet, diğer arkadaşımızın sorusunu alabilirim.
+
+170
+00:20:33,380 --> 00:20:37,380
+Ben şey soracaktım. Mesela bir web sayfasına yönlendirmek istiyoruz.
+
+171
+00:20:37,380 --> 00:20:41,380
+Telefonda birden fazla web görüntüleyici olabilir.
+
+172
+00:20:41,380 --> 00:20:44,380
+Ama biz özellikle mesela aralarından birisini istiyoruz.
+
+173
+00:20:44,380 --> 00:20:50,380
+Mesela Chrome ile açılmasını tercih ediyorum veya önceliklendirmek istiyorum gibi bir şey yapabiliyor muyuz bu taraftan?
+
+174
+00:20:50,380 --> 00:20:51,380
+Evet yapabiliyorsunuz.
+
+175
+00:20:51,380 --> 00:20:54,380
+Onun da yapılım şekli şu şekilde.
+
+176
+00:20:54,380 --> 00:21:01,380
+O zaman buraya gidelim. Birincisi biraz sonra onunla ilgili çok birkaç slide sonra bilgiyi vereceğim.
+
+177
+00:21:01,380 --> 00:21:09,380
+Birincisi bir intentin mutlaka bir karşılayana olması gerekiyor.
+
+178
+00:21:09,380 --> 00:21:12,380
+Yani yapmak istediğiniz işin, örneğin bir arama yapmak istiyorsunuz.
+
+179
+00:21:12,380 --> 00:21:20,380
+Onunla ilgili bir uygulama yoksa, bir harita görüntülemek istiyorsunuz, bir uygulama yoksa ki bu günümüzde çok yüksek bir ihtimal değil.
+
+180
+00:21:20,380 --> 00:21:23,380
+Çünkü built-in applerin sayısı çok fazla bununla ilgili.
+
+181
+00:21:23,380 --> 00:21:27,380
+Siz bunun kontrolünü yapabiliyorsunuz.
+
+182
+00:21:27,380 --> 00:21:44,380
+Bunun kontrolünü yapmak için de işte ilgili package manager'ı çağırıp o oluşturduğunuz intentten cevap verebilecek bir uygulama var mı diye bir query atıp query intent activitiesi çağırarak
+
+183
+00:21:45,380 --> 00:21:54,380
+dönen size'e bağlı olarak sizin istediğiniz işi yapabilecek bir aktivite var mı yok mu bir kere önce bunu kontrol etmeniz gerekiyor.
+
+184
+00:21:54,380 --> 00:21:59,380
+Zaten activity size'ı dönen size sıfırdan büyük değilse bu yok demektir.
+
+185
+00:21:59,380 --> 00:22:02,380
+O zaman buna bir kullanıcıya bilgilendirme yapmanız lazım.
+
+186
+00:22:02,380 --> 00:22:05,380
+Öbür türlü hata mesajı da karşılaşırsınız.
+
+187
+00:22:05,380 --> 00:22:08,380
+O yüzden bu kontrolü yapmak önemli.
+
+188
+00:22:08,380 --> 00:22:12,380
+Gelelim bir sonraki noktaya.
+
+189
+00:22:12,380 --> 00:22:24,380
+Burada intenti oluşturduktan sonra start activity metodu ile bunu karşı taraftaki activity'i, çağırdığınız activity'i initialize etmeniz gerekiyor.
+
+190
+00:22:24,380 --> 00:22:28,380
+İşte burada map intenti oluşturulmuş kontrolü yaptınız.
+
+191
+00:22:28,380 --> 00:22:36,380
+Eğer sıfırdan büyük bir değer döndüyse start activity deyip buraya map intentini gönderiyorsunuz.
+
+192
+00:22:36,380 --> 00:22:45,380
+Tabii burada map intenti gönderdiğiniz anda bu bir implicit intent olduğu için karşınızda seçenekler çıkıyor.
+
+193
+00:22:45,380 --> 00:22:48,380
+Burada mesela Chrome ile Firefox çıkmış.
+
+194
+00:22:48,380 --> 00:22:57,380
+Şimdi eğer siz bununla ilgili hiçbir şey yapmazsanız aşağıdaki default seçenek çıkıyor.
+
+195
+00:22:57,380 --> 00:23:01,380
+Just once always seçenek.
+
+196
+00:23:01,380 --> 00:23:06,380
+Bu size işletim sistemimiz tarafından sorulan default seçenek.
+
+197
+00:23:06,380 --> 00:23:10,380
+Eğer siz burada bir kez derseniz her seferinde bu seçenek çıkıyor.
+
+198
+00:23:10,380 --> 00:23:23,380
+Eğer always derseniz kullanıcı buradan seçmiş olduğu seçenekle bir dahaki seferde de karşılaşacak şekilde hep Chrome'ı açtıysa Chrome'u,
+
+199
+00:23:23,380 --> 00:23:28,380
+Firefox'u açtıysa Firefox'u görüyor always seçeneğini seçtiğinizde.
+
+200
+00:23:28,380 --> 00:23:37,380
+Ama siz bunu istemiyorsanız her seferinde karşıma bir seçenek çıksın diyorsanız o zaman bir tane chooser oluşturmanız gerekiyor.
+
+201
+00:23:37,380 --> 00:23:40,380
+Bu choosers'ı da dizayn edebiliyorsunuz istediğiniz gibi.
+
+202
+00:23:40,380 --> 00:23:46,380
+Bu choosers'ı oluşturduğunuzda işte intent.create choosers ile oluşturabiliyorsunuz bunu.
+
+203
+00:23:46,380 --> 00:23:57,380
+Her seferinde size ilgili seçenekler ekranıza düşüyor ve böylece just once ve always seçeneğini e-karte etmiş oluyorsunuz.
+
+204
+00:23:57,380 --> 00:24:01,380
+Ama sanırım senin sorun şu yöndeydi.
+
+205
+00:24:01,380 --> 00:24:06,380
+Biz bir şeye onu zorlayabilir miyiz? Doğru mu anlıyorum?
+
+206
+00:24:06,380 --> 00:24:09,380
+Yani evet, biz geliştirici tarafındayız.
+
+207
+00:24:09,380 --> 00:24:17,380
+Kullanıcıların, atıyorum mesela yönlendirmek istediğimiz sayfa da Chrome, JavaScript ve ST daha az olduğu için hata alıyoruz.
+
+208
+00:24:17,380 --> 00:24:20,380
+İstiyoruz ki Mozilla ile gitsinler.
+
+209
+00:24:20,380 --> 00:24:26,380
+Şimdi bildiğim kadarıyla sistem seviyesinde bu yapıldığı için bu istek...
+
+210
+00:24:26,380 --> 00:24:41,380
+Implicit intentte yukarıdaki sistem seviyesinde yapıldığı için sizin Firefox'un özel bir çağrılmasına eğer erişimle ilgili bir direkt yönlendireceğiniz bir explicit intent imkanınız yoksa
+
+211
+00:24:41,380 --> 00:24:46,380
+bunu doğrudan oraya yönlendirme şansınız yok.
+
+212
+00:24:46,380 --> 00:24:55,380
+Ama kendi yazdığınız başka bir uygulamanın ilgili packaging'a ve ilgili activity ismine sahipseniz bunu yapabilirsiniz.
+
+213
+00:24:55,380 --> 00:24:57,380
+Sistem seviyesine çıkmadan.
+
+214
+00:24:57,380 --> 00:25:16,380
+Sistem seviyesine çıktığınızda bunu organize eden işletim sistemi olduğu için siz doğrudan şunu açacak şekilde bildiğim kadarıyla önerme dışında bununla çalıştırmanız uygun olurum dışında bir seçenek ben bilmiyorum.
+
+215
+00:25:16,380 --> 00:25:19,380
+Bilen bir arkadaş varsa paylaşabilir.
+
+216
+00:25:19,380 --> 00:25:22,380
+Peki bir şey daha ekleyebilir miyim hocam?
+
+217
+00:25:22,380 --> 00:25:23,380
+Tabii.
+
+218
+00:25:23,380 --> 00:25:26,380
+Burada biz kendi çuğuzlarımızı koyabiliriz dedik ya.
+
+219
+00:25:26,380 --> 00:25:27,380
+Evet.
+
+220
+00:25:27,380 --> 00:25:30,380
+Buradaki itemları filtreleyebilir miyiz mesela?
+
+221
+00:25:30,380 --> 00:25:34,380
+Örneğin burada kromu göstermemek gibi.
+
+222
+00:25:34,380 --> 00:25:39,380
+Güzel bir soru düşünüyorum.
+
+223
+00:25:39,380 --> 00:25:58,380
+Sonra bildiğim kadarıyla bu da gene package manager üzerinden bize yönlendirildiği için bu intente cevap vermeye aday Android manifestine intent filtre koymuş tüm uygulamaları Android normalde listesine getiriyor.
+
+224
+00:25:58,380 --> 00:26:04,380
+Ama tekrar şöyle bir düşüneyim.
+
+225
+00:26:04,380 --> 00:26:16,710
+Bildiğim kadarıyla bunu filtreleyip gösterme şansımız yok.
+
+226
+00:26:16,710 --> 00:26:26,710
+Çünkü o şekilde olursa bunu işletim sisteminin ayırarak yapması gerekiyor.
+
+227
+00:26:26,710 --> 00:26:28,710
+Bildiğim kadarıyla yok sanar.
+
+228
+00:26:28,710 --> 00:26:30,710
+Tamamdır hocam teşekkür ederim.
+
+229
+00:26:30,710 --> 00:26:32,710
+Ama bu konuda bir kez daha bakacağım.
+
+230
+00:26:32,710 --> 00:26:38,710
+Yeni versiyonlarda bir değişiklik var mıdır yok mudur varsa seni bilgilendiriyor olacağım.
+
+231
+00:26:38,710 --> 00:26:40,710
+Teşekkürler hocam.
+
+232
+00:26:40,710 --> 00:26:41,710
+Teşekkürler.
+
+233
+00:26:41,710 --> 00:26:43,710
+Soruların güzel soruları bence önemli sorular.
+
+234
+00:26:43,710 --> 00:26:46,710
+Çünkü buna zaman zaman ihtiyaç duyabiliyoruz.
+
+235
+00:26:46,710 --> 00:26:59,710
+Ama sistem seviyesinde gerçekleşen bu aksiyonlar implicit intent için bize uygulama bazında bir kısıtlama yapmamızı bildiğim kadarıyla engelliyor.
+
+236
+00:26:59,710 --> 00:27:04,710
+Şimdi bu arada bu slide'da activity'nin yesi bir şekilde silinmiş.
+
+237
+00:27:04,710 --> 00:27:06,710
+Onun için özür diliyorum.
+
+238
+00:27:08,710 --> 00:27:11,710
+Bizim için iki tane yol var.
+
+239
+00:27:11,710 --> 00:27:19,710
+Biri çağırdığımız activity'ye gitmek ve oradan bir bilgi alarak geri dönmek.
+
+240
+00:27:19,710 --> 00:27:23,710
+Bir de oraya gidip orada kalmak ya da oradan bir bilgi geri döndürmemek.
+
+241
+00:27:23,710 --> 00:27:34,710
+Eğer bir bilgi alınması gerekiyorsa o activity'den o zaman bizim activity'yi başlatırken startActivityForResult metodunu çağırmamız lazım.
+
+242
+00:27:34,710 --> 00:27:41,710
+Eğer oraya sadece bilgi gönderiyorsak ve oradan bir bilgi almak gibi bir niyetimiz yoksa o zaman startActivity dememiz yeterli.
+
+243
+00:27:41,710 --> 00:27:58,710
+Yeni AndroidX ile beraber gelen startActivityForResult metoduna alternatif olarak ve daha çok rekomand edilen yeni bir API daha var.
+
+244
+00:27:58,710 --> 00:28:04,710
+Bu API'yi kullanmanız özellikle AndroidX ile birlikte öneriliyor.
+
+245
+00:28:04,710 --> 00:28:16,710
+Bu da normal AndroidX activity için 1.2.0.alpha.02 isimli bir API. Bir de Fragment için 1.3.0 var.
+
+246
+00:28:16,710 --> 00:28:21,710
+Buna bakabilirsiniz bu kısmı açıkçası önemli.
+
+247
+00:28:21,710 --> 00:28:27,710
+Geçmiş API'lerde startActivityForResult destekleniyor.
+
+248
+00:28:27,710 --> 00:28:39,710
+Yeni API'lerde de destekleniyor ama startActivityForResult ve onActivityResult API'lerinin yerini yeni API'ler almış durumda.
+
+249
+00:28:39,710 --> 00:28:48,710
+Bunları da göreceksiniz biraz daha düzenli bir şekilde ve daha bu işi organize edecek şekilde değiştirmişler.
+
+250
+00:28:48,710 --> 00:28:55,710
+Buna da bakabilirsiniz. Özellikle AndroidX ve üzeri sürümler için geçerli olan bir kullanım.
+
+251
+00:28:55,710 --> 00:29:08,710
+Bu bilgiyi de vermiş olayım. Buradaki hikaye, örnekte gördüğünüz gibi, örneğin kendi uygulamanızdan bir rehbere gidip rehberdeki bir bilgiyi almak istiyorsunuz.
+
+252
+00:29:08,710 --> 00:29:18,710
+Rehbere gittiniz, sosyal medya uygulamanız var, kendi rehberinizle bir kişinin bilgisini ilgili arkadaşınıza göndermek istiyorsunuz.
+
+253
+00:29:18,710 --> 00:29:26,710
+Ya da bir mesaj var, onu kendi uygulamanız içerisinden SMS'lere erişip genel arkadaşınıza forward etmek istiyorsunuz.
+
+254
+00:29:26,710 --> 00:29:39,710
+İşte o zaman buradaki örnekte olduğu gibi, yani bir resim de olabilir bu, gidip oradan o bilgiyi alacak olan metodu çağırmanız lazım.
+
+255
+00:29:39,710 --> 00:29:44,710
+Burada ek aksiyonumuz ActionPick biraz öncekilerden farklı olarak.
+
+256
+00:29:44,710 --> 00:29:59,710
+İşte kontak bilgisine ulaşıyor, kontak bilgisine ulaştıktan sonra da oradan seçeceğiniz kontağı alıp kendi tarafınıza hem isim at hem de telefon numarası taşımanızı sağlıyor.
+
+257
+00:29:59,710 --> 00:30:13,710
+İşte böyle durumlarda resim bilgisi taşımak, kontak bilgisi, SMS bilgisi, yani herhangi bir kontent bilgisini almanız gereken durumlarda start activity for result'ı başlatıyorsunuz.
+
+258
+00:30:13,710 --> 00:30:26,710
+Şimdi böyle bir istekte başlattıktan sonra sizin o çağrıyı yaptığınız aktivitenize mutlaka geri döneceğiniz anlaşılıyor.
+
+259
+00:30:26,710 --> 00:30:33,710
+O zaman o aktivitenin içerisinde de mutlaka onActivityResult metodunun olması gerekiyor.
+
+260
+00:30:33,710 --> 00:30:54,710
+Çünkü gittiğiniz aktiviteden geri döndüğünüzde herhangi bir aksiyonla sizin aktiviteniz yeniden create ve start olduğunda onActivityResult'ın çalışması lazım ki bu noktada size geri döndürülen bilgiyi alabilirsiniz.
+
+261
+00:30:54,710 --> 00:30:59,710
+O yüzden bu metodu da mutlaka tanımlamanız gerekiyor.
+
+262
+00:30:59,710 --> 00:31:04,710
+Burada onunla ilgili bir tane örnek kod parçası var.
+
+263
+00:31:04,710 --> 00:31:16,710
+onActivityResult'a hem request kod dönüyor hem result kod dönüyor hem de bir tane doğal olarak o aktiviteden tekrar geriye bir tane intent dönüyor.
+
+264
+00:31:16,710 --> 00:31:21,710
+Şimdi iki tane kodumuz var. Bir tanesi request kod, diğeri de result kod.
+
+265
+00:31:22,710 --> 00:31:43,549
+Aralarındaki farkı tanımlayabilir misiniz buradaki bilgilere bakarak?
+
+266
+00:31:43,549 --> 00:31:45,549
+Evet [öğrenci].
+
+267
+00:31:45,549 --> 00:31:53,549
+Hocam request kod o isteğe verdiğimiz kod numarası. Result kod istekten gelen cevabın kodu.
+
+268
+00:31:53,549 --> 00:31:55,549
+Evet çok güzel.
+
+269
+00:31:55,549 --> 00:31:58,549
+Şimdi bizim isteğe verdiğimiz bir kod var.
+
+270
+00:31:58,549 --> 00:32:04,549
+Çünkü biz bir request'e birden fazla istekte bulunabiliriz karşı taraftan.
+
+271
+00:32:04,549 --> 00:32:12,549
+O yüzden bu request kodları birbirine yani bu istekleri birbirine ayırt etmek için request kod kullanıyoruz.
+
+272
+00:32:12,549 --> 00:32:17,549
+Buna istinaden de birden fazla kodumuz varsa bunları kontrol ediyoruz.
+
+273
+00:32:17,549 --> 00:32:21,549
+Hangisi bize geri döndü diye ya da ikisi birden döndüyse sırayla işlenmesi için.
+
+274
+00:32:21,549 --> 00:32:23,549
+Bir de result kod var.
+
+275
+00:32:23,549 --> 00:32:31,549
+Yani bu yapılan isteğin karşı tarafta gerçekleştirilip gerçekleştirilmediğini bize söylüyor.
+
+276
+00:32:31,549 --> 00:32:37,549
+Result ok, result cancelled gibi define edilmiş karşılıkları var.
+
+277
+00:32:37,549 --> 00:32:41,549
+Buna istinaden biz result ok ise işimizi yapıyoruz.
+
+278
+00:32:41,549 --> 00:32:44,549
+Cancelled ise buna göre kullanıcı.
+
+279
+00:32:44,549 --> 00:32:48,549
+İşte örneğin herhangi bir SMS bulunamadı.
+
+280
+00:32:48,549 --> 00:32:52,549
+Herhangi bir kayıtlı numara yok.
+
+281
+00:32:52,549 --> 00:33:00,549
+İstediğiniz türde bir resim seçilemedi gibi çeşitli bilgilendirmeler yapabiliriz.
+
+282
+00:33:00,549 --> 00:33:12,549
+Bununla birlikte burada result ok ise contact request'in karşılığında bize dönen numarayı cursor üzerinden.
+
+283
+00:33:12,549 --> 00:33:20,549
+Hatırlarsanız content resolver kullandığımızda, content provider kullandığımızda cursor kullanıyoruz demiştik.
+
+284
+00:33:20,549 --> 00:33:24,549
+Bunu alıp bu bilgiyi kullanabiliyoruz.
+
+285
+00:33:24,549 --> 00:33:36,380
+Şimdi biz belirli isteklerde bulunuyoruz ve bunun karşılığında buna cevap verebilecek aktiviteleri gidiyoruz dedik.
+
+286
+00:33:36,380 --> 00:33:40,380
+İşte haritalar, diver, galeri vesaire.
+
+287
+00:33:40,380 --> 00:33:47,380
+Bir de bizim kendi yazdığımız uygulamanın bu yetenekleri olabilir.
+
+288
+00:33:47,380 --> 00:33:50,380
+Yani bazı şeyleri bizim uygulamamız gerçekleştiriyor olabilir.
+
+289
+00:33:50,380 --> 00:33:53,380
+Örneğin bir email client yazdığımız.
+
+290
+00:33:53,380 --> 00:33:58,380
+Sizin uygulamanız mail gömdereği olabilir.
+
+291
+00:33:58,380 --> 00:34:10,380
+O zaman bu yeteneğe sahipse sizin uygulamanız, bu yeteneğinizin diğer uygulamalar tarafından bilinmesi için ve bir chooser ya da herhangi bir listeleme yapıldığında görüntülenebilmesi için
+
+292
+00:34:10,380 --> 00:34:19,380
+mutlaka ilgili aktivitenizin yeteneğinin intent filter olarak aktivite içerisinde gömülmesi gerekiyor.
+
+293
+00:34:19,380 --> 00:34:27,380
+Siz manifestte bunu gömdüğünüzde diyorsunuz ki işletim sistemine bak benim böyle bir aktivitem var şu uygulamada.
+
+294
+00:34:27,380 --> 00:34:33,380
+Ben de email gönderebilirim. Ben de resim görüntüleyebilirim.
+
+295
+00:34:33,380 --> 00:34:38,380
+Ben de harita bilgisi görüntüleyebilirim.
+
+296
+00:34:38,380 --> 00:34:48,380
+Ben de işte web browser gibi girilen web adresini gösterebilirim gibi birçok işte sosyal medyada
+
+297
+00:34:48,380 --> 00:34:58,380
+WhatsApp, Signal gibi uygulamalar biliyorsunuz instant mesaj gönderebiliyorlar.
+
+298
+00:34:58,380 --> 00:35:06,380
+Sizin de böyle bir sosyal medya uygulamanız yazdıysanız bu yeteneğe sahip olursa bunu mutlaka tanımlamanız gerekiyor.
+
+299
+00:35:06,380 --> 00:35:07,380
+Evet [öğrenci].
+
+300
+00:35:07,380 --> 00:35:17,139
+Hocam ben şeyi soracaktım şimdi diyelim ki biz web browser gibi bir bağlantıyı açabiliyoruz gibi bir yeteneği buraya yazdık.
+
+301
+00:35:17,139 --> 00:35:25,139
+Ama şöyle şeyler de oluyor. Mesela yalnızca bu web sitesiyle alakalı bağlantıları açabiliyoruz gibi bir durum olabilir.
+
+302
+00:35:25,139 --> 00:35:33,139
+Mesela hani eticab sitesinde sadece o eticab sitesinin bağlantısını tıkladığımız zaman uygulamasını da açıyor başka bağlantılar da açmıyor gibi.
+
+303
+00:35:33,139 --> 00:35:35,139
+Bunu yapabilir miyiz mi diye soruyorsun?
+
+304
+00:35:35,139 --> 00:35:40,139
+Daha doğrusu nasıl yapabiliriz? Yani yapıldığını gördüğüm için sormak istedim.
+
+305
+00:35:40,139 --> 00:35:47,139
+Bunu şöyle söyleyeyim. Ben bunun action bazında yapıldığını zannetmiyorum.
+
+306
+00:35:47,139 --> 00:35:52,139
+Bunun kod içerisinde konulan kontrolle yapıldığını tahmin ediyorum.
+
+307
+00:35:52,139 --> 00:36:07,139
+Çünkü siz bir action yapabildiğinizi intent filter ile eğer deklare ederseniz işte ben sadece şu adresi gösterebileceğim noktasında data özelinde kısıtlama yapabilirsiniz.
+
+308
+00:36:07,139 --> 00:36:15,139
+Örneğin aşağıdaki intent filterda yani şu an ekranda gördüğünüzde data kısımları var.
+
+309
+00:36:15,139 --> 00:36:24,139
+Burada şunu söylüyorsunuz. Ben sent yapabilirim ve texti de gönderebilirim. Aynı zamanda image de gönderebilirim.
+
+310
+00:36:24,139 --> 00:36:35,139
+Ama ikinci satır yazmasaydık sadece text bilgisi gönderebileceğinizi deklare etseydiniz o zaman resimleri gönderebileceğinizi deklare etmediğiniz için
+
+311
+00:36:35,139 --> 00:36:40,139
+resim gönderilmesi istendiğinde bunu uygulamanız yapmayacaktı. Bunun gibi düşünebilirsin.
+
+312
+00:36:40,139 --> 00:36:43,139
+Teşekkür ederim hocam.
+
+313
+00:36:43,139 --> 00:36:50,139
+Ama web özelinde bir adres, özelinde bunun intent filtrinin içerisinde nasıl yerleştirildiğini bilmiyorum.
+
+314
+00:36:50,139 --> 00:36:53,139
+Ama bununla ilgili mutlaka ayarlama yapabilirsiniz.
+
+315
+00:36:53,139 --> 00:37:03,139
+Action bazında değil ama kullanılacak data kategori bazında filtreleme yapabilirsiniz.
+
+316
+00:37:03,139 --> 00:37:22,619
+Şimdi tabi bir intent oluşturduğumuzda bu intentin karşı tarafa gönderilmesinden sonra karşı tarafında bu intenti alması lazım.
+
+317
+00:37:22,619 --> 00:37:28,619
+Yani siz bir butona bastınız karşıya kendi aktivitemiz olsun.
+
+318
+00:37:28,619 --> 00:37:31,619
+Dostum ekspresit intent olarak bir şey gönderdiniz.
+
+319
+00:37:31,619 --> 00:37:35,619
+Karşı tarafında bunu alabiliyor olması lazım.
+
+320
+00:37:35,619 --> 00:37:49,619
+Bunu alabilmenin yolu da hemen setContentView'dan sonra bir tane getIntent metodu ile gelen bir intent olursa bunu alacağınızı belirteceğiniz bir kod yazmanız lazım.
+
+321
+00:37:49,619 --> 00:37:54,619
+Bu intenti almalısınız ve bu intentin içindeki data'yı da almalısınız.
+
+322
+00:37:54,619 --> 00:38:06,619
+Ondan sonra data'nın içerisine bakarak image'sa, orada eksi bir değeri olup olmadığı kontrol ediliyor vs.
+
+323
+00:38:06,619 --> 00:38:15,619
+Bunlara kontrol ederek gelen içerik ne ise onunla ilgili ne tür bir aksiyon alacağınızı orada kodlamanız lazım.
+
+324
+00:38:15,619 --> 00:38:32,619
+Yani ikinci aktiviteye gittiğinizde yazdığınız bir kod sizin gelecek dışarıdan gelecek aktivitelerinizi, pardon intentlerinizi karşılayıp onların içeriğine bakmanızı gerektiriyor.
+
+325
+00:38:32,619 --> 00:38:38,619
+Bu kodu yazmazsanız size bir intent geldiğinde herhangi bir aksiyon oluşmayacaktır.
+
+326
+00:38:38,619 --> 00:38:50,619
+Ve o zaman zaten sadece aktiviteniz bir intent karşılamayacağı için o anda neyi kodladıysanız sadece onu yapacaktır.
+
+327
+00:38:50,619 --> 00:38:54,619
+Gelen intent diskart edilecektir. Buna dikkat etmeniz gerekiyor.
+
+328
+00:38:54,619 --> 00:39:08,219
+Tabii burada bir tane sağ tarafta bir result intenti oluşturulmuş. Bu intentin içerisinde bir tane URI konulmuş.
+
+329
+00:39:08,219 --> 00:39:20,219
+Ve bunun daha sonra geri döndürülmesi için with set result ile result ok konulmuş ve bu intenti tekrar geri gönderme işini bu kod parçası gerçekleştiriyor.
+
+330
+00:39:20,219 --> 00:39:29,219
+Şimdi buraya kadar genel olarak intentlerle ilgili konuştuk. Implicit intent nedir? Explicit intent nedir?
+
+331
+00:39:29,219 --> 00:39:42,219
+Bir sonuç dönmesi gerekiyorsa start activity for result metodu dönmesi gerekmiyorsa sadece start activity metodu çağırılarak intentin aktarılması gerektiğini konuştuk.
+
+332
+00:39:42,219 --> 00:39:48,219
+Ve bu aksiyonların neler olabileceğine örnekler de verdik.
+
+333
+00:39:48,219 --> 00:39:58,219
+Intentlerin karşılanması gerektiğini söyledik. Bir değer döndürülüyorsa on activity result metodunun aktif hale getirilmesi gerekiyor ve intentin karşılanması gerekiyor.
+
+334
+00:39:58,219 --> 00:40:00,219
+Bunların hepsinden bahsettik.
+
+335
+00:40:00,219 --> 00:40:06,800
+Buraya kadar sorunuz var mı? Evet [öğrenci].
+
+336
+00:40:08,820 --> 00:40:15,820
+Hocam ben implicit diye anladım ama explicit gerçekten biraz havada kaldığım için tekrar bir üstünden geçebilir misiniz?
+
+337
+00:40:15,820 --> 00:40:27,820
+Tabii şimdi sizin yapacağınız, biraz sonra yapacağınız yani bir yarım saat sonra yapacağınız uygulamada mesela örnek veriyorum login ekranından giriş yaptıktan sonra ilk gelecek ekrana geçiş yapmak istiyorsunuz.
+
+338
+00:40:27,820 --> 00:40:35,820
+Login başarılıysa siz intent ile start activity çağırarak ilk ekranınız ne olacaksa oraya ulaşacaksınız.
+
+339
+00:40:35,820 --> 00:40:43,820
+Mesela menü ekranınız var oraya ulaşacaksınız. Start activity'ye o İngiliz activity'nizin o kılasının ismini yazıyorsunuz.
+
+340
+00:40:43,820 --> 00:40:55,820
+Doğrudan erişeceğiniz activity'nin ismini yazıyorsunuz. Bu sizin özellikle uygulama içinde activity'ler arasında bir aksiyon aldığınızda ekranlar arasında geçiş yapmanızı sağlıyor.
+
+341
+00:40:55,820 --> 00:41:05,820
+Explicit intent yani doğrudan deklare etmek demek. Doğrudan gideceğiniz activity'nin ismini söylemek demek.
+
+342
+00:41:05,820 --> 00:41:07,820
+Teşekkür ederim.
+
+343
+00:41:07,820 --> 00:41:15,820
+Rica ederim. Implicit intent de gideceğiniz doğrudan bir activity yok ama yapacağınız aksiyon var.
+
+344
+00:41:15,820 --> 00:41:22,820
+Benim aksiyonum bu. İşletim sisteminde bunu karşılayabilecek biri, bunu yapabilecek biri var mı demek.
+
+345
+00:41:22,820 --> 00:41:36,820
+Bu arada bazen kendi uygulamanız içinde de büyük bir uygulama ise implicit intent tanımladığımız zamanlar oluyor ama genelde çok sık rastladığımız bir durum değil.
+
+346
+00:41:36,820 --> 00:41:48,280
+Evet şimdi bir ara vereceğiz. Saat 14.41, 14.55'de kaldığımız yerden devam edeceğiz.
+
+347
+00:41:48,280 --> 00:42:04,280
+Ama Android studio'yu lütfen hazır hale getirin. Önce ben size ekranımı açıp geçen haftaki yapmış olduğunuz örnekle ilgili login ekranıyla ilgili bazı bilgiler vereceğim.
+
+348
+00:42:04,280 --> 00:42:12,280
+Arkasından birkaç tane daha yeni activity göstereceğim. Sonra da kodlamaya geçiyor olacağız.
+
+349
+00:42:12,280 --> 00:42:18,590
+Evet görüşmek üzere arkadaşlar 14.55'de.
+
+350
+00:42:18,590 --> 00:57:48,280
+Evet arkadaşlar kaldığımız yerden devam edeceğiz şimdi. Öncelikle ekranımı paylaşacağım. Şu anda aşağıya alalım.
+
+351
+00:57:48,280 --> 00:57:55,300
+Evet sanırım ekranı görebiliyorsunuz tahmin ediyorum.
+
+352
+00:57:55,300 --> 00:58:09,539
+Evet şimdi geçen hafta bir login ekranından bahsetmiştik.
+
+353
+00:58:09,539 --> 00:58:21,539
+Hatırlarsanız ilk etapta main activity'yi yarattıktan sonra extend ettikten sonra home create metodunu mutlaka yazmamız gerekli demiştik.
+
+354
+00:58:21,539 --> 00:58:25,539
+Ve buraya bir bundle objesi gelecek demiştik. Bunlar default geliyor zaten.
+
+355
+00:58:25,539 --> 00:58:31,539
+Sonra set content view ile biz ilgili kodumuza kıyafeti giydiriyoruz.
+
+356
+00:58:31,539 --> 00:58:39,539
+Yani layout'umuzu ne olduğunu söylüyoruz ve activity'nin ekran görüntüsünü oluşmasını sağlıyoruz demiştik.
+
+357
+00:58:39,539 --> 00:58:44,539
+Şimdi burada bir metod çağırılmış. DefineVariness metodu.
+
+358
+00:58:44,539 --> 00:59:03,539
+Buraya gelelim. DefineVariness metodu'nda biz öncelikle yaratmış olduğumuz bir data modelini kullanarak ilgili kişilerin bilgilerini çekiyoruz.
+
+359
+00:59:03,539 --> 00:59:14,539
+Bu noktada hemen açalım. Hani demiştik ki şu anda data'yı kalıcı olarak saklayamıyoruz.
+
+360
+00:59:14,539 --> 00:59:16,539
+Geçici olarak saklayacağız.
+
+361
+00:59:16,539 --> 00:59:21,539
+Burada da getPerson'sList'de bir tane ArrayList oluşturuluyor.
+
+362
+00:59:21,539 --> 00:59:31,789
+Gördüğünüz gibi şurada. Döndürüyor bize bir ArrayList ve buraya tek tek farklı kişiler ekliyoruz.
+
+363
+00:59:31,789 --> 00:59:35,789
+Bir kişinin ismini ekliyoruz. Kullanıcı adını.
+
+364
+00:59:35,789 --> 00:59:40,789
+Kişinin password'ını ekliyoruz. Bir de o kişiye ait olarak bir tane resim ekliyoruz.
+
+365
+00:59:40,789 --> 00:59:50,039
+Ve böyle bir ArrayList oluşturuyoruz. Bu data modelimizi mutlaka yazmamız gerekiyor. Aynı şey sizin için de geçerli.
+
+366
+00:59:50,039 --> 01:00:11,039
+Burada ilgili kişileri döndürdükten sonra Person's isimli, şurada tanımlamış olduğunuz ArrayList'e yapmamız gereken Layout'da yer alan ilgili değişkenlerimizi bu tarafta temsil edecek olan değişkenlerle ilişkilendirmek.
+
+367
+01:00:11,039 --> 01:00:17,039
+İkisinin ismini aynı olmak zorunda değil. Farklı olabilir ama genelde aynı kullanılıyor.
+
+368
+01:00:17,039 --> 01:00:20,039
+İlişkilendirme işini FindView by ID ile yapıyoruz.
+
+369
+01:00:20,039 --> 01:00:33,039
+Böylece iki tane EditText, bir tane Button, bir tane TextView olmak üzere dört tane UI komponentini artık XML tarafı ve kod tarafı ile ilişkilendirmiş olduk.
+
+370
+01:00:33,039 --> 01:00:35,039
+Burada işimiz bitti.
+
+371
+01:00:35,039 --> 01:00:41,039
+Gelelim Listener'lara. Listener'lar diyorsunuz bizim oluşabilecek aksiyonlarımızı dinliyor.
+
+372
+01:00:42,039 --> 01:00:55,039
+Bu aksiyonlar da genelde işte click aksiyonları ya da işte yapacağımız swipe hareketi olabilir ya da select hareketi olabilir. Bir değişik aksiyonlar var.
+
+373
+01:00:55,039 --> 01:00:58,039
+Her bir UI komponenti farklı aksiyonları var.
+
+374
+01:00:58,039 --> 01:01:06,039
+Burada bir tane butonumuz var demiştik ki aslında şu ekranı da göstermekte fayda var.
+
+375
+01:01:06,039 --> 01:01:09,039
+Şurada designi gösterelim.
+
+376
+01:01:09,039 --> 01:01:18,039
+İşte bir tane şurada bir ana ekran var. Bir EditText, bir EditText daha bir tane de Button var teknik olarak çok basit bir ekran.
+
+377
+01:01:18,039 --> 01:01:34,039
+Bunlar için de işte linear layoutlar kullanılarak bir de CardView yapısından faydalanılarak ilgili EditTextler ve Button tanımlanmış bu noktada.
+
+378
+01:01:34,039 --> 01:01:42,739
+Şimdi bu Button'un tıklanması durumunda ne yapılacağını belirlediğimiz kısma geldik.
+
+379
+01:01:43,739 --> 01:01:58,739
+Bizim bu taraftaki isminizi kullanıyoruz. ButtonSign ismini .setOnClickList'e direkt daha sonra bir tane Analytics Class yaratıyoruz ve bu kısım bir daha kullanılmamak üzere yaratıldığı için bu şekilde yarattık.
+
+380
+01:01:58,739 --> 01:02:06,739
+OnClick aksiyonu oluyor, metodu oluyor. Bunun içerisinde bazı işler yapılıyor.
+
+381
+01:02:06,739 --> 01:02:10,739
+Bunu kim bana söylemek ister? Bu hafta burayı daha rahat konuşabiliriz.
+
+382
+01:02:10,739 --> 01:02:21,000
+Evet, sonra sana söz vereyim.
+
+383
+01:02:21,000 --> 01:02:29,000
+Burada CheckPerson'da muhtemelen bizim aldığımız, o Take Back'lardan aldığımız veriler kontrol ediliyor. Doğruluğu yanlışta.
+
+384
+01:02:29,000 --> 01:02:38,000
+Uygun bir kullanıcı varsa ve true döndüğünü düşünerek onu diğer Activity'e pushlıyoruz internette.
+
+385
+01:02:38,000 --> 01:02:44,000
+Eğer yanlışsa da gerekli uyaraları oluşturup Attempt sayısını arttırıyoruz.
+
+386
+01:02:45,000 --> 01:02:52,000
+Bu sayede Attempt sayısı 3 olursa da veya daha büyük ona uyarı mesajını gösteriyoruz.
+
+387
+01:02:52,000 --> 01:02:54,000
+Tamam, teşekkür ediyorum.
+
+388
+01:02:54,000 --> 01:03:06,000
+Yani düşündüğünüzde, baktığınızda çok kolay gözükebilir ama genelde her sene yapmış olduğum ankette birçok öğrenciler, hocam çok hızlı geçiyoruz bu kısımları.
+
+389
+01:03:06,000 --> 01:03:15,000
+Nasıl olduğunu biraz daha detaylı anlatır mısınız diye yorum aldığım için bu sene biraz daha fazla üzerinde duruyorum kodları göstererek.
+
+390
+01:03:15,000 --> 01:03:19,000
+Şimdi burada bir kere bir tane intent oluşturduk.
+
+391
+01:03:19,000 --> 01:03:33,000
+Çünkü buradan eğer butona bastığımızda doğru kullanıcı adı ve şifreyi girdiysek o zaman başka bir ekrana yönlendireceğiz uygulamamızı.
+
+392
+01:03:33,000 --> 01:03:37,000
+İşte burada da checkPerson metodunu çağırdık.
+
+393
+01:03:37,000 --> 01:03:49,000
+Arkadaşının söylediği gibi burada bu ArrayList içerisinde tek tek bütün elemanların username ve passwordleri kontrol ediliyor.
+
+394
+01:03:49,000 --> 01:03:56,000
+Burada herhangi bir tanesinde doğru tespit edilirse return true döndüğü için buraya giriyoruz.
+
+395
+01:03:56,000 --> 01:04:04,000
+Hiçbirinde doğru değilse, şurada görmüş olduğunuz tanımlanan kişilere uymuyorsa return false dönüyor.
+
+396
+01:04:04,000 --> 01:04:08,000
+True döndüğünü düşünüyorum o zaman demek ki login başarılı olmuştur.
+
+397
+01:04:08,000 --> 01:04:15,000
+Bu intentimizi tanımladığımız, artık objeye çeviriyoruz, oluşturuyoruz.
+
+398
+01:04:15,000 --> 01:04:26,000
+Burada o andaki konteksti alıyoruz. O anda bulunduğumuz kontekst yani hepsi bulunduğunuz activity, bulunduğunuz fragment hepsi birer kontekst.
+
+399
+01:04:26,000 --> 01:04:28,000
+Bu bilgiyi paslıyoruz.
+
+400
+01:04:28,000 --> 01:04:32,000
+Artı explicit intent sormuştunuz.
+
+401
+01:04:32,000 --> 01:04:40,000
+Bu bir explicit intent kullanımı bir sonraki hangi activity'ye geçeceksek onun ismini buraya yazıyoruz.
+
+402
+01:04:40,000 --> 01:04:45,000
+Buradaki yazım kuralına göre de nokta klas yazmamız gerekiyor.
+
+403
+01:04:45,000 --> 01:04:51,409
+Bu şu demek benim intentim buraya gidecek.
+
+404
+01:04:51,409 --> 01:04:59,409
+Peki, Extradan buraya ne eklemişiz? Bu intende bir bilgi eklemişiz. Neyi göndermişiz?
+
+405
+01:04:59,409 --> 01:05:01,409
+User ID'yi göndermişiz.
+
+406
+01:05:01,409 --> 01:05:07,409
+Yani örneğin orada diyebilirsiniz ki hoş geldiniz işte user ID'si neyse.
+
+407
+01:05:07,409 --> 01:05:15,409
+O yeni ekranda bu hoş geldiniz X kişisini diyebilmemiz için oraya bu bilgiyi aktarmamız gerekiyor.
+
+408
+01:05:15,409 --> 01:05:19,409
+Bu bilgiyi de bu texte koyup intentin içine yerleştiriyoruz.
+
+409
+01:05:19,409 --> 01:05:31,409
+Burada Extradan bu iş tamamlandıktan sonra edit textler temizlensin için bir şurada clean text yazılmış.
+
+410
+01:05:31,409 --> 01:05:33,409
+Yapılabilir, zorunda değil.
+
+411
+01:05:33,409 --> 01:05:47,409
+Hemen arkasından da start activity'yi çağırıyoruz ve artık bu çağrıldığı anda bu yeni activity'mize yönlenmiş oluyoruz.
+
+412
+01:05:47,409 --> 01:05:54,409
+Eğer başarılı olmasaydı yine clean text box'ı çağırıyoruz.
+
+413
+01:05:54,409 --> 01:05:59,409
+Hatalı bir giriş. Her seferinde sayıyoruz kaç tane olduğunu.
+
+414
+01:05:59,409 --> 01:06:06,409
+Bu mesajı oluşturuyoruz öncelikle set text yaparak.
+
+415
+01:06:06,409 --> 01:06:17,409
+Arkasından da eğer 3 defa hatalı giriş yapıldıysa kısa süreli uygulamanın alt kısmında genelde değiştirmelisiniz gözüken 3 defa hatalı giriş yapıldı.
+
+416
+01:06:17,409 --> 01:06:20,409
+Uygulama sonlandırılıyor mesajı çıkıyor.
+
+417
+01:06:20,409 --> 01:06:25,409
+Ve buradaki bahsettiğimiz finish ile destroy ediliyor uygulama.
+
+418
+01:06:25,409 --> 01:06:28,409
+Siz ne yapacaktınız?
+
+419
+01:06:28,409 --> 01:06:31,409
+Buttonu disable edecektiniz.
+
+420
+01:06:31,409 --> 01:06:39,409
+Şimdi bu hikayeyi kabaca bitirdiğimize göre kimler login ekranını tamamladı?
+
+421
+01:06:39,409 --> 01:06:42,409
+El kaldırabiliyorsa ben de göreyim.
+
+422
+01:06:42,409 --> 01:06:48,489
+Söz vermeyeceğim o yüzden endişe etmeden kaldırabilirsiniz.
+
+423
+01:06:48,489 --> 01:07:00,059
+Login ekranını tamamlayanlar.
+
+424
+01:07:00,059 --> 01:07:06,059
+Tamamlamayan varsa da tamamlamadığı noktasında endişe etmesine gerek yok.
+
+425
+01:07:06,059 --> 01:07:13,059
+Benim için şu anki durumu görmek için yapılan bir istatistiki anket gibi düşünebilirsiniz.
+
+426
+01:07:13,059 --> 01:07:21,699
+Şu an gördüğüm kadarıyla 22 kişi login uygulamasını, aktivitesini tamamlamış.
+
+427
+01:07:21,699 --> 01:07:24,699
+Login uygulamasını, aktivitesini tamamlamış.
+
+428
+01:07:24,699 --> 01:07:26,699
+23 oldu.
+
+429
+01:07:26,699 --> 01:07:36,699
+Tekrar soruyorum login aktivitesini tamamen benim söylediğim gibi çalıştıran başarıyla kişilerin el kaldırmasını istemiştim.
+
+430
+01:07:36,699 --> 01:07:45,940
+Peki yaklaşık 25 kişi civarında.
+
+431
+01:07:45,940 --> 01:07:51,940
+Şimdi bu kısımla ilgili sorusu olanlar varsa el kaldırsın.
+
+432
+01:07:51,940 --> 01:07:55,860
+Herkes elini indirebilir.
+
+433
+01:07:55,860 --> 01:08:02,619
+Evet herkes elini indirsin.
+
+434
+01:08:02,619 --> 01:08:05,619
+Evet [öğrenci] ve Soner'le ellerini indirebilirler.
+
+435
+01:08:05,619 --> 01:08:07,619
+Eğer soru yoksa sor.
+
+436
+01:08:07,619 --> 01:08:09,619
+Peki [öğrenci].
+
+437
+01:08:09,619 --> 01:08:17,619
+Hocam buradaki bu start activity'yi çalıştırdığımız zaman bu activity direkt destroy mü oluyor?
+
+438
+01:08:17,619 --> 01:08:19,619
+Şurası mı?
+
+439
+01:08:19,619 --> 01:08:21,619
+Aynen.
+
+440
+01:08:21,619 --> 01:08:23,619
+Şu an bulunduğumuz activity'yi mi soruyorsun?
+
+441
+01:08:23,619 --> 01:08:25,619
+Evet hocam.
+
+442
+01:08:25,619 --> 01:08:28,619
+Hayır o destroy olmuyor stop moduna geçiyor.
+
+443
+01:08:35,539 --> 01:08:40,420
+Evet onlar arasının sorusu var.
+
+444
+01:08:40,420 --> 01:08:44,420
+Hocam bu person'un içinde array list oluşturuyoruz ya.
+
+445
+01:08:44,420 --> 01:08:46,420
+Evet.
+
+446
+01:08:46,420 --> 01:08:52,420
+Bu array list'i statikle yolluyoruz diğer yerlere yani statik şeyini vererek alabiliyoruz diğer yerlerden.
+
+447
+01:08:52,420 --> 01:08:54,420
+Hani bunu almanın farklı bir yolu var mı?
+
+448
+01:08:54,420 --> 01:08:58,420
+Mesela intentin işine koyma gibi puta extra ile.
+
+449
+01:08:58,420 --> 01:09:06,420
+Yani şunu demek istiyorsun bütün array list'i ilgili person'ları intent üzerinden yollayalım mı?
+
+450
+01:09:06,420 --> 01:09:08,420
+Mesela evet.
+
+451
+01:09:08,420 --> 01:09:12,420
+Neden buna ihtiyaç duyuyorsun şu an için?
+
+452
+01:09:12,420 --> 01:09:14,420
+Yani şu örnek için soruyorum.
+
+453
+01:09:14,420 --> 01:09:21,420
+Statik kullanımı güvenli değil diye okunmuştun stack overflow'da o yüzden aslında.
+
+454
+01:09:21,420 --> 01:09:28,420
+Şimdi bir kere buradaki örneği tamamen bir başlangıç olsun diye yaptığımız bir hikaye.
+
+455
+01:09:28,420 --> 01:09:32,420
+Şu anda aslında acaba biliyorsunuz file'a yazabilirsiniz.
+
+456
+01:09:32,420 --> 01:09:34,420
+File'den yazıp okuyabilirsiniz.
+
+457
+01:09:34,420 --> 01:09:36,420
+Bununla ilgili bir sorun olduğunu zannetmiyorum.
+
+458
+01:09:36,420 --> 01:09:38,420
+Serializable şekilde yazabilirsiniz.
+
+459
+01:09:38,420 --> 01:09:42,420
+İşte serializable'dan daha efektif olan parcel label'ı kullanabilirsiniz.
+
+460
+01:09:42,420 --> 01:09:46,420
+Bunları şimdiden yapmaya da başlayabilirsiniz.
+
+461
+01:09:46,420 --> 01:09:57,420
+Ama buradaki amaç hani bu bilgileri geçici olarak saklayacağımız bir yapıyı oluşturmak ve bunu hani yaptığımız işi göstermek için kullanmak.
+
+462
+01:09:57,420 --> 01:10:02,420
+Ama onun ötesinde bir önceki derste sorulan bir soru vardı.
+
+463
+01:10:02,420 --> 01:10:12,420
+Acaba hani oradaki yazan hatta [öğrenci] soruda yanlış hatırlamıyorsam multiple item'ları taşımak için nasıl bir mekanizma var diye.
+
+464
+01:10:12,420 --> 01:10:16,420
+İşte URI array listi oluşturup böyle taşıyabiliriz demiştik.
+
+465
+01:10:16,420 --> 01:10:20,420
+Aynı mantıkta böyle bir şey yapma ihtimaliniz var.
+
+466
+01:10:20,420 --> 01:10:27,420
+Ama göreceksiniz genelde böyle memoride sakladığımız değil.
+
+467
+01:10:27,420 --> 01:10:36,420
+Secondary storage'da ya da database'de sakladığımız yapıları ya da shared preferences'da sakladığımız yapıları kullanıyor olacağız.
+
+468
+01:10:36,420 --> 01:10:43,420
+O yüzden şimdilik bunu böyle default olarak kullandığımızı varsayalım.
+
+469
+01:10:43,420 --> 01:10:45,420
+Soner.
+
+470
+01:10:45,420 --> 01:10:50,420
+Hocam sanıyorum ki her hafta böyle biraz daha üzerine koyarak götüreceğiz bu çalışmayı.
+
+471
+01:10:50,420 --> 01:10:54,420
+Biz kendimiz kendi tarafımızda siz de bize anlatacaksınız.
+
+472
+01:10:54,420 --> 01:10:55,420
+Evet.
+
+473
+01:10:55,420 --> 01:11:01,420
+Ben kendi tarafımı yaptığım zaman mesela sizin ekrandan baktım.
+
+474
+01:11:01,420 --> 01:11:03,420
+İççeliner layout falan kullanmışsınız da.
+
+475
+01:11:03,420 --> 01:11:06,420
+Mesela ben bir tane concert layout kullandım.
+
+476
+01:11:06,420 --> 01:11:08,420
+O şekilde hazırlamıştım.
+
+477
+01:11:08,420 --> 01:11:16,420
+İleride bu tarz farklılıklar sıkıntı yaratır mı ilerleme aşamasında veya yaptığınıza benzetmedi mi?
+
+478
+01:11:16,420 --> 01:11:20,420
+Hayır. Güzel bir noktayı sorduğun için teşekkür ederim.
+
+479
+01:11:20,420 --> 01:11:28,420
+Burada benim size göstereceğim kodlar, farklı öğrencilerin kodları olacak bazen kendi yazdıklarımı göstereceğim.
+
+480
+01:11:28,420 --> 01:11:34,420
+Bunların hiçbiri bir zorunluluk değil tasarım olarak.
+
+481
+01:11:34,420 --> 01:11:43,420
+Gördüğünüz gibi buradaki tasarımda işte onCreate'in içinde açık açık yazılmamış bunlar metot haline getirilmiş.
+
+482
+01:11:44,420 --> 01:11:51,420
+Burada önemli olan benim sizden farklı isteklerim olduğunda bunu gerçekleyebilmeniz.
+
+483
+01:11:51,420 --> 01:11:55,420
+Mesela burada activity sonlandırılmış.
+
+484
+01:11:55,420 --> 01:11:57,420
+Ben size sizden ne istedim?
+
+485
+01:11:57,420 --> 01:12:00,420
+Login butonu disable olsun dedim.
+
+486
+01:12:00,420 --> 01:12:04,420
+Bunları takip edip bu istekleri yapabiliyor olmanız önemli.
+
+487
+01:12:04,420 --> 01:12:10,420
+Görsel olarak isterseniz işte image buton kullanırsınız.
+
+488
+01:12:10,420 --> 01:12:15,420
+İsterseniz normal buton, isterseniz kendi UI tasarım butonunuzu kullanırsınız.
+
+489
+01:12:15,420 --> 01:12:19,420
+Bundan hiçbirinin benim açımdan bir sıkıntısı yok.
+
+490
+01:12:19,420 --> 01:12:29,420
+Sadece ne kadar daha profesyonele yakın bir tasarım ve kodlama yapılırsa alınacak puanda o kadar yüksek olacaktır.
+
+491
+01:12:29,420 --> 01:12:31,420
+Onu söyleyebilirim.
+
+492
+01:12:31,420 --> 01:12:39,800
+Yani sadece iki tane buton koydum edit text koydum yaptım çalışıyor demek 100 almanızı sağlamayacaktır.
+
+493
+01:12:39,800 --> 01:12:41,800
+Tamamdır hocam teşekkürler.
+
+494
+01:12:41,800 --> 01:12:42,800
+Rica ederim.
+
+495
+01:12:42,800 --> 01:12:49,800
+Bütün çeşitlik hatta ekstra fikirleri de açığım zaten o yüzden de sizi özgür bırakıyorum.
+
+496
+01:12:49,800 --> 01:12:51,800
+Ki şunu söylemiştim.
+
+497
+01:12:51,800 --> 01:12:54,800
+Mesela set on click listener yerine ne kullanabiliriz demiştim.
+
+498
+01:12:54,800 --> 01:13:00,170
+Hatırlayanlar söylesin.
+
+499
+01:13:00,170 --> 01:13:02,170
+[öğrenci].
+
+500
+01:13:02,170 --> 01:13:06,170
+Direkt butonuna mı ekleyebiliyoruz hocam?
+
+501
+01:13:06,170 --> 01:13:12,170
+Burada şurada gördüğünüz noktada şöyle yazalım.
+
+502
+01:13:12,170 --> 01:13:33,619
+Hatta Android 2.10 click deyip buraya ilgili hangi metod çağırılacaksa bunu esal ederseniz orada gördüğünüz Java kodunu yazmanıza gerek kalmıyor.
+
+503
+01:13:33,619 --> 01:13:34,619
+Hangi kodu?
+
+504
+01:13:34,619 --> 01:13:37,619
+İşte set on click listener kodunu yazmanıza gerek kalmıyor.
+
+505
+01:13:37,619 --> 01:13:47,619
+Direkt layout üzerinden bunun on click de yapacağı işi hangi metotla yapacağını belirtmiş olabiliyorsunuz gibi.
+
+506
+01:13:47,619 --> 01:13:53,579
+Evet şimdi.
+
+507
+01:13:53,579 --> 01:13:56,579
+Peki şeyi sorayım.
+
+508
+01:13:56,579 --> 01:13:59,579
+[öğrenci] el kaldırıyor.
+
+509
+01:13:59,579 --> 01:14:06,579
+Hocam bu iki metot arasından hangisi daha uygun tasarım açısından onu soracaktım da.
+
+510
+01:14:06,579 --> 01:14:12,579
+Yani zor bir soru çünkü ikisi de kullanılıyor.
+
+511
+01:14:12,579 --> 01:14:22,579
+Yani layout tarafına koymak teknik olarak biraz da az kod karmaşıklığı yaratıyor.
+
+512
+01:14:22,579 --> 01:14:38,579
+Ama hani MVC modelini MVVR modelini düşündüğünüz zaman o zaman belki kod içerisinde bu set on click listener kullanmak daha iyi olabilir.
+
+513
+01:14:38,579 --> 01:14:39,579
+Öyle söyleyeyim.
+
+514
+01:14:39,579 --> 01:14:41,579
+Tamam.
+
+515
+01:14:41,579 --> 01:14:47,090
+Peki login butonunu nasıl disable ediyoruz?
+
+516
+01:14:47,090 --> 01:14:51,649
+Yani şuraya yazıyor olsaydık.
+
+517
+01:14:51,649 --> 01:14:59,569
+Hocam bu buton için set visible metoduyla.
+
+518
+01:14:59,569 --> 01:15:05,569
+Set visible dedi.
+
+519
+01:15:05,569 --> 01:15:07,569
+Evet.
+
+520
+01:15:07,569 --> 01:15:09,569
+Visible dedi.
+
+521
+01:15:09,569 --> 01:15:12,569
+Başka ne yapacağız buraya?
+
+522
+01:15:12,569 --> 01:15:19,569
+Orada invisible ya da visible diye bir constant var onu yaptığımız zaman.
+
+523
+01:15:19,569 --> 01:15:20,569
+Güzel.
+
+524
+01:15:20,569 --> 01:15:22,569
+Peki bunun bir alternatif var mı?
+
+525
+01:15:22,569 --> 01:15:24,569
+Evet [öğrenci].
+
+526
+01:15:24,569 --> 01:15:28,140
+Sizin geliyor mu hocam?
+
+527
+01:15:28,140 --> 01:15:29,140
+Geliyor.
+
+528
+01:15:29,140 --> 01:15:32,140
+Ben set enabled false yaptım.
+
+529
+01:15:32,140 --> 01:15:53,220
+İkinci alternatif ile burada da clickable ve non clickable yapma şansına sahipsiniz ki bu genelde daha çok kullandığımız yapı diyebilirim.
+
+530
+01:15:53,220 --> 01:15:59,220
+Bu şekilde bunları işin içine katarak işi tamamlayabiliyorsunuz.
+
+531
+01:15:59,220 --> 01:16:11,220
+Toast mesajın kullanıcı ile kurulan ilişkide doğrudan kullanıcıya kısa süreli bir bilgilendirme yapmak olduğunu hemen söyleyelim.
+
+532
+01:16:11,220 --> 01:16:24,569
+Bunlar arka arkaya yazılmış ama toast mesajını yaratırken make text ile, şunu biraz daha büyüteyim, make text ile mesajı yaratıyorsunuz.
+
+533
+01:16:24,569 --> 01:16:33,569
+Hangi aktivite olduğunu ve mesajın ne olduğunu belirttikten sonra ne kadar süreyle görüneceğini belirtiyorsunuz.
+
+534
+01:16:33,569 --> 01:16:38,569
+Sonra bunun görüntülenebilmesi için mutlaka show metodunu çağırmanız gerekiyor.
+
+535
+01:16:38,569 --> 01:16:44,569
+Bunun hatasını da şimdi tabi bir bunu değerleyelim ekran.
+
+536
+01:16:44,569 --> 01:16:55,619
+Hocam internetteyken v.getContext kullandınız da tostdayken mainActivity.dis kullandınız onu merak ettim.
+
+537
+01:16:55,619 --> 01:16:59,619
+Bir saniye.
+
+538
+01:16:59,619 --> 01:17:01,619
+Bir farkı var mı?
+
+539
+01:17:01,619 --> 01:17:04,619
+Şunu bir ayarlayayım.
+
+540
+01:17:04,619 --> 01:17:11,380
+Şimdi hemen dönelim.
+
+541
+01:17:11,380 --> 01:17:19,380
+Birincisi burada mainActivity.dis demeyip getApplicationContext yapabilirdik.
+
+542
+01:17:19,380 --> 01:17:32,380
+Ama onun bulunduğu yer şu anda aslında bakarsan onClean olduğu yer olduğu için tost make textin etkili olacağı context mainActivity.
+
+543
+01:17:32,380 --> 01:17:41,380
+Ama bizim buradaki getContext'ımızın bulunduğu yer içeride yaratmış olduğumuz sınıfın olduğu yer.
+
+544
+01:17:41,380 --> 01:17:44,380
+O yüzden v.getContext dedim.
+
+545
+01:17:44,380 --> 01:17:45,380
+Farkı bu.
+
+546
+01:17:45,380 --> 01:17:54,380
+Burada da getApplicationContext dediğiniz takdirde mainActivity ile relation kurulmayacağı için hata alacağınız için doğrudan mainActivity.dis dedim.
+
+547
+01:17:54,380 --> 01:18:00,170
+Biri içerideki sınıfa ait, diğeri dışarıdaki mainActivity'e ait.
+
+548
+01:18:00,170 --> 01:18:01,170
+Teşekkürler.
+
+549
+01:18:01,170 --> 01:18:02,170
+Rica ederim.
+
+550
+01:18:02,170 --> 01:18:05,170
+Şimdi bu ekranda görüyorsunuz bir tane.
+
+551
+01:18:05,170 --> 01:18:10,170
+Pardon yine kapandı hemen aktif hale getirelim.
+
+552
+01:18:10,170 --> 01:18:22,109
+Burada giriş yap dedikten sonra bir menu ekranı geliyor gördüğünüz gibi.
+
+553
+01:18:22,109 --> 01:18:26,109
+Burada çeşitli geçen senelerde yaptığımız aksiyonlar var.
+
+554
+01:18:26,109 --> 01:18:30,109
+Bu menu aktivitesini şimdi sizinle paylaşacağım.
+
+555
+01:18:30,109 --> 01:18:37,699
+Buradan birazcık birlikte ilerliyor olacağız.
+
+556
+01:18:37,699 --> 01:18:41,699
+Ondan sonra sizi kodlama noktasında bırakacağım.
+
+557
+01:18:41,699 --> 01:18:45,699
+Bunun bir activity menüsü var.
+
+558
+01:18:45,699 --> 01:18:48,699
+Burada gene o ilişkiyi kurduk ve kıyafeti giydirdik.
+
+559
+01:18:48,699 --> 01:18:55,699
+Bu noktada tanımlamış olduğumuz imaj butonları ve bir tane stringCurrent yazı mevsiminde de ilişkilerimiz var.
+
+560
+01:18:55,699 --> 01:19:01,699
+İlk etapta burada bir tane hoş geldiniz mesajı çıkıyor.
+
+561
+01:19:01,699 --> 01:19:09,699
+Burada dis dediğiniz zaman da bulunduğunuz konteksti ifade edebiliyorsunuz.
+
+562
+01:19:09,699 --> 01:19:15,020
+Gelelim variable'ın ifade edildiği yeri.
+
+563
+01:19:15,020 --> 01:19:19,020
+Yani gene layout ile ilişkilerin kurulduğu yeri.
+
+564
+01:19:19,020 --> 01:19:21,020
+Bunlar layout kısımları.
+
+565
+01:19:21,020 --> 01:19:24,020
+Layout'daki değişken isimleri, XML'deki.
+
+566
+01:19:24,020 --> 01:19:27,020
+Bunlarsa koddaki isimleri.
+
+567
+01:19:27,020 --> 01:19:43,020
+Bir de bunların her birinin, her bir butonun setOnClickListener'ları default olarak burada dinleme moduna alınmış ve işlem başlatılmış.
+
+568
+01:19:43,020 --> 01:19:48,020
+Peki setOnClickListener'lar nereye refer ediyor?
+
+569
+01:19:48,020 --> 01:19:53,020
+Burada görmüş olduğunuz bir voidOnClick metodu var.
+
+570
+01:19:53,020 --> 01:19:57,020
+Bu metoda bir intan tanımladık.
+
+571
+01:19:57,020 --> 01:20:04,020
+Ve burada biraz önceki ekrandaki hangi view, geri gelelim.
+
+572
+01:20:04,020 --> 01:20:11,020
+Hangi view seçildi ise o view'a tıklandığında, yani kullanıcı listesi,
+
+573
+01:20:12,020 --> 01:20:16,020
+örnek vermek gerekirse, pardon,
+
+574
+01:20:16,020 --> 01:20:19,020
+ilmeği gönder, note ekle, sensör listesi.
+
+575
+01:20:19,020 --> 01:20:25,020
+İlgili eksplisit intent ile ilgili aktiviteye yönlendiriyoruz.
+
+576
+01:20:25,020 --> 01:20:34,020
+Yani kullanıcı listesine tıkladığınızda bir tane RecyclerView aktivitesi isimli aktivite çağırılacak.
+
+577
+01:20:34,020 --> 01:20:38,020
+Öbür tarafta sensör aktivite, öbür tarafta notepad aktivitesi.
+
+578
+01:20:38,020 --> 01:20:46,020
+Her bir view bir tane aktivitenin gideceği aksiyonu başlatmış olacak.
+
+579
+01:20:46,020 --> 01:20:49,020
+Bunu yaparken de intenti yaratıyorsunuz.
+
+580
+01:20:49,020 --> 01:20:54,020
+Sonra da içerisine farklı bilgiler yerleştirebiliyorsunuz.
+
+581
+01:20:54,020 --> 01:20:58,020
+Örneğin kullanıcı ile ilgili bir işlem yapılacaksa,
+
+582
+01:20:58,020 --> 01:21:01,020
+o anda ki küratı yüzünden mi işin içine tıklıyorsunuz?
+
+583
+01:21:01,020 --> 01:21:06,020
+Herhangi bir kullanıcı ile ilgili iş yoksa, onun içerisinde bu tek size ilgili bir şey ekleniyorsunuz.
+
+584
+01:21:06,020 --> 01:21:17,710
+Bu şekilde yarattığınız menüde o menü sayfasından yeni aktivitelere geçişi sağlamış oluyorsunuz.
+
+585
+01:21:17,710 --> 01:21:26,710
+Bunların her birer image buton ve her birine tıklanması durumunda gideceği bir aktivite tanımlanmış durumda.
+
+586
+01:21:26,710 --> 01:21:30,710
+Bu basit bir menü yapısı.
+
+587
+01:21:31,710 --> 01:21:39,710
+Şimdi gelelim bu noktada bizim bugün sizinle birlikte ne yapacağımıza.
+
+588
+01:21:39,710 --> 01:21:43,710
+Birincisi, sign up ekranını tasarlayacaksınız.
+
+589
+01:21:43,710 --> 01:21:48,710
+Sign up ekranında ne olacak hemen onu da size söyleyeyim.
+
+590
+01:21:48,710 --> 01:21:55,710
+Sign up ekranında, onunla ilgili de şurada notlarımı almıştım.
+
+591
+01:21:55,710 --> 01:22:08,710
+Name, surname, email, telefon numarası, birthdate, password ve re-enter password seçeneği olacak.
+
+592
+01:22:08,710 --> 01:22:15,090
+Bir de doğal olarak altta bir buton olacak bu aksiyonu başlatmak için.
+
+593
+01:22:15,090 --> 01:22:23,090
+Kullanıcı ana ekranda sign in seçeneğini seçtiyse giriş işlemi başlayacak.
+
+594
+01:22:23,090 --> 01:22:30,090
+Sign up'ı seçtiği zaman doğrudan bu sign up ekranına kullanıcıyı gönderiyor olacaksınız.
+
+595
+01:22:30,090 --> 01:22:36,090
+Kullanıcı buradan kendi bilgilerini sisteme giriş yapabiliyor olacak.
+
+596
+01:22:36,090 --> 01:22:38,090
+Buradan da şu sonuç çıkıyor.
+
+597
+01:22:38,090 --> 01:22:50,090
+Tasarladığınız person sınıfına app, soyat, email, telefon, doğum tarihi ve password seçeneklerini eklemeniz gerekiyor.
+
+598
+01:22:50,090 --> 01:22:54,090
+Bunların getirme setörlerini tınımlamanız gerekiyor.
+
+599
+01:22:54,090 --> 01:22:56,090
+Evet Ekran.
+
+600
+01:22:56,090 --> 01:23:03,619
+Hocam istediğiniz işlevleri yazamadık da çete ya da bir yere yazabilmeniz mümkün mü?
+
+601
+01:23:03,619 --> 01:23:05,619
+Evet bunları zaten paylaşacağım sizinle.
+
+602
+01:23:05,619 --> 01:23:07,619
+Çetede yazarım şimdi.
+
+603
+01:23:07,619 --> 01:23:13,619
+Hemen tekrar ediyorum zaten üst üste söylediğim zaman.
+
+604
+01:23:13,619 --> 01:23:15,619
+Şuradan söyleyelim.
+
+605
+01:23:15,619 --> 01:23:17,619
+Name.
+
+606
+01:23:17,619 --> 01:23:21,350
+Surname.
+
+607
+01:23:21,350 --> 01:23:23,350
+Email.
+
+608
+01:23:23,350 --> 01:23:25,350
+Email kullanıcı adı olacak.
+
+609
+01:23:25,350 --> 01:23:27,350
+Phone number.
+
+610
+01:23:27,350 --> 01:23:32,840
+Birthday.
+
+611
+01:23:32,840 --> 01:23:34,840
+Tabii burada password.
+
+612
+01:23:34,840 --> 01:23:38,250
+Re-enter password.
+
+613
+01:23:38,250 --> 01:23:40,250
+Kontrol yapmanız gerekecek.
+
+614
+01:23:40,250 --> 01:23:49,000
+Bunlara ek olarak sign up butonu.
+
+615
+01:23:49,000 --> 01:24:00,579
+Şimdi bu ekranda UI komponatları ile ilgili dikkat edilmesi gerekenler nedir diye sorayım.
+
+616
+01:24:00,579 --> 01:24:02,579
+UI komponatları ne oluştururken neye dikkat edeceksiniz?
+
+617
+01:24:02,579 --> 01:24:04,579
+[öğrenci] birazdan söz vereceğim.
+
+618
+01:24:04,579 --> 01:24:14,779
+Mesela tarih için birthday.
+
+619
+01:24:14,779 --> 01:24:20,779
+Muhtemelen tarih picker, pay picker gibi bir şey kullanmamız gerekecek.
+
+620
+01:24:20,779 --> 01:24:30,779
+Bu hangi UI'ların uygun olduğuna bağlı olarak ilgili attribute'lere uygun UI komponatlar kullanmanızı bekliyorum.
+
+621
+01:24:30,779 --> 01:24:32,779
+Bu birincisi.
+
+622
+01:24:32,779 --> 01:24:42,779
+Hatırlarsanız email tipinde bir edit text yaratmak, phone number'a phone number tipinde bir tanımlama yapmak gerektiğini söylemiştim.
+
+623
+01:24:42,779 --> 01:24:44,779
+Onun ötesinde.
+
+624
+01:24:44,779 --> 01:24:52,779
+Mesela bu ekranda sign up'a basıldığında neyi kontrol etmek lazım?
+
+625
+01:24:52,779 --> 01:24:57,430
+Girilen parola değerleri aynı mı?
+
+626
+01:24:57,430 --> 01:24:59,430
+Çok güzel bir tanesi bu.
+
+627
+01:24:59,430 --> 01:25:01,430
+[öğrenci].
+
+628
+01:25:01,430 --> 01:25:03,430
+Kullancının daha önce kaydı olup olmadı.
+
+629
+01:25:03,430 --> 01:25:05,430
+Evet.
+
+630
+01:25:05,430 --> 01:25:07,430
+İkincisi bu.
+
+631
+01:25:07,430 --> 01:25:09,430
+Onur.
+
+632
+01:25:09,430 --> 01:25:11,430
+Onu söyleyecektim hocam.
+
+633
+01:25:11,430 --> 01:25:13,430
+Tamam güzel.
+
+634
+01:25:13,430 --> 01:25:17,430
+Evet değerlerin girilip girilmediği.
+
+635
+01:25:17,430 --> 01:25:19,430
+Değerlerin girilip girilmediği.
+
+636
+01:25:19,430 --> 01:25:23,430
+Burada zorunlu alanlar yapıp bazılarını opsiyonel yapabilirsiniz.
+
+637
+01:25:23,430 --> 01:25:29,430
+Bu sizin tasarımıza bağlı.
+
+638
+01:25:29,430 --> 01:25:37,430
+Bunları yaparsanız çok daha işi daha sonrası içinde kullanışlı hale getirebilirsiniz.
+
+639
+01:25:37,430 --> 01:25:41,430
+Sonuçta bir de şunu isteyeceğim.
+
+640
+01:25:41,430 --> 01:25:51,819
+Password'un hash fonksiyonundan geçirilerek saklaması istiyorum.
+
+641
+01:25:51,819 --> 01:26:19,420
+Bütün bu saklama işlemini şu anda data modelde yaptığınızı varsayın hemen bir hafta sonra bunları file'a yazıyor olacağız.
+
+642
+01:26:19,420 --> 01:26:25,180
+Hazırlıklarınızı buna göre yapıp hatta doğrudan öyle de başlayabilirsiniz.
+
+643
+01:26:25,180 --> 01:26:27,180
+Bu sizin tercihiniz.
+
+644
+01:26:27,180 --> 01:26:37,180
+Bunu yazarken de serializable interface'ini hatta mümkünse parse label'ı implement etmenizi bekliyor olacağım.
+
+645
+01:26:37,180 --> 01:26:44,420
+Ki böylece obje formunda dosyayı saklayabilirsiniz.
+
+646
+01:26:44,420 --> 01:26:48,420
+Bu çok daha size verimli bir geri dönüşü sağlayacak.
+
+647
+01:26:48,420 --> 01:26:52,420
+Hocam size bu konuda ben geçen hafta main atmıştım aslında.
+
+648
+01:26:52,420 --> 01:26:54,420
+Nerede tutacağız verileri diye.
+
+649
+01:26:54,420 --> 01:26:58,420
+Ben sizin cevabınızdan yola çıkarak database'e giriştim direkt ama.
+
+650
+01:26:58,420 --> 01:27:00,420
+Olur. Bir sakıncası yok.
+
+651
+01:27:00,420 --> 01:27:02,420
+Tamam teşekkür ederim.
+
+652
+01:27:02,420 --> 01:27:04,420
+[öğrenci].
+
+653
+01:27:04,420 --> 01:27:08,420
+Hocam demin file'ı mı demiştin yoksa tam yanlış dedim.
+
+654
+01:27:08,420 --> 01:27:10,420
+File dedim.
+
+655
+01:27:10,420 --> 01:27:16,420
+Peki bu online bir yerde saklama şansınız var mı file base gibi?
+
+656
+01:27:16,420 --> 01:27:22,420
+İlk etapta ya lokalde file'da ya da lokalde database'de saklayabilirsiniz.
+
+657
+01:27:22,420 --> 01:27:24,420
+Evet başka sorusu var.
+
+658
+01:27:24,420 --> 01:27:30,579
+[öğrenci] bir sorun olacak sanırım.
+
+659
+01:27:30,579 --> 01:27:40,039
+Şu an mikrofonun kapalı olabilir seni duymuyorum.
+
+660
+01:27:40,039 --> 01:27:42,039
+Çok pardon.
+
+661
+01:27:42,039 --> 01:27:44,039
+Evet.
+
+662
+01:27:44,039 --> 01:27:48,039
+Şu az önceki hani birkaç yere gidebiliyorduk ana sayfa sanırım.
+
+663
+01:27:48,039 --> 01:27:52,039
+Oradan şu onclick metodunu gösterdiğiniz ya.
+
+664
+01:27:52,039 --> 01:27:56,039
+Oradan işte farklı yerlere gidişi vesaire,
+
+665
+01:27:56,039 --> 01:27:58,039
+Evet.
+
+666
+01:27:58,039 --> 01:28:04,039
+Bunda optimize bir hal var mı yoksa en iyi kullanabileceğimiz bu mu?
+
+667
+01:28:04,039 --> 01:28:08,039
+Şu an başlangıç olarak bu şekilde başlayalım.
+
+668
+01:28:08,039 --> 01:28:16,039
+Ondan sonra menümüzün belki recycle review yapısında olması bizi daha farklı bir tasarına bitebilir.
+
+669
+01:28:16,039 --> 01:28:18,039
+Ama şu anda buton üzerinde değil.
+
+670
+01:28:18,039 --> 01:28:20,039
+Tasarım yaptığımız için.
+
+671
+01:28:20,039 --> 01:28:22,039
+Tamam.
+
+672
+01:28:22,039 --> 01:28:26,039
+Ben daha açıkçası basit bir yaklaşımda anlatmayı tercih ediyorum.
+
+673
+01:28:26,039 --> 01:28:28,039
+Tamam teşekkür ederim.
+
+674
+01:28:28,039 --> 01:28:30,039
+Rica ederim.
+
+675
+01:28:30,039 --> 01:28:40,039
+Evet şimdi sizden isteğim hızlıca sign up ekranı tasarlamanız ve hemen sign in ve sign up'ın olduğu ilk açılış ekranında
+
+676
+01:28:40,039 --> 01:28:46,039
+sign up'ı tıkladığınızda yeni ekranın görüntülenebilir hale gelmesi.
+
+677
+01:28:46,039 --> 01:28:54,039
+Sign in olduktan sonra da yani içeri girdikten sonra da iki tane buton var biliyorsunuz.
+
+678
+01:28:54,039 --> 01:28:56,039
+Birinde sign up'a gideceksiniz ekranına.
+
+679
+01:28:56,039 --> 01:29:02,039
+Sign in'e tıklarsanız da yeni bir ekran açılacak.
+
+680
+01:29:02,039 --> 01:29:06,039
+Bu ekranda çeşitli aksiyonlar olacak buradaki menü gibi.
+
+681
+01:29:06,039 --> 01:29:08,039
+Örneğin soru ekle.
+
+682
+01:29:08,039 --> 01:29:10,039
+Soruları listele.
+
+683
+01:29:10,039 --> 01:29:14,039
+Birkaç tane aksiyon ekleyeceğiz.
+
+684
+01:29:14,039 --> 01:29:16,039
+Nasıl şu anda burada.
+
+685
+01:29:16,039 --> 01:29:20,039
+Bu şekilde farklı bir ekran var.
+
+686
+01:29:20,039 --> 01:29:22,039
+Bu ekranın adı.
+
+687
+01:29:22,039 --> 01:29:24,039
+Bu ekranın adı.
+
+688
+01:29:24,039 --> 01:29:26,039
+Bu ekranın adı.
+
+689
+01:29:26,039 --> 01:29:28,039
+Şu anda burada.
+
+690
+01:29:28,039 --> 01:29:36,039
+Bu şekilde farklı aksiyonlar tanımlandıysa oraya da ekleyeceğiz.
+
+691
+01:29:36,039 --> 01:29:38,039
+Tabii şu tasarım çok güzel bir tasarım değil.
+
+692
+01:29:38,039 --> 01:29:40,039
+Onu söyleyeyim.
+
+693
+01:29:40,039 --> 01:29:42,039
+Bunu çok daha düzgün bir şekilde küçük bir ikon.
+
+694
+01:29:42,039 --> 01:29:46,039
+Bunun yanına ilgili işin ne olduğu yazılabilir.
+
+695
+01:29:46,039 --> 01:29:48,039
+Kötü bir tasarım vs.
+
+696
+01:29:48,039 --> 01:29:56,000
+Eleştirmek açısından söylemiyorum ama bunu biraz daha minimalist ve görsel anlamda daha da
+
+697
+01:29:56,000 --> 01:29:58,000
+gözü, ağzı yoran bir şekilde yapabilirsiniz.
+
+698
+01:29:58,000 --> 01:30:02,000
+Ama ikonlar müzemmesine yapılacak iştahla ilişkilendirilmiş.
+
+699
+01:30:02,000 --> 01:30:06,000
+Bu yüzden bu tür iştah yapabilirsiniz.
+
+700
+01:30:06,000 --> 01:30:10,000
+Mesela e-mail'e tıkladığınız zaman burada bir ekran açılıyor.
+
+701
+01:30:10,000 --> 01:30:14,000
+Siz de menüde tıkladıktan sonra soru ekle.
+
+702
+01:30:14,000 --> 01:30:20,000
+Bu tarz sorunun ne olduğu, şıkların ne olduğu ekranları gelecek.
+
+703
+01:30:20,000 --> 01:30:22,000
+Sonra burada ekle butonu olacak.
+
+704
+01:30:22,000 --> 01:30:24,000
+Ekle diyeceksiniz.
+
+705
+01:30:24,000 --> 01:30:28,000
+Sistem ve yeni sorunuzu ekliyor olacaksınız.
+
+706
+01:30:28,000 --> 01:30:34,000
+Aynı şu anda bizim sizler için sınav hazırlarken ki kullandığımız ekran gibi düşünebilirsiniz.
+
+707
+01:30:34,000 --> 01:30:38,000
+Uzun vadede Maziar biraz önce Firebase kullanabilir miyiz demişti.
+
+708
+01:30:38,000 --> 01:30:48,000
+Belki dersin ilerleyen haftalarında bu lokale kaydettiğiniz bilgileri Firebase'e göndermenizi isteyebilirim.
+
+709
+01:30:48,000 --> 01:30:51,000
+Yani şimdiden bunu da belirtmiş olayım.
+
+710
+01:30:51,000 --> 01:30:59,279
+Evet sanırım şimdi sizi kendinizle baş başa bırakma zamanı.
+
+711
+01:30:59,279 --> 01:31:01,279
+Ben buradayım.
+
+712
+01:31:01,279 --> 01:31:03,279
+Henüz ara vermiyoruz.
+
+713
+01:31:03,279 --> 01:31:08,279
+Bir sorunuz olursa arada işte ekran paylaşıp sorabilirsiniz.
+
+714
+01:31:08,279 --> 01:31:10,279
+Doğrudan sorabilirsiniz.
+
+715
+01:31:10,279 --> 01:31:12,279
+Her türlü şey yapabilirsiniz.
+
+716
+01:31:12,279 --> 01:32:42,500
+Hocam.
+
+717
+01:32:42,500 --> 01:32:43,500
+Efendim.
+
+718
+01:32:43,500 --> 01:32:50,869
+Hocam ben uygulamayı hem telefonumu hem emületörden yükleyerek kontrol ediyorum da.
+
+719
+01:32:50,869 --> 01:32:58,869
+Telefonun mesela otomatik olarak şeyde koyu temada olduğu için uygulama pek istemediğim renklere dönüşüyor.
+
+720
+01:32:58,869 --> 01:33:01,869
+Bu temaları nereden yönetebilirim?
+
+721
+01:33:01,869 --> 01:33:06,220
+Telefonun tarafında mı?
+
+722
+01:33:06,220 --> 01:33:08,220
+Şey emületör tarafında mı?
+
+723
+01:33:08,220 --> 01:33:09,220
+Uygulama tarafında.
+
+724
+01:33:09,220 --> 01:33:13,220
+Uygulama tarafında da tema yapsın istemiyorum en azından.
+
+725
+01:33:13,220 --> 01:33:16,220
+Telefonum normalde koyu temada bu uygulama içerisinde.
+
+726
+01:33:16,220 --> 01:33:17,220
+İşte light tema olsun.
+
+727
+01:33:17,220 --> 01:33:20,220
+Renkleri daha kolay görebilirim.
+
+728
+01:33:20,220 --> 01:33:24,220
+Bunu uygulama spesifik olarak tanımlamak istiyorsun öyle mi?
+
+729
+01:33:24,220 --> 01:33:25,220
+Evet.
+
+730
+01:33:25,220 --> 01:33:29,220
+Onun nereden yapıldığını bilmiyorum Ekram.
+
+731
+01:33:29,220 --> 01:33:32,220
+Default Tem Setting vardır.
+
+732
+01:33:32,220 --> 01:33:34,220
+Hemen bir bakayım.
+
+733
+01:33:34,220 --> 01:33:35,220
+Sana söyleyeyim.
+
+734
+01:33:35,220 --> 01:33:40,220
+Values'un altında Tems XML buldum ama burada sanırım şey var.
+
+735
+01:33:40,220 --> 01:33:43,220
+Light tema ile Dark tema'nın tanımları var.
+
+736
+01:33:43,220 --> 01:33:46,220
+Ama seçimi burada mı yapıyom ya o zaman?
+
+737
+01:33:46,220 --> 01:33:48,220
+Hemen bakıyorum.
+
+738
+01:33:48,220 --> 01:34:19,560
+Uygulamanın anı rengini mi değiştirmek istiyorsun?
+
+739
+01:34:19,560 --> 01:34:23,560
+Ben anladığım kadarıyla yukarısının menü barının rengini falan.
+
+740
+01:34:23,560 --> 01:34:24,560
+Evet.
+
+741
+01:34:24,560 --> 01:34:25,560
+Evet evet.
+
+742
+01:34:25,560 --> 01:34:26,560
+Uygulama içerisinde mesela.
+
+743
+01:34:26,560 --> 01:34:33,560
+Bu projede şey diye ararsan Color Primer diye ararsan bir XML dosyasının içinde olması lazım bir şey var.
+
+744
+01:34:33,560 --> 01:34:37,560
+Color Primer'ı, Color Primer Dark falan böyle bir değerler var.
+
+745
+01:34:37,560 --> 01:35:17,220
+Oradan da değiştirebilirsin.
+
+746
+01:35:17,220 --> 01:35:19,220
+Onun kapalıymış ya.
+
+747
+01:35:19,220 --> 01:35:21,220
+Efendim hocam?
+
+748
+01:35:21,220 --> 01:35:27,220
+Bulduğum kadarıyla manifestinin içerisinde application Android 2.team deyip
+
+749
+01:35:27,220 --> 01:35:37,220
+add style slash team at app compat şeklinde bir ifade yazarsan Dark modunu .light yazarsan da
+
+750
+01:35:37,220 --> 01:35:40,220
+Light tema'yı seçmiş oluyorsun.
+
+751
+01:35:40,220 --> 01:35:46,220
+Bunu her bir application tagine.
+
+752
+01:35:46,220 --> 01:35:49,220
+Bunu istersen application için yapabiliyorsun.
+
+753
+01:35:49,220 --> 01:35:53,220
+İstersen activity de özelleştirebiliyorsun.
+
+754
+01:35:53,220 --> 01:35:56,220
+Android 2.team yazıyorsun.
+
+755
+01:35:56,220 --> 01:36:01,220
+Bir tane yazılmış halde var style.team nokta uygulamanın ismini demiş.
+
+756
+01:36:01,220 --> 01:36:07,220
+Evet onu yazdığında normalde Dark modda olması gerekiyor.
+
+757
+01:36:07,220 --> 01:36:09,220
+Sen Light moda mı geçmek istiyorsun?
+
+758
+01:36:09,220 --> 01:36:11,220
+Evet hocam. Telefon...
+
+759
+01:36:11,220 --> 01:36:14,220
+Nokta Light diyeceksin.
+
+760
+01:36:14,220 --> 01:36:17,220
+Evet.
+
+761
+01:36:17,220 --> 01:36:20,220
+Bu şekilde yapılabileceğini gösteriyor.
+
+762
+01:36:20,220 --> 01:36:29,500
+Team.appCompat mı demiştiniz?
+
+763
+01:36:29,500 --> 01:36:39,060
+Senin appCompat olarak orada gözüken aktivita var ya.
+
+764
+01:36:39,060 --> 01:36:47,060
+Add style slash team.appCompat.light.
+
+765
+01:36:47,060 --> 01:36:57,789
+Bu arada arkadaşlar siz belli bir süre kodlamada ilerledikten sonra bugün
+
+766
+01:36:57,789 --> 01:37:04,789
+yaptığımız start activity result, pardon start activity ve start activity for result ile ilgili
+
+767
+01:37:04,789 --> 01:37:07,789
+güzel bir örnek anlatacağım ilerleyen dakikalarda.
+
+768
+01:37:07,789 --> 01:37:14,789
+Ama birazcık şu ana kadar yaptıklarımızı pratik olarak yapmanızı rica ediyorum.
+
+769
+01:37:14,789 --> 01:37:20,789
+Dersin ilerleyen bölümlerinde tekrar bazı şeyleri ekranım üzerinden sizlerle paylaşıp
+
+770
+01:37:20,789 --> 01:37:22,789
+üzerine anlatıyor olacağım.
+
+771
+01:37:22,789 --> 01:37:48,090
+Hocam benim de bir sorum olacak.
+
+772
+01:37:48,090 --> 01:37:49,090
+Tabii.
+
+773
+01:37:49,090 --> 01:37:56,090
+Şimdi ben geçen hafta siz login ekranı gördükten sonra direkt veritabanı yerlerde belki
+
+774
+01:37:56,090 --> 01:38:01,090
+hani gireceğiz bir şekilde dediğimiz için direkt başlam sağlam olsun diye ben
+
+775
+01:38:01,090 --> 01:38:03,090
+Fireways'e kurulum yaptım.
+
+776
+01:38:03,090 --> 01:38:06,090
+Şimdi bütün loginlerim oraya düşüyor.
+
+777
+01:38:06,090 --> 01:38:11,090
+Yani bunu şimdi dediğiniz gibi lokale dönüştürmeme gerek var yoksa buradan
+
+778
+01:38:11,090 --> 01:38:13,090
+devam edebilir miyim?
+
+779
+01:38:13,090 --> 01:38:19,090
+Eşitlik olması ve kimseyi haksızlık olmaması adına lokalde mutlaka onları
+
+780
+01:38:19,090 --> 01:38:21,090
+saklamanı rica edeceğim.
+
+781
+01:38:21,090 --> 01:38:25,090
+Peki hocam ikisinin de olabilir mi hem Fireways hem lokale?
+
+782
+01:38:25,090 --> 01:38:32,090
+Yani Fireways şeyini silmek zorunda değilsin yazlıklarını hani oraya gönderiyorsun
+
+783
+01:38:32,090 --> 01:38:34,090
+saklıyorsun hiçbir sorun yok.
+
+784
+01:38:34,090 --> 01:38:40,090
+Aynı zamanda yani burada çünkü kodun verimli olmasını şu anda işte aynı
+
+785
+01:38:40,090 --> 01:38:42,090
+iki tane iş yapmanı falan önemsemiyoruz.
+
+786
+01:38:42,090 --> 01:38:47,090
+Önemli olan hani bu kurkuyu kurabilmek bununla ilgili kodlama yapabilmek bunu
+
+787
+01:38:47,090 --> 01:38:49,090
+birazcık öğrenmek hedefimiz.
+
+788
+01:38:49,090 --> 01:38:52,090
+Ama muhtemelen sen bu konuda daha ilerdesin.
+
+789
+01:38:52,090 --> 01:38:57,090
+Ama hani eşitliği korumak adına da hani herkesten aynı şeyleri isteyeceğim.
+
+790
+01:38:57,090 --> 01:38:59,090
+Tamam.
+
+791
+01:38:59,090 --> 01:39:01,090
+Teşekkür ederim.
+
+792
+01:39:01,090 --> 01:50:36,399
+Arkadaşlar bir 10 dakika ara verelim.
+
+793
+01:50:36,399 --> 01:50:39,399
+Saat 4'te kaldığımız yerden devam edeceğiz.
+
+794
+01:50:39,399 --> 02:03:14,739
+Evet arkadaşlar yeniden merhaba.
+
+795
+02:03:14,739 --> 02:03:18,739
+Kaldığımız yerden devam ediyoruz kodlamaya.
+
+796
+02:03:18,739 --> 02:03:25,739
+Yaklaşık 20 dakika sonra kodlamaya bir ara verip size gene bir kod üzerinden
+
+797
+02:03:25,739 --> 02:03:30,739
+bugün öğrendiklerinizle dair başka bir kullanım şeklini göstereceğim.
+
+798
+02:03:30,739 --> 02:03:33,739
+Bu süre içerisinde gene buradayım.
+
+799
+02:03:33,739 --> 02:03:36,739
+Herhangi bir sorunuz olursa cevaplayacağız.
+
+800
+02:03:36,739 --> 02:16:27,930
+Evet arkadaşlar nasıl gidiyor?
+
+801
+02:16:27,930 --> 02:16:29,930
+Yapabiliyor musunuz?
+
+802
+02:16:29,930 --> 02:16:31,930
+Çok zor olmayan kısımlardayız.
+
+803
+02:16:31,930 --> 02:16:33,930
+Sorusu olan var mı?
+
+804
+02:16:33,930 --> 02:16:36,930
+Sign up ekranı tamamlandı mı?
+
+805
+02:16:36,930 --> 02:16:48,690
+Hocam hashlemek yerine road falan kullansak olabilir mi?
+
+806
+02:16:48,690 --> 02:16:52,690
+Çünkü hash için çok farklı algoritmalar var da o yüzden diyorum.
+
+807
+02:16:52,690 --> 02:16:57,690
+Niye bu kadar farklı algoritmalar olabilir ama hashlemekten niye kaçtık?
+
+808
+02:16:57,690 --> 02:16:59,690
+Tercih etmedik yani.
+
+809
+02:16:59,690 --> 02:17:01,690
+Uzun sürebilir diye düşündüm.
+
+810
+02:17:01,690 --> 02:17:04,690
+Hashlenkastınız şifrelemek değil mi?
+
+811
+02:17:05,690 --> 02:17:10,690
+Evet password'ı kapalı bir şekilde one way saklamak.
+
+812
+02:17:10,690 --> 02:17:12,690
+One way şifreleyerek.
+
+813
+02:17:12,690 --> 02:17:18,319
+Mesela road 13 kullanabilir miyiz?
+
+814
+02:17:18,319 --> 02:17:20,319
+Mesela onu sormak istiyorum.
+
+815
+02:17:20,319 --> 02:17:22,319
+Road 13'ün ne olduğunu bilmiyorum.
+
+816
+02:17:22,319 --> 02:17:25,319
+Şey hocam 13 tane kaydırıyor sadece.
+
+817
+02:17:25,319 --> 02:17:28,319
+Rotation 13 tane mi bahsediyorsun?
+
+818
+02:17:28,319 --> 02:17:30,319
+Evet.
+
+819
+02:17:31,319 --> 02:17:38,319
+Bir farkı yok teknik olarak ama hash fonksiyonu kullanmak için güzel bir örnek olduğunu düşünüyorum.
+
+820
+02:17:38,319 --> 02:17:41,319
+O yüzden hash fonksiyonu kullanmanızı tercih ederim.
+
+821
+02:17:41,319 --> 02:17:54,229
+Anladım hocam.
+
+822
+02:17:54,229 --> 02:17:56,229
+Sign up ekranını tamamlayanlar?
+
+823
+02:17:56,229 --> 02:18:06,579
+Ellerini kaldırabilirler.
+
+824
+02:18:06,579 --> 02:18:15,579
+Peki.
+
+825
+02:18:15,579 --> 02:18:19,090
+Evet ekran.
+
+826
+02:18:19,090 --> 02:18:21,090
+Elimi kaldırmak için şey yapmıştım.
+
+827
+02:18:21,090 --> 02:18:23,090
+Tamam anladım.
+
+828
+02:18:23,090 --> 02:18:26,090
+Normal ana ekrandan sign up it iş tamam mı?
+
+829
+02:18:26,090 --> 02:18:28,090
+Onlar tamam.
+
+830
+02:18:28,090 --> 02:18:30,090
+Bir tek şey kaldı.
+
+831
+02:18:30,090 --> 02:18:32,090
+Date picker yapacağım.
+
+832
+02:18:32,090 --> 02:18:36,090
+Birthday date ayarlayacağım.
+
+833
+02:18:36,090 --> 02:18:40,090
+Diğer komponentlerde ne kullandın mesela UI komponentlerde?
+
+834
+02:18:40,090 --> 02:18:43,090
+Hepsinde edit text kullandım.
+
+835
+02:18:43,090 --> 02:18:47,090
+Mesela fonda iken font format'ı ekledim bir tane.
+
+836
+02:18:47,090 --> 02:18:48,090
+İstinir olarak.
+
+837
+02:18:48,090 --> 02:18:49,090
+Tamam.
+
+838
+02:18:49,090 --> 02:18:52,090
+Otomatik olarak aradaki boşlukları eklesin diye.
+
+839
+02:18:52,090 --> 02:18:54,090
+Sonra digit sınırı koydum.
+
+840
+02:18:54,090 --> 02:18:56,090
+Mail için bir tane reg ex tanımladım.
+
+841
+02:18:56,090 --> 02:18:57,090
+Güzel.
+
+842
+02:18:57,090 --> 02:18:59,090
+İnternetten buldum o reg ex'i de.
+
+843
+02:18:59,090 --> 02:19:00,090
+Tamam.
+
+844
+02:19:00,090 --> 02:19:03,090
+Şifre için herhangi bir sınır koymamıştım.
+
+845
+02:19:03,090 --> 02:19:05,090
+Onu da ekleyebilirim aslında şimdi.
+
+846
+02:19:05,090 --> 02:19:08,090
+Şifreyi şey ekleyebilirsin.
+
+847
+02:19:08,090 --> 02:19:12,090
+İşte at least şu kadar karakter olacak diyebilirsin.
+
+848
+02:19:12,090 --> 02:19:15,090
+Evet aslında onu da reg ex de yapabilirim gibi.
+
+849
+02:19:15,090 --> 02:19:17,090
+Evet tamam peki.
+
+850
+02:19:17,090 --> 02:19:18,090
+Şey sınır da koyarım.
+
+851
+02:19:18,090 --> 02:19:20,090
+Sekiz haneli olması gerekli gibi.
+
+852
+02:19:20,090 --> 02:19:25,090
+Isim su isim de iki harf sınır koydum minimum.
+
+853
+02:19:25,090 --> 02:19:26,090
+Bu kadar.
+
+854
+02:19:26,090 --> 02:19:29,090
+Daha onun haricine çok bir şey yapmadım.
+
+855
+02:19:29,090 --> 02:19:31,090
+Tamam iyi güzel gayet.
+
+856
+02:19:31,090 --> 02:19:33,090
+Çoğu işini halletmişsin.
+
+857
+02:19:33,090 --> 02:19:35,090
+Şeyler çalışıyor.
+
+858
+02:19:35,090 --> 02:19:39,090
+Sign up tuşun çalıştığı zaman bir tane tost mesajı gönderiyor.
+
+859
+02:19:39,090 --> 02:19:41,090
+Kullanıcı oluşturuldu diye.
+
+860
+02:19:41,090 --> 02:19:43,090
+Sonra giriş yapma ekranına geri döndürüyor.
+
+861
+02:19:43,090 --> 02:19:45,090
+Yani finish yapıyor aslında.
+
+862
+02:19:45,090 --> 02:19:47,090
+Bir de cancel tuşu ekledim.
+
+863
+02:19:47,090 --> 02:19:48,090
+Tamam güzel.
+
+864
+02:19:48,090 --> 02:19:52,090
+Şu anda peki bilgileri nerede saklıyorsun?
+
+865
+02:19:53,090 --> 02:19:57,090
+Bilgileri user isminde bir tane klasım içerisinde tutuyorum.
+
+866
+02:19:57,090 --> 02:19:59,090
+Tamam.
+
+867
+02:19:59,090 --> 02:20:02,090
+Onları da statik değil listenin içerisine atıyorum.
+
+868
+02:20:02,090 --> 02:20:05,090
+Her kullanıcı oluşturulduğunda.
+
+869
+02:20:05,090 --> 02:20:08,090
+Tamam peki teşekkürler.
+
+870
+02:20:08,090 --> 02:21:57,610
+Hocam.
+
+871
+02:21:57,610 --> 02:22:06,579
+Evet dinliyorum.
+
+872
+02:22:06,579 --> 02:22:10,579
+Hocam beni bir kısa yol arıyorum da Android Stüdyo'da var mı?
+
+873
+02:22:10,579 --> 02:22:11,579
+Bulamadım.
+
+874
+02:22:11,579 --> 02:22:15,579
+Bu yazdığım kodları otomatik formatlayacak bir kısa yol var mı?
+
+875
+02:22:16,579 --> 02:22:18,579
+Yani şey mi?
+
+876
+02:22:18,579 --> 02:22:21,579
+Boşlukları falan kendisi ayarlıyor.
+
+877
+02:22:21,579 --> 02:22:23,579
+Bilmiyor. Var mı öyle bir şey?
+
+878
+02:22:23,579 --> 02:22:27,579
+Kontrol alt ve Lüleburgaz'ın l'siyle.
+
+879
+02:22:27,579 --> 02:22:29,579
+Kontrol alt l.
+
+880
+02:22:29,579 --> 02:22:31,579
+Kontrol alt l.
+
+881
+02:22:31,579 --> 02:22:33,579
+Evet.
+
+882
+02:22:33,579 --> 02:22:35,579
+Teşekkürler.
+
+883
+02:22:35,579 --> 02:31:48,180
+Evet arkadaşlar.
+
+884
+02:31:48,180 --> 02:31:51,180
+Şimdi kodlarınıza bir ara verin.
+
+885
+02:31:51,180 --> 02:31:55,180
+Tekrar ekranımı paylaşacağım.
+
+886
+02:31:55,180 --> 02:32:07,180
+Sizle bugün konuştuğumuz konularla ilgili bir kısmı daha kod üzerinden konuşuyor olacağız.
+
+887
+02:32:07,180 --> 02:32:09,180
+Şimdi ekranımı paylaşıyorum.
+
+888
+02:32:09,180 --> 02:32:18,219
+Şu anda görebildiğinizi tahmin ediyorum.
+
+889
+02:32:18,219 --> 02:32:22,219
+Bu noktada menüyü konuşmuştuk.
+
+890
+02:32:22,219 --> 02:32:27,219
+Menüde dikkatinizi çekmek istediğim daha sonra konuşuruz dediğim nokta.
+
+891
+02:32:28,219 --> 02:32:30,219
+Şuydu.
+
+892
+02:32:30,219 --> 02:32:35,139
+Burada Listener'lar tanımlanıyor.
+
+893
+02:32:35,139 --> 02:32:41,540
+Bunlar için ayrı bir anonymous klas atanmak yerine,
+
+894
+02:32:41,540 --> 02:32:50,540
+Activity'nin kendisi View.OnClickListener interface'ini implement ediyor.
+
+895
+02:32:50,540 --> 02:32:56,540
+Bu interface sayesinde tek bir onClick metodu tanımlıyorsunuz.
+
+896
+02:32:56,540 --> 02:33:03,540
+Bütün o Activity içerisinde yer alan aksiyonları,
+
+897
+02:33:03,540 --> 02:33:06,540
+aşağıda tanımlamış olduğunuz aksiyonları,
+
+898
+02:33:06,540 --> 02:33:10,540
+o View üzerinden gelen ID'yi alarak,
+
+899
+02:33:10,540 --> 02:33:14,540
+ki bu users butonuna mı, pardon,
+
+900
+02:33:14,540 --> 02:33:17,540
+users butonuna mı, sensörse, notes butonuna mı,
+
+901
+02:33:17,540 --> 02:33:22,540
+yani şuradaki bütün butonlar için tanımladığınız set onClickListener,
+
+902
+02:33:22,540 --> 02:33:26,540
+bir başka de işte burada tanımlamış olduğunuz ilgili image butonlar,
+
+903
+02:33:26,540 --> 02:33:29,540
+ait olduğunu kontrol edebiliyorsunuz.
+
+904
+02:33:29,540 --> 02:33:31,540
+View'den gelen hangi ID olduğunu.
+
+905
+02:33:31,540 --> 02:33:34,540
+O butonlardan hangisine basıldıysa,
+
+906
+02:33:34,540 --> 02:33:38,540
+SwitchKeyzone'u tespit ediyor ID'si üzerinden
+
+907
+02:33:38,540 --> 02:33:47,540
+ve o buton için normalde tanımlayacağınız onClick butonunun yapacağı işi,
+
+908
+02:33:47,540 --> 02:33:49,540
+burada Keyzone altına tanımlıyorsunuz.
+
+909
+02:33:49,540 --> 02:33:54,540
+Yani birden fazla kod tekrarını önlemek için
+
+910
+02:33:54,540 --> 02:34:02,540
+View üzerindeki aksiyonları takip etmek adına böyle bir tasarım kullanabiliyorsunuz.
+
+911
+02:34:02,540 --> 02:34:09,540
+Ama Activity'nizin View onClickListener interfaceini implement etmesi gerekiyor.
+
+912
+02:34:09,540 --> 02:34:12,540
+Birinci söylemek istediğim nokta buydu.
+
+913
+02:34:12,540 --> 02:34:14,540
+[öğrenci] bir soru soracak.
+
+914
+02:34:14,540 --> 02:34:18,540
+Hocam, bu SwitchCase yapısını kullandığımız zaman
+
+915
+02:34:18,540 --> 02:34:21,540
+ID'leri de warning veriyor bize de Android Studio.
+
+916
+02:34:21,540 --> 02:34:23,540
+Ama if-else kullanınca vermiyor.
+
+917
+02:34:23,540 --> 02:34:25,540
+Hani bunun sebebini soracaktım.
+
+918
+02:34:25,540 --> 02:34:28,540
+Interesting. Hangi API? Aynı API mi?
+
+919
+02:34:28,540 --> 02:34:30,540
+Şu an size de veriyor hocam.
+
+920
+02:34:30,540 --> 02:34:35,540
+Bir dakika, bir dakika.
+
+921
+02:34:35,540 --> 02:34:39,540
+Şuradaki case kısmı için mi soruyorsun?
+
+922
+02:34:39,540 --> 02:34:43,540
+Evet, ID'yi orada case'de kullandığımız zaman warning veriyor.
+
+923
+02:34:43,540 --> 02:34:46,540
+Bakalım hemen ne olduğunu.
+
+924
+02:34:46,540 --> 02:35:07,329
+[öğrenci] yorumlayamadım şu anda bu söylediğinin neden olduğunu açıkçası.
+
+925
+02:35:07,329 --> 02:35:14,329
+Normalde bu kullanımla ilgili nasıl bir sıkıntı olabilir bilemiyorum.
+
+926
+02:35:14,329 --> 02:35:16,329
+Hani özel bir kullanım değil çünkü.
+
+927
+02:35:16,329 --> 02:35:21,329
+Hocam, ben bir tahminde bulunabilir miyim?
+
+928
+02:35:21,329 --> 02:35:22,329
+Tabii.
+
+929
+02:35:22,329 --> 02:35:24,329
+Bence şeyden oluyor olabilir.
+
+930
+02:35:24,329 --> 02:35:27,329
+R.ID.users, R.ID.sensors...
+
+931
+02:35:27,329 --> 02:35:29,329
+Doğuda eşitmiş mi?
+
+932
+02:35:29,329 --> 02:35:32,329
+Yok, hepsini mesela users olarak import et...
+
+933
+02:35:32,329 --> 02:35:35,329
+Sensors olarak import etmemizi istiyor olabilir.
+
+934
+02:35:35,329 --> 02:35:37,329
+Hepsini sensors olarak?
+
+935
+02:35:37,329 --> 02:35:40,329
+Hayır yani R.ID hepsinde sabit olduğu için
+
+936
+02:35:40,329 --> 02:35:43,329
+mesela users, sensors, nodes olarak import edip
+
+937
+02:35:43,329 --> 02:35:46,329
+direkt bu isimlerle import etmemizi istiyor olabilir sanırım.
+
+938
+02:35:46,329 --> 02:35:48,329
+Onun için de bir öneri vardı ama tam emin olamadım.
+
+939
+02:35:48,329 --> 02:35:49,329
+Tıklarsınız.
+
+940
+02:35:49,329 --> 02:35:52,860
+Bakalım, hemen bir daha görelim.
+
+941
+02:35:52,860 --> 02:35:55,860
+Static import gibi bir şey diyor hocam.
+
+942
+02:35:55,860 --> 02:35:58,860
+Evet, şurada.
+
+943
+02:35:58,860 --> 02:36:00,860
+Bunun için veri olabilir tabi.
+
+944
+02:36:00,860 --> 02:36:01,860
+Şimdi bir deneyelim.
+
+945
+02:36:01,860 --> 02:36:04,860
+IFS kullanınca vermiyor ama ilginç bir şekilde yani.
+
+946
+02:36:04,860 --> 02:36:05,860
+Pardon.
+
+947
+02:36:05,860 --> 02:36:07,860
+S yapısında veriyor sadece.
+
+948
+02:36:07,860 --> 02:36:11,860
+Şimdi şöyle tabi yukarıdaki...
+
+949
+02:36:11,860 --> 02:36:16,860
+Bakıyorum herhangi bir şey var mı import ettiğimiz diye.
+
+950
+02:36:16,860 --> 02:36:18,860
+Tahminin doğru olabilir ama emin değilim.
+
+951
+02:36:18,860 --> 02:36:20,860
+Yani enteresan bir durum.
+
+952
+02:36:20,860 --> 02:36:23,860
+Hani bunun neden kaynaklandığını bilmiyorum açıkçası.
+
+953
+02:36:23,860 --> 02:36:29,840
+O yüzden bakalım.
+
+954
+02:36:31,840 --> 02:36:36,840
+Evet işte burada aslında ifade sizler de görebiliyorsunuz değil mi?
+
+955
+02:36:44,840 --> 02:36:51,840
+Bu noktada muhtemelen break kullanmadığınız takdirde
+
+956
+02:36:51,840 --> 02:36:56,840
+diğerlerine de arka arkaya erişme olasılığınız bulunduğu için
+
+957
+02:36:56,840 --> 02:37:01,840
+doğrudan resource id'lere erişmenin sıkıntılı olabileceğini
+
+958
+02:37:01,840 --> 02:37:03,840
+furguluyor olabilir.
+
+959
+02:37:03,840 --> 02:37:05,840
+Hemen more actions'a bakalım.
+
+960
+02:37:05,840 --> 02:37:10,090
+Evet muhtemelen senin söylediğin mantıklı gözüküyor.
+
+961
+02:37:10,090 --> 02:37:13,090
+Teşekkür ediyorum bilgilendirme için.
+
+962
+02:37:13,090 --> 02:37:15,090
+Hocam bir şey söyleyebilir miyim?
+
+963
+02:37:15,090 --> 02:37:16,090
+Tabii.
+
+964
+02:37:16,090 --> 02:37:20,090
+Sanırım default koyunca o warning gidiyor bir de.
+
+965
+02:37:20,090 --> 02:37:23,590
+Varmış pardon.
+
+966
+02:37:23,590 --> 02:37:24,590
+Var var.
+
+967
+02:37:24,590 --> 02:37:26,590
+Warning gitmiyor defaultda.
+
+968
+02:37:29,590 --> 02:37:30,590
+Enteresan.
+
+969
+02:37:30,590 --> 02:37:32,590
+Bu işten önce dikkatimi çekmemişti.
+
+970
+02:37:32,590 --> 02:37:33,590
+İlginç bir durum.
+
+971
+02:37:33,590 --> 02:37:38,920
+Şunu da kaldıralım.
+
+972
+02:37:38,920 --> 02:37:40,920
+Evet teşekkür ediyorum.
+
+973
+02:37:40,920 --> 02:37:43,920
+Şimdi buradaki kullanım şeklini sizinle paylaştım.
+
+974
+02:37:43,920 --> 02:37:47,920
+Esas benim anlatmak istediğim ikinci kısma geçiyorum.
+
+975
+02:37:47,920 --> 02:37:52,920
+Şimdi bir menüde hatırlarsanız şu noktada.
+
+976
+02:37:52,920 --> 02:37:55,229
+Efendim [öğrenci]?
+
+977
+02:37:55,229 --> 02:37:58,229
+Hocam küçük bir şey daha soracaktım.
+
+978
+02:37:58,229 --> 02:38:03,229
+Bu bir şey implement ettiğiniz bir interface sanırım.
+
+979
+02:38:03,229 --> 02:38:08,229
+Bu bütün aktivitinin dokunulabilir hale gelmesine sebep olmaz mı?
+
+980
+02:38:08,229 --> 02:38:10,229
+Yani nereye dokunursak dokunalım.
+
+981
+02:38:10,229 --> 02:38:14,229
+Aslında bir butona da tıklamasak sürekli on-click metodu çalışacak.
+
+982
+02:38:14,229 --> 02:38:16,229
+Kötü bir şey olmaz mı?
+
+983
+02:38:16,229 --> 02:38:24,229
+Yani sonuçta orada view içerisinde yer alan komponentler var.
+
+984
+02:38:24,229 --> 02:38:28,229
+O komponentler senin tanımladığın komponentler.
+
+985
+02:38:28,229 --> 02:38:35,229
+O komponentlere tıklandığı zaman bu aksiyonun takip edilmesini bekliyoruz.
+
+986
+02:38:35,229 --> 02:38:45,229
+Yani herhangi bir noktaya tıklama noktasında set listener'ın daha doğrusu şuradaki set on-click listener'ın sadece şunlara ait olarak tanımlanmış durumda.
+
+987
+02:38:45,229 --> 02:38:50,229
+Yani bütün aktivitedeki her nokta için set on-click listener tanımlanmış durumda değil.
+
+988
+02:38:50,229 --> 02:38:53,229
+Sadece bunlara tıklandığı zaman takip ediliyor.
+
+989
+02:38:54,229 --> 02:39:00,229
+Böyle bir, söylediğin gibi bir dezavantajlı durum oluşacağını düşünmüyorum.
+
+990
+02:39:00,229 --> 02:39:08,930
+Sadece listener tanımlanan yerlerdeyken dokundumu algılıyor o zaman, doğru mu?
+
+991
+02:39:08,930 --> 02:39:11,930
+Şimdi sonuçta bir window açılıyor.
+
+992
+02:39:11,930 --> 02:39:21,930
+Bu window içerisindeki UI'ların çeşitli aksiyonlara karşı bir görev gerçekleştirmesi gerekiyor.
+
+993
+02:39:21,930 --> 02:39:27,930
+Bu sadece Android olarak düşünmeyin, Java tarafında da aynı şey geçerli.
+
+994
+02:39:27,930 --> 02:39:32,930
+Bir window tanımladığınız zaman, içine çeşitli butonlar koyduğunuz zaman,
+
+995
+02:39:32,930 --> 02:39:40,930
+implement ettiğiniz yapı en üst düzeyde olursa daha fazla yorulur diye bir,
+
+996
+02:39:40,930 --> 02:39:45,930
+ya da daha fazla takipte bulunması gerekir diyebilirim söz konusu değil benim bildiğim kadarıyla.
+
+997
+02:39:45,930 --> 02:39:50,930
+Hiç bu açıdan bir problemle karşılaşmadım daha önce.
+
+998
+02:39:50,930 --> 02:39:53,930
+Yok benim kafamı karıştıran şey oldu sadece ya.
+
+999
+02:39:53,930 --> 02:39:57,930
+OnClick metodu öncekinde şeylere, butonlara özgüydü.
+
+1000
+02:39:57,930 --> 02:40:00,930
+Şimdi Activity'nin tamamında genel olduğu için.
+
+1001
+02:40:00,930 --> 02:40:08,930
+Tabii doğru söylüyorsun, tamamında genel ama sonuçta view'dan gelen UI komponentleri var.
+
+1002
+02:40:08,930 --> 02:40:12,930
+Yani oradan sadece butonlar geliyor şu andaki şu ekranda.
+
+1003
+02:40:12,930 --> 02:40:14,930
+Geri gidelim.
+
+1004
+02:40:15,930 --> 02:40:18,930
+Hani burada butonlar biraz büyük gerçi ama,
+
+1005
+02:40:18,930 --> 02:40:22,930
+bunun butonların küçük olduğunu ve sırayla yazıldığını varsayarsan,
+
+1006
+02:40:22,930 --> 02:40:28,930
+burada şu alanların herhangi bir şekilde takip edilmesini gerektirecek bir durum yok.
+
+1007
+02:40:30,930 --> 02:40:35,930
+Takip yok ama orası aslında gene dokunulabilir bir halde.
+
+1008
+02:40:35,930 --> 02:40:38,930
+Peki bu doğru mu? Takip yok sadece.
+
+1009
+02:40:39,930 --> 02:40:46,930
+Mesela switch case'deki default'un olduğu yerde bir işlem koysaydık,
+
+1010
+02:40:46,930 --> 02:40:50,930
+farklı bir yere dokunduğumuzda sürekli farklı bir şey çalıştırmış olur muyduk?
+
+1011
+02:40:50,930 --> 02:40:53,930
+Ama view'dan başka bir komponent gelmeyecek ki.
+
+1012
+02:40:53,930 --> 02:40:57,930
+View'dan gelebilecek komponentlerin ID'leri tanımlı,
+
+1013
+02:40:57,930 --> 02:41:01,930
+users'ın ID'si var, sensör'sın var, notes'ın var, settings'ın var.
+
+1014
+02:41:01,930 --> 02:41:07,930
+Bunlar dışında tanımlı olan AR'ın içerisinde herhangi bir ID yok ki.
+
+1015
+02:41:07,930 --> 02:41:10,930
+Yani şu alanın bir ID'si yok.
+
+1016
+02:41:11,930 --> 02:41:13,930
+Sürekli ID bekliyor olacak.
+
+1017
+02:41:13,930 --> 02:41:15,930
+Yani bunun dışında gelen başka bir,
+
+1018
+02:41:15,930 --> 02:41:20,930
+eğer bizim burada tanımladığımız ama buraya koymadığımız bir şey olsaydı,
+
+1019
+02:41:21,930 --> 02:41:24,930
+o zaman senin söylediğin default'a düşecekti.
+
+1020
+02:41:25,930 --> 02:41:28,930
+Ama zaten biz bütün buradaki butonları buraya koyduk.
+
+1021
+02:41:29,930 --> 02:41:34,930
+Peki o biz o dışarıdaki alana tıkladığımızda onClick metodu gene çalışacak mı?
+
+1022
+02:41:34,930 --> 02:41:37,930
+Hayır, çünkü onun öyle bir şeyi yok o alanın.
+
+1023
+02:41:38,930 --> 02:41:41,930
+Nasıl diyeyim, öyle bir aksiyonu tanımlanmış değil.
+
+1024
+02:41:41,930 --> 02:41:44,930
+Tanımlanan alanlar şuradaki alanlar, butonun olduğu yerler.
+
+1025
+02:41:44,930 --> 02:41:45,930
+Tamam, şimdi anladım hocam.
+
+1026
+02:41:45,930 --> 02:41:51,930
+Ben onClick aktivitinin genelinde tamamlanınca tamamı tıklanabilir bir halde oldu zannettim.
+
+1027
+02:41:51,930 --> 02:41:52,930
+Yok, hayır öyle değil.
+
+1028
+02:41:52,930 --> 02:41:58,930
+O mantıklı olsaydı o zaman her bir tıklamanın arka planda işlemesi gerekirdi.
+
+1029
+02:41:58,930 --> 02:42:01,930
+O zaman örneğin bu tonlar şuraya sıkışmış olsa,
+
+1030
+02:42:01,930 --> 02:42:06,930
+geri kalan bölgenin de her tıklamada bir aksiyon alması gerekirdi.
+
+1031
+02:42:06,930 --> 02:42:07,930
+O feasible olmazdı.
+
+1032
+02:42:08,930 --> 02:42:09,930
+Anladım hocam.
+
+1033
+02:42:09,930 --> 02:42:10,930
+Teşekkür ederim.
+
+1034
+02:42:10,930 --> 02:42:11,930
+Teşekkürler.
+
+1035
+02:42:11,930 --> 02:42:15,930
+Şimdi ben tekrar geri dönüyorum mail aktivitemize.
+
+1036
+02:42:16,930 --> 02:42:18,930
+Şimdi bir tane aktivitemiz, activity ekranı var.
+
+1037
+02:42:18,930 --> 02:42:22,930
+Daha sonra siz de burada böyle bir alan tanımlayacaksınız.
+
+1038
+02:42:22,930 --> 02:42:27,930
+İşte şurada soru olacak, burada cevaplı şıkları olacak, altında da cevabı olacak.
+
+1039
+02:42:28,930 --> 02:42:33,930
+Hatta soruya dosyaya da resim eklemenizi isteyeceğim.
+
+1040
+02:42:33,930 --> 02:42:35,930
+Böyle bir seçenek de olacak.
+
+1041
+02:42:35,930 --> 02:42:38,930
+Bu mail formatının farklı bir halini düşünün.
+
+1042
+02:42:38,930 --> 02:42:46,930
+Burada alıcı, konu, ileteceğiniz mesaj ve buraya bir ekleyerek, ekleme yaparak gönderiyorsunuz.
+
+1043
+02:42:46,930 --> 02:42:54,930
+Şimdi başlamak istediğim yer, ek kısmı, ekle tıkladığınızda buradaki galeriye gidiyorsunuz.
+
+1044
+02:42:54,930 --> 02:42:56,930
+Bunu nasıl sağlıyoruz?
+
+1045
+02:42:56,930 --> 02:42:57,930
+Ben ona bakalım.
+
+1046
+02:42:58,930 --> 02:43:07,930
+Şimdi bu noktada attachment.setOnClick bir sınır tanımlanmış, bir tane de anonymous class tanımlanmış.
+
+1047
+02:43:07,930 --> 02:43:09,930
+Bunun içinde de voidOnClick metodu var.
+
+1048
+02:43:09,930 --> 02:43:11,930
+Bir tane intent yaratılıyor.
+
+1049
+02:43:11,930 --> 02:43:18,930
+Bu intentte tüm imajların bizim için hedef olduğunu söylüyoruz yıldız koyarak.
+
+1050
+02:43:18,930 --> 02:43:21,930
+Buraya sadece jpegleri ve piyancileri gösterdi diyebilirdik.
+
+1051
+02:43:22,930 --> 02:43:24,930
+Bütün imaj formatlarını kapsıyoruz.
+
+1052
+02:43:24,930 --> 02:43:27,930
+Bu intentin bununla ilgilendiğini söylüyoruz.
+
+1053
+02:43:27,930 --> 02:43:30,930
+Action'ın da bu sefer ne yazıyoruz arkadaşlar?
+
+1054
+02:43:30,930 --> 02:43:32,930
+Action get content.
+
+1055
+02:43:32,930 --> 02:43:39,930
+Yani bu intentin aksiyonunda oradaki contenti almak var.
+
+1056
+02:43:39,930 --> 02:43:45,930
+Sonra buraya bir bilgi yerleştirilmiş, çok kritik bir bilgi değil.
+
+1057
+02:43:45,930 --> 02:43:48,930
+StartActivityForResult çağırılıyor.
+
+1058
+02:43:48,930 --> 02:43:56,930
+Yani siz bir attachment ekleyecekseniz galeriye gideceksiniz.
+
+1059
+02:43:56,930 --> 02:44:07,930
+Galeriden o bilgiyi geri getirmeniz lazım ki daha sonra bu bilgiyi e-mail atarken e-maili atacak kliente aktarabilirsiniz.
+
+1060
+02:44:07,930 --> 02:44:17,930
+O yüzden StartActivityForResult diyoruz ve buraya ilgili intenti ve ilgili request kodumuzu gönderiyoruz.
+
+1061
+02:44:17,930 --> 02:44:22,930
+Request kodunu nerede tanımladık? Request kodunu bu noktada tanımladık.
+
+1062
+02:44:23,930 --> 02:44:40,930
+Şimdi doğal olarak galeriye gittikten sonra bir resim dönme olasılığı olduğu için kodumuzun içerisinde biz activity'nin içerisinde bir de onActivityResult metodu tanımladık.
+
+1063
+02:44:40,930 --> 02:44:44,930
+Bunlar default parametreleri requestCode, resultCode, intent.
+
+1064
+02:44:44,930 --> 02:45:00,930
+Sonra gelen requestCode yani bizim oradan istediğimiz resmi aldıysak, pickFromGaleri mi diye bakıyoruz ve bunu kontrol ediyoruz ve bir şey döndü mü diye buna bakıyoruz.
+
+1065
+02:45:00,930 --> 02:45:07,930
+Result o ki eğer öyleyse biz gelen data'yı getData metodu ile alıyoruz.
+
+1066
+02:45:07,930 --> 02:45:12,930
+URI'ya assign ediyoruz yani Uniform Resource Identifier'a.
+
+1067
+02:45:12,930 --> 02:45:19,930
+Bu bize dönen objenin parse edilmesini biraz sonra sağlayacak.
+
+1068
+02:45:19,930 --> 02:45:37,930
+URI aslında Uniform Resource Identifier dediğimiz noktada her bir bizim için objenin bir IDC'nin olması gerektiğini bir temsil edilmesi gerektiğini resim, PDF olan her biri birer identifier ile temsil ediliyorlar.
+
+1069
+02:45:37,930 --> 02:45:44,930
+Döndürdüğümüz resmin bilgisini URI'ye yazdıktan sonra şu kısımlar çok önemli değil.
+
+1070
+02:45:44,930 --> 02:45:50,930
+Bunlar sadece döndürdüğümüz resminle ilgili bilgileri ekrana yazmak için kullanıyoruz.
+
+1071
+02:45:50,930 --> 02:45:52,930
+Bu kısım da olmayabilir.
+
+1072
+02:45:52,930 --> 02:45:59,930
+Burada artık onActivityResult'ta biz oradan gelen resme ait bilgiyi aldık.
+
+1073
+02:45:59,930 --> 02:46:02,930
+Peki bundan sonraki süreç ne olacak?
+
+1074
+02:46:02,930 --> 02:46:13,930
+Bundan sonraki süreç burada diyelim ki şunu ekledik ve buraya işte biraz önceki TextView'a yazdırdık değeri.
+
+1075
+02:46:13,930 --> 02:46:20,930
+Diğer kısımların olduktan sonra göndere bastığımız anda neler yapacağız, o resmi nasıl aktaracağız oraya geçiyoruz.
+
+1076
+02:46:20,930 --> 02:46:29,930
+O da Listener'lerin olduğu bir metot var onun içerisinde ButtonSend butonuna Action tanımlıyoruz.
+
+1077
+02:46:29,930 --> 02:46:33,930
+Ve onun Action'ı bu sefer ActionSend olarak tanımlıyoruz.
+
+1078
+02:46:33,930 --> 02:46:42,930
+Yani ben burada aldığım bilgileri benim adıma bir email client'inin göndermesini istiyorum.
+
+1079
+02:46:42,930 --> 02:46:52,930
+Sonra buraya burada topladığım bilgileri, extra email intent'in içerisindeki bilgiye,
+
+1080
+02:46:52,930 --> 02:46:57,930
+oraya kime göndermek istiyorsam buradan aldığım bilgileri ekliyorum.
+
+1081
+02:46:57,930 --> 02:47:01,930
+Extra Subject kısmına Subject'in ne olduğunu ekliyorum.
+
+1082
+02:47:01,930 --> 02:47:03,930
+Ve Text kısmına da içeriği ekliyorum.
+
+1083
+02:47:03,930 --> 02:47:05,930
+Sonra kontrol ediyorum.
+
+1084
+02:47:05,930 --> 02:47:15,930
+Uri, eğer null'dan farklı ise o zaman benim demek ki burada ekten gelen bir döndürmüş olduğum,
+
+1085
+02:47:15,930 --> 02:47:18,930
+oradan get ettiğim bir data var demektir.
+
+1086
+02:47:18,930 --> 02:47:21,930
+Onu da intent'in içerisine ekliyorum.
+
+1087
+02:47:21,930 --> 02:47:31,930
+Sonra yaptığım yegâne şey ResolveActivity metodunu çağırıp null'dan farklı olup olduğum adını kontrol ettikten sonra
+
+1088
+02:47:31,930 --> 02:47:43,930
+ilgili gönder butonuna bastığımda burada oluşan implicit intent'e kimin cevap verebileceğini öğrenmiş oluyorum.
+
+1089
+02:47:43,930 --> 02:47:51,930
+İşte her ikisinin de hem Gmail uygulamasında hem de Save to Drive'ın da ActionSend yetenekleri tanımlı olduğu için
+
+1090
+02:47:51,930 --> 02:47:56,930
+biri email gönderebiliyor, biri de datayı cloud'a push edebiliyor.
+
+1091
+02:47:56,930 --> 02:47:59,930
+İkisi de ActionSend adı altında tanımlanıyor.
+
+1092
+02:47:59,930 --> 02:48:03,930
+Yani özel bir ayarımı yapılmadığı için ikisi de benim listemde gelmiş oluyor.
+
+1093
+02:48:03,930 --> 02:48:07,930
+Sonra Gmail'i seçtikten sonraki bu emülatör de tanımlı değil.
+
+1094
+02:48:07,930 --> 02:48:12,930
+Sizin bilgileriniz Gmail'deki ilgili alanlara yerleştiriliyor.
+
+1095
+02:48:12,930 --> 02:48:18,930
+Ve sonra sende bastığınız zaman karşı tarafa gönderilmiş oluyor.
+
+1096
+02:48:20,930 --> 02:48:24,930
+Bu ekranın benzerini tasarlayacaksınız.
+
+1097
+02:48:24,930 --> 02:48:32,930
+Bir soru ekranı olacak, sorunun cevaplarının tanımlandığı adımlar olacak.
+
+1098
+02:48:32,930 --> 02:48:36,930
+Arkasından doğru cevap diye bir alan olacak.
+
+1099
+02:48:36,930 --> 02:48:46,930
+Doğru cevap alanında bir tane A, B, C, D, E seçeneği seçip bir scroll menu ile dizan edebilirsiniz.
+
+1100
+02:48:46,930 --> 02:48:52,930
+Onu seçtirip ondan sonra kaydete bastığınızda bu soruyu arka planda saklayacak.
+
+1101
+02:48:52,930 --> 02:48:57,930
+Bir de resim ekle gibi ya da dosya ekle de olabilir.
+
+1102
+02:48:57,930 --> 02:49:02,930
+Nasıl dizayn ederseniz. Çünkü soruyla ilgili bir resim de ekleyebilirsiniz.
+
+1103
+02:49:02,930 --> 02:49:05,930
+Ya da bir PDF dosyası da ekleyebilirsiniz.
+
+1104
+02:49:05,930 --> 02:49:09,930
+Böyle bir sayfa tasarımı yapıyor olacaksınız.
+
+1105
+02:49:09,930 --> 02:49:16,930
+Önümüzdeki haftaya kadar bunu gerçekleştirmenizi bekliyorum.
+
+1106
+02:49:16,930 --> 02:49:20,930
+Önümüzdeki hafta bunun üzerinden devam ediyor olacağız.
+
+1107
+02:49:20,930 --> 02:49:26,930
+Şimdi Mime dediğimiz bir kısaltma var. Nedir bilen var mı?
+
+1108
+02:49:26,930 --> 02:49:41,250
+Hiç duymadınız mı?
+
+1109
+02:49:41,250 --> 02:49:51,770
+B-I-M-E şeklinde mi hocam?
+
+1110
+02:49:51,770 --> 02:49:54,770
+Mime. M-I-M-E.
+
+1111
+02:49:54,770 --> 02:49:56,770
+He Mime.
+
+1112
+02:49:56,770 --> 02:50:00,459
+Evet.
+
+1113
+02:50:00,459 --> 02:50:04,459
+Multipurpose Internet Mail Extensions diye geçer.
+
+1114
+02:50:04,459 --> 02:50:12,459
+E-posta için kullanacak veri, gönderilecek verilerin tanımlanması için kullanılır.
+
+1115
+02:50:12,459 --> 02:50:17,459
+Genelde type ve sub type'lar olarak adlandırılır.
+
+1116
+02:50:17,459 --> 02:50:21,459
+İşte text plane dersiniz. Text slash plane dersiniz.
+
+1117
+02:50:21,459 --> 02:50:27,459
+Image slash png dersiniz. Image slash yıldız dersiniz.
+
+1118
+02:50:27,459 --> 02:50:32,459
+Yıldız yıldız dediğinizde tüm veri formatlarını temsil edersiniz.
+
+1119
+02:50:32,459 --> 02:50:43,459
+Bu rada intent set type dediğiniz noktada da aslında hangi veri tipleriyle ilgilendiğinizi karşı tarafa söylemiş oluyorsunuz.
+
+1120
+02:50:43,459 --> 02:50:48,459
+Burada texte HTML yazılmış. Aslında çok doğru değil.
+
+1121
+02:50:48,459 --> 02:50:56,459
+Bu noktada şuradaki kullanım şeklini kendimize baz almamız gerekir.
+
+1122
+02:50:56,459 --> 02:51:05,459
+Burada gittiğimiz galerideki jpeg de olsa, o telefona özel bir Android'in geliştirdiği bir format da olsa, png de olsa,
+
+1123
+02:51:05,459 --> 02:51:13,459
+farklı kaynaklardan gelen farklı image türlerini hedeflediğimizi ve bunları görmek istediğimizi söylüyoruz.
+
+1124
+02:51:13,459 --> 02:51:16,459
+Oraya gittiğimizde de bunları görebiliyoruz.
+
+1125
+02:51:16,459 --> 02:51:26,459
+Ama bunlar içerisinde image jpg deseydiniz, o zaman sadece jpeg olanlarıyla ilgilendiğinizi söylediğiniz için sadece onları görüntülüyor olacaktınız.
+
+1126
+02:51:26,459 --> 02:51:32,459
+Bu tür kısıtlamalar yapabiliyorsunuz ilgilendiğiniz dosya tipleriyle.
+
+1127
+02:51:32,459 --> 02:51:36,459
+Onun dışında tabii farklı başka formatlar da var.
+
+1128
+02:51:36,459 --> 02:51:44,459
+İşte audio deyip wow diyebilirsiniz, video deyip mp4 diyebilirsiniz, video deyip yıldız diyebilirsiniz gibi.
+
+1129
+02:51:44,459 --> 02:51:59,459
+Birçok bu noktada intentin erişmek istediği içerik tipini ve karşı tarafı bunu destekleyip desteklemediğini set type ile takip edebiliyor olabilirsiniz.
+
+1130
+02:51:59,459 --> 02:52:02,860
+Evet [öğrenci].
+
+1131
+02:52:02,860 --> 02:52:08,860
+Hocam bu internetin kullandığı actionlarla ilgili araştırabileceğimiz bir dökümantasyon var mı?
+
+1132
+02:52:08,860 --> 02:52:10,860
+Tabii tabii evet.
+
+1133
+02:52:10,860 --> 02:52:18,860
+Direk olarak Android intent actions de yazarsanız bütün intentlerin kullanabileceği actionlara ulaşabilirsiniz.
+
+1134
+02:52:18,860 --> 02:52:25,860
+Listesi çok uzun olduğu için ben açıkçası sizle paylaşmadım ama çok iyi yaparsınız bu tür bilgiler.
+
+1135
+02:52:25,860 --> 02:52:32,860
+Şöyle bir göz atmak bile size bir yavaşlılık verir ve hani neler yapabileceğiniz konusunda fikir sahibi olursunuz.
+
+1136
+02:52:32,860 --> 02:52:43,860
+Örneğin mesela actions sent yazıp altında bu textralarda extra email, extra subject tarzı şeyleri görebilecek bir böyle alt başlıklarını alabildiğini.
+
+1137
+02:52:43,860 --> 02:52:48,860
+Intent sınıfının altında bu tarz çok farklı başlıklar var.
+
+1138
+02:52:48,860 --> 02:52:56,860
+Hangi actions seçtiyseniz o ilgili başlıkları özellikle size getirmiyor.
+
+1139
+02:52:56,860 --> 02:53:00,860
+Bütün başlıkları orada görüyorsunuz, onlar içerisinden seçmeniz gerekiyor.
+
+1140
+02:53:00,860 --> 02:53:05,860
+Intent yazdığınızı örnek vermek gerekirse noktasını koyalım.
+
+1141
+02:53:05,860 --> 02:53:08,860
+Burada gördüğünüz gibi mesela actions screen on.
+
+1142
+02:53:08,860 --> 02:53:17,860
+Onun dışında başka şurada bütün intent sınıfına ait olan actions'ların geldiği noktalar var.
+
+1143
+02:53:17,860 --> 02:53:22,860
+Artı flags'ler var ki bunlar çok daha işin detaylı kısmı.
+
+1144
+02:53:22,860 --> 02:53:24,860
+Çok var bir seçenek.
+
+1145
+02:53:24,860 --> 02:53:26,860
+Çok var tabii tabii evet.
+
+1146
+02:53:26,860 --> 02:53:31,860
+Action answer var, action all apps var, action airplane mode change var.
+
+1147
+02:53:31,860 --> 02:53:44,860
+Nedir mesela siz bu telefon airplane mode ile ilgili bir aksiyon aldığında bu intentin takip etmesi gerektiğini söylemiş oluyorsunuz karşı tarafa.
+
+1148
+02:53:44,860 --> 02:53:48,860
+Bunlar tabii explicit intent ve implicit intent de tanımlı değil.
+
+1149
+02:53:48,860 --> 02:53:52,860
+İleride göreceksiniz broadcast receiver'lardan bahsetmiştik orada.
+
+1150
+02:53:52,860 --> 02:53:54,860
+Bu sistemi falan dinliyor.
+
+1151
+02:53:54,860 --> 02:53:56,860
+Evet evet aynen öyle.
+
+1152
+02:53:56,860 --> 02:54:04,860
+Bunlarla ilgilendiğinizi belirteceksiniz buradaki action airplane mode change gibi noktalarla ya da screen on olması durumunda.
+
+1153
+02:54:04,860 --> 02:54:08,860
+Yani listener görevi de görebiliyor mu intent tek başına?
+
+1154
+02:54:08,860 --> 02:54:11,860
+Tek başına listener görevi görmüyor.
+
+1155
+02:54:11,860 --> 02:54:15,860
+Siz bununla bir yere registre olmanız gerekiyor.
+
+1156
+02:54:15,860 --> 02:54:21,860
+O intent yayınlandığı zaman onu takip ediyor ve yakalıyor olacaksınız.
+
+1157
+02:54:21,860 --> 02:54:26,860
+Yani bu aslında device özellikleri birer stream gibi yayınlanıyor.
+
+1158
+02:54:26,860 --> 02:54:29,860
+İnternet de bunları bu şekilde yakalayabiliyor.
+
+1159
+02:54:29,860 --> 02:54:36,860
+Tam öyle değil ama bunu broadcast receiverlarda çok daha detaylı bir şekilde anlatıyor olacağız.
+
+1160
+02:54:36,860 --> 02:54:44,860
+Şu an için explicit ve explicit de kalsak iyi olur çünkü başka sorular da yani soru soruya açacak öyle gözüküyor.
+
+1161
+02:54:44,860 --> 02:54:46,860
+Burada çok detaya girmek istemiyorum.
+
+1162
+02:54:46,860 --> 02:54:55,860
+Ve sebebi henüz hani herkes bu noktada şu anki durumu bile tam özümseyebilmiş değil diye düşünüyorum.
+
+1163
+02:54:55,860 --> 02:54:58,860
+Evet şimdi haftaya istediklerimi söylüyorum.
+
+1164
+02:54:58,860 --> 02:55:04,860
+Haftaya istediklerim sign in, sign up ekranlarının tamamlanması.
+
+1165
+02:55:04,860 --> 02:55:09,860
+Sign up gerçekleştikten sonra bir menu ekranımız olacak.
+
+1166
+02:55:09,860 --> 02:55:15,860
+Ama öncesinde soru ekleyebildiğiniz bir ekran tasarlamanız istiyorum.
+
+1167
+02:55:15,860 --> 02:55:19,860
+Detaylarını haftaya tekrar söyleyeceğim ama şimdiden not alabilirsiniz.
+
+1168
+02:55:19,860 --> 02:55:22,860
+Bir soru yazmanız gerekiyor.
+
+1169
+02:55:22,860 --> 02:55:27,860
+Soruya ait şıkları yazmanız gerekiyor ve doğru cevabı yazmanız gerekiyor.
+
+1170
+02:55:27,860 --> 02:55:34,860
+Artı bu soruya bir döküman ekleyebilmeniz, farklı tipteki bir dökümanı ekleyebilmenizi bekliyorum.
+
+1171
+02:55:34,860 --> 02:55:40,860
+Bunları da havuzunuza kaydediyor olacaksınız soru havuzunuza.
+
+1172
+02:55:40,860 --> 02:55:49,180
+Evet başka sorusu olan var mı Azıyar?
+
+1173
+02:55:49,180 --> 02:55:58,180
+Hocam bu sorunun doğru şıkrını verdiğimizde aslında sistemde nasıl bir işe yürüyecek bu oradan şıkların içinde?
+
+1174
+02:55:58,180 --> 02:56:02,180
+Ha şimdi şunu şöyle düşünün.
+
+1175
+02:56:02,180 --> 02:56:09,180
+Buraya tanımladığınız sorular, bu uygulamayla bir soru tanımlama uygulaması yaptığınızı düşünün.
+
+1176
+02:56:09,180 --> 02:56:16,180
+Bu uygulama ilerlediğiniz zaman, örneğin bu soruları Firebase'e aktardığınız zaman
+
+1177
+02:56:16,180 --> 02:56:24,829
+başka bir uygulama sizin yarattığınız bu bütün soruları kendi tarafından çekebiliyor olacak.
+
+1178
+02:56:24,829 --> 02:56:31,829
+Bir nevi buluta veriyi sizin bu uygulamanız sağlıyor, soru hazırlama uygulamanız olacak.
+
+1179
+02:56:31,829 --> 02:56:38,829
+Başka derslerle uygulamaları düşünün vesaire bu soru havuzundan faydalanıyor olacak.
+
+1180
+02:56:38,829 --> 02:56:45,219
+Evet [öğrenci].
+
+1181
+02:56:45,219 --> 02:56:50,219
+Hocam bir tane menü tanımlayıp menüden soru ekle kısmına geçecek şekilde.
+
+1182
+02:56:50,219 --> 02:56:54,219
+Evet ileride yani bir sonraki adımda bir menü tanımlıyor olacaksınız.
+
+1183
+02:56:54,219 --> 02:56:58,219
+O menüde soru ekle, soru listele.
+
+1184
+02:56:58,219 --> 02:57:05,219
+Bunun gibi başka direkt oradan quiz veya soru havuzu oluşturmakla ilgili değil,
+
+1185
+02:57:05,219 --> 02:57:10,219
+başka buradaki gördüğünüz örnek veriyorum, şurada geri gidelim.
+
+1186
+02:57:10,219 --> 02:57:14,219
+Daha değişik aksiyonlar da olacak, yani hepsi o konuyla ilgili olmayacak.
+
+1187
+02:57:14,219 --> 02:57:21,219
+O menüden ilgili işleri yapan aktivitelere geçiyor olacağız, doğru söylüyorsun ama
+
+1188
+02:57:21,219 --> 02:57:28,219
+ilk etapta o menüden çok soru havuzu oluşturacağınız aktiviteyi tanımlamanızı bekliyorum.
+
+1189
+02:57:28,219 --> 02:57:30,219
+Soner.
+
+1190
+02:57:30,219 --> 02:57:36,219
+Hocam soruları tanımlarken standart çiftler mi olsun yoksa mesela doğru yanlış gibi
+
+1191
+02:57:36,219 --> 02:57:39,219
+öyle farklı tipleri desteklememiz gerekir mi?
+
+1192
+02:57:39,219 --> 02:57:43,219
+İlk etapta farklı tipleri desteklemenizi beklemiyorum ama
+
+1193
+02:57:43,219 --> 02:57:48,219
+böyle yapan olursa uzun vadede belki bir bonus puan olarak değerlendirebilirim.
+
+1194
+02:57:48,219 --> 02:57:51,239
+Teşekkür ederim.
+
+1195
+02:57:51,239 --> 02:57:55,239
+Genel olarak kendiniz yaptığınız sürece
+
+1196
+02:57:55,239 --> 02:58:01,239
+ekstra özellik eklediğinizde uzun vadede bu yaptıklarınızı ödev olarak alacağım için
+
+1197
+02:58:01,239 --> 02:58:05,239
+belirli oranda bir ekstra puan vermeyi düşünüyorum.
+
+1198
+02:58:05,239 --> 02:58:12,989
+Evet başka soru yoksa bugünlük bu kadar.
+
+1199
+02:58:12,989 --> 02:58:15,989
+Önümüzdeki hafta neler yapacağımızı söyleyeyim.
+
+1200
+02:58:15,989 --> 02:58:24,989
+Artık list view, scroll view, grid view ve recycler view gibi yapıları konuşup
+
+1201
+02:58:24,989 --> 02:58:35,989
+birbirine benzeyen yapıdaki bilgileri tek bir sayfada scroll ederek
+
+1202
+02:58:35,989 --> 02:58:39,989
+bir konteynerın içerisinde nasıl saklayacağınızı göreceksiniz.
+
+1203
+02:58:39,989 --> 02:58:48,989
+Ve bu itemlar üzerinde item'a tıklayarak ya da swipe ederek nasıl aksiyonlar
+
+1204
+02:58:48,989 --> 02:58:50,989
+yapılabileceğini göreceksiniz.
+
+1205
+02:58:50,989 --> 02:58:58,989
+Bir sonraki konumuz da onun hemen arkasından verileri internal storage'a,
+
+1206
+02:58:58,989 --> 02:59:05,989
+external storage'a nasıl yazabileceğiniz olacak yani akıllı telefonlarda
+
+1207
+02:59:05,989 --> 02:59:13,989
+veriyi, shared preferences gibi yapılarda, filelarda nasıl saklayabileceğinizi görüyor olacaksınız.
+
+1208
+02:59:13,989 --> 02:59:18,989
+Bunlarla ilgili de geliştirmeye devam ediyor olacağız projelerimizi.
+
+1209
+02:59:18,989 --> 02:59:25,989
+Ama haftaya bu söylediklerimi tamamlayarak gelmeniz konu üzerinde daha hızlı ilerlememize yardımcı olacaktır.
+
+1210
+02:59:25,989 --> 02:59:30,989
+Önümüzdeki hafta 7. hafta, 8. haftada bildiğim kadarıyla bir vize olacak.
+
+1211
+02:59:31,989 --> 02:59:36,989
+O yüzden önümüzdeki hafta sınavla ilgili de biraz konuşuruz diye düşünüyorum.
+
+1212
+02:59:36,989 --> 02:59:39,989
+Peki, hepinize sağlıklı bir hafta diliyorum.
+
+1213
+02:59:39,989 --> 02:59:43,989
+Her şey gönlünüzde olsun. Görüşmek üzere arkadaşlar, hoşçakalın.
+
+1214
+02:59:43,989 --> 02:59:45,989
+İyi haftalar hocam.
+

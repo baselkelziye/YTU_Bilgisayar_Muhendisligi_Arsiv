@@ -1,0 +1,3532 @@
+1
+00:00:00,430 --> 00:07:30,990
+Merhaba arkadaşlar.
+
+2
+00:07:30,990 --> 00:07:32,990
+Sesimiz geliyor mu?
+
+3
+00:07:32,990 --> 00:07:34,990
+Evet hocam.
+
+4
+00:07:34,990 --> 00:07:36,990
+Süper, harika.
+
+5
+00:07:36,990 --> 00:07:38,990
+Şimdi yine her hafta olduğu gibi
+
+6
+00:07:38,990 --> 00:07:40,990
+Can hocanızla beraber işliyoruz dersi.
+
+7
+00:07:40,990 --> 00:07:44,990
+Bu haftaki konumuz deadlock.
+
+8
+00:07:44,990 --> 00:07:55,990
+Bu arada merak ediyorsunuzdur şu notlandırma ile alakalı yaşanan sistemdeki o sonuçlarla alakalı yaşanan problemin çözüldüğüne dair.
+
+9
+00:07:55,990 --> 00:07:57,990
+Bize açıklama yapıldı.
+
+10
+00:07:57,990 --> 00:08:05,990
+Cihan hocanızla beraber sınavlarınızı inşallah dediklerinden bize bildirilen doğruysa değerlendirme şansımız olacak.
+
+11
+00:08:05,990 --> 00:08:07,990
+Onu da en kısa zamanda duyuracağız.
+
+12
+00:08:07,990 --> 00:08:19,990
+Evet bu hafta [öğrenci] haftaya vize olacak mı olursa ders saatinde mi olacak hocam diye soruyorsun.
+
+13
+00:08:19,990 --> 00:08:25,990
+Geçen hafta biz bunu açıkladık ya sordu arkadaşların sen derse katılmadın veya sonradan dinlemedin galiba.
+
+14
+00:08:25,990 --> 00:08:29,990
+Haftaya vize olacak ve ders saatinde olacak.
+
+15
+00:08:29,990 --> 00:08:33,990
+Hocam derse başlamadan bir soru sorabilir miyim?
+
+16
+00:08:33,990 --> 00:08:34,990
+Sor kimsin sen?
+
+17
+00:08:34,990 --> 00:08:35,990
+Alaeddin [öğrenci].
+
+18
+00:08:35,990 --> 00:08:38,990
+Tamam Alaeddin tamam sor.
+
+19
+00:08:38,990 --> 00:08:42,990
+Hocam dönemin başında bu dersten proje ödevi de vereceğiz demiştiniz.
+
+20
+00:08:42,990 --> 00:08:44,990
+Hala öyle bir planınız var mı?
+
+21
+00:08:44,990 --> 00:08:45,990
+Evet evet var.
+
+22
+00:08:45,990 --> 00:08:48,990
+Peki ne zaman verecek hocam proje ödevi?
+
+23
+00:08:48,990 --> 00:08:49,990
+Efendim?
+
+24
+00:08:49,990 --> 00:08:50,990
+Proje ödevi ne zaman verilecek?
+
+25
+00:08:50,990 --> 00:08:54,990
+İki haftanız var finallerin sonuna kadar da süremiz var.
+
+26
+00:08:54,990 --> 00:08:56,990
+Baktığın zaman bir ayımız var.
+
+27
+00:08:56,990 --> 00:09:01,990
+Yani proje ödevi dediğiniz şey öyle üç dört haftalık bir şey olmayacak.
+
+28
+00:09:01,990 --> 00:09:03,990
+Bir haftada yapabileceğiniz bir şey olacak.
+
+29
+00:09:03,990 --> 00:09:06,990
+Tamam hocam o zaman teşekkür ederim.
+
+30
+00:09:06,990 --> 00:09:07,990
+Sorun değil.
+
+31
+00:09:07,990 --> 00:09:09,990
+Ben teşekkür ederim.
+
+32
+00:09:09,990 --> 00:09:17,299
+Evet şimdi bugünkü konumuz deadlock.
+
+33
+00:09:18,299 --> 00:09:25,059
+Bir sistem modeline gireceğiz.
+
+34
+00:09:25,059 --> 00:09:29,059
+Ondan sonra deadlock karakteristine bakacağız.
+
+35
+00:09:29,059 --> 00:09:33,059
+Pardon biz burada ilerlememiş miydik arkadaşlar?
+
+36
+00:09:33,059 --> 00:09:36,059
+Bir yere kadar geldik diye hatırlıyorum ya kusura bakmayın.
+
+37
+00:09:36,059 --> 00:09:42,059
+Diğer bir gruba daha lisans üstünde anlatıyoruz bunu ama sizinle bunu yaptık mı yapmadık mı?
+
+38
+00:09:42,059 --> 00:09:48,309
+Sizler de bilmiyorsunuz.
+
+39
+00:09:48,309 --> 00:09:49,309
+Ne güzel harika.
+
+40
+00:09:49,309 --> 00:09:51,309
+Öğrencilerin çöktüğü.
+
+41
+00:09:51,309 --> 00:09:53,309
+Yapmadık hocam.
+
+42
+00:09:54,309 --> 00:09:55,309
+Öyle mi?
+
+43
+00:09:55,309 --> 00:09:56,309
+Tamam.
+
+44
+00:09:56,309 --> 00:09:57,309
+Deadlock'dan önce bitirdik.
+
+45
+00:09:57,309 --> 00:09:58,309
+Bitirdik değil mi?
+
+46
+00:09:58,309 --> 00:09:59,309
+Tamam.
+
+47
+00:09:59,309 --> 00:10:02,309
+Çünkü bir de lisans üstünde anlatıyoruz da o yüzden.
+
+48
+00:10:02,309 --> 00:10:03,309
+Tamam.
+
+49
+00:10:03,309 --> 00:10:05,309
+Proses sinkronizasyonu da tamam.
+
+50
+00:10:05,309 --> 00:10:06,309
+Okey.
+
+51
+00:10:06,309 --> 00:10:07,309
+Aynen.
+
+52
+00:10:07,309 --> 00:10:09,309
+Ama herkes bir tereddüt içerisinde.
+
+53
+00:10:09,309 --> 00:10:10,309
+Muhteşem böyle.
+
+54
+00:10:10,309 --> 00:10:12,309
+Sizde güzel bir teşebbü oldu.
+
+55
+00:10:12,309 --> 00:10:16,309
+Evet burada kalmıştık.
+
+56
+00:10:16,309 --> 00:10:17,309
+Süper harika.
+
+57
+00:10:17,309 --> 00:10:20,309
+Evet şimdi deadlock'ın karakteristiğine bakacağız.
+
+58
+00:10:20,309 --> 00:10:27,309
+Daha sonra deadlock'ı değerlendirmek için çözmek için neler yapabiliriz?
+
+59
+00:10:27,309 --> 00:10:30,309
+Nasıl deadlock ile baş edebiliriz?
+
+60
+00:10:30,309 --> 00:10:31,309
+Onu gözden geçireceğiz.
+
+61
+00:10:31,309 --> 00:10:39,309
+Zaten görüyorsunuz prevention, engellemek, avoidance, kaçınmak, detection'da farkına varmak.
+
+62
+00:10:39,309 --> 00:10:43,309
+En son başlıkta deadlock'dan işte nasıl geri dönülür?
+
+63
+00:10:43,309 --> 00:10:45,309
+Nasıl kurtulunur?
+
+64
+00:10:45,309 --> 00:10:48,309
+Bunu inceleyeceğiz.
+
+65
+00:10:49,309 --> 00:10:53,309
+Objektif kısmı zaten şey yapmış olacağız.
+
+66
+00:10:53,309 --> 00:10:57,309
+Şimdi bakın şu ana kadar hep aynı şeyi söylüyoruz.
+
+67
+00:10:57,309 --> 00:11:01,309
+İşletim sisteminin yönettiği her şey bir kaynak.
+
+68
+00:11:01,309 --> 00:11:03,309
+İşlemci de bir kaynak.
+
+69
+00:11:03,309 --> 00:11:06,309
+Hatta işlemcinin cycle'ları bir kaynak.
+
+70
+00:11:06,309 --> 00:11:12,309
+Yani instruction çalıştırması, exeküt etmesi de bir kaynak olarak görünmeli.
+
+71
+00:11:12,309 --> 00:11:16,309
+Çünkü bir process için diyelim kesintisiz 100 instruction çalıştırıyor,
+
+72
+00:11:16,309 --> 00:11:19,309
+öbürü için 5000 instruction çalıştırıyor.
+
+73
+00:11:19,309 --> 00:11:22,309
+Bu ölçekte görmemiz lazım.
+
+74
+00:11:22,309 --> 00:11:25,309
+Memori alanı zaten doğal olarak bir kaynak.
+
+75
+00:11:25,309 --> 00:11:28,309
+Gidiş-çıkış cihazları birer kaynak.
+
+76
+00:11:28,309 --> 00:11:33,309
+Bundan ötürü donanımsal unsurların tamamını,
+
+77
+00:11:33,309 --> 00:11:38,309
+işletim sisteminin yönettiği unsurların tamamını birer kaynak olarak görüyoruz
+
+78
+00:11:38,309 --> 00:11:43,309
+ve resource'un reisi ile ifade ediyoruz.
+
+79
+00:11:43,309 --> 00:11:49,309
+Her birinden de n tane veya n tane kaynak varsa,
+
+80
+00:11:49,309 --> 00:11:55,309
+her birinden de m'er tane, m adet kopya olabileceğini varsayıyoruz.
+
+81
+00:11:55,309 --> 00:12:01,309
+İşte iki soketli bir işlemcimiz varsa, işlemci kaynağı iki tanedir.
+
+82
+00:12:01,309 --> 00:12:05,309
+Bir gigabayt memurumuz varsa, aslında memurimiz bir gigabayttır.
+
+83
+00:12:05,309 --> 00:12:08,309
+Bunu istediğimiz gibi alt parçalara bölebiliriz.
+
+84
+00:12:08,309 --> 00:12:13,309
+İki printerumuz olabilir, dört disk drive'ımız olabilir.
+
+85
+00:12:13,309 --> 00:12:15,309
+Bu şekilde düşünebilirsiniz.
+
+86
+00:12:15,309 --> 00:12:21,309
+Diğer taraftan da bu işleri düzgün yönetebilmek için
+
+87
+00:12:21,309 --> 00:12:25,309
+işletim sisteminden servis aldığımızı öğrenmiştik.
+
+88
+00:12:25,309 --> 00:12:32,309
+Kaynakları işletim sisteminin yönettiğini dersin başından beri sürekli konuşuyoruz, anlatıyoruz.
+
+89
+00:12:32,309 --> 00:12:38,309
+Peki bu kaynakların işletim sisteminden yönetilmesi sırasındaki akış nasıl gerçekleşiyor?
+
+90
+00:12:38,309 --> 00:12:42,309
+Üç tane temel prensip üzerinden gerçekleşiyor.
+
+91
+00:12:42,309 --> 00:12:44,309
+Birinde istekte bulunuyorsunuz, request.
+
+92
+00:12:44,309 --> 00:12:47,309
+Yani mesela bir sistem çağrısı yapıyorsunuz.
+
+93
+00:12:47,309 --> 00:12:52,309
+Ve işletim sistemi o kaynağı size kullandıracak hale getiriyor.
+
+94
+00:12:52,309 --> 00:12:56,309
+Diyelim ki memuru alokat ediyor ve adresini size geri döndürüyor.
+
+95
+00:12:56,309 --> 00:12:59,309
+Yani use aşamasına, kullanma aşamasına geçiyorsunuz.
+
+96
+00:12:59,309 --> 00:13:03,309
+Kullandıktan sonra da bu kaynağı serbest bırakıyorsunuz.
+
+97
+00:13:03,309 --> 00:13:06,309
+Aslında yine bir sistem çağrısı yapıyorsunuz.
+
+98
+00:13:06,309 --> 00:13:12,309
+Yani demek ki bütün kaynaklar request, use, release prensibine göre kullanılıyor.
+
+99
+00:13:12,309 --> 00:13:20,309
+Yani herhangi bir proses, herhangi bir thread kendi isteği doğrultusunda
+
+100
+00:13:20,309 --> 00:13:28,309
+işletim sistemini bypass geçerek onun farkındalığı olmadan, onun izni olmadan
+
+101
+00:13:28,309 --> 00:13:31,309
+sistemdeki herhangi bir kaynağı kullanamıyor.
+
+102
+00:13:31,309 --> 00:13:36,309
+İşlemci de bunlara dahil, memuri de bunlara dahil, çevre birimleri de bunlara dahil.
+
+103
+00:13:36,309 --> 00:13:43,309
+Şimdi önce deadlock nasıl oluşuyor?
+
+104
+00:13:43,309 --> 00:13:45,309
+Onu bir gözden geçirelim.
+
+105
+00:13:45,309 --> 00:13:48,309
+Niye deadlock diyoruz?
+
+106
+00:13:48,309 --> 00:13:50,309
+Karşılıklı bir kilitlenme var.
+
+107
+00:13:50,309 --> 00:13:58,309
+Yani öyle bir kilitlenme oluşuyor ki bu kilitlenme ilerlemeyi durduruyor.
+
+108
+00:13:58,309 --> 00:14:01,309
+Gerçek işin yapılmasını durduruyor.
+
+109
+00:14:01,309 --> 00:14:09,309
+Yani programın dolayısıyla prosesin o canlı çalışır hali ortadan kalkıyor.
+
+110
+00:14:09,309 --> 00:14:12,309
+Çalışamaz, ilerleyemez, işleyemez hale geliyor.
+
+111
+00:14:12,309 --> 00:14:17,309
+O açıdan bakıldığında proses ölü pozisyonunda.
+
+112
+00:14:17,309 --> 00:14:20,309
+Çünkü normalde proses için ne demiştik?
+
+113
+00:14:20,309 --> 00:14:23,309
+Programın canlı çalışan hali demiştik.
+
+114
+00:14:23,309 --> 00:14:27,309
+Instructionları işletilen, egzeküt edilen hali demiştik.
+
+115
+00:14:27,309 --> 00:14:34,309
+Ama deadlock dediğimiz durum oluştuğunda, proses memuride, prose se kaynaklar atanmış durumda.
+
+116
+00:14:34,309 --> 00:14:38,309
+Fakat prosesin instructionları işletilemiyor.
+
+117
+00:14:38,309 --> 00:14:42,309
+Yani o çalışır canlı hali yok.
+
+118
+00:14:42,309 --> 00:14:44,309
+Bundan ötürü de buna ne diyoruz?
+
+119
+00:14:44,309 --> 00:14:45,309
+Deadlock diyoruz.
+
+120
+00:14:45,309 --> 00:14:47,309
+Ölümcül, kilitlenme.
+
+121
+00:14:47,309 --> 00:14:53,309
+Hangi şartlar bir araya gelmeli, bir arada olmalı?
+
+122
+00:14:53,309 --> 00:14:54,309
+Dört tane şart var.
+
+123
+00:14:54,309 --> 00:14:57,309
+Açıklayacağım hepsini ama önce şartları söyleyelim.
+
+124
+00:14:57,309 --> 00:15:01,309
+Mutual exclusion, bunu critical section'dan konuştuk.
+
+125
+00:15:01,309 --> 00:15:06,309
+Hold and wait, no preemption, circular wait.
+
+126
+00:15:06,309 --> 00:15:12,309
+Şimdi daha fazla detaya girmeden öncelikle şunu bilmenizi istiyorum, unutmamanızı istiyorum.
+
+127
+00:15:12,309 --> 00:15:18,309
+Bu dört şartın dördü de aynı anda geçerli olmalı.
+
+128
+00:15:18,309 --> 00:15:22,309
+Aralarında or veya ilişkisi yok.
+
+129
+00:15:22,309 --> 00:15:26,309
+Aralarında and ve ilişkisi var.
+
+130
+00:15:26,309 --> 00:15:35,309
+Yani bu şartlardan herhangi bir tanesi geçerli değil ise herhangi bir anda o zaman deadlock oluşamaz.
+
+131
+00:15:35,309 --> 00:15:42,309
+Deadlock'ın oluşabilmesi için bu dört şartın dördünün de aynı anda geçerli olması lazım.
+
+132
+00:15:42,309 --> 00:15:47,309
+Mutual exclusion, critical section'da zaten gördük.
+
+133
+00:15:47,309 --> 00:15:56,309
+Bir kaynağı herhangi bir anda sadece ve sadece en fazla bir proses, bir işlem kullanabiliyor.
+
+134
+00:15:56,309 --> 00:15:58,309
+Bu kadar basit.
+
+135
+00:15:58,309 --> 00:16:00,309
+Hold and wait.
+
+136
+00:16:00,309 --> 00:16:04,309
+Şimdi bir prosesimiz, işlemimiz var.
+
+137
+00:16:04,309 --> 00:16:09,309
+Bu bir kaynak talep etmiş ve o kaynağı bu prosese vermişiz.
+
+138
+00:16:09,309 --> 00:16:16,309
+Ancak bu prosesin çalışmaya devam edebilmesi için bir başka kaynağa daha ihtiyacı var.
+
+139
+00:16:16,309 --> 00:16:24,309
+Fakat bu kaynak diğer bir proses tarafından istenmiş ve ona atanmış ve onun tarafından tutuluyor.
+
+140
+00:16:24,309 --> 00:16:28,309
+Yani hold and wait oluşmuş durumda.
+
+141
+00:16:28,309 --> 00:16:32,309
+P1 prosesi de elinde bir kaynağı tutuyor, bekliyor.
+
+142
+00:16:32,309 --> 00:16:36,309
+P2 prosesi de elinde bir kaynağı tutuyor, bekliyor.
+
+143
+00:16:36,309 --> 00:16:41,309
+Ama olay nereye gelecek? P1, P2'nin elinde tuttuğunu bekliyor aslında.
+
+144
+00:16:41,309 --> 00:16:44,309
+P2'de P1'in elinde tuttuğunu bekliyor.
+
+145
+00:16:44,309 --> 00:16:46,309
+No preemption.
+
+146
+00:16:46,309 --> 00:16:50,309
+Preemption konusunu scheduling'de uzun uzun konuştuk, anlattık.
+
+147
+00:16:50,309 --> 00:17:00,309
+Kesintiye uğratılamama, ama buradaki kesintiye uğratılamama bir şeyin zamanından önce sonlandırılmaması anlamında.
+
+148
+00:17:00,309 --> 00:17:03,309
+Yani interrad anlamında değil.
+
+149
+00:17:03,309 --> 00:17:06,309
+Peki buraya yansıması ne?
+
+150
+00:17:06,309 --> 00:17:13,309
+Bir kaynağı, bir işleme, bir prosese atadıktan sonra, çünkü request etti ve ona izin verdik,
+
+151
+00:17:13,309 --> 00:17:16,309
+proses de onu kullanmaya başladı.
+
+152
+00:17:16,309 --> 00:17:18,309
+Bu atama işleminden sonra,
+
+153
+00:17:18,309 --> 00:17:23,309
+proses kendi isteğiyle release etmediği sürece, o üçlü aşamayı düşünün,
+
+154
+00:17:23,309 --> 00:17:25,309
+hatırlayın request, use, release.
+
+155
+00:17:25,309 --> 00:17:27,309
+Bunu yapmadığı sürece,
+
+156
+00:17:27,309 --> 00:17:31,309
+prosesten o kaynağı zorla geri almıyoruz.
+
+157
+00:17:31,309 --> 00:17:33,309
+Buradaki istisna nedir?
+
+158
+00:17:33,309 --> 00:17:35,309
+Hatırlayın, işlemci.
+
+159
+00:17:35,309 --> 00:17:42,309
+İşlemci de preemptive scheduling yöntemleri uyguluyorduk.
+
+160
+00:17:42,309 --> 00:17:44,309
+Time quantum değerimiz vardı.
+
+161
+00:17:44,309 --> 00:17:47,309
+Belirli bir süreden sonra,
+
+162
+00:17:47,309 --> 00:17:54,309
+işlemciyi, prosesin ihtiyacı olsa bile zorla o prosesten geri alıyorduk.
+
+163
+00:17:54,309 --> 00:17:56,309
+Yani orada bakın ne yapıyoruz?
+
+164
+00:17:56,309 --> 00:17:57,309
+Preemption yapıyoruz.
+
+165
+00:17:57,309 --> 00:17:59,309
+Halbuki burada da diyoruz ki no preemption.
+
+166
+00:17:59,309 --> 00:18:06,309
+Yani bir kaynak zorla atanmış, tahsis edilmiş olduğu prosesten geri alınmaz.
+
+167
+00:18:06,309 --> 00:18:09,309
+Dördüncü şart, circular weight.
+
+168
+00:18:09,309 --> 00:18:10,309
+Biraz önce söyledim.
+
+169
+00:18:10,309 --> 00:18:13,309
+P0, P1'in elindeki kaynağı ihtiyaç duyuyor.
+
+170
+00:18:13,309 --> 00:18:16,309
+P1 de P0'ın.
+
+171
+00:18:16,309 --> 00:18:21,309
+Bu döngüyü, bu çemberi çok daha büyütebilirsiniz.
+
+172
+00:18:21,309 --> 00:18:26,309
+Yani işte P0, P1, P1, P2, P2, P3, P3, P0.
+
+173
+00:18:26,309 --> 00:18:27,309
+Ne oldu?
+
+174
+00:18:27,309 --> 00:18:29,309
+Dört tanesi arasında oldu.
+
+175
+00:18:29,309 --> 00:18:37,309
+Saydığım bu dört tane şartın dördü birden aynı anda geçerli ise,
+
+176
+00:18:37,309 --> 00:18:39,309
+o zaman deadlock var diyoruz.
+
+177
+00:18:39,309 --> 00:18:42,309
+Bunun haricinde deadlock olamaz.
+
+178
+00:18:42,309 --> 00:19:00,410
+Şimdi mutex luckları incelerken hatırlarsanız orada iki tane semaforumuz vardı.
+
+179
+00:19:00,410 --> 00:19:04,410
+Ve bu semaforları yanlış sırayla kullanmıştık.
+
+180
+00:19:04,410 --> 00:19:09,410
+Weight ve signal sıralarını hatalı yapmıştık.
+
+181
+00:19:10,410 --> 00:19:12,410
+Ve bu hatalı yapmadan ötürü,
+
+182
+00:19:12,410 --> 00:19:21,410
+proseslerin çalışma sırasına ve hızına bağlı olarak race condition ve sonrasında da deadlock oluşuyordu.
+
+183
+00:19:21,410 --> 00:19:31,410
+Öyleyse demek ki, mutual exclusion için oluşturduğumuz luck mekanizmalarını yanlış kullanırsak,
+
+184
+00:19:31,410 --> 00:19:34,410
+doğrudan deadlock ile karşılaşabiliriz.
+
+185
+00:19:34,410 --> 00:19:36,410
+Şeylerden bir tanesi bu.
+
+186
+00:19:36,410 --> 00:19:45,410
+Diğeri, sistem çağrılarında da yani kernel'ın içerisinde de deadlock olabilir.
+
+187
+00:19:45,410 --> 00:19:48,410
+Bunu da unutmamak gerekiyor.
+
+188
+00:19:48,410 --> 00:19:52,410
+Hatta bakın bir örnek vermiştik size.
+
+189
+00:19:52,410 --> 00:19:58,410
+Düşük öncelikli bir proses bir kaynağı elinde tutuyor.
+
+190
+00:19:58,410 --> 00:20:02,410
+Ancak daha sonra, yani critical section'a girmiş,
+
+191
+00:20:02,410 --> 00:20:06,410
+daha sonra hep yüksek öncelikli prosesler geliyor.
+
+192
+00:20:06,410 --> 00:20:17,410
+Ve bu prosesler, düşük öncelikli proses çalışıp da critical section'dan çıkma imkanı bulamadığı için beklemeye başlıyorlar.
+
+193
+00:20:17,410 --> 00:20:24,410
+Düşük öncelikli proses de hep yüksek öncelikli prosesler olduğu için beklemeye başlıyor.
+
+194
+00:20:24,410 --> 00:20:32,410
+Şimdi çok tipik bir starvation senaryosu ama aynı zamanda da karşılıklı bekleme olduğu,
+
+195
+00:20:32,410 --> 00:20:39,410
+preemption olmadığı, doğrudan mutual exclusion'dan bahsedildiği ve
+
+196
+00:20:39,410 --> 00:20:46,410
+bu söylediğim prosesler arasında döngüsel olarak birbirlerine bir bekleme senaryosu oluştuğu için
+
+197
+00:20:46,410 --> 00:20:50,410
+aynı zamanda da neden bahsediyoruz burada arkadaşlar?
+
+198
+00:20:50,410 --> 00:20:52,410
+Deadlock'tan bahsediyoruz.
+
+199
+00:20:52,410 --> 00:20:57,410
+Hatta bu örneği üzerine gidip ne demiştik?
+
+200
+00:20:57,410 --> 00:21:06,410
+Düşük öncelikli prosesin önceliğini geçici olarak aynı critical section'a girmek isteyenlerin,
+
+201
+00:21:06,410 --> 00:21:14,410
+o proseslerin önceliğine denk düşürmemiz lazım ki burada bu söylediğimiz kötü senaryo oluşmasın.
+
+202
+00:21:14,410 --> 00:21:16,410
+Priority inheritance demiştik.
+
+203
+00:21:17,410 --> 00:21:24,410
+Yani öyleyse sadece lock mekanizmalarını yanlış kullanmak değil,
+
+204
+00:21:24,410 --> 00:21:31,410
+işletim sisteminin kendisindeki tasarımsal sıkıntılar da veya az önce örneğini verdiğimiz noktadaki
+
+205
+00:21:31,410 --> 00:21:36,410
+senaryolarda atlandığında deadlock oluşabilir.
+
+206
+00:21:36,410 --> 00:21:46,940
+Şimdi deadlock analizi yapabilmek için deadlock'ı bir şekilde sözel değil de görsel olarak
+
+207
+00:21:46,940 --> 00:21:50,309
+ifade edebilmemiz lazım.
+
+208
+00:21:50,309 --> 00:21:56,309
+Burada da bizim alanda çokça kullanılan graflardan yararlanıyoruz.
+
+209
+00:21:56,309 --> 00:22:01,309
+Kullandığımız grafın adı resource allocation graph.
+
+210
+00:22:01,309 --> 00:22:09,309
+Vertisler yani düğümler ve edgeler yani aradaki bağlantılar V ve E'ler var.
+
+211
+00:22:09,309 --> 00:22:17,309
+Şimdi V yani düğümler kendi içerisinde iki farklı tipten oluşuyor.
+
+212
+00:22:17,309 --> 00:22:21,309
+Bunlardan biri proses, diğeri resource.
+
+213
+00:22:21,309 --> 00:22:27,309
+Sistemde M tane proses var, sistemde M tane resource var.
+
+214
+00:22:27,309 --> 00:22:32,309
+Bir prosesin bir resursun birden fazla kopyası olabilir.
+
+215
+00:22:32,309 --> 00:22:38,309
+Bu arada bu graf yönlü bir graf yani directed graf.
+
+216
+00:22:38,309 --> 00:22:44,309
+Yön önem ifade ediyor, önemli yani yönü atlayamayız.
+
+217
+00:22:44,309 --> 00:22:56,309
+Eğer okun yönü prosesten resorsa doğru ise ilk satırda görüldüğü gibi ortadaki satırda buna request diyoruz.
+
+218
+00:22:56,309 --> 00:22:58,309
+Request edge diyoruz.
+
+219
+00:22:58,309 --> 00:23:08,309
+Yani şu örnekte PI prosesi RG resursunu istiyor, tahsis edilmesini istiyor.
+
+220
+00:23:08,309 --> 00:23:18,309
+Attakisinde ise okun yönü resurstan prosese doğru burada da bir assignment edge var.
+
+221
+00:23:18,309 --> 00:23:20,309
+Yani ne anlama geliyor?
+
+222
+00:23:20,309 --> 00:23:26,309
+RG resursu PI prosesine tahsis edilmiş.
+
+223
+00:23:26,309 --> 00:23:34,309
+O zaman prosesleri de hani resursları da vertis düğüm olarak düşünüyorduk ya
+
+224
+00:23:34,309 --> 00:23:38,309
+Bunları birbirinden ayırt etmek için iki farklı sembol kullanıyoruz.
+
+225
+00:23:38,309 --> 00:23:42,309
+Prosesler daire ile, resurslar kare ile ifade ediliyor.
+
+226
+00:23:42,309 --> 00:23:48,309
+Ve dikkat edin karenin içerisinde 4 tane küçük kare daha var.
+
+227
+00:23:48,309 --> 00:23:50,309
+Bu şu anlama geliyor.
+
+228
+00:23:50,309 --> 00:23:52,309
+O resursdan 4 kopya varmış.
+
+229
+00:23:52,309 --> 00:23:58,309
+Şimdi proses her biri bağımsız olacağı için öyle içinde küçük daireler falan yok.
+
+230
+00:23:58,309 --> 00:24:00,309
+Öyle bir şeyle karıştırmayın.
+
+231
+00:24:00,309 --> 00:24:06,309
+Bu sistemde 2-3 proses varsa 2-3 tane bağımsız daire olacak demektir.
+
+232
+00:24:06,309 --> 00:24:18,309
+Hem request edilmesi hem de assign edilmesi ile alakalı örnekleri de sondaki 2 örnekte görüyoruz.
+
+233
+00:24:18,309 --> 00:24:23,309
+Bakın burada örnek bir resource allocation graph verilmiş.
+
+234
+00:24:23,309 --> 00:24:29,309
+Bu grafi okuyacak olursak R1, R3 resurslarından birer kopya var.
+
+235
+00:24:29,309 --> 00:24:33,309
+R2 resursundan 2 kopya, R4 resursundan 3 kopya.
+
+236
+00:24:33,309 --> 00:24:38,309
+R4 resursuyla ilgilenen herhangi bir proses yok şu anda sistemde.
+
+237
+00:24:38,309 --> 00:24:42,309
+Çünkü ona ne gelen ok var ne de giden ok var.
+
+238
+00:24:42,309 --> 00:24:45,309
+Sistemde 3 tane proses var.
+
+239
+00:24:45,309 --> 00:24:49,309
+P1, R1'i istiyor, talep ediyor.
+
+240
+00:24:49,309 --> 00:24:54,309
+Ama aynı zamanda R2'yi almış ve elinde tutuyor.
+
+241
+00:24:54,309 --> 00:24:59,309
+R2'nin diğer kopyası P2'nin elinde.
+
+242
+00:24:59,309 --> 00:25:02,309
+Bu arada R1, P2'nin elinde.
+
+243
+00:25:02,309 --> 00:25:07,309
+Ancak P2'nin hangi kaynağı da ihtiyacı var?
+
+244
+00:25:07,309 --> 00:25:09,309
+R3 kaynağı da.
+
+245
+00:25:09,309 --> 00:25:11,309
+Fakat şu anda onu henüz alamamış.
+
+246
+00:25:11,309 --> 00:25:15,309
+R3 kaynağı zira P3'ün kullanımında.
+
+247
+00:25:15,309 --> 00:25:24,329
+Şimdi az önceki slide ile ikisi arasında gidiş yapacağım.
+
+248
+00:25:24,329 --> 00:25:35,329
+İkisi arasında yegâne fark P3'ten R2'ye doğru giden isteme yönünde tahsis edilmesini isteme yönündeki ok.
+
+249
+00:25:35,329 --> 00:25:40,329
+Yani bir öncekinde o ok yok, şunda bu ok var.
+
+250
+00:25:40,329 --> 00:25:54,670
+Şimdi bakın, şurada herhangi bir şekilde kapalı bir çevrim okların yönüne dikkat ederek kapalı bir çevrim oluşturabiliyor muyuz?
+
+251
+00:25:54,670 --> 00:26:07,670
+R2'den başlayın isterseniz, R2 P1 ok, P1 R1 ok, R1 P2 ok, R2'ye geri dönemeyiz okun yönü ters.
+
+252
+00:26:07,670 --> 00:26:12,670
+Ama P2'den R3'e gidebiliriz, R3'ten de P3'e gidebiliriz.
+
+253
+00:26:12,670 --> 00:26:17,670
+Fakat sonuç olarak kapalı bir çevrim oluşturamadık.
+
+254
+00:26:17,670 --> 00:26:31,670
+Öyleyse resource allocation grafta eğer kapalı bir çevrim oluşturamıyor isek bütün olasılıkları denedikten sonra ne kararına varabiliriz?
+
+255
+00:26:31,670 --> 00:26:40,670
+Burada resurslar ile prosesler arasında deadlock oluşturacak bir senaryo yok.
+
+256
+00:26:40,670 --> 00:26:45,670
+Kapalı çevrim olmaması, deadlock olmaması anlamına geliyor.
+
+257
+00:26:45,670 --> 00:26:46,670
+Güzel bir şey.
+
+258
+00:26:46,670 --> 00:26:53,670
+Şimdi arada gidip geleceğiz dedim ya, hemen bakın bir tane ok ekledik.
+
+259
+00:26:53,670 --> 00:26:56,670
+Yaptığımız şey çok masum gözüküyor.
+
+260
+00:26:56,670 --> 00:27:01,670
+P3 R2'yi kullanmak istiyor.
+
+261
+00:27:01,670 --> 00:27:10,670
+Şimdi bakın, önce kapalı çevrim hesabı yapmadan, onun takibini yapmadan genel olarak bir düşünelim.
+
+262
+00:27:10,670 --> 00:27:16,670
+P1 R2'ye sahip ama çalışmak için R1'e ihtiyaç duyuyor.
+
+263
+00:27:16,670 --> 00:27:18,670
+R1 boşta mı? Hayır.
+
+264
+00:27:18,670 --> 00:27:20,670
+O zaman P1 beklemek zorunda.
+
+265
+00:27:20,670 --> 00:27:23,670
+Peki P1 hangi prosesi bekliyor?
+
+266
+00:27:23,670 --> 00:27:26,670
+P1 P2'yi bekliyor.
+
+267
+00:27:26,670 --> 00:27:27,670
+Çünkü neden?
+
+268
+00:27:27,670 --> 00:27:36,670
+P2 R1'e sahip, hani P1'in ihtiyaç duyduğu R1 diye onu tutuyor elinde, hold and wait var.
+
+269
+00:27:36,670 --> 00:27:39,670
+Aynı zamanda R2'yi elinde tutuyor, hold and wait var.
+
+270
+00:27:39,670 --> 00:27:44,670
+Fakat P2'nin çalışabilmesi için neye ihtiyaç var? R3'e.
+
+271
+00:27:44,670 --> 00:27:47,670
+R3 P2'de mi? Hayır.
+
+272
+00:27:47,670 --> 00:27:50,670
+P2 kimi bekliyor? P3'ü bekliyor.
+
+273
+00:27:50,670 --> 00:27:56,670
+Çünkü P3, R3'ün bir kopyası var zaten sistemde, onu almış.
+
+274
+00:27:56,670 --> 00:28:00,670
+Fakat çalışmaya devam etmesi için R2'ye ihtiyaç duyuyor.
+
+275
+00:28:01,670 --> 00:28:10,670
+Ancak R2'nin boşa çıkması için onun iki kopyasından biri P1'de, diğeri de P2'de ya P1'in ya da P2'nin işini bitirmesi lazım.
+
+276
+00:28:10,670 --> 00:28:19,670
+Ancak bakın P1 P2'yi bekliyordu, P2'de P3'ü bekliyordu, P3'de bu durumda ya P1 ya da P2'nin bitmesini bekliyor.
+
+277
+00:28:19,670 --> 00:28:20,670
+Ne oldu?
+
+278
+00:28:20,670 --> 00:28:25,670
+Hold and wait'in yanı sıra aynı zamanda bir circular wait de oluştu.
+
+279
+00:28:25,670 --> 00:28:35,670
+Yani bu şartlar altında hiçbirinin, üç prosesten hiçbirinin çalışmaya devam edebilmesi mümkün değil.
+
+280
+00:28:35,670 --> 00:28:39,670
+O zaman çok tipik bir neyle karşı karşıyayız? Deadlock'la.
+
+281
+00:28:39,670 --> 00:28:43,670
+Peki şimdi kapalı çevrim var mı?
+
+282
+00:28:43,670 --> 00:28:48,670
+Hani circular wait de işin içine girdi dedik ya ona bir bakalım.
+
+283
+00:28:48,670 --> 00:28:53,670
+R2'den P1'e gittik, P1'den R1'e gittik, R1'den P2'ye gittik.
+
+284
+00:28:53,670 --> 00:28:56,670
+P2'ye gittik, okları takip ediyorum, yönlerini takip ediyorum.
+
+285
+00:28:56,670 --> 00:29:07,670
+P2'den R3'e gittik, R3'den P3'e, P3'den R2'ye bakın bir tane en dıştan geçen büyük bir kapalı çevrim.
+
+286
+00:29:07,670 --> 00:29:10,670
+Yetmedi, ikinci bir tane daha görünüyor.
+
+287
+00:29:10,670 --> 00:29:16,670
+R2'den P2'ye, P2'den R3'e, R3'den P3'e, P3'den de R2'ye.
+
+288
+00:29:16,670 --> 00:29:23,670
+Şimdi burada çok net iki tane kapalı çevrim var.
+
+289
+00:29:23,670 --> 00:29:33,670
+Kapalı çevrim olması demek, deadlock ihtimali çok yüksek demek.
+
+290
+00:29:33,670 --> 00:29:42,670
+Ancak her kapalı çevrim mutlaka ve mutlaka deadlock anlamına gelmiyor.
+
+291
+00:29:42,670 --> 00:29:45,670
+Bunu da unutmamak lazım.
+
+292
+00:29:45,670 --> 00:29:51,670
+Bakın, hemen arkasındaki örnek, burada da bir kapalı çevrim var.
+
+293
+00:29:51,670 --> 00:29:59,670
+Kimler arasında? P1, R1, R1, P3, P3, R2, R2, P1.
+
+294
+00:29:59,670 --> 00:30:03,670
+Ancak deadlock yok. Niye mi?
+
+295
+00:30:03,670 --> 00:30:12,670
+P3, R1'in bir kopyasını elinde tutuyor, R1'in diğer kopyası da P2'de.
+
+296
+00:30:12,670 --> 00:30:17,670
+Şimdi P2'nin başka herhangi bir risorsa ihtiyacı var mı? Yok.
+
+297
+00:30:17,670 --> 00:30:24,670
+Çalışmasını bitirdiği zaman R1'in diğer kopyası boşa çıkacak, P1 onu kullanıp çalışabilecek.
+
+298
+00:30:24,670 --> 00:30:31,670
+Benzer şekilde R2'nin bir kopyası P1'de, diğer kopyası P4'te.
+
+299
+00:30:31,670 --> 00:30:36,670
+Ancak P4'ün çalışmak için başka bir kaynağa ihtiyacı yok.
+
+300
+00:30:36,670 --> 00:30:40,670
+Çalışmasını bitirdiği zaman R2'nin ikinci kopyası boşa çıkacak
+
+301
+00:30:40,670 --> 00:30:45,670
+ve P3 bu kaynağı çalışmasını tamamlayabilecek.
+
+302
+00:30:45,670 --> 00:30:56,670
+P1, R1, R1, P3, P3, R2, R2, P1 arasında çok bariz bir şekilde kapalı bir çevrim olmasına rağmen
+
+303
+00:30:56,670 --> 00:31:02,670
+şu grafta ne yok diyoruz? Deadlock yok diyoruz.
+
+304
+00:31:03,670 --> 00:31:14,670
+Öyleyse, kural çok net. Eğer bir grafta kapalı çevrim yoksa, deadlock yoktur.
+
+305
+00:31:14,670 --> 00:31:25,670
+Eğer bir grafta kapalı çevrim var ise ve her kaynak sadece tek kopya ise, o zaman deadlock vardır.
+
+306
+00:31:25,670 --> 00:31:37,670
+Ancak bir grafta kapalı çevrim var ise ve kaynaklardan birden fazla kopya var ise, o zaman deadlock olabilir.
+
+307
+00:31:37,670 --> 00:31:43,670
+İşin en zor tarafı burası arkadaşlar. Bu söylediğim üçüncü kısım.
+
+308
+00:31:43,670 --> 00:31:53,670
+Çünkü bunun analizini yapmanın hesapsal karmaşıklığı bizi bayağı bir yoracak.
+
+309
+00:31:53,670 --> 00:32:01,670
+Olası bütün çevrimlere verilmiş olan bir grafın içerisindeki olası bütün çevrimlere hesaplamak durumundayız
+
+310
+00:32:01,670 --> 00:32:04,670
+ve bunların hepsini analiz etmek durumundayız.
+
+311
+00:32:04,670 --> 00:32:16,089
+Şimdi, deadlock ile baş etmenin yolcuları neler? Oraya geldik.
+
+312
+00:32:16,089 --> 00:32:29,089
+Birinci yaklaşım. Sistem derken bir grup resor ve bir grup prosesin etkileşim halinde olan, birbirleri arasında paylaşılan,
+
+313
+00:32:29,089 --> 00:32:40,089
+ortaklaşa kullanılan resorlar ve bunları kullanan prosesler arasında deadlock hiçbir zaman oluşmasın diyoruz.
+
+314
+00:32:40,089 --> 00:32:49,089
+Kural bu. Şimdi bunu yapmanın iki yolu var. Ya prevention yapacağız ya avoidance yapacağız.
+
+315
+00:32:49,089 --> 00:33:04,089
+Prevention ile engellemek, avoidance, kaçınmak çok benziyor ama arada şöyle basit bir ama önemli bir nüans var.
+
+316
+00:33:04,089 --> 00:33:12,089
+O da şu. Engelleme yaparken daha konservatif davranıyoruz.
+
+317
+00:33:12,089 --> 00:33:20,089
+Kaynakları daha kısıtlayıp da kullanıyoruz. Bazı kaynaklar belki boşta kalıyor.
+
+318
+00:33:20,089 --> 00:33:30,720
+Kaçınma, avoidance yaparken kaynakları daha rahat, daha serbest kullandırtıyoruz.
+
+319
+00:33:30,720 --> 00:33:38,720
+Ama hep bir sonraki aşamada acaba deadlock olur mu sorusunun cevabını vermeye çalışıyoruz.
+
+320
+00:33:38,720 --> 00:33:41,720
+Buna göre sınırlarımızı daha zorluyoruz.
+
+321
+00:33:41,720 --> 00:33:54,720
+İlk yöntem daha konservatif, daha sıkı bir yöntem. Ondan ötürü katı kuralları var.
+
+322
+00:33:54,720 --> 00:34:02,720
+Ve sistemin performansını negatif yönde etkileyecek. En azından multi-programming derecesi düşecek.
+
+323
+00:34:02,720 --> 00:34:08,719
+Öyle düşünün. Çünkü her kaynağı rahatlıkla kullandırtmıyorum, kısıtlar götürüyorum.
+
+324
+00:34:08,719 --> 00:34:14,719
+Diğer yöntem daha serbest, daha rahat yaklaşıyor olaya.
+
+325
+00:34:14,719 --> 00:34:20,719
+Ancak orada da her an ne olma ihtimali var? Yanlış hesap yaparsam deadlock oluşturma ihtimali var.
+
+326
+00:34:20,719 --> 00:34:23,719
+Yani uçta sınırda dolaşıyorum.
+
+327
+00:34:23,719 --> 00:34:33,719
+İkinci büyük baştaki sene sistemin deadlock durumuna yani bu proseslerin deadlock durumuna düşmesine izin ver.
+
+328
+00:34:33,719 --> 00:34:39,719
+Sonrasında da oradan kurtulması için uğraş.
+
+329
+00:34:39,719 --> 00:34:46,719
+Diğer bir yaklaşım daha var. Bu en sevdiğimiz, en popüler olan yaklaşım.
+
+330
+00:34:46,719 --> 00:34:52,719
+Deadlock gibi bir problemin varlığını inkar et.
+
+331
+00:34:52,719 --> 00:34:56,719
+Öyle bir problem yok. Çünkü olay şuna dönüyor.
+
+332
+00:34:56,719 --> 00:35:00,719
+Olumlu düşün olumlu olsun.
+
+333
+00:35:00,719 --> 00:35:05,719
+Karmayı bozmak lazım. Problem aslında şuna indirgeniyor.
+
+334
+00:35:05,719 --> 00:35:08,719
+Deadlock neden oluşur dedik arkadaşlar?
+
+335
+00:35:08,719 --> 00:35:15,719
+Az önce söyledik. Yanlış kullanımdan, yanlış senaryolardan, yanlış itlendirmelerden.
+
+336
+00:35:15,719 --> 00:35:24,719
+Yani aslında tasarımı yapan, programı geliştirenlerin bir şeylere atlamasında.
+
+337
+00:35:24,719 --> 00:35:36,719
+O zaman işletim sistemi üreticileri, yazarları diyorlar ki bir işletim sisteminin içerisinde deadlock olmadığını garanti ediyoruz.
+
+338
+00:35:36,719 --> 00:35:40,719
+Ona göre kodladık. Ona göre test ettik.
+
+339
+00:35:40,719 --> 00:35:45,719
+Hatalarını ayıkladık. Yani kernel'ın içerisinde deadlock yok.
+
+340
+00:35:45,719 --> 00:35:53,719
+Ama işletim sisteminin sunduğu servisleri yanlış kullanırsanız, programlama mantığınız yanlışsa,
+
+341
+00:35:53,719 --> 00:36:00,719
+itlendirmeniz hatalıysa, konküransi seviyesi arttığında gerekli tedbirlere almadıysanız,
+
+342
+00:36:00,719 --> 00:36:07,719
+hatırlayın hani o reader-writer problemi vardı, bounded buffer problemi vardı, dining philosopher vardı.
+
+343
+00:36:07,719 --> 00:36:16,719
+O testleri, oradaki prensipleri uygulamadıysanız, oradaki senaryolardaki şeyleri uygulamadıysanız, o zaman kendi başınasınız.
+
+344
+00:36:16,719 --> 00:36:23,719
+Bu problemi siz kendiniz oluşturunuz, kendiniz çözmeniz gerekiyor. Bununla uğraşacak halimiz yok.
+
+345
+00:36:23,719 --> 00:36:31,719
+Şimdi çok acımasız gibi görünüyor ama birazdan olayın neden buraya doğru gittiğini siz de rahatlıkla anlayacaksınız.
+
+346
+00:36:31,719 --> 00:36:39,719
+Çünkü hep ne diyoruz? İşletim sistemi mümkün olduğu kadar kullanıcıya transparent olmalı,
+
+347
+00:36:39,719 --> 00:36:48,719
+mümkün olduğu kadar sistem kaynaklarını en az kullanmalı, yani kaliteli bir katalizör olmalı.
+
+348
+00:36:48,719 --> 00:36:56,719
+Düşünün kimyasal reaksiyonlarda katalizörün amacı nedir? Reaksiyonu başlatabilmek, hızlandırabilmek.
+
+349
+00:36:56,719 --> 00:37:04,719
+Ama iyi katalizörler reaksiyon sonrasında minimum kayıpla kalırlar, yani kendileri harcanmazlar.
+
+350
+00:37:04,719 --> 00:37:16,719
+O zaman burada da memoriyi en az kullanmak, işlemciyi en az kullanmak, işletim sisteminin birincil hedefleri, görevleri arasında iyi bir katalizör olmalı.
+
+351
+00:37:17,719 --> 00:37:28,719
+Buradan da yaklaştığımızda işletim sistemi deadlock engellemek, deadlock'tan kaçınmak veya deadlock çözmek için
+
+352
+00:37:28,719 --> 00:37:38,719
+eğer kabul edilen sınırların, edilebilecek sınırların dışında işlem gücü harcıyorsa memoriye ihtiyaç duyuyorsa o zaman bunun bir anlamı kalmayacak.
+
+353
+00:37:38,719 --> 00:37:52,719
+Geldiğimiz nokta bu. Ancak yine de biz bu işin bilimine okuduğumuza göre, mühendisi olacağınıza göre birtakım ayrıntılara bakmak durumundayız, onları incelemek durumundayız.
+
+354
+00:37:52,719 --> 00:38:06,719
+Şimdi, relation'ın yolu çok basit. Dört tane şartın dördü de aynı anda oluştuğunda deadlock oluyordu ya, o zaman bu dört tane şartın dördünü aynı anda oluşturmayalım.
+
+355
+00:38:06,719 --> 00:38:26,719
+Neydi şartlar? Mutual exclusion. Şimdi, mutual exclusion'ı kullanmamak demek, mutual exclusion hiçbir zaman olmayacak demek, sistemde birbiriyle etkileşim halinde olan, hani o cooperation diyorduk ya, o tarz prosesler olmayacak demektir.
+
+356
+00:38:26,719 --> 00:38:37,719
+Proseslerin her biri bağımsız, hiçbir ortak kaynak kullanmıyorlar, paylaşılan hiçbir yere gelişmiyorlar, her biri farklı bir iş çalıştırıyorlar.
+
+357
+00:38:37,719 --> 00:38:47,719
+Zaten böyle bir yapınız varsa çok muhteşem, mutual exclusion ihtiyacınız yoktur. Ancak bu senaryo gerçekçi değildir. Çünkü neyi biliyoruz?
+
+358
+00:38:47,719 --> 00:39:02,719
+İşte en basitinden Cihan Hoca'nız geçen haftalarda da söylemişti, bir Apache Web Server'ı düşündüğünüzde Apache Web Server başladığında kendinden on tane proses oluşturuyor, o proseslerin içinde de diyelim ki beşer tane thread oluyor, oluyor size bir anda elli tane kopya.
+
+359
+00:39:02,719 --> 00:39:09,719
+Bunların birbirleriyle etkileşmemesi mümkün değil. Bunların ortak birtakım yerlere erişmemesi mümkün değil.
+
+360
+00:39:10,719 --> 00:39:20,719
+En basitinden ben size söyleyeyim, bunların hepsi aynı log file'ına yazıyor, error loguna yazıyor, access loguna yazıyor. Yani o log file ile erişirken bile mutual exclusion işin içine giriyor.
+
+361
+00:39:20,719 --> 00:39:28,719
+Öyleyse bu çok da böyle, evet biz mutual exclusion ile bu işi çözeriz diyebileceğimiz bir şey diye.
+
+362
+00:39:28,719 --> 00:39:44,719
+İşlemci açısından bakın bu bir tek orada kullanılan bir yöntem. Yani birazdan göreceğiz preemption ile beraber. Çünkü hani işlemci core sayısını arttırmanın arkasındaki şeylerden bir tanesi de bu.
+
+363
+00:39:44,719 --> 00:39:53,719
+Tek core varken işlemciye mutual exclusive kullanmak zorundayım, başka çarem yok. Yani bir benim instruction'ım, bir diğer prosesin instruction'ını çalıştıramaz.
+
+364
+00:39:53,719 --> 00:40:02,719
+Ama core sayısını arttırmak demek ki sadece concurrency'i ortadan kaldırmıyor. Neyi de aşmış oluyor?
+
+365
+00:40:02,719 --> 00:40:11,719
+Kaynaktan iki kopya var, üç kopya var, dört kopya var. Mutual exclusion için aynı kaynak başında bekleyecek process sayısını azaltmış oluyoruz.
+
+366
+00:40:11,719 --> 00:40:16,719
+Bir sonraki preemption'da buna ekstra bir katkı verecek işlemci açısından konuşuyorum.
+
+367
+00:40:16,719 --> 00:40:33,380
+İkincisi hold and wait. Şimdi problem nereden kaynaklanıyordu? Bir kaynak prosesin elinde var ama çalışmaya devam etmek için bir başka kaynağa daha ihtiyaç duyuyor.
+
+368
+00:40:33,380 --> 00:40:43,380
+Fakat şanssızlık bu ya, o kaynak da bir başka proses tarafından tutulmuş durumda. Çünkü zaten hani şanssızlık demeyelim, işin doğası bunlar ortak çalışıyorlar.
+
+369
+00:40:43,380 --> 00:41:01,380
+Bunu çözmenin yolu, en kolay yolu, prosesin ihtiyaç duyduğu bütün kaynakları ya hep ya hiç modeliyle bir seferde request etmesi veya hiç etmemesi.
+
+370
+00:41:01,380 --> 00:41:11,380
+Şimdi alt satıra okuyun. Low resource utilization, starvation possible. Yani hepsini aynı anda alabildiyse alabiliyor, alamadıysa alamıyor.
+
+371
+00:41:11,380 --> 00:41:23,380
+E ne zamana kadar bekleyecek? Bilemiyoruz. Başka kimseyi beklemiyor aslında. Arada döngüsel bir şey olmadığı için ona deadlock diyemiyoruz ama kendisi ilerleyemediği için starvation diyoruz.
+
+372
+00:41:23,380 --> 00:41:34,380
+Niye low resource utilization? Şundan dolayı dört tane kaynağı, dördünü birden aynı anda istedi, deadlock oluşmasın diye ama dördünü aynı anda kullanmıyor.
+
+373
+00:41:34,380 --> 00:41:46,380
+Şöyle düşünelim, şöyle bir senaryo. File'dan okudum, okuduğum değerler üzerinde birtakım işlemler yaptım, matematiksel transformasyonlar şunlar bunlar falan, numerik analiz yöntemleri.
+
+374
+00:41:46,380 --> 00:41:55,380
+Sonucunu da printr'e yazdıracağım. Şimdi bu işlemler belki bir saat sürecek, belki iki saat sürecek verinin büyüklüğüne göre.
+
+375
+00:41:55,380 --> 00:42:09,380
+Ama printr'de bir kaynak olduğuna göre program başlarken ben printr'da talep ettim. Printr bir saat boyunca bana bağlı, benim bu prosesime bağlı ancak kullanılmıyor.
+
+376
+00:42:09,380 --> 00:42:21,380
+O sırada printr kullanmak isteyen prosesler de ne oluyor? Bekliyorlar. Otomatikman olay nereye geldi? Multi programming derecesinin düşmesine geldi.
+
+377
+00:42:21,380 --> 00:42:38,380
+İki tanesini daha anlatalım, ondan sonra bölelim. Çünkü prevention'ı şey yapmış olacağız. No preemption, no preemption neydi? Bir kaynağın zorla,
+
+378
+00:42:38,380 --> 00:42:49,380
+projesin izni olmadan, projesinin elinden geri alınması. Az önce söyledim ya bunu sorunsuz yapabildiğimiz yegene kaynak aslında işlemci.
+
+379
+00:42:49,380 --> 00:42:56,380
+Ama orada da ne yapıyoruz? İşlemcideki rejistirleri, process control, milona save ediyoruz, sonra tekrar oraya yüklüyoruz.
+
+380
+00:42:56,380 --> 00:43:06,380
+Ne konuşuyoruz? Durumu bozmamak lazım diyoruz ve bunun çok hızlı bir şekilde gerçekleşmesi lazım diyoruz. Çünkü bu context switch işlemi aslında bir yük getiriyor diyoruz.
+
+381
+00:43:06,380 --> 00:43:15,380
+Şimdi düşünün, siz bir prosese bir kaynağa vermişsiniz. O prosesde o kaynağı kullanmış, yazmış, değiştirmiş.
+
+382
+00:43:15,380 --> 00:43:22,380
+Okuma yerinde zaten hani paylaşmada bir sorun olmadığını biliyorsunuz ama yazma veya değiştirme çok büyük sıkıntı.
+
+383
+00:43:22,380 --> 00:43:30,380
+Bu kadar şey yapmış, ondan sonra diyorsunuz ki ya sen bir dur ben senden bu file'ı veya bu kaynağa geri alacağım.
+
+384
+00:43:30,380 --> 00:43:45,380
+İşte bu bir file olsun. Açıkken file, proses ona yazarken file'i prosesten alıyorum. Bu prosesi çökertmekten başka bir şey değildir veya tutarsızlık oluşturmaktan başka bir şey değildir.
+
+385
+00:43:45,380 --> 00:43:55,380
+O yüzden bir kaynağın, prosesin isteği haricinde o prosesten alınması ve sonra tekrar geri verilmesi çok zor.
+
+386
+00:43:55,380 --> 00:44:04,380
+Bunu bir tek işlemciyle düzgün yapabiliyoruz. Çünkü işlemcinin kullanım şekli buna uygun. Instruction by instruction ilerliyoruz ya.
+
+387
+00:44:04,380 --> 00:44:13,380
+Circular weight az önce örneğinde de verdik. İşte P1, P2, P2, P3, P3, P1. Hatta dikkat edin P3, P2 ile bekliyordu.
+
+388
+00:44:13,380 --> 00:44:18,380
+Yani birden fazla circular weight vardı işin içerisinde.
+
+389
+00:44:18,380 --> 00:44:37,750
+Şimdi probleme cevap basit. Yani bunun oluşmasını engellemek için resursları, tamamını bütün resursları öyle bir sıralayacağız ki, numaralayacağız ki,
+
+390
+00:44:37,750 --> 00:44:47,750
+resursları öyle bir numaralandırma getireceğiz ki bir proses resursları isterken hep artan sırada numaralarla isteyecek.
+
+391
+00:44:47,750 --> 00:44:53,750
+Yani 5 numarayı isteyip 3 numarayı isteyemeyecek veya 2 isteyip 1 isteyemeyecek.
+
+392
+00:44:53,750 --> 00:45:00,750
+1, 2, 3, 5'e ihtiyaç duyuyorsa isterken hep 1, 2, 3, 5 artan sırada isteyecek.
+
+393
+00:45:00,750 --> 00:45:10,750
+Böylece aslında bu sıralama neyi de gösterecek baktığımızda kullanımdaki yerini gösterecek.
+
+394
+00:45:10,750 --> 00:45:18,750
+Yani zamansal olarak 1 numarayı önce kullandı, 2'yi sonra kullandı, 3'ü daha sonra kullandı, 5'i daha sonra kullandı.
+
+395
+00:45:18,750 --> 00:45:23,750
+Peki bu neyi ortadan kaldıracak? Hold and weight'i de ortadan kaldıracak.
+
+396
+00:45:23,750 --> 00:45:28,750
+Yani 5'i isteyip 3, 2, 1 için bekliyor olmayacak.
+
+397
+00:45:28,750 --> 00:45:35,750
+Hold and weight'i kaldırdığı gibi hepsi bunu böyle yaptığı zaman hiç kimse hiç kimseyi beklemez duruma geçecek.
+
+398
+00:45:35,750 --> 00:45:37,750
+Çünkü niye? Herkes doğal sırasında.
+
+399
+00:45:37,750 --> 00:45:44,750
+E zaten o sırada istemiyorsa, alamıyorsa o kaynağı almamış olacak, bir adım sonraya gitmeyecek.
+
+400
+00:45:44,750 --> 00:45:47,750
+Fakat bu durumda da şöyle bir sıkıntı var.
+
+401
+00:45:47,750 --> 00:45:57,750
+Her prosesin daha çalışmaya başlamadan hangi kaynağı hangi sırada isteyeceğini beyan etmesi lazım.
+
+402
+00:45:57,750 --> 00:46:05,750
+Ve sistemin bu beyanlar üzerinden bu söylediğimiz sıralamayı gerçekleştirmesi lazım.
+
+403
+00:46:05,750 --> 00:46:07,750
+Böyle çalışan sistemler var.
+
+404
+00:46:07,750 --> 00:46:13,750
+Ama o sistemlerdeki prosesler ve hatta o sistemlerdeki uygulamalar diyelim batch uygulamalar.
+
+405
+00:46:13,750 --> 00:46:16,750
+Batch uygulama olduğu için batch uygulama neydi?
+
+406
+00:46:16,750 --> 00:46:21,750
+Verisi belirli olan uygulama, yapacağı iş belirli olan uygulama.
+
+407
+00:46:21,750 --> 00:46:26,750
+Ama sonucu da diyelim ki tb yazacak, disk yazacak, file yazacak, printer yazacak.
+
+408
+00:46:26,750 --> 00:46:28,750
+Her şey başı sonu belirli.
+
+409
+00:46:28,750 --> 00:46:39,750
+Yani binlerce, onbinlerce kullanıcının farklı ihtiyaçları ile istekleri ile çok farklı çalışmaları, uygulamaları çalıştırdığı, programları çalıştırdığı bir sistem değil.
+
+410
+00:46:39,750 --> 00:46:42,750
+Böyle bir batch tarzındaki şeyde bunu yaparsınız.
+
+411
+00:46:42,750 --> 00:46:54,750
+Ama diğer interaktif online kullanıcıların olduğu bir sistemde bunu yapabilmeniz çok zor, neredeyse imkansız derecesinde.
+
+412
+00:46:54,750 --> 00:46:57,750
+Burada bir deadlock örneği var.
+
+413
+00:46:57,750 --> 00:46:59,750
+Onu geçebiliriz aslında.
+
+414
+00:46:59,750 --> 00:47:02,750
+Arkadaşlar, lock ordering.
+
+415
+00:47:02,750 --> 00:47:06,750
+Senkronizasyonu da konuşmuştuk, aynen öyle.
+
+416
+00:47:06,750 --> 00:47:08,750
+Evet, avoidance.
+
+417
+00:47:08,750 --> 00:47:12,750
+Şimdi 5 gece başlarız işte.
+
+418
+00:47:12,750 --> 00:47:15,750
+2-5 gece başlarız.
+
+419
+00:47:15,750 --> 00:47:19,750
+Tamam, ben de aldım.
+
+420
+00:47:19,750 --> 01:02:40,639
+Evet, devam edelim arkadaşlar.
+
+421
+01:02:40,639 --> 01:02:47,500
+Şimdi deadlock prevention'i gözden geçirdik.
+
+422
+01:02:47,500 --> 01:02:49,500
+Sırada avoidance var.
+
+423
+01:02:49,500 --> 01:02:51,500
+Avoidance tane kaçınma demiştik.
+
+424
+01:02:51,500 --> 01:02:56,500
+Yani böyle bir durumun oluşmasında mümkün olduğu kadar kaçınacağız.
+
+425
+01:02:56,500 --> 01:03:04,469
+Bunun için önceden bilgiye sahip olmamız gerekiyor.
+
+426
+01:03:04,469 --> 01:03:07,469
+Buna da a priori diyoruz.
+
+427
+01:03:07,469 --> 01:03:12,469
+Prior vardır ya, önceden İngilizce'de o kelime aynı kökenden geliyor.
+
+428
+01:03:12,469 --> 01:03:16,469
+A priori, önceden bilinen demek.
+
+429
+01:03:16,469 --> 01:03:22,469
+En basit ve en çok üzerinde çalışılmış olan modem,
+
+430
+01:03:22,469 --> 01:03:28,469
+her prosesin önceden yani başlamadan, çalışmaya başlamadan önce
+
+431
+01:03:28,469 --> 01:03:37,230
+hangi kaynaktan en fazla, ne kadar ihtiyaç duyduğunu belirtmesi.
+
+432
+01:03:37,230 --> 01:03:39,230
+Bu çok önemli.
+
+433
+01:03:39,230 --> 01:03:44,230
+İşte diyor ki, genel kaynaklar üzerinden gidelim.
+
+434
+01:03:44,230 --> 01:03:48,230
+Şu kadar printer'a ihtiyaç duyacağım.
+
+435
+01:03:48,230 --> 01:03:51,230
+Bu kadar diske ihtiyaç duyacağım.
+
+436
+01:03:51,230 --> 01:03:53,230
+Bu kadar tape ihtiyaç duyacağım.
+
+437
+01:03:53,230 --> 01:03:58,230
+Yani böyle sayılabilir, o anlamda ölçülebilir kaynaklar olduğunu düşünelim bunlara.
+
+438
+01:03:58,230 --> 01:04:04,230
+Ama tabii ki işletim sistemi açısından neverin kaynak olduğunu uzun uzun konuştuk.
+
+439
+01:04:04,230 --> 01:04:08,230
+İşletim sistemi tarafından yönetilen her şey kaynak.
+
+440
+01:04:08,230 --> 01:04:19,769
+Deadlock avoidance algoritması ise, bu önceden kendisine verilmiş olan bilgilere bağlı olarak
+
+441
+01:04:19,769 --> 01:04:25,769
+o anki durumu ve o anki duruma göre bir sonraki durumu hesap ediyor.
+
+442
+01:04:25,769 --> 01:04:31,769
+Diyor ki, zaten sistemde elimde diyelim 5 tane drive var.
+
+443
+01:04:31,769 --> 01:04:36,769
+Proseslerden bir tanesi 3 tanesine ihtiyaç duyuyorum demiş.
+
+444
+01:04:36,769 --> 01:04:39,769
+Diğeri ikisine ihtiyaç duyuyorum demiş.
+
+445
+01:04:39,769 --> 01:04:41,769
+Öbürü 1 tanesine ihtiyaç duyuyorum demiş.
+
+446
+01:04:41,769 --> 01:04:44,769
+Bunların hepsini toplayacak olursanız 6 ediyor.
+
+447
+01:04:44,769 --> 01:04:47,769
+Sistemde ise 5 tane var.
+
+448
+01:04:47,769 --> 01:04:56,769
+Öyle ise P1, P2, P3 proseslerinin aynı anda çalışabilmesine zaten imkan yok.
+
+449
+01:04:56,769 --> 01:04:57,769
+Çünkü niye?
+
+450
+01:04:57,769 --> 01:05:02,769
+6 tane istenen var, 5 tane gerçekte var olan var.
+
+451
+01:05:02,769 --> 01:05:07,769
+Bu durumda bunlardan birinin bekletilmesi gerekiyor.
+
+452
+01:05:07,769 --> 01:05:13,769
+İşte o açıdan bakıldığında bekletmeyi de nerede yapacak?
+
+453
+01:05:13,769 --> 01:05:17,769
+Yani hep konuşurduk ya, request use release.
+
+454
+01:05:17,769 --> 01:05:22,769
+Requesti gerçekleştirmeyecek, requesti beklemeye alacak.
+
+455
+01:05:22,769 --> 01:05:28,769
+Yani proses istekte bulunacak ancak ona dur denilecek.
+
+456
+01:05:28,769 --> 01:05:32,769
+Yani proses sonlandırılmıyor, şey yapılmıyor.
+
+457
+01:05:32,769 --> 01:05:33,769
+Sadece nereye alınıyor?
+
+458
+01:05:33,769 --> 01:05:36,769
+Kenarda beklemeye alınıyor diye düşünün.
+
+459
+01:05:37,769 --> 01:05:46,769
+3'ten 2 eklendiğinde 5'e geçtiğiniz zaman hala da safe durumdasınız.
+
+460
+01:05:46,769 --> 01:05:48,769
+Yani emniyetli bir durumdasınız.
+
+461
+01:05:48,769 --> 01:05:52,769
+Çünkü 5 tane kaynağınız var, 5 tane de alöki ettiniz.
+
+462
+01:05:52,769 --> 01:06:01,769
+Ama 6'ya 7'ye doğru gitmek istediğiniz zaman unsafe, emniyetli olmayan bir duruma geçiyorsunuz.
+
+463
+01:06:01,769 --> 01:06:08,769
+Bu durumda işletim sistemi içerisindeki bu kaynakların alokasyonu sırasında,
+
+464
+01:06:08,769 --> 01:06:17,769
+yani requestlerin o tahsis isteklerinin gerçekleştirilmesi sırasında bir algoritma çalıştırıyoruz.
+
+465
+01:06:17,769 --> 01:06:28,769
+Bu algoritma mevcut duruma bakarak bu tahsisat gerçekleşirse sistem hala daha emniyetli bir durumda mı kalacak?
+
+466
+01:06:28,769 --> 01:06:33,769
+Yani deadlock oluşmayacak bir durumda mı kalacak?
+
+467
+01:06:33,769 --> 01:06:40,769
+Yoksa deadlock oluşma ihtimali olan emniyetsiz unsafe bir durumda mı olacak?
+
+468
+01:06:40,769 --> 01:06:42,769
+Onun hesabını yapıyor.
+
+469
+01:06:42,769 --> 01:06:46,769
+Buna göre hep sistemi hangi tarafta tutmaya çalışıyor?
+
+470
+01:06:46,769 --> 01:06:49,769
+Safe, emniyetli tarafta tutmaya çalışıyor.
+
+471
+01:06:49,769 --> 01:06:54,769
+Çalışma mantığı, bunu böyle şey yapabiliriz.
+
+472
+01:06:57,500 --> 01:07:02,289
+Dur, yanlış yere bastım.
+
+473
+01:07:02,289 --> 01:07:05,289
+Yukarıda kalmış, o yüzden.
+
+474
+01:07:07,289 --> 01:07:17,110
+İşte bakın, az önce söylediğim, anlattığım şeyler, şimdi burada slide slide karşımda çıkacak.
+
+475
+01:07:17,110 --> 01:07:19,110
+Safe state.
+
+476
+01:07:21,110 --> 01:07:24,110
+İlk cümle benim söylediğimi özetliyor.
+
+477
+01:07:24,110 --> 01:07:30,110
+When a process requests an available resource, o anda var olan bir kaynağa talep ediyorsa,
+
+478
+01:07:30,110 --> 01:07:34,110
+system must decide if immediate allocation leaves the system in a safe state.
+
+479
+01:07:34,110 --> 01:07:41,110
+Yani o hemen bu kaynağın tahsisatını yaparsa sistem hala da emniyetli durumda mı olacak?
+
+480
+01:07:41,110 --> 01:07:43,110
+Deadlock açısında.
+
+481
+01:07:43,110 --> 01:07:49,110
+System is in safe state if there exists a sequence P1 P2 Pn,
+
+482
+01:07:50,110 --> 01:08:03,780
+öyle ki P1'in elinde tuttuklarından sonra P2'ninkiler allocate edilirse,
+
+483
+01:08:03,780 --> 01:08:06,780
+ondan sonra P3'nkiler allocate edilirse,
+
+484
+01:08:06,780 --> 01:08:15,780
+yani elde tutulanlarla var olanlar bir araya geldiğinde,
+
+485
+01:08:15,780 --> 01:08:22,779
+hala daha sistemde o tip kaynaktan boşta kalması lazım.
+
+486
+01:08:22,779 --> 01:08:25,779
+Safe bu, başka bir şey değil.
+
+487
+01:08:25,779 --> 01:08:32,779
+Eğer boşta kalmıyorsa, kritik durumdasınız demektir, unsafe durumdasınız demektir.
+
+488
+01:08:32,779 --> 01:08:38,779
+Böyle bir alokasyon yaklaşımı izliyor.
+
+489
+01:08:41,310 --> 01:08:49,310
+Buna bağlı olarak da eğer sistem safe state'teyse, yani emniyetli durumdaysa deadlock yok.
+
+490
+01:08:49,310 --> 01:08:53,310
+Neye benziyor bu? Nereye map ettik aslında olayı?
+
+491
+01:08:53,310 --> 01:08:55,310
+Kapalı çevrem yoksa deadlock yoktur.
+
+492
+01:08:55,310 --> 01:09:01,310
+Ancak sistem unsafe state'teyse, deadlock olabilir de olmayabilir de,
+
+493
+01:09:02,310 --> 01:09:05,310
+hani en uç nokta ne dedik?
+
+494
+01:09:05,310 --> 01:09:10,310
+Beş tane disk birimi var, bir tanesi üç istedi, öbürü iki istedi.
+
+495
+01:09:10,310 --> 01:09:16,310
+Şimdi baktığımız zaman safe diyebilirsiniz ama diğer taraftan pesimistik,
+
+496
+01:09:16,310 --> 01:09:21,310
+karamsar bir yaklaşımla bakacak olursak da hayır bu unsafe deme şeyimiz var.
+
+497
+01:09:21,310 --> 01:09:27,310
+Çünkü bir sonraki aşamada bunlar tamamlanmadan yapılacak olan ilk tahsisat,
+
+498
+01:09:28,310 --> 01:09:32,310
+sistemi otomatikman deadlock'a götürecek.
+
+499
+01:09:32,310 --> 01:09:41,310
+Ondan ötürü de burada artık kullanılabilecek boşta kaynak kalmadığı için unsafe diyoruz.
+
+500
+01:09:41,310 --> 01:09:45,310
+Avoidance, kaçınma, ne oluyor o zaman?
+
+501
+01:09:45,310 --> 01:09:50,310
+Sistemin hiçbir zaman unsafe state'e girmemesini sağlamak.
+
+502
+01:09:50,310 --> 01:09:56,310
+Yani hep emniyetli durumda kalmasını sağlamak.
+
+503
+01:09:56,310 --> 01:10:00,310
+Burada grafik olarak daha net görünüyor.
+
+504
+01:10:00,310 --> 01:10:06,310
+Şimdi bir grup senaryo, az önce ayrıntısını uzun uzun verdik,
+
+505
+01:10:06,310 --> 01:10:10,310
+bir grup senaryo zaten emniyetli senaryo.
+
+506
+01:10:10,310 --> 01:10:15,310
+Diğer geri kalanların tamamı emniyetli olmayan,
+
+507
+01:10:15,310 --> 01:10:21,310
+ancak emniyetli olmayanların içerisindeki bir alt grup da deadlock.
+
+508
+01:10:21,310 --> 01:10:25,310
+Resource allocation graph'a dönecek olursak eğer,
+
+509
+01:10:25,310 --> 01:10:29,310
+kapalı çevrim içermeyen her türlü senaryo safe.
+
+510
+01:10:29,310 --> 01:10:36,310
+Kapalı çevrim içerenlerin tamamı unsafe ama onlardan bazıları deadlock.
+
+511
+01:10:36,310 --> 01:10:38,310
+Birebir onun yansıması.
+
+512
+01:10:38,310 --> 01:10:52,119
+Şimdi her kaynaktan sadece bir kopya varsa o zaman resource allocation graph kullanmak çok kolay.
+
+513
+01:10:52,119 --> 01:10:56,119
+Source allocation graph'ın üzerinde de neye bakacağız?
+
+514
+01:10:56,119 --> 01:11:00,119
+Kapalı çevrim var mı, yok mu? Ona bakacağız.
+
+515
+01:11:00,119 --> 01:11:04,119
+Ama bakın biz bunu bu kadar rahat söylüyoruz da unutmayın,
+
+516
+01:11:04,119 --> 01:11:08,119
+bir grafta traversal yapacaksınız aslında.
+
+517
+01:11:08,119 --> 01:11:10,119
+Düğümler ve şeyler üzerinden giderek.
+
+518
+01:11:10,119 --> 01:11:12,119
+Bu kadar da basit bir grafta değil.
+
+519
+01:11:12,119 --> 01:11:16,119
+Evet, yani büyük bir graf, dinamik bir graf.
+
+520
+01:11:16,119 --> 01:11:19,119
+Yani sisteme sürekli yeni prosesler giriyor,
+
+521
+01:11:19,119 --> 01:11:23,119
+bazısı sonlanıyor, bazısı yeni kopya oluşturuyor.
+
+522
+01:11:23,119 --> 01:11:27,119
+Yani her aşamada grafı da güncellemeniz gerekiyor.
+
+523
+01:11:27,119 --> 01:11:30,119
+Şey olarak çok basit, okey.
+
+524
+01:11:30,119 --> 01:11:34,119
+Ama gerçek hayat implementasyonunda yorucu bir şey.
+
+525
+01:11:34,119 --> 01:11:39,119
+Diğer taraftan da grafı bir veri yapısıyla ifade etmeniz lazım.
+
+526
+01:11:39,119 --> 01:11:42,119
+Etkin bir veri yapısıyla ifade etmeniz lazım.
+
+527
+01:11:43,119 --> 01:11:46,119
+Risoslar ve grafları,
+
+528
+01:11:46,119 --> 01:11:50,119
+en basitimden bir matriste tutalım,
+
+529
+01:11:50,119 --> 01:11:53,119
+ona göre şey yapalım derseniz,
+
+530
+01:11:53,119 --> 01:11:57,119
+o matriste sparse bir matris olacak ve çok büyüyecek.
+
+531
+01:11:57,119 --> 01:12:01,119
+Oradan tabii ki dizi, yani vektörer reprezentasyonu,
+
+532
+01:12:01,119 --> 01:12:04,119
+liste reprezentasyonuna geçmeniz lazım.
+
+533
+01:12:04,119 --> 01:12:07,119
+Bu sefer listeleri yönetmeniz lazım.
+
+534
+01:12:07,119 --> 01:12:11,119
+Listelerde insertlerinizin, deletelerinizin olması lazım.
+
+535
+01:12:12,119 --> 01:12:16,119
+Başta kavramsal olarak çok kolay gelen şey,
+
+536
+01:12:16,119 --> 01:12:19,119
+algoritmik olarak da kolay.
+
+537
+01:12:19,119 --> 01:12:22,119
+Bunu rahatlıkla yediniz diyebilirsiniz.
+
+538
+01:12:22,119 --> 01:12:27,119
+Ama bunun bir işlemci gücü açısından karmaşıklığı var.
+
+539
+01:12:27,119 --> 01:12:31,119
+Bir ihtiyacı var, bunun gerçekleşmesi gerekiyor.
+
+540
+01:12:31,119 --> 01:12:35,119
+Bu da az önceki neye geri dönüyor aslında?
+
+541
+01:12:35,119 --> 01:12:38,119
+Katalizör işletim sistemi.
+
+542
+01:12:38,119 --> 01:12:42,119
+Ama bunları yaparsa iyi bir katalizör olmaya devam edecekler.
+
+543
+01:12:42,119 --> 01:12:46,119
+Kaynaklardan birden fazla kopya varsa,
+
+544
+01:12:46,119 --> 01:12:53,119
+o zaman resource allocation graph kullanmak işimize yaramıyor.
+
+545
+01:12:53,119 --> 01:12:55,119
+Çünkü neyi biliyoruz?
+
+546
+01:12:55,119 --> 01:12:58,119
+Resource allocation graph'taki sıkıntısına geliyoruz.
+
+547
+01:12:58,119 --> 01:13:03,119
+Kapalı çevrim var ama her kapalı çevrim şey değil, deadlock değil.
+
+548
+01:13:03,119 --> 01:13:09,119
+Ondan ötürü burası için özellikle oluşturulmuş bankers algoritm var.
+
+549
+01:13:09,119 --> 01:13:16,119
+Şimdi, önce istiyorsanız resource allocation graph'a bir kez daha bakalım.
+
+550
+01:13:16,119 --> 01:13:19,119
+Az önce o konuştuğumuz şekilde.
+
+551
+01:13:19,119 --> 01:13:24,119
+İşte, process'ten resource'a gidiyorsa eğer istekte bulunmak.
+
+552
+01:13:24,119 --> 01:13:28,750
+Bu istek neye dönüşüyor?
+
+553
+01:13:28,750 --> 01:13:34,319
+Eğer allocate edilirse tahsisat edilmiş.
+
+554
+01:13:34,319 --> 01:13:38,319
+Yani okun yönü, assignment'a dönüşüyor.
+
+555
+01:13:38,319 --> 01:13:44,319
+O zaman burada şöyle bir şey yapıyoruz.
+
+556
+01:13:44,319 --> 01:13:46,319
+Hile yapıyoruz.
+
+557
+01:13:46,319 --> 01:13:50,319
+Önceden a priori bilgiye sahip olmamız lazım dedik ya.
+
+558
+01:13:50,319 --> 01:13:56,319
+Prosesler, resource'ları istemiş gibi oluyorlar.
+
+559
+01:13:56,319 --> 01:14:00,319
+Request etmiş gibi oluyorlar ama gerçekte request etmiyorlar.
+
+560
+01:14:00,319 --> 01:14:02,319
+Buna client diyoruz.
+
+561
+01:14:02,319 --> 01:14:07,750
+Yani talepte bulunuyor.
+
+562
+01:14:07,750 --> 01:14:14,750
+Talepte bulunuyor ama gerçek anlamda henüz şey yapmıyor.
+
+563
+01:14:14,750 --> 01:14:17,750
+Bana tahsis ettiği şey yapmıyor.
+
+564
+01:14:17,750 --> 01:14:19,750
+Talepler toplanıyor.
+
+565
+01:14:19,750 --> 01:14:25,750
+Talepler toplandıktan sonra kapalı çevrim oluşuyor mu, oluşmuyor mu ona bakılıyor.
+
+566
+01:14:25,750 --> 01:14:35,340
+Onun üzerinden uygun olan bu talep okları niye dönüştürülüyor?
+
+567
+01:14:35,340 --> 01:14:38,340
+Request'e dönüştürülüyor.
+
+568
+01:14:38,340 --> 01:14:44,340
+Request'ler de işletim sistemi tarafından işleniyor ve assignment'a dönüştürülüyor.
+
+569
+01:14:44,340 --> 01:14:52,340
+O zaman yine konuyu şu kırsma anlatırken söylediğimiz gibi
+
+570
+01:14:52,340 --> 01:15:00,340
+proseslerin çalışmaya başlarken bu tarz kaynak taleplerini bir liste şeklinde belirtmeleri lazım.
+
+571
+01:15:00,340 --> 01:15:02,340
+Olayın mantığı bunun üzerine kuruluyor.
+
+572
+01:15:02,340 --> 01:15:29,149
+Bakın burada claim ile request'i ayırt edebilmek için tırtıklı çizgiler veya düz çizgiler kullanılmış.
+
+573
+01:15:29,149 --> 01:15:34,149
+P2-R1'i request ediyor, onu istiyor.
+
+574
+01:15:34,149 --> 01:15:38,149
+Diğerinde ise talep ediyor.
+
+575
+01:15:38,149 --> 01:15:42,149
+Benim böyle bir ihtiyacım var.
+
+576
+01:15:42,149 --> 01:15:44,149
+R2'yi talep etmiş.
+
+577
+01:15:44,149 --> 01:15:48,149
+Aynı şekilde P1'de R2'yi talep etmiş.
+
+578
+01:15:48,149 --> 01:15:58,439
+Çünkü neyle görüyoruz bunları böyle kesikli çizgilerle görüyoruz.
+
+579
+01:15:58,439 --> 01:16:08,689
+Bakın şu grafı incelediğimizde R1 P1 tarafından kullanılıyor.
+
+580
+01:16:08,689 --> 01:16:11,689
+R2'de P2 tarafından kullanılıyor.
+
+581
+01:16:11,689 --> 01:16:14,689
+P2-R1'i istemiş.
+
+582
+01:16:14,689 --> 01:16:19,689
+Çünkü kesikli olmayan düz çizgi var.
+
+583
+01:16:19,689 --> 01:16:27,689
+Şimdi P1'in R2'ye olan talebini request'e dönüştürürsek ortalık karışacak.
+
+584
+01:16:27,689 --> 01:16:29,689
+Neye sebep olacağız?
+
+585
+01:16:29,689 --> 01:16:31,689
+Wetlock'a sebep olacağız.
+
+586
+01:16:31,689 --> 01:16:35,689
+Yani unsafe state oluşturmuş olacağız.
+
+587
+01:16:35,689 --> 01:16:43,689
+O yüzden bu P1'in R2'ye olan talebini taleb olarak tutuyoruz.
+
+588
+01:16:43,689 --> 01:16:48,689
+Ve bir adım ilerletmiyoruz.
+
+589
+01:16:48,689 --> 01:16:50,689
+Mantık bunun üzerine kuruluyor.
+
+590
+01:16:50,689 --> 01:17:00,449
+Az önce söylediğim şu uzun cümleyi okuyacak olursak
+
+591
+01:17:00,449 --> 01:17:05,449
+the request can be granted only if converting the request edge to an assignment edge
+
+592
+01:17:05,449 --> 01:17:10,449
+does not result in the formation of a cycle in the resource allocation graph.
+
+593
+01:17:10,449 --> 01:17:16,449
+Orada o request hani claim önce request'e dönüşüyor, request sonra assignment'e dönüşüyor dedik ya
+
+594
+01:17:16,449 --> 01:17:21,449
+işte onu ben assignment'a dönüştürdüğümde eğer kapalı çevrimi oluşturuyorsam yapmayacağım.
+
+595
+01:17:21,449 --> 01:17:24,449
+Unutmayın her kaynaktan tek kopya var.
+
+596
+01:17:24,449 --> 01:17:27,449
+İşin buradaki kritik noktası o.
+
+597
+01:17:27,449 --> 01:17:29,449
+Her kaynaktan tek kopya olması.
+
+598
+01:17:29,449 --> 01:17:35,449
+Burada yönetmek daha kolay gibi ama iki tane process, iki tane kaynak var.
+
+599
+01:17:36,449 --> 01:17:44,449
+Günlük hayatımızda ki bir desktop sistemimizde bile onlarca prosesten bahsediyoruz.
+
+600
+01:17:44,449 --> 01:17:48,449
+Bazen sayısı yüzleri buluyor çalıştırdığımız şeylere bağlı olarak.
+
+601
+01:17:48,449 --> 01:17:57,449
+O zaman hani bir sunucu sistemini falan düşündüğünüzde çok uç değerlerle, uçuk değerlerle karşılaşıyoruz.
+
+602
+01:17:57,449 --> 01:17:59,449
+Bankers algoritim.
+
+603
+01:17:59,449 --> 01:18:08,449
+Şimdi şunu açıklarsak daha rahat kavrayacaksınız, daha rahat anlayacaksınız, bağdaştıracaksınız.
+
+604
+01:18:08,449 --> 01:18:11,449
+Buradaki banker bankacı demek.
+
+605
+01:18:11,449 --> 01:18:23,449
+Algoritmanın temeli aslında bankaların kredi taleplerini değerlendirmesinden esinlenilerek oluşturulmuş.
+
+606
+01:18:23,449 --> 01:18:39,449
+Günümüzde neredeyse SMS atarak kredi alabiliyorsunuz ama orijinalde bankalar bir kişiye kredi vermeden önce bu kişinin finansal olarak ne kadar güvenilir bir kişi olduğunu araştırırlar.
+
+607
+01:18:39,449 --> 01:18:42,449
+Kredi sonuçta bir borçtur.
+
+608
+01:18:42,449 --> 01:18:49,449
+O borcunu ödeyip ödeyemeyeceğinden emin olduktan sonra kredi verirler.
+
+609
+01:18:49,449 --> 01:18:59,449
+Hatta o borcu ödeme yeteneğine bağlı olarak, krediyi kullanma süresine bağlı olarak da farklı şartlarda bu krediyi verirler.
+
+610
+01:18:59,449 --> 01:19:07,449
+Şimdi burada da aslında mantık tamamen bu anlattığım yapının üzerine kurulu.
+
+611
+01:19:07,449 --> 01:19:10,449
+İşletim sistemini bir bankacı olarak düşünüyoruz.
+
+612
+01:19:10,449 --> 01:19:17,449
+İşletim sisteminin elindeki kaynakları değerli varlıklar olarak düşünüyoruz.
+
+613
+01:19:17,449 --> 01:19:25,449
+İşletim sisteminden de prosesler bu değerli varlıkları belirli süreler için kullanmak adına talep ediyorlar, istiyorlar.
+
+614
+01:19:25,449 --> 01:19:42,449
+O zaman da bunların kabul edilip edilmeyeceğine işletim sistemi aynen bankacıların karar verdiğine benzer bir şekilde bir mantık yürüterek cevap veriyor, onaylıyor veya reddediyor.
+
+615
+01:19:43,449 --> 01:19:52,449
+Tabii yine aynı yoldan gidiyoruz. Bir öncesinde tek kaynak vardı, her şeyden tek kopya vardı, burada çok kopya var.
+
+616
+01:19:52,449 --> 01:19:55,449
+Ama orada geçerli olan kural burada da geçerli.
+
+617
+01:19:55,449 --> 01:20:04,449
+Proseslerin her kaynaktan ne kadar ihtiyaç duyduklarını önceden söylemeleri lazım, maksimum ne kadar kullanılıyor.
+
+618
+01:20:04,449 --> 01:20:07,449
+Mesela ben maksimum 5 tane kullanacağım.
+
+619
+01:20:07,449 --> 01:20:14,449
+Fakat bu şu anlama gelmiyor, yani en baştan en sona kadar da 5 tane kullanıyor olabilir.
+
+620
+01:20:14,449 --> 01:20:20,449
+Önce birini, sonra diğerini, sonra üçünü isteyip 5 tane kullanıyor olabilir.
+
+621
+01:20:20,449 --> 01:20:30,449
+Bu şu anlama geliyor, herhangi bir çalışma süresi içerisinde herhangi bir anda maksimum bu kaynaktan 5 tanesine birden ihtiyaç duyuyor.
+
+622
+01:20:30,449 --> 01:20:39,449
+Diğer bir kural, bir proses, bir kaynağı istediğinde request hemen gerçekleştirilmeyebilir.
+
+623
+01:20:39,449 --> 01:20:46,449
+Az önce bunu söyledim, olmuyorsa prosesi ne yapıyoruz dedim, sonlandırmıyoruz ama beklemeye alıyoruz.
+
+624
+01:20:46,449 --> 01:20:56,449
+Son kuralda bir proses, ihtiyaç duyduğu bütün kaynakları aldıysa bunları işi bittiğinde geri döndürmeli.
+
+625
+01:20:56,449 --> 01:21:05,449
+Yani şimdi burada tabii çok izafi bir şey, yine finite amount of time yani sonlu bir zaman,
+
+626
+01:21:05,449 --> 01:21:16,449
+prosesin nasıl kodlandığına, yaptığı işin ne olduğuna, proses açısından bu finite sonlu zamanın ne olarak tanımlandığına,
+
+627
+01:21:16,449 --> 01:21:25,449
+evet haftaya mıdır, bir sonraki seneye midir, programcının yapısına da bağlı olarak buradaki sistemde en sıkıntılı olan şeylerden bir tane var.
+
+628
+01:21:25,449 --> 01:21:33,449
+Tabii şöyle düşünebilirsiniz, transaksiyon processing yapıyorsanız, arka arkaya bir sürü transaksiyon işliyorsanız,
+
+629
+01:21:33,449 --> 01:21:38,449
+transaksiyonların süresi belirledir, diyelim ki 50 milisaniyedir, diyelim ki 100 milisaniyedir.
+
+630
+01:21:38,449 --> 01:21:49,449
+Ama çok farklı profilde kullanıcıların işlemlerini yapıyorsanız, saatler günler süren bir number crunching algoritması da olabilir,
+
+631
+01:21:49,449 --> 01:21:54,449
+kenarda başka bir sort algoritması da olabilir, bunlarda hesaba kalkmak gerekiyor.
+
+632
+01:21:54,449 --> 01:22:00,449
+Yani o dördüncü madde biraz yoruma açık.
+
+633
+01:22:00,449 --> 01:22:18,449
+O zaman en tane prosesimiz var, en tane de resource tipimiz varsa sistemde bakın, available, max allocation ve need diye veri yapıları oluşturuyoruz.
+
+634
+01:22:18,449 --> 01:22:31,449
+Available bir vektör, m tane gözü var, yani bir liste aslında, array aslında bu, m tane gözü var.
+
+635
+01:22:31,449 --> 01:22:38,449
+Her gözünde değeri o ilgili kaynağın en fazla kaç tane kopyası olduğunu gösteriyor.
+
+636
+01:22:38,449 --> 01:22:45,449
+İşte JN'ci kaynaktan k tane varsa, available'ın JN'ci gözünde k değeri var.
+
+637
+01:22:45,449 --> 01:22:51,449
+Max ise bir n çarpı m'lik matriz, çünkü neden?
+
+638
+01:22:51,449 --> 01:23:00,449
+En tane proses var, en tane de resource var, o zaman prosesle her resource'un kesiştiği gözde, o ilgili gözde,
+
+639
+01:23:01,449 --> 01:23:12,449
+prosesin o resource'dan kaç tane maximum talep edeceği, hani a priori önceden vermesi gereken bilgi vardı ya, onu tutuyoruz.
+
+640
+01:23:12,449 --> 01:23:22,449
+Allocation max matrisinin aynısı, sadece ne kadar allocate edildiğini, ne kadar tahsis edildiğini gösteriyor.
+
+641
+01:23:22,449 --> 01:23:36,449
+Need ise yine bir matriz, max tane isteyeceğini söyledi ama allocate edildiği kadarı şu anda orada var.
+
+642
+01:23:36,449 --> 01:23:43,449
+Fakat henüz max'a gelmedi, aradaki fark, yani daha ne kadar ihtiyaç duydu söyledim ya,
+
+643
+01:23:43,449 --> 01:23:50,449
+beş taneye ihtiyacı vardı ama önce bir aldı, sonra iki aldı, onun hala da üçe ihtiyacı var.
+
+644
+01:23:50,449 --> 01:23:58,449
+Şimdi bir tanesinin üçe ihtiyacı var, öbürünün ikiye, öbürünün beşe falan derken sistemde neyle bunu check etmemiz lazım arkadaşlar?
+
+645
+01:23:58,449 --> 01:24:05,449
+Available'la check etmemiz lazım. Need herhangi bir anda şu formüle göre hesaplanabiliyor.
+
+646
+01:24:05,449 --> 01:24:13,449
+Max x allocation, ama tabi matris hesabı üzerinden bunu yapmanız lazım.
+
+647
+01:24:13,449 --> 01:24:27,449
+Şimdi yaptığımız şey, bir kez hani finish ile de şeyi ifade ediyoruz, bakın finish i, n'e kadar gidiyor,
+
+648
+01:24:27,449 --> 01:24:32,449
+sıfırdan n-1'e kadar gidiyor, n neyi gösteriyordu?
+
+649
+01:24:33,449 --> 01:24:43,449
+Prosesleri gösteriyordu, şu anda proseslerin bitmediğini yani ilgili, finish'in ilgili gözü false'a eşitse,
+
+650
+01:24:43,449 --> 01:24:51,449
+eğer o zaman o proses işini bitirmiştir, tamamlanmıştır, artık onun için bir şey yapmama gerek yok demektir.
+
+651
+01:24:51,449 --> 01:25:00,390
+İkinci aşamada neymiş işte finish i'yi false'a set et, çünkü neden?
+
+652
+01:25:00,390 --> 01:25:08,390
+i prosesini çalıştırmam lazım ve work'te temporary bir şey, available'ın bir kopyası aslında.
+
+653
+01:25:08,390 --> 01:25:17,390
+Öyle bir şey yap ki, i prosesi tarafından ihtiyaç duyulan istekler,
+
+654
+01:25:18,390 --> 01:25:23,390
+request yani resource istekleri work'ten küçük eşit olsun.
+
+655
+01:25:23,390 --> 01:25:29,390
+En başta size bunu anlattım, hani üç vardı, iki tane daha istendi, sistemleri toplam beş,
+
+656
+01:25:29,390 --> 01:25:38,390
+öyle bir şey varsa sorun yok, üçüncü aşamaya gidip şeyi tamamladınız, work eşittir,
+
+657
+01:25:38,390 --> 01:25:45,390
+work artı allocation yani o kadarına allocate ettim, i'nin işini gördüm, i şu anda çalışmaya devam etti.
+
+658
+01:25:45,390 --> 01:25:55,390
+Eğer böyle bir şey bulamıyorsak, bu şekilde bir şey bulamıyorsak, şey yapmamız lazım tekrar,
+
+659
+01:25:55,390 --> 01:26:01,390
+ne derler ona, pardon bunu yaptıysak, üçü yaptıysak, ikinciye devam edeceğiz.
+
+660
+01:26:01,390 --> 01:26:04,390
+Böylece bunu güncelleyeceğiz.
+
+661
+01:26:04,390 --> 01:26:12,390
+Şimdi finish true ise, yani bütün sistem için finish true ise,
+
+662
+01:26:12,390 --> 01:26:19,390
+true ise en tane prosesim için finish ile ilgili i değerlerini true'ya set ettiysem,
+
+663
+01:26:19,390 --> 01:26:27,390
+bütün proseslerimin isteklerini karşılamışım demektir ve işin güzel tarafı bu istekleri karşılarken de
+
+664
+01:26:27,390 --> 01:26:33,390
+elimdeki max'ı falan aşmamışım demektir, bir sorun yaşamamışım demektir,
+
+665
+01:26:33,390 --> 01:26:38,390
+sistem çok güzel bir şekilde safe durumda demektir.
+
+666
+01:26:38,390 --> 01:26:47,390
+Şimdi böyleyken ek istekler gelecek ya, yani prosesler bir seferde hepsini birden almıyorlar,
+
+667
+01:26:47,390 --> 01:26:56,390
+ne kadar maksimum kullanacaklarını söylüyorlar, o yüzden zaman içerisinde ek isteklerde bulunacaklar.
+
+668
+01:26:56,390 --> 01:27:05,390
+Bunu da request vektörü ile veyahut da request listesi dizisi ile gösteriyor.
+
+669
+01:27:06,390 --> 01:27:13,390
+Şimdi bir kez request'i neden küçük olması gerekiyor ilgili proses için?
+
+670
+01:27:13,390 --> 01:27:16,390
+Need'ten küçük olması gerekiyor, neden?
+
+671
+01:27:16,390 --> 01:27:24,390
+Proses çalışması sırasında hiçbir anda en başta belirttiği max'ın üstüne çıkamaz.
+
+672
+01:27:24,390 --> 01:27:29,390
+Eğer öyleyse request available'dan küçük eşitme,
+
+673
+01:27:29,390 --> 01:27:33,390
+eğer değilse şu an o request'i yerine getiremiyoruz,
+
+674
+01:27:33,390 --> 01:27:38,390
+demek ki pye processini bekletmek zorundayız.
+
+675
+01:27:38,390 --> 01:27:43,390
+Eğer request available'a küçük eşitse iyi bir durumdayız.
+
+676
+01:27:43,390 --> 01:27:45,390
+Ve ne yapıyoruz?
+
+677
+01:27:45,390 --> 01:27:51,390
+Şu işlemleri yapmış gibi, available'dan request kadar kısmını düşüyoruz,
+
+678
+01:27:51,390 --> 01:27:57,390
+allocation kısmına request kadar kısmını ekliyoruz, need'ten de request'e düşüyoruz.
+
+679
+01:27:57,390 --> 01:28:01,390
+Buradan hemen az önceki o şeylere hesap ediyoruz.
+
+680
+01:28:01,390 --> 01:28:06,390
+Need, max karşılaştırması vardı ya,
+
+681
+01:28:06,390 --> 01:28:15,390
+eğer hiçbir sorun yoksa save, o zaman pye processi için bu risosları alökiyet ediyorum.
+
+682
+01:28:15,390 --> 01:28:23,390
+Ama şartlar sağlanmıyorsa o zaman pye'ye bunu alökiyet etmem sıkıntılı olacak.
+
+683
+01:28:23,390 --> 01:28:26,390
+Şu anda pye'yi bekletmek durumundayım.
+
+684
+01:28:27,390 --> 01:28:35,390
+Ve hemen available, allocation ve need değerlerini orijinal haline dönüştürüyorum.
+
+685
+01:28:35,390 --> 01:28:41,390
+Yani geçici olarak o hesap ettim, o hesap üzerinden gördüm, baktım olmuyor, hop geri döndüm.
+
+686
+01:28:41,390 --> 01:28:50,020
+Şimdi burada örneği var, bu anlattığım şey üzerinden siz bu örnekten geçersiniz.
+
+687
+01:28:50,020 --> 01:28:56,020
+Adım adım işte 5 tane process var, p0, p4, 3 tane risos tipi var a, b, c olmak üzere.
+
+688
+01:28:56,020 --> 01:29:00,020
+A'dan 10 tane varmış, b'den 5, c'den 7 varmış.
+
+689
+01:29:00,020 --> 01:29:08,020
+İşte p0 demiş ki a'dan maksimum 7 kullanacağım, b'den 5 kullanacağım, c'den 3 kullanacağım.
+
+690
+01:29:08,020 --> 01:29:10,020
+P1 öyle demiş, öbürü öyle demiş.
+
+691
+01:29:10,020 --> 01:29:15,020
+Yani neden bunların hepsini aynı anda çalıştıramadığımızı merak ediyorsanız,
+
+692
+01:29:15,020 --> 01:29:19,020
+a'yı aşağıya doğru sütün olarak toplayın.
+
+693
+01:29:19,020 --> 01:29:23,020
+7 artı 3, 10, 9, 19, 2, 21, 4, 25.
+
+694
+01:29:23,020 --> 01:29:29,020
+Halbuki a'dan 10 tane var, bizim ise bunları çalıştırmak için 25'e ihtiyacımız var.
+
+695
+01:29:29,020 --> 01:29:37,020
+Halbuki diğer taraftan bakın şey ne derler ona, diğerini toplayın işte c'yi toplayın,
+
+696
+01:29:37,020 --> 01:29:47,020
+3, 5, 2, 7, 9, 12 o da 7'yi geçiyor, b'yi toplayın 7, 9, 12 o da 5'i geçiyor.
+
+697
+01:29:47,020 --> 01:29:52,020
+Yani bir şekilde hem a, hem b, hem c risos tipi açısından
+
+698
+01:29:52,020 --> 01:29:59,020
+proseslerin çalışmaları sırasında ihtiyaç duyacakları maksimum kopyaların anlık,
+
+699
+01:29:59,020 --> 01:30:06,020
+hepsi bir arada örtüştüğünde toplamları sistemdeki kaynak kopya sayılarından daha fazla.
+
+700
+01:30:06,020 --> 01:30:08,020
+O yüzden yapacak bir şey yok.
+
+701
+01:30:08,020 --> 01:30:12,020
+Bunun üzerinden az önce anlattığım aşamalarla ilerleniyor.
+
+702
+01:30:12,020 --> 01:30:17,020
+İşte need hesaplanıyor, max-allocation başlangıçta verilenlere göre.
+
+703
+01:30:17,020 --> 01:30:19,020
+Pardon yanlış bastım.
+
+704
+01:30:19,020 --> 01:30:29,020
+Ve ona göre hangi sırada kim bekletilecek, kim alok edilecek bunların hesabı yapılıyor.
+
+705
+01:30:29,020 --> 01:30:33,020
+Bunlara bakarsınız, incelersiniz.
+
+706
+01:30:33,020 --> 01:30:37,020
+Şimdi deadlock detection.
+
+707
+01:30:38,020 --> 01:30:41,020
+Bakın, birincisi prevention'dı.
+
+708
+01:30:41,020 --> 01:30:43,020
+Üzerine basa basa söylüyoruz.
+
+709
+01:30:43,020 --> 01:30:49,020
+Prevention'da deadlock'ı oluşturan dört tane şarttan bir veya iki tanesini,
+
+710
+01:30:49,020 --> 01:30:52,020
+oluyorsa üç tanesini, hatta dört tanesini ortadan kaldırmaya çalışıyorduk.
+
+711
+01:30:52,020 --> 01:30:54,020
+Ama onu uzun uzun konuştuk.
+
+712
+01:30:54,020 --> 01:31:03,020
+Deadlock avoidance, kaynakları alokiyat ederken öyle şey bir şekilde alokiyat etmeye çalışıyoruz ki
+
+713
+01:31:03,020 --> 01:31:06,020
+akıllı bir şekilde alokiyat etmeye çalışıyoruz ki
+
+714
+01:31:06,020 --> 01:31:12,020
+alokasyon sonrasında sistemi deadlock'a düşecek bir duruma sokmayalım diye.
+
+715
+01:31:12,020 --> 01:31:14,020
+Üçüncüsü de deadlock detection.
+
+716
+01:31:14,020 --> 01:31:16,020
+Hiçbir şey yapmıyoruz.
+
+717
+01:31:16,020 --> 01:31:18,020
+Sistem deadlock'a giriyor.
+
+718
+01:31:18,020 --> 01:31:22,020
+Yalnız burada sistem kelimesini kullanıyoruz ya bu işletim sistemi değil.
+
+719
+01:31:22,020 --> 01:31:24,020
+Lütfen karıştırmayın.
+
+720
+01:31:24,020 --> 01:31:31,020
+Buradaki sistem, resorslarla, prosesler arasında o resurs allocation graph'la oluşmuş olan yapı var ya,
+
+721
+01:31:31,020 --> 01:31:36,020
+yani onların arasındaki ilişkiye ait kullandığımız terim.
+
+722
+01:31:36,020 --> 01:31:41,020
+Deadlock oldu mu bunu algılamamız lazım.
+
+723
+01:31:41,020 --> 01:31:45,020
+Sonrasında da bunu toparlamamız lazım, çözmemiz lazım.
+
+724
+01:31:45,020 --> 01:31:55,020
+Burada resurs allocation graph'ın dönüştürülmüş hali olan wait for graph'ını oluşturuyoruz.
+
+725
+01:31:55,020 --> 01:31:59,020
+Wait for hangi proses kimin için bekliyor?
+
+726
+01:31:59,020 --> 01:32:08,020
+Burada vertis veya notlar artık doğrudan proses, aradan resursları çıkartıyoruz, resursları elimine ediyoruz.
+
+727
+01:32:08,020 --> 01:32:11,020
+Ve yine yönlü bir graph.
+
+728
+01:32:11,020 --> 01:32:18,020
+Bakın pi, ok, pj, pi, pj'yi bekliyor anlamına geliyor.
+
+729
+01:32:18,020 --> 01:32:22,020
+Periodik olarak bir algoritma çalıştıracağız.
+
+730
+01:32:22,020 --> 01:32:27,020
+Ve wait for graph'ında cycle var mı yok mu bakacağız.
+
+731
+01:32:27,020 --> 01:32:30,020
+Şimdi burada müthiş bir durum var.
+
+732
+01:32:30,020 --> 01:32:42,020
+Wait for graph'ı resurs allocation graph'tan oluşturuluyor olmasına rağmen, wait for graph'ında kapalı çevrim varsa mutlaka ve mutlaka ne vardır?
+
+733
+01:32:42,020 --> 01:32:45,020
+Deadlock vardır.
+
+734
+01:32:45,020 --> 01:32:53,020
+Halbuki resurs allocation graph'da kapalı çevrim olduğunda bazen oluyor diyorduk, bazen olmuyor diyorduk, emin değildik.
+
+735
+01:32:53,020 --> 01:33:05,020
+Fakat işin bombastik tarafı, an algorithm to detect a cycle in a graph requires an order of n-square operations where n is the number of vertices in the graph.
+
+736
+01:33:05,020 --> 01:33:07,020
+Yani çok basit hep aynı şeyi söylüyoruz.
+
+737
+01:33:07,020 --> 01:33:17,020
+N tane düğüm varsa bu n tane düğüm içerisinde kapalı bir çevrim var mı yok mu, bunu araştırmak istiyorsak n-kare operasyon yapmamız lazım.
+
+738
+01:33:17,020 --> 01:33:19,020
+Sıkıntılı şey başladı.
+
+739
+01:33:19,020 --> 01:33:21,020
+Şimdi wait for'a geçelim.
+
+740
+01:33:21,020 --> 01:33:26,020
+Bakın resurs allocation graph'daki resursları çıkartın.
+
+741
+01:33:26,020 --> 01:33:29,020
+P2'den R3'ü çıkartın.
+
+742
+01:33:29,020 --> 01:33:31,020
+P2 neyi bekliyormuş?
+
+743
+01:33:31,020 --> 01:33:33,020
+P5'i bekliyormuş.
+
+744
+01:33:33,020 --> 01:33:35,020
+P1'le P2 arasındaki R1'i çıkartın.
+
+745
+01:33:35,020 --> 01:33:37,020
+P1, P2'yi bekliyormuş.
+
+746
+01:33:37,020 --> 01:33:41,020
+P4'le P1 arasındaki R2'yi çıkartın.
+
+747
+01:33:41,020 --> 01:33:43,020
+P4, P1'i bekliyormuş.
+
+748
+01:33:43,020 --> 01:33:48,020
+P2'le P3 arasındaki R3'i çıkartın.
+
+749
+01:33:48,020 --> 01:33:51,020
+P2, P3'i bekliyormuş.
+
+750
+01:33:51,020 --> 01:33:58,020
+En son olarak da işte P2 ile P4 arasındaki R5'i çıkartın.
+
+751
+01:33:58,020 --> 01:34:03,020
+P2'de P4'ü bekliyormuş.
+
+752
+01:34:03,020 --> 01:34:08,020
+Soldaki resurs allocation, sağdaki wait for grafı.
+
+753
+01:34:08,020 --> 01:34:17,020
+Wait for grafında kapalı çevrim varsa, ok yönlerine dikkat ettiğimizde kapalı çevrim varsa mutlaka ve mutlaka deadlock vardır.
+
+754
+01:34:17,020 --> 01:34:23,020
+Bakın P2, P3, P4 orası kapalı çevrim oluşturmuyor.
+
+755
+01:34:23,020 --> 01:34:28,020
+Değil mi? Çünkü neden? P2, P4 arasındaki okun yönü uygun değil.
+
+756
+01:34:28,020 --> 01:34:38,020
+Ama P1, P2, P2, P3, P3, P4, P4, P1 arasında okların yönüne dikkat ettiğimizde kapalı bir çevrim var.
+
+757
+01:34:39,020 --> 01:34:47,020
+Aynı zamanda P1, P2, P2, P4, P4, P1 arasında da okların yönlerine göre bir kapalı çevrim var.
+
+758
+01:34:47,020 --> 01:34:52,020
+Demek ki bu wait for grafında iki tane kapalı çevrim var.
+
+759
+01:34:52,020 --> 01:35:00,020
+Bu kapalı çevrimlerin her biri de birbirleriyle deadlock ilişkisinde olan prosesleri gösteriyor.
+
+760
+01:35:00,020 --> 01:35:07,020
+Bir grup P1, P2, P3, P4, diğer grup P1, P2, P4. Durum bu.
+
+761
+01:35:07,020 --> 01:35:14,779
+Şimdi, yok sorun değil.
+
+762
+01:35:14,779 --> 01:35:29,659
+Eğer her bir source tipinden bir tane değil de en tane varsa inceleyeceğimiz wait for graflarının sayısı,
+
+763
+01:35:29,659 --> 01:35:35,659
+yani böyle arka arkaya sanki bir boyutta kaptığımızı düşünün.
+
+764
+01:35:35,659 --> 01:35:39,659
+İkinci boyuttan bir üçüncü boyuta geçtiğimizi düşünün.
+
+765
+01:35:39,659 --> 01:35:43,659
+Arka arkaya inceleyeceklerimizin sayısı artacak.
+
+766
+01:35:43,659 --> 01:35:49,659
+En tane, hani n-kare operasyon vardı ya, ama her bir resorstan da n tane var.
+
+767
+01:35:49,659 --> 01:35:54,659
+O zaman demek ki işin içine bir çarpı n boyutu girecek.
+
+768
+01:35:54,659 --> 01:35:58,659
+Ayrıntılarına çok fazla girmemize gerek yok.
+
+769
+01:35:58,659 --> 01:36:00,659
+Şunu söylemem yeterli.
+
+770
+01:36:00,659 --> 01:36:05,659
+N-kare operasyon bir anda olacak, n çarpı n-kare.
+
+771
+01:36:05,659 --> 01:36:13,659
+Şimdi, n ile n algoritma analizi dersinde görüyorsunuz,
+
+772
+01:36:13,659 --> 01:36:20,659
+n ile n aynı orderdan oldukları için, yani n1 öbürü 1 milyon olsa anlarız da
+
+773
+01:36:20,659 --> 01:36:25,659
+resorlarla prosesler arasındaki order birbirine eşit olduğu için
+
+774
+01:36:25,659 --> 01:36:32,659
+eğer artık n olarak algılamalıyım, n'e yakınsa eğer n-küp olarak algılamalıyım.
+
+775
+01:36:32,659 --> 01:36:39,659
+Bir anda karesel karmaşıklıktan küpsel karmaşıklığa geçti.
+
+776
+01:36:39,659 --> 01:36:45,659
+Şimdi, işin patladığı, çatladığı ve hiçbir işletim sistemi
+
+777
+01:36:45,659 --> 01:36:56,659
+yazarının, üreticisinin bununla neden ilgilenmediğini açıkça ortaya koyan nokta burası.
+
+778
+01:36:56,659 --> 01:37:04,659
+Düşünsenize, herhangi bir anda sistemde deadlock var mı diye her şeyi durduracaksınız
+
+779
+01:37:04,659 --> 01:37:10,659
+ki bu işlem yapılırken yeni alokasyon yapılamaz, yeni proses başlatılamaz, hiçbir şey yapılamaz.
+
+780
+01:37:11,659 --> 01:37:20,659
+Bu bir nevi garbage collection çünkü dinamik alokasyon da nasıl kit de şey yapıyorsak,
+
+781
+01:37:20,659 --> 01:37:23,659
+garbage collection yapıyorsak, ona benzer bir şey.
+
+782
+01:37:23,659 --> 01:37:25,659
+Burada da çöpümüzü toplamaya çalışıyoruz.
+
+783
+01:37:25,659 --> 01:37:28,659
+Hani biz bu kadar şey izin verdik ama arkada ne oldu?
+
+784
+01:37:28,659 --> 01:37:30,659
+Onu bir görmemiz lazım.
+
+785
+01:37:30,659 --> 01:37:35,659
+En küplük bir karmaşıklıkla hesap yapacaksınız.
+
+786
+01:37:35,659 --> 01:37:39,659
+Bunu ne sıklıkla yapacaksınız, bilmiyorsunuz.
+
+787
+01:37:39,659 --> 01:37:43,659
+Bunu yapmanızın bedeli çok yüksek.
+
+788
+01:37:43,659 --> 01:37:46,659
+Bunu yaparken hiçbir prosesi çalıştırmıyorsunuz.
+
+789
+01:37:46,659 --> 01:37:48,659
+Her şey beklemede.
+
+790
+01:37:48,659 --> 01:37:54,659
+Peki yaptık diyelim yani çok böyle idealistiz, gözümüzü kararttık.
+
+791
+01:37:54,659 --> 01:37:56,659
+Ya biz bunu yaparız.
+
+792
+01:37:56,659 --> 01:38:05,659
+Ondan sonra kimlerin deadlock durumunda, hangi proseslerin deadlock durumunda olduğunu bulduk.
+
+793
+01:38:05,659 --> 01:38:07,659
+Şimdi çok güzel.
+
+794
+01:38:07,659 --> 01:38:09,659
+Geçelim bunları da.
+
+795
+01:38:09,659 --> 01:38:11,659
+İşte example'ı.
+
+796
+01:38:11,659 --> 01:38:14,659
+Bu söylediğim how often deadlock is likely to occur şey.
+
+797
+01:38:14,659 --> 01:38:16,659
+Efendim, geçmedi mi?
+
+798
+01:38:16,659 --> 01:38:17,659
+Pardon.
+
+799
+01:38:17,659 --> 01:38:18,659
+Geçtik.
+
+800
+01:38:18,659 --> 01:38:21,659
+Peki şimdi çok güzel.
+
+801
+01:38:21,659 --> 01:38:26,659
+Daha büyük bir problemle karşı karşıyayız.
+
+802
+01:38:26,659 --> 01:38:31,659
+Yani problem çözmek için çok çılgınca işlem gücü harcadık, memori harcadık.
+
+803
+01:38:31,659 --> 01:38:32,659
+Idealistiz ya.
+
+804
+01:38:32,659 --> 01:38:34,659
+Tamam bulduk hepsini böyle.
+
+805
+01:38:34,659 --> 01:38:36,659
+Dedektiflik yaptık.
+
+806
+01:38:36,659 --> 01:38:39,659
+İşte P1, P2, P4, P1, P2, P3, P4.
+
+807
+01:38:39,659 --> 01:38:41,659
+Bunlar deadlock durumunda.
+
+808
+01:38:41,659 --> 01:38:42,659
+Güzel.
+
+809
+01:38:42,659 --> 01:38:43,659
+Birinci çözüm.
+
+810
+01:38:43,659 --> 01:38:47,659
+Amort all deadlocked processes.
+
+811
+01:38:47,659 --> 01:38:53,659
+Zaten bütün prosesleri deadlock'a girmiş olan prosesleri durduracaksam,
+
+812
+01:38:53,659 --> 01:39:01,659
+bu proseslerin deadlock'a girdiğini ve ilerlemediğini, bundan dolayı da sonuç üretmediğini kim daha önce fark edecek?
+
+813
+01:39:01,659 --> 01:39:03,659
+Bu proseslerin kullanıcıları.
+
+814
+01:39:03,659 --> 01:39:04,659
+Bu kadar basit.
+
+815
+01:39:04,659 --> 01:39:08,659
+Yani algoritmik olarak işletim sisteminin bunu yapmasına gerek yoktu.
+
+816
+01:39:08,659 --> 01:39:15,659
+Kullanıcının da zaten doğal yaklaşımı, bir şeyler patladı, çatladı, sıkıntı var.
+
+817
+01:39:15,659 --> 01:39:18,659
+Haydi durdurayım, tekrar başlatayım.
+
+818
+01:39:18,659 --> 01:39:19,659
+Birinci seçenek bu.
+
+819
+01:39:19,659 --> 01:39:20,659
+İkincisi.
+
+820
+01:39:20,659 --> 01:39:24,659
+Abort one process at a time until the deadlock cycle is eliminated.
+
+821
+01:39:24,659 --> 01:39:25,659
+Ne yapacağız?
+
+822
+01:39:25,659 --> 01:39:31,659
+Hani o meşhur romalı problemi gibi bunları böyle daireye dizip seni vurdum olmadı, seni vurdum olmadı.
+
+823
+01:39:31,659 --> 01:39:32,659
+Hangisinden başlayacağım?
+
+824
+01:39:32,659 --> 01:39:38,659
+O zaman o one process, hani aradan bir tane seçmek o kadar zor ki, önceliğine göre mi seçeceğim?
+
+825
+01:39:38,659 --> 01:39:41,659
+O ana kadar yaptığı işlem miktarına mı seçeceğim?
+
+826
+01:39:41,659 --> 01:39:44,659
+Kaç tane risos kullandığına göre mi seçeceğim?
+
+827
+01:39:44,659 --> 01:39:47,659
+Bunlar ne kadar output ürettiğine göre mi seçeceğim?
+
+828
+01:39:47,659 --> 01:39:49,659
+Interactive me bes ol.
+
+829
+01:39:49,659 --> 01:39:52,659
+Soruların sonu gelmiyor.
+
+830
+01:39:52,659 --> 01:39:55,659
+Olay otomatikman nereye dönüyor arkadaşlar?
+
+831
+01:39:55,659 --> 01:40:01,659
+Hepsinin öldürülmesine, hepsinin sonlandırılmasına dönüyor.
+
+832
+01:40:01,659 --> 01:40:03,659
+İşin pratiği bu.
+
+833
+01:40:03,659 --> 01:40:15,659
+O zaman işte kurban seçeceksem az önceye göre minimized cost, onun minimizationını yapmak için harcayacağım enerjiyi şey yaptım.
+
+834
+01:40:15,659 --> 01:40:19,659
+Peki bunu da yaptım, bunu da göze aldım.
+
+835
+01:40:19,659 --> 01:40:21,659
+Rollback yapabilecek miyim?
+
+836
+01:40:21,659 --> 01:40:28,659
+Yani o process belki deadlock noktasına gelene kadar bir gün çalışmıştı ve bir sürü şey üretmişti.
+
+837
+01:40:28,659 --> 01:40:31,659
+Ve bunların hiçbiri stable storage'ta değil.
+
+838
+01:40:31,659 --> 01:40:40,659
+O processi durdurduğum zaman o ana kadar ürettiği bütün ara çıktılar, elde etmiş olduğu sonuçlar tamamı kaybolacak.
+
+839
+01:40:40,659 --> 01:40:46,659
+E bunu tekrar çalıştırdığımda kaldığı yerden çalışması için,
+
+840
+01:40:46,659 --> 01:40:53,659
+processin kodu, programı ona göre yazılmadıysa benim nasıl bir mekanizma oluşturmam gerekiyor?
+
+841
+01:40:53,659 --> 01:41:00,659
+Bakın işlemci de preemption yönetilebiliyor çünkü ne yapıyoruz?
+
+842
+01:41:00,659 --> 01:41:08,659
+İşlemcinin içerisindeki kullanılan kaynaklar belirli, register seti belirli, bunların kopyasını kenara koyuyoruz.
+
+843
+01:41:08,659 --> 01:41:10,659
+Anlayabilecek boyutta bir kopya.
+
+844
+01:41:10,659 --> 01:41:16,659
+Megabaytlar boyutunda değil, gigabaytlar boyutunda değil bir process belki gigabayt üretiyordur, bilemezsiniz.
+
+845
+01:41:16,659 --> 01:41:22,659
+Birkaç yüz, en kabadayısından birkaç yüz bayt bunu aldık, koyduk kenara tekrar giriyordu.
+
+846
+01:41:22,659 --> 01:41:24,659
+Peki ikinci bir şey.
+
+847
+01:41:24,659 --> 01:41:34,659
+Şimdi algoritmamız buldu, onu durdurdu, şey yaptı, sonra tekrar çalıştırdı.
+
+848
+01:41:34,659 --> 01:41:41,659
+Fakat bu proseslerin arasında deadlock oluşmasının sebebi belirli olduğu için bir sonraki turda bu deadlock yine oluştu.
+
+849
+01:41:41,659 --> 01:41:46,659
+Ve bizim algoritmamız yine aynı prosesi öldürmek için seçti.
+
+850
+01:41:46,659 --> 01:41:50,659
+Ne olacak? Starvation oluşacak.
+
+851
+01:41:50,659 --> 01:41:54,659
+Hayır onu bu sefer seçmiştim, şimdi seçmeyeyim.
+
+852
+01:41:54,659 --> 01:41:56,659
+Ayrı bir liste mi tutacağız?
+
+853
+01:41:56,659 --> 01:42:03,659
+Bunlar hep bakın, yaşanmış tartışılmış şeyler, yayınlarda falan da böyle karşılıklı tartışılmış, incelenmiş şeyler.
+
+854
+01:42:03,659 --> 01:42:09,659
+Bunun sonucunda gördüğümüz şey, resource preemption da bir işe yaramıyor.
+
+855
+01:42:09,659 --> 01:42:14,659
+Yani bunu yaptığımız zaman başka sıkıntılarla karşılaşıyoruz.
+
+856
+01:42:14,659 --> 01:42:21,659
+Resource preemption'ın işe yaradığı yagenleşe, deadlock anlamında olup olmasın, hep aynı şeyi bastıra bastıra söylüyoruz.
+
+857
+01:42:21,659 --> 01:42:24,659
+CPU olayı, çünkü yönetilebilir bir şey.
+
+858
+01:42:24,659 --> 01:42:26,939
+Sonuç.
+
+859
+01:42:26,939 --> 01:42:27,939
+Geçmiş olsun.
+
+860
+01:42:27,939 --> 01:42:30,939
+Evet, hepimize geçmiş olsun.
+
+861
+01:42:30,939 --> 01:42:32,939
+Geçmiş olsun, sonuç şu.
+
+862
+01:42:32,939 --> 01:42:44,939
+Deadlock varsa, işletim sistemi seviyesindeyse, kernel'daysa, bunun çözülmesinin sorumlusu işletim sisteminin üreticisidir, yazarlarıdır.
+
+863
+01:42:44,939 --> 01:42:46,939
+Bu kadar basit.
+
+864
+01:42:46,939 --> 01:42:54,939
+Ama onun haricinde, uygulamada bir deadlock oluşuyorsa, o uygulamanın üreticisidir.
+
+865
+01:42:54,939 --> 01:43:03,939
+Sizin tasarladığınız, sizin geliştirdiğiniz, yazdığınız bir şeyde deadlock oluşuyorsa, o zaman o da sizin sorumluluğunuzdur.
+
+866
+01:43:03,939 --> 01:43:13,939
+Yanlış kullanmışsınızdır bir şeyi, algoritmanızda bir sıkıntı vardır, iklendirmenizde bir sıkıntı vardır, race condition oluşturuyorsunuzdur, starvation vardır, fark etmemişsinizdir.
+
+867
+01:43:13,939 --> 01:43:21,939
+Bütün bunların hepsi bir araya geldiğinde, saydığımız 4 şart şeklinde bir araya geldiğinde de deadlock oluşuyor.
+
+868
+01:43:21,939 --> 01:43:25,939
+Burada da yapacak bir şey yok.
+
+869
+01:43:25,939 --> 01:43:34,939
+Tamamen durdur, ondan sonra debug et, düzelt ve hatasız olarak çalıştırmanın yolunu var.
+
+870
+01:43:34,939 --> 01:43:40,699
+Evet, haftaya görüşmek üzere arkadaşlar.
+
+871
+01:43:40,699 --> 01:43:42,699
+Hocam?
+
+872
+01:43:42,699 --> 01:43:44,699
+Kimsin?
+
+873
+01:43:44,699 --> 01:43:46,699
+Ben, merhaba hocam.
+
+874
+01:43:46,699 --> 01:43:48,699
+Ben [öğrenci].
+
+875
+01:43:48,699 --> 01:43:50,699
+Buradayım.
+
+876
+01:43:50,699 --> 01:43:52,699
+Ben master üreticiyim.
+
+877
+01:43:52,699 --> 01:43:56,699
+Eğitim günü ne zaman?
+
+878
+01:43:56,699 --> 01:44:00,699
+Eğitim günü ne zaman?
+
+879
+01:44:00,699 --> 01:44:02,699
+Eğitim günü anlarsın.
+
+880
+01:44:02,699 --> 01:44:06,699
+Eğitim günü ne zaman?
+
+881
+01:44:06,699 --> 01:44:08,699
+Tamam, tamam.
+
+882
+01:44:08,699 --> 01:44:10,699
+Teşekkürler hocam.
+
+883
+01:44:10,699 --> 01:44:14,699
+Evet, haftaya görüşmek üzere arkadaşlar.
+
