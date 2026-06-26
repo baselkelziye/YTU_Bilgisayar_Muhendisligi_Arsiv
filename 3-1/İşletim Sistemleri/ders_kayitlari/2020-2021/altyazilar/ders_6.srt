@@ -1,0 +1,4696 @@
+1
+00:01:05,900 --> 00:01:33,780
+Herkese merhaba arkadaşlar, isim geliyor ama chatten yazarsanız nasılsınız, iyi misiniz? Pandemi nasıl geçiyor?
+
+2
+00:01:33,780 --> 00:01:42,780
+Bir 10 dakika beklerim arkadaşlar, toparlansın öyle başlarız. Ben de iyi teşekkür ederim.
+
+3
+00:01:42,780 --> 00:01:51,780
+Bu arada ben, araştırma görevisi Fat. Bugün burgu ama dersini birlikte yapacağız.
+
+4
+00:01:51,780 --> 00:02:01,780
+İlk grubu ilk 1 saat, 2. grubu da diğer 2 saat yapacak şekilde 2 saat anlatacağım. Siz ilk grubu olacaksınız.
+
+5
+00:02:01,780 --> 00:02:09,780
+Size şerh programlarını anlatacağım ama biraz belki arkadaşlarınız katılsın. Sonra başlarız.
+
+6
+00:02:09,780 --> 00:02:15,780
+Hiçbir şey edilmenize gerek yok arkadaşlar. Ben ekranı paylaşacağım sizinle.
+
+7
+00:02:15,780 --> 00:02:25,780
+Sanal makineyi kurduğum, üşüttüğüm sitemi rubuntu var. Rubuntu üzerinde skipler yazdın, programlar yazdın.
+
+8
+00:02:25,780 --> 00:02:29,780
+Onları size çalıştıracağım, göstereceğim, anlatacağım. Siz hiçbir şey yapmanıza gerek yok.
+
+9
+00:02:29,780 --> 00:02:33,780
+Bir arada sorulduğa sorup size chatten katılmanızı isteyebilirim.
+
+10
+00:02:33,780 --> 00:02:37,780
+Onun dışında yapacaklar.
+
+11
+00:02:37,780 --> 00:02:56,240
+Ders dinleyeceksin sadece, ben size uygulama yapacağım.
+
+12
+00:02:56,240 --> 00:03:38,599
+Ekran paylaşımı deneyelim istiyorsanız arkadaşlar.
+
+13
+00:03:38,599 --> 00:03:41,599
+Şu anda ekranı görüyorsunuz değil mi arkadaşlar?
+
+14
+00:03:41,599 --> 00:03:44,599
+Paylaştırma ekranı.
+
+15
+00:03:44,599 --> 00:06:32,769
+Süper.
+
+16
+00:06:32,769 --> 00:06:35,769
+Sonra başlayalım arkadaşlar.
+
+17
+00:06:35,769 --> 00:06:38,769
+Bugün size şerh programlarını anlatacağım.
+
+18
+00:06:38,769 --> 00:06:42,769
+Şerh programlamayla ilgili anlatacağım şeyleri iki haftaya yaydım.
+
+19
+00:06:42,769 --> 00:06:46,769
+Bir iki bu hafta olacak. Bir sonraki dönemimizde iki hafta olacak.
+
+20
+00:06:46,769 --> 00:06:48,769
+Ama başlamadan önce son bir ses kontrol yapmak istiyorum.
+
+21
+00:06:48,769 --> 00:06:52,769
+Sesim geliyorsa söyler misiniz?
+
+22
+00:06:52,769 --> 00:06:56,769
+Bir daha yazın lütfen. Biriniz yazsa bir de yeterli.
+
+23
+00:06:56,769 --> 00:06:58,769
+Sesim geliyor mu?
+
+24
+00:06:58,769 --> 00:07:12,420
+Evet hocam sesiniz geliyor.
+
+25
+00:07:12,420 --> 00:07:15,420
+Tamam, harika. O zaman başlayalım.
+
+26
+00:07:16,420 --> 00:07:19,420
+Her programı anlatacağım size demiştim.
+
+27
+00:07:19,420 --> 00:07:23,420
+Ben sunumu kullanıp, uygulamayı göstereceğim.
+
+28
+00:07:23,420 --> 00:07:26,420
+Size sıkıntı hazırladım, onları çalıştıracağım tek tek.
+
+29
+00:07:26,420 --> 00:07:29,420
+Nasıl çalıştığını göstereceğim, ne işe yaradıklarını göstereceğim.
+
+30
+00:07:29,420 --> 00:07:33,420
+Ama o bir sunuma realite edeceğim programın deşikrelerimiz için.
+
+31
+00:07:33,420 --> 00:07:35,420
+Şerh nedenleriyle başlayalım.
+
+32
+00:07:35,420 --> 00:07:43,420
+Biliyorsunuz işte sistemleri donanımın hardware'e ilişen ve onu yöneten temel programlar.
+
+33
+00:07:43,420 --> 00:07:47,420
+Bu programların bir çekirdeği var. Bütün temel bleşenlerin olduğu bir çekirdeği var.
+
+34
+00:07:47,420 --> 00:07:50,420
+Bu çekirdeği kernel deniyor ya da kernel diye söyleyebilirsiniz.
+
+35
+00:07:50,420 --> 00:07:53,420
+Bu kernel'ın bir takım yapması gereken belalar var.
+
+36
+00:07:53,420 --> 00:07:56,420
+Dosyalar yönetimi, işlem yönetimleri değil mi?
+
+37
+00:07:56,420 --> 00:08:00,420
+Process management, IAO ve memore managementi ve device'leri yönetmesi gerekiyor.
+
+38
+00:08:00,420 --> 00:08:06,420
+İşte bu device bunları yapan, temel değişikçenleri yerine götüren program parçası, program parçası, kernel deniyor.
+
+39
+00:08:06,420 --> 00:08:08,420
+Sadece bir şekil var.
+
+40
+00:08:09,420 --> 00:08:12,420
+En az en çok temelde bir hardware'imiz var.
+
+41
+00:08:12,420 --> 00:08:14,420
+Onun üzerinde bir kernel var.
+
+42
+00:08:16,420 --> 00:08:18,420
+Bu çekirdeğinin bir kabuğu var.
+
+43
+00:08:18,420 --> 00:08:20,420
+Ona da şerh deniyor.
+
+44
+00:08:20,420 --> 00:08:27,420
+Yani şerh aslında kernel komutlarını ve daha fazlasını yapmayı sağlayan programlama dilleri ve program parçası.
+
+45
+00:08:27,420 --> 00:08:29,420
+Hocam, hocam pardon.
+
+46
+00:08:29,420 --> 00:08:30,420
+Buyrun.
+
+47
+00:08:30,420 --> 00:08:32,419
+Çatı yazıyor arkadaşlar da bende de öyle.
+
+48
+00:08:32,419 --> 00:08:36,419
+Sesiniz çok bozuk geliyor, yankılı ve kesik kesik geliyor anlaşılmıyor.
+
+49
+00:08:38,419 --> 00:08:39,419
+Öyle mi?
+
+50
+00:08:39,419 --> 00:08:41,419
+Bir şeyden internetten olabilir.
+
+51
+00:08:41,419 --> 00:08:43,419
+Şöyle yapalım o zaman.
+
+52
+00:08:43,419 --> 00:08:45,419
+Ben hemen internetini değiştireyim.
+
+53
+00:08:45,419 --> 00:08:46,419
+Şu an Wi-Fi'den bağlanıyorum.
+
+54
+00:08:46,419 --> 00:08:49,419
+Normal kabuğlu bağlantıyı geçip tekrar devam edeyim.
+
+55
+00:08:49,419 --> 00:08:51,419
+Sorun ondan kaynaklanabilir.
+
+56
+00:08:52,419 --> 00:08:54,419
+Bir saniye rica ediyorum sizden.
+
+57
+00:08:56,419 --> 00:08:58,419
+Şimdi suyunu kapatıyorum.
+
+58
+00:08:58,419 --> 00:08:59,419
+Tekrar başlayacağım.
+
+59
+00:08:59,419 --> 00:09:02,419
+Gerçekten emin değilse devam edemeyebilirim.
+
+60
+00:09:02,419 --> 00:10:02,059
+Direkt bağlayacağım. Bir saniye.
+
+61
+00:10:02,059 --> 00:10:04,059
+Değişim var mı şu anda?
+
+62
+00:10:04,059 --> 00:10:12,039
+Şu anda değişiklik var mı arkadaşlar?
+
+63
+00:10:12,039 --> 00:10:14,039
+Daha iyi veya daha kötü söyleyebiliyor musunuz?
+
+64
+00:10:14,039 --> 00:10:16,039
+Daha iyi gibi geliyor hocam.
+
+65
+00:10:16,039 --> 00:10:18,039
+Tamam çünkü internet bağlantımı değiştirdim.
+
+66
+00:10:18,039 --> 00:10:20,039
+Wi-Fi'ya bağlıydım arkadaşlar o yüzden.
+
+67
+00:10:20,039 --> 00:10:22,039
+Tamamdır hocam.
+
+68
+00:10:23,039 --> 00:10:28,779
+Tamam o zaman devam edelim.
+
+69
+00:10:28,779 --> 00:10:29,779
+Sorun yoksa.
+
+70
+00:10:29,779 --> 00:10:31,779
+Sen Shell programından bahsetmiştin.
+
+71
+00:10:31,779 --> 00:10:33,779
+Demiştim ki size bir körnünüz var.
+
+72
+00:10:33,779 --> 00:10:34,779
+Bu çekildi.
+
+73
+00:10:34,779 --> 00:10:35,779
+Ve bu dışında Shell var.
+
+74
+00:10:35,779 --> 00:10:38,779
+Shell'de bu program parçaları ve körnünüz var.
+
+75
+00:10:38,779 --> 00:10:40,779
+Ekranın paylaşmayı unuttunuz galiba.
+
+76
+00:10:40,779 --> 00:10:41,779
+Ha evet.
+
+77
+00:10:41,779 --> 00:10:42,779
+Tamam onu deplodum.
+
+78
+00:10:42,779 --> 00:10:45,580
+Şöyle.
+
+79
+00:10:46,580 --> 00:10:48,580
+Şimdi oldu sanırım.
+
+80
+00:10:48,580 --> 00:10:52,370
+Evet hocam geldi şimdi.
+
+81
+00:10:52,370 --> 00:10:54,370
+Tamam. Shell'de körnün üzerinde
+
+82
+00:10:54,370 --> 00:10:57,370
+çalıştırabildiğimiz, işlem sitemi servisine
+
+83
+00:10:57,370 --> 00:10:59,370
+ilişebildiğimiz bir program parçası.
+
+84
+00:10:59,370 --> 00:11:01,370
+Bunun tabi farklı farklı türleri var.
+
+85
+00:11:01,370 --> 00:11:02,370
+5 var.
+
+86
+00:11:02,370 --> 00:11:03,370
+C Shell var.
+
+87
+00:11:03,370 --> 00:11:04,370
+Corn Shell var.
+
+88
+00:11:04,370 --> 00:11:05,370
+Mesela Windows'da Power Shell var.
+
+89
+00:11:05,370 --> 00:11:06,370
+Belki biliyorsunuzdur.
+
+90
+00:11:06,370 --> 00:11:10,370
+Bunlarla işlem sitemindeki bir takım işleri
+
+91
+00:11:10,370 --> 00:11:12,370
+hızlı bir şekilde gerçekleştirebiliyorsunuz.
+
+92
+00:11:12,370 --> 00:11:16,059
+Tabii Shell'in dışında da
+
+93
+00:11:16,059 --> 00:11:18,059
+utility fonksiyonları var.
+
+94
+00:11:18,059 --> 00:11:19,059
+Mesela ben bugün unuttum.
+
+95
+00:11:19,059 --> 00:11:21,059
+Ünit işlem sitemi devam edeceğim için
+
+96
+00:11:21,059 --> 00:11:22,059
+ondakileri yazdım.
+
+97
+00:11:22,059 --> 00:11:23,059
+Mesela nano var.
+
+98
+00:11:23,059 --> 00:11:24,059
+Bu tekstilikleri V var.
+
+99
+00:11:24,059 --> 00:11:27,059
+Ket telvizyon ekranında tekst içeriğini
+
+100
+00:11:27,059 --> 00:11:29,059
+dosya içeriklerini daha doğrusu yazmak için
+
+101
+00:11:29,059 --> 00:11:30,059
+kullanılıyor.
+
+102
+00:11:30,059 --> 00:11:31,059
+List falan var.
+
+103
+00:11:31,059 --> 00:11:34,059
+Bu liste dosyaları, bulunan liste dosyaları
+
+104
+00:11:34,059 --> 00:11:39,059
+ve direktörleri, folderları gösteren komut.
+
+105
+00:11:41,059 --> 00:11:43,059
+Şimdi basit işlerle başlayacağız öncelikle.
+
+106
+00:11:43,059 --> 00:11:45,059
+Tabii ki en önemli şeyden bir tanesi
+
+107
+00:11:45,059 --> 00:11:47,059
+dosyalarda ve direktör yönetme.
+
+108
+00:11:47,059 --> 00:11:49,059
+Bunun için de klasör işlemleri
+
+109
+00:11:49,059 --> 00:11:50,059
+ve dosya işlemleri yapıyoruz.
+
+110
+00:11:50,059 --> 00:11:55,059
+Burada make directory var.
+
+111
+00:11:55,059 --> 00:11:57,059
+Direktör oluşturuyorsunuz.
+
+112
+00:11:57,059 --> 00:11:59,059
+Change directory var.
+
+113
+00:11:59,059 --> 00:12:00,059
+C, D komutu.
+
+114
+00:12:00,059 --> 00:12:02,059
+Make directory'nin yanında tabii ki
+
+115
+00:12:02,059 --> 00:12:03,059
+klasör de olacak.
+
+116
+00:12:03,059 --> 00:12:05,059
+Hani klasör ismi oluşturacaksanız
+
+117
+00:12:05,059 --> 00:12:06,059
+onun adını yazıyorsunuz.
+
+118
+00:12:06,059 --> 00:12:09,059
+Change directory'da tabii pet ve klasör de var.
+
+119
+00:12:09,059 --> 00:12:11,059
+Çünkü bulunduğunuz dizindeki bir direktör
+
+120
+00:12:11,059 --> 00:12:13,059
+değil de çok daha farklı bir dizindeki
+
+121
+00:12:13,059 --> 00:12:14,059
+bir direkmek gerekebilir.
+
+122
+00:12:14,059 --> 00:12:16,059
+Onun için pet girmeniz gerekiyor.
+
+123
+00:12:16,059 --> 00:12:18,059
+Arada bir separatör olacak tabii ki.
+
+124
+00:12:18,059 --> 00:12:20,059
+Söpöyotur da işitim sistemine göre
+
+125
+00:12:20,059 --> 00:12:22,059
+normans tılaş veya ters tılaş olabilir.
+
+126
+00:12:22,059 --> 00:12:24,059
+Tamamen işitim sistemine bağlı.
+
+127
+00:12:24,059 --> 00:12:25,059
+Deli metir bu.
+
+128
+00:12:25,059 --> 00:12:28,059
+Neyse dediğimiz şey dosyaları listelemeye
+
+129
+00:12:28,059 --> 00:12:30,059
+yarayan, dosya ve klasörleri listelemeye
+
+130
+00:12:30,059 --> 00:12:32,059
+yarayan aslında komut.
+
+131
+00:12:32,059 --> 00:12:34,059
+Bu da remove directory.
+
+132
+00:12:34,059 --> 00:12:36,059
+Boş klasörü silmeye yarıyor.
+
+133
+00:12:36,059 --> 00:12:37,059
+Doluk klasörü silemiyorsunuz.
+
+134
+00:12:37,059 --> 00:12:39,059
+Doluk klasörü silmek için önce içindekileri
+
+135
+00:12:39,059 --> 00:12:40,059
+boşaltmanız gerekiyor.
+
+136
+00:12:40,059 --> 00:12:42,059
+Remediyle silmek isterseniz.
+
+137
+00:12:42,059 --> 00:12:44,059
+Bir de dosya işlemlerimiz var.
+
+138
+00:12:44,059 --> 00:12:46,059
+Touch bir text dosyası oluşturuyor.
+
+139
+00:12:46,059 --> 00:12:47,059
+Bir binary dosya değil.
+
+140
+00:12:47,059 --> 00:12:49,059
+Text dosyası oluşturuyor.
+
+141
+00:12:49,059 --> 00:12:50,059
+Remove da bu dosya.
+
+142
+00:12:50,059 --> 00:12:52,059
+Reme de bu dosyayı siliyor.
+
+143
+00:12:52,059 --> 00:12:54,059
+Tabii Touch dosyada bir uzantısını birlikte
+
+144
+00:12:54,059 --> 00:12:55,059
+almak zorunda.
+
+145
+00:12:55,059 --> 00:12:56,059
+Uzantıya girmesiniz.
+
+146
+00:12:56,059 --> 00:12:58,059
+Uzantısız normal bir dosya oluşturur.
+
+147
+00:12:58,059 --> 00:13:00,059
+Ama text olur yine.
+
+148
+00:13:00,059 --> 00:13:03,059
+MV dosyaların bir konumdan başka bir
+
+149
+00:13:03,059 --> 00:13:04,059
+konuma yerleştirme.
+
+150
+00:13:04,059 --> 00:13:06,059
+Yani dosya taşımaya yarıyor.
+
+151
+00:13:06,059 --> 00:13:07,059
+Move aslında.
+
+152
+00:13:07,059 --> 00:13:09,059
+Cat de dosyaların içeriğine
+
+153
+00:13:09,059 --> 00:13:10,059
+ekrana yazısını.
+
+154
+00:13:10,059 --> 00:13:13,059
+Terminal ekranında Cat yazıp dosyatını verirseniz
+
+155
+00:13:13,059 --> 00:13:15,059
+bu dosyayı açıp içeriğine Terminal yazıyor.
+
+156
+00:13:15,059 --> 00:13:17,059
+Yani bir editor ile açmak yerine Terminal
+
+157
+00:13:17,059 --> 00:13:19,059
+ekranına içeriğine yazabiliyorsunuz Cat'te.
+
+158
+00:13:19,059 --> 00:13:24,059
+Nano'da Terminal ekranının text editoru olarak
+
+159
+00:13:24,059 --> 00:13:25,059
+düşünebilirsiniz.
+
+160
+00:13:25,059 --> 00:13:27,059
+Direkt hiçbir editor kullanmadan Terminal ekranını
+
+161
+00:13:27,059 --> 00:13:29,059
+güncellemek isterseniz kullanacağınız bir
+
+162
+00:13:29,059 --> 00:13:30,059
+komut.
+
+163
+00:13:30,059 --> 00:13:31,059
+Unutu kullanıyorsunuz.
+
+164
+00:13:31,059 --> 00:13:32,059
+Verginizi kullanıyorsunuz.
+
+165
+00:13:32,059 --> 00:13:34,059
+Bu komutlar mutlaka kullanacaksınızdır.
+
+166
+00:13:34,059 --> 00:13:35,059
+Mutlaka işe kullanacaksınız.
+
+167
+00:13:36,059 --> 00:13:37,059
+Şimdi mutlaka ayıracaktır.
+
+168
+00:13:37,059 --> 00:13:40,059
+O yüzden en temelinde bunlara başlayalım.
+
+169
+00:13:40,059 --> 00:13:44,059
+Şöyle öncelikle JD ile başlayalım.
+
+170
+00:13:44,059 --> 00:13:47,059
+Şu işaretin de tilde arkadaşlar.
+
+171
+00:13:47,059 --> 00:13:50,059
+Enter'ın hemen yanında bulunan tuşla yapabiliyorsunuz.
+
+172
+00:13:50,059 --> 00:13:52,059
+Altıya basarak yapabiliyorsunuz.
+
+173
+00:13:52,059 --> 00:13:55,059
+Altı ve şu an benim klavye turçayı L6'a sahip.
+
+174
+00:13:55,059 --> 00:13:57,059
+Altıya basarak o işaret yapabiliyorsunuz.
+
+175
+00:13:57,059 --> 00:14:00,059
+Bu aslında sizin bu buluntudaki home
+
+176
+00:14:00,059 --> 00:14:04,059
+direktörünüzü götüren işaret.
+
+177
+00:14:04,059 --> 00:14:07,059
+Bastığın zaman şu an home direktörü değil.
+
+178
+00:14:07,059 --> 00:14:09,059
+Bakalım bu da hangi dosyalarım var?
+
+179
+00:14:09,059 --> 00:14:11,059
+Aslında home direktörümde benim desktop'um var.
+
+180
+00:14:11,059 --> 00:14:13,059
+Downloads indirilener klasörüm var.
+
+181
+00:14:13,059 --> 00:14:16,059
+Burada bir tane klasör koymuşum.
+
+182
+00:14:16,059 --> 00:14:18,059
+Diğerleri default klasörler.
+
+183
+00:14:18,059 --> 00:14:20,059
+Tuzak, HTML diye bir şey oluşturmuşum.
+
+184
+00:14:20,059 --> 00:14:21,059
+Mutlaka.
+
+185
+00:14:21,059 --> 00:14:24,059
+Bir şimsyonlere güvenilen kalan bir HTML dosyası.
+
+186
+00:14:24,059 --> 00:14:27,059
+Buradan yavaş yavaş gitmeye başlayalım.
+
+187
+00:14:27,059 --> 00:14:28,059
+Çok temel anlatıyorum arkadaşlar.
+
+188
+00:14:28,059 --> 00:14:30,059
+Çünkü hiç kullanmayan arkadaşınız vardır.
+
+189
+00:14:30,059 --> 00:14:32,059
+Belki çok iyi bilendiğiniz de vardır.
+
+190
+00:14:32,059 --> 00:14:34,059
+Onlara çok basit geliyor olabilir ama
+
+191
+00:14:34,059 --> 00:14:38,059
+her zaman en baştan başlamak ya baş baş başlamak en sağlıklısıdır.
+
+192
+00:14:38,059 --> 00:14:40,059
+Şu an desktop'a geldim.
+
+193
+00:14:40,059 --> 00:14:42,059
+Tekrar list yapıyorum.
+
+194
+00:14:42,059 --> 00:14:44,059
+L6 yazdığınızda şu an mevcut ayırtırdık.
+
+195
+00:14:44,059 --> 00:14:46,059
+Her şeyi görebiliyorsunuz.
+
+196
+00:14:46,059 --> 00:14:48,059
+Şöyle sunumu iki saniye aşağı indiriyorum.
+
+197
+00:14:48,059 --> 00:14:51,860
+Evet gördüğünüz gibi bunlar.
+
+198
+00:14:51,860 --> 00:14:53,860
+Benim desktop'umda bulunan klasörler.
+
+199
+00:14:53,860 --> 00:14:57,860
+Hepsi burada listeden bir şekilde.
+
+200
+00:14:57,860 --> 00:14:59,860
+Şimdi tekrar sunuma dönüyorum.
+
+201
+00:14:59,860 --> 00:15:01,860
+Başka ne komutlarımız vardı?
+
+202
+00:15:01,860 --> 00:15:11,500
+Bir tane direktör oluşturalım.
+
+203
+00:15:11,500 --> 00:15:21,100
+Gördüğünüz gibi sample dir diye yeni bir direktör oluşturuldu.
+
+204
+00:15:21,100 --> 00:15:24,100
+Bu direktörün içine girelim.
+
+205
+00:15:24,100 --> 00:15:28,860
+Şöyle taba basarak bunu da tamamlayabiliyorsunuz.
+
+206
+00:15:28,860 --> 00:15:30,860
+Aynısından mesela Hanawa Shell var.
+
+207
+00:15:30,860 --> 00:15:33,860
+Shell'e basarsanız, SH taba basarsanız.
+
+208
+00:15:33,860 --> 00:15:37,860
+İki tane olduğu için onların ortak olan kısmına kadar kısım dolduruyor.
+
+209
+00:15:37,860 --> 00:15:40,860
+Her yazı taba basarsanız tamamına gidebiliyorsunuz.
+
+210
+00:15:40,860 --> 00:15:42,860
+Buradan sample direk gidelim.
+
+211
+00:15:42,860 --> 00:15:47,259
+Şimdi buraya bir tane klasörün alt içine girdik.
+
+212
+00:15:47,259 --> 00:15:51,759
+Buraya bir tane dosya oluşturalım.
+
+213
+00:15:51,759 --> 00:15:53,759
+Dosyamız olduğu da sample text olsun.
+
+214
+00:15:53,759 --> 00:15:55,759
+Böyle bir dosya oluşturduk.
+
+215
+00:15:55,759 --> 00:15:59,460
+Gördüğünüz gibi bir tane dosyamız oluştu.
+
+216
+00:15:59,460 --> 00:16:03,460
+Şimdi list komutunun farklı parametreleri var.
+
+217
+00:16:03,460 --> 00:16:05,460
+Bunu şu şekilde bakabiliyorsunuz.
+
+218
+00:16:05,460 --> 00:16:07,460
+Man manual demek arkadaşlar.
+
+219
+00:16:07,460 --> 00:16:08,460
+Manual biliyorsunuz.
+
+220
+00:16:08,460 --> 00:16:10,460
+İngilizce kılavuz demek aslında.
+
+221
+00:16:10,460 --> 00:16:14,460
+Man ls yazdığınız zaman böyle kocaman bir liste önünüze geliyor.
+
+222
+00:16:14,460 --> 00:16:20,460
+Bu aslında bu ütülte fonksiyonunun bütün parametrelerini açıp inceleyebileceğiniz bir rehber aslında.
+
+223
+00:16:20,460 --> 00:16:22,460
+Buradan parametrelere bakabiliyorsunuz.
+
+224
+00:16:22,460 --> 00:16:23,460
+Mesela ne varmış?
+
+225
+00:16:23,460 --> 00:16:25,460
+ls çizgi a diye parametresi varmış.
+
+226
+00:16:25,460 --> 00:16:28,460
+Ls'nin yanına option yazıyor.
+
+227
+00:16:28,460 --> 00:16:32,460
+Çizgi a'yı eklerseniz aslında bu optionu çalıştırıyorsunuz.
+
+228
+00:16:32,460 --> 00:16:36,460
+Do not ignore entry starting with dot demiş.
+
+229
+00:16:36,460 --> 00:16:39,460
+Yani bütün şeyleri ekleyebiliyorsunuz.
+
+230
+00:16:39,460 --> 00:16:41,460
+Bütün her şeyi listelebiliyorsunuz.
+
+231
+00:16:41,460 --> 00:16:45,460
+Burada farklı filetiklerinizi listelemenize sağlayan fonksiyonlar var.
+
+232
+00:16:45,460 --> 00:16:47,460
+Burayı açıp okuyabiliyorsunuz bu şekilde.
+
+233
+00:16:47,460 --> 00:16:50,460
+İhtiyacınız yönelik ls'yi komutanizebiliyorsunuz.
+
+234
+00:16:50,460 --> 00:16:53,460
+Ben şöyle q'yla çıktım.
+
+235
+00:16:53,460 --> 00:16:55,460
+Şimdi şey yapmak istiyorum.
+
+236
+00:16:55,460 --> 00:16:57,460
+Size farklı bir listeleme yöntemini göstereyim.
+
+237
+00:16:57,460 --> 00:17:01,220
+Mesela burada izinlerini de görüyoruz.
+
+238
+00:17:01,220 --> 00:17:03,220
+Hangi kullanıcı?
+
+239
+00:17:03,220 --> 00:17:06,220
+Hangi kullanıcının erişebildiğini de görebiliyorsunuz.
+
+240
+00:17:06,220 --> 00:17:07,220
+Bu simple text aslında.
+
+241
+00:17:07,220 --> 00:17:10,220
+Paralaz kullanıcısı yazıma ve okuma hakkına sahip.
+
+242
+00:17:10,220 --> 00:17:12,220
+Madem bu aktora sahibiz biz bir şeyler yazabiliriz dosyaya.
+
+243
+00:17:12,220 --> 00:17:13,220
+Yazalım.
+
+244
+00:17:13,220 --> 00:17:15,220
+Bizim komutlarımız vardı.
+
+245
+00:17:15,220 --> 00:17:17,220
+Önce cat'le bakalım.
+
+246
+00:17:17,220 --> 00:17:19,220
+Cat'le dosya içeriğine bakabiliyoruz demiştik.
+
+247
+00:17:19,220 --> 00:17:21,220
+Hiçbir şey yazmadı çünkü dosyamız ki boş.
+
+248
+00:17:21,220 --> 00:17:23,220
+Böyle bir tane törümüz vardı bizim.
+
+249
+00:17:23,220 --> 00:17:24,220
+Neydi?
+
+250
+00:17:24,220 --> 00:17:25,220
+Nano.
+
+251
+00:17:25,220 --> 00:17:28,220
+Nano'yla girip text dosyasının içerisindeyiz.
+
+252
+00:17:28,220 --> 00:17:30,220
+Bir tane dosyamız var.
+
+253
+00:17:30,220 --> 00:17:32,220
+Bir tane dosyamız var.
+
+254
+00:17:32,220 --> 00:17:34,220
+Bir tane dosyamız var.
+
+255
+00:17:34,220 --> 00:17:36,220
+Bir tane dosyamız var.
+
+256
+00:17:36,220 --> 00:17:40,220
+Bir text dosyasının içerisinde, text ternen ekranından...
+
+257
+00:17:40,220 --> 00:17:46,539
+...bir şeyler yazabiliyoruz örneğin.
+
+258
+00:17:46,539 --> 00:17:53,400
+Böyle bir metnimiz olsun.
+
+259
+00:17:53,400 --> 00:17:57,059
+Bunu kaydedelim.
+
+260
+00:17:57,059 --> 00:17:59,059
+Bir daha cat yazıyorum.
+
+261
+00:17:59,059 --> 00:18:02,059
+İçerisindeki örneği yazıyor gördüğünüz gibi.
+
+262
+00:18:02,059 --> 00:18:04,059
+Tamam mı?
+
+263
+00:18:04,059 --> 00:18:06,059
+Şimdi buraya bir tane daha oluşturalım dosya.
+
+264
+00:18:06,059 --> 00:18:10,970
+Ve iki tane dosyamız var.
+
+265
+00:18:10,970 --> 00:18:12,970
+Şimdi bir üst klasör'e çıkmayı deneyelim.
+
+266
+00:18:12,970 --> 00:18:14,970
+Üst klasör arkadaşlar...
+
+267
+00:18:14,970 --> 00:18:16,970
+...cd2.dotları çıkabiliyorsunuz.
+
+268
+00:18:16,970 --> 00:18:18,970
+Üst klasör'e çıkıyoruz.
+
+269
+00:18:18,970 --> 00:18:20,970
+Zaten temel ekranı da görüyorsunuz.
+
+270
+00:18:22,970 --> 00:18:25,970
+Buraya çıktıktan sonra bu direktörü silmeye çalışalım.
+
+271
+00:18:25,970 --> 00:18:31,650
+Bakın hata veriyor zaten diyor ki,
+
+272
+00:18:31,650 --> 00:18:33,650
+Direktörü boş değil diyor.
+
+273
+00:18:33,650 --> 00:18:35,650
+Direktörü silmemiz, içerisindeki silmemiz gerekiyor.
+
+274
+00:18:35,650 --> 00:18:37,650
+Rm'dir sadece boş direktör üresimimizi sağlıyor.
+
+275
+00:18:37,650 --> 00:18:39,650
+Boş klasör üresimimizi sağlıyor.
+
+276
+00:18:39,650 --> 00:18:44,500
+O zaman içerisinde bu yapmamız gerekiyor.
+
+277
+00:18:44,500 --> 00:18:45,500
+Onun için ne yapacağız?
+
+278
+00:18:45,500 --> 00:18:54,900
+SampleDrip, Rm, SampleText, Rm, As sildim.
+
+279
+00:18:54,900 --> 00:18:55,900
+Şimdi liste ediyorum içi boş.
+
+280
+00:18:55,900 --> 00:19:01,630
+Üst klasörü çıkıp, Rm'dir şu an sildi.
+
+281
+00:19:01,630 --> 00:19:04,630
+En başa döndük arkadaşlar, hepimiz her şeyi sildik.
+
+282
+00:19:04,630 --> 00:19:06,630
+Peki başka silebilir miydik?
+
+283
+00:19:06,630 --> 00:19:08,630
+Peki içerisinde dolu olan dosya klasörü nasıl silebiliriz?
+
+284
+00:19:08,630 --> 00:19:09,630
+Bunun içinde bir yöntem var.
+
+285
+00:19:09,630 --> 00:19:10,630
+Onun için şunu yapacağız.
+
+286
+00:19:13,630 --> 00:19:15,630
+Bir tane klasör oluşturalım yine.
+
+287
+00:19:15,630 --> 00:19:28,099
+Soru geldi herhalde.
+
+288
+00:19:28,099 --> 00:19:36,099
+Evet aynen öyle.
+
+289
+00:19:36,099 --> 00:19:38,099
+Rm, rf dosyada.
+
+290
+00:19:38,099 --> 00:19:40,509
+O şekilde yapacağız.
+
+291
+00:19:40,509 --> 00:19:50,130
+Şimdi ne hatası verdi?
+
+292
+00:19:50,130 --> 00:19:52,130
+Biz de direktörü, yani direktörü silemiyoruz.
+
+293
+00:19:52,130 --> 00:19:53,130
+O zaman ne yapacağız?
+
+294
+00:19:53,130 --> 00:19:56,569
+Bir saniye yanlış almışım.
+
+295
+00:19:56,569 --> 00:20:02,569
+Gördüğünüz gibi hepsi gitti.
+
+296
+00:20:02,569 --> 00:20:06,569
+Yani klasör silemek için şey yapmamız gerekiyor.
+
+297
+00:20:06,569 --> 00:20:11,569
+Recursif force yapmamız gerekiyor.
+
+298
+00:20:11,569 --> 00:20:18,569
+Bu rf bu klasördeki bütün dosyaları ve klasörleri recursif olarak silin.
+
+299
+00:20:18,569 --> 00:20:19,569
+Yani dosyayı açın.
+
+300
+00:20:19,569 --> 00:20:20,569
+İçerisinde dosya varsa onu da açın.
+
+301
+00:20:20,569 --> 00:20:22,569
+Bütün klasörü açıp açıp.
+
+302
+00:20:22,569 --> 00:20:27,569
+Fayları sile sile, yukarı çıkarak tek tek silmenizi sağlayalım.
+
+303
+00:20:27,569 --> 00:20:28,569
+Tamam mı?
+
+304
+00:20:28,569 --> 00:20:33,569
+Yani içinde dolu olan klasörleri rm, çizgi, rf ve klasörodunu vererek silepliyorsunuz.
+
+305
+00:20:33,569 --> 00:20:36,569
+Aslında bu rm, rf'yi kullanmak çok tehlikeli.
+
+306
+00:20:36,569 --> 00:20:38,569
+Mesela en üst dizine çıktığımızı düşünün.
+
+307
+00:20:38,569 --> 00:20:41,880
+Bu şekilde.
+
+308
+00:20:41,880 --> 00:20:43,880
+Değil mi?
+
+309
+00:20:43,880 --> 00:20:45,880
+Her şeyim burada aslında benim.
+
+310
+00:20:45,880 --> 00:20:50,880
+Şu an rm, rf'yi burada yaparsam benim bütün her şeyim, kimsenin dahil her şey olacak.
+
+311
+00:20:50,880 --> 00:20:55,880
+O yüzden rm, rf'yi kullanmanızı çok dikkatli kullanmanız gerekiyor.
+
+312
+00:20:55,880 --> 00:20:57,880
+Böyle dosyaları klasörleri silerken.
+
+313
+00:20:57,880 --> 00:20:59,880
+Mesela şu an rm, rf'yi alsam her şeyim gidecek.
+
+314
+00:20:59,880 --> 00:21:00,880
+Bütün ekran da kapanacak.
+
+315
+00:21:00,880 --> 00:21:02,880
+O yüzden çok tehlikeli bir komut.
+
+316
+00:21:02,880 --> 00:21:04,880
+Kullarırken dikkat edin.
+
+317
+00:21:04,880 --> 00:21:06,880
+Şimdi tekrar dönelim.
+
+318
+00:21:06,880 --> 00:21:08,880
+Çalışmamıza.
+
+319
+00:21:08,880 --> 00:21:09,880
+Çok oyalanık burada.
+
+320
+00:21:09,880 --> 00:21:12,880
+Ama temel olarak neyi nasıl kullanırdığını herhalde anladınız.
+
+321
+00:21:12,880 --> 00:21:14,880
+Dosya yaşayamları bir kısmı alınızı düşünüyorum.
+
+322
+00:21:14,880 --> 00:21:15,880
+Tek move yapmadım.
+
+323
+00:21:15,880 --> 00:21:17,880
+Bunu siz deneyebilirsiniz.
+
+324
+00:21:18,880 --> 00:21:20,880
+Dosya adı ve dosyanın yeni petini veriyoruz.
+
+325
+00:21:20,880 --> 00:21:22,880
+Ve o şekilde oraya taşınmış oluyor.
+
+326
+00:21:22,880 --> 00:21:25,880
+Bunlara ek olarak belki de copy.
+
+327
+00:21:25,880 --> 00:21:26,880
+CRP komutu var.
+
+328
+00:21:26,880 --> 00:21:28,880
+O da bir dosya kopyalamamız sağlıyor.
+
+329
+00:21:28,880 --> 00:21:30,880
+O da aynı move gibi.
+
+330
+00:21:30,880 --> 00:21:33,880
+Dosya adı ve yeni konum şeklinde verebiliyorsunuz.
+
+331
+00:21:33,880 --> 00:21:35,880
+Kullanıcı oluşturma komutları var.
+
+332
+00:21:35,880 --> 00:21:39,880
+Ben istim sistemini çok karıştırmamak için yeni kullanıcı eklemeyeceğim.
+
+333
+00:21:39,880 --> 00:21:42,880
+Bunu siz denersiniz ama şunu bilmenizde fayda var.
+
+334
+00:21:42,880 --> 00:21:44,880
+Yeni kullanıcı oluşturmak için,
+
+335
+00:21:44,880 --> 00:21:48,880
+eğer kullanıcınız, şu anki mevsim kullanıcının yetkisi yoksa sudo yazmak zorundasınız değil.
+
+336
+00:21:48,880 --> 00:21:51,880
+Sudo yazıp admin ile giriş yapmanız gerekiyor.
+
+337
+00:21:51,880 --> 00:21:55,880
+Çünkü kullanıcı oluşturma sudo etkisi gerektiren bir komut.
+
+338
+00:21:55,880 --> 00:22:00,880
+Sudo user add komutunu yazıp user name'ini girip
+
+339
+00:22:00,880 --> 00:22:05,880
+üstteki komutla ve parametrelerle kullanıcı oluşturabiliyorsunuz.
+
+340
+00:22:05,880 --> 00:22:06,880
+Kullanıcı oluşturmak tabii ki yeterli.
+
+341
+00:22:06,880 --> 00:22:08,880
+Kullanıcı yetkilerini tanımamız gerekiyor.
+
+342
+00:22:08,880 --> 00:22:10,880
+Bunun için user mode devreye giriyor.
+
+343
+00:22:10,880 --> 00:22:13,880
+User mode'da da kullanıcıya yetki verebiliyoruz.
+
+344
+00:22:13,880 --> 00:22:15,880
+Veya kullanıcı gruplarına atayabiliyoruz.
+
+345
+00:22:15,880 --> 00:22:21,880
+Kullanıcı silmede aynı şekilde user add gibi user der ve çizgi R ile.
+
+346
+00:22:21,880 --> 00:22:24,880
+Bir de çizgi R ve çizgi F var.
+
+347
+00:22:24,880 --> 00:22:27,880
+Bu çizgi F failler ile beraber sil demek.
+
+348
+00:22:27,880 --> 00:22:31,880
+Bazen kullanıcıları silip dosyalarını silmek istemeyebilirsiniz.
+
+349
+00:22:31,880 --> 00:22:33,880
+Mesela şirketiniz var.
+
+350
+00:22:33,880 --> 00:22:36,880
+Şirketinizde bir X kişisinin işten ayrılmasını istediniz.
+
+351
+00:22:36,880 --> 00:22:39,880
+İşten ayrıldı ve o kişiselerde kullanıcı bildiğini silmek istediniz.
+
+352
+00:22:39,880 --> 00:22:40,880
+Yapta çalışmalarını silmek istemediniz.
+
+353
+00:22:40,880 --> 00:22:47,880
+O yüzden bu tarz farklı silme komutları karşısız çıkar kullanmanız gerekebilir.
+
+354
+00:22:47,880 --> 00:22:49,880
+Demiştim size kullanıcı grupları vardı.
+
+355
+00:22:49,880 --> 00:22:51,880
+Kullanıcılar belli gruplara ait olabilir.
+
+356
+00:22:51,880 --> 00:22:53,880
+Bu bütün işlem sistemine temeldir aslında.
+
+357
+00:22:53,880 --> 00:22:54,880
+Windows'ta da vardır.
+
+358
+00:22:54,880 --> 00:22:56,880
+Ama çok sık kullanmayız.
+
+359
+00:22:56,880 --> 00:22:57,880
+Kendi servise adınıza.
+
+360
+00:22:57,880 --> 00:23:00,880
+Çünkü gelen tek veya iki kişi kullanıcılar olur.
+
+361
+00:23:00,880 --> 00:23:03,880
+Ama kullanıcı grupları oluşturduğunuzu bilin.
+
+362
+00:23:03,880 --> 00:23:05,880
+Örnek vereyim.
+
+363
+00:23:05,880 --> 00:23:09,880
+Mesela şu anda benim kullanıcım adı Paralaz.
+
+364
+00:23:09,880 --> 00:23:11,880
+Paralaz kullanıcım var.
+
+365
+00:23:11,880 --> 00:23:14,880
+Ad, Paralaz, Paralaz VirtualBox platform gibi.
+
+366
+00:23:14,880 --> 00:23:18,880
+Bu benim VirtualBox platform yazan ilk kısım.
+
+367
+00:23:18,880 --> 00:23:20,880
+Bu arada benim muhaseleketlerimi görüyorsunuzdur herhalde.
+
+368
+00:23:20,880 --> 00:23:24,880
+Bu kullanıcı grubu Paralaz'da kullanıcım olmuş oluyor.
+
+369
+00:23:24,880 --> 00:23:29,880
+Bu şekilde gruplar oluşturabiliyorsunuz.
+
+370
+00:23:29,880 --> 00:23:34,880
+Şu atıcı komutu da şu anki aynı grubun ait olduğuma erişebiliyorsunuz.
+
+371
+00:23:34,880 --> 00:23:35,880
+Ama ben çalıştırmayacağım bunu.
+
+372
+00:23:35,880 --> 00:23:37,880
+Siz denersiniz.
+
+373
+00:23:37,880 --> 00:23:42,880
+Grub del ile de, user add user del gibi grub add grub del ile de grupları silebiliyorsunuz.
+
+374
+00:23:44,880 --> 00:23:46,880
+Şimdi burası daha önemli kısım.
+
+375
+00:23:46,880 --> 00:23:53,880
+Siz dosyaları oluşturduğunuzda dosyalarınızın her zaman tüm yetkileri kullanamayabilirsiniz.
+
+376
+00:23:53,880 --> 00:23:56,880
+Dosyaları siz oluşturmuş olsanız daha iyi.
+
+377
+00:23:56,880 --> 00:24:02,880
+Bunun nedeni dosyaların gerekli yetkiye sahip olmamasıdır.
+
+378
+00:24:02,880 --> 00:24:05,880
+Burada mesela yetkiye vermek için chmod komutunu kullanıyoruz.
+
+379
+00:24:05,880 --> 00:24:07,880
+Örneğin bir dosyalar oluşturduğunuz ve yetki vermek istiyorsunuz.
+
+380
+00:24:07,880 --> 00:24:15,880
+Chmod ile bu dosyanın kimlerini, hangi grupların veya başka kullanıcılar varsa, guest gibi,
+
+381
+00:24:15,880 --> 00:24:18,880
+onları tanımlayabiliyorsunuz burada.
+
+382
+00:24:18,880 --> 00:24:20,880
+Burada 7, 7, 7 var.
+
+383
+00:24:20,880 --> 00:24:25,880
+Her bir 7, her bir aktör için tanımlanmış bir sayı.
+
+384
+00:24:25,880 --> 00:24:27,880
+Peki neden 7?
+
+385
+00:24:27,880 --> 00:24:29,880
+8 olabilir mi? 9 olabilir mi?
+
+386
+00:24:29,880 --> 00:24:31,880
+Ya da 1, 2, 3 olabilir mi?
+
+387
+00:24:31,880 --> 00:24:33,880
+Bir fikir olan var mı?
+
+388
+00:24:33,880 --> 00:24:35,880
+7 çok güzel bir sayı aslında yani.
+
+389
+00:24:35,880 --> 00:24:37,880
+7 ne demek?
+
+390
+00:24:37,880 --> 00:24:39,880
+Bir fikir olan var mı?
+
+391
+00:24:39,880 --> 00:24:48,789
+Okuma izni mi?
+
+392
+00:24:48,789 --> 00:24:50,789
+7 sadece okuma izni mi veriyor sizce?
+
+393
+00:24:50,789 --> 00:24:52,789
+7 ne olabilir?
+
+394
+00:24:52,789 --> 00:24:54,789
+8 bit mi diyorsun?
+
+395
+00:24:54,789 --> 00:24:56,789
+3 bit, tamam güzel.
+
+396
+00:24:56,789 --> 00:24:58,789
+3 bit ve ki her bir bit neyi ifade ediyor?
+
+397
+00:24:58,789 --> 00:25:02,740
+Her bir bit neyi ifade edebilir sizin için?
+
+398
+00:25:02,740 --> 00:25:04,740
+2, 3, 8 yaptı.
+
+399
+00:25:04,740 --> 00:25:07,740
+0'dan 7'ye kadar sayılarla bunları tanımlayabildik.
+
+400
+00:25:07,740 --> 00:25:09,740
+Okuma yazma değil mi?
+
+401
+00:25:09,740 --> 00:25:11,740
+Evet doğru.
+
+402
+00:25:11,740 --> 00:25:19,740
+Sonunda gördüğünüz ilk ifade dosyanın tipi.
+
+403
+00:25:19,740 --> 00:25:21,740
+Bu da L'de, Simlink.
+
+404
+00:25:21,740 --> 00:25:25,740
+Aslında benim root'um virtualbox olduğu için Simlink'le ifade edilmiş.
+
+405
+00:25:25,740 --> 00:25:27,740
+Pardon, Simlink'le ifade edilmiş.
+
+406
+00:25:27,740 --> 00:25:29,740
+D ile başlayanlar direktörü.
+
+407
+00:25:29,740 --> 00:25:31,740
+Çizgi olanlar da dosyalar aslında.
+
+408
+00:25:31,740 --> 00:25:33,740
+Değil mi?
+
+409
+00:25:33,740 --> 00:25:35,740
+Benim 2 tane direktörüm varmış.
+
+410
+00:25:35,740 --> 00:25:37,740
+Shellprog ve Shellprog 1'de.
+
+411
+00:25:37,740 --> 00:25:41,740
+Çünkü o ekran görüntüsünü çektiğinde bu dosyada zaten açıkmış.
+
+412
+00:25:41,740 --> 00:25:43,740
+Yani ben o kıra sonra kaçmışım.
+
+413
+00:25:43,740 --> 00:25:45,740
+O yüzden arka da yeşil.
+
+414
+00:25:45,740 --> 00:25:47,740
+Böyle bir liste var.
+
+415
+00:25:47,740 --> 00:25:49,740
+Onu hemen göstereyim size.
+
+416
+00:25:49,740 --> 00:25:54,940
+Kendi ekranımdan da.
+
+417
+00:25:54,940 --> 00:25:56,940
+Bakın arkadaşlar, bu benim dosyalarım gözüküyor.
+
+418
+00:25:56,940 --> 00:26:00,940
+Mesela burada examples.desktop.
+
+419
+00:26:00,940 --> 00:26:02,940
+Bazı yetkileri yokmuş mesela.
+
+420
+00:26:02,940 --> 00:26:04,940
+Test varmış, onun da yetkileri yok.
+
+421
+00:26:04,940 --> 00:26:07,940
+Yanlarında da aslında yetki rakamları yazıyor.
+
+422
+00:26:08,940 --> 00:26:10,940
+Pardon, onlar yetki rakamları değil.
+
+423
+00:26:10,940 --> 00:26:13,940
+Onlar her konumları tam emin değilim.
+
+424
+00:26:13,940 --> 00:26:15,940
+Şimdi girelim desktop'a.
+
+425
+00:26:15,940 --> 00:26:23,660
+Burada mesela Shell 1 diye bir şey var.
+
+426
+00:26:23,660 --> 00:26:25,660
+Orada ne varmış ben de bilmiyorum.
+
+427
+00:26:25,660 --> 00:26:27,660
+Burada bir şey yok.
+
+428
+00:26:27,660 --> 00:26:31,769
+SH2020 idi.
+
+429
+00:26:31,769 --> 00:26:42,599
+Bakın burada bir dosya diye bir dosyamız var.
+
+430
+00:26:42,599 --> 00:26:43,599
+Görüyor musun?
+
+431
+00:26:43,599 --> 00:26:48,599
+Mesela bunun dosya tipi dash koymuşuz burada.
+
+432
+00:26:48,599 --> 00:26:51,599
+İlk işaretçiye bu dosya tipi dosya yani.
+
+433
+00:26:51,599 --> 00:26:53,599
+Direktör değil, onu gösteriyor.
+
+434
+00:26:53,599 --> 00:26:55,599
+Sonra read, write var, bir tre var.
+
+435
+00:26:55,599 --> 00:26:58,599
+Yani benim burayı okuma, yazma hakkım var.
+
+436
+00:26:58,599 --> 00:27:00,599
+Ama execute hakkım yok demek bu.
+
+437
+00:27:00,599 --> 00:27:04,200
+Mesela bunu değiştirelim.
+
+438
+00:27:04,200 --> 00:27:09,079
+sudo chmod.
+
+439
+00:27:09,079 --> 00:27:15,980
+Şimdi buraya şifre mi girmem gerekiyor?
+
+440
+00:27:15,980 --> 00:27:17,980
+Girdim.
+
+441
+00:27:17,980 --> 00:27:21,980
+Gördüğünüz gibi bir dosya tx de bütün haklara şu an sahip.
+
+442
+00:27:21,980 --> 00:27:26,980
+Hem kullanıcım için hem kullanıcım olduğu grup için hem de diğer şarkıs için sahip oldu.
+
+443
+00:27:26,980 --> 00:27:27,980
+Hakka sahip oldu.
+
+444
+00:27:27,980 --> 00:27:28,980
+Başka bir mod verelim.
+
+445
+00:27:28,980 --> 00:27:38,599
+Gördüğünüz gibi execute hakkı olmayan.
+
+446
+00:27:38,599 --> 00:27:45,599
+Yani sadece benim kullanımımın execute hakkı olduğu ve diğerlerinin execute hakkı olduğu bir konuma geldik.
+
+447
+00:27:45,599 --> 00:27:46,599
+Dosta için.
+
+448
+00:27:46,599 --> 00:27:48,599
+Bu da böyle bir komut.
+
+449
+00:27:48,599 --> 00:27:50,599
+Bunu çok kullanmanız gerekebilir.
+
+450
+00:27:50,599 --> 00:27:53,599
+Özellikle permission denied hatasını görürseniz bir tek yazma okuma işlerinde.
+
+451
+00:27:53,599 --> 00:28:01,599
+Bu bilin ki dosyanızın okuma yazma hakkı olmadığı için bunu da burada chmod komutuyla verebiliyoruz.
+
+452
+00:28:01,599 --> 00:28:03,599
+Şimdi başlayalım.
+
+453
+00:28:03,599 --> 00:28:10,599
+Mevcut bulunduğum dizinde benim burada esin için hazırladığım share komutları var.
+
+454
+00:28:10,599 --> 00:28:12,599
+İlk share komutu aslında.
+
+455
+00:28:12,599 --> 00:28:14,599
+Bakalım temel ekranından.
+
+456
+00:28:14,599 --> 00:28:17,599
+Sonunda gördüğünüz komutun aynısı.
+
+457
+00:28:17,599 --> 00:28:20,599
+Bunu çalıştıralım.
+
+458
+00:28:20,599 --> 00:28:28,599
+Çalıştırmak için dizindeki share dosyasını, executable dosyayı çalıştırmak için nokta ve slash koyuyoruz arkadaşlar.
+
+459
+00:28:28,599 --> 00:28:29,599
+Şu an ekranda gördüğünüz gibi.
+
+460
+00:28:29,599 --> 00:28:32,599
+Herhangi bir komuta ihtiyaç yok yani text anlamda komuta ihtiyaç yok.
+
+461
+00:28:32,599 --> 00:28:34,599
+Sadece şu iki karakterle çalıştırabiliyoruz.
+
+462
+00:28:34,599 --> 00:28:39,599
+Bu share scriptini çalıştırıyorum şu anda ve ekranı önce temizledi.
+
+463
+00:28:39,599 --> 00:28:41,599
+Daha sonra hello world yazdı.
+
+464
+00:28:41,599 --> 00:28:43,599
+Komantları bulamadı.
+
+465
+00:28:43,599 --> 00:28:44,599
+Şimdi şöyle çalıştıralım.
+
+466
+00:28:44,599 --> 00:28:45,599
+Önce ekranı temizledi.
+
+467
+00:28:45,599 --> 00:28:46,599
+Sonra hello world yazdı.
+
+468
+00:28:46,599 --> 00:28:50,599
+Eko aslında sizin C program dilinden bildiğiniz printer.
+
+469
+00:28:50,599 --> 00:28:53,599
+Program şu an hello world yazısını ekrana basıyor.
+
+470
+00:28:53,599 --> 00:29:06,599
+Share program dilinde böyle parantezler, noktalar, ilgiler gibi CD olmayan çok daha basit, çok daha sade bir sintaks var.
+
+471
+00:29:06,599 --> 00:29:11,599
+O yüzden işinizi bir anı çok kolaylaştırıyor ve share scriptini okumanız çok daha kolay oluyor.
+
+472
+00:29:11,599 --> 00:29:15,599
+Şimdi bir ikinci örneğimize geçelim.
+
+473
+00:29:15,599 --> 00:29:19,599
+İkinci örneğimizde bir Eko örneği var.
+
+474
+00:29:19,599 --> 00:29:21,599
+Şimdi Eko'nun printf olduğunu söylemiştim size.
+
+475
+00:29:22,599 --> 00:29:23,599
+Çalıştıralım.
+
+476
+00:29:23,599 --> 00:29:24,599
+Hatta önce şeye bakalım.
+
+477
+00:29:24,599 --> 00:29:31,210
+Dosyan içeriği bu.
+
+478
+00:29:31,210 --> 00:29:33,519
+Şöyle göstereyim.
+
+479
+00:29:33,519 --> 00:29:35,519
+Aynı sunumdaki gibi arkadaşlar.
+
+480
+00:29:35,519 --> 00:29:36,519
+Ama bir fark var.
+
+481
+00:29:36,519 --> 00:29:41,519
+Size sunumu paylaşacağım ama sunumdan aldığınız şeyi doğrudan kopyatıp çalıştıramayabilirsiniz.
+
+482
+00:29:41,519 --> 00:29:44,519
+Ya da çalıştırırsanız bile ben de kendi sunucu alamayabilirsiniz.
+
+483
+00:29:44,519 --> 00:29:45,519
+Nedeni?
+
+484
+00:29:45,519 --> 00:29:49,519
+Sunumdaki tırnaklarla benim bu ilk kulağımın tırnaklar farklı.
+
+485
+00:29:49,519 --> 00:29:51,519
+Ben buna lütfen dikkat edin.
+
+486
+00:29:51,519 --> 00:29:56,119
+Şimdi çalıştıralım komutumuzu.
+
+487
+00:29:56,119 --> 00:30:02,299
+Gördüğünüz gibi Eko perhaba user.
+
+488
+00:30:02,299 --> 00:30:04,299
+User dediğimize bir değişken aslında.
+
+489
+00:30:04,299 --> 00:30:06,299
+Sistem değişkeni bir sonraki sayede göreceksiniz.
+
+490
+00:30:06,299 --> 00:30:08,299
+Şu anda mevcut kullanıcımı ekrana yazdırdı.
+
+491
+00:30:08,299 --> 00:30:11,299
+Sonra bugünün tarihini yazdırdı.
+
+492
+00:30:11,299 --> 00:30:13,299
+Gördüğünüz gibi.
+
+493
+00:30:13,299 --> 00:30:17,299
+Bugünün date time'ını yazdı aslında.
+
+494
+00:30:17,299 --> 00:30:20,299
+Dating değil sadece.
+
+495
+00:30:20,299 --> 00:30:22,299
+Yani saat ile beraber yazdırdı.
+
+496
+00:30:22,299 --> 00:30:24,299
+Dates ile date time arasında bir fark var.
+
+497
+00:30:24,299 --> 00:30:26,299
+Date günü ifade eder.
+
+498
+00:30:26,299 --> 00:30:29,299
+Sadece güne kadar gösterir ama date time saatin saniyesine kadar gösterir.
+
+499
+00:30:29,299 --> 00:30:32,299
+Burada date time gösteriyor.
+
+500
+00:30:32,299 --> 00:30:41,529
+Burada bir hata var arkadaşlar.
+
+501
+00:30:41,529 --> 00:30:45,289
+Ona hemen bakalım.
+
+502
+00:30:45,289 --> 00:30:46,289
+Bir hata varmış burada.
+
+503
+00:30:46,289 --> 00:30:48,289
+Şu da noktalı bir gülden kaynaklı mı?
+
+504
+00:30:48,289 --> 00:30:50,289
+Şu boşlu koymamışız şuraya.
+
+505
+00:30:50,289 --> 00:30:58,980
+O yüzden düzgün hissediyiz cevabı alamadık.
+
+506
+00:30:58,980 --> 00:31:00,980
+Tırnak hatası da var.
+
+507
+00:31:00,980 --> 00:31:14,309
+Onu da düzeltelim.
+
+508
+00:31:14,309 --> 00:31:15,309
+Tamam.
+
+509
+00:31:15,309 --> 00:31:16,309
+Kulağınız sayısı bir tane var.
+
+510
+00:31:16,309 --> 00:31:17,309
+Takvimi de yazmadı.
+
+511
+00:31:17,309 --> 00:31:19,309
+Onun nedeni de bakalım.
+
+512
+00:31:19,309 --> 00:31:21,309
+Olamazsak siz bakarsınız.
+
+513
+00:31:21,309 --> 00:31:25,490
+Bu versiyondan kaynaklı olabilir.
+
+514
+00:31:25,490 --> 00:31:27,490
+Bende ekşişer versiyonuyla bu ekşişer versiyonu farklı olabilir.
+
+515
+00:31:27,490 --> 00:31:29,490
+O yüzden de yazmamış olabilir.
+
+516
+00:31:29,490 --> 00:31:31,490
+Çünkü bu contu geçen sene yazmıştım.
+
+517
+00:31:31,490 --> 00:31:33,490
+Farklı ortamda.
+
+518
+00:31:33,490 --> 00:31:37,490
+Ona bakarsanız arkadaşlar şu calendar'ı neden çalışmıyor siz bakarsınız.
+
+519
+00:31:37,490 --> 00:31:39,490
+Tamam.
+
+520
+00:31:39,490 --> 00:31:42,769
+Çıkıyorum buradan.
+
+521
+00:31:42,769 --> 00:31:47,769
+Burada sadece şu sistem değişikliğini sizin yeni gördüğünüz bir şey.
+
+522
+00:31:47,769 --> 00:31:49,769
+Bir de şu ekonomisyonda ters slash j var.
+
+523
+00:31:49,769 --> 00:31:51,769
+Bunun ne anlama geldiğini bilmiyorsunuz.
+
+524
+00:31:51,769 --> 00:31:55,769
+Bir de son olarak şurada bir pipe işareti var.
+
+525
+00:31:55,769 --> 00:31:56,769
+Tamam.
+
+526
+00:31:56,769 --> 00:31:57,769
+Bu pipe işareti göstereceğim.
+
+527
+00:31:57,769 --> 00:31:58,769
+Bu sadece info ekranıydı.
+
+528
+00:31:58,769 --> 00:32:01,769
+Buradaki görmediği şeyleri bir sürü sayfada göstereceğim size.
+
+529
+00:32:01,769 --> 00:32:04,769
+O yüzden hızlıca geçiyorum.
+
+530
+00:32:04,769 --> 00:32:07,769
+Ekotiplerin farklı ekotipleriniz var arkadaşlar.
+
+531
+00:32:07,769 --> 00:32:10,769
+Farklı printf şeklini kullanabiliyorsunuz.
+
+532
+00:32:10,769 --> 00:32:13,769
+Örneğin şunu çalıştıralım.
+
+533
+00:32:13,769 --> 00:32:15,769
+Bu 0.3.
+
+534
+00:32:15,769 --> 00:32:20,769
+Şu an duymadığınızı muhtemelen ama benim bilgisayarımdan bir ses çıkması gerekiyor.
+
+535
+00:32:20,769 --> 00:32:25,769
+Şu ters slash a şekli muhtemelen zoom'un izin vermesinden kaynaklı.
+
+536
+00:32:25,769 --> 00:32:29,769
+Siz bir deneme yazısı yazıp, şu echo çizgi e.
+
+537
+00:32:29,769 --> 00:32:32,769
+Burada external echo yapıyoruz.
+
+538
+00:32:32,769 --> 00:32:36,769
+Çünkü bizim textimizin içerisinde birtakım belirteşler var.
+
+539
+00:32:36,769 --> 00:32:42,769
+Belirteşler de sizin printf'inize yani ekrana bastığınız echo konusuna yeni özellikler katıyor.
+
+540
+00:32:42,769 --> 00:32:44,769
+Şu ters slash a ağır demek.
+
+541
+00:32:44,769 --> 00:32:47,769
+Yani siz deneme yazıda ekrana bir şey yazdırıp bir de ses çıkartıyorsunuz pikselden.
+
+542
+00:32:47,769 --> 00:32:49,769
+Böyle uyguntuda çok tuhaf sesi var.
+
+543
+00:32:49,769 --> 00:32:50,769
+Bir tepacı duymuşsunuz.
+
+544
+00:32:50,769 --> 00:32:51,769
+Hata mesajı var.
+
+545
+00:32:51,769 --> 00:32:53,769
+O hata mesajını çıkarıyor aslında.
+
+546
+00:32:53,769 --> 00:32:57,769
+İçincisinde kendi önceki bir karakteri siliyor.
+
+547
+00:32:57,769 --> 00:32:59,769
+Üçüncüsüne demiş.
+
+548
+00:32:59,769 --> 00:33:04,769
+Çizgice bir önceki satırı siliyor.
+
+549
+00:33:04,769 --> 00:33:07,769
+Sonraki gelip satır başını açıyor.
+
+550
+00:33:07,769 --> 00:33:09,769
+Gibi gibi diğerinden tav var.
+
+551
+00:33:09,769 --> 00:33:11,769
+Ve şurada en sonuncusunda da.
+
+552
+00:33:11,769 --> 00:33:13,769
+Ters slash ters slash var.
+
+553
+00:33:13,769 --> 00:33:14,769
+Ters slash özel karakter.
+
+554
+00:33:14,769 --> 00:33:16,769
+Siz deneme yazı yazdıktan sonra.
+
+555
+00:33:16,769 --> 00:33:20,769
+Gerçekten ters slash koymak istedirsiniz yazınızın içerisinde.
+
+556
+00:33:20,769 --> 00:33:21,769
+Bunun için de yapmanız lazım.
+
+557
+00:33:21,769 --> 00:33:24,769
+Bir tane daha ters slash atıp escape olarak kullanmanız lazım.
+
+558
+00:33:24,769 --> 00:33:28,769
+Ekonun içerisinde bir şeyler yazdırırken escape karakteriniz.
+
+559
+00:33:28,769 --> 00:33:30,769
+Aynı C'de olduğu gibi bir tane daha slash atıyorsunuz.
+
+560
+00:33:30,769 --> 00:33:32,769
+Böyle escape yapmış oluyorsunuz.
+
+561
+00:33:32,769 --> 00:33:34,769
+Bu konudan oldukça benzer.
+
+562
+00:33:34,769 --> 00:33:37,769
+Şimdi özellikle sistem değişkenlerinden bahsetmiştim.
+
+563
+00:33:37,769 --> 00:33:38,769
+Sistem değişkeni kullanmış.
+
+564
+00:33:38,769 --> 00:33:40,769
+Hatırlarsanız user diye.
+
+565
+00:33:40,769 --> 00:33:43,769
+Benim direkt dolar user yazıp kullanıcı simimi getirmişti.
+
+566
+00:33:43,769 --> 00:33:45,769
+Sistem değişkenleri çok önemli bir konu.
+
+567
+00:33:45,769 --> 00:33:49,769
+Çünkü birçok program sistem değişkenlerini kullanıyor.
+
+568
+00:33:49,769 --> 00:33:51,769
+Ve siz de programları kurarken aslında.
+
+569
+00:33:51,769 --> 00:33:55,769
+Sistem değişkenlerinden kaynaklı sorunlarla karşılaşmış olabilirsiniz.
+
+570
+00:33:55,769 --> 00:33:57,769
+Örneğin Eclipse kuruyorsunuz.
+
+571
+00:33:57,769 --> 00:34:01,769
+Eclipse başta başına bir Java kodunu değerleyemez.
+
+572
+00:34:01,769 --> 00:34:03,769
+Arkada bir Java Virtual Machine gerekiyor.
+
+573
+00:34:03,769 --> 00:34:07,769
+Ve Eclipse'in hangi Java Virtual Machine hangi versiyonunu kullanacağını.
+
+574
+00:34:07,769 --> 00:34:11,769
+Siz aslında sistem değişkenleri üzerinden bildiriyorsunuz Eclipse'e.
+
+575
+00:34:12,769 --> 00:34:15,769
+Belki bakmışsınızca cevap ettiği bir şey var.
+
+576
+00:34:15,769 --> 00:34:16,769
+Aynı şey mesela da.
+
+577
+00:34:16,769 --> 00:34:18,769
+Bilmiyorum Anakon'da kullanan var mı?
+
+578
+00:34:18,769 --> 00:34:19,769
+Anakon'da içine geçerli.
+
+579
+00:34:19,769 --> 00:34:21,769
+Anakon'da hangi Python versiyonunu kullanacağını.
+
+580
+00:34:21,769 --> 00:34:23,769
+Sistem değişkenleri üzerinden bakarak karar veriyor.
+
+581
+00:34:23,769 --> 00:34:28,769
+Yani sistem değişkenleri aslında programların birbirine uyumlu çalışması için çok önemli bir konu.
+
+582
+00:34:28,769 --> 00:34:34,769
+Ve sistem değişkenleri genel olarak büyük hafiflerle ifade ediliyor arkadaşlar.
+
+583
+00:34:34,769 --> 00:34:35,769
+Tamam mı?
+
+584
+00:34:35,769 --> 00:34:36,769
+Mesela burada ne var?
+
+585
+00:34:36,769 --> 00:34:37,769
+PET var.
+
+586
+00:34:37,769 --> 00:34:40,769
+Şu anki mevcut share komutunun nereden çalıştığını gösteren.
+
+587
+00:34:40,769 --> 00:34:42,769
+PET kulesörün konumunu gösteren.
+
+588
+00:34:42,769 --> 00:34:43,769
+PET komutu var.
+
+589
+00:34:43,769 --> 00:34:44,769
+HOME var şu an.
+
+590
+00:34:44,769 --> 00:34:46,769
+HOME kulesörü nerede?
+
+591
+00:34:46,769 --> 00:34:47,769
+Konumu nerede?
+
+592
+00:34:47,769 --> 00:34:49,769
+Column Slides var ekranda görüyorsunuz.
+
+593
+00:34:49,769 --> 00:34:54,769
+Yani bu şu anki temel ekranının default ayarlarını gösteren kısım.
+
+594
+00:34:54,769 --> 00:34:56,769
+Şu an çalıştığımız share dini 5 de mesela.
+
+595
+00:34:56,769 --> 00:34:57,769
+Gibi gibi.
+
+596
+00:34:57,769 --> 00:34:58,769
+Böyle oluyor.
+
+597
+00:34:58,769 --> 00:35:00,769
+Ama sistem değişkenleri genelde büyük hafiflerle başlar.
+
+598
+00:35:00,769 --> 00:35:02,769
+Ve sistemde tanımlı olarak gelir çoğu.
+
+599
+00:35:02,769 --> 00:35:05,769
+Kullancı değişkenleri ise genelde küçük hafiflerle yazılır.
+
+600
+00:35:05,769 --> 00:35:06,769
+Küçük hafiflerle yazılır.
+
+601
+00:35:06,769 --> 00:35:07,769
+Küçük hafiflerle yazılması bir pratiktir aslında.
+
+602
+00:35:07,769 --> 00:35:08,769
+Zorunluluk değildir.
+
+603
+00:35:08,769 --> 00:35:11,769
+Ama küçük hafifler tanımlayarak sistem değişkenleri ayırabiliyoruz.
+
+604
+00:35:11,769 --> 00:35:13,769
+Peki ne iş arıyor bu sistem değişkenleri?
+
+605
+00:35:13,769 --> 00:35:15,769
+Ben hızlıca bir örnek göstereyim.
+
+606
+00:35:15,769 --> 00:35:18,769
+Ben bir tane sistem değişkeni tanımlamıştım aslında.
+
+607
+00:35:18,769 --> 00:35:27,619
+Şöyle şurada ETC kulesöründe environment diye bir dosyan var.
+
+608
+00:35:27,619 --> 00:35:28,619
+Bakın şu marşiyeli ben yazdım.
+
+609
+00:35:28,619 --> 00:35:30,619
+Görüyor musunuz ekranda?
+
+610
+00:35:30,619 --> 00:35:35,619
+Desktop'da SH2020'ye bu benim aslında şu an siz çalıştırdığım direktörüye.
+
+611
+00:35:35,619 --> 00:35:37,619
+Sıkıntılarımı çalıştım direktörünün.
+
+612
+00:35:37,619 --> 00:35:40,619
+Bir değişken atamışım myshall diye.
+
+613
+00:35:40,619 --> 00:35:44,619
+Şöyle yazarak eval cd dollar.
+
+614
+00:35:44,619 --> 00:35:51,119
+Ben büyük hafiflerle yazdım ama size çalıştığını göstermek için iki haftalık yapabilirsiniz.
+
+615
+00:35:51,119 --> 00:35:54,119
+Gittiğimde bakın direkt direktörüme gittim.
+
+616
+00:35:54,119 --> 00:36:02,119
+Eval ile şu an cd myshall ifadesini eval edip şu komutu komple ikili olarak tutuşturabiliyorum.
+
+617
+00:36:02,119 --> 00:36:04,119
+Böyle kullanabilirsiniz.
+
+618
+00:36:04,119 --> 00:36:05,119
+Şu an tabi çok daha zahmetli oldu.
+
+619
+00:36:05,119 --> 00:36:07,119
+Eval cd myshall yazmak.
+
+620
+00:36:07,119 --> 00:36:14,119
+Muhtemelen doğrudan cd yazıp kendi direktörüyle yazmak, manörelerle yazmaktan daha zahmetlidir.
+
+621
+00:36:14,119 --> 00:36:16,119
+Gözükebilirsiniz ama bunu lütfen şey olarak düşünün.
+
+622
+00:36:16,119 --> 00:36:20,119
+Çok daha kompleks şeyleri buraya sıkıştırıp, çok daha kompleks petleri buraya yazıp.
+
+623
+00:36:20,119 --> 00:36:22,119
+Tek bir yerden hepsini değiştirebilirim.
+
+624
+00:36:22,119 --> 00:36:24,119
+İmkanı sunuyoruz size.
+
+625
+00:36:24,119 --> 00:36:28,119
+Ve bu değişkenleri siz az önce skipte gördüğünüz gibi kod içerisinde kullanabiliyorsunuz.
+
+626
+00:36:28,119 --> 00:36:30,119
+Bu çok güzel bir kullanışı kullanışlıyorum.
+
+627
+00:36:30,119 --> 00:36:34,119
+Eğer ileride her bir gün umutu kullanıp böyle çok daha kompleksle girerseniz,
+
+628
+00:36:34,119 --> 00:36:41,119
+muhtemelen kendi değişkenlerinizi, global değişkenlerinizi tanımlamak ihtiyacı hissedebilirsiniz.
+
+629
+00:36:41,119 --> 00:36:43,119
+Devam ediyorum arkadaşlar.
+
+630
+00:36:43,119 --> 00:36:49,119
+Bir sonraki slide'da bu değişkenlerle ilgili birtakım işleri yaptırdığım bir skrip var.
+
+631
+00:36:49,119 --> 00:36:52,559
+Şimdi o skrip çalıştıralım.
+
+632
+00:36:52,559 --> 00:36:58,559
+Bu dördüncü şeyimiz.
+
+633
+00:36:58,559 --> 00:37:00,559
+Çalıştığımız şey.
+
+634
+00:37:00,559 --> 00:37:02,559
+Şimdi önceki bir değişken tanımlamışız.
+
+635
+00:37:02,559 --> 00:37:04,559
+Eşitleri yerine boş bırakmışız.
+
+636
+00:37:04,559 --> 00:37:06,559
+Bu değişkenin al değre atadığımız anlamına geliyor.
+
+637
+00:37:06,559 --> 00:37:09,559
+İkincisi ise değişken 1 eşitir 10 yazmışız.
+
+638
+00:37:09,559 --> 00:37:11,559
+Değişken 1'e 10 atamışız.
+
+639
+00:37:11,559 --> 00:37:13,559
+Değişken 2 deneme yazmışız.
+
+640
+00:37:13,559 --> 00:37:14,559
+Diğeri de deneme yazmışız.
+
+641
+00:37:14,559 --> 00:37:16,559
+Ama bir de tırnak var, bir de tırnak yok.
+
+642
+00:37:16,559 --> 00:37:18,559
+Sonra bunları echo yapıyoruz.
+
+643
+00:37:18,559 --> 00:37:20,559
+Tabii değişken 0'da olduğu için ekranı yazdırmıyoruz.
+
+644
+00:37:20,559 --> 00:37:22,559
+10, deneme, deneme şeklinde.
+
+645
+00:37:22,559 --> 00:37:24,559
+Bakın tırnak olup olmazsa ifade etme.
+
+646
+00:37:24,559 --> 00:37:26,559
+Aynı şekilde ekrana basabiliyorsunuz.
+
+647
+00:37:26,559 --> 00:37:28,559
+Bu da bir tırnağa karşı.
+
+648
+00:37:28,559 --> 00:37:30,559
+Strip yazacaksanız tırnak olması gerektiği anlamına gelmiyor.
+
+649
+00:37:30,559 --> 00:37:32,559
+Bu onu gösteriyor.
+
+650
+00:37:32,559 --> 00:37:34,559
+Şu PV'de aslında bir komut.
+
+651
+00:37:34,559 --> 00:37:36,559
+Bakın şurada yazayım ekrana.
+
+652
+00:37:36,559 --> 00:37:38,559
+PV'de yazdığım zaman şu an mevcut bulduğum direkörü gösteriyor.
+
+653
+00:37:38,559 --> 00:37:40,559
+Ve ekrana yazdırıyor aslında.
+
+654
+00:37:40,559 --> 00:37:42,559
+Echo yapıp ekrana yazdırıyor.
+
+655
+00:37:42,559 --> 00:37:44,559
+Skripte de gördüğünüz gibi.
+
+656
+00:37:44,559 --> 00:37:46,559
+Değişkenleri bu şekilde ekrana yazdırabiliyorsunuz.
+
+657
+00:37:46,559 --> 00:37:48,559
+Ekrana yazdırmak için,
+
+658
+00:37:48,559 --> 00:37:50,559
+Değişkenin içerisindeki değere erişmek için
+
+659
+00:37:50,559 --> 00:37:52,559
+Başına dolar şahit koyuyorsunuz.
+
+660
+00:37:52,559 --> 00:37:54,559
+Şöyle düşünebilirsiniz.
+
+661
+00:37:54,559 --> 00:37:56,559
+Bu bir pointir.
+
+662
+00:37:56,559 --> 00:37:58,559
+Bu pointirin içerisindeki değere erişmek için dolar koyuyorsunuz.
+
+663
+00:37:58,559 --> 00:38:00,559
+Tamam.
+
+664
+00:38:00,559 --> 00:38:02,559
+Bir sonraki slide devam ediyorum.
+
+665
+00:38:02,559 --> 00:38:04,559
+Tabii ki öğretmenlik işlemlerde yapabiliyorsunuz.
+
+666
+00:38:04,559 --> 00:38:06,559
+Programımı dinleyin.
+
+667
+00:38:06,559 --> 00:38:08,559
+Öğretmenlik işlemi yapmazsa olmazsa olmaz değil mi?
+
+668
+00:38:08,559 --> 00:38:12,559
+Şöyle Slash 05 yazıp çalıştırıyorum.
+
+669
+00:38:12,559 --> 00:38:14,559
+Bakın ekranda gördüğünüz şeyin
+
+670
+00:38:14,559 --> 00:38:16,559
+Skriptin birebir aynısı.
+
+671
+00:38:16,559 --> 00:38:18,559
+Burada 1 ile 2 toplayıp 3 yapmışız.
+
+672
+00:38:18,559 --> 00:38:20,559
+3 ile 4 çarpmışız.
+
+673
+00:38:20,559 --> 00:38:22,559
+Yıldız bakın arkadaşlar başına telsilaj var.
+
+674
+00:38:22,559 --> 00:38:24,559
+Yıldız özel bir karakter.
+
+675
+00:38:24,559 --> 00:38:26,559
+Yıldız Shell Compute için
+
+676
+00:38:26,559 --> 00:38:28,559
+Çarpmadan farklı bir şey ifade ediyor.
+
+677
+00:38:28,559 --> 00:38:30,559
+O yüzden bunun
+
+678
+00:38:30,559 --> 00:38:32,559
+Yıldız dediği Yıldız karakteri olduğunu göstermiş için
+
+679
+00:38:32,559 --> 00:38:34,559
+Başına bir escape karakteri yapmışız.
+
+680
+00:38:34,559 --> 00:38:36,559
+Bunu daha önce göstermiştim önceden.
+
+681
+00:38:36,559 --> 00:38:38,559
+2-1 yapmışız.
+
+682
+00:38:38,559 --> 00:38:40,559
+Cevap 1.
+
+683
+00:38:40,559 --> 00:38:42,559
+Onun 3'e göre modu 1.
+
+684
+00:38:42,559 --> 00:38:44,559
+Bir de ekko expression yapmışız.
+
+685
+00:38:44,559 --> 00:38:46,559
+Şöyle sunumdan göstereyim.
+
+686
+00:38:46,559 --> 00:38:48,559
+3 ile 4 toplayıp expression olarak yazmışız.
+
+687
+00:38:48,559 --> 00:38:50,559
+Burada çok değişik bir karakter.
+
+688
+00:38:50,559 --> 00:38:52,559
+Normal tek tınaf değil arkadaşlar.
+
+689
+00:38:52,559 --> 00:38:54,559
+Buna backcode deniyor.
+
+690
+00:38:54,559 --> 00:38:56,559
+Ve az önce size gösterdiğim Tilda tuşunun altındaki karakterle yapıyorsunuz.
+
+691
+00:38:56,559 --> 00:39:00,559
+Şöyle
+
+692
+00:39:00,559 --> 00:39:02,559
+Karakterimiz şu tamam.
+
+693
+00:39:02,559 --> 00:39:04,559
+Böyle.
+
+694
+00:39:04,559 --> 00:39:06,559
+Altta basıp
+
+695
+00:39:06,559 --> 00:39:08,559
+Tilda'nın altındaki tuşla yapıyoruz.
+
+696
+00:39:08,559 --> 00:39:10,559
+Şu an benim Türkçe layout'ım.
+
+697
+00:39:10,559 --> 00:39:12,559
+Noktalı virülün o tuşla yapıyoruz.
+
+698
+00:39:12,559 --> 00:39:14,559
+Altta basıp o.
+
+699
+00:39:14,559 --> 00:39:16,559
+Tamam.
+
+700
+00:39:16,559 --> 00:39:18,559
+Bu da oldukça basit bir örnekte.
+
+701
+00:39:18,559 --> 00:39:20,559
+Burada da aslında arkadaşlar.
+
+702
+00:39:20,559 --> 00:39:22,559
+Biz scanf'i görüyoruz.
+
+703
+00:39:22,559 --> 00:39:24,559
+Hemen göstereyim.
+
+704
+00:39:24,559 --> 00:39:35,679
+Tamam.
+
+705
+00:39:35,679 --> 00:39:37,679
+Bu şekilde
+
+706
+00:39:37,679 --> 00:39:39,679
+Ekranda okuma yapabiliyorsunuz.
+
+707
+00:39:39,679 --> 00:39:41,679
+Ekrana yazabiliyorsunuz.
+
+708
+00:39:41,679 --> 00:39:43,679
+Read komutuyla.
+
+709
+00:39:43,679 --> 00:39:45,679
+Bir sonraki örneğimizde.
+
+710
+00:39:45,679 --> 00:39:47,679
+Eşleştirmelerimiz var.
+
+711
+00:39:47,679 --> 00:39:49,679
+Bu aslında bizim daha önce göstermiş LSA'nın
+
+712
+00:39:49,679 --> 00:39:51,679
+Farklı varyantlarını görüyorsunuz.
+
+713
+00:39:51,679 --> 00:39:53,679
+Size söylemiştim zaten.
+
+714
+00:39:53,679 --> 00:39:55,679
+Farklı varyantlarını göstereceğim diye.
+
+715
+00:39:55,679 --> 00:39:57,679
+Hepsini kompleliyor.
+
+716
+00:39:57,679 --> 00:39:59,679
+Bu da hepsini gösterir aslında. Bir farkı yok.
+
+717
+00:39:59,679 --> 00:40:01,679
+Bu A ile başlayanları gösteriyor.
+
+718
+00:40:01,679 --> 00:40:03,679
+Ama A ile başlayan hiçbir şey yok.
+
+719
+00:40:03,679 --> 00:40:05,679
+Sıfırla başlayan var mı? Var.
+
+720
+00:40:05,679 --> 00:40:07,679
+Aslında yapılan şey şu.
+
+721
+00:40:07,679 --> 00:40:09,679
+Sıfırın yanında bir yıldız karakteri var.
+
+722
+00:40:09,679 --> 00:40:11,679
+Yıldız size söylemiştim özel karakteri olduğunu.
+
+723
+00:40:11,679 --> 00:40:13,679
+İşte nedeni bu.
+
+724
+00:40:13,679 --> 00:40:15,679
+Yıldız aslında bir wildcard shirt yapmayı sağlayan bir ifade.
+
+725
+00:40:15,679 --> 00:40:17,679
+Yani başı sıfırla başlayan.
+
+726
+00:40:17,679 --> 00:40:19,679
+Sonra da
+
+727
+00:40:19,679 --> 00:40:21,679
+Sıfır olan yani sadece sıfırla başlayan.
+
+728
+00:40:21,679 --> 00:40:23,679
+Sıfır olan dosyada sıfır olan.
+
+729
+00:40:23,679 --> 00:40:25,679
+Başlayan bütün dosyaları listelemeye yarıyor aslında.
+
+730
+00:40:27,679 --> 00:40:29,679
+Ve bunu şöyle de kullanabiliyorsunuz tabii ki.
+
+731
+00:40:29,679 --> 00:40:31,679
+Başına
+
+732
+00:40:31,679 --> 00:40:33,679
+Böyle yazarak da
+
+733
+00:40:33,679 --> 00:40:35,679
+Pardon
+
+734
+00:40:35,679 --> 00:40:37,679
+Yıldız notta SH yazarak da
+
+735
+00:40:37,679 --> 00:40:39,679
+Sonu SH ile biten dosyayla yazabiliyorsunuz.
+
+736
+00:40:39,679 --> 00:40:41,679
+Hatırlarsanız SH yazmayan
+
+737
+00:40:41,679 --> 00:40:43,679
+Nano save dosyası vardı. Onu yazmadı.
+
+738
+00:40:43,679 --> 00:40:47,059
+Bir ödül komutu da. Tamam.
+
+739
+00:40:47,059 --> 00:40:49,059
+Başka ne varmış?
+
+740
+00:40:49,059 --> 00:40:51,059
+Tek karakter varmış. Farklı varyantları yapmayacağım.
+
+741
+00:40:51,059 --> 00:40:53,059
+İşte alt tray ile başlayan varmış.
+
+742
+00:40:53,059 --> 00:40:55,059
+Vesaire vesaire.
+
+743
+00:40:55,059 --> 00:40:57,059
+Farklı varyantları var.
+
+744
+00:40:57,059 --> 00:40:59,059
+Şimdi dosya işlemlerine geçelim.
+
+745
+00:40:59,059 --> 00:41:01,059
+Buradan atmışız.
+
+746
+00:41:01,059 --> 00:41:03,059
+Bir klasör
+
+747
+00:41:03,059 --> 00:41:05,059
+Bir direktör oluşturup sonra
+
+748
+00:41:05,059 --> 00:41:07,059
+Böyle yan yana yazmışız burada.
+
+749
+00:41:07,059 --> 00:41:09,059
+Klasör ismi oluşturup
+
+750
+00:41:09,059 --> 00:41:11,059
+Klasör ismiyle yani şu klasör ismi değişikliği
+
+751
+00:41:11,059 --> 00:41:13,059
+Veya adımda
+
+752
+00:41:13,059 --> 00:41:15,059
+Bir direktör oluşturup
+
+753
+00:41:15,059 --> 00:41:17,059
+Bu direktöre gidip bunun içinde bir tane denemede
+
+754
+00:41:17,059 --> 00:41:19,059
+Dosya atmışız.
+
+755
+00:41:19,059 --> 00:41:21,059
+Denemeyi alıp listelemişiz denemeyi.
+
+756
+00:41:21,059 --> 00:41:23,059
+Sonra denemeyi
+
+757
+00:41:23,059 --> 00:41:25,059
+Deneme.js'e dönüştürmüşüz.
+
+758
+00:41:25,059 --> 00:41:27,059
+Change yapmışız. Asıl dosyalarında işitmişiz bir nevi.
+
+759
+00:41:27,059 --> 00:41:29,059
+Daha sonra
+
+760
+00:41:31,059 --> 00:41:33,059
+Burada bir hata mesajı veriyor.
+
+761
+00:41:33,059 --> 00:41:35,059
+Çünkü liste deneme diye bir şey yok artık.
+
+762
+00:41:35,059 --> 00:41:37,059
+Deneme.js'e dönüştür. Move yaptık çünkü.
+
+763
+00:41:37,059 --> 00:41:39,059
+Kopya yapmadık.
+
+764
+00:41:39,059 --> 00:41:41,059
+Sonra deneme.js'e gidip hata mesajını görmüyoruz artık.
+
+765
+00:41:41,059 --> 00:41:43,059
+Çünkü son dosyası da.
+
+766
+00:41:45,059 --> 00:41:47,059
+Dosyaya şunla
+
+767
+00:41:47,059 --> 00:41:49,059
+Şuradaki büyük dışarı tili yazı yazabiliyoruz.
+
+768
+00:41:49,059 --> 00:41:51,059
+Bu write demek.
+
+769
+00:41:51,059 --> 00:41:53,059
+Baştan dosyayı yazıyor.
+
+770
+00:41:53,059 --> 00:41:55,059
+Şurada iki tane nokta var.
+
+771
+00:41:55,059 --> 00:41:57,059
+İki tane daha işareti var.
+
+772
+00:41:59,059 --> 00:42:01,059
+Önce ne yapmışız? Bir echo edip
+
+773
+00:42:01,059 --> 00:42:03,059
+Bunu deneme2'ye write yazmışız.
+
+774
+00:42:03,059 --> 00:42:05,059
+Sonra 3 yazmışız deneme2'ye.
+
+775
+00:42:05,059 --> 00:42:07,059
+Bu ne yapacak aslında?
+
+776
+00:42:07,059 --> 00:42:09,059
+Bir yazmıştık. Onu silip yerine 3 yazacak.
+
+777
+00:42:09,059 --> 00:42:11,059
+Silip yerine 3 yazacak deneme2'ye.
+
+778
+00:42:11,059 --> 00:42:13,059
+Daha sonra iki tane büyüktür
+
+779
+00:42:13,059 --> 00:42:15,059
+işaretiyle yapmışız.
+
+780
+00:42:15,059 --> 00:42:17,059
+Bu silmeden bir yaz demek.
+
+781
+00:42:17,059 --> 00:42:19,059
+Bu asla
+
+782
+00:42:19,059 --> 00:42:21,059
+Tek büyüktür işareti write'sa.
+
+783
+00:42:21,059 --> 00:42:23,059
+Bu append demek arkadaşlar.
+
+784
+00:42:23,059 --> 00:42:26,369
+Varo'nun yanına ekliyoruz.
+
+785
+00:42:26,369 --> 00:42:28,369
+Echo 5'e ekliyoruz. Sonra da sort yazıp sıralamışız.
+
+786
+00:42:28,369 --> 00:42:30,369
+Bunu script çalıştıralım arkadaşlar.
+
+787
+00:42:30,369 --> 00:42:36,340
+Ekranın aldığımız çıktı buymuş tamam.
+
+788
+00:42:36,340 --> 00:42:38,340
+Ama hata almışız.
+
+789
+00:42:38,340 --> 00:42:42,340
+Bakın hata vermiş. Kenart director of classification file exist demiş.
+
+790
+00:42:42,340 --> 00:42:44,340
+Şöyle bakalım.
+
+791
+00:42:46,000 --> 00:43:02,369
+Remme.
+
+792
+00:43:02,369 --> 00:43:04,369
+Bakalım ne olmuş şimdi?
+
+793
+00:43:04,369 --> 00:43:10,530
+Tırnaklar mı yanlış?
+
+794
+00:43:10,530 --> 00:43:12,530
+Tırnaklar yanmış.
+
+795
+00:43:12,530 --> 00:43:14,530
+Tamam arkadaşlar bunu evde siz denersiniz.
+
+796
+00:43:14,530 --> 00:43:16,530
+Tamam mı? Bakın bu tırnakları ben en iyisi
+
+797
+00:43:16,530 --> 00:43:18,530
+kopyalamışım.
+
+798
+00:43:18,530 --> 00:43:20,530
+Şuradan direkt kopyalarak yaptığım için
+
+799
+00:43:20,530 --> 00:43:22,530
+şuradaki
+
+800
+00:43:22,530 --> 00:43:24,530
+tırnakları uzatmanız gerekiyor.
+
+801
+00:43:24,530 --> 00:43:29,630
+Zaten ana ekranı da açınca
+
+802
+00:43:29,630 --> 00:43:31,630
+şöyle yaptığınızda ben anlayacaksınız.
+
+803
+00:43:31,630 --> 00:43:33,630
+Farklı renge boyuyor tamam mı?
+
+804
+00:43:33,630 --> 00:43:35,630
+Bunları çalıştırırsınız siz de.
+
+805
+00:43:35,630 --> 00:43:37,630
+Böyle siz içinde bir hatıra atmış olur.
+
+806
+00:43:37,630 --> 00:43:39,630
+Hatıra atma yapmış olur.
+
+807
+00:43:39,630 --> 00:43:41,630
+Tırnakları
+
+808
+00:43:41,630 --> 00:43:43,630
+doğru kopyalarken
+
+809
+00:43:43,630 --> 00:43:45,630
+doğru kopyalamak için
+
+810
+00:43:45,630 --> 00:43:47,630
+şöyle yapalım.
+
+811
+00:43:47,630 --> 00:43:49,630
+Bir daha deneyelim.
+
+812
+00:43:49,630 --> 00:43:51,630
+Siz de aynanın hiç değiştirmeden
+
+813
+00:43:51,630 --> 00:43:57,760
+paylaşacaksınız. Siz de kendiniz düzeltirsiniz.
+
+814
+00:43:57,760 --> 00:43:59,760
+File'leri de silmem gerekiyor.
+
+815
+00:43:59,760 --> 00:44:01,760
+Çok uğraşmak istemiyorum arkadaşlar.
+
+816
+00:44:01,760 --> 00:44:03,760
+Çünkü zaman yerliyor ve
+
+817
+00:44:03,760 --> 00:44:05,760
+beklediğim yerden geride kaldım.
+
+818
+00:44:05,760 --> 00:44:07,760
+Bunu evde denersiniz arkadaşlar. Tamam.
+
+819
+00:44:07,760 --> 00:44:09,760
+Sadece tırnakları düzeltip şunları da
+
+820
+00:44:09,760 --> 00:44:11,760
+al satırlara alacaksınız ve
+
+821
+00:44:11,760 --> 00:44:13,760
+klasörde benim daha önce oluşturduğum
+
+822
+00:44:13,760 --> 00:44:15,760
+klasör esmiyi vesaire silmeniz gerekecek.
+
+823
+00:44:15,760 --> 00:44:17,760
+Şunları da mutlaka
+
+824
+00:44:17,760 --> 00:44:19,760
+altta yazmanız
+
+825
+00:44:19,760 --> 00:44:21,760
+gerekebilir. Tamam.
+
+826
+00:44:21,760 --> 00:44:23,760
+Dost işlemleri bu kadar
+
+827
+00:44:23,760 --> 00:44:25,760
+basit aslında. Şu dosya
+
+828
+00:44:25,760 --> 00:44:27,760
+bilmeniz gereken şey
+
+829
+00:44:27,760 --> 00:44:29,760
+en önemli şey. Şu write demek
+
+830
+00:44:29,760 --> 00:44:31,760
+çift işaretle de
+
+831
+00:44:31,760 --> 00:44:33,760
+append ediyorsunuz arkadaşlar. Tamam.
+
+832
+00:44:33,760 --> 00:44:35,760
+Pipe komutuna
+
+833
+00:44:35,760 --> 00:44:37,760
+geldik. Şimdi son olarak pipe komutundan
+
+834
+00:44:37,760 --> 00:44:39,760
+bahsedeceğim size.
+
+835
+00:44:39,760 --> 00:44:41,760
+Pipe komutunu şey yapar
+
+836
+00:44:41,760 --> 00:44:43,760
+aslında. Yaptığı şey şu. Örneğin
+
+837
+00:44:43,760 --> 00:44:45,760
+burada bir
+
+838
+00:44:45,760 --> 00:44:47,760
+PSAvx'ın şu fonksiyonunu
+
+839
+00:44:47,760 --> 00:44:49,760
+ne yaptığına bakalım. Adım adım
+
+840
+00:44:49,760 --> 00:44:51,760
+edelim. Bu aslında şu anda
+
+841
+00:44:51,760 --> 00:44:53,760
+bütün kullanıcını çalıştırdı
+
+842
+00:44:53,760 --> 00:44:55,760
+bütün kullanıcını çalıştırdı. Bütün processleri
+
+843
+00:44:55,760 --> 00:44:57,760
+listelen bir komut.
+
+844
+00:44:57,760 --> 00:44:59,760
+Bende bunun bir alternatif var aslında. Daha
+
+845
+00:44:59,760 --> 00:45:01,760
+güzel bir görsel sunuyor.
+
+846
+00:45:01,760 --> 00:45:03,760
+H-top şeklinde. Şöyle çıkayım tekrar göstereyim
+
+847
+00:45:03,760 --> 00:45:11,389
+size zaten size. Kullanacaksanız
+
+848
+00:45:11,389 --> 00:45:13,389
+eğer bunu kullanmanızı tavsiye ederim.
+
+849
+00:45:13,389 --> 00:45:15,389
+PSAvx çok
+
+850
+00:45:15,389 --> 00:45:17,389
+görsel olarak çok güzel
+
+851
+00:45:17,389 --> 00:45:19,389
+iyi hitap eden bir komut değil.
+
+852
+00:45:19,389 --> 00:45:21,389
+H-top paketini
+
+853
+00:45:21,389 --> 00:45:23,389
+ilgilendirerek processleri
+
+854
+00:45:23,389 --> 00:45:25,389
+böyle kontrol edebiliyorsunuz.
+
+855
+00:45:25,389 --> 00:45:27,389
+Findos kullanıcılar için aslında bu bir görev
+
+856
+00:45:27,389 --> 00:45:29,389
+yöneticisi. Tamam mı? Task manager yani.
+
+857
+00:45:29,389 --> 00:45:31,389
+Buradan hangi processin hangi
+
+858
+00:45:31,389 --> 00:45:33,389
+kullanıcı tarafından işte ne kadar karnel
+
+859
+00:45:33,389 --> 00:45:35,389
+kullandığını görebiliyorsunuz.
+
+860
+00:45:35,389 --> 00:45:37,389
+Dosyalarımı çalıştırdı, çalıştı.
+
+861
+00:45:37,389 --> 00:45:39,389
+Direktörleri görebiliyorsunuz. Tamam.
+
+862
+00:45:39,389 --> 00:45:41,389
+Ayrıntılı bir şekilde
+
+863
+00:45:41,389 --> 00:45:43,389
+böyle bir liste geliyor ekranıza.
+
+864
+00:45:43,389 --> 00:45:45,389
+H-top komutuydu. Biz yine orijinal
+
+865
+00:45:45,389 --> 00:45:47,389
+sunumları belirleyerek
+
+866
+00:45:47,389 --> 00:45:49,389
+öbür ürünler devam edelim.
+
+867
+00:45:49,389 --> 00:45:51,389
+Burada da aslında PSAvx'da
+
+868
+00:45:51,389 --> 00:45:53,389
+mevcut çalışanları görüyorsunuz.
+
+869
+00:45:53,389 --> 00:45:55,389
+En son çalışmaları görüyorsunuz.
+
+870
+00:45:55,389 --> 00:45:57,389
+Buraya list ekrana basıyor. Gördüğünüz gibi
+
+871
+00:45:57,389 --> 00:45:59,389
+düzenli bir list yani colon, colon
+
+872
+00:45:59,389 --> 00:46:01,389
+tablo şeklinde yazıyor ekrana.
+
+873
+00:46:01,389 --> 00:46:03,389
+Şimdi burada bir arama yapalım.
+
+874
+00:46:03,389 --> 00:46:05,389
+Özel bir aramamız olsun. Ben şimdi
+
+875
+00:46:05,389 --> 00:46:07,389
+ekrana bir şey yapmak
+
+876
+00:46:07,389 --> 00:46:09,389
+istiyorum. PSAvx yazıp
+
+877
+00:46:09,389 --> 00:46:11,389
+ismi root kullanısına ait
+
+878
+00:46:11,389 --> 00:46:13,389
+komutları yazmak istiyorum.
+
+879
+00:46:13,389 --> 00:46:15,389
+Şu altmış komuta aynen bire bire yazacağım arkadaşlar.
+
+880
+00:46:15,389 --> 00:46:17,389
+PSAvx. Bu şart adı pipe.
+
+881
+00:46:17,389 --> 00:46:20,639
+Şu şartın adı.
+
+882
+00:46:20,639 --> 00:46:22,639
+Yazdıktan sonra
+
+883
+00:46:22,639 --> 00:46:26,820
+a-grep
+
+884
+00:46:26,820 --> 00:46:28,820
+a-grep
+
+885
+00:46:28,820 --> 00:46:30,820
+root mu demişti orada?
+
+886
+00:46:30,820 --> 00:46:32,820
+Bu grab
+
+887
+00:46:32,820 --> 00:46:34,820
+arama yapmanızı
+
+888
+00:46:34,820 --> 00:46:36,820
+sağlayan bir şey. Tamam mı?
+
+889
+00:46:36,820 --> 00:46:40,059
+a-grep'de extended versiyonu.
+
+890
+00:46:40,059 --> 00:46:42,059
+Bu aslında kırmızıya boyaydı şey
+
+891
+00:46:42,059 --> 00:46:44,059
+aslında a-grep fonksiyonu yaptığı şey.
+
+892
+00:46:44,059 --> 00:46:46,059
+PSAvx bana bütün listeye dönüyordu.
+
+893
+00:46:46,059 --> 00:46:48,059
+Pyrallar colon size
+
+894
+00:46:48,059 --> 00:46:50,059
+çalışan komutlar daha yukarıda.
+
+895
+00:46:50,059 --> 00:46:52,059
+Bir önceki komutta.
+
+896
+00:46:52,059 --> 00:46:54,059
+Ama şu anda onlar yok. Çünkü
+
+897
+00:46:54,059 --> 00:46:56,059
+filtreleme yaptı. Tamam mı arkadaşlar?
+
+898
+00:46:56,059 --> 00:46:58,059
+Sadece root kullanıcılarını getirdi.
+
+899
+00:46:58,059 --> 00:47:00,059
+Siz bir search yapıyorsanız
+
+900
+00:47:00,059 --> 00:47:02,059
+search yapacağınız komutu
+
+901
+00:47:02,059 --> 00:47:04,059
+search yapacağınız
+
+902
+00:47:04,059 --> 00:47:06,059
+veriyi döndüren komutu
+
+903
+00:47:06,059 --> 00:47:08,059
+sol tarafı yazıp bunun çıktıkları pipe
+
+904
+00:47:08,059 --> 00:47:10,059
+komutuyla ondan sonra
+
+905
+00:47:10,059 --> 00:47:12,059
+gelen komut aktarabiliyorsunuz.
+
+906
+00:47:12,059 --> 00:47:14,059
+A-grep komutu oluyor.
+
+907
+00:47:14,059 --> 00:47:16,059
+A-grep root.
+
+908
+00:47:16,059 --> 00:47:18,059
+Bu da bu şekilde.
+
+909
+00:47:18,059 --> 00:47:20,059
+Bunu biraz daha kolaylaştıralım.
+
+910
+00:47:20,059 --> 00:47:22,059
+Dosya oluşturup, dosya için arama yapalım bir de.
+
+911
+00:47:22,059 --> 00:47:26,500
+Bir tane dosya oluşturalım.
+
+912
+00:47:26,500 --> 00:47:28,500
+touch-dnme
+
+913
+00:47:28,500 --> 00:47:31,780
+tx ile yapalım.
+
+914
+00:47:31,780 --> 00:47:33,780
+Hep nano kullandık.
+
+915
+00:47:33,780 --> 00:47:35,780
+Sanırım burada gedit vardı.
+
+916
+00:47:35,780 --> 00:47:40,460
+Başka text editorleri de var.
+
+917
+00:47:40,460 --> 00:47:42,460
+Böyle bir tane text editorini açabiliyorsunuz.
+
+918
+00:47:42,460 --> 00:47:44,460
+Aynı dosyaya. İlla nano yazmaza gerek yok.
+
+919
+00:47:44,460 --> 00:47:46,460
+Burada
+
+920
+00:47:46,460 --> 00:47:48,460
+abcd
+
+921
+00:47:48,460 --> 00:47:53,949
+1-2-3-4
+
+922
+00:47:53,949 --> 00:47:57,420
+Böyle bir şey yazalım.
+
+923
+00:47:57,420 --> 00:47:59,420
+Kaydedip kapatalım.
+
+924
+00:47:59,420 --> 00:48:01,420
+Ketle tekrar bakalım dosyayı içeriğine.
+
+925
+00:48:01,420 --> 00:48:07,360
+Dosyamız bu.
+
+926
+00:48:07,360 --> 00:48:10,610
+Tam şurada yazdığı gibi arkadaşlar.
+
+927
+00:48:10,610 --> 00:48:12,610
+A-grep
+
+928
+00:48:12,610 --> 00:48:14,610
+komutumuz buydu.
+
+929
+00:48:14,610 --> 00:48:16,610
+Ne arayalım mesela? Şimdi 1 arayalım.
+
+930
+00:48:16,610 --> 00:48:18,610
+Ve dosyada.
+
+931
+00:48:18,610 --> 00:48:20,610
+Dosyadımız indi. dnme tx de.
+
+932
+00:48:20,610 --> 00:48:22,610
+Bakın dosyanın içerisinde bir yazan satıları getirdi.
+
+933
+00:48:22,610 --> 00:48:24,610
+Hatırlarsanız abcd de var.
+
+934
+00:48:24,610 --> 00:48:26,610
+O satırlar gelmedi.
+
+935
+00:48:26,610 --> 00:48:28,610
+Fuat1 geldi. FuatA vardı. O da gelmedi.
+
+936
+00:48:28,610 --> 00:48:30,610
+Sadece içerisinde 1 olan satırları buldu getirdi.
+
+937
+00:48:30,610 --> 00:48:32,610
+Şurayı 1 değiştirelim.
+
+938
+00:48:32,610 --> 00:48:36,750
+A yazınca
+
+939
+00:48:36,750 --> 00:48:38,750
+Fuat'ın içindeki a'ları da yakaladı arkadaşlar.
+
+940
+00:48:38,750 --> 00:48:40,750
+Gördüğünüz gibi. Ve a'ların oğlu satırları getirdi.
+
+941
+00:48:40,750 --> 00:48:42,750
+Ve 1-2-3-4'u getirmedi.
+
+942
+00:48:42,750 --> 00:48:44,750
+Komut bu şekilde yapıyor.
+
+943
+00:48:44,750 --> 00:48:46,750
+Expression'ı bir metadata içerisinde arayıp
+
+944
+00:48:46,750 --> 00:48:48,750
+o data içerisinde
+
+945
+00:48:48,750 --> 00:48:50,750
+Expression'ın geçtiği yerleri bulup
+
+946
+00:48:50,750 --> 00:48:52,750
+sadece o satırları
+
+947
+00:48:52,750 --> 00:48:54,750
+getiriyor. Biz bir search işlem yapıyoruz.
+
+948
+00:48:54,750 --> 00:48:56,750
+Tamam.
+
+949
+00:48:56,750 --> 00:48:58,750
+Bu pipe komutu burada aslında
+
+950
+00:48:58,750 --> 00:49:00,750
+en çok dikkat edemez gereken şey. Bunu çok göreceksiniz.
+
+951
+00:49:00,750 --> 00:49:02,750
+Unix kullanmasanız bile
+
+952
+00:49:02,750 --> 00:49:04,750
+altyapısı
+
+953
+00:49:04,750 --> 00:49:06,750
+Unix işlem sistemine ait
+
+954
+00:49:06,750 --> 00:49:08,750
+kütüphaneleri kullandığınız zaman
+
+955
+00:49:08,750 --> 00:49:10,750
+kurulum yapmanız gerekecek.
+
+956
+00:49:10,750 --> 00:49:12,750
+Ve pipe komutunu çok göreceksiniz.
+
+957
+00:49:12,750 --> 00:49:14,750
+Ne anlama geldiğini bilmeniz.
+
+958
+00:49:14,750 --> 00:49:16,750
+Belki kurulum sırasında karşılaşacağınız
+
+959
+00:49:16,750 --> 00:49:18,750
+problemleri çözmeye yarayacaktır.
+
+960
+00:49:18,750 --> 00:49:20,750
+Ve ben özel sektör çalışırken
+
+961
+00:49:20,750 --> 00:49:22,750
+bunun çoğunuzun başına geleceğini düşünüyorum.
+
+962
+00:49:22,750 --> 00:49:24,750
+O yüzden
+
+963
+00:49:24,750 --> 00:49:26,750
+önce
+
+964
+00:49:26,750 --> 00:49:28,750
+buç kodları böyle en azından
+
+965
+00:49:28,750 --> 00:49:30,750
+kullanmayacağını
+
+966
+00:49:30,750 --> 00:49:32,750
+düşünseniz bile en azından
+
+967
+00:49:32,750 --> 00:49:34,750
+genel bilgi olarak mutlaka bilmeniz gerekiyor.
+
+968
+00:49:34,750 --> 00:49:36,750
+Çünkü dediğim gibi basit kurulumlarda
+
+969
+00:49:36,750 --> 00:49:38,750
+mutlaka karşısında karşısında çıkıyor yani
+
+970
+00:49:38,750 --> 00:49:40,750
+bu içer komutları.
+
+971
+00:49:40,750 --> 00:49:42,750
+Burada bitirelim arkadaşlar.
+
+972
+00:49:42,750 --> 00:49:44,750
+10 dakika kaldı
+
+973
+00:49:44,750 --> 00:49:46,750
+bitirmesine. Ben de bir
+
+974
+00:49:46,750 --> 00:49:48,750
+nefes alayım bir sonraki ders için.
+
+975
+00:49:48,750 --> 00:49:50,750
+Diğer grubu anlatacağım. Önümüzde iki hafta
+
+976
+00:49:50,750 --> 00:49:52,750
+TR komutuyla
+
+977
+00:49:52,750 --> 00:49:54,750
+karakterleri dönüştüreceğiz.
+
+978
+00:49:54,750 --> 00:49:56,750
+Sonra
+
+979
+00:49:56,750 --> 00:49:58,750
+farklı
+
+980
+00:49:58,750 --> 00:50:00,750
+ALF komutuyla parsing
+
+981
+00:50:00,750 --> 00:50:02,750
+işlemlerini kıyaslamalar yapacağız. Tamam mı?
+
+982
+00:50:02,750 --> 00:50:04,750
+Farklı operatörleri göstereceğim size.
+
+983
+00:50:04,750 --> 00:50:06,750
+Siz Eko'lara sorguları
+
+984
+00:50:06,750 --> 00:50:08,750
+göstereceğim. Sorgular nasıl yapılır?
+
+985
+00:50:08,750 --> 00:50:10,750
+Koşullar,
+
+986
+00:50:10,750 --> 00:50:12,750
+kondisyonlar nasıl belirlenir? Vesaire.
+
+987
+00:50:12,750 --> 00:50:14,750
+İşte creator'lar vesaire. If komutları
+
+988
+00:50:14,750 --> 00:50:16,750
+aslında bildiğiniz. Sonra döngüleri göstereceğim.
+
+989
+00:50:16,750 --> 00:50:18,750
+Döngüler alerjiler yapabiliyoruz. Nasıl döngü kullanıyoruz
+
+990
+00:50:18,750 --> 00:50:20,750
+gibi. Sonra döngüleri bitirdikten sonra
+
+991
+00:50:20,750 --> 00:50:22,750
+en son switch case'i anlatıp
+
+992
+00:50:22,750 --> 00:50:24,750
+konuları bitireceğim.
+
+993
+00:50:24,750 --> 00:50:26,750
+Bu hafta bu kadar olsun arkadaşlar.
+
+994
+00:50:26,750 --> 00:50:28,750
+Sorusu olamazsa bir
+
+995
+00:50:28,750 --> 00:50:30,750
+5 dakikalık soruyu içerisinde sorusu olan da
+
+996
+00:50:30,750 --> 00:50:32,750
+arkadaşların sorularını cevaplayayım.
+
+997
+00:50:32,750 --> 00:50:34,750
+Sorumu paylaşacağım arkadaşlar. Evet.
+
+998
+00:50:34,750 --> 00:50:36,750
+Ama şu anda ikinci dersi işittikten sonra
+
+999
+00:50:36,750 --> 00:50:38,750
+paylaşacağım. Önümüzde iki hafta bu aynı saatte
+
+1000
+00:50:38,750 --> 00:50:40,750
+aynı şekilde devam edeceğim kaldığım yerden.
+
+1001
+00:50:40,750 --> 00:50:42,750
+10. slide'dan yani.
+
+1002
+00:50:42,750 --> 00:50:44,750
+Ondan sonra iki sunum
+
+1003
+00:50:44,750 --> 00:50:46,750
+dediğim gibi slide devam edeceğim için önümüzde iki hafta
+
+1004
+00:50:46,750 --> 00:50:48,750
+paylaşacağım slide'den.
+
+1005
+00:50:48,750 --> 00:50:50,750
+İlk ders bitikten sonra, her program var ya siz bitikten sonra
+
+1006
+00:50:50,750 --> 00:50:52,750
+sorumu size paylaşacağım.
+
+1007
+00:50:52,750 --> 00:50:54,750
+Ve bazı kısımları size bir çözünmek için size bıraktım.
+
+1008
+00:50:54,750 --> 00:50:56,750
+Siz de denersiniz kendiniz
+
+1009
+00:50:56,750 --> 00:50:58,750
+çözünersiniz onları tamam mı?
+
+1010
+00:50:58,750 --> 00:51:00,750
+Biraz size de iş bıraktım yani.
+
+1011
+00:51:00,750 --> 00:51:02,750
+Onları da yaparsınız.
+
+1012
+00:51:02,750 --> 00:51:04,750
+Bence güzel bir giriş
+
+1013
+00:51:04,750 --> 00:51:06,750
+olursunuz içinde. Temel olarak en azından
+
+1014
+00:51:06,750 --> 00:51:08,750
+kullanmış olursunuz.
+
+1015
+00:51:08,750 --> 00:51:10,750
+Evet sorunun cevabı evet yani.
+
+1016
+00:51:10,750 --> 00:51:12,750
+Paylaşacağım. Ondan önümüzde iki hafta
+
+1017
+00:51:12,750 --> 00:51:14,750
+önümüzde iki hafta paylaşacağım.
+
+1018
+00:51:14,750 --> 00:51:16,750
+Başka sorusu olan var mı?
+
+1019
+00:51:16,750 --> 00:51:18,750
+Mesela yabancı öğrenci var mı
+
+1020
+00:51:18,750 --> 00:51:20,750
+aramızda? Hani açıklamamın istediği bir yer
+
+1021
+00:51:20,750 --> 00:51:22,750
+olur anlamamıştır.
+
+1022
+00:51:22,750 --> 00:51:24,750
+Ben hızlı konuştuğum için kaçırmış
+
+1023
+00:51:24,750 --> 00:51:26,750
+olabilir. Hocam şöyle bir durum var
+
+1024
+00:51:26,750 --> 00:51:28,750
+Suzak Recalcim. Buyurun.
+
+1025
+00:51:28,750 --> 00:51:30,750
+Ya hocam
+
+1026
+00:51:30,750 --> 00:51:32,750
+açıkçası bu
+
+1027
+00:51:32,750 --> 00:51:34,750
+şöyle üçüncü bir programlama
+
+1028
+00:51:34,750 --> 00:51:36,750
+dili olarak mı biz bunu gördük?
+
+1029
+00:51:36,750 --> 00:51:38,750
+Çünkü biz alan dışı öğrencisiyiz.
+
+1030
+00:51:38,750 --> 00:51:40,750
+Tamam sorun
+
+1031
+00:51:40,750 --> 00:51:42,750
+çok güzel aldım. Şöyle
+
+1032
+00:51:42,750 --> 00:51:44,750
+şimdi C bir programlama dili değil mi?
+
+1033
+00:51:44,750 --> 00:51:46,750
+C sharp programlama dili, Java programlama dili
+
+1034
+00:51:46,750 --> 00:51:48,750
+bunlarda hep bir şeyler yazıyorsunuz. Doğru muyum?
+
+1035
+00:51:48,750 --> 00:51:50,750
+Evet.
+
+1036
+00:51:50,750 --> 00:51:52,750
+Birinden devam edeceksiniz.
+
+1037
+00:51:52,750 --> 00:51:54,750
+Size garanti ediyorum C'de yazsanız
+
+1038
+00:51:54,750 --> 00:51:56,750
+Python'da yazsanız, Python'da ya da neyse
+
+1039
+00:51:56,750 --> 00:51:58,750
+nasıl ifade ediyorsanız C sharp'da yazsanız
+
+1040
+00:51:58,750 --> 00:52:00,750
+Java'da yazsanız burada anlattığım
+
+1041
+00:52:00,750 --> 00:52:02,750
+şeyler mutlaka karşısız çıkacak.
+
+1042
+00:52:02,750 --> 00:52:04,750
+Nasıl karşısız çıkacak? Basit bir kurulum yapacaksınız.
+
+1043
+00:52:04,750 --> 00:52:06,750
+Ubuntu'da bir şey kuracaksınız. Program
+
+1044
+00:52:06,750 --> 00:52:08,750
+kuracaksınız. Ubuntu'da her şeyi böyle bir üye
+
+1045
+00:52:08,750 --> 00:52:10,750
+yok. Bazı şeyleri komutlarla kurmak zorunda kalıyorsunuz ve
+
+1046
+00:52:10,750 --> 00:52:12,750
+kurduğunuz komutların içerisinde buradaki
+
+1047
+00:52:12,750 --> 00:52:14,750
+sharp scriptlerle ait bazı komutlar olacaktır.
+
+1048
+00:52:14,750 --> 00:52:16,750
+Bunları en azından baktığınızda bilmeniz
+
+1049
+00:52:16,750 --> 00:52:18,750
+bile sizin için garanti. Evet yok hocam.
+
+1050
+00:52:18,750 --> 00:52:20,750
+Bir şey soracaktım. Hani bunda deline
+
+1051
+00:52:20,750 --> 00:52:22,750
+gideceğiz mi? Yoksa temel konular
+
+1052
+00:52:22,750 --> 00:52:24,750
+yani temel bu? İşte bu kadar. Az önce size
+
+1053
+00:52:24,750 --> 00:52:26,750
+hızlı hızlı gösterdi mi aslında? Döngüleri falan
+
+1054
+00:52:26,750 --> 00:52:28,750
+göstereceğim. Script nasıl yazılıyor göstereceğim.
+
+1055
+00:52:28,750 --> 00:52:30,750
+Tamam tamam. Bu şekilde.
+
+1056
+00:52:30,750 --> 00:52:32,750
+Aslında buraya baktığınız zaman burada temel
+
+1057
+00:52:32,750 --> 00:52:34,750
+olarak bir işlem sisteminde yaptığınız temel her
+
+1058
+00:52:34,750 --> 00:52:36,750
+hareketi scriptlerle nasıl yapabileceğinizi
+
+1059
+00:52:36,750 --> 00:52:38,750
+görüyorsunuz. Yani çok basit bir şekilde
+
+1060
+00:52:38,750 --> 00:52:40,750
+yapabilirsiniz. S'yi de 100 satırdaki 100 satır
+
+1061
+00:52:40,750 --> 00:52:42,750
+yazdığınız kodu burada 10 satır yazabilirsiniz.
+
+1062
+00:52:42,750 --> 00:52:44,750
+Ubuntu kullanıyorsunuz, NIFT kullanıyorsunuz,
+
+1063
+00:52:44,750 --> 00:52:46,750
+Vinos kullanıyorsunuz. Aorishare'nin komutlarına bakıp
+
+1064
+00:52:46,750 --> 00:52:48,750
+oradan o şekilde yazabilirsiniz. Yani
+
+1065
+00:52:48,750 --> 00:52:50,750
+Shile sizin hayatınızı
+
+1066
+00:52:50,750 --> 00:52:52,750
+koalaştıran bir program o değil.
+
+1067
+00:52:52,750 --> 00:52:54,750
+Bu gerçekten söylüyorum. Ben kendi
+
+1068
+00:52:54,750 --> 00:52:56,750
+tecrübelerimden söylüyorum.
+
+1069
+00:52:56,750 --> 00:52:58,750
+Shile mutlaka kullanmanız gerekecek.
+
+1070
+00:52:58,750 --> 00:53:00,750
+Kullanacaksınız. O yüzden biraz bilmekte
+
+1071
+00:53:00,750 --> 00:53:02,750
+fayda var. Teşekkür ederim.
+
+1072
+00:53:02,750 --> 00:53:04,750
+Rica ederim. Başka sorusu var mı?
+
+1073
+00:53:04,750 --> 00:53:10,530
+Bu arada
+
+1074
+00:53:10,530 --> 00:53:12,530
+Ubuntu Shile komutu ve bundan sonra
+
+1075
+00:53:12,530 --> 00:53:14,530
+mutlaka arka arkaya çıkacağız.
+
+1076
+00:53:14,530 --> 00:53:16,530
+Önümüzdeki hafta şöyle devam edeceğim.
+
+1077
+00:53:16,530 --> 00:53:18,530
+Ondan sonra iki haftada arka arkaya
+
+1078
+00:53:18,530 --> 00:53:20,530
+diğer iki uygulamamızı yapacağız.
+
+1079
+00:53:20,530 --> 00:53:22,530
+Ve bu dört uygulamayla ilgili bize bir öde verilecek.
+
+1080
+00:53:22,530 --> 00:53:24,530
+O yüzden Shile komutların
+
+1081
+00:53:24,530 --> 00:53:26,530
+hafif hafif baksanız, biraz çalıştırsanız
+
+1082
+00:53:26,530 --> 00:53:28,530
+basit bir şekilde virtual box kurup
+
+1083
+00:53:28,530 --> 00:53:30,530
+Windows kullanıyorsanız için
+
+1084
+00:53:30,530 --> 00:53:32,530
+Ubuntu kullanıp kurup veya daha
+
+1085
+00:53:32,530 --> 00:53:34,530
+az yer tutan
+
+1086
+00:53:34,530 --> 00:53:36,530
+variantlarını kurup diyebilen Shile
+
+1087
+00:53:36,530 --> 00:53:38,530
+kurabiliyorsunuz direkt. Onda da Shile var.
+
+1088
+00:53:38,530 --> 00:53:40,530
+Daha basit variantlarını kurup,
+
+1089
+00:53:40,530 --> 00:53:42,530
+büyük bir seçim sistemi kurup içine.
+
+1090
+00:53:42,530 --> 00:53:44,530
+Basit basit deneyebilirsiniz. Hiçbir zarar olmaz.
+
+1091
+00:53:44,530 --> 00:53:46,530
+Bence keyifli de.
+
+1092
+00:53:46,530 --> 00:53:48,530
+Hatta bazı Shile yazdığınız bazı
+
+1093
+00:53:48,530 --> 00:53:50,530
+programları buna yapıp yapmayı deneyebilirsiniz.
+
+1094
+00:53:50,530 --> 00:53:52,530
+Çok keyif alacağınızı düşünüyorum.
+
+1095
+00:53:52,530 --> 00:53:54,530
+Çok daha az efor yapabileceğinizi göreceksiniz.
+
+1096
+00:53:54,530 --> 00:53:56,530
+Birazcık araştırmayla.
+
+1097
+00:53:56,530 --> 00:53:58,530
+Ben size zaten
+
+1098
+00:53:58,530 --> 00:54:00,530
+sadece basit yerlerini gösterdim bazı komutların.
+
+1099
+00:54:00,530 --> 00:54:02,530
+Komutların bir sürü parametreleri var.
+
+1100
+00:54:02,530 --> 00:54:04,530
+Bu parametrelerine bakarak çok daha
+
+1101
+00:54:04,530 --> 00:54:06,530
+büyük işleri, ufak hareketler
+
+1102
+00:54:06,530 --> 00:54:08,530
+yapabileceğinizi göre göreceksiniz.
+
+1103
+00:54:08,530 --> 00:54:10,530
+Çok kullanışlı olacaktır sizin için.
+
+1104
+00:54:10,530 --> 00:54:12,530
+O yüzden bakmanızda fayda var diye söylüyorum.
+
+1105
+00:54:12,530 --> 00:54:14,530
+Evet arkadaşlar
+
+1106
+00:54:14,530 --> 00:54:16,530
+sorusu olan var mı başka?
+
+1107
+00:54:16,530 --> 00:54:18,530
+Mesela yabancı öğrenciler, yabancı arkadaşlarımız
+
+1108
+00:54:18,530 --> 00:54:20,530
+vardı. Önceki bir seçim sistemleri
+
+1109
+00:54:20,530 --> 00:54:22,530
+kullanıyor uygulamasında.
+
+1110
+00:54:22,530 --> 00:54:24,530
+Anlamadığı yerler vardı. Anlattım. Bu derslerde var mı?
+
+1111
+00:54:24,530 --> 00:54:28,030
+Evet evet. Ubuntu'nun içine geliyor zaten.
+
+1112
+00:54:28,030 --> 00:54:30,030
+Ubuntu işitim sistemi geliyor.
+
+1113
+00:54:30,030 --> 00:54:32,030
+Onun üzerine hali hazırda bir 5 geliyor.
+
+1114
+00:54:32,030 --> 00:54:34,030
+Beşten kurup
+
+1115
+00:54:34,030 --> 00:54:36,030
+çalışırsan. Beşten direkt komutanızı
+
+1116
+00:54:36,030 --> 00:54:38,030
+çalıştırabilirsiniz.
+
+1117
+00:54:38,030 --> 00:54:40,030
+Sadece Ubuntu'u kurun yeter. Başka şey yapmanıza
+
+1118
+00:54:40,030 --> 00:54:42,030
+gerek yok.
+
+1119
+00:54:42,030 --> 00:54:44,030
+Ubuntu'u kurarak buradaki atlı mersi yapabilirsiniz.
+
+1120
+00:54:44,030 --> 00:54:49,780
+Sorusu olan var mı başka?
+
+1121
+00:54:49,780 --> 00:54:53,309
+Umarım keyif almışsınızdır.
+
+1122
+00:54:53,309 --> 00:54:56,690
+Umarım keyif almışsınızdır.
+
+1123
+00:54:58,690 --> 00:55:00,690
+Windows için
+
+1124
+00:55:00,690 --> 00:55:02,690
+alt sistemi yeterli olur mu hocam?
+
+1125
+00:55:02,690 --> 00:55:04,690
+Alt sistemi derken tam anlamadım.
+
+1126
+00:55:06,690 --> 00:55:08,690
+Alt sistem nasıl oluyor?
+
+1127
+00:55:08,690 --> 00:55:10,690
+Windows üzerine bir tane virtual box
+
+1128
+00:55:10,690 --> 00:55:12,690
+onun içerisinde Ubuntu kurabilirsiniz.
+
+1129
+00:55:12,690 --> 00:55:14,690
+Partition açıp
+
+1130
+00:55:14,690 --> 00:55:16,690
+Partition'a
+
+1131
+00:55:16,690 --> 00:55:18,690
+Linux işitim sistemi kurup
+
+1132
+00:55:18,690 --> 00:55:20,690
+oradan da devam edebilirsiniz.
+
+1133
+00:55:20,690 --> 00:55:22,690
+Evet onu da yapabilirsiniz. Tabi tabi.
+
+1134
+00:55:22,690 --> 00:55:24,690
+Ben çok basit bir şekilde
+
+1135
+00:55:24,690 --> 00:55:26,690
+anlattım ama Windows 10'da
+
+1136
+00:55:26,690 --> 00:55:28,690
+5 uygulamaları falan var.
+
+1137
+00:55:28,690 --> 00:55:30,690
+Terminer açabiliyorsunuz. Onları kullanabilirsiniz
+
+1138
+00:55:30,690 --> 00:55:32,690
+tabi ki. Tabi ki kullanabilirsiniz.
+
+1139
+00:55:32,690 --> 00:55:34,690
+Hiç sorun yok.
+
+1140
+00:55:34,690 --> 00:55:36,690
+Ama tabi ki en sağlıklısı Ubuntu
+
+1141
+00:55:36,690 --> 00:55:38,690
+işitim sistemi kurarak üzerinde
+
+1142
+00:55:38,690 --> 00:55:40,690
+kullanabilirsiniz. Çünkü sen sadece 5'i kurmuş oluyorsun
+
+1143
+00:55:40,690 --> 00:55:42,690
+ama biz fark ettiysen 5 dışında
+
+1144
+00:55:42,690 --> 00:55:44,690
+kütültü fonksiyonlarını da kullandık
+
+1145
+00:55:44,690 --> 00:55:46,690
+bu skitler içerisinde. Onları kullanamayabilirsin.
+
+1146
+00:55:46,690 --> 00:55:51,889
+Adı üzerine yani subsistem
+
+1147
+00:55:51,889 --> 00:55:53,889
+sistemin bir parçası vardır ona.
+
+1148
+00:55:53,889 --> 00:55:55,889
+Bütün çok daha detaylı
+
+1149
+00:55:55,889 --> 00:55:57,889
+komutlar için kullanamayabilirsin.
+
+1150
+00:55:57,889 --> 00:55:59,889
+Ben denemedim şahsen.
+
+1151
+00:55:59,889 --> 00:56:03,300
+Siz deneyebilirsiniz.
+
+1152
+00:56:03,300 --> 00:56:05,300
+Tamam o zaman. Akıllı sınav makinesi çalıştırıyorsanız
+
+1153
+00:56:05,300 --> 00:56:07,300
+mutlaka çalıştırırsınız bunları tamam mı? Ben
+
+1154
+00:56:07,300 --> 00:56:10,639
+doğrudan kendim kullanmadığım için. Tamam
+
+1155
+00:56:10,639 --> 00:56:12,639
+harika o zaman. O zaman
+
+1156
+00:56:12,639 --> 00:56:14,639
+bahsettiğiniz alt makine
+
+1157
+00:56:14,639 --> 00:56:16,639
+sub makine de çalışabilirsiniz.
+
+1158
+00:56:16,639 --> 00:56:20,179
+Sub sistemde. Sorun yok.
+
+1159
+00:56:20,179 --> 00:56:23,869
+Başka sorusu olan var mı?
+
+1160
+00:56:23,869 --> 00:56:31,949
+Tamam o zaman arkadaşlar bugün bu kadar.
+
+1161
+00:56:31,949 --> 00:56:33,949
+Katınızı teşekkür ederim.
+
+1162
+00:56:33,949 --> 00:56:35,949
+Kendinize iyi bakın.
+
+1163
+00:56:35,949 --> 00:56:37,949
+Bir sonraki hafta, önümüzdeki hafta görüşmek üzere.
+
+1164
+00:56:37,949 --> 00:56:39,949
+Bu arada derslerin
+
+1165
+00:56:39,949 --> 00:56:41,949
+devamında Avesis'ten
+
+1166
+00:56:41,949 --> 00:56:43,949
+duyuruları takip etmeniz gerekiyor.
+
+1167
+00:56:43,949 --> 00:56:45,949
+Yani belki aksaklıklar olur.
+
+1168
+00:56:45,949 --> 00:56:47,949
+Erteleme durumu söz konusu. Lütfen
+
+1169
+00:56:47,949 --> 00:56:49,949
+Avesis'i kendin kontrol edin.
+
+1170
+00:56:49,949 --> 00:56:51,949
+Onu da şöyle bırakıvereyim bir saniye.
+
+1171
+00:56:51,949 --> 00:56:59,869
+Şöyle chat'e
+
+1172
+00:56:59,869 --> 00:57:01,869
+bıraktım. Lütfen buradan
+
+1173
+00:57:01,869 --> 00:57:03,869
+duyuruları takip edin.
+
+1174
+00:57:03,869 --> 00:57:05,869
+Hoşçakalın.
+
