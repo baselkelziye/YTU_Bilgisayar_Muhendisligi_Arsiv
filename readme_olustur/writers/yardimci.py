@@ -186,6 +186,167 @@ def yerel_yoldan_github_linkine(
     return f"./{klasor_yolu}"
 
 
+# Ders/hoca/başlık adı normalizasyonu tek bir yerde (giriş arayüzü de aynı
+# fonksiyonu kullanır): bağlaçlar küçük, diğer kelimeler büyük harfle başlar.
+from metin_islemleri import (  # noqa: E402
+    ders_adi_normalize, BAGLAC_KUCUK, _turkce_kucult, _turkce_bas_harf_buyut,
+)
+
+
+def _repo_goreceli_yol(klasor_yolu: str) -> str:
+    """Klasörün repo köküne göre decode edilmiş göreceli yolu (örn: '1-2/Devre ...')."""
+    yol = klasor_yolu.replace(DOKUMANLAR_REPO_YOLU, "")
+    yol = os.path.normpath(yol).replace("\\", "/").lstrip("/")
+    return "" if yol == "." else yol
+
+
+def _karsilastirma_normu(metin: str) -> str:
+    """Büyük/küçük harf ve Türkçe aksanlardan bağımsız karşılaştırma anahtarı."""
+    return "".join(
+        c for c in unicodedata.normalize("NFKD", metin.casefold())
+        if not unicodedata.combining(c)
+    )
+
+
+_ust_dizinler_cache: Optional[set] = None
+
+
+def _repo_ust_dizinleri() -> set:
+    """Repo kökündeki üst düzey klasör adları (linkin repo köküne göreceli olup olmadığını ayırt etmek için)."""
+    global _ust_dizinler_cache
+    if _ust_dizinler_cache is None:
+        try:
+            _ust_dizinler_cache = {
+                _karsilastirma_normu(ad) for ad in os.listdir(DOKUMANLAR_REPO_YOLU)
+                if os.path.isdir(os.path.join(DOKUMANLAR_REPO_YOLU, ad))
+            }
+        except OSError:
+            _ust_dizinler_cache = set()
+    return _ust_dizinler_cache
+
+
+def _goreceli_yol(hedef: str, base_rel: str) -> str:
+    """
+    `hedef` (repo köküne göreceli) yolunu, `base_rel` klasörüne göreceli hale getir.
+
+    `os.path.relpath`'in aksine ortak önek karşılaştırması harf/aksan duyarsızdır;
+    böylece JSON yolundaki harf büyüklüğü disk ile farklı olsa bile ("İçin" vs
+    "için") doğru sayıda '../' üretilir ve eşleşen önek atılır.
+    """
+    base_parcalar = [p for p in base_rel.split("/") if p]
+    hedef_parcalar = [p for p in hedef.split("/") if p]
+    ortak = 0
+    while (ortak < len(base_parcalar) and ortak < len(hedef_parcalar) and
+           _karsilastirma_normu(base_parcalar[ortak]) == _karsilastirma_normu(hedef_parcalar[ortak])):
+        ortak += 1
+    yukari = [".."] * (len(base_parcalar) - ortak)
+    asagi = hedef_parcalar[ortak:]
+    parcalar = yukari + asagi
+    if not parcalar:
+        return "./"
+    if parcalar[0] == "..":
+        return "/".join(parcalar)
+    return "./" + "/".join(parcalar)
+
+
+def _disk_yol_duzelt(base_klasor_yolu: str, goreceli: str) -> str:
+    """
+    Göreceli yolun bileşenlerini gerçek diskteki klasör/dosya adlarıyla düzelt.
+
+    JSON yolundaki harf büyüklüğü disk ile farklı olsa bile ("İçin" -> "için")
+    diskte eşleşen ada göre düzeltir. Eşleşme bulunamayan ilk bileşenden sonrası
+    (ör. gerçekte var olmayan bir klasör adı) olduğu gibi bırakılır.
+    """
+    suanki = base_klasor_yolu
+    sonuc = []
+    bozuk = False
+    for parca in goreceli.split("/"):
+        if parca in ("..", "."):
+            sonuc.append(parca)
+            if parca == "..":
+                suanki = os.path.dirname(suanki)
+            continue
+        if not bozuk:
+            try:
+                eslesen = next(
+                    (ad for ad in os.listdir(suanki)
+                     if _karsilastirma_normu(ad) == _karsilastirma_normu(parca)),
+                    None,
+                )
+            except OSError:
+                eslesen = None
+            if eslesen is not None:
+                sonuc.append(eslesen)
+                suanki = os.path.join(suanki, eslesen)
+                continue
+            bozuk = True
+        sonuc.append(parca)
+    return "/".join(sonuc)
+
+
+def kaynak_linklerini_goreceli_yap(
+    metin: str,
+    base_klasor_yolu: Optional[str],
+    ders_klasor_yolu: Optional[str] = None,
+) -> str:
+    """
+    Metindeki markdown linklerini, README'nin bulunduğu klasöre göreceli yap.
+
+    `dersler.json` içindeki kaynak linkleri iki biçimde tutulur:
+      1. Repo köküne göreceli (ilk bileşeni repo kökündeki bir üst klasör olanlar,
+         örn `./3-1/.../altyazilar/`). Ana README için doğrudur.
+      2. Dersin kendi klasörüne göreceli (örn `./ders_kayitlari/`,
+         `./alt seviye programlama/ders_kayitlari/`).
+
+    Ders README'si dersin kendi klasöründe olduğundan (2) tipi linkler olduğu gibi
+    doğrudur ve dokunulmaz. Dönem README'si ise daha üstte (dönem klasöründe)
+    olduğundan (2) tipi linkler, dersin gerçekte bulunduğu klasör (`ders_klasor_yolu`)
+    üzerinden çözülüp dönem klasörüne göre yeniden yazılır. Böylece bir ders başka
+    bir dönemin klasöründe duruyor olsa bile (örn Mesleki Seçmeli olarak listelenen
+    "Ağ Teknolojileri"nin `3-2/.../ağ teknolojileri` altında olması) link gerçek
+    konuma '../' ile doğru şekilde bağlanır.
+
+    Args:
+        metin: İçinde markdown link(ler)i olabilen serbest metin
+        base_klasor_yolu: README'nin bulunduğu klasörün yerel yolu
+        ders_klasor_yolu: Dersin gerçekte bulunduğu klasör. Verilmezse base ile aynı
+            kabul edilir (ders README'si durumu -> ders klasörüne göreceli linkler
+            değişmez).
+
+    Returns:
+        Linkleri göreceli hale getirilmiş metin
+    """
+    if not base_klasor_yolu:
+        return metin
+    base_rel = _repo_goreceli_yol(base_klasor_yolu)
+    if not base_rel:
+        return metin
+    ders_rel = _repo_goreceli_yol(ders_klasor_yolu) if ders_klasor_yolu else base_rel
+    ust_dizinler = _repo_ust_dizinleri()
+
+    def _degistir(eslesme: "re.Match") -> str:
+        url = eslesme.group(1)
+        if not url.startswith("./"):
+            return eslesme.group(0)
+        hedef = urllib.parse.unquote(url[2:])
+        son_egik = "/" if hedef.endswith("/") else ""
+        hedef = hedef.rstrip("/")
+        ilk = hedef.split("/")[0] if hedef else ""
+        if ilk and _karsilastirma_normu(ilk) in ust_dizinler:
+            repo_rel = hedef  # zaten repo köküne göreceli
+        else:
+            # Dersin kendi klasörüne göreceli link
+            if ders_rel == base_rel:
+                return eslesme.group(0)  # ders README'si: olduğu gibi doğru
+            repo_rel = f"{ders_rel}/{hedef}" if hedef else ders_rel
+        goreceli = _goreceli_yol(repo_rel, base_rel)
+        goreceli = _disk_yol_duzelt(base_klasor_yolu, goreceli)
+        yeni = "/".join(urllib.parse.quote(p, safe="") for p in goreceli.split("/"))
+        return f"]({yeni}{son_egik})"
+
+    return re.sub(r"\]\(([^)]+)\)", _degistir, metin)
+
+
 def sirali_ekle(liste: list, eleman: Any, anahtar_fonksiyonu: callable) -> None:
     """
     Elemanı sıralı listeye doğru konuma ekle.

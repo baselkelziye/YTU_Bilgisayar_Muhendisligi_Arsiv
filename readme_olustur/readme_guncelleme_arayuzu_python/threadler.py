@@ -3,6 +3,7 @@ from PyQt6.QtCore import QThread, pyqtSignal
 import json
 import requests
 from degiskenler import *
+from metin_islemleri import ders_adi_normalize
 import subprocess
 import threading
 import queue
@@ -20,7 +21,7 @@ class HocaKaydetThread(QThread):
         self.parent = parent
 
     def run(self):
-        ad = self.parent.adInput.text()
+        ad = ders_adi_normalize(self.parent.adInput.text().strip())
         if not ad:
             self.error.emit("Hoca adı boş olamaz!")
             return

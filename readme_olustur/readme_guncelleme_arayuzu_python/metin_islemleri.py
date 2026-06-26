@@ -38,3 +38,53 @@ def donem_dosya_yolu_getir(donem, DOKUMANLAR_REPO_YOLU=".."):
     if donem is not None and donem.get(DONEM_ADI, "") != "":
         return os.path.join(DOKUMANLAR_REPO_YOLU, donem.get(DONEM_ADI, ""))
     return os.path.join(DOKUMANLAR_REPO_YOLU, MESLEKI_SECMELI_1)
+
+
+# Türkçe bağlaçlar/edatlar - başlık dışındaki konumlarda küçük harfle yazılır.
+BAGLAC_KUCUK = {"ve", "ile", "ya", "veya", "için", "da", "de", "ki"}
+
+
+def _turkce_kucult(kelime):
+    """Kelimeyi Türkçe kurallarına göre küçült ('İ' -> 'i', 'I' -> 'ı')."""
+    return kelime.replace("İ", "i").replace("I", "ı").lower()
+
+
+def _turkce_bas_harf_buyut(kelime):
+    """Kelimenin ilk harfini Türkçe kurallarına göre büyüt ('i' -> 'İ', 'ı' -> 'I')."""
+    if not kelime:
+        return kelime
+    ilk = kelime[0]
+    if ilk == "i":
+        ilk = "İ"
+    elif ilk == "ı":
+        ilk = "I"
+    else:
+        ilk = ilk.upper()
+    return ilk + kelime[1:]
+
+
+def ders_adi_normalize(ad):
+    """
+    Ders/hoca/başlık adını normalize et: bağlaçlar küçük harf, diğer kelimeler
+    büyük harfle başlar (ilk kelime daima büyük).
+
+    Örn: "Temel Hak Ve Sorumluluklar" -> "Temel Hak ve Sorumluluklar",
+         "uygarlık tarihi" -> "Uygarlık Tarihi",
+         "mehmet fatih amasyalı" -> "Mehmet Fatih Amasyalı".
+
+    Args:
+        ad: Ders/hoca/başlık adı
+
+    Returns:
+        Normalize edilmiş ad
+    """
+    if not ad:
+        return ad
+    kelimeler = ad.split(" ")
+    for i, kelime in enumerate(kelimeler):
+        # İlk kelime hariç bağlaçlar küçük harf (mevcut yazıma duyarsız), diğerleri büyük
+        if i > 0 and _turkce_kucult(kelime) in BAGLAC_KUCUK:
+            kelimeler[i] = _turkce_kucult(kelime)
+        else:
+            kelimeler[i] = _turkce_bas_harf_buyut(kelime)
+    return " ".join(kelimeler)

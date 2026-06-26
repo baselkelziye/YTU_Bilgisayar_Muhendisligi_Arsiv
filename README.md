@@ -1460,11 +1460,11 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/G%C3%BCzel%20Konu%C5%9Fma%20ve%20Diksiyon)
 
 
-#### 📘 Halk oyunları Temel Figür Eğitimi 
+#### 📘 Halk Oyunları Temel Figür Eğitimi 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
-  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Halk%20oyunlar%C4%B1%20Temel%20Fig%C3%BCr%20E%C4%9Fitimi)
+  - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Halk%20Oyunlar%C4%B1%20Temel%20Fig%C3%BCr%20E%C4%9Fitimi)
 
 
 #### 📘 Halkla İlişkiler (İİBF) 
@@ -3471,7 +3471,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📖 [Yapısal Programlamaya Giriş](#-yapısal-programlamaya-giriş)
   - 📖 [Yapay Zeka](#-yapay-zeka)
   - 📖 [Uzman Sistemlere Giriş](#-uzman-sistemlere-giriş)
-  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
+  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-için-diferansiyel-denklemler)
   - 📖 [Kollektif Öğrenme](#-kollektif-öğrenme)
   - 📖 [Hesaplamalı Anlambilim](#-hesaplamalı-anlambilim)
 - ⭐ **Yıldız Sayıları:**
@@ -3648,7 +3648,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [İstatistik ve Olasılık Hesapları](#-i̇statistik-ve-olasılık-hesapları)
-  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-i̇çin-diferansiyel-denklemler)
+  - 📖 [Bilgisayar Mühendisleri için Diferansiyel Denklemler](#-bilgisayar-mühendisleri-için-diferansiyel-denklemler)
 - ⭐ **Yıldız Sayıları:**
   - 🎭 Dersi Zevkli Anlatır Mı:	★★★★☆☆☆☆☆☆
   - 🛣️ Dersi Kolay Geçer Miyim:	★★★★★☆☆☆☆☆

@@ -20,7 +20,7 @@ from PyQt6.QtGui import QIcon
 from pathlib import Path
 from hoca_kisaltma_olustur import hoca_kisaltma_olustur
 from degiskenler import *
-from metin_islemleri import kisaltMetin
+from metin_islemleri import kisaltMetin, ders_adi_normalize
 from close_event import closeEventHandler
 from coklu_satir_girdi_dialog import SatirAtlayanInputDialog
 from screen_utils import apply_minimum_size
@@ -918,7 +918,7 @@ class DersDuzenlemeWindow(QDialog):
         self.hocalarComboBoxlar.remove((comboBox, silBtn))
 
     def kaydet(self):
-        ad = self.adInput.text().strip()
+        ad = ders_adi_normalize(self.adInput.text().strip())
         try:
             yil = int(self.yilInput.currentText())
         except:

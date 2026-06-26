@@ -3,7 +3,7 @@ from writers.base import SectionWriter
 from writers.yardimci import (
     puanlari_yildiza_cevir, baslik_linki_olustur,
     gorustenTarihGetir, detay_etiketleri_olustur,
-    hoca_siralama_anahtari
+    hoca_siralama_anahtari, ders_adi_normalize
 )
 from typing import TYPE_CHECKING, Optional
 
@@ -180,6 +180,7 @@ class HocalarWriter(SectionWriter):
             
             if hoca_dersleri:
                 for ders in hoca_dersleri:
+                    ders = ders_adi_normalize(ders)
                     if ders != en_populer_ders_adi:
                         writer.writeline(f"  - 📖 [{ders}]{baslik_linki_olustur(ders)}")
                     else:

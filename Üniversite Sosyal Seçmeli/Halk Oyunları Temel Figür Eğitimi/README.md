@@ -1,4 +1,4 @@
-# 📚 Halk oyunları Temel Figür Eğitimi
+# 📚 Halk Oyunları Temel Figür Eğitimi
 
 ## ℹ️ Ders Bilgileri
 

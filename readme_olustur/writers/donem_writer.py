@@ -1,7 +1,8 @@
 """Dönem README yazıcısı."""
 from writers.base import SectionWriter
 from writers.yardimci import (
-    puanlari_yildiza_cevir, gorustenTarihGetir, detay_etiketleri_olustur
+    puanlari_yildiza_cevir, gorustenTarihGetir, detay_etiketleri_olustur,
+    kaynak_linklerini_goreceli_yap
 )
 from typing import TYPE_CHECKING, Optional
 import unicodedata
@@ -115,15 +116,20 @@ class DonemWriter(SectionWriter):
     
     def write_ders_to_donem(
         self, writer: "BufferedReadmeWriter", ders: dict,
-        guncel_olmayan_ders_aciklamasi: str
+        guncel_olmayan_ders_aciklamasi: str, donem_klasoru: str = None,
+        ders_klasoru: str = None
     ) -> None:
         """
         Dersi dönem README'sine yaz.
-        
+
         Args:
             writer: BufferedReadmeWriter instance
             ders: Ders dict'i
             guncel_olmayan_ders_aciklamasi: Güncel olmayan ders açıklaması
+            donem_klasoru: Dönem README'sinin bulunduğu klasör (link göreceliliği için)
+            ders_klasoru: Dersin gerçekte bulunduğu klasör. Ders klasörüne göreceli
+                linkleri (örn ./ders_kayitlari/) dönem klasörüne göre yeniden yazmak
+                için kullanılır.
         """
         ders_adi = ders.get(AD, "")
         
@@ -143,6 +149,7 @@ class DonemWriter(SectionWriter):
                 if len(oneriler.get(ONERILER, [])) > 0:
                     writer.writeline(f"##### 📌 Öneri sahibi: {oneriler.get(ONERI_SAHIBI, '')}")
                     for oneri in oneriler[ONERILER]:
+                        oneri = kaynak_linklerini_goreceli_yap(oneri, donem_klasoru, ders_klasoru)
                         writer.writeline(f"- {oneri}")
         
         # Faydalı kaynaklar
@@ -154,6 +161,7 @@ class DonemWriter(SectionWriter):
                 key=lambda x: unicodedata.normalize(NFKD, x).lower()
             )
             for kaynak in sirali_kaynaklar:
+                kaynak = kaynak_linklerini_goreceli_yap(kaynak, donem_klasoru, ders_klasoru)
                 writer.writeline(f"- 📄 {kaynak} ✨")
         
         writer.write(GENEL_CIKMIS_SORULAR_METNI)

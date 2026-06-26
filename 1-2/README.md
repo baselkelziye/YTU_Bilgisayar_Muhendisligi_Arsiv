@@ -221,7 +221,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1x2_J6e9zy8tsx9rhzPlGf7lctDZPOhIV?usp=drive_link) ✨
-- 📄 **Ders Kayıtları:** [Sayısal Analiz Ders Kayıtları Altyazıları](./) ✨
+- 📄 **Ders Kayıtları:** [Sayısal Analiz Ders Kayıtları Altyazıları](./Say%C4%B1sal%20Analiz/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
