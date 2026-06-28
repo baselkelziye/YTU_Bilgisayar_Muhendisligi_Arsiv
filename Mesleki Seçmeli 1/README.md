@@ -35,6 +35,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Alt Seviye Programlama Ders Kayıtları Altyazıları](../3-1/Mikroi%C5%9Flemci%20Sistemleri%20ve%20Assembly%20Dili/alt%20seviye%20programlama/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -252,6 +253,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1lf90yTz5l0Cvm04Da8AzO2xUa4Z3XJrq?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilişim Sistemleri Güvenliği Ders Kayıtları Altyazıları](./Bili%C5%9Fim%20Sistemleri%20G%C3%BCvenli%C4%9Fi/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -960,6 +962,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1OkejSRReQk-yGb5wPllk4eqG5xoSDJxR?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Veri Madenciliğine Giriş Ders Kayıtları Altyazıları](./Veri%20Madencili%C4%9Fine%20Giri%C5%9F/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -1156,6 +1159,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Yönetim Bilgi Sistemleri Ders Kayıtları Altyazıları](./Y%C3%B6netim%20Bilgi%20Sistemleri/ders_kayitlari/) ✨
 - 📄 **Not:** [Elle alınmış not](./Y%C3%B6netim%20Bilgi%20Sistemleri/slaytlar_notlar/2022/El%20Yaz%C4%B1s%C4%B1%20Not.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

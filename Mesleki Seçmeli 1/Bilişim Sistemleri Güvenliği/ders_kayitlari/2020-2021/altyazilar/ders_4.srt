@@ -1,0 +1,10996 @@
+1
+00:00:15,439 --> 00:00:21,140
+Şu anda bağlantılar devam ediyor arkadaşlar, diğer arkadaşlarımız bağlanıyorlar.
+
+2
+00:00:21,339 --> 00:00:27,059
+O yüzden bir 3-5 dakika bekleyelim, öyle başlayalım.
+
+3
+00:00:28,519 --> 00:00:32,200
+Ben bakıyorum yeterli sayı oluştuğunda başlayacağız merak etmeyin.
+
+4
+00:03:38,900 --> 00:03:40,979
+Evet zannedersem başlayabiliriz.
+
+5
+00:03:42,219 --> 00:03:45,159
+Epeyce bir kişi oldu, 98 kişi, güzel.
+
+6
+00:03:45,159 --> 00:03:51,539
+Evet, şimdi öncelikle bu hafta uygulama yaparız diye size duyurmuştum.
+
+7
+00:03:51,680 --> 00:04:03,960
+Ancak bu dersin uygulamasını yapacak olan asistan arkadaşlarla alakalı bir özel durum sonucunda onlar ancak önümüzdeki haftaya organize olabiliyorlar.
+
+8
+00:04:04,780 --> 00:04:11,060
+Ondan ötürü bu hafta dersimizden sonra uygulama olmayacak ama haftaya uygulamalara başlıyoruz.
+
+9
+00:04:11,060 --> 00:04:14,979
+İlk uygulamamız Buffer Overflow ile.
+
+10
+00:04:15,159 --> 00:04:17,160
+Onlarla alakalı olacak.
+
+11
+00:04:17,160 --> 00:04:31,160
+Geçen hafta ve ondan önceki hafta derslerde işlediğimiz konuların birebir uygulamasını yapacaksınız, onlarla alakalı bazı denemeler gösterilecek size.
+
+12
+00:04:33,160 --> 00:04:41,160
+Şu an için 4 tane uygulama planlıyoruz ama duruma göre 5 de olur, 6 de olur ama 4 tanesi mutlaka olacak [öğrenci].
+
+13
+00:04:42,160 --> 00:04:44,160
+Onlar netleşti.
+
+14
+00:04:53,769 --> 00:04:58,769
+Stringleri kullanmadan yapılabiliyor mu [öğrenci]?
+
+15
+00:04:58,769 --> 00:05:00,769
+İstersen sesli sor anlamadım.
+
+16
+00:05:00,769 --> 00:05:14,449
+Duyuyor musun beni?
+
+17
+00:05:14,449 --> 00:05:16,449
+Doruk duyuyor musun beni?
+
+18
+00:05:16,449 --> 00:05:20,310
+Alo sesim geliyor mu?
+
+19
+00:05:20,310 --> 00:05:22,310
+Geliyor evet [öğrenci].
+
+20
+00:05:22,310 --> 00:05:32,310
+Bu strcopy gibi 2-3 tane fonksiyon vardı. Bunlarla Buffer Overflow'a sebep olabiliyordu.
+
+21
+00:05:32,310 --> 00:05:39,310
+Sen memcopy'i falan diğer şeyleri dinlemedin mi? Derste o kadar örnek anlattık.
+
+22
+00:05:39,310 --> 00:05:47,310
+Sadece strcopy değil, function pointer'lar var değil mi? Long jump buffer'lar var.
+
+23
+00:05:47,310 --> 00:05:53,310
+Yani strcopy olayın en başında en temel en şey olanı.
+
+24
+00:05:53,310 --> 00:05:59,310
+Function pointer'lar var ama function pointer'ları da Buffer Overflow'la yazmamız lazım. Başka bir çeşit Buffer Overflow'la.
+
+25
+00:05:59,310 --> 00:06:01,310
+Tamam işte memcopy.
+
+26
+00:06:01,310 --> 00:06:05,310
+Memcopy hani memory buffer'lar olmuyor muydu? Integer şey olmuyor muydu?
+
+27
+00:06:05,310 --> 00:06:09,310
+Tamam memcopy slide'larda hatırlamıyorum da.
+
+28
+00:06:09,310 --> 00:06:11,310
+Nasıl izlemedin mi o dersi? Çok ayıp.
+
+29
+00:06:11,310 --> 00:06:12,310
+İzledim.
+
+30
+00:06:12,310 --> 00:06:17,310
+Niye hatırlamıyorsun o zaman? Tekrar oraya gidelim.
+
+31
+00:06:17,310 --> 00:06:23,310
+String fonksiyonları bu işin başlangıcı. En başta string fonksiyonu üzerinden yapılmış.
+
+32
+00:06:23,310 --> 00:06:30,310
+Ama daha sonradan herhangi bir array tarzı değişkene erişiliyorsa
+
+33
+00:06:30,310 --> 00:06:38,310
+oraya bir kopyalama işi gerçekleşiyorsa bu string copy üzerinden olur veyahut da memcopy üzerinden olur.
+
+34
+00:06:38,310 --> 00:06:44,310
+O noktalar Buffer Overflow için kullanılabiliyor. Ama olayın temeli string.
+
+35
+00:06:44,310 --> 00:06:54,310
+Bunu temelde her arraye ulaşılması gerektiğinde bound checking yaparak olmaz mı? Kurtulamaz mı bundan?
+
+36
+00:06:54,310 --> 00:06:56,310
+Bound checking nasıl yapılıyor?
+
+37
+00:06:56,310 --> 00:06:58,310
+Yani bunu baya temelde yapmak lazım.
+
+38
+00:06:58,310 --> 00:07:02,310
+Baya temelde yapmak lazım ama benim dediğim durumda.
+
+39
+00:07:02,310 --> 00:07:16,310
+Yani herhangi bir pointerdan belli bir öteye gitmeye erişilmeye çalışıldığında mesela o pointer uzunluğunu kontrol ederek.
+
+40
+00:07:16,310 --> 00:07:24,160
+Doğru çok doğru söylüyorsun da geçtiğimiz hafta derste vardın değil mi?
+
+41
+00:07:24,160 --> 00:07:28,160
+Lipsafe gibi fonksiyonlarla oluyordu o.
+
+42
+00:07:28,160 --> 00:07:29,160
+Evet.
+
+43
+00:07:29,160 --> 00:07:35,160
+Yani bunların hepsini konuştuk. Hepsinin artılarını, eksilerini, nasıl olabileceğini, nasıl olamayacağını.
+
+44
+00:07:35,160 --> 00:07:40,160
+Hatta string copy'nin strn copy versiyonundan bile bahsettik.
+
+45
+00:07:40,160 --> 00:07:49,160
+Veyahut da işte Windows tarafında string copy'nin alt çizgi s olan safe versiyonundan da bahsettik.
+
+46
+00:07:49,160 --> 00:07:55,160
+Ama her birinin farklı şekilde sıkıntıları olabiliyordu. Değil mi?
+
+47
+00:07:55,160 --> 00:07:57,160
+Bunları hani gözden geçirdik.
+
+48
+00:07:57,160 --> 00:07:59,160
+Sonuçta söylediğin şey evet.
+
+49
+00:07:59,160 --> 00:08:01,160
+Ama zaten yapılan şey bu.
+
+50
+00:08:01,160 --> 00:08:05,160
+Ama yapılanın da belirli noktalarda sıkıntıları var.
+
+51
+00:08:05,160 --> 00:08:10,160
+Hep dönüp dolaşıp aynı yere geliyoruz baktığımız zaman.
+
+52
+00:08:10,160 --> 00:08:16,160
+İşte en son sen de az önce söyledin. Programı compile edemiyorsam Lipsafe kullanıyorum.
+
+53
+00:08:16,160 --> 00:08:22,160
+Ama Lipsafe'de sadece string üzerinden yapılan, string kopyalama üzerinden yapılan saldırıları.
+
+54
+00:08:22,160 --> 00:08:28,160
+Veyahut da string cat üzerinden, concatenate de bunun bir parçası.
+
+55
+00:08:29,160 --> 00:08:35,159
+İlla ki kopya olmak zorunda değil. İki stringi concatenate ettiğim yerde de bir kopyalama işlemi var.
+
+56
+00:08:35,159 --> 00:08:42,159
+Oradan da yararlanarak, oradaki kontrolsüzlükten de yararlanarak aynı şey gerçekleştirilebilir.
+
+57
+00:08:42,159 --> 00:08:46,470
+Tamam hocam sağol.
+
+58
+00:08:46,470 --> 00:08:52,470
+Evet bak [öğrenci] da yani dikkat etmemiştim anlatırken bunları konuşmuştuk sanki diye. Evet.
+
+59
+00:08:52,470 --> 00:08:59,940
+Sunumlara falan erişebiliyorsunuz değil mi? Bir sorun yok. Kayıtlı duruyor çünkü ben görebiliyorum.
+
+60
+00:08:59,940 --> 00:09:01,940
+Yani en kötü ihtimalle şey yaparsınız.
+
+61
+00:09:01,940 --> 00:09:06,940
+Dinlersiniz baştan. Ama yani bunlar spesifik olarak anlattığım şeylerdi [öğrenci].
+
+62
+00:09:06,940 --> 00:09:10,940
+Yine de aklına bir şey takılıyorsa tabii ki soracaksın. Onda bir sorun yok.
+
+63
+00:09:10,940 --> 00:09:21,279
+Okey. Şimdi bugün geçen hafta ve ondan önceki hafta anlattıklarımızın üzerine hani hep şey diyorduk ya.
+
+64
+00:09:21,279 --> 00:09:27,279
+İlk temel saldırıları bir öğrenelim. Nasıl yapılmışlar? Nelerden yararlanılmış?
+
+65
+00:09:27,279 --> 00:09:32,279
+Bunları öğrenmek niçin önemli? Bunları öğrenmek güvenli sistemler gerektiği için önemli.
+
+66
+00:09:33,279 --> 00:09:36,279
+Neyi değiştirebilmemiz açısından önemli?
+
+67
+00:09:36,279 --> 00:09:40,279
+Şimdi bu yöndeki ilk adımımızı atacağız.
+
+68
+00:09:40,279 --> 00:09:43,279
+Güvenli tasarımın kriterleri nelerdir?
+
+69
+00:09:43,279 --> 00:09:49,279
+Uygulanması, izlenmesi gereken kurallar polisi diyoruz, kurallar bütünü.
+
+70
+00:09:49,279 --> 00:09:53,279
+Bunlar nelerdir? Bunları bir gözden geçireceğiz.
+
+71
+00:09:53,279 --> 00:10:01,279
+Ve en temel noktasında işletim sistemi açısından bu kurallar nasıl uygulanıyor?
+
+72
+00:10:01,279 --> 00:10:06,279
+İşletim sistemi bize neler sağlıyor? Onları bir öğrenmiş olacağız.
+
+73
+00:10:06,279 --> 00:10:11,279
+Şimdi ekran paylaşımımızı başlatalım.
+
+74
+00:10:11,279 --> 00:10:29,750
+Evet. Bakın ister buffer overflow az önce uzun uzun tekrar konuştuğumuz gibi buffer overflow üzerinden olsun.
+
+75
+00:10:29,750 --> 00:10:31,750
+İster use after free üzerinden olsun.
+
+76
+00:10:31,750 --> 00:10:36,750
+İster null pointer yani ilklendirilmemiş veya
+
+77
+00:10:37,750 --> 00:10:43,750
+değeri sıfıra atanmış bir pointer üzerinden memori erişimi yapılarak olsun.
+
+78
+00:10:43,750 --> 00:10:50,750
+Öyle veya böyle bir saldırganın kötü niyetli kod parçası çalıştırabildiğini biliyoruz.
+
+79
+00:10:50,750 --> 00:10:59,750
+Geçen hafta, ondan önceki hafta az önce söylediğim gibi olabildiğince detaylı bir şekilde bu saldırıların analizini yaptık.
+
+80
+00:10:59,750 --> 00:11:03,750
+Nasıl gerçekleştirildiğini, nasıl tedbir alınabileceğini gördük.
+
+81
+00:11:03,750 --> 00:11:07,750
+Ama bildiğimiz değişmeyen tek bir şey var.
+
+82
+00:11:07,750 --> 00:11:12,750
+O da bütün programlarımızda hata olabilir.
+
+83
+00:11:12,750 --> 00:11:15,750
+Yani hataları tamamen ayıkladık.
+
+84
+00:11:15,750 --> 00:11:25,750
+İçinde hiç hata barındırmayan özellikle de bizim açımızdan bilişim sistemleri güvenliği açısından hata barındırmayan kodlar oluşturuyoruz.
+
+85
+00:11:25,750 --> 00:11:28,750
+Artık deme şansımız yok.
+
+86
+00:11:28,750 --> 00:11:31,750
+Öyleyse hatalarla beraber yaşayacağız.
+
+87
+00:11:31,750 --> 00:11:35,750
+Hatalar da zafiyetleri beraberinde getiriyor.
+
+88
+00:11:35,750 --> 00:11:36,750
+Bu durumda
+
+89
+00:11:37,750 --> 00:11:39,750
+Zafiyetleri biliyoruz.
+
+90
+00:11:39,750 --> 00:11:43,750
+Yani threat modelimiz, tehdit modelimizi biliyoruz.
+
+91
+00:11:43,750 --> 00:11:46,750
+Bu da güvenlik analizi açısından çok önemli.
+
+92
+00:11:46,750 --> 00:11:50,750
+Tehditin nereden geldiğini ve nasıl geldiğini bilmek önemli.
+
+93
+00:11:50,750 --> 00:11:51,750
+Bunu biliyoruz.
+
+94
+00:11:51,750 --> 00:11:59,750
+Buna göre bu tehditler devam ederken, bu tehditlerle karşılaşma risklerimiz hala da varken
+
+95
+00:11:59,750 --> 00:12:06,750
+güvenli ortamlar, güvenli çalışan sistemler oluşturabilmek için
+
+96
+00:12:06,750 --> 00:12:10,750
+hangi kurallar bütününü uygulamamız gerekiyor?
+
+97
+00:12:10,750 --> 00:12:14,750
+Şimdi yavaş yavaş bunları inceleyeceğiz.
+
+98
+00:12:14,750 --> 00:12:24,309
+Bakın, hatırlarsanız type-safe dillerden bahsettik değil mi?
+
+99
+00:12:24,309 --> 00:12:31,309
+Java bunlardan biriydi, Go bir başkasıydı, Python yine bu kategoride geçen dillerden.
+
+100
+00:12:31,309 --> 00:12:33,309
+Type-safe çok basit bir tanıma sahip.
+
+101
+00:12:33,309 --> 00:12:39,309
+Bir değişkenin tipiyle o değişkene atanmak istenen değerin,
+
+102
+00:12:39,309 --> 00:12:42,309
+bu bir değişken olabilir veyahut da bir değer olabilir.
+
+103
+00:12:42,309 --> 00:12:48,309
+Uyuşmuyorsa programlama dili ister compilation aşamasında,
+
+104
+00:12:48,309 --> 00:12:54,309
+ister interpretation aşamasında bu atamanın gerçekleşmesine izin vermiyor.
+
+105
+00:12:54,309 --> 00:12:58,309
+Tipik bool örneğini vermiştik.
+
+106
+00:12:58,309 --> 00:13:05,309
+C'deki 0 ve 0 haricindeki değerlerle Java'daki bool'un tipi örneğinde olduğu gibi.
+
+107
+00:13:05,309 --> 00:13:08,309
+Ama gelin görün ki Python,
+
+108
+00:13:08,309 --> 00:13:12,309
+Common Vulnerability and Exploit CV'yi o demek.
+
+109
+00:13:12,309 --> 00:13:17,309
+2016 yılında 5636 numaralı zafiyet raporu.
+
+110
+00:13:17,309 --> 00:13:25,309
+Integer overflow in the getData function allows attackers to trigger a heap-based buffer overflow
+
+111
+00:13:25,309 --> 00:13:31,309
+in zipimport.c by specifying a negative data size.
+
+112
+00:13:31,309 --> 00:13:37,309
+Gördüğünüz gibi çok zor belki demiştik integer overflow sıralamada biraz daha arkadaydı.
+
+113
+00:13:37,309 --> 00:13:44,309
+İkinci sıradaydı ama 2016 yılında Python'da getData fonksiyonunda
+
+114
+00:13:44,309 --> 00:13:50,309
+bir integer overflow negatif veri boyutu verdiğinizde tetiklenebiliyor.
+
+115
+00:13:50,309 --> 00:13:55,309
+Sonuçta Python'ın kendisi type-safe bir programlama dili olarak geçiyor
+
+116
+00:13:55,309 --> 00:13:59,309
+ve neredeyse günümüzde artık her yerde kullanılıyor değil mi?
+
+117
+00:13:59,309 --> 00:14:02,309
+Embedded ortamlarda da kullanılıyor.
+
+118
+00:14:02,309 --> 00:14:05,309
+Yapay zeka, veri bilimi alanlarında da kullanılıyor.
+
+119
+00:14:05,309 --> 00:14:07,309
+Kullanılmadığı yer yok.
+
+120
+00:14:07,309 --> 00:14:11,309
+Süper, Python kullanıyoruz, güvendeyiz diye düşünüyoruz.
+
+121
+00:14:11,309 --> 00:14:15,309
+Ama bu konuyu anlatırken size yine örneğini vermiştim.
+
+122
+00:14:15,309 --> 00:14:23,309
+Java'da olsa, Go'da olsa demiştim, alt tarafta C'de yazılmış kütüphanelere ihtiyaç duyuyor.
+
+123
+00:14:23,309 --> 00:14:29,309
+Veya daha da ötesinde, şu günkü örnekte gördüğünüz gibi kendisi C'de yazılmış.
+
+124
+00:14:29,309 --> 00:14:36,309
+O zaman C ile alakalı, C++ ile alakalı öğrendiğimiz zafiyetlerin,
+
+125
+00:14:37,309 --> 00:14:43,309
+herhangi bir tanesi varsa içinde, bir modülünde, bir parçasında,
+
+126
+00:14:43,309 --> 00:14:52,309
+saldırganlar oradan ilerleyip yine daha önce konuştuğumuz saldırıları başarıyla gerçekleştirebiliyorlar.
+
+127
+00:14:52,309 --> 00:15:01,309
+Ve bu hata could be triggered inside of interpreted Python scripts.
+
+128
+00:15:01,309 --> 00:15:05,309
+Python skripleri, interpreted, compiled ortam diye biliyorsunuz.
+
+129
+00:15:05,309 --> 00:15:11,309
+Bu hata Python skriplerinde kullanılabiliyor.
+
+130
+00:15:11,309 --> 00:15:20,309
+Type-safe bir dil ama kendisi işte C, C++'da yazıldığı için geldiğimiz nokta bu.
+
+131
+00:15:20,309 --> 00:15:26,309
+Öyleyse hataların varlığı karşısında bu hataları yönetmeyi,
+
+132
+00:15:26,309 --> 00:15:32,309
+bunların zafiyete dönüşmesini engellemeyi sağlamamız lazım.
+
+133
+00:15:32,309 --> 00:15:34,309
+Bunun da kuralı çok basit.
+
+134
+00:15:34,309 --> 00:15:38,309
+İlk derste de söyledim, daha sonrasında da söyledim, hep tekrar ediyorum.
+
+135
+00:15:38,309 --> 00:15:42,309
+Aslında bizim bununla alakalı çok güzel bir söylememiz var değil mi?
+
+136
+00:15:42,309 --> 00:15:46,309
+Hattı müdafaa değil, sathı müdafaa.
+
+137
+00:15:46,309 --> 00:15:50,309
+Tek bir savunma mekanizması olmaz.
+
+138
+00:15:50,309 --> 00:15:55,309
+Birden fazla savunma mekanizması olmalı ve bunlar birbirinden bağımsız
+
+139
+00:15:55,309 --> 00:15:59,309
+ama birbirlerini tamamlayan savunma mekanizmaları olmalı.
+
+140
+00:15:59,309 --> 00:16:03,309
+Bu sayede sistemin güvenliğini ve güvenirliliğini,
+
+141
+00:16:03,309 --> 00:16:07,309
+daha çok arttırmış oluyoruz.
+
+142
+00:16:07,309 --> 00:16:17,639
+Örneğin, What if there is a vulnerability in Chrome's JavaScript interpreter?
+
+143
+00:16:17,639 --> 00:16:21,639
+Chrome'un içerisinde bir JavaScript interpreter var.
+
+144
+00:16:21,639 --> 00:16:27,639
+Gelen JavaScript'i parse ediyor, anlıyor, runtime'de compile edip çalıştırıyor.
+
+145
+00:16:27,639 --> 00:16:30,639
+Burada az önce Python örneğinde olduğu gibi,
+
+146
+00:16:30,639 --> 00:16:35,639
+diyelim ki bir buffer overflow veya integer overflow sıkıntısı var.
+
+147
+00:16:36,639 --> 00:16:39,639
+Bakın dört tane madde yazmış altına.
+
+148
+00:16:39,639 --> 00:16:45,639
+Bu da farklı katmanlarda ama birbirini tamamlayan şekilde nasıl savunma yapılabileceğinin,
+
+149
+00:16:45,639 --> 00:16:53,639
+böylece tek bir hat değil de bir satıh nasıl savunma satığı oluşturulabileceğinin çok güzel örneği.
+
+150
+00:16:53,639 --> 00:16:58,639
+Chrome should prevent malicious websites from accessing other tabs.
+
+151
+00:16:58,639 --> 00:17:05,640
+Şimdi bir tabdaki JavaScript'te böyle bir zafiyetten yararlanan bir saldırı yapıldığı için,
+
+152
+00:17:05,640 --> 00:17:11,640
+bu saldırı o tabda sınırlandırılabilmeli.
+
+153
+00:17:11,640 --> 00:17:14,640
+Diğer tabların verisine erişilmesi engellenmeli.
+
+154
+00:17:14,640 --> 00:17:16,640
+Birinci kural bu. Çok önemli.
+
+155
+00:17:16,640 --> 00:17:22,640
+Çünkü burada açık olan tabda o zafiyet arka planda çalışıyor.
+
+156
+00:17:22,640 --> 00:17:24,640
+Siz diğer tabda olayın farkında değilsiniz.
+
+157
+00:17:24,640 --> 00:17:26,640
+Bankanıza erişmişsiniz.
+
+158
+00:17:26,640 --> 00:17:28,640
+Kullanıcı adınıza, şifrenize giriyorsunuz.
+
+159
+00:17:28,640 --> 00:17:31,640
+Hesap, işte para transferi, şu bu falan yapıyorsunuz.
+
+160
+00:17:31,640 --> 00:17:33,640
+Bu bilgilerin hepsi uçup gidiyor.
+
+161
+00:17:33,640 --> 00:17:35,640
+Birilerinin eline geçiyor.
+
+162
+00:17:35,640 --> 00:17:37,640
+Bunun olmaması lazım.
+
+163
+00:17:37,640 --> 00:17:41,640
+Diğer taraftan işletim sistemi seviyesinde
+
+164
+00:17:41,640 --> 00:17:46,640
+Operating system should prevent access to other processes.
+
+165
+00:17:46,640 --> 00:17:53,640
+İşletim sistemi de ki zaten işletim sistemi dersinde göreceğiz.
+
+166
+00:17:53,640 --> 00:17:56,640
+Prosesler birbirlerinden izole.
+
+167
+00:17:56,640 --> 00:18:02,640
+Özel mekanizmalar olmadığı sürece ve kullanıcılar tarafından izin verilmediği sürece
+
+168
+00:18:02,640 --> 00:18:05,640
+bir proses diğer bir prosesle etkileşemiyor bile.
+
+169
+00:18:05,640 --> 00:18:09,640
+Yani bir byte bırakın bir bit bile aralarında alıp veremiyorlar.
+
+170
+00:18:09,640 --> 00:18:13,640
+Ama bunun işletim sisteminde karşılığının olması lazım.
+
+171
+00:18:13,640 --> 00:18:15,640
+Bir başka madde.
+
+172
+00:18:15,640 --> 00:18:20,640
+Hardware should prevent permanent malware installation in device firmware.
+
+173
+00:18:20,640 --> 00:18:26,640
+Kullandığımız cihazların üzerinde o cihazların çalışmasını sağlayan işletim sistemi dersinden biliyorsunuz.
+
+174
+00:18:26,640 --> 00:18:28,640
+Controllerlar var.
+
+175
+00:18:28,640 --> 00:18:29,640
+Onların da işlemcileri var.
+
+176
+00:18:29,640 --> 00:18:32,640
+Bunların da kodunun güncellenmesi gerekebiliyor.
+
+177
+00:18:32,640 --> 00:18:34,640
+Hata düzenlemesi için.
+
+178
+00:18:34,640 --> 00:18:36,640
+Yeni özellik eklenmesi için.
+
+179
+00:18:36,640 --> 00:18:37,640
+Falan falan.
+
+180
+00:18:37,640 --> 00:18:52,980
+Şimdi öyle saldırılar var ki size sizi kandırarak donanımınızdaki bilgisayar sisteminizdeki bir parçanın firmware'ini güncelleyeceğini söylüyor.
+
+181
+00:18:52,980 --> 00:18:54,980
+Siz de o linki takip ediyorsunuz.
+
+182
+00:18:54,980 --> 00:18:55,980
+Download ediyorsunuz.
+
+183
+00:18:55,980 --> 00:18:56,980
+Çalıştırıyorsunuz.
+
+184
+00:18:56,980 --> 00:19:03,980
+Firmware'i güncelliyor ama aslında kendi kötü niyetli kodunu firmware'in içerisine gömüyor.
+
+185
+00:19:03,980 --> 00:19:04,980
+Bir disk kontrolürdü.
+
+186
+00:19:04,980 --> 00:19:05,980
+Bir disk kontrolü düşünün.
+
+187
+00:19:05,980 --> 00:19:09,980
+Bu şekilde kötü niyetli bir firmware içerisin.
+
+188
+00:19:09,980 --> 00:19:17,980
+Onun üzerinden geçen diske yazılan ve diskten okunan her türlü verinin bir kopyası başka bir tarafa gönderiliyor.
+
+189
+00:19:17,980 --> 00:19:19,980
+Felaket bir senaryo değil mi?
+
+190
+00:19:19,980 --> 00:19:21,980
+Her türlü kontrol okey.
+
+191
+00:19:21,980 --> 00:19:23,980
+Her türlü güvenlik şeyi okey.
+
+192
+00:19:23,980 --> 00:19:25,980
+Yukarıda işte prosesler var.
+
+193
+00:19:25,980 --> 00:19:27,980
+Chrome böyle çalışıyor, böyle çalışıyor.
+
+194
+00:19:27,980 --> 00:19:31,980
+Ama disk noktasına erişilirken orası bir ortak nokta.
+
+195
+00:19:31,980 --> 00:19:33,980
+Veri kopyalanıp başka yerlere gönderiliyor.
+
+196
+00:19:34,980 --> 00:19:41,980
+Benzer şekilde network should prevent malware from infecting nearby computers.
+
+197
+00:19:41,980 --> 00:20:02,980
+Genelde kişisel kullanım için değil ama kurumsal kullanımda kurumsal güvenlik politikaları uygulandığından ötürü bir bilgisayar sistemindeki açık o bilgisayar sisteminin bağlı olduğu ağdaki diğer bilgisayar sistemlerinde de yüzde doksan dokuz nokta doksan dokuz oluyor.
+
+198
+00:20:02,980 --> 00:20:03,980
+Çünkü neden?
+
+199
+00:20:03,980 --> 00:20:04,980
+Çünkü neden?
+
+200
+00:20:04,980 --> 00:20:06,980
+Erzurum'da da bu konuyla ilgili kurumsal politikalar bunu atlamış.
+
+201
+00:20:06,980 --> 00:20:07,980
+Hatayı düzeltmemiş.
+
+202
+00:20:07,980 --> 00:20:08,980
+O zaman diğerlerinde de düzeltmemiştir.
+
+203
+00:20:08,980 --> 00:20:22,980
+Bu durumda da malicious software, Malware bir bilgisayar sistemine yerleştiğinde otomatik olarak network bağlantıları üzerinden nerelere yayılabileceğine bakıyor.
+
+204
+00:20:22,980 --> 00:20:26,980
+Bulduğu anda da benzer zafiyeti o sisteme gidiyor.
+
+205
+00:20:26,980 --> 00:20:29,980
+Daha sonra diğer sisteme gidiyor, daha sonra diğer sisteme gidiyor.
+
+206
+00:20:29,980 --> 00:20:31,980
+Öyleyse burada da katmanlı bir yapı olması lazım.
+
+207
+00:20:31,980 --> 00:20:32,980
+Öncesinde öyle bir şey yok.
+
+208
+00:20:32,980 --> 00:20:33,980
+Ne yapıyorduk diye preventörlerin yapısını da küçük bir şekilde geçti.
+
+209
+00:20:33,980 --> 00:20:39,140
+network'te kurulu olan, oluşturulmuş olan bir yapıyla
+
+210
+00:20:39,140 --> 00:20:43,119
+aynı network'te yer alan sistemler arasında da
+
+211
+00:20:43,119 --> 00:20:46,859
+böyle malicious software yayılımının engellenebiliyor olması lazım.
+
+212
+00:20:47,740 --> 00:20:52,079
+Sonuç, demek ki tek bir mekanizma oluşturmayacağız,
+
+213
+00:20:52,359 --> 00:20:54,279
+birden fazla mekanizma oluşturacağız
+
+214
+00:20:54,279 --> 00:21:00,119
+ve oluşturduğumuz mekanizmalar farklı katmanlarda ama birbirini tamamlayan şekilde olacak.
+
+215
+00:21:00,119 --> 00:21:05,099
+Aynı mekanizmanın aynı katmanda farklı şekilleri olursa
+
+216
+00:21:05,099 --> 00:21:07,839
+o çok fazla bir anlam ifade etmiyor.
+
+217
+00:21:08,339 --> 00:21:13,440
+Çünkü bazen birbiriyle çelişip birinin pozitif etkisini
+
+218
+00:21:13,440 --> 00:21:16,240
+diğeri negatif hale bile dönüştürebiliyor.
+
+219
+00:21:17,900 --> 00:21:24,799
+O zaman kurallardan bir tanesini, prensiplerden bir tanesini öğrendik değil mi?
+
+220
+00:21:25,119 --> 00:21:26,579
+Defense in depth.
+
+221
+00:21:27,079 --> 00:21:29,319
+Hattı müdafaa değil, sahtı müdafaa.
+
+222
+00:21:29,319 --> 00:21:30,099
+Bu çok önemli.
+
+223
+00:21:30,119 --> 00:21:35,299
+Farklı katmanlar birbirini tamamlayan mekanizmalar.
+
+224
+00:21:36,059 --> 00:21:37,859
+Tek mekanizma olmayacak.
+
+225
+00:21:38,660 --> 00:21:42,839
+İkincisi, principle of least privilege.
+
+226
+00:21:45,589 --> 00:21:50,710
+Bir kullanıcının yapmakla yükümlü olduğu işleri,
+
+227
+00:21:51,190 --> 00:21:56,450
+yetkilendirilmiş olduğu, yapmakla yükümlü olduğu işleri
+
+228
+00:21:57,230 --> 00:22:01,450
+yapabilmesi için ihtiyaç duyduğu minimum yetki seviyelerini
+
+229
+00:22:01,910 --> 00:22:07,450
+o kullanıcının aynı zamanda maksimum yetki seviyesinde tarifler.
+
+230
+00:22:07,829 --> 00:22:09,930
+Daha fazla yetkiye ihtiyacı yoktur.
+
+231
+00:22:11,529 --> 00:22:17,029
+Bunun ötesinde, ihtiyaç duyduğu bu seviyenin ötesinde yetkisinin olması
+
+232
+00:22:17,029 --> 00:22:20,130
+güvenlik zafiyetlerini beraberinde getirir.
+
+233
+00:22:20,730 --> 00:22:24,549
+Kullanıcının yanlışlıkla bir komut çalıştırması,
+
+234
+00:22:25,349 --> 00:22:27,130
+kullanıcının kötü niyetli olması,
+
+235
+00:22:27,430 --> 00:22:31,130
+kullanıcının bu işlemleri yaptığı bilgisayar sisteminin
+
+236
+00:22:31,910 --> 00:22:34,269
+saldırıya uğrayıp ele geçirilmesi,
+
+237
+00:22:35,369 --> 00:22:42,589
+ekstra sahip olunan yetkilerin hep daha da fazla zarar oluşturmasına sebep olur.
+
+238
+00:22:43,109 --> 00:22:49,650
+Öyleyse bir işi yapmak için ihtiyaç duyulan minimum yetki seviyesi neyse
+
+239
+00:22:49,650 --> 00:22:53,150
+o aynı zamanda maksimumunu da tariflemiş demektir.
+
+240
+00:22:53,269 --> 00:22:54,569
+Daha ötesine ihtiyaç yok.
+
+241
+00:22:55,130 --> 00:22:56,769
+Buna da ne isim veriyoruz?
+
+242
+00:22:56,970 --> 00:22:57,809
+En az yetki.
+
+243
+00:22:58,390 --> 00:22:59,930
+Least privilege.
+
+244
+00:23:00,369 --> 00:23:01,890
+Gerçek hayat örneği.
+
+245
+00:23:01,910 --> 00:23:05,430
+Şimdi benim verdiğim bir sürü ders var.
+
+246
+00:23:06,130 --> 00:23:11,190
+Bu derslerdeki sizlerin notlarını sisteme girebiliyorum, işleyebiliyorum,
+
+247
+00:23:11,670 --> 00:23:14,230
+değiştirebiliyorum kurallar çerçevesinde.
+
+248
+00:23:14,910 --> 00:23:19,269
+Ama öğretim üyesi olmama rağmen diğer öğretim üyesi arkadaşlarımın
+
+249
+00:23:19,269 --> 00:23:25,490
+verdiği derslerdeki öğrencilerin, sizler bile olsanız ortak öğrenci olarak
+
+250
+00:23:25,490 --> 00:23:28,569
+hem benim dersimde hem de bir başkasının dersinde bile olsanız
+
+251
+00:23:28,569 --> 00:23:30,390
+onları değiştirme hakkım yok.
+
+252
+00:23:30,390 --> 00:23:31,829
+İşte bu bir list gri.
+
+253
+00:23:31,910 --> 00:23:33,910
+Diğer taraftan,
+
+254
+00:23:33,910 --> 00:23:39,910
+Only employees with background checks have access to classified documents.
+
+255
+00:23:39,910 --> 00:23:48,910
+Kurumlar her işe aldıkları elemanla alakalı bir güvenlik soruşturması, güvenlik taraması yaparlar.
+
+256
+00:23:48,910 --> 00:23:53,910
+Belirli kriterleri sağlayıp sağlamadığını kontrol ederler.
+
+257
+00:23:53,910 --> 00:24:00,910
+Bankada da çalışsanız böyle, poliste de çalışsanız böyle, askeriyede de çalışsanız böyle, devlet kurumunda da çalışsanız böyle.
+
+258
+00:24:00,910 --> 00:24:01,910
+Devlet kurumunda da çalışsanız böyle.
+
+259
+00:24:01,910 --> 00:24:02,910
+Değişmez.
+
+260
+00:24:02,910 --> 00:24:12,910
+Ancak bu güvenlik kontrolünden geçmiş olanlar artık yapılan güvenlik kontrol şeyine bağlı olarak,
+
+261
+00:24:12,910 --> 00:24:18,910
+o soruşturmasının detayına bağlı olarak belirli bir seviyede güvenli olarak kabul edilirler ve
+
+262
+00:24:18,910 --> 00:24:25,910
+bu kişilerin ancak o seviyeye uygun veya o seviyenin altında eşit veya altındaki
+
+263
+00:24:25,910 --> 00:24:29,910
+dökümanlara erişmesine, bilgilere erişmesine izin verilir.
+
+264
+00:24:29,910 --> 00:24:30,910
+Bu da gerçeğe doğru.
+
+265
+00:24:31,910 --> 00:24:35,910
+Öyleyse list privilege çok önemli.
+
+266
+00:24:35,910 --> 00:24:44,910
+List privilege'ın gerçekleşebilmesi için list privilege ile beraber privilege separation da olması lazım.
+
+267
+00:24:44,910 --> 00:24:47,910
+Yani yetkilerin birbirinden ayrılabilmesi.
+
+268
+00:24:47,910 --> 00:25:00,910
+Bir sistemin kendi içerisinde ihtiyaç duyulan işlem yapmak için, bir operasyon gerçekleştirmek için ihtiyaç duyulan yetki seviyeleri açısından
+
+269
+00:25:00,910 --> 00:25:06,910
+birbirinden izole edilmiş parçalara bölmemiz lazım.
+
+270
+00:25:06,910 --> 00:25:08,910
+Ne deniyor buna?
+
+271
+00:25:08,910 --> 00:25:10,910
+Privilege separation deniyor.
+
+272
+00:25:10,910 --> 00:25:13,910
+Peki bize sağladığı ne?
+
+273
+00:25:13,910 --> 00:25:21,910
+Segmenting a system into components with the least privilege needed can prevent an attacker from taking over the entire system.
+
+274
+00:25:21,910 --> 00:25:24,910
+Saldırgan başarılı bir saldırı gerçekleştirdi.
+
+275
+00:25:24,910 --> 00:25:26,910
+Kontrolü ele geçirdi.
+
+276
+00:25:26,910 --> 00:25:29,910
+Ama bu sadece bir modüldü.
+
+277
+00:25:29,910 --> 00:25:42,910
+Bu modül diğer modüllerden yetki olarak izole edildiği için, farklı bir bölümde yer aldığı için saldırgan oraya hapsolmuş olacak.
+
+278
+00:25:42,910 --> 00:25:56,910
+Bunun bize sağladığı diğer bir güzellik de, zafiyetin nerede olduğunu, saldırının nereye gerçekleştirildiğini tespit etmemiz ve tedbir almamız buna bağlı olarak tedbir almamız çok kolay başlayacak.
+
+279
+00:25:56,910 --> 00:25:58,910
+Privilege separation bazen,
+
+280
+00:25:58,910 --> 00:26:01,910
+compartmentalization diye de geçer.
+
+281
+00:26:01,910 --> 00:26:07,910
+Yani kompartmanlara ayırma, bölümlere ayırma.
+
+282
+00:26:07,910 --> 00:26:20,910
+Şimdi least privilege'ı tariflerken şuraya dikkat edin.
+
+283
+00:26:20,910 --> 00:26:28,910
+Users should only have access to the data and resources needed to perform routine authorized tasks dedik.
+
+284
+00:26:28,910 --> 00:26:31,910
+Orada users kullanıcı kelimesi var.
+
+285
+00:26:31,910 --> 00:26:35,910
+Ancak bunu genişletebiliriz.
+
+286
+00:26:36,910 --> 00:26:38,910
+Subject diyebiliriz.
+
+287
+00:26:38,910 --> 00:26:44,910
+Şimdi security'de, güvenlikte subject, object, operation var.
+
+288
+00:26:44,910 --> 00:26:46,910
+Bu üçünü unutmuyorsunuz.
+
+289
+00:26:46,910 --> 00:26:50,910
+Subject, operasyonu gerçekleştiren.
+
+290
+00:26:50,910 --> 00:26:56,910
+Object, operasyonun gerçekleştirildiği kaynak.
+
+291
+00:26:56,910 --> 00:27:00,910
+Operasyon da adı üzerinde yapılan işlem.
+
+292
+00:27:00,910 --> 00:27:05,910
+Bakın, burada zaman zaman Unix yazıyor, zaman zaman Linux yazıyor.
+
+293
+00:27:05,910 --> 00:27:07,910
+Fark etmiyor.
+
+294
+00:27:07,910 --> 00:27:13,910
+Zaten Linux, Unix'ten türetilmiş bir yapı işletim sistemi olarak.
+
+295
+00:27:13,910 --> 00:27:16,910
+O yüzden hani Unix yazan yere Linux diye de bakabilirsiniz.
+
+296
+00:27:16,910 --> 00:27:21,910
+Diğer Unix sürümlerini de işin içine katabilirsiniz.
+
+297
+00:27:21,910 --> 00:27:25,910
+Eğer farklı bir nokta varsa ben zaten size onu açıklarım.
+
+298
+00:27:25,910 --> 00:27:27,910
+Unix için diyor ki,
+
+299
+00:27:27,910 --> 00:27:31,910
+A user should only be able to read their own files.
+
+300
+00:27:31,910 --> 00:27:35,910
+Bir kullanıcı sadece kendine ait dosyaları okuyabilmeli.
+
+301
+00:27:35,910 --> 00:27:38,910
+Burada okumak operasyonun kendisi.
+
+302
+00:27:38,910 --> 00:27:40,910
+Birazdan ayrıntılı göreceğiz.
+
+303
+00:27:40,910 --> 00:27:41,910
+Yine Unix için,
+
+304
+00:27:41,910 --> 00:27:45,910
+A process should not be able to read another process's memory.
+
+305
+00:27:45,910 --> 00:27:48,910
+Evet, başka bir prosesin memorisine erişmemeli.
+
+306
+00:27:48,910 --> 00:27:49,910
+Çok doğru.
+
+307
+00:27:49,910 --> 00:27:50,910
+Ama mobil tarafında bakın,
+
+308
+00:27:50,910 --> 00:27:59,640
+An app uygulama bir sürü, yüzlerce tablette, telefonda yüzlerce, binlerce uygulama var.
+
+309
+00:27:59,640 --> 00:28:03,640
+An app should not be able to edit another app's data.
+
+310
+00:28:03,640 --> 00:28:06,640
+Bir uygulamanın verisini bir başka uygulama değiştirememeli.
+
+311
+00:28:07,640 --> 00:28:08,640
+Ve
+
+312
+00:28:08,640 --> 00:28:12,640
+A domain should only be able to read its own cookie.
+
+313
+00:28:12,640 --> 00:28:15,640
+Şimdi domain, cookie nasıl eşleşiyor?
+
+314
+00:28:15,640 --> 00:28:17,640
+Aslında domain'in bir server'ı var.
+
+315
+00:28:17,640 --> 00:28:20,640
+Ben o server'a bağlandığımda daha sonra beni hatırlamak adına,
+
+316
+00:28:20,640 --> 00:28:27,640
+Beni tekrar gittiğim zaman aynı server'a kaldığım yerden devam ettirebilmek adına,
+
+317
+00:28:27,640 --> 00:28:30,640
+Bana özel bir takım bilgiler gönderiyor.
+
+318
+00:28:30,640 --> 00:28:35,640
+Bu bilgileri kendisi kullanmak için gönderdiğine göre,
+
+319
+00:28:35,640 --> 00:28:40,640
+Diyelim ki Google'ın gönderdiğini, Zoom'un gönderdiğini Google kullanamamalı.
+
+320
+00:28:40,640 --> 00:28:42,640
+Hiçbir fark yok.
+
+321
+00:28:42,640 --> 00:28:49,640
+Yani bir kullanıcının sadece kendi dosyalarına erişebilmesinden, okuyup yazabilmesinden hiçbir farkı yok.
+
+322
+00:28:49,640 --> 00:28:52,640
+O zaman Least Privilege kavramında,
+
+323
+00:28:52,640 --> 00:28:56,640
+Users yerine ne kullanıyoruz arkadaşlar?
+
+324
+00:28:56,640 --> 00:28:57,640
+Subjects.
+
+325
+00:28:57,640 --> 00:29:03,640
+Bu bir kullanıcı olabilir, bir proses olabilir, bir application olabilir, bir domain olabilir.
+
+326
+00:29:03,640 --> 00:29:04,640
+Yani,
+
+327
+00:29:04,640 --> 00:29:09,640
+Bir kaynak üzerinde işlem yapacak her türlü varlık.
+
+328
+00:29:09,640 --> 00:29:10,640
+Bu kadar basit.
+
+329
+00:29:10,640 --> 00:29:12,640
+Bu bir program parçası.
+
+330
+00:29:12,640 --> 00:29:13,640
+Bu bir kullanıcı.
+
+331
+00:29:13,640 --> 00:29:14,640
+Bu bir,
+
+332
+00:29:14,640 --> 00:29:20,640
+Hani machine to machine'den de bahsetmiştik ya, IoT falan, artık cihazlar da birbirleriyle konuşuyorlar.
+
+333
+00:29:20,640 --> 00:29:24,640
+Bu bir IoT tarzında cihaz da olabilir.
+
+334
+00:29:24,640 --> 00:29:26,640
+Machine to machine'deki machine de olabilir.
+
+335
+00:29:29,099 --> 00:29:31,099
+Üç tane şimdi unutmayın demiştim.
+
+336
+00:29:31,099 --> 00:29:33,099
+Subject, Object, Operation.
+
+337
+00:29:33,099 --> 00:29:35,099
+Aslında bu üç tane şey,
+
+338
+00:29:35,099 --> 00:29:37,099
+Üç sorunun cevabı.
+
+339
+00:29:37,099 --> 00:29:41,099
+Who? What? How?
+
+340
+00:29:41,099 --> 00:29:43,099
+Kim?
+
+341
+00:29:43,099 --> 00:29:45,099
+Kullanıcı, uygulama, proses.
+
+342
+00:29:45,099 --> 00:29:46,099
+Ne?
+
+343
+00:29:46,099 --> 00:29:49,099
+Memori, dosya, donanım cihazları.
+
+344
+00:29:49,099 --> 00:29:51,099
+Nasıl?
+
+345
+00:29:51,099 --> 00:29:55,740
+İşte okuyacak, yazacak.
+
+346
+00:29:55,740 --> 00:29:58,740
+Bakın, ilk sayfadaki cümleler,
+
+347
+00:29:58,740 --> 00:30:00,740
+Aynen burada var.
+
+348
+00:30:00,740 --> 00:30:01,740
+Ancak,
+
+349
+00:30:01,740 --> 00:30:05,740
+Subject, Object, Operation şeklinde renklendirilmiş.
+
+350
+00:30:05,740 --> 00:30:08,740
+User, Subject, Delete, Operation.
+
+351
+00:30:08,740 --> 00:30:09,740
+Files, Object.
+
+352
+00:30:09,740 --> 00:30:11,740
+Process, Subject.
+
+353
+00:30:11,740 --> 00:30:12,740
+Read, Operation.
+
+354
+00:30:12,740 --> 00:30:14,740
+Memory, Object.
+
+355
+00:30:14,740 --> 00:30:16,740
+App, Subject.
+
+356
+00:30:16,740 --> 00:30:18,740
+Edit, Operation.
+
+357
+00:30:18,740 --> 00:30:20,740
+Data, Object.
+
+358
+00:30:20,740 --> 00:30:23,740
+Domain, Subject.
+
+359
+00:30:23,740 --> 00:30:25,740
+Read, Operation.
+
+360
+00:30:25,740 --> 00:30:28,740
+Cookie de, Object.
+
+361
+00:30:28,740 --> 00:30:31,740
+Böyle, bu gözle bakmak lazım.
+
+362
+00:30:31,740 --> 00:30:34,740
+Peki, bu Subject, Object ve Operation niye önemli?
+
+363
+00:30:34,740 --> 00:30:36,740
+Güvenlik kurallarımızı,
+
+364
+00:30:36,740 --> 00:30:41,740
+tariflerken bu üçlüden yararlanıyoruz.
+
+365
+00:30:41,740 --> 00:30:44,740
+Kontrol ederken bu üçlüden yararlanıyoruz.
+
+366
+00:30:44,740 --> 00:30:48,740
+Analiz ederken bir sıkıntı olduğunda bu üçlüden yararlanıyoruz.
+
+367
+00:30:48,740 --> 00:30:50,740
+Bir durum oluştu.
+
+368
+00:30:50,740 --> 00:30:54,740
+O zaman, niçin oluştuğunun cevabını verirken,
+
+369
+00:30:54,740 --> 00:30:58,740
+şu üçü arasındaki hangi ilişkide sıkıntı vardı?
+
+370
+00:30:58,740 --> 00:31:00,740
+Hangi ilişki eksikti?
+
+371
+00:31:00,740 --> 00:31:04,740
+Bunun cevabını vermemiz çok önem taşıyor.
+
+372
+00:31:04,740 --> 00:31:09,000
+Şimdi,
+
+373
+00:31:09,000 --> 00:31:12,000
+Unix Security modele geçiyoruz.
+
+374
+00:31:12,000 --> 00:31:14,000
+Bu arada,
+
+375
+00:31:14,000 --> 00:31:17,000
+haftaya yapılacak olan
+
+376
+00:31:17,000 --> 00:31:20,000
+Buffer Overflow uygulamasının akabinde,
+
+377
+00:31:20,000 --> 00:31:22,000
+onu tamamladığımız zaman,
+
+378
+00:31:22,000 --> 00:31:24,000
+o işte bir hafta olur,
+
+379
+00:31:24,000 --> 00:31:26,000
+iki hafta olur, bilmiyorum.
+
+380
+00:31:26,000 --> 00:31:31,000
+Zamanlamasına ve şeye bağlı olarak arkadaşlar onu ayarlıyorlar.
+
+381
+00:31:31,000 --> 00:31:35,000
+Arkasından, bu güvenlik modelleriyle de alakalı
+
+382
+00:31:35,000 --> 00:31:37,000
+Unix'teki Windows'ta,
+
+383
+00:31:37,000 --> 00:31:39,000
+onunla da alakalı bir uygulama var.
+
+384
+00:31:39,000 --> 00:31:41,000
+Bu uygulama yapacağız.
+
+385
+00:31:41,000 --> 00:31:45,000
+Ondan ötürü bazı noktaları biraz hızlı geçebiliriz.
+
+386
+00:31:45,000 --> 00:31:48,000
+Çünkü uygulamada ayrıntılı bir şekilde daha net,
+
+387
+00:31:48,000 --> 00:31:51,000
+kendiniz de uygulayıp göreceksiniz.
+
+388
+00:31:51,000 --> 00:31:54,000
+Ama ben burada size uygulamayı da anlayabilmeniz,
+
+389
+00:31:54,000 --> 00:31:57,000
+artık konuyu da anlayabilmeniz adına
+
+390
+00:31:57,000 --> 00:32:00,000
+genel bilgileri de vereceğim.
+
+391
+00:32:00,000 --> 00:32:02,000
+Şimdi,
+
+392
+00:32:02,000 --> 00:32:05,920
+Unix'te,
+
+393
+00:32:05,920 --> 00:32:08,920
+Subject yani Q sorusunun cevabı ne?
+
+394
+00:32:08,920 --> 00:32:11,920
+Kullanıcılar ve prosesler.
+
+395
+00:32:11,920 --> 00:32:14,920
+Object sorusunun cevabı ne?
+
+396
+00:32:14,920 --> 00:32:18,920
+En temel haliyle dosyalar ve direktörler.
+
+397
+00:32:18,920 --> 00:32:19,920
+Ama,
+
+398
+00:32:19,920 --> 00:32:21,920
+Unix'in yapısından ötürü,
+
+399
+00:32:21,920 --> 00:32:24,920
+network erişimi sağladığımız soketler,
+
+400
+00:32:24,920 --> 00:32:27,920
+prosesler arası haberleşmeyi sağlayan pipe,
+
+401
+00:32:27,920 --> 00:32:29,920
+boru hatları,
+
+402
+00:32:29,920 --> 00:32:31,920
+donanım cihazları,
+
+403
+00:32:31,920 --> 00:32:33,920
+kernel'deki objekler,
+
+404
+00:32:33,920 --> 00:32:35,920
+bir prosesin verisi,
+
+405
+00:32:35,920 --> 00:32:38,920
+aklınıza gelebilecek, erişilip kullanılabilen,
+
+406
+00:32:38,920 --> 00:32:40,920
+her türlü kaynak,
+
+407
+00:32:40,920 --> 00:32:42,920
+ne olarak görünüyor arkadaşlar Unix'te?
+
+408
+00:32:42,920 --> 00:32:44,920
+Bir file olarak görünüyor.
+
+409
+00:32:44,920 --> 00:32:46,920
+Çünkü file'lar,
+
+410
+00:32:46,920 --> 00:32:48,920
+ya karakter olarak erişilebiliyor,
+
+411
+00:32:48,920 --> 00:32:51,920
+ya stream, bir akış şeklinde erişilebiliyor.
+
+412
+00:32:51,920 --> 00:32:53,920
+O yüzden,
+
+413
+00:32:53,920 --> 00:32:55,920
+şuradaki verileri,
+
+414
+00:32:55,920 --> 00:32:57,920
+ya karakter byte-byte erişiyoruz,
+
+415
+00:32:57,920 --> 00:32:59,920
+ya da bir akış olarak erişiyoruz.
+
+416
+00:32:59,920 --> 00:33:00,920
+Yani sonuçta,
+
+417
+00:33:00,920 --> 00:33:01,920
+Unix'te,
+
+418
+00:33:01,920 --> 00:33:03,920
+her türlü kaynak,
+
+419
+00:33:03,920 --> 00:33:05,920
+bir file'e denk düşüyor.
+
+420
+00:33:05,920 --> 00:33:07,920
+Peki operasyon,
+
+421
+00:33:07,920 --> 00:33:10,920
+Unix'te üç tane operasyon var.
+
+422
+00:33:10,920 --> 00:33:13,920
+Read, Write, Execute.
+
+423
+00:33:13,920 --> 00:33:18,200
+Şimdi kullanıcılar.
+
+424
+00:33:18,200 --> 00:33:20,200
+Kullanıcıları kendi içinde,
+
+425
+00:33:20,200 --> 00:33:22,200
+temel iki gruba ayırıyoruz.
+
+426
+00:33:22,200 --> 00:33:24,200
+Bu sadece Unix için değil,
+
+427
+00:33:24,200 --> 00:33:26,200
+diğer işletim sistemleri için de geçerli.
+
+428
+00:33:26,200 --> 00:33:28,200
+Bunlardan biri,
+
+429
+00:33:28,200 --> 00:33:30,200
+servis kullanıcıları.
+
+430
+00:33:30,200 --> 00:33:33,200
+Örneğin, web server çalıştıracağım.
+
+431
+00:33:33,200 --> 00:33:36,200
+Ona öyle bir isim veriyorum ki,
+
+432
+00:33:36,200 --> 00:33:38,200
+o isimden bunu,
+
+433
+00:33:38,200 --> 00:33:42,200
+web server'la alakalı bir kullanıcı olduğunu anlıyorum.
+
+434
+00:33:42,200 --> 00:33:45,200
+Ve görevi de o kullanıcının,
+
+435
+00:33:45,200 --> 00:33:47,200
+web server'ı çalıştırmak.
+
+436
+00:33:47,200 --> 00:33:50,200
+Rastgele bir isim vermektense,
+
+437
+00:33:50,200 --> 00:33:54,200
+o görevi tarifleyen bir isim vermek,
+
+438
+00:33:54,200 --> 00:33:55,200
+daha anlamlı oluyor.
+
+439
+00:33:55,200 --> 00:33:57,200
+Diğeri ise,
+
+440
+00:33:57,200 --> 00:33:59,200
+bizler gibi,
+
+441
+00:33:59,200 --> 00:34:02,200
+insana denk düşen kullanıcılar,
+
+442
+00:34:02,200 --> 00:34:04,200
+yani bir servise değil de,
+
+443
+00:34:04,200 --> 00:34:06,200
+insanın kendisine denk düşen kullanıcılar.
+
+444
+00:34:06,200 --> 00:34:07,200
+Ama ister,
+
+445
+00:34:07,200 --> 00:34:09,199
+servis account olsun,
+
+446
+00:34:09,199 --> 00:34:10,199
+ister,
+
+447
+00:34:10,199 --> 00:34:11,199
+user account olsun,
+
+448
+00:34:11,199 --> 00:34:13,199
+her account'un,
+
+449
+00:34:13,199 --> 00:34:15,199
+sistemde tariflenmesi için,
+
+450
+00:34:15,199 --> 00:34:17,199
+bir integer karşılığı var.
+
+451
+00:34:17,199 --> 00:34:19,199
+Tekil bir değer.
+
+452
+00:34:19,199 --> 00:34:21,199
+Buna da user ID diyoruz.
+
+453
+00:34:21,199 --> 00:34:23,199
+Sıfır değeri,
+
+454
+00:34:23,199 --> 00:34:25,199
+rezerve edilmiş bir değer.
+
+455
+00:34:25,199 --> 00:34:27,199
+Ve bununla denk düşen,
+
+456
+00:34:27,199 --> 00:34:29,199
+ismi root.
+
+457
+00:34:29,199 --> 00:34:31,199
+İşin şey tarafı,
+
+458
+00:34:31,199 --> 00:34:33,199
+root ismini değiştirebilirsiniz ama,
+
+459
+00:34:33,199 --> 00:34:35,199
+ona denk düşen,
+
+460
+00:34:35,199 --> 00:34:37,199
+sıfır değerini,
+
+461
+00:34:37,199 --> 00:34:43,199
+değiştiremezsiniz.
+
+462
+00:34:43,199 --> 00:34:45,199
+Bir saniye arkadaşlar, geliyorum hemen.
+
+463
+00:34:45,199 --> 00:35:22,340
+Şimdi devam ediyoruz.
+
+464
+00:35:22,340 --> 00:35:23,340
+Öyleyse,
+
+465
+00:35:23,340 --> 00:35:25,340
+root kullanıcısının root olarak,
+
+466
+00:35:25,340 --> 00:35:27,340
+ismini değiştirebiliyor olmamıza rağmen,
+
+467
+00:35:27,340 --> 00:35:30,340
+sıfır değerini değiştiremiyoruz.
+
+468
+00:35:30,340 --> 00:35:33,340
+Bu, hardcoded dediğimiz,
+
+469
+00:35:33,340 --> 00:35:36,340
+işletim sisteminin kernel'ında,
+
+470
+00:35:36,340 --> 00:35:39,340
+kodlanmış ve değiştiremeyeceğimiz bir değer.
+
+471
+00:35:39,340 --> 00:35:40,340
+Ama çoğunlukla,
+
+472
+00:35:40,340 --> 00:35:42,340
+root kullanıcısının adını da değiştirmeye gerek yok.
+
+473
+00:35:42,340 --> 00:35:44,340
+Root olarak kalıyor.
+
+474
+00:35:47,090 --> 00:35:48,090
+Örnek verilmiş.
+
+475
+00:35:48,090 --> 00:35:51,090
+Unix'de, Linux'da,
+
+476
+00:35:51,090 --> 00:35:53,090
+bütün kullanıcılar,
+
+477
+00:35:53,090 --> 00:35:55,090
+ETC altında,
+
+478
+00:35:55,090 --> 00:35:57,090
+PES-VD dosyasında tanımlı.
+
+479
+00:35:57,090 --> 00:35:59,090
+Bakın, en üst satırda root kullanıcısı var,
+
+480
+00:35:59,090 --> 00:36:01,090
+az önce bahsettiğimiz.
+
+481
+00:36:01,090 --> 00:36:03,090
+Sonraki üç satır,
+
+482
+00:36:03,090 --> 00:36:05,090
+servis account'ları tarifliyor.
+
+483
+00:36:05,090 --> 00:36:07,090
+İşte, wwwdata,
+
+484
+00:36:07,090 --> 00:36:09,090
+backup, system değil,
+
+485
+00:36:09,090 --> 00:36:11,090
+Resolve.
+
+486
+00:36:11,090 --> 00:36:13,090
+wwwdata, tahmin edeceğiniz üzere,
+
+487
+00:36:13,090 --> 00:36:15,090
+web server'la alakalı.
+
+488
+00:36:15,090 --> 00:36:17,090
+Backup sistemin yediğinin, backup'ının alınmasıyla alakalı.
+
+489
+00:36:17,090 --> 00:36:19,090
+System değil, Resolve'da,
+
+490
+00:36:19,090 --> 00:36:21,090
+DNS, Domain Name System,
+
+491
+00:36:21,090 --> 00:36:23,090
+adreslerin,
+
+492
+00:36:23,090 --> 00:36:25,090
+isimlerin adres,
+
+493
+00:36:25,090 --> 00:36:27,090
+adreslerin isim karşılığının bulunmasıyla alakalı.
+
+494
+00:36:27,090 --> 00:36:30,090
+Burada bir tek şeye dikkat edin.
+
+495
+00:36:30,090 --> 00:36:34,090
+Şurada kullanıcı sisteme bağlandığında,
+
+496
+00:36:34,090 --> 00:36:36,090
+çalışacak olan,
+
+497
+00:36:36,090 --> 00:36:38,090
+Shell tariflenmiş.
+
+498
+00:36:38,090 --> 00:36:40,090
+İşte, 1005'miş.
+
+499
+00:36:40,090 --> 00:36:42,090
+Ve buralarda bakın ne var?
+
+500
+00:36:42,090 --> 00:36:44,090
+USRSB no login.
+
+501
+00:36:44,090 --> 00:36:45,090
+Yani, bu şu anlama geliyor.
+
+502
+00:36:45,090 --> 00:36:46,090
+Bu kullanıcılar,
+
+503
+00:36:46,090 --> 00:36:48,090
+sisteme interaktif olarak bağlanamazlar.
+
+504
+00:36:48,090 --> 00:36:50,090
+Sistemde proses başlatırlar,
+
+505
+00:36:50,090 --> 00:36:52,090
+sonlandırırlar,
+
+506
+00:36:52,090 --> 00:36:54,090
+kaynaklara erişirler ama,
+
+507
+00:36:54,090 --> 00:36:56,090
+interaktif olarak bağlanamazlar.
+
+508
+00:36:56,090 --> 00:36:58,090
+Aşağıdaki iki kullanıcı da,
+
+509
+00:36:58,090 --> 00:37:00,090
+normal, bildiğimiz insan.
+
+510
+00:37:00,090 --> 00:37:02,090
+İşte, birinin adı Zakir'miş,
+
+511
+00:37:02,090 --> 00:37:04,090
+öbürünün adı Deboy'muş.
+
+512
+00:37:04,090 --> 00:37:06,090
+Şurada da bakın, şeyleri var.
+
+513
+00:37:06,090 --> 00:37:08,090
+Gerçek hayattaki isimleri var.
+
+514
+00:37:08,090 --> 00:37:10,090
+Zakir kullanıcısı,
+
+515
+00:37:10,090 --> 00:37:12,090
+sisteme interaktif olarak bağlanıyor.
+
+516
+00:37:12,090 --> 00:37:14,090
+1005, ama diğer,
+
+517
+00:37:14,090 --> 00:37:16,090
+işte bu Dan, Bonnie,
+
+518
+00:37:16,090 --> 00:37:18,090
+şeye bağlanamıyor.
+
+519
+00:37:18,090 --> 00:37:20,090
+O şekilde tariflenmiş.
+
+520
+00:37:20,090 --> 00:37:22,090
+Bunların hepsi,
+
+521
+00:37:22,090 --> 00:37:24,090
+aslında bir seviye daha,
+
+522
+00:37:24,090 --> 00:37:26,090
+güvenliği arttırıyor.
+
+523
+00:37:26,090 --> 00:37:28,090
+Çünkü, web servisi veren,
+
+524
+00:37:28,090 --> 00:37:30,090
+servis veren,
+
+525
+00:37:30,090 --> 00:37:32,090
+bir kullanıcının,
+
+526
+00:37:32,090 --> 00:37:34,090
+sistemde interaktif bir işi,
+
+527
+00:37:34,090 --> 00:37:36,090
+yoktur.
+
+528
+00:37:36,090 --> 00:37:38,090
+Öyle düşünün.
+
+529
+00:37:38,090 --> 00:37:40,090
+Gruplar,
+
+530
+00:37:40,090 --> 00:37:42,090
+tarifi yazıyor zaten,
+
+531
+00:37:42,090 --> 00:37:44,090
+collection of users,
+
+532
+00:37:44,090 --> 00:37:46,090
+who can share files,
+
+533
+00:37:46,090 --> 00:37:48,090
+and other system resources.
+
+534
+00:37:48,090 --> 00:37:50,090
+Belirli dosyalara erişim,
+
+535
+00:37:50,090 --> 00:37:52,090
+paylaşım hakkı olan,
+
+536
+00:37:52,090 --> 00:37:54,090
+veya
+
+537
+00:37:54,090 --> 00:37:56,090
+belirli kaynakları ortak kullanmaya
+
+538
+00:37:56,090 --> 00:37:58,090
+hakkı olan,
+
+539
+00:37:58,090 --> 00:38:00,090
+kullanıcılar bütünü.
+
+540
+00:38:02,090 --> 00:38:04,090
+Grupun daha böyle,
+
+541
+00:38:04,090 --> 00:38:06,090
+havalı bir isim karşılığı da var,
+
+542
+00:38:06,090 --> 00:38:08,090
+ona da rol diyoruz.
+
+543
+00:38:08,090 --> 00:38:10,090
+Yani, benzer bir role sahip,
+
+544
+00:38:10,090 --> 00:38:12,090
+kullanıcılar bütünü,
+
+545
+00:38:12,090 --> 00:38:14,090
+ona da grup veya
+
+546
+00:38:14,090 --> 00:38:16,090
+ismi veriliyor.
+
+547
+00:38:16,090 --> 00:38:18,090
+İşte sizler mesela,
+
+548
+00:38:18,090 --> 00:38:20,090
+öğrenci olarak bir rolesiniz,
+
+549
+00:38:20,090 --> 00:38:22,090
+biz öğretim üyesi olarak bir başka rolyuz.
+
+550
+00:38:22,090 --> 00:38:24,090
+O zaman, bir sonraki slide ile birleştireceğim.
+
+551
+00:38:24,090 --> 00:38:26,090
+Orada daha şey anlayacaksınız.
+
+552
+00:38:26,090 --> 00:38:28,090
+Diyebiliyorum ki,
+
+553
+00:38:28,090 --> 00:38:30,090
+bazı yetkileri role vereyim,
+
+554
+00:38:30,090 --> 00:38:32,090
+kullanıcının,
+
+555
+00:38:32,090 --> 00:38:34,090
+rolü değişirse,
+
+556
+00:38:34,090 --> 00:38:36,090
+o zaman onu,
+
+557
+00:38:36,090 --> 00:38:38,090
+A rolünden B rolüne aktardığımda,
+
+558
+00:38:38,090 --> 00:38:40,090
+yetkilerini güncellemekle
+
+559
+00:38:40,090 --> 00:38:42,090
+uğraşmıyorum. Çünkü neden?
+
+560
+00:38:42,090 --> 00:38:44,090
+Yetkiler rollere verilmiş durumda.
+
+561
+00:38:44,090 --> 00:38:46,090
+Onlar üzerinden ilerlesin.
+
+562
+00:38:48,090 --> 00:38:50,090
+Grup tarafına bakacak olursak,
+
+563
+00:38:50,090 --> 00:38:54,099
+her grubun da bir
+
+564
+00:38:54,099 --> 00:38:56,099
+tekil ID'si var ve doğal olarak
+
+565
+00:38:56,099 --> 00:38:58,099
+bir ismi var.
+
+566
+00:38:58,099 --> 00:39:00,099
+ETC grup dosyasında
+
+567
+00:39:00,099 --> 00:39:02,099
+tutuluyor grup bilgisi.
+
+568
+00:39:02,099 --> 00:39:04,099
+Bakın, root, demon,
+
+569
+00:39:04,099 --> 00:39:06,099
+bin, sys, adm,
+
+570
+00:39:06,099 --> 00:39:08,099
+tty, işte 0, 1, 2, 3,
+
+571
+00:39:08,099 --> 00:39:10,099
+4, 5 şeklinde.
+
+572
+00:39:10,099 --> 00:39:12,099
+Şurada şeye dikkat edin,
+
+573
+00:39:12,099 --> 00:39:14,099
+adm grubunun üyesi
+
+574
+00:39:14,099 --> 00:39:16,099
+syslog'muş. Bu da bunu
+
+575
+00:39:16,099 --> 00:39:18,099
+ifade ediyor. Yani
+
+576
+00:39:18,099 --> 00:39:20,099
+son iki nokta üst üsteden
+
+577
+00:39:20,099 --> 00:39:22,099
+sonra gelenler virgülle
+
+578
+00:39:22,099 --> 00:39:24,099
+ayrılmış olarak o grubun
+
+579
+00:39:24,099 --> 00:39:26,099
+üyeleri.
+
+580
+00:39:26,099 --> 00:39:28,099
+Unix'te bir kullanıcı
+
+581
+00:39:28,099 --> 00:39:30,099
+sadece bir gruba üye
+
+582
+00:39:30,099 --> 00:39:32,099
+olabiliyor. Bir başka gruba üye
+
+583
+00:39:32,099 --> 00:39:36,219
+olamıyor. Dosyanın
+
+584
+00:39:36,219 --> 00:39:38,219
+Unix'te herhangi bir
+
+585
+00:39:38,219 --> 00:39:40,219
+dosyanın, yalnız dosya deyince neleri
+
+586
+00:39:40,219 --> 00:39:42,219
+kastettiğimizi hatırlayın, bir sürü
+
+587
+00:39:42,219 --> 00:39:44,219
+şeyi kastediyoruz. İşte
+
+588
+00:39:44,219 --> 00:39:46,219
+socket, device, file,
+
+589
+00:39:46,219 --> 00:39:50,099
+bunların hepsi. Bir
+
+590
+00:39:50,099 --> 00:39:52,099
+kullanıcı olarak sahibi var, bir de
+
+591
+00:39:52,099 --> 00:39:54,099
+grup olarak sahibi var.
+
+592
+00:39:54,099 --> 00:39:56,099
+Şurada kırmızıyla
+
+593
+00:39:56,099 --> 00:39:58,099
+gösterilmiş olan
+
+594
+00:39:58,099 --> 00:40:00,099
+sütun kullanıcı
+
+595
+00:40:00,099 --> 00:40:02,099
+sahibini, user olması
+
+596
+00:40:02,099 --> 00:40:04,099
+belirtiyor. Sarı
+
+597
+00:40:04,099 --> 00:40:06,099
+okla gösterilmiş olan kısım da
+
+598
+00:40:06,099 --> 00:40:08,099
+grup
+
+599
+00:40:08,099 --> 00:40:10,099
+sahibini gösteriyor.
+
+600
+00:40:10,099 --> 00:40:12,099
+İşte bakın
+
+601
+00:40:12,099 --> 00:40:14,099
+homework bir directory,
+
+602
+00:40:14,099 --> 00:40:16,099
+grades bir directory,
+
+603
+00:40:16,099 --> 00:40:18,099
+lectures bir directory,
+
+604
+00:40:18,099 --> 00:40:23,239
+test PI
+
+605
+00:40:23,239 --> 00:40:25,239
+ise bir file, sıradan bir file.
+
+606
+00:40:25,239 --> 00:40:27,239
+Hepsinin user olumları
+
+607
+00:40:27,239 --> 00:40:29,239
+zakir, ancak
+
+608
+00:40:29,239 --> 00:40:31,239
+homework'in ve lectures'in
+
+609
+00:40:31,239 --> 00:40:33,239
+group olumları
+
+610
+00:40:33,239 --> 00:40:35,239
+CS155
+
+611
+00:40:35,239 --> 00:40:37,239
+teaching assistant'mış.
+
+612
+00:40:37,239 --> 00:40:39,239
+Grades'in
+
+613
+00:40:39,239 --> 00:40:41,239
+group olumları
+
+614
+00:40:41,239 --> 00:40:43,239
+CS155 instructor'mış.
+
+615
+00:40:43,239 --> 00:40:45,239
+Test PI'nin
+
+616
+00:40:45,239 --> 00:40:47,239
+şeyde, group olumları
+
+617
+00:40:47,239 --> 00:40:55,769
+da Dave olmuş.
+
+618
+00:40:55,769 --> 00:40:57,769
+Peki, erişim
+
+619
+00:40:57,769 --> 00:40:59,769
+kontrolüne gelecek olursak,
+
+620
+00:40:59,769 --> 00:41:01,769
+hani söyledik ya, subject var,
+
+621
+00:41:01,769 --> 00:41:05,050
+object var, operation var.
+
+622
+00:41:05,050 --> 00:41:07,050
+Erişim kontrolü açısından
+
+623
+00:41:07,050 --> 00:41:09,050
+user olumları öğrendik,
+
+624
+00:41:09,050 --> 00:41:11,050
+group olumları öğrendik. Unix'te
+
+625
+00:41:11,050 --> 00:41:13,050
+bir de bunların dışında olan da
+
+626
+00:41:13,050 --> 00:41:16,869
+other.
+
+627
+00:41:16,869 --> 00:41:18,869
+Üç tane operasyon
+
+628
+00:41:18,869 --> 00:41:20,869
+gerçekleştirebilirler
+
+629
+00:41:20,869 --> 00:41:22,869
+kullanıcılar
+
+630
+00:41:22,869 --> 00:41:24,869
+veya subjectler diyelim.
+
+631
+00:41:24,869 --> 00:41:26,869
+Read, write, execute.
+
+632
+00:41:26,869 --> 00:41:30,949
+Bunu en başta söylemiştik.
+
+633
+00:41:30,949 --> 00:41:32,949
+Erişim iznini
+
+634
+00:41:32,949 --> 00:41:34,949
+sadece owner değiştirebilir,
+
+635
+00:41:34,949 --> 00:41:36,949
+sahip değiştirebilir,
+
+636
+00:41:36,949 --> 00:41:38,949
+o kaynağın
+
+637
+00:41:38,949 --> 00:41:40,949
+sahibi kimse, o değiştirebilir.
+
+638
+00:41:40,949 --> 00:41:42,949
+Ama diğer taraftan
+
+639
+00:41:42,949 --> 00:41:44,949
+root kullanıcısı da
+
+640
+00:41:44,949 --> 00:41:46,949
+o dosyanın
+
+641
+00:41:46,949 --> 00:41:48,949
+sahipliğini değiştirebilir.
+
+642
+00:41:48,949 --> 00:41:50,949
+Bu ilişkiyi unutmayalım lütfen.
+
+643
+00:41:50,949 --> 00:41:52,949
+Uygulayacaksınız zaten bunları
+
+644
+00:41:52,949 --> 00:41:54,949
+merak etmeyin.
+
+645
+00:41:54,949 --> 00:41:56,949
+Belki kendiniz de kullanmışsınızdır,
+
+646
+00:41:56,949 --> 00:41:58,949
+biliyorsunuzdur.
+
+647
+00:41:58,949 --> 00:42:00,949
+Ama uygulamada da üzerinden geçilecek.
+
+648
+00:42:00,949 --> 00:42:02,949
+Şimdi bakın,
+
+649
+00:42:02,949 --> 00:42:04,949
+CS155 Teaching Assistant
+
+650
+00:42:04,949 --> 00:42:06,949
+grubunun üyesi Andrew
+
+651
+00:42:06,949 --> 00:42:11,030
+Homework'ü okuyabilir mi?
+
+652
+00:42:11,030 --> 00:42:13,030
+Homework'e
+
+653
+00:42:13,030 --> 00:42:17,619
+gidiyoruz hemen.
+
+654
+00:42:17,619 --> 00:42:19,619
+Homework Andrew
+
+655
+00:42:19,619 --> 00:42:21,619
+Zakir olmadığına göre
+
+656
+00:42:21,619 --> 00:42:23,619
+yani User Owner olmadığına göre
+
+657
+00:42:23,619 --> 00:42:25,619
+Group Owner üzerinden
+
+658
+00:42:25,619 --> 00:42:27,619
+gitmemiz lazım.
+
+659
+00:42:27,619 --> 00:42:29,619
+CS155 Teaching Assistant
+
+660
+00:42:29,619 --> 00:42:31,619
+Homework üzerinde
+
+661
+00:42:31,619 --> 00:42:33,619
+ne yetkileri varmış?
+
+662
+00:42:33,619 --> 00:42:35,619
+Read, write, execute yetkileri varmış.
+
+663
+00:42:35,619 --> 00:42:37,619
+Directory'ler için execute,
+
+664
+00:42:37,619 --> 00:42:39,619
+o directory'ye change directory ile
+
+665
+00:42:39,619 --> 00:42:41,619
+girilebilir anlamına geliyor.
+
+666
+00:42:41,619 --> 00:42:43,619
+Buraya x vermezseniz directory'i
+
+667
+00:42:43,619 --> 00:42:45,619
+okuyabilirsiniz. Directory'nin
+
+668
+00:42:45,619 --> 00:42:47,619
+hangi dosyaları, hangi
+
+669
+00:42:47,619 --> 00:42:49,619
+directory'leri içerdiğini görebilirsiniz.
+
+670
+00:42:49,619 --> 00:42:51,619
+Ama o directory'ye giremezsiniz.
+
+671
+00:42:51,619 --> 00:42:53,619
+Bir alt seviyeye geçemezsiniz.
+
+672
+00:42:53,619 --> 00:42:55,619
+Onun için
+
+673
+00:42:55,619 --> 00:42:57,619
+kullanılıyor. Demek ki
+
+674
+00:42:57,619 --> 00:42:59,619
+Andrew Homework'ü
+
+675
+00:42:59,619 --> 00:43:01,619
+okuyabiliyor, hiçbir sorun yok.
+
+676
+00:43:01,619 --> 00:43:03,619
+Bir başka örnek
+
+677
+00:43:03,619 --> 00:43:05,619
+If a student has access
+
+678
+00:43:05,619 --> 00:43:07,619
+to this server, which files
+
+679
+00:43:07,619 --> 00:43:09,619
+can they access?
+
+680
+00:43:09,619 --> 00:43:11,619
+Bir
+
+681
+00:43:11,619 --> 00:43:13,619
+öğrencinin bu servere
+
+682
+00:43:13,619 --> 00:43:15,619
+erişimi varsa
+
+683
+00:43:15,619 --> 00:43:17,619
+öğrenci burada hangi dosyaya
+
+684
+00:43:17,619 --> 00:43:19,619
+erişebilir?
+
+685
+00:43:19,619 --> 00:43:21,619
+Şimdi
+
+686
+00:43:21,619 --> 00:43:23,619
+burada
+
+687
+00:43:23,619 --> 00:43:25,619
+Zakir var, işte CS155
+
+688
+00:43:25,619 --> 00:43:27,619
+TES var, Instructor var,
+
+689
+00:43:27,619 --> 00:43:29,619
+Deibo var. Ama student
+
+690
+00:43:29,619 --> 00:43:31,619
+yok. O zaman student'ı
+
+691
+00:43:31,619 --> 00:43:33,619
+hangi kategoride görmek
+
+692
+00:43:33,619 --> 00:43:35,619
+lazım? Other kategorisinde
+
+693
+00:43:35,619 --> 00:43:37,619
+görmemiz lazım. Bu durumda
+
+694
+00:43:37,619 --> 00:43:39,619
+da baktığımızda
+
+695
+00:43:39,619 --> 00:43:41,619
+Other'da Homework'ta
+
+696
+00:43:41,619 --> 00:43:43,619
+3 tane tira var, hiçbir erişim yok.
+
+697
+00:43:43,619 --> 00:43:45,619
+Grades'de 3 tane tira var, hiçbir
+
+698
+00:43:45,619 --> 00:43:47,619
+erişim yok. Lectures'da
+
+699
+00:43:47,619 --> 00:43:49,619
+Read Execute var.
+
+700
+00:43:49,619 --> 00:43:51,619
+Demek ki orayı okuyabilirler, o
+
+701
+00:43:51,619 --> 00:43:53,619
+directory'e girebilirler ama oraya hiçbir şey
+
+702
+00:43:53,619 --> 00:43:55,619
+yazamazlar ve oradaki hiçbir şeyi
+
+703
+00:43:55,619 --> 00:43:57,619
+değiştiremezler.
+
+704
+00:43:57,619 --> 00:43:59,619
+Test PI
+
+705
+00:43:59,619 --> 00:44:01,619
+orada da Read var. Demek ki
+
+706
+00:44:01,619 --> 00:44:03,619
+Python testi de
+
+707
+00:44:03,619 --> 00:44:05,619
+okuyabilirlermiş.
+
+708
+00:44:05,619 --> 00:44:07,619
+Durum bu.
+
+709
+00:44:07,619 --> 00:44:09,619
+Üçüncü örnek Deibo
+
+710
+00:44:09,619 --> 00:44:11,619
+What can then
+
+711
+00:44:11,619 --> 00:44:13,619
+Deibo can do to
+
+712
+00:44:13,619 --> 00:44:15,619
+Test PI? Test PI'yle
+
+713
+00:44:15,619 --> 00:44:17,619
+alakalı Deibo ne yapabilir?
+
+714
+00:44:17,619 --> 00:44:19,619
+Deibo
+
+715
+00:44:19,619 --> 00:44:21,619
+neyi gösteriyor arkadaşlar? Grubu.
+
+716
+00:44:21,619 --> 00:44:23,619
+Gruba bakalım. Grubun
+
+717
+00:44:23,619 --> 00:44:25,619
+hakkı neymiş? Read ve
+
+718
+00:44:25,619 --> 00:44:27,619
+Execute'mış. Test PI'yi çalıştırabilir
+
+719
+00:44:27,619 --> 00:44:29,619
+ve içeriğini okuyabilir.
+
+720
+00:44:29,619 --> 00:44:38,340
+Unix Permission Model
+
+721
+00:44:38,340 --> 00:44:40,340
+is a simple implementation of
+
+722
+00:44:40,340 --> 00:44:42,340
+a generic access control strategy
+
+723
+00:44:42,340 --> 00:44:44,340
+known as Access Control
+
+724
+00:44:44,340 --> 00:44:46,340
+List. Şu ana kadar
+
+725
+00:44:46,340 --> 00:44:48,340
+anlattığımız erişimin kontrol
+
+726
+00:44:48,340 --> 00:44:50,340
+edilmesiyle alakalı bu yaklaşımın
+
+727
+00:44:50,340 --> 00:44:52,340
+toptan
+
+728
+00:44:52,340 --> 00:44:54,340
+bütün adı Access Control
+
+729
+00:44:54,340 --> 00:44:56,340
+List . Ve
+
+730
+00:44:56,340 --> 00:44:58,340
+Unix'te de bunun
+
+731
+00:44:58,340 --> 00:45:00,340
+basitleştirilmiş bir
+
+732
+00:45:00,340 --> 00:45:02,340
+uygulaması var. Bu sayede
+
+733
+00:45:02,340 --> 00:45:04,340
+izinler
+
+734
+00:45:04,340 --> 00:45:06,340
+yönetiliyor.
+
+735
+00:45:06,340 --> 00:45:08,340
+EveryObject
+
+736
+00:45:08,340 --> 00:45:10,340
+kaynaktı, file
+
+737
+00:45:10,340 --> 00:45:12,340
+örneğinde hatırlayın,
+
+738
+00:45:12,340 --> 00:45:14,340
+has an ACL that identifies
+
+739
+00:45:14,340 --> 00:45:16,340
+what operations subjects
+
+740
+00:45:16,340 --> 00:45:20,170
+can perform.
+
+741
+00:45:20,170 --> 00:45:22,170
+Her demek ki her objektin
+
+742
+00:45:22,170 --> 00:45:24,170
+bir listesi var. O
+
+743
+00:45:24,170 --> 00:45:26,170
+listede de o objekt üzerinde
+
+744
+00:45:26,170 --> 00:45:28,170
+işlem
+
+745
+00:45:28,170 --> 00:45:30,170
+yapma hakkına
+
+746
+00:45:30,170 --> 00:45:32,170
+sahip olan subject
+
+747
+00:45:32,170 --> 00:45:34,170
+kullanıcıların adları ve
+
+748
+00:45:34,170 --> 00:45:36,170
+ne yapabilecekleri bilgisi var.
+
+749
+00:45:36,170 --> 00:45:38,170
+Each access to an
+
+750
+00:45:38,170 --> 00:45:40,170
+object is checked against
+
+751
+00:45:40,170 --> 00:45:42,170
+objects ACL. Herhangi
+
+752
+00:45:42,170 --> 00:45:44,170
+bir erişim yapılacağı zaman
+
+753
+00:45:44,170 --> 00:45:46,170
+ACL
+
+754
+00:45:46,170 --> 00:45:48,170
+kontrol ediliyor. İşte
+
+755
+00:45:48,170 --> 00:45:50,170
+bakın burada
+
+756
+00:45:50,170 --> 00:45:52,170
+Homework
+
+757
+00:45:52,170 --> 00:45:54,170
+Directories'nin
+
+758
+00:45:54,170 --> 00:45:56,170
+ACL'i
+
+759
+00:45:56,170 --> 00:45:58,170
+verilmiş Dan Zakir
+
+760
+00:45:58,170 --> 00:46:00,170
+Ameli, Dan
+
+761
+00:46:00,170 --> 00:46:02,170
+Zakir
+
+762
+00:46:02,170 --> 00:46:04,170
+Ameli de Read olarak
+
+763
+00:46:04,170 --> 00:46:09,429
+görülmekte. Role Based'i
+
+764
+00:46:09,429 --> 00:46:11,429
+anlatmıştım size.
+
+765
+00:46:11,429 --> 00:46:13,429
+Kullanıcı
+
+766
+00:46:13,429 --> 00:46:15,429
+rolü değiştiğinde yetkilendirmeleri
+
+767
+00:46:15,429 --> 00:46:17,429
+değiştirmesi ve yönetmesi
+
+768
+00:46:17,429 --> 00:46:19,429
+çok kolay oluyor demiştim.
+
+769
+00:46:19,429 --> 00:46:21,429
+Çünkü kullanıcıya bir rolden
+
+770
+00:46:21,429 --> 00:46:23,429
+diğer bir role aktarıyorum.
+
+771
+00:46:23,429 --> 00:46:25,429
+Yani aslında yetkilerin
+
+772
+00:46:25,429 --> 00:46:27,429
+çözümlenmesini ne
+
+773
+00:46:27,429 --> 00:46:29,429
+üzerinden yapıyorum?
+
+774
+00:46:29,429 --> 00:46:33,000
+Roller
+
+775
+00:46:33,000 --> 00:46:35,000
+yani gruplar üzerinden
+
+776
+00:46:35,000 --> 00:46:37,000
+yapıyorum. Gruplara
+
+777
+00:46:37,000 --> 00:46:39,000
+hak veriyorum.
+
+778
+00:46:39,000 --> 00:46:41,000
+Kullanıcıları da gruplar
+
+779
+00:46:41,000 --> 00:46:44,440
+arasında bir oraya
+
+780
+00:46:44,440 --> 00:46:46,440
+bir öbür tarafa
+
+781
+00:46:46,440 --> 00:46:48,440
+alıyorum. İhtiyaca bağlı olarak
+
+782
+00:46:48,440 --> 00:46:57,159
+nasıl olacaksa.
+
+783
+00:46:57,159 --> 00:46:59,159
+Proseslerden bahsettik. Çünkü
+
+784
+00:46:59,159 --> 00:47:01,159
+Subject'ler kısmında bir
+
+785
+00:47:01,159 --> 00:47:03,159
+User vardı. Bir de
+
+786
+00:47:03,159 --> 00:47:05,159
+Proses vardı. Öyleyse prosesleri de
+
+787
+00:47:05,159 --> 00:47:07,159
+görmemiz lazım. Güvenlik
+
+788
+00:47:07,159 --> 00:47:09,159
+modeli açısından
+
+789
+00:47:09,159 --> 00:47:11,159
+ne ifade ettiklerini
+
+790
+00:47:11,159 --> 00:47:13,159
+anlayabilmemiz için.
+
+791
+00:47:13,159 --> 00:47:19,099
+Bir kez işletim
+
+792
+00:47:19,099 --> 00:47:21,099
+sistemi tasarımı, proseslerin
+
+793
+00:47:21,099 --> 00:47:23,099
+birbirlerinin memorilerine
+
+794
+00:47:23,099 --> 00:47:25,099
+erişmesine izin vermiyor. Bu güzel
+
+795
+00:47:25,099 --> 00:47:27,099
+bir şey. Ancak
+
+796
+00:47:27,099 --> 00:47:29,099
+prosesler arasında
+
+797
+00:47:29,099 --> 00:47:31,099
+yetkilendirme ile
+
+798
+00:47:31,099 --> 00:47:33,099
+tanınılabilen
+
+799
+00:47:33,099 --> 00:47:35,099
+işletim sistemi üzerinden
+
+800
+00:47:35,099 --> 00:47:37,099
+geçen şeyler var.
+
+801
+00:47:37,099 --> 00:47:39,099
+Haberleşme mekanizmaları var.
+
+802
+00:47:39,099 --> 00:47:41,099
+Fakat bu durum bile
+
+803
+00:47:41,099 --> 00:47:43,099
+bir prosesin, bir başka prosesin
+
+804
+00:47:43,099 --> 00:47:45,099
+memorisine doğrudan erişimi
+
+805
+00:47:45,099 --> 00:47:50,070
+kapsamıyor. Diğer taraftan
+
+806
+00:47:50,070 --> 00:47:52,070
+ikinci alt başlığa bakacak
+
+807
+00:47:52,070 --> 00:47:54,070
+olursak. Process is run as a
+
+808
+00:47:54,070 --> 00:47:56,070
+specific user. Her proses
+
+809
+00:47:56,070 --> 00:47:58,070
+belirli bir kullanıcı olarak
+
+810
+00:47:58,070 --> 00:48:00,070
+çalışıyor.
+
+811
+00:48:00,070 --> 00:48:02,070
+Peki bunun bana getirdiği şeyler neler?
+
+812
+00:48:02,070 --> 00:48:04,070
+When you run a process, it runs with
+
+813
+00:48:04,070 --> 00:48:06,070
+your user ID's permissions.
+
+814
+00:48:06,070 --> 00:48:08,070
+Kullanıcının izinleri,
+
+815
+00:48:08,070 --> 00:48:10,070
+yetkileri neyse, o
+
+816
+00:48:10,070 --> 00:48:12,070
+yetkilere sahip olarak çalışıyor.
+
+817
+00:48:12,070 --> 00:48:14,070
+Process can access any files
+
+818
+00:48:14,070 --> 00:48:16,070
+that the user ID has access to.
+
+819
+00:48:16,070 --> 00:48:18,070
+Kullanıcının erişimi olan
+
+820
+00:48:18,070 --> 00:48:20,070
+bütün dosyalara proses de erişebiliyor.
+
+821
+00:48:20,070 --> 00:48:22,070
+Processes run by
+
+822
+00:48:22,070 --> 00:48:24,070
+the same user ID, have the same
+
+823
+00:48:24,070 --> 00:48:26,070
+permission. Ben Gökhan kullanıcısı
+
+824
+00:48:26,070 --> 00:48:28,070
+olarak üç tane, beş tane,
+
+825
+00:48:28,070 --> 00:48:30,070
+yedi tane proses başlatıyorsam
+
+826
+00:48:30,070 --> 00:48:32,070
+hepsinin izinleri
+
+827
+00:48:32,070 --> 00:48:34,070
+aynı özellikte.
+
+828
+00:48:34,070 --> 00:48:36,070
+Çünkü neden? Hepsi izinle
+
+829
+00:48:36,070 --> 00:48:38,070
+alakalı özelliklerini, haklarını
+
+830
+00:48:38,070 --> 00:48:40,070
+benden alıyorlar.
+
+831
+00:48:40,070 --> 00:48:42,070
+Processes started by root
+
+832
+00:48:42,070 --> 00:48:44,070
+can reduce their privileges
+
+833
+00:48:44,070 --> 00:48:46,070
+by changing to a
+
+834
+00:48:46,070 --> 00:48:48,070
+less privileged user ID.
+
+835
+00:48:48,070 --> 00:48:50,070
+Root olarak başlayan
+
+836
+00:48:50,070 --> 00:48:52,070
+bir proses
+
+837
+00:48:52,070 --> 00:48:54,070
+gerekli
+
+838
+00:48:54,070 --> 00:48:56,070
+ilklendirmeleri yaptıktan sonra
+
+839
+00:48:56,070 --> 00:48:58,070
+örneklerini göreceğiz. İki tane
+
+840
+00:48:58,070 --> 00:49:00,070
+örneğimiz var. Gerekli ilklendirme
+
+841
+00:49:00,070 --> 00:49:02,070
+yaptıktan sonra
+
+842
+00:49:02,070 --> 00:49:04,070
+ne yapabiliyor? Yetki seviyesini
+
+843
+00:49:04,070 --> 00:49:06,070
+düşürebiliyor. Yani ben artık
+
+844
+00:49:06,070 --> 00:49:08,070
+root kullanıcısı olarak çalışmayacağım da
+
+845
+00:49:08,070 --> 00:49:10,070
+Gökhan kullanıcısı olarak çalışacağım
+
+846
+00:49:10,070 --> 00:49:12,070
+veya az önce gördük VVV
+
+847
+00:49:12,070 --> 00:49:14,070
+data kullanıcısı olarak çalışacağım
+
+848
+00:49:14,070 --> 00:49:19,619
+diyebiliyor. Şimdi
+
+849
+00:49:19,619 --> 00:49:21,619
+interaktif
+
+850
+00:49:21,619 --> 00:49:23,619
+olarak sisteme bağlı çalışıyorsak
+
+851
+00:49:23,619 --> 00:49:25,619
+aslında bir shell ortamında
+
+852
+00:49:25,619 --> 00:49:27,619
+çalışıyoruz demektir. Shell
+
+853
+00:49:27,619 --> 00:49:29,619
+de bir program.
+
+854
+00:49:29,619 --> 00:49:31,619
+Bizden gelen girdileri kabul
+
+855
+00:49:31,619 --> 00:49:33,619
+ediyor. Ona göre programları
+
+856
+00:49:33,619 --> 00:49:35,619
+başlatıyor.
+
+857
+00:49:35,619 --> 00:49:37,619
+İşletim sistemlerinde
+
+858
+00:49:37,619 --> 00:49:39,619
+yeni bir programı başlatmanın
+
+859
+00:49:39,619 --> 00:49:41,619
+en temel yolu var olan bir programın
+
+860
+00:49:41,619 --> 00:49:43,619
+kopyasını oluşturmak. Buna da
+
+861
+00:49:43,619 --> 00:49:45,619
+fork diyoruz. O zaman var olan
+
+862
+00:49:45,619 --> 00:49:47,619
+programın kopyasını oluşturuyorsam
+
+863
+00:49:47,619 --> 00:49:49,619
+var olanın yetkileri
+
+864
+00:49:49,619 --> 00:49:51,619
+neyse, kime aitse
+
+865
+00:49:51,619 --> 00:49:53,619
+oluşturulan kopya da onun yetkilerinde
+
+866
+00:49:53,619 --> 00:49:55,619
+ve ona ait fork
+
+867
+00:49:55,619 --> 00:49:57,619
+edildiği için ve
+
+868
+00:49:57,619 --> 00:49:59,619
+doğal olarak da fork ettikten
+
+869
+00:49:59,619 --> 00:50:01,619
+sonra da çalıştıracağımız
+
+870
+00:50:01,619 --> 00:50:03,619
+programı değiştiriyoruz. Yani aslında
+
+871
+00:50:03,619 --> 00:50:05,619
+yeni bir program çalıştırmak iki
+
+872
+00:50:05,619 --> 00:50:07,619
+tane sistem
+
+873
+00:50:07,619 --> 00:50:09,619
+çağrısının arka arkaya çağrılmasıyla
+
+874
+00:50:09,619 --> 00:50:11,619
+oluyor fork ve exec.
+
+875
+00:50:11,619 --> 00:50:13,619
+Bu durumda da
+
+876
+00:50:13,619 --> 00:50:15,619
+şu alt satır bakın bize
+
+877
+00:50:15,619 --> 00:50:17,619
+kritik bilgiyi
+
+878
+00:50:17,619 --> 00:50:19,619
+veriyor. When any process forks
+
+879
+00:50:19,619 --> 00:50:21,619
+eğer bir prosesin forkla
+
+880
+00:50:21,619 --> 00:50:23,619
+kopyası oluşturulursa oluşturulan
+
+881
+00:50:23,619 --> 00:50:25,619
+proses
+
+882
+00:50:25,619 --> 00:50:27,619
+kendisini oluşturanın
+
+883
+00:50:27,619 --> 00:50:29,619
+yani parent ebeveynin
+
+884
+00:50:29,619 --> 00:50:31,619
+user id'sini
+
+885
+00:50:31,619 --> 00:50:33,619
+inherit ediyor bir şekilde.
+
+886
+00:50:35,619 --> 00:50:37,619
+Ve onun da yetkilerini
+
+887
+00:50:37,619 --> 00:50:40,869
+inherit ediyor.
+
+888
+00:50:40,869 --> 00:50:42,869
+Şimdi öyleyse bakın erişim için
+
+889
+00:50:42,869 --> 00:50:44,869
+kullanılan bir user id var.
+
+890
+00:50:44,869 --> 00:50:46,869
+Prosesi
+
+891
+00:50:46,869 --> 00:50:48,869
+başlatanı belirten
+
+892
+00:50:48,869 --> 00:50:50,869
+onu belirlemek için kullanılan
+
+893
+00:50:50,869 --> 00:50:52,869
+bir user id var.
+
+894
+00:50:52,869 --> 00:50:54,869
+Bir de hani dedik ya
+
+895
+00:50:54,869 --> 00:50:56,869
+başka bir kullanıcı
+
+896
+00:50:56,869 --> 00:50:58,869
+olarak başlayıp sonra root
+
+897
+00:50:58,869 --> 00:51:00,869
+olarak başlayıp mesela sonrasında
+
+898
+00:51:00,869 --> 00:51:02,869
+işte
+
+899
+00:51:02,869 --> 00:51:04,869
+kendini değiştirebilen
+
+900
+00:51:04,869 --> 00:51:06,869
+diyelim ki Gökhan kullanıcısına
+
+901
+00:51:06,869 --> 00:51:08,869
+çekebilen durumlar
+
+902
+00:51:08,869 --> 00:51:10,869
+söz konusu. Onun için bir
+
+903
+00:51:10,869 --> 00:51:12,869
+user id var. Üç tane user id
+
+904
+00:51:12,869 --> 00:51:14,869
+temel olarak. Bunların
+
+905
+00:51:14,869 --> 00:51:16,869
+daha fazla olan
+
+906
+00:51:16,869 --> 00:51:18,869
+Unix'in sürümüne
+
+907
+00:51:18,869 --> 00:51:20,869
+bağlı olarak işte Spark
+
+908
+00:51:20,869 --> 00:51:22,869
+Sanos'ta farklı şeyde farklı
+
+909
+00:51:22,869 --> 00:51:24,869
+Altrix'e falan olabilir ama bu üç
+
+910
+00:51:24,869 --> 00:51:26,869
+tanesi hepsinde var.
+
+911
+00:51:26,869 --> 00:51:28,869
+Effective user id
+
+912
+00:51:28,869 --> 00:51:30,869
+Real user id
+
+913
+00:51:30,869 --> 00:51:32,869
+Saved user id. Effective
+
+914
+00:51:32,869 --> 00:51:34,869
+user id
+
+915
+00:51:34,869 --> 00:51:36,869
+prosesin erişim haklarını belirliyor.
+
+916
+00:51:36,869 --> 00:51:38,869
+Real user id prosesi
+
+917
+00:51:38,869 --> 00:51:40,869
+başlatan kullanıcıyı belirliyor. Saved
+
+918
+00:51:40,869 --> 00:51:42,869
+user id'i de
+
+919
+00:51:44,869 --> 00:51:46,869
+Effective user id'i değiştiriyorsak
+
+920
+00:51:46,869 --> 00:51:48,869
+onu
+
+921
+00:51:48,869 --> 00:51:50,869
+set eden bir tane fonksiyon var
+
+922
+00:51:50,869 --> 00:51:52,869
+sistem çağrısı var. O sistem
+
+923
+00:51:52,869 --> 00:51:54,869
+çağrısı otomatik olarak Effective
+
+924
+00:51:54,869 --> 00:51:56,869
+user id'deki değeri nereye yazıyor?
+
+925
+00:51:56,869 --> 00:51:58,869
+Saved user id'e yazıyor. Böylece
+
+926
+00:51:58,869 --> 00:52:00,869
+oradan restore edebileyim diye tekrar
+
+927
+00:52:00,869 --> 00:52:02,869
+geri dönebileyim diye. Zaten
+
+928
+00:52:02,869 --> 00:52:04,869
+alanın adı bakın Saved saklanmış.
+
+929
+00:52:04,869 --> 00:52:06,869
+Alanın adı da ne amaç için
+
+930
+00:52:06,869 --> 00:52:08,869
+kullanıldığını bize söylüyor.
+
+931
+00:52:08,869 --> 00:52:10,869
+Başlangıçta bu üçünün
+
+932
+00:52:10,869 --> 00:52:12,869
+değeri de aynı.
+
+933
+00:52:12,869 --> 00:52:14,869
+Fakat bazı senaryolar
+
+934
+00:52:14,869 --> 00:52:16,869
+işte bunları bizim değiştirmemize
+
+935
+00:52:16,869 --> 00:52:18,869
+imkan tanıyor. Bazı değişiklikler
+
+936
+00:52:18,869 --> 00:52:20,869
+güvenlik açısından
+
+937
+00:52:20,869 --> 00:52:22,869
+zafiyet oluşturabiliyor. Bazıları
+
+938
+00:52:22,869 --> 00:52:24,869
+daha güvenilir
+
+939
+00:52:24,869 --> 00:52:28,659
+olabiliyor. Unix'te
+
+940
+00:52:28,659 --> 00:52:30,659
+root kullanıcısı
+
+941
+00:52:30,659 --> 00:52:32,659
+Effective user id
+
+942
+00:52:32,659 --> 00:52:34,659
+real user id ve
+
+943
+00:52:34,659 --> 00:52:36,659
+Saved user id değerlerini
+
+944
+00:52:36,659 --> 00:52:38,659
+her türlü değere set edebilir
+
+945
+00:52:38,659 --> 00:52:40,659
+hiçbir kısıtlama
+
+946
+00:52:40,659 --> 00:52:42,659
+olmaksızın. Ama
+
+947
+00:52:42,659 --> 00:52:44,659
+yetkisiz kullanıcılar yani
+
+948
+00:52:44,659 --> 00:52:46,659
+root haricindeki kullanıcılar
+
+949
+00:52:46,659 --> 00:52:50,010
+Effective
+
+950
+00:52:50,010 --> 00:52:52,010
+user id değiştirebilirler.
+
+951
+00:52:52,010 --> 00:52:54,010
+Sadece Effective
+
+952
+00:52:54,010 --> 00:52:56,010
+user id değiştirebilirler ve
+
+953
+00:52:56,010 --> 00:52:58,010
+Effective user id de
+
+954
+00:52:58,010 --> 00:53:00,010
+sadece real user id veyahut
+
+955
+00:53:00,010 --> 00:53:02,010
+Saved user id'nin değerini
+
+956
+00:53:02,010 --> 00:53:04,010
+değiştirebilirler.
+
+957
+00:53:04,010 --> 00:53:06,010
+Şimdi bakın set user id
+
+958
+00:53:06,010 --> 00:53:08,010
+x dedik
+
+959
+00:53:08,010 --> 00:53:10,010
+bunu root'un çalıştırdığını varsayalım
+
+960
+00:53:10,010 --> 00:53:12,010
+3
+
+961
+00:53:12,010 --> 00:53:14,010
+değeri de e-u-i-d
+
+962
+00:53:14,010 --> 00:53:16,010
+r-u-i-d s-u-i-d
+
+963
+00:53:16,010 --> 00:53:18,010
+3 değeri de neye set etti?
+
+964
+00:53:18,010 --> 00:53:20,010
+x değerine set etti.
+
+965
+00:53:20,010 --> 00:53:22,010
+Peki bunu nerede kullanacağız?
+
+966
+00:53:22,010 --> 00:53:24,010
+Şurada
+
+967
+00:53:24,010 --> 00:53:26,010
+kullanacağız.
+
+968
+00:53:26,010 --> 00:53:28,010
+VVV data kullanıcısı
+
+969
+00:53:28,010 --> 00:53:30,010
+vardı ya. Şimdi
+
+970
+00:53:30,010 --> 00:53:32,010
+niçin biz Apache
+
+971
+00:53:32,010 --> 00:53:34,010
+Web Server'ı baştan
+
+972
+00:53:34,010 --> 00:53:36,010
+VVV data kullanıcısı olarak
+
+973
+00:53:36,010 --> 00:53:38,010
+çalıştırmıyoruz? Çok basit bir
+
+974
+00:53:38,010 --> 00:53:40,010
+sebepten ötürü 80 ve
+
+975
+00:53:40,010 --> 00:53:42,010
+443 numaralı portları dinlemesi
+
+976
+00:53:42,010 --> 00:53:44,010
+lazım. Ancak
+
+977
+00:53:44,010 --> 00:53:46,010
+sistem tasarımı gereği
+
+978
+00:53:46,010 --> 00:53:48,010
+1024'ün altındaki
+
+979
+00:53:48,010 --> 00:53:50,010
+port numaraları özel
+
+980
+00:53:50,010 --> 00:53:52,010
+port numaralarıdır ve sadece root
+
+981
+00:53:52,010 --> 00:53:54,010
+kullanıcısı tarafından erişilebilirler.
+
+982
+00:53:54,010 --> 00:53:56,010
+Yani bu durumda
+
+983
+00:53:56,010 --> 00:53:58,010
+Apache Web Server'ın root kullanıcısı
+
+984
+00:53:58,010 --> 00:54:00,010
+olarak başlaması lazım. Ama
+
+985
+00:54:00,010 --> 00:54:02,010
+porta erişimi sağladıktan
+
+986
+00:54:02,010 --> 00:54:04,010
+sonra artık kendini VVV
+
+987
+00:54:04,010 --> 00:54:06,010
+data kullanıcısına dönüştürebilir.
+
+988
+00:54:06,010 --> 00:54:08,010
+Nasıl oluyor bu?
+
+989
+00:54:08,010 --> 00:54:10,010
+Bakın burada görüyorsunuz.
+
+990
+00:54:10,010 --> 00:54:15,909
+Proses başlıyor.
+
+991
+00:54:15,909 --> 00:54:17,909
+Kullanıcısı olarak
+
+992
+00:54:17,909 --> 00:54:19,909
+socket initialization'ı
+
+993
+00:54:19,909 --> 00:54:21,909
+yapıyor.
+
+994
+00:54:21,909 --> 00:54:23,909
+Onu tamamladıktan sonra
+
+995
+00:54:23,909 --> 00:54:25,909
+set user id
+
+996
+00:54:25,909 --> 00:54:27,909
+get user id
+
+997
+00:54:27,909 --> 00:54:29,909
+VVV data. VVV
+
+998
+00:54:29,909 --> 00:54:31,909
+data'nın user id'si neyse gidip
+
+999
+00:54:31,909 --> 00:54:33,909
+etc passwd'den okuyor.
+
+1000
+00:54:33,909 --> 00:54:35,909
+O değeri set user
+
+1001
+00:54:35,909 --> 00:54:37,909
+id'ye set ediyor. Set user id
+
+1002
+00:54:37,909 --> 00:54:39,909
+işini birden set ediyordu. Artık
+
+1003
+00:54:39,909 --> 00:54:41,909
+bu noktadan sonra Apache
+
+1004
+00:54:41,909 --> 00:54:43,909
+Web Server
+
+1005
+00:54:43,909 --> 00:54:45,909
+ne olarak görünüyor?
+
+1006
+00:54:45,909 --> 00:54:47,909
+Hem
+
+1007
+00:54:47,909 --> 00:54:49,909
+VVV
+
+1008
+00:54:49,909 --> 00:54:51,909
+data kullanıcısı tarafından
+
+1009
+00:54:51,909 --> 00:54:53,909
+başlatılmış gibi görünüyor. Hem de
+
+1010
+00:54:53,909 --> 00:54:55,909
+kaynaklara
+
+1011
+00:54:55,909 --> 00:54:57,909
+yani dosyalara erişirken
+
+1012
+00:54:57,909 --> 00:54:59,909
+VVV data kullanıcısının
+
+1013
+00:54:59,909 --> 00:55:01,909
+yetkileriyle ona verilmiş
+
+1014
+00:55:01,909 --> 00:55:03,909
+olan izinlerle erişiyor.
+
+1015
+00:55:03,909 --> 00:55:05,909
+Bakın burada fork'un sıfıra
+
+1016
+00:55:05,909 --> 00:55:07,909
+eşit olması başarıyla sonuçlandı.
+
+1017
+00:55:07,909 --> 00:55:09,909
+Yani o parantezler
+
+1018
+00:55:09,909 --> 00:55:11,909
+içerisindeki kısım aslında
+
+1019
+00:55:11,909 --> 00:55:13,909
+başarılı bir şekilde child
+
+1020
+00:55:13,909 --> 00:55:15,909
+process
+
+1021
+00:55:15,909 --> 00:55:17,909
+oluşturuldu anlamına geliyor. Orada da
+
+1022
+00:55:17,909 --> 00:55:19,909
+bu söylediğimiz
+
+1023
+00:55:19,909 --> 00:55:21,909
+işlemler gerçekleşiyor.
+
+1024
+00:55:21,909 --> 00:55:26,309
+UID'yi
+
+1025
+00:55:26,309 --> 00:55:28,309
+geçici olarak değiştirebiliyor muyuz?
+
+1026
+00:55:28,309 --> 00:55:30,309
+Evet değiştirebiliyoruz. Ancak
+
+1027
+00:55:30,309 --> 00:55:32,309
+root ise sınırsız değişiklik.
+
+1028
+00:55:32,309 --> 00:55:34,309
+Yani değiştirirken neye set edeceğimiz
+
+1029
+00:55:34,309 --> 00:55:36,309
+konusunda bir sınır yok.
+
+1030
+00:55:36,309 --> 00:55:38,309
+Fakat
+
+1031
+00:55:38,309 --> 00:55:40,309
+normal, sıradan yetkisiz bir
+
+1032
+00:55:40,309 --> 00:55:42,309
+kullanıcıysak, efektif
+
+1033
+00:55:42,309 --> 00:55:44,309
+user ID'yi sadece ve sadece
+
+1034
+00:55:44,309 --> 00:55:46,309
+real user ID veyahut da
+
+1035
+00:55:46,309 --> 00:55:48,309
+set user ID'ye set edebiliyoruz.
+
+1036
+00:55:48,309 --> 00:55:50,309
+Bakın şimdi
+
+1037
+00:55:50,309 --> 00:55:52,309
+set user ID
+
+1038
+00:55:52,309 --> 00:55:54,309
+x her şeyi
+
+1039
+00:55:54,309 --> 00:55:56,309
+set ediyor. Set efektif
+
+1040
+00:55:56,309 --> 00:55:58,309
+user ID x ise
+
+1041
+00:55:58,309 --> 00:56:00,309
+sadece efektif user ID'yi set ediyor.
+
+1042
+00:56:00,309 --> 00:56:02,309
+Ve
+
+1043
+00:56:04,309 --> 00:56:06,309
+diyelim ki efektif user ID
+
+1044
+00:56:06,309 --> 00:56:08,309
+100'lü, real user ID
+
+1045
+00:56:08,309 --> 00:56:10,309
+vs. s user ID
+
+1046
+00:56:10,309 --> 00:56:12,309
+yani saved user ID 0'dı.
+
+1047
+00:56:12,309 --> 00:56:14,309
+Buradan
+
+1048
+00:56:14,309 --> 00:56:16,309
+geri dönerken
+
+1049
+00:56:16,309 --> 00:56:18,309
+eğer yetkisiz bir kullanıcıysak
+
+1050
+00:56:18,309 --> 00:56:20,309
+efektif user ID'mizi
+
+1051
+00:56:20,309 --> 00:56:22,309
+sadece neye set edebiliriz?
+
+1052
+00:56:22,309 --> 00:56:24,309
+0'a. Çünkü niçin?
+
+1053
+00:56:24,309 --> 00:56:26,309
+RUID veyahut da
+
+1054
+00:56:26,309 --> 00:56:28,309
+SUID alanlarında olan değer bu.
+
+1055
+00:56:28,309 --> 00:56:30,309
+Bunun haricinde mesela 10'a set edemem,
+
+1056
+00:56:30,309 --> 00:56:32,309
+101'e set edemem, 200'e
+
+1057
+00:56:32,309 --> 00:56:34,309
+set edemem. Sadece 0'a set edebilirim.
+
+1058
+00:56:34,309 --> 00:56:36,309
+Bu ayrımı unutmamak
+
+1059
+00:56:36,309 --> 00:56:38,309
+gerekiyor.
+
+1060
+00:56:38,309 --> 00:56:43,130
+Bakın, azar
+
+1061
+00:56:43,130 --> 00:56:46,820
+önce söyledim ya.
+
+1062
+00:56:46,820 --> 00:56:48,820
+FORK ve EXEC ikisi bir arada çalışıyor.
+
+1063
+00:56:48,820 --> 00:56:50,820
+Sisteme uzaktan
+
+1064
+00:56:50,820 --> 00:56:52,820
+bağlanmak istiyorum.
+
+1065
+00:56:52,820 --> 00:56:54,820
+SSH secure olarak
+
+1066
+00:56:54,820 --> 00:56:56,820
+bağlanmak istiyorum.
+
+1067
+00:56:56,820 --> 00:56:58,820
+Otantikasyon sağlanıyor. Benim user ID'mle
+
+1068
+00:56:58,820 --> 00:57:00,820
+password'ımı kontrol ediyor ve success
+
+1069
+00:57:00,820 --> 00:57:02,820
+alıyor. O zaman ne yapıyor?
+
+1070
+00:57:02,820 --> 00:57:04,820
+Kendinden bir kopya oluşturuyor.
+
+1071
+00:57:04,820 --> 00:57:06,820
+Ve
+
+1072
+00:57:06,820 --> 00:57:08,820
+oluşturulan kopyanın efektif
+
+1073
+00:57:08,820 --> 00:57:10,820
+user ID'sini neye set ediyor?
+
+1074
+00:57:10,820 --> 00:57:12,820
+User ID'ye. Yukarıda gelen değer.
+
+1075
+00:57:12,820 --> 00:57:14,820
+Yalnız SSH ne olarak
+
+1076
+00:57:14,820 --> 00:57:16,820
+çalışıyor arkadaşlar? Root olarak çalışıyor.
+
+1077
+00:57:16,820 --> 00:57:18,820
+Set efektif user ID'yi
+
+1078
+00:57:18,820 --> 00:57:20,820
+UID'ye set
+
+1079
+00:57:20,820 --> 00:57:22,820
+ettiği için real user ID
+
+1080
+00:57:22,820 --> 00:57:24,820
+ve saved user ID değişmiyor.
+
+1081
+00:57:24,820 --> 00:57:26,820
+Sadece efektif user ID
+
+1082
+00:57:26,820 --> 00:57:28,820
+değişiyor. Peki
+
+1083
+00:57:28,820 --> 00:57:30,820
+real user ID ve saved user ID
+
+1084
+00:57:30,820 --> 00:57:32,820
+alanlarındaki değer ne? 0.
+
+1085
+00:57:32,820 --> 00:57:34,820
+Çünkü niye? SSH'ten
+
+1086
+00:57:34,820 --> 00:57:36,820
+forklandı. SSH'i
+
+1087
+00:57:36,820 --> 00:57:38,820
+çalıştıran kimdi?
+
+1088
+00:57:38,820 --> 00:57:40,820
+0'dı. Yani root'tu.
+
+1089
+00:57:40,820 --> 00:57:42,820
+O zaman o değerler
+
+1090
+00:57:42,820 --> 00:57:44,820
+0'a denk düşüyordu. Öyleyse
+
+1091
+00:57:44,820 --> 00:57:46,820
+bir tek efektif user ID yani
+
+1092
+00:57:46,820 --> 00:57:48,820
+dosya erişimleri için
+
+1093
+00:57:48,820 --> 00:57:50,820
+kullanılacak olan user ID
+
+1094
+00:57:50,820 --> 00:57:52,820
+değişti ama real user ID
+
+1095
+00:57:52,820 --> 00:57:54,820
+ve
+
+1096
+00:57:54,820 --> 00:57:56,820
+saved user ID değişmedi.
+
+1097
+00:57:56,820 --> 00:57:58,820
+Bu session'ın sahibi
+
+1098
+00:57:58,820 --> 00:58:00,820
+kim görünüyor? Root görünüyor.
+
+1099
+00:58:00,820 --> 00:58:02,820
+Çünkü real user ID 0.
+
+1100
+00:58:02,820 --> 00:58:04,820
+Bu session'ın ama
+
+1101
+00:58:04,820 --> 00:58:06,820
+erişim hakları kim görünüyor?
+
+1102
+00:58:06,820 --> 00:58:08,820
+Gelen
+
+1103
+00:58:08,820 --> 00:58:10,820
+UID neyse o görünüyor.
+
+1104
+00:58:10,820 --> 00:58:12,820
+Sonra da neyi
+
+1105
+00:58:12,820 --> 00:58:14,820
+çalıştırıyor? Shell programını
+
+1106
+00:58:14,820 --> 00:58:16,820
+çalıştırıyor. Normalde burada
+
+1107
+00:58:16,820 --> 00:58:18,820
+böyle olmaması lazım. Bu basitlik
+
+1108
+00:58:18,820 --> 00:58:20,820
+kolay anlaşılsın diye. Burada nasıl olması
+
+1109
+00:58:20,820 --> 00:58:22,820
+lazım? ETC, PES, FIDE
+
+1110
+00:58:22,820 --> 00:58:24,820
+altında o user ID için hangi
+
+1111
+00:58:24,820 --> 00:58:26,820
+Shell tariflendiyse o Shell'in
+
+1112
+00:58:26,820 --> 00:58:28,820
+çalıştırılması lazım. Şimdi bakın
+
+1113
+00:58:28,820 --> 00:58:30,820
+burada çok ciddi bir zafiyet var.
+
+1114
+00:58:30,820 --> 00:58:32,820
+Niye biliyor musunuz?
+
+1115
+00:58:32,820 --> 00:58:34,820
+Real user ID ve saved
+
+1116
+00:58:34,820 --> 00:58:36,820
+user ID değiştirilmedi.
+
+1117
+00:58:36,820 --> 00:58:38,820
+Şu noktada Shell açıldıktan
+
+1118
+00:58:38,820 --> 00:58:40,820
+sonra o Shell'de
+
+1119
+00:58:40,820 --> 00:58:42,820
+başarılı bir buffer overflow saldırısı
+
+1120
+00:58:42,820 --> 00:58:44,820
+yaparsanız ve
+
+1121
+00:58:44,820 --> 00:58:46,820
+set
+
+1122
+00:58:46,820 --> 00:58:48,820
+user ID çalıştırırsanız
+
+1123
+00:58:48,820 --> 00:58:50,820
+set user ID'ye parametre olarak
+
+1124
+00:58:50,820 --> 00:58:52,820
+ne verebilirsiniz arkadaşlar? 0
+
+1125
+00:58:52,820 --> 00:58:54,820
+verebilirsiniz. Çünkü neden?
+
+1126
+00:58:54,820 --> 00:58:56,820
+Real user ID ve saved user ID
+
+1127
+00:58:56,820 --> 00:58:58,820
+alanlarında 0 var. Bunu da
+
+1128
+00:58:58,820 --> 00:59:00,820
+gerçekleştirdiğiniz
+
+1129
+00:59:00,820 --> 00:59:02,820
+anda artık
+
+1130
+00:59:02,820 --> 00:59:04,820
+o Shell'de sizin
+
+1131
+00:59:04,820 --> 00:59:06,820
+yetkileriniz neye dönüştürülmüş olur?
+
+1132
+00:59:06,820 --> 00:59:08,820
+Hangi kullanıcıya dönüşmüş olursunuz?
+
+1133
+00:59:08,820 --> 00:59:10,820
+Root kullanıcısına.
+
+1134
+00:59:10,820 --> 00:59:12,820
+Bunun böyle değil. Aslında nasıl yapılması
+
+1135
+00:59:12,820 --> 00:59:14,820
+lazım? Set UID
+
+1136
+00:59:14,820 --> 00:59:16,820
+ile yapılması lazım ki
+
+1137
+00:59:16,820 --> 00:59:18,820
+bu üçlünün tamamı
+
+1138
+00:59:18,820 --> 00:59:20,820
+şuradaki UID'ye set edilsin.
+
+1139
+00:59:20,820 --> 00:59:22,820
+Kullanıcının
+
+1140
+00:59:22,820 --> 00:59:24,820
+kendi yetki
+
+1141
+00:59:24,820 --> 00:59:26,820
+seviyesini böyle bir açıktan
+
+1142
+00:59:26,820 --> 00:59:28,820
+yararlanarak yükseltmesinin
+
+1143
+00:59:28,820 --> 00:59:30,820
+önüne geçilmiş olsun.
+
+1144
+00:59:30,820 --> 00:59:34,360
+Unix'te PS3
+
+1145
+00:59:34,360 --> 00:59:36,360
+var. Hangi prosesi kim
+
+1146
+00:59:36,360 --> 00:59:38,360
+başlattı? O prosesten kaç
+
+1147
+00:59:38,360 --> 00:59:40,360
+kopya başlatıldı?
+
+1148
+00:59:40,360 --> 00:59:42,360
+Bunu gösteriyor.
+
+1149
+00:59:42,360 --> 00:59:44,360
+Siz de deneyebilirsiniz. Bakın işte
+
+1150
+00:59:44,360 --> 00:59:46,360
+sistemde yeni
+
+1151
+00:59:46,360 --> 00:59:48,360
+yapılarda sistemd var.
+
+1152
+00:59:48,360 --> 00:59:50,360
+Bütün prosesler sistemd
+
+1153
+00:59:50,360 --> 00:59:52,360
+tarafından başlatılıyor.
+
+1154
+00:59:52,360 --> 00:59:54,360
+Accounts daemon 2 kopyaymış.
+
+1155
+00:59:54,360 --> 00:59:56,360
+Lighthttp'de
+
+1156
+00:59:56,360 --> 00:59:58,360
+wwwdata olarak çalışıyormuş.
+
+1157
+00:59:58,360 --> 01:00:00,360
+Remote syslog
+
+1158
+01:00:00,360 --> 01:00:02,360
+dsyslog olarak çalışıyor ve
+
+1159
+01:00:02,360 --> 01:00:04,360
+3 kopyası varmış.
+
+1160
+01:00:04,360 --> 01:00:06,360
+Zakir kullanıcısı lokal terminalden
+
+1161
+01:00:06,360 --> 01:00:08,360
+bağlıymış ve 5
+
+1162
+01:00:08,360 --> 01:00:10,360
+Shell'ini kullanıyormuş. O Shell'in
+
+1163
+01:00:10,360 --> 01:00:12,360
+altında bunlar çalıştırılmış.
+
+1164
+01:00:12,360 --> 01:00:14,360
+Zakir kullanıcısı ve Deibo kullanıcısı
+
+1165
+01:00:14,360 --> 01:00:16,360
+SSHD
+
+1166
+01:00:16,360 --> 01:00:18,360
+ile bağlıymış.
+
+1167
+01:00:18,360 --> 01:00:20,360
+Systemd Resol
+
+1168
+01:00:20,360 --> 01:00:22,360
+kullanıcısı da Systemd Resol
+
+1169
+01:00:22,360 --> 01:00:24,360
+lu DNS
+
+1170
+01:00:24,360 --> 01:00:26,360
+servisi vermek için bağlıymış.
+
+1171
+01:00:26,360 --> 01:00:34,500
+Şimdi
+
+1172
+01:00:34,500 --> 01:00:36,500
+Apache ve
+
+1173
+01:00:36,500 --> 01:00:38,500
+SSH örneklerini
+
+1174
+01:00:38,500 --> 01:00:40,500
+SSHD örneklerini gördük.
+
+1175
+01:00:40,500 --> 01:00:42,500
+Ona benzeyen
+
+1176
+01:00:42,500 --> 01:00:44,500
+ama
+
+1177
+01:00:44,500 --> 01:00:46,500
+olaya biraz farklı bir açıdan
+
+1178
+01:00:46,500 --> 01:00:48,500
+bakan bir örnek göreceğiz.
+
+1179
+01:00:48,500 --> 01:00:54,340
+Şimdi ne dedik?
+
+1180
+01:00:54,340 --> 01:00:56,340
+Unix'te bütün
+
+1181
+01:00:56,340 --> 01:00:58,340
+kullanıcılar ETC
+
+1182
+01:00:58,340 --> 01:01:00,340
+PES VD dosyasında tanımlı.
+
+1183
+01:01:00,340 --> 01:01:02,340
+Bütün kullanıcıların
+
+1184
+01:01:02,340 --> 01:01:04,340
+şifreleri de
+
+1185
+01:01:04,340 --> 01:01:06,340
+ETC Shadow altında
+
+1186
+01:01:06,340 --> 01:01:09,750
+tanımlı.
+
+1187
+01:01:09,750 --> 01:01:11,750
+Burada 2 tane soru var.
+
+1188
+01:01:11,750 --> 01:01:13,750
+Birincisi ETC Shadow
+
+1189
+01:01:13,750 --> 01:01:15,750
+dosyasına retry
+
+1190
+01:01:15,750 --> 01:01:17,750
+hakkına sahip tek bir kullanıcı var.
+
+1191
+01:01:17,750 --> 01:01:19,750
+O da root.
+
+1192
+01:01:19,750 --> 01:01:21,750
+Öyleyse ben
+
+1193
+01:01:21,750 --> 01:01:23,750
+root kullanıcısı değilken
+
+1194
+01:01:23,750 --> 01:01:25,750
+kendi şifremi
+
+1195
+01:01:25,750 --> 01:01:27,750
+değiştirmek için Gökhan
+
+1196
+01:01:27,750 --> 01:01:29,750
+kullanıcısı olarak
+
+1197
+01:01:29,750 --> 01:01:31,750
+ETC Shadow
+
+1198
+01:01:31,750 --> 01:01:33,750
+dosyasına nasıl erişebilirim?
+
+1199
+01:01:35,750 --> 01:01:37,750
+Birinci soru bu. İkinci soru
+
+1200
+01:01:37,750 --> 01:01:39,750
+bir şekilde
+
+1201
+01:01:39,750 --> 01:01:41,750
+bu dosyaya
+
+1202
+01:01:41,750 --> 01:01:43,750
+erişimim sağlanırsa
+
+1203
+01:01:43,750 --> 01:01:45,750
+o dosya içerisinde
+
+1204
+01:01:45,750 --> 01:01:47,750
+sadece ve
+
+1205
+01:01:47,750 --> 01:01:49,750
+sadece kendime ait
+
+1206
+01:01:51,750 --> 01:01:53,750
+satırı değiştireceğim
+
+1207
+01:01:53,750 --> 01:01:55,750
+nasıl garanti edilir?
+
+1208
+01:01:55,750 --> 01:01:57,750
+Çünkü eğer o dosyaya ben
+
+1209
+01:01:57,750 --> 01:01:59,750
+yazma hakkına sahip olursam sadece kendim değil
+
+1210
+01:01:59,750 --> 01:02:01,750
+root'un da şifresini değiştirebilirim
+
+1211
+01:02:01,750 --> 01:02:03,750
+veya bir başka kullanıcının da şifresini
+
+1212
+01:02:03,750 --> 01:02:05,750
+değiştirebilirim.
+
+1213
+01:02:05,750 --> 01:02:07,750
+Şimdi burada
+
+1214
+01:02:07,750 --> 01:02:09,750
+Unix'te
+
+1215
+01:02:09,750 --> 01:02:11,750
+tariflenmiş bir
+
+1216
+01:02:11,750 --> 01:02:13,750
+özellikten
+
+1217
+01:02:13,750 --> 01:02:15,750
+yararlanıyoruz.
+
+1218
+01:02:15,750 --> 01:02:17,750
+Bu da privilege escalation
+
+1219
+01:02:17,750 --> 01:02:19,750
+aslında yetkinin
+
+1220
+01:02:19,750 --> 01:02:21,750
+geçici olarak arttırılmasının
+
+1221
+01:02:21,750 --> 01:02:23,750
+ilk hali
+
+1222
+01:02:23,750 --> 01:02:27,059
+orjinal hali. Sonra bunun
+
+1223
+01:02:27,059 --> 01:02:29,059
+etrafına başka şeyler kurulmuş durumda ama
+
+1224
+01:02:29,059 --> 01:02:31,059
+ilk hala da var olan
+
+1225
+01:02:31,059 --> 01:02:33,059
+Unix kernel'ında
+
+1226
+01:02:33,059 --> 01:02:35,059
+Linux kernel'ında var olan
+
+1227
+01:02:35,059 --> 01:02:37,059
+bir yapı.
+
+1228
+01:02:37,059 --> 01:02:39,059
+O da şu
+
+1229
+01:02:39,059 --> 01:02:41,059
+normalde efektif
+
+1230
+01:02:41,059 --> 01:02:43,059
+User ID'yi ben
+
+1231
+01:02:43,059 --> 01:02:45,059
+set User ID ile set ediyorum ya
+
+1232
+01:02:45,059 --> 01:02:47,059
+ve standart
+
+1233
+01:02:47,059 --> 01:02:49,059
+çalışmada bu real User ID'ye
+
+1234
+01:02:49,059 --> 01:02:51,059
+eşit ya deniyor ki
+
+1235
+01:02:51,059 --> 01:02:53,059
+bir
+
+1236
+01:02:53,059 --> 01:02:55,059
+dosyayı tarifleyen
+
+1237
+01:02:55,059 --> 01:02:57,059
+o bitler var
+
+1238
+01:02:57,059 --> 01:02:59,059
+vardı ya üçlü read write x
+
+1239
+01:02:59,059 --> 01:03:01,059
+oraya bir bit tarifi daha
+
+1240
+01:03:01,059 --> 01:03:03,059
+yapalım s biti olsun
+
+1241
+01:03:03,059 --> 01:03:05,059
+x'in yerine kullanalım
+
+1242
+01:03:05,059 --> 01:03:07,059
+ve
+
+1243
+01:03:07,059 --> 01:03:09,059
+bu da şu anlama gelsin
+
+1244
+01:03:09,059 --> 01:03:11,059
+bu dosya
+
+1245
+01:03:11,059 --> 01:03:13,059
+çalıştırıldığında bu bir
+
+1246
+01:03:13,059 --> 01:03:15,059
+executable ise bu dosya
+
+1247
+01:03:15,059 --> 01:03:17,059
+çalıştırıldığında
+
+1248
+01:03:17,059 --> 01:03:19,059
+çalıştıran kullanıcı kim olursa
+
+1249
+01:03:19,059 --> 01:03:21,059
+olsun bu dosyanın
+
+1250
+01:03:21,059 --> 01:03:23,059
+çalıştırılmasıyla oluşan
+
+1251
+01:03:23,059 --> 01:03:25,059
+prosesin efektif
+
+1252
+01:03:25,059 --> 01:03:27,059
+User ID'si dosya
+
+1253
+01:03:27,059 --> 01:03:29,059
+dosyanın sahibi olsun
+
+1254
+01:03:29,059 --> 01:03:31,059
+yani ben
+
+1255
+01:03:31,059 --> 01:03:34,409
+Gökhan kullanıcısıyım
+
+1256
+01:03:34,409 --> 01:03:36,409
+komutu giriyorum çalıştırıyorum ama
+
+1257
+01:03:36,409 --> 01:03:38,409
+girip çalıştırdığım komutun sahibi
+
+1258
+01:03:38,409 --> 01:03:40,409
+root ve o x
+
+1259
+01:03:40,409 --> 01:03:42,409
+yerine de s yazıyor o zaman
+
+1260
+01:03:42,409 --> 01:03:44,409
+real User ID'im Gökhan olmasına
+
+1261
+01:03:44,409 --> 01:03:46,409
+rağmen saved User ID'im
+
+1262
+01:03:46,409 --> 01:03:48,409
+Gökhan olmasına rağmen
+
+1263
+01:03:48,409 --> 01:03:50,409
+efektif User ID'im ne
+
+1264
+01:03:50,409 --> 01:03:52,409
+root yani
+
+1265
+01:03:52,409 --> 01:03:54,409
+bir süreliğine ben root yetkisiyle
+
+1266
+01:03:54,409 --> 01:03:56,409
+çalışacağım
+
+1267
+01:03:56,409 --> 01:03:58,409
+şu Apache'de
+
+1268
+01:03:58,409 --> 01:04:00,409
+ve SSH'deki şeye
+
+1269
+01:04:00,409 --> 01:04:02,409
+çok benziyor ama biraz tersten bakıyoruz
+
+1270
+01:04:02,409 --> 01:04:04,409
+yani bir süreliğine
+
+1271
+01:04:04,409 --> 01:04:06,409
+kendim değilmişim gibi davranacağım
+
+1272
+01:04:06,409 --> 01:04:08,409
+başka bir kullanıcıymışım
+
+1273
+01:04:08,409 --> 01:04:10,409
+gibi davranacağım
+
+1274
+01:04:10,409 --> 01:04:12,409
+sonra da o yetkileri
+
+1275
+01:04:12,409 --> 01:04:17,670
+geri vereceğim bakın
+
+1276
+01:04:17,670 --> 01:04:19,670
+bütün
+
+1277
+01:04:19,670 --> 01:04:21,670
+Unix'lerde durum böyledir
+
+1278
+01:04:21,670 --> 01:04:23,670
+Linux'ta da durum böyledir
+
+1279
+01:04:23,670 --> 01:04:25,670
+USR1000
+
+1280
+01:04:25,670 --> 01:04:27,670
+PassWD
+
+1281
+01:04:27,670 --> 01:04:29,670
+şurada ne görüyoruz S görüyoruz
+
+1282
+01:04:29,670 --> 01:04:31,670
+bu S'ten ötürü
+
+1283
+01:04:31,670 --> 01:04:33,670
+şuradaki root geçerli
+
+1284
+01:04:33,670 --> 01:04:35,670
+oluyor bunu çalıştıran
+
+1285
+01:04:35,670 --> 01:04:37,670
+kim olursa olsun
+
+1286
+01:04:37,670 --> 01:04:39,670
+efektif User ID
+
+1287
+01:04:39,670 --> 01:04:41,670
+çalışma esnasında neye
+
+1288
+01:04:41,670 --> 01:04:43,670
+set ediliyor root'a set ediliyor öyleyse
+
+1289
+01:04:43,670 --> 01:04:45,670
+sadece root'un
+
+1290
+01:04:45,670 --> 01:04:47,670
+okuma ve yazma hakkı
+
+1291
+01:04:47,670 --> 01:04:49,670
+olan etc-shadow dosyasına
+
+1292
+01:04:49,670 --> 01:04:51,670
+erişilebiliyor
+
+1293
+01:04:51,670 --> 01:04:53,670
+peki sadece
+
+1294
+01:04:53,670 --> 01:04:55,670
+bana ait
+
+1295
+01:04:55,670 --> 01:04:57,670
+entry'nin değiştirilebilmesi
+
+1296
+01:04:57,670 --> 01:04:59,670
+nasıl kısıtlanabiliyor çok basit
+
+1297
+01:04:59,670 --> 01:05:01,670
+real User ID tarafında hala
+
+1298
+01:05:01,670 --> 01:05:03,670
+daha ne var Gokhan'ın User ID'si
+
+1299
+01:05:03,670 --> 01:05:05,670
+var öyleyse
+
+1300
+01:05:05,670 --> 01:05:07,670
+PassWD programı
+
+1301
+01:05:07,670 --> 01:05:09,670
+çalışırken
+
+1302
+01:05:09,670 --> 01:05:11,670
+etc-shadow
+
+1303
+01:05:11,670 --> 01:05:13,670
+altında bir
+
+1304
+01:05:13,670 --> 01:05:15,670
+tek Gokhan kullanıcısının
+
+1305
+01:05:15,670 --> 01:05:17,670
+UID'sine
+
+1306
+01:05:17,670 --> 01:05:19,670
+denk düşen satırı değiştiriyor
+
+1307
+01:05:19,670 --> 01:05:25,289
+diğer satırları değiştiriyor
+
+1308
+01:05:25,289 --> 01:05:27,289
+böylece
+
+1309
+01:05:27,289 --> 01:05:30,699
+bakın PassWD
+
+1310
+01:05:30,699 --> 01:05:32,699
+farklı kullanıcılar tarafından
+
+1311
+01:05:32,699 --> 01:05:34,699
+çalıştırılıyor
+
+1312
+01:05:34,699 --> 01:05:36,699
+hiçbir kullanıcının etc-shadow
+
+1313
+01:05:36,699 --> 01:05:38,699
+doğrudan erişim hakkı yok
+
+1314
+01:05:38,699 --> 01:05:40,699
+ancak şu
+
+1315
+01:05:40,699 --> 01:05:42,699
+set UID biti sayesinde
+
+1316
+01:05:42,699 --> 01:05:44,699
+her kullanıcı
+
+1317
+01:05:44,699 --> 01:05:46,699
+kendisine
+
+1318
+01:05:46,699 --> 01:05:48,699
+ait entry değiştirebiliyor
+
+1319
+01:05:48,699 --> 01:05:50,699
+çok akıllı bir mekanizma
+
+1320
+01:05:50,699 --> 01:05:52,699
+ama ne yazık ki
+
+1321
+01:05:52,699 --> 01:05:54,699
+akıllı
+
+1322
+01:05:54,699 --> 01:05:56,699
+mekanizmaların her biri
+
+1323
+01:05:56,699 --> 01:05:58,699
+getirdikleri esnekliğin sonucunda
+
+1324
+01:05:58,699 --> 01:06:00,699
+güvenlikle de alakalı
+
+1325
+01:06:00,699 --> 01:06:02,699
+sıkıntılar getirebilirler
+
+1326
+01:06:02,699 --> 01:06:04,699
+şöyle ki
+
+1327
+01:06:04,699 --> 01:06:06,699
+bizim burada
+
+1328
+01:06:06,699 --> 01:06:08,699
+Unix dediğimiz şey neydi
+
+1329
+01:06:08,699 --> 01:06:10,699
+en başında konuştuğumuz temel prensiplerden
+
+1330
+01:06:10,699 --> 01:06:12,699
+bir tanesi
+
+1331
+01:06:12,699 --> 01:06:14,699
+Privileged Separation
+
+1332
+01:06:14,699 --> 01:06:16,699
+Privileged Separation yapmak istiyoruz ama
+
+1333
+01:06:16,699 --> 01:06:18,699
+bunu biraz tersten yapıyoruz
+
+1334
+01:06:18,699 --> 01:06:20,699
+klasik Unix'lerde
+
+1335
+01:06:20,699 --> 01:06:22,699
+Effective User ID 0 ise
+
+1336
+01:06:22,699 --> 01:06:24,699
+her türlü yetkiye sahip
+
+1337
+01:06:24,699 --> 01:06:26,699
+Effective User ID 0
+
+1338
+01:06:26,699 --> 01:06:28,699
+değilse
+
+1339
+01:06:28,699 --> 01:06:30,699
+sıradan neyse kısıtlanmış
+
+1340
+01:06:30,699 --> 01:06:32,699
+yetkilere sahip
+
+1341
+01:06:32,699 --> 01:06:34,699
+şimdi ama bizim buradaki
+
+1342
+01:06:34,699 --> 01:06:36,699
+gördüğümüz örneklerdeki
+
+1343
+01:06:36,699 --> 01:06:38,699
+sıkıntımız çok farklı
+
+1344
+01:06:38,699 --> 01:06:40,699
+1024'ün altındaki portlara
+
+1345
+01:06:40,699 --> 01:06:42,699
+erişmek istiyoruz
+
+1346
+01:06:42,699 --> 01:06:44,699
+full yetkiyle root olmamız
+
+1347
+01:06:44,699 --> 01:06:46,699
+lazım sadece kendimize
+
+1348
+01:06:46,699 --> 01:06:48,699
+ait olan dosyadaki
+
+1349
+01:06:48,699 --> 01:06:50,699
+alanı değiştirmek istiyoruz
+
+1350
+01:06:50,699 --> 01:06:52,699
+full yetkilerle
+
+1351
+01:06:52,699 --> 01:06:54,699
+root olmamız
+
+1352
+01:06:54,699 --> 01:06:56,699
+lazım değil mi
+
+1353
+01:06:56,699 --> 01:06:58,699
+çok tehlikeli
+
+1354
+01:06:58,699 --> 01:07:00,699
+bu programlardaki
+
+1355
+01:07:00,699 --> 01:07:02,699
+PESVD programındaki bir buffer overflow
+
+1356
+01:07:02,699 --> 01:07:04,699
+benim
+
+1357
+01:07:04,699 --> 01:07:06,699
+sistemdeki herhangi bir kullanıcının
+
+1358
+01:07:06,699 --> 01:07:08,699
+şifresini değiştirmeme
+
+1359
+01:07:08,699 --> 01:07:12,489
+imkan tanıyabilir
+
+1360
+01:07:12,489 --> 01:07:14,489
+alternatifi ne
+
+1361
+01:07:14,489 --> 01:07:16,489
+Linux'la beraber aslında bunun da
+
+1362
+01:07:16,489 --> 01:07:18,489
+temeli SunSolaris'te
+
+1363
+01:07:18,489 --> 01:07:20,489
+var orada ilk çalışılmaya
+
+1364
+01:07:20,489 --> 01:07:22,489
+başlanmış şu anda da
+
+1365
+01:07:22,489 --> 01:07:24,489
+Linux'da ve
+
+1366
+01:07:24,489 --> 01:07:26,489
+diğer Unix'lerde de
+
+1367
+01:07:26,489 --> 01:07:28,489
+var olan bir yapı
+
+1368
+01:07:28,489 --> 01:07:32,119
+yetenek
+
+1369
+01:07:32,119 --> 01:07:34,119
+root kullanıcısının yeteneklerini
+
+1370
+01:07:34,119 --> 01:07:37,429
+her şeyi yapabilme
+
+1371
+01:07:37,429 --> 01:07:39,429
+yeteneğini diyelim veyahut da sınırsız
+
+1372
+01:07:39,429 --> 01:07:41,429
+her şeyi yapabilme yeteneğini
+
+1373
+01:07:41,429 --> 01:07:43,429
+kendi içerisinde alt gruplara
+
+1374
+01:07:43,429 --> 01:07:45,429
+bölüyoruz
+
+1375
+01:07:45,429 --> 01:07:47,429
+cap kill
+
+1376
+01:07:47,429 --> 01:07:49,429
+cap net bind service
+
+1377
+01:07:49,429 --> 01:07:51,429
+cap csp trace
+
+1378
+01:07:51,429 --> 01:07:53,429
+kill yanlış anlaşılmasın
+
+1379
+01:07:53,429 --> 01:07:55,429
+eskiden bir ilk orjinalde
+
+1380
+01:07:55,429 --> 01:07:57,429
+prosesi sonlandırmak için
+
+1381
+01:07:57,429 --> 01:07:59,429
+ona bir sinyal gönderiliyor
+
+1382
+01:07:59,429 --> 01:08:01,429
+senin sonlanman lazım diye
+
+1383
+01:08:01,429 --> 01:08:03,429
+aslında dışarıdan bir interrupt geliyor
+
+1384
+01:08:03,429 --> 01:08:07,030
+gibi düşünün reset interrupt gibi
+
+1385
+01:08:07,030 --> 01:08:09,030
+ona da kill deniyor ama daha sonradan
+
+1386
+01:08:09,030 --> 01:08:11,030
+fark ediliyor ki bu interrupt mekanizması
+
+1387
+01:08:11,030 --> 01:08:13,030
+nasıl hardware seviyesinde donanımla
+
+1388
+01:08:13,030 --> 01:08:15,030
+iletişim kurmayı sağlıyorsa
+
+1389
+01:08:15,030 --> 01:08:17,029
+software seviyesinde de prosesle
+
+1390
+01:08:17,029 --> 01:08:19,029
+iletişim kurmayı sağlayabilir
+
+1391
+01:08:19,029 --> 01:08:21,029
+o zaman
+
+1392
+01:08:21,029 --> 01:08:23,029
+fonksiyonun
+
+1393
+01:08:23,029 --> 01:08:25,029
+dolayısıyla sistem çağrısının adı kill olsun
+
+1394
+01:08:25,029 --> 01:08:27,029
+ama biz onunla farklı sinyaller
+
+1395
+01:08:27,029 --> 01:08:29,029
+gönderebiliriz
+
+1396
+01:08:29,029 --> 01:08:31,029
+şu anda 32 tane tanınan bir sinyal var
+
+1397
+01:08:31,029 --> 01:08:33,029
+bazıları result ama sonuçta
+
+1398
+01:08:33,029 --> 01:08:35,029
+32
+
+1399
+01:08:35,029 --> 01:08:37,029
+o yüzden hani kill
+
+1400
+01:08:37,029 --> 01:08:39,029
+prosesi sadece sonlandırmak
+
+1401
+01:08:39,029 --> 01:08:41,029
+değil ona bir
+
+1402
+01:08:41,029 --> 01:08:43,029
+sinyal göndermek adına
+
+1403
+01:08:43,029 --> 01:08:45,029
+software interrupt gibi düşünün
+
+1404
+01:08:45,029 --> 01:08:47,029
+onu göndermek adına da
+
+1405
+01:08:47,029 --> 01:08:49,029
+kullanılıyor
+
+1406
+01:08:49,029 --> 01:08:51,029
+işte eğer
+
+1407
+01:08:51,029 --> 01:08:53,029
+sinyal gönderme ihtiyacı varsa
+
+1408
+01:08:53,029 --> 01:08:55,029
+sadece cap kill
+
+1409
+01:08:55,029 --> 01:08:57,029
+verilsin veya 1024'ten
+
+1410
+01:08:57,029 --> 01:08:59,029
+küçük bir porta bağlanıp oradan
+
+1411
+01:08:59,029 --> 01:09:01,029
+hizmet verme ihtiyacı varsa
+
+1412
+01:09:01,029 --> 01:09:03,029
+o zaman cap net bind
+
+1413
+01:09:03,029 --> 01:09:05,029
+service yetkisi verilsin
+
+1414
+01:09:05,029 --> 01:09:07,029
+veya bir proses bir başka prosesi
+
+1415
+01:09:07,029 --> 01:09:09,029
+trace edecekse onu debug etmek
+
+1416
+01:09:09,029 --> 01:09:11,029
+adına çalışması
+
+1417
+01:09:11,029 --> 01:09:13,029
+inceleyecek ve izleyecekse
+
+1418
+01:09:13,029 --> 01:09:15,029
+o zaman cap sys p trace
+
+1419
+01:09:15,029 --> 01:09:17,029
+yeteneği verilsin
+
+1420
+01:09:17,029 --> 01:09:19,029
+mantık bu
+
+1421
+01:09:19,029 --> 01:09:21,029
+şimdi
+
+1422
+01:09:21,029 --> 01:09:23,029
+unix'in güvenlik mekanizmaları
+
+1423
+01:09:23,029 --> 01:09:25,029
+basit ve
+
+1424
+01:09:25,029 --> 01:09:27,029
+oturmuş
+
+1425
+01:09:27,029 --> 01:09:29,029
+basit olduğu için de aslında
+
+1426
+01:09:29,029 --> 01:09:31,029
+kendimizi daha rahat hissediyoruz
+
+1427
+01:09:31,029 --> 01:09:33,029
+neden basit sistemleri debug etmesi
+
+1428
+01:09:33,029 --> 01:09:35,029
+anlaması analiz etmesi
+
+1429
+01:09:35,029 --> 01:09:37,029
+ve verify etmesi
+
+1430
+01:09:37,029 --> 01:09:39,029
+doğrulaması kolay
+
+1431
+01:09:39,029 --> 01:09:41,029
+aynı zamanda yeterince
+
+1432
+01:09:41,029 --> 01:09:43,029
+uygulama sağlıyor bugüne kadar olan
+
+1433
+01:09:43,029 --> 01:09:45,029
+pek çok farklı durum için
+
+1434
+01:09:45,029 --> 01:09:47,029
+kullanılabilmiş yetkilendirme ve güvenlik açısından
+
+1435
+01:09:47,029 --> 01:09:49,029
+ancak acn'lerin
+
+1436
+01:09:49,029 --> 01:09:51,029
+çözünürlüğü çok kaba
+
+1437
+01:09:51,029 --> 01:09:53,029
+yeterince hassas
+
+1438
+01:09:53,029 --> 01:09:55,029
+ayar yapamıyoruz
+
+1439
+01:09:55,029 --> 01:09:57,029
+nedir bir kullanıcının
+
+1440
+01:09:57,029 --> 01:09:59,029
+başlattığı bütün programlar
+
+1441
+01:09:59,029 --> 01:10:01,029
+kullanıcının yetkilerine sahip ama
+
+1442
+01:10:01,029 --> 01:10:03,029
+o kullanıcının başlattığı her program
+
+1443
+01:10:03,029 --> 01:10:05,029
+illaki kullanıcının
+
+1444
+01:10:05,029 --> 01:10:07,029
+full yetkilerine sahip olmak zorunda değil
+
+1445
+01:10:07,029 --> 01:10:09,029
+az önce örneklerini gördük
+
+1446
+01:10:09,029 --> 01:10:11,029
+değil mi cap kill falan gibi
+
+1447
+01:10:11,029 --> 01:10:13,029
+diğer taraftan da
+
+1448
+01:10:13,029 --> 01:10:15,029
+root kullanıcısı çok
+
+1449
+01:10:15,029 --> 01:10:17,029
+önemli bir kullanıcı
+
+1450
+01:10:17,029 --> 01:10:19,029
+sistemle alakalı operasyonların
+
+1451
+01:10:19,029 --> 01:10:21,029
+büyük bir çoğunluğu sadece root
+
+1452
+01:10:21,029 --> 01:10:23,029
+kullanıcısı tarafından yapılabiliyor
+
+1453
+01:10:23,029 --> 01:10:25,029
+kullanıcılar da
+
+1454
+01:10:25,029 --> 01:10:27,029
+tembel olabiliyor
+
+1455
+01:10:27,029 --> 01:10:29,029
+dikkatsiz olabiliyor
+
+1456
+01:10:29,029 --> 01:10:31,029
+ya bir şey olmaz diye
+
+1457
+01:10:31,029 --> 01:10:33,029
+pervasız davranabiliyorlar
+
+1458
+01:10:33,029 --> 01:10:35,029
+bunların sonucunda da
+
+1459
+01:10:35,029 --> 01:10:37,029
+güvenlik açıkları daha kolay
+
+1460
+01:10:37,029 --> 01:10:39,029
+ortaya çıkıp
+
+1461
+01:10:39,029 --> 01:10:41,029
+kullanılabilir hale geliyor
+
+1462
+01:10:41,029 --> 01:10:45,590
+şimdi arkadaşlar windows security
+
+1463
+01:10:45,590 --> 01:10:47,590
+modeline geçmeden önce
+
+1464
+01:10:47,590 --> 01:10:49,590
+zaten 1 saati devirdik
+
+1465
+01:10:49,590 --> 01:10:51,590
+2.14
+
+1466
+01:10:51,590 --> 01:10:53,590
+2.30'da
+
+1467
+01:10:53,590 --> 01:10:55,590
+devam edelim
+
+1468
+01:10:55,590 --> 01:10:57,590
+2.30'da devam ediyoruz
+
+1469
+01:10:57,590 --> 01:28:44,489
+görüşmek üzere
+
+1470
+01:28:44,489 --> 01:28:46,489
+kaldığımız yerden devam ediyoruz arkadaşlar
+
+1471
+01:28:46,489 --> 01:28:48,489
+unix
+
+1472
+01:28:48,489 --> 01:28:50,489
+güvenlik modelini gözden geçirdik
+
+1473
+01:28:50,489 --> 01:28:52,489
+şimdi windows
+
+1474
+01:28:52,489 --> 01:28:54,489
+tarafındaki güvenlik modeline bakacağız
+
+1475
+01:28:54,489 --> 01:29:00,170
+windowsdaki acl
+
+1476
+01:29:00,170 --> 01:29:02,170
+yapısı daha esnek
+
+1477
+01:29:02,170 --> 01:29:04,170
+ama bu
+
+1478
+01:29:04,170 --> 01:29:06,170
+esneklik beraberinde
+
+1479
+01:29:06,170 --> 01:29:08,170
+karmaşıklığı da
+
+1480
+01:29:08,170 --> 01:29:10,170
+getiriyor o yüzden daha dikkatli
+
+1481
+01:29:10,170 --> 01:29:12,170
+olunması lazım
+
+1482
+01:29:12,170 --> 01:29:16,250
+biliyorsunuz
+
+1483
+01:29:16,250 --> 01:29:18,250
+bir tarafta subject var diğer tarafta
+
+1484
+01:29:18,250 --> 01:29:20,250
+object var
+
+1485
+01:29:20,250 --> 01:29:22,250
+şimdi burada objectlerden başlarsak
+
+1486
+01:29:22,250 --> 01:29:24,250
+daha iyi olacak
+
+1487
+01:29:24,250 --> 01:29:26,250
+objectlerde
+
+1488
+01:29:26,250 --> 01:29:28,250
+hani standart
+
+1489
+01:29:28,250 --> 01:29:30,250
+o yapı acl olarak
+
+1490
+01:29:30,250 --> 01:29:32,250
+tarifleniyor unix'de de
+
+1491
+01:29:32,250 --> 01:29:34,250
+bunun basitleştirilmiş bir
+
+1492
+01:29:34,250 --> 01:29:36,250
+uygulanıyor demiştik ya
+
+1493
+01:29:36,250 --> 01:29:38,250
+windows'da acl yapısı
+
+1494
+01:29:38,250 --> 01:29:40,250
+objectler için
+
+1495
+01:29:40,250 --> 01:29:42,250
+full her şeyle uygulanmış
+
+1496
+01:29:42,250 --> 01:29:44,250
+buna bağlı olarak da
+
+1497
+01:29:44,250 --> 01:29:46,250
+daha hassas
+
+1498
+01:29:46,250 --> 01:29:48,250
+objectler için
+
+1499
+01:29:48,250 --> 01:29:50,250
+erişim izni
+
+1500
+01:29:50,250 --> 01:29:52,250
+verilebiliyor
+
+1501
+01:29:52,250 --> 01:29:57,289
+kullanıcı açısından bakıldığında
+
+1502
+01:29:57,289 --> 01:29:59,289
+kullanıcılar
+
+1503
+01:29:59,289 --> 01:30:01,289
+birden fazla grubun
+
+1504
+01:30:01,289 --> 01:30:03,289
+üyesi olabiliyorlar ve gruplar
+
+1505
+01:30:03,289 --> 01:30:05,289
+iç içe geçebiliyor
+
+1506
+01:30:05,289 --> 01:30:07,289
+ancak
+
+1507
+01:30:07,289 --> 01:30:09,289
+birden fazla grubun üyesi
+
+1508
+01:30:09,289 --> 01:30:11,289
+olunsa bile bir grup
+
+1509
+01:30:11,289 --> 01:30:13,289
+primary grup olarak
+
+1510
+01:30:13,289 --> 01:30:15,289
+belirleniyor ve
+
+1511
+01:30:15,289 --> 01:30:17,289
+belirli senaryolarda
+
+1512
+01:30:17,289 --> 01:30:19,289
+hangi
+
+1513
+01:30:19,289 --> 01:30:21,289
+primary grubun üyesi
+
+1514
+01:30:21,289 --> 01:30:23,289
+olduğunuz ön plana çıkıyor
+
+1515
+01:30:23,289 --> 01:30:25,289
+diğer bir taraftan da
+
+1516
+01:30:25,289 --> 01:30:27,289
+acl
+
+1517
+01:30:27,289 --> 01:30:29,289
+yapısında windows'da
+
+1518
+01:30:29,289 --> 01:30:31,289
+allow ve deny
+
+1519
+01:30:31,289 --> 01:30:33,289
+kuralları geçerli
+
+1520
+01:30:33,289 --> 01:30:35,289
+nedir izin ver veya reddet
+
+1521
+01:30:35,289 --> 01:30:37,289
+şimdi
+
+1522
+01:30:37,289 --> 01:30:39,289
+unix'tekinde hatırlarsanız
+
+1523
+01:30:39,289 --> 01:30:41,289
+acl sadece
+
+1524
+01:30:41,289 --> 01:30:43,289
+bir listeydi okuyabilir
+
+1525
+01:30:43,289 --> 01:30:45,289
+yazabilir
+
+1526
+01:30:45,289 --> 01:30:47,289
+veya çalıştırabilir
+
+1527
+01:30:47,289 --> 01:30:49,289
+zaten yazma doğal olarak
+
+1528
+01:30:49,289 --> 01:30:51,289
+okumayı da içeriyor öyle düşünün
+
+1529
+01:30:51,289 --> 01:30:53,289
+halbuki burada birazdan
+
+1530
+01:30:53,289 --> 01:30:55,289
+örneğini de göreceğiz
+
+1531
+01:30:55,289 --> 01:30:57,289
+allow ve
+
+1532
+01:30:57,289 --> 01:31:00,539
+deny var yani
+
+1533
+01:31:00,539 --> 01:31:02,539
+bir kullanıcı için veya bir grup
+
+1534
+01:31:02,539 --> 01:31:04,539
+için bir şeye izin verme
+
+1535
+01:31:04,539 --> 01:31:06,539
+veyahut da bir şeyi reddetme
+
+1536
+01:31:06,539 --> 01:31:08,539
+erişim izni bakımında
+
+1537
+01:31:08,539 --> 01:31:10,539
+hocam burada ikisini de
+
+1538
+01:31:10,539 --> 01:31:12,539
+seçmesek nasıl bir şey olur
+
+1539
+01:31:12,539 --> 01:31:14,539
+ya da ikisini de seçersek
+
+1540
+01:31:14,539 --> 01:31:16,539
+istersen örneği görelim ondan sonra
+
+1541
+01:31:16,539 --> 01:31:18,539
+sorunu bir daha sor
+
+1542
+01:31:18,539 --> 01:31:20,539
+veya belki de sorun cevaplanmış olacak
+
+1543
+01:31:20,539 --> 01:31:22,539
+bu arada çok
+
+1544
+01:31:22,539 --> 01:31:24,539
+olduğunuz için kusura bakmayın ben
+
+1545
+01:31:24,539 --> 01:31:26,539
+kimin konuştuğunu şey olarak göremiyorum
+
+1546
+01:31:26,539 --> 01:31:28,539
+hani ismini de
+
+1547
+01:31:28,539 --> 01:31:30,539
+söylersen ben şey dersem çünkü
+
+1548
+01:31:30,539 --> 01:31:32,539
+yüz küsurat kişi var
+
+1549
+01:31:32,539 --> 01:31:34,539
+şeyde görme şansım yok
+
+1550
+01:31:34,539 --> 01:31:36,539
+anlayacağım
+
+1551
+01:31:36,539 --> 01:31:38,539
+süper
+
+1552
+01:31:38,539 --> 01:31:40,539
+şimdi
+
+1553
+01:31:40,539 --> 01:31:42,539
+objektlerin
+
+1554
+01:31:42,539 --> 01:31:44,539
+yani eriştiğimiz
+
+1555
+01:31:46,539 --> 01:31:48,539
+kaynakların birer
+
+1556
+01:31:48,539 --> 01:31:50,539
+güvenlik
+
+1557
+01:31:50,539 --> 01:31:52,539
+diskriptörü tarifleyicisi
+
+1558
+01:31:52,539 --> 01:31:54,539
+var
+
+1559
+01:31:54,539 --> 01:31:56,539
+aslında security
+
+1560
+01:31:56,539 --> 01:31:58,539
+diskriptörden bu güvenlik
+
+1561
+01:31:58,539 --> 01:32:00,539
+tanımlayıcısı veya tarifleyicisinden
+
+1562
+01:32:00,539 --> 01:32:02,539
+anladığımız şey
+
+1563
+01:32:02,539 --> 01:32:04,539
+hangi kullanıcı
+
+1564
+01:32:04,539 --> 01:32:06,539
+bu objekt
+
+1565
+01:32:06,539 --> 01:32:08,539
+bu kaynak üzerinde hangi
+
+1566
+01:32:08,539 --> 01:32:10,539
+işlemleri yapabilir
+
+1567
+01:32:10,539 --> 01:32:12,539
+ve bunun sonucunda da
+
+1568
+01:32:12,539 --> 01:32:14,539
+sistem loglarına
+
+1569
+01:32:14,539 --> 01:32:16,539
+bu durum nasıl yansıtılır
+
+1570
+01:32:16,539 --> 01:32:18,539
+audit dediğimiz kısım
+
+1571
+01:32:18,539 --> 01:32:20,539
+yapılan işlemlerin loglanması
+
+1572
+01:32:20,539 --> 01:32:22,539
+işte
+
+1573
+01:32:22,539 --> 01:32:24,539
+silindi açıldı
+
+1574
+01:32:24,539 --> 01:32:26,539
+kapandı değiştirildi
+
+1575
+01:32:26,539 --> 01:32:28,539
+ismi
+
+1576
+01:32:28,539 --> 01:32:30,539
+farklılaştırıldı gibi
+
+1577
+01:32:30,539 --> 01:32:32,539
+bu açıdan
+
+1578
+01:32:32,539 --> 01:32:34,539
+her objektin
+
+1579
+01:32:34,539 --> 01:32:36,539
+security diskriptöründe
+
+1580
+01:32:36,539 --> 01:32:38,539
+mutlaka bir
+
+1581
+01:32:38,539 --> 01:32:40,539
+security
+
+1582
+01:32:40,539 --> 01:32:42,539
+identifier oluyor
+
+1583
+01:32:42,539 --> 01:32:44,539
+bu
+
+1584
+01:32:44,539 --> 01:32:46,539
+security identifier
+
+1585
+01:32:48,539 --> 01:32:50,539
+objektin
+
+1586
+01:32:50,539 --> 01:32:52,539
+sahibini gösteriyor
+
+1587
+01:32:52,539 --> 01:32:54,539
+ve objektin
+
+1588
+01:32:54,539 --> 01:32:56,539
+bağlı olduğu birincil
+
+1589
+01:32:56,539 --> 01:32:58,539
+grubu gösteriyor az önce söylemiştim
+
+1590
+01:32:58,539 --> 01:33:00,539
+size birden fazla grup olabilir ama
+
+1591
+01:33:00,539 --> 01:33:02,539
+bunlardan biri birincil
+
+1592
+01:33:02,539 --> 01:33:04,539
+grup olarak kabul ediliyor diye
+
+1593
+01:33:04,539 --> 01:33:06,539
+sonuçta objektlerde
+
+1594
+01:33:06,539 --> 01:33:08,539
+gruplara
+
+1595
+01:33:08,539 --> 01:33:10,539
+ait olabiliyorlar
+
+1596
+01:33:10,539 --> 01:33:12,539
+artı aynen Unix'te olduğu gibi
+
+1597
+01:33:12,539 --> 01:33:14,539
+objektlerin sahipliği
+
+1598
+01:33:14,539 --> 01:33:16,539
+var
+
+1599
+01:33:16,539 --> 01:33:18,539
+şimdi diğer bir bilgi
+
+1600
+01:33:18,539 --> 01:33:20,539
+discretionary ACL
+
+1601
+01:33:20,539 --> 01:33:22,539
+discretionary bizim
+
+1602
+01:33:22,539 --> 01:33:24,539
+keyfimize
+
+1603
+01:33:24,539 --> 01:33:26,539
+kalmış demek isteğe bağlı
+
+1604
+01:33:26,539 --> 01:33:28,539
+demek nedir
+
+1605
+01:33:30,539 --> 01:33:32,539
+o objekte
+
+1606
+01:33:32,539 --> 01:33:34,539
+o kaynağa
+
+1607
+01:33:34,539 --> 01:33:36,539
+erişim hakkı olan
+
+1608
+01:33:36,539 --> 01:33:38,539
+kullanıcı ve grupların verilmesi
+
+1609
+01:33:38,539 --> 01:33:40,539
+peki isteğe bağlıysa
+
+1610
+01:33:40,539 --> 01:33:42,539
+ne anlama geliyor
+
+1611
+01:33:42,539 --> 01:33:44,539
+hiçbir şey vermeyebiliriz anlamına geliyor
+
+1612
+01:33:44,539 --> 01:33:46,539
+bakın
+
+1613
+01:33:46,539 --> 01:33:48,539
+Unix'te
+
+1614
+01:33:48,539 --> 01:33:50,539
+hiçbir şey
+
+1615
+01:33:50,539 --> 01:33:52,539
+vermemek
+
+1616
+01:33:52,539 --> 01:33:54,539
+tam denmez ama neydi
+
+1617
+01:33:54,539 --> 01:33:56,539
+tire tire tireydi
+
+1618
+01:33:56,539 --> 01:33:58,539
+öyle düşünün
+
+1619
+01:33:58,539 --> 01:34:00,539
+yani 3 alan içinde
+
+1620
+01:34:00,539 --> 01:34:02,539
+retrytx alanı içinde
+
+1621
+01:34:02,539 --> 01:34:04,539
+tire tire tire verecek olursak
+
+1622
+01:34:04,539 --> 01:34:06,539
+aslında ne owner'a
+
+1623
+01:34:06,539 --> 01:34:08,539
+ne gruba ne de
+
+1624
+01:34:08,539 --> 01:34:10,539
+other'a bir şey verilmemiş oluyor
+
+1625
+01:34:10,539 --> 01:34:12,539
+öyle düşünebiliriz
+
+1626
+01:34:12,539 --> 01:34:14,539
+burada da
+
+1627
+01:34:14,539 --> 01:34:16,539
+istersek
+
+1628
+01:34:16,539 --> 01:34:18,539
+kullanıcı açısından veya grup
+
+1629
+01:34:18,539 --> 01:34:20,539
+açısından hiçbir erişim
+
+1630
+01:34:20,539 --> 01:34:22,539
+izni vermeyebiliriz
+
+1631
+01:34:22,539 --> 01:34:24,539
+bu isteğe bağlı
+
+1632
+01:34:24,539 --> 01:34:26,539
+olduğu için discretionary
+
+1633
+01:34:26,539 --> 01:34:28,539
+ama diğer taraftan sistem ACL
+
+1634
+01:34:28,539 --> 01:34:30,539
+S-ACL diye geçiyor
+
+1635
+01:34:30,539 --> 01:34:32,539
+bu mandatory
+
+1636
+01:34:32,539 --> 01:34:34,539
+sistemle beraber
+
+1637
+01:34:34,539 --> 01:34:36,539
+gelen kurallar bunlar
+
+1638
+01:34:36,539 --> 01:34:38,539
+diyor ki
+
+1639
+01:34:38,539 --> 01:34:40,539
+bu kurallar
+
+1640
+01:34:40,539 --> 01:34:42,539
+işte objektlere
+
+1641
+01:34:42,539 --> 01:34:44,539
+şu tarz erişimler olduğunda
+
+1642
+01:34:44,539 --> 01:34:46,539
+sistem loguna kayıt düşer
+
+1643
+01:34:46,539 --> 01:34:48,539
+silindiklerinde rename edildiklerinde
+
+1644
+01:34:48,539 --> 01:34:50,539
+açıldıklarında
+
+1645
+01:34:50,539 --> 01:34:52,539
+bunları
+
+1646
+01:34:52,539 --> 01:34:54,539
+bizim
+
+1647
+01:34:54,539 --> 01:34:56,539
+değiştirme şansımız yok
+
+1648
+01:34:56,539 --> 01:34:58,539
+arttırabiliriz
+
+1649
+01:34:58,539 --> 01:35:00,539
+ek bir şeyler ekleyebiliriz
+
+1650
+01:35:00,539 --> 01:35:02,539
+ama sistemle beraber gelenleri
+
+1651
+01:35:02,539 --> 01:35:04,539
+değiştirme şansımız yok
+
+1652
+01:35:04,539 --> 01:35:06,539
+ondan ötürü bunlar mandatory
+
+1653
+01:35:06,539 --> 01:35:08,539
+Windows buna
+
+1654
+01:35:08,539 --> 01:35:10,539
+mandatory demiyor çünkü
+
+1655
+01:35:10,539 --> 01:35:12,539
+orjinal ACL
+
+1656
+01:35:12,539 --> 01:35:14,539
+yapısında
+
+1657
+01:35:14,539 --> 01:35:16,539
+daha fazla şeyi takip etmek lazım
+
+1658
+01:35:16,539 --> 01:35:18,539
+kendisine göre bir
+
+1659
+01:35:18,539 --> 01:35:20,539
+alt grubu
+
+1660
+01:35:20,539 --> 01:35:22,539
+mutlak olarak takip edilecek şekilde
+
+1661
+01:35:22,539 --> 01:35:24,539
+tariflemiş ve bunlara da
+
+1662
+01:35:24,539 --> 01:35:28,140
+sistem ACL demiş durumda
+
+1663
+01:35:28,140 --> 01:35:30,140
+şimdi kullanıcıların da
+
+1664
+01:35:30,140 --> 01:35:32,140
+veya proseslerin de
+
+1665
+01:35:32,140 --> 01:35:34,140
+diyelim çünkü sonuçta
+
+1666
+01:35:34,140 --> 01:35:36,140
+prosesler kullanıcılarla
+
+1667
+01:35:36,140 --> 01:35:38,140
+ilişkilendirilmiş durumda
+
+1668
+01:35:38,140 --> 01:35:40,140
+güvenlik
+
+1669
+01:35:40,140 --> 01:35:42,140
+seviyesini
+
+1670
+01:35:42,140 --> 01:35:44,140
+birinde
+
+1671
+01:35:44,140 --> 01:35:46,140
+security descriptor diye geçiyordu
+
+1672
+01:35:46,140 --> 01:35:48,140
+güvenlik tanımlayıcısı
+
+1673
+01:35:48,140 --> 01:35:50,140
+tarifleyicisi diğerinde de
+
+1674
+01:35:50,140 --> 01:35:52,140
+security context diye geçiyor yani
+
+1675
+01:35:52,140 --> 01:35:54,140
+güvenlik seviyesi
+
+1676
+01:35:54,140 --> 01:35:56,140
+diyelim güvenlik bilgisi
+
+1677
+01:35:56,140 --> 01:35:58,140
+diyelim
+
+1678
+01:35:58,140 --> 01:36:00,140
+belirten
+
+1679
+01:36:00,140 --> 01:36:02,140
+tokenlar var
+
+1680
+01:36:02,140 --> 01:36:04,140
+token dediğimizde
+
+1681
+01:36:04,140 --> 01:36:06,140
+hemen aklımıza
+
+1682
+01:36:06,140 --> 01:36:08,140
+aslında şey de gelmesi lazım
+
+1683
+01:36:08,140 --> 01:36:10,140
+bu yeteneklik
+
+1684
+01:36:10,140 --> 01:36:12,140
+yapabildiğinden bahsetmiştik ya
+
+1685
+01:36:12,140 --> 01:36:14,140
+birazdan daha ayrıntılı göreceğiz
+
+1686
+01:36:14,140 --> 01:36:16,140
+nedir bunlar bu tokenlar
+
+1687
+01:36:18,140 --> 01:36:20,140
+prosesin bağlı olduğu
+
+1688
+01:36:20,140 --> 01:36:22,140
+prosesi çalıştıran
+
+1689
+01:36:22,140 --> 01:36:24,140
+kullanıcının ID'si
+
+1690
+01:36:24,140 --> 01:36:26,140
+grubun ID'si
+
+1691
+01:36:26,140 --> 01:36:28,140
+login ise
+
+1692
+01:36:28,140 --> 01:36:30,140
+eğer bu sistemde bir
+
+1693
+01:36:30,140 --> 01:36:32,140
+interaktif
+
+1694
+01:36:32,140 --> 01:36:34,140
+olarak bağlantısı varsa
+
+1695
+01:36:34,140 --> 01:36:36,140
+onun ID'si ama sistem
+
+1696
+01:36:36,140 --> 01:36:38,140
+kullanıcısı da olabilir
+
+1697
+01:36:38,140 --> 01:36:40,140
+servis accountları
+
+1698
+01:36:40,140 --> 01:36:42,140
+onun ikisi mesela
+
+1699
+01:36:42,140 --> 01:36:44,140
+no login dediğimi
+
+1700
+01:36:44,140 --> 01:36:46,140
+vvv data böyle olabilir
+
+1701
+01:36:46,140 --> 01:36:48,140
+ya da bağlı olan bir kullanıcı
+
+1702
+01:36:48,140 --> 01:36:50,140
+bunu başlatmış olabilir
+
+1703
+01:36:50,140 --> 01:36:52,140
+list of OS privileges
+
+1704
+01:36:52,140 --> 01:36:54,140
+held by user and groups
+
+1705
+01:36:54,140 --> 01:36:56,140
+ekstra bu söylediklerimizin
+
+1706
+01:36:56,140 --> 01:36:58,140
+haricinde
+
+1707
+01:36:58,140 --> 01:37:00,140
+kullanıcı veya grupların sahip olduğu
+
+1708
+01:37:00,140 --> 01:37:02,140
+işletim sistemi yetkileri
+
+1709
+01:37:02,140 --> 01:37:04,140
+ve list of restrictions
+
+1710
+01:37:04,140 --> 01:37:06,140
+işte burada o allow deny
+
+1711
+01:37:06,140 --> 01:37:08,140
+bir taraftan yetkilere sahip
+
+1712
+01:37:08,140 --> 01:37:10,140
+ama bir taraftan da kısıtlamalar
+
+1713
+01:37:10,140 --> 01:37:12,140
+var deny de onu gösteriyor
+
+1714
+01:37:12,140 --> 01:37:14,140
+şunlar şunlar olamaz
+
+1715
+01:37:14,140 --> 01:37:16,140
+diye söyleniyor
+
+1716
+01:37:16,140 --> 01:37:18,140
+belirtiliyor
+
+1717
+01:37:18,140 --> 01:37:20,140
+ve her zaman için
+
+1718
+01:37:20,140 --> 01:37:22,140
+şöyle düşünün
+
+1719
+01:37:22,140 --> 01:37:24,140
+restrictionların
+
+1720
+01:37:24,140 --> 01:37:26,140
+izin verilen allow'a
+
+1721
+01:37:26,140 --> 01:37:28,140
+göre allow'la
+
+1722
+01:37:28,140 --> 01:37:30,140
+belirtilenlere göre önceliği var
+
+1723
+01:37:30,140 --> 01:37:32,140
+önce restrictionlar uygulanıyor
+
+1724
+01:37:32,140 --> 01:37:34,140
+daha sonra allow uygulanıyor
+
+1725
+01:37:34,140 --> 01:37:36,140
+mantık bunun üzerine kurulmuş durumda
+
+1726
+01:37:36,140 --> 01:37:38,140
+bir de impersonation
+
+1727
+01:37:38,140 --> 01:37:40,140
+az önce aslında bu impersonation'dan
+
+1728
+01:37:40,140 --> 01:37:42,140
+bahsettik
+
+1729
+01:37:42,140 --> 01:37:44,140
+yetkinin değiştirilmesi
+
+1730
+01:37:44,140 --> 01:37:46,140
+örneğin bir file server
+
+1731
+01:37:46,140 --> 01:37:48,140
+var örneğin bir print server
+
+1732
+01:37:48,140 --> 01:37:50,140
+var ben
+
+1733
+01:37:50,140 --> 01:37:52,140
+print server'a bir şeylerin
+
+1734
+01:37:52,140 --> 01:37:54,140
+basılması için gönderiyorum
+
+1735
+01:37:54,140 --> 01:37:56,140
+print server bunları benim adıma
+
+1736
+01:37:56,140 --> 01:37:58,140
+basmalı
+
+1737
+01:37:58,140 --> 01:38:00,140
+Gökhan kullanıcısından şu kadar sayfa
+
+1738
+01:38:00,140 --> 01:38:02,140
+çıktı alındı diye daha sonra
+
+1739
+01:38:02,140 --> 01:38:04,140
+bunların loglanabilmesi lazım
+
+1740
+01:38:04,140 --> 01:38:06,140
+işte bunu yapmanın en kolay
+
+1741
+01:38:06,140 --> 01:38:08,140
+yolu
+
+1742
+01:38:08,140 --> 01:38:10,140
+print server'ın anlık olarak
+
+1743
+01:38:10,140 --> 01:38:12,140
+kendisine gelen token bilgisiyle
+
+1744
+01:38:12,140 --> 01:38:14,140
+kendisi gibi değil de
+
+1745
+01:38:14,140 --> 01:38:16,140
+o isteği gönderen
+
+1746
+01:38:16,140 --> 01:38:18,140
+prosesmiş gibi
+
+1747
+01:38:18,140 --> 01:38:20,140
+ona bağlı kullanıcıymış gibi
+
+1748
+01:38:20,140 --> 01:38:22,140
+davranması
+
+1749
+01:38:22,140 --> 01:38:24,140
+başka bir kimliğe bürünebilmesi
+
+1750
+01:38:24,140 --> 01:38:26,140
+impersonation
+
+1751
+01:38:26,140 --> 01:38:28,140
+bunun yolu Unix'te
+
+1752
+01:38:28,140 --> 01:38:30,140
+biraz
+
+1753
+01:38:30,140 --> 01:38:32,140
+hatırlayın tersten
+
+1754
+01:38:32,140 --> 01:38:34,140
+kulağımıza tersten gösterme şeklindeydi
+
+1755
+01:38:34,140 --> 01:38:36,140
+burada daha düzgün bir şekilde
+
+1756
+01:38:36,140 --> 01:38:38,140
+yapılmış
+
+1757
+01:38:38,140 --> 01:38:40,140
+şimdi şuradaki örnek de
+
+1758
+01:38:40,140 --> 01:38:42,140
+şu ana kadar anlattıklarımızı
+
+1759
+01:38:42,140 --> 01:38:44,140
+bence toparlayacak daha rahat
+
+1760
+01:38:44,140 --> 01:38:46,140
+anlamamızı sağlayacak
+
+1761
+01:38:46,140 --> 01:38:48,140
+when a process wants to access an object
+
+1762
+01:38:48,140 --> 01:38:50,140
+bir proses
+
+1763
+01:38:50,140 --> 01:38:52,140
+dolayısıyla bir kullanıcı
+
+1764
+01:38:52,140 --> 01:38:54,140
+bir program
+
+1765
+01:38:54,140 --> 01:38:56,140
+bir objekte erişmek istiyorsa
+
+1766
+01:38:56,140 --> 01:38:58,140
+it presents its set of security tokens
+
+1767
+01:38:58,140 --> 01:39:00,140
+security kontekstini
+
+1768
+01:39:00,140 --> 01:39:02,140
+elinde bulundurduğu
+
+1769
+01:39:02,140 --> 01:39:04,140
+tokenları bak benim elimde
+
+1770
+01:39:04,140 --> 01:39:06,140
+bunlar var bu yetkilerim var
+
+1771
+01:39:06,140 --> 01:39:08,140
+ve ben şu
+
+1772
+01:39:08,140 --> 01:39:10,140
+objekte şu şekilde erişmek istiyorum
+
+1773
+01:39:10,140 --> 01:39:12,140
+neydi
+
+1774
+01:39:12,140 --> 01:39:14,140
+who vardı değil mi
+
+1775
+01:39:14,140 --> 01:39:16,140
+what vardı
+
+1776
+01:39:16,140 --> 01:39:18,140
+bir de hani
+
+1777
+01:39:18,140 --> 01:39:20,140
+operation vardı
+
+1778
+01:39:20,140 --> 01:39:22,140
+kim erişmek istiyor
+
+1779
+01:39:22,140 --> 01:39:24,140
+niye erişmek istiyor
+
+1780
+01:39:24,140 --> 01:39:26,140
+nasıl erişmek istiyor
+
+1781
+01:39:26,140 --> 01:39:28,140
+how şeklinde
+
+1782
+01:39:28,140 --> 01:39:30,140
+windows checks whether the security
+
+1783
+01:39:30,140 --> 01:39:32,140
+context has access to the object
+
+1784
+01:39:32,140 --> 01:39:34,140
+based on the object's security descriptor
+
+1785
+01:39:34,140 --> 01:39:36,140
+security context
+
+1786
+01:39:36,140 --> 01:39:38,140
+alınıyor
+
+1787
+01:39:38,140 --> 01:39:40,140
+security descriptor ile karşılaştırılıyor
+
+1788
+01:39:40,140 --> 01:39:42,140
+ve buna göre
+
+1789
+01:39:42,140 --> 01:39:44,140
+erişime izin veriliyor veya verilmiyor
+
+1790
+01:39:44,140 --> 01:39:46,140
+access
+
+1791
+01:39:46,140 --> 01:39:48,140
+token
+
+1792
+01:39:48,140 --> 01:39:50,140
+windows'ta bazı şeyler
+
+1793
+01:39:50,140 --> 01:39:52,140
+eş anlamlı ama
+
+1794
+01:39:52,140 --> 01:39:54,140
+farklı noktalarda
+
+1795
+01:39:54,140 --> 01:39:56,140
+farklı şekillerde isimlendiriliyor
+
+1796
+01:39:56,140 --> 01:39:58,140
+access token
+
+1797
+01:39:58,140 --> 01:40:00,140
+security kontekstin gösterim şekli
+
+1798
+01:40:00,140 --> 01:40:02,140
+neymiş
+
+1799
+01:40:02,140 --> 01:40:04,140
+kullanıcı markmış
+
+1800
+01:40:04,140 --> 01:40:06,140
+ait olduğu
+
+1801
+01:40:06,140 --> 01:40:08,140
+birincil grup primary group
+
+1802
+01:40:08,140 --> 01:40:10,140
+administrator
+
+1803
+01:40:10,140 --> 01:40:12,140
+ikinci grupta
+
+1804
+01:40:12,140 --> 01:40:14,140
+poets
+
+1805
+01:40:14,140 --> 01:40:16,140
+diğer tarafta da
+
+1806
+01:40:16,140 --> 01:40:18,140
+erişeceği
+
+1807
+01:40:18,140 --> 01:40:20,140
+dosya diyelim
+
+1808
+01:40:20,140 --> 01:40:22,140
+kaynak neyse objekt neyse
+
+1809
+01:40:22,140 --> 01:40:24,140
+onun security descriptor'ı var
+
+1810
+01:40:24,140 --> 01:40:26,140
+ve bakın security descriptor'ında
+
+1811
+01:40:26,140 --> 01:40:28,140
+iki tane şey
+
+1812
+01:40:28,140 --> 01:40:30,140
+tariflenmiş
+
+1813
+01:40:30,140 --> 01:40:32,140
+bunlar nedir
+
+1814
+01:40:32,140 --> 01:40:34,140
+discretionary
+
+1815
+01:40:34,140 --> 01:40:36,140
+deny
+
+1816
+01:40:36,140 --> 01:40:38,140
+poets read write
+
+1817
+01:40:38,140 --> 01:40:40,140
+read write
+
+1818
+01:40:40,140 --> 01:40:42,140
+erişemez
+
+1819
+01:40:42,140 --> 01:40:44,140
+poets
+
+1820
+01:40:44,140 --> 01:40:46,140
+mark kullanıcı
+
+1821
+01:40:46,140 --> 01:40:48,140
+read write
+
+1822
+01:40:48,140 --> 01:40:50,140
+şimdi düşünebilirsiniz ki
+
+1823
+01:40:50,140 --> 01:40:52,140
+kullanıcının kendisi doğrudan
+
+1824
+01:40:52,140 --> 01:40:54,140
+burada geçtiği için
+
+1825
+01:40:54,140 --> 01:40:56,140
+mark kullanıcısına
+
+1826
+01:40:56,140 --> 01:40:58,140
+bu objekte
+
+1827
+01:40:58,140 --> 01:41:00,140
+erişim verilecek
+
+1828
+01:41:00,140 --> 01:41:02,140
+hayır
+
+1829
+01:41:02,140 --> 01:41:04,140
+restriction'ların önceliği var
+
+1830
+01:41:04,140 --> 01:41:06,140
+tasarımsal olarak
+
+1831
+01:41:06,140 --> 01:41:08,140
+burada da
+
+1832
+01:41:08,140 --> 01:41:10,140
+poets grubu
+
+1833
+01:41:10,140 --> 01:41:12,140
+read ve write olarak
+
+1834
+01:41:12,140 --> 01:41:14,140
+erişemez diye tanımlandığı için
+
+1835
+01:41:14,140 --> 01:41:16,140
+deny ile
+
+1836
+01:41:16,140 --> 01:41:18,140
+mark'ın kendi adına
+
+1837
+01:41:18,140 --> 01:41:20,140
+erişiminin olmasının
+
+1838
+01:41:20,140 --> 01:41:22,140
+bir anlamı yok
+
+1839
+01:41:22,140 --> 01:41:24,140
+sonuçta şu
+
+1840
+01:41:24,140 --> 01:41:26,140
+senaryoda mark
+
+1841
+01:41:26,140 --> 01:41:28,140
+kullanıcısı
+
+1842
+01:41:28,140 --> 01:41:30,140
+bu objekte
+
+1843
+01:41:30,140 --> 01:41:32,140
+erişemeyecek
+
+1844
+01:41:32,140 --> 01:41:34,140
+yapı bunun üzerine kurulu
+
+1845
+01:41:34,140 --> 01:41:36,140
+anlaştık mı şimdi
+
+1846
+01:41:36,140 --> 01:41:38,140
+demin sorduğum şeye
+
+1847
+01:41:38,140 --> 01:41:40,140
+cevap oldu mu
+
+1848
+01:41:40,140 --> 01:41:42,140
+sorun devam ediyor mu hala
+
+1849
+01:41:42,140 --> 01:41:44,140
+anladım hocam
+
+1850
+01:41:44,140 --> 01:41:47,739
+efendim
+
+1851
+01:41:47,739 --> 01:41:49,739
+hocam sesim geliyor mu hocam
+
+1852
+01:41:49,739 --> 01:41:51,739
+geliyor evet
+
+1853
+01:41:51,739 --> 01:41:57,189
+anladım hocam
+
+1854
+01:41:57,189 --> 01:41:59,189
+tamam süper harika
+
+1855
+01:41:59,189 --> 01:42:01,189
+şimdi şu ana kadar hem
+
+1856
+01:42:01,189 --> 01:42:03,189
+unix tarafını gördük
+
+1857
+01:42:03,189 --> 01:42:05,189
+hem windows tarafını gördük
+
+1858
+01:42:05,189 --> 01:42:07,189
+capability lerden bahsettik
+
+1859
+01:42:07,189 --> 01:42:09,189
+acl lerden bahsettik
+
+1860
+01:42:09,189 --> 01:42:11,189
+unix'te de
+
+1861
+01:42:11,189 --> 01:42:13,189
+klasik unix'in haricinde
+
+1862
+01:42:13,189 --> 01:42:15,189
+önümüzdeki haliyle
+
+1863
+01:42:15,189 --> 01:42:17,189
+capability yapısını anlattık
+
+1864
+01:42:17,189 --> 01:42:19,189
+windows'ta da
+
+1865
+01:42:19,189 --> 01:42:21,189
+capability dedik
+
+1866
+01:42:21,189 --> 01:42:23,189
+gelinen noktada
+
+1867
+01:42:23,189 --> 01:42:25,189
+orijinalde unix ve unix
+
+1868
+01:42:25,189 --> 01:42:27,189
+türeleri sadece
+
+1869
+01:42:27,189 --> 01:42:29,189
+acl tabanlı
+
+1870
+01:42:29,189 --> 01:42:31,189
+windows ise
+
+1871
+01:42:31,189 --> 01:42:33,189
+nt ile
+
+1872
+01:42:33,189 --> 01:42:35,189
+beraber nt 3.51
+
+1873
+01:42:35,189 --> 01:42:37,189
+ile beraber
+
+1874
+01:42:37,189 --> 01:42:39,189
+acl artı capability
+
+1875
+01:42:39,189 --> 01:42:41,189
+tabanlı ancak
+
+1876
+01:42:41,189 --> 01:42:43,189
+şu gün itibariyle
+
+1877
+01:42:43,189 --> 01:42:45,189
+modern unix
+
+1878
+01:42:45,189 --> 01:42:47,189
+o traditional'a göre
+
+1879
+01:42:47,189 --> 01:42:49,189
+güncellenmiş haliyle
+
+1880
+01:42:49,189 --> 01:42:51,189
+capability de
+
+1881
+01:42:51,189 --> 01:42:53,189
+içeriyor yani
+
+1882
+01:42:53,189 --> 01:42:55,189
+her iki tarafta da
+
+1883
+01:42:55,189 --> 01:42:57,189
+hem capability var hem acl var
+
+1884
+01:42:57,189 --> 01:42:59,189
+o yüzden capability ve acl
+
+1885
+01:42:59,189 --> 01:43:01,189
+kavramını da
+
+1886
+01:43:01,189 --> 01:43:03,189
+biraz anlamamız gerekiyor
+
+1887
+01:43:03,189 --> 01:43:05,189
+zaten şu ana kadar üzerinden
+
+1888
+01:43:05,189 --> 01:43:07,189
+geçtik ama
+
+1889
+01:43:07,189 --> 01:43:09,189
+capability de
+
+1890
+01:43:09,189 --> 01:43:11,189
+kullanıcının kim
+
+1891
+01:43:11,189 --> 01:43:13,189
+olduğunun önemi yok
+
+1892
+01:43:13,189 --> 01:43:15,189
+ancak kullanıcının elinde
+
+1893
+01:43:15,189 --> 01:43:17,189
+bulundurduğu
+
+1894
+01:43:17,189 --> 01:43:19,189
+erişimi sağlayacak
+
+1895
+01:43:19,189 --> 01:43:21,189
+belgenin önemi var
+
+1896
+01:43:21,189 --> 01:43:23,189
+buna ne diyoruz
+
+1897
+01:43:23,189 --> 01:43:25,189
+ticket diyoruz
+
+1898
+01:43:25,189 --> 01:43:27,189
+token diyoruz
+
+1899
+01:43:27,189 --> 01:43:29,189
+ister bilet diye düşünün
+
+1900
+01:43:29,189 --> 01:43:31,189
+ister jeton diye düşünün
+
+1901
+01:43:31,189 --> 01:43:33,189
+yani arkadaşınızın akbilini
+
+1902
+01:43:33,189 --> 01:43:35,189
+aldınız otobüste bastınız
+
+1903
+01:43:35,189 --> 01:43:37,189
+ve geçtiniz
+
+1904
+01:43:37,189 --> 01:43:39,189
+normalde göstermeniz lazım ama
+
+1905
+01:43:39,189 --> 01:43:41,189
+kimse sormuyor
+
+1906
+01:43:41,189 --> 01:43:43,189
+siz de öğrencisiniz o da öğrenci
+
+1907
+01:43:43,189 --> 01:43:45,189
+sonuçta ikinizin de ödeyeceği miktar
+
+1908
+01:43:45,189 --> 01:43:47,189
+aynı ve
+
+1909
+01:43:47,189 --> 01:43:49,189
+onu gösterip geçtiğiniz zaman
+
+1910
+01:43:49,189 --> 01:43:51,189
+elinizde
+
+1911
+01:43:51,189 --> 01:43:53,189
+otobüse binme yeteneği vardı
+
+1912
+01:43:53,189 --> 01:43:55,189
+binebildiniz ve
+
+1913
+01:43:55,189 --> 01:43:57,189
+seyahatinizi yaptınız
+
+1914
+01:43:57,189 --> 01:43:59,189
+ya da işte sinemaya gittiniz
+
+1915
+01:43:59,189 --> 01:44:01,189
+bileti gösterdiniz
+
+1916
+01:44:01,189 --> 01:44:03,189
+iş bitti ama
+
+1917
+01:44:03,189 --> 01:44:06,760
+diğer tarafta acl
+
+1918
+01:44:06,760 --> 01:44:08,760
+olduğu zaman sistem
+
+1919
+01:44:08,760 --> 01:44:10,760
+kullanıcının kim olduğunu
+
+1920
+01:44:10,760 --> 01:44:12,760
+bilmek zorunda çünkü
+
+1921
+01:44:12,760 --> 01:44:14,760
+niye
+
+1922
+01:44:14,760 --> 01:44:16,760
+kullanıcı ismine göre
+
+1923
+01:44:16,760 --> 01:44:18,760
+kullanıcı veya id'sine göre
+
+1924
+01:44:18,760 --> 01:44:20,760
+diyelim onun denk düşürüldüğü
+
+1925
+01:44:20,760 --> 01:44:22,760
+unique id var ya ona göre
+
+1926
+01:44:22,760 --> 01:44:24,760
+ne yapabileceğinin
+
+1927
+01:44:26,760 --> 01:44:28,760
+tariflendiği bir liste var
+
+1928
+01:44:28,760 --> 01:44:30,760
+tanımlandığı bir liste var
+
+1929
+01:44:30,760 --> 01:44:32,760
+acl'lerde
+
+1930
+01:44:32,760 --> 01:44:34,760
+bu durumda
+
+1931
+01:44:34,760 --> 01:44:36,760
+user id
+
+1932
+01:44:36,760 --> 01:44:38,760
+ön plana çıkıyor
+
+1933
+01:44:38,760 --> 01:44:40,760
+capability de
+
+1934
+01:44:40,760 --> 01:44:42,760
+yetki
+
+1935
+01:44:42,760 --> 01:44:44,760
+elindeki belgeye bağlı
+
+1936
+01:44:44,760 --> 01:44:46,760
+bu belgenin tabiki doğal olarak
+
+1937
+01:44:46,760 --> 01:44:48,760
+kopyalanamaz olması
+
+1938
+01:44:48,760 --> 01:44:50,760
+değiştirilemez olması
+
+1939
+01:44:50,760 --> 01:44:52,760
+lazım
+
+1940
+01:44:52,760 --> 01:44:54,760
+bunu da neyle sağlıyoruz dijital ortamlarda
+
+1941
+01:44:54,760 --> 01:44:56,760
+kriptografiyle
+
+1942
+01:44:56,760 --> 01:45:01,159
+sağlıyoruz şimdi bu kadar şeyden
+
+1943
+01:45:01,159 --> 01:45:03,159
+bahsettik
+
+1944
+01:45:03,159 --> 01:45:05,159
+ancak
+
+1945
+01:45:05,159 --> 01:45:07,159
+vurgulamamız gereken bir gerçek var
+
+1946
+01:45:07,159 --> 01:45:09,159
+desktop dediğimiz
+
+1947
+01:45:09,159 --> 01:45:11,159
+burada kişisel
+
+1948
+01:45:11,159 --> 01:45:13,159
+kullanımımıza ait olan sistemler
+
+1949
+01:45:13,159 --> 01:45:15,159
+şimdi bakın
+
+1950
+01:45:15,159 --> 01:45:18,500
+eskiden
+
+1951
+01:45:18,500 --> 01:45:20,500
+windows sistemlerinde
+
+1952
+01:45:20,500 --> 01:45:22,500
+işte
+
+1953
+01:45:22,500 --> 01:45:24,500
+instalasyon sırasında
+
+1954
+01:45:24,500 --> 01:45:26,500
+kullanıcı sorardı
+
+1955
+01:45:26,500 --> 01:45:28,500
+kullanıcı ne isim girerseniz girin
+
+1956
+01:45:28,500 --> 01:45:30,500
+aslında sistemdeki
+
+1957
+01:45:30,500 --> 01:45:32,500
+administrator
+
+1958
+01:45:32,500 --> 01:45:34,500
+yetkisine sahip olurdu
+
+1959
+01:45:34,500 --> 01:45:36,500
+ve o
+
+1960
+01:45:36,500 --> 01:45:38,500
+kullanıcıyla her türlü programı
+
+1961
+01:45:38,500 --> 01:45:40,500
+yükleyebilirdiniz silebilirdiniz
+
+1962
+01:45:40,500 --> 01:45:42,500
+her türlü file'e erişebilirdiniz
+
+1963
+01:45:42,500 --> 01:45:44,500
+her türlü kaynağı
+
+1964
+01:45:44,500 --> 01:45:46,500
+ancak sonra ne oldu
+
+1965
+01:45:46,500 --> 01:45:48,500
+işte
+
+1966
+01:45:48,500 --> 01:45:50,500
+kullanıcı olarak siz
+
+1967
+01:45:50,500 --> 01:45:52,500
+bir işlem yapmak istiyorsunuz ama
+
+1968
+01:45:52,500 --> 01:45:54,500
+sistem diyor ki bu senin çalıştırdığın
+
+1969
+01:45:54,500 --> 01:45:56,500
+program şu
+
+1970
+01:45:56,500 --> 01:45:58,500
+lokasyona yazmak istiyor
+
+1971
+01:45:58,500 --> 01:46:00,500
+buna izin veriyor musun çünkü o lokasyon
+
+1972
+01:46:00,500 --> 01:46:02,500
+aslında korunaklı bir lokasyon
+
+1973
+01:46:02,500 --> 01:46:04,500
+her programın oraya erişmemesi
+
+1974
+01:46:04,500 --> 01:46:06,500
+lazım
+
+1975
+01:46:06,500 --> 01:46:08,500
+yani security level'lar
+
+1976
+01:46:08,500 --> 01:46:10,500
+işin içerisine girdi
+
+1977
+01:46:10,500 --> 01:46:12,500
+şu anda da hayatımız tamamen
+
+1978
+01:46:12,500 --> 01:46:14,500
+desktopta bunun üzerine
+
+1979
+01:46:14,500 --> 01:46:16,500
+kurulu ancak
+
+1980
+01:46:16,500 --> 01:46:18,500
+bütün bu kadar mekanizma
+
+1981
+01:46:18,500 --> 01:46:20,500
+rağmen bütün bu kadar
+
+1982
+01:46:20,500 --> 01:46:22,500
+korumaya rağmen
+
+1983
+01:46:22,500 --> 01:46:24,500
+Adobe Acrobat'ı kuran sizsiniz
+
+1984
+01:46:24,500 --> 01:46:26,500
+kendi
+
+1985
+01:46:26,500 --> 01:46:28,500
+kullanımınız için kurdunuz
+
+1986
+01:46:28,500 --> 01:46:30,500
+zaten sistemde login olan kullanıcı da
+
+1987
+01:46:30,500 --> 01:46:32,500
+sizsiniz ve siz
+
+1988
+01:46:32,500 --> 01:46:34,500
+admin kullanıcısı değilsiniz
+
+1989
+01:46:34,500 --> 01:46:36,500
+sıradan bir kullanıcısınız
+
+1990
+01:46:36,500 --> 01:46:38,500
+program kurarken
+
+1991
+01:46:38,500 --> 01:46:40,500
+işte size soruyor
+
+1992
+01:46:40,500 --> 01:46:42,500
+bunu kurmak istiyor musun diye
+
+1993
+01:46:42,500 --> 01:46:44,500
+çok güzel
+
+1994
+01:46:44,500 --> 01:46:46,500
+fakat işte bir web sayfasını
+
+1995
+01:46:46,500 --> 01:46:48,500
+ziyaret ediyorsunuz veya bir mail
+
+1996
+01:46:48,500 --> 01:46:50,500
+ile gelen bir attachment'ı
+
+1997
+01:46:50,500 --> 01:46:52,500
+tıklıyorsunuz oradan size bir şey geliyor
+
+1998
+01:46:52,500 --> 01:46:54,500
+ve
+
+1999
+01:46:54,500 --> 01:46:56,500
+az önce anlattığımızda geçen haftaki
+
+2000
+01:46:56,500 --> 01:46:58,500
+derslerde anlattığımız konuştuğumuz
+
+2001
+01:46:58,500 --> 01:47:00,500
+şekilde bu gelen aslında bir
+
+2002
+01:47:00,500 --> 01:47:02,500
+malware ve
+
+2003
+01:47:02,500 --> 01:47:04,500
+sisteme yerleşiyor
+
+2004
+01:47:04,500 --> 01:47:06,500
+şimdi bu malware'in
+
+2005
+01:47:06,500 --> 01:47:08,500
+kurulması
+
+2006
+01:47:08,500 --> 01:47:10,500
+sırasında sisteme
+
+2007
+01:47:10,500 --> 01:47:12,500
+yerleşmesi sırasında
+
+2008
+01:47:12,500 --> 01:47:14,500
+aktif olan kullanıcı da sizsiniz
+
+2009
+01:47:14,500 --> 01:47:16,500
+bu durumda
+
+2010
+01:47:16,500 --> 01:47:18,500
+o malware'in sizin
+
+2011
+01:47:18,500 --> 01:47:20,500
+dosyalarınıza erişmesini
+
+2012
+01:47:20,500 --> 01:47:22,500
+engelleyecek mekanizma ne
+
+2013
+01:47:22,500 --> 01:47:24,500
+cevap çok basit yok öyle bir mekanizma
+
+2014
+01:47:24,500 --> 01:47:26,500
+yani acrobatla beraber
+
+2015
+01:47:26,500 --> 01:47:28,500
+bir acrobat dokümanıyla beraber
+
+2016
+01:47:28,500 --> 01:47:30,500
+size eğer bir ransomware
+
+2017
+01:47:30,500 --> 01:47:32,500
+geldiyse
+
+2018
+01:47:32,500 --> 01:47:34,500
+pdf'i tıkladığınızda aslında o bir
+
+2019
+01:47:34,500 --> 01:47:36,500
+ransomware içeren bir
+
+2020
+01:47:36,500 --> 01:47:38,500
+pdf ise
+
+2021
+01:47:38,500 --> 01:47:40,500
+instalasyon bile yapmıyor çünkü zaten
+
+2022
+01:47:40,500 --> 01:47:42,500
+aslında acrobat reader kurulu
+
+2023
+01:47:42,500 --> 01:47:44,500
+o ransomware arka planda çalışıp
+
+2024
+01:47:44,500 --> 01:47:46,500
+sizin bütün dosyalarınızı
+
+2025
+01:47:46,500 --> 01:47:48,500
+alıp şifreleyip
+
+2026
+01:47:48,500 --> 01:47:50,500
+tekrar yazabilir
+
+2027
+01:47:50,500 --> 01:47:52,500
+niçin acrobat
+
+2028
+01:47:52,500 --> 01:47:54,500
+sizin kullanıcınızla kurulmuş
+
+2029
+01:47:54,500 --> 01:47:56,500
+dosyalarınız sizin
+
+2030
+01:47:56,500 --> 01:47:58,500
+kullanıcınızla oluşturulmuş
+
+2031
+01:47:58,500 --> 01:48:00,500
+karşı taraftan yükleyip
+
+2032
+01:48:00,500 --> 01:48:02,500
+açtığınız pdf
+
+2033
+01:48:02,500 --> 01:48:04,500
+sizin kullanımınıza ait
+
+2034
+01:48:04,500 --> 01:48:06,500
+yani hepsi aynı
+
+2035
+01:48:06,500 --> 01:48:08,500
+seviye
+
+2036
+01:48:08,500 --> 01:48:10,500
+bu da işin en zayıf
+
+2037
+01:48:10,500 --> 01:48:12,500
+noktası
+
+2038
+01:48:12,500 --> 01:48:14,500
+burada
+
+2039
+01:48:14,500 --> 01:48:16,500
+tariflediğim senaryoyu
+
+2040
+01:48:16,500 --> 01:48:18,500
+tanımladığım senaryoyu kafanızda
+
+2041
+01:48:18,500 --> 01:48:20,500
+sistemin en açık
+
+2042
+01:48:20,500 --> 01:48:22,500
+noktasını görüyoruz
+
+2043
+01:48:22,500 --> 01:48:24,500
+çünkü
+
+2044
+01:48:24,500 --> 01:48:26,500
+kendimizi kendimizden koruyacak bir şey yok
+
+2045
+01:48:26,500 --> 01:48:28,500
+bunun mekanizmalarından
+
+2046
+01:48:28,500 --> 01:48:30,500
+oluşturulması lazım
+
+2047
+01:48:30,500 --> 01:48:32,500
+bunun oluşturulması ise
+
+2048
+01:48:32,500 --> 01:48:34,500
+çok zor
+
+2049
+01:48:34,500 --> 01:48:36,500
+çünkü niye kullanıcıya
+
+2050
+01:48:36,500 --> 01:48:38,500
+bir sürü
+
+2051
+01:48:38,500 --> 01:48:40,500
+kısıtın getirilmesi gerekiyor
+
+2052
+01:48:40,500 --> 01:48:42,500
+o kısıtın getirilmesi de
+
+2053
+01:48:42,500 --> 01:48:44,500
+kullanıcının kendini kısıtlayacak
+
+2054
+01:48:44,500 --> 01:48:46,500
+şeylere o kısıtları
+
+2055
+01:48:46,500 --> 01:48:48,500
+açacak şekilde
+
+2056
+01:48:48,500 --> 01:48:50,500
+onları devre dışı bırakacak şekilde
+
+2057
+01:48:50,500 --> 01:48:52,500
+cevap vermesi anlamına geliyor
+
+2058
+01:48:52,500 --> 01:48:54,500
+bunları yapmanın da bir anlamı kalmıyor
+
+2059
+01:48:54,500 --> 01:48:56,500
+böyle bir açmaz
+
+2060
+01:48:56,500 --> 01:48:58,500
+söz konusu
+
+2061
+01:48:58,500 --> 01:49:02,680
+bunu da unutmamak gerekiyor
+
+2062
+01:49:02,680 --> 01:49:04,680
+şimdi Chrome'un
+
+2063
+01:49:04,680 --> 01:49:06,680
+güvenlik mimarisine bakacağız
+
+2064
+01:49:06,680 --> 01:49:10,760
+günümüzde
+
+2065
+01:49:10,760 --> 01:49:12,760
+bu Chrome diye düşünün ama işte
+
+2066
+01:49:12,760 --> 01:49:14,760
+Mozilla'sı da benzer
+
+2067
+01:49:14,760 --> 01:49:16,760
+şekilde Opera'sı da benzer şekilde
+
+2068
+01:49:16,760 --> 01:49:18,760
+Safari'si de benzer şekilde
+
+2069
+01:49:18,760 --> 01:49:20,760
+ancak niye Chrome diyoruz
+
+2070
+01:49:20,760 --> 01:49:22,760
+Google
+
+2071
+01:49:22,760 --> 01:49:24,760
+2006 yılında
+
+2072
+01:49:24,760 --> 01:49:26,760
+yaptığı bir incelemede
+
+2073
+01:49:26,760 --> 01:49:28,760
+pek çok
+
+2074
+01:49:28,760 --> 01:49:30,760
+güvenlik zafiyetinin
+
+2075
+01:49:30,760 --> 01:49:32,760
+browserlardaki
+
+2076
+01:49:32,760 --> 01:49:34,760
+güvenlik zafiyetleri sonucunda
+
+2077
+01:49:34,760 --> 01:49:36,760
+oluştuğunu ve buna
+
+2078
+01:49:36,760 --> 01:49:38,760
+bağlı olarak da
+
+2079
+01:49:38,760 --> 01:49:40,760
+web siteleri üzerinden
+
+2080
+01:49:40,760 --> 01:49:42,760
+ciddi anlamda
+
+2081
+01:49:44,760 --> 01:49:46,760
+yüksek etkisi olan
+
+2082
+01:49:46,760 --> 01:49:48,760
+kötü etkisi olan saldırıların
+
+2083
+01:49:48,760 --> 01:49:50,760
+gerçekleştiğini görüyor
+
+2084
+01:49:50,760 --> 01:49:52,760
+bunu analizini yapıyor
+
+2085
+01:49:52,760 --> 01:49:54,760
+ve buna bağlı olarak da
+
+2086
+01:49:54,760 --> 01:49:56,760
+daha güvenli bir
+
+2087
+01:49:56,760 --> 01:49:58,760
+browser daha güvenli bir
+
+2088
+01:49:58,760 --> 01:50:00,760
+explorer neyse navigator modeli
+
+2089
+01:50:00,760 --> 01:50:02,760
+oluşturmayı
+
+2090
+01:50:02,760 --> 01:50:04,760
+planlıyor ve Chrome modeli
+
+2091
+01:50:04,760 --> 01:50:06,760
+karşımıza çıkıyor
+
+2092
+01:50:06,760 --> 01:50:08,760
+sonrasında da bu model
+
+2093
+01:50:08,760 --> 01:50:10,760
+diğer browser
+
+2094
+01:50:10,760 --> 01:50:12,760
+üreticileri
+
+2095
+01:50:12,760 --> 01:50:14,760
+tarafından da 3 aşağı 5 yukarı
+
+2096
+01:50:14,760 --> 01:50:16,760
+kabul görüyor ve kullanılıyor
+
+2097
+01:50:16,760 --> 01:50:18,760
+bakın 2006
+
+2098
+01:50:18,760 --> 01:50:20,760
+öncesinde
+
+2099
+01:50:20,760 --> 01:50:22,760
+her
+
+2100
+01:50:22,760 --> 01:50:24,760
+işlem yani
+
+2101
+01:50:24,760 --> 01:50:26,760
+burada ne var
+
+2102
+01:50:26,760 --> 01:50:28,760
+user interface var
+
+2103
+01:50:28,760 --> 01:50:30,760
+network erişimi var
+
+2104
+01:50:30,760 --> 01:50:32,760
+rendering var
+
+2105
+01:50:32,760 --> 01:50:34,760
+diske erişim var
+
+2106
+01:50:34,760 --> 01:50:36,760
+aklınıza gelebilecek
+
+2107
+01:50:36,760 --> 01:50:38,760
+browser'ın kullanımı sırasında
+
+2108
+01:50:38,760 --> 01:50:40,760
+erişilen her türlü
+
+2109
+01:50:40,760 --> 01:50:42,760
+kaynakla alakalı işlem var
+
+2110
+01:50:42,760 --> 01:50:44,760
+bunların hepsi tek bir
+
+2111
+01:50:44,760 --> 01:50:46,760
+browser prosesinin
+
+2112
+01:50:46,760 --> 01:50:48,760
+içerisindeki trendler
+
+2113
+01:50:48,760 --> 01:50:50,760
+işletim sistemlerinde
+
+2114
+01:50:50,760 --> 01:50:52,760
+ayrıntıyla göreceğiz
+
+2115
+01:50:52,760 --> 01:50:54,760
+prosesin altında çalışan iki thread
+
+2116
+01:50:54,760 --> 01:50:56,760
+birbirinden data falan saklayamaz
+
+2117
+01:50:56,760 --> 01:50:58,760
+mümkünatı yok çünkü
+
+2118
+01:50:58,760 --> 01:51:00,760
+prosesin adres space'ini
+
+2119
+01:51:00,760 --> 01:51:02,760
+paylaşıyorlar aynı memori paylaşıyorlar
+
+2120
+01:51:02,760 --> 01:51:04,760
+o zaman bir threadin
+
+2121
+01:51:04,760 --> 01:51:06,760
+bir başka threadten data
+
+2122
+01:51:06,760 --> 01:51:08,760
+saklayabilmesi bozabilmesini
+
+2123
+01:51:08,760 --> 01:51:10,760
+engellemek için başka
+
+2124
+01:51:10,760 --> 01:51:12,760
+mekanizmalar devreye sokmamız lazım
+
+2125
+01:51:12,760 --> 01:51:14,760
+bunun mekanizmaları var işletim sisteminde de
+
+2126
+01:51:14,760 --> 01:51:16,760
+uyguluyoruz ama
+
+2127
+01:51:16,760 --> 01:51:18,760
+ne yazık ki bu mekanizmaların
+
+2128
+01:51:18,760 --> 01:51:20,760
+özellikle intel
+
+2129
+01:51:20,760 --> 01:51:22,760
+mimarisinde
+
+2130
+01:51:22,760 --> 01:51:24,760
+uygulanabilmesi zor çünkü
+
+2131
+01:51:24,760 --> 01:51:26,760
+intel işlemcisi
+
+2132
+01:51:26,760 --> 01:51:28,760
+complex instruction set
+
+2133
+01:51:28,760 --> 01:51:30,760
+kicks mimarisinde
+
+2134
+01:51:30,760 --> 01:51:32,760
+register sayısı az
+
+2135
+01:51:32,760 --> 01:51:34,760
+böyle olunca da
+
+2136
+01:51:34,760 --> 01:51:36,760
+risk mimarisi için ortaya
+
+2137
+01:51:36,760 --> 01:51:38,760
+atılmış bu mekanizmayı intelde
+
+2138
+01:51:38,760 --> 01:51:40,760
+uygulayabilmek
+
+2139
+01:51:40,760 --> 01:51:42,760
+sıkıntılı belirli
+
+2140
+01:51:42,760 --> 01:51:44,760
+bir noktaya kadar uyguluyorsunuz
+
+2141
+01:51:44,760 --> 01:51:46,760
+sonuç olarak
+
+2142
+01:51:46,760 --> 01:51:48,760
+chrome google da diyor ki
+
+2143
+01:51:48,760 --> 01:51:50,760
+o zaman biz bu yoldan
+
+2144
+01:51:50,760 --> 01:51:52,760
+gitmeyeceğiz başka bir şey yapacağız
+
+2145
+01:51:52,760 --> 01:51:54,760
+her şeyi bir proses halinde
+
+2146
+01:51:54,760 --> 01:51:56,760
+dönüştüreceğiz
+
+2147
+01:51:56,760 --> 01:51:58,760
+proseslerin memorisi birbirinden
+
+2148
+01:51:58,760 --> 01:52:00,760
+ayrılmış durumda öyleyse en azından
+
+2149
+01:52:00,760 --> 01:52:02,760
+birbirlerinin memorilerine bulaşmalarını
+
+2150
+01:52:02,760 --> 01:52:04,760
+engelleyeceğiz
+
+2151
+01:52:04,760 --> 01:52:06,760
+diğer bir taba erişemeyecek
+
+2152
+01:52:06,760 --> 01:52:08,760
+çünkü her tab ayrı bir proses
+
+2153
+01:52:08,760 --> 01:52:10,760
+olacak
+
+2154
+01:52:10,760 --> 01:52:12,760
+ancak bir de bunların arasında
+
+2155
+01:52:12,760 --> 01:52:14,760
+haberleşmeyi sağlayan bir mekanizma kuracağız
+
+2156
+01:52:14,760 --> 01:52:16,760
+şimdi bu ne demek biliyor musunuz
+
+2157
+01:52:16,760 --> 01:52:18,760
+normalde bir proses ve
+
+2158
+01:52:18,760 --> 01:52:20,760
+onun altında en tane
+
+2159
+01:52:20,760 --> 01:52:22,760
+thread varken şu anda
+
+2160
+01:52:22,760 --> 01:52:24,760
+chrome mimarisini
+
+2161
+01:52:24,760 --> 01:52:26,760
+uygulayan bir browser ile
+
+2162
+01:52:26,760 --> 01:52:28,760
+dolaştığınızda
+
+2163
+01:52:28,760 --> 01:52:30,760
+internette
+
+2164
+01:52:30,760 --> 01:52:32,760
+açtığınız her tab
+
+2165
+01:52:32,760 --> 01:52:34,760
+eklediğiniz her login
+
+2166
+01:52:34,760 --> 01:52:36,760
+her biri bağımsız
+
+2167
+01:52:36,760 --> 01:52:38,760
+bir proses
+
+2168
+01:52:38,760 --> 01:52:40,760
+sonucunda da daha fazla memori
+
+2169
+01:52:40,760 --> 01:52:42,760
+kullanılıyor daha çok sistem kaynağı
+
+2170
+01:52:42,760 --> 01:52:44,760
+tüketiliyor ve bir yerden sonra
+
+2171
+01:52:44,760 --> 01:52:46,760
+daha yavaş çalışıyor ama işte
+
+2172
+01:52:46,760 --> 01:52:48,760
+her şeyin bir bedeli var
+
+2173
+01:52:48,760 --> 01:52:50,760
+ya hızlı çalışsın güvensiz olsun
+
+2174
+01:52:50,760 --> 01:52:52,760
+ya biraz daha yavaş çalışsın
+
+2175
+01:52:52,760 --> 01:52:54,760
+ama güvenli olsun
+
+2176
+01:52:54,760 --> 01:53:00,439
+bakın chrome'un altında bir browser
+
+2177
+01:53:00,439 --> 01:53:02,439
+prosesi var bu bunun işte
+
+2178
+01:53:02,439 --> 01:53:04,439
+altın parçası chrome parlayan
+
+2179
+01:53:04,439 --> 01:53:06,439
+parçası diye düşünebilirsiniz
+
+2180
+01:53:08,439 --> 01:53:10,439
+controls chrome part of the application
+
+2181
+01:53:10,439 --> 01:53:12,439
+like adres var bookmarks
+
+2182
+01:53:12,439 --> 01:53:14,439
+also handles the invisible
+
+2183
+01:53:14,439 --> 01:53:16,439
+privileged parts of a web browser
+
+2184
+01:53:16,439 --> 01:53:18,439
+like network requests
+
+2185
+01:53:18,439 --> 01:53:20,439
+renderer
+
+2186
+01:53:20,439 --> 01:53:22,439
+bir tab ve bir tabın içerisindeki
+
+2187
+01:53:22,439 --> 01:53:24,439
+her bağımsız
+
+2188
+01:53:24,439 --> 01:53:26,439
+adres her bağımsız domain
+
+2189
+01:53:26,439 --> 01:53:28,439
+onun ekranda
+
+2190
+01:53:28,439 --> 01:53:30,439
+şekillendirilmesini sağlayacak
+
+2191
+01:53:30,439 --> 01:53:32,439
+işlerin tamamı renderer prosesinde yapılıyor
+
+2192
+01:53:32,439 --> 01:53:34,439
+ama bunun ekrana
+
+2193
+01:53:34,439 --> 01:53:36,439
+yansıtılması GPU
+
+2194
+01:53:36,439 --> 01:53:38,439
+proses sayesinde oluyor
+
+2195
+01:53:38,439 --> 01:53:40,439
+çünkü 4 tane
+
+2196
+01:53:40,439 --> 01:53:42,439
+5 tane 7 tane tab açtıysan
+
+2197
+01:53:42,439 --> 01:53:44,439
+her biri ekrana bir şey gönderecek
+
+2198
+01:53:44,439 --> 01:53:46,439
+bunların
+
+2199
+01:53:46,439 --> 01:53:48,439
+birbirleriyle doğrudan etkileşimini
+
+2200
+01:53:48,439 --> 01:53:50,439
+engellemek için araya
+
+2201
+01:53:50,439 --> 01:53:52,439
+ne yerleştirilmiş durumda GPU proses
+
+2202
+01:53:52,439 --> 01:53:54,439
+aynı zamanda GPU proses
+
+2203
+01:53:54,439 --> 01:53:56,439
+sistemde mevcut
+
+2204
+01:53:56,439 --> 01:53:58,439
+GPU varsa
+
+2205
+01:53:58,439 --> 01:54:00,439
+bu renderingi daha efektif
+
+2206
+01:54:00,439 --> 01:54:02,439
+renderingin sonucunda ekranda görüntülenmeyi
+
+2207
+01:54:02,439 --> 01:54:04,439
+daha efektif
+
+2208
+01:54:04,439 --> 01:54:06,439
+yapmak için uğraşıyor
+
+2209
+01:54:06,439 --> 01:54:09,979
+plugin proses de
+
+2210
+01:54:09,979 --> 01:54:11,979
+ilgili web sitesinden gelen
+
+2211
+01:54:11,979 --> 01:54:13,979
+veya bizim sisteme yüklemiş olduğumuz
+
+2212
+01:54:13,979 --> 01:54:15,979
+pluginleri
+
+2213
+01:54:15,979 --> 01:54:17,979
+birbirinden izole ediyor
+
+2214
+01:54:17,979 --> 01:54:19,979
+en temel plugin biliyorsunuz
+
+2215
+01:54:19,979 --> 01:54:21,979
+başımızın belası sürekli
+
+2216
+01:54:21,979 --> 01:54:23,979
+güvenlik açığı oluşan flash
+
+2217
+01:54:23,979 --> 01:54:30,420
+az önce söylediğim şey
+
+2218
+01:54:30,420 --> 01:54:32,420
+bakın a.com'a
+
+2219
+01:54:32,420 --> 01:54:34,420
+geçmişim ama a.com
+
+2220
+01:54:34,420 --> 01:54:36,420
+iframe olarak b.com
+
+2221
+01:54:36,420 --> 01:54:38,420
+ve iframe olarak c.com'u
+
+2222
+01:54:38,420 --> 01:54:40,420
+include etmiş
+
+2223
+01:54:40,420 --> 01:54:43,829
+a.com'un
+
+2224
+01:54:43,829 --> 01:54:45,829
+kendi renderer prosesi
+
+2225
+01:54:45,829 --> 01:54:47,829
+varken parse ediliyor
+
+2226
+01:54:47,829 --> 01:54:49,829
+iframe görünüyor hemen
+
+2227
+01:54:49,829 --> 01:54:51,829
+bir renderer proses oluşturulup
+
+2228
+01:54:51,829 --> 01:54:53,829
+b.com'u
+
+2229
+01:54:53,829 --> 01:54:55,829
+o yönetmeye başlıyor
+
+2230
+01:54:55,829 --> 01:54:57,829
+başka bir iframe renderer
+
+2231
+01:54:57,829 --> 01:54:59,829
+yani bir sayfa bile
+
+2232
+01:54:59,829 --> 01:55:01,829
+içeriğinin yüklülüğüne bağlı olarak
+
+2233
+01:55:01,829 --> 01:55:03,829
+birden fazla proses oluşturabiliyor
+
+2234
+01:55:03,829 --> 01:55:05,829
+o yüzden hani sadece
+
+2235
+01:55:05,829 --> 01:55:07,829
+5 tane tab var 5 tane proses var
+
+2236
+01:55:07,829 --> 01:55:09,829
+ne olacak değil
+
+2237
+01:55:09,829 --> 01:55:11,829
+şimdi şöyle düşünün sayfaların
+
+2238
+01:55:11,829 --> 01:55:13,829
+büyük bir çoğunluğu özellikle reklam
+
+2239
+01:55:13,829 --> 01:55:15,829
+verilmesi belirli alanların
+
+2240
+01:55:15,829 --> 01:55:17,829
+belirli amaçlar için ayrılması
+
+2241
+01:55:17,829 --> 01:55:19,829
+sebebiyle tek bir
+
+2242
+01:55:19,829 --> 01:55:21,829
+domeyinden gelmiyor çok farklı
+
+2243
+01:55:21,829 --> 01:55:23,829
+domeyinlerden geliyor özellikle de
+
+2244
+01:55:23,829 --> 01:55:25,829
+o sayfada
+
+2245
+01:55:25,829 --> 01:55:27,829
+yapılan işlerin track edilmesi
+
+2246
+01:55:27,829 --> 01:55:29,829
+adına analytics denilen
+
+2247
+01:55:29,829 --> 01:55:31,829
+bilgilerin toplanabilmesi adına
+
+2248
+01:55:31,829 --> 01:55:33,829
+bile farklı sitelerden
+
+2249
+01:55:33,829 --> 01:55:35,829
+gelen şeyler var bunların
+
+2250
+01:55:35,829 --> 01:55:37,829
+hepsini bir araya getirip
+
+2251
+01:55:37,829 --> 01:55:39,829
+topladığımız zaman tek bir
+
+2252
+01:55:39,829 --> 01:55:41,829
+sayfa gibi görünmesine rağmen o sayfa
+
+2253
+01:55:41,829 --> 01:55:43,829
+bazen 5 tane bazen
+
+2254
+01:55:43,829 --> 01:55:45,829
+10 tane proses başlatabiliyor
+
+2255
+01:55:45,829 --> 01:55:47,829
+bu da tabiki sistemin
+
+2256
+01:55:47,829 --> 01:55:49,829
+performansını ciddi
+
+2257
+01:55:49,829 --> 01:55:51,829
+anlamda etkileyen bir şey ama
+
+2258
+01:55:51,829 --> 01:55:53,829
+güvenlik açısından güzel bir şey
+
+2259
+01:55:53,829 --> 01:55:55,829
+çünkü niye
+
+2260
+01:55:55,829 --> 01:55:57,829
+bir tane broker prosesi
+
+2261
+01:55:57,829 --> 01:55:59,829
+var bu broker prosesi
+
+2262
+01:55:59,829 --> 01:56:01,829
+diğer
+
+2263
+01:56:01,829 --> 01:56:03,829
+proseslerin aralarında
+
+2264
+01:56:03,829 --> 01:56:05,829
+nasıl haberleşip
+
+2265
+01:56:05,829 --> 01:56:07,829
+haberleşemeyeceğini belirliyor
+
+2266
+01:56:07,829 --> 01:56:09,829
+şurada policy engine de kurallar var
+
+2267
+01:56:09,829 --> 01:56:11,829
+bu kurala göre
+
+2268
+01:56:11,829 --> 01:56:13,829
+hangi proses
+
+2269
+01:56:13,829 --> 01:56:15,829
+hangi prosesler hangi isteği
+
+2270
+01:56:15,829 --> 01:56:17,829
+yapabilir işte aynen
+
+2271
+01:56:17,829 --> 01:56:19,829
+access control list gibi
+
+2272
+01:56:19,829 --> 01:56:23,340
+öyle düşünün bu genel
+
+2273
+01:56:23,340 --> 01:56:25,340
+yapıya da burada broker denmiş ama
+
+2274
+01:56:25,340 --> 01:56:27,340
+hani simsar
+
+2275
+01:56:27,340 --> 01:56:29,340
+gibi arada geçişi sağlayan
+
+2276
+01:56:29,340 --> 01:56:31,340
+bağlantıyı sağlayan
+
+2277
+01:56:31,340 --> 01:56:33,340
+buna biz genel olarak ne diyoruz
+
+2278
+01:56:33,340 --> 01:56:35,340
+reference monitor diyoruz
+
+2279
+01:56:35,340 --> 01:56:37,340
+önümüzdeki hafta
+
+2280
+01:56:37,340 --> 01:56:39,340
+daha ayrıntılı bir şekilde
+
+2281
+01:56:39,340 --> 01:56:41,340
+inceleyeceğiz reference monitörü
+
+2282
+01:56:41,340 --> 01:56:43,340
+artı
+
+2283
+01:56:43,340 --> 01:56:45,340
+böyle tırtıklı
+
+2284
+01:56:45,340 --> 01:56:47,340
+çizgilerle
+
+2285
+01:56:47,340 --> 01:56:49,340
+kutulara alınmış
+
+2286
+01:56:49,340 --> 01:56:51,340
+şurada targetler
+
+2287
+01:56:51,340 --> 01:56:53,340
+o tırtıklı çizgilere de
+
+2288
+01:56:53,340 --> 01:56:55,340
+sandbox diyoruz
+
+2289
+01:56:55,340 --> 01:56:57,340
+kumdan
+
+2290
+01:56:57,340 --> 01:56:59,340
+kutu ne anlama geliyor derseniz
+
+2291
+01:56:59,340 --> 01:57:01,340
+askeri bir terim özellikle
+
+2292
+01:57:01,340 --> 01:57:03,340
+patlayıcıların
+
+2293
+01:57:03,340 --> 01:57:05,340
+zarar vermeden imha edilmesi
+
+2294
+01:57:05,340 --> 01:57:07,340
+veya patlayıcı deneylerinin yapılması
+
+2295
+01:57:07,340 --> 01:57:09,340
+sırasında bunlar
+
+2296
+01:57:09,340 --> 01:57:11,340
+kum havuzlarında
+
+2297
+01:57:11,340 --> 01:57:13,340
+gerçekleştiriliyor ki etrafa olan
+
+2298
+01:57:13,340 --> 01:57:15,340
+ters bir durumdaki
+
+2299
+01:57:15,340 --> 01:57:17,340
+zarar en aza indirilsin
+
+2300
+01:57:17,340 --> 01:57:19,340
+işte sandbox oradan geliyor
+
+2301
+01:57:19,340 --> 01:57:24,539
+peki chrome bunun haricinde
+
+2302
+01:57:24,539 --> 01:57:26,539
+neler yapıyor bunun haricinde
+
+2303
+01:57:26,539 --> 01:57:28,539
+az önce öğrendik tokenın ne olduğunu
+
+2304
+01:57:28,539 --> 01:57:30,539
+bir tane kısıtlanmış
+
+2305
+01:57:30,539 --> 01:57:32,539
+token üretiyor
+
+2306
+01:57:32,539 --> 01:57:34,539
+ve bu tokenın
+
+2307
+01:57:34,539 --> 01:57:36,539
+user ve grubunu
+
+2308
+01:57:36,539 --> 01:57:38,539
+nobody'ye set ediyor
+
+2309
+01:57:38,539 --> 01:57:40,539
+nobody'nin
+
+2310
+01:57:40,539 --> 01:57:42,539
+hiçbir erişim
+
+2311
+01:57:42,539 --> 01:57:46,229
+yetkisi yok
+
+2312
+01:57:46,229 --> 01:57:48,229
+yani siz kalkıp da
+
+2313
+01:57:48,229 --> 01:57:50,229
+kendi sisteminizde
+
+2314
+01:57:50,229 --> 01:57:52,229
+dosyalarınızın owner'ını
+
+2315
+01:57:52,229 --> 01:57:54,229
+nobody'ye set etmediğiniz sürece
+
+2316
+01:57:54,229 --> 01:57:56,229
+veyahut da dosyalara
+
+2317
+01:57:56,229 --> 01:57:58,229
+her önüne gelen erişebilir diye
+
+2318
+01:57:58,229 --> 01:58:00,229
+özellikle hak vermediğiniz sürece
+
+2319
+01:58:00,229 --> 01:58:02,229
+nobody
+
+2320
+01:58:02,229 --> 01:58:04,229
+kullanıcısının
+
+2321
+01:58:04,229 --> 01:58:06,229
+bu dosyalara erişme ihtimali
+
+2322
+01:58:06,229 --> 01:58:08,229
+söz konusu değil
+
+2323
+01:58:08,229 --> 01:58:10,229
+vista ve sonrasında
+
+2324
+01:58:10,229 --> 01:58:12,229
+network erişiminde de
+
+2325
+01:58:12,229 --> 01:58:14,229
+nobody benzer
+
+2326
+01:58:14,229 --> 01:58:16,229
+kısıtlamalarla karşılaşıyor
+
+2327
+01:58:16,229 --> 01:58:18,229
+şimdi burada niye windows üzerinden gidiyoruz
+
+2328
+01:58:18,229 --> 01:58:20,229
+az önce söyledim
+
+2329
+01:58:20,229 --> 01:58:22,229
+en çok uç noktada
+
+2330
+01:58:22,229 --> 01:58:24,229
+kullanılan işletim sistemi windows
+
+2331
+01:58:24,229 --> 01:58:26,229
+ve en fazla
+
+2332
+01:58:26,229 --> 01:58:28,229
+saldırının yapıldığı
+
+2333
+01:58:28,229 --> 01:58:30,229
+desktop kullanıcısı
+
+2334
+01:58:30,229 --> 01:58:32,229
+daki işletim sistemi windows
+
+2335
+01:58:32,229 --> 01:58:34,229
+saldırıda da en çok
+
+2336
+01:58:34,229 --> 01:58:36,229
+kullanılan araç
+
+2337
+01:58:36,229 --> 01:58:38,229
+aracı program diye
+
+2338
+01:58:38,229 --> 01:58:40,229
+aracı program
+
+2339
+01:58:40,229 --> 01:58:42,229
+browser
+
+2340
+01:58:42,229 --> 01:58:44,229
+böyle olunca da google bu
+
+2341
+01:58:44,229 --> 01:58:46,229
+chrome mimarisini
+
+2342
+01:58:46,229 --> 01:58:48,229
+öncelikli olarak windows için
+
+2343
+01:58:48,229 --> 01:58:50,229
+üretiyor ama burada konuştuğumuz
+
+2344
+01:58:50,229 --> 01:58:52,229
+özelliklerin
+
+2345
+01:58:52,229 --> 01:58:54,229
+tamamının
+
+2346
+01:58:54,229 --> 01:58:56,229
+aslında
+
+2347
+01:58:56,229 --> 01:58:58,229
+diğer işletim sistemlerinde de
+
+2348
+01:58:58,229 --> 01:59:00,229
+karşılığı var
+
+2349
+01:59:00,229 --> 01:59:02,229
+birincisi bu
+
+2350
+01:59:02,229 --> 01:59:04,229
+restricted security context
+
+2351
+01:59:04,229 --> 01:59:06,229
+security context neydi
+
+2352
+01:59:06,229 --> 01:59:08,229
+proseslerle alakalıydı unutmayın
+
+2353
+01:59:08,229 --> 01:59:10,229
+browser objektlerle alakalıydı
+
+2354
+01:59:10,229 --> 01:59:12,229
+demek ki
+
+2355
+01:59:12,229 --> 01:59:14,229
+browserın security contexti
+
+2356
+01:59:14,229 --> 01:59:16,229
+nobodyye kadar indirilmiş durumda
+
+2357
+01:59:16,229 --> 01:59:18,229
+ikincisi
+
+2358
+01:59:18,229 --> 01:59:20,229
+renderer çok tehlikeli
+
+2359
+01:59:20,229 --> 01:59:22,229
+çünkü
+
+2360
+01:59:22,229 --> 01:59:24,229
+dosyalara falan
+
+2361
+01:59:24,229 --> 01:59:26,229
+erişiyor gelen network stream'e
+
+2362
+01:59:26,229 --> 01:59:28,229
+erişiyor onu interpret edip
+
+2363
+01:59:28,229 --> 01:59:30,229
+ekranda gösterilebilir
+
+2364
+01:59:30,229 --> 01:59:32,229
+hale getiriyor o sırada kim bilir
+
+2365
+01:59:32,229 --> 01:59:34,229
+nelere
+
+2366
+01:59:34,229 --> 01:59:36,229
+nerelere erişebilir
+
+2367
+01:59:36,229 --> 01:59:38,229
+sorusu söz konusu
+
+2368
+01:59:38,229 --> 01:59:40,229
+bunun içinde
+
+2369
+01:59:40,229 --> 01:59:42,229
+windows'da bir job objekti var
+
+2370
+01:59:42,229 --> 01:59:44,229
+hani sistem kullanıcıları
+
+2371
+01:59:44,229 --> 01:59:46,229
+ve servis
+
+2372
+01:59:46,229 --> 01:59:48,229
+kullanıcıları ve normal kullanıcılar
+
+2373
+01:59:48,229 --> 01:59:50,229
+dedik ya hatta servis kullanıcılarında
+
+2374
+01:59:50,229 --> 01:59:52,229
+hatırlarsanız
+
+2375
+01:59:52,229 --> 01:59:54,229
+no login vardı
+
+2376
+01:59:54,229 --> 01:59:56,229
+no loginle
+
+2377
+01:59:56,229 --> 01:59:58,229
+interaktif olarak sisteme
+
+2378
+01:59:58,229 --> 02:00:00,229
+bağlanamaz diyorduk
+
+2379
+02:00:00,229 --> 02:00:02,229
+interaktif olarak bağlanamayan
+
+2380
+02:00:02,229 --> 02:00:04,229
+ne command shell açabilir
+
+2381
+02:00:04,229 --> 02:00:06,229
+ne grafik user interface açabilir
+
+2382
+02:00:06,229 --> 02:00:08,229
+klip orada erişemez
+
+2383
+02:00:08,229 --> 02:00:10,229
+tek bir amaç için
+
+2384
+02:00:10,229 --> 02:00:12,229
+çalışıyor kendisinden
+
+2385
+02:00:12,229 --> 02:00:14,229
+başka prosesler üretemez yani
+
+2386
+02:00:14,229 --> 02:00:16,229
+folk edemez falan gibi
+
+2387
+02:00:16,229 --> 02:00:18,229
+bazı kısıtlar var işte windows'un
+
+2388
+02:00:18,229 --> 02:00:20,229
+bu özelliğini
+
+2389
+02:00:20,229 --> 02:00:22,229
+renderer prosesi için kullanıyorlar
+
+2390
+02:00:22,229 --> 02:00:24,229
+diğer işletim sistemlerinde de
+
+2391
+02:00:24,229 --> 02:00:26,229
+az önce söylediğim bu özellik var
+
+2392
+02:00:26,229 --> 02:00:28,229
+aslında
+
+2393
+02:00:28,229 --> 02:00:30,229
+bir başka şey de windows'da çok
+
+2394
+02:00:30,229 --> 02:00:32,229
+kullanmadığımız birden fazla desktop
+
+2395
+02:00:32,229 --> 02:00:34,229
+yani bir programı
+
+2396
+02:00:34,229 --> 02:00:36,229
+bir desktopta diğer bir programı
+
+2397
+02:00:36,229 --> 02:00:38,229
+başka bir desktopta başlayabilir
+
+2398
+02:00:38,229 --> 02:00:40,229
+başlatabiliyoruz
+
+2399
+02:00:40,229 --> 02:00:42,229
+bu daha çok sunum yaptığımızda
+
+2400
+02:00:42,229 --> 02:00:44,229
+alışkanlık haline gelen bir şey
+
+2401
+02:00:44,229 --> 02:00:46,229
+işte mevcut desktopu extend mi edeyim
+
+2402
+02:00:46,229 --> 02:00:48,229
+yoksa 1 ve 2 diye ayırayım mı
+
+2403
+02:00:48,229 --> 02:00:50,229
+sayısında sınır yok
+
+2404
+02:00:50,229 --> 02:00:52,229
+çünkü sonuçta istediğiniz kadar
+
+2405
+02:00:52,229 --> 02:00:54,229
+desktop üretebilirsiniz
+
+2406
+02:00:54,229 --> 02:00:56,229
+ama bu desktoplar aynı ekrana
+
+2407
+02:00:56,229 --> 02:00:58,229
+yansıtılacaklar
+
+2408
+02:00:58,229 --> 02:01:00,229
+fakat desktop oluşturup da
+
+2409
+02:01:00,229 --> 02:01:02,229
+prosesleri farklı
+
+2410
+02:01:02,229 --> 02:01:04,229
+desktoplarda
+
+2411
+02:01:04,229 --> 02:01:06,229
+başlatmanın güzelliği ne
+
+2412
+02:01:06,229 --> 02:01:08,229
+ee
+
+2413
+02:01:08,229 --> 02:01:10,229
+prosesler arasında
+
+2414
+02:01:10,229 --> 02:01:12,229
+mesajlaşma bile yapamıyorsunuz
+
+2415
+02:01:12,229 --> 02:01:14,229
+bakın aynı desktop altındaki
+
+2416
+02:01:14,229 --> 02:01:16,229
+prosesler birbirleriyle
+
+2417
+02:01:16,229 --> 02:01:18,229
+inter-process communication yapabilirken
+
+2418
+02:01:18,229 --> 02:01:20,229
+farklı desktoptakiler
+
+2419
+02:01:20,229 --> 02:01:22,229
+doğrudan yapamıyor
+
+2420
+02:01:22,229 --> 02:01:24,229
+araya bir aracının girmesi lazım
+
+2421
+02:01:24,229 --> 02:01:26,229
+bu durumda da
+
+2422
+02:01:26,229 --> 02:01:28,229
+Chrome ne yapıyor
+
+2423
+02:01:28,229 --> 02:01:30,229
+her bir
+
+2424
+02:01:30,229 --> 02:01:32,229
+ihtiyaç duyduğu proses için
+
+2425
+02:01:32,229 --> 02:01:34,229
+farklı bir desktop oluşturuyor
+
+2426
+02:01:34,229 --> 02:01:36,229
+ve
+
+2427
+02:01:36,229 --> 02:01:38,229
+bu da bize şunu sağlıyor
+
+2428
+02:01:38,229 --> 02:01:40,229
+işte bir tapta
+
+2429
+02:01:40,229 --> 02:01:42,229
+bir malware varsa
+
+2430
+02:01:42,229 --> 02:01:44,229
+aktif olarak
+
+2431
+02:01:44,229 --> 02:01:46,229
+diğer tapta girilen
+
+2432
+02:01:46,229 --> 02:01:48,229
+user id password bilgilerinin
+
+2433
+02:01:48,229 --> 02:01:50,229
+işte tc kimlik numaralarının
+
+2434
+02:01:50,229 --> 02:01:52,229
+banka hesap numaralarının
+
+2435
+02:01:52,229 --> 02:01:54,229
+banka şifrelerinin çalınmasını
+
+2436
+02:01:54,229 --> 02:01:56,229
+engelliyor yani keylogger
+
+2437
+02:01:56,229 --> 02:01:58,229
+yazılımlarının o
+
+2438
+02:01:58,229 --> 02:02:00,229
+yaptığı şeyin önüne geçiyor
+
+2439
+02:02:00,229 --> 02:02:02,229
+teknik olarak işletim sisteminin
+
+2440
+02:02:02,229 --> 02:02:04,229
+izolasyonundan yararlanmış oluyor
+
+2441
+02:02:04,229 --> 02:02:06,229
+diğer bir şey de
+
+2442
+02:02:06,229 --> 02:02:08,229
+bu integrity level
+
+2443
+02:02:08,229 --> 02:02:10,229
+bu windows vista ile beraber
+
+2444
+02:02:10,229 --> 02:02:12,229
+var olan şeyler
+
+2445
+02:02:12,229 --> 02:02:14,229
+şimdi diyelim internetten bir program
+
+2446
+02:02:14,229 --> 02:02:16,229
+yüklediniz diyor ki
+
+2447
+02:02:16,229 --> 02:02:18,229
+bunun sertifikası uygun değil
+
+2448
+02:02:18,229 --> 02:02:20,229
+emin misin bunu yükleyip çalıştırmak
+
+2449
+02:02:20,229 --> 02:02:22,229
+istediğine evet derseniz devam ediyor
+
+2450
+02:02:22,229 --> 02:02:24,229
+bu
+
+2451
+02:02:24,229 --> 02:02:26,229
+daha çok ne için
+
+2452
+02:02:26,229 --> 02:02:28,229
+güvenlik için düşünmüş ama
+
+2453
+02:02:28,229 --> 02:02:30,229
+seviyelendirilmesi yapılmış daha çok ne için
+
+2454
+02:02:30,229 --> 02:02:32,229
+uygulama geliştireceksiniz
+
+2455
+02:02:32,229 --> 02:02:34,229
+uygulamayı compile ediyorsunuz
+
+2456
+02:02:34,229 --> 02:02:36,229
+her seferinde emin misin
+
+2457
+02:02:36,229 --> 02:02:38,229
+bitmemiş bir uygulama içinde
+
+2458
+02:02:38,229 --> 02:02:40,229
+sertifika almanın anlamı yok
+
+2459
+02:02:40,229 --> 02:02:42,229
+ondan ötürü
+
+2460
+02:02:42,229 --> 02:02:44,229
+untrusted, low, medium, high ve system
+
+2461
+02:02:44,229 --> 02:02:46,229
+integrity level olmak üzere
+
+2462
+02:02:46,229 --> 02:02:48,229
+beş tane seviye tarifliyorlar
+
+2463
+02:02:50,229 --> 02:02:52,229
+untrusted hiçbir
+
+2464
+02:02:52,229 --> 02:02:54,229
+yetkisi olmayan en ufak
+
+2465
+02:02:54,229 --> 02:02:56,229
+ne okuma ne yazma tamamen böyle
+
+2466
+02:02:56,229 --> 02:02:58,229
+kapana pusulmuş bir şey
+
+2467
+02:02:58,229 --> 02:03:00,229
+sıfır yetki low ise
+
+2468
+02:03:00,229 --> 02:03:02,229
+okuyabiliyor ama yazamıyor
+
+2469
+02:03:02,229 --> 02:03:04,229
+yani şu anlama geliyor
+
+2470
+02:03:04,229 --> 02:03:06,229
+siz security kontekstinizde
+
+2471
+02:03:06,229 --> 02:03:08,229
+bir file okuma
+
+2472
+02:03:08,229 --> 02:03:10,229
+hakkına sahip olduğunuzu
+
+2473
+02:03:10,229 --> 02:03:12,229
+belgeliyorsunuz ancak
+
+2474
+02:03:12,229 --> 02:03:14,229
+o proses low integrity
+
+2475
+02:03:14,229 --> 02:03:16,229
+level'da çalıştığı için
+
+2476
+02:03:16,229 --> 02:03:18,229
+pardon yazma hakkına sahip olduğunuzu
+
+2477
+02:03:18,229 --> 02:03:20,229
+belgeliyorsunuz ama low integrity
+
+2478
+02:03:20,229 --> 02:03:22,229
+level'da çalıştığı için
+
+2479
+02:03:22,229 --> 02:03:24,229
+sistem seviyesinde diyor ki hayır
+
+2480
+02:03:24,229 --> 02:03:26,229
+bunun integrity level'ı
+
+2481
+02:03:26,229 --> 02:03:28,229
+yazmaya izin vermiyor o yüzden erişim
+
+2482
+02:03:28,229 --> 02:03:30,229
+hakkı olsa bile ben bunu durduruyorum
+
+2483
+02:03:30,229 --> 02:03:32,229
+yani integrity level aslında
+
+2484
+02:03:32,229 --> 02:03:34,229
+daha bir üst seviyeden
+
+2485
+02:03:34,229 --> 02:03:36,229
+erişimleri kontrol eden bir
+
+2486
+02:03:36,229 --> 02:03:38,229
+şey oluyor şimdi böyle olunca da
+
+2487
+02:03:38,229 --> 02:03:40,229
+bir de bundan yararlanılıyor
+
+2488
+02:03:40,229 --> 02:03:42,229
+yani ne yapılıyor
+
+2489
+02:03:42,229 --> 02:03:44,229
+yazma
+
+2490
+02:03:44,229 --> 02:03:46,229
+ihtiyacı olmayan
+
+2491
+02:03:46,229 --> 02:03:48,229
+bütün
+
+2492
+02:03:48,229 --> 02:03:50,229
+Chrome prosesleri
+
+2493
+02:03:50,229 --> 02:03:52,229
+low integrity level'da çalıştırılıyor
+
+2494
+02:03:52,229 --> 02:03:54,229
+siz o
+
+2495
+02:03:54,229 --> 02:03:56,229
+prosesi ele geçirseniz ve yazmak
+
+2496
+02:03:56,229 --> 02:03:58,229
+isteseniz yazamayacaksınız
+
+2497
+02:03:58,229 --> 02:04:00,229
+niçin low integrity level
+
+2498
+02:04:00,229 --> 02:04:02,229
+bunu engellemiş
+
+2499
+02:04:02,229 --> 02:04:06,859
+olacak şimdi
+
+2500
+02:04:06,859 --> 02:04:08,859
+mac os'a bakacak olursak mac os'da
+
+2501
+02:04:08,859 --> 02:04:10,859
+sandbox mantığını
+
+2502
+02:04:10,859 --> 02:04:12,859
+uyguluyor sandbox'ı
+
+2503
+02:04:12,859 --> 02:04:14,859
+ayrıntılı göreceğiz ama
+
+2504
+02:04:14,859 --> 02:04:16,859
+az önce tarifledim
+
+2505
+02:04:16,859 --> 02:04:20,229
+ne olduğunu donanım
+
+2506
+02:04:20,229 --> 02:04:22,229
+açısından network açısından
+
+2507
+02:04:22,229 --> 02:04:24,229
+uygulamaların
+
+2508
+02:04:24,229 --> 02:04:26,229
+kullandığı
+
+2509
+02:04:26,229 --> 02:04:28,229
+data yetiştiği lokasyonlar
+
+2510
+02:04:28,229 --> 02:04:30,229
+açısından
+
+2511
+02:04:30,229 --> 02:04:35,140
+uygulamaları
+
+2512
+02:04:35,140 --> 02:04:37,140
+farklı farklı güvenlik
+
+2513
+02:04:37,140 --> 02:04:39,140
+çemberlerinin içerisine
+
+2514
+02:04:39,140 --> 02:04:41,140
+alıyor
+
+2515
+02:04:41,140 --> 02:04:43,140
+böylece uygulama geliştirici
+
+2516
+02:04:43,140 --> 02:04:45,140
+açıkça
+
+2517
+02:04:45,140 --> 02:04:47,140
+o uygulamanın kullanılması
+
+2518
+02:04:47,140 --> 02:04:49,140
+kullanılması sırasında
+
+2519
+02:04:49,140 --> 02:04:51,140
+bir takım lokasyonlara
+
+2520
+02:04:51,140 --> 02:04:53,140
+veya bir takım kaynaklara
+
+2521
+02:04:53,140 --> 02:04:55,140
+erişim gerektiğini
+
+2522
+02:04:55,140 --> 02:04:57,140
+belirtmediyse o kaynaklara
+
+2523
+02:04:57,140 --> 02:04:59,140
+zaten erişme şansımız
+
+2524
+02:04:59,140 --> 02:05:01,140
+yok ama diğer taraftan
+
+2525
+02:05:01,140 --> 02:05:03,140
+belirttiği her kaynak için
+
+2526
+02:05:03,140 --> 02:05:05,140
+kullanılacağı zaman
+
+2527
+02:05:05,140 --> 02:05:07,140
+kullanımı sırasında
+
+2528
+02:05:07,140 --> 02:05:09,140
+işte şu uygulama kameraya
+
+2529
+02:05:09,140 --> 02:05:11,140
+erişmek istiyor diye size soruluyor
+
+2530
+02:05:11,140 --> 02:05:13,140
+siz de uygulamanın ne olduğunu
+
+2531
+02:05:13,140 --> 02:05:15,140
+bildiğiniz için o noktada
+
+2532
+02:05:15,140 --> 02:05:17,140
+kameraya erişip erişmemesinin
+
+2533
+02:05:17,140 --> 02:05:19,140
+gerekli olup olmadığına karar veriyorsunuz
+
+2534
+02:05:19,140 --> 02:05:21,140
+örneğin zoom client'ını
+
+2535
+02:05:21,140 --> 02:05:23,140
+ilk kurduğunuzda mac
+
+2536
+02:05:23,140 --> 02:05:25,140
+kullananınız varsa windows'da
+
+2537
+02:05:25,140 --> 02:05:27,140
+falan da benzer şeyler var aslında
+
+2538
+02:05:27,140 --> 02:05:29,140
+ilk defa şey yaptığınızda
+
+2539
+02:05:29,140 --> 02:05:31,140
+ne diyor
+
+2540
+02:05:31,140 --> 02:05:33,140
+kameraya erişime ihtiyacım
+
+2541
+02:05:33,140 --> 02:05:35,140
+var izin veriyor musun
+
+2542
+02:05:35,140 --> 02:05:37,140
+diyor bunu
+
+2543
+02:05:37,140 --> 02:05:39,140
+bu noktada sorgulayıp kullanıcıdan
+
+2544
+02:05:39,140 --> 02:05:41,140
+onay almak aslında daha anlamlı
+
+2545
+02:05:41,140 --> 02:05:43,140
+çünkü kullanıcı ne yapıldığını
+
+2546
+02:05:43,140 --> 02:05:45,140
+bildiği için
+
+2547
+02:05:45,140 --> 02:05:47,140
+daha bilinçli ve daha doğru
+
+2548
+02:05:47,140 --> 02:05:49,140
+cevap verebilir
+
+2549
+02:05:49,140 --> 02:05:51,140
+android tarafında da
+
+2550
+02:05:51,140 --> 02:05:53,140
+proses seviyesinde
+
+2551
+02:05:53,140 --> 02:05:55,140
+bir izolasyon var
+
+2552
+02:05:55,140 --> 02:05:57,140
+android'in alt tarafı linux
+
+2553
+02:05:57,140 --> 02:05:59,140
+ve
+
+2554
+02:05:59,140 --> 02:06:01,140
+android içerisinde bir
+
+2555
+02:06:01,140 --> 02:06:03,140
+sandbox var
+
+2556
+02:06:03,140 --> 02:06:05,140
+kernel seviyesinde çalışan
+
+2557
+02:06:05,140 --> 02:06:07,140
+o brokera denk düşen bir
+
+2558
+02:06:07,140 --> 02:06:09,140
+yapı üzerinden de
+
+2559
+02:06:09,140 --> 02:06:11,140
+sandbox içerisinde çalışan
+
+2560
+02:06:11,140 --> 02:06:13,140
+farklı proseslerin birbirleriyle konuşması
+
+2561
+02:06:13,140 --> 02:06:15,140
+sağlanıyor
+
+2562
+02:06:15,140 --> 02:06:17,140
+şimdi
+
+2563
+02:06:17,140 --> 02:06:19,140
+android uygulamaları java
+
+2564
+02:06:19,140 --> 02:06:21,140
+ancak biliyoruz ki
+
+2565
+02:06:21,140 --> 02:06:23,140
+java uygulamalarının
+
+2566
+02:06:23,140 --> 02:06:25,140
+çalışması için jvm'e ihtiyaç var
+
+2567
+02:06:25,140 --> 02:06:27,140
+birden fazla uygulamayı
+
+2568
+02:06:27,140 --> 02:06:29,140
+aynı jvm altında çalıştırırsanız
+
+2569
+02:06:29,140 --> 02:06:31,140
+bu uygulamalar thread mantığıyla
+
+2570
+02:06:31,140 --> 02:06:33,140
+çalışıyor o zaman
+
+2571
+02:06:33,140 --> 02:06:35,140
+az önce söylediğim şeye denk düşüyor
+
+2572
+02:06:35,140 --> 02:06:37,140
+aynı proses altındaki thread'lerin
+
+2573
+02:06:37,140 --> 02:06:39,140
+datasını birbirinden izole etmek zor
+
+2574
+02:06:39,140 --> 02:06:41,140
+peki google'ın izlediği
+
+2575
+02:06:41,140 --> 02:06:43,140
+android tasarımındaki
+
+2576
+02:06:43,140 --> 02:06:45,140
+yöntem ne
+
+2577
+02:06:45,140 --> 02:06:47,140
+her bir android uygulaması
+
+2578
+02:06:47,140 --> 02:06:49,140
+bağımsız kendi jvm'inde
+
+2579
+02:06:49,140 --> 02:06:51,140
+çalışacak
+
+2580
+02:06:51,140 --> 02:06:53,140
+böylece bunlar bağımsız prosesler
+
+2581
+02:06:53,140 --> 02:06:55,140
+olacak az önce
+
+2582
+02:06:55,140 --> 02:06:57,140
+chrome mimarisinde gördüğümüz
+
+2583
+02:06:57,140 --> 02:06:59,140
+şekilde bu
+
+2584
+02:06:59,140 --> 02:07:01,140
+jvm'ler
+
+2585
+02:07:01,140 --> 02:07:03,140
+dolayısıyla jvm'lerde çalışan
+
+2586
+02:07:03,140 --> 02:07:05,140
+uygulamalar birbirleriyle
+
+2587
+02:07:05,140 --> 02:07:07,140
+haberleşme ihtiyacı duyarlarsa
+
+2588
+02:07:07,140 --> 02:07:09,140
+eğer bir broker üzerinden
+
+2589
+02:07:09,140 --> 02:07:11,140
+haberleşecekler
+
+2590
+02:07:11,140 --> 02:07:13,140
+ondan izin alacaklar
+
+2591
+02:07:13,140 --> 02:07:15,140
+şuna erişmek istiyorum
+
+2592
+02:07:15,140 --> 02:07:17,140
+nedir takvime erişmek istiyor
+
+2593
+02:07:17,140 --> 02:07:19,140
+kontaklara erişmek istiyor
+
+2594
+02:07:19,140 --> 02:07:21,140
+sms göndermek istiyor
+
+2595
+02:07:21,140 --> 02:07:23,140
+ve benzeri internet
+
+2596
+02:07:23,140 --> 02:07:25,140
+bağlantısını kullanmak istiyor
+
+2597
+02:07:25,140 --> 02:07:28,550
+şimdi bakın
+
+2598
+02:07:28,550 --> 02:07:30,550
+şu ana kadar defense in depth'i
+
+2599
+02:07:30,550 --> 02:07:32,550
+principle of list privilege'ı
+
+2600
+02:07:32,550 --> 02:07:34,550
+ve privilege separation'ı
+
+2601
+02:07:34,550 --> 02:07:36,550
+derinlemesine inceledik
+
+2602
+02:07:36,550 --> 02:07:38,550
+demek ki size sorsak
+
+2603
+02:07:38,550 --> 02:07:40,550
+güvenli bir sistem tasarlamanın
+
+2604
+02:07:40,550 --> 02:07:42,550
+temel
+
+2605
+02:07:42,550 --> 02:07:44,550
+prensipleri nelerdir
+
+2606
+02:07:44,550 --> 02:07:46,550
+şu beş tanesini saymanız lazım
+
+2607
+02:07:46,550 --> 02:07:48,550
+üç tanesini
+
+2608
+02:07:48,550 --> 02:07:50,550
+süper öğrenmiş olmanız gerekiyor
+
+2609
+02:07:50,550 --> 02:07:52,550
+diğer iki tanesi
+
+2610
+02:07:52,550 --> 02:07:54,550
+kaldı şimdi onları da gözden geçireceğiz
+
+2611
+02:07:54,550 --> 02:07:56,550
+çok basit aslında
+
+2612
+02:07:56,550 --> 02:07:58,550
+açık tasarım
+
+2613
+02:07:58,550 --> 02:08:00,550
+açık tasarım ne
+
+2614
+02:08:00,550 --> 02:08:02,550
+bir tasarımın
+
+2615
+02:08:02,550 --> 02:08:04,550
+ayrıntılarını gizleyerek
+
+2616
+02:08:04,550 --> 02:08:06,550
+o tasarımı güvenli hale getiremezsiniz
+
+2617
+02:08:06,550 --> 02:08:08,550
+öyle veya böyle
+
+2618
+02:08:08,550 --> 02:08:10,550
+reverse engineering'le
+
+2619
+02:08:10,550 --> 02:08:12,550
+bilgilerinizin çalınmasıyla
+
+2620
+02:08:12,550 --> 02:08:14,550
+içeride çalışan bir
+
+2621
+02:08:14,550 --> 02:08:16,550
+elemanınızın hoşnutsuz
+
+2622
+02:08:16,550 --> 02:08:18,550
+bir şekilde ayrılıp her şeyi ifşa
+
+2623
+02:08:18,550 --> 02:08:20,550
+etmesiyle bu sisteminizin tasarım
+
+2624
+02:08:20,550 --> 02:08:22,550
+ayrıntıları ortaya çıktığında
+
+2625
+02:08:22,550 --> 02:08:24,550
+tamamen açıkta kalırsınız
+
+2626
+02:08:24,550 --> 02:08:26,550
+çünkü niye
+
+2627
+02:08:26,550 --> 02:08:28,550
+bütün güvenliğiniz
+
+2628
+02:08:28,550 --> 02:08:30,550
+tasarımın gizliliği
+
+2629
+02:08:30,550 --> 02:08:32,550
+üzerine kurulu
+
+2630
+02:08:32,550 --> 02:08:34,550
+bunu bir kez aklınızdan çıkartın
+
+2631
+02:08:34,550 --> 02:08:36,550
+tasarımın gizliliği üzerine kurulu
+
+2632
+02:08:36,550 --> 02:08:38,550
+güvenlik yapılamaz
+
+2633
+02:08:42,550 --> 02:08:44,550
+güvenliğin sağlanması ile
+
+2634
+02:08:44,550 --> 02:08:46,550
+alakalı
+
+2635
+02:08:46,550 --> 02:08:48,550
+anahtar noktaları
+
+2636
+02:08:48,550 --> 02:08:50,550
+güvenliğin kendisinden
+
+2637
+02:08:50,550 --> 02:08:52,550
+güvenlik mekanizmalarının kendisinden
+
+2638
+02:08:52,550 --> 02:08:54,550
+ayırmamız lazım
+
+2639
+02:08:54,550 --> 02:08:56,550
+ve bu bakın
+
+2640
+02:08:56,550 --> 02:08:58,550
+çok eski bir prensip
+
+2641
+02:08:58,550 --> 02:09:00,550
+kerkhoff
+
+2642
+02:09:00,550 --> 02:09:02,550
+august kerkhoff bunu
+
+2643
+02:09:02,550 --> 02:09:04,550
+çok seneler önce söylüyor
+
+2644
+02:09:04,550 --> 02:09:06,550
+kriptografinin atalarından biri
+
+2645
+02:09:06,550 --> 02:09:08,550
+kendisi
+
+2646
+02:09:08,550 --> 02:09:10,550
+diyor ki a crypto system should be secure
+
+2647
+02:09:10,550 --> 02:09:12,550
+even if everything about the system
+
+2648
+02:09:12,550 --> 02:09:14,550
+except the key is public knowledge
+
+2649
+02:09:14,550 --> 02:09:16,550
+neyi gizle diyor bir tek
+
+2650
+02:09:16,550 --> 02:09:18,550
+kullandığın anahtarı
+
+2651
+02:09:18,550 --> 02:09:20,550
+onun haricinde
+
+2652
+02:09:20,550 --> 02:09:22,550
+yöntemin açık olsun
+
+2653
+02:09:22,550 --> 02:09:24,550
+işte ben is kullanıyorum
+
+2654
+02:09:24,550 --> 02:09:26,550
+yok işte rsa kullanıyorum
+
+2655
+02:09:26,550 --> 02:09:28,550
+ecc işte 1024 2048
+
+2656
+02:09:28,550 --> 02:09:30,550
+şöyle şifte diyorum
+
+2657
+02:09:30,550 --> 02:09:32,550
+böyle egzorluyorum
+
+2658
+02:09:32,550 --> 02:09:34,550
+böyle tepetaklak attırıyorum
+
+2659
+02:09:34,550 --> 02:09:36,550
+hepsi açık
+
+2660
+02:09:36,550 --> 02:09:38,550
+ama key değerini bilmediğimiz sürece
+
+2661
+02:09:38,550 --> 02:09:40,550
+şifreyi çözemiyoruz
+
+2662
+02:09:40,550 --> 02:09:42,550
+buradaki mesele bu
+
+2663
+02:09:42,550 --> 02:09:44,550
+yani is
+
+2664
+02:09:44,550 --> 02:09:46,550
+gizli değil
+
+2665
+02:09:46,550 --> 02:09:48,550
+doğru mu
+
+2666
+02:09:48,550 --> 02:09:50,550
+des gizli değil
+
+2667
+02:09:50,550 --> 02:09:52,550
+ecc gizli değil
+
+2668
+02:09:52,550 --> 02:09:54,550
+oturup sizde kodunu yazabilirsiniz
+
+2669
+02:09:54,550 --> 02:09:56,550
+fakat arada
+
+2670
+02:09:56,550 --> 02:09:58,550
+güvenli mesajlaşma için
+
+2671
+02:09:58,550 --> 02:10:01,930
+kullanılan key değerini bilmediğiniz sürece
+
+2672
+02:10:01,930 --> 02:10:03,930
+mesajlaşmanın içeriğine ulaşamıyorsunuz
+
+2673
+02:10:03,930 --> 02:10:05,930
+öyleyse
+
+2674
+02:10:05,930 --> 02:10:07,930
+tasarladığımız sistemlerin
+
+2675
+02:10:07,930 --> 02:10:09,930
+tasarımı
+
+2676
+02:10:09,930 --> 02:10:11,930
+kendileri tasarım olarak
+
+2677
+02:10:11,930 --> 02:10:13,930
+kendileri açık olmalı
+
+2678
+02:10:13,930 --> 02:10:15,930
+onları gizlemekle uğraşmamalıyız
+
+2679
+02:10:15,930 --> 02:10:17,930
+anahtar noktalar
+
+2680
+02:10:17,930 --> 02:10:19,930
+ki işte bu kripto sistemde
+
+2681
+02:10:19,930 --> 02:10:21,930
+hakikaten birebir anahtara denk düşüyor
+
+2682
+02:10:21,930 --> 02:10:23,930
+bunların gizliliğini sağlamamız lazım
+
+2683
+02:10:23,930 --> 02:10:25,930
+şu açıdan da iyi
+
+2684
+02:10:25,930 --> 02:10:27,930
+gizliliğini sağlayacağımız
+
+2685
+02:10:27,930 --> 02:10:29,930
+ne diyelim eleman mı diyelim
+
+2686
+02:10:29,930 --> 02:10:31,930
+varlık mı diyelim
+
+2687
+02:10:31,930 --> 02:10:33,930
+bunların sayısı da azalmış olacak
+
+2688
+02:10:33,930 --> 02:10:35,930
+daha az şeyi korumakla uğraşacağız
+
+2689
+02:10:35,930 --> 02:10:37,930
+daha az şeyi korumakla uğraşacağız
+
+2690
+02:10:37,930 --> 02:10:39,930
+öyleyse open design'da konuştuk
+
+2691
+02:10:39,930 --> 02:10:41,930
+keep it simple
+
+2692
+02:10:41,930 --> 02:10:43,930
+basit tutmanız lazım arkadaşlar
+
+2693
+02:10:43,930 --> 02:10:45,930
+basit tutmanız lazım arkadaşlar
+
+2694
+02:10:45,930 --> 02:10:47,930
+esneklikle
+
+2695
+02:10:47,930 --> 02:10:49,930
+basitlik
+
+2696
+02:10:49,930 --> 02:10:51,930
+birbirine zıt şeyler
+
+2697
+02:10:51,930 --> 02:10:53,930
+esneklik dediğimiz zaman
+
+2698
+02:10:53,930 --> 02:10:55,930
+karmaşıklık beraberinde geliyor
+
+2699
+02:10:55,930 --> 02:10:57,930
+karmaşıklık complexity
+
+2700
+02:10:57,930 --> 02:10:59,930
+basitliği ortadan kaldırıyor
+
+2701
+02:10:59,930 --> 02:11:01,930
+basit olmayan
+
+2702
+02:11:01,930 --> 02:11:03,930
+yapıların debug edilmesi
+
+2703
+02:11:03,930 --> 02:11:05,930
+analiz edilmesi
+
+2704
+02:11:05,930 --> 02:11:07,930
+verify edilip doğruluğunun
+
+2705
+02:11:07,930 --> 02:11:09,930
+belirlenmesi
+
+2706
+02:11:09,930 --> 02:11:11,930
+çok daha zor hale geliyor
+
+2707
+02:11:11,930 --> 02:11:13,930
+karmaşık senaryolar
+
+2708
+02:11:13,930 --> 02:11:15,930
+sıkıntılı
+
+2709
+02:11:15,930 --> 02:11:17,930
+bazen öngörülemeyen senaryolar
+
+2710
+02:11:17,930 --> 02:11:19,930
+bir araya geldiğinde
+
+2711
+02:11:19,930 --> 02:11:21,930
+açıklar oluşabiliyor
+
+2712
+02:11:21,930 --> 02:11:23,930
+o yüzden
+
+2713
+02:11:23,930 --> 02:11:25,930
+bütün tasarımların basit olması lazım
+
+2714
+02:11:25,930 --> 02:11:27,930
+bütün tasarımların basit olması lazım
+
+2715
+02:11:27,930 --> 02:11:29,930
+temel olması lazım
+
+2716
+02:11:29,930 --> 02:11:31,930
+yarın öbür gün şuna da ihtiyaç olur
+
+2717
+02:11:31,930 --> 02:11:33,930
+buna da ihtiyaç olur
+
+2718
+02:11:33,930 --> 02:11:35,930
+işte şu da olsa fena olmaz
+
+2719
+02:11:35,930 --> 02:11:37,930
+bu da olsa güzel olur deyip
+
+2720
+02:11:37,930 --> 02:11:39,930
+kullanılmayacak özellikleri
+
+2721
+02:11:39,930 --> 02:11:41,930
+bir araya getirirseniz
+
+2722
+02:11:41,930 --> 02:11:43,930
+o zaman
+
+2723
+02:11:43,930 --> 02:11:45,930
+pek çok zaman
+
+2724
+02:11:45,930 --> 02:11:47,930
+tasarruflarınızı
+
+2725
+02:11:47,930 --> 02:11:49,930
+paketleyip
+
+2726
+02:11:49,930 --> 02:11:51,930
+saldırganlara hediye şeklinde
+
+2727
+02:11:51,930 --> 02:11:53,930
+saldırganların önüne koymuş
+
+2728
+02:11:53,930 --> 02:11:55,930
+olabilirsiniz
+
+2729
+02:11:55,930 --> 02:11:57,930
+demek ki
+
+2730
+02:11:57,930 --> 02:11:59,930
+5. prensibimizde
+
+2731
+02:11:59,930 --> 02:12:01,930
+güvenli sistem oluşturma açısından
+
+2732
+02:12:01,930 --> 02:12:03,930
+5. prensibimizde ne
+
+2733
+02:12:03,930 --> 02:12:05,930
+tasarımın
+
+2734
+02:12:05,930 --> 02:12:07,930
+basit olması
+
+2735
+02:12:07,930 --> 02:12:09,930
+evet
+
+2736
+02:12:09,930 --> 02:12:11,930
+bugünkü dersimiz bitti arkadaşlar
+
+2737
+02:12:11,930 --> 02:12:13,930
+sorusu olan var mıdır
+
+2738
+02:12:13,930 --> 02:12:33,659
+anladığım kadarıyla
+
+2739
+02:12:33,659 --> 02:12:35,659
+kimsenin sorusu yok
+
+2740
+02:12:35,659 --> 02:12:37,659
+herkes
+
+2741
+02:12:37,659 --> 02:12:39,659
+her şeyi anlamış durumda
+
+2742
+02:12:39,659 --> 02:12:41,659
+süper
+
+2743
+02:12:41,659 --> 02:12:43,659
+o zaman hepinize iyi günler
+
+2744
+02:12:43,659 --> 02:12:45,659
+diliyorum
+
+2745
+02:12:45,659 --> 02:12:47,659
+iyi günler
+
+2746
+02:12:47,659 --> 02:12:49,659
+haftaya görüşmek üzere arkadaşlar
+
+2747
+02:12:49,659 --> 02:12:51,659
+kolay gelsin
+
+2748
+02:12:51,659 --> 02:12:59,640
+kolay gelsin arkadaşlar
+
+2749
+02:12:59,640 --> 02:13:01,640
+görüşmek üzere
+

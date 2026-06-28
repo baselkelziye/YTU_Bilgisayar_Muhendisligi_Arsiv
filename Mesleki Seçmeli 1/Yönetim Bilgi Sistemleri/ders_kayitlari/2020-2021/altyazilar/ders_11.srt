@@ -1,0 +1,2016 @@
+1
+00:00:48,979 --> 00:01:05,900
+Günaydın, derse başlamadan önce geçen hafta bir örnek verecektik, onun üzerinde duracağız.
+
+2
+00:01:05,900 --> 00:01:21,900
+Daha sonra kurumlarda bilgi sistemleri ile ilgili uygulamalara başlarken gerçekleştireceğimiz işlemler konusunda konuşacağız.
+
+3
+00:01:32,340 --> 00:01:47,299
+Öncelikle geçen hafta gördüğümüz konu üzerinde şöyle bir geçelim.
+
+4
+00:01:47,299 --> 00:01:54,129
+Daha sonra da bu haftanın konusu üzerinde duracağız.
+
+5
+00:01:54,129 --> 00:02:17,129
+Bu hafta üzerinde duracağımız konu sistemler ve yönetim değişikliği gerçekleştiği zaman işletmecilik değerlerinde neler fark ediyor bunun anlaşılması üzerinde duracağız.
+
+6
+00:02:17,129 --> 00:02:34,840
+Geçen hafta bilgi sistemleri ile kurumların yeniden tasarlanması üzerinde durmuştuk.
+
+7
+00:02:34,840 --> 00:03:03,009
+Evet, sunumu paylaşayım, başlayalım.
+
+8
+00:03:03,009 --> 00:03:06,009
+Diğer arkadaşlarınız da katılır daha sonra.
+
+9
+00:03:06,009 --> 00:03:32,139
+Bilgi sistemleri ile kurumların yeniden tasarlanması konusu üzerinde durduk geçen hafta.
+
+10
+00:03:32,139 --> 00:03:35,139
+Burada neler önemliydi?
+
+11
+00:03:35,139 --> 00:03:55,259
+Değişim gerçekleştiğinde kurumlarda işletmecilik açısından değişen işlemler nelerdir?
+
+12
+00:03:55,259 --> 00:04:00,259
+Yeni bir bilgi sistemi oluşturmaya hangi adımlarla devam ediyoruz?
+
+13
+00:04:00,259 --> 00:04:04,259
+Bu hep derslerimizde gördüğümüz konulardı.
+
+14
+00:04:04,259 --> 00:04:08,259
+Bunun detayları üzerinde durmamıştık.
+
+15
+00:04:08,259 --> 00:04:14,060
+Temel riskler nelerdir sistem geliştirmede?
+
+16
+00:04:14,060 --> 00:04:28,379
+Yeni sistemler ve iş süreçleri oluştuğunda bunun stratejisini nasıl oluşturmalıyız?
+
+17
+00:04:28,379 --> 00:04:38,379
+Bilgi sistemleri planlaması yani bir yol haritası çizmemiz gerektiğinde kurumsal analiz oluşturuyoruz önce.
+
+18
+00:04:38,379 --> 00:04:43,379
+İşletmecilik süreçleri için bir sistem planlama.
+
+19
+00:04:43,379 --> 00:04:55,379
+Önce kurumun geniş çerçevede kurum bazında bir bilgi gereksinimleri analizi oluşturmak gerekiyor.
+
+20
+00:04:55,379 --> 00:05:04,379
+Daha sonra bunların bütün anahtar varlıklar ve özelliklerini ifade etmemiz gerekiyor.
+
+21
+00:05:05,379 --> 00:05:14,379
+Süreç ve veri sınıflaması matriksi oluşturmak gerekiyor. Bunun üzerinde ama çok durmamıştık.
+
+22
+00:05:14,379 --> 00:05:28,379
+Kritik başarı faktörleri stratejik analizde kurumsal bilgi gereksinimlerini oluşturmak istediğimiz zaman,
+
+23
+00:05:28,379 --> 00:05:45,139
+özellikle operasyonel hedefler için kurumlarda bir değer oluşturuyoruz.
+
+24
+00:05:46,139 --> 00:05:52,500
+Bunu nasıl oluşturuyorduk?
+
+25
+00:05:52,500 --> 00:06:10,500
+Kurumun kritik başarı faktörünü oluşturmak için kurumsal değişikliğin planlanabilmesi için önce yaptığımız işlem.
+
+26
+00:06:10,500 --> 00:06:14,500
+Kritik başarı faktörlerini her bir yönetici kendisi çıkarıyordu.
+
+27
+00:06:14,500 --> 00:06:23,500
+Daha sonra bunlar toplanıp yani her bir departman için yöneticiler çıkartıyor kendi departmanları için.
+
+28
+00:06:23,500 --> 00:06:27,500
+Sonra bunlar toplanıyor ve analiz ediliyor.
+
+29
+00:06:27,500 --> 00:06:36,500
+Kurum bazında kritik başarı faktörü bunların birleşeni olarak tanımlanıyor.
+
+30
+00:06:36,500 --> 00:06:41,779
+Ve şirket kritik başarı faktörleri tanımlanıyor.
+
+31
+00:06:41,779 --> 00:06:50,779
+Ve burada bunun için karar destek sistemleri tanımlanıyor.
+
+32
+00:06:50,779 --> 00:06:56,100
+Bilgi sistemlerinin önceliği ortaya çıkıyor böylece.
+
+33
+00:06:56,100 --> 00:07:03,100
+Yani sıralamayı nasıl yapmalıyız? Bunların ilişkilerini nasıl kurmalıyız?
+
+34
+00:07:03,100 --> 00:07:08,100
+Ve kurumsal değişim spektrumuna baktığımızda otomasyon,
+
+35
+00:07:08,100 --> 00:07:18,019
+süreçlerin gerçek süreçler, işletim süreçleriyle eşleştirilmesi,
+
+36
+00:07:18,019 --> 00:07:26,019
+iş süreçlerinin yeniden düzenlenmesi, re-engineering çalışması,
+
+37
+00:07:26,019 --> 00:07:33,019
+yani iş süreçlerinin yeniden radikal olarak tasarlanması, büyük değişiklikler yapılması,
+
+38
+00:07:33,019 --> 00:07:46,019
+bir de burada baktığımızda yani kurumsal değişimde farklı şiddetli değişiklikler,
+
+39
+00:07:46,019 --> 00:07:54,019
+belli işlemleri otomasyon gerçekleştirerek değiştirme,
+
+40
+00:07:54,019 --> 00:07:59,019
+iş süreçlerinde bir değişiklik yapma,
+
+41
+00:08:00,019 --> 00:08:07,019
+business process re-engineering tüm iş süreçlerinin yeniden oluşturulması,
+
+42
+00:08:07,019 --> 00:08:15,019
+radikal bir yeni tasarım, en fazla değişimde paradigma kayması,
+
+43
+00:08:15,019 --> 00:08:19,019
+yeni kavramlar getirilmesi şirket bazında.
+
+44
+00:08:19,019 --> 00:08:24,019
+İşte bu farklılıkları da şurada görüyoruz.
+
+45
+00:08:24,019 --> 00:08:28,019
+Otomasyon da risk de düşük, geri dönüşler de düşük,
+
+46
+00:08:28,019 --> 00:08:34,019
+rasyonalsasyon, risk biraz daha fazla, re-engineering çalışması,
+
+47
+00:08:34,019 --> 00:08:39,019
+bütün şeylerin yeniden tasarlanması,
+
+48
+00:08:39,019 --> 00:08:43,019
+beklentilerin, kavramların değişmesi kurumdaki,
+
+49
+00:08:43,019 --> 00:08:48,019
+bunun riski de yüksek, geri dönüşü de yüksek olacaktır diye.
+
+50
+00:08:48,019 --> 00:08:52,019
+Evet, workflow management iş akış yönetimi,
+
+51
+00:08:52,019 --> 00:08:56,019
+bu da işletmecilikle çok fazla kullanılan
+
+52
+00:08:56,019 --> 00:09:05,019
+ve çok fazla bilgisayar sistemleriyle uygulama örnekleri olan bir şey,
+
+53
+00:09:05,019 --> 00:09:12,019
+iş süreçlerinde re-engineering gerçekleştirilmesi sırasında
+
+54
+00:09:12,019 --> 00:09:20,019
+workflow management akış kurum içindeki evrak akışı,
+
+55
+00:09:20,019 --> 00:09:25,019
+iş akışının yeniden düzenlenmesi,
+
+56
+00:09:25,019 --> 00:09:31,019
+iş süreçlerinin ardışıklığının yeniden düzenlenmesi,
+
+57
+00:09:31,019 --> 00:09:36,019
+burada belgelerin daha kolay akması
+
+58
+00:09:36,019 --> 00:09:42,019
+ve daha etkin olarak bir yerden bir yere aktarılması,
+
+59
+00:09:42,019 --> 00:09:46,019
+bunun için farklı sistemler vardı.
+
+60
+00:09:46,019 --> 00:09:54,019
+Burada etkin re-engineering gerçekleştirilmesinde hangi işlemler olur?
+
+61
+00:09:54,019 --> 00:10:02,019
+Bir defa üst yönetimdekiler stratejik bir vizyon oluştururlar,
+
+62
+00:10:02,019 --> 00:10:08,019
+yönetim öncelikle var olan süreçlerin
+
+63
+00:10:08,019 --> 00:10:14,019
+performansını da anlamalı ve ölçmelidir.
+
+64
+00:10:14,019 --> 00:10:21,019
+Bilgi teknolojilerinin başlangıçtan itibaren
+
+65
+00:10:21,019 --> 00:10:28,019
+süreç tasarımında etkin gerçekleşmesi için
+
+66
+00:10:28,019 --> 00:10:34,019
+bütün bu vizyona göre ne değişiklikler yapılabilir?
+
+67
+00:10:34,019 --> 00:10:42,019
+IT altyapısı bu iş süreçlerindeki değişikliği destekleyecek hale getirilmelidir
+
+68
+00:10:42,019 --> 00:10:48,019
+ve bundan sonra da yeniden tasarım gerçekleşecektir.
+
+69
+00:10:48,019 --> 00:10:57,019
+Mesela Amerika'da mortgage processing süreçlerinin yeniden yapılandırılması,
+
+70
+00:10:57,019 --> 00:11:05,019
+bu noktada ben geçen hafta [öğrenci],
+
+71
+00:11:05,019 --> 00:11:12,519
+[öğrenci] burada herhalde değil mi? Bir dakika şeyden bakayım.
+
+72
+00:11:12,519 --> 00:11:51,220
+[öğrenci], derse bu geçen hafta konuştuğumuz, bana gönderdiğin,
+
+73
+00:11:51,220 --> 00:12:01,700
+bana gönderdiğin çıktığı, sen anlatacak mısın?
+
+74
+00:12:01,700 --> 00:13:13,090
+Evet, geçen hafta [öğrenci]'den bizim
+
+75
+00:13:13,090 --> 00:13:19,090
+iş akış sistemimiz, üniversitenin iş akış sistemini paylaşmasını istemiştim.
+
+76
+00:13:19,090 --> 00:13:26,090
+Bana gönderdiğiniz çıktısını sizinle de paylaşmasını istiyorum.
+
+77
+00:13:26,090 --> 00:13:29,090
+Daha sonra üzerinden geçeriz.
+
+78
+00:13:29,090 --> 00:13:43,480
+Evet, iş süreç yönetimi nedir?
+
+79
+00:13:43,480 --> 00:13:52,480
+Ve iş süreçlerinin iyileştirilmesi için gerçekleştirilen işlemler,
+
+80
+00:13:52,480 --> 00:13:57,480
+business process management, toplam kalite yönetimi,
+
+81
+00:13:57,480 --> 00:14:04,480
+V6 Sigma gibi kavramlar üzerinde durmuştuk.
+
+82
+00:14:04,480 --> 00:14:14,139
+Bütün kurumdaki tüm insanlar tarafından sorumluluğun paylaşılması
+
+83
+00:14:14,139 --> 00:14:19,139
+ve kalitenin kontrol edilmesi, toplam kalite yönetimi,
+
+84
+00:14:19,139 --> 00:14:30,769
+iş süreçleri yönetiminde bu süreçlerin iyileştirilmesi
+
+85
+00:14:30,769 --> 00:14:36,769
+ve bir metodoloji bazında bunun sağlanması
+
+86
+00:14:36,769 --> 00:14:49,769
+ve hem şirket içi hem şirket dışında bunun sağlanması ile ilgili çalışmalar demiştik.
+
+87
+00:14:49,769 --> 00:14:54,769
+Toplam kalite yönetimine bilgi sistemleri nasıl katkıda bulunuyor?
+
+88
+00:14:54,769 --> 00:14:57,769
+Bunun üzerinde durmuştuk.
+
+89
+00:14:57,769 --> 00:15:06,769
+Bir defa üretim süreçleri ve üretimin basitleştirilmesi,
+
+90
+00:15:06,769 --> 00:15:13,769
+bir benchmark sağlanması, kıyaslama temeli,
+
+91
+00:15:13,769 --> 00:15:22,769
+kullanıcı taleplerinin bir rehber olarak kullanılması,
+
+92
+00:15:22,769 --> 00:15:27,769
+ürünlerin yapısını ve süreçleri değiştirmek için.
+
+93
+00:15:27,769 --> 00:15:40,190
+Tabii ki bilgi sistemleri de toplam kalite yönetimine katkı sağlıyor.
+
+94
+00:15:40,190 --> 00:15:51,659
+En azından bu süreç akışı süresini azaltıyor.
+
+95
+00:15:51,659 --> 00:15:55,659
+Tasarımın daha kaliteli olmasını sağlıyor.
+
+96
+00:15:56,659 --> 00:16:04,659
+Üretimin hatalarını daha hassas oluşunu, hatalarını azaltılmasını sağlıyor.
+
+97
+00:16:04,659 --> 00:16:12,610
+Evet, bilgi sistemlerin geliştirilmesi için adımlar vardı burada.
+
+98
+00:16:12,610 --> 00:16:19,610
+Ama biz zaten bunları sistem analizi derslerinde, yazıla mühendisliğinde gördüğümüz için,
+
+99
+00:16:19,610 --> 00:16:24,610
+işte bilgi gereksilimlerini nasıl oluştururuz, sistem tasarımı nasıl oluştururuz,
+
+100
+00:16:24,610 --> 00:16:29,610
+programları test etme, test süreçlerini nasıl oluştururuz,
+
+101
+00:16:29,610 --> 00:16:32,610
+bunlar üzerinde durmadık.
+
+102
+00:16:32,610 --> 00:16:39,720
+Dönüşümün gerçekleştirilmesi,
+
+103
+00:16:39,720 --> 00:16:51,720
+bu da yine sistem analizinde gördüğümüz gerçekleşen farklı değişiklikler,
+
+104
+00:16:51,720 --> 00:16:58,720
+sistemin yenilenmesi durumunda bir sistemden diğer sisteme nasıl geçiş olacak,
+
+105
+00:16:58,720 --> 00:17:02,720
+işte dönüşüm olabilir, paralel strateji olabilir,
+
+106
+00:17:02,720 --> 00:17:08,720
+doğrudan geçiş, pilot çalışma gibi sistem analizinden hatırlayacağınız,
+
+107
+00:17:08,720 --> 00:17:13,720
+farklı geçiş süreçleri, fazla yaklaşım,
+
+108
+00:17:13,720 --> 00:17:17,720
+bunlar üzerinde durmadık.
+
+109
+00:17:17,720 --> 00:17:24,660
+Çünkü daha önceden sistem analizinden bildiğimiz konular,
+
+110
+00:17:24,660 --> 00:17:28,660
+bakım aşaması,
+
+111
+00:17:28,660 --> 00:17:44,039
+işte bir test planı nasıl olacak,
+
+112
+00:17:44,039 --> 00:17:48,039
+sistem geliştirme prototiple mi olacak,
+
+113
+00:17:48,039 --> 00:17:51,039
+iteratif mi olacak,
+
+114
+00:17:51,039 --> 00:17:57,039
+prototip gerçekleştirirsek, prototipin adımları nelerdir,
+
+115
+00:17:57,039 --> 00:18:07,039
+yine bunlar hep bilgi sistemleri geliştirme süreç modelleri üzerinde durmuştuk,
+
+116
+00:18:07,039 --> 00:18:12,039
+prototip modelle burada anlatılıyor.
+
+117
+00:18:12,039 --> 00:18:16,039
+Bir de uygulama yazılım paketleri var,
+
+118
+00:18:16,039 --> 00:18:21,039
+sizden de seçtiğiniz konu üzerinde satılan
+
+119
+00:18:21,039 --> 00:18:28,039
+uygulama yazılım paketlerinin incelenmesini istedim öderinizde,
+
+120
+00:18:28,039 --> 00:18:32,039
+projenizde hangi konuyu seçtiyseniz,
+
+121
+00:18:32,039 --> 00:18:40,039
+en az 3 ürün bulup bunların alternatif fizibilite madresini oluşturacaksınız.
+
+122
+00:18:40,039 --> 00:18:46,039
+Ve daha sonra da kendi oluşturacağınız yazılımın
+
+123
+00:18:46,039 --> 00:18:55,039
+diğerlerine göre farklı üstün ya da daha basit olan taraflarını belirteceksiniz,
+
+124
+00:18:55,039 --> 00:18:59,039
+hedeflerinizi, gereksinimlerinizi belirtirken.
+
+125
+00:18:59,039 --> 00:19:05,039
+İşte uygulama yazılım paketleri,
+
+126
+00:19:05,039 --> 00:19:10,039
+uygulamaları genelleştirilmiş olarak,
+
+127
+00:19:10,039 --> 00:19:18,039
+ticari olarak satış raflarda bulunan şeklinin tanımlanması.
+
+128
+00:19:18,039 --> 00:19:26,039
+Customization'da bir yazılım paketi kuruma satıldığında,
+
+129
+00:19:26,039 --> 00:19:28,039
+kullanıma alınacağında,
+
+130
+00:19:28,039 --> 00:19:35,039
+bunda kuruma ait özellikler için nasıl modifikasyon yapılacağının belirtilmesi,
+
+131
+00:19:35,039 --> 00:19:39,039
+tabii ki yazılımın bütünlüğünü bozmadan bunu nasıl gerçekleştireceğiz,
+
+132
+00:19:39,039 --> 00:19:41,039
+önemli olan bu.
+
+133
+00:19:41,039 --> 00:19:49,039
+Hem kurumun gereksinimlerini karşılayacak hem de yazılımın bütünlüğünü bozmayacak şekilde bunun yapılması.
+
+134
+00:19:49,039 --> 00:19:55,039
+Bir Request for Proposal kavramı var,
+
+135
+00:19:55,039 --> 00:19:58,039
+yine kurumlarda çok kullanılan.
+
+136
+00:19:58,039 --> 00:20:18,789
+Bu da bir özellikle kurumun özel gereksinimlerini karşılaması için,
+
+137
+00:20:18,789 --> 00:20:25,789
+satıcının bunu nasıl sağlayacağını belirlemek için,
+
+138
+00:20:25,789 --> 00:20:48,789
+yazılım ya da diğer hizmetlerin tanımında satın alınacak kuruma gönderilen ayrıntılı sorular listesi Request for Proposal.
+
+139
+00:20:48,789 --> 00:20:58,789
+Yani bir nevi teklif istekleri.
+
+140
+00:20:58,789 --> 00:21:12,789
+Bu yine sizin kurumlarda yazılım birimi yöneticisi ya da yazılım biriminden sorumlu kişiler olarak,
+
+141
+00:21:12,789 --> 00:21:23,789
+kuruma alınacak yazılımların seçimi sırasında yapmanız gereken işlemlerden önemli birisi.
+
+142
+00:21:24,789 --> 00:21:29,789
+Hangi özellikle olmasının çıkarılması.
+
+143
+00:21:30,789 --> 00:21:33,789
+Customization'dan söz etmiştik.
+
+144
+00:21:33,789 --> 00:21:44,789
+Customization yazılım paketinde yazılımın implementasyonu kuruluşu aşamasında,
+
+145
+00:21:44,789 --> 00:21:56,789
+toplam bu yazılımın kuruluşu için maliyetlere baktığımızda,
+
+146
+00:21:56,789 --> 00:22:04,789
+çok fazla değişiklik istenirse Customization kuruma has hale getirilmesi için,
+
+147
+00:22:04,789 --> 00:22:19,789
+bu maliyeti çok arttıracak, çok fazla istendiğinde maliyeti çok arttıracak şekilde görülebilir bu eride gördüğümüz gibi.
+
+148
+00:22:19,789 --> 00:22:36,950
+Evet, uç kullanıcıların geliştirmeye etkisi.
+
+149
+00:22:36,950 --> 00:22:44,950
+Burada alıştıkları şeyler değişeceği için onların dirençlerini, onların alışkanlıklarını göz önünde bulundurmak gerekir.
+
+150
+00:22:44,950 --> 00:22:50,950
+Biz zaten fizibilite analizinde, sistem analizinde bunu görmüştük.
+
+151
+00:22:50,950 --> 00:22:55,950
+Kullanılabilirlik fizibilitesinden bahsetmiştik.
+
+152
+00:22:55,950 --> 00:23:01,950
+Uç kullanıcının geliştirme de etkisi önemli.
+
+153
+00:23:01,950 --> 00:23:28,319
+Baktığımızda genel bir sistem yaşam döngüsüne orta ve üst yönetim görevlere aktarır,
+
+154
+00:23:28,319 --> 00:23:41,319
+bilgi sistemleri yönetimi süzgecinden geçer, sistem analistleri daha sonra detaylandırılmasını gerçekleştirir,
+
+155
+00:23:41,319 --> 00:23:49,319
+tasarım hakkında fikirler verir ve programcı yazılımı geliştirir.
+
+156
+00:23:49,319 --> 00:24:05,319
+Daha sonra bu gelişen yazılım uç kullanıcılara destek verecek şekilde aktarılır
+
+157
+00:24:05,319 --> 00:24:18,099
+ve yine kullanıcılara aktarılacak hale gelir.
+
+158
+00:24:18,099 --> 00:24:36,539
+Out-sourcing işlemi de gerçekleştirebilir.
+
+159
+00:24:36,539 --> 00:24:46,690
+Burada da belli alt işlemlerin alt yüklenicilere verilmesi.
+
+160
+00:24:46,690 --> 00:24:59,269
+Yazılım geliştirme süreçlerini biliyoruz.
+
+161
+00:24:59,269 --> 00:25:05,269
+Nesneye yönelik yazılım geliştirme kavramının farklılıklarını biliyoruz.
+
+162
+00:25:05,269 --> 00:25:08,269
+Farklı şeyler.
+
+163
+00:25:08,269 --> 00:25:15,269
+Geçen hafta bunların üzerinde durduk, birkaç örnek vererek.
+
+164
+00:25:15,269 --> 00:25:19,269
+Bunların üzerinde durmamıştık zaten şu son şeylerin.
+
+165
+00:25:20,269 --> 00:25:25,269
+Şimdi bugünkü konumuza geçebiliriz.
+
+166
+00:25:25,269 --> 00:25:34,059
+Buraya kadar sorunuz var mı geçen haftadaki çalışmalarımızla ilgili?
+
+167
+00:25:34,059 --> 00:28:44,190
+Evet, [öğrenci] bu şekil üzerinden açıklama yapar mısın bizim elektronik bilgi yönetim sistemimize ilgili?
+
+168
+00:28:44,190 --> 00:28:50,740
+Yok hocam şey göndermiştim gerçekten.
+
+169
+00:28:50,740 --> 00:28:54,740
+Ben koydum şu anda paylaşımda sanıyorum değil mi?
+
+170
+00:28:54,740 --> 00:29:07,410
+Herkes görüyor değil mi paylaştığım şekli?
+
+171
+00:29:07,410 --> 00:29:10,410
+Evet hocam görüyoruz.
+
+172
+00:29:10,410 --> 00:29:15,910
+EBS öncesi hali herhalde bu.
+
+173
+00:29:19,410 --> 00:29:25,779
+EBS öncesi durumumuz normalde yazıların hepsi elle yazılıyor.
+
+174
+00:29:25,779 --> 00:29:27,779
+Yani kâğıt üzerinde.
+
+175
+00:29:27,779 --> 00:29:30,779
+İki nüfus olarak hazırlanmak zorunda.
+
+176
+00:29:30,779 --> 00:29:36,779
+Normalde bir tanesi giden yazı olarak diğerinin de saklanması gereken yazı olaydı.
+
+177
+00:29:36,779 --> 00:29:46,309
+Sonra bu yazılan yazının bir kayıt defterine işlenmesi gerekiyordu.
+
+178
+00:29:46,309 --> 00:29:51,309
+Buradan sayı numarası alması, kime ve nereye gönderildiğinin yazılması gerekiyor.
+
+179
+00:29:55,309 --> 00:30:00,309
+Ondan sonraki aşama açılmış paraf sayısına göre.
+
+180
+00:30:00,309 --> 00:30:07,309
+Yani daha doğrusu birimdeki yetkili sayı, yetkili kişi sayısı kadar paraf ve imzayı açılması gerekiyor.
+
+181
+00:30:07,309 --> 00:30:23,230
+Bu aşamada birimdeki işlem bittikten sonra fiziksel olarak yazının gideceği yere bir birim de olabilir.
+
+182
+00:30:23,230 --> 00:30:26,230
+Fiziksel olarak gönderilmesi gerekiyor.
+
+183
+00:30:26,230 --> 00:30:37,900
+Fiziksel olarak gönderen kişinin de bir de zimmet defteri olarak teslim ettiğine dair imza alatması, kime teslim ettiğini de kaydetmesi gerekiyor.
+
+184
+00:30:37,900 --> 00:30:38,900
+Evet.
+
+185
+00:30:38,900 --> 00:30:51,750
+Bu yazı karşı tarafa giderken aynı zamanda bu yazılmış olan birimde yazılmış olan diğer nüfusanın saklı şeyi dosyaya kaldırılması gerekiyor.
+
+186
+00:30:51,750 --> 00:30:53,750
+Yazıldığına dair.
+
+187
+00:30:53,750 --> 00:31:02,509
+Şimdi yeni sisteme geçelim istersen.
+
+188
+00:31:02,509 --> 00:31:03,509
+Tamamdır.
+
+189
+00:31:03,509 --> 00:31:12,509
+Evet.
+
+190
+00:31:12,509 --> 00:31:13,509
+Bu da şimdiki durum.
+
+191
+00:31:13,509 --> 00:31:15,509
+Bir de bunun üzerinden açıklama yap.
+
+192
+00:31:15,509 --> 00:31:17,509
+Şimdi nasıl değişiklik oldu?
+
+193
+00:31:17,509 --> 00:31:19,509
+Önce şey gerekmiyor.
+
+194
+00:31:19,509 --> 00:31:24,509
+Örneğin önceki bir ekler fiziksel olarak değil.
+
+195
+00:31:24,509 --> 00:31:28,509
+O yüzden önce eklerin yazılacak yazın bir eki varsa karanıyor.
+
+196
+00:31:28,509 --> 00:31:31,509
+Elektronik hale getiriyor.
+
+197
+00:31:31,509 --> 00:31:38,359
+Sonra ondan sonra yazıya sadece paraf açılıyor.
+
+198
+00:31:38,359 --> 00:31:41,359
+Diğer durumdaki gibi şey yok.
+
+199
+00:31:41,359 --> 00:31:48,359
+Yazın tekrar bir el ile kayıt defteri üzerinden kayıt edilmesi ve sayı numarası verilmesi işlemi yok.
+
+200
+00:31:48,359 --> 00:31:56,569
+Bu işlem otomatik gerçekleşiyor.
+
+201
+00:31:56,569 --> 00:32:05,769
+Zaten bir işlem kalkmış oluyor dolayısıyla.
+
+202
+00:32:05,769 --> 00:32:10,130
+Evet.
+
+203
+00:32:10,130 --> 00:32:17,130
+Aradaki az önceki olan işlemlerde bir azalma olmuş oluyor.
+
+204
+00:32:17,130 --> 00:32:22,130
+Bir de daha hızlı bir geçiş söz konusu oluyor.
+
+205
+00:32:23,130 --> 00:32:25,130
+Başka faydaları?
+
+206
+00:32:25,130 --> 00:32:32,130
+Ondan sonra yazının gidip gitmediği ya da kaybolduğu durumları yok.
+
+207
+00:32:32,130 --> 00:32:35,130
+Çünkü EBS üzerinden karşı tarafı direkt ulaşmış oluyor.
+
+208
+00:32:35,130 --> 00:32:40,130
+Bu durumda karşı tarafın belgeyi kaybetmesi ya da almadım demesi ihtimali de yok.
+
+209
+00:32:40,130 --> 00:32:42,130
+Evet.
+
+210
+00:32:42,130 --> 00:32:45,130
+Giderken bahçede düştüğü gibi bir sorun yok.
+
+211
+00:32:45,130 --> 00:32:51,430
+Sonra tekrar yukarıdaki kısmı açabilir misiniz hocam?
+
+212
+00:32:51,430 --> 00:32:53,430
+Bir yukarı bir etete gelebilirsiniz.
+
+213
+00:32:57,430 --> 00:33:06,430
+Eğer gelen yazıdan tekrar karşı tarafa ulaştığı sırada bir de tekrar alındığına dair kayıt edilmesi gerekiyor bir kayıt kısmalar.
+
+214
+00:33:06,430 --> 00:33:09,430
+Bu EBS'e sürecinde de yok.
+
+215
+00:33:09,430 --> 00:33:17,480
+Çünkü karşı tarafa ulaştığı zaman bu işlenmesi gerekmiyor tekrar.
+
+216
+00:33:17,480 --> 00:33:20,480
+Tekrar şimdi aşağı gelebilirsiniz bu adım da ortamda kalkmış oluyor.
+
+217
+00:33:20,480 --> 00:33:21,480
+Evet.
+
+218
+00:33:21,480 --> 00:33:23,480
+Bir de arşive kaldırma diye bir şey yok.
+
+219
+00:33:23,480 --> 00:33:26,480
+Zaten arşivde kendisi kaldırıyor belli bir sene sonra.
+
+220
+00:33:26,480 --> 00:33:27,480
+Evet.
+
+221
+00:33:28,480 --> 00:33:30,480
+Şu işlem de yok yani.
+
+222
+00:33:30,480 --> 00:33:31,480
+Şu işlem de yok.
+
+223
+00:33:31,480 --> 00:33:32,480
+Şu arşiv yazın iki tarafta da.
+
+224
+00:33:32,480 --> 00:33:36,480
+Hem gelen tarafta hem gönderilen teslim alakalı taklanması durum da var.
+
+225
+00:33:37,480 --> 00:33:38,480
+Evet.
+
+226
+00:33:39,480 --> 00:33:40,480
+Evet.
+
+227
+00:33:41,480 --> 00:33:48,480
+Yani yakın senelerde yaşadığımız bir örnek olduğu için bunu paylaşmanı istedim.
+
+228
+00:33:48,480 --> 00:33:49,480
+Teşekkürler.
+
+229
+00:33:50,480 --> 00:33:53,480
+Şimdi yeni konudan devam edebilirim ben.
+
+230
+00:33:54,480 --> 00:33:55,480
+Buradan çıkıyorum.
+
+231
+00:34:26,719 --> 00:34:33,719
+Bugün üzerinde duracağımız konu sistemler ve yönetim değişikliği gerçekleştiğinde
+
+232
+00:34:35,719 --> 00:34:44,719
+bu sistemlerin işletmecilik değeri özellikle bizim sistem analizi dersinde gördüğümüz
+
+233
+00:34:44,719 --> 00:34:51,719
+ekonomik fizibilite anlamında ki ekonomik değerlendirmeler,
+
+234
+00:34:52,719 --> 00:34:58,719
+katkıların ne olacağı gibi işlemler üzerinde duracağız.
+
+235
+00:34:59,719 --> 00:35:15,190
+Ve şu şekli gözümüzün önünde duracağız hep göstereyim.
+
+236
+00:35:15,190 --> 00:35:25,730
+Bilgi sistemleri üzerinde yenilenme olması için
+
+237
+00:35:28,039 --> 00:35:32,039
+ve bilgi sistemlerin ilk kuruluşu sırasında da olsa
+
+238
+00:35:33,039 --> 00:35:41,510
+bilgi sistemlerine yönetimden kurum yapılanmasından
+
+239
+00:35:41,510 --> 00:35:51,510
+ve teknolojiden gelen özelliklerle, bildirimlerle bilgi sistemlerine kuruluşu gerçekleşir
+
+240
+00:35:52,510 --> 00:35:56,510
+ya da bilgi sistemlerinde değişiklik yapılmak zorunda kalınır.
+
+241
+00:35:57,510 --> 00:36:09,510
+Bilgi sistemlerindeki bu çalışma şekli bizim iş süreçlerimize işletmecilik çözümleri olarak yansır.
+
+242
+00:36:09,510 --> 00:36:15,510
+Yani hangi bilgi sistemi çalışırsa,
+
+243
+00:36:16,510 --> 00:36:25,510
+şurada yönetim, kurumsal yapı ve teknolojik değişiklikler,
+
+244
+00:36:26,510 --> 00:36:30,510
+teknolojideki ilerlemeler bilgi sistemlerinde değişikliğe yol açar ya da
+
+245
+00:36:31,510 --> 00:36:35,510
+değişiklik olmadan bilgi sisteminin ilk kuruluşu
+
+246
+00:36:35,510 --> 00:36:40,510
+buralardan gelen beslemelerle oluşur.
+
+247
+00:36:41,510 --> 00:36:49,510
+Bilgi sistemlerinin çalışması iş süreçlerinde çözümler yaratır.
+
+248
+00:36:50,510 --> 00:37:00,510
+Ve bu çözümler vasıtasıyla iş süreçlerimizde yenilikler oluştuğunda
+
+249
+00:37:00,510 --> 00:37:11,510
+tekrar veya problemler, değişiklikler olması gerektiğinde
+
+250
+00:37:12,510 --> 00:37:18,510
+bu yönetime akseder ve yine bütün bu kanallardan,
+
+251
+00:37:19,510 --> 00:37:25,510
+kurumun bütün kanalları, yönetim kademeleri ve teknolojik gereksinimler
+
+252
+00:37:25,510 --> 00:37:29,510
+sonucunda bilgi sistemleri tekrar değişikliğe uğrayabilir.
+
+253
+00:37:30,510 --> 00:37:41,849
+Şimdi burada şuradan başlarsak yönetim nasıl etkiler, neler gerçekleştirilir.
+
+254
+00:37:42,849 --> 00:37:58,409
+Proje yönetim yazılımını seçer yöneticiler ve projenin metodolojilerini
+
+255
+00:37:58,409 --> 00:38:13,409
+uygular, işletmecilik stratejileriyle firmanın bilgi teknolojilerini bütünleştirir
+
+256
+00:38:14,409 --> 00:38:20,409
+ve buna göre kararlar alır yönetim, buna göre bilgi sistemlerini yönlendirir.
+
+257
+00:38:21,409 --> 00:38:30,409
+Yani bilgi sistemlerini yönlendirebilmek için proje yönetim yazılımları kullanımına geçer,
+
+258
+00:38:31,409 --> 00:38:39,409
+hangisini kullanacağını seçer, proje metodolojilerini uygular,
+
+259
+00:38:40,409 --> 00:38:47,409
+iş süreçleri ve iş stratejileriyle bilgi teknolojilerini bütünleştirir.
+
+260
+00:38:47,409 --> 00:39:00,000
+Kurumsal yapı olarak ne sağlanır? Bir proje yönetim ofisi oluşturulur
+
+261
+00:39:01,000 --> 00:39:09,000
+ve proje yöneticilerine eğitimler verilir, kurumsal anlamdadır bu da.
+
+262
+00:39:10,000 --> 00:39:16,000
+Teknoloji anlamında ne gerçekleşir?
+
+263
+00:39:16,000 --> 00:39:32,000
+Teknoloji anlamında da mesela SAP gibi bir temel ERP yazılımı kuruluşu gerçekleştirilir.
+
+264
+00:39:33,000 --> 00:39:42,000
+Bu diğer kurumda kullanılan altyapı elemanlarıyla bütünleştirilir.
+
+265
+00:39:42,000 --> 00:39:54,000
+Yeni yaklaşımlarla yazılım geliştirmek için teknolojideki yeni ürünler araştırılır.
+
+266
+00:39:55,000 --> 00:40:07,000
+İşte bütün bu yönetimin kurumsal yaklaşımın ve teknolojinin takip edilmesiyle
+
+267
+00:40:07,000 --> 00:40:19,690
+bilgi sistemleri maliyet muhasebesi gerçekleştirir.
+
+268
+00:40:20,690 --> 00:40:27,690
+Projelerin merkezi kontrolünü oluşturur.
+
+269
+00:40:28,690 --> 00:40:35,690
+Yani şu şekli farklı alanlara uygulayabilirsiniz.
+
+270
+00:40:35,690 --> 00:40:47,690
+Şu anda bu şekli proje yönetimini iyileştirmek için şirkette nasıl bir çalışma yapılıyor?
+
+271
+00:40:48,690 --> 00:40:55,690
+Yönetimin kurumsal kararları, teknolojik yapı, şimdi bilgi sistemlerinde
+
+272
+00:40:56,690 --> 00:41:04,690
+projelerin merkezi kontrolünü yaratacak bir bilgi sistemi yapılanması oluşturuldu.
+
+273
+00:41:05,690 --> 00:41:26,320
+Burada firmanın IT altyapısıyla işletmecilik stratejisini bu bilgi sistemi bütünleştirmiş oldu.
+
+274
+00:41:27,320 --> 00:41:33,320
+Peki bize iş çözümü olarak nasıl yansıdı?
+
+275
+00:41:33,320 --> 00:41:44,320
+İşletmecilik çözümü olarak maliyetler azaldı, etkin kaynak kullanımı sağlandı
+
+276
+00:41:45,320 --> 00:41:53,320
+ve daha kısa sürede projelerin geliştirilmesi sağlandı gibi çözümler var.
+
+277
+00:41:53,320 --> 00:42:10,320
+Peki işletmecilikte değişiklikler olduğunda, yani proje maliyet muhasebesi daha zayıf hale geldiğinde,
+
+278
+00:42:10,320 --> 00:42:34,710
+merkezi bir kaynak dağıtım sistemi olmadığında, birçok projelerin olduğu bir büyük şirket yönetimi olduğunda,
+
+279
+00:42:34,710 --> 00:42:48,710
+bu çoklu projeleri takip etmek zorlaştığında, yani iş süreçlerinde bir değişiklik yaşandığında,
+
+280
+00:42:49,710 --> 00:42:58,710
+o zaman buna uygun bir proje yönetim yazılımı seçecek ve bunu kuruma yaygınlaştıracak.
+
+281
+00:42:58,710 --> 00:43:06,710
+Bununla ilgili altyapı, teknoloji altyapıyı seçecek ve bilgi sistemlerini ona göre düzenleyecek.
+
+282
+00:43:07,710 --> 00:43:18,710
+Yani bu bir döngü, var olan duruma göre yönetim kurum ve teknoloji dikkate alınarak bilgi sistemleri kuruluşu gerçekleştiriliyor.
+
+283
+00:43:18,710 --> 00:43:26,710
+Ve bu bilgi sistemlerin kullanılması iş süreçlerine çözümler getiriyor.
+
+284
+00:43:27,710 --> 00:43:39,710
+Ama burada iş çözümleri ve kullanımı incelendiğinde iş süreçlerinde değişiklik varsa o zaman bu yönetime bildiriliyor.
+
+285
+00:43:40,710 --> 00:43:46,710
+Kurumsal olarak buna da bir çözüm bulunuyor. Ona göre teknolojik altyapı değiştiriliyor.
+
+286
+00:43:46,710 --> 00:43:52,710
+Ve bilgi sistemi de yeniden düzenlenmiş oluyor.
+
+287
+00:43:53,710 --> 00:44:05,960
+Yani bunu şimdi siz bütün, siz hepiniz bir farklı bir konuyu ele alıyorsunuz.
+
+288
+00:44:06,960 --> 00:44:14,960
+Yönetim bilgi sistemleri projenizde. Herkes kendi projesine şu şekli uygulayabilir.
+
+289
+00:44:14,960 --> 00:44:27,960
+Yönetimde hangi kararlar alındığında, kurumsal olarak bu nasıl yaygınlaştığında sizin bilgi sisteminiz, mesela bazı arkadaşlarınız tedarik zincirinin alt başlıklarını seçti.
+
+290
+00:44:28,960 --> 00:44:39,960
+İşte şu şekil şu anda kurumda yürüyen projeler için proje yönetim süreçlerini nasıl iyileştireceğiz?
+
+291
+00:44:39,960 --> 00:45:00,960
+Yönetimden, kurumsal yapıdan ve teknolojiden gelen değişikliklerle bilgi sisteminde nasıl farklılıklar olacak, yeni yapılandırmalar olacak, bunlar nasıl çözümler getirecek, hangi değişiklikler olursa yine bu döngü nasıl devam edecek şeklinde.
+
+292
+00:45:00,960 --> 00:45:15,960
+Tedarik zincirinin alt başlıklarını uygulayabilirsiniz, insan kaynaklarının alt başlıklarını uygulayabilirsiniz. Bu döngüyü her uygulama için ayrıca yapabiliriz.
+
+293
+00:45:15,960 --> 00:45:35,960
+Şu döngü şu anda verdiğim örnek, kurumun proje yönetim süreçleri için bilgi sistemlerinden nasıl destek alındığıyla ilişkili, yani kurumdaki projelerin yönetimi ile ilişkili.
+
+294
+00:45:35,960 --> 00:45:54,960
+Siz bunu bütün alanlara, bu çevreme uygulayabilirsiniz ve kendi yönetim bilgi sistemleri projenizdeki yapıya da bu şekli uygulamanızı istiyorum.
+
+295
+00:45:54,960 --> 00:46:09,139
+Sorunuz var mı? Evet, geçiyorum o zaman.
+
+296
+00:46:09,139 --> 00:46:13,139
+Şimdi bu bölümde hedefimiz ne?
+
+297
+00:46:13,139 --> 00:46:35,139
+Bir defa biz bilgi sistemimizi kurduğumuzda bunun işletmecilik faydalarını, şirkete işletmecilik açısından nasıl faydalar sağladığını nasıl ölçeceğiz?
+
+298
+00:46:35,139 --> 00:46:45,139
+Bunu ölçmek için, işletmecilik değerini ölçmek için hangi modelleri kullanacağız? Böyle bir model var mı?
+
+299
+00:46:45,139 --> 00:47:08,139
+Niçin bazı sistem projeleri fail edilir? Temel nedenler nedir bu başarısızlık için ve yeni bir sistemin kurumsal çerçevede başarı sağlaması için neler yapmak gerekir?
+
+300
+00:47:08,139 --> 00:47:21,139
+Uluslararası bilgi sistemleri geliştirildiğinde burada nasıl özel farklılıklar olur?
+
+301
+00:47:21,139 --> 00:47:50,139
+Kurumun stratejileri ne olmalı, sistemleri iş süreçlerini daha etkin olarak aktarabilmek için yani bilgi sisteminin iş süreçlerini daha etkin olarak aktarmak üzere hangi temel işlemler gerçekleştirilmelidir?
+
+302
+00:47:50,139 --> 00:48:19,670
+Ve bu şeye geçtiğimizde de bir defa sistemin maliyetini ve faydasını nasıl saplayabiliriz?
+
+303
+00:48:19,670 --> 00:48:32,670
+Tabii ki bunu sayısala dökmek zor. Yani bir bilgi sistemi kurduğunuz bunun faydası nedir dediğimizde sayılabilir faydalar var, sayılamayan faydalar var.
+
+304
+00:48:32,670 --> 00:48:58,670
+Dolaylı olarak etkilenen durumlar var. Bunları nasıl belirleyeceğiz? Bir bunun üzerinde duracağız. Bir de geniş ölçekli sistem projelerinin karmaşıklığı var.
+
+305
+00:48:58,670 --> 00:49:15,670
+Böyle karmaşık durumlarda nasıl değerlendirme yapacağız? Bir defa kurumlardaki bilgi sistemleri yapılanmasına baktığımızda bir sistem projeleri var.
+
+306
+00:49:15,670 --> 00:49:30,670
+Yani kurumlardaki birçok departmanda doğrudan kullanılacak, birkaç departmanı ilgilendiren bir iş sürecini nasıl otomasyonunu gerçekleştireceğiz?
+
+307
+00:49:30,670 --> 00:49:48,670
+Bir renginering çalışması varsa nasıl bütün bilgi sistemlerini yenileyeceğiz? Uygulama sistemlerinin, bilgi sistemlerinin projeleri. Bir de infrastructure yani altyapı projeleri var.
+
+308
+00:49:48,670 --> 00:50:00,670
+Bunlar da bilgi sistemlerinin daha iyileştirilmesi için oluşturulan altyapı uygulamaları.
+
+309
+00:50:00,670 --> 00:50:22,670
+Bilgi sistemleri, yatırımı diye baktığımızda iş süreçlerinde iyileştirme ve yönetimin karar vermesinde iyileştirme olarak bakabiliriz.
+
+310
+00:50:22,670 --> 00:50:39,670
+Yani bir bilgi sistemi yaratıyorsak iki şeye bakacağız. Bir, bu bilgi sistemi bizim yürüyen iş sürecimize, birçok uygulama dikey boyutlar gördük.
+
+311
+00:50:39,670 --> 00:50:56,670
+Artık sizler de bunları biliyorsunuz. Zaten projelerinizi seçerken de özellikle bu dikey boyutları yazana kadar hep değiştirmenizi istedim.
+
+312
+00:50:56,670 --> 00:51:17,670
+İnsan kaynaklarının alt başlıkları, muhasebe tarafındaki alt başlıklar ya da başka alanlar işletmelerdeki bilgi sistemlerinin bu iş süreçlerini iyileştirmesi istenir.
+
+313
+00:51:17,670 --> 00:51:29,670
+Bir, bu bilgi sistemi daha iyi yürüsün, muhasebedeki işler daha iyi, daha sağlıklı yürüsün. Bunu sağlayacak bir bilgi sistemi, muhasebeye kurulması.
+
+314
+00:51:29,670 --> 00:51:44,670
+Diğeri de yönetimin karar vermesinin süreçlerini geliştirecek uygulamalar. İşte bunlar da bizim analitik uygulamalar dediğimiz uygulamalar.
+
+315
+00:51:44,670 --> 00:52:00,670
+Bunlar da günlük iş süreçleri zaten bir üst başlıkta ki hedefe göre yürüyor ama bir senelik işlem sonucundaki bilgileri arşivde tutarak,
+
+316
+00:52:00,670 --> 00:52:21,670
+bunlara bakarak biz nasıl yorumlar yapabiliyoruz? Var olan bilgi kullanarak, var olan işlem süresini tamamladığımız geçen senenin verisini nasıl özetleyerek kullanırsak,
+
+317
+00:52:21,670 --> 00:52:34,670
+önümüzdeki seneye için karar almamızda kullanacağımız kıymetli bilgiye ulaşabiliyor muyuz arşivdeki veriden?
+
+318
+00:52:34,670 --> 00:52:43,670
+İşte bu da yönetimin karar vermesini nasıl geliştirecek bizim bilgi sistemi yatırımlarımız.
+
+319
+00:52:43,670 --> 00:53:03,670
+Bunu sağlamak için yeni yatırımlar yapılmalı mıdır? Var olan uygulamalarda neyi değiştirirsek biz bu arşiv verisinden karar almada bize fayda sağlayacak bilgiye daha kolay ulaşabiliriz.
+
+320
+00:53:03,670 --> 00:53:16,670
+Bu kararları vermemizde yeni IT yatırımları gerekiyor mu? Bunun anlaşılması burada.
+
+321
+00:53:16,670 --> 00:53:35,670
+Uzun vadeli değerler diye baktığımızda stratejik pozisyonun geliştirmesi ve yeni teknolojilerin ve yeni ürünlerin uygulamaya alınması.
+
+322
+00:53:35,670 --> 00:53:59,670
+İşte bu yeni teknolojiler, yeni ürünler devreye alınmalı mıdır? Şu şekli gözünüzün önüne getirerek hangi nedenlerle iş süreçlerindeki nasıl değişikliklerle biz bilgi sistemimizi de değişir hale getirmek durumunda kalacağız.
+
+323
+00:53:59,670 --> 00:54:09,670
+Yani şu bir çevrim. Bunu işletmedeki her alan için uygulanabilir görmemiz mümkün.
+
+324
+00:54:09,670 --> 00:54:39,050
+Evet, şimdi bilgi sistemlerinin sayısal olarak bütçe çalışmalarında kullanacağımız modeller ki bunların birçoğunu siz ekonomik fizibiliteden biliyorsunuz.
+
+325
+00:54:39,050 --> 00:54:52,050
+İsimlerini bazılarını biliyorsunuz, bazılarını bilmiyorsunuz. Ama genel kavram olarak ekonomik fizibiliteden bu kavramları biliyoruz.
+
+326
+00:54:52,050 --> 00:55:26,059
+Sistem analizi dersinde. Şimdi bu konuya geçmeden önce bir ara verelim. Tek ara vereceğimiz için evet bu arayı 15 dakika olarak.
+
+327
+00:55:26,059 --> 01:13:08,319
+Evet, şimdi ekonomik değerler üzerinde devam ediyoruz derste.
+
+328
+01:13:08,319 --> 01:13:55,609
+Geleneksel bütçe modelleri nakit akışı ve çıkışını ölçmek üzere payback metodu. Bu metodu sistem analizinden biliyorsunuzdur.
+
+329
+01:13:55,609 --> 01:14:22,909
+Yatırımın geri dönüşleri ROI kavramı, net present value, cost benefit ratio, profitability yani karlılık indeksi, geri dönüş iç oranı gibi kavramlar var.
+
+330
+01:14:22,909 --> 01:14:42,909
+Bunların hepsi bir yatırım planlamasında bakacağımız yani bir yatırım gerçekleştireceğimiz zaman bu yatırım karlı mı değil mi, ne kadar maliyet gerekir, ne kadar fayda olur.
+
+331
+01:14:42,909 --> 01:14:59,909
+Bu kararları vermemiz gerektiğinde ki yeni bir projeye giriyorsak bunların hepsine bakmamız gerekiyor. Bunların üzerinde duracağız.
+
+332
+01:14:59,909 --> 01:15:11,909
+Bazılarını daha ayrıntılı inceleyeceğiz. Bazılarını sadece kavram olarak göreceğiz. Hangi ölçü birimleri var şeklinde.
+
+333
+01:15:11,909 --> 01:15:40,319
+Bir defa bilgi sistemlerinin maliyeti ve faydası dediğimiz zaman bunlardan ne anlıyoruz? Önce ona bakalım. Maliyet dediğimizde donanım, ağ yapıları, yazılım, ser, hizmetler, personel bunların hepsi maliyetin içine girer.
+
+334
+01:15:40,319 --> 01:16:09,319
+Bir bilgi sistemi hazırlayacağımız zaman veya bilgi sisteminde değişiklikler yapacağımız zaman iş gücü, kullanılacak altyapı yazılımı, alınacak hizmetler, donanım, network çözümleri bunların hepsi bizim yatırımlarımız içinde geçen maliyetler.
+
+335
+01:16:09,319 --> 01:16:23,319
+Bir de fayda var. Fayda tangible ve intangible. Yani doğrudan gözle görülebilen ve gözle görülemeyen faydalar.
+
+336
+01:16:23,319 --> 01:16:52,319
+Yani gözle görülebilen derken doğrudan para sağlayan faydalar. İşte daha az iş gücü maliyeti, daha az çalıştırma maliyeti, azalan iş gücü, üretimin artması, bunları doğrudan paraya çevirebiliriz.
+
+337
+01:16:52,319 --> 01:17:21,319
+Yani işte biz ayda 3000 ürün üretebiliyorsak bu otomasyon sisteminin kuruluşuyla ayda ürettiğimiz aynı ürünün sayısı 4500'e çıkmışsa bu artan üretkenlik, verim olarak paraya çevrilebilir bunun karşılığı.
+
+338
+01:17:22,319 --> 01:17:44,319
+Ya da işte üretim biriminde 5 kişi çalışırken şimdi 2 kişi çalışıyorsa yine bu işlemsel maliyet azaltılmış iş gücü olarak karşımıza çıkar.
+
+339
+01:17:44,319 --> 01:18:14,909
+Peki intangible benefit fayda dediğimizde daha iyi hizmet sunulması, kaynak kontrolünün daha iyileştirilmesi, kurumsal planlamanın geliştirilmesi, kalite kontrolün daha iyi yapılması gibi faydalar.
+
+340
+01:18:14,909 --> 01:18:37,909
+Bunların hemen doğrudan yani bir iş gücü azalması gibi işte 5 işçi çalışırken şimdi 2 işçi çalışıyor. Bunların aylık ödemeleri deyip hemen sayıya dökemeyiz ama bunları dolaylı yoldan araştırmamız gerekir bu faydaları.
+
+341
+01:18:37,909 --> 01:19:01,340
+Şimdi bakalım bunun için nasıl finansal modeller oluşturacağız? Burada kısıtlarımız var mı? Yani finans modelleri oluştururken bizim bazı kısıtlarımız var.
+
+342
+01:19:01,340 --> 01:19:15,340
+Tabii ki ilk önce karşımıza gelen ikinci sırada ama intangible benefit dediğimiz bu sayılamayan faydaları ölçmekte ki zorluklar.
+
+343
+01:19:15,340 --> 01:19:43,340
+Spesifik bir iş fonksiyonuyla uygulamaya geçiş arasındaki farklılıklar, ilişkiler ve maliyetin ve faydanın aynı zamanda,
+
+344
+01:19:43,340 --> 01:20:00,340
+aynı çerçeve içinde bulunamaması, bir de sosyal ve kurumsal maliyetlere ve faydalara bakma gerekliği.
+
+345
+01:20:00,340 --> 01:20:27,340
+Bunlar bu modellerin şeyi. Burada bir örnek verilmiş yeni bir tedavik zinciri yönetim sistemi için bütçe oluşturulduğunda
+
+346
+01:20:27,340 --> 01:20:55,050
+bunun hedefleri nelerdir? Envanter maliyetlerini azaltması, iletişim maliyetlerini azaltması, ulaşım maliyetlerini azaltması.
+
+347
+01:20:55,050 --> 01:21:12,420
+Bütün bunlar beklenir ve yeni bir tedavik zinciri yönetim sistemi oluşturulduğunda,
+
+348
+01:21:12,420 --> 01:21:37,420
+bu ürünün hazırlanma yılı, hazırlandığı yıl içinde hangi maliyetler oldu?
+
+349
+01:21:37,420 --> 01:22:04,220
+Bu, server, backup serwerleri gibi donanım birimlerinin alınışı, bunlar kaç tane alınacak, kaç birim alınacak ve toplam maliyeti nedir?
+
+350
+01:22:04,220 --> 01:22:19,460
+İlk başta donanım için yapılan yatırımlar, daha sonra netvork için firewall'lar, router'lar gibi alınacak ürünler,
+
+351
+01:22:19,460 --> 01:22:41,859
+yazılım için yeni bir veritabanı yazılımı, webserver'ı, supply chain management için hazırlanan ya da yeni alınan yazılımın maliyeti
+
+352
+01:22:41,859 --> 01:23:08,270
+ve iş gücü, bilgi sistemleri çalışanları, bu uç kullanıcıların eğitimi için burada ilk kuruluş aşamasında çalışanlar,
+
+353
+01:23:08,270 --> 01:23:20,270
+daha sonra da çalıştırma aşamasında, gerçekleştirecek bakım sürecinde ama özellikle de çalıştırma aşamasında da,
+
+354
+01:23:20,270 --> 01:23:40,270
+yani sadece ilk yıl yapılan çalışmayla kalmayacak tabi ki, bilgi sistemleri çalışanları, iş süreçleri çalışanları,
+
+355
+01:23:40,270 --> 01:23:55,270
+dış danışmanların verdiği hizmetler, uç kullanıcılara verilen eğitimler, bunların hepsi işte ilk başta toplam maliyeti,
+
+356
+01:23:55,270 --> 01:24:13,270
+bütün bilgi sisteminin hazırlanmasının 11.467 dolarsa, diğer senelere de geçiyor.
+
+357
+01:24:13,270 --> 01:24:31,270
+Yani işte bir hardware network yapısı ama sadece bağlantı için diğer senelerde de sürüyor maliyetler ama diğerlerinde yeni ek ürün alımı çıkmayacaksa,
+
+358
+01:24:31,270 --> 01:24:50,270
+diğer yıllarda yok ama yapıldığı yılda, bilgi sisteminin geliştirildiği yılda toplam şeye baktığımızda 11.467,
+
+359
+01:24:50,270 --> 01:24:59,270
+ilk yılın toplamı bakım ve destek parası çıkmadığı için 11.467.
+
+360
+01:24:59,270 --> 01:25:28,340
+Burada bizim toplam maliyete baktığımızda her yıl gerçekleşecek bir bakım destek parası ve çalıştıran iş gücü parası da var.
+
+361
+01:25:28,340 --> 01:25:48,340
+Dolayısıyla toplam maliyet yani 5 yıl içinde, hatta geliştirildiği yılı da katarsak, 6 yıl içinde toplam maliyetimiz 19.017 buradan hesaplıyoruz.
+
+362
+01:25:48,340 --> 01:26:08,340
+Faydaya baktığımızda azaltılmış çalıştıran maliyeti, azaltılmış envanter maliyeti, azaltılmış, bunları da şurada görmüştük, neler azalacak diye çalıştıran maliyeti, envanter maliyeti gibi.
+
+363
+01:26:08,340 --> 01:26:28,340
+Bunları direkt paraya döktüğümüzde, ilk yıl daha yapılma süreci fayda yok ama kullanımda olduğu 5 yıl içinde,
+
+364
+01:26:28,340 --> 01:26:50,789
+toplam 6.700, 6.450 diye her yıla yazılan toplam fayda da 32.500.
+
+365
+01:26:50,789 --> 01:27:16,369
+5 yıl, yani 5 yılda alınan faydaların toplamı, toplam fayda, şurası ilk yatırım 11.450,
+
+366
+01:27:16,369 --> 01:27:36,630
+5 yılda çalıştırma ve bakım maliyeti eklendiğinde 19.000 olacak toplam maliyeti.
+
+367
+01:27:36,630 --> 01:28:07,039
+Evet, bu net nakit akışı kavramı var. Net cash flow, net nakit akışında eksi 11.457, ondan sonra gelir geldiği için bunlar artı durumda.
+
+368
+01:28:07,039 --> 01:28:33,699
+Ve bakıyoruz finansal olarak başka hangi kavramlar var. Net nakit akışında, bu yıllar arasında orjinal yatırımı yani ilk baştaki yatırımızı devreye almadığımızda,
+
+369
+01:28:33,699 --> 01:28:48,699
+nakit akışını şu şekilde yazıyoruz. Bu ilk yatırımı da devreye aldığımızda buradan bakıyoruz. Payback periyodu diye baktığımızda,
+
+370
+01:28:48,699 --> 01:29:23,529
+Payback periyodu, bizim ilk yatırımımız 11.467. Bu ne kadar süre içinde fayda sağlıyor? Bir, iki, yılda, iki buçuk yılda bu yatırımla faydanın karşılaştırdığı noktadaki
+
+371
+01:29:23,529 --> 01:29:44,529
+yıl sayısı bu da iki buçuk yıl. Başlangıç yatırımına baktığımızda 11.467, kümülatif nakit akışı diye baktığımızda bu her yıl,
+
+372
+01:29:44,529 --> 01:30:09,659
+sıfırıncı yıl geliştirme yılı 11.467 para harcanmış durumda. Kümülatif nakit akışına baktığımızda 11.467 ama
+
+373
+01:30:09,659 --> 01:30:42,819
+Evet, bu buradaki birinci yıl 5190 gelir sağlandı. Bu çıkarılarak devam ettiğimizde şöyle, şu 6700 her ay,
+
+374
+01:30:42,819 --> 01:31:12,039
+6700 sonra her ay 6450 bu sistemin sağladığı faydalar. Bu sistemin sağladığı faydalar da maliyetten çıkarıldığında 5190 oluyor net nakit girişi.
+
+375
+01:31:12,039 --> 01:31:34,039
+Mesela 6450, 4940'a düşüyor çünkü 1510 da harcama var ilk yatırımın dışında. İşte bunlar dikkate alınarak şu sol taraftaki
+
+376
+01:31:34,039 --> 01:31:55,039
+yatırım gelirleri. Kümülatif nakit akışına baktığımızda bu 11.457'lik yatırım ne kadar azalmış.
+
+377
+01:31:55,039 --> 01:32:18,039
+En son beşinci yılda 13482. Bu da yatırım sonucunda alınan net kar diyebiliriz.
+
+378
+01:32:18,039 --> 01:32:40,239
+Bu kaç yıl kullanıldı? 6 yıl. Buna 6 yıla bölerek böyle bir toplam yatırım değeri elde ediliyor.
+
+379
+01:32:40,239 --> 01:32:58,239
+Toplam fayda, eksi toplam maliyet, eksi bu kalan para, bir de bu ne kadar yıl kullanılacak. Return on investment.
+
+380
+01:32:58,239 --> 01:33:13,779
+Bunların formüllerine bakalım. Bir başlangıç projedeki başlangıç yatırımını geri almak için gereken süre.
+
+381
+01:33:13,779 --> 01:33:38,380
+İşte bu karşılaşma noktası bunu şekil çizerek de bulabiliyoruz ama orjinal yatırım bölü yıllık net nakit iç akışı değeriyle de bölerek bulabiliyoruz.
+
+382
+01:33:38,380 --> 01:34:01,380
+Yatırımın geri dönüşü için burada net karı buluyoruz önce. Net kar bulduktan sonra da toplam başlangıç yatırımına böldüğümüzde
+
+383
+01:34:01,380 --> 01:34:10,380
+Çıkan şey yatırımın geri dönüşündeki muhasebe oranı. Yatırım geri dönüş oranı nedir?
+
+384
+01:34:10,380 --> 01:34:25,380
+İşte bunu da şurada %2.93 olarak bulunmuş yatırımın geri dönüş oranı.
+
+385
+01:34:25,380 --> 01:34:40,550
+Net present value, net bugünkü değer, mevcut beklenen nakit akışları nedir?
+
+386
+01:34:40,550 --> 01:35:02,550
+Bunu başlangıç yatırım maliyetini bundan çıkararak net bugünkü değeri bulabiliyoruz. Net bugünkü değer içinde burada bunu bir formülle de hesaplayabiliyoruz.
+
+387
+01:35:02,550 --> 01:35:22,300
+Maliyet fayda oranı, toplam faydalar, bölü toplam maliyetler, maliyet fayda oranı nedir?
+
+388
+01:35:22,300 --> 01:36:01,810
+İşte yine şu şeye dönersek, tedarik zinciri yönetim uygulamasına toplam fayda, beklenen nakit akışları nedir?
+
+389
+01:36:01,810 --> 01:36:17,140
+Gerçek yatırım maliyeti nedir? Net present value'yu bulabiliyoruz.
+
+390
+01:36:17,140 --> 01:36:39,899
+Maliyet fayda oranı. Şurada cost benefit ratio, toplam fayda 32.500, toplam maliyet 19.000.
+
+391
+01:36:39,899 --> 01:37:03,170
+Bunu nereden bulduk? Toplam fayda 32.500, toplam maliyette 19.017. Çünkü 11.000 ilk baştaydı, daha sonraki harcamaları da eklediğimizde 19.000.
+
+392
+01:37:03,170 --> 01:37:46,779
+Toplam fayda bölü toplam maliyet cost benefit ratio olarak karşımıza çıkıyor. Şurada da 32.500 ve 19.017. Bu oran 1.71 olarak maliyet fayda oranı olarak karşımıza çıkıyor.
+
+393
+01:37:46,779 --> 01:38:02,779
+Karlılık indexi nedir? Karlılık indexini de bulduğumuzda yatırımın karlılığı hakkında bir fikir verebiliyoruz.
+
+394
+01:38:02,779 --> 01:38:42,960
+Geri dönüş oranı ya da kâr, bir yatırımın beklenen kârı geri dönüş oranı veya kâr olarak karşımıza çıkıyor.
+
+395
+01:38:42,960 --> 01:39:21,279
+Geri dönüş oranı %33 olarak bulunuyor. Karlılık indexi de 1.89 olarak bulunuyor.
+
+396
+01:39:21,279 --> 01:39:55,340
+Yani bu bilgi sistemleri için herhangi bir yatırım yapıldığında bütün şirketlerdeki yatırım planlamalarında kullanılan ekonomik hesaplamalar, analizler, kurulan modeller bizim alanımızdaki yatırımlar içinde uygulanıyor.
+
+397
+01:39:55,340 --> 01:40:22,340
+Burada geliri, sistemden elde edilen faydayı ve harcamaları, sistem için geliştirme maliyetlerini ve çalıştırma maliyetlerini hepsini kullanarak bu değerleri hesaplayabiliyoruz.
+
+398
+01:40:22,340 --> 01:40:32,340
+Ve bunlar da bizim bilgi sistemimizin işletmecilik değerini anlamakta kullanılıyor.
+
+399
+01:40:32,340 --> 01:40:50,340
+Biz bir yatırım olarak düşünürsek bu bilgi sistemlerinin yatırımına ne kadar harcama yapılıyor ve ne kadar geri alınıyor bunun üzerinde bu şekilde çalışabiliyoruz.
+
+400
+01:40:50,340 --> 01:41:19,810
+Proje riskleri ve şimdi bu sistemin değerini anlamak için stratejik kavram çalışmalarından bir tanesi portfolio analizi, diğeri de skorlama modelleri.
+
+401
+01:41:19,810 --> 01:41:37,520
+Şimdi bir sistemi kurmak için alternatiflerimiz var.
+
+402
+01:41:37,520 --> 01:42:02,520
+Bu alternatiflerden bir tanesini seçmek için her birinin faydası ve risklerini saptayıp potansiyel uygulamaların bir görünümünü çıkartabiliyoruz.
+
+403
+01:42:02,520 --> 01:42:06,520
+Bunu biz portfolio analizi diyoruz.
+
+404
+01:42:06,520 --> 01:42:26,520
+Yani hangi çözüm alternatifini seçersek bunun riski ne olacaktır, faydası ne olacaktır, bunu potansiyel uygulamalar için gösterme yolu portfolio analizi.
+
+405
+01:42:26,520 --> 01:43:00,310
+Skorlama modelleri de bu alternatif bir uygulamanın, bir işletme sisteminin alternatif sistemleri arasında karar vermek için her bir modele karar vermek için oluşturduğumuz puan verme sistemi.
+
+406
+01:43:00,310 --> 01:43:17,310
+Şimdi bir firmaya potansiyel bir projenin riski nedir? Firmaya faydası nedir?
+
+407
+01:43:17,310 --> 01:43:36,310
+Burada tabi ki rutin projelere baktığımızda bu rutin projelerin proje riski yok. Ama firmaya çok fazla faydası da düşük.
+
+408
+01:43:36,310 --> 01:43:58,539
+Riski yüksek ama faydası da düşük olanlardan böyle projelerden kaçınalım.
+
+409
+01:43:58,539 --> 01:44:16,810
+Riski düşük, firmaya faydası da düşük rutin projeler bunları zaten gerçekleştiriyoruz firmadaki işlerin yürümesi için.
+
+410
+01:44:16,810 --> 01:44:32,810
+Riski düşük ama firmaya faydası da yüksek olanlardan hemen tanımlayıp bunları geliştirmek gerekiyor.
+
+411
+01:44:32,810 --> 01:44:51,180
+Önce o zaman projede böyle bir değerlendirme yapmamız gerekecek bir portfolio oluşturmamız projenin risk durumu nedir? Projenin firmaya sağlayacağı fayda nedir?
+
+412
+01:44:51,180 --> 01:45:09,180
+Ona göre şu dikdörtgenlerin içinde yazanlarda bu projeye nasıl bakalım? Bu projeden kaçınalım mı? Bu projeyi hemen tanımlayıp hemen geliştirmeye mi başlayalım?
+
+413
+01:45:09,180 --> 01:45:21,180
+Yoksa bu proje zaten rutin bu projedir, riski de düşük, firmaya faydası da ortalaması zaten yürüyor bu projeler.
+
+414
+01:45:21,180 --> 01:45:50,260
+Fiyatlandırma modelleri ve bu konuda bilgi toplama işlemleri, bilgi teknolojileri için bunları gerçekleştirmemiz gerekecek.
+
+415
+01:45:53,039 --> 01:46:24,000
+Bilgi teknolojileri, bilgi teknolojilerindeki yatırımlar ve bunların verimliliği nedir?
+
+416
+01:46:24,000 --> 01:46:38,000
+Üretimle ilişkili, servis sektörü ile ilişkili bunların faydaları daha belirsiz olabilir.
+
+417
+01:46:38,000 --> 01:46:59,949
+Bilgi ve bilgi endüstresi için olan uygulamalar, bunların faydalarını ölçmek zor ama tabii ki faydaları yüksek ama ölçümü zor.
+
+418
+01:46:59,949 --> 01:47:13,949
+Eğer üretimle ilişkili bilgi teknolojileri uygulamaları varsa, bunlar kesinlikle verimliliği arttıracak yapıda.
+
+419
+01:47:13,949 --> 01:47:30,189
+Servis sektörü de kullanılan bilgi sistemleri de bunların da faydalarını belirlemek yine daha zor.
+
+420
+01:47:30,189 --> 01:47:45,189
+Bilgi sistemlerine baktığımızda bir de başarı ve başarısızlıktan söz edeceğiz demiştik ilk dersin başında bugün için.
+
+421
+01:47:45,189 --> 01:48:11,119
+Burada bilgi sistemlerinde hangi veri kullanılacak, hangi işlemler gerçekleştirecek, bilgi sistemleri nasıl tasarlanacak ve bu bilgi sisteminin maliyeti nedir?
+
+422
+01:48:11,119 --> 01:48:24,119
+İşte başarıyı sağlamak için bir bilgi sistemini kurarken bunların hepsini göz önünde bulundurmak gerekecek. Bunların hepsinde problemler çıkabilir.
+
+423
+01:48:24,119 --> 01:48:43,119
+Şimdi baktığımızda bilgi sistemlerinin problem alanlarına tasarım. Burada işletmecilik gereksinimlerini yakalamak gerekiyor.
+
+424
+01:48:43,119 --> 01:49:05,680
+Eğer yakalayamazsak problem var. Burada bilginin hangi formatta olacağı tasarım sırasında zorluk olabilir.
+
+425
+01:49:05,680 --> 01:49:18,680
+Yani zayıf bir kullanıcı arayüzü tasarımda problem yaratacaktır. Yani siz ne kadar iyi bir yazılım hazırlarsanız hazırlayın.
+
+426
+01:49:18,680 --> 01:49:39,680
+Kullanıcıya bu kullanımı zor gelen bir uygulama ise o zaman problem çıkacaktır. Bu yüzden web tasarımı diye bir alan var.
+
+427
+01:49:39,680 --> 01:49:53,680
+Bunlarla beraber çalışmak gerekecek. Çünkü bu önemli, hatalı bilgi girişi, hatalı işlem yapmasına yönlendirebilir kullanıcıyı.
+
+428
+01:49:53,680 --> 01:50:14,680
+Bir de işte bu kullanılabilirlik fizibilitesinden hep bahsetmiştim sistem analizinde. Kurumun yapısı, kültürü, hedefleri ile uyumsuz olan bir tasarım yapmamak gerekecek.
+
+429
+01:50:14,680 --> 01:50:27,680
+Bu da bizim için önemli. Yani demek ki bilgi sistemlerinin problem alanlarında bir tanesi tasarım.
+
+430
+01:50:27,680 --> 01:50:41,680
+Bilgi sistemlerinde tasarım gerçekleştirirken, işletmelerde kullanılacak uygulamalarda iş süreçlerinin gereksinimlerini yakalamamız gerekecek.
+
+431
+01:50:41,680 --> 01:50:55,680
+Eğer yakalayamazsak başarısızlığa uğrarız. Kullanıcı ara birimleri önemli. Eğer kullanıcıya hatalı bilgi giriş yapmaya yönlendirecek şekilde ise siz istediğiniz kadar iyi bir yazılım geliştirmiş olun.
+
+432
+01:50:55,680 --> 01:51:07,680
+Performansı yüksek, hatalı bilgi girişleri ile dolu olacak. Kurumun yapısı, kültürü ve hedeflerine uygun olması gerekir yazılımınızın.
+
+433
+01:51:07,680 --> 01:51:28,680
+Eğer burada bir problem varsa, yani kullanıcılara zor gelen, alışkanlıklarına zor gelen ve kurumun işleyişinden farklı yapıda bir uygulama oluşturmuşsanız,
+
+434
+01:51:28,680 --> 01:51:42,510
+bu da risk, yani hataya, başarısızlığa götürebilir sistemi.
+
+435
+01:51:42,510 --> 01:52:04,909
+Veri önemli başarıda. Verinin doğru olmayan ve uyumsuz veri olması, işletmecilik amaçları için uygun organize edilmemiş olması,
+
+436
+01:52:04,909 --> 01:52:15,909
+veri girişinin, veri kullanımının problem yaratır.
+
+437
+01:52:15,909 --> 01:52:38,800
+Gerçekleştirme ve yazılımın hazırlanması ve çalıştırılması maliyeti de önemli. Burada da çok iyi bir yazılım bilgi sistemi tasarlayabilirsiniz.
+
+438
+01:52:38,800 --> 01:52:47,800
+Bir kullanım da çok iyi olabilir ama çok yüksek semaliyeti, bu yine kullanıcı tereddütle yaklaşacaktır.
+
+439
+01:52:47,800 --> 01:53:13,909
+İşlemler, burada bilgisayar işlemlerinin işletim süresi, güvenliği açısından herhangi bir kesilme olmaması ve cevap süresinde herhangi bir gecikme olmaması gerekecek.
+
+440
+01:53:13,909 --> 01:53:25,909
+Bu işlemsel anlamda tüm kalite özelliklerine uygun olarak çalışabilmesi gerekecek sizin bilgi sisteminizin.
+
+441
+01:53:25,909 --> 01:53:40,909
+Yani bu problem alanlarına dikkat etmek gerekecek. Veri, maliyet, işlemler ve tasarım açısından bunlara dikkat etmek gerekecek.
+
+442
+01:53:40,909 --> 01:54:02,869
+Şimdi burada implementasyon uygulamaya konma aşaması da neye dikkat etmek gerekiyor?
+
+443
+01:54:02,869 --> 01:54:29,350
+Herhangi bir inovasyonun kurumdaki tüm aktivitelerle beraber yani bir bilgi sistemi olabilir ya da yeni bir yaklaşımın yerleştirilmesi olabilir kuruma.
+
+444
+01:54:29,350 --> 01:54:56,350
+İşte bunun kuruma uyumu, yönetime katkısı ve bu yeni yaratıcı fikrin ya da yaratıcı sistemin rutin uygulamalarla birleştirilmesi ve tüm kurumsal aktivitelerle
+
+445
+01:54:56,350 --> 01:55:16,109
+birlikte kullanılabilmesi önemli. Sizin hazırladığınız bir bilgi sisteminin implementasyonu geliştirilmesi bu koşullara uygun olmalıdır.
+
+446
+01:55:16,109 --> 01:55:42,109
+Ayrıca change agent değişim sürecin sırasında mesela yeni bilgi sisteminin kuruluşu kullanıma alınması sırasında düzenlemeyi yapan kişi.
+
+447
+01:55:42,109 --> 01:55:52,109
+Aslında biz bunu yazılım kalite dersinde de bu hafta içinde gördük.
+
+448
+01:55:52,109 --> 01:56:26,529
+Uygulamaya konma sürecinde kurum elemanları ve bilgi sistemi çalışanları arasında bir iletişim kuran bir görevliye ihtiyaç var.
+
+449
+01:56:26,529 --> 01:56:57,449
+Kullanıcılar burada nasıl bir etki yaratacak, nasıl katkı sağlayacak bu aşamaya bir defa kullanıcı öncelikleriyle işletmecilik gereksinimlerini sistemde kaynaştırmak gerekecek.
+
+450
+01:56:58,449 --> 01:57:18,449
+Yani işletmenin daha iyi yürümesi için süreçlerinin ortaya konan gereklilikler kullanıcıların öncelikleriyle örtüştürmeye çalışılacak.
+
+451
+01:57:18,449 --> 01:57:33,449
+Yani bunlar kaynaştırılmalı. Böylece sistemin pozitif etki yapması sağlanabilecek.
+
+452
+01:57:33,449 --> 01:57:56,890
+Kullanıcıyla tasarımcı arasında bir boşluk olmamalı.
+
+453
+01:57:56,890 --> 01:58:22,890
+Tasarım, maliyet, işlemler ve veri yeni sistemin, bilgi sisteminin problem alanları ve şu sağ tarafta bilgi sisteminin bütün bu problemlerine nasıl karşılık verilecek.
+
+454
+01:58:22,890 --> 01:58:44,970
+Yani bilgi sisteminin kuruma uyarlanması ve kurumda kullanılmaya başlanması için bir defa yönetimin desteği şart,
+
+455
+01:58:44,970 --> 01:59:06,970
+karmaşıklık ve risk seviyesinin dengede tutulması şart, bu geçiş sürecinin yönetilmesi sırasında dikkatle çalışılması gerekiyor.
+
+456
+01:59:06,970 --> 01:59:25,970
+Bir de kullanıcının kabul etme ve etkilenmesinden sorumlu bir çalışan olması gerekiyor.
+
+457
+01:59:25,970 --> 01:59:35,970
+Bütün bu destekler veriliyorsa bilgi sisteminin implementasyonu daha başarılı olacaktır.
+
+458
+01:59:35,970 --> 01:59:58,970
+Tabii ki burada bilgi sistemlerinin bu iç problemleri kullanıcıya dikkate alarak tasarım yapma, maliyetin dikkatle oluşturulması, veri kullanımı ve gerçekleşen işlemler,
+
+459
+01:59:58,970 --> 02:00:10,970
+burada kullanıcıların dikkate alınması, bunların hepsi sistemin başarısını ya da başarısızlığını getirecektir.
+
+460
+02:00:10,970 --> 02:00:39,970
+Ama burada dışarıdan da konuşmacılar çağırdığımızda özellikle bilgi sistemi, proje yöneticilerini yönetim desteğinin şart olduğunu ve yönetimin desteklediği bir projenin daha başarılı olduğunu vurguladıklarını görüyoruz.
+
+461
+02:00:39,970 --> 02:01:51,310
+Şimdi bir deneme yapacağım. Bir değişiklik olmazsa önümüzdeki hafta bir konuşmacı çağıracağım.
+
+462
+02:01:51,310 --> 02:02:02,310
+Kurumda gerçekleştirdikleri bilgi sistemleri projelerini kullanmaları için.
+
+463
+02:02:02,310 --> 02:05:35,270
+Şimdi devam edebiliriz.
+
+464
+02:05:35,270 --> 02:06:18,699
+Yönetim desteğini geçen senede çağırdığım konuşmacılarda hem her ikisi de farklı sektörlerden yazılım firması değil de hizmet sektöründen ve üretim sektöründen olan iki farklı firmanın proje yöneticileri
+
+465
+02:06:18,699 --> 02:06:43,699
+davet etmiştim ve her ikisi de bu projenin başarısı için önemli olan faktörler ki şurada gördük bir önceki şekilde bunlardan en önemlisinin yönetim desteği olduğunu söylemişlerdi.
+
+466
+02:06:43,699 --> 02:07:09,699
+Şimdi bakalım yönetim desteği pozitif etkilenme ve katılımı heveslendirilmesi yani hangi departmana yapılıyorsa bu bilgi sistemi o departman çalışanları tarafından kabul görmesi
+
+467
+02:07:09,699 --> 02:07:37,699
+ve yeterli fon ve kaynakların ayrılması iş süreçlerindeki değişikliğe direnç göstermelisinin çalışanların önlenmesi konusunda yönetim desteğinin çok önemli olduğu bir projenin başarısı için ortaya çıkmıştı.
+
+468
+02:07:37,699 --> 02:08:07,279
+Ayrıca karmaşıklık ve risk seviyesi tabi ki büyük projeler daha büyük risk içerir. Proje yapısı da önemli. Tanımlandığı süreçleri ve çıktaları daha iyi tanımlanmış olmalı.
+
+469
+02:08:07,279 --> 02:08:25,279
+Teknoloji ile ilgili bir deneyim problemi varsa eğer proje ekibinde o zaman daha fazla karmaşıklık ve risk olacaktır. Yani bir uzmanlık boşluğunun olmaması gerekir.
+
+470
+02:08:25,279 --> 02:08:52,350
+Daha zayıf yönetimi, proje yönetimi olması da başarısızlığa itecektir. İşte beklenmeyen zaman kaymaları, teknik düğümlenmeler, hata,
+
+471
+02:08:52,350 --> 02:09:12,350
+fayda beklenen faydaların belirtilmesindeki hatalar, gereksiz bütçe maliyet tanımları. Yani proje yöneticisi de önemli, proje yönetimi de önemli.
+
+472
+02:09:12,350 --> 02:09:32,180
+Eğer proje yönetim zayıflığı varsa zaman kaymaları, işte bunlar gerçekleşecektir. Zaten bir önceki slide'da da bunu görmüştük.
+
+473
+02:09:32,180 --> 02:09:59,180
+Zayıf yönetim varsa daha her şeyi ignore etme. Yani önemsiz hataları veya başarısızlık tehlikesini göz önünde bulundurmamalı.
+
+474
+02:09:59,180 --> 02:10:16,100
+Ve sürekli, iyi niyetli olması ya da iyi sonuçlar alacağını zannetmesi de kötü yönetimi gösterir.
+
+475
+02:10:16,100 --> 02:10:39,100
+Bir de adam ay şeyi, hesabını iyi yapamaması. Böylece hatalı projeler yürüyebilir.
+
+476
+02:10:39,100 --> 02:10:53,470
+İş süreçlerinin yeniden yapılandırılması da hata payı olabilir. Bu hata payı günümüzde daha azalsa da yine de var.
+
+477
+02:10:53,470 --> 02:11:10,470
+Kurumsal uygulamalarda yine hata oranı yüksek olabilir. Yani bir kurumun tamamını yenileme çalışmalarında hata payı olabilir.
+
+478
+02:11:10,470 --> 02:11:32,470
+Bir de yetersiz değişim yönetiminin olması, hani bunu az önce de söyledim, release management'ın önem kazanması, yeni bir sürüme geçiş stratejilerinin ilk olması gerekiyor.
+
+479
+02:11:32,470 --> 02:11:54,789
+Bu bilgiler daha eski. Günümüzde bunları, bu başarısızlık oranlarını hafifletmek üzere release management sürüm yönetimine daha fazla önem verilmiş durumda.
+
+480
+02:11:54,789 --> 02:12:18,260
+Bunu da görüyoruz. Bu arada bir de global sistemleri dikkate almamız gerekiyor. Çünkü uluslararası birçok proje yürüyor.
+
+481
+02:12:18,260 --> 02:12:32,260
+Burada nedir dikkat edilecek nokta? İş süreçlerinde yerel farklılıklar olabilir.
+
+482
+02:12:32,260 --> 02:12:51,260
+Vera akışı değil, muhasebe kanunları arasındaki farklılıklar, uluslar arasında bunlar global projelerde daha fazla problem yaratabilir.
+
+483
+02:12:51,260 --> 02:13:07,260
+Ve bu uluslararası projelerde standartlara ihtiyaç var. Bunlar yine de bu süreç içinde çok gelişti ama hala tamamlanacak noktalar var.
+
+484
+02:13:07,260 --> 02:13:23,260
+Uluslararası ekip çalışmaları için proje yönetim yazılımları burada daha iyileştirilerek kullanılmaya başlandı.
+
+485
+02:13:23,260 --> 02:13:59,430
+Bilgi sistemleri projelerini daha iyi yönetmek için ne yapacağız? Bir defa geçişi de daha iyi yönetmemiz gerekecek.
+
+486
+02:13:59,430 --> 02:14:17,430
+Hem yazılım geliştirme süreci için nasıl bir planlama yapıyorsak, yazılım geçişi için veri düzenlemeleri, veri aktarma işlemleri nasıl gerçekleşti,
+
+487
+02:14:17,430 --> 02:14:35,430
+tasarım yapılan uygulama tamamıyla tamamlandı mı, işte testlerin tamamlanması ve bunu bir takvime oturtmak.
+
+488
+02:14:35,430 --> 02:14:49,430
+Biz proje yönetim aracı olarak kullandığımız Microsoft projekti biliyoruz. Bunun yanında çok sayıda proje yönetim aracı olduğu gibi,
+
+489
+02:14:49,430 --> 02:15:02,430
+özellikle bunu release management'a projeleri başarılı geçişlerini gerçekleştirmeye de özel hale getirebiliriz.
+
+490
+02:15:02,430 --> 02:15:28,829
+Bu kurumsal faktörlere baktığımızda herhangi bir bilgi sisteminin planlanması ve hayata geçirilmesinde neler önemli?
+
+491
+02:15:28,829 --> 02:15:41,829
+Bir defa standartlar yani performansın izlenmesi ve standartların ortaya konulması, iş tasarımlarının iyi yapılması, iş görevlendirmelerinin de.
+
+492
+02:15:41,829 --> 02:16:06,689
+Çalışanların katılımının sağlanması ve ergonominin kullanılması hem web üzerinde hem çalışma ortamında güvenlik kavramının dikkate alınması.
+
+493
+02:16:06,689 --> 02:16:28,270
+Bunların hepsi sistem planlanması ve hayata geçirilişinde önemlidir diyebiliriz.
+
+494
+02:16:28,270 --> 02:16:48,930
+Tabii ki projede riskler de olabilir, riskleri de iyi kontrol etmemiz gerekiyor.
+
+495
+02:16:48,930 --> 02:17:28,379
+Evet, yerel sistemler, global sistemler, bölgesel olarak farklılıklar gösteren sistemler gibi sistemler üzerinde de durabiliriz.
+
+496
+02:17:28,379 --> 02:17:45,319
+Evet, bugün için son anlatacağım konuyu burada tamamladım. Sorunuz var mı?
+
+497
+02:17:45,319 --> 02:18:07,989
+Projeleriniz için ödev tanımı yaptım sistemde. Bu ödev tanımı ile ilgili sorunuz var mı?
+
+498
+02:18:07,989 --> 02:18:26,229
+Gruptan bir kişinin yüklemesi yeterli. Yani sağlama almak için bakın ikinci bir kişi de isterse yükleyebilir.
+
+499
+02:18:26,229 --> 02:18:43,670
+Son tarih olarak verdiğim tarihte herkes sunumlarını yükleyecek. Yani gerekli raporlarını yükleyecek.
+
+500
+02:18:43,670 --> 02:18:56,670
+Sunum sırasında da bir sunum dosyası hazırlamanız gerekiyor. Ve grup üyelerinden hepsinin katılması gerekiyor.
+
+501
+02:18:56,670 --> 02:19:19,159
+Sorunuz var mı? Soru yazan var mı bu arada? Yok.
+
+502
+02:19:19,159 --> 02:20:00,559
+Evet, grup çalışmasında problem olan var mı? Eksik yazan. Evet sorunuz yoksa dersi bitireceğim.
+
+503
+02:20:00,559 --> 02:20:34,379
+Dersi tamamladık o zaman. Yine de sorunuz varsa, sorunuz varsa sistemi açık tutacağım.
+
+504
+02:20:34,379 --> 02:20:38,379
+Chatten yazabilirsiniz.
+

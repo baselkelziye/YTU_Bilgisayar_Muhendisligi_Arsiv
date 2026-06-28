@@ -1,0 +1,10040 @@
+1
+00:03:28,719 --> 00:03:30,620
+Merhaba arkadaşlar. Geliyor mu?
+
+2
+00:03:36,639 --> 00:03:37,360
+Geliyor hocam.
+
+3
+00:03:38,400 --> 00:03:39,039
+Süper.
+
+4
+00:03:41,259 --> 00:03:49,680
+Şimdi bugün asistan arkadaşların bugün için bana söylediği uygulama yapacakları yönünde.
+
+5
+00:03:51,020 --> 00:03:57,289
+Herhalde size bir şekilde bir duyurusunu şeyini yapacaklar.
+
+6
+00:03:57,610 --> 00:04:00,169
+Zoom sejeninle nasıl bağlanacaklar bilmiyorum.
+
+7
+00:04:00,169 --> 00:04:03,810
+Ders sonrasında onlarla bir konuşacağım.
+
+8
+00:04:03,810 --> 00:04:07,370
+Yani ayarlıyoruz dediler, ayarlamışlardır diye tahmin ediyorum.
+
+9
+00:04:07,550 --> 00:04:10,229
+Ama bugün bana söylenen uygulama yapılacağı yönünde.
+
+10
+00:04:10,849 --> 00:04:11,569
+Haberiniz olsun.
+
+11
+00:04:12,530 --> 00:04:14,270
+Baştan bu soruyu cevaplamış olalım.
+
+12
+00:04:15,229 --> 00:04:19,910
+Şimdi geçen hafta kaldığımız yerden derse devam edebiliriz.
+
+13
+00:04:26,029 --> 00:04:27,189
+Ekran geldi herhalde.
+
+14
+00:04:27,189 --> 00:04:36,500
+Şimdi hatırlarsanız geçen hafta esas yoğunlaştığımız konulardan bir tanesi
+
+15
+00:04:36,500 --> 00:04:39,579
+Principle of List Privilege'di.
+
+16
+00:04:39,579 --> 00:04:49,579
+Bir işi yapmak için ihtiyaç duyduğumuz yetkinin, o işin yapılmasını sağlayacak minimum seviyede olmasını tariflemiştik.
+
+17
+00:04:49,579 --> 00:04:52,579
+Ama aynı zamanda bu neye de denk düşüyordu?
+
+18
+00:04:52,579 --> 00:04:58,579
+Sahip olunması gereken o konuyla alakalı maksimum yetki seviyesine de denk düşüyordu.
+
+19
+00:04:58,579 --> 00:05:07,579
+Ve Principle of List Privilege'i konuşurken beraberinde Separation'dan bahsetmiştik.
+
+20
+00:05:07,579 --> 00:05:08,579
+Hatta ben Ayzu'ya baktım.
+
+21
+00:05:08,579 --> 00:05:14,579
+Hatta ben Isolation ve Compartmentalization kavramlarını da söylemiştim.
+
+22
+00:05:15,579 --> 00:05:19,579
+İşte bugünkü dersimizde Isolation'a yoğunlaşacağız.
+
+23
+00:05:20,579 --> 00:05:26,579
+Confinement, kısıtlamak, sınırlamak demek.
+
+24
+00:05:27,579 --> 00:05:30,579
+Yani bir nevi bir hücrenin içine almak demek.
+
+25
+00:05:30,579 --> 00:05:35,579
+Etrafını çevirmek, çitle kapatmak, öyle düşünebilirsiniz.
+
+26
+00:05:35,579 --> 00:05:42,579
+Uygulamaları, güvenli olmadığını düşündüğümüz uygulamaları, ki aslında bütün uygulamalar bu.
+
+27
+00:05:42,579 --> 00:05:44,579
+Geçen haftadan biliyorsunuz.
+
+28
+00:05:44,579 --> 00:05:48,579
+Bir şekilde kontrollü olarak çalıştırmamız lazım.
+
+29
+00:05:48,579 --> 00:05:54,660
+Niye ihtiyaç duyduğumuzun üzerinden hızlıca geçelim.
+
+30
+00:05:54,660 --> 00:05:57,660
+Zaten sürekli konuştuğumuz bir konu.
+
+31
+00:05:57,660 --> 00:06:05,660
+Günlük hayatımızda ister desktop'ımıza, ister mobil cihazlarımıza ilgimizi çektiği için,
+
+32
+00:06:05,660 --> 00:06:13,660
+arkadaşlarımız söylediği için, mail ile bize bir linki geldiği için pek çok uygulamayı yüklüyoruz.
+
+33
+00:06:13,660 --> 00:06:15,660
+Sorgulamadan yüklüyoruz.
+
+34
+00:06:15,660 --> 00:06:19,660
+Hoşumuza gittiği için kökenini bilmemize gerek olmadan yüklüyoruz.
+
+35
+00:06:19,660 --> 00:06:26,660
+Web sayfalarını dolaşırken hiç durmadan javascript bize gönderiliyor.
+
+36
+00:06:26,660 --> 00:06:29,660
+Javascript ile yazılmış kodlar bize gönderiliyor.
+
+37
+00:06:29,660 --> 00:06:33,660
+Ve bunlar bizim lokal bilgisayarımızda, ortamımızda çalışıyor.
+
+38
+00:06:33,660 --> 00:06:45,660
+Browserlarımızda eriştiğimiz sayfalar haricinde ihtiyacımıza uygun, ilgimize uygun eklentiler çalışıyor.
+
+39
+00:06:45,660 --> 00:06:52,660
+Bunlarla alakalı açıkçası her birini kontrol edip de güvenli bir üreticiden mi geldi
+
+40
+00:06:52,660 --> 00:06:59,660
+veya bunun yeterli şekilde güvenli bir yapısı olup olmadığı araştırıldı mı diye
+
+41
+00:06:59,660 --> 00:07:02,660
+kontrol yapmadan doğrudan tıklayıp yükleyeceğiz.
+
+42
+00:07:03,660 --> 00:07:08,660
+Tıklayıp çalıştırabiliyoruz veya yüklendiğinin farkına bile varmayabiliyoruz.
+
+43
+00:07:08,660 --> 00:07:12,660
+Browserların durumunu gözden geçirdik güvenlik açısından.
+
+44
+00:07:12,660 --> 00:07:15,660
+Geçtiğimiz haftalardaki derslerde hatırlayın.
+
+45
+00:07:15,660 --> 00:07:24,660
+Güvenlik ön plana alınarak oluşturulmuş Chrome browserında bile çok ciddi güvenlik sıkıntıları olduğunu gördük.
+
+46
+00:07:24,660 --> 00:07:29,660
+Diğer taraftan pdf uygulamaları başlı başına sıkıntı.
+
+47
+00:07:29,660 --> 00:07:32,660
+Mail alıp vermemizi sağlayan arayüzler.
+
+48
+00:07:32,660 --> 00:07:34,660
+En başında Outlook geliyor.
+
+49
+00:07:34,660 --> 00:07:42,660
+Kurumsal olması sebebiyle kişisel kullanılmasa bile çok fazla belki ama kurumsal olarak çok fazla miktarda kullanılıyor.
+
+50
+00:07:42,660 --> 00:07:44,660
+Bu da önemli bir sıkıntı.
+
+51
+00:07:44,660 --> 00:07:52,660
+Diğer taraftan internette ilk mail alışverişi dönemlerinde oluşturulmuş
+
+52
+00:07:52,660 --> 00:07:59,660
+ve hala da günümüzde pek çok sistemde kullanılan sent mail sunucusu var.
+
+53
+00:07:59,660 --> 00:08:02,660
+Mail almayı ve vermeyi destekliyor.
+
+54
+00:08:02,660 --> 00:08:07,660
+Hem uç kısmı hem server tarafına client hem de server tarafına destekliyor.
+
+55
+00:08:07,660 --> 00:08:18,660
+Bugüne kadar defalarca üzerinden geçilmiş olmasına rağmen yapısal olarak bir takım sıkıntıları var ve bunu kullanan sistemlerin sayısı da az değil.
+
+56
+00:08:18,660 --> 00:08:23,660
+İnternetin temelini oluşturan rehber servisi DNS.
+
+57
+00:08:23,660 --> 00:08:27,660
+Onun en temel implementasyonu.
+
+58
+00:08:27,660 --> 00:08:33,220
+Sürekli açıklar çıkıyor.
+
+59
+00:08:33,220 --> 00:08:38,220
+Protokolün kendisinden kaynaklı, uygulamadan kaynaklı açıklar oluyor.
+
+60
+00:08:38,220 --> 00:08:43,220
+Defalarca güncellenmiş olmasına rağmen yine sıkıntılı.
+
+61
+00:08:43,220 --> 00:08:51,220
+Bir başka şey de saldırganların saldırı yöntemlerini incelemek, öğrenmek, analiz etmek istiyoruz.
+
+62
+00:08:51,220 --> 00:08:53,220
+Tedbir alabilmek için.
+
+63
+00:08:53,220 --> 00:08:56,220
+Onlara tuzak sistemler kurmak istiyoruz.
+
+64
+00:08:56,220 --> 00:08:59,220
+Ancak bu tuzak sistemlerin ele geçeceğini biliyoruz.
+
+65
+00:08:59,220 --> 00:09:02,220
+Fakat ele geçtikleri durumda bizim
+
+66
+00:09:02,220 --> 00:09:07,220
+diğer networklarımıza ulaşmamalarını istiyoruz.
+
+67
+00:09:07,220 --> 00:09:10,220
+Bu da çok kritik bir şey.
+
+68
+00:09:10,220 --> 00:09:21,220
+Öyleyse çok farklı açıdan baktığımızda güvenilmeyen kod parçaları çalıştırmak zorundayız.
+
+69
+00:09:21,220 --> 00:09:23,220
+Bu bir gerçek.
+
+70
+00:09:23,220 --> 00:09:30,220
+Peki bu tarz uygulamaların farkına vardığımızda yani bir uygulama öngörüldüğü şekilde çalışmıyorsa
+
+71
+00:09:30,220 --> 00:09:33,220
+yapabileceğimiz şey çok fazla değil.
+
+72
+00:09:33,220 --> 00:09:35,220
+O uygulamayı sonlandırmak.
+
+73
+00:09:37,220 --> 00:09:39,220
+Bunu hep konuşmuştuk zaten değil mi?
+
+74
+00:09:39,220 --> 00:09:52,220
+Başarısız olan bir buffer overflow saldırısı sonucunda da veya buffer overflow saldırısı yapıldığının fark edilmesi durumunda da çok fazla bir şey değişmiyor.
+
+75
+00:09:52,220 --> 00:09:55,220
+Uygulamayı sonlandırıyoruz.
+
+76
+00:09:55,220 --> 00:09:59,220
+Veya uygulamanın normal bir şekilde sonlandırılmasını sağlayacağız.
+
+77
+00:10:00,220 --> 00:10:05,220
+Ama hep bir kesinti söz konusu.
+
+78
+00:10:05,220 --> 00:10:15,590
+Şimdi arkadaşlar confinement bilişim sistemleri güvenliği açısından bakıldığında
+
+79
+00:10:15,590 --> 00:10:32,970
+bir uygulamanın kötü niyetli bir uygulamanın çalışması gerektiği haricinde çalışan bir uygulamanın çalıştığı sisteminin geri kalanına zarar vermemesi adına
+
+80
+00:10:32,970 --> 00:10:39,970
+sınırlandırılması, kısıt altına alınması, hücre içine sokulması.
+
+81
+00:10:39,970 --> 00:10:42,970
+Confinement'ın anlamı bu.
+
+82
+00:10:42,970 --> 00:10:45,970
+Çok farklı seviyelerde gerçekleştirilebiliyor.
+
+83
+00:10:45,970 --> 00:10:58,659
+Gerçekleştirdiğimiz seviye aslında bizim hassasiyetimizi, hangi hassasiyette bu sınırlamayı gerçekleştirdiğimizi gösteriyor.
+
+84
+00:10:58,659 --> 00:11:03,659
+En temel ve ilk akla gelen yöntem donanım seviyesinde bunu.
+
+85
+00:11:03,659 --> 00:11:16,649
+İşte bakın ortada siyah kalın çizgiyle gösterilmiş bir duvar var gibi düşünün.
+
+86
+00:11:16,649 --> 00:11:20,649
+Aslında ona ne diyoruz biz? Hava boşluğu, air gap.
+
+87
+00:11:20,649 --> 00:11:26,649
+Sol tarafta ve sağ tarafta iki tane bilgisayar sistemi.
+
+88
+00:11:26,649 --> 00:11:33,090
+Birinde bir işletim sistemi, diğerinde bir işletim sistemi çalışıyor.
+
+89
+00:11:33,090 --> 00:11:36,090
+Muhtemelen aynı da olabilir, farklı da olabilir.
+
+90
+00:11:37,090 --> 00:11:40,090
+Çok büyük bir önemi yok.
+
+91
+00:11:40,090 --> 00:11:46,090
+Bir uygulama bir işletim sisteminde, diğer uygulama diğer işletim sisteminde.
+
+92
+00:11:46,090 --> 00:11:53,659
+Ve her bir taraf içinde ayrı bir network görülmüş.
+
+93
+00:11:53,659 --> 00:11:58,659
+Şimdi teoride çok güzel ama pratikte çok sıkıntılı.
+
+94
+00:11:58,659 --> 00:12:04,659
+Birincisi diyelim ki uygulamalardan biri e-mail sistemi, diğeri DNS sistemi.
+
+95
+00:12:04,659 --> 00:12:07,659
+Kurumsal olarak benim internette var olabilmem için,
+
+96
+00:12:07,659 --> 00:12:10,659
+bu iki sistemi de çalıştırmam lazım.
+
+97
+00:12:10,659 --> 00:12:22,659
+Ancak her bir sistemin için farklı bir dış dünyaya, internete bakan network bağlantısı alabilmem, sağlayabilmem çok zor.
+
+98
+00:12:22,659 --> 00:12:28,659
+Yedeklilik açısından iki farklı servis sağlayıcıyla anlaştığımı düşünün, kabul edilebilir bir şey.
+
+99
+00:12:28,659 --> 00:12:32,659
+Ama bende diyelim ki 10 tane bu uygulama çalışıyor.
+
+100
+00:12:32,659 --> 00:12:35,659
+Birincisi 10 tane farklı servis sağlayıcıyı nereden bulacağım?
+
+101
+00:12:35,659 --> 00:12:36,659
+İkincisi 10 tane farklı servis sağlayıcıyı nereden bulacağım?
+
+102
+00:12:36,659 --> 00:12:43,659
+İkincisi 10 tane farklı servis sağlayıcıyla çalışırken bu networkları nasıl yöneteceğim?
+
+103
+00:12:43,659 --> 00:12:51,659
+Üçüncüsü, daha da şeyi, arka tarafta bu sistemlerin içeride bir yerlerde ortak bir şeylere bağlı olması lazım.
+
+104
+00:12:51,659 --> 00:12:57,659
+Hiçbir şey olmasa bile benim yönetebilmem açısından benim bu sistemlere bağlanabiliyor olmam lazım.
+
+105
+00:12:57,659 --> 00:13:00,659
+Sıkıntılardan bir tanesi bu.
+
+106
+00:13:00,659 --> 00:13:05,659
+Diğeri, bu sistemleri kurarken neye göre kuruyoruz?
+
+107
+00:13:05,659 --> 00:13:11,659
+Anlık maksimum ihtiyaca göre, peak demand ona göre kuruyoruz.
+
+108
+00:13:11,659 --> 00:13:18,659
+E şimdi benim mail sistemim sürekli o en tepe ihtiyaçta mı çalışıyor veya DNS sistemi?
+
+109
+00:13:18,659 --> 00:13:19,659
+Hayır.
+
+110
+00:13:19,659 --> 00:13:27,539
+O zaman bu sistemler zamanlarının büyük bir çoğunluğunda atıl kalıyorlar.
+
+111
+00:13:27,539 --> 00:13:36,539
+Memoji kapasitesini, disk kapasitesini, network kapasitesini boşa tutmuş oluyorlar.
+
+112
+00:13:37,539 --> 00:13:39,539
+Boşa para ödemiş oluyor.
+
+113
+00:13:39,539 --> 00:13:49,539
+Bir başka nokta, bunlar diyelim ki benzer işletim sistemleri, hele ki farklılarsa daha da kötü, güncellenmeleri gerekiyor.
+
+114
+00:13:49,539 --> 00:14:00,539
+Güvenlikle alakalı güncelleme, işletim sistemin değişikliğiyle alakalı güncelleme bir tanesinde değil, en tanesinde yapmam lazım.
+
+115
+00:14:00,539 --> 00:14:05,539
+O zaman yönetimsel olarak ciddi anlamda sıkıntı.
+
+116
+00:14:05,539 --> 00:14:06,539
+Ama neyi biliyorum?
+
+117
+00:14:06,539 --> 00:14:14,539
+Şurada gösterdiğim gibi sol taraftaki sisteme kötü niyetli bir program girer ve oranın kontrolünü ele geçirirse,
+
+118
+00:14:14,539 --> 00:14:24,539
+bunun sağ taraftaki sisteme atlayabilmesi, geçebilmesi ihtimali teoride ve pratikte de bu konfigürasyonda yok.
+
+119
+00:14:24,539 --> 00:14:30,539
+Fakat az önce saydığım sebeplerden ötürü çok sıkıntılı bir yapı.
+
+120
+00:14:30,539 --> 00:14:32,539
+Kullanılmış mı? Kullanılmış.
+
+121
+00:14:32,539 --> 00:14:34,539
+Kullanılıyor mu? Evet.
+
+122
+00:14:34,539 --> 00:14:36,539
+Çok özel durumlarda.
+
+123
+00:14:36,539 --> 00:14:41,539
+Bazen buna ihtiyaç duyuyoruz ama her durum için geçerli değil.
+
+124
+00:14:41,539 --> 00:14:46,539
+Bu da zaten güvenlikteki en temel kriterlerden bir tanesi.
+
+125
+00:14:46,539 --> 00:14:52,539
+Ne kadarlık bir değer için güvenlik sağlıyorsunuz?
+
+126
+00:14:52,539 --> 00:14:55,539
+Sağladığınız güvenliğin bedeli ne?
+
+127
+00:14:55,539 --> 00:15:03,539
+Güvenliği sağlamak için harcadığınız bedel, güvenli tutmak için uğraştığınız değerden daha iyi mi?
+
+128
+00:15:03,539 --> 00:15:07,539
+Değerden daha yüksekse o zaman yanlış bir şey yapıyorsunuz demektir.
+
+129
+00:15:07,539 --> 00:15:13,220
+Bunun alternatifi ne?
+
+130
+00:15:13,220 --> 00:15:16,220
+Bunun alternatifi sanal makineler, virtual machine.
+
+131
+00:15:16,220 --> 00:15:27,220
+Aynı donanım, bu donanımın üzerine bir virtual machine monitör, hypervisor, kontrol programı, bir sürü ismi var, bunu yerleştiriyoruz.
+
+132
+00:15:27,220 --> 00:15:31,220
+Tek bir donanımı multiplex ediyoruz.
+
+133
+00:15:31,220 --> 00:15:35,220
+Bu kavramı biliyorsunuz, lojik devrelerden multiplexer, demultiplexer.
+
+134
+00:15:35,220 --> 00:15:42,220
+Yani tek bir network kartı en taneymiş gibi davranıyor, tek bir işlemci en taneymiş gibi davranıyor.
+
+135
+00:15:42,220 --> 00:15:46,220
+Araya bir yazılım katmanı, çok ince bir yazılım katmanı yerleştiriyoruz.
+
+136
+00:15:46,220 --> 00:15:52,220
+Bunun sayesinde üst taraf birden fazla network kartı varmış gibi görüyor.
+
+137
+00:15:52,220 --> 00:15:55,220
+Birden fazla disk kontrolü varmış gibi görüyor.
+
+138
+00:15:55,220 --> 00:15:58,220
+Birden fazla işlemci varmış gibi görüyor.
+
+139
+00:15:58,220 --> 00:16:03,220
+Memori zaten doğası gereği kolay paylaştırılabiliyor.
+
+140
+00:16:03,220 --> 00:16:06,220
+Ama ne yapıyoruz?
+
+141
+00:16:06,220 --> 00:16:14,220
+Bir VM'de bir işletim sisteminde bir uygulama, diğer VM'de diğer bir başka işletim sisteminde diğer bir uygulama.
+
+142
+00:16:14,220 --> 00:16:22,220
+Yani fiziksel olarak aradaki hava boşluğunu, air gap'i sanal bir boşlukla değiştirdik.
+
+143
+00:16:22,220 --> 00:16:25,220
+Benzer bir güvenlik seviyesi sağlıyoruz.
+
+144
+00:16:25,220 --> 00:16:27,220
+Bu yapının avantajı ne?
+
+145
+00:16:27,220 --> 00:16:32,220
+Bu yapının avantajı donanım kaynaklarından daha iyi yararlanabiliyoruz.
+
+146
+00:16:33,220 --> 00:16:36,220
+Donanım atıl kalmıyor.
+
+147
+00:16:36,220 --> 00:16:44,220
+Tabii ki aynı anda çalışacak uygulamaların peak performanslarına, performans ihtiyaçlarına göre de tedbirleri almamız lazım.
+
+148
+00:16:44,220 --> 00:16:50,220
+Bu yapıya geçtiğimiz zaman sanal network yapısına da geçiyoruz.
+
+149
+00:16:50,220 --> 00:16:54,220
+Virtual LAN özellikle local area'da.
+
+150
+00:16:54,220 --> 00:17:01,220
+Aynı network'ü kendi içerisinde network donanım seviyesinde birbirinden izole trafik aktarabilecek şekilde paylaşıyoruz.
+
+151
+00:17:01,220 --> 00:17:02,220
+Aynı network'ü kendi içerisinde network donanım seviyesinde birbirinden izole trafik aktarabilecek şekilde paylaşıyoruz.
+
+152
+00:17:02,220 --> 00:17:04,220
+Aynı network'ü kendi içerisinde network donanım seviyesinde birbirinden izole trafik aktarabilecek şekilde paylaşıyoruz.
+
+153
+00:17:04,220 --> 00:17:14,220
+Yani network taşıyıcısı aynı ama taşınan paketler birbirlerinden izole.
+
+154
+00:17:14,220 --> 00:17:31,220
+Böylece fiziksel altyapıyı çoğullamadan tek bir altyapı üzerinden birden fazla birbirinden izole network paketleri taşıyabilir ve network oluşturabilir hale geliyoruz.
+
+155
+00:17:31,220 --> 00:17:33,220
+Bunun da önünü açıyoruz, güzel bir şey.
+
+156
+00:17:33,220 --> 00:17:38,019
+Ancak hangi seviyedeyiz?
+
+157
+00:17:38,019 --> 00:17:42,019
+İşletim seviyesi seviyesinde izolasyondayız.
+
+158
+00:17:42,019 --> 00:17:48,019
+Uygulama başına bir işletim sistemi, uygulama başına bir VM.
+
+159
+00:17:48,019 --> 00:17:53,019
+Ortak donanım kullandığımız için kaynakları biraz daha iyi kullanmış durumdayız.
+
+160
+00:17:53,019 --> 00:17:57,019
+Ancak yine atıl kalan kaynaklar söz konusu.
+
+161
+00:17:57,019 --> 00:18:02,019
+Daha biraz daha hassas, bir seviye daha hassas.
+
+162
+00:18:03,019 --> 00:18:06,019
+İzolasyon yapabiliriz.
+
+163
+00:18:06,019 --> 00:18:09,019
+Yani proses seviyesinde.
+
+164
+00:18:09,019 --> 00:18:18,019
+Aynı işletim sistemi altında, bu hafta zaten işletim sistemi dersi alanlarınız görecekler, proses konusuna gireceğiz.
+
+165
+00:18:18,019 --> 00:18:26,019
+Aynı işletim sistemi altında çalışan prosesler zaten birbirlerinden memori alanı olarak izole.
+
+166
+00:18:26,019 --> 00:18:32,019
+Geriye network olarak izole edebilirsek,
+
+167
+00:18:32,019 --> 00:18:37,019
+yaptıkları işler açısından izole edebilirsek, güzel bir şey olur.
+
+168
+00:18:37,019 --> 00:18:44,299
+Buradaki yaklaşım işletim sisteminden servis almaları üzerine kurulu.
+
+169
+00:18:44,299 --> 00:18:50,299
+Öğrendik zaten işletim sisteminden servis almanın yolu sistem çağrısı.
+
+170
+00:18:50,299 --> 00:18:55,299
+Bu durumda bir prosesin yaptığı sistem çağrılarını inceleyerek,
+
+171
+00:18:55,299 --> 00:19:02,299
+o prosesin kötü niyetli olup olamayacağını, saldırı yapıp yapamayacağını,
+
+172
+00:19:02,299 --> 00:19:04,299
+anlama şansımız var.
+
+173
+00:19:04,299 --> 00:19:11,299
+İşte proses seviyesindeki kısıtlama bunun üzerine kurulu ve ne isim veriyoruz?
+
+174
+00:19:11,299 --> 00:19:14,299
+System Call Interposition.
+
+175
+00:19:14,299 --> 00:19:23,299
+Bakın burada her uygulamanın etrafında aslında şöyle bir siyah halka var gibi düşünün.
+
+176
+00:19:23,299 --> 00:19:26,299
+Ama bazısını daha çok korumak isteyebiliriz.
+
+177
+00:19:26,299 --> 00:19:31,299
+Bazısını bu örnekte olduğu gibi kenarda bırakabiliriz.
+
+178
+00:19:31,299 --> 00:19:34,299
+İdealde hepsini bu şekilde korumamız lazım.
+
+179
+00:19:34,299 --> 00:19:36,299
+Buna da ne diyoruz?
+
+180
+00:19:36,299 --> 00:19:38,299
+System Call Interposition.
+
+181
+00:19:38,299 --> 00:19:40,299
+Bir alt seviyeye daha inersek,
+
+182
+00:19:40,299 --> 00:19:46,299
+aynı adres space'in içerisinde birden fazla program akışı varsa onlara ne diyorduk?
+
+183
+00:19:46,299 --> 00:19:47,299
+Threat diyorduk.
+
+184
+00:19:47,299 --> 00:19:52,299
+Ayrıntılarını işletim sisteminde daha da fazla göreceğiz, inceleyeceğiz.
+
+185
+00:19:52,299 --> 00:19:56,299
+O zaman da Software Fault Isolation, SFI.
+
+186
+00:19:56,299 --> 00:20:00,299
+System Call Interposition, Software Fault Isolation, SCI ve SFI.
+
+187
+00:20:01,299 --> 00:20:04,299
+Bununla çok yakın bir kavram var.
+
+188
+00:20:04,299 --> 00:20:07,299
+Application Level Confinement.
+
+189
+00:20:07,299 --> 00:20:11,299
+Şimdi Browser'ın içerisinde JavaScript ile uygulama yükleniyor.
+
+190
+00:20:11,299 --> 00:20:13,299
+Uygulama içerisinde uygulama.
+
+191
+00:20:13,299 --> 00:20:18,569
+Threat mantığından çok büyük bir farkı yok.
+
+192
+00:20:18,569 --> 00:20:21,569
+Uygulamanın içerisinde aktif bir akış daha var.
+
+193
+00:20:21,569 --> 00:20:24,569
+Ama o akışın ne olacağını baştan bilmiyorum.
+
+194
+00:20:24,569 --> 00:20:27,569
+Ulaştığım web sayfası bana söylüyor.
+
+195
+00:20:27,569 --> 00:20:31,569
+O zaman da neden bahsediyoruz?
+
+196
+00:20:31,569 --> 00:20:35,569
+Uygulama seviyesinde uygulamalar iç içeyse,
+
+197
+00:20:35,569 --> 00:20:39,569
+işte JavaScript veyahut da WebSM'li örneklerinde olduğu gibi
+
+198
+00:20:39,569 --> 00:20:46,569
+uygulamalar iç içeyse bir uygulama bir başka uygulamanın çalıştırılmasını sağlıyor
+
+199
+00:20:46,569 --> 00:20:49,569
+ama aynı zamanda da sonucunu kullanıyorsa,
+
+200
+00:20:49,569 --> 00:20:52,569
+Browser bunun en güzel örneklerinden bir tanesi.
+
+201
+00:20:52,569 --> 00:21:00,569
+Yine Threat seviyesinde olduğu gibi bir izolasyona ihtiyaç duyuyoruz.
+
+202
+00:21:01,569 --> 00:21:05,569
+Şimdi demek ki bakın Hardware seviyesinde var.
+
+203
+00:21:05,569 --> 00:21:17,099
+Hardware'i Software ile Hardware'miş gibi göstermeyle Virtual Machine sanallaştırma seviyesinde var.
+
+204
+00:21:17,099 --> 00:21:21,099
+Process seviyesinde var. Threat seviyesinde var.
+
+205
+00:21:21,099 --> 00:21:26,099
+Threat seviyesindekine çok benzer bir şekilde uygulama seviyesinde var.
+
+206
+00:21:26,099 --> 00:21:34,039
+Peki bu kısıtlamayı nasıl gerçekleştireceğiz?
+
+207
+00:21:34,039 --> 00:21:36,039
+En temel,
+
+208
+00:21:37,039 --> 00:21:38,039
+parça,
+
+209
+00:21:38,039 --> 00:21:41,039
+bu işlemdeki en temel komponent,
+
+210
+00:21:41,039 --> 00:21:43,039
+Reference Monitor.
+
+211
+00:21:43,039 --> 00:21:53,039
+Reference Monitor uygulamadan çıkan her türlü isteği inceleyen, değerlendiren, kabul eden veya reddeden parça.
+
+212
+00:21:53,039 --> 00:21:58,039
+Bu bir uygulama aslında, kendisi de kod parçası, başka bir şey değil.
+
+213
+00:21:58,039 --> 00:22:04,039
+İşletim sisteminde zaten biz bu kavramı öğrendik. Neydi? Sistem çağrıları.
+
+214
+00:22:04,039 --> 00:22:06,039
+İşletim sisteminden hizmet almak istiyorsak,
+
+215
+00:22:06,039 --> 00:22:08,039
+sistem çağrısı kullanmak zorundayız.
+
+216
+00:22:08,039 --> 00:22:16,039
+Yani aslında işletim sistemine bir Reference Monitor yapacaksak, yapacağımız yer, belirli sistem çağrılarının olduğu yer.
+
+217
+00:22:16,039 --> 00:22:20,039
+Peki bu Reference Monitor'un özelliği ne olmalı?
+
+218
+00:22:20,039 --> 00:22:24,289
+Kesinlikle ve kesinlikle bypass edilememeli.
+
+219
+00:22:24,289 --> 00:22:35,289
+Yani ben sağından, solundan, önünden, arkasından geçip Reference Monitor'u atlatıp bir istekte bulunamamalıyım, uygulama olarak.
+
+220
+00:22:35,289 --> 00:22:36,289
+Bir diğer özellik de,
+
+221
+00:22:36,289 --> 00:22:40,289
+Reference Monitor saldırıya uğrar, bütünlüğü bozulursa,
+
+222
+00:22:40,289 --> 00:22:47,289
+sadece kendisini değil, sistemde o anda çalışmakta olan diğer uygulamaları da sonlandırması lazım.
+
+223
+00:22:47,289 --> 00:22:50,289
+Çünkü Reference Monitor'un ele geçmiş olması demek,
+
+224
+00:22:50,289 --> 00:23:01,289
+artık o noktadan sonra hiçbir şekilde çalışan uygulamaların kötü davranıp davranamayacağını anlayamam demek.
+
+225
+00:23:01,289 --> 00:23:05,289
+Diğer taraftan da, mümkün olduğu kadar küçük olmalı ki,
+
+226
+00:23:05,289 --> 00:23:07,289
+analiz edebilmeliyim.
+
+227
+00:23:07,289 --> 00:23:15,289
+Konuştuğumuz, bugüne kadar öğrendiğimiz güvenlik zafiyetleri var mı yok mu tespit edebilmeliyim.
+
+228
+00:23:15,289 --> 00:23:27,440
+Ona göre güncelleyebilmeliyim ve geçerliliğini, validasyonunu sağlayabilmeliyim.
+
+229
+00:23:27,440 --> 00:23:46,059
+Şimdi, ilk confinement, kısıtlama yöntemlerinden bir tanesi,
+
+230
+00:23:46,059 --> 00:23:47,059
+Change Route.
+
+231
+00:23:47,059 --> 00:23:58,160
+[öğrenci]'in kendisiyle alakalı,
+
+232
+00:23:59,160 --> 00:24:05,160
+olsa gerek, yani ben her zamanki gibi bağlayayım ama daha yoğun kullanılıyorsa,
+
+233
+00:24:05,160 --> 00:24:09,160
+benden de olabilir, senden de olabilir, genel yükten de olabilir,
+
+234
+00:24:09,160 --> 00:24:14,160
+ses kesiliyordur, ona ne yapabiliriz bilmiyorum.
+
+235
+00:24:14,160 --> 00:24:19,160
+Biraz daha bir devam edelim, eğer kesintiye devam ediyorsa, olmadı ara veririz.
+
+236
+00:24:19,160 --> 00:24:23,160
+Yani çok anlaşılmaz bir hale geliyorsa, olmadı ara veririz.
+
+237
+00:24:23,160 --> 00:24:31,990
+Diğer arkadaşlarda da benzer şekilde mi bilmiyorum ama.
+
+238
+00:24:31,990 --> 00:24:32,990
+Ne dedim?
+
+239
+00:24:32,990 --> 00:24:38,990
+En eski, en temel kısıtlama yöntemlerinden bir tanesi,
+
+240
+00:24:38,990 --> 00:24:40,990
+Change Route.
+
+241
+00:24:40,990 --> 00:24:45,990
+Bu bir komut ama aynı zamanda arka tarafta da bir sistem çağrısı.
+
+242
+00:24:45,990 --> 00:24:52,690
+Dosya sisteminde başlangıç noktasını değiştirmek demek.
+
+243
+00:24:52,690 --> 00:25:00,690
+Route kavramı, Unix'te dosya sisteminde başlangıç noktasını gösterdiği gibi,
+
+244
+00:25:00,690 --> 00:25:03,690
+sistemdeki en yetkili kullanıcıyı da gösteriyor.
+
+245
+00:25:03,690 --> 00:25:07,690
+O yüzden iki kavram birbiriyle karışmamalı.
+
+246
+00:25:07,690 --> 00:25:10,690
+Burada dosya sisteminden bahsediyoruz.
+
+247
+00:25:10,690 --> 00:25:16,690
+Ancak Change Route komutunu, dolayısıyla sistem çağrısını kullanabilmem için,
+
+248
+00:25:16,690 --> 00:25:19,690
+aynı zamanda Route kullanıcısı olmam lazım.
+
+249
+00:25:19,690 --> 00:25:22,690
+Sıradan bir kullanıcının bunun kullanma hakkı yok.
+
+250
+00:25:22,690 --> 00:25:26,690
+Neden olmadığını bir iki slide sonraki örnekte göreceğiz.
+
+251
+00:25:26,690 --> 00:25:31,690
+Şimdi bakın, kullanıcı Route kullanıcısı ne yapıyor?
+
+252
+00:25:31,690 --> 00:25:39,690
+Change Route ile TMP Guest dizinini başlangıç dizini olarak belirliyor.
+
+253
+00:25:39,690 --> 00:25:42,690
+Sonrasında Switch User Guest diyor.
+
+254
+00:25:42,690 --> 00:25:48,690
+Geçen hafta anlattıklarımdan ötürü artık bunun ne olduğunu çok rahat anlıyorsunuzdur.
+
+255
+00:25:48,690 --> 00:25:50,690
+Effective User ID'yi değiştirdi.
+
+256
+00:25:50,690 --> 00:25:54,690
+Mevcut prosesteki Effective User ID'yi ne ile değiştirdi?
+
+257
+00:25:54,690 --> 00:25:57,690
+Guest kullanıcısının User ID'si ile değiştirdi.
+
+258
+00:25:57,690 --> 00:26:00,690
+Effective User ID'nin amacı ve anlamı neydi?
+
+259
+00:26:01,690 --> 00:26:07,690
+Bütün erişimlerde, bütün akses kontrol mekanizmalarında yetkilendirme,
+
+260
+00:26:07,690 --> 00:26:10,690
+authorization onun üzerinden yapılıyordu.
+
+261
+00:26:10,690 --> 00:26:17,690
+Yani artık bu sejin Guest kullanıcısı gibi davranıyor.
+
+262
+00:26:17,690 --> 00:26:21,690
+Switch User'ın da arka tarafta nesi var?
+
+263
+00:26:21,690 --> 00:26:23,690
+Bir sistem çağrısı var.
+
+264
+00:26:23,690 --> 00:26:25,690
+Aslında yaptığı şey ne?
+
+265
+00:26:25,690 --> 00:26:27,690
+Set Effective User ID.
+
+266
+00:26:27,690 --> 00:26:29,690
+Set UI'de.
+
+267
+00:26:29,690 --> 00:26:33,089
+Güzel.
+
+268
+00:26:33,089 --> 00:26:35,089
+Sistemin çalışması çok basit.
+
+269
+00:26:35,089 --> 00:26:43,089
+İşletim sistemi her proses için Change Root ile verilmiş olan directory bilgisini
+
+270
+00:26:43,089 --> 00:26:46,089
+prosesle alakalı kontrol bloğunda tutuyor.
+
+271
+00:26:46,089 --> 00:26:56,089
+Ve prosesten gelen bütün dosya isimlerinin başına bu bilgiyi otomatik olarak ekliyor.
+
+272
+00:26:56,089 --> 00:27:01,089
+Bakın, prosesten fopen etc passwd gelmiş.
+
+273
+00:27:01,089 --> 00:27:02,089
+O onu neye dönüştürmüş?
+
+274
+00:27:02,089 --> 00:27:05,089
+tmp, guest, etc, passwd diye.
+
+275
+00:27:05,089 --> 00:27:16,089
+Böylece bütün erişimler Change Root ile belirtilmiş dizinin altında gerçekleşmek zorunda.
+
+276
+00:27:16,089 --> 00:27:18,089
+Bu sağlanmış oluyor.
+
+277
+00:27:18,089 --> 00:27:22,089
+İşte bir web server ise eğer bu proses,
+
+278
+00:27:22,089 --> 00:27:29,089
+file sistem olarak şu anda belirlemiş olduğum sınırların dışına çıkamıyor.
+
+279
+00:27:29,089 --> 00:27:32,579
+Ancak şöyle düşünün.
+
+280
+00:27:32,579 --> 00:27:43,500
+Command Line Interface, shell, benim bir takım işleri yapabilmemi sağlıyor ama çoğunlukla program çalıştırıyorum.
+
+281
+00:27:43,500 --> 00:27:51,500
+Yani bazı komutlar built-in ama bazı komutlar executable, yüklenmesi gerekiyor.
+
+282
+00:27:51,500 --> 00:27:55,500
+Unix mantığıyla düşünecek olursak, bunlar,
+
+283
+00:27:55,500 --> 00:28:02,500
+slash bin directory'sinde, slash usr slash bin directory'sinde, slash s bin directory'sinde,
+
+284
+00:28:02,500 --> 00:28:06,500
+slash usr slash s bin directory'sinde.
+
+285
+00:28:06,500 --> 00:28:14,500
+Peki ben bir prosesin başlangıç noktasını, file sistemdeki başlangıç noktasını değiştirdiğimde,
+
+286
+00:28:14,500 --> 00:28:17,500
+bu az önce söylediğim directory'lere erişim ne oluyor?
+
+287
+00:28:17,500 --> 00:28:19,500
+İptal oluyor.
+
+288
+00:28:19,500 --> 00:28:27,500
+O zaman o prosesin en temel bir takım komutları çalıştırabilmesi için,
+
+289
+00:28:27,500 --> 00:28:31,500
+bu komutların oluştuğunu,
+
+290
+00:28:31,500 --> 00:28:35,500
+o yeni alanın içerisine uygun directory yapısıyla,
+
+291
+00:28:35,500 --> 00:28:37,500
+dizin yapısıyla kopyalanması lazım.
+
+292
+00:28:37,500 --> 00:28:42,500
+Ya da bunlara sembolik linkler verilmesi lazım.
+
+293
+00:28:42,500 --> 00:28:44,500
+İşte bunu kolaylaştırmak için,
+
+294
+00:28:44,500 --> 00:28:48,500
+jail kit diye bir araç yazılmış, tool.
+
+295
+00:28:48,500 --> 00:28:51,500
+Bunlar bir scriptler bütünü aslında.
+
+296
+00:28:51,500 --> 00:28:54,500
+jk init, jk check.
+
+297
+00:28:54,500 --> 00:28:58,500
+Bir de restricted, basit bir local shell var.
+
+298
+00:28:58,500 --> 00:29:00,500
+Temel shell komutlarının,
+
+299
+00:29:01,500 --> 00:29:05,500
+bütün komutlar olamaz çünkü hepsini kopyalarsanız bir anlamı olmaz.
+
+300
+00:29:05,500 --> 00:29:08,500
+Temel shell komutlarının çalıştırılabildiği bir yapı.
+
+301
+00:29:08,500 --> 00:29:12,500
+Yani kullanıcıyı, dolayısıyla da prosesi,
+
+302
+00:29:12,500 --> 00:29:16,500
+file system erişimi açısından kısıtlamış oluyoruz.
+
+303
+00:29:16,500 --> 00:29:19,500
+Ancak dikkat edin, aşağıda ne yazıyor?
+
+304
+00:29:19,500 --> 00:29:23,500
+Simple change root jail does not limit network access.
+
+305
+00:29:23,500 --> 00:29:29,500
+Network erişimini bu ch root ile gerçekleştirmemiz mümkün değil.
+
+306
+00:29:29,500 --> 00:29:33,359
+Başlangıçta bu.
+
+307
+00:29:33,359 --> 00:29:35,359
+İlk implement edildiğinde,
+
+308
+00:29:35,359 --> 00:29:38,359
+şu özellik unutulmuş, atlanmış.
+
+309
+00:29:38,359 --> 00:29:41,359
+Nokta nokta bölü işareti.
+
+310
+00:29:41,359 --> 00:29:42,359
+Dot dot slash.
+
+311
+00:29:42,359 --> 00:29:44,359
+Ne oluyor? Bir üste çıkmayı gösteriyor.
+
+312
+00:29:44,359 --> 00:29:46,359
+Bir üste referans veriyor.
+
+313
+00:29:46,359 --> 00:29:48,359
+Saldırganlarda ne yapıyorlar?
+
+314
+00:29:48,359 --> 00:29:51,359
+ETC password deniyor.
+
+315
+00:29:51,359 --> 00:29:53,359
+Acaba kaçıncı seviyededir?
+
+316
+00:29:53,359 --> 00:29:58,359
+Bir seviye mi içeriye sıkıştırıldım, iki seviye mi, üç seviye mi?
+
+317
+00:29:58,359 --> 00:30:01,359
+TMP guest'i bildiğimiz için iki seviye.
+
+318
+00:30:01,359 --> 00:30:08,359
+O yüzden dot dot slash, dot dot slash, ETC password'i diyerek
+
+319
+00:30:08,359 --> 00:30:10,359
+otomatikman bakın,
+
+320
+00:30:10,359 --> 00:30:14,359
+başına TMP guest eklenmesine rağmen
+
+321
+00:30:14,359 --> 00:30:18,359
+sistemdeki gerçek ETC password'e erişim sağlanmış oluyor.
+
+322
+00:30:18,359 --> 00:30:22,359
+Tabii ki bu durumun farkına varılınca
+
+323
+00:30:22,359 --> 00:30:30,359
+kernel'da ilgili düzenleme yapılıyor ve bu dot dot slash yapısının
+
+324
+00:30:30,359 --> 00:30:36,369
+filtrelenmesi sağlanıyor.
+
+325
+00:30:36,369 --> 00:30:42,369
+Az önce size change root sadece ve sadece root tarafından çalıştırılmalı dedim ya.
+
+326
+00:30:42,369 --> 00:30:45,369
+Normal bir kullanıcı tarafından çalıştırılmamalı.
+
+327
+00:30:45,369 --> 00:30:47,369
+Birazdan örneğini göreceğiz.
+
+328
+00:30:47,369 --> 00:30:52,130
+Atrix bir Unix varyantı.
+
+329
+00:30:52,130 --> 00:30:54,130
+Orada bunu atlıyorlar.
+
+330
+00:30:54,130 --> 00:30:58,130
+Change root normal bir kullanıcı tarafından çalıştırılabilir oluyor.
+
+331
+00:30:58,130 --> 00:31:01,130
+Bakın kullanıcının yaptığı şey şu.
+
+332
+00:31:01,130 --> 00:31:04,130
+Kendisinde AAA diye bir direktör oluşturuyor.
+
+333
+00:31:04,130 --> 00:31:09,440
+Altında ETC direktörü, altında da PES-VD dosyası.
+
+334
+00:31:09,440 --> 00:31:12,440
+Standart PES-VD dosyası formatında
+
+335
+00:31:12,440 --> 00:31:15,440
+root kullanıcısı için de tanım ekliyor.
+
+336
+00:31:15,440 --> 00:31:18,440
+Sonra change root AAA diyor.
+
+337
+00:31:18,440 --> 00:31:23,440
+Artık kendisi için file sistemin başlangıcını AAA direktörüsü yaptı.
+
+338
+00:31:23,440 --> 00:31:26,440
+Onun içerisinde ETC ve PES-VD var.
+
+339
+00:31:26,440 --> 00:31:31,490
+Sonra da switch user root diyor.
+
+340
+00:31:31,490 --> 00:31:34,490
+Kimin bilgileriyle karşılaştırılıp kontrol edilecek?
+
+341
+00:31:34,490 --> 00:31:37,490
+ETC PES-VD'de yer alan root bilgileriyle.
+
+342
+00:31:37,490 --> 00:31:42,490
+ETC PES-VD'ye eriştiğinde de kendi verdiği ETC PES-VD'ye erişilecek.
+
+343
+00:31:42,490 --> 00:31:45,490
+Verdiği, oraya girdiği şifreyi
+
+344
+00:31:45,490 --> 00:31:49,490
+ESU root komut satırından sonrasında da verdiğinde
+
+345
+00:31:49,490 --> 00:31:52,490
+sistemde root yetkisine sahip oluyor.
+
+346
+00:31:52,490 --> 00:31:56,490
+Demek ki change root'un sadece ve sadece
+
+347
+00:31:56,490 --> 00:31:59,490
+root tarafından kullanılması,
+
+348
+00:31:59,490 --> 00:32:03,490
+normal kullanıcılar tarafından kullanılmaması lazım.
+
+349
+00:32:03,490 --> 00:32:08,150
+Root'u root olarak change root'la kısıtlamak,
+
+350
+00:32:09,150 --> 00:32:13,150
+yani change root yaptıktan sonra root kullanıcısı olarak çalışmaya devam etmek
+
+351
+00:32:13,150 --> 00:32:15,150
+çok anlamlı değil.
+
+352
+00:32:15,150 --> 00:32:18,150
+Çünkü root olarak oluşturulan
+
+353
+00:32:18,150 --> 00:32:22,150
+bu jail, hücre ortamından çıkmanın yolları var.
+
+354
+00:32:22,150 --> 00:32:26,150
+Veyahut da root olduğumuz için sisteme
+
+355
+00:32:26,150 --> 00:32:29,150
+başka türlü zarar vermenin yolları var.
+
+356
+00:32:29,150 --> 00:32:31,150
+Mesela sistemi restart edebilirsiniz.
+
+357
+00:32:31,150 --> 00:32:34,150
+Veya root olduğunuz için
+
+358
+00:32:34,150 --> 00:32:38,150
+1024 ve altındaki portlar, özel portlar diye network portları onlara
+
+359
+00:32:38,150 --> 00:32:42,150
+bağlanıp onlar üzerinde haberleşme yapabilirsiniz.
+
+360
+00:32:42,150 --> 00:32:45,150
+Veya root ortamı içerisindesiniz,
+
+361
+00:32:45,150 --> 00:32:48,150
+change root ortamı içerisindesiniz ama
+
+362
+00:32:48,150 --> 00:32:52,150
+bu ortamın dışındaki proseslerle haberleşebilirsiniz.
+
+363
+00:32:52,150 --> 00:32:59,150
+Yani aslında change root ile file sistemde kısıtlama yaptıktan sonra
+
+364
+00:32:59,150 --> 00:33:03,150
+effective user id de değiştirmeniz en doğrusu.
+
+365
+00:33:03,150 --> 00:33:06,150
+Best practice. Öyle düşünün.
+
+366
+00:33:06,150 --> 00:33:09,299
+FreeBSD'yi biliyoruz.
+
+367
+00:33:10,299 --> 00:33:12,299
+O da bir Unix varyantı.
+
+368
+00:33:12,299 --> 00:33:17,299
+İşte System 4, System 5, AT&T, BirdB, FreeBSD tarafı.
+
+369
+00:33:17,299 --> 00:33:24,299
+Onun da şu anda günümüzdeki lisans sıkıntısı olmayan versiyonu FreeBSD.
+
+370
+00:33:24,299 --> 00:33:29,299
+Burada change root'a göre daha güçlü bir mekanizma var.
+
+371
+00:33:29,299 --> 00:33:36,299
+Sadece kısıtlama değil, network açısından da kısıtlama getiren bir yapı.
+
+372
+00:33:36,299 --> 00:33:38,299
+Adına da jail diyorlar.
+
+373
+00:33:38,299 --> 00:33:40,299
+Bakın birinci parametre,
+
+374
+00:33:40,299 --> 00:33:43,299
+file sistemde nereye kısıtlanacağı.
+
+375
+00:33:43,299 --> 00:33:45,299
+İkinci parametre,
+
+376
+00:33:45,299 --> 00:33:52,299
+kendisine bu ortamda çalıştırılacak olan şu cmd olarak çalıştırılacak
+
+377
+00:33:52,299 --> 00:33:58,299
+prosese hostname olarak hangi ismin geri döndürüleceği.
+
+378
+00:33:58,299 --> 00:34:02,299
+Üçüncü parametre de hangi ip adresini kullanabileceği.
+
+379
+00:34:02,299 --> 00:34:08,300
+Hostname ve ip adresinin sistem seviyesinde tanımlı olması lazım.
+
+380
+00:34:08,300 --> 00:34:22,300
+Komut yani hem file sistem açısından hem de network açısından kısıtlanmış bir ortamda oluşturulan bir proses olarak çalışıyor.
+
+381
+00:34:22,300 --> 00:34:36,960
+Bunu root olarak kullanırsanız yani efektif user id değiştirmezseniz zararı en aza indirmek için root açısından da birtakım kısıtlar getirilmiş durumda.
+
+382
+00:34:36,960 --> 00:34:38,960
+Örneğin root kullanıcısı.
+
+383
+00:34:38,960 --> 00:34:43,960
+Bu şekilde bir jail ortamında ise o oluşturduğu proses.
+
+384
+00:34:43,960 --> 00:34:49,960
+O proses içerisinden kernel modüllerini yükleyemiyorsunuz.
+
+385
+00:34:49,960 --> 00:34:53,960
+Hani öğrendik ya bu modüler kernel yapısı vardı.
+
+386
+00:34:53,960 --> 00:34:59,960
+Kernel modülleri yükleyip kernel'ın özelliğini arttırıyorduk, azaltıyorduk falan şey yapıyorduk.
+
+387
+00:34:59,960 --> 00:35:03,340
+Onu yapamıyorsunuz.
+
+388
+00:35:03,340 --> 00:35:05,340
+Şimdi change root veya jail.
+
+389
+00:35:05,340 --> 00:35:08,340
+Problemler aslında ortada.
+
+390
+00:35:08,340 --> 00:35:10,340
+Birincisi ya hep
+
+391
+00:35:10,340 --> 00:35:12,340
+ya hiç mantığıyla çalışıyor.
+
+392
+00:35:12,340 --> 00:35:16,739
+Her uygulama için uygun değil bu açıdan.
+
+393
+00:35:16,739 --> 00:35:20,739
+Örneğin Gmail'i browser'dan kullanıyorsunuz.
+
+394
+00:35:20,739 --> 00:35:22,739
+Attachment ekleyeceksiniz.
+
+395
+00:35:22,739 --> 00:35:30,739
+Siz browser'ınızı jail change root hücresinde çalıştırıyorsunuz.
+
+396
+00:35:30,739 --> 00:35:36,739
+Ama ekleyeceğiniz uzantı veya ekleyeceğiniz dosya jail'in hücrenin dışında.
+
+397
+00:35:36,739 --> 00:35:38,739
+Sıkıntı.
+
+398
+00:35:38,739 --> 00:35:40,739
+Sadece change root kullanıyorsak.
+
+399
+00:35:41,739 --> 00:35:44,739
+Network gelişimini kısıtlamıyoruz.
+
+400
+00:35:44,739 --> 00:35:47,739
+Change root'un böyle bir özelliği yok.
+
+401
+00:35:47,739 --> 00:35:49,739
+Root olarak bırakıyorsak.
+
+402
+00:35:49,739 --> 00:35:51,739
+Effective user id'yi değiştirmiyorsak.
+
+403
+00:35:51,739 --> 00:36:02,019
+Yine root olunduğu için yapılan saldırı root yetkisinde kontrolün ele geçmesini engellemiyor.
+
+404
+00:36:02,019 --> 00:36:07,019
+O yüzden demek ki change root ve jail'i bilelim.
+
+405
+00:36:07,019 --> 00:36:09,019
+Yeri geldiğinde kullanalım.
+
+406
+00:36:09,019 --> 00:36:12,019
+Kullanırken de mutlaka effective user id değişecek şekilde kullanalım.
+
+407
+00:36:12,019 --> 00:36:17,019
+File sistem açısından kısıtlama getirdiğimizi bilelim.
+
+408
+00:36:17,019 --> 00:36:21,019
+Ama şunu da bilelim ki bunları kullandık.
+
+409
+00:36:21,019 --> 00:36:23,019
+İşte tamam iş bitti.
+
+410
+00:36:23,019 --> 00:36:25,019
+Güvenliyiz.
+
+411
+00:36:25,019 --> 00:36:26,019
+Harika.
+
+412
+00:36:26,019 --> 00:36:27,019
+Her şey çözüldü.
+
+413
+00:36:27,019 --> 00:36:28,019
+Yok öyle bir şey.
+
+414
+00:36:28,019 --> 00:36:32,650
+Şimdi.
+
+415
+00:36:32,650 --> 00:36:37,650
+Proses seviyesinde izolasyona bakacağız.
+
+416
+00:36:37,650 --> 00:36:40,650
+Yani system call interposition'a bakacağız.
+
+417
+00:36:40,650 --> 00:36:42,650
+Send boxing'i ben size söylemiştim.
+
+418
+00:36:44,650 --> 00:36:46,650
+Kum havuzu.
+
+419
+00:36:46,650 --> 00:36:54,650
+Yani bu patlayıcıların denenmesinde falan da ortaya çıkacak zararın en aza indirilmesi.
+
+420
+00:36:54,650 --> 00:36:57,650
+O patlama anındaki enerjinin sönümlendirilmesi için.
+
+421
+00:36:57,650 --> 00:37:02,650
+Burada da saldırganın saldıracağını, başarılı olabileceğini biliyoruz.
+
+422
+00:37:02,650 --> 00:37:09,650
+Ama işte o saldırının etkisinin sönümlendirilmesi, en aza indirilmesi diye düşünüyorum.
+
+423
+00:37:09,650 --> 00:37:16,059
+POSIX'i konuştuk.
+
+424
+00:37:16,059 --> 00:37:17,059
+Ne olduğunu biliyorsunuz.
+
+425
+00:37:17,059 --> 00:37:23,059
+Hani API'ler açısından Windows 32 API dedik, POSIX API dedik, Java API dedik.
+
+426
+00:37:23,059 --> 00:37:25,059
+Şimdi burada POSIX üzerinden gideceğiz.
+
+427
+00:37:25,059 --> 00:37:27,059
+En yaygın olanı o çünkü.
+
+428
+00:37:27,059 --> 00:37:32,059
+POSIX'te binlerce sistem çağrısı var.
+
+429
+00:37:32,059 --> 00:37:43,059
+Ama bu sistem çağrılarını incelediğimizde sistemde kalıcı ve zararlı etkiye sahip olabilecek çok az sayıda sistem çağrısı görüyoruz.
+
+430
+00:37:43,059 --> 00:37:45,059
+Unlink.
+
+431
+00:37:45,059 --> 00:37:46,059
+Bir şeyin silinmesi anlamında.
+
+432
+00:37:46,059 --> 00:37:48,059
+Bir şeyin silinmesi anlamına geliyor.
+
+433
+00:37:48,059 --> 00:37:51,059
+Bağlantıyı kopartmak, yani silmek.
+
+434
+00:37:51,059 --> 00:37:52,059
+Open.
+
+435
+00:37:52,059 --> 00:37:59,059
+Yazma modunda, overwrite modunda veya append ekleme modunda açarsam tehlikeli olabilir.
+
+436
+00:37:59,059 --> 00:38:00,059
+Write.
+
+437
+00:38:00,059 --> 00:38:02,059
+Doğrudan yazma.
+
+438
+00:38:02,059 --> 00:38:08,059
+Network açısından, soket network bağlantısını kurabilmenin başlangıç noktası.
+
+439
+00:38:08,059 --> 00:38:10,059
+File pointer gibi.
+
+440
+00:38:10,059 --> 00:38:12,059
+Bind ve connect.
+
+441
+00:38:12,059 --> 00:38:15,059
+Biri server tarafında, biri client tarafında.
+
+442
+00:38:15,059 --> 00:38:18,059
+Soketle ilişkiyi sağlamak, bağlantıyı sağlamak.
+
+443
+00:38:18,059 --> 00:38:22,059
+Send de network açısından write demek.
+
+444
+00:38:22,059 --> 00:38:37,780
+Diyorlar ki, prosesleri bu tehlikeli sistem çağrılarını gözleyecek şekilde denetim altına alalım.
+
+445
+00:38:37,780 --> 00:38:42,780
+Bunlardan herhangi birini yaparlarsa, parametrelerini inceleyelim.
+
+446
+00:38:42,780 --> 00:38:46,780
+Veya o prosesin yapısından dolayı hiç böyle bir sistem çağrısı olmayabilir.
+
+447
+00:38:46,780 --> 00:38:49,780
+Hiç böyle bir sistem çağrısı yapmaması gerekiyorsa,
+
+448
+00:38:49,780 --> 00:38:57,320
+parametresinden bağımsız olarak yaptığı için, o sistem çağrısını yaptığı için,
+
+449
+00:38:57,320 --> 00:39:01,320
+ya sistem çağrısını durduralım ya da prosesi sonlandıralım.
+
+450
+00:39:01,320 --> 00:39:04,320
+Tabii ki burada bir olgunlaşma süreci var.
+
+451
+00:39:04,320 --> 00:39:09,320
+Tahmin edeceğiniz üzere başlangıçtaki sistemler,
+
+452
+00:39:09,320 --> 00:39:12,320
+prosesi durdurma üzerine kurulu.
+
+453
+00:39:12,320 --> 00:39:14,320
+Yani yine ne oluyor?
+
+454
+00:39:14,320 --> 00:39:17,320
+Hatayı gördüm, gördüğüm anda prosesi,
+
+455
+00:39:18,320 --> 00:39:20,320
+sonlandırıyorum.
+
+456
+00:39:20,320 --> 00:39:22,320
+Denial of Service.
+
+457
+00:39:22,320 --> 00:39:24,320
+Hep o aklınızın bir kenarında kalsın.
+
+458
+00:39:24,320 --> 00:39:31,780
+Saldırgan bir türlü başarılı olmazsa, öbür türlü başarılı olmuş olabiliyor aslında.
+
+459
+00:39:31,780 --> 00:39:34,780
+Üç farklı şekilde implement ediliyor.
+
+460
+00:39:34,780 --> 00:39:40,510
+Şimdi tamamen Kernel'de implement edebiliriz.
+
+461
+00:39:40,510 --> 00:39:44,510
+Tamamen User, yani Kernel Space'de yapabiliriz.
+
+462
+00:39:44,510 --> 00:39:46,510
+Tamamen User Space'de yapabiliriz.
+
+463
+00:39:46,510 --> 00:39:49,510
+İkisinin karışımı, Systrace.
+
+464
+00:39:49,510 --> 00:39:51,510
+Systrace,
+
+465
+00:39:52,510 --> 00:39:56,510
+şu anda Linux sistemlerinin yaygınlığından ötürü
+
+466
+00:39:56,510 --> 00:40:01,510
+ve Linux sistemlerinde SecComp yapısı
+
+467
+00:40:01,510 --> 00:40:03,510
+gündeme geldiği için
+
+468
+00:40:03,510 --> 00:40:06,510
+biraz geri planda kaldı ama
+
+469
+00:40:06,510 --> 00:40:09,510
+aslında SecComp'un başlangıcı Systrace.
+
+470
+00:40:09,510 --> 00:40:11,510
+Öyle düşünebilirsiniz.
+
+471
+00:40:11,510 --> 00:40:14,510
+Systrace'deki bir komponenti
+
+472
+00:40:14,510 --> 00:40:18,510
+User Space'den çıkartıp tamamen nereye yerleştiriyoruz?
+
+473
+00:40:18,510 --> 00:40:20,510
+Kernel Space'e yerleştiriyoruz.
+
+474
+00:40:20,510 --> 00:40:22,510
+Performanstan ötürü.
+
+475
+00:40:22,510 --> 00:40:26,510
+Şimdi anlatırken daha iyi anlayacaksınız.
+
+476
+00:40:26,510 --> 00:40:31,510
+User Space'e de, User Space'de bunun yapılmasına da Program Shepherding.
+
+477
+00:40:31,510 --> 00:40:33,510
+Shepherd, Çoban.
+
+478
+00:40:33,510 --> 00:40:35,510
+Yani programın güdülmesi.
+
+479
+00:40:35,510 --> 00:40:37,510
+Shepherding, gütme.
+
+480
+00:40:37,510 --> 00:40:40,510
+Programı yaptığı hareketler açısından
+
+481
+00:40:40,510 --> 00:40:45,510
+böyle çoban nasıl koyunları, keçileri, kuzuları şey yaparsa
+
+482
+00:40:45,510 --> 00:40:48,510
+derli toplu tutmaya çalışırsa
+
+483
+00:40:48,510 --> 00:40:50,510
+burada da programı derli toplu tutmaya çalışıyoruz.
+
+484
+00:40:50,510 --> 00:40:51,510
+Yanlış.
+
+485
+00:40:51,510 --> 00:40:57,840
+Yanlış, kötü bir şey yapmasın diye.
+
+486
+00:40:57,840 --> 00:40:58,840
+Şimdi bu kavram çok eski.
+
+487
+00:40:58,840 --> 00:41:01,840
+Bakın 96.
+
+488
+00:41:01,840 --> 00:41:03,840
+James.
+
+489
+00:41:03,840 --> 00:41:07,840
+Bu bir mitolojideki tanrı.
+
+490
+00:41:07,840 --> 00:41:10,840
+Oradan alıyor ismini.
+
+491
+00:41:10,840 --> 00:41:16,429
+Ve her şeyi izliyor, gözetliyor.
+
+492
+00:41:16,429 --> 00:41:21,429
+Olayın temelinde Petra sistem çaresi var.
+
+493
+00:41:21,429 --> 00:41:28,739
+Unix sistemlerinde, Linux'ta istisna değil,
+
+494
+00:41:28,739 --> 00:41:33,739
+bir prosesin izlenmesi, debug amacıyla izlenmesi için
+
+495
+00:41:33,739 --> 00:41:36,739
+oluşturulmuş Petra sistem çaresi var.
+
+496
+00:41:36,739 --> 00:41:38,739
+Ona bağlı da komut var.
+
+497
+00:41:38,739 --> 00:41:40,739
+Yaptığı şey çok basit.
+
+498
+00:41:40,739 --> 00:41:45,739
+Şimdi bir izlediğimiz uygulama var, bir de izleyen uygulama.
+
+499
+00:41:45,739 --> 00:41:48,739
+Monitored Application, Monitor.
+
+500
+00:41:48,739 --> 00:41:50,739
+Burada Monitored Application neymiş?
+
+501
+00:41:50,739 --> 00:41:51,739
+Browser'mış.
+
+502
+00:41:51,739 --> 00:41:53,739
+Kenarda da bir monitor var.
+
+503
+00:41:53,739 --> 00:41:56,739
+Monitor, Petra istiyor.
+
+504
+00:41:56,739 --> 00:42:01,980
+Browser'ın Process ID'sini veriyor.
+
+505
+00:42:01,980 --> 00:42:05,980
+Ve artık onunla ilişkilendirilmiş oluyor.
+
+506
+00:42:05,980 --> 00:42:08,980
+Tabi yetki seviyesi falan yeterli olacak.
+
+507
+00:42:08,980 --> 00:42:10,980
+Onların olduğunu kabul edelim.
+
+508
+00:42:10,980 --> 00:42:14,980
+Sonrasında da monitor uykuya dalıyor.
+
+509
+00:42:14,980 --> 00:42:20,119
+Ne zamana kadar?
+
+510
+00:42:20,119 --> 00:42:23,119
+Browser bir sistem çaresi yapana kadar.
+
+511
+00:42:23,119 --> 00:42:26,119
+Browser sistem çaresi yaptığında,
+
+512
+00:42:26,119 --> 00:42:28,119
+şurada gördüğünüz gibi,
+
+513
+00:42:28,119 --> 00:42:32,969
+şurada gördüğünüz gibi,
+
+514
+00:42:32,969 --> 00:42:36,969
+Open'la sistem çaresi yaptığında,
+
+515
+00:42:36,969 --> 00:42:43,340
+işte ETC, PassWD, Read yönünde.
+
+516
+00:42:43,340 --> 00:42:45,340
+Sisteme giriliyor, Kernel'a giriliyor.
+
+517
+00:42:45,340 --> 00:42:47,340
+Kernel bakıyor,
+
+518
+00:42:47,340 --> 00:42:50,340
+Browser'la Petra olarak ilişkilendirilmiş
+
+519
+00:42:50,340 --> 00:42:52,340
+monitor uygulaması var.
+
+520
+00:42:52,340 --> 00:42:55,340
+Bu sistem çaresini gerçekleştirmeden,
+
+521
+00:42:55,340 --> 00:43:03,690
+ben gelen sistem çaresinin ne olduğunu ve parametrelerini
+
+522
+00:43:03,690 --> 00:43:04,690
+monitor uygulamasına alıyorum.
+
+523
+00:43:04,690 --> 00:43:06,690
+Monitor uygulamasına aktarayım diyor.
+
+524
+00:43:06,690 --> 00:43:08,690
+Nokta nokta aktarıyor.
+
+525
+00:43:08,690 --> 00:43:12,690
+Monitor uygulaması kendisine gelen veriyi kontrol ediyor.
+
+526
+00:43:12,690 --> 00:43:14,690
+Buna göre,
+
+527
+00:43:14,690 --> 00:43:18,690
+uygun mudur, değil midir diye karar veriyor ve
+
+528
+00:43:18,690 --> 00:43:20,690
+ya tamam diyor, devam edebilir diyor.
+
+529
+00:43:20,690 --> 00:43:22,690
+Ya da,
+
+530
+00:43:22,690 --> 00:43:26,000
+Browser'ı kile diyor.
+
+531
+00:43:26,000 --> 00:43:28,000
+Dikkat edin, Browser'ı kile diyor.
+
+532
+00:43:28,000 --> 00:43:35,309
+Yetki seviyesi yeterli olduğu için,
+
+533
+00:43:35,309 --> 00:43:38,309
+Browser'ı kile etme hakkına da sahip.
+
+534
+00:43:38,309 --> 00:43:43,940
+Burada en önemli, en kritik şey,
+
+535
+00:43:43,940 --> 00:43:45,940
+dersin son slide'ında da söyleyeceğiz,
+
+536
+00:43:45,940 --> 00:43:47,940
+aklınızda mutlaka kalması gerekiyor.
+
+537
+00:43:47,940 --> 00:43:49,940
+Kurallar.
+
+538
+00:43:49,940 --> 00:43:53,940
+Monitor, hangi kurallar silsilesine göre,
+
+539
+00:43:53,940 --> 00:43:55,940
+policy,
+
+540
+00:43:55,940 --> 00:43:59,940
+bu uygulamanın yaptığı sistem çaresi isteğini
+
+541
+00:43:59,940 --> 00:44:02,940
+geçerli bir geçersiz mi olduğuna karar verecek.
+
+542
+00:44:02,940 --> 00:44:04,940
+Neyse ki,
+
+543
+00:44:04,940 --> 00:44:07,940
+bir takım uygulamalar için,
+
+544
+00:44:07,940 --> 00:44:11,940
+zaman içerisinde oluşturulmuş standart
+
+545
+00:44:11,940 --> 00:44:13,940
+kurallar var.
+
+546
+00:44:13,940 --> 00:44:16,940
+Bakın bir PDF reader için.
+
+547
+00:44:16,940 --> 00:44:17,940
+Nedir?
+
+548
+00:44:17,940 --> 00:44:20,940
+TMP altındaki bütün dosyalara erişim izni var.
+
+549
+00:44:20,940 --> 00:44:24,940
+Ama ETS, PISVID'ye izin verme,
+
+550
+00:44:24,940 --> 00:44:28,940
+network erişimini tamamen iptal et.
+
+551
+00:44:28,940 --> 00:44:33,739
+Bu kurallar doğru değilse,
+
+552
+00:44:33,739 --> 00:44:35,739
+sizin uyguladığınız yöntemin,
+
+553
+00:44:36,739 --> 00:44:39,739
+düzgün olup olmamasının hiçbir önemi yok.
+
+554
+00:44:39,739 --> 00:44:41,739
+Çalışıp çalışmamasının hiçbir önemi yok.
+
+555
+00:44:41,739 --> 00:44:43,739
+Yönteminiz süper, harika çalışıyor ama
+
+556
+00:44:43,739 --> 00:44:45,739
+kurallarınız yanlış, uygulama delip geçti.
+
+557
+00:44:45,739 --> 00:44:46,739
+Neydi?
+
+558
+00:44:46,739 --> 00:44:49,739
+Reference monitor bypass edilememeli.
+
+559
+00:44:49,739 --> 00:44:52,739
+Burada reference monitor'ın bypass edilememesi,
+
+560
+00:44:52,739 --> 00:44:55,739
+tabii ki reference monitor'ın kod olarak düzgün,
+
+561
+00:44:55,739 --> 00:44:57,739
+tasarım olarak düzgün,
+
+562
+00:44:57,739 --> 00:44:59,739
+tasarlanmış olmasıyla alakalı.
+
+563
+00:44:59,739 --> 00:45:02,739
+Ama diğer taraftan da kontrol edecek
+
+564
+00:45:02,739 --> 00:45:05,739
+kuralların düzgün olması.
+
+565
+00:45:05,739 --> 00:45:07,739
+Bunu lütfen aklınızda tutun.
+
+566
+00:45:07,739 --> 00:45:09,739
+Son slide'da da aynı şeyi söyleyeceğim çünkü.
+
+567
+00:45:09,739 --> 00:45:11,739
+Unutmayın.
+
+568
+00:45:11,739 --> 00:45:12,739
+Şimdi bakın.
+
+569
+00:45:12,739 --> 00:45:16,739
+Şurada browser sistem çağrısı yaptı.
+
+570
+00:45:16,739 --> 00:45:18,739
+İnternet oluştu.
+
+571
+00:45:18,739 --> 00:45:20,739
+Kernel'a girildi.
+
+572
+00:45:20,739 --> 00:45:22,739
+Kernel monitöre gitti.
+
+573
+00:45:22,739 --> 00:45:28,739
+Monitör uygun gördüğünü Kernel'a yine bir sistem çağrısı üzerinden söyledi.
+
+574
+00:45:30,739 --> 00:45:33,739
+İşletim sistemi çağrıyı gerçekleştirdi.
+
+575
+00:45:33,739 --> 00:45:34,739
+Sonucu monitöre.
+
+576
+00:45:35,739 --> 00:45:38,739
+Bir sistem çağrısı ikiyle replays oldu.
+
+577
+00:45:38,739 --> 00:45:42,739
+Monitörün kill etmesi durumunda çok önemli değil ama
+
+578
+00:45:42,739 --> 00:45:47,739
+binlerce POSİK sistem çağrısı içerisinde
+
+579
+00:45:47,739 --> 00:45:50,739
+yedi tanesiyle ilgileniyoruz.
+
+580
+00:45:50,739 --> 00:45:52,739
+Her biri geliyor.
+
+581
+00:45:52,739 --> 00:45:56,739
+Sadece yedi tanesinde kill etme durumu söz konusu olabilir.
+
+582
+00:45:56,739 --> 00:46:00,739
+Diğerlerinde bir sistem çağrısı, iki sistem çağrısı
+
+583
+00:46:00,739 --> 00:46:03,739
+mış gibi gerçekleşiyor.
+
+584
+00:46:03,739 --> 00:46:08,739
+Performans ciddi anlamda kötü etkileniyor.
+
+585
+00:46:08,739 --> 00:46:13,739
+Diğer tarafta browser fork etti.
+
+586
+00:46:13,739 --> 00:46:16,739
+Zaten tab açtığımızda fork ediyor.
+
+587
+00:46:16,739 --> 00:46:18,739
+Monitörün ne yapması lazım?
+
+588
+00:46:18,739 --> 00:46:22,369
+Fork etmesi lazım.
+
+589
+00:46:22,369 --> 00:46:27,369
+Reference monitör devre dışı kaldığında her şey devre dışı kalmalı dedik ya.
+
+590
+00:46:27,369 --> 00:46:33,369
+Monitöre saldırı olursa monitör göçerse kim kill edecek?
+
+591
+00:46:33,369 --> 00:46:34,369
+Nasıl kill edecek?
+
+592
+00:46:34,369 --> 00:46:39,369
+Monitör kill ediyordu, monitör öldürüldü.
+
+593
+00:46:39,369 --> 00:46:42,369
+Sıkıntılı bir durum.
+
+594
+00:46:42,369 --> 00:46:48,369
+Demek ki saldırgan monitöre hedef alarak, onu devre dışı bırakarak
+
+595
+00:46:48,369 --> 00:46:53,369
+uygulamadaki açığı kullanılabilir hale getirebilir.
+
+596
+00:46:53,369 --> 00:47:02,739
+Uygulamada User ID, Group ID, Effective User ID değişirse,
+
+597
+00:47:02,739 --> 00:47:04,739
+Current Working Directory değişirse
+
+598
+00:47:04,739 --> 00:47:09,739
+bu bilginin monitör tarafından da tutulması lazım.
+
+599
+00:47:09,739 --> 00:47:11,739
+Normalde bu Kernel'de tutuluyor.
+
+600
+00:47:11,739 --> 00:47:15,739
+Ama Kernel bunu monitöre paslamıyor ki.
+
+601
+00:47:15,739 --> 00:47:21,739
+Monitöre sadece sistem çağrılarını parametreleriyle beraber paslıyor.
+
+602
+00:47:21,739 --> 00:47:28,739
+O zaman monitörün sistem çağrılarının bir kısmına daha bakıp
+
+603
+00:47:28,739 --> 00:47:34,739
+böyle durum bilgisi alması gerekenler var mı yok mu?
+
+604
+00:47:34,739 --> 00:47:41,739
+Onları gözden geçirip ona göre karar vermeli.
+
+605
+00:47:41,739 --> 00:47:46,739
+Yani durum bilgisi çift yerde, iki yerde birden tutulacak.
+
+606
+00:47:46,739 --> 00:47:48,739
+Hem Kernel'de hem de monitörde.
+
+607
+00:47:48,739 --> 00:47:50,739
+Tutarsızlık olma ihtimali var.
+
+608
+00:47:50,739 --> 00:47:55,739
+İşte bakın, Change Directory, TMP, Open PSVD.
+
+609
+00:47:55,739 --> 00:47:59,739
+Bu TMP içinde PSVD açıyor, öbürü ETC altında.
+
+610
+00:47:59,739 --> 00:48:02,739
+Sadece sistem çağrısına bakacak olursanız,
+
+611
+00:48:02,739 --> 00:48:05,739
+birisi de PSVD dosyasını açıyor.
+
+612
+00:48:05,739 --> 00:48:11,739
+Ama biri TMP altından açıyor, öbürü ETC altından açıyor.
+
+613
+00:48:11,739 --> 00:48:14,739
+Ne oynuyordu ki reklam için?
+
+614
+00:48:14,739 --> 00:48:16,739
+ADC değil miydi?
+
+615
+00:48:16,739 --> 00:48:36,659
+O zaman P-Trace, birincisi performans açısından yeterince uygun değil.
+
+616
+00:48:36,659 --> 00:48:40,659
+User Space ile Kernel Space arasında gidiş gelişi
+
+617
+00:48:40,659 --> 00:48:44,659
+çok fazla yaptırdığı için uygun değil.
+
+618
+00:48:44,659 --> 00:48:48,659
+Uygulamayı öldürdüğü için uygun değil.
+
+619
+00:48:48,659 --> 00:48:51,659
+Şunu yapabilseydi daha iyi olurdu.
+
+620
+00:48:51,659 --> 00:48:54,659
+Sistem çağrısının sonuçta bir geri dönüş değeri var.
+
+621
+00:48:54,659 --> 00:49:01,139
+Güvenlikle alakalı sıkıntı olduğunu gösteren bir geri dönüş değeri tanımlanabilir
+
+622
+00:49:01,139 --> 00:49:04,139
+ve uygulamaya bu geri dönüş değeri döndürülebilir.
+
+623
+00:49:04,139 --> 00:49:09,139
+O zaman uygulama nasıl sonlanacağına kendisi karar verir.
+
+624
+00:49:09,139 --> 00:49:17,500
+Diğer önemli bir şey de,
+
+625
+00:49:17,500 --> 00:49:19,500
+işletim sisteminde göreceğiz.
+
+626
+00:49:19,500 --> 00:49:22,500
+Race Condition diye bir kavram var.
+
+627
+00:49:22,500 --> 00:49:26,500
+Proseslerin çalışma hızları,
+
+628
+00:49:26,500 --> 00:49:31,500
+proseslerin çalışma sıraları sonucu etkilememeli.
+
+629
+00:49:31,500 --> 00:49:34,500
+Hangi hızda, hangi sırada çalışırlarsa çalışsınlar,
+
+630
+00:49:34,500 --> 00:49:37,500
+ne üretmeleri gerekiyorsa onu üretmeliler.
+
+631
+00:49:37,500 --> 00:49:41,500
+Önce çalıştı farklı değer çıktı, sonra çalıştı farklı değer çıktı.
+
+632
+00:49:41,500 --> 00:49:43,500
+Olamaz böyle bir şey.
+
+633
+00:49:43,500 --> 00:49:45,500
+Bu kavrama Race Condition diyoruz.
+
+634
+00:49:45,500 --> 00:49:46,500
+Şimdi,
+
+635
+00:49:46,500 --> 00:49:51,500
+Pete Race, Race Condition'a açık.
+
+636
+00:49:51,500 --> 00:49:56,500
+Çünkü işletim sistemi altında çalıştırdığımız bütün prosesler
+
+637
+00:49:56,500 --> 00:50:01,880
+her zaman compile edilmiş prosesler değil.
+
+638
+00:50:01,880 --> 00:50:04,880
+Interpreted Script'ler de var.
+
+639
+00:50:04,880 --> 00:50:09,880
+Shell Script'ler, Python, Perl, PHP.
+
+640
+00:50:09,880 --> 00:50:11,880
+Bunlar daha yavaş çalışıyorlar.
+
+641
+00:50:11,880 --> 00:50:14,880
+Çünkü önce anlaşılması, interpret edilmesi,
+
+642
+00:50:14,880 --> 00:50:16,880
+sonra translate edilip,
+
+643
+00:50:16,880 --> 00:50:19,880
+execute edilmesi lazım.
+
+644
+00:50:19,880 --> 00:50:21,880
+Böyle durumlarda,
+
+645
+00:50:21,880 --> 00:50:23,880
+böyle durumlarda,
+
+646
+00:50:23,880 --> 00:50:27,880
+araya girilip çıkılması mümkün.
+
+647
+00:50:27,880 --> 00:50:29,880
+Bakın, proses bir open.me,
+
+648
+00:50:29,880 --> 00:50:31,880
+.me file'ini açmak istiyor.
+
+649
+00:50:31,880 --> 00:50:33,880
+Monitor kontrol ediyor.
+
+650
+00:50:33,880 --> 00:50:35,880
+Yok diyor sorun bu .me file'ında.
+
+651
+00:50:35,880 --> 00:50:38,880
+Ancak monitor kontrol edip de
+
+652
+00:50:38,880 --> 00:50:40,880
+bunu okeyledikten sonra
+
+653
+00:50:40,880 --> 00:50:42,880
+işletim sistemi tarafından
+
+654
+00:50:42,880 --> 00:50:45,880
+open.me sistem çağrısı gerçekleştirilene kadar
+
+655
+00:50:45,880 --> 00:50:47,880
+geçen o araya
+
+656
+00:50:47,880 --> 00:50:49,880
+proses iki giriyor.
+
+657
+00:50:49,880 --> 00:50:51,880
+.me file'ını
+
+658
+00:50:51,880 --> 00:50:54,880
+.etcpcvd ile ilişkilendiriyor.
+
+659
+00:50:54,880 --> 00:50:56,880
+Linkliyor.
+
+660
+00:50:56,880 --> 00:50:59,880
+İşletim sistemi .me file'ını açtığında
+
+661
+00:50:59,880 --> 00:51:02,880
+.etcpcvd file'ını açmış oluyor.
+
+662
+00:51:02,880 --> 00:51:07,420
+Burada kontrol ile
+
+663
+00:51:07,420 --> 00:51:10,420
+o kontrole bağlı kullanım
+
+664
+00:51:10,420 --> 00:51:14,420
+atomik olarak bir bütün şeklinde yapılmadı.
+
+665
+00:51:14,420 --> 00:51:16,420
+Araya
+
+666
+00:51:16,420 --> 00:51:19,420
+işletim sisteminin yapısından ötürü
+
+667
+00:51:19,420 --> 00:51:21,420
+başka proseslerin girebilmesi
+
+668
+00:51:21,420 --> 00:51:23,420
+yapısından ötürü
+
+669
+00:51:23,420 --> 00:51:25,420
+scheduling konusunda göreceğiz.
+
+670
+00:51:25,420 --> 00:51:27,420
+Çünkü aynı anda birden fazla
+
+671
+00:51:27,420 --> 00:51:29,420
+prosesi çalıştırıyoruz dedik.
+
+672
+00:51:29,420 --> 00:51:31,420
+Başka bir proses girdi.
+
+673
+00:51:31,420 --> 00:51:33,420
+Az önce söylediğim
+
+674
+00:51:33,420 --> 00:51:35,420
+özellikle scripting
+
+675
+00:51:35,420 --> 00:51:38,420
+tarzı diller kullanılıyorsa
+
+676
+00:51:38,420 --> 00:51:40,420
+işte shell script olur,
+
+677
+00:51:40,420 --> 00:51:41,420
+python olur,
+
+678
+00:51:41,420 --> 00:51:43,420
+perl olur, php olur
+
+679
+00:51:43,420 --> 00:51:45,420
+bu tarz şeyler kullanılıyorsa
+
+680
+00:51:45,420 --> 00:51:47,420
+bu ihtimal daha da artıyor.
+
+681
+00:51:47,420 --> 00:51:51,500
+Atomik çalışma sağlanamıyor.
+
+682
+00:51:51,500 --> 00:51:53,500
+Buna bağlı olarak da
+
+683
+00:51:53,500 --> 00:51:55,500
+race condition oluşuyor.
+
+684
+00:51:55,500 --> 00:51:57,500
+Çünkü eğer araya proc2 girmeseydi
+
+685
+00:51:57,500 --> 00:51:59,500
+doğru çalışacaktı.
+
+686
+00:51:59,500 --> 00:52:01,500
+proc2 girdi yanlış çalıştı.
+
+687
+00:52:01,500 --> 00:52:03,500
+Bakın race condition da bu.
+
+688
+00:52:03,500 --> 00:52:05,500
+Öyle oldu düzgün, böyle oldu yanlış.
+
+689
+00:52:05,500 --> 00:52:07,500
+Olamaz.
+
+690
+00:52:07,500 --> 00:52:09,500
+Ne olursa olsun düzgün çalışmalıydı.
+
+691
+00:52:09,500 --> 00:52:11,500
+Buna ne isim veriyoruz arkadaşlar?
+
+692
+00:52:11,500 --> 00:52:13,500
+Time of check
+
+693
+00:52:13,500 --> 00:52:15,500
+Time of use bug
+
+694
+00:52:15,500 --> 00:52:17,500
+Kontrolü yaptığım zaman
+
+695
+00:52:17,500 --> 00:52:19,500
+kullandığım anla
+
+696
+00:52:19,500 --> 00:52:21,500
+kullandığım an arasında değişiklik olabilir.
+
+697
+00:52:21,500 --> 00:52:23,500
+O yüzden kontrolü yapmamla
+
+698
+00:52:23,500 --> 00:52:25,500
+kullanmam atomik olmalı.
+
+699
+00:52:25,500 --> 00:52:27,500
+Top 2 bunu söylüyor.
+
+700
+00:52:27,500 --> 00:52:29,500
+Time of check
+
+701
+00:52:29,500 --> 00:52:34,119
+Time of use
+
+702
+00:52:34,119 --> 00:52:36,119
+Şimdi arkadaşlar saat 2 oldu.
+
+703
+00:52:36,119 --> 00:52:38,119
+Bir ara verelim.
+
+704
+00:52:38,119 --> 00:52:40,119
+15 dakika ara verelim.
+
+705
+00:52:40,119 --> 00:52:42,119
+Bu slide'dan devam edeceğiz.
+
+706
+00:52:42,119 --> 01:11:22,460
+Evet arkadaşlar
+
+707
+01:11:22,460 --> 01:11:24,460
+kaldığımız yerden devam edelim.
+
+708
+01:11:24,460 --> 01:11:30,779
+Şimdi
+
+709
+01:11:30,779 --> 01:11:35,689
+ptrace
+
+710
+01:11:35,689 --> 01:11:37,689
+Unix'te
+
+711
+01:11:37,689 --> 01:11:39,689
+dolayısıyla Linux'ta da olan bir
+
+712
+01:11:39,689 --> 01:11:41,689
+yapı. Ancak
+
+713
+01:11:41,689 --> 01:11:43,689
+az önce inceledik.
+
+714
+01:11:43,689 --> 01:11:45,689
+Sürekli kernel
+
+715
+01:11:45,689 --> 01:11:47,689
+space'e ve user space'e gidiş
+
+716
+01:11:47,689 --> 01:11:49,689
+gidiş yapılması gerekiyor.
+
+717
+01:11:49,689 --> 01:11:51,689
+İhtiyaç duymadığımız
+
+718
+01:11:51,689 --> 01:11:55,510
+sistem çağrılarını
+
+719
+01:11:55,510 --> 01:11:57,510
+da
+
+720
+01:11:57,510 --> 01:11:59,510
+inceleyip
+
+721
+01:11:59,510 --> 01:12:01,510
+buna ihtiyaç duymuyormuşuz, bununla
+
+722
+01:12:01,510 --> 01:12:03,510
+alakalı bir şey yapmıyormuşuz diye karar
+
+723
+01:12:03,510 --> 01:12:05,510
+vermemiz gerekiyor. Yani performansı
+
+724
+01:12:05,510 --> 01:12:07,510
+düşüyor. Topu topu dikkat edin
+
+725
+01:12:07,510 --> 01:12:09,510
+o listede 7 tane
+
+726
+01:12:09,510 --> 01:12:11,510
+sistem çağrısı vardı.
+
+727
+01:12:11,510 --> 01:12:13,510
+Şimdi
+
+728
+01:12:13,510 --> 01:12:15,510
+Linux'ta son dönemde
+
+729
+01:12:15,510 --> 01:12:17,510
+çok fazla kullanıldığı
+
+730
+01:12:17,510 --> 01:12:19,510
+özellikle bütün
+
+731
+01:12:19,510 --> 01:12:21,510
+sanallaştırma
+
+732
+01:12:21,510 --> 01:12:23,510
+ortamlarında
+
+733
+01:12:23,510 --> 01:12:25,510
+cloud provider'larda
+
+734
+01:12:25,510 --> 01:12:27,510
+altyapı Linux üzerinde
+
+735
+01:12:27,510 --> 01:12:29,510
+çalıştığı
+
+736
+01:12:29,510 --> 01:12:31,510
+için
+
+737
+01:12:31,510 --> 01:12:33,510
+Linux özelinde
+
+738
+01:12:33,510 --> 01:12:35,510
+orijinalde
+
+739
+01:12:35,510 --> 01:12:37,510
+Berkeley
+
+740
+01:12:37,510 --> 01:12:39,510
+üniversitesi
+
+741
+01:12:39,510 --> 01:12:41,510
+tarafından
+
+742
+01:12:41,510 --> 01:12:43,510
+Berkeley Software
+
+743
+01:12:43,510 --> 01:12:45,510
+Distribution yani
+
+744
+01:12:45,510 --> 01:12:47,510
+BSD Unix varyantı için
+
+745
+01:12:47,510 --> 01:12:49,510
+geliştirilmiş bir yöntem
+
+746
+01:12:49,510 --> 01:12:51,510
+bu amaca
+
+747
+01:12:51,510 --> 01:12:53,510
+yönelik olarak yeniden
+
+748
+01:12:53,510 --> 01:12:55,510
+düzenlendi.
+
+749
+01:12:55,510 --> 01:12:57,510
+Karşımıza da Seccom
+
+750
+01:12:57,510 --> 01:12:59,510
+BPF olarak çıktı.
+
+751
+01:12:59,510 --> 01:13:01,510
+BPF'in
+
+752
+01:13:01,510 --> 01:13:03,510
+orijinal açılımı
+
+753
+01:13:03,510 --> 01:13:05,510
+Berkeley Packet
+
+754
+01:13:05,510 --> 01:13:09,210
+Filtering. Burada
+
+755
+01:13:09,210 --> 01:13:11,210
+paket filtrelemesi
+
+756
+01:13:11,210 --> 01:13:13,210
+yapmayacağız, policy
+
+757
+01:13:13,210 --> 01:13:15,210
+filtering yapacağız.
+
+758
+01:13:15,210 --> 01:13:17,210
+Yani kurallara göre bir
+
+759
+01:13:17,210 --> 01:13:19,210
+filtreleme gerçekleştireceğiz.
+
+760
+01:13:19,210 --> 01:13:21,210
+Ve hatırlarsanız
+
+761
+01:13:21,210 --> 01:13:23,210
+bu konunun başında size
+
+762
+01:13:23,210 --> 01:13:25,210
+ya kernel space'de olabilir
+
+763
+01:13:25,210 --> 01:13:27,210
+ya user space'de olabilir
+
+764
+01:13:27,210 --> 01:13:29,210
+ya da hibrit olabilir
+
+765
+01:13:29,210 --> 01:13:31,210
+dedim. Hibritin karşılığı
+
+766
+01:13:31,210 --> 01:13:33,210
+da Systrace'de.
+
+767
+01:13:33,210 --> 01:13:35,210
+Systrace var ama
+
+768
+01:13:35,210 --> 01:13:37,210
+Linux özelinde şu anda
+
+769
+01:13:37,210 --> 01:13:39,210
+BPF Systrace'e göre
+
+770
+01:13:39,210 --> 01:13:41,210
+tercih edilen bir yöntem. Çünkü
+
+771
+01:13:41,210 --> 01:13:43,210
+Systrace'in
+
+772
+01:13:43,210 --> 01:13:45,210
+user space'deki
+
+773
+01:13:45,210 --> 01:13:47,210
+komponenti
+
+774
+01:13:47,210 --> 01:13:49,210
+alınıp aşağıya
+
+775
+01:13:49,210 --> 01:13:51,210
+kernel'a yerleştirilmiş
+
+776
+01:13:51,210 --> 01:13:54,460
+durumda. Peki nasıl
+
+777
+01:13:54,460 --> 01:13:56,460
+çalışıyor? Şimdi bir
+
+778
+01:13:56,460 --> 01:13:58,460
+kez
+
+779
+01:13:58,460 --> 01:14:00,460
+kernel'a
+
+780
+01:14:00,460 --> 01:14:02,460
+uygulama ile alakalı
+
+781
+01:14:02,460 --> 01:14:07,909
+hangi sistem çağrılarına
+
+782
+01:14:07,909 --> 01:14:09,909
+dikkat edilmesi gerekiyor
+
+783
+01:14:09,909 --> 01:14:11,909
+bu sistem çağrılarına
+
+784
+01:14:11,909 --> 01:14:13,909
+hiç çalıştırılmaması
+
+785
+01:14:13,909 --> 01:14:15,909
+gerekenler var mı?
+
+786
+01:14:15,909 --> 01:14:17,909
+Çalıştırılanlar içerisinde de
+
+787
+01:14:17,909 --> 01:14:19,909
+hangi parametrelerle
+
+788
+01:14:19,909 --> 01:14:21,909
+çalıştırılırsa uygundur
+
+789
+01:14:21,909 --> 01:14:23,909
+veya kullanılmaması gereken
+
+790
+01:14:23,909 --> 01:14:25,909
+bir parametre var mı?
+
+791
+01:14:25,909 --> 01:14:27,909
+Bu bilginin aktarılması lazım.
+
+792
+01:14:27,909 --> 01:14:29,909
+Yani kural dosyası
+
+793
+01:14:29,909 --> 01:14:31,909
+size en başta
+
+794
+01:14:31,909 --> 01:14:33,909
+az önce gösterdiğim o kural dosyası
+
+795
+01:14:33,909 --> 01:14:35,909
+şöyle geri gidecek olursam
+
+796
+01:14:35,909 --> 01:14:40,220
+bir saniye
+
+797
+01:14:40,220 --> 01:14:42,220
+şu kural dosyası
+
+798
+01:14:42,220 --> 01:14:47,000
+kernel'a aktarılıyor.
+
+799
+01:14:47,000 --> 01:14:49,000
+Ve tam
+
+800
+01:14:49,000 --> 01:14:51,000
+sistem çağrılarının
+
+801
+01:14:51,000 --> 01:14:53,000
+yapıldığı
+
+802
+01:14:53,000 --> 01:14:55,000
+noktada
+
+803
+01:14:55,000 --> 01:14:57,000
+filtrenin tarifine
+
+804
+01:14:57,000 --> 01:14:59,000
+bağlı olarak
+
+805
+01:14:59,000 --> 01:15:01,000
+sistem çağrıları
+
+806
+01:15:01,000 --> 01:15:03,000
+doğrudan
+
+807
+01:15:03,000 --> 01:15:05,000
+gerçekleştirilebiliyor
+
+808
+01:15:05,000 --> 01:15:07,000
+filtreye takılmıyorsa filtre onların
+
+809
+01:15:07,000 --> 01:15:09,000
+hiçbirini söylemediyse
+
+810
+01:15:09,000 --> 01:15:11,000
+veya
+
+811
+01:15:11,000 --> 01:15:13,000
+filtre üzerinden geçirilip
+
+812
+01:15:13,000 --> 01:15:15,000
+ne yapılacağına karar veriliyor.
+
+813
+01:15:15,000 --> 01:15:17,000
+Bakın burada
+
+814
+01:15:17,000 --> 01:15:19,000
+PR kontrolle
+
+815
+01:15:19,000 --> 01:15:21,000
+sistem çağrısının
+
+816
+01:15:21,000 --> 01:15:23,000
+adı o PR kontrolle
+
+817
+01:15:25,000 --> 01:15:28,699
+filter polisi
+
+818
+01:15:28,699 --> 01:15:30,699
+kernel'a tanıtılıyor.
+
+819
+01:15:30,699 --> 01:15:32,699
+Chrome'u konuşmuştuk
+
+820
+01:15:32,699 --> 01:15:34,699
+hatırlarsanız
+
+821
+01:15:34,699 --> 01:15:36,699
+bir Chrome prosesi var
+
+822
+01:15:36,699 --> 01:15:38,699
+Renderer prosesi var
+
+823
+01:15:38,699 --> 01:15:40,699
+Pluginlerin prosesleri
+
+824
+01:15:40,699 --> 01:15:42,699
+var işte
+
+825
+01:15:44,699 --> 01:15:46,699
+network iletişimini sağlayan
+
+826
+01:15:46,699 --> 01:15:48,699
+cookie'leri tutan
+
+827
+01:15:48,699 --> 01:15:50,699
+onları yöneten
+
+828
+01:15:50,699 --> 01:15:52,699
+proses var
+
+829
+01:15:52,699 --> 01:15:54,699
+Sonuçta Chrome'un
+
+830
+01:15:54,699 --> 01:15:56,699
+kendisi o göbekteki
+
+831
+01:15:56,699 --> 01:15:58,699
+proses çalışmaya
+
+832
+01:15:58,699 --> 01:16:00,699
+başladığında
+
+833
+01:16:00,699 --> 01:16:02,699
+diğer proseslerin
+
+834
+01:16:02,699 --> 01:16:04,699
+sistem çağrısı
+
+835
+01:16:04,699 --> 01:16:06,699
+kullanımı açısından
+
+836
+01:16:06,699 --> 01:16:08,699
+ne gibi kısıtlara
+
+837
+01:16:08,699 --> 01:16:10,699
+tabi tutulması gerektiğini
+
+838
+01:16:10,699 --> 01:16:12,699
+nasıl filtrelenmesi
+
+839
+01:16:12,699 --> 01:16:14,699
+gerektiğini kernel'a
+
+840
+01:16:14,699 --> 01:16:16,699
+tanıtıyor.
+
+841
+01:16:16,699 --> 01:16:18,699
+Sonrasında
+
+842
+01:16:18,699 --> 01:16:20,699
+renderer proses
+
+843
+01:16:20,699 --> 01:16:22,699
+başlıyor ve bir siteyi
+
+844
+01:16:22,699 --> 01:16:24,699
+renderlıyor.
+
+845
+01:16:24,699 --> 01:16:26,699
+Ekranda görüntülenebilir hale
+
+846
+01:16:26,699 --> 01:16:28,699
+getiriyor. Bu işlem
+
+847
+01:16:28,699 --> 01:16:30,699
+sırasında
+
+848
+01:16:30,699 --> 01:16:32,699
+yapmaması gereken bir sistem
+
+849
+01:16:32,699 --> 01:16:34,699
+çağrısı yaparsa niye daha önceden
+
+850
+01:16:34,699 --> 01:16:36,699
+kernel'a renderer'la
+
+851
+01:16:36,699 --> 01:16:38,699
+alakalı filtre yüklendi?
+
+852
+01:16:38,699 --> 01:16:44,060
+O sistem
+
+853
+01:16:44,060 --> 01:16:46,060
+çağrısı sonlandırılıyor
+
+854
+01:16:46,060 --> 01:16:48,060
+dikkat edin uygulama sonlandırılmıyor
+
+855
+01:16:48,060 --> 01:16:50,060
+sistem çağrısı
+
+856
+01:16:50,060 --> 01:16:52,060
+hata durumunu belirten
+
+857
+01:16:52,060 --> 01:16:54,060
+bir geri dönüş kodu ile
+
+858
+01:16:54,060 --> 01:16:57,560
+geri dönüyor.
+
+859
+01:16:57,560 --> 01:16:59,560
+Chromium bunu kullanıyor
+
+860
+01:16:59,560 --> 01:17:01,560
+Docker bunu kullanıyor.
+
+861
+01:17:01,560 --> 01:17:03,560
+Böylece
+
+862
+01:17:03,560 --> 01:17:05,560
+uygulamaları
+
+863
+01:17:05,560 --> 01:17:07,560
+file sistem erişimi açısından
+
+864
+01:17:07,560 --> 01:17:09,560
+network erişimi açısından
+
+865
+01:17:09,560 --> 01:17:11,560
+her anlamda
+
+866
+01:17:11,560 --> 01:17:13,560
+kısıtlayabiliyoruz. Çünkü
+
+867
+01:17:13,560 --> 01:17:15,560
+sistemde var olan bütün
+
+868
+01:17:15,560 --> 01:17:17,560
+sistem çağrılarını bu filtrede
+
+869
+01:17:17,560 --> 01:17:19,560
+tarifleyebiliriz.
+
+870
+01:17:19,560 --> 01:17:21,560
+Nelerin kısıtlı olacağını, nelerin
+
+871
+01:17:21,560 --> 01:17:30,699
+kısıtlı olmayacağını söyleyebiliriz.
+
+872
+01:17:30,699 --> 01:17:32,699
+Birden fazla
+
+873
+01:17:32,699 --> 01:17:34,699
+BPF
+
+874
+01:17:34,699 --> 01:17:36,699
+yüklenebilir.
+
+875
+01:17:36,699 --> 01:17:38,699
+Bir kez yüklendi mi
+
+876
+01:17:38,699 --> 01:17:40,699
+sistem restore olana kadar
+
+877
+01:17:40,699 --> 01:17:42,699
+değiştiremiyorsunuz.
+
+878
+01:17:42,699 --> 01:17:46,100
+Bu güzel bir şey.
+
+879
+01:17:46,100 --> 01:17:48,100
+Yani neyin
+
+880
+01:17:48,100 --> 01:17:50,100
+önüne geçmek için oluşturulmuş bu mekanizma
+
+881
+01:17:50,100 --> 01:17:52,100
+saldırganın bir
+
+882
+01:17:52,100 --> 01:17:54,100
+filtreyi devre
+
+883
+01:17:54,100 --> 01:17:56,100
+dışı bırakmasının önüne
+
+884
+01:17:56,100 --> 01:17:58,100
+geçmek için.
+
+885
+01:17:58,100 --> 01:18:00,100
+Yanlış yüklediyseniz de
+
+886
+01:18:00,100 --> 01:18:02,100
+bu kadar basit.
+
+887
+01:18:02,100 --> 01:18:04,100
+Program fork ederse
+
+888
+01:18:04,100 --> 01:18:06,100
+kendinden birebir yeni bir kopya
+
+889
+01:18:06,100 --> 01:18:08,100
+çıkartırsa işte
+
+890
+01:18:08,100 --> 01:18:10,100
+Apache örneğinde olduğu gibi
+
+891
+01:18:10,100 --> 01:18:12,100
+web server
+
+892
+01:18:12,100 --> 01:18:14,100
+web request geldi
+
+893
+01:18:14,100 --> 01:18:16,100
+kendinden kopya çıkarttı.
+
+894
+01:18:16,100 --> 01:18:18,100
+Child process
+
+895
+01:18:18,100 --> 01:18:20,100
+filtrelerin tamamına olduğu gibi
+
+896
+01:18:20,100 --> 01:18:22,100
+sahip. Yeni bir şey yüklemeye gerek bile yok.
+
+897
+01:18:22,100 --> 01:18:25,479
+Child process
+
+898
+01:18:25,479 --> 01:18:27,479
+oluştu. Kendini execle
+
+899
+01:18:27,479 --> 01:18:29,479
+değiştiriyor. Process creation'da
+
+900
+01:18:29,479 --> 01:18:31,479
+göreceğiz bunları hatta uygulayacağız.
+
+901
+01:18:31,479 --> 01:18:36,100
+Aynen kalıyor.
+
+902
+01:18:36,100 --> 01:18:38,100
+İptal olmuyor. Yani
+
+903
+01:18:38,100 --> 01:18:40,100
+yeni bir executable yüklendiği için
+
+904
+01:18:40,100 --> 01:18:42,100
+filtreleri
+
+905
+01:18:42,100 --> 01:18:44,100
+değiştireyim diye bir şey
+
+906
+01:18:44,100 --> 01:18:46,100
+söz konusu değil. Çünkü
+
+907
+01:18:46,100 --> 01:18:48,100
+zaten uygulamayı tasarlayan
+
+908
+01:18:50,100 --> 01:18:52,100
+kişi veya kişiler
+
+909
+01:18:52,100 --> 01:18:54,100
+execle
+
+910
+01:18:54,100 --> 01:18:56,100
+nelerin yüklenebileceğini
+
+911
+01:18:56,100 --> 01:18:58,100
+bildikleri için
+
+912
+01:18:58,100 --> 01:19:00,100
+başlangıçta filtreleri de
+
+913
+01:19:00,100 --> 01:19:02,100
+ona göre koymuş olmaları lazım.
+
+914
+01:19:02,100 --> 01:19:04,100
+Bu kadar.
+
+915
+01:19:04,100 --> 01:19:17,619
+Bu kadar net.
+
+916
+01:19:17,619 --> 01:19:19,619
+Filtreleme işlemi sonrasında
+
+917
+01:19:19,619 --> 01:19:21,619
+ya
+
+918
+01:19:21,619 --> 01:19:23,619
+kill geri dönüyor.
+
+919
+01:19:23,619 --> 01:19:25,619
+Process hakikaten
+
+920
+01:19:25,619 --> 01:19:27,619
+ilerlememesi
+
+921
+01:19:27,619 --> 01:19:29,619
+gereken bir şey yapıyor.
+
+922
+01:19:29,619 --> 01:19:31,619
+Yani bunu return kodla
+
+923
+01:19:31,619 --> 01:19:33,619
+çözebilmenin yolu yok.
+
+924
+01:19:33,619 --> 01:19:35,619
+Ya
+
+925
+01:19:35,619 --> 01:19:37,619
+error no ile
+
+926
+01:19:37,619 --> 01:19:39,619
+bak hatalı bir şey oldu
+
+927
+01:19:39,619 --> 01:19:41,619
+senin yetki seviyen aşıldı veya
+
+928
+01:19:41,619 --> 01:19:43,619
+sen bunu bu şekilde yapmamalıydın
+
+929
+01:19:43,619 --> 01:19:45,619
+diye bir geri dönüş kodu var.
+
+930
+01:19:45,619 --> 01:19:47,619
+Uygulama oradan kendisi
+
+931
+01:19:47,619 --> 01:19:49,619
+isterse durumu kurtarabilir.
+
+932
+01:19:49,619 --> 01:19:51,619
+Ya da
+
+933
+01:19:51,619 --> 01:19:53,619
+bu sistem çağrısı yapılabilir
+
+934
+01:19:53,619 --> 01:19:55,619
+dönüyor.
+
+935
+01:19:55,619 --> 01:19:57,619
+Bakın burada
+
+936
+01:19:57,619 --> 01:19:59,619
+şey örneğini
+
+937
+01:19:59,619 --> 01:20:01,619
+görüyoruz şu anda.
+
+938
+01:20:01,619 --> 01:20:03,619
+Filtre
+
+939
+01:20:03,619 --> 01:20:05,619
+yerleştirme örneğini görüyoruz.
+
+940
+01:20:05,619 --> 01:20:07,619
+Birincisi
+
+941
+01:20:07,619 --> 01:20:09,619
+hatırlarsanız
+
+942
+01:20:09,619 --> 01:20:11,619
+geçen hafta neyi konuşmuştuk
+
+943
+01:20:11,619 --> 01:20:13,619
+set user id ve set group id
+
+944
+01:20:13,619 --> 01:20:15,619
+failler vardı.
+
+945
+01:20:15,619 --> 01:20:17,619
+User owner
+
+946
+01:20:17,619 --> 01:20:19,619
+user owner veya
+
+947
+01:20:19,619 --> 01:20:21,619
+group owner yetkileri ile
+
+948
+01:20:21,619 --> 01:20:23,619
+bir executable'ın çalıştırılması.
+
+949
+01:20:23,619 --> 01:20:25,619
+Yani efektif user id
+
+950
+01:20:25,619 --> 01:20:27,619
+ya
+
+951
+01:20:27,619 --> 01:20:29,619
+efektif user id
+
+952
+01:20:29,619 --> 01:20:31,619
+owner'a eşitleniyordu
+
+953
+01:20:31,619 --> 01:20:33,619
+ya da efektif group id
+
+954
+01:20:33,619 --> 01:20:35,619
+gruba eşitleniyordu ve o
+
+955
+01:20:35,619 --> 01:20:37,619
+yetkiyle gelişim açısından
+
+956
+01:20:37,619 --> 01:20:39,619
+çalışıyordu.
+
+957
+01:20:39,619 --> 01:20:43,930
+Bunun önüne geçiyor
+
+958
+01:20:43,930 --> 01:20:45,930
+executable bir şekilde
+
+959
+01:20:45,930 --> 01:20:47,930
+file sistemle modifiye edilmiş
+
+960
+01:20:47,930 --> 01:20:49,930
+olabilir. O
+
+961
+01:20:49,930 --> 01:20:51,930
+set user id
+
+962
+01:20:51,930 --> 01:20:53,930
+set group id bitleri
+
+963
+01:20:53,930 --> 01:20:55,930
+set edilmiş ve
+
+964
+01:20:55,930 --> 01:20:57,930
+owner'ı veya grubu root'a eşitlenmiş
+
+965
+01:20:57,930 --> 01:20:59,930
+olabilir saldırgan tarafından.
+
+966
+01:20:59,930 --> 01:21:01,930
+Ancak şu birinci satır
+
+967
+01:21:01,930 --> 01:21:03,930
+bu mekanizmayı
+
+968
+01:21:03,930 --> 01:21:05,930
+devre dışına bırakıyor.
+
+969
+01:21:05,930 --> 01:21:07,930
+İkinci satırda gerekli
+
+970
+01:21:07,930 --> 01:21:09,930
+kuralı yüklüyor.
+
+971
+01:21:09,930 --> 01:21:11,930
+Burada yüklenen kural diyor ki
+
+972
+01:21:11,930 --> 01:21:13,930
+open sistem çağrısını
+
+973
+01:21:13,930 --> 01:21:15,930
+write modunda
+
+974
+01:21:15,930 --> 01:21:17,930
+açarsan uygulamayı
+
+975
+01:21:17,930 --> 01:21:19,930
+durdurur.
+
+976
+01:21:19,930 --> 01:21:21,930
+Kural bu. O yüzden
+
+977
+01:21:21,930 --> 01:21:23,930
+şuradaki f open file nokta
+
+978
+01:21:23,930 --> 01:21:25,930
+txt w
+
+979
+01:21:25,930 --> 01:21:27,930
+çalıştırılacağı sırada file'in isminin
+
+980
+01:21:27,930 --> 01:21:29,930
+ne olduğunun önemi yok. Bakın mod write
+
+981
+01:21:29,930 --> 01:21:31,930
+olarak belirtilmiş. Uygulama
+
+982
+01:21:31,930 --> 01:21:33,930
+öldürüleceği için alt satırdaki
+
+983
+01:21:33,930 --> 01:21:35,930
+printf, hani will not be
+
+984
+01:21:35,930 --> 01:21:37,930
+printed bu satır basılmayacak.
+
+985
+01:21:37,930 --> 01:21:39,930
+Basılmamasının sebebi daha öncesinde
+
+986
+01:21:39,930 --> 01:21:41,930
+BPF
+
+987
+01:21:41,930 --> 01:21:43,930
+mekanizması uygulamayı
+
+988
+01:21:43,930 --> 01:21:48,010
+durduracağı için. Bunu
+
+989
+01:21:48,010 --> 01:21:50,010
+docker engine de kullanıyor çünkü
+
+990
+01:21:50,010 --> 01:21:52,010
+aslında docker engine
+
+991
+01:21:52,010 --> 01:21:54,010
+birbirinden izole edilmiş
+
+992
+01:21:54,010 --> 01:21:56,010
+uygulamaların başlatılmasını
+
+993
+01:21:56,010 --> 01:21:58,010
+sağlayan bir ara katman.
+
+994
+01:21:58,010 --> 01:22:02,090
+Uygulamalar zaten
+
+995
+01:22:02,090 --> 01:22:04,090
+hatırlayın
+
+996
+01:22:04,090 --> 01:22:06,090
+öğreneceğiz de
+
+997
+01:22:06,090 --> 01:22:08,090
+işletim sisteminde genel olarak
+
+998
+01:22:08,090 --> 01:22:10,090
+söylemiştik. Bu ders kapsamında da
+
+999
+01:22:10,090 --> 01:22:12,090
+defalarca söyledim.
+
+1000
+01:22:12,090 --> 01:22:14,090
+Proses seviyesinde memori olarak
+
+1001
+01:22:14,090 --> 01:22:16,090
+birbirlerinden izole.
+
+1002
+01:22:16,090 --> 01:22:18,090
+Ama artık şu mekanizmayla
+
+1003
+01:22:18,090 --> 01:22:20,090
+yaptıkları sistem çağrıları
+
+1004
+01:22:20,090 --> 01:22:22,090
+açısından da izole. Yani
+
+1005
+01:22:22,090 --> 01:22:24,090
+network erişimi açısından da
+
+1006
+01:22:24,090 --> 01:22:26,090
+izole. O zaman
+
+1007
+01:22:26,090 --> 01:22:28,090
+docker engine bir
+
+1008
+01:22:28,090 --> 01:22:30,090
+uygulamayı container'da
+
+1009
+01:22:30,090 --> 01:22:32,090
+yani container
+
+1010
+01:22:32,090 --> 01:22:34,090
+confinement'ın kibarcası
+
+1011
+01:22:34,090 --> 01:22:37,560
+öyle düşünün.
+
+1012
+01:22:37,560 --> 01:22:39,560
+Çalıştırmaya başlamadan önce
+
+1013
+01:22:39,560 --> 01:22:41,560
+onunla alakalı filtreleri
+
+1014
+01:22:41,560 --> 01:22:43,560
+az önce gösterdiğim örnekteki
+
+1015
+01:22:43,560 --> 01:22:45,560
+gibi kernel'a yüklerse
+
+1016
+01:22:45,560 --> 01:22:47,560
+artık o
+
+1017
+01:22:47,560 --> 01:22:49,560
+uygulamada
+
+1018
+01:22:49,560 --> 01:22:51,560
+kaç kopya çalıştırılırsa
+
+1019
+01:22:51,560 --> 01:22:53,560
+çalıştırılsın hepsine
+
+1020
+01:22:53,560 --> 01:22:55,560
+aynı
+
+1021
+01:22:55,560 --> 01:23:00,020
+kurallar uygulanacak.
+
+1022
+01:23:00,020 --> 01:23:02,020
+Docker engine'le beraber
+
+1023
+01:23:02,020 --> 01:23:04,020
+bir takım standart kurallar
+
+1024
+01:23:04,020 --> 01:23:06,020
+geliyor.
+
+1025
+01:23:06,020 --> 01:23:08,020
+Pek çok sistem çağrısını bloke
+
+1026
+01:23:08,020 --> 01:23:10,020
+ediyor. Bunlardan bir tanesi de
+
+1027
+01:23:10,020 --> 01:23:12,020
+ptrace. Çünkü ptrace
+
+1028
+01:23:12,020 --> 01:23:14,020
+çok tehlikeli aynı zamanda
+
+1029
+01:23:14,020 --> 01:23:16,020
+bir prosesin bir başka prosesi kontrol
+
+1030
+01:23:16,020 --> 01:23:18,020
+edebilmesini
+
+1031
+01:23:18,020 --> 01:23:20,020
+parametreleri okuyabilmesini sağlıyor.
+
+1032
+01:23:20,020 --> 01:23:22,020
+Sistem çağrısı
+
+1033
+01:23:22,020 --> 01:23:24,020
+oldukça öbür
+
+1034
+01:23:24,020 --> 01:23:26,020
+proses tetikleniyordu. Bütün
+
+1035
+01:23:26,020 --> 01:23:28,020
+parametreler falan aktarılıyordu.
+
+1036
+01:23:28,020 --> 01:23:30,020
+O zaman ptrace
+
+1037
+01:23:30,020 --> 01:23:32,020
+güvenlik açığı oluşturabilecek bir
+
+1038
+01:23:32,020 --> 01:23:34,020
+sistem çağrısı
+
+1039
+01:23:34,020 --> 01:23:36,020
+bu da dahil olmak üzere
+
+1040
+01:23:36,020 --> 01:23:38,020
+pek çok sistem çağrısı
+
+1041
+01:23:38,020 --> 01:23:40,020
+bloke olmuş durumda.
+
+1042
+01:23:40,020 --> 01:23:42,020
+Bakın burada bir nginx container
+
+1043
+01:23:42,020 --> 01:23:44,020
+oluşturuluyor. Yani aslında
+
+1044
+01:23:44,020 --> 01:23:46,020
+container burada şaşalı bir kelime.
+
+1045
+01:23:46,020 --> 01:23:48,020
+Nginx prosesi
+
+1046
+01:23:48,020 --> 01:23:50,020
+oluşturuluyor. Prosesi başlatan
+
+1047
+01:23:50,020 --> 01:23:52,020
+Docker. Docker bunu
+
+1048
+01:23:52,020 --> 01:23:54,020
+başlatırken az önce söylediğim
+
+1049
+01:23:54,020 --> 01:23:56,020
+dediğimiz açılardan
+
+1050
+01:23:56,020 --> 01:23:58,020
+onu bir
+
+1051
+01:23:58,020 --> 01:24:00,020
+confined yani
+
+1052
+01:24:00,020 --> 01:24:02,020
+kısıtlanmış alana yerleştiriyor.
+
+1053
+01:24:02,020 --> 01:24:04,020
+Artık
+
+1054
+01:24:04,020 --> 01:24:06,020
+şu noktadan sonra Docker'ın ne
+
+1055
+01:24:06,020 --> 01:24:08,020
+olduğunu çok daha iyi anlamanız lazım.
+
+1056
+01:24:08,020 --> 01:24:10,020
+Öyle olduğunu düşünüyorum.
+
+1057
+01:24:10,020 --> 01:24:12,020
+Tabii
+
+1058
+01:24:12,020 --> 01:24:14,020
+başka açılardan da
+
+1059
+01:24:14,020 --> 01:24:16,020
+kullanabileceği memori miktarı
+
+1060
+01:24:16,020 --> 01:24:18,020
+kullanabileceği cpu miktarı
+
+1061
+01:24:18,020 --> 01:24:20,020
+açısından da
+
+1062
+01:24:20,020 --> 01:24:22,020
+kısıtlamalar var ama
+
+1063
+01:24:22,020 --> 01:24:24,020
+ee
+
+1064
+01:24:24,020 --> 01:24:26,020
+bir prosesi
+
+1065
+01:24:26,020 --> 01:24:28,020
+kontrollü ve kısıtlanmış olarak
+
+1066
+01:24:28,020 --> 01:24:31,750
+başlatmanın yolu
+
+1067
+01:24:31,750 --> 01:24:38,739
+bu.
+
+1068
+01:24:38,739 --> 01:24:40,739
+[öğrenci]
+
+1069
+01:24:40,739 --> 01:24:42,739
+muhtemelen
+
+1070
+01:24:42,739 --> 01:24:44,739
+seninle
+
+1071
+01:24:44,739 --> 01:24:46,739
+alakalı
+
+1072
+01:24:46,739 --> 01:24:48,739
+lokaldedir diye tahmin ediyorum
+
+1073
+01:24:48,739 --> 01:24:50,739
+oradaki
+
+1074
+01:24:50,739 --> 01:24:52,739
+haberleşme yoğunluğundan ötürü.
+
+1075
+01:24:52,739 --> 01:24:56,470
+Bu arada
+
+1076
+01:24:56,470 --> 01:24:58,470
+o bölgede olan hepiniz
+
+1077
+01:24:58,470 --> 01:25:00,470
+kimler varsa hepinize çok çok
+
+1078
+01:25:00,470 --> 01:25:02,470
+geçmiş olsun. Umarım herhangi
+
+1079
+01:25:02,470 --> 01:25:04,470
+herhangi bir sıkıntılı durumunuz yoktur.
+
+1080
+01:25:04,470 --> 01:25:06,470
+Doğrudan
+
+1081
+01:25:06,470 --> 01:25:08,470
+yakın çevrenizde
+
+1082
+01:25:08,470 --> 01:25:10,470
+akrabalarınızda tanıdıklarınızda
+
+1083
+01:25:10,470 --> 01:25:12,470
+inşallah sıkıntılı şeyler
+
+1084
+01:25:12,470 --> 01:25:14,470
+yaşamamışsınızdır.
+
+1085
+01:25:14,470 --> 01:25:18,579
+Sorun
+
+1086
+01:25:18,579 --> 01:25:20,579
+devam ediyorsa nasıl yaparız bilmiyorum.
+
+1087
+01:25:20,579 --> 01:25:30,840
+Arkadaşlar yani doğal
+
+1088
+01:25:30,840 --> 01:25:32,840
+olarak
+
+1089
+01:25:32,840 --> 01:25:34,840
+bu hafta yoklamalar
+
+1090
+01:25:34,840 --> 01:25:36,840
+sayılmayacaktır. Bu nedenle
+
+1091
+01:25:36,840 --> 01:25:38,840
+bir bilginiz var. Valla size söylemişler
+
+1092
+01:25:38,840 --> 01:25:40,840
+bana bir şey söylemediler bilmiyorum.
+
+1093
+01:25:40,840 --> 01:25:42,840
+Şehir
+
+1094
+01:25:42,840 --> 01:25:44,840
+efsanesi olmasın.
+
+1095
+01:25:44,840 --> 01:25:46,840
+Yoklamaları nasıl sayacağız
+
+1096
+01:25:46,840 --> 01:25:48,840
+kim sayacak, nasıl sayarlar
+
+1097
+01:25:48,840 --> 01:25:50,840
+onu da bilmiyorum. Otomatik sayarlar
+
+1098
+01:25:50,840 --> 01:25:52,840
+başınıza bir şey gelmesin. Yani bu
+
+1099
+01:25:52,840 --> 01:25:54,840
+konudaki bilgilendirmede en son bize
+
+1100
+01:25:54,840 --> 01:25:56,840
+haber veriliyor anladığım kadarıyla.
+
+1101
+01:25:56,840 --> 01:25:58,840
+Benim haberim yok.
+
+1102
+01:25:58,840 --> 01:26:00,840
+Siz
+
+1103
+01:26:00,840 --> 01:26:02,840
+Twitter'dan harika. Benim Twitter
+
+1104
+01:26:02,840 --> 01:26:04,840
+account'um yok. O yüzden
+
+1105
+01:26:04,840 --> 01:26:10,460
+bilemeyeceğim.
+
+1106
+01:26:10,460 --> 01:26:12,460
+Yani siz
+
+1107
+01:26:12,460 --> 01:26:14,460
+şu anda iyi olmaya bakın. Önemli olan o
+
+1108
+01:26:14,460 --> 01:26:16,460
+yoklama işin hikayesi.
+
+1109
+01:26:16,460 --> 01:26:24,090
+Devam edelim.
+
+1110
+01:26:24,090 --> 01:26:31,619
+Şurada
+
+1111
+01:26:31,619 --> 01:26:33,619
+docker ile nginx
+
+1112
+01:26:33,619 --> 01:26:35,619
+çalıştırılırken bakın security ile
+
+1113
+01:26:35,619 --> 01:26:37,619
+alakalı bir json
+
+1114
+01:26:37,619 --> 01:26:39,619
+file söyleniyor. Filter json.
+
+1115
+01:26:39,619 --> 01:26:41,619
+Security option vereceğim diyorum.
+
+1116
+01:26:41,619 --> 01:26:43,619
+Seccomp yani
+
+1117
+01:26:43,619 --> 01:26:45,619
+BPF üzerinden vereceğim diyorum.
+
+1118
+01:26:45,619 --> 01:26:48,939
+Verdiğimde
+
+1119
+01:26:48,939 --> 01:26:50,939
+default action
+
+1120
+01:26:50,939 --> 01:26:52,939
+geri çevirme. Deny.
+
+1121
+01:26:52,939 --> 01:26:54,939
+Error no ile geri çevir.
+
+1122
+01:26:54,939 --> 01:26:59,079
+Her şeyi geri çevir.
+
+1123
+01:26:59,079 --> 01:27:01,079
+Arkasından diyorum ki
+
+1124
+01:27:01,079 --> 01:27:03,079
+Accept sistem
+
+1125
+01:27:03,079 --> 01:27:05,079
+çağrısı olursa eğer
+
+1126
+01:27:05,079 --> 01:27:07,079
+Accept sistem çağrısı
+
+1127
+01:27:07,079 --> 01:27:09,079
+olursa
+
+1128
+01:27:09,079 --> 01:27:11,079
+parametresi ne olursa, argümanı ne
+
+1129
+01:27:11,079 --> 01:27:13,079
+olursa olsun kabul et.
+
+1130
+01:27:13,079 --> 01:27:15,079
+Bunun gibi böyle
+
+1131
+01:27:15,079 --> 01:27:17,079
+arka arkaya şeyler. O yüzden docker
+
+1132
+01:27:17,079 --> 01:27:19,079
+önce bu filter json'da
+
+1133
+01:27:19,079 --> 01:27:21,079
+belirtilen
+
+1134
+01:27:21,079 --> 01:27:23,079
+kuralları az önce
+
+1135
+01:27:23,079 --> 01:27:25,079
+C örneğinde
+
+1136
+01:27:25,079 --> 01:27:27,079
+gösterdiğim gibi kernel'a
+
+1137
+01:27:27,079 --> 01:27:29,079
+tanıtıyor. Ondan
+
+1138
+01:27:29,079 --> 01:27:31,079
+sonra da nginx'i
+
+1139
+01:27:31,079 --> 01:27:33,079
+proses olarak başlatıyor.
+
+1140
+01:27:33,079 --> 01:27:35,079
+Yani bir container
+
+1141
+01:27:35,079 --> 01:27:37,079
+başlatmanın
+
+1142
+01:27:37,079 --> 01:27:39,079
+bir proses başlatmaktan
+
+1143
+01:27:39,079 --> 01:27:41,079
+çok fazla da bir farkı yok.
+
+1144
+01:27:41,079 --> 01:27:53,829
+System call
+
+1145
+01:27:53,829 --> 01:27:55,829
+interposition'ı
+
+1146
+01:27:55,829 --> 01:27:57,829
+kernel'a girmeden
+
+1147
+01:27:57,829 --> 01:28:02,300
+de yapmanın yolu var.
+
+1148
+01:28:02,300 --> 01:28:04,300
+Özellikle kaynak kısıtlı
+
+1149
+01:28:04,300 --> 01:28:06,300
+sistemlerde bu
+
+1150
+01:28:06,300 --> 01:28:08,300
+yol izleniyor.
+
+1151
+01:28:08,300 --> 01:28:12,729
+Kontrolün yapıldığı
+
+1152
+01:28:12,729 --> 01:28:14,729
+yer user space olduğu için
+
+1153
+01:28:14,729 --> 01:28:16,729
+biraz daha
+
+1154
+01:28:16,729 --> 01:28:18,729
+sıkıntılı.
+
+1155
+01:28:18,729 --> 01:28:20,729
+Güvenlik açısından belki başka açıkları
+
+1156
+01:28:20,729 --> 01:28:22,729
+olabilir diye düşünebiliriz.
+
+1157
+01:28:22,729 --> 01:28:24,729
+Paranoyak yaklaşabiliriz.
+
+1158
+01:28:24,729 --> 01:28:26,729
+Ancak
+
+1159
+01:28:26,729 --> 01:28:28,729
+akıllı bir yöntem.
+
+1160
+01:28:28,729 --> 01:28:34,439
+Şöyle ki
+
+1161
+01:28:34,439 --> 01:28:37,979
+burada da agent'ım var.
+
+1162
+01:28:37,979 --> 01:28:42,380
+Agent kurallara
+
+1163
+01:28:42,380 --> 01:28:44,380
+sahip. Yani az önce
+
+1164
+01:28:44,380 --> 01:28:46,380
+filter json'da neyse
+
+1165
+01:28:46,380 --> 01:28:48,380
+bu kurallar agent'a yükleniyor.
+
+1166
+01:28:48,380 --> 01:28:50,380
+Öyleyse benim reference
+
+1167
+01:28:50,380 --> 01:28:52,380
+monitörüm. Öyle düşünün.
+
+1168
+01:28:52,380 --> 01:28:54,380
+Bir
+
+1169
+01:28:54,380 --> 01:28:56,380
+proxy lipsy oluşturuyoruz.
+
+1170
+01:28:56,380 --> 01:28:58,380
+Ama bunu
+
+1171
+01:28:58,380 --> 01:29:00,380
+web anlamında
+
+1172
+01:29:00,380 --> 01:29:02,380
+hani web teknolojilerinde proxy diyoruz da
+
+1173
+01:29:02,380 --> 01:29:04,380
+programlamada
+
+1174
+01:29:04,380 --> 01:29:06,380
+remote procedure call
+
+1175
+01:29:06,380 --> 01:29:08,380
+yapısında veya
+
+1176
+01:29:08,380 --> 01:29:10,380
+procedure call yapısında
+
+1177
+01:29:10,380 --> 01:29:12,380
+lokalde olsun şeyde olsun
+
+1178
+01:29:12,380 --> 01:29:14,380
+kullandığımızda buna stop diyoruz.
+
+1179
+01:29:14,380 --> 01:29:16,380
+Proxy değil stop diyoruz. Aynı şey
+
+1180
+01:29:16,380 --> 01:29:19,850
+baktığımızda.
+
+1181
+01:29:19,850 --> 01:29:21,850
+Bu stop
+
+1182
+01:29:21,850 --> 01:29:23,850
+lipsy'de
+
+1183
+01:29:23,850 --> 01:29:25,850
+ilgi duyduğumuz
+
+1184
+01:29:25,850 --> 01:29:27,850
+filtrelenmesini
+
+1185
+01:29:27,850 --> 01:29:31,960
+istediğimiz sistem
+
+1186
+01:29:31,960 --> 01:29:33,960
+çağrıları agent'a
+
+1187
+01:29:33,960 --> 01:29:35,960
+yönlendiriliyor. Diğerleri
+
+1188
+01:29:35,960 --> 01:29:37,960
+doğrudan aşağıya gerçek
+
+1189
+01:29:37,960 --> 01:29:39,960
+lipsy'ye yönlendiriliyor.
+
+1190
+01:29:39,960 --> 01:29:41,960
+Agent
+
+1191
+01:29:41,960 --> 01:29:46,069
+onaylarsa
+
+1192
+01:29:46,069 --> 01:29:48,069
+kendisi kernel'a pas ediyor.
+
+1193
+01:29:48,069 --> 01:29:50,069
+Bakın dikkat edin kernel'a giriş çıkış
+
+1194
+01:29:50,069 --> 01:29:52,069
+yine bir.
+
+1195
+01:29:52,069 --> 01:29:54,069
+Az önceki gibi
+
+1196
+01:29:54,069 --> 01:29:56,069
+ilk ptrace örneğinde olduğu gibi
+
+1197
+01:29:56,069 --> 01:29:58,069
+birden fazla değil.
+
+1198
+01:29:58,069 --> 01:30:00,069
+Bir defa. Ve
+
+1199
+01:30:00,069 --> 01:30:02,069
+sistem çağrısı
+
+1200
+01:30:02,069 --> 01:30:04,069
+haricindeki her şey normal
+
+1201
+01:30:04,069 --> 01:30:06,069
+fonksiyon çağrısı şeklinde
+
+1202
+01:30:06,069 --> 01:30:08,069
+gerçekleşiyor.
+
+1203
+01:30:08,069 --> 01:30:10,069
+Maksimum performans. Ama
+
+1204
+01:30:10,069 --> 01:30:12,069
+her şey userspace'de.
+
+1205
+01:30:12,069 --> 01:30:14,069
+Kernel'de hiçbir şey değiştirmiyorsunuz.
+
+1206
+01:30:14,069 --> 01:30:16,069
+Yani
+
+1207
+01:30:16,069 --> 01:30:18,069
+portability anlamında
+
+1208
+01:30:18,069 --> 01:30:20,069
+daha güzel
+
+1209
+01:30:20,069 --> 01:30:22,069
+kernel'de değişiklik yapamayacağım
+
+1210
+01:30:22,069 --> 01:30:24,069
+durumlarda
+
+1211
+01:30:24,069 --> 01:30:26,069
+doğrudan kullanabileceğim
+
+1212
+01:30:26,069 --> 01:30:28,069
+bir şey userspace'de yaptığım için.
+
+1213
+01:30:28,069 --> 01:30:30,069
+Bir de kaynak
+
+1214
+01:30:30,069 --> 01:30:32,069
+kısıtı açısından bakıldığında
+
+1215
+01:30:32,069 --> 01:30:34,069
+kısıtlı kaynağa sahip
+
+1216
+01:30:34,069 --> 01:30:36,069
+sistemlerde
+
+1217
+01:30:36,069 --> 01:30:38,069
+işlem gücü ve memuru
+
+1218
+01:30:38,069 --> 01:30:40,069
+anlamında kullanabileceğim bir şey.
+
+1219
+01:30:40,069 --> 01:30:42,069
+Agent tek kopya arkadaşlar.
+
+1220
+01:30:42,069 --> 01:30:44,069
+Her uygulama için
+
+1221
+01:30:44,069 --> 01:30:46,069
+bir kopya yok. Agent
+
+1222
+01:30:46,069 --> 01:30:48,069
+kendisine gelen
+
+1223
+01:30:48,069 --> 01:30:50,069
+uygulamayla
+
+1224
+01:30:50,069 --> 01:30:52,069
+policy file'i match ediyor.
+
+1225
+01:30:52,069 --> 01:30:54,069
+Browser'sa
+
+1226
+01:30:54,069 --> 01:30:56,069
+browser'ı match ediyor. Server'sa
+
+1227
+01:30:56,069 --> 01:30:58,069
+web server'sa web server'ı match ediyor.
+
+1228
+01:30:58,069 --> 01:31:01,420
+Yani
+
+1229
+01:31:01,420 --> 01:31:03,420
+en tane
+
+1230
+01:31:03,420 --> 01:31:05,420
+uygulama için bir tane
+
+1231
+01:31:05,420 --> 01:31:07,420
+agent var.
+
+1232
+01:31:07,420 --> 01:31:09,420
+Agent kill oldu. Agent
+
+1233
+01:31:09,420 --> 01:31:11,420
+devre dışı kaldı.
+
+1234
+01:31:11,420 --> 01:31:13,420
+Uygulamalar çalışamıyorlar.
+
+1235
+01:31:13,420 --> 01:31:15,420
+Çünkü neden?
+
+1236
+01:31:15,420 --> 01:31:17,420
+Şu soldan sağa gördüğünüz
+
+1237
+01:31:17,420 --> 01:31:19,420
+ok işlemiyor.
+
+1238
+01:31:19,420 --> 01:31:21,420
+Niçin? Agent yok ortada.
+
+1239
+01:31:21,420 --> 01:31:23,420
+Yani reference monitor
+
+1240
+01:31:23,420 --> 01:31:25,420
+devre dışı kaldığında uygulamalarda
+
+1241
+01:31:25,420 --> 01:31:27,420
+devre dışı kalmalı demiştik ya.
+
+1242
+01:31:27,420 --> 01:31:29,420
+O şart da
+
+1243
+01:31:29,420 --> 01:31:37,979
+sağlanmış oluyor. Şimdi
+
+1244
+01:31:37,979 --> 01:31:39,979
+başlangıçtaki sıraya göre biraz farklı
+
+1245
+01:31:39,979 --> 01:31:41,979
+gibi oldu ama
+
+1246
+01:31:41,979 --> 01:31:43,979
+proses izolasyonunu
+
+1247
+01:31:43,979 --> 01:31:45,979
+bildikten sonra
+
+1248
+01:31:45,979 --> 01:31:47,979
+virtual machine'i anlamamız
+
+1249
+01:31:47,979 --> 01:31:49,979
+biraz daha rahat olacak.
+
+1250
+01:31:49,979 --> 01:31:51,979
+O yüzden
+
+1251
+01:31:51,979 --> 01:31:53,979
+şu anda
+
+1252
+01:31:53,979 --> 01:31:55,979
+virtual machine'e geçtik. Virtual machine'in
+
+1253
+01:31:55,979 --> 01:31:57,979
+hemen arkasından da
+
+1254
+01:31:57,979 --> 01:31:59,979
+şeye bakacağız.
+
+1255
+01:31:59,979 --> 01:32:01,979
+Thread'lerdeki yapıya
+
+1256
+01:32:01,979 --> 01:32:03,979
+bakacağız. Yani software fault
+
+1257
+01:32:03,979 --> 01:32:09,979
+isolation'a bakacağız. Şimdi hem
+
+1258
+01:32:09,979 --> 01:32:11,979
+sınıflandırılmış hem de
+
+1259
+01:32:11,979 --> 01:32:13,979
+sınıflandırılmamış verinin
+
+1260
+01:32:13,979 --> 01:32:15,979
+askeriyede
+
+1261
+01:32:15,979 --> 01:32:17,979
+tasnif dışı ve
+
+1262
+01:32:17,979 --> 01:32:19,979
+tasnif edilmiş veri diye geçer.
+
+1263
+01:32:19,979 --> 01:32:21,979
+Yani özelliğe sahip ve
+
+1264
+01:32:21,979 --> 01:32:23,979
+sıradan veri diye düşünebilirsiniz.
+
+1265
+01:32:23,979 --> 01:32:25,979
+Aynı
+
+1266
+01:32:25,979 --> 01:32:27,979
+donanım
+
+1267
+01:32:27,979 --> 01:32:29,979
+platformunda
+
+1268
+01:32:29,979 --> 01:32:31,979
+işlenebilmesi adına
+
+1269
+01:32:31,979 --> 01:32:33,979
+Amerika'daki
+
+1270
+01:32:33,979 --> 01:32:35,979
+National Security Agency
+
+1271
+01:32:35,979 --> 01:32:37,979
+Linux'u
+
+1272
+01:32:37,979 --> 01:32:39,979
+kullanarak bir ortam oluşturuyor.
+
+1273
+01:32:39,979 --> 01:32:41,979
+Buna da NetTap
+
+1274
+01:32:41,979 --> 01:32:43,979
+diyor.
+
+1275
+01:32:43,979 --> 01:32:45,979
+Oluşturduğu ortam aslında sanal
+
+1276
+01:32:45,979 --> 01:32:47,979
+makinelerden yararlanma.
+
+1277
+01:32:47,979 --> 01:32:49,979
+O dönemdeki mevcut
+
+1278
+01:32:49,979 --> 01:32:51,979
+ilk ortaya
+
+1279
+01:32:51,979 --> 01:32:53,979
+çıktığında virtual machine monitör
+
+1280
+01:32:53,979 --> 01:32:55,979
+hani KVM'i var işte
+
+1281
+01:32:55,979 --> 01:32:57,979
+KEMUS'u var falan
+
+1282
+01:32:57,979 --> 01:32:59,979
+bunlar var ya. Zen onları
+
+1283
+01:32:59,979 --> 01:33:01,979
+kullanarak yapıyor aslında.
+
+1284
+01:33:01,979 --> 01:33:03,979
+Çok da öyle süper harika
+
+1285
+01:33:03,979 --> 01:33:05,979
+özel bir şey yapmıyor.
+
+1286
+01:33:05,979 --> 01:33:07,979
+Host operating
+
+1287
+01:33:07,979 --> 01:33:09,979
+sistem var. Onun üzerine
+
+1288
+01:33:09,979 --> 01:33:11,979
+yerleştirilmiş virtual machine monitör var.
+
+1289
+01:33:11,979 --> 01:33:16,340
+VM1'de
+
+1290
+01:33:16,340 --> 01:33:18,340
+guest host 1 çalışıyor.
+
+1291
+01:33:18,340 --> 01:33:20,340
+Application'lar çalışıyor.
+
+1292
+01:33:20,340 --> 01:33:22,340
+VM2'de guest host 2 çalışıyor.
+
+1293
+01:33:22,340 --> 01:33:24,340
+Application'lar çalışıyor.
+
+1294
+01:33:24,340 --> 01:33:26,340
+Ancak
+
+1295
+01:33:26,340 --> 01:33:28,340
+temel nokta şu
+
+1296
+01:33:28,340 --> 01:33:30,340
+VM1 tamamen classified
+
+1297
+01:33:30,340 --> 01:33:32,340
+özel gizli bilgi
+
+1298
+01:33:32,340 --> 01:33:36,619
+işleyebilir. Buranın
+
+1299
+01:33:36,619 --> 01:33:38,619
+internete bakan
+
+1300
+01:33:38,619 --> 01:33:40,619
+işte web servisi
+
+1301
+01:33:40,619 --> 01:33:45,020
+sunan bir
+
+1302
+01:33:45,020 --> 01:33:47,020
+sunucusu olabilir. O uygulamaları
+
+1303
+01:33:47,020 --> 01:33:49,020
+içeriyor olabilir.
+
+1304
+01:33:49,020 --> 01:33:54,250
+VM kavramı
+
+1305
+01:33:54,250 --> 01:33:56,250
+çok eski bir kavram. Bakın
+
+1306
+01:33:56,250 --> 01:33:58,250
+60 yıllık bir kavram.
+
+1307
+01:33:58,250 --> 01:34:00,250
+1960'dan beri var aslında.
+
+1308
+01:34:00,250 --> 01:34:02,250
+1970'de
+
+1309
+01:34:02,250 --> 01:34:04,250
+ticari hale geliyor.
+
+1310
+01:34:04,250 --> 01:34:06,250
+2000'lere kadar
+
+1311
+01:34:06,250 --> 01:34:08,250
+30 sene boyunca
+
+1312
+01:34:08,250 --> 01:34:10,250
+sadece ve
+
+1313
+01:34:10,250 --> 01:34:12,250
+sadece IBM
+
+1314
+01:34:12,250 --> 01:34:14,250
+şirketinin
+
+1315
+01:34:14,250 --> 01:34:16,250
+kendisinin
+
+1316
+01:34:16,250 --> 01:34:18,250
+doğrudan kullandığı, ticarileştirdiği
+
+1317
+01:34:18,250 --> 01:34:20,250
+ve olgunlaştırdığı bir teknoloji.
+
+1318
+01:34:20,250 --> 01:34:25,319
+Sistemlerinde
+
+1319
+01:34:25,319 --> 01:34:27,319
+istisnasız
+
+1320
+01:34:27,319 --> 01:34:29,319
+yazılım seviyesinde ve donanım
+
+1321
+01:34:29,319 --> 01:34:31,319
+seviyesinde sanallaştırma yapıyor.
+
+1322
+01:34:31,319 --> 01:34:33,319
+Her seviyede.
+
+1323
+01:34:33,319 --> 01:34:35,319
+Cihaz erişiminden
+
+1324
+01:34:35,319 --> 01:34:37,319
+işte işlemci kullanımına
+
+1325
+01:34:37,319 --> 01:34:39,319
+varıncaya kadar.
+
+1326
+01:34:39,319 --> 01:34:41,319
+Ancak 2000 yılıyla
+
+1327
+01:34:41,319 --> 01:34:43,319
+beraber VMware
+
+1328
+01:34:43,319 --> 01:34:45,319
+şirketi
+
+1329
+01:34:45,319 --> 01:34:47,319
+bu teknolojiyi
+
+1330
+01:34:47,319 --> 01:34:49,319
+Intel mimarisine de taşımaya
+
+1331
+01:34:49,319 --> 01:34:51,319
+karar veriyor. Çünkü o dönemde
+
+1332
+01:34:51,319 --> 01:34:53,319
+hani Linux'ta
+
+1333
+01:34:53,319 --> 01:34:55,319
+birtakım şeyler var, gelişmeler var.
+
+1334
+01:34:55,319 --> 01:34:57,319
+Belirli bir olgunluğa
+
+1335
+01:34:57,319 --> 01:34:59,319
+ulaşmış durumda ve
+
+1336
+01:34:59,319 --> 01:35:01,319
+Linux altında sanallaştırma ile
+
+1337
+01:35:01,319 --> 01:35:03,319
+alakalı projeler başlamış durumda.
+
+1338
+01:35:03,319 --> 01:35:06,729
+Bunun sonucunda da
+
+1339
+01:35:06,729 --> 01:35:08,729
+şu anda günümüzde
+
+1340
+01:35:08,729 --> 01:35:10,729
+ister
+
+1341
+01:35:10,729 --> 01:35:12,729
+özel, ister halka açık
+
+1342
+01:35:12,729 --> 01:35:14,729
+bulut ortamları olsun
+
+1343
+01:35:14,729 --> 01:35:16,729
+her şey
+
+1344
+01:35:16,729 --> 01:35:18,729
+VM
+
+1345
+01:35:18,729 --> 01:35:20,729
+mantığı ile yürütülmekte.
+
+1346
+01:35:20,729 --> 01:35:22,729
+Container'lar
+
+1347
+01:35:22,729 --> 01:35:24,729
+bile sonuçta
+
+1348
+01:35:24,729 --> 01:35:26,729
+VM altında çalıştırılıyor.
+
+1349
+01:35:26,729 --> 01:35:28,729
+Print Server, Mail Server,
+
+1350
+01:35:28,729 --> 01:35:30,729
+Web Server, File Server,
+
+1351
+01:35:30,729 --> 01:35:32,729
+Database Server. Aklınıza gelebilecek
+
+1352
+01:35:32,729 --> 01:35:37,000
+her türlü uygulama.
+
+1353
+01:35:37,000 --> 01:35:39,000
+Ancak burada
+
+1354
+01:35:39,000 --> 01:35:41,000
+şöyle bir durum söz konusu.
+
+1355
+01:35:41,000 --> 01:35:43,000
+Bir tarafta 1970'ten
+
+1356
+01:35:43,000 --> 01:35:45,000
+2000 yılına kadar olgunlaşmış bir
+
+1357
+01:35:45,000 --> 01:35:47,000
+Virtual Machine
+
+1358
+01:35:47,000 --> 01:35:49,000
+teknolojisi var.
+
+1359
+01:35:49,000 --> 01:35:51,000
+Hem yazılım hem donanım.
+
+1360
+01:35:51,000 --> 01:35:53,000
+Diğer tarafta ise
+
+1361
+01:35:53,000 --> 01:35:55,000
+olgunlaşmaya
+
+1362
+01:35:55,000 --> 01:35:57,000
+çalışan bir teknoloji var.
+
+1363
+01:35:57,000 --> 01:35:59,000
+İşte
+
+1364
+01:35:59,000 --> 01:36:01,000
+işlemci
+
+1365
+01:36:01,000 --> 01:36:03,000
+ile beraber
+
+1366
+01:36:03,000 --> 01:36:05,000
+sunucu sistemlerinin
+
+1367
+01:36:05,000 --> 01:36:07,000
+hatta VM'i biz desktop'ımızda
+
+1368
+01:36:07,000 --> 01:36:10,500
+da kullanıyoruz.
+
+1369
+01:36:10,500 --> 01:36:12,500
+Sunucu sistemlerinin, desktop sistemlerinin
+
+1370
+01:36:12,500 --> 01:36:14,500
+donanımsal yapısının
+
+1371
+01:36:14,500 --> 01:36:16,500
+yeterince
+
+1372
+01:36:16,500 --> 01:36:18,500
+olgunlaşmamış olması.
+
+1373
+01:36:18,500 --> 01:36:20,500
+Çünkü bir tarafta
+
+1374
+01:36:20,500 --> 01:36:22,500
+kurumsal sistemlerden bahsediyoruz.
+
+1375
+01:36:22,500 --> 01:36:24,500
+Bir tarafta daha böyle orta
+
+1376
+01:36:24,500 --> 01:36:26,500
+seviye bir yerden bahsediyoruz.
+
+1377
+01:36:26,500 --> 01:36:28,500
+Diğer taraftan da
+
+1378
+01:36:28,500 --> 01:36:30,500
+sanallaştırma teknolojisi
+
+1379
+01:36:30,500 --> 01:36:32,500
+kendisinin
+
+1380
+01:36:32,500 --> 01:36:34,500
+belirli aşamaları
+
+1381
+01:36:34,500 --> 01:36:36,500
+geçerek olgunlaşmak zorunda
+
+1382
+01:36:36,500 --> 01:36:38,500
+olması sonucunda
+
+1383
+01:36:38,500 --> 01:36:40,500
+bu dönemde
+
+1384
+01:36:40,500 --> 01:36:42,500
+VM kullanılırken
+
+1385
+01:36:42,500 --> 01:36:44,500
+bile, bu metodoloji
+
+1386
+01:36:44,500 --> 01:36:46,500
+kullanılırken bile yaşanan
+
+1387
+01:36:46,500 --> 01:36:48,500
+güvenlik sıkıntıları var.
+
+1388
+01:36:48,500 --> 01:36:53,220
+Şimdi o sıkıntıları
+
+1389
+01:36:53,220 --> 01:36:55,220
+gözlem geçirmeden önce
+
+1390
+01:36:55,220 --> 01:36:57,220
+Hypervisor dediğimiz
+
+1391
+01:36:57,220 --> 01:36:59,220
+bu VM'lerin oluşturulmasını
+
+1392
+01:36:59,220 --> 01:37:01,220
+başlatılmasını sonlandırılmasını
+
+1393
+01:37:01,220 --> 01:37:03,220
+kaynak atanmasını
+
+1394
+01:37:03,220 --> 01:37:05,220
+sağlayan o ara katmanla alakalı
+
+1395
+01:37:05,220 --> 01:37:07,220
+güvenlik açısından
+
+1396
+01:37:07,220 --> 01:37:09,220
+öngörülerimiz nelerdir
+
+1397
+01:37:09,220 --> 01:37:11,220
+onları bir
+
+1398
+01:37:11,220 --> 01:37:13,220
+değerlendirelim.
+
+1399
+01:37:13,220 --> 01:37:15,220
+Kötü niyetli program
+
+1400
+01:37:15,220 --> 01:37:17,220
+VM içerisinde
+
+1401
+01:37:17,220 --> 01:37:19,220
+çalışan işletim sistemini
+
+1402
+01:37:19,220 --> 01:37:21,220
+ele geçirebilir.
+
+1403
+01:37:21,220 --> 01:37:23,220
+Oradaki uygulamaları ele geçirebilir.
+
+1404
+01:37:23,220 --> 01:37:25,220
+Ancak
+
+1405
+01:37:25,220 --> 01:37:27,220
+ele geçirdiği
+
+1406
+01:37:27,220 --> 01:37:29,220
+VM'in sınırları
+
+1407
+01:37:29,220 --> 01:37:31,220
+dışına çıkamaz.
+
+1408
+01:37:31,220 --> 01:37:33,220
+Yani
+
+1409
+01:37:33,220 --> 01:37:35,220
+Hypervisor'ı
+
+1410
+01:37:35,220 --> 01:37:37,220
+Virtual Machine Monitor'ı
+
+1411
+01:37:37,220 --> 01:37:39,220
+ele geçiremez. Varsa
+
+1412
+01:37:39,220 --> 01:37:41,220
+onun altındaki host operating
+
+1413
+01:37:41,220 --> 01:37:43,220
+sistemi ele geçiremez.
+
+1414
+01:37:43,220 --> 01:37:45,220
+Aynı zamanda
+
+1415
+01:37:45,220 --> 01:37:47,220
+aynı donanım üzerinde
+
+1416
+01:37:47,220 --> 01:37:49,220
+aynı Hypervisor üzerinde
+
+1417
+01:37:49,220 --> 01:37:51,220
+çalışan diğer
+
+1418
+01:37:51,220 --> 01:37:53,220
+VM'lere ulaşamaz.
+
+1419
+01:37:55,220 --> 01:37:57,220
+Hypervisor'ın bu durumda
+
+1420
+01:37:57,220 --> 01:37:59,220
+prensipleri öğrendik.
+
+1421
+01:37:59,220 --> 01:38:01,220
+Basit olması
+
+1422
+01:38:01,220 --> 01:38:03,220
+kısa olması
+
+1423
+01:38:03,220 --> 01:38:08,140
+analiz edilip
+
+1424
+01:38:08,140 --> 01:38:10,140
+bilinen güvenlik zafiyetlerini
+
+1425
+01:38:10,140 --> 01:38:12,140
+içermediğini garanti edilmesi gerekiyor.
+
+1426
+01:38:12,140 --> 01:38:18,739
+Bu olgunlaşma sürecinde
+
+1427
+01:38:18,739 --> 01:38:20,739
+yani 2000'den günümüze
+
+1428
+01:38:20,739 --> 01:38:22,739
+kadar Intel
+
+1429
+01:38:22,739 --> 01:38:24,739
+mimarisinde
+
+1430
+01:38:24,739 --> 01:38:26,739
+işte Intel benzeri mimarilerde
+
+1431
+01:38:26,739 --> 01:38:28,739
+gerçekleşen
+
+1432
+01:38:28,739 --> 01:38:30,739
+olgunlaşma sürecinde
+
+1433
+01:38:30,739 --> 01:38:34,149
+yaşanan
+
+1434
+01:38:34,149 --> 01:38:36,149
+güvenlik zafiyeti
+
+1435
+01:38:36,149 --> 01:38:38,149
+açısından
+
+1436
+01:38:38,149 --> 01:38:40,149
+ön plana çıkan problemlerden
+
+1437
+01:38:40,149 --> 01:38:42,149
+bir tanesi
+
+1438
+01:38:42,149 --> 01:38:44,149
+Howard Channel.
+
+1439
+01:38:44,149 --> 01:38:46,149
+Bu çok can sıkıcı bir problem.
+
+1440
+01:38:46,149 --> 01:38:48,149
+Birbirinden izole
+
+1441
+01:38:48,149 --> 01:38:50,149
+olduğunu düşündüğümüz
+
+1442
+01:38:50,149 --> 01:38:52,149
+iki komponent arasında
+
+1443
+01:38:52,149 --> 01:38:54,149
+ön göremediğimiz
+
+1444
+01:38:54,149 --> 01:38:56,149
+tanımlı olmayan
+
+1445
+01:38:56,149 --> 01:38:58,149
+haberleşme gerçekleşmesi.
+
+1446
+01:38:58,149 --> 01:39:00,149
+Şimdi bunun
+
+1447
+01:39:00,149 --> 01:39:02,149
+günlük hayatta örnekleri var aslında.
+
+1448
+01:39:02,149 --> 01:39:04,149
+Akrostiş
+
+1449
+01:39:04,149 --> 01:39:06,149
+duymuşsunuzdur.
+
+1450
+01:39:06,149 --> 01:39:08,149
+Biz
+
+1451
+01:39:08,149 --> 01:39:10,149
+yazıları veya şiirleri
+
+1452
+01:39:10,149 --> 01:39:12,149
+satır satır okuyoruz.
+
+1453
+01:39:12,149 --> 01:39:14,149
+Soldan sağa doğru.
+
+1454
+01:39:14,149 --> 01:39:16,149
+Ama şiiri yazan
+
+1455
+01:39:16,149 --> 01:39:19,619
+her satırın ilk kelimesi
+
+1456
+01:39:19,619 --> 01:39:21,619
+veya belirli bir kelimesi
+
+1457
+01:39:21,619 --> 01:39:23,619
+yukarıdan aşağıya
+
+1458
+01:39:23,619 --> 01:39:25,619
+okunduğunda onun harfleri
+
+1459
+01:39:25,619 --> 01:39:27,619
+ilk harfleri
+
+1460
+01:39:27,619 --> 01:39:29,619
+bir araya getirildiğinde
+
+1461
+01:39:29,619 --> 01:39:31,619
+bir başka
+
+1462
+01:39:31,619 --> 01:39:33,619
+kelime veya cümle çıkartıyor ortaya.
+
+1463
+01:39:33,619 --> 01:39:37,159
+Mevcut bir
+
+1464
+01:39:37,159 --> 01:39:39,159
+verinin içerisine
+
+1465
+01:39:39,159 --> 01:39:41,159
+gömülmüş bir başka bilgi diye düşünün.
+
+1466
+01:39:41,159 --> 01:39:43,159
+Normalde beklemediğimiz
+
+1467
+01:39:43,159 --> 01:39:45,159
+biz soldan sağa beklerken
+
+1468
+01:39:45,159 --> 01:39:47,159
+bu yukarıdan aşağıya şeklinde.
+
+1469
+01:39:47,159 --> 01:39:49,159
+Burada da aynı şey söz konusu.
+
+1470
+01:39:49,159 --> 01:39:51,159
+Bakın, az önceki
+
+1471
+01:39:51,159 --> 01:39:53,159
+NetTap ortamını düşünün.
+
+1472
+01:39:53,159 --> 01:39:55,159
+Hypervisor'ın üzerine
+
+1473
+01:39:55,159 --> 01:39:57,159
+iki tane VM yerleştirilmiş. Biri
+
+1474
+01:39:57,159 --> 01:39:59,159
+Public, diğeri Classified.
+
+1475
+01:39:59,159 --> 01:40:01,159
+Public VM ele geçmiş.
+
+1476
+01:40:01,159 --> 01:40:03,159
+İşte herkese açık ya internet üzerinden
+
+1477
+01:40:03,159 --> 01:40:05,159
+bir saldırı geldi.
+
+1478
+01:40:05,159 --> 01:40:07,159
+Ele geçti ve orada
+
+1479
+01:40:07,159 --> 01:40:09,159
+Listener isimli bir proses çalışıyor.
+
+1480
+01:40:09,159 --> 01:40:12,659
+Ama diyoruz ki
+
+1481
+01:40:12,659 --> 01:40:14,659
+öbür taraf
+
+1482
+01:40:14,659 --> 01:40:16,659
+bakın kalın duvarlar var.
+
+1483
+01:40:16,659 --> 01:40:18,659
+Siyah, Classified
+
+1484
+01:40:18,659 --> 01:40:20,659
+başına bir şey gelmez.
+
+1485
+01:40:20,659 --> 01:40:22,659
+Oradan dışarıya
+
+1486
+01:40:22,659 --> 01:40:24,659
+o Secret Dock çıkmaz.
+
+1487
+01:40:24,659 --> 01:40:26,659
+Ancak
+
+1488
+01:40:26,659 --> 01:40:28,659
+öyle değil.
+
+1489
+01:40:28,659 --> 01:40:30,659
+Sosyal mühendislik sonucu
+
+1490
+01:40:30,659 --> 01:40:34,039
+bu
+
+1491
+01:40:34,039 --> 01:40:36,039
+sistemde çalışan bir
+
+1492
+01:40:36,039 --> 01:40:38,039
+görevli mühendis
+
+1493
+01:40:38,039 --> 01:40:41,479
+olsun. Kandırılıyor
+
+1494
+01:40:41,479 --> 01:40:43,479
+ve evinde kullandığı
+
+1495
+01:40:43,479 --> 01:40:45,479
+bilgisayar
+
+1496
+01:40:45,479 --> 01:40:47,479
+ele geçiriliyor.
+
+1497
+01:40:47,479 --> 01:40:49,479
+Çünkü o bilgisayar
+
+1498
+01:40:49,479 --> 01:40:51,479
+bir olasılıkla internete bağlı.
+
+1499
+01:40:51,479 --> 01:40:53,479
+Mailini okuyor, web sayfalarına
+
+1500
+01:40:53,479 --> 01:40:55,479
+gidiyor, bankasına bağlanıyor,
+
+1501
+01:40:55,479 --> 01:40:57,479
+neyse mesajlaşıyor.
+
+1502
+01:40:57,479 --> 01:41:01,909
+Evinde kullandığı
+
+1503
+01:41:01,909 --> 01:41:03,909
+USB memori
+
+1504
+01:41:03,909 --> 01:41:05,909
+bir an
+
+1505
+01:41:05,909 --> 01:41:07,909
+bu bilgisayarda
+
+1506
+01:41:07,909 --> 01:41:09,909
+da kullanıyor.
+
+1507
+01:41:09,909 --> 01:41:11,909
+Classified VM'de de kullanıyor.
+
+1508
+01:41:11,909 --> 01:41:13,909
+Ve o USB memori üzerinden
+
+1509
+01:41:13,909 --> 01:41:15,909
+Classified
+
+1510
+01:41:15,909 --> 01:41:17,909
+VM'e
+
+1511
+01:41:17,909 --> 01:41:21,640
+malware
+
+1512
+01:41:21,640 --> 01:41:23,640
+taşınmış oluyor.
+
+1513
+01:41:23,640 --> 01:41:25,640
+Bu yaşanmış olay.
+
+1514
+01:41:25,640 --> 01:41:29,819
+Sürekli de yaşanan bir olay.
+
+1515
+01:41:29,819 --> 01:41:31,819
+Şöyle söyleyeyim. Bir dönem
+
+1516
+01:41:31,819 --> 01:41:33,819
+Türkiye'de de satılıyordu.
+
+1517
+01:41:33,819 --> 01:41:37,220
+Çin'den
+
+1518
+01:41:37,220 --> 01:41:39,220
+gelen akıllı
+
+1519
+01:41:39,220 --> 01:41:41,220
+fotoğraf
+
+1520
+01:41:41,220 --> 01:41:43,220
+çerçeveleri vardı.
+
+1521
+01:41:43,220 --> 01:41:45,220
+Kenarından USB takıyordunuz.
+
+1522
+01:41:45,220 --> 01:41:47,220
+USB'nin içindeki
+
+1523
+01:41:47,220 --> 01:41:49,220
+işte JPEG neyse
+
+1524
+01:41:49,220 --> 01:41:51,220
+PNG formatındaki
+
+1525
+01:41:51,220 --> 01:41:53,220
+resimleri ekranda
+
+1526
+01:41:53,220 --> 01:41:55,220
+dönüşümlü olarak gösteriyordu.
+
+1527
+01:41:55,220 --> 01:41:57,220
+Bu akıllı fotoğraf çerçeveleri
+
+1528
+01:41:57,220 --> 01:41:59,220
+içerisinden
+
+1529
+01:41:59,220 --> 01:42:01,220
+virüs çıktı.
+
+1530
+01:42:01,220 --> 01:42:03,220
+Takılan USB'yi
+
+1531
+01:42:03,220 --> 01:42:05,220
+etkilediği anlaşıldı.
+
+1532
+01:42:05,220 --> 01:42:07,220
+O USB'yi de oradan çıkartıp
+
+1533
+01:42:07,220 --> 01:42:09,220
+daha sonra bilgisayarınıza taktığınızda
+
+1534
+01:42:09,220 --> 01:42:11,220
+virüsü
+
+1535
+01:42:11,220 --> 01:42:13,220
+kendi bilgisayarınıza taşıdığınız ortaya çıktı.
+
+1536
+01:42:13,220 --> 01:42:15,220
+Beklemediğiniz bir şey değil mi?
+
+1537
+01:42:15,220 --> 01:42:17,220
+Halbuki o
+
+1538
+01:42:17,220 --> 01:42:19,220
+çerçeveyi gördüğünüzde ne kadar etkileniyorsunuz,
+
+1539
+01:42:19,220 --> 01:42:21,220
+ne kadar akıllıca bir şey diyorsunuz.
+
+1540
+01:42:21,220 --> 01:42:23,220
+O yüzden dikkatli
+
+1541
+01:42:23,220 --> 01:42:25,220
+olmak lazım.
+
+1542
+01:42:25,220 --> 01:42:27,220
+Şimdi peki, bir tarafta
+
+1543
+01:42:27,220 --> 01:42:29,220
+X-Fight VM var, diğer tarafta
+
+1544
+01:42:29,220 --> 01:42:31,220
+Public VM var. Bunlar birbirlerinden
+
+1545
+01:42:31,220 --> 01:42:33,220
+tamamen izole edilmişler.
+
+1546
+01:42:33,220 --> 01:42:35,220
+Nasıl olacak da
+
+1547
+01:42:35,220 --> 01:42:37,220
+sol taraftan sağ tarafa
+
+1548
+01:42:37,220 --> 01:42:39,220
+biz bu veriyi
+
+1549
+01:42:39,220 --> 01:42:42,979
+dışarıya çıkartacağız?
+
+1550
+01:42:42,979 --> 01:42:44,979
+Başa dönüyoruz. O sanallaşma
+
+1551
+01:42:44,979 --> 01:42:46,979
+teknolojisinin özellikle
+
+1552
+01:42:46,979 --> 01:42:48,979
+Intel platformunda gelişmesi
+
+1553
+01:42:48,979 --> 01:42:50,979
+olgunlaşmasından
+
+1554
+01:42:50,979 --> 01:42:52,979
+bahsetmiştik ya.
+
+1555
+01:42:52,979 --> 01:42:54,979
+Başlangıçtaki hypervisorlar
+
+1556
+01:42:54,979 --> 01:42:56,979
+ne yazık ki
+
+1557
+01:42:56,979 --> 01:42:58,979
+özellikle
+
+1558
+01:42:58,979 --> 01:43:00,979
+işlemci kullanımı konusunda
+
+1559
+01:43:00,979 --> 01:43:02,979
+VM'lere
+
+1560
+01:43:02,979 --> 01:43:04,979
+kısıt getirme
+
+1561
+01:43:04,979 --> 01:43:06,979
+açısından sıkıntılıydı.
+
+1562
+01:43:06,979 --> 01:43:08,979
+Yani şunu söyleyemiyordunuz.
+
+1563
+01:43:08,979 --> 01:43:10,979
+2 GHz'lik
+
+1564
+01:43:10,979 --> 01:43:12,979
+bir işlemciniz var. Bunun
+
+1565
+01:43:12,979 --> 01:43:14,979
+1.5 GHz'i Classified'de
+
+1566
+01:43:14,979 --> 01:43:16,979
+olsun, 500 MHz'i
+
+1567
+01:43:16,979 --> 01:43:18,979
+Public'de olsun.
+
+1568
+01:43:18,979 --> 01:43:20,979
+Böyle bir
+
+1569
+01:43:20,979 --> 01:43:22,979
+ayarlama
+
+1570
+01:43:22,979 --> 01:43:24,979
+yapma şansınız yok. Bakın memory'de
+
+1571
+01:43:24,979 --> 01:43:26,979
+çok kolay. Ona 2 verdim, buna 4
+
+1572
+01:43:26,979 --> 01:43:28,979
+verdim. Bitti. Ama işlemci
+
+1573
+01:43:28,979 --> 01:43:30,979
+de Cycle üzerinden bunun yapılması
+
+1574
+01:43:30,979 --> 01:43:32,979
+gerekiyor. Bayağı sıkıntılı.
+
+1575
+01:43:36,979 --> 01:43:38,979
+O noktaya gelinebildi.
+
+1576
+01:43:38,979 --> 01:43:40,979
+Bu önemli bir şey.
+
+1577
+01:43:40,979 --> 01:43:44,390
+Ama bu noktaya
+
+1578
+01:43:44,390 --> 01:43:46,390
+gelinmeden önce,
+
+1579
+01:43:46,390 --> 01:43:48,390
+az önce tarif ettiğim problemin
+
+1580
+01:43:48,390 --> 01:43:50,390
+olduğu durumda
+
+1581
+01:43:50,390 --> 01:43:52,390
+bu ne anlama geliyor?
+
+1582
+01:43:52,390 --> 01:43:54,390
+Bu VM'lerden herhangi bir tanesi
+
+1583
+01:43:54,390 --> 01:43:56,390
+herhangi bir anda
+
+1584
+01:43:56,390 --> 01:43:58,390
+diğerine göre daha fazla
+
+1585
+01:43:58,390 --> 01:44:00,390
+işlemci kullanma ihtiyacı duyarsa
+
+1586
+01:44:00,390 --> 01:44:02,390
+diğeri otomatikman yavaşlayacak.
+
+1587
+01:44:02,390 --> 01:44:04,390
+Bu probleme
+
+1588
+01:44:06,390 --> 01:44:08,390
+noisy neighbor diyoruz.
+
+1589
+01:44:08,390 --> 01:44:10,390
+Şimdi apartmanda
+
+1590
+01:44:10,390 --> 01:44:12,390
+oturuyorsunuz, siz
+
+1591
+01:44:12,390 --> 01:44:14,390
+sessiz sakin çalışmak istiyorsunuz
+
+1592
+01:44:14,390 --> 01:44:16,390
+ama yan taraf müziği
+
+1593
+01:44:16,390 --> 01:44:18,390
+açmış, sonuna
+
+1594
+01:44:18,390 --> 01:44:21,699
+kadar müzik dinliyor. O
+
+1595
+01:44:21,699 --> 01:44:23,699
+müziğin normal şartlarda
+
+1596
+01:44:23,699 --> 01:44:25,699
+sizin dairenize
+
+1597
+01:44:25,699 --> 01:44:27,699
+geçmemesi lazım. Ama
+
+1598
+01:44:27,699 --> 01:44:29,699
+geçiyor. Ortak alanı
+
+1599
+01:44:29,699 --> 01:44:31,699
+kullanıyorsunuz, arada izolasyon var
+
+1600
+01:44:31,699 --> 01:44:33,699
+ama izolasyon yeterli değil.
+
+1601
+01:44:33,699 --> 01:44:35,699
+Tipik problem, noisy neighbor.
+
+1602
+01:44:35,699 --> 01:44:37,699
+Gürültücü
+
+1603
+01:44:37,699 --> 01:44:39,699
+işte nedir?
+
+1604
+01:44:39,699 --> 01:44:41,699
+Yanınızda
+
+1605
+01:44:41,699 --> 01:44:47,640
+yaşayan insan.
+
+1606
+01:44:47,640 --> 01:44:49,640
+Bunun sonucunda
+
+1607
+01:44:49,640 --> 01:44:51,640
+soldaki malware'de
+
+1608
+01:44:51,640 --> 01:44:53,640
+sağdaki listener arasında
+
+1609
+01:44:53,640 --> 01:44:55,640
+bir gizli kanal oluşuyor ve
+
+1610
+01:44:55,640 --> 01:44:57,640
+listener'da bu veriyi dışarı çıkartabiliyor.
+
+1611
+01:44:57,640 --> 01:44:59,640
+Nasıl yapmışlar?
+
+1612
+01:44:59,640 --> 01:45:02,890
+Şöyle yapmışlar.
+
+1613
+01:45:02,890 --> 01:45:04,890
+Malware'i de listener'da yazan aynı kişi.
+
+1614
+01:45:04,890 --> 01:45:08,710
+Gecenin birinde,
+
+1615
+01:45:08,710 --> 01:45:10,710
+herhangi bir an.
+
+1616
+01:45:10,710 --> 01:45:12,710
+Malware
+
+1617
+01:45:12,710 --> 01:45:14,710
+SecretDock'a
+
+1618
+01:45:14,710 --> 01:45:16,710
+erişebiliyor ya, orada zaten oraya
+
+1619
+01:45:16,710 --> 01:45:18,710
+girip kontrolünü ele geçirmiş.
+
+1620
+01:45:18,710 --> 01:45:20,710
+Oradaki bilgileri
+
+1621
+01:45:20,710 --> 01:45:22,710
+bit by bit dışarı çıkartmaya
+
+1622
+01:45:22,710 --> 01:45:26,949
+karar veriyor. Belirli bir
+
+1623
+01:45:26,949 --> 01:45:28,949
+süre için CPU intensif
+
+1624
+01:45:28,949 --> 01:45:30,949
+bir iş yapıyor. Diyelim ki
+
+1625
+01:45:30,949 --> 01:45:34,460
+3 saniyeliğine. Aynı zaman
+
+1626
+01:45:34,460 --> 01:45:36,460
+diliminde listener'da
+
+1627
+01:45:38,460 --> 01:45:40,460
+farklı bir iş yapıyor ama o hep
+
+1628
+01:45:40,460 --> 01:45:42,460
+aynı işi yapıyor. Sadece o işi
+
+1629
+01:45:42,460 --> 01:45:44,460
+bitme süresini ölçüyor.
+
+1630
+01:45:44,460 --> 01:45:46,460
+Eğer
+
+1631
+01:45:46,460 --> 01:45:48,460
+malware
+
+1632
+01:45:48,460 --> 01:45:50,460
+CPU intensif bir iş
+
+1633
+01:45:50,460 --> 01:45:52,460
+yapıyorsa, listener'ın işi
+
+1634
+01:45:52,460 --> 01:45:54,460
+geç bitecek. Yapmıyorsa
+
+1635
+01:45:54,460 --> 01:45:56,460
+çabuk bitecek.
+
+1636
+01:45:56,460 --> 01:45:58,460
+Ve bunu diyelim ki 3 saniyelik
+
+1637
+01:45:58,460 --> 01:46:00,460
+slotlarla arka arkaya
+
+1638
+01:46:00,460 --> 01:46:02,460
+arka arkaya arka arkaya yapıyor.
+
+1639
+01:46:02,460 --> 01:46:04,460
+Listener'da aynı şekilde
+
+1640
+01:46:04,460 --> 01:46:06,460
+3 saniyelik slotlarla
+
+1641
+01:46:06,460 --> 01:46:08,460
+aynı işi
+
+1642
+01:46:08,460 --> 01:46:10,460
+defalarca tekrarlıyor.
+
+1643
+01:46:10,460 --> 01:46:12,460
+Çabuk bitti.
+
+1644
+01:46:12,460 --> 01:46:14,460
+Yavaş bitti. Yavaş bitti.
+
+1645
+01:46:14,460 --> 01:46:16,460
+Çabuk bitti. Çabuk bitti. Bakın
+
+1646
+01:46:16,460 --> 01:46:18,460
+1 0 0 1 1
+
+1647
+01:46:18,460 --> 01:46:20,460
+Listener'a
+
+1648
+01:46:20,460 --> 01:46:22,460
+bit by bit bu bilgi
+
+1649
+01:46:22,460 --> 01:46:24,460
+aktarılıyor. Daha sonra da
+
+1650
+01:46:24,460 --> 01:46:26,460
+listener bunu dışarıya
+
+1651
+01:46:26,460 --> 01:46:29,829
+çıkartıyor. Mantık bu.
+
+1652
+01:46:29,829 --> 01:46:34,899
+Bunun önüne geçebilmek
+
+1653
+01:46:34,899 --> 01:46:38,920
+sıkıntılı, zor.
+
+1654
+01:46:38,920 --> 01:46:40,920
+Ama çözüm ne?
+
+1655
+01:46:40,920 --> 01:46:42,920
+Hypervisor'da
+
+1656
+01:46:42,920 --> 01:46:44,920
+CPU
+
+1657
+01:46:44,920 --> 01:46:46,920
+kullanımı açısından
+
+1658
+01:46:46,920 --> 01:46:48,920
+kısıtlamalar getirmek. Yani siz diyebilirsiniz
+
+1659
+01:46:48,920 --> 01:46:50,920
+ki bu VM
+
+1660
+01:46:50,920 --> 01:46:52,920
+bu VM
+
+1661
+01:46:52,920 --> 01:46:54,920
+en fazla 1 GHz'lik
+
+1662
+01:46:54,920 --> 01:46:56,920
+CPU performansı
+
+1663
+01:46:56,920 --> 01:47:00,329
+kullanabilir. Şu
+
+1664
+01:47:00,329 --> 01:47:02,329
+2 kullanabilir. Bu 1.5
+
+1665
+01:47:02,329 --> 01:47:04,329
+kullanabilir.
+
+1666
+01:47:04,329 --> 01:47:06,329
+O zaman işlemcinin
+
+1667
+01:47:06,329 --> 01:47:08,329
+toplam
+
+1668
+01:47:08,329 --> 01:47:10,329
+performansı
+
+1669
+01:47:10,329 --> 01:47:12,329
+karşılıklı olarak
+
+1670
+01:47:12,329 --> 01:47:14,329
+kendi üzerinde çalışan
+
+1671
+01:47:14,329 --> 01:47:16,329
+VM'lerin o anki işlemci
+
+1672
+01:47:16,329 --> 01:47:18,329
+kullanım performanslarından
+
+1673
+01:47:18,329 --> 01:47:20,329
+etkilenemez. Böyle bir
+
+1674
+01:47:20,329 --> 01:47:22,329
+bilgi paylaşımı
+
+1675
+01:47:22,329 --> 01:47:24,329
+gerçekleşemez.
+
+1676
+01:47:24,329 --> 01:47:26,329
+Şimdi cache contentinden
+
+1677
+01:47:26,329 --> 01:47:28,329
+ötürü, interrupt'ların
+
+1678
+01:47:28,329 --> 01:47:30,329
+gecikmelerinden ötürü,
+
+1679
+01:47:30,329 --> 01:47:34,149
+o kadar çok file'ların
+
+1680
+01:47:34,149 --> 01:47:36,149
+lock edilip edilmemesinden ötürü
+
+1681
+01:47:36,149 --> 01:47:38,149
+o kadar çok böyle şey noktası
+
+1682
+01:47:38,149 --> 01:47:40,149
+var ki, bunlar kullanılarak
+
+1683
+01:47:40,149 --> 01:47:42,149
+gerçekleştirilebilecek cover channel var ki
+
+1684
+01:47:42,149 --> 01:47:44,149
+hepsini elimine etmek mümkün değil.
+
+1685
+01:47:44,149 --> 01:47:46,149
+Ama yaşandıkça,
+
+1686
+01:47:46,149 --> 01:47:48,149
+ortaya çıktıkça, analiz edilip
+
+1687
+01:47:48,149 --> 01:47:50,149
+sebebi anlaşıldıkça bunları
+
+1688
+01:47:50,149 --> 01:47:52,149
+elimine edecek,
+
+1689
+01:47:52,149 --> 01:47:57,899
+yöntemler de oluşturuluyor.
+
+1690
+01:47:57,899 --> 01:47:59,899
+Bakın cloud ortamında
+
+1691
+01:47:59,899 --> 01:48:01,899
+durum tehlikeli.
+
+1692
+01:48:01,899 --> 01:48:03,899
+Çok daha tehlikeli.
+
+1693
+01:48:03,899 --> 01:48:05,899
+Çünkü VM'lerden biri bir müşteriye ait,
+
+1694
+01:48:05,899 --> 01:48:07,899
+diğeri diğer
+
+1695
+01:48:07,899 --> 01:48:09,899
+müşteriye ait. Bunların
+
+1696
+01:48:09,899 --> 01:48:11,899
+ikisinin arasında bir veri
+
+1697
+01:48:11,899 --> 01:48:13,899
+sızması olması durumunda
+
+1698
+01:48:13,899 --> 01:48:15,899
+ticari olarak
+
+1699
+01:48:15,899 --> 01:48:17,899
+sıkıntıdasınız.
+
+1700
+01:48:17,899 --> 01:48:19,899
+Şurada mesela ne
+
+1701
+01:48:19,899 --> 01:48:21,899
+kullanılmış? Zen
+
+1702
+01:48:21,899 --> 01:48:23,899
+hypervisor kullanılmış. Zen
+
+1703
+01:48:23,899 --> 01:48:25,899
+hypervisor'ın özelliği
+
+1704
+01:48:25,899 --> 01:48:27,899
+post işletim sistemine ihtiyacı yok.
+
+1705
+01:48:27,899 --> 01:48:29,899
+Kendisi doğrudan birinci seviye
+
+1706
+01:48:29,899 --> 01:48:31,899
+sanallaştırma
+
+1707
+01:48:31,899 --> 01:48:33,899
+yapabiliyor. Yani performansı daha yüksektir.
+
+1708
+01:48:33,899 --> 01:48:39,350
+Komple, full
+
+1709
+01:48:39,350 --> 01:48:41,350
+bir işletim sistemi
+
+1710
+01:48:41,350 --> 01:48:43,350
+değil. Multiplexing yapıyor
+
+1711
+01:48:43,350 --> 01:48:45,350
+aslında. Donanımı çoğuluyor.
+
+1712
+01:48:45,350 --> 01:48:52,020
+Uç kullanıcı olarak
+
+1713
+01:48:52,020 --> 01:48:54,020
+biz de kullanıyoruz.
+
+1714
+01:48:54,020 --> 01:48:56,020
+Sizler de kullanıyorsunuz. Hepimiz
+
+1715
+01:48:56,020 --> 01:48:58,020
+ben de kullanıyorum. İşte biri
+
+1716
+01:48:58,020 --> 01:49:00,020
+work, biri personal. Şurada
+
+1717
+01:49:00,020 --> 01:49:02,020
+disposable, işte
+
+1718
+01:49:02,020 --> 01:49:04,020
+yükledim, değiştirdim.
+
+1719
+01:49:04,020 --> 01:49:06,020
+Bozdum, şey yaptım
+
+1720
+01:49:06,020 --> 01:49:09,500
+olabiliyor. Bu
+
+1721
+01:49:09,500 --> 01:49:11,500
+şifrelerimin tutulduğu
+
+1722
+01:49:11,500 --> 01:49:13,500
+Şuradaki örnek Cubase diye
+
+1723
+01:49:13,500 --> 01:49:15,500
+bir işletim sistemi. Cubase
+
+1724
+01:49:15,500 --> 01:49:17,500
+işletim sistemi hem desktopta hem
+
+1725
+01:49:17,500 --> 01:49:19,500
+laptopta çalışıyor. Zen
+
+1726
+01:49:19,500 --> 01:49:21,500
+hypervisor üzerine kurulu ve
+
+1727
+01:49:21,500 --> 01:49:23,500
+her şey bir VM.
+
+1728
+01:49:23,500 --> 01:49:25,500
+Öyle düşün.
+
+1729
+01:49:25,500 --> 01:49:27,500
+Her türlü yapıyı bir VM olarak
+
+1730
+01:49:27,500 --> 01:49:29,500
+tasarlamışlar. İşte burada Tor
+
+1731
+01:49:29,500 --> 01:49:31,500
+üzerinden
+
+1732
+01:49:31,500 --> 01:49:33,500
+bütün trafiğin Tor üzerinden
+
+1733
+01:49:33,500 --> 01:49:35,500
+çıkılması için Hoogix diye
+
+1734
+01:49:35,500 --> 01:49:37,500
+kimdir, kim değildir,
+
+1735
+01:49:37,500 --> 01:49:39,500
+kimliğiniz anlaşılmasın
+
+1736
+01:49:39,500 --> 01:49:41,500
+diye.
+
+1737
+01:49:41,500 --> 01:49:43,500
+Böyle bir yapı da oluşturabiliyoruz.
+
+1738
+01:49:43,500 --> 01:49:45,500
+Ama burada dikkat edin
+
+1739
+01:49:45,500 --> 01:49:47,500
+bütün veriler
+
+1740
+01:49:47,500 --> 01:49:49,500
+bize ait. Yani
+
+1741
+01:49:49,500 --> 01:49:51,500
+VM'ler arasında bir
+
+1742
+01:49:51,500 --> 01:49:53,500
+veri sızması
+
+1743
+01:49:53,500 --> 01:49:55,500
+aktarımının
+
+1744
+01:49:55,500 --> 01:49:57,500
+oluşturabileceği
+
+1745
+01:49:57,500 --> 01:49:59,500
+risk daha düşük. Diğerinde
+
+1746
+01:49:59,500 --> 01:50:01,500
+ticari olarak çok ciddi bir
+
+1747
+01:50:01,500 --> 01:50:12,420
+sıkıntı var. Sanal ortamda
+
+1748
+01:50:12,420 --> 01:50:14,420
+çalışıp çalışmadığını bir işletim
+
+1749
+01:50:14,420 --> 01:50:16,420
+sistemi anlayabilir mi?
+
+1750
+01:50:16,420 --> 01:50:20,500
+Kesinlikle anlayabilir.
+
+1751
+01:50:20,500 --> 01:50:22,500
+Peki bunun uygulama
+
+1752
+01:50:22,500 --> 01:50:24,500
+tarafındaki bize yansıması ne?
+
+1753
+01:50:24,500 --> 01:50:26,500
+Hem iyi sonuçlar
+
+1754
+01:50:26,500 --> 01:50:28,500
+doğurabilir hem kötü sonuçlar doğurabilir.
+
+1755
+01:50:28,500 --> 01:50:30,500
+Malware
+
+1756
+01:50:30,500 --> 01:50:32,500
+analizi yaparken ya statik
+
+1757
+01:50:32,500 --> 01:50:34,500
+analiz yapıyoruz ya dinamik analiz
+
+1758
+01:50:34,500 --> 01:50:36,500
+yapıyoruz. Statik analiz source code
+
+1759
+01:50:36,500 --> 01:50:38,500
+üzerinden. Çalıştırmadan.
+
+1760
+01:50:38,500 --> 01:50:40,500
+Ama Malware'in bazı komponentleri
+
+1761
+01:50:40,500 --> 01:50:42,500
+var ki çalıştığı zaman
+
+1762
+01:50:42,500 --> 01:50:44,500
+aktif hale geliyor. Kendi
+
+1763
+01:50:44,500 --> 01:50:46,500
+içerisinde şifrelenmiş bir bölgesi
+
+1764
+01:50:46,500 --> 01:50:48,500
+var. Çalıştığı zaman bunu
+
+1765
+01:50:48,500 --> 01:50:50,500
+decrypt
+
+1766
+01:50:50,500 --> 01:50:52,500
+ediyor, çözüyor, açıyor
+
+1767
+01:50:52,500 --> 01:50:54,500
+ve çalışır hale getiriyor.
+
+1768
+01:50:54,500 --> 01:50:56,500
+Veya çalıştığı zaman gidiyor
+
+1769
+01:50:56,500 --> 01:50:58,500
+bir adresten
+
+1770
+01:50:58,500 --> 01:51:00,500
+ek bir parça yüklüyor.
+
+1771
+01:51:00,500 --> 01:51:02,500
+Bu tarz şeyler var.
+
+1772
+01:51:02,500 --> 01:51:04,500
+O yüzden statik analizle
+
+1773
+01:51:04,500 --> 01:51:06,500
+tamamen anlama şansımız
+
+1774
+01:51:06,500 --> 01:51:08,500
+yok. Ama Malware
+
+1775
+01:51:08,500 --> 01:51:10,500
+bir hypervisor üzerinde
+
+1776
+01:51:10,500 --> 01:51:12,500
+çalıştığını yani analiz edilmek
+
+1777
+01:51:12,500 --> 01:51:14,500
+reverse engineering yapılmak
+
+1778
+01:51:14,500 --> 01:51:16,500
+üzere bir hypervisor üzerinde
+
+1779
+01:51:16,500 --> 01:51:18,500
+çalıştığını fark ettiği anda ne
+
+1780
+01:51:18,500 --> 01:51:20,500
+yapabilir? Normal davranır.
+
+1781
+01:51:22,500 --> 01:51:24,500
+Diğer taraftan
+
+1782
+01:51:24,500 --> 01:51:26,500
+tamamen spesifik bir
+
+1783
+01:51:26,500 --> 01:51:28,500
+donanımın sürülmesi
+
+1784
+01:51:28,500 --> 01:51:30,500
+kullanılması için
+
+1785
+01:51:30,500 --> 01:51:32,500
+oluşturulmuş bir yazılım
+
+1786
+01:51:32,500 --> 01:51:34,500
+aslında o donanımın gerçek değil
+
+1787
+01:51:34,500 --> 01:51:36,500
+sanal bir donanım olduğunu fark
+
+1788
+01:51:36,500 --> 01:51:38,500
+ettiğinde de
+
+1789
+01:51:38,500 --> 01:51:40,500
+çalışmaz. Kendini durdurabilir.
+
+1790
+01:51:40,500 --> 01:51:42,500
+Bu güzel bir şey çünkü
+
+1791
+01:51:42,500 --> 01:51:44,500
+donanımla haberleşmek yerine
+
+1792
+01:51:44,500 --> 01:51:46,500
+yazılımla haberleşecek anlamıyor.
+
+1793
+01:51:46,500 --> 01:51:48,500
+Veya Digital Rights Management
+
+1794
+01:51:48,500 --> 01:51:50,500
+açısından
+
+1795
+01:51:50,500 --> 01:51:54,550
+bir DRM yazılımı
+
+1796
+01:51:54,550 --> 01:51:56,550
+sanal ortamda çalışmak
+
+1797
+01:51:56,550 --> 01:51:58,550
+istemeyebilir. Niye?
+
+1798
+01:51:58,550 --> 01:52:00,550
+Şimdi bakın internetten
+
+1799
+01:52:00,550 --> 01:52:02,550
+pay per view
+
+1800
+01:52:02,550 --> 01:52:04,550
+şeklinde
+
+1801
+01:52:04,550 --> 01:52:06,550
+48 saatliğine diyelim ki bir şey
+
+1802
+01:52:06,550 --> 01:52:08,550
+kiralıyorsunuz. 48 saatin
+
+1803
+01:52:08,550 --> 01:52:10,550
+sonunda sizin bunu
+
+1804
+01:52:10,550 --> 01:52:12,550
+oynatma yetkiniz ortadan kalkıyor.
+
+1805
+01:52:12,550 --> 01:52:16,630
+Gerçek donanım
+
+1806
+01:52:16,630 --> 01:52:18,630
+üzerinde bunu yapmak çok kolay. Çünkü
+
+1807
+01:52:18,630 --> 01:52:20,630
+o content bir şekilde
+
+1808
+01:52:20,630 --> 01:52:22,630
+şifrelenmiş tarzda geliyor.
+
+1809
+01:52:22,630 --> 01:52:24,630
+İşte karşı taraftaki
+
+1810
+01:52:24,630 --> 01:52:26,630
+sağlayıcıyla konuşularak
+
+1811
+01:52:26,630 --> 01:52:28,630
+o 48 saatin sonunda
+
+1812
+01:52:28,630 --> 01:52:30,630
+expire ettiğinde şifre
+
+1813
+01:52:30,630 --> 01:52:32,630
+sizin lokalinizde yani content
+
+1814
+01:52:32,630 --> 01:52:34,630
+decrypt edilemeyecek hale
+
+1815
+01:52:34,630 --> 01:52:36,630
+dönüşüyor. Dosya
+
+1816
+01:52:36,630 --> 01:52:38,630
+elinizde var ama decrypt edemediğiniz
+
+1817
+01:52:38,630 --> 01:52:40,630
+veya decrypt etmenin maliyeti
+
+1818
+01:52:40,630 --> 01:52:42,630
+çok yüksek olduğu için ya parasını veririm
+
+1819
+01:52:42,630 --> 01:52:44,630
+satın alırım deme noktasına
+
+1820
+01:52:44,630 --> 01:52:46,630
+geldiğiniz için her şey
+
+1821
+01:52:46,630 --> 01:52:48,630
+makul.
+
+1822
+01:52:48,630 --> 01:52:50,630
+Ancak şöyle düşünün
+
+1823
+01:52:50,630 --> 01:52:52,630
+sonuçta siz bunu ya
+
+1824
+01:52:52,630 --> 01:52:54,630
+dinleyeceksiniz ya da izleyeceksiniz.
+
+1825
+01:52:54,630 --> 01:52:56,630
+Yani ya ses kartına
+
+1826
+01:52:56,630 --> 01:52:58,630
+gitmesi lazım ya da grafik kartına
+
+1827
+01:52:58,630 --> 01:53:00,630
+gitmesi lazım. O noktaya gittiğinde
+
+1828
+01:53:00,630 --> 01:53:02,630
+bu o noktaya geldiğinde
+
+1829
+01:53:02,630 --> 01:53:04,630
+zaten açık
+
+1830
+01:53:04,630 --> 01:53:06,630
+halde.
+
+1831
+01:53:06,630 --> 01:53:08,630
+O zaman bunu alalım bir sanal
+
+1832
+01:53:08,630 --> 01:53:10,630
+makineye koyalım. Sanal
+
+1833
+01:53:10,630 --> 01:53:12,630
+makinede zaten grafik kartına
+
+1834
+01:53:12,630 --> 01:53:14,630
+veya ses kartına erişim
+
+1835
+01:53:14,630 --> 01:53:16,630
+için arada bir
+
+1836
+01:53:16,630 --> 01:53:18,630
+yazılım var. O
+
+1837
+01:53:18,630 --> 01:53:20,630
+yazılıma ben
+
+1838
+01:53:20,630 --> 01:53:22,630
+bağlandım. Parayı girdim.
+
+1839
+01:53:22,630 --> 01:53:24,630
+Bunun da yöntemleri var.
+
+1840
+01:53:24,630 --> 01:53:26,630
+Ekrana gönderdiğini
+
+1841
+01:53:26,630 --> 01:53:28,630
+düşündüğü her türlü frame'i
+
+1842
+01:53:28,630 --> 01:53:30,630
+frame by frame
+
+1843
+01:53:30,630 --> 01:53:32,630
+aldım yazdım, aldım yazdım.
+
+1844
+01:53:32,630 --> 01:53:37,479
+Ne oldu? Bir
+
+1845
+01:53:37,479 --> 01:53:39,479
+alınıp encrypt edilmiş
+
+1846
+01:53:39,479 --> 01:53:41,479
+işte kriptografik olarak
+
+1847
+01:53:41,479 --> 01:53:43,479
+koruma altına
+
+1848
+01:53:43,479 --> 01:53:45,479
+alınmış olan filmi ben
+
+1849
+01:53:45,479 --> 01:53:47,479
+kenarda birebir ürettim.
+
+1850
+01:53:47,479 --> 01:53:49,479
+Bu durumda demek ki
+
+1851
+01:53:49,479 --> 01:53:51,479
+sanal makine ortamında
+
+1852
+01:53:51,479 --> 01:53:53,479
+çalışmaması
+
+1853
+01:53:53,479 --> 01:53:55,479
+lazım. Bu tarz bir
+
+1854
+01:53:55,479 --> 01:53:57,479
+zafiyete
+
+1855
+01:53:57,479 --> 01:53:59,479
+ve bu tarz bir saldırıya
+
+1856
+01:53:59,479 --> 01:54:01,479
+açık. Bunu da bir saldırı olarak düşünebilirsiniz.
+
+1857
+01:54:01,479 --> 01:54:07,449
+Bu
+
+1858
+01:54:07,449 --> 01:54:09,449
+izleyenleriniz bilir
+
+1859
+01:54:09,449 --> 01:54:11,449
+işte Matrix'ten
+
+1860
+01:54:11,449 --> 01:54:13,449
+ama Security'e de
+
+1861
+01:54:13,449 --> 01:54:15,449
+Matrix filminden ama
+
+1862
+01:54:15,449 --> 01:54:17,449
+Security'e de
+
+1863
+01:54:17,449 --> 01:54:19,449
+teknolojik terim olarak girmiş bir şey
+
+1864
+01:54:19,449 --> 01:54:21,449
+Red Pill, Blue Pill.
+
+1865
+01:54:21,449 --> 01:54:24,789
+Red Pill
+
+1866
+01:54:24,789 --> 01:54:26,789
+durumun farkındasınız ve buna karşı
+
+1867
+01:54:26,789 --> 01:54:28,789
+koymaya çalışıyorsunuz.
+
+1868
+01:54:28,789 --> 01:54:33,699
+Blue Pill ise
+
+1869
+01:54:33,699 --> 01:54:35,699
+yani olaydan haberdar
+
+1870
+01:54:35,699 --> 01:54:37,699
+değilsiniz. Bulunduğunuz ortamı
+
+1871
+01:54:37,699 --> 01:54:39,699
+sanal olsun,
+
+1872
+01:54:39,699 --> 01:54:41,699
+gerçek olsun, gerçek gibi kabul ediyorsunuz
+
+1873
+01:54:41,699 --> 01:54:43,699
+ve ona göre ilerliyorsunuz.
+
+1874
+01:54:43,699 --> 01:54:45,699
+Hypervisor
+
+1875
+01:54:45,699 --> 01:54:47,699
+var mı yok mu?
+
+1876
+01:54:47,699 --> 01:54:49,699
+Böyle bir ortamda çalışıyor
+
+1877
+01:54:49,699 --> 01:54:51,699
+muyum, çalışmıyor muyum?
+
+1878
+01:54:51,699 --> 01:54:53,699
+Bunun farkına varılması
+
+1879
+01:54:53,699 --> 01:54:55,699
+için uygulanan
+
+1880
+01:54:55,699 --> 01:54:57,699
+yöntemlere ve bunun tamamına
+
+1881
+01:54:57,699 --> 01:54:59,699
+ne diyoruz? Red Pill
+
+1882
+01:54:59,699 --> 01:55:04,229
+teknikleri diyoruz.
+
+1883
+01:55:04,229 --> 01:55:06,229
+Sizlerin hiç karşılaştığını zannetmiyorum ama
+
+1884
+01:55:06,229 --> 01:55:08,229
+i440BX
+
+1885
+01:55:08,229 --> 01:55:10,229
+Intel'in zamanında
+
+1886
+01:55:10,229 --> 01:55:12,229
+hani böyle motherboardların
+
+1887
+01:55:12,229 --> 01:55:14,229
+Mercedes olarak kabul edilen bir
+
+1888
+01:55:14,229 --> 01:55:16,229
+motherboardu ve onun üzerindeki
+
+1889
+01:55:16,229 --> 01:55:18,229
+chipsetiydi.
+
+1890
+01:55:18,229 --> 01:55:20,229
+Yüksek performanslı
+
+1891
+01:55:20,229 --> 01:55:22,229
+ancak alt satırda
+
+1892
+01:55:22,229 --> 01:55:24,229
+yazdığı gibi 8 GB RAM
+
+1893
+01:55:24,229 --> 01:55:26,229
+veya
+
+1894
+01:55:26,229 --> 01:55:28,229
+dual CPU falan desteklemiyordu.
+
+1895
+01:55:28,229 --> 01:55:30,229
+Şimdi
+
+1896
+01:55:30,229 --> 01:55:32,229
+VM ortamında kurulu bir
+
+1897
+01:55:32,229 --> 01:55:34,229
+işletim sistemi düşünün.
+
+1898
+01:55:34,229 --> 01:55:36,229
+İşte ya
+
+1899
+01:55:36,229 --> 01:55:38,229
+Computer Properties'den
+
+1900
+01:55:38,229 --> 01:55:40,229
+ya da işte Prog altında CPU
+
+1901
+01:55:40,229 --> 01:55:42,229
+infodan, MEM infodan bakıyorsunuz
+
+1902
+01:55:42,229 --> 01:55:44,229
+ve 8 GB RAM ile
+
+1903
+01:55:44,229 --> 01:55:46,229
+dual CPU rapor ederken
+
+1904
+01:55:46,229 --> 01:55:48,229
+chipsetide i440BX
+
+1905
+01:55:48,229 --> 01:55:50,229
+gösteriyor. Yani
+
+1906
+01:55:50,229 --> 01:55:52,229
+yalanın önde gideni olamaz. Birbiriyle
+
+1907
+01:55:52,229 --> 01:55:54,229
+çelişen şeyler. O zaman
+
+1908
+01:55:54,229 --> 01:55:56,229
+işletim sistemi diyor ki ben
+
+1909
+01:55:56,229 --> 01:55:58,229
+sanal ortamda çalışıyorum.
+
+1910
+01:55:58,229 --> 01:56:00,229
+Onun haricinde
+
+1911
+01:56:00,229 --> 01:56:02,229
+cache
+
+1912
+01:56:02,229 --> 01:56:04,229
+paylaştırılmak
+
+1913
+01:56:04,229 --> 01:56:06,229
+zorunda olduğu için
+
+1914
+01:56:06,229 --> 01:56:08,229
+cache'in size
+
+1915
+01:56:08,229 --> 01:56:10,229
+o işlemci mimarisinde
+
+1916
+01:56:10,229 --> 01:56:12,229
+sağlamasını beklediğiniz tam
+
+1917
+01:56:12,229 --> 01:56:14,229
+performans artışını
+
+1918
+01:56:14,229 --> 01:56:16,229
+göremiyorsunuz. Basit bir ölçüm
+
+1919
+01:56:16,229 --> 01:56:18,229
+yapıyorsunuz. Arada fark var.
+
+1920
+01:56:18,229 --> 01:56:20,229
+Tamam diyorsunuz.
+
+1921
+01:56:20,229 --> 01:56:22,229
+O zaman işlemci rapor edilen
+
+1922
+01:56:22,229 --> 01:56:24,229
+hız 2.8 GHz
+
+1923
+01:56:24,229 --> 01:56:26,229
+işlemci i7
+
+1924
+01:56:26,229 --> 01:56:28,229
+e tamam modeli şu onlar doğru
+
+1925
+01:56:28,229 --> 01:56:30,229
+modeli şu
+
+1926
+01:56:30,229 --> 01:56:32,229
+bundaki cache miktarı bu. O zaman
+
+1927
+01:56:32,229 --> 01:56:34,229
+şu komut
+
+1928
+01:56:34,229 --> 01:56:36,229
+bütününü ben bu cache'de
+
+1929
+01:56:36,229 --> 01:56:38,229
+20 bin defa çalıştırdığımda
+
+1930
+01:56:38,229 --> 01:56:40,229
+bunun çalışma
+
+1931
+01:56:40,229 --> 01:56:42,229
+süresi şu olmalı. Alakası
+
+1932
+01:56:42,229 --> 01:56:44,229
+yok. 3 katı çıkıyor. 2 katı çıkıyor.
+
+1933
+01:56:44,229 --> 01:56:46,229
+Oradan anlıyorsunuz.
+
+1934
+01:56:46,229 --> 01:56:48,229
+Yine sanallaştırma
+
+1935
+01:56:48,229 --> 01:56:50,229
+araya bir yazılım katmanı
+
+1936
+01:56:50,229 --> 01:56:52,229
+yerleştirdiği için
+
+1937
+01:56:52,229 --> 01:56:54,229
+ne kadar ince olsa da ne kadar
+
+1938
+01:56:54,229 --> 01:56:56,229
+optimize olsa da o yazılım
+
+1939
+01:56:56,229 --> 01:56:58,229
+girdiği için ek gecikmeler
+
+1940
+01:56:58,229 --> 01:57:00,229
+olacak.
+
+1941
+01:57:00,229 --> 01:57:02,229
+İşletim sisteminde göreceğiz.
+
+1942
+01:57:02,229 --> 01:57:04,229
+Virtual Memory Management'ta
+
+1943
+01:57:04,229 --> 01:57:06,229
+en kritik donanım parçalarından biri
+
+1944
+01:57:06,229 --> 01:57:08,229
+Translation Look Aside Buffer
+
+1945
+01:57:08,229 --> 01:57:10,229
+TLB.
+
+1946
+01:57:10,229 --> 01:57:12,229
+Şimdi bu TLB de paylaşılmak zorunda.
+
+1947
+01:57:12,229 --> 01:57:14,229
+Hatta çok yakın
+
+1948
+01:57:14,229 --> 01:57:16,229
+zamanda Intel işlemcilerinde
+
+1949
+01:57:16,229 --> 01:57:18,229
+TLB'nin bir prosesten
+
+1950
+01:57:18,229 --> 01:57:20,229
+diğer prosese geçerken
+
+1951
+01:57:20,229 --> 01:57:22,229
+düzgün sıfırlanmaması
+
+1952
+01:57:22,229 --> 01:57:24,229
+sebebi ile
+
+1953
+01:57:24,229 --> 01:57:26,229
+şey
+
+1954
+01:57:26,229 --> 01:57:28,229
+oluştuğunu da biliyoruz.
+
+1955
+01:57:28,229 --> 01:57:30,229
+Güvenlik zafiyeti oluştuğunu da biliyoruz.
+
+1956
+01:57:30,229 --> 01:57:32,229
+Demek ki
+
+1957
+01:57:32,229 --> 01:57:34,229
+TLB'nin
+
+1958
+01:57:34,229 --> 01:57:36,229
+varlığını ve
+
+1959
+01:57:36,229 --> 01:57:38,229
+bunun sanal olarak parçalara
+
+1960
+01:57:38,229 --> 01:57:40,229
+bölünüp kullanıldığını da anlayabiliyoruz.
+
+1961
+01:57:40,229 --> 01:57:42,229
+Bu ve bunun gibi
+
+1962
+01:57:42,229 --> 01:57:44,229
+pek çok yöntem var.
+
+1963
+01:57:44,229 --> 01:57:47,479
+Bakın çok yakın zamanda
+
+1964
+01:57:47,479 --> 01:57:49,479
+2014'te bir yayın var.
+
+1965
+01:57:49,479 --> 01:57:52,890
+Browser
+
+1966
+01:57:52,890 --> 01:57:54,890
+yani Chrome
+
+1967
+01:57:54,890 --> 01:57:56,890
+işte Firefox neyse
+
+1968
+01:57:56,890 --> 01:57:58,890
+Opera, Safari
+
+1969
+01:57:58,890 --> 01:58:00,890
+Hypervisor'da çalışıp çalışmadığını
+
+1970
+01:58:00,890 --> 01:58:02,890
+fark edebilir mi?
+
+1971
+01:58:02,890 --> 01:58:04,890
+Niye önemli bizim için bu?
+
+1972
+01:58:04,890 --> 01:58:06,890
+Çok basit bir sebepten ötürü önemli.
+
+1973
+01:58:06,890 --> 01:58:08,890
+Sayfaların iyi mi kötü mü
+
+1974
+01:58:08,890 --> 01:58:10,890
+olduğunu anlamak için
+
+1975
+01:58:10,890 --> 01:58:12,890
+uygulayacağımız yöntemlerden biri
+
+1976
+01:58:12,890 --> 01:58:14,890
+web page crawling.
+
+1977
+01:58:14,890 --> 01:58:16,890
+İlla ki endekslemek için web page crawling yapmak zorunda değiliz.
+
+1978
+01:58:16,890 --> 01:58:18,890
+İçeriği yükleriz,
+
+1979
+01:58:18,890 --> 01:58:20,890
+çalıştırırız.
+
+1980
+01:58:20,890 --> 01:58:22,890
+Browser seviyesinde bakın
+
+1981
+01:58:22,890 --> 01:58:24,890
+browser anlamazsa hani
+
+1982
+01:58:24,890 --> 01:58:26,890
+malware farkına varırsa
+
+1983
+01:58:26,890 --> 01:58:28,890
+sandbox'da çalıştığını
+
+1984
+01:58:28,890 --> 01:58:30,890
+falan anlarsa, vm altında çalıştığını anlarsa
+
+1985
+01:58:30,890 --> 01:58:32,890
+normal davranır dedik ya.
+
+1986
+01:58:32,890 --> 01:58:34,890
+Browser'da bu anlaşılabilir.
+
+1987
+01:58:36,890 --> 01:58:38,890
+Browser'dan da nasıl anlaşılır?
+
+1988
+01:58:38,890 --> 01:58:40,890
+Cevap buradalar ama
+
+1989
+01:58:40,890 --> 01:58:42,890
+mantıksal bir şeyle düşünürseniz
+
+1990
+01:58:42,890 --> 01:58:44,890
+bu sayfayı görmediğinizde
+
+1991
+01:58:44,890 --> 01:58:46,890
+bir an düşünmeniz gerekir emin olun.
+
+1992
+01:58:46,890 --> 01:58:48,890
+O zaman
+
+1993
+01:58:48,890 --> 01:58:50,890
+tamam ben bu javascript'le
+
+1994
+01:58:50,890 --> 01:58:52,890
+gelen malware'i kandırırım
+
+1995
+01:58:52,890 --> 01:58:54,890
+benim farkıma varmaz.
+
+1996
+01:58:54,890 --> 01:58:56,890
+Eğer browser'ı ona bağlı olarak da
+
+1997
+01:58:56,890 --> 01:58:58,890
+vm'i ele geçiriyorsa
+
+1998
+01:58:58,890 --> 01:59:00,890
+etiketlerim kötü diye ele geçirmiyor.
+
+1999
+01:59:00,890 --> 01:59:02,890
+Herhangi bir şey olmadan düzgün çalışıyorsa
+
+2000
+01:59:02,890 --> 01:59:04,890
+da etiketlerim
+
+2001
+01:59:04,890 --> 01:59:06,890
+işte normal diye.
+
+2002
+01:59:06,890 --> 01:59:08,890
+Fakat sorun şu
+
+2003
+01:59:08,890 --> 01:59:10,890
+network erişimi
+
+2004
+01:59:10,890 --> 01:59:12,890
+diğer şeyler falan bunları
+
+2005
+01:59:12,890 --> 01:59:14,890
+ölçüp de sanallaştırmayı anlamak
+
+2006
+01:59:14,890 --> 01:59:16,890
+o kadar kolay değil. Çünkü orada
+
+2007
+01:59:16,890 --> 01:59:18,890
+çok varyasyon oluyor, değişim olabiliyor.
+
+2008
+01:59:18,890 --> 01:59:20,890
+Ama render ettiğiniz
+
+2009
+01:59:20,890 --> 01:59:22,890
+bir sayfanın ekranda
+
+2010
+01:59:22,890 --> 01:59:24,890
+görüntülenme süresi
+
+2011
+01:59:24,890 --> 01:59:26,890
+kesinlikle ve kesinlikle anlaşılan bir şey.
+
+2012
+01:59:26,890 --> 01:59:28,890
+Günümüzdeki grafik
+
+2013
+01:59:28,890 --> 01:59:30,890
+kartlarının performansına
+
+2014
+01:59:30,890 --> 01:59:32,890
+göre
+
+2015
+01:59:32,890 --> 01:59:34,890
+onunla düşündüğümüzde
+
+2016
+01:59:34,890 --> 01:59:36,890
+ne yazık ki
+
+2017
+01:59:36,890 --> 01:59:38,890
+araya giren sanallaştırma katmanları
+
+2018
+01:59:38,890 --> 01:59:40,890
+her zaman için
+
+2019
+01:59:40,890 --> 01:59:42,890
+ölçülebilir miktarda
+
+2020
+01:59:42,890 --> 01:59:46,199
+yavaşlamaya sebep oluyor.
+
+2021
+01:59:46,199 --> 01:59:48,199
+Bu durumda da javascript
+
+2022
+01:59:48,199 --> 01:59:50,199
+üzerinden gelmiş olan malware
+
+2023
+01:59:50,199 --> 01:59:52,199
+normal
+
+2024
+01:59:52,199 --> 01:59:54,199
+davranıyor.
+
+2025
+01:59:54,199 --> 01:59:56,199
+Kesinlikle ve kesinlikle kendini
+
+2026
+01:59:56,199 --> 01:59:58,199
+göstermiyor.
+
+2027
+01:59:58,199 --> 02:00:00,199
+Yani
+
+2028
+02:00:00,199 --> 02:00:02,199
+redpil tekniğinin
+
+2029
+02:00:02,199 --> 02:00:04,199
+önemi burada
+
+2030
+02:00:04,199 --> 02:00:06,199
+ortaya çıkıyor.
+
+2031
+02:00:06,199 --> 02:00:08,199
+Ve hangi tekniği kullanmamın
+
+2032
+02:00:08,199 --> 02:00:10,199
+nasıl olaylara
+
+2033
+02:00:10,199 --> 02:00:12,199
+farklı şekilde bakmamı sağlayacağını da
+
+2034
+02:00:12,199 --> 02:00:18,229
+gösterdiği ortaya çıkıyor.
+
+2035
+02:00:18,229 --> 02:00:20,229
+Sonuç olarak mükemmel
+
+2036
+02:00:20,229 --> 02:00:22,229
+hypervisor diye bir şey yok.
+
+2037
+02:00:22,229 --> 02:00:24,229
+Günümüzün hypervisorları iki tane
+
+2038
+02:00:24,229 --> 02:00:26,229
+konuya odaklanmış durumda
+
+2039
+02:00:26,229 --> 02:00:28,229
+doğal olarak.
+
+2040
+02:00:28,229 --> 02:00:30,229
+Uyumluluk ve
+
+2041
+02:00:30,229 --> 02:00:32,229
+performans.
+
+2042
+02:00:32,229 --> 02:00:34,229
+Virtual machine monitörler yani
+
+2043
+02:00:34,229 --> 02:00:36,229
+hypervisorlar
+
+2044
+02:00:36,229 --> 02:00:38,229
+ee
+
+2045
+02:00:38,229 --> 02:00:40,229
+full transparency
+
+2046
+02:00:40,229 --> 02:00:42,229
+sağlayamıyorlar.
+
+2047
+02:00:42,229 --> 02:00:44,229
+Yazılım sonuçta.
+
+2048
+02:00:44,229 --> 02:00:46,229
+Bu transparency
+
+2049
+02:00:46,229 --> 02:00:48,229
+sağlayamadıklarından ötürü
+
+2050
+02:00:48,229 --> 02:00:50,229
+çok
+
+2051
+02:00:50,229 --> 02:00:52,229
+ince noktalardan varlıklarını
+
+2052
+02:00:52,229 --> 02:00:54,229
+anlayabiliyoruz.
+
+2053
+02:00:54,229 --> 02:00:56,229
+Anlamak için uğraşmalı mıyız
+
+2054
+02:00:56,229 --> 02:00:58,229
+uğraşmamalı mıyız işte
+
+2055
+02:00:58,229 --> 02:01:04,260
+farklı
+
+2056
+02:01:04,260 --> 02:01:06,260
+örneklerle size bunu
+
+2057
+02:01:06,260 --> 02:01:09,800
+anlattım. Son konumuza
+
+2058
+02:01:09,800 --> 02:01:11,800
+geliyoruz arkadaşlar.
+
+2059
+02:01:11,800 --> 02:01:13,800
+Threat seviyesinde izolasyon.
+
+2060
+02:01:13,800 --> 02:01:15,800
+Fault or fault isolation.
+
+2061
+02:01:15,800 --> 02:01:17,800
+Diğeri proses seviyesindeki
+
+2062
+02:01:17,800 --> 02:01:19,800
+96 idi. Bakın bunun
+
+2063
+02:01:19,800 --> 02:01:21,800
+tarihini 93 daha da
+
+2064
+02:01:21,800 --> 02:01:23,800
+eski. Bu işin başlangıcı
+
+2065
+02:01:23,800 --> 02:01:25,800
+security falan değil.
+
+2066
+02:01:25,800 --> 02:01:27,800
+Bu işin başlangıcı
+
+2067
+02:01:27,800 --> 02:01:29,800
+işletim sistemi kernel'nin
+
+2068
+02:01:29,800 --> 02:01:31,800
+sağlamlığıyla alakalı
+
+2069
+02:01:31,800 --> 02:01:33,800
+güvenirliliğiyle alakalı.
+
+2070
+02:01:33,800 --> 02:01:35,800
+Kernel'ın içerisinde
+
+2071
+02:01:35,800 --> 02:01:37,800
+cihazları
+
+2072
+02:01:37,800 --> 02:01:39,800
+kullanmak için device controller'larla
+
+2073
+02:01:39,800 --> 02:01:41,800
+doğrudan konuşabilen
+
+2074
+02:01:41,800 --> 02:01:43,800
+driver'lar var. Bunları konuştuk.
+
+2075
+02:01:43,800 --> 02:01:45,800
+Şimdi bu driver'lar
+
+2076
+02:01:45,800 --> 02:01:47,800
+aynı adres
+
+2077
+02:01:47,800 --> 02:01:49,800
+space'de kernel adres space'inde
+
+2078
+02:01:49,800 --> 02:01:51,800
+çalışıyor. Kernel dediğimiz şey
+
+2079
+02:01:51,800 --> 02:01:53,800
+aslında bir proses ve bu driver'lar
+
+2080
+02:01:53,800 --> 02:01:55,800
+da bir threat her biri.
+
+2081
+02:01:55,800 --> 02:01:57,800
+Bağımsız akışlar çünkü.
+
+2082
+02:01:57,800 --> 02:01:59,800
+Birindeki bir
+
+2083
+02:01:59,800 --> 02:02:01,800
+sıkıntı kernel'ın
+
+2084
+02:02:01,800 --> 02:02:03,800
+tamamen göçmesine sebep olabiliyor.
+
+2085
+02:02:03,800 --> 02:02:05,800
+Hani meşhur Windows'da var ya
+
+2086
+02:02:05,800 --> 02:02:07,800
+blue screen of death
+
+2087
+02:02:07,800 --> 02:02:09,800
+ekranın mavi olması
+
+2088
+02:02:09,800 --> 02:02:11,800
+hatırlarsınız
+
+2089
+02:02:11,800 --> 02:02:13,800
+göçtüğü zaman.
+
+2090
+02:02:13,800 --> 02:02:15,800
+Benzer şekilde
+
+2091
+02:02:15,800 --> 02:02:17,800
+Java'dan native
+
+2092
+02:02:17,800 --> 02:02:19,800
+kütüphanelere erişmemiz
+
+2093
+02:02:19,800 --> 02:02:21,800
+gerekiyor. Genie üzerinde.
+
+2094
+02:02:21,800 --> 02:02:23,800
+JVM
+
+2095
+02:02:23,800 --> 02:02:25,800
+kendini kendi içinde koruyabiliyor
+
+2096
+02:02:25,800 --> 02:02:29,560
+ama native
+
+2097
+02:02:29,560 --> 02:02:31,560
+kütüphanelere eriştiğinde
+
+2098
+02:02:31,560 --> 02:02:33,560
+oralardaki
+
+2099
+02:02:33,560 --> 02:02:35,560
+bir patlak, bir çatlak
+
+2100
+02:02:35,560 --> 02:02:37,560
+diğer Java
+
+2101
+02:02:37,560 --> 02:02:39,560
+threatlerinin de göçmesine, dolayısıyla
+
+2102
+02:02:39,560 --> 02:02:41,560
+JVM'in göçmesine sebep olabiliyor.
+
+2103
+02:02:41,560 --> 02:02:43,560
+Ne diyebiliriz
+
+2104
+02:02:43,560 --> 02:02:45,560
+çözüm olarak şu ana kadar
+
+2105
+02:02:45,560 --> 02:02:47,560
+olan
+
+2106
+02:02:47,560 --> 02:02:49,560
+dinlediğimiz
+
+2107
+02:02:49,560 --> 02:02:51,560
+bilgimiz, tecrübemizle size
+
+2108
+02:02:51,560 --> 02:02:53,560
+anlattıklarımla. İşte prosesler
+
+2109
+02:02:53,560 --> 02:02:55,560
+güzel, bu işi proseslerle yapalım.
+
+2110
+02:02:55,560 --> 02:02:57,560
+Güzel ancak
+
+2111
+02:02:57,560 --> 02:02:59,560
+yavaş.
+
+2112
+02:02:59,560 --> 02:03:01,560
+Proseslerin
+
+2113
+02:03:01,560 --> 02:03:03,560
+birbirleriyle etkileşimi
+
+2114
+02:03:03,560 --> 02:03:05,560
+işletim sisteminin
+
+2115
+02:03:05,560 --> 02:03:07,560
+üzerinde. Eşittir
+
+2116
+02:03:07,560 --> 02:03:09,560
+kernel'a girdik çıkılması.
+
+2117
+02:03:09,560 --> 02:03:11,560
+Bunun olmadığı
+
+2118
+02:03:11,560 --> 02:03:13,560
+yöntemler de var ama
+
+2119
+02:03:13,560 --> 02:03:15,560
+threatler kadar
+
+2120
+02:03:15,560 --> 02:03:17,560
+esnek değil.
+
+2121
+02:03:17,560 --> 02:03:19,560
+Threatlerdeki o
+
+2122
+02:03:19,560 --> 02:03:21,560
+bizim programlamaya
+
+2123
+02:03:21,560 --> 02:03:23,560
+yatkınlığımızı
+
+2124
+02:03:23,560 --> 02:03:25,560
+yansıtacak kadar esnek
+
+2125
+02:03:25,560 --> 02:03:27,560
+değil. O zaman
+
+2126
+02:03:27,560 --> 02:03:29,560
+başka bir şey ortaya
+
+2127
+02:03:29,560 --> 02:03:31,560
+atmamız gerekiyor.
+
+2128
+02:03:31,560 --> 02:03:33,560
+Çözüm basit. SM'liden
+
+2129
+02:03:33,560 --> 02:03:35,560
+biliyorsunuz aslında.
+
+2130
+02:03:35,560 --> 02:03:37,560
+Kod segment,
+
+2131
+02:03:37,560 --> 02:03:39,560
+data segment,
+
+2132
+02:03:39,560 --> 02:03:41,560
+kod segment, data segment.
+
+2133
+02:03:41,560 --> 02:03:46,250
+Deniyor ki
+
+2134
+02:03:46,250 --> 02:03:48,250
+bir prosesin memorisini
+
+2135
+02:03:48,250 --> 02:03:50,250
+içerdiği trendlere
+
+2136
+02:03:50,250 --> 02:03:52,250
+göre parçalara
+
+2137
+02:03:52,250 --> 02:03:56,619
+bölelim ve
+
+2138
+02:03:56,619 --> 02:03:59,960
+donanım
+
+2139
+02:03:59,960 --> 02:04:01,960
+özelliklerinden yararlanmadan
+
+2140
+02:04:01,960 --> 02:04:03,960
+sadece yazılım
+
+2141
+02:04:03,960 --> 02:04:05,960
+kullanarak
+
+2142
+02:04:05,960 --> 02:04:07,960
+bir parçanın diğer parçaya
+
+2143
+02:04:07,960 --> 02:04:12,420
+etkilemesini
+
+2144
+02:04:12,420 --> 02:04:14,420
+sağlıyor. Donanım desteği olursa
+
+2145
+02:04:14,420 --> 02:04:16,420
+müthiş olur ama donanım desteği
+
+2146
+02:04:16,420 --> 02:04:18,420
+olmadan da bunu yapabilir.
+
+2147
+02:04:18,420 --> 02:04:20,420
+Güvenilir olmayan
+
+2148
+02:04:20,420 --> 02:04:22,420
+instructionlar neler? Jam, load,
+
+2149
+02:04:22,420 --> 02:04:24,420
+store. Bunların
+
+2150
+02:04:24,420 --> 02:04:26,420
+üçünün de memori etkileşimi
+
+2151
+02:04:26,420 --> 02:04:28,420
+var. Memoriye erişebiliyorlar.
+
+2152
+02:04:28,420 --> 02:04:30,420
+O zaman
+
+2153
+02:04:30,420 --> 02:04:32,420
+compilation sırasında
+
+2154
+02:04:32,420 --> 02:04:34,420
+bu instructionların
+
+2155
+02:04:34,420 --> 02:04:36,420
+önüne
+
+2156
+02:04:36,420 --> 02:04:38,420
+guard,
+
+2157
+02:04:38,420 --> 02:04:40,420
+yani
+
+2158
+02:04:40,420 --> 02:04:42,420
+koruyucu yerleştirelim.
+
+2159
+02:04:42,420 --> 02:04:44,420
+Bu bizim
+
+2160
+02:04:44,420 --> 02:04:46,420
+uzak olduğumuz
+
+2161
+02:04:46,420 --> 02:04:48,420
+bir kavram değil ki.
+
+2162
+02:04:48,420 --> 02:04:50,420
+Değil mi?
+
+2163
+02:04:50,420 --> 02:04:52,420
+Hatırlayın step guard var.
+
+2164
+02:04:52,420 --> 02:04:54,420
+Canary,
+
+2165
+02:04:54,420 --> 02:04:56,420
+orada koruma mekanizması.
+
+2166
+02:04:56,420 --> 02:04:58,420
+Kernel bouncer,
+
+2167
+02:04:58,420 --> 02:05:00,420
+key bouncer var. Orada da bir
+
+2168
+02:05:00,420 --> 02:05:02,420
+guard mekanizması,
+
+2169
+02:05:02,420 --> 02:05:04,420
+koruma mekanizması var. Hani
+
+2170
+02:05:04,420 --> 02:05:06,420
+bouncer'a fedai demiştik. Burada da
+
+2171
+02:05:06,420 --> 02:05:08,420
+benzer bir şekilde bir koruyucu.
+
+2172
+02:05:08,420 --> 02:05:10,420
+Tabii ki kodu yüklerken de
+
+2173
+02:05:10,420 --> 02:05:12,420
+bu yerleştirdiğimiz guardların
+
+2174
+02:05:14,420 --> 02:05:16,420
+içeride olduğundan
+
+2175
+02:05:16,420 --> 02:05:30,489
+emin olmamız lazım.
+
+2176
+02:05:30,489 --> 02:05:32,489
+Bu yapının ilk uygulandığı
+
+2177
+02:05:32,489 --> 02:05:34,489
+işlemci MIPS.
+
+2178
+02:05:34,489 --> 02:05:36,489
+Kendisi bir risk
+
+2179
+02:05:36,489 --> 02:05:38,489
+mimarisinde işlemci.
+
+2180
+02:05:38,489 --> 02:05:40,489
+Bol sayıda register var.
+
+2181
+02:05:40,489 --> 02:05:42,489
+Günümüzde eskisi
+
+2182
+02:05:42,489 --> 02:05:44,489
+kadar çok kullanılmasa da
+
+2183
+02:05:44,489 --> 02:05:46,489
+güzel bir
+
+2184
+02:05:46,489 --> 02:05:49,960
+işlemci mimarisi.
+
+2185
+02:05:49,960 --> 02:05:51,960
+Yani MIPS demeyelim de burada
+
+2186
+02:05:51,960 --> 02:05:53,960
+isterseniz ARM diyelim. O da
+
+2187
+02:05:53,960 --> 02:05:55,960
+çünkü risk. İsterseniz PowerPC
+
+2188
+02:05:55,960 --> 02:05:57,960
+diyelim. O da risk.
+
+2189
+02:05:57,960 --> 02:05:59,960
+Bol sayıdaki registerlarından
+
+2190
+02:05:59,960 --> 02:06:01,960
+iki tane register
+
+2191
+02:06:01,960 --> 02:06:03,960
+ayrılıyor kenara.
+
+2192
+02:06:03,960 --> 02:06:05,960
+DR1, DR2.
+
+2193
+02:06:05,960 --> 02:06:07,960
+Kenara ayrılması demek ne?
+
+2194
+02:06:07,960 --> 02:06:09,960
+Compiler
+
+2195
+02:06:09,960 --> 02:06:11,960
+source code'dan object code
+
+2196
+02:06:11,960 --> 02:06:13,960
+generate ederken source
+
+2197
+02:06:13,960 --> 02:06:15,960
+code'la alakalı olarak kullanmayacak
+
+2198
+02:06:15,960 --> 02:06:17,960
+bu registerleri.
+
+2199
+02:06:17,960 --> 02:06:19,960
+Guard
+
+2200
+02:06:19,960 --> 02:06:21,960
+kontrolleri için, koruma
+
+2201
+02:06:21,960 --> 02:06:23,960
+kontrolleri için kullanacak.
+
+2202
+02:06:23,960 --> 02:06:25,960
+DR2
+
+2203
+02:06:25,960 --> 02:06:27,960
+her zaman için ilgili
+
+2204
+02:06:27,960 --> 02:06:29,960
+thread'in segment ID'si.
+
+2205
+02:06:33,239 --> 02:06:35,239
+Peki nasıl çalışıyor?
+
+2206
+02:06:35,239 --> 02:06:37,239
+Bakın R12'ye
+
+2207
+02:06:37,239 --> 02:06:39,239
+R34 register'ının
+
+2208
+02:06:39,239 --> 02:06:41,239
+gösterdiği adresin
+
+2209
+02:06:41,239 --> 02:06:43,239
+içeriği yüklenecek.
+
+2210
+02:06:43,239 --> 02:06:45,239
+Indirect load.
+
+2211
+02:06:45,239 --> 02:06:47,239
+Basit bir şey.
+
+2212
+02:06:47,239 --> 02:06:49,239
+SMD'den biliyorsunuz.
+
+2213
+02:06:49,239 --> 02:06:51,239
+C'deki pointer kullanımı.
+
+2214
+02:06:51,239 --> 02:06:53,239
+Hiçbir farkı yok.
+
+2215
+02:06:53,239 --> 02:06:55,239
+Bunu C'de de yazabilirdik böyle.
+
+2216
+02:06:55,239 --> 02:06:59,060
+Guard'lar kırmızı olarak
+
+2217
+02:06:59,060 --> 02:07:01,060
+gösterilmiş. Ne yapıyor?
+
+2218
+02:07:01,060 --> 02:07:03,060
+DR1 ve R34
+
+2219
+02:07:03,060 --> 02:07:05,060
+alınıyor.
+
+2220
+02:07:05,060 --> 02:07:07,060
+20 bit
+
+2221
+02:07:07,060 --> 02:07:09,060
+sağ shift ediliyor.
+
+2222
+02:07:09,060 --> 02:07:11,060
+Demek ki 4096 tane
+
+2223
+02:07:11,060 --> 02:07:13,060
+segment var.
+
+2224
+02:07:13,060 --> 02:07:15,060
+Öyle düşünün.
+
+2225
+02:07:15,060 --> 02:07:17,060
+20 bit'te
+
+2226
+02:07:17,060 --> 02:07:19,060
+bir segmentin
+
+2227
+02:07:19,060 --> 02:07:21,060
+uzunluğunu gösteriyor.
+
+2228
+02:07:21,060 --> 02:07:23,060
+4096 tane segment varsa
+
+2229
+02:07:23,060 --> 02:07:25,060
+demek ki her segment neymiş?
+
+2230
+02:07:25,060 --> 02:07:27,060
+1 MB'miş. Hepsini topladığınızda
+
+2231
+02:07:27,060 --> 02:07:29,060
+4 GB eder zaten.
+
+2232
+02:07:29,060 --> 02:07:31,060
+Peki
+
+2233
+02:07:31,060 --> 02:07:33,060
+Scratch register'daki
+
+2234
+02:07:33,060 --> 02:07:35,060
+değeri neyle karşılaştırıyor
+
+2235
+02:07:35,060 --> 02:07:37,060
+arkadaşlar?
+
+2236
+02:07:37,060 --> 02:07:39,060
+DR2 ile karşılaştırıyor.
+
+2237
+02:07:39,060 --> 02:07:41,060
+O anda aktif olan
+
+2238
+02:07:41,060 --> 02:07:43,060
+segment id'sine eşit mi?
+
+2239
+02:07:43,060 --> 02:07:45,060
+Eşit değilse
+
+2240
+02:07:45,060 --> 02:07:47,060
+sıkıntı var. Yanlış bir
+
+2241
+02:07:47,060 --> 02:07:49,060
+adrese erişmeye çalışıyor.
+
+2242
+02:07:49,060 --> 02:07:51,060
+Erişimi durduruyor. Eşitse
+
+2243
+02:07:51,060 --> 02:07:53,060
+yükleme işlemi
+
+2244
+02:07:53,060 --> 02:07:55,060
+gerçekleşiyor. Şimdi
+
+2245
+02:07:55,060 --> 02:07:57,060
+tek instruction yerine
+
+2246
+02:07:57,060 --> 02:07:59,060
+1, 2, 3, 4, 5
+
+2247
+02:07:59,060 --> 02:08:01,060
+ama
+
+2248
+02:08:01,060 --> 02:08:03,060
+neden dolayı hata çıktığında
+
+2249
+02:08:03,060 --> 02:08:05,060
+çok net bir şekilde görüyoruz.
+
+2250
+02:08:05,060 --> 02:08:09,939
+Bunu optimize edebiliriz.
+
+2251
+02:08:09,939 --> 02:08:11,939
+Nasıl optimize edebiliriz?
+
+2252
+02:08:11,939 --> 02:08:15,380
+Hiç kontrol
+
+2253
+02:08:15,380 --> 02:08:17,380
+etmeden R34'ün
+
+2254
+02:08:17,380 --> 02:08:19,380
+üstteki
+
+2255
+02:08:19,380 --> 02:08:21,380
+12 bitini sıfırlarız.
+
+2256
+02:08:21,380 --> 02:08:23,380
+Segment
+
+2257
+02:08:23,380 --> 02:08:25,380
+register ile orlarız. Böylece
+
+2258
+02:08:27,380 --> 02:08:29,380
+segment değeri
+
+2259
+02:08:29,380 --> 02:08:31,380
+olması gereken değere eşitlenir
+
+2260
+02:08:31,380 --> 02:08:33,380
+ve erişimi de öyle
+
+2261
+02:08:33,380 --> 02:08:40,600
+yaparız.
+
+2262
+02:08:40,600 --> 02:08:42,600
+Development ve debug için uygun. Çünkü
+
+2263
+02:08:42,600 --> 02:08:44,600
+hata varsa hatanın hangi adresine
+
+2264
+02:08:44,600 --> 02:08:46,600
+neden ötürü olduğunu görmemizi sağlar.
+
+2265
+02:08:46,600 --> 02:08:48,600
+Bu kod ise
+
+2266
+02:08:48,600 --> 02:08:50,600
+performansı daha yüksek.
+
+2267
+02:08:50,600 --> 02:08:52,600
+Production için uygun.
+
+2268
+02:08:52,600 --> 02:08:54,600
+Demek ki development sırasında
+
+2269
+02:08:54,600 --> 02:08:56,600
+bir seçenek seçeceğiz.
+
+2270
+02:08:56,600 --> 02:08:58,600
+Compiler'e bir seçenek vereceğiz.
+
+2271
+02:08:58,600 --> 02:09:00,600
+İlk tarzdaki gibi üretecek.
+
+2272
+02:09:00,600 --> 02:09:02,600
+Debug edip tamam dedikten sonra da
+
+2273
+02:09:02,600 --> 02:09:04,600
+öbür türlü bu seçeneği verip
+
+2274
+02:09:04,600 --> 02:09:06,600
+bu şekilde
+
+2275
+02:09:06,600 --> 02:09:08,600
+kod generate ettireceğiz.
+
+2276
+02:09:10,600 --> 02:09:12,600
+Dolaylı bir adrese
+
+2277
+02:09:12,600 --> 02:09:14,600
+doğrudan atlamak için
+
+2278
+02:09:14,600 --> 02:09:16,600
+bakın burada da adres
+
+2279
+02:09:16,600 --> 02:09:18,600
+parantez içerisinde
+
+2280
+02:09:18,600 --> 02:09:20,600
+benzer şekilde ne yapmam lazım? Yani
+
+2281
+02:09:20,600 --> 02:09:22,600
+adresin gösterdiği
+
+2282
+02:09:22,600 --> 02:09:24,600
+içerdiği
+
+2283
+02:09:24,600 --> 02:09:26,600
+adrese adres
+
+2284
+02:09:26,600 --> 02:09:28,600
+pointer
+
+2285
+02:09:28,600 --> 02:09:30,600
+olarak kullanılıyor.
+
+2286
+02:09:30,600 --> 02:09:32,600
+Oradaki adrese doğrudan atlamak
+
+2287
+02:09:32,600 --> 02:09:34,600
+cam. O zaman ne yapmam lazım?
+
+2288
+02:09:34,600 --> 02:09:38,229
+Benzer şekilde az önce
+
+2289
+02:09:38,229 --> 02:09:40,229
+gördüğüm gibi guard
+
+2290
+02:09:40,229 --> 02:09:42,229
+ile o adresin
+
+2291
+02:09:42,229 --> 02:09:44,229
+de kontrolünü yapmam lazım.
+
+2292
+02:09:44,229 --> 02:09:50,100
+Bir fark yok.
+
+2293
+02:09:50,100 --> 02:09:52,100
+Aslında
+
+2294
+02:09:52,100 --> 02:09:54,100
+remote
+
+2295
+02:09:54,100 --> 02:09:56,100
+procedure call'dan
+
+2296
+02:09:56,100 --> 02:09:58,100
+gelen bir kavram bu.
+
+2297
+02:09:58,100 --> 02:10:00,100
+Domain call.
+
+2298
+02:10:00,100 --> 02:10:02,100
+Bir tarafta caller var. Diğer tarafta
+
+2299
+02:10:02,100 --> 02:10:04,100
+callee var. Caller çağıran
+
+2300
+02:10:04,100 --> 02:10:07,670
+callee çağrılan.
+
+2301
+02:10:07,670 --> 02:10:09,670
+Her iki taraf
+
+2302
+02:10:09,670 --> 02:10:11,670
+normal çalıştığını düşünüyor. Yani
+
+2303
+02:10:11,670 --> 02:10:13,670
+biri call ile
+
+2304
+02:10:13,670 --> 02:10:15,670
+callee'yi çağırıyor.
+
+2305
+02:10:15,670 --> 02:10:17,670
+Callee de return ile geri dönüyor. Ama
+
+2306
+02:10:17,670 --> 02:10:19,670
+hem call hem return neye
+
+2307
+02:10:19,670 --> 02:10:21,670
+dönüştürülüyor arkadaşlar? Jump'a.
+
+2308
+02:10:21,670 --> 02:10:23,670
+Buradaki br branch'in kısaltması
+
+2309
+02:10:23,670 --> 02:10:25,670
+jump ve branch
+
+2310
+02:10:25,670 --> 02:10:31,350
+eş anlamlı.
+
+2311
+02:10:31,350 --> 02:10:33,350
+Bu draw bir tabloda
+
+2312
+02:10:33,350 --> 02:10:35,350
+aslında hangi
+
+2313
+02:10:35,350 --> 02:10:37,350
+adrese
+
+2314
+02:10:37,350 --> 02:10:39,350
+branch yapılması gerektiği şeklinde
+
+2315
+02:10:39,350 --> 02:10:41,350
+convert ediliyor.
+
+2316
+02:10:41,350 --> 02:10:43,350
+Parametreler aktarılıyor.
+
+2317
+02:10:43,350 --> 02:10:45,350
+Draw çalışıyor. Return de
+
+2318
+02:10:45,350 --> 02:10:47,350
+yine branch ile
+
+2319
+02:10:47,350 --> 02:10:49,350
+nereye geri dönülmesi. Yani
+
+2320
+02:10:49,350 --> 02:10:51,350
+aslında bakın doğrudan
+
+2321
+02:10:51,350 --> 02:10:53,350
+call ve return yok. Hep branch
+
+2322
+02:10:53,350 --> 02:10:55,350
+var. Buradaki
+
+2323
+02:10:55,350 --> 02:10:57,350
+güzellik branch adreslerine
+
+2324
+02:10:57,350 --> 02:10:59,350
+ne yapıyorsunuz? Return'ı yapıyorsunuz.
+
+2325
+02:10:59,350 --> 02:11:03,270
+Memory management.
+
+2326
+02:11:03,270 --> 02:11:05,270
+Donanımı. Buna izin
+
+2327
+02:11:05,270 --> 02:11:07,270
+verebiliyor.
+
+2328
+02:11:07,270 --> 02:11:09,270
+Öyle olduğunda da branch
+
+2329
+02:11:09,270 --> 02:11:11,270
+adresleri read only olduğu için
+
+2330
+02:11:11,270 --> 02:11:13,270
+onların değiştirilebilme şansları yok.
+
+2331
+02:11:13,270 --> 02:11:17,220
+Yani bir thread
+
+2332
+02:11:17,220 --> 02:11:19,220
+bir başka threadle etkileşim
+
+2333
+02:11:19,220 --> 02:11:21,220
+halinde olacaksa, bir threadten
+
+2334
+02:11:21,220 --> 02:11:23,220
+bir başka threadteki bir şey çağrılacaksa
+
+2335
+02:11:23,220 --> 02:11:25,220
+veya bir prosesin
+
+2336
+02:11:25,220 --> 02:11:27,220
+içerisindeki bir
+
+2337
+02:11:27,220 --> 02:11:29,220
+nokta, bir başka noktayı çağırma ihtiyacı
+
+2338
+02:11:29,220 --> 02:11:31,220
+duyuyorsa, işte görüyorsunuz burada.
+
+2339
+02:11:31,220 --> 02:11:33,220
+Oradaki
+
+2340
+02:11:33,220 --> 02:11:35,220
+adreslerin birbirine girmemesi de
+
+2341
+02:11:35,220 --> 02:11:37,220
+bu şekilde sağlanıyor.
+
+2342
+02:11:37,220 --> 02:11:39,220
+Adreslerin düzgünlüğünün
+
+2343
+02:11:39,220 --> 02:11:43,140
+garanti edilmesi de.
+
+2344
+02:11:43,140 --> 02:11:45,140
+MPEG Play
+
+2345
+02:11:45,140 --> 02:11:47,140
+Linux ortamında
+
+2346
+02:11:47,140 --> 02:11:49,140
+MPEG oynatmak için kullanılan
+
+2347
+02:11:49,140 --> 02:11:51,140
+bir uygulama. Bu yönteme
+
+2348
+02:11:51,140 --> 02:11:53,140
+göre yeniden
+
+2349
+02:11:53,140 --> 02:11:55,140
+compile edildiğinde
+
+2350
+02:11:55,140 --> 02:11:57,140
+aynı donanım üzerinde
+
+2351
+02:11:57,140 --> 02:11:59,140
+%4 bir yavaşlama gösteriyor.
+
+2352
+02:11:59,140 --> 02:12:01,140
+Sorun değil.
+
+2353
+02:12:01,140 --> 02:12:03,140
+Hiç sıkıntısı olmayan yani
+
+2354
+02:12:03,140 --> 02:12:05,140
+sorun bile sıkıntı olarak kabul edilmeyecek
+
+2355
+02:12:05,140 --> 02:12:07,140
+bir şey. Ama
+
+2356
+02:12:07,140 --> 02:12:09,140
+ne yazık ki
+
+2357
+02:12:09,140 --> 02:12:11,140
+SFI
+
+2358
+02:12:11,140 --> 02:12:13,140
+bazı mimariler için uygun değil.
+
+2359
+02:12:13,140 --> 02:12:15,140
+x86 bunlardan bir tanesi.
+
+2360
+02:12:15,140 --> 02:12:17,140
+Neyse ki bu
+
+2361
+02:12:17,140 --> 02:12:19,140
+i jenerasyonuyla beraber
+
+2362
+02:12:19,140 --> 02:12:21,140
+i3, i5, i7 ile beraber
+
+2363
+02:12:21,140 --> 02:12:23,140
+Intel
+
+2364
+02:12:23,140 --> 02:12:25,140
+işlemcilerine
+
+2365
+02:12:25,140 --> 02:12:27,140
+genel amaçlı kullanılabilecek
+
+2366
+02:12:27,140 --> 02:12:29,140
+registerlar ekledi. Sadece bu
+
+2367
+02:12:29,140 --> 02:12:31,140
+tarz şeyleri destekleyebilmek için. Başka
+
+2368
+02:12:31,140 --> 02:12:33,140
+özellikler de var. Gördüğünüz hata,
+
+2369
+02:12:33,140 --> 02:12:35,140
+bu CET falan
+
+2370
+02:12:35,140 --> 02:12:37,140
+o özelliği gördünüz değil mi?
+
+2371
+02:12:37,140 --> 02:12:39,140
+K-Bouncer'da kullanılan
+
+2372
+02:12:39,140 --> 02:12:41,140
+o MMS yapısını falan da
+
+2373
+02:12:41,140 --> 02:12:43,140
+gördük. Branch prediction
+
+2374
+02:12:43,140 --> 02:12:45,140
+lojini falan da gördük.
+
+2375
+02:12:45,140 --> 02:12:47,140
+Ama yine de başka sıkıntılar var.
+
+2376
+02:12:47,140 --> 02:12:49,140
+Intel mimarisindeki
+
+2377
+02:12:49,140 --> 02:12:51,140
+instructionlar
+
+2378
+02:12:51,140 --> 02:12:53,140
+değişen uzunlukta. Aynı
+
+2379
+02:12:53,140 --> 02:12:55,140
+instruction'ın memoriye referans vereni
+
+2380
+02:12:55,140 --> 02:12:57,140
+başka uzunlukta register referans
+
+2381
+02:12:57,140 --> 02:12:59,140
+vereni. O yüzden
+
+2382
+02:12:59,140 --> 02:13:01,140
+code generate ederken
+
+2383
+02:13:01,140 --> 02:13:03,140
+guardları yerleştirirken
+
+2384
+02:13:03,140 --> 02:13:05,140
+bayağı bir hesap
+
+2385
+02:13:05,140 --> 02:13:07,140
+yapmak gerekiyor.
+
+2386
+02:13:07,140 --> 02:13:09,140
+Klasik yapıyı kullanıyorsak
+
+2387
+02:13:09,140 --> 02:13:11,140
+yani AX, BX, CX,
+
+2388
+02:13:11,140 --> 02:13:13,140
+DX kullanıyorsak çok fazla bir şansınız
+
+2389
+02:13:13,140 --> 02:13:15,140
+yok. Zaten
+
+2390
+02:13:15,140 --> 02:13:17,140
+AX akümünatör return
+
+2391
+02:13:17,140 --> 02:13:19,140
+değerini tutuyor. O hikaye.
+
+2392
+02:13:19,140 --> 02:13:21,140
+E, geriye
+
+2393
+02:13:21,140 --> 02:13:23,140
+BX, CX, DX
+
+2394
+02:13:23,140 --> 02:13:25,140
+kaldı. Bunları da
+
+2395
+02:13:25,140 --> 02:13:27,140
+iki tanesini kenara ayıralım dersek
+
+2396
+02:13:27,140 --> 02:13:29,140
+geriye bir tane register kalıyor. Olacak
+
+2397
+02:13:29,140 --> 02:13:31,140
+şey değil.
+
+2398
+02:13:31,140 --> 02:13:33,140
+Bir de
+
+2399
+02:13:33,140 --> 02:13:35,140
+Intel işlemcisi
+
+2400
+02:13:35,140 --> 02:13:37,140
+kisk
+
+2401
+02:13:37,140 --> 02:13:39,140
+yani
+
+2402
+02:13:39,140 --> 02:13:41,140
+neredeyse bütün instruction'lar
+
+2403
+02:13:41,140 --> 02:13:43,140
+doğrudan memoriye erişebiliyor. Operantlardan
+
+2404
+02:13:43,140 --> 02:13:45,140
+biri memori de olabiliyor.
+
+2405
+02:13:45,140 --> 02:13:47,140
+AND'de, OR'da,
+
+2406
+02:13:47,140 --> 02:13:49,140
+XOR'da değil mi?
+
+2407
+02:13:49,140 --> 02:13:51,140
+Halbuki risk işlemcisinde
+
+2408
+02:13:51,140 --> 02:13:53,140
+memoriyle etkileşimi olabilen
+
+2409
+02:13:53,140 --> 02:13:55,140
+üç tane instruction var. Az önce
+
+2410
+02:13:55,140 --> 02:13:57,140
+gördük. Load, store,
+
+2411
+02:13:57,140 --> 02:13:59,140
+call. Şey jump.
+
+2412
+02:13:59,140 --> 02:14:01,140
+Çünkü call da jump'ın bir türü.
+
+2413
+02:14:01,140 --> 02:14:04,899
+Geri dönüşü sağlayan.
+
+2414
+02:14:04,899 --> 02:14:08,569
+Bundan ötürü risk
+
+2415
+02:14:08,569 --> 02:14:10,569
+mimarisi için çok efektif olan ve
+
+2416
+02:14:10,569 --> 02:14:12,569
+kullanılan bu yöntem Intel
+
+2417
+02:14:12,569 --> 02:14:14,569
+mimarisinde daha sıkıntılı. Ancak
+
+2418
+02:14:14,569 --> 02:14:16,569
+yeni jenerasyon Intel işlemcilerinde
+
+2419
+02:14:16,569 --> 02:14:18,569
+genel amaçlı
+
+2420
+02:14:18,569 --> 02:14:20,569
+register'ların da olması sebebiyle
+
+2421
+02:14:20,569 --> 02:14:22,569
+bu kullanılabilir hale gelmiş durumda.
+
+2422
+02:14:22,569 --> 02:14:24,569
+Ancak orada da şöyle
+
+2423
+02:14:24,569 --> 02:14:26,569
+bir sıkıntı var.
+
+2424
+02:14:26,569 --> 02:14:28,569
+Code I3, I5,
+
+2425
+02:14:28,569 --> 02:14:30,569
+I7, I9 uyumlu. Niye?
+
+2426
+02:14:30,569 --> 02:14:32,569
+Onun öncesinde o register'lar yok.
+
+2427
+02:14:32,569 --> 02:14:34,569
+Yani kalkıp da bir adım öncesinde
+
+2428
+02:14:34,569 --> 02:14:36,569
+çalıştıramıyorsunuz.
+
+2429
+02:14:36,569 --> 02:14:40,460
+Milyon tane satmışsınız.
+
+2430
+02:14:40,460 --> 02:14:42,460
+Bir o kadarı
+
+2431
+02:14:42,460 --> 02:14:44,460
+daha satacaksınız. Ama yeni
+
+2432
+02:14:44,460 --> 02:14:46,460
+çıkan uygulama daha önce satmış olduğumuz
+
+2433
+02:14:46,460 --> 02:14:48,460
+milyon tane de çalışmayacak.
+
+2434
+02:14:48,460 --> 02:14:50,460
+Ticari olarak değerlendirilmesi
+
+2435
+02:14:50,460 --> 02:14:52,460
+gereken bir durum.
+
+2436
+02:14:52,460 --> 02:14:54,460
+Sonuç olarak
+
+2437
+02:14:54,460 --> 02:14:56,460
+physical air gap gördük.
+
+2438
+02:14:56,460 --> 02:14:58,460
+Virtual air gap gördük.
+
+2439
+02:14:58,460 --> 02:15:00,460
+System call interposition, software
+
+2440
+02:15:00,460 --> 02:15:02,460
+fault isolation. Bunu application
+
+2441
+02:15:02,460 --> 02:15:04,460
+spesifik hani javascript in browser
+
+2442
+02:15:04,460 --> 02:15:06,460
+tarzında onu da konuştuk.
+
+2443
+02:15:06,460 --> 02:15:08,460
+Şimdi
+
+2444
+02:15:08,460 --> 02:15:10,460
+tamamen izole etmek gibi bir niyetimiz yok.
+
+2445
+02:15:10,460 --> 02:15:12,460
+Zaten bu anlamlı değil. Uygulamaların
+
+2446
+02:15:12,460 --> 02:15:14,460
+birbirleriyle konuşmalarını istiyoruz.
+
+2447
+02:15:14,460 --> 02:15:16,460
+Ama
+
+2448
+02:15:16,460 --> 02:15:18,460
+istediğimiz şey ne?
+
+2449
+02:15:18,460 --> 02:15:20,460
+Bizim belirlediğimiz ve kontrol ettiğimiz
+
+2450
+02:15:20,460 --> 02:15:22,460
+arayüzler üzerinden
+
+2451
+02:15:22,460 --> 02:15:24,460
+bu konuşmalar, haberleşmelerini
+
+2452
+02:15:24,460 --> 02:15:26,460
+yapsınlar.
+
+2453
+02:15:26,460 --> 02:15:28,460
+Ne olursa olsun, dedim size
+
+2454
+02:15:28,460 --> 02:15:30,460
+son slide'da da aynı noktaya
+
+2455
+02:15:30,460 --> 02:15:32,460
+gireceğim. Kurallar
+
+2456
+02:15:32,460 --> 02:15:34,460
+çok önemli.
+
+2457
+02:15:34,460 --> 02:15:36,460
+Yönteminizin ne kadar hızlı
+
+2458
+02:15:36,460 --> 02:15:38,460
+ne kadar düzgün, ne kadar iyi çalıştığı
+
+2459
+02:15:38,460 --> 02:15:40,460
+tabii ki bunları garanti altına
+
+2460
+02:15:40,460 --> 02:15:42,460
+almak zorundasınız, onu sorgulamıyoruz ama
+
+2461
+02:15:42,460 --> 02:15:44,460
+kurallarınızda sıkıntı varsa
+
+2462
+02:15:44,460 --> 02:15:46,460
+zafiyetler olur.
+
+2463
+02:15:46,460 --> 02:15:48,460
+Bir de
+
+2464
+02:15:48,460 --> 02:15:50,460
+covert channel
+
+2465
+02:15:50,460 --> 02:15:52,460
+önceden öngörülemeyen bir şey.
+
+2466
+02:15:52,460 --> 02:15:54,460
+Çoğu zaman
+
+2467
+02:15:54,460 --> 02:15:56,460
+yaşanıyor,
+
+2468
+02:15:56,460 --> 02:15:58,460
+sıkıntı oluyor,
+
+2469
+02:15:58,460 --> 02:16:00,460
+kapsamlı bir analiz yapılıyor ve ondan sonra
+
+2470
+02:16:00,460 --> 02:16:02,460
+orada bir
+
+2471
+02:16:02,460 --> 02:16:04,460
+covert channel olduğu anlaşılıyor.
+
+2472
+02:16:04,460 --> 02:16:06,460
+Peki yapabileceğimiz şey ne?
+
+2473
+02:16:06,460 --> 02:16:08,460
+Mevcut covert channel analizlerinden
+
+2474
+02:16:08,460 --> 02:16:10,460
+haberdar olursak
+
+2475
+02:16:10,460 --> 02:16:12,460
+nelerin covert channel olarak
+
+2476
+02:16:12,460 --> 02:16:14,460
+kullanılabileceğinden haberdar olursak
+
+2477
+02:16:14,460 --> 02:16:16,460
+ona bağlı
+
+2478
+02:16:16,460 --> 02:16:19,739
+olarak geliştireceğimiz
+
+2479
+02:16:19,739 --> 02:16:21,739
+sistemlerde covert channel
+
+2480
+02:16:21,739 --> 02:16:23,739
+oluşmasını, oluşturulmasını
+
+2481
+02:16:23,739 --> 02:16:25,739
+engelleyecek tedbirleri de
+
+2482
+02:16:25,739 --> 02:16:27,739
+alabiliriz.
+
+2483
+02:16:27,739 --> 02:16:29,739
+Evet arkadaşlar
+
+2484
+02:16:29,739 --> 02:16:31,739
+bugün de bu kadar
+
+2485
+02:16:31,739 --> 02:16:33,739
+ders olarak.
+
+2486
+02:16:33,739 --> 02:16:35,739
+Hepinize teşekkür ederim.
+
+2487
+02:16:35,739 --> 02:16:37,739
+Sorusu olan var mı?
+
+2488
+02:16:37,739 --> 02:16:53,500
+Tamam o zaman.
+
+2489
+02:16:53,500 --> 02:16:55,500
+Hepinize iyi haftalar.
+
+2490
+02:16:55,500 --> 02:16:57,500
+Görüşmek üzere.
+
+2491
+02:16:57,500 --> 02:17:14,729
+Kolay gelsin.
+
+2492
+02:17:14,729 --> 02:17:16,729
+Bir dakika Tiago Cardoso
+
+2493
+02:17:16,729 --> 02:17:18,729
+Teacher I have a question.
+
+2494
+02:17:18,729 --> 02:17:20,729
+It is
+
+2495
+02:17:20,729 --> 02:17:22,729
+the point enough to do
+
+2496
+02:17:22,729 --> 02:17:26,229
+assignments.
+
+2497
+02:17:26,229 --> 02:17:28,229
+I don't think so Tiago.
+
+2498
+02:17:28,229 --> 02:17:30,229
+You should consult
+
+2499
+02:17:30,229 --> 02:17:32,229
+additional documents.
+
+2500
+02:17:32,229 --> 02:17:34,229
+You can do some Google search
+
+2501
+02:17:34,229 --> 02:17:36,229
+and also
+
+2502
+02:17:36,229 --> 02:17:38,229
+use other
+
+2503
+02:17:38,229 --> 02:17:40,229
+material from CS155
+
+2504
+02:17:40,229 --> 02:17:42,229
+course website.
+
+2505
+02:17:42,229 --> 02:17:44,229
+But definitely
+
+2506
+02:17:44,229 --> 02:17:46,229
+the powerpoints are the
+
+2507
+02:17:46,229 --> 02:17:48,229
+starting point.
+
+2508
+02:17:48,229 --> 02:17:58,170
+Okay? Aynen
+
+2509
+02:17:58,170 --> 02:18:01,510
+bu adres. Kolay gele
+
+2510
+02:18:01,510 --> 02:18:03,510
+görüşmek üzere.
+

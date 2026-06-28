@@ -1,0 +1,1843 @@
+1
+00:00:27,500 --> 00:00:34,299
+Merhabalar. Biraz sonra derse başlayacağım. Arkadaşlarınızın biraz daha katılımını bekliyorum.
+
+2
+00:00:34,299 --> 00:00:39,390
+5-10 dakika sonra başlıyorum dersi.
+
+3
+00:00:39,390 --> 00:06:59,459
+Evet, merhabalar. Ben biraz bekledim arkadaşlarınızın eklenmesini ama bir süredir hiç yeni eklenen arkadaşınız olmadı.
+
+4
+00:06:59,459 --> 00:07:11,970
+Bugün şimdilik az kişiyiz ama öncelikle projelerinizle ilişkili konuşayım.
+
+5
+00:07:11,970 --> 00:07:20,970
+Daha sonra aradan sonra tek tek bazı konular için yorum yapacağım.
+
+6
+00:07:20,970 --> 00:07:28,970
+Şimdilik bu tek tek konularınızla ilişkili yorum yapmıyorum.
+
+7
+00:07:28,970 --> 00:07:37,970
+Ama genel bir bilgi vereyim. Konu seçiminizde aslında ben önceden belirlemenizi istedim.
+
+8
+00:07:37,970 --> 00:07:47,970
+Gruptaki kişileri netleştireyim diye ama konularınızla ilişkili bazılarınızın sıkıntı var.
+
+9
+00:07:47,970 --> 00:07:51,970
+Şöyle uygulama konunuzu bildirmişsiniz.
+
+10
+00:07:51,970 --> 00:08:02,970
+Yani hangi alanda, hangi tür şirket için veya hangi tür sistem için kütüphane bilgi sistemi diyen var örneğin.
+
+11
+00:08:02,970 --> 00:08:09,970
+Halbuki burada istediğim en son dersimizde geçen hafta tatildi bayramda yapamadık.
+
+12
+00:08:09,970 --> 00:08:19,970
+En son dersimizde işletmelerdeki bilgi sistemi uygulamalarından bahsetmiştim.
+
+13
+00:08:19,970 --> 00:08:24,970
+Bunu tekrarlayacağım. Biraz daha genişleterek tekrarlayacağım.
+
+14
+00:08:24,970 --> 00:08:29,970
+İşletmelerde hangi birimler var?
+
+15
+00:08:29,970 --> 00:08:40,970
+Dolayısıyla enterprise kurumsal sistemlerde hangi alt başlıklar var?
+
+16
+00:08:40,970 --> 00:08:47,970
+Bunları üzerinden geçeceğiz. İşletme sistemlerinin alt birimleri üzerinde.
+
+17
+00:08:47,970 --> 00:08:58,970
+Bu alt birimlerde hangisinde uygulama yapacaksanız o konudaki programlar için önce fizibilite yapacaksınız.
+
+18
+00:08:58,970 --> 00:09:04,970
+Sonra da bu kendi kuracağınız sistemi anlatacaksınız.
+
+19
+00:09:04,970 --> 00:09:16,970
+Aradan sonra birkaç örnek, arkadaşlarınızdan doğru örnek ve değiştirilmesi gereken konu başlığı olarak
+
+20
+00:09:16,970 --> 00:09:20,970
+inceleyeceğiz.
+
+21
+00:09:20,970 --> 00:09:36,970
+Şimdi slide üzerinden gideceğiz ve işletmelerdeki bilgi sistemleri konusunu göreceğiz.
+
+22
+00:09:36,970 --> 00:11:10,919
+Şimdi sizinle slide paylaşacağım.
+
+23
+00:11:10,919 --> 00:11:31,330
+Evet, işletmelerde bilgi sistemi tipleri konusu ile ilgili slide'ı görebiliyor musunuz?
+
+24
+00:11:31,330 --> 00:11:36,620
+Görüyoruz hocam.
+
+25
+00:11:36,620 --> 00:11:38,620
+Tamam, teşekkürler.
+
+26
+00:11:38,620 --> 00:11:53,620
+Evet, bizim daha önceki haftalarda da üzerinde durduğumuz sistemin dersi sırasında da buna benzer MIS tanımını verdiğimiz bir piramit ile başlıyorum derse.
+
+27
+00:11:53,620 --> 00:12:02,620
+Burada hem uygulamalar, şimdi aslında bu derste bu piramidin içini açarak gideceğiz.
+
+28
+00:12:02,620 --> 00:12:25,669
+Aşağıdan yukarıya doğru transaction processing sistem, management information sistem, decision support sistem ve executive support sistem olmak üzere sağ tarafta bilgi sistem tiplerini görüyoruz.
+
+29
+00:12:25,669 --> 00:12:37,669
+Dikey olarak bölünmüş bölümlerde de işletmelerdeki birimleri görüyoruz.
+
+30
+00:12:37,669 --> 00:12:49,669
+Tabii ki bu birimler yani her işletmede departmanların isimleri bu şekilde verilecek anlamında değil de temel işlemleri göstermiş oluyoruz.
+
+31
+00:12:49,669 --> 00:12:54,669
+Bazılarında daha az birim olabilir, bazılarında daha fazla birim olabilir.
+
+32
+00:12:54,669 --> 00:13:04,299
+Örneğin ek birimler olabilir.
+
+33
+00:13:04,299 --> 00:13:15,299
+Sol tarafta da işletmelerdeki yönetim seviyeleri üzerinde bölümlemeler var.
+
+34
+00:13:15,299 --> 00:13:21,299
+Operational seviye, yönetim seviyesi, stratejik seviye.
+
+35
+00:13:21,299 --> 00:13:27,299
+Bunlar da yönetim katmanları işletmelerdeki.
+
+36
+00:13:27,299 --> 00:13:36,299
+Geçen hafta işletmelerde son yıllarda farklı olan şeylerden bir tanesi düzleşme demiştik.
+
+37
+00:13:36,299 --> 00:13:44,299
+Yani ara yönetim katmanlarının azaldığını söylemiştik yönetim kademelerinin.
+
+38
+00:13:44,299 --> 00:13:50,299
+Böyle bir dönüşüm gördüğümüzü belirtmiştim işletmelerde.
+
+39
+00:13:50,299 --> 00:13:57,480
+Ve buradaki örneklerden yola çıkacağız.
+
+40
+00:13:57,480 --> 00:14:07,480
+Örneğin satış ve pazarlama birimi temel birimlerden bir tanesi.
+
+41
+00:14:07,480 --> 00:14:16,480
+Satış ve pazarlama da operational seviyede sipariş işleme gerçekleşir.
+
+42
+00:14:16,480 --> 00:14:21,480
+Yani günlük işlemlerin yapıldığı, daha kısa vadeli planlamaların yapıldığı,
+
+43
+00:14:21,480 --> 00:14:31,480
+daha kısa dönemli uygulamaların gerçekleştirildiği işletmede en temelde yapılan,
+
+44
+00:14:31,480 --> 00:14:39,480
+en alt seviyede yapılan işlemler satış ve pazarlama açısından sipariş işlemedir.
+
+45
+00:14:39,480 --> 00:14:49,480
+Yönetim seviyesinde satış yönetimi gerçekleştirilir.
+
+46
+00:14:49,480 --> 00:14:59,480
+Stratejik seviyede 5 yıllık satış trendlerinin tahmini gerçekleştirilir.
+
+47
+00:14:59,480 --> 00:15:06,480
+Bunlar da yönetim kademeleri açısından alt yönetimde örneğin sipariş işleme,
+
+48
+00:15:06,480 --> 00:15:14,480
+orta yönetimde yönetim bilgi sistemleri anlamında satış yönetimi,
+
+49
+00:15:14,480 --> 00:15:24,480
+karar destek sistemi kapsamında satış bölge analizleri,
+
+50
+00:15:24,480 --> 00:15:30,480
+hangi bölgede ne kadar satış oldu, satış tahmini, bu karar destek sistemi,
+
+51
+00:15:30,480 --> 00:15:34,480
+satış yönetimi, yönetim bilgi sistemi uygulaması.
+
+52
+00:15:34,480 --> 00:15:43,860
+Yine baktığımızda üretim biriminde,
+
+53
+00:15:43,860 --> 00:15:51,860
+şu adlı dikey bilimlerden sarı olan üretim birimin,
+
+54
+00:15:51,860 --> 00:15:56,860
+üretim biriminde gerçekleşen işlemler,
+
+55
+00:15:56,860 --> 00:16:01,860
+malzeme hareketleri en alt seviyede, operasyonal seviyede,
+
+56
+00:16:01,860 --> 00:16:07,860
+orta seviyede envanter kontrolü gerçekleştirilmesi,
+
+57
+00:16:07,860 --> 00:16:21,860
+üst seviyede ise 5 yıllık işlem planı, üretim planı kararları gerçekleştirilir.
+
+58
+00:16:21,860 --> 00:16:26,860
+Yani bu tip uygulamalar oluşturuluyor.
+
+59
+00:16:26,860 --> 00:16:32,860
+Yine sizinle daha önce bu şekli incelemiştik,
+
+60
+00:16:32,860 --> 00:16:46,860
+finans ve muhasebede işlemsel tabanda bordro ve muhasebe kayıtlarının tutulması temel seviyede gerçekleştirilen,
+
+61
+00:16:46,860 --> 00:16:52,860
+orta seviyede yönetim bilgi sistemleri seviyesinde
+
+62
+00:16:52,860 --> 00:16:59,860
+yıllık bütçe işlemleri, yönetim bilgi sistemi anlamında,
+
+63
+00:16:59,860 --> 00:17:03,860
+karar destek sistemi olacak bir uygulamada,
+
+64
+00:17:03,860 --> 00:17:10,859
+karlılık analizleri, kazanç analizleri gerçekleştirilmesi.
+
+65
+00:17:10,859 --> 00:17:17,859
+Yine başka bir dikey birimde insan kaynakları,
+
+66
+00:17:17,859 --> 00:17:22,859
+burada da transaction processing sistem olarak gerçekleştirilen
+
+67
+00:17:22,859 --> 00:17:30,859
+ve işlemsel yönetim seviyesinde kullanılan çalışanların kayıtlarının tutulması,
+
+68
+00:17:30,859 --> 00:17:46,519
+yönetim bilgi sistemi örneği olarak burada da yeni bir yapılanma için,
+
+69
+00:17:46,519 --> 00:17:52,519
+çalışanların yeni yerlerinin değiştirilmesi, yeniden yapılandırılması için,
+
+70
+00:17:52,519 --> 00:17:58,519
+maliyet kontrolü gerçekleştirilmesi,
+
+71
+00:17:58,519 --> 00:18:12,279
+karar destek sistemlerinde de yeni çalışan yatırımları için maliyet analizini gerçekleştirilmesi,
+
+72
+00:18:12,279 --> 00:18:20,279
+executive support system ya da executive information system,
+
+73
+00:18:20,279 --> 00:18:56,049
+EIS ya da bir dakika devam ediyorum tekrar.
+
+74
+00:18:56,049 --> 00:19:07,049
+Bu sistemde karar destek sistemi ve yönetim bilgi sistemi anlamında,
+
+75
+00:19:07,049 --> 00:19:11,049
+insan kaynaklarında gerçekleştirecek işlemleri söylemiştim.
+
+76
+00:19:11,049 --> 00:19:24,460
+Personel planlama, daha doğrusu 5 yıllık ya da uzun dönemli personel planlamada,
+
+77
+00:19:24,460 --> 00:19:30,460
+executive support system ya da executive information system,
+
+78
+00:19:30,460 --> 00:19:35,460
+yani Türkçe'de kullandığımız şekliyle üst yönetim bilgi sistemi,
+
+79
+00:19:35,460 --> 00:19:41,460
+üst yönetim bilgi sisteminin şu şekilde sağ taraftaki diziliş,
+
+80
+00:19:41,460 --> 00:19:47,460
+sol taraftaki dizilişle ilişkili dersin başında da açıklamıştım.
+
+81
+00:19:47,460 --> 00:19:50,460
+Bilgi sistemi tipleri işletmelerde kullanılan,
+
+82
+00:19:50,460 --> 00:19:54,460
+transaction processing system, management information system,
+
+83
+00:19:54,460 --> 00:20:01,460
+decision support system, executive support system bilgi sistemi tipleri,
+
+84
+00:20:01,460 --> 00:20:06,460
+şu dikey birimler, işletmedeki temel birimler,
+
+85
+00:20:06,460 --> 00:20:11,460
+bunlara ek olabilir, isimleri değişebilir ama temel yapılan işlemler,
+
+86
+00:20:11,460 --> 00:20:26,460
+sol tarafta da bu işlerin, bu birimlerdeki çalışmalar için hangi yönetim seviyesi gerçekleşiyor,
+
+87
+00:20:26,460 --> 00:20:29,460
+hangi yönetim seviyesi kullanıyor bunu,
+
+88
+00:20:29,460 --> 00:20:34,460
+dolayısıyla burada sağ tarafla sol tarafı da çakıştırmış oluyoruz.
+
+89
+00:20:34,460 --> 00:20:37,460
+Sağ taraftaki bilgi sistemi tipinin,
+
+90
+00:20:37,460 --> 00:20:42,460
+sol taraftaki yönetim kademeleri kullanmış oluyor.
+
+91
+00:20:42,460 --> 00:20:51,460
+Şimdi tek tek bu bilgi sistemi tipleri örnekleyerek gidelim.
+
+92
+00:20:51,460 --> 00:21:00,670
+İşlemsel bilgi sistemi dediğimizde,
+
+93
+00:21:00,670 --> 00:21:06,390
+şöyle daha rahat görmeniz için,
+
+94
+00:21:06,390 --> 00:21:16,900
+işlemsel bilgi sistemi yapısı için burada transaction processing system,
+
+95
+00:21:16,900 --> 00:21:24,900
+temel işletmecilik sistemleri kurumun işlemsel seviyesinde kullanılan,
+
+96
+00:21:24,900 --> 00:21:34,900
+girdilerin kurumda gerçekleşen işlemler, olaylar,
+
+97
+00:21:34,900 --> 00:21:40,900
+işlemler nelerdir, sıralama, listeleme, güncelleme gibi,
+
+98
+00:21:40,900 --> 00:21:48,900
+çıktıkları ayrıntılı raporlar, listeler ve çalışma özetleri,
+
+99
+00:21:48,900 --> 00:21:58,900
+kullanıcıları alt seviyedeki işlemsel personel ve bunların yöneticileri kullanılıyor,
+
+100
+00:21:58,900 --> 00:22:01,900
+buradaki sistemleri.
+
+101
+00:22:01,900 --> 00:22:09,900
+Şimdi örnek olarak bir alt seviyede baktığımızda,
+
+102
+00:22:09,900 --> 00:22:13,900
+satış pazarlama bölümünde, sipariş işleme,
+
+103
+00:22:13,900 --> 00:22:16,900
+malzeme hareket kontrolü üretim biriminde,
+
+104
+00:22:16,900 --> 00:22:21,900
+muhasebe kayıtlarının tutulması, finans muhasebede,
+
+105
+00:22:21,900 --> 00:22:27,900
+ve insan kaynakları tarafında da çalışanların kayıtlarının tutulması.
+
+106
+00:22:27,900 --> 00:22:32,900
+Bunlar transaction processing sistem yapısı çerçevesinde yürüyor.
+
+107
+00:22:32,900 --> 00:22:41,980
+Bir tane örnek, board row sisteminden bir tane örnek alırsak,
+
+108
+00:22:41,980 --> 00:22:46,980
+çalışan sistem şu,
+
+109
+00:22:46,980 --> 00:22:49,980
+board row sistemi.
+
+110
+00:22:49,980 --> 00:23:00,980
+Board row sistemine gelen bilgileri ve işlenen kayıtları aktardığımız,
+
+111
+00:23:00,980 --> 00:23:05,980
+güncellenen kayıtları aktardığımız bir verit amanı,
+
+112
+00:23:05,980 --> 00:23:14,980
+ve buradan çalışan verisi aktarılacak,
+
+113
+00:23:14,980 --> 00:23:27,980
+genel ücretler ve diğer giderlerde birimlere gönderilecek,
+
+114
+00:23:27,980 --> 00:23:30,980
+ayrıca yönetim raporları şeklinde gönderilecek,
+
+115
+00:23:30,980 --> 00:23:39,680
+yönetime raporlar gidecek,
+
+116
+00:23:39,680 --> 00:23:43,680
+ve çalışanların kontrolü sağlanacak.
+
+117
+00:23:43,680 --> 00:23:48,680
+Bunlar sistemin çıktıkları, sağ taraftakiler.
+
+118
+00:23:48,680 --> 00:23:56,680
+Ve istenildiğinde online sorgulamalar da gerçekleştirecek.
+
+119
+00:23:56,680 --> 00:24:06,680
+Bu konuda girilen veri ve çıktığı da düzenli raporların görünümü de bu şekilde olacak.
+
+120
+00:24:06,680 --> 00:24:14,680
+Yani sizin temel derslerdeki, programlama dilleri derslerindeki,
+
+121
+00:24:14,680 --> 00:24:23,680
+temel uygulamalarınız gibi tek bir işlevi olan bir uygulama şeklinde yürüyecek.
+
+122
+00:24:23,680 --> 00:24:31,440
+Biraz daha açarsak, işletmelerdeki farklı birimlerde,
+
+123
+00:24:31,440 --> 00:24:34,440
+transaction processing sistem uygulamaları,
+
+124
+00:24:34,440 --> 00:24:40,440
+çünkü üçgen de, piramitte sadece daha az örnek vermiştik.
+
+125
+00:24:40,440 --> 00:24:50,440
+Yine burada satış pazarlamada gerçekleşen uygulamalar da birkaç tanesine bakarsak,
+
+126
+00:24:50,440 --> 00:25:14,369
+satış yönetimi, bu sistemdeki temel işlemler, fiyat değişikliklerinin oluşturulması,
+
+127
+00:25:14,369 --> 00:25:30,369
+promosyon izleme, müşteri hizmetleriyle satış yönetiminin ilişkilendirilmesi gibi temel işlemler.
+
+128
+00:25:30,369 --> 00:25:35,369
+Uygulamalar da satış sipariş bilgi sistemi,
+
+129
+00:25:35,369 --> 00:25:42,369
+yani bunlar temel işlemler, bu temel işlemler için hazırlanan bilgi sistemleri,
+
+130
+00:25:42,369 --> 00:25:47,369
+transaction processing bilgi sistemleri de,
+
+131
+00:25:47,369 --> 00:25:53,369
+satış sipariş bilgi sistemi, satışlardan elde edilen komisyon sistemi,
+
+132
+00:25:53,369 --> 00:25:58,369
+satış destek sistemi gibi uygulamalar olabilir.
+
+133
+00:25:58,369 --> 00:26:05,369
+Üretim biriminde, üretimdeki makinaların kontrol sistemleri,
+
+134
+00:26:05,369 --> 00:26:13,369
+satın alma sipariş sistemleri, yani ham madde satın alma sipariş sistemleri,
+
+135
+00:26:13,369 --> 00:26:21,369
+kalite kontrol sistemleri gibi gerçekleştirilen işlemler nelerdir?
+
+136
+00:26:21,369 --> 00:26:29,369
+Üretimde kullanılan ham maddelerin listelenmesi, satın alınması,
+
+137
+00:26:29,369 --> 00:26:42,029
+ham maddenin ulaştırılması ya da üretimin gönderilmesi gibi işlemlerdir.
+
+138
+00:26:42,029 --> 00:26:46,029
+Bunlar da temel bilgi sistemleri.
+
+139
+00:26:46,029 --> 00:26:56,029
+Finans muhasebede ise, faturalama, genel muhasebe, maliyet muhasebesi gibi işlemler.
+
+140
+00:26:56,029 --> 00:27:02,029
+Bunların transaction processing sistemdeki uygulamaları da,
+
+141
+00:27:02,029 --> 00:27:08,029
+genel muhasebe uygulaması, muhasebe uygulaması gibi,
+
+142
+00:27:08,029 --> 00:27:13,029
+FON yönetim sistemleri gibi uygulamalar.
+
+143
+00:27:13,029 --> 00:27:21,029
+İnsan kaynaklarında ise, personel kayıtlarının tutulması,
+
+144
+00:27:21,029 --> 00:27:35,029
+personelin yeteneklerle ilişkilendirilmesi ve personeli aldırılacak eğitimin oluşturulması.
+
+145
+00:27:35,029 --> 00:27:47,029
+Bunun için de, transaction processing sistem, işlemsel bilgi sistemi uygulamaları neler olur?
+
+146
+00:27:47,029 --> 00:27:56,029
+Şu alttaki bölüm, işlemsel bilgi sistemi örnekleri,
+
+147
+00:27:56,029 --> 00:28:01,029
+üsttekiler de bu birimlerde gerçekleştirilen işlemler.
+
+148
+00:28:01,029 --> 00:28:07,029
+Alt kademe yönetim seviyesinde gerçekleştirilen işlemler.
+
+149
+00:28:07,029 --> 00:28:15,869
+Yeni transaction processing sistem yapısı için de,
+
+150
+00:28:15,869 --> 00:28:23,869
+insan kaynakları sisteminde işlemsel bilgi sistemleri,
+
+151
+00:28:23,869 --> 00:28:29,869
+çalışan kayıtlarının sistemi,
+
+152
+00:28:29,869 --> 00:28:39,869
+çalışan yetenek envanteri, yani hangi yeteneklere sahip gibi,
+
+153
+00:28:39,869 --> 00:28:52,869
+diğer uygulamalarda da, mesela özel kurumlarda, üniversiteler çarşavesinde neler gerçekleştiriliyor,
+
+154
+00:28:52,869 --> 00:29:06,869
+ders kayıtları, notların kaydedilmesi ve saklanması, giriş işlemlerinin yapılması,
+
+155
+00:29:06,869 --> 00:29:12,869
+burada da bunlarla ilgili bilgi sistemleri de,
+
+156
+00:29:12,869 --> 00:29:27,869
+kayıt sistemi, öğrenci transcript sistemi, ders tanımları ve kontrol sistemi gibi sistemler.
+
+157
+00:29:27,869 --> 00:29:32,869
+Biz temel olarak sizin örneklerinizi,
+
+158
+00:29:32,869 --> 00:29:39,869
+işletmelerde gerçekleşen uygulamalardan seçmenizi istemiştik.
+
+159
+00:29:39,869 --> 00:29:48,869
+Benim dersde sizin yapmanızı istediğim örnekler, grup halinde yapmanızı istediğim örnekler,
+
+160
+00:29:48,869 --> 00:30:05,509
+işletmelerde kullanılan satış pazarlama, üretim, finans ve insan kaynakları gibi
+
+161
+00:30:05,509 --> 00:30:10,509
+birimlerde gerçekleşen uygulamalardan seçmeniz,
+
+162
+00:30:10,509 --> 00:30:20,509
+daha çok da böyle temel işlemlerden değil de yönetim bilgi sistemleri tarzında bir uygulama seçmenizi istiyorum.
+
+163
+00:30:20,509 --> 00:30:29,509
+Bunları şimdi yine bu dersin devamında, bugünkü dersin devamında,
+
+164
+00:30:29,509 --> 00:30:34,509
+kurumsal bilgi sistemleri üzerinde duracağız.
+
+165
+00:30:34,509 --> 00:30:48,509
+Bu kurumsal bilgi sistemi alt birleşenlerinden de insan kaynakları, finans muhasebe,
+
+166
+00:30:48,509 --> 00:30:56,509
+satış pazarlama gibi sistemlerin alt sistemleri,
+
+167
+00:30:56,509 --> 00:31:02,509
+genelleştirilmiş hali olan,
+
+168
+00:31:02,509 --> 00:31:15,509
+enterprise resource planning'de de bulunan alt başlıkları kullanmanızı isteyeceğim.
+
+169
+00:31:15,509 --> 00:31:24,190
+Yönetim bilgi sistemlerinin özelliği nelerdi?
+
+170
+00:31:24,190 --> 00:31:46,569
+Bu, işletmenin yönetim seviyesine hizmet eden ve kurumun işlemsel bilgi sistemlerinden çıkan,
+
+171
+00:31:46,569 --> 00:31:55,569
+şirket verisine erişmesini ve raporlar alınmasını sağlayan
+
+172
+00:31:55,569 --> 00:32:06,569
+ve dolayısıyla da yönetim seviyesindeki çalışanlara hizmet veren bir bilgi sistemidir yönetim bilgi sistemi.
+
+173
+00:32:06,569 --> 00:32:17,569
+Girdileri, transaction processing sistemden, işlemsel veriden özetler girdi olarak gelir.
+
+174
+00:32:17,569 --> 00:32:29,569
+Yüksek hacimli veri alınır, o anda günlük işleyen veri girdi olarak alınır
+
+175
+00:32:29,569 --> 00:32:38,569
+ve karar aşamasında işlem yapmak için de basit modeller de girdi olarak verilebilir.
+
+176
+00:32:39,569 --> 00:32:53,569
+İşlemler nelerdir? Routine raporlama işlemleri, basit modelleme uygulamaları ve alçak seviyede analiz gerçekleştirilir.
+
+177
+00:32:53,569 --> 00:33:07,569
+Çıktısı da özet ve ayrıntılı ve özet raporlardır. Orta yöneticilere hizmet verir.
+
+178
+00:33:07,569 --> 00:33:17,569
+Şimdi burada biz bunlarla ilgili örnekler göreceğiz ama transaction processing sistemden veri alan başka bir şeydir.
+
+179
+00:33:17,569 --> 00:33:27,569
+Decision support sistemlerdir, karar destek sistemleri. Bu yönetim bilgi sistemi içinde de çalışabilir.
+
+180
+00:33:27,569 --> 00:33:41,569
+Ayrıca daha geniş modellemeler yapıp sadece kararlarda karar vericilere destek olmak amacıyla da decision support sistem kullanılır.
+
+181
+00:33:41,569 --> 00:33:56,569
+Decision support sistemler karar almak için veri analizi gerçekleştirerek yönetim seviyesine hizmet eden bilgi sistemleridir.
+
+182
+00:33:56,569 --> 00:34:06,569
+Burada hedef karar vericilerin karar almasını sağlayacak analizler gerçekleştirmektir.
+
+183
+00:34:06,569 --> 00:34:15,570
+Burada düşük hacıblı veri veya büyük veri tabanları kullanılabilir.
+
+184
+00:34:15,570 --> 00:34:28,570
+Yani girdi perspektifi çok geniş, analitik modeller kullanılabilir ve veri analiz araçları kullanılır.
+
+185
+00:34:28,570 --> 00:34:36,570
+İşlemler, interaktif işlemler, simülasyonlar, analizler kullanılır.
+
+186
+00:34:36,570 --> 00:34:50,570
+Analizler derken burada karar analizinde en çok kullanılan what-if analizleri, karar modelleri gibi işlemler gerçekleştirilir.
+
+187
+00:34:50,570 --> 00:34:57,570
+Çıktıları özel raporlar, karar analizleri bazı sorgulara cevaplar şeklindedir.
+
+188
+00:34:57,570 --> 00:35:15,570
+Kullanıcıları da uzmanlar, danışmanlar yani karar verme aşamasında çalışanlar. Bir de yöneticiler de kullanılabilir, orta kademe yöneticiler de kullanılabilir.
+
+189
+00:35:15,570 --> 00:35:23,570
+Şimdi yani ikisinin arasındaki farkı görebilmemiz için karar destek sistemlerine de geçtim.
+
+190
+00:35:23,570 --> 00:35:30,099
+Yönetim bilgi sistemlerinin özelliklerini gördük.
+
+191
+00:35:30,099 --> 00:35:46,409
+İşletmedeki transaction processing sistemlerden yönetim bilgi sistemine bilgi aktarma.
+
+192
+00:35:46,409 --> 00:36:05,539
+Bu arada şimdiye kadar sorusu olan var mı? Görüntü ve ses probleminiz var mı? Hiçbir yorum gelmedi sizlerden.
+
+193
+00:36:05,539 --> 00:36:27,880
+Evet bu projelerdeki konu teklifiniz nedeniyle biraz daha açarak gidiyorum bilgi sistemi örneklerini işletmelerdeki.
+
+194
+00:36:27,880 --> 00:36:55,150
+Bugün bir tane ara verelim o zaman. Evet tekrar biraz daha büyüteyim bunu ben.
+
+195
+00:36:55,150 --> 00:37:07,139
+İşletmelerdeki transaction processing sistemlerden yönetim bilgi sisteminin nasıl bilgi aktarılıyor.
+
+196
+00:37:07,139 --> 00:37:22,139
+Sol tarafta transaction processing sistemler, sipariş işlem sistemi, malzeme kaynak planlama sistemi, genel muhasebe sistemi gibi.
+
+197
+00:37:22,139 --> 00:37:33,139
+Bunların hepsi bir tanesi sipariş de diğer üretim verisinin tutulduğu,
+
+198
+00:37:33,139 --> 00:37:38,139
+diğer muhasebe dosyalarının olduğu ayrı veri tabanlarıyla çalışıyorlar.
+
+199
+00:37:38,139 --> 00:37:44,139
+Sipariş işlem sistemi, malzeme kaynak planlama sistemi ve genel muhasebe sistemi.
+
+200
+00:37:44,139 --> 00:37:49,139
+Bunların hepsi ayrı ayrı transaction processing sistemler.
+
+201
+00:37:49,139 --> 00:37:54,139
+Peki yönetim bilgi sistemi uygulamasında nasıl olacak?
+
+202
+00:37:54,139 --> 00:38:16,650
+Bu işlemsel bilgi sistemlerinden yönetim bilgi sistemi veri altyapısına bir veri tabanı parçaları olarak satış verisi,
+
+203
+00:38:16,650 --> 00:38:32,650
+üretim birim maliyet verisi, üretim değişimi verisi ve harcamalar verisi,
+
+204
+00:38:33,650 --> 00:38:51,650
+MIS yazılımına aktarılacak ve bu üretim satışlarla ilgili harcamalar ve elde edilen karla ilişkili bilgi konusunda da
+
+205
+00:38:51,650 --> 00:38:59,650
+yöneticilere raporlar gönderilecek farklı biçimde karar alması için.
+
+206
+00:38:59,650 --> 00:39:05,650
+Sol taraftaki transaction processing sistemler, işlemsel bilgi sistemleri,
+
+207
+00:39:05,650 --> 00:39:17,650
+işletmede genel uygulamaların gerçekleştirildiği bu en alt birimlerde o birimle ilişkili uygulamalar.
+
+208
+00:39:17,650 --> 00:39:32,650
+MIS uygulamalarında ise burada bütün bu uygulamalardan elde edilen çıktıları yöneticilerin karar alma işlemleri
+
+209
+00:39:32,650 --> 00:39:43,650
+ve planlamaları için kullanacakları ayrıntılı raporlar haline getirerek çalışan bir yönetim bilgi sistemi yapısı var.
+
+210
+00:39:43,650 --> 00:39:51,650
+Bir sistem analizi dersinde de bu ilişkilendirmeyi soruyorduk size çok.
+
+211
+00:39:51,650 --> 00:40:04,650
+İşte hangi bilgi sistemi, hangi bilgi sistemiyle ilişkili, böyle bir yuvarlaklarla oluşan bir şeklimiz vardı.
+
+212
+00:40:04,650 --> 00:40:20,699
+En altta transaction processing sistem, sistem analizinde bir de iş sistemleri, sadece transaction processing sistem olarak verdik burada.
+
+213
+00:40:20,699 --> 00:40:29,699
+Transaction processing sistemden karar destek sistemine ve yönetim bilgi sistemine bilgi akışı gerçekleşiyor.
+
+214
+00:40:29,699 --> 00:40:35,699
+Bunların her ikisinden de üst yönetim bilgi sistemine veri aktarımı söz konusu.
+
+215
+00:40:35,699 --> 00:41:10,239
+Burada da bir siparişlerin üretim ve muhasebe ile ilişkilendirilmesi konusunda yönetime raporlar gönderen bir yönetim bilgi sistemi uygulaması da
+
+216
+00:41:10,239 --> 00:41:26,239
+çalışması sırasında ilgili transaction processing sistemlerden nasıl bilgi aldığı ve bunları nasıl kullandığıyla ilişkili bir örnek oluşturmuş olduk.
+
+217
+00:41:26,239 --> 00:41:54,599
+Burada bir MIS raporu nasıl oluşur, müşteri, ürün ve şirket yani satış bölgelerine göre,
+
+218
+00:41:54,599 --> 00:42:18,280
+ürünlerin satışları, işte üretim birimi, satış birimi ve muhasebe biriminin birlikte verisini kullanan bir yönetim bilgi sistemi raporlaması,
+
+219
+00:42:18,280 --> 00:42:40,280
+ürün kodu, ürün tanımı, bölgelere göre gerçekleşen satışlar, planlanan satışlar, gerçekleşen ve planlanan arasındaki farklılıklar şeklinde bir rapor alabiliyoruz.
+
+220
+00:42:40,280 --> 00:43:07,280
+Yani transaction processing sistemler her birisi bir dikey birimde çalışırken bunların bilgilerini kullanarak işte üç birimden elde edilen bilgiyi kullanıp raporlayan bir uygulama gerçekleştirmiş olduk.
+
+221
+00:43:07,280 --> 00:43:22,039
+Karar destek sistemlerinin özelliklerini az önce konuşmuştuk. Karar destek sistemlerinde hangi özellikler var?
+
+222
+00:43:22,039 --> 00:43:40,039
+Bir defa karar destek sistemleri, veri analizi gerçekleştirerek karar vericilere, yönetim seviyesindeki karar vericilere hizmet ediyor.
+
+223
+00:43:40,039 --> 00:43:55,769
+Girdileri düşük acımlı veri ya da büyük veri tabanları olabilir. Yani veri perspektifi, girdi perspektifi çok fazla. Bir Excel dosyası da olabilir.
+
+224
+00:43:55,769 --> 00:44:18,769
+Büyük bir veri tabanı da olabilir. Büyük veri de olabilir. Analitik modelleri de dışarıdan ekliyoruz. Şu analitik modele göre çalıştır diyeceğimiz analitik modelleri ve veri analizi toollarını da veri analiz toolları,
+
+225
+00:44:18,769 --> 00:44:36,769
+örneğin SPSS'de bulunan araçlarla bunu gerçekleştirebiliriz yine analitik modellerle. Bunları simülasyon araçları kullanabiliyoruz.
+
+226
+00:44:36,769 --> 00:44:55,769
+İşlemlerde interaktif işlemler ya da simülasyonlar ya da karar analizleri gerçekleştiriyoruz. Çıktılarımız ise özel raporlar, karar analizleri ve sorgulara cevaplar şeklinde oluyor.
+
+227
+00:44:55,769 --> 00:45:05,769
+Karar verici uzmanlar ve orta kademe yöneticiler kullanabiliyor karar destek sistemlerini.
+
+228
+00:45:05,769 --> 00:45:19,719
+Mesela burada bir yolculuk analizi gerçekleştiriyoruz.
+
+229
+00:45:19,719 --> 00:45:39,719
+Yani ürün gönderirken gerçekleşecek yolu belirlemek için analitik modeller kullanılacak.
+
+230
+00:45:39,719 --> 00:46:05,719
+Hangi veri kullanılacak, hız ve kapasite için gönderim gerçekleştirecek gemilerin bilgisi, liman mesafeleri, bu kısıtlar verilecek.
+
+231
+00:46:05,719 --> 00:46:17,380
+Yakıt harcaması maliyet bilgisi olarak kullanılacak.
+
+232
+00:46:17,380 --> 00:46:29,380
+Burada daha önceki maliyet bilgileri kullanılacak ve liman ücretleri kullanılacak.
+
+233
+00:46:29,380 --> 00:46:35,380
+Buna göre gönderim için bir güzergah kararı verecek.
+
+234
+00:46:35,380 --> 00:46:43,380
+Bu karar vermede de hangi analitik modeller kullanılacaksa bunlar seçecek.
+
+235
+00:46:43,380 --> 00:46:52,380
+Simülasyon mu yapılacak? Yoksa diğer karlılık analizleri mi gerçekleştirecek?
+
+236
+00:46:52,380 --> 00:47:00,380
+Bu veri de verilecek. Hangi sorular soruluyorsa bu sorulara da cevap aktarılacak.
+
+237
+00:47:00,380 --> 00:47:06,380
+Bu online sorulardan giden de olması lazım.
+
+238
+00:47:06,380 --> 00:47:15,380
+Aslında tek yönlü değil, soruların gönderilmesi ve cevap alınacağı bir ortam.
+
+239
+00:47:15,380 --> 00:47:34,380
+Yani karar destek sisteminde genellikle orta düzey yöneticilerin, danışmanları olan uzmanların kullandığı sistemlerdir karar destek sistemleri.
+
+240
+00:47:34,380 --> 00:47:47,329
+Bir de ekzekürtif support sistem var, üst yönetim bilgi sistemleri.
+
+241
+00:47:47,329 --> 00:47:53,329
+Bunlar kurumun stratejik seviyesindeki yöneticilere hizmet verir.
+
+242
+00:47:53,329 --> 00:48:01,329
+Bir hesaplama ve iletişim ortamı sağlar üst kademe yönetici için.
+
+243
+00:48:01,329 --> 00:48:09,329
+Üst kademe yönetici burada sadece iç veriyi kullanmaz, dış veriyi de kullanabilir.
+
+244
+00:48:09,329 --> 00:48:17,329
+Yani stratejik kararları oluşturmak üzere finans bilgilerini,
+
+245
+00:48:17,329 --> 00:48:27,329
+diğer sadece kurumu ilgilendiren değil, kurum dışındaki veri tabanlarını da kullanabilir.
+
+246
+00:48:27,329 --> 00:48:36,329
+Yani kullanacağı, onları da kullanabileceği hazır hale getirilmiş bir ortam sunulur bu bilgi sisteminde.
+
+247
+00:48:36,329 --> 00:48:44,329
+İşlemler, grafikler, simülasyonlar ve interaktif soru cevap şeklinde çalışan uygulamalardır.
+
+248
+00:48:44,329 --> 00:48:50,329
+Çıktıları da projeksiyonlar ve sorguları cevaplar şeklinde.
+
+249
+00:48:50,329 --> 00:49:08,340
+Projeksiyonlardan kastımız şu, tahmin yürüten var olan veriyi veya arşiv verisini kullanarak gelecek hakkında yorumlamalar yapmaktır.
+
+250
+00:49:08,340 --> 00:49:15,340
+Çıktıları bu şekilde yönlendirici olacaktır.
+
+251
+00:49:15,340 --> 00:49:18,340
+Kullanıcıları da sadece üst yönetici.
+
+252
+00:49:18,340 --> 00:49:31,340
+Bu yüzden bu tür uygulamaların üst yönetimdeki kişileri daha hazır kullanım sunacak uygulamalar olması istenir.
+
+253
+00:49:31,340 --> 00:49:40,510
+Üst yönetim bilgi sistemi örneği daha önce de bu örnek üzerinde durmuştuk.
+
+254
+00:49:40,510 --> 00:49:57,510
+Burada iç veri ve dış veri kullanılıyor derken, iç veri transaction processing sistemden gelen yönetim bilgi sisteminde işlenen veri, finansal veri,
+
+255
+00:49:57,510 --> 00:50:05,510
+modelleme, analiz verisi girdileri olur.
+
+256
+00:50:05,510 --> 00:50:18,510
+Çıktıları ise, iç-dış veri ise, uluslararası indeksler, internetteki haber kaynakları, standartlar,
+
+257
+00:50:18,510 --> 00:50:32,510
+yani bir strateji oluşturulacaksa o alanla ilgili standartların da göz önünde bulundurulması gerekir.
+
+258
+00:50:32,510 --> 00:50:55,440
+Ve bu ulaşım şeklinde üst yöneticinin kullandığı etkileşim birimlerinin grafik, menü, iletişim,
+
+259
+00:50:55,440 --> 00:51:04,440
+aynı zamanda yerel işlem de yapabilecek bir çalışma ortamı olması öneriliyor.
+
+260
+00:51:04,440 --> 00:51:23,750
+UPSL'nin açılımı üst yönetim bilgi sistemi, aslında evet bunun İngilizce kısaltmasıyla hep kullandık.
+
+261
+00:51:23,750 --> 00:51:45,380
+Üst yönetim bilgi sistemi örneği, executive information system ya da şu şekillerdeki karşılığıyla executive support system.
+
+262
+00:51:45,380 --> 00:52:03,570
+Burada özelliklerini verdik, bir sonraki slide'da da örnek verdik.
+
+263
+00:52:03,570 --> 00:52:11,570
+Yani üst yönetim bilgi sistemi uygulaması nasıl çalışıyor, bu da üst yönetim bilgi sisteminin özellikleri.
+
+264
+00:52:11,570 --> 00:52:21,570
+Kısaltmaya ESS de diyebiliriz, AIS de diyebiliriz, executive information system, UBS de diyebiliriz.
+
+265
+00:52:21,570 --> 00:53:07,559
+Şimdi devam edelim. Şimdi sizden beklediğim temel işletmecilik fonksiyonları üzerinde yani bilgi sistemi tipleri olarak durduk.
+
+266
+00:53:07,559 --> 00:53:22,559
+Şimdi temel işletmecilik fonksiyonları üzerinde duralım, satış pazarlama, üretim, finans muhasebe ve insan kaynakları konusunda.
+
+267
+00:53:22,559 --> 00:53:35,280
+Satış pazarlama sistemleri ne yapar? Bir defa müşterilerin tanımlanmasına yardımcı olur,
+
+268
+00:53:35,280 --> 00:53:45,280
+müşterileri kaydeder, işlem yaptığımız müşterileri, ürünleri ve servisleri gerçekleştirir.
+
+269
+00:53:45,280 --> 00:53:55,280
+Yani ürün ve hizmetleri nelerdir bu kurumun, bunu geliştirir.
+
+270
+00:53:55,280 --> 00:54:15,280
+Ürün ve servisler için promosyon gerçekleştirir, satış yapar ve var olan müşterileri müşteri desteği sağlar.
+
+271
+00:54:15,280 --> 00:54:39,719
+Bununla ilgili bizim bilgi sistemi isimlendirmesinde karşılaştığımız isim müşteri yönetimi, bilgi sistemi, müşteri ilişkileri yönetimi,
+
+272
+00:54:39,719 --> 00:54:54,719
+satış ve pazarlama sistemlerini CRM olarak daha çok tanıyoruz, customer relationship management müşteri ilişkileri yönetimi.
+
+273
+00:54:54,719 --> 00:55:07,719
+Burada işte satışla ilişkili, pazarlamayla ilişkili, burada saydığımız hizmetleri bu uygulamalarda görebiliyoruz.
+
+274
+00:55:07,719 --> 00:55:29,719
+Sizden istediğim bu alanlardan birisi üzerindeki alt başlıklara eğilmeniz olacak ve bu alanda çok sayıda hazır program var yazılım şirketlerinin geliştirdiği.
+
+275
+00:55:29,719 --> 00:55:53,719
+Bunlardan örnekler inceleyip bunların olanaklarını, maliyetlerini belirleyip daha sonra da bunlar üzerinde sizin geliştirme yapmanızı istiyorum.
+
+276
+00:55:53,719 --> 00:56:09,260
+Ama fizibilite analizinde önce bu tür sistemleri siz birisine danışmanlık yapsanız bir kuruma nasıl inceleyeceksiniz?
+
+277
+00:56:09,260 --> 00:56:18,260
+O şekilde bir fizibilite analizi yapıp sonra da biz bunu şu şekilde uygulayabiliriz deyip kendi sisteminizi tasarlamanız.
+
+278
+00:56:18,260 --> 00:56:28,219
+Şimdi satış pazarlamayı ayrıca görelim.
+
+279
+00:56:28,219 --> 00:56:30,219
+Sistem nedir?
+
+280
+00:56:30,219 --> 00:56:42,219
+Sipariş işleme, fiyat analizi ve satış trend tahminleri.
+
+281
+00:56:42,219 --> 00:56:59,219
+Kurumsal seviyesi de, işlemsel seviye de sipariş işleme, yönetim seviyesinde fiyat analizleri, stratejik seviyede de satış trend tahminleri sistemi.
+
+282
+00:56:59,219 --> 00:57:13,769
+Tanımı, sipariş işlem için bilgi girişi işleme ve siparişlerin takibi.
+
+283
+00:57:13,769 --> 00:57:18,769
+Yani sipariş girişi, siparişlerin işlenmesi ve siparişlerin takibi.
+
+284
+00:57:18,769 --> 00:57:23,769
+İşlemsel seviye de satış biriminde bu temel olarak yapılır.
+
+285
+00:57:24,769 --> 01:15:09,100
+Yönetim kademesinde bir ara verelim isterseniz 10 dakika.
+
+286
+01:15:09,100 --> 01:15:11,100
+Evet, devam ediyoruz.
+
+287
+01:15:11,100 --> 01:15:13,100
+Arayı tamamladık.
+
+288
+01:15:13,100 --> 01:15:21,689
+Yine aynı slide üzerinden devam ediyoruz.
+
+289
+01:15:21,689 --> 01:15:42,529
+Evet, bu defa işletmedeki işletsel birimler üzerinden sistem örnekleri veriyorum.
+
+290
+01:15:42,529 --> 01:15:54,529
+Yani bugün hep sizlerden gelen proje tekliflerini görünce burada bir anlaşamamazlık olduğunu hissettim.
+
+291
+01:15:54,529 --> 01:16:12,529
+Ve bu bizim piramit şeklimizi açarak bütün işletmelerdeki her birimde hangi tür bilgi sistemi kullanıyoruz, bunun üzerinde daha kapsamlı durmak istedim.
+
+292
+01:16:12,529 --> 01:16:38,899
+Ve işletmelerdeki dikey birimler üzerinden her birinde işlemsel seviyede yani alt yönetim seviyesinde, orta yönetim seviyesinde ve stratejik seviyede hangi bilgi sistemleri kullanılır, örnekleyerek devam edeceğim.
+
+293
+01:16:38,899 --> 01:16:43,899
+Şimdi ilk başta satış sipariş birimiyle başladık.
+
+294
+01:16:43,899 --> 01:16:56,899
+Satış pazarlama sistemleri ve satış pazarlama sistemlerinde hangi işlemler gerçekleşiyordu?
+
+295
+01:16:56,899 --> 01:17:21,420
+Müşterilerin tanımlanması, kaydedilmesi, bilgi kaydının yapılması, ürün ve servisler geliştirilmesi, ürün ve servislerin promosyonunun yapılması, satışının yapılması ve müşteri desteğinin sağlanması.
+
+296
+01:17:21,420 --> 01:17:43,420
+Biz bunu kurumsal uygulamalardaki alt başlıklar olarak CRM uygulamaları kapsamında görüyoruz ve CRM uygulamalarında destek sağlayacak alt yapıda neler gerçekleşiyor onu da daha sonra göreceğiz.
+
+297
+01:17:43,420 --> 01:18:00,420
+Özellikle burada alt yapıda veri madenciliği, veri tabanı uygulamaları, büyük veri uygulamaları çok fazla yer tutuyor bizim teknik olarak baktığımızda.
+
+298
+01:18:00,420 --> 01:18:27,920
+Şimdi satış ve pazarlamada temel işlem, sipariş işleme, siparişin girilmesi, işlenmesi ve takip edilmesi, fiyat analizleri, yönetim seviyesinde, fiyatlara karar verilmesi, ürün ve servislerin fiyatlarına karar verilmesi, belirlenmesi bu da yönetim seviyesinde.
+
+299
+01:18:27,920 --> 01:18:45,920
+Bu sadece üretim maliyetiyle değil, daha önceki arşiv verisine, satış bilgilerine, bölgelere göre karar verilecek bir sistem.
+
+300
+01:18:45,920 --> 01:19:05,920
+Satış trend tahminleri, yani burada karar destek sistemi de, yönetim bilgi sistemi de kullanılabilir. Satış trend tahminleri, işte 5 yıllık satış tahminleri bu da stratejik seviyede kullanılacak bilgi sistemleri ve işlemler diyebiliriz.
+
+301
+01:19:05,920 --> 01:19:32,920
+Üretim bölümlerinde, üretim sistemi olarak planlama, geliştirme işlemi, ürün ve servislerin üretimi, üretim planlaması ve üretimin gerçekleştirilmesi, üretim faaliyetlerinin planlanması ve bakımı daha sonrasında
+
+302
+01:19:32,920 --> 01:19:55,670
+ayrıca depolanması, yani üretilen ürünlerin toplanması, depolanması ve malzeme kullanılacak malzemenin sağlanabilirliğinin takip edilmesi,
+
+303
+01:19:55,670 --> 01:20:20,670
+hangi yolla üretilecek malzemenin listelenmesi ve üretim akışının kontrol edilmesi, yani üretim süreçlerinin kontrol edilmesi, üretim sistemlerinde bunlar gerçekleştirilir.
+
+304
+01:20:20,670 --> 01:20:33,100
+Şimdi baktığımızda alt seviyede, orta seviyede ve stratejik seviyede hangi işlemler gerçekleşiyor?
+
+305
+01:20:33,100 --> 01:20:52,100
+İşte alt seviyede makinaların kontrolü, üretim için kullanılacak cihazların ve makinaların hareketlerinin kontrolü, sürekli çalışabilirliğinin sağlanması,
+
+306
+01:20:52,100 --> 01:21:08,100
+yönetim seviyesinde üretim planlama, burada ürünlerden ne zaman kaç tane üretilecek, buna karar verilmesi aşaması,
+
+307
+01:21:08,100 --> 01:21:28,100
+stratejik seviyede de yeni olanaklar ve yeni lokasyonlar, üretim lokasyonları gerçekleştirecekse bunlara karar verilmesi işlemleri,
+
+308
+01:21:28,100 --> 01:21:41,100
+bu da stratejik seviyede gerçekleşen kararlar ile olacaktır. Yani burada da üretim biriminde hangi tip bilgi sistemleri ile, hangi işlemleri gerçekleştiriyoruz,
+
+309
+01:21:41,100 --> 01:21:54,100
+üretim birimine destek verecek olan işlemsel bilgi sisteminde, yönetim bilgi sisteminde, stratejik seviyede çalışan üst yönetim bilgi sistemleri de olacaktır.
+
+310
+01:21:54,100 --> 01:22:13,100
+Ayrıca hem stratejik seviyede üst yönetim bilgi sistemlerine hem de yönetim bilgi sistemlerine yardımcı olacak karar destek sistemleri de bulunmaktadır üretim sisteminde.
+
+311
+01:22:13,100 --> 01:22:32,479
+Burada bir envanter kontrol sistemi üretim biliminde çalışacak, envanter kontrol sistemine baktığımızda online sorgulamalar gerçekleştirir.
+
+312
+01:22:32,479 --> 01:22:49,479
+Envanter için birim kodu tanımı, bu birimden ne kadar elde var, sipariş nedir, yönetime bunların raporlarını gönderebilir.
+
+313
+01:22:49,479 --> 01:22:59,479
+Yani sadece üretim değil, üretilen maddelerden ne kadar elimizde var, bunu da görebiliyoruz.
+
+314
+01:22:59,479 --> 01:23:06,479
+Peki, dikey birimlerden bir başkası da finans muhasebe sistemleri.
+
+315
+01:23:06,479 --> 01:23:27,479
+Burada firmanın finansal değerlendirmeleri, işte nakit akışı, stokları gibi bilgilerin yönetilmesi ve yeni finansal yaklaşımlara karar verme.
+
+316
+01:23:27,479 --> 01:23:35,479
+Finansal kayıtların tutulması ve bakımı bunlar gerçekleştiriliyor.
+
+317
+01:23:35,479 --> 01:23:46,479
+Ve bu amaçla da temel düzeyde, yönetim düzeyinde ve stratejik düzeyde işlemler gerçekleştiriliyor.
+
+318
+01:23:46,479 --> 01:24:06,479
+İşlemsel düzeyde muhasebe kayıtlarının tutulması, yönetim düzeyinde ise kısa dönemli bütçe hazırlanması, stratejik düzeyde ise uzun vadeli kar planlama gerçekleştirilmesi yapılıyor.
+
+319
+01:24:06,479 --> 01:24:16,479
+İnsan kaynakları bakımından baktığımızda da yine dikey boyutlardan bir tanesi de insan kaynakları.
+
+320
+01:24:16,479 --> 01:24:40,479
+Burada da potansiyel çalışanların kaydedilmesi, çalışan kayıtların bakımının yapılması, çalışanların yeteneklerinin izlenmesi, iş performanslarının kaydedilmesi,
+
+321
+01:24:40,479 --> 01:24:46,479
+eğitim bilgilerinin kaydedilmesi, bu da insan kaynaklarında gerçekleştirilenler.
+
+322
+01:24:46,479 --> 01:25:04,479
+Ayrıca daha üst seviyede de kariyer geliştirilmesi ve planlaması da yine bu sistemler tarafından takip edilebilir.
+
+323
+01:25:04,479 --> 01:25:16,479
+Burada baktığımızda işlemsel seviyede hangi tür uygulamalar olabilir?
+
+324
+01:25:16,479 --> 01:25:30,479
+Çalışanların eğitiminin izlenmesi, yeteneklerinin izlenmesi ve performanslarının izlenmesi, eğitim ve geliştirme sistemleri adı altında işlemsel düzeyde yapılır.
+
+325
+01:25:30,479 --> 01:25:47,479
+Yani alt yönetim seviyesine hitap edecek uygulamalar, çalışanların hem performanslarının hem yeteneklerinin hem de aldığı eğitimlerin takip edilmesi, güncellenmesi.
+
+326
+01:25:47,479 --> 01:26:05,460
+Yönetim seviyesinde ücretlerin ve çalışanın getirdiği katma değerinin izlenmesi, takip edilmesi, kıyaslanması,
+
+327
+01:26:05,460 --> 01:26:28,460
+stratejik seviyede de uzun dönemli insan kaynakları planlaması yer alacaktır. Bunlarda bu uzun vadeli planlamada da bazen yapay zeka uygulamaları da kullanılabilir, karar destek sistemi uygulamaları eklenebilir.
+
+328
+01:26:28,460 --> 01:26:39,710
+İnsan kaynakları sisteminde çalışanların bilgileri temel olarak tutulacak.
+
+329
+01:26:39,710 --> 01:26:56,710
+Farklı departmanlarda yine bordro için bilgi gönderimi, yönetime raporlar gönderimi, çalışanlar hakkında istendiği zaman sorgulama yapılabilmesi,
+
+330
+01:26:56,710 --> 01:27:14,710
+ayrıca diğer üst seviyede ve orta seviyedeki yönetime de insan kaynakları planlamasıyla ilişkili yorumlar getirilmesi de buradaki uygulamalar da yer alabilir.
+
+331
+01:27:14,710 --> 01:27:27,710
+Şimdi birden fazla dikey birim arasında etkileşimli işlemler de gerçekleşecektir.
+
+332
+01:27:27,710 --> 01:27:54,710
+Zaten bu bilgi sistemleri uygulamasında hedef bu tarafta oluyor, günlük hayattaki birçok uygulamada da, kurumlarda, farklı alışverişlerde karşılaştığınız veya stajda gördüğünüz haliyle.
+
+333
+01:27:54,710 --> 01:28:14,710
+Mesela dikey birimler arasındaki geçişler, satış, pazarlama, üretim arasında bir geçişlilik var birçok uygulamada.
+
+334
+01:28:14,710 --> 01:28:42,069
+Burada bir örnek olarak baktığımızda siparişin gerçekleştirilmesi süreci, bu süreci incelediğimiz zaman bakıyoruz,
+
+335
+01:28:42,069 --> 01:28:55,069
+satış mansebe ve üretim birimi, gerçekleştirilen işlem nedir?
+
+336
+01:28:55,069 --> 01:29:05,069
+Siparişin girilmesi, bir sipariş oluşturuluyor ve sipariş girişi yapılıyor satış biriminde.
+
+337
+01:29:05,069 --> 01:29:24,069
+Mansebede bunun kredisi kontrol ediliyor, uygun kredi ise üretim birimine aktarılıyor ve bilgi oluşturuluyor.
+
+338
+01:29:24,069 --> 01:29:37,069
+Üretim biriminden de ürünün toplanması ve gönderilmesi gerçekleşiyor.
+
+339
+01:29:37,069 --> 01:29:44,069
+Böylece üç tane farklı dikey birim bir arada çalışarak bir işlem gerçekleştiriyor.
+
+340
+01:29:44,069 --> 01:30:13,069
+Genellikle bu zaten hedef yönetim bilgi sistemlerinde işletmede herhangi bir işlemi yaparken farklı birimlerin aynı veritabanını kullanarak işlemin sonuçlandırması sağlanacaktır.
+
+341
+01:30:13,069 --> 01:30:23,069
+Bu yapıya uygun bir şekilde işlemlerin sürdürülmesi gerekecektir.
+
+342
+01:30:23,069 --> 01:30:33,069
+Şimdi sizin birkaç örneğiniz üzerinde duracağım.
+
+343
+01:30:33,069 --> 01:31:21,960
+Şimdi [öğrenci]'ın örneği [öğrenci], [öğrenci], [öğrenci], [öğrenci].
+
+344
+01:31:21,960 --> 01:31:29,960
+Teklif için biraz daha düşünün bugün görüştüklerimiz çerçevesinde.
+
+345
+01:31:29,960 --> 01:32:00,149
+Proje yönetim sistemi demişsiniz, biraz daha bu işletmedeki gerçekleşen uygulamalar ve bununla ilgili yazılım evlerinde satılan yazılımları düşünerek.
+
+346
+01:32:00,149 --> 01:32:08,149
+Proje yönetim sistemi de işletmedeki genel uygulamalar içinden bir tanesidir.
+
+347
+01:32:08,149 --> 01:32:13,149
+Ama bu temel bahsettiğimiz dikey birimlerden seçmenizi istiyorum.
+
+348
+01:32:13,149 --> 01:32:21,149
+Çünkü bu derste biraz da hedef, işletmelerde gerçekleşen kurumsal uygulamalar nelerdir?
+
+349
+01:32:21,149 --> 01:32:32,149
+Yani bu bir RG grubu içinde proje yönetim sistemi ya da yazılım geliştirme bireyinde proje yönetim sistemi kullanılır.
+
+350
+01:32:32,149 --> 01:32:49,149
+Ama daha temel işlevlerin yürütülmesi için işletme ile ilgili gerçekleşen hareketleri de öğrenmeniz açısından, incelemeniz açısından.
+
+351
+01:32:49,149 --> 01:33:05,149
+Bu anlattıklarımın içinden seçeceğiniz ya da benzer uygulamaları seçeceğiniz başka bir konu bulmanız daha iyi olacaktır.
+
+352
+01:33:05,149 --> 01:33:10,149
+Bir tane daha vardı kaydettiğim, ona bakıyorum.
+
+353
+01:33:10,149 --> 01:33:16,149
+Bir tane de kütüphane yönetim sistemi yazmıştı bir grup.
+
+354
+01:33:16,149 --> 01:33:19,149
+O da uygun değil.
+
+355
+01:33:19,149 --> 01:33:34,149
+Yani işletmelerde gerçekleşen işlemleri ve bu konuda hazırlanmış olan paket programları biraz incelemenizi ve konu değişikliği yapmanızı istiyorum.
+
+356
+01:33:34,149 --> 01:33:52,579
+Şimdi mesela insan kaynakları sistemi olarak belirtmişsiniz.
+
+357
+01:33:52,579 --> 01:33:55,579
+[öğrenci], [öğrenci], Laman, [öğrenci].
+
+358
+01:33:55,579 --> 01:34:00,579
+Evet, bizim bu dikey birimlerden bir tanesi.
+
+359
+01:34:00,579 --> 01:34:21,579
+Bu tümüyle insan kaynakları ilk başta belirlediğiniz konu başlığı olarak doğru inceledikçe siz insan kaynakları altında hani bu dört kişilik bir grupla iki ayda tüm insan kaynaklarını tamamlayamazsınız.
+
+360
+01:34:21,579 --> 01:34:24,579
+İnsan kaynaklarının alt başlıklarını gördük.
+
+361
+01:34:24,579 --> 01:34:28,579
+Yönetim bilgi sistem çerçevesinde hangileri var?
+
+362
+01:34:28,579 --> 01:34:36,579
+Siz bunlardan daha alt bir başlığı seçip devam edebilirsiniz.
+
+363
+01:34:36,579 --> 01:34:41,579
+Bana yani şunu seçtik diye şimdi belirtmeseniz de olur.
+
+364
+01:34:41,579 --> 01:34:56,579
+Ama projenizi hazırlarken insan kaynaklarının tümü olarak değil de bir alt bölümünü seçip devam etmenizi öneriyorum size de.
+
+365
+01:34:56,579 --> 01:35:06,699
+Bu arada sorular var galiba.
+
+366
+01:35:06,699 --> 01:35:14,699
+Evet yani bu dersi özellikle tekrar gibi de olsa araya da bir hafta girdi zaten.
+
+367
+01:35:14,699 --> 01:35:20,699
+Biraz sizin tekliflerinizden çok anlaşılmadığını anladım.
+
+368
+01:35:20,699 --> 01:35:25,699
+O yüzden biraz daha ayrıntılandırarak tekrar ettim.
+
+369
+01:35:25,699 --> 01:35:45,699
+[öğrenci]'ın gönderdiği grup yine yani şimdi evet şu şekilden yola çıkarak gitmişsiniz [öğrenci].
+
+370
+01:35:45,699 --> 01:35:49,699
+[öğrenci], [öğrenci].
+
+371
+01:35:49,699 --> 01:36:21,310
+Bunlardan burada olan var mı bakalım.
+
+372
+01:36:21,310 --> 01:36:23,310
+Evet bunların hiçbiri yok burada.
+
+373
+01:36:23,310 --> 01:36:34,569
+[öğrenci], [öğrenci], [öğrenci] hiçbiri yok.
+
+374
+01:36:34,569 --> 01:36:51,909
+Hani eğer şey seçmediyseniz, konu seçimi yapmadıysanız size de bilgi vermek için şöyle bir şekil görmüştük.
+
+375
+01:36:51,909 --> 01:37:19,340
+Transaction Processing System örnekleri içinde bu derste de tekrar ettik.
+
+376
+01:37:19,340 --> 01:37:31,340
+Transaction Processing System tipleri işte satış pazarlama grubunda, üretim grubunda, finans grubunda, insan kaynakları grubunda alt örnekler vermiştim.
+
+377
+01:37:31,340 --> 01:37:37,340
+Other Types de, işte üniversitede bunların yeri nasıldır demiştim.
+
+378
+01:37:37,340 --> 01:37:43,340
+Arkadaşlarınız da Other Types de kütüphane bilgi sistemi demişler.
+
+379
+01:37:43,340 --> 01:37:49,340
+Yani sistem analizindeki gibi etrafınıza bakın bir sistem seçim şeklinde değil.
+
+380
+01:37:49,340 --> 01:37:59,340
+İşletmelerde gerçekleşen temel işlemlerden konunuzu seçmenizi ve bu konudaki hazır programları önce incelemenizi istiyorum.
+
+381
+01:37:59,340 --> 01:38:13,250
+Evet, bu gruptan kimse yok ama konusunu seçmemiş olanlar da aynı hataya düşmesin diye örnekledim.
+
+382
+01:38:13,250 --> 01:39:12,779
+[öğrenci], [öğrenci] burada grubun bir üyesi.
+
+383
+01:39:12,779 --> 01:39:46,960
+[öğrenci] burada mısın? [öğrenci], [öğrenci], [öğrenci] burada mı?
+
+384
+01:39:46,960 --> 01:40:10,000
+[öğrenci], sizin grubunuzla ilişkili bir, iki, üç, dört, beş kişi belirlemişsiniz.
+
+385
+01:40:11,000 --> 01:40:33,000
+Depo yönetim sistemi, önce hangi dikey grub içinde olduğunu belirleyip belki beş kişi olduğunuz için bu depo yönetim sisteminin ilişkili olduğu bir sistem daha seçebilirsiniz.
+
+386
+01:40:33,000 --> 01:40:37,000
+Yani böyle bir genişletme yapabilirsiniz.
+
+387
+01:40:37,000 --> 01:41:02,000
+Öncelikle işe nereden başlayacaksınız? Bu konuda alt başlıklardan hangisi ile ilişkili, işte CRM uygulaması ile mi ilişkili, buradan başlayıp depo yönetimi ile ilişkili diğer uygulamaları da çerçevelemeniz gerekecek.
+
+388
+01:41:02,000 --> 01:41:17,739
+Beş kişi için bu biraz az gibi. Yani bunu biraz daha gerçek hayattaki diğer sistemlerle ilişkilendirmeniz gerekiyor.
+
+389
+01:41:17,739 --> 01:41:47,520
+Evet, [öğrenci] anlaşıldı değil mi? Grubunu belli etmeyen çok kişi var.
+
+390
+01:41:47,520 --> 01:42:05,520
+Önümüzdeki haftaya, yani bugün özellikle bu işletmelerde gerçekleştirilen uygulamalar ve hangi tür bilgi sistemleri var, özellikle onun üzerinde durdum.
+
+391
+01:42:05,520 --> 01:42:12,520
+Önümüzdeki hafta grubunuzun belirlenmesi gerekiyor.
+
+392
+01:42:12,520 --> 01:42:26,020
+Dersi alan arkadaşlarınızla hiç ilişkide olamadığınız için mi grubunuzu belirleyemediniz yoksa grub oluşturduğunuz konu mu seçemediniz?
+
+393
+01:42:26,020 --> 01:42:46,090
+O konuda bir sıkıntı var mı? [öğrenci], sorununa evet diyorum. Yani bildirirseniz iyi olur.
+
+394
+01:42:46,090 --> 01:42:52,090
+Önümüzdeki haftaya kadar bir inceleyin nasıl genişletiyorsunuz.
+
+395
+01:42:52,090 --> 01:43:08,289
+[öğrenci], sen o zaman dersi alan diğer arkadaşlarınla ilişkilendirme yapman zor olacak.
+
+396
+01:43:08,289 --> 01:43:21,289
+Kendin daha küçük bir sistem seç bu bahsettiğim sistemler içinde ve tek başına yap projeyi.
+
+397
+01:43:21,289 --> 01:43:43,920
+Sadece önümüzdeki haftaya kadar bu örneklediğim sistemler içinde veya bu yazılım evlerinde geliştirilen işletme yazılımları, ERP yazılımları çerçevesinde
+
+398
+01:43:43,920 --> 01:44:00,920
+alt modüllere bakarak bir uygulama seçip onu gönder bana. Senin çünkü diğer arkadaşlarınla iletişim kurman zor olabilir.
+
+399
+01:44:00,920 --> 01:44:12,659
+[öğrenci] yeni mi mail atmıştı?
+
+400
+01:44:12,659 --> 01:44:38,659
+Bir dakika. Bu arada [öğrenci].
+
+401
+01:44:38,659 --> 01:44:50,770
+[öğrenci] bu derste mi?
+
+402
+01:44:50,770 --> 01:45:15,140
+Evet [öğrenci] çok yeni atmışsın maili.
+
+403
+01:45:15,140 --> 01:45:38,300
+Evet, siz de daha insan kaynaklarında yeni incelemişsiniz.
+
+404
+01:45:39,300 --> 01:45:46,300
+Biraz çok genel alt modüller yazmışsınız.
+
+405
+01:45:46,300 --> 01:45:58,300
+İnsan kaynakları yazılımlarını inceledikçe biraz daha spesifik alt modüller belirleyebilirsiniz. Onların üzerinde durmanız iyi olur.
+
+406
+01:45:58,300 --> 01:46:04,300
+Yani ilk aklınıza gelen genel şeyleri yazmışsınız.
+
+407
+01:46:04,300 --> 01:46:18,300
+Biraz bu konudaki yazılımları ve insan kaynakları birimlerinde neler gerçekleştiriliyor onları inceleyerek biraz daha spesifik hale getirebilirsiniz konumuzu.
+
+408
+01:46:18,300 --> 01:46:30,539
+Yani dikey birimi tamam ama onun altında ne yaptığınızı, ne yapacağınızı biraz daha açmanız gerekecek.
+
+409
+01:46:30,539 --> 01:46:52,539
+Zaten siz projeyi yaparken de feasibility analizinde özellikle seçtiğiniz alandaki iki ya da üç farklı yazılım evinin geliştirdiği yazılımların değerlendirmesini de yapmanızı istemiştim.
+
+410
+01:46:52,539 --> 01:47:15,319
+Bir de şu ana kadar konu seçmeyen arkadaşlarınız varsa insan kaynakları baya belirlenmiş durumda.
+
+411
+01:47:15,319 --> 01:47:25,319
+Diğer alanları da inceleyin. Herkes insan kaynakları konusunda çalışmasın.
+
+412
+01:47:25,319 --> 01:47:43,979
+Şimdiye kadar seçenler tamam da bundan sonra artık insan kaynakları değil de diğer alanlarda uygulama bakmanızı istiyorum.
+
+413
+01:47:43,979 --> 01:48:30,319
+Evet şu dakikada biraz derste artış oldu. Sizlerin içinde de henüz konu seçmeyenler var isimlerinize baktığında.
+
+414
+01:48:30,319 --> 01:49:05,109
+Konuyu seçince bana konu başlığınızı yani hangi dikey birim içinde işletmedeki insan kaynakları mı, finans muhasebe mi, satış pazarlama mı, hangi dikey birim ile ilişkili ve bunun altındaki hangi modül ile ilişkili çalışacaksınız onu bildireceksiniz.
+
+415
+01:49:05,109 --> 01:49:17,520
+Bu arada bir grup arkadaşın çıktı galiba [öğrenci]. Birlikte çalışabilecek misiniz?
+
+416
+01:49:17,520 --> 01:49:48,189
+Bana mail atıyorsunuz kalıpsız et Yıldız E2TL'ye ya da olkalıpsız cmaily.com'a mail atıyorsunuz. Grubunuz ve konunuzla ilişkili.
+
+417
+01:49:48,189 --> 01:50:06,010
+Bunu da önümüzdeki haftaya tamamlayalım. Değişiklik yapacaklar da yine aynı şekilde.
+
+418
+01:50:06,010 --> 01:52:41,760
+Evet şimdi slide'ı değiştiriyorum. Yeni slide herkes tarafından görülüyor mu? Enterprise Application Architecture tamamdır.
+
+419
+01:52:41,760 --> 01:53:06,760
+Şimdi kurumsal uygulamalar çerçevesinde işletmelerdeki dikey birimler üzerinde durmuştuk. Bu dikey birimlerin birbiriyle ilişkilendirilen diğerlerinden de bilgi alınan temel uygulamaları kurumsal uygulamaları yapısı nasıl gerçekleşiyor?
+
+420
+01:53:06,760 --> 01:53:29,039
+Bunu görüyoruz. Evet dersin başından itibaren zaman zaman bahsettiğim Supply Chain Management, Customer Relationship Management yapıları var.
+
+421
+01:53:29,039 --> 01:53:52,039
+Supply Chain Management satış zinciri üretim ve bu konularla ilişkili mali işlemler ve Customer Relationship Management sistemi.
+
+422
+01:53:52,039 --> 01:54:10,039
+Yine satışlardaki primlerin hesaplanmasında insan kaynaklarıyla bir arada gerçekleştirilen ve bütün dikey birimleri içine alan uygulamalar.
+
+423
+01:54:10,039 --> 01:54:36,529
+Supply Chain Management kurumsal sistemler, bilgi yönetim sistemleri gibi genel uygulamalar, müşteri ve dağıtıcıları, temin edici olarak kullandığımız toptancıları
+
+424
+01:54:36,529 --> 01:54:57,529
+ve iş ilişkisi içinde olduğumuz diğer firmaları ilgilendiren uygulamalar ve burada da işletmelerdeki bütün fonksiyonel alanlar, bütün dikey birimler bu uygulamaların içinde yer alıyor.
+
+425
+01:54:57,529 --> 01:55:12,529
+Kurumsal uygulamalara baktığımızda kurumun bütün işleyişi ile ilişkili kurumsal sistemler, çekirdek yapısı altında alt modüller,
+
+426
+01:55:12,529 --> 01:55:25,529
+Supply Chain Management sistems, Customer Relationship Management sistems, bilgi yönetim sistemleri, knowledge management sistemler olarak sistemleri görebiliyoruz.
+
+427
+01:55:25,529 --> 01:55:37,529
+Bu arada şimdi geleneksel sistemlere baktığımızda geleneksel sistemlerde, dikey sistemlerde tek tek uygulamalar gerçekleşiyor.
+
+428
+01:55:37,529 --> 01:55:47,189
+Hangi işi gerçekleştireceksek bununla ilişkili bilgi sistemi oluşturuyorduk.
+
+429
+01:55:47,189 --> 01:55:52,189
+Ve diğer uygulamalardan da bilgi alıyordu ama ayrı ayrı çalışıyordu.
+
+430
+01:55:52,189 --> 01:56:17,189
+Ama şu anda ERP yapısı ile Enterprise Resource Planning ile kurumsal sistemler kullanımda ve burada tek bir bilgi sistemi bir organizasyondaki dikey grup için iş süreçlerini modelliyor ve daha otomatik hale getiriyor.
+
+431
+01:56:17,189 --> 01:56:36,189
+Enterprise sistemleri şöyle gösterebiliyoruz, ortada çalışan kurumsal sistemimiz var, iş süreçlerini tanımlıyor ve kurumsal seviyede iş süreçlerini oluşturuyor.
+
+432
+01:56:36,189 --> 01:56:52,189
+Ve bu hem üretim birimini hem finanslı hem insan kaynaklarıyla hem satış pazarlamayla birliktelik içinde hepsi ona bilgi gönderiyor, bilgi alıyor.
+
+433
+01:56:52,189 --> 01:57:05,189
+Ve hem satın alma yaptığımız şirketler hem de müşteri şirketleri her iki tarafta hem bilgi gönderebiliyor hem bilgi alabiliyor.
+
+434
+01:57:05,189 --> 01:57:12,189
+Kurumsal sınırların dışında da bunlarla işlemler sürdürülüyor.
+
+435
+01:57:12,189 --> 01:57:30,189
+Supply Chain Management sistem firma ve temin ediciler arasında üretimi ve dağıtımı optimize etmek üzere bilgi akışının sağlanması.
+
+436
+01:57:30,189 --> 01:57:40,189
+Supply Chain Management burada satın alma, gerçekleştirme, hareket etme ve üretim işlemleri gerçekleştiriliyor.
+
+437
+01:57:40,189 --> 01:57:50,189
+Ve kurumun bütün organizasyonları arasında iş birliği sağlanıyor.
+
+438
+01:57:50,189 --> 01:57:58,189
+Bunun örnekleri üzerinde, önümüzdeki hafta daha çok duracağız bu konu üzerinde.
+
+439
+01:57:58,189 --> 01:58:04,189
+Esas konumuz bu olacak önümüzdeki hafta. Bir genel giriş yapıyorum.
+
+440
+01:58:04,189 --> 01:58:25,189
+Bu Supply Chain Management tedarik zinciri süreci, tedarik zinciri yönetimi ve ticaretle ilişkilendirilmesi, ticaret ilişkisi,
+
+441
+01:58:25,189 --> 01:58:38,189
+diğer birimlerle ilişkilendirme nasıl gerçekleşiyor ve gerçek zamanlı iş birliklerini nasıl oluşturuyoruz.
+
+442
+01:58:38,189 --> 01:58:53,460
+İşletmeler bu birleşik ticaret uygulamasını hangi yollarla gerçekleştiriyorlar.
+
+443
+01:58:53,460 --> 01:59:02,460
+Bunun dışında yani bütün bu kurumsal uygulamalar üzerinden tek tek geçeceğiz.
+
+444
+01:59:02,460 --> 01:59:15,460
+Müşteri ilişkileri yönetimi bu da insan kaynakları içinde tek bir dikey boyutta değil bütün diğer birimlerle de ilişkili olarak çalışacak.
+
+445
+01:59:15,460 --> 01:59:26,460
+Müşteri ilişkileri yönetimi, potansiyel müşteriler kimlerdir? Teknoloji ve ticaret boyutunun ne olması gerekir?
+
+446
+01:59:26,460 --> 01:59:32,460
+Satış pazarlamayla nasıl koordine olmalı müşteri hareketleri?
+
+447
+01:59:32,460 --> 01:59:48,460
+Bütün müşteri hareketlerinin izlenmesi, analiz edilmesi, müşteri memnuniyetinin, müşteri kaçışının, kazancının gibi farklı bölümleri üzerinde duracağız.
+
+448
+01:59:48,460 --> 02:00:00,460
+Ayrıca bilgi yönetim sistemi üzerinde kurumsal bilgiyi nasıl topluyoruz, nasıl yönetiyoruz, nasıl fayda olarak geri çağırıyoruz.
+
+449
+02:00:00,460 --> 02:00:18,460
+Bunlar üzerinde duracağız. Bir de artık tek ülkede işlem yapan şirketler değil, global şirketler var.
+
+450
+02:00:18,460 --> 02:00:26,460
+Bunların yapılanması nasıl gerçekleşiyor? Bunların üzerinde duracağız.
+
+451
+02:00:26,460 --> 02:00:40,460
+Bir Zara örneği var. Bunun çerçevesinde burada gerçekleşen uygulamaları örnekleyeceğiz.
+
+452
+02:00:40,460 --> 02:01:04,460
+Şimdi bütün bunları önümüzdeki haftaya bırakıyorum. Önümüzdeki haftaya kadar sizden mümkünse arkadaşlarınızla ilişki kurabilmenizi ve grup olarak proje konusu göndermenizi istiyorum haftaya kadar.
+
+453
+02:01:04,460 --> 02:01:14,460
+Bu hafta özellikle bu işletmelerdeki alt birimleri tanıtmakla ilgili daha fazla ayrıntı verdim.
+
+454
+02:01:14,460 --> 02:01:39,069
+Önümüzdeki haftaya kadar sizlerden grup ve proje ismini istiyorum. Bu hafta göndermiş olanlar konularını güncellemek için atabilirler.
+
+455
+02:01:39,069 --> 02:01:53,069
+Ayrıca, eğer gruba yeni bir arkadaş eklenmişse, o da önümüzdeki hafta son olacak. Ama zaten 6 kişilik bir gruba daha fazla kişi ekleyemezsiniz.
+
+456
+02:01:53,069 --> 02:02:07,069
+Yeni gruplar oluşturmanızı öneriyorum. Eğer hiçbirbirinizle ilişki kuramıyorsanız o zaman tek başınıza bir proje konusu seçeceksiniz.
+
+457
+02:02:07,069 --> 02:02:16,069
+Bu iki üç gün içinde arkadaşlarınızla irtibat kurmaya çalışın. Olmazsa da tek başınıza grup bilginizi bana gönderin.
+
+458
+02:02:16,069 --> 02:02:59,060
+Sorunuz var mı? Bugün dersi tamamlayacağım. Sorunuz var mı? [öğrenci] anlaşıldı mı? Proje ile ilişkili sorularına cevap aldın mı? [öğrenci]'a tamamdır.
+
+459
+02:02:59,060 --> 02:03:53,779
+O zaman proje ile ya da derste işlediklerimizle ilişkili sorunuz var mı? Hızlıca gösterdiğim enterprise resource planning konusunda önümüzdeki hafta duracağız.
+
+460
+02:03:53,779 --> 02:04:08,779
+Bu hafta sadece o konuyu işleyeceğimizi CRM'ye, supply chain management'ı tanıtmak için bir başlangıç yaptım.
+
+461
+02:04:08,779 --> 02:04:21,899
+Evet o zaman haftaya devam ediyoruz. Dersi tamamlıyorum. İyi haftalar diliyorum.
