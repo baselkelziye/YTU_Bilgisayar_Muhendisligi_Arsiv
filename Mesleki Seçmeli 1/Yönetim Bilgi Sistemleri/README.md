@@ -31,6 +31,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Yönetim Bilgi Sistemleri Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Elle alınmış not](./slaytlar_notlar/2022/El%20Yaz%C4%B1s%C4%B1%20Not.pdf) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

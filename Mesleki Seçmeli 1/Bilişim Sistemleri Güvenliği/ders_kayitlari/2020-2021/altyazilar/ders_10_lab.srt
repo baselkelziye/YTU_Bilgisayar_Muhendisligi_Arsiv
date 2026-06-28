@@ -1,0 +1,4936 @@
+1
+00:00:01,860 --> 00:08:48,669
+Merhaba arkadaşlar. Ses geliyor mu? Kontrol edelim.
+
+2
+00:08:49,429 --> 00:08:50,210
+Bir tane çatı yazın.
+
+3
+00:08:50,269 --> 00:08:50,789
+Geliyor hocam.
+
+4
+00:08:51,190 --> 00:08:51,809
+Geliyor hocam.
+
+5
+00:08:57,820 --> 00:08:58,679
+Sesim geliyor mu arkadaşlar?
+
+6
+00:09:00,950 --> 00:09:01,350
+Geliyor.
+
+7
+00:09:20,919 --> 00:09:23,019
+Bir kez daha kontrol edelim. Sesim geliyor değil mi?
+
+8
+00:09:23,559 --> 00:09:24,399
+Kulaklığa geçtim.
+
+9
+00:09:25,480 --> 00:09:26,679
+Sober de geliyorsa devam edeceğim.
+
+10
+00:09:27,379 --> 00:09:27,559
+Tamam.
+
+11
+00:09:28,700 --> 00:09:31,559
+Arkadaşlar bugün uzun bir sunum olacak.
+
+12
+00:09:32,620 --> 00:09:35,860
+O yüzden çok daha fazla beklemeden daha başlayalım istiyorum.
+
+13
+00:09:36,879 --> 00:09:38,539
+Zaten yeterince güçlü katılmış gibi gözüküyor.
+
+14
+00:09:40,100 --> 00:09:46,120
+Bugün size Cross-Site Request Forgery ve XSS anlatacağım.
+
+15
+00:09:46,379 --> 00:09:47,759
+Cross-Site Scripting'i anlatacağım.
+
+16
+00:09:49,879 --> 00:09:53,860
+Bunlarla ilgili yine aynı platform üzerinden örnekleri göstereceğim.
+
+17
+00:09:55,960 --> 00:09:57,740
+Sonra da sunumuzu bitireceğiz.
+
+18
+00:09:59,879 --> 00:10:05,340
+Cross-Site Scripting, tamamen client tarafından gerçekleşen bir saldırı tipi.
+
+19
+00:10:06,879 --> 00:10:10,220
+Birçok client tarafından tutulan birçok bilgiye erişebiliyorsunuz.
+
+20
+00:10:10,220 --> 00:10:11,320
+Örneğin kullanıcının oturum bilgileri.
+
+21
+00:10:11,340 --> 00:10:12,759
+Çerez bilgilerini.
+
+22
+00:10:13,480 --> 00:10:17,779
+Bunlar genelde tokenlar ve kullanıcı adı ve şifrelerinden oluşan bilgiler.
+
+23
+00:10:17,899 --> 00:10:19,399
+Yani aslında önemli bilgiler.
+
+24
+00:10:21,539 --> 00:10:29,340
+Onun dışında burada kullanıcıları kandırıp farklı farklı sayfaları yönlendirebileceğiniz
+
+25
+00:10:29,340 --> 00:10:37,379
+başka tür saldırılara şey verecek, imkan sağlayan bir saldırı türü aslında.
+
+26
+00:10:40,620 --> 00:10:42,860
+Detaylarını göreceğiz zaten. Örneklerle devam edeceğiz.
+
+27
+00:10:42,860 --> 00:10:42,940
+Evet.
+
+28
+00:10:43,679 --> 00:10:44,139
+Bu saldırı tipi var.
+
+29
+00:10:44,779 --> 00:10:47,019
+Tamamen yapılış şekilleri üzerine değişen.
+
+30
+00:10:47,860 --> 00:10:48,600
+Bir tanesi stored.
+
+31
+00:10:48,919 --> 00:10:51,120
+Adına anlaşılabileceği gibi bu saldırı tipinde
+
+32
+00:10:51,120 --> 00:10:54,179
+iksesiz için hazırlanan scriptler
+
+33
+00:10:54,179 --> 00:10:56,279
+veri tabanına gönderiliyor.
+
+34
+00:10:57,580 --> 00:10:58,860
+E tabi bunu göndermek için de
+
+35
+00:10:58,860 --> 00:10:59,740
+tabi ki siz normal
+
+36
+00:10:59,740 --> 00:11:02,899
+kullanıcı olarak saldıracağınız sistemin
+
+37
+00:11:02,899 --> 00:11:05,000
+client tarafından bir girdi girmeniz gerekiyor.
+
+38
+00:11:05,500 --> 00:11:06,559
+O girdiğiniz girdi MySQL
+
+39
+00:11:06,559 --> 00:11:08,379
+veya başka bir database ile tutuluyor.
+
+40
+00:11:09,460 --> 00:11:10,500
+Ve daha sonra siz bu
+
+41
+00:11:10,500 --> 00:11:12,320
+site yaz gönderdiğiniz içeriği
+
+42
+00:11:12,320 --> 00:11:13,659
+bütün saldırıların içine
+
+43
+00:11:13,679 --> 00:11:15,379
+bütün kullanıcılarına erişebildiği yani diğer
+
+44
+00:11:15,379 --> 00:11:16,620
+bütün kullanıcılarına erişebildiği bir site
+
+45
+00:11:16,620 --> 00:11:18,120
+kullanıcılarından görüntülemeye çalıştığınızda
+
+46
+00:11:18,120 --> 00:11:21,919
+o MySQL'den gelen mesaj ya da neyse
+
+47
+00:11:21,919 --> 00:11:24,080
+HTML tarafında render ediliyor.
+
+48
+00:11:24,080 --> 00:11:25,919
+Browser tarafına render edilirken
+
+49
+00:11:25,919 --> 00:11:28,279
+bu script çalışmış oluyor.
+
+50
+00:11:28,279 --> 00:11:31,080
+Sizin yazma mesajınızın içine sakladığınız, gömdüğünüz, sakladığınız
+
+51
+00:11:31,080 --> 00:11:33,960
+cross site scriptiniz çalışmış oluyor.
+
+52
+00:11:33,960 --> 00:11:35,539
+Çalıştırması durumunda da
+
+53
+00:11:35,539 --> 00:11:38,779
+oradaki javascript kodları çalışıyor ve
+
+54
+00:11:38,779 --> 00:11:41,580
+onlarda tabi ki bir takım client tarafındaki
+
+55
+00:11:41,580 --> 00:11:42,759
+duyuşkenlere erişiyorlar.
+
+56
+00:11:42,759 --> 00:11:43,059
+Evet.
+
+57
+00:11:43,059 --> 00:11:45,059
+Ve bu duyuşkenlere erişip, verilere erişip
+
+58
+00:11:45,059 --> 00:11:48,059
+onları expose etmenizi yani açığa çıkartmanızı sağlıyor.
+
+59
+00:11:48,059 --> 00:11:50,059
+Store kısacası
+
+60
+00:11:50,059 --> 00:11:53,059
+istesisin database'e sayfalanan versiyonu.
+
+61
+00:11:53,059 --> 00:11:55,059
+Reflected ise
+
+62
+00:11:55,059 --> 00:11:59,059
+sayfa hiçbir şekilde şeye gitmiyor.
+
+63
+00:11:59,059 --> 00:12:01,059
+Database'e veya sunucuya gitmiyor.
+
+64
+00:12:01,059 --> 00:12:04,059
+Tamamen client tarafında saldırılıp
+
+65
+00:12:04,059 --> 00:12:06,059
+yani saldırı tamamen client tarafında yapılıyor ve
+
+66
+00:12:06,059 --> 00:12:08,059
+etkisi de client tarafında gerçekleşiyor.
+
+67
+00:12:08,059 --> 00:12:10,059
+Yani siz bir şeyi mesela
+
+68
+00:12:10,059 --> 00:12:12,059
+ekranda bir UI tool'unuz var
+
+69
+00:12:12,059 --> 00:12:13,059
+ve tamamen client tarafında yapılıyor ve etkisi de client tarafında gerçekleşiyor. Yani siz bir şeyi mesela ekranda bir UI tool'unuz var.
+
+70
+00:12:13,059 --> 00:12:14,059
+Ama tamamen JavaScript'lerle çalışıyor.
+
+71
+00:12:14,059 --> 00:12:16,059
+Siz bunun içerisine bir şekilde
+
+72
+00:12:16,059 --> 00:12:19,059
+cross-site'ınıza gönderip
+
+73
+00:12:19,059 --> 00:12:22,059
+tekrar çalıştırdığınızda aynı sayfa içerisinde
+
+74
+00:12:22,059 --> 00:12:25,059
+Reflect olmuş oluyor ve sizin script'iniz tekrar çalışmış oluyor.
+
+75
+00:12:25,059 --> 00:12:27,059
+Bunu göstereceğim size.
+
+76
+00:12:27,059 --> 00:12:29,059
+Yaptığımız zaman daha detaylı olarak anlamış olacaksınız.
+
+77
+00:12:29,059 --> 00:12:33,059
+Ve bunu yapanlar da genelde URL'ler ve form alanları üzerinden gerçekleştiriyor.
+
+78
+00:12:33,059 --> 00:12:36,059
+Çünkü get-stay'imiz biliyorsunuz ki
+
+79
+00:12:36,059 --> 00:12:39,059
+URL üzerinden gerçekleşiyor.
+
+80
+00:12:39,059 --> 00:12:41,059
+Ve form alanları da zaten client tarafındaki form alanları.
+
+81
+00:12:41,059 --> 00:12:42,059
+Ve form alanları da zaten client tarafındaki form alanları.
+
+82
+00:12:42,059 --> 00:12:45,059
+Dolayısıyla
+
+83
+00:12:45,059 --> 00:12:47,059
+Reflected saldırıları da client tarafında gerçekleşiyor diyebiliriz tamamen.
+
+84
+00:12:47,059 --> 00:12:49,059
+Reflected saldırıları da client tarafında gerçekleşiyor diyebiliriz tamamen.
+
+85
+00:12:49,059 --> 00:12:51,059
+Story'den aksine.
+
+86
+00:12:51,059 --> 00:12:57,059
+DOM ise biliyorsunuz DOM dediğimiz objeler HTML dosyalarının
+
+87
+00:12:57,059 --> 00:12:59,059
+modelleridir aslında.
+
+88
+00:12:59,059 --> 00:13:01,059
+Object modelleridir.
+
+89
+00:13:01,059 --> 00:13:03,059
+Yani biliyorsunuz XML ve HTML bir ağaç formatında bir dosya.
+
+90
+00:13:03,059 --> 00:13:05,059
+Yani biliyorsunuz XML ve HTML bir ağaç formatında bir dosya.
+
+91
+00:13:05,059 --> 00:13:07,059
+Yani bir yöpülandırılmış bir veri taklama tıplarında.
+
+92
+00:13:07,059 --> 00:13:09,059
+Yani bir yöpülandırılmış bir veri taklama tıplarında.
+
+93
+00:13:09,059 --> 00:13:11,059
+Bunlar bir ağaç şeklinde bir dosya.
+
+94
+00:13:11,059 --> 00:13:13,059
+Bunlar bir ağaç şeklinde tutulur.
+
+95
+00:13:13,059 --> 00:13:20,059
+Ve bu ağaç şeklinde modeller işte HTML elementlerin attribute'leri, attribute'lerin alabileceği değer tipleri vs.
+
+96
+00:13:20,059 --> 00:13:25,059
+Bunların hepsi Document Object Model adı verilen bir metadata üzerinde tasarlanır.
+
+97
+00:13:25,059 --> 00:13:33,059
+Ve bu metadata'lar browser tarafından tabi ki okunup işlenebilir dosyalar.
+
+98
+00:13:33,059 --> 00:13:37,059
+Dolayısıyla siz DOM üzerinden de saldırı yazdığınızı gerçekleştirebiliyorsunuz.
+
+99
+00:13:37,059 --> 00:13:39,059
+Çünkü DOM objeleri de browser tarafından okunan.
+
+100
+00:13:39,059 --> 00:13:41,059
+Çünkü DOM objeleri de browser tarafından okunan.
+
+101
+00:13:41,059 --> 00:13:43,059
+Çünkü DOM objeleri de browser tarafından okunan.
+
+102
+00:13:43,059 --> 00:13:45,059
+Ve bunların içerisinde crosstalk scriptleri de göm�ülür.
+
+103
+00:13:45,059 --> 00:13:58,320
+Ve bunların içerisinde crosstalk scriptleri de göm port
+
+104
+00:13:58,320 --> 00:14:07,759
+오� tabi bizde şurdan bir yandan gerçekleştiriyolalım
+
+105
+00:14:07,759 --> 00:14:12,230
+Öncelikle güvenlik seviyemizin loadl web.
+
+106
+00:14:12,230 --> 00:14:14,230
+Öncelikle güvenlik seviyemizin loadl web.
+
+107
+00:14:14,230 --> 00:14:20,179
+Evet arkadaşlar burada bir alanımız var gördüğünüz gibi.
+
+108
+00:14:20,860 --> 00:14:26,019
+Bu bildiğimiz bir forum sitesine sanki girdi giriyormuş gibi bir alan var.
+
+109
+00:14:26,120 --> 00:14:27,179
+Buraya ismimizi giriyoruz.
+
+110
+00:14:28,759 --> 00:14:31,700
+Buraya da mesajımızı gireceğiz ve bu mesajımız database'e gidecek.
+
+111
+00:14:32,580 --> 00:14:33,000
+Mesaj.
+
+112
+00:14:36,480 --> 00:14:38,899
+Bakın arkadaşlar bunu yaptım ben şimdi buraya post ettim.
+
+113
+00:14:38,980 --> 00:14:41,059
+Post ettikten sonra bu mesaj database'e gitti.
+
+114
+00:14:41,200 --> 00:14:45,299
+Database'e gittikten sonra yerleştikten sonra tekrar insert yapıştırma gerçekleşti.
+
+115
+00:14:45,299 --> 00:14:50,220
+Insert işleminden sonra select all yapıp bu select all'ların bütün cevabı girip ekranda buraya yerleşti.
+
+116
+00:14:50,500 --> 00:14:58,440
+Ben sayfayı yenilediğimde zaten iki defa gitti şu an çünkü forum bir tanesi yarıda kalmış.
+
+117
+00:14:58,740 --> 00:14:59,720
+İnternet sayfası açık değil.
+
+118
+00:15:00,019 --> 00:15:01,100
+Herhalde forumdaki kendi adadan.
+
+119
+00:15:01,740 --> 00:15:02,460
+Neyse çok önemli değil.
+
+120
+00:15:03,480 --> 00:15:10,159
+Mesajım gitti ve sayfayı her yenilediğimde aslında cancel diyeceğim yenilemesin diye.
+
+121
+00:15:11,679 --> 00:15:13,659
+Aynı mesajların geldiğini görüyoruz.
+
+122
+00:15:14,259 --> 00:15:16,179
+Bunun nedeni database'e saklanıyor olması.
+
+123
+00:15:18,580 --> 00:15:22,440
+Şimdi biz buraya bir değişik şeyler yazabiliriz.
+
+124
+00:15:22,519 --> 00:15:24,580
+Mesela buraya script'lerimizi yazabiliyoruz.
+
+125
+00:15:24,639 --> 00:15:24,879
+Çünkü baktığımızda.
+
+126
+00:15:24,980 --> 00:15:25,980
+Source kodumuza.
+
+127
+00:15:25,980 --> 00:15:31,179
+Aslında bu işin bu kısmında şuradan devam edelim çünkü aynısı.
+
+128
+00:15:32,679 --> 00:15:37,330
+Burada gördüğünüz üzere bir butonumuz var.
+
+129
+00:15:37,509 --> 00:15:38,570
+Mesajımız ve ismimiz var.
+
+130
+00:15:38,590 --> 00:15:49,149
+Bunlar post isteğiyle gelip gerekli parse işlemleri yapılıp daha sonra database'e insert ediliyor ve sonra da sayfa sayfadan çıkılmış oluyor.
+
+131
+00:15:50,090 --> 00:15:54,230
+Sayfayı yenilediğinizde tekrar database'den okuyup dosyaların geldiğini görüyorsunuz zaten.
+
+132
+00:15:56,389 --> 00:15:57,070
+Şimdi devam edelim.
+
+133
+00:15:57,190 --> 00:15:57,850
+Burada nasıl saldırı gerçekleşiyor?
+
+134
+00:15:57,850 --> 00:15:58,610
+Gerçekleştirmişiz.
+
+135
+00:15:59,149 --> 00:16:04,169
+Bakın arkadaşlar bu mesaj alanına şöyle bir javascript kodu yerleştirilmiş.
+
+136
+00:16:05,090 --> 00:16:09,289
+Şimdi bu mesaj önce sunucuya gidecek buradan.
+
+137
+00:16:09,570 --> 00:16:11,629
+Daha sonra da nereye gidecek?
+
+138
+00:16:11,750 --> 00:16:12,669
+Database'e gidecek.
+
+139
+00:16:12,750 --> 00:16:13,990
+Ve database bu şekilde yerleşecek.
+
+140
+00:16:14,750 --> 00:16:16,950
+Ve geri gelip sayfa tekrar çalıştığında.
+
+141
+00:16:16,950 --> 00:16:23,549
+Şimdi buradaki mesaj bir HTML elementin içerisinde ve script tagleri arasına izinmiş.
+
+142
+00:16:23,929 --> 00:16:27,509
+Dolayısıyla bu HTML elementi mesajda şu kısmı gösteren daha doğrusu.
+
+143
+00:16:27,850 --> 00:16:44,120
+Evet tamam böyle daha iyi.
+
+144
+00:16:47,100 --> 00:16:49,059
+Sanal makine olduğu için biraz yavaş çalışıyor.
+
+145
+00:17:20,519 --> 00:17:22,539
+Gördüğünüz gibi arkadaşlar burada bir element var.
+
+146
+00:17:23,200 --> 00:17:25,920
+İşte bu element sayfa çalıştığında tekrar çalışıyor.
+
+147
+00:17:26,380 --> 00:17:27,480
+Ben şuraya mesaj yazdım.
+
+148
+00:17:27,539 --> 00:17:28,460
+Şey buradaydı.
+
+149
+00:17:28,779 --> 00:17:29,940
+Ve burada render edilen bir şey.
+
+150
+00:17:29,940 --> 00:17:31,059
+Aslında baktığınızda.
+
+151
+00:17:31,859 --> 00:17:33,140
+Şöyle inspect dediğimizde.
+
+152
+00:17:33,420 --> 00:17:34,099
+Bunu görebilirsiniz.
+
+153
+00:17:35,640 --> 00:17:36,740
+Nasıl bir element olduğunu.
+
+154
+00:17:41,339 --> 00:17:43,660
+Burada guest book comments div var.
+
+155
+00:17:44,039 --> 00:17:45,740
+Bu divin içerisinde de mesajımız var.
+
+156
+00:17:46,160 --> 00:17:46,799
+Şimdi buraya ben.
+
+157
+00:17:48,019 --> 00:17:49,440
+Burada name fuat yazıyor.
+
+158
+00:17:49,539 --> 00:17:51,519
+Mesaj mesaj aralarında birer break var.
+
+159
+00:17:51,700 --> 00:17:53,319
+Yani new line var aslında.
+
+160
+00:17:54,720 --> 00:17:57,660
+Buradaki mesajı bir script olarak yazsaydım.
+
+161
+00:17:58,460 --> 00:18:00,319
+Ve browser da bunu çalıştıracaktı.
+
+162
+00:18:02,240 --> 00:18:04,480
+En low seviyede bunu yapmak olduğu için mümkün.
+
+163
+00:18:04,599 --> 00:18:05,980
+Çünkü bununla ilgili herhangi bir sorun yazılmamış.
+
+164
+00:18:06,059 --> 00:18:06,980
+Bunu gerçekleştirelim.
+
+165
+00:18:07,839 --> 00:18:08,140
+Buraya.
+
+166
+00:18:08,619 --> 00:18:12,660
+Buraya da.
+
+167
+00:18:12,680 --> 00:18:13,819
+Kendi script'imizi yazacağız.
+
+168
+00:18:13,900 --> 00:18:16,180
+Script bu şekilde yazılıyor.
+
+169
+00:18:24,589 --> 00:18:27,009
+Burasının buranın içerisine alert mi yapmışız?
+
+170
+00:18:27,910 --> 00:18:29,450
+Evet alert mesaj yazmışız.
+
+171
+00:18:29,990 --> 00:18:31,630
+Alert bir javascript fonksiyonu.
+
+172
+00:18:33,150 --> 00:18:35,150
+Browser tarafından bilinen bir fonksiyon.
+
+173
+00:18:48,400 --> 00:18:50,319
+Mesaj sınırı olduğu için daha fazla yazamıyorum.
+
+174
+00:18:50,500 --> 00:18:51,160
+Gördüğünüz gibi.
+
+175
+00:18:51,579 --> 00:18:52,619
+O yüzden böyle kalsın.
+
+176
+00:18:53,619 --> 00:18:54,319
+Sign diyorum.
+
+177
+00:18:56,410 --> 00:18:57,329
+Gördünüz mü arkadaşlar?
+
+178
+00:18:57,430 --> 00:18:57,869
+Gitti.
+
+179
+00:18:57,869 --> 00:18:59,049
+Database'e yerleşti.
+
+180
+00:18:59,049 --> 00:19:00,630
+Geri gelip tekrar sayfa yenilendi.
+
+181
+00:19:00,630 --> 00:19:04,009
+Yenilenirken de şu an ekranda gördüğünüz script'ı çalıştırdı.
+
+182
+00:19:04,250 --> 00:19:06,250
+Şimdi sayfayı bir daha yeniliyorum.
+
+183
+00:19:06,250 --> 00:19:11,769
+Sayfayı yenilemem için tekrar mı yenilemem gerekiyor?
+
+184
+00:19:11,769 --> 00:19:12,269
+Tamam.
+
+185
+00:19:12,269 --> 00:19:14,269
+Form olduğu için sorun oluyor ama.
+
+186
+00:19:14,269 --> 00:19:16,269
+Gördüğünüz gibi tekrar yapıyor.
+
+187
+00:19:16,269 --> 00:19:18,269
+Yani sayfa her yerlerinde mesaj girmesen bile.
+
+188
+00:19:18,269 --> 00:19:20,269
+Çünkü database'e kayıtlı olduğu için.
+
+189
+00:19:20,269 --> 00:19:22,269
+Bu saldırı böyle sürekli tekrar edebiliyor.
+
+190
+00:19:22,269 --> 00:19:27,269
+Ve bunu sadece ben değil, bu ekranda gördüğünüz alana, form giren ve bu sayfayı görüntülen herkesin karşısına çıkacak.
+
+191
+00:19:27,269 --> 00:19:29,269
+Çünkü database'e saklanıyor.
+
+192
+00:19:29,269 --> 00:19:31,269
+İkisi de store adının en büyük özelliği bu aslında.
+
+193
+00:19:31,269 --> 00:19:33,269
+Sizden ziyade diğer kullanıcıları da etkiliyor.
+
+194
+00:19:33,269 --> 00:19:35,269
+Çünkü database'e saklanıyor.
+
+195
+00:19:35,269 --> 00:19:37,269
+Diğer kullanıcı adımlar etkilerini de etkiliyor.
+
+196
+00:19:37,769 --> 00:19:39,769
+Gördüğünüz gibi bu bir açık oluşturuyor.
+
+197
+00:19:39,769 --> 00:19:41,769
+Bununla ilgili ne tür açıklar oluşturduğunuzu size göstereceğiz.
+
+198
+00:19:41,769 --> 00:19:43,769
+Diğer devamında.
+
+199
+00:19:43,769 --> 00:19:45,769
+Şimdi burada medium saldırı tipini görüyoruz.
+
+200
+00:19:45,769 --> 00:19:47,769
+Medium'a çevirelim.
+
+201
+00:19:47,769 --> 00:19:55,690
+Medium'da ne tür bir savunma geliyor.
+
+202
+00:19:55,690 --> 00:19:57,690
+Hemen kontrol edelim onu da.
+
+203
+00:19:57,690 --> 00:20:15,369
+Önce sors koduna bakalım.
+
+204
+00:20:15,369 --> 00:20:17,369
+O sunumda da vardı sanırım.
+
+205
+00:20:17,369 --> 00:20:19,369
+Burada ne yapılmış?
+
+206
+00:20:19,369 --> 00:20:23,160
+Burada aslında yapılan şey.
+
+207
+00:20:23,160 --> 00:20:26,599
+Buton var.
+
+208
+00:20:26,599 --> 00:20:28,599
+Butona basıldığında mesaj ve name geliyor.
+
+209
+00:20:28,599 --> 00:20:30,599
+Bakın burada script tag'i repletildi arkadaşlar.
+
+210
+00:20:30,599 --> 00:20:32,599
+Bizim client tarafından yapılan şey.
+
+211
+00:20:32,599 --> 00:20:34,599
+Mesaj içeriğinde.
+
+212
+00:20:34,599 --> 00:20:36,599
+Eğer script diye bir şey varsa
+
+213
+00:20:36,599 --> 00:20:38,599
+bunu replace edip
+
+214
+00:20:38,599 --> 00:20:40,599
+bunu yerine
+
+215
+00:20:40,599 --> 00:20:42,599
+bunu kaldırıp script tag'lerini kaldırıp
+
+216
+00:20:42,599 --> 00:20:44,599
+o şekilde gönderiyor ve mesajlardan bu şekilde avoid olmaya çalışıyor.
+
+217
+00:20:44,599 --> 00:20:46,599
+Hemen bir deneyelim.
+
+218
+00:20:46,599 --> 00:20:48,599
+Olacak dediğimiz şey.
+
+219
+00:20:48,599 --> 00:21:02,730
+Önceki hatamdı.
+
+220
+00:21:02,730 --> 00:21:04,730
+Ama yeni hatam gelmedi.
+
+221
+00:21:04,730 --> 00:21:06,730
+Bakın gördüğünüz gibi script tag'leri kaldırdı otomatik.
+
+222
+00:21:06,730 --> 00:21:08,730
+Bu şekilde bir escape yapmaya çalışmış.
+
+223
+00:21:08,730 --> 00:21:10,730
+Peki bundan nasıl sıyırılabiliriz?
+
+224
+00:21:10,730 --> 00:21:12,730
+Şimdi onu göreceğiz.
+
+225
+00:21:12,730 --> 00:21:16,259
+Bundan sıyırılmak için size arkadaşlar
+
+226
+00:21:16,259 --> 00:21:18,259
+iki yöntem var.
+
+227
+00:21:18,259 --> 00:21:20,259
+En basitini göstereyim.
+
+228
+00:21:20,259 --> 00:21:22,259
+Burada bir
+
+229
+00:21:22,259 --> 00:21:24,259
+Pardon.
+
+230
+00:21:24,259 --> 00:21:26,259
+Önce şunu bir sıfırlayalım.
+
+231
+00:21:26,259 --> 00:21:28,259
+Şu sürekli mesajlar çıkmasın.
+
+232
+00:21:28,259 --> 00:21:30,259
+Hızlı bir şekilde.
+
+233
+00:21:30,259 --> 00:21:35,400
+Database sıfırlayalım.
+
+234
+00:21:35,400 --> 00:21:37,400
+Database saklandığı için database sıfırlamamız gerekiyor.
+
+235
+00:21:37,400 --> 00:21:46,440
+Tamam.
+
+236
+00:21:46,440 --> 00:21:52,279
+Tekrar yazalım yeni mesaj.
+
+237
+00:21:52,279 --> 00:21:57,319
+Burada da bir limit olduğunu görüyorsunuz.
+
+238
+00:21:57,319 --> 00:22:00,599
+Ama burada bir limit.
+
+239
+00:22:00,599 --> 00:22:02,599
+Buradaki limit daha fazla gibi sanki.
+
+240
+00:22:02,599 --> 00:22:04,599
+Ama burada yapılan savunmanıydı arkadaşlar.
+
+241
+00:22:04,599 --> 00:22:10,470
+Hemen hızlıca bakalım.
+
+242
+00:22:10,470 --> 00:22:12,470
+Bakın sadece name alanına
+
+243
+00:22:12,470 --> 00:22:14,470
+replace koyulmuş.
+
+244
+00:22:14,470 --> 00:22:16,470
+Dolayısıyla siz şu an mesaj üzerinden hala saldırabiliyorsunuz.
+
+245
+00:22:16,470 --> 00:22:18,470
+Mesaj üzerinden aynı script çalıştırabiliyorum.
+
+246
+00:22:18,470 --> 00:22:20,470
+Çünkü sadece name replace etmiş ama
+
+247
+00:22:20,470 --> 00:22:22,470
+aslında mesajı da replace etmesi gerekiyor.
+
+248
+00:22:22,470 --> 00:22:24,470
+Pardon affedersiniz buradaymış.
+
+249
+00:22:24,470 --> 00:22:26,470
+Mesajı da burada yapıyormuş.
+
+250
+00:22:26,470 --> 00:22:28,470
+Burada sadece script'i kaldırıyormuş.
+
+251
+00:22:28,470 --> 00:22:30,470
+Şimdi script'i kaldırmasının da aslında faydası olmadığını göreceğiz.
+
+252
+00:22:30,470 --> 00:22:32,470
+Şimdi script'i kaldırmasının da aslında faydası olmadığını göreceğiz.
+
+253
+00:22:32,470 --> 00:22:34,470
+Şimdi script'i kaldırmasının da aslında faydası olmadığını göreceğiz.
+
+254
+00:22:34,470 --> 00:22:36,470
+Hemen sunumdan devam edelim.
+
+255
+00:22:36,470 --> 00:22:38,470
+Çünkü ben de hatırlamıyorum tam olarak nasıl yapıldığını.
+
+256
+00:22:38,470 --> 00:22:40,470
+Evet. Name alanında script yazamıyorduk.
+
+257
+00:22:40,470 --> 00:22:42,470
+Evet. Name alanında script yazamıyorduk.
+
+258
+00:22:42,470 --> 00:22:44,470
+Ancak name alanında bir takım hareketler yaparak
+
+259
+00:22:44,470 --> 00:22:46,470
+Ancak name alanında bir takım hareketler yaparak
+
+260
+00:22:46,470 --> 00:22:48,470
+script'in replace etmesini engelleyebiliyoruz.
+
+261
+00:22:48,470 --> 00:22:50,470
+script'in replace etmesini engelleyebiliyoruz.
+
+262
+00:22:50,470 --> 00:22:52,470
+Oradaki şu arkadaşlar. Onun için yazacağımız şey şu.
+
+263
+00:22:52,470 --> 00:22:54,470
+Bu komutu yazdığımızda
+
+264
+00:22:54,470 --> 00:22:56,470
+içerisinde şu script gerçekleştiği için
+
+265
+00:22:56,470 --> 00:22:58,470
+içerisinde şu script gerçekleştiği için
+
+266
+00:22:58,470 --> 00:23:00,470
+replace yapamayacak.
+
+267
+00:23:00,470 --> 00:23:02,470
+İlk yapmayacağınız şey şu olacak.
+
+268
+00:23:02,470 --> 00:23:04,470
+Bunu göremeyecek. Burayı görecek.
+
+269
+00:23:04,470 --> 00:23:06,470
+Dolayısıyla şu kısım
+
+270
+00:23:06,470 --> 00:23:08,470
+oradaki ilk programın bir tanesini atlatacak.
+
+271
+00:23:08,470 --> 00:23:10,470
+Yani böyle değişik farklı şeyler yaparak
+
+272
+00:23:10,470 --> 00:23:12,470
+atlatabilirsiniz.
+
+273
+00:23:12,470 --> 00:23:14,470
+Şimdi eğer siz şuraya okuma
+
+274
+00:23:14,470 --> 00:23:16,470
+bir browser olarak bakarsanız ilk dört karakterin
+
+275
+00:23:16,470 --> 00:23:18,470
+hiçbir önemi yok. Tamamen script tamamının
+
+276
+00:23:18,470 --> 00:23:20,470
+kapanana kadar bir önemi yok. Normal metin gibi
+
+277
+00:23:20,470 --> 00:23:22,470
+yazacak ama şurayı normal script tag olarak
+
+278
+00:23:22,470 --> 00:23:24,470
+tanımlayacak ve bundan sonra
+
+279
+00:23:24,470 --> 00:23:26,470
+şu script'i görene kadar
+
+280
+00:23:26,470 --> 00:23:28,470
+içerisinde kalan her şey metin olarak yazılacak.
+
+281
+00:23:28,470 --> 00:23:30,470
+Şimdi script tag olduğu için
+
+282
+00:23:30,470 --> 00:23:32,470
+içerisindeki parser cevap script fonksiyonları
+
+283
+00:23:32,470 --> 00:23:34,470
+arayacak ve alert'tan itibaren olan kısmı
+
+284
+00:23:34,470 --> 00:23:36,470
+çalıştıracak. Dolayısıyla böyle
+
+285
+00:23:36,470 --> 00:23:38,470
+bir şey yazmanız durumunda bu çalıştırabilir bir
+
+286
+00:23:38,470 --> 00:23:40,470
+script haline gelmiş oluyor ve
+
+287
+00:23:40,470 --> 00:23:42,470
+bu şu anda bizim
+
+288
+00:23:42,470 --> 00:23:44,470
+sunucu tarafında yaptığımız kontrole
+
+289
+00:23:44,470 --> 00:23:46,470
+atlayan bir
+
+290
+00:23:46,470 --> 00:23:49,720
+şey olmuş olacak. Script olmuş
+
+291
+00:23:49,720 --> 00:23:51,720
+olacak. Dolayısıyla biz şu anda buraya
+
+292
+00:23:51,720 --> 00:23:53,720
+gelip bunu
+
+293
+00:23:53,720 --> 00:23:55,720
+name alanına yazdığımızda
+
+294
+00:23:55,720 --> 00:23:59,740
+çünkü name alan içinde
+
+295
+00:23:59,740 --> 00:24:01,740
+yazamıyoruz çünkü
+
+296
+00:24:01,740 --> 00:24:03,740
+s sınırı vardı. Hatta aslında karakter
+
+297
+00:24:03,740 --> 00:24:05,740
+sınırı vardı. O yüzden bunu karakter
+
+298
+00:24:05,740 --> 00:24:07,740
+sınırını genişletmek için şimdi arkadaşlar
+
+299
+00:24:07,740 --> 00:24:09,740
+client tarafında olduğu için tüm kontrol sizde.
+
+300
+00:24:09,740 --> 00:24:11,740
+Buradan çok basit bir şekilde karakter sınırını
+
+301
+00:24:11,740 --> 00:24:13,740
+arttırabilirsiniz. Buradaki kontrol tamamen sizde.
+
+302
+00:24:13,740 --> 00:24:15,740
+Burayı 100 yapıp
+
+303
+00:24:15,740 --> 00:24:17,740
+karakter sınırını arttırabiliyoruz.
+
+304
+00:24:17,740 --> 00:24:19,740
+Tekrar paste yaptığımızda
+
+305
+00:24:19,740 --> 00:24:21,740
+gördüğünüz gibi engel olmadığını görüyorsunuz.
+
+306
+00:24:21,740 --> 00:24:23,740
+Yani HTML tarafında yapılan bir
+
+307
+00:24:23,740 --> 00:24:25,740
+basit bir kısıtlama
+
+308
+00:24:25,740 --> 00:24:27,740
+beni hiçbir şekilde engelleyemedi.
+
+309
+00:24:27,740 --> 00:24:29,740
+Şimdi sign guestbook diyorum.
+
+310
+00:24:29,740 --> 00:24:31,740
+Mesaja da bir şeyler yazalım. Bunda
+
+311
+00:24:31,740 --> 00:24:33,740
+kontrolü var çünkü.
+
+312
+00:24:33,740 --> 00:24:35,740
+Bakın gördüğünüz gibi arkadaşlar sayfalar
+
+313
+00:24:35,740 --> 00:24:37,740
+render oldu ve ekrana
+
+314
+00:24:37,740 --> 00:24:39,740
+mesaj yazdı.
+
+315
+00:24:39,740 --> 00:24:41,740
+Buradaki yazan şey mesaj
+
+316
+00:24:41,740 --> 00:24:43,740
+bizim dokümanın aslında
+
+317
+00:24:43,740 --> 00:24:45,740
+içindeki cookie ve session bilgisini veren şey.
+
+318
+00:24:45,740 --> 00:24:47,740
+Şu PHP session id'si
+
+319
+00:24:47,740 --> 00:24:49,740
+aslında bir session id'si. Yani bizim
+
+320
+00:24:49,740 --> 00:24:51,740
+login olduğumuzda
+
+321
+00:24:51,740 --> 00:24:53,740
+oluşan session id'si.
+
+322
+00:24:53,740 --> 00:24:55,740
+Burada da security'nin adını yazılmış. Cookie
+
+323
+00:24:55,740 --> 00:24:57,740
+demek ki security'de var. Bizim buradan
+
+324
+00:24:57,740 --> 00:24:59,740
+yaptığımız değişiklikler demek ki cookie'de
+
+325
+00:24:59,740 --> 00:25:01,740
+saklanıyormuş. Bunu da görmüş olduk. Security
+
+326
+00:25:01,740 --> 00:25:03,740
+değişiklikleri cookie'de saklanıyormuş.
+
+327
+00:25:03,740 --> 00:25:05,740
+Bu şekilde.
+
+328
+00:25:05,740 --> 00:25:07,740
+Medium bu şekilde arkadaşlar.
+
+329
+00:25:07,740 --> 00:25:09,740
+Şimdi bir sonrakine geçiyoruz.
+
+330
+00:25:09,740 --> 00:25:11,740
+Hi. Hi'de ne yapılmış?
+
+331
+00:25:11,740 --> 00:25:13,740
+Bakın HTML'den yine kaçış yapılmış
+
+332
+00:25:13,740 --> 00:25:15,740
+şeydi mesaj kısmında.
+
+333
+00:25:15,740 --> 00:25:17,740
+Bu sefer name kısmında yine
+
+334
+00:25:17,740 --> 00:25:19,740
+ne yapılmış? Bu sefer replace yapılmış
+
+335
+00:25:19,740 --> 00:25:21,740
+arkadaşlar. Yani az önceki
+
+336
+00:25:21,740 --> 00:25:23,740
+çok daha basit bir
+
+337
+00:25:23,740 --> 00:25:25,740
+scriptleri kaldırma yöntemiydi.
+
+338
+00:25:25,740 --> 00:25:27,740
+Burada ise
+
+339
+00:25:27,740 --> 00:25:29,740
+regexle yapılmaya çalışmış bu.
+
+340
+00:25:29,740 --> 00:25:31,740
+Ancak bunun da engel olmadığını göreceğiz.
+
+341
+00:25:31,740 --> 00:25:33,740
+Çünkü biz sadece script tag'i ile
+
+342
+00:25:33,740 --> 00:25:35,740
+JavaScript kodlarını çalıştırmıyoruz.
+
+343
+00:25:35,740 --> 00:25:37,740
+JavaScript kodlarını çalıştırmak için
+
+344
+00:25:37,740 --> 00:25:39,740
+farklı yöntemler var.
+
+345
+00:25:39,740 --> 00:25:41,740
+Bunlardan bir tanesi de bizim
+
+346
+00:25:41,740 --> 00:25:43,740
+HTML elementlerimizin
+
+347
+00:25:43,740 --> 00:25:45,740
+eventlerinin olması.
+
+348
+00:25:45,740 --> 00:25:47,740
+Şimdi bununla ilgili bir saldırı göstereceğim size.
+
+349
+00:25:49,740 --> 00:25:51,740
+Hi'de de yine aynı şekilde
+
+350
+00:25:51,740 --> 00:25:53,740
+karakter şeyini arttırabiliyoruz.
+
+351
+00:25:53,740 --> 00:25:55,740
+Yine buradan saldıracağız. Name üzerinden
+
+352
+00:25:55,740 --> 00:25:57,740
+devam edeceğiz.
+
+353
+00:25:57,740 --> 00:25:59,740
+Yapacağımız şey
+
+354
+00:25:59,740 --> 00:26:01,740
+bir element oluşturup element'e
+
+355
+00:26:01,740 --> 00:26:03,740
+bir event vereceğiz. Ve burada
+
+356
+00:26:03,740 --> 00:26:05,740
+göreceksiniz ki regex
+
+357
+00:26:05,740 --> 00:26:07,740
+üzerinden gelen bir script olacak.
+
+358
+00:26:07,740 --> 00:26:09,740
+Burası çok önemli.
+
+359
+00:26:09,740 --> 00:26:14,200
+Şurası image olsun.
+
+360
+00:26:14,200 --> 00:26:16,200
+Hatta direkt kopyalayayım kaybolmaması
+
+361
+00:26:16,200 --> 00:26:18,200
+açısından.
+
+362
+00:26:18,200 --> 00:26:24,809
+Sonra size kodu anlatayım.
+
+363
+00:26:24,809 --> 00:26:26,809
+Öncelikle bu elementi büyütmemiz gerekiyor.
+
+364
+00:26:26,809 --> 00:26:28,809
+Hatırlarsanız bunun bir maksimum sınırı vardı.
+
+365
+00:26:28,809 --> 00:26:30,809
+Bu elementi hemen şuradan büyütelim.
+
+366
+00:26:30,809 --> 00:26:32,809
+100 yapalım.
+
+367
+00:26:32,809 --> 00:26:34,809
+Hatta 1000 yapalım.
+
+368
+00:26:34,809 --> 00:26:36,809
+Şu element istediğimiz kadar
+
+369
+00:26:36,809 --> 00:26:38,809
+karakteri alabiliyor şu anda. Şimdi buraya
+
+370
+00:26:38,809 --> 00:26:40,809
+bir code yazdım.
+
+371
+00:26:40,809 --> 00:26:42,809
+Code bir image elementi aslında.
+
+372
+00:26:42,809 --> 00:26:44,809
+Source hiç önemli değil.
+
+373
+00:26:44,809 --> 00:26:46,809
+Ekranda bir image görmeme gerek yok.
+
+374
+00:26:46,809 --> 00:26:48,809
+Sadece bir element oluşturmak istedim.
+
+375
+00:26:48,809 --> 00:26:50,809
+Ve bunu onerror elementine yani bu image
+
+376
+00:26:50,809 --> 00:26:52,809
+bulunamadığında, böyle bir image yoksa eğer
+
+377
+00:26:52,809 --> 00:26:54,809
+ki ben olabildiğince olmamasını istiyorum
+
+378
+00:26:54,809 --> 00:26:56,809
+çünkü onerror'a düşmesini istiyorum.
+
+379
+00:26:56,809 --> 00:26:58,809
+Onerror'a düşecek. Onerror bir javascript event.
+
+380
+00:26:58,809 --> 00:27:00,809
+Event javascript'ti.
+
+381
+00:27:00,809 --> 00:27:02,809
+Yani bir fonksiyon aslında.
+
+382
+00:27:02,809 --> 00:27:04,809
+Yani bu image bulunamadığında
+
+383
+00:27:04,809 --> 00:27:06,809
+onerror'daki şu script çalıştıracak.
+
+384
+00:27:06,809 --> 00:27:08,809
+Yani sizin script çalıştırmanız için
+
+385
+00:27:08,809 --> 00:27:10,809
+illa script tagine ihtiyacınız yok.
+
+386
+00:27:10,809 --> 00:27:12,809
+Buradaki mesele o. Dolayısıyla
+
+387
+00:27:12,809 --> 00:27:14,809
+sizin yazacağınız şey buradaki alert ve document cookie olacak.
+
+388
+00:27:14,809 --> 00:27:16,809
+Şimdi buraya bir şeyler yazıyorum.
+
+389
+00:27:16,809 --> 00:27:18,809
+Sign guestbook diyorum.
+
+390
+00:27:18,809 --> 00:27:20,809
+Bu öncekiydi arkadaşlar hatırlarsanız.
+
+391
+00:27:20,809 --> 00:27:22,809
+Bu da ikincisi.
+
+392
+00:27:22,809 --> 00:27:24,809
+İkincisi için yazan mesaj bu.
+
+393
+00:27:24,809 --> 00:27:26,809
+Gördüğünüz gibi scriptım çalıştı ve
+
+394
+00:27:26,809 --> 00:27:28,809
+security high'da da
+
+395
+00:27:28,809 --> 00:27:30,809
+zaten şu an security high'da değilmişiz bu arada.
+
+396
+00:27:32,809 --> 00:27:34,809
+Takip ediyor musunuz bilmiyorum ama kimse beni uyarmadı.
+
+397
+00:27:34,809 --> 00:27:36,809
+Değiştirmemişim.
+
+398
+00:27:36,809 --> 00:27:40,339
+Şimdi hemen tekrar deneyelim.
+
+399
+00:27:40,339 --> 00:27:43,690
+Şunları önce sıfırlayalım.
+
+400
+00:27:43,690 --> 00:27:45,690
+Onu da hemen yapalım da.
+
+401
+00:27:45,690 --> 00:27:54,700
+Diğerleriyle karışmasın.
+
+402
+00:27:54,700 --> 00:27:56,700
+Hemen geliyorum.
+
+403
+00:27:56,700 --> 00:27:58,700
+Submit.
+
+404
+00:27:58,700 --> 00:28:00,700
+Şu an istediğim formdayım.
+
+405
+00:28:00,700 --> 00:28:02,700
+Hemen bunu bir daha genişleteceğim.
+
+406
+00:28:02,700 --> 00:28:04,700
+Aynı şeyle tekrar ediyorum şu anda.
+
+407
+00:28:04,700 --> 00:28:17,769
+Bakın arkadaşlar bir imaj koymaya çalıştı.
+
+408
+00:28:17,769 --> 00:28:19,769
+İmajı bulamadı. Bulamadığı için onerror fonksiyonu
+
+409
+00:28:19,769 --> 00:28:21,769
+düştü ve onerror fonksiyonundaki de
+
+410
+00:28:21,769 --> 00:28:23,769
+gitti ve javascript fonksiyonunu
+
+411
+00:28:23,769 --> 00:28:25,769
+çalıştırdı. O da bir document'ın
+
+412
+00:28:25,769 --> 00:28:27,769
+cookie'lerini yazdırmaktı. Gördüğünüz gibi
+
+413
+00:28:27,769 --> 00:28:29,769
+security'ini high yazdı.
+
+414
+00:28:29,769 --> 00:28:31,769
+Ailesini yazdı.
+
+415
+00:28:31,769 --> 00:28:33,769
+Bu şekilde
+
+416
+00:28:33,769 --> 00:28:35,769
+aslında siz başka kullanıcıların da session
+
+417
+00:28:35,769 --> 00:28:37,769
+ailesini expose edip sayfada gösterebilirsiniz.
+
+418
+00:28:37,769 --> 00:28:39,769
+Ama
+
+419
+00:28:39,769 --> 00:28:41,769
+stored'ın özelliği bu.
+
+420
+00:28:41,769 --> 00:28:43,769
+Şimdi stored'la ilgili bittiğine göre artık
+
+421
+00:28:43,769 --> 00:28:45,769
+low'a geçebiliriz. Low aslında en primitif hali.
+
+422
+00:28:45,769 --> 00:28:47,769
+Sadece ilkini göstereceğim.
+
+423
+00:28:47,769 --> 00:28:49,769
+Çünkü diğerleri tamamen şeyle
+
+424
+00:28:49,769 --> 00:28:51,769
+aynı. Saldırı şekilleri tamamen stored'la
+
+425
+00:28:51,769 --> 00:28:53,769
+aynı.
+
+426
+00:28:53,769 --> 00:29:01,180
+Buraya direkt script yazıyorum.
+
+427
+00:29:01,180 --> 00:29:03,180
+Arkadaşlar hiçbir şekilde database'e kayıt falan yok.
+
+428
+00:29:03,180 --> 00:29:08,950
+Submit ediyorum.
+
+429
+00:29:08,950 --> 00:29:10,950
+Yazılmadı.
+
+430
+00:29:10,950 --> 00:29:12,950
+High'de olduğumuz için herhalde hala.
+
+431
+00:29:12,950 --> 00:29:16,809
+Evet.
+
+432
+00:29:16,809 --> 00:29:18,809
+Çok sıkıcı oldu ama.
+
+433
+00:29:18,809 --> 00:29:20,809
+Böyle yapalım. Tekrar yazalım.
+
+434
+00:29:20,809 --> 00:29:22,809
+Önce bir koduna bakalım istiyorsanız.
+
+435
+00:29:22,809 --> 00:29:27,019
+Nasılmış? Kod basit bir şekilde.
+
+436
+00:29:27,019 --> 00:29:29,019
+Aslında echo.
+
+437
+00:29:29,019 --> 00:29:31,019
+Echo yapıyor. Yani biz submit ettiğimizde
+
+438
+00:29:31,019 --> 00:29:33,019
+buradan ne girdi isek onu tekrar ekrana yazdırıyor.
+
+439
+00:29:33,019 --> 00:29:35,019
+PHP sadece echo olarak
+
+440
+00:29:35,019 --> 00:29:37,019
+çalışıyor. Dolayısıyla
+
+441
+00:29:37,019 --> 00:29:42,539
+biz buraya şöyle bir şey yazarsak.
+
+442
+00:29:42,539 --> 00:29:44,539
+Hiçbir kontrol olmadığı için.
+
+443
+00:29:44,539 --> 00:29:46,539
+Hep çalışacak. Aynı stored'da olduğu gibi.
+
+444
+00:29:46,539 --> 00:29:53,619
+Gördüğünüz gibi script çalışıyor. Hiçbir
+
+445
+00:29:53,619 --> 00:29:55,619
+kontrol yok. Low bu şekilde.
+
+446
+00:29:55,619 --> 00:29:59,619
+Burada da
+
+447
+00:29:59,619 --> 00:30:01,619
+medium'u görüyoruz. Medium'da aynı
+
+448
+00:30:01,619 --> 00:30:03,619
+replace yapmış arkadaşlar. Script tag'ini gördüğümüz
+
+449
+00:30:03,619 --> 00:30:05,619
+replace. Bunun da aynı stored'da olduğu gibi
+
+450
+00:30:05,619 --> 00:30:07,619
+nasıl üstesinden gelebiliriz?
+
+451
+00:30:07,619 --> 00:30:09,619
+Script tag'inin içerisine
+
+452
+00:30:09,619 --> 00:30:11,619
+daha farklı bir script yazarak.
+
+453
+00:30:11,619 --> 00:30:13,619
+Script içerisinde script yazarak
+
+454
+00:30:13,619 --> 00:30:15,619
+nested script yazarak
+
+455
+00:30:15,619 --> 00:30:17,619
+bunun üstesinden gelebiliriz.
+
+456
+00:30:17,619 --> 00:30:19,619
+Veya hiç uğraşmayıp
+
+457
+00:30:19,619 --> 00:30:21,619
+bir imaj elementi oluşturup
+
+458
+00:30:21,619 --> 00:30:23,619
+yanlış bir source verip
+
+459
+00:30:23,619 --> 00:30:25,619
+hiç olmayan bir source verip
+
+460
+00:30:25,619 --> 00:30:27,619
+onerror fonksiyonu yazabiliriz. O yüzden kesin
+
+461
+00:30:27,619 --> 00:30:29,619
+çözüm. High ile çözen bir çözüm.
+
+462
+00:30:29,619 --> 00:30:31,619
+High'daki kontrolü. Zaten buradaki high kontrolü
+
+463
+00:30:31,619 --> 00:30:33,619
+da aynı şekilde arkadaşlar. Bunun atlamatmanın yolu da
+
+464
+00:30:33,619 --> 00:30:35,619
+aynı şekilde imaj onerror vermek.
+
+465
+00:30:35,619 --> 00:30:37,619
+Yani bir element oluşturup
+
+466
+00:30:37,619 --> 00:30:39,619
+elementin
+
+467
+00:30:39,619 --> 00:30:41,619
+load olmadığında gerçekleşeceği
+
+468
+00:30:41,619 --> 00:30:43,619
+hataya event verip
+
+469
+00:30:43,619 --> 00:30:45,619
+fonksiyon verip javascript fonksiyon verip bunu çalıştırmak.
+
+470
+00:30:45,619 --> 00:30:47,619
+Buradaki temel şeyler stored'da
+
+471
+00:30:47,619 --> 00:30:49,619
+tamamen aynı. Stored'da
+
+472
+00:30:49,619 --> 00:30:51,619
+reflekler arasındaki en büyük farkın
+
+473
+00:30:51,619 --> 00:30:53,619
+stored'ların database'e kaydolduğunu
+
+474
+00:30:53,619 --> 00:30:55,619
+refleklerin genelde echo server sunucularda sizin
+
+475
+00:30:55,619 --> 00:30:57,619
+ekrana yazdığı şeyin size tekrar geri gönderilmesi
+
+476
+00:30:57,619 --> 00:30:59,619
+olarak verilmesi durumunda çalıştırıldığını
+
+477
+00:30:59,619 --> 00:31:01,619
+bilin. Ve stored'larda
+
+478
+00:31:01,619 --> 00:31:03,619
+diğer kullanıcıların bilgilerini de
+
+479
+00:31:03,619 --> 00:31:05,619
+expose edilmesi söz konusu. Çünkü database'de
+
+480
+00:31:05,619 --> 00:31:07,619
+geliyor. Yani sizin kaydettiğiniz
+
+481
+00:31:07,619 --> 00:31:09,619
+kendi kullanıcı hesabınız olarak database'e
+
+482
+00:31:09,619 --> 00:31:11,619
+kaydettiğiniz bir şeyi başkası da görebileceği için
+
+483
+00:31:11,619 --> 00:31:13,619
+başkasının browser'ında da
+
+484
+00:31:13,619 --> 00:31:15,619
+bir takım
+
+485
+00:31:15,619 --> 00:31:17,619
+yaptığınız saldırı netiklerini görmeniz mümkün.
+
+486
+00:31:17,619 --> 00:31:19,619
+Göstermeniz mümkün.
+
+487
+00:31:19,619 --> 00:31:21,619
+Medium ve high'da arkadaşlar kesin çözecek çözüm bu.
+
+488
+00:31:21,619 --> 00:31:23,619
+Yani her zaman çalışacak
+
+489
+00:31:23,619 --> 00:31:25,619
+bir çözüm. Çünkü script'a geçer mi?
+
+490
+00:31:25,619 --> 00:31:27,619
+Açılmıyor ve kontrol etmesi çok zor bir
+
+491
+00:31:27,619 --> 00:31:29,619
+iksir ses türü.
+
+492
+00:31:29,619 --> 00:31:31,619
+Bu şekildeydi.
+
+493
+00:31:31,619 --> 00:31:33,619
+Şimdi DOM biraz daha farklı arkadaşlar.
+
+494
+00:31:33,619 --> 00:31:35,619
+Siz sayfaları
+
+495
+00:31:35,619 --> 00:31:37,619
+yüklediğinizde
+
+496
+00:31:37,619 --> 00:31:39,619
+dediğim gibi DOM elementleri çalışır.
+
+497
+00:31:39,619 --> 00:31:41,619
+Ve DOM elementleriyle siz browser'ınızı
+
+498
+00:31:41,619 --> 00:31:43,619
+kontrol edebilirsiniz. Örneğin
+
+499
+00:31:43,619 --> 00:31:45,619
+page'ler yüklenirken, page'ler kapanırken
+
+500
+00:31:45,619 --> 00:31:47,619
+yapacağınız bütün elementleri DOM elementleriyle yönetirsiniz.
+
+501
+00:31:49,619 --> 00:32:09,670
+Burada arkadaşlar
+
+502
+00:32:09,670 --> 00:32:11,670
+benzer şekilde siz
+
+503
+00:32:11,670 --> 00:32:13,670
+URL'leri kullanarak
+
+504
+00:32:13,670 --> 00:32:15,670
+URL'ler üzerinden DOM elementlerini
+
+505
+00:32:15,670 --> 00:32:17,670
+çalıştırarak script'lerinizi
+
+506
+00:32:17,670 --> 00:32:19,670
+çalıştırabiliyorsunuz.
+
+507
+00:32:19,670 --> 00:32:21,670
+Bunu tetikte çalıştırmayacağım.
+
+508
+00:32:21,670 --> 00:32:23,670
+Çok basit bir şekilde browser'ınıza gidip
+
+509
+00:32:23,670 --> 00:32:25,670
+yukarıdaki şu default
+
+510
+00:32:25,670 --> 00:32:27,670
+şu URL'i aynısını
+
+511
+00:32:27,670 --> 00:32:29,670
+çalıştırdığınızda
+
+512
+00:32:29,670 --> 00:32:31,670
+her aşamada low'da bu saldırının
+
+513
+00:32:31,670 --> 00:32:33,670
+çalıştığını, medium'da da bu saldırının
+
+514
+00:32:33,670 --> 00:32:35,670
+çalıştığını
+
+515
+00:32:35,670 --> 00:32:37,670
+göreceksiniz. Yani yapacağınız
+
+516
+00:32:37,670 --> 00:32:39,670
+tek şey şu benim ekrana koyduğum
+
+517
+00:32:39,670 --> 00:32:41,670
+default-english-ts
+
+518
+00:32:41,670 --> 00:32:43,670
+script yazdığım script. Aynen
+
+519
+00:32:43,670 --> 00:32:45,670
+birebir çalıştırdığınızda
+
+520
+00:32:45,670 --> 00:32:47,670
+XSET DOM'un da çalıştığını göreceksiniz.
+
+521
+00:32:47,670 --> 00:32:49,670
+XSET DOM aslında çok fazla
+
+522
+00:32:49,670 --> 00:32:51,670
+yapılan bir şey değil çünkü genelde
+
+523
+00:32:51,670 --> 00:32:53,670
+engel olunabilen bir şey de değil açıkçası.
+
+524
+00:32:53,670 --> 00:32:55,670
+Çünkü DOM tamamen sizin tarafınızda
+
+525
+00:32:55,670 --> 00:32:57,670
+çalıştığı için çok büyük bir
+
+526
+00:32:57,670 --> 00:32:59,670
+faydasını görmüyorsunuz ama
+
+527
+00:32:59,670 --> 00:33:01,670
+DOM'la da
+
+528
+00:33:01,670 --> 00:33:03,670
+browser'ınıza saçma sapan
+
+529
+00:33:03,670 --> 00:33:05,670
+bu tarz hareketler yaptırabileceğinizi
+
+530
+00:33:05,670 --> 00:33:07,670
+görün şeklinde koydum.
+
+531
+00:33:07,670 --> 00:33:09,670
+Buradaki slide'ı paylaşacağım
+
+532
+00:33:09,670 --> 00:33:11,670
+zaten siz de denersiniz.
+
+533
+00:33:11,670 --> 00:33:13,670
+Ben artık doğrudan şeye hareket etmek istiyorum.
+
+534
+00:33:13,670 --> 00:33:15,670
+CSRF'e geçmek istiyorum.
+
+535
+00:33:15,670 --> 00:33:17,670
+Çünkü yarım saat geçmiş.
+
+536
+00:33:17,670 --> 00:33:19,670
+CSRF de çok önemli bir kısım.
+
+537
+00:33:19,670 --> 00:33:21,670
+Bir saniye.
+
+538
+00:33:21,670 --> 00:33:25,910
+Şimdi CSRF'i anlatacağım.
+
+539
+00:33:25,910 --> 00:33:27,910
+Buyur, dinliyorum şimdi seni.
+
+540
+00:33:27,910 --> 00:33:29,910
+Hocam ben şeye geçmeden önce
+
+541
+00:33:29,910 --> 00:33:31,910
+şey diyecektim. Şu an XSS için
+
+542
+00:33:31,910 --> 00:33:33,910
+kesin bir çözüm yok mu hocam? Ben öyle anladım.
+
+543
+00:33:33,910 --> 00:33:35,910
+Var. Hayır hayır. XSS için çözüm
+
+544
+00:33:35,910 --> 00:33:37,910
+çözüm var. DOM için yok. Sadece DOM için
+
+545
+00:33:37,910 --> 00:33:39,910
+çözüm yok. Çünkü DOM'da
+
+546
+00:33:39,910 --> 00:33:41,910
+kontrol edemiyorsunuz her şeyi. Çünkü DOM
+
+547
+00:33:41,910 --> 00:33:43,910
+sunucuya falan geçmiyor.
+
+548
+00:33:43,910 --> 00:33:45,910
+DOM browser'la alakalı bir şey.
+
+549
+00:33:45,910 --> 00:33:47,910
+Yaptığınız etkiler de genelde ekoygü bir size yansıtıyor.
+
+550
+00:33:47,910 --> 00:33:49,910
+Siz başkalarının
+
+551
+00:33:49,910 --> 00:33:51,910
+yaptığınız XSS saldırıları başka kullanıcılar etkileyemiyor.
+
+552
+00:33:51,910 --> 00:33:53,910
+Genelde sizinkini etkiliyor. O da çok efektif
+
+553
+00:33:53,910 --> 00:33:55,910
+bir şey değil. O yüzden atladım zaten.
+
+554
+00:33:55,910 --> 00:33:57,910
+DOM'da yapabileceğiniz şeyler sadece sizin
+
+555
+00:33:57,910 --> 00:33:59,910
+kendi browser'ınızı bozmanızı sağlıyor.
+
+556
+00:33:59,910 --> 00:34:01,910
+Başkalarının browser'ını bozamıyorsunuz.
+
+557
+00:34:01,910 --> 00:34:03,910
+Reflective'da
+
+558
+00:34:03,910 --> 00:34:05,910
+aşağı yukarı aynı gibi. Reflective'da da biraz öyle ama
+
+559
+00:34:05,910 --> 00:34:07,910
+Storeout'lar çok tehlikeli. Çünkü Storeout'larda
+
+560
+00:34:07,910 --> 00:34:09,909
+başka kullanıcılar da sizin
+
+561
+00:34:09,909 --> 00:34:11,909
+kaydettiğiniz skriptleri
+
+562
+00:34:11,909 --> 00:34:13,909
+görebileceği için ve sayfalarını
+
+563
+00:34:13,909 --> 00:34:15,909
+yenilediğinde, açtıklarında veya yenilediklerinde
+
+564
+00:34:15,909 --> 00:34:17,909
+karşılaşabileceği için sizin skriptlerinizle
+
+565
+00:34:17,909 --> 00:34:19,909
+çok tehlikeli olabiliyor.
+
+566
+00:34:19,909 --> 00:34:21,909
+Tamam?
+
+567
+00:34:21,909 --> 00:34:23,909
+Sorunun cevabını aldın mı? Tamam.
+
+568
+00:34:23,909 --> 00:34:25,909
+Şimdi CSRF'a geçmek istiyorum. Zaten CSRF'de
+
+569
+00:34:25,909 --> 00:34:27,909
+tek başına çalışan bir
+
+570
+00:34:27,909 --> 00:34:29,909
+şey değil.
+
+571
+00:34:29,909 --> 00:34:31,909
+Saldırı tipi değil. O yüzden
+
+572
+00:34:31,909 --> 00:34:33,909
+genelde XSS'le birlikte veya
+
+573
+00:34:33,909 --> 00:34:35,909
+Phishing'le birlikte kullanılıyor.
+
+574
+00:34:37,909 --> 00:34:39,909
+Şimdi CSRF'in ne olduğunu anlatmam gerekiyor.
+
+575
+00:34:39,909 --> 00:34:41,909
+Size CSRF arkadaşlar
+
+576
+00:34:41,909 --> 00:34:43,909
+adından da anlaşılacağı gibi
+
+577
+00:34:43,909 --> 00:34:45,909
+Cross Site Request Forgery yani
+
+578
+00:34:45,909 --> 00:34:47,909
+sizin bir sitenin bir sitenizle
+
+579
+00:34:47,909 --> 00:34:49,909
+başka bir sitenin cookiesine veya
+
+580
+00:34:49,909 --> 00:34:51,909
+credential'larını, kullanıcı
+
+581
+00:34:51,909 --> 00:34:53,909
+bilgilerini erişmenizi sağlayan
+
+582
+00:34:53,909 --> 00:34:55,909
+bir saldırı tipi. Bu da tamamen
+
+583
+00:34:55,909 --> 00:34:57,909
+XSS gibi Client tarafından çalışıyor.
+
+584
+00:34:57,909 --> 00:34:59,909
+Ama tek başına yapılan bir
+
+585
+00:34:59,909 --> 00:35:01,909
+saldırı değil. Genelde organize
+
+586
+00:35:01,909 --> 00:35:03,909
+diğer saldırı yönetimleriyle birlikte kullanılıyor.
+
+587
+00:35:03,909 --> 00:35:05,909
+Örneğin XSS'le ve
+
+588
+00:35:05,909 --> 00:35:07,909
+Phishing gibi saldırılarla birlikte kullanılıyor.
+
+589
+00:35:07,909 --> 00:35:09,909
+Şimdi nasıl yapıldığını görünce zaten
+
+590
+00:35:09,909 --> 00:35:11,909
+ne demek istediğimi anlayacaksınız.
+
+591
+00:35:11,909 --> 00:35:20,340
+Şimdi hemen örnek üzerinden devam edelim.
+
+592
+00:35:20,340 --> 00:35:22,340
+XSS burası. Şuradan
+
+593
+00:35:22,340 --> 00:35:24,340
+hemen Database'de yenileyelim bu arada.
+
+594
+00:35:24,340 --> 00:35:26,340
+İhtiyacımız olmayacak ama
+
+595
+00:35:26,340 --> 00:35:28,340
+garanti olsun.
+
+596
+00:35:28,340 --> 00:35:34,469
+Tamam.
+
+597
+00:35:34,469 --> 00:35:36,469
+Gördüğünüz gibi arkadaşlar burada bir kullanıcı alanı var.
+
+598
+00:35:36,469 --> 00:35:38,469
+Yani bu şu anki mevcut admin'in şifresini
+
+599
+00:35:38,469 --> 00:35:40,469
+değiştirmeyi sağlıyor.
+
+600
+00:35:40,469 --> 00:35:42,469
+Şimdi buradaki alanı
+
+601
+00:35:42,469 --> 00:35:44,469
+biz test edelim.
+
+602
+00:35:44,469 --> 00:35:46,469
+Yeni şifremi giriyorum.
+
+603
+00:35:46,469 --> 00:35:48,469
+Yeni şifrem 123 olsun.
+
+604
+00:35:50,469 --> 00:35:52,469
+Onaylamayayım. Change diyorum.
+
+605
+00:35:52,469 --> 00:35:54,469
+Şifreler
+
+606
+00:35:56,469 --> 00:35:58,469
+farklı olduğu için
+
+607
+00:35:58,469 --> 00:36:00,469
+isn't matched dedi.
+
+608
+00:36:00,469 --> 00:36:02,469
+Aynı şifreleri
+
+609
+00:36:02,469 --> 00:36:04,469
+giriyorum. Change dedim.
+
+610
+00:36:04,469 --> 00:36:06,469
+Mevcut admin için, kullanıcım için şifreleri değiştirdi.
+
+611
+00:36:06,469 --> 00:36:08,469
+Şimdi neler olduğunu görelim.
+
+612
+00:36:08,469 --> 00:36:10,469
+Bakın yukarı yöreyle bakarsanız
+
+613
+00:36:10,469 --> 00:36:12,469
+açıkça açık görülüyor. Benim 123'lü şifrem
+
+614
+00:36:12,469 --> 00:36:14,469
+123'tü.
+
+615
+00:36:14,469 --> 00:36:16,469
+Change, Change olmuş.
+
+616
+00:36:16,469 --> 00:36:18,469
+Gönderdiğim şey değişmiş.
+
+617
+00:36:18,469 --> 00:36:20,469
+URL üzerinden gitmesi
+
+618
+00:36:20,469 --> 00:36:22,469
+ne anlama geliyordu? Hatırlarsanız
+
+619
+00:36:22,469 --> 00:36:24,469
+hangi istekli pile gidiyor demektir bu?
+
+620
+00:36:24,469 --> 00:36:28,579
+Aslında
+
+621
+00:36:28,579 --> 00:36:30,579
+URL üzerinden gidiyor. Post değil.
+
+622
+00:36:30,579 --> 00:36:32,579
+Get. Değil mi?
+
+623
+00:36:32,579 --> 00:36:34,579
+Getle gidiyor şu anda.
+
+624
+00:36:34,579 --> 00:36:36,579
+Dolayısıyla URL üzerinde yaptığımız her şeyi görebiliyoruz.
+
+625
+00:36:36,579 --> 00:36:38,579
+123 göndermişiz, 123 göndermişiz.
+
+626
+00:36:38,579 --> 00:36:40,579
+Burada mask elemenin hiçbir esprisi yok aslında.
+
+627
+00:36:40,579 --> 00:36:42,579
+Oldukça
+
+628
+00:36:42,579 --> 00:36:44,579
+yanlış bir yaklaşım.
+
+629
+00:36:44,579 --> 00:36:46,579
+Ama bu bizim
+
+630
+00:36:46,579 --> 00:36:48,579
+saldırı için işimize yarayacak.
+
+631
+00:36:48,579 --> 00:36:50,579
+Böyle bir
+
+632
+00:36:50,579 --> 00:36:52,579
+script'imiz var.
+
+633
+00:36:52,579 --> 00:36:54,579
+Password'ları alıp
+
+634
+00:36:54,579 --> 00:36:56,579
+değişkenlere yerleştirip
+
+635
+00:36:56,579 --> 00:36:58,579
+Mesh sayar değişkenler.
+
+636
+00:36:58,579 --> 00:37:00,579
+Şifreler update edilen bir şey.
+
+637
+00:37:00,579 --> 00:37:02,579
+Eğer update olursa
+
+638
+00:37:02,579 --> 00:37:04,579
+şifre değişti. Olmadıysa şifre değişmedi.
+
+639
+00:37:04,579 --> 00:37:06,579
+Passwordlar mesh olmadı şeklinde
+
+640
+00:37:06,579 --> 00:37:08,579
+mesaj veriyor. Böyle çok basit bir
+
+641
+00:37:08,579 --> 00:37:10,579
+ilkel bir script var burada.
+
+642
+00:37:10,579 --> 00:37:12,579
+Şimdi bunu bir slide'a
+
+643
+00:37:12,579 --> 00:37:14,579
+sadık olarak ilerleyelim. Bununla ilgili nasıl bir saldırı
+
+644
+00:37:14,579 --> 00:37:16,579
+yapmışız. Şimdi
+
+645
+00:37:16,579 --> 00:37:18,579
+şöyle bir şey düşünün arkadaşlar. Şimdi bu URL üzerinden
+
+646
+00:37:18,579 --> 00:37:20,579
+gidiyor ya. Ben kullanıcıya şu
+
+647
+00:37:20,579 --> 00:37:22,579
+URL'de bu URL'ı çalıştırabilirsem
+
+648
+00:37:22,579 --> 00:37:24,579
+kullanıcı için. Şuraya mesela
+
+649
+00:37:24,579 --> 00:37:26,579
+12345 yazdım.
+
+650
+00:37:26,579 --> 00:37:28,579
+Buraya da 12345 yazdığımda
+
+651
+00:37:28,579 --> 00:37:30,579
+ben hiçbir şekilde
+
+652
+00:37:30,579 --> 00:37:32,579
+buraya bir şey girmeden bu sayfayı yenilediğimde
+
+653
+00:37:32,579 --> 00:37:35,829
+şifrem değişmesi lazım aslında.
+
+654
+00:37:35,829 --> 00:37:37,829
+Değil mi? Mantık yani. Çünkü git üzerinden
+
+655
+00:37:37,829 --> 00:37:39,829
+gidiyor. Üçteki URL üzerinden gidiyor.
+
+656
+00:37:39,829 --> 00:37:41,829
+İlla sayfaya girmeme gerek yok. Benim buraya
+
+657
+00:37:41,829 --> 00:37:43,829
+biraz bir şeyden hiçbir önemi yok aslında.
+
+658
+00:37:43,829 --> 00:37:45,829
+Buraya böyle bir sürü şey yazmamış bir anlam yok. Ben şuraya
+
+659
+00:37:45,829 --> 00:37:47,829
+yazsam da gönderebilirim. Çünkü zaten burasıyla
+
+660
+00:37:47,829 --> 00:37:49,829
+şifremi değiştireceğim. Burasıyla ben
+
+661
+00:37:49,829 --> 00:37:51,829
+başka bir kullanıcı gelip bana bu URL'i
+
+662
+00:37:51,829 --> 00:37:53,829
+şuraya kendi istediği
+
+663
+00:37:53,829 --> 00:37:55,829
+şifrelerle
+
+664
+00:37:55,829 --> 00:37:57,829
+çalıştırtabilirse bana bu URL'i
+
+665
+00:37:57,829 --> 00:37:59,829
+ben şu an gidip bu sisteme
+
+666
+00:37:59,829 --> 00:38:01,829
+kendi şifremi değiştirmiş olacak bana.
+
+667
+00:38:01,829 --> 00:38:03,829
+Bu çok kötü bir şey
+
+668
+00:38:03,829 --> 00:38:05,829
+aslında yani. Ben bir yere yanlışlıkla tıklıyorum ve
+
+669
+00:38:05,829 --> 00:38:07,829
+tıkladığım şey benim
+
+670
+00:38:07,829 --> 00:38:09,829
+girdiğim sitelerden bir tanesini şifremi değiştirmeme
+
+671
+00:38:09,829 --> 00:38:11,829
+neden oluyor. Şimdi buradaki soru şu.
+
+672
+00:38:11,829 --> 00:38:13,829
+Bana bunu tıklatması için beni kandırması gerekiyor.
+
+673
+00:38:13,829 --> 00:38:15,829
+Beni oyalaması veya
+
+674
+00:38:15,829 --> 00:38:17,829
+gözümü boyaması gerekiyor ki ben yanlışlıkla bir şey
+
+675
+00:38:17,829 --> 00:38:19,829
+tıklayayım. Bu da gitsin şu URL'den
+
+676
+00:38:19,829 --> 00:38:21,829
+şu URL'i götürsün.
+
+677
+00:38:21,829 --> 00:38:23,829
+Yani yine beni tıklamam gerekiyor ki benim şifremi
+
+678
+00:38:23,829 --> 00:38:25,829
+başkası değiştirebilsin değil mi? Peki bunu başkası
+
+679
+00:38:25,829 --> 00:38:27,829
+nasıl sağlar benim için? Bu da bir çok
+
+680
+00:38:27,829 --> 00:38:29,829
+farklı yöntemler var. Mesela mail atıyorsunuz. Size
+
+681
+00:38:29,829 --> 00:38:31,829
+mailde roto kazandınız diyor.
+
+682
+00:38:31,829 --> 00:38:33,829
+Size link'e tıklıyorsunuz. Sonra bakıyorsunuz ki
+
+683
+00:38:33,829 --> 00:38:35,829
+Facebook şifreniz çalışmamış. Yani Instagram
+
+684
+00:38:35,829 --> 00:38:37,829
+şifreniz çalınmış. Tabi Instagram artık
+
+685
+00:38:37,829 --> 00:38:39,829
+bu kadar Facebook ve Instagram gibi sosyal
+
+686
+00:38:39,829 --> 00:38:41,829
+medyalar bu kadar basit şeylere
+
+687
+00:38:41,829 --> 00:38:43,829
+kanacak değil ama eskiden bunlar
+
+688
+00:38:43,829 --> 00:38:45,829
+yapıldı. Eskiden bunları yaptılar ki
+
+689
+00:38:45,829 --> 00:38:47,829
+bu tarz saldırılar ortaya çıktı.
+
+690
+00:38:47,829 --> 00:38:49,829
+Bu şekilde
+
+691
+00:38:49,829 --> 00:38:51,829
+arkadaşlar sizin şifrenizi çalıyorlardı.
+
+692
+00:38:51,829 --> 00:38:53,829
+Bunun yapmalarındaki en büyük neden de sizin
+
+693
+00:38:53,829 --> 00:38:55,829
+fişlemeleri, oltaya gelmeniz
+
+694
+00:38:55,829 --> 00:38:57,829
+veya ne bileyim size spam reklamı
+
+695
+00:38:57,829 --> 00:38:59,829
+göndererek bir şeylere tıklamanız sağlamaları.
+
+696
+00:38:59,829 --> 00:39:01,829
+Bunlar da genelde kötü amaçlı
+
+697
+00:39:01,829 --> 00:39:03,829
+saldırı şeklidir ama gördüğünüz gibi Cross-Site
+
+698
+00:39:03,829 --> 00:39:05,829
+Quest Forge'de bize şu yere
+
+699
+00:39:05,829 --> 00:39:07,829
+tıklatmak için başka saldırılara ihtiyaç duyuyor.
+
+700
+00:39:07,829 --> 00:39:09,829
+Tamam mı? İlk saldırımıza bakalım.
+
+701
+00:39:09,829 --> 00:39:11,829
+Aynen az önce bahsettim. Örneğe benzer
+
+702
+00:39:11,829 --> 00:39:13,829
+bir saldırı şekli olacak.
+
+703
+00:39:13,829 --> 00:39:15,829
+Benim hazırladığım, daha önce hazırladığım çok
+
+704
+00:39:15,829 --> 00:39:17,829
+basit, inanılmaz basit şeyler var.
+
+705
+00:39:17,829 --> 00:39:19,829
+Elementler var.
+
+706
+00:39:19,829 --> 00:39:21,829
+Bakın burada sok başı bir tane link görüyorsunuz.
+
+707
+00:39:21,829 --> 00:39:23,829
+Bu bir HTML dosyası. Ben bunu
+
+708
+00:39:23,829 --> 00:39:25,829
+pdf'in içine de saklayabilirdim. Herhangi bir şeyin içine
+
+709
+00:39:25,829 --> 00:39:27,829
+saklayabilirdim.
+
+710
+00:39:27,829 --> 00:39:29,829
+Herhangi bir elementi koyabileceğim. Herhangi bir
+
+711
+00:39:29,829 --> 00:39:31,829
+doküman tipine koyabilirdim. Şimdi elementin içine
+
+712
+00:39:31,829 --> 00:39:33,829
+ispek yapıyorum, bakıyorum. Aslında YouWonderWhatWear
+
+713
+00:39:33,829 --> 00:39:35,829
+yazıyor ama beni götürdüğü şey
+
+714
+00:39:35,829 --> 00:39:37,829
+ispe bilindik bir sitenin
+
+715
+00:39:37,829 --> 00:39:39,829
+şifre değiştirme alanı ve
+
+716
+00:39:39,829 --> 00:39:41,829
+şifre değiştirme alanına da gönderdiğim şeyler de
+
+717
+00:39:41,829 --> 00:39:43,829
+get üzerinden giden şifre değişikliği parametreleri.
+
+718
+00:39:43,829 --> 00:39:45,829
+Dolayısıyla ben buna tıkladığımda aslında gideceğim
+
+719
+00:39:45,829 --> 00:39:47,829
+şifremi değiştirmiş olacağım. Bu site için.
+
+720
+00:39:49,829 --> 00:39:53,429
+Şimdi yapalım. Ha yapalım arkadaşlar
+
+721
+00:39:53,429 --> 00:39:59,530
+bunu. Kapatıyorum ispek
+
+722
+00:39:59,530 --> 00:40:01,530
+şuna. Buraya tıkladığımda
+
+723
+00:40:01,530 --> 00:40:09,130
+gördüğünüz gibi benim
+
+724
+00:40:09,130 --> 00:40:11,130
+şifreyi yönlendirdim ve şifremi değiştirdi.
+
+725
+00:40:11,130 --> 00:40:13,130
+Ve buraya da koyacağı
+
+726
+00:40:13,130 --> 00:40:15,130
+XSS'de koyacağı sayfa açıldığında
+
+727
+00:40:15,130 --> 00:40:17,130
+kapat şeklinde ufacık bir
+
+728
+00:40:17,130 --> 00:40:19,130
+XSS'le de bu sayfayı bile görmeden
+
+729
+00:40:19,130 --> 00:40:21,130
+şifremin değiştiğini değiştirebilir kişi.
+
+730
+00:40:21,130 --> 00:40:23,130
+Böyle çok tehlikeli
+
+731
+00:40:23,130 --> 00:40:25,130
+bir şey aslında.
+
+732
+00:40:25,130 --> 00:40:27,130
+Örneğin şu PasswordChanged alanını
+
+733
+00:40:27,130 --> 00:40:29,130
+XSS'e
+
+734
+00:40:29,130 --> 00:40:31,130
+açık bir saldırı alanı olarak düşünün.
+
+735
+00:40:31,130 --> 00:40:33,130
+Ve ben buraya sayfa yüklendiğinde
+
+736
+00:40:33,130 --> 00:40:35,130
+yani bir DOM elementiyle sayfa yüklendiğinde
+
+737
+00:40:35,130 --> 00:40:37,130
+kapanma emrini veren bir javascript koydum.
+
+738
+00:40:37,130 --> 00:40:39,130
+Javascript ile bunu da yapabilirsin. Sayfa
+
+739
+00:40:39,130 --> 00:40:41,130
+yüklendiğinde sayfayı kapattırabilirsiniz.
+
+740
+00:40:41,130 --> 00:40:43,130
+Yani gelecek, render edilecek, edilecek, edilecek.
+
+741
+00:40:43,130 --> 00:40:45,130
+Buradaki element render olduğunda burada bir script olacak ve
+
+742
+00:40:45,130 --> 00:40:47,130
+script mümkün sayfayı kapatacak.
+
+743
+00:40:47,130 --> 00:40:49,130
+Yani kullanıcı tıkladığı anda hem şifresi değişmiş
+
+744
+00:40:49,130 --> 00:40:51,130
+olacak hem de bunun farkında bile olmayacak. Böyle bir şey
+
+745
+00:40:51,130 --> 00:40:53,130
+mümkün.
+
+746
+00:40:53,130 --> 00:40:55,130
+Dolayısıyla cross-site request
+
+747
+00:40:55,130 --> 00:40:57,130
+forger bu şekilde sağlanmış oluyor.
+
+748
+00:40:57,130 --> 00:40:59,130
+Peki farklı seviyelerde
+
+749
+00:40:59,130 --> 00:41:01,130
+nasıl yapılıyor bu saldırı? Şimdi onları görelim.
+
+750
+00:41:01,130 --> 00:41:03,130
+Şimdi get yerine
+
+751
+00:41:03,130 --> 00:41:05,130
+get yapmıştık zaten.
+
+752
+00:41:05,130 --> 00:41:07,130
+Burada farklı bir yaklaşım var. Burada sadece
+
+753
+00:41:07,130 --> 00:41:09,130
+get yapılıyor ama
+
+754
+00:41:09,130 --> 00:41:11,130
+ben linki nereden tıkladım?
+
+755
+00:41:11,130 --> 00:41:13,130
+Kendi sayfamdan tıkladım. Adama bir element
+
+756
+00:41:13,130 --> 00:41:15,130
+verdim. Elementten tıkladım ve
+
+757
+00:41:15,130 --> 00:41:17,130
+sunucuya gitti. Sunucuda da bir
+
+758
+00:41:17,130 --> 00:41:19,130
+cifre değiştirdi. Peki ya
+
+759
+00:41:19,130 --> 00:41:21,130
+sunucuda ben
+
+760
+00:41:21,130 --> 00:41:23,130
+gelen isteğin nereden geldiğini
+
+761
+00:41:23,130 --> 00:41:25,130
+kontrol ediyorsam?
+
+762
+00:41:25,130 --> 00:41:27,130
+Şu anki mediumdaki örnekteki gibi yani.
+
+763
+00:41:27,130 --> 00:41:29,130
+Bakın burada tam olarak o yapılıyor.
+
+764
+00:41:29,130 --> 00:41:31,130
+Get element ile bir istek geliyor.
+
+765
+00:41:31,130 --> 00:41:33,130
+Ve burada bir kontrol var. Bu kontrol
+
+766
+00:41:33,130 --> 00:41:35,130
+bir seviye savunma sağlıyor. Nasıl
+
+767
+00:41:35,130 --> 00:41:37,130
+bir savunma sağlıyor? Htp referer
+
+768
+00:41:37,130 --> 00:41:39,130
+yani bu isteğe eşlik
+
+769
+00:41:39,130 --> 00:41:41,130
+eden htp kaynağı kim?
+
+770
+00:41:41,130 --> 00:41:43,130
+Sunucu kaynağı kim? Onları
+
+771
+00:41:43,130 --> 00:41:45,130
+kontrol ediyor. İkisi match olmuş mu diye
+
+772
+00:41:45,130 --> 00:41:47,130
+bakıyor. Eğer match ise şifreli
+
+773
+00:41:47,130 --> 00:41:49,130
+ve şifre
+
+774
+00:41:49,130 --> 00:41:51,130
+değişikliğini bloğuna geçmiş oluyor.
+
+775
+00:41:51,130 --> 00:41:53,130
+İzin veriyor yani.
+
+776
+00:41:53,130 --> 00:41:55,130
+O zaman ben burada mesela
+
+777
+00:41:55,130 --> 00:41:57,130
+şu anda 12345
+
+778
+00:41:57,130 --> 00:41:59,130
+yazdım. Şurayı
+
+779
+00:41:59,130 --> 00:42:05,190
+değiştiriyorum. Aynı sayfa olduğunu
+
+780
+00:42:05,190 --> 00:42:07,190
+göreceğiz zaten. Tam aynı sayfa geliyor
+
+781
+00:42:07,190 --> 00:42:09,190
+önümüze. Burada bir şifre değişikliği
+
+782
+00:42:09,190 --> 00:42:11,190
+yaptım. Bir daha şifre
+
+783
+00:42:11,190 --> 00:42:15,050
+değişikliği yaptım. Change dedim.
+
+784
+00:42:15,050 --> 00:42:17,050
+Gördüm. Şifre değişikliği dedi.
+
+785
+00:42:17,050 --> 00:42:19,050
+Peki
+
+786
+00:42:19,050 --> 00:42:24,219
+kapattık mı yanlışlıkla önce?
+
+787
+00:42:24,219 --> 00:42:35,019
+Şöyle bir şey yapsak.
+
+788
+00:42:35,019 --> 00:42:37,019
+Kaç dakika? Sunucu şeye takılır da birazcık.
+
+789
+00:42:37,019 --> 00:42:39,019
+VM olduğu için
+
+790
+00:42:39,019 --> 00:42:43,929
+yabancı çalışıyor. Şöyle yapalım.
+
+791
+00:42:43,929 --> 00:42:51,019
+Şöyle bir şey yapalım o zaman.
+
+792
+00:42:51,019 --> 00:42:53,019
+Geçen yaptığımız gibi
+
+793
+00:42:53,019 --> 00:42:55,019
+hatırlarsınız.
+
+794
+00:42:55,019 --> 00:42:57,019
+İstekleri kontrol edebileceğiniz bir
+
+795
+00:42:57,019 --> 00:42:59,019
+tool'umuz vardı. Burp Suite.
+
+796
+00:42:59,019 --> 00:43:01,019
+Proxy tool'umuz vardı. Onu bir daha aktif edelim.
+
+797
+00:43:01,019 --> 00:43:03,019
+Bekaya biraz daha yakından bakalım.
+
+798
+00:43:03,019 --> 00:43:08,980
+Ayarlar.
+
+799
+00:43:08,980 --> 00:43:12,360
+Network Settings'den.
+
+800
+00:43:12,360 --> 00:43:14,360
+Bu benim Burp Suite'ime giden proxy. Bunu
+
+801
+00:43:14,360 --> 00:43:16,360
+aktif ediyorum.
+
+802
+00:43:16,360 --> 00:43:19,739
+Şimdi sayfamız
+
+803
+00:43:19,739 --> 00:43:23,269
+burasıydı. Burp Suite'mizi
+
+804
+00:43:23,269 --> 00:43:29,340
+açıyorum. Tekrar samit
+
+805
+00:43:29,340 --> 00:43:31,340
+edelim. Tekrar açalım.
+
+806
+00:43:31,340 --> 00:43:40,570
+Şimdi ne olduğunu bir bakalım.
+
+807
+00:43:40,570 --> 00:43:42,570
+Intercept açıyorum. Change diyorum.
+
+808
+00:43:42,570 --> 00:43:47,449
+Bakın arkadaşlar gördünüz mü?
+
+809
+00:43:47,449 --> 00:43:49,449
+Bu benim HTML header
+
+810
+00:43:49,449 --> 00:43:51,449
+dosyam. Burada birkaç tane
+
+811
+00:43:51,449 --> 00:43:53,449
+element var. Localhost, işte vesaire vesaire.
+
+812
+00:43:53,449 --> 00:43:55,449
+Burada bir Referrer kelimesi görüyorsunuz.
+
+813
+00:43:55,449 --> 00:43:57,449
+Bu Referrer şu an benim
+
+814
+00:43:57,449 --> 00:43:59,449
+siteyi hangi sayfadan, hangi
+
+815
+00:43:59,449 --> 00:44:01,449
+sayfada yaptığımı gösteriyor. Bakın. Gördüğünüz gibi
+
+816
+00:44:01,449 --> 00:44:03,449
+herhalde ikisinin aynısı aslında değil mi?
+
+817
+00:44:03,449 --> 00:44:05,449
+Burası ile aynı. Gördünüz. İşte bu Referrer
+
+818
+00:44:05,449 --> 00:44:07,449
+kontrol ediyor. Aynı kaynaklardan mı geliyor diye.
+
+819
+00:44:07,449 --> 00:44:09,449
+Dolayısıyla sizi fişleyen bir kişi
+
+820
+00:44:09,449 --> 00:44:11,449
+bize mail yolundan veya başka bir site
+
+821
+00:44:11,449 --> 00:44:13,449
+üzerinden açtığı zaman o sitenin kontrolü
+
+822
+00:44:13,449 --> 00:44:15,449
+yapılacak. Bu istek şu an mevcut olan
+
+823
+00:44:15,449 --> 00:44:17,449
+domainden mi geliyor, başka domainden mi geliyor onu
+
+824
+00:44:17,449 --> 00:44:19,449
+kontrol ediyor. Burada bir cookie'lerimiz var.
+
+825
+00:44:19,449 --> 00:44:21,449
+Bunlarda bir şeyimiz yok. Bunlar kontrol edilmiyor şu an
+
+826
+00:44:21,449 --> 00:44:23,449
+script'imizde. Bunları kontrol ediyor ve
+
+827
+00:44:23,449 --> 00:44:25,449
+bu varsa eğer, burada bu varsa izin
+
+828
+00:44:25,449 --> 00:44:27,449
+verecek challenge'e yoksa izin vermeyecek. Medium'se
+
+829
+00:44:27,449 --> 00:44:29,449
+öylesindeki soğuma şekli bu. Gayet
+
+830
+00:44:29,449 --> 00:44:32,820
+mantıklı. Şimdi devam ediyorum.
+
+831
+00:44:32,820 --> 00:44:34,820
+Intercept'i kaldırıyorum. Şifrenin değişimini göreceğiz.
+
+832
+00:44:36,820 --> 00:44:38,820
+Peki. Bir de buradan deneyelim.
+
+833
+00:44:38,820 --> 00:44:44,570
+Açıyorum. Bunu forwardlayalım da.
+
+834
+00:44:44,570 --> 00:44:46,570
+Beklesin.
+
+835
+00:44:46,570 --> 00:44:50,099
+Tamam. Bastım.
+
+836
+00:44:52,099 --> 00:44:54,099
+Bakın bu sefer yine aynı yere giden bir istek var.
+
+837
+00:44:54,099 --> 00:44:56,099
+Yine session key filan geliyor. Yine bir
+
+838
+00:44:56,099 --> 00:44:58,099
+istek var burada. Aynı linke giden. Get isteği var.
+
+839
+00:44:58,099 --> 00:45:00,099
+Değil mi? Çünkü URL'e
+
+840
+00:45:00,099 --> 00:45:02,099
+gönderiyorum. Ama bakın
+
+841
+00:45:02,099 --> 00:45:04,099
+stp referral yok. Çünkü
+
+842
+00:45:04,099 --> 00:45:06,099
+bu sitede değiliz artık. Bu siteden
+
+843
+00:45:06,099 --> 00:45:08,099
+gelmiyor o istek. İşte medium'da yapılan
+
+844
+00:45:08,099 --> 00:45:10,099
+soğuma tam anlamıyla bu işe yarıyor.
+
+845
+00:45:10,099 --> 00:45:12,099
+Bunu da böyle worksheet'ten görebiliyorsunuz.
+
+846
+00:45:12,099 --> 00:45:17,719
+Gördüğünüz gibi drop etti isteği.
+
+847
+00:45:17,719 --> 00:45:22,440
+Bakın ne dedi?
+
+848
+00:45:22,440 --> 00:45:24,440
+Istek doğru gibi gözükmüyor
+
+849
+00:45:24,440 --> 00:45:26,440
+dedi. Ondan hemen şuradan
+
+850
+00:45:26,440 --> 00:45:28,440
+o mesajın aynısı olduğunu görürsünüz.
+
+851
+00:45:28,440 --> 00:45:35,880
+Bakın arkadaşlar. Gördünüz mü?
+
+852
+00:45:35,880 --> 00:45:37,880
+Buraya düştü. Tamam. Bu medium bu şekilde.
+
+853
+00:45:39,880 --> 00:45:44,409
+Şimdi high seviyesine geçelim.
+
+854
+00:45:44,409 --> 00:45:46,409
+Burada aslında medium'da yaptığım şey, anlattığım
+
+855
+00:45:46,409 --> 00:45:48,409
+hikayenin aynısı var. Şimdi high'da
+
+856
+00:45:48,409 --> 00:45:50,409
+bir seviye daha
+
+857
+00:45:50,409 --> 00:45:52,409
+savunma var. Az önce hatırlarsanız
+
+858
+00:45:52,409 --> 00:45:54,409
+bizim isteğimiz içerisinde bir de
+
+859
+00:45:54,409 --> 00:45:56,409
+cookie aynısı geliyordu. Onu kontrol edelim demişler.
+
+860
+00:45:56,409 --> 00:45:58,409
+High'ı açalım hemen.
+
+861
+00:45:58,409 --> 00:46:00,409
+High'da da şey kodları da oradan direkt
+
+862
+00:46:00,409 --> 00:46:02,409
+uygulama üzerine göstereyim size.
+
+863
+00:46:02,409 --> 00:46:08,219
+Haya geçtik.
+
+864
+00:46:08,219 --> 00:46:15,619
+Şimdi burada koda bakalım.
+
+865
+00:46:15,619 --> 00:46:17,619
+Bakın arkadaşlar high'da
+
+866
+00:46:17,619 --> 00:46:21,480
+yine get ile gidiyor. Bir token kontrolü
+
+867
+00:46:21,480 --> 00:46:23,480
+var. Bu token arkadaşlar session id'si
+
+868
+00:46:23,480 --> 00:46:25,480
+aslında.
+
+869
+00:46:25,480 --> 00:46:27,480
+Bu browser tarafında tutulan
+
+870
+00:46:27,480 --> 00:46:29,480
+şehre adı ismi verilen
+
+871
+00:46:29,480 --> 00:46:31,480
+lokal objelerin
+
+872
+00:46:31,480 --> 00:46:33,480
+içerisine tutulan bir
+
+873
+00:46:33,480 --> 00:46:35,480
+element. Bir değişikliğini
+
+874
+00:46:35,480 --> 00:46:37,480
+bir propertisi gibi veya attribute'i gibi.
+
+875
+00:46:37,480 --> 00:46:39,480
+İsmi user token'mış.
+
+876
+00:46:39,480 --> 00:46:41,480
+Bu user token'la session token
+
+877
+00:46:41,480 --> 00:46:43,480
+işte kontrol ediliyor.
+
+878
+00:46:43,480 --> 00:46:45,480
+Eğer kontrolden geçerse
+
+879
+00:46:45,480 --> 00:46:47,480
+şifrelerde
+
+880
+00:46:47,480 --> 00:46:49,480
+match olursa bir database'deki şeyi
+
+881
+00:46:49,480 --> 00:46:51,480
+iptal ediyor. Eğer geçmezse
+
+882
+00:46:51,480 --> 00:46:53,480
+password'lar match olmadığı
+
+883
+00:46:53,480 --> 00:46:55,480
+yani aslında sadece sunucuna
+
+884
+00:46:55,480 --> 00:46:57,480
+önceki savunmada
+
+885
+00:46:57,480 --> 00:46:59,480
+kaynağa bakılırken bu sefer
+
+886
+00:46:59,480 --> 00:47:01,480
+kaynağın içine saklanmış gizli bir
+
+887
+00:47:01,480 --> 00:47:03,480
+token'ın
+
+888
+00:47:03,480 --> 00:47:05,480
+varlığına ihtiyacı duyuyor. Bu bir seviye
+
+889
+00:47:05,480 --> 00:47:07,480
+daha yüksek koruma tabii ki.
+
+890
+00:47:07,480 --> 00:47:09,480
+Kaynaktan daha fazlası var çünkü.
+
+891
+00:47:09,480 --> 00:47:11,480
+Ve bittikten sonra da yeni
+
+892
+00:47:11,480 --> 00:47:13,480
+session token ki oluşturuyor farkedersiniz. Çünkü aynı
+
+893
+00:47:13,480 --> 00:47:15,480
+session token ki'yi kullanmıyorsunuz.
+
+894
+00:47:15,480 --> 00:47:17,480
+Her seferinde farklı bir şey üretiyorsunuz ki
+
+895
+00:47:17,480 --> 00:47:19,480
+randomization'la bir seviye daha fazlası
+
+896
+00:47:19,480 --> 00:47:21,480
+olma sağlayın. Bunu çok
+
+897
+00:47:21,480 --> 00:47:23,480
+göreceksiniz eğer şey kullanıyorsunuz. Çünkü
+
+898
+00:47:23,480 --> 00:47:25,480
+güncel savunma yöntemi bu.
+
+899
+00:47:25,480 --> 00:47:27,480
+Yapması gereken tek şey
+
+900
+00:47:27,480 --> 00:47:29,480
+token'larınızı kaybetmemek. Başka
+
+901
+00:47:29,480 --> 00:47:31,480
+kullanıcılara. Onları kaybetmemek
+
+902
+00:47:31,480 --> 00:47:33,480
+için de XSS'lere dikkat edeceksiniz.
+
+903
+00:47:33,480 --> 00:47:35,480
+Phishing'lere dikkat edeceksiniz. Değil mi?
+
+904
+00:47:35,480 --> 00:47:37,480
+Bu gelecek
+
+905
+00:47:37,480 --> 00:47:39,480
+son seviye korunması aslında.
+
+906
+00:47:39,480 --> 00:47:41,480
+Peki bu nasıl aşılabilir?
+
+907
+00:47:41,480 --> 00:47:43,480
+Ona bakalım.
+
+908
+00:47:43,480 --> 00:47:46,889
+Yani kendi başına
+
+909
+00:47:46,889 --> 00:47:48,889
+bu ne ya?
+
+910
+00:47:48,889 --> 00:47:50,889
+Yanlışlıkla tıkladım.
+
+911
+00:47:50,889 --> 00:47:56,219
+Hemen, pardon yanlışlıkla açtım.
+
+912
+00:47:56,219 --> 00:47:59,559
+Evet, hemen kontrol edelim.
+
+913
+00:47:59,559 --> 00:48:01,559
+Bakın burada
+
+914
+00:48:01,559 --> 00:48:03,559
+bir formumuz var.
+
+915
+00:48:03,559 --> 00:48:05,559
+Bu form şu.
+
+916
+00:48:05,559 --> 00:48:07,559
+Haydez galiba
+
+917
+00:48:07,559 --> 00:48:09,559
+şu anda. Onu bir kontrol edelim tekrar.
+
+918
+00:48:09,559 --> 00:48:11,559
+Evet.
+
+919
+00:48:11,559 --> 00:48:13,559
+Hemen dönelim tekrar.
+
+920
+00:48:13,559 --> 00:48:18,250
+Şu sayfaya bir koduna tekrar bakalım.
+
+921
+00:48:18,250 --> 00:48:20,250
+Kodu buydu. Şimdi bir de elementleri
+
+922
+00:48:20,250 --> 00:48:22,250
+kontrol edelim. Elementler içerisinde ne var?
+
+923
+00:48:22,250 --> 00:48:24,250
+Token key nerede saklandı, nasıl saklandı
+
+924
+00:48:24,250 --> 00:48:26,250
+göreceksiniz şimdi.
+
+925
+00:48:26,250 --> 00:48:28,250
+Token key aslında browser'da
+
+926
+00:48:28,250 --> 00:48:30,250
+tutuluyor.
+
+927
+00:48:30,250 --> 00:48:32,250
+Browser'da ama nasıl tutuluyor bakın. Burada bir input hidden alanı
+
+928
+00:48:32,250 --> 00:48:34,250
+var. Şimdi ekranda birkaç tane input alanı var. Bir tanesi
+
+929
+00:48:34,250 --> 00:48:36,250
+password, bir tanesi confirm.
+
+930
+00:48:36,250 --> 00:48:38,250
+Bir tanesi submit butonu.
+
+931
+00:48:38,250 --> 00:48:40,250
+O da change oluyor. Bakın values change olan
+
+932
+00:48:40,250 --> 00:48:42,250
+submit butonu. Siz buna
+
+933
+00:48:42,250 --> 00:48:44,250
+şu submit type tipi, submit olan bir
+
+934
+00:48:44,250 --> 00:48:46,250
+form elementine bastığınızda bu
+
+935
+00:48:46,250 --> 00:48:48,250
+formun içindekisinde bütün değişkenler
+
+936
+00:48:48,250 --> 00:48:50,250
+Şuradaki method get yazıyor ya
+
+937
+00:48:50,250 --> 00:48:52,250
+get metoduyla
+
+938
+00:48:52,250 --> 00:48:54,250
+sunucuya gönderiliyor. Tamam mı?
+
+939
+00:48:54,250 --> 00:48:56,250
+Bunun içerisinde bir tane hidden element
+
+940
+00:48:56,250 --> 00:48:58,250
+var. Bunu sadece şu an ben görebiliyorum.
+
+941
+00:48:58,250 --> 00:49:00,250
+Başka kullanıcılar şu token key'i göremiyor.
+
+942
+00:49:00,250 --> 00:49:02,250
+Sadece benim açtığım browser'dan
+
+943
+00:49:02,250 --> 00:49:04,250
+ben kendim görebiliyorum. Ama saldırgan tabii ki
+
+944
+00:49:04,250 --> 00:49:06,250
+ben kendime saldırmayacağımı göre başkası
+
+945
+00:49:06,250 --> 00:49:08,250
+olacak. Başkası buradaki
+
+946
+00:49:08,250 --> 00:49:10,250
+benim yazdığım, ekranda gördüğüm hidden
+
+947
+00:49:10,250 --> 00:49:12,250
+element yazdığı value'yu nasıl
+
+948
+00:49:12,250 --> 00:49:14,250
+görebilir? Fikir unutmak isteyen var mı?
+
+949
+00:49:14,250 --> 00:49:16,250
+Çünkü bunu bilmesi gerekiyor bana
+
+950
+00:49:16,250 --> 00:49:18,250
+saldırması için.
+
+951
+00:49:18,250 --> 00:49:20,250
+Chatten sorumu
+
+952
+00:49:20,250 --> 00:49:22,250
+anladıysanız
+
+953
+00:49:22,250 --> 00:49:24,250
+man in the middle
+
+954
+00:49:24,250 --> 00:49:26,250
+Nasıl olacak man in the middle? Bana bir saldırı yöntemi
+
+955
+00:49:26,250 --> 00:49:28,250
+söyleyeyim. Hani bana bir senaryo çizin. Öyle
+
+956
+00:49:28,250 --> 00:49:30,250
+çok kısa cevaplar değil de. Mesela şöyle şöyle
+
+957
+00:49:30,250 --> 00:49:32,250
+olursa, böyle böyle olursa
+
+958
+00:49:32,250 --> 00:49:34,250
+saldırgan şu durumda şunu yaparsa
+
+959
+00:49:34,250 --> 00:49:36,250
+bu key'i alabilir gibi.
+
+960
+00:49:36,250 --> 00:49:39,849
+Çok uzak etmenize gerek yok aslında.
+
+961
+00:49:39,849 --> 00:49:43,610
+Art spoofing
+
+962
+00:49:43,610 --> 00:49:45,610
+tamam yapılabilir ama aynı network'ta olması
+
+963
+00:49:45,610 --> 00:49:49,269
+gerekiyor. Uzakta ise nasıl yapacak?
+
+964
+00:49:49,269 --> 00:49:51,269
+Çok uzak mı networkta ise nasıl yapacak?
+
+965
+00:49:51,269 --> 00:49:56,059
+Çok daha basit düşünün ya.
+
+966
+00:49:56,059 --> 00:49:58,059
+Sitenin birazdan açıklarının da daha fazla
+
+967
+00:49:58,059 --> 00:50:00,059
+olduğunu düşünün. Mesela XSS'de yapılabilir mi? Örnek
+
+968
+00:50:00,059 --> 00:50:02,059
+veriyorum.
+
+969
+00:50:02,059 --> 00:50:04,059
+XSS'de token key'i çalabilir misiniz?
+
+970
+00:50:04,059 --> 00:50:06,059
+Başkasının token key'ini. Görebiliyor da
+
+971
+00:50:06,059 --> 00:50:11,380
+görüntüleyebilir misiniz? Mesela ben
+
+972
+00:50:11,380 --> 00:50:13,380
+bugün aslında yaptım.
+
+973
+00:50:13,380 --> 00:50:15,380
+Ben bir yerde session id
+
+974
+00:50:15,380 --> 00:50:17,380
+ekrana yazdırdım.
+
+975
+00:50:17,380 --> 00:50:19,380
+Session id'imde ve ekrana yazıldı.
+
+976
+00:50:19,380 --> 00:50:21,380
+O sayfaya giren herkes görebilirdi onu.
+
+977
+00:50:21,380 --> 00:50:23,380
+Mesajlarımı yazdığımda.
+
+978
+00:50:23,380 --> 00:50:26,730
+XSS'in stored
+
+979
+00:50:26,730 --> 00:50:28,730
+saldırısıyla bunu yapabilirsiniz arkadaşlar.
+
+980
+00:50:28,730 --> 00:50:30,730
+Değil mi? Uzakta ise
+
+981
+00:50:30,730 --> 00:50:32,730
+document cookie vesaire de olabilir değil mi?
+
+982
+00:50:32,730 --> 00:50:34,730
+Yani bir x kullanısı
+
+983
+00:50:34,730 --> 00:50:36,730
+saldırgan kullanısı x olsun.
+
+984
+00:50:36,730 --> 00:50:38,730
+Ben de kurban olayım, victim ben olayım.
+
+985
+00:50:38,730 --> 00:50:40,730
+X kullanısı gidip benim az önce
+
+986
+00:50:40,730 --> 00:50:42,730
+görüntülediğim o mesaj alanına bir script
+
+987
+00:50:42,730 --> 00:50:44,730
+yazdı ve cookie'yi yazdıran bir
+
+988
+00:50:44,730 --> 00:50:46,730
+XSS gömdü oraya. XSS'de
+
+989
+00:50:46,730 --> 00:50:48,730
+stored bir xss olsun. Database'e saklanıyor.
+
+990
+00:50:48,730 --> 00:50:50,730
+Ben de bir gün geldim. Ben
+
+991
+00:50:50,730 --> 00:50:52,730
+SQL siteye girdim.
+
+992
+00:50:52,730 --> 00:50:54,730
+Oraya girince ne olacak? Benim
+
+993
+00:50:54,730 --> 00:50:56,730
+XSS'im pop olacak ve kullanıcım buna erişebilir.
+
+994
+00:50:56,730 --> 00:50:58,730
+Çünkü
+
+995
+00:50:58,730 --> 00:51:00,730
+görüntüleyebiliyor yani.
+
+996
+00:51:00,730 --> 00:51:02,730
+O sayfada çalışan cookie'leri görüntüleyebilir.
+
+997
+00:51:02,730 --> 00:51:04,730
+Bir yere saklayabilir.
+
+998
+00:51:04,730 --> 00:51:06,730
+Bir Java SQL çalıştırdığı sürece
+
+999
+00:51:06,730 --> 00:51:08,730
+başkasının cookie'lerindeki şeyleri
+
+1000
+00:51:08,730 --> 00:51:10,730
+her şeyi ekrana yazdırabilir.
+
+1001
+00:51:10,730 --> 00:51:12,730
+Dolayısıyla
+
+1002
+00:51:12,730 --> 00:51:14,730
+kaydettirebilir bir yere. Dolayısıyla
+
+1003
+00:51:14,730 --> 00:51:16,730
+böyle bir şey mümkün. Zaten biliyorsunuz ki
+
+1004
+00:51:16,730 --> 00:51:18,730
+artık
+
+1005
+00:51:18,730 --> 00:51:20,730
+şey çok kolay. Yani uzun zamandır böyle de
+
+1006
+00:51:20,730 --> 00:51:22,730
+dinamik javascript
+
+1007
+00:51:22,730 --> 00:51:24,730
+fonksiyonları yazabiliyorsunuz. Elementleri
+
+1008
+00:51:24,730 --> 00:51:26,730
+eventlere ekleyebiliyorsunuz.
+
+1009
+00:51:26,730 --> 00:51:28,730
+O yüzden çok fazla saldırı şekli mevcut.
+
+1010
+00:51:28,730 --> 00:51:30,730
+XSS yapabileceğiniz çok fazla şey var.
+
+1011
+00:51:30,730 --> 00:51:32,730
+Bunlardan iyi sakınılması
+
+1012
+00:51:32,730 --> 00:51:34,730
+sakınılması gerekiyor. Yoksa sizin
+
+1013
+00:51:34,730 --> 00:51:36,730
+sadece client tarafında değil
+
+1014
+00:51:36,730 --> 00:51:38,730
+böyle gördüğünüz gibi
+
+1015
+00:51:38,730 --> 00:51:40,730
+cross-site-discovery forgery'e
+
+1016
+00:51:40,730 --> 00:51:42,730
+imkan sağlayan token'larınızı da
+
+1017
+00:51:42,730 --> 00:51:44,730
+kaybedebiliyorsunuz.
+
+1018
+00:51:44,730 --> 00:51:46,730
+Evet bunun arkadaşlar phishing veya
+
+1019
+00:51:46,730 --> 00:51:48,730
+şeyle çalındığını düşünün, şu token'ın.
+
+1020
+00:51:48,730 --> 00:51:50,730
+Çalınması durumunda
+
+1021
+00:51:50,730 --> 00:51:52,730
+csrf high'de
+
+1022
+00:51:52,730 --> 00:51:54,730
+gerçekleştirebiliyorsunuz. Yapmanız gereken tek şey
+
+1023
+00:51:54,730 --> 00:51:56,730
+şuraya ihtiyaç duyuyorsunuz. Bu da xss
+
+1024
+00:51:56,730 --> 00:51:58,730
+startup ile gerçekleşebiliyor.
+
+1025
+00:51:58,730 --> 00:52:00,730
+Tamam arkadaşlar. High'da da yapılan
+
+1026
+00:52:00,730 --> 00:52:02,730
+temel saldırı stratejisi bu.
+
+1027
+00:52:02,730 --> 00:52:04,730
+xss ile token'ı ele geçirmek
+
+1028
+00:52:04,730 --> 00:52:06,730
+ve o şekilde saldırmak.
+
+1029
+00:52:08,730 --> 00:52:10,730
+Bu token'ı ele geçirdikten sonra zaten
+
+1030
+00:52:10,730 --> 00:52:12,730
+gerçekleşen işlem diğerleriyle tamamen aynı.
+
+1031
+00:52:12,730 --> 00:52:14,730
+Sadece token'ı ekliyorsunuz form içerisine ve gönderiyorsunuz.
+
+1032
+00:52:14,730 --> 00:52:16,730
+Bunu block'la da yapabilirsiniz.
+
+1033
+00:52:16,730 --> 00:52:18,730
+Yani token'ı element gibi eklemeyip
+
+1034
+00:52:18,730 --> 00:52:20,730
+block'la proksilere
+
+1035
+00:52:20,730 --> 00:52:22,730
+girip
+
+1036
+00:52:22,730 --> 00:52:24,730
+gerekli input alanlarını elle değiştirip
+
+1037
+00:52:24,730 --> 00:52:26,730
+token'ı yerleştirip
+
+1038
+00:52:26,730 --> 00:52:28,730
+isteği ford edebilirsiniz. O şekilde de
+
+1039
+00:52:28,730 --> 00:52:30,730
+saldırabilirsiniz. Bu tamamen tercih
+
+1040
+00:52:30,730 --> 00:52:32,730
+size kalıyor.
+
+1041
+00:52:32,730 --> 00:52:34,730
+csrf high ile ilgili yapılan saldırı şekli bu.
+
+1042
+00:52:36,730 --> 00:52:38,730
+Şimdi sorularınızla sorularınızı alayım arkadaşlar.
+
+1043
+00:52:38,730 --> 00:52:40,730
+xss ile ilgili.
+
+1044
+00:52:40,730 --> 00:52:47,659
+Sorusu olan var mı?
+
+1045
+00:52:47,659 --> 00:52:49,659
+Biraz hızlı anlattım çünkü çok fazla içerik vardı.
+
+1046
+00:52:49,659 --> 00:52:51,659
+Bazı yerlerde
+
+1047
+00:52:51,659 --> 00:52:53,659
+böyle anlamamış olabilirsiniz.
+
+1048
+00:52:53,659 --> 00:52:59,050
+Sormaktan çekinmeyin. Tekrar tekrar anlatırım.
+
+1049
+00:52:59,050 --> 00:53:01,050
+Bu arada bu şeyi kurdunuz mu?
+
+1050
+00:53:01,050 --> 00:53:04,519
+Sistemi kendiniz kurdunuz mu hiç? Kurcaladınız mı?
+
+1051
+00:53:04,519 --> 00:53:06,519
+Ha mı uğraşan?
+
+1052
+00:53:06,519 --> 00:53:08,519
+Siber güvenlikle uğraşan aranızda.
+
+1053
+00:53:08,519 --> 00:53:13,139
+Yeni başlayan.
+
+1054
+00:53:13,139 --> 00:53:22,599
+Merak edip bakan oldu mu?
+
+1055
+00:53:22,599 --> 00:53:24,599
+Olur. Olur da bu şey biraz daha
+
+1056
+00:53:24,599 --> 00:53:26,599
+primitif yani. Yeni başlayanlar için güzel bir şey aslında.
+
+1057
+00:53:26,599 --> 00:53:32,440
+Fark farklı bir şey var.
+
+1058
+00:53:32,440 --> 00:53:34,440
+Bu arada kaç kişiyiz?
+
+1059
+00:53:34,440 --> 00:53:36,440
+118 kişiyiz. Sadece 2 kişi yazıyor chat'e.
+
+1060
+00:53:36,440 --> 00:53:38,440
+Veya konuşuyor.
+
+1061
+00:53:38,440 --> 00:53:40,440
+Konuşmak hızlı mı yoksa?
+
+1062
+00:53:40,440 --> 00:53:51,019
+Tamam doğumu tekrar edelim hızlıca.
+
+1063
+00:53:51,019 --> 00:53:53,019
+Ya doğum aslında çok
+
+1064
+00:53:53,019 --> 00:53:55,019
+üzerine durmak istediğim şey değildi. O yüzden hızlıca geçtim.
+
+1065
+00:53:55,019 --> 00:53:57,019
+Ama doğumda olan şey şu.
+
+1066
+00:53:57,019 --> 00:53:59,019
+Şimdi bakın.
+
+1067
+00:53:59,019 --> 00:54:01,019
+Şurayı aynen yapalım istiyorsanız.
+
+1068
+00:54:03,019 --> 00:54:06,360
+Gelelim.
+
+1069
+00:54:06,360 --> 00:54:08,360
+Böyle bir sayfamız var arkadaşlar.
+
+1070
+00:54:08,360 --> 00:54:15,320
+Böyle bir tane comma box'ımız var.
+
+1071
+00:54:15,320 --> 00:54:17,320
+Ben burayı değiştirdikçe bakın.
+
+1072
+00:54:17,320 --> 00:54:19,320
+Buraya bir şey geliyor görüyor musunuz? Default French diyor.
+
+1073
+00:54:19,320 --> 00:54:21,320
+Bütün şeyi
+
+1074
+00:54:21,320 --> 00:54:23,320
+sayfadaki bütün dili değiştiriyor aslında.
+
+1075
+00:54:23,320 --> 00:54:25,320
+Tek diyorum.
+
+1076
+00:54:25,320 --> 00:54:27,320
+Tabi şu an değiştirmiyor da bu geçici bir şey yani.
+
+1077
+00:54:27,320 --> 00:54:29,320
+Öylesine komple şey.
+
+1078
+00:54:29,320 --> 00:54:31,320
+Çevirdiğini düşünün. Böyle bir element var ve
+
+1079
+00:54:31,320 --> 00:54:33,320
+bütün sayfada şeyi değiştiriyorsunuz.
+
+1080
+00:54:33,320 --> 00:54:35,320
+Default English yapıyor. Bu bir
+
+1081
+00:54:35,320 --> 00:54:37,320
+parametre aslında.
+
+1082
+00:54:37,320 --> 00:54:39,320
+Ve bu doğuma gidiyor arkadaşlar.
+
+1083
+00:54:39,320 --> 00:54:41,320
+Bu doğum objesine gidiyor.
+
+1084
+00:54:41,320 --> 00:54:43,320
+Burada siz şuradaki yukarıya
+
+1085
+00:54:43,320 --> 00:54:45,320
+URL'e şu elementi yazabiliyorsunuz.
+
+1086
+00:54:45,320 --> 00:54:47,320
+İsterseniz yazalım. Ama şuradaki haliyle yazalım.
+
+1087
+00:54:47,320 --> 00:55:01,130
+Açacağız.
+
+1088
+00:55:01,130 --> 00:55:11,829
+Bu bir option elementi.
+
+1089
+00:55:11,829 --> 00:55:15,909
+Bakın buraya.
+
+1090
+00:55:15,909 --> 00:55:17,909
+Şu yazı yazacağız.
+
+1091
+00:55:17,909 --> 00:55:19,909
+Şu English, işte şu.
+
+1092
+00:55:19,909 --> 00:55:21,909
+Uzun sürecek işte.
+
+1093
+00:55:21,909 --> 00:55:23,909
+O yüzden yazmak istememiştim.
+
+1094
+00:55:23,909 --> 00:55:25,909
+Bu elementi aynen yazıyorsunuz arkadaşlar.
+
+1095
+00:55:25,909 --> 00:55:27,909
+Şu ekranda gördüğünüz şeyi yazıyorsunuz. Option'a.
+
+1096
+00:55:27,909 --> 00:55:29,909
+Buraya.
+
+1097
+00:55:29,909 --> 00:55:31,909
+Yazdıktan sonra
+
+1098
+00:55:31,909 --> 00:55:33,909
+seçip select yapıyorsunuz.
+
+1099
+00:55:33,909 --> 00:55:35,909
+Ve buradaki yazdığınız sonuç şuraya gelecek.
+
+1100
+00:55:35,909 --> 00:55:37,909
+Burada aslında
+
+1101
+00:55:37,909 --> 00:55:39,909
+şöyle bir şey yazmış olacak.
+
+1102
+00:55:39,909 --> 00:55:41,909
+Script, alert vesaire gibi.
+
+1103
+00:55:41,909 --> 00:55:43,909
+Şu anda çalışmayacak çünkü
+
+1104
+00:55:43,909 --> 00:55:48,860
+öbür tarafa yazmam gerekiyordu.
+
+1105
+00:55:48,860 --> 00:55:50,860
+Böyle bir şey yazacak.
+
+1106
+00:55:50,860 --> 00:55:52,860
+Siz English testinizde
+
+1107
+00:55:52,860 --> 00:55:54,860
+çalışmış olacak.
+
+1108
+00:55:54,860 --> 00:55:56,860
+Tabi şu an çalışmadı çünkü
+
+1109
+00:55:56,860 --> 00:55:58,860
+sayfa yeniden render oluyor.
+
+1110
+00:55:58,860 --> 00:56:00,860
+Sizin yapmanız gereken şey şurada yazmak.
+
+1111
+00:56:00,860 --> 00:56:02,860
+Bu değişikliği.
+
+1112
+00:56:02,860 --> 00:56:04,860
+Kendiniz test ettiğinizde olduğunu göreceksiniz.
+
+1113
+00:56:04,860 --> 00:56:06,860
+Yapacağınız şey şuraya.
+
+1114
+00:56:06,860 --> 00:56:08,860
+Option value yazıyor ya.
+
+1115
+00:56:08,860 --> 00:56:10,860
+Buraya
+
+1116
+00:56:10,860 --> 00:56:12,860
+şu hali yazmanız. Aynı sunuma koyduğum gibi.
+
+1117
+00:56:12,860 --> 00:56:14,860
+Şu encode'lanmış
+
+1118
+00:56:14,860 --> 00:56:16,860
+halini yazacaksınız.
+
+1119
+00:56:16,860 --> 00:56:18,860
+C script şeklinde.
+
+1120
+00:56:18,860 --> 00:56:20,860
+%3e alert şeklinde yazacaksınız.
+
+1121
+00:56:20,860 --> 00:56:22,860
+%3e'ler HTML'deki
+
+1122
+00:56:22,860 --> 00:56:24,860
+o küçüktür büyüktür işaretlerin en kodlanmış hali.
+
+1123
+00:56:24,860 --> 00:56:26,860
+Bunu aynen şöyle yazarsanız
+
+1124
+00:56:26,860 --> 00:56:28,860
+sayfa yenilediğinizde
+
+1125
+00:56:28,860 --> 00:56:30,860
+veya değiştirdiğinizde option'ları
+
+1126
+00:56:30,860 --> 00:56:32,860
+yukarıya bu şekilde yazdığınız
+
+1127
+00:56:32,860 --> 00:56:34,860
+şu default eşittir kısmından sonra bu şekilde yazdığını göreceksiniz.
+
+1128
+00:56:34,860 --> 00:56:36,860
+Ve dom bunu yükler yüklemez
+
+1129
+00:56:36,860 --> 00:56:38,860
+çalıştıracak. Çalıştırdığında da script çalışması
+
+1130
+00:56:38,860 --> 00:56:40,860
+olacak. Bunu denersiniz.
+
+1131
+00:56:40,860 --> 00:56:42,860
+Mesela medium ve high'da da yapılan
+
+1132
+00:56:42,860 --> 00:56:57,500
+şey aynı.
+
+1133
+00:56:57,500 --> 00:56:59,500
+Medium ve high'da yapılan şey de
+
+1134
+00:56:59,500 --> 00:57:01,500
+aşağı yukarı aynı arkadaşlar.
+
+1135
+00:57:01,500 --> 00:57:03,500
+Tamam mı? Çünkü çok fazla şey yapamıyoruz
+
+1136
+00:57:03,500 --> 00:57:08,539
+burada. Bu şekilde çalışıyor.
+
+1137
+00:57:08,539 --> 00:57:11,849
+Yani o element özel bir şey
+
+1138
+00:57:11,849 --> 00:57:13,849
+bu arada. Sadece comma box yapabiliyorsunuz.
+
+1139
+00:57:13,849 --> 00:57:17,159
+Haberiniz olsun. Comma box özel
+
+1140
+00:57:17,159 --> 00:57:19,159
+bir şey birazcık da. O drop down list
+
+1141
+00:57:19,159 --> 00:57:21,159
+ne istiyorsanız.
+
+1142
+00:57:21,159 --> 00:57:23,159
+Kimisi comma box diyor, kimisi drop down list
+
+1143
+00:57:23,159 --> 00:57:27,429
+diyor. Gerçi bildiğim kadarıyla aradan
+
+1144
+00:57:27,429 --> 00:57:29,429
+bir fark var ama comma box sanırım el etekste
+
+1145
+00:57:29,429 --> 00:57:31,429
+yazılabildiğiniz input olan oluyor ama
+
+1146
+00:57:31,429 --> 00:57:33,429
+drop down list seçme
+
+1147
+00:57:33,429 --> 00:57:35,429
+şansınız var. Sadece yazma şansınız var.
+
+1148
+00:57:35,429 --> 00:57:39,610
+O şekilde.
+
+1149
+00:57:39,610 --> 00:57:41,610
+Çok mühim bir sorun değil arkadaşlar. Yani
+
+1150
+00:57:41,610 --> 00:57:43,610
+bu sadece böyle bir şey de var.
+
+1151
+00:57:43,610 --> 00:57:45,610
+Bu şekilde çalışıyor diye göstermek için koydum.
+
+1152
+00:57:45,610 --> 00:57:47,610
+Denemek isterseniz deneyin.
+
+1153
+00:57:47,610 --> 00:57:49,610
+En önemli kısım stored olan kısmı.
+
+1154
+00:57:49,610 --> 00:57:51,610
+Storedlar çok tehlikeli.
+
+1155
+00:57:51,610 --> 00:57:54,920
+Çünkü herkese etkileyebilecek
+
+1156
+00:57:54,920 --> 00:57:56,920
+bir şey. Reflected
+
+1157
+00:57:56,920 --> 00:57:58,920
+daha çok sitelerin işleyişini bozmakla
+
+1158
+00:57:58,920 --> 00:58:00,920
+alakalı. Ve
+
+1159
+00:58:00,920 --> 00:58:02,920
+CSRF tabii ki yani. CSRF de oradan
+
+1160
+00:58:02,920 --> 00:58:04,920
+her şeye yarışmak
+
+1161
+00:58:04,920 --> 00:58:06,920
+için kullanılmış. Çok tehlikeli bir şey
+
+1162
+00:58:06,920 --> 00:58:08,920
+bu da. Çünkü o tokenlar sayesinde
+
+1163
+00:58:08,920 --> 00:58:10,920
+o istekler sayesinde
+
+1164
+00:58:10,920 --> 00:58:12,920
+bir kullanıcı şifresini değiştirtiyorsunuz ve
+
+1165
+00:58:12,920 --> 00:58:14,920
+kullanıcı giremiyor sisteme bir dahi.
+
+1166
+00:58:14,920 --> 00:58:16,920
+Çünkü eski şifresini bilmiyor falan. Çok tehlikeli
+
+1167
+00:58:16,920 --> 00:58:18,920
+bir şey. Ve çok da basit. Çok da
+
+1168
+00:58:18,920 --> 00:58:20,920
+sık yapılan. Vakti zamanında çok fazla yapılan.
+
+1169
+00:58:20,920 --> 00:58:22,920
+İnsanlara
+
+1170
+00:58:22,920 --> 00:58:24,920
+çok fazla şey kaybettiren bir saldırı tipi.
+
+1171
+00:58:24,920 --> 00:58:26,920
+Bir ara çok popülerdi CSRF.
+
+1172
+00:58:26,920 --> 00:58:28,920
+Şu an kadar sık yapılıyor bilmiyorum ama
+
+1173
+00:58:28,920 --> 00:58:33,670
+bir ara çok popülerdi. O etrafınızda
+
+1174
+00:58:33,670 --> 00:58:35,670
+duyduğunuz işte bilmem kimin instagram şifresini
+
+1175
+00:58:35,670 --> 00:58:37,670
+çaldı mı değiştirdi mi falan. İşte bu
+
+1176
+00:58:37,670 --> 00:58:39,670
+birazcık bunlar oluyordu aslında.
+
+1177
+00:58:39,670 --> 00:58:41,670
+O instagram reklamları, facebook
+
+1178
+00:58:41,670 --> 00:58:43,670
+reklamları. Özellikle ilk çıktığı zaman facebook zamanı
+
+1179
+00:58:43,670 --> 00:58:45,670
+vardı o zaman. Instagram yok tabi ki.
+
+1180
+00:58:45,670 --> 00:58:47,670
+Olduğu çok popülerdi. Herkesin şifresi
+
+1181
+00:58:47,670 --> 00:58:49,670
+bitiyor. İşte insanlara
+
+1182
+00:58:49,670 --> 00:58:51,670
+farklı farklı şeyler paylaştırıyorlardı.
+
+1183
+00:58:51,670 --> 00:58:53,670
+Facebook'tan. Çok tehlikeli bir script
+
+1184
+00:58:53,670 --> 00:59:01,429
+tipi. Off the record benim de
+
+1185
+00:59:01,429 --> 00:59:03,429
+başıma gelmişti bir keresinde.
+
+1186
+00:59:03,429 --> 00:59:05,429
+Sosyal medya değil ama başka bir siteden
+
+1187
+00:59:05,429 --> 00:59:07,429
+başıma gelmişti. Şifrem şişrem
+
+1188
+00:59:07,429 --> 00:59:10,840
+çalınmıştı. Değiştirilmişti.
+
+1189
+00:59:10,840 --> 00:59:14,730
+Çok önemli değildi Allah'tan.
+
+1190
+00:59:14,730 --> 00:59:20,179
+Evet sorusu olan var mı başka?
+
+1191
+00:59:20,179 --> 00:59:22,179
+Böyle sanki duvara anlatıyormuşum gibi öyle çok yaşık bir his.
+
+1192
+00:59:22,179 --> 00:59:25,429
+Yok hocam soru yok.
+
+1193
+00:59:25,429 --> 00:59:31,719
+O zaman
+
+1194
+00:59:31,719 --> 00:59:33,719
+burada bitirelim.
+
+1195
+00:59:33,719 --> 00:59:35,719
+Arkadaşlar haftaya
+
+1196
+00:59:35,719 --> 00:59:37,719
+uygulama olmayabilir.
+
+1197
+00:59:37,719 --> 00:59:39,719
+Benim de bazı işlerim
+
+1198
+00:59:39,719 --> 00:59:41,719
+var çünkü haftaya pazarlık yapamayabilirim.
+
+1199
+00:59:41,719 --> 00:59:43,719
+Ama biz yapacakmışız gibi
+
+1200
+00:59:43,719 --> 00:59:45,719
+konuşalım. Haftaya varmıştık konuşalım. Son bir tane
+
+1201
+00:59:45,719 --> 00:59:47,719
+daha uygulamamız olacak.
+
+1202
+00:59:47,719 --> 00:59:49,719
+Onu ARP Spoofing anlatabilirim.
+
+1203
+00:59:49,719 --> 00:59:51,719
+ARP Poison anlatabilirim diye düşünüyorum.
+
+1204
+00:59:51,719 --> 00:59:53,719
+Henüz bakmadım ne anlatacağımı.
+
+1205
+00:59:53,719 --> 00:59:55,719
+Tam karar vermedim.
+
+1206
+00:59:55,719 --> 00:59:57,719
+Haftaya olmazsa ders aksi durumda
+
+1207
+00:59:57,719 --> 00:59:59,719
+yani haftaya olmazsam mutlaka
+
+1208
+00:59:59,719 --> 01:00:01,719
+AOS'tan bildiririm.
+
+1209
+01:00:01,719 --> 01:00:03,719
+Hafta yapacakmışım gibi düşünelim. Tamam.
+
+1210
+01:00:03,719 --> 01:00:05,719
+İptal edersen mutlaka ertelersem
+
+1211
+01:00:05,719 --> 01:00:07,719
+mutlaka yazarım.
+
+1212
+01:00:07,719 --> 01:00:09,719
+Hocanızla henüz görüşmedim ama
+
+1213
+01:00:09,719 --> 01:00:11,719
+bir ödev de verebilirim.
+
+1214
+01:00:11,719 --> 01:00:13,719
+Yok hocalarınızla görüşmedim.
+
+1215
+01:00:13,719 --> 01:00:15,719
+Ödev de verebilirim. O yüzden
+
+1216
+01:00:15,719 --> 01:00:17,719
+AOS'u kontrol
+
+1217
+01:00:17,719 --> 01:00:19,719
+etmeye devam edin.
+
+1218
+01:00:19,719 --> 01:00:21,719
+İzlediğiniz için teşekkürler arkadaşlar.
+
+1219
+01:00:21,719 --> 01:00:23,719
+Biraz hızlı geçtim.
+
+1220
+01:00:23,719 --> 01:00:25,719
+Ama sunumda her şey var zaten ve
+
+1221
+01:00:25,719 --> 01:00:27,719
+paylaşacağım.
+
+1222
+01:00:27,719 --> 01:00:29,719
+AOS'un kurup test edip kendiniz oynayabilirsiniz.
+
+1223
+01:00:29,719 --> 01:00:31,719
+Bence en doğrusu o. En güzeli de o.
+
+1224
+01:00:31,719 --> 01:00:33,719
+İhtiyacım olan tek şey birazcık
+
+1225
+01:00:33,719 --> 01:00:35,719
+HTML bilginiz, biraz JavaScript bilginiz.
+
+1226
+01:00:35,719 --> 01:00:37,719
+İşte Ajax nedir, JavaScript
+
+1227
+01:00:37,719 --> 01:00:39,719
+fonksiyonu nasıl çalışır,
+
+1228
+01:00:39,719 --> 01:00:41,719
+HTML elementleri de nasıl çalıştırırım
+
+1229
+01:00:41,719 --> 01:00:43,719
+gibi gibi.
+
+1230
+01:00:43,719 --> 01:00:45,719
+Böyle biraz temel bilgilerle
+
+1231
+01:00:45,719 --> 01:00:47,719
+bu tarz saldırıları çok rahat yaparsınız.
+
+1232
+01:00:47,719 --> 01:00:49,719
+Tabi sitede buna el veriyorsa.
+
+1233
+01:00:49,719 --> 01:00:51,719
+Anlatacaklarım o kadar.
+
+1234
+01:00:51,719 --> 01:00:53,719
+Hoşçakalın.
+

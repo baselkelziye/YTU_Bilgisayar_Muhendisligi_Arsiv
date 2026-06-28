@@ -41,6 +41,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1X6kT7E10Z85QGRTOK5r7NuckHfYuYW54?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Lojik Devreler Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Çok güzel çıkarılmış ders notları](./slaytlar_notlar/2021/efe_girgin) ✨
 - 📄 **Not:** [Nasırın el yazısı notu](./slaytlar_notlar/2021/nasir_sabir.pdf) GitHub'da açılmazsa indirin. ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)

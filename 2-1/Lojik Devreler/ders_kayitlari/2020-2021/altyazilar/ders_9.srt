@@ -1,0 +1,9036 @@
+1
+00:00:03,770 --> 00:03:14,330
+Merhaba arkadaşlar. Ses geliyor mu? Biraz sayımız artsın. 5-6 geçik gibi dersimize başlayacağız arkadaşlar.
+
+2
+00:06:00,129 --> 00:06:08,790
+Evet, hepinize tekrar merhabalar arkadaşlar. Dersimize başlayalım.
+
+3
+00:06:10,529 --> 00:06:20,019
+Seste bir sorun var mı? Seste bir sorun yok herhalde. Tamamdır.
+
+4
+00:06:20,019 --> 00:06:31,839
+Daha önce arkadaşlar hatırladık. Bundan önce gördüğümüz kısımlarda kombinezonsal devreleri görmüştük.
+
+5
+00:06:32,939 --> 00:06:41,279
+Bu devrelerin en büyük özelliği neydi arkadaşlar? T anında gelen bilgi işleniyor ve çıkış oluşturuluyordu.
+
+6
+00:06:42,699 --> 00:06:50,959
+Ardışıl devrelerde ise diğerinden farklı olarak arkadaşlar bir hafıza yapısı bulunur.
+
+7
+00:06:50,959 --> 00:06:58,259
+Yani daha önceki durumlar ve çıkışlardan yararlanma söz konusudur.
+
+8
+00:06:59,079 --> 00:07:06,939
+Dolayısıyla ardışıl devrelerde arda arda gelen olaylar dizisinin işlenmesi söz konusu.
+
+9
+00:07:07,660 --> 00:07:11,800
+Sonuca ulaşmak için belli işler belli bir sıra ile yapılması gerekiyor.
+
+10
+00:07:11,800 --> 00:07:18,939
+Dediğim gibi kabaca bir kombinezonsal devreyi, ardışıl devreyi çizecek olursak.
+
+11
+00:07:20,959 --> 00:07:29,079
+Girişlerin işlendiği kombinezonsal bir devre kısmı bulunur.
+
+12
+00:07:29,079 --> 00:07:38,120
+Kombinezonsal devre kısmı bulunuyor.
+
+13
+00:07:38,120 --> 00:07:41,100
+Buradan tabiki bir çıkış elde ediliyor.
+
+14
+00:07:41,100 --> 00:07:50,040
+Daha sonra hafıza olarak adlandırdığımız, işte bunlar saklayıcılar, bellekler, ondan sonra çeşitli filiploplar gibi çeşitli yapılarla.
+
+15
+00:07:50,040 --> 00:07:53,040
+Ondan sonra çeşitli filiploplar gibi çeşitli yapılarla.
+
+16
+00:07:53,040 --> 00:07:54,040
+Ondan sonra çeşitli filiploplar gibi çeşitli yapılarla.
+
+17
+00:07:54,040 --> 00:07:54,540
+Ondan sonra çeşitli filiploplar gibi çeşitli yapılarla.
+
+18
+00:07:54,540 --> 00:08:05,639
+Durum bilgileri tutururken, kombinezonsal devreden gelen işlenmiş bilgilerde, bir sonraki durumlar diyelim.
+
+19
+00:08:05,639 --> 00:08:28,560
+Durum bilgisinin tutulduğu hafıza kısmında saklanır ve bu durum bilgisi girişlerle beraber bazen kombinezonsal devrede işlenmek üzere verilir.
+
+20
+00:08:28,560 --> 00:08:36,299
+verilir. Devreye girdi olarak verilebilir. Şimdi bu durum bilgilerinde bir bir birkaç bitlik bilgi
+
+21
+00:08:36,299 --> 00:08:42,419
+tutulabileceği gibi hani flip-floplar gibi önümüzdeki ders göreceğimiz flip-floplar gibi
+
+22
+00:08:42,419 --> 00:08:50,279
+saklayıcılar ondan sonra sayıcılar bir bitten çok daha fazla bir iki üç bitten çok fazla
+
+23
+00:08:50,279 --> 00:08:57,539
+saklayacaksak rom-prom-rom-ram gibi bellek birimleri de kullanılır arkadaşlar. Şimdi
+
+24
+00:08:57,539 --> 00:09:03,960
+girişlerin çokluğu kombinasyonsal devrenin durumların çokluğu da bellek ve saklayıcı
+
+25
+00:09:03,960 --> 00:09:11,399
+birimlerinin karmaşıklığını arttırır bu tür kombinasyon ardıçıl devre yapılarında. Ardıçıl
+
+26
+00:09:11,399 --> 00:09:21,840
+devrelerin İngilizcesi arkadaşlar sequential circuits diye geçiyor. Şimdi
+
+27
+00:09:22,620 --> 00:09:32,039
+ardıçıl devre tasarımı yapılırken birkaç yaklaşım şekli kullanılıyor. Temelde kombinasyonsal
+
+28
+00:09:32,039 --> 00:09:41,159
+devrelerle beraber kullanılacak durum bilgilerinin girdi alınıp alınmayacağına dair iki tür ardıçıl
+
+29
+00:09:41,159 --> 00:09:51,100
+devre yapısı bulunuyor. Ardıçıl devreler tasarımına göre ikiye ayrılıyor arkadaşlar.
+
+30
+00:09:51,100 --> 00:09:54,100
+Mili makinası
+
+31
+00:09:54,279 --> 00:10:13,870
+ve de mur makinası olmak üzere ikiye ayrılıyor. Şimdi mini makinası hani temsili olarak çizecek
+
+32
+00:10:13,870 --> 00:10:23,980
+olursak bir kombinasyonsal devre kısmı var. Bu kombinasyonsal devre kısmına girişlerimizi
+
+33
+00:10:23,980 --> 00:10:33,179
+veriyoruz. T anındaki girişler bunlar ve çıkışlar oluşuyor. Çıkış,
+
+34
+00:10:34,360 --> 00:10:35,399
+olarak gösterelim.
+
+35
+00:10:36,600 --> 00:10:37,980
+Bir hafıza
+
+36
+00:10:37,980 --> 00:10:40,139
+bloğu var. Bu hafıza bloğunda
+
+37
+00:10:40,139 --> 00:10:41,960
+arkadaşlar durumlar tutuluyor.
+
+38
+00:10:43,379 --> 00:10:44,100
+Şuraya da
+
+39
+00:10:44,100 --> 00:10:45,980
+bir sonraki durumlar
+
+40
+00:10:45,980 --> 00:10:52,360
+diyelim. Bu da
+
+41
+00:10:52,360 --> 00:10:54,759
+D, T artı
+
+42
+00:10:54,759 --> 00:10:58,370
+1'den
+
+43
+00:10:58,370 --> 00:11:00,549
+giriş olarak veriliyor. Ve de
+
+44
+00:11:00,549 --> 00:11:02,789
+kombinozonsal devre kısmında ise
+
+45
+00:11:02,789 --> 00:11:04,549
+o anki durumlar
+
+46
+00:11:04,549 --> 00:11:06,470
+yani
+
+47
+00:11:06,470 --> 00:11:08,269
+T anındaki
+
+48
+00:11:08,269 --> 00:11:10,190
+bizim
+
+49
+00:11:10,190 --> 00:11:12,149
+X, T ile beraberce
+
+50
+00:11:12,149 --> 00:11:14,470
+işleyeceğimiz ve çıkışı
+
+51
+00:11:14,470 --> 00:11:16,370
+üreteceğimiz yapı
+
+52
+00:11:16,370 --> 00:11:17,669
+oluşturuluyor.
+
+53
+00:11:18,730 --> 00:11:18,950
+Bunu
+
+54
+00:11:18,950 --> 00:11:27,519
+kalemi mi incelteyim ben? Görünsün diye
+
+55
+00:11:27,519 --> 00:11:29,659
+biraz da kalın yapıyordum. Çok mu
+
+56
+00:11:29,659 --> 00:11:37,870
+koyu çıkıyor? İnce
+
+57
+00:11:37,870 --> 00:11:39,350
+olunca okunmayacak diye.
+
+58
+00:11:40,509 --> 00:11:42,009
+Başka sorunu çeken var mı
+
+59
+00:11:42,009 --> 00:11:43,029
+okumada arkadaşlar?
+
+60
+00:11:44,889 --> 00:11:45,169
+Hocam
+
+61
+00:11:45,169 --> 00:11:47,129
+biraz birbirine karışmayacağım.
+
+62
+00:11:48,029 --> 00:11:48,950
+Tamamdır.
+
+63
+00:11:49,730 --> 00:11:51,570
+Şurada sadece
+
+64
+00:11:51,570 --> 00:11:52,610
+şöyle yapayım.
+
+65
+00:11:53,649 --> 00:11:54,950
+Şunu bir incelteyim.
+
+66
+00:11:56,490 --> 00:11:57,649
+Ondan sonra şurayı
+
+67
+00:11:57,649 --> 00:11:58,769
+tekrar yazayım.
+
+68
+00:12:01,090 --> 00:12:04,629
+Şurada. Şu nasıl?
+
+69
+00:12:06,710 --> 00:12:07,509
+Durumlar.
+
+70
+00:12:08,830 --> 00:12:10,649
+Daha iyi hocam. Tamamdır.
+
+71
+00:12:11,070 --> 00:12:12,129
+Bir sonraki
+
+72
+00:12:12,129 --> 00:12:15,019
+durumlar.
+
+73
+00:12:16,720 --> 00:12:18,379
+Şimdi bizim
+
+74
+00:12:18,379 --> 00:12:20,460
+burada mini makinesi
+
+75
+00:12:20,460 --> 00:12:22,480
+için şunları söyleyebiliriz. Çıkış için
+
+76
+00:12:22,480 --> 00:12:24,539
+T anındaki çıkış için
+
+77
+00:12:24,539 --> 00:12:26,179
+bir fonksiyon
+
+78
+00:12:26,179 --> 00:12:28,360
+olarak düşünecek olursak devreyi
+
+79
+00:12:28,360 --> 00:12:40,200
+T anındaki
+
+80
+00:12:40,200 --> 00:12:42,399
+çıkışı hesaplayabilmek için
+
+81
+00:12:42,399 --> 00:12:44,279
+arkadaşlar iki tür giriş
+
+82
+00:12:44,279 --> 00:12:46,259
+yapıyoruz. Şurada görmüş olduğunuz gibi
+
+83
+00:12:46,259 --> 00:12:48,580
+XT
+
+84
+00:12:48,580 --> 00:12:50,740
+ve de
+
+85
+00:12:50,740 --> 00:12:52,500
+o anki
+
+86
+00:12:52,500 --> 00:12:54,299
+durumlar. O anki durumları
+
+87
+00:12:54,299 --> 00:12:56,779
+input olarak alıp çıkışı oluşturuyoruz.
+
+88
+00:12:57,600 --> 00:12:58,340
+Bir sonraki
+
+89
+00:12:58,340 --> 00:12:59,179
+durumlar ise
+
+90
+00:12:59,179 --> 00:13:02,299
+bir sonraki durumlar ise arkadaşlar
+
+91
+00:13:02,299 --> 00:13:04,419
+şekilden de
+
+92
+00:13:04,419 --> 00:13:06,379
+gördüğünüz gibi hem
+
+93
+00:13:06,379 --> 00:13:08,820
+şuradan XT'nin işlenmesiyle
+
+94
+00:13:08,820 --> 00:13:09,320
+beraber
+
+95
+00:13:09,320 --> 00:13:12,080
+hem de şuradan da
+
+96
+00:13:12,080 --> 00:13:14,100
+DT'nin işlenmesiyle beraber
+
+97
+00:13:14,100 --> 00:13:15,879
+F
+
+98
+00:13:15,879 --> 00:13:18,639
+DT T anındaki
+
+99
+00:13:18,639 --> 00:13:20,899
+girişlere aynı zamanda
+
+100
+00:13:20,899 --> 00:13:22,600
+XT'ye
+
+101
+00:13:22,600 --> 00:13:24,279
+beraberce bağlı.
+
+102
+00:13:26,830 --> 00:13:28,149
+Mur makinesindeyse
+
+103
+00:13:28,149 --> 00:13:28,769
+arkadaşlar
+
+104
+00:13:28,769 --> 00:13:31,750
+farklı bir durum söz konusu.
+
+105
+00:13:32,649 --> 00:13:32,870
+Burada
+
+106
+00:13:32,870 --> 00:13:34,870
+öncelikli olarak
+
+107
+00:13:34,870 --> 00:13:38,320
+şunu kapatayım.
+
+108
+00:13:39,740 --> 00:13:41,580
+İşte önce bir kombinozonsal
+
+109
+00:13:41,580 --> 00:13:43,240
+devre kısmımız var. Şöyle
+
+110
+00:13:43,240 --> 00:13:45,860
+bir kombinozonsal
+
+111
+00:13:45,860 --> 00:13:47,799
+devre kısmımız var. Burada
+
+112
+00:13:47,799 --> 00:13:50,019
+girişler işleniyor.
+
+113
+00:13:51,460 --> 00:13:52,039
+XT
+
+114
+00:13:52,039 --> 00:13:53,379
+anındaki girişler işleniyor.
+
+115
+00:13:54,080 --> 00:13:56,159
+Bunlar saklanmak
+
+116
+00:13:56,159 --> 00:13:58,179
+üzere ve bu girişlerde
+
+117
+00:13:58,179 --> 00:14:00,039
+arkadaşlar geçmiş durum bilgileri
+
+118
+00:14:00,039 --> 00:14:02,159
+yok. Sadece o anki
+
+119
+00:14:02,159 --> 00:14:04,240
+girişler var. Bunlar
+
+120
+00:14:04,240 --> 00:14:05,279
+arkadaşlar
+
+121
+00:14:05,279 --> 00:14:08,419
+bir sonraki durumları oluşturmak üzere
+
+122
+00:14:08,419 --> 00:14:09,419
+şöyle diyelim.
+
+123
+00:14:09,740 --> 00:14:11,179
+Bir sonraki
+
+124
+00:14:11,179 --> 00:14:13,659
+durumlar
+
+125
+00:14:13,659 --> 00:14:15,940
+D
+
+126
+00:14:15,940 --> 00:14:17,659
+T artı bir
+
+127
+00:14:17,659 --> 00:14:19,259
+oluşmak üzere
+
+128
+00:14:19,259 --> 00:14:22,460
+hafıza bloğuna gönderiliyor.
+
+129
+00:14:23,200 --> 00:14:24,519
+Bu hafıza bloğundaki
+
+130
+00:14:24,519 --> 00:14:25,940
+durum arkadaşlar
+
+131
+00:14:25,940 --> 00:14:28,820
+çıkışı oluşturmak üzere
+
+132
+00:14:28,820 --> 00:14:32,700
+tekrar bir kombinozonsal devre
+
+133
+00:14:32,700 --> 00:14:35,759
+giriş olarak
+
+134
+00:14:35,759 --> 00:14:37,940
+T anındaki
+
+135
+00:14:37,940 --> 00:14:39,440
+durumlar D T
+
+136
+00:14:39,440 --> 00:14:42,759
+T andaki durumla oluştuğu ve çıkışlar
+
+137
+00:14:42,759 --> 00:14:43,419
+bizim
+
+138
+00:14:43,419 --> 00:14:45,519
+çıkışımız
+
+139
+00:14:45,519 --> 00:14:48,750
+ZT
+
+140
+00:14:48,750 --> 00:14:51,529
+diyelim. Aynı zamanda
+
+141
+00:14:51,529 --> 00:14:53,769
+bir sonraki durumların
+
+142
+00:14:53,769 --> 00:14:54,929
+oluşması için
+
+143
+00:14:54,929 --> 00:14:57,110
+giriş olarak
+
+144
+00:14:57,110 --> 00:14:58,730
+hafıza bloğuna giriyor.
+
+145
+00:14:59,269 --> 00:15:01,129
+Hafıza bloğu bir sonraki durumları
+
+146
+00:15:01,129 --> 00:15:02,529
+oluşturabilmek için arkadaşlar
+
+147
+00:15:02,529 --> 00:15:05,529
+bir girişin işlendiği
+
+148
+00:15:05,529 --> 00:15:08,720
+bir no'lu kombinozonsal
+
+149
+00:15:08,720 --> 00:15:10,279
+devre ve de
+
+150
+00:15:10,279 --> 00:15:11,879
+iki no'lu kombinozonsal devrenin
+
+151
+00:15:12,519 --> 00:15:14,519
+çıkışına ihtiyaç duyuyor.
+
+152
+00:15:14,519 --> 00:15:16,519
+Dikkat edin.
+
+153
+00:15:16,519 --> 00:15:18,519
+Burada çıkışlar
+
+154
+00:15:18,519 --> 00:15:20,519
+sadece D T'ye bağlı.
+
+155
+00:15:20,519 --> 00:15:22,519
+Onu da yazacak olursak şöyle.
+
+156
+00:15:22,519 --> 00:15:24,519
+Mur makinesi
+
+157
+00:15:24,519 --> 00:15:26,519
+için Z T
+
+158
+00:15:26,519 --> 00:15:31,620
+sadece
+
+159
+00:15:31,620 --> 00:15:33,620
+durumlara bağlı.
+
+160
+00:15:33,620 --> 00:15:35,620
+O anki girişlerle hiç bilgisi yok
+
+161
+00:15:35,620 --> 00:15:37,620
+farkı olarak. Bir sonraki
+
+162
+00:15:37,620 --> 00:15:39,620
+durumlar ise
+
+163
+00:15:39,620 --> 00:15:41,620
+D T artı bir ise
+
+164
+00:15:41,620 --> 00:15:43,620
+aynı şekilde
+
+165
+00:15:43,620 --> 00:15:45,620
+D T artı biri şurada oluşuyoruz.
+
+166
+00:15:45,620 --> 00:15:47,620
+Hem buradan dolayı X T'ye bağlı
+
+167
+00:15:47,620 --> 00:15:49,620
+hem de şuradan işlenip çıkacağı için
+
+168
+00:15:49,620 --> 00:15:51,620
+D T'ye bağlı.
+
+169
+00:15:51,620 --> 00:15:53,620
+F
+
+170
+00:15:53,620 --> 00:15:55,620
+X T'le
+
+171
+00:15:55,620 --> 00:15:57,620
+D T'ye bağlı
+
+172
+00:15:57,620 --> 00:16:01,480
+diyebiliriz arkadaşlar.
+
+173
+00:16:01,480 --> 00:16:03,480
+Kısaca
+
+174
+00:16:03,480 --> 00:16:05,480
+bu
+
+175
+00:16:07,480 --> 00:16:09,480
+iki yaklaşım
+
+176
+00:16:09,480 --> 00:16:11,480
+bizim problemimize göre tanımlanacak arkadaşlar.
+
+177
+00:16:11,480 --> 00:16:13,480
+Bizim problemimizin tipine göre
+
+178
+00:16:13,480 --> 00:16:15,480
+bunlardan birini kullanacağız.
+
+179
+00:16:15,480 --> 00:16:17,480
+Ama en temelde dikkat edeceğimiz konu
+
+180
+00:16:17,480 --> 00:16:19,480
+çıkış sadece durumlara mı bağlı
+
+181
+00:16:19,480 --> 00:16:21,480
+veya durumlar
+
+182
+00:16:21,480 --> 00:16:23,480
+artı o anki girişe mi bağlı.
+
+183
+00:16:23,480 --> 00:16:25,480
+Nereden beslendiği ile
+
+184
+00:16:25,480 --> 00:16:27,480
+çıkışın nereden beslendiği ile
+
+185
+00:16:27,480 --> 00:16:29,480
+alakalı olarak.
+
+186
+00:16:29,480 --> 00:16:31,480
+Şurada da
+
+187
+00:16:31,480 --> 00:16:33,480
+buradan da D T'den
+
+188
+00:16:33,480 --> 00:16:35,480
+besleniyor. Belirleniyor.
+
+189
+00:16:35,480 --> 00:16:40,230
+Yapısına bağlı olarak.
+
+190
+00:16:40,230 --> 00:16:44,279
+Şimdi senkron
+
+191
+00:16:44,279 --> 00:16:46,279
+ve asenkron ardışıl devreler
+
+192
+00:16:46,279 --> 00:16:48,279
+konusu var.
+
+193
+00:16:48,279 --> 00:16:50,279
+Senkron
+
+194
+00:16:50,279 --> 00:16:52,279
+ve
+
+195
+00:16:52,279 --> 00:16:54,279
+şeyle yazayım
+
+196
+00:16:54,279 --> 00:16:59,029
+senkron
+
+197
+00:16:59,029 --> 00:17:01,029
+ve
+
+198
+00:17:01,029 --> 00:17:04,880
+asenkron
+
+199
+00:17:04,880 --> 00:17:11,680
+ardışıl devreler.
+
+200
+00:17:11,680 --> 00:17:17,240
+Şimdi ardışıl devreler
+
+201
+00:17:17,240 --> 00:17:19,240
+girişlerinde olan değişikliğin
+
+202
+00:17:19,240 --> 00:17:21,240
+çıkışlarına yansıtılma
+
+203
+00:17:21,240 --> 00:17:23,240
+zamanı açısından arkadaşlar
+
+204
+00:17:23,240 --> 00:17:25,240
+iki şekilde
+
+205
+00:17:25,240 --> 00:17:27,240
+sınıflandırılıyor.
+
+206
+00:17:27,240 --> 00:17:29,240
+Birinde girişlerde olan
+
+207
+00:17:29,240 --> 00:17:31,240
+değişiklik beklemeksizin
+
+208
+00:17:31,240 --> 00:17:33,240
+yalnızca kullanılan kapı
+
+209
+00:17:33,240 --> 00:17:35,240
+gibi birimlerin gecikme süresi
+
+210
+00:17:35,240 --> 00:17:37,240
+bu kadar süre sonra
+
+211
+00:17:37,240 --> 00:17:39,240
+çıkışa yansıtılıyor.
+
+212
+00:17:39,240 --> 00:17:41,240
+Burada herhangi bir senkronlama
+
+213
+00:17:41,240 --> 00:17:43,240
+işareti kullanılmıyor.
+
+214
+00:17:43,240 --> 00:17:45,240
+Buna asenkron
+
+215
+00:17:45,240 --> 00:17:49,250
+ardışıl devreler
+
+216
+00:17:49,250 --> 00:17:53,650
+diyoruz. Burada
+
+217
+00:17:53,650 --> 00:17:55,650
+senkronlama işareti
+
+218
+00:17:55,650 --> 00:18:01,240
+yok.
+
+219
+00:18:01,240 --> 00:18:03,240
+Kabaca gösterecek olursak
+
+220
+00:18:03,240 --> 00:18:05,240
+şöyle bir kara kutu
+
+221
+00:18:05,240 --> 00:18:07,240
+şeklinde gösterecek olursak
+
+222
+00:18:07,240 --> 00:18:09,240
+X T anında gelen
+
+223
+00:18:09,240 --> 00:18:11,240
+işaret
+
+224
+00:18:11,240 --> 00:18:13,240
+gecikmelerden sonra
+
+225
+00:18:13,240 --> 00:18:16,640
+asenkron
+
+226
+00:18:16,640 --> 00:18:21,240
+ardışıl devre
+
+227
+00:18:21,240 --> 00:18:23,240
+çıkışa yansıtılıyor.
+
+228
+00:18:23,240 --> 00:18:25,240
+Z T olarak çıkışa yansıtıyoruz.
+
+229
+00:18:25,240 --> 00:18:27,240
+Şimdi
+
+230
+00:18:27,240 --> 00:18:29,240
+basitçe gösterecek olursak
+
+231
+00:18:29,240 --> 00:18:31,240
+burada şunu aklınıza tutun arkadaşlar
+
+232
+00:18:31,240 --> 00:18:33,240
+X T
+
+233
+00:18:33,240 --> 00:18:35,240
+işaretim şöyle bir
+
+234
+00:18:35,240 --> 00:18:37,240
+X T işareti diye genel bir
+
+235
+00:18:37,240 --> 00:18:39,240
+işaret çizeyim. Tabi bu
+
+236
+00:18:39,240 --> 00:18:41,240
+devrin içi karmaşık olabilir.
+
+237
+00:18:41,240 --> 00:18:43,240
+İçerisinde birkaç katman
+
+238
+00:18:43,240 --> 00:18:45,240
+kullanılabilir ama
+
+239
+00:18:45,240 --> 00:18:47,240
+temelde anlatmaya çalışıyorum.
+
+240
+00:18:47,240 --> 00:18:50,799
+Yapıyı
+
+241
+00:18:50,799 --> 00:18:52,799
+özetlemek açısından temsili bir resim
+
+242
+00:18:52,799 --> 00:18:54,799
+gibi düşünebilirsiniz.
+
+243
+00:18:54,799 --> 00:18:56,799
+X T işareti içeride
+
+244
+00:18:56,799 --> 00:18:58,799
+sonuçları üretiyor filan
+
+245
+00:18:58,799 --> 00:19:00,799
+birden sıfıra geçiyor, sıfırdan bire geçiyor
+
+246
+00:19:00,799 --> 00:19:02,799
+sonuçlar belli bir gecikme
+
+247
+00:19:02,799 --> 00:19:04,799
+oluyor değil mi arkadaşlar? Şu aradaki
+
+248
+00:19:04,799 --> 00:19:06,799
+zaman kadar bir gecikme
+
+249
+00:19:06,799 --> 00:19:08,799
+yaşanıyor.
+
+250
+00:19:08,799 --> 00:19:10,799
+Aynı şekilde burada da
+
+251
+00:19:10,799 --> 00:19:15,039
+bizim girişimiz
+
+252
+00:19:15,039 --> 00:19:17,039
+çıkışımız
+
+253
+00:19:17,039 --> 00:19:19,039
+daha doğrusu birden
+
+254
+00:19:19,039 --> 00:19:21,039
+sıfıra düştüğünde
+
+255
+00:19:21,039 --> 00:19:23,039
+tam şu noktada çıkış
+
+256
+00:19:23,039 --> 00:19:25,039
+bir tepkide bulunuyor.
+
+257
+00:19:25,039 --> 00:19:27,039
+Şöyle Z T
+
+258
+00:19:27,039 --> 00:19:29,039
+diyelim ve de
+
+259
+00:19:29,039 --> 00:19:31,039
+o da ne yapıyor arkadaşlar?
+
+260
+00:19:31,039 --> 00:19:33,039
+Şöyle bir
+
+261
+00:19:33,039 --> 00:19:35,039
+değişime uğruyor.
+
+262
+00:19:35,039 --> 00:19:38,390
+Şimdi
+
+263
+00:19:38,390 --> 00:19:40,390
+şuradaki kısım
+
+264
+00:19:40,390 --> 00:19:42,390
+bizim gecikmemiz.
+
+265
+00:19:42,390 --> 00:19:46,720
+Yani X T'de
+
+266
+00:19:46,720 --> 00:19:48,720
+bir değişim olduğunda
+
+267
+00:19:48,720 --> 00:19:50,720
+bu değişim de bir süre
+
+268
+00:19:50,720 --> 00:19:52,720
+alacaktır. X T'de bir
+
+269
+00:19:52,720 --> 00:19:54,720
+değişim olduğunda
+
+270
+00:19:54,720 --> 00:19:56,720
+bu değişim üretilebilmesi için
+
+271
+00:19:56,720 --> 00:19:58,720
+aradaki katmanlar, örneğin
+
+272
+00:19:58,720 --> 00:20:00,720
+şöyle katmanlar konuldu, bir tane
+
+273
+00:20:00,720 --> 00:20:02,720
+toplayıcı konuldu filan
+
+274
+00:20:02,720 --> 00:20:04,720
+katman katman ilerliyor. Z T'ye
+
+275
+00:20:04,720 --> 00:20:06,720
+ulaşıyorsunuz mesela.
+
+276
+00:20:06,720 --> 00:20:08,720
+Çıkışta bir
+
+277
+00:20:08,720 --> 00:20:10,720
+girişte bir değişim oldu. Yani
+
+278
+00:20:10,720 --> 00:20:12,720
+A ve B bitlerinde bir
+
+279
+00:20:12,720 --> 00:20:14,720
+veya kaç tane girişiniz varsa
+
+280
+00:20:14,720 --> 00:20:16,720
+bir değişim oldu. Belli bir
+
+281
+00:20:16,720 --> 00:20:18,720
+sona işlenmeye başladı ve çıkışa
+
+282
+00:20:18,720 --> 00:20:20,720
+doğru şu gecikme kadar süre sonra
+
+283
+00:20:20,720 --> 00:20:22,720
+Z T'de
+
+284
+00:20:22,720 --> 00:20:24,720
+X T'deki değişimler hızlıca
+
+285
+00:20:24,720 --> 00:20:26,720
+gerçekleştirdikten sonra işlendi.
+
+286
+00:20:26,720 --> 00:20:28,720
+Bu işlendikten sonra belli bir
+
+287
+00:20:28,720 --> 00:20:30,720
+gecikme süresi sonra
+
+288
+00:20:30,720 --> 00:20:32,720
+bizim Z T'miz oluşturuldu.
+
+289
+00:20:32,720 --> 00:20:34,720
+Bu Z T
+
+290
+00:20:34,720 --> 00:20:36,720
+oluşturulduktan sonra
+
+291
+00:20:36,720 --> 00:20:38,720
+yine devrenin içerisinde bir değişim
+
+292
+00:20:38,720 --> 00:20:43,410
+oldu diyelim şöyle.
+
+293
+00:20:43,410 --> 00:20:45,410
+Belli bir süre sonra
+
+294
+00:20:45,410 --> 00:20:47,410
+bizim devremizde
+
+295
+00:20:47,410 --> 00:20:49,410
+tekrar bir
+
+296
+00:20:49,410 --> 00:20:51,410
+değişime uğradı. Şurada
+
+297
+00:20:51,410 --> 00:20:53,410
+tekrar
+
+298
+00:20:53,410 --> 00:20:55,410
+çizecek olursak
+
+299
+00:20:55,410 --> 00:20:57,410
+burada da bir gecikme var.
+
+300
+00:20:57,410 --> 00:21:01,559
+Dediğim gibi
+
+301
+00:21:01,559 --> 00:21:03,559
+buradaki asenkron ardışıl
+
+302
+00:21:03,559 --> 00:21:05,559
+devrenin içerisindeki yapıya
+
+303
+00:21:05,559 --> 00:21:07,559
+kullanılan kapılara
+
+304
+00:21:07,559 --> 00:21:09,559
+ondan sonra
+
+305
+00:21:09,559 --> 00:21:11,559
+bu kapıların her birinin ardışıl
+
+306
+00:21:11,559 --> 00:21:13,559
+olarak işlenmesine göre, işareti
+
+307
+00:21:13,559 --> 00:21:15,559
+işlemesine göre belli bir
+
+308
+00:21:15,559 --> 00:21:17,559
+süre sonra çıkış oluşuyor.
+
+309
+00:21:17,559 --> 00:21:19,559
+Tabi burada
+
+310
+00:21:19,559 --> 00:21:23,599
+şuna dikkat etmek lazım.
+
+311
+00:21:23,599 --> 00:21:25,599
+Asekron çalışma doğası
+
+312
+00:21:25,599 --> 00:21:27,599
+gereği
+
+313
+00:21:27,599 --> 00:21:29,599
+birçok değişiklik doğrudan çıkışa
+
+314
+00:21:29,599 --> 00:21:31,599
+yansıtılmaktadır.
+
+315
+00:21:31,599 --> 00:21:33,599
+Ancak bu çalışmada
+
+316
+00:21:33,599 --> 00:21:35,599
+umulmadık zamanlarda zamanlama
+
+317
+00:21:35,599 --> 00:21:37,599
+hataları olabilmekte.
+
+318
+00:21:37,599 --> 00:21:39,599
+Bundan dolayı devre
+
+319
+00:21:39,599 --> 00:21:41,599
+istenmeyen durumlara geçebilir. Yani
+
+320
+00:21:41,599 --> 00:21:43,599
+belli bir anda çıkışın oluşturulması
+
+321
+00:21:43,599 --> 00:21:45,599
+lazım. Eğer bu
+
+322
+00:21:45,599 --> 00:21:47,599
+gecikme eğrileri
+
+323
+00:21:47,599 --> 00:21:49,599
+şuradaki gecikme
+
+324
+00:21:49,599 --> 00:21:51,599
+artmaya başlarsa
+
+325
+00:21:51,599 --> 00:21:53,599
+şuradaki gecikmeler artmaya başlarsa
+
+326
+00:21:53,599 --> 00:21:55,599
+ne olacak arkadaşlar?
+
+327
+00:21:55,599 --> 00:21:57,599
+Devre
+
+328
+00:21:57,599 --> 00:21:59,599
+istenmeyen çıkışlar
+
+329
+00:21:59,599 --> 00:22:01,599
+yapabilir. Bunu çözmenin
+
+330
+00:22:01,599 --> 00:22:03,599
+yolu nedir arkadaşlar?
+
+331
+00:22:03,599 --> 00:22:05,599
+Aynı bir
+
+332
+00:22:05,599 --> 00:22:07,599
+müzik orkestrasında
+
+333
+00:22:07,599 --> 00:22:09,599
+olduğu gibi bir ritim
+
+334
+00:22:09,599 --> 00:22:11,599
+verebilmektir. Yani bütün
+
+335
+00:22:11,599 --> 00:22:13,599
+devre elemanlarının, entegrelerin
+
+336
+00:22:13,599 --> 00:22:15,599
+sonuç üreteceklerin
+
+337
+00:22:15,599 --> 00:22:17,599
+belli bir ritimle
+
+338
+00:22:17,599 --> 00:22:19,599
+çalışması. Belli bir anda çıkışı
+
+339
+00:22:19,599 --> 00:22:21,599
+hazırlamalarını beklememiz lazım.
+
+340
+00:22:21,599 --> 00:22:23,599
+Bunlar da arkadaşlar
+
+341
+00:22:23,599 --> 00:22:25,599
+senkron
+
+342
+00:22:25,599 --> 00:22:27,599
+ardışıl devreler olarak
+
+343
+00:22:27,599 --> 00:22:33,029
+geçiyor. Burada
+
+344
+00:22:33,029 --> 00:22:35,029
+deminki yapıdan farklı olarak
+
+345
+00:22:35,029 --> 00:22:38,529
+senkron
+
+346
+00:22:38,529 --> 00:22:40,529
+ardışıl devre
+
+347
+00:22:40,529 --> 00:22:42,529
+diyelim. XT
+
+348
+00:22:42,529 --> 00:22:44,529
+işaretimiz var. Bir de arkadaşlar
+
+349
+00:22:44,529 --> 00:22:46,529
+Clock
+
+350
+00:22:46,529 --> 00:22:48,529
+yani
+
+351
+00:22:48,529 --> 00:22:50,529
+saat işaretimiz var.
+
+352
+00:22:50,529 --> 00:22:52,529
+Ve çıkış
+
+353
+00:22:52,529 --> 00:22:54,529
+üretiliyor.
+
+354
+00:22:54,529 --> 00:22:56,529
+Peki bu saat
+
+355
+00:22:56,529 --> 00:22:58,529
+işaretimiz nedir bizim için?
+
+356
+00:22:58,529 --> 00:23:00,529
+Saat işareti arkadaşlar
+
+357
+00:23:00,529 --> 00:23:02,529
+bizim
+
+358
+00:23:02,529 --> 00:23:04,529
+basitçe
+
+359
+00:23:04,529 --> 00:23:06,529
+bir
+
+360
+00:23:06,529 --> 00:23:08,529
+kare dalga gibi
+
+361
+00:23:08,529 --> 00:23:12,740
+düşünebiliriz bunları.
+
+362
+00:23:12,740 --> 00:23:14,740
+Şimdi bu kare dalganın
+
+363
+00:23:14,740 --> 00:23:16,740
+ya yükselen kenarında
+
+364
+00:23:16,740 --> 00:23:18,740
+şuradaki gibi
+
+365
+00:23:18,740 --> 00:23:20,740
+ya düşen kenarında
+
+366
+00:23:20,740 --> 00:23:22,740
+veya belli bir seviyesinde
+
+367
+00:23:22,740 --> 00:23:24,740
+çalışma gibi çeşitli
+
+368
+00:23:24,740 --> 00:23:26,740
+çalışma
+
+369
+00:23:26,740 --> 00:23:28,740
+devreye ait çalışma
+
+370
+00:23:28,740 --> 00:23:30,740
+birimleri oluşturabiliriz. Şimdilik biz sadece
+
+371
+00:23:30,740 --> 00:23:32,740
+yükselen kenarda devrelerin
+
+372
+00:23:32,740 --> 00:23:34,740
+tetiklendiğini
+
+373
+00:23:34,740 --> 00:23:36,740
+söyleyelim. Buna da saat
+
+374
+00:23:36,740 --> 00:23:38,740
+diyelim arkadaşlar.
+
+375
+00:23:38,740 --> 00:23:40,740
+Şöyle çekecek olursak
+
+376
+00:23:40,740 --> 00:23:42,740
+belli bir
+
+377
+00:23:42,740 --> 00:23:44,740
+senkronlama
+
+378
+00:23:44,740 --> 00:23:46,740
+anı için
+
+379
+00:23:46,740 --> 00:23:48,740
+belli bir senkronlama anı için
+
+380
+00:23:48,740 --> 00:23:50,740
+geliyor
+
+381
+00:23:50,740 --> 00:23:52,740
+XT işaretimiz
+
+382
+00:23:52,740 --> 00:23:54,740
+bizim işaretimiz
+
+383
+00:23:54,740 --> 00:23:56,740
+şöyle değişime
+
+384
+00:23:56,740 --> 00:24:05,880
+uğruyor. Şurada
+
+385
+00:24:05,880 --> 00:24:07,880
+şurayı belki biraz daha geriye doğru çekebilirim.
+
+386
+00:24:07,880 --> 00:24:14,480
+XT işaretimiz
+
+387
+00:24:14,480 --> 00:24:16,480
+çıkış işaretinin
+
+388
+00:24:16,480 --> 00:24:18,480
+oluşturulmasında ZT'nin
+
+389
+00:24:18,480 --> 00:24:20,480
+oluşturulmasında. Arkadaşlar
+
+390
+00:24:20,480 --> 00:24:22,480
+tam tamına XT işaretindeki
+
+391
+00:24:22,480 --> 00:24:24,480
+değişim olduktan sonra
+
+392
+00:24:24,480 --> 00:24:26,480
+tam şu anda
+
+393
+00:24:26,480 --> 00:24:28,480
+ZT işaretinin
+
+394
+00:24:28,480 --> 00:24:30,480
+oluşması için neye basılıyor?
+
+395
+00:24:30,480 --> 00:24:32,480
+Sanki düğmeye basılıyor.
+
+396
+00:24:32,480 --> 00:24:34,480
+Çıkıştaki değişimde
+
+397
+00:24:34,480 --> 00:24:36,480
+belli bir gecikme ile beraber
+
+398
+00:24:36,480 --> 00:24:38,480
+arkadaşlar
+
+399
+00:24:38,480 --> 00:24:40,480
+belli bir gecikme ile beraber
+
+400
+00:24:40,480 --> 00:24:42,480
+oluşuyor.
+
+401
+00:24:42,480 --> 00:24:44,480
+Bizim bir sonraki
+
+402
+00:24:44,480 --> 00:24:46,480
+senkronlama
+
+403
+00:24:46,480 --> 00:24:48,480
+anımızda şu olsun.
+
+404
+00:24:48,480 --> 00:24:50,480
+Şöyle diyelim
+
+405
+00:24:50,480 --> 00:24:52,480
+eğer burada bir
+
+406
+00:24:52,480 --> 00:24:54,480
+değişim yaşanacaksa şayet
+
+407
+00:24:54,480 --> 00:24:56,480
+buradaki
+
+408
+00:24:56,480 --> 00:24:58,480
+tam şuradaki değişkeni alıyor
+
+409
+00:24:58,480 --> 00:25:00,480
+belli bir gecikme ile
+
+410
+00:25:00,480 --> 00:25:02,480
+çıkış oluşturuyor.
+
+411
+00:25:02,480 --> 00:25:04,480
+Şimdi
+
+412
+00:25:04,480 --> 00:25:06,480
+şuna dikkat etmek lazım burada
+
+413
+00:25:06,480 --> 00:25:08,480
+muhakkak ki
+
+414
+00:25:08,480 --> 00:25:10,480
+devlete işlenmeden dolayı
+
+415
+00:25:10,480 --> 00:25:12,480
+bir gecikme yaşanıyor.
+
+416
+00:25:12,480 --> 00:25:14,480
+Şurada gecikme var.
+
+417
+00:25:14,480 --> 00:25:16,480
+Dikkat edin arkadaşlar
+
+418
+00:25:16,480 --> 00:25:18,480
+şurada tam şu
+
+419
+00:25:18,480 --> 00:25:20,480
+senkronlama çizgisinde
+
+420
+00:25:20,480 --> 00:25:22,480
+inputtaki değişim
+
+421
+00:25:22,480 --> 00:25:24,480
+tabi şurada
+
+422
+00:25:24,480 --> 00:25:26,480
+değişimler gerçekleşiyor şu kısımda
+
+423
+00:25:26,480 --> 00:25:28,480
+belli bir süre sonra
+
+424
+00:25:28,480 --> 00:25:30,480
+oturduktan sonra o değişimi
+
+425
+00:25:30,480 --> 00:25:32,480
+sen tam o
+
+426
+00:25:32,480 --> 00:25:34,480
+senkronlama anındaki değeri al
+
+427
+00:25:34,480 --> 00:25:36,480
+ve çıkışı üret diyoruz.
+
+428
+00:25:36,480 --> 00:25:38,480
+Bu aralardaki değişimleri
+
+429
+00:25:38,480 --> 00:25:40,480
+almıyoruz. Tabi ki
+
+430
+00:25:40,480 --> 00:25:42,480
+belli bir süre sonra bir sonraki
+
+431
+00:25:42,480 --> 00:25:44,480
+saat darbesine kadar
+
+432
+00:25:44,480 --> 00:25:46,480
+bizim çıkışımızın
+
+433
+00:25:46,480 --> 00:25:48,480
+şurada görmüş olduğunuz kadar
+
+434
+00:25:48,480 --> 00:25:50,480
+gördüğünüz gibi çıkışın
+
+435
+00:25:50,480 --> 00:25:52,480
+oluşması bekleniyor ve bu
+
+436
+00:25:52,480 --> 00:25:54,480
+devreyi oluşturan
+
+437
+00:25:54,480 --> 00:25:56,480
+bütün entegre
+
+438
+00:25:56,480 --> 00:25:58,480
+devrelerde, yapılarda
+
+439
+00:25:58,480 --> 00:26:00,480
+sağlanmaya çalışıyor. Demek ki bizim için
+
+440
+00:26:00,480 --> 00:26:02,480
+gecikmelerle
+
+441
+00:26:02,480 --> 00:26:04,480
+oluşacak
+
+442
+00:26:04,480 --> 00:26:08,119
+şuradaki
+
+443
+00:26:08,119 --> 00:26:10,119
+bir saat darbesi içerisinde
+
+444
+00:26:10,119 --> 00:26:12,119
+var olan bütün katmanların
+
+445
+00:26:12,119 --> 00:26:14,119
+işleminin tamamlaması
+
+446
+00:26:14,119 --> 00:26:16,119
+bekleniyor.
+
+447
+00:26:16,119 --> 00:26:18,119
+Eğer giriş işaretinin
+
+448
+00:26:18,119 --> 00:26:20,119
+değişime sıklığı
+
+449
+00:26:20,119 --> 00:26:22,119
+saat işaretinin değişme
+
+450
+00:26:22,119 --> 00:26:24,119
+sıklığından büyükse
+
+451
+00:26:24,119 --> 00:26:26,119
+girişteki bazı değişiklikler
+
+452
+00:26:26,119 --> 00:26:28,119
+hiç algılanmayabilir. Yani
+
+453
+00:26:28,119 --> 00:26:30,119
+bizim burada tez avantajı
+
+454
+00:26:30,119 --> 00:26:32,119
+da bu. Saat ne diyoruz?
+
+455
+00:26:32,119 --> 00:26:34,119
+Giriş işaretinin değişme
+
+456
+00:26:34,119 --> 00:26:36,119
+sıklığı saat işaretinin
+
+457
+00:26:36,119 --> 00:26:38,119
+değişme sıklığından büyükse yani frekans
+
+458
+00:26:38,119 --> 00:26:40,119
+yüksekse
+
+459
+00:26:40,119 --> 00:26:42,119
+girişteki bu durumda
+
+460
+00:26:42,119 --> 00:26:44,119
+bazı işaretler alınmayabilir.
+
+461
+00:26:44,119 --> 00:26:46,119
+Yani sen burada
+
+462
+00:26:46,119 --> 00:26:48,119
+hızlı bir değişim gösterirsen
+
+463
+00:26:48,119 --> 00:26:50,119
+bu aradaki bazı durumlar algılanmayabilir.
+
+464
+00:26:50,119 --> 00:26:52,119
+O yüzden
+
+465
+00:26:52,119 --> 00:26:54,119
+saat işareti
+
+466
+00:26:54,119 --> 00:26:56,119
+değişme sıklığı
+
+467
+00:26:56,119 --> 00:26:58,119
+saat işaretinin değişme sıklığı
+
+468
+00:26:58,119 --> 00:27:00,119
+bu frekans olarak biliniyor.
+
+469
+00:27:00,119 --> 00:27:02,119
+Giriş işaretinin
+
+470
+00:27:02,119 --> 00:27:04,119
+değişme sıklığından büyük
+
+471
+00:27:04,119 --> 00:27:06,119
+seçilir. Yani devrenin
+
+472
+00:27:06,119 --> 00:27:08,119
+saat frekansı
+
+473
+00:27:08,119 --> 00:27:11,809
+girişin
+
+474
+00:27:11,809 --> 00:27:13,809
+değişme
+
+475
+00:27:13,809 --> 00:27:15,809
+hızından
+
+476
+00:27:15,809 --> 00:27:17,809
+büyük seçilir ki
+
+477
+00:27:17,809 --> 00:27:19,809
+bizim şu süre içerisinde
+
+478
+00:27:19,809 --> 00:27:21,809
+değişimlerimiz
+
+479
+00:27:21,809 --> 00:27:26,210
+tamamlansın. Şimdi
+
+480
+00:27:26,210 --> 00:27:28,210
+burada
+
+481
+00:27:28,210 --> 00:27:30,210
+şunlardan da
+
+482
+00:27:30,210 --> 00:27:32,210
+bahsetmek lazım belki
+
+483
+00:27:32,210 --> 00:27:35,589
+bizim
+
+484
+00:27:35,589 --> 00:27:37,589
+saat işaretlerimiz
+
+485
+00:27:37,589 --> 00:27:39,589
+şu şekilde aslında darbeler.
+
+486
+00:27:39,589 --> 00:27:41,589
+Normalde yani ideal
+
+487
+00:27:41,589 --> 00:27:43,589
+olarak düşünecek olursak anlık
+
+488
+00:27:43,589 --> 00:27:45,589
+şöyle bir pulsların atılması
+
+489
+00:27:45,589 --> 00:27:47,589
+gerekiyor ama gerçekte bu işareti oluşturmak
+
+490
+00:27:47,589 --> 00:27:49,589
+mümkün değil. O yüzden
+
+491
+00:27:49,589 --> 00:27:51,589
+şu şekilde kare dalgalar
+
+492
+00:27:51,589 --> 00:27:53,589
+kullanılıyor.
+
+493
+00:27:53,589 --> 00:27:55,589
+Tabii kare dalganın neresinde
+
+494
+00:27:55,589 --> 00:27:57,589
+neresinde senkronize
+
+495
+00:27:57,589 --> 00:27:59,589
+olacağınız burada önem taşımaya başlıyor.
+
+496
+00:27:59,589 --> 00:28:01,589
+Birincisi şurada
+
+497
+00:28:01,589 --> 00:28:03,589
+burası yükselen kenar
+
+498
+00:28:03,589 --> 00:28:05,589
+olarak adlandırılıyor arkadaşlar.
+
+499
+00:28:05,589 --> 00:28:07,589
+Yükselen kenar yani
+
+500
+00:28:07,589 --> 00:28:09,589
+senkronlama anı orada başlıyorsa
+
+501
+00:28:09,589 --> 00:28:11,589
+ona yükselen kenar
+
+502
+00:28:11,589 --> 00:28:13,589
+diyoruz arkadaşlar. Eğer
+
+503
+00:28:13,589 --> 00:28:15,589
+düşen kenarda
+
+504
+00:28:15,589 --> 00:28:17,589
+tetikleniyorsa
+
+505
+00:28:17,589 --> 00:28:19,589
+tabii bu kullandığımız
+
+506
+00:28:19,589 --> 00:28:21,589
+hani kullandığımız chipin
+
+507
+00:28:21,589 --> 00:28:23,589
+clock uçları var şöyle
+
+508
+00:28:23,589 --> 00:28:25,589
+senkronlamayı bildirenli. Oraya
+
+509
+00:28:25,589 --> 00:28:27,589
+bağlanıyor bu uçlar arkadaşlar.
+
+510
+00:28:27,589 --> 00:28:29,589
+Mikro işlemcilerde mikro
+
+511
+00:28:29,589 --> 00:28:31,589
+denetleyicilerde gördüğümüz
+
+512
+00:28:31,589 --> 00:28:33,589
+ondan sonra senkron çalışan
+
+513
+00:28:33,589 --> 00:28:35,589
+ve lojik
+
+514
+00:28:35,589 --> 00:28:37,589
+kapılarda gördüğümüz yapı bu.
+
+515
+00:28:37,589 --> 00:28:39,589
+Ondan sonra
+
+516
+00:28:39,589 --> 00:28:41,589
+bizim
+
+517
+00:28:41,589 --> 00:28:45,920
+düşen kenarda
+
+518
+00:28:45,920 --> 00:28:47,920
+tetiklenen
+
+519
+00:28:47,920 --> 00:28:49,920
+devre elemanlarımız
+
+520
+00:28:49,920 --> 00:28:51,920
+da olur. Yani
+
+521
+00:28:51,920 --> 00:28:53,920
+yüksekten alçağa
+
+522
+00:28:53,920 --> 00:28:55,920
+geçerken tetiklenen
+
+523
+00:28:55,920 --> 00:28:57,920
+yapıda da olabilir. Yani o kulağın
+
+524
+00:28:57,920 --> 00:28:59,920
+tipine dikkat etmeniz lazım.
+
+525
+00:28:59,920 --> 00:29:01,920
+Bunun haricinde
+
+526
+00:29:01,920 --> 00:29:03,920
+şöyle yapılar da oluyor arkadaşlar.
+
+527
+00:29:03,920 --> 00:29:05,920
+Düzey tetikleme dediğimiz
+
+528
+00:29:05,920 --> 00:29:09,269
+şöyle
+
+529
+00:29:09,269 --> 00:29:11,269
+5 voltu gördüğü anlarda
+
+530
+00:29:11,269 --> 00:29:13,269
+yani bu seferde kare dalga
+
+531
+00:29:13,269 --> 00:29:15,269
+olabildiğince az bir süre
+
+532
+00:29:15,269 --> 00:29:17,269
+yapılır ki daraltılır ki
+
+533
+00:29:17,269 --> 00:29:19,269
+tam o anda
+
+534
+00:29:19,269 --> 00:29:21,269
+şu kısımda en azından bir
+
+535
+00:29:21,269 --> 00:29:23,269
+senkronlama işareti oluşsun.
+
+536
+00:29:23,269 --> 00:29:25,269
+Bu
+
+537
+00:29:25,269 --> 00:29:27,269
+yüksek düzey
+
+538
+00:29:27,269 --> 00:29:29,269
+tetikleme olduğu gibi bazen de
+
+539
+00:29:29,269 --> 00:29:31,269
+düşük düzey
+
+540
+00:29:31,269 --> 00:29:33,269
+tetiklemelerde
+
+541
+00:29:33,269 --> 00:29:35,269
+gerçeklenebilir. Bu durumda da
+
+542
+00:29:35,269 --> 00:29:37,269
+tam şu anda senkronlama
+
+543
+00:29:37,269 --> 00:29:39,269
+anı oluşur. Ama
+
+544
+00:29:39,269 --> 00:29:41,269
+genel olarak
+
+545
+00:29:41,269 --> 00:29:43,269
+bir kenar tetikleme
+
+546
+00:29:43,269 --> 00:29:47,670
+ve de
+
+547
+00:29:47,670 --> 00:29:52,710
+düzey tetikleme
+
+548
+00:29:52,710 --> 00:29:54,710
+olmak üzere iki tür
+
+549
+00:29:54,710 --> 00:29:56,710
+saat yapısının
+
+550
+00:29:56,710 --> 00:30:00,339
+olduğunu bilelim arkadaşlar.
+
+551
+00:30:00,339 --> 00:30:04,230
+Şimdi yavaş yavaş
+
+552
+00:30:04,230 --> 00:30:06,230
+durumlardan
+
+553
+00:30:06,230 --> 00:30:08,230
+bahsedelim. Yani hafızanın
+
+554
+00:30:08,230 --> 00:30:10,230
+dersinde neler
+
+555
+00:30:10,230 --> 00:30:12,230
+tutuluyor
+
+556
+00:30:12,230 --> 00:30:14,230
+bundan bahsedelim.
+
+557
+00:30:14,230 --> 00:30:17,539
+Bir saniye arkadaşlar
+
+558
+00:30:17,539 --> 00:30:53,880
+bir dakika şimdi
+
+559
+00:30:53,880 --> 00:30:57,539
+ses geliyor herhalde
+
+560
+00:30:57,539 --> 00:31:04,789
+durumlar ve
+
+561
+00:31:04,789 --> 00:31:06,789
+durum diagramı
+
+562
+00:31:06,789 --> 00:31:15,539
+durumlar ve durum diagramı diyelim.
+
+563
+00:31:15,539 --> 00:31:17,539
+Durum arkadaşlar
+
+564
+00:31:17,539 --> 00:31:19,539
+ardışıl
+
+565
+00:31:19,539 --> 00:31:21,539
+devrinin kendine atanan
+
+566
+00:31:21,539 --> 00:31:23,539
+fonksiyonu yerine getirebilmesi
+
+567
+00:31:23,539 --> 00:31:25,539
+için bulunacağı
+
+568
+00:31:25,539 --> 00:31:27,539
+herhangi bir konumdur.
+
+569
+00:31:27,539 --> 00:31:29,539
+Denilebilir.
+
+570
+00:31:29,539 --> 00:31:31,539
+En basit bir ardışıl devre
+
+571
+00:31:31,539 --> 00:31:33,539
+biri başlangıç diğeri de
+
+572
+00:31:33,539 --> 00:31:35,539
+çıkış olmak üzere iki duruma sahiptir
+
+573
+00:31:35,539 --> 00:31:37,539
+en temelde.
+
+574
+00:31:37,539 --> 00:31:39,539
+Birçok tasarımda ara durumlarda
+
+575
+00:31:39,539 --> 00:31:41,539
+oluşur ve
+
+576
+00:31:41,539 --> 00:31:43,539
+gerçekten
+
+577
+00:31:43,539 --> 00:31:45,539
+gerçekli durum ikiden
+
+578
+00:31:45,539 --> 00:31:47,539
+fazla olur. Örneğin durumdan
+
+579
+00:31:47,539 --> 00:31:49,539
+neyi kastediyoruz biz burada?
+
+580
+00:31:49,539 --> 00:31:51,539
+Örneğin sıfırdan
+
+581
+00:31:51,539 --> 00:31:53,539
+yediye kadar sayalım.
+
+582
+00:31:53,539 --> 00:32:02,960
+Sıfırdan yediye kadar sayalım.
+
+583
+00:32:02,960 --> 00:32:04,960
+Sıfır bir iki
+
+584
+00:32:04,960 --> 00:32:06,960
+üç dört beş
+
+585
+00:32:06,960 --> 00:32:08,960
+altı yedi
+
+586
+00:32:08,960 --> 00:32:10,960
+sıfırdan
+
+587
+00:32:10,960 --> 00:32:12,960
+bire geçtik.
+
+588
+00:32:12,960 --> 00:32:14,960
+Sıfır bir iki üç
+
+589
+00:32:14,960 --> 00:32:16,960
+dört beş
+
+590
+00:32:16,960 --> 00:32:18,960
+burada duralım.
+
+591
+00:32:18,960 --> 00:32:20,960
+Benim beş diyebilmem için
+
+592
+00:32:20,960 --> 00:32:22,960
+beş durumuna gelebilmem için
+
+593
+00:32:22,960 --> 00:32:24,960
+daha önce hangi durumda olmam lazım?
+
+594
+00:32:24,960 --> 00:32:26,960
+Şu dört durumda olmam lazım.
+
+595
+00:32:26,960 --> 00:32:28,960
+Dört durumuna
+
+596
+00:32:28,960 --> 00:32:30,960
+gelebilmem için
+
+597
+00:32:30,960 --> 00:32:32,960
+benim üç durumumda olmam lazım.
+
+598
+00:32:32,960 --> 00:32:34,960
+Aynı şekilde bunlar
+
+599
+00:32:34,960 --> 00:32:36,960
+yedi gelince bitecek miyiz?
+
+600
+00:32:36,960 --> 00:32:38,960
+Veya tekrar başa mı
+
+601
+00:32:38,960 --> 00:32:40,960
+döneceğiz? Bu sorunun da
+
+602
+00:32:40,960 --> 00:32:42,960
+iyi tanımlanmış
+
+603
+00:32:42,960 --> 00:32:44,960
+olması gerekiyor.
+
+604
+00:32:44,960 --> 00:32:46,960
+Şimdi burada
+
+605
+00:32:46,960 --> 00:32:48,960
+sistemin
+
+606
+00:32:48,960 --> 00:32:50,960
+davranışının probleminin iyi
+
+607
+00:32:50,960 --> 00:32:52,960
+tanımlanması lazım.
+
+608
+00:32:52,960 --> 00:32:54,960
+Hangi durumlardayız biz bilgisi
+
+609
+00:32:54,960 --> 00:32:56,960
+iyi
+
+610
+00:32:56,960 --> 00:32:58,960
+tanımlanacak ki biz belli bir
+
+611
+00:32:58,960 --> 00:33:00,960
+noktaya vardığımızda sonra tekrar
+
+612
+00:33:00,960 --> 00:33:02,960
+mı geçeceğiz yoksa başka durumlara
+
+613
+00:33:02,960 --> 00:33:04,960
+mı geçeceğiz? Bunun
+
+614
+00:33:04,960 --> 00:33:06,960
+sorularının iyi bir şekilde
+
+615
+00:33:06,960 --> 00:33:08,960
+belirlenmesi lazım.
+
+616
+00:33:08,960 --> 00:33:10,960
+Bunu yapabilmek için
+
+617
+00:33:10,960 --> 00:33:12,960
+örneğin ne yapıyoruz?
+
+618
+00:33:12,960 --> 00:33:14,960
+Durum tablolarından
+
+619
+00:33:14,960 --> 00:33:16,960
+burada grafik şeklinde
+
+620
+00:33:16,960 --> 00:33:18,960
+göstereceğimiz gibi durum
+
+621
+00:33:18,960 --> 00:33:20,960
+tablolarından da
+
+622
+00:33:20,960 --> 00:33:22,960
+buradaki grafikleri
+
+623
+00:33:22,960 --> 00:33:24,960
+gösterebileceğimiz gibi veya
+
+624
+00:33:24,960 --> 00:33:26,960
+durum
+
+625
+00:33:26,960 --> 00:33:28,960
+tablosu
+
+626
+00:33:28,960 --> 00:33:30,960
+veya
+
+627
+00:33:30,960 --> 00:33:32,960
+durum diagramı diyelim buna
+
+628
+00:33:32,960 --> 00:33:37,650
+bir de durum
+
+629
+00:33:37,650 --> 00:33:39,650
+tablosundan yararlanabiliriz.
+
+630
+00:33:39,650 --> 00:33:43,759
+Durum tablolarında
+
+631
+00:33:43,759 --> 00:33:45,759
+arkadaşlar
+
+632
+00:33:45,759 --> 00:33:47,759
+kısaca şimdiki durum
+
+633
+00:33:47,759 --> 00:33:52,740
+sonraki durum
+
+634
+00:33:52,740 --> 00:33:57,039
+ve çıkış
+
+635
+00:33:57,039 --> 00:33:59,039
+şeklinde devrenin
+
+636
+00:33:59,039 --> 00:34:01,039
+çalışma sistematiği
+
+637
+00:34:01,039 --> 00:34:03,039
+tutulur. Örneğin
+
+638
+00:34:03,039 --> 00:34:05,039
+biz burada
+
+639
+00:34:05,039 --> 00:34:07,039
+0'dan 7'ye
+
+640
+00:34:07,039 --> 00:34:09,039
+kadar sayma dediğimde
+
+641
+00:34:09,039 --> 00:34:11,039
+benim elimde arkadaşlar
+
+642
+00:34:11,039 --> 00:34:13,039
+aslında 8
+
+643
+00:34:13,039 --> 00:34:15,039
+tane durum oluşmuş olabiliyor.
+
+644
+00:34:15,039 --> 00:34:17,039
+Bu 8 tane durumu
+
+645
+00:34:17,039 --> 00:34:19,039
+yani 8 değişik durumu
+
+646
+00:34:19,039 --> 00:34:21,039
+1 söylenmiş, 2 söylenecek.
+
+647
+00:34:21,039 --> 00:34:23,039
+2 söylenmiş, 3 söylenecek.
+
+648
+00:34:23,039 --> 00:34:25,039
+3 söylenmişse şayet
+
+649
+00:34:25,039 --> 00:34:27,039
+4 söylenecek. Herhangi bir yerde başlayabiliyorum
+
+650
+00:34:27,039 --> 00:34:29,039
+sıfırdaymış. Bana mesela
+
+651
+00:34:29,039 --> 00:34:31,039
+bu durumdan başladım diyelim.
+
+652
+00:34:31,039 --> 00:34:33,039
+5'den başladım. Eğer kesin bir
+
+653
+00:34:33,039 --> 00:34:35,039
+başlangıç durumu yoksa
+
+654
+00:34:35,039 --> 00:34:37,039
+5 söylenmişse
+
+655
+00:34:37,039 --> 00:34:39,039
+eğer ben
+
+656
+00:34:39,039 --> 00:34:41,039
+durumu sakladıysam bir yerde
+
+657
+00:34:41,039 --> 00:34:43,039
+bir sonraki durum 6 olacağı biliniyor.
+
+658
+00:34:43,039 --> 00:34:45,039
+İşte burada hafıza yapısına ihtiyacımız var.
+
+659
+00:34:45,039 --> 00:34:47,039
+Durum sayısı
+
+660
+00:34:47,039 --> 00:34:49,039
+arkadaşlar bizim
+
+661
+00:34:49,039 --> 00:34:51,039
+kaç bit kullanacağımızı
+
+662
+00:34:51,039 --> 00:34:53,039
+belirliyor. Örneğin
+
+663
+00:34:53,039 --> 00:34:55,039
+burada da log
+
+664
+00:34:55,039 --> 00:34:57,039
+2 tabanında
+
+665
+00:34:57,039 --> 00:34:59,039
+durum sayısı
+
+666
+00:34:59,039 --> 00:35:01,039
+bunun
+
+667
+00:35:01,039 --> 00:35:03,039
+üst kısmı yani
+
+668
+00:35:03,039 --> 00:35:05,039
+sealing fonksiyonu.
+
+669
+00:35:05,039 --> 00:35:07,039
+Örneğin 9 tane durum
+
+670
+00:35:07,039 --> 00:35:09,039
+olsa 8 tane durum var
+
+671
+00:35:09,039 --> 00:35:11,039
+mesela burada log
+
+672
+00:35:11,039 --> 00:35:13,039
+2 tabanında 8
+
+673
+00:35:13,039 --> 00:35:15,039
+etecek arkadaşlar.
+
+674
+00:35:15,039 --> 00:35:17,039
+3 verecek.
+
+675
+00:35:17,039 --> 00:35:19,039
+Peki
+
+676
+00:35:19,039 --> 00:35:21,039
+log 2 tabanında
+
+677
+00:35:21,039 --> 00:35:23,039
+9 şu fonksiyonu
+
+678
+00:35:23,039 --> 00:35:25,039
+verdiğimiz zaman
+
+679
+00:35:25,039 --> 00:35:27,039
+3'ü aşacak.
+
+680
+00:35:27,039 --> 00:35:29,039
+3 virgüllü bir sayıya gelecek. Bunun
+
+681
+00:35:29,039 --> 00:35:31,039
+sealing fonksiyonu, tavan fonksiyonu
+
+682
+00:35:31,039 --> 00:35:33,039
+bizi 4. bit'i
+
+683
+00:35:33,039 --> 00:35:35,039
+kullanmaya yönlendirecek.
+
+684
+00:35:35,039 --> 00:35:37,039
+Hakeza burada
+
+685
+00:35:37,039 --> 00:35:39,039
+log 2 tabanında 10 tane durum olsa
+
+686
+00:35:39,039 --> 00:35:41,039
+burada 3 virgüllü
+
+687
+00:35:41,039 --> 00:35:43,039
+bir sayı verecek. Bunun
+
+688
+00:35:43,039 --> 00:35:45,039
+sealing fonksiyonu yine
+
+689
+00:35:45,039 --> 00:35:47,039
+4 bit kullanmaya kadar
+
+690
+00:35:47,039 --> 00:35:49,039
+bizi
+
+691
+00:35:49,039 --> 00:35:51,039
+yönlendirecek.
+
+692
+00:35:51,039 --> 00:35:53,039
+Nereye kadar devam edecek
+
+693
+00:35:53,039 --> 00:35:55,039
+bu arkadaşlar? Log
+
+694
+00:35:55,039 --> 00:35:57,039
+2 tabanında 16
+
+695
+00:35:57,039 --> 00:35:59,039
+ya kadar böyle
+
+696
+00:35:59,039 --> 00:36:01,039
+gideceğiz. En sonunda burada
+
+697
+00:36:01,039 --> 00:36:03,039
+yine tam 4
+
+698
+00:36:03,039 --> 00:36:05,039
+ediyor. Log 2
+
+699
+00:36:05,039 --> 00:36:07,039
+tabanında tam burada 4
+
+700
+00:36:07,039 --> 00:36:09,039
+ediyor. Bu aradaki her şey
+
+701
+00:36:09,039 --> 00:36:11,039
+bir üste
+
+702
+00:36:11,039 --> 00:36:13,039
+saklanması
+
+703
+00:36:13,039 --> 00:36:15,039
+gerekiyor. Mesela burada
+
+704
+00:36:15,039 --> 00:36:17,039
+8 tane
+
+705
+00:36:17,039 --> 00:36:19,039
+durum var. Şimdiki durumumuz ne?
+
+706
+00:36:19,039 --> 00:36:21,039
+Eğer bunları biz bitle saklayacak olursak
+
+707
+00:36:21,039 --> 00:36:23,039
+3 bitle saklayacak olursak
+
+708
+00:36:23,039 --> 00:36:25,039
+şöyle
+
+709
+00:36:25,039 --> 00:36:27,039
+A, B, C şeklinde
+
+710
+00:36:27,039 --> 00:36:29,039
+bir sonraki durum
+
+711
+00:36:29,039 --> 00:36:31,039
+A, B, C'nin
+
+712
+00:36:31,039 --> 00:36:33,039
+ve çıkışın ne olacağıyla alakalı.
+
+713
+00:36:33,039 --> 00:36:35,039
+Örneğin
+
+714
+00:36:35,039 --> 00:36:38,739
+0'dan 7'ye kadar sayan
+
+715
+00:36:38,739 --> 00:36:40,739
+ve çıkışını tek sayılarda
+
+716
+00:36:40,739 --> 00:36:42,739
+logik 1 yapan
+
+717
+00:36:42,739 --> 00:36:44,739
+öyle bir
+
+718
+00:36:44,739 --> 00:36:46,739
+program tanımlamıştım. Çünkü çıkış tanımlayalım.
+
+719
+00:36:46,739 --> 00:36:48,739
+Çünkü burada çıkış yok. Sadece
+
+720
+00:36:48,739 --> 00:36:50,739
+sayma var.
+
+721
+00:36:50,739 --> 00:36:52,739
+Çıkışını tek sayılarda
+
+722
+00:36:52,739 --> 00:36:54,739
+logik 1
+
+723
+00:36:54,739 --> 00:36:58,019
+tek sayılarda
+
+724
+00:36:58,019 --> 00:37:00,019
+logik 1 yapan
+
+725
+00:37:00,019 --> 00:37:04,360
+çıkışı bir
+
+726
+00:37:04,360 --> 00:37:06,360
+durum tablosu çizelim.
+
+727
+00:37:06,360 --> 00:37:08,360
+Şöyle 0'dan 7'ye
+
+728
+00:37:08,360 --> 00:37:10,360
+sayıyorum. 0, 0, 0
+
+729
+00:37:10,360 --> 00:37:12,360
+bir sonraki durum ne?
+
+730
+00:37:12,360 --> 00:37:14,360
+0, 0, 1
+
+731
+00:37:14,360 --> 00:37:16,360
+çıkışım ne olacak?
+
+732
+00:37:16,360 --> 00:37:18,360
+Tek sayılarda
+
+733
+00:37:18,360 --> 00:37:20,360
+bir sonraki durum oluştu.
+
+734
+00:37:20,360 --> 00:37:22,360
+Şu andaki durum 0'du. Tek sayıya
+
+735
+00:37:22,360 --> 00:37:24,360
+geçtim. Çıkışım 1 oldu.
+
+736
+00:37:24,360 --> 00:37:26,360
+0, 0, 1'de
+
+737
+00:37:26,360 --> 00:37:28,360
+bir sonraki durum ne? 0, 1, 0
+
+738
+00:37:28,360 --> 00:37:30,360
+Tek sayıya
+
+739
+00:37:30,360 --> 00:37:32,360
+düştüm. Bu şekilde
+
+740
+00:37:32,360 --> 00:37:34,360
+ilerliyorum. En sonunda
+
+741
+00:37:34,360 --> 00:37:36,360
+1, 1, 1'e geldim. Buradan
+
+742
+00:37:36,360 --> 00:37:38,360
+sonra tekrar başa dönmüşüm.
+
+743
+00:37:38,360 --> 00:37:40,360
+Şimdi burada başa dönüp dönmeyeceği
+
+744
+00:37:40,360 --> 00:37:42,360
+soru işareti arkadaşlar.
+
+745
+00:37:42,360 --> 00:37:44,360
+Burada diyebilir ki
+
+746
+00:37:44,360 --> 00:37:46,360
+7'ye kadar say. Tekrar 1
+
+747
+00:37:46,360 --> 00:37:48,360
+kendi üstüne dön de diyebilir.
+
+748
+00:37:48,360 --> 00:37:50,360
+Bu durum diagramlarında
+
+749
+00:37:50,360 --> 00:37:52,360
+kendi üstüne dönme de söz konusu.
+
+750
+00:37:52,360 --> 00:37:54,360
+Tabi burada problemin
+
+751
+00:37:54,360 --> 00:37:56,360
+en önemlisi tanımlanması
+
+752
+00:37:56,360 --> 00:38:00,789
+gerekiyor bizim için.
+
+753
+00:38:00,789 --> 00:38:02,789
+Şimdi
+
+754
+00:38:02,789 --> 00:38:06,039
+bizim
+
+755
+00:38:06,039 --> 00:38:08,039
+bu durum diagramlarında
+
+756
+00:38:08,039 --> 00:38:10,039
+arkadaşlar genel
+
+757
+00:38:10,039 --> 00:38:12,039
+gösterimiz şu şekilde.
+
+758
+00:38:12,039 --> 00:38:14,039
+Örneğin
+
+759
+00:38:14,039 --> 00:38:16,039
+bir durum n'deyiz
+
+760
+00:38:16,039 --> 00:38:18,039
+ve durum
+
+761
+00:38:18,039 --> 00:38:20,039
+n artı 1'e geçiyoruz.
+
+762
+00:38:20,039 --> 00:38:22,039
+Hocam çıkışı tek sayıda
+
+763
+00:38:22,039 --> 00:38:24,039
+şiflerde lojik 1 yapan değil miydi?
+
+764
+00:38:24,039 --> 00:38:26,039
+Biz şiflerde 1 yaptık galiba da.
+
+765
+00:38:26,039 --> 00:38:31,360
+Evet evet. Şu andaki durum
+
+766
+00:38:31,360 --> 00:38:33,360
+bir sonraki durum
+
+767
+00:38:33,360 --> 00:38:35,360
+diyerek evet onu şöyle yapalım.
+
+768
+00:38:35,360 --> 00:38:37,360
+0,
+
+769
+00:38:37,360 --> 00:38:39,360
+1
+
+770
+00:38:39,360 --> 00:38:41,360
+Şu andaki durumum hep 1
+
+771
+00:38:41,360 --> 00:38:43,360
+verecek.
+
+772
+00:38:43,360 --> 00:38:45,360
+Tamam. Teşekkürler
+
+773
+00:38:45,360 --> 00:38:47,360
+uyarı için. Şimdi
+
+774
+00:38:47,360 --> 00:38:49,360
+bizim
+
+775
+00:38:49,360 --> 00:38:51,360
+o andaki girişimiz
+
+776
+00:38:51,360 --> 00:38:53,360
+1 olsun.
+
+777
+00:38:53,360 --> 00:38:55,360
+Çıkışımız
+
+778
+00:38:55,360 --> 00:38:57,360
+0 olsun.
+
+779
+00:38:57,360 --> 00:39:01,349
+Şeklinde durum
+
+780
+00:39:01,349 --> 00:39:03,349
+diagramlarında giriş
+
+781
+00:39:03,349 --> 00:39:05,349
+ve devrenin
+
+782
+00:39:05,349 --> 00:39:07,349
+çıkışı bilgisi
+
+783
+00:39:07,349 --> 00:39:11,269
+tutulur. Şimdi
+
+784
+00:39:11,269 --> 00:39:13,269
+giriş bizim
+
+785
+00:39:13,269 --> 00:39:15,269
+inputlarımız
+
+786
+00:39:15,269 --> 00:39:17,269
+çıkışta devrenin çıkışında
+
+787
+00:39:17,269 --> 00:39:19,269
+oluşan durum
+
+788
+00:39:19,269 --> 00:39:21,269
+şeklinde ikili
+
+789
+00:39:21,269 --> 00:39:23,269
+çiftler şeklinde düğümler
+
+790
+00:39:23,269 --> 00:39:25,269
+bunlara da düğüm diyelim
+
+791
+00:39:25,269 --> 00:39:27,269
+veya durumlar
+
+792
+00:39:27,269 --> 00:39:29,269
+düğüm durumları
+
+793
+00:39:29,269 --> 00:39:31,269
+durumlarından geçişler
+
+794
+00:39:31,269 --> 00:39:33,269
+tanımlanıyor. Örneğin buradan
+
+795
+00:39:33,269 --> 00:39:35,269
+0 geldiğinde çıkış
+
+796
+00:39:35,269 --> 00:39:37,269
+1 olacak şekilde bir yere gidebilir.
+
+797
+00:39:37,269 --> 00:39:39,269
+Giriş
+
+798
+00:39:39,269 --> 00:39:41,269
+1 olduğunda burada bir bitlik değişim
+
+799
+00:39:41,269 --> 00:39:43,269
+var. Eğer daha fazla
+
+800
+00:39:43,269 --> 00:39:45,269
+bitlik değişim varsa dediğim gibi
+
+801
+00:39:45,269 --> 00:39:47,269
+şu kısım giriş
+
+802
+00:39:47,269 --> 00:39:49,269
+şu kısım çıkış olarak
+
+803
+00:39:49,269 --> 00:39:51,269
+bir geldiğinde ise
+
+804
+00:39:51,269 --> 00:39:53,269
+başka bir düğme
+
+805
+00:39:53,269 --> 00:39:55,269
+doğru gidiyor.
+
+806
+00:39:55,269 --> 00:39:57,269
+Bu şekilde bir gösterimimiz var.
+
+807
+00:39:57,269 --> 00:40:00,900
+Arkadaşlar normalde
+
+808
+00:40:00,900 --> 00:40:02,900
+ben bunları çizerken
+
+809
+00:40:02,900 --> 00:40:04,900
+şöyle bir şey de demem lazım.
+
+810
+00:40:04,900 --> 00:40:06,900
+Saatin yükselen
+
+811
+00:40:06,900 --> 00:40:08,900
+kenarında ve
+
+812
+00:40:08,900 --> 00:40:10,900
+girişte 1 oluştuğunda
+
+813
+00:40:10,900 --> 00:40:12,900
+çıkış bu olur
+
+814
+00:40:12,900 --> 00:40:14,900
+demem lazım ama aslında buradaki
+
+815
+00:40:14,900 --> 00:40:16,900
+şu geçiş anlarının
+
+816
+00:40:16,900 --> 00:40:18,900
+her biri saatin
+
+817
+00:40:18,900 --> 00:40:20,900
+ya yükselen kenarında
+
+818
+00:40:20,900 --> 00:40:22,900
+ya düşen kenarında
+
+819
+00:40:22,900 --> 00:40:24,900
+veya belli
+
+820
+00:40:24,900 --> 00:40:26,900
+seviyelerde
+
+821
+00:40:26,900 --> 00:40:28,900
+bu işlem gerçekleştirilir.
+
+822
+00:40:28,900 --> 00:40:30,900
+Ama saat işareti gösterilmez.
+
+823
+00:40:30,900 --> 00:40:32,900
+Çünkü aksi söylenmediği sürece
+
+824
+00:40:32,900 --> 00:40:34,900
+tasarruf devrenin
+
+825
+00:40:34,900 --> 00:40:36,900
+senkron
+
+826
+00:40:36,900 --> 00:40:38,900
+ardışıl
+
+827
+00:40:38,900 --> 00:40:40,900
+devre olduğunu
+
+828
+00:40:40,900 --> 00:40:42,900
+düşüneceğiz bundan sonraki
+
+829
+00:40:42,900 --> 00:40:47,880
+yapıda. Bir tane örnek
+
+830
+00:40:47,880 --> 00:40:49,880
+üzerinden gidecek olursak
+
+831
+00:40:49,880 --> 00:40:51,880
+çok daha iyi olacak
+
+832
+00:40:51,880 --> 00:40:56,760
+arkadaşlar.
+
+833
+00:40:58,760 --> 00:41:00,760
+Şimdi
+
+834
+00:41:00,760 --> 00:41:02,760
+basit bir şifreleme devresi yapılmak
+
+835
+00:41:02,760 --> 00:41:04,760
+isteniyor.
+
+836
+00:41:04,760 --> 00:41:09,989
+Şifreleme devresi
+
+837
+00:41:09,989 --> 00:41:11,989
+adı üstünde şifreleme olduğu için
+
+838
+00:41:11,989 --> 00:41:13,989
+belli bazı
+
+839
+00:41:13,989 --> 00:41:15,989
+bit seçenekleri
+
+840
+00:41:15,989 --> 00:41:17,989
+arka arkaya geldiğinde
+
+841
+00:41:17,989 --> 00:41:19,989
+devredeki şifre
+
+842
+00:41:19,989 --> 00:41:21,989
+çözülecek.
+
+843
+00:41:21,989 --> 00:41:23,989
+Dolayısıyla hafızada
+
+844
+00:41:23,989 --> 00:41:25,989
+hangi durumların gelmesi
+
+845
+00:41:25,989 --> 00:41:27,989
+gerektiğine tutulması lazım.
+
+846
+00:41:27,989 --> 00:41:29,989
+Bu da bize
+
+847
+00:41:29,989 --> 00:41:31,989
+bir senkron
+
+848
+00:41:31,989 --> 00:41:33,989
+ardışıl devre
+
+849
+00:41:33,989 --> 00:41:35,989
+tasarımını yönlendiriyor.
+
+850
+00:41:35,989 --> 00:41:37,989
+Basit bir şifreleme devresi
+
+851
+00:41:37,989 --> 00:41:39,989
+yapılmak isteniyor.
+
+852
+00:41:39,989 --> 00:41:41,989
+Devrenin bir girişi ve bir çıkışı var.
+
+853
+00:41:41,989 --> 00:41:43,989
+Devrenin
+
+854
+00:41:43,989 --> 00:41:45,989
+ardışıl devre
+
+855
+00:41:45,989 --> 00:41:47,989
+bir girişi x
+
+856
+00:41:47,989 --> 00:41:49,989
+ve bir çıkışı
+
+857
+00:41:49,989 --> 00:41:51,989
+var.
+
+858
+00:41:51,989 --> 00:41:56,480
+Bu da z olsun.
+
+859
+00:41:56,480 --> 00:41:58,480
+Girilen şifre koduna göre
+
+860
+00:41:58,480 --> 00:42:00,480
+çıkışı ya lojik 1 yapacak
+
+861
+00:42:00,480 --> 00:42:02,480
+ya da 0 yapacak.
+
+862
+00:42:02,480 --> 00:42:04,480
+Şifrenin lojik
+
+863
+00:42:04,480 --> 00:42:06,480
+değerde girildiğini
+
+864
+00:42:06,480 --> 00:42:08,480
+varsayıyoruz ve şifrenin
+
+865
+00:42:08,480 --> 00:42:10,480
+1 1 1
+
+866
+00:42:10,480 --> 00:42:12,480
+olduğunu düşünüyoruz.
+
+867
+00:42:12,480 --> 00:42:14,480
+Şimdi şifre
+
+868
+00:42:14,480 --> 00:42:16,480
+bu. Ama
+
+869
+00:42:16,480 --> 00:42:18,480
+siz şöyle düşünün bunu
+
+870
+00:42:18,480 --> 00:42:20,480
+aslında biz bunu bir devreye veriyorsak
+
+871
+00:42:20,480 --> 00:42:22,480
+şayet. Yani bir bit
+
+872
+00:42:22,480 --> 00:42:24,480
+streaming şeklinde
+
+873
+00:42:24,480 --> 00:42:26,480
+düşünüyorsak şöyledir aslında. Önce 1 gelir
+
+874
+00:42:26,480 --> 00:42:28,480
+sonra 1 gelir
+
+875
+00:42:28,480 --> 00:42:30,480
+sonra 1 gelir sonra 0 gelir.
+
+876
+00:42:30,480 --> 00:42:32,480
+Yani şu
+
+877
+00:42:32,480 --> 00:42:34,480
+t anı
+
+878
+00:42:34,480 --> 00:42:36,480
+şu t artı 1 anı
+
+879
+00:42:36,480 --> 00:42:38,480
+şu t artı 2 anı
+
+880
+00:42:38,480 --> 00:42:40,480
+şu t artı 3 anı
+
+881
+00:42:40,480 --> 00:42:42,480
+eğer böyle bakacak olursak zaman böyle
+
+882
+00:42:42,480 --> 00:42:44,480
+geçiyor. t böyle geçer.
+
+883
+00:42:44,480 --> 00:42:46,480
+Önce 1 gelecek.
+
+884
+00:42:46,480 --> 00:42:48,480
+Ama yazarken biz 1'i
+
+885
+00:42:48,480 --> 00:42:50,480
+başa yazıyoruz tabi ki. Orada kafa
+
+886
+00:42:50,480 --> 00:42:52,480
+karışmasın. Yani arda arda
+
+887
+00:42:52,480 --> 00:42:54,480
+3 tane lojik 1 sonra 0
+
+888
+00:42:54,480 --> 00:42:56,480
+geldiğinde çıkışın 1 olduğunu
+
+889
+00:42:56,480 --> 00:42:58,480
+aksi durumda çıkışın 0
+
+890
+00:42:58,480 --> 00:43:00,480
+olması istenmekte.
+
+891
+00:43:00,480 --> 00:43:04,659
+Şimdi
+
+892
+00:43:04,659 --> 00:43:06,659
+eğer şifre gelmediği sürece
+
+893
+00:43:06,659 --> 00:43:08,659
+benim z
+
+894
+00:43:08,659 --> 00:43:10,659
+normalde 0'da
+
+895
+00:43:10,659 --> 00:43:12,659
+olacak. Geldiği
+
+896
+00:43:12,659 --> 00:43:14,659
+zaman yani şu şart sağlandığı
+
+897
+00:43:14,659 --> 00:43:16,659
+zaman ben 1'e geçeceğim.
+
+898
+00:43:16,659 --> 00:43:18,659
+Bakalım kaç durumda biz bunu
+
+899
+00:43:18,659 --> 00:43:20,659
+oluşturacağız.
+
+900
+00:43:20,659 --> 00:43:22,659
+Önce
+
+901
+00:43:22,659 --> 00:43:24,659
+0 durumumuz olsun.
+
+902
+00:43:24,659 --> 00:43:27,969
+Durum 0.
+
+903
+00:43:27,969 --> 00:43:29,969
+Bu durum 0 hangi durumdur arkadaşlar?
+
+904
+00:43:29,969 --> 00:43:33,349
+Benim
+
+905
+00:43:33,349 --> 00:43:35,349
+1'i beklediğim o ana
+
+906
+00:43:35,349 --> 00:43:37,349
+kadar devrenin girişine 1 0
+
+907
+00:43:37,349 --> 00:43:39,349
+dizileri gelmeye başlıyor.
+
+908
+00:43:39,349 --> 00:43:41,349
+Eğer benim
+
+909
+00:43:41,349 --> 00:43:43,349
+1 geldiği
+
+910
+00:43:43,349 --> 00:43:47,590
+zaman 0
+
+911
+00:43:47,590 --> 00:43:49,590
+durumu
+
+912
+00:43:49,590 --> 00:43:51,590
+1'e
+
+913
+00:43:51,590 --> 00:43:53,590
+gideceğimi düşüneyim.
+
+914
+00:43:53,590 --> 00:43:55,590
+1 geldi çıkış 0
+
+915
+00:43:55,590 --> 00:43:57,590
+ama ben D1'e geçtim.
+
+916
+00:43:57,590 --> 00:43:59,590
+Peki D0'da
+
+917
+00:43:59,590 --> 00:44:01,590
+0 gelme durumunda ne olacak
+
+918
+00:44:01,590 --> 00:44:03,590
+arkadaşlar?
+
+919
+00:44:03,590 --> 00:44:05,590
+Çıkış yine 0. Burası
+
+920
+00:44:05,590 --> 00:44:07,590
+D0 1 bekleme
+
+921
+00:44:07,590 --> 00:44:09,590
+durumu. 1 geldiğinde
+
+922
+00:44:09,590 --> 00:44:11,590
+nereye gidiyor arkadaşlar?
+
+923
+00:44:11,590 --> 00:44:13,590
+1 gelmiş D1
+
+924
+00:44:13,590 --> 00:44:15,590
+yani 1 tane 1 gelmiş
+
+925
+00:44:15,590 --> 00:44:19,000
+durumuna gidiyor. Peki
+
+926
+00:44:19,000 --> 00:44:21,000
+bu durumdayken
+
+927
+00:44:21,000 --> 00:44:23,000
+bir daha 1 gelirse nereye
+
+928
+00:44:23,000 --> 00:44:27,909
+gideceğim? D2
+
+929
+00:44:27,909 --> 00:44:29,909
+durumuna. Yani 2 tane 1
+
+930
+00:44:29,909 --> 00:44:31,909
+gelmiş demek bu. Çıkış hala
+
+931
+00:44:31,909 --> 00:44:33,909
+0. Peki buradayken
+
+932
+00:44:33,909 --> 00:44:35,909
+1 tane
+
+933
+00:44:35,909 --> 00:44:37,909
+1 gelmiş. 0 gelirse
+
+934
+00:44:37,909 --> 00:44:39,909
+D1 durumundayım.
+
+935
+00:44:39,909 --> 00:44:41,909
+0 gelirse nereye gitmem lazım?
+
+936
+00:44:41,909 --> 00:44:45,320
+D0'a
+
+937
+00:44:45,320 --> 00:44:47,320
+geçmem lazım. Çünkü
+
+938
+00:44:47,320 --> 00:44:49,320
+benim
+
+939
+00:44:49,320 --> 00:44:51,320
+tekrar 1 tane
+
+940
+00:44:51,320 --> 00:44:53,320
+1 beklemem gerekiyor. Benim
+
+941
+00:44:53,320 --> 00:44:55,320
+düzenim bozuldu.
+
+942
+00:44:55,320 --> 00:44:57,320
+Arka arkaya 3 tane ardışıldı.
+
+943
+00:44:57,320 --> 00:44:59,320
+Sonra 0 gelmesi gerekiyor.
+
+944
+00:44:59,320 --> 00:45:03,590
+Bunun ardından
+
+945
+00:45:03,590 --> 00:45:05,590
+şu anda D2'deyim. D2 ne demek?
+
+946
+00:45:05,590 --> 00:45:07,590
+2 tane 1 gelmiş durumu.
+
+947
+00:45:07,590 --> 00:45:11,800
+Bir daha 1 gelirse
+
+948
+00:45:11,800 --> 00:45:13,800
+ben D3'e geçerim.
+
+949
+00:45:13,800 --> 00:45:15,800
+Bir daha 1 geldi.
+
+950
+00:45:15,800 --> 00:45:17,800
+Sonuç
+
+951
+00:45:17,800 --> 00:45:19,800
+hala
+
+952
+00:45:19,800 --> 00:45:21,800
+çıkış 0.
+
+953
+00:45:21,800 --> 00:45:23,800
+Peki
+
+954
+00:45:23,800 --> 00:45:25,800
+benim gerçek durum 1 1
+
+955
+00:45:25,800 --> 00:45:27,800
+3 tane 1 geldi.
+
+956
+00:45:27,800 --> 00:45:29,800
+Bir tane de 0 gelirse
+
+957
+00:45:31,800 --> 00:45:33,800
+bir tane de 0 gelirse
+
+958
+00:45:33,800 --> 00:45:38,579
+çıkış 1 oluyor.
+
+959
+00:45:38,579 --> 00:45:40,579
+Buradan sonra
+
+960
+00:45:40,579 --> 00:45:42,579
+tabii ki bakın her bir durumda
+
+961
+00:45:42,579 --> 00:45:44,579
+oluşacak bütün durumların
+
+962
+00:45:44,579 --> 00:45:46,579
+çıktı olarak verilmesi lazım. Örneğin
+
+963
+00:45:46,579 --> 00:45:48,579
+ben D3'den 0'ı
+
+964
+00:45:48,579 --> 00:45:50,579
+çıktım. Peki 1 gelse
+
+965
+00:45:50,579 --> 00:45:52,579
+ne olacaktı?
+
+966
+00:45:52,579 --> 00:45:54,579
+Bir daha 1 gelseydi
+
+967
+00:45:54,579 --> 00:45:56,579
+yani
+
+968
+00:45:56,579 --> 00:45:58,579
+1, 2, 3.
+
+969
+00:45:58,579 --> 00:46:00,579
+1 geldi. 4. 1 gelseydi
+
+970
+00:46:00,579 --> 00:46:02,579
+ne olacaktı?
+
+971
+00:46:02,579 --> 00:46:04,579
+Yine başa dönecekti ama
+
+972
+00:46:04,579 --> 00:46:06,579
+bu sefer çıkış değeri olarak 0
+
+973
+00:46:06,579 --> 00:46:08,579
+verecekti. Tekrar
+
+974
+00:46:08,579 --> 00:46:10,579
+başa dönmeyecekti çünkü
+
+975
+00:46:10,579 --> 00:46:12,579
+işin sırrı şu. 3 tane
+
+976
+00:46:12,579 --> 00:46:14,579
+1 gelecek arka arkaya
+
+977
+00:46:14,579 --> 00:46:16,579
+dolayısıyla
+
+978
+00:46:16,579 --> 00:46:18,579
+onu hafızada tutması lazım.
+
+979
+00:46:18,579 --> 00:46:20,579
+Yani 1 geldiği zaman
+
+980
+00:46:20,579 --> 00:46:22,579
+çıkış 0 olacaktı. Şöyle geldi 1
+
+981
+00:46:22,579 --> 00:46:24,579
+şöyle geldi yani 1
+
+982
+00:46:24,579 --> 00:46:26,579
+1, 1 geldi.
+
+983
+00:46:26,579 --> 00:46:28,579
+Şurada 0 bekliyordu.
+
+984
+00:46:28,579 --> 00:46:30,579
+Bir daha 1 gelince bunun bir anlamı
+
+985
+00:46:30,579 --> 00:46:32,579
+kalmadı. Burada 0
+
+986
+00:46:32,579 --> 00:46:34,579
+beklemeye başlıyor. O yüzden
+
+987
+00:46:34,579 --> 00:46:36,579
+kendi üstüne dönecek.
+
+988
+00:46:36,579 --> 00:46:38,579
+D3 durumunda kalacak. Tamam
+
+989
+00:46:38,579 --> 00:46:40,579
+4. 1 geldi ama
+
+990
+00:46:40,579 --> 00:46:42,579
+şuradaki 1'in bir anlamı kalmadı.
+
+991
+00:46:42,579 --> 00:46:44,579
+Şununla beraber artık 0'ı
+
+992
+00:46:44,579 --> 00:46:47,889
+bekleyeceğiz artık. Burada
+
+993
+00:46:47,889 --> 00:46:49,889
+iki türlü
+
+994
+00:46:49,889 --> 00:46:51,889
+çıkış yapılabilir. Ben
+
+995
+00:46:51,889 --> 00:46:53,889
+hani burada sizi yönlendirdim ama
+
+996
+00:46:53,889 --> 00:46:55,889
+dedim ki bir daha 0
+
+997
+00:46:55,889 --> 00:46:57,889
+geldi. 1, 1, 1,
+
+998
+00:46:57,889 --> 00:46:59,889
+0 geldi.
+
+999
+00:46:59,889 --> 00:47:01,889
+Tamam mı? T buraya
+
+1000
+00:47:01,889 --> 00:47:03,889
+doğru artıyor. Normalde
+
+1001
+00:47:03,889 --> 00:47:05,889
+yazacak olsam 1, 1, 1, 0
+
+1002
+00:47:05,889 --> 00:47:07,889
+durumu oluştu. Peki
+
+1003
+00:47:07,889 --> 00:47:09,889
+bu 1,
+
+1004
+00:47:09,889 --> 00:47:11,889
+1, 0 durumu oluştuktan
+
+1005
+00:47:11,889 --> 00:47:13,889
+sonra
+
+1006
+00:47:13,889 --> 00:47:15,889
+başa mı döneceğim? Tekrar
+
+1007
+00:47:15,889 --> 00:47:17,889
+1 mi bekleyeceğim?
+
+1008
+00:47:17,889 --> 00:47:19,889
+Yoksa
+
+1009
+00:47:19,889 --> 00:47:21,889
+belli bir noktadan sonra
+
+1010
+00:47:21,889 --> 00:47:23,889
+şifre açılmış gibi mi davranacağım?
+
+1011
+00:47:23,889 --> 00:47:28,039
+Mesela
+
+1012
+00:47:28,039 --> 00:47:30,039
+bunun yerine şöyle bir durum da oluşturabilirdik.
+
+1013
+00:47:30,039 --> 00:47:32,039
+Dördüncü bir durum olarak. D4
+
+1014
+00:47:32,039 --> 00:47:34,039
+yani
+
+1015
+00:47:34,039 --> 00:47:36,039
+1, 1, 1, 0 gelmiş.
+
+1016
+00:47:36,039 --> 00:47:38,039
+Artık bundan sonra
+
+1017
+00:47:38,039 --> 00:47:40,039
+ne gelirse gelsin
+
+1018
+00:47:40,039 --> 00:47:42,039
+çıkış 1 olma durumu.
+
+1019
+00:47:42,039 --> 00:47:44,039
+Yani
+
+1020
+00:47:44,039 --> 00:47:46,039
+bir kere devrede
+
+1021
+00:47:46,039 --> 00:47:48,039
+1, 1, 1, 0'ı gördüğü zaman
+
+1022
+00:47:48,039 --> 00:47:50,039
+çıkışı 1 yaptı ve
+
+1023
+00:47:50,039 --> 00:47:53,380
+kilitlendi veya
+
+1024
+00:47:53,380 --> 00:47:55,380
+1, 1, 1, 0 geldi
+
+1025
+00:47:55,380 --> 00:47:57,380
+1, 1,
+
+1026
+00:47:57,380 --> 00:47:59,380
+1, 0 geldi. Bir daha
+
+1027
+00:47:59,380 --> 00:48:01,380
+bir bekleme durumu. Şurası.
+
+1028
+00:48:01,380 --> 00:48:03,380
+Tekrar
+
+1029
+00:48:03,380 --> 00:48:05,380
+şifrenin oluşmasını bekliyorum.
+
+1030
+00:48:05,380 --> 00:48:07,380
+Burada iyi tanımlamak lazım
+
+1031
+00:48:07,380 --> 00:48:09,380
+problemi arkadaşlar.
+
+1032
+00:48:09,380 --> 00:48:12,719
+Çünkü
+
+1033
+00:48:12,719 --> 00:48:14,719
+benim burada
+
+1034
+00:48:14,719 --> 00:48:16,719
+1, şu baktığımda
+
+1035
+00:48:16,719 --> 00:48:18,719
+1, 2, 3,
+
+1036
+00:48:18,719 --> 00:48:20,719
+4 tane
+
+1037
+00:48:20,719 --> 00:48:22,719
+bir giriş. 4 tane durumum
+
+1038
+00:48:22,719 --> 00:48:24,719
+var. Log
+
+1039
+00:48:24,719 --> 00:48:26,719
+2 tabanında
+
+1040
+00:48:26,719 --> 00:48:28,719
+4, 2. Ama beşinci bir durum
+
+1041
+00:48:28,719 --> 00:48:30,719
+oluşursa
+
+1042
+00:48:30,719 --> 00:48:32,719
+şöyle yaptığım zaman log
+
+1043
+00:48:32,719 --> 00:48:34,719
+2 tabanında
+
+1044
+00:48:34,719 --> 00:48:36,719
+5 olması durumunda
+
+1045
+00:48:36,719 --> 00:48:38,719
+bunu da tavan fonksiyonuna
+
+1046
+00:48:38,719 --> 00:48:40,719
+baktığımda 3 tane
+
+1047
+00:48:40,719 --> 00:48:42,719
+bit kullanmam lazım.
+
+1048
+00:48:42,719 --> 00:48:44,719
+Sonuçta bu durumlar
+
+1049
+00:48:44,719 --> 00:48:46,719
+nerede saklanıyor? Hafızada
+
+1050
+00:48:46,719 --> 00:48:48,719
+3 tane
+
+1051
+00:48:48,719 --> 00:48:50,719
+2 tane bitte veya 3 tane
+
+1052
+00:48:50,719 --> 00:48:52,719
+bitte saklanacak. Eğer 4 durum
+
+1053
+00:48:52,719 --> 00:48:54,719
+varsa benim için
+
+1054
+00:48:54,719 --> 00:48:56,719
+şu 2 bit yeterli olacak.
+
+1055
+00:48:56,719 --> 00:48:58,719
+Örneğin 0, 0 durumu
+
+1056
+00:48:58,719 --> 00:49:00,719
+şunu tutacak.
+
+1057
+00:49:00,719 --> 00:49:02,719
+D1 durumu hani
+
+1058
+00:49:02,719 --> 00:49:04,719
+kombinozonsal devrin okuyacağı durum.
+
+1059
+00:49:04,719 --> 00:49:06,719
+Şurada 0, 1
+
+1060
+00:49:06,719 --> 00:49:08,719
+1, 0 ve 1, 1
+
+1061
+00:49:08,719 --> 00:49:10,719
+şeklinde saklanacak.
+
+1062
+00:49:10,719 --> 00:49:12,719
+Eğer bir tane daha bit
+
+1063
+00:49:12,719 --> 00:49:14,719
+gerekseydi benim bir tane daha durum
+
+1064
+00:49:14,719 --> 00:49:16,719
+oluşsaydı o durumları arttırmam
+
+1065
+00:49:16,719 --> 00:49:20,710
+gerekecekti. Şimdi
+
+1066
+00:49:20,710 --> 00:49:22,710
+burada şöyle bir
+
+1067
+00:49:22,710 --> 00:49:26,210
+kavram var arkadaşlar.
+
+1068
+00:49:26,210 --> 00:49:28,210
+Sonlu durum makinaları
+
+1069
+00:49:28,210 --> 00:49:30,210
+sonlu
+
+1070
+00:49:30,210 --> 00:49:32,210
+durum
+
+1071
+00:49:32,210 --> 00:49:34,210
+makineleri
+
+1072
+00:49:34,210 --> 00:49:36,210
+şeklinde.
+
+1073
+00:49:36,210 --> 00:49:38,210
+Şimdi
+
+1074
+00:49:38,210 --> 00:49:40,210
+İngilizcesi
+
+1075
+00:49:40,210 --> 00:49:42,210
+find it
+
+1076
+00:49:42,210 --> 00:49:44,210
+state
+
+1077
+00:49:44,210 --> 00:49:46,210
+machine
+
+1078
+00:49:46,210 --> 00:49:48,210
+diye geçiyor.
+
+1079
+00:49:48,210 --> 00:49:52,579
+Tanım olarak şöyle geçiyor.
+
+1080
+00:49:52,579 --> 00:49:54,579
+Sonlu durum makinası çıkışı elde
+
+1081
+00:49:54,579 --> 00:49:56,579
+etmek için belli sayıda geçmiş
+
+1082
+00:49:56,579 --> 00:49:58,579
+bilgisine ihtiyaç duyan
+
+1083
+00:49:58,579 --> 00:50:00,579
+ardışıl devre uygulamasıdır.
+
+1084
+00:50:00,579 --> 00:50:02,579
+Yani çıkışı elde etmek için
+
+1085
+00:50:02,579 --> 00:50:04,579
+belli sayıda
+
+1086
+00:50:04,579 --> 00:50:06,579
+geçmiş bilgisine ihtiyacımızın
+
+1087
+00:50:06,579 --> 00:50:09,860
+olması gerekiyor.
+
+1088
+00:50:09,860 --> 00:50:11,860
+Şifre uygulamaları aynı bu şekilde uygulamalar.
+
+1089
+00:50:11,860 --> 00:50:13,860
+Bazı ardışıl
+
+1090
+00:50:13,860 --> 00:50:15,860
+devre uygulamalarında çıkış hemen
+
+1091
+00:50:15,860 --> 00:50:17,860
+o andaki durum bilgilerinden
+
+1092
+00:50:17,860 --> 00:50:19,860
+üretilebilirken bazı
+
+1093
+00:50:19,860 --> 00:50:21,860
+uygulamalarda ise çıkış
+
+1094
+00:50:21,860 --> 00:50:23,860
+belli sayıda geçmişte kalan durum
+
+1095
+00:50:23,860 --> 00:50:25,860
+bilgisine dayanılarak üretilir.
+
+1096
+00:50:25,860 --> 00:50:27,860
+Şifre çözme
+
+1097
+00:50:27,860 --> 00:50:29,860
+devreleri belli sayıda
+
+1098
+00:50:29,860 --> 00:50:31,860
+geçmiş ister. Aynı burada olduğu gibi
+
+1099
+00:50:31,860 --> 00:50:33,860
+bak şurada ne yaptık
+
+1100
+00:50:33,860 --> 00:50:35,860
+1, 1, 1, 1, 1, 1
+
+1101
+00:50:35,860 --> 00:50:37,860
+gelmiş. Üçüncü bir gelmiş.
+
+1102
+00:50:37,860 --> 00:50:39,860
+Burada hafıza
+
+1103
+00:50:39,860 --> 00:50:41,860
+bilgimizi kaybetmiyoruz. 1, 1, 1, 0
+
+1104
+00:50:41,860 --> 00:50:43,860
+dağıldı demiyoruz. Tekrar
+
+1105
+00:50:43,860 --> 00:50:45,860
+1, 1, 1
+
+1106
+00:50:45,860 --> 00:50:47,860
+oluştu. Şurada
+
+1107
+00:50:47,860 --> 00:50:49,860
+1, 1, 1
+
+1108
+00:50:49,860 --> 00:50:51,860
+oluştu. 0 beklerken bir daha
+
+1109
+00:50:51,860 --> 00:50:53,860
+1 geldiğinde bunu yok ediyoruz.
+
+1110
+00:50:53,860 --> 00:50:55,860
+3 tane 1 geldi diyoruz. Hafızada da
+
+1111
+00:50:55,860 --> 00:50:57,860
+aslında tuttuğumuz durum son
+
+1112
+00:50:57,860 --> 00:50:59,860
+gelen 3 değerin 1 olduğu
+
+1113
+00:50:59,860 --> 00:51:03,750
+değeri. Şimdi
+
+1114
+00:51:03,750 --> 00:51:05,750
+aynı şekilde
+
+1115
+00:51:05,750 --> 00:51:07,750
+bir tane daha
+
+1116
+00:51:07,750 --> 00:51:09,750
+soru çözelim.
+
+1117
+00:51:09,750 --> 00:51:11,750
+Buna benzer şekilde.
+
+1118
+00:51:11,750 --> 00:51:13,750
+Ondan sonra ne var?
+
+1119
+00:51:13,750 --> 00:51:29,570
+Filiplop.com'dan
+
+1120
+00:51:29,570 --> 00:51:31,570
+haftaya anlatır arkadaşlar.
+
+1121
+00:51:31,570 --> 00:51:39,519
+Evet.
+
+1122
+00:51:39,519 --> 00:51:43,059
+Bu sefer de
+
+1123
+00:51:43,059 --> 00:51:45,059
+kendisine 0, 1, 1, 0,
+
+1124
+00:51:45,059 --> 00:51:47,059
+1, 0 şeklinde bit dizisi olarak
+
+1125
+00:51:47,059 --> 00:51:49,059
+gelen şifreyi çözen
+
+1126
+00:51:49,059 --> 00:51:51,059
+ve şifre bulunduğunda
+
+1127
+00:51:51,059 --> 00:51:53,059
+çıkışını lojik bir yapan
+
+1128
+00:51:53,059 --> 00:51:55,059
+bir girişli bir çıkışı
+
+1129
+00:51:55,059 --> 00:51:57,059
+sonlu durum makinesine ait durum
+
+1130
+00:51:57,059 --> 00:51:59,059
+diagramını çiziniz ve durum tablosunu
+
+1131
+00:51:59,059 --> 00:52:01,059
+oluşturunuz demiş.
+
+1132
+00:52:01,059 --> 00:52:03,059
+Şimdi
+
+1133
+00:52:03,059 --> 00:52:05,059
+Hocam bir şey söyleyeceğim.
+
+1134
+00:52:05,059 --> 00:52:07,059
+Evet.
+
+1135
+00:52:07,059 --> 00:52:09,059
+Bu çizdiğimiz diagramlar
+
+1136
+00:52:09,059 --> 00:52:11,059
+hangi makine tipine ait
+
+1137
+00:52:11,059 --> 00:52:13,059
+onları fark etmiyor mu?
+
+1138
+00:52:13,059 --> 00:52:15,059
+Etmiyor. Önemli olan
+
+1139
+00:52:15,059 --> 00:52:17,059
+milimur
+
+1140
+00:52:17,059 --> 00:52:19,059
+makinesinde arkadaşlar
+
+1141
+00:52:19,059 --> 00:52:21,059
+mur makinesi sadece neye
+
+1142
+00:52:21,059 --> 00:52:23,059
+ihtiyaç duyuyor işlemek için?
+
+1143
+00:52:23,059 --> 00:52:25,059
+Daha sonraki
+
+1144
+00:52:25,059 --> 00:52:27,059
+derslerde
+
+1145
+00:52:27,059 --> 00:52:29,059
+durum bilgileri ve girişlere
+
+1146
+00:52:29,059 --> 00:52:31,059
+göre devreleri
+
+1147
+00:52:31,059 --> 00:52:33,059
+oluşturmaya başlayacağız. O kısımda
+
+1148
+00:52:33,059 --> 00:52:35,059
+dikkat et
+
+1149
+00:52:35,059 --> 00:52:37,059
+bizim durum bilgilerimiz yani
+
+1150
+00:52:37,059 --> 00:52:39,059
+çıkışımız sadece
+
+1151
+00:52:39,059 --> 00:52:41,059
+durum bilgisiyle oluşuyorsa
+
+1152
+00:52:41,059 --> 00:52:43,059
+buna mur makinesi
+
+1153
+00:52:43,059 --> 00:52:45,059
+diyoruz.
+
+1154
+00:52:45,059 --> 00:52:47,059
+Eğer
+
+1155
+00:52:47,059 --> 00:52:49,059
+o anki
+
+1156
+00:52:53,059 --> 00:52:55,059
+durum bilgisi varsa
+
+1157
+00:52:55,059 --> 00:52:57,059
+bunları mili makinesi deniyor.
+
+1158
+00:52:57,059 --> 00:52:59,059
+Örneğin şifrelerde biz ne yapıyoruz?
+
+1159
+00:52:59,059 --> 00:53:01,059
+Hem girişe bağlıyız hem de
+
+1160
+00:53:01,059 --> 00:53:03,059
+şuna göre bir çıkış oluşturuyoruz.
+
+1161
+00:53:03,059 --> 00:53:11,360
+Girişe bağlı mıyız?
+
+1162
+00:53:11,360 --> 00:53:17,519
+Girişe bağlı mıyız?
+
+1163
+00:53:17,519 --> 00:53:19,519
+0'dan 7'ye geçerken
+
+1164
+00:53:19,519 --> 00:53:21,519
+mesela 0'dan 7'ye saymıştık burada.
+
+1165
+00:53:21,519 --> 00:53:23,519
+Burada bir giriş bilgisine
+
+1166
+00:53:23,519 --> 00:53:25,519
+ihtiyaç var mı? Girişin işlenmesine
+
+1167
+00:53:25,519 --> 00:53:27,519
+ihtiyaç var mı? Yok.
+
+1168
+00:53:27,519 --> 00:53:29,519
+Dolayısıyla bu mili makinesi.
+
+1169
+00:53:31,519 --> 00:53:33,519
+Bunu biraz daha
+
+1170
+00:53:33,519 --> 00:53:35,519
+ayrıntılı bir şekilde göreceğiz
+
+1171
+00:53:35,519 --> 00:53:38,869
+arkadaşlar.
+
+1172
+00:53:38,869 --> 00:53:42,719
+Şimdi
+
+1173
+00:53:42,719 --> 00:53:44,719
+yine
+
+1174
+00:53:44,719 --> 00:53:46,719
+bir sonlu durum makinesi
+
+1175
+00:53:46,719 --> 00:53:48,719
+yapılması isteniyor.
+
+1176
+00:53:48,719 --> 00:53:50,719
+Dizi de şu olsun.
+
+1177
+00:53:50,719 --> 00:53:52,719
+0, 1, 1, 0,
+
+1178
+00:53:52,719 --> 00:53:56,420
+1, 0.
+
+1179
+00:53:56,420 --> 00:53:58,420
+Şöyle geçiyor zaman.
+
+1180
+00:53:58,420 --> 00:54:00,420
+T bu şekilde geçiyor.
+
+1181
+00:54:00,420 --> 00:54:02,420
+Yani önce aslında
+
+1182
+00:54:02,420 --> 00:54:04,420
+sisteme şunun girmesi bekleniyor
+
+1183
+00:54:04,420 --> 00:54:06,420
+baktığımda.
+
+1184
+00:54:06,420 --> 00:54:08,420
+0, 1, 1, 0,
+
+1185
+00:54:08,420 --> 00:54:10,420
+1, 0. Bu sefer tersten yapıyor.
+
+1186
+00:54:10,420 --> 00:54:12,420
+T bu şekilde
+
+1187
+00:54:12,420 --> 00:54:14,420
+gidiyor. Buna göre bir çıkış
+
+1188
+00:54:14,420 --> 00:54:19,300
+oluşuyor.
+
+1189
+00:54:19,300 --> 00:54:21,300
+Şimdi yavaş yavaş
+
+1190
+00:54:21,300 --> 00:54:23,300
+bunu çizmeye başlayalım bakalım.
+
+1191
+00:54:23,300 --> 00:54:25,300
+1
+
+1192
+00:54:25,300 --> 00:54:27,300
+Önce ne
+
+1193
+00:54:27,300 --> 00:54:29,300
+durumu oluşacak? Bu durumlara
+
+1194
+00:54:29,300 --> 00:54:31,300
+istediğiniz adları verebilirsiniz arkadaşlar.
+
+1195
+00:54:31,300 --> 00:54:35,349
+Şimdi silelim. Çok durum
+
+1196
+00:54:35,349 --> 00:54:39,519
+oldu. İlk önce
+
+1197
+00:54:39,519 --> 00:54:41,519
+hangi durumdayız arkadaşlar?
+
+1198
+00:54:41,519 --> 00:54:45,730
+0 durumundayız.
+
+1199
+00:54:45,730 --> 00:54:47,730
+D0 da diyebilirsiniz. 0 durumu da diyebilirsiniz.
+
+1200
+00:54:47,730 --> 00:54:49,730
+İlk önce 0
+
+1201
+00:54:49,730 --> 00:54:51,730
+durumundayız. Ne
+
+1202
+00:54:51,730 --> 00:54:53,730
+durumu bu? Aslında
+
+1203
+00:54:53,730 --> 00:54:55,730
+benim 0 bekleme
+
+1204
+00:54:55,730 --> 00:54:57,730
+durumu. Bir gelir
+
+1205
+00:54:57,730 --> 00:54:59,730
+ise
+
+1206
+00:54:59,730 --> 00:55:01,730
+çıkışım 0 olacak.
+
+1207
+00:55:01,730 --> 00:55:03,730
+Hala 0 bekliyorum.
+
+1208
+00:55:03,730 --> 00:55:05,730
+0 geldiğinde
+
+1209
+00:55:07,730 --> 00:55:09,730
+0 geldiğinde çıkışım hala 0.
+
+1210
+00:55:11,730 --> 00:55:13,730
+Bir durumuna geçiyorum.
+
+1211
+00:55:13,730 --> 00:55:15,730
+Yani
+
+1212
+00:55:15,730 --> 00:55:17,730
+ilk 0'ım geldi.
+
+1213
+00:55:17,730 --> 00:55:21,039
+Ondan sonra
+
+1214
+00:55:21,039 --> 00:55:23,039
+0 da
+
+1215
+00:55:23,039 --> 00:55:25,039
+bir daha 0 gelirse
+
+1216
+00:55:25,039 --> 00:55:30,980
+nereye gitmem lazım arkadaşlar?
+
+1217
+00:55:30,980 --> 00:55:32,980
+Tekrar kendi üzerime
+
+1218
+00:55:32,980 --> 00:55:34,980
+dönerim. Çünkü
+
+1219
+00:55:34,980 --> 00:55:36,980
+0 bekliyordum. Bir daha 0
+
+1220
+00:55:36,980 --> 00:55:38,980
+geldi. Dolayısıyla
+
+1221
+00:55:38,980 --> 00:55:40,980
+şu şifrenin başındayım. Yani şuraya
+
+1222
+00:55:40,980 --> 00:55:42,980
+bir silik 0 geldi. Bunu da sildik.
+
+1223
+00:55:42,980 --> 00:55:44,980
+Tekrar 0 geldi.
+
+1224
+00:55:44,980 --> 00:55:46,980
+Artık burası 1
+
+1225
+00:55:46,980 --> 00:55:48,980
+oldu. Durum aslında 0'ın
+
+1226
+00:55:48,980 --> 00:55:50,980
+geldiği
+
+1227
+00:55:50,980 --> 00:55:52,980
+0'ın gelmiş olduğu, 1'in
+
+1228
+00:55:52,980 --> 00:55:54,980
+beklendiği durum olmuş oluyor aslında.
+
+1229
+00:55:54,980 --> 00:55:56,980
+Burada
+
+1230
+00:55:56,980 --> 00:56:00,289
+1 geldiğinde
+
+1231
+00:56:00,289 --> 00:56:02,289
+1 geldiğinde
+
+1232
+00:56:02,289 --> 00:56:07,590
+2. duruma
+
+1233
+00:56:07,590 --> 00:56:09,590
+geçiyorum.
+
+1234
+00:56:09,590 --> 00:56:11,590
+Çıkışım 0.
+
+1235
+00:56:11,590 --> 00:56:13,590
+Burası 2'nin
+
+1236
+00:56:13,590 --> 00:56:15,590
+olduğu durum. Aslında 0 ve
+
+1237
+00:56:15,590 --> 00:56:17,590
+1'in gelmiş olduğu durum.
+
+1238
+00:56:17,590 --> 00:56:19,590
+0 ve 1'in gelmiş olduğu durum.
+
+1239
+00:56:19,590 --> 00:56:22,869
+Buradayken dikkat edin.
+
+1240
+00:56:22,869 --> 00:56:24,869
+Her bir
+
+1241
+00:56:24,869 --> 00:56:26,869
+çıkıştan yani her bir düğümden
+
+1242
+00:56:26,869 --> 00:56:28,869
+durumdan
+
+1243
+00:56:28,869 --> 00:56:30,869
+girişin bütün kombinasyonlarının
+
+1244
+00:56:30,869 --> 00:56:32,869
+çıkması lazım. Yani ben buraya
+
+1245
+00:56:32,869 --> 00:56:34,869
+baktığım zaman örneğin
+
+1246
+00:56:34,869 --> 00:56:36,869
+1 giriş varsa şayet
+
+1247
+00:56:36,869 --> 00:56:38,869
+1 geldiğinde ne
+
+1248
+00:56:38,869 --> 00:56:40,869
+olacak? 0 geldiğinde ne olacağı
+
+1249
+00:56:40,869 --> 00:56:42,869
+çıkmam lazım. Eğer
+
+1250
+00:56:42,869 --> 00:56:44,869
+düğümlerde 2 bitlik
+
+1251
+00:56:44,869 --> 00:56:46,869
+bir değişken, 2 bitlik bir giriş
+
+1252
+00:56:46,869 --> 00:56:48,869
+varsa 0 0
+
+1253
+00:56:48,869 --> 00:56:50,869
+0 1 1 0 ve
+
+1254
+00:56:50,869 --> 00:56:52,869
+1 1 de teker teker
+
+1255
+00:56:52,869 --> 00:56:54,869
+neler olacağını kaydetmiş
+
+1256
+00:56:54,869 --> 00:56:56,869
+olmam lazım ki herhangi
+
+1257
+00:56:56,869 --> 00:56:58,869
+bir düğüme geldiğinde
+
+1258
+00:56:58,869 --> 00:57:00,869
+hiçbir yerde
+
+1259
+00:57:00,869 --> 00:57:02,869
+devrinin takılmaması
+
+1260
+00:57:02,869 --> 00:57:04,869
+gerekiyor.
+
+1261
+00:57:04,869 --> 00:57:06,869
+Burası 0
+
+1262
+00:57:06,869 --> 00:57:08,869
+şurası 0 geldi
+
+1263
+00:57:08,869 --> 00:57:10,869
+şurası 0 1 geldi
+
+1264
+00:57:10,869 --> 00:57:12,869
+durumu. Artık 0
+
+1265
+00:57:12,869 --> 00:57:14,869
+1 geldiğine göre neyi bekliyorum ben?
+
+1266
+00:57:14,869 --> 00:57:16,869
+1 bekliyorum.
+
+1267
+00:57:16,869 --> 00:57:18,869
+Üçüncü durumum benim
+
+1268
+00:57:18,869 --> 00:57:20,869
+şöyle üçüncü
+
+1269
+00:57:20,869 --> 00:57:22,869
+durumum
+
+1270
+00:57:22,869 --> 00:57:24,869
+aslında 0
+
+1271
+00:57:24,869 --> 00:57:26,869
+1 1 geldi durumu.
+
+1272
+00:57:26,869 --> 00:57:28,869
+Neyi bekleyecek bundan sonra?
+
+1273
+00:57:28,869 --> 00:57:30,869
+0'ı bekleyecek.
+
+1274
+00:57:30,869 --> 00:57:32,869
+Şuraya 0 1
+
+1275
+00:57:32,869 --> 00:57:34,869
+1 geldi. Çıkış
+
+1276
+00:57:34,869 --> 00:57:36,869
+0 hala.
+
+1277
+00:57:36,869 --> 00:57:38,869
+Bundan sonra 1
+
+1278
+00:57:38,869 --> 00:57:40,869
+geldim. Bir sonraki
+
+1279
+00:57:40,869 --> 00:57:42,869
+durumda ne olacak arkadaşlar?
+
+1280
+00:57:42,869 --> 00:57:44,869
+Benim
+
+1281
+00:57:44,869 --> 00:57:46,869
+bir tane
+
+1282
+00:57:46,869 --> 00:57:48,869
+daha 0 gelmesi durumunda
+
+1283
+00:57:48,869 --> 00:57:50,869
+0 1 1 0
+
+1284
+00:57:50,869 --> 00:57:52,869
+dördüncü
+
+1285
+00:57:52,869 --> 00:57:54,869
+duruma geçiyorum burada.
+
+1286
+00:57:54,869 --> 00:57:56,869
+Şöyle
+
+1287
+00:57:56,869 --> 00:57:58,869
+dördüncü durumum
+
+1288
+00:57:58,869 --> 00:58:00,869
+0 1 1
+
+1289
+00:58:00,869 --> 00:58:02,869
+0 gelmiş olma durumu.
+
+1290
+00:58:02,869 --> 00:58:04,869
+Yani
+
+1291
+00:58:04,869 --> 00:58:06,869
+burada 0 geldi.
+
+1292
+00:58:06,869 --> 00:58:08,869
+Sonuç yine 0.
+
+1293
+00:58:08,869 --> 00:58:15,960
+Kitapta niye yanlış çizmiş onu?
+
+1294
+00:58:15,960 --> 00:58:17,960
+Yanlış. Tamam.
+
+1295
+00:58:17,960 --> 00:58:19,960
+0 1 1 0
+
+1296
+00:58:19,960 --> 00:58:21,960
+0 1 1 0 geldi. Sonuç 0.
+
+1297
+00:58:21,960 --> 00:58:23,960
+Burada şeye bakmam lazım.
+
+1298
+00:58:23,960 --> 00:58:25,960
+Eğer
+
+1299
+00:58:25,960 --> 00:58:27,960
+0 1
+
+1300
+00:58:27,960 --> 00:58:29,960
+1 0 da
+
+1301
+00:58:29,960 --> 00:58:33,199
+1 0
+
+1302
+00:58:33,199 --> 00:58:35,199
+gelirse ne olacak arkadaşlar?
+
+1303
+00:58:35,199 --> 00:58:37,199
+0 gelirse bir daha
+
+1304
+00:58:37,199 --> 00:58:39,199
+0 1
+
+1305
+00:58:39,199 --> 00:58:42,519
+1 0'dayım.
+
+1306
+00:58:42,519 --> 00:58:44,519
+0 gelirse ne olacak? Bütün düzen
+
+1307
+00:58:44,519 --> 00:58:46,519
+bozulmuş olacak. Öyle değil mi?
+
+1308
+00:58:46,519 --> 00:58:48,519
+Tekrar nereye gitmem lazım bu sefer
+
+1309
+00:58:48,519 --> 00:58:50,519
+0 gelirse? 0'a mı 1'e mi
+
+1310
+00:58:50,519 --> 00:59:00,000
+dönmem lazım? Bu durumda
+
+1311
+00:59:00,000 --> 00:59:02,000
+ne yapmam lazım arkadaşlar?
+
+1312
+00:59:02,000 --> 00:59:05,599
+Evet 1'e. Yani
+
+1313
+00:59:05,599 --> 00:59:07,599
+tekrar 0 gelirse artık 0
+
+1314
+00:59:07,599 --> 00:59:09,599
+1 bekleme durumunda değilim.
+
+1315
+00:59:09,599 --> 00:59:11,599
+Artık 0 gelmiş.
+
+1316
+00:59:11,599 --> 00:59:13,599
+Sonuç 0.
+
+1317
+00:59:13,599 --> 00:59:15,599
+0 gelmiş halde
+
+1318
+00:59:15,599 --> 00:59:17,599
+1'i bekliyor
+
+1319
+00:59:17,599 --> 00:59:19,599
+durumuna geçmem lazım.
+
+1320
+00:59:19,599 --> 00:59:21,599
+Peki
+
+1321
+00:59:21,599 --> 00:59:23,599
+şöyle bir durum olsa
+
+1322
+00:59:23,599 --> 00:59:25,599
+pardon 3'teki şeyi atladım. Bakın
+
+1323
+00:59:25,599 --> 00:59:27,599
+3'teki durumu atladım. 0 geldiğinde
+
+1324
+00:59:27,599 --> 00:59:29,599
+4'e gitti. Ama 1 geldiğinde
+
+1325
+00:59:29,599 --> 00:59:31,599
+nereye gidecek? Yani
+
+1326
+00:59:31,599 --> 00:59:33,599
+0 1
+
+1327
+00:59:33,599 --> 00:59:35,599
+1
+
+1328
+00:59:35,599 --> 00:59:37,599
+1 daha 1 gelirse ne olacak?
+
+1329
+00:59:37,599 --> 00:59:39,599
+3'teyken ne olacak?
+
+1330
+00:59:39,599 --> 00:59:41,599
+3'teyken
+
+1331
+00:59:41,599 --> 00:59:43,599
+1
+
+1332
+00:59:43,599 --> 00:59:45,599
+gelirse nereye gideceğim? 0'a mı
+
+1333
+00:59:45,599 --> 00:59:50,639
+gideceğim? 1'e mi gideceğim?
+
+1334
+00:59:50,639 --> 00:59:52,639
+3'teyken. Yani
+
+1335
+00:59:52,639 --> 00:59:54,639
+0 1 1 durumundayım.
+
+1336
+00:59:54,639 --> 00:59:56,639
+1 daha 1 geldi. 0 1
+
+1337
+00:59:56,639 --> 00:59:58,639
+1. 1 durumu oluştu.
+
+1338
+00:59:58,639 --> 01:00:00,639
+0'a mı gideceğim?
+
+1339
+01:00:00,639 --> 01:00:02,639
+Yoksa 1'e mi
+
+1340
+01:00:02,639 --> 01:00:04,639
+geçeceğim arkadaşlar?
+
+1341
+01:00:04,639 --> 01:00:06,639
+Evet 0'a geçeceğim.
+
+1342
+01:00:06,639 --> 01:00:08,639
+Çünkü bütün patent
+
+1343
+01:00:08,639 --> 01:00:10,639
+bozulmuş oldu burada.
+
+1344
+01:00:10,639 --> 01:00:12,639
+0'dayken
+
+1345
+01:00:12,639 --> 01:00:14,639
+gelirse
+
+1346
+01:00:14,639 --> 01:00:16,639
+1 gelirse
+
+1347
+01:00:16,639 --> 01:00:18,639
+çıkış 0. Şöyle
+
+1348
+01:00:18,639 --> 01:00:20,639
+yapalım. 0'a gitmem lazım.
+
+1349
+01:00:20,639 --> 01:00:22,639
+Burada hazır
+
+1350
+01:00:22,639 --> 01:00:24,639
+0 gelmişken tekrar
+
+1351
+01:00:24,639 --> 01:00:26,639
+şurada 0 bekleme durumu. Şuraya
+
+1352
+01:00:26,639 --> 01:00:28,639
+geçiyorum. Burada 0'ın gelmesi.
+
+1353
+01:00:28,639 --> 01:00:30,639
+İlk 0'ı bekleme
+
+1354
+01:00:30,639 --> 01:00:34,789
+durumu. İlk 0'ı
+
+1355
+01:00:34,789 --> 01:00:36,789
+bekleme durumu oluşuyor burada.
+
+1356
+01:00:36,789 --> 01:00:38,789
+Arkadaşlar
+
+1357
+01:00:38,789 --> 01:00:40,789
+bundan
+
+1358
+01:00:40,789 --> 01:00:42,789
+bir sonraki adımda ise
+
+1359
+01:00:42,789 --> 01:00:44,789
+arkadaşlar.
+
+1360
+01:00:44,789 --> 01:00:46,789
+2 içinde olmayacak mı? 2'de de sadece
+
+1361
+01:00:46,789 --> 01:00:48,789
+1 gelme durumu. Evet evet.
+
+1362
+01:00:48,789 --> 01:00:50,789
+Şimdi geriye doğru gidiyoruz.
+
+1363
+01:00:50,789 --> 01:00:52,789
+Neyi unuttuk biz orada?
+
+1364
+01:00:52,789 --> 01:00:54,789
+0 1 gelmiş.
+
+1365
+01:00:54,789 --> 01:00:56,789
+Bir daha 1 gelirse 3'e
+
+1366
+01:00:56,789 --> 01:00:58,789
+geçecek. 0 gelince nereye geçmesi
+
+1367
+01:00:58,789 --> 01:01:00,789
+lazım? Aynı 4'teki
+
+1368
+01:01:00,789 --> 01:01:02,789
+durum gibi 0
+
+1369
+01:01:02,789 --> 01:01:04,789
+gelirse 0
+
+1370
+01:01:04,789 --> 01:01:06,789
+gelmiş. Bir daha 1 bekleme durumu.
+
+1371
+01:01:06,789 --> 01:01:08,789
+Bir önceki duruma geçmiş
+
+1372
+01:01:08,789 --> 01:01:10,789
+olması lazım.
+
+1373
+01:01:10,789 --> 01:01:12,789
+Aynı şekilde
+
+1374
+01:01:12,789 --> 01:01:14,789
+tamam bütün eksiklerimizi
+
+1375
+01:01:14,789 --> 01:01:16,789
+giderdik. Artık
+
+1376
+01:01:16,789 --> 01:01:18,789
+0 1 0 geldi. Şöyle
+
+1377
+01:01:18,789 --> 01:01:20,789
+0 1 0 durumuna
+
+1378
+01:01:20,789 --> 01:01:22,789
+şöyle yapayım.
+
+1379
+01:01:22,789 --> 01:01:24,789
+0 1 0 geldi.
+
+1380
+01:01:24,789 --> 01:01:26,789
+Artık
+
+1381
+01:01:26,789 --> 01:01:28,789
+0 1 0'dan sonra
+
+1382
+01:01:28,789 --> 01:01:30,789
+bir daha 1 gelirse
+
+1383
+01:01:30,789 --> 01:01:32,789
+5 nur duruma
+
+1384
+01:01:32,789 --> 01:01:34,789
+geçeceğiz.
+
+1385
+01:01:34,789 --> 01:01:36,789
+1 0 geldi.
+
+1386
+01:01:36,789 --> 01:01:38,789
+Yavaş yavaş artık tamamlamaya
+
+1387
+01:01:38,789 --> 01:01:40,789
+başladık. 0 1
+
+1388
+01:01:40,789 --> 01:01:42,789
+1 0 1 dedik.
+
+1389
+01:01:42,789 --> 01:01:44,789
+Şimdi
+
+1390
+01:01:44,789 --> 01:01:46,789
+buradayken 5'teyken
+
+1391
+01:01:46,789 --> 01:01:48,789
+1 geldiği zaman
+
+1392
+01:01:48,789 --> 01:01:50,789
+0 çıkışı
+
+1393
+01:01:50,789 --> 01:01:52,789
+yaptık. 0
+
+1394
+01:01:52,789 --> 01:01:54,789
+gelirse
+
+1395
+01:01:54,789 --> 01:01:56,789
+0 gelirse
+
+1396
+01:01:56,789 --> 01:01:58,789
+benim
+
+1397
+01:01:58,789 --> 01:02:00,789
+Altınoğlu çıkışıma
+
+1398
+01:02:00,789 --> 01:02:02,789
+yani
+
+1399
+01:02:02,789 --> 01:02:04,789
+şöyle yapalım 0 0
+
+1400
+01:02:04,789 --> 01:02:06,789
+artık bundan sonra
+
+1401
+01:02:06,789 --> 01:02:08,789
+0 geldiği anda
+
+1402
+01:02:08,789 --> 01:02:10,789
+şurayı yanlış yazmış herhalde kitapta.
+
+1403
+01:02:10,789 --> 01:02:12,789
+0 0
+
+1404
+01:02:12,789 --> 01:02:14,789
+0 1 1 0
+
+1405
+01:02:14,789 --> 01:02:16,789
+1 0 dediği zaman
+
+1406
+01:02:16,789 --> 01:02:18,789
+şunu yanlış yapmış. Çıkış tam
+
+1407
+01:02:18,789 --> 01:02:20,789
+şu anda itibaren 1
+
+1408
+01:02:20,789 --> 01:02:24,130
+olmak zorunda.
+
+1409
+01:02:24,130 --> 01:02:26,130
+Bundan sonra da
+
+1410
+01:02:26,130 --> 01:02:28,130
+buradaki tasarımımıza bağlı.
+
+1411
+01:02:28,130 --> 01:02:30,130
+Ne gelirse gelsin
+
+1412
+01:02:30,130 --> 01:02:32,130
+sonuç 1 mi üreteceğiz?
+
+1413
+01:02:32,130 --> 01:02:34,130
+Yoksa
+
+1414
+01:02:34,130 --> 01:02:36,130
+başa mı döneceğiz? Bu tasarımımızda
+
+1415
+01:02:36,130 --> 01:02:38,130
+da kitlensin bakalım.
+
+1416
+01:02:38,130 --> 01:02:40,130
+Burada 5'teyiz.
+
+1417
+01:02:42,130 --> 01:02:44,130
+5 neydi arkadaşlar?
+
+1418
+01:02:44,130 --> 01:02:46,130
+0
+
+1419
+01:02:46,130 --> 01:02:48,130
+1 1 0
+
+1420
+01:02:48,130 --> 01:02:51,480
+1 gelmiş olma durumu.
+
+1421
+01:02:51,480 --> 01:02:53,480
+1 gelirse nereye gidecek?
+
+1422
+01:02:53,480 --> 01:03:05,780
+0 1 gelirse
+
+1423
+01:03:05,780 --> 01:03:07,780
+nereye gidecek?
+
+1424
+01:03:07,780 --> 01:03:09,780
+Evet.
+
+1425
+01:03:09,780 --> 01:03:11,780
+Bakın sonlu durum
+
+1426
+01:03:11,780 --> 01:03:13,780
+makinesinde belli sayıda geçmiş
+
+1427
+01:03:13,780 --> 01:03:15,780
+bilgisine ihtiyaç duyulur dediğimiz
+
+1428
+01:03:15,780 --> 01:03:17,780
+kısım burası. Bir daha 1
+
+1429
+01:03:17,780 --> 01:03:19,780
+gelirse 0 1
+
+1430
+01:03:19,780 --> 01:03:21,780
+1 veya daha büyük paterni karşılıyorsa
+
+1431
+01:03:21,780 --> 01:03:23,780
+ona doğru gidecek.
+
+1432
+01:03:23,780 --> 01:03:25,780
+0 1 1
+
+1433
+01:03:25,780 --> 01:03:27,780
+şu durumu karşılıyor. 0 1
+
+1434
+01:03:27,780 --> 01:03:29,780
+1 yani 5'te
+
+1435
+01:03:29,780 --> 01:03:31,780
+1 gelirse
+
+1436
+01:03:31,780 --> 01:03:35,829
+sonuç yine 0 fakat
+
+1437
+01:03:35,829 --> 01:03:37,829
+belli sayıda
+
+1438
+01:03:37,829 --> 01:03:39,829
+geçmiş bilgisini hesaba katarak
+
+1439
+01:03:39,829 --> 01:03:41,829
+ne yapması lazım?
+
+1440
+01:03:41,829 --> 01:03:43,829
+3'e geri dönmesi gerekiyor.
+
+1441
+01:03:43,829 --> 01:03:47,199
+Şimdi bu da bir şifre
+
+1442
+01:03:47,199 --> 01:03:49,199
+örneğiydi.
+
+1443
+01:03:49,199 --> 01:03:51,199
+Bunun durum tablosunu
+
+1444
+01:03:53,199 --> 01:03:55,199
+yapın dedikleri zaman bize
+
+1445
+01:03:55,199 --> 01:03:57,199
+şöyle yapıyoruz. Önce
+
+1446
+01:03:57,199 --> 01:03:59,199
+durum etiketi
+
+1447
+01:03:59,199 --> 01:04:01,199
+bilgisini
+
+1448
+01:04:01,199 --> 01:04:04,639
+durumu
+
+1449
+01:04:04,639 --> 01:04:08,719
+girişi. Bir sonraki
+
+1450
+01:04:08,719 --> 01:04:10,719
+durum şöyle diyelim
+
+1451
+01:04:10,719 --> 01:04:12,719
+durum plus diyelim. Bir sonraki
+
+1452
+01:04:12,719 --> 01:04:14,719
+durum şöyle diyelim.
+
+1453
+01:04:14,719 --> 01:04:16,719
+Bir sonraki
+
+1454
+01:04:16,719 --> 01:04:18,719
+durum
+
+1455
+01:04:18,719 --> 01:04:20,719
+yani durum plus diye
+
+1456
+01:04:20,719 --> 01:04:22,719
+getiriyor ve çıkış.
+
+1457
+01:04:22,719 --> 01:04:24,719
+Şimdi bunların
+
+1458
+01:04:24,719 --> 01:04:26,719
+güzel bir şekilde
+
+1459
+01:04:26,719 --> 01:04:28,719
+tablo haline getirilmesi
+
+1460
+01:04:28,719 --> 01:04:30,719
+gerekiyor.
+
+1461
+01:04:30,719 --> 01:04:32,719
+Durum etiketinde
+
+1462
+01:04:32,719 --> 01:04:34,719
+öncelikle
+
+1463
+01:04:34,719 --> 01:04:36,719
+şuranın da aynı şekilde
+
+1464
+01:04:36,719 --> 01:04:39,969
+ayrıştırılması lazım. 2 tane
+
+1465
+01:04:39,969 --> 01:04:41,969
+0 durumu var.
+
+1466
+01:04:41,969 --> 01:04:43,969
+Bu durumlar
+
+1467
+01:04:43,969 --> 01:04:45,969
+3 bitte saklanıyor.
+
+1468
+01:04:45,969 --> 01:04:47,969
+D3, D2
+
+1469
+01:04:47,969 --> 01:04:49,969
+özür dilerim. D2
+
+1470
+01:04:49,969 --> 01:04:57,960
+D1, D2
+
+1471
+01:04:57,960 --> 01:04:59,960
+D1, D0
+
+1472
+01:04:59,960 --> 01:05:01,960
+şeklinde.
+
+1473
+01:05:01,960 --> 01:05:03,960
+Burada ise
+
+1474
+01:05:03,960 --> 01:05:05,960
+şöyle durum plus
+
+1475
+01:05:05,960 --> 01:05:13,719
+demiştim buraya
+
+1476
+01:05:13,719 --> 01:05:15,719
+D2 artı
+
+1477
+01:05:15,719 --> 01:05:17,719
+D1 artı, D0 artı
+
+1478
+01:05:17,719 --> 01:05:19,719
+bir sonraki durumları kastediyorum
+
+1479
+01:05:19,719 --> 01:05:21,719
+o odada. 2 tane
+
+1480
+01:05:21,719 --> 01:05:23,719
+durum var burada. Bir tane 0
+
+1481
+01:05:23,719 --> 01:05:25,719
+0 0 0 0 0
+
+1482
+01:05:25,719 --> 01:05:27,719
+çünkü girişim hem
+
+1483
+01:05:27,719 --> 01:05:29,719
+0 hem 1 değeri aldığı
+
+1484
+01:05:29,719 --> 01:05:31,719
+zaman nereye gideceğini
+
+1485
+01:05:31,719 --> 01:05:33,719
+yazmam lazım. Ben
+
+1486
+01:05:33,719 --> 01:05:35,719
+buradaki tabloya göre bakıyorum
+
+1487
+01:05:35,719 --> 01:05:37,719
+durum diagramına göre bakıyorum
+
+1488
+01:05:37,719 --> 01:05:39,719
+0 0 durumda
+
+1489
+01:05:39,719 --> 01:05:41,719
+0 geldiğinde nereye gitmişim
+
+1490
+01:05:41,719 --> 01:05:43,719
+arkadaşlar 1'e
+
+1491
+01:05:43,719 --> 01:05:45,719
+0 0 1'e gitmişim
+
+1492
+01:05:45,719 --> 01:05:47,719
+çıkışım 0'mış. Peki
+
+1493
+01:05:47,719 --> 01:05:49,719
+1 geldiğinde nereye gitmişim
+
+1494
+01:05:49,719 --> 01:05:51,719
+kendi üzerime dönmüşüm
+
+1495
+01:05:51,719 --> 01:05:53,719
+çıkışım yine
+
+1496
+01:05:53,719 --> 01:05:55,719
+0. Aynı
+
+1497
+01:05:55,719 --> 01:05:57,719
+şekilde bir
+
+1498
+01:05:57,719 --> 01:05:59,719
+durumu için diyelim 0
+
+1499
+01:05:59,719 --> 01:06:01,719
+0 1 0 0 1
+
+1500
+01:06:01,719 --> 01:06:03,719
+dikkat ederseniz şu etikete
+
+1501
+01:06:03,719 --> 01:06:05,719
+göre sıralı bir şekilde
+
+1502
+01:06:05,719 --> 01:06:07,719
+ben durumları tanımlıyorum
+
+1503
+01:06:07,719 --> 01:06:09,719
+hafızada o durum
+
+1504
+01:06:09,719 --> 01:06:11,719
+mu saklamış oluyorum yani
+
+1505
+01:06:11,719 --> 01:06:13,719
+aslında benim 0 dememle
+
+1506
+01:06:13,719 --> 01:06:15,719
+0 0 demem
+
+1507
+01:06:15,719 --> 01:06:17,719
+0 bekliyorum
+
+1508
+01:06:17,719 --> 01:06:19,719
+0 bekleme durumu
+
+1509
+01:06:19,719 --> 01:06:21,719
+0 gelmiş
+
+1510
+01:06:21,719 --> 01:06:23,719
+durumu gelmiş
+
+1511
+01:06:23,719 --> 01:06:25,719
+1 bekliyorum durumu
+
+1512
+01:06:25,719 --> 01:06:27,719
+eğer uzun uzun yazacak olursam
+
+1513
+01:06:27,719 --> 01:06:29,719
+peki 0
+
+1514
+01:06:29,719 --> 01:06:31,719
+0 1'deyken 0 gelirse nereye
+
+1515
+01:06:31,719 --> 01:06:33,719
+gidiyorum 1 gelirse ne gidiyorum
+
+1516
+01:06:33,719 --> 01:06:35,719
+0 geliyorsa kendi üzerime
+
+1517
+01:06:35,719 --> 01:06:37,719
+kapanıyorum
+
+1518
+01:06:37,719 --> 01:06:39,719
+1 gelirse nereye gidiyorum 2'ye
+
+1519
+01:06:39,719 --> 01:06:41,719
+gidiyorum
+
+1520
+01:06:41,719 --> 01:06:43,719
+çıkışım hala 0
+
+1521
+01:06:43,719 --> 01:06:45,719
+en sonunda nerede çıkış olacak bu arkadaşlar
+
+1522
+01:06:45,719 --> 01:06:47,719
+Altınoğlu durumda
+
+1523
+01:06:47,719 --> 01:06:49,719
+yani 1 1 0
+
+1524
+01:06:49,719 --> 01:06:51,719
+1 1 0
+
+1525
+01:06:51,719 --> 01:06:53,719
+burada da 0 1 gelme durumu
+
+1526
+01:06:53,719 --> 01:06:55,719
+ikisinde de ne yapıyor arkadaşlar ne gelirse
+
+1527
+01:06:55,719 --> 01:06:57,719
+gelsin 1 1 0
+
+1528
+01:06:57,719 --> 01:06:59,719
+1 1 0 durumuna dönüyorum
+
+1529
+01:06:59,719 --> 01:07:01,719
+ikisinde de çıkışım
+
+1530
+01:07:01,719 --> 01:07:03,719
+1
+
+1531
+01:07:03,719 --> 01:07:05,719
+kitaptakinde şurayı yanlış yapmış
+
+1532
+01:07:05,719 --> 01:07:07,719
+bence çünkü 5'te
+
+1533
+01:07:07,719 --> 01:07:09,719
+şu 5'teyken
+
+1534
+01:07:09,719 --> 01:07:11,719
+yani 0 0
+
+1535
+01:07:11,719 --> 01:07:13,719
+0 1 1 0 1
+
+1536
+01:07:13,719 --> 01:07:15,719
+0 gelme durumunda
+
+1537
+01:07:15,719 --> 01:07:17,719
+0 geldiği durumda
+
+1538
+01:07:17,719 --> 01:07:19,719
+çıkış 1 olur
+
+1539
+01:07:19,719 --> 01:07:24,050
+0 yapmış nedense
+
+1540
+01:07:24,050 --> 01:07:26,050
+yani şuranın 1 olması lazım
+
+1541
+01:07:26,050 --> 01:07:28,050
+sizin kitaplarınızda nasıl bilmiyorum ama
+
+1542
+01:07:28,050 --> 01:07:30,050
+oranın 1 olması gerekiyor
+
+1543
+01:07:30,050 --> 01:07:34,130
+arkadaşlar
+
+1544
+01:07:34,130 --> 01:07:36,130
+şimdi
+
+1545
+01:07:36,130 --> 01:07:38,130
+bir 15 dakikalık ara verelim arkadaşlar
+
+1546
+01:07:38,130 --> 01:07:40,130
+ondan sonra devam ederiz
+
+1547
+01:07:40,130 --> 01:23:42,069
+tamam mı
+
+1548
+01:23:42,069 --> 01:23:45,800
+tekrar merhaba arkadaşlar
+
+1549
+01:23:45,800 --> 01:23:53,810
+ses geliyor mu
+
+1550
+01:23:53,810 --> 01:23:55,810
+şimdi arkadaşlar
+
+1551
+01:23:55,810 --> 01:23:57,810
+ardışıl devrelerin
+
+1552
+01:23:57,810 --> 01:23:59,810
+standart tasarım
+
+1553
+01:23:59,810 --> 01:24:01,810
+bilimlerinde neler kullanıyoruz
+
+1554
+01:24:01,810 --> 01:24:03,810
+buna geçiyoruz
+
+1555
+01:24:03,810 --> 01:24:07,510
+standart tasarım
+
+1556
+01:24:07,510 --> 01:24:09,510
+bilimleri
+
+1557
+01:24:09,510 --> 01:24:13,239
+kombinezonsal devrelerde
+
+1558
+01:24:13,239 --> 01:24:15,239
+olduğu gibi arkadaşlar
+
+1559
+01:24:15,239 --> 01:24:17,239
+burada da
+
+1560
+01:24:17,239 --> 01:24:19,239
+artık ardışıl devre
+
+1561
+01:24:19,239 --> 01:24:21,239
+birimleri oluşturacağız
+
+1562
+01:24:21,239 --> 01:24:23,239
+bu ardışıl devre birimlerini
+
+1563
+01:24:23,239 --> 01:24:25,239
+oluşturduktan sonra
+
+1564
+01:24:25,239 --> 01:24:27,239
+biz bunu
+
+1565
+01:24:27,239 --> 01:24:29,239
+kombinezonsal kısmı var
+
+1566
+01:24:29,239 --> 01:24:31,239
+bu devrelerin
+
+1567
+01:24:31,239 --> 01:24:33,239
+bir ardışıl devrelerde
+
+1568
+01:24:33,239 --> 01:24:37,409
+bir kombinezonsal
+
+1569
+01:24:37,409 --> 01:24:41,140
+kısım var
+
+1570
+01:24:41,140 --> 01:24:43,140
+bir de hafıza
+
+1571
+01:24:43,140 --> 01:24:45,140
+kısmı var
+
+1572
+01:24:45,140 --> 01:24:47,140
+hafıza veya durum
+
+1573
+01:24:47,140 --> 01:24:49,140
+bilgilerinin saklandığı kısım var
+
+1574
+01:24:49,140 --> 01:24:51,140
+şimdi
+
+1575
+01:24:51,140 --> 01:24:53,140
+kombinezonsal devrelerde arkadaşlar
+
+1576
+01:24:53,140 --> 01:24:55,140
+bildiğimiz
+
+1577
+01:24:55,140 --> 01:24:57,140
+lojik kapılara dayalı kısımlar var
+
+1578
+01:24:57,140 --> 01:25:00,479
+lojik kapılarla
+
+1579
+01:25:00,479 --> 01:25:02,479
+tasarım kısmı var
+
+1580
+01:25:02,479 --> 01:25:04,479
+hafıza kısmında ise
+
+1581
+01:25:04,479 --> 01:25:06,479
+arkadaşlar
+
+1582
+01:25:06,479 --> 01:25:11,079
+flip floplar
+
+1583
+01:25:11,079 --> 01:25:13,079
+bunlar bir bit
+
+1584
+01:25:13,079 --> 01:25:17,250
+saklayıcılar
+
+1585
+01:25:17,250 --> 01:25:19,250
+flip flopların haricinde
+
+1586
+01:25:19,250 --> 01:25:25,090
+tutucular
+
+1587
+01:25:25,090 --> 01:25:27,090
+latches
+
+1588
+01:25:27,090 --> 01:25:30,500
+olarak adlandırılıyor
+
+1589
+01:25:30,500 --> 01:25:32,500
+bunun dışında sayıcı
+
+1590
+01:25:32,500 --> 01:25:41,189
+counter
+
+1591
+01:25:41,189 --> 01:25:43,189
+eğer gittikçe
+
+1592
+01:25:43,189 --> 01:25:45,189
+daha da burada sayıcı tutucular
+
+1593
+01:25:45,189 --> 01:25:47,189
+bunlar bir bitlikti
+
+1594
+01:25:47,189 --> 01:25:49,189
+sayıcıyla beraber xbit
+
+1595
+01:25:49,189 --> 01:25:51,189
+yavaş yavaş
+
+1596
+01:25:51,189 --> 01:25:53,189
+ram
+
+1597
+01:25:53,189 --> 01:25:55,189
+rom
+
+1598
+01:25:55,189 --> 01:25:57,189
+ondan sonra ödev olarak yaptığımız
+
+1599
+01:25:57,189 --> 01:25:59,189
+ardışıl diziler
+
+1600
+01:25:59,189 --> 01:26:05,090
+pc
+
+1601
+01:26:05,090 --> 01:26:07,090
+psa gibi
+
+1602
+01:26:07,090 --> 01:26:09,090
+kullanılıyor
+
+1603
+01:26:09,090 --> 01:26:11,090
+şimdi
+
+1604
+01:26:11,090 --> 01:26:13,090
+kombinezonsal devreler dediğim gibi
+
+1605
+01:26:13,090 --> 01:26:15,090
+lojik devreye karşı
+
+1606
+01:26:15,090 --> 01:26:17,090
+dayalı tasarımlar yapılıyor
+
+1607
+01:26:17,090 --> 01:26:19,090
+kombinezonsal devrelerde
+
+1608
+01:26:19,090 --> 01:26:21,090
+aynı zamanda
+
+1609
+01:26:21,090 --> 01:26:23,090
+pla ve
+
+1610
+01:26:23,090 --> 01:26:25,090
+pallar kullanılarak da
+
+1611
+01:26:25,090 --> 01:26:27,090
+karmaşıklığına göre devreler
+
+1612
+01:26:27,090 --> 01:26:29,090
+işin içine katılıyor
+
+1613
+01:26:29,090 --> 01:26:31,090
+flip floplar temel saklama
+
+1614
+01:26:31,090 --> 01:26:33,090
+birimi olarak ardışıl devre tasarımında
+
+1615
+01:26:33,090 --> 01:26:35,090
+çok uçak kullanılıyor arkadaşlar
+
+1616
+01:26:35,090 --> 01:26:37,090
+yan yana getirilerek
+
+1617
+01:26:37,090 --> 01:26:39,090
+en bitlik diziler oluşturulabiliyor
+
+1618
+01:26:39,090 --> 01:26:41,090
+en tane flip flop
+
+1619
+01:26:41,090 --> 01:26:43,090
+kullanırsanız en bitlik
+
+1620
+01:26:43,090 --> 01:26:45,090
+saklama birimlerine ulaşıyorsunuz
+
+1621
+01:26:45,090 --> 01:26:47,090
+örneğin standart deminki
+
+1622
+01:26:47,090 --> 01:26:49,090
+şifreleme devresinde
+
+1623
+01:26:49,090 --> 01:26:51,090
+toplam kaç tane duruma ihtiyacımız
+
+1624
+01:26:51,090 --> 01:26:53,090
+var bizim
+
+1625
+01:26:53,090 --> 01:26:55,090
+6-7 tane
+
+1626
+01:26:55,090 --> 01:26:57,090
+3 tane flip flop kullanarak
+
+1627
+01:26:57,090 --> 01:26:59,090
+bunları saklayabiliyoruz
+
+1628
+01:26:59,090 --> 01:27:02,529
+arkadaşlar ve de
+
+1629
+01:27:02,529 --> 01:27:04,529
+birazdan da temel
+
+1630
+01:27:04,529 --> 01:27:06,529
+giriş yapacağımız
+
+1631
+01:27:06,529 --> 01:27:08,529
+4 tip
+
+1632
+01:27:08,529 --> 01:27:10,529
+flip flop türümüz var
+
+1633
+01:27:10,529 --> 01:27:12,529
+bu flip flop türlerini
+
+1634
+01:27:12,529 --> 01:27:14,529
+ele alacağız
+
+1635
+01:27:14,529 --> 01:27:16,529
+birazdan
+
+1636
+01:27:16,529 --> 01:27:18,529
+bunun haricinde tutucular var
+
+1637
+01:27:18,529 --> 01:27:20,529
+tutucular da flip floplar gibi
+
+1638
+01:27:20,529 --> 01:27:22,529
+bir bitlik saklama için kullanılıyor
+
+1639
+01:27:22,529 --> 01:27:24,529
+flip flopların tasarımı da
+
+1640
+01:27:24,529 --> 01:27:26,529
+tutuculara dayanmaktadır
+
+1641
+01:27:26,529 --> 01:27:28,529
+temel olarak
+
+1642
+01:27:28,529 --> 01:27:30,529
+2 tane
+
+1643
+01:27:30,529 --> 01:27:32,529
+nant veya nor kapısıyla
+
+1644
+01:27:32,529 --> 01:27:34,529
+yalın bir tutucu
+
+1645
+01:27:34,529 --> 01:27:36,529
+tasarlanabiliyor
+
+1646
+01:27:36,529 --> 01:27:38,529
+bunun haricinde
+
+1647
+01:27:38,529 --> 01:27:40,529
+saklayıcılar var
+
+1648
+01:27:40,529 --> 01:27:42,529
+saklayıcılar
+
+1649
+01:27:42,529 --> 01:27:44,529
+bunu yazmayı unutmuşum
+
+1650
+01:27:44,529 --> 01:27:46,529
+şurada
+
+1651
+01:27:46,529 --> 01:27:48,529
+şu araya girelim
+
+1652
+01:27:48,529 --> 01:27:52,390
+saklayıcılar
+
+1653
+01:27:52,390 --> 01:27:56,279
+registers
+
+1654
+01:27:56,279 --> 01:27:58,279
+bu bizim mikro işlemcide
+
+1655
+01:27:58,279 --> 01:28:00,279
+donanımda görmüş olduğumuz
+
+1656
+01:28:00,279 --> 01:28:02,279
+anlık durumları saklayan
+
+1657
+01:28:02,279 --> 01:28:04,279
+registerlarla aynı yapıda arkadaşlar
+
+1658
+01:28:04,279 --> 01:28:06,279
+bunlar da yan yana
+
+1659
+01:28:06,279 --> 01:28:08,279
+dizilmiş flip flop kümeleri
+
+1660
+01:28:08,279 --> 01:28:10,279
+flip flopların
+
+1661
+01:28:10,279 --> 01:28:12,279
+her bir bitiği için bir flip flop
+
+1662
+01:28:12,279 --> 01:28:14,279
+kullanılıyor
+
+1663
+01:28:14,279 --> 01:28:16,279
+bunun dışında 8 bitlik 16 bitlik
+
+1664
+01:28:16,279 --> 01:28:18,279
+8 bit 16 bitlik
+
+1665
+01:28:18,279 --> 01:28:20,279
+32 bitlik
+
+1666
+01:28:20,279 --> 01:28:22,279
+registerlar
+
+1667
+01:28:22,279 --> 01:28:24,279
+64 registerlar kullanılabiliyor
+
+1668
+01:28:24,279 --> 01:28:26,279
+saklayıcılar bilginin
+
+1669
+01:28:26,279 --> 01:28:28,279
+giriş ve çıkışına göre paralel paralel
+
+1670
+01:28:28,279 --> 01:28:32,039
+paralel giriş paralel çıkış
+
+1671
+01:28:32,039 --> 01:28:34,039
+ondan sonra
+
+1672
+01:28:34,039 --> 01:28:36,039
+paralel seri
+
+1673
+01:28:36,039 --> 01:28:38,039
+paralel giriş
+
+1674
+01:28:38,039 --> 01:28:40,039
+seri çıkış
+
+1675
+01:28:40,039 --> 01:28:42,039
+onun dışında
+
+1676
+01:28:42,039 --> 01:28:45,350
+seri seri
+
+1677
+01:28:45,350 --> 01:28:47,350
+seri giriş
+
+1678
+01:28:47,350 --> 01:28:49,350
+paralel çıkış olmak üzere
+
+1679
+01:28:49,350 --> 01:28:51,350
+4 tipte dizayn edilebiliyor
+
+1680
+01:28:51,350 --> 01:28:53,350
+sayıcılar
+
+1681
+01:28:53,350 --> 01:28:55,350
+aynı saklayıcılarda
+
+1682
+01:28:55,350 --> 01:28:57,350
+olduğu gibi en bitlik bilgiyi
+
+1683
+01:28:57,350 --> 01:28:59,350
+tutmanın yanı sıra
+
+1684
+01:28:59,350 --> 01:29:01,350
+her saat çevreminde çıkış uçlarındaki
+
+1685
+01:29:01,350 --> 01:29:03,350
+değeri belli sırada
+
+1686
+01:29:03,350 --> 01:29:05,350
+değiştiren elemanlar
+
+1687
+01:29:05,350 --> 01:29:07,350
+örneğin sıfırdan
+
+1688
+01:29:07,350 --> 01:29:09,350
+başlayıp birer artını
+
+1689
+01:29:09,350 --> 01:29:11,350
+15'e kadar değişim yapabiliyoruz
+
+1690
+01:29:11,350 --> 01:29:13,350
+mesela 4 bitlik bir
+
+1691
+01:29:13,350 --> 01:29:15,350
+sayıcı olarak bazen sayıcılar
+
+1692
+01:29:15,350 --> 01:29:17,350
+yukarıdan aşağı sayabildiği gibi
+
+1693
+01:29:17,350 --> 01:29:19,350
+ne yapılabiliyor
+
+1694
+01:29:19,350 --> 01:29:21,350
+yukarıdan aşağı
+
+1695
+01:29:21,350 --> 01:29:23,350
+da saydırılabiliyor
+
+1696
+01:29:23,350 --> 01:29:25,350
+özellikle durum
+
+1697
+01:29:25,350 --> 01:29:27,350
+durumlarının durum bilgilerinin
+
+1698
+01:29:27,350 --> 01:29:29,350
+sıralı olarak artıp azaldığı
+
+1699
+01:29:29,350 --> 01:29:31,350
+durumlarda kullanılabiliyor
+
+1700
+01:29:31,350 --> 01:29:33,350
+burada da
+
+1701
+01:29:33,350 --> 01:29:35,350
+ikili temel ikili sayıcıya
+
+1702
+01:29:35,350 --> 01:29:37,350
+ek olarak çokça farklı
+
+1703
+01:29:37,350 --> 01:29:39,350
+sayıcı tipleri bulunabiliyor
+
+1704
+01:29:39,350 --> 01:29:41,350
+halka sayıcı modüle sayıcı ripple sayıcı
+
+1705
+01:29:41,350 --> 01:29:43,350
+gibi tipleri
+
+1706
+01:29:43,350 --> 01:29:45,350
+bulunuyor bunlardan da bahsedeceğiz
+
+1707
+01:29:45,350 --> 01:29:47,350
+eğer
+
+1708
+01:29:47,350 --> 01:29:49,350
+hafıza ihtiyacımız durum bilgimiz
+
+1709
+01:29:49,350 --> 01:29:51,350
+çok sayıda ise arkadaşlar
+
+1710
+01:29:51,350 --> 01:29:53,350
+artık küçük boyutlu
+
+1711
+01:29:53,350 --> 01:29:55,350
+devre tasımını geçip
+
+1712
+01:29:55,350 --> 01:29:57,350
+orta ve büyük devrelere doğru geçtiysek
+
+1713
+01:29:57,350 --> 01:29:59,350
+artık rem
+
+1714
+01:29:59,350 --> 01:30:01,350
+rom prom
+
+1715
+01:30:01,350 --> 01:30:03,350
+rem rom
+
+1716
+01:30:03,350 --> 01:30:05,350
+bunun haricinde prom
+
+1717
+01:30:05,350 --> 01:30:07,350
+e prom
+
+1718
+01:30:07,350 --> 01:30:12,710
+e kare prom
+
+1719
+01:30:12,710 --> 01:30:19,029
+promlar arkadaşlar
+
+1720
+01:30:21,029 --> 01:30:23,029
+programlanabilir romlar
+
+1721
+01:30:23,029 --> 01:30:25,029
+read only access
+
+1722
+01:30:25,029 --> 01:30:27,029
+yani sadece okuma amacıyla yapılabiliyor
+
+1723
+01:30:27,029 --> 01:30:29,029
+e promlar
+
+1724
+01:30:29,029 --> 01:30:31,029
+bunlar
+
+1725
+01:30:31,029 --> 01:30:33,029
+tekrar silinebiliyor
+
+1726
+01:30:33,029 --> 01:30:35,029
+promlar gibi değil
+
+1727
+01:30:35,029 --> 01:30:37,029
+tekrar silinebiliyor
+
+1728
+01:30:37,029 --> 01:30:41,399
+başındaki e erasable
+
+1729
+01:30:41,399 --> 01:30:43,399
+ondan sonra e kare promlar
+
+1730
+01:30:43,399 --> 01:30:45,399
+elektrik olarak
+
+1731
+01:30:45,399 --> 01:30:47,399
+bazılarının e promlarda arkadaşlar
+
+1732
+01:30:47,399 --> 01:30:49,399
+eskiden
+
+1733
+01:30:49,399 --> 01:30:51,399
+çipin üzerinde
+
+1734
+01:30:51,399 --> 01:30:53,399
+pencere gibi bir yapı vardı
+
+1735
+01:30:53,399 --> 01:30:55,399
+oradaki bitlerin silinebilmesi için
+
+1736
+01:30:55,399 --> 01:30:57,399
+elektriksel olarak mor bir ışığın altında
+
+1737
+01:30:57,399 --> 01:30:59,399
+tutulurdu
+
+1738
+01:30:59,399 --> 01:31:01,399
+içerisindeki bitlerin
+
+1739
+01:31:01,399 --> 01:31:03,399
+belli bir şekilde
+
+1740
+01:31:03,399 --> 01:31:05,399
+sıfırdan bire birden sıfıra
+
+1741
+01:31:05,399 --> 01:31:07,399
+veya yapısına göre silinmesi
+
+1742
+01:31:07,399 --> 01:31:09,399
+sağlanırdı tabi bu eski teknoloji
+
+1743
+01:31:09,399 --> 01:31:11,399
+kaldı bundan daha sonra
+
+1744
+01:31:11,399 --> 01:31:13,399
+e kare promlar çıktılar
+
+1745
+01:31:13,399 --> 01:31:18,239
+electrically erasable
+
+1746
+01:31:18,239 --> 01:31:21,909
+buradaki iki tane
+
+1747
+01:31:21,909 --> 01:31:23,909
+e kare denmesinin nedeni
+
+1748
+01:31:23,909 --> 01:31:25,909
+burada iki tane e ile başlayan kelime olmuş
+
+1749
+01:31:25,909 --> 01:31:27,909
+e kare programlanabilir
+
+1750
+01:31:27,909 --> 01:31:29,909
+romlar geldi
+
+1751
+01:31:29,909 --> 01:31:31,909
+bundan sonra da
+
+1752
+01:31:31,909 --> 01:31:33,909
+cam yani
+
+1753
+01:31:33,909 --> 01:31:35,909
+içerik adreslenebilir
+
+1754
+01:31:35,909 --> 01:31:37,909
+content
+
+1755
+01:31:37,909 --> 01:31:44,710
+addressable
+
+1756
+01:31:44,710 --> 01:31:46,710
+memories
+
+1757
+01:31:46,710 --> 01:31:48,710
+geldi bundan da bahsedeceğiz
+
+1758
+01:31:48,710 --> 01:31:50,710
+arkadaşlar
+
+1759
+01:31:50,710 --> 01:31:52,710
+onun dışında programlanabilir
+
+1760
+01:31:52,710 --> 01:31:54,710
+ardışıl diziler geldi
+
+1761
+01:31:54,710 --> 01:31:56,710
+kombinozansal devrelerde
+
+1762
+01:31:56,710 --> 01:31:58,710
+kullanılan pli'lere benziyor
+
+1763
+01:31:58,710 --> 01:32:00,710
+bunlar
+
+1764
+01:32:00,710 --> 01:32:02,710
+pli'lere benzer
+
+1765
+01:32:02,710 --> 01:32:04,710
+burada pli'lerden farklı olarak
+
+1766
+01:32:04,710 --> 01:32:06,710
+yapıları ek olarak
+
+1767
+01:32:06,710 --> 01:32:08,710
+bilgilerini tutan
+
+1768
+01:32:08,710 --> 01:32:10,710
+flip-flop ve saklayıcıların da
+
+1769
+01:32:10,710 --> 01:32:12,710
+olması sağlanıyor
+
+1770
+01:32:12,710 --> 01:32:14,710
+şimdi bir sonraki kısım
+
+1771
+01:32:14,710 --> 01:32:16,710
+kitabımızda
+
+1772
+01:32:16,710 --> 01:32:18,710
+kenar ve düzey
+
+1773
+01:32:18,710 --> 01:32:20,710
+düzey
+
+1774
+01:32:20,710 --> 01:32:22,710
+kısmı var
+
+1775
+01:32:22,710 --> 01:32:24,710
+bundan biraz bahsetmiştim
+
+1776
+01:32:24,710 --> 01:32:26,710
+sonuçta bizim
+
+1777
+01:32:26,710 --> 01:32:28,710
+bir saat ihtiyacımız var
+
+1778
+01:32:28,710 --> 01:32:30,710
+senkron devrelerde
+
+1779
+01:32:30,710 --> 01:32:32,710
+dediğim gibi
+
+1780
+01:32:32,710 --> 01:32:34,710
+kenarlarla beraber
+
+1781
+01:32:34,710 --> 01:32:36,710
+eğer ben
+
+1782
+01:32:36,710 --> 01:32:38,710
+benim kullanmış olduğum
+
+1783
+01:32:38,710 --> 01:32:40,710
+hafıza ve girişlerin
+
+1784
+01:32:40,710 --> 01:32:42,710
+hafıza devrelerini
+
+1785
+01:32:42,710 --> 01:32:44,710
+çıkış üretmesi açısından
+
+1786
+01:32:44,710 --> 01:32:46,710
+tetikleyeceksem şayet
+
+1787
+01:32:46,710 --> 01:32:48,710
+kenarlardan yararlanabiliyorum
+
+1788
+01:32:48,710 --> 01:32:50,710
+şu şekilde yükselen kenar
+
+1789
+01:32:50,710 --> 01:32:52,710
+veya düşen kenarda
+
+1790
+01:32:52,710 --> 01:32:54,710
+tetiklenmelerini
+
+1791
+01:32:54,710 --> 01:32:56,710
+daha doğrusu çıkış üretmelerini
+
+1792
+01:32:56,710 --> 01:32:58,710
+sağlayabildiğim yapılar bulduğu gibi
+
+1793
+01:32:58,710 --> 01:33:00,710
+demin de anlattığım gibi
+
+1794
+01:33:00,710 --> 01:33:02,710
+bunlar kenarlarla alakalıydı
+
+1795
+01:33:02,710 --> 01:33:04,710
+bazen de
+
+1796
+01:33:04,710 --> 01:33:06,710
+seviye
+
+1797
+01:33:06,710 --> 01:33:08,710
+belli 5 voltu
+
+1798
+01:33:08,710 --> 01:33:10,710
+belli bir thresholdun
+
+1799
+01:33:10,710 --> 01:33:12,710
+üstüne geçtiği zaman
+
+1800
+01:33:12,710 --> 01:33:14,710
+tetiklenen
+
+1801
+01:33:14,710 --> 01:33:16,710
+bizim
+
+1802
+01:33:16,710 --> 01:33:18,710
+şey
+
+1803
+01:33:18,710 --> 01:33:20,710
+pozitif düzey
+
+1804
+01:33:20,710 --> 01:33:22,710
+şurası pozitif
+
+1805
+01:33:22,710 --> 01:33:24,710
+tetikleme
+
+1806
+01:33:24,710 --> 01:33:28,439
+tam tersi değilse
+
+1807
+01:33:28,439 --> 01:33:30,439
+belli bir thresholdun altında ise
+
+1808
+01:33:30,439 --> 01:33:32,439
+negatif
+
+1809
+01:33:32,439 --> 01:33:34,439
+düzey tetiklemeler
+
+1810
+01:33:34,439 --> 01:33:38,960
+elemanları
+
+1811
+01:33:38,960 --> 01:33:40,960
+gerçekleştirebiliyor
+
+1812
+01:33:40,960 --> 01:33:42,960
+bunun haricinde arkadaşlar
+
+1813
+01:33:42,960 --> 01:33:44,960
+peki bu saat darbeleri
+
+1814
+01:33:44,960 --> 01:33:46,960
+nereye giriyor?
+
+1815
+01:33:46,960 --> 01:33:48,960
+hafıza birimlerine giriyor
+
+1816
+01:33:48,960 --> 01:33:50,960
+hafızalarda bir kapı şeklinde
+
+1817
+01:33:50,960 --> 01:33:52,960
+gösterecek olursak
+
+1818
+01:33:52,960 --> 01:33:54,960
+girişler genellikle saat girişlerini
+
+1819
+01:33:54,960 --> 01:33:56,960
+şöyle bir üçgen şeklinde
+
+1820
+01:33:56,960 --> 01:33:58,960
+çizim yaparlar
+
+1821
+01:33:58,960 --> 01:34:00,960
+örneğin bu bizim en basit
+
+1822
+01:34:00,960 --> 01:34:02,960
+hafıza birimimiz filof olsun
+
+1823
+01:34:02,960 --> 01:34:04,960
+saat birimi bu şekilde girilebiliyor
+
+1824
+01:34:04,960 --> 01:34:06,960
+bu şekilde bir gösterimde
+
+1825
+01:34:06,960 --> 01:34:08,960
+arkadaşlar mesela burada burası da
+
+1826
+01:34:08,960 --> 01:34:10,960
+bilgilerinin girildiği
+
+1827
+01:34:10,960 --> 01:34:12,960
+bir D tipi giriş olsun
+
+1828
+01:34:12,960 --> 01:34:14,960
+genellikle hafıza birimlerinde
+
+1829
+01:34:14,960 --> 01:34:16,960
+arkadaşlar çıkışlar
+
+1830
+01:34:16,960 --> 01:34:18,960
+birbirinin tümleyeni şeklinde
+
+1831
+01:34:18,960 --> 01:34:20,960
+verilebiliyor
+
+1832
+01:34:20,960 --> 01:34:22,960
+bu tür bir yapıda
+
+1833
+01:34:22,960 --> 01:34:24,960
+bu tür bir gösterimde arkadaşlar
+
+1834
+01:34:24,960 --> 01:34:26,960
+saatin yükselen kenarında
+
+1835
+01:34:26,960 --> 01:34:28,960
+tetikleme yaptığımızı
+
+1836
+01:34:28,960 --> 01:34:30,960
+söylüyoruz yükselen kenar
+
+1837
+01:34:30,960 --> 01:34:32,960
+tetiklemesi bu
+
+1838
+01:34:32,960 --> 01:34:34,960
+eğer düşen kenar
+
+1839
+01:34:34,960 --> 01:34:36,960
+olduğunu söylüyorsak
+
+1840
+01:34:36,960 --> 01:34:38,960
+düşen kenarda tetiklenebilir bir
+
+1841
+01:34:38,960 --> 01:34:40,960
+fili filof kullandığımızı
+
+1842
+01:34:40,960 --> 01:34:42,960
+söylüyorsak arkadaşlar
+
+1843
+01:34:42,960 --> 01:34:44,960
+şurada bir
+
+1844
+01:34:44,960 --> 01:34:46,960
+değil işareti oluşuyor
+
+1845
+01:34:46,960 --> 01:34:48,960
+buradan da anlayacağımız
+
+1846
+01:34:48,960 --> 01:34:50,960
+saatin düşen kenarında
+
+1847
+01:34:50,960 --> 01:34:52,960
+tetiklemenin
+
+1848
+01:34:52,960 --> 01:34:54,960
+gerçekleştirildiği
+
+1849
+01:34:54,960 --> 01:34:56,960
+düzey tetiklemelerde ise
+
+1850
+01:34:56,960 --> 01:34:58,960
+arkadaşlar şunlar
+
+1851
+01:34:58,960 --> 01:35:00,960
+kenarlarla
+
+1852
+01:35:00,960 --> 01:35:02,960
+kenarlarla alakalı
+
+1853
+01:35:02,960 --> 01:35:04,960
+yükselen veya düşen
+
+1854
+01:35:04,960 --> 01:35:06,960
+kenarda tetikleme yapıldığını
+
+1855
+01:35:06,960 --> 01:35:08,960
+göstermek için üçgen kullanılırken
+
+1856
+01:35:08,960 --> 01:35:10,960
+düzey tetikleme
+
+1857
+01:35:10,960 --> 01:35:12,960
+hafıza birimlerinde ise arkadaşlar
+
+1858
+01:35:12,960 --> 01:35:14,960
+normal hafıza
+
+1859
+01:35:14,960 --> 01:35:16,960
+saat girişleri
+
+1860
+01:35:16,960 --> 01:35:21,039
+şu şekilde gösterilir
+
+1861
+01:35:21,039 --> 01:35:23,039
+şurası da clock
+
+1862
+01:35:23,039 --> 01:35:25,039
+düzey tetiklemede
+
+1863
+01:35:25,039 --> 01:35:27,039
+şurası
+
+1864
+01:35:27,039 --> 01:35:30,710
+örneğin
+
+1865
+01:35:30,710 --> 01:35:35,880
+şunu şöyle çizeyim
+
+1866
+01:35:35,880 --> 01:35:37,880
+şu normal giriş
+
+1867
+01:35:37,880 --> 01:35:39,880
+yaptığımızda
+
+1868
+01:35:39,880 --> 01:35:41,880
+belli bir düzeyde burası
+
+1869
+01:35:41,880 --> 01:35:43,880
+pozitif
+
+1870
+01:35:43,880 --> 01:35:49,300
+düzey tetikleme
+
+1871
+01:35:49,300 --> 01:35:51,300
+şurada şu üçgen
+
+1872
+01:35:51,300 --> 01:35:53,300
+yapısı yok
+
+1873
+01:35:53,300 --> 01:35:56,869
+eğer normal düşey
+
+1874
+01:35:56,869 --> 01:35:58,869
+negatif
+
+1875
+01:35:58,869 --> 01:36:00,869
+düzeyde
+
+1876
+01:36:00,869 --> 01:36:02,869
+tetiklenme varsa
+
+1877
+01:36:02,869 --> 01:36:04,869
+negatif değerde tetiklenme varsa
+
+1878
+01:36:04,869 --> 01:36:06,869
+burada ekstradan şuraya
+
+1879
+01:36:06,869 --> 01:36:08,869
+şu değil işareti
+
+1880
+01:36:08,869 --> 01:36:10,869
+manasında yuvarlığı da
+
+1881
+01:36:10,869 --> 01:36:12,869
+çiziyoruz arkadaşlar
+
+1882
+01:36:12,869 --> 01:36:14,869
+bu da negatif
+
+1883
+01:36:14,869 --> 01:36:16,869
+düzey tetikleme
+
+1884
+01:36:16,869 --> 01:36:21,909
+şimdi
+
+1885
+01:36:21,909 --> 01:36:23,909
+burada saat
+
+1886
+01:36:23,909 --> 01:36:25,909
+işareti ve de
+
+1887
+01:36:25,909 --> 01:36:27,909
+senkron hücrelerinin davranışına
+
+1888
+01:36:27,909 --> 01:36:29,909
+birazcık
+
+1889
+01:36:29,909 --> 01:36:31,909
+girmekte fayda var arkadaşlar
+
+1890
+01:36:31,909 --> 01:36:33,909
+şimdi
+
+1891
+01:36:33,909 --> 01:36:35,909
+saat işaretlerinin analizinde
+
+1892
+01:36:35,909 --> 01:36:37,909
+şuna dikkat ediliyor
+
+1893
+01:36:37,909 --> 01:36:39,909
+saat işaretleri
+
+1894
+01:36:39,909 --> 01:36:41,909
+bildiğimiz aslında
+
+1895
+01:36:41,909 --> 01:36:43,909
+bizim
+
+1896
+01:36:43,909 --> 01:36:45,909
+ne diyelim
+
+1897
+01:36:45,909 --> 01:36:47,909
+ac işaretler
+
+1898
+01:36:47,909 --> 01:36:49,909
+yani sinizoidal işaretler
+
+1899
+01:36:49,909 --> 01:36:51,909
+gibi değişim
+
+1900
+01:36:51,909 --> 01:36:53,909
+alternatif değişen
+
+1901
+01:36:53,909 --> 01:36:55,909
+işaretler
+
+1902
+01:36:55,909 --> 01:36:59,439
+burada pozitif kaldığı süre
+
+1903
+01:36:59,439 --> 01:37:01,439
+bunun da bir
+
+1904
+01:37:01,439 --> 01:37:03,439
+periyodu arkadaşlar
+
+1905
+01:37:03,439 --> 01:37:05,439
+t diye gösteriliyor şu şekilde
+
+1906
+01:37:05,439 --> 01:37:07,439
+burada
+
+1907
+01:37:07,439 --> 01:37:09,439
+tam böyle bir oluşturduğu kısma
+
+1908
+01:37:09,439 --> 01:37:13,109
+darbe
+
+1909
+01:37:13,109 --> 01:37:15,109
+deniyor sıfır oluşturduğu kısma
+
+1910
+01:37:15,109 --> 01:37:17,109
+boşluk deniyor aynı şekilde
+
+1911
+01:37:17,109 --> 01:37:19,109
+bu darbe
+
+1912
+01:37:19,109 --> 01:37:21,109
+kısımları t d olarak
+
+1913
+01:37:21,109 --> 01:37:23,109
+adlandırırken boşluk
+
+1914
+01:37:23,109 --> 01:37:25,109
+kısımları da t b
+
+1915
+01:37:25,109 --> 01:37:27,109
+olarak adlandırılıyor
+
+1916
+01:37:27,109 --> 01:37:29,109
+şimdi
+
+1917
+01:37:29,109 --> 01:37:31,109
+demin de dediğim gibi
+
+1918
+01:37:31,109 --> 01:37:33,109
+idealde darbenin çok küçük
+
+1919
+01:37:33,109 --> 01:37:35,109
+boşluğun
+
+1920
+01:37:35,109 --> 01:37:37,109
+çok büyük olması bekleniyor
+
+1921
+01:37:37,109 --> 01:37:39,109
+yani t darbenin
+
+1922
+01:37:39,109 --> 01:37:42,579
+neredeyse
+
+1923
+01:37:42,579 --> 01:37:44,579
+sıfıra yakın
+
+1924
+01:37:44,579 --> 01:37:46,579
+olması bekleniyor boşluğun ise
+
+1925
+01:37:46,579 --> 01:37:48,579
+geniş kısımda olması
+
+1926
+01:37:48,579 --> 01:37:50,579
+bekleniyor
+
+1927
+01:37:50,579 --> 01:37:52,579
+burada
+
+1928
+01:37:52,579 --> 01:37:54,579
+darbe
+
+1929
+01:37:54,579 --> 01:37:56,579
+boşluk oranı
+
+1930
+01:37:56,579 --> 01:37:58,579
+saatlerin
+
+1931
+01:37:58,579 --> 01:38:00,579
+yapısını belirlemede çok önemli
+
+1932
+01:38:00,579 --> 01:38:02,579
+yani buradaki
+
+1933
+01:38:02,579 --> 01:38:04,579
+darbe oranının
+
+1934
+01:38:04,579 --> 01:38:06,579
+boşluğa olan oranının
+
+1935
+01:38:06,579 --> 01:38:08,579
+bir göstergesi
+
+1936
+01:38:08,579 --> 01:38:13,039
+bizim için
+
+1937
+01:38:13,039 --> 01:38:15,039
+darbe boşluk oranları çeşitli
+
+1938
+01:38:15,039 --> 01:38:17,039
+uygulamalara göre değişebiliyor
+
+1939
+01:38:17,039 --> 01:38:19,039
+arkadaşlar
+
+1940
+01:38:19,039 --> 01:38:21,039
+evet
+
+1941
+01:38:21,039 --> 01:38:23,039
+onun dışında bir de tabiki
+
+1942
+01:38:23,039 --> 01:38:25,039
+bu saatlerin genliği
+
+1943
+01:38:25,039 --> 01:38:27,039
+yani bir
+
+1944
+01:38:27,039 --> 01:38:29,039
+olduğu zaman darbe olduğu zaman
+
+1945
+01:38:29,039 --> 01:38:31,039
+alacağı değer 5 volt mu
+
+1946
+01:38:31,039 --> 01:38:33,039
+ondan sonra 3.7 volt mu
+
+1947
+01:38:33,039 --> 01:38:35,039
+12 volt mu olacak
+
+1948
+01:38:35,039 --> 01:38:37,039
+tabiki kullanılacak
+
+1949
+01:38:37,039 --> 01:38:39,039
+tüm devreye çok bağlı arkadaşlar
+
+1950
+01:38:39,039 --> 01:38:41,039
+bunun haricinde
+
+1951
+01:38:41,039 --> 01:38:43,039
+nelerden bahsedebiliriz
+
+1952
+01:38:43,039 --> 01:38:49,840
+burada zaman değer damlarını
+
+1953
+01:38:49,840 --> 01:38:51,840
+çizmiş darbe boşluk oranlarından
+
+1954
+01:38:51,840 --> 01:38:53,840
+bahsetmiş
+
+1955
+01:38:53,840 --> 01:38:55,840
+bir de
+
+1956
+01:38:55,840 --> 01:38:57,840
+normalde
+
+1957
+01:38:57,840 --> 01:38:59,840
+saatlerimiz uygulanmaya başladı
+
+1958
+01:38:59,840 --> 01:39:01,840
+tüm devrelerimizi
+
+1959
+01:39:01,840 --> 01:39:03,840
+şimdi bizim
+
+1960
+01:39:03,840 --> 01:39:05,840
+girişimiz
+
+1961
+01:39:05,840 --> 01:39:07,840
+şurada belli bir
+
+1962
+01:39:07,840 --> 01:39:09,840
+eğer düşen kenarda
+
+1963
+01:39:09,840 --> 01:39:11,840
+uyguladığımızı yükselen
+
+1964
+01:39:11,840 --> 01:39:13,840
+kenarda uyguladığımızı düşünelim
+
+1965
+01:39:13,840 --> 01:39:15,840
+tam yükselen kenarda
+
+1966
+01:39:15,840 --> 01:39:17,840
+bizim
+
+1967
+01:39:17,840 --> 01:39:19,840
+girişimizin
+
+1968
+01:39:19,840 --> 01:39:23,380
+arkadaşlar
+
+1969
+01:39:23,380 --> 01:39:25,380
+belli değerlerde olması lazım
+
+1970
+01:39:25,380 --> 01:39:27,380
+yani şunu garanti edebilmemiz
+
+1971
+01:39:27,380 --> 01:39:29,380
+lazım şuradayken
+
+1972
+01:39:29,380 --> 01:39:31,380
+bir bilgisini alacak
+
+1973
+01:39:31,380 --> 01:39:33,380
+seviyede
+
+1974
+01:39:33,380 --> 01:39:38,130
+belli bir süre öncesinde
+
+1975
+01:39:38,130 --> 01:39:40,130
+süre öncesinde
+
+1976
+01:39:40,130 --> 01:39:42,130
+ben girişin
+
+1977
+01:39:42,130 --> 01:39:44,130
+xt nin sisteme
+
+1978
+01:39:44,130 --> 01:39:46,130
+verilmiş olmasını garanti
+
+1979
+01:39:46,130 --> 01:39:48,130
+etmem lazım
+
+1980
+01:39:48,130 --> 01:39:50,130
+buna da arkadaşlar
+
+1981
+01:39:50,130 --> 01:39:52,130
+ne diyor yerleşme
+
+1982
+01:39:52,130 --> 01:39:54,130
+zamanı
+
+1983
+01:39:54,130 --> 01:39:56,130
+evet şu kısma
+
+1984
+01:39:56,130 --> 01:39:58,130
+ty
+
+1985
+01:39:58,130 --> 01:40:00,130
+yani
+
+1986
+01:40:00,130 --> 01:40:04,850
+yerleşme zamanı
+
+1987
+01:40:04,850 --> 01:40:06,850
+saat darbesinin alındığı
+
+1988
+01:40:06,850 --> 01:40:08,850
+andan önce
+
+1989
+01:40:08,850 --> 01:40:10,850
+belli bir süre önce
+
+1990
+01:40:10,850 --> 01:40:12,850
+girişin verilmiş olması lazım
+
+1991
+01:40:12,850 --> 01:40:14,850
+yerleşme zamanı deniyor
+
+1992
+01:40:14,850 --> 01:40:16,850
+belli bir süre sonra da
+
+1993
+01:40:16,850 --> 01:40:18,850
+tabii ki
+
+1994
+01:40:18,850 --> 01:40:20,850
+buradaki şu mavi kısımda
+
+1995
+01:40:20,850 --> 01:40:22,850
+ben bu girişi alacağım
+
+1996
+01:40:22,850 --> 01:40:24,850
+şuradaki mavi kısımda
+
+1997
+01:40:24,850 --> 01:40:26,850
+bundan sonraki kısma ise arkadaşlar
+
+1998
+01:40:26,850 --> 01:40:28,850
+hold time
+
+1999
+01:40:28,850 --> 01:40:30,850
+veya t tutma
+
+2000
+01:40:30,850 --> 01:40:32,850
+diyelim
+
+2001
+01:40:32,850 --> 01:40:34,850
+t tutma burası da
+
+2002
+01:40:34,850 --> 01:40:36,850
+şu yerleşme setup time diye
+
+2003
+01:40:36,850 --> 01:40:38,850
+geçiyor setup time
+
+2004
+01:40:38,850 --> 01:40:40,850
+t tutma ise
+
+2005
+01:40:40,850 --> 01:40:42,850
+tutma zamanı
+
+2006
+01:40:42,850 --> 01:40:47,119
+bu da
+
+2007
+01:40:47,119 --> 01:40:49,119
+hold time
+
+2008
+01:40:49,119 --> 01:40:51,119
+olarak geçiyor
+
+2009
+01:40:51,119 --> 01:40:53,119
+işaret
+
+2010
+01:40:53,119 --> 01:40:55,119
+şurada gördüğünüz gibi
+
+2011
+01:40:55,119 --> 01:40:57,119
+belli bir süre önce t setup dan önce
+
+2012
+01:40:57,119 --> 01:40:59,119
+girişte olmak zorunda
+
+2013
+01:40:59,119 --> 01:41:01,119
+belli bir süre sonra saat işaretinden
+
+2014
+01:41:01,119 --> 01:41:03,119
+belli bir süre sonra da
+
+2015
+01:41:03,119 --> 01:41:05,119
+t tutma ve
+
+2016
+01:41:05,119 --> 01:41:07,119
+t h diye de gösteriliyor
+
+2017
+01:41:07,119 --> 01:41:09,119
+hold time olarak
+
+2018
+01:41:09,119 --> 01:41:11,119
+girişte varlığını
+
+2019
+01:41:11,119 --> 01:41:13,119
+oluşturmak zorunda yani şu geçen
+
+2020
+01:41:13,119 --> 01:41:15,119
+süre kadar
+
+2021
+01:41:15,119 --> 01:41:17,119
+sürede benim
+
+2022
+01:41:17,119 --> 01:41:19,119
+t y kadar
+
+2023
+01:41:19,119 --> 01:41:21,119
+sürede işaretin
+
+2024
+01:41:21,119 --> 01:41:23,119
+varlığını tutmam ve
+
+2025
+01:41:23,119 --> 01:41:25,119
+arkasından belli bir süre sonra da
+
+2026
+01:41:25,119 --> 01:41:27,119
+pardon yerleştirmem
+
+2027
+01:41:27,119 --> 01:41:29,119
+t y zamanı kadar bir süre önce
+
+2028
+01:41:29,119 --> 01:41:31,119
+işareti yerleştirmem
+
+2029
+01:41:31,119 --> 01:41:33,119
+t t kadar süre sonra da
+
+2030
+01:41:33,119 --> 01:41:35,119
+işaretin varlığını
+
+2031
+01:41:35,119 --> 01:41:37,119
+girişte
+
+2032
+01:41:37,119 --> 01:41:39,119
+bulundurmam gerekiyor aynı şekilde
+
+2033
+01:41:39,119 --> 01:41:41,119
+burada da yani burada bir sıfır
+
+2034
+01:41:41,119 --> 01:41:43,119
+bilgisi varmış gibi düşünelim
+
+2035
+01:41:43,119 --> 01:41:45,119
+t y ve t t
+
+2036
+01:41:45,119 --> 01:41:47,119
+kadar süre şuradaki sıfırın
+
+2037
+01:41:47,119 --> 01:41:49,119
+varlığını koruyabilmem lazım
+
+2038
+01:41:49,119 --> 01:41:51,119
+tabi
+
+2039
+01:41:51,119 --> 01:41:53,119
+bu oluştuktan
+
+2040
+01:41:53,119 --> 01:41:55,119
+sonra arkadaşlar
+
+2041
+01:41:55,119 --> 01:41:57,119
+artık çıkışın oluşturulması için
+
+2042
+01:41:57,119 --> 01:41:59,119
+yani z nin oluşturulması için
+
+2043
+01:41:59,119 --> 01:42:01,119
+burada bir tam
+
+2044
+01:42:01,119 --> 01:42:03,119
+şu andan itibaren belli bir süre sonra
+
+2045
+01:42:03,119 --> 01:42:05,119
+çıkış oluşmaya başlıyor
+
+2046
+01:42:05,119 --> 01:42:07,119
+ve gidiyor
+
+2047
+01:42:07,119 --> 01:42:09,119
+diyelim
+
+2048
+01:42:09,119 --> 01:42:11,119
+benim şurayı da sileyim
+
+2049
+01:42:11,119 --> 01:42:13,119
+veya
+
+2050
+01:42:13,119 --> 01:42:15,119
+bir süre sonra giriş oluştuktan
+
+2051
+01:42:15,119 --> 01:42:17,119
+sonra şöyle
+
+2052
+01:42:17,119 --> 01:42:19,119
+renkler
+
+2053
+01:42:19,119 --> 01:42:21,119
+kırmızı geldi
+
+2054
+01:42:21,119 --> 01:42:23,119
+belli bir süre sonra da şöyle
+
+2055
+01:42:23,119 --> 01:42:25,119
+çıkışta değişimler gözleniyor
+
+2056
+01:42:25,119 --> 01:42:27,119
+şu geçen süre yani
+
+2057
+01:42:27,119 --> 01:42:29,119
+benim
+
+2058
+01:42:29,119 --> 01:42:31,119
+kenar tetiklememden sonra
+
+2059
+01:42:31,119 --> 01:42:33,119
+şu geçen sürede
+
+2060
+01:42:33,119 --> 01:42:39,479
+transition delay
+
+2061
+01:42:39,479 --> 01:42:41,479
+yani geçiş
+
+2062
+01:42:41,479 --> 01:42:43,479
+gecikmesi
+
+2063
+01:42:43,479 --> 01:42:45,479
+adı
+
+2064
+01:42:45,479 --> 01:42:47,479
+veriliyor arkadaşlar
+
+2065
+01:42:47,479 --> 01:42:49,479
+yani sistemin
+
+2066
+01:42:49,479 --> 01:42:51,479
+bir uyaran aldıktan sonra
+
+2067
+01:42:51,479 --> 01:42:53,479
+aldıktan sonra
+
+2068
+01:42:53,479 --> 01:42:55,479
+sistemdeki girişin değerini okudu
+
+2069
+01:42:55,479 --> 01:42:57,479
+belli süre sonra
+
+2070
+01:42:57,479 --> 01:42:59,479
+çıkışta
+
+2071
+01:42:59,479 --> 01:43:01,479
+ne yapılması lazım
+
+2072
+01:43:01,479 --> 01:43:03,479
+transition delay
+
+2073
+01:43:03,479 --> 01:43:05,479
+oluşması lazım ki
+
+2074
+01:43:05,479 --> 01:43:07,479
+aynı şekilde şurası da
+
+2075
+01:43:07,479 --> 01:43:09,479
+birden sıfıra geçirken
+
+2076
+01:43:09,479 --> 01:43:11,479
+transition delay
+
+2077
+01:43:11,479 --> 01:43:13,479
+bu arkadaşlar
+
+2078
+01:43:13,479 --> 01:43:15,479
+çipe bağlı olarak
+
+2079
+01:43:15,479 --> 01:43:17,479
+yani tüm devreye bağlı olarak
+
+2080
+01:43:17,479 --> 01:43:19,479
+sıfırdan bire geçişler
+
+2081
+01:43:19,479 --> 01:43:21,479
+birden sıfıra geçişler için
+
+2082
+01:43:21,479 --> 01:43:23,479
+farklı olabilir mesela
+
+2083
+01:43:23,479 --> 01:43:25,479
+transition delay
+
+2084
+01:43:25,479 --> 01:43:27,479
+low high veya high low diye
+
+2085
+01:43:27,479 --> 01:43:29,479
+farklı parametrelere sahip
+
+2086
+01:43:29,479 --> 01:43:31,479
+olabiliyor arkadaşlar
+
+2087
+01:43:31,479 --> 01:43:33,479
+tabii ki burada
+
+2088
+01:43:33,479 --> 01:43:35,479
+en yüksek
+
+2089
+01:43:35,479 --> 01:43:37,479
+geçiş gecikmesi
+
+2090
+01:43:37,479 --> 01:43:39,479
+devrenin karakteristiğini
+
+2091
+01:43:39,479 --> 01:43:41,479
+belirliyor
+
+2092
+01:43:41,479 --> 01:43:43,479
+şimdi
+
+2093
+01:43:43,479 --> 01:43:45,479
+basitçe bir
+
+2094
+01:43:45,479 --> 01:43:47,479
+flip floplara giriş yapalım
+
+2095
+01:43:47,479 --> 01:43:49,479
+asıl flip flopları
+
+2096
+01:43:49,479 --> 01:43:51,479
+önümüzdeki hafta
+
+2097
+01:43:51,479 --> 01:43:55,460
+göreceğiz arkadaşlar
+
+2098
+01:43:55,460 --> 01:43:59,000
+şimdi
+
+2099
+01:43:59,000 --> 01:44:01,000
+saklayıcı birimlerle
+
+2100
+01:44:01,000 --> 01:44:03,000
+saklayıcı
+
+2101
+01:44:03,000 --> 01:44:05,000
+birimlerden
+
+2102
+01:44:05,000 --> 01:44:07,000
+flip floplara
+
+2103
+01:44:07,000 --> 01:44:11,489
+başlayalım
+
+2104
+01:44:11,489 --> 01:44:13,489
+şimdi flip floplar
+
+2105
+01:44:13,489 --> 01:44:15,489
+1 bitlik saklama birimleri
+
+2106
+01:44:15,489 --> 01:44:17,489
+arkadaşlar
+
+2107
+01:44:17,489 --> 01:44:19,489
+1 bitlik
+
+2108
+01:44:19,489 --> 01:44:26,609
+saklama birimleri
+
+2109
+01:44:26,609 --> 01:44:28,609
+birçok flip flopun yan yana
+
+2110
+01:44:28,609 --> 01:44:30,609
+gelmesiyle beraber
+
+2111
+01:44:30,609 --> 01:44:34,279
+genel gösterimi de şu şekilde arkadaşlar
+
+2112
+01:44:34,279 --> 01:44:36,279
+bir saat işareti alıyor
+
+2113
+01:44:36,279 --> 01:44:41,000
+dediğim gibi
+
+2114
+01:44:41,000 --> 01:44:43,000
+çıkışında
+
+2115
+01:44:43,000 --> 01:44:45,000
+q'larımız çıkış birbirinin d'li olan
+
+2116
+01:44:45,000 --> 01:44:47,000
+çıktıları üretiliyor çünkü bu d'liler de
+
+2117
+01:44:47,000 --> 01:44:49,000
+bazı devre uygulamalarının
+
+2118
+01:44:49,000 --> 01:44:51,000
+direk çıkış olarak kullanılabiliyor
+
+2119
+01:44:51,000 --> 01:44:53,000
+bir girişi olabildiği gibi
+
+2120
+01:44:53,000 --> 01:44:55,000
+d flip flopunda ve
+
+2121
+01:44:55,000 --> 01:44:57,000
+t flip flopunda olabildiği gibi
+
+2122
+01:44:57,000 --> 01:44:59,000
+birden
+
+2123
+01:44:59,000 --> 01:45:01,000
+iki tane girişi de
+
+2124
+01:45:01,000 --> 01:45:03,000
+bu da
+
+2125
+01:45:03,000 --> 01:45:05,000
+jk ve sr
+
+2126
+01:45:05,000 --> 01:45:07,000
+dediğimiz
+
+2127
+01:45:07,000 --> 01:45:09,000
+iki girişli
+
+2128
+01:45:09,000 --> 01:45:11,000
+flip flop tipleri bulunabiliyor
+
+2129
+01:45:11,000 --> 01:45:13,000
+bunun haricinde arkadaşlar
+
+2130
+01:45:13,000 --> 01:45:16,500
+çıkışların
+
+2131
+01:45:16,500 --> 01:45:18,500
+bir yazıldığı
+
+2132
+01:45:18,500 --> 01:45:20,500
+birlendiği
+
+2133
+01:45:20,500 --> 01:45:22,500
+otomatik dışarıdan girişe bağlı olmadan
+
+2134
+01:45:22,500 --> 01:45:24,500
+set
+
+2135
+01:45:24,500 --> 01:45:26,500
+ve reset
+
+2136
+01:45:26,500 --> 01:45:28,500
+uçları
+
+2137
+01:45:28,500 --> 01:45:30,500
+bunu türkçe olarak birle
+
+2138
+01:45:30,500 --> 01:45:32,500
+bunu ise
+
+2139
+01:45:32,500 --> 01:45:34,500
+sıfırla
+
+2140
+01:45:34,500 --> 01:45:36,500
+girişi olarak çevirebiliyor
+
+2141
+01:45:36,500 --> 01:45:38,500
+direk bu girişleri de uyguladığımızda
+
+2142
+01:45:38,500 --> 01:45:40,500
+çıkış sete bir
+
+2143
+01:45:40,500 --> 01:45:42,500
+geldiği zaman örneğin burası
+
+2144
+01:45:42,500 --> 01:45:44,500
+bir sıfır reset geldiği
+
+2145
+01:45:44,500 --> 01:45:46,500
+zaman çıkış
+
+2146
+01:45:46,500 --> 01:45:48,500
+sıfır ana çıkış şurası q
+
+2147
+01:45:48,500 --> 01:45:50,500
+bu bunun değili sadece sıfıra
+
+2148
+01:45:50,500 --> 01:45:52,500
+bir birbirinin ters şeklinde
+
+2149
+01:45:52,500 --> 01:45:54,500
+oluşturulabiliyor arkadaşlar
+
+2150
+01:45:54,500 --> 01:45:58,579
+şimdi
+
+2151
+01:45:58,579 --> 01:46:00,579
+dediğim gibi dört tip
+
+2152
+01:46:00,579 --> 01:46:02,579
+dört tip flip flop
+
+2153
+01:46:02,579 --> 01:46:04,579
+göreceğiz arkadaşlar
+
+2154
+01:46:04,579 --> 01:46:06,579
+bu flip flopları
+
+2155
+01:46:06,579 --> 01:46:08,579
+derli toplu biçimde önümüzdeki haftaya mı
+
+2156
+01:46:08,579 --> 01:46:10,579
+anlatsak acaba onu bir düşüneyim
+
+2157
+01:46:10,579 --> 01:46:13,890
+bunları
+
+2158
+01:46:13,890 --> 01:46:15,890
+önümüzdeki hafta anlatabiliriz
+
+2159
+01:46:15,890 --> 01:46:17,890
+devre analizi yöntemleriyle biraz sıcağı sıcağına
+
+2160
+01:46:17,890 --> 01:46:19,890
+anlatırız şimdi
+
+2161
+01:46:19,890 --> 01:46:21,890
+isterseniz bunları
+
+2162
+01:46:21,890 --> 01:46:23,890
+gelecek haftaya bitirelim hepsini
+
+2163
+01:46:23,890 --> 01:46:25,890
+derli toplu bir arada görelim bir arada kesmeyelim
+
+2164
+01:46:25,890 --> 01:46:27,890
+şimdi
+
+2165
+01:46:27,890 --> 01:46:29,890
+önümüzdeki hafta on birinci haftamız
+
+2166
+01:46:29,890 --> 01:46:31,890
+arkadaşlar on ikinci
+
+2167
+01:46:31,890 --> 01:46:33,890
+haftada vizemiz var
+
+2168
+01:46:33,890 --> 01:46:35,890
+on ikinci haftada
+
+2169
+01:46:35,890 --> 01:46:37,890
+vizemiz var
+
+2170
+01:46:37,890 --> 01:46:39,890
+on ikinci haftadaki
+
+2171
+01:46:39,890 --> 01:46:41,890
+vize de arkadaşlar
+
+2172
+01:46:41,890 --> 01:46:43,890
+geldiğimiz yere
+
+2173
+01:46:43,890 --> 01:46:45,890
+kadar sorularımızı
+
+2174
+01:46:45,890 --> 01:46:47,890
+soracağız önümüzdeki hafta
+
+2175
+01:46:47,890 --> 01:46:49,890
+içerisinde
+
+2176
+01:46:49,890 --> 01:46:51,890
+birkaç tane
+
+2177
+01:46:51,890 --> 01:46:53,890
+soru da çözmüş olacağız
+
+2178
+01:46:53,890 --> 01:46:55,890
+ve bunlarla beraber vizeye
+
+2179
+01:46:55,890 --> 01:46:57,890
+hazırlanacağız vize
+
+2180
+01:46:57,890 --> 01:46:59,890
+yine arkadaşlar
+
+2181
+01:46:59,890 --> 01:47:01,890
+saat kaçında oluyor onu da
+
+2182
+01:47:01,890 --> 01:47:03,890
+bir netleştirelim
+
+2183
+01:47:03,890 --> 01:47:05,890
+önümüzdeki 23.
+
+2184
+01:47:05,890 --> 01:47:07,890
+23'ünde arkadaşlar
+
+2185
+01:47:07,890 --> 01:47:09,890
+vizemiz var önümüzdeki hafta
+
+2186
+01:47:09,890 --> 01:47:11,890
+on birinci hafta on ikinci
+
+2187
+01:47:11,890 --> 01:47:13,890
+hafta yani 23'ünde saat
+
+2188
+01:47:13,890 --> 01:47:15,890
+on dörtte vizemiz var
+
+2189
+01:47:15,890 --> 01:47:17,890
+vize klasik
+
+2190
+01:47:17,890 --> 01:47:19,890
+sınav türünde olacak
+
+2191
+01:47:19,890 --> 01:47:21,890
+klasik sınav türünde olacak
+
+2192
+01:47:21,890 --> 01:47:23,890
+süresini zaten
+
+2193
+01:47:23,890 --> 01:47:25,890
+hazırlamış olduğumuz dökümanda
+
+2194
+01:47:25,890 --> 01:47:27,890
+bulabileceksiniz
+
+2195
+01:47:27,890 --> 01:47:29,890
+onun dışında
+
+2196
+01:47:29,890 --> 01:47:31,890
+bir
+
+2197
+01:47:31,890 --> 01:47:33,890
+başka bir şey var mı
+
+2198
+01:47:33,890 --> 01:47:35,890
+şu anda yok arkadaşlar
+
+2199
+01:47:35,890 --> 01:47:37,890
+siz ne sormak istediğiniz sorular var mı
+
+2200
+01:47:37,890 --> 01:47:39,890
+bu dersle alakalı
+
+2201
+01:47:39,890 --> 01:47:41,890
+hocam ben ödev hakkında bir şey soracağım
+
+2202
+01:47:41,890 --> 01:47:43,890
+hocam ben ödev hazırlarken
+
+2203
+01:47:43,890 --> 01:47:45,890
+PLA'yı ekledim
+
+2204
+01:47:49,890 --> 01:47:51,890
+PLA'yı ekledim hocam
+
+2205
+01:47:51,890 --> 01:47:53,890
+PALA'yı ekledim
+
+2206
+01:47:53,890 --> 01:47:55,890
+PSA'yı eklemedim hocam
+
+2207
+01:47:55,890 --> 01:47:57,890
+benim baktığım belgede PSA yoktu
+
+2208
+01:47:57,890 --> 01:47:59,890
+PSA'yı da eklememi ister misiniz
+
+2209
+01:47:59,890 --> 01:48:01,890
+acaba
+
+2210
+01:48:01,890 --> 01:48:03,890
+yok PSA şeyde yok
+
+2211
+01:48:03,890 --> 01:48:05,890
+zannedersem
+
+2212
+01:48:05,890 --> 01:48:07,890
+bölüm 9'da yok hocam bölüm 11'de galiba
+
+2213
+01:48:07,890 --> 01:48:09,890
+bölüm 11'de o
+
+2214
+01:48:09,890 --> 01:48:11,890
+eklemeyeceksin
+
+2215
+01:48:11,890 --> 01:48:13,890
+programlanabilir kombinezonsal devreleri
+
+2216
+01:48:13,890 --> 01:48:15,890
+sadece eklemen yeterli
+
+2217
+01:48:15,890 --> 01:48:17,890
+yani PROM
+
+2218
+01:48:17,890 --> 01:48:19,890
+PLA eklemen yeterli
+
+2219
+01:48:19,890 --> 01:48:21,890
+tamam hocam
+
+2220
+01:48:21,890 --> 01:48:23,890
+tamam mı
+
+2221
+01:48:23,890 --> 01:48:25,890
+evet ondan sonraki hafta
+
+2222
+01:48:25,890 --> 01:48:27,890
+farklı konuları
+
+2223
+01:48:27,890 --> 01:48:29,890
+biraz zamanımız kalırsa
+
+2224
+01:48:29,890 --> 01:48:31,890
+onları yaparız ama sınav önce
+
+2225
+01:48:31,890 --> 01:48:33,890
+sıkıştırmayalım konuları
+
+2226
+01:48:33,890 --> 01:48:35,890
+biraz da rahat bir şekilde
+
+2227
+01:48:35,890 --> 01:48:37,890
+yapalım
+
+2228
+01:48:37,890 --> 01:48:39,890
+önümüzdeki hafta
+
+2229
+01:48:39,890 --> 01:48:41,890
+fili pilotları gördükten sonra arkadaşlar
+
+2230
+01:48:41,890 --> 01:48:45,779
+bakalım
+
+2231
+01:48:45,779 --> 01:48:47,779
+ardışıl devre analiz yöntemlerini
+
+2232
+01:48:47,779 --> 01:48:49,779
+11. haftada
+
+2233
+01:48:49,779 --> 01:48:51,779
+analiz yöntemlerini
+
+2234
+01:48:51,779 --> 01:48:53,779
+görürüz 13. haftada
+
+2235
+01:48:53,779 --> 01:48:55,779
+sentez
+
+2236
+01:48:55,779 --> 01:48:57,779
+yani
+
+2237
+01:48:57,779 --> 01:48:59,779
+devrenin
+
+2238
+01:48:59,779 --> 01:49:03,600
+tasarımı
+
+2239
+01:49:03,600 --> 01:49:05,600
+kısmını görürüz
+
+2240
+01:49:05,600 --> 01:49:07,600
+evet böyle daha güzel olacak
+
+2241
+01:49:07,600 --> 01:49:09,600
+gibi gözüküyor
+
+2242
+01:49:09,600 --> 01:49:11,600
+tasarımı görürüz
+
+2243
+01:49:11,600 --> 01:49:13,600
+14. haftada ise
+
+2244
+01:49:13,600 --> 01:49:15,600
+saklayıcı sayıcı bellek
+
+2245
+01:49:15,600 --> 01:49:17,600
+elemanlarını görürüz
+
+2246
+01:49:17,600 --> 01:49:19,600
+biraz ayrıntılı şekilde
+
+2247
+01:49:19,600 --> 01:49:21,600
+PROM'lar
+
+2248
+01:49:21,600 --> 01:49:23,600
+PLA'yı filan görürüz tamamdır
+
+2249
+01:49:23,600 --> 01:49:25,600
+planlamamıza göre biraz da
+
+2250
+01:49:25,600 --> 01:49:27,600
+hızlı gitmişiz bu haftalık bu kadar
+
+2251
+01:49:27,600 --> 01:49:29,600
+göstermek yeterli 2 saatlik
+
+2252
+01:49:29,600 --> 01:49:31,600
+bir süre yeterli sizlerin başka
+
+2253
+01:49:31,600 --> 01:49:37,569
+sorusu var mı
+
+2254
+01:49:37,569 --> 01:49:39,569
+başka sorunuz yoksa arkadaşlar hepinize
+
+2255
+01:49:39,569 --> 01:49:41,569
+iyi akşamlar diliyorum
+
+2256
+01:49:41,569 --> 01:49:45,170
+haftaya görüşmek üzere
+
+2257
+01:49:45,170 --> 01:49:47,170
+hepinize iyi çalışmalar
+
+2258
+01:49:47,170 --> 01:49:52,470
+teşekkürler hocam iyi akşamlar
+
+2259
+01:49:52,470 --> 01:49:54,470
+iyi akşamlar görüşürüz
+

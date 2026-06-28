@@ -20,6 +20,7 @@ Dersler 8 Ekim 2020 Perşembe günü başlamıştır. Dosya adlarındaki `ders_x
 - `ders_12.srt`: 24 Aralık 2020
 - `ders_13.srt`: 31 Aralık 2020
 - `ders_14.srt`: 7 Ocak 2021
+- `ders_14_lab.srt`: 7 Ocak 2021 (Laboratuvar)
 - `ders_14_1.srt`: 7 Ocak 2021 (Ek ders/Part 2)
 
 ## Eksik Kayıtlar

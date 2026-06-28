@@ -1,0 +1,496 @@
+1
+00:03:45,580 --> 00:03:50,159
+Arkadaşlar merhaba. Daha gelen yok herhalde. Şu an 41 kişiyiz.
+
+2
+00:03:52,379 --> 00:03:54,219
+Öncelikle son labınıza hoş geldiniz.
+
+3
+00:03:55,400 --> 00:03:56,580
+Lojik devreler dersini.
+
+4
+00:03:57,759 --> 00:03:59,039
+Şimdi ben bir ekran paylaşayım.
+
+5
+00:04:01,180 --> 00:04:05,180
+Sizlere sorunuzu anlatayım. Bir yandan da soruyu chat'e atacağım.
+
+6
+00:04:30,980 --> 00:04:32,660
+Sorunuzu chat'ten paylaştım arkadaşlar.
+
+7
+00:04:33,399 --> 00:04:35,879
+Şimdi bir üzerinden geçeyim ben.
+
+8
+00:04:40,959 --> 00:04:42,139
+Ekranımı görebiliyor musunuz?
+
+9
+00:04:47,189 --> 00:04:47,829
+Gözüküyor hocam.
+
+10
+00:04:48,069 --> 00:04:48,629
+Görebiliyoruz.
+
+11
+00:04:48,629 --> 00:04:54,949
+Tamamdır. Şimdi bu sorumuzda arkadaşlar, son labımızda.
+
+12
+00:04:56,529 --> 00:04:59,610
+Öncelikle geçen lablara göre biraz daha vakit alacağını ifade edeyim.
+
+13
+00:05:00,490 --> 00:05:07,189
+O yüzden soruyu anladıktan sonra hemen çalışmaya başlayın lütfen ve elinizi mümkün olduğunca çabuk tutun.
+
+14
+00:05:08,350 --> 00:05:11,970
+Bu çalışmada sizden istediğimiz şey flip-flopları kullanarak bir desen yakalamanız.
+
+15
+00:05:12,410 --> 00:05:14,230
+Bu desenimiz 5 dijitli olacak.
+
+16
+00:05:15,449 --> 00:05:17,129
+Desenimiz de 1 ve 0'lardan oluşacak.
+
+17
+00:05:17,870 --> 00:05:20,129
+Bu desenin şekli...
+
+18
+00:05:20,129 --> 00:05:25,310
+Şekli sizin daha önceki laplarımızda olduğu gibi öğrenci numaranız kullanılarak oluşturulacak.
+
+19
+00:05:25,970 --> 00:05:28,850
+Örneğin birinci basamağın 2'ye göre modunu alacaksınız.
+
+20
+00:05:28,850 --> 00:05:38,009
+İkinci basamağın, üçüncü basamağın işte sonrasında burada ifade edildiği gibi sağdaki 4 rakamın toplamını alıp onların 2'ye göre modunu alacaksınız.
+
+21
+00:05:38,009 --> 00:05:43,470
+Soldaki 2, soldaki 4 basamağın 2'ye göre modunu alıp çeşitli sayılar elde edeceksiniz.
+
+22
+00:05:43,470 --> 00:05:49,310
+Bunları sondan başa doğru sıraladığınızda elinizde şöyle 5 basamaklı bir...
+
+23
+00:05:50,129 --> 00:05:52,129
+0-1 ifadesi olacak.
+
+24
+00:05:52,129 --> 00:05:54,129
+Binary bir ifade olacak.
+
+25
+00:05:54,129 --> 00:06:00,850
+Sizden istenen şey bu numaranıza uygun deseni yakalayan bir devre kurmanız.
+
+26
+00:06:00,850 --> 00:06:03,850
+Bunu yaparken de flip-flopları kullanacaksınız.
+
+27
+00:06:03,850 --> 00:06:09,350
+Burada hangi tip flip-flop kullanacağınız numaranızın sonhanesine göre belli olacak.
+
+28
+00:06:09,350 --> 00:06:11,350
+Kullanabileceğiniz 2 flip-flop tipi var.
+
+29
+00:06:11,350 --> 00:06:14,350
+Birisi D flip-flop, diğeri JK flip-flop.
+
+30
+00:06:14,350 --> 00:06:19,050
+Numaranızın sonhanesinin 2'ye göre modu 0 ise JK flip-flop kullanıyorsunuz.
+
+31
+00:06:19,050 --> 00:06:20,050
+Eğer numaranızın sonhanesinin 2'ye göre modu 0 ise JK flip-flop kullanıyorsunuz.
+
+32
+00:06:20,129 --> 00:06:26,810
+Eğer numaranızın sonhanesinin 0 ise情況 tekse o zaman da D flip-flop kullanıyorsunuz.
+
+33
+00:06:26,810 --> 00:06:29,769
+Şu diğer hocamız arıyor arkadaşlar.
+
+34
+00:06:29,769 --> 00:06:32,389
+Şuna hemen bir cevap vereyim.
+
+35
+00:06:32,389 --> 00:07:15,420
+Çok hızlı, kusura bakmayın arkadaşlar.
+
+36
+00:07:15,420 --> 00:07:17,000
+Şimdi devam edelim.
+
+37
+00:07:17,000 --> 00:07:19,740
+Sizden istediğimiz şeyler numaranıza uygun deseni buluyorsunuz.
+
+38
+00:07:19,740 --> 00:07:23,100
+Deseni yakalayan durum diagramını oluşturuyorsunuz.
+
+39
+00:07:23,100 --> 00:07:28,839
+Burada yukarıda ifade edildiği gibi desen yakalandığı durumda devreniz bir çıktısı
+
+40
+00:07:28,839 --> 00:07:29,839
+üretecek.
+
+41
+00:07:29,839 --> 00:07:32,740
+diğer durumlardaysa sıfır çıktı süredecek.
+
+42
+00:07:32,860 --> 00:07:35,959
+Bunun zaten mili mi mur mu nasıl bir
+
+43
+00:07:35,959 --> 00:07:38,620
+diagram çizeceğinizi 3 aşağı 5 yukarı kestiriyorsunuzdur.
+
+44
+00:07:38,959 --> 00:07:41,839
+Yukarıda da ifade etmişiz. Duruma geçildiğinde o durumda
+
+45
+00:07:42,480 --> 00:07:44,839
+yani duruma geçildiği takdirde
+
+46
+00:07:45,459 --> 00:07:48,259
+bir çıktı üretmenizi bekliyoruz.
+
+47
+00:07:49,879 --> 00:07:51,100
+Sisteminizin doğruluk
+
+48
+00:07:51,100 --> 00:07:53,120
+tablosu. Bu doğruluk tablosunu oluştururken
+
+49
+00:07:53,120 --> 00:07:57,019
+flip flopların mevcut durumu gelecek çıktığa göre
+
+50
+00:07:57,019 --> 00:08:00,040
+gelecek girdiğe göre girdiğiniz tek
+
+51
+00:08:00,040 --> 00:08:02,600
+tek bir girdiğiniz olacak. Çünkü sürekli 0-1 geliyor.
+
+52
+00:08:04,199 --> 00:08:05,639
+Girdiğinizin durumuna göre
+
+53
+00:08:05,639 --> 00:08:09,079
+flip flopların mevcut durumuna göre flip flopın bir sonraki
+
+54
+00:08:09,079 --> 00:08:12,079
+değeri ne olacak? Devrenin çıktı
+
+55
+00:08:12,079 --> 00:08:15,120
+değeri ne olacak? Kapsamlı büyükçe bir doğruluk tablonuz
+
+56
+00:08:15,120 --> 00:08:17,740
+olacak. Bunu çizmenizi bekliyoruz.
+
+57
+00:08:20,939 --> 00:08:21,660
+Sonrasında
+
+58
+00:08:21,660 --> 00:08:24,540
+bu flip floplara vereceğiniz değerleri
+
+59
+00:08:24,540 --> 00:08:27,000
+şimdi devresini oluşturacağınız için sadeleştirme
+
+60
+00:08:27,000 --> 00:08:29,759
+yapmanız gerekiyor. Sadeleştirmeyi
+
+61
+00:08:29,759 --> 00:08:32,539
+cebirsel olarak yapabilirsiniz. Lojik cebriyle
+
+62
+00:08:32,539 --> 00:08:35,740
+veyahut karnı haritalarıyla yapabilirsiniz. Bu sadeleştirmeyi de
+
+63
+00:08:35,740 --> 00:08:38,879
+nasıl yaptığınızı ifade etmenizi bekliyoruz.
+
+64
+00:08:38,879 --> 00:08:41,159
+Sonrasında devreyi sadeleştirdikten sonra
+
+65
+00:08:41,159 --> 00:08:45,059
+bu devreyi simülasyonda
+
+66
+00:08:45,059 --> 00:08:46,299
+gerçeklemenizi bekliyoruz.
+
+67
+00:08:47,480 --> 00:08:50,759
+Devre tarafında da doğruluk tablosu
+
+68
+00:08:50,759 --> 00:08:53,480
+daha önceki haftalarda istediğimiz oldu
+
+69
+00:08:53,480 --> 00:08:56,980
+farklı sorularda. Bu soruda da devrenin doğruluk
+
+70
+00:08:56,980 --> 00:09:00,019
+tablosunu oluşturmanızı bekliyoruz. Sizin elinizdeki
+
+71
+00:09:00,019 --> 00:09:03,460
+mevcut tabloyla uyumlu olması gerekiyor.
+
+72
+00:09:03,460 --> 00:09:07,539
+Devreden oluşturacağınız tablonun. Bizim daha önceki
+
+73
+00:09:07,539 --> 00:09:10,659
+haftalarda lojism ve digital isimli tavsiye ettiğimiz
+
+74
+00:09:10,659 --> 00:09:12,940
+iki program vardı. Bu iki programda da bu özellik
+
+75
+00:09:12,940 --> 00:09:16,460
+mevcut. Kullananlar biliyor zaten. Ama benim
+
+76
+00:09:16,460 --> 00:09:20,379
+kullandığım programda yok derseniz orada da ona göre
+
+77
+00:09:20,379 --> 00:09:26,779
+özel bir değerlendirme yaparız. Bu şekilde arkadaşlar
+
+78
+00:09:26,779 --> 00:09:29,840
+sorusu olan var mı? Biraz uzuncaydı. Belki
+
+79
+00:09:29,840 --> 00:09:48,370
+yeterince açıklayıcı olmamıştır. Soru yok
+
+80
+00:09:48,370 --> 00:09:51,230
+herhalde. Chatten bir şey yazan var.
+
+81
+00:09:54,929 --> 00:09:55,750
+Bu daha önce yazılmış.
+
+82
+00:09:57,330 --> 00:09:59,990
+Bu şekilde arkadaşlar. Yine sorunuz varsa sorabilirsiniz.
+
+83
+00:10:01,230 --> 00:10:03,289
+Daha önceki haftalarda yaptığımız gibi ben
+
+84
+00:10:03,289 --> 00:10:04,990
+sizinle bir chatten link paylaşacağım.
+
+85
+00:10:06,429 --> 00:10:09,529
+Bitirenler, sadece bitirenler lütfen bu linke
+
+86
+00:10:09,529 --> 00:10:11,029
+sıradan ismini yazsın.
+
+87
+00:10:12,970 --> 00:10:14,149
+Buradaki sıraya göre.
+
+88
+00:10:15,250 --> 00:10:19,370
+Bitirmeden adınızı yazmayın lütfen. Çünkü geçen haftalarda
+
+89
+00:10:19,370 --> 00:10:22,870
+sırası geliyor. Daha önceden yazıp sırası geldiğinde
+
+90
+00:10:22,870 --> 00:10:26,370
+silenler falan oluyor. Hoş olmuyor. O yüzden bitirdiğinizde
+
+91
+00:10:26,370 --> 00:10:32,230
+sadece adınızı buraya yazın. Yani yediye kadar labımız
+
+92
+00:10:32,230 --> 00:10:36,850
+devam ediyor. Fakat biz altı gibi şu an on geçiyor. Altıya
+
+93
+00:10:36,850 --> 00:10:40,710
+on geçeceği kadar bitirmenizi bekliyoruz açıkçası. Dediğim
+
+94
+00:10:40,710 --> 00:10:44,210
+gibi uzun bir lab. O yüzden elinizi mümkün olduğunca
+
+95
+00:10:44,210 --> 00:10:44,750
+hızlı tutun.
+
+96
+00:10:51,679 --> 00:10:56,539
+Yine değerlendirmemiz breakout room'larda yani ayrı uzun odasında
+
+97
+00:10:56,539 --> 00:11:03,200
+yapılacak. Ayrıca 1B grubunda bu 1B grubunun labı. 1B grubunda
+
+98
+00:11:03,200 --> 00:11:12,740
+olduğundan da herkes emin olsun lütfen. Sorunuz varsa ben gene
+
+99
+00:11:12,740 --> 00:24:44,650
+burada cevaplaya olacağım. Arkadaşlar herhangi bir soru
+
+100
+00:24:44,650 --> 00:24:48,789
+varsa sorabilirsiniz. Ekran paylaşımını kapatıyorum.
+
+101
+00:24:48,789 --> 01:08:54,779
+Soruyu alamayan yeni gelen varsa da lütfen söylesin. Arkadaşlar
+
+102
+01:08:54,779 --> 01:08:55,359
+bitiren yok herhalde.
+
+103
+01:08:55,380 --> 01:08:59,340
+Yani sormak istediğiniz bir şey varsa sorabilirsiniz.
+
+104
+01:08:59,340 --> 01:09:02,460
+Anlaşılmayan bir nokta. Yediye kadar bitirmek için vaktiniz
+
+105
+01:09:02,460 --> 01:09:14,000
+var. Yediden sonra şey şansını bitirme şansınız olmayacak. Bir
+
+106
+01:09:14,000 --> 01:09:18,680
+soru geldi. Bir arkadaşımız üç flip flop kullanmak gerekiyor
+
+107
+01:09:18,680 --> 01:09:22,159
+hocam ama beş tane durum var. Minitörler boş kalıyor. Oraya
+
+108
+01:09:22,159 --> 01:09:25,640
+ne yapmak gerekiyor? Yani boş kalan yerler olabilir. Oraların
+
+109
+01:09:25,640 --> 01:09:28,939
+değerinin ne olduğunu bir önemi yok. Yani oraları olarak kabul
+
+110
+01:09:28,939 --> 01:09:29,579
+edebilirsiniz.
+
+111
+01:09:35,649 --> 01:09:39,250
+Yani diyelim üç flip flop kullandınız. İlla ki sekiz durumunuz
+
+112
+01:09:39,250 --> 01:09:41,890
+olmak zorunda değil. Beş tane olabilir. Altı tane olabilir.
+
+113
+01:09:41,890 --> 01:09:47,170
+Veya iki flip flop kullandınız. Dört durumunuz olmak zorunda değil.
+
+114
+01:09:47,170 --> 01:09:51,369
+Üç durumunuz da olabilir. Kullanmadığınız durumlar için
+
+115
+01:09:51,369 --> 01:09:54,189
+herhangi bir şey yapmanıza gerek yok. Oralar yani X'le
+
+116
+01:09:54,189 --> 01:09:57,909
+gösterebilirsiniz. Sıfır veya bir olmasın herhangi bir önemi
+
+117
+01:09:57,909 --> 01:16:41,489
+yok. Arkadaşlar ben bitiren bir arkadaşımız var. Sonuçlarına
+
+118
+01:16:41,489 --> 01:16:45,090
+bakacağım. Diğer odada olacağım. O yüzden burada
+
+119
+01:16:45,329 --> 01:16:47,130
+yaptıklarınızı veya söylediklerinizi duyamayacağım.
+
+120
+01:16:47,130 --> 01:16:52,050
+Haberiniz olsun. Arada bir gene buraya uğrayacağım. Bitirdikçe
+
+121
+01:16:52,050 --> 01:16:55,289
+lütfen listeye adınızı yazın. Yediye kadar vaktimiz var. Yediden
+
+122
+01:16:55,289 --> 01:17:00,569
+sonra listeye herhangi bir ekleme yapmayacağız. O yüzden
+
+123
+01:17:00,569 --> 01:17:02,250
+yediye kadar ne kadar bitirebiliyorsanız
+
+124
+01:17:02,250 --> 01:17:06,449
+gösterebilecek durumda olun lütfen.
+

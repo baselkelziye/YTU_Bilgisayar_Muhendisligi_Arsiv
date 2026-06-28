@@ -1,0 +1,6928 @@
+1
+00:05:26,540 --> 00:05:32,060
+Sanırım başlayabiliriz arkadaşlar. Epey bir katılımcımız oldu. 90 kişiyi bulduk.
+
+2
+00:05:34,540 --> 00:05:46,600
+Hatırlarsanız geçen hafta network protokolleri ne güvenlik açısından bir bakış yapmıştık, onları o açıdan bir incelemiştik.
+
+3
+00:05:46,600 --> 00:06:00,879
+Aynen diğer konularda olduğu gibi programlama ortamlarında, runtime ortamlarında, işletim sistemlerinde, temel web yapılarında olduğu gibi network yapısına da, network protokollerine de bakmıştık.
+
+4
+00:06:00,879 --> 00:06:15,899
+Şimdi bugün geçen hafta öğrendiklerimizi hızlıca özetleyen birkaç slide'dan sonra denial of service saldırılarına giriş yapacağız ve oradan devam edeceğiz.
+
+5
+00:06:23,350 --> 00:06:44,129
+Hatırlarsanız geçen hafta söylediğimiz şeylerden biri de en temel olarak kullandığımız data link layer hem lokal area'da hem de metropolitan area'da Ethernet protokolü.
+
+6
+00:06:44,129 --> 00:06:52,509
+Ethernet aslında data link layer'ın içerisinde geçen bir alt katman, sub layer diye isimlendiriliyor.
+
+7
+00:06:53,170 --> 00:06:53,329
+Mide.
+
+8
+00:06:53,350 --> 00:06:57,709
+Medium access control olarak isimlendiriliyor.
+
+9
+00:07:00,329 --> 00:07:18,970
+Local area olarak burada belirtiliyor olmasına rağmen az önce söylediğim gibi metro Ethernet yani şehir içerisindeki metropolitan area boyutunda da Ethernet kullanımı son yıllarda oldukça yaygınlaşmış durumda.
+
+10
+00:07:18,970 --> 00:07:29,329
+Ethernet'te önemli faktörlerden, unsurlardan bir tanesi de kullandığımız Ethernet adresleriydi.
+
+11
+00:07:29,329 --> 00:07:45,610
+Yani aslında biz bir hosta IP adresi ile erişmek isterken normalde ona göndermek istediğimiz paketleri MAC adresi üzerinden gönderiyoruz.
+
+12
+00:07:45,610 --> 00:07:56,519
+Yapı içerisinde, katmanlı yapı içerisinde IP adresleri MAC adreslerine dönüştürülüyor.
+
+13
+00:07:56,519 --> 00:08:01,019
+Yine hatırlayın bir bus topolojisi vardı.
+
+14
+00:08:01,759 --> 00:08:16,500
+Bütün hostların, diğer tüm hostların trafiğini dinleyebildiği ve bundan ötürü güvensiz olan, bunu daha güvenli hale getirebilmek için de fiziksel olarak müdahale ile oluşturulmuş,
+
+15
+00:08:16,500 --> 00:08:23,300
+tasarım değişikliğiyle oluşturulmuş Switched Ethernet yani anahtarlamalı Ethernet yapısı vardı.
+
+16
+00:08:24,160 --> 00:08:41,600
+Ancak esas önemli olan Ethernet protokolünün tasarımında güvenlikle alakalı 3 tane ana unsura yönelik herhangi bir tedbir yok.
+
+17
+00:08:41,600 --> 00:08:46,480
+Nedir? Confidentiality yani gizlilik açısından bir tedbir.
+
+18
+00:08:46,500 --> 00:09:00,039
+Authentication, frame'i gönderdiğini iddia eden tarafın o taraf olduğunu ispat edecek bir mekanizma yok.
+
+19
+00:09:00,519 --> 00:09:12,440
+Integrity, gelen frame'in bütünlüğünün kriptografik anlamda kontrol edildiği ve değişmediğinin garanti edildiği bir mekanizma yok.
+
+20
+00:09:14,159 --> 00:09:16,440
+Ethernet'te az önce söylediğim gibi,
+
+21
+00:09:16,500 --> 00:09:24,799
+üst tarafta kullanılan network adresleriyle Ethernet'te kullanılan adresler arasında bir dönüşüm yapılması lazım.
+
+22
+00:09:25,620 --> 00:09:38,919
+Geçen hafta inceledik, IP adreslerinden bu MAC adreslerine dönüşümü sağlayan protokole adres resolution protokol ismi veriliyor diye öğrendik.
+
+23
+00:09:38,919 --> 00:09:45,700
+Ancak burada çok basit bir sorgulama yapılıyor, bir broadcast yapılıyor.
+
+24
+00:09:45,700 --> 00:10:01,559
+Yani herkese yayınlanıyor, bütün hostlara yayınlanıyor ve bütün hostlara bu frame'in içerisinde, bu paketin içerisinde yer alan IP adresinin sahibi sen misin diye soruluyor.
+
+25
+00:10:02,559 --> 00:10:08,440
+Doğal olarak sadece o IP adresine sahip olan hostun cevap vermesini bekliyoruz.
+
+26
+00:10:08,440 --> 00:10:15,360
+Ancak bu kötü niyetli bir hostun bir başka host adına cevap vermesini ve araya girmesini,
+
+27
+00:10:15,700 --> 00:10:16,980
+engellemiyor.
+
+28
+00:10:16,980 --> 00:10:24,820
+Zaten buna bağlı olarak da man in the middle attack saldırısını tariflemiştik, tanımlamıştık.
+
+29
+00:10:24,820 --> 00:10:43,690
+Bu şartlar altında özellikle büyük networklerde broadcast'in yayılım hızından ötürü arada network'ün orta bölgelerinde bulunan bir saldırgan,
+
+30
+00:10:43,690 --> 00:10:45,690
+bir başka hostmuş gibi cevap vermiyor.
+
+31
+00:10:45,690 --> 00:10:46,549
+Bir başka hostmuş gibi cevap vermiyor.
+
+32
+00:10:46,549 --> 00:10:47,049
+Bir başka hostmuş gibi cevap vermiyor.
+
+33
+00:10:47,049 --> 00:10:47,509
+Bir başka hostmuş gibi cevap vermiyor.
+
+34
+00:10:47,529 --> 00:10:54,529
+Daha da ötesi, ARP protokolünde geçen hafta konuşmadığımız bir özellik daha var.
+
+35
+00:10:54,529 --> 00:10:57,529
+Bu da Gratuitous ARP.
+
+36
+00:10:57,529 --> 00:11:06,529
+Yani iyilik olsun diye hostlar tarafından gönderilen ARP bilgisi.
+
+37
+00:11:06,529 --> 00:11:10,529
+Ne anlama geliyor bu iyilik olsun diye gönderilen?
+
+38
+00:11:10,529 --> 00:11:16,529
+Normalde ARP göndererek MAC adresini öğreniyorsunuz.
+
+39
+00:11:16,529 --> 00:11:17,529
+Ama bu bir geciktir.
+
+40
+00:11:17,529 --> 00:11:19,529
+İlk haberleşmede bir gecikme.
+
+41
+00:11:19,529 --> 00:11:37,529
+O yüzden ARP protokolü belirli aralıklarla hostların kendi MAC adreslerini IP adresleriyle beraber duyurmalarını sağlayan bir mekanizmaya da sahip.
+
+42
+00:11:37,529 --> 00:11:46,529
+Şimdi o zaman kötü niyetli hostu düşünün, farklı IP adresleri için kendi MAC adresini yayınlayabilir.
+
+43
+00:11:47,529 --> 00:12:08,259
+Bu durumda da o IP adresiyle haberleşileceği zaman hiç broadcast falan yapılmasına gerek kalmadan daha önceden bununla alakalı gelmiş olan ARP bilgisi kullanılarak paketler doğrudan kötü niyetli hosta gönderilebilir.
+
+44
+00:12:08,259 --> 00:12:11,259
+Bu açılardan baktığımızda ne diyoruz?
+
+45
+00:12:11,259 --> 00:12:18,259
+ARP protokolünde de bir güvenlik mekanizması yok.
+
+46
+00:12:18,259 --> 00:12:27,259
+Saldırgan bir başka hostu yerine geçip hostmuş gibi davranma imkanına sahip.
+
+47
+00:12:27,259 --> 00:12:40,789
+IP protokolünü de incelemiştik hatırlarsanız A katmanında.
+
+48
+00:12:40,789 --> 00:12:52,789
+Güvenilir olmadığını, elinden gelen en iyi şekilde paketlere aktarmaya çalıştığını konuşmuştuk.
+
+49
+00:12:52,789 --> 00:13:04,809
+Ve paket aktarımı sırasında sadece ve sadece hedef IP adresinin önem taşıdığını,
+
+50
+00:13:04,809 --> 00:13:10,809
+source adresi ise yollayan tarafın paketin içerisine yerleştirdiğini,
+
+51
+00:13:10,809 --> 00:13:20,809
+bundan ötürü de o alana gerçek veya sahte her türlü IP adresinin yazılabileceğini söylemiştik.
+
+52
+00:13:20,809 --> 00:13:22,809
+Paketlerde bir checksum, kontrol toplaması var.
+
+53
+00:13:22,809 --> 00:13:23,809
+Paketlerde bir checksum, kontrol toplaması var.
+
+54
+00:13:23,809 --> 00:13:24,809
+Paketlerde bir checksum, kontrol toplaması var.
+
+55
+00:13:24,809 --> 00:13:28,809
+Ancak bu kriptografik bir toplam değil.
+
+56
+00:13:28,809 --> 00:13:42,809
+Paketin bitlerinin bozulup bozulmadığını test etmek amacıyla paketin içerisine yerleştirilen header bölgesini koruyan bir hangi tip toplamdı?
+
+57
+00:13:42,809 --> 00:13:49,809
+CRC tipi yani Cyclic Redundancy Check tipinde bir kontrol toplamıydı.
+
+58
+00:13:49,809 --> 00:13:53,809
+Bu anlamda bu açıdan bakıldığında
+
+59
+00:13:53,809 --> 00:14:02,809
+saldırgan paketlerin içeriğini de değiştirebilir ve değiştirdikten sonra bu checksum'ı zorlanmadan güncelleyebilir.
+
+60
+00:14:02,809 --> 00:14:12,809
+Hedefe vardığında da checksum bilgisi doğru olacağı için hedef o header'a uygun olarak paketi işleyebilir.
+
+61
+00:14:12,809 --> 00:14:22,809
+Yani aslında IP'nin kendisinde de protokolün orjinal tanımında güvenlikle alakalı
+
+62
+00:14:22,809 --> 00:14:29,809
+bir takım öngörüler yapılmış olmasına rağmen şu anda implement edilmiş ve kullanılan haliyle
+
+63
+00:14:29,809 --> 00:14:36,809
+IP'nin kendisinde de güvenlikle alakalı herhangi bir özellik yok.
+
+64
+00:14:36,809 --> 00:14:39,809
+Bu da önemli bir sıkıntı.
+
+65
+00:14:39,809 --> 00:14:44,500
+Border gateway protokolden bahsetmiştik.
+
+66
+00:14:44,500 --> 00:14:51,500
+İnternet servis sağlayıcıların varlığını bu protokol üzerinden duyurduklarını,
+
+67
+00:14:51,500 --> 00:14:53,500
+birbirleri arasında bu protokol üzerinden engelleyip,
+
+68
+00:14:53,500 --> 00:14:56,500
+bu protokol üzerinden geçiş sağlandığını,
+
+69
+00:14:56,500 --> 00:15:03,500
+bu protokolün ülkeler, kıtalar arasında da internet bağlantısı açısından önem taşıdığını söylemiştik.
+
+70
+00:15:03,500 --> 00:15:14,940
+Yaşanan saldırıyı, daha doğrusu saldırı demeyelim de yanlış konfigürasyon sonucunda yaşanan kesintiyi konuşmuştuk.
+
+71
+00:15:14,940 --> 00:15:21,940
+YouTube sitelerine erişimin ortadan kalkması durumunu,
+
+72
+00:15:21,940 --> 00:15:23,940
+Pakistan'da yapılan bir güncellemenin yanlış kesintisi olduğunu,
+
+73
+00:15:23,940 --> 00:15:29,940
+yanlış bir güncellemenin bütün dünyayı nasıl etkilediğini konuşmuştuk.
+
+74
+00:15:29,940 --> 00:15:34,940
+Sonrasında da ben size bu protokolde güncellemeler yapıldığını söylemiştim ki
+
+75
+00:15:34,940 --> 00:15:43,940
+zaten ona bağlı olarak şu anda Secure Border Gateway Protocol S kullanılıyor.
+
+76
+00:15:43,940 --> 00:15:46,940
+Ama BGP'de otantikasyon yok.
+
+77
+00:15:46,940 --> 00:15:51,940
+Bize ait olmayan bir bölgenin,
+
+78
+00:15:51,940 --> 00:15:53,940
+bir network'ün duyurusunu,
+
+79
+00:15:53,940 --> 00:15:54,940
+bunu yapabiliyoruz,
+
+80
+00:15:54,940 --> 00:15:57,940
+bunun yayılmasını sağlayabiliyoruz.
+
+81
+00:15:57,940 --> 00:16:04,940
+Ve özellikle de işte Pakistan örneğinde olduğu gibi insan hatası sonucunda
+
+82
+00:16:04,940 --> 00:16:12,940
+bütün internetteki routing'in etkilenmesiyle sonuçlanabilecek sıkıntılara da,
+
+83
+00:16:12,940 --> 00:16:14,940
+zafiyetlere de açık.
+
+84
+00:16:14,940 --> 00:16:23,580
+TCP tarafına baktığımızda işte fiziksel ve data link layer tarafında Ethernet,
+
+85
+00:16:23,580 --> 00:16:26,580
+onun üzerinde IP olduğunu düşünecek olursak,
+
+86
+00:16:26,580 --> 00:16:29,580
+bu güvenilir olmayan,
+
+87
+00:16:29,580 --> 00:16:40,580
+IP'den kaynaklı güvenilir olmayan yapının üzerinde güvenilir ve paketlerin bir akan bütünlük içerisinde
+
+88
+00:16:40,580 --> 00:16:48,580
+bir noktadan bir başka noktaya sıralı ve düzgün şekilde aktarılmasını sağlayan protokol olduğunu söylemiştik.
+
+89
+00:16:48,580 --> 00:16:52,580
+Verinin segment diyorduk buna.
+
+90
+00:16:52,580 --> 00:17:02,580
+Transport layer seviyesinde parçalandığını ve bu segmentlerin network layer üzerinden karşı tarafa gönderildiğini,
+
+91
+00:17:02,580 --> 00:17:07,579
+alıcı-verici arasında bir onay mekanizması çalıştığını,
+
+92
+00:17:07,579 --> 00:17:17,579
+buna göre gönderen tarafın, verici tarafın alıcıda eksik olması durumunda paketleri tekrar gönderdiğini ve
+
+93
+00:17:17,579 --> 00:17:22,579
+alıcının da bunları sıralı bir şekilde uygulamaya yansıttığını,
+
+94
+00:17:22,579 --> 00:17:24,579
+aktarmıştık.
+
+95
+00:17:24,579 --> 00:17:30,579
+Bunun gerçekleşebilmesi için TCP'nin bağlantılardan yararlanması lazım.
+
+96
+00:17:30,579 --> 00:17:36,579
+Bir bağlantının kurulması ise üç tane paket alışverişiyle gerçekleşiyordu,
+
+97
+00:17:36,579 --> 00:17:38,579
+client ve server arasında.
+
+98
+00:17:38,579 --> 00:17:47,579
+Buna da 3-way handshake, üç aşamalı, üç yollu el sıkışma ismini veriyorduk.
+
+99
+00:17:47,579 --> 00:17:51,579
+Şimdi burada DNS rebinding ve rebinding,
+
+100
+00:17:51,579 --> 00:17:53,579
+karşı korumalar var.
+
+101
+00:17:53,579 --> 00:17:55,579
+Bunu şu anda anlatmayacağım.
+
+102
+00:17:55,579 --> 00:17:59,579
+Önce bu iki tane slide'ı atlayacağım.
+
+103
+00:17:59,579 --> 00:18:05,579
+Bugünün konusunu anlatıp haftaya da devam ettikten sonra buraya tekrar zaten geleceğiz.
+
+104
+00:18:05,579 --> 00:18:07,579
+DNSSEC de bununla alakalı.
+
+105
+00:18:07,579 --> 00:18:15,579
+Yani DNS rebinding saldırısı ve DNSSEC bir bütün.
+
+106
+00:18:18,579 --> 00:18:19,579
+Şimdi sonuç olarak,
+
+107
+00:18:19,579 --> 00:18:26,579
+eğer internete bağlıysak bir şekilde bilmeliyiz ki her an tehdit altındayız.
+
+108
+00:18:26,579 --> 00:18:28,579
+Her an bir saldırıyla karşılaşabiliriz.
+
+109
+00:18:28,579 --> 00:18:37,579
+Bu illa ki web üzerinden, web erişimlerinden, web protokollerinden ötürü olmak zorunda değil.
+
+110
+00:18:37,579 --> 00:18:43,579
+İşte az önce verdiğimiz örneklerle Ethernet seviyesinde olabilir,
+
+111
+00:18:43,579 --> 00:18:49,579
+IP seviyesinde olabilir, TCP seviyesinde olabilir veya uygulama seviyesinde olabilir.
+
+112
+00:18:49,579 --> 00:18:52,579
+Ancak temel bir prensip var.
+
+113
+00:18:52,579 --> 00:18:57,579
+Daha az zarar görmek istiyorsak,
+
+114
+00:18:57,579 --> 00:19:01,579
+bütün saldırılardan korunabilme şansımız yok.
+
+115
+00:19:01,579 --> 00:19:04,579
+Ancak daha az zarar görmek istiyorsak
+
+116
+00:19:04,579 --> 00:19:10,579
+ve belirli bir derecede güvenliğimizi garanti altına almak istiyorsak,
+
+117
+00:19:10,579 --> 00:19:15,579
+mutlaka kriptografiden yararlanmamız gerekiyor.
+
+118
+00:19:15,579 --> 00:19:18,579
+Yani transport katmanında,
+
+119
+00:19:19,579 --> 00:19:27,579
+kriptografik temeller üzerine oturtulmuş karşılıklı haberleşme yapılmasını sağlamamız lazım.
+
+120
+00:19:27,579 --> 00:19:31,579
+Buna da TRS ismini veriyoruz genel kapsamda.
+
+121
+00:19:31,579 --> 00:19:34,579
+Transport Layer Security.
+
+122
+00:19:34,579 --> 00:19:41,359
+Şimdi bu haftanın esas konusu,
+
+123
+00:19:41,359 --> 00:19:48,359
+yoğunlaşıp da inceleyeceğimiz, sonrasında da devam edeceğimiz önümüzdeki haftada esas konu,
+
+124
+00:19:48,359 --> 00:19:50,359
+Denial of Service Attack.
+
+125
+00:19:50,359 --> 00:19:51,359
+Yani,
+
+126
+00:19:51,359 --> 00:19:55,359
+servis kesintisi saldırıları.
+
+127
+00:19:55,359 --> 00:19:57,359
+Bir servis sağlayıcı var.
+
+128
+00:19:57,359 --> 00:20:00,359
+Bu bir doğal olarak sunucu.
+
+129
+00:20:00,359 --> 00:20:04,359
+Tek bir tane fiziksel olmak zorunda değil ama bir hizmet sunuyor.
+
+130
+00:20:04,359 --> 00:20:11,359
+Ve bu siteye o kadar çok trafik yönlendiriyoruz ki,
+
+131
+00:20:11,359 --> 00:20:15,359
+bu siteye doğru veya bu siteden dışarıya doğru,
+
+132
+00:20:15,359 --> 00:20:19,359
+o kadar çok trafik oluşmasına sebep oluyoruz ki,
+
+133
+00:20:19,359 --> 00:20:20,359
+DOS,
+
+134
+00:20:20,359 --> 00:20:22,359
+DOS saldırısında,
+
+135
+00:20:22,359 --> 00:20:29,359
+site gerçekten hizmet vermesi gereken kullanıcılara hizmet veremiyor.
+
+136
+00:20:29,359 --> 00:20:32,359
+Ancak burada kritik bir mekanizma var.
+
+137
+00:20:32,359 --> 00:20:36,359
+Kritik bir kriter var aslında mekanizmanın ötesinde.
+
+138
+00:20:36,359 --> 00:20:39,359
+Kaliteli bir DOS saldırısı,
+
+139
+00:20:39,359 --> 00:20:44,359
+bizim bir saldırıyı DOS saldırısı olarak değerlendirmemiz açısından,
+
+140
+00:20:44,359 --> 00:20:48,359
+saldırganın çok da fazla,
+
+141
+00:20:48,359 --> 00:20:51,359
+efor harcamayacağı bir saldırı olmalı.
+
+142
+00:20:51,359 --> 00:20:52,359
+Yani,
+
+143
+00:20:52,359 --> 00:20:55,359
+saldırgan işlem gücü olarak,
+
+144
+00:20:55,359 --> 00:20:59,359
+memori olarak veya network kapasitesi olarak,
+
+145
+00:20:59,359 --> 00:21:05,059
+çok az kaynak kullanarak,
+
+146
+00:21:05,059 --> 00:21:08,059
+karşılığında az önce söylediğimiz,
+
+147
+00:21:08,059 --> 00:21:13,059
+servise erişilememe durumunu oluşturacak şekilde,
+
+148
+00:21:13,059 --> 00:21:18,059
+kaynak tüketilmesini ve kullanılmasını tetikleyebilmeli.
+
+149
+00:21:18,059 --> 00:21:20,059
+Tabii ki bu nerede olacak?
+
+150
+00:21:20,059 --> 00:21:22,059
+Saldırının hedefinde,
+
+151
+00:21:22,059 --> 00:21:26,059
+yani kurban noktasında o az önce söylediğimiz servis sağlayıcı.
+
+152
+00:21:26,059 --> 00:21:27,059
+Mesela,
+
+153
+00:21:27,059 --> 00:21:30,910
+Denial of Service'de,
+
+154
+00:21:30,910 --> 00:21:34,910
+saldırıları iki ana kategoriye yerleştiriyoruz.
+
+155
+00:21:34,910 --> 00:21:36,910
+Ve öyle inceliyoruz.
+
+156
+00:21:36,910 --> 00:21:38,910
+Biri,
+
+157
+00:21:38,910 --> 00:21:40,910
+Bug kategorisi,
+
+158
+00:21:40,910 --> 00:21:42,910
+diğeri Flat kategorisi.
+
+159
+00:21:42,910 --> 00:21:46,190
+Bug hata,
+
+160
+00:21:46,190 --> 00:21:47,190
+tasarımdan kaynaklı,
+
+161
+00:21:47,190 --> 00:21:51,190
+genelde uygulama seviyesindeki protokolünün,
+
+162
+00:21:51,190 --> 00:21:52,190
+tasarımından kaynaklı,
+
+163
+00:21:52,190 --> 00:21:55,190
+ve bunun asimetrik olması.
+
+164
+00:21:55,190 --> 00:21:56,190
+Yani,
+
+165
+00:21:56,190 --> 00:22:00,190
+isteklerin,
+
+166
+00:22:00,190 --> 00:22:02,190
+daha kısa,
+
+167
+00:22:02,190 --> 00:22:06,190
+cevapların daha uzun paketlerden oluşması.
+
+168
+00:22:06,190 --> 00:22:09,190
+İçerik açısından baktığımızda.
+
+169
+00:22:09,190 --> 00:22:11,190
+Veya,
+
+170
+00:22:11,190 --> 00:22:13,190
+yapılan basit bir isteğin,
+
+171
+00:22:13,190 --> 00:22:18,190
+sunucu tarafında cevap verecek olan servis tarafında,
+
+172
+00:22:18,190 --> 00:22:25,349
+çok fazla işlem gücü gerektirmesi,
+
+173
+00:22:25,349 --> 00:22:28,349
+memori gerektirmesi.
+
+174
+00:22:28,349 --> 00:22:30,349
+Diğeri ise,
+
+175
+00:22:30,349 --> 00:22:31,349
+Flat ise,
+
+176
+00:22:31,349 --> 00:22:37,109
+bu daha böyle fiziki bir şey olarak düşünülebilir.
+
+177
+00:22:37,109 --> 00:22:41,109
+Saldırı altında olan siteye,
+
+178
+00:22:41,109 --> 00:22:45,779
+veya o siteden dışarıya,
+
+179
+00:22:45,779 --> 00:22:49,779
+o sitenin bağlantı hızının,
+
+180
+00:22:49,779 --> 00:22:50,779
+kapasitesinin,
+
+181
+00:22:50,779 --> 00:22:52,779
+çok çok çok çok üzerinde,
+
+182
+00:22:52,779 --> 00:22:54,779
+trafik oluşturulması.
+
+183
+00:22:54,779 --> 00:22:56,779
+Bunu da genelde neyle yapıyoruz?
+
+184
+00:22:56,779 --> 00:22:58,779
+Botnet ile yapıyoruz.
+
+185
+00:22:58,779 --> 00:22:59,779
+Şimdi,
+
+186
+00:22:59,779 --> 00:23:01,779
+örneklerini göreceğiz.
+
+187
+00:23:01,779 --> 00:23:03,779
+Şunu unutmayalım.
+
+188
+00:23:03,779 --> 00:23:05,779
+Her katmanda olabilir.
+
+189
+00:23:05,779 --> 00:23:06,779
+Yani,
+
+190
+00:23:06,779 --> 00:23:09,779
+link layer'da da olabilir.
+
+191
+00:23:09,779 --> 00:23:12,779
+IP seviyesinde,
+
+192
+00:23:12,779 --> 00:23:14,779
+router'lar seviyesinde,
+
+193
+00:23:14,779 --> 00:23:15,779
+olabilir.
+
+194
+00:23:15,779 --> 00:23:17,779
+TCP, UDP,
+
+195
+00:23:17,779 --> 00:23:19,779
+transport layer'da olabilir.
+
+196
+00:23:19,779 --> 00:23:21,779
+Application layer,
+
+197
+00:23:21,779 --> 00:23:23,779
+yani uygulamalarımız web server'da da olabilir.
+
+198
+00:23:23,779 --> 00:23:25,779
+Bu DNS server'da da olabilir.
+
+199
+00:23:25,779 --> 00:23:27,779
+Her katmandaki,
+
+200
+00:23:28,779 --> 00:23:30,779
+az önce söylediğimiz,
+
+201
+00:23:30,779 --> 00:23:32,779
+kritere uygun,
+
+202
+00:23:32,779 --> 00:23:33,779
+hata,
+
+203
+00:23:33,779 --> 00:23:35,779
+özellikle tasarımsal,
+
+204
+00:23:35,779 --> 00:23:36,779
+gözden kaçmış,
+
+205
+00:23:36,779 --> 00:23:38,779
+böyle,
+
+206
+00:23:38,779 --> 00:23:40,779
+tetiklenip kullanılabilecek hatalar,
+
+207
+00:23:40,779 --> 00:23:43,779
+birer,
+
+208
+00:23:43,779 --> 00:23:45,779
+DOS saldırısına dönüştürülebilir.
+
+209
+00:23:45,779 --> 00:23:46,779
+Veya,
+
+210
+00:23:46,779 --> 00:23:47,779
+her katmanda,
+
+211
+00:23:47,779 --> 00:23:49,779
+o katmanın,
+
+212
+00:23:49,779 --> 00:23:51,779
+kaldırabileceğinden,
+
+213
+00:23:51,779 --> 00:23:52,779
+işleyebileceğinden,
+
+214
+00:23:52,779 --> 00:23:54,779
+o katmana ayrılmış olan,
+
+215
+00:23:54,779 --> 00:23:56,779
+band genişliğinden diyelim,
+
+216
+00:23:56,779 --> 00:23:57,779
+daha fazla trafik üretirsiniz ve,
+
+217
+00:23:57,779 --> 00:24:00,779
+o katmanı devre dışı bırakırsınız.
+
+218
+00:24:00,779 --> 00:24:01,779
+Veya birden fazla katmanı,
+
+219
+00:24:01,779 --> 00:24:03,779
+tamamını devre dışı bırakırsınız.
+
+220
+00:24:03,779 --> 00:24:04,779
+Yani,
+
+221
+00:24:04,779 --> 00:24:05,779
+açıkçası,
+
+222
+00:24:05,779 --> 00:24:06,779
+hem,
+
+223
+00:24:06,779 --> 00:24:07,779
+DOS buck,
+
+224
+00:24:07,779 --> 00:24:09,779
+hem de DOS flat,
+
+225
+00:24:09,779 --> 00:24:11,779
+burada söylendiği gibi,
+
+226
+00:24:11,779 --> 00:24:12,779
+üç katmanda da,
+
+227
+00:24:12,779 --> 00:24:14,779
+gerçekleştirilebilir.
+
+228
+00:24:14,779 --> 00:24:15,779
+Ve,
+
+229
+00:24:15,779 --> 00:24:16,779
+en sıkıntılı,
+
+230
+00:24:16,779 --> 00:24:17,779
+en,
+
+231
+00:24:17,779 --> 00:24:18,779
+sorunlu,
+
+232
+00:24:18,779 --> 00:24:19,779
+tehlikeli,
+
+233
+00:24:19,779 --> 00:24:21,779
+saldırı tiplerinden biri.
+
+234
+00:24:23,779 --> 00:24:24,779
+Şimdi,
+
+235
+00:24:24,779 --> 00:24:27,859
+hemen,
+
+236
+00:24:27,859 --> 00:24:29,859
+TCP demiştik ya,
+
+237
+00:24:29,859 --> 00:24:30,859
+işte,
+
+238
+00:24:30,859 --> 00:24:32,859
+bütün TCP,
+
+239
+00:24:32,859 --> 00:24:34,859
+bağlantılarının başında bir,
+
+240
+00:24:34,859 --> 00:24:36,859
+tri ve handshake var,
+
+241
+00:24:36,859 --> 00:24:37,859
+el sıkışıyorlar,
+
+242
+00:24:37,859 --> 00:24:38,859
+üç tane paketten oluşuyor,
+
+243
+00:24:38,859 --> 00:24:41,859
+client ve server arasında.
+
+244
+00:24:41,859 --> 00:24:43,859
+Oradan yola çıkılarak,
+
+245
+00:24:43,859 --> 00:24:46,859
+oluşturulmuş bir saldırıyı gözden geçireceğiz.
+
+246
+00:24:46,859 --> 00:24:48,859
+Çok can sıkıcı bir saldırı.
+
+247
+00:24:48,859 --> 00:24:51,859
+Günümüzde hala geçerliliği olan bir saldırı.
+
+248
+00:24:51,859 --> 00:24:53,859
+Yapılabilir bir saldırı.
+
+249
+00:24:53,859 --> 00:24:55,859
+Karşı tarafta tedbir almadıysa,
+
+250
+00:24:55,859 --> 00:24:57,859
+onu çökertecek bir saldırı.
+
+251
+00:24:57,859 --> 00:24:58,859
+Ve aslında bunun,
+
+252
+00:24:58,859 --> 00:25:01,859
+band genişliğiyle falan da hiçbir alakası yok.
+
+253
+00:25:02,859 --> 00:25:04,859
+Gigabitlerce,
+
+254
+00:25:04,859 --> 00:25:06,859
+band genişliği olan bir,
+
+255
+00:25:06,859 --> 00:25:07,859
+sunucuyu dahi,
+
+256
+00:25:07,859 --> 00:25:09,859
+çok kısa bir süre içerisinde,
+
+257
+00:25:09,859 --> 00:25:11,859
+devre dışı bırakabilirsiniz.
+
+258
+00:25:11,859 --> 00:25:13,859
+Hizmet veremez hale getirebilirsiniz.
+
+259
+00:25:14,859 --> 00:25:15,859
+Şimdi bakın,
+
+260
+00:25:15,859 --> 00:25:16,859
+client bir,
+
+261
+00:25:16,859 --> 00:25:17,859
+SYN paketi gönderiyor.
+
+262
+00:25:17,859 --> 00:25:19,859
+İçinde SNC var.
+
+263
+00:25:19,859 --> 00:25:20,859
+Server cevap olarak bir,
+
+264
+00:25:20,859 --> 00:25:22,859
+SYN-ACK paketi gönderiyor.
+
+265
+00:25:22,859 --> 00:25:23,859
+İçinde,
+
+266
+00:25:23,859 --> 00:25:25,859
+SNC var.
+
+267
+00:25:26,859 --> 00:25:27,859
+Daha sonrasında da,
+
+268
+00:25:27,859 --> 00:25:28,859
+Server,
+
+269
+00:25:28,859 --> 00:25:29,859
+Client'ten gelecek olan,
+
+270
+00:25:29,859 --> 00:25:30,859
+ekip ekliyor.
+
+271
+00:25:30,859 --> 00:25:31,859
+İçinde de,
+
+272
+00:25:31,859 --> 00:25:34,859
+SNC ve SNC değerlerinin olmasını,
+
+273
+00:25:34,859 --> 00:25:36,859
+umuyor.
+
+274
+00:25:36,859 --> 00:25:37,859
+O zaman demek ki,
+
+275
+00:25:37,859 --> 00:25:39,859
+kırmızı kutu içerisinde alınmış olan,
+
+276
+00:25:39,859 --> 00:25:41,859
+kısım,
+
+277
+00:25:41,859 --> 00:25:43,859
+Server'da saklanan bilgi.
+
+278
+00:25:43,859 --> 00:25:45,859
+Her gelen,
+
+279
+00:25:45,859 --> 00:25:47,859
+bu şekildeki connection,
+
+280
+00:25:47,859 --> 00:25:48,859
+isteği için,
+
+281
+00:25:48,859 --> 00:25:50,859
+Server'da bu tarz bir bilgi saklanıyor.
+
+282
+00:25:50,859 --> 00:25:51,859
+Şimdi,
+
+283
+00:25:51,859 --> 00:25:53,859
+bu bilgi çok büyük değil.
+
+284
+00:25:53,859 --> 00:25:55,859
+Sekans numaraları nedir?
+
+285
+00:25:55,859 --> 00:25:56,859
+İşte,
+
+286
+00:25:56,859 --> 00:25:57,859
+102 bittir.
+
+287
+00:25:57,859 --> 00:25:59,859
+64 bitlik bir şey saklanıyor.
+
+288
+00:25:59,859 --> 00:26:00,859
+Ekstra şeyle falan.
+
+289
+00:26:00,859 --> 00:26:01,859
+Diyelim ki,
+
+290
+00:26:01,859 --> 00:26:02,859
+her şeyini abartalım,
+
+291
+00:26:02,859 --> 00:26:04,859
+128 bit saklansın.
+
+292
+00:26:04,859 --> 00:26:06,859
+Fark etmez.
+
+293
+00:26:06,859 --> 00:26:07,859
+Çok az bir bilgi.
+
+294
+00:26:07,859 --> 00:26:09,859
+Ama sorun şu,
+
+295
+00:26:09,859 --> 00:26:12,859
+Server tarafında,
+
+296
+00:26:12,859 --> 00:26:14,859
+bu tarz,
+
+297
+00:26:14,859 --> 00:26:15,859
+üçüncü paketi,
+
+298
+00:26:15,859 --> 00:26:16,859
+yani,
+
+299
+00:26:16,859 --> 00:26:18,859
+ECK paketi gelmemiş,
+
+300
+00:26:18,859 --> 00:26:22,859
+saklanabilecek,
+
+301
+00:26:22,859 --> 00:26:23,859
+paketlerin,
+
+302
+00:26:23,859 --> 00:26:25,859
+veyahut da bu bilgilerin sayısı,
+
+303
+00:26:26,859 --> 00:26:31,509
+belirli.
+
+304
+00:26:31,509 --> 00:26:33,509
+Biriniz bir şey mi sormaya çalışıyor?
+
+305
+00:26:33,509 --> 00:26:34,509
+Sesiniz açık ama,
+
+306
+00:26:34,509 --> 00:26:35,509
+soru soracaksanız.
+
+307
+00:26:35,509 --> 00:26:39,509
+Hocam galiba birisinin mikrofonu açık kalmış.
+
+308
+00:26:39,509 --> 00:26:40,509
+Öyle görünüyor.
+
+309
+00:26:40,509 --> 00:26:41,509
+Bakıyorum ama,
+
+310
+00:26:41,509 --> 00:26:43,509
+herkes kapalı gibi şu anda.
+
+311
+00:26:43,509 --> 00:26:45,509
+Bazılarının hiç ses bağlantısı yok.
+
+312
+00:26:45,509 --> 00:26:46,509
+O nasıl oluyor?
+
+313
+00:26:46,509 --> 00:26:48,509
+Ses bağlantısı olmadan,
+
+314
+00:26:48,509 --> 00:26:49,509
+beni nasıl duyuyorlar?
+
+315
+00:26:49,509 --> 00:26:50,509
+Allah Allah.
+
+316
+00:26:50,509 --> 00:26:54,819
+Çok ilginç.
+
+317
+00:26:54,819 --> 00:26:56,819
+Bu arkadaşımız da kapattı galiba.
+
+318
+00:26:56,819 --> 00:27:03,910
+Niye bu ekranda bir gariplik var?
+
+319
+00:27:03,910 --> 00:27:06,910
+Bir sürü arkadaşınızın ses bağlantısı yok.
+
+320
+00:27:06,910 --> 00:27:07,910
+İlginç.
+
+321
+00:27:07,910 --> 00:27:10,910
+Evet, şimdi,
+
+322
+00:27:10,910 --> 00:27:13,910
+bu saklanan,
+
+323
+00:27:13,910 --> 00:27:16,910
+saklanması gereken bilgi için,
+
+324
+00:27:16,910 --> 00:27:19,910
+diyelim ki Server tarafında 1000 tanelik yer ayrılmış.
+
+325
+00:27:19,910 --> 00:27:21,910
+O zaman,
+
+326
+00:27:21,910 --> 00:27:23,910
+şu şekle bakalım.
+
+327
+00:27:23,910 --> 00:27:27,769
+1001 tane böyle paket geldi.
+
+328
+00:27:27,769 --> 00:27:30,769
+Her biri farklı bir IP adresinden geldi.
+
+329
+00:27:30,769 --> 00:27:32,769
+Ve bu IP adresleri de aslında,
+
+330
+00:27:32,769 --> 00:27:34,769
+sahte IP adresleri.
+
+331
+00:27:34,769 --> 00:27:37,769
+Gerçekte Server'a böyle bir bağlantı,
+
+332
+00:27:37,769 --> 00:27:39,769
+isteği göndermediler.
+
+333
+00:27:39,769 --> 00:27:40,769
+Yani,
+
+334
+00:27:40,769 --> 00:27:42,769
+bu ne anlama geliyor?
+
+335
+00:27:42,769 --> 00:27:45,769
+Üçüncü paket hiçbir zaman gelmeyecek.
+
+336
+00:27:45,769 --> 00:27:46,769
+Ne oldu?
+
+337
+00:27:46,769 --> 00:27:49,769
+1000 tane o slot doldu.
+
+338
+00:27:49,769 --> 00:27:51,769
+1001. için yer yok.
+
+339
+00:27:51,769 --> 00:27:54,769
+Ve ciddi de bir timeout var.
+
+340
+00:27:54,769 --> 00:27:57,769
+Bütün o timeoutlar dolana kadar,
+
+341
+00:27:57,769 --> 00:28:00,769
+yer boşalana kadar,
+
+342
+00:28:00,769 --> 00:28:02,769
+yavaş yavaş,
+
+343
+00:28:02,769 --> 00:28:04,769
+yani diyelim ki timeout,
+
+344
+00:28:04,769 --> 00:28:06,769
+3 dakika.
+
+345
+00:28:06,769 --> 00:28:07,769
+Ki hakikaten,
+
+346
+00:28:07,769 --> 00:28:09,769
+dakika mertebesinde timeoutlar var.
+
+347
+00:28:09,769 --> 00:28:11,769
+İnternetin çalışma şeklinden,
+
+348
+00:28:11,769 --> 00:28:13,769
+büyüklüğünden, gecikmelerinden,
+
+349
+00:28:13,769 --> 00:28:16,769
+paket kaybedebilmesinden ve benzeri şeyinden kaynaklı olarak,
+
+350
+00:28:16,769 --> 00:28:19,769
+dakika mertebesinde timeout var.
+
+351
+00:28:19,769 --> 00:28:22,769
+O zaman sizin 1000 tane slotunuz var.
+
+352
+00:28:22,769 --> 00:28:25,769
+Saniyeler mertebesinde 1000 tanesi de olabilir.
+
+353
+00:28:25,769 --> 00:28:27,769
+Çünkü 1000 tane bu şekilde,
+
+354
+00:28:27,769 --> 00:28:29,769
+istek göndermek o kadar,
+
+355
+00:28:29,769 --> 00:28:32,769
+kısa ve seri bir şekilde yapılabilir ki.
+
+356
+00:28:32,769 --> 00:28:34,769
+Sonrasında bakın ne oldu?
+
+357
+00:28:34,769 --> 00:28:36,769
+3 dakika geçti,
+
+358
+00:28:36,769 --> 00:28:37,769
+bir tane yer açıldı.
+
+359
+00:28:37,769 --> 00:28:39,769
+O 3 dakika boyunca,
+
+360
+00:28:39,769 --> 00:28:42,769
+size gerçek olarak erişmeye çalışan bir sürü client var.
+
+361
+00:28:42,769 --> 00:28:44,769
+Ama hiçbirine cevap veremiyorsunuz.
+
+362
+00:28:44,769 --> 00:28:47,769
+Çünkü sizin boşta slotunuz yok.
+
+363
+00:28:47,769 --> 00:28:49,769
+3 dakika sonra,
+
+364
+00:28:49,769 --> 00:28:50,769
+birine,
+
+365
+00:28:50,769 --> 00:28:52,769
+o anda şanslı olan birine,
+
+366
+00:28:52,769 --> 00:28:54,769
+yer ayırabildiniz.
+
+367
+00:28:54,769 --> 00:28:56,769
+1-3 dakika sonra diğerine,
+
+368
+00:28:56,769 --> 00:28:58,769
+1-3 dakika sonra diğerine,
+
+369
+00:28:58,769 --> 00:29:00,769
+yani ne oldu?
+
+370
+00:29:00,769 --> 00:29:04,769
+İnanılmaz derecede yavaş çalışıyorsunuz.
+
+371
+00:29:04,769 --> 00:29:06,769
+Ve bu sırada da,
+
+372
+00:29:06,769 --> 00:29:08,769
+hem gerçek istekler devam ediyor,
+
+373
+00:29:08,769 --> 00:29:10,769
+hem sahte istekler devam ediyor.
+
+374
+00:29:10,769 --> 00:29:13,769
+Bunun bir çıkışı yok.
+
+375
+00:29:13,769 --> 00:29:17,769
+Sarmal şeklinde cevap veremez noktadasınız.
+
+376
+00:29:17,769 --> 00:29:19,769
+Şimdi burada,
+
+377
+00:29:19,769 --> 00:29:21,769
+o anda,
+
+378
+00:29:21,769 --> 00:29:24,769
+ilk 2 paketi alınıp verilmiş olan,
+
+379
+00:29:24,769 --> 00:29:28,769
+3. paketi beklenenlerin tutulduğu alana,
+
+380
+00:29:28,769 --> 00:29:30,769
+backlog diyoruz.
+
+381
+00:29:30,769 --> 00:29:32,769
+Backlog kuyruğu diyoruz.
+
+382
+00:29:32,769 --> 00:29:38,039
+Çözüm ne diyebilirsiniz?
+
+383
+00:29:38,039 --> 00:29:40,039
+Backlog boyutunu arttıralım.
+
+384
+00:29:40,039 --> 00:29:42,039
+1000 olmasın, 10.000 olsun.
+
+385
+00:29:42,039 --> 00:29:43,039
+Fark etmez.
+
+386
+00:29:43,039 --> 00:29:45,039
+Yani 10.000 taneyi doldurmak da sorun değil.
+
+387
+00:29:45,039 --> 00:29:48,039
+100.000 tane yapın, onu da doldurmak sorun değil.
+
+388
+00:29:48,039 --> 00:29:51,039
+O zaman timeout'u azaltalım.
+
+389
+00:29:51,039 --> 00:29:53,039
+O da çok kötü bir çözüm.
+
+390
+00:29:53,039 --> 00:29:55,039
+Çünkü az önce söyledim ya,
+
+391
+00:29:55,039 --> 00:29:57,039
+internetin yapısından dolayı,
+
+392
+00:29:57,039 --> 00:29:59,039
+bazı client'ların,
+
+393
+00:29:59,039 --> 00:30:01,039
+bağlanabilmesi için,
+
+394
+00:30:01,039 --> 00:30:04,039
+hakikaten uzun bir timeout gerekebiliyor.
+
+395
+00:30:04,039 --> 00:30:06,039
+Bu durumda siz,
+
+396
+00:30:06,039 --> 00:30:08,039
+saldırganın etkisini azaltmak için,
+
+397
+00:30:08,039 --> 00:30:11,039
+o timeout'u azalttığınızda,
+
+398
+00:30:11,039 --> 00:30:14,039
+gerçekten bağlanacak olan client'ların da,
+
+399
+00:30:14,039 --> 00:30:19,039
+bağlanamamasına sebep oluyorsunuz.
+
+400
+00:30:19,039 --> 00:30:20,039
+Çözüm ne?
+
+401
+00:30:20,039 --> 00:30:23,039
+Çözüm aslında,
+
+402
+00:30:23,039 --> 00:30:26,039
+backlog bilgisinin,
+
+403
+00:30:26,039 --> 00:30:29,039
+serverda tutunmaması.
+
+404
+00:30:29,039 --> 00:30:31,039
+Yani server tarafı,
+
+405
+00:30:31,039 --> 00:30:32,039
+bağlantı,
+
+406
+00:30:32,039 --> 00:30:37,039
+3 tane paketin alışverişiyle tamamlanmadığı sürece,
+
+407
+00:30:37,039 --> 00:30:40,039
+o bağlantıyla alakalı hiçbir bilgi tutmayacak.
+
+408
+00:30:40,039 --> 00:30:41,039
+Nasıl olacak?
+
+409
+00:30:41,039 --> 00:30:43,039
+Tavuk yumurta ilişkisi gibi.
+
+410
+00:30:43,039 --> 00:30:44,039
+Çok basit.
+
+411
+00:30:44,039 --> 00:30:46,039
+Bu bilgiyi client'a tutturacağız.
+
+412
+00:30:46,039 --> 00:30:47,039
+Ancak,
+
+413
+00:30:47,039 --> 00:30:48,039
+client'ın da,
+
+414
+00:30:48,039 --> 00:30:50,039
+bu bilgiyi bize,
+
+415
+00:30:50,039 --> 00:30:54,039
+sahte bir şekilde göndermesini engellememiz lazım.
+
+416
+00:30:54,039 --> 00:30:56,039
+Yani işin içine kriptografi girecek.
+
+417
+00:30:56,039 --> 00:31:00,730
+Fikir çok basit.
+
+418
+00:31:00,730 --> 00:31:04,329
+Client'tan sin geldi.
+
+419
+00:31:04,329 --> 00:31:06,329
+Client'a sin-ack yollayacağız.
+
+420
+00:31:06,329 --> 00:31:08,329
+Elimizde,
+
+421
+00:31:08,329 --> 00:31:10,329
+snc değeri var.
+
+422
+00:31:10,329 --> 00:31:11,329
+Bir de,
+
+423
+00:31:11,329 --> 00:31:12,329
+snc değeri var.
+
+424
+00:31:12,329 --> 00:31:13,329
+Değil mi?
+
+425
+00:31:13,329 --> 00:31:14,329
+Hani,
+
+426
+00:31:14,329 --> 00:31:15,329
+tutmak istediğimiz.
+
+427
+00:31:15,329 --> 00:31:18,220
+Şimdi,
+
+428
+00:31:18,220 --> 00:31:20,220
+snc değerini,
+
+429
+00:31:20,220 --> 00:31:22,220
+client'tan gelen,
+
+430
+00:31:22,220 --> 00:31:24,220
+bilgilere bağlı olarak,
+
+431
+00:31:24,220 --> 00:31:26,220
+kriptografik olarak hesaplıyoruz.
+
+432
+00:31:26,220 --> 00:31:27,220
+Client'tan ne geldi?
+
+433
+00:31:27,220 --> 00:31:29,220
+Client'ın source adresi geldi.
+
+434
+00:31:29,220 --> 00:31:31,220
+Source port'u geldi.
+
+435
+00:31:31,220 --> 00:31:32,220
+Destination adres,
+
+436
+00:31:32,220 --> 00:31:33,220
+yani biz,
+
+437
+00:31:33,220 --> 00:31:35,220
+cevap veren server,
+
+438
+00:31:35,220 --> 00:31:37,220
+bizdeki hangi hizmete erişeceği,
+
+439
+00:31:37,220 --> 00:31:39,220
+destination port ve client'ın,
+
+440
+00:31:39,220 --> 00:31:41,220
+snc değeri.
+
+441
+00:31:41,220 --> 00:31:42,220
+Bir de,
+
+442
+00:31:42,220 --> 00:31:44,220
+5 bitlik bir counter.
+
+443
+00:31:44,220 --> 00:31:45,220
+Bakın,
+
+444
+00:31:45,220 --> 00:31:50,069
+64 saniyede 1 arttırılıyormuş.
+
+445
+00:31:50,069 --> 00:31:52,069
+Overflow'u ona göre,
+
+446
+00:31:52,069 --> 00:31:54,069
+ayarlanmış bir şey.
+
+447
+00:31:54,069 --> 00:31:55,069
+5 bit demek,
+
+448
+00:31:55,069 --> 00:31:56,069
+32 farklı değer olacak.
+
+449
+00:31:56,069 --> 00:31:58,069
+0'dan 31'e.
+
+450
+00:31:58,069 --> 00:32:00,069
+Yani,
+
+451
+00:32:00,069 --> 00:32:02,069
+64 ne yapar?
+
+452
+00:32:02,069 --> 00:32:03,069
+2 üzeri 6 yapar.
+
+453
+00:32:03,069 --> 00:32:04,069
+32'de 2 üzeri 5 yapar.
+
+454
+00:32:04,069 --> 00:32:07,069
+2 üzeri 11.
+
+455
+00:32:07,069 --> 00:32:09,069
+2048 saniyede 1,
+
+456
+00:32:09,069 --> 00:32:11,069
+overflow edecek.
+
+457
+00:32:11,069 --> 00:32:13,069
+Öyle düşünün.
+
+458
+00:32:13,069 --> 00:32:15,069
+2048 saniyede,
+
+459
+00:32:15,069 --> 00:32:17,069
+yaklaşık,
+
+460
+00:32:17,069 --> 00:32:18,069
+ne yapıyor?
+
+461
+00:32:18,069 --> 00:32:20,069
+35 dakika falan.
+
+462
+00:32:20,069 --> 00:32:22,069
+O civarda,
+
+463
+00:32:22,069 --> 00:32:24,069
+tekrar başa dönecek bir şey.
+
+464
+00:32:24,069 --> 00:32:25,069
+MAC,
+
+465
+00:32:25,069 --> 00:32:26,069
+burada,
+
+466
+00:32:26,069 --> 00:32:28,069
+Message Authentication Code.
+
+467
+00:32:28,069 --> 00:32:29,069
+Yani,
+
+468
+00:32:29,069 --> 00:32:31,069
+secure bir hash değeri aslında.
+
+469
+00:32:31,069 --> 00:32:32,069
+Tabii,
+
+470
+00:32:32,069 --> 00:32:33,069
+bunun hesaplanması için,
+
+471
+00:32:33,069 --> 00:32:36,069
+bir anahtara ihtiyaç var.
+
+472
+00:32:36,069 --> 00:32:37,069
+Ancak,
+
+473
+00:32:37,069 --> 00:32:38,069
+buradaki güzellik şu,
+
+474
+00:32:38,069 --> 00:32:40,069
+Client'in gönderdiğimiz veriyi,
+
+475
+00:32:40,069 --> 00:32:41,069
+açması,
+
+476
+00:32:41,069 --> 00:32:42,069
+içine bakması gibi bir şey,
+
+477
+00:32:42,069 --> 00:32:43,069
+söz konusu değil.
+
+478
+00:32:43,069 --> 00:32:44,069
+Client'in,
+
+479
+00:32:44,069 --> 00:32:45,069
+onu bize,
+
+480
+00:32:45,069 --> 00:32:46,069
+aynen geri göndermesi lazım.
+
+481
+00:32:46,069 --> 00:32:47,069
+O yüzden,
+
+482
+00:32:47,069 --> 00:32:48,069
+key değerini karşı tarafa,
+
+483
+00:32:48,069 --> 00:32:50,069
+aktaracağım diye bir sıkıntıyla,
+
+484
+00:32:50,069 --> 00:32:51,069
+uğraşmıyorum.
+
+485
+00:32:51,069 --> 00:32:52,069
+Key değerini,
+
+486
+00:32:52,069 --> 00:32:53,069
+ben kendim seçiyorum.
+
+487
+00:32:53,069 --> 00:32:54,069
+Örneğin,
+
+488
+00:32:54,069 --> 00:32:56,069
+işletim sistemi,
+
+489
+00:32:56,069 --> 00:32:57,069
+açılırken,
+
+490
+00:32:57,069 --> 00:32:58,069
+bu değeri seçebilir.
+
+491
+00:32:58,069 --> 00:32:59,069
+Random olarak.
+
+492
+00:32:59,069 --> 00:33:01,069
+SNS değeri de,
+
+493
+00:33:01,069 --> 00:33:02,069
+3 tane,
+
+494
+00:33:02,069 --> 00:33:04,069
+bilginin birleşiminden oluşuyor.
+
+495
+00:33:04,069 --> 00:33:05,069
+T değeri,
+
+496
+00:33:05,069 --> 00:33:07,069
+maksimum segment size değeri ve,
+
+497
+00:33:07,069 --> 00:33:08,069
+L değeri.
+
+498
+00:33:08,069 --> 00:33:11,509
+Böyle olunca,
+
+499
+00:33:11,509 --> 00:33:13,509
+Client'tan gelen,
+
+500
+00:33:13,509 --> 00:33:14,509
+SNS,
+
+501
+00:33:14,509 --> 00:33:17,509
+üçüncü mesajda SNS gelecek ya,
+
+502
+00:33:17,509 --> 00:33:19,509
+ters işlemle,
+
+503
+00:33:19,509 --> 00:33:22,509
+kontrol edilebilir durumda.
+
+504
+00:33:22,509 --> 00:33:25,509
+Client bana T değerini gönderdi.
+
+505
+00:33:25,509 --> 00:33:27,509
+Zaten Client'in,
+
+506
+00:33:27,509 --> 00:33:29,509
+C'sini biliyorum.
+
+507
+00:33:29,509 --> 00:33:30,509
+SNC'sini bana,
+
+508
+00:33:30,509 --> 00:33:32,509
+gönderiyor geriye.
+
+509
+00:33:32,509 --> 00:33:34,509
+Onda da sorun yok.
+
+510
+00:33:34,509 --> 00:33:35,509
+Source adresi,
+
+511
+00:33:35,509 --> 00:33:36,509
+Source port,
+
+512
+00:33:36,509 --> 00:33:37,509
+Destination adresi,
+
+513
+00:33:37,509 --> 00:33:38,509
+Destination port var.
+
+514
+00:33:38,509 --> 00:33:40,509
+T değeri de,
+
+515
+00:33:40,509 --> 00:33:42,509
+elimize geçti.
+
+516
+00:33:42,509 --> 00:33:44,509
+Tekrar bir MAC hesabı yapacağız.
+
+517
+00:33:44,509 --> 00:33:46,509
+Aynı key ile.
+
+518
+00:33:46,509 --> 00:33:49,509
+Segment size'ı zaten,
+
+519
+00:33:49,509 --> 00:33:51,509
+ben set edip göndermiştim.
+
+520
+00:33:51,509 --> 00:33:53,509
+Yine o bende olan bir değer.
+
+521
+00:33:53,509 --> 00:33:55,509
+Eğer,
+
+522
+00:33:55,509 --> 00:33:58,509
+içinden doğru değerler çıkıyorsa,
+
+523
+00:33:58,509 --> 00:33:59,509
+sorun yok.
+
+524
+00:33:59,509 --> 00:34:00,509
+Bu,
+
+525
+00:34:00,509 --> 00:34:01,509
+düzgün,
+
+526
+00:34:01,509 --> 00:34:03,509
+dürüst bir Client'tir.
+
+527
+00:34:03,509 --> 00:34:05,509
+Artık bağlantı,
+
+528
+00:34:05,509 --> 00:34:07,509
+sağlanmış diye kabul edebilirim.
+
+529
+00:34:07,509 --> 00:34:08,510
+Ve,
+
+530
+00:34:08,510 --> 00:34:10,510
+bundan sonra bu bağlantı ile alakalı,
+
+531
+00:34:10,510 --> 00:34:12,510
+durum bilgisi tutmaya başlayabilirim.
+
+532
+00:34:12,510 --> 00:34:17,139
+Bu yöntemin,
+
+533
+00:34:17,139 --> 00:34:19,139
+tek bir,
+
+534
+00:34:19,139 --> 00:34:20,139
+sıkıntısı var.
+
+535
+00:34:20,139 --> 00:34:22,139
+Server tarafında,
+
+536
+00:34:22,139 --> 00:34:25,139
+sürekli,
+
+537
+00:34:25,139 --> 00:34:28,139
+kriptografik hesap yapılmasını gerektiriyor.
+
+538
+00:34:28,139 --> 00:34:29,139
+Çünkü,
+
+539
+00:34:29,139 --> 00:34:31,139
+Server dediğimiz,
+
+540
+00:34:31,139 --> 00:34:32,139
+yapılar,
+
+541
+00:34:32,139 --> 00:34:34,139
+hiç durmadan,
+
+542
+00:34:34,139 --> 00:34:35,139
+sürekli,
+
+543
+00:34:35,139 --> 00:34:36,139
+connection kurulan,
+
+544
+00:34:36,139 --> 00:34:38,139
+connection sonlandırılan yapılar,
+
+545
+00:34:38,139 --> 00:34:41,139
+servis alınabilmesi için.
+
+546
+00:34:41,139 --> 00:34:42,139
+O yüzden,
+
+547
+00:34:42,139 --> 00:34:45,139
+genelde şöyle bir yaklaşım uygulanıyor.
+
+548
+00:34:45,139 --> 00:34:46,139
+Backlog,
+
+549
+00:34:46,139 --> 00:34:48,139
+kuyruğunda,
+
+550
+00:34:48,139 --> 00:34:49,139
+boştaki,
+
+551
+00:34:49,139 --> 00:34:51,139
+eleman sayısı,
+
+552
+00:34:51,139 --> 00:34:53,139
+belirli bir kritik değerin,
+
+553
+00:34:53,139 --> 00:34:55,139
+altına düşerse,
+
+554
+00:34:55,139 --> 00:34:57,139
+hemen,
+
+555
+00:34:57,139 --> 00:34:59,139
+Server Sin Cookie,
+
+556
+00:34:59,139 --> 00:35:01,139
+mantığını başlatıyor.
+
+557
+00:35:01,139 --> 00:35:06,599
+Backlog,
+
+558
+00:35:06,599 --> 00:35:07,599
+rahatlarsa,
+
+559
+00:35:07,599 --> 00:35:08,599
+yani,
+
+560
+00:35:08,599 --> 00:35:10,599
+oradaki,
+
+561
+00:35:10,599 --> 00:35:12,599
+boş eleman sayısı,
+
+562
+00:35:12,599 --> 00:35:13,599
+artarsa,
+
+563
+00:35:13,599 --> 00:35:14,599
+o zaman,
+
+564
+00:35:14,599 --> 00:35:16,599
+Sin Cookie metodunu durduruyor.
+
+565
+00:35:16,599 --> 00:35:18,599
+Böylece, dinamik olarak,
+
+566
+00:35:18,599 --> 00:35:20,599
+siz iki tane eşik veriyorsunuz.
+
+567
+00:35:20,599 --> 00:35:22,599
+İşte, %70 ve daha fazla dolluk varsa,
+
+568
+00:35:22,599 --> 00:35:24,599
+Sin Cookie'yi başlat.
+
+569
+00:35:24,599 --> 00:35:26,599
+%30 veya daha az dolluk varsa,
+
+570
+00:35:26,599 --> 00:35:28,599
+Sin Cookie'yi durdur,
+
+571
+00:35:28,599 --> 00:35:30,599
+gibi.
+
+572
+00:35:30,599 --> 00:35:31,599
+Böylece,
+
+573
+00:35:31,599 --> 00:35:33,599
+Server tarafındaki işlem yükünü,
+
+574
+00:35:33,599 --> 00:35:35,599
+dengelemiş oluyorsunuz.
+
+575
+00:35:35,599 --> 00:35:37,980
+Sin Cookie,
+
+576
+00:35:37,980 --> 00:35:38,980
+günümüzde,
+
+577
+00:35:38,980 --> 00:35:41,980
+aktif ve efektif olarak kullanılan bir yöntem.
+
+578
+00:35:41,980 --> 00:35:42,980
+Özellikle de,
+
+579
+00:35:42,980 --> 00:35:44,980
+az önce tarif ettiğim şekilde.
+
+580
+00:35:44,980 --> 00:35:50,750
+Bir başka saldırı çeşidi,
+
+581
+00:35:50,750 --> 00:35:52,750
+Amplification Attack.
+
+582
+00:35:52,750 --> 00:35:54,750
+Şimdi, bu en tehlikeli,
+
+583
+00:35:54,750 --> 00:35:55,750
+saldırı.
+
+584
+00:35:55,750 --> 00:35:56,750
+Çünkü,
+
+585
+00:35:56,750 --> 00:35:57,750
+Amplification ne demek?
+
+586
+00:35:57,750 --> 00:35:58,750
+Kuvvetlendirme,
+
+587
+00:35:58,750 --> 00:36:00,750
+arttırma.
+
+588
+00:36:00,750 --> 00:36:02,750
+Bakın, saldırgan var.
+
+589
+00:36:02,750 --> 00:36:07,019
+Bir botnet kullanıyor.
+
+590
+00:36:07,019 --> 00:36:08,019
+Burada bir tane bot,
+
+591
+00:36:08,019 --> 00:36:09,019
+gösterilmiş.
+
+592
+00:36:09,019 --> 00:36:10,019
+Ama bundan,
+
+593
+00:36:10,019 --> 00:36:12,019
+binlerce, on binlerce olduğunu varsayın.
+
+594
+00:36:12,019 --> 00:36:14,019
+Ve,
+
+595
+00:36:14,019 --> 00:36:16,019
+o bot üzerinden,
+
+596
+00:36:16,019 --> 00:36:18,019
+şu örnekte,
+
+597
+00:36:18,019 --> 00:36:20,019
+Open DNS Resolver,
+
+598
+00:36:20,019 --> 00:36:21,019
+dediğimiz,
+
+599
+00:36:21,019 --> 00:36:23,019
+DNS sunucularına,
+
+600
+00:36:23,019 --> 00:36:25,019
+istek gönderiyor.
+
+601
+00:36:25,019 --> 00:36:26,019
+Diyor ki,
+
+602
+00:36:26,019 --> 00:36:28,019
+Example.com'la alakalı,
+
+603
+00:36:28,019 --> 00:36:30,019
+her türlü bilgiyi,
+
+604
+00:36:30,019 --> 00:36:32,019
+sorgulamak istiyorum.
+
+605
+00:36:32,019 --> 00:36:34,019
+Ne var, ne yoksa.
+
+606
+00:36:34,019 --> 00:36:36,019
+Yani,
+
+607
+00:36:36,019 --> 00:36:38,019
+Example.com'un bütün DNS kayıtlarını,
+
+608
+00:36:38,019 --> 00:36:39,019
+göster bana.
+
+609
+00:36:39,019 --> 00:36:41,019
+Ama,
+
+610
+00:36:41,019 --> 00:36:42,019
+Source adresi olarak,
+
+611
+00:36:42,019 --> 00:36:43,019
+neyin adresi veriliyor,
+
+612
+00:36:43,019 --> 00:36:45,019
+bu isteklerde?
+
+613
+00:36:45,019 --> 00:36:46,019
+Target victim.
+
+614
+00:36:46,019 --> 00:36:47,019
+Yani, kurban,
+
+615
+00:36:47,019 --> 00:36:49,019
+bilgisayarın adresi veriliyor.
+
+616
+00:36:49,019 --> 00:36:50,019
+O zaman,
+
+617
+00:36:50,019 --> 00:36:51,019
+bakın şöyle düşünün.
+
+618
+00:36:51,019 --> 00:36:52,019
+Çok basit,
+
+619
+00:36:52,019 --> 00:36:53,019
+üç tane,
+
+620
+00:36:53,019 --> 00:36:55,019
+sorgu karşılığında,
+
+621
+00:36:55,019 --> 00:36:57,019
+inanılmaz,
+
+622
+00:36:57,019 --> 00:36:58,019
+dolu dolu,
+
+623
+00:36:58,019 --> 00:37:00,019
+üç tane cevap gidiyor.
+
+624
+00:37:00,019 --> 00:37:01,019
+Tabi bu,
+
+625
+00:37:01,019 --> 00:37:02,019
+üç değil,
+
+626
+00:37:02,019 --> 00:37:03,019
+otuz, üç yüz,
+
+627
+00:37:03,019 --> 00:37:04,019
+bin, neyse.
+
+628
+00:37:04,019 --> 00:37:06,019
+O zaman,
+
+629
+00:37:06,019 --> 00:37:08,019
+Target victim dediğimiz,
+
+630
+00:37:08,019 --> 00:37:10,019
+host'un,
+
+631
+00:37:10,019 --> 00:37:12,019
+network bandwidth'i,
+
+632
+00:37:12,019 --> 00:37:15,530
+sıfıra kadar iniyor.
+
+633
+00:37:15,530 --> 00:37:17,530
+Çünkü,
+
+634
+00:37:17,530 --> 00:37:19,530
+gelen paketlerin boyutu,
+
+635
+00:37:19,530 --> 00:37:20,530
+ciddi büyük ve,
+
+636
+00:37:20,530 --> 00:37:21,530
+hiç durmadan,
+
+637
+00:37:21,530 --> 00:37:23,530
+çok farklı kaynaklardan geliyor.
+
+638
+00:37:25,530 --> 00:37:26,530
+Size gelen bir paketi,
+
+639
+00:37:26,530 --> 00:37:27,530
+durdurma şansınız yok.
+
+640
+00:37:27,530 --> 00:37:28,530
+Ancak,
+
+641
+00:37:28,530 --> 00:37:29,530
+size geldikten sonra,
+
+642
+00:37:29,530 --> 00:37:30,530
+çöpe atma şansınız var.
+
+643
+00:37:30,530 --> 00:37:32,530
+Yani, işlememe şansınız var.
+
+644
+00:37:32,530 --> 00:37:34,530
+Bu tarz saldırılarda,
+
+645
+00:37:34,530 --> 00:37:37,530
+sorulan soruyla,
+
+646
+00:37:37,530 --> 00:37:38,530
+soruya verilen,
+
+647
+00:37:38,530 --> 00:37:40,530
+cevap boyutu arasında,
+
+648
+00:37:40,530 --> 00:37:42,530
+60-70 kat fark olabiliyor.
+
+649
+00:37:42,530 --> 00:37:45,530
+Hatta daha fazla olanları da var.
+
+650
+00:37:45,530 --> 00:37:46,530
+Şimdi,
+
+651
+00:37:46,530 --> 00:37:47,530
+Open DNS Resolver ne?
+
+652
+00:37:47,530 --> 00:37:49,530
+Onu da gözden geçirelim.
+
+653
+00:37:49,530 --> 00:37:52,530
+Open DNS Resolver,
+
+654
+00:37:52,530 --> 00:37:54,530
+kontrol etmeden,
+
+655
+00:37:54,530 --> 00:37:55,530
+kendisine gelen,
+
+656
+00:37:55,530 --> 00:37:57,530
+her türlü isteği cevaplayan,
+
+657
+00:37:57,530 --> 00:37:58,530
+bir,
+
+658
+00:37:58,530 --> 00:37:59,530
+DNS Resolver,
+
+659
+00:37:59,530 --> 00:38:01,530
+DNS Server.
+
+660
+00:38:01,530 --> 00:38:02,530
+Normalde,
+
+661
+00:38:02,530 --> 00:38:03,530
+DNS Server'lar,
+
+662
+00:38:03,530 --> 00:38:06,530
+hizmet verdikleri,
+
+663
+00:38:06,530 --> 00:38:09,530
+Domain için,
+
+664
+00:38:09,530 --> 00:38:11,530
+o Domain'e bağlı,
+
+665
+00:38:11,530 --> 00:38:12,530
+istemciler,
+
+666
+00:38:12,530 --> 00:38:13,530
+Client'lar için,
+
+667
+00:38:13,530 --> 00:38:15,530
+hizmet vermek zorundadırlar.
+
+668
+00:38:15,530 --> 00:38:18,829
+DNS,
+
+669
+00:38:18,829 --> 00:38:21,829
+hizmet sağlaması diye bir şey yok aslında.
+
+670
+00:38:21,829 --> 00:38:22,829
+DNS servisinizi,
+
+671
+00:38:22,829 --> 00:38:26,110
+kendiniz kurarsınız.
+
+672
+00:38:26,110 --> 00:38:27,110
+Ama örneğin,
+
+673
+00:38:27,110 --> 00:38:29,110
+çok uzağa gitmemize gerek yok,
+
+674
+00:38:29,110 --> 00:38:30,110
+Google'ın,
+
+675
+00:38:30,110 --> 00:38:32,110
+4444 veya,
+
+676
+00:38:32,110 --> 00:38:35,110
+8888 adresindeki,
+
+677
+00:38:35,110 --> 00:38:38,110
+DNS Server'ları var ya,
+
+678
+00:38:38,110 --> 00:38:39,110
+bunlar da aslında,
+
+679
+00:38:39,110 --> 00:38:40,110
+baktığınızda,
+
+680
+00:38:40,110 --> 00:38:41,110
+teknik olarak,
+
+681
+00:38:41,110 --> 00:38:43,110
+Open DNS Resolver.
+
+682
+00:38:43,110 --> 00:38:44,110
+Çünkü Google'ın,
+
+683
+00:38:44,110 --> 00:38:45,110
+DNS Server'ları,
+
+684
+00:38:45,110 --> 00:38:46,110
+sadece,
+
+685
+00:38:46,110 --> 00:38:47,110
+Google çalışanlarına,
+
+686
+00:38:47,110 --> 00:38:48,110
+Google Domain'indeki,
+
+687
+00:38:48,110 --> 00:38:51,110
+Host'lara hizmet vermeli.
+
+688
+00:38:51,110 --> 00:38:53,110
+Ama Google,
+
+689
+00:38:53,110 --> 00:38:55,110
+yani şu şeye rağmen,
+
+690
+00:38:55,110 --> 00:38:56,110
+bu Server'ların,
+
+691
+00:38:56,110 --> 00:38:57,110
+burada gördüğünüz,
+
+692
+00:38:57,110 --> 00:38:58,110
+senaryoya rağmen,
+
+693
+00:38:58,110 --> 00:39:00,110
+bu Server'ların,
+
+694
+00:39:00,110 --> 00:39:01,110
+herkese hizmet vermesine,
+
+695
+00:39:01,110 --> 00:39:02,110
+izin veriyor.
+
+696
+00:39:02,110 --> 00:39:03,110
+Ne diyor?
+
+697
+00:39:03,110 --> 00:39:04,110
+Ben,
+
+698
+00:39:04,110 --> 00:39:05,110
+dışarıdan gelen,
+
+699
+00:39:05,110 --> 00:39:07,110
+Query tiplerini kısıtlıyorum.
+
+700
+00:39:07,110 --> 00:39:08,110
+Amplification,
+
+701
+00:39:08,110 --> 00:39:09,110
+etek olmayacak şekilde,
+
+702
+00:39:09,110 --> 00:39:10,110
+kısıtlıyorum.
+
+703
+00:39:10,110 --> 00:39:11,110
+Ama,
+
+704
+00:39:11,110 --> 00:39:12,110
+bazı sorguların,
+
+705
+00:39:12,110 --> 00:39:13,110
+cevapları,
+
+706
+00:39:13,110 --> 00:39:14,110
+buradaki gibi,
+
+707
+00:39:14,110 --> 00:39:15,110
+any,
+
+708
+00:39:15,110 --> 00:39:16,110
+her şey,
+
+709
+00:39:16,110 --> 00:39:17,110
+sorgular,
+
+710
+00:39:17,110 --> 00:39:18,110
+olmasa bile,
+
+711
+00:39:18,110 --> 00:39:19,110
+bazı sorguların,
+
+712
+00:39:19,110 --> 00:39:20,110
+cevapları,
+
+713
+00:39:20,110 --> 00:39:21,110
+yine çok uzun olabiliyor.
+
+714
+00:39:21,110 --> 00:39:22,110
+Yani,
+
+715
+00:39:22,110 --> 00:39:23,110
+her şeyi,
+
+716
+00:39:23,110 --> 00:39:24,110
+kuralına göre,
+
+717
+00:39:24,110 --> 00:39:25,110
+yaptığınızı,
+
+718
+00:39:25,110 --> 00:39:26,110
+söylediğinizde bile,
+
+719
+00:39:26,110 --> 00:39:27,110
+DNS Server'dan,
+
+720
+00:39:27,110 --> 00:39:28,110
+çıkan cevap,
+
+721
+00:39:28,110 --> 00:39:29,110
+gelen,
+
+722
+00:39:29,110 --> 00:39:30,110
+soruya göre,
+
+723
+00:39:30,110 --> 00:39:31,110
+uzunluk açısından,
+
+724
+00:39:31,110 --> 00:39:32,110
+kat,
+
+725
+00:39:32,110 --> 00:39:33,110
+ve kat,
+
+726
+00:39:33,110 --> 00:39:34,110
+büyük olabiliyor.
+
+727
+00:39:34,110 --> 00:39:35,110
+Şimdi,
+
+728
+00:39:35,110 --> 00:39:36,110
+UDP'de,
+
+729
+00:39:36,110 --> 00:39:37,110
+birçok,
+
+730
+00:39:37,110 --> 00:39:41,980
+şimdi,
+
+731
+00:39:41,980 --> 00:39:42,980
+UDP'de,
+
+732
+00:39:42,980 --> 00:39:43,980
+bu,
+
+733
+00:39:43,980 --> 00:39:44,980
+amplification'ı,
+
+734
+00:39:44,980 --> 00:39:45,980
+kullanmak,
+
+735
+00:39:45,980 --> 00:39:46,980
+daha kolay.
+
+736
+00:39:46,980 --> 00:39:47,980
+Niçin?
+
+737
+00:39:47,980 --> 00:39:48,980
+TCP gibi,
+
+738
+00:39:48,980 --> 00:39:49,980
+connection,
+
+739
+00:39:49,980 --> 00:39:50,980
+kurdum,
+
+740
+00:39:50,980 --> 00:39:51,980
+koparttım,
+
+741
+00:39:51,980 --> 00:39:52,980
+falan,
+
+742
+00:39:52,980 --> 00:39:53,980
+yani,
+
+743
+00:39:53,980 --> 00:39:54,980
+o,
+
+744
+00:39:54,980 --> 00:39:55,980
+3-way handshake,
+
+745
+00:39:55,980 --> 00:39:56,980
+yok.
+
+746
+00:39:56,980 --> 00:39:57,980
+UDP paketi,
+
+747
+00:39:57,980 --> 00:39:58,980
+geldi,
+
+748
+00:39:58,980 --> 00:39:59,980
+olduğu gibi,
+
+749
+00:39:59,980 --> 00:40:00,980
+değerlendirildi.
+
+750
+00:40:00,980 --> 00:40:01,980
+İki tane,
+
+751
+00:40:01,980 --> 00:40:02,980
+temel protokol var,
+
+752
+00:40:02,980 --> 00:40:03,980
+UDP üzerine,
+
+753
+00:40:03,980 --> 00:40:04,980
+application var,
+
+754
+00:40:04,980 --> 00:40:05,980
+application protokol var,
+
+755
+00:40:05,980 --> 00:40:06,980
+UDP üzerine,
+
+756
+00:40:06,980 --> 00:40:07,980
+kurulu.
+
+757
+00:40:07,980 --> 00:40:08,980
+DNS ve,
+
+758
+00:40:08,980 --> 00:40:09,980
+NTP,
+
+759
+00:40:09,980 --> 00:40:10,980
+şimdi,
+
+760
+00:40:10,980 --> 00:40:11,980
+DNS'teki,
+
+761
+00:40:11,980 --> 00:40:12,980
+any,
+
+762
+00:40:12,980 --> 00:40:13,980
+QR'si,
+
+763
+00:40:13,980 --> 00:40:14,980
+bir,
+
+764
+00:40:14,980 --> 00:40:15,980
+domenle alakalı,
+
+765
+00:40:15,980 --> 00:40:16,980
+her türlü kayıdı,
+
+766
+00:40:16,980 --> 00:40:17,980
+geri döndürüyor.
+
+767
+00:40:17,980 --> 00:40:18,980
+Az önceki,
+
+768
+00:40:18,980 --> 00:40:19,980
+slide'da gördüğümüz örnek,
+
+769
+00:40:19,980 --> 00:40:20,980
+çok tehlikeli.
+
+770
+00:40:20,980 --> 00:40:21,980
+NTP de,
+
+771
+00:40:21,980 --> 00:40:22,980
+internette,
+
+772
+00:40:22,980 --> 00:40:23,980
+zaman,
+
+773
+00:40:23,980 --> 00:40:24,980
+senkronizasyonu,
+
+774
+00:40:24,980 --> 00:40:25,980
+yapmamızı,
+
+775
+00:40:25,980 --> 00:40:26,980
+sağlıyor.
+
+776
+00:40:26,980 --> 00:40:27,980
+NTP protokolünde de,
+
+777
+00:40:27,980 --> 00:40:28,980
+tamamen,
+
+778
+00:40:28,980 --> 00:40:29,980
+kontrol amaçlı,
+
+779
+00:40:29,980 --> 00:40:30,980
+servisin,
+
+780
+00:40:30,980 --> 00:40:31,980
+nasıl çalıştığını,
+
+781
+00:40:31,980 --> 00:40:32,980
+performansını,
+
+782
+00:40:32,980 --> 00:40:33,980
+takip edebilme,
+
+783
+00:40:33,980 --> 00:40:34,980
+amaçlı,
+
+784
+00:40:34,980 --> 00:40:35,980
+monlist,
+
+785
+00:40:35,980 --> 00:40:36,980
+diye bir,
+
+786
+00:40:36,980 --> 00:40:37,980
+kod var.
+
+787
+00:40:37,980 --> 00:40:38,980
+Yani,
+
+788
+00:40:38,980 --> 00:40:39,980
+monlist diye bir,
+
+789
+00:40:39,980 --> 00:40:40,980
+kod var.
+
+790
+00:40:40,980 --> 00:40:41,980
+O ana kadar,
+
+791
+00:40:41,980 --> 00:40:42,980
+gelen isteklerin,
+
+792
+00:40:42,980 --> 00:40:43,980
+listesini,
+
+793
+00:40:43,980 --> 00:40:44,980
+gönder.
+
+794
+00:40:44,980 --> 00:40:45,980
+Son 600,
+
+795
+00:40:45,980 --> 00:40:46,980
+isteği,
+
+796
+00:40:46,980 --> 00:40:47,980
+geri döndürüyor.
+
+797
+00:40:47,980 --> 00:40:48,980
+Öyle tasarlanmış.
+
+798
+00:40:48,980 --> 00:40:49,980
+Şimdi düşünsenize,
+
+799
+00:40:49,980 --> 00:40:50,980
+ben,
+
+800
+00:40:50,980 --> 00:40:51,980
+monlist diye,
+
+801
+00:40:51,980 --> 00:40:52,980
+çok basit bir,
+
+802
+00:40:52,980 --> 00:40:53,980
+kod gönderiyorum,
+
+803
+00:40:53,980 --> 00:40:54,980
+NTP sunucusuna,
+
+804
+00:40:54,980 --> 00:40:55,980
+onun karşılığında,
+
+805
+00:40:55,980 --> 00:40:56,980
+bana,
+
+806
+00:40:56,980 --> 00:40:57,980
+600 tane,
+
+807
+00:40:57,980 --> 00:40:59,980
+istek yapmış olanla,
+
+808
+00:40:59,980 --> 00:41:00,980
+alakalı,
+
+809
+00:41:00,980 --> 00:41:01,980
+bilgiyi döküyor.
+
+810
+00:41:01,980 --> 00:41:02,980
+Hele bunları bir de,
+
+811
+00:41:02,980 --> 00:41:03,980
+isim karşılığı olarak,
+
+812
+00:41:03,980 --> 00:41:04,980
+dökerse,
+
+813
+00:41:04,980 --> 00:41:05,980
+biri 10 byte,
+
+814
+00:41:05,980 --> 00:41:06,980
+biri 30 byte,
+
+815
+00:41:06,980 --> 00:41:07,980
+biri 40 byte,
+
+816
+00:41:07,980 --> 00:41:08,980
+neyse,
+
+817
+00:41:08,980 --> 00:41:09,980
+çılgın büyüklükte,
+
+818
+00:41:09,980 --> 00:41:10,980
+bir liste geliyor,
+
+819
+00:41:10,980 --> 00:41:11,980
+ve bu,
+
+820
+00:41:11,980 --> 00:41:12,980
+hiç durmadan,
+
+821
+00:41:12,980 --> 00:41:13,980
+tekrar ediyor.
+
+822
+00:41:13,980 --> 00:41:17,829
+Bakın,
+
+823
+00:41:17,829 --> 00:41:18,829
+2013'te,
+
+824
+00:41:18,829 --> 00:41:20,829
+bundan 7 sene önce,
+
+825
+00:41:20,829 --> 00:41:23,829
+DNS kullanılarak,
+
+826
+00:41:23,829 --> 00:41:25,829
+300 gigabit per second,
+
+827
+00:41:25,829 --> 00:41:26,829
+hızında,
+
+828
+00:41:26,829 --> 00:41:27,829
+bir,
+
+829
+00:41:27,829 --> 00:41:28,829
+distributed,
+
+830
+00:41:28,829 --> 00:41:29,829
+dos,
+
+831
+00:41:29,829 --> 00:41:31,829
+gerçekleştirildi.
+
+832
+00:41:31,829 --> 00:41:33,829
+31 bin tane,
+
+833
+00:41:33,829 --> 00:41:35,829
+yanlış konfigür edilmiş,
+
+834
+00:41:35,829 --> 00:41:36,829
+open resolver,
+
+835
+00:41:36,829 --> 00:41:37,829
+işin içindeydi.
+
+836
+00:41:37,829 --> 00:41:38,829
+Ve bunlar,
+
+837
+00:41:38,829 --> 00:41:39,829
+3 farklı,
+
+838
+00:41:39,829 --> 00:41:40,829
+servis sağlayıcı,
+
+839
+00:41:40,829 --> 00:41:41,829
+network'üne,
+
+840
+00:41:41,829 --> 00:41:42,829
+dağılmışlardı.
+
+841
+00:41:42,829 --> 00:41:43,829
+Ve bu,
+
+842
+00:41:43,829 --> 00:41:44,829
+servis sağlayıcılarda,
+
+843
+00:41:44,829 --> 00:41:45,829
+IP spoofing'e,
+
+844
+00:41:45,829 --> 00:41:46,829
+izin veriyorlardı.
+
+845
+00:41:46,829 --> 00:41:47,829
+Onu da,
+
+846
+00:41:47,829 --> 00:41:48,829
+konfigür etmemişlerdi.
+
+847
+00:41:48,829 --> 00:41:49,829
+Her birinin,
+
+848
+00:41:49,829 --> 00:41:50,829
+sunucunun,
+
+849
+00:41:50,829 --> 00:41:51,829
+bağlantısı,
+
+850
+00:41:51,829 --> 00:41:52,829
+10 megabit,
+
+851
+00:41:52,829 --> 00:41:53,829
+civarında,
+
+852
+00:41:53,829 --> 00:41:54,829
+olduğu için,
+
+853
+00:41:54,829 --> 00:41:55,829
+toplam,
+
+854
+00:41:55,829 --> 00:41:56,829
+300 gigabitlik,
+
+855
+00:41:56,829 --> 00:41:57,829
+bir şey oldu.
+
+856
+00:41:57,829 --> 00:41:58,829
+Yani,
+
+857
+00:41:58,829 --> 00:41:59,829
+2013 için,
+
+858
+00:41:59,829 --> 00:42:00,829
+local area'da,
+
+859
+00:42:00,829 --> 00:42:01,829
+10 megabit,
+
+860
+00:42:01,829 --> 00:42:02,829
+hala daha,
+
+861
+00:42:02,829 --> 00:42:03,829
+var olan bir şeydi.
+
+862
+00:42:03,829 --> 00:42:04,829
+Ama 2014,
+
+863
+00:42:04,829 --> 00:42:05,829
+bakın,
+
+864
+00:42:05,829 --> 00:42:06,829
+sadece,
+
+865
+00:42:06,829 --> 00:42:07,829
+4500 NTP server,
+
+866
+00:42:07,829 --> 00:42:08,829
+kullanılarak,
+
+867
+00:42:08,829 --> 00:42:09,829
+amplification faktör,
+
+868
+00:42:09,829 --> 00:42:10,829
+daha yüksek,
+
+869
+00:42:10,829 --> 00:42:11,829
+400 gigabit,
+
+870
+00:42:11,829 --> 00:42:12,829
+per second'lık,
+
+871
+00:42:12,829 --> 00:42:13,829
+bir DDoS saldırısı,
+
+872
+00:42:13,829 --> 00:42:14,829
+gerçekleşti.
+
+873
+00:42:16,829 --> 00:42:17,829
+Yani,
+
+874
+00:42:17,829 --> 00:42:18,829
+1 sene,
+
+875
+00:42:18,829 --> 00:42:19,829
+üzerinden,
+
+876
+00:42:21,829 --> 00:42:22,829
+geçmiyor.
+
+877
+00:42:23,829 --> 00:42:24,829
+%30,
+
+878
+00:42:24,829 --> 00:42:25,829
+daha yüksek,
+
+879
+00:42:25,829 --> 00:42:26,829
+bir,
+
+880
+00:42:26,829 --> 00:42:28,829
+saldırı kapasitesini,
+
+881
+00:42:28,829 --> 00:42:29,829
+neredeyse,
+
+882
+00:42:31,829 --> 00:42:32,829
+7'de 1'iyle,
+
+883
+00:42:32,829 --> 00:42:33,829
+sağlıyoruz.
+
+884
+00:42:35,829 --> 00:42:37,829
+Yanlış konfigürasyon,
+
+885
+00:42:37,829 --> 00:42:40,369
+çok ciddi,
+
+886
+00:42:40,369 --> 00:42:41,369
+sıkıntıya,
+
+887
+00:42:41,369 --> 00:42:42,369
+sebep olabiliyor.
+
+888
+00:42:42,369 --> 00:42:44,679
+Memcache.
+
+889
+00:42:44,679 --> 00:42:45,679
+Memcache,
+
+890
+00:42:45,679 --> 00:42:46,679
+orjinalde,
+
+891
+00:42:46,679 --> 00:42:47,679
+statik web sayfalarının,
+
+892
+00:42:47,679 --> 00:42:48,679
+cache'lenmesi,
+
+893
+00:42:48,679 --> 00:42:49,679
+böylece,
+
+894
+00:42:49,679 --> 00:42:50,679
+her seferinde,
+
+895
+00:42:50,679 --> 00:42:51,679
+sunucuya,
+
+896
+00:42:51,679 --> 00:42:52,679
+web sunucuya,
+
+897
+00:42:52,679 --> 00:42:53,679
+işte,
+
+898
+00:42:53,679 --> 00:42:54,679
+file sistemden,
+
+899
+00:42:54,679 --> 00:42:55,679
+file'ı aç,
+
+900
+00:42:55,679 --> 00:42:56,679
+oku,
+
+901
+00:42:56,679 --> 00:42:57,679
+gönder,
+
+902
+00:42:57,679 --> 00:42:58,679
+gibi bir yükün,
+
+903
+00:42:58,679 --> 00:42:59,679
+getirilmemesi için,
+
+904
+00:42:59,679 --> 00:43:00,679
+tasarlanmış bir şey.
+
+905
+00:43:00,679 --> 00:43:01,679
+Basın sektöründe,
+
+906
+00:43:01,679 --> 00:43:02,679
+duyulan bir ihtiyaç.
+
+907
+00:43:02,679 --> 00:43:03,679
+Çünkü,
+
+908
+00:43:03,679 --> 00:43:04,679
+neden?
+
+909
+00:43:04,679 --> 00:43:05,679
+İşte,
+
+910
+00:43:05,679 --> 00:43:06,679
+sayfalarda,
+
+911
+00:43:06,679 --> 00:43:07,679
+yükü,
+
+912
+00:43:07,679 --> 00:43:08,679
+yükü,
+
+913
+00:43:08,679 --> 00:43:09,679
+yükü,
+
+914
+00:43:09,679 --> 00:43:10,679
+yükü,
+
+915
+00:43:10,679 --> 00:43:11,679
+sayfalarda,
+
+916
+00:43:11,679 --> 00:43:12,679
+gazete sayfalarını,
+
+917
+00:43:12,679 --> 00:43:13,679
+magazin sayfalarını,
+
+918
+00:43:13,679 --> 00:43:14,679
+şeyleri düşünün,
+
+919
+00:43:14,679 --> 00:43:15,679
+bir sürü,
+
+920
+00:43:15,679 --> 00:43:16,679
+görüntü var,
+
+921
+00:43:16,679 --> 00:43:17,679
+resim,
+
+922
+00:43:17,679 --> 00:43:18,679
+neyse,
+
+923
+00:43:18,679 --> 00:43:19,679
+aktif içerik,
+
+924
+00:43:19,679 --> 00:43:20,679
+diğer şeyler,
+
+925
+00:43:20,679 --> 00:43:21,679
+aktif içerik ama,
+
+926
+00:43:21,679 --> 00:43:22,679
+yani animasyon,
+
+927
+00:43:22,679 --> 00:43:23,679
+aslında animasyonu,
+
+928
+00:43:23,679 --> 00:43:24,679
+olduğu gibi,
+
+929
+00:43:24,679 --> 00:43:25,679
+oradan verebilirsiniz.
+
+930
+00:43:25,679 --> 00:43:26,679
+File sistemden,
+
+931
+00:43:26,679 --> 00:43:27,679
+vermek zorunda,
+
+932
+00:43:27,679 --> 00:43:28,679
+değilsiniz.
+
+933
+00:43:28,679 --> 00:43:29,679
+Bunun için,
+
+934
+00:43:29,679 --> 00:43:30,679
+tasarlanmış bir şey.
+
+935
+00:43:30,679 --> 00:43:31,679
+Ama,
+
+936
+00:43:31,679 --> 00:43:32,679
+oradaki sıkıntı şu,
+
+937
+00:43:32,679 --> 00:43:33,679
+genelde,
+
+938
+00:43:33,679 --> 00:43:34,679
+hep,
+
+939
+00:43:34,679 --> 00:43:35,679
+bu,
+
+940
+00:43:35,679 --> 00:43:36,679
+sorun yaşanır.
+
+941
+00:43:36,679 --> 00:43:37,679
+İşte,
+
+942
+00:43:37,679 --> 00:43:38,679
+sayfaların daha,
+
+943
+00:43:38,679 --> 00:43:39,679
+albenili görünmesi,
+
+944
+00:43:39,679 --> 00:43:40,679
+daha renkli,
+
+945
+00:43:40,679 --> 00:43:41,679
+daha aktif,
+
+946
+00:43:41,679 --> 00:43:42,679
+daha şey,
+
+947
+00:43:42,679 --> 00:43:43,679
+olması için,
+
+948
+00:43:43,679 --> 00:43:44,679
+animasyonundan,
+
+949
+00:43:44,679 --> 00:43:45,679
+tutun,
+
+950
+00:43:45,679 --> 00:43:46,679
+videosuna kadar,
+
+951
+00:43:46,679 --> 00:43:47,679
+bir sürü,
+
+952
+00:43:47,679 --> 00:43:48,679
+aktif unsur olur.
+
+953
+00:43:48,679 --> 00:43:49,679
+Artı,
+
+954
+00:43:49,679 --> 00:43:50,679
+sayfalarda,
+
+955
+00:43:50,679 --> 00:43:51,679
+kontrolsüz bir şekilde,
+
+956
+00:43:51,679 --> 00:43:52,679
+çok büyük,
+
+957
+00:43:52,679 --> 00:43:53,679
+dökümanlar,
+
+958
+00:43:53,679 --> 00:43:54,679
+yayınlanabilir.
+
+959
+00:43:54,679 --> 00:43:55,679
+Diyelim ki,
+
+960
+00:43:55,679 --> 00:43:56,679
+5 megabayt,
+
+961
+00:43:56,679 --> 00:43:57,679
+10 megabayt,
+
+962
+00:43:57,679 --> 00:43:58,679
+100 megabayt.
+
+963
+00:43:58,679 --> 00:43:59,679
+Düşünün,
+
+964
+00:43:59,679 --> 00:44:00,679
+size hiç durmadan,
+
+965
+00:44:00,679 --> 00:44:01,679
+aynı dökümanı,
+
+966
+00:44:01,679 --> 00:44:02,679
+servis etme,
+
+967
+00:44:02,679 --> 00:44:03,679
+isteği geliyor,
+
+968
+00:44:03,679 --> 00:44:04,679
+farklı hostlardan,
+
+969
+00:44:04,679 --> 00:44:05,679
+ve siz de,
+
+970
+00:44:05,679 --> 00:44:06,679
+servis ediyorsunuz.
+
+971
+00:44:06,679 --> 00:44:07,679
+Memcached'den de,
+
+972
+00:44:07,679 --> 00:44:08,679
+bunu çok hızlı,
+
+973
+00:44:08,679 --> 00:44:09,679
+servis ediyorsunuz.
+
+974
+00:44:09,679 --> 00:44:10,679
+Yani,
+
+975
+00:44:10,679 --> 00:44:11,679
+saldırıda önce,
+
+976
+00:44:11,679 --> 00:44:12,679
+o dökümanın,
+
+977
+00:44:12,679 --> 00:44:13,679
+Memcached'e girmesi,
+
+978
+00:44:13,679 --> 00:44:14,679
+sağlanıyor.
+
+979
+00:44:14,679 --> 00:44:15,679
+Gönderilen,
+
+980
+00:44:15,679 --> 00:44:16,679
+ilk isteklerde.
+
+981
+00:44:16,679 --> 00:44:17,679
+Ondan sonrasında,
+
+982
+00:44:17,679 --> 00:44:18,679
+Memcached'den,
+
+983
+00:44:18,679 --> 00:44:19,679
+hizmet verildiği için,
+
+984
+00:44:19,679 --> 00:44:20,679
+hizmet verme hızı da,
+
+985
+00:44:20,679 --> 00:44:21,679
+artıyor.
+
+986
+00:44:21,679 --> 00:44:22,679
+Ve analiz,
+
+987
+00:44:22,679 --> 00:44:23,679
+neyi gösteriyor?
+
+988
+00:44:23,679 --> 00:44:24,679
+Memcached'den,
+
+989
+00:44:24,679 --> 00:44:25,679
+servis edilmesi için,
+
+990
+00:44:25,679 --> 00:44:26,679
+istenen,
+
+991
+00:44:26,679 --> 00:44:27,679
+dökümana,
+
+992
+00:44:27,679 --> 00:44:28,679
+istemek için,
+
+993
+00:44:28,679 --> 00:44:29,679
+yapılan,
+
+994
+00:44:29,679 --> 00:44:30,679
+istekle,
+
+995
+00:44:30,679 --> 00:44:31,679
+döküman,
+
+996
+00:44:31,679 --> 00:44:32,679
+veya geri gönderilen,
+
+997
+00:44:32,679 --> 00:44:33,679
+istek arasında,
+
+998
+00:44:33,679 --> 00:44:34,679
+boyut olarak,
+
+999
+00:44:34,679 --> 00:44:35,679
+50 bin kat kadar,
+
+1000
+00:44:35,679 --> 00:44:36,679
+fark olabiliyor.
+
+1001
+00:44:38,679 --> 00:44:39,679
+Ölümcül bir durum.
+
+1002
+00:44:40,679 --> 00:44:41,679
+Çok ciddi bir sıkıntı.
+
+1003
+00:44:41,679 --> 00:44:42,679
+Bakın,
+
+1004
+00:44:42,679 --> 00:44:43,679
+tamamen,
+
+1005
+00:44:43,679 --> 00:44:44,679
+Memcached,
+
+1006
+00:44:44,679 --> 00:44:45,679
+üzerine,
+
+1007
+00:44:45,679 --> 00:44:46,679
+kurulu,
+
+1008
+00:44:46,679 --> 00:44:47,679
+bir saldırı.
+
+1009
+00:44:47,679 --> 00:44:48,679
+2016 yılı,
+
+1010
+00:44:48,679 --> 00:44:49,679
+sonlarında,
+
+1011
+00:44:49,679 --> 00:44:50,679
+yaşanan,
+
+1012
+00:44:50,679 --> 00:44:51,679
+bir saldırı.
+
+1013
+00:44:51,679 --> 00:44:52,679
+Ne kadar,
+
+1014
+00:44:52,679 --> 00:44:53,679
+kırmızı ise,
+
+1015
+00:44:53,679 --> 00:44:54,679
+o kadar,
+
+1016
+00:44:54,679 --> 00:44:55,679
+yoğun bir,
+
+1017
+00:44:55,679 --> 00:44:56,679
+network trafiği,
+
+1018
+00:44:56,679 --> 00:44:57,679
+oluşmuş demek.
+
+1019
+00:44:57,679 --> 00:44:58,679
+Twitter,
+
+1020
+00:44:58,679 --> 00:44:59,679
+Spotify,
+
+1021
+00:44:59,679 --> 00:45:00,679
+Amazon,
+
+1022
+00:45:00,679 --> 00:45:01,679
+GitHub,
+
+1023
+00:45:01,679 --> 00:45:02,679
+PayPal,
+
+1024
+00:45:02,679 --> 00:45:03,679
+Reddit,
+
+1025
+00:45:03,679 --> 00:45:04,679
+Netflix,
+
+1026
+00:45:04,679 --> 00:45:05,679
+Sound Club,
+
+1027
+00:45:05,679 --> 00:45:06,679
+New York Times,
+
+1028
+00:45:06,679 --> 00:45:09,119
+hepsi bundan,
+
+1029
+00:45:09,119 --> 00:45:10,119
+etkilenmiştir.
+
+1030
+00:45:10,119 --> 00:45:11,119
+Memcached'den,
+
+1031
+00:45:11,119 --> 00:45:12,119
+çok,
+
+1032
+00:45:12,119 --> 00:45:14,119
+ciddi boyutta,
+
+1033
+00:45:14,119 --> 00:45:15,119
+dökümanların,
+
+1034
+00:45:15,119 --> 00:45:16,119
+servis edilmesi,
+
+1035
+00:45:16,119 --> 00:45:17,119
+sürekli gelen,
+
+1036
+00:45:17,119 --> 00:45:18,119
+isteklerle.
+
+1037
+00:45:18,119 --> 00:45:24,889
+İşte burada,
+
+1038
+00:45:24,889 --> 00:45:29,929
+sol tarafta,
+
+1039
+00:45:29,929 --> 00:45:31,929
+kötü niyetli istekler,
+
+1040
+00:45:31,929 --> 00:45:33,929
+malicious download requests,
+
+1041
+00:45:33,929 --> 00:45:34,929
+kırmızı ile gösterilmiş,
+
+1042
+00:45:34,929 --> 00:45:35,929
+karşılığında da,
+
+1043
+00:45:35,929 --> 00:45:36,929
+döküman.
+
+1044
+00:45:36,929 --> 00:45:37,929
+Sağ tarafta ise,
+
+1045
+00:45:37,929 --> 00:45:38,929
+beklemekte olan,
+
+1046
+00:45:38,929 --> 00:45:40,929
+normal erişim için,
+
+1047
+00:45:40,929 --> 00:45:41,929
+beklemekte olan,
+
+1048
+00:45:41,929 --> 00:45:42,929
+kullanıcılar.
+
+1049
+00:45:44,929 --> 00:45:45,929
+Bu saldırının,
+
+1050
+00:45:45,929 --> 00:45:46,929
+o dönemde,
+
+1051
+00:45:46,929 --> 00:45:47,929
+tam analizi,
+
+1052
+00:45:49,929 --> 00:45:50,929
+yani,
+
+1053
+00:45:50,929 --> 00:45:51,929
+yapıldı analizi ama,
+
+1054
+00:45:51,929 --> 00:45:52,929
+sonuçta tam olarak,
+
+1055
+00:45:52,929 --> 00:45:54,929
+netleşmemiş olmasına rağmen,
+
+1056
+00:45:54,929 --> 00:45:59,929
+1.2 terabit per second,
+
+1057
+00:45:59,929 --> 00:46:00,929
+şeyinde,
+
+1058
+00:46:00,929 --> 00:46:02,929
+mertebesinde bir,
+
+1059
+00:46:02,929 --> 00:46:04,929
+trafik oluşturduğu,
+
+1060
+00:46:04,929 --> 00:46:06,929
+düşünülüyor.
+
+1061
+00:46:06,929 --> 00:46:07,929
+Ciddi bir trafik.
+
+1062
+00:46:07,929 --> 00:46:08,929
+Yani bakın,
+
+1063
+00:46:08,929 --> 00:46:09,929
+çok hızlı bir şekilde,
+
+1064
+00:46:09,929 --> 00:46:10,929
+300'den,
+
+1065
+00:46:10,929 --> 00:46:12,929
+400 gigabite geldik,
+
+1066
+00:46:12,929 --> 00:46:13,929
+oradan da,
+
+1067
+00:46:13,929 --> 00:46:14,929
+terabite,
+
+1068
+00:46:14,929 --> 00:46:16,929
+1.2 terabite çıktık.
+
+1069
+00:46:16,929 --> 00:46:17,929
+Ciddi bir rakam,
+
+1070
+00:46:17,929 --> 00:46:18,929
+2016.
+
+1071
+00:46:19,929 --> 00:46:20,929
+Şimdi,
+
+1072
+00:46:20,929 --> 00:46:24,429
+bir başka,
+
+1073
+00:46:24,429 --> 00:46:26,429
+dost saldırısı,
+
+1074
+00:46:26,429 --> 00:46:28,429
+burada dikkat edin,
+
+1075
+00:46:28,429 --> 00:46:29,429
+amplification yok,
+
+1076
+00:46:29,429 --> 00:46:30,429
+flooding var.
+
+1077
+00:46:30,429 --> 00:46:31,429
+Yani,
+
+1078
+00:46:31,429 --> 00:46:33,429
+sel felaketi,
+
+1079
+00:46:33,429 --> 00:46:34,429
+network'ü,
+
+1080
+00:46:34,429 --> 00:46:38,989
+paketlerle doldurmak.
+
+1081
+00:46:38,989 --> 00:46:39,989
+Ve,
+
+1082
+00:46:39,989 --> 00:46:40,989
+esas önemli olan şey,
+
+1083
+00:46:40,989 --> 00:46:42,989
+IOT cihazlarının,
+
+1084
+00:46:42,989 --> 00:46:43,989
+kullanılması.
+
+1085
+00:46:43,989 --> 00:46:44,989
+Net internet,
+
+1086
+00:46:44,989 --> 00:46:46,989
+bağlantısı olan,
+
+1087
+00:46:46,989 --> 00:46:47,989
+router'lar,
+
+1088
+00:46:47,989 --> 00:46:48,989
+switch'ler,
+
+1089
+00:46:48,989 --> 00:46:49,989
+printer'lar,
+
+1090
+00:46:49,989 --> 00:46:50,989
+telefonlar,
+
+1091
+00:46:50,989 --> 00:46:51,989
+kameralar,
+
+1092
+00:46:51,989 --> 00:46:52,989
+aklınıza gelebilecek,
+
+1093
+00:46:52,989 --> 00:46:53,989
+her türlü şey,
+
+1094
+00:46:53,989 --> 00:46:54,989
+setup box'lar,
+
+1095
+00:46:54,989 --> 00:46:55,989
+hepsi,
+
+1096
+00:46:55,989 --> 00:46:56,989
+bunlar kullanılıyor.
+
+1097
+00:46:56,989 --> 00:46:57,989
+Ve,
+
+1098
+00:46:57,989 --> 00:46:58,989
+bunlar,
+
+1099
+00:46:58,989 --> 00:46:59,989
+çok yüksek,
+
+1100
+00:46:59,989 --> 00:47:00,989
+kapasite,
+
+1101
+00:47:00,989 --> 00:47:01,989
+trafik üretmek için,
+
+1102
+00:47:01,989 --> 00:47:02,989
+kullanılıyor.
+
+1103
+00:47:02,989 --> 00:47:03,989
+Flooding için,
+
+1104
+00:47:03,989 --> 00:47:04,989
+kullanılıyor.
+
+1105
+00:47:04,989 --> 00:47:09,000
+SIN paketi,
+
+1106
+00:47:09,000 --> 00:47:10,000
+gönderiyorlar,
+
+1107
+00:47:10,000 --> 00:47:11,000
+EGG gönderiyorlar,
+
+1108
+00:47:11,000 --> 00:47:12,000
+UDP,
+
+1109
+00:47:12,000 --> 00:47:13,000
+GRE paketi,
+
+1110
+00:47:13,000 --> 00:47:14,000
+Generalized Routing Encapsulation,
+
+1111
+00:47:14,000 --> 00:47:15,000
+demek.
+
+1112
+00:47:15,000 --> 00:47:16,000
+Routing'le alakalı,
+
+1113
+00:47:16,000 --> 00:47:17,000
+bir protokol,
+
+1114
+00:47:17,000 --> 00:47:18,000
+Cisco protokolü.
+
+1115
+00:47:18,000 --> 00:47:19,000
+Yani,
+
+1116
+00:47:19,000 --> 00:47:20,000
+bu,
+
+1117
+00:47:20,000 --> 00:47:22,280
+bu,
+
+1118
+00:47:22,280 --> 00:47:23,280
+bu,
+
+1119
+00:47:23,280 --> 00:47:24,280
+bu,
+
+1120
+00:47:24,280 --> 00:47:25,280
+bu,
+
+1121
+00:47:25,280 --> 00:47:26,280
+bu,
+
+1122
+00:47:26,280 --> 00:47:27,280
+bu protokol,
+
+1123
+00:47:27,280 --> 00:47:28,280
+Cisco protokolü.
+
+1124
+00:47:28,280 --> 00:47:29,280
+Onu da,
+
+1125
+00:47:29,280 --> 00:47:30,280
+kullanarak,
+
+1126
+00:47:30,280 --> 00:47:31,280
+flooding yapabiliyorsunuz.
+
+1127
+00:47:31,280 --> 00:47:32,280
+Çünkü,
+
+1128
+00:47:32,280 --> 00:47:33,280
+routing bilgisini,
+
+1129
+00:47:33,280 --> 00:47:34,280
+broadcast mantığıyla,
+
+1130
+00:47:34,280 --> 00:47:35,280
+yayan bir şey.
+
+1131
+00:47:35,280 --> 00:47:36,280
+Saldırı,
+
+1132
+00:47:36,280 --> 00:47:37,280
+nereye yapılıyor?
+
+1133
+00:47:37,280 --> 00:47:38,280
+Saldırı,
+
+1134
+00:47:38,280 --> 00:47:39,280
+bir,
+
+1135
+00:47:39,280 --> 00:47:40,280
+güvenlikle alakalı,
+
+1136
+00:47:40,280 --> 00:47:41,280
+blog sitesine,
+
+1137
+00:47:41,280 --> 00:47:42,280
+yapılıyor.
+
+1138
+00:47:42,280 --> 00:47:43,280
+Orada,
+
+1139
+00:47:43,280 --> 00:47:44,280
+ki,
+
+1140
+00:47:44,280 --> 00:47:45,280
+birtakım,
+
+1141
+00:47:45,280 --> 00:47:46,280
+ayrıntıların,
+
+1142
+00:47:46,280 --> 00:47:47,280
+yayınlanmasından,
+
+1143
+00:47:47,280 --> 00:47:48,280
+hoşlanmıyorlar.
+
+1144
+00:47:48,280 --> 00:47:49,280
+Çünkü,
+
+1145
+00:47:49,280 --> 00:47:50,280
+bu,
+
+1146
+00:47:50,280 --> 00:47:51,280
+saldırının,
+
+1147
+00:47:51,280 --> 00:47:52,280
+ayrıntıları,
+
+1148
+00:47:52,280 --> 00:47:53,280
+ortaya,
+
+1149
+00:47:53,280 --> 00:47:54,280
+çıkmıyor.
+
+1150
+00:47:54,280 --> 00:47:55,280
+Yani,
+
+1151
+00:47:55,280 --> 00:47:56,280
+ayrıntıları,
+
+1152
+00:47:56,280 --> 00:47:57,280
+ortaya,
+
+1153
+00:47:57,280 --> 00:47:58,280
+çıkacak.
+
+1154
+00:47:58,280 --> 00:47:59,280
+Orada,
+
+1155
+00:47:59,280 --> 00:48:00,280
+bunlar,
+
+1156
+00:48:00,280 --> 00:48:01,280
+anlatılıyor.
+
+1157
+00:48:01,280 --> 00:48:02,280
+Mirai,
+
+1158
+00:48:02,280 --> 00:48:03,280
+malware saldırısı,
+
+1159
+00:48:03,280 --> 00:48:04,280
+botnet saldırısı,
+
+1160
+00:48:04,280 --> 00:48:05,280
+veya,
+
+1161
+00:48:05,280 --> 00:48:06,280
+nasıl isimlendirirseniz.
+
+1162
+00:48:06,280 --> 00:48:07,280
+Bunu,
+
+1163
+00:48:07,280 --> 00:48:08,280
+durdurmak için,
+
+1164
+00:48:08,280 --> 00:48:09,280
+yapılan,
+
+1165
+00:48:09,280 --> 00:48:10,280
+bir saldırı.
+
+1166
+00:48:10,280 --> 00:48:11,280
+Bakın,
+
+1167
+00:48:11,280 --> 00:48:12,280
+mantık,
+
+1168
+00:48:12,280 --> 00:48:13,280
+nasıl çalışıyor?
+
+1169
+00:48:13,280 --> 00:48:15,690
+Önce,
+
+1170
+00:48:15,690 --> 00:48:16,690
+internet,
+
+1171
+00:48:16,690 --> 00:48:17,690
+taranıyor.
+
+1172
+00:48:17,690 --> 00:48:18,690
+Cihazlar,
+
+1173
+00:48:18,690 --> 00:48:19,690
+tespit ediliyor.
+
+1174
+00:48:19,690 --> 00:48:20,690
+Bu,
+
+1175
+00:48:20,690 --> 00:48:21,690
+cihazlarla,
+
+1176
+00:48:21,690 --> 00:48:22,690
+alakalı,
+
+1177
+00:48:22,690 --> 00:48:23,690
+raporlar,
+
+1178
+00:48:23,690 --> 00:48:24,690
+oluşturuluyor.
+
+1179
+00:48:24,690 --> 00:48:25,690
+Ve,
+
+1180
+00:48:25,690 --> 00:48:26,690
+bu raporlar,
+
+1181
+00:48:26,690 --> 00:48:27,690
+üzerinden,
+
+1182
+00:48:27,690 --> 00:48:28,690
+hangi cihazın,
+
+1183
+00:48:28,690 --> 00:48:29,690
+ne şekilde,
+
+1184
+00:48:29,690 --> 00:48:30,690
+ele geçirilmesi,
+
+1185
+00:48:30,690 --> 00:48:31,690
+gerektiğine,
+
+1186
+00:48:31,690 --> 00:48:32,690
+dair,
+
+1187
+00:48:32,690 --> 00:48:33,690
+stratejiler,
+
+1188
+00:48:33,690 --> 00:48:34,690
+belirlenip,
+
+1189
+00:48:34,690 --> 00:48:35,690
+ona göre,
+
+1190
+00:48:35,690 --> 00:48:36,690
+paketler,
+
+1191
+00:48:36,690 --> 00:48:37,690
+ona göre,
+
+1192
+00:48:37,690 --> 00:48:38,690
+scriptler,
+
+1193
+00:48:38,690 --> 00:48:39,690
+generate ediliyor.
+
+1194
+00:48:39,690 --> 00:48:40,690
+Ve,
+
+1195
+00:48:40,690 --> 00:48:41,690
+bu scriptler de,
+
+1196
+00:48:41,690 --> 00:48:42,690
+bu cihazlara,
+
+1197
+00:48:42,690 --> 00:48:43,690
+saldırılıyor.
+
+1198
+00:48:43,690 --> 00:48:44,690
+Ele geçirilmiş,
+
+1199
+00:48:44,690 --> 00:48:45,690
+olanlar,
+
+1200
+00:48:45,690 --> 00:48:46,690
+checklist,
+
+1201
+00:48:46,690 --> 00:48:47,690
+kenarda.
+
+1202
+00:48:47,690 --> 00:48:48,690
+Sonrasında,
+
+1203
+00:48:48,690 --> 00:48:49,690
+ele geçirilmiş,
+
+1204
+00:48:49,690 --> 00:48:50,690
+olanlara,
+
+1205
+00:48:50,690 --> 00:48:51,690
+komut gönderiliyor.
+
+1206
+00:48:51,690 --> 00:48:52,690
+Ve,
+
+1207
+00:48:52,690 --> 00:48:53,690
+bu komutları,
+
+1208
+00:48:53,690 --> 00:48:54,690
+işlemesi,
+
+1209
+00:48:54,690 --> 00:48:55,690
+bekleniyor.
+
+1210
+00:48:55,690 --> 00:48:56,690
+Bu cihazlar,
+
+1211
+00:48:56,690 --> 00:48:57,690
+stop,
+
+1212
+00:48:57,690 --> 00:48:58,690
+saldırıyı başlat,
+
+1213
+00:48:58,690 --> 00:48:59,690
+durdur.
+
+1214
+00:48:59,690 --> 00:49:00,690
+Target IP,
+
+1215
+00:49:00,690 --> 00:49:01,690
+source adresi olarak,
+
+1216
+00:49:01,690 --> 00:49:02,690
+neyi yerleştireceksin?
+
+1217
+00:49:02,690 --> 00:49:03,690
+Veya,
+
+1218
+00:49:03,690 --> 00:49:04,690
+destination adresi olarak,
+
+1219
+00:49:04,690 --> 00:49:05,690
+flooding yapacak.
+
+1220
+00:49:05,690 --> 00:49:06,690
+Yani,
+
+1221
+00:49:06,690 --> 00:49:07,690
+nereyi yerleştireceksin?
+
+1222
+00:49:07,690 --> 00:49:08,690
+Onların,
+
+1223
+00:49:08,690 --> 00:49:09,690
+source'da olabilir,
+
+1224
+00:49:09,690 --> 00:49:10,690
+destination'da,
+
+1225
+00:49:10,690 --> 00:49:11,690
+reflected olabilir.
+
+1226
+00:49:11,690 --> 00:49:12,690
+Bir şey üzerinden,
+
+1227
+00:49:12,690 --> 00:49:13,690
+yansıtarak veya,
+
+1228
+00:49:13,690 --> 00:49:14,690
+doğrudan.
+
+1229
+00:49:14,690 --> 00:49:15,690
+DNS üzerinden mi,
+
+1230
+00:49:15,690 --> 00:49:16,690
+saldırı?
+
+1231
+00:49:16,690 --> 00:49:17,690
+Yani,
+
+1232
+00:49:17,690 --> 00:49:18,690
+UDP DNS flooding mi,
+
+1233
+00:49:18,690 --> 00:49:19,690
+yapacak?
+
+1234
+00:49:19,690 --> 00:49:20,690
+TCP mi,
+
+1235
+00:49:20,690 --> 00:49:21,690
+yapacak?
+
+1236
+00:49:21,690 --> 00:49:22,690
+GRE mi,
+
+1237
+00:49:22,690 --> 00:49:23,690
+yapacak?
+
+1238
+00:49:23,690 --> 00:49:24,690
+Ve,
+
+1239
+00:49:24,690 --> 00:49:25,690
+saldırının süresi.
+
+1240
+00:49:25,690 --> 00:49:31,300
+Burada,
+
+1241
+00:49:31,300 --> 00:49:32,300
+ortaya başka ayrıntılar da,
+
+1242
+00:49:32,300 --> 00:49:33,300
+çıkıyor.
+
+1243
+00:49:33,300 --> 00:49:34,300
+Saldırganların,
+
+1244
+00:49:34,300 --> 00:49:39,010
+internetteki,
+
+1245
+00:49:39,010 --> 00:49:40,010
+dokümanlardan,
+
+1246
+00:49:40,010 --> 00:49:41,010
+yararlanarak,
+
+1247
+00:49:41,010 --> 00:49:42,010
+çok büyük bir,
+
+1248
+00:49:42,010 --> 00:49:43,010
+password database'i,
+
+1249
+00:49:43,010 --> 00:49:44,010
+oluşturduğu da,
+
+1250
+00:49:44,010 --> 00:49:45,010
+anlaşılıyor.
+
+1251
+00:49:45,010 --> 00:49:46,010
+İşte,
+
+1252
+00:49:46,010 --> 00:49:47,010
+bakın,
+
+1253
+00:49:47,010 --> 00:49:48,010
+Dahua,
+
+1254
+00:49:48,010 --> 00:49:49,010
+DVR,
+
+1255
+00:49:49,010 --> 00:49:50,010
+IP kamera.
+
+1256
+00:49:50,010 --> 00:49:51,010
+Bunlarda,
+
+1257
+00:49:51,010 --> 00:49:52,010
+kullanılan,
+
+1258
+00:49:52,010 --> 00:49:53,010
+fabrika çıkışındaki,
+
+1259
+00:49:53,010 --> 00:49:54,010
+standart,
+
+1260
+00:49:54,010 --> 00:49:55,010
+çifreler.
+
+1261
+00:49:55,010 --> 00:49:56,010
+Veya,
+
+1262
+00:49:56,010 --> 00:49:57,010
+high silicon,
+
+1263
+00:49:57,010 --> 00:49:58,010
+IP kameralardaki.
+
+1264
+00:49:58,010 --> 00:49:59,010
+Panasonic printer,
+
+1265
+00:49:59,010 --> 00:50:00,010
+işte,
+
+1266
+00:50:00,010 --> 00:50:01,010
+8 tane 0.
+
+1267
+00:50:01,010 --> 00:50:02,010
+Samsung IP kamera,
+
+1268
+00:50:02,010 --> 00:50:03,010
+6 tane 1.
+
+1269
+00:50:03,010 --> 00:50:04,010
+Xerox printer,
+
+1270
+00:50:04,010 --> 00:50:05,010
+4 tane 1.
+
+1271
+00:50:05,010 --> 00:50:06,010
+İşte,
+
+1272
+00:50:06,010 --> 00:50:07,010
+bunun haricinde,
+
+1273
+00:50:07,010 --> 00:50:08,010
+unknown dediği de,
+
+1274
+00:50:08,010 --> 00:50:09,010
+dene,
+
+1275
+00:50:09,010 --> 00:50:10,010
+mesela işte,
+
+1276
+00:50:10,010 --> 00:50:11,010
+1234,
+
+1277
+00:50:11,010 --> 00:50:12,010
+12345,
+
+1278
+00:50:12,010 --> 00:50:13,010
+guest,
+
+1279
+00:50:13,010 --> 00:50:14,010
+password,
+
+1280
+00:50:14,010 --> 00:50:15,010
+root,
+
+1281
+00:50:15,010 --> 00:50:16,010
+search,
+
+1282
+00:50:16,010 --> 00:50:17,010
+aklınıza gelecek böyle,
+
+1283
+00:50:17,010 --> 00:50:18,010
+çok büyük bir,
+
+1284
+00:50:18,010 --> 00:50:19,010
+database.
+
+1285
+00:50:19,010 --> 00:50:21,449
+Bununla,
+
+1286
+00:50:21,449 --> 00:50:22,449
+şifre,
+
+1287
+00:50:22,449 --> 00:50:23,449
+deneyerek,
+
+1288
+00:50:23,449 --> 00:50:24,449
+sisteme,
+
+1289
+00:50:24,449 --> 00:50:25,449
+o,
+
+1290
+00:50:25,449 --> 00:50:26,449
+IOT cihazına,
+
+1291
+00:50:26,449 --> 00:50:27,449
+girmeye çalışıyorlar.
+
+1292
+00:50:27,449 --> 00:50:28,449
+Geçen hafta,
+
+1293
+00:50:28,449 --> 00:50:29,449
+anlatmıştım,
+
+1294
+00:50:29,449 --> 00:50:30,449
+pardon,
+
+1295
+00:50:30,449 --> 00:50:31,449
+ondan önceki hafta,
+
+1296
+00:50:31,449 --> 00:50:32,449
+bu,
+
+1297
+00:50:32,449 --> 00:50:33,449
+web saldırılarını,
+
+1298
+00:50:33,449 --> 00:50:34,449
+scripted saldırıları,
+
+1299
+00:50:34,449 --> 00:50:35,449
+yani,
+
+1300
+00:50:35,449 --> 00:50:36,449
+lokaldeki,
+
+1301
+00:50:36,449 --> 00:50:38,449
+sisteminize,
+
+1302
+00:50:38,449 --> 00:50:39,449
+dışarıdan,
+
+1303
+00:50:39,449 --> 00:50:40,449
+kötü niyetli,
+
+1304
+00:50:40,449 --> 00:50:41,449
+bir sayfaya,
+
+1305
+00:50:41,449 --> 00:50:42,449
+eriştiğiniz zaman,
+
+1306
+00:50:42,449 --> 00:50:43,449
+nasıl saldırı,
+
+1307
+00:50:43,449 --> 00:50:44,449
+düzenlenip,
+
+1308
+00:50:44,449 --> 00:50:45,449
+o sistemin,
+
+1309
+00:50:45,449 --> 00:50:46,449
+kontrolünün,
+
+1310
+00:50:46,449 --> 00:50:47,449
+ele geçirilebileceğini,
+
+1311
+00:50:47,449 --> 00:50:48,449
+onu konuşmuştuk,
+
+1312
+00:50:48,449 --> 00:50:49,449
+hatırlarsanız.
+
+1313
+00:50:49,449 --> 00:50:50,449
+Siz,
+
+1314
+00:50:50,449 --> 00:50:51,449
+gönül rahat bile,
+
+1315
+00:50:51,449 --> 00:50:52,449
+diyorsunuz ki,
+
+1316
+00:50:52,449 --> 00:50:53,449
+yani,
+
+1317
+00:50:53,449 --> 00:50:54,449
+bu printer,
+
+1318
+00:50:54,449 --> 00:50:55,449
+nasıl olsa,
+
+1319
+00:50:55,449 --> 00:50:56,449
+benim lokalimde,
+
+1320
+00:50:56,449 --> 00:50:57,449
+şifresini,
+
+1321
+00:50:57,449 --> 00:50:58,449
+kimsenin tahmin edebilmesine,
+
+1322
+00:50:58,449 --> 00:50:59,449
+imkan,
+
+1323
+00:50:59,449 --> 00:51:00,449
+şey,
+
+1324
+00:51:00,449 --> 00:51:01,449
+şifresini bilse bile,
+
+1325
+00:51:01,449 --> 00:51:02,449
+girebilmesine,
+
+1326
+00:51:02,449 --> 00:51:03,449
+imkan,
+
+1327
+00:51:03,449 --> 00:51:04,449
+ama,
+
+1328
+00:51:04,449 --> 00:51:05,449
+işte,
+
+1329
+00:51:05,449 --> 00:51:06,449
+o,
+
+1330
+00:51:06,449 --> 00:51:07,449
+weble alakalı,
+
+1331
+00:51:07,449 --> 00:51:08,449
+konuştuğumuz saldırılar,
+
+1332
+00:51:08,449 --> 00:51:09,449
+başlığı altındaki,
+
+1333
+00:51:09,449 --> 00:51:10,449
+şekilde,
+
+1334
+00:51:10,449 --> 00:51:11,449
+bu,
+
+1335
+00:51:11,449 --> 00:51:12,449
+cihazlar,
+
+1336
+00:51:12,449 --> 00:51:13,449
+ele geçirilebiliyor.
+
+1337
+00:51:13,449 --> 00:51:14,449
+Ki,
+
+1338
+00:51:14,449 --> 00:51:15,449
+bazıları,
+
+1339
+00:51:15,449 --> 00:51:16,449
+doğrudan,
+
+1340
+00:51:16,449 --> 00:51:17,449
+internete bağlı.
+
+1341
+00:51:17,449 --> 00:51:18,449
+Kameralar falan,
+
+1342
+00:51:18,449 --> 00:51:19,449
+çünkü,
+
+1343
+00:51:19,449 --> 00:51:20,449
+internet üzerinden de,
+
+1344
+00:51:20,449 --> 00:51:21,449
+kameraya erişiyorsunuz.
+
+1345
+00:51:21,449 --> 00:51:22,449
+Evde,
+
+1346
+00:51:22,449 --> 00:51:23,449
+ne oluyor,
+
+1347
+00:51:23,449 --> 00:51:24,449
+ne bitiyor,
+
+1348
+00:51:24,449 --> 00:51:25,449
+çocuğunuzu izlemek için,
+
+1349
+00:51:25,449 --> 00:51:26,449
+veya başka,
+
+1350
+00:51:26,449 --> 00:51:27,449
+güvenlikle alakalı,
+
+1351
+00:51:27,449 --> 00:51:28,449
+garajınız,
+
+1352
+00:51:28,449 --> 00:51:29,449
+şuyunuz,
+
+1353
+00:51:29,449 --> 00:51:30,449
+buyunuz,
+
+1354
+00:51:30,449 --> 00:51:34,940
+neyse,
+
+1355
+00:51:34,940 --> 00:51:35,940
+bunu yapabilmek için.
+
+1356
+00:51:35,940 --> 00:51:36,940
+Burada da,
+
+1357
+00:51:36,940 --> 00:51:37,940
+zamana göre,
+
+1358
+00:51:37,940 --> 00:51:38,940
+işte,
+
+1359
+00:51:38,940 --> 00:51:39,940
+8.
+
+1360
+00:51:39,940 --> 00:51:40,940
+ay,
+
+1361
+00:51:40,940 --> 00:51:41,940
+2016,
+
+1362
+00:51:41,940 --> 00:51:42,940
+9.
+
+1363
+00:51:42,940 --> 00:51:43,940
+ay,
+
+1364
+00:51:43,940 --> 00:51:44,940
+10.
+
+1365
+00:51:44,940 --> 00:51:45,940
+ay,
+
+1366
+00:51:45,940 --> 00:51:46,940
+11.
+
+1367
+00:51:46,940 --> 00:51:47,940
+ay,
+
+1368
+00:51:47,940 --> 00:51:48,940
+12,
+
+1369
+00:51:48,940 --> 00:51:49,940
+2017,
+
+1370
+00:51:49,940 --> 00:51:50,940
+1.
+
+1371
+00:51:50,940 --> 00:51:51,940
+ay,
+
+1372
+00:51:51,940 --> 00:51:52,940
+2017,
+
+1373
+00:51:52,940 --> 00:51:53,940
+2.
+
+1374
+00:51:53,940 --> 00:51:54,940
+ay.
+
+1375
+00:51:54,940 --> 00:51:55,940
+Yani,
+
+1376
+00:51:55,940 --> 00:51:56,940
+2016'nın,
+
+1377
+00:51:56,940 --> 00:51:57,940
+12'sinde,
+
+1378
+00:51:57,940 --> 00:51:58,940
+peak yapıyor,
+
+1379
+00:51:58,940 --> 00:51:59,940
+son aylarında.
+
+1380
+00:51:59,940 --> 00:52:00,940
+Fakat,
+
+1381
+00:52:00,940 --> 00:52:01,940
+sonuç olarak,
+
+1382
+00:52:01,940 --> 00:52:02,940
+yaklaşık,
+
+1383
+00:52:02,940 --> 00:52:03,940
+600.000,
+
+1384
+00:52:03,940 --> 00:52:04,940
+cihaz,
+
+1385
+00:52:04,940 --> 00:52:05,940
+ele geçiriliyor.
+
+1386
+00:52:05,940 --> 00:52:06,940
+Önemli bir şey.
+
+1387
+00:52:06,940 --> 00:52:07,940
+İşte,
+
+1388
+00:52:07,940 --> 00:52:08,940
+portlar değiştirilmiş.
+
+1389
+00:52:08,940 --> 00:52:09,940
+Yani,
+
+1390
+00:52:09,940 --> 00:52:10,940
+standart SSH portu,
+
+1391
+00:52:10,940 --> 00:52:11,940
+22 değil de,
+
+1392
+00:52:11,940 --> 00:52:13,940
+22-22 kullanılmış.
+
+1393
+00:52:13,940 --> 00:52:14,940
+Veya,
+
+1394
+00:52:14,940 --> 00:52:15,940
+6.789,
+
+1395
+00:52:15,940 --> 00:52:16,940
+80-80,
+
+1396
+00:52:16,940 --> 00:52:17,940
+kullanılmış.
+
+1397
+00:52:17,940 --> 00:52:18,940
+23 yerine,
+
+1398
+00:52:18,940 --> 00:52:19,940
+23-23.
+
+1399
+00:52:19,940 --> 00:52:20,940
+Bu da,
+
+1400
+00:52:20,940 --> 00:52:21,940
+sorun değil,
+
+1401
+00:52:21,940 --> 00:52:22,940
+çözüm değil.
+
+1402
+00:52:22,940 --> 00:52:23,940
+Çünkü neden?
+
+1403
+00:52:23,940 --> 00:52:24,940
+Zaten,
+
+1404
+00:52:24,940 --> 00:52:25,940
+cihazların,
+
+1405
+00:52:25,940 --> 00:52:26,940
+kullanım kitapçığında,
+
+1406
+00:52:26,940 --> 00:52:27,940
+bu portların,
+
+1407
+00:52:27,940 --> 00:52:28,940
+değeri yazıyor.
+
+1408
+00:52:28,940 --> 00:52:29,940
+Yani,
+
+1409
+00:52:29,940 --> 00:52:30,940
+adamlar eğer,
+
+1410
+00:52:30,940 --> 00:52:31,940
+şifrelerin ne olduğunu,
+
+1411
+00:52:31,940 --> 00:52:32,940
+toplamak için,
+
+1412
+00:52:32,940 --> 00:52:33,940
+böyle,
+
+1413
+00:52:33,940 --> 00:52:34,940
+bir mining,
+
+1414
+00:52:34,940 --> 00:52:35,940
+yaptılarsa ki,
+
+1415
+00:52:35,940 --> 00:52:36,940
+o şifreleri toplarken,
+
+1416
+00:52:36,940 --> 00:52:37,940
+doğal olarak,
+
+1417
+00:52:37,940 --> 00:52:38,940
+hangi cihaza,
+
+1418
+00:52:38,940 --> 00:52:39,940
+hangi porttan,
+
+1419
+00:52:39,940 --> 00:52:40,940
+erişildiği,
+
+1420
+00:52:40,940 --> 00:52:41,940
+bilgisini de,
+
+1421
+00:52:41,940 --> 00:52:42,940
+topluyorlar.
+
+1422
+00:52:42,940 --> 00:52:43,940
+Network scanning,
+
+1423
+00:52:43,940 --> 00:52:44,940
+dediğimiz,
+
+1424
+00:52:44,940 --> 00:52:45,940
+network'te,
+
+1425
+00:52:45,940 --> 00:52:46,940
+bu,
+
+1426
+00:52:46,940 --> 00:52:47,940
+elimizde,
+
+1427
+00:52:47,940 --> 00:52:48,940
+var olan portlara,
+
+1428
+00:52:48,940 --> 00:52:49,940
+bağlantı isteği,
+
+1429
+00:52:49,940 --> 00:52:50,940
+yapmaya çalışıyoruz.
+
+1430
+00:52:50,940 --> 00:52:51,940
+Karşı taraftan,
+
+1431
+00:52:51,940 --> 00:52:52,940
+biz,
+
+1432
+00:52:52,940 --> 00:52:53,940
+sin yolluyoruz.
+
+1433
+00:52:53,940 --> 00:52:54,940
+Sin ek gelmesini,
+
+1434
+00:52:54,940 --> 00:52:55,940
+bekliyoruz.
+
+1435
+00:52:55,940 --> 00:52:56,940
+Sin ek gelirse,
+
+1436
+00:52:56,940 --> 00:52:57,940
+zaten o port,
+
+1437
+00:52:57,940 --> 00:52:58,940
+aktif demektir.
+
+1438
+00:52:58,940 --> 00:52:59,940
+Ondan sonra,
+
+1439
+00:52:59,940 --> 00:53:00,940
+devamını getirmeye,
+
+1440
+00:53:00,940 --> 00:53:03,500
+çalışıyoruz.
+
+1441
+00:53:03,500 --> 00:53:04,500
+Yani,
+
+1442
+00:53:04,500 --> 00:53:05,500
+cihazların,
+
+1443
+00:53:05,500 --> 00:53:06,500
+yönetim,
+
+1444
+00:53:06,500 --> 00:53:07,500
+amacıyla,
+
+1445
+00:53:07,500 --> 00:53:08,500
+kullanılan portlarını,
+
+1446
+00:53:08,500 --> 00:53:09,500
+değiştirmek de,
+
+1447
+00:53:09,500 --> 00:53:10,500
+çok büyük bir anlam,
+
+1448
+00:53:10,500 --> 00:53:11,500
+ifade etmiyor.
+
+1449
+00:53:11,500 --> 00:53:12,500
+Çünkü,
+
+1450
+00:53:12,500 --> 00:53:13,500
+o cihazın,
+
+1451
+00:53:13,500 --> 00:53:14,500
+kullanım kitapçını,
+
+1452
+00:53:14,500 --> 00:53:15,500
+online olarak,
+
+1453
+00:53:15,500 --> 00:53:16,500
+yayınlıyorsunuz.
+
+1454
+00:53:16,500 --> 00:53:17,500
+İşte bu,
+
+1455
+00:53:17,500 --> 00:53:22,179
+ifşa eden yer,
+
+1456
+00:53:22,179 --> 00:53:23,179
+Crabs on Security sitesi.
+
+1457
+00:53:23,179 --> 00:53:26,139
+Şu anda da,
+
+1458
+00:53:26,139 --> 00:53:27,139
+girip,
+
+1459
+00:53:27,139 --> 00:53:28,139
+bakabilirsiniz.
+
+1460
+00:53:28,139 --> 00:53:29,139
+Aktif olan bir yer.
+
+1461
+00:53:29,139 --> 00:53:30,139
+O sırada,
+
+1462
+00:53:30,139 --> 00:53:31,139
+Akamai'de,
+
+1463
+00:53:31,139 --> 00:53:32,139
+servis sağlayıcı,
+
+1464
+00:53:32,139 --> 00:53:33,139
+olarak.
+
+1465
+00:53:33,139 --> 00:53:34,139
+Ve,
+
+1466
+00:53:34,139 --> 00:53:35,139
+Akamai'nin de,
+
+1467
+00:53:35,139 --> 00:53:36,139
+o güne kadar,
+
+1468
+00:53:36,139 --> 00:53:37,139
+gördüğü,
+
+1469
+00:53:37,139 --> 00:53:38,139
+en yüksek,
+
+1470
+00:53:38,139 --> 00:53:39,139
+yüksek,
+
+1471
+00:53:39,139 --> 00:53:40,139
+yüksek,
+
+1472
+00:53:40,139 --> 00:53:41,139
+yüksek,
+
+1473
+00:53:41,139 --> 00:53:42,139
+gördüğü,
+
+1474
+00:53:42,139 --> 00:53:43,139
+en yüksek,
+
+1475
+00:53:43,139 --> 00:53:44,139
+DDoS saldırısında,
+
+1476
+00:53:44,139 --> 00:53:45,139
+gördüğü,
+
+1477
+00:53:45,139 --> 00:53:46,139
+en yüksek,
+
+1478
+00:53:46,139 --> 00:53:47,139
+band genişliği,
+
+1479
+00:53:47,139 --> 00:53:48,139
+363,
+
+1480
+00:53:48,139 --> 00:53:49,139
+Gigabit per second.
+
+1481
+00:53:49,139 --> 00:53:50,139
+Bu adam,
+
+1482
+00:53:50,139 --> 00:53:51,139
+bu,
+
+1483
+00:53:51,139 --> 00:53:52,139
+sitenin,
+
+1484
+00:53:52,139 --> 00:53:53,139
+sahibi olan,
+
+1485
+00:53:53,139 --> 00:53:54,139
+adam,
+
+1486
+00:53:54,139 --> 00:53:55,139
+Mirai'nin,
+
+1487
+00:53:55,139 --> 00:53:56,139
+ve,
+
+1488
+00:53:56,139 --> 00:53:57,139
+diğer şeylerin,
+
+1489
+00:53:57,139 --> 00:53:58,139
+nasıl olduğunu,
+
+1490
+00:53:58,139 --> 00:53:59,139
+açıkladığı için,
+
+1491
+00:53:59,139 --> 00:54:00,139
+açıklanmasını,
+
+1492
+00:54:00,139 --> 00:54:01,139
+engellemek,
+
+1493
+00:54:01,139 --> 00:54:02,139
+istiyorlar.
+
+1494
+00:54:02,139 --> 00:54:03,139
+Yani,
+
+1495
+00:54:03,139 --> 00:54:04,139
+bir,
+
+1496
+00:54:04,139 --> 00:54:05,139
+karalama,
+
+1497
+00:54:05,139 --> 00:54:06,139
+şey yapma,
+
+1498
+00:54:06,139 --> 00:54:07,139
+karartma,
+
+1499
+00:54:07,139 --> 00:54:09,929
+diye düşünüyorum.
+
+1500
+00:54:09,929 --> 00:54:10,929
+Yani,
+
+1501
+00:54:10,929 --> 00:54:11,929
+bu cihazın,
+
+1502
+00:54:11,929 --> 00:54:12,929
+o,
+
+1503
+00:54:12,929 --> 00:54:13,929
+bank'taakapansa,
+
+1504
+00:54:13,929 --> 00:54:14,929
+viyesine giden,
+
+1505
+00:54:14,929 --> 00:54:15,929
+ne yaparız,
+
+1506
+00:54:15,929 --> 00:54:16,929
+Evi ne yaparız,
+
+1507
+00:54:16,929 --> 00:54:17,929
+diye düşünüyorum.
+
+1508
+00:54:17,929 --> 00:54:18,929
+Ve,
+
+1509
+00:54:18,929 --> 00:54:19,929
+oluşulan trafik,
+
+1510
+00:54:19,929 --> 00:54:20,929
+555 Gbps.
+
+1511
+00:54:20,929 --> 00:54:21,929
+Yani,
+
+1512
+00:54:21,929 --> 00:54:22,929
+363,
+
+1513
+00:54:22,929 --> 00:54:23,929
+başında,
+
+1514
+00:54:23,929 --> 00:54:24,929
+555,
+
+1515
+00:54:24,929 --> 00:54:25,929
+o kadar,
+
+1516
+00:54:25,929 --> 00:54:26,929
+daha fazla bir,
+
+1517
+00:54:26,929 --> 00:54:27,929
+şey,
+
+1518
+00:54:27,929 --> 00:54:28,929
+oluşuyor.
+
+1519
+00:54:28,929 --> 00:54:29,929
+ki,
+
+1520
+00:54:29,929 --> 00:54:30,929
+Başhang'ın adı da juego da,
+
+1521
+00:54:30,929 --> 00:54:31,929
+Braille.
+
+1522
+00:54:31,929 --> 00:54:32,929
+Braille Krebs,
+
+1523
+00:54:32,929 --> 00:54:33,929
+larda Google gitmişiutosun.
+
+1524
+00:54:33,929 --> 00:54:34,929
+Çünkü,
+
+1525
+00:54:34,929 --> 00:54:35,929
+işte,
+
+1526
+00:54:35,929 --> 00:54:36,929
+Google,
+
+1527
+00:54:36,929 --> 00:54:37,929
+diyorki bizde,
+
+1528
+00:54:37,929 --> 00:54:38,929
+Google Project Shield var.
+
+1529
+00:54:38,929 --> 00:54:39,929
+Bu tarz,
+
+1530
+00:54:39,929 --> 00:54:40,929
+saldırılara karşı,
+
+1531
+00:54:40,929 --> 00:54:51,489
+bırakmasını sağlıyoruz. Peki Google Project Shield nasıl çalışıyor? Web sitelerinin önünde çok hızlı
+
+1532
+00:54:51,489 --> 00:55:02,590
+donanım özelliğine sahip cihazlar var. Bu cihazların tek görevi TCP Handshake yapılıp yapılmadığını
+
+1533
+00:55:02,590 --> 00:55:09,909
+garanti altına almak. Yani üç tane mesajlaşma gerçekleşiyor mu gerçekleşmiyor mu? Botnetlerden
+
+1534
+00:55:09,909 --> 00:55:14,829
+gelen saldırılarda hep sahte ip adresleri kullanılıyor. O yüzden iki mesaj var üçüncüsü
+
+1535
+00:55:14,829 --> 00:55:22,590
+gelmiyor. Google'ın da yola çıkış noktası burası. Tamam diyor üçüncü mesaj gelmediğine göre ben ön
+
+1536
+00:55:22,590 --> 00:55:33,289
+tarafa donanım özellikleri çok yüksek. İstekleri connection requestleri karşılayan üçüncü bağlantı
+
+1537
+00:55:33,289 --> 00:55:39,010
+geldi mi gelmedi mi yani üçüncü pardon bağlantı değil üçüncü paket geldiğimiz ek paketi geldi
+
+1538
+00:55:39,010 --> 00:55:39,889
+mi gelmedi mi onu kontrol ederiz.
+
+1539
+00:55:39,889 --> 00:56:09,869
+Ben bir yapı kuralım. Buna da işte Project Shield derim. Çok güzel. Üçüncüsü geliyorsa ek geliyorsa zaten bu gerçek bağlantı kurmak isteyen bir yerdir. Bunu ilgili web sitesine yönlendiririm. Çünkü arka tarafta da bir sürü hizmet alan host ettiği Google'ın host ettiği siteler var. Diğer tarafta zaten neyi öğrendik işte bu Simflat ve benzeri
+
+1540
+00:56:09,889 --> 00:56:11,429
+şeylere karşı SYN cookie
+
+1541
+00:56:11,429 --> 00:56:14,150
+kullanılabilir. Bunlardan yararlanıyor
+
+1542
+00:56:14,150 --> 00:56:15,969
+Google. Güzel bir
+
+1543
+00:56:15,969 --> 00:56:18,170
+çözüm. Bu sefer saldırganlar
+
+1544
+00:56:18,170 --> 00:56:21,829
+saldırma şekillerini değiştiriyorlar.
+
+1545
+00:56:21,909 --> 00:56:24,130
+Tamam diyorlar. Gerçek IP adresi kullanırız.
+
+1546
+00:56:24,750 --> 00:56:26,230
+Üçüncü paketi de göndeririz.
+
+1547
+00:56:26,329 --> 00:56:27,809
+Yani SYN, SYN
+
+1548
+00:56:27,809 --> 00:56:28,489
+ek, ek.
+
+1549
+00:56:29,809 --> 00:56:31,889
+Bağlantıyı kurarız. Üzerinden TRS
+
+1550
+00:56:31,889 --> 00:56:33,750
+enşekide yani Transport
+
+1551
+00:56:33,750 --> 00:56:34,690
+Layer Security.
+
+1552
+00:56:35,550 --> 00:56:37,909
+HTTPS mi? HTTPS'e
+
+1553
+00:56:37,909 --> 00:56:39,369
+geçeriz. Hiç sorun değil.
+
+1554
+00:56:39,889 --> 00:56:42,130
+Ondan sonra da saldıracağımız siteden
+
+1555
+00:56:42,130 --> 00:56:44,429
+olabildiğince
+
+1556
+00:56:44,429 --> 00:56:45,809
+büyük bir
+
+1557
+00:56:45,809 --> 00:56:47,909
+görüntü mü olur?
+
+1558
+00:56:48,269 --> 00:56:50,150
+Dosya mı olur? Animasyon
+
+1559
+00:56:50,150 --> 00:56:52,030
+mı olur? Onu isteriz. Hiç
+
+1560
+00:56:52,030 --> 00:56:52,750
+durmadan.
+
+1561
+00:56:54,469 --> 00:56:56,309
+Flooding ile alakalı korumaların
+
+1562
+00:56:56,309 --> 00:56:57,869
+tamamı bypass edilmiş olur.
+
+1563
+00:57:01,579 --> 00:57:01,820
+Ama
+
+1564
+00:57:01,820 --> 00:57:04,820
+burada artık
+
+1565
+00:57:04,820 --> 00:57:06,840
+saldırıyı
+
+1566
+00:57:06,840 --> 00:57:08,780
+yapan botun
+
+1567
+00:57:08,780 --> 00:57:10,360
+gerçek adresi ortaya çıkar.
+
+1568
+00:57:11,119 --> 00:57:12,619
+O zaman da sitene
+
+1569
+00:57:12,619 --> 00:57:14,719
+ne yapabilir? O adresleri
+
+1570
+00:57:14,719 --> 00:57:16,519
+bloklayabilir veya
+
+1571
+00:57:16,519 --> 00:57:18,760
+o adreslerden gelen trafiği
+
+1572
+00:57:18,760 --> 00:57:20,260
+sınırlandırabilir.
+
+1573
+00:57:20,860 --> 00:57:22,780
+Şimdi görüyorsunuz tam bir hırsız
+
+1574
+00:57:22,780 --> 00:57:23,380
+polis oyunu.
+
+1575
+00:57:24,800 --> 00:57:25,920
+Bakın GitHub
+
+1576
+00:57:25,920 --> 00:57:28,739
+saldırısı 1.35
+
+1577
+00:57:28,739 --> 00:57:29,800
+terabit per second
+
+1578
+00:57:29,800 --> 00:57:35,139
+web requestlerine
+
+1579
+00:57:35,139 --> 00:57:37,860
+ne enjekte ediliyor arkadaşlar?
+
+1580
+00:57:38,900 --> 00:57:39,699
+Bir javascript
+
+1581
+00:57:39,699 --> 00:57:41,920
+enjekte ediliyor.
+
+1582
+00:57:42,599 --> 00:57:43,619
+İşte o dönemde bunun
+
+1583
+00:57:43,619 --> 00:57:45,860
+Çin hükümeti tarafından yapıldığı
+
+1584
+00:57:45,860 --> 00:57:47,139
+çok konuşuldu ama yani
+
+1585
+00:57:47,139 --> 00:57:49,000
+belgelenebilmesi
+
+1586
+00:57:49,000 --> 00:57:51,300
+öyleyse de bilenlerin sayısı
+
+1587
+00:57:51,300 --> 00:57:53,559
+belirlidir, azdır. Ama
+
+1588
+00:57:53,559 --> 00:57:55,639
+belgelenebilmesi şey değil. Fakat
+
+1589
+00:57:55,639 --> 00:57:57,260
+bizim açımızda saldırı önemli.
+
+1590
+00:57:58,000 --> 00:57:58,300
+Şimdi
+
+1591
+00:57:58,300 --> 00:58:00,679
+GitHub'a
+
+1592
+00:58:00,679 --> 00:58:03,579
+gerçek bir istek gönderiyorsunuz.
+
+1593
+00:58:03,639 --> 00:58:05,440
+Bağlantı kuruyorsunuz. Güzel.
+
+1594
+00:58:06,579 --> 00:58:07,380
+Ama hani orada
+
+1595
+00:58:07,380 --> 00:58:09,860
+reklamlar şunlar bunlar var ya işte oraya
+
+1596
+00:58:09,860 --> 00:58:11,800
+yapılan
+
+1597
+00:58:11,800 --> 00:58:13,699
+saldırı sonucunda
+
+1598
+00:58:13,699 --> 00:58:15,699
+oradaki sayfaların
+
+1599
+00:58:15,860 --> 00:58:17,900
+size geldiğinde siz
+
+1600
+00:58:17,900 --> 00:58:20,340
+arka tarafta
+
+1601
+00:58:20,340 --> 00:58:22,239
+kötü niyetli bir server'a fark etmeden
+
+1602
+00:58:22,239 --> 00:58:24,219
+bağlantı açıyorsunuz.
+
+1603
+00:58:24,300 --> 00:58:25,059
+Oradan size
+
+1604
+00:58:25,059 --> 00:58:28,340
+imageflat.js enjekte
+
+1605
+00:58:28,340 --> 00:58:30,480
+ediliyor. Böylece
+
+1606
+00:58:30,480 --> 00:58:32,059
+GitHub'ın diyelim
+
+1607
+00:58:32,059 --> 00:58:33,820
+100.000 tane kullanıcısı varsa
+
+1608
+00:58:33,820 --> 00:58:35,920
+100.000 tane kullanıcı bu server'a
+
+1609
+00:58:35,920 --> 00:58:38,159
+erişiyor. Server ona
+
+1610
+00:58:38,159 --> 00:58:39,980
+imageflat.js'i gönderiyor.
+
+1611
+00:58:40,500 --> 00:58:41,780
+Imageflat.js de
+
+1612
+00:58:41,780 --> 00:58:44,079
+GitHub tarafına inanılmaz bir
+
+1613
+00:58:44,079 --> 00:58:44,940
+trafik oluşturuyor.
+
+1614
+00:58:45,860 --> 00:58:49,039
+1.35
+
+1615
+00:58:49,039 --> 00:58:50,039
+terabit per second.
+
+1616
+00:58:51,559 --> 00:58:53,000
+Bu trafikle
+
+1617
+00:58:53,000 --> 00:58:55,579
+başarabilmek
+
+1618
+00:58:55,579 --> 00:58:57,079
+pek mümkün değil. Artı
+
+1619
+00:58:57,079 --> 00:58:58,099
+bakın her şey
+
+1620
+00:58:58,099 --> 00:59:00,719
+normal yani kuralına uygun
+
+1621
+00:59:00,719 --> 00:59:03,000
+TCP connection'ı kurulmuş sayfadan
+
+1622
+00:59:03,000 --> 00:59:04,940
+HTTPS'li şeyler geliyor.
+
+1623
+00:59:05,619 --> 00:59:06,699
+Hiçbir sıkıntı yok.
+
+1624
+00:59:10,480 --> 00:59:11,179
+Şimdi burada
+
+1625
+00:59:11,179 --> 00:59:14,139
+client'lardan gelen
+
+1626
+00:59:14,139 --> 00:59:15,719
+hani trafiği kısıtlama,
+
+1627
+00:59:15,719 --> 00:59:17,679
+bloklama veyahut da sınırlama
+
+1628
+00:59:17,679 --> 00:59:18,579
+olayı vardı ya.
+
+1629
+00:59:18,800 --> 00:59:19,980
+Hızını belirleme olayı
+
+1630
+00:59:19,980 --> 00:59:22,179
+vardı ya. Orada ortaya atılan
+
+1631
+00:59:22,179 --> 00:59:23,480
+yöntemlerden bir tanesi de
+
+1632
+00:59:23,480 --> 00:59:26,960
+client puzzle. Puzzle bulmaca.
+
+1633
+00:59:26,960 --> 00:59:27,860
+Şimdi ne diyoruz?
+
+1634
+00:59:27,860 --> 00:59:30,260
+Client'ın hızı daha düşük.
+
+1635
+00:59:30,260 --> 00:59:32,139
+Memorisi daha az.
+
+1636
+00:59:32,139 --> 00:59:34,380
+O yüzden ya memori erişim
+
+1637
+00:59:34,380 --> 00:59:36,539
+hızı da yavaş. Ya memori
+
+1638
+00:59:36,539 --> 00:59:38,840
+intensif ya da CPU intensif
+
+1639
+00:59:38,840 --> 00:59:41,000
+computational bir şeyi
+
+1640
+00:59:41,000 --> 00:59:42,500
+client'a yollayalım.
+
+1641
+00:59:42,500 --> 00:59:44,219
+Onun cevabını bulmadan
+
+1642
+00:59:44,219 --> 00:59:46,179
+bize geri dönmesin.
+
+1643
+00:59:46,179 --> 00:59:48,360
+Örneğin server her istekte bir
+
+1644
+00:59:48,360 --> 00:59:50,300
+c değeri gönderiyor.
+
+1645
+00:59:50,300 --> 00:59:52,679
+Client'ın ise şuradaki formüle
+
+1646
+00:59:52,679 --> 00:59:55,360
+göre x değerini bulması lazım.
+
+1647
+00:59:55,360 --> 00:59:58,639
+Şavan secure hash ama bir bitlik
+
+1648
+00:59:58,639 --> 01:00:00,159
+bir hesap yapacak.
+
+1649
+01:00:00,159 --> 01:00:01,980
+İşte orada bir
+
+1650
+01:00:01,980 --> 01:00:03,980
+çıkan değerinde
+
+1651
+01:00:03,980 --> 01:00:11,079
+n bitini geri döndürecek.
+
+1652
+01:00:11,079 --> 01:00:15,000
+Bir gigahertzlik bir işlemcide
+
+1653
+01:00:15,000 --> 01:00:17,619
+bu problemin çözümü 300
+
+1654
+01:00:17,619 --> 01:00:19,159
+milisaniye sürüyor.
+
+1655
+01:00:19,159 --> 01:00:20,260
+Bu da ne anlama geliyor?
+
+1656
+01:00:20,260 --> 01:00:22,699
+Arka arkaya hiç durmadan istek
+
+1657
+01:00:22,699 --> 01:00:24,980
+yapmak isteseniz bile bu
+
+1658
+01:00:24,980 --> 01:00:26,500
+isteklerin arası 300
+
+1659
+01:00:26,500 --> 01:00:28,340
+milisaniye açık olmak zorunda.
+
+1660
+01:00:28,340 --> 01:00:30,280
+300 milisaniye çok ciddi bir rakam.
+
+1661
+01:00:30,280 --> 01:00:32,440
+Çünkü niye? Her istekte server'dan
+
+1662
+01:00:32,440 --> 01:00:33,460
+c değeri değişiyor.
+
+1663
+01:00:33,460 --> 01:00:34,599
+Gelen c değeri değişiyor.
+
+1664
+01:00:34,599 --> 01:00:36,719
+Sizin de her seferinde yeni c
+
+1665
+01:00:36,719 --> 01:00:38,920
+değerini hesaplamanız lazım.
+
+1666
+01:00:38,920 --> 01:00:39,760
+Server için
+
+1667
+01:00:41,679 --> 01:00:44,360
+bunu hesaplaması çok çok çok
+
+1668
+01:00:44,360 --> 01:00:50,260
+kolay.
+
+1669
+01:00:50,260 --> 01:00:53,500
+Çünkü bir bitlik bir secure hash
+
+1670
+01:00:53,500 --> 01:00:54,860
+server'ın işlemci günü,
+
+1671
+01:00:54,940 --> 01:00:56,619
+düşündüğümüzde, yeteneklerini
+
+1672
+01:00:56,619 --> 01:01:00,460
+düşündüğümüzde onu zorlamayacak bir şey.
+
+1673
+01:01:00,460 --> 01:01:01,500
+Buna puzzle deniyor.
+
+1674
+01:01:01,500 --> 01:01:04,980
+Bunun memori hızının client'te daha
+
+1675
+01:01:04,980 --> 01:01:07,460
+düşük olmasından yola çıkarak memori
+
+1676
+01:01:07,460 --> 01:01:09,300
+intensif olanları da var veya işte
+
+1677
+01:01:09,300 --> 01:01:11,059
+buradaki gibi işlemci hızının düşük
+
+1678
+01:01:11,059 --> 01:01:13,500
+olduğundan yola çıkarak işlemci
+
+1679
+01:01:13,500 --> 01:01:15,699
+kullanımıyla alakalı olanlar var.
+
+1680
+01:01:15,699 --> 01:01:16,500
+Ancak
+
+1681
+01:01:21,199 --> 01:01:23,079
+hani n değeri var ya şurada o n
+
+1682
+01:01:23,079 --> 01:01:25,159
+değerinde kaç bit döndürülecek,
+
+1683
+01:01:25,159 --> 01:01:26,920
+kaç bit şey yapılacak?
+
+1684
+01:01:26,920 --> 01:01:30,360
+Bu işlem kaç bit için hesaplanacak?
+
+1685
+01:01:30,360 --> 01:01:32,440
+Saldırının şeyine göre n bit değerini
+
+1686
+01:01:32,440 --> 01:01:37,239
+değiştirerek hesaplanması gereken bit
+
+1687
+01:01:37,239 --> 01:01:39,400
+miktarı artıp azaltılabiliyor, şey
+
+1688
+01:01:39,400 --> 01:01:40,440
+yapılabiliyor.
+
+1689
+01:01:40,440 --> 01:01:42,480
+Ancak sorun şu,
+
+1690
+01:01:42,480 --> 01:01:44,159
+hem server tarafında hem de client
+
+1691
+01:01:44,159 --> 01:01:46,519
+tarafında protokol değişikliği
+
+1692
+01:01:46,519 --> 01:01:47,320
+yapmamız lazım.
+
+1693
+01:01:47,320 --> 01:01:48,880
+Bunu içerecek şekilde.
+
+1694
+01:01:48,880 --> 01:01:52,599
+Bakın sin cookie'de protokol
+
+1695
+01:01:54,519 --> 01:01:56,039
+client tarafında hiçbir değişiklik
+
+1696
+01:01:56,039 --> 01:01:56,719
+gerektirmiyor.
+
+1697
+01:01:56,719 --> 01:02:00,000
+Bu sin cookie.
+
+1698
+01:02:00,000 --> 01:02:01,719
+İşlediğim sistemi körlüğünde bir
+
+1699
+01:02:01,719 --> 01:02:03,599
+güncelleme ile çok rahat yapılabilecek
+
+1700
+01:02:03,599 --> 01:02:04,000
+bir şey.
+
+1701
+01:02:04,000 --> 01:02:06,400
+Uygulamalar etkilenmiyor ama burada
+
+1702
+01:02:07,519 --> 01:02:11,400
+çok net bir şekilde değişiklik var.
+
+1703
+01:02:11,400 --> 01:02:14,760
+Bunun hem clientta hem serverda
+
+1704
+01:02:14,760 --> 01:02:16,719
+gerçekleştirilmesi lazım.
+
+1705
+01:02:16,719 --> 01:02:19,079
+Diğer taraftan da kötü niyetli
+
+1706
+01:02:19,079 --> 01:02:23,400
+olmayan, iyi niyetli olan ve mobil
+
+1707
+01:02:23,400 --> 01:02:25,360
+olan, pille çalışan
+
+1708
+01:02:25,360 --> 01:02:31,280
+clientların performansını ciddi anlamda
+
+1709
+01:02:31,280 --> 01:02:34,320
+kötü etkileyecek bir durum bu bahsettiğimiz
+
+1710
+01:02:34,320 --> 01:02:34,719
+şey.
+
+1711
+01:02:34,719 --> 01:02:36,800
+Düşünsenize daha fazla enerji
+
+1712
+01:02:36,800 --> 01:02:40,440
+harcayacak, daha kısa sürede pili
+
+1713
+01:02:40,440 --> 01:02:42,480
+tükenecek ve benzeri şeyler.
+
+1714
+01:02:42,480 --> 01:02:46,800
+Ondan ötürü maalesef gerçek hayatta
+
+1715
+01:02:46,800 --> 01:02:50,039
+günümüzde client puzzle'ı kullanmıyoruz.
+
+1716
+01:02:50,039 --> 01:02:51,639
+İyi bir çözüm olmasına rağmen
+
+1717
+01:02:51,639 --> 01:02:52,519
+kullanamıyoruz.
+
+1718
+01:02:52,519 --> 01:02:55,280
+Belki ondan daha iyi bir çözüm.
+
+1719
+01:02:55,360 --> 01:02:56,639
+Ortaya çıkabilir.
+
+1720
+01:02:56,639 --> 01:03:02,280
+Evet arkadaşlar bugünkü dersimiz bu
+
+1721
+01:03:02,280 --> 01:03:02,719
+kadar.
+
+1722
+01:03:02,719 --> 01:03:05,599
+Haftaya bu kaldığımız yerden devam
+
+1723
+01:03:05,599 --> 01:03:06,119
+edeceğiz.
+
+1724
+01:03:06,119 --> 01:03:09,960
+Zaten konularımızla başa baş gidiyoruz.
+
+1725
+01:03:09,960 --> 01:03:11,480
+Eksiğimiz yok, şeyimiz yok.
+
+1726
+01:03:11,480 --> 01:03:14,119
+O yüzden şu anda iyi durumdayız.
+
+1727
+01:03:14,119 --> 01:03:18,719
+Hepinize teşekkür ediyorum.
+
+1728
+01:03:18,719 --> 01:03:20,599
+İyi haftalar diliyorum.
+
+1729
+01:03:20,599 --> 01:03:23,119
+Haftaya görüşmek üzere arkadaşlar.
+
+1730
+01:03:23,119 --> 01:03:24,320
+İyi haftalar hocam, iyi günler.
+
+1731
+01:03:24,320 --> 01:03:25,280
+İyi haftalar.
+
+1732
+01:03:25,280 --> 01:03:26,559
+Sağ olun.
+

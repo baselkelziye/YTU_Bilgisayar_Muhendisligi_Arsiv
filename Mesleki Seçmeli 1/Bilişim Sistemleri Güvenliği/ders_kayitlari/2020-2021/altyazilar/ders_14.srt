@@ -1,0 +1,3420 @@
+1
+00:06:07,790 --> 00:06:09,350
+Sesim geliyor mu arkadaşlar?
+
+2
+00:06:11,230 --> 00:06:12,029
+Geliyor hocam.
+
+3
+00:06:12,689 --> 00:06:13,490
+Tamam süper.
+
+4
+00:06:14,430 --> 00:06:20,350
+Şimdi bugün yanılmıyorsam bu hafta dönemin son haftası.
+
+5
+00:06:21,470 --> 00:06:23,189
+Kapanış dersi yapacağız.
+
+6
+00:06:23,930 --> 00:06:27,930
+Çok fazla uzun bir şey değil ama ilginizi çekeceğini düşündüğüm bir konu.
+
+7
+00:06:29,610 --> 00:06:32,310
+Biraz donanım ağırlığı da var.
+
+8
+00:06:33,810 --> 00:06:35,589
+İşlemci mimarisi kısmı da var.
+
+9
+00:06:35,589 --> 00:06:40,870
+Ama son dönemin güncel konularından olduğu için bunu da gözden geçirelim istedim.
+
+10
+00:06:41,069 --> 00:06:44,769
+Çok uzun değil ama eğlenceli olur diye düşünüyorum.
+
+11
+00:06:46,610 --> 00:06:48,009
+Şimdi başlayalım bakalım.
+
+12
+00:06:49,410 --> 00:06:51,850
+Evet işlemci güvenliğine bakacağız.
+
+13
+00:06:51,850 --> 00:07:04,850
+Son zamanlarda biliyorsunuz Intel işlemcilerinde özellikle arka arkaya işlemcinin mimarisinden, tasarımından kaynaklı bir takım güvenlik zafiyeti.
+
+14
+00:07:05,589 --> 00:07:11,910
+Ve bu güvenlik zafiyetleri üzerine kurulu olan saldırılar söz konusu.
+
+15
+00:07:12,910 --> 00:07:14,029
+Bunları inceleyeceğiz.
+
+16
+00:07:15,089 --> 00:07:21,610
+İşlemcilerde güvenlik için neler yapılmış, hangi tedbirler alınmış onları bir gözden geçireceğiz.
+
+17
+00:07:22,949 --> 00:07:26,670
+Dediğim gibi çok derin bir konu ve aktif bir araştırma alanı.
+
+18
+00:07:27,870 --> 00:07:34,670
+Bazı noktalarda sadece neyin ne olduğunu bilmemiz ve kavramlardan haberdar olmanız yeterli.
+
+19
+00:07:35,589 --> 00:07:49,399
+Şimdi işlemcilere baktığımız zaman işlemcilerin temel olarak performans için optimize edildiğini görüyoruz.
+
+20
+00:07:50,120 --> 00:07:56,680
+Bu herhalde ilk işlemci üretiminden günümüze kadar temel amaç, temel hedef oldu.
+
+21
+00:07:56,680 --> 00:08:08,040
+Daha hızlı işlemci, bir seferde daha büyük veri üzerinde işlem yapabilen işlemci, daha çok adresleyebilen, daha çok core çekirdek içeren,
+
+22
+00:08:08,079 --> 00:08:18,740
+bu şekilde ancak baktığımız zaman güvenliğin de, daha önce bu ders kapsamında sürekli konuştuk, sürekli anlattık ya,
+
+23
+00:08:19,360 --> 00:08:22,540
+güvenliğin de göz önünde bulundurulması gerekiyor.
+
+24
+00:08:22,660 --> 00:08:33,080
+Çünkü güvenlik ile alakalı unsurları bir tasarım bitip kullanılmaya başlandıktan ve güvenlik zafiyetleri ortaya çıktıktan sonra işin içine sokmaya kalkarsak,
+
+25
+00:08:33,080 --> 00:08:38,080
+hem daha zafiyetleri açıklayabiliriz.
+
+26
+00:08:38,080 --> 00:08:45,080
+Hem daha fazla zaman anlamında, para anlamında kaybımız oluyor.
+
+27
+00:08:45,080 --> 00:08:59,080
+Bu açıdan son dönemde işlemcilerde de güvenlikle alakalı bir takım tasarımsal değişiklikler söz konusu, ek özellikler söz konusu.
+
+28
+00:08:59,080 --> 00:09:06,080
+Şeylerin haricinde hatırlarsanız zaten saldırılara bağlı olarak stack alanından kod çalıştırılamaması.
+
+29
+00:09:06,080 --> 00:09:07,080
+Mesela bu da bir şey.
+
+30
+00:09:08,080 --> 00:09:13,080
+Bu da tasarımsal bir şey ama şu an bahsedeceğimiz bunun daha ötesi bir şey.
+
+31
+00:09:13,080 --> 00:09:18,080
+Temel kavram Trusted Computing Based.
+
+32
+00:09:18,080 --> 00:09:25,080
+Yani çalıştıracağınıza güvendiğiniz kodun çalıştırılması.
+
+33
+00:09:25,080 --> 00:09:27,080
+Bu ne anlama geliyor?
+
+34
+00:09:27,080 --> 00:09:33,080
+Kod parçalarının açıkçası dijital sertifikalar ile imzalanmış olması.
+
+35
+00:09:33,080 --> 00:09:37,080
+Yani herhangi bir komut şeyini,
+
+36
+00:09:37,080 --> 00:09:41,080
+arka arkaya gelen komut grubunu çalıştırmıyorsunuz da bir programı,
+
+37
+00:09:41,080 --> 00:09:43,080
+işte bir exe'yi düşünün,
+
+38
+00:09:43,080 --> 00:09:45,080
+oradaki instructionları düşünün.
+
+39
+00:09:45,080 --> 00:09:51,080
+Herhangi bir instruction grubunu çalıştırmıyorsunuz da
+
+40
+00:09:51,080 --> 00:10:00,080
+size sertifikası gelmiş olan ve bu sertifikanın doğruluğu garantilenmiş olan bir kod parçasını çalıştırıyorsunuz.
+
+41
+00:10:00,080 --> 00:10:02,080
+Bu aslında çok önemli.
+
+42
+00:10:02,080 --> 00:10:06,080
+Çünkü işletim sistemi dersinde de konuşuyoruz,
+
+43
+00:10:06,080 --> 00:10:08,080
+burada da konuştuk.
+
+44
+00:10:08,080 --> 00:10:11,080
+Bir işlemci çalışmaya başladığında,
+
+45
+00:10:11,080 --> 00:10:16,080
+dolayısıyla bir bilgisayar sistemi çalışmaya başladığında,
+
+46
+00:10:16,080 --> 00:10:18,080
+doğal olarak varsaydığımız şey,
+
+47
+00:10:18,080 --> 00:10:22,080
+ilk aşamada işletim sisteminin devreye gireceği ve
+
+48
+00:10:22,080 --> 00:10:24,080
+sistemin bununla ilklendirileceği,
+
+49
+00:10:24,080 --> 00:10:27,080
+ilk yüklenen programın işletim sistemi olacağı.
+
+50
+00:10:27,080 --> 00:10:30,080
+Ama saldırıları da hatırlayın.
+
+51
+00:10:30,080 --> 00:10:34,080
+İşte Master Boot Record üzerinden yapılan saldırıları da konuşmuştuk.
+
+52
+00:10:34,080 --> 00:10:36,080
+O matriz örneğini,
+
+53
+00:10:36,080 --> 00:10:40,080
+kırmızı hap, mavi hap örneğini vermiştik.
+
+54
+00:10:40,080 --> 00:10:47,080
+Eğer bir işlemciye açılış anında doğru program yüklenmez ise
+
+55
+00:10:47,080 --> 00:10:52,080
+bir şekilde saldırgan tarafından öngörülmüş,
+
+56
+00:10:52,080 --> 00:10:56,080
+işte o NBR virüsü diye geçiyordu o dönemde hatırlayın,
+
+57
+00:10:56,080 --> 00:11:03,080
+Microsoft'un sanallaştırma ortamında karşımıza çıkmıştı.
+
+58
+00:11:03,080 --> 00:11:06,080
+Böyle bir şekilde ilklendirilirse,
+
+59
+00:11:06,080 --> 00:11:09,080
+yani işletim sistemi,
+
+60
+00:11:09,080 --> 00:11:13,080
+hatta onun altındaki sanallaştırma katmanındaki hypervisor,
+
+61
+00:11:13,080 --> 00:11:16,080
+bunlar ele geçirilmiş olursa,
+
+62
+00:11:16,080 --> 00:11:20,080
+bizim sonrasında alacağımız tedbirlerin tamamı boş olur,
+
+63
+00:11:20,080 --> 00:11:22,080
+anlamsız olur.
+
+64
+00:11:22,080 --> 00:11:26,080
+Ondan ötürü bir işlemcinin çalıştıracağı kodun
+
+65
+00:11:26,080 --> 00:11:30,080
+sertifikası olması gibi bir şey söz konusu.
+
+66
+00:11:30,080 --> 00:11:34,080
+Ve buna bağlı olarak bu kodu çalıştıracak mı, çalıştırmayacak mı?
+
+67
+00:11:34,080 --> 00:11:39,080
+Çünkü sertifikanın geçerliğini kontrol edebilmesi için
+
+68
+00:11:39,080 --> 00:11:43,080
+anahtar değerlerine ihtiyaç duyuyor.
+
+69
+00:11:43,080 --> 00:11:47,080
+Açık anahtar sertifika sistemlerinde
+
+70
+00:11:47,080 --> 00:11:50,080
+ne kadar açık anahtar public key desek de,
+
+71
+00:11:50,080 --> 00:11:52,080
+işin içinde bir de private key var.
+
+72
+00:11:52,080 --> 00:11:57,080
+Bunların zarar görmemesi, değiştirilmemesi veya sisteme
+
+73
+00:11:57,080 --> 00:12:01,080
+yeni keylerin konulmaması lazım.
+
+74
+00:12:01,080 --> 00:12:05,159
+Şimdi böyle olunca,
+
+75
+00:12:06,159 --> 00:12:16,159
+işlemcilerde bu trusted computing base diye bir kavram karşımıza çıktı.
+
+76
+00:12:16,159 --> 00:12:25,159
+Yani işlemci çalıştıracağı instructionların kabul edilebilir,
+
+77
+00:12:25,159 --> 00:12:32,159
+otentik doğruluğu ve güvenliği ispat edilmiş bir kaynaktan geldiğinden
+
+78
+00:12:32,159 --> 00:12:35,159
+emin olduktan sonra bunu çalıştırıyor.
+
+79
+00:12:36,159 --> 00:12:40,159
+Şimdi tabii ki işin bir tarafı bu ama
+
+80
+00:12:40,159 --> 00:12:43,159
+diğer tarafta da performansın artması lazım.
+
+81
+00:12:43,159 --> 00:12:45,159
+Yani çok tedbir aldığınız zaman,
+
+82
+00:12:45,159 --> 00:12:49,159
+çok fazla kontrol yaptığınız zaman bu sefer
+
+83
+00:12:49,159 --> 00:12:52,159
+performansı kötü etkiliyorsunuz.
+
+84
+00:12:52,159 --> 00:12:59,159
+Diğer taraftan işlemciler özellikle sürekli daha büyük veriyle
+
+85
+00:12:59,159 --> 00:13:04,159
+işlem yapılması gerektiğinden ötürü bazı sıklıkla yaptığımız
+
+86
+00:13:04,159 --> 00:13:05,159
+işlemler,
+
+87
+00:13:05,159 --> 00:13:10,159
+işlemlerin daha efektif olması adına yeni instructionlar,
+
+88
+00:13:10,159 --> 00:13:13,159
+yeni donanım özellikleri içiriyorlar.
+
+89
+00:13:13,159 --> 00:13:16,159
+Örneğin transactional memory bunlardan bir tanesi.
+
+90
+00:13:16,159 --> 00:13:18,159
+Transaction kavramını biliyoruz.
+
+91
+00:13:18,159 --> 00:13:20,159
+Ya öncesi ya sonrası var.
+
+92
+00:13:20,159 --> 00:13:23,159
+Aradaki durumu gözlemleyemiyoruz.
+
+93
+00:13:23,159 --> 00:13:28,159
+İşte transactional memory'de böyle memory'de transaction başlamadan öncesi var.
+
+94
+00:13:28,159 --> 00:13:31,159
+Transaction bittikten sonrası var.
+
+95
+00:13:31,159 --> 00:13:33,159
+Stable memory olarak da geçiyor.
+
+96
+00:13:33,159 --> 00:13:38,159
+Yani arada transaction ne kadar sürerse sürsün,
+
+97
+00:13:38,159 --> 00:13:42,159
+tabii ki saatlerce sürmeyecek öyle bir şey söz konusu değil ama
+
+98
+00:13:42,159 --> 00:13:47,159
+transaction'ın süresi içerisinde o memory'i gözlemleyemiyoruz.
+
+99
+00:13:47,159 --> 00:13:49,159
+Ya öncesini ya sonrasını gözlemliyoruz.
+
+100
+00:13:49,159 --> 00:13:56,159
+Bu da tutarlılık getiriyor, consistency getiriyor, coherence getiriyor.
+
+101
+00:13:56,159 --> 00:13:58,159
+Ama bunun bir bedeli var.
+
+102
+00:13:58,159 --> 00:14:02,159
+Diğer taraftan spekülatif execution özelliği var.
+
+103
+00:14:02,159 --> 00:14:05,159
+Spekülasyon nedir?
+
+104
+00:14:05,159 --> 00:14:11,159
+Doğruluğu tam kesinleşmemiş bir nevi dedikodu gibi.
+
+105
+00:14:11,159 --> 00:14:14,159
+Ama burada bilimsel dedikodu veya teknik dedikodu.
+
+106
+00:14:14,159 --> 00:14:20,159
+İşlemci çalıştırıp çalıştırmayacağını bilmediği bir kodu
+
+107
+00:14:20,159 --> 00:14:28,159
+önceden çalıştırıyor ki ihtiyaç duyulursa gerçekten çalıştırma noktasına gelinirse
+
+108
+00:14:28,159 --> 00:14:31,159
+çalıştırmış olacağı için performanstan kazansın.
+
+109
+00:14:31,159 --> 00:14:34,159
+Yani bunu aslında neye benzetebilirsiniz?
+
+110
+00:14:34,159 --> 00:14:40,159
+Önceden böyle yarı pişirilmiş gibi veya sadece ısıtılıp yenilebilecek gibi
+
+111
+00:14:40,159 --> 00:14:43,159
+önceden hazırlanmış yemekler vardır ya
+
+112
+00:14:43,159 --> 00:14:47,159
+çok hızlı bir şekilde bir ısıtma sonucunda yemeğe hazır hale gelirler
+
+113
+00:14:47,159 --> 00:14:50,159
+veya işte bu marketlerde hazır çorba satılır.
+
+114
+00:14:50,159 --> 00:14:53,159
+Sıcak suyun içerisine koyarsınız olur.
+
+115
+00:14:53,159 --> 00:14:57,159
+Tam günlük hayattan örnek vermek gerekirse buradaki mantık da bu.
+
+116
+00:14:57,159 --> 00:15:00,159
+İşlemci boş kaldığı zamanlarda
+
+117
+00:15:01,159 --> 00:15:04,159
+çünkü sonuçta biliyorsunuz ayo için bekleyebiliyor,
+
+118
+00:15:04,159 --> 00:15:07,159
+başka bir donanım parçası için bekleyebiliyor.
+
+119
+00:15:07,159 --> 00:15:11,159
+O boş kaldığı zamanlardaki clock cycle'ı boşa geçmesin diye
+
+120
+00:15:11,159 --> 00:15:16,159
+gerçekte çalıştırıp çalıştırmayacağını tam olarak bilmediği
+
+121
+00:15:16,159 --> 00:15:20,159
+instructionları da çalıştırıyor ve kenarda bunları not ediyor sonuçta.
+
+122
+00:15:20,159 --> 00:15:25,159
+Şimdi burada bu özellikler bir taraftan işi hızlandırıyor ama
+
+123
+00:15:25,159 --> 00:15:30,159
+diğer taraftan da tahmin edeceğiniz üzere saldırılara davetiye çıkartıyor.
+
+124
+00:15:31,159 --> 00:15:35,159
+Bu şu anda günümüzde çok ciddi bir araştırma alanı.
+
+125
+00:15:35,159 --> 00:15:39,159
+Güvenlik açısından araştırma alanı.
+
+126
+00:15:39,159 --> 00:15:43,159
+Tabii ki açıkları bulmak çok daha zor, çok daha sıkıntılı.
+
+127
+00:15:43,159 --> 00:15:47,159
+Donanım seviyesinde, işlemcinin mimarisi seviyesinde
+
+128
+00:15:47,159 --> 00:15:54,159
+olayı kavramanız, o şekilde düşünmeniz ve canlandırmanız gerekiyor.
+
+129
+00:15:54,159 --> 00:16:00,159
+Şimdi önce işlemcilerde, Intel işlemcisi örneğinden gideceğiz.
+
+130
+00:16:01,159 --> 00:16:05,159
+Ancak ARM işlemcisinde de var, PowerPC işlemcisinde de var,
+
+131
+00:16:05,159 --> 00:16:09,159
+diğer başka işlemcilerde de var.
+
+132
+00:16:09,159 --> 00:16:14,159
+Son yıllarda güvenlik açısından geliştirilmiş ek özellikler var.
+
+133
+00:16:14,159 --> 00:16:19,159
+En yaygın olarak kullanılan işlemcilerden bir tanesi Intel olduğu için
+
+134
+00:16:19,159 --> 00:16:24,159
+ondaki özellikler üzerinden biraz fikir sahibi olacağız.
+
+135
+00:16:24,159 --> 00:16:27,159
+Nedir bu özellikler?
+
+136
+00:16:27,159 --> 00:16:30,159
+İşte Software Guard Extensions.
+
+137
+00:16:30,159 --> 00:16:38,159
+Yazılımlara koruma sağlamak adına birtakım eklentiler var.
+
+138
+00:16:38,159 --> 00:16:42,159
+Donanım eklentileri var, mimari seviyesinde eklenti var.
+
+139
+00:16:42,159 --> 00:16:46,159
+Yani işlemci özel mimari yapılara sahip.
+
+140
+00:16:46,159 --> 00:16:50,159
+En basitinden işletim sisteminde düşünün,
+
+141
+00:16:50,159 --> 00:16:54,159
+proseslerin memorisinin birbirinden izole olması gerekiyor.
+
+142
+00:16:54,159 --> 00:16:57,159
+Bir prosesin diğer prosesin memorisine erişememesi gerekiyor.
+
+143
+00:16:57,159 --> 00:16:59,159
+Bu nasıl gerçekleşiyor?
+
+144
+00:16:59,159 --> 00:17:04,160
+İşlemcinin donanım seviyesinde bunu sağlaması ile gerçekleşiyor.
+
+145
+00:17:04,160 --> 00:17:09,160
+Ama artık bu günlük hayatımızın bir parçası ve çok uzun yıllardan beri,
+
+146
+00:17:09,160 --> 00:17:11,160
+70'lerden beri kullanıyoruz.
+
+147
+00:17:11,160 --> 00:17:15,160
+O yüzden buna bir extension, özel bir eklenti olarak bakmıyoruz.
+
+148
+00:17:15,160 --> 00:17:17,160
+İşin doğası olarak bakıyoruz.
+
+149
+00:17:17,160 --> 00:17:19,160
+Ama şu konuştuğumuz şeyler,
+
+150
+00:17:19,160 --> 00:17:27,160
+bilişim sistemlerine yapılan saldırılar incelendikçe ortaya çıkanlar daha iyi anlaşıldıkça,
+
+151
+00:17:27,160 --> 00:17:32,160
+yapılmasının gerekliliği ortaya çıkan değişiklikler.
+
+152
+00:17:32,160 --> 00:17:34,160
+Onları gözden geçireceğiz.
+
+153
+00:17:34,160 --> 00:17:40,160
+Şimdi Software Guard Extensions'ın birkaç tane temel hedefi var.
+
+154
+00:17:40,160 --> 00:17:43,160
+Biri enclave diye geçiyor.
+
+155
+00:17:43,160 --> 00:17:51,160
+Enclave, aynı terimler, aynı kavramlar, farklı terimlerle karşımıza çıkıyor.
+
+156
+00:17:51,160 --> 00:17:54,160
+Aslında enclave bir jail demek, bir hücre demek.
+
+157
+00:17:54,160 --> 00:17:55,160
+Yani bir kılıf demek.
+
+158
+00:17:55,160 --> 00:17:58,160
+Bir kılıfın içerisine sokuyoruz.
+
+159
+00:17:58,160 --> 00:18:02,160
+Bazen bazı terimler çok akademik, bilimsel oluyor.
+
+160
+00:18:02,160 --> 00:18:07,160
+O yüzden herhangi bir ticari üründe doğrudan kullanılamaz hale geliyor.
+
+161
+00:18:07,160 --> 00:18:12,160
+İşte jail terimi de, compartment terimi de bunlardan bir tanesi.
+
+162
+00:18:12,160 --> 00:18:18,160
+O zaman üretici firmalarda o bilimsel kavramı, o bilimsel yaklaşımı
+
+163
+00:18:18,160 --> 00:18:24,160
+kendi teknolojik ürünlerinde en doğru ifade edecek olan terimi buluyorlar.
+
+164
+00:18:24,160 --> 00:18:25,160
+Enclave bu.
+
+165
+00:18:25,160 --> 00:18:26,160
+Bakın neymiş?
+
+166
+00:18:26,160 --> 00:18:27,160
+Bir isolation.
+
+167
+00:18:27,160 --> 00:18:34,160
+Running code and memory isolated from the rest of the system.
+
+168
+00:18:34,160 --> 00:18:42,160
+Yani öyle bir memori alanı oluşturuyorsunuz ki, bu memori alanı yine bir prosese ait,
+
+169
+00:18:42,160 --> 00:18:47,160
+fakat prosesin diğer sahip olduğu memori alanlarından özel olarak izole edilmiş.
+
+170
+00:18:47,160 --> 00:18:49,160
+Hep ne biliyoruz bugüne kadar?
+
+171
+00:18:49,160 --> 00:18:53,160
+Prosesin memori alanı vardır ve proses bu memori alanına çok serbest gidiyor.
+
+172
+00:18:53,160 --> 00:18:55,160
+Ama çok serbest bir şekilde erişir.
+
+173
+00:18:55,160 --> 00:18:56,160
+Değil.
+
+174
+00:18:56,160 --> 00:19:03,160
+Bunun içerisinde bir bölge diğer bölgelerden ayrılmış oluyor donanım seviyesinde.
+
+175
+00:19:03,160 --> 00:19:05,160
+Göreceğiz biraz daha.
+
+176
+00:19:05,160 --> 00:19:09,160
+Attestation, bir şeye şahitlik etmek.
+
+177
+00:19:09,160 --> 00:19:17,160
+Burada da enclave dediğimiz o isolation, yani sandbox öyle düşünün.
+
+178
+00:19:17,160 --> 00:19:19,160
+Kavramları artık biliyorsunuz.
+
+179
+00:19:19,160 --> 00:19:21,160
+Bütün dönem boyunca konuştuk.
+
+180
+00:19:21,160 --> 00:19:34,160
+Sandbox içerisinde çalışan kod parçasının hakikaten orada çalışması gereken kod olduğuna şahitlik edilmesi.
+
+181
+00:19:34,160 --> 00:19:36,160
+Yani az önce uzun uzun anlattım.
+
+182
+00:19:36,160 --> 00:19:41,160
+Trusted computing base'in farklı bir şekilde karşımıza çıkıyor olması.
+
+183
+00:19:41,160 --> 00:19:43,160
+Minimum TCD.
+
+184
+00:19:43,160 --> 00:19:47,160
+Neye güveniyoruz sadece donanım seviyesinde?
+
+185
+00:19:47,160 --> 00:19:49,160
+İşlemciye güveniyoruz.
+
+186
+00:19:49,160 --> 00:19:54,160
+İşlemci haricinde, işlemcinin dışındaki hiçbir şeye güvenmiyoruz.
+
+187
+00:19:54,160 --> 00:19:59,160
+Yani register'lara ve register'ların içeriğine güveniyoruz.
+
+188
+00:19:59,160 --> 00:20:06,160
+Cache memorisine işlemcinin içerisinde olduğu için güveniyoruz gibi.
+
+189
+00:20:06,160 --> 00:20:08,160
+Orada da göreceğiz birazdan.
+
+190
+00:20:08,160 --> 00:20:14,160
+Ama işlemcinin fiziksel sınırları dışındaki hiçbir şeye güvenmiyoruz.
+
+191
+00:20:14,160 --> 00:20:17,160
+Yani memoriye güvenmiyoruz, çevre birimlere güvenmiyoruz.
+
+192
+00:20:17,160 --> 00:20:18,160
+Nedir?
+
+193
+00:20:18,160 --> 00:20:19,160
+Fizike güvenmiyoruz.
+
+194
+00:20:19,160 --> 00:20:23,160
+Oradan okuduğumuz ve yazdığımız şeylere değişmiş olabilir.
+
+195
+00:20:23,160 --> 00:20:35,160
+O yüzden bakın son dönemde memoriye verinin encrypted yani şifrelerek yazılması durumları bile söz konusu.
+
+196
+00:20:35,160 --> 00:20:44,160
+Ama tabii ki bunu sıradan kullandığımız laptopumuzda, desktopumuzda olacak diye bir kural yok.
+
+197
+00:20:44,160 --> 00:20:47,160
+Öyle bir donanım yani bu özelliğin olduğu işlemcinin.
+
+198
+00:20:47,160 --> 00:20:52,160
+Bu işlemcinin maliyeti daha fazla, üretimi daha az şu an için.
+
+199
+00:20:52,160 --> 00:20:57,049
+O yüzden fiyatı yüksek.
+
+200
+00:20:57,049 --> 00:21:00,049
+Uygulamanın ihtiyacına bağlı olarak bunun böyle olması lazım.
+
+201
+00:21:00,049 --> 00:21:03,049
+Ama bakın yine orada temel başka bir şey var.
+
+202
+00:21:03,049 --> 00:21:09,049
+Encrypt ederken, decrypt ederken kullandığımız şifrenin güvenli olarak saklanabilmesi lazım.
+
+203
+00:21:09,049 --> 00:21:14,049
+Yani o şifreyi açıkta tutmamam lazım da bu mantığa göre neyin içerisinde tutmam lazım?
+
+204
+00:21:14,049 --> 00:21:18,049
+Bir encrypt, bir sandbox'ın içerisinde tutmam lazım.
+
+205
+00:21:19,049 --> 00:21:25,049
+Veya bir web server'ın HTTPS key'inin saklanması.
+
+206
+00:21:25,049 --> 00:21:28,049
+Şimdi bu key'in ele geçmemesi gerekiyor.
+
+207
+00:21:28,049 --> 00:21:29,049
+Çünkü neden?
+
+208
+00:21:29,049 --> 00:21:33,049
+HTTP trafiğinin çözülmesi ve gönderilmesi.
+
+209
+00:21:33,049 --> 00:21:37,049
+Yani alınanın çözülmesi, gönderilecek olanın şifrelenmesi.
+
+210
+00:21:37,049 --> 00:21:40,049
+Tamamen bu anahtarlar üzerinden gerçekleşiyor.
+
+211
+00:21:40,049 --> 00:21:45,049
+Bu durumda bunu bir encrypt içerisinde saklarsak.
+
+212
+00:21:45,049 --> 00:21:48,049
+Malware, kötü niyetli kod parçası.
+
+213
+00:21:49,049 --> 00:21:59,049
+Bu encrypt'e donanımsal olarak giremeyeceği için o key değerlerine erişemeyecek, bozamayacak veya bilgiyi çalamayacak diye.
+
+214
+00:21:59,049 --> 00:22:03,049
+En azından lokaldaki senaryoyu düşündüğümüzde.
+
+215
+00:22:03,049 --> 00:22:05,049
+Veya bir cloud provider var.
+
+216
+00:22:05,049 --> 00:22:08,049
+Cloud servis sağlayıcısı, cloud servis sağlayıcısı var.
+
+217
+00:22:08,049 --> 00:22:12,049
+Orada bir programımı çalıştıracağım.
+
+218
+00:22:12,049 --> 00:22:15,049
+Sonuçta bak bir sanal ortam sağlıyor.
+
+219
+00:22:15,049 --> 00:22:21,049
+O sağladığı sanal ortamın içeriğine bakmanın ne kadar kolay olduğunu biliyoruz.
+
+220
+00:22:21,049 --> 00:22:23,049
+Değil mi?
+
+221
+00:22:23,049 --> 00:22:25,049
+Hatırlayın.
+
+222
+00:22:25,049 --> 00:22:34,049
+Doğrudan sanal ortam, hypervisor üzerinden oluşturulan sanal makinenin memorisine erişebiliyorduk.
+
+223
+00:22:34,049 --> 00:22:37,049
+Introspection tekniğiyle bunu yapabiliyorduk.
+
+224
+00:22:37,049 --> 00:22:41,049
+Bu durumda ben orada bir şeyi gizli tutamam açıkçası.
+
+225
+00:22:41,049 --> 00:22:43,049
+Ama işte.
+
+226
+00:22:43,049 --> 00:22:46,049
+Bu enclave teknolojisi kullanılırsa.
+
+227
+00:22:46,049 --> 00:22:52,049
+O zaman benim oradaki sanal ortamın bir enclave içerisinde çalışırsa.
+
+228
+00:22:52,049 --> 00:23:01,049
+Oranın yönetici seviyesindeki kişisi bile benim ne çalıştırdığımı göremeyeceği gibi benim verime de erişemez.
+
+229
+00:23:01,049 --> 00:23:05,049
+Hele ki bunu işte memoriye yazılan verinin şifrelenmesi.
+
+230
+00:23:05,049 --> 00:23:13,049
+Dışarıya diske çıkartılan peripherallara çıkartılan saklanmak üzere çıkartılan verilerin şifrelenmesi diye.
+
+231
+00:23:13,049 --> 00:23:15,049
+Bunların ne yapılması diye düşünecek olursak.
+
+232
+00:23:15,049 --> 00:23:17,049
+İş bayağı zorlaşır.
+
+233
+00:23:17,049 --> 00:23:20,049
+Client tarafında baktığımızda da işte.
+
+234
+00:23:20,049 --> 00:23:23,049
+Malware'lerin tespit edilmesi.
+
+235
+00:23:23,049 --> 00:23:38,160
+Virüslerin tespit edilmesi için kullandığımız antivirüs yazılımların, antimalware yazılımlarının signature kontrol özellikleri var.
+
+236
+00:23:38,160 --> 00:23:42,160
+Yani bu virüslere veya malwarelere her zaman yapay zeka ile bulmuyorlar.
+
+237
+00:23:42,160 --> 00:23:44,160
+Davranış tespiti üzerinden.
+
+238
+00:23:44,160 --> 00:23:46,160
+Davranış tespiti üzerinden bulmuyorlar.
+
+239
+00:23:46,160 --> 00:23:54,160
+Çok basit bir şekilde bazı özetler çıkartarak bu özetlere göre oluşan hash değerleri üzerinden buluyoruz.
+
+240
+00:23:54,160 --> 00:23:57,160
+Bunların açık edilmemesi lazım.
+
+241
+00:23:57,160 --> 00:23:59,160
+Bunların ortaya çıkmaması, değiştirilmemesi lazım.
+
+242
+00:23:59,160 --> 00:24:04,160
+Yine burada işte enclave dediğimiz teknoloji işine giriyor.
+
+243
+00:24:04,160 --> 00:24:06,160
+Bakın az önce anlattım size.
+
+244
+00:24:06,160 --> 00:24:10,160
+Burada görsel olarak biraz daha şey yapacağız.
+
+245
+00:24:10,160 --> 00:24:13,160
+Ayrıntılı gözden geçireceğiz.
+
+246
+00:24:13,160 --> 00:24:16,160
+İşte processing memory'si var.
+
+247
+00:24:16,160 --> 00:24:23,160
+Processing memory'si şu pembemsi görünen, morumsu görünen, mor daha doğrusu, morumsu görünen yer.
+
+248
+00:24:23,160 --> 00:24:30,160
+Bunun içerisindeki mavi kısım da güvenilir olmayan kısım.
+
+249
+00:24:30,160 --> 00:24:35,160
+İlla ki kötü bir şey işleyecek diye kural yok ama sonuçta ele geçirebilir şey olabilir.
+
+250
+00:24:35,160 --> 00:24:43,890
+Şimdi buradayken bir özel komutla bir instruction ile create enclave diyoruz.
+
+251
+00:24:43,890 --> 00:24:46,890
+Yani bir sandbox oluştur diyoruz.
+
+252
+00:24:46,890 --> 00:24:56,890
+O zaman bakın yine bu mor yapının içerisinde yani prosesin memory'si içerisinde izole edilmiş ayrı bir memori alanı oluşuyor.
+
+253
+00:24:56,890 --> 00:24:58,890
+Bu yine prosese ait.
+
+254
+00:24:58,890 --> 00:25:04,890
+Fakat dışarıdan erişilemez durumda.
+
+255
+00:25:04,890 --> 00:25:11,890
+Şu untrusted part'tan bir çağrı buraya doğru yapılabiliyor.
+
+256
+00:25:11,890 --> 00:25:12,890
+Ama ancak çağrı yapılabiliyor.
+
+257
+00:25:12,890 --> 00:25:22,890
+Ve buranın, bu enclave içerisindeki kısmın çağrılabilir dediği metotlar, fonksiyonlar çağrılabiliyor.
+
+258
+00:25:22,890 --> 00:25:27,890
+Onun haricinde veriye falan erişilemiyor.
+
+259
+00:25:27,890 --> 00:25:32,890
+Yani enclave'in içerisindeki her şey sadece enclave'in içerisine erişebiliyor.
+
+260
+00:25:32,890 --> 00:25:33,890
+Tam bir sandbox.
+
+261
+00:25:33,890 --> 00:25:35,890
+Tam bir hücre yapısı.
+
+262
+00:25:35,890 --> 00:25:37,890
+Bunu şöyle düşünebilirsiniz.
+
+263
+00:25:37,890 --> 00:25:40,890
+Hani bu banka kartlarımızda smart card var.
+
+264
+00:25:40,890 --> 00:25:41,890
+Veyahut da işte sim kartlarımız var.
+
+265
+00:25:42,890 --> 00:25:48,890
+Onun içerisinde aslında anahtar değerleri tutuluyor.
+
+266
+00:25:48,890 --> 00:25:52,890
+Ve donanım yapısı sayesinde bu anahtar değerlerini koruyor.
+
+267
+00:25:52,890 --> 00:25:54,890
+Dışarıya çıkmasını engelliyor.
+
+268
+00:25:54,890 --> 00:25:58,890
+Ama ben şifreleme veya deşifreleme yapacağım zaman veriyi ona gönderiyorum.
+
+269
+00:25:58,890 --> 00:26:04,890
+O içindeki anahtar da bunu şifreliyor, sonucu döndürüyor veya deşifre ediyor, sonucu döndürüyor.
+
+270
+00:26:04,890 --> 00:26:06,890
+Yani arayüz belirli.
+
+271
+00:26:06,890 --> 00:26:08,890
+İşlem içeride yapılıyor.
+
+272
+00:26:08,890 --> 00:26:10,890
+Sonuç bana döndürülüyor.
+
+273
+00:26:10,890 --> 00:26:12,890
+Peki enclave'i de böyle düşünebilirsiniz.
+
+274
+00:26:12,890 --> 00:26:14,890
+Yani bu bir sandbox.
+
+275
+00:26:14,890 --> 00:26:16,890
+Onun içerisinde metotlar var, fonksiyonlar var.
+
+276
+00:26:16,890 --> 00:26:20,430
+Onun içerisinde data var.
+
+277
+00:26:20,430 --> 00:26:22,430
+Doğrudan erişilemiyor.
+
+278
+00:26:22,430 --> 00:26:28,430
+Ancak arayüzde tarifli olan şeyler üzerinden erişiliyor.
+
+279
+00:26:28,430 --> 00:26:41,769
+Ve böylece biz prosesin içerisindeki bir memori alanı olmasına rağmen bu alanı prosesin geri kalanından korumuş oluyoruz.
+
+280
+00:26:41,769 --> 00:26:43,769
+Yani aslında neye benziyor bu?
+
+281
+00:26:43,769 --> 00:26:45,769
+Şey yapıyorduk ki hatırlarsanız.
+
+282
+00:26:45,769 --> 00:26:53,769
+Software Fault Isolation'da aynı prosesin içerisindeki trap'leri birbirlerinden nasıl koruyabiliriz?
+
+283
+00:26:53,769 --> 00:26:57,769
+İşte segmentlere bölüyorduk.
+
+284
+00:26:57,769 --> 00:26:59,769
+Segment kontrolü yapıyorduk.
+
+285
+00:26:59,769 --> 00:27:07,769
+O trap kendisine atanmış olan, assign edilmiş olan segment'e mi erişiyor, onun dışına mı erişiyor?
+
+286
+00:27:07,769 --> 00:27:13,769
+Onun donanım seviyesinde farklı bir şekilde daha güvenilir mi?
+
+287
+00:27:13,769 --> 00:27:15,769
+O da farklı bir şekilde gerçekleştirilmesi.
+
+288
+00:27:15,769 --> 00:27:29,450
+Şimdi o zaman bakın Enclave'in kodu da, datası da memoriye nasıl yazılıyor?
+
+289
+00:27:29,450 --> 00:27:31,450
+Encrypted bir şekilde yazılıyor.
+
+290
+00:27:31,450 --> 00:27:41,819
+Ve Enclave'in cache edilmiş datasına da Enclave dışından erişilmesine engel oluyor.
+
+291
+00:27:41,819 --> 00:27:43,819
+Çünkü neden?
+
+292
+00:27:43,819 --> 00:27:45,819
+Cache'e herkes erişebilir.
+
+293
+00:27:45,819 --> 00:27:47,819
+Her proses erişebilir.
+
+294
+00:27:47,819 --> 00:27:51,819
+Cache'in içeriğini sorgulayabiliyoruz çünkü.
+
+295
+00:27:51,819 --> 00:27:53,819
+Şimdi şöyle düşünün.
+
+296
+00:27:53,819 --> 00:27:55,819
+Bu kadar tedbir aldınız, bu kadar uğraştınız.
+
+297
+00:27:55,819 --> 00:27:59,819
+Enclave tarafındaki kod parçası çalışıyor.
+
+298
+00:27:59,819 --> 00:28:03,819
+Fakat preempt ediliyor, bir şey oluyor.
+
+299
+00:28:03,819 --> 00:28:13,819
+Yerine öbür kod geliyor ve cache'in içeriğini inceleyerek aslında Enclave'in üzerinde çalıştığı verinin ne olduğunu öğreniyor.
+
+300
+00:28:13,819 --> 00:28:15,819
+Böyle bir senaryo da söz konusu olabilir.
+
+301
+00:28:15,819 --> 00:28:19,819
+Neyin garanti edilmesi lazım?
+
+302
+00:28:19,819 --> 00:28:29,819
+Cache'lenmiş Enclave'de çalışmaya bağlı olarak cache'lenmiş olan verinin normal prosesler tarafından,
+
+303
+00:28:29,819 --> 00:28:37,819
+hatta aynı proses Enclave'in ait olduğu prosesin diğer kodları tarafından erişilmemesinin garantilenmesi lazım.
+
+304
+00:28:37,819 --> 00:28:43,819
+Bu da tabii ki işlemciye bir karmaşıklık getiriyor, maliyetini arttıran bir şey.
+
+305
+00:28:43,819 --> 00:28:49,450
+Intel üzerinden gittik işte. Nedir?
+
+306
+00:28:49,450 --> 00:28:55,450
+Enclave create, Enclave add, Enclave extend, Enclave init, Enclave enter, Enclave exit.
+
+307
+00:28:55,450 --> 00:29:01,450
+Şimdi burada gösterilmiş zaten.
+
+308
+00:29:01,450 --> 00:29:09,450
+Enclave'in iklendirilmesini sağlayan, hatırlıyor musunuz? Şurada bakın.
+
+309
+00:29:09,450 --> 00:29:13,450
+Create Enclave. Enclave'in iklendirilmesini sağlayan bu kod parçası,
+
+310
+00:29:13,450 --> 00:29:17,450
+şöyle hareket ettirdim, pardon.
+
+311
+00:29:17,450 --> 00:29:23,450
+Şu kod parçası, yani şuradaki adım, nasıl arkadaşlar?
+
+312
+00:29:23,450 --> 00:29:25,450
+Untrusted.
+
+313
+00:29:25,450 --> 00:29:29,450
+Çünkü Enclave'den itibaren her şey Trusted.
+
+314
+00:29:29,450 --> 00:29:31,450
+Onun haricindeki kısım Untrusted.
+
+315
+00:29:31,450 --> 00:29:35,450
+Bu da şu soruyu gündeme getiriyor.
+
+316
+00:29:35,450 --> 00:29:39,450
+Enclave'i iklendiren kötü niyetliyse,
+
+317
+00:29:39,450 --> 00:29:42,450
+hani şeyi konuştuk ya bir dersin başında,
+
+318
+00:29:42,450 --> 00:29:45,450
+işletim sistemi yerine başka bir şey yüklenirse,
+
+319
+00:29:45,450 --> 00:29:50,450
+yine böyle bir sanal matriks ortamı mı oluşacak şeklinde.
+
+320
+00:29:50,450 --> 00:29:52,450
+Öyle bir durum söz konusu.
+
+321
+00:29:52,450 --> 00:29:59,450
+Bunun için tamamen public key kriptografi üzerine kurulu yapılar var.
+
+322
+00:29:59,450 --> 00:30:03,450
+Bir tane Quoting Agent var.
+
+323
+00:30:03,450 --> 00:30:12,210
+Yani Enclave'de çalışacak olan kod parçasının ve oraya yüklenecek olan verinin
+
+324
+00:30:12,210 --> 00:30:14,210
+hakikaten, gerçekten,
+
+325
+00:30:14,210 --> 00:30:17,210
+kod parçası ve o veri olduğunun garantisini gösteriyor.
+
+326
+00:30:17,210 --> 00:30:21,210
+İşte buna attestation, şahitlik etme diyoruz.
+
+327
+00:30:21,210 --> 00:30:24,210
+Bir nevi noter mekanizması.
+
+328
+00:30:24,210 --> 00:30:27,210
+Böyle bir yapı oluşturulması gerekiyor.
+
+329
+00:30:27,210 --> 00:30:32,210
+Yine sertifikalar üzerine kurulu, public key kriptografi üzerine kurulu.
+
+330
+00:30:32,210 --> 00:30:37,210
+Şimdi sonuçta Software Guard Extension,
+
+331
+00:30:37,210 --> 00:30:43,210
+gizli bilginin, hassas bilgilerinin, gizli verinin, hassas verinin,
+
+332
+00:30:43,210 --> 00:30:49,210
+işlenmesi, yönetilmesi için oluşturulmuş bir şey.
+
+333
+00:30:49,210 --> 00:30:55,210
+Bir prosesin kendisinin içerisindeki özel parçalar haricinde
+
+334
+00:30:55,210 --> 00:30:58,210
+hem proses hem de diğer hiçbir kimse tarafından,
+
+335
+00:30:58,210 --> 00:31:01,210
+hiçbir proses tarafından okunamayacak şekilde,
+
+336
+00:31:01,210 --> 00:31:05,210
+modifiye edilemeyecek şekilde işlenmesini sağlıyor.
+
+337
+00:31:05,210 --> 00:31:12,809
+Attestation Enclave içerisinde çalışan kod parçasının
+
+338
+00:31:12,809 --> 00:31:17,809
+hakikaten çalışması gereken kod parçası olduğunu söylüyor.
+
+339
+00:31:17,809 --> 00:31:19,809
+Bunun garanti altına alınması lazım.
+
+340
+00:31:19,809 --> 00:31:26,809
+Orada da sertifika mekanizmalarından ve işte public kriptografiden yararlanıyoruz.
+
+341
+00:31:26,809 --> 00:31:30,809
+Minimal TCB de bize diyor ki sadece işlemciye güvenebilirsin.
+
+342
+00:31:30,809 --> 00:31:33,809
+Onun haricinde hiçbir şeye güvenemezsin.
+
+343
+00:31:33,809 --> 00:31:37,809
+Donanım birimlerine, memoriye, kontrolürlere, hiçbirine güvenemezsin.
+
+344
+00:31:37,809 --> 00:31:40,809
+Burada tabii işte x86 prosesi oluyor.
+
+345
+00:31:40,809 --> 00:31:42,809
+Çünkü neden? Intel örneği üzerinden.
+
+346
+00:31:42,809 --> 00:31:48,809
+Ancak tabii ki tahmin edersiniz böyle bir yapıyı bütün uygulamalar için
+
+347
+00:31:48,809 --> 00:31:52,809
+gerçekleştiriyor olduğumuzun maliyeti çok yüksek.
+
+348
+00:31:52,809 --> 00:31:59,809
+Artı güvenlik açısından ciddi bir risk olmadı ki böyle bir yapı oluşturmalıyız.
+
+349
+00:31:59,809 --> 00:32:02,809
+Diğer taraftan hani legacy diye şey de söylüyoruz ya,
+
+350
+00:32:02,809 --> 00:32:07,809
+bize miras kalan. Çalıştırıyoruz.
+
+351
+00:32:07,809 --> 00:32:12,809
+Source kodu yok. Olsa bile onu yeniden derlememiz neresi?
+
+352
+00:32:12,809 --> 00:32:15,809
+Neredeyse mümkün değil, başka sıkıntılar var.
+
+353
+00:32:15,809 --> 00:32:19,809
+O yüzden onları o halde çalıştırmamız lazım.
+
+354
+00:32:19,809 --> 00:32:21,809
+Bunlar için de işte ne demiştik?
+
+355
+00:32:21,809 --> 00:32:23,809
+Isolation, sandboxing teknikleri.
+
+356
+00:32:23,809 --> 00:32:29,809
+Ama bu tarz bir enclave sandboxing yapısı oluşturulabilir mi?
+
+357
+00:32:29,809 --> 00:32:33,809
+O da sorgulanması gereken şeylerden biri.
+
+358
+00:32:33,809 --> 00:32:38,809
+Şimdi bu yeni yapı daha çok nerede karşımıza çıkıyor?
+
+359
+00:32:38,809 --> 00:32:40,809
+Ne için önemli?
+
+360
+00:32:40,809 --> 00:32:45,809
+Hem cloud mimarilerinde, bulut bilişim mimarilerinde önemli.
+
+361
+00:32:45,809 --> 00:32:48,809
+Hem de işte multi-party computation diyoruz.
+
+362
+00:32:48,809 --> 00:32:51,809
+Bakın burada iki tane hastane var.
+
+363
+00:32:51,809 --> 00:32:56,809
+Hastane 1, hastane 2. Bunların arasında veri paylaşılması
+
+364
+00:32:56,809 --> 00:33:00,809
+ve bu paylaşılan veri üzerinden bir işlem yapılarak
+
+365
+00:33:00,809 --> 00:33:03,809
+sonuç alınması gerekiyor.
+
+366
+00:33:03,809 --> 00:33:08,809
+Yani data set 1, hastane 1'den, data set 2, hastane 2'den gelecek.
+
+367
+00:33:08,809 --> 00:33:09,809
+Bunların unioni üzerinde.
+
+368
+00:33:09,809 --> 00:33:16,809
+Şimdi iki taraf da tabii ki veriyi doğru kişiyle, doğru grupla,
+
+369
+00:33:16,809 --> 00:33:19,809
+doğru partiyle paylaştığını bilmek istiyor.
+
+370
+00:33:19,809 --> 00:33:22,809
+O yüzden araya ne yapıyoruz?
+
+371
+00:33:22,809 --> 00:33:26,809
+Untrusted environment'de mesela bir cloud ortamında,
+
+372
+00:33:26,809 --> 00:33:34,809
+bir enclave yapısında hesaplama yapacağımız altyapıyı oluşturuyoruz.
+
+373
+00:33:34,809 --> 00:33:38,809
+Şimdi hani enclave'de attestation vardı ya,
+
+374
+00:33:38,809 --> 00:33:42,809
+ne çalıştıracağı, hangi veri üzerinde işlem yapacağı.
+
+375
+00:33:42,809 --> 00:33:48,809
+Burada gördüğünüz gibi public key sertifikasını yolluyor.
+
+376
+00:33:48,809 --> 00:33:54,809
+Her iki taraf da bunlar üzerinden o enclave'in hakikaten
+
+377
+00:33:54,809 --> 00:33:58,809
+gerçekten muhatap olduğu kod parçası olduğunu,
+
+378
+00:33:58,809 --> 00:34:04,809
+bu analizi yapmak için hazırlanmış kod parçası olduğunu anlıyor.
+
+379
+00:34:04,809 --> 00:34:07,809
+Sonrasında da verileri yolluyor.
+
+380
+00:34:07,809 --> 00:34:13,809
+Encrypt ederek yolluyor ki işte internet üzerinden giderken
+
+381
+00:34:13,809 --> 00:34:16,809
+bu veriler birilerinin eline geçmesin.
+
+382
+00:34:16,809 --> 00:34:19,809
+Geçse bile anlaşılmaz halka olsun.
+
+383
+00:34:19,809 --> 00:34:23,809
+Arkasından da enclave'de bu işlem işte data 1, data 2,
+
+384
+00:34:23,809 --> 00:34:26,809
+işte union yapılıyor, şunlar budur, sonuç üretiliyor.
+
+385
+00:34:26,809 --> 00:34:30,809
+Şimdi burada aslında bu anlattığım şey,
+
+386
+00:34:30,809 --> 00:34:35,809
+enclave mekanizması haricinde zaten yapılan bir şey.
+
+387
+00:34:35,809 --> 00:34:39,809
+Buradaki enclave mekanizması ulu orta,
+
+388
+00:34:39,809 --> 00:34:44,809
+açık herkesin erişimi olan bir altyapıda bile
+
+389
+00:34:44,809 --> 00:34:51,809
+işlemcideki donanımsal mimarisel özellikler ile
+
+390
+00:34:51,809 --> 00:34:58,809
+işlediğimiz verinin başkaları tarafından görülmesini,
+
+391
+00:34:58,809 --> 00:35:03,809
+elde edilmesini, değiştirilmesini engellemek için oluşturulmuş bir yapı.
+
+392
+00:35:03,809 --> 00:35:04,809
+Ve bunun üzerinde,
+
+393
+00:35:04,809 --> 00:35:07,809
+bu donanım mimarisi üzerinde çalışıyoruz.
+
+394
+00:35:07,809 --> 00:35:11,809
+Yani club'da bu servisi deploy edeceğimiz,
+
+395
+00:35:11,809 --> 00:35:16,809
+kurup da çalıştıracağımız yerin aslında ne olması lazım?
+
+396
+00:35:16,809 --> 00:35:24,659
+Böyle bir enclave ortamında olması lazım.
+
+397
+00:35:24,659 --> 00:35:28,659
+İşlemcisinin, işte intel işlemcisinden bahsediyoruz.
+
+398
+00:35:28,659 --> 00:35:33,360
+Bu özellikleri desteklemesi lazım.
+
+399
+00:35:33,360 --> 00:35:37,360
+Şimdi hani bu çok güzel bir mimari diye konuştuk,
+
+400
+00:35:37,360 --> 00:35:39,360
+özellikleri var diye konuştuk.
+
+401
+00:35:39,360 --> 00:35:47,360
+Ancak her mimarinin, her tasarımın maalesef bir kaçak noktası var.
+
+402
+00:35:47,360 --> 00:35:48,360
+Site channel.
+
+403
+00:35:48,360 --> 00:35:50,360
+Ama biz bunu derste daha çok ne diye konuştuk?
+
+404
+00:35:50,360 --> 00:35:52,360
+Covert channel.
+
+405
+00:35:52,360 --> 00:35:59,360
+Yani farkına varmadan bir verinin bir başka ortamda paylaşılması.
+
+406
+00:35:59,360 --> 00:36:01,360
+Böyle bir haberleşme şeyi.
+
+407
+00:36:01,360 --> 00:36:05,360
+Bunun bizim analiz yapmamızı sağlayan,
+
+408
+00:36:05,360 --> 00:36:08,360
+acaba burada ne işler gerçekleşiyor,
+
+409
+00:36:08,360 --> 00:36:14,360
+hangi işler çalıştırılıyor diye analiz yapmamızı sağlayan hale de site channel diyoruz.
+
+410
+00:36:14,360 --> 00:36:18,360
+Şimdi bakın işlemci var, işletim sistemi var, bir proses var.
+
+411
+00:36:18,360 --> 00:36:20,360
+Orada da enclave var.
+
+412
+00:36:20,360 --> 00:36:22,360
+Memoriye erişiyor.
+
+413
+00:36:22,360 --> 00:36:25,360
+Tamamen de encrypted bir şekilde erişiyor.
+
+414
+00:36:25,360 --> 00:36:27,360
+Değil mi? Enclave'in özelliği oydu.
+
+415
+00:36:27,360 --> 00:36:33,820
+Şimdi saldırgan, enclave'e saldırmıyor.
+
+416
+00:36:33,820 --> 00:36:36,820
+Neye saldırıyor? İşletim sistemine saldırıyor.
+
+417
+00:36:36,820 --> 00:36:39,820
+İşletim sistemini bir şekilde ele geçiriyor.
+
+418
+00:36:39,820 --> 00:36:41,820
+Tamam, enclave'e doğrudan erişim yok.
+
+419
+00:36:41,820 --> 00:36:51,820
+Ama işletim sisteminde aslında o enclave'in çalışmasıyla alakalı bir sürü şey var.
+
+420
+00:36:51,820 --> 00:36:58,820
+Bilgi sağlayacak olan, yani bizim ne olduğunu anlamımıza yarayacak olan data var.
+
+421
+00:36:58,820 --> 00:37:00,820
+İşte memori erişim patternleri var.
+
+422
+00:37:00,820 --> 00:37:04,820
+İşlemcinin cache'lerinin durumu.
+
+423
+00:37:04,820 --> 00:37:07,820
+Enclave çalışırken ne oluyor ve çalışmazken ne oluyor?
+
+424
+00:37:07,820 --> 00:37:08,820
+Hangi adreslere erişiyor?
+
+425
+00:37:09,820 --> 00:37:19,820
+Artı nasıl dallanmalar, sıçramalar, jump instructionları, branch instructionları gerçekleştiriyor?
+
+426
+00:37:19,820 --> 00:37:31,820
+Yani kod yapısıyla alakalı bize böyle bir fikir verecek olan bilgiler var aslında işletim sistemi içerisinde.
+
+427
+00:37:31,820 --> 00:37:35,820
+Eğer işletim sistemini ele geçirirsek bu bilgilere de erişebiliyoruz.
+
+428
+00:37:35,820 --> 00:37:37,820
+Doğrudan verinin kendisine erişemesek bile.
+
+429
+00:37:37,820 --> 00:37:39,820
+İşte buna site channel.
+
+430
+00:37:39,820 --> 00:37:41,820
+Analizi deniyor.
+
+431
+00:37:41,820 --> 00:37:44,820
+Bunları engelleyebilmenin imkanı yok.
+
+432
+00:37:44,820 --> 00:37:56,820
+Yani o kod parçası çalıştığına göre, memoriye eriştiğine göre, okuma yazma yaptığına göre, işlemcide değişikliklere sebep olduğuna göre bunlar gözlemlenebilir şeyler.
+
+433
+00:37:56,820 --> 00:38:00,820
+Ve biz bunları gözledikçe de ne yapabiliyoruz?
+
+434
+00:38:00,820 --> 00:38:02,820
+Fikir sahibi olabiliyoruz.
+
+435
+00:38:02,820 --> 00:38:05,820
+Bunları engellemek mümkün değil gibi.
+
+436
+00:38:05,820 --> 00:38:07,820
+Şimdi başka bir şey.
+
+437
+00:38:07,820 --> 00:38:17,820
+Hani bu Quoting Agent vardı ya, attestation için kullanılan.
+
+438
+00:38:17,820 --> 00:38:30,820
+Üçüncü partiye, yani işte az önceki örnekten hastaneye, burada hangi kod parçası çalışıyor, ne kodu çalışıyor, işte X, Y, Z analizi çalışıyor.
+
+439
+00:38:30,820 --> 00:38:32,820
+Bunu ispat etmek için de.
+
+440
+00:38:32,820 --> 00:38:38,519
+Bu da yine bir güvenilmez.
+
+441
+00:38:38,519 --> 00:38:42,519
+Güvenilmez ortamda bir enclave içerisinde saklanıyor.
+
+442
+00:38:42,519 --> 00:38:45,519
+Şimdi soru şu.
+
+443
+00:38:45,519 --> 00:38:48,519
+Herhangi bir şekilde buradaki secret key,
+
+444
+00:38:48,519 --> 00:38:52,519
+SK ile, yani PK public key, SK da secret key.
+
+445
+00:38:52,519 --> 00:38:56,519
+Bir şekilde bu secret key'i dışarı çıkartabilir miyiz?
+
+446
+00:38:56,519 --> 00:38:58,760
+Neden olmasın?
+
+447
+00:38:58,760 --> 00:39:06,760
+Yani bunun hiçbir şekilde daha mümkün olduğunun bir garantisi yok.
+
+448
+00:39:06,760 --> 00:39:09,760
+O zaman bugün bilmiyorsak,
+
+449
+00:39:09,760 --> 00:39:23,760
+bile ileride bunu mümkün hale getiren bir saldırı gerçekleştiğinde ve SK elde edildiğinde bütün attestation mekanizması çökecek demektir.
+
+450
+00:39:23,760 --> 00:39:27,760
+Şimdi bunun için bu yönde saldırılar da var.
+
+451
+00:39:27,760 --> 00:39:32,760
+İşte bu For Shadow saldırısı bunlardan bir tanesi.
+
+452
+00:39:32,760 --> 00:39:38,760
+Şimdi son dönemde For Shadow'da olmak üzere bir sürü saldırı oldu.
+
+453
+00:39:38,760 --> 00:39:42,760
+Bunlardan hani böyle en çok şey olan,
+
+454
+00:39:42,760 --> 00:39:46,760
+dile gelen, konuşulan, anlatılanlardan ve
+
+455
+00:39:46,760 --> 00:39:53,760
+bunun hani bütün dünyada duyulmasına sebep olanlardan biri de Spectre Attack.
+
+456
+00:39:53,760 --> 00:39:58,760
+Spectre, hayalet demek aslında kelime anlamı olarak.
+
+457
+00:39:58,760 --> 00:40:05,760
+Burada ama işte Speculative Execution'dan türetilmiş,
+
+458
+00:40:05,760 --> 00:40:08,760
+hem de dikkat çeksin diye,
+
+459
+00:40:08,760 --> 00:40:11,760
+her şey yapılmış bir terim, öyle düşünebilirsiniz.
+
+460
+00:40:11,760 --> 00:40:18,760
+Şimdi zayıf nokta şurada yazıyor bakın.
+
+461
+00:40:18,760 --> 00:40:21,760
+Speed vs Security in Hardware.
+
+462
+00:40:21,760 --> 00:40:25,760
+Yani donanımda hız mı istiyoruz, güvenlik mi istiyoruz?
+
+463
+00:40:25,760 --> 00:40:28,760
+Her zaman tasarım yaparken biliyorsunuz arkadaşlar,
+
+464
+00:40:28,760 --> 00:40:35,760
+birden fazla tasarımda elde etmek istediğimiz amaç var, hedef var.
+
+465
+00:40:35,760 --> 00:40:37,760
+Ama bu hedefler çoğu zaman,
+
+466
+00:40:37,760 --> 00:40:40,760
+birbirleriyle çelişebiliyorlar.
+
+467
+00:40:40,760 --> 00:40:43,760
+Yani biri artarken öbürü azalabiliyor.
+
+468
+00:40:43,760 --> 00:40:46,760
+İkisinin birden artması güzel bir şey,
+
+469
+00:40:46,760 --> 00:40:49,760
+biri artarken diğerinin de artması ama çoğunlukla böyle olmuyor.
+
+470
+00:40:49,760 --> 00:40:52,760
+Burada da güvenliği çok arttırdığımız zaman,
+
+471
+00:40:52,760 --> 00:40:55,760
+hızdan feragat etmemiz gerekiyor.
+
+472
+00:40:55,760 --> 00:40:58,760
+Hızı çok arttırdığımız zaman da güvenlikten.
+
+473
+00:40:58,760 --> 00:41:04,760
+Tam da işte bu Spectre saldırısı, Spectre Attack,
+
+474
+00:41:04,760 --> 00:41:06,760
+bunun üzerine kurulu.
+
+475
+00:41:06,760 --> 00:41:12,760
+Şimdi genel yapıyı anlatacağım ben size.
+
+476
+00:41:12,760 --> 00:41:16,760
+Olayın nasıl gerçekleştiğini bütün teknik ayrıntılarıyla anlatmayacağım.
+
+477
+00:41:16,760 --> 00:41:19,760
+Çok basitleştirilmiş bu slide'lar.
+
+478
+00:41:19,760 --> 00:41:25,760
+Ama temeli kavramınızı istiyorum ki bir farklı bakış açınız olsun.
+
+479
+00:41:25,760 --> 00:41:30,760
+Yani bu donanımda oluyor, işlemcinin içerisinde gerçekleşiyor.
+
+480
+00:41:30,760 --> 00:41:35,760
+Yani nasıl böyle bir saldırı olup da o bilgi oradan çıkartılabilir ki gibi,
+
+481
+00:41:36,760 --> 00:41:39,760
+bir önyargıya sahip olmayın, çıkartılabiliyor.
+
+482
+00:41:39,760 --> 00:41:42,760
+İşte bu da onun bir örneği.
+
+483
+00:41:42,760 --> 00:41:48,760
+Şimdi özellikle Intel mimarisini düşündüğümüzde,
+
+484
+00:41:48,760 --> 00:41:53,760
+Intel mimarisi, Qisk mimarisi, Complex Instruction Set mimarisi.
+
+485
+00:41:53,760 --> 00:41:57,760
+Burada komutlar karmaşık.
+
+486
+00:41:57,760 --> 00:42:05,760
+Bundan ötürü de hızı, belirli bir hızın üzerine çıkartmamız zorlaşıyor.
+
+487
+00:42:06,760 --> 00:42:10,760
+Risk mimarisinde komutlar daha basit olduğu için,
+
+488
+00:42:10,760 --> 00:42:17,760
+yapı daha basit olduğu için hızı Qisk'e göre daha üst noktalara taşıyabiliyoruz.
+
+489
+00:42:17,760 --> 00:42:25,760
+Ama işte düşünün bakın, 2004'te bile Pentium 4 3.8 GHz'e erişmişti.
+
+490
+00:42:25,760 --> 00:42:29,760
+Yani iyi bir hız, 3.8 GHz, 2004 bundan ona.
+
+491
+00:42:29,760 --> 00:42:35,760
+Şimdi son 16 sene içerisinde şu an günümüzde 10 GHz, 15 GHz var mı? Yok.
+
+492
+00:42:36,760 --> 00:42:43,760
+Yani öyle bir noktaya sadece hızı arttırma noktasında gelinen, takılmış olan noktayı düşünün.
+
+493
+00:42:43,760 --> 00:42:51,760
+Diğer taraftan işlemcinin hızı evet ciddi artıyor ama memori hızını arttırmada da sorun var.
+
+494
+00:42:51,760 --> 00:42:53,760
+Memoride bir gecikme var.
+
+495
+00:42:53,760 --> 00:42:58,760
+Memori ne kadar hızlı olursa olsun işlemcinin hızına yetişemiyor.
+
+496
+00:42:58,760 --> 00:43:05,760
+Yetişemediği zaman da işlemciyi yavaşlatan unsur oluyor veya program çalıştırılmasını yavaşlatan unsur oluyor.
+
+497
+00:43:06,760 --> 00:43:14,760
+Şimdi o zaman bu şartlar altında zaten biliyorsunuz bunu ne yapacağız?
+
+498
+00:43:14,760 --> 00:43:17,760
+Araya bol miktarda cache yerleştireceğiz.
+
+499
+00:43:17,760 --> 00:43:27,760
+Ancak cache'lerin boyutunun da artması karmaşıklığı arttırıyor, üretilebilirliği zorlaştırıyor, maliyeti arttırıyor.
+
+500
+00:43:27,760 --> 00:43:35,760
+O yüzden cache'lerde belirli bir yere kadar bu memorinin mümkün olduğu kadar işlemci hızına yaklaşmasını sağlıyor.
+
+501
+00:43:36,760 --> 00:43:38,760
+Birinci taraf bu.
+
+502
+00:43:38,760 --> 00:43:47,760
+Diğer taraf bekleme noktasında eğer işlemci bekleyecekse onu çalıştırmak.
+
+503
+00:43:47,760 --> 00:43:49,760
+İşte buna da Speculative Execution diyoruz.
+
+504
+00:43:49,760 --> 00:43:58,760
+Bir şekilde işlemci boşa cycle harcayacaksa, o andaki işlemi hemen o anda yapamıyorsa,
+
+505
+00:43:58,760 --> 00:44:07,010
+onun tamamlanması için bir şeylerin gelmesini bekliyorsa, bir verinin veya başka bir şeyin gelmesini bekliyorsa,
+
+506
+00:44:07,010 --> 00:44:11,010
+mesela bir memori aksesinin tamamlanmasını bekliyorsa,
+
+507
+00:44:11,010 --> 00:44:17,010
+oradaki boş zamanı başka bir şeyi çalıştırmak için harcayabilir.
+
+508
+00:44:17,010 --> 00:44:21,010
+Ama düşünün, instruction'un ortasındayken memoriye erişiyor.
+
+509
+00:44:21,010 --> 00:44:24,010
+Cache'te değil erişeceği şey.
+
+510
+00:44:24,010 --> 00:44:26,010
+O yüzden beklemesi lazım.
+
+511
+00:44:26,010 --> 00:44:32,010
+Hızların arasındaki farkı düşünün, yani o uçurumu düşünün.
+
+512
+00:44:32,010 --> 00:44:36,010
+İşlemci memori beklemek için harcayacağı zaman,
+
+513
+00:44:36,010 --> 00:44:40,010
+harcayacağı zaman da başka komutu çalıştırabilir durumda.
+
+514
+00:44:40,010 --> 00:44:42,010
+Buna Speculative Execution diyoruz.
+
+515
+00:44:42,010 --> 00:44:45,010
+Aradaki fark bu kadar açıldığı için.
+
+516
+00:44:45,010 --> 00:44:52,519
+Şimdi bakın, burada yine Intel örneğinden yolu çıkılmış.
+
+517
+00:44:52,519 --> 00:44:57,519
+CPU adres yolluyor, veri okuyor veya veri yazıyor.
+
+518
+00:44:57,519 --> 00:44:58,519
+Mantık bu.
+
+519
+00:44:58,519 --> 00:45:00,519
+Arada da cache memori var.
+
+520
+00:45:00,519 --> 00:45:02,519
+Bu 4-way associative.
+
+521
+00:45:02,519 --> 00:45:07,519
+Yani bakın, 4-way demek, 4 tane şeyi var diye düşünün.
+
+522
+00:45:07,519 --> 00:45:13,469
+4 yollu diye konuşuyoruz.
+
+523
+00:45:13,469 --> 00:45:15,469
+Yani 4 kopya var.
+
+524
+00:45:15,469 --> 00:45:19,469
+Ya birinden derinliği 4 gibi aynı yapıdan 4 tane var.
+
+525
+00:45:19,469 --> 00:45:26,469
+X, Y değil, bir de Z olarak arka tarafa doğru da lookup yapabiliyoruz.
+
+526
+00:45:26,469 --> 00:45:33,469
+Böylece daha hızlı, daha performanslı bir şekilde aynı veriyi arayabiliyoruz.
+
+527
+00:45:33,469 --> 00:45:37,469
+İşte bakın, 1, 2, 3, 4.
+
+528
+00:45:37,469 --> 00:45:38,469
+1, 2, 3, 4.
+
+529
+00:45:38,469 --> 00:45:39,469
+Kaç set varmış?
+
+530
+00:45:39,469 --> 00:45:40,469
+5 tane.
+
+531
+00:45:40,469 --> 00:45:42,469
+Her birinde de 4 tane şey var.
+
+532
+00:45:42,469 --> 00:45:44,469
+Bunlara aynı anda bakılabiliyor.
+
+533
+00:45:44,469 --> 00:45:45,469
+Çok güzel.
+
+534
+00:45:45,469 --> 00:45:49,469
+İşte yan taraftaki adres 2A1C0700.
+
+535
+00:45:49,469 --> 00:45:52,469
+Bakın burada bir numaralı sette görüyorsunuz.
+
+536
+00:45:52,469 --> 00:45:54,469
+Yanında da cache'lenmiş veri var.
+
+537
+00:45:54,469 --> 00:45:58,469
+13.2, 13.40 onu da burada görüyorsunuz.
+
+538
+00:45:58,469 --> 00:46:00,469
+Yanında da cache'lenmiş veri var.
+
+539
+00:46:00,469 --> 00:46:01,469
+Burada da main memori.
+
+540
+00:46:01,469 --> 00:46:02,469
+Bu yavaş.
+
+541
+00:46:02,469 --> 00:46:06,469
+Şimdi eğer bir veri cache'lenmiş,
+
+542
+00:46:06,469 --> 00:46:10,469
+veri cache'de yoksa main memori'den cache'e getiriliyor.
+
+543
+00:46:10,469 --> 00:46:13,469
+Ondan sonra cache'de yaşamaya devam ediyor.
+
+544
+00:46:13,469 --> 00:46:14,469
+Ne zamana kadar?
+
+545
+00:46:14,469 --> 00:46:15,469
+Cache'den çıkartılana kadar.
+
+546
+00:46:15,469 --> 00:46:16,469
+Niye?
+
+547
+00:46:16,469 --> 00:46:17,469
+Çünkü cache'in boyutu belirli.
+
+548
+00:46:17,469 --> 00:46:21,469
+O veriye yakın zamanda erişilmediyse,
+
+549
+00:46:21,469 --> 00:46:24,469
+diğer verilere erişilebilmesine imkan tanımak,
+
+550
+00:46:24,469 --> 00:46:30,469
+o hızla erişilebilmesine imkan tanımak adına cache'den çıkartılıyor.
+
+551
+00:46:30,469 --> 00:46:34,469
+Bu arada cache'e almanın ve cache'den çıkartmanın maliyeti var.
+
+552
+00:46:34,469 --> 00:46:39,469
+O yüzden cache'e alıp çıkartma nasıl gerçekleşiyor arkadaşlar?
+
+553
+00:46:39,469 --> 00:46:42,469
+64 byte, 64 byte gerçekleşiyor.
+
+554
+00:46:42,469 --> 00:46:45,469
+Yani siz orada 1 byte'a da ihtiyaç duysanız,
+
+555
+00:46:45,469 --> 00:46:47,469
+4 byte'a da ihtiyaç duysanız,
+
+556
+00:46:47,469 --> 00:46:49,469
+64 byte'a da ihtiyaç duysanız,
+
+557
+00:46:49,469 --> 00:46:52,469
+64'ü birden alınıyor.
+
+558
+00:46:52,469 --> 00:46:53,469
+Öyle düşünün.
+
+559
+00:46:53,469 --> 00:46:57,099
+Veya yazılıyor.
+
+560
+00:46:57,099 --> 00:47:03,530
+Şimdi, Speculative Execution az önce anlattım.
+
+561
+00:47:03,530 --> 00:47:08,099
+Nerede özellikle karşımıza çıkıyor?
+
+562
+00:47:08,099 --> 00:47:10,099
+Branch noktalarında.
+
+563
+00:47:10,099 --> 00:47:12,099
+Branch Prediction var.
+
+564
+00:47:12,099 --> 00:47:15,099
+Bu damlanma gerçekleşir mi, gerçekleşmez mi?
+
+565
+00:47:15,099 --> 00:47:18,099
+If true mu, false mu?
+
+566
+00:47:18,099 --> 00:47:23,099
+Şimdi niçin önemli?
+
+567
+00:47:23,099 --> 00:47:28,099
+İşte hesap ettim, false olduğuna karar verdim.
+
+568
+00:47:28,099 --> 00:47:30,099
+Bu sefer onun bir gecikmesi var.
+
+569
+00:47:30,099 --> 00:47:33,099
+Ama aslında true'ydu diğer taraf.
+
+570
+00:47:33,099 --> 00:47:39,099
+Şimdi, o yüzden işlemcilerde bir Branch Predictor var.
+
+571
+00:47:39,099 --> 00:47:46,099
+Yani daha jump equal, jump not equal, jump zero falan gibi
+
+572
+00:47:46,099 --> 00:47:49,099
+hani o şeyler var ya, instruction'lar var ya,
+
+573
+00:47:49,099 --> 00:47:51,099
+internet bilgisayarında öğrendiğimiz.
+
+574
+00:47:51,099 --> 00:47:55,099
+Bunları execute etmeden,
+
+575
+00:47:55,099 --> 00:48:00,099
+yani onun execution'a başlayacağı sırada o instruction'ı gördüğünde
+
+576
+00:48:00,099 --> 00:48:03,099
+işlemci diyor ki bu %98 true.
+
+577
+00:48:03,099 --> 00:48:08,099
+Hemen true konundan komutları execute etmeye başlıyor.
+
+578
+00:48:09,099 --> 00:48:13,099
+Peki, sonuç true ise çok güzel.
+
+579
+00:48:13,099 --> 00:48:15,099
+Hiç beklemedik.
+
+580
+00:48:15,099 --> 00:48:17,099
+Güneler arada memory için falan var değil mi?
+
+581
+00:48:17,099 --> 00:48:22,599
+Yani oraya gidip oradan memory'den instruction'ları getirmesi lazım.
+
+582
+00:48:22,599 --> 00:48:25,599
+True değil false ise işlemci yanıldım diyor.
+
+583
+00:48:25,599 --> 00:48:27,599
+Boşuna iş yaptım diyor.
+
+584
+00:48:27,599 --> 00:48:29,599
+Ama aslında boşuna iş diye bir şey yok.
+
+585
+00:48:29,599 --> 00:48:30,599
+Clock çalışmaya devam ediyordu.
+
+586
+00:48:30,599 --> 00:48:32,599
+Clock cycle ilerliyordu.
+
+587
+00:48:32,599 --> 00:48:34,599
+Orada zaten donanım boşta duruyordu.
+
+588
+00:48:34,599 --> 00:48:37,599
+O zaman yapmış olduğu işi çöpe atıyor.
+
+589
+00:48:37,599 --> 00:48:39,599
+Yani baktığımızda,
+
+590
+00:48:39,599 --> 00:48:45,599
+aslında işlemci speculative execution mantığıyla
+
+591
+00:48:45,599 --> 00:48:49,599
+sonradan ya bunu böyle yapmamalıymışım,
+
+592
+00:48:49,599 --> 00:48:55,599
+bak bu branch yanlışmış, true değil false'muş dediği
+
+593
+00:48:55,599 --> 00:48:59,599
+ve çöpe attığı pek çok işlem yapıyor.
+
+594
+00:48:59,599 --> 00:49:02,599
+Bunları yapmamış gibi kabul ediyor.
+
+595
+00:49:02,599 --> 00:49:07,599
+Yani o zaman sol tarafta speculative execution yok ise
+
+596
+00:49:07,599 --> 00:49:09,599
+architectural garanti var.
+
+597
+00:49:09,599 --> 00:49:13,599
+Her zaman için işleyiş in order.
+
+598
+00:49:13,599 --> 00:49:16,599
+Yani bir komut başlıyor, bitiyor.
+
+599
+00:49:16,599 --> 00:49:18,599
+Ona göre diğeri başlıyor, bitiyor.
+
+600
+00:49:18,599 --> 00:49:19,599
+Diğeri başlıyor, bitiyor.
+
+601
+00:49:19,599 --> 00:49:23,599
+Halbuki speculative execution'da out of order execution var.
+
+602
+00:49:23,599 --> 00:49:25,599
+Sonra bunlar sıraya sokuluyorlar.
+
+603
+00:49:25,599 --> 00:49:27,599
+Hep performans arttırmak için.
+
+604
+00:49:27,599 --> 00:49:29,599
+O zaman soru şu.
+
+605
+00:49:29,599 --> 00:49:32,599
+Is making plus discarding mistakes?
+
+606
+00:49:32,599 --> 00:49:37,599
+Yani hem hata yapıyoruz, hem de hata yapmışız bundan vazgeçtik.
+
+607
+00:49:37,599 --> 00:49:39,599
+Silelim bunları.
+
+608
+00:49:39,599 --> 00:49:41,599
+The same as in order execution.
+
+609
+00:49:41,599 --> 00:49:44,599
+Sıralı işleme gibi eşdeğer midir?
+
+610
+00:49:44,599 --> 00:49:45,599
+Hayır.
+
+611
+00:49:45,599 --> 00:49:46,599
+Neden?
+
+612
+00:49:46,599 --> 00:49:50,599
+Çünkü dışarıdan gözlemlenebilen durumlar oluşturuyoruz.
+
+613
+00:49:50,599 --> 00:49:52,599
+Durum değişiklikleri oluşturuyoruz.
+
+614
+00:49:52,599 --> 00:49:56,599
+Sonradan silsek bile birileri bunu gözlemleyerek
+
+615
+00:49:56,599 --> 00:50:01,599
+oradan elde etmemeleri gereken veriyi elde edebilirler.
+
+616
+00:50:01,599 --> 00:50:05,599
+Hani side channel analizi dedik ya işte her execution
+
+617
+00:50:05,599 --> 00:50:08,599
+side channel analiz ile
+
+618
+00:50:08,599 --> 00:50:14,599
+gözlemlenebilecek, ortaya konulabilecek değişiklikler oluşturuyor.
+
+619
+00:50:14,599 --> 00:50:18,599
+Bakın bu spektren varyantları var.
+
+620
+00:50:18,599 --> 00:50:21,599
+Şimdi biz varyant 1 üzerinden gideceğiz.
+
+621
+00:50:21,599 --> 00:50:23,599
+Conditional branch.
+
+622
+00:50:23,599 --> 00:50:30,599
+Şurada x array size'ından, array 1 size'ından küçükse
+
+623
+00:50:30,599 --> 00:50:37,599
+y array 2'nin array 1 x çarpı 4096'sı o indekse erişecekmiş.
+
+624
+00:50:37,599 --> 00:50:39,599
+Y değeri bu olacakmış arkadaşlar.
+
+625
+00:50:39,599 --> 00:50:40,599
+Tamam.
+
+626
+00:50:40,599 --> 00:50:42,599
+Şimdi x'in ne olması gerekiyor?
+
+627
+00:50:42,599 --> 00:50:44,599
+Array 1 size'ından küçük olması gerekiyor ki
+
+628
+00:50:44,599 --> 00:50:46,599
+array 1'e düzgün erişilsin.
+
+629
+00:50:46,599 --> 00:50:48,599
+Yoksa erişilmeyecek.
+
+630
+00:50:48,599 --> 00:50:55,599
+Şimdi speculation yoksa bu komut silsilesi
+
+631
+00:50:55,599 --> 00:50:58,599
+nerede, ne şekilde çalıştığınızda çalıştığınızda doğru çalışır.
+
+632
+00:50:58,599 --> 00:51:00,599
+Çünkü niye?
+
+633
+00:51:00,599 --> 00:51:06,599
+Şundan ötürü önce x küçüktür array 1 size kontrol edilecek.
+
+634
+00:51:06,599 --> 00:51:10,599
+True veyahut da false ortaya çıkartılacak.
+
+635
+00:51:10,599 --> 00:51:17,039
+Ondan sonra true ise y eşittir hesaplanacak.
+
+636
+00:51:17,039 --> 00:51:24,039
+Şimdi speculative execution olduğunda durum şu.
+
+637
+00:51:24,039 --> 00:51:30,039
+Speculative execution olduğunda bir taraftan işlemci if'i çalıştırırken
+
+638
+00:51:30,039 --> 00:51:33,039
+diğer taraftan da y eşittir'i çalıştırıyor.
+
+639
+00:51:33,039 --> 00:51:35,039
+Ve nasıl çalıştırıyor biliyor musunuz?
+
+640
+00:51:35,039 --> 00:51:37,039
+Gelen x ile beraber çalıştırıyor.
+
+641
+00:51:37,039 --> 00:51:41,039
+X'in daha doğru olup olmadığını bilmiyor.
+
+642
+00:51:41,039 --> 00:51:45,039
+Peki if ile beraber y'yi çalıştırması için
+
+643
+00:51:45,039 --> 00:51:49,039
+benim işlemciye nasıl bir yönlendirme yapmam lazım?
+
+644
+00:51:49,039 --> 00:51:53,039
+Branch prediction projeyi var dedim ya.
+
+645
+00:51:53,039 --> 00:51:59,039
+Branch prediction'a bu davranmaların true ile sonuçlandığını
+
+646
+00:51:59,039 --> 00:52:02,039
+böyle enjekte etmem lazım.
+
+647
+00:52:02,039 --> 00:52:05,039
+Arka arkaya.
+
+648
+00:52:05,039 --> 00:52:06,039
+Arka arkaya.
+
+649
+00:52:06,039 --> 00:52:10,039
+Yani true ile sonuçlanan branch'ler gerçekleştirirsem
+
+650
+00:52:10,039 --> 00:52:13,039
+çünkü o bir state machine.
+
+651
+00:52:13,039 --> 00:52:16,039
+Bir olasılık hesabı yapıyor.
+
+652
+00:52:16,039 --> 00:52:19,039
+Önceki durumlara bakarak olasılık hesabı yapıyor.
+
+653
+00:52:19,039 --> 00:52:22,039
+O zaman branch prediction projeyi diyecek ki
+
+654
+00:52:22,039 --> 00:52:25,039
+şu anki bu if de true ile sonuçlanacak.
+
+655
+00:52:25,039 --> 00:52:28,039
+O zaman benim y eşittir array 2 hesabımı yapmam lazım.
+
+656
+00:52:28,039 --> 00:52:32,039
+Yani bakın daha x'in ne olduğunu bilmeden
+
+657
+00:52:32,039 --> 00:52:34,039
+y değerini hesaplamak için
+
+658
+00:52:34,039 --> 00:52:36,039
+array 1 x'e erişecek.
+
+659
+00:52:36,039 --> 00:52:37,039
+Belki out of bounds.
+
+660
+00:52:37,039 --> 00:52:39,039
+Sınırların dışında.
+
+661
+00:52:41,039 --> 00:52:45,039
+O zaman saldırı öncesinde branch predictori eğitiyoruz.
+
+662
+00:52:45,039 --> 00:52:50,039
+Hep x küçüktür array 1 size true çıkacak şekilde
+
+663
+00:52:50,039 --> 00:52:52,039
+hep bu şekilde şeyi yapıyoruz.
+
+664
+00:52:52,039 --> 00:52:55,039
+Artık branch predictor ne durumda?
+
+665
+00:52:55,039 --> 00:53:01,039
+Erişimin, daha doğrusu o kontrolün true çıkacağını düşünüyor
+
+666
+00:53:01,039 --> 00:53:03,039
+ve ondan dolayı bir alt satıra şey yapıyor.
+
+667
+00:53:04,039 --> 00:53:17,039
+Bunun hemen öncesinde array 2 ve array 1 size'ı cache'den uzaklaştırıyoruz.
+
+668
+00:53:17,039 --> 00:53:18,039
+Çok kolay.
+
+669
+00:53:18,039 --> 00:53:20,039
+Başka bir sürü alakasız değişkene erişerek,
+
+670
+00:53:20,039 --> 00:53:22,039
+çok büyük değişkene erişerek,
+
+671
+00:53:22,039 --> 00:53:24,039
+cache'de sıklıkla erişerek,
+
+672
+00:53:24,039 --> 00:53:27,039
+cache'de bunlar için yer açılmasını sağlıyoruz.
+
+673
+00:53:27,039 --> 00:53:33,039
+Şimdi x eşittir 1000 ile bunu çalıştırıyoruz.
+
+674
+00:53:33,039 --> 00:53:38,039
+Bakın, branch predictor x satırı çalıştırmadan
+
+675
+00:53:38,039 --> 00:53:42,039
+daha önceden true olacağını düşünüyor diye
+
+676
+00:53:42,039 --> 00:53:45,039
+bir sonraki if'in true olacağını düşündüğü için
+
+677
+00:53:45,039 --> 00:53:50,039
+y eşittir array 2, array 1'in bininci elemanı çarp,
+
+678
+00:53:50,039 --> 00:53:55,039
+4096'yı execute ediyor.
+
+679
+00:53:55,039 --> 00:53:57,039
+Bu da neymiş?
+
+680
+00:53:57,039 --> 00:54:01,039
+Artı 1000 offset'in de 0.9 değeri.
+
+681
+00:54:01,039 --> 00:54:02,039
+Ve bu 0.9 değeri,
+
+682
+00:54:02,039 --> 00:54:05,039
+nereye getiriyor arkadaşlar?
+
+683
+00:54:05,039 --> 00:54:07,039
+Memori'ye getiriyor.
+
+684
+00:54:07,039 --> 00:54:10,039
+Ama unutmayın, sadece 0.9 gelmedi memori'ye.
+
+685
+00:54:10,039 --> 00:54:13,039
+Ne geldi? 64 byte 1'i ben geldi.
+
+686
+00:54:13,039 --> 00:54:16,039
+Çünkü memori cache yapısının özelliğinden dolayı
+
+687
+00:54:16,039 --> 00:54:20,039
+bir seferde 64 okunup 64 yazılıyordu.
+
+688
+00:54:20,039 --> 00:54:21,039
+Tamam.
+
+689
+00:54:21,039 --> 00:54:23,039
+Şu anda,
+
+690
+00:54:23,039 --> 00:54:29,039
+şu anda bizim normalde erişmememiz gereken bir değer
+
+691
+00:54:29,039 --> 00:54:32,039
+işlemcinin speculative execution,
+
+692
+00:54:32,039 --> 00:54:36,039
+şu anda ötürü memori'ye alındı.
+
+693
+00:54:36,039 --> 00:54:38,039
+Daha doğrusu cache'e alındı, pardon.
+
+694
+00:54:38,039 --> 00:54:46,389
+Cache'e alındı ve orada işlemci hesabı yapıyor.
+
+695
+00:54:46,389 --> 00:54:48,389
+Ama diyor ki,
+
+696
+00:54:48,389 --> 00:54:52,389
+x büyükmüş array 1 size.
+
+697
+00:54:52,389 --> 00:54:56,530
+Hata yapmışım.
+
+698
+00:54:56,530 --> 00:54:59,530
+O zaman ne olması lazım?
+
+699
+00:54:59,530 --> 00:55:03,530
+Hata yaptığı için bunun sonucunu yok etmesi lazım.
+
+700
+00:55:03,530 --> 00:55:07,530
+Peki sonucu yok ederken cache'ten o verileri çıkartıyor mu?
+
+701
+00:55:07,530 --> 00:55:09,530
+Hayır.
+
+702
+00:55:09,530 --> 00:55:14,530
+Bizim normalde erişmememiz gereken veri hala daha cache'te.
+
+703
+00:55:14,530 --> 00:55:23,530
+Şimdi biz dizinin elemanlarına teker teker erişiyoruz ve
+
+704
+00:55:23,530 --> 00:55:29,530
+okuma süresini okuyoruz.
+
+705
+00:55:29,530 --> 00:55:32,530
+Cache'ten okumalar memori'ye göre çok hızlı ya.
+
+706
+00:55:33,530 --> 00:55:36,530
+İşte 9 için okuduğumuz da değeri,
+
+707
+00:55:36,530 --> 00:55:41,530
+bakın burada da 0, 1, 2, 3, 4 byte bazında.
+
+708
+00:55:41,530 --> 00:55:43,530
+Ben 256 tane deneme yapacağım.
+
+709
+00:55:43,530 --> 00:55:45,530
+9'u okuduğumda çok hızlı okuyorum.
+
+710
+00:55:45,530 --> 00:55:47,530
+Tamamlıyorum.
+
+711
+00:55:47,530 --> 00:55:49,530
+9 müştemekli cache'te gider.
+
+712
+00:55:49,530 --> 00:55:51,530
+Çünkü diğerleri uzun sürüyor.
+
+713
+00:55:51,530 --> 00:55:55,530
+Bunu böyle bir sürü x için deniyoruz.
+
+714
+00:55:55,530 --> 00:55:57,530
+Teker teker.
+
+715
+00:55:57,530 --> 00:56:01,530
+Bakın hani saniyede birkaç 10 kW hızında
+
+716
+00:56:01,530 --> 00:56:02,530
+memori'den veri,
+
+717
+00:56:02,530 --> 00:56:05,530
+veriyi ekstrakt edebiliyoruz.
+
+718
+00:56:05,530 --> 00:56:12,530
+Çok uç noktaların bir araya getirilmesiyle yapılan bir saldırı ama
+
+719
+00:56:12,530 --> 00:56:14,530
+yapılabilen bir saldırı.
+
+720
+00:56:14,530 --> 00:56:22,530
+Aynı şekilde bir javascript'in sandbox'ını da böylece devre dışı bırakabiliyoruz.
+
+721
+00:56:22,530 --> 00:56:25,530
+Sandbox'ı az önceki örnekle olduğu gibi
+
+722
+00:56:25,530 --> 00:56:29,530
+o da arka tarafta işlemcide çalışıyor.
+
+723
+00:56:29,530 --> 00:56:31,530
+Branch var.
+
+724
+00:56:31,530 --> 00:56:38,530
+Ve sandbox'da önce çalışan kod ne yapıyor?
+
+725
+00:56:38,530 --> 00:56:44,530
+Branch predictor'ı branch'in sonucu true çıkacak şekilde eğitiyor.
+
+726
+00:56:44,530 --> 00:56:54,530
+Ve az önceki örneğe benzer bir şekilde branch predictor evet bu sonuç artık true çıkacak diye inandığında
+
+727
+00:56:54,530 --> 00:57:00,530
+bir alt satırı aslında gidilmemesi gereken bir indekse gidip
+
+728
+00:57:00,530 --> 00:57:03,530
+oradan veri alabiliyoruz.
+
+729
+00:57:03,530 --> 00:57:06,530
+Dışarıya bilgi çıkartabiliyoruz.
+
+730
+00:57:06,530 --> 00:57:10,130
+Şimdi ikinci varyantı.
+
+731
+00:57:10,130 --> 00:57:12,130
+Birinci varyant işte o conditional branch'te.
+
+732
+00:57:12,130 --> 00:57:16,130
+İkinci varyantı ise indirect branch'te.
+
+733
+00:57:16,130 --> 00:57:18,130
+İşte jump, r, a, x
+
+734
+00:57:18,130 --> 00:57:23,130
+bir register'ın gösterdiği değere şey yapmak.
+
+735
+00:57:23,130 --> 00:57:25,130
+Burada da benzer şey var.
+
+736
+00:57:25,130 --> 00:57:29,130
+Önce bir mistrain yani kötü niyetli bir train etme şeyi var.
+
+737
+00:57:29,130 --> 00:57:31,130
+Ondan sonra cache'ten çıkartma var.
+
+738
+00:57:31,130 --> 00:57:34,130
+Ondan sonra speculative execution şeyi var.
+
+739
+00:57:34,130 --> 00:57:42,130
+Sonra da caching state'indeki değişiklikten değerin ne olduğunu bulma var.
+
+740
+00:57:42,130 --> 00:57:46,130
+Yani bu spektr saldırısı dört aşamadan oluşuyor.
+
+741
+00:57:46,130 --> 00:57:49,130
+Demek ki mistrain, evict, execute, detect.
+
+742
+00:57:49,130 --> 00:57:50,130
+Birinci varyantta da aynı şey var.
+
+743
+00:57:50,130 --> 00:57:53,130
+İkinci varyantta da aynı şey var.
+
+744
+00:57:53,130 --> 00:57:58,130
+Bunu engelleyebilir miyiz?
+
+745
+00:57:58,130 --> 00:58:01,130
+Çok böyle bir performans şeyi olmuyor.
+
+746
+00:58:01,130 --> 00:58:04,130
+Ama sorun neredeydi?
+
+747
+00:58:04,130 --> 00:58:06,130
+Veri cache'e gelmişti.
+
+748
+00:58:06,130 --> 00:58:08,130
+Cache'ten artık onu şey yapıyorduk.
+
+749
+00:58:08,130 --> 00:58:12,130
+Yani instruction execution'ı cancel edildi.
+
+750
+00:58:12,130 --> 00:58:16,130
+Ama instruction execution'ın oluşturduğu değişiklikler cancel edilmedi.
+
+751
+00:58:16,130 --> 00:58:18,130
+En önemli değişiklik nerede?
+
+752
+00:58:18,130 --> 00:58:19,130
+Cache'te.
+
+753
+00:58:19,130 --> 00:58:23,130
+Cache'i restore edebiliriz.
+
+754
+00:58:23,130 --> 00:58:29,130
+Şimdi ama bu speculative execution'ın
+
+755
+00:58:29,130 --> 00:58:40,130
+gözlemlenebilir, site channel analiziyle gözlemlenebilir olarak etrafa bıraktığı değişiklikler sadece cache'te değil.
+
+756
+00:58:40,130 --> 00:58:44,130
+Her şeyden önce çok şeye gidecek olursak,
+
+757
+00:58:44,130 --> 00:58:52,130
+çalışma sırasında bütün işlemciler etrafa bir elektromanyetik radyasyon yayıyor.
+
+758
+00:58:52,130 --> 00:58:55,130
+Instruction'ları fetch ederken, decode ederken
+
+759
+00:58:55,130 --> 00:58:58,130
+ve instruction'ların basitliğine veyahut da zorluğuna göre.
+
+760
+00:58:59,130 --> 00:59:04,130
+Daha çok devre elemanı işin içine giriyor.
+
+761
+00:59:04,130 --> 00:59:07,130
+Veya daha az devre elemanı işin içine giriyor.
+
+762
+00:59:07,130 --> 00:59:08,130
+Çekilen akım değişiyor.
+
+763
+00:59:08,130 --> 00:59:10,130
+Oluşan sıcaklık değişiyor.
+
+764
+00:59:10,130 --> 00:59:13,130
+Bunun üzerinden hangi instruction'ın çalıştırıldığını
+
+765
+00:59:13,130 --> 00:59:18,130
+anlamaya çalışan ve büyük başarıyla anlayan modeller var.
+
+766
+00:59:18,130 --> 00:59:24,130
+O yüzden yani o kodun o şekilde çalışıyor olması aslında sorun.
+
+767
+00:59:24,130 --> 00:59:28,130
+Yani onu o şekilde çalıştırıp, bu söylediğim
+
+768
+00:59:28,130 --> 00:59:33,130
+gelişmiş düzeneklerle işlemcinin o anda hangi instruction'ları
+
+769
+00:59:33,130 --> 00:59:39,130
+ne şekilde çalıştırdığını, sonuçlarının ne olduğunu dahi tahmin etme imkanımız var.
+
+770
+00:59:39,130 --> 00:59:42,130
+Öyleyse bu çözüm değil.
+
+771
+00:59:42,130 --> 00:59:50,130
+Yani orada o transaction rollback etmek olmamış gibi göstermek anlamına gelmiyor.
+
+772
+00:59:50,130 --> 00:59:57,130
+Intel'in şeyine hemen çıkarttığı LFence diye bir instruction.
+
+773
+00:59:58,130 --> 01:00:10,190
+Diyor ki LFence koyarsan diyor, yani şu ifin hemen altında LFence koyarsan diyor,
+
+774
+01:00:10,190 --> 01:00:14,190
+işlemci bunu gördüğünde Speculative Execution'ı durduracak diyor.
+
+775
+01:00:14,190 --> 01:00:18,190
+Sonucun tamamlanmasını bekleyecek diyor.
+
+776
+01:00:18,190 --> 01:00:22,190
+Yani bir nevi bir checkpoint koymuş oluyorsunuz buraya.
+
+777
+01:00:22,190 --> 01:00:24,190
+Bu bir processor instruction'ı.
+
+778
+01:00:24,190 --> 01:00:29,190
+İşte yani Speculative Execution'ı durdurduğu için evet çözmüş oluyor.
+
+779
+01:00:29,190 --> 01:00:32,190
+Ama sıkıntı şu.
+
+780
+01:00:32,190 --> 01:00:37,190
+Benchmark'lara göre işlemci çok yavaşlatmayan bir şey.
+
+781
+01:00:37,190 --> 01:00:39,190
+Fakat sorun şu.
+
+782
+01:00:39,190 --> 01:00:42,190
+Elle mi yerleştireceğiz bunu?
+
+783
+01:00:42,190 --> 01:00:46,190
+Yani her ifi altına koymamız gerekiyor mu?
+
+784
+01:00:46,190 --> 01:00:58,190
+Yani bu yaklaşık 188 tane instruction Speculative Execution kapsamında execute edilebiliyor.
+
+785
+01:00:58,190 --> 01:01:01,190
+Bu da her bunlardan biri için,
+
+786
+01:01:02,190 --> 01:01:06,190
+bu LFence'i bunun öncesinde yerleştirmek demek.
+
+787
+01:01:06,190 --> 01:01:10,190
+Yani bunu elle yapmaya gerek, imkan yok yani.
+
+788
+01:01:10,190 --> 01:01:14,190
+Diğer taraftan diyebiliriz ki her yere LFence koyalım.
+
+789
+01:01:14,190 --> 01:01:19,190
+Yani iddia ne olursa olsun Benchmark softwarelerinde sonuç ne çıkarsa çıksın.
+
+790
+01:01:19,190 --> 01:01:24,190
+Gerçek hayat softwarelerinde durum daha farklı çıkabiliyor.
+
+791
+01:01:24,190 --> 01:01:28,190
+O zaman da inanılmaz bir yavaşlık olacak.
+
+792
+01:01:28,190 --> 01:01:30,190
+Bu durumda,
+
+793
+01:01:32,190 --> 01:01:36,690
+compiler'ın bunu yapmasını sağlamamız lazım.
+
+794
+01:01:36,690 --> 01:01:42,690
+Ama işte Microsoft'un çıkarttığı Spectre seçeneği,
+
+795
+01:01:42,690 --> 01:01:45,690
+Visual C, C++'ta,
+
+796
+01:01:45,690 --> 01:01:52,690
+o da test edildiğinde 15 tane durumun 13 için hala da sıkıntının devam ettiğini gösteriyor.
+
+797
+01:01:52,690 --> 01:02:01,690
+Yani her yeri koruyabilmek adına çok daha fazla yere bunu yerleştirmemiz lazım.
+
+798
+01:02:01,690 --> 01:02:02,690
+Sonuç,
+
+799
+01:02:02,690 --> 01:02:05,690
+alt satır bunu gösteriyor.
+
+800
+01:02:05,690 --> 01:02:07,690
+Donanımcı diyor ki,
+
+801
+01:02:07,690 --> 01:02:08,690
+donanımı üreten,
+
+802
+01:02:08,690 --> 01:02:10,690
+ben LFence instruction ile bunu çözdüm.
+
+803
+01:02:10,690 --> 01:02:14,690
+Ama sen software'inle bunu düzgün kullanamadın.
+
+804
+01:02:14,690 --> 01:02:18,690
+O yüzden hala da işte 15 tanesinin 13'ünde case'in,
+
+805
+01:02:18,690 --> 01:02:21,690
+15 case'in 13 tanesinde zafiyet yaşıyorsun.
+
+806
+01:02:21,690 --> 01:02:23,690
+Senin problemin benim problemim değil.
+
+807
+01:02:23,690 --> 01:02:29,989
+Ama sonuçta hepimizin problemi.
+
+808
+01:02:29,989 --> 01:02:30,989
+Evet.
+
+809
+01:02:30,989 --> 01:02:33,989
+Diğer bir şey de, işin komik tarafı da,
+
+810
+01:02:33,989 --> 01:02:35,989
+bütün branch'leri ortadan kaldırsak,
+
+811
+01:02:35,989 --> 01:02:38,989
+burada işte Doom oyunundan örnek vermiş,
+
+812
+01:02:38,989 --> 01:02:41,989
+Doom oyununda sürekli sağa sola gidilir ya,
+
+813
+01:02:41,989 --> 01:02:48,989
+bu durumda sürekli aynı mekana bakıp önümüzden bir şeylerin kendiliğinden geçmesini beklememiz lazım.
+
+814
+01:02:48,989 --> 01:02:53,989
+Yani branch instruction'larında kaldırabilme şansımız yok.
+
+815
+01:02:53,989 --> 01:02:54,989
+Neden branch?
+
+816
+01:02:54,989 --> 01:02:55,989
+Bir kez daha söyleyeyim.
+
+817
+01:02:55,989 --> 01:03:00,989
+Speculative Execution'ın özellikle devreye girdiği yer branch instruction'lara.
+
+818
+01:03:00,989 --> 01:03:04,989
+Bir karar verilip ona göre şey yapılması gereken,
+
+819
+01:03:04,989 --> 01:03:06,989
+ilerlenmesi gereken yerler.
+
+820
+01:03:06,989 --> 01:03:12,909
+Sonuç olarak spektriyi rahatlatmak adına,
+
+821
+01:03:12,909 --> 01:03:20,909
+ortadan kaldırmak adına alınan tedbirlerin tamamı sıkıntılı, sorunlu.
+
+822
+01:03:20,909 --> 01:03:26,909
+Artı yani spektrenin pek çok varyantı var.
+
+823
+01:03:26,909 --> 01:03:28,909
+Aynı mantık üzerine kurulu.
+
+824
+01:03:28,909 --> 01:03:32,909
+Ama işte gördüğünüz conditional branch halini gördüğünüz
+
+825
+01:03:32,909 --> 01:03:35,909
+veya indirect branch halini gördüğünüz.
+
+826
+01:03:35,909 --> 01:03:45,909
+O yüzden daha böyle işlemcinin modelinin formal olarak ortaya konulduğu ve test edildiği yapılara geçinmesi lazım.
+
+827
+01:03:45,909 --> 01:03:48,909
+Bu alan hakikaten açık bir alan.
+
+828
+01:03:48,909 --> 01:03:57,909
+Güvenlik alanında son önümüzdeki birkaç yılı zorlayacak güzel çalışmaların yapılacağı bir alan.
+
+829
+01:03:57,909 --> 01:04:03,909
+Mezun olduğunuzda lisansüstü yaparsanız ve bilgisayar güvenliğiyle ilgilenirseniz,
+
+830
+01:04:03,909 --> 01:04:07,909
+ilgilenebileceğiniz konulardan bir tanesi.
+
+831
+01:04:07,909 --> 01:04:09,909
+Daha bitmedi yani.
+
+832
+01:04:09,909 --> 01:04:16,909
+Bakın işte Meltdown, Riddle, Fallout, Zombie Lord, Stored League, Forwarding.
+
+833
+01:04:16,909 --> 01:04:20,909
+Yani bir taraftan ne dedik?
+
+834
+01:04:20,909 --> 01:04:22,909
+Software Guard Extension var.
+
+835
+01:04:22,909 --> 01:04:23,909
+Çok güzel gibi görünüyor.
+
+836
+01:04:23,909 --> 01:04:32,909
+Ama diğer taraftan da bir tanesi çıktığı zaman Speculative Execution'da bir tane bir açık bulunduğu zaman,
+
+837
+01:04:32,909 --> 01:04:34,909
+bir sıkıntı bulunduğu zaman,
+
+838
+01:04:34,909 --> 01:04:41,909
+bakalım arka arkaya kaç tane şey birden oluşturulmuş durumda.
+
+839
+01:04:41,909 --> 01:04:55,860
+Evet, bugüne kadar işlemcileri mimari özellikleriyle ve hızlarıyla ölçüyorduk, değerlendiriyorduk çoğunlukla.
+
+840
+01:04:55,860 --> 01:05:03,860
+Dediğim gibi Memory Protection'la alakalı özellikler zaten standart var olması gereken özellikler oldu.
+
+841
+01:05:03,860 --> 01:05:10,860
+70'lerden beri hayatımızda işlemcilerin tasarımında olduğu için.
+
+842
+01:05:10,860 --> 01:05:26,860
+Ama artık son 3-4 sene içerisinde işlemcilerde ki mimari seviyesinde güvenlik açıkları da ortaya çıktığı için ki özellikle Intel işlemcilerinde,
+
+843
+01:05:26,860 --> 01:05:32,860
+diğer işlemcilerde, ARM'da, PowerPC'de bu tarz açıklar var.
+
+844
+01:05:33,860 --> 01:05:36,860
+Bunun için bu şekilde raporlanmış durumda değil.
+
+845
+01:05:36,860 --> 01:05:39,860
+Bu söylediklerimiz hep Intel işlemcileri için geçerli.
+
+846
+01:05:39,860 --> 01:05:47,860
+Bunlara daha metodik, daha formal çözümlerin olması gerekiyor.
+
+847
+01:05:47,860 --> 01:05:52,860
+Evet arkadaşlar, bugünkü dersimiz de bu kadar.
+
+848
+01:05:52,860 --> 01:05:54,860
+Umarım hoşunuza gitmiştir.
+
+849
+01:05:54,860 --> 01:06:01,289
+Farklı ve güncel bir konu, güzel bir konu.
+
+850
+01:06:01,289 --> 01:06:05,289
+Evet, dönemi bu şekilde kapatıyoruz.
+
+851
+01:06:06,289 --> 01:06:13,289
+Final sınav programını Butko Hocanız ilan edecek, yanılmıyorsam.
+
+852
+01:06:13,289 --> 01:06:18,289
+Ona göre de haftaya hangi günse sınavı yaparız.
+
+853
+01:06:18,289 --> 01:06:23,119
+İlan edildi mi? Aa süper, harika.
+
+854
+01:06:23,119 --> 01:06:31,360
+Tamam. Dün yazışma vardı çünkü bir iki değişiklik yapacağım diye yapmış demek ki bugün. Harika.
+
+855
+01:06:31,360 --> 01:06:49,969
+Evet, herkese iyi haftalar. Haftaya sınavda görüşmek üzere. Sizler de iyi günler.
+
