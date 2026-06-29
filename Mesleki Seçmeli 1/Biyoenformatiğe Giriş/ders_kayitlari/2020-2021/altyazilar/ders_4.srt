@@ -1,0 +1,6452 @@
+1
+00:00:00,000 --> 00:00:29,980
+İzlediğiniz için teşekkür ederim.
+
+2
+00:00:30,000 --> 00:00:59,980
+Altyazı M.K.
+
+3
+00:01:00,000 --> 00:01:29,980
+Altyazı M.K.
+
+4
+00:01:30,000 --> 00:01:59,980
+Altyazı M.K.
+
+5
+00:02:00,000 --> 00:02:29,979
+Altyazı M.K.
+
+6
+00:02:30,000 --> 00:02:59,979
+Altyazı M.K.
+
+7
+00:03:00,000 --> 00:03:29,979
+Altyazı M.K.
+
+8
+00:03:30,000 --> 00:03:59,979
+Altyazı M.K.
+
+9
+00:04:00,000 --> 00:04:29,980
+Altyazı M.K.
+
+10
+00:04:30,000 --> 00:04:59,980
+Altyazı M.K.
+
+11
+00:05:00,000 --> 00:05:07,000
+First let me share the presentations.
+
+12
+00:05:30,000 --> 00:05:40,000
+Do you see the screen?
+
+13
+00:05:40,000 --> 00:05:43,000
+Okay, that's good.
+
+14
+00:05:43,000 --> 00:05:45,000
+Okay, we continue where we left.
+
+15
+00:05:45,000 --> 00:05:47,000
+This is where we left.
+
+16
+00:05:47,000 --> 00:05:55,000
+We classified the languages and we should define the concept of programming.
+
+17
+00:05:55,000 --> 00:06:00,000
+These are fundamentals, as I already mentioned last time.
+
+18
+00:06:00,000 --> 00:06:14,000
+Programming is defined as the methodologies for creating configured programs that perform a desired function for the problem solving.
+
+19
+00:06:14,000 --> 00:06:29,000
+Normally, when we write a program to solve a problem, that means we convert it into an algorithm.
+
+20
+00:06:29,000 --> 00:06:30,000
+We use statements.
+
+21
+00:06:30,000 --> 00:06:35,000
+This is a stepwise refinement.
+
+22
+00:06:35,000 --> 00:06:41,000
+In this stepwise refinement, debugging is especially important.
+
+23
+00:06:41,000 --> 00:06:48,000
+We will mention very soon debugging in TARP, especially.
+
+24
+00:06:48,000 --> 00:06:54,000
+And we will mention Python as well.
+
+25
+00:06:54,000 --> 00:07:00,000
+But mainly we will concentrate on TARP because probably you have already seen
+
+26
+00:07:00,000 --> 00:07:06,000
+or studied Python in some other courses.
+
+27
+00:07:06,000 --> 00:07:14,000
+And most of you probably have already done some programming in Python.
+
+28
+00:07:14,000 --> 00:07:27,000
+Stepwise refinement is, if you have written a program, probably you experienced this.
+
+29
+00:07:27,000 --> 00:07:29,000
+You start with programming.
+
+30
+00:07:29,000 --> 00:07:31,000
+You start with problem statement.
+
+31
+00:07:31,000 --> 00:07:35,000
+You decompose tasks into a bit simpler subtasks.
+
+32
+00:07:35,000 --> 00:07:39,000
+And decompose each subtask into smaller subtasks.
+
+33
+00:07:39,000 --> 00:07:44,000
+And these into even smaller subtasks.
+
+34
+00:07:44,000 --> 00:07:48,000
+Until you get to the initial instruction, never delete it.
+
+35
+00:07:48,000 --> 00:07:50,000
+You need to do.
+
+36
+00:07:50,000 --> 00:07:54,000
+You want to solve the problem.
+
+37
+00:07:54,000 --> 00:07:58,000
+I just skip this issue because we have already done this.
+
+38
+00:07:58,000 --> 00:08:12,000
+In programming, when we program to solve a problem, we basically use three constructs.
+
+39
+00:08:12,000 --> 00:08:27,000
+First is, we can take a task and divide it into subtasks.
+
+40
+00:08:27,000 --> 00:08:33,000
+These are sequential constructs.
+
+41
+00:08:33,000 --> 00:08:39,000
+Or we might have some sort of conditionals.
+
+42
+00:08:39,000 --> 00:08:42,000
+We will have a test condition.
+
+43
+00:08:42,000 --> 00:08:49,000
+Depending on the condition, the result might be true or false.
+
+44
+00:08:49,000 --> 00:08:56,000
+Then depending on the students or farmers, we will have the different subtasks.
+
+45
+00:08:57,000 --> 00:09:00,000
+This is known as conditional.
+
+46
+00:09:00,000 --> 00:09:07,000
+And the third one is iteration, basically.
+
+47
+00:09:07,000 --> 00:09:10,000
+We have a certain test condition.
+
+48
+00:09:10,000 --> 00:09:13,000
+And we have some repetitive tests.
+
+49
+00:09:13,000 --> 00:09:20,000
+And we call this iteration.
+
+50
+00:09:20,000 --> 00:09:25,000
+In sequential, we do subtask one.
+
+51
+00:09:25,000 --> 00:09:30,000
+In completion, then we proceed to the subtask two.
+
+52
+00:09:30,000 --> 00:09:32,000
+In completion, etc.
+
+53
+00:09:32,000 --> 00:09:35,000
+That's very straightforward.
+
+54
+00:09:35,000 --> 00:09:42,000
+In conditional, if condition is true, we do task one.
+
+55
+00:09:42,000 --> 00:09:46,000
+Else, we do the other task.
+
+56
+00:09:46,000 --> 00:09:54,000
+In iterative, as you already know, we have a pattern to repeat.
+
+57
+00:09:54,000 --> 00:09:59,000
+Over and over.
+
+58
+00:09:59,000 --> 00:10:00,000
+As long as the
+
+59
+00:10:00,000 --> 00:10:01,000
+.
+
+60
+00:10:00,000 --> 00:10:07,279
+test condition is true check each element of the file and count the
+
+61
+00:10:01,000 --> 00:10:04,000
+.
+
+62
+00:10:04,000 --> 00:10:05,000
+.
+
+63
+00:10:05,000 --> 00:10:06,000
+.
+
+64
+00:10:06,000 --> 00:10:07,000
+.
+
+65
+00:10:07,000 --> 00:10:08,000
+.
+
+66
+00:10:07,279 --> 00:10:14,460
+characters that match for example and we do this many times or as required times
+
+67
+00:10:08,000 --> 00:10:09,000
+.
+
+68
+00:10:09,000 --> 00:10:10,000
+.
+
+69
+00:10:10,000 --> 00:10:11,000
+.
+
+70
+00:10:11,000 --> 00:10:12,000
+.
+
+71
+00:10:12,000 --> 00:10:13,000
+.
+
+72
+00:10:13,000 --> 00:10:14,000
+.
+
+73
+00:10:14,000 --> 00:10:15,000
+.
+
+74
+00:10:14,460 --> 00:10:31,180
+look basically so these are three main constructs we use while we program the
+
+75
+00:10:15,000 --> 00:10:16,000
+.
+
+76
+00:10:16,000 --> 00:10:17,000
+.
+
+77
+00:10:17,000 --> 00:10:18,000
+.
+
+78
+00:10:18,000 --> 00:10:19,000
+.
+
+79
+00:10:19,000 --> 00:10:20,000
+.
+
+80
+00:10:20,000 --> 00:10:21,000
+.
+
+81
+00:10:21,000 --> 00:10:22,000
+.
+
+82
+00:10:22,000 --> 00:10:23,000
+.
+
+83
+00:10:23,000 --> 00:10:24,000
+.
+
+84
+00:10:31,180 --> 00:10:39,900
+reasons we write programs we might want to automate computer work otherwise done
+
+85
+00:10:39,900 --> 00:10:44,280
+by hand this will save us time and
+
+86
+00:10:44,280 --> 00:10:44,440
+time and
+
+87
+00:10:44,440 --> 00:10:50,700
+preview servers obviously we can run these same analysis on lots of simple
+
+88
+00:10:50,700 --> 00:10:59,200
+data files it is time consuming very weak is for a program which save time we
+
+89
+00:10:59,200 --> 00:11:04,860
+might want to noise data or mix some decisions will create new analysis
+
+90
+00:11:04,860 --> 00:11:14,260
+methods for each youth basically programming programs we write programs
+
+91
+00:11:14,260 --> 00:11:14,440
+in
+
+92
+00:11:14,440 --> 00:11:23,560
+many different languages. There are more than 100 languages. Some are just very old, some
+
+93
+00:11:26,440 --> 00:11:29,880
+very few uses and some are very popular.
+
+94
+00:11:33,240 --> 00:11:41,080
+Within the bioinformatics context, Perl is very popular. It's basically
+
+95
+00:11:41,080 --> 00:11:50,120
+the main language used in bioinformatics. That's why we cover Perl. But Python is a rising start.
+
+96
+00:11:51,320 --> 00:11:57,960
+It's not for bioinformatics. There are also bioinformatics applications.
+
+97
+00:12:00,280 --> 00:12:03,560
+Well, you can apply to any field basically.
+
+98
+00:12:04,360 --> 00:12:10,759
+But it is mainly used nowadays for artificial intelligence and data science. So therefore
+
+99
+00:12:11,720 --> 00:12:16,040
+you should learn Python. You have already learned maybe. Therefore
+
+100
+00:12:16,920 --> 00:12:24,360
+I will not go into more deep in Python. Still I will continue with Perl mainly.
+
+101
+00:12:27,720 --> 00:12:37,080
+Here we have a simple comparison, not really comparison, but properties of Perl and Python.
+
+102
+00:12:38,200 --> 00:12:41,000
+For example, Perl is fairly easy to learn.
+
+103
+00:12:41,639 --> 00:12:49,000
+The basics. Python is because it's a language it's easier to learn and use
+
+104
+00:12:52,600 --> 00:12:57,960
+Perl has many powerful functions for working especially with the text.
+
+105
+00:12:59,080 --> 00:13:06,040
+For example, for searching, extracts, extraction and modification of some parts of it.
+
+106
+00:13:07,879 --> 00:13:09,240
+It can control other programs. If you use a program like this, you can control other programs, but you can't control other programs.
+
+107
+00:13:09,240 --> 00:13:11,000
+If you use a program like this, you can control other parts of the language, but you can't control all of them.
+
+108
+00:13:11,000 --> 00:13:15,000
+as well, you can control other programs with it.
+
+109
+00:13:15,000 --> 00:13:19,000
+It is free and available for
+
+110
+00:13:19,000 --> 00:13:23,000
+almost all operating systems.
+
+111
+00:13:23,000 --> 00:13:27,000
+As I said, it's the most popular language in
+
+112
+00:13:27,000 --> 00:13:31,000
+bioinformatics. Still it is.
+
+113
+00:13:31,000 --> 00:13:35,000
+There are many fabulous modules. It is
+
+114
+00:13:35,000 --> 00:13:39,000
+not an object-oriented programming language but it
+
+115
+00:13:39,000 --> 00:13:43,000
+has some sort of support
+
+116
+00:13:43,000 --> 00:13:47,000
+for object orientation.
+
+117
+00:13:47,000 --> 00:13:51,000
+It is cross-platform compatible. We'll mention this
+
+118
+00:13:51,000 --> 00:13:55,000
+in a minute. The Python is, as I said,
+
+119
+00:13:55,000 --> 00:13:59,000
+it's easy to learn and use. It is
+
+120
+00:13:59,000 --> 00:14:03,000
+although it is a newer language, now it is mature and supported.
+
+121
+00:14:03,000 --> 00:14:07,000
+It is a supported Python community. We can see
+
+122
+00:14:07,000 --> 00:14:09,000
+these
+
+123
+00:14:09,000 --> 00:14:13,000
+supporting tools available for Python nowadays.
+
+124
+00:14:13,000 --> 00:14:17,000
+There are hundreds of Python libraries
+
+125
+00:14:17,000 --> 00:14:21,000
+and frameworks. It is also free and available
+
+126
+00:14:21,000 --> 00:14:25,000
+for most operating systems. It provides
+
+127
+00:14:25,000 --> 00:14:29,000
+versatility, efficiency, reliability and flexibility
+
+128
+00:14:29,000 --> 00:14:33,000
+and speed at some degree.
+
+129
+00:14:33,000 --> 00:14:37,000
+It is not intended to
+
+130
+00:14:37,000 --> 00:14:41,000
+develop high-speed algorithms,
+
+131
+00:14:41,000 --> 00:14:45,000
+especially in real-time
+
+132
+00:14:45,000 --> 00:14:49,000
+applications. For this,
+
+133
+00:14:49,000 --> 00:14:53,000
+there is another data science or
+
+134
+00:14:53,000 --> 00:14:57,000
+intelligence language called Julia. Julia
+
+135
+00:14:57,000 --> 00:15:01,000
+is optimized for
+
+136
+00:15:00,000 --> 00:15:12,000
+implementations. As I said, it is the main language for big data machine learning and cloud computing.
+
+137
+00:15:12,000 --> 00:15:33,000
+Python was developed as completely object-oriented language.
+
+138
+00:15:33,000 --> 00:15:41,000
+So it is an object-oriented language and it is also cross-platform compatible.
+
+139
+00:15:41,000 --> 00:15:42,000
+So it is an object-oriented language and it is also cross-platform compatible.
+
+140
+00:15:42,000 --> 00:15:47,000
+So it is an object-oriented language and it is also cross-platform compatible.
+
+141
+00:15:47,000 --> 00:15:58,000
+Perl is basically an acronym for Practical Extraction and Report Language.
+
+142
+00:15:58,000 --> 00:16:11,000
+As part of tech manipulation functions, it was originally written by Larry Wall at NASA's JPL, Jet Propulsion Laboratory,
+
+143
+00:16:11,000 --> 00:16:16,000
+As part of tech manipulation functions, it was originally written by Larry Wall at NASA's JPL, Jet Propulsion Laboratory,
+
+144
+00:16:16,000 --> 00:16:17,000
+as it is based on Unix systems, therefore it has many connections with Unix.
+
+145
+00:16:17,000 --> 00:16:18,000
+as it is based on Unix systems, therefore it has many connections with Unix.
+
+146
+00:16:18,000 --> 00:16:27,000
+It started as glue language for the use of Larry and office mates to organize emails or some text documents.
+
+147
+00:16:27,000 --> 00:16:29,000
+It started as glue language for the use of Larry and office mates to organize emails or some text documents.
+
+148
+00:16:29,000 --> 00:16:34,000
+Therefore it is very powerful in manipulating text.
+
+149
+00:16:34,000 --> 00:16:40,000
+Then it was extended by a lot of people and many biologists as well,
+
+150
+00:16:40,000 --> 00:16:53,000
+because the main data source for biology is, as we already mentioned, its character and text.
+
+151
+00:16:53,000 --> 00:16:59,000
+It combines the best features of several languages.
+
+152
+00:16:59,000 --> 00:17:01,000
+We will see this later.
+
+153
+00:17:01,000 --> 00:17:09,000
+You will be familiar with most of the structures used in Perl.
+
+154
+00:17:09,000 --> 00:17:10,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+155
+00:17:10,000 --> 00:17:11,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+156
+00:17:11,000 --> 00:17:12,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+157
+00:17:12,000 --> 00:17:13,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+158
+00:17:13,000 --> 00:17:14,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+159
+00:17:14,000 --> 00:17:15,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+160
+00:17:15,000 --> 00:17:16,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+161
+00:17:16,000 --> 00:17:17,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+162
+00:17:17,000 --> 00:17:18,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+163
+00:17:18,000 --> 00:17:19,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+164
+00:17:19,000 --> 00:17:20,000
+We will see this later. You will be familiar with most of the structures used in Perl.
+
+165
+00:17:20,000 --> 00:17:31,839
+is there is more than one way to do it to implement the task probably you can
+
+166
+00:17:34,880 --> 00:17:38,799
+choose at least three four five methods
+
+167
+00:17:41,119 --> 00:17:42,400
+you will see this later
+
+168
+00:17:42,400 --> 00:17:53,360
+Python is not an acronym it's named after the comedy group Monty Python I have a read
+
+169
+00:17:53,360 --> 00:18:02,400
+what was Monty Python the comedy group it was conceived in the late 19 1980s
+
+170
+00:18:04,480 --> 00:18:06,720
+by Van Rossum
+
+171
+00:18:09,120 --> 00:18:12,160
+as a successor to ABC programming plan
+
+172
+00:18:12,400 --> 00:18:14,480
+it is another language
+
+173
+00:18:17,360 --> 00:18:20,960
+designed as an object-oriented language at the beginning
+
+174
+00:18:22,000 --> 00:18:24,720
+current stable religion 392
+
+175
+00:18:26,640 --> 00:18:34,160
+core philosophy in Python is there's a longer list in these documents but I included several
+
+176
+00:18:37,360 --> 00:18:41,600
+of them for example beautiful is better than ugly
+
+177
+00:18:42,800 --> 00:18:50,880
+explicit is better than implicit simple is better than complex complex is better than complicated
+
+178
+00:18:50,880 --> 00:19:00,400
+readability counts etc these are the philosophy or some concepts within the philosophy of
+
+179
+00:19:00,960 --> 00:19:08,880
+Python because it's very easy language it's really simple language and it's very clear
+
+180
+00:19:09,759 --> 00:19:11,680
+so this is partially
+
+181
+00:19:13,040 --> 00:19:16,240
+good for the reason for its popularity nowadays
+
+182
+00:19:19,440 --> 00:19:22,880
+but it provides CGI programming
+
+183
+00:19:25,600 --> 00:19:28,320
+common graphic interface I think
+
+184
+00:19:29,680 --> 00:19:37,200
+to generate web pages with a powerful text processing extracting data from one source
+
+185
+00:19:37,200 --> 00:19:39,680
+and taking it to another format
+
+186
+00:19:39,680 --> 00:19:41,120
+to manipulate data from one source and taking it to another format
+
+187
+00:19:41,120 --> 00:19:42,400
+manipulating data from one source and taking it to another format
+
+188
+00:19:42,400 --> 00:19:52,400
+Databases, it has a VDI module to enable easy assessing of the databases.
+
+189
+00:19:52,400 --> 00:19:59,400
+It has data management capabilities, internet programming, automating administration tactics, etc.
+
+190
+00:20:00,000 --> 00:20:16,000
+Python is a powerful mathematical manipulation facility, you have already learned NumPy.
+
+191
+00:20:16,000 --> 00:20:22,000
+Therefore, it is a language of data science and machine learning.
+
+192
+00:20:22,000 --> 00:20:26,000
+It also has text processing capabilities.
+
+193
+00:20:26,000 --> 00:20:37,000
+It can be used for rapid application development, as MATLAB is used by many engineers.
+
+194
+00:20:37,000 --> 00:20:49,000
+It is really a good strong candidate to replace MATLAB environment in an engineering task.
+
+195
+00:20:49,000 --> 00:20:53,000
+So, it is a system utility.
+
+196
+00:20:53,000 --> 00:20:55,000
+It enables for Internet programming.
+
+197
+00:20:55,000 --> 00:20:58,000
+It enables for data-based programming as well.
+
+198
+00:20:58,000 --> 00:21:07,000
+Basically, anything which can be done in Perl or in other languages can also be done in Python.
+
+199
+00:21:07,000 --> 00:21:13,000
+Or we can say for many languages as well.
+
+200
+00:21:13,000 --> 00:21:20,000
+Here are the links where to get Perl.
+
+201
+00:21:20,000 --> 00:21:22,000
+There are some ideas for Perl.
+
+202
+00:21:22,000 --> 00:21:24,000
+But there are no reasons.
+
+203
+00:21:24,000 --> 00:21:32,000
+Recent releases, they are at least 4-5 years old.
+
+204
+00:21:32,000 --> 00:21:45,000
+The reason might be that Perl community is quite ready to support its Perl development.
+
+205
+00:21:45,000 --> 00:21:53,000
+Probably new releases may come.
+
+206
+00:21:53,000 --> 00:22:01,000
+You have better features.
+
+207
+00:22:01,000 --> 00:22:04,000
+For Python, there are many ideas.
+
+208
+00:22:04,000 --> 00:22:14,000
+You can use a common science programming language or you can use one of the ideas to write programs in Python.
+
+209
+00:22:14,000 --> 00:22:21,000
+Basically, either in Perl or Python does not require an idea.
+
+210
+00:22:21,000 --> 00:22:26,000
+You can simply use a text editor.
+
+211
+00:22:26,000 --> 00:22:29,000
+Even Windows text editor and write programs.
+
+212
+00:22:29,000 --> 00:22:32,000
+They are very, very efficient.
+
+213
+00:22:32,000 --> 00:22:36,000
+Very experienced programmers.
+
+214
+00:22:36,000 --> 00:22:43,000
+You can simply write by using a text editor and you save it with respective data files.
+
+215
+00:22:43,000 --> 00:22:49,000
+And it will be ready to run from common science.
+
+216
+00:22:49,000 --> 00:22:50,000
+Thank you.
+
+217
+00:22:51,000 --> 00:22:59,000
+You can check Perl installation by simply typing this.
+
+218
+00:22:59,000 --> 00:23:02,000
+The Python version is this one.
+
+219
+00:23:02,000 --> 00:23:06,000
+In Perl, you will write perl d.
+
+220
+00:23:06,000 --> 00:23:12,000
+I can probably show this using the command line.
+
+221
+00:23:12,000 --> 00:23:19,000
+Just you type cmd command line and it will do.
+
+222
+00:23:19,000 --> 00:23:20,000
+I think you see more.
+
+223
+00:23:20,000 --> 00:23:25,000
+If I just simply type just copy paste, it's easier.
+
+224
+00:23:25,000 --> 00:23:27,000
+What do you mean?
+
+225
+00:23:27,000 --> 00:23:28,000
+I cannot copy.
+
+226
+00:23:28,000 --> 00:23:31,000
+You need to run it.
+
+227
+00:23:31,000 --> 00:23:39,000
+Perl d, it will tell me the version.
+
+228
+00:23:39,000 --> 00:23:42,000
+Then I do this with Python.
+
+229
+00:23:42,000 --> 00:23:43,000
+Python.
+
+230
+00:23:43,000 --> 00:23:46,000
+I wrote Python.
+
+231
+00:23:46,000 --> 00:23:49,000
+It was the version.
+
+232
+00:23:49,000 --> 00:23:56,000
+version.
+
+233
+00:23:56,000 --> 00:23:59,000
+I think $390 installed.
+
+234
+00:23:59,000 --> 00:24:01,000
+These are very simple command lines.
+
+235
+00:24:01,000 --> 00:24:07,000
+First example.
+
+236
+00:24:07,000 --> 00:24:11,000
+I'm not going to do all the examples I have in my presentations.
+
+237
+00:24:11,000 --> 00:24:15,000
+But probably I will run some of examples.
+
+238
+00:24:17,000 --> 00:24:18,000
+Explanation.
+
+239
+00:24:19,000 --> 00:24:37,000
+You can install cPyNAMP to make installing color modules easier. There are some easy functions. You can install them all by this procedure. I'm not going to repeat them.
+
+240
+00:24:37,000 --> 00:24:46,000
+In Python, you can use Python entities for packages.
+
+241
+00:24:46,000 --> 00:25:00,000
+Extended functions, well, it is known as modules. In Python, we usually call them packages.
+
+242
+00:25:00,000 --> 00:25:13,079
+to get the information on a particular function in Perl you simply type
+
+243
+00:25:13,079 --> 00:25:33,779
+perl doc then dash f and then function for example here we can simply type perl doc then f say for example
+
+244
+00:25:33,779 --> 00:25:43,059
+print so you will see the all the explanations help files for print
+
+245
+00:25:43,059 --> 00:26:04,039
+for any other functions for Python let's we don't have this facility from us for
+
+246
+00:26:04,039 --> 00:26:11,220
+asking help directly from command line first we have to switch to the Python run
+
+247
+00:26:11,220 --> 00:26:12,559
+and
+
+248
+00:26:13,059 --> 00:26:20,559
+environment then you have these facilities that's a main difference you
+
+249
+00:26:20,559 --> 00:26:33,819
+just simply when you just type Python you run the runtime environment for
+
+250
+00:26:33,819 --> 00:26:41,220
+Python now you can simply use this help function
+
+251
+00:26:41,220 --> 00:26:43,059
+if you type
+
+252
+00:26:43,059 --> 00:26:54,220
+help it will go to the special command line interface and you will ask
+
+253
+00:26:54,220 --> 00:27:11,559
+whatever you like and it will tell you this and you can simply type anything it will tell you control
+
+254
+00:27:13,059 --> 00:27:22,359
+that or control break or break or whatever will send the death to
+
+255
+00:27:22,419 --> 00:27:38,059
+give you step B5S again run time environment as well that's main difference between Perl and Python
+
+256
+00:27:38,059 --> 00:27:41,059
+and this help you respect
+
+257
+00:27:41,059 --> 00:27:41,659
+um
+
+258
+00:27:41,659 --> 00:27:42,819
+Perl has some other
+
+259
+00:27:42,819 --> 00:27:42,919
+uh
+
+260
+00:27:42,920 --> 00:27:58,600
+for example, we can search some functions using keywords, I'm not going to spend more
+
+261
+00:27:58,600 --> 00:28:12,900
+time, if you need more, just consult the respective manuals, datasheets, or Perl or Titan book,
+
+262
+00:28:12,900 --> 00:28:29,519
+in this respect, now if I ask a question, Perl or Python, are they interpreted language
+
+263
+00:28:29,519 --> 00:28:38,960
+or compiled languages, as we classify languages in terms of the runtime environment, what
+
+264
+00:28:38,960 --> 00:28:39,480
+do you think?
+
+265
+00:28:42,900 --> 00:28:58,900
+Is Perl an interpreted language or compiled language, same question valid for Python as
+
+266
+00:28:58,900 --> 00:29:08,060
+well, I use this as an interpreter, what about Python?
+
+267
+00:29:12,900 --> 00:29:31,300
+Python is interpreted, well, basically, it's partially true, Perl and Python can be used
+
+268
+00:29:31,300 --> 00:29:42,019
+as interpreted language, but Python and Perl are classified more like Java, they are interpreted
+
+269
+00:29:42,900 --> 00:29:54,280
+or compiled, or both, basically, yeah, interpreted and compiled languages, and approach in terms
+
+270
+00:29:54,280 --> 00:30:00,019
+of the compilation in Perl and Python are almost the same.
+
+271
+00:30:00,000 --> 00:30:11,160
+as Java. Interpreter reads and compiles the program at once and it does not
+
+272
+00:30:11,160 --> 00:30:17,759
+generate a specific machine code at that stage what it does it generates a
+
+273
+00:30:17,759 --> 00:30:24,599
+special virtual machine code as Java does is known as bytecode then you will
+
+274
+00:30:24,600 --> 00:30:34,740
+need a runtime environment to be able to run these codes. These languages are
+
+275
+00:30:34,740 --> 00:30:44,700
+also known as scripting languages both and Python as well. If you remember the
+
+276
+00:30:44,700 --> 00:30:53,400
+cross-platform compatible that was mentioned as one of the characteristics
+
+277
+00:30:53,400 --> 00:30:54,560
+of Python.
+
+278
+00:30:54,600 --> 00:31:07,840
+And Perl as well. This is due to that property actually after the when you
+
+279
+00:31:07,840 --> 00:31:17,300
+compile Perl and Python code it results in a virtual machine code or bytecode.
+
+280
+00:31:17,300 --> 00:31:24,360
+So same as Java. Java does as well so therefore Java is known as
+
+281
+00:31:24,360 --> 00:31:24,560
+scripting.
+
+282
+00:31:24,559 --> 00:31:35,899
+platform independent language. So therefore we said Perl borrows best features of the
+
+283
+00:31:35,899 --> 00:31:45,519
+several languages. Because we consider Perl and Python is some sort of port
+
+284
+00:31:45,519 --> 00:31:54,319
+interpreted and compiled as well or in between. How to write Perl Python code? I have already said
+
+285
+00:31:54,319 --> 00:32:06,619
+you don't need to have any ESL or special environment. You simply open notepad or any
+
+286
+00:32:06,619 --> 00:32:14,859
+text editor and write your code. For Perl you use PL or TFX extension. We use
+
+287
+00:32:14,859 --> 00:32:24,159
+usually PL for short. For Python codes we use PI extension and save it. And you run
+
+288
+00:32:24,319 --> 00:32:37,859
+command in command line. As I have already shown you just use this CND in Windows which
+
+289
+00:32:37,859 --> 00:32:48,019
+is the DOS environment. For running Perl codes you will simply type in this command line.
+
+290
+00:32:48,019 --> 00:32:52,559
+Perl. The name of the program.
+
+291
+00:32:52,559 --> 00:32:53,700
+We'll see it.
+
+292
+00:32:53,700 --> 00:32:54,279
+Okay.
+
+293
+00:32:54,319 --> 00:33:01,639
+varieties of this later. For Python programs you simply type Python and Python
+
+294
+00:33:01,639 --> 00:33:10,000
+programs and you get them all. Or you can use one of the integrated development
+
+295
+00:33:10,000 --> 00:33:25,500
+environments. This is the example to running Perl code. I have just written a
+
+296
+00:33:25,500 --> 00:33:34,140
+small code as number here and I can simply demonstrate it but you have to be in
+
+297
+00:33:34,140 --> 00:33:39,559
+the right directory. I have my programs under
+
+298
+00:33:39,559 --> 00:33:39,980
+D
+
+299
+00:33:39,980 --> 00:33:50,200
+This is DOS directory probably. It's very old operating system. It's embedded in Windows.
+
+300
+00:33:50,200 --> 00:34:09,539
+Maybe it's under the code. Yes, there is one. There are several versions of it.
+
+301
+00:34:09,539 --> 00:34:09,940
+Oh,
+
+302
+00:34:09,940 --> 00:34:09,980
+there is one. There are several versions of it. Oh,
+
+303
+00:34:09,980 --> 00:34:19,740
+there is one. There are several versions of it. Oh,
+
+304
+00:34:19,740 --> 00:34:31,300
+there are two lines. Just if you just want to see it. Very simple.
+
+305
+00:34:31,300 --> 00:34:39,940
+I don't want to teach you programming but just to show me the concept. It's a
+
+306
+00:34:39,940 --> 00:34:58,440
+Here is the program, just one line, print, one, I don't know, one, and probably you are
+
+307
+00:34:58,440 --> 00:35:00,000
+familiar with the sample.
+
+308
+00:35:00,000 --> 00:35:11,519
+characters and for example is end of line therefore we see just the words
+
+309
+00:35:11,519 --> 00:35:23,820
+printed sequentially as a line that one thing one another one thing is every
+
+310
+00:35:23,820 --> 00:35:43,860
+term statement ends with semicolon now I'll try something if I do this it will
+
+311
+00:35:43,860 --> 00:35:52,880
+tell me that unable to use device in the rn
+
+312
+00:35:53,820 --> 00:36:23,640
+if I simply time so it is simple program for Python the concept is same I think I
+
+313
+00:36:23,640 --> 00:36:23,800
+think I think I think I think I think I think I think I think I think I think I
+
+314
+00:36:23,800 --> 00:36:31,580
+had I ten as well right I find them
+
+315
+00:36:33,060 --> 00:36:51,039
+please again this time P one sing program let's see Python program as well we will
+
+316
+00:36:51,039 --> 00:36:53,300
+be able to see the difference between
+
+317
+00:36:53,300 --> 00:36:53,620
+this
+
+318
+00:36:53,619 --> 00:37:08,699
+two codes and this is the hyphen code very similar construct but one main difference
+
+319
+00:37:08,699 --> 00:37:19,639
+is hyphen does not require any end of statement character such as simple or whatever and then
+
+320
+00:37:19,639 --> 00:37:30,139
+instead of double code one code is also valid of course there are many differences but
+
+321
+00:37:30,139 --> 00:37:46,639
+I'm not going to describe all these differences just to give you a taste of the command hyphen
+
+322
+00:37:46,639 --> 00:37:47,639
+so
+
+323
+00:37:47,639 --> 00:37:48,639
+so
+
+324
+00:37:48,639 --> 00:37:49,639
+so
+
+325
+00:37:49,639 --> 00:37:55,139
+if we run this python
+
+326
+00:37:55,139 --> 00:38:08,139
+code is this one this one but not this one here I have to mention that sometimes when
+
+327
+00:38:08,139 --> 00:38:18,639
+you want to insert a code single code in windows editing environment you have to do
+
+328
+00:38:18,639 --> 00:38:19,639
+this
+
+329
+00:38:19,639 --> 00:38:28,139
+instead of this character which is this character is inserted these two characters are different
+
+330
+00:38:28,139 --> 00:38:40,139
+somehow if you include it in your python program this statement it will not run these two will
+
+331
+00:38:40,139 --> 00:38:44,139
+run but the third one will not run
+
+332
+00:38:44,139 --> 00:38:48,639
+debugging I'm not going to show you how to do that but I'm going to show you how to do
+
+333
+00:38:48,639 --> 00:38:49,639
+this
+
+334
+00:38:49,639 --> 00:39:06,639
+debugging I mentioned it's quite important in third there is powerful debugging functionalities
+
+335
+00:39:06,639 --> 00:39:12,639
+we'll see in a minute probably in the files python will also have some debugging functionalities
+
+336
+00:39:12,639 --> 00:39:13,639
+and
+
+337
+00:39:13,639 --> 00:39:14,639
+and
+
+338
+00:39:14,639 --> 00:39:15,639
+and
+
+339
+00:39:15,639 --> 00:39:16,639
+and
+
+340
+00:39:16,639 --> 00:39:17,639
+and
+
+341
+00:39:17,639 --> 00:39:18,639
+and
+
+342
+00:39:18,639 --> 00:39:19,639
+and
+
+343
+00:39:19,639 --> 00:39:20,639
+and
+
+344
+00:39:20,639 --> 00:39:21,639
+and
+
+345
+00:39:21,639 --> 00:39:22,639
+and
+
+346
+00:39:22,639 --> 00:39:23,639
+and
+
+347
+00:39:23,639 --> 00:39:24,639
+yes
+
+348
+00:39:24,639 --> 00:39:38,639
+if I will mention python debugging but nothing in detail first if you use cswt with the
+
+349
+00:39:38,639 --> 00:39:44,639
+third command line command you are telling to compiler actually to do something else
+
+350
+00:39:44,639 --> 00:39:45,639
+so
+
+351
+00:39:45,639 --> 00:39:46,639
+because you are telling to compiler that it is wrong so
+
+352
+00:39:46,639 --> 00:39:47,639
+I'm changing the code
+
+353
+00:39:47,639 --> 00:39:52,119
+compiler to check for possible errors
+
+354
+00:39:53,239 --> 00:40:01,859
+for example you just write part C is rich then your
+
+355
+00:40:00,000 --> 00:40:11,460
+when you run it actually compiler will not run it but it will
+
+356
+00:40:11,460 --> 00:40:27,000
+check for possible errors I have several examples here I specifically created I'm
+
+357
+00:40:27,000 --> 00:40:34,380
+not going to run them but because I run to them when you type don't see now about
+
+358
+00:40:34,380 --> 00:40:42,559
+for which we have just run with C switch it will tell us that okay syntax is okay
+
+359
+00:40:42,559 --> 00:40:53,219
+it checks for syntax errors but it will not give me the result it will check the
+
+360
+00:40:53,219 --> 00:40:56,179
+code
+
+361
+00:40:57,000 --> 00:41:05,500
+for example if somehow I have such a statement which is obviously error is
+
+362
+00:41:05,500 --> 00:41:12,780
+just missing double quote save it I have another file but I'm not going to run it
+
+363
+00:41:12,780 --> 00:41:21,119
+I will show you the output it will tell me that can't find string terminator
+
+364
+00:41:21,119 --> 00:41:26,559
+this is a string but there must be it is initiated by the
+
+365
+00:41:26,559 --> 00:41:27,000
+bit
+
+366
+00:41:27,000 --> 00:41:34,440
+by the double quote and must be terminated by another double quote and it tells me
+
+367
+00:41:34,440 --> 00:41:50,880
+that this is missing okay another simple term script syntax error
+
+368
+00:41:50,880 --> 00:42:14,500
+another version what says link found where operator expected one one year okay
+
+369
+00:42:14,500 --> 00:42:20,880
+error is here string is missing character
+
+370
+00:42:20,880 --> 00:42:22,500
+or equals number two well I got five
+
+371
+00:42:22,500 --> 00:42:34,160
+answer five
+
+372
+00:42:34,180 --> 00:42:35,200
+intercepting surface
+
+373
+00:42:35,200 --> 00:42:38,680
+tell me when to show it
+
+374
+00:42:38,680 --> 00:42:46,880
+it is possible when you try you misty a function name so you expect usually
+
+375
+00:42:46,880 --> 00:42:47,880
+it will look like okay to you but when you we will see it will not run so tell to switch again this is for false name ok if look like to you but when it will not run it will not run so to check it again these are errors in such case it five to check it will tell us the second time Iorts well it cheers to you in syntax fields we will change so get rid of it zero I got five there
+
+376
+00:42:47,880 --> 00:42:50,680
+so get rid of this error in syntax and somerices it all because if it does never occurs actually this is arguing from theiem you are codes but right and if the end of this if these errors in syntax and and process all these errors in theure should occur that would beается.
+
+377
+00:42:50,880 --> 00:43:08,140
+Sometimes syntax might be completely correct, but no problem. Compiler will not be able to detect it because everything appears to be correct. But there will be some logical errors. It's called semantic errors.
+
+378
+00:43:08,139 --> 00:43:21,139
+Perl also provides the control of semantic errors at some degree.
+
+379
+00:43:21,139 --> 00:43:29,139
+A simple semantic incorrect perm script could be something like this.
+
+380
+00:43:29,139 --> 00:43:37,139
+String terminated, then a string after this terminated again.
+
+381
+00:43:37,139 --> 00:43:38,139
+This is perfect.
+
+382
+00:43:38,139 --> 00:43:46,139
+Syntactically correct for the Perl compiler.
+
+383
+00:43:46,139 --> 00:43:50,139
+I have created another file like this one.
+
+384
+00:43:50,139 --> 00:43:52,139
+Save it and run it.
+
+385
+00:43:52,139 --> 00:43:54,139
+Run with cswitch.
+
+386
+00:43:54,139 --> 00:43:59,139
+This is the message I get.
+
+387
+00:43:59,139 --> 00:44:01,139
+Nothing wrong.
+
+388
+00:44:01,139 --> 00:44:03,139
+Now I can run the code.
+
+389
+00:44:03,139 --> 00:44:07,139
+I think so, but when you run it, it will do nothing.
+
+390
+00:44:07,139 --> 00:44:08,139
+It will run it.
+
+391
+00:44:08,139 --> 00:44:13,139
+It will give you no result.
+
+392
+00:44:13,139 --> 00:44:20,139
+If we use the w switch, which stands for warning,
+
+393
+00:44:20,139 --> 00:44:26,139
+it will tell Perl compiler to warn us about things.
+
+394
+00:44:26,139 --> 00:44:31,139
+Things that might be problems in the script.
+
+395
+00:44:31,139 --> 00:44:37,139
+If I run the code using w switch,
+
+396
+00:44:37,139 --> 00:44:39,139
+It will give me the message I get.
+
+397
+00:44:39,139 --> 00:44:41,139
+Use the constant.
+
+398
+00:44:41,139 --> 00:44:44,139
+Now it's constant.
+
+399
+00:44:44,139 --> 00:44:45,139
+Perfect.
+
+400
+00:44:45,139 --> 00:44:49,139
+It's syntactically, but it does nothing.
+
+401
+00:44:49,139 --> 00:44:55,139
+So that's the two of the possible solutions.
+
+402
+00:44:55,139 --> 00:44:56,139
+Thank you.
+
+403
+00:44:56,139 --> 00:44:58,139
+Thank you to all of you.
+
+404
+00:44:58,139 --> 00:44:59,139
+Have a happy day.
+
+405
+00:44:59,139 --> 00:45:00,139
+Thank you.
+
+406
+00:45:00,000 --> 00:45:17,599
+or debugging you can combine switches C and W both if you combine it will check
+
+407
+00:45:00,139 --> 00:45:01,139
+Thank you.
+
+408
+00:45:01,139 --> 00:45:02,139
+Thank you.
+
+409
+00:45:02,139 --> 00:45:03,139
+Thank you.
+
+410
+00:45:03,139 --> 00:45:04,139
+Thank you.
+
+411
+00:45:04,139 --> 00:45:05,139
+Thank you.
+
+412
+00:45:05,139 --> 00:45:06,139
+Thank you.
+
+413
+00:45:18,400 --> 00:45:26,440
+syntax errors and possible logical errors as well
+
+414
+00:45:30,119 --> 00:45:34,139
+excuse Jugend
+
+415
+00:45:34,880 --> 00:45:40,239
+another thing you can the ernst allows you to
+
+416
+00:45:42,239 --> 00:45:49,440
+use or to use elektronic approaches so to use
+
+417
+00:45:51,840 --> 00:45:58,320
+traditional approaches if you use the strict pragma
+
+418
+00:45:58,320 --> 00:46:00,000
+by putting Bolazer
+
+419
+00:46:00,000 --> 00:46:09,639
+line at the top of the script, you are telling TURL that you are willing to have a higher
+
+420
+00:46:09,639 --> 00:46:10,639
+standard.
+
+421
+00:46:10,639 --> 00:46:18,039
+In particular, you are saying you are willing to declare all your variables before using
+
+422
+00:46:18,039 --> 00:46:19,039
+TURL.
+
+423
+00:46:19,039 --> 00:46:22,039
+We will be discussing TURL variables later.
+
+424
+00:46:22,039 --> 00:46:33,539
+It is said that TURL is a typeless language, we saw this in Python as well, you don't have
+
+425
+00:46:33,539 --> 00:46:42,800
+to declare the variables at the beginning of the program as we do in C or some other
+
+426
+00:46:42,800 --> 00:46:52,019
+languages, classical languages, you have to declare the type of the variables at the beginning.
+
+427
+00:46:52,019 --> 00:47:08,380
+But you can have TURL to force you to declare them.
+
+428
+00:47:08,380 --> 00:47:22,000
+Sometimes it gives you a freedom to program, or not forcing you to declare the variables.
+
+429
+00:47:22,019 --> 00:47:30,900
+But sometimes, if you have very long programs, it might be necessary to declare, to be able
+
+430
+00:47:30,900 --> 00:47:37,000
+to really see what's going on, to declare the variables.
+
+431
+00:47:37,000 --> 00:47:45,780
+So if you skip pragma, as we showed here, you skip the end of the program, then you
+
+432
+00:47:45,780 --> 00:47:50,900
+have to declare all the functions, all the variables before using them.
+
+433
+00:47:52,019 --> 00:47:57,780
+TURL gives you this flexibility as well.
+
+434
+00:47:57,780 --> 00:48:10,000
+Basically, in the new computer programming, to direct what pragma is, a language construct
+
+435
+00:48:10,000 --> 00:48:14,920
+that describes how a compiler should process simple.
+
+436
+00:48:14,920 --> 00:48:20,900
+So the explanation of the word pragma.
+
+437
+00:48:20,900 --> 00:48:21,900
+Thank you.
+
+438
+00:48:22,019 --> 00:48:34,920
+Regarding Python in terms of debugging, Python has a different approach.
+
+439
+00:48:34,920 --> 00:48:44,860
+You can use basically the classical approaches such as you can insert some sort of print
+
+440
+00:48:44,860 --> 00:48:45,860
+statements.
+
+441
+00:48:45,860 --> 00:48:50,780
+If the locations you suspect are not the same, you can insert some sort of print statements.
+
+442
+00:48:50,780 --> 00:48:51,780
+If the locations you suspect are not the same, you can insert some sort of print statements.
+
+443
+00:48:51,780 --> 00:48:52,680
+If the locations you suspect are not the same, you can insert some sort of print statements.
+
+444
+00:48:52,680 --> 00:48:53,680
+What you can do is in any language.
+
+445
+00:48:53,680 --> 00:48:55,660
+You simply print some variables to see if there is any problem or not in certain stages.
+
+446
+00:48:55,660 --> 00:48:58,740
+Apart from these, Python has a built-in debugger known as TDB, or Python debugger.
+
+447
+00:48:58,740 --> 00:49:02,340
+It's short after me for Python debugger.
+
+448
+00:49:02,340 --> 00:49:16,660
+It is a simple utility with a command-line interface that allows the compiler to hide
+
+449
+00:49:16,660 --> 00:49:17,660
+the user's information.
+
+450
+00:49:17,660 --> 00:49:18,660
+So this is a common utility.
+
+451
+00:49:18,659 --> 00:49:28,659
+with a command line interface that as the main job the easiest way to use pdb is to call it in
+
+452
+00:49:28,659 --> 00:49:36,500
+the code you are working from you just instead of inserting print whatever variable you insert this
+
+453
+00:49:37,299 --> 00:49:45,460
+then it will switch the command line interface for debugging debugging in this interface there will be
+
+454
+00:49:45,460 --> 00:49:57,460
+some opportunities to use some specific functions related to debugging some are shown here such as
+
+455
+00:49:57,460 --> 00:49:59,460
+list up down step
+
+456
+00:50:00,000 --> 00:50:07,280
+next day of course you have to again learn how to use this debugging
+
+457
+00:50:09,519 --> 00:50:18,079
+the extensive functions and some pdb comments are listed here there are many of them
+
+458
+00:50:22,079 --> 00:50:23,760
+i can probably
+
+459
+00:50:23,760 --> 00:50:29,600
+run an example here
+
+460
+00:50:33,360 --> 00:50:34,640
+let me see
+
+461
+00:50:42,560 --> 00:50:42,880
+not
+
+462
+00:50:49,920 --> 00:50:50,240
+check
+
+463
+00:50:53,760 --> 00:51:00,240
+fighting coach
+
+464
+00:51:01,120 --> 00:51:01,600
+okay
+
+465
+00:51:07,520 --> 00:51:08,640
+fighting coach
+
+466
+00:51:12,560 --> 00:51:13,200
+fight them
+
+467
+00:51:15,520 --> 00:51:16,240
+what was it
+
+468
+00:51:21,040 --> 00:51:21,760
+here we go
+
+469
+00:51:24,720 --> 00:51:25,120
+pd
+
+470
+00:51:26,880 --> 00:51:30,320
+zero i think p one
+
+471
+00:51:37,920 --> 00:51:40,400
+uh p m zero b
+
+472
+00:51:45,360 --> 00:51:46,240
+you have to do
+
+473
+00:51:48,720 --> 00:51:53,120
+first is one or it does it is basically
+
+474
+00:51:53,760 --> 00:51:56,800
+a simple
+
+475
+00:51:59,920 --> 00:52:04,560
+program together a program is posted immediately for zero
+
+476
+00:52:09,200 --> 00:52:16,560
+let me just run again it's uh it will say zero but this the other version
+
+477
+00:52:17,920 --> 00:52:21,120
+uh is inserted just show you
+
+478
+00:52:22,880 --> 00:52:23,600
+it's not there
+
+479
+00:52:23,760 --> 00:52:29,120
+and inserted debugging
+
+480
+00:52:32,000 --> 00:52:32,480
+option
+
+481
+00:52:36,160 --> 00:52:37,520
+and let me run it
+
+482
+00:52:45,200 --> 00:52:45,360
+and
+
+483
+00:52:45,360 --> 00:52:45,840
+zero
+
+484
+00:52:45,840 --> 00:52:45,920
+b
+
+485
+00:52:45,920 --> 00:52:51,920
+zero
+
+486
+00:52:51,920 --> 00:52:52,320
+e
+
+487
+00:52:52,320 --> 00:52:53,520
+zero e
+
+488
+00:52:53,520 --> 00:52:53,680
+zero e
+
+489
+00:52:53,680 --> 00:52:53,760
+zero e
+
+490
+00:52:53,760 --> 00:53:06,240
+zero well i run it it is true and it says
+
+491
+00:53:06,240 --> 00:53:09,120
+positive number
+
+492
+00:53:09,120 --> 00:53:12,400
+i run it again and enter zero now it's
+
+493
+00:53:12,400 --> 00:53:12,880
+switched to
+
+494
+00:53:15,200 --> 00:53:17,040
+debugging mode because
+
+495
+00:53:20,080 --> 00:53:20,720
+i have
+
+496
+00:53:23,760 --> 00:53:29,360
+a statement here to switch to debugging mode if the number is zero
+
+497
+00:53:30,800 --> 00:53:34,480
+now i'm not going to continue just control
+
+498
+00:53:34,480 --> 00:53:36,240
+and set
+
+499
+00:53:36,240 --> 00:53:37,760
+to the eternity
+
+500
+00:53:40,880 --> 00:53:43,360
+okay that's the difference between
+
+501
+00:53:44,160 --> 00:53:45,760
+your line type and your intent
+
+502
+00:53:46,400 --> 00:53:47,040
+debugging
+
+503
+00:53:52,720 --> 00:53:53,680
+okay we can't
+
+504
+00:53:53,760 --> 00:54:00,800
+continue we return back to our program at the beginning of the
+
+505
+00:54:02,320 --> 00:54:04,800
+some programs we see these statements
+
+506
+00:54:06,240 --> 00:54:08,480
+hash exclamation mark
+
+507
+00:54:10,800 --> 00:54:18,080
+then it's a line referring to a certain directory every line starting with this
+
+508
+00:54:18,800 --> 00:54:23,680
+hash is a comment and ignored by perl
+
+509
+00:54:23,760 --> 00:54:26,080
+but
+
+510
+00:54:28,080 --> 00:54:33,680
+specifically the combination of hash with this exclamation mark
+
+511
+00:54:43,200 --> 00:54:53,520
+tells the compiler that how the file should be run but it is for you
+
+512
+00:54:53,760 --> 00:54:56,080
+to do this
+
+513
+00:54:56,080 --> 00:54:57,040
+so
+
+514
+00:54:57,040 --> 00:54:59,920
+so
+
+515
+00:54:59,920 --> 00:55:01,920
+so
+
+516
+00:55:00,000 --> 00:55:10,000
+Windows we don't use this. It is a directory basically where curl sits, curl-executive-of-seats
+
+517
+00:55:01,920 --> 00:55:04,000
+so
+
+518
+00:55:04,000 --> 00:55:06,000
+so
+
+519
+00:55:06,000 --> 00:55:08,960
+so
+
+520
+00:55:08,960 --> 00:55:12,960
+so
+
+521
+00:55:10,000 --> 00:55:17,199
+is known as shebang-line. In this case the file should be passed to curl-interpreter
+
+522
+00:55:12,960 --> 00:55:14,960
+so
+
+523
+00:55:14,960 --> 00:55:18,960
+so
+
+524
+00:55:17,199 --> 00:55:25,039
+which leaves in user win-curl directory. In our programs we don't have to use this.
+
+525
+00:55:18,960 --> 00:55:21,360
+so
+
+526
+00:55:21,360 --> 00:55:22,080
+so
+
+527
+00:55:22,080 --> 00:55:23,120
+so
+
+528
+00:55:25,039 --> 00:55:35,639
+Win-curl and almost all other programming languages each line in a program is known
+
+529
+00:55:35,639 --> 00:55:53,539
+as statement. Curl statements end with semicolon as I have already said. When curl compiler
+
+530
+00:55:53,539 --> 00:55:54,539
+sees semicolon, it will end with a semicolon.
+
+531
+00:55:54,539 --> 00:55:55,019
+Win-curl and almost all programming languages each line in a program is known as statement.
+
+532
+00:55:55,019 --> 00:56:04,239
+It interferes as end of statement. Not end of line but end of statement.
+
+533
+00:56:04,239 --> 00:56:24,519
+The second line, print function same as all other languages. It does curl to the same
+
+534
+00:56:24,519 --> 00:56:32,900
+Texas on the end of line textHow to display the given text.
+
+535
+00:56:32,900 --> 00:56:33,559
+N is the same again in many Languages. It means end of line, or new line .
+
+536
+00:56:33,559 --> 00:56:36,500
+This is an example. Where I will use the input A say....
+
+537
+00:56:36,500 --> 00:56:38,259
+I am, will continue to use it, So it canchece to the text as input A say...
+
+538
+00:56:38,259 --> 00:56:48,679
+This is an example, where I am just going to use the input B say...
+
+539
+00:56:48,679 --> 00:56:52,579
+source textUrb, but just click the formwork.
+
+540
+00:56:52,579 --> 00:56:53,219
+The type'veлектed orwalk will then, order it, and control commands.
+
+541
+00:56:53,219 --> 00:56:53,980
+Which are given by curl *** use the cl opioid categories.
+
+542
+00:56:53,980 --> 00:57:09,980
+then it is better mark on one rather than none and close then it is on
+
+543
+00:57:09,980 --> 00:57:31,980
+one single line and end of line you can also just type in your such a program this is program
+
+544
+00:57:31,980 --> 00:57:38,980
+perfect program but when you run it the result is exactly the same as before
+
+545
+00:57:38,980 --> 00:57:39,980
+but when you run it the result is exactly the same as before
+
+546
+00:57:39,980 --> 00:57:41,980
+but when you run it the result is exactly the same as before
+
+547
+00:57:41,980 --> 00:57:48,980
+so these are here we have one two three four five six seven
+
+548
+00:57:48,980 --> 00:57:53,980
+eight statements but result will be the same
+
+549
+00:57:55,980 --> 00:58:05,980
+of course this is not the wise way to program it just to show you the difference
+
+550
+00:58:06,980 --> 00:58:08,980
+repetition
+
+551
+00:58:08,980 --> 00:58:09,980
+repetition in
+
+552
+00:58:09,980 --> 00:58:24,619
+is same as repetition many languages some languages use for some do some use
+
+553
+00:58:24,619 --> 00:58:37,099
+while in part we have while to construct repetitions books is the main construct
+
+554
+00:58:37,099 --> 00:58:44,699
+or why actually can anybody tell me what will happen when we run this
+
+555
+00:58:48,219 --> 00:58:54,779
+this is almost the same as why what will happen when you run this
+
+556
+00:59:03,500 --> 00:59:06,460
+can anybody tell me what will happen when we run this program
+
+557
+00:59:07,099 --> 00:59:21,099
+so
+
+558
+00:59:33,500 --> 00:59:35,099
+foreign
+
+559
+00:59:37,099 --> 01:00:00,099
+Until we break it, we can simply run it from here to here.
+
+560
+01:00:30,000 --> 01:00:57,059
+It will just continue, it will wait one second, then print it, but it will never stop, to
+
+561
+01:00:57,059 --> 01:01:06,759
+stop it, just simply use ctrl-c or ctrl-z, it is of course a very simple program, I don't
+
+562
+01:01:06,759 --> 01:01:18,239
+need to teach you, I just want to show you the iteration in the term, when you run it,
+
+563
+01:01:18,239 --> 01:01:27,039
+it will run forever, until you fake it, rather than use the word iteration, it will run forever,
+
+564
+01:01:27,039 --> 01:01:36,779
+meaning you will trust that it will run forever and in the same time it will run forever,
+
+565
+01:01:36,779 --> 01:01:40,380
+will run forever then again, you always use the term iteration to repeat the variable,
+
+566
+01:01:40,380 --> 01:01:42,219
+it is the term that always runs forever.
+
+567
+01:01:42,219 --> 01:01:48,000
+In the case of the word iteration, to return a function or repetition to repair a function,
+
+568
+01:01:48,000 --> 01:01:51,500
+this mechanism many programmers use the word loop, we already used it, loop is a name,
+
+569
+01:01:51,500 --> 01:01:52,500
+a noun, and a verb as well.
+
+570
+01:01:52,500 --> 01:01:56,639
+We have already seen this in internet world, this is not a good practice, obviously,
+
+571
+01:01:56,639 --> 01:01:57,000
+we have already seen this in internet world, this is not a good practice, obviously,
+
+572
+01:01:57,000 --> 01:02:07,159
+two constant definitions this is partially a small introduction to the
+
+573
+01:02:07,159 --> 01:02:18,659
+constant definition in star you simply assign an integer we don't define as
+
+574
+01:02:18,659 --> 01:02:25,139
+integer or whatever as you notice at the beginning of the program we simply
+
+575
+01:02:25,139 --> 01:02:39,119
+assign 1 and 0 so actually in first the type of the variable by looking at the
+
+576
+01:02:39,119 --> 01:02:45,960
+type of the value assigned to it
+
+577
+01:02:49,900 --> 01:02:55,079
+first case sensitive is important
+
+578
+01:02:55,139 --> 01:03:05,900
+capital true and small letter true are two different constants in this case
+
+579
+01:03:05,900 --> 01:03:09,139
+variable
+
+580
+01:03:19,900 --> 01:03:24,900
+we will talk about variables later
+
+581
+01:03:25,139 --> 01:03:33,579
+specifically scalar variable is indicated by dollar sign and these are
+
+582
+01:03:33,579 --> 01:03:41,259
+some examples we start with dollar this is for example dollar name dollar address
+
+583
+01:03:41,259 --> 01:03:49,900
+this will be this will be a string this will be string this will be probably another string that might be either character string or any other string
+
+584
+01:03:49,900 --> 01:03:53,900
+that might be either character string or any other string
+
+585
+01:03:55,139 --> 01:04:07,179
+variable this is the second type of operation you have this time a better
+
+586
+01:04:07,179 --> 01:04:19,139
+operation at least it will operate this printing this statement 10 times 10 stop
+
+587
+01:04:19,139 --> 01:04:25,099
+and the condition is
+
+588
+01:04:25,139 --> 01:04:35,519
+some students stop
+
+589
+01:04:35,519 --> 01:04:43,420
+so
+
+590
+01:04:43,420 --> 01:04:48,699
+selection is was another construct one of the basic blue columns and this is a
+
+591
+01:04:48,699 --> 01:04:49,879
+structure which has a string in it which is a conditional string and this is the
+
+592
+01:04:49,879 --> 01:04:54,199
+function you are actually going to use when you are using the concerned a script
+
+593
+01:04:54,199 --> 01:04:55,099
+and the function is of course is theוף the function that is a string so you can use it when you are using a string
+
+594
+01:04:55,099 --> 01:04:59,980
+building blocks of programming piece selection is you know by
+
+595
+01:05:00,000 --> 01:05:07,679
+selection we need conditionals here is the general form of the selection say statement
+
+596
+01:05:09,360 --> 01:05:17,039
+when you look at this it looks like exactly this almost similar to c construct if some
+
+597
+01:05:17,039 --> 01:05:21,599
+conditions to them do something else to something else
+
+598
+01:05:21,599 --> 01:05:31,440
+okay as already said it follows the best of many languages
+
+599
+01:05:33,920 --> 01:05:34,719
+example
+
+600
+01:05:37,119 --> 01:05:45,759
+of use of the conditional if within y construct
+
+601
+01:05:48,319 --> 01:05:51,519
+replace and if struct
+
+602
+01:05:51,599 --> 01:05:58,319
+so
+
+603
+01:06:02,960 --> 01:06:03,839
+by giving these
+
+604
+01:06:07,440 --> 01:06:13,199
+examples for this turn motto which is more than one way to do it
+
+605
+01:06:13,920 --> 01:06:20,799
+with an example odd even program i'm not going to run through all of them and you can
+
+606
+01:06:21,599 --> 01:06:27,920
+try if you want i have already tried and i'm sitting good at the output
+
+607
+01:06:28,639 --> 01:06:34,639
+this is the first one odd even program whether the number is odd or even
+
+608
+01:06:37,360 --> 01:06:43,360
+this is just this is a nicely written program with the statement
+
+609
+01:06:45,599 --> 01:06:49,360
+the new line but you can also write very
+
+610
+01:06:51,599 --> 01:06:58,319
+this is a very odd reading program
+
+611
+01:07:00,000 --> 01:07:04,159
+this is exactly the same program but it is not organized
+
+612
+01:07:04,159 --> 01:07:06,719
+which is not advisable to do this
+
+613
+01:07:08,880 --> 01:07:10,960
+this saves
+
+614
+01:07:12,639 --> 01:07:17,679
+space on the paper maybe but or on the screen when you like
+
+615
+01:07:17,679 --> 01:07:20,319
+but it is very difficult to read later
+
+616
+01:07:21,599 --> 01:07:29,679
+and the second version of this odd even is shorter uses this percentage
+
+617
+01:07:34,400 --> 01:07:40,559
+sign modulus operator which also exists in some other languages
+
+618
+01:07:40,559 --> 01:07:49,440
+this is operator returns you the remainder so if you use this for example five
+
+619
+01:07:51,679 --> 01:07:56,960
+divided by two remember will be one in this case zero in this case three
+
+620
+01:08:00,880 --> 01:08:02,559
+these code users this one
+
+621
+01:08:08,239 --> 01:08:10,400
+we have three different versions
+
+622
+01:08:10,559 --> 01:08:13,759
+of the same thing again this is the programmer's
+
+623
+01:08:18,399 --> 01:08:26,239
+ability to choose the best one and a language should really offer you the best
+
+624
+01:08:28,000 --> 01:08:31,680
+solution for particular problem and term has this
+
+625
+01:08:37,680 --> 01:08:39,039
+one all that
+
+626
+01:08:40,560 --> 01:08:42,560
+we will talk about in a little while
+
+627
+01:08:42,560 --> 01:08:44,560
+so
+
+628
+01:08:44,560 --> 01:08:46,560
+so
+
+629
+01:08:46,560 --> 01:08:48,560
+so
+
+630
+01:08:48,560 --> 01:08:50,560
+so
+
+631
+01:08:50,560 --> 01:08:52,560
+so
+
+632
+01:08:52,560 --> 01:08:54,560
+so
+
+633
+01:08:54,560 --> 01:08:56,560
+so
+
+634
+01:08:56,560 --> 01:09:00,560
+so
+
+635
+01:09:00,560 --> 01:09:02,560
+so
+
+636
+01:09:02,560 --> 01:09:04,560
+so
+
+637
+01:09:04,560 --> 01:09:06,560
+so
+
+638
+01:09:06,560 --> 01:09:08,560
+so
+
+639
+01:09:08,560 --> 01:09:10,560
+so
+
+640
+01:09:10,560 --> 01:09:12,560
+so
+
+641
+01:09:12,560 --> 01:09:14,560
+so
+
+642
+01:09:14,560 --> 01:09:16,560
+so
+
+643
+01:09:16,560 --> 01:09:18,560
+so
+
+644
+01:09:48,560 --> 01:09:52,560
+so so
+
+645
+01:09:52,560 --> 01:09:54,560
+you
+
+646
+01:09:54,560 --> 01:09:56,560
+so so
+
+647
+01:09:56,560 --> 01:09:58,560
+so so
+
+648
+01:09:58,560 --> 01:10:02,560
+so
+
+649
+01:10:00,000 --> 01:10:29,979
+Altyazı M.K.
+
+650
+01:10:02,560 --> 01:10:04,960
+so
+
+651
+01:10:04,960 --> 01:10:07,120
+so
+
+652
+01:10:07,120 --> 01:10:09,120
+so
+
+653
+01:10:09,120 --> 01:10:10,560
+so
+
+654
+01:10:10,560 --> 01:10:12,560
+so
+
+655
+01:10:12,560 --> 01:10:14,560
+so
+
+656
+01:10:14,560 --> 01:10:16,560
+so
+
+657
+01:10:30,000 --> 01:10:59,979
+Altyazı M.K.
+
+658
+01:11:00,000 --> 01:11:29,979
+Altyazı M.K.
+
+659
+01:11:30,000 --> 01:11:59,979
+Altyazı M.K.
+
+660
+01:12:00,000 --> 01:12:29,979
+Altyazı M.K.
+
+661
+01:12:30,000 --> 01:12:59,979
+Altyazı M.K.
+
+662
+01:13:00,000 --> 01:13:29,979
+Altyazı M.K.
+
+663
+01:13:30,000 --> 01:13:59,979
+Altyazı M.K.
+
+664
+01:14:00,000 --> 01:14:29,979
+Altyazı M.K.
+
+665
+01:14:30,000 --> 01:14:59,979
+Altyazı M.K.
+
+666
+01:15:00,000 --> 01:15:29,979
+Altyazı M.K.
+
+667
+01:15:30,000 --> 01:15:59,979
+Altyazı M.K.
+
+668
+01:16:00,000 --> 01:16:29,979
+Altyazı M.K.
+
+669
+01:16:30,000 --> 01:16:59,979
+Altyazı M.K.
+
+670
+01:17:00,000 --> 01:17:29,979
+Altyazı M.K.
+
+671
+01:17:30,000 --> 01:17:59,979
+Altyazı M.K.
+
+672
+01:18:00,000 --> 01:18:29,979
+Altyazı M.K.
+
+673
+01:18:30,000 --> 01:18:59,979
+Altyazı M.K.
+
+674
+01:19:00,000 --> 01:19:29,979
+Altyazı M.K.
+
+675
+01:19:30,000 --> 01:19:59,979
+Altyazı M.K.
+
+676
+01:20:00,000 --> 01:20:29,979
+Altyazı M.K.
+
+677
+01:20:30,000 --> 01:20:59,979
+Altyazı M.K.
+
+678
+01:21:00,000 --> 01:21:29,979
+Altyazı M.K.
+
+679
+01:21:30,000 --> 01:21:59,979
+Altyazı M.K.
+
+680
+01:22:00,000 --> 01:22:29,979
+Altyazı M.K.
+
+681
+01:22:30,000 --> 01:22:59,979
+Altyazı M.K.
+
+682
+01:23:00,000 --> 01:23:29,979
+Altyazı M.K.
+
+683
+01:23:30,000 --> 01:23:59,979
+Altyazı M.K.
+
+684
+01:24:00,000 --> 01:24:29,979
+Altyazı M.K.
+
+685
+01:24:30,000 --> 01:24:59,979
+Altyazı M.K.
+
+686
+01:25:00,000 --> 01:25:04,000
+Symbols together
+
+687
+01:25:04,000 --> 01:25:08,000
+Then it will wait something to be entered
+
+688
+01:25:08,000 --> 01:25:12,000
+The first default is from the keyboard, unless we state otherwise
+
+689
+01:25:16,000 --> 01:25:20,000
+Another important thing here, each time
+
+690
+01:25:20,000 --> 01:25:24,000
+We enter different
+
+691
+01:25:24,000 --> 01:25:28,000
+Values
+
+692
+01:25:28,000 --> 01:25:32,000
+First we enter the number, then second
+
+693
+01:25:32,000 --> 01:25:36,000
+The character, third we enter the string
+
+694
+01:25:36,000 --> 01:25:40,000
+Next we enter the
+
+695
+01:25:40,000 --> 01:25:44,000
+Fractional numbers, and the third did not complain us
+
+696
+01:25:44,000 --> 01:25:48,000
+There is only one variable there, just lines
+
+697
+01:25:48,000 --> 01:25:52,000
+Each time
+
+698
+01:25:52,000 --> 01:25:56,000
+It accepted, did not complain us
+
+699
+01:25:56,000 --> 01:26:00,000
+One of the important
+
+700
+01:26:00,000 --> 01:26:02,000
+Characteristics of her
+
+701
+01:26:02,000 --> 01:26:04,000
+Python as well
+
+702
+01:26:04,000 --> 01:26:06,000
+My main language
+
+703
+01:26:06,000 --> 01:26:08,000
+To discuss is her
+
+704
+01:26:08,000 --> 01:26:10,000
+When necessary
+
+705
+01:26:10,000 --> 01:26:12,000
+I also compare with Python
+
+706
+01:26:14,000 --> 01:26:16,000
+I terminate it
+
+707
+01:26:16,000 --> 01:26:18,000
+By CTRL C
+
+708
+01:26:18,000 --> 01:26:20,000
+So you know
+
+709
+01:26:20,000 --> 01:26:22,000
+How to input the data
+
+710
+01:26:22,000 --> 01:26:24,000
+From the keyboard
+
+711
+01:26:26,000 --> 01:26:34,000
+In addition to standard input
+
+712
+01:26:34,000 --> 01:26:36,000
+I also have standard output
+
+713
+01:26:36,000 --> 01:26:38,000
+Which is
+
+714
+01:26:38,000 --> 01:26:40,000
+Compute display
+
+715
+01:26:40,000 --> 01:26:42,000
+As a normal standard output
+
+716
+01:26:42,000 --> 01:26:44,000
+If you do not
+
+717
+01:26:44,000 --> 01:26:46,000
+State the standard output
+
+718
+01:26:46,000 --> 01:26:48,000
+It will
+
+719
+01:26:48,000 --> 01:26:50,000
+Scream for output
+
+720
+01:26:50,000 --> 01:26:52,000
+Variable to the screen
+
+721
+01:26:52,000 --> 01:26:54,000
+There is also
+
+722
+01:26:54,000 --> 01:26:56,000
+Standard errors
+
+723
+01:26:56,000 --> 01:26:58,000
+The default place to display
+
+724
+01:26:58,000 --> 01:27:00,000
+Error messages
+
+725
+01:27:00,000 --> 01:27:02,000
+Which is again screen
+
+726
+01:27:02,000 --> 01:27:04,000
+Unless you state it otherwise
+
+727
+01:27:06,000 --> 01:27:08,000
+So we use
+
+728
+01:27:08,000 --> 01:27:10,000
+These file handlers
+
+729
+01:27:10,000 --> 01:27:12,000
+As in C almost similar
+
+730
+01:27:12,000 --> 01:27:14,000
+Or almost the same
+
+731
+01:27:14,000 --> 01:27:16,000
+As C construct
+
+732
+01:27:16,000 --> 01:27:18,000
+The standard in, standard out
+
+733
+01:27:18,000 --> 01:27:20,000
+Standard error
+
+734
+01:27:22,000 --> 01:27:24,000
+Let's see
+
+735
+01:27:24,000 --> 01:27:26,000
+What happens
+
+736
+01:27:26,000 --> 01:27:28,000
+Let me type this
+
+737
+01:27:28,000 --> 01:27:30,000
+Anybody has an idea
+
+738
+01:27:30,000 --> 01:27:32,000
+What happens
+
+739
+01:27:32,000 --> 01:27:34,000
+Now we know
+
+740
+01:27:34,000 --> 01:27:36,000
+This get lines program
+
+741
+01:27:36,000 --> 01:27:38,000
+Just asks
+
+742
+01:27:38,000 --> 01:27:40,000
+Wait for some data input
+
+743
+01:27:40,000 --> 01:27:42,000
+In this case
+
+744
+01:27:42,000 --> 01:27:44,000
+What will happen
+
+745
+01:27:56,000 --> 01:28:08,000
+Run them sequentially
+
+746
+01:28:08,000 --> 01:28:10,000
+Anybody else
+
+747
+01:28:20,000 --> 01:28:22,000
+Let's see
+
+748
+01:28:22,000 --> 01:28:24,000
+What happens
+
+749
+01:28:24,000 --> 01:28:26,000
+Now
+
+750
+01:28:26,000 --> 01:28:28,000
+I have
+
+751
+01:28:28,000 --> 01:28:32,000
+I have to
+
+752
+01:28:32,000 --> 01:28:34,000
+Open
+
+753
+01:28:34,000 --> 01:28:36,000
+Then copy from here
+
+754
+01:28:36,000 --> 01:28:38,000
+This is
+
+755
+01:28:38,000 --> 01:28:40,000
+I
+
+756
+01:28:40,000 --> 01:28:42,000
+I
+
+757
+01:28:42,000 --> 01:28:44,000
+I
+
+758
+01:28:44,000 --> 01:28:46,000
+I
+
+759
+01:28:46,000 --> 01:28:48,000
+I
+
+760
+01:28:48,000 --> 01:28:50,000
+I
+
+761
+01:28:50,000 --> 01:28:52,000
+I
+
+762
+01:28:52,000 --> 01:28:54,000
+I
+
+763
+01:28:54,000 --> 01:28:56,000
+I
+
+764
+01:28:56,000 --> 01:29:06,000
+Anybody has an idea, apart from running them sequentially?
+
+765
+01:29:06,000 --> 01:29:08,000
+Answer?
+
+766
+01:29:08,000 --> 01:29:11,000
+First, it runs getlines.pn.
+
+767
+01:29:11,000 --> 01:29:16,000
+After the execution is finished, it runs the bode event.
+
+768
+01:29:16,000 --> 01:29:18,000
+That's what I'm assuming.
+
+769
+01:29:18,000 --> 01:29:21,000
+Okay, let's see.
+
+770
+01:29:21,000 --> 01:29:28,000
+Let's see what will happen.
+
+771
+01:29:28,000 --> 01:29:37,000
+Okay, I copied and I just paste here and see what happens.
+
+772
+01:29:37,000 --> 01:29:39,000
+What happened?
+
+773
+01:29:51,000 --> 01:29:58,000
+Or another, exactly the same program is terrible.
+
+774
+01:29:58,000 --> 01:30:00,000
+See?
+
+775
+01:30:00,000 --> 01:30:03,000
+Again, we are focused. What happened?
+
+776
+01:30:09,000 --> 01:30:12,000
+Now you can see what happened.
+
+777
+01:30:13,000 --> 01:30:17,000
+Let's see the contents of
+
+778
+01:30:18,000 --> 01:30:23,000
+is either terrible or they are both are same.
+
+779
+01:30:23,000 --> 01:30:33,000
+It is exactly the same text as we see here.
+
+780
+01:30:39,000 --> 01:30:41,000
+Just compare them.
+
+781
+01:30:42,000 --> 01:30:43,000
+Exactly the same text.
+
+782
+01:30:44,000 --> 01:30:51,000
+Well, basically, this command line
+
+783
+01:30:53,000 --> 01:30:58,000
+runs get lines instead of
+
+784
+01:31:01,000 --> 01:31:02,000
+keywords.
+
+785
+01:31:03,000 --> 01:31:12,000
+Now it reads data from the next argument, which is a file or even
+
+786
+01:31:13,000 --> 01:31:15,000
+or terrible whatever.
+
+787
+01:31:16,000 --> 01:31:20,000
+It reads the file, file content and print it.
+
+788
+01:31:21,000 --> 01:31:22,000
+When we run it,
+
+789
+01:31:23,000 --> 01:31:26,000
+and without any argument here,
+
+790
+01:31:27,000 --> 01:31:33,000
+it waits us to enter some data from the standard input, which is
+
+791
+01:31:34,000 --> 01:31:38,000
+but if we add something there,
+
+792
+01:31:39,000 --> 01:31:43,000
+which is a file in this case, although it is
+
+793
+01:31:44,000 --> 01:31:52,000
+Perl file, Perl program, but it takes it as a data file and it reads data into
+
+794
+01:31:54,000 --> 01:31:57,000
+the variable lines.
+
+795
+01:31:58,000 --> 01:32:00,000
+Now the interesting thing,
+
+796
+01:32:01,000 --> 01:32:05,000
+whole program is assigned to this line scatter variable.
+
+797
+01:32:06,000 --> 01:32:09,000
+There's a character array or a string.
+
+798
+01:32:10,000 --> 01:32:13,000
+Whole file is assigned to this line.
+
+799
+01:32:14,000 --> 01:32:17,000
+And when you print line, it will print the whole file.
+
+800
+01:32:17,000 --> 01:32:31,000
+Now standard input is defined as this data file.
+
+801
+01:32:32,000 --> 01:32:35,000
+So it will not run both sequentially.
+
+802
+01:32:36,000 --> 01:32:41,000
+The first Perl code will be run.
+
+803
+01:32:42,000 --> 01:32:45,000
+The second will be taken as standard input.
+
+804
+01:32:47,000 --> 01:32:59,000
+There was some other examples.
+
+805
+01:32:59,000 --> 01:33:01,899
+Let's see what about these one,
+
+806
+01:33:02,000 --> 01:33:07,000
+for example, what will happen?
+
+807
+01:33:08,000 --> 01:33:10,000
+Is there on,
+
+808
+01:33:10,000 --> 01:33:21,640
+This code, there are more than two, more than one argument, there are three arguments here,
+
+809
+01:33:21,640 --> 01:33:36,079
+what will happen, the program will not run them sequentially but will read them sequentially
+
+810
+01:33:36,079 --> 01:33:45,199
+apart from these get lines, get line will be run, but others will be read into, let's see
+
+811
+01:33:45,199 --> 01:34:06,059
+what will happen, first clear the screen, I did not adjust the amount, let me copy,
+
+812
+01:34:06,060 --> 01:34:35,080
+let me copy the code, and this is what happened, the first one is ODEON code, but in this case
+
+813
+01:34:35,080 --> 01:34:36,060
+it's not running.
+
+814
+01:34:36,060 --> 01:34:44,340
+The second one is just included print Merhaba, the third one is iteration one, it starts from
+
+815
+01:34:44,340 --> 01:34:48,240
+here and they are printed sequentially.
+
+816
+01:34:48,240 --> 01:34:56,680
+Now all these three different files were assigned to a single Scalar variable, and we print it
+
+817
+01:34:56,680 --> 01:34:58,680
+between all these things.
+
+818
+01:35:00,000 --> 01:35:17,659
+As we get lines program uses standard input, it uses the keyword by default, as I said
+
+819
+01:35:17,659 --> 01:35:23,279
+when used in a session with a named disk file, it uses the contents of the disk file as input
+
+820
+01:35:23,279 --> 01:35:27,180
+and there can be more than one named disk file.
+
+821
+01:35:27,180 --> 01:35:35,680
+Programmers refer to a list of things on the command line that follow a program name as its command line argument parameters.
+
+822
+01:35:35,680 --> 01:35:41,680
+In our example, these parameters or arguments were with three parts.
+
+823
+01:35:48,680 --> 01:35:54,680
+So, next, we introduce some hot ones.
+
+824
+01:35:55,680 --> 01:35:56,680
+Actually,
+
+825
+01:35:56,680 --> 01:36:03,180
+this is assumed to be that CURL has another programming language to use in CACP.
+
+826
+01:36:05,180 --> 01:36:14,180
+This language within language makes extensive use of CURL's regular expression or pattern matching technology.
+
+827
+01:36:14,180 --> 01:36:18,180
+That was the strength of the CURL, CACP.
+
+828
+01:36:18,180 --> 01:36:21,180
+Still, this is the strength of the CURL.
+
+829
+01:36:21,180 --> 01:36:26,180
+The CURL online documentation defines a regular expression to be seen
+
+830
+01:36:26,180 --> 01:36:29,680
+with a string that describes a pattern.
+
+831
+01:36:29,680 --> 01:36:34,680
+That's the simplest definition of the regular expression, which is
+
+832
+01:36:34,680 --> 01:36:48,680
+the computer science field sometimes deserves discussion during the whole lecture,
+
+833
+01:36:48,680 --> 01:36:52,680
+the whole year long lecture.
+
+834
+01:36:52,680 --> 01:36:54,680
+The pattern identifies
+
+835
+01:36:54,680 --> 01:36:59,180
+what it is hoped to match, basically.
+
+836
+01:36:59,180 --> 01:37:08,180
+The actual app for finding the pattern is taken care of by the CURL program.
+
+837
+01:37:08,180 --> 01:37:16,180
+A programming language that allows the programmer to specify what is required
+
+838
+01:37:16,180 --> 01:37:21,180
+is often referred to as a declarative language.
+
+839
+01:37:21,180 --> 01:37:23,180
+That's another classification.
+
+840
+01:37:24,680 --> 01:37:33,180
+Because the programmer declares what's required, and the technology works after the times.
+
+841
+01:37:33,180 --> 01:37:43,180
+A programming language that allows the programmer to specify exactly how a result is to be arrived at
+
+842
+01:37:43,180 --> 01:37:47,180
+is often referred to as a procedural language.
+
+843
+01:37:49,180 --> 01:37:53,180
+These are another classification of languages.
+
+844
+01:37:53,180 --> 01:38:01,680
+In this case, the programmer defines the procedure to be followed, and the technology blindly follows the instructions.
+
+845
+01:38:01,680 --> 01:38:09,680
+Most of the languages we are using can be classified as procedural languages.
+
+846
+01:38:09,680 --> 01:38:21,680
+Most programming languages can be classified as one or the other, either declarative or procedural.
+
+847
+01:38:21,680 --> 01:38:28,180
+In this respect, CURL can be one or the other, or both.
+
+848
+01:38:28,180 --> 01:38:34,180
+Again, some sort of in-between language.
+
+849
+01:38:34,180 --> 01:38:40,180
+Presumably, Python is the same.
+
+850
+01:38:40,180 --> 01:38:46,180
+I have not discussed this aspect of Python in detail, but I guess it is the same.
+
+851
+01:38:46,180 --> 01:38:50,180
+I have not discussed this aspect of Python in detail, but I guess it is the same.
+
+852
+01:38:50,180 --> 01:38:52,180
+I have not discussed this aspect of Python in detail, but I guess it is the same.
+
+853
+01:38:52,180 --> 01:38:54,180
+For introducing regular expressions, let's consider the following program, called Patins.
+
+854
+01:38:54,180 --> 01:38:56,180
+For introducing regular expressions, let's consider the following program, called Patins.
+
+855
+01:38:56,180 --> 01:38:58,180
+For introducing regular expressions, let's consider the following program, called Patins.
+
+856
+01:38:58,180 --> 01:39:00,180
+For introducing regular expressions, let's consider the following program, called Patins.
+
+857
+01:39:00,180 --> 01:39:02,180
+Let me just look at the program and try to guess what it does.
+
+858
+01:39:02,180 --> 01:39:04,180
+Let me just look at the program and try to guess what it does.
+
+859
+01:39:04,180 --> 01:39:06,180
+Let me just look at the program and try to guess what it does.
+
+860
+01:39:06,180 --> 01:39:08,180
+Again, we use a very simple construct.
+
+861
+01:39:08,180 --> 01:39:10,180
+Our main purpose is not to teach you programming, but to show your attention to the different aspects of it.
+
+862
+01:39:10,180 --> 01:39:12,180
+Our main purpose is not to teach you programming, but to show your attention to the different aspects of it.
+
+863
+01:39:12,180 --> 01:39:23,340
+coming but to show your attention to the different aspects of the Perl language than the languages
+
+864
+01:39:23,340 --> 01:39:31,020
+we have seen so far.
+
+865
+01:39:31,020 --> 01:39:58,200
+Okay, let me run it with an example and try to guess what happens.
+
+866
+01:39:58,200 --> 01:39:59,400
+I will first run
+
+867
+01:40:00,000 --> 01:40:18,960
+This program is copying and pasting and this is what happened.
+
+868
+01:40:18,960 --> 01:40:33,260
+You can guess what happened.
+
+869
+01:40:33,260 --> 01:40:44,079
+You can, on the same screen, you can probably have a clue what happens by looking at the
+
+870
+01:40:44,079 --> 01:40:48,939
+... this is the Doctor Terrible program.
+
+871
+01:40:48,940 --> 01:40:53,940
+And this is the Heart of Terrible program.
+
+872
+01:40:53,940 --> 01:41:10,860
+Again, this pattern reads this Terrible EL data file in this case and prints something.
+
+873
+01:41:10,860 --> 01:41:16,420
+What is printed here?
+
+874
+01:41:16,420 --> 01:41:18,680
+You inspect this Terrible.
+
+875
+01:41:18,680 --> 01:41:27,800
+And find out what it prints.
+
+876
+01:41:27,800 --> 01:41:35,659
+Of course, I will have in a minute, but I want you to find out what happened.
+
+877
+01:41:35,659 --> 01:41:40,680
+You compare this printed output and this printed output.
+
+878
+01:41:40,680 --> 01:41:47,680
+And tell me the difference between these two.
+
+879
+01:41:48,680 --> 01:41:49,680
+Okay.
+
+880
+01:41:49,680 --> 01:41:50,680
+That's correct.
+
+881
+01:41:50,680 --> 01:41:55,940
+Find lines which include even and print it.
+
+882
+01:41:55,940 --> 01:42:00,800
+It does not print the lines which it does not have even in it.
+
+883
+01:42:00,800 --> 01:42:05,680
+Now, in this aspect, you've got the answer here and others.
+
+884
+01:42:05,680 --> 01:42:06,680
+Okay.
+
+885
+01:42:06,680 --> 01:42:07,680
+Okay.
+
+886
+01:42:07,680 --> 01:42:08,680
+Okay.
+
+887
+01:42:08,680 --> 01:42:09,680
+Okay.
+
+888
+01:42:09,680 --> 01:42:10,680
+Okay.
+
+889
+01:42:10,680 --> 01:42:11,680
+Okay.
+
+890
+01:42:11,680 --> 01:42:12,680
+Okay.
+
+891
+01:42:12,680 --> 01:42:13,680
+Okay.
+
+892
+01:42:13,680 --> 01:42:14,680
+Okay.
+
+893
+01:42:14,680 --> 01:42:15,680
+Okay.
+
+894
+01:42:15,680 --> 01:42:16,680
+Okay.
+
+895
+01:42:16,680 --> 01:42:17,680
+Okay.
+
+896
+01:42:17,680 --> 01:42:18,680
+Okay.
+
+897
+01:42:18,680 --> 01:42:19,680
+Okay.
+
+898
+01:42:19,680 --> 01:42:20,680
+Okay.
+
+899
+01:42:20,680 --> 01:42:21,680
+Okay.
+
+900
+01:42:21,680 --> 01:42:22,680
+Okay.
+
+901
+01:42:22,680 --> 01:42:23,680
+Okay.
+
+902
+01:42:23,680 --> 01:42:24,680
+Okay.
+
+903
+01:42:24,680 --> 01:42:25,680
+Okay.
+
+904
+01:42:25,680 --> 01:42:26,680
+Okay.
+
+905
+01:42:26,680 --> 01:42:27,680
+Okay.
+
+906
+01:42:27,680 --> 01:42:28,680
+Okay.
+
+907
+01:42:28,680 --> 01:42:29,680
+Okay.
+
+908
+01:42:29,680 --> 01:42:30,680
+Okay.
+
+909
+01:42:30,680 --> 01:42:31,680
+Okay.
+
+910
+01:42:31,680 --> 01:42:32,680
+Okay.
+
+911
+01:42:32,680 --> 01:42:33,680
+Okay.
+
+912
+01:42:33,680 --> 01:42:34,680
+Okay.
+
+913
+01:42:34,680 --> 01:42:35,680
+Okay.
+
+914
+01:42:35,680 --> 01:42:36,680
+Okay.
+
+915
+01:42:36,680 --> 01:42:37,680
+Okay.
+
+916
+01:42:37,680 --> 01:42:38,680
+Okay.
+
+917
+01:42:38,680 --> 01:42:39,680
+Okay.
+
+918
+01:42:39,680 --> 01:42:40,680
+Okay.
+
+919
+01:42:40,680 --> 01:42:41,680
+Okay.
+
+920
+01:42:41,680 --> 01:42:42,680
+Okay.
+
+921
+01:42:42,680 --> 01:42:43,680
+Okay.
+
+922
+01:42:43,680 --> 01:42:44,680
+Okay.
+
+923
+01:42:44,680 --> 01:42:45,680
+Okay.
+
+924
+01:42:45,680 --> 01:42:46,680
+Okay.
+
+925
+01:42:46,680 --> 01:42:47,680
+Okay.
+
+926
+01:42:47,680 --> 01:42:56,400
+or even probably does not exist or even one probably one
+
+927
+01:43:00,000 --> 01:43:00,400
+okay
+
+928
+01:43:05,200 --> 01:43:16,000
+again it printed well all printed nice simple even let me run another program
+
+929
+01:43:17,680 --> 01:43:22,800
+with different welcome
+
+930
+01:43:27,840 --> 01:43:33,840
+it printed nothing because welcome to does not have any words
+
+931
+01:43:37,119 --> 01:43:40,240
+which we are searching for which is even
+
+932
+01:43:45,840 --> 01:43:47,200
+just to show you
+
+933
+01:43:48,000 --> 01:43:54,320
+what country is this there is no even here and therefore it does not print
+
+934
+01:43:56,720 --> 01:44:00,240
+so now you guess what it does it tries to match it
+
+935
+01:44:04,159 --> 01:44:10,880
+button program in the structure it's similar to get lines program except
+
+936
+01:44:10,880 --> 01:44:15,840
+three common window node block as stated here
+
+937
+01:44:17,680 --> 01:44:26,320
+if in this print we have an if conditional this is something different than the some other languages
+
+938
+01:44:27,840 --> 01:44:35,840
+and print dollar line if dollar line matches even
+
+939
+01:44:40,640 --> 01:44:44,880
+display the contents of discovery called line if
+
+940
+01:44:47,840 --> 01:44:54,880
+and only if the scholar called line constant the pattern contains pattern e1
+
+941
+01:44:58,000 --> 01:44:59,200
+all matches the pattern
+
+942
+01:45:00,000 --> 01:45:12,239
+In this statement, this iteration is called the binding operator, which binds, even the
+
+943
+01:45:12,239 --> 01:45:22,060
+variable to do this pattern we are searching for.
+
+944
+01:45:22,060 --> 01:45:29,460
+Binding operator compares something against a pattern.
+
+945
+01:45:29,460 --> 01:45:33,960
+There are many options we will be discussing later.
+
+946
+01:45:33,960 --> 01:45:39,699
+Of course, not all the options for facilities are provided.
+
+947
+01:45:39,699 --> 01:45:42,960
+This is beyond the scope of this course.
+
+948
+01:45:42,960 --> 01:45:52,220
+I just want to introduce you to the powerful characteristics of this power.
+
+949
+01:45:52,220 --> 01:45:59,220
+When programmers record a character that surrounds a pattern, they can see it as a
+
+950
+01:45:59,220 --> 01:45:59,260
+pattern.
+
+951
+01:45:59,260 --> 01:45:59,359
+This is called the binding operator.
+
+952
+01:45:59,359 --> 01:45:59,420
+This is called the binding operator.
+
+953
+01:45:59,420 --> 01:45:59,460
+This is called the binding operator.
+
+954
+01:45:59,460 --> 01:46:05,319
+If you found something of interest, such as the forward meaning slash surrounding the
+
+955
+01:46:05,319 --> 01:46:10,460
+patterns in this section, you can call the parameter delimiter.
+
+956
+01:46:12,899 --> 01:46:16,899
+It limits the pattern, basically, for searching.
+
+957
+01:46:17,720 --> 01:46:26,119
+In fact, the delimiter something of interest, we use this forward meaning slash.
+
+958
+01:46:26,119 --> 01:46:26,159
+In fact, the delimiter something of interest, we use this forward meaning slash.
+
+959
+01:46:29,460 --> 01:46:37,420
+In fact, the delimiter something of interest, we use this forward meaning slash.
+
+960
+01:46:37,420 --> 01:46:37,699
+OK.
+
+961
+01:46:37,699 --> 01:46:42,899
+I have already done this.
+
+962
+01:46:42,899 --> 01:46:47,300
+So the results.
+
+963
+01:46:47,300 --> 01:46:53,720
+If you want to get more information on regular expression, I have some links here.
+
+964
+01:46:53,720 --> 01:46:55,520
+If you want to get more information on regular expression, I have some links here.
+
+965
+01:46:55,520 --> 01:46:57,760
+If you want to get more information on regular expression, I have some links here.
+
+966
+01:46:57,760 --> 01:46:59,020
+You can buy this link from the link I got.
+
+967
+01:46:59,020 --> 01:46:59,420
+You can also find this link in the description.
+
+968
+01:46:59,420 --> 01:47:06,420
+I haven't checked recently if the links are active or not, but presumably they are.
+
+969
+01:47:06,420 --> 01:47:15,420
+You can go and try and see if they are active.
+
+970
+01:47:15,420 --> 01:47:20,420
+If they are active, you can have even more information, regular expressions.
+
+971
+01:47:20,420 --> 01:47:25,420
+Coming back to the input of the p-links.
+
+972
+01:47:25,420 --> 01:47:30,420
+Data entering a program is referred to as its input.
+
+973
+01:47:30,420 --> 01:47:32,420
+You know it.
+
+974
+01:47:32,420 --> 01:47:37,420
+While the data produced by the program is its output.
+
+975
+01:47:37,420 --> 01:47:53,420
+Rather than refer to and write input-output, most programmers simply will say io or sometimes i-o.
+
+976
+01:47:53,420 --> 01:47:55,420
+io facilitates.
+
+977
+01:47:55,420 --> 01:48:01,420
+Facilities are often referred to as streams.
+
+978
+01:48:01,420 --> 01:48:10,420
+Well, in this respect, we use the word input streams or output streams.
+
+979
+01:48:10,420 --> 01:48:14,420
+In a program context.
+
+980
+01:48:14,420 --> 01:48:23,420
+In this respect, as a minimum, every program has three standard streams available to it.
+
+981
+01:48:23,420 --> 01:48:25,420
+Let's see them.
+
+982
+01:48:25,420 --> 01:48:28,420
+Standard in, standard out, and standard error.
+
+983
+01:48:28,420 --> 01:48:35,420
+I have already mentioned these.
+
+984
+01:48:35,420 --> 01:48:38,420
+Starting with standard in.
+
+985
+01:48:38,420 --> 01:48:44,420
+Standard input stream is the default place from which data enters a program.
+
+986
+01:48:44,420 --> 01:48:48,420
+That was keyboard, as we already said.
+
+987
+01:48:48,420 --> 01:48:53,420
+Typically, although standard in is the keyboard,
+
+988
+01:48:53,420 --> 01:48:58,420
+it can also be a disk file, as we have already seen.
+
+989
+01:48:58,420 --> 01:49:03,420
+With data from standard in, we use this construct.
+
+990
+01:49:03,420 --> 01:49:12,420
+We already introduced this as well, within a different context.
+
+991
+01:49:12,420 --> 01:49:15,420
+We don't have to type in standard in.
+
+992
+01:49:15,420 --> 01:49:18,420
+That's the default.
+
+993
+01:49:23,420 --> 01:49:28,420
+We have already seen an example.
+
+994
+01:49:28,420 --> 01:49:44,420
+And this example is basically just a simple program to add two numbers.
+
+995
+01:49:44,420 --> 01:49:52,420
+You enter two numbers from the keyboard and it will print the result.
+
+996
+01:49:53,420 --> 01:49:55,420
+And the result is the same.
+
+997
+01:49:55,420 --> 01:50:02,420
+And that's the final result.
+
+998
+01:50:00,000 --> 01:50:10,979
+a is omitted, perm assumes that it is default a scalar variable with nothing in it, it
+
+999
+01:50:02,420 --> 01:50:05,420
+You can see the first two numbers.
+
+1000
+01:50:05,420 --> 01:50:08,420
+These two numbers are standard in.
+
+1001
+01:50:08,420 --> 01:50:10,420
+Standard input streams.
+
+1002
+01:50:10,420 --> 01:50:13,420
+Standard out are standard in.
+
+1003
+01:50:10,979 --> 01:50:22,720
+will simply say simply hit enter without typing anything, it will take it, but will have no
+
+1004
+01:50:13,420 --> 01:50:15,420
+Standard out are standard in.
+
+1005
+01:50:15,420 --> 01:50:17,420
+Standard output streams.
+
+1006
+01:50:17,420 --> 01:50:19,420
+Ding.
+
+1007
+01:50:19,420 --> 01:50:21,420
+And that's it.
+
+1008
+01:50:22,720 --> 01:50:40,119
+effect on the result. Is it new type 0? Empty scalar. I don't know what was the name of
+
+1009
+01:50:40,119 --> 01:50:41,520
+this code.
+
+1010
+01:50:52,720 --> 01:50:58,840
+You could run it.. .
+
+1011
+01:50:58,840 --> 01:51:14,840
+I don't remember how to say it. I could run it, but I can't use it.
+
+1012
+01:51:14,840 --> 01:51:15,840
+.
+
+1013
+01:51:15,840 --> 01:51:22,500
+No, I don't want to see it.
+
+1014
+01:51:22,500 --> 01:51:22,539
+.
+
+1015
+01:51:22,539 --> 01:51:22,600
+Yeah, we could run it, but I can't use it.
+
+1016
+01:51:22,600 --> 01:51:22,659
+You could run it.
+
+1017
+01:51:22,659 --> 01:51:22,699
+You could run it.
+
+1018
+01:51:22,699 --> 01:51:33,699
+What I am trying to do, I just go, we already mentioned the z-files construct.
+
+1019
+01:51:33,699 --> 01:51:41,699
+Standard output is the default place to which data is sent by a program.
+
+1020
+01:51:41,699 --> 01:51:47,699
+Typically, standard output is screen, but can be disk file as well.
+
+1021
+01:51:47,699 --> 01:51:56,699
+To write data to standard output, we use this construct, or simply without the standard output.
+
+1022
+01:51:56,699 --> 01:52:07,699
+Again, you have to be smart enough to know that we can data to standard output by default, which is keyword.
+
+1023
+01:52:07,699 --> 01:52:14,699
+Now, standard output can be output outside your program with redirection operators.
+
+1024
+01:52:14,699 --> 01:52:17,699
+That's important.
+
+1025
+01:52:17,699 --> 01:52:25,699
+If you use this operator here, this is a redirection operator.
+
+1026
+01:52:25,699 --> 01:52:38,699
+Instead of standard output, which is screen, the output is redirected to, say, for example, the file.
+
+1027
+01:52:38,699 --> 01:52:40,699
+Ah, okay.
+
+1028
+01:52:40,699 --> 01:52:43,699
+The program must forecast.
+
+1029
+01:52:43,699 --> 01:52:46,699
+Now I can run this.
+
+1030
+01:52:46,699 --> 01:52:47,699
+And...
+
+1031
+01:52:47,699 --> 01:52:56,699
+Let me show you what happens.
+
+1032
+01:52:56,699 --> 01:53:00,699
+The first run is...
+
+1033
+01:53:00,699 --> 01:53:04,699
+Let me run...
+
+1034
+01:53:04,699 --> 01:53:06,699
+Clear screen.
+
+1035
+01:53:06,699 --> 01:53:09,699
+Trial test.
+
+1036
+01:53:09,699 --> 01:53:13,699
+That was the...
+
+1037
+01:53:13,699 --> 01:53:16,699
+It asked me to enter a number.
+
+1038
+01:53:16,699 --> 01:53:17,699
+Okay.
+
+1039
+01:53:17,699 --> 01:53:20,699
+I will enter a number.
+
+1040
+01:53:20,699 --> 01:53:23,699
+Say, 13.
+
+1041
+01:53:23,699 --> 01:53:24,699
+5.
+
+1042
+01:53:24,699 --> 01:53:26,699
+I expect it to be 18.
+
+1043
+01:53:26,699 --> 01:53:27,699
+It asks to be 18.
+
+1044
+01:53:27,699 --> 01:53:32,699
+The sum of the numbers that you entered is 18.
+
+1045
+01:53:32,699 --> 01:53:39,699
+Looks good.
+
+1046
+01:53:39,699 --> 01:53:40,699
+Now the...
+
+1047
+01:53:40,699 --> 01:53:45,699
+I use...
+
+1048
+01:53:45,699 --> 01:53:49,699
+Redirection operators.
+
+1049
+01:53:49,699 --> 01:53:54,699
+Say...
+
+1050
+01:53:54,699 --> 01:53:57,699
+Power net.
+
+1051
+01:53:57,699 --> 01:53:58,699
+Yeah.
+
+1052
+01:53:58,699 --> 01:54:01,699
+18.
+
+1053
+01:54:01,699 --> 01:54:02,699
+Run it.
+
+1054
+01:54:02,699 --> 01:54:05,699
+You will see nothing on the screen.
+
+1055
+01:54:05,699 --> 01:54:09,699
+Just I will see type 4.
+
+1056
+01:54:09,699 --> 01:54:12,699
+Type 5.
+
+1057
+01:54:12,699 --> 01:54:14,699
+And exit.
+
+1058
+01:54:14,699 --> 01:54:21,699
+Now let's see of the control.
+
+1059
+01:54:21,699 --> 01:54:22,699
+I do...
+
+1060
+01:54:22,699 --> 01:54:24,699
+And okay, I got it here.
+
+1061
+01:54:24,699 --> 01:54:27,699
+Just open it.
+
+1062
+01:54:27,699 --> 01:54:31,699
+See the start of number.
+
+1063
+01:54:31,699 --> 01:54:33,699
+Just enter another number.
+
+1064
+01:54:33,699 --> 01:54:38,699
+The sum of the numbers that you entered is 9.
+
+1065
+01:54:38,699 --> 01:54:43,699
+Now let me open this.
+
+1066
+01:54:43,699 --> 01:54:48,699
+Uh...
+
+1067
+01:54:48,699 --> 01:54:50,699
+Trial test program.
+
+1068
+01:54:50,699 --> 01:54:53,699
+Because I have some...
+
+1069
+01:54:53,699 --> 01:54:55,699
+Modifications.
+
+1070
+01:54:55,699 --> 01:54:57,699
+It is not that.
+
+1071
+01:54:57,699 --> 01:54:59,699
+Now let's check.
+
+1072
+01:54:59,699 --> 01:55:00,699
+This program.
+
+1073
+01:55:00,000 --> 01:55:26,279
+Now, first it asks me to enter a number, then it prints, then it asks another number, sorry,
+
+1074
+01:55:00,699 --> 01:55:01,699
+Okay.
+
+1075
+01:55:01,699 --> 01:55:02,699
+Now let's check.
+
+1076
+01:55:02,699 --> 01:55:03,699
+This program.
+
+1077
+01:55:03,699 --> 01:55:04,699
+This program.
+
+1078
+01:55:04,699 --> 01:55:05,699
+This program.
+
+1079
+01:55:05,699 --> 01:55:06,699
+This program.
+
+1080
+01:55:06,699 --> 01:55:07,699
+This program.
+
+1081
+01:55:07,699 --> 01:55:08,699
+This program.
+
+1082
+01:55:08,699 --> 01:55:09,699
+This program.
+
+1083
+01:55:09,699 --> 01:55:10,699
+This program.
+
+1084
+01:55:10,699 --> 01:55:11,699
+This program.
+
+1085
+01:55:26,279 --> 01:55:34,039
+it asks to enter a number, it does not print, then it asks another number, then here we
+
+1086
+01:55:34,039 --> 01:55:46,460
+see two strange statements as shown.
+
+1087
+01:55:46,460 --> 01:55:49,659
+Anybody has an idea why we use this?
+
+1088
+01:55:49,659 --> 01:55:54,279
+It says here what it does, it removes.
+
+1089
+01:55:54,279 --> 01:55:56,259
+End of line from string.
+
+1090
+01:55:56,260 --> 01:55:58,199
+Why this happens?
+
+1091
+01:55:58,199 --> 01:56:05,440
+We have to remove it before heading them.
+
+1092
+01:56:05,440 --> 01:56:25,640
+Does anybody has an idea why we have to remove this?
+
+1093
+01:56:25,640 --> 01:56:26,220
+Yeah.
+
+1094
+01:56:26,260 --> 01:56:49,260
+Okay, when we enter, actually, if, well, when you enter a number, you hit carriage return.
+
+1095
+01:56:49,260 --> 01:56:59,260
+Actually, carriage return inserts an end-of-line character to each variable.
+
+1096
+01:56:59,260 --> 01:57:16,260
+So before operating on these variables, we have to remove this end-of-line character from the variable to make it numerical.
+
+1097
+01:57:16,260 --> 01:57:19,260
+Let's disable this 2 and 3.
+
+1098
+01:57:19,260 --> 01:57:21,260
+Let's see what happens.
+
+1099
+01:57:21,260 --> 01:57:24,260
+I haven't tried, basically.
+
+1100
+01:57:24,260 --> 01:57:27,260
+Let's try what happens.
+
+1101
+01:57:27,260 --> 01:57:31,260
+I'll go on to see.
+
+1102
+01:57:31,260 --> 01:57:45,260
+Let's save it and see what happens.
+
+1103
+01:57:45,260 --> 01:57:47,260
+Enter 4.
+
+1104
+01:57:47,260 --> 01:57:49,260
+Enter 6.
+
+1105
+01:57:49,260 --> 01:57:51,260
+Ensaim 3.
+
+1106
+01:57:51,260 --> 01:57:52,260
+Enter 3.
+
+1107
+01:57:52,260 --> 01:57:53,260
+Enter 4.
+
+1108
+01:57:53,260 --> 01:57:55,260
+Okay, I'm sure.
+
+1109
+01:57:55,260 --> 01:57:56,260
+Reapply 4.
+
+1110
+01:57:56,260 --> 01:57:57,739
+So now—
+
+1111
+01:57:57,739 --> 01:58:00,739
+Okay, before.
+
+1112
+01:58:00,739 --> 01:58:15,739
+So you might set 5 before.
+
+1113
+01:58:15,739 --> 01:58:17,260
+Yeah.
+
+1114
+01:58:17,260 --> 01:58:18,260
+At the end.
+
+1115
+01:58:18,260 --> 01:58:19,260
+At the end.
+
+1116
+01:58:19,260 --> 01:58:48,260
+Anyway, the term also, when you write in parse, you can write exactly almost the same as the
+
+1117
+01:58:48,260 --> 01:58:59,260
+almost the same codec to handle the files. To handle the files within a program, we use file handle.
+
+1118
+01:58:59,260 --> 01:59:13,260
+You can, for example, open a file for an output.
+
+1119
+01:59:13,260 --> 01:59:17,260
+You can print into and you can close.
+
+1120
+01:59:17,260 --> 01:59:19,260
+You can close the output.
+
+1121
+01:59:19,260 --> 01:59:27,260
+This is exactly the same as the C construct.
+
+1122
+01:59:27,260 --> 01:59:35,260
+These, of course, are small differences I will mention in a minute.
+
+1123
+01:59:35,260 --> 01:59:45,260
+Of course, this is when you try to manipulate a file within a running program.
+
+1124
+01:59:45,260 --> 01:59:47,260
+For example, your program.
+
+1125
+01:59:47,260 --> 01:59:55,260
+If your program opens a file, modifies content, and writes back, then continues to do some other things.
+
+1126
+01:59:55,260 --> 01:59:59,260
+We use this open file then parse.
+
+1127
+02:00:00,000 --> 02:00:17,000
+Burada bir örnek var. Bu sadece bir örnek, çok basit bir web sayfayı yaratmak için bir örnek.
+
+1128
+02:00:17,000 --> 02:00:26,000
+Bunu kullanırsanız, html index'i denilen bir sayfa yaratacaktır.
+
+1129
+02:00:26,000 --> 02:00:35,000
+Öncelikle bunu kullanırsanız, html index'i denilen bir sayfa yaratacaktır.
+
+1130
+02:00:35,000 --> 02:00:48,000
+Root folder'da, root folder'da html index'i denilen bir sayfa yaratacaktır.
+
+1131
+02:00:48,000 --> 02:00:55,000
+Bir noktada bir sayfa yaratmak istiyorsanız,
+
+1132
+02:00:55,000 --> 02:01:04,000
+bu sayfayı kullanabilirsiniz.
+
+1133
+02:01:04,000 --> 02:01:12,000
+Bu durumda, bu program html index'i denilen bir sayfa yaratacaktır.
+
+1134
+02:01:12,000 --> 02:01:19,000
+Html index'i denilen bir sayfa yaratacaktır.
+
+1135
+02:01:19,000 --> 02:01:24,000
+Bunu kullanabilirsiniz.
+
+1136
+02:01:24,000 --> 02:01:28,000
+Bu Maintenant de abajou için.
+
+1137
+02:01:28,000 --> 02:01:32,000
+Html index'i menüsüne ulaştırıyorum.
+
+1138
+02:01:32,000 --> 02:01:34,000
+Html index'i Pred See okudum.
+
+1139
+02:01:34,000 --> 02:01:40,000
+Html index'i Menüs Üçüncü belgesine dolayı tamamlanıyorkek.
+
+1140
+02:01:40,000 --> 02:01:41,779
+WP
+
+1141
+02:01:41,779 --> 02:01:43,859
+ацию
+
+1142
+02:01:47,079 --> 02:01:51,380
+Hoca
+
+1143
+02:01:51,380 --> 02:01:53,119
+Kutth fallen
+
+1144
+02:01:53,119 --> 02:01:53,840
+Folk
+
+1145
+02:02:23,840 --> 02:02:31,840
+Ayrıca, bu konusunda altyazı eklediğimiz gibi bir arka destansı ile eşleştirilmiş bir özellik var.
+
+1146
+02:02:33,840 --> 02:02:38,840
+Programınızın nereye gitmek istediğini anlatmak için kullanılır.
+
+1147
+02:02:38,840 --> 02:02:56,840
+Öğretim için bir sayı açıyorsunuz, okumak için bir sayı açıyorsunuz veya katılmak için bir sayı açıyorsunuz.
+
+1148
+02:02:56,840 --> 02:02:59,840
+Şimdi 3 çeşit var.
+
+1149
+02:02:59,840 --> 02:03:24,840
+Şimdi parayi benchmark düzenlemeler üret educación için aç photographs, okumak için lettrum tut що bu karakterden daha küçük.
+
+1150
+02:03:24,840 --> 02:03:27,840
+Tüm описlerle aynı fueç için aç下次 historik için.
+
+1151
+02:03:27,840 --> 02:03:29,840
+Bu karakteri açıyoruz.
+
+1152
+02:03:29,840 --> 02:03:31,840
+Bu karakteri zaten görmüştük.
+
+1153
+02:03:31,840 --> 02:03:37,840
+Fileye direkt çıkartmak istiyorsanız.
+
+1154
+02:03:37,840 --> 02:03:45,840
+Ve bu karakteri iki kez kullanıyorsunuz.
+
+1155
+02:03:45,840 --> 02:03:53,840
+Şimdi, hatırladığım kadarıyla C'de R için okuyorsunuz.
+
+1156
+02:03:53,840 --> 02:03:57,840
+W için yazıyorsunuz.
+
+1157
+02:03:57,840 --> 02:03:59,840
+Ve A için okuyorsunuz.
+
+1158
+02:03:59,840 --> 02:04:01,840
+Doğru mu?
+
+1159
+02:04:01,840 --> 02:04:07,840
+Bence bu C'de oluşturuldu.
+
+1160
+02:04:07,840 --> 02:04:11,840
+Ayrıca diğer karakterler de aynı.
+
+1161
+02:04:11,840 --> 02:04:13,840
+Bu da C.
+
+1162
+02:04:13,840 --> 02:04:17,840
+Bunu sadece öğrenebilmek zorundasınız.
+
+1163
+02:04:17,840 --> 02:04:19,840
+Bunu bilmelisiniz.
+
+1164
+02:04:19,840 --> 02:04:21,840
+Karakteri okuduğunuzda,
+
+1165
+02:04:21,840 --> 02:04:25,840
+bu karakteri yazmanız ve okuyabilmeniz için
+
+1166
+02:04:25,840 --> 02:04:27,840
+bu karakteri kullanmalısınız.
+
+1167
+02:04:27,840 --> 02:04:31,840
+Burada bir örnek var.
+
+1168
+02:04:31,840 --> 02:04:37,840
+Şimdi DNA kopyalama...
+
+1169
+02:04:37,840 --> 02:04:39,840
+DNA bir uygulama.
+
+1170
+02:04:39,840 --> 02:04:41,840
+Çünkü bu...
+
+1171
+02:04:41,840 --> 02:04:53,840
+...
+
+1172
+02:04:53,840 --> 02:04:55,840
+...
+
+1173
+02:04:55,840 --> 02:04:57,840
+...
+
+1174
+02:04:57,840 --> 02:05:27,819
+İzlediğiniz için teşekkür ederim.
+
+1175
+02:05:00,000 --> 02:05:16,960
+for writing, we have already seen this while statement, now if there is an error we can
+
+1176
+02:05:16,960 --> 02:05:29,859
+use this dive function. Imagine you are running a program you don't want your
+
+1177
+02:05:29,859 --> 02:05:36,880
+program to be interrupted if the file we are trying to open within your program
+
+1178
+02:05:36,880 --> 02:05:46,840
+does not exist. So in this case if it does not exist simply trying to open it
+
+1179
+02:05:46,840 --> 02:05:54,520
+will crash the program. It will give you an error and your program will stop. If you want your
+
+1180
+02:05:54,520 --> 02:06:03,220
+program to go under control you will be using this dive construct to be able to control your
+
+1181
+02:06:03,220 --> 02:06:16,119
+program or to be able to continue your program to execute. Syntax for the dive
+
+1182
+02:06:16,119 --> 02:06:16,819
+function is
+
+1183
+02:06:16,819 --> 02:06:19,539
+this.
+
+1184
+02:06:27,039 --> 02:06:33,699
+So obviously if you open a file handle you have to close it otherwise you will
+
+1185
+02:06:33,699 --> 02:06:45,099
+have some undesired variables functions open in memory.
+
+1186
+02:06:46,819 --> 02:06:57,039
+You can also use this one function to warn you of possible errors.
+
+1187
+02:06:57,039 --> 02:07:07,260
+The next is the file variables now. We said that. Do you have any questions regarding
+
+1188
+02:07:07,260 --> 02:07:23,260
+the concept we discussed so far? I think it is very clear and most of the things we mentioned
+
+1189
+02:07:23,260 --> 02:07:25,260
+we are already familiar with on the other languages. So if you have any questions please
+
+1190
+02:07:25,260 --> 02:07:26,460
+let us know in the comments.
+
+1191
+02:07:26,460 --> 02:07:26,960
+Thank you.
+
+1192
+02:07:27,039 --> 02:07:32,359
+So the first program concepts are not so different from the other languages.
+
+1193
+02:07:32,359 --> 02:07:44,460
+I said some characteristics which may be very difficult to implement in other languages.
+
+1194
+02:07:44,460 --> 02:07:52,260
+I am not saying impossible but difficult. Even with simple assembly language everything
+
+1195
+02:07:52,260 --> 02:07:55,260
+is possible to implement.
+
+1196
+02:07:55,260 --> 02:07:56,460
+But you have to put some effort into it.
+
+1197
+02:07:56,460 --> 02:08:09,880
+Ok. I said that term is a typeless, regarding the variables, term is a typeless language.
+
+1198
+02:08:09,880 --> 02:08:16,880
+I will explain what this typeless means in a minute. But of course term has a certain
+
+1199
+02:08:16,880 --> 02:08:19,880
+type of variables.
+
+1200
+02:08:19,880 --> 02:08:25,880
+The third program is variables.
+
+1201
+02:08:25,880 --> 02:08:28,300
+It uses variables to store data in memory.
+
+1202
+02:08:28,300 --> 02:08:34,300
+As we said it is a typeless language.
+
+1203
+02:08:34,300 --> 02:08:43,300
+The typeless means here it does not force the programmer to distinguish between the
+
+1204
+02:08:43,300 --> 02:08:50,300
+types of data stored in a variable in this respective typeless or it does not force
+
+1205
+02:08:50,300 --> 02:08:55,300
+you to declare the variables before using them.
+
+1206
+02:08:55,880 --> 02:09:04,300
+Of course it has variable types.
+
+1207
+02:09:04,300 --> 02:09:09,300
+It provides three built-in variable types.
+
+1208
+02:09:09,300 --> 02:09:13,300
+We have already seen one with a scalar variable.
+
+1209
+02:09:13,300 --> 02:09:23,300
+The second is, the first time we are mentioning is array but this is logical. Any language should be able to do it.
+
+1210
+02:09:25,880 --> 02:09:28,300
+Manipulate the array.
+
+1211
+02:09:28,300 --> 02:09:33,300
+So it should have a respective variable as well.
+
+1212
+02:09:33,300 --> 02:09:36,300
+Then there is hash variables.
+
+1213
+02:09:36,300 --> 02:09:43,300
+This is actually, we will discuss in a minute, the array of arrays or multi-dimensional arrays.
+
+1214
+02:09:43,300 --> 02:09:47,300
+Scalar variables.
+
+1215
+02:09:47,300 --> 02:09:53,300
+In Perl the most basic variable type is a scalar variable as it is in many other languages.
+
+1216
+02:09:53,300 --> 02:09:54,300
+Scalar variables.
+
+1217
+02:09:54,300 --> 02:09:55,300
+In Perl the most basic variable type is a scalar variable.
+
+1218
+02:09:55,300 --> 02:09:56,720
+It is in many other languages as well.
+
+1219
+02:09:56,720 --> 02:09:58,720
+Now from the Perl.
+
+1220
+02:10:00,000 --> 02:10:18,000
+It holds a single value, value can be any kind of data including but not limited to string, integer, word, object, reference or whole file as we have already seen.
+
+1221
+02:10:18,000 --> 02:10:32,000
+Scanner variables are preceded with dollar sign, which we have already seen, and consist of only alphanumeric characters.
+
+1222
+02:10:32,000 --> 02:10:44,000
+These are some valid term variable assignments. For example, this one.
+
+1223
+02:10:44,000 --> 02:10:47,000
+In this case, it's a string.
+
+1224
+02:10:47,000 --> 02:10:48,000
+Because
+
+1225
+02:10:48,000 --> 02:10:57,000
+it's a double quote, double quote usually indicates a string in most languages.
+
+1226
+02:10:57,000 --> 02:11:05,000
+The second one is floating number.
+
+1227
+02:11:05,000 --> 02:11:13,000
+If we have quotes, what happens?
+
+1228
+02:11:13,000 --> 02:11:17,000
+It will not be a floating number, it will be a
+
+1229
+02:11:17,000 --> 02:11:18,000
+string basically.
+
+1230
+02:11:18,000 --> 02:11:27,000
+Including several characters, numbers and one character.
+
+1231
+02:11:27,000 --> 02:11:34,000
+The next is an integer.
+
+1232
+02:11:34,000 --> 02:11:38,000
+All are valid term assignments.
+
+1233
+02:11:38,000 --> 02:11:47,000
+Now this Scanner type of, Scanner variable is determined by the type of key.
+
+1234
+02:11:47,000 --> 02:11:48,000
+What is it?
+
+1235
+02:11:48,000 --> 02:11:54,000
+What is assigned to it?
+
+1236
+02:11:54,000 --> 02:11:57,000
+If you assign string, variable becomes to it.
+
+1237
+02:11:57,000 --> 02:12:00,000
+If you assign character, variable becomes character.
+
+1238
+02:12:00,000 --> 02:12:03,000
+If you assign floating point, it becomes for.
+
+1239
+02:12:03,000 --> 02:12:06,000
+If you assign integer, it becomes integer.
+
+1240
+02:12:06,000 --> 02:12:11,000
+If you assign signed integer, it becomes signed integer.
+
+1241
+02:12:11,000 --> 02:12:14,000
+Let's see.
+
+1242
+02:12:14,000 --> 02:12:16,000
+This is another integer.
+
+1243
+02:12:16,000 --> 02:12:25,000
+You can also assign directly some sort of processes.
+
+1244
+02:12:25,000 --> 02:12:40,000
+Again, a string, a long string.
+
+1245
+02:12:40,000 --> 02:12:42,000
+This is Scanner variable.
+
+1246
+02:12:42,000 --> 02:12:45,000
+Next is array variables.
+
+1247
+02:12:45,000 --> 02:12:57,000
+Arrays are basically one of the most fundamental concepts in any languages.
+
+1248
+02:12:57,000 --> 02:13:07,000
+If you want to store more than one data in a single variable.
+
+1249
+02:13:07,000 --> 02:13:12,000
+But you should be able to refer this single variable, this data in a single variable.
+
+1250
+02:13:12,000 --> 02:13:13,000
+You should be able to refer this single variable, this data in a single variable.
+
+1251
+02:13:13,000 --> 02:13:20,000
+And we can set all these data in these variables easily and independently.
+
+1252
+02:13:20,000 --> 02:13:25,000
+So, we use Arrays in this case.
+
+1253
+02:13:25,000 --> 02:13:34,000
+Arrays in Spud dealers distinguish from Scanner variables by this ampersand sign.
+
+1254
+02:13:34,000 --> 02:13:39,000
+Which proceeds the array name.
+
+1255
+02:13:39,000 --> 02:13:41,000
+If anything start with this ampersand.
+
+1256
+02:13:41,000 --> 02:13:42,000
+It indicates an error.
+
+1257
+02:13:42,000 --> 02:13:54,319
+an array we can initialize an array variable by giving a list of values each can be separated
+
+1258
+02:13:54,319 --> 02:14:06,880
+with comma inside the parentheses for example as this one this is an array named decimal
+
+1259
+02:14:06,880 --> 02:14:16,600
+the data items in array are what
+
+1260
+02:14:16,600 --> 02:14:28,400
+strings array of strings such as
+
+1261
+02:14:28,400 --> 02:14:33,900
+whatever
+
+1262
+02:14:33,900 --> 02:14:36,859
+we have array of strings
+
+1263
+02:14:36,860 --> 02:14:49,820
+now each element of this array is a scalar variable
+
+1264
+02:14:49,820 --> 02:14:53,420
+i should mention this now this array is array of integers
+
+1265
+02:14:53,420 --> 02:15:02,420
+so
+
+1266
+02:15:00,000 --> 02:15:18,460
+This is a mixture. Here we have two Scalpel variables. We don't know the type. It could be string, it could be character, it could be integer or plot. And we have two integers.
+
+1267
+02:15:02,420 --> 02:15:05,420
+so
+
+1268
+02:15:05,420 --> 02:15:06,420
+so
+
+1269
+02:15:06,420 --> 02:15:06,460
+so
+
+1270
+02:15:06,460 --> 02:15:06,500
+so
+
+1271
+02:15:06,500 --> 02:15:06,540
+so
+
+1272
+02:15:06,540 --> 02:15:06,580
+so
+
+1273
+02:15:06,580 --> 02:15:06,620
+so
+
+1274
+02:15:06,620 --> 02:15:06,660
+so
+
+1275
+02:15:06,660 --> 02:15:06,680
+so
+
+1276
+02:15:06,680 --> 02:15:06,700
+so
+
+1277
+02:15:06,700 --> 02:15:06,720
+so
+
+1278
+02:15:06,720 --> 02:15:06,740
+so
+
+1279
+02:15:06,740 --> 02:15:06,760
+so
+
+1280
+02:15:06,760 --> 02:15:06,780
+so
+
+1281
+02:15:06,780 --> 02:15:06,800
+so
+
+1282
+02:15:06,800 --> 02:15:06,820
+so
+
+1283
+02:15:06,820 --> 02:15:06,840
+so
+
+1284
+02:15:18,460 --> 02:15:32,199
+We can also create an arbitrary array and later reassign these elements using a bracket operator.
+
+1285
+02:15:32,199 --> 02:15:45,699
+This is important. When we refer to individual elements of an array, we use double sign just like in Scalpel variables, as I already said.
+
+1286
+02:15:45,699 --> 02:15:48,439
+Each array
+
+1287
+02:15:48,460 --> 02:15:55,460
+each number of array
+
+1288
+02:15:55,460 --> 02:16:04,460
+actually is a Scalpel. So we need to use these dollar operators such as this one.
+
+1289
+02:16:04,460 --> 02:16:10,460
+For example, we have already defined this decimal array.
+
+1290
+02:16:10,460 --> 02:16:13,460
+Now dollar decimal zero
+
+1291
+02:16:13,460 --> 02:16:16,460
+actually is one. When you just
+
+1292
+02:16:16,460 --> 02:16:18,460
+think
+
+1293
+02:16:18,460 --> 02:16:21,460
+in a print statement, you use
+
+1294
+02:16:21,460 --> 02:16:29,460
+this dollar decimal zero, then it will be useful.
+
+1295
+02:16:29,460 --> 02:16:33,459
+Here, one important thing.
+
+1296
+02:16:33,459 --> 02:16:40,459
+In turn, the index starts with zero, not one. Some languages start with one.
+
+1297
+02:16:40,459 --> 02:16:47,459
+Robobin, Matlab don't have zero index, but it's one, I think.
+
+1298
+02:16:47,460 --> 02:16:49,460
+As far as I remember.
+
+1299
+02:16:49,460 --> 02:16:52,460
+In some other languages, it's the same.
+
+1300
+02:16:52,460 --> 02:17:02,460
+I noticed Python is the same as Perl as well. It starts from zero as well.
+
+1301
+02:17:02,460 --> 02:17:07,460
+Actually, the zero refers to the first element of an array.
+
+1302
+02:17:07,460 --> 02:17:14,460
+Not the zero element, the first element.
+
+1303
+02:17:14,460 --> 02:17:18,460
+So that was important.
+
+1304
+02:17:18,460 --> 02:17:23,460
+Digits inside these brackets are usually called arrays index.
+
+1305
+02:17:23,460 --> 02:17:27,460
+So I already mentioned this.
+
+1306
+02:17:27,460 --> 02:17:31,460
+Tenth element will be basically as an index is nine.
+
+1307
+02:17:31,460 --> 02:17:37,460
+Index nine will refer to tenth element.
+
+1308
+02:17:37,460 --> 02:17:41,460
+So I mentioned several times this.
+
+1309
+02:17:41,460 --> 02:17:42,460
+Again, repeat it.
+
+1310
+02:17:42,460 --> 02:17:43,460
+Programming languages such as
+
+1311
+02:17:43,460 --> 02:17:52,460
+C, C++ require that all the elements of an array be of the same type,
+
+1312
+02:17:52,460 --> 02:17:57,460
+such as all integers or all characters or all strings.
+
+1313
+02:17:57,460 --> 02:18:02,460
+In C, for example, you cannot mix an integer with a plot,
+
+1314
+02:18:02,460 --> 02:18:05,460
+a character with a string, etc.
+
+1315
+02:18:05,460 --> 02:18:08,460
+It will give you an error.
+
+1316
+02:18:08,460 --> 02:18:12,460
+But in Perl, you can mix all types
+
+1317
+02:18:12,460 --> 02:18:16,460
+in one array.
+
+1318
+02:18:16,460 --> 02:18:21,460
+I believe in Python is the same.
+
+1319
+02:18:21,460 --> 02:18:27,460
+For example, array zero could be a string.
+
+1320
+02:18:27,460 --> 02:18:30,460
+Array one could be an integer.
+
+1321
+02:18:30,460 --> 02:18:36,460
+Array three could be three or so, which is plot.
+
+1322
+02:18:36,460 --> 02:18:40,460
+Now, array is a data array
+
+1323
+02:18:40,460 --> 02:18:43,460
+with some data in it.
+
+1324
+02:18:43,460 --> 02:18:48,460
+And the first data element is a string.
+
+1325
+02:18:48,460 --> 02:18:50,460
+Second data element is integer.
+
+1326
+02:18:50,460 --> 02:18:55,460
+Third is plot, in this example.
+
+1327
+02:18:55,460 --> 02:19:02,460
+So you can mix up the types in an array in Perl.
+
+1328
+02:19:02,460 --> 02:19:07,460
+You can append, you can manipulate the arrays.
+
+1329
+02:19:07,460 --> 02:19:10,460
+I will give you some examples.
+
+1330
+02:19:10,460 --> 02:19:12,460
+There are many other options.
+
+1331
+02:19:12,460 --> 02:19:16,460
+You have to check reference book.
+
+1332
+02:19:16,460 --> 02:19:25,460
+For example, you can append it using E structure.
+
+1333
+02:19:25,460 --> 02:19:33,460
+For example, you can get first last index.
+
+1334
+02:19:33,460 --> 02:19:36,460
+After you get last index,
+
+1335
+02:19:36,460 --> 02:19:40,460
+you simply assign the extra,
+
+1336
+02:19:40,460 --> 02:19:44,460
+string to the string array
+
+1337
+02:19:44,460 --> 02:19:47,460
+by using this last index of one.
+
+1338
+02:19:47,460 --> 02:19:51,460
+Last index was nine in our example.
+
+1339
+02:19:51,460 --> 02:19:54,460
+This will be ten.
+
+1340
+02:19:54,460 --> 02:19:59,460
+Or you can simply use
+
+1341
+02:20:00,000 --> 02:20:16,520
+this construct, these are the equivalent constructs, dollar, hash, decimal, actually dollar, hash
+
+1342
+02:20:16,520 --> 02:20:24,319
+will give you the index of the last index, there are many similar constructs in Perth,
+
+1343
+02:20:24,319 --> 02:20:41,360
+this is an example, third one, third option, you can use a specific function known as push,
+
+1344
+02:20:41,360 --> 02:20:54,159
+directly this construct will add this string to already existing array, it will append
+
+1345
+02:20:54,159 --> 02:20:54,279
+it.
+
+1346
+02:20:54,319 --> 02:21:10,959
+The third variable is hash variable, hash variables are more complex variables, actually
+
+1347
+02:21:10,959 --> 02:21:24,159
+they are also known as associative arrays, but in some other languages it is referred
+
+1348
+02:21:24,159 --> 02:21:25,159
+to as common arrays.
+
+1349
+02:21:25,159 --> 02:21:30,159
+So, they are associated because they store multiple values just like ordinary arrays.
+
+1350
+02:21:30,159 --> 02:21:34,860
+They are associated because they associate the values of the element not with an index
+
+1351
+02:21:34,860 --> 02:21:37,979
+but through names or the code key.
+
+1352
+02:21:37,979 --> 02:21:46,799
+These are important properties of the hash variables.
+
+1353
+02:21:46,799 --> 02:21:52,239
+We can generate keys ourselves.
+
+1354
+02:21:52,239 --> 02:21:54,000
+We can refer to these as an index.
+
+1355
+02:21:54,000 --> 02:22:06,479
+values with those keys to distinguish from the other variable types the person
+
+1356
+02:22:06,479 --> 02:22:15,879
+sign is used anything preceded by percentage sign any variable name will be
+
+1357
+02:22:15,880 --> 02:22:29,320
+interpreted as variable for example person hash variable this one is an
+
+1358
+02:22:29,320 --> 02:22:43,500
+empty hash variable here we have a specific variable for example my name
+
+1359
+02:22:43,500 --> 02:22:45,500
+surname name
+
+1360
+02:22:45,880 --> 02:23:00,060
+last name first name and email it we can I can add some other
+
+1361
+02:23:00,060 --> 02:23:08,580
+such as age address telephone number whatever whatever we show you
+
+1362
+02:23:14,280 --> 02:23:15,780
+and
+
+1363
+02:23:15,880 --> 02:23:24,680
+you can access the values of columns of the table individually by using curly
+
+1364
+02:23:24,680 --> 02:23:38,000
+brackets similar to in arrays we use not dollar sign person sign but dollar
+
+1365
+02:23:38,000 --> 02:23:44,280
+to refer to individual variables which is actually scalar variables individual variables
+
+1366
+02:23:44,280 --> 02:23:45,780
+individual variables
+
+1367
+02:23:45,880 --> 02:23:56,280
+for example name is just you may need another scabby variable within hash variable
+
+1368
+02:23:56,280 --> 02:24:04,420
+there are hash related functions to manipulate this variable as well as we
+
+1369
+02:24:04,420 --> 02:24:15,860
+have seen that there are functions to manipulate arrays for example keys will return all the
+
+1370
+02:24:15,860 --> 02:24:26,980
+key names of the cache as an array for example
+
+1371
+02:24:26,980 --> 02:24:35,620
+values will return all the values of the hash as an array delete include a
+
+1372
+02:24:35,620 --> 02:24:45,260
+key or value there on the hash if you want to delete email for example you can use this
+
+1373
+02:24:45,860 --> 02:24:55,860
+exists will return a true value if a specific key or hash really exists
+
+1374
+02:24:55,860 --> 02:24:59,860
+these are some
+
+1375
+02:25:00,000 --> 02:25:04,000
+functions or
+
+1376
+02:25:04,000 --> 02:25:08,000
+frequently used functions regarding hash variables
+
+1377
+02:25:08,000 --> 02:25:12,000
+there are many more, again you have to see
+
+1378
+02:25:12,000 --> 02:25:16,000
+it in call reference
+
+1379
+02:25:16,000 --> 02:25:20,000
+tool
+
+1380
+02:25:24,000 --> 02:25:28,000
+actually these things can be interpreted
+
+1381
+02:25:28,000 --> 02:25:32,000
+as array of characters
+
+1382
+02:25:32,000 --> 02:25:36,000
+as we already
+
+1383
+02:25:36,000 --> 02:25:40,000
+said the Perl is a
+
+1384
+02:25:40,000 --> 02:25:44,000
+powerful language to manipulate especially text
+
+1385
+02:25:44,000 --> 02:25:48,000
+so text are usually array of characters or strings
+
+1386
+02:25:48,000 --> 02:25:52,000
+whichever you prefer to call it
+
+1387
+02:25:52,000 --> 02:25:56,000
+to compute string length
+
+1388
+02:25:56,000 --> 02:26:00,000
+we simply use a function known as length
+
+1389
+02:26:06,000 --> 02:26:10,000
+length function returns the length of a string
+
+1390
+02:26:10,000 --> 02:26:14,000
+which refers to number of characters within a string
+
+1391
+02:26:14,000 --> 02:26:18,000
+you can also find the position of character
+
+1392
+02:26:18,000 --> 02:26:22,000
+in a string using r index function
+
+1393
+02:26:22,000 --> 02:26:26,000
+which returns the position of
+
+1394
+02:26:26,000 --> 02:26:30,000
+the first and from the right
+
+1395
+02:26:30,000 --> 02:26:34,000
+we are
+
+1396
+02:26:34,000 --> 02:26:36,000
+searching this
+
+1397
+02:26:36,000 --> 02:26:38,000
+by the way
+
+1398
+02:26:38,000 --> 02:26:40,000
+that should be single
+
+1399
+02:26:40,000 --> 02:26:42,000
+code
+
+1400
+02:26:42,000 --> 02:26:44,000
+here
+
+1401
+02:26:44,000 --> 02:26:46,000
+editor automatically
+
+1402
+02:26:46,000 --> 02:26:48,000
+placed this
+
+1403
+02:26:48,000 --> 02:26:50,000
+symbol here but that should be
+
+1404
+02:26:50,000 --> 02:26:52,000
+code
+
+1405
+02:26:52,000 --> 02:26:54,000
+and there is a yellow
+
+1406
+02:26:54,000 --> 02:26:56,000
+semicolon here
+
+1407
+02:26:56,000 --> 02:27:00,000
+you need to change that
+
+1408
+02:27:00,000 --> 02:27:02,000
+instead of r index
+
+1409
+02:27:02,000 --> 02:27:04,000
+index can also
+
+1410
+02:27:04,000 --> 02:27:06,000
+be used as
+
+1411
+02:27:06,000 --> 02:27:08,000
+illustrated with
+
+1412
+02:27:08,000 --> 02:27:10,000
+example
+
+1413
+02:27:16,000 --> 02:27:22,000
+in the first line
+
+1414
+02:27:22,000 --> 02:27:24,000
+...
+
+1415
+02:27:24,000 --> 02:27:26,000
+...
+
+1416
+02:27:26,000 --> 02:27:32,000
+...
+
+1417
+02:27:32,000 --> 02:27:35,000
+take the end of the string
+
+1418
+02:27:35,000 --> 02:27:38,000
+with its question mark
+
+1419
+02:27:38,000 --> 02:27:41,920
+and you can use
+
+1420
+02:27:41,920 --> 02:27:44,319
+index
+
+1421
+02:27:44,319 --> 02:27:46,319
+get position of question mark
+
+1422
+02:27:52,000 --> 02:27:54,000
+you can convert a string
+
+1423
+02:27:54,000 --> 02:27:56,000
+into an array
+
+1424
+02:27:56,000 --> 02:28:00,000
+by using this QW operator
+
+1425
+02:28:04,000 --> 02:28:08,000
+what happens if you
+
+1426
+02:28:08,000 --> 02:28:12,000
+convert
+
+1427
+02:28:12,000 --> 02:28:16,000
+a string, a string basically is
+
+1428
+02:28:16,000 --> 02:28:20,000
+a single scalar variable in fact, if you
+
+1429
+02:28:20,000 --> 02:28:24,000
+determine a variable as a string, no matter
+
+1430
+02:28:24,000 --> 02:28:28,000
+how many characters you have, it's a single scalar variable
+
+1431
+02:28:28,000 --> 02:28:32,000
+this scalar variable
+
+1432
+02:28:32,000 --> 02:28:36,000
+can be converted into an array
+
+1433
+02:28:36,000 --> 02:28:40,000
+character array by using this QW
+
+1434
+02:28:40,000 --> 02:28:44,000
+as illustrated here
+
+1435
+02:28:44,000 --> 02:28:48,000
+in this case these characters
+
+1436
+02:28:48,000 --> 02:28:52,000
+have to be separated by spaces
+
+1437
+02:28:52,000 --> 02:28:56,000
+you can also use split function
+
+1438
+02:28:56,000 --> 02:29:00,000
+this simple example split
+
+1439
+02:29:00,000 --> 02:29:04,000
+string with a separator
+
+1440
+02:29:04,000 --> 02:29:08,000
+substring defined within slashes
+
+1441
+02:29:08,000 --> 02:29:12,000
+this one defines an empty string
+
+1442
+02:29:12,000 --> 02:29:16,000
+so it will convert into an array
+
+1443
+02:29:16,000 --> 02:29:22,000
+so if it is a comma
+
+1444
+02:29:22,000 --> 02:29:26,000
+you will say comma if it is just one empty space
+
+1445
+02:29:26,000 --> 02:29:30,000
+you can say one empty space or whatever
+
+1446
+02:29:30,000 --> 02:29:34,000
+here there is nothing
+
+1447
+02:29:34,000 --> 02:29:38,000
+so it is on there
+
+1448
+02:29:38,000 --> 02:29:42,000
+these are two example functions related to
+
+1449
+02:29:42,000 --> 02:29:46,000
+int manipulation
+
+1450
+02:29:46,000 --> 02:29:48,000
+here we have an example
+
+1451
+02:29:48,000 --> 02:29:50,000
+this is an amino acid setting
+
+1452
+02:29:50,000 --> 02:29:52,000
+so we will repeat it
+
+1453
+02:29:56,000 --> 02:29:58,000
+I am not going to
+
+1454
+02:29:58,000 --> 02:30:00,000
+repeat this
+
+1455
+02:30:00,000 --> 02:30:13,420
+Basically, we want to create the sequence of the tractors that make its length, approximate
+
+1456
+02:30:13,420 --> 02:30:21,239
+molecular weight, and corresponding number of nucleotides in messenger RNA.
+
+1457
+02:30:21,239 --> 02:30:38,119
+And finally, we have two results here, factor series, I have a definition here for factor
+
+1458
+02:30:38,119 --> 02:30:46,619
+series, I will just skip this.
+
+1459
+02:30:46,619 --> 02:30:47,619
+Example script.
+
+1460
+02:30:47,619 --> 02:30:48,619
+During this process, we have two results here.
+
+1461
+02:30:48,619 --> 02:30:49,619
+We have two results here.
+
+1462
+02:30:49,619 --> 02:30:50,619
+We have two results here.
+
+1463
+02:30:50,619 --> 02:30:51,119
+We have two results here.
+
+1464
+02:30:51,120 --> 02:30:57,280
+We convert this into an array of the character array.
+
+1465
+02:30:57,280 --> 02:31:00,560
+And do the necessary calculations.
+
+1466
+02:31:00,560 --> 02:31:14,380
+.
+
+1467
+02:31:14,380 --> 02:31:17,200
+Intro
+
+1468
+02:31:17,200 --> 02:31:20,220
+and here.
+
+1469
+02:31:20,220 --> 02:31:21,040
+Okay.
+
+1470
+02:31:21,040 --> 02:31:21,079
+Yes.
+
+1471
+02:31:21,079 --> 02:31:21,120
+Okay.
+
+1472
+02:31:21,120 --> 02:31:32,120
+because some values for each characters used to be, which refers to amino acids and it can't wait it.
+
+1473
+02:31:35,120 --> 02:31:38,120
+Here is the second example.
+
+1474
+02:31:38,120 --> 02:31:53,120
+It has the same calculation.
+
+1475
+02:31:55,120 --> 02:32:05,120
+Ok, this is all about the term variables. If you have any question on the term variables, I think it's pretty clear.
+
+1476
+02:32:06,120 --> 02:32:07,120
+Ok, if you have any question.
+
+1477
+02:32:08,120 --> 02:32:10,120
+I will be happy to discuss with you.
+
+1478
+02:32:13,120 --> 02:32:18,120
+Any question you have regarding the variables?
+
+1479
+02:32:27,120 --> 02:32:28,120
+No?
+
+1480
+02:32:36,120 --> 02:32:37,120
+Ok.
+
+1481
+02:32:38,120 --> 02:32:41,120
+Let's see PAL operators again.
+
+1482
+02:33:01,120 --> 02:33:07,120
+To perform some operations on data, we need to use operators, obviously.
+
+1483
+02:33:08,120 --> 02:33:10,120
+There are many operators.
+
+1484
+02:33:10,120 --> 02:33:24,120
+PAL has the almost very similar operators as exists in other languages, especially C.
+
+1485
+02:33:25,120 --> 02:33:31,120
+When we see arithmetic operators, such as plus, minus, multiplication, division.
+
+1486
+02:33:31,120 --> 02:33:32,120
+There are arithmetic operators such as plus, minus, multiplication, division.
+
+1487
+02:33:32,120 --> 02:33:33,120
+These are almost universal for all the other languages.
+
+1488
+02:33:33,120 --> 02:33:34,120
+These are almost universal for all the other languages.
+
+1489
+02:33:34,120 --> 02:33:35,120
+This is a few examples.
+
+1490
+02:33:35,120 --> 02:33:36,120
+So, we have QnA.
+
+1491
+02:33:36,120 --> 02:33:37,120
+This is a few examples.
+
+1492
+02:33:37,120 --> 02:33:49,780
+for all the languages but some languages use rather than a symbol they use that's
+
+1493
+02:33:49,780 --> 02:33:58,000
+just obligated words and double whatever generally most languages will be using
+
+1494
+02:33:58,000 --> 02:34:07,540
+these characters you can see the modulus operation exponent exponent may be
+
+1495
+02:34:07,540 --> 02:34:15,639
+different in some languages they sometimes use this F character such as this one
+
+1496
+02:34:15,639 --> 02:34:27,860
+double I don't know to use these operators we will place them in
+
+1497
+02:34:27,860 --> 02:34:27,979
+the
+
+1498
+02:34:27,979 --> 02:34:41,119
+our statements similar to a mathematical expression as an example we have already
+
+1499
+02:34:41,119 --> 02:34:52,539
+seen some examples but usually each individual element of the process will
+
+1500
+02:34:52,539 --> 02:34:57,420
+be a scalar variable
+
+1501
+02:34:57,979 --> 02:35:27,119
+and
+
+1502
+02:35:00,000 --> 02:35:18,879
+there are assignment operators this is normal assignment one equal sign plus
+
+1503
+02:35:18,879 --> 02:35:29,159
+and equal add and assign minus and equal subtract and assign this is
+
+1504
+02:35:27,119 --> 02:35:27,139
+you
+
+1505
+02:35:29,159 --> 02:35:38,920
+multiply and assign divide and assign modulus and assign which we have used
+
+1506
+02:35:38,920 --> 02:35:47,940
+this one for example this is exponent and assign there are increment decrement
+
+1507
+02:35:47,940 --> 02:35:58,340
+operators such as increment simply add one variable for decrement
+
+1508
+02:35:58,340 --> 02:36:05,579
+you simply subtract one is two minus sign
+
+1509
+02:36:06,700 --> 02:36:15,960
+there are string operators the concatenate string some other languages
+
+1510
+02:36:15,960 --> 02:36:28,180
+are also using this for example MATLAB concatenation operation concatenate and assign
+
+1511
+02:36:28,340 --> 02:36:42,620
+It's an example we have two scullery variables you can concatenate these two scullers as
+
+1512
+02:36:42,620 --> 02:36:55,000
+followed here this is hello world but there is no space in between but you can also place
+
+1513
+02:36:55,000 --> 02:36:56,700
+a space between
+
+1514
+02:36:56,700 --> 02:36:58,260
+Basically you are
+
+1515
+02:36:58,340 --> 02:37:02,340
+concatenating three different
+
+1516
+02:37:02,340 --> 02:37:06,340
+scalars, I would say
+
+1517
+02:37:06,340 --> 02:37:10,340
+Scalars are equal to one, we need one empty
+
+1518
+02:37:10,340 --> 02:37:14,340
+space. Now we can use
+
+1519
+02:37:14,340 --> 02:37:18,340
+better and no more concatenation
+
+1520
+02:37:22,340 --> 02:37:26,340
+There are operators for
+
+1521
+02:37:26,340 --> 02:37:30,340
+numeric comparison, which are used
+
+1522
+02:37:30,340 --> 02:37:34,340
+to compare two numbers
+
+1523
+02:37:34,340 --> 02:37:38,340
+but we cannot use this to compare strings
+
+1524
+02:37:38,340 --> 02:37:42,340
+These operators are typically used
+
+1525
+02:37:42,340 --> 02:37:46,340
+in some type of conditional statement that is if it's a
+
+1526
+02:37:46,340 --> 02:37:50,340
+block of code or initiates a loop
+
+1527
+02:37:50,340 --> 02:37:54,340
+This is double equal to
+
+1528
+02:37:54,340 --> 02:37:58,340
+double equal or not equal to
+
+1529
+02:37:58,340 --> 02:38:02,340
+in third
+
+1530
+02:38:02,340 --> 02:38:06,340
+the not is exclamation mark
+
+1531
+02:38:06,340 --> 02:38:10,340
+greater than or less than a number
+
+1532
+02:38:10,340 --> 02:38:14,340
+basically, greater than
+
+1533
+02:38:14,340 --> 02:38:18,340
+or equal to, less than or equal to
+
+1534
+02:38:18,340 --> 02:38:22,340
+There are also string comparisons
+
+1535
+02:38:22,340 --> 02:38:24,340
+and
+
+1536
+02:38:24,340 --> 02:38:28,340
+these are very similar to the numerical
+
+1537
+02:38:28,340 --> 02:38:30,340
+comparisons but they work with
+
+1538
+02:38:30,340 --> 02:38:32,340
+strings
+
+1539
+02:38:32,340 --> 02:38:34,340
+using
+
+1540
+02:38:34,340 --> 02:38:36,340
+using to compare
+
+1541
+02:38:36,340 --> 02:38:38,340
+strings, for example
+
+1542
+02:38:38,340 --> 02:38:40,340
+eq is
+
+1543
+02:38:40,340 --> 02:38:42,340
+abbreviation of
+
+1544
+02:38:42,340 --> 02:38:44,340
+eq
+
+1545
+02:38:44,340 --> 02:38:46,340
+not eq
+
+1546
+02:38:46,340 --> 02:38:48,340
+greater than
+
+1547
+02:38:48,340 --> 02:38:50,340
+less than
+
+1548
+02:38:50,340 --> 02:38:52,340
+greater than or equal to
+
+1549
+02:38:52,340 --> 02:38:54,340
+less than or equal to
+
+1550
+02:38:54,340 --> 02:38:56,340
+the string
+
+1551
+02:38:56,340 --> 02:39:00,340
+the greater than
+
+1552
+02:39:00,340 --> 02:39:02,340
+and less than operators
+
+1553
+02:39:02,340 --> 02:39:04,340
+in string comparison
+
+1554
+02:39:04,340 --> 02:39:06,340
+compare strings using
+
+1555
+02:39:06,340 --> 02:39:08,340
+identical order
+
+1556
+02:39:08,340 --> 02:39:10,340
+of the string
+
+1557
+02:39:10,340 --> 02:39:12,340
+as you know
+
+1558
+02:39:12,340 --> 02:39:14,340
+something that starts with
+
+1559
+02:39:14,340 --> 02:39:16,340
+small letter a
+
+1560
+02:39:16,340 --> 02:39:18,340
+is greater than
+
+1561
+02:39:18,340 --> 02:39:20,340
+something that starts with c
+
+1562
+02:39:20,340 --> 02:39:22,340
+also
+
+1563
+02:39:22,340 --> 02:39:24,340
+small letters are greater than
+
+1564
+02:39:24,340 --> 02:39:34,340
+capital letters. Therefore, the small letter Hebel will be greater than the Hebel which
+
+1565
+02:39:34,340 --> 02:39:46,340
+starts with capital letters. So, this is how it will compare anyway. There are multiple
+
+1566
+02:39:46,340 --> 02:39:53,340
+operators as well, which are often used when you need to check more than one condition.
+
+1567
+02:39:53,340 --> 02:39:59,340
+Either AND or
+
+1568
+02:40:00,000 --> 02:40:10,719
+not only one are this is the end the two end means the logical end or is in one not with as
+
+1569
+02:40:10,719 --> 02:40:19,520
+i already said it's just exclamation mark so if you want to see if a number is less than or equal
+
+1570
+02:40:19,520 --> 02:40:26,959
+to 10 and all the greater than zero you can simply use this statement
+
+1571
+02:40:30,000 --> 02:40:33,600
+so
+
+1572
+02:40:49,120 --> 02:40:54,000
+finally functions function is a collection of code
+
+1573
+02:40:56,559 --> 02:40:59,200
+actually in some other languages this
+
+1574
+02:40:59,920 --> 02:40:59,959
+wei
+
+1575
+02:41:00,000 --> 02:41:10,120
+called subroutines and in some languages they are called functions it's a
+
+1576
+02:41:10,120 --> 02:41:16,819
+collection of code which includes some statements which can be easily
+
+1577
+02:41:16,819 --> 02:41:24,760
+configured by passing list of arguments functions in Perl are called subroutines
+
+1578
+02:41:24,760 --> 02:41:33,579
+and the general syntax is one you have a subroutine start with sub you have a
+
+1579
+02:41:33,579 --> 02:41:40,540
+list of arguments to pass to the subroutine and you have the statements as normal
+
+1580
+02:41:40,540 --> 02:41:49,760
+program and probably you have a return statement which returns the result of
+
+1581
+02:41:49,760 --> 02:41:54,520
+this subroutine to the main
+
+1582
+02:41:54,520 --> 02:41:54,719
+subroutine to the main
+
+1583
+02:41:54,719 --> 02:41:54,739
+subroutine to the main
+
+1584
+02:41:54,739 --> 02:42:04,340
+program here is an example to create a simple function to compute the area of
+
+1585
+02:42:04,340 --> 02:42:11,299
+the triangle for example if you have a long program and several places you need
+
+1586
+02:42:11,299 --> 02:42:20,219
+to calculate area with different input values then you can simply create area
+
+1587
+02:42:20,219 --> 02:42:24,699
+subroutine and you use it whenever necessary
+
+1588
+02:42:24,700 --> 02:42:35,420
+in a single line this is a function it's about itself we name this subroutine
+
+1589
+02:42:35,420 --> 02:42:50,380
+as we can we have the one side and the eight then simply the area of this
+
+1590
+02:42:50,380 --> 02:42:54,460
+triangle is multiplication of one side and just
+
+1591
+02:42:54,460 --> 02:43:04,220
+the date y by 2 then we will return this area to the main program now we can call this
+
+1592
+02:43:05,500 --> 02:43:09,900
+using a single line as we do in other names as well
+
+1593
+02:43:15,820 --> 02:43:23,580
+i stop here i think we've covered quite a lot and we will continue next week
+
+1594
+02:43:24,460 --> 02:43:31,180
+probably we'll finish next week the introduction to that then we'll start the
+
+1595
+02:43:33,340 --> 02:43:38,620
+bioinformatics subjects and we will be using curl hopefully in
+
+1596
+02:43:39,980 --> 02:43:43,420
+solving the problems in bioinformatics any questions
+
+1597
+02:43:50,060 --> 02:43:51,980
+so i suggest you go
+
+1598
+02:43:54,140 --> 02:43:54,380
+take
+
+1599
+02:43:54,460 --> 02:43:59,580
+the slides and install this part and python as well and just try
+
+1600
+02:44:00,780 --> 02:44:07,820
+these concepts especially because i believe we have already learned python in some other courses
+
+1601
+02:44:08,620 --> 02:44:13,260
+and there are some other courses in which python is used you will be learning it
+
+1602
+02:44:14,140 --> 02:44:23,340
+anyway if our priority is not to teach python but probably this is the only course we will see
+
+1603
+02:44:23,899 --> 02:44:33,420
+um unless you go to industry and you have to deal with some projects specifically in time
+
+1604
+02:44:36,620 --> 02:44:37,979
+this will give you the
+
+1605
+02:44:41,180 --> 02:44:50,860
+another aspect of programming languages as well it will be a richness of your programming knowledge
+
+1606
+02:44:51,659 --> 02:44:53,180
+okay any questions
+
+1607
+02:44:53,579 --> 02:45:20,700
+very few
+
+1608
+02:45:00,000 --> 02:45:29,979
+Bir sonraki videoda görüşürüz.
+
+1609
+02:45:20,700 --> 02:45:20,780
+you
+
+1610
+02:45:20,780 --> 02:45:21,680
+would need some supports
+
+1611
+02:45:21,680 --> 02:45:22,540
+and feedback
+
+1612
+02:45:22,540 --> 02:45:22,559
+maybe you can come back to that later if we have time next week or so thank you that's how we're gonna to wrap it up here and that's all thanks again thank you so much for watching and we'll see you coming back tomorrow and we'll see everybody else in new year in new year in twitter thank you bye for watching and new year in 2022
+
+1613
+02:45:22,559 --> 02:45:22,960
+bye for watching and new year in 2022
+
