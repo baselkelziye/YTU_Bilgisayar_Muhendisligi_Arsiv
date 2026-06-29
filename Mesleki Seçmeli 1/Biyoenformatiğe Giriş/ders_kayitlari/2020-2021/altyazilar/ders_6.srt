@@ -1,0 +1,6156 @@
+1
+00:00:00,000 --> 00:00:29,980
+Thank you.
+
+2
+00:00:30,000 --> 00:00:59,980
+Thank you.
+
+3
+00:01:00,000 --> 00:01:29,980
+Thank you.
+
+4
+00:01:30,000 --> 00:01:59,980
+Thank you.
+
+5
+00:02:00,000 --> 00:02:29,979
+Thank you.
+
+6
+00:02:30,000 --> 00:02:59,979
+Thank you.
+
+7
+00:03:00,000 --> 00:03:29,979
+Thank you.
+
+8
+00:03:30,000 --> 00:03:59,979
+Thank you.
+
+9
+00:04:00,000 --> 00:04:29,980
+Thank you.
+
+10
+00:04:30,000 --> 00:04:59,980
+Thank you.
+
+11
+00:05:00,000 --> 00:05:29,980
+Altyazı M.K.
+
+12
+00:05:30,000 --> 00:05:59,980
+Altyazı M.K.
+
+13
+00:06:00,000 --> 00:06:26,459
+Evet başlayabiliriz.
+
+14
+00:06:30,000 --> 00:06:59,980
+Altyazı M.K.
+
+15
+00:07:00,000 --> 00:07:29,980
+Altyazı M.K.
+
+16
+00:07:30,000 --> 00:07:59,980
+Altyazı M.K.
+
+17
+00:08:00,000 --> 00:08:29,980
+Altyazı M.K.
+
+18
+00:08:30,000 --> 00:08:59,980
+Altyazı M.K.
+
+19
+00:09:00,000 --> 00:09:29,980
+Altyazı M.K.
+
+20
+00:09:30,000 --> 00:09:59,980
+Altyazı M.K.
+
+21
+00:10:00,000 --> 00:10:06,039
+to achieve maximal levels of identity
+
+22
+00:10:06,039 --> 00:10:10,899
+for the purpose of assessing the degree of similarity
+
+23
+00:10:10,899 --> 00:10:14,299
+and the possibility of homology.
+
+24
+00:10:16,059 --> 00:10:18,600
+Probably you know what homology is,
+
+25
+00:10:19,279 --> 00:10:22,779
+but we'll mention again.
+
+26
+00:10:23,799 --> 00:10:27,519
+This pairwise sequence alignment is used to decide
+
+27
+00:10:27,519 --> 00:10:32,079
+if two proteins or genes, as I already said,
+
+28
+00:10:32,620 --> 00:10:36,319
+are related structurally or functionally.
+
+29
+00:10:36,740 --> 00:10:41,460
+These two concepts refer to structural bioinformatics,
+
+30
+00:10:41,460 --> 00:10:45,019
+which we introduced in the past,
+
+31
+00:10:45,639 --> 00:10:47,480
+or functional bioinformatics.
+
+32
+00:10:48,919 --> 00:10:53,699
+It is used again to identify domains or motifs
+
+33
+00:10:53,699 --> 00:10:56,379
+that are shared between proteins
+
+34
+00:10:56,379 --> 00:10:57,460
+and,
+
+35
+00:10:57,519 --> 00:11:01,879
+and it is also used in the analysis of genomes.
+
+36
+00:11:04,480 --> 00:11:09,480
+Basically, it is the basis of blast searching.
+
+37
+00:11:09,860 --> 00:11:12,220
+We'll be talking about this.
+
+38
+00:11:12,220 --> 00:11:15,460
+This is a package or technique, basically.
+
+39
+00:11:17,519 --> 00:11:19,860
+We'll be talking about later.
+
+40
+00:11:25,259 --> 00:11:27,220
+Before we introduce the techniques,
+
+41
+00:11:27,519 --> 00:11:32,279
+let me introduce the some properties of sequences.
+
+42
+00:11:32,279 --> 00:11:39,860
+For example, protein sequences can be more informative than DNA sequences.
+
+43
+00:11:39,860 --> 00:11:41,860
+When I talk about sequences,
+
+44
+00:11:41,860 --> 00:11:45,960
+I'm talking about basically a character array.
+
+45
+00:11:45,960 --> 00:11:48,259
+We will see in a minute.
+
+46
+00:11:50,480 --> 00:11:56,179
+Just character array in terms of the computing concepts.
+
+47
+00:11:57,519 --> 00:12:03,679
+Protein sequences are more, or can be, not necessarily,
+
+48
+00:12:03,679 --> 00:12:05,679
+but can be more informative.
+
+49
+00:12:05,679 --> 00:12:07,679
+Why more informative?
+
+50
+00:12:07,679 --> 00:12:18,679
+Because protein has 20 letters or 20 characters to represent amino acids.
+
+51
+00:12:18,679 --> 00:12:20,679
+We'll see.
+
+52
+00:12:20,679 --> 00:12:24,679
+But DNA has four characters.
+
+53
+00:12:24,679 --> 00:12:26,679
+Many amino acids.
+
+54
+00:12:26,680 --> 00:12:31,840
+Many amino acids share related biophysical properties.
+
+55
+00:12:31,840 --> 00:12:35,840
+Then another reason is codons are degenerate.
+
+56
+00:12:35,840 --> 00:12:37,840
+We'll see later.
+
+57
+00:12:37,840 --> 00:12:39,840
+Basically,
+
+58
+00:12:39,840 --> 00:12:49,840
+for example, changes in the third position often do not alter the amino acid that is specified.
+
+59
+00:12:49,840 --> 00:12:53,840
+We will see in a minute what we mean.
+
+60
+00:12:53,840 --> 00:12:54,840
+Protein sequences often do not alter the amino acid that is specified.
+
+61
+00:12:54,840 --> 00:12:55,840
+Protein sequences often do not alter the amino acid that is specified.
+
+62
+00:12:55,840 --> 00:12:58,080
+And so,
+
+63
+00:12:58,080 --> 00:13:16,960
+protein sequences�
+
+64
+00:13:16,960 --> 00:13:19,960
+so,
+
+65
+00:13:19,960 --> 00:13:22,840
+are not directly due to this process.
+
+66
+00:13:22,840 --> 00:13:23,840
+But wanna describe both of them.
+
+67
+00:13:23,840 --> 00:13:24,960
+For example,
+
+68
+00:13:24,960 --> 00:13:25,720
+we defined proteins so that the toenail,
+
+69
+00:13:25,720 --> 00:13:25,840
+teeth andiveness can be identified as homologous sequences at the age of 10.
+
+70
+00:13:25,840 --> 00:13:37,340
+using human beta-globin, DNA will yield no match in this case if we use DNA
+
+71
+00:13:37,340 --> 00:13:49,340
+sequences, but protein sequences will yield many matches. However, DNA sequences
+
+72
+00:13:49,340 --> 00:13:54,840
+can be more informative than protein sequences in pairwise alignment.
+
+73
+00:13:54,840 --> 00:14:03,840
+Sometimes, many times, DNA alignments are appropriate in confirming the identity of a DNA sequence
+
+74
+00:14:03,840 --> 00:14:15,840
+in a database search. So if it is a DNA database, it would be better, although it is possible
+
+75
+00:14:15,840 --> 00:14:19,340
+to convert a DNA sequence into an
+
+76
+00:14:19,340 --> 00:14:27,420
+amino acid sequence we will see with an example in searching for polymorphisms
+
+77
+00:14:27,420 --> 00:14:33,899
+in analyzing the identity of a cloned complementary dna fragment
+
+78
+00:14:35,420 --> 00:14:41,580
+in comparing regulatory regions or in many other applications anyway
+
+79
+00:14:41,580 --> 00:14:49,580
+so similar biological sequences tend to be related this is obvious if the
+
+80
+00:14:49,580 --> 00:14:57,100
+that translates in terms of the computing concepts the
+
+81
+00:15:00,000 --> 00:15:11,279
+have two beta arrays regarding DNA arrays and these two arrays are very similar so
+
+82
+00:15:13,360 --> 00:15:18,559
+these similar biological sequences therefore tend to be related or
+
+83
+00:15:22,399 --> 00:15:24,320
+we can get information
+
+84
+00:15:24,320 --> 00:15:31,040
+in terms of the functional structural evolutionary
+
+85
+00:15:36,640 --> 00:15:47,360
+features of sequences here common mistake is usually sequence similarities not homology
+
+86
+00:15:50,240 --> 00:15:54,240
+homologous sequences derived from a common answer
+
+87
+00:15:55,120 --> 00:15:59,680
+you know this from biology courses if
+
+88
+00:16:04,640 --> 00:16:10,240
+two species come from a common ancestor and their homologs basically
+
+89
+00:16:24,320 --> 00:16:28,800
+are linked to another species in the form of homologous sequences
+
+90
+00:16:30,560 --> 00:16:35,360
+but the answer for this is very simple the sequence of sequences is a combination of
+
+91
+00:16:35,360 --> 00:16:39,760
+homologous sequences derived from a common ancestor and their homologous sequences
+
+92
+00:16:41,360 --> 00:16:45,360
+all right now we will talk about the relation of sequences in terms of the
+
+93
+00:16:48,960 --> 00:16:51,280
+relation of sequences in terms of the
+
+94
+00:16:51,280 --> 00:16:53,200
+well the terminology in relationship of the sequences
+
+95
+00:16:54,320 --> 00:17:02,080
+orthologs similar second there are similar sequences in two different organisms that
+
+96
+00:17:02,080 --> 00:17:10,720
+have arisen due to a speciation event the functionality here is retained
+
+97
+00:17:13,680 --> 00:17:21,920
+the paralogs are similar sequences within a single organism that have arisen due to a gene
+
+98
+00:17:21,920 --> 00:17:30,320
+duplication event the xenologs are similar sequences that have arisen
+
+99
+00:17:30,320 --> 00:17:38,880
+out of a horizontal transfer events caused by symbiosis or virus etc
+
+100
+00:17:41,680 --> 00:17:48,080
+here a simple tree much later we will be discussing how to derive these trees
+
+101
+00:17:51,600 --> 00:17:51,840
+what
+
+102
+00:17:51,920 --> 00:18:00,560
+myoglobin proteins and these are an example to orthologs it is assumed to be
+
+103
+00:18:00,560 --> 00:18:06,800
+these species are derived from the common ancestors according to evolution theory
+
+104
+00:18:14,160 --> 00:18:20,240
+we mentioned paradox members they these were members of a gene family within a species
+
+105
+00:18:20,559 --> 00:18:32,000
+in this tree we see paralogs in human globin there are beta globin group of globin group whatever
+
+106
+00:18:34,960 --> 00:18:42,480
+to derive these trees or whatever the techniques we will be discussing in a minute is are extensively
+
+107
+00:18:42,480 --> 00:18:48,880
+used therefore i am very happy to have you with me today
+
+108
+00:18:50,240 --> 00:18:59,279
+introducing the some relevant concepts orthologs and parlocks are weaved here in a single tree
+
+109
+00:19:01,680 --> 00:19:01,920
+so
+
+110
+00:19:09,920 --> 00:19:15,599
+we already said that dna sequences tend to be less informative than protein sequences
+
+111
+00:19:15,600 --> 00:19:28,960
+dna bases are based on basically it is base 20 it uses base 20 system
+
+112
+00:19:35,760 --> 00:19:45,360
+in in later lectures we'll be discussing some scoring matrices pam person
+
+113
+00:19:46,160 --> 00:19:52,640
+which accepted mutations matrix is used to determine these mutations
+
+114
+00:19:55,280 --> 00:19:59,360
+protein data banks are much smaller than dna data banks
+
+115
+00:20:00,000 --> 00:20:05,119
+it is some sort of compression in fact and there are less random matches
+
+116
+00:20:05,839 --> 00:20:15,440
+similarity is determined by pairwise alignment of different sequences the alignment of two sequences
+
+117
+00:20:17,119 --> 00:20:22,640
+it's quite straightforward computational problem there are
+
+118
+00:20:22,640 --> 00:20:32,640
+there are many possible alignments two sequences can always be aligned
+
+119
+00:20:36,000 --> 00:20:42,800
+however to talk about a certain alignment these alignments have to be scored
+
+120
+00:20:43,520 --> 00:20:48,400
+we must have some sort of metric to evaluate these alignments
+
+121
+00:20:51,759 --> 00:20:52,560
+in many cases
+
+122
+00:20:52,640 --> 00:20:56,160
+there will be more than one solution with the same score
+
+123
+00:20:58,960 --> 00:21:01,840
+these may be interpreted differently
+
+124
+00:21:04,240 --> 00:21:13,280
+the concept in sequence alignment we have two sequences and we are trying to
+
+125
+00:21:14,080 --> 00:21:21,360
+arrive at a mutual arrangement of these two sequences in terms of the alignment
+
+126
+00:21:23,200 --> 00:21:23,680
+first
+
+127
+00:21:27,360 --> 00:21:35,920
+an optimal alignment is one that exhibits the most correspondences and the least differences
+
+128
+00:21:37,120 --> 00:21:40,960
+i already said that we will be using some metrics for this
+
+129
+00:21:44,320 --> 00:21:46,320
+sequences that are similar
+
+130
+00:21:49,440 --> 00:21:52,080
+will probably have the same function
+
+131
+00:21:52,640 --> 00:21:54,960
+we will be using the region as an example
+
+132
+00:21:57,920 --> 00:21:58,080
+sprayed
+
+133
+00:21:58,080 --> 00:21:59,120
+so
+
+134
+00:21:59,120 --> 00:22:01,920
+we will be using the region as an example
+
+135
+00:22:01,920 --> 00:22:04,240
+what we are doing is we are using the region as an example
+
+136
+00:22:04,240 --> 00:22:09,920
+we are using the region as an example
+
+137
+00:22:09,920 --> 00:22:15,259
+in the term that is student
+
+138
+00:22:15,259 --> 00:22:17,280
+towards to a student's identity
+
+139
+00:22:17,280 --> 00:22:20,720
+this is the termination of the region
+
+140
+00:22:20,720 --> 00:22:22,240
+so in order to replace the region with the other regions
+
+141
+00:22:22,240 --> 00:22:44,339
+There is a great amount of match within these two sequences, but some amino acids or nucleotides may be different due to substitutions with similar chemical properties.
+
+142
+00:22:44,339 --> 00:22:55,399
+Sequence homology is a general term that indicates evolutionary relatedness among the sequences.
+
+143
+00:22:57,399 --> 00:23:04,899
+As we already said, they are derived from a common ancestor.
+
+144
+00:23:08,399 --> 00:23:14,319
+Conservation refers to the changes at a specific position of an amino acid.
+
+145
+00:23:14,339 --> 00:23:26,220
+An amino acid, or less commonly DNA, is a sequence that preserves the physicochemical properties of the original residue.
+
+146
+00:23:27,519 --> 00:23:39,699
+We have a species derived from an ancestor, but there are some conserved regions.
+
+147
+00:23:39,699 --> 00:23:42,699
+They are exactly the same as the original.
+
+148
+00:23:44,339 --> 00:23:57,519
+The sequence alignment allows us to find the best alignment, and we need to examine all possible alignments.
+
+149
+00:23:57,519 --> 00:24:04,519
+To reflect the quality of the possible alignments, we need to score them.
+
+150
+00:24:04,519 --> 00:24:09,480
+There can be different alignments with the same high score.
+
+151
+00:24:09,480 --> 00:24:13,480
+You already said variations in the scoring scheme.
+
+152
+00:24:13,480 --> 00:24:14,319
+There is no end, and all that depends on the outputs.
+
+153
+00:24:14,339 --> 00:24:17,139
+may change the ranking of alignments
+
+154
+00:24:22,019 --> 00:24:31,379
+basically the visual alignment might seem similar but more important thing is to quantify it we
+
+155
+00:24:31,379 --> 00:24:42,579
+will see techniques for visual alignment and quantification as well one metric such a metric
+
+156
+00:24:42,579 --> 00:24:56,179
+could be distance we can use distance as a metric the simplest one is humming or edit distance
+
+157
+00:24:57,779 --> 00:25:07,379
+between two sequences
+
+158
+00:25:00,960 --> 00:25:11,279
+if we take the for example pair and tear these two words has
+
+159
+00:25:11,920 --> 00:25:16,240
+nothing have nothing to do with bioinformatics but just to show the concept
+
+160
+00:25:18,799 --> 00:25:23,039
+we can evaluate how similar are these two words
+
+161
+00:25:23,039 --> 00:25:33,759
+no matter our evaluation is meaningful or not it's another question but what we can do we can create
+
+162
+00:25:33,759 --> 00:25:45,200
+an alignment between these two words as follows then we can use a metric to see if at least
+
+163
+00:25:45,200 --> 00:25:52,639
+you can say that we forget bioinformatics for the time being imagine that we are searching the
+
+164
+00:25:53,920 --> 00:26:01,359
+word similarity then just try to match these two words
+
+165
+00:26:03,519 --> 00:26:15,039
+character wise r matches with r a matches with a e matches with e but p does not match with p
+
+166
+00:26:15,039 --> 00:26:21,279
+this is known as mismatch these are known as matches and this is mismatch
+
+167
+00:26:22,879 --> 00:26:23,039
+so
+
+168
+00:26:23,039 --> 00:26:30,720
+so minimum number of letters by which two words differ is known as humming distance
+
+169
+00:26:34,240 --> 00:26:43,200
+simply it is calculated by summing number of mismatches so the in our example the humming
+
+170
+00:26:43,200 --> 00:26:52,879
+distance between pair and tear is one because there is one mismatch okay that's humming distance it could be
+
+171
+00:26:52,880 --> 00:27:04,160
+used and we'll see later in more meaningful examples another concept is a gap in an alignment
+
+172
+00:27:05,040 --> 00:27:16,240
+sometimes the sequences to be aligned may not be may not have same length they will
+
+173
+00:27:17,120 --> 00:27:22,400
+have different lengths so in this respect normally if we
+
+174
+00:27:23,280 --> 00:27:32,800
+expect two sequences are similar or they are coming from a common ancestor and
+
+175
+00:27:33,520 --> 00:27:40,480
+we expect to be similar then at least the sequence length should be similar as well
+
+176
+00:27:41,440 --> 00:27:49,200
+or same so therefore we use gaps to equate the lengths of these
+
+177
+00:27:51,280 --> 00:27:52,080
+sequences
+
+178
+00:27:53,840 --> 00:27:55,100
+so
+
+179
+00:28:01,200 --> 00:28:05,200
+gap is denoted by a dash and we will be using
+
+180
+00:28:06,560 --> 00:28:15,360
+extensively let's consider the words alignment and ligament again this is
+
+181
+00:28:16,080 --> 00:28:21,200
+just for example one alignment of these two words
+
+182
+00:28:21,200 --> 00:28:22,000
+is as follows
+
+183
+00:28:22,880 --> 00:28:35,360
+Actually, there is one difference in the length of these two sequences.
+
+184
+00:28:35,360 --> 00:28:44,080
+These two matches, these two matches, these two matches, mismatch, match, match, match,
+
+185
+00:28:44,080 --> 00:28:48,160
+and a gap.
+
+186
+00:28:48,160 --> 00:28:55,980
+Anyone can guess why gap happens?
+
+187
+00:28:55,980 --> 00:29:07,820
+Think in terms of the biology, you are supposed to have a background in biology.
+
+188
+00:29:07,820 --> 00:29:16,400
+Oh, mutation, maybe.
+
+189
+00:29:16,400 --> 00:29:17,400
+Yeah.
+
+190
+00:29:17,400 --> 00:29:18,160
+This.
+
+191
+00:29:18,160 --> 00:29:26,360
+The name for this sort of variations are known between the species are known to be caused
+
+192
+00:29:26,360 --> 00:29:32,300
+by mutation will be discussed in a minute.
+
+193
+00:29:32,300 --> 00:29:42,560
+Here of course, these are not a biological sequence, just two words, alignment and ligament.
+
+194
+00:29:42,560 --> 00:29:47,980
+We are, well, we suppose that alignment and ligament will actually happen.
+
+195
+00:29:47,980 --> 00:30:00,180
+For example, imagine you are transmitting this alignment over the wireless network,
+
+196
+00:30:00,000 --> 00:30:14,000
+ve bir şey oldu. Bu A, yalnızca yaratıldığı sözden ayrılıyor ve N A'ya değişiyor.
+
+197
+00:30:00,180 --> 00:30:08,120
+you have a wireless network with a network that is not the previous one.
+
+198
+00:30:08,120 --> 00:30:12,900
+This is because.
+
+199
+00:30:12,900 --> 00:30:13,740
+It's not the previous one.
+
+200
+00:30:13,740 --> 00:30:14,099
+It's not the previous one.
+
+201
+00:30:14,000 --> 00:30:29,000
+Bu sadece data yaratılışında olmalı. Koncept informatik veya biyoloji ile çok benzer bir konu.
+
+202
+00:30:14,099 --> 00:30:14,539
+It's not the previous one.
+
+203
+00:30:14,539 --> 00:30:15,120
+It's not the previous one.
+
+204
+00:30:15,120 --> 00:30:15,519
+It is.
+
+205
+00:30:15,519 --> 00:30:17,839
+Well, the, the, the, the.
+
+206
+00:30:17,839 --> 00:30:17,940
+Yeah.
+
+207
+00:30:17,940 --> 00:30:17,960
+Yeah.
+
+208
+00:30:29,000 --> 00:30:42,000
+Ancestral bir sektör konusunu A, B, C, D ile ilerlemek için.
+
+209
+00:30:42,000 --> 00:30:58,000
+Şimdi, orijinal Ancestral bir sektör A, B, C, D ile ilerlediğimiz iki sub sektör var.
+
+210
+00:30:58,000 --> 00:31:08,000
+Birincisi A, B, C, D. Birincisi A, B, C, D. Şimdi B, C'ye değişiyor ve C'ye ilerliyor.
+
+211
+00:31:08,000 --> 00:31:13,000
+Ve C'ye ilerliyor. Yine başka bir sektörde ilerliyor.
+
+212
+00:31:13,000 --> 00:31:24,000
+Bu sektörde farklı sektörler var. Bu, ilerleme, bu sektörde ilerliyor.
+
+213
+00:31:24,000 --> 00:31:27,000
+Bazı...
+
+214
+00:31:28,000 --> 00:31:42,000
+Yani biyolojik bir sektörde bir şey oldu. Çünkü biz şimdi biliyorduk ki biyolojik bir sektör proteinler ve proteinler amino asitlerle birleşiyor.
+
+215
+00:31:42,000 --> 00:31:51,000
+Ve amino asitler DNA'ya birleşiyor.
+
+216
+00:31:51,000 --> 00:31:56,000
+Amino asitler proteinlerle birleşiyor.
+
+217
+00:31:56,000 --> 00:31:59,000
+Ve DNA'ya da birleşiyor.
+
+218
+00:31:59,000 --> 00:32:04,000
+Amino asitlerin bir parçası bir şekilde kaybedildi.
+
+219
+00:32:04,000 --> 00:32:10,000
+Bu, karakter arayla ilgili bir parçası. Bu, kesinlikle bir ilerleme.
+
+220
+00:32:10,000 --> 00:32:13,000
+Bir ayakta bir ilerleme ile birleşiyor.
+
+221
+00:32:13,000 --> 00:32:18,000
+Ve bu, amino asitlerin bir parçası.
+
+222
+00:32:18,000 --> 00:32:23,000
+Bir şekilde, etrafında veya içeriğinde etrafında etrafında etrafında etrafında etrafını değiştirdi.
+
+223
+00:32:23,000 --> 00:32:27,000
+Yani, kimsel bir kompozisyon veya kimsel bir kestirme değiştirdi.
+
+224
+00:32:27,000 --> 00:32:31,000
+Yani, B, C oldu.
+
+225
+00:32:33,000 --> 00:32:40,000
+Şimdi, biz de, gerçekten bu iki bölüm sektörlerle ilgili.
+
+226
+00:32:40,000 --> 00:32:46,000
+Aslında bu iki bölüm sektörlerle ilgili.
+
+227
+00:32:46,000 --> 00:32:51,000
+Örneğin, bu iki bölüm sektörlerle ilgili.
+
+228
+00:32:51,000 --> 00:33:06,000
+Örneğin, ABD, A-C-C-D ile alınabilir, eğer onlar ilgilendirilirse, bu, bir tür iletişim gösterir.
+
+229
+00:33:06,000 --> 00:33:10,000
+Bu yüzden, ikisi de topluluktan ilgilendirilmiştir.
+
+230
+00:33:10,000 --> 00:33:14,000
+Anlamak istiyoruz, araştırmak istiyoruz.
+
+231
+00:33:14,000 --> 00:33:17,000
+Bu yüzden, GAP kullanıyoruz.
+
+232
+00:33:17,000 --> 00:33:27,000
+Bu yüzden, bu iki sub sekuansı ilgilendirilmiştir.
+
+233
+00:33:27,000 --> 00:33:30,000
+Bu yüzden, boyutlar aynı olmalıdır.
+
+234
+00:33:30,000 --> 00:33:39,000
+Bu yüzden, GAP kullanıyoruz.
+
+235
+00:33:39,000 --> 00:33:42,000
+İki seçenek var.
+
+236
+00:33:42,000 --> 00:33:44,000
+İki seçenek var.
+
+237
+00:33:44,000 --> 00:33:51,000
+Bu bir seçenek, bu da bir diğer seçenek.
+
+238
+00:33:51,000 --> 00:33:56,000
+Bu iki seçenek bir eşit iletişimdir.
+
+239
+00:33:56,000 --> 00:34:07,000
+Eğer bunları kullanırsak, bazen iki seçenek aynı ölçüde olabilirler.
+
+240
+00:34:07,000 --> 00:34:13,000
+Ancak bazen bir iletişim, bizlere aynı alanı verebilir.
+
+241
+00:34:13,000 --> 00:34:18,260
+Bu konuda daha iyi bir skor görülecek.
+
+242
+00:34:18,260 --> 00:34:35,139
+Bu skorlar, özel amino asitlerden bir mutasyon probabilitesi olarak doğrudan doğrulan bir skor matrizi olarak kullanılacak.
+
+243
+00:34:35,139 --> 00:34:59,819
+Örneğin, uzun süreli araştırmaların sonucudan, bu olumluluklar denildi ve amino asit seçimlerinin tüm değişimleri A'nın S'ye değişmesinin olumlulukları denildi.
+
+244
+00:35:00,960 --> 00:35:07,440
+as a result of extensive statistical analysis then these
+
+245
+00:35:09,920 --> 00:35:17,119
+score matrices are used to evaluate these alignments even in terms of the simple
+
+246
+00:35:17,119 --> 00:35:24,159
+statistics this probably will give us the exact the same score but if you use this
+
+247
+00:35:24,159 --> 00:35:31,599
+score matrices it is more likely that we will get a different score anyway
+
+248
+00:35:38,399 --> 00:35:41,519
+here we have a more complicated
+
+249
+00:35:43,839 --> 00:35:54,079
+example is a protein sequence alignment example we have certain matches and mismatches
+
+250
+00:35:54,159 --> 00:36:04,639
+here we have a dna sequence alignment with many gaps there are certain matches
+
+251
+00:36:05,920 --> 00:36:08,319
+and others simply mismatch
+
+252
+00:36:13,519 --> 00:36:16,239
+now an alignment can produce one of the following
+
+253
+00:36:18,079 --> 00:36:23,679
+as i already said infect damage between two characters and mismatch between two characters
+
+254
+00:36:24,319 --> 00:36:33,440
+this is also called a substitution or mutation if characters change this refers to a mutation
+
+255
+00:36:35,039 --> 00:36:42,239
+substitution a gap in the first sequence which can be thought of as the deletion
+
+256
+00:36:43,039 --> 00:36:50,000
+of a character in the first sequence and a gap in the second sequence this is referred to
+
+257
+00:36:52,960 --> 00:36:53,359
+to be
+
+258
+00:36:54,159 --> 00:36:54,960
+insertion
+
+259
+00:36:59,599 --> 00:37:02,159
+of a character in the first sequence
+
+260
+00:37:03,440 --> 00:37:11,119
+sometimes it is also possible that rather than deletion somehow a biochemical reaction
+
+261
+00:37:11,119 --> 00:37:16,239
+can take place and an amino acid originally
+
+262
+00:37:19,359 --> 00:37:23,839
+does not exist may be added to a sequence
+
+263
+00:37:24,319 --> 00:37:27,359
+or biological structure
+
+264
+00:37:30,239 --> 00:37:39,759
+let's consider the following two nucleic acid sequences a c g g a c t and a t c g g a t c t
+
+265
+00:37:44,079 --> 00:37:53,279
+the followings are two valid alignments the first one is this one and these are the matches
+
+266
+00:37:55,119 --> 00:38:05,519
+and this is the second one and these are the matches others this mismatch and the gap here gap here
+
+267
+00:38:07,839 --> 00:38:10,879
+so the question here
+
+268
+00:38:18,480 --> 00:38:19,199
+i need to
+
+269
+00:38:24,159 --> 00:38:37,519
+correct something here
+
+270
+00:38:41,519 --> 00:38:44,079
+are
+
+271
+00:38:44,559 --> 00:38:47,440
+the
+
+272
+00:38:47,440 --> 00:38:49,359
+right
+
+273
+00:38:49,359 --> 00:38:50,159
+can we
+
+274
+00:38:50,159 --> 00:38:50,619
+write
+
+275
+00:38:50,619 --> 00:38:51,759
+the
+
+276
+00:38:51,759 --> 00:38:52,099
+value
+
+277
+00:38:52,099 --> 00:38:52,460
+here
+
+278
+00:38:52,460 --> 00:38:52,719
+let's say
+
+279
+00:38:52,719 --> 00:38:53,379
+so if i entered
+
+280
+00:38:53,379 --> 00:38:53,639
+my Gear
+
+281
+00:38:53,639 --> 00:38:54,139
+g
+
+282
+00:38:54,159 --> 00:38:57,119
+it shouldn't be underscored, just a dash.
+
+283
+00:39:00,699 --> 00:39:05,699
+Okay, the question is which one is a better alignment?
+
+284
+00:39:08,299 --> 00:39:09,679
+Anybody has an idea?
+
+285
+00:39:09,679 --> 00:39:24,099
+According to you, which one is better
+
+286
+00:39:24,099 --> 00:39:26,480
+in terms of the alignments, of course?
+
+287
+00:39:27,819 --> 00:39:29,119
+Birincisi sanki hocam.
+
+288
+00:39:31,059 --> 00:39:36,440
+Okay, some say first one, some say second one.
+
+289
+00:39:36,519 --> 00:39:37,460
+Seems better.
+
+290
+00:39:37,460 --> 00:39:39,460
+Well, if we do...
+
+291
+00:39:39,679 --> 00:39:42,739
+If we do not have a metric,
+
+292
+00:39:42,739 --> 00:39:47,619
+we always talk some possible solutions, probabilities.
+
+293
+00:39:47,619 --> 00:39:49,299
+There are always uncertainty
+
+294
+00:39:49,299 --> 00:39:51,139
+because we don't have a metric.
+
+295
+00:39:51,139 --> 00:39:55,719
+Just we are trying to guess it visually.
+
+296
+00:39:55,719 --> 00:39:57,679
+So we should have a metric.
+
+297
+00:39:57,679 --> 00:39:59,679
+I have already introduced a metric.
+
+298
+00:40:00,000 --> 00:40:04,000
+Bu iki'nin hamle uzunluğunu belirtebilmek için çalışın.
+
+299
+00:40:07,000 --> 00:40:10,000
+Hamle uzunluğu ne olduğunu zaten söyledim.
+
+300
+00:40:22,000 --> 00:40:27,000
+Tamam, diğer matriklikler de var.
+
+301
+00:40:27,000 --> 00:40:43,000
+Düşünelim ki, eğer bir maç var, 2'ye bir skor veriyoruz.
+
+302
+00:40:43,000 --> 00:40:47,000
+Eğer bir maç yoksa, 1'e bir skor veriyoruz.
+
+303
+00:40:49,000 --> 00:40:52,000
+1'e bir maç yoksa, 1'e bir skor veriyoruz.
+
+304
+00:40:52,000 --> 00:40:56,000
+Eğer bir alışveriş var,
+
+305
+00:40:56,000 --> 00:40:59,000
+veya bir arama var,
+
+306
+00:40:59,000 --> 00:41:02,000
+veya bir arama yoksa,
+
+307
+00:41:02,000 --> 00:41:05,000
+2'ye bir skor veriyoruz.
+
+308
+00:41:05,000 --> 00:41:08,000
+Bu, arama araması denilen bir arama araması.
+
+309
+00:41:14,000 --> 00:41:17,000
+Bu yüzden, her maçın 1'e 1 skor veriyor,
+
+310
+00:41:17,000 --> 00:41:20,000
+her maçın 1'e 1 skor veriyor,
+
+311
+00:41:20,000 --> 00:41:23,000
+her alışverişin 1'e 1 skor veriyor.
+
+312
+00:41:26,000 --> 00:41:30,000
+Bu örnek için, 2'ye 1 skor veriyoruz,
+
+313
+00:41:30,000 --> 00:41:33,000
+1'e 1 skor veriyoruz,
+
+314
+00:41:33,000 --> 00:41:36,000
+her maçın 2'ye 1 skor veriyoruz.
+
+315
+00:41:41,000 --> 00:41:44,000
+Eğer bunu yaparsak,
+
+316
+00:41:44,000 --> 00:41:47,000
+ilk alışveriş 1'e 1 skor verir.
+
+317
+00:41:47,000 --> 00:41:50,000
+Eğer geri dönebilirsek,
+
+318
+00:41:50,000 --> 00:41:53,000
+2'ye 1 skor verir.
+
+319
+00:41:53,000 --> 00:41:54,000
+2'ye 1 skor verir.
+
+320
+00:41:54,000 --> 00:41:57,000
+Yani, 2,
+
+321
+00:42:00,000 --> 00:42:03,000
+1,
+
+322
+00:42:03,000 --> 00:42:05,000
+3,
+
+323
+00:42:05,000 --> 00:42:08,000
+2,
+
+324
+00:42:08,000 --> 00:42:10,000
+4,
+
+325
+00:42:10,000 --> 00:42:12,000
+3,
+
+326
+00:42:12,000 --> 00:42:14,000
+2,
+
+327
+00:42:14,000 --> 00:42:16,000
+1,
+
+328
+00:42:16,000 --> 00:42:18,000
+3,
+
+329
+00:42:18,000 --> 00:42:20,000
+5.
+
+330
+00:42:20,000 --> 00:42:22,000
+Bu şekilde,
+
+331
+00:42:22,000 --> 00:42:45,039
+or subtracted, depending on matches, mismatches or gaps, this score is 1, this one, 2, 1, 3, 5, 7, 6,
+
+332
+00:42:45,039 --> 00:43:13,599
+no, 5, 4, 6, 8, first one was 1, second one was 7, just by one mistake, I think I made a mistake, anyway 7.
+
+333
+00:43:13,599 --> 00:43:14,440
+Now,
+
+334
+00:43:15,039 --> 00:43:16,480
+if I ask again,
+
+335
+00:43:17,400 --> 00:43:18,779
+which one is better?
+
+336
+00:43:23,279 --> 00:43:24,559
+We don't have to do.
+
+337
+00:43:25,519 --> 00:43:27,900
+A is 7 or 8.
+
+338
+00:43:29,000 --> 00:43:30,699
+Let me go again and see.
+
+339
+00:43:31,699 --> 00:43:32,460
+2,
+
+340
+00:43:33,500 --> 00:43:34,300
+1,
+
+341
+00:43:34,900 --> 00:43:36,500
+3,
+
+342
+00:43:37,500 --> 00:43:39,440
+5,
+
+343
+00:43:40,079 --> 00:43:40,820
+7,
+
+344
+00:43:40,820 --> 00:43:42,820
+5,
+
+345
+00:43:45,039 --> 00:43:47,039
+6,
+
+346
+00:43:47,039 --> 00:43:49,039
+8,
+
+347
+00:43:49,039 --> 00:43:51,039
+7,
+
+348
+00:43:51,039 --> 00:43:53,039
+8,
+
+349
+00:43:53,039 --> 00:43:55,039
+7,
+
+350
+00:43:55,039 --> 00:43:57,039
+7,
+
+351
+00:43:57,039 --> 00:43:59,039
+8,
+
+352
+00:43:59,039 --> 00:44:01,039
+7,
+
+353
+00:44:01,039 --> 00:44:03,039
+8,
+
+354
+00:44:03,039 --> 00:44:05,039
+8,
+
+355
+00:44:05,039 --> 00:44:07,039
+7,
+
+356
+00:44:07,039 --> 00:44:09,039
+8,
+
+357
+00:44:09,039 --> 00:44:11,039
+7,
+
+358
+00:44:11,039 --> 00:44:13,039
+8,
+
+359
+00:44:13,039 --> 00:44:13,739
+8,
+
+360
+00:44:13,739 --> 00:44:14,340
+7,
+
+361
+00:44:14,340 --> 00:44:14,440
+8,
+
+362
+00:44:14,440 --> 00:44:14,840
+8,
+
+363
+00:44:14,840 --> 00:44:15,840
+9,
+
+364
+00:44:15,840 --> 00:44:16,840
+9,
+
+365
+00:44:16,840 --> 00:44:17,840
+10,
+
+366
+00:44:17,840 --> 00:44:18,840
+11,
+
+367
+00:44:18,840 --> 00:44:19,840
+12,
+
+368
+00:44:19,840 --> 00:44:20,840
+13,
+
+369
+00:44:20,840 --> 00:44:21,840
+13,
+
+370
+00:44:21,840 --> 00:44:22,840
+14,
+
+371
+00:44:22,840 --> 00:44:23,840
+15,
+
+372
+00:44:23,840 --> 00:44:24,840
+16,
+
+373
+00:44:24,840 --> 00:44:25,840
+17,
+
+374
+00:44:25,840 --> 00:44:26,840
+18,
+
+375
+00:44:26,840 --> 00:44:27,840
+19,
+
+376
+00:44:27,840 --> 00:44:28,840
+20,
+
+377
+00:44:28,840 --> 00:44:29,840
+21,
+
+378
+00:44:29,840 --> 00:44:30,840
+22,
+
+379
+00:44:30,840 --> 00:44:31,840
+23,
+
+380
+00:44:31,840 --> 00:44:32,840
+24,
+
+381
+00:44:32,840 --> 00:44:33,840
+25,
+
+382
+00:44:33,840 --> 00:44:34,840
+26,
+
+383
+00:44:34,840 --> 00:44:35,840
+27,
+
+384
+00:44:35,840 --> 00:44:36,840
+28,
+
+385
+00:44:36,840 --> 00:44:37,840
+29,
+
+386
+00:44:37,840 --> 00:44:38,840
+30,
+
+387
+00:44:38,840 --> 00:44:39,840
+31,
+
+388
+00:44:39,840 --> 00:44:40,840
+32,
+
+389
+00:44:40,840 --> 00:44:41,840
+33,
+
+390
+00:44:41,840 --> 00:44:42,840
+34,
+
+391
+00:44:42,840 --> 00:44:43,840
+35,
+
+392
+00:44:43,840 --> 00:44:44,840
+36,
+
+393
+00:44:44,840 --> 00:44:45,840
+37,
+
+394
+00:44:45,840 --> 00:44:46,840
+38,
+
+395
+00:44:46,840 --> 00:44:47,840
+39,
+
+396
+00:44:47,840 --> 00:44:48,840
+40,
+
+397
+00:44:48,840 --> 00:44:49,840
+41,
+
+398
+00:44:49,840 --> 00:44:50,840
+42,
+
+399
+00:44:50,840 --> 00:44:51,840
+43,
+
+400
+00:44:51,840 --> 00:44:52,840
+44,
+
+401
+00:44:52,840 --> 00:44:53,840
+45,
+
+402
+00:44:53,840 --> 00:44:54,840
+46,
+
+403
+00:44:54,840 --> 00:44:55,840
+47,
+
+404
+00:44:55,840 --> 00:44:56,840
+48,
+
+405
+00:44:56,840 --> 00:44:57,840
+49,
+
+406
+00:44:57,840 --> 00:44:58,840
+50,
+
+407
+00:44:58,840 --> 00:44:59,840
+51,
+
+408
+00:44:59,840 --> 00:45:00,840
+52,
+
+409
+00:45:00,000 --> 00:45:07,300
+Şimdi, biz bir kesinlikle metrikimiz var.
+
+410
+00:45:00,840 --> 00:45:01,840
+52,
+
+411
+00:45:01,840 --> 00:45:02,840
+53,
+
+412
+00:45:02,840 --> 00:45:03,840
+54,
+
+413
+00:45:03,840 --> 00:45:04,840
+55,
+
+414
+00:45:04,840 --> 00:45:05,840
+56,
+
+415
+00:45:05,840 --> 00:45:06,840
+57,
+
+416
+00:45:06,840 --> 00:45:07,840
+58,
+
+417
+00:45:07,840 --> 00:45:08,840
+59,
+
+418
+00:45:08,440 --> 00:45:14,219
+İkinci alayınımın daha iyi olduğunu söyleyemeyiz.
+
+419
+00:45:08,840 --> 00:45:09,840
+60,
+
+420
+00:45:09,840 --> 00:45:10,840
+61,
+
+421
+00:45:10,840 --> 00:45:11,840
+62,
+
+422
+00:45:11,840 --> 00:45:12,840
+63,
+
+423
+00:45:14,219 --> 00:45:15,760
+Şimdi, bu sözleri kullanmıyoruz.
+
+424
+00:45:15,860 --> 00:45:18,940
+Daha iyi görünüyor veya daha iyi olacağı veya neyse.
+
+425
+00:45:20,199 --> 00:45:22,780
+İkinci alayınımdan daha iyi.
+
+426
+00:45:22,780 --> 00:45:52,760
+İkinci alayınımın daha iyi olduğunu söyleyemeyiz.
+
+427
+00:45:52,780 --> 00:46:22,760
+İkinci alayınımdan daha iyi.
+
+428
+00:46:22,760 --> 00:46:22,780
+İkinci alayınımdan daha iyi.
+
+429
+00:46:22,780 --> 00:46:52,760
+İkinci alayınımdan daha iyi.
+
+430
+00:46:52,780 --> 00:46:54,160
+Çünkü,
+
+431
+00:46:55,280 --> 00:46:57,780
+Well, you should remember from the
+
+432
+00:46:57,780 --> 00:47:02,220
+Statistical Data Analysis course that
+
+433
+00:47:02,220 --> 00:47:04,740
+because these are the
+
+434
+00:47:04,740 --> 00:47:06,880
+amino acid arrays
+
+435
+00:47:06,880 --> 00:47:09,200
+and DNA arrays are
+
+436
+00:47:09,200 --> 00:47:11,120
+what sort of data type
+
+437
+00:47:11,120 --> 00:47:13,140
+anybody can tell me?
+
+438
+00:47:19,780 --> 00:47:21,700
+It's numerical or
+
+439
+00:47:22,780 --> 00:47:27,920
+categorical?
+
+440
+00:47:32,920 --> 00:47:35,180
+Anyone can tell me?
+
+441
+00:47:41,820 --> 00:47:43,800
+The amino acid sequences
+
+442
+00:47:43,800 --> 00:47:45,780
+and DNA sequence
+
+443
+00:47:45,780 --> 00:47:47,519
+are categorical data or
+
+444
+00:47:47,519 --> 00:47:48,380
+numerical data?
+
+445
+00:47:52,780 --> 00:48:07,780
+Şimdi bahsedeceğim konuklar, bazı kurullarımızdan çok önemli olabilir.
+
+446
+00:48:07,780 --> 00:48:17,780
+Kesinlikle kategorik veriler var.
+
+447
+00:48:17,780 --> 00:48:30,780
+Hatırladığınız gibi, bu kursu alınan stratejik veri analizcilerimizin kategorik verilerle konuştuğumuzda,
+
+448
+00:48:30,780 --> 00:48:36,780
+kategorik veriyi değerlendirmek için,
+
+449
+00:48:36,780 --> 00:48:46,780
+kategorik veriyi değerlendirmek için,
+
+450
+00:48:46,780 --> 00:48:57,780
+kategorik veriyi değerlendirmek için,
+
+451
+00:48:57,780 --> 00:49:05,780
+kategorik veriyi değerlendirmek için,
+
+452
+00:49:05,780 --> 00:49:15,780
+kategorik veriyi değerlendirmek için,
+
+453
+00:49:15,780 --> 00:49:24,780
+kategorik veriyi değerlendirmek için,
+
+454
+00:49:24,780 --> 00:49:33,780
+kategorik veriyi değerlendirmek için,
+
+455
+00:49:33,780 --> 00:49:42,780
+kategorik veriyi değerlendirmek için,
+
+456
+00:49:42,780 --> 00:50:01,780
+kategorik veriyi değerlendirmek için ve
+
+457
+00:50:00,639 --> 00:50:07,280
+may be modified into an array of numbers by using some properties of
+
+458
+00:50:08,239 --> 00:50:11,199
+dna or amino acid sequences but this is
+
+459
+00:50:15,199 --> 00:50:18,639
+not within our scope at that moment
+
+460
+00:50:18,639 --> 00:50:29,679
+we will be we will be discussing mostly the the algorithmic techniques
+
+461
+00:50:30,960 --> 00:50:37,119
+which can be used on character arrays or strings
+
+462
+00:50:40,000 --> 00:50:46,159
+if we convert this character arrays into numerical arrays then we can extend these
+
+463
+00:50:46,159 --> 00:50:48,480
+techniques to include the also-used
+
+464
+00:50:48,639 --> 00:50:54,319
+sort of algorithms which can be used on these numerical data types
+
+465
+00:50:55,359 --> 00:50:58,879
+but this is beyond the scope of this course at that moment
+
+466
+00:50:59,839 --> 00:51:08,079
+anyway score reflects degree of similarity alignments can be global or local we'll be
+
+467
+00:51:08,079 --> 00:51:16,559
+discussing hopefully today we estimate probability that the alignment occurred by
+
+468
+00:51:18,079 --> 00:51:18,480
+chance
+
+469
+00:51:19,519 --> 00:51:20,000
+this is
+
+470
+00:51:22,639 --> 00:51:23,519
+some sort of
+
+471
+00:51:29,359 --> 00:51:36,000
+statistical analysis if the obtained alignment is significant or not
+
+472
+00:51:39,759 --> 00:51:41,440
+these are overall steps
+
+473
+00:51:46,480 --> 00:51:48,480
+there are four
+
+474
+00:51:48,639 --> 00:51:50,319
+basic alignment methods
+
+475
+00:51:52,079 --> 00:51:54,480
+with visual alignment this is
+
+476
+00:51:59,279 --> 00:52:02,480
+some sort of objective alignment
+
+477
+00:52:03,039 --> 00:52:08,799
+so subjective alignment this is known as dot matrix or dot plot
+
+478
+00:52:09,679 --> 00:52:17,759
+first we will be discussing this technique then we have brute force everybody knows what a brute
+
+479
+00:52:17,759 --> 00:52:18,400
+force is
+
+480
+00:52:19,279 --> 00:52:27,119
+and how it you will see how it is used this is very simple technique then there is dynamic programming
+
+481
+00:52:28,480 --> 00:52:34,480
+this is a very well known algorithm for optimization probably you have studied in
+
+482
+00:52:34,480 --> 00:52:42,159
+some other courses as well and we will discuss this dynamic programming extensively how to use
+
+483
+00:52:43,279 --> 00:52:43,779
+and
+
+484
+00:52:45,279 --> 00:52:45,779
+how to
+
+485
+00:52:46,799 --> 00:52:48,619
+utilizing pairwise
+
+486
+00:52:48,639 --> 00:52:59,199
+sequence matching then we'll use some world-based we will see world-based or
+
+487
+00:52:59,199 --> 00:53:05,099
+heuristic some heuristic approaches for alignment
+
+488
+00:53:05,099 --> 00:53:11,359
+let's start with visual alignment
+
+489
+00:53:11,360 --> 00:53:22,260
+known as dot plots this is one of the basic techniques for determining the alignment between
+
+490
+00:53:22,260 --> 00:53:23,760
+two sequences
+
+491
+00:53:23,760 --> 00:53:37,300
+established in 1970 by gibbs and mcintyre it basically creates a graphical representation
+
+492
+00:53:37,300 --> 00:53:38,920
+of the alignment
+
+493
+00:53:41,360 --> 00:53:53,160
+here we have the red two important references you can download these two references from
+
+494
+00:53:53,160 --> 00:54:03,480
+respective web pages from here i think they are accessible freely if you use university network
+
+495
+00:54:03,480 --> 00:54:09,640
+then you will be able to access them freely anyway and some might be open access
+
+496
+00:54:11,360 --> 00:54:15,099
+although it is quite old paper
+
+497
+00:54:15,099 --> 00:54:25,780
+simply if you just i don't know if link exists or not but
+
+498
+00:54:25,780 --> 00:54:38,260
+let me try to access this
+
+499
+00:54:41,360 --> 00:54:55,940
+if you simply type enter this drawing number you should be able to get the paper
+
+500
+00:54:55,940 --> 00:54:59,660
+okay that's it
+
+501
+00:55:00,000 --> 00:55:10,079
+free access you can access to this paper from home as well so that's the paper original paper
+
+502
+00:55:11,519 --> 00:55:15,119
+you can read about it and i suggest you to read it
+
+503
+00:55:17,360 --> 00:55:25,119
+this is quite old paper but useful about dot plot
+
+504
+00:55:30,880 --> 00:55:36,960
+anyway these are the references and other one is as a again it's published
+
+505
+00:55:37,519 --> 00:55:44,000
+later but it is an extended work of this work
+
+506
+00:55:48,239 --> 00:55:58,000
+let's have a break first and we continue after break
+
+507
+00:56:00,000 --> 00:56:00,239
+you
+
+508
+00:56:30,000 --> 00:56:30,239
+you
+
+509
+00:57:00,000 --> 00:57:00,239
+you
+
+510
+00:57:30,000 --> 00:57:30,239
+you
+
+511
+00:58:00,000 --> 00:58:00,239
+you
+
+512
+00:58:30,000 --> 00:58:30,239
+you
+
+513
+00:59:00,000 --> 00:59:00,239
+you
+
+514
+00:59:30,000 --> 00:59:30,239
+you
+
+515
+01:00:00,000 --> 01:00:29,980
+Altyazı M.K.
+
+516
+01:00:30,000 --> 01:00:59,980
+Altyazı M.K.
+
+517
+01:01:00,000 --> 01:01:29,980
+Altyazı M.K.
+
+518
+01:01:30,000 --> 01:01:59,980
+Altyazı M.K.
+
+519
+01:02:00,000 --> 01:02:29,980
+Altyazı M.K.
+
+520
+01:02:30,000 --> 01:02:59,980
+Altyazı M.K.
+
+521
+01:03:00,000 --> 01:03:29,980
+Altyazı M.K.
+
+522
+01:03:30,000 --> 01:03:59,980
+Altyazı M.K.
+
+523
+01:04:00,000 --> 01:04:29,980
+Altyazı M.K.
+
+524
+01:04:30,000 --> 01:04:59,980
+Altyazı M.K.
+
+525
+01:05:00,000 --> 01:05:29,980
+Altyazı M.K.
+
+526
+01:05:30,000 --> 01:05:59,980
+Altyazı M.K.
+
+527
+01:06:00,000 --> 01:06:29,980
+Altyazı M.K.
+
+528
+01:06:30,000 --> 01:06:59,980
+Altyazı M.K.
+
+529
+01:07:00,000 --> 01:07:29,980
+Altyazı M.K.
+
+530
+01:07:30,000 --> 01:07:59,980
+Altyazı M.K.
+
+531
+01:08:00,000 --> 01:08:29,979
+Altyazı M.K.
+
+532
+01:08:30,000 --> 01:08:59,979
+Altyazı M.K.
+
+533
+01:09:00,000 --> 01:09:29,979
+Altyazı M.K.
+
+534
+01:09:30,000 --> 01:09:59,979
+Altyazı M.K.
+
+535
+01:10:00,319 --> 01:10:07,760
+stopped visual alignment before we proceed to visual alignments
+
+536
+01:10:10,640 --> 01:10:11,359
+i want to
+
+537
+01:10:15,439 --> 01:10:16,159
+go over
+
+538
+01:10:19,039 --> 01:10:24,000
+a couple of examples to clarify the concept so far we have seen
+
+539
+01:10:24,000 --> 01:10:38,000
+in then we continue with dot
+
+540
+01:10:54,000 --> 01:11:08,000
+okay
+
+541
+01:11:15,199 --> 01:11:22,000
+we are here we have a couple of examples relevant to what we have covered so far
+
+542
+01:11:23,600 --> 01:11:24,000
+first
+
+543
+01:11:24,000 --> 01:11:33,680
+one what is the humming distance and levanstein already distance between these two strings
+
+544
+01:11:40,000 --> 01:11:43,199
+you can quickly evaluate this
+
+545
+01:11:46,159 --> 01:11:50,560
+what we need to do first we need to align these two
+
+546
+01:11:50,560 --> 01:12:00,480
+uh say sequences basically these are not sequenced but just strings we need to align them first
+
+547
+01:12:04,080 --> 01:12:09,840
+let me show you how to align here i use table to align just
+
+548
+01:12:11,200 --> 01:12:20,480
+wrote the first one and second one and extended the first one to the length of the second one using
+
+549
+01:12:21,120 --> 01:12:21,600
+gaps
+
+550
+01:12:25,280 --> 01:12:31,039
+here here although i use underscores here then
+
+551
+01:12:32,560 --> 01:12:36,960
+to determine the humming distance what is the humming distance now you can tell me
+
+552
+01:12:40,640 --> 01:12:41,200
+11
+
+553
+01:12:44,880 --> 01:12:49,920
+correct very simple just because we have already determined
+
+554
+01:12:50,560 --> 01:13:04,700
+what is Hamming distance and what about the Levenstein distance is 11 plus all the gaps
+
+555
+01:13:04,700 --> 01:13:19,680
+24 which is correct that was very simple example now the second example second example actually
+
+556
+01:13:19,680 --> 01:13:37,039
+the relevant example which is relevant to the subject we covered as a fundamental theoretical
+
+557
+01:13:37,039 --> 01:13:47,039
+biology or molecular biology and some concepts we discussed as mutation or whatever
+
+558
+01:13:49,360 --> 01:13:49,600
+in
+
+559
+01:13:49,680 --> 01:14:01,680
+this example what we want is just application of central dogma of molecular biology basically
+
+560
+01:14:02,560 --> 01:14:11,600
+with we want to transcribe the following DNA to RNA then use the genetic code to translate it to a
+
+561
+01:14:11,600 --> 01:14:19,360
+sequence of amino acids basically it's a process of creation of protein or
+
+562
+01:14:19,359 --> 01:14:21,839
+just a simple modeling of
+
+563
+01:14:24,559 --> 01:14:31,279
+this central dogma of molecular biology
+
+564
+01:14:35,759 --> 01:14:45,519
+to be able to determine the corresponding amino acid you should follow this the step of this
+
+565
+01:14:45,519 --> 01:14:46,479
+central dogma
+
+566
+01:14:49,359 --> 01:14:59,599
+the first step will be what if you remember
+
+567
+01:15:00,000 --> 01:15:01,359
+Okay, let's go.
+
+568
+01:15:01,539 --> 01:15:02,239
+First step.
+
+569
+01:15:03,420 --> 01:15:11,300
+To transcribe the DNA first, we need to substitute each DNA for its counterpart.
+
+570
+01:15:06,079 --> 01:15:15,359
+so
+
+571
+01:15:15,359 --> 01:15:17,479
+so
+
+572
+01:15:17,479 --> 01:15:17,599
+so
+
+573
+01:15:17,599 --> 01:15:18,639
+so
+
+574
+01:15:18,300 --> 01:15:21,140
+G for C, C for G.
+
+575
+01:15:18,639 --> 01:15:18,719
+so
+
+576
+01:15:18,719 --> 01:15:19,199
+so
+
+577
+01:15:19,199 --> 01:15:19,279
+so
+
+578
+01:15:19,279 --> 01:15:19,299
+so
+
+579
+01:15:19,299 --> 01:15:19,319
+so
+
+580
+01:15:19,319 --> 01:15:19,339
+so
+
+581
+01:15:19,339 --> 01:15:19,359
+so
+
+582
+01:15:21,880 --> 01:15:24,760
+Obtain the complementary DNA.
+
+583
+01:15:25,300 --> 01:15:27,939
+T for A, A for T.
+
+584
+01:15:27,940 --> 01:15:31,580
+If we do this, this is what we get.
+
+585
+01:15:36,640 --> 01:15:38,360
+As any array.
+
+586
+01:15:45,040 --> 01:15:46,600
+Then next step.
+
+587
+01:15:46,600 --> 01:15:46,660
+Next step.
+
+588
+01:15:52,160 --> 01:15:57,920
+All thiamine bases should be converted to U.
+
+589
+01:15:57,940 --> 01:16:05,580
+In this respect, our sequence becomes this one.
+
+590
+01:16:08,440 --> 01:16:11,480
+Then using the genetic code.
+
+591
+01:16:13,120 --> 01:16:17,460
+We just form codons.
+
+592
+01:16:18,460 --> 01:16:25,340
+That means splitting the RNA sequence into triplets.
+
+593
+01:16:25,340 --> 01:16:27,340
+Now, this is DNA sequence.
+
+594
+01:16:27,940 --> 01:16:30,920
+Now, we have RNA sequence.
+
+595
+01:16:33,740 --> 01:16:41,280
+Then finally, we have the RNA sequence.
+
+596
+01:16:42,280 --> 01:16:45,360
+Split it into codons.
+
+597
+01:16:47,960 --> 01:16:52,360
+Three nucleotides.
+
+598
+01:16:52,360 --> 01:16:52,500
+Three nucleotides.
+
+599
+01:16:54,440 --> 01:16:57,340
+The next step.
+
+600
+01:16:57,340 --> 01:17:06,039
+The next step is then look each triplet up in the genetic code table.
+
+601
+01:17:06,039 --> 01:17:24,579
+A, G, U becomes serine, which is simply S, A, U, U becomes isoleucine, which is I, then so on.
+
+602
+01:17:24,579 --> 01:17:26,360
+If we do this.
+
+603
+01:17:26,359 --> 01:17:28,359
+Then we get basically.
+
+604
+01:17:28,359 --> 01:17:29,359
+The DNA sequence.
+
+605
+01:17:29,359 --> 01:17:30,859
+We get basically.
+
+606
+01:17:30,859 --> 01:17:36,859
+This expression or say it's supposed to be an amino acid array.
+
+607
+01:17:36,859 --> 01:17:38,859
+This expression or say it's supposed to be an amino acid array.
+
+608
+01:17:38,859 --> 01:17:40,859
+This expression or say it's supposed to be an amino acid array.
+
+609
+01:17:40,859 --> 01:17:42,859
+Or a protein basically.
+
+610
+01:17:42,859 --> 01:17:47,359
+Of course, this is not a real DNA array or what.
+
+611
+01:17:47,359 --> 01:17:49,359
+This is the authors.
+
+612
+01:17:49,359 --> 01:17:53,359
+Which I took this example from.
+
+613
+01:17:53,359 --> 01:17:55,359
+Name basically.
+
+614
+01:17:55,359 --> 01:17:56,059
+Simon.
+
+615
+01:17:56,060 --> 01:18:02,560
+Now, in this respect.
+
+616
+01:18:02,560 --> 01:18:07,060
+The first homework will be.
+
+617
+01:18:07,060 --> 01:18:12,060
+To code this model.
+
+618
+01:18:12,060 --> 01:18:16,060
+Now you will write a program.
+
+619
+01:18:16,060 --> 01:18:20,060
+Which takes a DNA sequence.
+
+620
+01:18:20,060 --> 01:18:23,060
+And creates.
+
+621
+01:18:23,060 --> 01:18:25,060
+A corresponding amino acid array.
+
+622
+01:18:25,060 --> 01:18:30,260
+binding amino acid sequence converts into an amino acid sequence
+
+623
+01:18:30,260 --> 01:18:45,640
+this is the first homework you should do at home
+
+624
+01:18:45,640 --> 01:18:53,160
+basically you will be modeling the central dogma of molecular biology
+
+625
+01:18:53,159 --> 01:19:05,720
+your program should take any DNA sequence and create an amino acid sequence or a protein
+
+626
+01:19:05,720 --> 01:19:09,260
+basically
+
+627
+01:19:09,260 --> 01:19:19,159
+yes you can do it in python now you have the flexibility of choosing either perl or python
+
+628
+01:19:19,159 --> 01:19:22,159
+okay
+
+629
+01:19:22,159 --> 01:19:23,159
+okay
+
+630
+01:19:23,159 --> 01:19:39,199
+now genetic code is this one okay what we see this code i mentioned that these amino
+
+631
+01:19:39,199 --> 01:19:47,380
+acid sequence are degenerative we'll see an example in a minute actually the because
+
+632
+01:19:47,380 --> 01:19:48,380
+we have
+
+633
+01:19:48,380 --> 01:19:53,139
+four bases actually we have total
+
+634
+01:19:53,140 --> 01:19:59,980
+64 possibilities for these triplets but because
+
+635
+01:20:00,000 --> 01:20:05,800
+we only use 20 letters
+
+636
+01:20:05,800 --> 01:20:08,020
+20 amino acids
+
+637
+01:20:08,020 --> 01:20:10,640
+this redundant
+
+638
+01:20:10,640 --> 01:20:15,720
+sometimes as we see here for example
+
+639
+01:20:15,720 --> 01:20:19,600
+these two codons
+
+640
+01:20:19,600 --> 01:20:23,939
+will result in the same amino acid
+
+641
+01:20:23,939 --> 01:20:27,479
+although chemically they are different
+
+642
+01:20:27,480 --> 01:20:29,720
+but they result
+
+643
+01:20:29,720 --> 01:20:31,400
+this one for example
+
+644
+01:20:31,400 --> 01:20:36,140
+four different triplets will result in the same
+
+645
+01:20:36,140 --> 01:20:39,080
+amino acid
+
+646
+01:20:39,080 --> 01:20:42,080
+same letter
+
+647
+01:20:42,080 --> 01:20:44,800
+and this one as well
+
+648
+01:20:44,800 --> 01:20:51,660
+this basically explains
+
+649
+01:20:51,660 --> 01:20:53,960
+or corresponds to
+
+650
+01:20:53,960 --> 01:20:55,640
+variability of the
+
+651
+01:20:55,640 --> 01:20:57,460
+amino acids
+
+652
+01:20:57,480 --> 01:20:59,800
+cells within our body
+
+653
+01:20:59,800 --> 01:21:01,780
+although they have the
+
+654
+01:21:01,780 --> 01:21:03,260
+exactly the same
+
+655
+01:21:03,260 --> 01:21:05,380
+materials
+
+656
+01:21:05,380 --> 01:21:07,140
+they use same materials
+
+657
+01:21:07,140 --> 01:21:08,720
+same amino acids
+
+658
+01:21:08,720 --> 01:21:10,620
+but they result in a different
+
+659
+01:21:10,620 --> 01:21:13,440
+cells
+
+660
+01:21:13,440 --> 01:21:15,740
+this is how happens
+
+661
+01:21:15,740 --> 01:21:17,400
+basically how it happens
+
+662
+01:21:17,400 --> 01:21:20,860
+in this third example
+
+663
+01:21:20,860 --> 01:21:23,580
+just
+
+664
+01:21:23,580 --> 01:21:25,160
+we rotate
+
+665
+01:21:25,160 --> 01:21:26,800
+the given sequence
+
+666
+01:21:26,800 --> 01:21:27,300
+sequence
+
+667
+01:21:27,300 --> 01:21:30,480
+in example one
+
+668
+01:21:30,480 --> 01:21:31,320
+to the left
+
+669
+01:21:31,320 --> 01:21:32,460
+by one residue
+
+670
+01:21:32,460 --> 01:21:35,000
+and redo the translation
+
+671
+01:21:35,000 --> 01:21:35,400
+and
+
+672
+01:21:35,400 --> 01:21:38,560
+I expect you to explain
+
+673
+01:21:38,560 --> 01:21:39,360
+what happened
+
+674
+01:21:39,360 --> 01:21:43,640
+let's go over
+
+675
+01:21:43,640 --> 01:21:45,640
+new sequence
+
+676
+01:21:45,640 --> 01:21:46,640
+after rotation
+
+677
+01:21:46,640 --> 01:21:47,739
+is this one
+
+678
+01:21:47,739 --> 01:21:48,560
+at the beginning
+
+679
+01:21:48,560 --> 01:21:49,659
+it was T
+
+680
+01:21:49,659 --> 01:21:51,340
+when I rotate
+
+681
+01:21:51,340 --> 01:21:51,860
+T
+
+682
+01:21:51,860 --> 01:21:54,940
+became
+
+683
+01:21:54,940 --> 01:21:56,220
+the
+
+684
+01:21:56,220 --> 01:21:57,180
+the
+
+685
+01:21:57,180 --> 01:21:57,279
+the
+
+686
+01:21:57,300 --> 01:21:58,300
+,
+
+687
+01:21:58,300 --> 01:22:00,579
+from
+
+688
+01:22:00,579 --> 01:22:01,380
+right to left
+
+689
+01:22:01,380 --> 01:22:02,260
+became the
+
+690
+01:22:02,260 --> 01:22:03,920
+first letter
+
+691
+01:22:03,920 --> 01:22:05,380
+and
+
+692
+01:22:05,380 --> 01:22:08,840
+new sequence is this one
+
+693
+01:22:08,840 --> 01:22:11,400
+just to remind you the
+
+694
+01:22:11,400 --> 01:22:13,800
+original sequence
+
+695
+01:22:13,800 --> 01:22:15,000
+it was T
+
+696
+01:22:15,000 --> 01:22:15,500
+C
+
+697
+01:22:15,500 --> 01:22:15,800
+A
+
+698
+01:22:15,800 --> 01:22:16,760
+T
+
+699
+01:22:16,760 --> 01:22:18,880
+that was the original
+
+700
+01:22:18,880 --> 01:22:20,600
+but new
+
+701
+01:22:20,600 --> 01:22:24,340
+sequence starts with
+
+702
+01:22:24,340 --> 01:22:25,079
+C
+
+703
+01:22:25,079 --> 01:22:25,520
+A
+
+704
+01:22:25,520 --> 01:22:25,820
+T
+
+705
+01:22:25,820 --> 01:22:26,320
+A
+
+706
+01:22:26,320 --> 01:22:27,300
+okay
+
+707
+01:22:27,300 --> 01:22:29,619
+now if we repeat
+
+708
+01:22:29,619 --> 01:22:31,860
+same procedures as we did in
+
+709
+01:22:31,860 --> 01:22:36,340
+example two
+
+710
+01:22:36,340 --> 01:22:40,500
+now we have
+
+711
+01:22:40,500 --> 01:22:44,260
+a dramatically changed result
+
+712
+01:22:44,260 --> 01:22:47,539
+such as this one V L C K T and
+
+713
+01:22:47,539 --> 01:22:49,619
+a stop codon
+
+714
+01:22:49,619 --> 01:22:52,180
+then if we continue with the translation
+
+715
+01:22:52,180 --> 01:22:53,060
+we get
+
+716
+01:22:53,060 --> 01:22:56,300
+A V A K P Q something
+
+717
+01:22:56,300 --> 01:22:57,300
+A V A K P Q something
+
+718
+01:22:57,300 --> 01:23:00,300
+completely different than the previous one
+
+719
+01:23:00,300 --> 01:23:01,300
+what happened
+
+720
+01:23:01,300 --> 01:23:19,300
+I will upload the first homework on my web page
+
+721
+01:23:19,300 --> 01:23:24,260
+the question is what happened here
+
+722
+01:23:24,260 --> 01:23:25,300
+what happened here
+
+723
+01:23:25,300 --> 01:23:26,300
+the question is what happened here
+
+724
+01:23:26,300 --> 01:23:27,300
+the question is what happened here
+
+725
+01:23:27,300 --> 01:23:33,020
+the question here
+
+726
+01:23:33,020 --> 01:23:37,300
+the question is what happened here
+
+727
+01:23:37,300 --> 01:23:40,659
+the question is what happened here
+
+728
+01:23:40,659 --> 01:23:54,300
+anybody can guess
+
+729
+01:23:54,300 --> 01:23:56,300
+well a mutation happened
+
+730
+01:23:56,300 --> 01:23:56,340
+well a mutation happened
+
+731
+01:23:56,340 --> 01:23:57,300
+well a mutation happened which is known as
+
+732
+01:23:57,300 --> 01:24:11,619
+frame shift basically one letter is shifted and this is known as frame shift rather than
+
+733
+01:24:11,619 --> 01:24:21,480
+we could have obtained completely different result by if we had changed some some some
+
+734
+01:24:21,480 --> 01:24:30,600
+other letters as well sometimes we obtain a very minor change sometimes we obtain a great dramatic
+
+735
+01:24:30,600 --> 01:24:42,500
+change basically mutation in terms of the effects there are three types of mutations one is silent
+
+736
+01:24:42,500 --> 01:24:50,460
+mutation this change basically does not have any effect as
+
+737
+01:24:50,460 --> 01:24:51,460
+you can see
+
+738
+01:24:51,460 --> 01:24:59,460
+as we see in this table there are quite few variations and this sort of variations may
+
+739
+01:24:59,460 --> 01:25:00,460
+not have
+
+740
+01:25:00,000 --> 01:25:10,159
+an effect on the chemistry and the functionality of the structure and functionality of the
+
+741
+01:25:12,079 --> 01:25:18,319
+cell say but sometimes there is good mutation
+
+742
+01:25:23,680 --> 01:25:28,800
+but this is extensively used for example to increase the
+
+743
+01:25:30,079 --> 01:25:33,199
+shared life of say tomato
+
+744
+01:25:35,760 --> 01:25:42,720
+many tomatoes or many other vegetables are manipulated
+
+745
+01:25:44,800 --> 01:25:51,039
+to increase resistance to certain in the insect or certain type of
+
+746
+01:25:51,760 --> 01:25:59,680
+bacteria or to increase life of this vegetable they are used as well the
+
+747
+01:26:00,640 --> 01:26:04,159
+genetic modifications are made on purpose
+
+748
+01:26:07,359 --> 01:26:08,000
+and this is
+
+749
+01:26:10,479 --> 01:26:18,960
+some sort of this is although this is disputable but some sort of useful mutation and there is a
+
+750
+01:26:23,039 --> 01:26:26,640
+deadly mutation which is not desired
+
+751
+01:26:28,239 --> 01:26:28,739
+uh
+
+752
+01:26:30,000 --> 01:26:36,479
+this case the mutation is dramatic in this example and there are mutations
+
+753
+01:26:36,479 --> 01:26:44,399
+which results in a dramatic change in the functional and structural characteristic of
+
+754
+01:26:46,319 --> 01:26:50,000
+cell or tissue whatever we call them what
+
+755
+01:26:54,800 --> 01:26:57,760
+the cancer basically it results in a
+
+756
+01:27:00,960 --> 01:27:02,000
+destructive
+
+757
+01:27:04,880 --> 01:27:09,119
+it's a destructive result and this is bad mutation
+
+758
+01:27:11,760 --> 01:27:20,079
+otherwise in terms of the what happens to this character array is the first insertion deletion
+
+759
+01:27:27,439 --> 01:27:28,239
+replacement
+
+760
+01:27:30,000 --> 01:27:36,800
+and some frame shift in this example we use this frame shift example okay
+
+761
+01:27:42,159 --> 01:27:42,960
+i will also
+
+762
+01:27:47,520 --> 01:27:50,640
+you will find the deadline in the document i will upload
+
+763
+01:27:54,079 --> 01:27:58,479
+okay this is an this was an example to mutation as well
+
+764
+01:28:00,640 --> 01:28:00,880
+uh
+
+765
+01:28:02,880 --> 01:28:11,199
+fourth example is a reverse option i i mentioned that is in amino acid table there are redundancies
+
+766
+01:28:11,840 --> 01:28:19,199
+and three four different codons codes for the same amino acid and this is
+
+767
+01:28:20,319 --> 01:28:28,640
+an example showing this let's assume that we have an amino acid sequence given as di k
+
+768
+01:28:30,880 --> 01:28:38,319
+the question is determine the possible dna sequences which results in the synthesis of the given amino acid sequence
+
+769
+01:28:39,439 --> 01:28:45,840
+of course to do this you will be using the genetic code table this is again a simple concept
+
+770
+01:28:47,279 --> 01:28:59,439
+if we use this table and place all possible codons representing the same amino acid that we saw in the first scenario
+
+771
+01:29:00,000 --> 01:29:14,000
+And we'll have all the possible DNA sequences resulting in the same protein structure or amino acid sequence.
+
+772
+01:29:15,619 --> 01:29:23,680
+So that's for the possible triplets or codons are GAU and GAC.
+
+773
+01:29:23,680 --> 01:29:26,319
+For I, there are three options.
+
+774
+01:29:26,899 --> 01:29:28,800
+For K, there are two options.
+
+775
+01:29:28,800 --> 01:29:40,420
+So by combination of all these, we can get the final results.
+
+776
+01:29:40,420 --> 01:29:56,140
+Of course, I just work back to reversed process.
+
+777
+01:29:58,800 --> 01:29:59,340
+So by combination of all these, we can get the final results.
+
+778
+01:29:59,340 --> 01:30:00,000
+So by combination of all these, we can get the final results.
+
+779
+01:30:00,000 --> 01:30:15,119
+Reverse dogma of molecular biology, first we obtain the RNA, then the finally DNA sequence.
+
+780
+01:30:15,119 --> 01:30:28,720
+These are possible DNA sequences resulting in the given amino acid sequence.
+
+781
+01:30:28,720 --> 01:30:34,000
+Total 12 DNA sequences.
+
+782
+01:30:34,000 --> 01:30:38,640
+Okay I stop examples here.
+
+783
+01:30:38,640 --> 01:30:42,720
+And continue with.
+
+784
+01:30:42,720 --> 01:30:44,720
+Okay.
+
+785
+01:30:44,720 --> 01:30:50,280
+Visual alignment.
+
+786
+01:30:50,280 --> 01:31:03,720
+Any questions so far?
+
+787
+01:31:03,720 --> 01:31:11,760
+I will upload the relevant document on my web page.
+
+788
+01:31:11,760 --> 01:31:13,760
+Okay.
+
+789
+01:31:13,760 --> 01:31:14,680
+Okay.
+
+790
+01:31:14,680 --> 01:31:14,720
+Okay.
+
+791
+01:31:14,720 --> 01:31:24,039
+In visual alignment, basically first, as a first step, we form a matrix.
+
+792
+01:31:25,640 --> 01:31:27,960
+Which is shown here as an example.
+
+793
+01:31:28,680 --> 01:31:32,920
+I am assuming that we have two sequences length of three.
+
+794
+01:31:34,680 --> 01:31:39,720
+In this matrix, we have obviously a row and a column.
+
+795
+01:31:40,360 --> 01:31:43,320
+Then we have the corresponding cells.
+
+796
+01:31:44,720 --> 01:31:54,199
+The in-row, we place one of the seconds in column, we place the other seconds.
+
+797
+01:31:55,240 --> 01:31:58,760
+Characters in one sequence, characters in the other sequence.
+
+798
+01:31:59,320 --> 01:32:04,119
+Of course, this could be a DNA sequence or amino acid sequence.
+
+799
+01:32:04,840 --> 01:32:09,240
+Then as a next step, we just go over one by one.
+
+800
+01:32:10,520 --> 01:32:11,240
+I can.
+
+801
+01:32:11,240 --> 01:32:11,720
+Okay.
+
+802
+01:32:11,720 --> 01:32:12,720
+Okay.
+
+803
+01:32:12,720 --> 01:32:13,720
+Okay.
+
+804
+01:32:13,720 --> 01:32:14,119
+Okay.
+
+805
+01:32:14,119 --> 01:32:14,600
+Okay.
+
+806
+01:32:14,600 --> 01:32:14,680
+Okay.
+
+807
+01:32:14,720 --> 01:32:15,720
+Okay.
+
+808
+01:32:15,720 --> 01:32:16,720
+Okay.
+
+809
+01:32:16,720 --> 01:32:17,720
+Okay.
+
+810
+01:32:17,720 --> 01:32:18,720
+Okay.
+
+811
+01:32:18,720 --> 01:32:19,720
+Okay.
+
+812
+01:32:19,720 --> 01:32:20,720
+Okay.
+
+813
+01:32:20,720 --> 01:32:21,720
+Okay.
+
+814
+01:32:21,720 --> 01:32:22,720
+Okay.
+
+815
+01:32:22,720 --> 01:32:23,720
+Okay.
+
+816
+01:32:23,720 --> 01:32:24,720
+Okay.
+
+817
+01:32:24,720 --> 01:32:25,720
+Okay.
+
+818
+01:32:25,720 --> 01:32:26,720
+Okay.
+
+819
+01:32:26,720 --> 01:32:27,720
+Okay.
+
+820
+01:32:27,720 --> 01:32:28,720
+Okay.
+
+821
+01:32:28,720 --> 01:32:29,720
+Okay.
+
+822
+01:32:29,720 --> 01:32:30,720
+Okay.
+
+823
+01:32:30,720 --> 01:32:31,720
+Okay.
+
+824
+01:32:31,720 --> 01:32:32,720
+Okay.
+
+825
+01:32:32,720 --> 01:32:33,720
+Okay.
+
+826
+01:32:33,720 --> 01:32:34,720
+Okay.
+
+827
+01:32:34,720 --> 01:32:35,720
+Okay.
+
+828
+01:32:35,720 --> 01:32:36,720
+Okay.
+
+829
+01:32:36,720 --> 01:32:37,720
+Okay.
+
+830
+01:32:37,720 --> 01:32:38,720
+Okay.
+
+831
+01:32:38,720 --> 01:32:39,720
+Okay.
+
+832
+01:32:39,720 --> 01:32:40,720
+Okay.
+
+833
+01:32:40,720 --> 01:32:41,720
+Okay.
+
+834
+01:32:41,720 --> 01:32:42,720
+Okay.
+
+835
+01:32:42,720 --> 01:32:43,720
+Okay.
+
+836
+01:32:43,720 --> 01:32:44,720
+Okay.
+
+837
+01:32:44,720 --> 01:32:59,920
+mismatch and there is a match mismatch mismatch and match basically dot pot is this not more
+
+838
+01:32:59,920 --> 01:33:20,640
+than this anyway very simple we continue filling i already filled in when we look through each row
+
+839
+01:33:20,640 --> 01:33:29,600
+and each cells until we go to the bottom of the cell then we have this in this table
+
+840
+01:33:30,480 --> 01:33:33,199
+i did not place anything if there is a mismatch
+
+841
+01:33:35,119 --> 01:33:39,199
+you can use a coloring schemes for example in match you
+
+842
+01:33:39,199 --> 01:33:46,480
+you place that color in mismatch you place blue color doesn't matter but
+
+843
+01:33:47,520 --> 01:33:55,680
+you should be able to create a picture or a pattern we'll be discussing what these patterns
+
+844
+01:33:56,800 --> 01:33:59,680
+will mean or how to interpret them them
+
+845
+01:33:59,680 --> 01:33:59,920
+creating patterns in a way that we perfectly know as Scikit-learn allows us to use those terms
+
+846
+01:33:59,920 --> 01:34:13,680
+of dot plot or dot matrix is very simple very easy let me delete these
+
+847
+01:34:13,680 --> 01:34:28,779
+annotations clear all drawings here a more meaningful example with slightly
+
+848
+01:34:28,779 --> 01:34:40,960
+longer DNA sequences this is an animation it will just go over the old
+
+849
+01:34:40,960 --> 01:34:47,539
+cells then create a dot plot
+
+850
+01:34:57,779 --> 01:34:58,779
+okay
+
+851
+01:34:58,779 --> 01:35:01,779
+the first
+
+852
+01:35:00,319 --> 01:35:11,680
+pattern we see here this one this actually reveals a certain degree of similarity here there is
+
+853
+01:35:12,880 --> 01:35:19,520
+a similarity pattern as well here there is one here there is one i can also say that
+
+854
+01:35:19,520 --> 01:35:25,439
+here there is a similarity pattern here as well but a reverse in a reverse manner
+
+855
+01:35:25,440 --> 01:35:36,960
+uh here there is a similarity but reverse manner just for example a g g
+
+856
+01:35:38,880 --> 01:35:52,480
+this corresponds a g g if we look at from back to from right to left here and this one is from if
+
+857
+01:35:53,360 --> 01:35:55,360
+we align these two
+
+858
+01:35:55,440 --> 01:36:02,400
+to from right to left just there is a reversed pattern there as well this one for example
+
+859
+01:36:04,880 --> 01:36:06,320
+let me annotate again
+
+860
+01:36:09,920 --> 01:36:13,040
+just to make sure that you see this pattern
+
+861
+01:36:16,080 --> 01:36:23,200
+there's a pattern here there is a pattern here there is a pattern here as well just complete
+
+862
+01:36:25,680 --> 01:36:34,000
+but a g and we have g a here a g g a reverse pattern okay
+
+863
+01:36:41,440 --> 01:36:42,400
+let me continue
+
+864
+01:36:45,440 --> 01:36:52,560
+in well by using this technique you can compare even you can compare books if
+
+865
+01:36:53,840 --> 01:36:55,280
+uh well
+
+866
+01:36:55,440 --> 01:37:03,920
+this this is also useful in many other fields if you want to determine if there
+
+867
+01:37:03,920 --> 01:37:07,760
+is a copy in a book or whatever or
+
+868
+01:37:12,880 --> 01:37:21,520
+you can also use entire books in one line will be of course in text format will be one book and in
+
+869
+01:37:22,320 --> 01:37:25,360
+the column in in row
+
+870
+01:37:25,440 --> 01:37:31,360
+one book in column the other book and you can compare it or you can self compare to see
+
+871
+01:37:31,360 --> 01:37:42,240
+repetitions i will show you some examples here is an example you can identify the similarities here
+
+872
+01:37:44,400 --> 01:37:52,080
+can anybody tell me the or can you interpret the similarity of these two sequences can anybody tell
+
+873
+01:37:52,080 --> 01:37:52,580
+me
+
+874
+01:37:56,400 --> 01:37:59,360
+how similar these two sequences are
+
+875
+01:38:09,360 --> 01:38:15,360
+yeah okay these are the exactly the same this is the self dot plot
+
+876
+01:38:17,760 --> 01:38:25,280
+because the clue for this there is an uninterrupted line
+
+877
+01:38:25,440 --> 01:38:36,640
+between top left corner and bottom right corner there is a continuous line here
+
+878
+01:38:37,360 --> 01:38:44,000
+and this shows that actually this is the self-similarity the exactly the same pattern
+
+879
+01:38:44,720 --> 01:38:50,720
+these two sequences are the same but we see some other many
+
+880
+01:38:52,800 --> 01:38:54,000
+random matches
+
+881
+01:38:54,000 --> 01:38:57,199
+yes there are some patterns as well but
+
+882
+01:38:58,239 --> 01:39:02,319
+such as this one there is a pattern here there is a pattern here
+
+883
+01:39:02,880 --> 01:39:09,119
+there is a pattern you repeated patterns but there are some random matches here
+
+884
+01:39:10,960 --> 01:39:13,760
+this is known as noise in dot plot
+
+885
+01:39:16,960 --> 01:39:21,680
+the in reality what we expect is just one line from
+
+886
+01:39:21,680 --> 01:39:31,200
+from the upper left corner to the bottom right corner a line
+
+887
+01:39:31,200 --> 01:39:41,900
+okay so let's see this is an example in a different field an entire software module
+
+888
+01:39:41,900 --> 01:39:51,119
+of a telecommunication switch about two million lines of c this is self dot lot you can see
+
+889
+01:39:51,119 --> 01:39:59,439
+just a one line because there are two million codes a big text file if written in c
+
+890
+01:40:00,000 --> 01:40:08,000
+you see quite a lot of patterns here and these patterns can be interpreted for example
+
+891
+01:40:08,000 --> 01:40:14,039
+there are how many repeated codes how many similar codes in different lines or whatever
+
+892
+01:40:14,039 --> 01:40:22,720
+this is extensively used to have an immediate visual information about the structure of the
+
+893
+01:40:22,720 --> 01:40:30,240
+written code in this respect there are many similar fields here this one this one this one
+
+894
+01:40:30,240 --> 01:40:38,760
+that means they are probably the same codes repeated this one and this one for example
+
+895
+01:40:38,760 --> 01:40:40,600
+anyway this is an example
+
+896
+01:40:40,600 --> 01:40:51,800
+this is just out of bioinformatics field but this is extensively used anyway for similarity search
+
+897
+01:40:52,720 --> 01:41:01,980
+just to mention types of mutations before further discussing dot plot
+
+898
+01:41:01,980 --> 01:41:09,000
+if you mentioned insertions these are mutations in which extra base pairs are inserted into a new
+
+899
+01:41:09,000 --> 01:41:15,440
+place in the dna there are deletions which are the mutations
+
+900
+01:41:15,440 --> 01:41:21,699
+in a section of dna
+
+901
+01:41:21,699 --> 01:41:22,699
+and
+
+902
+01:41:22,720 --> 01:41:27,640
+that a part of section is lost or deleted somehow
+
+903
+01:41:29,240 --> 01:41:38,199
+substitution is a mutation that exchanges one base for another a becomes c or there are
+
+904
+01:41:38,199 --> 01:41:43,800
+different type of mutations we will talk about them later
+
+905
+01:41:46,520 --> 01:41:52,199
+frame shift which i have already described or in in an example
+
+906
+01:41:52,720 --> 01:42:01,640
+this is basically this is pro because the protein coding dna is divided into codons three
+
+907
+01:42:01,640 --> 01:42:10,840
+bases long insertions and deletions can alter a gene so that its message is no longer correctly passed
+
+908
+01:42:11,720 --> 01:42:20,920
+biochemically as well so this is known as frame shift we have already seen the effect of frame
+
+909
+01:42:20,920 --> 01:42:22,400
+shift in example we have already seen the effect of frame shift in example we have already seen the effect of frame shift in example
+
+910
+01:42:22,720 --> 01:42:23,600
+and
+
+911
+01:42:24,280 --> 01:42:26,760
+actually for this moment we are looking at two or three對啊
+
+912
+01:42:26,760 --> 01:42:29,600
+of which we have been offered a number here
+
+913
+01:42:38,400 --> 01:42:43,440
+after boring these information now let's see what information we can
+
+914
+01:42:44,440 --> 01:42:47,760
+obtain from dot plots
+
+915
+01:42:49,460 --> 01:42:52,159
+ah it reveals the presence of insertions or deletions
+
+916
+01:42:52,720 --> 01:43:02,720
+Inverted repeats, as well, self-comparison can reveal several features.
+
+917
+01:43:02,720 --> 01:43:16,720
+First, similarity between chromosomes, tandem genes, repeated domains in protein sequence, regions of low sequence complexity.
+
+918
+01:43:16,720 --> 01:43:25,720
+Tandem has meaning of some sort of repeated, but not exactly.
+
+919
+01:43:25,720 --> 01:43:32,720
+Tandem is a type of bicycle with two cyclists driving together.
+
+920
+01:43:32,720 --> 01:43:40,720
+It's one meaning.
+
+921
+01:43:40,720 --> 01:43:45,720
+Here, probably sequence complexity needs to be explained.
+
+922
+01:43:45,720 --> 01:43:46,720
+And,
+
+923
+01:43:46,720 --> 01:43:55,720
+let me simply mention sequence complexity and continuity information obtained from a dot plot.
+
+924
+01:43:55,720 --> 01:44:04,720
+The compositional complexity of a sequence is important in many aspects.
+
+925
+01:44:04,720 --> 01:44:12,720
+There are over 30 different definitions of complexity in modern science.
+
+926
+01:44:12,720 --> 01:44:15,720
+This is very much related to information theory, basically.
+
+927
+01:44:15,720 --> 01:44:16,720
+If you have,
+
+928
+01:44:16,720 --> 01:44:22,720
+an array of characters or array of codes or whatever,
+
+929
+01:44:22,720 --> 01:44:26,720
+you can talk about the complexity of this code in terms of,
+
+930
+01:44:26,720 --> 01:44:32,720
+anybody can remember the measure of the complexity of the,
+
+931
+01:44:32,720 --> 01:44:35,720
+an information piece,
+
+932
+01:44:35,720 --> 01:44:38,720
+in the context of information theory.
+
+933
+01:44:46,720 --> 01:44:54,720
+Anybody knows this?
+
+934
+01:44:54,720 --> 01:44:58,720
+I tell you the name who developed this theory, Shannon.
+
+935
+01:44:58,720 --> 01:45:00,720
+Shannon.
+
+936
+01:45:00,000 --> 01:45:08,439
+One of the metrics used is what?
+
+937
+01:45:00,720 --> 01:45:02,720
+Shannon.
+
+938
+01:45:02,720 --> 01:45:04,720
+Shannon.
+
+939
+01:45:04,720 --> 01:45:06,720
+Shannon.
+
+940
+01:45:06,720 --> 01:45:08,720
+Shannon.
+
+941
+01:45:08,439 --> 01:45:12,899
+Entropy for example.
+
+942
+01:45:08,720 --> 01:45:10,720
+Shannon.
+
+943
+01:45:10,720 --> 01:45:12,720
+Shannon.
+
+944
+01:45:12,720 --> 01:45:14,720
+Shannon.
+
+945
+01:45:12,899 --> 01:45:21,539
+Entropy can be used to give an idea about the complexity of a string or a character
+
+946
+01:45:14,720 --> 01:45:15,720
+Shannon.
+
+947
+01:45:21,539 --> 01:45:30,800
+array or any array basically, carrying an information.
+
+948
+01:45:30,800 --> 01:45:40,399
+It doesn't have to be a character array, numerical array as well.
+
+949
+01:45:40,399 --> 01:45:48,640
+Entropy is measure of randomness, how pattern changes.
+
+950
+01:45:48,640 --> 01:45:51,060
+But here we will.
+
+951
+01:45:51,060 --> 01:45:51,519
+I will be.
+
+952
+01:45:51,520 --> 01:45:58,140
+We describe being just one of the methods.
+
+953
+01:45:58,140 --> 01:46:01,660
+We know that the.
+
+954
+01:46:01,660 --> 01:46:04,120
+Our.
+
+955
+01:46:04,120 --> 01:46:07,580
+Sequences are composed of some characters.
+
+956
+01:46:07,580 --> 01:46:10,600
+If DNA sequence, we have four characters.
+
+957
+01:46:10,600 --> 01:46:21,040
+If amino acid sequence 20 characters and this compositional complexity tells us about.
+
+958
+01:46:21,039 --> 01:46:27,300
+The nature of this array in terms of the repetitiveness or.
+
+959
+01:46:27,300 --> 01:46:29,800
+Irregularity or whatever.
+
+960
+01:46:29,800 --> 01:46:35,939
+Repetitive sequences over a given finite alphabet a are considered simple.
+
+961
+01:46:35,939 --> 01:46:40,819
+Non repetitive sequences over a given finite alphabet.
+
+962
+01:46:40,819 --> 01:46:44,220
+A are considered complex.
+
+963
+01:46:44,220 --> 01:46:48,039
+Random sequences are considered maximally complex.
+
+964
+01:46:48,039 --> 01:46:49,039
+In random.
+
+965
+01:46:49,039 --> 01:46:50,039
+In random.
+
+966
+01:46:50,039 --> 01:46:51,039
+In random.
+
+967
+01:46:51,039 --> 01:46:53,260
+There is no pattern at all.
+
+968
+01:46:53,260 --> 01:46:53,739
+The.
+
+969
+01:46:53,739 --> 01:46:55,739
+The numerical value of compositional complexity of a string of symbols depends on the both
+
+970
+01:46:55,739 --> 01:46:56,739
+both the choice of alphabet and the frequencies we.
+
+971
+01:46:56,739 --> 01:47:03,939
+Which specific letters are used.
+
+972
+01:47:03,939 --> 01:47:13,720
+Applications of compositional complexity, the sequence on exem ventilation increases
+
+973
+01:47:13,720 --> 01:47:16,340
+the face.
+
+974
+01:47:16,340 --> 01:47:17,539
+So here you are.
+
+975
+01:47:17,539 --> 01:47:19,619
+Sample minutes will allow for the liquid.
+
+976
+01:47:19,619 --> 01:47:20,560
+Now you can see.
+
+977
+01:47:20,560 --> 01:47:25,480
+include the functionally or structurally relevant segmenting
+
+978
+01:47:25,480 --> 01:47:27,660
+of nucleotide and protein sequences.
+
+979
+01:47:29,320 --> 01:47:35,580
+Genome sequence annotation, finding new functionally relevant properties
+
+980
+01:47:35,580 --> 01:47:40,640
+through studies of large collection of functionally equivalent sequence data.
+
+981
+01:47:42,100 --> 01:47:47,380
+One of the definitions for compositional complexity is the following.
+
+982
+01:47:47,980 --> 01:47:49,520
+It is a simple equation.
+
+983
+01:47:49,520 --> 01:47:59,960
+Now, in this equation, K is compositional complexity of its metric of the seconds.
+
+984
+01:48:00,460 --> 01:48:03,760
+L is the length of seconds.
+
+985
+01:48:04,860 --> 01:48:07,640
+K is the base used.
+
+986
+01:48:09,320 --> 01:48:15,620
+If we have DNA sequence, K should be what?
+
+987
+01:48:19,520 --> 01:48:27,320
+Anybody has an idea?
+
+988
+01:48:27,320 --> 01:48:30,000
+For DNA sequence, K should be what?
+
+989
+01:48:38,020 --> 01:48:40,680
+It is basically the base.
+
+990
+01:48:41,900 --> 01:48:44,740
+In DNA, what base is used?
+
+991
+01:48:48,580 --> 01:48:48,740
+For?
+
+992
+01:48:48,740 --> 01:48:49,420
+For?
+
+993
+01:48:49,420 --> 01:48:49,440
+For?
+
+994
+01:48:49,520 --> 01:48:50,000
+Exactly.
+
+995
+01:48:50,000 --> 01:48:58,900
+If the sequence you want to determine the compositional complexity is a DNA sequence,
+
+996
+01:48:59,240 --> 01:49:01,340
+then K must be 4.
+
+997
+01:49:02,220 --> 01:49:07,680
+If it is an amino acid sequence, it must be 20.
+
+998
+01:49:08,100 --> 01:49:13,240
+If it is your name, this K should be what?
+
+999
+01:49:13,240 --> 01:49:13,300
+What?
+
+1000
+01:49:18,640 --> 01:49:19,440
+Compositional.
+
+1001
+01:49:19,440 --> 01:49:19,500
+Compositional.
+
+1002
+01:49:19,560 --> 01:49:21,020
+What is the compositional complexity of your name?
+
+1003
+01:49:21,020 --> 01:49:21,039
+What is the compositional complexity of your name?
+
+1004
+01:49:34,600 --> 01:49:36,000
+Anybody has an answer?
+
+1005
+01:49:36,180 --> 01:49:37,199
+29, exactly.
+
+1006
+01:49:37,619 --> 01:49:40,840
+Because your name is composed of Turkish letters.
+
+1007
+01:49:42,220 --> 01:49:44,000
+Some may not be, but mostly.
+
+1008
+01:49:45,420 --> 01:49:48,100
+So, Turkish letter says...
+
+1009
+01:49:48,100 --> 01:49:49,479
+29, exactly.
+
+1010
+01:49:49,480 --> 01:50:00,000
+29 characters so it should be 29 and I is
+
+1011
+01:50:00,000 --> 01:50:03,920
+the one of the characters
+
+1012
+01:50:03,920 --> 01:50:06,180
+number of the
+
+1013
+01:50:06,180 --> 01:50:08,500
+one of the characters
+
+1014
+01:50:08,500 --> 01:50:10,039
+depending on the seconds.
+
+1015
+01:50:10,899 --> 01:50:11,500
+For example,
+
+1016
+01:50:12,319 --> 01:50:13,779
+number of A's,
+
+1017
+01:50:14,260 --> 01:50:16,520
+number of C or number of G
+
+1018
+01:50:16,520 --> 01:50:17,539
+in
+
+1019
+01:50:17,539 --> 01:50:19,800
+DNA sequences.
+
+1020
+01:50:20,899 --> 01:50:21,039
+Okay.
+
+1021
+01:50:23,039 --> 01:50:23,539
+And
+
+1022
+01:50:23,539 --> 01:50:26,180
+here I included several
+
+1023
+01:50:26,180 --> 01:50:27,500
+references
+
+1024
+01:50:27,500 --> 01:50:30,020
+about this compositional
+
+1025
+01:50:30,020 --> 01:50:32,119
+complexity of specifically
+
+1026
+01:50:32,119 --> 01:50:33,439
+DNA sequences.
+
+1027
+01:50:34,619 --> 01:50:35,899
+This is a general
+
+1028
+01:50:35,899 --> 01:50:37,960
+concept in information theory
+
+1029
+01:50:37,960 --> 01:50:40,100
+basically, but it is also used in
+
+1030
+01:50:40,100 --> 01:50:42,239
+bioinformatics. These three
+
+1031
+01:50:42,239 --> 01:50:44,600
+papers,
+
+1032
+01:50:44,680 --> 01:50:46,140
+there are more than this, but I
+
+1033
+01:50:46,140 --> 01:50:47,760
+just included three and
+
+1034
+01:50:47,760 --> 01:50:50,100
+these three papers discusses this
+
+1035
+01:50:50,100 --> 01:50:51,920
+concept of
+
+1036
+01:50:51,920 --> 01:50:53,659
+compositional complexity
+
+1037
+01:50:53,659 --> 01:50:55,600
+of a DNA
+
+1038
+01:50:55,600 --> 01:50:57,479
+or amino acid sequence.
+
+1039
+01:50:57,500 --> 01:50:59,560
+You will see
+
+1040
+01:50:59,560 --> 01:51:01,000
+there and
+
+1041
+01:51:01,000 --> 01:51:03,619
+their approach probably will be
+
+1042
+01:51:03,619 --> 01:51:05,600
+different than this approach, but I
+
+1043
+01:51:05,600 --> 01:51:07,359
+just included this as
+
+1044
+01:51:07,359 --> 01:51:08,500
+a metric.
+
+1045
+01:51:09,560 --> 01:51:11,239
+We could also
+
+1046
+01:51:11,239 --> 01:51:12,279
+calculate
+
+1047
+01:51:12,279 --> 01:51:14,020
+the
+
+1048
+01:51:14,020 --> 01:51:17,760
+as I said, entropy
+
+1049
+01:51:17,760 --> 01:51:19,380
+for this sequence
+
+1050
+01:51:19,380 --> 01:51:21,159
+and this will indicate
+
+1051
+01:51:21,159 --> 01:51:23,420
+the
+
+1052
+01:51:23,420 --> 01:51:24,420
+complexity of
+
+1053
+01:51:25,619 --> 01:51:26,859
+this sequence
+
+1054
+01:51:26,859 --> 01:51:27,340
+as well.
+
+1055
+01:51:27,500 --> 01:51:28,500
+Anyway,
+
+1056
+01:51:28,500 --> 01:51:33,039
+for this,
+
+1057
+01:51:33,039 --> 01:51:34,539
+before proceeding,
+
+1058
+01:51:34,939 --> 01:51:36,899
+let me go to the examples
+
+1059
+01:51:36,899 --> 01:51:39,159
+and just give you an example
+
+1060
+01:51:39,159 --> 01:51:40,039
+on this.
+
+1061
+01:51:41,020 --> 01:51:42,420
+Probably this is better
+
+1062
+01:51:42,420 --> 01:51:45,000
+without
+
+1063
+01:51:45,000 --> 01:51:46,739
+forgetting the concept.
+
+1064
+01:51:48,659 --> 01:51:49,260
+Hmm.
+
+1065
+01:51:49,260 --> 01:51:49,399
+Hmm.
+
+1066
+01:51:54,939 --> 01:51:56,079
+I just
+
+1067
+01:51:56,079 --> 01:51:57,260
+skipped an
+
+1068
+01:51:57,500 --> 01:52:15,460
+skip this and have i'm not sure if i have this example or not about the compositional
+
+1069
+01:52:15,460 --> 01:52:31,899
+complexity okay i just have here what is the compositional complexity of the following
+
+1070
+01:52:31,899 --> 01:52:38,960
+crazed sequences first one is this one and the second one is this one just to compare
+
+1071
+01:52:38,960 --> 01:52:44,880
+them these are amino acid sequences
+
+1072
+01:52:44,880 --> 01:52:45,439
+the solution is continuous amino acids and the third one is molybdenum in the amino acid
+
+1073
+01:52:45,440 --> 01:52:55,520
+is very simple now we have the a metric just we will work out through the this equation because
+
+1074
+01:52:55,520 --> 01:53:07,280
+it is amino acid seconds the equation or this base i will be using is 20. so if just l is
+
+1075
+01:53:07,279 --> 01:53:19,119
+just length of these seconds which is 15 then all the frequencies we have four k's in this one one
+
+1076
+01:53:19,119 --> 01:53:32,880
+two three four and two t's two r's one a one i one e and four m's the sequences in these 20 sequences
+
+1077
+01:53:34,399 --> 01:53:37,119
+in 20 different letters which
+
+1078
+01:53:37,279 --> 01:53:46,639
+does not exist exist in this sequence frequency will be zero these are the frequencies basic
+
+1079
+01:53:46,639 --> 01:53:57,279
+frequency of k frequency of t which does not exist will be frequency of zero and k4 and t2
+
+1080
+01:53:57,920 --> 01:54:07,199
+whatever in this respect other residues which does not exist here will be zero
+
+1081
+01:54:08,239 --> 01:54:12,639
+no need to mention because zero factorial is one
+
+1082
+01:54:16,960 --> 01:54:18,479
+this is the first
+
+1083
+01:54:22,800 --> 01:54:25,840
+step we calculate these all factorials
+
+1084
+01:54:27,039 --> 01:54:35,679
+and final is this one then we can divide by l factorial we get this one and finally
+
+1085
+01:54:36,479 --> 01:54:36,979
+we have
+
+1086
+01:54:38,239 --> 01:54:42,800
+our answer at 0.449 we repeat this for the second seconds
+
+1087
+01:54:43,519 --> 01:54:49,279
+for the traitor and the compositional complexity of this is 0.34
+
+1088
+01:54:51,920 --> 01:54:59,439
+hence we see that the second sequence is less complex than the first one so we indicate
+
+1089
+01:55:00,000 --> 01:55:10,560
+is as k2 less than k1 this is an example this was an example for the sequence complexity
+
+1090
+01:55:16,880 --> 01:55:24,239
+now we continue with the information obtained from a dot plot
+
+1091
+01:55:25,199 --> 01:55:32,719
+insertions and deletions for example here these breakpoints in these just
+
+1092
+01:55:35,039 --> 01:55:43,039
+otherwise would be one line from right bottom corner to right top corner to left bottom corner
+
+1093
+01:55:43,920 --> 01:55:51,679
+actually this is if that was just one straight line that means that
+
+1094
+01:55:53,199 --> 01:55:54,159
+sequences are
+
+1095
+01:55:54,239 --> 01:55:59,920
+exactly the same but one is reversed but in this case the
+
+1096
+01:56:02,079 --> 01:56:09,279
+probably they are coming from a common ancestor but somehow the one of the sequences
+
+1097
+01:56:09,279 --> 01:56:16,960
+are reversed and also has some indels indicated by some breakpoints here
+
+1098
+01:56:19,439 --> 01:56:21,039
+insertions and deletions
+
+1099
+01:56:23,279 --> 01:56:24,159
+one potential
+
+1100
+01:56:24,239 --> 01:56:29,439
+application is to determine the number of coding regions which is known as
+
+1101
+01:56:29,439 --> 01:56:37,279
+exons non-coding regions regions are known as introns which we mentioned in the past
+
+1102
+01:56:44,719 --> 01:56:52,239
+here again we have two similar but not identical sequences there are some repeats here
+
+1103
+01:56:53,199 --> 01:57:04,559
+some insertions deletions this is an indel very specifically and some repeats here
+
+1104
+01:57:06,559 --> 01:57:14,079
+duplication i mentioned tandem duplication a tandem repeat in dna is a sequence of
+
+1105
+01:57:14,079 --> 01:57:21,439
+two or more contagious approximate copies of a pattern or nucleotides this is not exactly
+
+1106
+01:57:21,440 --> 01:57:32,420
+not exactly repeat but approximate copies and I included a paper here if you like you
+
+1107
+01:57:32,420 --> 01:57:41,140
+can download and read it about this paper is about this tandem duplication
+
+1108
+01:57:41,140 --> 01:57:45,980
+such as this one there is a duplicate region here
+
+1109
+01:57:45,980 --> 01:57:54,840
+this is known as tandem duplication
+
+1110
+01:57:54,840 --> 01:58:03,780
+these seconds and these seconds are probably very similar but they do not continue as a
+
+1111
+01:58:03,780 --> 01:58:08,740
+one line but it is duplicated here somewhere
+
+1112
+01:58:08,740 --> 01:58:09,740
+okay
+
+1113
+01:58:09,740 --> 01:58:10,740
+so
+
+1114
+01:58:10,740 --> 01:58:11,740
+so
+
+1115
+01:58:11,740 --> 01:58:12,740
+so
+
+1116
+01:58:12,740 --> 01:58:13,740
+so
+
+1117
+01:58:13,740 --> 01:58:14,740
+so
+
+1118
+01:58:14,740 --> 01:58:15,740
+so
+
+1119
+01:58:15,739 --> 01:58:16,739
+so
+
+1120
+01:58:16,739 --> 01:58:17,739
+so
+
+1121
+01:58:17,739 --> 01:58:18,739
+so
+
+1122
+01:58:18,739 --> 01:58:19,739
+so
+
+1123
+01:58:19,739 --> 01:58:20,739
+so
+
+1124
+01:58:20,739 --> 01:58:21,739
+so
+
+1125
+01:58:21,739 --> 01:58:22,739
+so
+
+1126
+01:58:22,739 --> 01:58:23,739
+so
+
+1127
+01:58:23,739 --> 01:58:24,739
+so
+
+1128
+01:58:24,739 --> 01:58:25,739
+so
+
+1129
+01:58:25,739 --> 01:58:26,739
+so
+
+1130
+01:58:26,739 --> 01:58:27,739
+so
+
+1131
+01:58:27,739 --> 01:58:28,739
+so
+
+1132
+01:58:28,739 --> 01:58:29,739
+so
+
+1133
+01:58:29,739 --> 01:58:30,739
+so
+
+1134
+01:58:30,739 --> 01:58:31,739
+so
+
+1135
+01:58:31,739 --> 01:58:32,739
+so
+
+1136
+01:58:32,739 --> 01:58:33,739
+so
+
+1137
+01:58:33,739 --> 01:58:34,739
+so
+
+1138
+01:58:34,739 --> 01:58:35,739
+so
+
+1139
+01:58:35,739 --> 01:58:36,739
+so
+
+1140
+01:58:36,739 --> 01:58:37,739
+so
+
+1141
+01:58:37,739 --> 01:58:38,739
+so
+
+1142
+01:58:38,739 --> 01:58:39,739
+so
+
+1143
+01:58:39,739 --> 01:58:40,739
+so
+
+1144
+01:58:40,739 --> 01:58:41,739
+so
+
+1145
+01:58:41,739 --> 01:58:42,739
+so
+
+1146
+01:58:42,739 --> 01:58:43,739
+so
+
+1147
+01:58:43,739 --> 01:58:44,739
+so
+
+1148
+01:58:44,739 --> 01:58:45,739
+so
+
+1149
+01:58:46,380 --> 01:58:51,739
+repeats inverted repeats it exists this is just
+
+1150
+01:58:55,500 --> 01:58:59,500
+same sequence and some repeat and inverted repeats
+
+1151
+01:59:03,099 --> 01:59:08,779
+this is an inversion normally sequences are exactly the same
+
+1152
+01:59:08,779 --> 01:59:17,819
+but something happens at certain point and the a certain portion of the sequences are inverted
+
+1153
+01:59:19,500 --> 01:59:24,699
+so dot plot will show this clearly of course
+
+1154
+01:59:27,099 --> 01:59:34,139
+in this dot plot sequences are quite long maybe thousand i don't know
+
+1155
+01:59:38,779 --> 01:59:43,019
+serve dot plot with repeats again just
+
+1156
+01:59:45,659 --> 01:59:53,579
+the sequences in this case are exactly the same but it includes many repeats
+
+1157
+02:00:00,399 --> 02:00:05,039
+there are joining sequences in this dot plot
+
+1158
+02:00:08,800 --> 02:00:10,479
+actually two sequences
+
+1159
+02:00:12,720 --> 02:00:19,279
+now we'll see later when we discuss dot plot sometimes what happens in
+
+1160
+02:00:19,279 --> 02:00:34,479
+reading a dna or the analyzing dna they don't do it continuously they break into sections and they
+
+1161
+02:00:35,599 --> 02:00:48,079
+from same cell they extract dna information partially then later they stitch this
+
+1162
+02:00:49,439 --> 02:01:02,159
+uh dna fragments to complete one complete dna and this shows actually these two dna sequences are
+
+1163
+02:01:04,479 --> 02:01:09,359
+part of a single dna sequences and usually
+
+1164
+02:01:12,159 --> 02:01:19,199
+there are techniques to determine these joining portions of the sequences
+
+1165
+02:01:19,519 --> 02:01:28,960
+this dot plot actually shows this here and when some experts see these oh they say these two
+
+1166
+02:01:28,960 --> 02:01:36,239
+sequences are actually part of a one dna sequence so we need to stitch them join them
+
+1167
+02:01:42,479 --> 02:01:48,159
+dot plots can also be used in order to compare two different assemblies of the same sequence
+
+1168
+02:01:49,279 --> 02:01:51,279
+with other human lifelong clusters
+
+1169
+02:01:51,279 --> 02:02:00,399
+below are three dot plots of various chromosomes for example this is chromosome five
+
+1170
+02:02:02,319 --> 02:02:07,119
+this is chromosome five as well this is chromosome y
+
+1171
+02:02:12,319 --> 02:02:19,039
+this first one shows two separate assemblies of human chromosome 5 compared against each other
+
+1172
+02:02:19,920 --> 02:02:27,840
+the second one shows one assembly of chromosome five compared against itself this is self
+
+1173
+02:02:27,840 --> 02:02:37,119
+comparison indicating the presence of repetitive regions here the third one shows chromosome y
+
+1174
+02:02:37,119 --> 02:02:43,199
+compared against itself self comparison indicating the presence of inverted repeats here
+
+1175
+02:02:43,199 --> 02:02:49,279
+i mentioned noise in dot plots
+
+1176
+02:02:52,479 --> 02:02:53,279
+if you remember
+
+1177
+02:02:55,760 --> 02:02:58,720
+we don't want to see
+
+1178
+02:03:00,880 --> 02:03:06,479
+this noise in dot plots which usually do not carry a meaningful information
+
+1179
+02:03:10,239 --> 02:03:13,039
+for this we use some windows
+
+1180
+02:03:13,199 --> 02:03:23,119
+for example this one is ideal self dot plots this is known as very stringent self-taught plot
+
+1181
+02:03:23,679 --> 02:03:36,559
+actually the that dot plot includes some noises random matches some color spots around here
+
+1182
+02:03:36,559 --> 02:03:39,119
+but it is eliminated somehow
+
+1183
+02:03:40,239 --> 02:03:42,800
+so this is the result of this
+
+1184
+02:03:43,840 --> 02:03:52,000
+the second one is same sequences same dot plot but without any
+
+1185
+02:03:54,720 --> 02:04:00,960
+filtering i would say filtering this is known as non-stringent self-taught plot
+
+1186
+02:04:00,960 --> 02:04:04,720
+obviously this is much more clearer than this one
+
+1187
+02:04:06,559 --> 02:04:13,039
+stringence is the quality of state of being stringent stringent is marked by rigor strictness
+
+1188
+02:04:13,199 --> 02:04:16,880
+or severity especially with regard to rule or standard
+
+1189
+02:04:21,519 --> 02:04:24,960
+this is very stringent self-deployed this is
+
+1190
+02:04:24,960 --> 02:04:32,800
+non-stringent okay we will see how to remove noise after the break
+
+1191
+02:04:43,199 --> 02:04:45,260
+you
+
+1192
+02:05:00,000 --> 02:05:29,979
+Altyazı M.K.
+
+1193
+02:05:30,000 --> 02:05:59,979
+Altyazı M.K.
+
+1194
+02:06:00,000 --> 02:06:29,979
+Altyazı M.K.
+
+1195
+02:06:30,000 --> 02:06:59,979
+Altyazı M.K.
+
+1196
+02:07:00,000 --> 02:07:29,979
+Altyazı M.K.
+
+1197
+02:07:30,000 --> 02:07:59,979
+Altyazı M.K.
+
+1198
+02:08:00,000 --> 02:08:29,979
+Altyazı M.K.
+
+1199
+02:08:30,000 --> 02:08:59,979
+Altyazı M.K.
+
+1200
+02:09:00,000 --> 02:09:29,979
+Altyazı M.K.
+
+1201
+02:09:30,000 --> 02:09:59,979
+Altyazı M.K.
+
+1202
+02:10:00,000 --> 02:10:29,979
+Altyazı M.K.
+
+1203
+02:10:30,000 --> 02:10:59,979
+Altyazı M.K.
+
+1204
+02:11:00,000 --> 02:11:29,979
+Altyazı M.K.
+
+1205
+02:11:30,000 --> 02:11:59,979
+Altyazı M.K.
+
+1206
+02:12:00,000 --> 02:12:29,979
+Altyazı M.K.
+
+1207
+02:12:30,000 --> 02:12:59,979
+Altyazı M.K.
+
+1208
+02:13:00,000 --> 02:13:29,979
+Altyazı M.K.
+
+1209
+02:13:30,000 --> 02:13:59,979
+Altyazı M.K.
+
+1210
+02:14:00,000 --> 02:14:29,979
+Altyazı M.K.
+
+1211
+02:14:30,000 --> 02:14:59,979
+Altyazı M.K.
+
+1212
+02:15:00,000 --> 02:15:15,880
+random and amino acid sequences 1 out of 20 matches at random to filter out these random
+
+1213
+02:15:15,880 --> 02:15:32,039
+matches we use sliding windows if you remember the concept of moving average
+
+1214
+02:15:32,039 --> 02:15:44,800
+filtering which I discussed when I was giving this statistical data analysis
+
+1215
+02:15:44,800 --> 02:15:45,319
+lecture
+
+1216
+02:15:45,880 --> 02:15:55,960
+it uses almost similar concept but for these characters in moving average
+
+1217
+02:15:55,960 --> 02:16:03,500
+filter basically we were using the concept of averages to filter a time
+
+1218
+02:16:03,500 --> 02:16:15,840
+series but here we are filtering dot plot which uses two
+
+1219
+02:16:15,880 --> 02:16:26,060
+sequences character arrays percentage of bases matching in the window is set as
+
+1220
+02:16:26,060 --> 02:16:36,180
+threshold a dot is printed only if a minimum number of matches occur rule of
+
+1221
+02:16:36,180 --> 02:16:42,420
+thumb in this case is larger windows for DNA's on
+
+1222
+02:16:45,880 --> 02:16:47,000
+the chip
+
+1223
+02:16:47,000 --> 02:16:48,460
+is used
+
+1224
+02:16:48,460 --> 02:17:03,160
+typical window size is 15 and string stringency of 10 stringency of 10 means if we have 15
+
+1225
+02:17:03,160 --> 02:17:13,560
+characters in a window at least 10 characters should match
+
+1226
+02:17:13,560 --> 02:17:14,560
+to be able to decide factors so I am going to call the circle table on the cross axis
+
+1227
+02:17:14,560 --> 02:17:15,560
+of the the skew and see if there are any changes in this thickness I am going to call
+
+1228
+02:17:15,560 --> 02:17:15,600
+it the index number of matches that are there so at least we are going to have a multiple
+
+1229
+02:17:15,600 --> 02:17:15,640
+one mean that we have the śt and the number of matches that are there but it does not matter
+
+1230
+02:17:15,640 --> 02:17:15,840
+all of them go in a small row is through the in this case so between all of them there is
+
+1231
+02:17:15,840 --> 02:17:15,860
+a little gap in the width of the Micron of the stick so between all of them in this case
+
+1232
+02:17:16,819 --> 02:17:18,340
+this as a match
+
+1233
+02:17:21,380 --> 02:17:30,260
+if we say 15 out of 15 characters must match this extremely stringent
+
+1234
+02:17:33,540 --> 02:17:36,579
+case okay
+
+1235
+02:17:36,579 --> 02:17:46,579
+as an example here we have a dot matrix with some noise and the same dot matrix
+
+1236
+02:17:47,459 --> 02:17:51,059
+in which the some of the noises are eliminated
+
+1237
+02:17:53,620 --> 02:18:03,780
+probably i give you a simple example how to do it let me enable annotation
+
+1238
+02:18:05,459 --> 02:18:06,100
+and
+
+1239
+02:18:07,539 --> 02:18:12,340
+then just simply draw let me draw
+
+1240
+02:18:16,100 --> 02:18:16,979
+a matrix
+
+1241
+02:18:21,459 --> 02:18:22,659
+then do
+
+1242
+02:18:28,260 --> 02:18:31,299
+sorry about this drawing but let's say a
+
+1243
+02:18:33,379 --> 02:18:35,940
+c c g
+
+1244
+02:18:36,579 --> 02:18:37,620
+a
+
+1245
+02:18:40,020 --> 02:18:45,860
+the other one will be i just draw it here
+
+1246
+02:18:49,700 --> 02:18:59,059
+a g c c etc now the concept was we take
+
+1247
+02:19:01,700 --> 02:19:02,579
+some
+
+1248
+02:19:02,579 --> 02:19:02,819
+any
+
+1249
+02:19:02,819 --> 02:19:04,020
+some
+
+1250
+02:19:04,020 --> 02:19:04,340
+for
+
+1251
+02:19:04,340 --> 02:19:04,840
+some
+
+1252
+02:19:04,840 --> 02:19:05,059
+for
+
+1253
+02:19:05,059 --> 02:19:05,620
+them
+
+1254
+02:19:05,620 --> 02:19:06,180
+for
+
+1255
+02:19:06,180 --> 02:19:06,340
+for
+
+1256
+02:19:06,340 --> 02:19:06,500
+for
+
+1257
+02:19:06,500 --> 02:19:21,899
+we take we take a window size let's take window size of three and stringency of two that means
+
+1258
+02:19:21,899 --> 02:19:33,399
+we have three letters and at least two of them must match in a window if two of them
+
+1259
+02:19:33,399 --> 02:19:39,719
+matches say this one and this one then we say okay this is a match now let's start this
+
+1260
+02:19:40,520 --> 02:19:45,879
+assuming that we start from here we take this window
+
+1261
+02:19:48,199 --> 02:19:59,639
+and this window and compare to determine the if this cell is match or not we have dash ac dash
+
+1262
+02:20:00,399 --> 02:20:02,799
+a g this is not a match
+
+1263
+02:20:05,200 --> 02:20:12,719
+we move window by one to decide if this is match or not acc
+
+1264
+02:20:15,680 --> 02:20:18,559
+ac oops
+
+1265
+02:20:18,559 --> 02:20:31,279
+a c c and dash a g this is not a match we move window again
+
+1266
+02:20:34,239 --> 02:20:45,439
+c c g c c g again this is not a match we move again c
+
+1267
+02:20:47,840 --> 02:20:48,079
+g
+
+1268
+02:20:48,559 --> 02:21:00,319
+a there is no match again we continue okay then next we move window one down here
+
+1269
+02:21:02,799 --> 02:21:07,039
+a g c then start comparing with
+
+1270
+02:21:10,799 --> 02:21:18,079
+a dash c we don't have to start from here just i i started to
+
+1271
+02:21:19,519 --> 02:21:22,319
+uh place matches at the middle
+
+1272
+02:21:24,879 --> 02:21:35,840
+then with the a g c a g c this is not a match say then we move again
+
+1273
+02:21:39,439 --> 02:21:42,479
+a c c for this one
+
+1274
+02:21:45,519 --> 02:21:48,399
+a c c and a g c
+
+1275
+02:21:49,119 --> 02:21:55,760
+okay we have two matches here so for this one we place a match
+
+1276
+02:21:57,920 --> 02:22:16,479
+we continue again moving the window c c g c c g there is no match we continue c g a c g c g-a
+
+1277
+02:22:16,479 --> 02:22:25,199
+And comparing with AGC, no match, etc.
+
+1278
+02:22:25,420 --> 02:22:28,879
+I think you understand what we do by windowing.
+
+1279
+02:22:29,340 --> 02:22:34,899
+Normally, when we go over, there will be, of course, A matches to A.
+
+1280
+02:22:34,979 --> 02:22:36,500
+There will be a match here normally.
+
+1281
+02:22:37,119 --> 02:22:38,520
+Then A will match here.
+
+1282
+02:22:38,739 --> 02:22:39,819
+There will be a match here.
+
+1283
+02:22:39,819 --> 02:22:48,639
+And if we go through this one, that will be a match again, etc.
+
+1284
+02:22:49,840 --> 02:23:00,520
+These are considered as noise.
+
+1285
+02:23:00,779 --> 02:23:02,199
+So, we want to remove this.
+
+1286
+02:23:02,699 --> 02:23:09,159
+And this is now, with this condition, window size of 3.
+
+1287
+02:23:09,719 --> 02:23:09,739
+And.
+
+1288
+02:23:09,819 --> 02:23:11,379
+Stringency of 2.
+
+1289
+02:23:12,100 --> 02:23:15,779
+Now, we were able to remove these noises here.
+
+1290
+02:23:16,559 --> 02:23:21,659
+This is the only match for the steps I performed.
+
+1291
+02:23:22,000 --> 02:23:27,299
+Of course, if you continue, you will have more matches and more eliminations.
+
+1292
+02:23:27,840 --> 02:23:29,399
+I think you've got the idea.
+
+1293
+02:23:29,399 --> 02:23:35,459
+This is the idea of filtering or noise removal in dot plots.
+
+1294
+02:23:39,819 --> 02:23:52,699
+So, we're going to use the dot plot method.
+
+1295
+02:23:55,100 --> 02:23:58,799
+Unless the sequences are known to be very much alike.
+
+1296
+02:24:04,739 --> 02:24:07,319
+We can use dot plot.
+
+1297
+02:24:07,840 --> 02:24:09,680
+Of course, dot matrix says.
+
+1298
+02:24:09,680 --> 02:24:15,860
+Limitations it is visual object, not objective method.
+
+1299
+02:24:16,220 --> 02:24:17,399
+It is subjective.
+
+1300
+02:24:18,500 --> 02:24:23,040
+We need to quantify the degree of similarity.
+
+1301
+02:24:23,059 --> 02:24:30,559
+It will not tell us the degree of similarity or whatever quantification.
+
+1302
+02:24:32,540 --> 02:24:33,720
+Difficult to find.
+
+1303
+02:24:33,739 --> 02:24:39,540
+It is possible to determine the best alignment by using.
+
+1304
+02:24:39,540 --> 02:24:47,720
+This dot plot, but for only short length sequences.
+
+1305
+02:24:48,360 --> 02:24:51,780
+If the sequence is too long, it is quite impossible.
+
+1306
+02:24:52,620 --> 02:24:59,360
+We will see in a minute in an example, it is possible to determine the optimum alignment.
+
+1307
+02:24:59,360 --> 02:25:09,420
+We will see in a minute in an example, it is possible to determine the optimum alignment.
+
+1308
+02:25:00,000 --> 02:25:15,000
+ve belki algoritmalar gerçek ayarlamayı göstermek için kullanılabilir, ancak bu çok zor.
+
+1309
+02:25:15,000 --> 02:25:27,000
+Şimdi bu noktada bir örneğe geçelim ve bir örneğe geçelim.
+
+1310
+02:25:27,000 --> 02:25:42,000
+Bu nokta planını açıklamak için nasıl bir nokta planını oluşturmak ve nasıl bir nokta planı kullanmak için optimal ayarlamayı görebiliriz.
+
+1311
+02:25:42,000 --> 02:25:54,000
+Bu için
+
+1312
+02:25:54,000 --> 02:26:00,200
+I will use the example 5.
+
+1313
+02:26:00,200 --> 02:26:07,479
+Now the question is, draw a dot plot for the given two sequences.
+
+1314
+02:26:08,680 --> 02:26:13,780
+Sequence one is this one, the second sequence is this one.
+
+1315
+02:26:13,780 --> 02:26:24,159
+The next question is, to find a likely global alignment for these two sequences.
+
+1316
+02:26:25,159 --> 02:26:30,060
+And we will show on the dot plot how to do this.
+
+1317
+02:26:31,140 --> 02:26:43,260
+The first step is to create a matrix and place the first sequence, say,
+
+1318
+02:26:43,780 --> 02:26:50,920
+on the top row and the second sequence on the leftmost column.
+
+1319
+02:26:52,920 --> 02:26:59,980
+Then we will fill the matrix, normally as we do, without considering the noise.
+
+1320
+02:27:04,239 --> 02:27:08,600
+This will give us this initial matrix.
+
+1321
+02:27:12,600 --> 02:27:13,760
+Simply we will...
+
+1322
+02:27:13,780 --> 02:27:23,820
+In terms of the programming, we will have two for loops, as we do in all matrix operations.
+
+1323
+02:27:24,460 --> 02:27:29,739
+We will go either by column by column or row by row.
+
+1324
+02:27:30,980 --> 02:27:42,060
+And we will visit each cells and place a dot if there is a match, place nothing if there is no match.
+
+1325
+02:27:42,060 --> 02:27:43,060
+So...
+
+1326
+02:27:43,780 --> 02:28:02,620
+To do this, we just go over one by one, i, d, mismatch, nothing to place, i, i, a match, we place the dot, i, l, mismatch, i, v, mismatch, i, d, mismatch, i, e, mismatch, i, q, mismatch.
+
+1327
+02:28:02,620 --> 02:28:13,480
+Then we go to the next row, v, d, v, i, v, l.
+
+1328
+02:28:13,780 --> 02:28:15,079
+v, v is a match.
+
+1329
+02:28:15,720 --> 02:28:18,540
+v, d, v, e, v, q is not match.
+
+1330
+02:28:18,960 --> 02:28:26,620
+Then q, q, d, q, i, q, l, q, v, q, d, e, and q is a match.
+
+1331
+02:28:27,620 --> 02:28:31,800
+Then next, there are two matches, d and d.
+
+1332
+02:28:32,420 --> 02:28:35,280
+Then next, there is one match.
+
+1333
+02:28:36,340 --> 02:28:41,540
+And finally, there is one match here.
+
+1334
+02:28:41,540 --> 02:28:43,540
+So, this is the final...
+
+1335
+02:28:43,780 --> 02:28:53,680
+Dot plot or dot matrix produced without any filtering operation.
+
+1336
+02:28:54,840 --> 02:29:02,460
+Now, the next stage of the question was determine the possible global alignment.
+
+1337
+02:29:03,640 --> 02:29:08,100
+To do this, we have to search for the certain patterns.
+
+1338
+02:29:08,100 --> 02:29:11,860
+The first pattern we see here, this one.
+
+1339
+02:29:13,780 --> 02:29:20,840
+This is obvious, there is, because there is d, e, q and d, e, q.
+
+1340
+02:29:21,400 --> 02:29:28,820
+Now, we can say that it is certain that we should align at least d, e, q and d, e, q at the beginning.
+
+1341
+02:29:29,880 --> 02:29:33,820
+Then next, we must decide where to go.
+
+1342
+02:29:35,440 --> 02:29:39,980
+Go to that way or that way or that way or that way.
+
+1343
+02:29:40,820 --> 02:29:42,480
+We will see in a minute.
+
+1344
+02:29:43,780 --> 02:29:51,360
+This is the first step towards global alignment.
+
+1345
+02:29:52,680 --> 02:29:57,720
+Okay, d, e, q and d, e, q is a good match.
+
+1346
+02:30:00,000 --> 02:30:17,000
+Şimdi bu sayfada, bence bu saniye burada ve bu saniye burada.
+
+1347
+02:30:17,000 --> 02:30:21,000
+Ben de kullanmıştım.
+
+1348
+02:30:21,000 --> 02:30:27,000
+Şimdi diğer adım 1'e gidiyoruz.
+
+1349
+02:30:27,000 --> 02:30:35,000
+Şimdi burada gördüğümüz şey, bu saniyede bir gıda gösteriyoruz.
+
+1350
+02:30:35,000 --> 02:30:42,000
+Ve bu saniyede Q'yu burada yerleştirdik.
+
+1351
+02:30:42,000 --> 02:30:46,000
+Ama bu saniyede bir gıda gösteriyoruz.
+
+1352
+02:30:46,000 --> 02:30:48,000
+Şimdi tump'ın kuralları.
+
+1353
+02:30:48,000 --> 02:30:52,000
+Eğer R ,
+
+1354
+02:30:52,000 --> 02:30:56,000
+Burada bir kısımdan başka bir kısımdan ilerliyoruz.
+
+1355
+02:30:56,000 --> 02:31:04,000
+Bu kısımda bir gıda yerleştiriyoruz.
+
+1356
+02:31:04,000 --> 02:31:06,000
+Şimdi sonrasında,
+
+1357
+02:31:06,000 --> 02:31:08,000
+Buraya geliyoruz.
+
+1358
+02:31:08,000 --> 02:31:11,000
+Burada, burada gitmiyoruz.
+
+1359
+02:31:11,000 --> 02:31:15,000
+Çünkü burada direkt bir bağlantı yok.
+
+1360
+02:31:15,000 --> 02:31:21,000
+İlk saniyede bir gıda yerleştiriyoruz.
+
+1361
+02:31:21,000 --> 02:31:23,000
+Sonrasında,
+
+1362
+02:31:23,000 --> 02:31:26,000
+Burada bir bağlantı var.
+
+1363
+02:31:26,000 --> 02:31:32,000
+Burada bir bağlantı var.
+
+1364
+02:31:32,000 --> 02:31:47,000
+raw Washington
+
+1365
+02:31:47,000 --> 02:31:50,000
+Şimdi günümüz planlı話atapi,
+
+1366
+02:31:50,000 --> 02:31:54,000
+Şimdi aynı şekilde bir daha Joanna'nın başlarına el IR rengine gireceğiz.
+
+1367
+02:31:54,000 --> 02:32:02,879
+At the seconds which we placed in the column indicated by here.
+
+1368
+02:32:03,500 --> 02:32:11,819
+Next is I and I is a match.
+
+1369
+02:32:12,360 --> 02:32:14,120
+Obviously we see here.
+
+1370
+02:32:15,719 --> 02:32:19,920
+Then we go to the left.
+
+1371
+02:32:19,920 --> 02:32:24,540
+So because we go to the left there is no direct link.
+
+1372
+02:32:25,500 --> 02:32:41,299
+We place a gap in the seconds indicated by the arrow and we match this gap with the last character of this seconds.
+
+1373
+02:32:41,299 --> 02:32:49,299
+Now the final global alignment can be given as.
+
+1374
+02:32:49,920 --> 02:32:50,500
+This one.
+
+1375
+02:32:51,239 --> 02:32:53,360
+However we don't have a score here.
+
+1376
+02:32:53,360 --> 02:33:00,600
+We are not sure if this is a real or optimal alignment or not.
+
+1377
+02:33:00,920 --> 02:33:06,899
+But according to this dot plot this is what we get.
+
+1378
+02:33:07,739 --> 02:33:10,520
+We don't have a quantification on this.
+
+1379
+02:33:14,200 --> 02:33:16,059
+I think it's clear now.
+
+1380
+02:33:16,159 --> 02:33:17,079
+It is understood.
+
+1381
+02:33:17,079 --> 02:33:17,319
+It is understood.
+
+1382
+02:33:19,100 --> 02:33:19,899
+We start.
+
+1383
+02:33:19,920 --> 02:33:26,340
+Top example here and we continue with our subject.
+
+1384
+02:33:33,379 --> 02:33:43,219
+Although we said that dot plot does not provide us an optimum alignment or we don't know alignment is optimum or not because we don't have a quantification.
+
+1385
+02:33:43,840 --> 02:33:48,620
+There are methods which can give us an optimum alignment.
+
+1386
+02:33:48,620 --> 02:33:49,739
+These are.
+
+1387
+02:33:49,920 --> 02:33:57,979
+Basically very famous known algorithms.
+
+1388
+02:33:59,079 --> 02:34:15,920
+Let's assume that we have two sequences x and y and corresponding length of x is m corresponding length of y is n.
+
+1389
+02:34:15,920 --> 02:34:19,760
+If we allow.
+
+1390
+02:34:19,920 --> 02:34:21,500
+Gaps.
+
+1391
+02:34:28,460 --> 02:34:29,620
+Total.
+
+1392
+02:34:31,420 --> 02:34:36,399
+Length of x and y will be m plus n.
+
+1393
+02:34:38,180 --> 02:34:43,159
+That means we simply extend the length of.
+
+1394
+02:34:44,260 --> 02:34:46,219
+X and y.
+
+1395
+02:34:47,520 --> 02:34:49,799
+To equal m plus one.
+
+1396
+02:34:50,260 --> 02:34:52,340
+That meansечek.
+
+1397
+02:34:53,020 --> 02:35:00,079
+And then we can use an algorithm known, root of force anybody knows.
+
+1398
+02:35:00,000 --> 02:35:05,600
+brute force it is the simplest and most intuitive algorithm
+
+1399
+02:35:01,700 --> 02:35:15,159
+i'm not sure that can create any moh благодар� desenvolved group on the apasside's
+
+1400
+02:35:08,959 --> 02:35:19,600
+brute force algorithm means you use all possible combinations all possibilities and evaluate them
+
+1401
+02:35:15,159 --> 02:35:17,479
+You're not sure about this yet?
+
+1402
+02:35:17,479 --> 02:35:18,879
+Can it answer this question?
+
+1403
+02:35:18,879 --> 02:35:19,239
+Yes.
+
+1404
+02:35:19,239 --> 02:35:19,299
+Okay.
+
+1405
+02:35:19,299 --> 02:35:19,399
+I'm having three more minutes left right now.
+
+1406
+02:35:19,399 --> 02:35:19,739
+Go ahead.
+
+1407
+02:35:19,739 --> 02:35:19,799
+30 seconds later.
+
+1408
+02:35:20,639 --> 02:35:27,920
+exhaustively this is a very time consuming algorithm but it always works
+
+1409
+02:35:27,920 --> 02:35:40,000
+given enough time and enough memory the second optimization algorithm is dynamic programming
+
+1410
+02:35:40,000 --> 02:35:51,760
+dynamic programming is a fast algorithm to give an optimum solution given as we have a certain metric
+
+1411
+02:35:51,760 --> 02:35:57,760
+first let's see how it works
+
+1412
+02:35:58,159 --> 02:36:08,479
+discuss brute force we determine all possible subsequences for x and y we have 2 to m plus
+
+1413
+02:36:08,479 --> 02:36:16,000
+n subsequences for x 2 to m plus n for y
+
+1414
+02:36:18,879 --> 02:36:26,879
+this is very time consuming obviously we have 2 to m plus
+
+1415
+02:36:28,000 --> 02:36:38,960
+m plus n times 2 to m plus n times comparisons total 2 to 2 m plus m which is basically 4
+
+1416
+02:36:40,719 --> 02:36:44,159
+over m plus n comparisons total
+
+1417
+02:36:47,600 --> 02:36:48,960
+imagine that we have
+
+1418
+02:36:52,960 --> 02:36:57,600
+two arrays of length thousand that means
+
+1419
+02:36:58,879 --> 02:37:08,319
+for over two thousand comparisons computationally very expensive if we have very very very long
+
+1420
+02:37:09,920 --> 02:37:14,239
+hundred thousand length sequences then imagine the complexity
+
+1421
+02:37:15,840 --> 02:37:26,159
+then becomes quickly impractical however if you are able to execute this brute force
+
+1422
+02:37:28,159 --> 02:37:32,399
+then you will get the optimum alignment but practically impossible
+
+1423
+02:37:35,200 --> 02:37:41,920
+at that point let me give you an example how this brute force is executed
+
+1424
+02:37:46,879 --> 02:37:49,920
+let's go to the examples
+
+1425
+02:37:54,960 --> 02:37:56,799
+okay i have an example here
+
+1426
+02:37:57,920 --> 02:38:18,000
+so for example foriggs r oues
+
+1427
+02:38:19,520 --> 02:38:24,200
+we already go to the other issue
+
+1428
+02:38:24,200 --> 02:38:25,840
+that basically
+
+1429
+02:38:25,840 --> 02:38:26,479
+that
+
+1430
+02:38:26,479 --> 02:38:27,760
+points to this place but then we're back to ellipses and then we'll change it again and then we'll change it up and leave it без неб você rock EA three times over here boss this is block substitution matrix basically we will be discussing later a substitution matrix what is the best alignment of these two sequences sequencers here fui gn y K d, G, SF, and W we'll use basically brute force approach to determine every situation in the hardware are thereahaha using the blo's on here f y g y k d, g, s f and w we'll use basically brute force approach to determine every situation in the hardware are thereaha using the block substitution matrix
+
+1431
+02:38:27,920 --> 02:38:38,319
+the best alignment now the our metric is determined by this substitution matrix if there is a
+
+1432
+02:38:38,319 --> 02:38:48,420
+match between c and c we will give a score of nine if there is a mismatch between c and
+
+1433
+02:38:48,420 --> 02:38:58,479
+s our score will be minus one for s it will be four for say t to s it will be one etc
+
+1434
+02:38:58,479 --> 02:39:04,280
+this is what i meant basically when i mentioned about matrix going matrices
+
+1435
+02:39:05,000 --> 02:39:08,979
+derived by using some statistical analysis of
+
+1436
+02:39:11,559 --> 02:39:18,280
+risk mutations and this is a long time result of
+
+1437
+02:39:18,420 --> 02:39:21,340
+long-time observations and statistical analysis,
+
+1438
+02:39:21,340 --> 02:39:25,260
+and they form such a scoring matrix.
+
+1439
+02:39:25,260 --> 02:39:30,100
+Instead of fixed scores, such as for match say two,
+
+1440
+02:39:30,100 --> 02:39:35,100
+for mismatch minus one, or gaps minus two,
+
+1441
+02:39:35,180 --> 02:39:40,180
+we will be using these scores rather than simple scores.
+
+1442
+02:39:44,600 --> 02:39:47,399
+In this case, we are using this table
+
+1443
+02:39:47,399 --> 02:39:52,399
+to determine the scores for matches and mismatches.
+
+1444
+02:39:53,940 --> 02:39:57,920
+Anyway, we slide one over the other
+
+1445
+02:39:57,920 --> 02:40:00,180
+and use scores from the blossom.
+
+1446
+02:40:00,000 --> 02:40:07,440
+62 substitution matrix for corresponding matches mismatches use score minus one for end gaps
+
+1447
+02:40:10,559 --> 02:40:18,559
+which is basically letters hanging over readers and because what we said we extend these sequences
+
+1448
+02:40:18,559 --> 02:40:29,920
+using gaps to make the lengths of these sequences equal to m plus n this is how we do it fy g
+
+1449
+02:40:29,920 --> 02:40:30,879
+and y k
+
+1450
+02:40:34,559 --> 02:40:46,000
+is extended by using gaps at the right hand side d g s f and w is extended by using the gaps at the
+
+1451
+02:40:46,000 --> 02:40:54,159
+left hand side then this is the one of the cases then we start the shifting and comparing
+
+1452
+02:40:57,120 --> 02:40:59,120
+to work out the best alignment
+
+1453
+02:41:00,479 --> 02:41:08,559
+anyway we do this shifting and comparing cooperation here is the all the possible
+
+1454
+02:41:09,120 --> 02:41:17,840
+options start with the first alignment we have the score minus one minus eleven sorry
+
+1455
+02:41:18,799 --> 02:41:23,680
+because we use uh minus one for
+
+1456
+02:41:26,239 --> 02:41:26,639
+gaps
+
+1457
+02:41:29,920 --> 02:41:37,600
+minus one two three four five six seven eight nine ten
+
+1458
+02:41:39,440 --> 02:41:46,799
+minus ten for gaps k and d let's go to the table
+
+1459
+02:41:49,360 --> 02:41:49,860
+k
+
+1460
+02:41:53,360 --> 02:41:53,860
+and
+
+1461
+02:41:56,879 --> 02:41:59,520
+d where is d go go go and d
+
+1462
+02:42:00,479 --> 02:42:09,440
+k and d is minus one as well so the total score of this first alignment will be minus 11.
+
+1463
+02:42:10,399 --> 02:42:15,360
+then next minus 13 and we shift by one and compare again shift
+
+1464
+02:42:16,000 --> 02:42:20,399
+so and this is the final shift which is minus nine
+
+1465
+02:42:22,879 --> 02:42:24,639
+now by looking at the scores
+
+1466
+02:42:27,200 --> 02:42:29,120
+depending on the scoring scheme
+
+1467
+02:42:30,000 --> 02:42:38,399
+we can certainly say that this alignment is an optimum alignment for these sequences
+
+1468
+02:42:39,760 --> 02:42:42,159
+according to this brute force algorithm
+
+1469
+02:42:44,239 --> 02:42:52,000
+because this is the maximum score we obtained so optimum alignment for these two sequences will be
+
+1470
+02:42:52,639 --> 02:42:59,760
+this one probably these sequence were derived from a common ancestor
+
+1471
+02:42:59,920 --> 02:43:00,960
+line i'm looking at a case i'm something like this
+
+1472
+02:43:00,960 --> 02:43:05,920
+so it actually should be the same because the minimum score should be equal to the maximum number times
+
+1473
+02:43:05,920 --> 02:43:08,799
+plus the total score so the total score should be equal to the maximum number of sets
+
+1474
+02:43:08,799 --> 02:43:19,579
+okay so let's see about this
+
+1475
+02:43:19,600 --> 02:43:22,799
+so this is the final score of this first alignment
+
+1476
+02:43:22,799 --> 02:43:26,079
+so we start with the minimum score i think the minimum score is going to be to two points
+
+1477
+02:43:26,079 --> 02:43:28,479
+and then now we are going to look at the baseline so we will get the same score for
+
+1478
+02:43:28,479 --> 02:43:29,760
+this first alignment so we are going to see the median of the study which is equal to the median of this first alignment
+
+1479
+02:43:29,760 --> 02:43:39,440
+the our main presentation the dynamic programming i just introduced dynamic programming and stop
+
+1480
+02:43:39,440 --> 02:43:51,680
+here the dynamic programming is a very fundamental extensively used algorithm in computer science
+
+1481
+02:43:52,319 --> 02:43:56,079
+probably you have already studied the this algorithm in
+
+1482
+02:43:59,120 --> 02:44:07,840
+at least one or two courses when we were discussing algorithms and usually algorithm
+
+1483
+02:44:09,280 --> 02:44:13,520
+lectures or lessons will include dynamic programming as well because
+
+1484
+02:44:13,520 --> 02:44:16,960
+it is a fundamental algorithm used in optimization
+
+1485
+02:44:20,399 --> 02:44:21,600
+it is used to solve
+
+1486
+02:44:21,680 --> 02:44:29,040
+optimization problems by dividing the problem into independent sub problems this is divide and
+
+1487
+02:44:29,040 --> 02:44:38,319
+conquer approach because dealing with smaller problems is easier than dealing with a global
+
+1488
+02:44:38,319 --> 02:44:46,880
+big problem sub problems are usually simpler than the main problem sequence alignment has
+
+1489
+02:44:46,880 --> 02:44:51,120
+optimal structure property here is
+
+1490
+02:44:51,680 --> 02:45:00,159
+problem is alignment of prefixes of two sequences rather than whole sequence we try with
+
+1491
+02:45:00,559 --> 02:45:07,200
+simpler approaches each sub problem is computed once and stored in a matrix
+
+1492
+02:45:08,399 --> 02:45:14,399
+again we have a matrix here and we require a memory as well to
+
+1493
+02:45:15,200 --> 02:45:24,159
+store sub solutions because we need to remember them when we use this algorithm
+
+1494
+02:45:24,159 --> 02:45:35,840
+optimal score can be built upon optimal alignment computed to that point
+
+1495
+02:45:39,440 --> 02:45:50,479
+then we align two sequences beginning at the ends attempting to align all possible pairs of
+
+1496
+02:45:50,479 --> 02:45:54,079
+characters by the way the
+
+1497
+02:45:54,159 --> 02:46:00,799
+are variations of dynamic programmings for the time being we say starting at the end
+
+1498
+02:46:02,000 --> 02:46:06,000
+that refers to the bottom right corner
+
+1499
+02:46:11,039 --> 02:46:20,719
+scoring scheme for matches mismatches gaps etc are used in dynamic programming either
+
+1500
+02:46:21,360 --> 02:46:24,079
+in examples we will be using probably
+
+1501
+02:46:24,799 --> 02:46:32,079
+simple scoring schemes such as for example for match we'll be using
+
+1502
+02:46:33,840 --> 02:46:44,799
+say two or four whatever for mismatch minus one or zero or whatever we have chosen or for gaps
+
+1503
+02:46:44,799 --> 02:46:53,440
+minus two or whatever we have determined this is a simple scoring scheme but we can also use
+
+1504
+02:46:54,159 --> 02:46:56,159
+one of the scoring matrices
+
+1505
+02:46:57,280 --> 02:47:03,200
+and for the gaps again we can also use rather than a simple
+
+1506
+02:47:03,920 --> 02:47:11,760
+gap penalty it is called gap penalty so far we used a simple gap penalty as minus two
+
+1507
+02:47:11,760 --> 02:47:15,520
+there are some other type of
+
+1508
+02:47:15,520 --> 02:47:19,280
+gap scoring methods we will be discussing later anyway we will be using one of the scoring schemes
+
+1509
+02:47:19,280 --> 02:47:23,440
+may be used later on as an example of an example of a gap scoring matrix
+
+1510
+02:47:24,159 --> 02:47:34,940
+schemes, either from table or the simple scoring schemes. Highest set of scores defines optimal
+
+1511
+02:47:34,940 --> 02:47:44,959
+alignment between sequences. Match in match score, DNA, in DNA there will be an exact
+
+1512
+02:47:44,959 --> 02:47:52,700
+match. In amino acids, there will be some mutation probabilities. Well, the dynamic
+
+1513
+02:47:52,700 --> 02:48:02,520
+programming guarantees to provide optimal alignment given two sequences and a certain
+
+1514
+02:48:02,520 --> 02:48:13,159
+scoring scheme. So, there is an objective alignment here, not subjective. But this objectivity
+
+1515
+02:48:13,159 --> 02:48:22,020
+depends on the scoring scheme we use.
+
+1516
+02:48:22,020 --> 02:48:22,680
+Shall I step here?
+
+1517
+02:48:22,680 --> 02:48:39,220
+Do you have any questions so far?
+
+1518
+02:48:39,220 --> 02:48:47,300
+Hocam, söylediyseniz kaçırdım da, bir tane ödev verdiniz ya, onun tarihiyle ilgili
+
+1519
+02:48:47,300 --> 02:48:49,020
+bir şey var mı? Ya da bir doküman paylaşacak mısınız?
+
+1520
+02:48:49,500 --> 02:48:50,780
+Dokymanı yazacağım ben.
+
+1521
+02:48:52,680 --> 02:48:53,220
+Tamamdır hocam.
+
+1522
+02:48:53,220 --> 02:49:00,300
+Web sayfasında da belirtirim. Yani bu eskiden beri verdiğim ödevler gerçi. Burada önemli
+
+1523
+02:49:00,300 --> 02:49:10,600
+olan şey şu, bu ödevi verdik, sizin kendinizin yapması. Yani bir kere burada bir biyolojik
+
+1524
+02:49:10,600 --> 02:49:15,120
+olayı veya hangi bir olayı modellemiş olacaksınız, onu nasıl modellersiniz,
+
+1525
+02:49:16,120 --> 02:49:19,180
+basitçe onun pratiğini yapmış olursunuz.
+
+1526
+02:49:19,920 --> 02:49:21,200
+Tamamdır hocam, teşekkürler.
+
+1527
+02:49:22,680 --> 02:49:25,380
+Evet.
+
+1528
+02:49:26,840 --> 02:49:28,380
+Any other question?
+
+1529
+02:49:29,860 --> 02:49:36,220
+Because now, if I start, I have to go at least half an hour, one hour more, but now I stop
+
+1530
+02:49:36,220 --> 02:49:36,579
+here.
+
+1531
+02:49:41,399 --> 02:49:43,000
+We continue next week.
+
+1532
+02:49:50,360 --> 02:49:51,100
+Görüşürüz hocam.
+
+1533
+02:49:51,559 --> 02:49:52,120
+Teşekkürler.
+
+1534
+02:49:52,680 --> 02:49:55,040
+If you have no question, then have a nice weekend.
+
+1535
+02:49:57,260 --> 02:49:57,819
+Teşekkürler.
+
+1536
+02:49:57,840 --> 02:49:58,380
+Görüşmek üzere.
+
+1537
+02:49:58,680 --> 02:49:59,260
+Görüşmek üzere.
+
+1538
+02:49:59,260 --> 02:49:59,899
+İyi günler hocam.
+
+1539
+02:50:00,000 --> 02:50:00,639
+iyi günler
+
