@@ -1,0 +1,6916 @@
+1
+00:00:00,000 --> 00:00:29,980
+Altyazı M.K.
+
+2
+00:00:30,000 --> 00:00:59,980
+Altyazı M.K.
+
+3
+00:01:00,000 --> 00:01:29,980
+Altyazı M.K.
+
+4
+00:01:30,000 --> 00:01:59,980
+Altyazı M.K.
+
+5
+00:02:00,000 --> 00:02:29,979
+Altyazı M.K.
+
+6
+00:02:30,000 --> 00:02:59,979
+Altyazı M.K.
+
+7
+00:03:00,000 --> 00:03:29,979
+Altyazı M.K.
+
+8
+00:03:30,000 --> 00:03:40,759
+Altyazı M.K.
+
+9
+00:03:40,759 --> 00:03:42,439
+Kaldığımız yerden devam edelim.
+
+10
+00:04:00,000 --> 00:04:29,959
+Altyazı M.K.
+
+11
+00:04:29,959 --> 00:04:29,980
+Altyazı M.K.
+
+12
+00:04:30,000 --> 00:04:58,680
+Altyazı M.K.
+
+13
+00:04:58,680 --> 00:04:58,759
+Altyazı M.K.
+
+14
+00:04:58,759 --> 00:04:58,839
+Altyazı M.K.
+
+15
+00:04:58,839 --> 00:04:58,899
+Altyazı M.K.
+
+16
+00:04:58,899 --> 00:04:58,920
+Altyazı M.K.
+
+17
+00:04:58,920 --> 00:04:58,959
+Altyazı M.K.
+
+18
+00:04:58,959 --> 00:04:59,000
+Altyazı M.K.
+
+19
+00:04:59,000 --> 00:04:59,060
+Altyazı M.K.
+
+20
+00:04:59,060 --> 00:04:59,100
+Altyazı M.K.
+
+21
+00:04:59,100 --> 00:04:59,160
+Altyazı M.K.
+
+22
+00:04:59,160 --> 00:04:59,180
+Altyazı M.K.
+
+23
+00:04:59,180 --> 00:04:59,240
+Altyazı M.K.
+
+24
+00:04:59,240 --> 00:04:59,300
+Altyazı M.K.
+
+25
+00:04:59,300 --> 00:04:59,339
+Altyazı M.K.
+
+26
+00:04:59,339 --> 00:04:59,360
+Altyazı M.K.
+
+27
+00:04:59,360 --> 00:04:59,379
+Altyazı M.K.
+
+28
+00:04:59,379 --> 00:04:59,399
+Altyazı M.K.
+
+29
+00:04:59,399 --> 00:04:59,420
+Altyazı M.K.
+
+30
+00:04:59,420 --> 00:04:59,439
+Altyazı M.K.
+
+31
+00:04:59,439 --> 00:04:59,459
+Altyazı M.K.
+
+32
+00:04:59,459 --> 00:04:59,480
+Altyazı M.K.
+
+33
+00:04:59,480 --> 00:04:59,540
+Altyazı M.K.
+
+34
+00:04:59,540 --> 00:05:29,520
+Altyazı M.K.
+
+35
+00:05:00,000 --> 00:05:19,939
+of PEARL is matching and substitution possibilities offered by the PEARL.
+
+36
+00:05:19,939 --> 00:05:31,759
+The matching operations in PEARL is quite powerful, therefore the PEARL is so popular
+
+37
+00:05:31,759 --> 00:05:34,740
+in bioinformatics.
+
+38
+00:05:34,740 --> 00:05:41,339
+Almost every script we write in PEARL will have some kind of pattern matching operation
+
+39
+00:05:41,339 --> 00:05:49,600
+because very often we want to seek something out and then take an action when you find
+
+40
+00:05:49,600 --> 00:05:49,920
+it.
+
+41
+00:05:49,939 --> 00:05:55,600
+Either replace it or do something else.
+
+42
+00:05:55,600 --> 00:06:07,800
+Matching and substitution are quite important because this is how we do editing on the fly.
+
+43
+00:06:07,800 --> 00:06:15,519
+Especially the data in bioinformatics is in the form of string or characters or character
+
+44
+00:06:15,519 --> 00:06:19,600
+array or string.
+
+45
+00:06:19,600 --> 00:06:29,280
+So this is how we create content customized to our web visitors if we use PEARL to design
+
+46
+00:06:29,280 --> 00:06:33,180
+web pages.
+
+47
+00:06:33,180 --> 00:06:40,820
+We need to be able to open HTML templates, for example, and swap in information pertaining
+
+48
+00:06:40,820 --> 00:06:43,260
+to our visitors.
+
+49
+00:06:43,260 --> 00:06:49,460
+So matching and then substituting is just the way to do it.
+
+50
+00:06:49,600 --> 00:06:58,920
+This is an essential operation in bioinformatics as well, we will see later.
+
+51
+00:06:58,920 --> 00:07:02,320
+So pattern matching is important anyway.
+
+52
+00:07:02,320 --> 00:07:14,480
+We will see some concepts which makes easy, makes pattern matching operation easy.
+
+53
+00:07:14,480 --> 00:07:16,360
+This complicated search expression.
+
+54
+00:07:16,360 --> 00:07:17,600
+It is very easy.
+
+55
+00:07:17,600 --> 00:07:18,600
+It is very easy.
+
+56
+00:07:18,600 --> 00:07:19,600
+It is very easy.
+
+57
+00:07:19,600 --> 00:07:21,460
+And we did some here in language.
+
+58
+00:07:21,460 --> 00:07:23,480
+But just go ahead and do you ever need a virtual publishing office.
+
+59
+00:07:23,480 --> 00:07:24,480
+Yes.
+
+60
+00:07:24,480 --> 00:07:25,740
+Yeah it is fine.
+
+61
+00:07:25,740 --> 00:07:26,760
+Well, and then we also have very little further questions.
+
+62
+00:07:26,760 --> 00:07:27,840
+So we will have lots of time for questions.
+
+63
+00:07:27,840 --> 00:07:28,760
+And then we will assume that we have comments done
+
+64
+00:07:28,760 --> 00:07:29,439
+So we wait for the next two slides before I end our presentation.
+
+65
+00:07:29,439 --> 00:07:31,340
+So I say goodbye to everyone.
+
+66
+00:07:31,340 --> 00:07:34,080
+I hope this is helpful for you for watching.
+
+67
+00:07:34,080 --> 00:07:47,840
+We are like here this zawsze we model our
+
+68
+00:07:47,840 --> 00:07:49,520
+Aqours.
+
+69
+00:07:49,519 --> 00:07:59,439
+matching corporations is binding cooperators when we do a pattern match we basically need three
+
+70
+00:07:59,439 --> 00:08:07,680
+things in pattern matching corporations it there are two things the first the text we are searching
+
+71
+00:08:07,680 --> 00:08:15,279
+through this is the one basic component in pattern matching cooperation then the pattern we are
+
+72
+00:08:15,280 --> 00:08:27,040
+looking for the third one is a way of linking the pattern for the search text so these are three
+
+73
+00:08:27,600 --> 00:08:36,879
+things we need in a pattern matching corporations let's take a simple example say for example we
+
+74
+00:08:36,879 --> 00:08:44,960
+want to see whether a string variable has the value of success now let's see how this is done
+
+75
+00:08:45,279 --> 00:08:46,079
+in perl
+
+76
+00:08:50,079 --> 00:08:53,039
+following is a simple perl script
+
+77
+00:08:55,439 --> 00:09:04,000
+to to check if a variable match success or not probably you've done this in other languages
+
+78
+00:09:04,000 --> 00:09:11,759
+quite a lot but then if you have done it then you will have opportunity to compare with the string
+
+79
+00:09:12,559 --> 00:09:14,319
+which i'm going to show in a minute
+
+80
+00:09:15,439 --> 00:09:24,559
+first we assign a scatter variable known as word the string success
+
+81
+00:09:27,919 --> 00:09:40,399
+we use double quotes obviously to indicate that it's a string then we check it if it matches
+
+82
+00:09:42,799 --> 00:09:44,559
+with the word success
+
+83
+00:09:46,240 --> 00:09:47,839
+and then we see that it matches with the word success
+
+84
+00:09:48,639 --> 00:09:54,799
+okay these are two perl operations now we'll go back to the same sequence
+
+85
+00:09:55,839 --> 00:09:57,839
+so let's see how it works
+
+86
+00:09:59,519 --> 00:10:02,720
+we will first use our current parameter
+
+87
+00:10:00,000 --> 00:10:08,799
+case we have an equivalent tilde then m to backslash we'll see in a minute what they mean
+
+88
+00:10:03,199 --> 00:10:07,839
+this is the perl we are going to test
+
+89
+00:10:08,559 --> 00:10:11,839
+and then we'll do the same for the next few operations
+
+90
+00:10:08,799 --> 00:10:19,460
+then we print if there is a match otherwise we print something else
+
+91
+00:10:11,839 --> 00:10:13,439
+we will test this to see if we can connect it with the perl
+
+92
+00:10:13,439 --> 00:10:13,759
+information
+
+93
+00:10:19,460 --> 00:10:26,399
+that's very simple construct obviously but important thing here we see is this
+
+94
+00:10:30,000 --> 00:10:42,139
+here this one this one and these two backslashes
+
+95
+00:10:42,139 --> 00:10:55,059
+the this equals tilde is known as binding operator binding means
+
+96
+00:10:55,059 --> 00:11:00,000
+okay it binds
+
+97
+00:11:00,000 --> 00:11:08,100
+success to word
+
+98
+00:11:08,100 --> 00:11:16,120
+it binds the string being searched with the pattern that specifies the search
+
+99
+00:11:16,120 --> 00:11:24,220
+and it links these two together and causes the search to take place that operator
+
+100
+00:11:24,220 --> 00:11:29,120
+the m success this construct here
+
+101
+00:11:29,120 --> 00:11:29,980
+is the matching operator
+
+102
+00:11:29,980 --> 00:11:37,480
+especially m for matching and here double backslash are delimiters
+
+103
+00:11:40,560 --> 00:11:46,840
+the m stands for matching as i already said to make it easy to remember the slash characters
+
+104
+00:11:46,840 --> 00:11:53,720
+here are the delimiters they surround the specified pattern now basically this
+
+105
+00:11:55,159 --> 00:11:57,960
+small script tries to match
+
+106
+00:11:59,560 --> 00:11:59,960
+the
+
+107
+00:11:59,980 --> 00:12:07,720
+content of this word variable with this pattern if there is a match if they are the same then they
+
+108
+00:12:07,720 --> 00:12:18,720
+it will tell us that okay it matched otherwise it will print that it did not find success okay
+
+109
+00:12:21,240 --> 00:12:29,360
+generally the value of the matching statement will return one if there is a match zero if
+
+110
+00:12:29,980 --> 00:12:31,560
+there is no match
+
+111
+00:12:31,560 --> 00:12:42,560
+so
+
+112
+00:12:42,560 --> 00:12:44,560
+so
+
+113
+00:12:44,560 --> 00:12:46,560
+so
+
+114
+00:12:46,560 --> 00:12:48,560
+so
+
+115
+00:12:48,560 --> 00:12:50,560
+so
+
+116
+00:12:50,560 --> 00:12:52,560
+so
+
+117
+00:12:52,560 --> 00:12:54,560
+so
+
+118
+00:12:54,560 --> 00:12:56,560
+so
+
+119
+00:12:56,560 --> 00:12:58,560
+so
+
+120
+00:12:58,560 --> 00:12:59,560
+so
+
+121
+00:12:59,560 --> 00:13:07,140
+negative match is also possible
+
+122
+00:13:07,140 --> 00:13:16,140
+what we mean by negative match instead of matching it will search the pattern which does not match
+
+123
+00:13:16,140 --> 00:13:18,140
+in this case we can see that the pattern does not match
+
+124
+00:13:18,140 --> 00:13:20,140
+so
+
+125
+00:13:20,140 --> 00:13:22,140
+so
+
+126
+00:13:22,140 --> 00:13:24,140
+so
+
+127
+00:13:24,140 --> 00:13:26,140
+so
+
+128
+00:13:26,140 --> 00:13:28,140
+so
+
+129
+00:13:28,139 --> 00:13:37,679
+in this case we can write respective line as this one in perl this not
+
+130
+00:13:38,039 --> 00:13:43,840
+is described by the exclamation mark
+
+131
+00:13:43,840 --> 00:13:55,159
+this means not if we place and not before these variables then this will be not matching operation
+
+132
+00:13:55,159 --> 00:13:55,899
+this means not if we place and not before these variables then this will be not matching operation
+
+133
+00:13:55,899 --> 00:14:10,399
+However, we can use an alternative approach as the pearl motto was, there is always more
+
+134
+00:14:10,399 --> 00:14:21,059
+than one way to do it, there is a negative binding operator which is indicated here,
+
+135
+00:14:21,060 --> 00:14:35,640
+not tilde, so we can equally declare the statement as this one, instead of matching operator
+
+136
+00:14:35,640 --> 00:14:49,600
+which was equals tilde, now we can just replace equal sign with exclamation mark, and this
+
+137
+00:14:49,600 --> 00:14:50,600
+will be tilde.
+
+138
+00:14:51,060 --> 00:14:59,340
+Negative binding operators, then this operation will try not to match.
+
+139
+00:15:00,000 --> 00:15:03,440
+the search text okay
+
+140
+00:15:06,720 --> 00:15:10,879
+we can use normal parentheses to group pattern elements
+
+141
+00:15:13,919 --> 00:15:23,840
+these these things are probably common to other languages as well there might be some variations
+
+142
+00:15:23,840 --> 00:15:32,240
+for example in some languages tilde is used or not or some other characters might be
+
+143
+00:15:32,240 --> 00:15:40,160
+used but in pearl for example exclamation mark is used and asterix means that the preceding
+
+144
+00:15:40,160 --> 00:15:46,480
+character element or group of elements may occur zero times one time or many times
+
+145
+00:15:48,960 --> 00:15:53,600
+it is known as wild character i think in in dos
+
+146
+00:15:53,600 --> 00:15:53,840
+if
+
+147
+00:15:53,840 --> 00:16:05,680
+anybody remembers those you could use to list any files with any extension with a certain name for
+
+148
+00:16:05,680 --> 00:16:16,639
+example for example x dot star means you list all files with all extensions including x dot
+
+149
+00:16:16,639 --> 00:16:20,159
+x a x dot part x dot dot or whatever
+
+150
+00:16:22,720 --> 00:16:28,559
+a plus means that the preceding element or group of elements must occur at least once
+
+151
+00:16:29,519 --> 00:16:37,199
+the question mark matches zero or one time these are matching part of matching operation
+
+152
+00:16:38,799 --> 00:16:45,279
+for example these are the examples such a pattern
+
+153
+00:16:46,000 --> 00:16:46,639
+within the
+
+154
+00:16:46,639 --> 00:16:55,120
+limiters will match f r f f r and d friend front and back
+
+155
+00:16:56,639 --> 00:17:03,919
+this one will match front front front and back but it will not match this one there are
+
+156
+00:17:05,680 --> 00:17:16,559
+many many possibilities this one will match 11 1 0 1 1 0 0 1 and this this one matches
+
+157
+00:17:16,640 --> 00:17:18,880
+this one matches bar 1 etc etc
+
+158
+00:17:21,360 --> 00:17:25,360
+there are much more examples for example square bracket match
+
+159
+00:17:26,080 --> 00:17:29,920
+a class of single characters and these are examples
+
+160
+00:17:34,160 --> 00:17:38,400
+then you can use within delimiter such patterns
+
+161
+00:17:42,080 --> 00:17:45,280
+this one matches characters but are not
+
+162
+00:17:46,640 --> 00:17:56,640
+of not whiskers still
+
+163
+00:17:56,640 --> 00:18:06,800
+this one matches any non-digit characters for example curly brace braces allow more precise
+
+164
+00:18:06,800 --> 00:18:16,000
+specification of repeated fields such as for example matches any sequence of six digits and
+
+165
+00:18:16,160 --> 00:18:21,200
+and these are just examples by the way there are thousands of such possibilities
+
+166
+00:18:24,480 --> 00:18:28,240
+patterns float unless anchored anchoring means
+
+167
+00:18:30,720 --> 00:18:36,880
+this current sign this one outside this bracket
+
+168
+00:18:36,880 --> 00:18:43,920
+anchors a pattern to the beginning and dollar sign anchors a pattern at the end
+
+169
+00:18:44,880 --> 00:18:46,880
+and here are some examples
+
+170
+00:18:54,960 --> 00:19:01,920
+okay this means that should be at the beginning not at the end for example
+
+171
+00:19:01,920 --> 00:19:05,760
+at will match attention but it will not match flat
+
+172
+00:19:06,880 --> 00:19:10,080
+so
+
+173
+00:19:13,600 --> 00:19:22,720
+the backslash other characters simply match themselves but the characters such as these ones
+
+174
+00:19:25,520 --> 00:19:31,200
+and usually this backslash character must be escaped with a backslash
+
+175
+00:19:32,080 --> 00:19:34,800
+this backslash to be taken literally does
+
+176
+00:19:36,240 --> 00:19:36,800
+we can see
+
+177
+00:19:36,880 --> 00:19:49,680
+that this one for example matches this but this one matches 10.2 but not 10 q2 or 10 52.
+
+178
+00:19:54,960 --> 00:19:59,920
+so if a backslash precedes an alpha
+
+179
+00:20:00,000 --> 00:20:08,759
+this sequence takes a special meaning typically a short form of a square bucket character
+
+180
+00:20:08,759 --> 00:20:19,000
+class this one for example is decimal zero to nine digits character class for example
+
+181
+00:20:19,000 --> 00:20:34,720
+this one is the same as this one because of this character this one yeah this one and
+
+182
+00:20:34,720 --> 00:20:42,339
+this one is the same
+
+183
+00:20:42,339 --> 00:20:43,339
+okay
+
+184
+00:20:43,339 --> 00:20:48,180
+a simple
+
+185
+00:20:48,180 --> 00:20:48,980
+backslash s
+
+186
+00:20:48,980 --> 00:20:58,519
+specifies white space and there are some other escaping characters such as t n r f
+
+187
+00:20:58,519 --> 00:21:01,279
+this is blank
+
+188
+00:21:01,279 --> 00:21:02,279
+this is
+
+189
+00:21:02,279 --> 00:21:13,700
+this is blank this is and tab this is end of line or new line this is carriage return
+
+190
+00:21:13,700 --> 00:21:18,160
+and this is form feed if it comes at the end of
+
+191
+00:21:18,160 --> 00:21:18,960
+line
+
+192
+00:21:18,980 --> 00:21:29,480
+a statement and it will we use sometimes this for example new line a character may be specified
+
+193
+00:21:29,480 --> 00:21:30,480
+in hexadecimal
+
+194
+00:21:30,480 --> 00:21:40,440
+as this one backslash x followed by two hexadecimal digits
+
+195
+00:21:40,440 --> 00:21:46,980
+a vertical bar means off
+
+196
+00:21:46,980 --> 00:21:48,819
+a vertical bar means off
+
+197
+00:21:48,819 --> 00:21:48,839
+a vertical bar means off
+
+198
+00:21:48,839 --> 00:21:48,920
+a vertical bar means off
+
+199
+00:21:48,920 --> 00:21:48,960
+a vertical bar means off
+
+200
+00:21:48,980 --> 00:21:51,980
+a vertical bar means off
+
+201
+00:21:51,980 --> 00:21:52,039
+a vertical bar means off
+
+202
+00:21:52,039 --> 00:21:54,680
+a vertical bar means off for example
+
+203
+00:21:54,680 --> 00:21:54,700
+for example
+
+204
+00:21:54,700 --> 00:21:57,360
+for example in this statement
+
+205
+00:21:57,360 --> 00:21:57,380
+in this statement
+
+206
+00:21:57,380 --> 00:22:03,440
+in this statement if answer not easy is if answer equals
+
+207
+00:22:03,440 --> 00:22:03,460
+if answer not easy is if answer equals
+
+208
+00:22:03,460 --> 00:22:05,480
+if answer not easy is if answer equals either y
+
+209
+00:22:05,480 --> 00:22:05,500
+either y
+
+210
+00:22:05,500 --> 00:22:10,120
+either y yes yeah or whatever then this will print
+
+211
+00:22:10,120 --> 00:22:10,140
+yes yeah or whatever then this will print
+
+212
+00:22:10,140 --> 00:22:18,920
+yes yeah or whatever then this will print this word
+
+213
+00:22:18,920 --> 00:22:18,940
+this word
+
+214
+00:22:18,940 --> 00:22:18,960
+this word
+
+215
+00:22:18,980 --> 00:22:31,980
+So we can try these things, but there is no need. I think you can try yourself. You can write a small script, for example.
+
+216
+00:22:31,980 --> 00:22:42,980
+You can enter something from the keyboard and get it checked by this statement, then get it printed.
+
+217
+00:22:42,980 --> 00:22:49,980
+To save the time, I just...
+
+218
+00:22:49,980 --> 00:23:04,980
+Here there is one addition here. Probably this is worth trying.
+
+219
+00:23:04,980 --> 00:23:11,980
+And see what happens.
+
+220
+00:23:12,980 --> 00:23:22,980
+Let me...
+
+221
+00:23:22,980 --> 00:23:25,980
+Because...
+
+222
+00:23:25,980 --> 00:23:32,980
+I think that was the...
+
+223
+00:23:32,980 --> 00:23:37,980
+And it is not bad.
+
+224
+00:23:37,980 --> 00:23:42,980
+OK, I have already written this file here.
+
+225
+00:23:42,980 --> 00:23:48,980
+Just... I added this keyword input and another print.
+
+226
+00:23:48,980 --> 00:23:52,980
+Just to try. Let's try this and see what happens.
+
+227
+00:23:52,980 --> 00:23:59,980
+Uh...
+
+228
+00:23:59,980 --> 00:24:03,980
+Run the command prompt.
+
+229
+00:24:03,980 --> 00:24:07,980
+Go to the...
+
+230
+00:24:07,980 --> 00:24:10,980
+See the codes.
+
+231
+00:24:10,980 --> 00:24:15,980
+Perl.
+
+232
+00:24:15,980 --> 00:24:16,980
+X.
+
+233
+00:24:16,980 --> 00:24:18,980
+PL.
+
+234
+00:24:18,980 --> 00:24:21,980
+It is waiting something from the keyword.
+
+235
+00:24:21,980 --> 00:24:25,980
+Let me type...
+
+236
+00:24:25,980 --> 00:24:27,980
+What was it?
+
+237
+00:24:27,980 --> 00:24:30,980
+Y, for example.
+
+238
+00:24:30,980 --> 00:24:33,980
+OK, it accepted.
+
+239
+00:24:33,980 --> 00:24:36,980
+This time, again, let me try.
+
+240
+00:24:36,980 --> 00:24:38,980
+Y accepted.
+
+241
+00:24:38,980 --> 00:24:49,980
+Did you notice a small I here?
+
+242
+00:24:49,980 --> 00:24:51,980
+Probably you are wondering what it means.
+
+243
+00:24:51,980 --> 00:24:59,980
+Let me delete it and try it again.
+
+244
+00:24:59,980 --> 00:25:25,980
+I am sorry.
+
+245
+00:25:00,000 --> 00:25:25,880
+I just say yes, okay, it worked, then let me write it again and type Y, it did not work.
+
+246
+00:25:25,880 --> 00:25:43,600
+So that means, you know, this I here means that it tells Perl that either capital letter Y or small letter Y will not make a difference.
+
+247
+00:25:43,600 --> 00:25:49,000
+If we don't put I, it will make a difference because Perl was case sensitive.
+
+248
+00:25:50,100 --> 00:25:53,640
+The I makes it case insensitive.
+
+249
+00:25:54,960 --> 00:25:55,600
+Now they get...
+
+250
+00:25:55,880 --> 00:25:59,740
+Again, I save it and run it again.
+
+251
+00:26:02,660 --> 00:26:08,400
+For example, I write yes, it will accept.
+
+252
+00:26:08,580 --> 00:26:15,820
+Run it again, I write capital yes, it will accept again.
+
+253
+00:26:16,540 --> 00:26:24,960
+So there are hundreds of such possibilities in Perl.
+
+254
+00:26:24,960 --> 00:26:25,760
+If we go...
+
+255
+00:26:25,880 --> 00:26:40,460
+If we go back, there should be here, this clears here, you know, this will match, for example, 80, 80, 80, 80, everything.
+
+256
+00:26:40,460 --> 00:26:51,420
+But if we don't use I as this one, it will match only 80 and nothing else.
+
+257
+00:26:55,880 --> 00:27:07,360
+So there are hundreds of such pattern matching possibilities.
+
+258
+00:27:11,360 --> 00:27:19,340
+So, all these things are within the context of regular expressions.
+
+259
+00:27:20,660 --> 00:27:25,760
+All pattern matching in Perl is based on the...
+
+260
+00:27:25,759 --> 00:27:27,759
+The concept of regular expressions.
+
+261
+00:27:28,839 --> 00:27:43,379
+Regular expressions are an important part of computer science, as we already mentioned, and there are entire books, which are devoted to this topic.
+
+262
+00:27:45,539 --> 00:27:55,539
+These regular expressions form a standard way of expressing almost any text pattern unambiguously.
+
+263
+00:27:55,759 --> 00:27:56,599
+It's done.
+
+264
+00:27:56,599 --> 00:28:02,200
+This is a mechanism to select specific strings from a set of character strings.
+
+265
+00:28:03,200 --> 00:28:13,039
+As a set of characters, metacharacters and operators that define a string or group of strings in a search pattern.
+
+266
+00:28:14,740 --> 00:28:23,819
+A string containing wildcard characters and operations that define a set of one or more possible strings.
+
+267
+00:28:23,819 --> 00:28:24,819
+So everything.
+
+268
+00:28:25,759 --> 00:28:35,359
+regular expressions which is usually abbreviated as reg apps or reg x or reg xp
+
+269
+00:28:37,200 --> 00:28:43,920
+is a string that describes or matches a set of strings according to
+
+270
+00:28:43,920 --> 00:28:48,079
+certain syntax rules which i have given some of them
+
+271
+00:28:48,079 --> 00:29:02,240
+regular expressions are used by many text editors and utilities to search and manipulate bodies of text based on certain patterns
+
+272
+00:29:03,919 --> 00:29:11,759
+so there are many programming languages supporting regular expressions for string manipulations
+
+273
+00:29:12,559 --> 00:29:17,839
+some languages have these capabilities
+
+274
+00:29:18,079 --> 00:29:25,119
+such as pearl and some others have probably some extra packages
+
+275
+00:29:26,399 --> 00:29:34,639
+for example python has packages for regular expressions it is not built in but it has
+
+276
+00:29:35,359 --> 00:29:45,039
+this is when comparing pearl and python in this respect pearl is far more superior to python
+
+277
+00:29:45,039 --> 00:29:46,319
+but python has
+
+278
+00:29:48,079 --> 00:29:49,839
+respective packages
+
+279
+00:29:51,359 --> 00:29:56,399
+to enable the utilization of regular expressions in an easy manner
+
+280
+00:29:56,399 --> 00:30:00,000
+again
+
+281
+00:30:00,000 --> 00:30:08,000
+Tekrar geri dönelim. Perl, genel program bilgisayarının en güvenilir yöntemlerinden birkaçıdır.
+
+282
+00:30:10,000 --> 00:30:14,000
+Örneğin, onların açıklanmadan önce kullanılabileceği varoluşlar.
+
+283
+00:30:15,000 --> 00:30:16,000
+Bunu daha önce bahsettik.
+
+284
+00:30:17,000 --> 00:30:27,000
+Bu yüzden, Perl'in varoluşlarından birkaçıdır.
+
+285
+00:30:30,000 --> 00:30:35,000
+Ayrıca, daha sonra Perl'in 3 bilgisayar yöntemlerinden birkaçıdır.
+
+286
+00:30:36,000 --> 00:30:38,000
+Array ve hash yöntemlerinden birkaçıdır.
+
+287
+00:30:39,000 --> 00:30:40,000
+Ama onları açıklamak zorundasınız.
+
+288
+00:30:41,000 --> 00:30:46,000
+Ayrıca, onların açıklanmadan önce kullanılabileceği varoluşlar da varoluşlarından birkaçıdır.
+
+289
+00:30:47,000 --> 00:30:48,000
+Örneğin, birkaçıdır.
+
+290
+00:30:49,000 --> 00:30:50,000
+Örneğin, birkaçıdır.
+
+291
+00:30:51,000 --> 00:30:52,000
+Örneğin, birkaçıdır.
+
+292
+00:30:53,000 --> 00:30:55,000
+Örneğin, birkaçıdır.
+
+293
+00:30:56,000 --> 00:30:58,000
+Örneğin, birkaçıdır.
+
+294
+00:30:59,000 --> 00:31:00,000
+Örneğin, birkaçıdır.
+
+295
+00:31:01,000 --> 00:31:02,000
+Daha sonra, birkaçıdır.
+
+296
+00:31:03,000 --> 00:31:05,000
+Böylece, varoluşlarından birkaçıdır size.
+
+297
+00:31:06,000 --> 00:31:08,000
+Ama siz de yapmamalısınız.
+
+298
+00:31:09,000 --> 00:31:14,000
+Bu yüzden, bütün varoluşlar sunumda birkaçıdır.
+
+299
+00:31:15,000 --> 00:31:18,000
+Fakat, benim kekameraları kullanabiliriz.
+
+300
+00:31:21,000 --> 00:31:26,000
+Bu, varoluşların leksik varoluşlarına dönüşecektir.
+
+301
+00:31:27,000 --> 00:31:29,000
+Bu, leksik varoluşlar.
+
+302
+00:31:30,000 --> 00:31:40,000
+local variables but it is a very variable type in perl it leaves from the place where it was
+
+303
+00:31:40,000 --> 00:31:50,000
+declared using the my then keyword till the end of the current block so by default the use of my
+
+304
+00:31:50,559 --> 00:31:57,519
+variables is optional of course you don't have to but if you can force your code to
+
+305
+00:31:57,519 --> 00:32:00,879
+to sticker rules
+
+306
+00:32:07,599 --> 00:32:11,440
+the existence is referred to as strictness
+
+307
+00:32:14,720 --> 00:32:22,639
+and is switched on by adding the following line to the top of a program this makes similar to
+
+308
+00:32:22,639 --> 00:32:27,440
+conventional languages such as c when you write program
+
+309
+00:32:27,519 --> 00:32:30,240
+s and other was by using the strict you strict using the log
+
+310
+00:32:30,240 --> 00:32:34,259
+existing with the month when essentially we are flourishing the training alrededor
+
+311
+00:32:34,259 --> 00:32:37,799
+of the use of a pro part of the pig in which�
+
+312
+00:32:41,119 --> 00:32:42,160
+so
+
+313
+00:32:43,440 --> 00:32:49,119
+t
+
+314
+00:32:49,119 --> 00:32:55,599
+you have to use this
+
+315
+00:32:55,599 --> 00:32:57,519
+metric before they are used so if you use this aussi then you have to declare before they are used then all the theoretical
+
+316
+00:32:57,519 --> 00:33:03,519
+Ayrıca sub rutinler de engellemelidir.
+
+317
+00:33:03,519 --> 00:33:07,519
+Bu daha tradisyonel bir yöntem.
+
+318
+00:33:07,519 --> 00:33:10,519
+Neden bunu yapmalıyız?
+
+319
+00:33:10,519 --> 00:33:14,519
+Programlar büyüklüğüne kadar daha zorlaşırlar.
+
+320
+00:33:14,519 --> 00:33:38,519
+Büyük programlar yazarsanız, genel yöntemleri kullanmak daha iyi olur.
+
+321
+00:33:44,519 --> 00:33:57,519
+Büyük programlar yapmadan önce yapılan işlemleri kontrol ediyoruz.
+
+322
+00:33:57,519 --> 00:34:02,519
+Örneğin, bu programı bu şekilde düşünüyoruz.
+
+323
+00:34:02,519 --> 00:34:04,519
+Bu B-Streak programı.
+
+324
+00:34:04,519 --> 00:34:06,519
+Bu yöntemi kullanıyoruz.
+
+325
+00:34:06,519 --> 00:34:08,519
+Büyük kullanıyoruz.
+
+326
+00:34:08,519 --> 00:34:11,519
+Sonra mesaj kullanıyoruz.
+
+327
+00:34:11,519 --> 00:34:14,519
+Bu mesaj ve print mesaj.
+
+328
+00:34:14,519 --> 00:34:27,519
+Bunu kullanırsanız,
+
+329
+00:34:27,519 --> 00:34:35,519
+sonucu görmek zorundasınız.
+
+330
+00:34:35,519 --> 00:34:40,519
+Bu B-Streak'ı kullanmış olduklarından dolayı,
+
+331
+00:34:40,519 --> 00:34:43,519
+ama
+
+332
+00:34:43,519 --> 00:34:44,519
+bu yöntemi yapmadınız.
+
+333
+00:34:44,519 --> 00:34:45,519
+Büyük programın sonucu,
+
+334
+00:34:45,519 --> 00:34:46,519
+sonucu,
+
+335
+00:34:46,519 --> 00:34:47,519
+sonucu,
+
+336
+00:34:47,519 --> 00:34:48,519
+sonucu ve
+
+337
+00:34:48,519 --> 00:34:49,519
+sonucu response'i
+
+338
+00:34:49,519 --> 00:34:51,519
+bu yöntemlerde
+
+339
+00:34:51,519 --> 00:34:52,519
+hızlıca
+
+340
+00:34:52,519 --> 00:34:53,519
+yapabilirsiniz.
+
+341
+00:34:53,519 --> 00:34:54,519
+Şimdi böyle bir yolundan
+
+342
+00:34:54,519 --> 00:34:55,519
+geçelim.
+
+343
+00:34:55,519 --> 00:34:56,519
+Tekrar
+
+344
+00:34:56,519 --> 00:34:57,519
+yazı
+
+345
+00:34:57,519 --> 00:34:58,519
+var.
+
+346
+00:34:58,519 --> 00:34:59,519
+Mesaj
+
+347
+00:34:59,519 --> 00:35:00,519
+variable
+
+348
+00:35:00,000 --> 00:35:05,380
+Mexico, if you use R, it becomes a global variable.
+
+349
+00:35:00,519 --> 00:35:01,519
+leksik
+
+350
+00:35:01,519 --> 00:35:02,519
+variable
+
+351
+00:35:02,519 --> 00:35:03,519
+Nesi
+
+352
+00:35:03,519 --> 00:35:04,519
+1
+
+353
+00:35:04,519 --> 00:35:05,519
+e
+
+354
+00:35:05,380 --> 00:35:13,440
+So when you try to invoke it, this strict program,
+
+355
+00:35:05,519 --> 00:35:06,519
+nou
+
+356
+00:35:06,519 --> 00:35:07,519
+si
+
+357
+00:35:07,519 --> 00:35:08,519
+b
+
+358
+00:35:08,519 --> 00:35:09,519
+ih
+
+359
+00:35:09,519 --> 00:35:10,519
+te
+
+360
+00:35:10,519 --> 00:35:11,519
+y
+
+361
+00:35:11,519 --> 00:35:12,519
+e
+
+362
+00:35:12,519 --> 00:35:13,519
+e
+
+363
+00:35:13,440 --> 00:35:22,719
+Perl will complain that the strictness rules have been violated.
+
+364
+00:35:13,519 --> 00:35:14,519
+b
+
+365
+00:35:22,719 --> 00:35:29,340
+This is just a message you are likely to get.
+
+366
+00:35:29,340 --> 00:35:35,559
+It will not compile.
+
+367
+00:35:35,559 --> 00:35:44,800
+Once you use UStrict, then the correct code will be
+
+368
+00:35:44,800 --> 00:35:56,600
+a code which includes this line with is my.
+
+369
+00:35:56,600 --> 00:35:59,320
+Then it becomes a lexical variable.
+
+370
+00:35:59,320 --> 00:36:04,320
+Then it will run after correction.
+
+371
+00:36:04,320 --> 00:36:06,539
+This is the new program with my.
+
+372
+00:36:06,539 --> 00:36:10,120
+Then when you run it, you will get this.
+
+373
+00:36:10,120 --> 00:36:13,420
+This is the message printed on the screen.
+
+374
+00:36:19,780 --> 00:36:22,120
+You can use subs as well.
+
+375
+00:36:22,120 --> 00:36:27,640
+Use subs directive to declare subroutines
+
+376
+00:36:27,640 --> 00:36:29,240
+at the top of the program.
+
+377
+00:36:29,320 --> 00:36:34,720
+As an example, you can use UStrict after using this UStrict,
+
+378
+00:36:34,720 --> 00:36:37,240
+If you are going to use a subroutine,
+
+379
+00:36:37,240 --> 00:36:41,700
+then we have to use a subroutine with this use keyword.
+
+380
+00:36:41,700 --> 00:36:50,300
+Instead of normally you would be able to use as sub Q, W,
+
+381
+00:36:50,300 --> 00:36:53,059
+whatever the function.
+
+382
+00:36:53,059 --> 00:36:56,519
+If you did not use this UStrict.
+
+383
+00:36:56,519 --> 00:36:58,880
+But if you use this at the beginning of the program,
+
+384
+00:36:58,880 --> 00:36:59,280
+you will get the Sbar.
+
+385
+00:36:59,320 --> 00:37:12,840
+then you have to use this use before calling the subroutine another interesting thing in pearl is
+
+386
+00:37:13,640 --> 00:37:24,519
+pearl one liners as you as you remember the pearl was developed as part of some
+
+387
+00:37:24,519 --> 00:37:37,380
+uh this in nasa jpl lab he wanted to organize the guy called the larry wanted to organize his
+
+388
+00:37:37,380 --> 00:37:47,280
+messages in an easy way so he started by writing scripts basically so probably he had written quite
+
+389
+00:37:47,280 --> 00:37:54,480
+a lot of one-liners it's in a common prompt just one line and do quite few tasks
+
+390
+00:37:54,480 --> 00:37:54,500
+so probably he had written quite a lot of one-liners it's in a common prompt just one line and do quite few tasks
+
+391
+00:37:54,519 --> 00:38:07,259
+instead of writing a long program or some easy tasks or long scripts you could use just one line
+
+392
+00:38:07,259 --> 00:38:12,559
+in command line this concept is known as one liner
+
+393
+00:38:12,559 --> 00:38:20,679
+so pearl usually starts with the following line in most cases but this is for
+
+394
+00:38:20,679 --> 00:38:24,159
+unix and linux machines we said
+
+395
+00:38:25,039 --> 00:38:30,239
+because in pearl interpretation or pearl compilation there are some
+
+396
+00:38:32,079 --> 00:38:35,679
+small variations from platform to platform
+
+397
+00:38:37,199 --> 00:38:47,519
+pearl may behave differently in windows for example than the same code in unix or linux
+
+398
+00:38:48,960 --> 00:38:54,480
+so you don't have to in your course you don't have to use this one but this
+
+399
+00:38:54,480 --> 00:39:05,079
+is generally for pearl in unix or linux here these warnings which we have already seen this
+
+400
+00:39:05,079 --> 00:39:13,320
+when we were discussing debugging this instructs pearl to warn the programmer when it notices
+
+401
+00:39:13,320 --> 00:39:19,079
+any dubious programming practices as we have already seen this
+
+402
+00:39:19,079 --> 00:39:24,039
+e-switch in command line
+
+403
+00:39:24,039 --> 00:39:34,079
+we can place pearl then this e-switch and something checks whether a module installed correctly or not
+
+404
+00:39:36,079 --> 00:39:44,000
+for example this one pearl e and whatever module is we'll check if it was installed correctly or not
+
+405
+00:39:45,039 --> 00:39:53,920
+e here is basically execute stands for execute usually these switches are taken
+
+406
+00:39:54,039 --> 00:40:12,639
+from the
+
+407
+00:40:00,000 --> 00:40:12,260
+used for the function the first letter of the word this instructs pearl to execute the program
+
+408
+00:40:12,260 --> 00:40:22,460
+statements included within the single quotes now for the time being i say single quotes but this
+
+409
+00:40:12,639 --> 00:40:15,039
+from the wall
+
+410
+00:40:22,460 --> 00:40:32,400
+is for unix and linux platforms i haven't tried in macintosh but when you try in windows
+
+411
+00:40:32,400 --> 00:40:35,260
+we will see
+
+412
+00:40:35,260 --> 00:40:47,760
+anyway we should note that in in for in in windows platforms in instead of single
+
+413
+00:40:47,760 --> 00:40:52,440
+single quote we use double quotes for
+
+414
+00:40:52,440 --> 00:40:52,460
+in for in in windows platforms in instead of single quote we use double quotes for
+
+415
+00:40:52,460 --> 00:40:54,260
+some funny reasons
+
+416
+00:40:54,260 --> 00:41:08,920
+for example in in windows pearl you will be typing this statement instead of this one
+
+417
+00:41:08,920 --> 00:41:11,079
+we will see in a minute
+
+418
+00:41:11,079 --> 00:41:16,639
+there are other example this one for example
+
+419
+00:41:16,639 --> 00:41:22,440
+let me let me take this and see what
+
+420
+00:41:22,440 --> 00:41:24,240
+happens
+
+421
+00:41:24,240 --> 00:41:47,539
+just go to comment line
+
+422
+00:41:47,539 --> 00:41:52,079
+and i copy from
+
+423
+00:41:52,079 --> 00:41:52,420
+site
+
+424
+00:41:52,440 --> 00:41:56,400
+somewhere here and just paste
+
+425
+00:41:56,400 --> 00:42:07,300
+what do we expect actually we expect pearl to execute this line which is familiar to us
+
+426
+00:42:07,300 --> 00:42:14,320
+it will print on the screen hello from a pearl one liner will it print or not
+
+427
+00:42:14,320 --> 00:42:22,019
+normally it should print
+
+428
+00:42:22,440 --> 00:42:24,240
+we expect it to print
+
+429
+00:42:24,240 --> 00:42:29,200
+we expect it to print
+
+430
+00:42:29,200 --> 00:42:42,780
+but unfortunately it will not print it will give me an error
+
+431
+00:42:42,780 --> 00:42:49,200
+shift
+
+432
+00:42:49,200 --> 00:42:51,119
+can't find string terminator whatever
+
+433
+00:42:51,119 --> 00:42:51,880
+shift can't find string terminator whatever
+
+434
+00:42:51,880 --> 00:42:52,079
+shift can't find string terminator whatever
+
+435
+00:42:52,079 --> 00:43:02,699
+This is the way Windows recognizes string terminators.
+
+436
+00:43:02,699 --> 00:43:05,940
+Let me try the other version.
+
+437
+00:43:05,940 --> 00:43:17,799
+I have this again.
+
+438
+00:43:17,800 --> 00:43:28,000
+This time the codes are exchanged.
+
+439
+00:43:28,000 --> 00:43:44,440
+Now we have double code at the outside and single code as a string array delimiter.
+
+440
+00:43:44,440 --> 00:43:47,780
+When I run this, now it runs.
+
+441
+00:43:47,800 --> 00:43:56,920
+This is quite strange, but it took me time to realize that Windows interprets these single
+
+442
+00:43:56,920 --> 00:44:05,820
+and double codes differently than the Unix and Linux platforms.
+
+443
+00:44:05,820 --> 00:44:17,780
+So if you use the, if you write programs in different platforms, then you should be aware
+
+444
+00:44:17,780 --> 00:44:27,019
+of that different behaviors of the same thing.
+
+445
+00:44:27,019 --> 00:44:38,620
+Now in this case, now if you are using, we should be using this one basically as a one
+
+446
+00:44:38,620 --> 00:44:39,620
+minor.
+
+447
+00:44:39,620 --> 00:44:40,620
+Then it will work.
+
+448
+00:44:40,620 --> 00:44:41,620
+This is another example.
+
+449
+00:44:41,620 --> 00:44:42,620
+For example, you can use, well, if you remember, you can use this one.
+
+450
+00:44:42,620 --> 00:44:43,620
+You can use this one.
+
+451
+00:44:43,620 --> 00:44:44,620
+You can use this one.
+
+452
+00:44:44,620 --> 00:44:45,620
+You can use this one.
+
+453
+00:44:45,620 --> 00:44:46,620
+You can use this one.
+
+454
+00:44:46,620 --> 00:44:47,620
+You can use this one.
+
+455
+00:44:47,620 --> 00:44:47,660
+You can use this one.
+
+456
+00:44:47,659 --> 00:44:48,659
+You can use this one.
+
+457
+00:44:48,659 --> 00:44:49,659
+You can use this one.
+
+458
+00:44:49,659 --> 00:44:58,739
+For example, in Python, which is a very easy language to use by invoking the Python runtime
+
+459
+00:44:58,739 --> 00:44:59,679
+environment
+
+460
+00:45:00,000 --> 00:45:07,219
+just simply by typing as python as this one for example if you just
+
+461
+00:45:07,219 --> 00:45:15,420
+type python you switch to python runtime environment here you can use
+
+462
+00:45:15,420 --> 00:45:26,099
+as a simple calculator just you don't have to use semicolon or whatever as a terminator
+
+463
+00:45:26,099 --> 00:45:33,559
+in matlab you have to or whatever but nothing then in this case python can be used a command
+
+464
+00:45:33,559 --> 00:45:39,839
+line calculator you can do any calculations then you can
+
+465
+00:45:39,839 --> 00:45:50,759
+with control z you can exit from this mod but in perl you don't have this
+
+466
+00:45:50,759 --> 00:45:55,839
+instead you can use this one-liner
+
+467
+00:45:55,839 --> 00:45:56,079
+in
+
+468
+00:45:56,079 --> 00:46:07,199
+in this format then you can do all sort of calculations within this print by the way this
+
+469
+00:46:09,440 --> 00:46:13,039
+parenthesis here is an error it should not be there
+
+470
+00:46:26,079 --> 00:46:52,400
+let's see i expect it to give an error if i just syntax error here so we need to delete these
+
+471
+00:46:52,400 --> 00:46:55,840
+parentheses here then it will be there
+
+472
+00:46:56,079 --> 00:47:02,639
+we'll give the result okay so i need to correct this
+
+473
+00:47:09,759 --> 00:47:10,960
+let me correct it
+
+474
+00:47:22,480 --> 00:47:22,980
+okay
+
+475
+00:47:25,119 --> 00:47:26,000
+it's updating
+
+476
+00:47:26,079 --> 00:47:26,960
+the presentation
+
+477
+00:47:34,400 --> 00:47:35,440
+now it's corrected
+
+478
+00:47:37,759 --> 00:47:42,319
+so printf is is a subroutine
+
+479
+00:47:44,639 --> 00:47:51,679
+it is a variant of the more common print used as here and prints the specified format
+
+480
+00:47:54,319 --> 00:47:55,360
+printed is another
+
+481
+00:47:56,079 --> 00:48:04,400
+version of the print okay the ability to use the e switch on the command line in this way creates
+
+482
+00:48:04,400 --> 00:48:12,480
+what is known in the perm world as a one liner per one liner formally we are describing one minor
+
+483
+00:48:13,119 --> 00:48:24,400
+now next there are quite few switches which could be utilized as a one liner for example and which
+
+484
+00:48:25,039 --> 00:48:30,160
+when used with e treats the one liner as if it is enclosed with a loop
+
+485
+00:48:31,680 --> 00:48:44,000
+this is for example a one liner and e print if this one this pattern exists in embl data now let me
+
+486
+00:48:47,840 --> 00:48:52,160
+of course this will be let me take this
+
+487
+00:48:55,200 --> 00:48:58,880
+and run on a different data set
+
+488
+00:49:04,800 --> 00:49:10,720
+i have for example in this code a data as a sort data this is
+
+489
+00:49:14,559 --> 00:49:22,240
+i just show you the content of this data this is a piece of poetry okay
+
+490
+00:49:23,039 --> 00:49:23,680
+now we have
+
+491
+00:49:24,400 --> 00:49:27,680
+several words here now if i use
+
+492
+00:49:30,240 --> 00:49:32,639
+this one liner to search something
+
+493
+00:49:34,559 --> 00:49:37,760
+i need to change this it was
+
+494
+00:49:40,079 --> 00:49:46,400
+name was sort i need to change this into double quote
+
+495
+00:49:49,599 --> 00:49:52,559
+and the pattern
+
+496
+00:49:54,880 --> 00:49:55,200
+let's
+
+497
+00:49:57,920 --> 00:50:20,320
+say there was as far as i remember
+
+498
+00:50:00,000 --> 00:50:17,239
+Remember the word, okay, I use the or here and say tabut.
+
+499
+00:50:18,019 --> 00:50:24,639
+Unfortunately, I used two very undesired words,
+
+500
+00:50:20,320 --> 00:50:21,360
+so
+
+501
+00:50:21,360 --> 00:50:24,320
+let me turn back a little bit
+
+502
+00:50:24,639 --> 00:50:29,019
+but this is just an example.
+
+503
+00:50:29,679 --> 00:50:31,199
+Let me change this as well.
+
+504
+00:50:34,099 --> 00:50:36,319
+Now I run it.
+
+505
+00:50:36,719 --> 00:50:38,279
+I run this one-liner.
+
+506
+00:50:38,279 --> 00:50:53,379
+I expect this one-liner to print any line which has these two words.
+
+507
+00:50:53,380 --> 00:50:55,380
+Let's run, okay.
+
+508
+00:50:58,340 --> 00:51:02,519
+Well, what it does, it reads this sort data,
+
+509
+00:51:03,260 --> 00:51:10,800
+and it goes from top to bottom line and searches these given patterns,
+
+510
+00:51:11,160 --> 00:51:13,460
+and if it finds, it prints.
+
+511
+00:51:15,820 --> 00:51:16,619
+Okay.
+
+512
+00:51:18,160 --> 00:51:21,960
+Now here we have a print comment.
+
+513
+00:51:24,260 --> 00:51:32,019
+Within this line, but we can shorten this one-liner further.
+
+514
+00:51:32,019 --> 00:51:38,260
+Actually equivalent of this one-liner is this small piece of code.
+
+515
+00:51:42,820 --> 00:51:44,740
+This is what we get if we run this.
+
+516
+00:51:45,539 --> 00:51:50,820
+This is in, in Perl borrows a lot of things from Unix.
+
+517
+00:51:50,820 --> 00:51:52,820
+In under Unix, you can use,
+
+518
+00:51:53,380 --> 00:51:56,880
+you can use this graph function to do the same thing.
+
+519
+00:52:01,280 --> 00:52:02,740
+There are more options.
+
+520
+00:52:03,360 --> 00:52:06,700
+For example, if you use this,
+
+521
+00:52:08,300 --> 00:52:15,140
+for example, Perl dash NPE last if,
+
+522
+00:52:16,539 --> 00:52:23,059
+this backslash forward slash D for SEMBL data.
+
+523
+00:52:23,380 --> 00:52:24,220
+This does,
+
+524
+00:52:27,400 --> 00:52:32,599
+It prints only those lines from Deambiel data
+
+525
+00:52:32,599 --> 00:52:33,800
+disk file
+
+526
+00:52:33,800 --> 00:52:36,660
+that do not end in four digits.
+
+527
+00:52:44,079 --> 00:52:50,140
+So The equality program for this one-liner is this one.
+
+528
+00:52:50,140 --> 00:52:53,260
+Which is one, two, three, four.
+
+529
+00:52:53,260 --> 00:52:59,900
+three four five lines this is the conventional programming and this is the one-liner
+
+530
+00:53:02,780 --> 00:53:10,540
+this one-liner is a little harder to do with graph function if you do this with graph function
+
+531
+00:53:10,540 --> 00:53:20,940
+and we have to type this of course in unix or winx there are more options when executed the
+
+532
+00:53:20,940 --> 00:53:26,619
+following output will be produced with this one-liner
+
+533
+00:53:31,820 --> 00:53:40,059
+we have already mentioned now some command line options which we do not have time to mention all
+
+534
+00:53:40,059 --> 00:53:50,139
+of them for example this octal a whatever it is and you can get this from the pearl web page
+
+535
+00:53:50,139 --> 00:53:50,700
+if you
+
+536
+00:53:50,940 --> 00:53:59,500
+search for pearl one-liner there are documents on it and i just get this from this document
+
+537
+00:54:03,579 --> 00:54:09,260
+and there are some other switches to be used in one-liners
+
+538
+00:54:12,860 --> 00:54:16,460
+let's have a break some 10 minutes break
+
+539
+00:54:19,900 --> 00:54:20,860
+be back at 10
+
+540
+00:54:20,940 --> 00:54:29,420
+10.
+
+541
+00:54:29,420 --> 00:54:29,500
+you
+
+542
+00:54:50,940 --> 00:54:52,940
+time attack
+
+543
+00:55:00,000 --> 00:55:29,980
+Altyazı M.K.
+
+544
+00:55:00,019 --> 00:55:00,539
+20.
+
+545
+00:55:00,539 --> 00:55:01,800
+j
+
+546
+00:55:01,800 --> 00:55:02,260
+j
+
+547
+00:55:02,260 --> 00:55:03,019
+20.
+
+548
+00:55:03,019 --> 00:55:10,139
+21.
+
+549
+00:55:10,139 --> 00:55:20,300
+22.
+
+550
+00:55:20,300 --> 00:55:20,780
+23.
+
+551
+00:55:30,000 --> 00:55:59,980
+Altyazı M.K.
+
+552
+00:56:00,000 --> 00:56:29,980
+Altyazı M.K.
+
+553
+00:56:30,000 --> 00:56:59,980
+Altyazı M.K.
+
+554
+00:57:00,000 --> 00:57:29,980
+Altyazı M.K.
+
+555
+00:57:30,000 --> 00:57:59,980
+Altyazı M.K.
+
+556
+00:58:00,000 --> 00:58:29,980
+Altyazı M.K.
+
+557
+00:58:30,000 --> 00:58:59,980
+Altyazı M.K.
+
+558
+00:59:00,000 --> 00:59:29,980
+Altyazı M.K.
+
+559
+00:59:30,000 --> 00:59:59,980
+Altyazı M.K.
+
+560
+01:00:00,000 --> 01:00:29,980
+Altyazı M.K.
+
+561
+01:00:30,000 --> 01:00:59,980
+Altyazı M.K.
+
+562
+01:01:00,000 --> 01:01:29,980
+Altyazı M.K.
+
+563
+01:01:30,000 --> 01:01:59,980
+Altyazı M.K.
+
+564
+01:02:00,000 --> 01:02:29,980
+Altyazı M.K.
+
+565
+01:02:30,000 --> 01:02:59,980
+Altyazı M.K.
+
+566
+01:03:00,000 --> 01:03:29,980
+Altyazı M.K.
+
+567
+01:03:30,000 --> 01:03:59,980
+Altyazı M.K.
+
+568
+01:04:00,000 --> 01:04:29,980
+Altyazı M.K.
+
+569
+01:04:30,000 --> 01:04:59,980
+Altyazı M.K.
+
+570
+01:05:00,000 --> 01:05:29,980
+Altyazı M.K.
+
+571
+01:05:30,000 --> 01:05:59,980
+Altyazı M.K.
+
+572
+01:06:00,000 --> 01:06:29,980
+Altyazı M.K.
+
+573
+01:06:30,000 --> 01:06:59,980
+Altyazı M.K.
+
+574
+01:07:00,000 --> 01:07:29,980
+Altyazı M.K.
+
+575
+01:07:30,000 --> 01:07:59,980
+Altyazı M.K.
+
+576
+01:08:00,000 --> 01:08:29,979
+Altyazı M.K.
+
+577
+01:08:30,000 --> 01:08:59,979
+Altyazı M.K.
+
+578
+01:09:00,000 --> 01:09:29,979
+Altyazı M.K.
+
+579
+01:09:30,000 --> 01:09:59,979
+Altyazı M.K.
+
+580
+01:10:00,000 --> 01:10:08,000
+This is the first one, the second one, and the third one.
+
+581
+01:10:08,000 --> 01:10:14,500
+Anyway, that was a simple example.
+
+582
+01:10:14,500 --> 01:10:23,000
+The invocation of system results in the dir program executing any output from this dir
+
+583
+01:10:23,000 --> 01:10:37,000
+is displayed on screen normally, because this is a normal standard out.
+
+584
+01:10:37,000 --> 01:10:49,000
+I already mentioned that there are three ways, at least, to call a program within Perl.
+
+585
+01:10:49,000 --> 01:10:52,000
+I have already shown you the actual result.
+
+586
+01:10:52,000 --> 01:10:53,000
+This was...
+
+587
+01:10:53,000 --> 01:10:55,000
+Generated in a different time.
+
+588
+01:10:55,000 --> 01:11:00,000
+Therefore, you see different outputs here.
+
+589
+01:11:00,000 --> 01:11:06,000
+As we mentioned before, it is possible from recovering errors while you have a long...
+
+590
+01:11:06,000 --> 01:11:08,000
+You are running a long program.
+
+591
+01:11:08,000 --> 01:11:14,000
+You don't want your program to crash unexpectedly if there is an error.
+
+592
+01:11:14,000 --> 01:11:19,000
+So, for this, we use the die function.
+
+593
+01:11:19,000 --> 01:11:22,000
+This is known as exception handling.
+
+594
+01:11:22,000 --> 01:11:23,000
+And...
+
+595
+01:11:23,000 --> 01:11:29,000
+If we consider the following code, you are trying to open a file.
+
+596
+01:11:29,000 --> 01:11:37,000
+If file does not exist and if you do not have a control within a program, it is most likely
+
+597
+01:11:37,000 --> 01:11:39,000
+that program will stop executing.
+
+598
+01:11:39,000 --> 01:11:42,000
+So, we don't want this.
+
+599
+01:11:42,000 --> 01:11:43,000
+So...
+
+600
+01:11:43,000 --> 01:11:50,000
+Instead, we use this die function, which enables us to control this.
+
+601
+01:11:50,000 --> 01:11:51,000
+Where...
+
+602
+01:11:51,000 --> 01:11:52,000
+Or...
+
+603
+01:11:52,000 --> 01:12:06,000
+It enables us to handle exceptions.
+
+604
+01:12:06,000 --> 01:12:19,000
+You can use eval function, subroutine, even to better handle the case.
+
+605
+01:12:19,000 --> 01:12:23,000
+So, this is an example.
+
+606
+01:12:23,000 --> 01:12:33,000
+The Perl enables or has some built-in functions for sorting as well.
+
+607
+01:12:33,000 --> 01:12:40,000
+Sorting is a basic algorithm you probably taught in very first computer course.
+
+608
+01:12:40,000 --> 01:12:43,000
+You have a programming course.
+
+609
+01:12:43,000 --> 01:12:48,000
+One of the most basic algorithm, most widely used algorithm.
+
+610
+01:12:48,000 --> 01:13:00,100
+widely used algorithm in any languages. Perl has powerful built-in functions. For this,
+
+611
+01:13:00,100 --> 01:13:12,699
+these two functions are sort and reverse. There are several examples showing how to
+
+612
+01:13:12,699 --> 01:13:23,019
+use the sort and reverse. For example, this one. We have different types of sorts.
+
+613
+01:13:31,359 --> 01:13:36,699
+I think we have here
+
+614
+01:13:38,699 --> 01:13:40,699
+results from sort and reverse.
+
+615
+01:13:42,699 --> 01:13:58,059
+example this is just created by invoking the built-in sort subroutine sorts the
+
+616
+01:13:58,059 --> 01:14:07,139
+array alphabetically in ascending quarters from a through to Z this one
+
+617
+01:14:07,140 --> 01:14:19,760
+reversed sort from B to a this is the function here sort e to a this is
+
+618
+01:14:19,760 --> 01:14:28,180
+created by invoking the inbuilt sort subroutine this is variations which we
+
+619
+01:14:28,180 --> 01:14:36,680
+can include in the sort subroutine this is also
+
+620
+01:14:36,680 --> 01:14:37,100
+a
+
+621
+01:14:37,100 --> 01:14:37,119
+a
+
+622
+01:14:37,119 --> 01:14:42,260
+, same concept but using the reverse sort instead of this one
+
+623
+01:14:42,260 --> 01:14:54,779
+this is another example
+
+624
+01:14:54,779 --> 01:14:59,739
+I just skip this
+
+625
+01:15:00,720 --> 01:15:04,159
+and the result when you run it
+
+626
+01:15:09,279 --> 01:15:13,199
+if you want more documentation on any function basically
+
+627
+01:15:13,199 --> 01:15:21,439
+not only sort just you simply type this perl doc and f i just show you the
+
+628
+01:15:30,000 --> 01:15:35,279
+command line if you go to command line by the way
+
+629
+01:15:35,279 --> 01:15:44,359
+perl h will list you the switches
+
+630
+01:15:44,359 --> 01:15:51,119
+or perl f say sort
+
+631
+01:16:00,000 --> 01:16:02,039
+sorry perl doc
+
+632
+01:16:02,039 --> 01:16:08,159
+that's different f will give you the
+
+633
+01:16:08,159 --> 01:16:15,319
+explanation about any given function or whatever
+
+634
+01:16:15,319 --> 01:16:29,479
+this is basically you are printing documentation on the screen
+
+635
+01:16:30,000 --> 01:16:34,840
+so
+
+636
+01:16:40,119 --> 01:16:42,840
+another option is you simply type manual
+
+637
+01:16:43,640 --> 01:16:49,000
+sort this alternative way of asking for help
+
+638
+01:16:54,039 --> 01:16:55,479
+for example this file
+
+639
+01:16:58,039 --> 01:16:59,239
+this is this script
+
+640
+01:17:00,000 --> 01:17:05,159
+takes any disk file and source the lines in the disk file in ascending order
+
+641
+01:17:07,319 --> 01:17:11,720
+i think this name was short file let me see
+
+642
+01:17:14,359 --> 01:17:24,760
+this sort file okay sort here sort one or sort file perl
+
+643
+01:17:28,119 --> 01:17:29,119
+sort file
+
+644
+01:17:30,000 --> 01:17:41,800
+you remember sort data there was a poem there let's see what happens to poem
+
+645
+01:17:43,319 --> 01:17:47,800
+this is what happened it's just sorted from a to
+
+646
+01:17:50,760 --> 01:17:55,880
+a b b e g i i then k whatever
+
+647
+01:17:58,119 --> 01:17:59,520
+from a to z
+
+648
+01:18:00,520 --> 01:18:06,840
+it sorted all the lines in this poem but it destroyed the content of poem basically
+
+649
+01:18:10,760 --> 01:18:18,039
+so before running it sorry for these turkish characters it did not print correctly
+
+650
+01:18:18,680 --> 01:18:22,760
+this is the actual poem and after sorting
+
+651
+01:18:25,399 --> 01:18:29,479
+okay this shows how this sorting runs basically
+
+652
+01:18:30,680 --> 01:18:39,479
+you can write whatever you'd like in this case
+
+653
+01:18:46,199 --> 01:18:46,680
+by default
+
+654
+01:18:46,680 --> 01:18:50,199
+then you just need to retrieve it as empty
+
+655
+01:18:50,199 --> 01:18:53,000
+if you would have recorded this int Jin
+
+656
+01:18:53,000 --> 01:18:55,619
+dump you're just going to use what is called the
+
+657
+01:18:55,680 --> 01:18:56,720
+batch type
+
+658
+01:18:56,720 --> 01:18:57,840
+process
+
+659
+01:18:57,840 --> 01:18:58,520
+Glasgow
+
+660
+01:18:58,520 --> 01:18:59,439
+you can also label it in parallel
+
+661
+01:18:59,439 --> 01:18:59,920
+route
+
+662
+01:19:00,720 --> 01:19:08,800
+this is the text we want to display or this text within a program
+
+663
+01:19:14,960 --> 01:19:18,159
+without here documents we can do this
+
+664
+01:19:20,560 --> 01:19:25,680
+using print statements you can do this in any language anyway but in perl
+
+665
+01:19:26,400 --> 01:19:31,760
+this conventional approach or traditional approach would be just use print function
+
+666
+01:19:32,560 --> 01:19:41,119
+and run it when you run it it will print the required or desired text as it is on the screen
+
+667
+01:19:42,640 --> 01:19:50,159
+this is the output when you run it this is what we want but we have to type a lot of prints
+
+668
+01:19:51,280 --> 01:19:55,600
+for each line now with here
+
+669
+01:19:55,680 --> 01:19:59,760
+documents this there's a
+
+670
+01:20:00,000 --> 01:20:11,239
+year mechanism you simply define this as my shotgun message and shotgun message and you
+
+671
+01:20:11,239 --> 01:20:25,340
+just type your text as how you want to appear then you end it up with this keyword and shot
+
+672
+01:20:25,340 --> 01:20:39,440
+message then you simply print this scalar variable
+
+673
+01:20:39,440 --> 01:20:48,180
+you can run this you will get exactly the same output you don't have to type this prints
+
+674
+01:20:48,180 --> 01:20:55,319
+many times you will
+
+675
+01:20:55,319 --> 01:21:00,679
+start after this
+
+676
+01:21:00,679 --> 01:21:06,979
+variable definition you will simply type this and you will end it with this keyword then
+
+677
+01:21:06,979 --> 01:21:08,699
+you will be using your code
+
+678
+01:21:08,699 --> 01:21:22,880
+okay there is a better option third way to do this which is this one you simply type
+
+679
+01:21:22,880 --> 01:21:23,880
+print and
+
+680
+01:21:23,880 --> 01:21:24,880
+you should
+
+681
+01:21:24,880 --> 01:21:24,920
+you should
+
+682
+01:21:25,319 --> 01:21:30,859
+shoot message you start with this and you simply type your document and end this with
+
+683
+01:21:30,859 --> 01:21:38,939
+this keyword again when you run it you will get the exact the same output is known as
+
+684
+01:21:40,099 --> 01:21:49,779
+here document okay the here documents are useful especially when it comes to dynamically producing
+
+685
+01:21:49,779 --> 01:21:53,000
+html documents we will
+
+686
+01:21:55,319 --> 01:22:06,139
+have a brief discussion about webpages later sometimes then especially to produce such dynamic webpages this is very useful
+
+687
+01:22:06,139 --> 01:22:14,059
+this use of your documents will be discussed as mentioned now later
+
+688
+01:22:14,060 --> 01:22:28,060
+Downloading from the web is a very common task in many either research jobs or in work or whatever.
+
+689
+01:22:28,060 --> 01:22:40,060
+Somehow we will download data from the web pages at some stages in your study, in your career or whatever.
+
+690
+01:22:40,060 --> 01:22:46,060
+It requires a highly interactive mechanism.
+
+691
+01:22:46,060 --> 01:22:52,060
+Very useful for downloading individual data files.
+
+692
+01:22:52,060 --> 01:22:58,060
+But it's cumbersome for downloading large number of data files.
+
+693
+01:22:58,060 --> 01:23:09,060
+Imagine you have thousands. If you, for example, do some deep learning work,
+
+694
+01:23:09,060 --> 01:23:10,060
+you need
+
+695
+01:23:10,060 --> 01:23:14,060
+thousands of data files.
+
+696
+01:23:14,060 --> 01:23:21,060
+You may end up downloading each data files sequentially many times.
+
+697
+01:23:21,060 --> 01:23:24,060
+It's time consuming.
+
+698
+01:23:24,060 --> 01:23:34,060
+There are some technologies which allow you the easy integration of data source across the Internet.
+
+699
+01:23:34,060 --> 01:23:39,060
+However, it is often convenient to download frequently used data sets
+
+700
+01:23:39,060 --> 01:23:41,060
+and store them locally.
+
+701
+01:23:41,060 --> 01:23:48,060
+You can use now on the cloud system without downloading.
+
+702
+01:23:48,060 --> 01:23:51,060
+But sometimes you may not be able to do this.
+
+703
+01:23:51,060 --> 01:23:54,060
+So you have to download it.
+
+704
+01:23:54,060 --> 01:24:05,060
+The advantages of downloading and storing data sets locally can be easy of access whenever you need.
+
+705
+01:24:05,060 --> 01:24:08,060
+It's on your local machine.
+
+706
+01:24:08,060 --> 01:24:09,060
+Just get it.
+
+707
+01:24:09,060 --> 01:24:14,060
+Otherwise, you have to log in the cloud or wherever it is.
+
+708
+01:24:14,060 --> 01:24:19,060
+That may create some problems.
+
+709
+01:24:19,060 --> 01:24:21,060
+The speed.
+
+710
+01:24:21,060 --> 01:24:32,060
+The local access to data and operate on it.
+
+711
+01:24:32,060 --> 01:24:37,060
+Usually much faster than remotely accessing data.
+
+712
+01:24:37,060 --> 01:24:48,060
+This is possible, but it may take time.
+
+713
+01:24:48,060 --> 01:24:51,060
+The reliability.
+
+714
+01:24:51,060 --> 01:24:59,060
+Local data will be much more reliable.
+
+715
+01:24:59,060 --> 01:25:02,060
+Well, well.
+
+716
+01:25:00,000 --> 01:25:10,000
+you are accessing to a data remotely you might get some interrupts in your internet connection and
+
+717
+01:25:11,279 --> 01:25:21,840
+you have to restart everything from the beginning time consuming stability is another reason where
+
+718
+01:25:21,840 --> 01:25:33,279
+we need to keep data locally the flexibility obviously
+
+719
+01:25:38,000 --> 01:25:45,119
+and security the any remote connection comes with
+
+720
+01:25:48,640 --> 01:25:49,840
+a security problem
+
+721
+01:25:52,400 --> 01:25:53,279
+as obviously
+
+722
+01:25:56,480 --> 01:26:02,880
+if the data you are working on is very sensitive and once you start
+
+723
+01:26:06,400 --> 01:26:20,640
+exchanging a data with a remote server or remote source then that data is vulnerable to security
+
+724
+01:26:20,640 --> 01:26:21,199
+breaches
+
+725
+01:26:22,400 --> 01:26:26,319
+you should be aware of this yeah
+
+726
+01:26:34,960 --> 01:26:36,400
+however there are disadvantages of downloading and storing dataset locally
+
+727
+01:26:36,400 --> 01:26:45,279
+you should be aware of these disadvantages as well if you decide to store and operate on data locally
+
+728
+01:26:46,400 --> 01:26:48,960
+stale data the local copy
+
+729
+01:26:48,960 --> 01:26:52,199
+is one time snapshot
+
+730
+01:26:52,199 --> 01:26:54,539
+of the data set
+
+731
+01:26:54,539 --> 01:26:56,760
+at a particular point in time
+
+732
+01:26:56,760 --> 01:27:00,239
+if especially data is regularly updated
+
+733
+01:27:00,239 --> 01:27:03,399
+the data you are working on
+
+734
+01:27:03,399 --> 01:27:06,480
+might be outdated
+
+735
+01:27:06,480 --> 01:27:08,560
+or not up to date
+
+736
+01:27:08,560 --> 01:27:10,659
+that's a problem
+
+737
+01:27:10,659 --> 01:27:14,439
+if you are dependent on
+
+738
+01:27:14,439 --> 01:27:17,239
+somebody else
+
+739
+01:27:17,239 --> 01:27:19,679
+on the provision of the data
+
+740
+01:27:19,679 --> 01:27:22,439
+then that might be a problem
+
+741
+01:27:22,439 --> 01:27:25,500
+if you are working locally
+
+742
+01:27:25,500 --> 01:27:28,699
+storage capability
+
+743
+01:27:28,699 --> 01:27:31,079
+if you are working with big data
+
+744
+01:27:31,079 --> 01:27:36,239
+or a huge data set
+
+745
+01:27:36,239 --> 01:27:39,639
+storage might be a problem
+
+746
+01:27:39,639 --> 01:27:42,920
+normally cloud systems
+
+747
+01:27:42,920 --> 01:27:44,340
+provide
+
+748
+01:27:44,340 --> 01:27:46,699
+an existing
+
+749
+01:27:47,239 --> 01:27:49,699
+an excessive amount of the data
+
+750
+01:27:49,699 --> 01:27:51,059
+storage
+
+751
+01:27:51,059 --> 01:27:56,099
+which is not affordable by individuals
+
+752
+01:27:56,099 --> 01:27:59,880
+so you can simply buy it
+
+753
+01:27:59,880 --> 01:28:03,139
+and if you pay more you can get more spaces
+
+754
+01:28:03,139 --> 01:28:04,479
+it's scalable
+
+755
+01:28:04,479 --> 01:28:06,139
+the
+
+756
+01:28:06,139 --> 01:28:07,739
+data storage
+
+757
+01:28:07,739 --> 01:28:09,880
+especially on the cloud
+
+758
+01:28:09,880 --> 01:28:11,599
+that might be a
+
+759
+01:28:11,599 --> 01:28:14,619
+problem for example this protein data buying
+
+760
+01:28:14,619 --> 01:28:15,699
+is
+
+761
+01:28:15,699 --> 01:28:17,219
+daily growing and growing
+
+762
+01:28:17,239 --> 01:28:18,340
+and it's
+
+763
+01:28:18,340 --> 01:28:20,340
+quite huge
+
+764
+01:28:20,340 --> 01:28:22,840
+and if you want to download all of them
+
+765
+01:28:22,840 --> 01:28:25,039
+it's probably you will not have enough
+
+766
+01:28:25,039 --> 01:28:27,779
+storage capability
+
+767
+01:28:27,779 --> 01:28:30,179
+the performance
+
+768
+01:28:30,179 --> 01:28:33,819
+sometimes
+
+769
+01:28:33,819 --> 01:28:35,460
+although we said that
+
+770
+01:28:35,460 --> 01:28:37,539
+the locally operating
+
+771
+01:28:37,539 --> 01:28:38,019
+data
+
+772
+01:28:38,019 --> 01:28:41,420
+might be
+
+773
+01:28:41,420 --> 01:28:42,960
+faster
+
+774
+01:28:42,960 --> 01:28:43,599
+but
+
+775
+01:28:43,599 --> 01:28:47,099
+again in terms of the computing
+
+776
+01:28:47,100 --> 01:28:48,600
+capability
+
+777
+01:28:48,600 --> 01:28:52,600
+you might not be able to
+
+778
+01:28:52,600 --> 01:28:55,520
+run algorithms
+
+779
+01:28:55,520 --> 01:28:57,960
+fast enough
+
+780
+01:28:57,960 --> 01:29:02,280
+locally
+
+781
+01:29:02,280 --> 01:29:04,440
+for example
+
+782
+01:29:04,440 --> 01:29:05,880
+the
+
+783
+01:29:05,880 --> 01:29:07,960
+bitcoin
+
+784
+01:29:07,960 --> 01:29:12,960
+it's very very time consuming to
+
+785
+01:29:12,960 --> 01:29:15,200
+mine bitcoin as you know
+
+786
+01:29:15,200 --> 01:29:16,200
+you need supercomputers
+
+787
+01:29:16,199 --> 01:29:18,840
+nobody has
+
+788
+01:29:18,840 --> 01:29:21,079
+supercomputer on desktop
+
+789
+01:29:21,079 --> 01:29:23,720
+it will take
+
+790
+01:29:23,720 --> 01:29:25,239
+many many
+
+791
+01:29:25,239 --> 01:29:26,439
+times
+
+792
+01:29:26,439 --> 01:29:29,239
+to mine a bitcoin by using
+
+793
+01:29:29,239 --> 01:29:31,880
+standard desktop computers
+
+794
+01:29:31,880 --> 01:29:34,599
+instead
+
+795
+01:29:34,599 --> 01:29:37,559
+you can use the supercomputers or cloud
+
+796
+01:29:37,559 --> 01:29:38,840
+systems which
+
+797
+01:29:38,840 --> 01:29:41,859
+are much capable of
+
+798
+01:29:41,859 --> 01:29:44,300
+data processing
+
+799
+01:29:44,300 --> 01:29:45,500
+in a shorter time
+
+800
+01:29:46,199 --> 01:29:46,939
+so
+
+801
+01:29:46,939 --> 01:29:48,199
+that was
+
+802
+01:29:48,199 --> 01:29:50,599
+a
+
+803
+01:29:50,599 --> 01:29:52,720
+contemporary example
+
+804
+01:29:52,720 --> 01:29:54,179
+that's why i use bitcoin
+
+805
+01:29:54,179 --> 01:29:55,319
+so
+
+806
+01:29:55,319 --> 01:29:56,519
+in this
+
+807
+01:29:56,519 --> 01:29:57,800
+case
+
+808
+01:29:57,800 --> 01:30:00,119
+performance-wise
+
+809
+01:30:00,000 --> 01:30:08,000
+Sometimes operating remotely might be advantageous because remotely there are
+
+810
+01:30:08,000 --> 01:30:18,000
+parallel computing systems and in cloud systems they can also provide you with
+
+811
+01:30:18,000 --> 01:30:26,000
+high performance computing which is not affordable by small institutions and individuals.
+
+812
+01:30:26,000 --> 01:30:34,000
+Usually these high performance computing centers are not available to anyone.
+
+813
+01:30:34,000 --> 01:30:44,000
+So you may probably, might want to use these computing capabilities in remote sites
+
+814
+01:30:44,000 --> 01:30:52,000
+where you are getting data instead of getting data to local computing facilities
+
+815
+01:30:52,000 --> 01:30:54,000
+you simply use it remotely.
+
+816
+01:30:56,000 --> 01:31:04,000
+Downloading data sets can be accomplished in a number of ways.
+
+817
+01:31:04,000 --> 01:31:08,000
+By using established sequence analysis programs.
+
+818
+01:31:08,000 --> 01:31:16,000
+Of course, this can be done by using any other means but I am now restricting ourselves into
+
+819
+01:31:16,000 --> 01:31:20,000
+bioinformatics context.
+
+820
+01:31:20,000 --> 01:31:22,000
+Okay.
+
+821
+01:31:22,000 --> 01:31:26,000
+Can be downloaded remotely.
+
+822
+01:31:26,000 --> 01:31:30,000
+By using sequence analysis programs such as mboss.
+
+823
+01:31:30,000 --> 01:31:34,000
+mboss can be accessed.
+
+824
+01:31:34,000 --> 01:31:36,000
+This program can be accessed through this web page.
+
+825
+01:31:36,000 --> 01:31:38,000
+I am not going to do this.
+
+826
+01:31:38,000 --> 01:31:46,000
+They have specific means to download data from a certain database.
+
+827
+01:31:46,000 --> 01:31:54,000
+Or this unix or linux wget program can be used if you are using it remotely.
+
+828
+01:31:54,000 --> 01:31:58,000
+If you are familiar with linux.
+
+829
+01:32:02,000 --> 01:32:04,000
+Of course you cannot do this under windows.
+
+830
+01:32:04,000 --> 01:32:06,000
+But this is for linux systems.
+
+831
+01:32:12,000 --> 01:32:18,000
+You can get it from this GNU software foundation.
+
+832
+01:32:18,000 --> 01:32:20,000
+It's free software.
+
+833
+01:32:20,000 --> 01:32:26,000
+And here are some examples how to use this wget.
+
+834
+01:32:26,000 --> 01:32:32,000
+If you know the specific location of data set.
+
+835
+01:32:32,000 --> 01:32:40,000
+Then you can tell your linux machine to get it from ftp site.
+
+836
+01:32:40,000 --> 01:32:44,000
+By writing a simple single line.
+
+837
+01:32:44,000 --> 01:32:58,000
+Anyway, I am skipping this some discussions.
+
+838
+01:32:58,000 --> 01:33:02,000
+Some linux specific discussions.
+
+839
+01:33:02,000 --> 01:33:12,000
+There are specific comments of this wget.
+
+840
+01:33:12,000 --> 01:33:14,000
+Uncensored.
+
+841
+01:33:14,000 --> 01:33:16,000
+Or program.
+
+842
+01:33:24,000 --> 01:33:28,000
+So this is a simple Perl script.
+
+843
+01:33:28,000 --> 01:33:30,000
+For example to download.
+
+844
+01:33:34,000 --> 01:33:36,000
+Some data from pdb data set.
+
+845
+01:33:36,000 --> 01:33:38,000
+Protein database.
+
+846
+01:33:40,000 --> 01:33:42,000
+This is an example code.
+
+847
+01:33:42,000 --> 01:33:44,000
+Anyway.
+
+848
+01:33:44,000 --> 01:33:48,000
+A piece of Perl program.
+
+849
+01:33:48,000 --> 01:33:50,000
+Starting from here.
+
+850
+01:33:50,000 --> 01:33:52,000
+Up to here.
+
+851
+01:33:52,000 --> 01:33:54,000
+And it also has this.
+
+852
+01:33:56,000 --> 01:33:58,000
+Exception handling capability.
+
+853
+01:34:08,000 --> 01:34:10,000
+Okay.
+
+854
+01:34:10,000 --> 01:34:12,000
+Although we mentioned.
+
+855
+01:34:12,000 --> 01:34:14,000
+These data banks again.
+
+856
+01:34:14,000 --> 01:34:16,000
+Probably we should repeat them.
+
+857
+01:34:16,000 --> 01:34:18,000
+We mentioned this protein data bank.
+
+858
+01:34:18,000 --> 01:34:20,000
+In this protein data bank.
+
+859
+01:34:20,000 --> 01:34:22,000
+Basically it is a data bank.
+
+860
+01:34:22,000 --> 01:34:24,000
+Which includes.
+
+861
+01:34:24,000 --> 01:34:26,000
+Some data.
+
+862
+01:34:26,000 --> 01:34:28,000
+And some data.
+
+863
+01:34:28,000 --> 01:34:30,000
+And some data.
+
+864
+01:34:30,000 --> 01:34:32,000
+And some data.
+
+865
+01:34:32,000 --> 01:34:34,000
+And some data.
+
+866
+01:34:34,000 --> 01:34:36,000
+And some data.
+
+867
+01:34:36,000 --> 01:34:38,000
+And some data.
+
+868
+01:34:38,000 --> 01:34:40,000
+And some data.
+
+869
+01:34:40,000 --> 01:34:42,000
+And now.
+
+870
+01:34:42,000 --> 01:34:44,000
+It actually includes.
+
+871
+01:34:44,000 --> 01:34:46,000
+Basically it is a data bank.
+
+872
+01:34:46,000 --> 01:34:48,000
+Which includes.
+
+873
+01:34:48,000 --> 01:34:50,000
+All the known proteins.
+
+874
+01:34:50,000 --> 01:34:52,000
+This is used in some of the structural.
+
+875
+01:34:52,000 --> 01:34:54,000
+Studies which involves.
+
+876
+01:34:54,000 --> 01:34:56,000
+How the protein does.
+
+877
+01:34:56,000 --> 01:34:58,000
+What it does.
+
+878
+01:34:58,000 --> 01:35:00,000
+To the protein.
+
+879
+01:35:00,000 --> 01:35:02,000
+You're able to chocolate.
+
+880
+01:35:00,000 --> 01:35:03,460
+or to alter its function
+
+881
+01:35:02,000 --> 01:35:04,000
+There.
+
+882
+01:35:03,460 --> 01:35:05,539
+for example to design
+
+883
+01:35:04,000 --> 01:35:06,000
+The protein.
+
+884
+01:35:05,539 --> 01:35:07,520
+a small molecule that
+
+885
+01:35:06,000 --> 01:35:08,000
+What is.
+
+886
+01:35:07,520 --> 01:35:08,899
+binds to the protein
+
+887
+01:35:08,899 --> 01:35:11,619
+more commonly known as a drug
+
+888
+01:35:11,619 --> 01:35:15,079
+how
+
+889
+01:35:15,079 --> 01:35:15,899
+they
+
+890
+01:35:15,899 --> 01:35:19,460
+design these databases
+
+891
+01:35:19,460 --> 01:35:21,439
+where they get this information
+
+892
+01:35:21,439 --> 01:35:22,640
+from this database
+
+893
+01:35:22,640 --> 01:35:25,479
+there are many methods used
+
+894
+01:35:25,479 --> 01:35:27,399
+for gaining information about the
+
+895
+01:35:27,399 --> 01:35:28,960
+structure of a biomolecule
+
+896
+01:35:28,960 --> 01:35:31,159
+the two
+
+897
+01:35:31,159 --> 01:35:33,079
+major methods by which
+
+898
+01:35:33,079 --> 01:35:35,199
+location of atoms can be
+
+899
+01:35:35,199 --> 01:35:37,399
+determined to a useful accuracy
+
+900
+01:35:37,399 --> 01:35:39,619
+are X-ray crystallography
+
+901
+01:35:39,619 --> 01:35:41,039
+and nuclear magnetic
+
+902
+01:35:41,039 --> 01:35:41,920
+resonance
+
+903
+01:35:41,920 --> 01:35:44,260
+imaging basically
+
+904
+01:35:44,260 --> 01:35:46,220
+X-ray
+
+905
+01:35:46,220 --> 01:35:48,739
+crystallography if I just
+
+906
+01:35:48,739 --> 01:35:51,159
+try to explain it is a
+
+907
+01:35:51,159 --> 01:35:53,000
+technique for determining the three
+
+908
+01:35:53,000 --> 01:35:54,960
+dimensional structure
+
+909
+01:35:54,960 --> 01:35:56,760
+of molecules sometimes
+
+910
+01:35:56,760 --> 01:35:58,079
+you see these
+
+911
+01:35:58,079 --> 01:36:00,680
+three dimensional pictures
+
+912
+01:36:00,680 --> 01:36:02,420
+of molecules or whatever
+
+913
+01:36:02,420 --> 01:36:04,819
+then this is how they
+
+914
+01:36:04,819 --> 01:36:06,140
+obtain these
+
+915
+01:36:06,140 --> 01:36:08,359
+three dimensional structures
+
+916
+01:36:08,359 --> 01:36:10,559
+actual structures of these
+
+917
+01:36:10,559 --> 01:36:11,039
+molecules
+
+918
+01:36:11,039 --> 01:36:14,579
+this is a powerful tool
+
+919
+01:36:14,579 --> 01:36:16,880
+to explain
+
+920
+01:36:16,880 --> 01:36:17,680
+of these
+
+921
+01:36:17,680 --> 01:36:19,920
+the
+
+922
+01:36:19,920 --> 01:36:22,519
+three dimensional structure of a
+
+923
+01:36:22,519 --> 01:36:24,479
+molecule at atomic resolution
+
+924
+01:36:24,479 --> 01:36:27,880
+data is collected
+
+925
+01:36:28,079 --> 01:36:29,500
+with a single ordinary atom
+
+926
+01:36:29,500 --> 01:36:30,119
+mass of fuel
+
+927
+01:36:30,119 --> 01:36:44,000
+which is
+
+928
+01:36:44,000 --> 01:36:46,779
+the
+
+929
+01:36:46,779 --> 01:36:47,720
+0.16
+
+930
+01:36:47,720 --> 01:36:48,939
+level
+
+931
+01:36:48,939 --> 01:36:50,279
+in the
+
+932
+01:36:50,279 --> 01:36:51,739
+deficit
+
+933
+01:36:51,739 --> 01:36:52,279
+as heat
+
+934
+01:36:52,279 --> 01:36:54,539
+and
+
+935
+01:36:56,539 --> 01:36:57,720
+this
+
+936
+01:36:57,720 --> 01:36:58,019
+is like a
+
+937
+01:36:58,020 --> 01:37:07,300
+reflective one the reflected energy is used but in diffracting x-ray tomography
+
+938
+01:37:08,820 --> 01:37:12,660
+is diffraction properties of the material is used
+
+939
+01:37:18,580 --> 01:37:25,300
+anyway based on the diffraction pattern obtained from x-ray scattering of the periodic assembly
+
+940
+01:37:25,300 --> 01:37:31,860
+of molecules or atoms in the crystal the electron density can be reconstructed
+
+941
+01:37:35,779 --> 01:37:42,739
+here is a picture of the process very simple picture of course we have an x-ray source
+
+942
+01:37:43,460 --> 01:37:51,699
+we have the crystal or material under investigation and when you expose this crystal
+
+943
+01:37:51,699 --> 01:37:55,060
+this material in to the x-rays
+
+944
+01:37:55,619 --> 01:38:06,020
+it diffracts the rays into many specific directions and this is a diffraction pattern
+
+945
+01:38:06,020 --> 01:38:12,659
+actually you just detect this diffraction pattern and construct an image of the material
+
+946
+01:38:15,380 --> 01:38:22,260
+by measuring the angles and intensities of these diffracted beams a crystallographer can produce
+
+947
+01:38:22,260 --> 01:38:25,060
+a 3d picture of the density of electricity
+
+948
+01:38:25,300 --> 01:38:26,340
+in the crystal
+
+949
+01:38:29,060 --> 01:38:35,220
+of course this is a small excursion from the main subjects about this x-ray crystallography
+
+950
+01:38:36,180 --> 01:38:42,260
+from this electron density image the mean positions of the atoms in the crystal can
+
+951
+01:38:42,260 --> 01:38:49,619
+be determined as well as their chemical bonds their disorder and various other information
+
+952
+01:38:55,300 --> 01:39:01,619
+so the method revealed the structure and function of many biological molecules
+
+953
+01:39:01,619 --> 01:39:11,940
+including vitamins drugs proteins and nucleic acids such as dna so that's that was the reason why the
+
+954
+01:39:15,140 --> 01:39:21,140
+information obtained in these genetic studies exploded
+
+955
+01:39:23,779 --> 01:39:24,020
+in
+
+956
+01:39:26,260 --> 01:39:32,579
+these modern times because we have this x-ray crystallography
+
+957
+01:39:35,380 --> 01:39:37,860
+so in this respect i should
+
+958
+01:39:40,500 --> 01:39:45,140
+also mention that the double helix structure of dna discovered by
+
+959
+01:39:45,140 --> 01:39:49,940
+james watson and francis krieg was revealed by x-ray crystallography
+
+960
+01:39:52,260 --> 01:39:55,140
+it was not a random discovery
+
+961
+01:39:55,300 --> 01:40:00,579
+it was after x-ray crystallography
+
+962
+01:40:00,000 --> 01:40:17,180
+It is also used to determine the shape of the much complex structures such as viruses,
+
+963
+01:40:17,180 --> 01:40:18,180
+etc.
+
+964
+01:40:18,180 --> 01:40:28,739
+So these pictures of the viruses we see basically constructed after studying with this X-ray
+
+965
+01:40:28,739 --> 01:40:34,139
+crystallography.
+
+966
+01:40:34,139 --> 01:40:43,679
+So these are some examples constructed shape of the 3D shape of the some viruses viral
+
+967
+01:40:43,679 --> 01:40:46,639
+capsid structure obtained by X-ray crystallography.
+
+968
+01:40:46,639 --> 01:40:51,699
+The first one is poliovirus.
+
+969
+01:40:51,699 --> 01:40:58,719
+Then the second one is hepatitis B virus.
+
+970
+01:40:58,720 --> 01:41:08,039
+Of course, this imaging technique has also some shortcomings.
+
+971
+01:41:08,039 --> 01:41:13,480
+It is difficult to obtain a crystal of virus particles, which is a prerequisite for X-ray
+
+972
+01:41:13,480 --> 01:41:20,119
+crystallography and X-ray crystallography generally requires placing the samples in
+
+973
+01:41:20,119 --> 01:41:27,119
+non-physiological environments, which can occasionally lead to functionally irrelevant conformational
+
+974
+01:41:27,119 --> 01:41:28,119
+changes.
+
+975
+01:41:28,119 --> 01:41:28,720
+Actually.
+
+976
+01:41:28,720 --> 01:41:35,039
+If you take it, probably you are not dealing with a live virus, but some dead viruses.
+
+977
+01:41:35,039 --> 01:41:47,480
+So a virus, if virus lost functionality, it may also lose some structural or it may develop
+
+978
+01:41:47,480 --> 01:41:49,940
+some structural deformities as well.
+
+979
+01:41:49,940 --> 01:41:54,159
+So this leads to some misinformation.
+
+980
+01:41:54,159 --> 01:41:58,119
+Instead, nuclear magnetic resonance can be used.
+
+981
+01:41:58,119 --> 01:42:07,579
+In nuclear magnetic resonance, no crystals are used in the process and the protein remains
+
+982
+01:42:07,579 --> 01:42:13,500
+in solution throughout the entire experiment.
+
+983
+01:42:13,500 --> 01:42:21,239
+An intense and very linear magnetic field aligns the atomic nuclei of the protein into
+
+984
+01:42:21,239 --> 01:42:23,439
+one of two spin states.
+
+985
+01:42:23,439 --> 01:42:26,439
+I'm not going to go into more detail.
+
+986
+01:42:26,439 --> 01:42:27,439
+Filtration of the atomic nucleus.
+
+987
+01:42:27,440 --> 01:42:35,500
+This is the physics of nuclear magnetic resonance, but it uses some spinning function, spinning
+
+988
+01:42:35,500 --> 01:42:43,520
+of the atomic spinning, alignment of the atoms with this magnetic field.
+
+989
+01:42:43,520 --> 01:42:52,080
+A series of radio frequency pulses is used to perturb these by flipping some of the nuclei
+
+990
+01:42:52,080 --> 01:42:55,440
+from one spin state to the other.
+
+991
+01:42:55,440 --> 01:42:56,440
+As the total amount of energy is lost.
+
+992
+01:42:56,440 --> 01:42:57,440
+So this is the physics of nuclear magnetic resonance.
+
+993
+01:42:57,440 --> 01:43:00,900
+The total amount of energy absorbed is low.
+
+994
+01:43:00,900 --> 01:43:11,060
+The protein remains undamaged and functions as normal.
+
+995
+01:43:11,060 --> 01:43:19,440
+It has no physical harm basically to the substance.
+
+996
+01:43:19,440 --> 01:43:22,960
+Eventually, the flipped spin state of the nuclei realigns
+
+997
+01:43:22,960 --> 01:43:24,160
+to the normal state.
+
+998
+01:43:24,160 --> 01:43:25,320
+During this realignment, the atoms will be allowed into the cosmic shocking state.
+
+999
+01:43:25,320 --> 01:43:25,600
+But we do not know.
+
+1000
+01:43:25,600 --> 01:43:25,700
+We do not know.
+
+1001
+01:43:25,700 --> 01:43:25,800
+We just have to go back to the classic question.
+
+1002
+01:43:25,800 --> 01:43:25,980
+So how do you deal with this kind of situation?
+
+1003
+01:43:25,980 --> 01:43:26,440
+The picture of JVD is about, we do not have a background and we do not have the difference
+
+1004
+01:43:26,440 --> 01:43:26,500
+between the total amount of energy absorbed.
+
+1005
+01:43:26,500 --> 01:43:26,600
+The current amount of energy absorbed is low.
+
+1006
+01:43:26,600 --> 01:43:27,160
+The protein remains undamaged and functions as normal.
+
+1007
+01:43:27,159 --> 01:43:40,680
+month it emits a radio frequency pulse so then this is the source used to construct images this
+
+1008
+01:43:41,800 --> 01:43:45,960
+emitted radio frequency while the
+
+1009
+01:43:45,960 --> 01:43:47,960
+the
+
+1010
+01:43:49,000 --> 01:43:56,359
+nuclei tries to align to the realigns to the normal state
+
+1011
+01:43:58,199 --> 01:44:03,319
+the timing of this re-emission of energy is determined by the electronic
+
+1012
+01:44:03,319 --> 01:44:06,439
+environment there are electronic circuits doing this
+
+1013
+01:44:08,439 --> 01:44:10,439
+a feature of this environment is the
+
+1014
+01:44:11,960 --> 01:44:15,880
+electrostatic shielding effects of
+
+1015
+01:44:15,960 --> 01:44:23,319
+the surrounding nuclei the nuclei in addition to the bonds linking them can be identified by their
+
+1016
+01:44:23,319 --> 01:44:30,279
+spin decay properties there are several information carrying variables this they are used
+
+1017
+01:44:30,279 --> 01:44:41,800
+in imaging this the time it takes to realign or the amount of the energy it radiates etc
+
+1018
+01:44:44,359 --> 01:44:45,800
+so it has also
+
+1019
+01:44:45,960 --> 01:44:51,739
+been used for the
+
+1020
+01:44:51,739 --> 01:44:53,399
+reaction of the
+
+1021
+01:44:53,399 --> 01:44:55,159
+nuclei
+
+1022
+01:44:55,159 --> 01:44:56,039
+so
+
+1023
+01:44:56,039 --> 01:45:04,039
+this is a good problem the problem with nmr method is the size of the proteins that can be studied
+
+1024
+01:45:00,159 --> 01:45:07,279
+this is quite low when compared to the x-ray crystallography but it is improving probably
+
+1025
+01:45:04,039 --> 01:45:09,000
+using current techniques this equates the maximum of 200 amino acids
+
+1026
+01:45:09,680 --> 01:45:14,239
+nowadays nmr methods are much more capable of
+
+1027
+01:45:17,840 --> 01:45:22,479
+doing this so they usually use together
+
+1028
+01:45:22,480 --> 01:45:34,080
+uh to obtain more information about the substance under study because they complement each other
+
+1029
+01:45:36,720 --> 01:45:42,640
+if protein structures determined by x-ray crystallography and nmr are compared they
+
+1030
+01:45:42,640 --> 01:45:49,280
+are generally consistent consistent with each other and moreover are biologically plausible so
+
+1031
+01:45:49,840 --> 01:45:52,400
+they are using both actually
+
+1032
+01:45:52,480 --> 01:45:54,120
+it conforms the
+
+1033
+01:45:56,760 --> 01:45:57,560
+structures
+
+1034
+01:46:00,120 --> 01:46:07,880
+3d shape. Okay, coming back to you back to the protein data bank
+
+1035
+01:46:08,920 --> 01:46:13,800
+it contains a large collection of previously determined biological structures
+
+1036
+01:46:16,360 --> 01:46:22,120
+it also includes experimental details of how the structure was determined
+
+1037
+01:46:22,120 --> 01:46:22,280
+there was a sharp increase in the composition of the protein that was obtained by the x-ray crystallography
+
+1038
+01:46:22,280 --> 01:46:22,400
+and the coordinates of the structure were all consistent with each other of course
+
+1039
+01:46:22,400 --> 01:46:22,460
+it was also a third of the structure was determined by the x-ray crystallography and it was part of the study itself
+
+1040
+01:46:22,460 --> 01:46:31,520
+I introduce to this x-ray crystallography and NMR probably they use one of or both
+
+1041
+01:46:31,520 --> 01:46:36,699
+techniques to obtain more information and what publications and other
+
+1042
+01:46:36,699 --> 01:46:41,399
+databases to consult for more information on the structure and some
+
+1043
+01:46:41,399 --> 01:46:49,199
+derived data and details of any index regions while this information is meant
+
+1044
+01:46:49,199 --> 01:46:55,739
+to be included in the PDB some of it may be missing incomplete or incorrect
+
+1045
+01:46:55,739 --> 01:47:03,819
+for some database entries and this is these are actually subject of data
+
+1046
+01:47:03,819 --> 01:47:13,880
+science handling missing incomplete or incorrect data in a database one of the
+
+1047
+01:47:13,880 --> 01:47:19,159
+oldest bioscience data stores which dates back to 1971
+
+1048
+01:47:19,159 --> 01:47:19,179
+you
+
+1049
+01:47:19,180 --> 01:47:26,980
+this protein data bank as I said it originally stored the 3d coordinates of
+
+1050
+01:47:26,980 --> 01:47:36,060
+protein structures which were determined by the use of x-ray crystallography
+
+1051
+01:47:36,060 --> 01:47:41,940
+prior to the PDB's structures were typically published in journals there
+
+1052
+01:47:41,940 --> 01:47:49,140
+was no organized databases and many researchers re-entered the information
+
+1053
+01:47:49,140 --> 01:47:54,900
+manually and their computers so as to facilitate further manipulation of them
+
+1054
+01:47:54,900 --> 01:48:00,420
+especially when the internet and computing technology is not
+
+1055
+01:48:00,420 --> 01:48:06,500
+that developed now a big field is
+
+1056
+01:48:06,500 --> 01:48:13,060
+the research online literature and determine these data
+
+1057
+01:48:13,060 --> 01:48:19,100
+and retrieving these data using natural language processing techniques
+
+1058
+01:48:19,100 --> 01:48:31,280
+that's a subject of the computer science basically and the computer science or
+
+1059
+01:48:31,280 --> 01:48:38,579
+especially natural language processing techniques can extensively be utilized to perform this
+
+1060
+01:48:38,579 --> 01:48:48,140
+task instead of searching libraries manually which will take many many years just you develop
+
+1061
+01:48:48,140 --> 01:48:49,060
+an algorithm
+
+1062
+01:48:49,060 --> 01:48:55,220
+and it will do it for you searching the existing literature if the
+
+1063
+01:48:55,220 --> 01:49:05,060
+literature is online it is also possible to automate the search operations and
+
+1064
+01:49:05,060 --> 01:49:19,020
+just extract the required information the original PDB data file format adopted was a flat texture the
+
+1065
+01:49:19,020 --> 01:49:27,020
+Even it does not deserve as database, which was eight columns wide.
+
+1066
+01:49:27,020 --> 01:49:34,020
+Today, the structures in the PDB are determined by Aderyck's sacred stereography or NMR.
+
+1067
+01:49:34,020 --> 01:49:43,020
+So this is reflected in the growth of the number of entrants in the PDB over some 40 years.
+
+1068
+01:49:43,020 --> 01:49:51,020
+I think that picture shows growth of this database.
+
+1069
+01:49:51,020 --> 01:50:00,020
+Even nowadays, it's growth. This is the 2019. I think that's probably.
+
+1070
+01:50:00,000 --> 01:50:04,239
+some more addition to this graph until now
+
+1071
+01:50:10,880 --> 01:50:16,000
+before we mentioned these data file formats it is worth reminding again
+
+1072
+01:50:18,319 --> 01:50:20,720
+it uses one of two formats
+
+1073
+01:50:22,800 --> 01:50:24,399
+they are interconvertible
+
+1074
+01:50:24,400 --> 01:50:34,160
+so this is original generic and highly unstructured pdb data file format
+
+1075
+01:50:35,600 --> 01:50:41,440
+and that is still widely used by researchers because it started as this format
+
+1076
+01:50:45,440 --> 01:50:51,440
+when biologists talk of pdb files or pdb format actually they are referring these this
+
+1077
+01:50:52,000 --> 01:50:53,760
+pdb flat file format
+
+1078
+01:50:54,400 --> 01:50:57,520
+it is a version
+
+1079
+01:51:00,080 --> 01:51:07,840
+and the second is mmcif the new pdb data file format that is designed to offer
+
+1080
+01:51:07,840 --> 01:51:14,960
+a highly structured modern replacement original pdb flat file format
+
+1081
+01:51:17,840 --> 01:51:21,760
+this is referred as the new pdb format
+
+1082
+01:51:24,160 --> 01:51:24,320
+here
+
+1083
+01:51:24,400 --> 01:51:34,960
+is an example structure one lqt for example this is oxidoreductase enzyme structure produced using
+
+1084
+01:51:34,960 --> 01:51:37,760
+x-ray crystal crystallographic technique
+
+1085
+01:51:40,720 --> 01:51:42,320
+this is constructed
+
+1086
+01:51:44,640 --> 01:51:52,160
+image of this enzyme this is another one protein structure of
+
+1087
+01:51:52,720 --> 01:51:58,239
+turedoxine which is produced using nmr
+
+1088
+01:51:59,279 --> 01:52:07,119
+this is the 3d structure of this protein of course these are the reconstructions we will be discussing
+
+1089
+01:52:07,119 --> 01:52:18,239
+later this falls in data visualization and it is extensively used in bioinformatics at the end of
+
+1090
+01:52:18,239 --> 01:52:19,680
+this protein
+
+1091
+01:52:19,680 --> 01:52:21,599
+and it is also a greenhouse gas protein
+
+1092
+01:52:21,600 --> 01:52:30,800
+protein or amino acid studies basically to create all sorts of visualizations we use
+
+1093
+01:52:30,800 --> 01:52:37,120
+visualization techniques which is again feel a field of computer science
+
+1094
+01:52:38,880 --> 01:52:45,920
+probably we will dedicate one week or one or two weeks to this visualization later
+
+1095
+01:52:45,920 --> 01:52:55,920
+pdv structured data files can be downloaded from many website locations on the internet
+
+1096
+01:52:57,920 --> 01:53:04,239
+this is a good starting place you simply try this you will see these
+
+1097
+01:53:06,480 --> 01:53:12,640
+links to the download this pdv data files in this website
+
+1098
+01:53:14,720 --> 01:53:15,600
+or you
+
+1099
+01:53:15,920 --> 01:53:19,600
+by informatics institutes host the european mirror
+
+1100
+01:53:20,319 --> 01:53:25,359
+if you follow this link you will also get these data files
+
+1101
+01:53:35,520 --> 01:53:45,600
+some data entries in pdb data file is indexing bibliographic data notable features
+
+1102
+01:53:45,600 --> 01:53:45,760
+t
+
+1103
+01:53:46,239 --> 01:53:51,359
+coordinates etc there are other sections as well
+
+1104
+01:54:02,960 --> 01:54:09,279
+so these are more details i just skipped this this is a short description of the
+
+1105
+01:54:09,279 --> 01:54:15,760
+most important fields in the pdv data file for example header which contains a
+
+1106
+01:54:15,760 --> 01:54:24,000
+brief description of the structure the date and the pdb id code title this is the title of the
+
+1107
+01:54:24,000 --> 01:54:32,400
+structure compound with details of the structure source where it was obtained from which organism
+
+1108
+01:54:32,400 --> 01:54:41,680
+the structure came from keywords lists a set of useful words phrases that describe this structure
+
+1109
+01:54:41,680 --> 01:54:44,880
+actually this is some sort of metadata for this
+
+1110
+01:54:46,400 --> 01:54:54,800
+uh data file and who who up who constructed this data outer
+
+1111
+01:54:57,440 --> 01:55:06,239
+revision data
+
+1112
+01:55:00,800 --> 01:55:13,119
+sometimes the database is updated or data file is updated so these are some journal one or more
+
+1113
+01:55:07,680 --> 01:55:11,119
+love
+
+1114
+01:55:13,119 --> 01:55:20,239
+literature reference that describes the structure when they discover a structure usually they
+
+1115
+01:55:20,239 --> 01:55:30,159
+publish it and this field will give you the information about the literature relevant to this
+
+1116
+01:55:30,800 --> 01:55:39,920
+protein remark one to remark 999 these are the details of the experimental methods
+
+1117
+01:55:39,920 --> 01:55:42,319
+used to determine the structure
+
+1118
+01:55:47,359 --> 01:55:47,679
+okay
+
+1119
+01:55:50,239 --> 01:55:55,359
+databases reference these are the cross links to other databases same structure
+
+1120
+01:55:55,359 --> 01:56:01,439
+might be in other databases as well and we will find in this field this information
+
+1121
+01:56:02,800 --> 01:56:05,359
+the official amino acid sequence is one
+
+1122
+01:56:07,679 --> 01:56:13,760
+of the structure helix or sheet this is another field details of the regions of
+
+1123
+01:56:13,760 --> 01:56:16,079
+secondary structure found in the protein
+
+1124
+01:56:18,079 --> 01:56:20,000
+atom return with what will be
+
+1125
+01:56:20,239 --> 01:56:27,599
+a very special coordinates of particular atom in the protein structure or other molecules
+
+1126
+01:56:27,599 --> 01:56:36,399
+such as water or cofactors and these are these were some of the fields in this database
+
+1127
+01:56:36,399 --> 01:56:42,559
+now when you access this database you can get all sort of information from these databases
+
+1128
+01:56:44,479 --> 01:56:50,000
+about the this particular protein this is actually how you
+
+1129
+01:56:50,239 --> 01:56:51,039
+can start
+
+1130
+01:56:56,800 --> 01:57:04,479
+if you are doing further analysis on this protein you will already have many information there if
+
+1131
+01:57:04,479 --> 01:57:07,679
+you need these informations you will find in this database
+
+1132
+01:57:13,840 --> 01:57:19,279
+and usually the extraction of this information from these databases
+
+1133
+01:57:20,239 --> 01:57:26,159
+will and other yozaninews are sharing pdf and other texts
+
+1134
+01:57:26,159 --> 01:57:27,199
+but this is an exit tool for this process
+
+1135
+01:57:27,199 --> 01:57:31,439
+and you can you can chat about the use of these databases
+
+1136
+01:57:32,880 --> 01:57:36,000
+yes
+
+1137
+01:57:42,239 --> 01:57:44,960
+btl
+
+1138
+01:57:47,039 --> 01:57:47,899
+manna
+
+1139
+01:57:47,899 --> 01:57:48,399
+got a uh
+
+1140
+01:57:48,399 --> 01:57:49,199
+and reading
+
+1141
+01:57:49,199 --> 01:57:49,599
+it on google
+
+1142
+01:57:49,599 --> 01:57:50,239
+the device of pdf data taking data it is a database over design fumalic database it is an image of a pdf database
+
+1143
+01:57:50,239 --> 01:57:55,019
+extensively to be able to extract this information from these
+
+1144
+01:57:55,019 --> 01:57:59,000
+data files. The reason I
+
+1145
+01:57:59,000 --> 01:58:02,199
+included this discussion is just to link
+
+1146
+01:58:02,199 --> 01:58:06,819
+with these regular expressions and pattern matching concepts
+
+1147
+01:58:06,819 --> 01:58:08,099
+basically.
+
+1148
+01:58:12,439 --> 01:58:14,659
+Here we have two
+
+1149
+01:58:14,659 --> 01:58:18,779
+representative examples exploring the relationship between the
+
+1150
+01:58:18,779 --> 01:58:22,279
+resolution of structure and its free R value,
+
+1151
+01:58:24,559 --> 01:58:27,019
+both of which are measures of the quality
+
+1152
+01:58:27,019 --> 01:58:29,739
+of the X-ray crystallographic structures.
+
+1153
+01:58:31,279 --> 01:58:35,000
+The free R value measures the agreement between the model
+
+1154
+01:58:35,000 --> 01:58:38,739
+and the observed X-ray reflection data. It's a metric,
+
+1155
+01:58:38,960 --> 01:58:39,779
+quality metric.
+
+1156
+01:58:43,420 --> 01:58:46,979
+The lower the free R value, the better the fit between
+
+1157
+01:58:46,979 --> 01:58:48,759
+the model and the observed data.
+
+1158
+01:58:49,579 --> 01:58:52,779
+Well, you have a computational model of these
+
+1159
+01:58:52,779 --> 01:58:57,859
+protein structures, and you have the actual
+
+1160
+01:58:57,859 --> 01:59:03,939
+observed protein structures
+
+1161
+01:59:03,939 --> 01:59:07,279
+using one of these techniques, or both of these
+
+1162
+01:59:07,279 --> 01:59:11,199
+crystallography and NMR. And at the end, your
+
+1163
+01:59:11,199 --> 01:59:15,920
+model, if you are going to use this model in, say, for example,
+
+1164
+01:59:15,920 --> 01:59:18,719
+the spread of a virus or whatever, you should
+
+1165
+01:59:18,779 --> 01:59:30,159
+have correct model. So this free R value will tell you the
+
+1166
+01:59:30,159 --> 01:59:36,239
+quality of your modeling. If this R value is lower, then your
+
+1167
+01:59:36,239 --> 01:59:41,439
+model is better. That means the database cross-referencing
+
+1168
+01:59:41,439 --> 01:59:44,899
+section used to link to other database anyway.
+
+1169
+01:59:48,779 --> 01:59:58,359
+I just go through this.
+
+1170
+01:59:58,359 --> 02:00:00,159
+I just go through this.
+
+1171
+02:00:00,000 --> 02:00:13,600
+And here is the Perl program, which finds this free R value.
+
+1172
+02:00:13,600 --> 02:00:19,859
+I'm not going to describe in detail.
+
+1173
+02:00:19,860 --> 02:00:31,960
+That was an example what to do or how to use these databases.
+
+1174
+02:00:31,960 --> 02:00:38,720
+In many cases, databases are redundant.
+
+1175
+02:00:38,720 --> 02:00:43,600
+Anybody knows what redundancy is?
+
+1176
+02:00:43,600 --> 02:00:48,640
+What do we mean by redundant?
+
+1177
+02:00:48,640 --> 02:00:49,640
+If a data is redundant,
+
+1178
+02:00:49,640 --> 02:00:49,720
+it is redundant.
+
+1179
+02:00:49,720 --> 02:00:49,840
+If a data is redundant,
+
+1180
+02:00:49,840 --> 02:00:49,860
+it is redundant.
+
+1181
+02:00:49,860 --> 02:00:52,720
+What does it mean?
+
+1182
+02:00:58,760 --> 02:01:00,740
+You can simply type it.
+
+1183
+02:01:10,760 --> 02:01:11,440
+Okay.
+
+1184
+02:01:11,780 --> 02:01:16,740
+You have, for example, a protein structure.
+
+1185
+02:01:16,740 --> 02:01:17,900
+You have a database.
+
+1186
+02:01:17,900 --> 02:01:25,300
+In your database, you have, say, protein A, protein B, and protein C,
+
+1187
+02:01:25,580 --> 02:01:29,160
+which came from different sources.
+
+1188
+02:01:29,760 --> 02:01:36,240
+But apparently, you realize that these are the same protein structure,
+
+1189
+02:01:37,000 --> 02:01:38,680
+but sources are different.
+
+1190
+02:01:38,820 --> 02:01:43,780
+Probably three different groups studied the same structure
+
+1191
+02:01:43,780 --> 02:01:46,420
+and produced almost the same information.
+
+1192
+02:01:47,240 --> 02:01:47,760
+Now, when you include the same structure,
+
+1193
+02:01:47,760 --> 02:01:51,220
+you include these three in your database.
+
+1194
+02:01:51,220 --> 02:01:54,900
+Now, you have a redundancy in your database.
+
+1195
+02:01:54,900 --> 02:02:02,180
+So this is, in many cases, not desired thing in databases,
+
+1196
+02:02:02,180 --> 02:02:08,619
+because we have a limited resource, limited storage.
+
+1197
+02:02:08,619 --> 02:02:12,780
+So we don't want redundancies in data sets.
+
+1198
+02:02:12,780 --> 02:02:17,619
+Anyway, we'll discuss after a small break.
+
+1199
+02:02:17,619 --> 02:02:23,019
+Please come back in 11.20.
+
+1200
+02:02:32,559 --> 02:02:32,619
+Thank you.
+
+1201
+02:02:47,619 --> 02:02:49,619
+.
+
+1202
+02:02:49,619 --> 02:02:50,619
+.
+
+1203
+02:02:50,619 --> 02:02:51,619
+.
+
+1204
+02:02:51,619 --> 02:02:52,619
+.
+
+1205
+02:02:52,619 --> 02:02:53,619
+.
+
+1206
+02:02:53,619 --> 02:02:54,619
+.
+
+1207
+02:02:54,619 --> 02:02:55,619
+.
+
+1208
+02:02:55,619 --> 02:02:56,619
+.
+
+1209
+02:02:56,619 --> 02:02:57,619
+.
+
+1210
+02:02:57,619 --> 02:02:58,619
+.
+
+1211
+02:02:58,619 --> 02:02:59,619
+.
+
+1212
+02:02:59,619 --> 02:03:00,619
+.
+
+1213
+02:03:00,619 --> 02:03:01,619
+.
+
+1214
+02:03:01,619 --> 02:03:02,619
+.
+
+1215
+02:03:02,619 --> 02:03:03,619
+.
+
+1216
+02:03:03,619 --> 02:03:04,619
+.
+
+1217
+02:03:04,619 --> 02:03:05,619
+.
+
+1218
+02:03:05,619 --> 02:03:06,619
+.
+
+1219
+02:03:06,619 --> 02:03:07,619
+.
+
+1220
+02:03:07,619 --> 02:03:08,619
+.
+
+1221
+02:03:08,619 --> 02:03:09,619
+.
+
+1222
+02:03:09,619 --> 02:03:10,619
+.
+
+1223
+02:03:10,619 --> 02:03:11,619
+.
+
+1224
+02:03:11,619 --> 02:03:12,619
+.
+
+1225
+02:03:12,619 --> 02:03:13,619
+.
+
+1226
+02:03:13,619 --> 02:03:14,619
+.
+
+1227
+02:03:14,619 --> 02:03:15,619
+.
+
+1228
+02:03:15,619 --> 02:03:16,619
+.
+
+1229
+02:03:16,619 --> 02:03:17,239
+you
+
+1230
+02:03:46,619 --> 02:03:47,239
+you
+
+1231
+02:04:16,619 --> 02:04:17,239
+you
+
+1232
+02:04:46,619 --> 02:04:47,239
+you
+
+1233
+02:05:00,000 --> 02:05:29,979
+Altyazı M.K.
+
+1234
+02:05:30,000 --> 02:05:59,979
+Altyazı M.K.
+
+1235
+02:06:00,000 --> 02:06:29,979
+Altyazı M.K.
+
+1236
+02:06:30,000 --> 02:06:59,979
+Altyazı M.K.
+
+1237
+02:07:00,000 --> 02:07:29,979
+Altyazı M.K.
+
+1238
+02:07:30,000 --> 02:07:59,979
+Altyazı M.K.
+
+1239
+02:08:00,000 --> 02:08:29,979
+Altyazı M.K.
+
+1240
+02:08:30,000 --> 02:08:59,979
+Altyazı M.K.
+
+1241
+02:09:00,000 --> 02:09:29,979
+Altyazı M.K.
+
+1242
+02:09:30,000 --> 02:09:59,979
+Altyazı M.K.
+
+1243
+02:10:00,000 --> 02:10:29,979
+Altyazı M.K.
+
+1244
+02:10:30,000 --> 02:10:59,979
+Altyazı M.K.
+
+1245
+02:11:00,000 --> 02:11:29,979
+Altyazı M.K.
+
+1246
+02:11:30,000 --> 02:11:59,979
+Altyazı M.K.
+
+1247
+02:12:00,000 --> 02:12:29,979
+Altyazı M.K.
+
+1248
+02:12:30,000 --> 02:12:59,979
+Altyazı M.K.
+
+1249
+02:13:00,000 --> 02:13:29,979
+Altyazı M.K.
+
+1250
+02:13:30,000 --> 02:13:59,979
+Altyazı M.K.
+
+1251
+02:14:00,000 --> 02:14:29,979
+Altyazı M.K.
+
+1252
+02:14:30,000 --> 02:14:59,979
+Altyazı M.K.
+
+1253
+02:15:00,000 --> 02:15:12,560
+discussing concept of beta and the pdb publishes a table of database names and their associated
+
+1254
+02:15:12,560 --> 02:15:21,239
+abbreviated codes these are database name and the codes used to refer to them
+
+1255
+02:15:21,239 --> 02:15:30,099
+the db ref lines identify the following fields working from left to the right
+
+1256
+02:15:30,099 --> 02:15:34,679
+so
+
+1257
+02:15:34,679 --> 02:15:45,899
+the coordinate data for the locations of atoms in the micromolecular structure is straightforward
+
+1258
+02:15:45,899 --> 02:15:51,159
+especially when compared to the annotation contained in the headers
+
+1259
+02:15:51,159 --> 02:15:51,219
+so the db ref lines identify the following fields working from left to the right
+
+1260
+02:15:51,220 --> 02:15:56,079
+this is also referred to a section of the pdp pd b data file
+
+1261
+02:15:59,480 --> 02:16:04,560
+i just skip these things and this data section as well
+
+1262
+02:16:06,760 --> 02:16:10,880
+for example referring to the 1lqt x-ray structure
+
+1263
+02:16:10,880 --> 02:16:15,199
+and extract of lines from the coordinate section looks like this
+
+1264
+02:16:19,520 --> 02:16:21,199
+here are coordinates
+
+1265
+02:16:21,220 --> 02:16:37,979
+coordinates are given and some parts of data sections of course what these numbers mean
+
+1266
+02:16:37,979 --> 02:16:56,059
+is explained in data set here are the explanation of these data sets we have columns here for
+
+1267
+02:16:56,059 --> 02:17:07,959
+example columns one to six it's record name seven to eleven is atom serial number 13 to
+
+1268
+02:17:07,960 --> 02:17:15,880
+16 is atom name and etc these all these columns have specific meanings specific representations
+
+1269
+02:17:17,160 --> 02:17:24,200
+chain identifier residue sequence number code for insertion of residues etc etc orthogonal
+
+1270
+02:17:24,200 --> 02:17:33,560
+coordinates for x in angstrom's orthogonal coordinates for y in armstrong again or whatever
+
+1271
+02:17:36,840 --> 02:17:37,320
+of course
+
+1272
+02:17:38,440 --> 02:17:44,840
+before processing or you if you are going to use this data in your analysis we have to extract this
+
+1273
+02:17:48,040 --> 02:17:57,080
+data from the database using parsing technologies here is an example per subroutine
+
+1274
+02:17:59,800 --> 02:18:07,160
+and this is a simple coordinator extraction program as an example
+
+1275
+02:18:07,960 --> 02:18:11,400
+we see here
+
+1276
+02:18:15,240 --> 02:18:16,520
+quite few matching
+
+1277
+02:18:19,480 --> 02:18:21,560
+binding cooperators are used
+
+1278
+02:18:25,480 --> 02:18:28,040
+is the result from this program
+
+1279
+02:18:30,200 --> 02:18:32,920
+so original
+
+1280
+02:18:38,440 --> 02:18:49,320
+,
+
+1281
+02:18:49,320 --> 02:18:50,360
+basically
+
+1282
+02:18:50,360 --> 02:18:51,720
+finally
+
+1283
+02:18:51,720 --> 02:18:53,880
+it is usuallyuy
+
+1284
+02:18:53,880 --> 02:18:54,680
+organized
+
+1285
+02:18:54,680 --> 02:18:59,240
+so
+
+1286
+02:18:59,240 --> 02:19:00,920
+we move forward
+
+1287
+02:19:00,920 --> 02:19:03,080
+with use of
+
+1288
+02:19:03,080 --> 02:19:04,520
+these
+
+1289
+02:19:04,520 --> 02:19:05,960
+natomiast
+
+1290
+02:19:05,960 --> 02:19:07,080
+pakai
+
+1291
+02:19:07,079 --> 02:19:12,200
+conditions and here i want to introduce the concept of database
+
+1292
+02:19:15,159 --> 02:19:23,159
+what should look like what should a database look like i'm not going to
+
+1293
+02:19:25,479 --> 02:19:30,200
+teach you database here in more details because you have already
+
+1294
+02:19:30,200 --> 02:19:37,960
+have several courses on this database and probably you studied there and you know better than me
+
+1295
+02:19:39,079 --> 02:19:45,720
+i don't know much about databases but just i will give you my understanding of databases here
+
+1296
+02:19:47,880 --> 02:19:55,640
+so many modern computer systems store vast amounts of structured data keyword here is structured
+
+1297
+02:19:57,480 --> 02:19:59,640
+typically these data
+
+1298
+02:20:00,000 --> 02:20:08,479
+is held in a database system you have a lack of course no i think named database systems
+
+1299
+02:20:10,000 --> 02:20:14,559
+a database is a collection of one or more related tables
+
+1300
+02:20:18,399 --> 02:20:27,120
+a table is a collection of one or more rows of data the rows of data are arranged in columns
+
+1301
+02:20:27,120 --> 02:20:34,079
+with each intersection of a row and column containing a beta item
+
+1302
+02:20:34,960 --> 02:20:43,040
+the row is a collection of one or more data items arranged in columns
+
+1303
+02:20:43,040 --> 02:20:46,640
+so there is an hierarchical structure
+
+1304
+02:20:49,200 --> 02:20:57,040
+in a database from row to tables from single data to rows and robot
+
+1305
+02:20:57,120 --> 02:21:13,500
+tables and tables to database for example if the first column in a row holds a date
+
+1306
+02:21:13,500 --> 02:21:19,700
+then every first column in every row must also hold a date you know just rows should
+
+1307
+02:21:19,700 --> 02:21:26,200
+be same type basically if the second column holds the name then the rest should be a name
+
+1308
+02:21:26,200 --> 02:21:35,480
+as well the following data corresponds to the structure in that there are two columns
+
+1309
+02:21:35,480 --> 02:21:45,700
+the first holding the date the second holding the name this is simple okay we have date
+
+1310
+02:21:45,700 --> 02:21:54,920
+column one and we have the names column two the structure
+
+1311
+02:21:54,920 --> 02:21:56,180
+an important property
+
+1312
+02:21:56,180 --> 02:22:06,340
+of a database is it's it's structured each column can be given a descriptive name
+
+1313
+02:22:08,020 --> 02:22:19,540
+here for example the name of this column is a discovery date and this is the scientist
+
+1314
+02:22:20,260 --> 02:22:24,820
+a column which indicates scientists discovered the discovery
+
+1315
+02:22:33,060 --> 02:22:34,420
+let me correct this
+
+1316
+02:22:37,460 --> 02:22:39,140
+resume slideshow
+
+1317
+02:22:49,540 --> 02:22:57,140
+okay in addition this structure requires that each data item hold in a column b of a specific type
+
+1318
+02:22:59,060 --> 02:23:07,060
+we already said this this is discovery date and scientist this is the column name
+
+1319
+02:23:07,060 --> 02:23:18,740
+and type restriction this is a valid date should be and this is a string indicating the name of the
+
+1320
+02:23:19,540 --> 02:23:29,780
+discovery this type information generally goes by one of two names which is known as metadata or
+
+1321
+02:23:29,780 --> 02:23:41,540
+schema now extending the discoveries table to include details of the discovery an additional
+
+1322
+02:23:41,540 --> 02:23:49,460
+column is required to hold the data for example we have the discoveries table
+
+1323
+02:23:49,540 --> 02:23:54,740
+date who discovered it and the discovery
+
+1324
+02:24:18,340 --> 02:24:19,300
+now we have three
+
+1325
+02:24:20,100 --> 02:24:29,220
+columns and these columns are related okay the inclusion of this new column requires an
+
+1326
+02:24:29,220 --> 02:24:36,180
+update to the structure of the table now we have the column name we have the type restriction we
+
+1327
+02:24:36,180 --> 02:24:49,300
+have now three columns here so these are the basically tables
+
+1328
+02:24:49,540 --> 02:24:51,300
+and the related tables and
+
+1329
+02:24:59,300 --> 02:24:59,780
+the problem
+
+1330
+02:25:00,000 --> 02:25:11,520
+with single table databases are that it introduces some other problems if a scientist in our example
+
+1331
+02:25:11,520 --> 02:25:18,719
+is responsible for a large number of discoveries their identification information has to be entered
+
+1332
+02:25:18,719 --> 02:25:27,360
+into every row of data that refers to them obviously this is time consuming and wasteful
+
+1333
+02:25:27,360 --> 02:25:34,400
+every time identification information is added to a role for a particular scientist
+
+1334
+02:25:35,040 --> 02:25:41,920
+it has to be entered in exactly the same way as the identification information added already
+
+1335
+02:25:44,960 --> 02:25:50,000
+whatever effort you make this level of accuracy is often very difficult to achieve
+
+1336
+02:25:51,120 --> 02:25:57,280
+if a scientist changes any identification information every row in the table
+
+1337
+02:25:57,360 --> 02:26:04,000
+that refers to the scientist discoveries has to be changed as well and this is very drudgery
+
+1338
+02:26:04,000 --> 02:26:10,720
+and it is not desired to solve this one table problem
+
+1339
+02:26:13,520 --> 02:26:22,960
+we can break the all one in one discoveries table into two tables
+
+1340
+02:26:25,040 --> 02:26:26,400
+here is an example
+
+1341
+02:26:27,360 --> 02:26:28,720
+we can break the all one in one discoveries table into two tables
+
+1342
+02:26:28,720 --> 02:26:29,520
+here is an example
+
+1343
+02:26:29,520 --> 02:26:31,200
+for example a case of a specific type
+
+1344
+02:26:31,200 --> 02:26:33,040
+where we are going to use a random variable
+
+1345
+02:26:33,040 --> 02:26:35,200
+and that's the general information that the scientist is trying to search
+
+1346
+02:26:35,200 --> 02:26:37,280
+so the question that I have is
+
+1347
+02:26:37,280 --> 02:26:38,960
+where is that random variable
+
+1348
+02:26:38,960 --> 02:26:40,000
+so the question that I have is
+
+1349
+02:26:40,000 --> 02:26:42,239
+what is the random variable
+
+1350
+02:26:42,239 --> 02:26:44,319
+and that's the answer
+
+1351
+02:26:44,319 --> 02:26:46,560
+here's the answer
+
+1352
+02:26:47,200 --> 02:26:52,040
+so we have column name type restrictions
+
+1353
+02:26:52,040 --> 02:26:55,040
+column name type of restrictions again
+
+1354
+02:26:55,040 --> 02:26:57,340
+so I just need to correct this
+
+1355
+02:26:57,360 --> 02:27:01,920
+well when i edit something
+
+1356
+02:27:04,720 --> 02:27:06,720
+it reflect it's reflected here
+
+1357
+02:27:10,319 --> 02:27:13,360
+so we have a more organized
+
+1358
+02:27:17,200 --> 02:27:18,079
+table now
+
+1359
+02:27:18,079 --> 02:27:24,639
+actually this is known as relational databases you have studied probably
+
+1360
+02:27:24,639 --> 02:27:27,520
+relating data in one table to the other
+
+1361
+02:27:29,520 --> 02:27:37,680
+forms the basis of modern data this is the basis of modern database theory it also explains why so
+
+1362
+02:27:37,680 --> 02:27:44,639
+many modern database technologies are referred as relational database methods
+
+1363
+02:27:44,639 --> 02:27:47,520
+and so on and so forth
+
+1364
+02:27:48,079 --> 02:27:51,440
+so the first one is the management systems
+
+1365
+02:27:52,319 --> 02:27:54,639
+shortly known as rdbms
+
+1366
+02:27:56,319 --> 02:28:03,120
+when a collection of tables is designed to relate to each other they are collectively referred to as
+
+1367
+02:28:03,120 --> 02:28:08,479
+a database this is a modern understanding of the database basically
+
+1368
+02:28:13,120 --> 02:28:17,600
+now that was the database but there is database systems
+
+1369
+02:28:18,079 --> 02:28:27,120
+as i mentioned before the database system is the computer program or group of programs
+
+1370
+02:28:27,120 --> 02:28:37,520
+which provides a mechanism to define and manipulate one or more databases this is a database system
+
+1371
+02:28:38,959 --> 02:28:45,920
+a database system allows databases tables and columns to be created and named and structures to be defined
+
+1372
+02:28:48,079 --> 02:28:54,079
+mechanisms to add, remove, update, and interact with the data in the database.
+
+1373
+02:28:55,079 --> 02:29:03,079
+Data stored in tables can be searched, sorted, sliced, diced, and cross-referenced.
+
+1374
+02:29:04,079 --> 02:29:08,079
+Reports can be generated and calculations can be performed.
+
+1375
+02:29:08,079 --> 02:29:30,079
+There are available database systems, and we classify usually database systems using many different criteria, but one criteria would be, in terms of the scale,
+
+1376
+02:29:31,079 --> 02:29:34,079
+the first one is personal database systems,
+
+1377
+02:29:35,079 --> 02:29:37,079
+which
+
+1378
+02:29:38,079 --> 02:29:41,079
+are designed to run on PCs.
+
+1379
+02:29:48,079 --> 02:29:50,079
+These are
+
+1380
+02:29:52,079 --> 02:29:59,079
+programs known as Access, Paradox, FileMaker, DBase, or whatever. There might be some more.
+
+1381
+02:30:00,000 --> 02:30:11,280
+and in terms of the cost they are reasonably priced a couple of hundred dollars or something
+
+1382
+02:30:11,280 --> 02:30:17,459
+the second type of database databases are enterprise database systems
+
+1383
+02:30:17,459 --> 02:30:24,180
+designed to support efficient storage and retrieval of vast amount of data
+
+1384
+02:30:24,180 --> 02:30:29,659
+as name implies it's it's not affordable by individuals
+
+1385
+02:30:29,659 --> 02:30:34,479
+and only big institutions companies and
+
+1386
+02:30:34,479 --> 02:30:39,979
+which are able to pay a lot of money these
+
+1387
+02:30:39,979 --> 02:30:45,059
+we are talking about hundreds of thousands dollars millions maybe sometimes
+
+1388
+02:30:45,059 --> 02:30:55,180
+these are known as probably in interways ingress sql server informics oracle whatever whatever
+
+1389
+02:30:55,180 --> 02:30:59,180
+these are expensive enterprise class database systems
+
+1390
+02:30:59,659 --> 02:31:09,440
+then we have open source database systems which probably you have used in your database
+
+1391
+02:31:09,440 --> 02:31:10,440
+courses
+
+1392
+02:31:10,440 --> 02:31:17,319
+and these are usually free and especially under linux
+
+1393
+02:31:17,319 --> 02:31:23,659
+and this postgres sql mysql or whatever
+
+1394
+02:31:23,659 --> 02:31:28,479
+to choose a database system
+
+1395
+02:31:28,479 --> 02:31:29,479
+to choose a database system
+
+1396
+02:31:29,479 --> 02:31:29,639
+to choose a database system
+
+1397
+02:31:29,639 --> 02:31:33,579
+of course there are several factors
+
+1398
+02:31:33,579 --> 02:31:44,000
+the main factors are the amount of the data to be stored in the database
+
+1399
+02:31:44,000 --> 02:31:49,420
+this is the paramount important
+
+1400
+02:31:49,420 --> 02:31:59,420
+then whether the data supports a small personal project or a large collaborative one
+
+1401
+02:31:59,420 --> 02:31:59,840
+this is the paramount important then whether the data supports a small personal project or a large collaborative one
+
+1402
+02:31:59,840 --> 02:32:06,420
+so again it will force us to choose an appropriate database
+
+1403
+02:32:06,420 --> 02:32:10,000
+an appropriate database and how much funds this is the money obviously
+
+1404
+02:32:10,000 --> 02:32:10,020
+and how much funds this is the money obviously
+
+1405
+02:32:10,020 --> 02:32:16,299
+are available towards the purchase of a database system
+
+1406
+02:32:16,299 --> 02:32:22,399
+if you don't if you are going to use on your personal computer then
+
+1407
+02:32:22,399 --> 02:32:27,420
+there's no point of spending millions thousands
+
+1408
+02:32:27,420 --> 02:32:29,040
+there's no point of spending millions thousands
+
+1409
+02:32:29,040 --> 02:32:29,299
+then there's no point of spending millions thousands
+
+1410
+02:32:29,420 --> 02:32:39,420
+SQL, Structured Query Language, is the language of database, probably you have already learned in your database courses.
+
+1411
+02:32:44,420 --> 02:32:49,420
+It is used to define the data.
+
+1412
+02:32:51,420 --> 02:32:56,420
+SQL provides two facilities, anybody can remember.
+
+1413
+02:32:59,420 --> 02:33:02,420
+Just you type in chat, if you remember.
+
+1414
+02:33:05,420 --> 02:33:07,420
+What are these two facilities?
+
+1415
+02:33:24,420 --> 02:33:28,420
+In a database, what do you need to form a database?
+
+1416
+02:33:30,420 --> 02:33:33,420
+First, you have to create a database.
+
+1417
+02:33:34,420 --> 02:33:38,420
+After you create, you have to be able to manipulate it.
+
+1418
+02:33:39,420 --> 02:33:47,420
+And you do this by using some specific tools or facilities.
+
+1419
+02:33:48,420 --> 02:33:58,420
+Okay, database definition language, which is used to create a database.
+
+1420
+02:33:59,420 --> 02:34:05,420
+It provides a mechanism for database creation.
+
+1421
+02:34:06,420 --> 02:34:08,420
+The other one?
+
+1422
+02:34:10,420 --> 02:34:12,420
+Is it DML?
+
+1423
+02:34:12,420 --> 02:34:21,420
+Yes, Data Manipulation Language, which enables us to manipulate already created database.
+
+1424
+02:34:22,420 --> 02:34:26,420
+It provides a mechanism to work with data in tables.
+
+1425
+02:34:26,420 --> 02:34:28,420
+As we already said, you know,
+
+1426
+02:34:28,420 --> 02:34:34,420
+just after you create a database, you go to data items there,
+
+1427
+02:34:34,420 --> 02:34:39,420
+you change it, you modify it, you update it, you delete it.
+
+1428
+02:34:39,420 --> 02:34:42,420
+To do this, you need DML.
+
+1429
+02:34:44,420 --> 02:34:51,420
+Of course, Perl provides these functionalities
+
+1430
+02:34:52,420 --> 02:34:55,420
+by using Perl packages.
+
+1431
+02:34:58,420 --> 02:34:59,420
+Let's do this.
+
+1432
+02:35:00,000 --> 02:35:13,239
+Well, I'm not going to go into more details, and I'm not going to describe MySQL or whatever we have already studied, probably, but I am just placing in bioinformatics context.
+
+1433
+02:35:00,420 --> 02:35:01,420
+So let's just start.
+
+1434
+02:35:01,420 --> 02:35:03,420
+This is a database.
+
+1435
+02:35:03,420 --> 02:35:05,420
+This is a database.
+
+1436
+02:35:05,420 --> 02:35:06,420
+This is a database.
+
+1437
+02:35:07,420 --> 02:35:08,420
+This is a database.
+
+1438
+02:35:08,420 --> 02:35:09,420
+This is a database.
+
+1439
+02:35:10,420 --> 02:35:11,420
+Let's do that.
+
+1440
+02:35:11,420 --> 02:35:12,420
+That's really easy.
+
+1441
+02:35:12,420 --> 02:35:13,420
+So you can find all these areas,
+
+1442
+02:35:13,239 --> 02:35:36,719
+Because bioinformatics is a multidisciplinary field, and it requires knowledge of many other fields, such as computer programming, mathematics, statistics, computer visualization, biology, and database, regular expression, many things.
+
+1443
+02:35:13,420 --> 02:35:14,420
+the information database,
+
+1444
+02:35:14,420 --> 02:35:15,420
+the database application,
+
+1445
+02:35:16,420 --> 02:35:19,420
+everywhere.
+
+1446
+02:35:21,420 --> 02:35:22,420
+You can find the database,
+
+1447
+02:35:22,420 --> 02:35:23,420
+the data system,
+
+1448
+02:35:23,420 --> 02:35:25,420
+the database information processes?
+
+1449
+02:35:25,420 --> 02:35:26,420
+The data systems?
+
+1450
+02:35:36,719 --> 02:35:43,219
+So far, if you notice, I mentioned or I talked about quite a lot.
+
+1451
+02:35:43,239 --> 02:35:47,639
+A lot of different fields. This is a difficulty in bioinformatics, really.
+
+1452
+02:35:48,619 --> 02:35:54,539
+So you need to have exposure into many different fields.
+
+1453
+02:35:58,440 --> 02:36:12,360
+So using MySQL comes with Linux as a pre-install, basically, in many Linux systems, but you can install MySQL under Windows as well, as far as I know.
+
+1454
+02:36:13,239 --> 02:36:29,039
+I'm not going to get into more details into this, but just show slides and skip through.
+
+1455
+02:36:29,039 --> 02:36:42,299
+Again, you see some familiar names here, SwissProt, EMBL, or whatever. We mentioned these data files before.
+
+1456
+02:36:43,239 --> 02:36:51,539
+And this is how you create a database in SQL.
+
+1457
+02:36:51,539 --> 02:36:58,180
+And to be honest, I have not used SQL, that's why I don't know much more details.
+
+1458
+02:37:00,340 --> 02:37:06,180
+But I just want to draw your attention to this concept.
+
+1459
+02:37:09,899 --> 02:37:13,219
+Probably, I will mention how to relate a database.
+
+1460
+02:37:13,239 --> 02:37:25,559
+basically when you program it in any other language as well the if you want to customize
+
+1461
+02:37:25,559 --> 02:37:33,020
+output handling and customized input handling we have to be able to program database within
+
+1462
+02:37:33,020 --> 02:37:40,300
+the programming environment so perl will be providing such facilities
+
+1463
+02:37:43,659 --> 02:37:44,540
+you can get
+
+1464
+02:37:47,020 --> 02:37:52,620
+dbi module from the cpan which is
+
+1465
+02:37:58,700 --> 02:38:02,940
+distribution side for the perl modules dbi module
+
+1466
+02:38:03,020 --> 02:38:11,659
+is database interface or database independent interface module for
+
+1467
+02:38:11,659 --> 02:38:17,420
+perl it will enable you to manipulate databases easily
+
+1468
+02:38:21,340 --> 02:38:28,460
+again i'm not going to spend more time but if you are interested in doing this you can consult
+
+1469
+02:38:29,260 --> 02:38:31,899
+books or manuals or data
+
+1470
+02:38:33,020 --> 02:38:38,460
+you can create databases and you can create databases
+
+1471
+02:38:38,460 --> 02:38:41,899
+in all sources on this subject
+
+1472
+02:38:44,380 --> 02:38:52,060
+and you can create databases using pearl and manipulate it as well there are specific functions
+
+1473
+02:38:52,060 --> 02:39:01,739
+to do this you can install dbi package module into perl and you can use this specific
+
+1474
+02:39:03,020 --> 02:39:06,620
+it here are some examples
+
+1475
+02:39:11,579 --> 02:39:22,460
+programming databases with dvi module it makes database manipulation quite easily for example
+
+1476
+02:39:22,460 --> 02:39:30,940
+this is a function in data database db user or whatever db pass
+
+1477
+02:39:33,979 --> 02:39:41,500
+another important subject or group of the programs really in bioinformatics is sequence retrieval
+
+1478
+02:39:41,500 --> 02:39:52,940
+systems sequence retrieval systems are used basically to easily retrieve sequences
+
+1479
+02:40:00,000 --> 02:40:10,100
+Let me mention this and just skip over.
+
+1480
+02:40:10,100 --> 02:40:20,459
+These are some specific programs either produced by the research centers building these databases
+
+1481
+02:40:20,460 --> 02:40:32,900
+or some even commercial companies, which specifically produces programs to be used in bioinformatic
+
+1482
+02:40:32,900 --> 02:40:34,260
+fields.
+
+1483
+02:40:34,260 --> 02:40:41,220
+One such a company is Lion Biosciences, which is based in Cambridge in the UK.
+
+1484
+02:40:41,220 --> 02:40:48,800
+Originally this sequence retrieval system was developed by this Lion Biosciences.
+
+1485
+02:40:48,800 --> 02:40:50,420
+So more information can be found.
+
+1486
+02:40:50,420 --> 02:41:00,760
+This is an example SRS database selection page.
+
+1487
+02:41:00,760 --> 02:41:05,780
+Sometimes that was in 2018, but sometimes they are updated.
+
+1488
+02:41:05,780 --> 02:41:08,079
+Sometimes they are replaced.
+
+1489
+02:41:08,079 --> 02:41:15,719
+Some of the links in these slides may not be working anymore.
+
+1490
+02:41:15,719 --> 02:41:20,399
+This is SRS.
+
+1491
+02:41:20,399 --> 02:41:48,379
+The principal task is here to start with the
+
+1492
+02:41:48,379 --> 02:41:49,399
+ramerion table.
+
+1493
+02:41:49,399 --> 02:41:50,260
+So here it is.
+
+1494
+02:41:50,260 --> 02:41:50,279
+What to do?
+
+1495
+02:41:50,279 --> 02:41:50,359
+Themark, plus depends on information without definition.
+
+1496
+02:41:50,359 --> 02:41:50,399
+Let's see.
+
+1497
+02:41:50,399 --> 02:41:56,639
+don't create any data format unless absolutely necessary so just follow the convention in many
+
+1498
+02:41:56,639 --> 02:42:07,840
+cases even it is not perfect you will find much easier to manipulate data if you use the already
+
+1499
+02:42:07,840 --> 02:42:16,079
+established conventions rather than introducing the new one unless if your method of the
+
+1500
+02:42:16,079 --> 02:42:22,639
+representation of a data revolutionizes the field then that's different
+
+1501
+02:42:27,120 --> 02:42:32,879
+another important technologies used extensively in bioinformatics is web technologies
+
+1502
+02:42:34,000 --> 02:42:42,319
+i simply mention or let me place into context these web technologies
+
+1503
+02:42:44,319 --> 02:42:45,680
+web technologies
+
+1504
+02:42:46,079 --> 02:42:55,680
+uh developed in last 20 years i think there is tremendous development in web technologies
+
+1505
+02:42:55,680 --> 02:43:06,159
+it started in 1991 which is not old 1991 20 years ago
+
+1506
+02:43:10,079 --> 02:43:13,520
+30 years ago now it's 20 30 years ago
+
+1507
+02:43:17,039 --> 02:43:25,520
+basically web technologies requires a development infrastructure
+
+1508
+02:43:29,039 --> 02:43:38,879
+components of this infrastructure is first the web server the second
+
+1509
+02:43:41,760 --> 02:43:45,920
+is the web client basically web server
+
+1510
+02:43:46,079 --> 02:43:52,260
+server is a program that when loaded onto a computer system provides for the publication
+
+1511
+02:43:52,260 --> 02:44:04,760
+of data and applications the examples of this apache jigsaw there are some other web servers
+
+1512
+02:44:04,760 --> 02:44:14,600
+and this is referred collectively as content then we need a web client this is another
+
+1513
+02:44:14,600 --> 02:44:22,000
+program that can request content from a web server and display the content within a graphical
+
+1514
+02:44:22,000 --> 02:44:29,600
+window providing a mechanism whereby users can interact with the contents can you give
+
+1515
+02:44:29,600 --> 02:44:42,819
+me an example for this web client just you type in
+
+1516
+02:44:42,819 --> 02:44:44,319
+an example to the client
+
+1517
+02:44:44,600 --> 02:44:58,420
+waiting for your answer
+
+1518
+02:45:00,000 --> 02:45:14,719
+or you just say
+
+1519
+02:45:14,719 --> 02:45:24,659
+one example to client web client
+
+1520
+02:45:24,659 --> 02:45:34,520
+give me an example then
+
+1521
+02:45:54,659 --> 02:46:07,000
+just an example i give you an example this is a web client what is it
+
+1522
+02:46:07,000 --> 02:46:11,000
+chrome
+
+1523
+02:46:11,000 --> 02:46:18,619
+netscape firefox
+
+1524
+02:46:18,619 --> 02:46:24,039
+these are a client software
+
+1525
+02:46:24,039 --> 02:46:24,579
+okay
+
+1526
+02:46:24,579 --> 02:46:24,659
+okay
+
+1527
+02:46:24,659 --> 02:46:33,659
+Okay, this is actually a common name for the web client, web browser.
+
+1528
+02:46:33,659 --> 02:46:38,659
+These are the web client software programs.
+
+1529
+02:46:40,659 --> 02:46:44,659
+Then we have obviously the transport protocol,
+
+1530
+02:46:44,659 --> 02:46:50,659
+which is the language that the web server and web client use
+
+1531
+02:46:50,659 --> 02:46:54,659
+when communicating with each other.
+
+1532
+02:46:54,659 --> 02:46:56,659
+Can you tell me this, what it is?
+
+1533
+02:47:02,659 --> 02:47:04,659
+This transport protocol.
+
+1534
+02:47:12,659 --> 02:47:14,659
+You should be able to tell me.
+
+1535
+02:47:18,659 --> 02:47:20,659
+When you open a web,
+
+1536
+02:47:20,659 --> 02:47:22,659
+a web page,
+
+1537
+02:47:26,659 --> 02:47:28,659
+here what we have,
+
+1538
+02:47:30,659 --> 02:47:32,659
+World Wide Web,
+
+1539
+02:47:32,659 --> 02:47:34,659
+when you extend this, for example,
+
+1540
+02:47:34,659 --> 02:47:36,659
+what we have here,
+
+1541
+02:47:36,659 --> 02:47:38,659
+at the beginning of this line,
+
+1542
+02:47:44,659 --> 02:47:46,659
+page,
+
+1543
+02:47:48,659 --> 02:47:50,659
+it appears here,
+
+1544
+02:47:50,659 --> 02:47:52,659
+TTPs. What is it?
+
+1545
+02:47:56,659 --> 02:48:00,659
+Actually, it defines the protocol used,
+
+1546
+02:48:00,659 --> 02:48:02,659
+transport protocol.
+
+1547
+02:48:04,659 --> 02:48:06,659
+When this
+
+1548
+02:48:06,659 --> 02:48:08,659
+basically defines the rules
+
+1549
+02:48:08,659 --> 02:48:10,659
+and regulations
+
+1550
+02:48:10,659 --> 02:48:12,659
+which
+
+1551
+02:48:14,659 --> 02:48:16,659
+should be followed by
+
+1552
+02:48:16,659 --> 02:48:18,659
+these
+
+1553
+02:48:18,659 --> 02:48:20,659
+server and client.
+
+1554
+02:48:20,659 --> 02:48:22,659
+This is known as
+
+1555
+02:48:22,659 --> 02:48:24,659
+hypertext transport protocol,
+
+1556
+02:48:24,659 --> 02:48:26,659
+HTTP.
+
+1557
+02:48:26,659 --> 02:48:28,659
+You are supposed to study this
+
+1558
+02:48:28,659 --> 02:48:30,659
+when you study
+
+1559
+02:48:30,659 --> 02:48:32,659
+data communication.
+
+1560
+02:48:34,659 --> 02:48:36,659
+Then we have the content,
+
+1561
+02:48:36,659 --> 02:48:38,659
+obviously, which is already given.
+
+1562
+02:48:38,659 --> 02:48:40,659
+Content is
+
+1563
+02:48:40,659 --> 02:48:42,659
+formed by using
+
+1564
+02:48:42,659 --> 02:48:44,659
+a specific language
+
+1565
+02:48:44,659 --> 02:48:46,659
+known as
+
+1566
+02:48:46,659 --> 02:48:48,659
+hypertext markup language.
+
+1567
+02:48:48,659 --> 02:48:50,659
+Hypertext
+
+1568
+02:48:50,659 --> 02:48:52,659
+markup language.
+
+1569
+02:49:02,659 --> 02:49:04,659
+Okay, HTML,
+
+1570
+02:49:04,659 --> 02:49:06,659
+specifically known as
+
+1571
+02:49:06,659 --> 02:49:08,659
+HTML.
+
+1572
+02:49:08,659 --> 02:49:10,659
+Hypertext markup language.
+
+1573
+02:49:10,659 --> 02:49:12,659
+The content is
+
+1574
+02:49:12,659 --> 02:49:14,659
+formed by using
+
+1575
+02:49:14,659 --> 02:49:16,659
+this language.
+
+1576
+02:49:16,659 --> 02:49:18,659
+Then, obviously, we use
+
+1577
+02:49:18,659 --> 02:49:22,659
+client-side programming
+
+1578
+02:49:22,659 --> 02:49:24,659
+and server-side programming
+
+1579
+02:49:24,659 --> 02:49:26,659
+as an extension to
+
+1580
+02:49:26,659 --> 02:49:28,659
+this infrastructure.
+
+1581
+02:49:28,659 --> 02:49:30,659
+And this is
+
+1582
+02:49:30,659 --> 02:49:32,659
+back-end database technology.
+
+1583
+02:49:34,659 --> 02:49:36,659
+If we have data,
+
+1584
+02:49:36,659 --> 02:49:38,659
+we present
+
+1585
+02:49:38,659 --> 02:49:40,659
+to
+
+1586
+02:49:40,659 --> 02:49:42,659
+client.
+
+1587
+02:49:42,659 --> 02:49:44,659
+So these are the
+
+1588
+02:49:44,659 --> 02:49:46,659
+the
+
+1589
+02:49:46,659 --> 02:49:48,659
+infrastructure of
+
+1590
+02:49:48,659 --> 02:49:50,659
+a web
+
+1591
+02:49:50,659 --> 02:49:52,659
+technology.
+
+1592
+02:49:52,659 --> 02:49:54,659
+Okay.
+
+1593
+02:50:00,000 --> 02:50:05,500
+Önce durmadan önce bitirmek istedim.
+
+1594
+02:50:05,500 --> 02:50:10,500
+Dünyanın web'i yaratmak için 3 teknik kullanıyoruz.
+
+1595
+02:50:10,500 --> 02:50:14,500
+Bir tanesi sadece manuel yaratım.
+
+1596
+02:50:14,500 --> 02:50:17,500
+Tekst editörü kullanıyorsunuz.
+
+1597
+02:50:17,500 --> 02:50:22,500
+Html kodlarını nasıl yazacağınızı bilirseniz,
+
+1598
+02:50:22,500 --> 02:50:26,500
+sadece html ile web sayfasını kodlayıp,
+
+1599
+02:50:26,500 --> 02:50:28,500
+statik bir web sayfayı yaratabilirsiniz.
+
+1600
+02:50:28,500 --> 02:50:36,500
+Ayrıca web sayfalarınızı yaratabilirsiniz.
+
+1601
+02:50:36,500 --> 02:50:38,500
+Bu sayfalar için,
+
+1602
+02:50:38,500 --> 02:50:44,500
+Dreamweaver gibi hazırlanmış paketler kullanabilirsiniz.
+
+1603
+02:50:44,500 --> 02:50:48,500
+Microsoft Office'a web sayfaları yaratabilirsiniz.
+
+1604
+02:50:48,500 --> 02:50:52,500
+Ayrıca web sayfaları yaratabilmeniz için
+
+1605
+02:50:52,500 --> 02:50:56,500
+başka 3 kişilik programlar yaratabilirsiniz.
+
+1606
+02:50:56,500 --> 02:50:58,500
+Bu sayfalar,
+
+1607
+02:50:58,500 --> 02:51:05,500
+çok grafiksel olarak yaratan web sayfaları yaratabilirsiniz.
+
+1608
+02:51:05,500 --> 02:51:08,500
+Üçüncüsü ise,
+
+1609
+02:51:08,500 --> 02:51:14,500
+Dünyanın web sayfasını dinamik olarak yaratmak.
+
+1610
+02:51:14,500 --> 02:51:20,500
+Dinamik olarak yaratmanız gerektiğinde,
+
+1611
+02:51:20,500 --> 02:51:24,500
+her zaman web sayfaya ulaştığınızda,
+
+1612
+02:51:24,500 --> 02:51:26,500
+sayfaların değişmesi gerektiğinde,
+
+1613
+02:51:26,500 --> 02:51:35,500
+bazı web sayfaları yaratıcılığıyla yaratamayacaksınız.
+
+1614
+02:51:35,500 --> 02:51:37,500
+Yani bu izleyici takipte burada,
+
+1615
+02:51:37,500 --> 02:51:39,500
+dünya deneyimine ihtiyacınız var.
+
+1616
+02:51:39,500 --> 02:51:41,500
+Ve bu sadece,
+
+1617
+02:51:41,500 --> 02:51:47,500
+sürü web programı olarak yaşanabilir.
+
+1618
+02:51:47,500 --> 02:51:50,500
+Bu başka bir duties.
+
+1619
+02:51:50,500 --> 02:51:54,500
+Belki bir sürü web programı hakkında kurulmuşlar.
+
+1620
+02:51:54,500 --> 02:52:00,500
+Bilmiyorum. Bu için herhangi bir web programı dilini kullanabilirsiniz.
+
+1621
+02:52:00,500 --> 02:52:02,500
+Php ya da neyse.
+
+1622
+02:52:02,500 --> 02:52:06,500
+Dynamic Web Pages'leri yaratmak için Perl'i de kullanabilirsiniz.
+
+1623
+02:52:06,500 --> 02:52:12,500
+Burada html sayfası yaratımı var.
+
+1624
+02:52:12,500 --> 02:52:17,500
+Ve bu için, burada da dokumları kullanabiliriz.
+
+1625
+02:52:17,500 --> 02:52:26,500
+Dikkat ettiğimiz gibi, burada html sayfası var.
+
+1626
+02:52:34,500 --> 02:52:38,500
+Bu, Composer'ı kullanarak yaratıldı.
+
+1627
+02:52:38,500 --> 02:52:45,500
+Bu program, bizlere web sayfayı yaratabilecek bir programdır.
+
+1628
+02:52:47,500 --> 02:52:49,500
+Perl programı kullanabilirsiniz.
+
+1629
+02:52:49,500 --> 02:52:52,500
+Burada, web sayfayı yaratmak için bir dokum kurabilirsiniz.
+
+1630
+02:52:52,500 --> 02:52:53,500
+Bu, basit bir web sayfasıdır.
+
+1631
+02:52:53,500 --> 02:52:59,500
+Ama dinamik web sayfası yaratmak için statik bir web sayfasıdır.
+
+1632
+02:52:59,500 --> 02:53:02,500
+Bunu programlamalısınız.
+
+1633
+02:53:02,500 --> 02:53:08,500
+Perl, web sayfayı yaratmak için CGI modülü de sunar.
+
+1634
+02:53:08,500 --> 02:53:12,500
+Common Gate Interface, sanırım.
+
+1635
+02:53:12,500 --> 02:53:16,500
+Bu, uygulamalarınızı kullanabilirsiniz.
+
+1636
+02:53:16,500 --> 02:53:18,500
+Web sayfayı yaratmak için kolay bir web sayfası.
+
+1637
+02:53:18,500 --> 02:53:27,500
+Bunu sadece yıkıyorum.
+
+1638
+02:53:27,500 --> 02:53:30,500
+Bu, statik bir web sayfasıdır.
+
+1639
+02:53:30,500 --> 02:53:34,500
+Diyanamik web sayfayı yaratmak için programlamalısınız.
+
+1640
+02:53:34,500 --> 02:53:36,500
+Bu, bir örnek.
+
+1641
+02:53:36,500 --> 02:53:39,500
+Ne zaman ve ne kadar?
+
+1642
+02:53:39,500 --> 02:53:44,500
+Çünkü her zaman, bir web sayfaya ulaştığınızda,
+
+1643
+02:53:44,500 --> 02:53:47,500
+eğer bir an ve bir zaman var, bu dinamik.
+
+1644
+02:53:47,500 --> 02:53:49,500
+Her zaman değişmelidir.
+
+1645
+02:53:49,500 --> 02:53:55,500
+Bu yüzden, web sayfayı kullanabilirsiniz.
+
+1646
+02:53:55,500 --> 02:54:04,500
+Tamam.
+
+1647
+02:54:04,500 --> 02:54:07,500
+Web sayfası için güvenlik önemli.
+
+1648
+02:54:07,500 --> 02:54:09,500
+Daha fazla zaman kaybetmeyeceğim.
+
+1649
+02:54:09,500 --> 02:54:12,500
+Perl, bazı funksiyonları sunar.
+
+1650
+02:54:12,500 --> 02:54:17,500
+Daha güvenlikli seçeneklere ulaşmak için.
+
+1651
+02:54:17,500 --> 02:54:19,500
+Ve bu, taint modu deniliyor.
+
+1652
+02:54:19,500 --> 02:54:32,500
+Web sayfayı yaratmak için bu güvenlik hizmetine ulaşmanızı sağlamak.
+
+1653
+02:54:32,500 --> 02:54:35,500
+Bunu da yıkıyorum.
+
+1654
+02:54:35,500 --> 02:54:40,500
+Çünkü, bu hafta Perl konuşmasını bitirmek istiyorum.
+
+1655
+02:54:40,500 --> 02:54:45,500
+Önümüzdeki diğer konularla başlayalım.
+
+1656
+02:54:45,500 --> 02:54:48,500
+Bir başka önemli konsept var.
+
+1657
+02:54:48,500 --> 02:54:51,500
+Bunu yıkıyorum.
+
+1658
+02:54:51,500 --> 02:54:55,500
+Bu, web sayfası.
+
+1659
+02:54:55,500 --> 02:54:57,500
+Web sayfası.
+
+1660
+02:54:57,500 --> 02:55:00,500
+Diyanamik web sayfayı ulaşmanızı düşünün.
+
+1661
+02:55:00,000 --> 02:55:09,200
+uh an item hundred times and accessing by hand hundred times is very time consuming instead
+
+1662
+02:55:09,200 --> 02:55:21,520
+you can mechanize or automate you can automatize to access this certain data item by using
+
+1663
+02:55:21,520 --> 02:55:32,399
+web automation capability of the pearl for this we use mechanize module for the pearl
+
+1664
+02:55:33,840 --> 02:55:43,680
+and this is an automatch program if many times you want to access to a web page
+
+1665
+02:55:43,680 --> 02:55:47,760
+you simply use this mechanize option and use this
+
+1666
+02:55:51,520 --> 02:55:57,840
+regular expressions and just check whatever you want this is an example to automatch program
+
+1667
+02:56:01,280 --> 02:56:08,319
+when you run it it runs automatically and checks especially this is very useful to
+
+1668
+02:56:09,040 --> 02:56:11,920
+access the data on the internet
+
+1669
+02:56:15,360 --> 02:56:21,440
+if you are searching information for certain protein then you automatically you
+
+1670
+02:56:21,520 --> 02:56:26,399
+mechanize it and you will start the program and you will wait the results
+
+1671
+02:56:27,600 --> 02:56:32,000
+anyway so this concludes our discussion today
+
+1672
+02:56:35,600 --> 02:56:36,319
+any question
+
+1673
+02:56:49,280 --> 02:56:50,319
+foreign
+
+1674
+02:56:51,520 --> 02:56:54,399
+language
+
+1675
+02:56:54,479 --> 02:56:56,479
+foreign
+
+1676
+02:56:56,479 --> 02:56:58,159
+language
+
+1677
+02:56:58,159 --> 02:57:00,720
+or
+
+1678
+02:57:01,760 --> 02:57:05,360
+foreign
+
+1679
+02:57:05,360 --> 02:57:07,680
+language
+
+1680
+02:57:07,680 --> 02:57:09,600
+language
+
+1681
+02:57:09,600 --> 02:57:13,200
+or
+
+1682
+02:57:13,200 --> 02:57:15,760
+foreign
+
+1683
+02:57:15,760 --> 02:57:17,159
+foreign
+
+1684
+02:57:17,159 --> 02:57:18,159
+or
+
+1685
+02:57:18,159 --> 02:57:21,360
+foreign
+
+1686
+02:57:21,520 --> 02:57:29,520
+Well, for example, there are news sites that change every day, for example, news changes every morning at certain times.
+
+1687
+02:57:29,520 --> 02:57:34,520
+Is this static or dynamic? Because it is actually changed by hand, so it came like static.
+
+1688
+02:57:34,520 --> 02:57:37,520
+It can also be static, it can also be static every morning.
+
+1689
+02:57:37,520 --> 02:57:55,520
+It depends on how it is designed. If you have a news source such as AA Press or Routers, if you connect the mechanism to them automatically and pull it, it is probably static.
+
+1690
+02:57:55,520 --> 02:58:07,520
+So we don't mean dynamic, it can be daily static, but either someone has to do it all the time or you have to do it with web programming.
+
+1691
+02:58:07,520 --> 02:58:13,520
+You can also do dynamic. So you can design it dynamically.
+
+1692
+02:58:13,520 --> 02:58:17,520
+In fact, I think it is like the change of the clock.
+
+1693
+02:58:17,520 --> 02:58:23,520
+So it is based on design, for example, if you take those news from another news site, it is always dynamic.
+
+1694
+02:58:23,520 --> 02:58:27,520
+If it is static, you will invite a man there.
+
+1695
+02:58:27,520 --> 02:58:33,520
+Let's say they are doing it at 7-6 in the morning or at 12 o'clock at night.
+
+1696
+02:58:33,520 --> 02:58:36,520
+One will go and upgrade the web page constantly.
+
+1697
+02:58:36,520 --> 02:58:37,520
+Yes.
+
+1698
+02:58:37,520 --> 02:58:39,520
+I understand, okay.
+
+1699
+02:58:39,520 --> 02:58:43,520
+Or if you automate it, it's the same for everything.
+
+1700
+02:58:43,520 --> 02:58:46,520
+It's the same for the clock issue.
+
+1701
+02:58:46,520 --> 02:59:02,520
+In fact, it is possible to put a man in theory and change the clock at every touch, but it is as if the clock application cannot be done without dynamic as a practice.
+
+1702
+02:59:02,520 --> 02:59:03,520
+That's for sure.
+
+1703
+02:59:03,520 --> 02:59:06,520
+But it can also be static in news things.
+
+1704
+02:59:06,520 --> 02:59:08,520
+It can also be static and dynamic.
+
+1705
+02:59:08,520 --> 02:59:10,520
+I understand, okay.
+
+1706
+02:59:10,520 --> 02:59:13,520
+In fact, it changes depending on the design.
+
+1707
+02:59:13,520 --> 02:59:15,520
+It changes depending on the design.
+
+1708
+02:59:15,520 --> 02:59:26,520
+I think today news sources are probably uploading news dynamically all the time.
+
+1709
+02:59:26,520 --> 02:59:35,520
+If you have access there, if you have subscribers, you can develop dynamically and update the news all the time.
+
+1710
+02:59:35,520 --> 02:59:40,520
+I think they are doing it that way.
+
+1711
+02:59:40,520 --> 02:59:41,520
+I don't know.
+
+1712
+02:59:41,520 --> 02:59:45,520
+I haven't done anything about it, but I think so logically.
+
+1713
+02:59:45,520 --> 02:59:46,520
+Yes.
+
+1714
+02:59:46,520 --> 02:59:54,520
+I think we have given the technological side of things.
+
+1715
+02:59:54,520 --> 02:59:58,520
+Of course, it is not possible to give everything in two weeks.
+
+1716
+02:59:58,520 --> 02:59:59,520
+As much as possible.
+
+1717
+02:59:59,520 --> 03:00:00,520
+Yes.
+
+1718
+03:00:00,000 --> 03:00:03,239
+biyoinformatik kapsamında
+
+1719
+03:00:00,520 --> 03:00:01,520
+Thank you.
+
+1720
+03:00:01,520 --> 03:00:02,520
+Thank you.
+
+1721
+03:00:02,520 --> 03:00:03,520
+Thank you.
+
+1722
+03:00:03,239 --> 03:00:05,219
+vermeye çalıştım. Var mı bir
+
+1723
+03:00:03,520 --> 03:00:04,520
+Thank you.
+
+1724
+03:00:05,219 --> 03:00:05,659
+soru?
+
+1725
+03:00:07,340 --> 03:00:08,879
+Eklemek istediğiniz bir konu?
+
+1726
+03:00:12,239 --> 03:00:13,079
+Yok.
+
+1727
+03:00:15,139 --> 03:00:17,280
+Size iyi hafta sonları diliyorum.
+
+1728
+03:00:19,520 --> 03:00:21,319
+İyi hafta sonları.
+
+1729
+03:00:22,040 --> 03:00:23,180
+İyi hafta sonları.
+

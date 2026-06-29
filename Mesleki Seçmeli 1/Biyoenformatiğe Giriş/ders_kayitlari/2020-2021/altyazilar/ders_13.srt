@@ -1,0 +1,6540 @@
+1
+00:00:00,000 --> 00:00:29,980
+Altyazı M.K.
+
+2
+00:00:30,000 --> 00:00:59,980
+Altyazı M.K.
+
+3
+00:01:00,000 --> 00:01:29,980
+Altyazı M.K.
+
+4
+00:01:30,000 --> 00:01:59,980
+Altyazı M.K.
+
+5
+00:02:00,000 --> 00:02:29,979
+Altyazı M.K.
+
+6
+00:02:30,000 --> 00:02:59,979
+Altyazı M.K.
+
+7
+00:03:00,000 --> 00:03:29,979
+Altyazı M.K.
+
+8
+00:03:30,000 --> 00:03:59,979
+Altyazı M.K.
+
+9
+00:04:00,000 --> 00:04:29,980
+Altyazı M.K.
+
+10
+00:04:30,000 --> 00:04:59,980
+Altyazı M.K.
+
+11
+00:05:00,000 --> 00:05:28,000
+Evet.
+
+12
+00:05:30,000 --> 00:05:34,399
+İnanıyorum arkadaşlar.
+
+13
+00:06:00,000 --> 00:06:04,519
+Günaydın.
+
+14
+00:06:24,519 --> 00:06:26,160
+Günaydın.
+
+15
+00:06:30,000 --> 00:06:59,980
+Günaydın hocam.
+
+16
+00:07:00,000 --> 00:07:02,000
+Günaydın.
+
+17
+00:07:03,360 --> 00:07:04,000
+Günaydın.
+
+18
+00:07:23,519 --> 00:07:24,779
+Efendim gecikireyim mi?
+
+19
+00:07:28,779 --> 00:07:29,699
+Evet hocam.
+
+20
+00:07:29,779 --> 00:07:29,980
+Gecikireyim.
+
+21
+00:07:30,000 --> 00:07:59,980
+Teşekkür ederim.
+
+22
+00:08:00,000 --> 00:08:29,980
+Teşekkür ederim.
+
+23
+00:08:30,000 --> 00:08:59,980
+Teşekkür ederim.
+
+24
+00:09:00,000 --> 00:09:29,980
+Teşekkür ederim.
+
+25
+00:09:30,000 --> 00:09:59,980
+Teşekkür ederim.
+
+26
+00:10:00,000 --> 00:10:10,000
+data, audio or optical data, and we will use the telecommunications of each of the systems.
+
+27
+00:10:10,000 --> 00:10:14,000
+And others, there are some others that could be many more data.
+
+28
+00:10:14,000 --> 00:10:22,000
+That was one sort of classification or category for data analysis.
+
+29
+00:10:22,000 --> 00:10:39,000
+Most research analysis, usually about first three, can be specific ones, more than just audio or optical data analysis.
+
+30
+00:10:39,000 --> 00:10:45,000
+Statistics.
+
+31
+00:10:45,000 --> 00:10:50,000
+These statistics methods are something called statistics.
+
+32
+00:10:50,000 --> 00:10:52,000
+And we use statistics.
+
+33
+00:10:52,000 --> 00:11:00,000
+We should describe the statistics.
+
+34
+00:11:00,000 --> 00:11:07,000
+Basically, statistics is described as meaningful quantities of a sample of objects.
+
+35
+00:11:07,000 --> 00:11:10,000
+Things that have some feelings, some phenomena, etc.
+
+36
+00:11:10,000 --> 00:11:20,000
+Here, there are quite few terminology,
+
+37
+00:11:20,000 --> 00:11:22,000
+but one of the most important,
+
+38
+00:11:22,000 --> 00:11:32,000
+one of the most important aspects of statistics is the sampling.
+
+39
+00:11:32,000 --> 00:11:35,000
+Sampling is important.
+
+40
+00:11:35,000 --> 00:11:43,000
+It represents the sampling of the general population.
+
+41
+00:11:43,000 --> 00:11:50,000
+It is widely used in many fields.
+
+42
+00:11:50,000 --> 00:11:52,000
+It is basically a viewpoint to the
+
+43
+00:11:52,000 --> 00:11:55,000
+very popular subjects such as
+
+44
+00:11:55,000 --> 00:12:00,000
+machine learning or artificial intelligence or data science.
+
+45
+00:12:00,000 --> 00:12:13,000
+The statistics is a fundamental concept utilized in these techniques.
+
+46
+00:12:13,000 --> 00:12:20,000
+For example, to create some features to be used in machine learning or artificial intelligence.
+
+47
+00:12:20,000 --> 00:12:28,000
+You have to do some statistics.
+
+48
+00:12:28,000 --> 00:12:34,000
+You require to be devising a machine learning algorithm or model or whatever.
+
+49
+00:12:34,000 --> 00:12:40,000
+You need to perform extensive statistics on raw data.
+
+50
+00:12:40,000 --> 00:12:48,000
+Some concepts here extensively used.
+
+51
+00:12:48,000 --> 00:12:54,000
+Controller, regulation model, geometric modeling, etc.
+
+52
+00:12:54,000 --> 00:12:56,000
+And we cover some of these concepts.
+
+53
+00:12:56,000 --> 00:13:01,000
+Basically, it is a theme of my life because
+
+54
+00:13:01,000 --> 00:13:12,000
+we spent all term to discuss these concepts.
+
+55
+00:13:12,000 --> 00:13:17,000
+But we try to summarize all these concepts together.
+
+56
+00:13:17,000 --> 00:13:36,120
+There are two main categories of statistics, the first one is descriptive statistics, you
+
+57
+00:13:36,120 --> 00:13:46,480
+simply describe the phenomenon or data or whatever, and the inferential statistics, actually you
+
+58
+00:13:46,480 --> 00:13:58,019
+infer something from the data, the 11th data or the 11th population, so that is you, the
+
+59
+00:13:58,019 --> 00:14:00,100
+statistical statistics.
+
+60
+00:14:00,100 --> 00:14:06,100
+To extend the discussion,
+
+61
+00:14:06,100 --> 00:14:16,320
+Descriptive statistics use some information to explain or make abstraction of population
+
+62
+00:14:16,320 --> 00:14:33,660
+phenomena, now the, probably you know what we mean by population, let me give you an
+
+63
+00:14:33,660 --> 00:14:34,879
+example.
+
+64
+00:14:34,879 --> 00:14:35,879
+Ehm.
+
+65
+00:14:35,879 --> 00:14:50,879
+If you want to predict the possible outcome of the future election, it has not been taking
+
+66
+00:14:50,879 --> 00:14:51,879
+place yet.
+
+67
+00:14:51,879 --> 00:15:06,879
+Say, for example, there is an election.
+
+68
+00:15:00,000 --> 00:15:12,139
+in two months' time in Istanbul, and you want to predict the outcome, the most correct way
+
+69
+00:15:06,879 --> 00:15:18,879
+It's not taking place yet.
+
+70
+00:15:12,139 --> 00:15:24,759
+of predicting the outcome, ask opinions of all individuals in Istanbul eligible to work.
+
+71
+00:15:18,879 --> 00:15:19,879
+It's not taking place yet.
+
+72
+00:15:19,879 --> 00:15:20,879
+It's not taking place yet.
+
+73
+00:15:20,879 --> 00:15:21,879
+It's not taking place yet.
+
+74
+00:15:24,759 --> 00:15:35,439
+Say, for example, approximately there are 20 million people in Istanbul, probably at
+
+75
+00:15:35,439 --> 00:15:45,379
+least half of this population is eligible to work, 10 million, and you go find these
+
+76
+00:15:45,379 --> 00:15:49,819
+10 million people and ask their opinion.
+
+77
+00:15:50,639 --> 00:15:53,379
+Then you will have an exact...
+
+78
+00:15:54,759 --> 00:16:01,759
+This is not an estimation, this is not a prediction, this will be an exact result.
+
+79
+00:16:01,759 --> 00:16:04,759
+In elections, this is what happens, basically.
+
+80
+00:16:04,759 --> 00:16:13,759
+Every individual passes their vote, and says their opinion, and at the end, his opinions
+
+81
+00:16:13,759 --> 00:16:18,759
+are counted, and the election result is known.
+
+82
+00:16:18,759 --> 00:16:23,759
+To predict it, the natural way is just to predict.
+
+83
+00:16:24,759 --> 00:16:34,759
+So you have to ask opinions of each individual eligible to work, but this is impossible normally.
+
+84
+00:16:34,759 --> 00:16:45,759
+If you are an opinion company, then you have to find each individual and record your opinions
+
+85
+00:16:45,759 --> 00:16:49,759
+and your exact answer, but this is impossible.
+
+86
+00:16:49,759 --> 00:16:51,759
+What they do...
+
+87
+00:16:51,759 --> 00:16:53,759
+This is known as population.
+
+88
+00:16:54,759 --> 00:17:04,759
+You actually are going to vote on the population for the election.
+
+89
+00:17:04,759 --> 00:17:15,759
+Our opinion is, they don't do this, what they do, they pick up randomly, or use some
+
+90
+00:17:15,759 --> 00:17:21,759
+algorithms to represent 30 members of each population.
+
+91
+00:17:21,759 --> 00:17:23,759
+A subset of population.
+
+92
+00:17:24,759 --> 00:17:31,759
+This subset is known as sample.
+
+93
+00:17:31,759 --> 00:17:45,759
+Instead of 10 million people, they ask opinions of thousands of people to represent that population.
+
+94
+00:17:45,759 --> 00:17:47,759
+In non-sample.
+
+95
+00:17:47,759 --> 00:17:50,759
+Then they predict.
+
+96
+00:17:50,759 --> 00:17:52,759
+Now this is prediction.
+
+97
+00:17:52,759 --> 00:18:06,759
+The common phenomena in this population could be an association, tendency, causal relationship,
+
+98
+00:18:06,759 --> 00:18:20,759
+trend, pattern, dispersion, range, and these are usually statistical characteristics or
+
+99
+00:18:20,759 --> 00:18:21,759
+features of a population.
+
+100
+00:18:21,759 --> 00:18:22,759
+There must be some more.
+
+101
+00:18:22,759 --> 00:18:33,759
+And then there is ...
+
+102
+00:18:34,759 --> 00:18:35,759
+...
+
+103
+00:18:35,759 --> 00:18:36,759
+...
+
+104
+00:18:36,759 --> 00:18:37,759
+alternatives...
+
+105
+00:18:37,759 --> 00:18:38,759
+...
+
+106
+00:18:38,759 --> 00:18:39,759
+"...
+
+107
+00:18:39,759 --> 00:18:40,759
+...
+
+108
+00:18:40,759 --> 00:18:41,759
+...
+
+109
+00:18:41,759 --> 00:18:42,759
+...
+
+110
+00:18:42,759 --> 00:18:43,759
+...
+
+111
+00:18:43,759 --> 00:18:44,759
+...
+
+112
+00:18:44,759 --> 00:18:45,759
+...
+
+113
+00:18:45,759 --> 00:18:46,759
+...
+
+114
+00:18:46,759 --> 00:18:47,759
+...
+
+115
+00:18:47,759 --> 00:18:48,759
+...
+
+116
+00:18:48,759 --> 00:18:49,759
+...
+
+117
+00:18:49,759 --> 00:19:04,759
+These features are used in non-parametric analysis such as Q-Squared, T-Squared, etc.
+
+118
+00:19:04,759 --> 00:19:13,759
+We are not going to cover all these features in this lecture, but just to mention them.
+
+119
+00:19:13,759 --> 00:19:20,759
+Consider the inferential statistics.
+
+120
+00:19:20,759 --> 00:19:33,759
+Now, by using the results we obtain in descriptive statistics, characteristics or features,
+
+121
+00:19:33,759 --> 00:19:42,759
+it is possible to infer some phenomena of population parameters.
+
+122
+00:19:42,759 --> 00:19:43,759
+How?
+
+123
+00:19:43,759 --> 00:19:50,759
+The common phenomena is cause and effect relationship.
+
+124
+00:19:50,759 --> 00:20:00,759
+This could be a one-way relationship or multi-directional relationship or it could be recursive.
+
+125
+00:20:00,000 --> 00:20:06,000
+expressed by these equations in terms of the mathematical model.
+
+126
+00:20:06,000 --> 00:20:09,000
+This is the model for one-way relationship.
+
+127
+00:20:09,000 --> 00:20:16,000
+We have a function with variable x.
+
+128
+00:20:16,000 --> 00:20:20,000
+It results in y.
+
+129
+00:20:20,000 --> 00:20:24,000
+It is a linear relationship, one-way.
+
+130
+00:20:24,000 --> 00:20:28,000
+And this is multi-directional relationship.
+
+131
+00:20:28,000 --> 00:20:36,000
+If we have more than one variable and results,
+
+132
+00:20:36,000 --> 00:20:43,000
+then we might have some sort of recursive relationship as well.
+
+133
+00:20:43,000 --> 00:20:52,000
+Which one to use depends on the nature of the search.
+
+134
+00:20:52,000 --> 00:20:57,000
+If the nature of the search is distinctive,
+
+135
+00:20:57,000 --> 00:20:58,000
+then we can use it.
+
+136
+00:20:58,000 --> 00:21:01,000
+We can use distinctive statistics.
+
+137
+00:21:01,000 --> 00:21:06,000
+If we want to attempt to use our predictor
+
+138
+00:21:06,000 --> 00:21:11,000
+or find some code and expect it to be non-relationship,
+
+139
+00:21:11,000 --> 00:21:15,000
+then we might use differential statistics.
+
+140
+00:21:15,000 --> 00:21:18,000
+So, in most cases,
+
+141
+00:21:18,000 --> 00:21:23,000
+you have no luxury of choosing one over other.
+
+142
+00:21:23,000 --> 00:21:26,000
+You must use both, basically.
+
+143
+00:21:26,000 --> 00:21:27,000
+Especially,
+
+144
+00:21:27,000 --> 00:21:31,000
+in nowadays complex analysis techniques,
+
+145
+00:21:31,000 --> 00:21:36,000
+modern techniques such as artificial intelligence,
+
+146
+00:21:36,000 --> 00:21:40,000
+machine learning or data science.
+
+147
+00:21:40,000 --> 00:21:45,000
+You usually use both without discriminating.
+
+148
+00:21:45,000 --> 00:21:50,000
+As I said, prior to any model development,
+
+149
+00:21:50,000 --> 00:21:56,000
+you have to perform an extensive descriptive statistical analysis of the data.
+
+150
+00:21:57,000 --> 00:22:01,000
+To extract correct features.
+
+151
+00:22:01,000 --> 00:22:09,000
+In a minute, we will be discussing what are the descriptive statistics.
+
+152
+00:22:09,000 --> 00:22:13,000
+Methods used in descriptive statistics.
+
+153
+00:22:13,000 --> 00:22:17,000
+Then you will impart many tools.
+
+154
+00:22:17,000 --> 00:22:26,000
+You will be using the features extracted through descriptive statistics.
+
+155
+00:22:26,000 --> 00:22:29,000
+Okay.
+
+156
+00:22:29,000 --> 00:22:32,000
+In a data analysis,
+
+157
+00:22:32,000 --> 00:22:39,000
+it is useful to remember some important points about these states.
+
+158
+00:22:39,000 --> 00:22:43,000
+You should utilize the search problem.
+
+159
+00:22:43,000 --> 00:22:47,000
+With literature on data analysis techniques,
+
+160
+00:22:47,000 --> 00:22:50,000
+this is important.
+
+161
+00:22:50,000 --> 00:22:55,000
+You have to identify the correct method
+
+162
+00:22:55,000 --> 00:23:00,000
+to apply in your data analysis.
+
+163
+00:23:00,000 --> 00:23:02,000
+To be able to do this,
+
+164
+00:23:02,000 --> 00:23:05,000
+you have to read about it, basically.
+
+165
+00:23:05,000 --> 00:23:08,000
+You need to evaluate various techniques
+
+166
+00:23:08,000 --> 00:23:12,000
+that can do similar things with respect to the search problem.
+
+167
+00:23:12,000 --> 00:23:15,000
+Usually, to solve a problem,
+
+168
+00:23:15,000 --> 00:23:20,000
+there are more than one method or models
+
+169
+00:23:20,000 --> 00:23:24,000
+or many alternative model methods.
+
+170
+00:23:25,000 --> 00:23:35,000
+If you are not able to identify the most correct model
+
+171
+00:23:35,000 --> 00:23:40,000
+through the knowledge or literature search,
+
+172
+00:23:40,000 --> 00:23:42,000
+then what you can do,
+
+173
+00:23:42,000 --> 00:23:46,000
+you can identify a set of models,
+
+174
+00:23:46,000 --> 00:23:48,000
+algorithms or methods
+
+175
+00:23:48,000 --> 00:23:52,000
+to apply to your specific problem.
+
+176
+00:23:52,000 --> 00:23:54,000
+And you compare the results.
+
+177
+00:23:54,000 --> 00:24:01,000
+Then choose the best one.
+
+178
+00:24:01,000 --> 00:24:04,000
+Whatever your priority.
+
+179
+00:24:04,000 --> 00:24:07,000
+You might want a method
+
+180
+00:24:07,000 --> 00:24:10,000
+which gives the best accuracy.
+
+181
+00:24:10,000 --> 00:24:15,000
+You might want a method which runs fastest.
+
+182
+00:24:15,000 --> 00:24:19,000
+These are the choices.
+
+183
+00:24:19,000 --> 00:24:22,000
+Either you can choose
+
+184
+00:24:22,000 --> 00:24:26,000
+the accuracy for the results
+
+185
+00:24:26,000 --> 00:24:30,000
+or the implementation cost.
+
+186
+00:24:30,000 --> 00:24:32,000
+Whichever is important,
+
+187
+00:24:32,000 --> 00:24:35,000
+you can choose your algorithm.
+
+188
+00:24:35,000 --> 00:24:37,000
+Sometimes an algorithm
+
+189
+00:24:37,000 --> 00:24:41,000
+might give you the best result,
+
+190
+00:24:41,000 --> 00:24:44,000
+but it might not be feasible
+
+191
+00:24:44,000 --> 00:24:50,000
+in terms of the computation complexity
+
+192
+00:24:50,000 --> 00:24:51,000
+for your problem.
+
+193
+00:24:51,000 --> 00:24:54,000
+So then you have to choose the
+
+194
+00:24:54,000 --> 00:24:55,000
+even one.
+
+195
+00:24:56,000 --> 00:24:57,000
+What if less accuracy
+
+196
+00:24:57,000 --> 00:24:59,000
+than the one.
+
+197
+00:24:59,000 --> 00:25:01,000
+You have to choose
+
+198
+00:25:00,000 --> 00:25:03,599
+the fastest algorithm, more simple.
+
+199
+00:25:01,000 --> 00:25:18,000
+an
+
+200
+00:25:03,599 --> 00:25:07,839
+Say for example, if it is an embedded application.
+
+201
+00:25:07,839 --> 00:25:10,920
+But if you have a super computer
+
+202
+00:25:12,039 --> 00:25:13,759
+and you have no problem of
+
+203
+00:25:16,559 --> 00:25:18,960
+consuming power or whatever,
+
+204
+00:25:18,960 --> 00:25:20,759
+then you choose the best,
+
+205
+00:25:24,319 --> 00:25:27,480
+the algorithm which gives you the best accuracy
+
+206
+00:25:27,480 --> 00:25:30,640
+or that result.
+
+207
+00:25:30,640 --> 00:25:34,120
+But if it is a mobile application,
+
+208
+00:25:34,120 --> 00:25:36,480
+you may sacrifice accuracy
+
+209
+00:25:36,480 --> 00:25:39,920
+in favor of the computational complexity.
+
+210
+00:25:39,920 --> 00:25:44,920
+Again, choice of methods depends on your actual need.
+
+211
+00:25:50,559 --> 00:25:53,160
+Okay, consult people.
+
+212
+00:25:55,400 --> 00:25:57,440
+Ask the one you know.
+
+213
+00:25:57,480 --> 00:25:58,480
+Better than you.
+
+214
+00:26:00,240 --> 00:26:01,240
+Test it.
+
+215
+00:26:01,640 --> 00:26:05,000
+Therefore, actually, especially nowadays,
+
+216
+00:26:05,000 --> 00:26:07,640
+when you implement an AI algorithm
+
+217
+00:26:07,640 --> 00:26:09,960
+or a machine-driven algorithm,
+
+218
+00:26:09,960 --> 00:26:11,360
+data science algorithm,
+
+219
+00:26:11,360 --> 00:26:13,960
+in terms of, say, deep learning,
+
+220
+00:26:14,880 --> 00:26:20,000
+you first, you have training, test, and validation procedures.
+
+221
+00:26:20,000 --> 00:26:21,000
+You know this.
+
+222
+00:26:21,759 --> 00:26:26,519
+And in training, you refine your model
+
+223
+00:26:26,519 --> 00:26:27,440
+with some
+
+224
+00:26:27,480 --> 00:26:33,559
+known, actually, using a known data set.
+
+225
+00:26:33,559 --> 00:26:36,920
+And new data, for the training data set,
+
+226
+00:26:36,920 --> 00:26:38,319
+is a data set,
+
+227
+00:26:38,319 --> 00:26:42,319
+grounded to the scripted statistics.
+
+228
+00:26:44,640 --> 00:26:48,720
+You train your system, then you test on a data
+
+229
+00:26:48,720 --> 00:26:54,720
+which you did not perform a prior analysis
+
+230
+00:26:56,079 --> 00:26:57,279
+to see if,
+
+231
+00:26:57,279 --> 00:27:03,279
+your model fits well with the different data sets.
+
+232
+00:27:03,279 --> 00:27:12,279
+Then the validation is applying to your developed model
+
+233
+00:27:12,279 --> 00:27:17,279
+to totally different and unknown data sets.
+
+234
+00:27:17,279 --> 00:27:22,279
+This is usually the training, testing, and validation
+
+235
+00:27:22,279 --> 00:27:25,279
+are the important steps.
+
+236
+00:27:25,279 --> 00:27:26,279
+Okay.
+
+237
+00:27:27,279 --> 00:27:30,279
+To finalize a data analysis procedure.
+
+238
+00:27:34,279 --> 00:27:36,279
+The goal of an analysis is to explain
+
+239
+00:27:36,279 --> 00:27:39,279
+the cause and effect of the phenomena,
+
+240
+00:27:39,279 --> 00:27:42,279
+or relate research with real-world events,
+
+241
+00:27:42,279 --> 00:27:45,279
+or predict or forecast real-world phenomena
+
+242
+00:27:45,279 --> 00:27:47,279
+based on research,
+
+243
+00:27:47,279 --> 00:27:52,279
+or to find answers to a particular problem
+
+244
+00:27:52,279 --> 00:27:56,279
+or to make conclusions about real-world events
+
+245
+00:27:56,279 --> 00:27:58,279
+based on the problem,
+
+246
+00:27:58,279 --> 00:28:02,279
+or to learn a lesson from the problem.
+
+247
+00:28:02,279 --> 00:28:06,279
+Data cannot talk itself.
+
+248
+00:28:06,279 --> 00:28:12,279
+We need to make it talk through analysis.
+
+249
+00:28:12,279 --> 00:28:16,279
+An analysis contains some aspects of scientific reasoning
+
+250
+00:28:16,279 --> 00:28:19,279
+and argument.
+
+251
+00:28:19,279 --> 00:28:23,279
+To define and interpret evaluation mistakes,
+
+252
+00:28:23,279 --> 00:28:25,279
+you just explain and plot.
+
+253
+00:28:26,279 --> 00:28:29,279
+You define and compare and contrast.
+
+254
+00:28:29,279 --> 00:28:34,279
+These are the important actions
+
+255
+00:28:34,279 --> 00:28:39,279
+to data analysis.
+
+256
+00:28:39,279 --> 00:28:42,279
+You define something, interpret something,
+
+257
+00:28:42,279 --> 00:28:43,279
+or evaluate something,
+
+258
+00:28:43,279 --> 00:28:45,279
+or illustrate something,
+
+259
+00:28:45,279 --> 00:28:49,279
+discuss and explain, clarify, compare, and contrast.
+
+260
+00:28:49,279 --> 00:28:53,279
+Okay.
+
+261
+00:28:53,279 --> 00:28:54,879
+Therefore,
+
+262
+00:28:54,879 --> 00:28:56,079
+this is telling us,
+
+263
+00:28:56,079 --> 00:28:59,079
+how to develop an analysis.
+
+264
+00:28:59,079 --> 00:29:01,079
+The first is data.
+
+265
+00:29:01,079 --> 00:29:03,079
+Usually, data,
+
+266
+00:29:03,079 --> 00:29:08,079
+data analysis,
+
+267
+00:29:08,079 --> 00:29:11,079
+we extract some information.
+
+268
+00:29:11,079 --> 00:29:15,079
+This is the question of what.
+
+269
+00:29:15,079 --> 00:29:21,079
+And there is scientific reasoning for argument.
+
+270
+00:29:21,079 --> 00:29:24,079
+What, who, where, how, what happened,
+
+271
+00:29:24,079 --> 00:29:26,079
+these are the relevant questions.
+
+272
+00:29:26,079 --> 00:29:29,079
+And there is a finding.
+
+273
+00:29:29,079 --> 00:29:31,079
+It's called results.
+
+274
+00:29:31,079 --> 00:29:33,079
+What results to take.
+
+275
+00:29:33,079 --> 00:29:37,079
+And there is the lessons or conclusions
+
+276
+00:29:37,079 --> 00:29:40,079
+learned through data analysis.
+
+277
+00:29:40,079 --> 00:29:43,079
+So, what, so, how, therefore,
+
+278
+00:29:43,079 --> 00:29:47,079
+this sort of
+
+279
+00:29:47,079 --> 00:29:49,079
+articles are used
+
+280
+00:29:49,079 --> 00:29:53,079
+to explain the lessons learned.
+
+281
+00:29:53,079 --> 00:29:55,079
+Actually, there is also
+
+282
+00:29:55,079 --> 00:29:57,079
+a lot of evidence
+
+283
+00:29:57,079 --> 00:29:58,079
+that gets one of the scientists
+
+284
+00:29:58,079 --> 00:29:59,079
+that's all technically involved
+
+285
+00:29:59,079 --> 00:30:00,079
+into that.
+
+286
+00:30:00,000 --> 00:30:21,480
+basic guide to data analysis you need to analyze not narrate narration is to tell story you don't
+
+287
+00:30:00,079 --> 00:30:01,079
+.
+
+288
+00:30:01,079 --> 00:30:02,079
+.
+
+289
+00:30:02,079 --> 00:30:03,079
+.
+
+290
+00:30:03,079 --> 00:30:05,079
+.
+
+291
+00:30:05,079 --> 00:30:06,079
+.
+
+292
+00:30:06,079 --> 00:30:07,079
+.
+
+293
+00:30:07,079 --> 00:30:08,079
+.
+
+294
+00:30:08,079 --> 00:30:09,079
+.
+
+295
+00:30:09,079 --> 00:30:10,079
+.
+
+296
+00:30:10,079 --> 00:30:11,079
+.
+
+297
+00:30:11,079 --> 00:30:12,079
+.
+
+298
+00:30:12,079 --> 00:30:13,079
+.
+
+299
+00:30:13,079 --> 00:30:14,079
+.
+
+300
+00:30:14,079 --> 00:30:15,079
+.
+
+301
+00:30:15,079 --> 00:30:16,079
+.
+
+302
+00:30:16,079 --> 00:30:17,079
+.
+
+303
+00:30:17,079 --> 00:30:18,079
+.
+
+304
+00:30:18,079 --> 00:30:19,079
+.
+
+305
+00:30:19,079 --> 00:30:20,079
+.
+
+306
+00:30:20,079 --> 00:30:21,079
+.
+
+307
+00:30:21,079 --> 00:30:22,079
+.
+
+308
+00:30:21,480 --> 00:30:29,980
+want for just me which is in one sense it is the quadruple but in the big
+
+309
+00:30:22,079 --> 00:30:23,079
+.
+
+310
+00:30:23,079 --> 00:30:24,079
+.
+
+311
+00:30:29,980 --> 00:30:45,240
+analysis it must be wanted to contact it we should go back to research culture we
+
+312
+00:30:45,240 --> 00:30:50,599
+need to break down into short objectives and questions
+
+313
+00:30:50,599 --> 00:30:51,420
+well
+
+314
+00:30:51,420 --> 00:30:59,400
+so I went to find another to be investigated especially is important
+
+315
+00:30:59,400 --> 00:31:08,980
+need to be aligned the expected answers is a important part of the data analysis
+
+316
+00:31:08,980 --> 00:31:20,500
+that's really this realization and hopefully next day
+
+317
+00:31:20,500 --> 00:31:21,080
+again
+
+318
+00:31:21,080 --> 00:31:21,400
+you
+
+319
+00:31:21,400 --> 00:31:39,400
+evaluation of the subject of one or two term classes. We will try to summarize it in three hours or so again, probably next week.
+
+320
+00:31:39,400 --> 00:31:57,400
+We need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+321
+00:31:57,400 --> 00:32:08,400
+Usually, they give you the almost similar, if you consider that this is a form of data analysis.
+
+322
+00:32:08,400 --> 00:32:09,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+323
+00:32:09,400 --> 00:32:10,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+324
+00:32:10,400 --> 00:32:11,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+325
+00:32:11,400 --> 00:32:12,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+326
+00:32:12,400 --> 00:32:13,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+327
+00:32:13,400 --> 00:32:14,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+328
+00:32:14,400 --> 00:32:15,400
+So, we need to validate the answers with data. Just a validation step, as we said. We have already studied this concept, maybe in data system analysis and design.
+
+329
+00:32:15,400 --> 00:32:25,400
+the end of every procedure involves some sort of validation, testing and validation, okay.
+
+330
+00:32:25,400 --> 00:32:42,400
+Do not tell something not supported by data, otherwise you will not be able to portray
+
+331
+00:32:42,400 --> 00:32:47,400
+others in the best way possible.
+
+332
+00:32:47,400 --> 00:32:54,400
+When analyzing, we should be objective, accurate and true.
+
+333
+00:32:54,400 --> 00:32:59,400
+The facts and opinions should be separated.
+
+334
+00:32:59,400 --> 00:33:10,400
+You might have an opinion, but keep your opinion yourself for the time being until facts support your opinion.
+
+335
+00:33:10,400 --> 00:33:11,400
+If you do not have an opinion, you will not be able to interpret it.
+
+336
+00:33:11,400 --> 00:33:12,400
+If you do not have an opinion, you will not be able to interpret it.
+
+337
+00:33:12,400 --> 00:33:13,400
+If you do not have an opinion, you will not be able to interpret it.
+
+338
+00:33:13,400 --> 00:33:14,400
+If you do not have an opinion, you will not be able to interpret it.
+
+339
+00:33:14,400 --> 00:33:21,400
+Some people are able to support your opinions by using the facts of being a data analyst
+
+340
+00:33:21,400 --> 00:33:29,400
+and you can convey your opinion to the audience.
+
+341
+00:33:29,400 --> 00:33:39,400
+But otherwise, the opinions without any supportive facts will not be protected.
+
+342
+00:33:39,400 --> 00:33:41,400
+Any other questions?
+
+343
+00:33:41,400 --> 00:33:42,400
+Any other questions?
+
+344
+00:33:42,400 --> 00:33:55,400
+The non-collegiate argument should be avoided, and you must make sure that there is no mistake
+
+345
+00:33:55,400 --> 00:33:56,900
+in interpretation.
+
+346
+00:33:56,900 --> 00:34:06,900
+Okay, we have already described what is a sample and population.
+
+347
+00:34:06,900 --> 00:34:13,900
+A population formally can be defined as a collection of subjects whose properties are
+
+348
+00:34:13,900 --> 00:34:24,900
+to be analyzed, which never known in fact, you cannot in practice, you cannot have the
+
+349
+00:34:24,900 --> 00:34:30,900
+properties, you cannot know the exact properties of a population.
+
+350
+00:34:30,900 --> 00:34:36,900
+Therefore, a sample is usually said.
+
+351
+00:34:36,900 --> 00:34:46,900
+A sample is part of the population of the interest, as we have already made it clear.
+
+352
+00:34:46,900 --> 00:34:52,900
+This is a subset which is selected by some means from the population.
+
+353
+00:34:52,900 --> 00:34:59,900
+There are methods to select samples, and the important thing is...
+
+354
+00:35:00,000 --> 00:35:10,000
+For example, selected representative population must be objective or objectively selected.
+
+355
+00:35:10,000 --> 00:35:14,000
+Again, I give you the example of election.
+
+356
+00:35:14,000 --> 00:35:25,000
+It is obvious that different regions in a city might have different opinions in terms of the political representation.
+
+357
+00:35:25,000 --> 00:35:33,000
+The tendencies might be different.
+
+358
+00:35:33,000 --> 00:35:46,000
+If you choose your sample only from a specific region, then your estimation will be biased, not objective.
+
+359
+00:35:46,000 --> 00:35:50,000
+So normally what should happen?
+
+360
+00:35:50,000 --> 00:35:54,000
+Equal number of...
+
+361
+00:35:54,000 --> 00:35:55,000
+Equal number of...
+
+362
+00:35:55,000 --> 00:35:56,000
+I did not correct.
+
+363
+00:35:56,000 --> 00:36:12,000
+Maybe enough number of representatives from each different regions should be employed in this study.
+
+364
+00:36:12,000 --> 00:36:19,000
+So the results would be much more representative of the actual results.
+
+365
+00:36:19,000 --> 00:36:24,000
+Therefore, there are many companies, as you know,
+
+366
+00:36:24,000 --> 00:36:31,000
+making predictions about coming elections.
+
+367
+00:36:31,000 --> 00:36:38,000
+But some companies are just very accurate and some are not.
+
+368
+00:36:38,000 --> 00:36:45,000
+And these are basically the ones who are not accurate usually have bad samples
+
+369
+00:36:45,000 --> 00:36:53,000
+or samples which are not very representative of the actual population.
+
+370
+00:36:54,000 --> 00:37:00,000
+This is the main reason.
+
+371
+00:37:00,000 --> 00:37:06,000
+A parameter is a numerical value that describes the characteristic of a population.
+
+372
+00:37:06,000 --> 00:37:15,000
+Sometimes we call it future or whatever to use advanced data analysis techniques.
+
+373
+00:37:15,000 --> 00:37:23,000
+A statistic is a numerical measurement that describes the characteristic of a sample.
+
+374
+00:37:24,000 --> 00:37:33,000
+We use a statistic to infer something about the parameter.
+
+375
+00:37:33,000 --> 00:37:38,000
+These are related terminologies.
+
+376
+00:37:38,000 --> 00:37:47,000
+After collecting data, we have collected raw data,
+
+377
+00:37:47,000 --> 00:37:53,000
+the next step towards statistical inference and decision making
+
+378
+00:37:53,000 --> 00:38:00,000
+is to perform data exploration,
+
+379
+00:38:00,000 --> 00:38:03,000
+which involves visualizing,
+
+380
+00:38:03,000 --> 00:38:08,000
+first visualizing and summarizing the data.
+
+381
+00:38:08,000 --> 00:38:17,000
+Summarization of the data involves simple descriptive statistics.
+
+382
+00:38:17,000 --> 00:38:22,000
+Visualization involves some sort of
+
+383
+00:38:22,000 --> 00:38:32,000
+again, statistical analysis on data and visualization of that results.
+
+384
+00:38:32,000 --> 00:38:40,000
+Visualization, why visualization is important?
+
+385
+00:38:40,000 --> 00:38:46,000
+It is important because we will be discussing with you hopefully.
+
+386
+00:38:46,000 --> 00:38:49,000
+For an adult,
+
+387
+00:38:49,000 --> 00:38:52,000
+data perception
+
+388
+00:38:52,000 --> 00:38:59,000
+is done through the visualization in most cases.
+
+389
+00:38:59,000 --> 00:39:08,000
+I think 80% of data perception
+
+390
+00:39:08,000 --> 00:39:11,000
+learning, I would say,
+
+391
+00:39:11,000 --> 00:39:13,000
+for an adult,
+
+392
+00:39:13,000 --> 00:39:19,000
+is through visualization, visual perception.
+
+393
+00:39:19,000 --> 00:39:22,000
+The human being has five senses, as we know,
+
+394
+00:39:22,000 --> 00:39:34,000
+visual, aural, touch, then taste and smell.
+
+395
+00:39:34,000 --> 00:39:36,000
+For an adult,
+
+396
+00:39:36,000 --> 00:39:40,000
+unless it's he or she is not blind,
+
+397
+00:39:40,000 --> 00:39:45,000
+most of the information comes through the visual sensing.
+
+398
+00:39:45,000 --> 00:39:47,000
+Therefore, it's very important.
+
+399
+00:39:47,000 --> 00:39:53,000
+It conveys information visually.
+
+400
+00:39:53,000 --> 00:39:55,000
+The objective of data visualization
+
+401
+00:39:55,000 --> 00:39:59,000
+is to obtain a high level of understanding
+
+402
+00:39:59,000 --> 00:40:00,000
+of some
+
+403
+00:40:00,000 --> 00:40:12,639
+to make the data more manageable we need to further reduce the amount of information in
+
+404
+00:40:12,639 --> 00:40:21,760
+some meaningful ways so that we can focus on these two aspects of data for example you recorded
+
+405
+00:40:21,760 --> 00:40:34,560
+a million data for phenomenon but in fact it is living data or using you can use it but
+
+406
+00:40:38,560 --> 00:40:47,520
+in an algorithm instead of running you're using this million data what you can do you can
+
+407
+00:40:50,880 --> 00:40:51,600
+extract
+
+408
+00:40:52,640 --> 00:40:58,960
+some sort of information or characteristics of this million data
+
+409
+00:41:01,360 --> 00:41:11,760
+as a single numerical value for example we'll be discussing you can find mean of this data so this
+
+410
+00:41:14,480 --> 00:41:16,480
+simple statistics for example
+
+411
+00:41:20,880 --> 00:41:21,680
+is
+
+412
+00:41:21,760 --> 00:41:31,200
+now we have a medium data samples to represent these data samples we have a single
+
+413
+00:41:32,240 --> 00:41:40,800
+body which we call the mean to be used in one of the algorithms so instead of dealing with
+
+414
+00:41:40,800 --> 00:41:51,520
+median data give you this one is an example this is known in data analysis or data science or
+
+415
+00:41:51,760 --> 00:42:06,240
+in our data reduction and this is a desirable step in any data analysis we need to reduce the
+
+416
+00:42:06,240 --> 00:42:16,560
+size of the data as much as possible without sacrificing accuracy to one to obtain and there
+
+417
+00:42:16,560 --> 00:42:19,760
+are methods algorithms
+
+418
+00:42:21,760 --> 00:42:39,760
+So if you are able to reduce data size without sacrificing accuracy, then you are in a good position for data analysis.
+
+419
+00:42:39,760 --> 00:42:59,760
+So for this, using the summary statistics I used, using data exploration techniques, we can learn about the distribution of a variable.
+
+420
+00:42:59,760 --> 00:43:09,760
+That distribution will tell us the possible values it can take.
+
+421
+00:43:09,760 --> 00:43:20,760
+The chance of observing those values, and how often we expect to see them in a random sample from the population.
+
+422
+00:43:20,760 --> 00:43:30,760
+Through data exploration, we might detect seriously unknown patterns and relationships that are worth further investigation.
+
+423
+00:43:30,760 --> 00:43:38,760
+We can also identify possible data issues through this data exploration.
+
+424
+00:43:38,760 --> 00:43:39,760
+This is very important.
+
+425
+00:43:39,760 --> 00:43:49,760
+Data issues could be some unexpected or unusual measurements, which are known as outliers.
+
+426
+00:43:49,760 --> 00:43:58,760
+Prior to your main data analysis algorithm, you need to deal with these outliers.
+
+427
+00:43:58,760 --> 00:44:09,760
+Either eliminate it, or to correct it, or to search for the reasons why you have outliers.
+
+428
+00:44:09,760 --> 00:44:19,760
+At least you can see outliers, and immediately outliers are unwanted samples within a dataset.
+
+429
+00:44:19,760 --> 00:44:34,760
+So the simplest approach is just to determine and eliminate them from your main data analysis algorithm.
+
+430
+00:44:34,760 --> 00:44:35,760
+Thank you.
+
+431
+00:44:35,760 --> 00:44:36,760
+Thank you.
+
+432
+00:44:36,760 --> 00:44:37,760
+Thank you.
+
+433
+00:44:37,760 --> 00:44:38,760
+Thank you.
+
+434
+00:44:38,760 --> 00:44:39,760
+Thank you.
+
+435
+00:44:39,760 --> 00:44:40,760
+Thank you.
+
+436
+00:44:40,760 --> 00:44:41,760
+Thank you.
+
+437
+00:44:41,760 --> 00:44:42,760
+Thank you.
+
+438
+00:44:42,760 --> 00:44:43,760
+Thank you.
+
+439
+00:44:43,760 --> 00:44:44,760
+Thank you.
+
+440
+00:44:44,760 --> 00:44:45,760
+Thank you.
+
+441
+00:44:45,760 --> 00:44:46,760
+Thank you.
+
+442
+00:44:46,760 --> 00:44:47,760
+Thank you.
+
+443
+00:44:47,760 --> 00:44:48,760
+Thank you.
+
+444
+00:44:48,760 --> 00:44:49,760
+Thank you.
+
+445
+00:44:49,760 --> 00:44:50,760
+Thank you.
+
+446
+00:44:50,760 --> 00:44:51,760
+Thank you.
+
+447
+00:44:51,760 --> 00:44:52,760
+Thank you.
+
+448
+00:44:52,760 --> 00:44:53,760
+Thank you.
+
+449
+00:44:53,760 --> 00:44:54,760
+Thank you.
+
+450
+00:44:54,760 --> 00:44:55,760
+Thank you.
+
+451
+00:44:55,760 --> 00:44:56,760
+Thank you.
+
+452
+00:44:56,760 --> 00:44:57,760
+Thank you.
+
+453
+00:44:57,760 --> 00:44:58,760
+Thank you.
+
+454
+00:44:58,760 --> 00:44:59,760
+Thank you.
+
+455
+00:44:59,760 --> 00:45:00,760
+Thank you.
+
+456
+00:45:00,000 --> 00:45:13,139
+it is as an example like I give you some example but let me do this example right
+
+457
+00:45:00,760 --> 00:45:01,760
+Thank you.
+
+458
+00:45:01,760 --> 00:45:02,760
+Thank you.
+
+459
+00:45:02,760 --> 00:45:03,760
+Thank you.
+
+460
+00:45:03,760 --> 00:45:04,760
+Thank you.
+
+461
+00:45:04,760 --> 00:45:05,760
+Thank you.
+
+462
+00:45:05,760 --> 00:45:06,760
+Thank you.
+
+463
+00:45:06,760 --> 00:45:07,760
+Thank you.
+
+464
+00:45:13,139 --> 00:45:28,260
+for example this guy and his team did a study to measure the normal body temperature for 140
+
+465
+00:45:28,260 --> 00:45:36,660
+people to learn about the normal body temperature for the entire population for example if they did
+
+466
+00:45:36,660 --> 00:45:47,280
+this city and only 140 people were employed to estimate entire body temperature of the whole
+
+467
+00:45:47,280 --> 00:45:57,420
+population so what they do they try to estimate the unknown population body temperature they do
+
+468
+00:45:57,420 --> 00:45:57,720
+now
+
+469
+00:45:58,260 --> 00:46:15,900
+again whatever they estimate is not an exact value maybe within a certain range it is an expected
+
+470
+00:46:17,760 --> 00:46:20,040
+destination expected value
+
+471
+00:46:25,380 --> 00:46:28,200
+therefore there is always some sort of
+
+472
+00:46:28,260 --> 00:46:40,320
+uncertainty or an error margin in any estimation if you if your estimation is
+
+473
+00:46:42,660 --> 00:46:51,960
+uh or happens to be exact value which can be obtained by continuing
+
+474
+00:46:51,960 --> 00:46:57,780
+cooperation is around them this is one of the possible estimations
+
+475
+00:46:58,260 --> 00:46:59,980
+within a sharpened range
+
+476
+00:47:02,040 --> 00:47:07,300
+these statistical with inference is always an error margin
+
+477
+00:47:10,500 --> 00:47:23,520
+the mathematical tool to address this uncertainty in statistics it's probability it's very much
+
+478
+00:47:23,520 --> 00:47:26,500
+related to global לה todavía
+
+479
+00:47:26,500 --> 00:47:27,260
+casting
+
+480
+00:47:27,260 --> 00:47:27,840
+so certainly we know it out by the science but again it's very interesting but this data in the statistics is the probability instruments in popularity is very much related to the GeoGeneric Program, you probably studied this Autobatical легenship Maid and pilot of this. Third is this, I said the programmer, I don't know how to solve this problem, but the query is very easy to find by doing one or a clear methodology even if we know about it actually this statutive process or in the захariya, as in probability studies would be correct version of an error margin to
+
+481
+00:47:28,260 --> 00:47:35,260
+We also discuss extensively within the data analysis context.
+
+482
+00:47:35,260 --> 00:47:44,260
+The process of using the data to develop conclusions about the whole population, while acknowledging
+
+483
+00:47:44,260 --> 00:47:52,260
+the extent of our uncertainty about our findings is known as statistical inference.
+
+484
+00:47:52,260 --> 00:48:01,260
+The knowledge acquired from data through statistical inference, by the way, we have already made
+
+485
+00:48:01,260 --> 00:48:08,260
+a distinction between data information and knowledge at the beginning of this course,
+
+486
+00:48:08,260 --> 00:48:13,260
+so we have to recover this concept.
+
+487
+00:48:13,260 --> 00:48:21,260
+The knowledge acquired from data through statistical inference allows us to make decisions with
+
+488
+00:48:21,260 --> 00:48:22,260
+the data.
+
+489
+00:48:22,260 --> 00:48:36,260
+This is the scientific problem that motivates our study and our data analysis.
+
+490
+00:48:36,260 --> 00:48:43,260
+So, knowing data types is always important.
+
+491
+00:48:43,260 --> 00:48:51,260
+Before starting my courses, I always started discussions
+
+492
+00:48:51,260 --> 00:48:52,260
+for
+
+493
+00:48:52,260 --> 00:48:59,260
+courses or lectures, first discussing the data types.
+
+494
+00:48:59,260 --> 00:49:06,260
+The types of data collected in a study determine the type of statistical analysis that can
+
+495
+00:49:06,260 --> 00:49:07,260
+be used.
+
+496
+00:49:07,260 --> 00:49:18,260
+This is very important, knowing the data, especially the type of the data, before you
+
+497
+00:49:18,260 --> 00:49:21,260
+start any sort of analysis.
+
+498
+00:49:21,260 --> 00:49:28,260
+It will determine the analysis, greatly determine your analysis method.
+
+499
+00:49:28,260 --> 00:49:35,260
+So, which hypothesis can be tested?
+
+500
+00:49:35,260 --> 00:49:39,260
+Which model we can report on each of them?
+
+501
+00:49:39,260 --> 00:49:45,260
+Generally speaking, the data can be classified into three major types.
+
+502
+00:49:45,260 --> 00:49:46,260
+You tell me.
+
+503
+00:49:46,260 --> 00:49:47,260
+Yes.
+
+504
+00:49:47,260 --> 00:49:48,260
+Yes.
+
+505
+00:49:48,260 --> 00:49:49,260
+Yes.
+
+506
+00:49:49,260 --> 00:49:50,260
+Yes.
+
+507
+00:49:50,260 --> 00:49:51,260
+Yes.
+
+508
+00:49:51,260 --> 00:49:52,260
+Yes.
+
+509
+00:49:52,260 --> 00:49:53,260
+.
+
+510
+00:49:53,260 --> 00:49:59,260
+You can reveal the three major types?
+
+511
+00:49:59,260 --> 00:50:04,260
+Any way you can tell me?
+
+512
+00:50:00,000 --> 00:50:27,880
+Are you there, or are you just typing chat?
+
+513
+00:50:04,260 --> 00:50:09,260
+.
+
+514
+00:50:09,260 --> 00:50:19,260
+Yes.
+
+515
+00:50:27,880 --> 00:50:40,240
+I'm not sure if you are there or not, but I think it's your problem, the categorical and
+
+516
+00:50:40,240 --> 00:50:41,240
+quantitative.
+
+517
+00:50:41,240 --> 00:50:49,240
+These are one of the classic patients in terms of the data types, of course there are many
+
+518
+00:50:49,240 --> 00:50:57,860
+different patients in terms of the computer science content.
+
+519
+00:50:57,880 --> 00:51:14,579
+There are, well, related to data representation in the computing system as well, we use codes
+
+520
+00:51:14,579 --> 00:51:19,980
+to represent some particular data in the computing system, and number systems to represent one
+
+521
+00:51:19,980 --> 00:51:22,980
+specific data in the computing system.
+
+522
+00:51:22,980 --> 00:51:27,680
+Again, we discussed this concept at the beginning of this course.
+
+523
+00:51:27,680 --> 00:51:35,720
+In terms of the quantitative representation, we were using integers, signed integers, clock.
+
+524
+00:51:35,720 --> 00:51:41,920
+In terms of the categorical representations, we were using coding, coding powers, sounds,
+
+525
+00:51:41,920 --> 00:51:45,440
+anything, using asterisk, whatever.
+
+526
+00:51:45,440 --> 00:51:55,860
+That's in terms of the computer science approach, but in terms of the statistics, categorical
+
+527
+00:51:55,860 --> 00:51:57,660
+data can be used in the practical.
+
+528
+00:51:57,659 --> 00:52:05,699
+In terms of the qualitative representation, we were using some categories based on some
+
+529
+00:52:05,699 --> 00:52:06,699
+qualitative space.
+
+530
+00:52:06,699 --> 00:52:15,699
+The resulting data labels or categories, for example, gender, ethnicity, the color of the
+
+531
+00:52:15,699 --> 00:52:25,699
+water, you can use in terms of the qualitative representation.
+
+532
+00:52:25,699 --> 00:52:26,699
+And this category can be used in terms of the qualitative representation.
+
+533
+00:52:26,699 --> 00:52:27,639
+And this category can be used in terms of the qualitative representation.
+
+534
+00:52:27,639 --> 00:52:36,259
+The data and the categorical data can further be sub-classified into three types, nominal
+
+535
+00:52:36,259 --> 00:52:37,259
+and ordinal.
+
+536
+00:52:37,259 --> 00:52:46,980
+Nominal data, when there is no natural ordering of the categories, we call them internominal.
+
+537
+00:52:46,980 --> 00:52:54,679
+There's a blue color, but, we can't see the blue one.
+
+538
+00:52:54,679 --> 00:52:56,679
+So we can see the blue color.
+
+539
+00:52:56,680 --> 00:53:06,680
+gray color, black color, you know, whatever, is not specific code, it doesn't matter really.
+
+540
+00:53:06,680 --> 00:53:14,680
+Ordinal data, when the categories may be ordered, the data are called ordinal variables.
+
+541
+00:53:14,680 --> 00:53:37,680
+In many health studies, you can use, for example, an outcome of study, healthy, very healthy, not healthy, very deadly, unhealthy, or whatever.
+
+542
+00:53:37,680 --> 00:53:42,680
+This is an ordering.
+
+543
+00:53:42,680 --> 00:53:43,680
+For example.
+
+544
+00:53:43,680 --> 00:53:44,680
+Pain.
+
+545
+00:53:44,680 --> 00:53:45,680
+Painful.
+
+546
+00:53:45,680 --> 00:53:48,680
+Minority painful.
+
+547
+00:53:48,680 --> 00:53:49,680
+Less painful.
+
+548
+00:53:49,680 --> 00:53:50,680
+Very painful.
+
+549
+00:53:50,680 --> 00:53:59,680
+These are, again, ordinal variables, categorical variables.
+
+550
+00:53:59,680 --> 00:54:05,680
+Quantitative data, numerical measurements, where the numbers are associated with a scale
+
+551
+00:54:05,680 --> 00:54:11,680
+value rather than labels.
+
+552
+00:54:11,680 --> 00:54:13,680
+Again, quantitative data has two sides.
+
+553
+00:54:13,680 --> 00:54:15,680
+It can be categorical.
+
+554
+00:54:15,680 --> 00:54:16,680
+The number of values represented by a data has two subcategories.
+
+555
+00:54:16,680 --> 00:54:17,680
+It can be continuous.
+
+556
+00:54:17,680 --> 00:54:18,680
+Disclinq quantitative data, the number of values represented by a data is not higher.
+
+557
+00:54:18,680 --> 00:54:19,680
+The number of values represented by a data is not low.
+
+558
+00:54:19,680 --> 00:54:20,680
+One data represents count.
+
+559
+00:54:20,680 --> 00:54:21,680
+The other data represents values that are not high.
+
+560
+00:54:21,680 --> 00:54:22,680
+If the data is located in the nearest object, which is a number that is more than one
+
+561
+00:54:22,680 --> 00:54:23,680
+and higher, let's say, a red for example.
+
+562
+00:54:23,680 --> 00:54:24,680
+You said when you had a cat on the other side, was it positive or negative?
+
+563
+00:54:24,680 --> 00:54:25,680
+What it meant for the cat is that, again, the number of values represented by a cat
+
+564
+00:54:25,680 --> 00:54:26,680
+was true.
+
+565
+00:54:26,680 --> 00:54:33,680
+Now you can see the difference between the numerical data, the number of values represented
+
+566
+00:54:33,680 --> 00:54:38,680
+by the cat, and the number of values represented by a cat, or one data.
+
+567
+00:54:38,680 --> 00:54:39,680
+For example.
+
+568
+00:54:39,680 --> 00:54:40,680
+A cat might have four kittens.
+
+569
+00:54:40,680 --> 00:54:47,680
+A cat might have four chickens if they're using the script on the book.
+
+570
+00:54:47,680 --> 00:54:56,680
+Continuous quantities data are the real numbers which are continuous with no gaps.
+
+571
+00:54:56,680 --> 00:54:59,680
+These are typically measurable quantities such as length,
+
+572
+00:54:59,680 --> 00:55:02,680
+length of time, length of time, length of time.
+
+573
+00:55:00,000 --> 00:55:09,480
+volume, mass etc. and these are generally considered continuous. Categorical data
+
+574
+00:55:09,480 --> 00:55:17,099
+typically smile using frequencies or proportions of observations in each
+
+575
+00:55:17,099 --> 00:55:24,780
+category. That's why we said knowing data type is important. Now if you have
+
+576
+00:55:24,780 --> 00:55:36,160
+a categorical data unit, if you are about to run an algorithm which is based on numerical values,
+
+577
+00:55:36,160 --> 00:55:48,060
+usually algorithms are analytic methods to find the solution to a specific problem, they use numerical values.
+
+578
+00:55:48,060 --> 00:55:54,260
+So you need to convert this categorical data into numerical values.
+
+579
+00:55:54,260 --> 00:55:54,760
+So you need to convert this categorical data into numerical values.
+
+580
+00:55:54,780 --> 00:55:55,280
+So you need to convert this categorical data into numerical values.
+
+581
+00:55:55,280 --> 00:56:05,780
+So one of the fundamental or extensively used methods have frequencies to represent
+
+582
+00:56:05,780 --> 00:56:11,780
+categorical data in terms of the numbers or proportions.
+
+583
+00:56:11,780 --> 00:56:18,780
+So you need to start to convert into a fancy number.
+
+584
+00:56:18,780 --> 00:56:24,260
+If data is quantitative, then you will be using the data
+
+585
+00:56:24,260 --> 00:56:28,360
+something which is modified with the descriptive statistics.
+
+586
+00:56:28,360 --> 00:56:35,240
+In terms of say for example adding digits or
+
+587
+00:56:35,240 --> 00:56:42,600
+other values like
+
+588
+00:56:42,600 --> 00:56:43,660
+for variations and ranges.
+
+589
+00:56:43,660 --> 00:56:54,060
+Describe data once data collection
+
+590
+00:56:54,059 --> 00:57:04,619
+is to summarize it all to get a handle on the deep picture to have a general idea about
+
+591
+00:57:04,619 --> 00:57:10,219
+what data looks like or what it represents really what is the pattern
+
+592
+00:57:12,380 --> 00:57:21,259
+statisticians describe data in two major ways firstly with pictures which
+
+593
+00:57:21,260 --> 00:57:33,260
+implies visualization then with numbers which implies the statistics
+
+594
+00:57:36,940 --> 00:57:43,740
+in visualization of course we are not going to cover all sorts of visualizations by now
+
+595
+00:57:46,780 --> 00:57:51,180
+simply we can use charts and graphs or all sorts of lines
+
+596
+00:57:51,260 --> 00:58:00,140
+charts bar graphs many many techniques data is summarized in a visual way using
+
+597
+00:58:01,100 --> 00:58:11,820
+charts and photographs pie chart bar charts for example today pie charts and bars for example
+
+598
+00:58:11,820 --> 00:58:19,900
+is a good way to deal with proportions bar charts will give you the again
+
+599
+00:58:21,260 --> 00:58:28,380
+visual aids about the amount of the individual groups in a data sample
+
+600
+00:58:29,820 --> 00:58:34,620
+some data numerical some data through the category code
+
+601
+00:58:37,900 --> 00:58:49,100
+depending on the data type the visualization will also change one major type for example of a graph
+
+602
+00:58:49,100 --> 00:58:51,180
+that is used to graph the measurement of the體
+
+603
+00:58:51,260 --> 00:58:58,980
+numerical data is histogram. But if it is not a numerical data but categories, we said
+
+604
+00:58:58,980 --> 00:59:07,660
+we can use proportions and we can use bar charts. Bar charts and histograms look like
+
+605
+00:59:07,660 --> 00:59:18,580
+similar, but they are different. One is used to visualize categorical data, bar charts
+
+606
+00:59:18,579 --> 00:59:28,860
+or pie charts. The histogram is used to visualize numerical data. Prescriptive statistics are
+
+607
+00:59:28,860 --> 00:59:36,360
+numbers that describe a data set in terms of its important features. Categorical data
+
+608
+00:59:36,360 --> 00:59:48,319
+typically summarize using the number of individuals in the school, the coliseum, and the person
+
+609
+00:59:48,319 --> 00:59:48,420
+here.
+
+610
+00:59:48,420 --> 00:59:48,559
+The histogram is used to visualize numerical data. The histogram is used to visualize numerical
+
+611
+00:59:48,559 --> 00:59:57,519
+relative frequency medical data represents measurement for count where the actual numbers are
+
+612
+00:59:57,519 --> 01:00:01,759
+being more creatures
+
+613
+01:00:00,000 --> 01:00:17,000
+This summarization is done in terms of measures of percentage, measures of streaks, data variability,
+
+614
+01:00:17,000 --> 01:00:32,000
+measures of relationship between three variables, which is in terms of peak correlation for color use.
+
+615
+01:00:32,000 --> 01:00:38,000
+Some descriptive statistics might be better than others.
+
+616
+01:00:38,000 --> 01:00:43,000
+Some are more appropriate than the others in some activities.
+
+617
+01:00:43,000 --> 01:00:45,000
+Again,
+
+618
+01:00:45,000 --> 01:01:00,000
+you, as a data analyst, should be able to choose the more appropriate one, depending on your data time.
+
+619
+01:01:00,000 --> 01:01:14,000
+Of course, your insights into data still cost data visualization.
+
+620
+01:01:14,000 --> 01:01:15,000
+Thank you.
+
+621
+01:01:15,000 --> 01:01:20,000
+SPEAKER 2
+
+622
+01:01:20,000 --> 01:01:23,000
+Well, that is just before our analysis.
+
+623
+01:01:23,000 --> 01:01:28,000
+Defining the scientific question to try and answer,
+
+624
+01:01:28,000 --> 01:01:28,400
+collecting the data
+
+625
+01:01:28,400 --> 01:01:44,239
+data
+
+626
+01:01:45,000 --> 01:01:48,000
+This is what Wannery would define.
+
+627
+01:01:54,000 --> 01:02:00,000
+Objective is here to develop a high level understanding of the data.
+
+628
+01:02:00,000 --> 01:02:05,000
+To learn about the possible values for each characteristic.
+
+629
+01:02:05,000 --> 01:02:11,000
+To find out how each characteristic varies among individuals in our sample.
+
+630
+01:02:11,000 --> 01:02:17,000
+Basically, we want to learn about distribution of variables.
+
+631
+01:02:17,000 --> 01:02:25,000
+At that point, we should recall that for a variable the distribution shows possible values.
+
+632
+01:02:25,000 --> 01:02:31,000
+The change of observing for values or range of dispersion.
+
+633
+01:02:31,000 --> 01:02:36,000
+How often we expect to see them in a random sample from the population.
+
+634
+01:02:36,000 --> 01:02:41,000
+We mention this in the beginning of the lecture today.
+
+635
+01:02:41,000 --> 01:02:48,000
+The data exploration methods allow us to reduce the amount of information.
+
+636
+01:02:48,000 --> 01:02:53,000
+So that we can proceed from these key aspects of the data.
+
+637
+01:02:53,000 --> 01:02:59,000
+We will do this by using data visualization techniques in our studies.
+
+638
+01:02:59,000 --> 01:03:05,000
+I am reminding you that this method is available.
+
+639
+01:03:05,000 --> 01:03:10,000
+We mentioned this.
+
+640
+01:03:10,000 --> 01:03:17,000
+The important part of data visualization is data.
+
+641
+01:03:17,000 --> 01:03:26,000
+Now we introduce the data exploration of categorical variables.
+
+642
+01:03:26,000 --> 01:03:39,000
+The first step to explore categorical variables is to determine its frequency.
+
+643
+01:03:39,000 --> 01:03:44,000
+The number of times of a specific category.
+
+644
+01:03:44,000 --> 01:03:51,000
+This is called frequency.
+
+645
+01:03:51,000 --> 01:03:53,000
+The frequency.
+
+646
+01:03:53,000 --> 01:03:56,000
+We do not have the frequency for the category C in pi.
+
+647
+01:03:56,000 --> 01:03:58,000
+And C here.
+
+648
+01:03:58,000 --> 01:04:05,000
+And C if the categorical variable is C.
+
+649
+01:04:05,000 --> 01:04:08,000
+And C is determined by the frequency.
+
+650
+01:04:08,000 --> 01:04:14,000
+The frequency.
+
+651
+01:04:14,000 --> 01:04:23,000
+The sum of the frequencies for all categories should equal to the total sample size.
+
+652
+01:04:23,000 --> 01:04:30,000
+So that is the first statement about this categorical data types.
+
+653
+01:04:30,000 --> 01:04:33,000
+In terms of the frequency.
+
+654
+01:04:33,000 --> 01:04:36,000
+You sum up all the frequencies.
+
+655
+01:04:36,000 --> 01:04:44,000
+For example.
+
+656
+01:04:44,000 --> 01:04:48,000
+Assume that the whole population is 100.
+
+657
+01:04:48,000 --> 01:04:51,000
+You have different samples.
+
+658
+01:04:51,000 --> 01:04:52,000
+10 samples.
+
+659
+01:04:52,000 --> 01:04:53,000
+10 samples.
+
+660
+01:04:53,000 --> 01:04:54,000
+10 samples.
+
+661
+01:04:54,000 --> 01:04:56,000
+From that population.
+
+662
+01:04:56,000 --> 01:04:58,000
+If you add.
+
+663
+01:04:58,000 --> 01:05:00,000
+Now these are the frequencies.
+
+664
+01:05:00,000 --> 01:05:05,000
+If you add them up, then it should be 100.
+
+665
+01:05:05,000 --> 01:05:08,000
+Very simple concept in fact.
+
+666
+01:05:08,000 --> 01:05:16,000
+Then there is a relative frequency, which could also be converted into percentages.
+
+667
+01:05:16,000 --> 01:05:27,000
+A relative frequency, in terms of this symbolic description, say for example, for category
+
+668
+01:05:27,000 --> 01:05:32,000
+C, frequency of category C would be nC.
+
+669
+01:05:32,000 --> 01:05:43,000
+If the total number of observations is n, then this ratio, nC to n ratio, will be proportion
+
+670
+01:05:43,000 --> 01:05:54,000
+of category C. And these proportions, obviously, will be in terms of percentages.
+
+671
+01:05:54,000 --> 01:05:57,000
+This is the result.
+
+672
+01:05:57,000 --> 01:06:03,000
+This is the result in a proportion, something between 0 and 1.
+
+673
+01:06:03,000 --> 01:06:16,000
+If we multiply this by 100, then we call it percent, 100 percentage.
+
+674
+01:06:16,000 --> 01:06:26,000
+It will be normalized to 100.
+
+675
+01:06:26,000 --> 01:06:27,000
+Relative frequencies.
+
+676
+01:06:27,000 --> 01:06:38,000
+When you add them up, it will be 1.
+
+677
+01:06:38,000 --> 01:06:48,000
+For numerical variables, now, in terms of the bar chart, say for example, you have four
+
+678
+01:06:48,000 --> 01:06:51,000
+categories, A, B, C, D categories.
+
+679
+01:06:51,000 --> 01:06:56,000
+You determine PC.
+
+680
+01:06:56,000 --> 01:07:05,000
+PA, PB, PDN, PC.
+
+681
+01:07:05,000 --> 01:07:13,000
+All these, if you add them up, the percentage, in terms of the proportion, will be 1.
+
+682
+01:07:13,000 --> 01:07:21,000
+If you want to plot, you take C to the, plot a bar chart indicating the proportion of each
+
+683
+01:07:21,000 --> 01:07:22,000
+categories.
+
+684
+01:07:22,000 --> 01:07:24,000
+And you will be able to visualize it.
+
+685
+01:07:24,000 --> 01:07:25,000
+Great.
+
+686
+01:07:25,000 --> 01:07:34,000
+And you will be able to visualize how much percentage, if you multiply, then you convert
+
+687
+01:07:34,000 --> 01:07:36,000
+into percentages.
+
+688
+01:07:36,000 --> 01:07:42,000
+And you will be able to plot it.
+
+689
+01:07:42,000 --> 01:07:47,000
+There's a four-bar chart in this case.
+
+690
+01:07:47,000 --> 01:07:51,000
+We explore numerical variables.
+
+691
+01:07:51,000 --> 01:08:04,000
+variables, we are especially interested in two key aspects of the distribution. The first
+
+692
+01:08:04,000 --> 01:08:16,000
+is its location, which refers to the central tendency of values, which means the point
+
+693
+01:08:16,000 --> 01:08:26,000
+around which most values are gathered, then its spread or dispersion, refers to the dispersion
+
+694
+01:08:26,000 --> 01:08:37,000
+of possible values, which means how scattered the values are around the location. For visualization,
+
+695
+01:08:37,000 --> 01:08:46,000
+histogram is used for numerical data, which is defined as a frequency distribution of
+
+696
+01:08:46,000 --> 01:08:52,000
+common views using numerical data. Histogram is similar to a bar graph after the values
+
+697
+01:08:52,000 --> 01:09:03,000
+of the variable R group, which is known as t, is the finite number of non-overlapping
+
+698
+01:09:03,000 --> 01:09:16,000
+intervals, which is known as lins, usually of equal width. Given an ensemble of numbers
+
+699
+01:09:16,000 --> 01:09:22,000
+and measurements, each side ranging from its length to its length, the samples are
+
+700
+01:09:22,000 --> 01:09:31,000
+built in two beams. The typical number of beams is on the order of seven to fourteen
+
+701
+01:09:31,000 --> 01:09:46,000
+samples, depending on the nature of the data. Again, choosing these beam sizes, we are
+
+702
+01:09:46,000 --> 01:09:53,000
+looking at the smoothness of histogram. Additionally, we typically expect that at least three samples
+
+703
+01:09:53,000 --> 01:10:00,000
+are built in, if you have basically one sample, each beam then it is.
+
+704
+01:10:00,000 --> 01:10:09,920
+if the unit itself is just simply a new protein called samples but idea is to see a general
+
+705
+01:10:09,920 --> 01:10:22,640
+trend this is the rule to estimate the size of these purchase rule now this is an empirical
+
+706
+01:10:22,640 --> 01:10:31,200
+value k equals one plus two point two point block m and m is the length of the data set
+
+707
+01:10:31,200 --> 01:10:39,600
+number of samples for the number of samples so this is more or less a method and k will be
+
+708
+01:10:40,880 --> 01:10:46,960
+is the size of each unit that means you will
+
+709
+01:10:50,800 --> 01:10:52,480
+group data
+
+710
+01:10:52,640 --> 01:10:55,840
+into k number of samples
+
+711
+01:11:01,840 --> 01:11:05,360
+histogram is something like this we have a lower bound
+
+712
+01:11:05,360 --> 01:11:13,119
+in mid content upper bound this is the one beam of histogram it is defined by
+
+713
+01:11:13,840 --> 01:11:22,320
+it is a travel form bound in mid content upper bound it is constructed by plotting the number of
+
+714
+01:11:22,320 --> 01:11:22,619
+samples
+
+715
+01:11:22,640 --> 01:11:23,920
+in each beam
+
+716
+01:11:26,800 --> 01:11:31,840
+we have a hold down collapses to represent sample value and that collapses
+
+717
+01:11:32,400 --> 01:11:36,640
+number 14 inches of samples falling within the beam
+
+718
+01:11:38,800 --> 01:11:39,920
+next illustrate
+
+719
+01:11:42,400 --> 01:11:49,200
+next slide will illustrate the histogram for thousand samples drawn from a normal distribution
+
+720
+01:11:49,200 --> 01:11:52,480
+between zero and standard deviation of one
+
+721
+01:11:53,500 --> 01:12:02,000
+normal distribution and this is an example histogram
+
+722
+01:12:03,740 --> 01:12:10,320
+various measures in describing the histogram is the absolute frequency in one or more beams
+
+723
+01:12:10,320 --> 01:12:12,640
+the absolute frequency in one or more beams
+
+724
+01:12:12,640 --> 01:12:16,079
+or relative frequency in one or more beams
+
+725
+01:12:16,079 --> 01:12:16,380
+relative frequency in one or more beams
+
+726
+01:12:16,380 --> 01:12:21,280
+which is given by this equation
+
+727
+01:12:21,279 --> 01:12:44,579
+The histogram can exhibit several shapes, this is important, if it is symmetric, it follows the normal distribution, it can be skewed, right skewed or left skewed, that means left-tailed distribution or right-tailed distribution, or by model.
+
+728
+01:12:44,579 --> 01:13:02,579
+The bar height for each interval could be set to its relative frequency, or the percentage of observations that fall in the depth interval for each program.
+
+729
+01:13:02,579 --> 01:13:08,579
+It is slightly different.
+
+730
+01:13:08,579 --> 01:13:14,579
+Density, instead of frequency, relative frequency is used.
+
+731
+01:13:14,579 --> 01:13:19,579
+The density is the relative frequency for a unit interval.
+
+732
+01:13:19,579 --> 01:13:25,579
+It is obtained by dividing the relative frequency by the interval v.
+
+733
+01:13:25,579 --> 01:13:30,579
+That's a v1.
+
+734
+01:13:30,579 --> 01:13:35,579
+The width of interval c is known as wc.
+
+735
+01:13:35,579 --> 01:13:44,579
+The height of each bar in density is programmed for the density of the corresponding interval.
+
+736
+01:13:44,579 --> 01:13:59,579
+For each interval c, the area of the corresponding bar in the density program can be calculated as k times v.
+
+737
+01:13:59,579 --> 01:14:07,579
+Therefore, the area of each bar is the relative frequency for the corresponding interval c.
+
+738
+01:14:07,579 --> 01:14:13,579
+The sum of the relative frequency is 1.
+
+739
+01:14:13,579 --> 01:14:23,579
+The total area of bars in a density program is 1.
+
+740
+01:14:23,579 --> 01:14:36,579
+This is an example of density program.
+
+741
+01:14:36,579 --> 01:14:38,579
+We mentioned skewed.
+
+742
+01:14:38,579 --> 01:14:41,579
+This is the left skewed.
+
+743
+01:14:41,579 --> 01:14:42,579
+Right skewed.
+
+744
+01:14:42,579 --> 01:14:43,579
+True.
+
+745
+01:14:43,579 --> 01:14:44,579
+The left skewed.
+
+746
+01:14:44,579 --> 01:14:45,579
+This is the right skewed.
+
+747
+01:14:45,579 --> 01:14:46,579
+The right skewed.
+
+748
+01:14:46,579 --> 01:14:48,579
+What is skewed?
+
+749
+01:14:48,579 --> 01:14:49,579
+The right skewed.
+
+750
+01:14:49,579 --> 01:14:50,579
+The right skewed.
+
+751
+01:14:50,579 --> 01:14:51,579
+When you put in the data, you see that it is three.
+
+752
+01:15:00,000 --> 01:15:13,000
+thousand or normal distribution. So if in this case, you will choose different statistics.
+
+753
+01:15:13,000 --> 01:15:20,000
+Say for example, if your distribution follows the thousand distribution or normal distribution,
+
+754
+01:15:20,000 --> 01:15:29,000
+then you will choose a simple statistic. If not, then you probably need even a little
+
+755
+01:15:29,000 --> 01:15:38,000
+more advanced statistics. So choosing simple statistics may not give you the optimal results.
+
+756
+01:15:38,000 --> 01:15:52,000
+And therefore, the working program for numerical data sets at the beginning of the data analysis is important.
+
+757
+01:15:52,000 --> 01:15:58,000
+OK, this is an example of the bimodal distribution.
+
+758
+01:15:58,000 --> 01:16:07,000
+If, say for example, prior to analysis your data, you observe such a distribution,
+
+759
+01:16:07,000 --> 01:16:22,000
+that means that you have actually in your data set two distinct populations with some specific characteristics.
+
+760
+01:16:22,000 --> 01:16:26,000
+They have two different characteristics.
+
+761
+01:16:26,000 --> 01:16:31,000
+You can see this before your analysis is solved.
+
+762
+01:16:31,000 --> 01:16:37,000
+The data should be analyzed accordingly.
+
+763
+01:16:37,000 --> 01:16:46,000
+Probably, if you see this, you need some sort of clustering algorithm in higher-up analysis
+
+764
+01:16:46,000 --> 01:16:51,000
+to cluster them into two different populations and do some analysis.
+
+765
+01:16:56,000 --> 01:17:05,000
+OK, the histogram is important because it serves as a rough estimate of the two probability density functions,
+
+766
+01:17:05,000 --> 01:17:09,000
+or probability distribution of the underlined diamond in the first column,
+
+767
+01:17:09,000 --> 01:17:13,000
+which the samples are being connected.
+
+768
+01:17:13,000 --> 01:17:22,000
+The probability density function or probability distribution is a function that quantifies
+
+769
+01:17:22,000 --> 01:17:25,000
+the probability of the diamond being fixed.
+
+770
+01:17:25,000 --> 01:17:30,000
+When the underlying diamond is fixed in nature,
+
+771
+01:17:30,000 --> 01:17:37,000
+we refer to the probability density function as the probability that it must function.
+
+772
+01:17:37,000 --> 01:17:44,000
+For the discrete, it probably must function.
+
+773
+01:17:44,000 --> 01:17:49,000
+OK.
+
+774
+01:17:49,000 --> 01:17:54,000
+One of the simplest statistics is
+
+775
+01:17:54,000 --> 01:18:11,000
+to measure the length of the diamond.
+
+776
+01:18:11,000 --> 01:18:16,000
+Let's have a 10-minute break until 10.30,
+
+777
+01:18:16,000 --> 01:18:20,000
+and we continue in the second block.
+
+778
+01:18:20,000 --> 01:18:22,000
+Thank you.
+
+779
+01:18:24,000 --> 01:18:30,000
+Thank you.
+
+780
+01:18:54,000 --> 01:19:00,000
+Thank you.
+
+781
+01:19:24,000 --> 01:19:30,000
+Thank you.
+
+782
+01:19:54,000 --> 01:20:00,000
+Thank you.
+
+783
+01:20:00,000 --> 01:20:29,979
+Altyazı M.K.
+
+784
+01:20:30,000 --> 01:20:59,979
+Altyazı M.K.
+
+785
+01:21:00,000 --> 01:21:29,979
+Altyazı M.K.
+
+786
+01:21:30,000 --> 01:21:59,979
+Altyazı M.K.
+
+787
+01:22:00,000 --> 01:22:29,979
+Altyazı M.K.
+
+788
+01:22:30,000 --> 01:22:59,979
+Altyazı M.K.
+
+789
+01:23:00,000 --> 01:23:29,979
+Altyazı M.K.
+
+790
+01:23:30,000 --> 01:23:59,979
+Altyazı M.K.
+
+791
+01:24:00,000 --> 01:24:29,979
+Altyazı M.K.
+
+792
+01:24:30,000 --> 01:24:59,979
+Altyazı M.K.
+
+793
+01:25:00,000 --> 01:25:29,979
+Altyazı M.K.
+
+794
+01:25:30,000 --> 01:25:59,979
+Altyazı M.K.
+
+795
+01:26:00,000 --> 01:26:29,979
+Altyazı M.K.
+
+796
+01:26:30,000 --> 01:26:59,979
+Altyazı M.K.
+
+797
+01:27:00,000 --> 01:27:29,979
+Altyazı M.K.
+
+798
+01:27:30,000 --> 01:27:59,979
+Altyazı M.K.
+
+799
+01:28:00,000 --> 01:28:29,979
+Altyazı M.K.
+
+800
+01:28:30,000 --> 01:28:59,979
+Altyazı M.K.
+
+801
+01:29:00,000 --> 01:29:29,979
+Altyazı M.K.
+
+802
+01:29:30,000 --> 01:29:59,979
+Altyazı M.K.
+
+803
+01:30:00,000 --> 01:30:29,979
+Altyazı M.K.
+
+804
+01:30:30,000 --> 01:30:59,979
+Altyazı M.K.
+
+805
+01:31:00,000 --> 01:31:29,979
+Altyazı M.K.
+
+806
+01:31:30,000 --> 01:31:59,979
+Altyazı M.K.
+
+807
+01:32:00,000 --> 01:32:29,979
+Altyazı M.K.
+
+808
+01:32:30,000 --> 01:32:59,979
+Altyazı M.K.
+
+809
+01:33:00,000 --> 01:33:29,979
+Altyazı M.K.
+
+810
+01:33:30,000 --> 01:33:59,979
+Altyazı M.K.
+
+811
+01:34:00,000 --> 01:34:29,979
+Altyazı M.K.
+
+812
+01:34:30,000 --> 01:34:59,979
+Altyazı M.K.
+
+813
+01:35:00,000 --> 01:35:09,000
+Therefore, the visualization at the first step is important, which will give us an idea
+
+814
+01:35:09,000 --> 01:35:10,000
+about the distribution.
+
+815
+01:35:10,000 --> 01:35:20,000
+Depending on the distribution type, we will be using one of these methods to represent
+
+816
+01:35:20,000 --> 01:35:24,000
+the central tendency of a data set.
+
+817
+01:35:24,000 --> 01:35:38,000
+As a reduced feature to be used in a further analysis model or algorithm.
+
+818
+01:35:38,000 --> 01:35:47,000
+Mean in mathematics has several different definitions depending on the context.
+
+819
+01:35:47,000 --> 01:35:54,000
+In probability and statistics, mean and expected values are the same.
+
+820
+01:35:54,000 --> 01:36:04,000
+In case of a discrete probability distribution of random variable x, the mean is simply equal
+
+821
+01:36:04,000 --> 01:36:11,000
+to the sum over every possible value rated by the probability of that value.
+
+822
+01:36:11,000 --> 01:36:14,000
+That's the mathematical description.
+
+823
+01:36:14,000 --> 01:36:24,000
+Because in a linearly distributed sample sizes with n samples, each sample has one over n
+
+824
+01:36:24,000 --> 01:36:33,000
+probabilities, equal probabilities, then the mean will be the sum of all sample values
+
+825
+01:36:33,000 --> 01:36:34,000
+divided by n.
+
+826
+01:36:34,000 --> 01:36:52,000
+This is in terms of the probability values, the total sum of all values divided by n.
+
+827
+01:36:52,000 --> 01:36:53,000
+For a data set, the terms are as follows.
+
+828
+01:36:53,000 --> 01:36:54,000
+For a data set, the terms are as follows.
+
+829
+01:36:54,000 --> 01:36:59,000
+Arithmetic mean, mathematical expectation, and sometimes Elogoic.
+
+830
+01:36:59,000 --> 01:37:00,000
+Refer to the same quantity for the central tendency.
+
+831
+01:37:00,000 --> 01:37:05,000
+that we used in the汗X set forIDeiconку
+
+832
+01:37:05,000 --> 01:37:16,000
+At third point, we need to distinguish between sample mean and population mean.
+
+833
+01:37:16,000 --> 01:37:23,000
+The population mean never known is known.
+
+834
+01:37:23,000 --> 01:37:26,340
+but we use sample mean to estimate
+
+835
+01:37:26,340 --> 01:37:27,399
+the cooperation mean
+
+836
+01:37:27,399 --> 01:37:32,479
+arithmetic mean
+
+837
+01:37:32,479 --> 01:37:33,760
+simply
+
+838
+01:37:33,760 --> 01:37:36,100
+just
+
+839
+01:37:36,100 --> 01:37:38,779
+division of all the values
+
+840
+01:37:38,779 --> 01:37:40,239
+divided by n
+
+841
+01:37:40,239 --> 01:37:41,279
+or
+
+842
+01:37:41,279 --> 01:37:44,260
+probability of each
+
+843
+01:37:44,260 --> 01:37:46,279
+samples
+
+844
+01:37:46,279 --> 01:37:48,159
+which is 1 over n
+
+845
+01:37:48,159 --> 01:37:50,539
+times x1 plus 1 over n
+
+846
+01:37:50,539 --> 01:37:51,159
+times x
+
+847
+01:37:51,159 --> 01:37:55,019
+which is 1 over n times xn
+
+848
+01:37:55,019 --> 01:37:56,220
+is shown
+
+849
+01:37:56,220 --> 01:37:58,720
+in terms of probability approach
+
+850
+01:37:58,720 --> 01:38:01,159
+this
+
+851
+01:38:01,159 --> 01:38:03,479
+type of mean
+
+852
+01:38:03,479 --> 01:38:04,979
+or arithmetic mean
+
+853
+01:38:04,979 --> 01:38:07,180
+is used when the spread of
+
+854
+01:38:07,180 --> 01:38:09,059
+the data is
+
+855
+01:38:09,059 --> 01:38:12,380
+fairly similar
+
+856
+01:38:12,380 --> 01:38:15,399
+on each side of the midpoint
+
+857
+01:38:15,399 --> 01:38:17,239
+which is referred as
+
+858
+01:38:17,239 --> 01:38:18,859
+Gaussian distribution or
+
+859
+01:38:18,859 --> 01:38:20,840
+normal distribution
+
+860
+01:38:20,840 --> 01:38:23,239
+if the data is normally distributed
+
+861
+01:38:23,239 --> 01:38:24,500
+the
+
+862
+01:38:24,500 --> 01:38:27,159
+most appropriate
+
+863
+01:38:27,159 --> 01:38:30,220
+representation
+
+864
+01:38:30,220 --> 01:38:31,940
+of the central
+
+865
+01:38:31,940 --> 01:38:33,579
+tendency is
+
+866
+01:38:33,579 --> 01:38:35,520
+using the arithmetic mean
+
+867
+01:38:35,520 --> 01:38:38,079
+you should not
+
+868
+01:38:38,079 --> 01:38:40,260
+use other type of means
+
+869
+01:38:40,260 --> 01:38:41,920
+because this is the
+
+870
+01:38:41,920 --> 01:38:42,460
+simplest
+
+871
+01:38:42,460 --> 01:38:45,960
+or the easiest
+
+872
+01:38:45,960 --> 01:38:47,159
+to calculate
+
+873
+01:38:47,159 --> 01:38:49,460
+central
+
+874
+01:38:49,460 --> 01:38:49,699
+tendency
+
+875
+01:38:50,840 --> 01:38:54,680
+major
+
+876
+01:38:54,680 --> 01:38:55,880
+arithmetic mean
+
+877
+01:38:55,880 --> 01:38:58,039
+you should try to choose
+
+878
+01:38:58,039 --> 01:39:01,480
+this mean
+
+879
+01:39:01,480 --> 01:39:07,079
+okay
+
+880
+01:39:07,079 --> 01:39:10,199
+of course there are several other mean
+
+881
+01:39:10,199 --> 01:39:16,600
+definitions
+
+882
+01:39:16,600 --> 01:39:19,699
+as you know this is geometric mean
+
+883
+01:39:19,699 --> 01:39:19,720
+as you know this is geometric mean
+
+884
+01:39:19,720 --> 01:39:20,819
+as you know this is geometric mean
+
+885
+01:39:20,840 --> 01:39:23,440
+which is an average
+
+886
+01:39:23,440 --> 01:39:25,960
+that is useful for sets of
+
+887
+01:39:25,960 --> 01:39:27,840
+positive numbers
+
+888
+01:39:27,840 --> 01:39:30,260
+that are interpreted according
+
+889
+01:39:30,260 --> 01:39:32,819
+to these products
+
+890
+01:39:32,819 --> 01:39:35,380
+such as the rates of crops
+
+891
+01:39:35,380 --> 01:39:36,480
+if
+
+892
+01:39:36,480 --> 01:39:38,460
+we have such a distribution
+
+893
+01:39:38,460 --> 01:39:40,840
+or data file
+
+894
+01:39:40,840 --> 01:39:42,680
+the geometric mean
+
+895
+01:39:42,680 --> 01:39:45,680
+is more appropriate to use
+
+896
+01:39:45,680 --> 01:39:48,819
+however the computationally
+
+897
+01:39:48,819 --> 01:39:49,520
+it is much more complex than the average mean
+
+898
+01:39:49,520 --> 01:39:50,560
+is much more complex than the average mean
+
+899
+01:39:50,560 --> 01:39:59,560
+If it is really necessary, then you should use these means.
+
+900
+01:40:00,000 --> 01:40:10,939
+Otherwise, we should go for the arithmetic mean in terms of the computation complexity, much more simple than this one.
+
+901
+01:40:11,500 --> 01:40:25,260
+Another mean is harmonic mean, which is an average that is useful for sets of numbers that are defined in relation to some unit, for example, speed.
+
+902
+01:40:25,260 --> 01:40:46,940
+So, especially if you have some outliers or excess sample values, excess values, which is like dominating average in an arithmetic mean,
+
+903
+01:40:46,940 --> 01:40:54,940
+then harmonic mean would be better because it minimizes the effect of outliers.
+
+904
+01:40:55,260 --> 01:41:01,260
+Because it uses the inverse of the sample rather than sample itself.
+
+905
+01:41:01,260 --> 01:41:17,260
+If, say, for example, x1 is comparing to the other values are two grades, for example, x2 and xn, all values are changing between 1 and 10, but x1 is 100.
+
+906
+01:41:17,260 --> 01:41:25,260
+Taking inverse of the excess values will minimize the effect of these values.
+
+907
+01:41:25,260 --> 01:41:31,260
+So, in this case, harmonic mean could be important.
+
+908
+01:41:31,260 --> 01:41:41,260
+Usually, the relationship between arithmetic mean, geometric mean, and harmonic mean can be given by this.
+
+909
+01:41:41,260 --> 01:41:47,260
+Arithmetic mean times harmonic mean will equate to square of two geometric means.
+
+910
+01:41:47,260 --> 01:41:55,260
+And also, arithmetic mean, geometric mean, and harmonic mean will follow the following sequence.
+
+911
+01:41:55,260 --> 01:42:07,260
+Arithmetic mean will be greater than mean in a normal data set with different values.
+
+912
+01:42:07,260 --> 01:42:11,260
+Arithmetic mean will be greater than geometric mean.
+
+913
+01:42:11,260 --> 01:42:15,260
+And this will be greater than harmonic mean.
+
+914
+01:42:15,260 --> 01:42:23,260
+These three types of means will occur when all data centers,
+
+915
+01:42:23,260 --> 01:42:29,260
+all data samples in a data set are the same.
+
+916
+01:42:29,260 --> 01:42:33,260
+Otherwise, there will be some inequality.
+
+917
+01:42:37,260 --> 01:42:43,260
+Arithmetic mean is best used in situations where the data are not skewed,
+
+918
+01:42:43,260 --> 01:42:49,260
+when the distribution is near normal distribution.
+
+919
+01:42:49,260 --> 01:42:53,260
+Individual data points are not dependent on each other.
+
+920
+01:42:53,260 --> 01:42:57,260
+If samples are independent,
+
+921
+01:42:57,260 --> 01:43:05,260
+therefore, each sample has equal probability.
+
+922
+01:43:05,260 --> 01:43:11,260
+Geometric mean should be used whenever data are interrelated.
+
+923
+01:43:11,260 --> 01:43:15,260
+Arithmetic is best used when there is a large population,
+
+924
+01:43:15,260 --> 01:43:19,260
+in which the majority of the values are distributed uniformly,
+
+925
+01:43:19,260 --> 01:43:21,260
+but where there are a few outliers,
+
+926
+01:43:21,260 --> 01:43:23,260
+where there are a few outliers,
+
+927
+01:43:23,260 --> 01:43:25,260
+it is difficult to have higher values.
+
+928
+01:43:25,260 --> 01:43:27,260
+These are the simple guidelines to choose.
+
+929
+01:43:27,260 --> 01:43:29,260
+These are the simple guidelines to choose.
+
+930
+01:43:29,260 --> 01:43:31,260
+These are the simple guidelines to choose.
+
+931
+01:43:31,260 --> 01:43:33,260
+These are the simple guidelines to choose.
+
+932
+01:43:33,260 --> 01:43:35,260
+Means represent central functions in a data set.
+
+933
+01:43:35,260 --> 01:43:37,260
+Means represent central functions in a data set.
+
+934
+01:43:37,260 --> 01:43:39,260
+Means represent central functions in a data set.
+
+935
+01:43:39,260 --> 01:43:41,260
+Means represent central functions in a data set.
+
+936
+01:43:41,260 --> 01:43:43,260
+Another type of mean is later arithmetic mean,
+
+937
+01:43:43,260 --> 01:43:45,260
+Another type of mean is later arithmetic mean,
+
+938
+01:43:45,260 --> 01:43:47,260
+which is used if one wants to combine average values
+
+939
+01:43:47,260 --> 01:43:49,260
+which is used if one wants to combine average values
+
+940
+01:43:49,260 --> 01:43:51,260
+which is used if one wants to combine average values
+
+941
+01:43:51,260 --> 01:44:02,260
+from samples of the same population with different sample sizes, this is basically a weighted
+
+942
+01:44:02,260 --> 01:44:05,260
+mean calculation formula.
+
+943
+01:44:05,260 --> 01:44:18,260
+These are the weights, the weights EWI represent the sizes of the different samples, in other
+
+944
+01:44:18,260 --> 01:44:24,260
+applications they represent a measure for the reliability of the treatments upon the
+
+945
+01:44:24,260 --> 01:44:27,260
+mean by the respective one.
+
+946
+01:44:27,260 --> 01:44:42,260
+Again, this is known in some applications as a sign for it, in speech processing for
+
+947
+01:44:42,260 --> 01:44:46,260
+some medical data analysis.
+
+948
+01:44:46,260 --> 01:44:48,260
+They are used for this.
+
+949
+01:44:48,260 --> 01:44:55,260
+For example, in doctor ultrasound, they are used to estimate mean blood flow.
+
+950
+01:44:55,260 --> 01:45:00,260
+They use weighted arithmetic mean.
+
+951
+01:45:00,000 --> 01:45:10,239
+Basically, the clear transform of plot flow data is taken to determine the mean frequency
+
+952
+01:45:10,239 --> 01:45:17,239
+of the clear transform and the weighted intensity of the mean frequency estimator, which is
+
+953
+01:45:17,239 --> 01:45:27,239
+the application of the wave type of opinions, is used, for example.
+
+954
+01:45:27,239 --> 01:45:33,239
+There are more general mean descriptions. I don't want to get into more details because
+
+955
+01:45:33,239 --> 01:45:46,239
+mean is the key subject in mathematics. There is power mean, which has several parameters.
+
+956
+01:45:46,239 --> 01:45:53,239
+Depending on the values of these parameters, it could represent minimum value of data set,
+
+957
+01:45:53,239 --> 01:45:57,239
+harmonic mean, geometric mean, arithmetic mean, or root mean.
+
+958
+01:45:57,239 --> 01:46:07,239
+This is very generalized mean description.
+
+959
+01:46:07,239 --> 01:46:15,239
+Median is another type of central tangency measure we said, sometimes known as the midpoint.
+
+960
+01:46:15,239 --> 01:46:20,239
+It is used to represent the others, and the data are not symmetrical.
+
+961
+01:46:20,239 --> 01:46:27,239
+If you have the histogram and you realize that your data is symmetrical,
+
+962
+01:46:27,239 --> 01:46:29,239
+it is skewed left or right.
+
+963
+01:46:29,239 --> 01:46:39,239
+So, median is probably the best measure to represent the central tangency in this case.
+
+964
+01:46:39,239 --> 01:46:48,239
+In your future set, instead of arithmetic, you will choose medium.
+
+965
+01:46:48,239 --> 01:46:55,239
+The median may be given with its integer.
+
+966
+01:46:55,239 --> 01:46:56,239
+So, the median may be given with its integer.
+
+967
+01:46:56,239 --> 01:46:57,239
+The median may be given with its integer.
+
+968
+01:46:57,239 --> 01:47:00,239
+For instance, let's say that the information of this graph is not symmetrical.
+
+969
+01:47:00,239 --> 01:47:05,239
+Then this data will be in three overwarzels.
+
+970
+01:47:05,239 --> 01:47:20,639
+It may be determined in R of 1.
+
+971
+01:47:21,239 --> 01:47:25,239
+I give the evaluation the first quarter point,
+
+972
+01:47:25,239 --> 01:47:32,239
+This can be shown in a boxed and disked plot, it again refers to visualization.
+
+973
+01:47:32,239 --> 01:47:42,239
+In visualization, median is used in the first time, it's actually quartile time used, first quartile.
+
+974
+01:47:42,239 --> 01:47:48,239
+Second quartile is median, third quartile.
+
+975
+01:47:48,239 --> 01:47:58,239
+Zero quartile is minimum value, fourth quartile is maximum value.
+
+976
+01:47:58,239 --> 01:48:06,239
+Most usually represent the most common of a set of events.
+
+977
+01:48:06,239 --> 01:48:14,239
+Again, this is used when we need a label for the most representative events.
+
+978
+01:48:14,239 --> 01:48:18,239
+For example,
+
+979
+01:48:18,239 --> 01:48:23,239
+it is not a symmetrical distribution at all.
+
+980
+01:48:23,239 --> 01:48:29,239
+Now, this is the mode drawn in mode.
+
+981
+01:48:29,239 --> 01:48:35,239
+So just to compare median and mode.
+
+982
+01:48:35,239 --> 01:48:45,239
+As you see, if the distribution approaches the Gaussian, or normal distribution,
+
+983
+01:48:45,239 --> 01:48:48,239
+then the always mode, median and median,
+
+984
+01:48:48,239 --> 01:48:55,239
+will refer to the same point, represent central tendency.
+
+985
+01:48:55,239 --> 01:49:01,239
+The best way is to choose the most computationally efficient method
+
+986
+01:49:01,239 --> 01:49:06,239
+to represent central tendency in this case.
+
+987
+01:49:06,239 --> 01:49:13,239
+However, if the distribution changes, then, for example,
+
+988
+01:49:13,239 --> 01:49:18,239
+median would be probably much better than the median.
+
+989
+01:49:18,239 --> 01:49:33,239
+We have to visualize data to see or to choose the correct representation.
+
+990
+01:49:33,239 --> 01:49:36,239
+The other parameter was variability.
+
+991
+01:49:36,239 --> 01:49:40,239
+The measures of variability,
+
+992
+01:49:40,239 --> 01:49:47,239
+we use basically sample variance, sample standard deviation.
+
+993
+01:49:47,239 --> 01:49:55,239
+These are most widely used measures,
+
+994
+01:49:55,239 --> 01:50:00,239
+or interquartile range.
+
+995
+01:50:00,000 --> 01:50:13,520
+So, sample variation and sample standardization can be given as, this one, this is the sample
+
+996
+01:50:13,520 --> 01:50:14,520
+variation.
+
+997
+01:50:14,520 --> 01:50:27,239
+These are XIR samples and XIR mean distances between each sample at mean, square distances
+
+998
+01:50:27,239 --> 01:50:36,859
+between each sample at mean, total square distances between each sample at mean divided
+
+999
+01:50:36,859 --> 01:50:48,539
+by N minus 1, and taking square root of this value will give us standard variation.
+
+1000
+01:50:48,539 --> 01:50:56,039
+Standard variation E is used for data which are normally distributed to provide information
+
+1001
+01:50:56,039 --> 01:50:57,039
+on how much the distance between the sample at mean and the distance between the sample
+
+1002
+01:50:57,039 --> 01:50:59,619
+at the same time is distributed, and also the data varied around the mean.
+
+1003
+01:50:59,619 --> 01:51:06,760
+Simply, standard deviation indicates how much the set of values spread around the average.
+
+1004
+01:51:06,760 --> 01:51:23,680
+So a range of one standard deviation above and below the mean covers 68.2% of the values,
+
+1005
+01:51:23,680 --> 01:51:26,340
+two are still.
+
+1006
+01:51:26,340 --> 01:51:42,340
+Meme plus minus 2 sp covers 95.4% of the whole data and plus minus 2 sp will cover 99.7.
+
+1007
+01:51:42,340 --> 01:52:01,340
+Actually, this is on a normal distribution.
+
+1008
+01:52:01,340 --> 01:52:09,340
+Here, the standard deviation is 1 sp.
+
+1009
+01:52:09,340 --> 01:52:12,340
+Values will fall within 6k.
+
+1010
+01:52:12,340 --> 01:52:26,340
+It's 2 sp something here and 3 sp will be something like 99.7% of the whole sample content.
+
+1011
+01:52:26,340 --> 01:52:33,340
+Some properties that can help you when interpreting the standard deviation.
+
+1012
+01:52:33,340 --> 01:52:38,340
+Standard deviation can never be a negative number.
+
+1013
+01:52:38,340 --> 01:52:41,340
+Because it is...
+
+1014
+01:52:41,340 --> 01:52:42,340
+uh...
+
+1015
+01:52:42,340 --> 01:52:46,340
+a square root of...
+
+1016
+01:52:46,340 --> 01:52:47,340
+variance.
+
+1017
+01:52:47,340 --> 01:52:49,340
+Variance is...
+
+1018
+01:52:49,340 --> 01:52:52,340
+because variance is not a square.
+
+1019
+01:52:52,340 --> 01:52:56,340
+And it will never be a negative value.
+
+1020
+01:52:56,340 --> 01:53:00,340
+The smallest possible value for the standard deviation is 0.
+
+1021
+01:53:00,340 --> 01:53:01,340
+It is 0.
+
+1022
+01:53:01,340 --> 01:53:05,340
+Definitely is not a standard deviation.
+
+1023
+01:53:05,340 --> 01:53:09,340
+And every number in the data should be exactly the same.
+
+1024
+01:53:09,340 --> 01:53:11,340
+Standard deviation is 0.
+
+1025
+01:53:11,340 --> 01:53:16,340
+Standard deviation is affected by outliers.
+
+1026
+01:53:16,340 --> 01:53:19,340
+It is based on distance from the need.
+
+1027
+01:53:19,340 --> 01:53:21,340
+It is affected by outliers as well.
+
+1028
+01:53:21,340 --> 01:53:27,340
+We calculate distance of each sample from need.
+
+1029
+01:53:27,340 --> 01:53:29,340
+So, it is outliers.
+
+1030
+01:53:29,340 --> 01:53:32,340
+And we change standard deviation.
+
+1031
+01:53:32,340 --> 01:53:34,340
+1.
+
+1032
+01:53:34,340 --> 01:53:39,340
+Standard deviation is the same in need and the origin of the in-time.
+
+1033
+01:53:41,340 --> 01:53:48,340
+Overall, we change standard deviation.
+
+1034
+01:53:48,340 --> 01:53:58,319
+It is in the same form, on the left
+
+1035
+01:53:58,319 --> 01:54:04,340
+the exact pathetic frequency.
+
+1036
+01:54:04,340 --> 01:54:05,340
+But now do you think standard deviation is the same?
+
+1037
+01:54:05,340 --> 01:54:06,360
+100%
+
+1038
+01:54:06,360 --> 01:54:07,340
+0,
+
+1039
+01:54:07,340 --> 01:54:08,340
+0.
+
+1040
+01:54:08,340 --> 01:54:09,340
+0.
+
+1041
+01:54:09,340 --> 01:54:20,340
+The sample mean and sample deviation characterize this data set as a future.
+
+1042
+01:54:25,340 --> 01:54:36,340
+If you want to compare two populations and knowing sample mean and sample deviation from
+
+1043
+01:54:36,340 --> 01:54:46,340
+these two populations is enough to compare these two populations.
+
+1044
+01:54:49,340 --> 01:54:54,340
+Quantity, which comes what quantity?
+
+1045
+01:54:54,340 --> 01:55:00,340
+Quantity means where a sample is divided into equal size objective subgroups.
+
+1046
+01:55:00,000 --> 01:55:13,000
+It can also refer to dividing the probability distribution into areas of equal probability.
+
+1047
+01:55:13,000 --> 01:55:16,000
+Quartiles are quantiles.
+
+1048
+01:55:16,000 --> 01:55:23,000
+Quartile means dividing the sample population into four groups.
+
+1049
+01:55:23,000 --> 01:55:28,000
+Percentiles are again quantiles.
+
+1050
+01:55:28,000 --> 01:55:34,000
+That means dividing the population into 100 equal parts.
+
+1051
+01:55:34,000 --> 01:55:40,000
+Deciles are again quantiles.
+
+1052
+01:55:40,000 --> 01:55:45,000
+That means we divide the distribution into 10 equal parts.
+
+1053
+01:55:45,000 --> 01:55:52,000
+Percentiles are used.
+
+1054
+01:55:52,000 --> 01:55:53,000
+This is not common.
+
+1055
+01:55:53,000 --> 01:55:57,000
+You may report relative standing of a number within a data set.
+
+1056
+01:55:57,000 --> 01:56:01,000
+1%, 2%, 10% or whatever.
+
+1057
+01:56:01,000 --> 01:56:10,000
+A percentile is the percentage of individuals in the data set who are below that your number is rotated.
+
+1058
+01:56:10,000 --> 01:56:17,000
+For example, if your exam score is at the 90% time,
+
+1059
+01:56:17,000 --> 01:56:22,000
+that means that 90% of the people taking the exam
+
+1060
+01:56:22,000 --> 01:56:35,000
+will score lower than you did.
+
+1061
+01:56:35,000 --> 01:56:46,000
+10% score higher than you did.
+
+1062
+01:56:46,000 --> 01:56:51,000
+Quartiles are, of course,
+
+1063
+01:56:51,000 --> 01:56:54,000
+when we divide into four equal parts.
+
+1064
+01:56:54,000 --> 01:57:03,000
+For sample data, the median is also known as the second quartile, Q2.
+
+1065
+01:57:03,000 --> 01:57:09,000
+Given Q2, we can find the first quartile, Q1,
+
+1066
+01:57:09,000 --> 01:57:17,000
+by simply taking the median value of those samples that lie below the second quartile.
+
+1067
+01:57:17,000 --> 01:57:20,000
+We can also find the third quartile, Q2,
+
+1068
+01:57:20,000 --> 01:57:29,000
+by taking the median value of those samples that lie above the second quartile, above the median.
+
+1069
+01:57:29,000 --> 01:57:33,000
+The quartiles can also be found in terms of percentiles.
+
+1070
+01:57:33,000 --> 01:57:37,000
+In which case, the first quartile is 75 percentiles.
+
+1071
+01:57:37,000 --> 01:57:40,000
+The second quartile is 50.
+
+1072
+01:57:40,000 --> 01:57:45,000
+The third quartile is 75 percentiles.
+
+1073
+01:57:45,000 --> 01:57:49,000
+Here is the...
+
+1074
+01:57:49,000 --> 01:57:56,000
+The Q1, Q2, and Q3 values, you know, distribution.
+
+1075
+01:58:16,000 --> 01:58:18,000
+In terms of the...
+
+1076
+01:58:19,000 --> 01:58:21,000
+In terms of the simple statistics,
+
+1077
+01:58:21,000 --> 01:58:28,000
+the data set can be summarized using pipe number summary.
+
+1078
+01:58:28,000 --> 01:58:32,000
+In this pipe number summary, we have the minimum,
+
+1079
+01:58:32,000 --> 01:58:39,000
+which is also known as zero quantile, as I said before.
+
+1080
+01:58:39,000 --> 01:58:42,000
+Then we have the maximum,
+
+1081
+01:58:42,000 --> 01:58:46,000
+which is known as the one quantile,
+
+1082
+01:58:46,000 --> 01:58:48,000
+in terms of the quantile.
+
+1083
+01:58:49,000 --> 01:58:57,000
+The minimum and maximum, along with quartile, Q1, Q2, and Q3,
+
+1084
+01:58:57,000 --> 01:59:00,000
+are known as pipe number summaries.
+
+1085
+01:59:00,000 --> 01:59:04,000
+Now, the pipe number summary will include
+
+1086
+01:59:04,000 --> 01:59:09,000
+minimum,
+
+1087
+01:59:09,000 --> 01:59:16,000
+Q1, quartile 1, of 25 percentile,
+
+1088
+01:59:16,000 --> 01:59:23,000
+Q2, or medium, or 50 percentile,
+
+1089
+01:59:23,000 --> 01:59:32,000
+Q3, 75 percentile,
+
+1090
+01:59:32,000 --> 01:59:36,000
+and maximum.
+
+1091
+01:59:36,000 --> 01:59:42,000
+This is known as pipe number summary.
+
+1092
+01:59:42,000 --> 01:59:45,000
+This way, the pipe number summary power is zero.
+
+1093
+01:59:45,000 --> 01:59:52,000
+So, we can find 0.2, 0.5, and 1 quantile.
+
+1094
+01:59:52,000 --> 01:59:56,000
+The pipe number summary then can be used
+
+1095
+01:59:56,000 --> 02:00:00,000
+to derive three measures of dispersion.
+
+1096
+02:00:00,000 --> 02:00:19,359
+The first one is the range. The difference between the maximum observed value and the minimum observed value. Max minus min will give us the range. And the second, the Intel quartile range, which equals 53 minus 31.
+
+1097
+02:00:19,360 --> 02:00:36,360
+75 percentile minus 26 percentile is known as the Intel quartile range. Greater is the Intra, greater is the Dispersion.
+
+1098
+02:00:40,360 --> 02:00:49,360
+This one is also used to plot box plots, which is visualization.
+
+1099
+02:00:50,360 --> 02:01:06,360
+In addition to visualize the dispersion of the Intra, Rotspot is basically formed by using this part number summary.
+
+1100
+02:01:07,360 --> 02:01:18,360
+This can be articulated or horizontally. This one is Rotspot.
+
+1101
+02:01:20,360 --> 02:01:27,360
+This is to determine outliers of a data set using box plots. These are the rules.
+
+1102
+02:01:36,360 --> 02:01:47,360
+If a value is outside of these values, for example 53 plus 3 times Intel quartile range,
+
+1103
+02:01:48,360 --> 02:01:52,360
+this is called a definite outlier.
+
+1104
+02:01:53,360 --> 02:02:05,360
+Or outside of 31 minus 3 times Intel quartile range, for example, we have Q3 here.
+
+1105
+02:02:06,360 --> 02:02:15,360
+We multiply this Intel quartile range by 3 and edit here.
+
+1106
+02:02:15,360 --> 02:02:21,360
+And let's assume that it gives us a value here.
+
+1107
+02:02:21,360 --> 02:02:28,360
+Then the value, which is described as maximum use, will be assumed as outlier.
+
+1108
+02:02:32,360 --> 02:02:36,360
+Of course, this is not proportional, but I will give you an example.
+
+1109
+02:02:36,360 --> 02:02:41,360
+You multiply this by 3 and edit the third quartile.
+
+1110
+02:02:41,360 --> 02:02:43,360
+And this is the value of this.
+
+1111
+02:02:43,360 --> 02:03:03,360
+Again, if a value falls outside of this value, we have first quartile and subtracted 3 times Intel quartile range.
+
+1112
+02:03:03,360 --> 02:03:05,360
+And it gains a point here, for example.
+
+1113
+02:03:05,360 --> 02:03:12,360
+If a value falls outside of this, it is definitely an outlier.
+
+1114
+02:03:12,360 --> 02:03:27,360
+And if a value is outside of plus minus 1 point 5 times Intel quartile range,
+
+1115
+02:03:27,360 --> 02:03:31,360
+then they are considered as possible outliers.
+
+1116
+02:03:31,360 --> 02:03:34,360
+Not exact outliers, but possible outliers.
+
+1117
+02:03:34,360 --> 02:03:40,360
+These are represented.
+
+1118
+02:03:42,360 --> 02:03:49,360
+This is a representation of central tendency and values.
+
+1119
+02:03:49,360 --> 02:03:55,360
+Data transformation and data analysis are frequently used.
+
+1120
+02:03:55,360 --> 02:04:01,360
+There might be many reasons to transform the data.
+
+1121
+02:04:01,360 --> 02:04:09,360
+It's a general process used to transform the data.
+
+1122
+02:04:09,360 --> 02:04:11,360
+In general,
+
+1123
+02:04:11,360 --> 02:04:21,360
+there are two main reasons for transforming the data in a data analysis process.
+
+1124
+02:04:21,360 --> 02:04:26,360
+The first reason is,
+
+1125
+02:04:26,360 --> 02:04:33,360
+say, for example, we have data in one domain, raw data.
+
+1126
+02:04:33,360 --> 02:04:40,360
+Your data might have some features which are not apparent in its current forms.
+
+1127
+02:04:40,360 --> 02:04:48,360
+So when you transform the data, some features may become apparent.
+
+1128
+02:04:48,360 --> 02:04:59,360
+Basically, to see characteristics or features of a data which is not seen in one domain,
+
+1129
+02:04:59,360 --> 02:05:01,360
+you have to see the data in one domain.
+
+1130
+02:05:00,000 --> 02:05:10,000
+can be made apparent in another domain through transformation.
+
+1131
+02:05:01,360 --> 02:05:03,360
+And the second reason is,
+
+1132
+02:05:03,360 --> 02:05:05,360
+when you transform the data,
+
+1133
+02:05:05,360 --> 02:05:08,360
+some features may become apparent in its current forms.
+
+1134
+02:05:10,000 --> 02:05:12,000
+This is the first reason.
+
+1135
+02:05:12,000 --> 02:05:19,000
+Another reason is computational complexity of an algorithm
+
+1136
+02:05:19,000 --> 02:05:25,000
+when data is in one domain
+
+1137
+02:05:25,000 --> 02:05:35,000
+might be much higher than the computational complexity of the data
+
+1138
+02:05:35,000 --> 02:05:42,000
+when this data is transformed into another domain.
+
+1139
+02:05:42,000 --> 02:05:48,000
+So the second reason for data transformation is
+
+1140
+02:05:48,000 --> 02:05:53,000
+taking average of computational complexity.
+
+1141
+02:05:53,000 --> 02:05:55,000
+Let me give you an example.
+
+1142
+02:05:55,000 --> 02:05:59,000
+If you have studied some digital signal processing course
+
+1143
+02:05:59,000 --> 02:06:06,000
+or probably you already mentioned the third tutorial.
+
+1144
+02:06:06,000 --> 02:06:15,000
+If you take a clear transform of data
+
+1145
+02:06:15,000 --> 02:06:22,000
+convolution in signal processing is a computationally complex operation.
+
+1146
+02:06:22,000 --> 02:06:25,000
+It is too far low.
+
+1147
+02:06:25,000 --> 02:06:28,000
+Correlation as well is strong.
+
+1148
+02:06:28,000 --> 02:06:36,000
+But if you convert the data set into a frequency domain
+
+1149
+02:06:36,000 --> 02:06:43,000
+this convolution, the simple follow, becomes a simple multiplication.
+
+1150
+02:06:43,000 --> 02:06:46,000
+Sample by sample multiplication.
+
+1151
+02:06:46,000 --> 02:06:53,000
+So again
+
+1152
+02:06:53,000 --> 02:06:55,000
+the
+
+1153
+02:06:55,000 --> 02:06:58,000
+for example
+
+1154
+02:06:58,000 --> 02:07:01,000
+multiplication
+
+1155
+02:07:01,000 --> 02:07:03,000
+in one domain
+
+1156
+02:07:03,000 --> 02:07:06,000
+if you convert into log domain
+
+1157
+02:07:06,000 --> 02:07:08,000
+it becomes addition.
+
+1158
+02:07:08,000 --> 02:07:12,000
+Division which is quite computationally expensive
+
+1159
+02:07:12,000 --> 02:07:18,000
+when you convert into log domain it becomes simple subtraction.
+
+1160
+02:07:18,000 --> 02:07:19,000
+So
+
+1161
+02:07:19,000 --> 02:07:22,000
+anyway
+
+1162
+02:07:22,000 --> 02:07:25,000
+data transformations can also be used
+
+1163
+02:07:25,000 --> 02:07:31,000
+to reduce influence of extreme values for example.
+
+1164
+02:07:31,000 --> 02:07:34,000
+I already said
+
+1165
+02:07:34,000 --> 02:07:37,000
+two main general terms of transformations
+
+1166
+02:07:37,000 --> 02:07:41,000
+one in terms of statistical data analysis.
+
+1167
+02:07:41,000 --> 02:07:44,000
+Data transformation can be done
+
+1168
+02:07:44,000 --> 02:07:46,000
+to make the distribution of the data normal.
+
+1169
+02:07:46,000 --> 02:07:49,000
+Normal data
+
+1170
+02:07:49,000 --> 02:07:53,000
+is not normally distributed in one domain
+
+1171
+02:07:53,000 --> 02:07:58,000
+when you transform the data to things normal.
+
+1172
+02:07:58,000 --> 02:08:01,000
+So you can apply simple statistics.
+
+1173
+02:08:01,000 --> 02:08:06,000
+To create more informative graphs of data for example
+
+1174
+02:08:06,000 --> 02:08:11,000
+you have a data set with very small and very big numbers.
+
+1175
+02:08:11,000 --> 02:08:13,000
+If you use linear state
+
+1176
+02:08:13,000 --> 02:08:16,000
+you will not be able to see the time.
+
+1177
+02:08:16,000 --> 02:08:18,000
+But if you use log state
+
+1178
+02:08:18,000 --> 02:08:21,000
+it will be easier to see the time.
+
+1179
+02:08:21,000 --> 02:08:23,000
+So you can use data transformation
+
+1180
+02:08:23,000 --> 02:08:25,000
+to make the distribution of data normal.
+
+1181
+02:08:25,000 --> 02:08:26,000
+For this purpose
+
+1182
+02:08:26,000 --> 02:08:27,000
+lower pin and square root
+
+1183
+02:08:27,000 --> 02:08:28,000
+are most widely used
+
+1184
+02:08:28,000 --> 02:08:29,000
+for transformations.
+
+1185
+02:08:29,000 --> 02:08:30,000
+There are whole set of transformations
+
+1186
+02:08:30,000 --> 02:08:31,000
+many other transformations
+
+1187
+02:08:31,000 --> 02:08:32,000
+but still
+
+1188
+02:08:32,000 --> 02:08:33,000
+the only stock of these
+
+1189
+02:08:33,000 --> 02:08:34,000
+left is
+
+1190
+02:08:34,000 --> 02:08:35,000
+the
+
+1191
+02:08:35,000 --> 02:08:36,000
+the
+
+1192
+02:08:36,000 --> 02:08:37,000
+the
+
+1193
+02:08:37,000 --> 02:08:38,000
+the
+
+1194
+02:08:38,000 --> 02:08:39,000
+the
+
+1195
+02:08:39,000 --> 02:08:40,000
+the
+
+1196
+02:08:40,000 --> 02:08:41,000
+the
+
+1197
+02:08:41,000 --> 02:08:42,000
+the
+
+1198
+02:08:42,000 --> 02:08:43,000
+the
+
+1199
+02:08:43,000 --> 02:08:44,000
+the
+
+1200
+02:08:44,000 --> 02:08:45,000
+the
+
+1201
+02:08:45,000 --> 02:08:46,000
+the
+
+1202
+02:08:46,000 --> 02:08:47,000
+the
+
+1203
+02:08:47,000 --> 02:08:48,000
+the
+
+1204
+02:08:48,000 --> 02:08:49,000
+the
+
+1205
+02:08:49,000 --> 02:08:50,000
+the
+
+1206
+02:08:50,000 --> 02:08:51,000
+the
+
+1207
+02:08:51,000 --> 02:08:52,000
+the
+
+1208
+02:08:52,000 --> 02:08:53,000
+the
+
+1209
+02:08:53,000 --> 02:08:54,000
+the
+
+1210
+02:08:54,000 --> 02:08:55,000
+the
+
+1211
+02:08:55,000 --> 02:08:56,000
+the
+
+1212
+02:08:56,000 --> 02:08:57,000
+the
+
+1213
+02:08:57,000 --> 02:08:58,000
+the
+
+1214
+02:08:58,000 --> 02:08:59,000
+a
+
+1215
+02:08:59,000 --> 02:09:00,000
+a
+
+1216
+02:09:00,000 --> 02:09:14,000
+a
+
+1217
+02:09:14,000 --> 02:09:15,000
+a
+
+1218
+02:09:15,000 --> 02:09:16,000
+a
+
+1219
+02:09:16,000 --> 02:09:17,000
+a
+
+1220
+02:09:17,000 --> 02:09:18,000
+type
+
+1221
+02:09:18,000 --> 02:09:19,000
+type
+
+1222
+02:09:19,000 --> 02:09:20,000
+type
+
+1223
+02:09:20,000 --> 02:09:26,960
+And for dispersion, independently from units, we use the coefficient of variation, which
+
+1224
+02:09:26,960 --> 02:09:40,060
+is the standard deviation divided by the sample mean, which is the coefficient of variation.
+
+1225
+02:09:40,060 --> 02:09:52,720
+We can use scaling and shifting operations on variables, simply the effect of this scaling
+
+1226
+02:09:52,720 --> 02:10:00,000
+and shifting on these measures is discussed here, but I'm not going to spend much time
+
+1227
+02:10:00,000 --> 02:10:15,359
+more time on it. If necessary you will employ some of these techniques for better analysis
+
+1228
+02:10:15,359 --> 02:10:28,000
+for your dataset. Standardization is one of the important steps
+
+1229
+02:10:28,000 --> 02:10:40,680
+used in main analysis. Variable standardization is the common linear transformation in which
+
+1230
+02:10:40,680 --> 02:10:50,359
+we subtract the sample mean from the observed values and divide result by the sample standard
+
+1231
+02:10:50,359 --> 02:10:57,479
+deviation, this is the standardization. In order to shift the mean to zero and make the
+
+1232
+02:10:57,479 --> 02:10:57,979
+standard deviation, we have to divide the sample deviation by the sample standard deviation.
+
+1233
+02:10:57,980 --> 02:11:12,980
+Using such transformation is especially common in the regression analysis and clustering.
+
+1234
+02:11:12,980 --> 02:11:20,980
+Subtracting mean from the observations shifts the sample mean to zero.
+
+1235
+02:11:20,980 --> 02:11:28,980
+So here standard deviation does not change, but sample mean changes to zero.
+
+1236
+02:11:28,980 --> 02:11:39,980
+Dividing by S on the other hand changes the sample standard deviation to one.
+
+1237
+02:11:39,980 --> 02:11:45,980
+This is important to, you know, for example,
+
+1238
+02:11:45,980 --> 02:11:50,980
+if you standardize your dataset and apply an algorithm
+
+1239
+02:11:50,980 --> 02:12:08,980
+how it works, imagine you have a dataset with different mean values and different features, different values.
+
+1240
+02:12:08,980 --> 02:12:17,980
+You explain your algorithm, but you might have
+
+1241
+02:12:17,980 --> 02:12:20,980
+a dataset which can be calculated
+
+1242
+02:12:20,980 --> 02:12:24,980
+in its chain class.
+
+1243
+02:12:24,980 --> 02:12:30,980
+But you want to use your algorithm to analyze this dataset
+
+1244
+02:12:30,980 --> 02:12:34,980
+chained by another type of dataset.
+
+1245
+02:12:34,980 --> 02:12:47,980
+If you do not use standardization to train your data and your algorithm
+
+1246
+02:12:47,980 --> 02:12:50,980
+probably you will not get a success.
+
+1247
+02:12:50,980 --> 02:12:57,980
+When your dataset changes, the best way is
+
+1248
+02:12:57,980 --> 02:13:02,980
+first you standardize the variable
+
+1249
+02:13:02,980 --> 02:13:06,980
+and train your algorithm.
+
+1250
+02:13:06,980 --> 02:13:10,980
+Again, when you want to analyze other datasets,
+
+1251
+02:13:10,980 --> 02:13:17,980
+first, that is, just standardize the dataset and apply it.
+
+1252
+02:13:20,980 --> 02:13:26,980
+Another common concept, which is similar to standardization,
+
+1253
+02:13:26,980 --> 02:13:29,980
+is normalization.
+
+1254
+02:13:29,980 --> 02:13:34,980
+There are several types of normalization for a DERF dataset.
+
+1255
+02:13:34,980 --> 02:13:38,980
+Basically, normalization involves
+
+1256
+02:13:38,980 --> 02:13:45,980
+to transform data range
+
+1257
+02:13:45,980 --> 02:13:50,980
+between either zero to one or minus one to one.
+
+1258
+02:13:50,980 --> 02:13:57,980
+You have a dataset with values ranging between
+
+1259
+02:13:57,980 --> 02:14:00,980
+a min to a max.
+
+1260
+02:14:00,980 --> 02:14:03,980
+When you normalize it,
+
+1261
+02:14:03,980 --> 02:14:08,980
+depending on the type of normalization you use,
+
+1262
+02:14:08,980 --> 02:14:14,980
+your data will change between zero to one or minus one to one.
+
+1263
+02:14:14,980 --> 02:14:17,980
+This is known as normalization.
+
+1264
+02:14:17,980 --> 02:14:19,980
+Or, if you need to change between
+
+1265
+02:14:19,980 --> 02:14:21,980
+zero to one or minus one,
+
+1266
+02:14:21,980 --> 02:14:24,980
+you need a specific
+
+1267
+02:14:24,980 --> 02:14:32,980
+you can also normalize your data to change between zero and minus one.
+
+1268
+02:14:32,980 --> 02:14:35,980
+Depending on normalization,
+
+1269
+02:14:35,980 --> 02:14:38,980
+your normalization formula
+
+1270
+02:14:38,980 --> 02:14:46,980
+It is basically very similar to this.
+
+1271
+02:14:46,980 --> 02:14:53,980
+It is found by
+
+1272
+02:14:53,980 --> 02:14:57,980
+its sample
+
+1273
+02:14:57,980 --> 02:14:59,980
+current sample minus
+
+1274
+02:14:59,980 --> 02:15:01,980
+DERF
+
+1275
+02:15:00,000 --> 02:15:11,520
+minus maximum value divided by range or current sample minus minimum value divided by range
+
+1276
+02:15:01,980 --> 02:15:03,980
+DERF
+
+1277
+02:15:03,980 --> 02:15:05,980
+DERF
+
+1278
+02:15:05,980 --> 02:15:07,980
+DERF
+
+1279
+02:15:07,980 --> 02:15:09,980
+DERF
+
+1280
+02:15:09,980 --> 02:15:11,980
+DERF
+
+1281
+02:15:11,520 --> 02:15:18,359
+depending on the type of normal grid you can choose one of them this will give you the
+
+1282
+02:15:11,980 --> 02:15:13,980
+DERF
+
+1283
+02:15:13,980 --> 02:15:15,980
+DERF
+
+1284
+02:15:18,360 --> 02:15:31,560
+value 15, 0, 1, 1 or minus 1, plus 1 or 0, minus 1
+
+1285
+02:15:31,560 --> 02:15:42,120
+to explore the relationship with the relationship of the variable or two numerical variables
+
+1286
+02:15:42,120 --> 02:15:48,360
+we can use for visual inspection scatter plot
+
+1287
+02:15:48,360 --> 02:15:56,480
+these are some examples of scattered plot usually you can see the relationship for example
+
+1288
+02:15:56,480 --> 02:16:06,600
+this one has a posted relationship one variable is y-axis another one is x-axis and if they
+
+1289
+02:16:06,600 --> 02:16:16,360
+have an accelerating pattern then that's a posted relationship they are related to
+
+1290
+02:16:16,360 --> 02:16:17,360
+each other
+
+1291
+02:16:17,360 --> 02:16:18,360
+and if they have an accelerating pattern then that's a posted relationship
+
+1292
+02:16:18,360 --> 02:16:31,240
+if it is for a decelerating relationship it is a almost no relationship and this one
+
+1293
+02:16:31,240 --> 02:16:36,440
+has some complex relationship etc
+
+1294
+02:16:36,440 --> 02:16:47,360
+scatter plot will give us a visual chance to see the relationship
+
+1295
+02:16:47,360 --> 02:16:48,360
+scatter plot will give us a visual chance to see the relationship
+
+1296
+02:16:48,360 --> 02:16:57,239
+to quantify the relationship we use correlation
+
+1297
+02:16:57,239 --> 02:17:02,360
+correlation will give us the similarity of two variables numerically
+
+1298
+02:17:02,360 --> 02:17:14,840
+if the tucson correlation coefficient can be calculated by using this equation
+
+1299
+02:17:14,840 --> 02:17:15,840
+if the tucson correlation coefficient can be calculated by using this equation
+
+1300
+02:17:15,840 --> 02:17:16,840
+we can have
+
+1301
+02:17:16,840 --> 02:17:17,840
+one of the two numbers in the equation
+
+1302
+02:17:17,840 --> 02:17:18,360
+we can have
+
+1303
+02:17:18,360 --> 02:17:25,960
+distance basically we have two variables this is the distance of distance value of the first
+
+1304
+02:17:25,960 --> 02:17:32,440
+variable and distance value of second variable and these are the efficient plus y are the
+
+1305
+02:17:32,440 --> 02:17:49,800
+variances or certainly the standard deviations standard deviation of x and standard deviation of
+
+1306
+02:17:49,800 --> 02:17:58,520
+y and simply give us this correlation is value changes between minus one and plus one
+
+1307
+02:18:00,120 --> 02:18:01,399
+minus one is
+
+1308
+02:18:02,840 --> 02:18:07,960
+basically the maximum relationship of negative relationship plus one is
+
+1309
+02:18:07,960 --> 02:18:16,040
+maximum positive relationship that means they are the same value minus one is in terms of the
+
+1310
+02:18:16,040 --> 02:18:21,159
+pattern they are the same but the 180 degree phase difference between these things
+
+1311
+02:18:23,480 --> 02:18:29,399
+zero means there is absolutely no relationship anyone is between these
+
+1312
+02:18:31,480 --> 02:18:32,280
+three values
+
+1313
+02:18:32,680 --> 02:18:36,840
+will give us a certain degree of relationship
+
+1314
+02:18:46,280 --> 02:18:51,720
+and of course we can talk about cross correlation and auto correlation as well
+
+1315
+02:18:53,640 --> 02:19:01,319
+and these concepts have also many other applications other than statistics
+
+1316
+02:19:02,440 --> 02:19:06,040
+changing for the role of in commutation for example
+
+1317
+02:19:08,200 --> 02:19:13,079
+auto correlation is used in cdmf for the remark
+
+1318
+02:19:19,159 --> 02:19:27,720
+i think if the algorithm is very simple to follow but in terms of the career
+
+1319
+02:19:27,720 --> 02:19:31,640
+transform these will become marks into multiplication
+
+1320
+02:19:32,760 --> 02:19:34,600
+of correlation of information
+
+1321
+02:19:38,200 --> 02:19:39,800
+uh sample covariance
+
+1322
+02:19:42,040 --> 02:19:48,280
+uh is basically if the standard deviations are removed from denominator in case the
+
+1323
+02:19:48,280 --> 02:19:54,440
+correlation function gives you know that sample covariance simply therefore
+
+1324
+02:19:58,120 --> 02:19:59,560
+correlation and covering
+
+1325
+02:20:00,000 --> 02:20:01,200
+such a relationship
+
+1326
+02:20:05,680 --> 02:20:13,760
+to explore relationship of two categorical variables contingency tables are used
+
+1327
+02:20:14,399 --> 02:20:19,120
+to summarize the relationship between several categorical variables
+
+1328
+02:20:22,719 --> 02:20:29,120
+this is an example i'm not going to go into more details then
+
+1329
+02:20:30,319 --> 02:20:37,680
+some proportions can be calculated from these tables in the frequency distribution table
+
+1330
+02:20:40,079 --> 02:20:45,840
+here for example proportion of people suffer from a heart attack in the best herbal group
+
+1331
+02:20:46,879 --> 02:20:58,399
+can be determined by this one which is uh 1.7 percent in terms of processes the second group is
+
+1332
+02:21:00,000 --> 02:21:03,920
+0.9 percent
+
+1333
+02:21:08,799 --> 02:21:14,559
+one way of measuring the strength of the relationship is to calculate the difference
+
+1334
+02:21:14,559 --> 02:21:24,399
+of proportions another common summary statistic for containing control proportion is the rapid
+
+1335
+02:21:24,399 --> 02:21:26,879
+precaution from body
+
+1336
+02:21:30,959 --> 02:21:35,920
+sample of can be used which is calculated by using these proportions
+
+1337
+02:21:40,239 --> 02:21:46,319
+in our example odds can be found for the first and second group
+
+1338
+02:21:50,239 --> 02:21:54,719
+sample odds ratio are used to compare these odds
+
+1339
+02:21:54,719 --> 02:21:56,719
+if odds are used
+
+1340
+02:21:56,719 --> 02:21:58,079
+if odds are used
+
+1341
+02:21:58,079 --> 02:21:59,680
+if odds are used
+
+1342
+02:21:59,680 --> 02:22:04,079
+odds ratio is one is no relationship between
+
+1343
+02:22:06,159 --> 02:22:08,559
+two groups one is so
+
+1344
+02:22:11,840 --> 02:22:15,600
+or away from one in case one relationship
+
+1345
+02:22:17,440 --> 02:22:20,479
+is should the odd ratio
+
+1346
+02:22:23,920 --> 02:22:24,420
+or
+
+1347
+02:22:29,680 --> 02:22:38,960
+Okay we can also explore the relationship between one numerical and catalytic variable
+
+1348
+02:22:38,960 --> 02:22:47,840
+we can go plot with the V-Globin box plots which is a good one
+
+1349
+02:22:47,840 --> 02:22:54,079
+so
+
+1350
+02:22:54,079 --> 02:22:57,760
+you can basically if there is a measure to measure the motion of a single particle
+
+1351
+02:22:57,760 --> 02:22:59,600
+itself as you can see here you can see that one is a DC-1- dreys 1938-14-207 just to indicate that these are the papieribos blocks you can use dot plots with V-Globin and box plots which is a good one also you can use dot plots with V-Globin and box plots if there is a measure of a profound proportion in the body so basically it can be 400.3 and so basically if there is a measure of a significant fraction between the two variables you can also apply to that.
+
+1352
+02:22:59,680 --> 02:23:08,680
+statistical or some sort of sample, we need to estimate some parameters of population.
+
+1353
+02:23:08,680 --> 02:23:18,680
+There is always some sort of uncertainty. Probability is used to represent uncertainty.
+
+1354
+02:23:18,680 --> 02:23:23,680
+Probability is a measure of uncertainty.
+
+1355
+02:23:23,680 --> 02:23:34,680
+I'll just scroll quite fast from here.
+
+1356
+02:23:34,680 --> 02:23:43,680
+We have several definitions here. For example, the phenomenon is called random if its outcome cannot be determined with pertinent inequality of fields.
+
+1357
+02:23:43,680 --> 02:23:50,680
+The collection of all possible outcomes. This is called the sample fields.
+
+1358
+02:23:50,680 --> 02:23:53,680
+Each possible outcome in the sample field.
+
+1359
+02:23:53,680 --> 02:24:03,680
+In this case, we found a probability one here, which represents how certain we are about the occurrence of corresponding outcome.
+
+1360
+02:24:03,680 --> 02:24:11,680
+For an outcome, we denote the probability of P, O, which lies between 2 and 1.
+
+1361
+02:24:11,680 --> 02:24:18,680
+The total probability of all outcomes in the sample space will be always 1.
+
+1362
+02:24:18,680 --> 02:24:21,680
+These are the
+
+1363
+02:24:21,680 --> 02:24:22,680
+the
+
+1364
+02:24:22,680 --> 02:24:23,680
+the
+
+1365
+02:24:23,680 --> 02:24:24,680
+the
+
+1366
+02:24:24,680 --> 02:24:25,680
+the
+
+1367
+02:24:25,680 --> 02:24:26,680
+the
+
+1368
+02:24:26,680 --> 02:24:27,680
+the
+
+1369
+02:24:27,680 --> 02:24:28,680
+the
+
+1370
+02:24:28,680 --> 02:24:29,680
+the
+
+1371
+02:24:29,680 --> 02:24:30,680
+the
+
+1372
+02:24:30,680 --> 02:24:31,680
+the
+
+1373
+02:24:31,680 --> 02:24:32,680
+the
+
+1374
+02:24:32,680 --> 02:24:33,680
+the
+
+1375
+02:24:33,680 --> 02:24:34,680
+the
+
+1376
+02:24:34,680 --> 02:24:35,680
+the
+
+1377
+02:24:35,680 --> 02:24:36,680
+the
+
+1378
+02:24:36,680 --> 02:24:37,680
+the
+
+1379
+02:24:37,680 --> 02:24:38,680
+the
+
+1380
+02:24:38,680 --> 02:24:39,680
+the
+
+1381
+02:24:39,680 --> 02:24:40,680
+the
+
+1382
+02:24:40,680 --> 02:24:41,680
+the
+
+1383
+02:24:41,680 --> 02:24:42,680
+the
+
+1384
+02:24:42,680 --> 02:24:43,680
+the
+
+1385
+02:24:43,680 --> 02:24:44,680
+the
+
+1386
+02:24:44,680 --> 02:24:45,680
+the
+
+1387
+02:24:45,680 --> 02:24:46,680
+the
+
+1388
+02:24:46,680 --> 02:24:47,680
+the
+
+1389
+02:24:47,680 --> 02:24:48,680
+the
+
+1390
+02:24:48,680 --> 02:24:49,680
+the
+
+1391
+02:24:49,680 --> 02:24:50,680
+the
+
+1392
+02:24:50,680 --> 02:24:51,680
+the
+
+1393
+02:24:51,680 --> 02:24:52,680
+the
+
+1394
+02:24:52,680 --> 02:24:53,680
+the
+
+1395
+02:24:53,680 --> 02:24:59,680
+that are in the sample spaces of nothing in these are the young
+
+1396
+02:25:00,000 --> 02:25:10,000
+fundamental probabilities. All these probabilities in 30 years.
+
+1397
+02:25:10,000 --> 02:25:25,000
+I just need to use the general intersection of the events.
+
+1398
+02:25:25,000 --> 02:25:30,000
+Joint probabilities, marginal probabilities.
+
+1399
+02:25:30,000 --> 02:25:37,000
+For any two events, the one in which we have touched.
+
+1400
+02:25:37,000 --> 02:25:40,000
+Joint probability.
+
+1401
+02:25:40,000 --> 02:25:43,000
+This is the current cycle.
+
+1402
+02:25:43,000 --> 02:25:45,000
+This joint for mutually exclusive.
+
+1403
+02:25:45,000 --> 02:25:48,000
+This state never took together.
+
+1404
+02:25:48,000 --> 02:25:51,000
+These are the fundamental probabilities.
+
+1405
+02:25:51,000 --> 02:25:55,000
+Conditional probabilities denoted by
+
+1406
+02:25:55,000 --> 02:26:00,000
+is
+
+1407
+02:26:00,000 --> 02:26:08,000
+which is extensively used in bioinformatics as well.
+
+1408
+02:26:08,000 --> 02:26:13,000
+According to bias program or bias rule for two events E1 and E2,
+
+1409
+02:26:13,000 --> 02:26:17,000
+the following equation shows the relationship between
+
+1410
+02:26:17,000 --> 02:26:22,000
+tolerances E3, E1, and tolerances of E1 and E2,
+
+1411
+02:26:22,000 --> 02:26:24,000
+events 1, E1, and E2.
+
+1412
+02:26:24,000 --> 02:26:25,000
+Generally,
+
+1413
+02:26:25,000 --> 02:26:32,000
+the general form of bias program.
+
+1414
+02:26:32,000 --> 02:26:35,000
+The random parameter can be observed repeatedly.
+
+1415
+02:26:35,000 --> 02:26:39,000
+This is known as trial.
+
+1416
+02:26:39,000 --> 02:26:41,000
+For such random parameter,
+
+1417
+02:26:41,000 --> 02:26:47,000
+the probability of E1 can be interpreted in terms of the relative frequency.
+
+1418
+02:26:47,000 --> 02:26:52,000
+This interpretation of probability requires two important assumptions.
+
+1419
+02:26:52,000 --> 02:26:53,000
+One,
+
+1420
+02:26:53,000 --> 02:26:54,000
+we assume that
+
+1421
+02:26:54,000 --> 02:26:58,000
+the probability of E1 does not change from one child to another.
+
+1422
+02:26:58,000 --> 02:26:59,000
+The second,
+
+1423
+02:26:59,000 --> 02:27:00,000
+we also assume that
+
+1424
+02:27:00,000 --> 02:27:07,000
+the outcome of one child does not affect the outcome of another child.
+
+1425
+02:27:07,000 --> 02:27:10,000
+Obviously, there are distribution.
+
+1426
+02:27:10,000 --> 02:27:14,000
+The first is Gaussian distribution.
+
+1427
+02:27:14,000 --> 02:27:20,000
+Here represents the model of the data set.
+
+1428
+02:27:20,000 --> 02:27:23,000
+This is the most common one.
+
+1429
+02:27:24,000 --> 02:27:25,000
+If we count the desen amperes,
+
+1430
+02:27:25,000 --> 02:27:26,000
+choose in percent of acting and then in constant function,
+
+1431
+02:27:26,000 --> 02:27:28,000
+we can get sum by 1,000 suddenly we should have me
+
+1432
+02:27:28,000 --> 02:27:29,000
+or you use it through may not,
+
+1433
+02:27:29,000 --> 02:27:32,000
+feedback is be made from that deviation.
+
+1434
+02:27:32,000 --> 02:27:35,000
+But when we use sample space,
+
+1435
+02:27:35,000 --> 02:27:43,940
+when representation
+
+1436
+02:27:43,940 --> 02:27:50,000
+,
+
+1437
+02:27:50,000 --> 02:27:51,000
+hey option for those things.
+
+1438
+02:27:51,000 --> 02:27:52,000
+It's assumed.
+
+1439
+02:27:52,000 --> 02:28:04,000
+The normal distribution is almost 60% of the day-to-day life between post-mortem, pharmacy, and so on.
+
+1440
+02:28:04,000 --> 02:28:10,000
+Oidron probability is another type of distribution.
+
+1441
+02:28:10,000 --> 02:28:23,000
+It can describe, among other things, the probability of radiation decay in cells flowing through a counter or the incidence of life patterns.
+
+1442
+02:28:23,000 --> 02:28:37,000
+The probability that a pure number of units decay in a field in a margin of 3 units and an average number of units gone is 1.
+
+1443
+02:28:37,000 --> 02:28:39,000
+This is an evident probability.
+
+1444
+02:28:39,000 --> 02:28:40,000
+Standard disease.
+
+1445
+02:28:40,000 --> 02:28:46,000
+The distribution of the poison probability can be determined by lubrication.
+
+1446
+02:28:46,000 --> 02:28:57,000
+A typical poison distribution for an NTSC can be given by P.
+
+1447
+02:28:57,000 --> 02:29:01,000
+Biometric estimation is another important subject.
+
+1448
+02:29:01,000 --> 02:29:05,000
+It is a specific data analysis.
+
+1449
+02:29:05,000 --> 02:29:09,000
+Basically, the objective of...
+
+1450
+02:29:09,000 --> 02:29:10,000
+...
+
+1451
+02:29:10,000 --> 02:29:11,000
+...
+
+1452
+02:29:11,000 --> 02:29:12,000
+...
+
+1453
+02:29:12,000 --> 02:29:13,000
+...
+
+1454
+02:29:13,000 --> 02:29:14,000
+...
+
+1455
+02:29:14,000 --> 02:29:15,000
+...
+
+1456
+02:29:15,000 --> 02:29:16,000
+...
+
+1457
+02:29:16,000 --> 02:29:17,000
+...
+
+1458
+02:29:17,000 --> 02:29:18,000
+...
+
+1459
+02:29:18,000 --> 02:29:19,000
+...
+
+1460
+02:29:19,000 --> 02:29:20,000
+...
+
+1461
+02:29:20,000 --> 02:29:21,000
+...
+
+1462
+02:29:21,000 --> 02:29:22,000
+...
+
+1463
+02:29:22,000 --> 02:29:23,000
+...
+
+1464
+02:29:23,000 --> 02:29:24,000
+...
+
+1465
+02:29:24,000 --> 02:29:25,000
+...
+
+1466
+02:29:25,000 --> 02:29:26,000
+...
+
+1467
+02:29:26,000 --> 02:29:27,000
+...
+
+1468
+02:29:27,000 --> 02:29:28,000
+...
+
+1469
+02:29:28,000 --> 02:29:29,000
+...
+
+1470
+02:29:29,000 --> 02:29:30,000
+...
+
+1471
+02:29:30,000 --> 02:29:31,000
+...
+
+1472
+02:29:31,000 --> 02:29:32,000
+...
+
+1473
+02:29:32,000 --> 02:29:33,000
+...
+
+1474
+02:29:33,000 --> 02:29:34,000
+...
+
+1475
+02:29:34,000 --> 02:29:35,000
+...
+
+1476
+02:29:35,000 --> 02:29:36,000
+...
+
+1477
+02:29:36,000 --> 02:29:37,000
+...
+
+1478
+02:29:37,000 --> 02:29:38,000
+...
+
+1479
+02:29:38,000 --> 02:29:39,000
+...
+
+1480
+02:29:39,000 --> 02:29:43,000
+We have already mentioned all this.
+
+1481
+02:29:43,000 --> 02:29:49,000
+Notice we are making inferences about parameters falling into one or two categories.
+
+1482
+02:29:49,000 --> 02:29:55,000
+Now we are talking about inferential statistics.
+
+1483
+02:29:55,000 --> 02:30:00,000
+And as you see, the new descriptive view
+
+1484
+02:30:00,000 --> 02:30:10,000
+parameters, you obtain descriptive statistics to apply or to infer something.
+
+1485
+02:30:10,000 --> 02:30:15,000
+Levels for making inferences about parameters fall into one or two categories that estimate
+
+1486
+02:30:15,000 --> 02:30:22,000
+the value of the population parameter of interest and test a hypothesis about the value of the
+
+1487
+02:30:22,000 --> 02:30:23,000
+parameter.
+
+1488
+02:30:23,000 --> 02:30:33,000
+That's important because we are never sure that what we have found is the real representation
+
+1489
+02:30:33,000 --> 02:30:35,000
+of the population.
+
+1490
+02:30:35,000 --> 02:30:43,000
+We have to test the hypothesis whether our model is correct or not.
+
+1491
+02:30:43,000 --> 02:30:49,000
+This is known as hypothesis testing.
+
+1492
+02:30:49,000 --> 02:30:53,000
+Therefore, the statistics, the analysis, invokes the hypothesis.
+
+1493
+02:30:53,000 --> 02:31:06,000
+Estimation refers to the process of guessing the unknown value of a parameter using observed
+
+1494
+02:31:06,000 --> 02:31:08,000
+data, using samples.
+
+1495
+02:31:08,000 --> 02:31:15,000
+For this, an estimator, which is basically a statistics view.
+
+1496
+02:31:15,000 --> 02:31:19,000
+A statistic is a function of observed data only.
+
+1497
+02:31:19,000 --> 02:31:23,000
+It is the redefinition of statistics in terms of data.
+
+1498
+02:31:23,000 --> 02:31:30,000
+Sometimes we only collect the single values of our estimate.
+
+1499
+02:31:30,000 --> 02:31:35,000
+This is called point estimation.
+
+1500
+02:31:35,000 --> 02:31:40,000
+Point estimates do not protect our unsure estimating the parameter.
+
+1501
+02:31:40,000 --> 02:31:47,000
+We always remain unsure regarding the single value of the parameter that we estimated
+
+1502
+02:31:47,000 --> 02:31:49,000
+using a sample of an issue.
+
+1503
+02:31:49,000 --> 02:31:52,000
+To address this issue, we can present our estimate as a data.
+
+1504
+02:31:52,000 --> 02:31:57,000
+present our estimate in front of a range of possible values.
+
+1505
+02:31:57,000 --> 02:32:02,000
+So that's got interval estimation.
+
+1506
+02:32:02,000 --> 02:32:07,000
+Then we test this hypothesis
+
+1507
+02:32:07,000 --> 02:32:12,000
+with interval. A hypothesis is a testable
+
+1508
+02:32:12,000 --> 02:32:17,000
+statement about relationship between two or more variables.
+
+1509
+02:32:17,000 --> 02:32:22,000
+This is a proposed explanation for some
+
+1510
+02:32:22,000 --> 02:32:27,000
+of the phenomena in a scientific experimental study
+
+1511
+02:32:27,000 --> 02:32:32,000
+of the hypothesis. The brief summation of researchers' prediction of this
+
+1512
+02:32:32,000 --> 02:32:37,000
+study's findings, which can be supported or not
+
+1513
+02:32:37,000 --> 02:32:42,000
+by the outcome. Anyway, this
+
+1514
+02:32:42,000 --> 02:32:47,000
+hypothesis testing is the main core of the scientific
+
+1515
+02:32:47,000 --> 02:32:52,000
+method. At that point, I need to
+
+1516
+02:32:52,000 --> 02:32:57,000
+skip a little bit. To evaluate
+
+1517
+02:32:57,000 --> 02:33:02,000
+hypotheses, we rely on estimators, data sampling distributions,
+
+1518
+02:33:02,000 --> 02:33:07,000
+and data-specific values from observed data.
+
+1519
+02:33:07,000 --> 02:33:12,000
+Basically to obtain these things, we use
+
+1520
+02:33:12,000 --> 02:33:17,000
+data resolution to
+
+1521
+02:33:17,000 --> 02:33:22,000
+find the respective statistics that are in danger.
+
+1522
+02:33:22,000 --> 02:33:27,000
+I just skipped this
+
+1523
+02:33:27,000 --> 02:33:32,000
+concept. We have the NUM hypothesis, which
+
+1524
+02:33:32,000 --> 02:33:37,000
+reflects the statistical of nothing called interest, and we have an
+
+1525
+02:33:37,000 --> 02:33:42,000
+alternative hypothesis. So we test the validity of this NUM and alternative
+
+1526
+02:33:42,000 --> 02:33:47,000
+hypothesis. If the evidence against H0 is
+
+1527
+02:33:47,000 --> 02:33:52,000
+known as null hypothesis, then we reject H0.
+
+1528
+02:33:52,000 --> 02:33:59,000
+If not, then we accept H0.
+
+1529
+02:33:59,000 --> 02:34:02,000
+Or we say that we don't have
+
+1530
+02:34:02,000 --> 02:34:06,000
+enough evidence to reject H0.
+
+1531
+02:34:06,000 --> 02:34:11,000
+In this respect, we use
+
+1532
+02:34:11,000 --> 02:34:16,000
+some sort of
+
+1533
+02:34:16,000 --> 02:34:23,000
+costings.
+
+1534
+02:34:23,000 --> 02:34:31,000
+Costings are just, for example,
+
+1535
+02:34:31,000 --> 02:34:36,000
+2-4-3-4-4-5-6-4-5. These are
+
+1536
+02:34:36,000 --> 02:34:41,000
+expensive when you
+
+1537
+02:34:41,000 --> 02:34:46,000
+derive the data analysis or data sampling results.
+
+1538
+02:34:46,000 --> 02:34:49,000
+If we must learn a new
+
+1539
+02:34:49,000 --> 02:34:53,000
+algorithm, you test for validity of your model.
+
+1540
+02:34:53,000 --> 02:34:56,000
+.
+
+1541
+02:34:56,000 --> 02:35:01,000
+.
+
+1542
+02:35:00,000 --> 02:35:04,239
+so i just skip this
+
+1543
+02:35:01,000 --> 02:35:06,000
+.
+
+1544
+02:35:06,000 --> 02:35:13,000
+.
+
+1545
+02:35:08,479 --> 02:35:13,520
+for further analysis sometimes to determine cause effect relationship
+
+1546
+02:35:15,120 --> 02:35:17,600
+regulation analysis is extensively used
+
+1547
+02:35:19,520 --> 02:35:25,760
+this is mainly used to model the relationship between a response variable and a set of
+
+1548
+02:35:25,760 --> 02:35:33,200
+explanatory variables this is not the similarity now
+
+1549
+02:35:35,600 --> 02:35:42,960
+effect response to extraordinary effect response relationship because it is regression analysis
+
+1550
+02:35:46,159 --> 02:35:51,920
+then the regression model provides the user in the function relationship between the response
+
+1551
+02:35:51,920 --> 02:35:55,600
+variable and explain three variables for example you have
+
+1552
+02:35:55,760 --> 02:36:05,520
+data set collected with some measurements using the data set you can create a regression
+
+1553
+02:36:05,520 --> 02:36:16,239
+model to estimate possible outcomes in the future for given input data so you can make this new for
+
+1554
+02:36:16,239 --> 02:36:25,600
+example you you have the gold prices for last uh three months you want to
+
+1555
+02:36:25,760 --> 02:36:34,479
+estimate possible gold price uh two months later you have a model estimation estimator
+
+1556
+02:36:35,360 --> 02:36:43,920
+which is basically you can be simple regression another regression another model based on the
+
+1557
+02:36:43,920 --> 02:36:53,280
+observed body and you can estimate the price of gold after several months later what will happen
+
+1558
+02:36:54,639 --> 02:36:55,200
+for this
+
+1559
+02:36:56,079 --> 02:36:59,440
+uh you have this just monoliths
+
+1560
+02:37:02,159 --> 02:37:08,000
+so in this respect the regression model allows the user to explore what happens to the response
+
+1561
+02:37:08,000 --> 02:37:15,840
+variable for despite changes in the connected variables so i just skipped it just mentioned to
+
+1562
+02:37:15,840 --> 02:37:19,120
+this cause effect relationship
+
+1563
+02:37:22,159 --> 02:37:25,520
+it has expensive applications
+
+1564
+02:37:26,719 --> 02:37:28,000
+by the way
+
+1565
+02:37:28,000 --> 02:37:31,440
+forecasting prediction
+
+1566
+02:37:35,760 --> 02:37:43,120
+and the simple linear regression can be done by his equation it always have an error term
+
+1567
+02:37:44,960 --> 02:37:52,479
+because it is based on punto values never get the exact values
+
+1568
+02:37:52,479 --> 02:38:07,479
+In this respect, it is known as supervised learnings in the context of machine learning.
+
+1569
+02:38:07,479 --> 02:38:16,479
+The linear regression models are used to treat the unknown findings of the response variables.
+
+1570
+02:38:16,479 --> 02:38:28,479
+In this model, the response variable has a central role. The model group is guided by explaining the variation of the response variable for each of its findings.
+
+1571
+02:38:28,479 --> 02:38:37,479
+Therefore, regression models are a good example of supervised learning.
+
+1572
+02:38:37,479 --> 02:38:41,479
+There are unsupervised learnings.
+
+1573
+02:38:41,479 --> 02:38:45,479
+Basically, clustering algorithms.
+
+1574
+02:38:45,479 --> 02:38:51,479
+Simply, we are a good example of unsupervised learnings.
+
+1575
+02:38:51,479 --> 02:39:05,479
+In clustering algorithms, basically, we try to identify subgroups within a population.
+
+1576
+02:39:05,479 --> 02:39:10,479
+For example, I mentioned when we were discussing distributions.
+
+1577
+02:39:10,479 --> 02:39:15,479
+If a distribution has a bimodal or a normal model distribution,
+
+1578
+02:39:15,479 --> 02:39:17,479
+it could be three models,
+
+1579
+02:39:17,479 --> 02:39:24,479
+we can use clustering algorithms to identify these subgroups.
+
+1580
+02:39:24,479 --> 02:39:35,479
+We have already used this clustering algorithm when we were discussing this pre-construction.
+
+1581
+02:39:40,479 --> 02:39:44,479
+In this respect, clustering algorithms are supposed to be methods
+
+1582
+02:39:44,479 --> 02:39:51,439
+methods that are found to devise the data into subgroups such that observations within the same group
+
+1583
+02:39:52,239 --> 02:39:59,680
+are more similar compared to the observations in different groups. For this we
+
+1584
+02:40:00,000 --> 02:40:07,760
+employ again some methods. Most of these only distance measure. The core concept in any
+
+1585
+02:40:07,760 --> 02:40:14,639
+cluster analysis is the notion of similarity and dissimilarity. And dissimilarity usually
+
+1586
+02:40:14,639 --> 02:40:23,840
+means measure to the distance. The square distance or absolute distance can be used.
+
+1587
+02:40:23,840 --> 02:40:28,319
+There are several type of differences. Probably we have covered this concept in
+
+1588
+02:40:28,319 --> 02:40:38,000
+some other courses as well. Be used when you are discussing phylogenetic reconstruction.
+
+1589
+02:40:38,959 --> 02:40:45,680
+How many distance for categorical variables and for numerical variables to have some other type
+
+1590
+02:40:45,680 --> 02:40:55,520
+of distances like Mahanadhi's crystal and Euclidean distance etc. etc.
+
+1591
+02:40:58,319 --> 02:41:04,879
+There are basically 10 years clustering.
+
+1592
+02:41:07,520 --> 02:41:13,119
+It is basically based on refining and refining descent weights in a group.
+
+1593
+02:41:15,840 --> 02:41:20,399
+I'm not getting to more details but this is very simple clustering algorithm and
+
+1594
+02:41:20,399 --> 02:41:25,680
+the other clustering algorithm is hierarchy which we covered in
+
+1595
+02:41:25,680 --> 02:41:38,319
+pre-construction algorithms. Agglomerative or hierarchical clustering is a flat clustering method.
+
+1596
+02:41:42,319 --> 02:41:47,280
+The result is a dendrogram which we use basically to describe this
+
+1597
+02:41:49,040 --> 02:41:52,000
+phylogenetic tree to build the dendrogram.
+
+1598
+02:41:55,680 --> 02:42:04,639
+There is a top-down or bottom-up approach in clustering.
+
+1599
+02:42:04,639 --> 02:42:17,840
+I think this is enough to cover the statistical data analysis which are extensively used in bioinformatics as well.
+
+1600
+02:42:17,840 --> 02:42:23,840
+Okay. Any questions? Quick questions?
+
+1601
+02:42:23,840 --> 02:42:24,880
+Any questions? Quick questions?
+
+1602
+02:42:24,880 --> 02:42:25,440
+Any questions? Quick questions?
+
+1603
+02:42:25,440 --> 02:42:28,640
+We have just a couple of minutes.
+
+1604
+02:42:31,680 --> 02:42:34,640
+Carlos, do you have any questions?
+
+1605
+02:42:44,640 --> 02:42:46,640
+Do you have any questions?
+
+1606
+02:42:46,640 --> 02:42:48,640
+Do you have any questions?
+
+1607
+02:42:48,639 --> 02:42:54,879
+.
+
+1608
+02:42:54,879 --> 02:43:04,359
+Now we have a heißt upgrade if you include the
+
+1609
+02:43:04,359 --> 02:43:06,579
+1918
+
+1610
+02:43:06,579 --> 02:43:08,979
+.
+
+1611
+02:43:08,979 --> 02:43:09,119
+Check your
+
+1612
+02:43:09,119 --> 02:43:09,840
+data.
+
+1613
+02:43:09,840 --> 02:43:11,500
+Search the
+
+1614
+02:43:11,500 --> 02:43:16,879
+以上
+
+1615
+02:43:16,879 --> 02:43:17,199
+surface.
+
+1616
+02:43:17,199 --> 02:43:17,559
+To storage.
+
+1617
+02:43:17,559 --> 02:43:17,819
+C go to search a row.
+
+1618
+02:43:17,819 --> 02:43:17,920
+Searching a row.
+
+1619
+02:43:17,920 --> 02:43:18,079
+Searching a row.
+
+1620
+02:43:18,079 --> 02:43:18,199
+So you might find a lot of expressions in this situation.
+
+1621
+02:43:18,199 --> 02:43:18,340
+Search a row.
+
+1622
+02:43:18,340 --> 02:43:18,599
+Search a row.
+
+1623
+02:43:18,639 --> 02:43:42,639
+The main focus here is the analysis of the data and the data itself, the analysis of the
+
+1624
+02:43:42,639 --> 02:43:43,639
+data.
+
+1625
+02:43:43,639 --> 02:44:02,639
+We do the analysis of the data so that it can be used to extract information from the data.
+
+1626
+02:44:02,639 --> 02:44:11,639
+If you have any questions, I will end this session here.
+
+1627
+02:44:12,639 --> 02:44:13,639
+Thank you, sir.
+
+1628
+02:44:13,639 --> 02:44:14,639
+See you in a week.
+
+1629
+02:44:14,639 --> 02:44:15,639
+You can leave.
+
+1630
+02:44:15,639 --> 02:44:16,639
+Thank you, sir.
+
+1631
+02:44:16,639 --> 02:44:17,639
+It was nice meeting you in a week.
+
+1632
+02:44:17,639 --> 02:44:18,639
+Thank you, sir.
+
+1633
+02:44:18,639 --> 02:44:19,639
+See you in a week.
+
+1634
+02:44:19,639 --> 02:44:20,639
+Thank you, sir.
+
+1635
+02:44:20,639 --> 02:44:23,639
+It was nice meeting you in a week.
+
