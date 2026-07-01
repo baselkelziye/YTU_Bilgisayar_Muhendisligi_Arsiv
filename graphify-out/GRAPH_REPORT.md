@@ -1,16 +1,16 @@
-# Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-06-29)
+# Graph Report - YTU_Bilgisayar_Muhendisligi_Arsiv  (2026-07-01)
 
 ## Corpus Check
-- 4015 files · ~14,661,417 words
+- 4016 files · ~14,661,671 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 29912 nodes · 41842 edges · 5128 communities (3436 shown, 1692 thin omitted)
+- 29917 nodes · 41846 edges · 5123 communities (3432 shown, 1691 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 2468 edges (avg confidence: 0.79)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8c6124b1`
+- Built from commit: `30011598`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -3781,13 +3781,11 @@
 - [[_COMMUNITY_Community 4823|Community 4823]]
 - [[_COMMUNITY_Community 4824|Community 4824]]
 - [[_COMMUNITY_Community 4825|Community 4825]]
-- [[_COMMUNITY_Community 4826|Community 4826]]
 - [[_COMMUNITY_Community 4828|Community 4828]]
 - [[_COMMUNITY_Community 4829|Community 4829]]
 - [[_COMMUNITY_Community 4830|Community 4830]]
 - [[_COMMUNITY_Community 4831|Community 4831]]
 - [[_COMMUNITY_Community 4832|Community 4832]]
-- [[_COMMUNITY_Community 4833|Community 4833]]
 - [[_COMMUNITY_Community 4834|Community 4834]]
 - [[_COMMUNITY_Community 4835|Community 4835]]
 - [[_COMMUNITY_Community 4836|Community 4836]]
@@ -4010,7 +4008,6 @@
 - [[_COMMUNITY_Community 5084|Community 5084]]
 - [[_COMMUNITY_Community 5085|Community 5085]]
 - [[_COMMUNITY_Community 5086|Community 5086]]
-- [[_COMMUNITY_Community 5087|Community 5087]]
 - [[_COMMUNITY_Community 5088|Community 5088]]
 - [[_COMMUNITY_Community 5089|Community 5089]]
 - [[_COMMUNITY_Community 5113|Community 5113]]
@@ -4050,19 +4047,19 @@
 - 1-file cycle: `Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py -> Lisansüstü/Veri Sıkıştırma/proje/2023/ahmet akib/main.py`
 - 1-file cycle: `readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py -> readme_olustur/readme_guncelleme_arayuzu_python/helpers/__init__.py`
 
-## Communities (5128 total, 1692 thin omitted)
+## Communities (5123 total, 1691 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.07
-Nodes (102): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi__uint32, load_jpeg_image() (+94 more)
+Cohesion: 0.06
+Nodes (145): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+137 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.22
 Nodes (30): main(), AyristiriciDurumu, agaciDegerlendir(), agaciSerbestBirak(), ayristiriciOlustur(), carpanAyristir(), choleskyYontemi(), dugumDegiskenOlustur() (+22 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.08
-Nodes (45): FILE, stbi_io_callbacks, STBIDEF, wchar_t, stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__do_zlib() (+37 more)
+Cohesion: 0.09
+Nodes (44): FILE, stbi_io_callbacks, STBIDEF, wchar_t, stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__do_zlib() (+36 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.07
@@ -4077,12 +4074,12 @@ Cohesion: 0.26
 Nodes (18): NODE, kruskal(), main(), printTree(), sort(), printTree(), edge_list, doThatTree() (+10 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.08
-Nodes (7): FXML, FXML, ResourceBundle, URL, AdminDashboardGUI, AdminStartGUI, Modality
+Cohesion: 0.05
+Nodes (11): FXML, ResourceBundle, URL, FXML, Image, FXML, ResourceBundle, URL (+3 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.05
-Nodes (142): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+134 more)
+Nodes (149): stbi__bmp_data, stbi__context, stbi__gif, stbi__png, stbi__pngchunk, stbi__result_info, stbi_uc, stbi__uint16 (+141 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.04
@@ -4102,7 +4099,7 @@ Nodes (70): _fnBrowserDetect(), $(), aa(), Ab(), B(), ba(), Bb(), C() (+62 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.06
-Nodes (30): Sürükle-bırak arayüzü için bilgi etiketi oluşturur, Sürüklenebilir liste öğesi, surukle_bilgi_etiketi(), SuruklemeListeItem, Repo Kullanımı Kavram Düzenleme Ekranı, kisaltMetin(), Metni belirtilen maksimum uzunlukta sınırlar ve gerekirse '...' ile kısaltır., AciklamaDialog (+22 more)
+Nodes (26): Sürüklenebilir liste öğesi, SuruklemeListeItem, Repo Kullanımı Kavram Düzenleme Ekranı, kisaltMetin(), Metni belirtilen maksimum uzunlukta sınırlar ve gerekirse '...' ile kısaltır., AciklamaDialog, KavramDetayDialog, KavramDialog (+18 more)
 
 ### Community 13 - "Community 13"
 Cohesion: 0.08
@@ -4117,16 +4114,16 @@ Cohesion: 0.05
 Nodes (40): BinaryTree, Initializes a new instance of the BinaryTree class.          Parameters:, Builds a Huffman tree based on the given frequency dictionary.          Args:, Finds a node in the binary tree based on the given bits.          Args:, Assigns codes to pixels in the binary tree.          Args:             node (Opt, Represents a binary tree used for data compression.      Attributes:         roo, Visualizes the binary tree using Graphviz.          Args:             filename (, check_image_equality() (+32 more)
 
 ### Community 16 - "Community 16"
-Cohesion: 0.06
-Nodes (44): Long, Modifying, Notification, Optional, Page, Pageable, Query, Transactional (+36 more)
+Cohesion: 0.20
+Nodes (17): Long, NotificationDTO, Object, ObjectMapper, Override, Page, String, Transactional (+9 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.09
-Nodes (15): ArrayList, Connection, Customer, Date, Dealer, Integer, Map, ResultSet (+7 more)
+Cohesion: 0.07
+Nodes (17): Connection, Date, Dealer, Integer, Map, ResultSet, String, Timestamp (+9 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.05
-Nodes (41): FXML, Override, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+33 more)
+Cohesion: 0.03
+Nodes (61): Override, ResourceBundle, String, URL, Override, ResourceBundle, String, URL (+53 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.02
@@ -4137,16 +4134,16 @@ Cohesion: 0.08
 Nodes (37): APIResponse, DeleteMapping, GetMapping, Integer, Page, PostMapping, ResponseEntity, String (+29 more)
 
 ### Community 21 - "Community 21"
-Cohesion: 0.08
-Nodes (12): CustomProgressDialog, CustomProgressDialog sınıfı, QProgressDialog sınıfının özelleştirilmiş bir versi, YukariAsagiDugmeDizilimi, QHBoxLayout, QLabel, QProgressDialog, DiffWindow, FileItemWidget (+4 more)
+Cohesion: 0.10
+Nodes (10): YukariAsagiDugmeDizilimi, QHBoxLayout, QListWidgetItem, QWidget, DiffWindow, FileItemWidget, getMaxSizeDikey(), getMaxSizeYatay() (+2 more)
 
 ### Community 22 - "Community 22"
 Cohesion: 0.27
 Nodes (4): Connection, Customer, String, OrderRequestPage
 
 ### Community 23 - "Community 23"
-Cohesion: 0.10
-Nodes (8): DersDuzenlemeWindow, DersEkleGuncelleWindow, KaynakVeOneriDuzenleyici, Son silinen dersi geri al, Değişiklik olup olmadığını kontrol et, Başlangıç değerlerini kaydet, Değişiklik olup olmadığını kontrol et, YeniElemanEklemeDialog
+Cohesion: 0.06
+Nodes (17): DersDuzenlemeWindow, DersEkleGuncelleWindow, KaynakVeOneriDuzenleyici, Son silinen dersi geri al, Değişiklik olup olmadığını kontrol et, Başlangıç değerlerini kaydet, Değişiklik olup olmadığını kontrol et, YeniElemanEklemeDialog (+9 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.09
@@ -4177,8 +4174,8 @@ Cohesion: 0.06
 Nodes (27): A(), bb(), db(), eb(), fa(), fb(), g(), ga() (+19 more)
 
 ### Community 32 - "Community 32"
-Cohesion: 0.07
-Nodes (18): Collection, Journal, Override, String, Subscriber, Subscription, Subscription, String (+10 more)
+Cohesion: 0.08
+Nodes (17): Override, String, Subscription, ArrayList, Override, String, Subscription, Journal (+9 more)
 
 ### Community 33 - "Community 33"
 Cohesion: 0.09
@@ -4197,8 +4194,8 @@ Cohesion: 0.07
 Nodes (27): 🔹 Ders 1, 🔹 Ders 10, 🔹 Ders 11, 🔹 Ders 11 Lab, 🔹 Ders 12, 🔹 Ders 12 Lab, 🔹 Ders 13, 🔹 Ders 13 Lab (+19 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.07
-Nodes (27): allowedAttribute(), applyStyle(), applyStyleOnLoad(), computeAutoPlacement(), _createClass(), _defineProperties(), _defineProperty(), destroy() (+19 more)
+Cohesion: 0.08
+Nodes (19): allowedAttribute(), attachToScrollParents(), _createClass(), _defineProperties(), _defineProperty(), destroy(), disableEventListeners(), getSpecialTransitionEndEvent() (+11 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.13
@@ -4210,7 +4207,7 @@ Nodes (17): Image, main(), sagaDondur(), sobel(), solaDondur(), spatial(), main(
 
 ### Community 40 - "Community 40"
 Cohesion: 0.05
-Nodes (44): acceptFriendRequest(), addFriendRequest(), APIResponse, cancelFriendRequest(), fetchFriendsByUUID(), fetchReceivedFriendRequests(), fetchSentFriendRequests(), fetchUserActivity() (+36 more)
+Nodes (37): acceptFriendRequest(), addFriendRequest(), APIResponse, cancelFriendRequest(), fetchFriendsByUUID(), fetchUserActivity(), fetchUserByUsername(), fetchUserMe() (+29 more)
 
 ### Community 41 - "Community 41"
 Cohesion: 0.13
@@ -4221,8 +4218,8 @@ Cohesion: 0.06
 Nodes (17): Override, String, String, Calisan, Calisan, String, Test, String (+9 more)
 
 ### Community 43 - "Community 43"
-Cohesion: 0.12
-Nodes (48): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__build_huffman(), load_jpeg_image() (+40 more)
+Cohesion: 0.14
+Nodes (43): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+35 more)
 
 ### Community 44 - "Community 44"
 Cohesion: 0.08
@@ -4233,12 +4230,12 @@ Cohesion: 0.10
 Nodes (36): attachToScrollParents(), computeAutoPlacement(), find(), findCommonOffsetParent(), findIndex(), getBordersSize(), getBoundaries(), getBoundingClientRect() (+28 more)
 
 ### Community 46 - "Community 46"
-Cohesion: 0.15
-Nodes (7): QPushButton, QT_FORWARD_DECLARE_CLASS(), App, main(), MenuButton, Ana uygulama giriş noktası., Ana menü için özelleştirilmiş buton sınıfı.     Hem veriyi tutar hem de görsell
+Cohesion: 0.12
+Nodes (9): class, QPushButton, QSqlTableModel(), QT_FORWARD_DECLARE_CLASS(), App, main(), MenuButton, Ana uygulama giriş noktası. (+1 more)
 
 ### Community 47 - "Community 47"
-Cohesion: 0.12
-Nodes (49): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+41 more)
+Cohesion: 0.14
+Nodes (44): stbi__huffman, stbi_inline, stbi__int16, stbi__jpeg, stbi__zbuf, stbi__zhuffman, stbi__addints_valid(), stbi__bit_reverse() (+36 more)
 
 ### Community 48 - "Community 48"
 Cohesion: 0.11
@@ -4253,8 +4250,8 @@ Cohesion: 0.15
 Nodes (44): clearScreen(), evaluate(), main(), Matrix, Node, Token, AugmentedMatrix, acsec() (+36 more)
 
 ### Community 51 - "Community 51"
-Cohesion: 0.05
-Nodes (27): Override, ResourceBundle, URL, Override, ResourceBundle, URL, Image, Object (+19 more)
+Cohesion: 0.04
+Nodes (33): CRS, HashMap, Long, Patient, Override, ResourceBundle, URL, Override (+25 more)
 
 ### Community 52 - "Community 52"
 Cohesion: 0.14
@@ -4273,8 +4270,8 @@ Cohesion: 0.04
 Nodes (23): Child, Clothing, String, Child, Toy, String, Electronics, String (+15 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.19
-Nodes (5): FXML, Override, ResourceBundle, URL, DoctorModeGUI
+Cohesion: 0.11
+Nodes (10): LocalDate, String, ResourceBundle, URL, FXML, Override, ResourceBundle, URL (+2 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.14
@@ -4298,15 +4295,15 @@ Nodes (40): Muhammed Faruk Çolak - Regex Ödevi, Maziyar Mazaheri - Regex Ödev
 
 ### Community 63 - "Community 63"
 Cohesion: 0.07
-Nodes (24): CustomProgressDialogWithCancel, CustomProgressDialog sınıfının kurucusudur.          Parameters:         title (, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ka, CustomProgressDialogWithCancel sınıfı, CustomProgressDialog sınıfının iptal buto, CustomProgressDialogWithCancel sınıfının kurucusudur.          Parameters:, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ol, Olay filtresini işleyen fonksiyon. Eğer iptal butonuna tıklanırsa, belirlenen fo, QDialog (+16 more)
+Nodes (21): CustomProgressDialog, CustomProgressDialogWithCancel, CustomProgressDialog sınıfının kurucusudur.          Parameters:         title (, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ka, CustomProgressDialogWithCancel sınıfı, CustomProgressDialog sınıfının iptal buto, CustomProgressDialogWithCancel sınıfının kurucusudur.          Parameters:, Kullanıcı arayüzünü başlatan yardımcı fonksiyon. Bu fonksiyon, iptal butonunu ol, Olay filtresini işleyen fonksiyon. Eğer iptal butonuna tıklanırsa, belirlenen fo (+13 more)
 
 ### Community 64 - "Community 64"
 Cohesion: 0.14
 Nodes (38): DoublyLinkedListNode_t, FastLinkedListNode_t, main(), DoublyLinkedListNode_t, DoublyLinkedListNode_t, FastLinkedListNode_t, createFastLinkedListLevels(), createFastLinkedListNode() (+30 more)
 
 ### Community 65 - "Community 65"
-Cohesion: 0.13
-Nodes (34): FILE, stbi_write_func, STBIWDEF, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp() (+26 more)
+Cohesion: 0.11
+Nodes (34): FILE, stbi_write_func, STBIWDEF, wchar_t, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file() (+26 more)
 
 ### Community 66 - "Community 66"
 Cohesion: 0.23
@@ -4321,7 +4318,7 @@ Cohesion: 0.15
 Nodes (20): Boolean, GenreRepository, Integer, Long, Movie, MovieCommentDTO, MovieCommentMapper, MovieFrontDTO (+12 more)
 
 ### Community 69 - "Community 69"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (6): Hoca Ekle Güncelle Örnek, HocaDuzenlemeWindow, HocaEkleGuncelleWindow, Son silinen hocayı geri al, Başlangıç değerlerini kaydet, Değişiklik olup olmadığını kontrol et
 
 ### Community 70 - "Community 70"
@@ -4337,8 +4334,8 @@ Cohesion: 0.07
 Nodes (14): String, Book, Override, String, Override, String, Book, Override (+6 more)
 
 ### Community 73 - "Community 73"
-Cohesion: 0.14
-Nodes (9): FXML, Override, ResourceBundle, URL, ActionEvent, FXML, SelectDoctorGUI, DataLoadGUI (+1 more)
+Cohesion: 0.12
+Nodes (10): FXML, Override, ResourceBundle, URL, String, ActionEvent, FXML, SelectDoctorGUI (+2 more)
 
 ### Community 74 - "Community 74"
 Cohesion: 0.11
@@ -4353,16 +4350,16 @@ Cohesion: 0.15
 Nodes (24): Movie, MovieComment, Page, User, UserActivityDTO, Movie, MovieComment, MovieCommentMapper (+16 more)
 
 ### Community 77 - "Community 77"
-Cohesion: 0.07
-Nodes (12): Override, String, Individual, TestCorparation, TestDateInfo, TestDistributor, TestIndividual, TestJournal (+4 more)
+Cohesion: 0.06
+Nodes (11): Override, String, Individual, TestCorparation, TestDateInfo, TestIndividual, TestJournal, TestPaymentInfo (+3 more)
 
 ### Community 79 - "Community 79"
 Cohesion: 0.06
 Nodes (13): String, User, String, User, Override, String, User, String (+5 more)
 
 ### Community 80 - "Community 80"
-Cohesion: 0.06
-Nodes (82): FILE, stbi_io_callbacks, stbi_uc, stbi__uint16, STBIDEF, resample_row_1(), stbi__blinn_8x8(), stbi__clamp() (+74 more)
+Cohesion: 0.09
+Nodes (45): FILE, stbi_io_callbacks, STBIDEF, wchar_t, stbi_convert_iphone_png_to_rgb(), stbi_convert_iphone_png_to_rgb_thread(), stbi_convert_wchar_to_utf8(), stbi__do_zlib() (+37 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -4377,8 +4374,8 @@ Cohesion: 0.15
 Nodes (33): main(), Tree, chdir(), checkAllocation(), count(), createDirectory(), createTree(), dir() (+25 more)
 
 ### Community 84 - "Community 84"
-Cohesion: 0.09
-Nodes (14): BigDecimal, Override, String, ArrayList, BigDecimal, Connection, Date, Dealer (+6 more)
+Cohesion: 0.14
+Nodes (10): ArrayList, BigDecimal, Connection, Date, Dealer, ResultSet, String, Vehicle (+2 more)
 
 ### Community 85 - "Community 85"
 Cohesion: 0.12
@@ -4409,8 +4406,8 @@ Cohesion: 0.07
 Nodes (31): Ahmet Elbir, Ahmet Hoca, Banu Diri (BD), Bilgisayar Projesi, Bitirme Çalışması, BLM2011 Yapısal Programlama, Doğrusal Denklem Takımlarının Çözümü, Doğrusal Olmayan Denklemlerin Çözümü (+23 more)
 
 ### Community 93 - "Community 93"
-Cohesion: 0.12
-Nodes (11): Sürükle-bırak ile öğe sıralaması yapılabilen liste widget'ı, Öğe bırakıldığında sıralama değişikliği sinyali gönder, SuruklemeListe, QDropEvent, GirisEkleGuncelleWindow, IcindekilerDuzenleWindow, Son silinen içindekileri geri al, Sürükle-bırak listesinde çift tıklanan öğeyi düzenle (+3 more)
+Cohesion: 0.10
+Nodes (14): Sürükle-bırak arayüzü için bilgi etiketi oluşturur, Sürükle-bırak ile öğe sıralaması yapılabilen liste widget'ı, Öğe bırakıldığında sıralama değişikliği sinyali gönder, surukle_bilgi_etiketi(), SuruklemeListe, QDropEvent, QLabel, GirisEkleGuncelleWindow (+6 more)
 
 ### Community 94 - "Community 94"
 Cohesion: 0.06
@@ -4429,8 +4426,8 @@ Cohesion: 0.09
 Nodes (21): CSVInterviewSource, CSVToMarkdownConverter, FilenameSanitizer, FileWriter, main(), MarkdownGenerator, OutputPathBuilder, Path (+13 more)
 
 ### Community 98 - "Community 98"
-Cohesion: 0.14
-Nodes (7): DonemDuzenlemeWindow, DonemEkleGuncelleWindow, Son silinen dönemi geri al, Başlangıç değerlerini kaydet, Mevcut tavsiyeleri al, Değişiklik olup olmadığını kontrol et, topluWidgetBul()
+Cohesion: 0.10
+Nodes (16): DonemDuzenlemeWindow, DonemEkleGuncelleWindow, Son silinen dönemi geri al, Başlangıç değerlerini kaydet, Mevcut tavsiyeleri al, Değişiklik olup olmadığını kontrol et, topluWidgetBul(), apply_minimum_size() (+8 more)
 
 ### Community 99 - "Community 99"
 Cohesion: 0.08
@@ -4469,8 +4466,8 @@ Cohesion: 0.13
 Nodes (21): generate_markdown_report(), generate_results_table(), get_results_dir(), plot_comparison_bar_chart(), plot_confusion_matrix(), Report Generator Module ======================= Bu modül, sonuç raporları ve gör, Detaylı Markdown raporu oluştur.          Args:         results_dict: Sonuçlar d, Results klasörünün yolunu döndür ve gerekirse oluştur.          Returns: (+13 more)
 
 ### Community 109 - "Community 109"
-Cohesion: 0.13
-Nodes (33): FILE, stbi_write_func, STBIWDEF, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file(), stbi_write_bmp() (+25 more)
+Cohesion: 0.11
+Nodes (35): FILE, stbi_write_func, STBIWDEF, wchar_t, stbi__end_write_file(), stbi_flip_vertically_on_write(), stbi__start_write_callbacks(), stbi__start_write_file() (+27 more)
 
 ### Community 110 - "Community 110"
 Cohesion: 0.08
@@ -4517,7 +4514,7 @@ Cohesion: 0.11
 Nodes (25): CUSTOMER, main(), readFromFile(), Eğitim ve Doğrulama Kayıp/Başarım Grafiği, Ödev 1 README, _get_class_indices(), load_and_split_data(), _process_class_splits() (+17 more)
 
 ### Community 122 - "Community 122"
-Cohesion: 0.09
+Cohesion: 0.11
 Nodes (9): Override, String, Override, String, Person, DateInfo, PaymentInfo, Subscriber (+1 more)
 
 ### Community 123 - "Community 123"
@@ -4525,8 +4522,8 @@ Cohesion: 0.06
 Nodes (16): Override, String, Override, String, Override, String, String, String (+8 more)
 
 ### Community 124 - "Community 124"
-Cohesion: 0.10
-Nodes (14): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+6 more)
+Cohesion: 0.05
+Nodes (24): ArrayList, Doctor, HashMap, Hospital, Integer, LocalDate, Long, Patient (+16 more)
 
 ### Community 125 - "Community 125"
 Cohesion: 0.20
@@ -4562,7 +4559,7 @@ Nodes (32): conv_backward_im2col(), conv_forward_im2col(), max_pool_backward_fas
 
 ### Community 133 - "Community 133"
 Cohesion: 0.12
-Nodes (8): DosyaCakismaDialog, KonfigurasyonDialog, Kullanıcı seçimini kaydet ve diyaloğu kapat., Diyaloğu göster ve kullanıcı seçimini döndür., Hedef dizinde aynı isimde dosya varsa kullanıcıya seçenek sunar.         SRP: Ko, SRP: Yedek dosya adı oluşturma sorumluluğu., SOLID SRP: Dosya çakışması durumunda kullanıcı seçimi almaktan sorumlu.     Kull, elideText()
+Nodes (7): DosyaCakismaDialog, KonfigurasyonDialog, Kullanıcı seçimini kaydet ve diyaloğu kapat., Diyaloğu göster ve kullanıcı seçimini döndür., Hedef dizinde aynı isimde dosya varsa kullanıcıya seçenek sunar.         SRP: Ko, SRP: Yedek dosya adı oluşturma sorumluluğu., SOLID SRP: Dosya çakışması durumunda kullanıcı seçimi almaktan sorumlu.     Kull
 
 ### Community 134 - "Community 134"
 Cohesion: 0.20
@@ -4593,8 +4590,8 @@ Cohesion: 0.22
 Nodes (14): csv_kontrol_et(), guncelle_ders_yildizlari(), guncelle_ogrenci_gorusleri(), main(), Ders içeriklerini Google Form verilerinden güncelleyen ana fonksiyon.     Bu fo, yillaraGoreYildizSayisiDondur(), guncelle_ogrenci_gorusleri(), hoca_adi_temizle() (+6 more)
 
 ### Community 141 - "Community 141"
-Cohesion: 0.14
-Nodes (28): attachToScrollParents(), computeStyle(), findCommonOffsetParent(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent() (+20 more)
+Cohesion: 0.16
+Nodes (26): computeStyle(), findCommonOffsetParent(), getBordersSize(), getBoundaries(), getBoundingClientRect(), getClientRect(), getFixedPositionOffsetParent(), getOffsetParent() (+18 more)
 
 ### Community 142 - "Community 142"
 Cohesion: 0.22
@@ -4621,8 +4618,8 @@ Cohesion: 0.04
 Nodes (47): Alt Seviye Programlama Ders Kayıtları & Çalışma Özetleri, Ders 10: Alt programlar (Procedures) ve modüler programlama, Ders 11: Alt programlara parametre aktarma yöntemleri, Ders 12: Kesmeler (Interrupts) ve Kesme Vektör Tablosu (IVT), Ders 13: Donanımsal kesmelerin asenkron yapısı, Ders 14 (1): Harici modüller (External Modules) ve Linking, Ders 14: Assembly dilinin yüksek seviyeli programlama dilleri (C/C++) ile birlikte kullanımı, Ders 14 (Lab): Linux ortamında C programından assembly yordamı çağırma (+39 more)
 
 ### Community 148 - "Community 148"
-Cohesion: 0.08
-Nodes (14): Yazarın Notları Ekranı, Undo Manager - Silme işlemlerini geri alma yöneticisi  Bu modül, silinen öğeleri, Her pencere için silme işlemlerini geri alma yöneticisi, Args:             max_undo_count: Maksimum geri alma sayısı, Silinen öğeyi kaydet                  Args:             index: Öğenin silindiği, Son silinen öğeyi al                  Returns:             tuple: (index, item_d, Geri alınacak öğe var mı?                  Returns:             bool: Geri alına, Undo geçmişini temizle (+6 more)
+Cohesion: 0.16
+Nodes (5): Yazarın Notları Ekranı, NotDuzenleWindow, Son silinen notu geri al, Değişiklik olup olmadığını kontrol et, YazarinNotlariWindow
 
 ### Community 149 - "Community 149"
 Cohesion: 0.17
@@ -4770,7 +4767,7 @@ Nodes (20): cellRange(), clear(), disableMouseSelection(), enableMouseSelection(
 
 ### Community 187 - "Community 187"
 Cohesion: 0.05
-Nodes (40): String, String, String, String, String, Gui, String, String (+32 more)
+Nodes (38): String, String, String, String, String, Gui, String, String (+30 more)
 
 ### Community 188 - "Community 188"
 Cohesion: 0.26
@@ -4885,8 +4882,8 @@ Cohesion: 0.24
 Nodes (7): Boolean, Long, Page, PrivateMessageDTO, String, UUID, UserMessageService
 
 ### Community 216 - "Community 216"
-Cohesion: 0.07
-Nodes (27): SearchCategory, SearchResponse, searchUsersMovies(), SpringPage, ChatSingle(), ChatSingleProps, Message, ProfileCardSlider() (+19 more)
+Cohesion: 0.09
+Nodes (21): SearchCategory, SearchResponse, searchUsersMovies(), SpringPage, ProfileCardSlider(), ProfileCardSliderProps, ProfileListFriendsProps, Props (+13 more)
 
 ### Community 217 - "Community 217"
 Cohesion: 0.18
@@ -4941,8 +4938,8 @@ Cohesion: 0.25
 Nodes (16): bfs(), calculate_node_count(), create_node(), delete_node_from_graph(), dequeue(), eliminate_nodes(), enqueue(), front_queue() (+8 more)
 
 ### Community 230 - "Community 230"
-Cohesion: 0.18
-Nodes (7): QListWidget, QListWidgetItem, QMainWindow, Chatbot GUI README, ChatbotGUI, main(), preprocess_text()
+Cohesion: 0.20
+Nodes (6): QListWidget, QMainWindow, Chatbot GUI README, ChatbotGUI, main(), preprocess_text()
 
 ### Community 231 - "Community 231"
 Cohesion: 0.09
@@ -4973,8 +4970,8 @@ Cohesion: 0.08
 Nodes (24): 📘 Davranış Bilimi, 📘 Davranışsal Açıdan Kurumsal İtibar, 📘 Ekonomi Politikaları, 📘 Felsefeye Giriş, 📘 Finansal ve Maliyet Muhasebesi, 📘 Girişimcilik, 📘 Hukukun Genel Kavramları, 📘 İnsan Kaynakları Yönetimi (İşletme) (+16 more)
 
 ### Community 238 - "Community 238"
-Cohesion: 0.11
-Nodes (13): Date, Doctor, Patient, Doctor, Hospital, LocalDate, Object, Override (+5 more)
+Cohesion: 0.33
+Nodes (4): Date, Doctor, Patient, Randezvous
 
 ### Community 239 - "Community 239"
 Cohesion: 0.21
@@ -5053,8 +5050,8 @@ Cohesion: 0.18
 Nodes (7): Integer, Override, String, Mage, Team, Rogue, Warrior
 
 ### Community 258 - "Community 258"
-Cohesion: 0.10
-Nodes (14): CRS, Doctor, HospitalMenu, Scanner, Section, SectionMenu, CRS, Hospital (+6 more)
+Cohesion: 0.05
+Nodes (32): City, CRS, HashMap, Hospital, Integer, String, CRS, Doctor (+24 more)
 
 ### Community 259 - "Community 259"
 Cohesion: 0.13
@@ -5229,7 +5226,7 @@ Cohesion: 0.07
 Nodes (28): 📅 3. Sınıf Bahar, 📘 Bilgisayar Projesi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri (+20 more)
 
 ### Community 304 - "Community 304"
-Cohesion: 0.11
+Cohesion: 0.12
 Nodes (15): QThread, clear_progress_callback(), Thread'den progress dialog'a mesaj göndermek için callback ayarla., Durdurma isteği gönder., request_stop(), set_progress_callback(), CMDScriptRunnerThread, enqueue_output() (+7 more)
 
 ### Community 305 - "Community 305"
@@ -5369,8 +5366,8 @@ Cohesion: 0.11
 Nodes (18): Ali Can Karaca, News Articles Dataset Backup, Business News Text, Conda Environment Configuration, Bir Duygu Analiz Yöntemi Olarak Metinden Emoji Tahmini, 2022-2023 Güz Dönemi, Proje Bilgileri, Projenin Konusu (+10 more)
 
 ### Community 341 - "Community 341"
-Cohesion: 0.13
-Nodes (17): class, QSqlTableModel(), QWidget, Geçici bildirim (Toast Notification) modülü. Kullanıcıya kısa süreli mesajlar gö, Geçici bildirim widget'ı - belirli süre sonra otomatik kapanır, Başarı bildirimi göster, Hata bildirimi göster, Uyarı bildirimi göster (+9 more)
+Cohesion: 0.11
+Nodes (18): Override, ResourceBundle, URL, AddDoctorGUI, Geçici bildirim (Toast Notification) modülü. Kullanıcıya kısa süreli mesajlar gö, Geçici bildirim widget'ı - belirli süre sonra otomatik kapanır, Başarı bildirimi göster, Hata bildirimi göster (+10 more)
 
 ### Community 342 - "Community 342"
 Cohesion: 0.14
@@ -5521,8 +5518,8 @@ Cohesion: 0.06
 Nodes (30): 1. Week - 2 October 2023 Monday, Adaptive Compression, Asymetric Compression, Bits per Chars, Bits per Pixels, Codec, Compressor / Encoder / Kodlayıcı, Corpus (+22 more)
 
 ### Community 384 - "Community 384"
-Cohesion: 0.15
-Nodes (13): ACK, EU, FÇ, Bilgisayar Donanımı Ders Bilgileri (Eski), 📚 Bilgisayar Organizasyonu, 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri (+5 more)
+Cohesion: 0.08
+Nodes (25): ACK, EU, FÇ, Bilgisayar Donanımı Ders Bilgileri (Eski), Bilgisayar Organizasyonu, Bilgisayar Organizasyonu Notları, Bilgisayar Organizasyonu Örnek Soru, 📚 Bilgisayar Organizasyonu (+17 more)
 
 ### Community 385 - "Community 385"
 Cohesion: 0.15
@@ -5553,8 +5550,8 @@ Cohesion: 0.17
 Nodes (11): cikmislar, ders_oylama, ders_oylama_csv, ders_yorumlama, ders_yorumlama_csv, dokumanlar_repo_yolu, github_url, hoca_oylama (+3 more)
 
 ### Community 392 - "Community 392"
-Cohesion: 0.08
-Nodes (21): Connection, Dealer, Connection, Warehouse, CreateDirectoryDialog, RemoveDirectoryDialog, TableDialog, WriteDialog (+13 more)
+Cohesion: 0.06
+Nodes (30): String, Gui, String, Connection, Dealer, CreateDirectoryDialog, ReadDialog, RemoveDialog (+22 more)
 
 ### Community 393 - "Community 393"
 Cohesion: 0.24
@@ -5649,8 +5646,8 @@ Cohesion: 0.12
 Nodes (15): https://drive.google.com/drive/folders/14aTU-uYJeEZmkksY3TmzemLKRUH0mV8R?usp=drive_link, durum, ts, https://prezi.com/view/ubwyOeMzEBvpkb9p0lc8/, durum, ts, https://stdyildizedu-my.sharepoint.com/:f:/g/personal/kayra_bulut_std_yildiz_edu_tr/Eu0tAIodts9EtzdvOR6E5aQBt-Y6v3_8ABAa9gf0Y7tadQ, durum (+7 more)
 
 ### Community 417 - "Community 417"
-Cohesion: 0.18
-Nodes (26): main(), MainMenu(), power(), print_matrix(), func, Gauss-Seidal, main(), Bisection() (+18 more)
+Cohesion: 0.19
+Nodes (27): main(), MainMenu(), power(), print_matrix(), func, Gauss-Seidal, main(), Bisection() (+19 more)
 
 ### Community 418 - "Community 418"
 Cohesion: 0.07
@@ -5801,8 +5798,8 @@ Cohesion: 0.42
 Nodes (4): Optional, String, PendingUserRepository, PendingUser
 
 ### Community 461 - "Community 461"
-Cohesion: 0.06
-Nodes (26): BigDecimal, Connection, String, Warehouse, ArrayList, Connection, Dealer, String (+18 more)
+Cohesion: 0.22
+Nodes (8): ArrayList, Connection, Dealer, String, Vehicle, VehicleStock, JSpinner, PullCarFromStockPage
 
 ### Community 462 - "Community 462"
 Cohesion: 0.29
@@ -5993,8 +5990,8 @@ Cohesion: 0.27
 Nodes (3): Override, String, Urun
 
 ### Community 513 - "Community 513"
-Cohesion: 0.24
-Nodes (5): Override, ResourceBundle, String, URL, DeleteDoctorGUI
+Cohesion: 0.15
+Nodes (6): Collection, Journal, Subscriber, String, Main, TestDistributor
 
 ### Community 514 - "Community 514"
 Cohesion: 0.14
@@ -6429,8 +6426,8 @@ Cohesion: 0.46
 Nodes (7): FILE, main(), initialize_output(), print_matrix(), read_kernel(), read_matrix(), write_output()
 
 ### Community 639 - "Community 639"
-Cohesion: 0.15
-Nodes (9): CRS, HashMap, Long, Patient, Override, ResourceBundle, URL, PatientManager (+1 more)
+Cohesion: 0.14
+Nodes (8): ChatSingle(), ChatSingleProps, Message, getMessagesWithUser(), sendMessageToUser(), UserMessage, usernameToSlug(), userProfilePath()
 
 ### Community 640 - "Community 640"
 Cohesion: 0.36
@@ -6445,8 +6442,8 @@ Cohesion: 0.08
 Nodes (24): 🎯 En Önemli Özellikler, 🔬 Feature Selection Genel Analiz Raporu, Filtreleme Yöntemi (Pearson Korelasyonu), Filtreleme Yöntemi (Pearson Korelasyonu), Genel Değerlendirme, Gömülü Yöntem (Random Forest), Gömülü Yöntem (Random Forest), İki Yöntemde Ortak Bulunan (Yüksek Güvenilirlik) (+16 more)
 
 ### Community 643 - "Community 643"
-Cohesion: 0.09
-Nodes (11): adminDeleteUserByUuid(), adminUpdateUserByUuid(), SearchCategory, SearchResponse, searchUsersMovies(), Pageable, PaginatedResponse, Sort (+3 more)
+Cohesion: 0.14
+Nodes (9): adminDeleteUserByUuid(), adminUpdateUserByUuid(), SearchCategory, SearchResponse, searchUsersMovies(), Pageable, PaginatedResponse, Sort (+1 more)
 
 ### Community 644 - "Community 644"
 Cohesion: 0.25
@@ -6457,8 +6454,8 @@ Cohesion: 0.25
 Nodes (4): AfterAll, BeforeAll, Test, testDealerRequestApproval
 
 ### Community 646 - "Community 646"
-Cohesion: 0.26
-Nodes (21): main(), Numerical_Differentiation(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination(), gaussSeidel() (+13 more)
+Cohesion: 0.25
+Nodes (20): main(), bisection(), calculateCombination(), calculateEquationValue(), determineRange(), gaussElimination(), gaussSeidel(), gregoryNewton() (+12 more)
 
 ### Community 647 - "Community 647"
 Cohesion: 0.20
@@ -6541,8 +6538,8 @@ Cohesion: 0.09
 Nodes (22): 3. Hafta - 21 Ekim 2021 Perşembe, Aggregate Functions, Aggregate Functions - GROUP BY, Aggregate Functions - HAVING Clause, ALTER TABLE, Basic Query Structure, CREATE TABLE Construct, DELETE (+14 more)
 
 ### Community 668 - "Community 668"
-Cohesion: 0.10
-Nodes (20): 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 📘 Alt Seviye Programlama, 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Ağ Teknolojileri, 📘 Bilgisayar Donanımı (+12 more)
+Cohesion: 0.08
+Nodes (25): 🗓 1. Yıl - Bahar, 🗓 2. Yıl - Bahar, 🗓 2. Yıl - Güz, 🗓 4. Yıl - Bahar, 📘 Atatürk İlkeleri ve İnkılâp Tarihi 2, 📘 Ayrık Matematik, 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler, 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler (+17 more)
 
 ### Community 671 - "Community 671"
 Cohesion: 0.25
@@ -6601,12 +6598,12 @@ Cohesion: 0.20
 Nodes (9): 2023-2024 Güz Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Lab Bilgileri, Lab Notları ve Ortalamalar, Lab Tanımı, Labda Neler Yapıldı, Not Dağılımı (+1 more)
 
 ### Community 686 - "Community 686"
-Cohesion: 0.27
-Nodes (5): Override, ResourceBundle, String, URL, AddSectionGUI
+Cohesion: 0.23
+Nodes (12): Long, Modifying, Optional, Query, Session, Transactional, UUID, Transactions (+4 more)
 
 ### Community 687 - "Community 687"
-Cohesion: 0.27
-Nodes (5): Override, ResourceBundle, String, URL, DeleteSectionGUI
+Cohesion: 0.23
+Nodes (7): ArrayList, Connection, String, Vehicle, VehicleStock, Warehouse, UpdateStockPage
 
 ### Community 688 - "Community 688"
 Cohesion: 0.37
@@ -6701,8 +6698,8 @@ Cohesion: 0.09
 Nodes (21): 1. Hafta - 9 Kasım 2021 Salı, 1. Hello World, 2. Info Echo, 3. Echo Tipleri, 4. Değişken Tanımlama, 5. Aritmetik İşlemler, 6. Veri Girişi, 7. Eşleştirmeler (+13 more)
 
 ### Community 716 - "Community 716"
-Cohesion: 0.14
-Nodes (21): __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_Init(), __Pyx_CyFunction_traverse(), __Pyx_FetchCommonType() (+13 more)
+Cohesion: 0.24
+Nodes (15): __Pyx_BufFmt_CheckString(), __Pyx_BufFmt_DescribeTypeChar(), __Pyx_BufFmt_ExpectNumber(), __pyx_buffmt_parse_array(), __Pyx_BufFmt_ParseNumber(), __Pyx_BufFmt_ProcessTypeChunk(), __Pyx_BufFmt_RaiseExpected(), __Pyx_BufFmt_RaiseUnexpectedChar() (+7 more)
 
 ### Community 717 - "Community 717"
 Cohesion: 0.29
@@ -6981,8 +6978,8 @@ Cohesion: 0.33
 Nodes (3): Override, String, Item
 
 ### Community 790 - "Community 790"
-Cohesion: 0.28
-Nodes (4): Override, ResourceBundle, URL, AddDoctorGUI
+Cohesion: 0.30
+Nodes (9): Long, Modifying, Notification, Optional, Page, Pageable, Query, Transactional (+1 more)
 
 ### Community 791 - "Community 791"
 Cohesion: 0.47
@@ -7017,8 +7014,8 @@ Cohesion: 0.67
 Nodes (5): main(), swap(), totalResult(), totalResultBruteForce(), VAR
 
 ### Community 799 - "Community 799"
-Cohesion: 0.09
-Nodes (15): Connection, Customer, String, Connection, String, Connection, String, AfterEach (+7 more)
+Cohesion: 0.12
+Nodes (11): Connection, Customer, String, AfterEach, BeforeEach, Test, AfterAll, Test (+3 more)
 
 ### Community 800 - "Community 800"
 Cohesion: 0.10
@@ -7349,8 +7346,8 @@ Cohesion: 0.47
 Nodes (4): namespace, activateBranch(), deactivateBranch(), LanguageSchool()
 
 ### Community 906 - "Community 906"
-Cohesion: 0.09
-Nodes (10): String, Override, String, Timestamp, AfterAll, BeforeAll, Test, Customer (+2 more)
+Cohesion: 0.11
+Nodes (7): String, Override, String, Timestamp, BeforeAll, Customer, UserUtil
 
 ### Community 908 - "Community 908"
 Cohesion: 0.40
@@ -7693,12 +7690,12 @@ Cohesion: 0.35
 Nodes (11): main(), addLast(), BelongedFiles(), delete_file(), delete_node(), deleteNodeLinkedList(), dosya_ekle(), findMin() (+3 more)
 
 ### Community 1012 - "Community 1012"
-Cohesion: 0.17
-Nodes (12): Bilgisayar Organizasyonu, Bilgisayar Organizasyonu Notları, Bilgisayar Organizasyonu Örnek Soru, CPU Cache and TLB Details Table, Esma Nur Çilekaya Course Notes Metadata, Göksel Biricik, Mert Guler Odev 3 README, Mert Guler Odev 3 Sonuc (+4 more)
+Cohesion: 0.21
+Nodes (6): AfterAll, BeforeAll, BeforeEach, String, Test, testAddCarToStock
 
 ### Community 1013 - "Community 1013"
-Cohesion: 0.22
-Nodes (4): ArrayList, Override, String, Journal
+Cohesion: 0.21
+Nodes (9): fetchReceivedFriendRequests(), fetchSentFriendRequests(), AuthContext, AuthContextType, AuthProvider(), AuthProviderProps, clearUserFromStorage(), getUserFromStorage() (+1 more)
 
 ### Community 1014 - "Community 1014"
 Cohesion: 0.31
@@ -7709,8 +7706,8 @@ Cohesion: 0.39
 Nodes (4): Connection, Dealer, JButton, DealerOrderApprovalPage
 
 ### Community 1016 - "Community 1016"
-Cohesion: 0.39
-Nodes (4): Connection, Dealer, JButton, DealerRequestPage
+Cohesion: 0.25
+Nodes (6): Long, NotificationDTO, Page, String, User, NotificationService
 
 ### Community 1017 - "Community 1017"
 Cohesion: 0.36
@@ -7973,8 +7970,8 @@ Cohesion: 0.33
 Nodes (5): Ders 13 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 1108 - "Community 1108"
-Cohesion: 0.07
-Nodes (17): City, CRS, HashMap, Hospital, Integer, String, ResourceBundle, URL (+9 more)
+Cohesion: 0.31
+Nodes (5): BigDecimal, Connection, String, Warehouse, AddCarToStockPage
 
 ### Community 1127 - "Community 1127"
 Cohesion: 0.10
@@ -8641,8 +8638,8 @@ Cohesion: 0.40
 Nodes (4): 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:, 📖 Faydalı Olabilecek Kaynaklar, ℹ️ Ders Bilgileri, 📚 Nesneye Yönelik Programlama
 
 ### Community 1367 - "Community 1367"
-Cohesion: 0.12
-Nodes (9): Override, ResourceBundle, URL, ArrayList, Doctor, LocalDate, Rendezvous, Schedule (+1 more)
+Cohesion: 0.25
+Nodes (4): BigDecimal, Override, String, SaleRecord
 
 ### Community 1368 - "Community 1368"
 Cohesion: 0.67
@@ -9289,8 +9286,8 @@ Cohesion: 0.18
 Nodes (10): Ders 8 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları, Assertion Mekanizması, FOR EACH ROW vs FOR EACH STATEMENT, Güvenlik Yaklaşımları (+2 more)
 
 ### Community 2602 - "Community 2602"
-Cohesion: 0.27
-Nodes (16): stbi__write_context, va_list, stbi_write_bmp_core(), stbi_write_tga_core(), stbiw__linear_to_rgbe(), stbiw__outfile(), stbiw__write1(), stbiw__write3() (+8 more)
+Cohesion: 0.24
+Nodes (18): stbi__write_context, va_list, stbi_write_bmp_core(), stbi_write_jpg_core(), stbi_write_tga_core(), stbiw__jpg_calcBits(), stbiw__jpg_DCT(), stbiw__jpg_processDU() (+10 more)
 
 ### Community 2630 - "Community 2630"
 Cohesion: 0.12
@@ -9470,7 +9467,7 @@ Nodes (11): 3. Week - 16 October 2023 Monday, Değişken Uzunluklu Kodlar (Varia
 
 ### Community 3580 - "Community 3580"
 Cohesion: 0.11
-Nodes (18): 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Dağıtık Sistemler, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler (+10 more)
+Nodes (18): 📘 Bilgisayar Mühendisliğinde Özel Konular 1, 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 💡 Derse Dair Öneriler (+10 more)
 
 ### Community 3581 - "Community 3581"
 Cohesion: 0.17
@@ -9790,7 +9787,7 @@ Nodes (8): 3. Week - 16 March 2023 Thursday, 1001 Programı - Değerlendirme For
 
 ### Community 3660 - "Community 3660"
 Cohesion: 0.22
-Nodes (8): 📘 Bilgisayar Güvenliği ve Kriptografi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler, 📘 İleri İşletim Sistemleri, 📅 Lisansüstü
+Nodes (8): 📘 Bilgisayar Güvenliği ve Kriptografi, 📄 Ders Bilgileri, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📚 Faydalı Olabilecek Kaynaklar, 📝 Genel Tavsiyeler, 📅 Lisansüstü, 📘 Makine Öğrenmesi
 
 ### Community 3661 - "Community 3661"
 Cohesion: 0.22
@@ -10425,8 +10422,8 @@ Cohesion: 0.40
 Nodes (5): Alana Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Genel Maaş Ortalamaları (2025–2026) ve Artış Oranı, Tam Zamanlı - Normal Çalışan ve Mezun için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2025–2026), Şirketlere Göre Maaş Ortalamaları ve Artış Oranları (2025–2026)
 
 ### Community 3825 - "Community 3825"
-Cohesion: 0.29
-Nodes (7): 🗓 1. Yıl - Bahar, 📘 Devre Teorisi ve Elektronik Devreler, 📘 İleri İngilizce 2, 📘 Matematik 2, 📘 Mühendisler için Yarıiletken Fiziği, 📘 Sayısal Analiz, 📘 Yapısal Programlama
+Cohesion: 0.22
+Nodes (10): applyStyle(), applyStyleOnLoad(), computeAutoPlacement(), getArea(), isNumeric(), offset(), parseOffset(), setAttributes() (+2 more)
 
 ### Community 3826 - "Community 3826"
 Cohesion: 0.40
@@ -10609,8 +10606,8 @@ Cohesion: 0.40
 Nodes (4): 1. Week - 2 March 2023 Thursday, Amaç, Değerlendirme, Kapsam
 
 ### Community 3873 - "Community 3873"
-Cohesion: 0.29
-Nodes (7): 🗓 2. Yıl - Bahar, 📘 Bilgisayar Mühendisleri için Sinyaller ve Sistemler, 📘 Bilgisayar Organizasyonu, 📘 Hesaplama Kuramı, 📘 İş Sağlığı ve Güvenliği 2, 📘 Sistem Analizi ve Tasarımı, 📘 Veri Yapıları ve Algoritmalar
+Cohesion: 0.33
+Nodes (3): Connection, String, DealerVehiclePage
 
 ### Community 3874 - "Community 3874"
 Cohesion: 0.60
@@ -10849,8 +10846,8 @@ Cohesion: 0.50
 Nodes (4): Alana Göre Maaş Ortalamaları ve Artış Oranları (2024–2025), Genel Maaş Ortalamaları (2024–2025) ve Artış Oranı, Tam Zamanlı - Normal Çalışan ve Mezun Değil için Maaş Analizi, Tecrübeye Göre Maaş Ortalamaları ve Artış Oranları (2024–2025)
 
 ### Community 3934 - "Community 3934"
-Cohesion: 0.33
-Nodes (6): wchar_t, wchar_t, wchar_t, stbi_convert_wchar_to_utf8(), stbiw_convert_wchar_to_utf8(), stbiw_convert_wchar_to_utf8()
+Cohesion: 0.22
+Nodes (9): 📘 Alt Seviye Programlama, 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler, 📘 Ağ Teknolojileri, 📘 Bilgisayar Donanımı, 📘 Devre Teorisi, 📘 Elektronik Devreler, 📘 Mesleki Hukuk ve Etik, 📘 Mikroişlemci Sistemleri (+1 more)
 
 ### Community 3937 - "Community 3937"
 Cohesion: 0.50
@@ -10861,8 +10858,8 @@ Cohesion: 0.50
 Nodes (3): 2023-2024 Bahar Dönemi, Ders Bilgileri, Not Bilgileri
 
 ### Community 3939 - "Community 3939"
-Cohesion: 0.31
-Nodes (4): Connection, Customer, String, OrderStatusPage
+Cohesion: 0.17
+Nodes (8): Connection, Customer, String, Connection, String, DefaultTableModel, OrderStatusPage, ShowCarStockPage
 
 ### Community 3941 - "Community 3941"
 Cohesion: 0.50
@@ -11450,7 +11447,7 @@ Nodes (4): Ders 3: Kontrol ve verinin karışması, Detaylı Açıklamalar, Gene
 
 ### Community 4461 - "Community 4461"
 Cohesion: 0.04
-Nodes (82): PyInit_im2col_cython(), __Pyx__ArgTypeTest(), __pyx_array___dealloc__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(), __pyx_array___setitem__(), __pyx_bisect_code_objects(), __Pyx_BufFmt_CheckString() (+74 more)
+Nodes (88): PyInit_im2col_cython(), __Pyx__ArgTypeTest(), __pyx_array___dealloc__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_12__setitem__(), __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(), __pyx_array___setitem__(), __pyx_bisect_code_objects(), __Pyx_check_single_interpreter() (+80 more)
 
 ### Community 4462 - "Community 4462"
 Cohesion: 0.33
@@ -12329,8 +12326,8 @@ Cohesion: 0.70
 Nodes (4): main(), STUDENT, print_Students(), sort_by_name()
 
 ### Community 4685 - "Community 4685"
-Cohesion: 0.11
-Nodes (17): FXML, Override, ResourceBundle, URL, CRS, Scanner, ArrayList, CRS (+9 more)
+Cohesion: 0.07
+Nodes (24): Doctor, Hospital, LocalDate, Object, Override, Patient, Section, String (+16 more)
 
 ### Community 4686 - "Community 4686"
 Cohesion: 0.33
@@ -12413,8 +12410,8 @@ Cohesion: 0.33
 Nodes (5): Ders 4 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar, Kısa Tekrar Notları
 
 ### Community 4714 - "Community 4714"
-Cohesion: 0.15
-Nodes (8): ArrayList, City, Hospital, Object, Override, Section, String, HospitalManager
+Cohesion: 0.16
+Nodes (7): ArrayList, City, Hospital, Object, Override, Section, String
 
 ### Community 4715 - "Community 4715"
 Cohesion: 0.33
@@ -12427,6 +12424,10 @@ Nodes (5): Ders 10 Çalışma Özeti, Detaylı Açıklamalar, Genel Konular, Hoc
 ### Community 4717 - "Community 4717"
 Cohesion: 0.50
 Nodes (4): Ders 5 (Lab): Kişiye özel lojik fonksiyon çıkarma, Genel Konular, Detaylı Açıklamalar, Hocanın Özellikle Vurguladığı Kısımlar
+
+### Community 4718 - "Community 4718"
+Cohesion: 0.60
+Nodes (3): Connection, Warehouse, WarehouseChangePassword
 
 ### Community 4719 - "Community 4719"
 Cohesion: 0.50
@@ -12745,8 +12746,8 @@ Cohesion: 0.50
 Nodes (4): Ders 9: Kurumsal uygulamalar ve bütünleşik iş süreçleri, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar
 
 ### Community 4814 - "Community 4814"
-Cohesion: 0.18
-Nodes (4): String, Gui, String, Home
+Cohesion: 0.40
+Nodes (4): 2025-2026 Bahar Dönemi, Ders Bilgileri, Ek Bilgiler (Varsa), Not Bilgileri
 
 ### Community 4815 - "Community 4815"
 Cohesion: 0.50
@@ -12761,8 +12762,8 @@ Cohesion: 0.50
 Nodes (4): Ders 9: Sıralı devrelere giriş, Detaylı Açıklamalar, Genel Konular, Hocanın Özellikle Vurguladığı Kısımlar
 
 ### Community 4818 - "Community 4818"
-Cohesion: 0.20
-Nodes (4): FXML, ResourceBundle, URL, ReceptionistGUI
+Cohesion: 0.67
+Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 İleri İşletim Sistemleri
 
 ### Community 4820 - "Community 4820"
 Cohesion: 0.50
@@ -12781,24 +12782,16 @@ Cohesion: 0.67
 Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Yapay Sinir Ağlarına Giriş
 
 ### Community 4824 - "Community 4824"
-Cohesion: 0.20
-Nodes (7): LocalDate, String, CRS, Hospital, HospitalMenu, Scanner, DateManager
+Cohesion: 0.67
+Nodes (3): 📘 Dağıtık Sistemler, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
 
 ### Community 4825 - "Community 4825"
 Cohesion: 0.50
 Nodes (3): Eksik Kayıtlar, Hafta Bilgisi, Lojik Devreler Ders Kayıtları Altyazıları
 
-### Community 4826 - "Community 4826"
-Cohesion: 0.19
-Nodes (4): CRS, Scanner, AdminSettingsGUI, TextUI
-
 ### Community 4830 - "Community 4830"
 Cohesion: 0.23
 Nodes (4): Doctor, LinkedList, String, Section
-
-### Community 4833 - "Community 4833"
-Cohesion: 0.67
-Nodes (3): 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar, 📘 Makine Öğrenmesi
 
 ### Community 4836 - "Community 4836"
 Cohesion: 0.60
@@ -13288,10 +13281,6 @@ Nodes (3): 2023-2024 Güz Dönemi, Ders Bilgileri, Not Bilgileri
 Cohesion: 0.67
 Nodes (3): 📘 Büyük Veri Analitiği, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
 
-### Community 5087 - "Community 5087"
-Cohesion: 0.67
-Nodes (3): 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📄 Ders Bilgileri, 📚 Faydalı Olabilecek Kaynaklar
-
 ## Ambiguous Edges - Review These
 - `Lagrange Enterpolasyonu` → `En Küçük Kareler Yöntemi`  [AMBIGUOUS]
   1-2/Sayısal Analiz/slaytlar_notlar/2021/notlar/efe_girgin/Regresyon(2).pdf · relation: conceptually_related_to
@@ -13305,9 +13294,9 @@ Nodes (3): 📘 Bilgisayar Mühendisliğinde Özel Konular 2, 📄 Ders Bilgiler
   3-1/Algoritma Analizi/ödevler/2019/ödev 1/halil_uluoglu/Input.txt · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **9720 isolated node(s):** `git.repositoryScanMaxDepth`, `git.repositoryScanIgnoredFolders`, `git.ignoredRepositories`, `data`, `next` (+9715 more)
+- **9723 isolated node(s):** `git.repositoryScanMaxDepth`, `git.repositoryScanIgnoredFolders`, `git.ignoredRepositories`, `data`, `next` (+9718 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1692 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1691 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -13324,5 +13313,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `getChar()` connect `Community 38` to `Community 34`, `Community 134`, `Community 137`, `Community 41`, `Community 4078`, `Community 3568`, `Community 688`, `Community 626`, `Community 50`, `Community 83`, `Community 158`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `Vector` connect `Community 626` to `Community 77`, `Community 4726`, `Community 4727`, `Community 187`, `Community 381`?**
+- **Why does `Vector` connect `Community 626` to `Community 513`, `Community 4726`, `Community 4727`, `Community 187`, `Community 381`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
