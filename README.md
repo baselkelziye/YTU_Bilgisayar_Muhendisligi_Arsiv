@@ -5255,6 +5255,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Asude Merve Ekiz</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/asudemerveekiz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/asudeekz/'><b>LinkedIn Profili</b></a></p>
 
+<h5 align='center'>🔹 <b><i>Damla Gül Saykara</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/Hinelya'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/damla-gul-saykara/'><b>LinkedIn Profili</b></a></p>
+
 <h5 align='center'>🔹 <b><i>Enes Genç</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/enxg'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enxg/'><b>LinkedIn Profili</b></a></p>
 

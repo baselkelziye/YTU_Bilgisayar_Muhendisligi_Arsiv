@@ -30,6 +30,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1csyVDEYXWUU58MluEs4-FXuAiJD1A6pG?usp=drive_link) ✨
+- 📄 **Not:** [Damla Gül Saykara'nın Göksel Biricik El Yazısı Slayt Özeti Notları](./slaytlar_notlar/2026/damla_gul_saykara) ✨
 - 📄 **Not:** [Melihin 2024 Notları](./slaytlar_notlar/2024/melih) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
