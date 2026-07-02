@@ -3052,6 +3052,8 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [G1](#-dr-göksel-biricik)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Yaz%C4%B1l%C4%B1m%20Mimarisi)
 
 
@@ -3133,6 +3135,15 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MUK](#-dr-m-utku-kalay)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Taban%C4%B1%20Sistemlerinin%20Ger%C3%A7eklenmesi)
+
+
+#### 📘 Web Madenciliği 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
+    - [MSA](#-prof-dr-mehmet-sıddık-aktaş)
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Web%20Madencili%C4%9Fi)
 
 
 #### 📘 Yazılım Kalitesi ve Test Teknikleri 
@@ -5266,6 +5277,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 
 <h5 align='center'>🔹 <b><i>Halil Uluoglu</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/haliluluoglu'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/halil-uluoglu'><b>LinkedIn Profili</b></a></p>
+
+<h5 align='center'>🔹 <b><i>Hüsamettin Işıktaş</i></b> 🔹</h5>
+<p align='center'><a href='https://github.com/husamettyn'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/husamettyn/'><b>LinkedIn Profili</b></a></p>
 
 <h5 align='center'>🔹 <b><i>Osman Yiğit Küçükkıratlı</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/yigitkiratli'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yigitkucukkiratli/'><b>LinkedIn Profili</b></a></p>

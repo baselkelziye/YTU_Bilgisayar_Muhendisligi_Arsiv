@@ -1,0 +1,52 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "tez_no": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "title_tr": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title_en": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "abstract_tr": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "abstract_en": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "advisor": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "location": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "subject": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "degree": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "year": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

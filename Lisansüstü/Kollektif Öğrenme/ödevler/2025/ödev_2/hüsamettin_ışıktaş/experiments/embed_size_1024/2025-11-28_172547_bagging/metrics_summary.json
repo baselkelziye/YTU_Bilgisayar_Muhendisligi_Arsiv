@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "model": "Bagging",
+    "embed_size": 1024,
+    "dataset_dir": "/home/husam/Desktop/YTU-YL/Kolektif \u00d6\u011frenme/kolektif-ogrenme-odev2/dataset/1024",
+    "output_dir": "/home/husam/Desktop/YTU-YL/Kolektif \u00d6\u011frenme/kolektif-ogrenme-odev2/artifacts/2025-11-28_172547_bagging",
+    "timestamp": "2025-11-28_172547"
+  },
+  "title": {
+    "accuracy": 0.05056,
+    "f1_macro": 0.049452258461837054,
+    "f1_weighted": 0.04945225846183706,
+    "precision_macro": 0.05025187665658882,
+    "recall_macro": 0.05056,
+    "mae": 7.55984,
+    "rmse": 9.53762234521791
+  },
+  "abstract": {
+    "accuracy": 0.07968,
+    "f1_macro": 0.07558330444298328,
+    "f1_weighted": 0.07558330444298329,
+    "precision_macro": 0.07805078907864654,
+    "recall_macro": 0.07968000000000001,
+    "mae": 6.05168,
+    "rmse": 7.946370240556376
+  },
+  "concat": {
+    "accuracy": 0.0704,
+    "f1_macro": 0.06732654700886098,
+    "f1_weighted": 0.067326547008861,
+    "precision_macro": 0.06873400073510744,
+    "recall_macro": 0.0704,
+    "mae": 6.39328,
+    "rmse": 8.281874184023806
+  }
+}
