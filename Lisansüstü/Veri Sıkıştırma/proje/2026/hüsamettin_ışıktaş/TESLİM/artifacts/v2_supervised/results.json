@@ -1,0 +1,81 @@
+{
+  "config": {
+    "chunk_size": 1024,
+    "algorithms": [
+      "huffman",
+      "lzw",
+      "arithmetic",
+      "bwt_mtf",
+      "rle_huffman"
+    ],
+    "n_chunks_total": 4362,
+    "n_test_chunks": 655,
+    "classifier": "XGBoost"
+  },
+  "ground_truth": {
+    "algorithm_wins": {
+      "bwt_mtf": 2187,
+      "rle_huffman": 1327,
+      "lzw": 848
+    }
+  },
+  "classifier_metrics": {
+    "accuracy": 0.7862595419847328,
+    "macro_f1": 0.7672979340698113,
+    "n_classes": 3,
+    "n_train": 3052,
+    "n_val": 655,
+    "best_iteration": 82,
+    "per_class": {
+      "bwt_mtf": {
+        "precision": 0.7935103244837758,
+        "recall": 0.8201219512195121,
+        "f1-score": 0.8065967016491754,
+        "support": 328.0
+      },
+      "lzw": {
+        "precision": 0.6974789915966386,
+        "recall": 0.6484375,
+        "f1-score": 0.6720647773279352,
+        "support": 128.0
+      },
+      "rle_huffman": {
+        "precision": 0.8274111675126904,
+        "recall": 0.8190954773869347,
+        "f1-score": 0.8232323232323232,
+        "support": 199.0
+      },
+      "accuracy": 0.7862595419847328,
+      "macro avg": {
+        "precision": 0.7728001611977016,
+        "recall": 0.7625516428688156,
+        "f1-score": 0.7672979340698113,
+        "support": 655.0
+      },
+      "weighted avg": {
+        "precision": 0.7850435415115626,
+        "recall": 0.7862595419847328,
+        "f1-score": 0.785360674751355,
+        "support": 655.0
+      }
+    },
+    "test_accuracy": 0.815267175572519,
+    "test_f1": 0.7990228877464308
+  },
+  "benchmark": {
+    "raw_codecs": {
+      "huffman": 8.235918006932948,
+      "lzw": 5.041975969954139,
+      "arithmetic": 1047.27737839834,
+      "bwt_mtf": 4.895767125871085,
+      "rle_huffman": 5.167606074685953
+    },
+    "adaptive": 4.832065616369051,
+    "best_raw": {
+      "algorithm": "bwt_mtf",
+      "bpb": 4.895767125871085
+    },
+    "adaptive_vs_best_raw_pct": 1.3011548111717053,
+    "n_test_chunks": 655
+  }
+}

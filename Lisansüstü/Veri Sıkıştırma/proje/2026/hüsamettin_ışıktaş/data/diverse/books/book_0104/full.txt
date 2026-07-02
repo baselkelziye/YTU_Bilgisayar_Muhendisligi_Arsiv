@@ -1,0 +1,360 @@
+Machine learning - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Machine+learning "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Machine+learning "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Machine+learning "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Machine+learning "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  History](#History)
+* [2
+  Relationships to other fields](#Relationships_to_other_fields)
+
+
+  Toggle Relationships to other fields subsection
+  + [2.1
+    Artificial intelligence](#Artificial_intelligence)
+  + [2.2
+    Data compression](#Data_compression)
+  + [2.3
+    Data mining](#Data_mining)
+  + [2.4
+    Generalization](#Generalization)
+  + [2.5
+    Statistics](#Statistics)
+  + [2.6
+    Statistical physics](#Statistical_physics)
+* [3
+  Theory](#Theory)
+* [4
+  Approaches](#Approaches)
+
+
+  Toggle Approaches subsection
+  + [4.1
+    Supervised learning](#Supervised_learning)
+  + [4.2
+    Unsupervised learning](#Unsupervised_learning)
+    - [4.2.1
+      Dimensionality reduction](#Dimensionality_reduction)
+  + [4.3
+    Semi-supervised learning](#Semi-supervised_learning)
+  + [4.4
+    Reinforcement learning](#Reinforcement_learning)
+  + [4.5
+    Other types](#Other_types)
+    - [4.5.1
+      Self-learning](#Self-learning)
+    - [4.5.2
+      Feature learning](#Feature_learning)
+    - [4.5.3
+      Sparse dictionary learning](#Sparse_dictionary_learning)
+    - [4.5.4
+      Anomaly detection](#Anomaly_detection)
+    - [4.5.5
+      Robot learning](#Robot_learning)
+    - [4.5.6
+      Association rules](#Association_rules)
+* [5
+  Models](#Models)
+
+
+  Toggle Models subsection
+  + [5.1
+    Artificial neural networks](#Artificial_neural_networks)
+  + [5.2
+    Decision trees](#Decision_trees)
+  + [5.3
+    Random forest regression](#Random_forest_regression)
+  + [5.4
+    Support-vector machines](#Support-vector_machines)
+  + [5.5
+    Regression analysis](#Regression_analysis)
+  + [5.6
+    Bayesian networks](#Bayesian_networks)
+  + [5.7
+    Gaussian processes](#Gaussian_processes)
+  + [5.8
+    Genetic algorithms](#Genetic_algorithms)
+  + [5.9
+    Belief functions](#Belief_functions)
+  + [5.10
+    Rule-based models](#Rule-based_models)
+  + [5.11
+    Training models](#Training_models)
+    - [5.11.1
+      Federated learning](#Federated_learning)
+* [6
+  Applications](#Applications)
+* [7
+  Limitations](#Limitations)
+
+
+  Toggle Limitations subsection
+  + [7.1
+    Explainability](#Explainability)
+  + [7.2
+    Overfitting](#Overfitting)
+  + [7.3
+    Other limitations and vulnerabilities](#Other_limitations_and_vulnerabilities)
+* [8
+  Model assessments](#Model_assessments)
+* [9
+  Ethics](#Ethics)
+
+
+  Toggle Ethics subsection
+  + [9.1
+    Bias](#Bias)
+  + [9.2
+    Financial incentives](#Financial_incentives)
+* [10
+  Hardware](#Hardware)
+
+
+  Toggle Hardware subsection
+  + [10.1
+    Tensor Processing Units (TPUs)](#Tensor_Processing_Units_(TPUs))
+  + [10.2
+    Neuromorphic computing](#Neuromorphic_computing)
+    - [10.2.1
+      Physical neural networks](#Physical_neural_networks)
+  + [10.3
+    Embedded machine learning](#Embedded_machine_learning)
+* [11
+  Software](#Software)
+
+
+  Toggle Software subsection
+  + [11.1
+    Free and open-source software](#Free_and_open-source_software)
+  + [11.2
+    Proprietary software with free and open-source editions](#Proprietary_software_with_free_and_open-source_editions)
+  + [11.3
+    Proprietary software](#Proprietary_software)
+* [12
+  Journals](#Journals)
+* [13
+  Conferences](#Conferences)
+* [14
+  See also](#See_also)
+* [15
+  References](#References)
+* [16
+  Sources](#Sources)
+* [17
+  Further reading](#Further_reading)
+* [18
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Machine learning
+
+89 languages
+
+* [Afrikaans](https://af.wikipedia.org/wiki/Masjienleer "Masjienleer – Afrikaans")
+* [العربية](https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%A2%D9%84%D8%A9 "تعلم الآلة – Arabic")
+* [الدارجة](https://ary.wikipedia.org/wiki/%D8%AA%D8%B9%D9%84%D8%A7%D9%85_%D9%85%D8%A7%D9%83%D9%8A%D9%86%D9%8A "تعلام ماكيني – Moroccan Arabic")
+* [অসমীয়া](https://as.wikipedia.org/wiki/%E0%A6%AF%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A7%B0_%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A3 "যন্ত্ৰ শিক্ষণ – Assamese")
+* [Azərbaycanca](https://az.wikipedia.org/wiki/Ma%C5%9F%C4%B1n_%C3%B6yr%C9%99nm%C9%99si "Maşın öyrənməsi – Azerbaijani")
+* [تۆرکجه](https://azb.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%DB%8C%D9%86_%D8%A7%D8%A4%DB%8C%D8%B1%D9%86%D9%85%D9%87%E2%80%8C%D8%B3%DB%8C "ماشین اؤیرنمه‌سی – South Azerbaijani")
+* [Башҡортса](https://ba.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0%D0%BB%D1%8B_%D3%A9%D0%B9%D1%80%D3%99%D0%BD%D0%B5%D2%AF "Машиналы өйрәнеү – Bashkir")
+* [Беларуская](https://be.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D1%8B%D0%BD%D0%BD%D0%B0%D0%B5_%D0%BD%D0%B0%D0%B2%D1%83%D1%87%D0%B0%D0%BD%D0%BD%D0%B5 "Машыннае навучанне – Belarusian")
+* [Български](https://bg.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE_%D1%81%D0%B0%D0%BC%D0%BE%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5 "Машинно самообучение – Bulgarian")
+* [भोजपुरी](https://bh.wikipedia.org/wiki/%E0%A4%AE%E0%A4%B6%E0%A5%80%E0%A4%A8_%E0%A4%B2%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%82%E0%A4%97 "मशीन लर्निंग – Bhojpuri")
+* [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%AE%E0%A7%87%E0%A6%B6%E0%A6%BF%E0%A6%A8_%E0%A6%B2%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BF%E0%A6%82 "মেশিন লার্নিং – Bangla")
+* [བོད་ཡིག](https://bo.wikipedia.org/wiki/%E0%BD%A0%E0%BD%95%E0%BE%B2%E0%BD%B4%E0%BD%A3%E0%BC%8B%E0%BD%86%E0%BD%A6%E0%BC%8B%E0%BD%A6%E0%BE%B3%E0%BD%BC%E0%BD%96%E0%BC%8B%E0%BD%A6%E0%BE%A6%E0%BE%B1%E0%BD%BC%E0%BD%84%E0%BC%8B%E0%BC%8D "འཕྲུལ་ཆས་སློབ་སྦྱོང་། – Tibetan")
+* [Bosanski](https://bs.wikipedia.org/wiki/Ma%C5%A1insko_u%C4%8Denje "Mašinsko učenje – Bosnian")
+* [Català](https://ca.wikipedia.org/wiki/Aprenentatge_autom%C3%A0tic "Aprenentatge automàtic – Catalan")
+* [کوردی](https://ckb.wikipedia.org/wiki/%D9%81%DB%8E%D8%B1%D8%A8%D9%88%D9%88%D9%86%DB%8C_%D9%85%DB%95%DA%A9%DB%8C%D9%86%DB%95 "فێربوونی مەکینە – Central Kurdish")
+* [Čeština](https://cs.wikipedia.org/wiki/Strojov%C3%A9_u%C4%8Den%C3%AD "Strojové učení – Czech")
+* [Cymraeg](https://cy.wikipedia.org/wiki/Dysgu_peirianyddol "Dysgu peirianyddol – Welsh")
+* [Dansk](https://da.wikipedia.org/wiki/Maskinl%C3%A6ring "Maskinlæring – Danish")
+* [Deutsch](https://de.wikipedia.org/wiki/Maschinelles_Lernen "Maschinelles Lernen – German")
+* [Ελληνικά](https://el.wikipedia.org/wiki/%CE%9C%CE%B7%CF%87%CE%B1%CE%BD%CE%B9%CE%BA%CE%AE_%CE%BC%CE%AC%CE%B8%CE%B7%CF%83%CE%B7 "Μηχανική μάθηση – Greek")
+* [Esperanto](https://eo.wikipedia.org/wiki/Ma%C5%9Dina_lernado "Maŝina lernado – Esperanto")
+* [Español](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico "Aprendizaje automático – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Masin%C3%B5pe "Masinõpe – Estonian")
+* [Euskara](https://eu.wikipedia.org/wiki/Ikasketa_automatiko "Ikasketa automatiko – Basque")
+* [فارسی](https://fa.wikipedia.org/wiki/%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C_%D9%85%D8%A7%D8%B4%DB%8C%D9%86 "یادگیری ماشین – Persian")
+* [Suomi](https://fi.wikipedia.org/wiki/Koneoppiminen "Koneoppiminen – Finnish")
+* [Võro](https://fiu-vro.wikipedia.org/wiki/Massinoppus "Massinoppus – Võro")
+* [Français](https://fr.wikipedia.org/wiki/Apprentissage_automatique "Apprentissage automatique – French")
+* [Galego](https://gl.wikipedia.org/wiki/Aprendizaxe_autom%C3%A1tica "Aprendizaxe automática – Galician")
+* [Gaelg](https://gv.wikipedia.org/wiki/Ynsaghey_jeshaghtagh "Ynsaghey jeshaghtagh – Manx")
+* [עברית](https://he.wikipedia.org/wiki/%D7%9C%D7%9E%D7%99%D7%93%D7%AA_%D7%9E%D7%9B%D7%95%D7%A0%D7%94 "למידת מכונה – Hebrew")
+* [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%AF%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0_%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3 "यंत्र शिक्षण – Hindi")
+* [Magyar](https://hu.wikipedia.org/wiki/G%C3%A9pi_tanul%C3%A1s "Gépi tanulás – Hungarian")
+* [Հայերեն](https://hy.wikipedia.org/wiki/%D5%84%D5%A5%D6%84%D5%A5%D5%B6%D5%A1%D5%B5%D5%A1%D5%AF%D5%A1%D5%B6_%D5%B8%D6%82%D5%BD%D5%B8%D6%82%D6%81%D5%B8%D6%82%D5%B4 "Մեքենայական ուսուցում – Armenian")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Pembelajaran_mesin "Pembelajaran mesin – Indonesian")
+* [Ido](https://io.wikipedia.org/wiki/Mashinolernado "Mashinolernado – Ido")
+* [Íslenska](https://is.wikipedia.org/wiki/V%C3%A9lan%C3%A1m "Vélanám – Icelandic")
+* [Italiano](https://it.wikipedia.org/wiki/Apprendimento_automatico "Apprendimento automatico – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92 "機械学習 – Japanese")
+* [Jawa](https://jv.wikipedia.org/wiki/Machine_learning "Machine learning – Javanese")
+* [ქართული](https://ka.wikipedia.org/wiki/%E1%83%9B%E1%83%90%E1%83%9C%E1%83%A5%E1%83%90%E1%83%9C%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%94%E1%83%91%E1%83%90 "მანქანური სწავლება – Georgian")
+* [Qaraqalpaqsha](https://kaa.wikipedia.org/wiki/Mashinal%C4%B1q_oq%C4%B1t%C4%B1w "Mashinalıq oqıtıw – Kara-Kalpak")
+* [ಕನ್ನಡ](https://kn.wikipedia.org/wiki/%E0%B2%AF%E0%B2%82%E0%B2%A4%E0%B3%8D%E0%B2%B0_%E0%B2%95%E0%B2%B2%E0%B2%BF%E0%B2%95%E0%B3%86 "ಯಂತ್ರ ಕಲಿಕೆ – Kannada")
+* [한국어](https://ko.wikipedia.org/wiki/%EA%B8%B0%EA%B3%84_%ED%95%99%EC%8A%B5 "기계 학습 – Korean")
+* [Кыргызча](https://ky.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D2%AF%D0%B9%D1%80%D3%A9%D0%BD%D2%AF%D2%AF "Машина үйрөнүү – Kyrgyz")
+* [Ligure](https://lij.wikipedia.org/wiki/Imprendimento_automatico "Imprendimento automatico – Ligurian")
+* [Lietuvių](https://lt.wikipedia.org/wiki/Ma%C5%A1ininis_mokymasis "Mašininis mokymasis – Lithuanian")
+* [Latviešu](https://lv.wikipedia.org/wiki/Ma%C5%A1%C4%ABnm%C4%81c%C4%AB%C5%A1an%C4%81s "Mašīnmācīšanās – Latvian")
+* [Македонски](https://mk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%81%D0%BA%D0%BE_%D1%83%D1%87%D0%B5%D1%9A%D0%B5 "Машинско учење – Macedonian")
+* [മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%AF%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%AA%E0%B4%A0%E0%B4%A8%E0%B4%82 "യന്ത്രപഠനം – Malayalam")
+* [Монгол](https://mn.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD_%D1%81%D1%83%D1%80%D0%B3%D0%B0%D0%BB%D1%82 "Машин сургалт – Mongolian")
+* [ဘာသာမန်](https://mnw.wikipedia.org/wiki/%E1%80%85%E1%80%80%E1%80%BA_%E1%80%99%E1%80%97%E1%80%B9%E1%80%90%E1%80%B1%E1%80%AC%E1%80%94%E1%80%BA%E1%80%80%E1%80%B1%E1%80%90%E1%80%BA_%E1%80%A1%E1%80%9C%E1%80%B5%E1%80%AF%E1%80%87%E1%80%80%E1%80%AF "စက် မဗ္တောန်ကေတ် အလဵုဇကု – Mon")
+* [मराठी](https://mr.wikipedia.org/wiki/%E0%A4%AF%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0_%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%A3 "यंत्र शिक्षण – Marathi")
+* [Bahasa Melayu](https://ms.wikipedia.org/wiki/Pembelajaran_mesin "Pembelajaran mesin – Malay")
+* [Nederlands](https://nl.wikipedia.org/wiki/Machinaal_leren "Machinaal leren – Dutch")
+* [Norsk nynorsk](https://nn.wikipedia.org/wiki/Maskinl%C3%A6ring "Maskinlæring – Norwegian Nynorsk")
+* [Norsk bokmål](https://no.wikipedia.org/wiki/Maskinl%C3%A6ring "Maskinlæring – Norwegian Bokmål")
+* [Occitan](https://oc.wikipedia.org/wiki/Aprendissatge_automatic "Aprendissatge automatic – Occitan")
+* [ଓଡ଼ିଆ](https://or.wikipedia.org/wiki/%E0%AC%AE%E0%AD%87%E0%AC%B8%E0%AC%BF%E0%AC%A8_%E0%AC%B2%E0%AC%B0%E0%AD%8D%E0%AC%A3%E0%AD%8D%E0%AC%A3%E0%AC%BF%E0%AC%99%E0%AD%8D%E0%AC%97%E0%AD%8D "ମେସିନ ଲର୍ଣ୍ଣିଙ୍ଗ୍ – Odia")
+* [ਪੰਜਾਬੀ](https://pa.wikipedia.org/wiki/%E0%A8%AE%E0%A8%B8%E0%A8%BC%E0%A9%80%E0%A8%A8_%E0%A8%B2%E0%A8%B0%E0%A8%A8%E0%A8%BF%E0%A9%B0%E0%A8%97 "ਮਸ਼ੀਨ ਲਰਨਿੰਗ – Punjabi")
+* [Polski](https://pl.wikipedia.org/wiki/Uczenie_maszynowe "Uczenie maszynowe – Polish")
+* [پنجابی](https://pnb.wikipedia.org/wiki/%D9%85%D8%B4%DB%8C%D9%86%DB%8C_%D8%A2%D9%85%D9%88%D8%B2%DB%8C "مشینی آموزی – Western Punjabi")
+* [پښتو](https://ps.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%D9%8A%D9%86_%D8%B2%D8%AF%D9%87_%DA%A9%DA%93%D9%87 "ماشين زده کړه – Pashto")
+* [Português](https://pt.wikipedia.org/wiki/Aprendizado_de_m%C3%A1quina "Aprendizado de máquina – Portuguese")
+* [Runa Simi](https://qu.wikipedia.org/wiki/Qallwa_yachaqay "Qallwa yachaqay – Quechua")
+* [Română](https://ro.wikipedia.org/wiki/%C3%8Env%C4%83%C8%9Bare_automat%C4%83 "Învățare automată – Romanian")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5 "Машинное обучение – Russian")
+* [ᱥᱟᱱᱛᱟᱲᱤ](https://sat.wikipedia.org/wiki/%E1%B1%A2%E1%B1%AE%E1%B1%A5%E1%B1%A4%E1%B1%B1_%E1%B1%9E%E1%B1%9A%E1%B1%A8%E1%B1%B1%E1%B1%A4%E1%B1%9D "ᱢᱮᱥᱤᱱ ᱞᱚᱨᱱᱤᱝ – Santali")
+* [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Ma%C5%A1insko_u%C4%8Denje "Mašinsko učenje – Serbo-Croatian")
+* [Simple English](https://simple.wikipedia.org/wiki/Machine_learning "Machine learning – Simple English")
+* [Slovenščina](https://sl.wikipedia.org/wiki/Strojno_u%C4%8Denje "Strojno učenje – Slovenian")
+* [Shqip](https://sq.wikipedia.org/wiki/M%C3%ABsimi_makinerik "Mësimi makinerik – Albanian")
+* [Српски / srpski](https://sr.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D1%81%D0%BA%D0%BE_%D1%83%D1%87%D0%B5%D1%9A%D0%B5 "Машинско учење – Serbian")
+* [Svenska](https://sv.wikipedia.org/wiki/Maskininl%C3%A4rning "Maskininlärning – Swedish")
+* [தமிழ்](https://ta.wikipedia.org/wiki/%E0%AE%87%E0%AE%AF%E0%AE%A8%E0%AF%8D%E0%AE%A4%E0%AE%BF%E0%AE%B0_%E0%AE%95%E0%AE%B1%E0%AF%8D%E0%AE%B1%E0%AE%B2%E0%AF%8D "இயந்திர கற்றல் – Tamil")
+* [తెలుగు](https://te.wikipedia.org/wiki/%E0%B0%AE%E0%B0%B0_%E0%B0%AA%E0%B1%8D%E0%B0%B0%E0%B0%9C%E0%B1%8D%E0%B0%9E "మర ప్రజ్ఞ – Telugu")
+* [ไทย](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87 "การเรียนรู้ของเครื่อง – Thai")
+* [Tagalog](https://tl.wikipedia.org/wiki/Pagkatuto_ng_makina "Pagkatuto ng makina – Tagalog")
+* [Türkçe](https://tr.wikipedia.org/wiki/Makine_%C3%B6%C4%9Frenimi "Makine öğrenimi – Turkish")
+* [ئۇيغۇرچە / Uyghurche](https://ug.wikipedia.org/wiki/%D9%85%D8%A7%D8%B4%D9%86%D9%89%D9%84%D9%89%D9%82_%D8%A6%DB%86%DA%AF%D9%89%D9%86%D9%89%D8%B4 "ماشنىلىق ئۆگىنىش – Uyghur")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%B5_%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F "Машинне навчання – Ukrainian")
+* [اردو](https://ur.wikipedia.org/wiki/%D9%85%D8%B4%DB%8C%D9%86_%D8%A2%D9%85%D9%88%D8%B2%DB%8C "مشین آموزی – Urdu")
+* [Oʻzbekcha / ўзбекча](https://uz.wikipedia.org/wiki/Mashina_o%CA%BBrganuvi "Mashina oʻrganuvi – Uzbek")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/H%E1%BB%8Dc_m%C3%A1y "Học máy – Vietnamese")
+* [吴语](https://wuu.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0 "机器学习 – Wu")
+* [閩南語 / Bân-lâm-gí](https://zh-min-nan.wikipedia.org/wiki/Ki-h%C4%81i_ha%CC%8Dk-si%CC%8Dp "Ki-hāi ha̍k-si̍p – Minnan")
+* [粵語](https://zh-yue.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92 "機械學習 – Cantonese")
+* [中文](https://zh.wikipedia.org/wiki/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0 "机器学习 – Chinese")
+* [IsiZulu](https://zu.wikipedia.org/wiki/Ukufunda_kwenguxa "Ukufunda kwenguxa – Zulu")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q2539#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Machine_learning "View the content page [c]")
+* [Talk](/wiki/Talk:Machine_learning "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Machine_learning)
+* [Edit](/w/index.php?title=Machine_learning&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Machine_learning&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Machine_learning)
+* [Edit](/w/index.php?title=Machine_learning&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Machine_learning&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Machine_learning "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Machine_learning "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Machine_learning&oldid=1352401998 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Machine_learning&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Machine_learning&id=1352401998&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMachine_learning)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Machine_learning&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Machine_learning&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Machine_learning)
+* [Wikiquote](https://en.wikiquote.org/wiki/Machine_learning)
+* [Wikiversity](https://en.wikiversity.org/wiki/Machine_learning)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q2539 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Subset of artificial intelligence
+
+For the journal, see [*Machine Learning* (journal)](/wiki/Machine_Learning_(journal) "Machine Learning (journal)").
+
+"Statistical learning" redirects here. For statistical learning in linguistics, see [Statistical learning in language acquisition](/wiki/Statistical_learning_in_language_acquisition "Statistical learning in language acquisition").
+
+|  |
+| --- |
+| Part of a series on |
+| Machine learning and [data mining](/wiki/Data_mining "Data mining") |
+| Paradigms  * [Supervised learning](/wiki/Supervise
