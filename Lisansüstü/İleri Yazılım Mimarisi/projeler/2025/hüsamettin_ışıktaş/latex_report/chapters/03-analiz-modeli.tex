@@ -1,0 +1,90 @@
+\chapter{Analiz Modeli}
+
+\section{Genel Bakış}
+Analiz modeli, sistemin iş mantığını ve kullanıcı etkileşimlerini anlamak için oluşturulmuştur. Bu model, sistem gereksinimlerini görselleştirmek ve sistemin davranışını tanımlamak için UML diyagramları kullanmaktadır.
+
+\section{Use Case Diagram}
+Use Case diyagramı, sistemin aktörleri (kullanıcılar) ve sistemle olan etkileşimlerini (use case'ler) gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{use-case.png}
+    \caption{Use Case Diagram}
+    \label{fig:use-case}
+\end{figure}
+
+\textbf{Aktörler:}
+\begin{itemize}
+    \item Authenticated User (Kimlik Doğrulanmış Kullanıcı)
+\end{itemize}
+
+\textbf{Ana Use Case'ler:}
+\begin{enumerate}
+    \item Kayıt Ol
+    \item Giriş Yap
+    \item Profil Yönetimi
+    \item Birebir Sohbet Oluştur
+    \item Grup Sohbeti Oluştur
+    \item Sohbet Listesi Görüntüle
+    \item Mesaj Gönder
+    \item Mesaj Geçmişi Görüntüle
+    \item Mesaj Sil
+    \item Dosya Yükle
+    \item Dosya İndir
+    \item Bildirim Al
+\end{enumerate}
+
+\section{Domain Model (Etki Alanı Modeli)}
+Domain model, sistemin temel iş varlıklarını (entities) ve aralarındaki ilişkileri gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{domain-model.png}
+    \caption{Domain Model Diagram}
+    \label{fig:domain-model}
+\end{figure}
+
+\textbf{Ana Varlıklar:}
+\begin{itemize}
+    \item \textbf{User (Kullanıcı):} id, email, username, passwordHash, firstName, lastName, profilePicture, statusMessage, createdAt, updatedAt
+    \item \textbf{Chat (Sohbet):} id, type (DIRECT, GROUP), name, createdBy, createdAt, updatedAt
+    \item \textbf{ChatParticipant (Sohbet Katılımcısı):} id, chatId, userId, role (MEMBER, ADMIN), joinedAt
+    \item \textbf{Message (Mesaj):} id, chatId, senderId, content, messageType (TEXT, FILE, IMAGE, VIDEO), fileUrl, status (SENT, DELIVERED, READ, DELETED), createdAt, updatedAt
+    \item \textbf{File (Dosya):} id, originalName, storedName, mimeType, size, url, uploadedBy, createdAt
+    \item \textbf{Notification (Bildirim):} id, userId, type (MESSAGE, FILE, CHAT_INVITE), title, body, data, read, createdAt
+\end{itemize}
+
+\textbf{Varlık İlişkileri:}
+\begin{itemize}
+    \item User 1..* ChatParticipant
+    \item Chat 1..* ChatParticipant
+    \item Chat 1..* Message
+    \item User 1..* Message
+    \item User 1..* File
+    \item User 1..* Notification
+\end{itemize}
+
+\section{Activity Diagram}
+Activity diagram, sistem içindeki iş akışlarını gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{activity-diagram.png}
+    \caption{Mesaj Gönderme Activity Diagram}
+    \label{fig:activity-message}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{activity-diagram-file-upload.png}
+    \caption{Dosya Yükleme Activity Diagram}
+    \label{fig:activity-file}
+\end{figure}
+
+Aşağıdaki ana akışlar modellenmiştir:
+\begin{enumerate}
+    \item \textbf{Mesaj Gönderme Akışı:} Mesaj gönderme sürecini gösterir.
+    \item \textbf{Dosya Paylaşımı Akışı:} Dosya yükleme ve paylaşma sürecini gösterir.
+\end{enumerate}
+
+Her activity diagram, sürecin adımlarını, karar noktalarını ve paralel aktiviteleri gösterir.

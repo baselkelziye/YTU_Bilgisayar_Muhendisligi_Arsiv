@@ -1,0 +1,51 @@
+\chapter{Değerlendirme ve Tartışma}
+
+\section{Tasarımın Güçlü Yönleri}
+
+\subsection{Mikroservis Mimarisi Avantajları}
+\textbf{Bağımsız Geliştirme ve Dağıtım:} Her mikroservis bağımsız olarak geliştirilebilir ve dağıtılabilir. Farklı takımlar farklı servisler üzerinde paralel çalışabilir ve servis güncellemeleri diğer servisleri etkilemez.
+
+\textbf{Teknoloji Çeşitliliği:} Her servis için en uygun teknoloji seçilebilir. Bu projede ilişkisel veriler için PostgreSQL, yüksek yazma hızı gerektiren doküman bazlı veriler için MongoDB kullanılmıştır.
+
+\textbf{Ölçeklenebilirlik:} Her servis ihtiyaç duyduğu kadar ölçeklendirilebilir. Yüksek trafik alan servisler (Message Service, Notification Service) daha fazla kaynak alabilir.
+
+\textbf{Hata İzolasyonu:} Bir servisin çökmesi diğer servisleri etkilemez, sistem genel olarak çalışmaya devam eder.
+
+\subsection{Diğer Güçlü Yönler}
+\begin{itemize}
+    \item \textbf{Database per Service:} Servisler arası veri bağımlılığını ortadan kaldırır.
+    \item \textbf{Event-Driven Architecture:} Loose coupling ve yüksek performans sağlar.
+    \item \textbf{API Gateway:} Güvenlik ve yönlendirmeyi merkezi olarak yönetir.
+    \item \textbf{WebSocket Gateway:} Gerçek zamanlı iletişimi optimize eder.
+\end{itemize}
+
+\section{Zayıf Yönler ve Zorluklar}
+
+\subsection{Servisler Arası Veri Tutarlılığı}
+Database per Service stratejisi nedeniyle distributed transaction kullanılamaz. Eventual consistency kabul edilmiştir. Örneğin, mesaj gönderildiğinde bildirim asenkron olarak gönderilir; bildirim servisi geçici olarak çökerse bildirim gecikebilir.
+
+\textbf{Çözüm:} Message queue'da mesaj persistence, retry mekanizması ve dead letter queue kullanımı.
+
+\subsection{Distributed System Karmaşıklığı}
+Mikroservis mimarisi, monolitik yapıya göre daha karmaşıktır. Network hataları ve latency sorunları yaşanabilir.
+
+\textbf{Çözüm:} Circuit breaker pattern, timeout mekanizmaları ve health check'ler.
+
+\subsection{Operasyonel Karmaşıklık}
+Birden fazla servisin yönetimi, loglama ve izleme zordur.
+
+\textbf{Çözüm:} Merkezi loglama (ELK Stack), container orchestration (Docker Compose) ve monitoring araçları.
+
+\section{İyileştirme Önerileri}
+
+\begin{enumerate}
+    \item \textbf{Service Mesh:} Istio veya Linkerd kullanılarak servisler arası iletişim, güvenlik ve gözlemlenebilirlik iyileştirilebilir.
+    \item \textbf{CQRS (Command Query Responsibility Segregation):} Okuma ve yazma işlemlerinin ayrılması performans optimizasyonu sağlar.
+    \item \textbf{Saga Pattern:} Distributed transaction yerine uzun süren işlemler (örn: grup oluşturma) için Saga pattern kullanılabilir.
+    \item \textbf{API Versioning:} Geriye dönük uyumluluk için `/api/v1/` gibi versiyonlama stratejisi uygulanmalıdır.
+    \item \textbf{Caching İyileştirmeleri:} Multi-level caching (L1: in-memory, L2: Redis) ile veritabanı yükü azaltılabilir.
+    \item \textbf{Monitoring:} Prometheus ve Grafana ile kapsamlı metrik takibi ve alarm mekanizmaları kurulabilir.
+\end{enumerate}
+
+\section{Sonuç}
+Gerçek zamanlı sohbet uygulaması için tasarlanan bu mikroservis mimarisi; ölçeklenebilirlik, dayanıklılık ve bakım kolaylığı sağlamaktadır. Sistem, 5 bağımsız mikroservis ve destekleyici altyapı bileşenlerinden oluşmaktadır. Her servis kendi sorumluluğunu yerine getirir ve sistem genel olarak yüksek performans ve güvenilirlik hedefler. Tasarımın getirdiği karmaşıklıklar, doğru stratejiler (Event-driven, API Gateway, Merkezi Loglama) ile yönetilmiştir.

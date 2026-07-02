@@ -1,0 +1,54 @@
+\chapter{Analiz Modeli}
+
+\section{Genel Bakış}
+Analiz modeli, sistemin iş mantığını ve kullanıcı etkileşimlerini anlamak için oluşturulmuştur. UML diyagramları kullanılarak gereksinimler görselleştirilmiştir.
+
+\section{Use Case Diyagramı}
+Sistemin aktörleri ve fonksiyonel gereksinimlerin etkileşimi Şekil \ref{fig:usecase}'de gösterilmiştir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{use-case.png}
+    \caption{Use Case Diyagramı}
+    \label{fig:usecase}
+\end{figure}
+
+\textbf{Aktörler:} Kimlik Doğrulanmış Kullanıcı (Authenticated User).
+
+\textbf{Temel Senaryolar:} Kayıt olma, giriş yapma, mesajlaşma, dosya paylaşımı ve grup yönetimi gibi temel işlevleri kapsar.
+
+\section{Domain Model (Etki Alanı Modeli)}
+Sistemin temel varlıkları ve bu varlıklar arasındaki ilişkiler Şekil \ref{fig:domain}'de sunulmuştur.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{domain-model.png}
+    \caption{Domain Model Diyagramı}
+    \label{fig:domain}
+\end{figure}
+
+\textbf{Ana Varlıklar:}
+\begin{itemize}
+    \item \textbf{User:} Kullanıcı kimlik ve profil bilgileri.
+    \item \textbf{Chat:} Sohbet odası (birebir veya grup).
+    \item \textbf{Message:} İçerik, tür ve durum bilgisi.
+    \item \textbf{File:} Dosya metadata bilgileri.
+    \item \textbf{Notification:} Bildirim detayları.
+\end{itemize}
+
+\section{Activity Diyagramları}
+İş süreçlerinin akışını gösteren aktivite diyagramları aşağıda yer almaktadır.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{activity-diagram.png}
+    \caption{Mesaj Gönderme Aktivite Diyagramı}
+    \label{fig:activity-msg}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{activity-diagram-file-upload.png}
+    \caption{Dosya Yükleme Aktivite Diyagramı}
+    \label{fig:activity-file}
+\end{figure}

@@ -1,0 +1,63 @@
+@startuml Sequence Diagram - Dosya Yükleme Senaryosu
+!theme plain
+
+title Sequence Diagram - Dosya Yükleme Senaryosu
+
+actor Kullanıcı as User
+participant "API Gateway" as Gateway
+participant "File Service" as FileService
+participant "File Storage" as Storage
+participant "File DB" as FileDB
+participant "Message Service" as MessageService
+participant "Message DB" as MessageDB
+
+User -> Gateway: POST /api/files/upload\n(Dosya yükle)
+activate Gateway
+
+Gateway -> Gateway: Token doğrula
+Gateway -> FileService: Dosya yükleme isteği
+activate FileService
+
+FileService -> FileService: Dosya türünü kontrol et
+FileService -> FileService: Dosya boyutunu kontrol et
+
+alt Dosya geçerli
+  FileService -> Storage: Dosyayı kaydet
+  activate Storage
+  Storage --> FileService: Dosya URL'i
+  deactivate Storage
+  
+  FileService -> FileDB: Dosya metadata'sını kaydet
+  activate FileDB
+  FileDB --> FileService: Dosya ID
+  deactivate FileDB
+  
+  FileService -> FileService: Güvenli URL oluştur (24 saat geçerli)
+  FileService --> Gateway: Dosya URL'i
+  deactivate FileService
+  Gateway --> User: Dosya URL'i döndür
+else Dosya geçersiz
+  FileService --> Gateway: Hata mesajı
+  deactivate FileService
+  Gateway --> User: 400 Bad Request
+end
+deactivate Gateway
+
+User -> Gateway: POST /api/messages\n(Dosya URL'i ile mesaj gönder)
+activate Gateway
+Gateway -> MessageService: Mesaj gönderme isteği
+activate MessageService
+
+MessageService -> MessageService: Mesaj tipini FILE olarak işaretle
+MessageService -> MessageDB: Mesajı kaydet
+activate MessageDB
+MessageDB --> MessageService: Mesaj ID
+deactivate MessageDB
+
+MessageService --> Gateway: Mesaj gönderildi
+deactivate MessageService
+Gateway --> User: Başarı yanıtı
+deactivate Gateway
+
+@enduml
+

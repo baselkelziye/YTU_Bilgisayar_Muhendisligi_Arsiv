@@ -1,0 +1,59 @@
+\chapter{Tasarım Modeli}
+
+\section{Genel Bakış}
+Tasarım modeli, sistemin teknik mimarisini ve bileşenlerini detaylandırır. Mikroservis mimarisine dayalı sistemin yapısal ve davranışsal tasarımı UML diyagramları ile ifade edilmiştir.
+
+\section{Component Diyagramı}
+Sistemin yazılım bileşenleri ve servisler arası bağımlılıklar Şekil \ref{fig:component}'te gösterilmiştir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{component-diagram.png}
+    \caption{Component Diyagramı}
+    \label{fig:component}
+\end{figure}
+
+Sistem; User, Chat, Message, Notification ve File servislerinden oluşan 5 temel mikroservis ve bunları destekleyen API/WebSocket Gateway, RabbitMQ ve veritabanı bileşenlerinden oluşur.
+
+\section{Sequence Diyagramları}
+Kritik senaryoların zaman içindeki akışı aşağıda modellenmiştir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{sequence-diagram.png}
+    \caption{Mesaj Gönderme Sequence Diyagramı}
+    \label{fig:seq-msg}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{sequence-diagram-file-upload.png}
+    \caption{Dosya Yükleme Sequence Diyagramı}
+    \label{fig:seq-file}
+\end{figure}
+
+Mesaj gönderme senaryosunda; İstemci $\rightarrow$ API Gateway $\rightarrow$ Message Service $\rightarrow$ RabbitMQ $\rightarrow$ Notification Service $\rightarrow$ WebSocket Gateway $\rightarrow$ Alıcı İstemci akışı izlenmektedir.
+
+\section{Class Diyagramı}
+Mikroservislerin iç yapısını ve veri modellerini gösteren sınıf diyagramı Şekil \ref{fig:class}'ta verilmiştir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{class-diagram.png}
+    \caption{Class Diyagramı}
+    \label{fig:class}
+\end{figure}
+
+Her servis kendi Controller, Service ve Model katmanlarına sahiptir. Veri erişimi için doğrudan Model kullanımı tercih edilmiş, Repository katmanı soyutlanmıştır.
+
+\section{Deployment Diyagramı}
+Sistemin fiziksel dağıtımı ve konteyner yapısı Şekil \ref{fig:deployment}'ta gösterilmiştir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{deployment-diagram.png}
+    \caption{Deployment Diyagramı}
+    \label{fig:deployment}
+\end{figure}
+
+Tüm servisler Docker konteynerleri içinde çalışmakta ve Docker Compose ile orkestre edilmektedir. Veritabanları ve mesaj kuyruğu gibi altyapı bileşenleri de ayrı konteynerler olarak dağıtılmıştır.
