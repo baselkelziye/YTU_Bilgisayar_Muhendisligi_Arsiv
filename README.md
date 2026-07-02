@@ -2957,6 +2957,20 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 ### 🗓 Lisansüstü
 
 
+#### 📘 Anlamsal Web 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Anlamsal%20Web)
+
+
+#### 📘 Araçlar Arası Haberleşme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Ara%C3%A7lar%20Aras%C4%B1%20Haberle%C5%9Fme)
+
+
 #### 📘 Araştırma Yöntemleri ve Bilimsel Etik 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -2975,6 +2989,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayar%20G%C3%BCvenli%C4%9Fi%20ve%20Kriptografi)
 
 
+#### 📘 Bilgisayar Mühendisliğinde Özel Konular 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Mesleki%20Se%C3%A7meli%201/Bilgisayar%20M%C3%BChendisli%C4%9Finde%20%C3%96zel%20Konular%203)
+
+
 #### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -2982,6 +3003,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
       - ℹ️ Yıldızlar 3 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayar%20Sistemleri%20ve%20A%C4%9F%20G%C3%BCvenli%C4%9Fi)
+
+
+#### 📘 Bilgisayarda Bulanıklık ve Belirsizlik 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bilgisayarda%20Bulan%C4%B1kl%C4%B1k%20ve%20Belirsizlik)
 
 
 #### 📘 Bilgisayarla Görme 
@@ -3005,11 +3033,39 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Biyomedikal%20%C4%B0%C5%9Faret%20ve%20G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
 
 
+#### 📘 Bulut Hesaplamada Sistem ve Ağ Mimarileri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Bulut%20Hesaplamada%20Sistem%20ve%20A%C4%9F%20Mimarileri)
+
+
 #### 📘 Büyük Veri Analitiği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi)
+
+
+#### 📘 Derin Öğrenme ve Yapay Sinir Ağları 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Derin%20%C3%96%C4%9Frenme%20ve%20Yapay%20Sinir%20A%C4%9Flar%C4%B1)
+
+
+#### 📘 Derin Üretici Modeller 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Derin%20%C3%9Cretici%20Modeller)
+
+
+#### 📘 Doğal Dil İşlemeye Kavramsal Bir Bakış 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Do%C4%9Fal%20Dil%20%C4%B0%C5%9Flemeye%20Kavramsal%20Bir%20Bak%C4%B1%C5%9F)
 
 
 #### 📘 Hesaplamalı Anlambilim 
@@ -3021,6 +3077,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Hesaplamal%C4%B1%20Anlambilim)
 
 
+#### 📘 Hesaplamalı Sinirbilim ve Duygusal Hesaplam 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Hesaplamal%C4%B1%20Sinirbilim%20ve%20Duygusal%20Hesaplam)
+
+
 #### 📘 İleri Algoritma Analizi ve Tasarımı 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3030,6 +3093,48 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [HİT](#-dr-h-i̇rem-türkmen)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Algoritma%20Analizi%20ve%20Tasar%C4%B1m%C4%B1)
+
+
+#### 📘 İleri Bilgisayar Ağları 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Bilgisayar%20A%C4%9Flar%C4%B1)
+
+
+#### 📘 İleri Bilgisayar Mimarisi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Bilgisayar%20Mimarisi)
+
+
+#### 📘 İleri Blokzincir 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Blokzincir)
+
+
+#### 📘 İleri Derleyici Tasarımı 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Derleyici%20Tasar%C4%B1m%C4%B1)
+
+
+#### 📘 İleri Hesaplama Teorisi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Hesaplama%20Teorisi)
+
+
+#### 📘 İleri İşaret İşleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20%C4%B0%C5%9Faret%20%C4%B0%C5%9Fleme)
 
 
 #### 📘 İleri İşletim Sistemleri 
@@ -3044,6 +3149,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Optimizasyon)
+
+
+#### 📘 İleri Programlama Dilleri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C4%B0leri%20Programlama%20Dilleri)
 
 
 #### 📘 İleri Yazılım Mimarisi 
@@ -3066,6 +3178,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Kollektif%20%C3%96%C4%9Frenme)
 
 
+#### 📘 Kriptografi Mühendisliği 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Kriptografi%20M%C3%BChendisli%C4%9Fi)
+
+
 #### 📘 Makine Öğrenmesi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3073,6 +3192,20 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★☆☆
       - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Makine%20%C3%96%C4%9Frenmesi)
+
+
+#### 📘 Makineler Arası İletişim 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Makineler%20Aras%C4%B1%20%C4%B0leti%C5%9Fim)
+
+
+#### 📘 Mobil Teknolojiler için Veri İşleme Teknikleri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Mobil%20Teknolojiler%20i%C3%A7in%20Veri%20%C4%B0%C5%9Fleme%20Teknikleri)
 
 
 #### 📘 Nesneye Dayalı Tasarım ve Modelleme 
@@ -3104,6 +3237,62 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Olas%C4%B1l%C4%B1ksal%20Robotik)
 
 
+#### 📘 Paralel ve Dağıtık Programlama 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Paralel%20ve%20Da%C4%9F%C4%B1t%C4%B1k%20Programlama)
+
+
+#### 📘 Robotlar 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Robotlar)
+
+
+#### 📘 Sayısal Ses ve Konuşma İşleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Say%C4%B1sal%20Ses%20ve%20Konu%C5%9Fma%20%C4%B0%C5%9Fleme)
+
+
+#### 📘 Sayısal Video İşleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Say%C4%B1sal%20Video%20%C4%B0%C5%9Fleme)
+
+
+#### 📘 Sistem Simülasyonu 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Sistem%20Sim%C3%BClasyonu)
+
+
+#### 📘 Telsiz Algılayıcı Ağlar ve Uygulamaları 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Telsiz%20Alg%C4%B1lay%C4%B1c%C4%B1%20A%C4%9Flar%20ve%20Uygulamalar%C4%B1)
+
+
+#### 📘 Uygulamalı Kriptografi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Uygulamal%C4%B1%20Kriptografi)
+
+
+#### 📘 Uzaktan Algılamada İşaret ve Görüntü İşleme 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Uzaktan%20Alg%C4%B1lamada%20%C4%B0%C5%9Faret%20ve%20G%C3%B6r%C3%BCnt%C3%BC%20%C4%B0%C5%9Fleme)
+
+
 #### 📘 Veri Madenciliği ve Bilgi Keşfi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3126,6 +3315,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20S%C4%B1k%C4%B1%C5%9Ft%C4%B1rma)
 
 
+#### 📘 Veri Tabani Sistemlerinde Özel Konu 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Tabani%20Sistemlerinde%20%C3%96zel%20Konu)
+
+
 #### 📘 Veri Tabanı Sistemlerinin Gerçeklenmesi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3137,6 +3333,20 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Taban%C4%B1%20Sistemlerinin%20Ger%C3%A7eklenmesi)
 
 
+#### 📘 Veri Yoğun Bilimleri için Bulut Programlama 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Veri%20Yo%C4%9Fun%20Bilimleri%20i%C3%A7in%20Bulut%20Programlama)
+
+
+#### 📘 Verilerin Görselleştirilmesi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Verilerin%20G%C3%B6rselle%C5%9Ftirilmesi)
+
+
 #### 📘 Web Madenciliği 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -3144,6 +3354,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [MSA](#-prof-dr-mehmet-sıddık-aktaş)
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Web%20Madencili%C4%9Fi)
+
+
+#### 📘 Yazilim Proje Yönetimi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Yazilim%20Proje%20Y%C3%B6netimi)
 
 
 #### 📘 Yazılım Kalitesi ve Test Teknikleri 
@@ -3157,11 +3374,32 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Yaz%C4%B1l%C4%B1m%20Kalitesi%20ve%20Test%20Teknikleri)
 
 
+#### 📘 Zaman-Uzamsal Veri Tabanı Sistemlerinin Gerçeklenmesi 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Zaman-Uzamsal%20Veri%20Taban%C4%B1%20Sistemlerinin%20Ger%C3%A7eklenmesi)
+
+
+#### 📘 Zeki Optimizasyon Yöntemleri 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Zeki%20Optimizasyon%20Y%C3%B6ntemleri)
+
+
 #### 📘 Çok Değişkenli İstatiksel Veri Analizi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C3%87ok%20De%C4%9Fi%C5%9Fkenli%20%C4%B0statiksel%20Veri%20Analizi)
+
+
+#### 📘 Şekil Tanıma 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/%C5%9Eekil%20Tan%C4%B1ma)
 
 ### 🗓 Artık Güncel Müfredata Dahil Olmayan Dersler
 
