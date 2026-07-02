@@ -1,0 +1,199 @@
+@startuml Class Diagram - Mikroservis Sınıf Yapıları
+!theme plain
+
+title Class Diagram - Mikroservis Sınıf Yapıları
+
+package "User Service" {
+  class UserController {
+    - userService: UserService
+    + register(request): ResponseEntity
+    + login(request): ResponseEntity
+    + getProfile(userId): ResponseEntity
+    + updateProfile(userId, request): ResponseEntity
+  }
+  
+  class UserService {
+    - passwordEncoder: PasswordEncoder
+    - jwtTokenProvider: JwtTokenProvider
+    + register(email, username, password): User
+    + login(email, password): TokenResponse
+    + getProfile(userId): User
+    + updateProfile(userId, request): User
+  }
+  
+  class User {
+    - id: String
+    - email: String
+    - username: String
+    - passwordHash: String
+    - firstName: String
+    - lastName: String
+    - profilePicture: String
+    - statusMessage: String
+    - createdAt: DateTime
+    - updatedAt: DateTime
+    + create(userData): User
+    + findByEmail(email): User
+    + findById(id): User
+    + update(id, updateData): User
+  }
+  
+  UserController --> UserService
+  UserService --> User
+}
+
+package "Chat Service" {
+  class ChatController {
+    - chatService: ChatService
+    + createDirectChat(userId1, userId2): ResponseEntity
+    + createGroupChat(request): ResponseEntity
+    + getChats(userId): ResponseEntity
+    + addParticipant(chatId, userId): ResponseEntity
+    + removeParticipant(chatId, userId): ResponseEntity
+  }
+  
+  class ChatService {
+    - userServiceClient: UserServiceClient
+    + createDirectChat(userId1, userId2): Chat
+    + createGroupChat(name, creatorId, participantIds): Chat
+    + getChats(userId): List<Chat>
+    + addParticipant(chatId, userId): void
+    + removeParticipant(chatId, userId): void
+  }
+  
+  class Chat {
+    - id: String
+    - type: ChatType
+    - name: String
+    - createdBy: String
+    - participants: List<Participant>
+    - createdAt: DateTime
+    - updatedAt: DateTime
+    + findById(id): Chat
+    + find(query): List<Chat>
+    + save(): Chat
+  }
+  
+  ChatController --> ChatService
+  ChatService --> Chat
+}
+
+package "Message Service" {
+  class MessageController {
+    - messageService: MessageService
+    + sendMessage(request): ResponseEntity
+    + getMessages(chatId, page, size): ResponseEntity
+    + deleteMessage(messageId): ResponseEntity
+  }
+  
+  class MessageService {
+    - notificationPublisher: NotificationPublisher
+    + sendMessage(chatId, senderId, content, type): Message
+    + getMessages(chatId, page, size): List<Message>
+    + deleteMessage(messageId, userId): void
+    + updateMessageStatus(messageId, status): void
+  }
+  
+  class Message {
+    - id: String
+    - chatId: String
+    - senderId: String
+    - content: String
+    - messageType: MessageType
+    - fileUrl: String
+    - status: MessageStatus
+    - deleted: Boolean
+    - createdAt: DateTime
+    - updatedAt: DateTime
+    + findById(id): Message
+    + find(query): List<Message>
+    + save(): Message
+  }
+  
+  MessageController --> MessageService
+  MessageService --> Message
+}
+
+package "Notification Service" {
+  class NotificationController {
+    - notificationService: NotificationService
+    + getNotifications(userId): ResponseEntity
+    + markAsRead(notificationId): ResponseEntity
+  }
+  
+  class NotificationService {
+    - webSocketGatewayClient: WebSocketGatewayClient
+    + sendNotification(userId, type, title, body): void
+    + getNotifications(userId): List<Notification>
+    + markAsRead(notificationId): void
+    + sendRealtimeNotification(userId, notification): void
+  }
+  
+  class Notification {
+    - id: String
+    - userId: String
+    - type: NotificationType
+    - title: String
+    - body: String
+    - data: JSON
+    - read: Boolean
+    - createdAt: DateTime
+    + find(query): List<Notification>
+    + findById(id): Notification
+    + save(): Notification
+  }
+  
+  class WebSocketGatewayClient {
+    + sendToUser(userId, notification): void
+  }
+  
+  NotificationController --> NotificationService
+  NotificationService --> Notification
+  NotificationService --> WebSocketGatewayClient
+}
+
+package "File Service" {
+  class FileController {
+    - fileService: FileService
+    + uploadFile(file): ResponseEntity
+    + downloadFile(fileId): ResponseEntity
+    + deleteFile(fileId): ResponseEntity
+  }
+  
+  class FileService {
+    - storageService: StorageService
+    + uploadFile(file, userId): File
+    + downloadFile(fileId): InputStream
+    + deleteFile(fileId): void
+    + generateSecureUrl(fileId): String
+  }
+  
+  class StorageService {
+    + saveFile(file): FileInfo
+    + getFile(storedName): String
+    + deleteFile(storedName): void
+    + generateSecureUrl(fileId): String
+  }
+  
+  class File {
+    - id: String
+    - originalName: String
+    - storedName: String
+    - mimeType: String
+    - size: Long
+    - url: String
+    - uploadedBy: String
+    - createdAt: DateTime
+    + create(fileData): File
+    + findById(id): File
+    + findByUploadedBy(userId): List<File>
+    + delete(id): void
+  }
+  
+  FileController --> FileService
+  FileService --> File
+  FileService --> StorageService
+}
+
+@enduml
+

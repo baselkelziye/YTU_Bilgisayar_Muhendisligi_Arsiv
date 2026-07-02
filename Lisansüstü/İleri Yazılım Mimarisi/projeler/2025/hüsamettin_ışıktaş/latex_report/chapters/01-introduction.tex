@@ -1,0 +1,79 @@
+\chapter{Konu Tanımı ve Senaryolar}
+
+\section{Proje Amacı}
+Bu proje, gerçek zamanlı sohbet uygulaması için mikroservis mimarisine dayalı bir yazılım sistemi geliştirmeyi amaçlamaktadır. Sistem; birebir ve grup sohbet özelliklerini destekleyen, dosya paylaşımı yapabilen, gerçek zamanlı mesajlaşma sağlayan, ölçeklenebilir ve modern bir mimari üzerine kurgulanmıştır.
+
+\section{Proje Kapsamı}
+Proje, aşağıdaki temel işlevleri kapsamaktadır:
+\begin{itemize}
+    \item Kullanıcı yönetimi ve kimlik doğrulama
+    \item Birebir ve grup sohbet oluşturma
+    \item Gerçek zamanlı mesajlaşma
+    \item Mesaj geçmişi saklama ve görüntüleme
+    \item Dosya ve medya paylaşımı
+    \item Gerçek zamanlı bildirimler
+\end{itemize}
+
+Sistem en az 5 mikroservis içermektedir ve bu servisler bağımsız olarak geliştirilebilir, dağıtılabilir ve ölçeklendirilebilir şekilde tasarlanmıştır.
+
+\section{Kullanıcı Senaryoları (User Stories)}
+
+\subsection{Kullanıcı Yönetimi}
+\begin{itemize}
+    \item \textbf{US-1: Kullanıcı Kaydı:} Bir kullanıcı olarak, sisteme e-posta, kullanıcı adı ve şifre ile kayıt olabilmeliyim. Sistem e-posta benzersizliğini kontrol etmeli ve doğrulama e-postası göndermelidir.
+    \item \textbf{US-2: Kullanıcı Girişi:} Kayıtlı hesabımla giriş yapabilmeli, sistem kimlik bilgilerimi doğrulamalı ve geçerli bir oturum token'ı döndürmelidir.
+    \item \textbf{US-3: Profil Yönetimi:} Profil bilgilerimi (ad, soyad, resim, durum mesajı) görüntüleyebilmeli ve güncelleyebilmeliyim.
+\end{itemize}
+
+\subsection{Sohbet Yönetimi}
+\begin{itemize}
+    \item \textbf{US-4: Birebir Sohbet:} Başka bir kullanıcı ile birebir sohbet başlatabilmeliyim. Sistem mükerrer sohbet oluşturmamalıdır.
+    \item \textbf{US-5: Grup Sohbeti:} Birden fazla kullanıcı ile grup sohbeti oluşturabilmeli, gruba isim verebilmeli ve katılımcı yönetebilmeliyim.
+    \item \textbf{US-6: Sohbet Listesi:} Katıldığım tüm sohbetleri, son mesaj ve zaman bilgisine göre sıralı şekilde görebilmeliyim.
+\end{itemize}
+
+\subsection{Mesajlaşma}
+\begin{itemize}
+    \item \textbf{US-7: Mesaj Gönderme:} Sohbete metin mesajı gönderebilmeli ve mesajın iletildi/okundu durumlarını takip edebilmeliyim.
+    \item \textbf{US-8: Mesaj Geçmişi:} Sohbetin mesaj geçmişini sayfalama (pagination) yapısı ile görüntüleyebilmeliyim.
+    \item \textbf{US-9: Mesaj Silme:} Gönderdiğim mesajları silebilmeli, silinen mesajlar diğer kullanıcılara bildirilmelidir.
+\end{itemize}
+
+\subsection{Dosya Paylaşımı}
+\begin{itemize}
+    \item \textbf{US-10: Dosya Yükleme:} Sohbete resim, video veya doküman yükleyebilmeliyim. Sistem dosya türü ve boyut kontrolü yapmalıdır.
+    \item \textbf{US-11: Dosya İndirme:} Paylaşılan dosyaları güvenli ve zaman sınırlı URL'ler üzerinden indirebilmeliyim.
+\end{itemize}
+
+\subsection{Bildirimler}
+\begin{itemize}
+    \item \textbf{US-12: Gerçek Zamanlı Bildirimler:} Yeni mesaj veya olaylarda anlık bildirim alabilmeliyim. Çevrimdışı isem bildirimler saklanmalı ve çevrimiçi olduğumda iletilmelidir.
+\end{itemize}
+
+\section{Ana Kullanım Akışları}
+
+\subsection{Kullanıcı Kayıt ve Giriş Akışı}
+\begin{enumerate}
+    \item Kullanıcı kayıt sayfasına girer ve gerekli bilgileri doldurur.
+    \item Sistem bilgileri doğrular, kullanıcıyı oluşturur ve doğrulama e-postası gönderir.
+    \item Kullanıcı e-postasını doğrular ve giriş yapar.
+    \item Sistem kimlik doğrulamasını yapar ve JWT token oluşturur.
+    \item Kullanıcı ana sayfaya yönlendirilir.
+\end{enumerate}
+
+\subsection{Mesaj Gönderme Akışı}
+\begin{enumerate}
+    \item Kullanıcı sohbeti seçer ve mesajını yazar.
+    \item İstemci mesajı \textit{Message Service}'e gönderir.
+    \item Servis mesajı kaydeder ve \textit{Notification Service}'i tetikler.
+    \item \textit{Notification Service}, \textit{WebSocket Gateway} üzerinden hedef kullanıcılara iletir.
+    \item Çevrimiçi kullanıcılar mesajı anında görür, çevrimdışı kullanıcılar için kuyruğa alınır.
+\end{enumerate}
+
+\subsection{Dosya Paylaşımı Akışı}
+\begin{enumerate}
+    \item Kullanıcı dosya yükleme isteği gönderir.
+    \item \textit{File Service} dosyayı doğrular ve depolama alanına kaydeder.
+    \item Dosya için erişim URL'i oluşturulur.
+    \item İstemci, bu URL'i içeren bir mesaj oluşturarak sohbete gönderir.
+\end{enumerate}

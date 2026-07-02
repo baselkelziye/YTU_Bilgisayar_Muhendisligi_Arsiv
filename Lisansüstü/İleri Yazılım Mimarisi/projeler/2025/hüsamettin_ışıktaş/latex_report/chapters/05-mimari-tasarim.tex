@@ -1,0 +1,146 @@
+\chapter{Mimari Tasarım}
+
+\section{Genel Mimari Yaklaşım}
+Sistem, mikroservis mimarisine dayalı olarak tasarlanmıştır. Bu mimari, sistemin ölçeklenebilirliğini, dayanıklılığını ve bakım kolaylığını artırmak için tercih edilmiştir. Her mikroservis, bağımsız olarak geliştirilebilir, test edilebilir, dağıtılabilir ve ölçeklendirilebilir.
+
+\subsection{Mimari Prensipler}
+\begin{itemize}
+    \item \textbf{Bağımsız Dağıtılabilirlik:} Her servis bağımsız olarak dağıtılabilir.
+    \item \textbf{Tek Sorumluluk:} Her servis belirli bir iş alanından (domain) sorumludur.
+    \item \textbf{Veritabanı Ayrımı:} Her servis kendi veritabanına sahiptir (Database per Service).
+    \item \textbf{API Tabanlı İletişim:} Servisler REST API ve message queue ile iletişim kurar.
+    \item \textbf{Hata Toleransı:} Bir servisin çökmesi tüm sistemi etkilemez.
+\end{itemize}
+
+\section{Mikroservisler ve Sorumlulukları}
+
+\subsection{User Service}
+\textbf{Sorumluluklar:}
+\begin{itemize}
+    \item Kullanıcı kaydı ve doğrulama
+    \item Kullanıcı girişi ve kimlik doğrulama (JWT token oluşturma)
+    \item Profil yönetimi (görüntüleme, güncelleme)
+    \item Kullanıcı bilgilerini diğer servislere sağlama
+\end{itemize}
+
+\textbf{Teknolojiler:}
+\begin{itemize}
+    \item Veritabanı: PostgreSQL (Kullanıcı bilgileri)
+    \item Bağımlılıklar: Redis (Cache)
+\end{itemize}
+
+\subsection{Chat Service}
+\textbf{Sorumluluklar:}
+\begin{itemize}
+    \item Birebir ve grup sohbeti oluşturma
+    \item Sohbet listesi yönetimi
+    \item Sohbet katılımcı yönetimi (ekleme, çıkarma)
+    \item Sohbet metadata yönetimi
+\end{itemize}
+
+\textbf{Teknolojiler:}
+\begin{itemize}
+    \item Veritabanı: MongoDB (Sohbet bilgileri ve katılımcıları)
+    \item Bağımlılıklar: User Service, RabbitMQ, Redis
+\end{itemize}
+
+\subsection{Message Service}
+\textbf{Sorumluluklar:}
+\begin{itemize}
+    \item Mesaj gönderme ve depolama
+    \item Mesaj geçmişi sorgulama (pagination)
+    \item Mesaj silme (soft delete)
+    \item Mesaj durumu yönetimi (sent, delivered, read, deleted)
+\end{itemize}
+
+\textbf{Teknolojiler:}
+\begin{itemize}
+    \item Veritabanı: MongoDB (Mesaj bilgileri)
+    \item Bağımlılıklar: RabbitMQ, Redis, User Service
+\end{itemize}
+
+\subsection{Notification Service}
+\textbf{Sorumluluklar:}
+\begin{itemize}
+    \item Gerçek zamanlı bildirim gönderme (WebSocket)
+    \item Bildirim kuyruğu yönetimi (çevrimdışı kullanıcılar için)
+    \item Bildirim geçmişi saklama
+    \item Bildirim durumu yönetimi (okundu/okunmadı)
+\end{itemize}
+
+\textbf{Teknolojiler:}
+\begin{itemize}
+    \item Veritabanı: MongoDB (Bildirim bilgileri)
+    \item Bağımlılıklar: RabbitMQ, WebSocket Gateway, Redis, Chat Service
+\end{itemize}
+
+\subsection{File Service}
+\textbf{Sorumluluklar:}
+\begin{itemize}
+    \item Dosya yükleme ve depolama
+    \item Dosya indirme ve URL oluşturma
+    \item Dosya türü ve boyut kontrolü
+    \item Güvenli dosya erişimi
+\end{itemize}
+
+\textbf{Teknolojiler:}
+\begin{itemize}
+    \item Veritabanı: PostgreSQL (Dosya metadata)
+    \item Bağımlılıklar: Storage Service (Local file system)
+\end{itemize}
+
+\section{Altyapı Bileşenleri}
+
+\subsection{API Gateway}
+Tüm dış HTTP isteklerini yönlendirir, kimlik doğrulama, yetkilendirme ve rate limiting (60 request/dakika/IP) işlemlerini gerçekleştirir. Node.js (Express) ve http-proxy-middleware kullanılmıştır.
+
+\subsection{WebSocket Gateway}
+Gerçek zamanlı mesaj iletimi ve bağlantı yönetimini sağlar. Kullanıcı bağlantı durumu Redis üzerinde takip edilir. Node.js ve Socket.io kullanılmıştır.
+
+\subsection{Message Queue (RabbitMQ)}
+Servisler arası asenkron iletişimi ve event-driven mimariyi destekler. `chat.exchange` ve `message.exchange` üzerinden bildirimler Notification Service'e iletilir.
+
+\subsection{Cache (Redis)}
+Sık kullanılan verilerin (sohbet listesi, son mesajlar) cache'lenmesi ve kullanıcı bağlantı durumunun takibi için kullanılır.
+
+\subsection{Veritabanları}
+Database per Service stratejisi uygulanmıştır:
+\begin{itemize}
+    \item \textbf{PostgreSQL:} User Service ve File Service (İlişkisel veriler)
+    \item \textbf{MongoDB:} Chat Service, Message Service ve Notification Service (Doküman tabanlı, yüksek yazma hızı gerektiren veriler)
+\end{itemize}
+
+\section{Servisler Arası İletişim Desenleri}
+
+\subsection{Senkron İletişim (REST API)}
+Anında yanıt gerektiren işlemler için kullanılır (Örn: Chat Service $\rightarrow$ User Service). Güvenlik için JWT ve servis token'ları kullanılır.
+
+\subsection{Asenkron İletişim (Message Queue)}
+Event-driven işlemler ve loose coupling için kullanılır (Örn: Message Service $\rightarrow$ RabbitMQ $\rightarrow$ Notification Service).
+
+\subsection{Gerçek Zamanlı İletişim (WebSocket)}
+Anında bildirim ve çift yönlü iletişim için kullanılır (Örn: Notification Service $\rightarrow$ WebSocket Gateway $\rightarrow$ Client).
+
+\section{Teknoloji Stack}
+
+\begin{itemize}
+    \item \textbf{Backend:} Node.js, Express.js
+    \item \textbf{Frontend:} React 19, TypeScript, Vite, Tailwind CSS, Radix UI
+    \item \textbf{Veritabanı:} PostgreSQL 15, MongoDB 7
+    \item \textbf{Cache \& Queue:} Redis 7, RabbitMQ 3
+    \item \textbf{Altyapı:} Docker, Docker Compose, ELK Stack (Logging)
+\end{itemize}
+
+\section{Güvenlik Mimarisi}
+\begin{itemize}
+    \item \textbf{Kimlik Doğrulama:} JWT Token
+    \item \textbf{Veri Güvenliği:} HTTPS, Bcrypt (Şifre hashleme)
+    \item \textbf{Kontroller:} Rate Limiting, SQL Injection Koruması, XSS Koruması
+\end{itemize}
+
+\section{Ölçeklenebilirlik Stratejisi}
+\begin{itemize}
+    \item \textbf{Yatay Ölçeklenebilirlik:} Stateless servisler, Load Balancer
+    \item \textbf{Veritabanı:} Read Replicas, Sharding
+    \item \textbf{WebSocket:} Redis adapter ile çoklu instance desteği
+\end{itemize}

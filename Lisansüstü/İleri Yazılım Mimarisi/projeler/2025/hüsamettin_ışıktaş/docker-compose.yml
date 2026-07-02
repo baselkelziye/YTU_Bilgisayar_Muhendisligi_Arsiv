@@ -1,0 +1,322 @@
+services:
+  # Databases
+  postgres-user:
+    image: postgres:15-alpine
+    container_name: postgres-user
+    environment:
+      POSTGRES_DB: userdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres-user-data:/var/lib/postgresql/data
+    networks:
+      - microservices-network
+
+  postgres-file:
+    image: postgres:15-alpine
+    container_name: postgres-file
+    environment:
+      POSTGRES_DB: filedb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres-file-data:/var/lib/postgresql/data
+    networks:
+      - microservices-network
+
+  mongodb-chat:
+    image: mongo:7
+    container_name: mongodb-chat
+    environment:
+      MONGO_INITDB_DATABASE: chatdb
+    ports:
+      - "27020:27017"
+    volumes:
+      - mongodb-chat-data:/data/db
+    networks:
+      - microservices-network
+
+  mongodb-message:
+    image: mongo:7
+    container_name: mongodb-message
+    environment:
+      MONGO_INITDB_DATABASE: messagedb
+    ports:
+      - "27021:27017"
+    volumes:
+      - mongodb-message-data:/data/db
+    networks:
+      - microservices-network
+
+  mongodb-notification:
+    image: mongo:7
+    container_name: mongodb-notification
+    environment:
+      MONGO_INITDB_DATABASE: notificationdb
+    ports:
+      - "27022:27017"
+    volumes:
+      - mongodb-notification-data:/data/db
+    networks:
+      - microservices-network
+
+  # Message Queue
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - microservices-network
+
+  # Cache
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - microservices-network
+
+  # Services
+  user-service:
+    build:
+      context: ./services/user-service
+      dockerfile: Dockerfile
+    container_name: user-service
+    environment:
+      NODE_ENV: development
+      PORT: 3001
+      DB_HOST: postgres-user
+      DB_PORT: 5432
+      DB_NAME: userdb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    ports:
+      - "3001:3001"
+    depends_on:
+      - postgres-user
+      - redis
+    networks:
+      - microservices-network
+    volumes:
+      - ./services/user-service:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  chat-service:
+    build:
+      context: ./services/chat-service
+      dockerfile: Dockerfile
+    container_name: chat-service
+    environment:
+      NODE_ENV: development
+      PORT: 3002
+      DB_HOST: mongodb-chat
+      DB_PORT: 27017
+      DB_NAME: chatdb
+      USER_SERVICE_URL: http://user-service:3001
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      RABBITMQ_URL: amqp://admin:admin@rabbitmq:5672
+    ports:
+      - "3002:3002"
+    depends_on:
+      - mongodb-chat
+      - redis
+      - rabbitmq
+      - user-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./services/chat-service:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  message-service:
+    build:
+      context: ./services/message-service
+      dockerfile: Dockerfile
+    container_name: message-service
+    environment:
+      NODE_ENV: development
+      PORT: 3003
+      DB_HOST: mongodb-message
+      DB_PORT: 27017
+      DB_NAME: messagedb
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      RABBITMQ_URL: amqp://admin:admin@rabbitmq:5672
+      NOTIFICATION_SERVICE_URL: http://notification-service:3004
+    ports:
+      - "3003:3003"
+    depends_on:
+      - mongodb-message
+      - redis
+      - rabbitmq
+      - notification-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./services/message-service:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  notification-service:
+    build:
+      context: ./services/notification-service
+      dockerfile: Dockerfile
+    container_name: notification-service
+    environment:
+      NODE_ENV: development
+      PORT: 3004
+      DB_HOST: mongodb-notification
+      DB_PORT: 27017
+      DB_NAME: notificationdb
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      RABBITMQ_URL: amqp://admin:admin@rabbitmq:5672
+      WEBSOCKET_GATEWAY_URL: http://websocket-gateway:3006
+      CHAT_SERVICE_URL: http://chat-service:3002
+      SERVICE_TOKEN: dev-service-token-change-in-production
+    ports:
+      - "3004:3004"
+    depends_on:
+      - mongodb-notification
+      - redis
+      - rabbitmq
+      - websocket-gateway
+      - chat-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./services/notification-service:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  file-service:
+    build:
+      context: ./services/file-service
+      dockerfile: Dockerfile
+    container_name: file-service
+    environment:
+      NODE_ENV: development
+      PORT: 3005
+      DB_HOST: postgres-file
+      DB_PORT: 5432
+      DB_NAME: filedb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      UPLOAD_DIR: /app/uploads
+      MAX_FILE_SIZE: 52428800
+    ports:
+      - "3005:3005"
+    depends_on:
+      - postgres-file
+    networks:
+      - microservices-network
+    volumes:
+      - ./services/file-service/uploads:/app/uploads:z
+      - ./services/file-service:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  api-gateway:
+    build:
+      context: ./gateways/api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      USER_SERVICE_URL: http://user-service:3001
+      CHAT_SERVICE_URL: http://chat-service:3002
+      MESSAGE_SERVICE_URL: http://message-service:3003
+      NOTIFICATION_SERVICE_URL: http://notification-service:3004
+      FILE_SERVICE_URL: http://file-service:3005
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production
+    ports:
+      - "3000:3000"
+    depends_on:
+      - user-service
+      - chat-service
+      - message-service
+      - notification-service
+      - file-service
+    networks:
+      - microservices-network
+    volumes:
+      - ./gateways/api-gateway:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  websocket-gateway:
+    build:
+      context: ./gateways/websocket-gateway
+      dockerfile: Dockerfile
+    container_name: websocket-gateway
+    environment:
+      NODE_ENV: development
+      PORT: 3006
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: your-super-secret-jwt-key-change-in-production
+    ports:
+      - "3006:3006"
+    depends_on:
+      - redis
+    networks:
+      - microservices-network
+    volumes:
+      - ./gateways/websocket-gateway:/app:z
+      - /app/node_modules
+    user: root
+    command: sh -c "npm install && chown -R node:node /app && su node -c 'npm start'"
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    privileged: true
+    ports:
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:Z
+      - portainer_data:/data
+    networks:
+      - microservices-network
+
+volumes:
+  portainer_data:
+  postgres-user-data:
+  postgres-file-data:
+  mongodb-chat-data:
+  mongodb-message-data:
+  mongodb-notification-data:
+  rabbitmq-data:
+  redis-data:
+
+networks:
+  microservices-network:
+    driver: bridge
+
