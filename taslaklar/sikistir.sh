@@ -4,11 +4,18 @@
 
 # Kontrol: Klasör yolu argüman olarak verilmiş mi?
 if [ -z "$1" ]; then
-  echo "Kullanım: $0 <klasör_yolu>"
+  echo "Kullanım: $0 <klasör_yolu> [çekirdek_sayısı]"
   exit 1
 fi
 
 HEDEF_KLASOR="$1"
+CEKIRDEK_SAYISI="${2:-2}"
+
+# Kontrol: Çekirdek sayısı pozitif bir tam sayı mı?
+if ! [[ "$CEKIRDEK_SAYISI" =~ ^[0-9]+$ ]] || [ "$CEKIRDEK_SAYISI" -le 0 ]; then
+  echo "Hata: Çekirdek sayısı pozitif bir tam sayı olmalıdır."
+  exit 1
+fi
 
 # Kontrol: Verilen yol bir dizin mi?
 if [ ! -d "$HEDEF_KLASOR" ]; then
@@ -64,11 +71,18 @@ fi
 echo "Tüm gerekli paketler yüklü. Sıkıştırma işlemine başlıyor..."
 
 # Görsel dosya uzantıları
-GORSEL_UZANTILAR=("jpg" "jpeg" "png" "bmp" "gif" "tif" "tiff")
+GORSEL_UZANTILAR=("jpg" "jpeg" "png" "gif" "tif" "tiff")
 
 # PDF dosyalarını sıkıştırma fonksiyonu
 sikistir_pdf() {
   yerel_dosya="$1"
+
+  # Zaten sıkıştırılmışsa pas geç
+  if exiftool "$yerel_dosya" 2>/dev/null | grep -q "CompressedBySikistirScript"; then
+    echo "Zaten sıkıştırılmış (pas geçiliyor): $yerel_dosya"
+    return
+  fi
+
   echo "PDF sıkıştırılıyor: $yerel_dosya"
 
   # Orijinal dosya boyutunu al
@@ -88,13 +102,16 @@ sikistir_pdf() {
   # Yeni dosya boyutunu al
   yeni_boyut=$(wc -c < "${yerel_dosya}.tmp")
 
-  # Eğer yeni boyut eski boyuttan büyükse, eski halini geri yükle
-  if [ "$yeni_boyut" -gt "$eski_boyut" ]; then
-    echo "Sıkıştırma sonucu dosya boyutu arttı, eski dosya geri yükleniyor: $yerel_dosya"
+  # Eğer yeni boyut eski boyuttan büyük veya eşitse, eski halini geri yükle ve etiketle
+  if [ "$yeni_boyut" -ge "$eski_boyut" ]; then
+    echo "Sıkıştırma sonucu dosya boyutu azalmadı, orijinal dosya korunuyor ve etiketleniyor: $yerel_dosya"
     rm "${yerel_dosya}.tmp"
     git checkout HEAD -- "$yerel_dosya" 2>/dev/null || true
+    exiftool -Keywords="CompressedBySikistirScript" -overwrite_original "$yerel_dosya" >/dev/null 2>&1
   else
     mv "${yerel_dosya}.tmp" "$yerel_dosya"
+    # Sıkıştırılmış dosyaya etiket ekle
+    exiftool -Keywords="CompressedBySikistirScript" -overwrite_original "$yerel_dosya" >/dev/null 2>&1
   fi
 }
 
@@ -104,6 +121,12 @@ sikistir_gorsel() {
   uzanti="${yerel_dosya##*.}"
   uzanti="${uzanti,,}"
 
+  # Zaten sıkıştırılmışsa pas geç
+  if exiftool "$yerel_dosya" 2>/dev/null | grep -q "CompressedBySikistirScript"; then
+    echo "Zaten sıkıştırılmış (pas geçiliyor): $yerel_dosya"
+    return
+  fi
+
   # Orijinal dosya boyutunu al
   eski_boyut=$(git show HEAD:"$yerel_dosya" 2>/dev/null | wc -c)
   # Eğer dosya git ile takip edilmiyorsa veya daha önce commit edilmediyse
@@ -112,7 +135,7 @@ sikistir_gorsel() {
   fi
 
   # Dosyanın bir yedeğini alın
-  cp "$yerel_dosya" "${yerel_dosya}.bak"
+  cp "$yerel_dosya" "${yerel_dosya}.sikistir_bak"
 
   case "$uzanti" in
     jpg|jpeg)
@@ -126,38 +149,58 @@ sikistir_gorsel() {
     png)
       echo "PNG sıkıştırılıyor: $yerel_dosya"
       pngquant --quality=80-85 --ext .png --force "$yerel_dosya" 2>/dev/null \
-      || optipng -o2 "$yerel_dosya" >/dev/null
+      || optipng -clobber -o2 "$yerel_dosya" >/dev/null
       ;;
-    bmp|gif|tif|tiff)
+    gif|tif|tiff)
       echo "Görsel sıkıştırılıyor: $yerel_dosya"
       mogrify -strip "$yerel_dosya"
       ;;
     *)
       echo "Desteklenmeyen dosya türü: $yerel_dosya"
+      rm "${yerel_dosya}.sikistir_bak"
+      return
       ;;
   esac
 
   # Yeni dosya boyutunu al
   yeni_boyut=$(wc -c < "$yerel_dosya")
 
-  # Eğer yeni boyut eski boyuttan büyükse, eski halini geri yükle
+  # Eğer yeni boyut eski boyuttan büyük veya eşitse, eski halini geri yükle ve etiketle
   if [ "$yeni_boyut" -ge "$eski_boyut" ]; then
-    echo "Sıkıştırma sonucu dosya boyutu arttı, eski dosya geri yükleniyor: $yerel_dosya"
-    mv "${yerel_dosya}.bak" "$yerel_dosya"
+    echo "Sıkıştırma sonucu dosya boyutu azalmadı, orijinal dosya korunuyor ve etiketleniyor: $yerel_dosya"
+    mv "${yerel_dosya}.sikistir_bak" "$yerel_dosya"
     git checkout HEAD -- "$yerel_dosya" 2>/dev/null || true
+    exiftool -Comment="CompressedBySikistirScript" -overwrite_original "$yerel_dosya" >/dev/null 2>&1
   else
-    rm "${yerel_dosya}.bak"
+    rm "${yerel_dosya}.sikistir_bak"
+    # Sıkıştırılmış dosyaya etiket ekle
+    exiftool -Comment="CompressedBySikistirScript" -overwrite_original "$yerel_dosya" >/dev/null 2>&1
   fi
 }
 
-# Rekürsif olarak dosyaları bul ve sıkıştır
-find "$HEDEF_KLASOR" -type f \( -iname "*.pdf" $(for ext in "${GORSEL_UZANTILAR[@]}"; do echo -o -iname "*.$ext"; done) \) | while read -r dosya; do
-  uzanti="${dosya##*.}"
+# Sıkıştırılacak dosyayı yönlendiren sarmalayıcı fonksiyon (xargs paralel çalıştırabilmesi için)
+sikistir_dosya() {
+  local dosya="$1"
+  local uzanti="${dosya##*.}"
   uzanti="${uzanti,,}"
+  local gorsel_uzantilar=("jpg" "jpeg" "png" "gif" "tif" "tiff")
 
   if [ "$uzanti" == "pdf" ]; then
     sikistir_pdf "$dosya"
-  elif [[ " ${GORSEL_UZANTILAR[@]} " =~ " $uzanti " ]]; then
+  elif [[ " ${gorsel_uzantilar[@]} " =~ " $uzanti " ]]; then
     sikistir_gorsel "$dosya"
   fi
-done
+}
+
+# Fonksiyonları alt kabuklara (xargs'ın erişebilmesi için) aktar
+export -f sikistir_pdf
+export -f sikistir_gorsel
+export -f sikistir_dosya
+
+echo "Sıkıştırma paralel olarak ($CEKIRDEK_SAYISI çekirdek) yürütülüyor..."
+
+# Rekürsif olarak dosyaları bul (venv, .venv, node_modules, .git, .github, graphify-out vb. bağımlılık ve sistem klasörlerini pas geçerek) ve paralel olarak sıkıştır
+find "$HEDEF_KLASOR" \
+  -type d \( -name "venv" -o -name ".venv" -o -name "node_modules" -o -name ".git" -o -name ".github" -o -name "graphify-out" \) -prune \
+  -o -type f \( -iname "*.pdf" $(for ext in "${GORSEL_UZANTILAR[@]}"; do echo -o -iname "*.$ext"; done) \) -print0 | \
+  xargs -0 -P "$CEKIRDEK_SAYISI" -n 1 bash -c 'sikistir_dosya "$1"' _

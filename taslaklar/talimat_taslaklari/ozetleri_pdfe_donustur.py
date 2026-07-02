@@ -158,6 +158,14 @@ def main() -> int:
         except (RuntimeError, subprocess.CalledProcessError) as exc:
             failures.append((markdown_path, str(exc)))
 
+    compression_script = Path(__file__).parent.parent / "sikistir.sh"
+    if compression_script.is_file():
+        print(f"\nSıkıştırma işlemi başlatılıyor: {target_dir}")
+        try:
+            subprocess.run(["bash", str(compression_script), str(target_dir)], check=True)
+        except subprocess.CalledProcessError as exc:
+            print(f"Sıkıştırma hatası: {exc}", file=sys.stderr)
+
     if failures:
         for markdown_path, error in failures:
             print(f"hata: {markdown_path.name}: {error}", file=sys.stderr)
