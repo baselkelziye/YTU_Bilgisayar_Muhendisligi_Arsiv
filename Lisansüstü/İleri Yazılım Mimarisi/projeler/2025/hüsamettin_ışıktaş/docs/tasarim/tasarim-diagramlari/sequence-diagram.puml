@@ -1,0 +1,70 @@
+@startuml Sequence Diagram - Mesaj Gönderme Senaryosu
+!theme plain
+
+title Sequence Diagram - Mesaj Gönderme Senaryosu
+
+actor Kullanıcı as User
+participant "API Gateway" as Gateway
+participant "Message Service" as MessageService
+participant "Notification Service" as NotificationService
+participant "WebSocket Gateway" as WSGateway
+participant "RabbitMQ" as MQ
+participant "Message DB" as MessageDB
+participant "Alıcı Kullanıcı" as Receiver
+
+User -> Gateway: POST /api/messages\n(Mesaj gönder)
+activate Gateway
+
+Gateway -> Gateway: Token doğrula
+Gateway -> MessageService: Mesaj gönderme isteği
+activate MessageService
+
+MessageService -> MessageService: Mesajı doğrula
+MessageService -> MessageDB: Mesajı kaydet
+activate MessageDB
+MessageDB --> MessageService: Mesaj ID döndür
+deactivate MessageDB
+
+MessageService -> MQ: Mesaj bildirimi yayınla
+activate MQ
+MQ --> NotificationService: Event: new_message
+deactivate MQ
+activate NotificationService
+
+NotificationService -> NotificationService: Sohbet katılımcılarını al
+NotificationService -> NotificationService: Her katılımcı için döngü
+
+alt Çevrimiçi kullanıcı
+  NotificationService -> WSGateway: WebSocket bildirimi gönder
+  activate WSGateway
+  WSGateway -> Receiver: Mesaj bildirimi (WebSocket)
+  activate Receiver
+  Receiver --> WSGateway: Bildirim alındı
+  deactivate Receiver
+  WSGateway --> NotificationService: Bildirim gönderildi
+  deactivate WSGateway
+else Çevrimdışı kullanıcı
+  NotificationService -> NotificationService: Bildirimi kuyruğa ekle
+end
+
+NotificationService --> MessageService: Bildirim işlendi
+deactivate NotificationService
+
+MessageService --> Gateway: Mesaj gönderildi (201 Created)
+deactivate MessageService
+Gateway --> User: Başarı yanıtı
+deactivate Gateway
+
+User -> Gateway: GET /api/messages/{chatId}\n(Mesaj listesi)
+Gateway -> MessageService: Mesaj listesi isteği
+activate MessageService
+MessageService -> MessageDB: Mesajları getir
+activate MessageDB
+MessageDB --> MessageService: Mesaj listesi
+deactivate MessageDB
+MessageService --> Gateway: Mesaj listesi
+deactivate MessageService
+Gateway --> User: Mesaj listesi
+
+@enduml
+

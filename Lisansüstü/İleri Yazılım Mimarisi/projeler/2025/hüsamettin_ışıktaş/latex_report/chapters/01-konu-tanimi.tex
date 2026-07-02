@@ -1,0 +1,154 @@
+\chapter{Konu Tanımı ve Senaryolar}
+
+\section{Proje Amacı}
+Bu proje, gerçek zamanlı sohbet uygulaması için mikroservis mimarisine dayalı bir yazılım sistemi geliştirmeyi amaçlamaktadır. Sistem; birebir ve grup sohbet özelliklerini destekleyen, dosya paylaşımı yapabilen, gerçek zamanlı mesajlaşma sağlayan ölçeklenebilir bir mimari üzerine kurulmuştur.
+
+\section{Proje Kapsamı}
+Proje, aşağıdaki temel işlevleri kapsamaktadır:
+\begin{itemize}
+    \item Kullanıcı yönetimi ve kimlik doğrulama
+    \item Birebir ve grup sohbet oluşturma
+    \item Gerçek zamanlı mesajlaşma
+    \item Mesaj geçmişi saklama ve görüntüleme
+    \item Dosya ve medya paylaşımı
+    \item Gerçek zamanlı bildirimler
+\end{itemize}
+
+Sistem en az 5 mikroservis içermektedir ve bu servisler bağımsız olarak geliştirilebilir, dağıtılabilir ve ölçeklendirilebilir şekilde tasarlanmıştır.
+
+\section{Kullanıcı Senaryoları (User Stories)}
+
+\subsection{Kullanıcı Yönetimi}
+\textbf{US-1: Kullanıcı Kaydı}
+\begin{itemize}
+    \item Bir kullanıcı olarak, sisteme kayıt olabilmeliyim (e-posta, kullanıcı adı, şifre ile).
+    \item Sistem, e-posta benzersizliğini kontrol etmeli.
+    \item Kayıt sonrası kullanıcı doğrulama e-postası gönderilmeli.
+\end{itemize}
+
+\textbf{US-2: Kullanıcı Girişi}
+\begin{itemize}
+    \item Bir kullanıcı olarak, kayıtlı hesabımla giriş yapabilmeliyim.
+    \item Sistem, kimlik bilgilerimi doğrulamalı ve oturum açmalı.
+    \item Oturum token'ı döndürülmeli.
+\end{itemize}
+
+\textbf{US-3: Profil Yönetimi}
+\begin{itemize}
+    \item Bir kullanıcı olarak, profil bilgilerimi görüntüleyebilmeliyim.
+    \item Profil bilgilerimi (ad, soyad, profil resmi, durum mesajı) güncelleyebilmeliyim.
+\end{itemize}
+
+\subsection{Sohbet Yönetimi}
+\textbf{US-4: Birebir Sohbet Oluşturma}
+\begin{itemize}
+    \item Bir kullanıcı olarak, başka bir kullanıcı ile birebir sohbet başlatabilmeliyim.
+    \item Sistem, aynı kullanıcılarla mevcut sohbeti varsa yeniden oluşturmamalı.
+\end{itemize}
+
+\textbf{US-5: Grup Sohbeti Oluşturma}
+\begin{itemize}
+    \item Bir kullanıcı olarak, birden fazla kullanıcı ile grup sohbeti oluşturabilmeliyim.
+    \item Grup sohbetine katılımcı ekleyip çıkarabilmeliyim.
+    \item Grup sohbetine isim verebilmeliyim.
+\end{itemize}
+
+\textbf{US-6: Sohbet Listesi Görüntüleme}
+\begin{itemize}
+    \item Bir kullanıcı olarak, katıldığım tüm sohbetleri görebilmeliyim.
+    \item Sohbet listesi son mesaj ve zaman bilgisiyle sıralanmalı.
+\end{itemize}
+
+\subsection{Mesajlaşma}
+\textbf{US-7: Mesaj Gönderme}
+\begin{itemize}
+    \item Bir kullanıcı olarak, sohbete metin mesajı gönderebilmeliyim.
+    \item Gönderilen mesaj, sohbetteki diğer kullanıcılara gerçek zamanlı olarak iletilebilmelidir.
+    \item Mesaj gönderildi/iletildi/okundu durumlarını görebilmeliyim.
+\end{itemize}
+
+\textbf{US-8: Mesaj Geçmişi}
+\begin{itemize}
+    \item Bir kullanıcı olarak, sohbetin mesaj geçmişini görüntüleyebilmeliyim.
+    \item Mesaj geçmişi sayfalama (pagination) ile yüklenebilmelidir.
+\end{itemize}
+
+\textbf{US-9: Mesaj Silme}
+\begin{itemize}
+    \item Bir kullanıcı olarak, gönderdiğim mesajları silebilmeliyim.
+    \item Silinen mesaj, sohbetteki diğer kullanıcılara "bu mesaj silindi" şeklinde görünmelidir.
+\end{itemize}
+
+\subsection{Dosya Paylaşımı}
+\textbf{US-10: Dosya Yükleme}
+\begin{itemize}
+    \item Bir kullanıcı olarak, sohbete dosya (resim, video, doküman) yükleyebilmeliyim.
+    \item Sistem, dosya türünü ve boyutunu kontrol etmeli.
+    \item Yüklenen dosya için bir URL oluşturulmalı.
+\end{itemize}
+
+\textbf{US-11: Dosya İndirme}
+\begin{itemize}
+    \item Bir kullanıcı olarak, sohbette paylaşılan dosyaları indirebilmeliyim.
+    \item Dosya URL'leri güvenli ve zaman sınırlı olmalıdır.
+\end{itemize}
+
+\subsection{Bildirimler}
+\textbf{US-12: Gerçek Zamanlı Bildirimler}
+\begin{itemize}
+    \item Bir kullanıcı olarak, yeni mesaj aldığımda gerçek zamanlı bildirim alabilmeliyim.
+    \item Bildirimler, çevrimiçi kullanıcılara anında ulaşabilmelidir.
+    \item Bildirimler, çevrimdışı kullanıcılar için kuyrukta saklanabilmelidir.
+\end{itemize}
+
+\section{Ana Kullanım Akışları}
+
+\subsection{Kullanıcı Kayıt ve Giriş Akışı}
+\begin{enumerate}
+    \item Kullanıcı kayıt sayfasına girer.
+    \item E-posta, kullanıcı adı ve şifre bilgilerini girer.
+    \item Sistem kayıt bilgilerini doğrular ve kullanıcıyı oluşturur.
+    \item Doğrulama e-postası gönderilir.
+    \item Kullanıcı e-postasını doğrular.
+    \item Kullanıcı giriş sayfasından e-posta ve şifre ile giriş yapar.
+    \item Sistem kimlik bilgilerini doğrular.
+    \item Oturum token'ı oluşturulur ve kullanıcıya döndürülür.
+    \item Kullanıcı ana sayfaya yönlendirilir.
+\end{enumerate}
+
+\subsection{Mesaj Gönderme Akışı}
+\begin{enumerate}
+    \item Kullanıcı bir sohbet seçer.
+    \item Mesaj yazma alanına metin girer.
+    \item Mesajı gönder butonuna tıklar.
+    \item İstemci, mesajı Message Service'e gönderir.
+    \item Message Service mesajı doğrular ve veritabanına kaydeder.
+    \item Message Service, Notification Service'e bildirim gönderir.
+    \item Notification Service, sohbetteki diğer kullanıcılara WebSocket üzerinden bildirim gönderir.
+    \item Çevrimiçi kullanıcılar mesajı gerçek zamanlı olarak görür.
+    \item Çevrimdışı kullanıcılar için bildirim kuyrukta saklanır.
+\end{enumerate}
+
+\subsection{Dosya Paylaşımı Akışı}
+\begin{enumerate}
+    \item Kullanıcı sohbet içinde dosya ekle butonuna tıklar.
+    \item Dosya seçer (resim, video, doküman).
+    \item İstemci, dosyayı File Service'e yükler.
+    \item File Service dosyayı doğrular (tür, boyut kontrolü).
+    \item File Service dosyayı depolama sistemine kaydeder.
+    \item File Service dosya URL'ini döndürür.
+    \item İstemci, dosya URL'ini içeren bir mesaj oluşturur.
+    \item Mesaj normal mesaj gönderme akışı ile gönderilir.
+    \item Alıcılar dosyayı görüntüleyebilir veya indirebilir.
+\end{enumerate}
+
+\subsection{Grup Sohbeti Oluşturma Akışı}
+\begin{enumerate}
+    \item Kullanıcı "Yeni Grup" butonuna tıklar.
+    \item Grup adını girer ve katılımcıları seçer.
+    \item Chat Service'e grup oluşturma isteği gönderilir.
+    \item Chat Service grubu oluşturur ve veritabanına kaydeder.
+    \item Chat Service, seçilen kullanıcılara grup davet bildirimi gönderir.
+    \item Bildirimler Notification Service üzerinden gönderilir.
+    \item Grup sohbeti oluşturulur ve kullanıcılar sohbet listesinde görür.
+\end{enumerate}

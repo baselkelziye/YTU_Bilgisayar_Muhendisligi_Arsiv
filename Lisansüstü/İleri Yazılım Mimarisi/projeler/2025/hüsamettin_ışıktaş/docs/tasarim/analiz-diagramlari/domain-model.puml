@@ -1,0 +1,124 @@
+@startuml Domain Model - Gerçek Zamanlı Sohbet Uygulaması
+!theme plain
+
+title Domain Model - Gerçek Zamanlı Sohbet Uygulaması
+
+class User {
+  - id: String
+  - email: String
+  - username: String
+  - passwordHash: String
+  - firstName: String
+  - lastName: String
+  - profilePicture: String
+  - statusMessage: String
+  - createdAt: DateTime
+  - updatedAt: DateTime
+  + register()
+  + login()
+  + updateProfile()
+}
+
+class Chat {
+  - id: String
+  - type: ChatType
+  - name: String
+  - createdBy: String
+  - createdAt: DateTime
+  - updatedAt: DateTime
+  + createChat()
+  + addParticipant()
+  + removeParticipant()
+}
+
+enum ChatType {
+  DIRECT
+  GROUP
+}
+
+class ChatParticipant {
+  - id: String
+  - chatId: String
+  - userId: String
+  - role: ParticipantRole
+  - joinedAt: DateTime
+}
+
+enum ParticipantRole {
+  MEMBER
+  ADMIN
+}
+
+class Message {
+  - id: String
+  - chatId: String
+  - senderId: String
+  - content: String
+  - messageType: MessageType
+  - fileUrl: String
+  - status: MessageStatus
+  - createdAt: DateTime
+  - updatedAt: DateTime
+  + sendMessage()
+  + deleteMessage()
+  + updateStatus()
+}
+
+enum MessageType {
+  TEXT
+  FILE
+  IMAGE
+  VIDEO
+}
+
+enum MessageStatus {
+  SENT
+  DELIVERED
+  READ
+  DELETED
+}
+
+class File {
+  - id: String
+  - originalName: String
+  - storedName: String
+  - mimeType: String
+  - size: Long
+  - url: String
+  - uploadedBy: String
+  - createdAt: DateTime
+  + uploadFile()
+  + generateUrl()
+  + deleteFile()
+}
+
+class Notification {
+  - id: String
+  - userId: String
+  - type: NotificationType
+  - title: String
+  - body: String
+  - data: JSON
+  - read: Boolean
+  - createdAt: DateTime
+  + sendNotification()
+  + markAsRead()
+}
+
+enum NotificationType {
+  MESSAGE
+  FILE
+  CHAT_INVITE
+}
+
+' İlişkiler
+User "1" --> "*" ChatParticipant : participates in
+Chat "1" --> "*" ChatParticipant : has
+Chat "1" --> "*" Message : contains
+User "1" --> "*" Message : sends
+User "1" --> "*" File : uploads
+User "1" --> "*" Notification : receives
+Message "0..1" --> "0..1" File : references
+
+@enduml
+

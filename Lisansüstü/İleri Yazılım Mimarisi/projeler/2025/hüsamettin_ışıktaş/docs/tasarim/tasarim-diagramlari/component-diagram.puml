@@ -1,0 +1,108 @@
+@startuml Component Diagram - Mikroservis Mimarisi
+!theme plain
+
+title Component Diagram - Gerçek Zamanlı Sohbet Mikroservis Mimarisi
+
+package "API Gateway" {
+  component [API Gateway] as APIGateway
+  component [Authentication Middleware] as AuthMiddleware
+}
+
+package "WebSocket Gateway" {
+  component [WebSocket Gateway] as WSGateway
+  component [Connection Manager] as ConnManager
+}
+
+package "User Service" {
+  component [User Controller] as UserController
+  component [User Service] as UserService
+  component [User Model] as UserModel
+  database "User DB" as UserDB
+}
+
+package "Chat Service" {
+  component [Chat Controller] as ChatController
+  component [Chat Service] as ChatService
+  component [Chat Model] as ChatModel
+  database "Chat DB" as ChatDB
+}
+
+package "Message Service" {
+  component [Message Controller] as MessageController
+  component [Message Service] as MessageService
+  component [Message Model] as MessageModel
+  database "Message DB" as MessageDB
+}
+
+package "Notification Service" {
+  component [Notification Controller] as NotificationController
+  component [Notification Service] as NotificationService
+  component [Notification Model] as NotificationModel
+  database "Notification DB" as NotificationDB
+}
+
+package "File Service" {
+  component [File Controller] as FileController
+  component [File Service] as FileService
+  component [File Model] as FileModel
+  database "File DB" as FileDB
+  component [Storage Service] as StorageService
+}
+
+package "Message Queue" {
+  queue "RabbitMQ" as RabbitMQ
+}
+
+package "Cache" {
+  database "Redis" as Redis
+}
+
+' İlişkiler
+[Client] --> APIGateway : HTTP/HTTPS
+APIGateway --> AuthMiddleware
+APIGateway --> UserController
+APIGateway --> ChatController
+APIGateway --> MessageController
+APIGateway --> NotificationController
+APIGateway --> FileController
+
+[Client] --> WSGateway : WebSocket
+WSGateway --> ConnManager
+
+UserController --> UserService
+UserService --> UserModel
+UserModel --> UserDB
+
+ChatController --> ChatService
+ChatService --> ChatModel
+ChatModel --> ChatDB
+
+MessageController --> MessageService
+MessageService --> MessageModel
+MessageModel --> MessageDB
+
+NotificationController --> NotificationService
+NotificationService --> NotificationModel
+NotificationModel --> NotificationDB
+
+FileController --> FileService
+FileService --> FileModel
+FileModel --> FileDB
+FileService --> StorageService
+
+MessageService --> RabbitMQ : Publish
+NotificationService --> RabbitMQ : Subscribe
+ChatService --> RabbitMQ : Publish
+NotificationService --> RabbitMQ : Publish
+
+UserService --> Redis : Cache
+ChatService --> Redis : Cache
+MessageService --> Redis : Cache
+
+MessageService --> NotificationService : REST API
+ChatService --> UserService : REST API
+NotificationService --> WSGateway : WebSocket Push
+FileService --> MessageService : REST API
+
+@enduml
+

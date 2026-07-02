@@ -1,0 +1,64 @@
+\chapter{Gereksinimler}
+
+\section{İşlevsel Gereksinimler (Functional Requirements)}
+
+\subsection{Kullanıcı Yönetimi}
+\begin{itemize}
+    \item \textbf{FR-1.1: Kayıt:} E-posta, kullanıcı adı ve şifre ile kayıt olma, benzersizlik kontrolü ve en az 6 karakterli şifre zorunluluğu.
+    \item \textbf{FR-1.2: Giriş:} E-posta/şifre ile doğrulama, başarılı girişte JWT token üretimi ve token süresinin yönetimi.
+    \item \textbf{FR-1.3: Profil:} Profil bilgilerini görüntüleme ve güncelleme yeteneği.
+\end{itemize}
+
+\subsection{Sohbet Yönetimi}
+\begin{itemize}
+    \item \textbf{FR-2.1: Birebir Sohbet:} İki kullanıcı arasında sohbet başlatma, mevcut sohbetin kontrolü.
+    \item \textbf{FR-2.2: Grup Sohbeti:} Grup adı, katılımcı ekleme/çıkarma ve grup yöneticisi fonksiyonları.
+    \item \textbf{FR-2.3: Liste:} Sohbetlerin son mesaj zamanına göre sıralanması ve önizleme gösterimi.
+\end{itemize}
+
+\subsection{Mesajlaşma}
+\begin{itemize}
+    \item \textbf{FR-3.1: Gönderim:} Metin mesajlarının gerçek zamanlı iletimi ve durum takibi (gönderildi, iletildi, okundu).
+    \item \textbf{FR-3.2: Geçmiş:} Mesaj geçmişinin sayfalı (pagination) yapıda kronolojik olarak sunulması.
+    \item \textbf{FR-3.3: Silme:} Mesajların "soft delete" yöntemiyle silinmesi ve karşı tarafa bildirilmesi.
+\end{itemize}
+
+\subsection{Dosya Paylaşımı}
+\begin{itemize}
+    \item \textbf{FR-4.1: Yükleme:} 50 MB sınırına kadar resim, video, doküman yükleme desteği.
+    \item \textbf{FR-4.2: İndirme:} Dosyaların güvenli URL'ler üzerinden indirilmesi.
+\end{itemize}
+
+\subsection{Bildirimler}
+\begin{itemize}
+    \item \textbf{FR-5.1: Anlık:} WebSocket üzerinden anlık bildirim iletimi.
+    \item \textbf{FR-5.2: Çevrimdışı:} Kullanıcı sisteme girdiğinde iletilmek üzere bildirimlerin kuyrukta saklanması.
+\end{itemize}
+
+\section{İşlevsel Olmayan Gereksinimler (Non-Functional Requirements)}
+
+\subsection{Performans}
+\begin{itemize}
+    \item \textbf{NFR-1.1: Yanıt Süresi:} API isteklerinin \%95'i 500 ms altında, mesaj gönderimi 200 ms altında tamamlanmalıdır.
+    \item \textbf{NFR-1.2: Kapasite:} Sistem saniyede en az 1000 mesajı ve 10,000 eşzamanlı kullanıcıyı desteklemelidir.
+\end{itemize}
+
+\subsection{Ölçeklenebilirlik}
+\begin{itemize}
+    \item \textbf{NFR-2.1: Yatay Ölçekleme:} Servisler bağımsız olarak ölçeklendirilebilmeli, her servis en az 3 örnekle çalışabilmelidir.
+    \item \textbf{NFR-2.2: Veri Hacmi:} Veritabanı milyonlarca mesajı saklayabilecek yapıda olmalıdır.
+\end{itemize}
+
+\subsection{Güvenlik}
+\begin{itemize}
+    \item \textbf{NFR-3.1: Kimlik Doğrulama:} Tüm istekler JWT ile doğrulanmalı, şifreler bcrypt ile hash'lenmelidir.
+    \item \textbf{NFR-3.2: İletişim:} Tüm veri akışı HTTPS üzerinden sağlanmalıdır.
+    \item \textbf{NFR-3.3: Kontroller:} Rate limiting (dakikada 60 istek) ve SQL Injection/XSS korumaları uygulanmalıdır.
+\end{itemize}
+
+\subsection{Dayanıklılık ve Bakım}
+\begin{itemize}
+    \item \textbf{NFR-5.1: Uptime:} Sistem \%99.5 erişilebilirlik sağlamalıdır.
+    \item \textbf{NFR-5.2: Hata Toleransı:} Circuit breaker pattern ile hata izolasyonu sağlanmalıdır.
+    \item \textbf{NFR-6.1: Loglama:} ELK Stack kullanılarak merkezi loglama yapılmalıdır.
+\end{itemize}
