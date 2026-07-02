@@ -1,0 +1,262 @@
+Lempel–Ziv–Welch - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Lempel%E2%80%93Ziv%E2%80%93Welch "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Lempel%E2%80%93Ziv%E2%80%93Welch "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Lempel%E2%80%93Ziv%E2%80%93Welch "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Lempel%E2%80%93Ziv%E2%80%93Welch "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  Algorithm](#Algorithm)
+
+
+  Toggle Algorithm subsection
+  + [1.1
+    Encoding](#Encoding)
+  + [1.2
+    Decoding](#Decoding)
+  + [1.3
+    Variable-width codes](#Variable-width_codes)
+  + [1.4
+    Packing order](#Packing_order)
+  + [1.5
+    Further coding](#Further_coding)
+* [2
+  Example](#Example)
+
+
+  Toggle Example subsection
+  + [2.1
+    Encoding](#Encoding_2)
+  + [2.2
+    Decoding](#Decoding_2)
+* [3
+  Patents](#Patents)
+* [4
+  Variants](#Variants)
+
+
+  Toggle Variants subsection
+  + [4.1
+    LZMW](#LZMW)
+  + [4.2
+    LZAP](#LZAP)
+  + [4.3
+    LZWL](#LZWL)
+* [5
+  See also](#See_also)
+* [6
+  References](#References)
+* [7
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Lempel–Ziv–Welch
+
+21 languages
+
+* [العربية](https://ar.wikipedia.org/wiki/%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9_%D9%84%D8%A7%D9%85%D8%A8%D9%84_%D9%88%D8%B2%D9%8A%D9%81_%D9%88%D9%88%D9%8A%D9%84%D8%B4 "خوارزمية لامبل وزيف وويلش – Arabic")
+* [Català](https://ca.wikipedia.org/wiki/LZW "LZW – Catalan")
+* [Čeština](https://cs.wikipedia.org/wiki/LZW "LZW – Czech")
+* [Deutsch](https://de.wikipedia.org/wiki/Lempel-Ziv-Welch-Algorithmus "Lempel-Ziv-Welch-Algorithmus – German")
+* [Español](https://es.wikipedia.org/wiki/LZW "LZW – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Lempel-Ziv-Welch "Lempel-Ziv-Welch – Estonian")
+* [فارسی](https://fa.wikipedia.org/wiki/%D8%A7%D9%84_%D8%B2%D8%AF_%D8%AF%D8%A7%D8%A8%D9%84%DB%8C%D9%88 "ال زد دابلیو – Persian")
+* [Français](https://fr.wikipedia.org/wiki/Lempel-Ziv-Welch "Lempel-Ziv-Welch – French")
+* [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A5%87%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A5%87%E0%A4%B2-%E0%A4%9C%E0%A4%BC%E0%A4%BF%E0%A4%B5-%E0%A4%B5%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%9A "लेम्पेल-ज़िव-वेल्च – Hindi")
+* [Magyar](https://hu.wikipedia.org/wiki/LZW "LZW – Hungarian")
+* [Italiano](https://it.wikipedia.org/wiki/Lempel-Ziv-Welch "Lempel-Ziv-Welch – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch "Lempel–Ziv–Welch – Japanese")
+* [한국어](https://ko.wikipedia.org/wiki/LZW "LZW – Korean")
+* [Nederlands](https://nl.wikipedia.org/wiki/Lempel_Ziv_Welch "Lempel Ziv Welch – Dutch")
+* [Polski](https://pl.wikipedia.org/wiki/LZW "LZW – Polish")
+* [Português](https://pt.wikipedia.org/wiki/LZW "LZW – Portuguese")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D0%B5%D0%BC%D0%BF%D0%B5%D0%BB%D1%8F_%E2%80%94_%D0%97%D0%B8%D0%B2%D0%B0_%E2%80%94_%D0%92%D0%B5%D0%BB%D1%87%D0%B0 "Алгоритм Лемпеля — Зива — Велча – Russian")
+* [Svenska](https://sv.wikipedia.org/wiki/Lempel-Ziv-Welch "Lempel-Ziv-Welch – Swedish")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D0%B5%D0%BC%D0%BF%D0%B5%D0%BB%D1%8F_%E2%80%94_%D0%97%D1%96%D0%B2%D0%B0_%E2%80%94_%D0%92%D0%B5%D0%BB%D1%87%D0%B0 "Алгоритм Лемпеля — Зіва — Велча – Ukrainian")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/LZW "LZW – Vietnamese")
+* [中文](https://zh.wikipedia.org/wiki/LZW "LZW – Chinese")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q2681#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch "View the content page [c]")
+* [Talk](/wiki/Talk:Lempel%E2%80%93Ziv%E2%80%93Welch "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch)
+* [Edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch)
+* [Edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Lempel%E2%80%93Ziv%E2%80%93Welch "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Lempel%E2%80%93Ziv%E2%80%93Welch "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&oldid=1348046225 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Lempel%E2%80%93Ziv%E2%80%93Welch&id=1348046225&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLempel%25E2%2580%2593Ziv%25E2%2580%2593Welch)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Lempel%E2%80%93Ziv%E2%80%93Welch&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Lempel%E2%80%93Ziv%E2%80%93Welch)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q2681 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+(Redirected from [Lempel-Ziv-Welch](/w/index.php?title=Lempel-Ziv-Welch&redirect=no "Lempel-Ziv-Welch"))
+
+Universal lossless data compression algorithm
+
+|  |  |
+| --- | --- |
+|  | This article includes a list of [general references](/wiki/Wikipedia:Citing_sources#General_references "Wikipedia:Citing sources"), but **it lacks sufficient corresponding [inline citations](/wiki/Wikipedia:Citing_sources#Inline_citations "Wikipedia:Citing sources")**. Please help to [improve](/wiki/Wikipedia:WikiProject_Reliability "Wikipedia:WikiProject Reliability") this article by [introducing](/wiki/Wikipedia:When_to_cite "Wikipedia:When to cite") more precise citations. *(August 2017)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))* |
+
+**Lempel–Ziv–Welch** (**LZW**) is a universal [lossless compression](/wiki/Lossless_compression "Lossless compression") [algorithm](/wiki/Algorithm "Algorithm") created by [Abraham Lempel](/wiki/Abraham_Lempel "Abraham Lempel"), [Jacob Ziv](/wiki/Jacob_Ziv "Jacob Ziv"), and [Terry Welch](/wiki/Terry_Welch "Terry Welch"). It was published by Welch in 1984 as an improvement to the [LZ78](/wiki/LZ77_and_LZ78 "LZ77 and LZ78") algorithm published by Lempel and Ziv in 1978. Claimed advantages include: simple to implement and the potential for high throughput in a hardware implementation.[[1]](#cite_note-WelchIEEE-1)
+
+A large [English](/wiki/English_language "English language") [text file](/wiki/Text_file "Text file") can typically be compressed via LZW to about half its original size.
+
+The algorithm became the first widely used universal data compression method used on computers. The algorithm was used in the [compress](/wiki/Compress "Compress") program commonly included in [Unix](/wiki/Unix "Unix") systems starting around 1986. It has since disappeared from many distributions, because it both infringed the LZW patent and because [gzip](/wiki/Gzip "Gzip") produced better compression ratios using the LZ77-based [DEFLATE](/wiki/DEFLATE "DEFLATE") algorithm. The algorithm found wide use when it became part of the [GIF](/wiki/GIF "GIF") image format in 1987. It may optionally be used in [TIFF](/wiki/TIFF "TIFF") and [PDF](/wiki/PDF "PDF") files. Although LZW is available in [Adobe Acrobat](/wiki/Adobe_Acrobat "Adobe Acrobat") software, Acrobat by default uses [DEFLATE](/wiki/DEFLATE "DEFLATE") for most text and color-table-based image data in PDF files.
+
+## Algorithm
+
+[[edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit&section=1 "Edit section: Algorithm")]
+
+The scenario described by Welch's 1984 paper[[1]](#cite_note-WelchIEEE-1) encodes sequences of 8-bit data as fixed-length 12-bit codes. The codes from 0 to 255 represent 1-character sequences consisting of the corresponding 8-bit character, and the codes 256 through 4095 are created in a dictionary for sequences encountered in the data as it is encoded. At each stage in compression, input bytes are gathered into a sequence until the next character would make a sequence with no code yet in the dictionary. The code for the sequence (without that character) is added to the output, and a new code (for the sequence with that character) is added to the dictionary.
+
+In the practical application of image compression and for an image based on a color table, a natural character alphabet is the set of color table indexes. In the 1980s, many images had small color tables (on the order of 16 colors). For such a reduced alphabet, the full 12-bit codes yielded poor compression unless the image was large, so the idea of a **variable-width** code was introduced: codes typically start one bit wider than the symbols being encoded, and as each code size is used up, the code width increases by 1 bit, up to some prescribed maximum (typically 12 bits). When the maximum code value is reached, encoding proceeds using the existing table, but new codes are not generated for addition to the table.
+
+Further refinements include reserving a code to indicate that the code table should be cleared and restored to its initial state (a "clear code", typically the first value immediately after the values for the individual alphabet characters), and a code to indicate the end of data (a "stop code", typically one greater than the clear code). The clear code lets the table be reinitialized after it fills up, which lets the encoding adapt to changing patterns in the input data. Smart encoders can monitor the compression efficiency and clear the table whenever the existing table no longer matches the input well.
+
+Since codes are added in a manner determined by the data, the decoder mimics building the table as it sees the resulting codes. It is critical that the encoder and decoder agree on the variety of LZW used: the size of the alphabet, the maximum table size (and code width), whether variable-width encoding is used, initial code size, and whether to use the clear and stop codes (and what values they have). Most formats that employ LZW build this information into the format specification or provide explicit fields for them in a compression header for the data.
+
+### Encoding
+
+[[edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit&section=2 "Edit section: Encoding")]
+
+The encoding process can be described as:
+
+1. Initialize the dictionary to contain all strings of length one.
+2. Find the longest string **W** in the dictionary that matches the current input.
+3. Emit the dictionary index for **W** to output and remove **W** from the input.
+4. Add **W** followed by the next symbol in the input to the dictionary.
+5. Go to Step 2.
+
+A dictionary is initialized to contain the single-character strings corresponding to all the possible input characters (and nothing else except the clear and stop codes if they're being used). The algorithm works by scanning through the input string for successively longer substrings until it finds one that is not in the dictionary. When such a string is found, the index for the string without the last character (i.e., the longest substring that *is* in the dictionary) is retrieved from the dictionary and sent to output, and the new string (including the last character) is added to the dictionary with the next available code. The last input character is then used as the next starting point to scan for substrings.
+
+In this way, successively longer strings are registered in the dictionary and available for subsequent encoding as single output values. The algorithm works best on data with repeated patterns, so the initial parts of a message see little compression. As the message grows, however, the [compression ratio](/wiki/Data_compression_ratio "Data compression ratio") tends asymptotically to the maximum (i.e., the compression factor or ratio improves on an increasing curve, and not linearly, approaching a theoretical maximum inside a limited time period rather than over infinite time).[[2]](#cite_note-2)
+
+### Decoding
+
+[[edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit&section=3 "Edit section: Decoding")]
+
+The decoding process can be described as:
+
+1. Initialize the dictionary to contain all strings of length one.
+2. Read the next encoded symbol.
+3. If the symbol is not encoded in the dictionary, goto step 7.
+4. Emit the corresponding string **W** to output.
+5. Concatenate the previous string emitted to output with the first symbol of **W**; add this to the dictionary.
+6. Go to step 9.
+7. Concatenate the previous string emitted to output with its first symbol; call this string **V**.
+8. Add **V** to the dictionary and emit **V** to output.
+9. Repeat step 2 until end of input.
+
+The decoding algorithm works by reading a value from the encoded input and outputting the corresponding string from the dictionary. However, the full dictionary is not needed, only the initial dictionary that contains single-character strings (and that is usually [hard coded](/wiki/Hard_coding "Hard coding") in the program, instead of sent with the encoded data). Instead, the full dictionary is rebuilt during the decoding process the following way: after decoding a value and outputting a string, the decoder [concatenates](/wiki/Concatenation "Concatenation") it with the first character of the *next* decoded string (or the first character of current string, if the next one can't be decoded; since if the next value is unknown, then it must be the value added to the dictionary in *this* iteration, and so its first character is the same as the first character of the current string), and updates the dictionary with the new string. The decoder then proceeds to the next input (which was already read in the previous iteration) and processes it as before, and so on until it has exhausted the input stream.
+
+### Variable-width codes
+
+[[edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit&section=4 "Edit section: Variable-width codes")]
+
+If variable-width codes are being used, the encoder and decoder must be careful to change the width at the same points in the encoded data so they don't disagree on boundaries between individual codes in the stream. In the standard version, the encoder increases the width from *p* to *p* + 1 when a sequence ω + *s* is encountered that is not in the table (so that a code must be added for it) but the next available code in the table is 2*p* (the first code requiring *p* + 1 bits). The encoder emits the code for ω at width *p* (since that code does not require *p* + 1 bits), and then increases the code width so that the next code emitted is *p* + 1 bits wide.
+
+The decoder is always one code behind the encoder in building the table, so when it sees the code for ω, it generates an entry for code 2*p* − 1. Since this is the point where the encoder increases the code width, the decoder must increase the width here as well—at the point where it generates the largest code that fits in *p* bits.
+
+Unfortunately, some early implementations of the encoding algorithm increase the code width and *then* emit ω at the new width instead of the old width, so that to the decoder it looks like the width changes one code too early. This is called "early change"; it caused so much confusion that Adobe now allows both versions in PDF files, but includes an explicit flag in the header of each LZW-compressed stream to indicate whether early change is being used. Of the graphics file formats that support LZW compression, [TIFF](/wiki/TIFF "TIFF") uses early change, while [GIF](/wiki/GIF "GIF") and most others don't.
+
+When the table is cleared in response to a clear code, both encoder and decoder change the code width after the clear code back to the initial code width, starting with the code immediately following the clear code.
+
+### Packing order
+
+[[edit](/w/index.php?title=Lempel%E2%80%93Ziv%E2%80%93Welch&action=edit&section=5 "Edit section: Packing order")]
+
+Since the codes emitted typically do not fall on byte boundaries, the encoder and decoder must agree on how codes are packed into bytes. The two common methods are *LSB-first* ("[least significant bit](/wiki/Least_significant_bit "Least significant bit") first") and *MSB-first* ("[most significant bit](/wiki/Most_significant_bit "Most significant bit") first"). In LSB-first packing, the first code is aligned so that the least significant bit of the code falls in the least significant bit of the first stream byte, and if the code has more than 8 bits, the high-order bits left over are aligned with the least significant bits of the next byte; further codes are packed with LSB going into the least significant bit not yet used in the current stream byte, proceeding into further bytes as necessary. MSB-first packing aligns the first code so that its *most* significant bit falls in the MSB of the first stream byte, with overflow aligned with the MSB of the next byte; further codes are written with MSB going into the most significant bit not yet used in the current stream byte.
+
+GIF files use LSB-first packing order. TIFF files and PDF files use MSB-first packing order.
+
+### Further co

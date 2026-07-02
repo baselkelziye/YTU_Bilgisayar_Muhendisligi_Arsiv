@@ -1,0 +1,17 @@
+{
+  "success": false,
+  "platform": "Linux-6.19.13-200.fc43.x86_64-x86_64-with-glibc2.42",
+  "python_version": "3.14.4",
+  "python_ok": true,
+  "packages": {
+    "yaml": true,
+    "numpy": false,
+    "pandas": false
+  },
+  "paths": {
+    "src": true,
+    "config": true,
+    "data": true,
+    "tests": true
+  }
+}

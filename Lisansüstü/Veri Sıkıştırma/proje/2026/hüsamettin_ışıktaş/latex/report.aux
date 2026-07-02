@@ -1,0 +1,48 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Motivation}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Dataset and Approach}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Diverse Corpus}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces (Left) Corpus composition across 7 text domains ensures algorithm diversity. (Right) Key performance indicators for the final system.\relax }}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:corpus}{{1}{2}{(Left) Corpus composition across 7 text domains ensures algorithm diversity. (Right) Key performance indicators for the final system.\relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Supervised Learning Pipeline}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Five Classical Algorithms}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Chunk Size: Finding the Sweet Spot}{3}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces (Left) BPB comparison across chunk sizes---adaptive only beats bwt\_mtf at 1024 bytes. At 4096+ bytes, bwt\_mtf dominates and adaptive provides no benefit. (Right) Algorithm winner distribution at 1024B vs 4096B. Three algorithms compete naturally at 1024B; at 4096B, bwt\_mtf wins virtually everything.\relax }}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:chunk}{{2}{3}{(Left) BPB comparison across chunk sizes---adaptive only beats bwt\_mtf at 1024 bytes. At 4096+ bytes, bwt\_mtf dominates and adaptive provides no benefit. (Right) Algorithm winner distribution at 1024B vs 4096B. Three algorithms compete naturally at 1024B; at 4096B, bwt\_mtf wins virtually everything.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Model Training and Selection}{3}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (Left) Model accuracy comparison---MLP-Large achieves 84.8\%, outperforming XGBoost and smaller MLP variants. (Right) Per-chunk compression times---the adaptive system is 24\% faster than always using bwt\_mtf because it often selects faster algorithms like LZW or Huffman.\relax }}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:model}{{3}{4}{(Left) Model accuracy comparison---MLP-Large achieves 84.8\%, outperforming XGBoost and smaller MLP variants. (Right) Per-chunk compression times---the adaptive system is 24\% faster than always using bwt\_mtf because it often selects faster algorithms like LZW or Huffman.\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}K-Fold Cross-Validation}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces (Left) BPB per run: adaptive (blue) consistently outperforms bwt\_mtf (red) across all 15 runs. (Right) Per-run improvement---every single run beats bwt\_mtf, confirming robustness. Paired t-test: $t = 43.16$, $p < 10^{-6}$.\relax }}{4}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:kfold}{{4}{4}{(Left) BPB per run: adaptive (blue) consistently outperforms bwt\_mtf (red) across all 15 runs. (Right) Per-run improvement---every single run beats bwt\_mtf, confirming robustness. Paired t-test: $t = 43.16$, $p < 10^{-6}$.\relax }{figure.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces K-fold cross-validation results (15 runs).\relax }}{5}{table.caption.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Oracle Gap Analysis}{5}{subsection.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces (Left) Oracle gap---the adaptive system captures 91\% of the maximum possible improvement over bwt\_mtf. (Right) All 15 cross-validation runs show positive improvement with tight variance ($\pm $0.19\%).\relax }}{5}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:oracle}{{5}{5}{(Left) Oracle gap---the adaptive system captures 91\% of the maximum possible improvement over bwt\_mtf. (Right) All 15 cross-validation runs show positive improvement with tight variance ($\pm $0.19\%).\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Speed Advantage}{5}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}When Does Adaptive Help?}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Modern Codecs Make This Obsolete?}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Failure Modes}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{6}{section.7}\protected@file@percent }
+\bibcite{huffman}{1}
+\bibcite{welch}{2}
+\bibcite{burrows}{3}
+\bibcite{witten}{4}
+\gdef \@abspage@last{7}

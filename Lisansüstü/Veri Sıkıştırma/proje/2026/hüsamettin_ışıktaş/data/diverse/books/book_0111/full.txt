@@ -1,0 +1,296 @@
+数据压缩 - 维基百科，自由的百科全书
+
+[跳转到内容](#bodyContent)
+
+主菜单
+
+主菜单
+
+移至侧栏
+隐藏
+
+导航
+
+* [首页](/wiki/Wikipedia:%E9%A6%96%E9%A1%B5 "访问首页​[z]")
+* [分类索引](/wiki/Wikipedia:%E5%88%86%E7%B1%BB%E7%B4%A2%E5%BC%95 "以分类索引搜寻中文维基百科")
+* [特色内容](/wiki/Portal:%E7%89%B9%E8%89%B2%E5%85%A7%E5%AE%B9 "查看中文维基百科的特色内容")
+* [新闻动态](/wiki/Portal:%E6%96%B0%E8%81%9E%E5%8B%95%E6%85%8B "提供当前新闻事件的背景资料")
+* [随机条目](/wiki/Special:Random "随机载入一个页面​[x]")
+* [联络我们](/wiki/Wikipedia:%E8%81%94%E7%BB%9C%E6%88%91%E4%BB%AC "如何联络维基百科")
+* [关于维基百科](/wiki/Wikipedia:%E5%85%B3%E4%BA%8E "查看维基百科的简介")
+
+贡献
+
+* [帮助](/wiki/Help:%E9%A6%96%E9%A1%B5 "寻求帮助")
+* [维基社群](/wiki/Wikipedia:%E7%A4%BE%E7%BE%A4%E9%A6%96%E9%A1%B5 "关于本计划、你可以做什么、应该如何做")
+* [编辑入门](/wiki/Help:%E5%85%A5%E9%97%A8)
+* [互助客栈](/wiki/Wikipedia:%E4%BA%92%E5%8A%A9%E5%AE%A2%E6%A0%88 "参与维基百科社群的讨论")
+* [IRC即时聊天](/wiki/Wikipedia:IRC%E8%81%8A%E5%A4%A9%E9%A2%91%E9%81%93)
+* [最近更改](/wiki/Special:RecentChanges "列出维基百科中的最近修改​[r]")
+* [特殊页面](/wiki/Special:SpecialPages "所有特殊页面的列表​[q]")
+
+[![](/static/images/icons/wikipedia.png)
+
+![维基百科](/static/images/mobile/copyright/wikipedia-wordmark-zh.svg)
+![自由的百科全书](/static/images/mobile/copyright/wikipedia-tagline-zh.svg)](/wiki/Wikipedia:%E9%A6%96%E9%A1%B5)
+
+[搜索](/wiki/Special:Search "搜索维基百科​[f]")
+
+搜索
+
+外观
+
+* [资助维基百科](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=zh.wikipedia.org&uselang=zh)
+* [创建账号](/w/index.php?title=Special:CreateAccount&returnto=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "我们推荐您创建账号并登录，但这不是强制性的")
+* [登录](/w/index.php?title=Special:UserLogin&returnto=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "建议你登录，尽管并非必须。​[o]")
+
+个人工具
+
+* [资助维基百科](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=zh.wikipedia.org&uselang=zh)
+* [创建账号](/w/index.php?title=Special:CreateAccount&returnto=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "我们推荐您创建账号并登录，但这不是强制性的")
+* [登录](/w/index.php?title=Special:UserLogin&returnto=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "建议你登录，尽管并非必须。​[o]")
+
+## 目录
+
+移至侧栏
+隐藏
+
+* [序言](#)
+* [1
+  概要](#概要)
+* [2
+  应用](#应用)
+* [3
+  理论](#理论)
+* [4
+  参见](#参见)
+
+
+  开关参见子章节
+  + [4.1
+    数据压缩专题](#数据压缩专题)
+  + [4.2
+    压缩算法](#压缩算法)
+    - [4.2.1
+      无损数据压缩](#无损数据压缩)
+    - [4.2.2
+      有损数据压缩](#有损数据压缩)
+    - [4.2.3
+      实现实例](#实现实例)
+* [5
+  外部链接](#外部链接)
+
+开关目录
+
+# 数据压缩
+
+65种语言
+
+* [Alemannisch](https://als.wikipedia.org/wiki/Datenkompression "Datenkompression – 瑞士德语")
+* [العربية](https://ar.wikipedia.org/wiki/%D8%B6%D8%BA%D8%B7_%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA "ضغط بيانات – 阿拉伯语")
+* [Asturianu](https://ast.wikipedia.org/wiki/Compresi%C3%B3n_de_datos "Compresión de datos – 阿斯图里亚斯语")
+* [Azərbaycanca](https://az.wikipedia.org/wiki/Veril%C9%99nl%C9%99rin_s%C4%B1xla%C5%9Fd%C4%B1r%C4%B1lmas%C4%B1 "Verilənlərin sıxlaşdırılması – 阿塞拜疆语")
+* [Беларуская (тарашкевіца)](https://be-tarask.wikipedia.org/wiki/%D0%A1%D1%8C%D1%86%D1%96%D1%81%D0%BA%D0%B0%D0%BD%D1%8C%D0%BD%D0%B5_%D0%B7%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D0%B0%D0%BA "Сьцісканьне зьвестак – Belarusian (Taraškievica orthography)")
+* [Български](https://bg.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%B5%D1%81%D0%B8%D1%80%D0%B0%D0%BD%D0%B5_%D0%BD%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8 "Компресиране на данни – 保加利亚语")
+* [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%A4_%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A7%8B%E0%A6%9A%E0%A6%A8 "উপাত্ত সংকোচন – 孟加拉语")
+* [Bosanski](https://bs.wikipedia.org/wiki/Sa%C5%BEimanje_podataka "Sažimanje podataka – 波斯尼亚语")
+* [Català](https://ca.wikipedia.org/wiki/Compressi%C3%B3_de_dades "Compressió de dades – 加泰罗尼亚语")
+* [کوردی](https://ckb.wikipedia.org/wiki/%D9%BE%DB%95%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D9%86%DB%8C_%D8%AF%D8%A7%D8%AA%D8%A7 "پەستاندنی داتا – 中库尔德语")
+* [Čeština](https://cs.wikipedia.org/wiki/Komprese_dat "Komprese dat – 捷克语")
+* [Чӑвашла](https://cv.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%C4%83%D0%BB%C4%83%D1%85%D1%81%D0%B5%D0%BD%D0%B5_%D1%85%C4%95%D1%81%D0%B5%D1%81%D1%81%D0%B8 "Панăлăхсене хĕсесси – 楚瓦什语")
+* [Dansk](https://da.wikipedia.org/wiki/Datakompression "Datakompression – 丹麦语")
+* [Deutsch](https://de.wikipedia.org/wiki/Datenkompression "Datenkompression – 德语")
+* [Ελληνικά](https://el.wikipedia.org/wiki/%CE%A3%CF%85%CE%BC%CF%80%CE%AF%CE%B5%CF%83%CE%B7_%CE%B4%CE%B5%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD "Συμπίεση δεδομένων – 希腊语")
+* [English](https://en.wikipedia.org/wiki/Data_compression "Data compression – 英语")
+* [Esperanto](https://eo.wikipedia.org/wiki/Datumdensigo "Datumdensigo – 世界语")
+* [Español](https://es.wikipedia.org/wiki/Compresi%C3%B3n_de_datos "Compresión de datos – 西班牙语")
+* [Eesti](https://et.wikipedia.org/wiki/Andmete_pakkimine "Andmete pakkimine – 爱沙尼亚语")
+* [Euskara](https://eu.wikipedia.org/wiki/Datu-konpresio "Datu-konpresio – 巴斯克语")
+* [فارسی](https://fa.wikipedia.org/wiki/%D9%81%D8%B4%D8%B1%D8%AF%D9%87%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%AF%D8%A7%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7 "فشرده‌سازی داده‌ها – 波斯语")
+* [Suomi](https://fi.wikipedia.org/wiki/Tiedonpakkaus "Tiedonpakkaus – 芬兰语")
+* [Français](https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es "Compression de données – 法语")
+* [Gaeilge](https://ga.wikipedia.org/wiki/Comhbhr%C3%BA_sonra%C3%AD "Comhbhrú sonraí – 爱尔兰语")
+* [עברית](https://he.wikipedia.org/wiki/%D7%93%D7%97%D7%99%D7%A1%D7%AA_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D "דחיסת נתונים – 希伯来语")
+* [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%82%E0%A4%95%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%A8 "आंकड़ा संपीडन – 印地语")
+* [Hrvatski](https://hr.wikipedia.org/wiki/Sa%C5%BEimanje_podataka "Sažimanje podataka – 克罗地亚语")
+* [Magyar](https://hu.wikipedia.org/wiki/Adatt%C3%B6m%C3%B6r%C3%ADt%C3%A9s "Adattömörítés – 匈牙利语")
+* [Հայերեն](https://hy.wikipedia.org/wiki/%D5%8F%D5%BE%D5%B5%D5%A1%D5%AC%D5%B6%D5%A5%D6%80%D5%AB_%D5%BD%D5%A5%D5%B2%D5%B4%D5%B8%D6%82%D5%B4_(%D5%AF%D5%B8%D5%B4%D5%BA%D6%80%D5%A5%D5%BD%D5%AB%D5%A1) "Տվյալների սեղմում (կոմպրեսիա) – 亚美尼亚语")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Kompresi_data "Kompresi data – 印度尼西亚语")
+* [Italiano](https://it.wikipedia.org/wiki/Compressione_dei_dati "Compressione dei dati – 意大利语")
+* [日本語](https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE "データ圧縮 – 日语")
+* [Jawa](https://jv.wikipedia.org/wiki/Pametelan_Data "Pametelan Data – 爪哇语")
+* [Қазақша](https://kk.wikipedia.org/wiki/%D0%9C%D3%99%D0%BB%D1%96%D0%BC%D0%B5%D1%82%D1%82%D0%B5%D1%80%D0%B4%D1%96_%D1%81%D1%8B%D2%93%D1%8B%D0%BC%D0%B4%D0%B0%D1%83 "Мәліметтерді сығымдау – 哈萨克语")
+* [ភាសាខ្មែរ](https://km.wikipedia.org/wiki/Data_compression "Data compression – 高棉语")
+* [한국어](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%95%95%EC%B6%95 "데이터 압축 – 韩语")
+* [Kurdî](https://ku.wikipedia.org/wiki/Kompresyona_daney%C3%AA "Kompresyona daneyê – 库尔德语")
+* [Кыргызча](https://ky.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%B8%D0%BB%D0%B8%D1%88%D1%82%D0%B5%D1%80%D0%B4%D0%B8_%D0%BA%D1%8B%D1%81%D1%83%D1%83 "Берилиштерди кысуу – 吉尔吉斯语")
+* [Latina](https://la.wikipedia.org/wiki/Compressio_datorum "Compressio datorum – 拉丁语")
+* [Lietuvių](https://lt.wikipedia.org/wiki/Glaudinimas "Glaudinimas – 立陶宛语")
+* [Latviešu](https://lv.wikipedia.org/wiki/Datu_saspie%C5%A1ana "Datu saspiešana – 拉脱维亚语")
+* [Bahasa Melayu](https://ms.wikipedia.org/wiki/Mampatan_data "Mampatan data – 马来语")
+* [Nederlands](https://nl.wikipedia.org/wiki/Datacompressie "Datacompressie – 荷兰语")
+* [Norsk nynorsk](https://nn.wikipedia.org/wiki/Datakomprimering "Datakomprimering – 挪威尼诺斯克语")
+* [Norsk bokmål](https://no.wikipedia.org/wiki/Datakompresjon "Datakompresjon – 书面挪威语")
+* [Polski](https://pl.wikipedia.org/wiki/Kompresja_danych "Kompresja danych – 波兰语")
+* [Piemontèis](https://pms.wikipedia.org/wiki/Compression_dij_d%C3%A0it "Compression dij dàit – 皮埃蒙特文")
+* [پښتو](https://ps.wikipedia.org/wiki/%D8%AF_%DA%89%DB%90%D9%BC%D8%A7_%D9%86%DA%9A%D8%AA%DB%8C%DA%81%D9%87_(%DA%A9%D9%85%D9%BE%D8%B1%DB%90%D8%B4%D9%86) "د ډېټا نښتیځه (کمپرېشن) – 普什图语")
+* [Português](https://pt.wikipedia.org/wiki/Compress%C3%A3o_de_dados "Compressão de dados – 葡萄牙语")
+* [Română](https://ro.wikipedia.org/wiki/Compresie_de_date "Compresie de date – 罗马尼亚语")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85 "Сжатие данных – 俄语")
+* [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Kompresija_podataka "Kompresija podataka – 塞尔维亚-克罗地亚语")
+* [Simple English](https://simple.wikipedia.org/wiki/Data_compression "Data compression – Simple English")
+* [Slovenčina](https://sk.wikipedia.org/wiki/Kompresia_d%C3%A1t "Kompresia dát – 斯洛伐克语")
+* [Shqip](https://sq.wikipedia.org/wiki/Ngjeshja_e_t%C3%AB_dh%C3%ABnave "Ngjeshja e të dhënave – 阿尔巴尼亚语")
+* [Српски / srpski](https://sr.wikipedia.org/wiki/Kompresija_podataka "Kompresija podataka – 塞尔维亚语")
+* [Svenska](https://sv.wikipedia.org/wiki/Datakompression "Datakompression – 瑞典语")
+* [Kiswahili](https://sw.wikipedia.org/wiki/Ugandamuzi_data "Ugandamuzi data – 斯瓦希里语")
+* [ไทย](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B5%E0%B8%9A%E0%B8%AD%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5 "การบีบอัดข้อมูล – 泰语")
+* [Türkçe](https://tr.wikipedia.org/wiki/Veri_s%C4%B1k%C4%B1%C5%9Ft%C4%B1rma "Veri sıkıştırma – 土耳其语")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B8%D1%81%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85 "Стиснення даних – 乌克兰语")
+* [اردو](https://ur.wikipedia.org/wiki/%D9%85%D8%B9%D8%B7%DB%8C%D8%A7%D8%AA%DB%8C_%D8%AF%D8%A7%D8%A8%DB%8C%D8%AA "معطیاتی دابیت – 乌尔都语")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/N%C3%A9n_d%E1%BB%AF_li%E1%BB%87u "Nén dữ liệu – 越南语")
+* [吴语](https://wuu.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "数据压缩 – 吴语")
+* [粵語](https://zh-yue.wikipedia.org/wiki/%E6%95%B8%E6%93%9A%E5%A3%93%E7%B8%AE "數據壓縮 – 粤语")
+
+[编辑链接](https://www.wikidata.org/wiki/Special:EntityPage/Q2493#sitelinks-wikipedia "编辑跨语言链接")
+
+* [条目](/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "浏览条目正文​[c]")
+* [讨论](/wiki/Talk:%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "关于此页面的讨论​[t]")
+
+不转换
+
+* [不转换](/zh/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [简体](/zh-hans/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [繁體](/zh-hant/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [大陆简体](/zh-cn/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [香港繁體](/zh-hk/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [澳門繁體](/zh-mo/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [大马简体](/zh-my/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [新加坡简体](/zh-sg/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [臺灣正體](/zh-tw/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+
+* [阅读](/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit "编辑该页面​[e]")
+* [查看历史](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=history "本页面的早前版本。​[h]")
+
+
+
+工具
+
+工具
+
+移至侧栏
+隐藏
+
+操作
+
+* [阅读](/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9)
+* [编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit "编辑该页面​[e]")
+* [查看历史](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=history)
+
+常规
+
+* [链入页面](/wiki/Special:WhatLinksHere/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "列出所有与本页相链的页面​[j]")
+* [相关更改](/wiki/Special:RecentChangesLinked/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "页面链出所有页面的更改​[k]")
+* [上传文件](//zh.wikipedia.org/wiki/Project:上传 "上传图像或多媒体文件​[u]")
+* [固定链接](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&oldid=90831620 "此页面该修订版本的固定链接")
+* [页面信息](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=info "关于此页面的更多信息")
+* [引用此页](/w/index.php?title=Special:CiteThisPage&page=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&id=90831620&wpFormIdentifier=titleform "有关如何引用此页面的信息")
+* [获取短链接](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fzh.wikipedia.org%2Fwiki%2F%25E6%2595%25B0%25E6%258D%25AE%25E5%258E%258B%25E7%25BC%25A9)
+
+打印/导出
+
+* [下载为PDF](/w/index.php?title=Special:DownloadAsPdf&page=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=show-download-screen)
+* [打印页面](javascript:print(); "本页面的可打印版本​[p]")
+
+在其他项目中
+
+* [维基共享资源](https://commons.wikimedia.org/wiki/Category:Data_compression)
+* [维基数据项目](https://www.wikidata.org/wiki/Special:EntityPage/Q2493 "链接到连接的数据仓库项目​[g]")
+
+外观
+
+移至侧栏
+隐藏
+
+![本页使用了标题或全文手工转换](//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Zh_conversion_icon_m.svg/40px-Zh_conversion_icon_m.svg.png)
+
+维基百科，自由的百科全书
+
+|  |  |
+| --- | --- |
+|  | 此條目**没有列出任何[参考或来源](/wiki/Wikipedia:%E5%88%97%E6%98%8E%E6%9D%A5%E6%BA%90 "Wikipedia:列明来源")**。 *(2020年9月24日)* 維基百科所有的內容都應該[可供查證](/wiki/Wikipedia:%E5%8F%AF%E4%BE%9B%E6%9F%A5%E8%AD%89 "Wikipedia:可供查證")。请协助補充[可靠来源](/wiki/Wikipedia:%E5%8F%AF%E9%9D%A0%E6%9D%A5%E6%BA%90 "Wikipedia:可靠来源")以[改善这篇条目](https://zh.wikipedia.org/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit)。无法查证的內容可能會因為異議提出而被移除。 |
+
+在[计算机科学](/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6 "计算机科学")和[信息论](/wiki/%E4%BF%A1%E6%81%AF%E8%AE%BA "信息论")中，**数据压缩**或者**源编码**是按照特定的编码机制用比未经编码少的数据[位元](/wiki/%E4%BD%8D%E5%85%83 "位元")（或者其它信息相关的单位）表示信息的过程。例如，若将「compression」编码为「comp」，则这篇文章可以用较少的数据[位元](/wiki/%E4%BD%8D%E5%85%83 "位元")表示。常見的例子是[ZIP文件格式](/wiki/ZIP_(%E7%AE%97%E6%B3%95) "ZIP (算法)")，此格式不仅仅提供压缩功能，还可作为[归档工具](/wiki/%E5%BD%92%E6%A1%A3%E5%B7%A5%E5%85%B7 "归档工具")（Archiver），能够将许多文件存储到同一个文件中。
+
+可利用資料的一致性（可用[信息熵](/wiki/%E4%BF%A1%E6%81%AF%E7%86%B5 "信息熵")，entropy來表示），規則性，與可預測性去實現資料壓縮。人類最先發展的壓縮技術實為[自然語言](/wiki/%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80 "自然語言")，一般來說，若可以用比較精簡的[自然語言](/wiki/%E8%87%AA%E7%84%B6%E8%AA%9E%E8%A8%80 "自然語言")來描述一樣事物，那麼也就越能夠對這樣事物做壓縮。資料越一致，亦代表其統計特性越集中。以影像壓縮為例，其集中代表有[傅立葉變換](/wiki/%E5%82%85%E7%AB%8B%E5%8F%B6%E5%8F%98%E6%8D%A2 "傅立叶变换")的[時域](/wiki/%E6%99%82%E5%9F%9F "時域")及[頻域](/wiki/%E9%A0%BB%E5%9F%9F "頻域")，[直方圖](/wiki/%E7%9B%B4%E6%96%B9%E5%9B%BE "直方图")，[特徵值](/wiki/%E7%89%B9%E5%BE%B5%E5%80%BC "特徵值")。
+
+## 概要
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=1 "编辑章节：概要")]
+
+数据压缩能够实现是因为多数现实世界的数据都有[统计冗余](/w/index.php?title=%E7%BB%9F%E8%AE%A1%E5%86%97%E4%BD%99&action=edit&redlink=1 "统计冗余（页面不存在）")。例如，字母「e」在英语中比字母「z」更加常用，字母「q」后面是「z」的可能性非常小。**[非破壞性資料壓縮](/wiki/%E9%9D%9E%E7%A0%B4%E5%A3%9E%E6%80%A7%E8%B3%87%E6%96%99%E5%A3%93%E7%B8%AE "非破壞性資料壓縮")**通常利用了统计冗余，这样就能更加简练地、但仍然是完整地表示发送方的数据。
+
+非破壞性資料壓縮的壓縮率不足以處理龐大體積的音視頻數據，但如果允许一定程度的[保真度](/w/index.php?title=%E4%BF%9D%E7%9C%9F%E5%BA%A6&action=edit&redlink=1 "保真度（页面不存在）")损失，那么还可以实现进一步的压缩。例如，人们看图画或者电视画面的时候可能并不会注意到一些细节并不完善。同样，两个音频录音采样序列可能听起来一样，但实际上并不完全一样。**[破壞性資料壓縮](/wiki/%E7%A0%B4%E5%A3%9E%E6%80%A7%E8%B3%87%E6%96%99%E5%A3%93%E7%B8%AE "破壞性資料壓縮")**在可以接受或無法察覺的情況下使用较少的位数表示图像、视频或者音频。
+
+然而，经常有一些文件不能被破壞性資料壓縮压缩，实际上对于不含可以辨别样式的数据任何压缩算法都不能压缩。另外，试图压缩已经经过压缩的数据通常得到的结果实际上是增加数据。
+
+实际上，破壞性資料壓縮也会最终达到不能工作的地步。例如一個极端的例子：压缩算法每次去掉文件最后一个字节，那么经过这个算法不断的压缩直至文件变空，压缩算法将不能继续工作。
+
+由于可以帮助减少如[硬盘](/wiki/%E7%A1%AC%E7%9B%98 "硬盘")空间与连接[带宽](/wiki/%E5%B8%A6%E5%AE%BD "带宽")这样的昂贵资源的消耗，所以压缩非常重要，然而压缩需要消耗信息处理资源，这也可能是费用昂贵的。所以数据压缩机制的设计需要在压缩能力、失真度、所需计算资源以及其它需要考虑的不同因素之间进行折中。
+
+对于任何形式的通信来说，只有当[信息](/wiki/%E4%BF%A1%E6%81%AF "信息")的[发送方](/w/index.php?title=%E5%8F%91%E9%80%81%E6%96%B9&action=edit&redlink=1 "发送方（页面不存在）")和接受方都能够理解编码机制的时候压缩数据通信才能够工作。例如，只有当接受方知道这篇文章需要用汉语字符解释的时候这篇文章才有意义。同样，只有当接受方知道编码方法的时候他才能够理解压缩数据。
+
+## 应用
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=2 "编辑章节：应用")]
+
+一种非常简单的压缩方法是[行程长度编码](/wiki/%E8%A1%8C%E7%A8%8B%E9%95%BF%E5%BA%A6%E7%BC%96%E7%A0%81 "行程长度编码")，这种方法使用数据及数据长度这样简单的编码代替同样的连续数据，这是无损数据压缩的一个实例。这种方法经常用于办公计算机以更好地利用磁盘空间、或者更好地利用[计算机网络](/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C "计算机网络")中的带宽。对于电子表格、文本、[可执行文件](/wiki/%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6 "可执行文件")等这样的符号数据来说，无损是一个非常关键的要求，因为除了一些有限的情况，大多数情况下即使是一个数据位的变化都是无法接受的。
+
+对于视频和音频数据，只要不损失数据的重要部分一定程度的质量下降是可以接受的。通过利用人类感知系统的局限，能够大幅度的节约存储空间并且得到的结果质量与原始数据质量相比并没有明显的差别。这些有损数据压缩方法通常需要在压缩速度、压缩数据大小以及质量损失这三者之间进行折衷。
+
+有损[图像压缩](/wiki/%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9 "图像压缩")用于[数码相机](/wiki/%E6%95%B0%E7%A0%81%E7%9B%B8%E6%9C%BA "数码相机")中，大幅度地提高了存储能力，同时图像质量几乎没有降低。用于[DVD](/wiki/DVD "DVD")的有损[MPEG-2](/wiki/MPEG-2 "MPEG-2")[编解码](/w/index.php?title=%E7%BC%96%E8%A7%A3%E7%A0%81&action=edit&redlink=1 "编解码（页面不存在）")[视频压缩](/wiki/%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9 "视频压缩")也实现了类似的功能。
+
+在有损[音频压缩](/wiki/%E9%9F%B3%E9%A2%91%E5%8E%8B%E7%BC%A9 "音频压缩")中，[心理声学](/wiki/%E5%BF%83%E7%90%86%E5%A3%B0%E5%AD%A6 "心理声学")的方法用来去除[信号](/wiki/%E4%BF%A1%E5%8F%B7 "信号")中听不见或者很难听见的成分。人类语音的压缩经常使用更加专业的技术，因此人们有时也將“[语音压缩](/w/index.php?title=%E8%AF%AD%E9%9F%B3%E5%8E%8B%E7%BC%A9&action=edit&redlink=1 "语音压缩（页面不存在）")”或者“语音编码”作为一个独立的研究领域与“音频压缩”区分开来。不同的音频和语音压缩标准都属于[音频编解码](/w/index.php?title=%E9%9F%B3%E9%A2%91%E7%BC%96%E8%A7%A3%E7%A0%81&action=edit&redlink=1 "音频编解码（页面不存在）")范畴。例如语音压缩用于[因特网电话](/w/index.php?title=%E5%9B%A0%E7%89%B9%E7%BD%91%E7%94%B5%E8%AF%9D&action=edit&redlink=1 "因特网电话（页面不存在）")，而音频压缩被用于CD翻录并且使用[MP3](/wiki/MP3 "MP3")播放器解码。
+
+## 理论
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=3 "编辑章节：理论")]
+
+压缩的理论（它与[算法信息论](/wiki/%E7%AE%97%E6%B3%95%E4%BF%A1%E6%81%AF%E8%AE%BA "算法信息论")密切相关）以及[率失真理论](/wiki/%E7%8E%87%E5%A4%B1%E7%9C%9F%E7%90%86%E8%AE%BA "率失真理论")，这个领域的研究工作主要是由美國學者[克劳德·香农](/wiki/%E5%85%8B%E5%8A%B3%E5%BE%B7%C2%B7%E9%A6%99%E5%86%9C "克劳德·香农")（Claude Elwood Shannon）奠定的，他在二十世纪四十年代末期及五十年代早期发表了这方面的基础性的论文。Doyle和Carlson在2000年写到数据压缩“是所有的工程领域最简单、最优美的设计理论之一”。[密码学](/wiki/%E5%AF%86%E7%A0%81%E5%AD%A6 "密码学")与[编码理论](/wiki/%E7%BC%96%E7%A0%81%E7%90%86%E8%AE%BA "编码理论")也是密切相关的学科，数据压缩的思想与统计推断也有很深的渊源。
+
+许多无损数据压缩系统都可以看作是四步模型，有损数据压缩系统通常包含更多的步骤，例如它包括预测、频率变换以及量化。
+
+Lempel-Ziv（LZ）压缩方法是流行的无损存储算法之一。[DEFLATE](/wiki/DEFLATE "DEFLATE")是LZ的一个变体，它针对解压速度与压缩率进行了优化，虽然它的压缩速度可能非常缓慢，[PKZIP](/w/index.php?title=PKZIP&action=edit&redlink=1 "PKZIP（页面不存在）")、[gzip](/wiki/Gzip "Gzip")以及[PNG](/wiki/PNG "PNG")都在使用DEFLATE。[LZW](/wiki/LZW "LZW")（Lempel-Ziv-Welch）是[Unisys](/wiki/Unisys "Unisys")的[专利](/wiki/%E4%B8%93%E5%88%A9 "专利")，直到2003年6月专利到期限，这种方法用于[GIF](/wiki/GIF "GIF")图像。另外值得一提的是LZR （LZ-Renau） 方法，它是Zip方法的基础。LZ方法使用基于表格的压缩模型，其中表格中的条目用重复的数据串替换。对于大多数的LZ方法来说，这个表格是从最初的输入数据动态生成的。这个表格经常采用[霍夫曼编码](/wiki/%E9%9C%8D%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81 "霍夫曼编码")维护（例如SHRI、LZX）。
+目前一个性能良好基于LZ的编码机制是[LZX](/w/index.php?title=LZX_(algorithm)&action=edit&redlink=1 "LZX (algorithm)（页面不存在）")，它用于微软公司的[CAB](/wiki/CAB "CAB")格式。
+
+最好的压缩工具将概率模型预测结果用于[算术编码](/wiki/%E7%AE%97%E6%9C%AF%E7%BC%96%E7%A0%81 "算术编码")。算术编码由芬蘭信息理論學家Jorma Rissanen发明，并且由Witten、Neal以及Cleary将它转变成一个实用的方法。这种方法能够实现比众人皆知的哈夫曼算法更好的压缩，并且它本身非常适合于自适应数据压缩，自适应数据压缩的预测与上下文密切相关。算术编码已经用于[二值图像](/wiki/%E4%BA%8C%E5%80%BC%E5%9B%BE%E5%83%8F "二值图像")压缩标准[JBIG](/wiki/JBIG "JBIG")、文档压缩标准[DejaVu](/wiki/DjVu "DjVu")。文本输入系统[Dasher](/w/index.php?title=Dasher&action=edit&redlink=1 "Dasher（页面不存在）")是一个逆算术编码器。
+
+## 参见
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=4 "编辑章节：参见")]
+
+### 数据压缩专题
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=5 "编辑章节：数据压缩专题")]
+
+* [柯氏复杂性](/wiki/%E6%9F%AF%E6%B0%8F%E5%A4%8D%E6%9D%82%E6%80%A7 "柯氏复杂性")
+* [信息熵](/wiki/%E4%BF%A1%E6%81%AF%E7%86%B5 "信息熵")
+* [自解壓縮檔](/wiki/%E8%87%AA%E8%A7%A3%E5%A3%93%E7%B8%AE%E6%AA%94 "自解壓縮檔")
+* [图像压缩](/wiki/%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9 "图像压缩")
+* [语音压缩](/w/index.php?title=%E8%AF%AD%E9%9F%B3%E5%8E%8B%E7%BC%A9&action=edit&redlink=1 "语音压缩（页面不存在）")
+* [视频压缩](/wiki/%E8%A7%86%E9%A2%91%E5%8E%8B%E7%BC%A9 "视频压缩")
+* [多媒体压缩](/w/index.php?title=%E5%A4%9A%E5%AA%92%E4%BD%93%E5%8E%8B%E7%BC%A9&action=edit&redlink=1 "多媒体压缩（页面不存在）")
+* [最小描述长度](/wiki/%E6%9C%80%E5%B0%8F%E6%8F%8F%E8%BF%B0%E9%95%B7%E5%BA%A6 "最小描述長度")
+* [最小消息长度](/w/index.php?title=%E6%9C%80%E5%B0%8F%E6%B6%88%E6%81%AF%E9%95%BF%E5%BA%A6&action=edit&redlink=1 "最小消息长度（页面不存在）")（two-part lossless compression designed for inference）
+* [史路特數位編碼系統](/w/index.php?title=%E5%8F%B2%E8%B7%AF%E7%89%B9%E6%95%B8%E4%BD%8D%E7%B7%A8%E7%A2%BC%E7%B3%BB%E7%B5%B1&action=edit&redlink=1 "史路特數位編碼系統（页面不存在）")（英语：[Sloot Digital Coding System](https://en.wikipedia.org/wiki/Sloot_Digital_Coding_System "en:Sloot Digital Coding System")）
+
+### 压缩算法
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=6 "编辑章节：压缩算法")]
+
+#### [无损数据压缩](/wiki/%E6%97%A0%E6%8D%9F%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "无损数据压缩")
+
+[[编辑](/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9&action=edit&section=7 "编辑章节：无损数据压缩")]
+
+* [行程长度编码](/wiki/%E8%A1%8C%E7%

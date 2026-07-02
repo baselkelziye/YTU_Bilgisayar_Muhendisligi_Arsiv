@@ -1,0 +1,184 @@
+## Lightweight MLP Based Content-Aware Profile-Based Text Compression System
+
+**Version:** 1.0  
+**Date:** 2026-05-02  
+**Status:** Draft  
+
+---
+
+## 1. Executive Summary
+
+### 1.1 Problem Statement
+
+Klasik metin sıkıştırma algoritmaları (Huffman, LZW, Aritmetik Kodlama, BWT) tüm metin türlerine **tek bir yaklaşımla** uygulanır. Ancak farklı metin türlerinin istatistiksel yapıları dramatik şekilde farklılık gösterir:
+
+- **Teknik dokümanlar:** Yüksek tekrar oranı, standart terminoloji → LZW-benzeri algoritmalar verimli
+- **Edebi betimlemeler:** Yüksek entropi, geniş kelime haznesi → Entropy coder'lar (Huffman, Aritmetik) verimli
+- **Diyalog metinleri:** Kısa cümleler, tekrar eden kalıplar → Dictionary-based yöntemler verimli
+- **Şiirsel metinler:** Ritmik tekrar, düşük kelime çeşitliliği → Özel modeller gerektirir
+
+**Tek bir algoritma, tüm bu yapıları optimal şekilde sıkıştıramaz.** Bu durum, genel amaçlı sıkıştırıcıların (gzip, bzip2) potansiyelinin altında kalmasına neden olur.
+
+### 1.2 Proposed Solution
+
+Bu proje, metinlerin **sıkıştırma karakteristiklerine göre profillenmesini** ve her profile **en uygun klasik sıkıştırma algoritmasının** atanmasını hedefler. Sistem beş fazdan oluşur:
+
+1. **Veri Keşfi ve Profil Belirleme:** Gutenberg korpusundaki metinler, sıkıştırma-odaklı özelliklerle analiz edilerek K-Means ile profillere ayrılır.
+2. **Algoritma Eşleştirme:** Her profil için en verimli sıkıştırma algoritması ve parametreleri belirlenir.
+3. **Hafif Profil Sınıflandırıcı Eğitimi:** K-Means profil etiketlerini tahmin eden 2-layer MLP, hızlı çıkarılabilen inference özellikleriyle eğitilir.
+4. **Uçtan Uca Sıkıştırma:** Test metinleri, hızlı özellik çıkarımı + MLP ile profillendirilir ve ilgili algoritma-parametre çiftiyle blok bazında sıkıştırılır.
+5. **Ham Algoritma Performans Fazı:** Tüm klasik codec'ler profil/mapping olmadan ham halleriyle çalıştırılır ve sistemin gerçek katkısı adil biçimde ölçülür.
+
+### 1.3 Key Differentiators
+
+| Özellik | Geleneksel Yaklaşım | Bu Proje |
+|---------|-------------------|----------|
+| Karar Kriteri | Dosya uzantısı / tek algoritma | İçerik-odaklı profil analizi |
+| Kümeleme Uzayı | Anlamsal (e5, BERT) | Sıkıştırma-odaklı özellikler |
+| Algoritma Seçimi | Statik | Profil bazlı dinamik |
+| Öğrenme | Kural tabanlı | 2-layer MLP ile hızlı profil tahmini |
+| Blok Seviyesi | Tek algoritma tüm dosya | Blok bazlı algoritma değişimi |
+
+---
+
+## 2. System Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         TRAINING PIPELINE                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   ┌─────────────┐    ┌──────────────────┐    ┌─────────────────────────┐    │
+│   │  Gutenberg  │───▶│  Chunk (EDA'da  │───▶│  Compression-Aware     │    │
+│   │  Corpus     │    │  seçilen boyut)  │    │  Feature Extraction     │    │
+│   └─────────────┘    └──────────────────┘    └─────────────────────────┘    │
+│                                                        │                    │
+│                                                        ▼                    │
+│                                              ┌──────────────────┐           │
+│                                              │  K-Means Cluster │           │
+│                                              │  (15-25 Profiles)│           │
+│                                              └──────────────────┘           │
+│                                                        │                    │
+│                           ┌────────────────────────────┘                    │
+│                           ▼                                                 │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │                    FAZ 2: ALGORITMA EŞLEŞTİRME                      │   │
+│   │  Her profil için: Huffman, LZW, Aritmetik, BWT+MTF grid search      │   │
+│   │  Sonuç: Profile → (Algorithm, Parameter Set) mapping tablosu        │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+│                           │                                                 │
+│                           ▼                                                 │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │                    FAZ 3: HAFİF MLP EĞİTİMİ                         │   │
+│   │  Input: Fast inference features (~10 scalar feature)                │   │
+│   │  Model: Linear(~10 → 32) + ReLU + Linear(32 → num_profiles)         │   │
+│   │  Loss: Cross-Entropy (K-Means profile ID)                           │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         INFERENCE PIPELINE                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   [Input Text]                                                              │
+│       │                                                                     │
+│       ▼                                                                     │
+│   ┌─────────────────┐                                                       │
+│   │ Final Chunk     │                                                       │
+│   │ Size ile Bölme  │                                                       │
+│   └─────────────────┘                                                       │
+│       │                                                                     │
+│       ▼                                                                     │
+│   ┌─────────────────────────┐    ┌─────────────────────────────────────┐    │
+│   │ Fast Feature Extractor  │───▶│  2-Layer MLP Classifier            │    │
+│   │ (single pass over block)│    │  Profile ID + Confidence Score      │    │
+│   └─────────────────────────┘    └─────────────────────────────────────┘    │
+│       │                                                                     │
+│       ▼                                                                     │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  Algoritma Seçimi: Profile ID → (Algorithm, Parameter Set) Mapping  │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+│       │                                                                     │
+│       ▼                                                                     │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  Blok Sıkıştırma + 4-Byte Header (Profile ID + Algo ID + Params)    │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+│       │                                                                     │
+│       ▼                                                                     │
+│   [Output Bitstream]                                                        │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 3. Dataset Specification
+
+### 3.1 Data Source
+
+**Primary Source:** Project Gutenberg (https://www.gutenberg.org/)
+
+| Özellik | Değer |
+|---------|-------|
+| Toplam Hedef Kitap | 500-1000 adet |
+| Dil | İngilizce (UTF-8) |
+| Dönem Aralığı | 1500-1920 (telif hakkı olmayan) |
+| Tür Çeşitliliği | Roman, şiir, teknik, tarih, felsefe, drama |
+
+**Yazar Seçimi Kriterleri:**
+- Farklı dönemlerden (Rönesans, Viktorya, Modern)
+- Farklı türlerden (edebiyat, bilim, tarih)
+- Yeterli uzunlukta (minimum 200KB metin)
+- Format: Düz metin (.txt), HTML tag'leri temizlenmiş
+
+**Örnek Yazar Listesi:**
+- William Shakespeare (Drama, Şiir)
+- Charles Dickens (Roman)
+- Jane Austen (Roman)
+- Mark Twain (Roman, Hikaye)
+- Isaac Newton (Teknik)
+- Charles Darwin (Teknik)
+- Edgar Allan Poe (Hikaye, Şiir)
+- Oscar Wilde (Drama, Roman)
+- Lewis Carroll (Çocuk Edebiyatı)
+- Arthur Conan Doyle (Dedektif)
+
+### 3.2 Train-Test-Validation Split Strategy
+
+**Kritik Kural: Kitap Seviyesinde Bölme**
+
+| Set | Oran | Bölme Kriteri |
+|-----|------|---------------|
+| **Training** | %70 | Rastgele seçilen 350-700 kitap |
+| **Validation** | %15 | Training'den tamamen farklı kitaplar |
+| **Test** | %15 | Training ve Validation'dan tamamen farklı kitaplar |
+
+**Neden kitap seviyesinde?**
+- Aynı kitabın farklı bölümleri benzer stilistik özelliklere sahiptir.
+- Chunk seviyesinde rastgele bölme, "data leakage" (bilgi sızıntısı) yaratır.
+- Modelin gerçekten **görmediği kitaplara** genelleme yapması test edilmelidir.
+
+**Chunk Üretim Stratejisi:**
+```
+Kitap (örn. 500KB)
+    │
+    ├── Chunk 1: Byte 0-(N-1)
+    ├── Chunk 2: Byte N-(2N-1)
+    ├── Chunk 3: Byte 2N-(3N-1)
+    └── ... (overlap yok, ardışık)
+```
+
+`N`, Faz 1 EDA'da seçilecek final chunk size'dır. İlk aday değer 40KB'dir.
+
+### 3.3 Chunk Size Exploration Rationale
+
+**Başlangıç Hipotezi: 40KB (40,960 bytes)**
+
+Chunk size nihai olarak baştan sabitlenmeyecektir. 40KB, LZW/BWT/Huffman davranışları açısından makul başlangıç hipotezidir; ancak Faz 1 EDA'da farklı chunk size'lar ve hiç bölmeden sıkıştırma senaryosu sistematik olarak test edildikten sonra final değer seçilecektir.
+
+| Alternatif | Beklenen Davranış | EDA Kararı |
+|-----------|---------------|-------|
+| 10KB | BWT için küçük olabilir, LZW sözlüğü dolmadan bitebilir | Test edilecek |
+| 20KB | LZW için yeterli olabilir, BWT verimi sınırlı kalabilir | Test edilecek |
+| **40KB** | LZW sözlüğü iyi dolabilir, BWT anlamlı sıralama yapabilir,
