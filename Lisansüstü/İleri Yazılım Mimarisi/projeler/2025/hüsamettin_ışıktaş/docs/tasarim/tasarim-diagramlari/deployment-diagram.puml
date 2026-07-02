@@ -1,0 +1,130 @@
+@startuml Deployment Diagram - Mikroservis Dağıtım Mimarisi
+!theme plain
+
+title Deployment Diagram - Gerçek Zamanlı Sohbet Mikroservis Mimarisi
+
+node "Load Balancer" {
+  component [Nginx] as LoadBalancer
+}
+
+node "Gateway Layer" {
+  component [API Gateway] as APIGateway
+  component [WebSocket Gateway] as WSGateway
+}
+
+node "Application Services" {
+  component [User Service\nInstance 1] as UserService1
+  component [User Service\nInstance 2] as UserService2
+  component [Chat Service\nInstance 1] as ChatService1
+  component [Chat Service\nInstance 2] as ChatService2
+  component [Message Service\nInstance 1] as MessageService1
+  component [Message Service\nInstance 2] as MessageService2
+  component [Notification Service\nInstance 1] as NotificationService1
+  component [Notification Service\nInstance 2] as NotificationService2
+  component [File Service\nInstance 1] as FileService1
+  component [File Service\nInstance 2] as FileService2
+}
+
+node "Data Layer" {
+  database "User DB\n(PostgreSQL)" as UserDB {
+    database "Primary" as UserDBPrimary
+    database "Replica" as UserDBReplica
+  }
+  
+  database "Chat DB\n(MongoDB)" as ChatDB {
+    database "Primary" as ChatDBPrimary
+    database "Replica" as ChatDBReplica
+  }
+  
+  database "Message DB\n(MongoDB)" as MessageDB {
+    database "Primary" as MessageDBPrimary
+    database "Replica" as MessageDBReplica
+  }
+  
+  database "Notification DB\n(MongoDB)" as NotificationDB {
+    database "Primary" as NotificationDBPrimary
+    database "Replica" as NotificationDBReplica
+  }
+  
+  database "File DB\n(PostgreSQL)" as FileDB {
+    database "Primary" as FileDBPrimary
+    database "Replica" as FileDBReplica
+  }
+}
+
+node "Infrastructure" {
+  queue "RabbitMQ\nCluster" as RabbitMQ
+  database "Redis\nCluster" as Redis
+  storage "File Storage\n(S3/MinIO)" as FileStorage
+}
+
+cloud "Clients" {
+  actor [Web Client] as WebClient
+  actor [Mobile Client] as MobileClient
+}
+
+' İlişkiler
+WebClient --> LoadBalancer : HTTPS
+MobileClient --> LoadBalancer : HTTPS
+
+LoadBalancer --> APIGateway : HTTP
+LoadBalancer --> WSGateway : WebSocket
+
+APIGateway --> UserService1 : HTTP
+APIGateway --> UserService2 : HTTP
+APIGateway --> ChatService1 : HTTP
+APIGateway --> ChatService2 : HTTP
+APIGateway --> MessageService1 : HTTP
+APIGateway --> MessageService2 : HTTP
+APIGateway --> NotificationService1 : HTTP
+APIGateway --> NotificationService2 : HTTP
+APIGateway --> FileService1 : HTTP
+APIGateway --> FileService2 : HTTP
+
+WSGateway --> NotificationService1 : WebSocket Push
+WSGateway --> NotificationService2 : WebSocket Push
+
+UserService1 --> UserDBPrimary : Read/Write
+UserService2 --> UserDBPrimary : Read/Write
+UserService1 --> UserDBReplica : Read
+UserService2 --> UserDBReplica : Read
+
+ChatService1 --> ChatDBPrimary : Read/Write
+ChatService2 --> ChatDBPrimary : Read/Write
+ChatService1 --> ChatDBReplica : Read
+ChatService2 --> ChatDBReplica : Read
+
+MessageService1 --> MessageDBPrimary : Read/Write
+MessageService2 --> MessageDBPrimary : Read/Write
+MessageService1 --> MessageDBReplica : Read
+MessageService2 --> MessageDBReplica : Read
+
+NotificationService1 --> NotificationDBPrimary : Read/Write
+NotificationService2 --> NotificationDBPrimary : Read/Write
+NotificationService1 --> NotificationDBReplica : Read
+NotificationService2 --> NotificationDBReplica : Read
+
+FileService1 --> FileDBPrimary : Read/Write
+FileService2 --> FileDBPrimary : Read/Write
+FileService1 --> FileDBReplica : Read
+FileService2 --> FileDBReplica : Read
+
+UserService1 --> Redis : Cache
+UserService2 --> Redis : Cache
+ChatService1 --> Redis : Cache
+ChatService2 --> Redis : Cache
+MessageService1 --> Redis : Cache
+MessageService2 --> Redis : Cache
+
+MessageService1 --> RabbitMQ : Publish
+MessageService2 --> RabbitMQ : Publish
+ChatService1 --> RabbitMQ : Publish
+ChatService2 --> RabbitMQ : Publish
+NotificationService1 --> RabbitMQ : Subscribe
+NotificationService2 --> RabbitMQ : Subscribe
+
+FileService1 --> FileStorage : File Operations
+FileService2 --> FileStorage : File Operations
+
+@enduml
+

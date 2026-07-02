@@ -1,0 +1,580 @@
+const swaggerJsdoc = require('swagger-jsdoc');
+
+const options = {
+  definition: {
+    openapi: '3.0.0',
+    info: {
+      title: 'Messaging App API',
+      version: '1.0.0',
+      description: 'Microservices based messaging application API documentation',
+    },
+    servers: [
+      {
+        url: 'http://localhost:3000',
+        description: 'API Gateway',
+      },
+    ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+        },
+      },
+      schemas: {
+        User: {
+          type: 'object',
+          properties: {
+            id: { type: 'string', format: 'uuid' },
+            email: { type: 'string', format: 'email' },
+            username: { type: 'string' },
+            first_name: { type: 'string' },
+            last_name: { type: 'string' },
+            profile_picture: { type: 'string' },
+            status_message: { type: 'string' },
+            created_at: { type: 'string', format: 'date-time' },
+            updated_at: { type: 'string', format: 'date-time' },
+          },
+        },
+        Chat: {
+          type: 'object',
+          properties: {
+            _id: { type: 'string' },
+            type: { type: 'string', enum: ['DIRECT', 'GROUP'] },
+            name: { type: 'string' },
+            participants: {
+              type: 'array',
+              items: {
+                type: 'object',
+                properties: {
+                  userId: { type: 'string' },
+                  role: { type: 'string', enum: ['MEMBER', 'ADMIN'] },
+                  joinedAt: { type: 'string', format: 'date-time' },
+                },
+              },
+            },
+            createdBy: { type: 'string' },
+            createdAt: { type: 'string', format: 'date-time' },
+            updatedAt: { type: 'string', format: 'date-time' },
+          },
+        },
+        Message: {
+          type: 'object',
+          properties: {
+            _id: { type: 'string' },
+            chatId: { type: 'string' },
+            senderId: { type: 'string' },
+            sender: { $ref: '#/components/schemas/User' },
+            content: { type: 'string' },
+            messageType: { type: 'string', enum: ['TEXT', 'FILE', 'IMAGE', 'VIDEO'] },
+            fileUrl: { type: 'string' },
+            status: { type: 'string', enum: ['SENT', 'DELIVERED', 'READ', 'DELETED'] },
+            createdAt: { type: 'string', format: 'date-time' },
+            updatedAt: { type: 'string', format: 'date-time' },
+          },
+        },
+        File: {
+            type: 'object',
+            properties: {
+                _id: { type: 'string' },
+                originalName: { type: 'string' },
+                encoding: { type: 'string' },
+                mimetype: { type: 'string' },
+                size: { type: 'integer' },
+                bucket: { type: 'string' },
+                key: { type: 'string' },
+                uploadedBy: { type: 'string' },
+                createdAt: { type: 'string', format: 'date-time' },
+            }
+        },
+        Notification: {
+          type: 'object',
+          properties: {
+            _id: { type: 'string' },
+            userId: { type: 'string' },
+            type: { type: 'string', enum: ['MESSAGE', 'FILE', 'CHAT_INVITE'] },
+            title: { type: 'string' },
+            body: { type: 'string' },
+            read: { type: 'boolean' },
+            createdAt: { type: 'string', format: 'date-time' },
+          },
+        },
+      },
+    },
+    tags: [
+      { name: 'Auth', description: 'Authentication operations' },
+      { name: 'Users', description: 'User management' },
+      { name: 'Chats', description: 'Chat operations' },
+      { name: 'Messages', description: 'Messaging operations' },
+      { name: 'Files', description: 'File operations' },
+      { name: 'Notifications', description: 'Notification operations' },
+    ],
+    paths: {
+      '/api/users/register': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Register a new user',
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['email', 'username', 'password', 'firstName', 'lastName'],
+                  properties: {
+                    email: { type: 'string', format: 'email' },
+                    username: { type: 'string' },
+                    password: { type: 'string', minLength: 6 },
+                    firstName: { type: 'string' },
+                    lastName: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            201: {
+              description: 'User created successfully',
+              content: {
+                'application/json': {
+                  schema: {
+                    type: 'object',
+                    properties: {
+                      token: { type: 'string' },
+                      user: { $ref: '#/components/schemas/User' },
+                    },
+                  },
+                },
+              },
+            },
+            400: { description: 'Validation error' },
+          },
+        },
+      },
+      '/api/users/login': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Login user',
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['email', 'password'],
+                  properties: {
+                    email: { type: 'string', format: 'email' },
+                    password: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            200: {
+              description: 'Login successful',
+              content: {
+                'application/json': {
+                  schema: {
+                    type: 'object',
+                    properties: {
+                      token: { type: 'string' },
+                      user: { $ref: '#/components/schemas/User' },
+                    },
+                  },
+                },
+              },
+            },
+            401: { description: 'Invalid credentials' },
+          },
+        },
+      },
+      '/api/users/{userId}': {
+        get: {
+          tags: ['Users'],
+          summary: 'Get user profile',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'userId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: {
+              description: 'User profile',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/User' } } },
+            },
+            404: { description: 'User not found' },
+          },
+        },
+        put: {
+          tags: ['Users'],
+          summary: 'Update user profile',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'userId', required: true, schema: { type: 'string' } },
+          ],
+          requestBody: {
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    firstName: { type: 'string' },
+                    lastName: { type: 'string' },
+                    profilePicture: { type: 'string' },
+                    statusMessage: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            200: {
+              description: 'Profile updated',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/User' } } },
+            },
+          },
+        },
+      },
+      '/api/chats/direct': {
+        post: {
+          tags: ['Chats'],
+          summary: 'Create a direct chat',
+          security: [{ bearerAuth: [] }],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['targetUserId'],
+                  properties: { targetUserId: { type: 'string' } },
+                },
+              },
+            },
+          },
+          responses: {
+            201: {
+              description: 'Chat created',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/Chat' } } },
+            },
+          },
+        },
+      },
+      '/api/chats/group': {
+        post: {
+          tags: ['Chats'],
+          summary: 'Create a group chat',
+          security: [{ bearerAuth: [] }],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['name', 'participantIds'],
+                  properties: {
+                    name: { type: 'string' },
+                    participantIds: { type: 'array', items: { type: 'string' } },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            201: {
+              description: 'Group created',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/Chat' } } },
+            },
+          },
+        },
+      },
+      '/api/chats/user/me': {
+        get: {
+          tags: ['Chats'],
+          summary: 'Get my chats',
+          security: [{ bearerAuth: [] }],
+          responses: {
+            200: {
+              description: 'List of chats',
+              content: {
+                'application/json': {
+                  schema: { type: 'array', items: { $ref: '#/components/schemas/Chat' } },
+                },
+              },
+            },
+          },
+        },
+      },
+      '/api/chats/{chatId}': {
+        get: {
+          tags: ['Chats'],
+          summary: 'Get chat details',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'chatId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: {
+              description: 'Chat details',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/Chat' } } },
+            },
+          },
+        },
+      },
+      '/api/chats/{chatId}/participants': {
+        post: {
+          tags: ['Chats'],
+          summary: 'Add participant to group',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'chatId', required: true, schema: { type: 'string' } },
+          ],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['userId'],
+                  properties: { userId: { type: 'string' } },
+                },
+              },
+            },
+          },
+          responses: {
+            200: { description: 'Participant added' },
+          },
+        },
+      },
+      '/api/chats/{chatId}/participants/{userId}': {
+        delete: {
+          tags: ['Chats'],
+          summary: 'Remove participant from group',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'chatId', required: true, schema: { type: 'string' } },
+            { in: 'path', name: 'userId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: { description: 'Participant removed' },
+          },
+        },
+      },
+      '/api/messages': {
+        post: {
+          tags: ['Messages'],
+          summary: 'Send a message',
+          security: [{ bearerAuth: [] }],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['chatId'],
+                  properties: {
+                    chatId: { type: 'string' },
+                    content: { type: 'string' },
+                    messageType: { type: 'string', enum: ['TEXT', 'FILE', 'IMAGE', 'VIDEO'], default: 'TEXT' },
+                    fileUrl: { type: 'string' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            201: {
+              description: 'Message sent',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/Message' } } },
+            },
+          },
+        },
+      },
+      '/api/messages/chat/{chatId}': {
+        get: {
+          tags: ['Messages'],
+          summary: 'Get chat messages',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'chatId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: {
+              description: 'List of messages',
+              content: {
+                'application/json': {
+                  schema: { type: 'array', items: { $ref: '#/components/schemas/Message' } },
+                },
+              },
+            },
+          },
+        },
+      },
+      '/api/messages/{messageId}': {
+        delete: {
+          tags: ['Messages'],
+          summary: 'Delete a message',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'messageId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: { description: 'Message deleted' },
+          },
+        },
+      },
+      '/api/messages/{messageId}/status': {
+        put: {
+          tags: ['Messages'],
+          summary: 'Update message status',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'messageId', required: true, schema: { type: 'string' } },
+          ],
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['status'],
+                  properties: {
+                    status: { type: 'string', enum: ['DELIVERED', 'READ'] },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            200: { description: 'Status updated' },
+          },
+        },
+      },
+      '/api/files/upload': {
+        post: {
+          tags: ['Files'],
+          summary: 'Upload a file',
+          security: [{ bearerAuth: [] }],
+          requestBody: {
+            content: {
+              'multipart/form-data': {
+                schema: {
+                  type: 'object',
+                  properties: {
+                    file: { type: 'string', format: 'binary' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            201: {
+              description: 'File uploaded',
+              content: { 'application/json': { schema: { $ref: '#/components/schemas/File' } } },
+            },
+          },
+        },
+      },
+      '/api/files/{fileId}/download': {
+        get: {
+          tags: ['Files'],
+          summary: 'Download a file',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'fileId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: {
+              description: 'File stream',
+              content: {
+                'application/octet-stream': {
+                  schema: { type: 'string', format: 'binary' },
+                },
+              },
+            },
+          },
+        },
+      },
+      '/api/files/{fileId}': {
+        delete: {
+          tags: ['Files'],
+          summary: 'Delete a file',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'fileId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: { description: 'File deleted' },
+          },
+        },
+      },
+      '/api/files/user/{userId}': {
+        get: {
+          tags: ['Files'],
+          summary: 'Get user files',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'userId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: {
+              description: 'User files',
+              content: {
+                'application/json': {
+                  schema: { type: 'array', items: { $ref: '#/components/schemas/File' } },
+                },
+              },
+            },
+          },
+        },
+      },
+      '/api/notifications': {
+        get: {
+          tags: ['Notifications'],
+          summary: 'Get notifications',
+          security: [{ bearerAuth: [] }],
+          responses: {
+            200: {
+              description: 'List of notifications',
+              content: {
+                'application/json': {
+                  schema: { type: 'array', items: { $ref: '#/components/schemas/Notification' } },
+                },
+              },
+            },
+          },
+        },
+      },
+      '/api/notifications/{notificationId}/read': {
+        put: {
+          tags: ['Notifications'],
+          summary: 'Mark notification as read',
+          security: [{ bearerAuth: [] }],
+          parameters: [
+            { in: 'path', name: 'notificationId', required: true, schema: { type: 'string' } },
+          ],
+          responses: {
+            200: { description: 'Marked as read' },
+          },
+        },
+      },
+      '/api/notifications/read-all': {
+        put: {
+          tags: ['Notifications'],
+          summary: 'Mark all notifications as read',
+          security: [{ bearerAuth: [] }],
+          responses: {
+            200: { description: 'All marked as read' },
+          },
+        },
+      },
+    },
+  },
+  apis: [], // No automatic file scanning, everything is defined above
+};
+
+module.exports = swaggerJsdoc(options);
+
+
+

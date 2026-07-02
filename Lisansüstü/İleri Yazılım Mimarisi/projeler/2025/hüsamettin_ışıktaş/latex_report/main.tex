@@ -1,0 +1,124 @@
+\documentclass[12pt, a4paper]{report}
+
+% Dil ve Kodlama Ayarları
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[turkish]{babel}
+
+% Sayfa Yapısı ve Kenar Boşlukları
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% Gerekli Paketler
+\usepackage{graphicx}     % Görseller için
+\usepackage{float}        % Görsel yerleşimi için [H] parametresi
+\usepackage{hyperref}     % Bağlantılar ve içindekiler için
+\usepackage{listings}     % Kod blokları için
+\usepackage{xcolor}       % Renklendirme için
+\usepackage{titlesec}     % Başlık formatları için
+\usepackage{fancyhdr}     % Sayfa üst/alt bilgileri için
+\usepackage{parskip}      % Paragraf boşlukları için
+\usepackage{array}        % Tablolar için
+
+% Bağlantı Ayarları
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Mikroservis Mimarisine Dayalı Gerçek Zamanlı Sohbet Uygulaması},
+    pdfauthor={Öğrenci Adı}
+}
+
+% Kod Bloğu Ayarları
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{green!50!black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% Görsel Yolu
+\graphicspath{ {./images/} }
+
+% Başlık Formatları
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+% Sayfa Başlıkları
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+
+\begin{document}
+\shorthandoff{=}
+
+% Kapak Sayfası
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \Huge
+        \textbf{MİKROSERVİS MİMARİSİNE DAYALI\\GERÇEK ZAMANLI SOHBET UYGULAMASI}
+        
+        \vspace{1.5cm}
+        
+        \Large
+        \textbf{BLM5126 İleri Yazılım Mimarisi}\\
+        \textbf{Dönem Projesi Raporu}
+        
+        \vspace{1.5cm}
+        
+        \textbf{Hazırlayan}\\
+        Ad Soyad\\
+        Öğrenci No
+        
+        \vfill
+        
+        \Large
+        Yıldız Teknik Üniversitesi\\
+        Bilgisayar Mühendisliği Bölümü\\
+        2025-2026 Güz Yarıyılı
+        
+        \vspace{0.8cm}
+        
+        \Large
+        Ocak 2026
+        
+    \end{center}
+\end{titlepage}
+
+% İçindekiler
+\tableofcontents
+\listoffigures
+\newpage
+
+% Bölümler
+\input{chapters/01-konu-tanimi}
+\input{chapters/02-gereksinimler}
+\input{chapters/03-analiz-modeli}
+\input{chapters/04-tasarim-modeli}
+\input{chapters/05-mimari-tasarim}
+\input{chapters/06-degerlendirme}
+
+% Kaynakça (Eğer varsa)
+% \bibliographystyle{plain}
+% \bibliography{references}
+
+\end{document}

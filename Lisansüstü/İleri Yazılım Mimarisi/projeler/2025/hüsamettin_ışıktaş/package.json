@@ -1,0 +1,21 @@
+{
+  "name": "realtime-chat-microservices",
+  "version": "1.0.0",
+  "description": "Gerçek Zamanlı Sohbet Uygulaması - Mikroservis Mimarisi",
+  "scripts": {
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "build": "docker-compose build"
+  },
+  "keywords": [
+    "microservices",
+    "chat",
+    "real-time"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@radix-ui/react-popover": "^1.1.15"
+  }
+}

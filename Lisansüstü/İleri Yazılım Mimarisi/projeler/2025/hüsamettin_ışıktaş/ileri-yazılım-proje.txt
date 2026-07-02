@@ -1,0 +1,57 @@
+BLM5126 İleri Yazılım Mimarisi 2025-2026 Güz Yarıyılı Dönem Projesi (Final Sınavı)
+
+Projenin Amacı:
+Mikroservis mimarisine dayalı büyük bir yazılım sistemi bağlamında yazılım mimarisi hakkında çözümü anlama, tasarlama ve
+gerçekleştirme pratiklerini kazandırmaktır. Hazırlayacağınız yazılım sistemi için ayrıntılı bir mimari raporu ile çözümünüzü
+tanıtmanız hedeflenmektedir.
+
+Genel Bakış:
+Projeniz; ölçek, performans ve dayanıklılığı mümkün kılmak için mikroservis mimarisinden yararlanarak birden fazla servisin
+nasıl bağımsız olarak çalıştığını gösterecektir. Tasarımı gerçekleştireceğiniz konu, aşağıdakilerden herhangi biri olabilir:
+
+• Restoran paket servis yönetim sistemi (Kitaptaki örnek)
+• E-ticaret sistemi
+• Kargo takip sistemi
+• Etkinlik bilet satış sistemi
+• Sohbet/grup haberleşme sistemi
+• Etkinlik/restoran rezervasyon sistemi
+• Gerçek zamanlı sohbet uygulaması
+• IoT telemetri toplayıcı ve analiz uygulaması
+• Kredi Kartı finansal işlem simülasyonu
+• İçerik yönetim/dağıtım sistemi
+• Abonelik/Faturalama sistemi
+• Haber akışı sosyal medya (Twitter benzeri)
+• Seçeceğiniz başka bir sistem
+
+Kapsam:
+Hangi konu seçilmiş olursa olsun, sistemin analizi ve modüler çözümlemesi tamamen size bırakılmıştır. Sadece projenizin en
+az beş servis içerecek şekilde kurgulanması beklenmektedir. Çözümünüzü oluştururken istediğiniz programlama dilini ve
+yazılım çerçevesini (framework) kullanmakta serbestsiniz. Bunun yanında veritabanı, kuyruk, tampon bellek olay akışı ve
+yönlendirmesi, API geçidi gibi ihtiyaç duyacağınız tüm hususlar için endüstri standardı alternatifleri kullanabilirsiniz (Ör.
+MongoDB, Kibana, RabbitMQ, Redis, Kafka, Openshift, Jboss, …). Önyüz için özel bir beklenti bulunmamaktadır.
+Çözümünüzün (servislerinizin) kullanılabildiği özel bir tasarıma sahip olmayan basit web arayüzleri yeterli olacaktır.
+
+Gerçekleştireceğiniz projenin kapsamının daha iyi anlaşılması için, aşağıdaki örnekleri inceleyebilirsiniz:
+• https://github.com/mudigal-technologies/microservices-sample
+• https://www.placementpreparation.io/blog/microservices-project-ideas-for-beginners/
+
+Son Teslim Tarihi:
+Proje, final sınavı olarak değerlendirilecektir. Bu nedenle son teslim tarihi, finallerin ikinci haftasındaki ders saatidir. 19 Ocak
+2026 Pazartesi saat 11.50, proje çıktılarının online.yildiz.edu.tr adresinde tanımlı final sınavı ödevine yüklenmesi için son
+tarihtir.
+
+Teslim Edilecekler:
+• Proje Raporu
+    o Konu tanımı, senaryolar (gereksinimler), işlevsel olmayan gereksinimler
+    o Analiz modeli (UML kullanabilirsiniz)
+    o Tasarım modeli (UML kullanabilirsiniz)
+    o Mimari tasarım (detaylı açıklama, seçilen bileşenler, hazırlanan mikroservisler, …)
+    o Oluşturulan çözümün değerlendirilmesi ve tartışılması (iyileştirme önerileri ile)
+• Proje Kaynak Kodları
+    o Paket halinde sunulabileceği gibi GitHub vb kod depolarından da paylaşım yapabilirsiniz.
+• Proje İşlev Videosu
+    o Projenin mimari tasarımından bahsederken, işlevselliğini (servislerin işletilmesi, sistemin canlı kullanımını)
+      gösteren kısa bir video. Videonun beş dakikayı geçmemesine özen gösteriniz. Sistem yüklemede boyut
+      problemi yaşarsanız çevrimiçi video paylaşım ortamlarından bağlantı da paylaşabilirsiniz.
+
+Başarılar dilerim.

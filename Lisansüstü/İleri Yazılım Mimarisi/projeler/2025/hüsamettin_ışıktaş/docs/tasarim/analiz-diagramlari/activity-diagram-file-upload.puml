@@ -1,0 +1,49 @@
+@startuml Activity Diagram - Dosya Paylaşımı Akışı
+!theme plain
+
+title Activity Diagram - Dosya Paylaşımı Akışı
+
+start
+
+:Kullanıcı dosya seçer;
+:Dosya ekle butonuna tıklar;
+
+partition "İstemci (Client)" {
+  :Dosyayı File Service'e yükle;
+}
+
+partition "File Service" {
+  :Dosyayı doğrula;
+  
+  if (Dosya türü geçerli mi?) then (evet)
+    if (Dosya boyutu uygun mu?) then (evet)
+      :Dosyayı depolama sistemine kaydet;
+      :Benzersiz dosya adı oluştur;
+      :Dosya metadata'sını veritabanına kaydet;
+      :Güvenli URL oluştur;
+      note right: 24 saat geçerli URL
+      :URL'i istemciye döndür;
+    else (hayır)
+      :Hata: Dosya çok büyük;
+      stop
+    endif
+  else (hayır)
+    :Hata: Geçersiz dosya türü;
+    stop
+  endif
+}
+
+partition "Message Service" {
+  :Dosya URL'i ile mesaj oluştur;
+  :Mesaj tipini FILE olarak işaretle;
+  :Mesajı normal akışla gönder;
+  note right: Mesaj gönderme akışına devam eder
+}
+
+:İstemciye başarı yanıtı döndür;
+:Alıcılar dosyayı görüntüleyebilir/indirebilir;
+
+stop
+
+@enduml
+

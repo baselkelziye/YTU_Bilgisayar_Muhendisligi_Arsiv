@@ -1,0 +1,54 @@
+@startuml Activity Diagram - Mesaj Gönderme Akışı
+!theme plain
+
+title Activity Diagram - Mesaj Gönderme Akışı
+
+start
+
+:Kullanıcı sohbet seçer;
+:Mesaj içeriğini girer;
+:Mesaj gönderme butonuna tıklar;
+
+partition "İstemci (Client)" {
+  :Mesajı Message Service'e gönder;
+}
+
+partition "Message Service" {
+  :Mesajı doğrula;
+  if (Mesaj geçerli mi?) then (evet)
+    :Mesajı veritabanına kaydet;
+    :Mesaj ID oluştur;
+    note right: Mesaj durumu SENT olarak işaretlenir
+  else (hayır)
+    :Hata mesajı döndür;
+    stop
+  endif
+}
+
+partition "Notification Service" {
+  :Sohbet katılımcılarını al;
+  :Her katılımcı için;
+  
+  fork
+    :Çevrimiçi kullanıcı mı?;
+    if (Çevrimiçi) then (evet)
+      :WebSocket üzerinden bildirim gönder;
+      note right: Gerçek zamanlı bildirim
+    else (hayır)
+      :Bildirimi kuyruğa ekle;
+      note right: Çevrimdışı kullanıcı için
+    endif
+  end fork
+  
+  fork
+    :Bildirimi veritabanına kaydet;
+  end fork
+}
+
+:İstemciye başarı yanıtı döndür;
+:Alıcılar mesajı görüntüler;
+
+stop
+
+@enduml
+

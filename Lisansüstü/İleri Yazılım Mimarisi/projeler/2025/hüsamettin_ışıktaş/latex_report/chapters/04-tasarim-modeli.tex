@@ -1,0 +1,154 @@
+\chapter{Tasarım Modeli}
+
+\section{Genel Bakış}
+Tasarım modeli, sistemin teknik mimarisini ve bileşenlerini detaylandırır. Bu model, mikroservis mimarisine dayalı sistemin yapısal tasarımını ve servisler arası etkileşimleri tanımlar.
+
+\section{Component Diagram (Bileşen Diyagramı)}
+Component diagram, sistemin yazılım bileşenlerini ve aralarındaki bağımlılıkları gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{component-diagram.png}
+    \caption{Component Diagram}
+    \label{fig:component-diagram}
+\end{figure}
+
+\textbf{Mikroservisler:}
+\begin{enumerate}
+    \item User Service
+    \item Chat Service
+    \item Message Service
+    \item Notification Service
+    \item File Service
+\end{enumerate}
+
+\textbf{Altyapı Bileşenleri:}
+\begin{itemize}
+    \item API Gateway
+    \item WebSocket Gateway
+    \item Message Queue (RabbitMQ)
+    \item Cache (Redis)
+    \item Databases (MongoDB/PostgreSQL)
+\end{itemize}
+
+Her servis bağımsız bir bileşen olarak modellenmiş ve kendi veritabanına sahiptir. Servisler arası iletişim REST API ve message queue üzerinden gerçekleşir.
+
+\section{Sequence Diagram (Sıralama Diyagramı)}
+Sequence diagram, servisler arasındaki mesajlaşma akışını zaman sırasına göre gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sequence-diagram.png}
+    \caption{Mesaj Gönderme Sequence Diagram}
+    \label{fig:sequence-message}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sequence-diagram-file-upload.png}
+    \caption{Dosya Yükleme Sequence Diagram}
+    \label{fig:sequence-file}
+\end{figure}
+
+Aşağıdaki kritik senaryolar modellenmiştir:
+\begin{enumerate}
+    \item \textbf{Mesaj Gönderme Senaryosu:} Client $\rightarrow$ API Gateway $\rightarrow$ Message Service $\rightarrow$ Notification Service $\rightarrow$ WebSocket Gateway $\rightarrow$ Client
+    \item \textbf{Dosya Yükleme Senaryosu:} Client $\rightarrow$ API Gateway $\rightarrow$ File Service $\rightarrow$ Message Service
+\end{enumerate}
+
+\section{Class Diagram (Sınıf Diyagramı)}
+Class diagram, her mikroservisin iç yapısını ve sınıf ilişkilerini gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{class-diagram.png}
+    \caption{Class Diagram}
+    \label{fig:class-diagram}
+\end{figure}
+
+Her servis için ana sınıflar:
+
+\textbf{User Service Sınıfları:}
+\begin{itemize}
+    \item UserController
+    \item UserService
+    \item User (Model/Entity)
+\end{itemize}
+
+\textbf{Chat Service Sınıfları:}
+\begin{itemize}
+    \item ChatController
+    \item ChatService
+    \item Chat (Model/Entity)
+\end{itemize}
+
+\textbf{Message Service Sınıfları:}
+\begin{itemize}
+    \item MessageController
+    \item MessageService
+    \item Message (Model/Entity)
+\end{itemize}
+
+\textbf{Notification Service Sınıfları:}
+\begin{itemize}
+    \item NotificationController
+    \item NotificationService
+    \item Notification (Model/Entity)
+    \item WebSocketGatewayClient
+\end{itemize}
+
+\textbf{File Service Sınıfları:}
+\begin{itemize}
+    \item FileController
+    \item FileService
+    \item File (Model/Entity)
+    \item StorageService
+\end{itemize}
+
+\textit{Not: Her serviste veri erişimi için ayrı bir Repository katmanı yerine, Model sınıfları direkt olarak Service katmanından kullanılmaktadır. Bu yaklaşım, basitlik ve performans açısından tercih edilmiştir.}
+
+\section{Deployment Diagram (Dağıtım Diyagramı)}
+Deployment diagram, sistemin fiziksel dağıtımını ve altyapı bileşenlerini gösterir.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{deployment-diagram.png}
+    \caption{Deployment Diagram}
+    \label{fig:deployment-diagram}
+\end{figure}
+
+Sistem aşağıdaki düğümlerde (nodes) çalışır:
+
+\textbf{Container Düğümleri:}
+\begin{itemize}
+    \item API Gateway Container
+    \item WebSocket Gateway Container
+    \item 5 Mikroservis Container'ları
+\end{itemize}
+
+\textbf{Altyapı Düğümleri:}
+\begin{itemize}
+    \item Message Queue Node (RabbitMQ)
+    \item Cache Node (Redis)
+    \item Database Nodes (MongoDB/PostgreSQL)
+    \item Storage Node (File Storage)
+\end{itemize}
+
+Her düğüm, containerization (Docker) ile yönetilir ve orchestration (Docker Compose) ile koordine edilir.
+
+\section{Tasarım Prensipleri}
+
+\subsection{Mikroservis Prensipleri}
+\begin{itemize}
+    \item \textbf{Bağımsız Dağıtılabilirlik:} Her servis bağımsız olarak dağıtılabilir.
+    \item \textbf{Tek Sorumluluk:} Her servis belirli bir iş alanından sorumludur.
+    \item \textbf{Veritabanı Ayrımı:} Her servis kendi veritabanına sahiptir.
+    \item \textbf{API Tabanlı İletişim:} Servisler REST API ve message queue ile iletişim kurar.
+\end{itemize}
+
+\subsection{Tasarım Desenleri}
+\begin{itemize}
+    \item \textbf{API Gateway Pattern:} Tüm dış istekler API Gateway üzerinden yönlendirilir.
+    \item \textbf{Event-Driven Architecture:} Asenkron işlemler için message queue kullanılır.
+    \item \textbf{Circuit Breaker:} Servis hatalarına karşı dayanıklılık sağlar.
+\end{itemize}

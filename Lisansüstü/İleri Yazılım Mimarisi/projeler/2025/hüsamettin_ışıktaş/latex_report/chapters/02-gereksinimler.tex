@@ -1,0 +1,165 @@
+\chapter{Gereksinimler}
+
+\section{İşlevsel Gereksinimler (Functional Requirements)}
+
+\subsection{Kullanıcı Yönetimi Gereksinimleri}
+\textbf{FR-1.1: Kullanıcı Kayıt}
+\begin{itemize}
+    \item Sistem, yeni kullanıcıların kayıt olmasına izin vermelidir.
+    \item Kayıt sırasında e-posta, kullanıcı adı ve şifre bilgileri toplanmalıdır.
+    \item E-posta adresinin benzersizliği kontrol edilmelidir.
+    \item Şifre en az 6 karakter olmalıdır.
+    \item Kayıt sonrası JWT token döndürülmelidir.
+\end{itemize}
+
+\textbf{FR-1.2: Kullanıcı Doğrulama ve Giriş}
+\begin{itemize}
+    \item Sistem, kullanıcıların e-posta ve şifre ile giriş yapmasına izin vermelidir.
+    \item Giriş başarılı olduğunda JWT token oluşturulmalıdır.
+    \item Token'ın geçerlilik süresi belirlenmelidir.
+    \item Giriş başarısız olduğunda uygun hata mesajı döndürülmelidir.
+\end{itemize}
+
+\textbf{FR-1.3: Profil Yönetimi}
+\begin{itemize}
+    \item Kullanıcılar profil bilgilerini (ad, soyad, profil resmi, durum mesajı) görüntüleyebilmelidir.
+    \item Kullanıcılar profil bilgilerini güncelleyebilmelidir.
+\end{itemize}
+
+\subsection{Sohbet Yönetimi Gereksinimleri}
+\textbf{FR-2.1: Birebir Sohbet}
+\begin{itemize}
+    \item Kullanıcılar, diğer kullanıcılarla birebir sohbet başlatabilmelidir.
+    \item Sistem, aynı iki kullanıcı arasında mevcut sohbet varsa yeni sohbet oluşturmamalıdır.
+\end{itemize}
+
+\textbf{FR-2.2: Grup Sohbeti}
+\begin{itemize}
+    \item Kullanıcılar, birden fazla kullanıcı ile grup sohbeti oluşturabilmelidir.
+    \item Grup sohbetine grup adı verilebilmelidir.
+    \item Grup sohbetine katılımcı eklenebilmelidir.
+    \item Grup sohbetinden katılımcı çıkarılabilmelidir.
+\end{itemize}
+
+\textbf{FR-2.3: Sohbet Listesi}
+\begin{itemize}
+    \item Kullanıcılar, katıldıkları tüm sohbetleri görebilmelidir.
+    \item Sohbet listesi, son mesaj zamanına göre sıralanmalıdır.
+\end{itemize}
+
+\subsection{Mesajlaşma Gereksinimleri}
+\textbf{FR-3.1: Mesaj Gönderme}
+\begin{itemize}
+    \item Kullanıcılar, sohbete metin mesajı gönderebilmelidir.
+    \item Mesajlar gerçek zamanlı olarak alıcılara iletilebilmelidir.
+    \item Mesaj gönderildi/iletildi/okundu durumları takip edilmelidir.
+\end{itemize}
+
+\textbf{FR-3.2: Mesaj Geçmişi}
+\begin{itemize}
+    \item Kullanıcılar, sohbetin mesaj geçmişini görüntüleyebilmelidir.
+    \item Mesaj geçmişi sayfalama (pagination) ile yüklenebilmelidir.
+\end{itemize}
+
+\textbf{FR-3.3: Mesaj Silme}
+\begin{itemize}
+    \item Kullanıcılar, gönderdikleri mesajları silebilmelidir.
+    \item Mesaj veritabanından fiziksel olarak silinmemelidir, soft delete uygulanmalıdır.
+\end{itemize}
+
+\subsection{Dosya Paylaşımı Gereksinimleri}
+\textbf{FR-4.1: Dosya Yükleme}
+\begin{itemize}
+    \item Kullanıcılar, sohbete dosya yükleyebilmelidir.
+    \item Maksimum dosya boyutu 50 MB olmalıdır.
+    \item Dosya yüklendikten sonra bir URL oluşturulmalıdır.
+\end{itemize}
+
+\textbf{FR-4.2: Dosya İndirme}
+\begin{itemize}
+    \item Kullanıcılar, paylaşılan dosyaları indirebilmelidir.
+    \item Dosya URL'leri güvenli olmalıdır.
+\end{itemize}
+
+\subsection{Bildirim Gereksinimleri}
+\textbf{FR-5.1: Gerçek Zamanlı Bildirimler}
+\begin{itemize}
+    \item Yeni mesaj alındığında çevrimiçi kullanıcılara anında bildirim gönderilmelidir.
+    \item Bildirimler WebSocket üzerinden iletilmelidir.
+\end{itemize}
+
+\textbf{FR-5.2: Çevrimdışı Bildirimler}
+\begin{itemize}
+    \item Çevrimdışı kullanıcılar için bildirimler kuyrukta saklanmalıdır.
+\end{itemize}
+
+\section{İşlevsel Olmayan Gereksinimler (Non-Functional Requirements)}
+
+\subsection{Performans Gereksinimleri}
+\textbf{NFR-1.1: Yanıt Süresi}
+\begin{itemize}
+    \item API isteklerinin \%95'i 500 ms içinde yanıtlanmalıdır.
+    \item Mesaj gönderme işlemi 200 ms içinde tamamlanmalıdır.
+    \item Gerçek zamanlı mesaj iletimi 100 ms içinde yapılmalıdır.
+\end{itemize}
+
+\textbf{NFR-1.2: İşlem Kapasitesi}
+\begin{itemize}
+    \item Sistem, saniyede en az 1000 mesaj işleyebilmelidir.
+    \item Aynı anda 10,000 aktif kullanıcıyı destekleyebilmelidir.
+\end{itemize}
+
+\subsection{Ölçeklenebilirlik Gereksinimleri}
+\textbf{NFR-2.1: Yatay Ölçeklenebilirlik}
+\begin{itemize}
+    \item Servisler bağımsız olarak ölçeklendirilebilmelidir.
+    \item Her servis en az 3 örnekle çalışabilmelidir.
+\end{itemize}
+
+\textbf{NFR-2.2: Veri Ölçeklenebilirliği}
+\begin{itemize}
+    \item Veritabanı şeması milyonlarca mesajı destekleyebilmelidir.
+\end{itemize}
+
+\subsection{Güvenlik Gereksinimleri}
+\textbf{NFR-3.1: Kimlik Doğrulama ve Yetkilendirme}
+\begin{itemize}
+    \item Tüm API istekleri JWT token ile doğrulanmalıdır.
+    \item Şifreler hash'lenmiş (bcrypt) olarak saklanmalıdır.
+\end{itemize}
+
+\textbf{NFR-3.2: Veri Güvenliği}
+\begin{itemize}
+    \item API iletişimi HTTPS üzerinden yapılmalıdır.
+    \item Dosya erişim URL'leri zaman sınırlı olmalıdır.
+\end{itemize}
+
+\textbf{NFR-3.3: Güvenlik Kontrolleri}
+\begin{itemize}
+    \item Rate limiting uygulanmalıdır (kullanıcı başına dakikada maksimum 60 istek).
+\end{itemize}
+
+\subsection{Dayanıklılık (Reliability) Gereksinimleri}
+\textbf{NFR-5.1: Sistem Uptime}
+\begin{itemize}
+    \item Sistem \%99.5 uptime sağlamalıdır.
+\end{itemize}
+
+\textbf{NFR-5.2: Hata Toleransı}
+\begin{itemize}
+    \item Tek bir servisin çökmesi tüm sistemi etkilememelidir.
+    \item Circuit breaker pattern kullanılarak servis hataları yönetilmelidir.
+\end{itemize}
+
+\subsection{Bakım Gereksinimleri}
+\textbf{NFR-6.1: Loglama}
+\begin{itemize}
+    \item Tüm servisler merkezi loglama sistemine log göndermelidir.
+    \item ELK Stack kullanılmalıdır.
+\end{itemize}
+
+\textbf{NFR-6.2: İzleme (Monitoring)}
+\begin{itemize}
+    \item Sistem sağlığı metrikleri izlenmelidir.
+    \item API yanıt süreleri ve hata oranları izlenmelidir.
+\end{itemize}

@@ -1,0 +1,69 @@
+@startuml Use Case Diagram - Gerçek Zamanlı Sohbet Uygulaması
+!theme plain
+skinparam actorStyle awesome
+
+title Use Case Diagram - Gerçek Zamanlı Sohbet Uygulaması
+
+actor "Kullanıcı" as User
+
+rectangle "Gerçek Zamanlı Sohbet Sistemi" {
+  package "Kullanıcı Yönetimi" {
+    usecase "Kayıt Ol" as UC1
+    usecase "Giriş Yap" as UC2
+    usecase "Profil Bilgilerini Görüntüle" as UC3
+    usecase "Profil Bilgilerini Güncelle" as UC4
+  }
+
+  package "Sohbet Yönetimi" {
+    usecase "Birebir Sohbet Oluştur" as UC5
+    usecase "Grup Sohbeti Oluştur" as UC6
+    usecase "Sohbet Listesi Görüntüle" as UC7
+    usecase "Sohbete Katılımcı Ekle" as UC8
+    usecase "Sohbetten Katılımcı Çıkar" as UC9
+  }
+
+  package "Mesajlaşma" {
+    usecase "Mesaj Gönder" as UC10
+    usecase "Mesaj Geçmişi Görüntüle" as UC10_1
+    usecase "Mesaj Sil" as UC11
+    usecase "Mesaj Durumu Görüntüle" as UC12
+  }
+
+  package "Dosya Paylaşımı" {
+    usecase "Dosya Yükle" as UC13
+    usecase "Dosya İndir" as UC14
+    usecase "Dosya Önizle" as UC15
+  }
+
+  package "Bildirimler" {
+    usecase "Gerçek Zamanlı Bildirim Al" as UC16
+    usecase "Bildirim Geçmişi Görüntüle" as UC17
+  }
+}
+
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+User --> UC5
+User --> UC6
+User --> UC7
+User --> UC8
+User --> UC9
+User --> UC10
+User --> UC10_1
+User --> UC11
+User --> UC12
+User --> UC13
+User --> UC14
+User --> UC15
+User --> UC16
+User --> UC17
+
+UC5 ..> UC7 : <<include>>
+UC6 ..> UC7 : <<include>>
+UC10 ..> UC10_1 : <<include>>
+UC13 ..> UC10 : <<include>>
+
+@enduml
+
