@@ -1,0 +1,487 @@
+Kolmogorov complexity - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Kolmogorov+complexity "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Kolmogorov+complexity "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Kolmogorov+complexity "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Kolmogorov+complexity "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  Definition](#Definition)
+
+
+  Toggle Definition subsection
+  + [1.1
+    Intuition](#Intuition)
+  + [1.2
+    Plain Kolmogorov complexity *C*](#Plain_Kolmogorov_complexity_C)
+  + [1.3
+    Prefix-free Kolmogorov complexity *K*](#Prefix-free_Kolmogorov_complexity_K)
+* [2
+  Invariance theorem](#Invariance_theorem)
+
+
+  Toggle Invariance theorem subsection
+  + [2.1
+    Informal treatment](#Informal_treatment)
+  + [2.2
+    A more formal treatment](#A_more_formal_treatment)
+* [3
+  History and context](#History_and_context)
+* [4
+  Basic results](#Basic_results)
+
+
+  Toggle Basic results subsection
+  + [4.1
+    Inequalities](#Inequalities)
+  + [4.2
+    Uncomputability of Kolmogorov complexity](#Uncomputability_of_Kolmogorov_complexity)
+    - [4.2.1
+      A naive attempt at a program to compute *K*](#A_naive_attempt_at_a_program_to_compute_K)
+    - [4.2.2
+      Formal proof of uncomputability of *K*](#Formal_proof_of_uncomputability_of_K)
+  + [4.3
+    Chain rule for Kolmogorov complexity](#Chain_rule_for_Kolmogorov_complexity)
+* [5
+  Compression](#Compression)
+* [6
+  Chaitin's incompleteness theorem](#Chaitin's_incompleteness_theorem)
+* [7
+  Minimum message length](#Minimum_message_length)
+* [8
+  Kolmogorov randomness](#Kolmogorov_randomness)
+* [9
+  Relation to entropy](#Relation_to_entropy)
+* [10
+  Halting problem](#Halting_problem)
+* [11
+  Universal probability](#Universal_probability)
+* [12
+  Implications in biology](#Implications_in_biology)
+* [13
+  Conditional versions](#Conditional_versions)
+* [14
+  Time-bounded complexity](#Time-bounded_complexity)
+* [15
+  See also](#See_also)
+* [16
+  Notes](#Notes)
+* [17
+  References](#References)
+* [18
+  Further reading](#Further_reading)
+* [19
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Kolmogorov complexity
+
+23 languages
+
+* [العربية](https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%82%D9%8A%D8%AF_%D9%83%D9%88%D9%84%D9%85%D9%88%D8%BA%D8%B1%D9%88%D9%81 "تعقيد كولموغروف – Arabic")
+* [Català](https://ca.wikipedia.org/wiki/Complexitat_de_Kolmog%C3%B3rov "Complexitat de Kolmogórov – Catalan")
+* [Čeština](https://cs.wikipedia.org/wiki/Kolmogorovsk%C3%A1_slo%C5%BEitost "Kolmogorovská složitost – Czech")
+* [Deutsch](https://de.wikipedia.org/wiki/Kolmogorow-Komplexit%C3%A4t "Kolmogorow-Komplexität – German")
+* [Español](https://es.wikipedia.org/wiki/Complejidad_de_Kolmog%C3%B3rov "Complejidad de Kolmogórov – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Kolmogorovi_keerukus "Kolmogorovi keerukus – Estonian")
+* [فارسی](https://fa.wikipedia.org/wiki/%D9%BE%DB%8C%DA%86%DB%8C%D8%AF%DA%AF%DB%8C_%DA%A9%D9%88%D9%84%D9%85%D9%88%DA%AF%D8%B1%D9%88%D9%81 "پیچیدگی کولموگروف – Persian")
+* [Français](https://fr.wikipedia.org/wiki/Complexit%C3%A9_de_Kolmogorov "Complexité de Kolmogorov – French")
+* [Galego](https://gl.wikipedia.org/wiki/Complexidade_de_Kolmogorov "Complexidade de Kolmogorov – Galician")
+* [עברית](https://he.wikipedia.org/wiki/%D7%A1%D7%99%D7%91%D7%95%D7%9B%D7%99%D7%95%D7%AA_%D7%A7%D7%95%D7%9C%D7%9E%D7%95%D7%92%D7%95%D7%A8%D7%95%D7%91 "סיבוכיות קולמוגורוב – Hebrew")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Kompleksitas_Kolmogorov "Kompleksitas Kolmogorov – Indonesian")
+* [Italiano](https://it.wikipedia.org/wiki/Complessit%C3%A0_di_Kolmogorov "Complessità di Kolmogorov – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%AB%E3%83%A2%E3%82%B4%E3%83%AD%E3%83%95%E8%A4%87%E9%9B%91%E6%80%A7 "コルモゴロフ複雑性 – Japanese")
+* [한국어](https://ko.wikipedia.org/wiki/%EC%BD%9C%EB%AA%A8%EA%B3%A0%EB%A1%9C%ED%94%84_%EB%B3%B5%EC%9E%A1%EB%8F%84 "콜모고로프 복잡도 – Korean")
+* [Nederlands](https://nl.wikipedia.org/wiki/Kolmogorov-complexiteit "Kolmogorov-complexiteit – Dutch")
+* [Polski](https://pl.wikipedia.org/wiki/Z%C5%82o%C5%BCono%C5%9B%C4%87_Ko%C5%82mogorowa "Złożoność Kołmogorowa – Polish")
+* [Português](https://pt.wikipedia.org/wiki/Complexidade_de_Kolmogorov "Complexidade de Kolmogorov – Portuguese")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%8C "Колмогоровская сложность – Russian")
+* [Svenska](https://sv.wikipedia.org/wiki/Kolmogorovkomplexitet "Kolmogorovkomplexitet – Swedish")
+* [Türkçe](https://tr.wikipedia.org/wiki/Kolmogorov_karma%C5%9F%C4%B1kl%C4%B1%C4%9F%C4%B1 "Kolmogorov karmaşıklığı – Turkish")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BB%D0%BC%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0_%D1%81%D0%BA%D0%BB%D0%B0%D0%B4%D0%BD%D1%96%D1%81%D1%82%D1%8C "Колмогоровська складність – Ukrainian")
+* [粵語](https://zh-yue.wikipedia.org/wiki/%E6%BC%94%E7%AE%97%E6%B3%95%E7%86%B5 "演算法熵 – Cantonese")
+* [中文](https://zh.wikipedia.org/wiki/%E6%9F%AF%E6%B0%8F%E5%A4%8D%E6%9D%82%E6%80%A7 "柯氏复杂性 – Chinese")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q1456811#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Kolmogorov_complexity "View the content page [c]")
+* [Talk](/wiki/Talk:Kolmogorov_complexity "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Kolmogorov_complexity)
+* [Edit](/w/index.php?title=Kolmogorov_complexity&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Kolmogorov_complexity&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Kolmogorov_complexity)
+* [Edit](/w/index.php?title=Kolmogorov_complexity&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Kolmogorov_complexity&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Kolmogorov_complexity "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Kolmogorov_complexity "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Kolmogorov_complexity&oldid=1351170508 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Kolmogorov_complexity&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Kolmogorov_complexity&id=1351170508&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKolmogorov_complexity)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Kolmogorov_complexity&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Kolmogorov_complexity&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Kolmogorov_complexity)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q1456811 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Measure of algorithmic complexity
+
+[![](//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Mandelpart2_red.png/500px-Mandelpart2_red.png)](/wiki/File:Mandelpart2_red.png)
+
+This image illustrates part of the [Mandelbrot set](/wiki/Mandelbrot_set "Mandelbrot set") [fractal](/wiki/Fractal "Fractal"). Simply storing the 24-bit color of each pixel in this image would require 23 million bytes, but a small computer program can reproduce these 23 MB using the definition of the Mandelbrot set, the corner coordinates of the image and the parameters of the color mapping. Thus, the Kolmogorov complexity of this image is much less than 23 MB in any pragmatic [model of computation](/wiki/Model_of_computation "Model of computation"). [PNG](/wiki/Portable_Network_Graphics "Portable Network Graphics")'s general-purpose image compression only reduces it to 1.6 MB, smaller than the raw data but much larger than the Kolmogorov complexity.
+
+In [algorithmic information theory](/wiki/Algorithmic_information_theory "Algorithmic information theory") (a subfield of [computer science](/wiki/Computer_science "Computer science") and [mathematics](/wiki/Mathematics "Mathematics")), the **Kolmogorov complexity** of an object, such as a piece of text, is the length of a shortest [computer program](/wiki/Computer_program "Computer program") (in a predetermined [programming language](/wiki/Programming_language "Programming language")) that produces the object as output. It is a measure of the [computational](/wiki/Computation "Computation") resources needed to specify the object, and is also known as **algorithmic complexity**, **Solomonoff–Kolmogorov–Chaitin complexity**, **program-size complexity**, **descriptive complexity**, or **algorithmic entropy**. It is named after [Andrey Kolmogorov](/wiki/Andrey_Kolmogorov "Andrey Kolmogorov"), who first published on the subject in 1963[[1]](#cite_note-Kolmogorov1963-1)[[note 1]](#cite_note-2) and is a generalization of classical information theory.
+
+The notion of Kolmogorov complexity can be used to state and [prove impossibility](/wiki/Proof_of_impossibility "Proof of impossibility") results akin to [Cantor's diagonal argument](/wiki/Cantor%27s_diagonal_argument "Cantor's diagonal argument"), [Gödel's incompleteness theorem](/wiki/G%C3%B6del%27s_incompleteness_theorem "Gödel's incompleteness theorem"), and [Turing's halting problem](/wiki/Halting_problem "Halting problem").
+In particular, no program *P* computing a [lower bound](/wiki/Lower_bound "Lower bound") for each text's Kolmogorov complexity can return a value essentially larger than *P*'s own length (see section [§ Chaitin's incompleteness theorem](#Chaitin's_incompleteness_theorem)); hence no single program can compute the exact Kolmogorov complexity for infinitely many texts.
+
+## Definition
+
+[[edit](/w/index.php?title=Kolmogorov_complexity&action=edit&section=1 "Edit section: Definition")]
+
+### Intuition
+
+[[edit](/w/index.php?title=Kolmogorov_complexity&action=edit&section=2 "Edit section: Intuition")]
+
+Consider the following two [strings](/wiki/String_(computer_science) "String (computer science)") of 32 lowercase letters and digits:
+
+`abababababababababababababababab`, and
+
+`4c1j5b2p0cv4w1x8rx2y39umgw5q85s7`
+
+The first string has a short English-language description, namely "write ab 16 times", which consists of **17** characters. The second one has no obvious simple description (using the same character set) other than writing down the string itself, i.e., "write 4c1j5b2p0cv4w1x8rx2y39umgw5q85s7" which has **38** characters. Hence the operation of writing the first string can be said to have "less complexity" than writing the second.
+
+More formally, the [complexity](/wiki/Complexity "Complexity") of a string is the length of the shortest possible description of the string in some fixed [universal](/wiki/Turing_complete "Turing complete") description language (the sensitivity of complexity relative to the choice of description language is discussed below). It can be shown that the Kolmogorov complexity of any string cannot be more than a few bytes larger than the length of the string itself. Strings like the *abab* example above, whose Kolmogorov complexity is small relative to the string's size, are not considered to be complex.
+
+The Kolmogorov complexity can be defined for any mathematical object, but for simplicity the scope of this article is restricted to strings. We must first specify a description language for strings. Such a description language can be based on any computer programming language, such as [Lisp](/wiki/Lisp_programming_language "Lisp programming language"), [Pascal](/wiki/Pascal_(programming_language) "Pascal (programming language)"), or [Java](/wiki/Java_(programming_language) "Java (programming language)"). If **P** is a program which outputs a string *x*, then **P** is a description of *x*. The length of the description is just the length of **P** as a character string, multiplied by the number of bits in a character (e.g., 7 for [ASCII](/wiki/ASCII "ASCII")).
+
+We could, alternatively, choose an encoding for [Turing machines](/wiki/Turing_machine "Turing machine"), where an *encoding* is a function which associates to each Turing Machine **M** a bitstring <**M**>. If **M** is a Turing Machine which, on input *w*, outputs string *x*, then the concatenated string <**M**> *w* is a description of *x*. For theoretical analysis, this approach is more suited for constructing detailed formal proofs and is generally preferred in the research literature. In this article, an informal approach is discussed.
+
+Any string *s* has at least one description. For example, the second string above is output by the [pseudo-code](/wiki/Pseudo-code "Pseudo-code"):
+
+```
+function GenerateString2()
+    return "4c1j5b2p0cv4w1x8rx2y39umgw5q85s7"
+```
+
+whereas the first string is output by the (much shorter) pseudo-code:
+
+```
+function GenerateString1()
+    return "ab" × 16
+```
+
+If a description *d*(*s*) of a string *s* is of minimal length (i.e., using the fewest bits), it is called a **minimal description** of *s*, and the length of *d*(*s*) (i.e. the number of bits in the minimal description) is the **Kolmogorov complexity** of *s*, written *K*(*s*). Symbolically,
+
+*K*(*s*) = |*d*(*s*)|.
+
+The length of the shortest description will depend on the choice of description language; but the effect of changing languages is bounded (a result called the *invariance theorem*, see [below](#invariance_theorem)).
+
+### Plain Kolmogorov complexity *C*
+
+[[edit](/w/index.php?title=Kolmogorov_complexity&action=edit&section=3 "Edit section: Plain Kolmogorov complexity C")]
+
+There are two definitions of Kolmogorov complexity: *plain* and *prefix-free*. The plain complexity is the minimal description length of any program, and denoted 
+
+
+
+C
+(
+x
+)
+{\displaystyle C(x)}
+![{\displaystyle C(x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/7f6b53682fddbe3028ffd75bd75771b86c6c7bd9) while the prefix-free complexity is the minimal description length of any program encoded in a [prefix-free code](/wiki/Prefix_code "Prefix code"), and denoted 
+
+
+
+K
+(
+x
+)
+{\displaystyle K(x)}
+![{\displaystyle K(x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/19a621a6fbcc971649157a42ea42a599c22eee94). The plain complexity is more intuitive, but the prefix-free complexity is easier to study.
+
+By default, all equations hold only up to an additive constant. For example, 
+
+
+
+f
+(
+x
+)
+=
+g
+(
+x
+)
+{\displaystyle f(x)=g(x)}
+![{\displaystyle f(x)=g(x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/01d0bb8fc04dfc0d04d53ee9ada38c794e51ca78) really means that 
+
+
+
+f
+(
+x
+)
+=
+g
+(
+x
+)
++
+O
+(
+1
+)
+{\displaystyle f(x)=g(x)+O(1)}
+![{\displaystyle f(x)=g(x)+O(1)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/80c21ce019319258761daaf31782d64b7cf230f6), that is, 
+
+
+
+∃
+c
+,
+∀
+x
+,
+
+|
+f
+(
+x
+)
+−
+g
+(
+x
+)
+
+|
+≤
+c
+{\displaystyle \exists c,\forall x,|f(x)-g(x)|\leq c}
+![{\displaystyle \exists c,\forall x,|f(x)-g(x)|\leq c}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b4eb32bee0ea8e1b5305dac761162c0f7ee6573d).
+
+Let 
+
+
+
+U
+:
+
+2
+
+∗
+→
+
+2
+
+∗
+{\displaystyle U:2^{\*}\to 2^{\*}}
+![{\displaystyle U:2^{*}\to 2^{*}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/eec0237626a8db2243b600cc689e1d553e64fbe0) be a computable function mapping finite binary strings to binary strings. It is a universal function if, and only if, for any computable 
+
+
+
+f
+:
+
+2
+
+∗
+→
+
+2
+
+∗
+{\displaystyle f:2^{\*}\to 2^{\*}}
+![{\displaystyle f:2^{*}\to 2^{*}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/a6219afe6ddda1092c072a18d91b961218e72471), we can encode the function in a "program" 
+
+
+
+
+s
+
+f
+{\displaystyle s\_{f}}
+![{\displaystyle s_{f}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/861eb1d6654456882863ba0b53ca9ab551ad903c), such that 
+
+
+
+∀
+x
+∈
+
+2
+
+∗
+,
+U
+(
+
+s
+
+f
+x
+)
+=
+f
+(
+x
+)
+{\displaystyle \forall x\in 2^{\*},U(s\_{f}x)=f(x)}
+![{\displaystyle \forall x\in 2^{*},U(s_{f}x)=f(x)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/54645b5c6e64a33d5b2b8cdf9e9eca7fd92bdf04). We can think of 
+
+
+
+U
+{\displaystyle U}
+![{\displaystyle U}](https://wikimedia.org/api/rest_v1/media/math/render/svg/458a728f53b9a0274f059cd695e067c430956025) as a program interpreter, which takes in an initial segment describing the program, followed by data that the program should process.
+
+One problem with plain complexity is that 
+
+
+
+C
+(
+x
+y
+)
+≮
+C
+(
+x
+)
++
+C
+(
+y
+)
+{\displaystyle C(xy)\not <C(x)+C(y)}
+![{\displaystyle C(xy)\not <C(x)+C(y)}](https://wikimedia.org/api/rest_v1/media/math/render/svg/d17428d41589b1c70b96b8d57403d7f1a70dc0ac), because intuitively speaking, there is no general way to tell where to divide an output string just by looking at the concatenated string. We can divide it by specifying the length of 
+
+
+
+x
+{\displaystyle x}
+![{\displaystyle x}](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4) or 
+
+
+
+y
+{\displaystyle y}
+![{\displaystyle y}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b8a6208ec717213d4317e666f1ae872e00620a0d), but that would take 
+
+
+
+O
+(
+min
+(
+ln
+⁡
+x
+,
+ln
+⁡
+y
+)
+)
+{\displaystyle O(\min(\ln x,\ln y))}
+![{\displaystyle O(\min(\ln x,\ln y))}](https://wikimedia.org/api/rest_v1/media/math/render/svg/7e78f589550e718ab91199d26e5ba9a010541972) extra symbols. Indeed, for any 
+
+
+
+c
+>
+0
+{\displaystyle c>0}
+![{\displaystyle c>0}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2ba126f626d61752f62eaacaf11761a54de4dc84) there exists 
+
+
+
+x
+,
+y
+{\displaystyle x,y}
+![{\displaystyle x,y}](https://wikime

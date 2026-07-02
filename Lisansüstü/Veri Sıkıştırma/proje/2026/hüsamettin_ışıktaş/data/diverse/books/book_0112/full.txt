@@ -1,0 +1,90 @@
+{
+  "profile_3": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:f6cdb2b9",
+    "expected_bpb": 3.383861296458318,
+    "expected_ms_per_kb": 0.3165778982439889,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_4": {
+    "algorithm_id": "bwt_mtf",
+    "parameter_set_id": "bwt_mtf:f71fe5f5",
+    "expected_bpb": 4.045477202916038,
+    "expected_ms_per_kb": 0.6445483804226952,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_9": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:f6cdb2b9",
+    "expected_bpb": 4.801036696566137,
+    "expected_ms_per_kb": 0.3862886692448538,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_6": {
+    "algorithm_id": "huffman",
+    "parameter_set_id": "huffman:698b2692",
+    "expected_bpb": 5.447290090973052,
+    "expected_ms_per_kb": 0.2219132889382295,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_0": {
+    "algorithm_id": "huffman",
+    "parameter_set_id": "huffman:698b2692",
+    "expected_bpb": 5.510523361492886,
+    "expected_ms_per_kb": 0.22572270762863572,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_2": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:f6cdb2b9",
+    "expected_bpb": 5.607485676065628,
+    "expected_ms_per_kb": 0.4202616728850478,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_1": {
+    "algorithm_id": "huffman",
+    "parameter_set_id": "huffman:698b2692",
+    "expected_bpb": 5.798913572123405,
+    "expected_ms_per_kb": 0.23820619754623645,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_11": {
+    "algorithm_id": "huffman",
+    "parameter_set_id": "huffman:698b2692",
+    "expected_bpb": 5.824420312266821,
+    "expected_ms_per_kb": 0.23761754535327873,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_10": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:f6cdb2b9",
+    "expected_bpb": 5.997098761788546,
+    "expected_ms_per_kb": 0.43588336902019004,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_5": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:9401c600",
+    "expected_bpb": 6.30287586765559,
+    "expected_ms_per_kb": 0.4519408549209492,
+    "n_samples": 300,
+    "valid_rate": 1.0
+  },
+  "profile_7": {
+    "algorithm_id": "lzw",
+    "parameter_set_id": "lzw:513772ed",
+    "expected_bpb": 8.169379188205113,
+    "expected_ms_per_kb": 0.8312094680744649,
+    "n_samples": 33,
+    "valid_rate": 1.0
+  }
+}
