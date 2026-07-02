@@ -1,0 +1,5 @@
+Model,Best Params,CV F1 Score (Mean),CV Accuracy (Mean),CV Recall (Mean),CV Precision (Mean)
+Logistic Regression,"{'model__C': 0.1, 'model__solver': 'liblinear'}",0.6722914450446333,0.7473134708428827,0.7349406009783367,0.6241715399610136
+SVM,"{'model__C': 1, 'model__gamma': 'auto', 'model__kernel': 'rbf'}",0.6747378548094126,0.740862405568288,0.7689028651292802,0.6027146056557822
+Random Forest,"{'model__max_depth': 10, 'model__min_samples_split': 10, 'model__n_estimators': 200}",0.6906641854308325,0.7747050335285629,0.7203354297693921,0.6655743018071127
+MLP Classifier,"{'activation': 'tanh', 'alpha': 0.0001, 'hidden_layer_sizes': (50, 50), 'solver': 'adam'}",0.6651664487101845,0.7590187590187589,0.6790356394129978,0.6586400042026952
