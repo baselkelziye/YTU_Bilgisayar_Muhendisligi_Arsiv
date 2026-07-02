@@ -1,0 +1,50 @@
+{
+  "config": {
+    "add_tie_breaker": true,
+    "ks": [
+      10,
+      50,
+      100
+    ],
+    "make_undirected": true
+  },
+  "dataset_name": "ogbl-collab",
+  "dataset_scale": 0.1,
+  "device": "cuda:0",
+  "experiment_config": {
+    "dataset_name": "ogbl-collab",
+    "dataset_scale": 0.1,
+    "device": "cuda:0",
+    "hyperparameters": {
+      "add_tie_breaker": true,
+      "make_undirected": true
+    },
+    "ks": [
+      10,
+      50,
+      100
+    ],
+    "method_name": "common_neighbors",
+    "save_result": true,
+    "seed": 42
+  },
+  "memory_delta_mb": 0.515625,
+  "memory_mb": 3826.5703125,
+  "method_name": "common_neighbors",
+  "metrics": {
+    "test": {
+      "hits_at_10": 0.07435947246864814,
+      "hits_at_100": 0.07537395583759632,
+      "hits_at_50": 0.0746400742515487
+    },
+    "valid": {
+      "hits_at_10": 0.10442047799747022,
+      "hits_at_100": 0.10538579322282138,
+      "hits_at_50": 0.10490313561014579
+    }
+  },
+  "runtime_seconds": 0.3825284800004738,
+  "seed": 42,
+  "status": "completed",
+  "timestamp": "20260601_072622"
+}
