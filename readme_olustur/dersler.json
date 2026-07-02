@@ -4064,7 +4064,12 @@
             "yil": 0,
             "donem": "yok",
             "tip": "Lisansüstü",
-            "dersi_veren_hocalar": [],
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "G1",
+                    "ad": "Dr. Göksel Biricik"
+                }
+            ],
             "guncel_mi": true,
             "kolaylik_puani": 80,
             "gereklilik_puani": 80,
@@ -4135,6 +4140,19 @@
                 {
                     "kisaltma": "GB",
                     "ad": "Doç. Dr. Gökhan Bilgin"
+                }
+            ],
+            "guncel_mi": true
+        },
+        {
+            "ad": "Web Madenciliği",
+            "yil": 0,
+            "donem": "yok",
+            "tip": "Lisansüstü",
+            "dersi_veren_hocalar": [
+                {
+                    "kisaltma": "MSA",
+                    "ad": "Prof. Dr. Mehmet Sıddık Aktaş"
                 }
             ],
             "guncel_mi": true

@@ -1,0 +1,25 @@
+# Kolektif Öğrenme Ödev 2 - Bağımlılıklar
+
+# Veri işleme
+datasets>=2.14.0
+pandas>=1.5.0
+numpy>=1.24.0
+
+# Makine öğrenmesi
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Derin öğrenme ve embedding
+torch>=2.0.0
+transformers>=4.30.0
+
+# Görselleştirme
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# İlerleme çubuğu
+tqdm>=4.65.0
+
+# Huggingface authentication (opsiyonel)
+huggingface-hub>=0.16.0
+
