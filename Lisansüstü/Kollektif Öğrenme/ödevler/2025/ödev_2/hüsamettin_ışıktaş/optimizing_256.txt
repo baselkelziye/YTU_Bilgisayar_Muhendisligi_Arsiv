@@ -1,0 +1,209 @@
+============================================================
+HİPERPARAMETRE OPTİMİZASYONU
+============================================================
+Mod: full | CV folds: 3 | Yöntemler: random_forest, bagging, random_subspace
+Veri setleri: title, abstract, concat
+
+############################################################
+# VERİSETİ: BAŞLIK
+############################################################
+
+Veri yükleniyor...
+TITLE - Train: (6250, 256), Test: (6250, 256)
+
+>>> Random Forest (title)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 31.1 saniye (0.5 dakika)
+
+✓ En İyi Parametreler: {'max_depth': 30, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0507
+✓ Test Accuracy: 0.0469
+✓ Test F1-Macro: 0.0465
+
+>>> Bagging (title)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 761.2 saniye (12.7 dakika)
+
+✓ En İyi Parametreler: {'max_samples': 0.7, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0541
+✓ Test Accuracy: 0.0538
+✓ Test F1-Macro: 0.0509
+
+>>> Random Subspace (title)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 536.9 saniye (8.9 dakika)
+
+✓ En İyi Parametreler: {'max_features': 0.7, 'n_estimators': 50}
+✓ En İyi CV Skoru: 0.0509
+✓ Test Accuracy: 0.0501
+✓ Test F1-Macro: 0.0497
+
+############################################################
+# VERİSETİ: ÖZET
+############################################################
+
+Veri yükleniyor...
+ABSTRACT - Train: (6250, 256), Test: (6250, 256)
+
+>>> Random Forest (abstract)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 25.1 saniye (0.4 dakika)
+
+✓ En İyi Parametreler: {'max_depth': 20, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0776
+✓ Test Accuracy: 0.0750
+✓ Test F1-Macro: 0.0727
+
+>>> Bagging (abstract)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 743.3 saniye (12.4 dakika)
+
+✓ En İyi Parametreler: {'max_samples': 1.0, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0736
+✓ Test Accuracy: 0.0733
+✓ Test F1-Macro: 0.0700
+
+>>> Random Subspace (abstract)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 731.5 saniye (12.2 dakika)
+
+✓ En İyi Parametreler: {'max_features': 0.7, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0736
+✓ Test Accuracy: 0.0738
+✓ Test F1-Macro: 0.0699
+
+############################################################
+# VERİSETİ: BIRLEŞTIRILMIŞ
+############################################################
+
+Veri yükleniyor...
+CONCAT - Train: (6250, 512), Test: (6250, 512)
+
+>>> Random Forest (concat)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 36.0 saniye (0.6 dakika)
+
+✓ En İyi Parametreler: {'max_depth': 10, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0707
+✓ Test Accuracy: 0.0723
+✓ Test F1-Macro: 0.0691
+
+>>> Bagging (concat)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 1286.2 saniye (21.4 dakika)
+
+✓ En İyi Parametreler: {'max_samples': 0.5, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0706
+✓ Test Accuracy: 0.0693
+✓ Test F1-Macro: 0.0669
+
+>>> Random Subspace (concat)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+max_depth=20 ile DecisionTree kullanılıyor
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+
+⏱️  Optimizasyon süresi: 1067.2 saniye (17.8 dakika)
+
+✓ En İyi Parametreler: {'max_features': 0.5, 'n_estimators': 100}
+✓ En İyi CV Skoru: 0.0717
+✓ Test Accuracy: 0.0701
+✓ Test F1-Macro: 0.0691
+
+✓ Sonuçlar kaydedildi: artifacts/2025-11-28_064223_optimization/
+
+============================================================
+OPTİMİZASYON SONUÇLARI ÖZETİ
+============================================================
+
+RANDOM FOREST:
+--------------------------------------------------
+  Başlık         : max_depth=30, n_estimators=200
+                   Test Acc: 0.0469, F1: 0.0465
+  Özet           : max_depth=20, n_estimators=200
+                   Test Acc: 0.0750, F1: 0.0727
+  Birleştirilmiş : max_depth=10, n_estimators=200
+                   Test Acc: 0.0723, F1: 0.0691
+
+BAGGING:
+--------------------------------------------------
+  Başlık         : max_samples=0.7, n_estimators=200
+                   Test Acc: 0.0538, F1: 0.0509
+  Özet           : max_samples=1.0, n_estimators=200
+                   Test Acc: 0.0733, F1: 0.0700
+  Birleştirilmiş : max_samples=0.5, n_estimators=200
+                   Test Acc: 0.0693, F1: 0.0669
+
+RANDOM SUBSPACE:
+--------------------------------------------------
+  Başlık         : max_features=0.7, n_estimators=50
+                   Test Acc: 0.0501, F1: 0.0497
+  Özet           : max_features=0.7, n_estimators=200
+                   Test Acc: 0.0738, F1: 0.0699
+  Birleştirilmiş : max_features=0.5, n_estimators=100
+                   Test Acc: 0.0701, F1: 0.0691

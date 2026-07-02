@@ -1,0 +1,18 @@
+{
+    "train_mini": {
+        "total_images": 500000,
+        "total_categories": 10000,
+        "min_images_per_class": 50,
+        "max_images_per_class": 50,
+        "mean_images_per_class": 50.0,
+        "median_images_per_class": 50.0
+    },
+    "val": {
+        "total_images": 100000,
+        "total_categories": 10000,
+        "min_images_per_class": 10,
+        "max_images_per_class": 10,
+        "mean_images_per_class": 10.0,
+        "median_images_per_class": 10.0
+    }
+}

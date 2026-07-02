@@ -1,0 +1,34 @@
+
+Model yükleniyor: ytu-ce-cosmos/turkish-gpt2-large-750m-instruct-v0.1
+Model yüklendi. Cihaz: cuda:0
+Map:   0%|          | 0/1000 [00:00<?, ? examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 10551.68 examples/s]
+/home/husam/Desktop/YTU-YL/Kolektif Öğrenme/kolektif-ogrenme-odev3/.venv/lib64/python3.12/site-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+trainable params: 47,185,920 || all params: 821,217,280 || trainable%: 5.7459
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:08<00:00,  8.15s/it]                                             100%|██████████| 1/1 [00:08<00:00,  8.15s/it]                                             100%|██████████| 1/1 [00:10<00:00,  8.15s/it]100%|██████████| 1/1 [00:10<00:00, 10.01s/it]
+{'loss': -0.1737, 'grad_norm': 1.2772754430770874, 'learning_rate': 2e-05, 'num_tokens': 895.0, 'completions/mean_length': 205.5, 'completions/min_length': 155.0, 'completions/max_length': 256.0, 'completions/clipped_ratio': 0.5, 'completions/mean_terminated_length': 155.0, 'completions/min_terminated_length': 155.0, 'completions/max_terminated_length': 155.0, 'rewards/grpo_reward_function/mean': -0.10000000149011612, 'rewards/grpo_reward_function/std': 0.4242640733718872, 'reward': -0.10000000149011612, 'reward_std': 0.4242640733718872, 'frac_reward_zero_std': 0.0, 'entropy': 0.8334027230739594, 'clip_ratio/low_mean': 0.0, 'clip_ratio/low_min': 0.0, 'clip_ratio/high_mean': 0.0, 'clip_ratio/high_max': 0.0, 'clip_ratio/region_mean': 0.0, 'step_time': 7.937668536993442, 'epoch': 0.25}
+{'train_runtime': 10.0172, 'train_samples_per_second': 0.2, 'train_steps_per_second': 0.1, 'train_loss': -0.1737249493598938, 'epoch': 0.25}
+
+✓ Dummy run başarılı!
+
+Eğitim başlatılıyor...
+  0%|          | 0/500 [00:00<?, ?it/s]
+  0%|          | 0/500 [00:00<?, ?it/s][A  0%|          | 1/500 [00:24<3:20:20, 24.09s/it]
+  0%|          | 1/500 [00:24<3:20:20, 24.09s/it][A  0%|          | 2/500 [00:49<3:26:15, 24.85s/it]
+  0%|          | 2/500 [00:49<3:26:15, 24.85s/it][A  1%|          | 3/500 [01:15<3:29:56, 25.34s/it]
+  1%|          | 3/500 [01:15<3:29:56, 25.34s/it][A  1%|          | 4/500 [01:40<3:28:38, 25.24s/it]
+  1%|          | 4/500 [01:40<3:28:38, 25.24s/it][A  1%|          | 5/500 [02:02<3:18:18, 24.04s/it]
+  1%|          | 5/500 [02:02<3:18:18, 24.04s/it][A  1%|          | 6/500 [02:25<3:16:01, 23.81s/it]
+  1%|          | 6/500 [02:25<3:16:01, 23.81s/it][A  1%|▏         | 7/500 [02:50<3:17:17, 24.01s/it]
+  1%|▏         | 7/500 [02:50<3:17:17, 24.01s/it][A  2%|▏         | 8/500 [03:12<3:12:07, 23.43s/it]
+  2%|▏         | 8/500 [03:12<3:12:07, 23.43s/it][A  2%|▏         | 9/500 [03:22<2:36:40, 19.15s/it]
+  2%|▏         | 9/500 [03:22<2:36:40, 19.15s/it][A  2%|▏         | 10/500 [03:47<2:51:49, 21.04s/it]
+  2%|▏         | 10/500 [03:47<2:51:49, 21.04s/it][A  2%|▏         | 11/500 [04:04<2:42:49, 19.98s/it]
+  2%|▏         | 11/500 [04:04<2:42:49, 19.98s/it][A  2%|▏         | 12/500 [04:27<2:48:49, 20.76s/it]
+  2%|▏         | 12/500 [04:27<2:48:49, 20.76s/it][A  3%|▎         | 13/500 [04:51<2:56:21, 21.73s/it]
+  3%|▎         | 13/500 [04:51<2:56:21, 21.73s/it][A  3%|▎         | 14/500 [05:14<2:59:43, 22.19s/it]
+  3%|▎         | 14/500 [05:14<2:59:43, 22.19s/it][A  3%|▎         | 15/500 [05:38<3:03:15, 22.67s/it]
+  3%|▎         | 15/500 [05:38<3:03:15, 22.67s/it][A  3%|▎         | 16/500 [06:01<3:03:52, 22.79s/it]
+  3%|▎         | 16/500 [06:01<3:03:52, 22.79s/it][A  3%|▎         | 17/500 [06:20<2:55:10, 21.76s/it]
+  3%|▎         | 17/500 [06:20<2:55:10, 21.76s/it][A  4%|▎         | 18/500 [06:36<2:38:41, 19.76s/it]
+  4%|▎         | 18/500 [06:36<2:38:41, 19.76s/it][A

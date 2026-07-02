@@ -1,0 +1,8 @@
+Model,Reward Function,Accuracy (%),Format Compliance (%),Diff (Acc)
+simple,simple,6.8,1.6,3.4
+long,long,4.4,0.2,1.0
+merged_simple_long,merged,4.0,0.6,0.6
+Baseline (Eğitimsiz),-,3.4,1.2,0.0
+turkish,turkish,3.2,0.0,-0.2
+short,short,3.0,0.4,-0.4
+connectives,connectives,1.4,0.0,-2.0

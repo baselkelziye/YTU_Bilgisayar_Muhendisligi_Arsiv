@@ -1,0 +1,36 @@
+{
+  "_meta": {
+    "model": "PyTorch MLP",
+    "embed_size": 1024,
+    "dataset_dir": "/home/husam/Desktop/YTU-YL/Kolektif \u00d6\u011frenme/kolektif-ogrenme-odev2/dataset/1024",
+    "output_dir": "/home/husam/Desktop/YTU-YL/Kolektif \u00d6\u011frenme/kolektif-ogrenme-odev2/artifacts/2025-11-28_174606_mlp",
+    "timestamp": "2025-11-28_174606"
+  },
+  "title": {
+    "accuracy": 0.05648,
+    "f1_macro": 0.05663093220546557,
+    "f1_weighted": 0.05663093220546558,
+    "precision_macro": 0.05754299027487019,
+    "recall_macro": 0.056479999999999995,
+    "mae": 6.744,
+    "rmse": 8.62676764495254
+  },
+  "abstract": {
+    "accuracy": 0.14096,
+    "f1_macro": 0.14110786327607816,
+    "f1_weighted": 0.14110786327607822,
+    "precision_macro": 0.1446338194382579,
+    "recall_macro": 0.14096,
+    "mae": 4.14032,
+    "rmse": 5.9498302496793976
+  },
+  "concat": {
+    "accuracy": 0.11776,
+    "f1_macro": 0.11777999652531636,
+    "f1_weighted": 0.11777999652531634,
+    "precision_macro": 0.11940381503279904,
+    "recall_macro": 0.11776,
+    "mae": 4.48512,
+    "rmse": 6.269647518002906
+  }
+}
