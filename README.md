@@ -638,14 +638,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Bilgisayar Bilimlerine Giriş 👑 En popüler ders (28 oy)
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Ders akış diyagramlarıyla algoritma mantığının girişini anlatıyor. Güzel bir ders ama çok fazla ödev var. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
-    - 👤 **_Violancello_**: Bilgisayar ve yazılıma giriş için çok önemli, hiçbir ders kaçırılmadan dikkatle dinlenmeli. Ders içeriği oldukça öğretici ama sınavda flowchart çizmek çok uğraştırıcı oluyor flowchart olayını azaltsalar keşke. Bu dersten kesinlikle kalmayın yoksa seneye Veri Yapılarını alamazsınız ve tüm eğitim planınız bozulur. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
-    - 👤 **_Blessed Camel_**: Ders işleyişi ne kadar zevkli de olsa (flowchart hariç ) sınavlarında boncuk boncuk terliyorsunuz AA geçmek gerçekten takdir edilesi ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-    - 👤 **_Anonim_**: ortalamanın yüksek olma sebebi tüm üst dönemlerin yükseltmek için alttan alması dersi . Temeli olmayan biri için 1.dönemin en zor dersi ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_Sien_**: Bu ders bana kalırsa tam bir bubi tuzağı. Çoğu şeyin mantıksal ve yorumlanabilir olmasından dolayı kolayca yapılabilir izlenimi veriyor ama oldukça pratik yapmayı ve temellerini iyi anlamayı gerektiriyor. Derslerden önce bir hazırlığın şart olduğunu düşünüyorum, hocalar bazen çok kullanılan ama yine de alana özgü kavramları açıklamadan sıkça kullanabiliyor ve bazı ağzı bozuklar önceden öğrendiği 3-4 kavram üstünden hocaya inatla soru sormayı ve dersi bulandırmayı çok seviyor. Biraz içine girdikçe aşina olunan şeyler hepsi. İlk başta yabancı gelebilir. Ama pek yapılamayacak bir şey de yok. Sözel kısımları sınavda çıkmaz deyip atlamayın hatta mantığıyla öğrenin çünkü çıkıyor. Algoritma ve kod kısmında bol bol pratik gerekli hatta yapabilirseniz dış kaynaklardan da beslenin. Burada büyük resmi görmeye çalışıyorsunuz ve senenin başında hiçbir şey bilmeyip buradan 2-3 alan ve biraz kod yazmayı bile öğrenerek çıksanız baya kârda olduğunuzu söylemem gerekli, o yüzden çatır çutur kod yazamıyorum, kavramları sular seller gibi aktaramıyorum tarzı üzülmenize gerek yok. Kısaca anladığınızdan emin olun çünkü bölüm derslerinin temeli burada oluşuyor ve sonradan bilmem kaç yazılım dili öğrenip tüm alanları da deneseniz mantığı oturmamışsa tıkanmanıza sebep olur. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_Skywalker_**: Dönemin en zor dersi. Ders sayısını yetersiz buluyorum açıkçası. Ayrıca kalırsanız da dünyanın sonu değil. Seneye güzde tekrar alırsınız ve veri yapılarını da alabilirsiniz baharda. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
     - 👤 **_Dd_**: Flowchartlar hiçbir sınavda peşinizi bırakmayacak. Önemli bir ders olmasını anlayabiliyorum ama sınavlarda öyle bir senaryo verilir ki, neyi nasıl yapacağınızı düşünürken beyniniz çorba olur. Ayrıca zaten ödevleri, labları, projeleri, proje raporları, vizeleri, finali derken ömrünüzden ömür gitmesi garanti. Üstelik daha önceden yazılım biliyorsanız, siz kodunuzu tamamen doğru bile yazmış olsanız onların istediği/öğrettiği şekilde değilse puanınız kırılır. Bu kadar kasmaya gerek var mı bilmiyorum, ders tam bir stres kaynağı. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Hakiki_**: Önceden hafif bir altyapınız varsa hiç de dendiği kadar zor değil. Fizik ve Mat1 sizi daha çok zorlar bu derse göre. Ancak okula sıfır olarak geliyorsanız mutlaka çalışmalısınız. Hocalar da bölüm sitesinde yazanın aksine sıfırdan gelenlere göre anlatmıyorlar bence. Bu durum mutlaka düzeltilmeli. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 6 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -661,9 +656,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Fizik 1 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. 
     - 👤 **_Darthshadoww_**: YKS fizigin biraz daha ileri seviyesi. Fizigi seviyorsaniz pratiklerle, cikmis sorularla rahat gecebilecegeniz bir ders. Son gun cikmislarla halledilecek bir ezber degil. Cogu sorulari pratige dayali islem gerektiren sorulardir. TYT ve AYT karisimi bir fizik diyebilirm hatirladigim kadariyla ℹ️ Yorum **03.2024** tarihinde yapılmıştır.
     - 👤 **_Anonim_**: 2024 fizik 1 ytu tarihinin en basit sinavlarindan olusmustur ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
@@ -700,9 +695,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Lineer Cebir 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle en büyük alakası derste matrisin varlığını öğretmesi. Kalmamak yeterli. 
     - 👤 **_Anonim_**: Duzenli calisan ana kitap ve cikmislari cozen herkesin aa verebilecegi duzeyde zorluk ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Emperor_**: Son derece gerekli, birçok ders buradan temel alıyor ve eğer düşük geçerseniz tekrar alın. Sınavına gidip geçiyorsunuz bölüm dersi gibi lab ödev quiz uğraşı yok. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -714,9 +709,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Matematik 1 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle çok fazla alakalı bir ders değil. Kalmamak lazım. 
     - 👤 **_Anonim_**: Yasemin alagozden ders alip pinar albayragin notlariyla calisilirsa aa gecmek zor degil ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Hakiki_**: Fatma Çeliker'den alırsanız dönemin en zevkli dersi olacaktır. Kraliçe! ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -769,9 +764,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Mühendisler için Yarıiletken Fiziği 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle çok alakası yok. Kalmamak lazım. Çok gereksiz ezber. 
     - 👤 **_Blessed Camel_**: Sınavda formül kağıdı verilir her şey olur ama eğer çalışmazsanız sadece kağıtla bakışırsınız. Çok zor ve karışık bir ders sonuçta geliştiriyor ama dönem boyunca çok yoruyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Otlak İNek_**: Yusuf hocadan almayın. Profesör yavaşlığı var. Mümkünse Süreyya, değilse Çiğdem hocadan alın. İşlemlerden, sembollerden değil ezber bilgilerden korkun ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -783,9 +778,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Sayısal Analiz 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle alakalı bir ders. Matematiksel yöntemlerin bilgisayar ortamında nasıl uygulanacağı öğretiliyor. Banu hoca yöntemleri 'c' dilinde kodlattırıyor 
     - 👤 **_Blessed Camel_**: En basit ama en gerekli olan derslerden.. insanın ufku açılıyor ve verilen projeyle birlikte algoritma anlamında da kendinizi geliştiriyorsunuz. Bu dersi sevin sevdirin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Hakiki_**: Dönemin diğer bölüm dersleri arasında bence geçmesi en kolayı. Yöntemleri güzelce kavrayıp Gemini ile soru yazıp çözerseniz rahat rahat AA verirsiniz. Zaten ders kendi konuları olarak düşünmenizi gerektirmiyor, yöntem ezberleyip uyguluyorsunuz. Ancak bu yöntemlerin kullanıldığı yerler resmen her yer. Ayrıca dersi derste öğrenmenizi tavsiye ederim. Projesi biraz uğraştırıcı ama genelde yüksek notlar veriyorlar. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -819,13 +814,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Ayrık Matematik 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Güzel bir ders. Çok zor değil. Bölümle alakası da oldukça fazla. 
-    - 👤 **_Ufouser_**: Ders kolaydır fakat banu hocadan alıyorsanız dersi işlem hatasına çok dikkat ediniz eger basta hata yaparsanız bütün sorunuz hemen gider ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
-    - 👤 **_Blessed Camel_**: Aslında çok basit bir ders işlenen bir çok şeyi önceden zaten biliyorsunuz ama sınavlarında acayip bir şekilde kasıp her şeyden puan kırıyorlar. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-    - 👤 **_R3_**: Ders müfredat açısından basit ama sınavları zor oluyor çalışınca yapılabilen bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_Emperor_**: Sayısal analizin devamı, bazen klasik bazen test bazen karışık gelebiliyor, aşırı zor ya da kolay değil slaytlara çalışmak lazım banu hoca video kayıtları izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Cristianoronaldo_**: Genel olarak çok kapsamlı bir ders. Konuları algoritmalardan devrelere kadar uzanıyor. Önemli bir ders, sınavlarda çok dikkat gerektiriyor. Slaytlar yeterli olacaktır önemli kısımları ders kayıtlarından izlenebilir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Bilgisayarenginarı_**: İçeriği garip, konu kapsamı daha da garip, birkaç dersin karışımı gibi duran tuhaf bir yapıya sahiptir. Sabit bir konuda ilerlenmez ayrı ayrı şeyler anlatılır ve herhangi bir vize ve final nerdeyse birbirine benzemeyecek kadar çok konu barındırır. Ancak her biri basit ve kolay anlaşılabilir olduğundan, dersler düzenli bir şekilde takip edilir ve ara sıra tekrar edilirse hem geçmesi hem yüksek notla vermesi gayet mümkün olan bir derstir. harf notu konusunda banu hocada daha rahat edersiniz. Başarılar ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 5 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -840,9 +831,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Bilgisayar Mühendisleri için Diferansiyel Denklemler 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Blessed Camel_**: Dersin ilk 8 haftasının dif ile alakası yok tamamen yapay zeka temelleri ve aşırı zor. Daha önce alanla ilgili bilgisi olmayan biri olarak dersleri sadece izliyordum en ufak bir şey anlamadım. 8. haftadan sonrası kolay ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Yıldızsefiri_**: Güzel bir ders. İlk 8 haftaya biraz ön hazırlık yapılırsa, dersin tamamı daha anlaşılır hale geliyor. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Dd_**: İki alakasız dersin birleştirilmiş hali gibidir. Vize 1 öncesi konular diferansiyelle alakasız optimizasyon, regresyon gibi lanet konulardır. Vize 2'ye kadar birinci mertebeden diferansiyel, sonra da finale kadar ikinci mertebeden diferansiyel ve laplace gibi konular işlenir. Biri optimizasyon, biri dif üzerine olmak üzere %15'er etkili iki ödev verilir. Optimizasyon ödevi her zaman inanılmaz zordur. Ama ilk vizede 0 alıp, ilk ödevi yapmasanız bile boğaziçiliden izlediğiniz diferansiyel ile ikinci vize, ikinci ödev ve final ile toparlayabilirsiniz, denendi onaylandı. Finalde tüm konulardan sorumlusunuz. Optimizasyon konusu finalde optimizasyon yöntemlerinin sözel yorumları ağırlıklı çıkar. Diferansiyel ise iki sınavda da hesap makinesi gerektirmeyecek şekilde kolay sayılarla verilir, basit örnekler ile sınavdan önce tüm dif çözüm teknikleri ile bolca pratik yapın yeterli. Laplace mutlaka bilin, çok kolay konu, Laplace tablosundaki başlıca dönüşümleri ezberlerseniz finalde 2 sorunuz garanti olur. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -857,12 +848,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 İstatistik ve Olasılık Hesapları 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Bölümle alakası tartışılır. Ama ders gayet kötü. Vizeden yüksek almaya bakmak lazım. Finale çok konu birikiyor. 
-    - 👤 **_Blessed Camel_**: En zevksiz en kasıntı en iğrenç derslerden biri sınavları artık şıklı oluyor ve zor olur ama rahat 2-3 hatalı soru çıkar bu dersi geçince şükredip daha arkanıza bakmayın ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-    - 👤 **_R3_**: Vizeleri kolaydı hatalı sorular vardı finali zordu gereksiz bir ders ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_Osbırt_**: Bölümle hiç alakası olmayan, konuları çok yoğun bir ders. İlk haftalarda bu dersin canıma okuyacağını ayıktım, dönem başından beri bu derse çalıştım. Müfredatı yoğun, konusu çeşit çeşit. İlk haftalarda öğrendiğiniz konular sonraki haftalarda lazım oluyor, temeliniz zayıfsa zorlanıyorsunuz. Bir kez anlayınca çok keyifli oluyor ama anlayana kadar... ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Dd_**: Abartıldığı kadar zor bir ders olduğunu kesinlikle düşünmüyorum. Dersin içeriği tamamen "Probability Course" sitesinin ilk 8 chapterından oluşur. Kurs içeriği gayet açıklayıcıdır, hiçbir şey bilmeden bile başlasanız İngilizce ile sorununuz yoksa asla zorluk yaşamazsınız, yalnızca biraz uzun. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Bilgisayar Enginarı_**: Bölümle alakalı değil. Dersler ve anlatımlar çok zorlayıcı görünse de sınavlar bu sene kolay formatta geldi, dersin işlendiği kitabın bölümlerinin sonundaki sorulara benzer soruldu. Geçmesi kolay ancak yüksek notla vermek biraz şansa bağlı. Başarılar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 4 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -877,12 +865,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Lojik Devreler 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Güzel bir ders, geçmesi kolay. 
-    - 👤 **_Ufouser_**: HOİ de olur GB de olur hoca fark etmez dersi dinleyin çıkmışları çözün yeter extra bir şeyi yoktur ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
-    - 👤 **_Blessed Camel_**: Donanım dersi o yüzden pek ilgi çekici gelmiyor ilk başta ama işledikçe sevmeye başlıyorsun ve çok zor da değil. Sonuçta insanı geliştiriyor verimli bir ders ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-    - 👤 **_R3_**: çalışınca yapılıyor sınavları klasik 3 veya 4 soru oluyor çıkmışlara benziyor soru olurak ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Osbırt_**: Donanım dersi, İlk 4-5 haftası kolay, sonradan çeşit çeşit devre elemanları anlatılıyor; bu yüzden 5. haftadan sonra dikkatli olmak lazım. Vizede, derste hiç görmediğiniz elemanları kullanarak devre oluşturmanız gereken sorular sorabiliyorlar, bu yüzden derste ezber yerine işin mantığını oturtmak önemli. Laboratuvarlarında kablo yoğunluğu ve entegrelerin bacaklarıyla uğraşmak illallah ettirse de devrenin çalıştığını görmek muazzam bir his :D. Gökhan Bilgin'den alırsanız ödev verir, dikkat edeceğini söyler. Hamza Osman İlhan'a ödevin konusunu açmazsanız ödev vermez, verirse de çok yüklenmiyor. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Dd_**: Vizesi yazılı, finali ise bu yıl şaşırtıcı bir şekilde test oldu. Vizeler final haftasından 1 hafta önceye kadar açıklanmaz. Sınavlarda mutlaka yalnızca rastgele bir gate kullanarak, verilen doğruluk tablosunu oluşturmanız istenen bi soru ve lojik bir fonksiyonun sadeleştirilmesi/indirgenmesi istenen bir soru gelir. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 4 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -897,11 +882,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Nesneye Yönelik Programlama 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Çok fazla uğraştıran bir ders. Lab, ödev, sınav falan boğuyor. Ama gerekli ve önemli bir ders. 
-    - 👤 **_Blessed Camel_**: Bölümün en kritik derslerinden. Alacağınız verim hocanıza göre değişir. Bu dersi alırken asla bölümle yetinmeyin kendinizi ek olarak da geliştirin ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
-    - 👤 **_Yıldızsefiri_**: Ders çok zor değil ama biraz emek istiyor. FÇ nin dersleri güzel ve eğlenceli geçiyor ama notları bol değil. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Osbırt_**: Java üzerinden ilerliyor ders. 1. sınıfta temeller C üzerinden atıldığı için nesneye yönelik programlama hiç bilmeyen birinde bir şok etkisi yaratabilse de derslere katılıp, anlamadığınız yerleri sorup, slaylardan tekrar ettiğinizde mantığını kavrıyorsunuz. Pratik yapıp kabiliyet kazanmak önemli. 4 uygulama ve 4 laboratuvarı var: Uygulamalarda asistan hocalar örnek çözümü yapıyorlar, laboratuvarda ise uygulama paralelinde bir soru verilip kodlanması isteniyor. Uygulamalara da dikkat etmek önemli o yüzden. 1 projesi var, erkenden başlayıp planlı programlı ilerlenirse üstesinden gelinir. Finalleri test yaparlarsa Java üzerinden çok soru geldiği oluyor, konuların detaylarına ve java sanal makinesi davranışlarına çalışmak gerekebiliyor o yüzden. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Bilgisayarenginarı_**: Java üzerinden işlenir. İçeriği ve kapsamı güzel, geçmesi görece kolay, yüksek notla geçmek de mümkün olan biraz yoğun bir derstir. her uygulama dersinin ertesi haftası lab yapılarak yazılan koddan not verilir ve toplam 4 labı bulunur; bir adet çift kişilik projesi, birer vize ve final içeren bir sınav takvimi vardır. lablara tekrar yaparak gitmek mühimdir, iyi bir proje arkadaşı seçmelisiniz ve sınavlara güzelce çalışmalısınız. vizede kod yazdırılır, finali genellikle seçmeli olur ve kod yazma becerinizi değil, nesne yönetim becerinizi ve java hakkında ne kadar bilgi ezberleyebileceğinizi ölçer. YES yoklamayı önemsemez, anlatımını beğenmezseniz farklı bir hocanın dersine girme şansınız da var. Başarılar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 3 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -992,10 +975,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Veri Yapıları ve Algoritmalar 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Algoritma kısmına devam edilen ders bu. Kodlama dili olarak 'c' kullanılıyor. Çok fazla ödev ve lab var. İnsanı boğuyor. 
-    - 👤 **_Sort Sort Sort_**: Başka alan başka konu yokmuş gibi hep sort hep algoritma, bu mühendislikte o kadar çeşitli ders olacakken sırf bu algoritmq flowchart mantığını 2 derste anlatıp bitirmek varken öğrencileri bıktırmanın mantığı yok. Mesela işletim sistemi gibi farklı dersler görelim. Bbg dahil 3-4 algoritma C dersi görmek yerine sayısını azaltmak zor olmamalı. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Algobıkkın_**: Algoritma derslerinden biri, sınavları zor olur, seven niş bir kitlesi var fakat çoğu kişiyi bölümden soğutur. ℹ️ Yorum **05.2025** tarihinde yapılmıştır.
     - 👤 **_Emperor_**: Gerekli bir ders. Dersi dinleyin dinlemeyin video ambarı izleyip ödev/ lab yaparsanız sıkıntı yaşamazsınız. Verince tekrar almayın ℹ️ Yorum **06.2025** tarihinde yapılmıştır.
+    - ℹ️ Diğer 2 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
@@ -1013,13 +995,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Algoritma Analizi 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Algoritma derslerinin devamı. Her algoritma dersinde olduğu gibi aşırı yoğun. Çok fazla ödev ve lab var. En çok kalınan derslerden biri. 
-    - 👤 **_Tehlikeli Pinokyo_**: Gereksiz zor bir ders, hocalar bu dersi bilmeyen adam mezun olmasin der hep dunyanin en onemli isi buymus gibi davranirlar. Ülkenin bagimsizligi, dunya dengeleri, kuresel isinmanin etkileri, insanligin sonu bu derse baglidir. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
-    - 👤 **_Bubblesort_**: Ders bu bilim için çok önemli bir ders aslında. Şöyle bir durum var maalesef dersin hocaları özellikle biri, dersi öğretmekten ziyade gereksiz sayıda yüzde 2 yüzde 5 gibi komik etkisi olan ödevlerle bu dersi sıkıcı yapıyor. Sınavlarda kod sorusunu 60 puan yapıyor ki sınıfın yarısı dersten kalsın. Her dönem sonu geri bildirim istiyor bizlerden verdiği derslerle alakalı fakat seneye hiçbir şey değişmeden devam ediyor. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
-    - 👤 **_Apollo13_**: zor bir ders ℹ️ Yorum **10.2024** tarihinde yapılmıştır.
-    - 👤 **_Maki_**: Maalesef hocalarimiz sinavlari gec aciklayarak ve maillerimize neredeyse donmeyerek bizi magdur durumda birakmislardir. Sinavlarin gec aciklanmasindan mutevellit butunlemeye kalip kalmadigimizdan haberdar olamamamiz ve butunlemeden bir gun once tam olarak sinavin aciklanmasindan oturu tam olarak hazirlanamayisimiz bizi magdur etmistir. Tesekkurler. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Instructionpointer_**: Hash gibi çok güzel ve önemli konuları olsa da, bazı kısımları inanılmaz monoton olan, çoğu kişinin de algoritma derslerinden bıktığı için günah keçisi ilan ettiği bu dersten, hocaların 15 dakikalık bazı konuları tabletten tahtaya 2 saatte kopyalaması nedeniyle maalesef fazla verim beklemeyin. ​Sınavlarda hocaların metodolojisine sadık kalmanız zaten kritik. Akışlar her zamanki gibi pratik ve biraz da şansın birleşimi. Dersle alakalı kısımları çok iyi yapmanız lazım çünkü zaten akışlar yüzünden her sınav sürpriz bir notunuz olabilir. ​Ödevler zor değil ancak soru dökümanlarındaki 'tuhaf' anlatımlar/ katı ve uğraştırıcı rapor-video formatı ile rahat bir gününüzü alır, sona bırakmayın. Lab soruları oldukça rastgele ve dengesiz, soru metnini çok dikkatli okuyun. Verilen ekstra lab hakkı bile sizi kurtarmayacak. ​Uygulamalar Kahoot tarzı quiz gibi, maalesef aynı ders gibi çok monoton, sadece 2 3 örnek problem inceleniyor ve sınavla pek alakalı değil, 10 soruluk quizi çözüp geçin. Yüzdesi çok düşük ama bu derste her yerden puan almanın faydası var. ​Keşke çok daha verimli işlenebilseydi ama yine de her şeye rağmen değerli ve güzel bir ders. Her hafta dersi dinleyip not tutar/okursanız zorlanmadan geçersiniz. Ödevleri aksatmayın. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Ayatollah_**: Fena bir ders değil. Sınava 5–6 saat kala konulara bakmak, ilk 50 puanlık kısımdan puan almak için yeterli. Geri kalan 50 puan algoritmik sorulardan (flowchart, C kodu) oluşur, genel olarak geliştirilmesi gereken bir beceridir, Öğrenmesi bir gecede çok da mümkün değil. Hocalar cevabınızı beğenmezse çok puan kırar, adil hissettirmez. Ödev ve labları çok yormaz. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 5 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
@@ -1046,9 +1024,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 İşletim Sistemleri 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Normal şartlarda çok gerekli bir ders ama bir döneme sığdırılamayacak bir ders. Ondan dolayı her şey çorba oluyor. 
     - 👤 **_Havalırumuz_**: Dersin ne kadar sıkıcı anlatıldığına bakmayın veya bu ders benim ne işime yarayacak demeyin. Özellikle kitaptan çalışmanızı tavsiye ediyorum. Ne kadar hocalar derslerde bahsetmese bile gömülü sistemlerde çalışacak biri için olmazsa olmaz bir ders. İlerde gireceğiniz iş sadece RTOS (Gerçek Zamanlı İşletim Sistemi) ile ilgili bile olabilir (benim durumumda böyle). Böyle bir durumda keşke bu derse daha çok önem verseymişim dersiniz. ℹ️ Yorum **06.2025** tarihinde yapılmıştır.
     - 👤 **_Semaphore_**: Sizleri bölümün en büyük hayal kırıklığıyla tanıştırayım. Özellikle ZCT'den alıyorsanız şimdiden boşa gidecek 15 haftanız hayırlı olsun. Derste tek bir şey bile öğrenmemeniz için çaba sarfeden bir hoca, bölümde yapılan tartışmasız en kötü vize, en kötü vize2, en kötü final, en kötü sınav formatı. Çoktan çok seçmeli, yanlış doğruyu götürmeli, "sınavlar". AA'yı 60 lara indirebilen tek ders. Diyecek söz bulamıyorum. Bu kadar önemli ve teknik bir ders niye bu kadar kötü yönetiliyor? Slaytları hatim etmezseniz hocanın da tabiriyle sıfıra soldan yaklaşırsınız. Günlerce çalışsanız da çok bir şey değişmiyor, aynı notları alıyorsunuz. Soruların çoğu ne ezbere ne mantığa dayalı, çağ açan bir buluş her biri. Öyle bir sınav ki soru dağılımını Paging algoritması yapsak çalıştığınız konuların yarısını kağıtta ararken Page Fault yersiniz. Senkronizasyon sorularında şıklar E.W.Dijkstra'yı mezarında ters döndürür. Arkadaşlarınızla sınav çıkışı karşılaştırdığınız işaretlemeleri C'de rastgele sayı üreteci olarak kullanıp system call ile kernele gönderebilirsiniz. Hala anlaşılmadıysa, kendi iyiliğiniz için, ZCT'den ders almayın. Hocadan dersi anlatmasını beklersiniz, hoca sizden bekler, Deadlock oluşur. 2 saatte slaytın 1 konusuna değinip durur, kalanını siz okuyun der, haftaya yine eski konuyu öğrenciye sorar, aradaki konular asla critical sectiona giremez. Starvation oluşur. Kısaca İşletim Sistemlerine olan sevgimi köküne kadar kurutan bu derse, slaytlara, meşhur dinozor kitabına, bir daha asla görmek istemediğim ZCT'ye ve beni bu sınav formatına olan ısrarıyla çok şaşırtan, ders seçiminde dolduğu için alamadığım diğer hocaya içten.. teşekkür bildiren interruptlarımı yolluyorum. İşletim Sistemlerine ilginiz varsa tavsiyem dersten bağımsız OSTEP adlı kitabı okumanız, derstekinden daha güncel, daha somut, ders dışına katkısı haricinde belki hocaların sarhoşken hazırladığını düşünmenize sebep olacak sınav sorularına da katkısı olur. Ha lafı gelmişken sınavlar için uygulama slaytlarının sorularını da ezberlemeniz lazım, hatta yeterince psikopatsanız verilen Red Hat kursu sorularını da tek tek ezberleyin. Finalde puanınız düşsün diye birkaç tane koyuyorlar. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
@@ -1063,13 +1041,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Mikroişlemci Sistemleri ve Assembly Dili 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Derste ilk 7 hafta alt seviye programlama, ikinci 7 hafta mikro işlemciler anlatılıyor. Eskiden alt seviye ve mikro 2 zor dersti. Şimdi ikisi tek pakette. ℹ️ Yorum **12.2023** tarihinde yapılmıştır.
-    - 👤 **_Boş_**: Anlık olarak Evrenin en gereksiz dersi. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_8255_**: Mikro kısmı nasıl öğretilemez bunu öğreniyorsunuz. Bence bu 2 ders çok seyrek yanına devre teorisi ve organizasyon da eklensin. toplam 10 ödev değil 30 ödev yapalım. haftasonumuza 1 lab değil 3 lab yapalım. Böyle devam. Sonra dersi seneye 200 kişiye anlatırlar.. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_.Asm_**: Dersleri birleştirecez diye saçma sapan bir şey çıkarmışlar ortaya, daha o hafta anlatılanı kavramadan başka bir konuya geçiliyor, 1 hafta kaçırırsan her şey birbirine giriyor, 8 lab 2 ödev verip bütün dönem haftasonlarını kilitliyor, öğrenci dostu olsun derken zulüm gibi bir şey olmuş. Bu 2 dersi ayrı ayrı anlatsalar hem daha anlaşılır olur hem de bu kadar vakit yemez. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
-    - 👤 **_Mikrodanbıktım_**: bu dersi geçmenin yolu lab ve ödevleri yapmak sanırım. onu yapamayınca 100.kez almak zorunda kaldım. bu ders yüzünden mezun olamadım. yanlış doğruyu götürmese ne olur sanki? bu kadar ağır olmasının hiçbir manası yok. ℹ️ Yorum **08.2025** tarihinde yapılmıştır.
     - 👤 **_Maki_**: Mikroislemci ve assemby gibi iki cok zor dersin birlestirilerek daha bu kadar zor derslerin bu kadar ustunkoru anlatilarak gecilmesi ve ogrencilerden sanki detayli sekilde anlatilmiscasina bir performans beklemeleri dersin ne kadar da ogrenci dostu olmayan bir cizgide ilerledigini eminim fark ettirecektir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
     - 👤 **_Instructionpointer_**: Ödev videonuz 4dkyı geçerse idam ediliyorsunuz. Derste 7 hafta 8086 assembly dili, 7 hafta 8086 mikroişlemci ve çevre birimleri işleniyor. Dersler ayrıkken işlenen bazı konular kırpılıyor, Mikro konuları genellikle hafta hafta birbirinden ayrılmış ve her hafta verilen lablar için ders örnekleri ile işleniyor. Bu arada 4dk ya dikkat edin. Tabiki bölümdeki her donanım dersi gibi yormayı seven bir müfredatı var, haftasonuna verilen, KATILIMI ZORUNLU 8 LAB(ödev) VE 2 ÖDEV(büyük ödev) üstüne sözlüler ve iki ağır dersin ziplenmiş müfredatı ile ruhunuzu emicek bir ders gibi duruyor. 4dk içinde kod ve devrenizi de anlatmanız lazım. Ama neyse ki özellikle mikro ödevlerinin çoğu zor değil, dersi dinleyip, örnekleri inceleyip yapay zekadan yardım alarak yapamayacağınız ödev yok. Bazı aşırı zor olduğu için ödevin SON GÜNÜ ödeve seçenek eklenip asıl istenileni yapanlara 0.3 puancık ekledikleri 3. assembly labı istisna tabiki. 4dk da 500 satır kod mu anlatılır? Ödev ve Labların ortalamaya toplam katkısı %40 olduğundan dersi geçmek çok kolay. Tabiki yeni yönerge yüzünden(final<40 -> FF) finali batırmamanız lazım. Bir de harf notunu bu derste hocalar ağrı dağına çıkarmayı çok seviyor, ödev ve lab ortalamalarının aşırı yüksek olması da sebeplerinden biri. Sınavlara iyi çalışın. Vize ve finalde assembly kısmında detay soru çok ve zincirleme sorular oluyor: Dosbox stack/veri segment çıktısı ya da LST kodu verilip peş peşe "boş yere ne gelir? Çıktı hangi hexadecimal sayı olur?" tarzı sorular var, iyi çalışmazsanız hiçbirini yapamazsınız, birini yanlış yapınca hepsi yanlış gelir, notunuz yarıya iner. Labları yapay zekadan kopyala yapıştır yaparsanız da finalde zincirleme mikro sorularında çuvallarsınız. Biraz yorucu olması haricinde çalışınca zevkli ve zorlamayan bir ders, ha siz yine de 4dk yapın videoyu. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 5 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
@@ -1209,10 +1183,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Çok Disiplinli Tasarım Projesi 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 2
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: 6-7 kişilik grup projesi. Grup rastgele atanıyor. Allah kolaylık versin. 
-    - 👤 **_Selim Bey_**: bomboş bi ders, hocalara bunu dediğinizde müdek'i bahane ederler. Kapatılsın. ℹ️ Yorum **01.2024** tarihinde yapılmıştır.
     - 👤 **_Teradata_**: Gereksiz, uğraştırıcı ve 1 kredi. Kolay gelsin. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
     - 👤 **_Dd_**: Tüm EEF öğrencileri arasından rastgele oluşturulan 6-7 kişilik gruplarla gömülü sistemler ve programlama bilgisi gerektiren saçma sapan zorlukta bir proje verilir. Projeyi baştan sona nasıl yapacağınıza dair bir doküman verilir, ama tabi ki doküman yetersizdir. Dönem boyunca donanımsal ve yazılımsal bir sürü hatayla cebelleşirsiniz. 2 tane de rapor yazmanız gerekir. Sensörleriniz bozuk gelir, hatta dokümanda kullanmanız istenilen sensör modelleri fabrika hatalıdır. Kodlar olması gerektiği gibi çalışmaz, lehimleriniz kopar, mikroçipiniz proje teslimi günü yanar(bu tür şeyler çok sık olduğu için projenin çalışan halinin videosunu mutlaka çekip elinizde bulundurun yoksa son anda dersten kalabilirsiniz). Rastgele gelen takım arkadaşlarınız da sorumsuzsa, bu 1 kredilik ders yüzünden tertemiz delirebilirsiniz. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 2 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
@@ -2564,9 +2537,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 İleri Ağ Programlama 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Nick_**: almayın kardeşim dersi, yapmayın böyle bi hata gençliğinize yazık, bize anlatmadılar zamanında biz böyle bir hata yaptık siz yapmayın, abi tavsiyesi. ℹ️ Yorum **12.2025** tarihinde yapılmıştır.
     - 👤 **_Yok_**: alma ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
     - 👤 **_Hata Yapmış Birisi_**: zçt veriyorsa sakın almayın ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆

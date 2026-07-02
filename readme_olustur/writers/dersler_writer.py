@@ -50,11 +50,14 @@ class DerslerWriter(SectionWriter):
             return
         
         writer.writeline(f"{girinti}- 💭 **Öğrenci Görüşleri:**")
-        for gorus in gorusler:
+        gosterilecek_gorusler = gorusler[-2:] if len(gorusler) > 2 else gorusler
+        for gorus in gosterilecek_gorusler:
             kisi = gorus.get(KISI, "").strip()
             yorum = gorus.get(YORUM, "")
             tarih = gorustenTarihGetir(gorus)
             writer.writeline(f"{girinti}  - 👤 **_{kisi}_**: {yorum} {tarih}")
+        if len(gorusler) > 2:
+            writer.writeline(f"{girinti}  - ℹ️ Diğer {len(gorusler) - 2} yoruma dersin kendi klasöründen erişebilirsiniz.")
         writer.writeline(f"{girinti}    - ℹ️ Siz de [linkten]({DERS_YORUMLAMA_LINKI}) anonim şekilde görüşlerinizi belirtebilirsiniz.")
     
     def _write_yildizlar(
