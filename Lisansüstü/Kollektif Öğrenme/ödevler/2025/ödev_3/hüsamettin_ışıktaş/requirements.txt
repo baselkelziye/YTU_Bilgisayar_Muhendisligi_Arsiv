@@ -1,0 +1,30 @@
+# PyTorch ve temel ML kütüphaneleri
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+
+# GRPO ve fine-tuning için
+trl>=0.7.0
+peft>=0.6.0
+
+# Veri işleme
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Loglama ve izleme
+wandb>=0.15.0
+
+# Jupyter notebook desteği
+jupyter>=1.0.0
+ipykernel>=6.25.0
+notebook>=7.0.0
+
+# Tokenization ve utility
+tokenizers>=0.14.0
+safetensors>=0.4.0
+
+# Model merging için
+mergekit>=0.0.5
+

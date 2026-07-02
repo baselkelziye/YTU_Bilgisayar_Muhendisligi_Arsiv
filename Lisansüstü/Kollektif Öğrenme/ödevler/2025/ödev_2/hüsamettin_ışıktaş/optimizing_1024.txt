@@ -1,0 +1,428 @@
+============================================================
+HİPERPARAMETRE OPTİMİZASYONU
+============================================================
+Mod: full | CV folds: 3 | Yöntemler: random_forest, bagging, random_subspace
+Veri setleri: title, abstract, concat
+
+############################################################
+# VERİSETİ: BAŞLIK
+############################################################
+
+Veri yükleniyor...
+TITLE - Train: (6250, 1024), Test: (6250, 1024)
+
+>>> Random Forest (title)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.2s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.2s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.3s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.0s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.1s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.0s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.0s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.0s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.0s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   4.0s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   4.0s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   4.0s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.4s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.4s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.4s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.7s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.8s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.9s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   5.4s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   5.5s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   5.4s
+
+✓ En İyi Parametreler: {'max_depth': 20, 'n_estimators': 100}
+✓ En İyi CV Skoru: 0.0486
+✓ Test Accuracy: 0.0533
+✓ Test F1-Macro: 0.0530
+
+>>> Bagging (title)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  51.7s
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  48.6s
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  47.4s
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.6min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.7min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.6min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 3.1min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 3.2min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 3.2min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 1.1min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 1.1min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 1.1min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 2.1min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 2.4min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 2.2min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 4.1min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 4.4min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 4.2min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 1.4min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 1.4min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 1.4min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 2.8min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 3.0min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 2.8min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 5.3min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 5.5min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 5.5min
+
+✓ En İyi Parametreler: {'max_samples': 1.0, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0549
+✓ Test Accuracy: 0.0517
+✓ Test F1-Macro: 0.0515
+
+>>> Random Subspace (title)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  19.2s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  20.1s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  19.9s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  40.2s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  41.0s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  38.6s
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.3min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.4min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.3min
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  35.5s
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  36.6s
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  36.3s
+[CV] END .................max_features=0.5, n_estimators=100; total time= 1.2min
+[CV] END .................max_features=0.5, n_estimators=100; total time= 1.2min
+[CV] END .................max_features=0.5, n_estimators=100; total time= 1.1min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 2.4min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 2.4min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 2.3min
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  52.2s
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  55.1s
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  51.5s
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.7min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.8min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.7min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 3.4min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 3.5min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 3.3min
+
+✓ En İyi Parametreler: {'max_features': 0.7, 'n_estimators': 100}
+✓ En İyi CV Skoru: 0.0552
+✓ Test Accuracy: 0.0539
+✓ Test F1-Macro: 0.0532
+
+############################################################
+# VERİSETİ: ÖZET
+############################################################
+
+Veri yükleniyor...
+ABSTRACT - Train: (6250, 1024), Test: (6250, 1024)
+
+>>> Random Forest (abstract)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.6s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.1s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.1s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.1s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   2.1s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   0.9s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.0s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   0.9s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   1.9s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   1.9s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   1.8s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   3.6s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   3.6s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   3.6s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.1s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.2s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.1s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.2s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.3s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   2.2s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   4.3s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   4.5s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   4.5s
+
+✓ En İyi Parametreler: {'max_depth': 30, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0728
+✓ Test Accuracy: 0.0738
+✓ Test F1-Macro: 0.0711
+
+>>> Bagging (abstract)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  34.2s
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  34.7s
+[CV] END ...................max_samples=0.5, n_estimators=50; total time=  33.8s
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.1min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.1min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 1.1min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 2.2min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 2.2min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 2.2min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time=  43.7s
+[CV] END ...................max_samples=0.7, n_estimators=50; total time=  48.5s
+[CV] END ...................max_samples=0.7, n_estimators=50; total time=  43.9s
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 1.5min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 1.5min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 1.5min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 2.9min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 3.0min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 3.0min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time=  56.8s
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 1.1min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 1.1min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 2.1min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 2.1min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 2.2min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 4.1min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 4.4min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 4.4min
+
+✓ En İyi Parametreler: {'max_samples': 1.0, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0758
+✓ Test Accuracy: 0.0813
+✓ Test F1-Macro: 0.0788
+
+>>> Random Subspace (abstract)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  15.9s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  16.8s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  16.6s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  31.5s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  32.6s
+[CV] END .................max_features=0.3, n_estimators=100; total time=  32.2s
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.1min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.1min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 1.1min
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  28.0s
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  29.7s
+[CV] END ..................max_features=0.5, n_estimators=50; total time=  28.3s
+[CV] END .................max_features=0.5, n_estimators=100; total time=  55.7s
+[CV] END .................max_features=0.5, n_estimators=100; total time=  57.4s
+[CV] END .................max_features=0.5, n_estimators=100; total time=  55.7s
+[CV] END .................max_features=0.5, n_estimators=200; total time= 1.9min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 1.9min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 1.9min
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  40.6s
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  42.9s
+[CV] END ..................max_features=0.7, n_estimators=50; total time=  41.4s
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.4min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.4min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 1.4min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 2.6min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 2.8min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 2.7min
+
+✓ En İyi Parametreler: {'max_features': 0.3, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0776
+✓ Test Accuracy: 0.0806
+✓ Test F1-Macro: 0.0777
+
+############################################################
+# VERİSETİ: BIRLEŞTIRILMIŞ
+############################################################
+
+Veri yükleniyor...
+CONCAT - Train: (6250, 2048), Test: (6250, 2048)
+
+>>> Random Forest (concat)
+
+==================================================
+RANDOM FOREST OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_depth': [10, 20, 30]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.8s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.8s
+[CV] END ......................max_depth=10, n_estimators=50; total time=   0.8s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.5s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.6s
+[CV] END .....................max_depth=10, n_estimators=100; total time=   1.6s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   3.1s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   3.0s
+[CV] END .....................max_depth=10, n_estimators=200; total time=   3.0s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.4s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.4s
+[CV] END ......................max_depth=20, n_estimators=50; total time=   1.4s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.7s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.7s
+[CV] END .....................max_depth=20, n_estimators=100; total time=   2.7s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   5.3s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   5.3s
+[CV] END .....................max_depth=20, n_estimators=200; total time=   5.3s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.7s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.7s
+[CV] END ......................max_depth=30, n_estimators=50; total time=   1.8s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   3.4s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   3.4s
+[CV] END .....................max_depth=30, n_estimators=100; total time=   3.4s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   6.6s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   6.7s
+[CV] END .....................max_depth=30, n_estimators=200; total time=   6.6s
+
+✓ En İyi Parametreler: {'max_depth': 20, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0714
+✓ Test Accuracy: 0.0723
+✓ Test F1-Macro: 0.0700
+
+>>> Bagging (concat)
+
+==================================================
+BAGGING OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_samples': [0.5, 0.7, 1.0]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ...................max_samples=0.5, n_estimators=50; total time= 1.4min
+[CV] END ...................max_samples=0.5, n_estimators=50; total time= 1.4min
+[CV] END ...................max_samples=0.5, n_estimators=50; total time= 1.4min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 2.6min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 2.8min
+[CV] END ..................max_samples=0.5, n_estimators=100; total time= 3.7min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 6.7min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 5.6min
+[CV] END ..................max_samples=0.5, n_estimators=200; total time= 5.5min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 1.9min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 2.0min
+[CV] END ...................max_samples=0.7, n_estimators=50; total time= 1.8min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 3.7min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 3.8min
+[CV] END ..................max_samples=0.7, n_estimators=100; total time= 3.7min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 7.3min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 7.4min
+[CV] END ..................max_samples=0.7, n_estimators=200; total time= 7.3min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 2.4min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 2.4min
+[CV] END ...................max_samples=1.0, n_estimators=50; total time= 2.6min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 4.7min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 5.1min
+[CV] END ..................max_samples=1.0, n_estimators=100; total time= 4.8min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 9.2min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 9.7min
+[CV] END ..................max_samples=1.0, n_estimators=200; total time= 9.6min
+
+✓ En İyi Parametreler: {'max_samples': 1.0, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0688
+✓ Test Accuracy: 0.0704
+✓ Test F1-Macro: 0.0688
+
+>>> Random Subspace (concat)
+
+==================================================
+RANDOM SUBSPACE OPTİMİZASYONU
+==================================================
+Grid Search başlatılıyor... (CV=3)
+Parametre alanı: {'n_estimators': [50, 100, 200], 'max_features': [0.3, 0.5, 0.7]}
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  36.6s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  37.1s
+[CV] END ..................max_features=0.3, n_estimators=50; total time=  37.8s
+[CV] END .................max_features=0.3, n_estimators=100; total time= 1.2min
+[CV] END .................max_features=0.3, n_estimators=100; total time= 1.3min
+[CV] END .................max_features=0.3, n_estimators=100; total time= 1.2min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 2.4min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 2.5min
+[CV] END .................max_features=0.3, n_estimators=200; total time= 2.5min
+[CV] END ..................max_features=0.5, n_estimators=50; total time= 1.1min
+[CV] END ..................max_features=0.5, n_estimators=50; total time= 1.2min
+[CV] END ..................max_features=0.5, n_estimators=50; total time= 1.1min
+[CV] END .................max_features=0.5, n_estimators=100; total time= 2.2min
+[CV] END .................max_features=0.5, n_estimators=100; total time= 2.2min
+[CV] END .................max_features=0.5, n_estimators=100; total time= 2.2min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 4.3min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 4.6min
+[CV] END .................max_features=0.5, n_estimators=200; total time= 4.4min
+[CV] END ..................max_features=0.7, n_estimators=50; total time= 1.6min
+[CV] END ..................max_features=0.7, n_estimators=50; total time= 1.7min
+[CV] END ..................max_features=0.7, n_estimators=50; total time= 1.6min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 3.2min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 3.3min
+[CV] END .................max_features=0.7, n_estimators=100; total time= 3.2min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 6.3min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 6.5min
+[CV] END .................max_features=0.7, n_estimators=200; total time= 6.5min
+
+✓ En İyi Parametreler: {'max_features': 0.5, 'n_estimators': 200}
+✓ En İyi CV Skoru: 0.0752
+✓ Test Accuracy: 0.0787
+✓ Test F1-Macro: 0.0773
+
+✓ Sonuçlar kaydedildi: artifacts/2025-11-27_140351_optimization/
+
+============================================================
+OPTİMİZASYON SONUÇLARI ÖZETİ
+============================================================
+
+RANDOM FOREST:
+--------------------------------------------------
+  Başlık         : max_depth=20, n_estimators=100
+                   Test Acc: 0.0533, F1: 0.0530
+  Özet           : max_depth=30, n_estimators=200
+                   Test Acc: 0.0738, F1: 0.0711
+  Birleştirilmiş : max_depth=20, n_estimators=200
+                   Test Acc: 0.0723, F1: 0.0700
+
+BAGGING:
+--------------------------------------------------
+  Başlık         : max_samples=1.0, n_estimators=200
+                   Test Acc: 0.0517, F1: 0.0515
+  Özet           : max_samples=1.0, n_estimators=200
+                   Test Acc: 0.0813, F1: 0.0788
+  Birleştirilmiş : max_samples=1.0, n_estimators=200
+                   Test Acc: 0.0704, F1: 0.0688
+
+RANDOM SUBSPACE:
+--------------------------------------------------
+  Başlık         : max_features=0.7, n_estimators=100
+                   Test Acc: 0.0539, F1: 0.0532
+  Özet           : max_features=0.3, n_estimators=200
+                   Test Acc: 0.0806, F1: 0.0777
+  Birleştirilmiş : max_features=0.5, n_estimators=200
+                   Test Acc: 0.0787, F1: 0.0773
