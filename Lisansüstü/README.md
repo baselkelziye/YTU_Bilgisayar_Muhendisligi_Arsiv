@@ -111,6 +111,36 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - YES
 
+### 📘 Anlamsal Web
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Araçlar Arası Haberleşme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Araştırma Yöntemleri ve Bilimsel Etik
 
 #### 📄 Ders Bilgileri
@@ -155,6 +185,21 @@
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
+### 📘 Bilgisayar Mühendisliğinde Özel Konular
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Bilgisayar Sistemleri ve Ağ Güvenliği
 
 #### 📄 Ders Bilgileri
@@ -182,6 +227,21 @@
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
+### 📘 Bilgisayarda Bulanıklık ve Belirsizlik
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Biyomedikal İşaret ve Görüntü İşleme
 
 #### 📄 Ders Bilgileri
@@ -200,6 +260,21 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - GB
 
+### 📘 Bulut Hesaplamada Sistem ve Ağ Mimarileri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Büyük Veri Analitiği
 
 #### 📄 Ders Bilgileri
@@ -213,6 +288,51 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Not:** [Önder'in markdown notları](./B%C3%BCy%C3%BCk%20Veri%20Analiti%C4%9Fi/slaytlar_notlar/2022/onder_gormez%20markdown) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Derin Öğrenme ve Yapay Sinir Ağları
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Derin Üretici Modeller
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Doğal Dil İşlemeye Kavramsal Bir Bakış
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -234,7 +354,127 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
 
+### 📘 Hesaplamalı Sinirbilim ve Duygusal Hesaplam
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Bilgisayar Ağları
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Bilgisayar Mimarisi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Blokzincir
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Derleyici Tasarımı
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Hesaplama Teorisi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri İşaret İşleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 İleri Optimizasyon
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 İleri Programlama Dilleri
 
 #### 📄 Ders Bilgileri
 
@@ -288,6 +528,21 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MFA
 
+### 📘 Kriptografi Mühendisliği
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Makine Öğrenmesi
 
 #### 📄 Ders Bilgileri
@@ -311,6 +566,36 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/17Oj8WnxTlEmkt2meM7s7ex1_pgL5WQez?usp=drive_link) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Makineler Arası İletişim
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Mobil Teknolojiler için Veri İşleme Teknikleri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -357,6 +642,126 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - EU
+
+### 📘 Paralel ve Dağıtık Programlama
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Robotlar
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Sayısal Ses ve Konuşma İşleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Sayısal Video İşleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Sistem Simülasyonu
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Telsiz Algılayıcı Ağlar ve Uygulamaları
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Uygulamalı Kriptografi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Uzaktan Algılamada İşaret ve Görüntü İşleme
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Veri Madenciliği ve Bilgi Keşfi
 
@@ -417,6 +822,21 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - BD
 
+### 📘 Veri Tabani Sistemlerinde Özel Konu
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Veri Tabanı Sistemlerinin Gerçeklenmesi
 
 #### 📄 Ders Bilgileri
@@ -446,6 +866,36 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MUK
 
+### 📘 Veri Yoğun Bilimleri için Bulut Programlama
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Verilerin Görselleştirilmesi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Web Madenciliği
 
 #### 📄 Ders Bilgileri
@@ -463,6 +913,21 @@
 
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MSA
+
+### 📘 Yazilim Proje Yönetimi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
 ### 📘 Yazılım Kalitesi ve Test Teknikleri
 
@@ -492,6 +957,36 @@
 #### 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - OK
 
+### 📘 Zaman-Uzamsal Veri Tabanı Sistemlerinin Gerçeklenmesi
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Zeki Optimizasyon Yöntemleri
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
 ### 📘 Çok Değişkenli İstatiksel Veri Analizi
 
 #### 📄 Ders Bilgileri
@@ -505,5 +1000,20 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Not:** [Önder'in markdown notları](./%C3%87ok%20De%C4%9Fi%C5%9Fkenli%20%C4%B0statiksel%20Veri%20Analizi/slaytlar_notlar/2023/onder_gormez%20markdown) ✨
+- 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
+  - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
+
+### 📘 Şekil Tanıma
+
+#### 📄 Ders Bilgileri
+
+- 📅 **Yıl:** 0
+- 📆 **Dönem:** yok
+- 🏫 **Ders Tipi:** Lisansüstü
+- ⭐ **Yıldız Sayıları:**
+    - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+
+#### 📚 Faydalı Olabilecek Kaynaklar
+
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
