@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "selected_chunk_size": 512,
+  "num_set_a_rows": 728700,
+  "num_set_b_rows": 728700,
+  "num_filtered_rows": 607373,
+  "best_k": 12,
+  "best_silhouette": 0.2795096700428765,
+  "filter_summary": {
+    "before": 728700.0,
+    "after": 607373.0,
+    "removed": 121327.0,
+    "retention_ratio": 0.8335021270756141,
+    "distance_cutoff": 5.535266827719238,
+    "silhouette_threshold": 0.1,
+    "min_cluster_size": 5.0
+  },
+  "num_profiles": 11
+}

@@ -1,0 +1,19 @@
+{
+  "status": "ok",
+  "input_dim": 10,
+  "num_classes": 11,
+  "train_samples": 485898,
+  "val_samples": 60737,
+  "test_samples": 60738,
+  "accuracy": 0.8910731337877441,
+  "macro_f1": 0.9185688238153421,
+  "top3_accuracy": 0.9994896111165992,
+  "inference_mean_ms": 0.018352588012930937,
+  "artifacts": {
+    "model": "/home/husam/Desktop/YTU-YL/veri sıkıştırma/data-comp-project/artifacts/phase3/model.pt",
+    "scaler": "/home/husam/Desktop/YTU-YL/veri sıkıştırma/data-comp-project/artifacts/phase3/scaler.pkl",
+    "label_map": "/home/husam/Desktop/YTU-YL/veri sıkıştırma/data-comp-project/artifacts/phase3/label_map.json",
+    "train_history": "/home/husam/Desktop/YTU-YL/veri sıkıştırma/data-comp-project/artifacts/phase3/train_history.csv",
+    "metrics": "/home/husam/Desktop/YTU-YL/veri sıkıştırma/data-comp-project/artifacts/phase3/metrics.json"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "strategies": {
+    "top_1": {
+      "mean_bpb": 4.873104274974735,
+      "header_overhead_bpb": 0.0,
+      "total_bpb": 4.873104274974735,
+      "topk_accuracy": 0.005,
+      "n_chunks": 200
+    },
+    "top_2": {
+      "mean_bpb": 4.8671160774400235,
+      "header_overhead_bpb": 0.0009871863215463285,
+      "total_bpb": 4.8681032637615695,
+      "topk_accuracy": 0.005,
+      "n_chunks": 200
+    },
+    "top_3": {
+      "mean_bpb": 4.8671160774400235,
+      "header_overhead_bpb": 0.001974372643092657,
+      "total_bpb": 4.8690904500831165,
+      "topk_accuracy": 0.005,
+      "n_chunks": 200
+    }
+  },
+  "oracle_bpb": 4.327721749080151,
+  "best_raw_bpb": 4.328027715423854,
+  "n_test_chunks": 200
+}

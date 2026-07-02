@@ -1,0 +1,307 @@
+Information theory - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Information+theory "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Information+theory "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Information+theory "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Information+theory "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  Overview](#Overview)
+* [2
+  Historical background](#Historical_background)
+* [3
+  Quantities of information](#Quantities_of_information)
+
+
+  Toggle Quantities of information subsection
+  + [3.1
+    Entropy of an information source](#Entropy_of_an_information_source)
+    - [3.1.1
+      Properties](#Properties)
+    - [3.1.2
+      Units](#Units)
+    - [3.1.3
+      Binary Entropy Function](#Binary_Entropy_Function)
+  + [3.2
+    Joint entropy](#Joint_entropy)
+  + [3.3
+    Conditional entropy (equivocation)](#Conditional_entropy_(equivocation))
+  + [3.4
+    Mutual information (transinformation)](#Mutual_information_(transinformation))
+  + [3.5
+    Kullback–Leibler divergence (information gain)](#Kullback–Leibler_divergence_(information_gain))
+  + [3.6
+    Directed Information](#Directed_Information)
+  + [3.7
+    Other quantities](#Other_quantities)
+* [4
+  Coding theory](#Coding_theory)
+
+
+  Toggle Coding theory subsection
+  + [4.1
+    Source theory](#Source_theory)
+    - [4.1.1
+      Rate](#Rate)
+  + [4.2
+    Channel capacity](#Channel_capacity)
+    - [4.2.1
+      Capacity of particular channel models](#Capacity_of_particular_channel_models)
+    - [4.2.2
+      Channels with memory and directed information](#Channels_with_memory_and_directed_information)
+  + [4.3
+    Fungible information](#Fungible_information)
+* [5
+  Applications to other fields](#Applications_to_other_fields)
+
+
+  Toggle Applications to other fields subsection
+  + [5.1
+    Network physiology](#Network_physiology)
+  + [5.2
+    Intelligence uses and secrecy applications](#Intelligence_uses_and_secrecy_applications)
+  + [5.3
+    Pseudorandom number generation](#Pseudorandom_number_generation)
+  + [5.4
+    Seismic exploration](#Seismic_exploration)
+  + [5.5
+    Semiotics](#Semiotics)
+  + [5.6
+    Integrated process organization of neural information](#Integrated_process_organization_of_neural_information)
+  + [5.7
+    Miscellaneous applications](#Miscellaneous_applications)
+* [6
+  See also](#See_also)
+
+
+  Toggle See also subsection
+  + [6.1
+    Applications](#Applications)
+  + [6.2
+    History](#History)
+  + [6.3
+    Theory](#Theory)
+  + [6.4
+    Concepts](#Concepts)
+* [7
+  References](#References)
+* [8
+  Further reading](#Further_reading)
+
+
+  Toggle Further reading subsection
+  + [8.1
+    The classic work](#The_classic_work)
+  + [8.2
+    Other journal articles](#Other_journal_articles)
+  + [8.3
+    Textbooks on information theory](#Textbooks_on_information_theory)
+  + [8.4
+    Other books](#Other_books)
+* [9
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Information theory
+
+75 languages
+
+* [Afrikaans](https://af.wikipedia.org/wiki/Inligtingsteorie "Inligtingsteorie – Afrikaans")
+* [العربية](https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA "نظرية المعلومات – Arabic")
+* [Asturianu](https://ast.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n "Teoría de la información – Asturian")
+* [Azərbaycanca](https://az.wikipedia.org/wiki/%C4%B0nformasiya_n%C9%99z%C9%99riyy%C9%99si "İnformasiya nəzəriyyəsi – Azerbaijani")
+* [Башҡортса](https://ba.wikipedia.org/wiki/%D0%9C%D3%99%D2%93%D0%BB%D2%AF%D0%BC%D3%99%D1%82_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%D2%BB%D1%8B "Мәғлүмәт теорияһы – Bashkir")
+* [Boarisch](https://bar.wikipedia.org/wiki/Informationstheorie "Informationstheorie – Bavarian")
+* [Беларуская](https://be.wikipedia.org/wiki/%D0%A2%D1%8D%D0%BE%D1%80%D1%8B%D1%8F_%D1%96%D0%BD%D1%84%D0%B0%D1%80%D0%BC%D0%B0%D1%86%D1%8B%D1%96 "Тэорыя інфармацыі – Belarusian")
+* [Български](https://bg.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%BD%D0%B0_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%D1%82%D0%B0 "Теория на информацията – Bulgarian")
+* [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF_%E0%A6%A4%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A7%8D%E0%A6%AC "তথ্য তত্ত্ব – Bangla")
+* [Català](https://ca.wikipedia.org/wiki/Teoria_de_la_informaci%C3%B3 "Teoria de la informació – Catalan")
+* [کوردی](https://ckb.wikipedia.org/wiki/%D8%AA%DB%8C%DB%86%D8%B1%DB%8C%DB%8C_%D8%B2%D8%A7%D9%86%DB%8C%D8%A7%D8%B1%DB%8C "تیۆریی زانیاری – Central Kurdish")
+* [Čeština](https://cs.wikipedia.org/wiki/Teorie_informace "Teorie informace – Czech")
+* [Dansk](https://da.wikipedia.org/wiki/Informationsteori "Informationsteori – Danish")
+* [Deutsch](https://de.wikipedia.org/wiki/Informationstheorie "Informationstheorie – German")
+* [Ελληνικά](https://el.wikipedia.org/wiki/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1_%CF%80%CE%BB%CE%B7%CF%81%CE%BF%CF%86%CE%BF%CF%81%CE%AF%CE%B1%CF%82 "Θεωρία πληροφορίας – Greek")
+* [Esperanto](https://eo.wikipedia.org/wiki/Informteorio "Informteorio – Esperanto")
+* [Español](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n "Teoría de la información – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Informatsiooniteooria "Informatsiooniteooria – Estonian")
+* [Euskara](https://eu.wikipedia.org/wiki/Informazio-teoria "Informazio-teoria – Basque")
+* [فارسی](https://fa.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%D9%87_%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA "نظریه اطلاعات – Persian")
+* [Suomi](https://fi.wikipedia.org/wiki/Informaatioteoria "Informaatioteoria – Finnish")
+* [Français](https://fr.wikipedia.org/wiki/Th%C3%A9orie_de_l%27information "Théorie de l'information – French")
+* [Gaeilge](https://ga.wikipedia.org/wiki/Teoiric_na_faisn%C3%A9ise "Teoiric na faisnéise – Irish")
+* [Galego](https://gl.wikipedia.org/wiki/Teor%C3%ADa_da_informaci%C3%B3n "Teoría da información – Galician")
+* [עברית](https://he.wikipedia.org/wiki/%D7%AA%D7%95%D7%A8%D7%AA_%D7%94%D7%90%D7%99%D7%A0%D7%A4%D7%95%D7%A8%D7%9E%D7%A6%D7%99%D7%94 "תורת האינפורמציה – Hebrew")
+* [Hrvatski](https://hr.wikipedia.org/wiki/Teorija_informacija "Teorija informacija – Croatian")
+* [Magyar](https://hu.wikipedia.org/wiki/Inform%C3%A1ci%C3%B3elm%C3%A9let "Információelmélet – Hungarian")
+* [Հայերեն](https://hy.wikipedia.org/wiki/%D4%BB%D5%B6%D6%86%D5%B8%D6%80%D5%B4%D5%A1%D6%81%D5%AB%D5%A1%D5%B5%D5%AB_%D5%BF%D5%A5%D5%BD%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6 "Ինֆորմացիայի տեսություն – Armenian")
+* [Interlingua](https://ia.wikipedia.org/wiki/Theoria_del_information "Theoria del information – Interlingua")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Teori_informasi "Teori informasi – Indonesian")
+* [Ido](https://io.wikipedia.org/wiki/Informo-teorio "Informo-teorio – Ido")
+* [Italiano](https://it.wikipedia.org/wiki/Teoria_dell%27informazione "Teoria dell'informazione – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96 "情報理論 – Japanese")
+* [ქართული](https://ka.wikipedia.org/wiki/%E1%83%98%E1%83%9C%E1%83%A4%E1%83%9D%E1%83%A0%E1%83%9B%E1%83%90%E1%83%AA%E1%83%98%E1%83%98%E1%83%A1_%E1%83%97%E1%83%94%E1%83%9D%E1%83%A0%E1%83%98%E1%83%90 "ინფორმაციის თეორია – Georgian")
+* [Qaraqalpaqsha](https://kaa.wikipedia.org/wiki/Informaciya_teoriyas%C4%B1 "Informaciya teoriyası – Kara-Kalpak")
+* [Қазақша](https://kk.wikipedia.org/wiki/%D0%90%D2%9B%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%D1%81%D1%8B "Ақпарат теориясы – Kazakh")
+* [한국어](https://ko.wikipedia.org/wiki/%EC%A0%95%EB%B3%B4_%EC%9D%B4%EB%A1%A0 "정보 이론 – Korean")
+* [Кыргызча](https://ky.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B0%D0%BB%D1%8B%D0%BC%D0%B0%D1%82_%D1%82%D0%B5%D0%BE%D1%80%D0%B8%D1%8F%D1%81%D1%8B "Маалымат теориясы – Kyrgyz")
+* [Lietuvių](https://lt.wikipedia.org/wiki/Informacijos_teorija "Informacijos teorija – Lithuanian")
+* [Latviešu](https://lv.wikipedia.org/wiki/Inform%C4%81cijas_teorija "Informācijas teorija – Latvian")
+* [Македонски](https://mk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%98%D0%B0_%D0%BD%D0%B0_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8%D1%82%D0%B5 "Теорија на информациите – Macedonian")
+* [മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%B5%E0%B4%BF%E0%B4%B5%E0%B4%B0_%E0%B4%B8%E0%B4%BF%E0%B4%A6%E0%B5%8D%E0%B4%A7%E0%B4%BE%E0%B4%A8%E0%B5%8D%E0%B4%A4%E0%B4%82 "വിവര സിദ്ധാന്തം – Malayalam")
+* [Монгол](https://mn.wikipedia.org/wiki/%D0%9C%D1%8D%D0%B4%D1%8D%D1%8D%D0%BB%D0%BB%D0%B8%D0%B9%D0%BD_%D0%BE%D0%BD%D0%BE%D0%BB "Мэдээллийн онол – Mongolian")
+* [Bahasa Melayu](https://ms.wikipedia.org/wiki/Teori_maklumat "Teori maklumat – Malay")
+* [Mirandés](https://mwl.wikipedia.org/wiki/Teorie_de_l%27anforma%C3%A7on "Teorie de l'anformaçon – Mirandese")
+* [မြန်မာဘာသာ](https://my.wikipedia.org/wiki/%E1%80%9E%E1%80%90%E1%80%84%E1%80%BA%E1%80%B8%E1%80%A1%E1%80%81%E1%80%BB%E1%80%80%E1%80%BA%E1%80%A1%E1%80%9C%E1%80%80%E1%80%BA_%E1%80%9E%E1%80%AE%E1%80%A1%E1%80%AD%E1%80%AF%E1%80%9B%E1%80%AE "သတင်းအချက်အလက် သီအိုရီ – Burmese")
+* [Nederlands](https://nl.wikipedia.org/wiki/Informatietheorie "Informatietheorie – Dutch")
+* [Norsk nynorsk](https://nn.wikipedia.org/wiki/Informasjonsteori "Informasjonsteori – Norwegian Nynorsk")
+* [Norsk bokmål](https://no.wikipedia.org/wiki/Informasjonsteori "Informasjonsteori – Norwegian Bokmål")
+* [Occitan](https://oc.wikipedia.org/wiki/Teoria_de_l%27informacion "Teoria de l'informacion – Occitan")
+* [Polski](https://pl.wikipedia.org/wiki/Teoria_informacji "Teoria informacji – Polish")
+* [پنجابی](https://pnb.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%DB%82_%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA "نظریۂ اطلاعات – Western Punjabi")
+* [پښتو](https://ps.wikipedia.org/wiki/%D8%AF_%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%D9%88_%D9%86%D8%B8%D8%B1%DB%8C%D9%87 "د معلوماتو نظریه – Pashto")
+* [Português](https://pt.wikipedia.org/wiki/Teoria_da_informa%C3%A7%C3%A3o "Teoria da informação – Portuguese")
+* [Română](https://ro.wikipedia.org/wiki/Teoria_informa%C8%9Biei "Teoria informației – Romanian")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8 "Теория информации – Russian")
+* [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Teorija_informacije "Teorija informacije – Serbo-Croatian")
+* [Simple English](https://simple.wikipedia.org/wiki/Information_theory "Information theory – Simple English")
+* [Slovenčina](https://sk.wikipedia.org/wiki/Te%C3%B3ria_inform%C3%A1cie "Teória informácie – Slovak")
+* [Slovenščina](https://sl.wikipedia.org/wiki/Teorija_informacij "Teorija informacij – Slovenian")
+* [Shqip](https://sq.wikipedia.org/wiki/Teoria_e_informacionit "Teoria e informacionit – Albanian")
+* [Српски / srpski](https://sr.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%98%D0%B0_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%98a "Теорија информацијa – Serbian")
+* [Svenska](https://sv.wikipedia.org/wiki/Informationsteori "Informationsteori – Swedish")
+* [தமிழ்](https://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AE%95%E0%AE%B5%E0%AE%B2%E0%AF%8D_%E0%AE%95%E0%AF%8B%E0%AE%9F%E0%AF%8D%E0%AE%AA%E0%AE%BE%E0%AE%9F%E0%AF%81 "தகவல் கோட்பாடு – Tamil")
+* [ไทย](https://th.wikipedia.org/wiki/%E0%B8%97%E0%B8%A4%E0%B8%A9%E0%B8%8E%E0%B8%B5%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%A8 "ทฤษฎีสารสนเทศ – Thai")
+* [Tagalog](https://tl.wikipedia.org/wiki/Teorya_ng_impormasyon "Teorya ng impormasyon – Tagalog")
+* [Türkçe](https://tr.wikipedia.org/wiki/Bilgi_teorisi "Bilgi teorisi – Turkish")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D1%96%D1%8F_%D1%96%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D1%97 "Теорія інформації – Ukrainian")
+* [اردو](https://ur.wikipedia.org/wiki/%D9%86%D8%B8%D8%B1%DB%8C%DB%82_%D8%A7%D8%B7%D9%84%D8%A7%D8%B9%D8%A7%D8%AA "نظریۂ اطلاعات – Urdu")
+* [Oʻzbekcha / ўзбекча](https://uz.wikipedia.org/wiki/Informatsiya_nazariyasi "Informatsiya nazariyasi – Uzbek")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/L%C3%BD_thuy%E1%BA%BFt_th%C3%B4ng_tin "Lý thuyết thông tin – Vietnamese")
+* [吴语](https://wuu.wikipedia.org/wiki/%E4%BF%A1%E6%81%AF%E8%AE%BA "信息论 – Wu")
+* [粵語](https://zh-yue.wikipedia.org/wiki/%E8%B3%87%E8%A8%8A%E7%90%86%E8%AB%96 "資訊理論 – Cantonese")
+* [中文](https://zh.wikipedia.org/wiki/%E4%BF%A1%E6%81%AF%E8%AE%BA "信息论 – Chinese")
+* [IsiZulu](https://zu.wikipedia.org/wiki/Umchachiso_wokwaziswa "Umchachiso wokwaziswa – Zulu")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q131222#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Information_theory "View the content page [c]")
+* [Talk](/wiki/Talk:Information_theory "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Information_theory)
+* [Edit](/w/index.php?title=Information_theory&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Information_theory&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Information_theory)
+* [Edit](/w/index.php?title=Information_theory&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Information_theory&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Information_theory "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Information_theory "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Information_theory&oldid=1353177637 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Information_theory&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Information_theory&id=1353177637&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FInformation_theory)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Information_theory&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Information_theory&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Information_theory)
+* [Wikiquote](https://en.wikiquote.org/wiki/Information_theory)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q131222 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Scientific study of digital information
+
+Not to be confused with [Information science](/wiki/Information_science "Information science").
+
+Not to be confused with [Algorithmic information theory](/wiki/Algorithmic_information_theory "Algorithmic information theory").
+
+| Information theory |
+| --- |
+|  |
+| * [Entropy](/wiki/Entropy_(information_theory) "Entropy (information theory)") * [Differential entropy](/wiki/Differential_entropy "Differential entropy") * [Conditional entropy](/wiki/Conditional_entropy "Conditional entropy") * [Joint entropy](/wiki/Joint_entropy "Joint entropy") * [Mutual information](/wiki/Mutual_information "Mutual information") * [Directed information](/wiki/Directed_information "Directed information") * [Conditional mutual information](/wiki/Conditional_mutual_information "Conditional mutual information") * [Relative entropy](/wiki/Relative_entropy "Relative entropy") * [Entropy rate](/wiki/Entropy_rate "Entropy rate") * [Limiting density of discrete points](/wiki/Limiting_density_of_discrete_points "Limiting density of discrete points") |
+| * [Asymptotic equipartition property](/wiki/Asymptotic_equipartition_property "Asymptotic equipartition property") * [Rate–distortion theory](/wiki/Rate%E2%80%93distortion_theory "Rate–distortion theory") |
+| * [Shannon's source coding theorem](/wiki/Shannon%27s_source_coding_theorem "Shannon's source coding theorem") * [Channel capacity](/wiki/Channel_capacity "Channel capacity") * [Noisy-channel coding theorem](/wiki/Noisy-channel_coding_theorem "Noisy-channel coding theorem") * [Shannon–Hartley theorem](/wiki/Shannon%E2%80%93Hartley_theorem "Shannon–Hartley theorem") |
+| * [v](/wiki/Template:Information_theory "Template:Information theory") * [t](/wiki/Template_talk:Information_theory "Template talk:Information theory") * [e](/wiki/Special:EditPage/Template:Information_theory "Special:EditPage/Template:Information theory") |
+
+**Information theory** is the mathematical study of the [quantification](/wiki/Quantification_(science) "Quantification (science)"), [storage](/wiki/Data_storage "Data storage"), and [communication](/wiki/Telecommunications "Telecommunications") of a particular type of mathematically defined [information](/wiki/Information "Information"). The field was established and formalized by [Claude Shannon](/wiki/Claude_Shannon "Claude Shannon") in the 1940s,[[1]](#cite_note-1) though early contributions were made in the 1920s through the works of [Harry Nyquist](/wiki/Harry_Nyquist "Harry Nyquist") and [Ralph Hartley](/wiki/Ralph_Hartley "Ralph Hartley").
+
+Information theory was initially formed in the context of telecommunication but soon found a wide range of other applications. It is now at the intersection of [mathematics](/wiki/Mathematics "Mathematics"), [statistics](/wiki/Statistics "Statistics") and [computer science](/wiki/Computer_science "Computer science"), and has applications in diverse fields ranging from [electrical engineering](/wiki/Electrical_engineering "Electrical engineering") and [physics](/wiki/Physics "Physics") to [neurobiology](/wiki/Neuroscience "Neuroscience").[[2]](#cite_note-:2-2)[[3]](#cite_note-:3-3)[[4]](#cite_note-:0-4)
+
+As a simple example of the concept, if one flips a fair coin and does not yet know the outcome 

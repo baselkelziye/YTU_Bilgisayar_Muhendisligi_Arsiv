@@ -1,0 +1,86 @@
+{
+  "1024": {
+    "chunk_size": 1024,
+    "n_chunks": 2000,
+    "n_test": 400,
+    "adaptive_bpb": 5.111706030890618,
+    "bwt_bpb": 5.171187030225034,
+    "improvement_pct": 1.1502387940477845,
+    "adaptive_time_ms": 0.7324468799538408,
+    "bwt_time_ms": 0.9096517974762719,
+    "time_ratio": 0.8051947811084785,
+    "mlp_time_ms": 0.05000509498586325,
+    "ground_truth": {
+      "bwt_mtf": 916,
+      "rle_huffman": 845,
+      "lzw": 239
+    },
+    "mlp_selections": {
+      "bwt_mtf": 196,
+      "rle_huffman": 166,
+      "lzw": 38
+    }
+  },
+  "2048": {
+    "chunk_size": 2048,
+    "n_chunks": 2000,
+    "n_test": 400,
+    "adaptive_bpb": 4.4776592080877275,
+    "bwt_bpb": 4.48772600263495,
+    "improvement_pct": 0.2243183862230478,
+    "adaptive_time_ms": 1.7253941400099393,
+    "bwt_time_ms": 1.702042962519954,
+    "time_ratio": 1.0137194994510672,
+    "mlp_time_ms": 0.04992465749182884,
+    "ground_truth": {
+      "bwt_mtf": 1891,
+      "rle_huffman": 56,
+      "lzw": 53
+    },
+    "mlp_selections": {
+      "bwt_mtf": 380,
+      "rle_huffman": 11,
+      "lzw": 9
+    }
+  },
+  "4096": {
+    "chunk_size": 4096,
+    "n_chunks": 2000,
+    "n_test": 400,
+    "adaptive_bpb": 3.9976795357533956,
+    "bwt_bpb": 3.995072574720476,
+    "improvement_pct": -0.0652544098802004,
+    "adaptive_time_ms": 7.720710869969025,
+    "bwt_time_ms": 7.689809204982794,
+    "time_ratio": 1.004018521677522,
+    "mlp_time_ms": 0.050073154986876034,
+    "ground_truth": {
+      "bwt_mtf": 1993,
+      "lzw": 7
+    },
+    "mlp_selections": {
+      "bwt_mtf": 397,
+      "lzw": 3
+    }
+  },
+  "8192": {
+    "chunk_size": 8192,
+    "n_chunks": 2000,
+    "n_test": 400,
+    "adaptive_bpb": 3.6311972830714465,
+    "bwt_bpb": 3.6312827322901966,
+    "improvement_pct": 0.0023531414392565695,
+    "adaptive_time_ms": 29.59313588501118,
+    "bwt_time_ms": 29.61220910501197,
+    "time_ratio": 0.9993559001311536,
+    "mlp_time_ms": 0.050777434998963145,
+    "ground_truth": {
+      "bwt_mtf": 1995,
+      "lzw": 5
+    },
+    "mlp_selections": {
+      "bwt_mtf": 399,
+      "lzw": 1
+    }
+  }
+}

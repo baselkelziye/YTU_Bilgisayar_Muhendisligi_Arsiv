@@ -1,0 +1,526 @@
+Huffman coding - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Huffman+coding "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Huffman+coding "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Huffman+coding "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Huffman+coding "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  History](#History)
+* [2
+  Terminology](#Terminology)
+* [3
+  Problem definition](#Problem_definition)
+
+
+  Toggle Problem definition subsection
+  + [3.1
+    Informal description](#Informal_description)
+  + [3.2
+    Formalized description](#Formalized_description)
+  + [3.3
+    Example](#Example)
+* [4
+  Basic technique](#Basic_technique)
+
+
+  Toggle Basic technique subsection
+  + [4.1
+    Compression](#Compression)
+  + [4.2
+    Decompression](#Decompression)
+* [5
+  Main properties](#Main_properties)
+
+
+  Toggle Main properties subsection
+  + [5.1
+    Optimality](#Optimality)
+* [6
+  Variations](#Variations)
+
+
+  Toggle Variations subsection
+  + [6.1
+    *n*-ary Huffman coding](#n-ary_Huffman_coding)
+  + [6.2
+    Adaptive Huffman coding](#Adaptive_Huffman_coding)
+  + [6.3
+    Huffman template algorithm](#Huffman_template_algorithm)
+  + [6.4
+    Length-limited Huffman coding/minimum variance Huffman coding](#Length-limited_Huffman_coding/minimum_variance_Huffman_coding)
+  + [6.5
+    Huffman coding with unequal letter costs](#Huffman_coding_with_unequal_letter_costs)
+  + [6.6
+    Optimal alphabetic binary trees (Hu–Tucker coding)](#Optimal_alphabetic_binary_trees_(Hu–Tucker_coding))
+  + [6.7
+    The canonical Huffman code](#The_canonical_Huffman_code)
+* [7
+  Applications](#Applications)
+* [8
+  References](#References)
+* [9
+  Bibliography](#Bibliography)
+* [10
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Huffman coding
+
+36 languages
+
+* [العربية](https://ar.wikipedia.org/wiki/%D8%AA%D8%B1%D9%85%D9%8A%D8%B2_%D9%87%D9%88%D9%81%D9%85%D8%A7%D9%86 "ترميز هوفمان – Arabic")
+* [Azərbaycanca](https://az.wikipedia.org/wiki/Haffman_kodla%C5%9Fd%C4%B1rmas%C4%B1 "Haffman kodlaşdırması – Azerbaijani")
+* [Català](https://ca.wikipedia.org/wiki/Codificaci%C3%B3_de_Huffman "Codificació de Huffman – Catalan")
+* [Čeština](https://cs.wikipedia.org/wiki/Huffmanovo_k%C3%B3dov%C3%A1n%C3%AD "Huffmanovo kódování – Czech")
+* [Dansk](https://da.wikipedia.org/wiki/Huffman-kodning "Huffman-kodning – Danish")
+* [Deutsch](https://de.wikipedia.org/wiki/Huffman-Kodierung "Huffman-Kodierung – German")
+* [Ελληνικά](https://el.wikipedia.org/wiki/%CE%9A%CF%89%CE%B4%CE%B9%CE%BA%CE%BF%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7_%CE%A7%CE%BF%CF%8D%CF%86%CE%BC%CE%B1%CE%BD "Κωδικοποίηση Χούφμαν – Greek")
+* [Esperanto](https://eo.wikipedia.org/wiki/Kodado_de_Huffman "Kodado de Huffman – Esperanto")
+* [Español](https://es.wikipedia.org/wiki/Codificaci%C3%B3n_Huffman "Codificación Huffman – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Huffmani_kodeerimine "Huffmani kodeerimine – Estonian")
+* [Euskara](https://eu.wikipedia.org/wiki/Huffman_kodifikazio "Huffman kodifikazio – Basque")
+* [فارسی](https://fa.wikipedia.org/wiki/%DA%A9%D8%AF%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C_%D9%87%D8%A7%D9%81%D9%85%D9%86 "کدگذاری هافمن – Persian")
+* [Suomi](https://fi.wikipedia.org/wiki/Huffmanin_koodaus "Huffmanin koodaus – Finnish")
+* [Français](https://fr.wikipedia.org/wiki/Codage_de_Huffman "Codage de Huffman – French")
+* [עברית](https://he.wikipedia.org/wiki/%D7%A7%D7%95%D7%93_%D7%94%D7%90%D7%A4%D7%9E%D7%9F "קוד האפמן – Hebrew")
+* [Magyar](https://hu.wikipedia.org/wiki/Huffman-k%C3%B3dol%C3%A1s "Huffman-kódolás – Hungarian")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Pengodean_Huffman "Pengodean Huffman – Indonesian")
+* [Italiano](https://it.wikipedia.org/wiki/Codifica_di_Huffman "Codifica di Huffman – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/%E3%83%8F%E3%83%95%E3%83%9E%E3%83%B3%E7%AC%A6%E5%8F%B7 "ハフマン符号 – Japanese")
+* [ქართული](https://ka.wikipedia.org/wiki/%E1%83%B0%E1%83%90%E1%83%A4%E1%83%9B%E1%83%94%E1%83%9C%E1%83%98%E1%83%A1_%E1%83%99%E1%83%9D%E1%83%93%E1%83%98 "ჰაფმენის კოდი – Georgian")
+* [한국어](https://ko.wikipedia.org/wiki/%ED%97%88%ED%94%84%EB%A8%BC_%EB%B6%80%ED%98%B8%ED%99%94 "허프먼 부호화 – Korean")
+* [Lombard](https://lmo.wikipedia.org/wiki/Codifica_de_Huffman "Codifica de Huffman – Lombard")
+* [മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%B9%E0%B4%AB%E0%B5%8D%E2%80%8C%E0%B4%AE%E0%B4%BE%E0%B5%BB_%E0%B4%95%E0%B5%8B%E0%B4%A1%E0%B4%BF%E0%B4%99%E0%B5%8D "ഹഫ്‌മാൻ കോഡിങ് – Malayalam")
+* [Nederlands](https://nl.wikipedia.org/wiki/Huffmancodering "Huffmancodering – Dutch")
+* [Norsk bokmål](https://no.wikipedia.org/wiki/Huffman-koding "Huffman-koding – Norwegian Bokmål")
+* [Polski](https://pl.wikipedia.org/wiki/Kodowanie_Huffmana "Kodowanie Huffmana – Polish")
+* [Português](https://pt.wikipedia.org/wiki/Codifica%C3%A7%C3%A3o_de_Huffman "Codificação de Huffman – Portuguese")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D0%A5%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0 "Код Хаффмана – Russian")
+* [Simple English](https://simple.wikipedia.org/wiki/Huffman_coding "Huffman coding – Simple English")
+* [Српски / srpski](https://sr.wikipedia.org/wiki/%D0%A5%D0%B0%D1%84%D0%BC%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8_%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2%D0%B8 "Хафманови кодови – Serbian")
+* [Svenska](https://sv.wikipedia.org/wiki/Huffmankodning "Huffmankodning – Swedish")
+* [ไทย](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A3%E0%B8%AB%E0%B8%B1%E0%B8%AA%E0%B8%AE%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B9%8C%E0%B9%81%E0%B8%A1%E0%B8%99 "การเข้ารหัสฮัฟฟ์แมน – Thai")
+* [Türkçe](https://tr.wikipedia.org/wiki/Huffman_kodu "Huffman kodu – Turkish")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4_%D0%93%D0%B0%D1%84%D1%84%D0%BC%D0%B0%D0%BD%D0%B0 "Код Гаффмана – Ukrainian")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/M%C3%A3_h%C3%B3a_Huffman "Mã hóa Huffman – Vietnamese")
+* [中文](https://zh.wikipedia.org/wiki/%E9%9C%8D%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81 "霍夫曼编码 – Chinese")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q2647#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Huffman_coding "View the content page [c]")
+* [Talk](/wiki/Talk:Huffman_coding "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Huffman_coding)
+* [Edit](/w/index.php?title=Huffman_coding&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Huffman_coding&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Huffman_coding)
+* [Edit](/w/index.php?title=Huffman_coding&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Huffman_coding&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Huffman_coding "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Huffman_coding "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Huffman_coding&oldid=1343579849 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Huffman_coding&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Huffman_coding&id=1343579849&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHuffman_coding)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Huffman_coding&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Huffman_coding&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Huffman_coding)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q2647 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Not to be confused with [Hamming code](/wiki/Hamming_code "Hamming code").
+
+Technique to compress data
+
+[![](//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Huffman_tree_2.svg/250px-Huffman_tree_2.svg.png)](/wiki/File:Huffman_tree_2.svg)
+
+Huffman tree generated from the exact frequencies of the text "this is an example of a huffman tree". Encoding the sentence with this code requires 135 (or 147) bits, as opposed to 288 (or 180) bits if 36 characters of 8 (or 5) bits were used (This assumes that the code tree structure is known to the decoder and thus does not need to be counted as part of the transmitted information). The frequencies and codes of each character are shown in the accompanying table.
+
+| Char | Freq | Code |
+| --- | --- | --- |
+| space | 7 | 111 |
+| a | 4 | 010 |
+| e | 4 | 000 |
+| f | 3 | 1101 |
+| h | 2 | 1010 |
+| i | 2 | 1000 |
+| m | 2 | 0111 |
+| n | 2 | 0010 |
+| s | 2 | 1011 |
+| t | 2 | 0110 |
+| l | 1 | 11001 |
+| o | 1 | 00110 |
+| p | 1 | 10011 |
+| r | 1 | 11000 |
+| u | 1 | 00111 |
+| x | 1 | 10010 |
+
+In [computer science](/wiki/Computer_science "Computer science") and [information theory](/wiki/Information_theory "Information theory"), a **Huffman code** is a particular type of optimal [prefix code](/wiki/Prefix_code "Prefix code") that is commonly used for [lossless data compression](/wiki/Lossless_compression "Lossless compression"). The process of finding or using such a code is **Huffman coding**, an algorithm developed by [David A. Huffman](/wiki/David_A._Huffman "David A. Huffman") while he was a [Sc.D.](/wiki/Doctor_of_Science "Doctor of Science") student at [MIT](/wiki/Massachusetts_Institute_of_Technology "Massachusetts Institute of Technology"), and published in the 1952 paper "A Method for the Construction of Minimum-Redundancy Codes".[[1]](#cite_note-:0-1)
+
+The output from Huffman's algorithm can be viewed as a [variable-length code](/wiki/Variable-length_code "Variable-length code") table for encoding a source symbol (such as a character in a file). The algorithm derives this table from the estimated probability or frequency of occurrence (*weight*) for each possible value of the source symbol. As in other [entropy encoding](/wiki/Entropy_encoding "Entropy encoding") methods, more common symbols are generally represented using fewer bits than less common symbols. Huffman's method can be efficiently implemented, finding a code in time [linear](/wiki/Linear_time "Linear time") to the number of input weights if these weights are sorted.[[2]](#cite_note-vlw-2) However, although optimal among methods encoding symbols separately, Huffman coding [is not always optimal](#Optimality) among all compression methods – it is replaced with [arithmetic coding](/wiki/Arithmetic_coding "Arithmetic coding")[[3]](#cite_note-LiDrew2014-3) if a better compression ratio is required.
+
+## History
+
+[[edit](/w/index.php?title=Huffman_coding&action=edit&section=1 "Edit section: History")]
+
+In 1951, [David A. Huffman](/wiki/David_A._Huffman "David A. Huffman") and his [MIT](/wiki/MIT "MIT") [information theory](/wiki/Information_theory "Information theory") classmates were given the choice of a term paper or a final [exam](/wiki/Exam "Exam"). The professor, [Robert M. Fano](/wiki/Robert_M._Fano "Robert M. Fano"), assigned a [term paper](/wiki/Term_paper "Term paper") on the problem of finding the most efficient binary code. Huffman, unable to prove any codes were the most efficient, was about to give up and start studying for the final when he hit upon the idea of using a frequency-sorted [binary tree](/wiki/Binary_tree "Binary tree") and quickly proved this method the most efficient.[[4]](#cite_note-4)
+
+In doing so, Huffman outdid Fano, who had worked with [Claude Shannon](/wiki/Claude_Shannon "Claude Shannon") to develop a similar code. Building the tree from the bottom up guaranteed optimality, unlike the top-down approach of [Shannon–Fano coding](/wiki/Shannon%E2%80%93Fano_coding "Shannon–Fano coding").
+
+## Terminology
+
+[[edit](/w/index.php?title=Huffman_coding&action=edit&section=2 "Edit section: Terminology")]
+
+Huffman coding uses a specific method for choosing the representation for each symbol, resulting in a [prefix code](/wiki/Prefix_code "Prefix code") (sometimes called "prefix-free codes", that is, the bit string representing some particular symbol is never a prefix of the bit string representing any other symbol). Huffman coding is such a widespread method for creating prefix codes that the term "Huffman code" is widely used as a synonym for "prefix code" even when such a code is not produced by Huffman's algorithm.
+
+## Problem definition
+
+[[edit](/w/index.php?title=Huffman_coding&action=edit&section=3 "Edit section: Problem definition")]
+
+|  |  |
+| --- | --- |
+| [icon](/wiki/File:Question_book-new.svg) | This article **needs additional citations for [verification](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Huffman_coding "Special:EditPage/Huffman coding") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Huffman coding"](https://www.google.com/search?as_eq=wikipedia&q=%22Huffman+coding%22) – [news](https://www.google.com/search?tbm=nws&q=%22Huffman+coding%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Huffman+coding%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Huffman+coding%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Huffman+coding%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Huffman+coding%22&acc=on&wc=on) *(December 2021)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))* |
+
+[![](//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/HuffmanCodeAlg.png/250px-HuffmanCodeAlg.png)](/wiki/File:HuffmanCodeAlg.png)
+
+Constructing a Huffman tree
+
+### Informal description
+
+[[edit](/w/index.php?title=Huffman_coding&action=edit&section=4 "Edit section: Informal description")]
+
+Given
+:   A set of symbols 
+
+
+
+    S
+    {\displaystyle S}
+    ![{\displaystyle S}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2) and for each symbol 
+
+
+
+    x
+    ∈
+    S
+    {\displaystyle x\in S}
+    ![{\displaystyle x\in S}](https://wikimedia.org/api/rest_v1/media/math/render/svg/51186ba8afb2067573a9082d55dd383df1ea9214), the frequency 
+
+
+
+
+    f
+
+    x
+    {\displaystyle f\_{x}}
+    ![{\displaystyle f_{x}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/bb36605624ab2287dc5ec558513c625b88acfee3) representing the fraction of symbols in the text that are equal to 
+
+
+
+    x
+    {\displaystyle x}
+    ![{\displaystyle x}](https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4).[[5]](#cite_note-kleinberg&Tardos-5)
+
+Find
+:   A [prefix-free binary code](/wiki/Prefix_code "Prefix code") (a set of codewords) with minimum [expected](/wiki/Expected_value "Expected value") codeword length (equivalently, a tree with minimum [weighted path length from the root](/wiki/Glossary_of_graph_theory#W "Glossary of graph theory")).
+
+### Formalized description
+
+[[edit](/w/index.php?title=Huffman_coding&action=edit&section=5 "Edit section: Formalized description")]
+
+**Input**.  
+Alphabet 
+
+
+
+A
+=
+(
+
+a
+
+1
+,
+
+a
+
+2
+,
+…
+,
+
+a
+
+n
+)
+{\displaystyle A=(a\_{1},a\_{2},\dots ,a\_{n})}
+![{\displaystyle A=(a_{1},a_{2},\dots ,a_{n})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/cd7971cd308b54a9afb4b897a990d32c3c5174f4), which is the symbol alphabet of size 
+
+
+
+n
+{\displaystyle n}
+![{\displaystyle n}](https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b).   
+Tuple 
+
+
+
+W
+=
+(
+
+w
+
+1
+,
+
+w
+
+2
+,
+…
+,
+
+w
+
+n
+)
+{\displaystyle W=(w\_{1},w\_{2},\dots ,w\_{n})}
+![{\displaystyle W=(w_{1},w_{2},\dots ,w_{n})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/eea6a64cad1424b3d68c8ac38a360c5383486ce4), which is the tuple of the (positive) symbol weights (usually proportional to probabilities), i.e. 
+
+
+
+
+w
+
+i
+=
+weight
+⁡
+
+(
+
+a
+
+i
+)
+,
+
+i
+∈
+{
+1
+,
+2
+,
+…
+,
+n
+}
+{\displaystyle w\_{i}=\operatorname {weight} \left(a\_{i}\right),\,i\in \{1,2,\dots ,n\}}
+![{\displaystyle w_{i}=\operatorname {weight} \left(a_{i}\right),\,i\in \{1,2,\dots ,n\}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/5d928718b91ee67e2ffe43864cdd8a4e9e815007).   
+  
+**Output**.  
+Code 
+
+
+
+C
+
+(
+W
+)
+=
+(
+
+c
+
+1
+,
+
+c
+
+2
+,
+…
+,
+
+c
+
+n
+)
+{\displaystyle C\left(W\right)=(c\_{1},c\_{2},\dots ,c\_{n})}
+![{\displaystyle C\left(W\right)=(c_{1},c_{2},\dots ,c_{n})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/ea3b6a7da9769c2d5f87be6ea75b14ea4ee97621), which is the tuple of (binary) codewords, where 
+
+
+
+
+c
+
+i
+{\displaystyle c\_{i}}
+![{\displaystyle c_{i}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/01acb7953ba52c2aa44264b5d0f8fd223aa178a2) is the codeword for 
+
+
+
+
+a
+
+i
+,
+
+i
+∈
+{
+1
+,
+2
+,
+…
+,
+n
+}
+{\displaystyle a\_{i},\,i\in \{1,2,\dots ,n\}}
+![{\displaystyle a_{i},\,i\in \{1,2,\dots ,n\}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/447bbca06d834d18d87bd270b4eadede332990bb).  
+  
+**Goal**.  
+Let 
+
+
+
+L
+(
+C
+(
+W
+)
+)
+=
+
+∑
+
+i
+=
+1
+
+n
+
+w
+
+i
+length
+⁡
+(
+
+c
+
+i
+)
+{\textstyle L(C(W))=\sum \_{i=1}^{n}w\_{i}\operatorname {length} (c\_{i})}
+![{\textstyle L(C(W))=\sum _{i=1}^{n}w_{i}\operatorname {length} (c_{i})}](https://wikimedia.org/api/rest_v1/media/math/render/svg/c450f9a883d163b16ded56056d9b0c5f720874f6) be the weighted path length of code 
+
+
+
+C
+{\displaystyle C}
+![{\displaystyle C}](https://wikimedia.org/api/rest_v1/media/math/render/svg/4fc55753007cd3c18576f7933f6f089196732029). Condition: 
+
+
+
+L
+(
+C
+(
+W
+)
+)
+≤
+L
+(
+T
+(
+W
+)
+)
+{\disp

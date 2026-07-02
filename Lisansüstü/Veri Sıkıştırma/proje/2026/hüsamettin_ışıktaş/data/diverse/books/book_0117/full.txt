@@ -1,0 +1,20 @@
+{
+  "generated": true,
+  "seed": 42,
+  "ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "book_counts": {
+    "train": 700,
+    "validation": 150,
+    "test": 150
+  },
+  "byte_distribution": {
+    "train": 257438160,
+    "validation": 56866508,
+    "test": 60407941
+  },
+  "leakage_check": "passed"
+}

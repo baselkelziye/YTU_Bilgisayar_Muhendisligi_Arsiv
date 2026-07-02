@@ -1,0 +1,41 @@
+{
+  "raw_codecs": {
+    "bwt_mtf": {
+      "mean_bpb": 3.4242153031957696,
+      "median_bpb": 3.3918,
+      "std_bpb": 0.23033975975373722
+    },
+    "lzw": {
+      "mean_bpb": 4.311947726761745,
+      "median_bpb": 4.275051792828686,
+      "std_bpb": 0.19357077011571283
+    },
+    "rle_huffman": {
+      "mean_bpb": 4.643990294755209,
+      "median_bpb": 4.6251999999999995,
+      "std_bpb": 0.15544839874062513
+    },
+    "huffman": {
+      "mean_bpb": 4.651900323634323,
+      "median_bpb": 4.6168,
+      "std_bpb": 0.1263725828160594
+    },
+    "arithmetic": {
+      "mean_bpb": 5.357030330230296,
+      "median_bpb": 5.313272632493484,
+      "std_bpb": 0.1891939833257749
+    }
+  },
+  "adaptive": {
+    "mean_bpb": 5.6789325142130975,
+    "num_books": 50
+  },
+  "best_single_codec": {
+    "algorithm": "bwt_mtf",
+    "mean_bpb": 3.4242153031957696
+  },
+  "adaptive_improvement_vs_best_single": {
+    "bpb_delta": -2.254717211017328,
+    "percent_improvement": -65.846245383958
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "adaptive_bpb_with_header": 5.084147180066306,
+  "bwt_bpb": 5.212037845858047,
+  "improvement_pct": 2.453755509342185,
+  "adaptive_time_ms": 0.6664213870782179,
+  "bwt_time_ms": 0.8812810324246433,
+  "time_ratio": 0.7561962218166794,
+  "mlp_inference_ms": 0.04927474310049244,
+  "selected_algo_ms": 0.6171466439777255,
+  "header_bits_per_chunk": 3,
+  "header_overhead_pct": 0.03662109375,
+  "n_test_chunks": 2250,
+  "algorithm_breakdown": {
+    "rle_huffman": 991,
+    "bwt_mtf": 877,
+    "lzw": 382
+  }
+}

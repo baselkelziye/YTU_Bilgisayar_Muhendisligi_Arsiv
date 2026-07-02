@@ -1,0 +1,87 @@
+# 02.05.2026
+
+## 17.30
+### Prompt - Claude Sonnet 4.6 - Web: 
+(Proje metni) + bu projeyi gerçekleştirmem gerek. nasıl farklı çözümler üretilebilir. bana yaratıcı fikirler sun
+
+### Cevap:
+Proje Fikirleri Özeti
+
+*   **Fikir 1: LLM-Guided Adaptive Huffman:** Klasik Huffman kodlamasındaki sembol olasılıklarını bir LLM ile tahmin ederek Huffman ağacını gerçek zamanlı güncellemeyi hedefler. Teorik sınırları zorlayan, AI'yı algoritmanın merkezine koyan en güçlü adaydır.
+*   **Fikir 2: Saliency-Aware Görüntü Sıkıştırması:** Görüntüde insanın odaklandığı bölgeleri (yüz vb.) yüksek kalitede, arka planı ise düşük kalitede sıkıştırır. Görsel demosu etkileyici, pratik bir yaklaşımdır.
+*   **Fikir 3: Neural Network Parametre Tahmincisi:** Arithmetic coding için olasılık modelini küçük bir NN (LSTM/Transformer) ile besler. "Sıkıştırma zekadır" ilkesine dayanır, teknik derinliği en yüksek olanıdır.
+*   **Fikir 4: Akıllı LZW Sözlüğü:** LZW algoritmasının sözlüğünü, veriyi analiz eden bir LLM ile önceden doldurur. Uygulaması en kolay ve hızlı sonuç veren fikirdir.
+*   **Fikir 5: Matryoshka Sıkıştırma:** Veriyi "özet + fark (residual)" şeklinde iki aşamalı saklar. Generative modelleri kullanarak yüksek sıkıştırma hedefler ancak uygulaması oldukça zordur.
+
+### Yorum:
+Burada verdiği fikir 2 hoşuma gitti. SAM gibi bir segmentasyon modeli kullanarak segmente edilmiş kısımları yüksek kalite ile, kalan kısımları düşük kalite ile sıkıştırabiliriz diye düşündüm ancak hocanın verdiği verisetleri ile çok uyumlu bir proje olmayacağı için vazgeçtim. Promptun içine örnek verisetlerini de katıp farklı bir fikir almayı deneyeceğim.
+
+## 17.44 - 18.20
+### Prompt - Claude Sonnet 4.6 - Web:
+(Proje Metni + örnek verisetleri) bu projeyi gerçekleştirmem gerek. nasıl farklı çözümler üretilebilir. bana yaratıcı fikirler sun
+https://claude.ai/share/a3d03c25-6f4b-4dc5-bf1a-f3faf49a394b
+### Cevap:
+(Benzer fikirler üretti)
+### Yorum:
+Başta ürettiği örnekler üretti. RL ile adaptif sıkıştırma yöntemi seçen text üzerine çalışan bir proje önerisinde bulundu. Başta mantıklı gelmişti ancak parametre sayısı fazla değil, bir lookup table oluşturup daha basit bir şekilde bu problemi zaten çözebiliriz. RL çok gereksiz olduğu için bu fikirden vazgeçtim.
+Google'ın HiFic modelini proje önerisi olarak sundu. Wavelet + GAN ile reconstruction üzerine bir proje. GAN kısmını değiştirip belki bir şeyler çıkarılabilir diye düşünüyorum ama çıkmayabilir de.
+
+
+## 18.28
+### Prompt - Gemini 3.1 Pro - Web: 
+https://gemini.google.com/share/41957c3819ae
+(Tamamen aynı prompt)
+### Cevap:
+(Neredeyse tamamen aynı fikirler)
+### Yorum:
+Çok yaratıcı bir şey çıkmadı, çok inatlaşmadım. Gelen fikirler LLM ile next token prediction + arithmetic coding. Ya da ROI based image compression. İki fikir de yapılmış ve hazır kodları olduğu için farklı bir şeyler arıyorum. İlham olabilecek farklı fikirler bekliyorum en azından.
+
+## 18.30
+### Prompt - Kimi 2.6 Think - Web: 
+(Tamamen aynı prompt)
+Bu ve bir sonraki promptu ilgili linkten de inceleyebilirsiniz. https://www.kimi.com/share/19de974b-b822-8d86-8000-00001e91251b
+### Cevap:
+(İlginç proje önerileri verdi ancak implementasyon olarak yorucu geldi. Şu proje aklıma başka bir fikir getirdi:)
+"Yazar-Stili BPE (Byte-Pair Encoding)" (Performans öne çıkar)
+Konsept: Gutenberg'deki farklı yazarların (Shakespeare, Dickens, Austen) stilini analiz eden bir küçük sinir ağı, her yazar için özel "merge kuralları" üretir. Standart BPE istatistiksel olarak en sık geçen ikiliyi birleştirir; sizin sisteminiz ise anlamsal ikilileri ("of the", "I am", "it was") önceliklendirir.
+### Yorum:
+Buradan aklıma şöyle bir fikir geldi ancak teorik çok fazla varsayım içeriyor.mesela X kişisinin kitaplarından rastgele 100 tane 40 KB'lık parçalar alacağız. Bu 100 parçanın embedding'ini alacağız. Farklı yazarlar için de aynı şekilde embedding'leri alacağız. Daha sonra bu embeddingleri kullanarak bir cosinüs benzerlik matrisi oluşturacağız. Çok büyük bir matris olacak evet. ama bu matrise bakarak elimizdeki verisetindeki profil sayısını çıkarabileceğiz. Bir clustering yaparız. işte her cluster'a 20 eleman gelcek şekilde profilleme yap deriz. Elimizde 100 tane profil olsun mesela. Bu 100 profil'deki metinler için klasik ve dict bazlı bütün algoritmaları çalıştırıcaz. Her profilde en iyi performans veren algoritmanın farklı olmasını bekleyeceğiz. Bu bir öngörü tabi bu konuda ne düşünüyorsun bilmiyorum. 100 profil'i en iyi sıkıştıran algoritmayı biliyoruz. istediğimiz bir metni alcaz. bloklara bölcez. Her bloğu kendi en iyi algoritmasıyla sıkıştırıp ona göre kaydedicez. Tek bir algoritmayla sıkıştırmaktan daha iyi sonuçlar elde edeceğiz. 
+Bu planın üzerine biraz konuştuk. Bu planın eksi yanı şu: embedding'ler genelde anlamsal yakınlık ölçüyor. Bize yapısal benzerlik daha çok lazım. Embedding üreticilerin yapısal benzerliği çok ince yakalayabilmesi biraz tahmine dayalı bir düşünce. O da bana biz kendi vektörümüzü kendimiz üretelim önersiinde bulundu. Bana da mantıklı geldi. Sonuç olarak "Auto-encoder based content aware profile based text compression" gibi uzun isimli bir proje ismi koydum.
+
+## 19.15 - Devam
+### Prompt - Kimi 2.6 Think - Web: 
+Tamam şimdi bu projeyi bir PRD dokümanına dönüştüreceğiz. Sana başlıkları yazacağım. Sen o başlıklar altına projenin gereklilikerine uygun olarak gerekli metinleri doldurarak tamamen eksiksiz bir PRD oluşturacaksın. Benim eksik bıraktığım yerleri tamamla. Muallakta olan bir kısım varsa istersen alternatif çözümleri bulup oraya yaz. Ama bana bırakmadan en uygun çzömüm bulup eksiksiz şekilde bana sormadan yazmanı tercih ederim.
+
+Proje: Auto-encoder based content aware profile based text compression
+Bu proje hangi sorunu çözüyor? Çözmeyi amaçladığı yöntem nedir nasıl çalışıyor vs onu anlatacağız önce. Kabaca bir küçük bir auto-encoder eğiteceğiz. Bu auto-encoder profilleme yapacak. İlgili profili en iyi sıkıştıran algoritmayı seçeceğiz.
+
+Faz 1:
+Veriseti indirme ve data explarotry aşaması: (indirecğeimiz kitapları ya da bütün chunk'ları karıştırıp direkt train-test-val bölümü kesinlikle yapmalıyız. Test verisetindeki bir kitap'ın bölümü hiç train vala girmese daha iyi olabilir belki emin değilim. Sen onu halledersin hangisi doğruysa)Chunk size'ı ve profil sayısını belirlemek için veriyi incelememiz gerek. Farklı plot'lar çeşitleri vs dahil edilmeli. Data explaroty aşamasında hem hangi özellikleri kullanacağımıza karar vereceğiz. Hem de hangi chunk size'ı seçecğeimize karar vereceğiz. O yüzden farklı parametrelerle verisetinde nasıl dağılımlar gösterdiğni farklı tablolar üzerinde görebilmemiz gerek. Buradan toplam profil sayısına vs karar vereceğiz. Clustering vs kullanarak belirlediğimiz sayıda profile bölebilriz direkt. Ve cluster'ları direkt class olarak atayalım. Arada kalan cluster'ları vs kaldırabilriz. Yalnızca kesin ve net bir şekilde o cluster'da olduğunu bildiğimiz metinleri o profile atayabiliriz.
+
+Faz 2:
+Belirttiğimiz profilleri en iyi sıkıştıran algoritmalar hangileri bunun için her profildeki metinler için ortalamada en iyi sonuç veren algoritmayı seçeceğiz
+
+Faz 3:
+Auto-encoder eğitim aşaması. Elimizde clustering'den profil'leri belirlenmiş, etiketlenmiş veriler var. Artık auto-encoder ile text to class bir pipeline yazacağız. Auto-encoder eğiteceğiz. Niye eğitiyoruz. auto-encoder'ın ürettiği vektör daha anlamlı olacak. ve cluster'a göre daha mantıklı bir sınıflandırma ypaacka. Clustering arada kalanlar konsunda yanlış sınıflandırmaya daha meyilli olabilir.
+
+Faz 4:
+Test verisetindeki metinleri auto-encoder'a verip profillerini çıkarıp o profile uygun şekilde metni şifreleyeceğiz. İdeal chunk-size'ı faz 1'de halledeceğimiz için header'ın varlığı sorun olmayacaktır.
+(bu yazdıklarımı codebase'de human-plan.md olarak kaydettim. Daha sonra double check edebileyim. Ayrıca bir src architechture da kurtduracaktım yazmayı unutmuşum.)
+
+## 19.46
+Auto-Encoder biraz overengineering oldu. Ve lüzumsuz bir compute gerektiriyor. Model eğitsem bile temel özellikleri çıkarma zaten çok maliyetli. Onu sadece clustering aşamasında yapıp, hızlı çıkan özelliklerle birlikte MLP eğitme odaklı bir projeye geçirdim. EDA aşamaları aynı kalacak. Cursor tarafında var olan PRD dosyasını şuna buna göre düzenle diyerek düzenlettim.
+
+# 03.05.2026
+## 15.38
+### Prompt - Codex 5.3 - Cursor IDE:
+@PLAN.md bu plan dosyasına bakarak PHASES klasörüne her faz için yapılması gerekenler. oluştrulması gereken dosyalar. hangi dosyayaların ne amaçla oluşturulduğu vs vs gibi her şeyi yaz. her fazın kendi dosyası olsun.
+### Cevap:
+(PLAN dosyasındaki her faz için ilgili dosyaları yazdı. Yazdığı her şey PHASES klasörü içinde. Düzenleme ihtiyacı duymadım hiçbir yeri. Yalnızca base'i ölçmek için ek bir faz eklettim.)
+
+## 19.22
+### Güncelleme
+faz 0 ve faz 1'i codex + opus 4.7 ile tamamladım. Codex tam istediğim şeyleri anlamadı. Kod yazması gereken yerlerde eksikz yazdı. Claude opus o boşluğu tamamladı ve eksik kodları yazdı.
+
+# 09-10.05.2026
+### Güncelleme
+Faz planlarını implemente ederken Cursor aboneliğim bitmiş. 

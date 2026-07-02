@@ -1,0 +1,256 @@
+Data compression - Wikipedia
+
+[Jump to content](#bodyContent)
+
+Main menu
+
+Main menu
+
+move to sidebar
+hide
+
+Navigation
+
+* [Main page](/wiki/Main_Page "Visit the main page [z]")
+* [Contents](/wiki/Wikipedia:Contents "Guides to browsing Wikipedia")
+* [Current events](/wiki/Portal:Current_events "Articles related to current events")
+* [Random article](/wiki/Special:Random "Visit a randomly selected article [x]")
+* [About Wikipedia](/wiki/Wikipedia:About "Learn about Wikipedia and how it works")
+* [Contact us](//en.wikipedia.org/wiki/Wikipedia:Contact_us "How to contact Wikipedia")
+
+Contribute
+
+* [Help](/wiki/Help:Contents "Guidance on how to use and edit Wikipedia")
+* [Learn to edit](/wiki/Help:Introduction "Learn how to edit Wikipedia")
+* [Community portal](/wiki/Wikipedia:Community_portal "The hub for editors")
+* [Recent changes](/wiki/Special:RecentChanges "A list of recent changes to Wikipedia [r]")
+* [Upload file](/wiki/Wikipedia:File_upload_wizard "Add images or other media for use on Wikipedia")
+* [Special pages](/wiki/Special:SpecialPages "A list of all special pages [q]")
+
+[![](/static/images/icons/enwiki-25.svg)
+
+![Wikipedia](/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg)
+![The Free Encyclopedia](/static/images/mobile/copyright/wikipedia-tagline-en-25.svg)](/wiki/Main_Page)
+
+[Search](/wiki/Special:Search "Search Wikipedia [f]")
+
+Search
+
+Appearance
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Data+compression "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Data+compression "You're encouraged to log in; however, it's not mandatory. [o]")
+
+Personal tools
+
+* [Donate](https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=en.wikipedia.org&uselang=en)
+* [Create account](/w/index.php?title=Special:CreateAccount&returnto=Data+compression "You are encouraged to create an account and log in; however, it is not mandatory")
+* [Log in](/w/index.php?title=Special:UserLogin&returnto=Data+compression "You're encouraged to log in; however, it's not mandatory. [o]")
+
+## Contents
+
+move to sidebar
+hide
+
+* [(Top)](#)
+* [1
+  Lossless](#Lossless)
+* [2
+  Lossy](#Lossy)
+* [3
+  Theory](#Theory)
+
+
+  Toggle Theory subsection
+  + [3.1
+    Machine learning](#Machine_learning)
+  + [3.2
+    Data differencing](#Data_differencing)
+* [4
+  Uses](#Uses)
+
+
+  Toggle Uses subsection
+  + [4.1
+    Image](#Image)
+  + [4.2
+    Audio](#Audio)
+    - [4.2.1
+      Lossy audio compression](#Lossy_audio_compression)
+      * [4.2.1.1
+        Coding methods](#Coding_methods)
+      * [4.2.1.2
+        Speech encoding](#Speech_encoding)
+    - [4.2.2
+      History](#History)
+  + [4.3
+    Video](#Video)
+    - [4.3.1
+      Encoding theory](#Encoding_theory)
+      * [4.3.1.1
+        Inter-frame coding](#Inter-frame_coding)
+    - [4.3.2
+      Hybrid block-based transform formats](#Hybrid_block-based_transform_formats)
+    - [4.3.3
+      History](#History_2)
+  + [4.4
+    Genetics](#Genetics)
+* [5
+  Outlook and currently unused potential](#Outlook_and_currently_unused_potential)
+* [6
+  See also](#See_also)
+* [7
+  References](#References)
+* [8
+  External links](#External_links)
+
+Toggle the table of contents
+
+# Data compression
+
+65 languages
+
+* [Alemannisch](https://als.wikipedia.org/wiki/Datenkompression "Datenkompression – Alemannic")
+* [العربية](https://ar.wikipedia.org/wiki/%D8%B6%D8%BA%D8%B7_%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA "ضغط بيانات – Arabic")
+* [Asturianu](https://ast.wikipedia.org/wiki/Compresi%C3%B3n_de_datos "Compresión de datos – Asturian")
+* [Azərbaycanca](https://az.wikipedia.org/wiki/Veril%C9%99nl%C9%99rin_s%C4%B1xla%C5%9Fd%C4%B1r%C4%B1lmas%C4%B1 "Verilənlərin sıxlaşdırılması – Azerbaijani")
+* [Беларуская (тарашкевіца)](https://be-tarask.wikipedia.org/wiki/%D0%A1%D1%8C%D1%86%D1%96%D1%81%D0%BA%D0%B0%D0%BD%D1%8C%D0%BD%D0%B5_%D0%B7%D1%8C%D0%B2%D0%B5%D1%81%D1%82%D0%B0%D0%BA "Сьцісканьне зьвестак – Belarusian (Taraškievica orthography)")
+* [Български](https://bg.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D1%80%D0%B5%D1%81%D0%B8%D1%80%D0%B0%D0%BD%D0%B5_%D0%BD%D0%B0_%D0%B4%D0%B0%D0%BD%D0%BD%D0%B8 "Компресиране на данни – Bulgarian")
+* [বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A7%8D%E0%A6%A4_%E0%A6%B8%E0%A6%82%E0%A6%95%E0%A7%8B%E0%A6%9A%E0%A6%A8 "উপাত্ত সংকোচন – Bangla")
+* [Bosanski](https://bs.wikipedia.org/wiki/Sa%C5%BEimanje_podataka "Sažimanje podataka – Bosnian")
+* [Català](https://ca.wikipedia.org/wiki/Compressi%C3%B3_de_dades "Compressió de dades – Catalan")
+* [کوردی](https://ckb.wikipedia.org/wiki/%D9%BE%DB%95%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D9%86%DB%8C_%D8%AF%D8%A7%D8%AA%D8%A7 "پەستاندنی داتا – Central Kurdish")
+* [Čeština](https://cs.wikipedia.org/wiki/Komprese_dat "Komprese dat – Czech")
+* [Чӑвашла](https://cv.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%C4%83%D0%BB%C4%83%D1%85%D1%81%D0%B5%D0%BD%D0%B5_%D1%85%C4%95%D1%81%D0%B5%D1%81%D1%81%D0%B8 "Панăлăхсене хĕсесси – Chuvash")
+* [Dansk](https://da.wikipedia.org/wiki/Datakompression "Datakompression – Danish")
+* [Deutsch](https://de.wikipedia.org/wiki/Datenkompression "Datenkompression – German")
+* [Ελληνικά](https://el.wikipedia.org/wiki/%CE%A3%CF%85%CE%BC%CF%80%CE%AF%CE%B5%CF%83%CE%B7_%CE%B4%CE%B5%CE%B4%CE%BF%CE%BC%CE%AD%CE%BD%CF%89%CE%BD "Συμπίεση δεδομένων – Greek")
+* [Esperanto](https://eo.wikipedia.org/wiki/Datumdensigo "Datumdensigo – Esperanto")
+* [Español](https://es.wikipedia.org/wiki/Compresi%C3%B3n_de_datos "Compresión de datos – Spanish")
+* [Eesti](https://et.wikipedia.org/wiki/Andmete_pakkimine "Andmete pakkimine – Estonian")
+* [Euskara](https://eu.wikipedia.org/wiki/Datu-konpresio "Datu-konpresio – Basque")
+* [فارسی](https://fa.wikipedia.org/wiki/%D9%81%D8%B4%D8%B1%D8%AF%D9%87%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D8%AF%D8%A7%D8%AF%D9%87%E2%80%8C%D9%87%D8%A7 "فشرده‌سازی داده‌ها – Persian")
+* [Suomi](https://fi.wikipedia.org/wiki/Tiedonpakkaus "Tiedonpakkaus – Finnish")
+* [Français](https://fr.wikipedia.org/wiki/Compression_de_donn%C3%A9es "Compression de données – French")
+* [Gaeilge](https://ga.wikipedia.org/wiki/Comhbhr%C3%BA_sonra%C3%AD "Comhbhrú sonraí – Irish")
+* [עברית](https://he.wikipedia.org/wiki/%D7%93%D7%97%D7%99%D7%A1%D7%AA_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D "דחיסת נתונים – Hebrew")
+* [हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%86%E0%A4%82%E0%A4%95%E0%A4%A1%E0%A4%BC%E0%A4%BE_%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%A8 "आंकड़ा संपीडन – Hindi")
+* [Hrvatski](https://hr.wikipedia.org/wiki/Sa%C5%BEimanje_podataka "Sažimanje podataka – Croatian")
+* [Magyar](https://hu.wikipedia.org/wiki/Adatt%C3%B6m%C3%B6r%C3%ADt%C3%A9s "Adattömörítés – Hungarian")
+* [Հայերեն](https://hy.wikipedia.org/wiki/%D5%8F%D5%BE%D5%B5%D5%A1%D5%AC%D5%B6%D5%A5%D6%80%D5%AB_%D5%BD%D5%A5%D5%B2%D5%B4%D5%B8%D6%82%D5%B4_(%D5%AF%D5%B8%D5%B4%D5%BA%D6%80%D5%A5%D5%BD%D5%AB%D5%A1) "Տվյալների սեղմում (կոմպրեսիա) – Armenian")
+* [Bahasa Indonesia](https://id.wikipedia.org/wiki/Kompresi_data "Kompresi data – Indonesian")
+* [Italiano](https://it.wikipedia.org/wiki/Compressione_dei_dati "Compressione dei dati – Italian")
+* [日本語](https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E5%9C%A7%E7%B8%AE "データ圧縮 – Japanese")
+* [Jawa](https://jv.wikipedia.org/wiki/Pametelan_Data "Pametelan Data – Javanese")
+* [Қазақша](https://kk.wikipedia.org/wiki/%D0%9C%D3%99%D0%BB%D1%96%D0%BC%D0%B5%D1%82%D1%82%D0%B5%D1%80%D0%B4%D1%96_%D1%81%D1%8B%D2%93%D1%8B%D0%BC%D0%B4%D0%B0%D1%83 "Мәліметтерді сығымдау – Kazakh")
+* [ភាសាខ្មែរ](https://km.wikipedia.org/wiki/Data_compression "Data compression – Khmer")
+* [한국어](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0_%EC%95%95%EC%B6%95 "데이터 압축 – Korean")
+* [Kurdî](https://ku.wikipedia.org/wiki/Kompresyona_daney%C3%AA "Kompresyona daneyê – Kurdish")
+* [Кыргызча](https://ky.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D0%B8%D0%BB%D0%B8%D1%88%D1%82%D0%B5%D1%80%D0%B4%D0%B8_%D0%BA%D1%8B%D1%81%D1%83%D1%83 "Берилиштерди кысуу – Kyrgyz")
+* [Latina](https://la.wikipedia.org/wiki/Compressio_datorum "Compressio datorum – Latin")
+* [Lietuvių](https://lt.wikipedia.org/wiki/Glaudinimas "Glaudinimas – Lithuanian")
+* [Latviešu](https://lv.wikipedia.org/wiki/Datu_saspie%C5%A1ana "Datu saspiešana – Latvian")
+* [Bahasa Melayu](https://ms.wikipedia.org/wiki/Mampatan_data "Mampatan data – Malay")
+* [Nederlands](https://nl.wikipedia.org/wiki/Datacompressie "Datacompressie – Dutch")
+* [Norsk nynorsk](https://nn.wikipedia.org/wiki/Datakomprimering "Datakomprimering – Norwegian Nynorsk")
+* [Norsk bokmål](https://no.wikipedia.org/wiki/Datakompresjon "Datakompresjon – Norwegian Bokmål")
+* [Polski](https://pl.wikipedia.org/wiki/Kompresja_danych "Kompresja danych – Polish")
+* [Piemontèis](https://pms.wikipedia.org/wiki/Compression_dij_d%C3%A0it "Compression dij dàit – Piedmontese")
+* [پښتو](https://ps.wikipedia.org/wiki/%D8%AF_%DA%89%DB%90%D9%BC%D8%A7_%D9%86%DA%9A%D8%AA%DB%8C%DA%81%D9%87_(%DA%A9%D9%85%D9%BE%D8%B1%DB%90%D8%B4%D9%86) "د ډېټا نښتیځه (کمپرېشن) – Pashto")
+* [Português](https://pt.wikipedia.org/wiki/Compress%C3%A3o_de_dados "Compressão de dados – Portuguese")
+* [Română](https://ro.wikipedia.org/wiki/Compresie_de_date "Compresie de date – Romanian")
+* [Русский](https://ru.wikipedia.org/wiki/%D0%A1%D0%B6%D0%B0%D1%82%D0%B8%D0%B5_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85 "Сжатие данных – Russian")
+* [Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/Kompresija_podataka "Kompresija podataka – Serbo-Croatian")
+* [Simple English](https://simple.wikipedia.org/wiki/Data_compression "Data compression – Simple English")
+* [Slovenčina](https://sk.wikipedia.org/wiki/Kompresia_d%C3%A1t "Kompresia dát – Slovak")
+* [Shqip](https://sq.wikipedia.org/wiki/Ngjeshja_e_t%C3%AB_dh%C3%ABnave "Ngjeshja e të dhënave – Albanian")
+* [Српски / srpski](https://sr.wikipedia.org/wiki/Kompresija_podataka "Kompresija podataka – Serbian")
+* [Svenska](https://sv.wikipedia.org/wiki/Datakompression "Datakompression – Swedish")
+* [Kiswahili](https://sw.wikipedia.org/wiki/Ugandamuzi_data "Ugandamuzi data – Swahili")
+* [ไทย](https://th.wikipedia.org/wiki/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9A%E0%B8%B5%E0%B8%9A%E0%B8%AD%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5 "การบีบอัดข้อมูล – Thai")
+* [Türkçe](https://tr.wikipedia.org/wiki/Veri_s%C4%B1k%C4%B1%C5%9Ft%C4%B1rma "Veri sıkıştırma – Turkish")
+* [Українська](https://uk.wikipedia.org/wiki/%D0%A1%D1%82%D0%B8%D1%81%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85 "Стиснення даних – Ukrainian")
+* [اردو](https://ur.wikipedia.org/wiki/%D9%85%D8%B9%D8%B7%DB%8C%D8%A7%D8%AA%DB%8C_%D8%AF%D8%A7%D8%A8%DB%8C%D8%AA "معطیاتی دابیت – Urdu")
+* [Tiếng Việt](https://vi.wikipedia.org/wiki/N%C3%A9n_d%E1%BB%AF_li%E1%BB%87u "Nén dữ liệu – Vietnamese")
+* [吴语](https://wuu.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "数据压缩 – Wu")
+* [粵語](https://zh-yue.wikipedia.org/wiki/%E6%95%B8%E6%93%9A%E5%A3%93%E7%B8%AE "數據壓縮 – Cantonese")
+* [中文](https://zh.wikipedia.org/wiki/%E6%95%B0%E6%8D%AE%E5%8E%8B%E7%BC%A9 "数据压缩 – Chinese")
+
+[Edit links](https://www.wikidata.org/wiki/Special:EntityPage/Q2493#sitelinks-wikipedia "Edit interlanguage links")
+
+* [Article](/wiki/Data_compression "View the content page [c]")
+* [Talk](/wiki/Talk:Data_compression "Discuss improvements to the content page [t]")
+
+English
+
+* [Read](/wiki/Data_compression)
+* [Edit](/w/index.php?title=Data_compression&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Data_compression&action=history "Past revisions of this page [h]")
+
+
+
+Tools
+
+Tools
+
+move to sidebar
+hide
+
+Actions
+
+* [Read](/wiki/Data_compression)
+* [Edit](/w/index.php?title=Data_compression&action=edit "Edit this page [e]")
+* [View history](/w/index.php?title=Data_compression&action=history)
+
+General
+
+* [What links here](/wiki/Special:WhatLinksHere/Data_compression "List of all English Wikipedia pages containing links to this page [j]")
+* [Related changes](/wiki/Special:RecentChangesLinked/Data_compression "Recent changes in pages linked from this page [k]")
+* [Upload file](//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard "Upload files [u]")
+* [Permanent link](/w/index.php?title=Data_compression&oldid=1339225307 "Permanent link to this revision of this page")
+* [Page information](/w/index.php?title=Data_compression&action=info "More information about this page")
+* [Cite this page](/w/index.php?title=Special:CiteThisPage&page=Data_compression&id=1339225307&wpFormIdentifier=titleform "Information on how to cite this page")
+* [Get shortened URL](/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FData_compression)
+
+Print/export
+
+* [Download as PDF](/w/index.php?title=Special:DownloadAsPdf&page=Data_compression&action=show-download-screen "Download this page as a PDF file")
+* [Printable version](/w/index.php?title=Data_compression&printable=yes "Printable version of this page [p]")
+
+In other projects
+
+* [Wikimedia Commons](https://commons.wikimedia.org/wiki/Category:Data_compression)
+* [Wikibooks](https://en.wikibooks.org/wiki/Data_Compression)
+* [Wikidata item](https://www.wikidata.org/wiki/Special:EntityPage/Q2493 "Structured data on this page hosted by Wikidata [g]")
+
+Appearance
+
+move to sidebar
+hide
+
+From Wikipedia, the free encyclopedia
+
+Compact encoding of digital data
+
+"Source coding" redirects here. For the term in computer programming, see [Source code](/wiki/Source_code "Source code").
+
+"Decompression software" redirects here. For the code for calculation of diving decompression schedules, see [Decompression algorithm](/wiki/Decompression_algorithm "Decompression algorithm").
+
+In [information theory](/wiki/Information_theory "Information theory"), **data compression**, **source coding**,[[1]](#cite_note-Wade-1) or **bit-rate reduction** is the process of encoding [information](/wiki/Information "Information") using fewer [bits](/wiki/Bit "Bit") than the original representation.[[2]](#cite_note-mahdi53-2) Any particular compression is either [lossy](/wiki/Lossy "Lossy") or [lossless](/wiki/Lossless "Lossless"). Lossless compression reduces bits by identifying and eliminating [statistical redundancy](/wiki/Redundancy_(information_theory) "Redundancy (information theory)"). No information is lost in lossless compression. Lossy compression reduces bits by removing unnecessary or less important information.[[3]](#cite_note-PujarKadlaskar-3) Typically, a device that performs data compression is referred to as an encoder, and one that performs the reversal of the process (decompression) as a decoder.
+
+The process of reducing the size of a [data file](/wiki/Data_file "Data file") is often referred to as data compression. In the context of [data transmission](/wiki/Data_transmission "Data transmission"), it is called source coding: encoding is done at the source of the data before it is stored or transmitted.[[4]](#cite_note-Salomon-4) Source coding should not be confused with [channel coding](/wiki/Channel_coding "Channel coding"), for error detection and correction or [line coding](/wiki/Line_coding "Line coding"), the means for mapping data onto a signal.
+
+Data compression algorithms present a [space–time complexity trade-off](/wiki/Space%E2%80%93time_tradeoff "Space–time tradeoff") between the bytes needed to store or transmit information, and the [computational resources](/wiki/Computational_resource "Computational resource") needed to perform the encoding and decoding. The design of data compression schemes involves balancing the degree of compression, the amount of distortion introduced (when using [lossy data compression](/wiki/Lossy_data_compression "Lossy data compression")), and the computational resources or time required to compress and decompress the data.[[5]](#cite_note-Tank-5)
+
+## Lossless
+
+[[edit](/w/index.php?title=Data_compression&action=edit&section=1 "Edit section: Lossless")]
+
+Main article: [Lossless compression](/wiki/Lossless_compression "Lossless compression")
+
+Lossless data compression [algorithms](/wiki/Algorithm "Algorithm") usually exploit [statistical redundancy](/wiki/Redundancy_(information_theory) "Redundancy (information theory)") to represent data without losing any [information](/wiki/Self-information "Self-information"), so that the process is reversible. Lossless compression is possible because most real-world data exhibits statistical redundancy. For example, an image may have areas of color that do not change over several pixels; instead of coding "red pixel, red pixel, ..." the data may be encoded as "279 red pixels". This is a basic example of [run-length encoding](/wiki/Run-length_encoding "Run-length encoding"); there are many schemes to reduce file size by eliminating redundancy.
+
+The [Lempel–Ziv](/wiki/Lempel%E2%80%93Ziv "Lempel–Ziv") (LZ) compression methods are among the most popular algorithms for lossless storage.[[6]](#cite_note-Optimized_LZW-6) [DEFLATE](/wiki/DEFLATE "DEFLATE") is a variation on LZ optimized for decompression speed and compression ratio,[[7]](#cite_note-7) but compression can be slow. In the mid-1980s, following work by [Terry Welch](/wiki/Terry_Welch "Terry Welch"), the [Lempel–Ziv–Welch](/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch "Lempel–Ziv–Welch") (LZW) algorithm rapidly became the method of choice for most general-purpose compression systems. LZW is used in [GIF](/wiki/GIF "GIF") images, programs such as [PKZIP](/wiki/PKZIP "PKZIP"), and hardware devices such as modems.[[8]](#cite_note-8) LZ methods use a table-based compression model where table entries are substituted for repeated strings of data. For most LZ methods, this table is generated dynamically from earlier data in the input. The table itself is often [Huffman encoded](/wiki/Huffman_coding "Huffman coding"). [Grammar-based codes](/wiki/Grammar-based_codes "Grammar-based codes") like this can compress highly repetitive input extremely effectively, for instance, a biological [data collection](/wiki/Data_collection "Data collection") of the same or closely related species, a huge versioned document collection, internet archival, etc. The basic task of grammar-based codes is constructing a context-free grammar deriving a single string. Other practical grammar compression algorithms include [Sequitur](/wiki/Sequitur_algorithm "Sequitur algorithm") and [Re-Pair](/wiki/Re-Pair "Re-Pair").
+
+The strongest modern lossless compressors use [probabilistic](/wiki/Randomized_algorithm "Randomized algorithm") models, such as [prediction by partial matching](/wiki/Prediction_by_partial_matching "Prediction by partial matching"). The [Burrows–Wheeler transform](/wiki/Burrows%E2%80%93Wheeler_transform "Burrows–Wheeler transform") can also be viewed as an indirect form of statistical modelling.[*[citation needed](/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")*] In a further refinement of the direct use of [probabilistic modelling](/wiki/Probabilistic_model "Probabilistic model"), statistical estimates can be coupled to an algorithm called [arithmetic coding](/wiki/Arithmetic_coding "Arithmetic coding"). Arithmetic coding is a more modern coding technique that uses the mathematical calculations of a [finite-state machine](/wiki/Finite-state_machine "Finite-state machine") to produce a string of encoded bits from a series of input data symbols. It can achieve superior compression compared to other techniques, such as the better-known Huffman algorithm. It uses an internal memory state to avoid the need to perform a one-to-one mapping of individual input symbols to distinct representations that use an integer number of bits, and it clears out the internal memory only after encoding the entire string of data symbols. Arithmetic coding applies especially well to adaptive data compression tasks where the statistics vary and are context-dependent, as it can be easily coupled with an 
