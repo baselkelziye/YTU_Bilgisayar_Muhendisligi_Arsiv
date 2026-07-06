@@ -123,6 +123,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Teradata_**: klasik FÇ dersidir bilerek biraz anlatmadığını sorar sınavda ortalamanın yüksek olmasını istemediğinden ama dersine giren 50 üzeri ortalama garantiler ezber bir ders olduğundan. Projesi de basit uğraştırıcı değil. ℹ️ Yorum **06.2024** tarihinde yapılmıştır.
+  - 👤 **_Instructionpointer_**: Bölümün en gereksiz kasıntı dersi. Çok fazla ezber var. Sınavlar test ama çok saçma soru tipleri var. Finalde en az 20 tanesi "kaç tanesi doğrudur?" denen "sorular" var. Doktora seviyesinde güncel makalelerden ağ konularıyla ilgili bildiri makalesi yazmamız istenen ve nasıl yapıldığı bilinmeyen AI kontrolüne göre puan dağıtımı yapılan proje var. Hocaların slaytları acayip kötü; terimlerin hiçbiri açıklanmamış ve bazılarının konuyla alakası bile yok ya da slayttaki yeri yanlış, listelendirmeler aşırı düzensiz... Şimdiden kolaylık diliyorum. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -161,6 +162,8 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor. 
   - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Düşünür_**: Biyoenformatik ve büyük veri dersi ile birlikte alın. Üç ders de vize sonrasında ortak konular üzerinde duruyor. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+  - 👤 **_Instructionpointer_**: Çok zevkli, çok faydalı konular içeren bir ders, zor olmamasına karşın bölümdeki en bilgilendirici derslerden biri. Hocaları çok iyi, sınavları zor değil, proje ve ödevler biraz uğraştırabilir ama onlar da oldukça öğretici. Bölümün en iyi derslerinden biri bence. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -203,6 +206,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber. 
+  - 👤 **_Instuctionpointer_**: Sistem Analizi 2 de denebilir, biraz daha tasarım ve sınamaya odaklandığı için bence konuları daha hafif ve ilgi çekici ama maalesef günün sonunda bu da bir başka 5 kişilik proje işkencesi çektiğiniz, ezber dersi. Neyse ki sınavlarda sık sık çıkmışlar tekrarlanıyor ve ortalama 50 puan diyagram çizme soruları var, slaytı okuyun ve hocanın formatına uyun yeter. Genel olarak rahat bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆

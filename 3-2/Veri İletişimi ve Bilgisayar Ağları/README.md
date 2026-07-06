@@ -7,6 +7,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Teradata_**: klasik FÇ dersidir bilerek biraz anlatmadığını sorar sınavda ortalamanın yüksek olmasını istemediğinden ama dersine giren 50 üzeri ortalama garantiler ezber bir ders olduğundan. Projesi de basit uğraştırıcı değil. ℹ️ Yorum **06.2024** tarihinde yapılmıştır.
+  - 👤 **_Instructionpointer_**: Bölümün en gereksiz kasıntı dersi. Çok fazla ezber var. Sınavlar test ama çok saçma soru tipleri var. Finalde en az 20 tanesi "kaç tanesi doğrudur?" denen "sorular" var. Doktora seviyesinde güncel makalelerden ağ konularıyla ilgili bildiri makalesi yazmamız istenen ve nasıl yapıldığı bilinmeyen AI kontrolüne göre puan dağıtımı yapılan proje var. Hocaların slaytları acayip kötü; terimlerin hiçbiri açıklanmamış ve bazılarının konuyla alakası bile yok ya da slayttaki yeri yanlış, listelendirmeler aşırı düzensiz... Şimdiden kolaylık diliyorum. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
