@@ -7,6 +7,7 @@
 - 🏫 **Ders Tipi:** Zorunlu
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber. 
+  - 👤 **_Instuctionpointer_**: Sistem Analizi 2 de denebilir, biraz daha tasarım ve sınamaya odaklandığı için bence konuları daha hafif ve ilgi çekici ama maalesef günün sonunda bu da bir başka 5 kişilik proje işkencesi çektiğiniz, ezber dersi. Neyse ki sınavlarda sık sık çıkmışlar tekrarlanıyor ve ortalama 50 puan diyagram çizme soruları var, slaytı okuyun ve hocanın formatına uyun yeter. Genel olarak rahat bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
