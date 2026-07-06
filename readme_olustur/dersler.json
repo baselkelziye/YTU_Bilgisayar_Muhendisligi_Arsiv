@@ -634,11 +634,11 @@
                     }
                 }
             ],
-            "kolaylik_puani": 42,
-            "gereklilik_puani": 34,
+            "kolaylik_puani": 48,
+            "gereklilik_puani": 35,
             "dersi_veren_hocalar": [],
             "guncel_mi": true,
-            "oy_sayisi": 5,
+            "oy_sayisi": 6,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1aJnQPH__VxaqQOOENkbfYC_gVCgIDQ1y?usp=drive_link)",
                 "**Not:** [El Yazısı Not](./1-2/M%C3%BChendisler%20%C4%B0%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi/slaytlar_notlar/2020/yar%C4%B1%20iletken%20fizi%C4%9Fi.pdf)"
@@ -655,6 +655,12 @@
                     "gereklilik_puani": 30,
                     "yil": 2025,
                     "oy_sayisi": 2
+                },
+                {
+                    "kolaylik_puani": 80,
+                    "gereklilik_puani": 40,
+                    "yil": 2026,
+                    "oy_sayisi": 1
                 }
             ]
         },
@@ -892,8 +898,8 @@
                     }
                 }
             ],
-            "kolaylik_puani": 42,
-            "gereklilik_puani": 97,
+            "kolaylik_puani": 38,
+            "gereklilik_puani": 98,
             "dersi_veren_hocalar": [
                 {
                     "kisaltma": "YES",
@@ -909,7 +915,7 @@
                 }
             ],
             "guncel_mi": true,
-            "oy_sayisi": 4,
+            "oy_sayisi": 5,
             "faydali_olabilecek_kaynaklar": [
                 "**Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1nJk-sz7MxNxKtEsGwJkR5OgS8eft7HAE?usp=drive_link)"
             ],
@@ -924,6 +930,12 @@
                     "kolaylik_puani": 30,
                     "gereklilik_puani": 100,
                     "yil": 2025,
+                    "oy_sayisi": 1
+                },
+                {
+                    "kolaylik_puani": 20,
+                    "gereklilik_puani": 100,
+                    "yil": 2026,
                     "oy_sayisi": 1
                 }
             ]
@@ -2119,6 +2131,15 @@
                 {
                     "kisi": "Traktör Reis",
                     "yorum": "Sistem analizi gibi bir ders. Ezber."
+                },
+                {
+                    "kisi": "Instuctionpointer",
+                    "yorum": "Sistem Analizi 2 de denebilir, biraz daha tasarım ve sınamaya odaklandığı için bence konuları daha hafif ve ilgi çekici ama maalesef günün sonunda bu da bir başka 5 kişilik proje işkencesi çektiğiniz, ezber dersi. Neyse ki sınavlarda sık sık çıkmışlar tekrarlanıyor ve ortalama 50 puan diyagram çizme soruları var, slaytı okuyun ve hocanın formatına uyun yeter. Genel olarak rahat bir ders.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 29
+                    }
                 }
             ],
             "faydali_olabilecek_kaynaklar": [
@@ -2689,6 +2710,24 @@
                         "yil": 2024,
                         "ay": 2,
                         "gun": 7
+                    }
+                },
+                {
+                    "kisi": "Düşünür",
+                    "yorum": "Biyoenformatik ve büyük veri dersi ile birlikte alın. Üç ders de vize sonrasında ortak konular üzerinde duruyor.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 24
+                    }
+                },
+                {
+                    "kisi": "Instructionpointer",
+                    "yorum": "Çok zevkli, çok faydalı konular içeren bir ders, zor olmamasına karşın bölümdeki en bilgilendirici derslerden biri. Hocaları çok iyi, sınavları zor değil, proje ve ödevler biraz uğraştırabilir ama onlar da oldukça öğretici. Bölümün en iyi derslerinden biri bence.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 29
                     }
                 }
             ],
@@ -3358,6 +3397,15 @@
                         "ay": 1,
                         "gun": 25
                     }
+                },
+                {
+                    "kisi": "Instructionpointer",
+                    "yorum": "Rahat bir ders, konuları biraz ezber ama basit. İlgilendiğiniz bir konu seçip (mümkünse bilgisayar mühendisliği ile alakalı) bir makale ve sunum hazırlıyorsunuz ve sınıfta sunuyorsunuz. Sunumda puan verilirken dikkat edilen genel hususları sıralarsam: Kendinizi tanıtmanız, süre kullanımı, konulara hakimiyet (asistan soru sorabilir), sunumu direkt ekrandan okuyarak gidip gitmemeniz, fazla yazı kalabalığı olmaması, anlatıma uyumlu olması, sunumda kullanılan template/fontların uygun renk ve boyutta olması gibi. Makaleyle beraber sunuma kullandığınız resimler vs. için de kaynakça koymayı unutmayın, puanınız kırılabilir.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 7,
+                        "gun": 1
+                    }
                 }
             ]
         },
@@ -3400,6 +3448,15 @@
                         "yil": 2024,
                         "ay": 6,
                         "gun": 7
+                    }
+                },
+                {
+                    "kisi": "Instructionpointer",
+                    "yorum": "Bölümün en gereksiz kasıntı dersi. Çok fazla ezber var. Sınavlar test ama çok saçma soru tipleri var. Finalde en az 20 tanesi \"kaç tanesi doğrudur?\" denen \"sorular\" var. Doktora seviyesinde güncel makalelerden ağ konularıyla ilgili bildiri makalesi yazmamız istenen ve nasıl yapıldığı bilinmeyen AI kontrolüne göre puan dağıtımı yapılan proje var. Hocaların slaytları acayip kötü; terimlerin hiçbiri açıklanmamış ve bazılarının konuyla alakası bile yok ya da slayttaki yeri yanlış, listelendirmeler aşırı düzensiz... Şimdiden kolaylık diliyorum.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 29
                     }
                 }
             ]
@@ -4190,6 +4247,17 @@
                 "**Çıkmış:** [2026 Final Sınavı](./cikmis_sorular/2026/bmok_2026_final.pdf)",
                 "**Çıkmış:** [2026 Vize Sınavı (Çözümlü)](./cikmis_sorular/2026/bmok_2026_vize_cozumlu.pdf)",
                 "**Çıkmış:** [Vize Örneği](./cikmis_sorular/2026/bmok_vize_ornegi.pdf)"
+            ],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Instructionpointer",
+                    "yorum": "Kolay ve ilginç bir mesleki seçmeli dersi. İlk 6 hafta kadar hoca kendi alanı olan görüntü işleme & CNN gibi konuların temeline giriyor, kalan haftalarda ise seminer vermek üzere her hafta sektörden biri gelip kendi alanı hakkında bir slayt sunumu gerçekleştiriyorlar. Sınavlarda görüntü işlemeden klasik ama basit yöntem veya yorumlama soruları, seminerlerden de rastgele cımbızla çekilmiş bir veya birkaç terimle ilgili boşluk doldurma tarzı sorular soruluyor, şu çıkmaz bu çıkmaz demeyin tek terim kaçırınca bile 10 puanınız çöp olur. Ama genel olarak rahat ve hoş bir ders.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 29
+                    }
+                }
             ]
         },
         {
@@ -4200,6 +4268,17 @@
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [
                 "**Not:** [Enes Utku Selbes'in Temel Japonca 1 Notları (Sıkıştırılmış)](./slaytlar_notlar/2026/enes_utku_selbes/temel_japonca_1_compressed.pdf)"
+            ],
+            "ogrenci_gorusleri": [
+                {
+                    "kisi": "Binarysemaphore",
+                    "yorum": "Online dil dersi ama yoklamasını günü gününe giren hocalar var, onun dışında çok zevkli ve temel seviye Japonca öğretilen, sınavları aşırı kolay olan bir seçmeli ders. Japoncaya ilgi duyan ve genel olarak rahat bir seçmeli arayan, yoklama işi sorun olmaz diyen varsa bence almayı gözden geçirsin.",
+                    "tarih": {
+                        "yil": 2026,
+                        "ay": 6,
+                        "gun": 29
+                    }
+                }
             ]
         },
         {
@@ -4643,14 +4722,21 @@
             "donem": "",
             "tip": "Sosyal Seçmeli 1",
             "ogrenci_gorusleri": [],
-            "kolaylik_puani": 0,
-            "gereklilik_puani": 0,
+            "kolaylik_puani": 80,
+            "gereklilik_puani": 20,
             "dersi_veren_hocalar": [],
-            "oy_sayisi": 0,
+            "oy_sayisi": 1,
             "guncel_mi": true,
             "faydali_olabilecek_kaynaklar": [],
             "derse_dair_oneriler": [],
-            "yillara_gore_yildiz_sayilari": []
+            "yillara_gore_yildiz_sayilari": [
+                {
+                    "kolaylik_puani": 80,
+                    "gereklilik_puani": 20,
+                    "yil": 2026,
+                    "oy_sayisi": 1
+                }
+            ]
         },
         {
             "ad": "Tüketici Davranışı",

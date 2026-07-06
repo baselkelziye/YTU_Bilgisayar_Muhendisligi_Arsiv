@@ -162,9 +162,9 @@
   - 👤 **_Otlak İNek_**: Yusuf hocadan almayın. Profesör yavaşlığı var. Mümkünse Süreyya, değilse Çiğdem hocadan alın. İşlemlerden, sembollerden değil ezber bilgilerden korkun ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
-  - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
-    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+  - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+    - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -176,6 +176,10 @@
       - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
       - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
         - ℹ️ Yıldızlar 2 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 
 #### 📚 Faydalı Olabilecek Kaynaklar
@@ -243,7 +247,7 @@
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-    - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   <details>
   <summary><b>📅 Yıllara Göre Yıldız Sayıları</b></summary>
 
@@ -254,6 +258,10 @@
     - 📅 *2025 yılı için yıldız bilgileri*
       - ✅ 2025 Yılında Dersi Kolay Geçer Miyim: ★★★☆☆☆☆☆☆☆
       - 🎯 2025 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
+        - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - 📅 *2026 yılı için yıldız bilgileri*
+      - ✅ 2026 Yılında Dersi Kolay Geçer Miyim: ★★☆☆☆☆☆☆☆☆
+      - 🎯 2026 Yılında Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
         - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   </details>
 

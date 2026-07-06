@@ -8,6 +8,8 @@
 - 💭 **Öğrenci Görüşleri:**
   - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor. 
   - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+  - 👤 **_Düşünür_**: Biyoenformatik ve büyük veri dersi ile birlikte alın. Üç ders de vize sonrasında ortak konular üzerinde duruyor. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+  - 👤 **_Instructionpointer_**: Çok zevkli, çok faydalı konular içeren bir ders, zor olmamasına karşın bölümdeki en bilgilendirici derslerden biri. Hocaları çok iyi, sınavları zor değil, proje ve ödevler biraz uğraştırabilir ama onlar da oldukça öğretici. Bölümün en iyi derslerinden biri bence. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
     - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆

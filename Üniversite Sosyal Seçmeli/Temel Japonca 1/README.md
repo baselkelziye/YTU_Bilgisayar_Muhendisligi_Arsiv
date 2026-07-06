@@ -5,6 +5,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Üniversite Sosyal Seçmeli
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Binarysemaphore_**: Online dil dersi ama yoklamasını günü gününe giren hocalar var, onun dışında çok zevkli ve temel seviye Japonca öğretilen, sınavları aşırı kolay olan bir seçmeli ders. Japoncaya ilgi duyan ve genel olarak rahat bir seçmeli arayan, yoklama işi sorun olmaz diyen varsa bence almayı gözden geçirsin. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 

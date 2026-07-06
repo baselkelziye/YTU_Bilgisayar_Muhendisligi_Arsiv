@@ -178,6 +178,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Instructionpointer_**: Kolay ve ilginç bir mesleki seçmeli dersi. İlk 6 hafta kadar hoca kendi alanı olan görüntü işleme & CNN gibi konuların temeline giriyor, kalan haftalarda ise seminer vermek üzere her hafta sektörden biri gelip kendi alanı hakkında bir slayt sunumu gerçekleştiriyorlar. Sınavlarda görüntü işlemeden klasik ama basit yöntem veya yorumlama soruları, seminerlerden de rastgele cımbızla çekilmiş bir veya birkaç terimle ilgili boşluk doldurma tarzı sorular soruluyor, şu çıkmaz bu çıkmaz demeyin tek terim kaçırınca bile 10 puanınız çöp olur. Ama genel olarak rahat ve hoş bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
     - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
 

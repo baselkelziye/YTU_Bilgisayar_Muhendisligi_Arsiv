@@ -769,9 +769,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
     - ℹ️ Diğer 1 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
-    - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
-    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★☆☆☆☆☆☆☆
-      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★☆☆☆☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 6 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./1-2/M%C3%BChendisler%20i%C3%A7in%20Yar%C4%B1iletken%20Fizi%C4%9Fi)
 
 
@@ -801,7 +801,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★☆☆☆☆☆☆
     - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★★★★★★★
-      - ℹ️ Yıldızlar 4 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+      - ℹ️ Yıldızlar 5 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
     - [YES](#-dr-yunus-emre-selçuk)
     - [AEL](#-dr-ahmet-elbir--en-popüler-hoca-38-oy)
@@ -1059,6 +1059,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Dd_**: Sözel bir ders, dönem sonunda seçtiğiniz bi konuyla alakalı bi sunum ve sunum raporu isteniyor. Konunuzu belirledikten sonra sunumunuzu hemen hazırlayın, çünkü sunum dönem sonu olsa bile her an sınav haftanızda sisteme sunumunuzu yüklemeniz istenebilir. Ben dahil çoğu kişinin düştüğü hataya düşüp sunumunuzun sonuna kaynakça koymamazlık yapmayın. Sunum raporunuzda kaynakçayı belirtseniz bile, eğer sunumunuzun sonuna da yazmazsanız 5-10 puanınız kırılır. Sınavlar için ise notları okuyun, hatta not uzun gelirse özetini çıkarttırıp okuyun, terimlere hakim olun yeterli. Özet ve genel kültür ile ortalama üstü bi not alır geçersiniz, başınız ağrımaz. ℹ️ Yorum **01.2026** tarihinde yapılmıştır.
+    - 👤 **_Instructionpointer_**: Rahat bir ders, konuları biraz ezber ama basit. İlgilendiğiniz bir konu seçip (mümkünse bilgisayar mühendisliği ile alakalı) bir makale ve sunum hazırlıyorsunuz ve sınıfta sunuyorsunuz. Sunumda puan verilirken dikkat edilen genel hususları sıralarsam: Kendinizi tanıtmanız, süre kullanımı, konulara hakimiyet (asistan soru sorabilir), sunumu direkt ekrandan okuyarak gidip gitmemeniz, fazla yazı kalabalığı olmaması, anlatıma uyumlu olması, sunumda kullanılan template/fontların uygun renk ve boyutta olması gibi. Makaleyle beraber sunuma kullandığınız resimler vs. için de kaynakça koymayı unutmayın, puanınız kırılabilir. ℹ️ Yorum **07.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★★☆
@@ -1125,6 +1126,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Teradata_**: klasik FÇ dersidir bilerek biraz anlatmadığını sorar sınavda ortalamanın yüksek olmasını istemediğinden ama dersine giren 50 üzeri ortalama garantiler ezber bir ders olduğundan. Projesi de basit uğraştırıcı değil. ℹ️ Yorum **06.2024** tarihinde yapılmıştır.
+    - 👤 **_Instructionpointer_**: Bölümün en gereksiz kasıntı dersi. Çok fazla ezber var. Sınavlar test ama çok saçma soru tipleri var. Finalde en az 20 tanesi "kaç tanesi doğrudur?" denen "sorular" var. Doktora seviyesinde güncel makalelerden ağ konularıyla ilgili bildiri makalesi yazmamız istenen ve nasıl yapıldığı bilinmeyen AI kontrolüne göre puan dağıtımı yapılan proje var. Hocaların slaytları acayip kötü; terimlerin hiçbiri açıklanmamış ve bazılarının konuyla alakası bile yok ya da slayttaki yeri yanlış, listelendirmeler aşırı düzensiz... Şimdiden kolaylık diliyorum. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
@@ -1138,8 +1140,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Yapay Zeka 
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
-    - 👤 **_Traktör Reis_**: Güzel bir ders ve popüler bir konu hakkında. Ders orta seviye zorlukta ve ödevleri çok şey öğretiyor. 
-    - 👤 **_Usmanaga_**: Çok büyük bir beklentiye girmeyin ama güzel ders, temel mantığa aşinalık kazanıyorsunuz ve ödevleri öğretici. MFA da iyi anlatıyor. ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
+    - 👤 **_Düşünür_**: Biyoenformatik ve büyük veri dersi ile birlikte alın. Üç ders de vize sonrasında ortak konular üzerinde duruyor. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - 👤 **_Instructionpointer_**: Çok zevkli, çok faydalı konular içeren bir ders, zor olmamasına karşın bölümdeki en bilgilendirici derslerden biri. Hocaları çok iyi, sınavları zor değil, proje ve ödevler biraz uğraştırabilir ama onlar da oldukça öğretici. Bölümün en iyi derslerinden biri bence. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+    - ℹ️ Diğer 2 yoruma dersin kendi klasöründen erişebilirsiniz.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -1154,6 +1157,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 🏷️ **Ders Tipi:** Zorunlu
   - 💭 **Öğrenci Görüşleri:**
     - 👤 **_Traktör Reis_**: Sistem analizi gibi bir ders. Ezber. 
+    - 👤 **_Instuctionpointer_**: Sistem Analizi 2 de denebilir, biraz daha tasarım ve sınamaya odaklandığı için bence konuları daha hafif ve ilgi çekici ama maalesef günün sonunda bu da bir başka 5 kişilik proje işkencesi çektiğiniz, ezber dersi. Neyse ki sınavlarda sık sık çıkmışlar tekrarlanıyor ve ortalama 50 puan diyagram çizme soruları var, slaytı okuyun ve hocanın formatına uyun yeter. Genel olarak rahat bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
       - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
     - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★☆☆☆
@@ -1794,6 +1798,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Temel Japonca 1 
   - 🏷️ **Ders Tipi:** Üniversite Sosyal Seçmeli
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Binarysemaphore_**: Online dil dersi ama yoklamasını günü gününe giren hocalar var, onun dışında çok zevkli ve temel seviye Japonca öğretilen, sınavları aşırı kolay olan bir seçmeli ders. Japoncaya ilgi duyan ve genel olarak rahat bir seçmeli arayan, yoklama işi sorun olmaz diyen varsa bence almayı gözden geçirsin. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./%C3%9Cniversite%20Sosyal%20Se%C3%A7meli/Temel%20Japonca%201)
@@ -2382,6 +2389,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 
 #### 📘 Bilgisayar Mühendisliğinde Özel Konular 3 
   - 🏷️ **Ders Tipi:** Mesleki Seçmeli 1
+  - 💭 **Öğrenci Görüşleri:**
+    - 👤 **_Instructionpointer_**: Kolay ve ilginç bir mesleki seçmeli dersi. İlk 6 hafta kadar hoca kendi alanı olan görüntü işleme & CNN gibi konuların temeline giriyor, kalan haftalarda ise seminer vermek üzere her hafta sektörden biri gelip kendi alanı hakkında bir slayt sunumu gerçekleştiriyorlar. Sınavlarda görüntü işlemeden klasik ama basit yöntem veya yorumlama soruları, seminerlerden de rastgele cımbızla çekilmiş bir veya birkaç terimle ilgili boşluk doldurma tarzı sorular soruluyor, şu çıkmaz bu çıkmaz demeyin tek terim kaçırınca bile 10 puanınız çöp olur. Ama genel olarak rahat ve hoş bir ders. ℹ️ Yorum **06.2026** tarihinde yapılmıştır.
+      - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
   - ⭐ **Yıldız Sayıları:**
       - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 👨‍🏫 👩‍🏫 **Dersi Yürüten Akademisyenler:**
@@ -2924,7 +2934,9 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 #### 📘 Üretim Yönetimi 
   - 🏷️ **Ders Tipi:** Sosyal Seçmeli 1
   - ⭐ **Yıldız Sayıları:**
-      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+    - ✅ Dersi Kolay Geçer Miyim: ★★★★★★★★☆☆
+    - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★☆☆☆☆☆☆☆☆
+      - ℹ️ Yıldızlar 1 oy üzerinden hesaplanmıştır. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
   - 📂 [Ders Klasörü](./Sosyal%20Se%C3%A7meli%201/%C3%9Cretim%20Y%C3%B6netimi)
 
 ### 🗓 Lisansüstü
@@ -3744,6 +3756,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 👤 **_Kral 2_**: Ahmet elbirden sonra 2. kral sadece dersi slayttan ve bir tık kötü ingilizcesi ile anlatıp aynı cümleyi dolandırarak tekrarlaması dışında sorun yok. Sanırım kral hocaların ortak özelliği dersleri aşırı sıkıcı anlatması olabilir. ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Jagftype_**: Genel olarak iyi niyetli bir hoca. NYP’yi İngilizce anlatıyor, bazen tekrara düşebiliyor ama iyi anlattığını söyleyebilirim. Yoklama almıyor ℹ️ Yorum **01.2025** tarihinde yapılmıştır.
   - 👤 **_Msa Çıkmış Soruyor Knk Ya_**: sürekli çıkmış sorup sorup şimdi dersini aldık diye çıkmış sormaması... ve bazı beyin eksikliği yaşayan tiplerin "bu adam çıkmış soruyor şıkların yerini bile değiştirmiyor yhaa" diyip whatsapp gruplarında boş boş konuşması derim. dersleri çıkmış sorulmuyor sorulmuyor sorulmuyor. biz o torpilli mezunlardan olamayacağız boşuna ümitlenmeyin. ℹ️ Yorum **04.2026** tarihinde yapılmıştır.
+  - 👤 **_Af Mesajı_**: Bölümde bize karşı olan bir yapı mevcuttu 2 seneden beri. Sınavlar hep bizim dönemimizde çıkmış çıkmaz, test olan sınavlar klasik olur. Lablar online ise yüzyüze olur vs vs. Anlat anlat bitmez aslında. Neyse bundan önce çıkmış sorarak torpilli mezunlar verilmişse de bu sene bigdatada final sınavında son konulardan nerdeyse hiç soru sormayıp hafif şaşırttı ama çalışmasam yine geçilmezdi. Finalden yüksek aldığımdan aslında hafif teşekkür edelim. Bundan sonraki yarışmacılar için başarılarının devamını ... ℹ️ Yorum **07.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 [Nesneye Yönelik Programlama](#-nesneye-yönelik-programlama)
@@ -4828,6 +4841,7 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
 - 💬 **Öğrenci Görüşleri:**
   - 👤 **_Blessed Camel_**: Mütevazi ahlaklı çalışkan Allah iyi insanlarla karşılaştırsın bu argörler arasında parlıyor ℹ️ Yorum **02.2024** tarihinde yapılmıştır.
   - 👤 **_Üçx_**: ArGör'ler içinde bölüm mezunu olan bir tek Toprak hoca var sanırım, kendisi farkını belli ediyor. ℹ️ Yorum **12.2024** tarihinde yapılmıştır.
+  - 👤 **_Bu Adam Iyi_**: bu adamdan ders alacaksanız çok şanslısınız. iyi sağlam araş. görevlilerindendir. ysa dersini güzel anlatır ama sınavları biraz teorik olarak zorlar. onun harici, ödev sınav oranlaması iyidir. ysa dersini başarılı ve öğreticilik açısından da güzel bir şekilde vermiştir. ℹ️ Yorum **07.2026** tarihinde yapılmıştır.
   - ℹ️ Siz de [linkten](https://forms.gle/WbwDxHUz6ebJA7t36) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - 📚 **Verdiği Dersler:**
   - 📖 Ders bilgileri bulunamadı.
