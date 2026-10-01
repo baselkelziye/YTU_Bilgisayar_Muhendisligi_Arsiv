@@ -5,6 +5,9 @@
 - 📅 **Yıl:** 0
 - 📆 **Dönem:** 
 - 🏫 **Ders Tipi:** Mesleki Seçmeli 1
+- 💭 **Öğrenci Görüşleri:**
+  - 👤 **_Derse Gelmeyen Hoca_**: Hoca derse gelmiyor, gelmediği gibi haber de vermiyor, haber vermediği gibi sınav salonlarında da gelmiyor, sınav salonlarına gelmediği gibi sınav hakkında soru problem veya yanlış durumda da mağdur oluyorsunuz. Sınıf ortamı kendisi dahil siber güvenliğin s* sinden haberi olmayan bir ortamdır. Anlatış biçimi sizi cazib edip merak uyandırabilir ama sektörde 2-3 senedir çalışmam ve tecrübem olarak şunu söyleyebilirim; durumlar çok vahim bu AGY isimli öğretim görevlisi için. İlk bi kaç hafta 2. vize yok proje tarzı bir şey vericeğim diyip 2. vize yapıyor. Sınav soruları işlenen konulardan olaylardan bağımsız ve alakasızdır. Kendisi final sınavlarını bile son günün son saatinde girip öğrenciyi mağdur etmeyi sever. Çok bir şey beklemeyin eğer dersi veren kişinin kısaltımının ilk 3 hafi AGY ise. İyi şanslar. ℹ️ Yorum **09.2026** tarihinde yapılmıştır.
+    - ℹ️ Siz de [linkten](https://forms.gle/SzNmK1w4rVaKE4ee8) anonim şekilde görüşlerinizi belirtebilirsiniz.
 - ⭐ **Yıldız Sayıları:**
   - ✅ Dersi Kolay Geçer Miyim: ★★★★★★☆☆☆☆
   - 🎯 Ders Mesleki Açıdan Gerekli Mi: ★★★★☆☆☆☆☆☆
