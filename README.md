@@ -5465,6 +5465,9 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h4 align='center'>✨ <b><i>Batuhan Odçıkın</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/batoddy'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-odcikin'><b>LinkedIn Profili</b></a></p>
 
+<h4 align='center'>✨ <b><i>Enis Ögdüm</i></b> ✨</h4>
+<p align='center'><a href='https://github.com/enisogdum'><b>Github Profili</b></a></p>
+
 <h4 align='center'>✨ <b><i>Esma Nur Ekmekci</i></b> ✨</h4>
 <p align='center'><a href='https://github.com/iamesoes'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/esmaekmekci/'><b>LinkedIn Profili</b></a></p>
 
