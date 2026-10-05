@@ -5441,14 +5441,14 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h2 align='center'>🌟 <b><i>Efe Girgin</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/ufouser09'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/efe-girgin-820576219/'><b>LinkedIn Profili</b></a></p>
 
+<h2 align='center'>🌟 <b><i>Enes Utku Selbes</i></b> 🌟</h2>
+<p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
+
 <h2 align='center'>🌟 <b><i>Mert Güler</i></b> 🌟</h2>
 <p align='center'><a href='https://github.com/mertgulerx'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/gulermertt'><b>LinkedIn Profili</b></a></p>
 
 <h3 align='center'>💫 <b><i>Burak Başol</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/Xedygen'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/burakbasol/'><b>LinkedIn Profili</b></a></p>
-
-<h3 align='center'>💫 <b><i>Enes Utku Selbes</i></b> 💫</h3>
-<p align='center'><a href='https://github.com/enesutku17'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/enes-utku-selbes-6b8453398/'><b>LinkedIn Profili</b></a></p>
 
 <h3 align='center'>💫 <b><i>Esma Nur Çilekaya</i></b> 💫</h3>
 <p align='center'><a href='https://www.linkedin.com/in/esma-nur-%C3%A7ilekaya'><b>LinkedIn Profili</b></a></p>
