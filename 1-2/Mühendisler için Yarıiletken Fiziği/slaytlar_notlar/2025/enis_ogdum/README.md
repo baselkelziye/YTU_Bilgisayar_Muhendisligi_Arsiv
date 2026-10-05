@@ -10,12 +10,11 @@
 ## Not Bilgileri
 **Not Sahibi:** Enis Ögdüm
 
-**Not Tipi:** Slaytlar - Taranmış Ders Notları - Formül Kağıtları
+**Not Tipi:** Slaytlar - Formül Kağıtları
 
 **Not Kapsamı:** Dönem boyunca işlenen konuların tamamı.
 
 * `slaytlar/` - Ders slaytları (YİF 1-11 ve LED'ler)
-* `ders_notlari/` - Çiğdem Oruç'un derste işlediği konuların taranmış notları
 * `formul_kagitlari/` - Vize ve final formül kağıtları
 
 ## Ek Bilgiler (Varsa)
