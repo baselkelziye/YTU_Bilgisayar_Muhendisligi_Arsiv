@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="hero">
+  <div class="container">
+    <h1 class="display-4">CraftMart'a Hoş Geldiniz</h1>
+    <p class="lead">El yapımı ürünlerinizi keşfedin ve satın alın</p>
+    <a href="{{ url_for('list_products') }}" class="btn btn-light btn-lg">
+      Ürünleri Keşfet
+    </a>
+  </div>
+</div>
+
+<h2 class="mt-5 mb-4">Son Eklenen Ürünler</h2>
+<div class="row">
+  {% for p in products %}
+  <div class="col-md-4 col-sm-6 col-12">
+    <a href="{{ url_for('product_detail', product_id=p.product_id) }}" 
+       class="text-decoration-none text-dark">
+      <div class="card mb-4 shadow-sm">
+        {% if p.image_url %}
+          <img src="{{ url_for('static', filename='uploads/' ~ p.image_url) }}" 
+               class="card-img-top" alt="{{ p.name }}">
+        {% else %}
+          <img src="{{ url_for('static', filename='images/default_product.png') }}" 
+               class="card-img-top" alt="Varsayılan Ürün">
+        {% endif %}
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ p.name }}</h5>
+          <p class="card-text mb-1">Fiyat: <strong>{{ p.price }} TL</strong></p>
+          <p class="card-text mb-0 text-muted">{{ p.category_name }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

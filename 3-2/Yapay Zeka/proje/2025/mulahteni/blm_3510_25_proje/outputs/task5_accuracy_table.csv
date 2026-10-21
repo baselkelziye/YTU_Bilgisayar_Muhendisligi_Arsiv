@@ -1,0 +1,11 @@
+task,model,portion,dropout,weight_decay,lr,accuracy,file
+5,cnn,100,0.3,0.0001,0.001,0.602,task5_cnn_100pct_d0.3_wd0.0001_lr0.001_preds.csv
+5,cnn,50,0.5,0.001,0.001,0.581,task5_cnn_50pct_d0.5_wd0.001_lr0.001_preds.csv
+5,cnn,50,0.3,0.0001,0.001,0.541,task5_cnn_50pct_d0.3_wd0.0001_lr0.001_preds.csv
+5,cnn,100,0.0,0.0,0.001,0.5285,task5_cnn_100pct_d0.0_wd0.0_lr0.001_preds.csv
+5,cnn,25,0.5,0.001,0.0001,0.432,task5_cnn_25pct_d0.5_wd0.001_lr0.0001_preds.csv
+5,mlp,100,0.0,0.0,0.001,0.366,task5_mlp_100pct_d0.0_wd0.0_lr0.001_preds.csv
+5,mlp,100,0.3,0.0001,0.001,0.354,task5_mlp_100pct_d0.3_wd0.0001_lr0.001_preds.csv
+5,mlp,50,0.5,0.001,0.001,0.328,task5_mlp_50pct_d0.5_wd0.001_lr0.001_preds.csv
+5,mlp,50,0.3,0.0001,0.001,0.315,task5_mlp_50pct_d0.3_wd0.0001_lr0.001_preds.csv
+5,mlp,25,0.5,0.001,0.0001,0.264,task5_mlp_25pct_d0.5_wd0.001_lr0.0001_preds.csv

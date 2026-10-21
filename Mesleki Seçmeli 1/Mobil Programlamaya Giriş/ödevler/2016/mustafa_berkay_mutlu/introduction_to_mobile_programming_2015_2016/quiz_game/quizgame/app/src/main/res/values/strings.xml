@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Movie Quiz</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="quizActivity_true">True</string>
+    <string name="quizActivity_false">False</string>
+    <string name="quizActivity_next">Next</string>
+    <string name="correct">Correct!</string>
+    <string name="incorrect">Wrong!</string>
+    <string name="scoreboard_header_rank">Rank</string>
+    <string name="scoreboard_header_name_age">Name, Age</string>
+    <string name="scoreboard_header_score">Score</string>
+    <string name="gameFinishedActivity_score">Your score is:</string>
+    <string name="menuActivity_play">Play</string>
+    <string name="menuActivity_scores">Scores</string>
+    <string name="quizActivity_player">Player: </string>
+    <string name="quizActivity_question">Question:</string>
+    <string name="quizActivity_question_single_letter">Q: </string>
+    <string name="registerActivity_name">Name:</string>
+    <string name="registerActivity_dayOfBirth">Day of Birth:</string>
+    <string name="registerActivity_changeDate">Change Date</string>
+    <string name="registerActivity_start">Start</string>
+    <string name="scoreBoardActivity_scoreBoard">Score Board</string>
+    <string name="toast_enter_name">Please enter your name</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_scoreboard">ScoreboardActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+</resources>

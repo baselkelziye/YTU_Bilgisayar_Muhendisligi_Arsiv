@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-4/data_structures/lab_1/cache_buffer"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _shift, symObjAddr: 0x0, symBinAddr: 0x100003864, symSize: 0xFC }
+  - { offsetInCU: 0xF1, offset: 0xF1, size: 0x8, addend: 0x0, symName: _shift, symObjAddr: 0x0, symBinAddr: 0x100003864, symSize: 0xFC }
+  - { offsetInCU: 0x14D, offset: 0x14D, size: 0x8, addend: 0x0, symName: _deleteNode, symObjAddr: 0xFC, symBinAddr: 0x100003960, symSize: 0x128 }
+  - { offsetInCU: 0x18D, offset: 0x18D, size: 0x8, addend: 0x0, symName: _search, symObjAddr: 0x224, symBinAddr: 0x100003A88, symSize: 0x88 }
+  - { offsetInCU: 0x1D1, offset: 0x1D1, size: 0x8, addend: 0x0, symName: _display, symObjAddr: 0x2AC, symBinAddr: 0x100003B10, symSize: 0xB8 }
+  - { offsetInCU: 0x203, offset: 0x203, size: 0x8, addend: 0x0, symName: _add_to_cache, symObjAddr: 0x364, symBinAddr: 0x100003BC8, symSize: 0x150 }
+  - { offsetInCU: 0x251, offset: 0x251, size: 0x8, addend: 0x0, symName: _input_from_cmd, symObjAddr: 0x4B4, symBinAddr: 0x100003D18, symSize: 0xB8 }
+  - { offsetInCU: 0x283, offset: 0x283, size: 0x8, addend: 0x0, symName: _input_from_file, symObjAddr: 0x56C, symBinAddr: 0x100003DD0, symSize: 0xA8 }
+  - { offsetInCU: 0x2D1, offset: 0x2D1, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x614, symBinAddr: 0x100003E78, symSize: 0x70 }
+...

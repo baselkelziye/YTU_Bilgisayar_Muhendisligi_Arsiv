@@ -1,0 +1,103 @@
+﻿@model IEnumerable<GeziRehberi.Models.Places>
+
+@{
+    ViewBag.Title = "Mekanlar";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yerler Listesi</h4>
+                    <p class="card-description">
+                        <a href="@Url.Action("Create","Places")" class="btn btn-primary btn-sm">
+                            <i class="mdi mdi-plus"></i> Yeni Mekan Ekle
+                        </a>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Adı</th>
+                                    <th>Şehir</th>
+                                    <th>Kategori</th>
+                                    <th>Adres</th>
+                                    <th>Ortalama Puan</th>
+                                    <th>Görüntülenme</th>
+                                    <th>Aktif / Pasif</th>
+                                    <th>Fotoğraf</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            @{
+                                                string cityName = "-";
+                                                if (ViewBag.Cities != null && item.CityId.HasValue)
+                                                {
+                                                    var cities = ViewBag.Cities as IEnumerable<dynamic>;
+                                                    var city = cities?.FirstOrDefault(c => (int)c.Id == item.CityId.Value);
+                                                    cityName = city?.Name ?? "-";
+                                                }
+                                            }
+                                            @cityName
+                                        </td>
+                                        <td>
+                                            @{
+                                                string categoryName = "-";
+                                                if (ViewBag.Categories != null && item.CategoryId.HasValue)
+                                                {
+                                                    var categories = ViewBag.Categories as IEnumerable<dynamic>;
+                                                    var category = categories?.FirstOrDefault(c => (int)c.Id == item.CategoryId.Value);
+                                                    categoryName = category?.Name ?? "-";
+                                                }
+                                            }
+                                            @categoryName
+                                        </td>
+                                        <td>@(item.Address != null && item.Address.Length > 50 ? item.Address.Substring(0, 50) + "..." : item.Address ?? "-")</td>
+                                        <td>@(item.AverageRating?.ToString("F1") ?? "-")</td>
+                                        <td>@(item.ViewCount ?? 0)</td>
+                                        <td>
+                                            @if (item.IsActive == 1)
+                                            {
+                                                <span class="badge badge-success">Aktif</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Pasif</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <img src="@item.PhotoUrl" style="width:50px;height:50px;" />
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-sm btn-success">
+                                                <i class="mdi mdi-pencil"></i> Düzenle
+                                            </a>
+                                            @using (Html.BeginForm("Delete", "Places", new { id = item.Id }, FormMethod.Post, new { @class = "d-inline", onsubmit = "return confirm('Bu yeri silmek istediğinize emin misiniz?');" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-danger">
+                                                    <i class="mdi mdi-delete"></i> Sil
+                                                </button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

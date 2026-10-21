@@ -1,0 +1,87 @@
+/* Buttons */
+
+.btn {
+  font-size: $btn-font-size;
+  line-height: 1;
+  font-weight: 400;
+  border-radius:15px;
+  i {
+    font-size: 1rem;
+  }
+  &.btn-rounded {
+    @include border-radius(50px);
+  }
+  &.btn-sm {
+    font-size: $btn-font-size-sm;
+    border-radius:15px;
+  }
+  &.btn-lg {
+    font-size: $btn-font-size-lg;
+    padding: 1.375rem 3.4rem;
+  }
+  &.btn-xs {
+    padding: $btn-padding-y-xs $btn-padding-x-xs;
+    font-size: $btn-font-size-xs;
+  }
+  /* Buttons with only icons */
+  &.btn-icon {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+  }
+  /* Buttons with icon and text */
+  &.btn-icon-text {
+    .btn-icon-prepend {
+      margin-right: .5rem;
+    }
+    .btn-icon-append {
+      margin-left: .5rem;
+    }
+  }
+  &.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+  }
+  &:focus,
+  &:active {
+    outline: 0;
+    box-shadow: none;
+  }
+}
+
+.btn-group {
+  .btn {
+    + .btn {
+      border-left: 0;
+    }
+  }
+}
+
+.btn-toolbar {
+  .btn-group {
+    +.btn-group {
+      @extend .ms-2;
+    }
+  }
+}
+/*social buttons*/
+@each $color, $value in $social-colors {
+  .btn-#{$color} {
+    @include social-button(social-color($color));
+  }
+  .btn-outline-#{$color} {
+    @include social-outline-button(social-color($color));
+  }
+}
+/* inverse buttons */
+@each $color, $value in $theme-colors {
+  .btn-inverse-#{$color} {
+    @include button-inverse-variant($value);
+  }
+}
+
+.btn-outline-light {
+  color: #6c7383;
+  border-color: #e3e3e3;
+}

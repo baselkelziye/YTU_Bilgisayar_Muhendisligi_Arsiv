@@ -1,0 +1,129 @@
+﻿
+@model IEnumerable<GeziRehberi.Models.Comments>
+
+@{
+    ViewBag.Title = "Yorumlar";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yorumlar Listesi</h4>
+                    <p class="card-description">
+                        <a href="@Url.Action("Create","Comments")" class="btn btn-primary btn-sm">
+                            <i class="mdi mdi-plus"></i> Yeni Yorum Ekle
+                        </a>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Blog</th>
+                                    <th>Kullanıcı</th>
+                                    <th>Yorum</th>
+                                    <th>Durum</th>
+                                    <th>Oluşturulma Tarihi</th>
+                                    <th>Aktif / Pasif</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            @{
+                                                string blogTitle = "-";
+                                                if (ViewBag.Blogs != null && item.BlogId.HasValue)
+                                                {
+                                                    var blogs = ViewBag.Blogs as IEnumerable<dynamic>;
+                                                    var blog = blogs?.FirstOrDefault(b => (int)b.Id == item.BlogId.Value);
+                                                    blogTitle = blog?.Title ?? "-";
+                                                    if (blogTitle != null && blogTitle.Length > 30)
+                                                    {
+                                                        blogTitle = blogTitle.Substring(0, 30) + "...";
+                                                    }
+                                                }
+                                            }
+                                            @blogTitle
+                                        </td>
+                                        <td>
+                                            @{
+                                                string userName = "-";
+                                                if (ViewBag.Users != null && item.UserId.HasValue)
+                                                {
+                                                    var users = ViewBag.Users as IEnumerable<dynamic>;
+                                                    var user = users?.FirstOrDefault(u => (int)u.Id == item.UserId.Value);
+                                                    userName = user?.Name ?? user?.UserName ?? "-";
+                                                }
+                                            }
+                                            @userName
+                                        </td>
+                                        <td>
+                                            @if (item.Comment != null && item.Comment.Length > 50)
+                                            {
+                                                <span title="@item.Comment">@item.Comment.Substring(0, 50)...</span>
+                                            }
+                                            else
+                                            {
+                                                @(item.Comment ?? "-")
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (item.IsApproved == true)
+                                            {
+                                                <span class="badge badge-success">Onaylı</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-warning">Onay Bekliyor</span>
+                                            }
+                                        </td>
+                                        <td>@(item.CreatedDate?.ToString("dd.MM.yyyy HH:mm") ?? "-")</td>
+                                        <td>
+                                            @if (item.IsActive == true)
+                                            {
+                                                <span class="badge badge-success">Aktif</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Pasif</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (item.IsApproved == true)
+                                            {
+                                                using (Html.BeginForm("Disapprove", "Comments", new { id = item.Id }, FormMethod.Post, new { @class = "d-inline" }))
+                                                {
+                                                    @Html.AntiForgeryToken()
+                                                    <button type="submit" class="btn btn-sm btn-warning" title="Onaylama">
+                                                        <i class="mdi mdi-close-circle"></i> Onaylama
+                                                    </button>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                using (Html.BeginForm("Approve", "Comments", new { id = item.Id }, FormMethod.Post, new { @class = "d-inline" }))
+                                                {
+                                                    @Html.AntiForgeryToken()
+                                                    <button type="submit" class="btn btn-sm btn-success" title="Onayla">
+                                                        <i class="mdi mdi-check-circle"></i> Onayla
+                                                    </button>
+                                                }
+                                            }
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

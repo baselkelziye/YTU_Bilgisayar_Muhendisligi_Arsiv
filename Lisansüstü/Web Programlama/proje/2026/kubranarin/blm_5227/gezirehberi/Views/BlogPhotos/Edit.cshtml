@@ -1,0 +1,86 @@
+﻿
+@model GeziRehberi.Models.BlogPhotos
+
+@{
+    ViewBag.Title = "Blog Fotoğrafı Düzenle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Blog Fotoğrafı Düzenle</h4>
+                   
+
+                    @using (Html.BeginForm("Edit", "BlogPhotos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            @Html.HiddenFor(model => model.Id)
+                            @Html.HiddenFor(model => model.CreatedDate)
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.BlogId, "Blog", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownList("BlogId", null, "-- Blog Seçiniz --", htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.BlogId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.PhotoUrl, "Fotoğraf", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @if (!string.IsNullOrEmpty(Model.PhotoUrl))
+                                    {
+                                        <div class="mb-2">
+                                            <img src="@Model.PhotoUrl" alt="Mevcut Fotoğraf" style="max-width: 200px; max-height: 200px; border: 1px solid #ddd; padding: 5px;" />
+                                            <br />
+                                            <small class="text-muted">Mevcut Fotoğraf</small>
+                                        </div>
+                                    }
+                                    <input type="file" name="photoFile" id="photoFile" class="form-control" accept="image/*" />
+                                    @Html.HiddenFor(model => model.PhotoUrl)
+                                    @Html.ValidationMessageFor(model => model.PhotoUrl, "", new { @class = "text-danger" })
+                                    <small class="form-text text-muted">Yeni fotoğraf yüklemek için dosya seçin. Boş bırakırsanız mevcut fotoğraf korunur.</small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.IsCover, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @Html.EditorFor(model => model.IsCover)
+                                        @Html.ValidationMessageFor(model => model.IsCover, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.IsActive, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    <div class="checkbox">
+                                        @Html.EditorFor(model => model.IsActive)
+                                        @Html.ValidationMessageFor(model => model.IsActive, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Güncelle" class="btn btn-primary" />
+                                    <a href="@Url.Action("List")" class="btn btn-secondary">İptal</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

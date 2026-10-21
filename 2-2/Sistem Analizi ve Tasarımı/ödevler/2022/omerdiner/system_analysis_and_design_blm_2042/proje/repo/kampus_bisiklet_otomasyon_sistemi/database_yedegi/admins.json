@@ -1,0 +1,20 @@
+{
+  "jsonPath": "database/admins.json",
+  "table": [
+    {
+      "ID": 1,
+      "fullname": "John Smith",
+      "password": "admin123"
+    },
+    {
+      "ID": 2,
+      "fullname": "Emily Johnson",
+      "password": "password456"
+    },
+    {
+      "ID": 1234,
+      "fullname": "Oguzhan Topaloglu",
+      "password": "1234"
+    }
+  ]
+}

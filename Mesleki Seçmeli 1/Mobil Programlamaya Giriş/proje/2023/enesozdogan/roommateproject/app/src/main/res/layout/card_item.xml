@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="6dp">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/cardviewImg"
+            android:layout_width="150dp"
+            android:layout_height="120dp" />
+
+        <TextView
+            android:id="@+id/cardName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="50dp"
+            android:layout_toEndOf="@+id/cardviewImg"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/CardDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cardName"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/cardName"
+            android:text="Distance" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

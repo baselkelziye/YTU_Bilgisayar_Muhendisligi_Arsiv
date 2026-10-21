@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/editTextRecyclerExamQuestion"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutExamRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRecyclerExamQuestion">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2Recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxAExamRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBExamRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false" />
+
+            <CheckBox
+                android:id="@+id/checkBoxCExamRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDExamRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false" />
+
+            <CheckBox
+                android:id="@+id/checkBoxEExamRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editTextRecyclerExamOptionA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/editTextRecyclerExamOptionB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/editTextRecyclerExamOptionC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/editTextRecyclerExamOptionD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/editTextRecyclerExamOptionE"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

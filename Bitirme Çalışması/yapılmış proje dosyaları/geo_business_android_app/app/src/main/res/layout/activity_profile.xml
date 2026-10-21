@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CFC462">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#CFC462">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+        <!-- show name -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_name"
+            android:background="@drawable/outline_person_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_name"
+            android:layout_alignStart="@id/profile_iv_name"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_name"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_name"
+            android:background="@color/gray"/>
+
+
+
+
+        <!-- show surname -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_surname"
+            android:layout_below="@id/profile_v_name"
+            android:background="@drawable/outline_person_black_24dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_surname"
+            android:layout_alignStart="@id/profile_iv_surname"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/profile_v_name"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_surname"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_surname"
+            android:background="@color/gray"/>
+
+
+
+
+
+
+
+        <!-- show USERname -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_username"
+            android:layout_below="@id/profile_v_surname"
+            android:background="@drawable/outline_person_black_24dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_username"
+            android:layout_alignStart="@id/profile_iv_username"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/profile_v_surname"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_username"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_username"
+            android:background="@color/gray"/>
+
+
+
+
+
+
+        <!-- show ID -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_id"
+            android:layout_below="@id/profile_v_username"
+            android:background="@drawable/outline_person_black_24dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_id"
+            android:layout_alignStart="@id/profile_iv_id"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/profile_v_username"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_id"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_id"
+            android:background="@color/gray"/>
+
+
+
+
+
+
+
+
+
+        <!-- show MAIL -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_email"
+            android:layout_below="@id/profile_v_id"
+            android:background="@drawable/icon_mail"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_email"
+            android:layout_alignStart="@id/profile_iv_email"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/profile_v_id"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_email"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_email"
+            android:background="@color/gray"/>
+
+
+
+        <!-- show ROLE -->
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/profile_iv_role"
+            android:layout_below="@id/profile_v_email"
+            android:background="@drawable/icon_mail"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_tv_role"
+            android:layout_alignStart="@id/profile_iv_role"
+            android:hint="Loading.."
+            android:layout_marginStart="40dp"
+            android:layout_below="@id/profile_v_email"
+            android:layout_marginTop="20dp"
+            android:textSize="18dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/profile_v_role"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_tv_role"
+            android:background="@color/gray"/>
+
+
+        <!--- info alanı eklenecekse bt margintop arttır -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_bt_back"
+            android:layout_below="@id/profile_v_role"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="BACK"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

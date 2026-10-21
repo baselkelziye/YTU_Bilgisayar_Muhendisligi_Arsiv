@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tr.com.berkaytutal.beslenmedanismani.ProgramOverviewActivity"
+    android:orientation="vertical">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/workoutIntroListview"></ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:text="@string/baslat"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+
+
+        android:id="@+id/programOverviewStart"
+        android:drawableLeft="@drawable/play"
+        android:padding="10dp"/>
+
+</LinearLayout>

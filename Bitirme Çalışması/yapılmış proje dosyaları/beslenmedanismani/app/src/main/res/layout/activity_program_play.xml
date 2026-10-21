@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tr.com.berkaytutal.beslenmedanismani.ProgramPlayActivity"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/circleExerciseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/circleExerciseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="title"
+                    android:textSize="16sp" />
+
+
+
+
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <LinearLayout
+                    android:id="@+id/circleExerciseNotChestLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/circleExerciseTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/circleExerciseChestLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weight: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/circleExerciseWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Set: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/circleExerciseSet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Repeat: "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/circleExerciseRepeat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rest: "
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/circleExerciseRestTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30" />
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Description:"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/circleExerciseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="titdescriptionle" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--<ImageView-->
+        <!--android:id="@+id/circlePhoto2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:layout_weight="1" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/remainingTimeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+        <TextView
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:id="@+id/remainingTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining Time: "/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+
+
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/circlePhoto1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:visibility="gone"
+
+            />
+        <VideoView
+            android:id="@+id/circleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/circleButtonPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/circleButtonPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Pause"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/circleButtonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            android:text="Next"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/circleButtonStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:background="@color/colorGreen"
+            android:text="Start!"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/circleButtonFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:background="@color/colorRedDark"
+            android:text="Finish"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

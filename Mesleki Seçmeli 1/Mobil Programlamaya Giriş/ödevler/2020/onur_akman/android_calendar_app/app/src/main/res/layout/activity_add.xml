@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <LinearLayout
+        android:id="@+id/HeaderMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryDark"
+            android:text="New Event"
+            android:textColor="@color/white"
+            android:textSize="100px" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="50px" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollForm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="175px"
+        android:layout_marginBottom="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Add">
+
+            <LinearLayout
+                android:id="@+id/addEventForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/NameInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:hint="Event Name" />
+
+                <EditText
+                    android:id="@+id/DetailInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="40px"
+                    android:layout_weight="1"
+                    android:hint="Event Detail" />
+
+                <DatePicker
+                    android:id="@+id/DateInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Starting" />
+
+                <TimePicker
+                    android:id="@+id/StartingInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Until" />
+
+                <TimePicker
+                    android:id="@+id/EndingInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Repeat" />
+
+                <Spinner
+                    android:id="@+id/repeatSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginTop="20px"
+                    android:popupBackground="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Location" />
+
+                <Button
+                    android:id="@+id/AddLocationInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Location"
+                    android:textAllCaps="false" />
+
+                <EditText
+                    android:id="@+id/AddressInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:hint="Address" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Reminder Settings" />
+
+                <Button
+                    android:id="@+id/AddReminderInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Reminder"
+                    android:textAllCaps="false" />
+
+                <LinearLayout
+                    android:id="@+id/NotSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ToggleButton
+                        android:id="@+id/NotTypeInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAllCaps="false"
+                        android:textOff="Notification"
+                        android:textOn="Alert" />
+
+                    <ToggleButton
+                        android:id="@+id/SoundInput"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:textAllCaps="false"
+                        android:textOff="Vibrate"
+                        android:textOn="Tone" />
+
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/reminderSpinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginTop="30px"
+                    android:popupBackground="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/reminderSpinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:popupBackground="@color/colorPrimary" />
+
+                <Spinner
+                    android:id="@+id/reminderSpinner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginBottom="30px"
+                    android:fadingEdge="vertical"
+                    android:popupBackground="@color/colorPrimary" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Home"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/AddButton" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Add"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/SettingsButton" />
+
+
+        <Button
+            android:id="@+id/SettingsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Settings"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

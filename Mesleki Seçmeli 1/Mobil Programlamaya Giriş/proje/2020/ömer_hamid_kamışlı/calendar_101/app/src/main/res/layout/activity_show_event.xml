@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".showEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_show_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/showEvent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".showEvent">
+
+            <EditText
+                android:id="@+id/showEvent_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="Event Name"
+                android:inputType="textPersonName" />
+
+            <Spinner
+                android:id="@+id/showEvent_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:id="@+id/showEvent_description"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/showEvent_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showEvent_txt_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:ems="10"
+                    android:hint="Start Date" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_start_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addDT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showEvent_txt_finish_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:ems="10"
+                    android:hint="Finish Date" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_finish_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addDT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showEvent_txt_alarm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:ems="10"
+                    android:hint="Alarm 1" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_alarm1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addDT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showEvent_txt_alarm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:ems="10"
+                    android:hint="Alarm 2" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_alarm2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addDT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showEvent_txt_alarm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:ems="10"
+                    android:hint="Alarm 3" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_alarm3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addDT" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/showEvent_btn_update"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Update" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_delete"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Delete" />
+
+                <Button
+                    android:id="@+id/showEvent_btn_share"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Share" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alarm.AlarmActivity">
+
+    <TimePicker
+        android:id="@+id/alarm_time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/alarm_status_text" />
+
+    <TextView
+        android:id="@+id/alarm_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="@string/alarm_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm_time_picker"
+        app:layout_constraintBottom_toTopOf="@id/alarm_add_alarm" />
+
+    <Button
+        android:id="@+id/alarm_add_alarm"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/add_alarm"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/alarm_cancel_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm_status_text" />
+
+    <Button
+        android:id="@+id/alarm_cancel_button"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toEndOf="@id/alarm_add_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarm_status_text"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

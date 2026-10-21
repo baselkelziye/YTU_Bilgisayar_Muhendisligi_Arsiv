@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.MainMenu">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="19" width="500" height="408"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="82ba2" class="javax.swing.JButton" binding="deleteCar">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Araba Sil"/>
+        </properties>
+      </component>
+      <component id="f3661" class="javax.swing.JButton" binding="listCustomer">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Müşteri Listele"/>
+        </properties>
+      </component>
+      <component id="aa4af" class="javax.swing.JButton" binding="listCar">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Araba Listele"/>
+        </properties>
+      </component>
+      <component id="36273" class="javax.swing.JButton" binding="addCustomer">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Müşteri Ekle"/>
+        </properties>
+      </component>
+      <component id="4348b" class="javax.swing.JButton" binding="deleteCustomer">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Müşteri Sil"/>
+        </properties>
+      </component>
+      <component id="e098a" class="javax.swing.JButton" binding="financeButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Gelir / Gider Tablosu"/>
+        </properties>
+      </component>
+      <component id="43520" class="javax.swing.JButton" binding="rentACarButton">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Araba Kirala"/>
+        </properties>
+      </component>
+      <component id="2d2e8" class="javax.swing.JButton" binding="addCar">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Araba Ekle"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

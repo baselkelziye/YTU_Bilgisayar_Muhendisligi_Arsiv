@@ -1,0 +1,24 @@
+		EXTRN PRINTINT:FAR
+		EXTRN DNUM:FAR
+myss	SEGMENT PARA STACK 'y'
+		DW 20 DUP(?)
+myss	ENDS
+myds	SEGMENT PARA 'v'
+sayi1	DW 10
+myds	ENDS
+mycs	SEGMENT PARA 'k'
+		ASSUME CS:mycs,DS:myds,SS:myss
+ANA		PROC FAR
+		PUSH DS
+		XOR AX,AX
+		PUSH AX
+		MOV AX,myds
+		MOV DS,AX
+		PUSH sayi1
+		CALL DNUM
+		POP AX
+		CALL PRINTINT
+		RETF
+ANA		ENDP
+mycs	ENDS
+		END ANA

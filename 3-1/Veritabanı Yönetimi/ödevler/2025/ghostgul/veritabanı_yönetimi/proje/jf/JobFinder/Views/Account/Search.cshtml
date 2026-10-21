@@ -1,0 +1,64 @@
+﻿@model IEnumerable<JobFinder.Models.Job>
+
+@{
+	ViewData["Title"] = "Search";
+}
+
+<h1>Job Search</h1>
+<form asp-action="SearchText" asp-controller="Account" method="post">
+	<div class="row">
+		<div class="col-10">
+			<div class="form-group">
+				<input name="text" type="text" id="text" class="form-control"/>
+			</div>
+		</div>
+		<div class="col-2"><button type="submit" class="btn btn-primary">Search</button></div>
+	</div>
+</form>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.CompanyName)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Position)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Description)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.OpeningDate)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.ApplicationCount)
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.CompanyName)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Position)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Description)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.OpeningDate)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.ApplicationCount)
+				</td>
+				<td>
+					<a asp-action="JobDetail" asp-route-id="@item.JobId">Apply</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>

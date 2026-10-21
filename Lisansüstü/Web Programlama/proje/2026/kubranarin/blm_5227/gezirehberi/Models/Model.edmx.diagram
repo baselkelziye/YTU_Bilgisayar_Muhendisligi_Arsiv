@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87a11b5d3d994a2098134e4e925b8c8d" Name="Diagram1">
+        <EntityTypeShape EntityType="GeziRehberiModel.Blogs" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Categories" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Cities" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Comments" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Countries" Width="1.5" PointX="6.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Places" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Ratings" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Blogs_Places" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Blogs_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Cities_Countries" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Comments_Blogs" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Comments_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Places_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Places_Cities" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Ratings_Places" ManuallyRouted="false" />
+        <AssociationConnector Association="GeziRehberiModel.FK_Ratings_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="GeziRehberiModel.BlogPhotos" Width="1.5" PointX="9.375" PointY="0.75" />
+        <AssociationConnector Association="GeziRehberiModel.FK_BlogPhotos_Blogs" />
+        <EntityTypeShape EntityType="GeziRehberiModel.Users" Width="1.5" PointX="7.375" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

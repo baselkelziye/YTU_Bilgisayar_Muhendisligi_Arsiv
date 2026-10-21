@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-3/YPG/YPG_UYG_3/uyg3"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _initialize, symObjAddr: 0x0, symBinAddr: 0x1000036A4, symSize: 0x48 }
+  - { offsetInCU: 0xFC, offset: 0xFC, size: 0x8, addend: 0x0, symName: _initialize, symObjAddr: 0x0, symBinAddr: 0x1000036A4, symSize: 0x48 }
+  - { offsetInCU: 0x12E, offset: 0x12E, size: 0x8, addend: 0x0, symName: _isEmpty, symObjAddr: 0x48, symBinAddr: 0x1000036EC, symSize: 0x8C }
+  - { offsetInCU: 0x156, offset: 0x156, size: 0x8, addend: 0x0, symName: _isFull, symObjAddr: 0xD4, symBinAddr: 0x100003778, symSize: 0x58 }
+  - { offsetInCU: 0x17E, offset: 0x17E, size: 0x8, addend: 0x0, symName: _push, symObjAddr: 0x12C, symBinAddr: 0x1000037D0, symSize: 0xA8 }
+  - { offsetInCU: 0x1B1, offset: 0x1B1, size: 0x8, addend: 0x0, symName: _pop, symObjAddr: 0x1D4, symBinAddr: 0x100003878, symSize: 0x24 }
+  - { offsetInCU: 0x1D5, offset: 0x1D5, size: 0x8, addend: 0x0, symName: _printPatient, symObjAddr: 0x1F8, symBinAddr: 0x10000389C, symSize: 0x60 }
+  - { offsetInCU: 0x1FA, offset: 0x1FA, size: 0x8, addend: 0x0, symName: _printQueue, symObjAddr: 0x258, symBinAddr: 0x1000038FC, symSize: 0xBC }
+  - { offsetInCU: 0x22C, offset: 0x22C, size: 0x8, addend: 0x0, symName: _getPatientInfos, symObjAddr: 0x314, symBinAddr: 0x1000039B8, symSize: 0x184 }
+  - { offsetInCU: 0x25E, offset: 0x25E, size: 0x8, addend: 0x0, symName: _getLastId, symObjAddr: 0x498, symBinAddr: 0x100003B3C, symSize: 0xF4 }
+  - { offsetInCU: 0x2B0, offset: 0x2B0, size: 0x8, addend: 0x0, symName: _readPatients, symObjAddr: 0x58C, symBinAddr: 0x100003C30, symSize: 0xBC }
+  - { offsetInCU: 0x2F1, offset: 0x2F1, size: 0x8, addend: 0x0, symName: _addPatients, symObjAddr: 0x648, symBinAddr: 0x100003CEC, symSize: 0xDC }
+  - { offsetInCU: 0x35B, offset: 0x35B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x724, symBinAddr: 0x100003DC8, symSize: 0x4C }
+...

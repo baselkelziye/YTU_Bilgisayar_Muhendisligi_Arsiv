@@ -1,0 +1,22 @@
+<!-- -->
+<launch>
+	<param name="use_sim_time" value="true"/>	
+
+	<node name="gazebo" pkg="gazebo_ros" type="gzserver" args="$(find hector_nist_arena_worlds)/worlds/MAN3_v7.world" /> 
+
+  	<node name="gazebo_gui" pkg="gazebo_ros" type="gzclient"/>
+
+	<include file="$(find p3at_description)/launch/spawn_p3at.launch">
+		<arg name="robot_name" value="rtg"/>
+		<arg name="pose_args" value="-x 0 -y 0 -Y 1.57"/>
+	</include>
+
+	<node name="man3" pkg="odev2" type="man3_autonomy"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="world2odom" args="0 0 0 0 0 0 /world /rtg/odom 100"/>
+
+	<node name="gezinge" pkg="odev2" type="trajectory"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="world2trajectory" args="0 0 0 0 0 0 /world /trajectory 100"/>
+	
+</launch>

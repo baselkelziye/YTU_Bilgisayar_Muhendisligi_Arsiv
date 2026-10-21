@@ -1,0 +1,28 @@
+// Tooltip color  variations
+
+@mixin tooltip-variant($color) {
+	.tooltip-inner {
+		background:  $color;
+		color: $white;
+	}
+	&.bs-tooltip-top {
+    .arrow::before {
+      border-top-color: $color;
+    }
+  }
+  &.bs-tooltip-right {
+    .arrow::before {
+      border-right-color: $color;
+    }
+  }
+  &.bs-tooltip-bottom {
+    .arrow::before {
+      border-bottom-color: $color;
+    }
+  }
+  &.bs-tooltip-left {
+    .arrow::before {
+      border-left-color: $color;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Veri Yapıları
+** 1. Ders
+
+Not dağılımı: (2 vize + 2 ödev + Proje + 4 lab) = %60, final = %40
+
+Soru: Verilen bir n sayısı için 1'den n'e kadar olan asal sayıları bulan
+algoritmayı tasarlayın.
+
+C kodu: ([[https://github.com/haliluluoglu/YTU-CE/blob/C-Language/Veri%20Yap%C4%B1lar%C4%B1%20ve%20Algoritmalar%C4%B1/primeNumber.c][Halil İbrahim Uluoğlu]])
+#+begin_src C
+  #include <stdio.h>
+  #include <math.h>
+  #include <stdlib.h>
+
+  void main()
+  {
+    int number,i,j,number2;
+    int *array;
+
+    printf("Enter a number, please: ");
+    scanf("%d", &number);
+
+    array=(int *)malloc(sizeof(int)*(number+1));
+    for(i=1; i<=number; i+=2)
+      {
+        array[i]=0;
+      }
+    array[2]=0;
+    for(i=4; i<=number; i+=2)
+      {
+        array[i]=1;
+      }
+    number2=(int)sqrt(number);
+    printf("%d\n", number2);
+    for(i=3; i<=number2; i+=2)
+      {
+        if(array[i]==0)
+          {
+            printf("%d\n", i);
+            for(j=(i*i); i<=number; j+=i)
+              {
+                array[j]=1;
+
+              }
+          }
+      }
+    printf("1 and 2 is prime number.\n");
+    for(i=3; i<number; i+=2)
+      {
+        if(array[i]==0)
+          {
+            printf("%d is prime number.\n", i);
+          }
+      }
+  }
+#+end_src
+

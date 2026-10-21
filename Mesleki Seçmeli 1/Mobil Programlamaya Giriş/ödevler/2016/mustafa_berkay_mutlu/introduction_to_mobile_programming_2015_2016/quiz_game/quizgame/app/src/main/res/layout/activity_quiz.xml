@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_quizActivity_playerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizActivity_player"
+            android:textSize="20sp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/txtView_quizActivity_playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxEms="10"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_quizActivity_questionAndButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_quizActivity_playerName"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtView_quizActivity_questionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizActivity_question"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/txtView_quizActivity_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:maxLines="15"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_quizActivity_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_quizAcitivty_answerTrue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quizActivity_true"
+                android:onClick="btn_quizAcitivty_answerTrue_onClick"/>
+
+            <Button
+                android:id="@+id/btn_quizAcitivty_answerFalse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quizActivity_false"
+                android:onClick="btn_quizAcitivty_answerFalse_onClick"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_quizAcitivty_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizActivity_next"
+            android:onClick="btn_quizAcitivty_next_onClick"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quizActivity_question_single_letter"
+            android:textSize="24sp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/txtView_quizActivity_currentQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:maxEms="2"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/txtView_quizActivity_totalQuestionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:maxEms="2"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

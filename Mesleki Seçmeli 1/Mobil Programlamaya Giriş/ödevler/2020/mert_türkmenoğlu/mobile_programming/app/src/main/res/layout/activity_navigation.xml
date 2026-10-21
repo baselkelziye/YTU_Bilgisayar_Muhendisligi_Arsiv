@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/navigation_send_email_btn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/send_email"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/navigation_list_users"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_settings" />
+
+    <Button
+        android:id="@+id/navigation_list_users"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/list_users"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toEndOf="@id/navigation_send_email_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigation_notes" />
+
+    <Button
+        android:id="@+id/navigation_settings"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/settings"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/navigation_notes"
+        app:layout_constraintTop_toBottomOf="@id/navigation_send_email_btn"
+        app:layout_constraintBottom_toTopOf="@id/navigation_sensors"/>
+
+    <Button
+        android:id="@+id/navigation_notes"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/notes"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toEndOf="@id/navigation_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigation_list_users"
+        app:layout_constraintBottom_toTopOf="@id/navigation_alarm" />
+
+    <Button
+        android:id="@+id/navigation_sensors"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/sensors"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/navigation_alarm"
+        app:layout_constraintTop_toBottomOf="@id/navigation_settings"
+        app:layout_constraintBottom_toTopOf="@id/navigation_download" />
+
+    <Button
+        android:id="@+id/navigation_alarm"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/alarm"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@id/navigation_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/navigation_sensors"
+        app:layout_constraintTop_toBottomOf="@id/navigation_notes" />
+
+    <Button
+        android:id="@+id/navigation_download"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/download"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/navigation_location"
+        app:layout_constraintTop_toBottomOf="@id/navigation_sensors"
+        app:layout_constraintBottom_toTopOf="@id/navigation_monitor" />
+
+    <Button
+        android:id="@+id/navigation_location"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/location"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toEndOf="@id/navigation_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigation_alarm"
+        app:layout_constraintBottom_toTopOf="@id/navigation_monitor" />
+
+    <Button
+        android:id="@+id/navigation_monitor"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/monitor"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigation_download"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

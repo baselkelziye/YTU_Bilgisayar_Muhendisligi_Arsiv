@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Yeni Ürün Ekle</h2>
+<form method="POST" action="{{ url_for('create_product') }}" enctype="multipart/form-data">
+  <div class="mb-3">
+    <label for="name" class="form-label">Ürün Adı</label>
+    <input type="text" name="name" id="name" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Fiyat</label>
+    <input type="number" step="0.01" name="price" id="price" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="category_id" class="form-label">Kategori</label>
+    <select name="category_id" id="category_id" class="form-select" required>
+      {% for cat in categories %}
+      <option value="{{ cat.category_id }}">{{ cat.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="image" class="form-label">Ürün Fotoğrafı</label>
+    <input type="file" name="image" id="image" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Kaydet</button>
+  <a href="{{ url_for('list_products') }}" class="btn btn-secondary">Vazgeç</a>
+</form>
+{% endblock %}

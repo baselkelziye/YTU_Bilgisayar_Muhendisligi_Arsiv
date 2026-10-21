@@ -1,0 +1,41 @@
+{
+  "jsonPath": "database/reviews.json",
+  "table": [
+    {
+      "ID": 198115,
+      "studentID": 19052025,
+      "bicycleID": 1000,
+      "bicycleRating": 4,
+      "drivingRating": 5,
+      "overallRating": 4,
+      "date": "May 13, 2024, 10:30:00 PM"
+    },
+    {
+      "ID": 54450,
+      "studentID": 19052025,
+      "bicycleID": 2000,
+      "bicycleRating": 9,
+      "drivingRating": 9,
+      "overallRating": 9,
+      "date": "May 5, 2024, 10:30:00 PM"
+    },
+    {
+      "ID": 7896432,
+      "studentID": 19052025,
+      "bicycleID": 352,
+      "bicycleRating": 2,
+      "drivingRating": 6,
+      "overallRating": 5,
+      "date": "May 8, 2024, 10:30:00 PM"
+    },
+    {
+      "ID": 7896432,
+      "studentID": 20052092,
+      "bicycleID": 352,
+      "bicycleRating": 5,
+      "drivingRating": 9,
+      "overallRating": 8,
+      "date": "May 9, 2024, 10:30:00 PM"
+    }
+  ]
+}

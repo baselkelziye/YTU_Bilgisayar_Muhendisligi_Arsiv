@@ -1,0 +1,20 @@
+< THE SYMBOL TABLE >  noname.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+MYDATA                   	00000     	-5        	SEGMENT   	(ITSELF)  
+KENAR1                   	00000     	2         	VAR       	mydata    
+KENAR2                   	00002     	2         	VAR       	mydata    
+KENAR3                   	00004     	2         	VAR       	mydata    
+SONUC                    	00006     	2         	VAR       	mydata    
+MYSTACK                  	00001     	-5        	SEGMENT   	(ITSELF)  
+MYCODE                   	00004     	-5        	SEGMENT   	(ITSELF)  
+MAIN                     	00000     	-1        	FAR       	mycode    
+FALSE1                   	00024     	-1        	LABEL     	mycode    
+CESITKENAR               	0002A     	-1        	LABEL     	mycode    
+IKIZKENAR                	00032     	-1        	LABEL     	mycode    
+BITIS                    	00038     	-1        	LABEL     	mycode    
+===================================================================================================
+[ 15/11/2022  --  14:37:43 ] 
+< END >
+ 

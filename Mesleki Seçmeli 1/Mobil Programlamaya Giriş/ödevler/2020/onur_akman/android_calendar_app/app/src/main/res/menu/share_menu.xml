@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sharemenu">
+    <item
+        android:id="@+id/email"
+        android:title="E-Mail" />
+    <item
+        android:id="@+id/whatsapp"
+        android:title="WhatsApp" />
+    <item
+        android:id="@+id/twitter"
+        android:title="Twitter" />
+
+</menu>

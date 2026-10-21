@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+
+    <GridLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:columnCount="2"
+        android:foregroundGravity="center"
+
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+         android:layout_marginStart="19dp"
+
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+android:onClick="goToAddQuestion"
+                android:src="@drawable/addquestion" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:onClick="goToListQuestions"
+                android:src="@drawable/listquestions" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/createexam"
+                android:onClick="goToCreateExam"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/customizeexam"
+                android:onClick="goToCustomizeExam"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+
+            android:layout_marginStart="19dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/profile"
+                android:onClick="goToProfile"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_gravity="start"
+            android:layout_marginStart="20dp"
+android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:src="@drawable/exit"
+                android:onClick="exit"/>
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

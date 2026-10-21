@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3D 8-Ball</title>
+    <script
+      type="text/javascript"
+      src="../others/google/webgl-utils.js"></script>
+
+    <script
+      type="text/javascript"
+      src="../others/angel_and_shreiner/MV.js"></script>
+    <script type="text/javascript" src="Camera.js"></script>
+    <script type="text/javascript" src="Mouse.js"></script>
+    <script type="text/javascript" src="Keyboard.js"></script>
+    <script type="text/javascript" src="Vertices.js"></script>
+    <script type="text/javascript" src="Script.js"></script>
+    <script type="text/javascript" src="PointsAndColors.js"></script>
+    <script type="text/javascript" src="Transform.js"></script>
+    <script type="text/javascript" src="GameObjects.js"></script>
+    <script type="text/javascript" src="Hierarchy.js"></script>
+  </head>
+
+  <body bgcolor="lightgray">
+    <table>
+      <tr>
+        <td>
+          <canvas id="canvas1" width="524" height="524">
+            This browser does not support canvas element!
+          </canvas>
+          <br />
+          "2", "4", "6", "8" keys to power up in directions, "s" to shoot!
+        </td>
+        <td valign="top">
+          Camera:
+          <div id="cam-props"></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

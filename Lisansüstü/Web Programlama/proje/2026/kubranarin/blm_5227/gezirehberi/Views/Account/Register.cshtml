@@ -1,0 +1,293 @@
+﻿@model GeziRehberi.Models.Users
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kayıt Ol";
+}
+
+<!-- login-area-start -->
+<div class="tg-login-area pt-130 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10">
+                <div class="tg-login-wrapper">
+                    <div class="tg-login-top text-center mb-30">
+                        <h2>Kayıt Ol!</h2>
+                        <p>Kayıt Ol ve Dünyayı Keşfet!</p>
+                    </div>
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["SuccessMessage"]
+                        </div>
+                    }
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="tg-login-form">
+                        <div class="tg-tour-about-review-form">
+                            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @id = "registerForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="row">
+                                    <div class="col-lg-12 mb-25">
+                                        @Html.TextBoxFor(m => m.Username, new { @class = "input", placeholder = "Kullanıcı Adı" })
+                                        @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-lg-12 mb-25">
+                                        @Html.TextBoxFor(m => m.Name, new { @class = "input", placeholder = "Ad", id = "Name" })
+                                        @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-lg-12 mb-25">
+                                        @Html.TextBoxFor(m => m.Surname, new { @class = "input", placeholder = "Soyad", id = "Surname" })
+                                        @Html.ValidationMessageFor(m => m.Surname, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-lg-12 mb-25">
+                                        @Html.TextBoxFor(m => m.Email, new { @class = "input", type = "email", placeholder = "E-Mail Adresi" })
+                                        <span class="validation-tooltip" id="emailTooltip" style="display: none;">Email formatında giriş yapınız</span>
+                                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-lg-12 mb-25 password-field-wrapper">
+                                        @Html.PasswordFor(m => m.Password, new { @class = "input", placeholder = "Şifre", @id = "Password" })
+                                        <span class="password-toggle-icon" id="passwordToggle" title="Show/Hide Password">
+                                            <span id="eyeIcon">👁️</span>
+                                        </span>
+                                        <span class="validation-tooltip" id="passwordTooltip" style="display: none;">Maksimum 8 karakter girebilirsiniz</span>
+                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                    </div>
+
+
+
+                                    <div class="col-lg-12">
+                                        <div class="d-flex align-items-center justify-content-between">
+
+                                            <div class="tg-login-navigate mb-25">
+                                                <a href="@Url.Action("Login", "Account")">Giriş</a>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="tg-btn w-100" id="submitBtn">Kayıt Ol</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .password-field-wrapper {
+        position: relative;
+    }
+
+    .password-toggle-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        user-select: none;
+        font-size: 18px;
+        z-index: 10;
+        padding: 5px;
+    }
+
+        .password-toggle-icon:hover {
+            opacity: 0.7;
+        }
+
+    #Password {
+        padding-right: 50px;
+    }
+</style>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">
+
+    (function () {
+
+        function initPasswordToggle() {
+            var passwordField = document.getElementById('Password');
+            var passwordToggle = document.getElementById('passwordToggle');
+            var eyeIcon = document.getElementById('eyeIcon');
+
+            if (passwordField && passwordToggle && eyeIcon) {
+                passwordToggle.onclick = function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (passwordField.type === 'password') {
+                        passwordField.type = 'text';
+                        eyeIcon.textContent = '🙈';
+                        passwordToggle.setAttribute('title', 'Hide Password');
+                    } else {
+                        passwordField.type = 'password';
+                        eyeIcon.textContent = '👁️';
+                        passwordToggle.setAttribute('title', 'Show Password');
+                    }
+                    return false;
+                };
+            }
+        }
+
+
+        function validateEmail(email) {
+            var emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function validatePassword(password) {
+            return password.length <= 8;
+        }
+        function onlyLetters(input, options = {}) {
+            input.addEventListener("input", function () {
+                // Harf dışını temizle
+                let v = this.value.replace(/[^A-Za-zğüşöçıİĞÜŞÖÇ\s]/g, "");
+
+                // Baş harf büyük (isteğe bağlı)
+                if (options.capitalizeFirst) {
+                    v = v.replace(/\b\w/g, c => c.toUpperCase());
+                }
+
+                // Maksimum uzunluk (isteğe bağlı)
+                if (options.max && v.length > options.max) {
+                    v = v.substring(0, options.max);
+                }
+
+                this.value = v;
+            });
+        }
+
+        // Email validation
+        function initEmailValidation() {
+            var emailField = document.getElementById('Email');
+            var emailTooltip = document.getElementById('emailTooltip');
+
+            if (emailField && emailTooltip) {
+                emailField.addEventListener('blur', function () {
+                    var email = emailField.value.trim();
+                    if (email && !validateEmail(email)) {
+                        emailTooltip.style.display = 'block';
+                        emailField.classList.add('error-border');
+                    } else {
+                        emailTooltip.style.display = 'none';
+                        emailField.classList.remove('error-border');
+                    }
+                });
+
+                emailField.addEventListener('input', function () {
+                    var email = emailField.value.trim();
+                    if (email && !validateEmail(email)) {
+                        emailTooltip.style.display = 'block';
+                        emailField.classList.add('error-border');
+                    } else {
+                        emailTooltip.style.display = 'none';
+                        emailField.classList.remove('error-border');
+                    }
+                });
+            }
+        }
+
+        function initPasswordValidation() {
+            var passwordField = document.getElementById('Password');
+            var passwordTooltip = document.getElementById('passwordTooltip');
+
+            if (passwordField && passwordTooltip) {
+                passwordField.addEventListener('input', function () {
+                    var password = passwordField.value;
+                    // Maksimum 8 karakter kontrolü
+                    if (password.length > 8) {
+                        passwordField.value = password.substring(0, 8);
+                        passwordTooltip.style.display = 'block';
+                        passwordField.classList.add('error-border');
+                        setTimeout(function () {
+                            passwordTooltip.style.display = 'none';
+                            passwordField.classList.remove('error-border');
+                        }, 2000);
+                    } else if (password.length > 0 && password.length <= 8) {
+                        passwordTooltip.style.display = 'none';
+                        passwordField.classList.remove('error-border');
+                    }
+                });
+
+                passwordField.addEventListener('blur', function () {
+                    var password = passwordField.value;
+                    if (password.length > 8) {
+                        passwordField.value = password.substring(0, 8);
+                        passwordTooltip.style.display = 'block';
+                        passwordField.classList.add('error-border');
+                    } else {
+                        passwordTooltip.style.display = 'none';
+                        passwordField.classList.remove('error-border');
+                    }
+                });
+            }
+        }
+
+        // Form submit kontrolü
+        function initFormValidation() {
+            var form = document.getElementById('registerForm');
+            if (form) {
+                form.addEventListener('submit', function (e) {
+                    var emailField = document.getElementById('Email');
+                    var passwordField = document.getElementById('Password');
+                    var isValid = true;
+
+                    // Email kontrolü
+                    if (emailField && emailField.value.trim() && !validateEmail(emailField.value.trim())) {
+                        isValid = false;
+                        var emailTooltip = document.getElementById('emailTooltip');
+                        if (emailTooltip) emailTooltip.style.display = 'block';
+                        if (emailField) emailField.classList.add('error-border');
+                    }
+
+                    // Password kontrolü (Maksimum 8 karakter)
+                    if (passwordField && passwordField.value && passwordField.value.length > 8) {
+                        isValid = false;
+                        var passwordTooltip = document.getElementById('passwordTooltip');
+                        if (passwordTooltip) passwordTooltip.style.display = 'block';
+                        if (passwordField) passwordField.classList.add('error-border');
+                    }
+
+                    if (!isValid) {
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            }
+        }
+
+        // DOM yüklendikten sonra çalıştır
+        function init() {
+            initPasswordToggle();
+            initEmailValidation();
+            initPasswordValidation();
+            initFormValidation();
+            onlyLetters(document.getElementById("Name"), {
+                capitalizeFirst: true,
+                max: 40
+            });
+            onlyLetters(document.getElementById("Surname"), {
+                capitalizeFirst: true,
+                max: 40
+            });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+</script>
+
+

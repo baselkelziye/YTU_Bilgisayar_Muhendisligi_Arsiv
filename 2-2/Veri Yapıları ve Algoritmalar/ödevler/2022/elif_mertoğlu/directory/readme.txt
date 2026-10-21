@@ -1,0 +1,1 @@
+This code basically implements an operating system's directory operations using terminal like creating or deleting folders, passing to an upper folder, listing files in a folder etc. Uses linked lists.

@@ -1,0 +1,299 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Alt Seviye Programlama
+** Ders Bilgisi
+*** Dersin İçeriği
+
+Intel 80x86 Ailesi İşlemci Mimarisi; Yazmaçlar ve Görevleri; Bayraklar; Komutlar (Mnemonic);
+Adresleme Kipleri; Sözde (Pseudo) Komutlar; EXE ve COM Tipi Programlar;
+Yordam ve Yordam Çağırma, Makrolar, Kesim Birleştirme; Yordamlara Parametre Aktarımı;
+Kesmeler; Yüksek Seviyeli Diller ile Bağlantılar.
+
+*** Haftalık Konular ve İlgili Ön Hazırlık Çalışmaları
+
+| Hafta | Konular                                                                                                                                |
+|-------+----------------------------------------------------------------------------------------------------------------------------------------|
+| <c>   | <l>                                                                                                                                    |
+| 1     | Alt seviye dilinin özellikleri, sayı ve kodlama sistemleri, 80x86 ailesi işlemcileri, yazmaçları ve bayrakları ile kesim organizasyonu |
+| 2     | Komutlar (veri aktarımı, aritmetik ve dallanma)                                                                                        |
+| 3     | Komutlar (çevrim, bayraklar, mantıksal, öteleme, döndürme)                                                                             |
+| 4     | Komutlar (katar işlemleri, ön ekler)                                                                                                   |
+| 5     | Adresleme modları, alt seviye programlama araçları, sözde komutlar                                                                     |
+| 6     | Çalışma ortamının hazırlanması ve debug kullanımı                                                                                      |
+| 7     | EXE tipinde alt seviye programlama                                                                                                     |
+| 8     | COM tipinde alt seviye programlama                                                                                                     |
+| 9     | Ara Sınav 1                                                                                                                            |
+| 10    | Yordam ve macro kullanımları                                                                                                           |
+| 11    | Alt-programlar ve parametre aktarma yöntemleri                                                                                         |
+| 12    | Ortak kesim kullanımı ve EXTRN/PUBLIC tanımlamaları                                                                                    |
+| 13    | Ara Sınav 2                                                                                                                            |
+| 14    | Kesme, vectör tablosu ve alt seviye programlama dilinin yüksek seviyeli diller ile birlikte kullanılması                               |
+| 15    | Final                                                                                                                                  |
+
+** Sayı Sistemleri
+*** İki sayı düzeninde çıkarma
+
+Onluk tabandaki gibi borç usulü yapılabilir veya çıkartılacak sayının 2'ye tümleyeni alınır, sayılar toplanır.
+
+ 01000011 (67)
+\plus11101011 (-21)
+=100101110 (46) (byte'ın en anlamlı biti 0 o.g sayı pozitif. En soldaki 1'i sallamıyoruz.)
+
+ 00010101 (21)
+\plus01000011 (-67)
+=11010010 (-46) (byte'ın en anlamlı biti 1 o.g sayı negatif. Sonucu bulmak için bir kere daha two's complement almalıyız.)
+
+*** Octal ve Hexadecimal sayı düzeni
+
+Octaldaki her basamak binaryde 3 bite, hexadecimaldeki her basamak binaryde 4 bite(1 nibble) karşılık geliyor.
+1111b = Fh,  1010b = Ah
+53FC8h = 0101 0011 1111 1100 1000b
+
+** Registerlar
+
+(16 bit - 2 byte - 1 word)
+
+| AX | AH + AL | Accumulator Register | I/O işlemlerinde, aritmetik işlemlerde ve stringlerde kullanılır. Bazı komutlarda gizli operand durumundadır. Bazı durumlarda daha hızlı çalışır. |
+| BX | BH + BL | Base Register        | Aritmetik işlemlerde ve dizilerde(index olarak) kullanılır. dizi[BX,SI,DI(sadece bunlar gelebilir)]                                               |
+| CX | CH + CL | Count Register       | Döngülerde, shift işlemlerinde kullanılır.                                                                                                        |
+| DX | DH + DL | Data Register        | I/O işlemlerinde, çarpma ve bölme işlemlerinde(çarpmada DX:AX, bölmede DX kalan AX bölüm) kullanılır.                                             |
+| SP | -       | Stack Pointer        | Stackte işlem yapılacak alanı gösterir. Push ve pop ile değeri 2 artar veya azalır.                                                               |
+| BP | -       | Base Pointer         | Stackte istediğimiz veriye ulaşmayı, okumayı ve kopyalamayı sağlar, stacki bozmaz.                                                                |
+| IP | -       | Instruction Pointer  | İşlemcinin o anda çalıştıracağı komutun kod kesimi içindeki yerini belirtir.                                                                      |
+| SI | -       | Source Index         | Göreli konumu göstermek için kullanılır.                                                                                                          |
+| DI | -       | Destination Index    | SI gibi kullanılabiliyor, ayrıca ek kesim içindeki veriye erişmek için de kullanılır. Sanırım şöyle: SI = *p + 5 deki "*p" DI ise "+ 5"           |
+
+** Bayraklar(Flags)
+
+Set = 1
+Clear/Reset = 0
+
+| CF | Carry Flag          | Elde/ödünç durumlarında 1 olur.                                                                                                                                                                                                  |
+| PF | Parity Flag         | İşlem sonucunda 1lerin sayısı çift ise(buna even parity deniyor) 1 olur. Odd parity durumunda 0 olur.                                                                                                                            |
+| ZF | Zero Flag           | İşlem sonucu 0 ise ZF 1 olur.                                                                                                                                                                                                    |
+| SF | Sign Flag           | İşlem sonucunda sayının en anlamlı biti 1 ise SF 1 olur.                                                                                                                                                                         |
+| TF | Trap Flag           | Adım bayrağı. TF = 1 ise her komuttan sonra bir kesme üretilir, böylece programı takip edebiliriz.                                                                                                                               |
+| IF | Interrupt Flag      | Kesmeye izin verilip verilmeyeceğini belirtir.                                                                                                                                                                                   |
+| DF | Direction Flag      | String işlemlerinde işlemin yüksek adresli bellekten düşük adresli belleğe doğru yürütülebilmesi için DF 1 olmalıdır. Aksi halde işlem düşükten adresten yükseğe ilerler.                                                        |
+| OF | Overflow Flag       | Aritmetik taşma(işaretli sayılarla yapılan işlemlerde işaretli sonucun tanımlı alana sığmaması) olması halinde OF 1 olur.                                                                                                        |
+| AF | Auxilary Carry Flag | 8'li işlemlerde düşük anlamlı 4'lüden yüksek anlamlı 4'lüye elde/ödünç, 16'lı işlemlerde düşük anlamlı 8'liden yüksek anlamlı 8'liye elde ödünç aktarılması durumunu kullanıcıya belirtmek üzere AF bayrağının değeri 1 yapılır. |
+** Gerçek Kipte Fiziksel Adres Hesabı
+
+Fiziksel Adres = 16x Kesim Yazmaç Değeri(CS - SS - DS, ES) + İşaret Yazmaç Değeri(IP - SP, BP - SI, DI, BX)(Göreli konum)
+
+Örnek: CS <-- 2C58h ve IP <-- 0013h olursa CS:IP ikilisi hangi fiziksel adresi belirler?
+2C58h x16 = 2C580h (16 ile çarpmak = 4 bit(hexadecimalde 1 basamak) sola shift)
+2C580h + 0013h = 2C593h (Toplama sonucunda 20 bitlik değer elde edilir.)
+
+** Komutlar
+*** Veri Aktarım Komutları
+
+| Komutlar                               | Kullanımı                                    | Ek bilgi                                                                                                                                                                                  |
+|----------------------------------------+----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *MOV* /move data/                      | MOV destination, source                      | Bayraklarda değişiklik yapmaz                                                                                                                                                             |
+| *LEA* /load effective address/         | LEA SI, sayiA                                | SI sayiA'nın adresini alır.                                                                                                                                                               |
+| *LDS* /load data segment register/     | LDS SI, 1000H                                | İşlem sonucunda SI 1001H(high) ve 1000H(low) adreslerindeki değeri alır. İşlemin arka planında da DS bir sonraki adresteki değeri alır (yine high + low).                                 |
+| *LES* /load extra segment register/    | LES DI, 1000H                                | Üsttekinin aynısı, SI yerine DI, DS yerine ES.                                                                                                                                            |
+| *XCHG* /exchange/                      | XCHG AX, sayiB                               | İki değişken arası swap yapmaz. Bir tanesi illaki register olacak. =XCHG AX, BX=, =XCHG BX, AX='ten daha hızlı ve daha az yer kaplıyor.                                                   |
+
+*** Aritmetik Komutlar
+
+| Komutlar                               | Kullanımı                                    | Ek bilgi                                                                                                                                                                                                                                                                                                                                                                                            |
+|----------------------------------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *ADD* /addition/                       | ADD sayi, 5                                  | --> sayi = sayi + 5. MOV AL,255; ADD AL,5 işlemleri sonrası carry flag 1 olur.                                                                                                                                                                                                                                                                                                                      |
+| *ADC* /add with carry/                 | MOV AH, 0; MOV AL, 255; ADD AL, 5; ADC AH, 0 | --> AH = 0, AL = 255, AL += 5 (CF = 1 oldu), ADC AH,0 (AH = CF = 1 oldu) --> *AX = 0104H* (işlem sonunda CF tekrar 0 olur)                                                                                                                                                                                                                                                                          |
+| *SUB* /subtraction/                    | SUB sayi, 5                                  | sayi = sayi - 5                                                                                                                                                                                                                                                                                                                                                                                     |
+| *SBB* /subtraction with borrow/        | SBB sayi, 5                                  | sayi = sayi - 5 - CF                                                                                                                                                                                                                                                                                                                                                                                |
+| *INC* /increment/                      | INC AX                                       | AX++. =INC AX; INC AX=, =ADD AX, 2='den daha az yer kaplıyor.                                                                                                                                                                                                                                                                                                                                       |
+| *DEC* /decrement/                      | DEC sayi                                     | sayi- -.                                                                                                                                                                                                                                                                                                                                                                                            |
+| *NEG* /negate / two's complement/      | NEG BX                                       | BX'in 2'ye tümleyenini alır. (C'de: =sayi = ~sayi + 1=)                                                                                                                                                                                                                                                                                                                                             |
+| *MUL* /unsigned multiplication/        | MUL CL; 8 bit                                | AX \leftarrow AL * CL                                                                                                                                                                                                                                                                                                                                                                               |
+|                                        | MUL BX; 16 bit                               | DX:AX \leftarrow AX * BX                                                                                                                                                                                                                                                                                                                                                                            |
+| *IMUL* /integer signed multiplication/ | IMUL CL, sayi                                | MUL gibi tek operandlı veya opr1 \leftarrow opr2 * opr3 olacak şekilde üç operandlı da kullalılabiliyor.                                                                                                                                                                                                                                                                                            |
+| *DIV* /unsigned divide/                | DIV BH                                       | AX / BH işlemi yapılır. AL \leftarrow bölüm, AH \leftarrow kalan olur.                                                                                                                                                                                                                                                                                                                              |
+|                                        | DIV sayiWord                                 | DX:AX şeklinde tutulan 32 bit sayı /sayiWord/'e bölünür. AX \leftarrow bölüm, DX \leftarrow kalan olur.                                                                                                                                                                                                                                                                                             |
+| *IDIV* /integer signed division/       | IDIV CH                                      | DIV'in işaretli olanı.                                                                                                                                                                                                                                                                                                                                                                              |
+| *CMP* /compare/                        | CMP AX, BX                                   | AX - BX işlemi yapılır. Operandların değerini etkilemez. [[CMP][Karşılaştırmanın sonucu bayraklardaki değerlere göre belirlenir]]. CMP komutundan hemen sonra bir dallanma komutu kullanılmalıdır. Çok nadir durumlarda CMP ile dallanma komutu arasına başka komutlar girebilir fakat bu komutların bayrakların değerini değiştirmeyen türden (örneğin veri aktarım komutları) olmasına dikkat edilmelidir. |
+
+
+
+<<CMP>>CMP kontrol tablosu:
+
+| Condition | Signed Comparison       | Unsigned Comparison  |
+|-----------+-------------------------+----------------------|
+| a > b     | ZF = 0 \wedge SF = OF   | CF = 0 \wedge ZF = 0 |
+| a \ge b   | SF = OF                 | CF = 0               |
+| a = b     | ZF = 1                  | ZF = 1               |
+| a \le b   | ZF = 1 \wedge SF \ne OF | CF = 1 \vee ZF = 1   |
+| a < b     | SF \ne OF               | CF = 1               |
+
+*** Dallanma Komutları
+
+IP yazmacının değeri bu komutların çalışması ile değişir.
+
+**** Koşullu Dallanma Komutları
+
+Koşullu dallanma komutlarında atlama aralığı 8 bit ile sınırlıdır. 128 byte geri veya 127 byte ileri gidebilir.
+
+***** Basit Koşullu Dallanma Komutları
+
+| Komut                                            | Koşul                                                                      | Flag karşılığı |
+|--------------------------------------------------+----------------------------------------------------------------------------+----------------|
+| *JZ* / *JE* /jump zero / jump equal/             | CMP işleminin sonucunda eşitlik çıkması                                    | ZF = 1         |
+| *JNZ* / *JNE* /jump not zero / jump not equal/   | CMP işleminin sonucunda eşitlik çıkmaması                                  | ZF = 0         |
+| *JS* /jump if sign/                              | CMP işleminin sonucunda elde edilen değer negatif ise                      | SF = 1         |
+| *JNS* /jump no sign/                             | CMP işleminin sonucunda elde edilen değer pozitif ise                      | SF = 0         |
+| *JO* /jump if overflow/                          | CMP işleminin sonucunda aritmetik bir taşma var ise                        | OF = 1         |
+| *JNO* /jump no overflow/                         | Taşma yoksa                                                                | OF = 0         |
+| *JP* / *JPE* /jump on parity / jump parity even/ | CMP işleminin sonucunda even parity(1 sayısının çift sayıda olması) olması | PF = 1         |
+| *JNP* / *JPO* /jump no parity / jump parity odd/ | Odd parity oluşması                                                        | PF = 0         |
+
+***** İşaretsiz Sayı İşlemlerine Ait Koşullu Dallanma Komutları
+
+| Komut                                                                      | Koşul                                     | Flag karşılığı       |
+|----------------------------------------------------------------------------+-------------------------------------------+----------------------|
+| *JB* / *JNAE* / *JC* /jump below / jump not above equal / jump carry/      | opr1 opr2'nin altında ise (= opr1 < opr2) | CF = 1               |
+| *JA* / *JNBE* /jump above / jump not below equal/                          | opr1 opr2'nin üstünde ise (= opr1 > opr2) | CF = 0 \wedge ZF = 0 |
+| *JAE* / *JNB* / *JNC* /jump above equal / jump not below / jump not carry/ | opr1 \ge opr2                             | CF = 0               |
+| *JBE* / *JNA* /jump below equal / jump not above/                          | opr1 \le opr2                             | CF = 1 \vee ZF = 1   |
+
+***** İşaretli Sayı İşlemlerine Ait Koşullu Dallanma Komutları
+
+| Komut                                                  | Koşul         | Flag karşılığı                 |
+|--------------------------------------------------------+---------------+--------------------------------|
+| *JL* / *JNGE* /jump less / jump not greater and equal/ | opr1 < opr2   | SF \oplus OF = 1 \wedge ZF = 0 |
+| *JNL* / *JGE* /jump not less / jump greater and equal/ | opr1 \ge opr2 | SF \oplus OF = 0               |
+| *JLE* / *JNG* /jump less equal / jump not greater/     | opr1 \le opr2 | SF \oplus OF = 1 \wedge ZF = 1 |
+| *JG* / *JNLE* /jump greater / jump not less equal/     | opr1 > opr2   | SF \oplus OF = 0 \wedge ZF = 0 |
+
+**** Koşulsuz Dallanma Komutları
+
+| Komut                    | Kullanım Şekli                | Ek Bilgi                |
+|--------------------------+-------------------------------+-------------------------|
+| *JMP* /near jump/        | JMP /label/                   | Kesim içi dallanma      |
+| *JMP FAR PTR* /far jump/ | JMP FAR PTR /label/ / /adres/ | Kesimler arası dallanma |
+
+*** Öteleme ve Döndürme Komutları
+
+Eklenecek.
+
+*** Mantıksal Komutlar
+
+Eklenecek.
+
+*** Stack Komutları
+
+Eklenecek.
+
+** Bazı kod bloklarının assemblydeki eşdeğerleri
+*** If bloğu
+
+C dilinde:
+#+BEGIN_SRC C
+  if (AX == 0) {
+      BX = 2;
+  }
+  else{
+      BX = 1;
+  }
+  CX = 5;
+#+END_SRC
+
+Assembly dilinde:
+#+BEGIN_SRC asm
+		  CMP AX,0
+		  JZ thenblock
+		  MOV BX,1	
+		  JMP nextblock	
+  thenblock:	MOV BX,2
+  nextblock:	MOV CX,5
+#+END_SRC
+*** For bloğu
+
+C dilinde:
+#+BEGIN_SRC C
+  AX = 0;
+  for (i = 1; i <= 10; ++i) {
+      AX += i;
+  }
+#+END_SRC
+
+Assembly dilinde:
+#+BEGIN_SRC asm
+	  XOR AX, AX
+          MOV CX, 10 //LOOP komutu otomatik olarak //
+L1:	  ADD AX, CX //CX'in değerini 1 azaltır    //
+	  LOOP L1
+#+END_SRC
+
+İkişer azaltma örneği:
+#+BEGIN_SRC asm
+	  XOR AX, AX
+	  MOV CX, 10   // LOOP yerine CMP ve JMP
+L1:	  ADD AX, CX   // kullanarak veya
+	  DEC CX       // CX ve JCXZ kullanarak 
+	  LOOP L1      // da yapılabilir.
+#+END_SRC
+
+*** While bloğu
+
+C dilinde:
+#+BEGIN_SRC C
+  AX = 0;
+  i = 1;
+
+  while (i <= 10 ) {
+      AX += i;
+      i += 2;
+  }
+#+END_SRC
+
+Assembly dilinde:
+#+BEGIN_SRC asm
+	  XOR AX, AX
+	  MOV SI, 1
+  L1:	CMP SI, 10     ////////////////////////////////////////////
+	  JA next      // do while bloğu için once işlem         //
+	  ADD AX, SI   // en son(next'ten once) CMP yapılabilir. //
+	  ADD SI, 2    ////////////////////////////////////////////
+	  JMP L1
+  next:	
+#+END_SRC
+
+*** İç içe for
+
+Bubble sort üzerinden örnek:
+
+C dilinde:
+#+BEGIN_SRC C
+  for (i = 0; i <= 3; ++i) {
+      for (j = i + 1; j <= 4; ++j) {
+	  if (dizi[i] < dizi[j]) {
+	      swap(&dizi[i], &dizi[j]);
+	  }
+      }
+  }
+#+END_SRC
+
+Assembly dilinde:
+#+BEGIN_SRC asm
+	  MOV CX, 4
+	  MOV SI, 0
+  L2:	PUSH CX      // dıştaki for'un CX'ini stacke atıyoruz
+	  MOV DI, SI   // push komutu registerın orjinal değerini değiştirmez.
+  L1:	INC DI
+	  MOV AX, dizi[SI]
+	  CMP AX, dizi[DI]
+	  JGE NEXT
+	  XCHG AX, dizi[DI]
+	  MOV dizi[SI], AX
+  next:	LOOP L1
+	  POP CX   // CX = Stack'teki en üstte bulunan değer (yani 3.
+	  INC SI   // satırda attığımız CX değeri)
+	  LOOP L2
+#+END_SRC
+
+*** 

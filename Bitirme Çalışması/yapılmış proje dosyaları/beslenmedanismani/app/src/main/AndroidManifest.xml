@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.com.berkaytutal.beslenmedanismani">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".Utils.GlobalVariables"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Utils.BaseDrawerActivity"
+            android:label="@string/title_activity_base_drawer"
+
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomepageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllListingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgramSearchFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrainerDetailPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgramDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BodyRates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgramOverviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProgramsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgramPlayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProgramCommentsActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".Utils.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Utils.AlertDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity android:name=".AddMoneyActivity"></activity>
+    </application>
+
+</manifest>

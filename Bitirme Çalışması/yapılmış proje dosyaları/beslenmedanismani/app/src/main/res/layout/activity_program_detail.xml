@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/programIsBanned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRedDark"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="This program is banned. Click here for details."
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tr.com.berkaytutal.beslenmedanismani.ProgramDetailActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/layoutPadding">
+
+            <ImageView
+                android:id="@+id/programDetailImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+
+            <LinearLayout
+                android:id="@+id/programDetailCommentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_star" />
+
+                <TextView
+                    android:id="@+id/programDetailRatingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="4.7/5" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/comment" />
+
+                <TextView
+                    android:id="@+id/programDetailCommentCountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="15" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_horiz" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/programBuyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@color/colorGreen"
+                android:drawableLeft="@drawable/shopping_cart"
+                android:padding="10dp"
+                android:text="@string/buythisprogram"
+                android:textColor="#fff"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/boughtProgramLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/programDetailDelete"
+                    android:layout_width="44dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/colorRedDark"
+                    android:drawableLeft="@drawable/delete"
+                    android:padding="10dp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/programDetailDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/accent"
+                    android:drawableLeft="@drawable/download"
+                    android:padding="10dp"
+                    android:text="@string/indir"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/programDetailStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:drawableLeft="@drawable/play"
+                    android:padding="10dp"
+                    android:text="@string/baslat"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/programDetailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Göt Eritme"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/programDetailCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="çok zor" />
+
+            <TextView
+                android:id="@+id/programDetailHardness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="çok zor" />
+            <TextView
+                style="@style/menuHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Program Description" />
+            <TextView
+                android:id="@+id/programDetailDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="çok zor ama göt eritmek isteyenlerin bir numaralı programı olarak bunu belirledik. Eğer siz de göt eritmek istiyorsanız kesinlikle buraya gelmelisiniz. En harika program bu. Götünüzü erittikten sonra plaj plaj rahatça gezebileceksiniz"
+                 />
+
+            <TextView
+                style="@style/menuHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/aboutTrainer" />
+
+            <LinearLayout
+                android:id="@+id/programDetailTrainerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/programDetailTrainerImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#ccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/programDetailTrainerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trainer Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/trainerBannedTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorRedDark"
+                        android:padding="2dp"
+                        android:text="Banned"
+                        android:textColor="#fff"
+                        android:textSize="11dp"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/programDetailTrainerMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:text="See More" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameRegisterScreen"
+        android:hint="@string/name"
+        android:ems="10"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/surnameRegisterScreen"
+        android:hint="@string/surname"
+        android:ems="10"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/emailAddressRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/passwordRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <EditText
+        android:id="@+id/passwordAgainRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/passwordAgain"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/birthdayEditTextRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/birthday"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:editable="false"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/registerMaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/male"
+            android:drawableLeft="@drawable/male"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:textColor="#fff"
+            />
+
+        <RadioButton
+            android:id="@+id/registerFemaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/female"
+            android:drawableLeft="@drawable/female"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerButtonRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDarker"
+        android:text="@string/createnewAccount"
+        android:textColor="#fff" />
+
+
+</LinearLayout>

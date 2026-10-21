@@ -3345,6 +3345,13 @@ Ayrıntılı bilgiye [Linkten](https://fbe.yildiz.edu.tr/duyurular/1378/Shinings
   - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Web%20Madencili%C4%9Fi)
 
 
+#### 📘 Web Programlama 
+  - 🏷️ **Ders Tipi:** Lisansüstü
+  - ⭐ **Yıldız Sayıları:**
+      - ℹ️ Henüz yıldız veren yok. Siz de [linkten](https://forms.gle/3njZjmhm215YCAxe6) anonim şekilde oylamaya katılabilirsiniz.
+  - 📂 [Ders Klasörü](./Lisans%C3%BCst%C3%BC/Web%20Programlama)
+
+
 #### 📘 Yazilim Proje Yönetimi 
   - 🏷️ **Ders Tipi:** Lisansüstü
   - ⭐ **Yıldız Sayıları:**
@@ -5457,7 +5464,7 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <p align='center'><a href='https://github.com/mehmet-ali-duran'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mehmet-ali-duran-974204197'><b>LinkedIn Profili</b></a></p>
 
 <h3 align='center'>💫 <b><i>Sena Cindioğlu</i></b> 💫</h3>
-<p align='center'><a href='https://www.linkedin.com/in/sena-cindio%C4%9Flu/'><b>LinkedIn Profili</b></a></p>
+<p align='center'><a href='https://github.com/SenaCindioglu'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sena-cindio%C4%9Flu/'><b>LinkedIn Profili</b></a></p>
 
 <h3 align='center'>💫 <b><i>Sinem Sarak</i></b> 💫</h3>
 <p align='center'><a href='https://github.com/sinemsarak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sinem-sarak/'><b>LinkedIn Profili</b></a></p>
@@ -5525,6 +5532,12 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h5 align='center'>🔹 <b><i>Yusuf Erdem</i></b> 🔹</h5>
 <p align='center'><a href='https://github.com/erdem-erdem'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/yusuf-erdem-941685258/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Abdullah Yaren</i></b> </h6>
+<p align='center'><a href='https://github.com/abdullahyaren'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>AbdullahKayahan</i></b> </h6>
+<p align='center'><a href='https://github.com/AbdullahKayahan'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Ahmed Zeer</i></b> </h6>
 <p align='center'><a href='https://github.com/AhmedZeer'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmedzeer/'><b>LinkedIn Profili</b></a></p>
 
@@ -5534,28 +5547,184 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Ahmet Furkan Çınarka</i></b> </h6>
 <p align='center'><a href='https://github.com/Furkancinarka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ahmetfurkan%C3%A7%C4%B1narka'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Ahmet Sefa Çetin</i></b> </h6>
+<p align='center'><a href='https://github.com/ahmetsefacetin'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Ahmet Zahid Can</i></b> </h6>
 
 <h6 align='center'> <b><i>Ali Albayrak</i></b> </h6>
 <p align='center'><a href='https://github.com/Ali-Albayrak'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ali-albayrak-bb95b8201/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Ali Emre Nebiler</i></b> </h6>
+<p align='center'><a href='https://github.com/aliemrenebiler'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>AliBugday</i></b> </h6>
+<p align='center'><a href='https://github.com/AliBugday'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Alp Şahin</i></b> </h6>
+<p align='center'><a href='https://github.com/utakatalp'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Alperen Oğuz Demir</i></b> </h6>
+<p align='center'><a href='https://github.com/alperenoguz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Anil Sanli</i></b> </h6>
+<p align='center'><a href='https://github.com/anilsanli'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Arda Mike</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/arda-mike-149a75294/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Atılhan Emre Dursunoğlu</i></b> </h6>
+<p align='center'><a href='https://github.com/Thelta'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Ayşe Kayabay</i></b> </h6>
+<p align='center'><a href='https://github.com/aysekayabay'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Ayşe Sude Cami</i></b> </h6>
+<p align='center'><a href='https://github.com/aysesude'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Barış Can Yılmaz</i></b> </h6>
+<p align='center'><a href='https://github.com/bariscanyilmaz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Barış Semerci</i></b> </h6>
+<p align='center'><a href='https://github.com/barissemerci'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Batuhan Yılmaz</i></b> </h6>
 <p align='center'><a href='https://github.com/batuhanyilmaz2814'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/batuhan-y%C4%B1lmaz-5a4027324/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Berkay Gümüşay</i></b> </h6>
+<p align='center'><a href='https://github.com/berkaygumusay'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Berkay Tutal</i></b> </h6>
+<p align='center'><a href='https://github.com/BerkayTutal'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Berkayyldrm</i></b> </h6>
+<p align='center'><a href='https://github.com/Berkayyldrm'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Besher Alkurdi</i></b> </h6>
 <p align='center'><a href='https://github.com/mrbesher'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mrbesher/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Bilal Oğuz Erdoğdu</i></b> </h6>
+<p align='center'><a href='https://github.com/bilaloguzer'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Bunyamin Coskuner</i></b> </h6>
+<p align='center'><a href='https://github.com/bnymncoskuner'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Burak Atalay</i></b> </h6>
+<p align='center'><a href='https://github.com/burakataly'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Burak Özer</i></b> </h6>
+<p align='center'><a href='https://github.com/brkzr'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Caner Kaya</i></b> </h6>
+<p align='center'><a href='https://github.com/cnrkaya'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Egehan Gunduz</i></b> </h6>
+<p align='center'><a href='https://github.com/egndz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Elif Mertoğlu</i></b> </h6>
+<p align='center'><a href='https://github.com/elifmrtgl'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Emir Oğuz</i></b> </h6>
+<p align='center'><a href='https://github.com/emirroguz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Emre Kul</i></b> </h6>
+<p align='center'><a href='https://github.com/Emre-Kul'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Emre Çelik</i></b> </h6>
+<p align='center'><a href='https://github.com/chillxcode'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Enes Erkoc</i></b> </h6>
+<p align='center'><a href='https://github.com/eneserkoc'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Enesozdogan</i></b> </h6>
+<p align='center'><a href='https://github.com/Enesozdogan'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Engin Deniz Çağlar</i></b> </h6>
+<p align='center'><a href='https://github.com/edcaglar'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Enis Simsir</i></b> </h6>
+<p align='center'><a href='https://github.com/borkluce'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Eren T</i></b> </h6>
+<p align='center'><a href='https://github.com/erentts'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Eren Yildirim</i></b> </h6>
+<p align='center'><a href='https://github.com/ereny84'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Evren Ispiroglu</i></b> </h6>
+<p align='center'><a href='https://github.com/ispiroglu'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Fatih Özcan</i></b> </h6>
+<p align='center'><a href='https://github.com/faozdev'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Furkan Karataş</i></b> </h6>
+<p align='center'><a href='https://github.com/KaratasFurkan'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Gazi Canbolat</i></b> </h6>
+<p align='center'><a href='https://github.com/Mahamat335'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Göker Güner</i></b> </h6>
+<p align='center'><a href='https://github.com/gokerguner'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Göksel Okandan</i></b> </h6>
+<p align='center'><a href='https://github.com/GkslOkn'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Habil Çoban</i></b> </h6>
 <p align='center'><a href='https://github.com/hubble658'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/habil-%C3%A7oban-1bb720296/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Halil Ibrahim Bestil</i></b> </h6>
+<p align='center'><a href='https://github.com/hibestil'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Hamza Canbaz</i></b> </h6>
+<p align='center'><a href='https://github.com/hamzacanbaz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kaan Sonmezoz</i></b> </h6>
+<p align='center'><a href='https://github.com/kaansonmezoz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kaan Yazici</i></b> </h6>
+<p align='center'><a href='https://github.com/Stealthhy7512'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kadir Şahin</i></b> </h6>
+<p align='center'><a href='https://github.com/ssahinnkadir'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kemal Ekim</i></b> </h6>
+<p align='center'><a href='https://github.com/kemoek'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kemal Selçuk</i></b> </h6>
+<p align='center'><a href='https://github.com/RasKemal'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Kübra Tunç</i></b> </h6>
+<p align='center'><a href='https://github.com/kubratunc'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Lukas Çakıcı</i></b> </h6>
+<p align='center'><a href='https://github.com/lukascakici'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>M. Isa Gul</i></b> </h6>
+<p align='center'><a href='https://github.com/misagul'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Mahmut Esad Erman</i></b> </h6>
 <p align='center'><a href='https://github.com/MahmutEsadErman'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/mahmut-esad-erman/'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Mehmet Onur Erboy</i></b> </h6>
+<p align='center'><a href='https://github.com/mehmetonurerboy'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Melih Alçık</i></b> </h6>
 <p align='center'><a href='https://github.com/darthshadoww'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/melih-alcik-086087171/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mert Arıcan</i></b> </h6>
+<p align='center'><a href='https://github.com/mert-arican'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mert Türkmenoğlu</i></b> </h6>
+<p align='center'><a href='https://github.com/mertturkmenoglu'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mevlana Halit Kaya</i></b> </h6>
+<p align='center'><a href='https://github.com/mhalitkaya'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Miracetdin Yıldız</i></b> </h6>
+<p align='center'><a href='https://github.com/miracetdin'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Muhammad Arslan</i></b> </h6>
+<p align='center'><a href='https://github.com/cowgoesmeow'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Muhammed Ali Lale</i></b> </h6>
 <p align='center'><a href='https://github.com/malilale'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/muhammed-ali-lale-59a633265'><b>LinkedIn Profili</b></a></p>
@@ -5566,14 +5735,44 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Muhammed Kayra Bulut</i></b> </h6>
 <p align='center'><a href='https://github.com/kaayra2000'><b>Github Profili</b></a></p>
 
+<h6 align='center'> <b><i>MuhammedIkbalAKGUNDOGDU</i></b> </h6>
+<p align='center'><a href='https://github.com/MuhammedIkbalAKGUNDOGDU'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Muhammet Sezai İnce</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/muhammet-sezai-ince-133b9228b/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>MulahTeni</i></b> </h6>
+<p align='center'><a href='https://github.com/MulahTeni'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mustafa Berkay Mutlu</i></b> </h6>
+<p align='center'><a href='https://github.com/mustafaberkaymutlu'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mustafa Eren Çaltı</i></b> </h6>
+<p align='center'><a href='https://github.com/mustafacalti'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Mustafa Güneş</i></b> </h6>
+<p align='center'><a href='https://github.com/mgunes17'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Nasrullah Toprak</i></b> </h6>
+<p align='center'><a href='https://github.com/Nasrullah-Toprak'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Necmettin Bera Çalık</i></b> </h6>
 <p align='center'><a href='https://github.com/necmettin1461'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/necmeddin-bera-%C3%A7al%C4%B1k-9217461b0'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>Onur Akman</i></b> </h6>
+<p align='center'><a href='https://github.com/aonurakman'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Osman Araz</i></b> </h6>
+<p align='center'><a href='https://github.com/arazosman'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Osman Emre Yılmaz</i></b> </h6>
 <p align='center'><a href='https://github.com/OsmanEmreYilmaz'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/osman-emre-/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Parsa Kaz</i></b> </h6>
+<p align='center'><a href='https://github.com/parsakaz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>PelinAkpinar</i></b> </h6>
+<p align='center'><a href='https://github.com/PelinAkpinar'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Rameş Aliyev</i></b> </h6>
 <p align='center'><a href='https://github.com/ramesaliyev'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ramesaliyev/'><b>LinkedIn Profili</b></a></p>
@@ -5584,8 +5783,62 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Saadettin Berber</i></b> </h6>
 <p align='center'><a href='https://github.com/saadettinBerber'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/saadettin-berber-5635b51ba'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>SefaGokceoglu</i></b> </h6>
+<p align='center'><a href='https://github.com/SefaGokceoglu'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Selchuk Hadzhaahmed</i></b> </h6>
+<p align='center'><a href='https://github.com/CukoF'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Semih Balki</i></b> </h6>
+<p align='center'><a href='https://github.com/balkisemih'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Sena Alay</i></b> </h6>
+<p align='center'><a href='https://github.com/toomuchsena'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Seyyid İbrahim Güleç</i></b> </h6>
+<p align='center'><a href='https://github.com/seyyidibrahimgulec'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Slartibartfastx</i></b> </h6>
+<p align='center'><a href='https://github.com/Slartibartfastx'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Süleyman Aliburak Çınar</i></b> </h6>
+<p align='center'><a href='https://github.com/SuleymanAliburakCinar'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Tarık Taşkın</i></b> </h6>
+<p align='center'><a href='https://github.com/tariktskn'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Theo M. Bulut</i></b> </h6>
+<p align='center'><a href='https://github.com/vertexclique'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Tolga İzdaş</i></b> </h6>
+<p align='center'><a href='https://github.com/tolgaizdas'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Toygar Tanyel</i></b> </h6>
+<p align='center'><a href='https://github.com/tanyelai'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Umut Güzel</i></b> </h6>
+<p align='center'><a href='https://github.com/UmutGzl'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yasin Aktaş</i></b> </h6>
+<p align='center'><a href='https://github.com/yasinaktas'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yasin Çaycı</i></b> </h6>
+<p align='center'><a href='https://github.com/yasincayci'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yunus Emre Demir</i></b> </h6>
+<p align='center'><a href='https://github.com/yunusemre002'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>Yusuf Enes Kurt</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/yusuf-enes-kurt/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yusuf Kürşad Kaya</i></b> </h6>
+<p align='center'><a href='https://github.com/ykursadkaya'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yusuf Taha</i></b> </h6>
+<p align='center'><a href='https://github.com/tahayf'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Yusuf Yılmaz</i></b> </h6>
+<p align='center'><a href='https://github.com/yusufyilmaz00'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Yusuf İbin</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/yusuf-ibin-1b6b68331/'><b>LinkedIn Profili</b></a></p>
@@ -5593,8 +5846,98 @@ Bu bölümde reponun hazırlanmasında katkıda bulunan insanlar listelenmiştir
 <h6 align='center'> <b><i>Zehra Aksoy</i></b> </h6>
 <p align='center'><a href='https://www.linkedin.com/in/zehra-aksoy-124a01174'><b>LinkedIn Profili</b></a></p>
 
+<h6 align='center'> <b><i>alarahergun</i></b> </h6>
+<p align='center'><a href='https://github.com/alarahergun'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>anysworkshop</i></b> </h6>
+<p align='center'><a href='https://github.com/anysworkshop'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>buketgul</i></b> </h6>
+<p align='center'><a href='https://github.com/buketgul'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>doevks</i></b> </h6>
+<p align='center'><a href='https://github.com/doevks'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>drvshavva</i></b> </h6>
+<p align='center'><a href='https://github.com/drvshavva'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>erenduman2</i></b> </h6>
+<p align='center'><a href='https://github.com/erenduman2'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ergunizm</i></b> </h6>
+<p align='center'><a href='https://github.com/ergunizm'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>fatmanurbas</i></b> </h6>
+<p align='center'><a href='https://github.com/fatmanurbas'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>feysahin</i></b> </h6>
+<p align='center'><a href='https://github.com/feysahin'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ghostgul</i></b> </h6>
+<p align='center'><a href='https://github.com/ghostgul'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ghoulyabani</i></b> </h6>
+<p align='center'><a href='https://github.com/ghoulyabani'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>huseynvaliyev</i></b> </h6>
+<p align='center'><a href='https://github.com/huseynvaliyev'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ipc0mp</i></b> </h6>
+<p align='center'><a href='https://github.com/ipc0mp'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ismail9oris38</i></b> </h6>
+<p align='center'><a href='https://github.com/ismail9oris38'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>kazazfurkan</i></b> </h6>
+<p align='center'><a href='https://github.com/kazazfurkan'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>kubranarin</i></b> </h6>
+<p align='center'><a href='https://github.com/kubranarin'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>mjohar4</i></b> </h6>
+<p align='center'><a href='https://github.com/mjohar4'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>nnisaayaz</i></b> </h6>
+<p align='center'><a href='https://github.com/nnisaayaz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>ocakcisena</i></b> </h6>
+<p align='center'><a href='https://github.com/ocakcisena'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>omerdiner</i></b> </h6>
+<p align='center'><a href='https://github.com/omerdiner'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>omertortumlu</i></b> </h6>
+<p align='center'><a href='https://github.com/omertortumlu'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>orcuncelik</i></b> </h6>
+<p align='center'><a href='https://github.com/orcuncelik'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>rnbtkrtc</i></b> </h6>
+<p align='center'><a href='https://github.com/rnbtkrtc'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>sirALp</i></b> </h6>
+<p align='center'><a href='https://github.com/sirALp'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>sonerpyci</i></b> </h6>
+<p align='center'><a href='https://github.com/sonerpyci'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>yelizcengiz</i></b> </h6>
+<p align='center'><a href='https://github.com/yelizcengiz'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>zehraemul</i></b> </h6>
+<p align='center'><a href='https://github.com/zehraemul'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>Ömer Hamid Kamışlı</i></b> </h6>
+<p align='center'><a href='https://github.com/ohk'><b>Github Profili</b></a></p>
+
+<h6 align='center'> <b><i>İbrahim Enes Sayın</i></b> </h6>
+<p align='center'><a href='https://github.com/sayinyazilimci'><b>Github Profili</b></a></p>
+
 <h6 align='center'> <b><i>İbrahim Farhan Shlaka</i></b> </h6>
 <p align='center'><a href='https://github.com/Ibrahim-Farhan-Shlaka'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/ibrahim-farhan-shlaka-528b291b4/'><b>LinkedIn Profili</b></a></p>
+
+<h6 align='center'> <b><i>Şahin Doğruca</i></b> </h6>
+<p align='center'><a href='https://github.com/SahinDogruca'><b>Github Profili</b></a></p>
 
 <h6 align='center'> <b><i>Şehmus Yakut</i></b> </h6>
 <p align='center'><a href='https://github.com/SehmusYakut'><b>Github Profili</b></a> &nbsp<a href='https://www.linkedin.com/in/sehmus-yakut/'><b>LinkedIn Profili</b></a></p>

@@ -1,0 +1,12 @@
+pip install numpy
+pip install pandas
+pip install matplotlib
+pip install PIL
+pip install patchify
+pip install imagecodecs
+pip install tqdm
+pip install tifffile
+pip install gc
+pip install scikit-image
+python -m pip install "tensorflow<2.11"
+pip install keras

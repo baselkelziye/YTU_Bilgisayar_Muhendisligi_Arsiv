@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/navy_blue">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/navy_blue"
+                app:popupTheme="@style/Widget.AppCompat.PopupMenu"
+                android:titleTextColor="@color/yellow"
+                android:title="Bilgileri Güncelle"
+                android:titleMarginStart="105dp"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_name"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_surname"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="textPersonName"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_photo"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/updateinfo_iv_profilePhoto"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/user"
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/updateinfo_bt_takePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="103dp"
+            android:text="@string/su_takephoto"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Okula Giriş Yılı"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_enrollmentYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Mezuniyet Yılı"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_graduationYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_mail"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_password"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/su_password2"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Lisans"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_bechalor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Yüksek Lisans"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Doktora"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_phd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Ülke"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Şehir"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Firma"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="LinkedIn"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Twitter"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="text"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="E-posta"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_emailaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:text="Telefon"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/updateinfo_et_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="number"
+            android:layout_marginRight="50dp"
+            android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="2dp"/>
+
+
+        <Button
+            android:id="@+id/updateinfo_bt_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginStart="125dp"
+            android:text="Güncelle"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

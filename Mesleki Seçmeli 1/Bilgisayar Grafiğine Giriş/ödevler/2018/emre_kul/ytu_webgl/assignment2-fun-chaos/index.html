@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>WEBGL-Assignment-2-fun-chaos</title>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+        attribute vec4 vPosition; 
+
+        uniform mat4 uModel;
+        uniform vec4 uColor;
+        
+        varying vec4 vColor;
+
+        void main() { 
+            gl_PointSize = 1.0; 
+            gl_Position = uModel * vPosition; 
+            vColor = uColor;
+            }
+            
+    </script>
+
+    <script id="fragment-shader" type="x-shader/x-fragment">
+        precision mediump float;
+        
+        varying vec4 vColor; 
+
+        void main() { 
+            gl_FragColor = vColor; 
+            }
+    </script>
+
+    <script type="text/javascript" src="../Common/webgl-utils.js"></script>
+    <script type="text/javascript" src="../Common/initShaders.js"></script>
+    <script type="text/javascript" src="../Common/MV.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div class="canvas-container">
+        <canvas id="gl-canvas" width="500" height="500"></canvas>
+    </div>
+</body>
+
+</html>

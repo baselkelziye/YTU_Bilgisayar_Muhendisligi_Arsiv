@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.must.mobilehomework.SignUpActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kayıt Ol"
+        android:id="@+id/txtSignUpTitle"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adınız"
+        android:id="@+id/txtName" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:hint="Adınız"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <requestFocus></requestFocus>
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Soyadınız"
+        android:id="@+id/txtSurname" />
+
+    <EditText
+        android:id="@+id/edtSurname"
+        android:hint="Soyadınız"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kullanıcı Adı"
+        android:id="@+id/txtUserName" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:hint="Kullanıcı Adınız"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Parola"
+        android:id="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:hint="Parolanız"
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:id="@+id/btnSave" />
+
+</LinearLayout>

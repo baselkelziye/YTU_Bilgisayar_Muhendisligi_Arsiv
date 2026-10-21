@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="@string/menu_title" />
+
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_title"
+        android:text="@string/login_activity" />
+
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOne"
+        android:text="@string/email_activity" />
+
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTwo"
+        android:text="@string/list_activity" />
+
+    <Button
+        android:id="@+id/buttonFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonThree"
+        android:text="@string/settings_activity" />
+
+    <Button
+        android:id="@+id/buttonFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonFour"
+        android:text="@string/note_activity" />
+
+</RelativeLayout>

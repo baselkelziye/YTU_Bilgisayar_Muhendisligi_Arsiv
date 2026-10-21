@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSettings"
+    android:configChanges="uiMode">>
+
+    <TextView
+        android:id="@+id/txtSName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="60dp"
+        android:text="Adı"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSNameVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="55dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Cinsiyet"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtSName"
+        app:layout_constraintTop_toBottomOf="@+id/txtSName" />
+
+    <TextView
+        android:id="@+id/txtSexVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSNameVal"
+        app:layout_constraintTop_toBottomOf="@+id/txtSNameVal" />
+
+    <TextView
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Boy"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtSex"
+        app:layout_constraintTop_toBottomOf="@+id/txtSex" />
+
+    <TextView
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Kilo"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtHeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeight" />
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Yaş"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtWeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeight" />
+
+    <TextView
+        android:id="@+id/txtMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Mod"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtAge"
+        app:layout_constraintTop_toBottomOf="@+id/txtAge" />
+
+    <TextView
+        android:id="@+id/txtHeightVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtSexVal"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexVal" />
+
+    <TextView
+        android:id="@+id/txtWeightVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtHeightVal"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeightVal" />
+
+    <TextView
+        android:id="@+id/txtAgeVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtWeightVal"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeightVal" />
+
+    <Switch
+        android:id="@+id/swtMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Aydınlık"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtAgeVal"
+        app:layout_constraintTop_toBottomOf="@+id/txtAgeVal" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="editSettings"
+        android:text="Düzenle"
+        app:layout_constraintEnd_toEndOf="@+id/swtMode"
+        app:layout_constraintStart_toStartOf="@+id/txtMode"
+        app:layout_constraintTop_toBottomOf="@+id/txtMode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

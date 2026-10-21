@@ -1,0 +1,23 @@
+< THE SYMBOL TABLE >  Tek Sayý Ortalamasý.exe  --  emu8086 assembler version: 4.08 
+===================================================================================================
+Name                     	Offset    	Size      	Type      	Segment   
+===================================================================================================
+MYSTACK                  	00000     	-5        	SEGMENT   	(ITSELF)  
+MYDATA                   	00003     	-5        	SEGMENT   	(ITSELF)  
+TEKTOP                   	00000     	2         	VAR       	myData    
+CIFTTOP                  	00004     	2         	VAR       	myData    
+DIZI                     	00008     	2         	VAR       	myData    
+TEKSAY                   	00018     	2         	VAR       	myData    
+CIFTSAY                  	0001A     	2         	VAR       	myData    
+ELEMAN                   	0001C     	2         	VAR       	myData    
+TEKORT                   	0001E     	2         	VAR       	myData    
+CIFTORT                  	00020     	2         	VAR       	myData    
+MYCODE                   	00006     	-5        	SEGMENT   	(ITSELF)  
+ANA                      	00000     	-1        	FAR       	myCode    
+DON                      	00010     	-1        	LABEL     	myCode    
+CIFT                     	00026     	-1        	LABEL     	myCode    
+ARTTIR                   	00033     	-1        	LABEL     	myCode    
+===================================================================================================
+[ 15/11/2022  --  14:00:42 ] 
+< END >
+ 

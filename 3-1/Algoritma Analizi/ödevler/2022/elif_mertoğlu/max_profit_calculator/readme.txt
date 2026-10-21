@@ -1,0 +1,1 @@
+The algorithm focuses on finding the maximum profit trying to schedule advertisements from different companies. Only one ad can be shown in a particular time. Every ad's starting time, duration and values are read from a file as input. Since there are some ads overlapping, the code finds the most beneficial flow of ads and the maximum profit using Dynamic Programming.

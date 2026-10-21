@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/icon_home"
+            android:icon="@drawable/icon_home"
+            android:title="Home" />
+      <item
+          android:id="@+id/icon_all_trainers"
+          android:icon="@drawable/icon_all_trainers"
+          android:title="All Trainers" />
+      <item
+          android:id="@+id/icon_all_programs"
+          android:icon="@drawable/icon_all_programs"
+          android:title="All Programs" />
+      <item
+          android:id="@+id/icon_profil"
+          android:icon="@drawable/icon_profil"
+          android:title="Profil" />
+        <item
+            android:id="@+id/icon_my_programs"
+            android:icon="@drawable/icon_all_programs"
+            android:title="My Programs" />
+        <item
+            android:id="@+id/icon_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout" />
+  </group>
+
+  <!--<item android:title="Communicate">
+      <menu>
+          <item
+              android:id="@+id/nav_share"
+              android:icon="@drawable/ic_menu_share"
+              android:title="Share" />
+          <item
+              android:id="@+id/nav_send"
+              android:icon="@drawable/ic_menu_send"
+              android:title="Send" />
+      </menu>
+  </item>-->
+
+</menu>

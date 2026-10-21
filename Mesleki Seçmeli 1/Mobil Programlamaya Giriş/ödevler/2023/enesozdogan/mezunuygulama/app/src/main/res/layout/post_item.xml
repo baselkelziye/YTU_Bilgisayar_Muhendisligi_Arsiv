@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:alpha="0.8">
+
+        <TextView
+            android:id="@+id/postUserNameItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:padding="3dp"
+            android:text="Username"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:cropToPadding="true"
+            android:adjustViewBounds="true"
+            android:id="@+id/postImgItem"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Title"
+            android:padding="10dp"
+            android:id="@+id/postTitleItem"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postDuyuruItem"
+            android:padding="10dp"
+            android:text="Duyuru Metni"
+            android:textSize="18sp"
+            android:paddingTop="15dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="15dp"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/postDateItem"
+            android:padding="5dp"
+            android:text="Date created"
+            android:textStyle="italic"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

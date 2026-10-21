@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <h3>Yorum Yapmadığınız Ürünler</h3>
+    <hr>
+    {% if products %}
+        <div class="row">
+            {% for product in products %}
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    {% if product.image_url %}
+                        <img src="{{ url_for('static', filename='uploads/' ~ product.image_url)  }}" 
+                             class="card-img-top" alt="{{ product.name }}">
+                    {% else %}
+                        <img src="{{ url_for('static', filename='images/default_product.png') }}" 
+                             class="card-img-top" alt="{{ product.name }}">
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text">Fiyat: {{ product.price }} ₺</p>
+                        <a href="{{ url_for('product_detail', product_id=product.product_id) }}" 
+                           class="btn btn-sm btn-primary">Puan Ver</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>Henüz puan vermediğiniz bir ürün bulunmuyor.</p>
+    {% endif %}
+</div>
+{% endblock %}

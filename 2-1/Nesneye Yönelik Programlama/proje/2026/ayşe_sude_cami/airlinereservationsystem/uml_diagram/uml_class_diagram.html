@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Airline Reservation System - UML Class Diagram</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box
+		}
+
+		body {
+			font-family: 'Segoe UI', Tahoma, sans-serif;
+			background: linear-gradient(135deg, #1a1a2e, #16213e);
+			min-height: 100vh;
+			padding: 20px;
+			color: #fff
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 10px;
+			color: #4fc3f7;
+			font-size: 2rem
+		}
+
+		.subtitle {
+			text-align: center;
+			color: #90a4ae;
+			margin-bottom: 30px
+		}
+
+		.legend {
+			display: flex;
+			justify-content: center;
+			gap: 30px;
+			margin-bottom: 25px;
+			flex-wrap: wrap
+		}
+
+		.legend-item {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			font-size: .85rem
+		}
+
+		.legend-color {
+			width: 20px;
+			height: 20px;
+			border-radius: 4px
+		}
+
+		.modules-container {
+			display: flex;
+			flex-direction: column;
+			gap: 40px;
+			max-width: 1600px;
+			margin: 0 auto
+		}
+
+		.module {
+			background: rgba(255, 255, 255, .03);
+			border-radius: 16px;
+			padding: 20px;
+			border: 1px solid rgba(255, 255, 255, .1)
+		}
+
+		.module-title {
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+			padding: 10px 20px;
+			border-radius: 8px;
+			display: inline-block
+		}
+
+		.module-flight .module-title {
+			background: linear-gradient(135deg, #2196f3, #1976d2)
+		}
+
+		.module-reservation .module-title {
+			background: linear-gradient(135deg, #4caf50, #388e3c)
+		}
+
+		.module-services .module-title {
+			background: linear-gradient(135deg, #ff9800, #f57c00)
+		}
+
+		.module-extra .module-title {
+			background: linear-gradient(135deg, #9c27b0, #7b1fa2)
+		}
+
+		.module-exception .module-title {
+			background: linear-gradient(135deg, #f44336, #d32f2f)
+		}
+
+		.classes-row {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px
+		}
+
+		.class-box {
+			background: #1e2a3a;
+			border-radius: 10px;
+			min-width: 280px;
+			max-width: 320px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, .3);
+			overflow: hidden;
+			flex: 1
+		}
+
+		.class-header {
+			padding: 12px 16px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 1.1rem
+		}
+
+		.module-flight .class-header {
+			background: linear-gradient(135deg, #2196f3, #1976d2)
+		}
+
+		.module-reservation .class-header {
+			background: linear-gradient(135deg, #4caf50, #388e3c)
+		}
+
+		.module-services .class-header {
+			background: linear-gradient(135deg, #ff9800, #f57c00)
+		}
+
+		.module-extra .class-header {
+			background: linear-gradient(135deg, #9c27b0, #7b1fa2)
+		}
+
+		.module-exception .class-header {
+			background: linear-gradient(135deg, #f44336, #d32f2f)
+		}
+
+		.enum-header {
+			background: linear-gradient(135deg, #607d8b, #455a64) !important
+		}
+
+		.interface-header {
+			background: linear-gradient(135deg, #00bcd4, #0097a7) !important;
+			font-style: italic
+		}
+
+		.class-section {
+			padding: 12px 16px;
+			border-top: 1px solid rgba(255, 255, 255, .1)
+		}
+
+		.section-title {
+			font-size: .75rem;
+			color: #90a4ae;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-bottom: 8px
+		}
+
+		.attribute,
+		.method {
+			font-family: Consolas, Monaco, monospace;
+			font-size: .82rem;
+			padding: 4px 0;
+			color: #e0e0e0
+		}
+
+		.attribute::before {
+			content: "−";
+			color: #f44336;
+			margin-right: 6px;
+			font-weight: bold
+		}
+
+		.attribute.protected::before {
+			content: "#";
+			color: #ff9800
+		}
+
+		.attribute.public::before {
+			content: "+";
+			color: #4caf50
+		}
+
+		.method::before {
+			content: "+";
+			color: #4caf50;
+			margin-right: 6px;
+			font-weight: bold
+		}
+
+		.method.private::before {
+			content: "−";
+			color: #f44336
+		}
+
+		.type {
+			color: #4fc3f7
+		}
+
+		.enum-value {
+			font-family: Consolas, monospace;
+			font-size: .85rem;
+			padding: 3px 8px;
+			background: rgba(255, 255, 255, .1);
+			border-radius: 4px;
+			display: inline-block;
+			margin: 3px 5px 3px 0;
+			color: #ffcc80
+		}
+
+		.relationships {
+			background: rgba(255, 255, 255, .03);
+			border-radius: 16px;
+			padding: 25px;
+			margin-top: 40px;
+			border: 1px solid rgba(255, 255, 255, .1)
+		}
+
+		.rel-title {
+			font-size: 1.2rem;
+			margin-bottom: 20px;
+			color: #4fc3f7
+		}
+
+		.rel-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			gap: 15px
+		}
+
+		.rel-item {
+			background: rgba(255, 255, 255, .05);
+			padding: 12px 16px;
+			border-radius: 8px;
+			font-size: .9rem;
+			display: flex;
+			align-items: center;
+			gap: 10px
+		}
+
+		.rel-type {
+			font-size: .7rem;
+			padding: 3px 8px;
+			border-radius: 4px;
+			font-weight: bold;
+			white-space: nowrap
+		}
+
+		.rel-composition {
+			background: #f44336
+		}
+
+		.rel-aggregation {
+			background: #2196f3
+		}
+
+		.rel-association {
+			background: #4caf50
+		}
+
+		.rel-dependency {
+			background: #ff9800
+		}
+
+		.rel-inheritance {
+			background: #9c27b0
+		}
+
+		.rel-implements {
+			background: #00bcd4
+		}
+
+		.notes {
+			background: rgba(255, 193, 7, .1);
+			border: 1px solid rgba(255, 193, 7, .3);
+			border-radius: 12px;
+			padding: 20px;
+			margin-top: 30px
+		}
+
+		.notes h3 {
+			color: #ffc107;
+			margin-bottom: 15px
+		}
+
+		.notes ul {
+			list-style: none
+		}
+
+		.notes li {
+			padding: 8px 0;
+			padding-left: 25px;
+			position: relative;
+			color: #e0e0e0
+		}
+
+		.notes li::before {
+			content: "→";
+			position: absolute;
+			left: 0;
+			color: #ffc107
+		}
+	</style>
+</head>
+
+<body>
+	<h1>✈️ Airline Reservation System - UML Class Diagram</h1>
+	<p class="subtitle">Havayolu Rezervasyon ve Yönetim Sistemi - Sınıf Diyagramı</p>
+	<div class="legend">
+		<div class="legend-item">
+			<div class="legend-color" style="background:#2196f3"></div><span>Flight Module</span>
+		</div>
+		<div class="legend-item">
+			<div class="legend-color" style="background:#4caf50"></div><span>Reservation Module</span>
+		</div>
+		<div class="legend-item">
+			<div class="legend-color" style="background:#ff9800"></div><span>Services & Managers</span>
+		</div>
+		<div class="legend-item">
+			<div class="legend-color" style="background:#9c27b0"></div><span>User Classes</span>
+		</div>
+		<div class="legend-item">
+			<div class="legend-color" style="background:#f44336"></div><span>Exceptions</span>
+		</div>
+		<div class="legend-item">
+			<div class="legend-color" style="background:#607d8b"></div><span>Enums</span>
+		</div>
+	</div>
+	<div class="modules-container">
+		<!-- MODULE 1: FLIGHT MANAGEMENT -->
+		<div class="module module-flight">
+			<div class="module-title">📦 Module 1: Flight Management</div>
+			<div class="classes-row">
+				<div class="class-box">
+					<div class="class-header">Flight</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">flightNum: <span class="type">String</span></div>
+						<div class="attribute">departurePlace: <span class="type">String</span></div>
+						<div class="attribute">arrivalPlace: <span class="type">String</span></div>
+						<div class="attribute">date: <span class="type">LocalDate</span></div>
+						<div class="attribute">hour: <span class="type">LocalTime</span></div>
+						<div class="attribute">duration: <span class="type">int</span></div>
+						<div class="attribute">plane: <span class="type">Plane</span></div>
+						<div class="attribute">route: <span class="type">Route</span></div>
+						<div class="attribute">status: <span class="type">FlightStatus</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getDepartureDateTime(): <span class="type">LocalDateTime</span></div>
+						<div class="method">getArrivalDateTime(): <span class="type">LocalDateTime</span></div>
+						<div class="method">isExpired(): <span class="type">boolean</span></div>
+						<div class="method">isToday(): <span class="type">boolean</span></div>
+						<div class="method">getAvailableSeats(): <span class="type">List&lt;Seat&gt;</span></div>
+						<div class="method">getOccupancyRate(): <span class="type">double</span></div>
+						<div class="method">getDepartureWithAirport(): <span class="type">String</span></div>
+						<div class="method">getArrivalWithAirport(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Plane</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">planeId: <span class="type">String</span></div>
+						<div class="attribute">planeModel: <span class="type">String</span></div>
+						<div class="attribute">capacity: <span class="type">int</span></div>
+						<div class="attribute">seatMatrix: <span class="type">Map&lt;String,Seat&gt;</span></div>
+						<div class="attribute">rows: <span class="type">int</span></div>
+						<div class="attribute">businessRows: <span class="type">int</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method private">initializeSeats(basePrice): <span class="type">void</span></div>
+						<div class="method">getSeat(seatNum): <span class="type">Seat</span></div>
+						<div class="method">getAvailableSeats(): <span class="type">List&lt;Seat&gt;</span></div>
+						<div class="method">getAvailableSeatsByClass(seatClass): <span
+								class="type">List&lt;Seat&gt;</span></div>
+						<div class="method">getAvailableSeatCount(): <span class="type">int</span></div>
+						<div class="method">resetAllSeats(): <span class="type">void</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Seat</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">seatNum: <span class="type">String</span></div>
+						<div class="attribute">Class: <span class="type">SeatClass</span></div>
+						<div class="attribute">price: <span class="type">double</span></div>
+						<div class="attribute">reserveStatus: <span class="type">boolean</span></div>
+						<div class="attribute">row: <span class="type">int</span></div>
+						<div class="attribute">column: <span class="type">char</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">reserve(): <span class="type">void</span> [synchronized]</div>
+						<div class="method">release(): <span class="type">void</span> [synchronized]</div>
+						<div class="method">isReserveStatus(): <span class="type">boolean</span></div>
+						<div class="method">getCalculatedPrice(): <span class="type">double</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Route</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">routeId: <span class="type">String</span></div>
+						<div class="attribute">departureCity: <span class="type">String</span></div>
+						<div class="attribute">departureAirportCode: <span class="type">String</span></div>
+						<div class="attribute">arrivalCity: <span class="type">String</span></div>
+						<div class="attribute">arrivalAirportCode: <span class="type">String</span></div>
+						<div class="attribute">distance: <span class="type">int</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getRouteDescription(): <span class="type">String</span></div>
+						<div class="method">getShortDescription(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» SeatClass</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">ECONOMY</span><span class="enum-value">BUSINESS</span>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">priceMultiplier: <span class="type">double</span></div>
+						<div class="attribute">baggageAllowance: <span class="type">int</span></div>
+						<div class="attribute">displayName: <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» FlightStatus</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">SCHEDULED</span><span class="enum-value">BOARDING</span><span
+							class="enum-value">DEPARTED</span><span class="enum-value">ARRIVED</span><span
+							class="enum-value">CANCELLED</span><span class="enum-value">DELAYED</span>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» AdditionalService</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">FREE_CANCELLATION</span><span
+							class="enum-value">IN_FLIGHT_ENTERTAINMENT</span><span
+							class="enum-value">MEAL_SELECTION</span><span class="enum-value">EXTRA_BAGGAGE</span>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">displayName: <span class="type">String</span></div>
+						<div class="attribute">icon: <span class="type">String</span></div>
+						<div class="attribute">price: <span class="type">double</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MODULE 2: RESERVATION -->
+		<div class="module module-reservation">
+			<div class="module-title">📦 Module 2: Reservation & Ticketing</div>
+			<div class="classes-row">
+				<div class="class-box">
+					<div class="class-header">Reservation</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">reservationCode: <span class="type">String</span></div>
+						<div class="attribute">flight: <span class="type">Flight</span></div>
+						<div class="attribute">passenger: <span class="type">Passenger</span></div>
+						<div class="attribute">seat: <span class="type">Seat</span></div>
+						<div class="attribute">dateOfReservation: <span class="type">LocalDateTime</span></div>
+						<div class="attribute">status: <span class="type">ReservationStatus</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">confirm(): <span class="type">void</span></div>
+						<div class="method">cancel(): <span class="type">void</span></div>
+						<div class="method">complete(): <span class="type">void</span></div>
+						<div class="method">isActive(): <span class="type">boolean</span></div>
+						<div class="method">getSummary(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Ticket</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">ticketId: <span class="type">String</span></div>
+						<div class="attribute">reservation: <span class="type">Reservation</span></div>
+						<div class="attribute">price: <span class="type">double</span></div>
+						<div class="attribute">baggage: <span class="type">Baggage</span></div>
+						<div class="attribute">issueDate: <span class="type">LocalDateTime</span></div>
+						<div class="attribute">ticketStatus: <span class="type">TicketStatus</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">calculateTotalPrice(): <span class="type">double</span></div>
+						<div class="method">checkIn(): <span class="type">void</span></div>
+						<div class="method">board(): <span class="type">void</span></div>
+						<div class="method">refund(): <span class="type">void</span></div>
+						<div class="method">getTicketSummary(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Passenger</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">passengerId: <span class="type">String</span></div>
+						<div class="attribute">name: <span class="type">String</span></div>
+						<div class="attribute">surname: <span class="type">String</span></div>
+						<div class="attribute">email: <span class="type">String</span></div>
+						<div class="attribute">phone: <span class="type">String</span></div>
+						<div class="attribute">passportNo: <span class="type">String</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getFullName(): <span class="type">String</span></div>
+						<div class="method">getContactInfo(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Baggage</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">baggageId: <span class="type">String</span></div>
+						<div class="attribute">weight: <span class="type">double</span></div>
+						<div class="attribute">allowance: <span class="type">int</span></div>
+						<div class="attribute public">EXTRA_FEE_PER_KG: <span class="type">double</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getExtraWeight(): <span class="type">double</span></div>
+						<div class="method">getExtraFee(): <span class="type">double</span></div>
+						<div class="method">isOverweight(): <span class="type">boolean</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» ReservationStatus</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">PENDING</span><span class="enum-value">CONFIRMED</span><span
+							class="enum-value">CANCELLED</span><span class="enum-value">COMPLETED</span>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» TicketStatus</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">ISSUED</span><span class="enum-value">CHECKED_IN</span><span
+							class="enum-value">BOARDED</span><span class="enum-value">USED</span><span
+							class="enum-value">REFUNDED</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MODULE 3: SERVICES -->
+		<div class="module module-services">
+			<div class="module-title">📦 Module 3: Services & Managers</div>
+			<div class="classes-row">
+				<div class="class-box">
+					<div class="class-header">FlightManager</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">flights: <span class="type">List&lt;Flight&gt;</span></div>
+						<div class="attribute">planes: <span class="type">List&lt;Plane&gt;</span></div>
+						<div class="attribute">routes: <span class="type">List&lt;Route&gt;</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">createFlight(...): <span class="type">Flight</span></div>
+						<div class="method">deleteFlight(flightNum): <span class="type">boolean</span></div>
+						<div class="method">getFlightByNumber(num): <span class="type">Flight</span></div>
+						<div class="method">getAllFlights(): <span class="type">List&lt;Flight&gt;</span></div>
+						<div class="method">saveToFile(): <span class="type">void</span></div>
+						<div class="method">loadFromFile(): <span class="type">void</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">ReservationManager</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">reservations: <span class="type">List&lt;Reservation&gt;</span></div>
+						<div class="attribute">tickets: <span class="type">List&lt;Ticket&gt;</span></div>
+						<div class="attribute">reservationLock: <span class="type">ReentrantLock</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">makeReservation(flight,passenger,seat): <span
+								class="type">Reservation</span></div>
+						<div class="method">synchronizedReserve(seat): <span class="type">boolean</span></div>
+						<div class="method">unsynchronizedReserve(seat): <span class="type">boolean</span></div>
+						<div class="method">cancelReservation(code): <span class="type">boolean</span></div>
+						<div class="method">createTicket(res,price): <span class="type">Ticket</span></div>
+						<div class="method">getAllTickets(): <span class="type">List&lt;Ticket&gt;</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">UserManager</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">users: <span class="type">List&lt;User&gt;</span></div>
+						<div class="attribute">passengers: <span class="type">List&lt;Passenger&gt;</span></div>
+						<div class="attribute">currentUser: <span class="type">User</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">login(username,password): <span class="type">User</span></div>
+						<div class="method">logout(): <span class="type">void</span></div>
+						<div class="method">registerCustomer(...): <span class="type">Customer</span></div>
+						<div class="method">registerStaff(...): <span class="type">Staff</span></div>
+						<div class="method">isCurrentUserAdmin(): <span class="type">boolean</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">SeatManager</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">plane: <span class="type">Plane</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">reserveSeat(seatNum): <span class="type">boolean</span></div>
+						<div class="method">releaseSeat(seatNum): <span class="type">boolean</span></div>
+						<div class="method">isSeatAvailable(seatNum): <span class="type">boolean</span></div>
+						<div class="method">getOccupancyRate(): <span class="type">double</span></div>
+						<div class="method">getRandomAvailableSeat(): <span class="type">Seat</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">PriceCalculator</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">basePrice: <span class="type">double</span></div>
+						<div class="attribute">taxRate: <span class="type">double</span></div>
+						<div class="attribute">businessMultiplier: <span class="type">double</span></div>
+						<div class="attribute">serviceFee: <span class="type">double</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">calculatePrice(seat,flight): <span class="type">double</span></div>
+						<div class="method">calculateBusinessPrice(base): <span class="type">double</span></div>
+						<div class="method">applyDiscount(price,percent): <span class="type">double</span></div>
+						<div class="method">calculateServicesTotal(services): <span class="type">double</span></div>
+						<div class="method">calculatePriceWithServices(...): <span class="type">double</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">FlightSearchEngine</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">flightManager: <span class="type">FlightManager</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">searchFlights(from,to,date): <span class="type">List&lt;Flight&gt;</span>
+						</div>
+						<div class="method">filterByDeparture(city): <span class="type">List&lt;Flight&gt;</span></div>
+						<div class="method">getAvailableFlights(): <span class="type">List&lt;Flight&gt;</span></div>
+						<div class="method">getAllDepartureCities(): <span class="type">List&lt;String&gt;</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header interface-header">ReportGenerator implements Runnable</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">flightManager: <span class="type">FlightManager</span></div>
+						<div class="attribute">reservationManager: <span class="type">ReservationManager</span></div>
+						<div class="attribute">reportType: <span class="type">ReportType</span></div>
+						<div class="attribute">cancelled: <span class="type">volatile boolean</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">run(): <span class="type">void</span></div>
+						<div class="method">generateOccupancyReport(): <span class="type">String</span></div>
+						<div class="method">generateRevenueReport(): <span class="type">String</span></div>
+						<div class="method">generateReservationReport(): <span class="type">String</span></div>
+						<div class="method">cancel(): <span class="type">void</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">FileManager (Utility)</div>
+					<div class="class-section">
+						<div class="section-title">Methods (Static)</div>
+						<div class="method">saveObject(obj,filename): <span class="type">void</span></div>
+						<div class="method">loadObject(filename): <span class="type">Object</span></div>
+						<div class="method">saveList(list,filename): <span class="type">void</span></div>
+						<div class="method">loadList(filename): <span class="type">List&lt;T&gt;</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MODULE 4: USER CLASSES -->
+		<div class="module module-extra">
+			<div class="module-title">📦 Module 4: User Classes</div>
+			<div class="classes-row">
+				<div class="class-box">
+					<div class="class-header interface-header">«abstract» User</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute protected">userId: <span class="type">String</span></div>
+						<div class="attribute protected">username: <span class="type">String</span></div>
+						<div class="attribute protected">password: <span class="type">String</span></div>
+						<div class="attribute protected">email: <span class="type">String</span></div>
+						<div class="attribute protected">role: <span class="type">UserRole</span></div>
+						<div class="attribute protected">active: <span class="type">boolean</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">login(username,password): <span class="type">boolean</span></div>
+						<div class="method">logout(): <span class="type">void</span></div>
+						<div class="method">abstract getPermissions(): <span class="type">List&lt;String&gt;</span>
+						</div>
+						<div class="method">hasPermission(perm): <span class="type">boolean</span></div>
+						<div class="method">checkPassword(pwd): <span class="type">boolean</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Customer extends User</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">passenger: <span class="type">Passenger</span></div>
+						<div class="attribute">reservationHistory: <span class="type">List&lt;Reservation&gt;</span>
+						</div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getPermissions(): <span class="type">List&lt;String&gt;</span></div>
+						<div class="method">viewReservations(): <span class="type">List&lt;Reservation&gt;</span></div>
+						<div class="method">addReservation(res): <span class="type">void</span></div>
+						<div class="method">getActiveReservationCount(): <span class="type">int</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Staff extends User</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">staffId: <span class="type">String</span></div>
+						<div class="attribute">department: <span class="type">String</span></div>
+						<div class="attribute">position: <span class="type">String</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getPermissions(): <span class="type">List&lt;String&gt;</span></div>
+						<div class="method">manageFlights(): <span class="type">void</span></div>
+						<div class="method">viewAllReservations(): <span class="type">List&lt;Reservation&gt;</span>
+						</div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">Admin extends Staff</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">adminLevel: <span class="type">int</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getPermissions(): <span class="type">List&lt;String&gt;</span></div>
+						<div class="method">manageStaff(): <span class="type">void</span></div>
+						<div class="method">manageUsers(): <span class="type">void</span></div>
+						<div class="method">isSuperAdmin(): <span class="type">boolean</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» UserRole</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">CUSTOMER</span><span class="enum-value">STAFF</span><span
+							class="enum-value">ADMIN</span>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header enum-header">«enum» ReportType</div>
+					<div class="class-section">
+						<div class="section-title">Values</div>
+						<span class="enum-value">OCCUPANCY</span><span class="enum-value">REVENUE</span><span
+							class="enum-value">RESERVATION</span><span class="enum-value">FULL</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- MODULE 5: EXCEPTIONS -->
+		<div class="module module-exception">
+			<div class="module-title">📦 Module 5: Exceptions</div>
+			<div class="classes-row">
+				<div class="class-box">
+					<div class="class-header">AirlineException extends RuntimeException</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">errorCode: <span class="type">String</span></div>
+					</div>
+					<div class="class-section">
+						<div class="section-title">Methods</div>
+						<div class="method">getErrorCode(): <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">SeatNotAvailableException</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">seatNumber: <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">FlightNotFoundException</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">flightNum: <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">SeatNotFoundException</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">seatNum: <span class="type">String</span></div>
+					</div>
+				</div>
+				<div class="class-box">
+					<div class="class-header">DuplicateEntryException</div>
+					<div class="class-section">
+						<div class="section-title">Attributes</div>
+						<div class="attribute">entryType: <span class="type">String</span></div>
+						<div class="attribute">entryValue: <span class="type">String</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- RELATIONSHIPS -->
+	<div class="relationships" style="max-width:1600px;margin:40px auto 0">
+		<h2 class="rel-title">🔗 Class Relationships</h2>
+		<div class="rel-grid">
+			<div class="rel-item"><span class="rel-type rel-inheritance">Inheritance</span>Customer ──▷ User</div>
+			<div class="rel-item"><span class="rel-type rel-inheritance">Inheritance</span>Staff ──▷ User</div>
+			<div class="rel-item"><span class="rel-type rel-inheritance">Inheritance</span>Admin ──▷ Staff</div>
+			<div class="rel-item"><span class="rel-type rel-inheritance">Inheritance</span>SeatNotAvailableException ──▷
+				AirlineException</div>
+			<div class="rel-item"><span class="rel-type rel-composition">Composition</span>Plane ◆── Seat (1:*)</div>
+			<div class="rel-item"><span class="rel-type rel-aggregation">Aggregation</span>Flight ◇── Plane (1:1)</div>
+			<div class="rel-item"><span class="rel-type rel-aggregation">Aggregation</span>Flight ◇── Route (1:1)</div>
+			<div class="rel-item"><span class="rel-type rel-association">Association</span>Reservation ── Flight (*:1)
+			</div>
+			<div class="rel-item"><span class="rel-type rel-association">Association</span>Reservation ── Passenger
+				(*:1)</div>
+			<div class="rel-item"><span class="rel-type rel-association">Association</span>Reservation ── Seat (*:1)
+			</div>
+			<div class="rel-item"><span class="rel-type rel-composition">Composition</span>Ticket ◆── Reservation (1:1)
+			</div>
+			<div class="rel-item"><span class="rel-type rel-implements">Implements</span>ReportGenerator ──▷ Runnable
+			</div>
+		</div>
+	</div>
+	<!-- NOTES -->
+	<div class="notes" style="max-width:1600px;margin:30px auto">
+		<h3>📝 OOP Prensipleri</h3>
+		<ul>
+			<li><strong>Encapsulation:</strong> Tüm attribute'lar private (-). User sınıfında protected (#).
+				Getter/setter ile erişim.</li>
+			<li><strong>Inheritance:</strong> User → Customer/Staff → Admin (çok seviyeli kalıtım)</li>
+			<li><strong>Polymorphism:</strong> getPermissions() her alt sınıfta farklı şekilde override edilir</li>
+			<li><strong>Abstraction:</strong> User sınıfı abstract. ReportGenerator Runnable interface'ini implement
+				eder.</li>
+			<li><strong>Multithreading:</strong> ReservationManager'da ReentrantLock, Seat'te synchronized metodlar</li>
+		</ul>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+BLM3041 Veritabanı Yönetimi 3.Quizi 02.01.2025  A GRUBU 
+Öğrenci No: 21011022
+Ad: Tarık       Soyad: Taşkın
+--Tüm sorular 20 puandır. SÜRE: 50 dk. Yükleme için +5 dk süre olacaktır.  Başarılar.
+
+1-) /*SNN numarası verilen çalışanın tüm projelerdeki toplam çalışma saati 60 saati aşmışsa 
+'Bu çalışanın toplamda 60 saatten fazla çalıştığı tespit edildi.' şeklinde hata mesajı (Raise Exception) döndüren fonksiyonu yazınız. 
+Fonksiyonu '123456789' SSN numaralı çalışan için çağırınız.*/
+
+CREATE OR REPLACE FUNCTION toplamCalismaSaati(ssn CHAR(9))
+RETURNS VOID AS $$
+DECLARE
+	toplam NUMERIC;
+BEGIN
+	SELECT sum(hours) INTO toplam FROM works_on WHERE essn = ssn;
+	IF (toplam > 60) THEN
+		RAISE EXCEPTION 'Bu çalışanın toplamda 60 saatten fazla çalıştığı tespit edildi.';
+	END IF;
+END;
+$$ LANGUAGE 'plpgsql';
+
+SELECT toplamCalismaSaati('123456789');
+
+2-) /* Bir çalışanın akrabalarının isim, ilişki türü ve doğum tarihini tutan bir tür (record) tanımı yapınız.*/
+
+CREATE TYPE akrabaBilgisi AS (isim VARCHAR(15), iliski VARCHAR(8), dogumTarihi DATE);
+
+3-) /*Cursor kullanarak, bağlı oldukları departman ismi verilen çalışanların ad, soyad ve maaşlarını 
+Raise Info ile ekrana yazdıran fonksiyonu yazınız. Fonksiyonu 'Research' departmanı için çağırınız. */
+
+CREATE OR REPLACE FUNCTION departmanCalisanlari(departmentName VARCHAR(25))
+RETURNS VOID AS $$
+DECLARE
+	calisanlar CURSOR FOR (SELECT fname, lname, salary
+							FROM employee
+							WHERE dno = (SELECT dnumber 
+										 FROM department
+										 WHERE dname = departmentName));
+BEGIN
+	FOR calisan IN calisanlar LOOP
+		RAISE INFO 'AD: %, SOYAD: %, MAAS: %', calisan.fname, calisan.lname, calisan.salary;
+	END LOOP;
+END;
+$$ LANGUAGE 'plpgsql';
+
+SELECT departmanCalisanlari('Research');
+
+4-) /*Bir çalışan eklenmeden önce departman numarasının geçerli olup olmadığını kontrol eden, 
+böyle bir departman bulamazsa 'Gecersiz departman numarası' şeklinde hata mesajı yazdıran (Raise Exception) bir trigger oluşturun.
+Trigger'ı tetikleyiniz.*/
+
+CREATE OR REPLACE TRIGGER calisanEklemeTrigger
+BEFORE INSERT ON employee
+FOR EACH ROW EXECUTE PROCEDURE calisanEklemeFonksiyon();
+
+CREATE OR REPLACE FUNCTION calisanEklemeFonksiyon()
+RETURNS TRIGGER AS $$
+BEGIN
+	IF (new.dno NOT IN (SELECT DISTINCT dnumber FROM department)) THEN
+		RAISE EXCEPTION 'Gecersiz departman numarası';
+		RETURN NULL;
+	END IF;
+	RETURN NEW;
+END;
+$$ LANGUAGE 'plpgsql';
+
+INSERT INTO employee VALUES 
+  ('A','B','C','333444555','09-Jan-55','731 Fondren, Houston, TX','M',30000,'333445555',54);
+
+5-) /*Çalışan maaşına zam yapılmak istendiğinde, sadece bulundukları departmanda 
+toplam çalışan sayısı 5'in altında olan departman çalışanlarından maaşı 30.000 ve altında olanlara zam yapılmasına 
+izin veren triggerı ve fonksiyonunu yazınız. 5 numaralı departman için Triggerı tetikleyiniz*/
+
+CREATE OR REPLACE TRIGGER zamYapTrigger
+BEFORE UPDATE ON employee
+FOR EACH ROW EXECUTE PROCEDURE zamYapFonksiyon();
+
+CREATE OR REPLACE FUNCTION zamYapFonksiyon()
+RETURNS TRIGGER AS $$
+DECLARE
+	calisanSayisi NUMERIC;
+BEGIN
+	SELECT count(*) INTO calisanSayisi FROM employee WHERE dno = old.dno;
+	IF (calisanSayisi < 5 AND old.salary <= 30000) THEN
+		RETURN NEW;
+	END IF;
+	RETURN OLD;
+END;
+$$ LANGUAGE 'plpgsql';
+
+UPDATE employee SET salary = salary * 1.2 WHERE dno = 5; -- 5 numaralı departmandaki çalışanların maaşına %20 zam yapılır.

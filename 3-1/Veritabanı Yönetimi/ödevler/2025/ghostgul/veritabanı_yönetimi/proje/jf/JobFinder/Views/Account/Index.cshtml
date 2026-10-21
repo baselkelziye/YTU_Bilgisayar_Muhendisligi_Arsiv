@@ -1,0 +1,151 @@
+﻿@model JobFinder.Models.User
+
+@{
+	ViewData["Title"] = "Index";
+}
+<div><a asp-controller="Account" asp-action="Logout">Logout</a></div>
+<div class="row">
+	<div class="col-10">
+		<h1>Informations About You</h1>
+	</div>
+	<div class="col-2">
+		<a asp-controller="Account" asp-action="Search">Search Job</a>
+	</div>
+</div>
+<div>
+	<hr />
+	<dl class="row">
+		<div class="col-4">
+			<div class="row">
+				<div class="col-8"><h4>User</h4></div>
+				<dt class="col-4"><a asp-action="Edit" asp-controller="Account">Edit</a></dt>
+			</div>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Username)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Username)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Password)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Password)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.FullName)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.FullName)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Email)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Email)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.ExperienceYears)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.ExperienceYears)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Education)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Education)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Phone)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Phone)
+			</dd>
+			<dt class="col-sm-2">
+				@Html.DisplayNameFor(model => model.Address)
+			</dt>
+			<dd class="col-sm-10">
+				@Html.DisplayFor(model => model.Address)
+			</dd>
+		</div>
+		<div class="col-6">
+			@if (Model?.Experiences?.Count > 0)
+			{
+				<h4>Experiences</h4>
+				<dt class="col-4"><a asp-action="AddExperience" asp-controller="Account">Add Experince</a></dt>
+				foreach (var exp in Model.Experiences)
+				{
+					<dt class="col-sm-12">
+						@(exp.CompanyName + " (" + exp.StartDate + " - " + exp.EndDate ?? "" + ")")
+						<a asp-action="EditExperience" asp-route-id="@exp.ExperienceId">Edit</a>
+					</dt>
+					<dd class="col-sm-10">
+						@(exp.Position) - @exp.Description
+					</dd>
+				}
+			}
+		</div>
+		<div class="col-2">
+			<h4>Contact Companies</h4>
+			@foreach (var item in ViewBag.Contacts)
+			{
+				<dt class="row" style="color:silver">
+					@item
+				</dt>
+			}
+		</div>
+	</dl>
+	<div>Total Application Count: @ViewData["ApplicationCount"]</div>
+	<dl class="row">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>
+						ApplicationDate
+					</th>
+					<th>
+						Company Name
+					</th>
+					<th>
+						Posititon
+					</th>
+					<th>
+						Applicant
+					</th>
+					<th>
+						Job Opening Date
+					</th>
+					<th>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.Applications)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.ApplicationDate)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Job.CompanyName)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Job.Position)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Job.ApplicationCount)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Job.OpeningDate)
+						</td>
+						<td>
+							<a asp-action="Cancel" asp-route-id="@item.ApplicationId">Cancel Application</a>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+
+	</dl>
+</div>

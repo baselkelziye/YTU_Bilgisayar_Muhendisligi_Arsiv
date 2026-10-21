@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">ClassApp</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="al_c">Alıcı</string>
+    <string name="cc">CC</string>
+    <string name="bcc">BCC</string>
+    <string name="konu">Konu</string>
+    <string name="letinizi_yaz_n_z">İletinizi yazınız</string>
+
+    <string-array name="Users">
+        <item>Faruk</item>
+        <item>Mehmet</item>
+        <item>Aleyna</item>
+        <item>Su</item>
+        <item>Cenk</item>
+        <item>Uygur</item>
+        <item>Aliye</item>
+        <item>Halit</item>
+        <item>Rukiye</item>
+        <item>Nagihan</item>
+    </string-array>
+
+    <string-array name="Passwords">
+        <item>12345</item>
+        <item>123456</item>
+        <item>123</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="Sex">
+        <item>Kadın</item>
+        <item>Erkek</item>
+    </string-array>
+</resources>

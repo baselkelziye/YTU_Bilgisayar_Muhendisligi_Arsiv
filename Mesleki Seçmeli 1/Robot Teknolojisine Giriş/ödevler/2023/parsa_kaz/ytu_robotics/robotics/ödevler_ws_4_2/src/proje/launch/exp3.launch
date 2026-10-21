@@ -1,0 +1,37 @@
+<launch>
+	<param name="use_sim_time" value="true"/>
+
+	<node name="gazebo" pkg="gazebo_ros" type="gzserver" args="$(find hector_nist_arena_worlds)/worlds/exp3.world" /> 
+
+  	<!-- <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient"/> -->
+
+	<include file="$(find p3at_description)/launch/spawn_p3at.launch">
+		<arg name="robot_name" value="rtg"/>
+		<arg name="pose_args" value="-x -1.2 -y 0 -Y -1.57"/> 
+	</include>
+
+	<node name="keyboard_drive" pkg="proje" type="keyboard_cmdvel.py" output = "screen"/>
+
+	<node name="gezinge" pkg="proje" type="trajectory"/>
+
+	<node pkg="tf" type="static_transform_publisher" name="world2trajectory" args="0 0 0 0 0 0 /map /trajectory 100"/>
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find proje)/rviz/proje.rviz"/>
+
+	<!-- BU LAUNCH DOSYASINA BURDAN SONRA EKLEME YAPABILIRSINIZ -->
+	<!-- <node name= "camera_read" pkg= "proje" type="camera_read.py" output="screen" required = "true"/> -->
+	
+	<node name="barrels_detection" pkg="hector_barrels_detection" type="barrels_detection_node.py" output="screen" respawn="true">
+    <remap from="~image" to="/camera360/equirectangular_low_fov" />
+    <remap from="project_pixel_to_ray" to="/camera360_equirectangular_low_fov/project_pixel_to_ray" />
+    <remap from="image_percept" to="image_percept_trash" />
+    <remap from="/move_group/get_distance_to_obstacle" to="/worldmodel_main/get_distance_to_obstacle" />
+    
+    <param name="detection_frequency" value="1.0" />
+    <param name="image_projection_raycast" value="true" />
+    <param name="barrel_type" value="white" />
+  </node>
+	
+
+	<!-- BURAYA KADAR -->	
+</launch>

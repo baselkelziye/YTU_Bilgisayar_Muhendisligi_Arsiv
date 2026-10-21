@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+
+    android:paddingRight="10dp"
+    tools:context="tr.com.berkaytutal.beslenmedanismani.ProgramCommentsActivity">
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/programCommentsFAB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/pencil" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipeRefreshLayoutComments">
+        <ListView
+            android:id="@+id/programCommentsListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/empty"
+            android:text="This program has no comments."
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="16sp"
+
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navbar_information"
+            android:title="@string/navbar_information" />
+        <item
+            android:id="@+id/navbar_lessons"
+            android:title="@string/navbar_lessons" />
+    </group>
+</menu>

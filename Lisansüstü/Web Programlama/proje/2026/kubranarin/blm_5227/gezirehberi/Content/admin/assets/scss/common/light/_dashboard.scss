@@ -1,0 +1,150 @@
+.card-people {
+  position: relative;
+  padding-top: 20px;
+
+  img {
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .weather-info {
+    position: absolute;
+    top: 30px;
+    right: 24px;
+
+    sup {
+      font-size: 18px;
+    }
+
+    .location {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.weather-info {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+
+  sup {
+    font-size: 18px;
+  }
+
+  .location {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+#sales-chart-legend {
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    display: none;
+
+    li {
+      @include display-flex;
+      @include align-items(center);
+
+      span {
+        width: 1.562rem;
+        height: 0.312rem;
+        margin-right: .4rem;
+        display: inline-block;
+        font-size: $default-font-size;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  &> :first-child {
+    display: block;
+  }
+
+  .rtl & {
+    ul {
+      padding-right: 0;
+
+      li {
+        margin-right: 0;
+        margin-left: 8%;
+
+        span {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+#north-america-chart-legend,
+#south-america-chart-legend {
+  ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    display: none;
+
+    li {
+      @include display-flex;
+      @include align-items(center);
+      margin-top: 1rem;
+
+      span {
+        width: 20px;
+        height: 20px;
+        margin-right: .4rem;
+        display: inline-block;
+        font-size: $default-font-size;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &> :first-child {
+    display: block;
+  }
+
+  .rtl & {
+    ul {
+      padding-right: 0;
+
+      li {
+        margin-right: 0;
+        margin-left: 8%;
+
+        span {
+          margin-right: 0;
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.daoughnutchart-wrapper {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.doughnut-wrapper {
+  width: 210px;
+}
+
+.doughnutjs-wrapper {
+  height: 240px !important;
+
+  @media (max-width:991px) {
+    height: auto !important;
+  }
+}

@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-3/YPG/Lab4/main3"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _readFromFile, symObjAddr: 0x0, symBinAddr: 0x100002F04, symSize: 0x33C }
+  - { offsetInCU: 0xEF, offset: 0xEF, size: 0x8, addend: 0x0, symName: _readFromFile, symObjAddr: 0x0, symBinAddr: 0x100002F04, symSize: 0x33C }
+  - { offsetInCU: 0x1B2, offset: 0x1B2, size: 0x8, addend: 0x0, symName: _displayArray, symObjAddr: 0x33C, symBinAddr: 0x100003240, symSize: 0xB8 }
+  - { offsetInCU: 0x200, offset: 0x200, size: 0x8, addend: 0x0, symName: _sortArray, symObjAddr: 0x3F4, symBinAddr: 0x1000032F8, symSize: 0x13C }
+  - { offsetInCU: 0x278, offset: 0x278, size: 0x8, addend: 0x0, symName: _arrayToLL, symObjAddr: 0x530, symBinAddr: 0x100003434, symSize: 0x25C }
+  - { offsetInCU: 0x2E2, offset: 0x2E2, size: 0x8, addend: 0x0, symName: _displayLL, symObjAddr: 0x78C, symBinAddr: 0x100003690, symSize: 0xA0 }
+  - { offsetInCU: 0x314, offset: 0x314, size: 0x8, addend: 0x0, symName: _freeArray, symObjAddr: 0x82C, symBinAddr: 0x100003730, symSize: 0xC0 }
+  - { offsetInCU: 0x362, offset: 0x362, size: 0x8, addend: 0x0, symName: _writeToFile, symObjAddr: 0x8EC, symBinAddr: 0x1000037F0, symSize: 0x22C }
+  - { offsetInCU: 0x3D2, offset: 0x3D2, size: 0x8, addend: 0x0, symName: _report, symObjAddr: 0xB18, symBinAddr: 0x100003A1C, symSize: 0x33C }
+  - { offsetInCU: 0x498, offset: 0x498, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xE54, symBinAddr: 0x100003D58, symSize: 0xBC }
+...

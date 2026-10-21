@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/ytü/semester-4/data_structures/lab_3/main"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _getInfos, symObjAddr: 0x0, symBinAddr: 0x100002E54, symSize: 0x348 }
+  - { offsetInCU: 0x52, offset: 0x52, size: 0x8, addend: 0x0, symName: _getInfos, symObjAddr: 0x0, symBinAddr: 0x100002E54, symSize: 0x348 }
+  - { offsetInCU: 0xBC, offset: 0xBC, size: 0x8, addend: 0x0, symName: _testInfos, symObjAddr: 0x348, symBinAddr: 0x10000319C, symSize: 0x228 }
+  - { offsetInCU: 0x142, offset: 0x142, size: 0x8, addend: 0x0, symName: _printMatrix, symObjAddr: 0x570, symBinAddr: 0x1000033C4, symSize: 0x140 }
+  - { offsetInCU: 0x19E, offset: 0x19E, size: 0x8, addend: 0x0, symName: _freeMemory, symObjAddr: 0x6B0, symBinAddr: 0x100003504, symSize: 0x94 }
+  - { offsetInCU: 0x1FA, offset: 0x1FA, size: 0x8, addend: 0x0, symName: _swap, symObjAddr: 0x744, symBinAddr: 0x100003598, symSize: 0x3C }
+  - { offsetInCU: 0x23A, offset: 0x23A, size: 0x8, addend: 0x0, symName: _heapify, symObjAddr: 0x780, symBinAddr: 0x1000035D4, symSize: 0x1D4 }
+  - { offsetInCU: 0x2A4, offset: 0x2A4, size: 0x8, addend: 0x0, symName: _build_max_heap, symObjAddr: 0x954, symBinAddr: 0x1000037A8, symSize: 0x70 }
+  - { offsetInCU: 0x2E4, offset: 0x2E4, size: 0x8, addend: 0x0, symName: _max_heap_matrix, symObjAddr: 0x9C4, symBinAddr: 0x100003818, symSize: 0xE8 }
+  - { offsetInCU: 0x332, offset: 0x332, size: 0x8, addend: 0x0, symName: _delete_heap_max, symObjAddr: 0xAAC, symBinAddr: 0x100003900, symSize: 0x84 }
+  - { offsetInCU: 0x364, offset: 0x364, size: 0x8, addend: 0x0, symName: _selectMax, symObjAddr: 0xB30, symBinAddr: 0x100003984, symSize: 0x180 }
+  - { offsetInCU: 0x3FC, offset: 0x3FC, size: 0x8, addend: 0x0, symName: _deleteMax, symObjAddr: 0xCB0, symBinAddr: 0x100003B04, symSize: 0x174 }
+  - { offsetInCU: 0x490, offset: 0x490, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xE24, symBinAddr: 0x100003C78, symSize: 0xD4 }
+...

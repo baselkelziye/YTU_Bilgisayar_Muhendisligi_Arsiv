@@ -1,0 +1,8 @@
+torch
+tensorflow
+bitsandbytes
+accelerate
+peft
+gradio
+transformers @ git+https://github.com/huggingface/transformers
+codellm @ git+https://github.com/parsakzr/codellm.git

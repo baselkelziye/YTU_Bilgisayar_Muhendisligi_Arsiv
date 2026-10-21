@@ -1,0 +1,43 @@
+[33mcommit 5bbf0b3f96dc90d0c92860367d6896f26a62846b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: eyup <eyup.celen00@gmail.com>
+Date:   Fri May 2 15:31:44 2025 +0300
+
+    repositories created
+
+ .../java/com/sas/social/entity/CommunityPost.java  |   1 [31m-[m
+ src/main/java/com/sas/social/entity/User.java      | 101 [32m++++++++++++++++++++[m[31m-[m
+ .../java/com/sas/social/entity/UserCommunity.java  |  95 [32m+++++++++++++++[m[31m----[m
+ .../sas/social/repository/CategoryRepository.java  |   9 [32m++[m
+ .../sas/social/repository/CommentRepository.java   |   9 [32m++[m
+ .../social/repository/CommunityPostRepository.java |   9 [32m++[m
+ .../sas/social/repository/CommunityRepository.java |   9 [32m++[m
+ .../com/sas/social/repository/ICommunityDal.java   |  19 [31m----[m
+ .../com/sas/social/repository/PostRepository.java  |   9 [32m++[m
+ .../social/repository/UserCommunityRepository.java |  11 [32m+++[m
+ .../com/sas/social/repository/UserRepository.java  |   9 [32m++[m
+ 11 files changed, 242 insertions(+), 39 deletions(-)
+
+[33mcommit def5843d4ae31e6c2fe7a025c996672733d22fe4[m
+Author: eyup <eyup.celen00@gmail.com>
+Date:   Thu May 1 15:59:18 2025 +0300
+
+    Initial commit, entities created
+
+ .gitattributes                                     |   2 [32m+[m
+ .gitignore                                         |  33 [32m+++[m
+ .mvn/wrapper/maven-wrapper.properties              |  19 [32m++[m
+ mvnw                                               | 259 [32m+++++++++++++++++++++[m
+ mvnw.cmd                                           | 149 [32m++++++++++++[m
+ pom.xml                                            |  75 [32m++++++[m
+ .../java/com/sas/social/SocialApplication.java     |  13 [32m++[m
+ src/main/java/com/sas/social/entity/Category.java  |  46 [32m++++[m
+ src/main/java/com/sas/social/entity/Comment.java   |  77 [32m++++++[m
+ src/main/java/com/sas/social/entity/Community.java |  78 [32m+++++++[m
+ .../java/com/sas/social/entity/CommunityPost.java  |  53 [32m+++++[m
+ src/main/java/com/sas/social/entity/Post.java      | 125 [32m++++++++++[m
+ src/main/java/com/sas/social/entity/User.java      |  66 [32m++++++[m
+ .../java/com/sas/social/entity/UserCommunity.java  |  62 [32m+++++[m
+ .../com/sas/social/repository/ICommunityDal.java   |  19 [32m++[m
+ src/main/resources/application.properties          |  11 [32m+[m
+ .../com/sas/social/SocialApplicationTests.java     |  13 [32m++[m
+ 17 files changed, 1100 insertions(+)

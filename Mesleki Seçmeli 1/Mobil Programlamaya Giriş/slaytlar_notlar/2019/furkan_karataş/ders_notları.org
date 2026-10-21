@@ -1,0 +1,167 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Mobil Programlamaya Giriş
+** 1. Ders
+[[https://docs.google.com/viewer?url=https%253A%252F%252Fwww.ce.yildiz.edu.tr%252Fpersonal%252Famacg%252Ffile%252F34465%252F18_19_Syllabus_MPG.pdf][Syllabus]]
+
+*** 2018 Trendleri:
+- Augmented Reality and Virtual Reality
+- Mobile Payment
+- Blockchain
+- Security \rightarrow Malware \rightarrow Sandbox (malware bulmaya yarayan sanal makine)
+- Wearable apps
+- Instant apps
+- IoT
+- Cloud Based apps
+- Beacon and Location-Based Services
+- Chatbots
+- AI
+- Personalization
+- Design Approach
+- Cross Platform tools
+** 2. Ders (yazan: Bilal Güvenç)
+*** Pervasive Computing (Ubiquitous Computing)
+- Ubiquitous Computing is a concept in software engineering and computer science where computing is made to appear everwhere and anywhere.
+- In constrast to desktop computing, ubiquitous computing can occur using any device, in any location and in any format.
+
+*** Mobile Computing
+Mobile computing is a technology that allows transmission of data, voice and
+video via a computer or any other wireless enabled device without having to be
+connected to a fixed physical link.
+
+1. Mobile Hardware
+2. Mobile Software
+	- Operating Systems
+	- Applications
+	- Security Malware
+3. Mobile Communication
+	- Global System for Mobile Communication (GSM)
+	- (SMS)
+	- Global Positioning System (GPS)
+	- Internet
+	- WiFi
+	- Bluetooth
+	- Radio
+
+Feature Phone -> Personal Digital Assistan (PDA) -> Smartphone -> Mobile OS -> Tablet -> Wearable Tech -> Internet of Things (IoT)
+
+*** Computer - Computer Communication
+File Transfer Protocol FTP, TCP, MQTT, Qualm vs.
+
+Human to Computer Communication
+- Touch Screen
+- Touch Pad
+- Keyboard
+- Mouse
+- Microphone
+- Stylus Pen
+- Camera - Motion Capture
+- Fingerprint
+
+Computer to Human Communication
+- Speakers
+- Monitors (Screens)
+- LED Lights
+- Vibration
+
+In-Site Processing
+On-P… Processing
+	
+*** Research Topics Related to Ubiquitous Computing
+- Distributed Computing
+- Mobile Computing
+- Location Computing
+- Mobile Networking
+- Context-Aware Computing
+- Sensor Networks
+- Internet of Things
+- Human-Computer Interaction
+- Artificial Intelligence
+
+Ambient Intelligence
+In computing, artificial intelligence refers to electronic enviroments that are
+sensitive and responsive to the presence of people.
+- Embedded (Gömülü)
+- Personalized (Kişiselleştirilebilir)
+- Adaptive (Adapte olan)
+- Anticipatery (Algılayıp adapte olan)
+- Context-Awareness
+
+Non-Intrusive
+Intrusive
+
+*** Mobile Applications
+A mobile app is a computere program designed to run on smartphones, tablets,
+tablet pc's and other mobile devices.
+
+Simulation vs Emulation
+A simulation is a system that behaves similar something else, but is implemented
+in an entirely different way. It provides the basic behaviours of a system but
+may not necessarily abide all of the rules of the system beign simulated. It is
+there to give you an idea about how something works.
+
+| Emulators                                   | Simulators                      |
+|---------------------------------------------+---------------------------------|
+| Written in machine-level assembly languages | Written in high-level languages |
+| More suitable for debugging                 | Difficult for debugging purpose |
+| Complete re-implementation                  | Partial re-implementation       |
+
+Mobile Application Development Constraints
+- Limited Battery Life
+- Limited Hardware
+	- CPU
+	- Memory
+	- Storage
+- Responsiveness
+- Security and Privacy
+- Range, Bandwidth & Quota
+- Simplicity & User Friendly 
+- Transmission Interference
+	- Downloading
+	- Uploading
+	- Streaming
+- Potential Hazards
+
+** 3. Ders
+*** Mobile Development Techniques
+- Native Development (SDK, NDK, Specific Hardware, Software)
+- Cross-Platform Development (JS, Dart, C#, Qt, HTML, CSS...)
+- Mobile Web Development (Browser, HTML, CSS, JS)
+- Hybrid App Development (HTML, CSS, JS, Webkit, Native Container)
+
+| Decision Criteria          | Native                                  | Mobile Web         | Cross-Platform                                     |
+|----------------------------+-----------------------------------------+--------------------+----------------------------------------------------|
+| Quality of user experience | *Excellent*                             | Very Good          | Not as good as Native                              |
+| Quality of apps            | *High*                                  | Medium             | Medium to low                                      |
+| Potential users            | Limited to a particular mobile platform | *Maximum*          | Large as it reaches to users of different platform |
+| App development cost       | High                                    | *Low*              | Medium to low                                      |
+| Security of app            | *Excellent*                             | Depends on browser | Not good                                           |
+| Supportability             | Complex                                 | *Simple*           | Medium to complex                                  |
+| Ease of updating           | Complex                                 | *Simple*           | Medium to complex                                  |
+| Time-to-market             | High                                    | Medium             | *Short*                                            |
+
+*** Requirements of a Cross-Platform framework
+- Multiple mobile platform support
+- Built-in features
+- Plugin supportability
+- Security
+- Power Consumption
+  - Resource management (Memory, Storage, Cpu)
+- Open source
+- Backend Communication
+- Rich user interface
+*** App Components
+Essential Building Blocks
+- *Activities* - uygulamalarda gözüken sayfalar
+- *Services* - arka planda çalışan işlemler
+- *Broadcast Receivers* - interruptlardır, gelen aramalar, düşük şarjda kameranın kapanması
+- *Content Providers* - kalıcı verilerin kaydedilmesi, alınması, yönetilmesi sağlanır
+- Intens (Activating Components) - yukarıdaki dörtlü intentler ile çalışmaya başlar
+- AndroidManifest File - uygulama ile ilgili bilgiler, sistem gereksinimleri, min. os versiyonu
+- App Resources - resimler, animasyonlar, tasarımlar, renkler, yazılar (strings)
+- Device Configuration Changes - ekranın yan döndürülmesi, aktivitenin kapanması, fragment
+- App Permissions - … permissions, runtime permissions
+

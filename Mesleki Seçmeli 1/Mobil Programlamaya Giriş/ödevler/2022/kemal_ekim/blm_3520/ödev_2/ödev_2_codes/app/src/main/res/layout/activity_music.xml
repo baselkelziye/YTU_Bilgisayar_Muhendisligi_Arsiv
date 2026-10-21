@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95FF7A"
+    tools:context=".MusicActivity">
+
+    <TextView
+        android:id="@+id/song_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_margin="50dp"
+        android:padding="12dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/arrow_down"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete_button"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/music_note"
+        android:id="@+id/icon_asset"
+        android:padding="10dp"
+        android:layout_above="@id/controls"
+        />
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        >
+
+        <SeekBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/white" />
+
+        <TextView
+            android:id="@+id/timeNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="0:00"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/timeTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:44"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_below="@id/bar"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeTotal"
+            android:padding="20dp"
+            android:layout_marginBottom="50dp"
+            >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/previous_button"
+                android:id="@+id/previous"
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/next_button"
+                android:id="@+id/next"
+                />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pause_button"
+                android:id="@+id/pause_play"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

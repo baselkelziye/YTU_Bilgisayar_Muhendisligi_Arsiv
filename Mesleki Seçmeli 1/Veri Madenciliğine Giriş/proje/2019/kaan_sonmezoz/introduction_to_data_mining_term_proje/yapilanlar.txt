@@ -1,0 +1,70 @@
+Verisetinin bulunduğu internet sitesinde verisetinin 116 satırdan oluştuğu söyleniyordu.
+Ancak verisetini incelendiğinde 117 tane sütun olduğu gözlemlenmiştir.
+
+Sütunların özellikleri:
+
+1. Team won the game (1 or -1)
+2. Cluster ID (related to location)
+3. Game mode (eg All Pick)
+4. Game type (eg. Ranked)
+5 - end: Each element is an indicator for a hero. Value of 1 indicates that a player from team '1' played as that hero and '-1' for the other team. Hero can be selected by only one player each game. This means that each row has five '1' and five '-1' values.
+
+
+5 ve sonrasındaki herolar https://github.com/kronusme/dota2-api/blob/master/data/heroes.json sitesindeki mappinge göre sıralanmıştır. Sütunların belirtilmiş olduğu özelliklere göre verisetine header eklenmiştir. Bu sayede daha rahat incelenmesi sağlanmıştır.
+
+
+113 tane hero olması gerekirken mapping için kullanılması verilen linkte 112 hero bulunmaktadır.
+https://api.opendota.com/api/heroes ile bütün hero'lar çekildiğinde mapping eksik olan 24 idli heronun burada da olmadığı tespit edilmiştir. Bunun üstüne en son 113 id'li hero vardı mappingte ondan sonra gelen id'si 114 hero eklendi json dosyasına
+
+
+Bütün columnlar aslında kategorik bir değer bizler için. Nümerik değil bu değerler.
+
+
+Verisetinin bilgilerinin paylaşıldığı web sitesindeki bilgiler yeterli değil. Yani kategorik bir değer olan feautre'ın hangi kategorik değerleri alabileceğinden bahsedilmemiş.
+Buna örnek olarak game_mode verilebilir (3. sütun). Verisetini oluşturan kod incelenmiş ve opendota2 api'ndan veri çekmek için yazılan python wrapper'ının kullanıldığı
+anlaşılınca opendota2 api'ndaki game mode'ların değerleri bulunmuştur(https://github.com/joshuaduffy/dota2api/blob/master/docs/source/responses.rst).
+
+
+game_mode
+Value	Description
+0	Unknown
+1	All Pick
+2	Captain's Mode
+3	Random Draft
+4	Single Draft
+5	All Random
+6	Intro
+7	Diretide
+8	Reverse Captain's Mode
+9	The Greeviling
+10	Tutorial
+11	Mid Only
+12	Least Played
+13	New Player Pool
+14	Compendium Matchmaking
+15	Custom
+16	Captains Draft
+17	Balanced Draft
+18	Ability Draft
+19	Event (?)
+20	All Random Death Match
+21	Solo Mid 1 vs 1
+22	Ranked All Pick
+
+4. sütun Game type (eg. Ranked) olarak belirtilmiş. Ancak wrapper incelediğinde ilgili sütunun lobby_type oldugu belirlenmiştir. Bu sütunun alabileceği değerler:
+lobby_type
+Status	Description
+-1	Invalid
+0	Public matchmaking
+1	Practice
+2	Tournament
+3	Tutorial
+4	Co-op with AI
+5	Team match
+6	Solo queue
+7	Ranked matchmaking
+8	Solo Mid 1 vs 1
+
+
+
+Verisetinin weka tarafından açılabilmesi adına sütunlarla ilgili header bilgileri verildi. ilk satır olarak

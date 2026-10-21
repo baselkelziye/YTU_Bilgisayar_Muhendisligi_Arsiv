@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      
+      <!-- Başlık -->
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Kategori Ortalama Puanı</h3>
+        <p class="text-muted mb-0">Seçtiğiniz kategorinin ortalama puanını hızlıca görüntüleyin.</p>
+      </div>
+
+      <!-- Form Kartı -->
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <form method="POST" class="row g-3">
+            <div class="col-md-8">
+              <label for="cat_id" class="form-label fw-semibold">Kategori Seçiniz</label>
+              <select name="cat_id" id="cat_id" class="form-select" required>
+                <option value="">-- Seçiniz --</option>
+                {% for cat in all_categories %}
+                  <option value="{{ cat.category_id }}" {% if request.args.get('cat_id') == cat.category_id|string %}selected{% endif %}>
+                    {{ cat.name }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="submit" class="btn btn-primary w-100">
+                <i class="fas fa-chart-line me-1"></i>Analiz Et
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sonuç Gösterimi -->
+      {% if category_avg_data and category_avg_data|length > 0 %}
+        {% set row = category_avg_data[0] %}
+        <div class="card mt-4 shadow border-0">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fas fa-info-circle me-2"></i> Kategori Bilgisi
+            </h5>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="mb-2"><strong>Kategori Adı:</strong></p>
+                <p class="mb-2"><strong>Ortalama Puan:</strong></p>
+              </div>
+              <div class="col-md-6">
+                <p class="mb-2">{{ row.cat_name }}</p>
+                <p class="mb-2">{{ row.avg_rating if row.avg_rating else 0 }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% elif category_avg_data is defined and category_avg_data|length == 0 %}
+        <div class="alert alert-warning mt-3 shadow">
+          <i class="fas fa-exclamation-triangle me-2"></i> Bu kategoride ürün olmayabilir veya puan bilgisi yok.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

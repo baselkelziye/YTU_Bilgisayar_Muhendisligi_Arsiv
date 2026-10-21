@@ -1,0 +1,81 @@
+////////// SIDEBAR ////////
+$sidebar-width-lg: 235px;
+$sidebar-width-mini: 185px;
+$sidebar-width-icon: 70px;
+
+$sidebar-light-bg: #fff;
+$sidebar-light-menu-color: #6C7383;
+$sidebar-light-submenu-color: #fff;
+$sidebar-light-menu-active-bg: $primary;
+$sidebar-light-menu-active-color: #fff;
+$sidebar-light-menu-hover-bg: $primary;
+$sidebar-light-menu-hover-color: #fff;
+$sidebar-light-submenu-hover-color: $white;
+$sidebar-light-submenu-active-color: $white;
+$sidebar-light-menu-icon-color: $sidebar-light-menu-color;
+$sidebar-light-menu-arrow-color: #686868;
+$sidebar-light-profile-name-color: #404852;
+$sidebar-light-profile-title-color: #8d9498;
+
+$sidebar-dark-bg: #232227;
+$sidebar-dark-menu-color: #FFFFFF;
+$sidebar-dark-menu-active-bg: #4B49AC;
+$sidebar-dark-menu-active-color: $white;
+$sidebar-dark-menu-hover-bg: #4B49AC;
+$sidebar-dark-menu-hover-color: #fff;
+$sidebar-dark-submenu-color: $sidebar-dark-menu-color;
+$sidebar-dark-submenu-hover-bg: initial;
+$sidebar-dark-submenu-hover-color: #9a94a7;
+$sidebar-dark-menu-icon-color: $sidebar-dark-menu-color;
+$sidebar-dark-profile-name-color: #ffffff;
+$sidebar-dark-profile-title-color: #8d9498;
+
+$sidebar-menu-font-size: .875rem;
+$sidebar-menu-padding-left: 1rem;
+$sidebar-menu-padding-right: 1.937rem;
+$sidebar-menu-padding-top: .8125rem;
+$sidebar-menu-padding-bottom: .8125rem;
+
+$sidebar-submenu-padding: .25rem 0 0 3.07rem;
+$sidebar-submenu-font-size: .875rem;
+$sidebar-submenu-item-padding: .7rem 1rem;
+
+$sidebar-icon-font-size:  1rem;
+$sidebar-arrow-font-size: .625rem;
+
+$sidebar-profile-bg: transparent;
+$sidebar-profile-padding: 0 1.625rem 2.25rem 1.188rem;
+
+$sidebar-mini-menu-padding: .8125rem 1rem .8125rem 1rem;
+
+$sidebar-icon-only-menu-padding: .5rem 1.625rem .5rem 1.188rem;
+$sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
+
+$sidebar-box-shadow: 6px 16px 31px -18px #b7bcd1;
+
+$rtl-sidebar-submenu-padding: 0 4.5rem 0 0;
+
+$icon-only-collapse-width: 190px;
+$icon-only-menu-bg-light: $sidebar-light-bg;
+$icon-only-menu-bg-dark: $sidebar-dark-bg;
+
+///////// SIDEBAR ////////
+
+///////// BOXED LAYOUT ///////
+$boxed-container-width: 1200px;
+$boxed-layout-bg: #c6c8ca;
+///////// BOXED LAYOUT ///////
+
+///////// SETTINGS PANEL ////////
+
+$settings-panel-width: 300px;
+
+///////// NAVBAR ////////
+
+$navbar-default-bg: $white;
+$navbar-height: 60px;
+$navbar-menu-color: #6C7383;
+$navbar-font-size: 1rem;
+$navbar-icon-font-size: .9375rem;
+
+///////// NAVBAR ////////

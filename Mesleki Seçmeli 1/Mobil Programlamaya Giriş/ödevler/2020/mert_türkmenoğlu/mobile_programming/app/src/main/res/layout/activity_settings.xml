@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/settings_username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_text"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/settings_gender_text"
+        app:layout_constraintEnd_toStartOf="@id/settings_username_text_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_username_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_text"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@id/settings_username_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/settings_username_text"
+        app:layout_constraintBottom_toBottomOf="@id/settings_username_text"/>
+
+    <TextView
+        android:id="@+id/settings_gender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_username_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_username_text"
+        app:layout_constraintBottom_toTopOf="@id/settings_gender_spinner"/>
+
+    <Spinner
+        android:id="@+id/settings_gender_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@id/settings_height_text"
+        app:layout_constraintStart_toStartOf="@id/settings_gender_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_gender_text"/>
+
+    <TextView
+        android:id="@+id/settings_height_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/height"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_username_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_gender_spinner"
+        app:layout_constraintBottom_toTopOf="@id/settings_height_et"/>
+
+    <EditText
+        android:id="@+id/settings_height_et"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:background="@drawable/login_button_shape"
+        android:ems="5"
+        android:inputType="number"
+        android:autofillHints=""
+        android:hint="@string/height"
+        android:gravity="center|center_horizontal"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_height_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_height_text"
+        app:layout_constraintBottom_toTopOf="@id/settings_weight_text"/>
+
+    <TextView
+        android:id="@+id/settings_weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_username_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_height_et"
+        app:layout_constraintBottom_toTopOf="@id/settings_weight_et"/>
+
+    <EditText
+        android:id="@+id/settings_weight_et"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:ems="5"
+        android:background="@drawable/login_button_shape"
+        android:inputType="number"
+        android:autofillHints=""
+        android:hint="@string/weight"
+        android:gravity="center|center_horizontal"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_weight_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_weight_text"
+        app:layout_constraintBottom_toTopOf="@id/settings_age_text" />
+
+    <TextView
+        android:id="@+id/settings_age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_username_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_weight_et"
+        app:layout_constraintBottom_toTopOf="@id/settings_age_picker"/>
+
+    <NumberPicker
+        android:id="@+id/settings_age_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_age_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_age_text"
+        app:layout_constraintBottom_toTopOf="@id/settings_mode_text" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/settings_age_spinner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/montserrat"-->
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+<!--        android:textColor="@android:color/black"-->
+<!--        app:layout_constraintStart_toStartOf="@id/settings_age_text"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/settings_age_text"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/settings_mode_text"/>-->
+
+    <TextView
+        android:id="@+id/settings_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mode"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/settings_username_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_age_picker"
+        app:layout_constraintBottom_toTopOf="@id/settings_mode_radio_group"/>
+
+    <RadioGroup
+        android:id="@+id/settings_mode_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/settings_mode_text"
+        app:layout_constraintTop_toBottomOf="@id/settings_mode_text"
+        app:layout_constraintBottom_toTopOf="@id/settings_save_btn">
+
+        <RadioButton android:id="@+id/setting_dark_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark"
+            android:fontFamily="@font/montserrat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"/>
+        <RadioButton
+            android:id="@+id/settings_light_radio_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light"
+            android:fontFamily="@font/montserrat"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/black"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/settings_save_btn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_button_shape"
+        android:text="@string/save"
+        android:textAllCaps="true"
+        android:fontFamily="@font/montserrat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/settings_mode_radio_group"
+        app:layout_constraintStart_toStartOf="@id/settings_mode_radio_group"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

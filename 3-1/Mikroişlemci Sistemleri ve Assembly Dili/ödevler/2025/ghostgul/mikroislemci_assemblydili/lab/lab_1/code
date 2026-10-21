@@ -1,0 +1,84 @@
+STSG SEGMENT PARA STACK 'STSGM'
+    DW 20 DUP(?)
+STSG ENDS
+
+DTSG SEGMENT PARA 'DTSGM'
+    N DW 4                                  
+    midterm DW 77, 85, 64, 96                
+    final DW 56, 63, 86, 74                  
+    obp DW 4 DUP(?)                       
+DTSG ENDS
+
+CDSG SEGMENT PARA 'CDSGM'
+    ASSUME CS: CDSG, DS: DTSG, SS: STSG
+    
+    ANA PROC FAR
+
+        PUSH DS
+        XOR AX, AX
+        PUSH AX    
+        MOV AX, DTSG
+        MOV DS, AX
+
+        ; CODE
+        XOR AX, AX
+        MOV CX, N                ; sayaçı öğrenci sayısına eşitle
+        MOV SI, 0                ; dizide dönecek olan SI ilk elemandan başlasın
+
+    L1:
+        MOV AX, midterm[SI]      ; AX = n. öğrencinin vizesi
+        MOV BX, 4                
+        MUL BX                    
+        MOV BX, AX               ; öğrencinin vizesini 4 ile çarpıp BX'de tut (%40 etkiliyor)
+        MOV AX, final[SI]        ; AX = n. öğrencinin finali
+        MOV DX, 6                
+        MUL DX                   
+        ADD AX, BX               ; öğrencinin finalini 6 ile çarp ve vizesinin 4 ile çarpılmış hali ile topla
+
+        MOV DX, 0                
+        MOV BX, 10
+        DIV BX                   ; çıkan sonucu 10'a böl
+        CMP DX, 5                ; kalanı kontrol et DX > 5 değilse yuvarlamayı atla
+        JL NO_ROUND
+        INC AX                   ; yuvarlamak için 1 ekle (8086'da float sayılar yok)
+
+    NO_ROUND:
+        MOV obp[SI], AX          ; Hesaplamadan sonra öğrencinin not ortalamasını obp dizisine ekle
+
+        ADD SI, 2                ; sonraki öğrenciye geç
+        LOOP L1                  ; L1 loopuna dön
+
+        MOV CX, N                ; CX = 4
+        DEC CX                   
+                            
+    OUTER_SORT:                  ;    Bubble sort algoritmasını assembly dilinde kullanarak 
+        MOV SI, 0                ; öğrenci not ortalamalarından oluşturulan obp dizisini sırala
+        MOV DI, SI
+        MOV BX, CX
+        PUSH CX                  ; sayacı sakla çünkü iki tane loop var :)
+
+    INNER_SORT:            
+        MOV AX, obp[SI]
+        CMP AX, obp[DI+2]
+        JGE NO_SWAP
+
+        MOV DX, obp[DI+2]
+        MOV obp[DI+2], AX
+        MOV obp[SI], DX
+
+    NO_SWAP:                    ; küçükten büyüğe sırala, sonraki daha küçük ise yer değiştir
+        ADD SI, 2
+        ADD DI, 2
+        DEC BX
+        JNZ INNER_SORT
+
+        POP CX                  ; outer loop için yığından sayacı geri al 
+        DEC CX
+        JNZ OUTER_SORT
+
+        RETF
+    ANA ENDP
+
+CDSG ENDS
+
+    END ANA

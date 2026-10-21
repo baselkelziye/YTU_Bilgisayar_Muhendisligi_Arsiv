@@ -1,0 +1,46 @@
+/* Icons */
+
+.icons-list {
+  border-left: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  >div {
+    background: $white;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+    @include display-flex;
+    @include align-items(center);
+    padding:15px 15px;
+    font-weight: 400;
+    font-size: $default-font-size;
+
+    i {
+      display: inline-block;
+      font-size: 20px;
+      width: 40px;
+      text-align: left;
+      color: $primary;
+    }
+  }
+}
+
+.icon-in-bg {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+}
+
+.icon-lg {
+  font-size: 2.875rem;
+}
+
+
+.icon-md {
+  font-size: 2rem;
+}
+
+.icon-sm {
+  font-size: 1rem;
+}

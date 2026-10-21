@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue">
+
+
+    <Button
+        android:id="@+id/menu_bt_profile"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200sp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/menu_bt_announcement"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text="Duyurular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300sp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/menu_bt_createannounce"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text="Duyuru Paylaş"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400sp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

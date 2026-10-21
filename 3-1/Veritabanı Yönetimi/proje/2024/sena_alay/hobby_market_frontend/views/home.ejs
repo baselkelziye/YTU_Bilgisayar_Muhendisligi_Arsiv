@@ -1,0 +1,243 @@
+<%- include("header.ejs",{title:"Ana Sayfa" , activeTab: "home" }) %>
+
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>anasayfa</h4>
+                        <h2 class="text-dark">hobi pazarı</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <style>
+        .search-bar {
+            margin: 10px 0px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            width: 55%;
+            padding: 10px;
+            margin-right: 5px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 50px;
+            margin-right: 5px;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+
+        .filter-products {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .filter-products input[type="number"] {
+            width: 30%;
+            padding: 10px;
+            margin-right: 5px;
+            border: 2px solid #ccc;
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Aramak istediğiniz ürünün adını girin.." />
+                        <button onclick="searchProducts();">Ara</button>
+                        <div class="filter-products">
+                            <input type="number" id="priceInput" placeholder="Min Fiyat" min="0" />
+                            <button onclick="filterProduct();">Ürünün Alt Limitine Göre Filtrele</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row d-flex" id="__products__">
+                        <!-- <div class="col-lg-4 col-md-4 all des">
+                                <div class="product-item">
+                                    <a href="#"><img src="assets/images/product_01.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="#">
+                                            <h4>Tittle goes here</h4>
+                                        </a>
+                                        <h6>$18.25</h6>
+                                        <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                        <% for(const product of products) { %>
+                            <div class="col-lg-4 col-md-4 all des product-item-parent" data-PID="<%= product.id %>">
+                                <div class="product-item">
+                                    <a href="/product/<%= product.id %>"><img src="http://165.227.132.99/api/<%= product.image %>" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="/product/<%= product.id %>">
+                                            <h4>
+                                                <%= product.name %>
+                                            </h4>
+                                        </a>
+                                        <h6>₺ <%= product.price %>
+                                        </h6>
+                                        <ul class="stars">
+                                            <% if(Math.floor(product.stars)==0) { %>
+                                                <li><i class="fa fa-star invisible"></i></li>
+                                                <%}else%>
+                                                    <% for(let i=0;i<Math.floor(product.stars);i++) { %>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <%}%>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <%}%>
+
+                    </div>
+                </div>
+                <!-- <div class="col-md-12">
+                    <ul class="pages">
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function searchProducts() {
+            var myHeaders = new Headers();
+            myHeaders.append("authorization", document.cookie.split("=")[1]);
+            var requestOptions = {
+                method: "GET",
+                headers: myHeaders,
+            };
+
+            const rawRes = await fetch("http://165.227.132.99/api/search/" + document.getElementById("searchInput").value ?? " ", requestOptions);
+
+            if (rawRes.ok == false) {
+                const products = Array.from(document.getElementsByClassName("product-item-parent")).forEach((item) => {
+                    item.style.display = "block";
+                });
+            } else {
+
+                const res = await rawRes.json();
+
+                const products = Array.from(document.getElementsByClassName("product-item-parent")).forEach((item) => {
+                    let ID = Number(item.getAttribute("data-PID"))
+                    if (res.data.includes(ID)) {
+                        item.style.display = "block";
+                    }
+                    else
+                        item.style.display = "none";
+                });
+            }
+        }
+
+        async function filterProduct() {
+            var myHeaders = new Headers();
+            myHeaders.append("authorization", document.cookie.split("=")[1]);
+            var requestOptions = {
+                method: "GET",
+                headers: myHeaders,
+            };
+
+            const rawRes = await fetch("http://165.227.132.99/api/filter/" + document.getElementById("priceInput").value ?? "999", requestOptions);
+
+            if (rawRes.ok == false) {
+                const products = Array.from(document.getElementsByClassName("product-item-parent")).forEach((item) => {
+                    item.style.display = "block";
+                });
+            } else {
+
+                const res = await rawRes.json();
+
+                const products = Array.from(document.getElementsByClassName("product-item-parent")).forEach((item) => {
+                    let ID = Number(item.getAttribute("data-PID"))
+                    if (res.data.includes(ID)) {
+                        item.style.display = "block";
+                    }
+                    else
+                        item.style.display = "none";
+                });
+            }
+        }
+
+        document.getElementById('searchInput').addEventListener('keyup', function (event) {
+            if (event.key === 'Enter') {
+                searchProducts();
+            }
+        });
+
+
+    </script>
+
+    <%- include("footer.ejs") %>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) { //declaring the array outside of the
+                if (!cleared[t.id]) { // function makes it static and global
+                    cleared[t.id] = 1; // you could use true and false, but that's more typing
+                    t.value = ''; // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+        </body>
+
+        </html>

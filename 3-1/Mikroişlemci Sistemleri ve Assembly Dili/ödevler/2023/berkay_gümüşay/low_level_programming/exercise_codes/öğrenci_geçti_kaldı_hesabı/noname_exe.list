@@ -1,0 +1,135 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+noname.exe -- emu8086 assembler version: 4.08  
+ 
+[ 15/11/2022  --  21:36:59 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       myStack segment para stack 'stack'
+[   2]    0000: 14 00                                 dw  20  (?)
+[   3]        :                                       myStack ends
+[   4]        :                                       myData  segment para 'data'
+[   5]    0010: 18 01                                 studs       dw 280
+[   6]    0012: 00 00                                 kalan       dw 0
+[   7]    0014: 00 00                                 but         dw 0
+[   8]    0016: 00 00                                 basarili    dw 0
+[   9]    0018: 00 00                                 topNot      dw 0
+[  10]    001A: 28                                    esik        db 40
+[  11]    001B: 00 00 00 00 00 00 00 00 00 00 00 00   notlar      db 280 dup(?)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00                         
+[  12]        :                                       myData  ends
+[  13]        :                                       myCode  segment para 'code'
+[  14]    0140:                                       MAIN    proc far
+[  15]    0140: 1E                                    push ds
+[  16]    0141: 33 C0                                 xor ax,ax
+[  17]    0143: B8 01 00                              mov ax,myData
+[  18]    0146: 8E D8                                 mov ds,ax
+[  19]        :                                       
+[  20]        :                                       
+[  21]    0148: 33 F6                                 xor SI,SI
+[  22]    014A: 8B 0E 00 00                           mov cx,studs
+[  23]    014E: 8A 44 0B                              l1:     mov al,notlar[SI]
+[  24]    0151: 3A 06 0A 00                           cmp al,esik
+[  25]    0155: 73 06                                 jae esikustu
+[  26]    0157: FF 06 02 00                           inc kalan
+[  27]    015B: EB 05                                 jmp d1
+[  28]    015D: 98                                    esikustu:cbw
+[  29]    015E: 01 06 08 00                           add topNot,ax
+[  30]    0162: 46                                    d1:     inc SI
+[  31]    0163: E2 E9                                 loop l1
+[  32]    0165: 8B 0E 00 00                           mov cx,studs
+[  33]    0169: 2B 0E 02 00                           sub cx,kalan
+[  34]    016D: 33 D2                                 xor dx,dx
+[  35]    016F: A1 08 00                              mov ax,topNot
+[  36]    0172: F7 F1                                 div cx
+[  37]    0174: 33 F6                                 xor SI,SI
+[  38]    0176: 8B 0E 00 00                           mov cx,studs
+[  39]    017A: 8A 64 0B                              l2:     mov ah,notlar[SI]
+[  40]    017D: 3A C4                                 cmp al,ah
+[  41]    017F: 76 0C                                 jbe gecti
+[  42]    0181: 3A 26 0A 00                           cmp ah,esik
+[  43]    0185: 72 0A                                 jb kaldi
+[  44]    0187: FF 06 04 00                           inc but
+[  45]    018B: EB 04                                 jmp kaldi
+[  46]    018D: FF 06 06 00                           gecti:  inc basarili
+[  47]    0191: 46                                    kaldi:  inc SI
+[  48]    0192: E2 E6                                 loop l2
+[  49]        :                                       
+[  50]        :                                       
+[  51]    0194: CB                                    retf
+[  52]        :                                       MAIN    endp
+[  53]        :                                       myCode  ends
+[  54]        :                                       end MAIN
+[  55]        :                                       
+[  56]        :                                       
+[  57]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 95      -   bytes on last page (l.byte)
+0003: 01      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 02      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 4E      -   check sum (l.byte)
+0013: 00      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 14      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 04      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 14      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ytumezunandroidapp">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ytu_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.YTUMezunAndroidApp"
+        tools:targetApi="31">
+
+        <provider
+            android:authorities="com.example.ytumezunandroidapp"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+
+        </provider>
+
+        <activity android:name=".Login"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.Register"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPassword"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.ResetPassword"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.Profile"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UpdateInfo"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.UpdateInfo"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Announcement"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.Announcement"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAnnouncement"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.CreateAnnouncement"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu"
+            android:label="@string/app_name"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ytumezunandroidapp.Menu"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

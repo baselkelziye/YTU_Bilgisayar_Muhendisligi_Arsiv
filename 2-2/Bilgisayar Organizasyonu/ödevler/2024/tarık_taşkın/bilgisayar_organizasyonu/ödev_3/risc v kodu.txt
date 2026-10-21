@@ -1,0 +1,51 @@
+addi   x1, x1, 40        //arr
+addi   x2, x2, 60        //count
+addi   x3, x3, 80        //result
+
+addi   x4, x4, 0         //Döngü Değişkeni (i=0)
+addi   x5, x5, 20        //Döngü Kontrolü (N=20)
+loop1: beq x4, x5, done1 //i>=20 olması durumunda döngü sonlanır
+lw     x6, 0(x2)         //count[i]
+lw     x7, 0(x1)         //arr[i]
+add    x3, x3, x6        //result'ı tutan register result + count[i]'yi gösterir (result[count[i]])
+sw     x7, 0(x3)         //result[count[i]] = arr[i]
+
+sub    x3, x3, x6        //result'u gösteren register eski yerine getirilir
+addi   x4, x4, 1         //i = i + 1
+addi   x1, x1, 1         //arr'nin bir sonraki elemanına geçilir
+addi   x2, x2, 1         //count'unn bir sonraki elemanına geçilir
+beq    x4, x4, loop1     //loop'a geri dönmek için sonucu her zaman 1 olan beq kullanılır
+done1:
+
+addi   x4, x0, 0         //Döngü Değişkeni (i=0)
+loop2: beq x4, x5, done2 //i>=20 olması durumunda döngü sonlanır
+lw     x6, 0(x3)         //result[i]
+addi   x4, x4, 1         //i = i + 1
+addi   x3, x3, 1         //result'un bir sonraki elemanına geçilir
+beq    x4, x4, loop2     //loop'a geri dönmek için sonucu her zaman 1 olan beq kullanılır
+done2:
+addi   x0, x0, 1         //Döngü sonlanması için eklenmiştir.
+
+*** CODE HEX DUMP ***
+02808093
+03c10113
+05018193
+00020213
+01428293
+02520463
+00012303
+0000a383
+006181b3
+0071a023
+406181b3
+00120213
+00108093
+00110113
+fc420ee3
+00000213
+00520a63
+0001a303
+00120213
+00118193
+fe4208e3
+00100013

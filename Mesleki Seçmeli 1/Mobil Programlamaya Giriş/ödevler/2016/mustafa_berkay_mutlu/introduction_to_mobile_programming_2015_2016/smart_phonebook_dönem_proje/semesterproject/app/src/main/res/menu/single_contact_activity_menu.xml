@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_singleContactActivity_addToSpeedDial"
+        android:title="@string/menu_add_to_speed_dial"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_star_border_white_48dp"/>
+
+    <item
+        android:id="@+id/menu_singleContactActivity_edit_contact"
+        android:title="@string/menu_edit_contact"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_mode_edit_white_48dp"/>
+
+    <item
+        android:id="@+id/menu_singleContactActivity_delete_contact"
+        android:title="@string/menu_delete"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+</menu>

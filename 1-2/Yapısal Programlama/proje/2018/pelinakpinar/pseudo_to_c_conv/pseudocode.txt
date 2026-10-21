@@ -1,0 +1,26 @@
+PROCEDURE MAIN()
+BEGIN 
+       
+PRINT_LINE “Array size”        
+GET_VAL “$ n_i ”        
+PRINT_LINE “Elements”        
+FOR  k_i <- 0.. n_i LOOP        
+BEGIN              
+GET_VAL “$ arr_i[k_i] ”        
+END 
+
+
+      
+max_i <- 0        
+maxind_i <- -1        
+FOR  k_i <- 0.. n_i LOOP        
+BEGIN                
+IF ( arr_i[k_i] > max_i ) THEN                
+BEGIN             
+max_i = arr_i[k_i]            
+maxind_i = k_i                
+END        
+END         
+PRINT_LINE “Biggest element of the given array's $ max_i, $ maxind_i. index.”  
+END
+

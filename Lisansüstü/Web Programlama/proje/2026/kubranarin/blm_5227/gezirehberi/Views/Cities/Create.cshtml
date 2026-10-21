@@ -1,0 +1,51 @@
+﻿@model GeziRehberi.Models.Cities
+
+@{
+    ViewBag.Title = "Yeni Şehir Ekle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yeni Şehir Ekle</h4>
+
+
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                           
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.CountryId, "Ülke", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownList("CountryId", null, "-- Ülke Seçiniz --", htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.CountryId, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                           
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name, "Adı", htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Kaydet" class="btn btn-primary" />
+                                    <a href="@Url.Action("List")" class="btn btn-secondary">İptal</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

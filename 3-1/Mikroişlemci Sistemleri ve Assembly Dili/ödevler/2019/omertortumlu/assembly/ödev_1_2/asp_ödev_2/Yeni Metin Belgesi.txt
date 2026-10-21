@@ -1,0 +1,190 @@
+myds segment para 'data'
+    ;-----------------------------------------
+    ;ARRAY OF 50 INTEGERS.
+    arr db 24H, 2H, 22H, 1H,-13H
+    ;-----------------------------------------
+
+    i        db  ? 
+    j        db  ?
+    first    db  0               ;START OF THE ARRAY, EQUALS TO 0.
+    last     db  4             ;END OF THE ARRAY, EQUALS TO A.LENGTH - 1.
+    middle   db  ?
+    pivot    db  ?
+
+myds ends
+
+myss segment para stack 'yigin'
+
+    stk db  100  dup(0)
+    top equ 100
+
+myss ends
+ mycs segment para 'code'
+
+    assume cs:mycs, ds:myds, ss:myss
+
+    ANA:
+
+    push ds
+	xor ax,ax
+	push ax
+	
+	mov ax,myds ; veri alanani erismek için
+	mov ds,ax
+       mov  ax,myss 
+       mov  ss, ax
+       mov  sp, top
+
+        ;CALL QUICKSORT(A, 0, A.LENGTH-1).
+        call quicksort
+
+        ;WAIT FOR ANY KEY.
+        mov  ah, 7
+        int  21h
+
+        ;FINISH PROGRAM.
+        mov  ax, 4c00h
+        int  21h
+
+        ;-----------------------------------------
+        ;QUICKSORT(A, p, r)
+        ;    if p < r
+        ;        q = QUICKSORT(A, p, r)
+        ;        QUICKSORT(A, p, q-1)
+        ;        QUICKSORT(A, q+1, r)
+
+        quicksort proc
+
+            ;COMPARE P WITH R.
+            mov  al, first 
+            cmp  al, last                  ;COMPARE P WITH R
+            jge  bigger1                ;IF P = R, SORT IS DONE.
+
+            ;CALL PARTITION(A, P, R).
+            call partition
+
+            ;GET Q = PARTITION(A, P, R). 
+            
+            mov  middle, al
+
+            ;PUSH Q+1, R INTO STACK FOR LATER USAGE.
+            inc  al
+            xor ah,ah
+            push ax
+            mov dl,last
+            xor dh,dh
+            push dx
+
+            ;CALL QUICKSORT(A, P, Q-1).
+            mov  al, middle
+            mov  last, al
+            dec  last
+            call quicksort
+
+            ;CALL QUICKSORT(A, Q+1, R).
+            pop  dx
+            mov last,dl
+            pop  ax
+            mov first,al 
+            call quicksort 
+
+            ;WHEN SORT IS DONE.
+            bigger1:
+                ret
+
+        quicksort endp
+
+        ;-----------------------------------------
+        ;PARTITION(A, p, r)
+        ;    x = A[r]
+        ;    i = p - 1
+        ;    for j = p to r-1
+        ;        if A[j] = x
+        ;            i = i + 1
+        ;            exchange A[i] with A[j]
+        ;    exchange A[i+1] with A[r]
+        ;    return i+1
+
+        partition proc
+
+            ;GET X = ARR[ R ].
+            mov  si, offset arr
+            mov  al, last
+            cbw
+            add  si, ax
+            mov  al, [ si ]       
+            mov  pivot,  al                 ;X = ARR[ last ].
+
+            ;GET I = P - 1.
+            mov  al, first
+            mov  i,  al
+            dec  i
+
+            ;INITIALISE J WITH P.
+            mov  al, first
+            mov  j,  al
+
+            ;LOOP J FROM P TO R-1.
+            for_j:
+
+                ;GET ARR[ J ].
+                mov  si, offset arr
+                mov  al, j
+                cbw               ;J * 2, BECAUSE EVERY COUNTER IS 2 BYTES.
+                add  si, ax
+                mov  al, [ si ]         ;AX = ARR[ J ]
+
+                ;COMPARE A[ J ] WITH X.
+                cmp  al, pivot
+                jg   bigger             ;IF A[ J ] > X, NO SWAP
+
+                ;GET I = I + 1.
+                inc  i
+                
+                ;GET ARR[ I ].
+                mov  di, offset arr
+                mov  cl, i
+                xor  ch,ch              ;I * 2, BECAUSE EVERY COUNTER IS 2 BYTES.
+                add  di, cx
+                mov  cl, [ di ]         ;CX = ARR[ I ].
+
+                ;EXCHANGE ARR[ I ] WITH ARR[ J ].
+                mov  [ di ], al
+                mov  [ si ], cl
+            
+                ;GET NEXT J.
+                bigger:
+
+                    inc  j              ;J = J + 1.
+                    mov  al, last
+                    cmp  j,  al         ;COMPARE J WITH R.
+                    jl   for_j          ;IF J = R-1 CONTINUE LOOP.
+
+            ;GET ARR[ i+1 ].
+            inc  i
+            mov  si, offset arr
+            mov  al, i
+            cbw                  ;(I+1) * 2, BECAUSE EVERY COUNTER IS 2 BYTES.
+            add  si, ax
+            mov  al, [ si ]             ;AX = ARR[ I+1 ].
+
+            ;GET ARR[ R ].
+            mov  di, offset arr
+            mov  cl, last
+            xor  ch,ch                 ;R * 2, BECAUSE EVERY COUNTER IS 2 BYTES.
+            add  di, cx
+            mov  cl, [ di ]             ;CX = ARR[ R ].
+
+            ;EXCHANGE ARR[ I+1 ] WITH ARR[ R ].
+            mov  [ di ], al
+            mov  [ si ], cl  
+
+            ;RETURN I+1.
+            mov  al, i
+            ret
+
+        partition endp
+    
+mycs ends
+
+    end ANA

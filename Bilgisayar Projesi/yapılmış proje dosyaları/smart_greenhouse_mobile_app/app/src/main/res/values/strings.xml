@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Smart Greenhouse</string>
+    <string name="title_activity_greenhouse_details">greenhouseDetails</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_details">details</string>
+    <string name="celciusSign">°C</string>
+    <string name="off">OFF</string>
+    <string name="sysInactive">System inactive.</string>
+
+    <string name="connected">Not Connected</string>
+    <string name="nconnected">Connected</string>
+
+    <string name="ServerIp">Server IP</string>
+    <string name="darkModeOn">Dark Mode On</string>
+    <string name="darkModeOff">Dark Mode Off</string>
+
+    <string name="Home">Home</string>
+    <string name="Settings">Settings</string>
+    <string name="Refresh">Refresh</string>
+    <string name="Back">Back</string>
+
+    <string name="firstTime">firstTime</string>
+    <string name="memory">memory</string>
+    <string name="responseCounter">responseCounter</string>
+    <string name="darkMode">darkMode</string>
+    <string name="ipSelection">ipSelection</string>
+    <string name="Temp">Temp</string>
+    <string name="Goal">Goal</string>
+    <string name="isOn">isOn</string>
+    <string name="isConnected">isConnected</string>
+
+    <string name="crntlySet">Currently set for: </string>
+
+    <string name="greenhouse">greenhouse</string>
+    <string name="Greenhouse">Greenhouse</string>
+
+    <string name="Greenhouse1">Greenhouse 1</string>
+    <string name="Greenhouse2">Greenhouse 2</string>
+    <string name="Greenhouse3">Greenhouse 3</string>
+    <string name="Greenhouse4">Greenhouse 4</string>
+
+    <string name="approve1">New temperature goal has been set.</string>
+    <string name="approve2">System has been shut down successfully.</string>
+    <string name="approve3">Server IP updated successfully.</string>
+
+    <string name="applyCmd">Apply Command</string>
+    <string name="shutDwn">Shut Down System</string>
+
+    <string name="XX">XX</string>
+
+    <string name="LoadingMsg">Loading...</string>
+
+    <string name="port">8000</string>
+
+
+
+</resources>

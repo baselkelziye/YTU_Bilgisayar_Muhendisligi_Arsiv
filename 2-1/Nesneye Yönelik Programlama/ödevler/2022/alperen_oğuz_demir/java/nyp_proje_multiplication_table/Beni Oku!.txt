@@ -1,0 +1,16 @@
+Öğretmen için giriş:
+Kullanıcı Adı : admin
+Şifre : 123
+
+Şuan güncel olarak bulunan çocuklar :
+Kullanıcı Adı   Şifre
+ali			 123
+ayşe			 123
+veli			 123
+mehmet		 1234
+
+Üstteki veriler users.txt dosyasında kayıtlı silmeyiniz silerseniz Main.java içindeki yorum bloğunu yorumdan çıkarıp loadUsers komutunu yorum bloğuna almanız gereklidir.
+skorbilgileri.txt silinebilir lakin alistirmalar.txt dosyasının silinmesi önerilmez (Problem çıkmaması lazım ama yine de emin olmak için yazıyorum).
+
+Çocuk için:
+Giriş yaptıktan sonra alıştırma seçecekseniz "Klasik 10 Soru" veya "Klasik 5 Soru" önerilir (Önceden çocuklar tarafından çözüldüğü için).
