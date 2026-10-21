@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+  	<!-- Genel özellikler -->
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="current_session_context_class">thread</property>
+    <property name="show_sql">true</property>
+    
+   	<!-- Veritabanı bağlantı bilgileri -->
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/announcement_service</property>
+    <property name="hibernate.connection.username">postgres</property>
+    <property name="hibernate.connection.password">postgres</property>
+    
+    <!-- Mapping sınıfları -->
+    <mapping class="org.db.model.Student"/>
+    <mapping class="org.db.model.User"/>
+    <mapping class="org.db.model.Company"/>
+    <mapping class="org.db.model.Message"/>
+    <mapping class="org.db.model.UserType"/>
+    <mapping class="org.db.model.Currency"/>
+    <mapping class="org.db.model.DonationAcceptUnit"/>
+    <mapping class="org.db.model.AnnouncementPacket"/>
+    <mapping class="org.db.model.AnnouncementState"/>
+    <mapping class="org.db.model.Announcement"/>
+    <mapping class="org.db.model.AnnouncementType"/>
+    <mapping class="org.db.model.BankAccountInfo"/>
+    <mapping class="org.db.model.CommunicationWay"/>
+    <mapping class="org.db.model.Department"/> 
+    <mapping class="org.db.model.Donation"/>
+    <mapping class="org.db.model.MembershipStatus"/>
+    <mapping class="org.db.model.CompanyOwnPacket"/>
+    <mapping class="org.db.model.DauUser"/>
+    <mapping class="org.db.model.AnnouncementPacketState"/>
+    <mapping class="org.db.model.Application"/>
+    <mapping class="org.db.model.Accounting"/>
+    <mapping class="org.db.model.SpendingRequestState"/>
+    <mapping class="org.db.model.SpendingRequest"/>
+    <mapping class="org.db.model.AnnouncementCategory"/>
+    <mapping class="org.db.model.Complaint"/>
+    <mapping class="org.db.model.Interests"/>
+    <mapping class="org.db.model.ComplaintReport"/>
+    <mapping class="org.db.model.VerificationCode"/>
+    <mapping class="org.db.model.GlobalParameter"/>
+    <mapping class="org.db.model.EducationInfo"/>
+    <mapping class="org.db.model.Notification"/>
+  </session-factory>
+</hibernate-configuration>

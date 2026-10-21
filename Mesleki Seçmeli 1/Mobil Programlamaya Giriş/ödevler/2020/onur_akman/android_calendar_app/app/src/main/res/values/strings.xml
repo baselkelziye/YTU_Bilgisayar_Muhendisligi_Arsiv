@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Calendar</string>
+    <string-array name="reminder_options">
+        <item>None</item>
+        <item>On event time</item>
+        <item>5 minutes before</item>
+        <item>15 minutes before</item>
+        <item>30 minutes before</item>
+        <item>1 hour before</item>
+    </string-array>
+    <string-array name="repeat_options">
+        <item>Never</item>
+        <item>Everyday</item>
+        <item>Every Week</item>
+        <item>Every Month</item>
+        <item>Every Year</item>
+    </string-array>
+</resources>

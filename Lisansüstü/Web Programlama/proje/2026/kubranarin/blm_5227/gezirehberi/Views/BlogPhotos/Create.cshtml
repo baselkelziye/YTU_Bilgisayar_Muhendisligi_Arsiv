@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Yeni Blog Fotoğrafı Ekle";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yeni Blog Fotoğrafı Ekle</h4>
+                   
+                    @using (Html.BeginForm("Create", "BlogPhotos", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Blog</label>
+                                <div class="col-md-10">
+                                    @Html.DropDownList("BlogId", null, "-- Blog Seçiniz --", htmlAttributes: new { @class = "form-control", required = "required" })
+                                    <span class="field-validation-valid text-danger" data-valmsg-for="BlogId" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Fotoğraflar</label>
+                                <div class="col-md-10">
+                                    <input type="file" name="photoFiles" id="photoFiles" class="form-control" accept="image/*" multiple required />
+                                    <small class="form-text text-muted">Birden fazla fotoğraf seçebilirsiniz. JPG veya PNG  formatında fotoğraf yükleyebilirsiniz.</small>
+                                    <div id="photoPreview" class="mt-3"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2">Kapak Fotoğrafı</label>
+                                <div class="col-md-10">
+                                    <div id="coverCheckboxes"></div>
+                                    <small class="form-text text-muted">Kapak fotoğrafı olarak işaretlemek istediğiniz fotoğrafı seçin.</small>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" value="Kaydet" class="btn btn-primary" />
+                                    <a href="@Url.Action("List")" class="btn btn-secondary">İptal</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#photoFiles').on('change', function () {
+                var files = this.files;
+                var preview = $('#photoPreview');
+                var checkboxes = $('#coverCheckboxes');
+                preview.html('');
+                checkboxes.html('');
+
+                if (files.length > 0) {
+                    var photoIndex = 0;
+                    for (var i = 0; i < files.length; i++) {
+                        var file = files[i];
+                        if (file && file.type.startsWith('image/')) {
+                            var reader = new FileReader();
+                            var currentIndex = photoIndex;
+
+                            reader.onload = (function (idx) {
+                                return function (e) {
+                                    var div = $('<div class="mb-2 d-inline-block mr-3" style="position: relative;">');
+                                    div.append('<img src="' + e.target.result + '" style="max-width: 150px; max-height: 150px; border: 1px solid #ddd; padding: 5px;" />');
+                                    preview.append(div);
+
+                                    var checkboxDiv = $('<div class="form-check mb-2">');
+                                    checkboxDiv.append('<input type="checkbox" name="isCover" value="' + idx + '" id="isCover_' + idx + '" class="form-check-input" />');
+                                    checkboxDiv.append('<label class="form-check-label" for="isCover_' + idx + '">Kapak Fotoğrafı</label>');
+                                    checkboxes.append(checkboxDiv);
+                                };
+                            })(currentIndex);
+
+                            reader.readAsDataURL(file);
+                            photoIndex++;
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}
+

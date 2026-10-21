@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thisisprivateprofile"
+        android:padding="5dp"
+        android:background="@color/colorRedDark"
+        android:textColor="#fff"
+        android:id="@+id/privateProfileTopBanner"
+        android:gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="tr.com.berkaytutal.beslenmedanismani.TrainerDetailPage">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/layoutPadding">
+
+
+            <ImageView
+                android:id="@+id/userProfileImageDetailPage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#ccc"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/userDetailGenderIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/userProfileNameDetailPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berkay Tutal"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/userMailDetailPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Berkay Tutal" />
+
+            <TextView
+                android:id="@+id/userBirthdayDetailPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Berkay Tutal" />
+
+            <Button
+                android:id="@+id/userProfileEditDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDarker"
+                android:drawableLeft="@drawable/edit"
+                android:padding="15dp"
+                android:text="@string/editDetails"
+                android:textColor="#fff" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/bodyRatesChartProfile"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"></com.github.mikephil.charting.charts.LineChart>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="@color/gradientEnd"
+                    android:text="Settings"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/chartSettingsButton"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="@color/colorRedDark"
+                    android:text="Add New"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/chartAddNewButton"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/bodyRates"-->
+            <!--style="@style/menuHeaderText"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_marginTop="10dp"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/tall"-->
+            <!--android:ems="7"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/bodyRatesTallEditText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:textAlignment="center"-->
+            <!--android:inputType="number"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/weight"-->
+            <!--android:ems="7"/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/bodyRatesWeightEditText"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:textAlignment="center"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/muscleRate"-->
+            <!--android:ems="7"/>-->
+            <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:textAlignment="center"-->
+            <!--android:id="@+id/bodyRatesMuscleRateEditText"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/fatRate"-->
+            <!--android:ems="7"/>-->
+            <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:textAlignment="center"-->
+            <!--android:id="@+id/bodyRatesFatRateEditText"-->
+            <!--android:inputType="numberDecimal"-->
+
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/waterRate"-->
+            <!--android:ems="7"/>-->
+            <!--<EditText-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:ems="10"-->
+            <!--android:textAlignment="center"-->
+            <!--android:id="@+id/bodyRatesWaterRaEditText"-->
+            <!--android:inputType="numberDecimal"-->
+            <!--/>-->
+            <!--</LinearLayout>-->
+            <!--<Button android:layout_height="wrap_content"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:padding="15dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:drawableLeft="@drawable/upload"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:text="@string/updateDetails"-->
+            <!--android:textColor="#FFF"-->
+            <!--android:id="@+id/bodyRatesUpdateButton">-->
+
+            <!--</Button>-->
+
+
+            <TextView
+                style="@style/menuHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/downloadedPrograms"
+                android:textColor="#fff" />
+
+            <ListView
+                android:id="@+id/myProgramsListviewDetailPage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/userProfileListingHeight"
+                android:nestedScrollingEnabled="true">
+
+            </ListView>
+            <TextView
+                android:id="@+id/empty"
+                android:text="You have downloaded no programs."
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/seeAllMyProgramsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
+                android:padding="15dp"
+                android:text="See All My Programs"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

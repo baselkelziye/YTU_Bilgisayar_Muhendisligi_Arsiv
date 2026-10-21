@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a475e"
+    tools:context=".AddEditQuestionActivity">
+
+
+    <TextView
+        android:id="@+id/signupHeaderTxt3"
+        android:layout_width="99dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Tap to add content"
+        android:textAlignment="center"
+        android:textColor="#e3e3e3"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/question_content_holder"
+        app:layout_constraintStart_toStartOf="@+id/question_content_holder"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/question_content_holder"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_header"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/question_content_imageBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/question_content_audioBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_media_play"
+            android:visibility="gone" />
+
+        <VideoView
+            android:id="@+id/question_content_videoBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/question_E_content"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="İnternetten"
+        android:inputType="textPersonName"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/question_D_content" />
+
+    <EditText
+        android:id="@+id/question_D_content"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Katalogdan"
+        android:inputType="textPersonName"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/question_C_content" />
+
+    <EditText
+        android:id="@+id/question_C_content"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Kendi kendine"
+        android:inputType="textPersonName"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/question_B_content" />
+
+    <EditText
+        android:id="@+id/question_B_content"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Uykuda"
+        android:inputType="textPersonName"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/question_A_content" />
+
+    <EditText
+        android:id="@+id/question_A_content"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Annemden"
+        android:inputType="textPersonName"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/question_text_input" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="53dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_text_input">
+
+        <RadioButton
+            android:id="@+id/question_radio_A"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="A)" />
+
+        <RadioButton
+            android:id="@+id/question_radio_B"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="B)" />
+
+        <RadioButton
+            android:id="@+id/question_radio_C"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="C)" />
+
+        <RadioButton
+            android:id="@+id/question_radio_D"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="D)" />
+
+        <RadioButton
+            android:id="@+id/question_radio_E"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:text="E)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_header"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add New Question"
+        android:gravity="left"
+        android:textColor="#e3e3e3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/question_text_input"
+        android:layout_width="185dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="48dp"
+        android:layout_weight="1"
+        android:hint="babam böyle pasta yapmayı nerden öğrendi?"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000"
+        android:maxLines="4"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/add_question_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_input_add"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_E_content" />
+
+    <ImageButton
+        android:id="@+id/edit_question_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:text="Edit"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_E_content" />
+
+
+</android.support.constraint.ConstraintLayout>

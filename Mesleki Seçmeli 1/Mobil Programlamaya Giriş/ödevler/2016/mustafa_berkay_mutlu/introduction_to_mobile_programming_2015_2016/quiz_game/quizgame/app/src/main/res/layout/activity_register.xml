@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mobilprogramlama.ders.berkay.hm1_quiz.activity.RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerActivity_name"/>
+
+    <EditText
+        android:id="@+id/edtText_registerActivity_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerActivity_dayOfBirth"/>
+
+    <TextView
+        android:id="@+id/txtView_registerActivity_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button android:id="@+id/btn_registerActivity_pickBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btn_registerActivity_pickBirthday_onClick"
+        android:text="@string/registerActivity_changeDate"/>
+
+    <Button
+        android:id="@+id/btn_registerActivity_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registerActivity_start"
+        android:onClick="btn_registerActivity_start_onClick"/>
+
+</LinearLayout>

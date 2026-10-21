@@ -1,0 +1,293 @@
+$date
+	Wed May 15 15:39:11 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module TestBench $end
+$var wire 32 ! read_data [31:0] $end
+$var wire 32 " write_data [31:0] $end
+$var wire 32 # pc [31:0] $end
+$var wire 32 $ alu_result [31:0] $end
+$var reg 1 % clk $end
+$var reg 1 & reset $end
+$var integer 32 ' i [31:0] $end
+$scope module uut $end
+$var wire 1 % clk $end
+$var wire 32 ( instruction [31:0] $end
+$var wire 32 ) read_data [31:0] $end
+$var wire 1 & reset $end
+$var wire 32 * rs1_data [31:0] $end
+$var wire 32 + rs2_data [31:0] $end
+$var wire 32 , write_data [31:0] $end
+$var wire 32 - sign_extended_imm [31:0] $end
+$var wire 5 . rs2 [4:0] $end
+$var wire 5 / rs1 [4:0] $end
+$var wire 5 0 rd [4:0] $end
+$var wire 7 1 opcode [6:0] $end
+$var wire 32 2 imm_s [31:0] $end
+$var wire 32 3 imm_i [31:0] $end
+$var wire 7 4 funct7 [6:0] $end
+$var wire 3 5 funct3 [2:0] $end
+$var reg 32 6 alu_out [31:0] $end
+$var reg 32 7 alu_result [31:0] $end
+$var reg 32 8 next_pc [31:0] $end
+$var reg 32 9 pc [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 9
+bx 8
+bx 7
+bx 6
+b0 5
+b0 4
+b11 3
+b1 2
+b110011 1
+b1 0
+b10 /
+b11 .
+b11 -
+bx ,
+bx +
+bx *
+b0 )
+b1100010000000010110011 (
+bx '
+1&
+0%
+bx $
+b0 #
+bx "
+b0 !
+$end
+#10000
+1%
+#20000
+b1000 6
+0%
+b11 +
+b101 *
+0&
+#30000
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -
+bx 1
+bx 0
+bx *
+bx /
+bx +
+bx .
+bx 5
+bx 4
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 2
+bx (
+bx "
+bx ,
+b1000 $
+b1000 7
+bx #
+bx 9
+b100 8
+1%
+#40000
+0%
+#50000
+b110 6
+b10000000101 -
+b110011 1
+b110 0
+b1010 *
+b100 /
+b100 +
+b101 .
+b0 5
+b100000 4
+b10000000101 3
+b10000000110 2
+b1000000010100100000001100110011 (
+b100 #
+b100 9
+1%
+#60000
+0%
+#70000
+b110 "
+b110 ,
+b110 $
+b110 7
+b1000 8
+1%
+#80000
+0%
+#90000
+b0 6
+b1000 -
+bx "
+bx ,
+b1001 0
+b110 *
+b111 /
+b1001 +
+b1000 .
+b111 5
+b0 4
+b1000 3
+b1001 2
+b100000111111010010110011 (
+b1000 #
+b1000 9
+1%
+#100000
+0%
+#110000
+b0 "
+b0 ,
+b0 $
+b0 7
+b1100 8
+1%
+#120000
+0%
+#130000
+b1111 6
+b1011 -
+bx "
+bx ,
+b1100 0
+b111 *
+b1010 /
+b1000 +
+b1011 .
+b110 5
+b1011 3
+b1100 2
+b101101010110011000110011 (
+b1100 #
+b1100 9
+1%
+#140000
+0%
+#150000
+b1111 "
+b1111 ,
+b1111 $
+b1111 7
+b10000 8
+1%
+#160000
+0%
+#170000
+bx 6
+b10000 -
+b100011 1
+bx "
+bx ,
+b10000 0
+bx *
+b1111 /
+b1010 +
+b100 .
+b10 5
+b100 3
+b10000 2
+b10001111010100000100011 (
+b10000 #
+b10000 9
+1%
+#180000
+0%
+#190000
+bx $
+bx 7
+b10100 8
+1%
+#200000
+0%
+#210000
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -
+bx 1
+bx 0
+bx /
+bx +
+bx .
+bx 5
+bx 4
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 3
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 2
+bx (
+b10100 #
+b10100 9
+1%
+#220000
+0%
+b0 '
+#230000
+1%
+b1 '
+#240000
+0%
+b10 '
+#250000
+1%
+b11 '
+#260000
+0%
+b100 '
+#270000
+1%
+b101 '
+#280000
+0%
+b110 '
+#290000
+1%
+b111 '
+#300000
+0%
+b1000 '
+#310000
+1%
+b1001 '
+#320000
+0%
+b1010 '
+#330000
+1%
+b1011 '
+#340000
+0%
+b1100 '
+#350000
+1%
+b1101 '
+#360000
+0%
+b1110 '
+#370000
+1%
+b1111 '
+#380000
+0%
+b10000 '
+#390000
+1%
+b10001 '
+#400000
+0%
+b10010 '
+#410000
+1%
+b10011 '
+#420000
+0%
+b10100 '

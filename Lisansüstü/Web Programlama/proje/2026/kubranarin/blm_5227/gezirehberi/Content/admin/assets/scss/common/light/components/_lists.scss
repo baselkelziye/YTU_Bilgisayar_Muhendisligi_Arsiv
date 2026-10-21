@@ -1,0 +1,162 @@
+/* Lists */
+
+ul,
+ol,
+dl {
+  padding-left: 1rem;
+  font-size: $default-font-size;
+  li {
+    line-height: 1.8;
+  }
+}
+
+.list-ticked,
+.list-arrow,
+.list-star {
+  list-style: none;
+  padding: 0;
+  li {
+    padding-left: 1.5rem;
+    &:before {
+      font-family: "themify";
+      margin-left: -1.5rem;
+      width: 1.5rem;
+      margin-right: .5rem;
+      font-size: .6rem;
+    }
+  }
+}
+
+.list-ticked {
+  li {
+    &:before {
+      content: '\e64c';
+      color: $danger;
+    }
+  }
+}
+
+.list-arrow {
+  li {
+    &:before {
+      content: '\e649';
+      color: $success;
+    }
+  }
+}
+
+.list-star {
+  li {
+    &:before {
+      content: '\e60a';
+      color: $warning;
+    }
+  }
+}
+
+.solid-bullet-list {
+  position: relative;
+  padding-left: 0;
+  .rtl & {
+    padding-right: 0;
+  }
+  li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 25px;
+    line-height: 1;
+    padding-bottom: 2.125rem;
+    * {
+      line-height: .8;
+    }
+    &:before,
+    &:after {
+      content:"";
+      position: absolute;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: $primary;
+      z-index: 1;
+    }
+  }
+  &:after {
+    content: "";
+    border: 1px solid $border-color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 4px;
+    z-index: 0;
+  }
+}
+
+.bullet-line-list {
+  padding-left: 30px;
+  position: relative;
+  list-style-type: none;
+  .rtl & {
+    padding-left: unset;
+    padding-right: 30px;
+  }
+
+  li {
+    position: relative;
+
+    &:before {
+      width: 15px;
+      height: 15px;
+      left: -30px;
+      top: 0;
+      border: 4px solid $primary;
+      margin-right: 15px;
+      z-index: 2;
+      background: color(white);
+
+      .rtl & {
+        left: unset;
+        right: -45px;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    border: 1px solid $border-color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    .rtl & {
+      left: unset;
+      right: 7px;
+    }
+  }
+}
+
+.icon-data-list {
+  list-style-type: none;
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 0;
+  font-family: $type1;
+  li {
+    margin-bottom:1rem;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius:100%;
+    }
+  }
+}

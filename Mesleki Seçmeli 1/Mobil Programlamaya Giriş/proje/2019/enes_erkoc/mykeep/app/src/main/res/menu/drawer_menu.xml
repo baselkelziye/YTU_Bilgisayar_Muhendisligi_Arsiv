@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notes"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="Notes" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/ic_notifications_black_24dp"
+            android:title="Reminders" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

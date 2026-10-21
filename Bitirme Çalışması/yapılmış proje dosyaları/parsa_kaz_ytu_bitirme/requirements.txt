@@ -1,0 +1,7 @@
+torch
+tensorflow
+bitsandbytes
+accelerate
+peft
+transformers @ git+https://github.com/huggingface/transformers
+codellm @ git+https://github.com/parsakzr/codellm.git

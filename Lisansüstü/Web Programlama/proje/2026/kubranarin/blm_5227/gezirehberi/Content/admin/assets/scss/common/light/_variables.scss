@@ -1,0 +1,318 @@
+
+////////// COLOR SYSTEM //////////
+
+$blue:              #5E50F9;
+$indigo:            #6610f2;
+$purple:            #6a008a;
+$pink:              #E91E63;
+$red:               #f96868;
+$orange:            #f2a654;
+$yellow:            #f6e84e;
+$green:             #46c35f;
+$teal:              #58d8a3;
+$cyan:              #57c7d4;
+$black:             #000;
+$white:             #ffffff;
+$white-smoke:       #f2f7f8;
+$violet:            #41478a;
+$darkslategray :    #2e383e;
+$dodger-blue :      #3498db;
+
+
+$colors: (
+  blue:             $blue,
+  indigo:           $indigo,
+  purple:           $purple,
+  pink:             $pink, 
+  red:              $red,
+  orange:           $orange,
+  yellow:           $yellow,
+  green:            $green,
+  teal:             $teal,
+  cyan:             $cyan,
+  white:            $white,
+  gray:             #434a54,
+  gray-light:       #aab2bd,
+  gray-lighter:     #e8eff4,
+  gray-lightest:    #e6e9ed,
+  gray-dark:        #0f1531, 
+  black:            #000000
+);
+
+
+$theme-colors: (
+  primary:         #4B49AC,
+  secondary:       #a3a4a5,
+  success:         #57B657,
+  info:            #248AFD,
+  warning:         #FFC100,
+  danger:          #FF4747,
+  light:           #f8f9fa,
+  dark:            #282f3a
+);
+
+$theme-gradient-colors: (
+  primary:         linear-gradient(230deg, #759bff, #843cf6),
+  secondary:       linear-gradient(to right, #e7ebf0, #868e96),
+  success:         linear-gradient(45deg, #7bffce, #30c93e),
+  info:            linear-gradient(to bottom, #0e4cfd, #6a8eff),
+  warning:         linear-gradient(135deg, #ffc480, #ff763b),
+  danger:          linear-gradient(316deg, #fc5286, #fbaaa2),
+  light:           linear-gradient(to right, #cfd9df 0%, #e2ebf0 100%),
+  dark:            linear-gradient(to right, #7d7979 0%, #000000 100%)
+);
+
+////////// COLOR SYSTEM //////////
+
+
+$primary:         #4B49AC;
+$secondary:       #a3a4a5;
+$success:         #57B657;
+$info:            #248AFD;
+$warning:         #FFC100;
+$danger:          #FF4747;
+$light:           #f8f9fa;
+$dark:            #282f3a;
+
+////////// COLOR VARIABLES //////////
+$content-bg: #F5F7FF;
+$border-color: #CED4DA;
+$border-radius: 8px;
+$gray-dark:        #0f1531;
+$gray-lightest:    #e6e9ed;
+$gray:             #434a54;
+////////// COLOR VARIABLES //////////
+
+
+
+////////// SOCIAL COLORS //////////
+
+$social-colors: (
+  twitter: #4747A1,
+  facebook: #7DA0FA,
+  google: #dc4a38,
+  linkedin: #7978E9,
+  pinterest: #cc2127,
+  youtube: #e52d27,
+  github: #333333,
+  behance: #1769ff,
+  dribbble: #ea4c89,
+  reddit: #ff4500
+);
+
+////////// SOCIAL COLORS //////////
+
+////////// FONTS//
+
+$type1:     'Nunito', sans-serif;
+
+$default-font-size: .875rem; // 14px as base font size
+
+$text-muted: #737F8B;
+$body-color: #1F1F1F;
+$color-light-blue: #52C4FF;
+
+
+////////// FONT VARIABLES //////////
+
+///////// FOOTER ////////
+$footer-height: 75px;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+///////// FOOTER ////////
+
+///////// BUTTONS ////////
+
+$button-fixed-width:        150px;
+$btn-padding-y:       .875rem;
+$btn-padding-x:       1.5rem;
+$btn-line-height:     1;
+
+$btn-padding-y-xs:    .5rem;
+$btn-padding-x-xs:    .75rem;
+
+$btn-padding-y-sm:    .50rem;
+$btn-padding-x-sm:    .81rem;
+
+$btn-padding-y-lg:    1rem;
+$btn-padding-x-lg:    3rem;
+
+$btn-font-size:       .875rem;
+$btn-font-size-xs:    .625rem;
+$btn-font-size-sm:    0.812rem;
+$btn-font-size-lg:    .875rem;
+
+$btn-border-radius:         .1875rem;
+$btn-border-radius-xs:      .1875rem;
+$btn-border-radius-sm:      .1875rem;
+$btn-border-radius-lg:      .1875rem;
+
+///////// BUTTONS ////////
+
+
+
+////////// TOOLTIP VARIABLES //////////
+
+//default styles
+$tooltip-font-size:     .75rem;
+$tooltip-padding-y:     .4rem;
+$tooltip-padding-x:     .75rem;
+$tooltip-border-radius: .375rem;
+
+////////// TOOLTIP VARIABLES //////////
+
+
+
+/////////  FORMS /////////
+
+$input-bg:                color(white);
+$input-border-radius:     2px;
+$input-placeholder-color: #c9c8c8;
+$input-font-size: .875rem;
+
+$input-padding-y:       1.125rem;
+$input-padding-x:       1.375rem;
+$input-line-height:     1;
+
+$input-padding-y-xs:    .5rem;
+$input-padding-x-xs:    .75rem;
+
+$input-padding-y-sm:    .50rem;
+$input-padding-x-sm:    .81rem;
+
+$input-padding-y-lg:    .94rem;
+$input-padding-x-lg:    1.94rem;
+
+$input-height:          2.875rem;
+$input-height-sm:       2.575rem;
+$input-height-lg:       3.175rem;
+
+///////// FORMS /////////
+
+////////  DROPDOWNS ///////
+
+$dropdown-border-color: $border-color;
+$dropdown-divider-bg:   $border-color;
+$dropdown-link-color:   $body-color;
+$dropdown-header-color: $body-color;
+$dropdown-link-hover-bg: #eaeaf1;
+////////  DROPDOWNS ///////
+
+//////// TABLES ////////
+
+$table-accent-bg: transparent;
+$table-hover-bg:  #eaeaf1;
+$table-cell-padding: 1.125rem 1.375rem; 
+$table-border-color: $border-color;
+
+$table-inverse-bg: #2a2b32;
+$table-inverse-color: color(white);
+$expanded-table-cell-color:#0B0F32;
+$alpha-orange:#FE5C83;
+
+//////// TABLES ////////
+
+
+
+////////// MEASUREMENT AND PROPERTY VARIABLES //////////
+
+$border-property: 1px solid $border-color;
+$card-spacing-y: 2.5rem;
+$card-padding-y: 1.25rem;
+$card-padding-x: 1.25rem;
+$card-border-radius: 20px;
+$card-border-color: #e3e3e3;
+$card-box-shadow: none;
+$card-title-color: #010101;
+$card-description-color: #76838f;
+$grid-gutter-width: 30px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+$card-tale:#7DA0FA;
+$card-dark-blue:#4747A1;
+$card-light-blue:#7978E9;
+$card-light-danger:#F3797E;
+////////// OTHER VARIABLES //////////
+
+
+
+////////// BREAD CRUMBS VARIABLES //////////
+
+// default styles
+$breadcrumb-padding-y:              0.56rem;
+$breadcrumb-padding-x:              1.13rem;
+$breadcrumb-item-padding:           .5rem;
+$breadcrumb-margin-bottom:          1rem;
+$breadcrumb-font-size:              $default-font-size;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-border-color:           $border-color;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-700;
+$breadcrumb-divider:                "/";
+
+// custom styles
+$breadcrumb-custom-padding-y:       0;
+$breadcrumb-custom-padding-x:       0;
+$breadcrumb-custom-item-padding-y:  0.56rem;
+$breadcrumb-custom-item-padding-x:  12px;
+$breadcrumb-custom-item-color:      $black;
+$breadcrumb-item-bg:                #dbe3e6;
+
+////////// BREAD CRUMBS VARIABLES //////////
+
+
+
+////////// MODALS VARIABLES //////////
+
+$modal-inner-padding:              0.9375rem;
+$modal-dialog-margin:               10px;
+$modal-dialog-margin-y-sm-up:       30px;
+$modal-title-line-height:           $line-height-base;
+$modal-content-bg:                  $white;
+$modal-content-box-shadow-xs:       0 3px 9px rgba($black,.5);
+$modal-content-box-shadow-sm-up:    0 5px 15px rgba($black,.5);
+
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+
+$modal-header-border-color:         $border-color;
+$modal-content-border-color:        $border-color;
+$modal-footer-border-color:         $border-color;
+
+$modal-header-border-width:         $border-width;
+$modal-content-border-width:        $border-width;
+$modal-footer-border-width:         $border-width;
+
+$modal-header-padding-x:              26px;
+$modal-header-padding-y:              25px;
+
+$modal-body-padding-x:                26px;
+$modal-body-padding-y:                35px;
+
+$modal-footer-padding-x:              31px;
+$modal-footer-padding-y:              15px;
+
+$modal-lg:                          90%;
+$modal-md:                          500px;
+$modal-sm:                          300px;
+$modal-transition:                  transform .4s ease;
+
+////////// MODALS VARIABLES //////////
+
+/////////  TABS VARIABLES //////////
+$nav-tabs-border-color:             #ebedf2;
+$nav-tabs-link-bg:                  #f6f8fa;
+$nav-tabs-link-color:               #000000;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+$nav-tabs-link-active-color:        $body-color;
+$nav-tabs-link-active-bg:           $white;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-link-active-bg;
+$nav-pills-custom-bg:               #fcfcfd;
+////////   TABS VARIABLES /////////
+
+////////   CALENDAR  //////////////
+$fullcalendar-color: #a8b2b9;
+////////   CALENDAR  //////////////
+$card-columns-margin: .75rem;
+$card-columns-count:3;
+$card-columns-gap:1.25rem;

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title if title else "CraftMart" }}</title>
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Google Fonts / Custom Styles -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <style>
+    /* Dinamik footer ayarı */
+    html {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .content {
+      flex: 1;
+    }
+    /* Logo yuvarlak yapma */
+    .navbar-brand img {
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-semibold d-flex align-items-center" href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="CraftMart Logo" style="height: 40px; margin-right: 10px;">
+        CraftMart
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          {% if session.user_id %}
+            <!-- Hesabım (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" 
+                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-circle me-1"></i>Hesabım
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('my_products') }}">
+                    <i class="fas fa-box-open me-2"></i>Ürünlerim
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('my_sales') }}">
+                    <i class="fas fa-chart-line me-2"></i>Satış İstatistiklerim
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('analytics_home') }}">
+                    <i class="fas fa-cogs me-2"></i>Gelişmiş Analiz
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('my_orders') }}">
+                    <i class="fas fa-shopping-bag me-2"></i>Siparişlerim
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item text-danger" href="{{ url_for('logout') }}">
+                    <i class="fas fa-sign-out-alt me-2"></i>Çıkış Yap
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{{ url_for('pending_reviews') }}">
+                    <i class="fas fa-comment-dots me-2"></i>Bekleyen Puanlamalarım
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Sepetim Bağımsız -->
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('view_cart') }}">
+                <i class="fas fa-shopping-cart me-1"></i>Sepetim
+              </a>
+            </li>
+            <!-- Top Kategoriler -->
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="{{ url_for('top_categories') }}">Top Kategoriler</a>
+            </li>
+
+          {% else %}
+            <!-- Giriş Yoksa -->
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">
+                <i class="fas fa-sign-in-alt me-1"></i>Giriş
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('register') }}">
+                <i class="fas fa-user-plus me-1"></i>Kayıt Ol
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('view_cart') }}">
+                <i class="fas fa-shopping-cart me-1"></i>Sepetim
+              </a>
+            </li>
+            <!-- Top Kategoriler -->
+            <li class="nav-item ms-auto">
+              <a class="nav-link" href="{{ url_for('top_categories') }}">Top Kategoriler</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- İçerik Alanı -->
+  <div class="container mt-4 mb-5 content">
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, msg in messages %}
+          <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+            {{ msg }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 CraftMart. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

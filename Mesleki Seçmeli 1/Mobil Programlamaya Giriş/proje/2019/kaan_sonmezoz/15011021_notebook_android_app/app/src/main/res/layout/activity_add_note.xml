@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activities.MainActivity.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_note_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="4dp" >
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:id="@+id/note_title"
+            android:hint="Title"
+            android:gravity="center"
+            android:background="#d3d3d3" />
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/noteText"
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Type here..."
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_height="150px"
+        android:layout_width="150px"
+        android:visibility="visible"
+        android:focusable="true"
+        android:background="@drawable/round_button"
+        android:foreground="@drawable/ic_check_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>

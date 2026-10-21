@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- -100 yap tam kaysın istersen bu şekilde ios gibi -->
+    <translate android:fromXDelta="-30%p" android:toXDelta="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:duration="@integer/slide_animation_duration"/>
+</set>

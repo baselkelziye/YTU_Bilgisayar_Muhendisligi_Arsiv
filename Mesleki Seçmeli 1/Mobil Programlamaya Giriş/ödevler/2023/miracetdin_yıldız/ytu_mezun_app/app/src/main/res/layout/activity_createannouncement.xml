@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Başlık"
+        android:textColor="@color/white"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="50sp"/>
+
+    <EditText
+        android:id="@+id/createannouncement_et_head"
+        android:layout_width="240sp"
+        android:layout_height="30dp"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="50sp"
+        android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+        android:background="@color/white"
+        android:hint="KONU BAŞLIĞI"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="2dp"
+        android:textColorHint="@color/gray"
+        android:inputType="text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metin"
+        android:textColor="@color/white"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="130sp"/>
+
+    <EditText
+        android:id="@+id/createannouncement_et_text"
+        android:layout_width="240sp"
+        android:layout_height="80dp"
+        android:layout_marginTop="160sp"
+        android:layout_marginStart="50sp"
+        android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+        android:background="@color/white"
+        android:hint="metin"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:padding="2dp"
+        android:textColorHint="@color/gray"
+        android:inputType="text"
+        android:textAlignment="textStart" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/su_photo"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/createannounce_iv_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/user"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/createannouncement_bt_takePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="103dp"
+        android:text="@string/su_takephoto"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/createannouncemenet_bt_share"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:text="Paylaş"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530sp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

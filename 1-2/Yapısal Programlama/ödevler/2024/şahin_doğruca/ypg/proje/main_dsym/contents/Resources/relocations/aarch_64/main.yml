@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-3/YPG/Project/main"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _getch, symObjAddr: 0x0, symBinAddr: 0x1000035B4, symSize: 0x16C }
+  - { offsetInCU: 0x90, offset: 0x90, size: 0x8, addend: 0x0, symName: _getch, symObjAddr: 0x0, symBinAddr: 0x1000035B4, symSize: 0x16C }
+  - { offsetInCU: 0xC6, offset: 0xC6, size: 0x8, addend: 0x0, symName: _loginMenu, symObjAddr: 0x16C, symBinAddr: 0x100003720, symSize: 0x4 }
+  - { offsetInCU: 0xDB, offset: 0xDB, size: 0x8, addend: 0x0, symName: _registerUser, symObjAddr: 0x170, symBinAddr: 0x100003724, symSize: 0x38 }
+  - { offsetInCU: 0xFF, offset: 0xFF, size: 0x8, addend: 0x0, symName: _getUserInfo, symObjAddr: 0x1A8, symBinAddr: 0x10000375C, symSize: 0x1D8 }
+  - { offsetInCU: 0x140, offset: 0x140, size: 0x8, addend: 0x0, symName: _logUserToFile, symObjAddr: 0x380, symBinAddr: 0x100003934, symSize: 0xC8 }
+  - { offsetInCU: 0x180, offset: 0x180, size: 0x8, addend: 0x0, symName: _contains, symObjAddr: 0x448, symBinAddr: 0x1000039FC, symSize: 0x188 }
+  - { offsetInCU: 0x1E1, offset: 0x1E1, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x5D0, symBinAddr: 0x100003B84, symSize: 0x120 }
+...

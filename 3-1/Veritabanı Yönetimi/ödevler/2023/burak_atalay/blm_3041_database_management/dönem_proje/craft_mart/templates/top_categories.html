@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Top Kategoriler</h2>
+
+  <!-- Kullanıcıya min_rating değiştirebileceği bir form -->
+  <form method="GET" action="{{ url_for('top_categories') }}" class="row g-3 align-items-end mb-4">
+    <div class="col-auto">
+      <label for="min_rating" class="form-label mb-0 fw-semibold">Minimum Ortalama Puan</label>
+      <input 
+        type="number" 
+        name="min_rating" 
+        id="min_rating" 
+        step="0.1" 
+        value="{{ min_rating }}" 
+        class="form-control" 
+        style="max-width: 100px;"
+      >
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-filter me-1"></i>Filtrele
+      </button>
+    </div>
+  </form>
+
+  {% if categories %}
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Kategori Adı</th>
+          <th scope="col">Ortalama Puan</th>
+          <th scope="col">Ürün Sayısı</th>
+          <th scope="col">Değerlendirme Sayısı</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for cat in categories %}
+        <tr>
+          <td>
+            <a href="{{ url_for('list_products', category_id=cat.category_id) }}" class="text-decoration-none">
+              {{ cat.category_name }}
+            </a>
+          </td>
+          <td>{{ cat.avg_rating }}</td>
+          <td>{{ cat.product_count }}</td>
+          <td>{{ cat.total_reviews }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+    <div class="alert alert-info" role="alert">
+      Bu puan eşiğinde kategori bulunamadı.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

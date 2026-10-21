@@ -1,0 +1,197 @@
+/* Data Tables */
+
+.dataTables_wrapper {
+  padding-left: 0;
+  padding-right: 0;
+  label {
+    font-size: .8125rem;
+  }
+  select {
+    @extend .form-control;
+    padding: .4rem;
+    outline-offset: -2px;
+  }
+  .dataTables_length {
+    select {
+      min-width: 70px;
+      margin-left: .25rem;
+      margin-right: .25rem;
+      width: -webkit-fill-available;
+      border-radius: 4px;
+    }
+  }
+  .dataTable {
+    .btn {
+      padding: 0.1rem 1rem;
+      vertical-align: top;
+      i {
+        font-size: .875rem;
+        margin-right: .3rem;
+      }
+    }
+    thead {
+      th {
+        border-bottom-width: 0;
+      }
+      .sorting,
+      .sorting_asc,
+      .sorting_desc,
+      .sorting_asc_disabled,
+      .sorting_desc_disabled {
+        &:before,
+        &:after {
+          line-height: 0;
+          font-family: themify;
+          font-size: .65rem;
+        }
+        &:before {
+          content: "\e64b";
+          right: 3.2em;
+          bottom: 13px;
+        }
+        &:after {
+          content: "\e648";
+          right: 1.2em;
+          top: 13px;
+        }
+      }
+    }
+  }
+  .dataTables_paginate {
+    margin-top: 20px;
+  }
+  .dataTables_info {
+    font-size: $default-font-size;
+    @media(max-width: 576px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.expandable-table {
+  thead {
+    tr {
+      th {
+        background: $primary;
+        padding: 10px;
+        color: $white;
+        font-size: 14px;
+        &:first-child {
+          border-radius: 8px 0 0 8px;
+        }
+
+        &:last-child {
+          border-radius: 0 8px 8px 0;
+        }
+      }
+    }
+  }
+  tr {
+    &.odd,
+    &.even {
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03);
+      border-radius: 4px;
+    }
+    td {
+      &.select-checkbox{
+        padding-left: 26px;
+        &:after {
+          top: 2rem;
+        }
+        &:before {
+          top: 2rem;
+        }
+      }
+      padding: 14px;
+      font-size: 14px;
+      .cell-hilighted {
+        background-color: $primary;
+        border-radius: 10px;
+        padding: 18px;
+        color: #fff;
+        font-size: 11px;
+        h5 {
+          font-size: 20px;
+          color: $color-light-blue;
+        }
+        p {
+          opacity: .6;
+          margin-bottom: 0;
+        }
+        h6 {
+          font-size: 14px;
+          color: $color-light-blue;
+        }
+      }
+      .expanded-table-normal-cell {
+        padding: 10px;
+        p {
+          font-size: 11px;
+          margin-bottom: 0;
+        }
+        h6 {
+          color: $expanded-table-cell-color;
+          font-size: 14px;
+        }
+        .highlighted-alpha {
+          width: 34px;
+          height: 34px;
+          border-radius: 100%;
+          background: $alpha-orange;
+          color: $white;
+          text-align: center;
+          padding-top: 7px;
+          font-size: 14px;
+          margin-right: 8px;
+        }
+        img {
+          width: 34px;
+          height: 34px;
+          border-radius: 100%;
+          margin-right: 8px;
+        }
+      }
+      &.details-control {
+        &:before {
+          content: '\e64b';
+          font-family: "themify";
+        }
+      }
+      &.details-control {
+        cursor: pointer;
+      }
+    }
+    &.shown {
+      td {
+        &.details-control {
+          &:before {
+            content: '\e648';
+          }
+        }
+      }
+    }
+  }
+  .expanded-row {
+    background: #fafafa;
+  }
+}
+table {
+  &.dataTable {
+    tbody {
+      td{
+        &.select-checkbox {
+          &:before { 
+            top: 1.4rem;
+            left: 10px;
+            border: 1px solid $border-color;
+            width: 14px;
+            height: 14px;
+          }
+          &:after {
+            top: 1.5rem;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

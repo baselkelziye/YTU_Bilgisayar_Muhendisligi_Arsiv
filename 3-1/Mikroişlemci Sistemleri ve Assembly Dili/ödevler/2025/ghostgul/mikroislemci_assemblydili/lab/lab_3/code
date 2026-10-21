@@ -1,0 +1,232 @@
+        ; -------------------------------------------------------------------------
+        ; Bu program 10 elemanlı dizinin modunu (en çok tekrar eden eleman) bulur
+        ; -------------------------------------------------------------------------
+
+SSEG    SEGMENT PARA STACK 'STACK'
+    DW 32 DUP (?)
+SSEG    ENDS
+
+DSEG    SEGMENT PARA 'DATA'
+CR      EQU 13
+LF      EQU 10
+MSG     DB 'Enter integer: ',0
+HATA    DB CR, LF, 'Invalid input! Please try again.', 0
+SONUC   DB CR, LF, 'Most frequent number (Mode): ', 0
+SAYILAR DW 10 DUP (?)                  
+MODE_RESULT DW ?                       
+DSEG    ENDS 
+
+CSEG    SEGMENT PARA 'CODE'
+    ASSUME CS:CSEG, DS:DSEG, SS:SSEG
+
+GIRIS_DIZI  MACRO
+            MOV CX, 10                          ; 10 sayı olucak dizide
+            LEA BX, SAYILAR                     ; sayıların adresini bx'e yükle
+            XOR SI, SI                          
+GIRIS_LOOP:
+            MOV AX, OFFSET MSG
+            CALL PUT_STR
+            CALL GETN
+            MOV [BX + SI], AX                   ; girilen sayıyı, sakla
+            ADD SI, 2
+            LOOP GIRIS_LOOP
+ENDM
+
+ANA     PROC FAR
+        PUSH DS
+        XOR AX, AX
+        PUSH AX
+        MOV AX, DSEG 
+        MOV DS, AX
+
+        ; makroyu çağır
+        GIRIS_DIZI
+
+        MOV AX, 10                     ; dizinin boyutunu AX'e yaz
+        PUSH AX                        ; ve sakla
+        LEA AX, SAYILAR                ; dizinin başlangıç adresinin AX'e yaz
+        PUSH AX                        ; ve sakla
+        CALL FIND_MODE                 ; mode bulma fonksiyonunu çağır
+        ADD SP, 4                      ; yığını temizle
+
+        ; sonucu yazdır
+        MOV AX, OFFSET SONUC 
+        CALL PUT_STR                   ; sonuç yazısını bastırt
+        MOV AX, MODE_RESULT            ; dizinin modunu yazdır
+        CALL PUTN                      ; sonucu göster
+        RETF 
+ANA     ENDP
+
+FIND_MODE PROC NEAR
+        ; parametreler: [SP+4] = dizinin basi, [SP+2] = dizi boyutu
+        PUSH BP
+        MOV BP, SP                     ; yeni stack frame kurulur     
+        PUSH CX
+        PUSH DX
+        PUSH SI
+
+        MOV SI, [BP+4]                 ; SI = dizinin başı
+        MOV CX, [BP+2]                 ; CX = dizinin boyutu
+        MOV WORD PTR MODE_RESULT, 0    ; sonucu sıfırlar
+        XOR DX, DX                     ; maks count tutucak DX
+
+OUTER_LOOP:
+        MOV AX, [SI]                  ; karşılaştırılacak eleman AX'a al
+        PUSH CX                       ; dış döngü sayacı koru
+        PUSH SI                       ; şu anki pozisyonu koru
+
+        ; inner loop için hazırlık
+        XOR BX, BX                    ; tekrar sayacını sıfırla 
+        MOV SI, [BP+4]                ; iç döngü için eleman 
+        MOV CX, [BP+2]                ; iç döngü için dizi boyutu
+
+INNER_LOOP:
+        CMP AX, [SI]                  ; karşılaştırılacak elemanla diziyi karşılaştır
+        JNE SKIP_COUNT
+        INC BX                        ; eğer eşitlerse count(BX) ++
+SKIP_COUNT:
+        ADD SI, 2                     ; sonraki elemana geç
+        LOOP INNER_LOOP
+
+        ; inner loop bitince
+        CMP BX, DX                    ; count ve max_count karşılaştır mod için
+        JL NO_UPDATE                  
+        MOV DX, BX                    ; count >= max_count ise update at
+        MOV WORD PTR MODE_RESULT, AX  ; modu elimizdeki sayı oldu
+
+NO_UPDATE:
+        POP SI                        ; eleman sayacını çıkart
+        POP CX                        ; dış döngü counterını al
+        ADD SI, 2                     ; sonraki elemana geç
+        DEC CX                        ; dış döngü counter azalt
+        JNZ OUTER_LOOP                
+
+        POP SI                        
+        POP DX
+        POP CX
+        POP BP
+        RET
+FIND_MODE ENDP
+
+; ------------------------------------------
+;  BURDAN SONRASI YARDIMCI PROSEDÜRLER
+; ------------------------------------------
+
+
+GETC    PROC NEAR
+        MOV AH, 1h
+        INT 21H
+        RET 
+GETC    ENDP 
+
+PUTC    PROC NEAR
+        PUSH AX
+        PUSH DX
+        MOV DL, AL
+        MOV AH,2
+        INT 21H
+        POP DX
+        POP AX
+        RET 
+PUTC    ENDP 
+
+GETN    PROC NEAR
+        PUSH BX
+        PUSH CX
+        PUSH DX
+GETN_START:
+        MOV DX, 1                       ; pozitif varsay
+        XOR BX, BX                      ; sayaçı resetle
+        XOR CX,CX                       
+NEW:
+        CALL GETC                       ; karakteri oku
+        CMP AL, CR 
+        JE FIN_READ                     ; enter basıldımı kontrolü
+        CMP AL, '-'                     
+        JNE CTRL_NUM                    ; negatif kontrolü
+NEGATIVE:
+        MOV DX, -1                      ; Negatif ise başına - işareti al
+        JMP NEW
+CTRL_NUM:
+        CMP AL, '0'
+        JB ERROR
+        CMP AL, '9'
+        JA ERROR
+        SUB AL, '0'                     ; ASCII -> integer
+        MOV BL, AL
+        MOV AX, 10
+        PUSH DX                         ; Save sign (in case of MUL modifying it)
+        MUL CX                          ; 10'la çarp
+        POP DX                          ; geri kaydet sign
+        MOV CX, AX                      ; Update total
+        ADD CX, BX
+        JMP NEW
+ERROR:
+        MOV AX, OFFSET HATA
+        CALL PUT_STR
+        JMP GETN_START
+FIN_READ:
+        MOV AX, CX
+        CMP DX, 1
+        JE FIN_GETN
+        NEG AX
+FIN_GETN:
+        POP DX
+        POP CX
+        POP BX
+        RET
+GETN ENDP 
+
+PUTN    PROC NEAR
+        PUSH CX
+        PUSH DX     
+        XOR DX, DX
+        PUSH DX
+        MOV CX, 10
+        CMP AX, 0
+        JGE CALC_DIGITS    
+        NEG AX
+        PUSH AX
+        MOV AL, '-'
+        CALL PUTC
+        POP AX
+        
+CALC_DIGITS:
+        DIV CX
+        ADD DX, '0'
+        PUSH DX
+        XOR DX, DX
+        CMP AX, 0
+        JNE CALC_DIGITS
+        
+DISP_LOOP:
+        POP AX
+        CMP AX, 0
+        JE END_DISP_LOOP 
+        CALL PUTC
+        JMP DISP_LOOP
+        
+END_DISP_LOOP:
+        POP DX 
+        POP CX
+        RET
+PUTN    ENDP 
+
+PUT_STR PROC NEAR
+        PUSH BX 
+        MOV BX, AX
+    PUT_LOOP:   
+        MOV AL, BYTE PTR [BX]
+        CMP AL, 0
+        JE  PUT_FIN
+        CALL PUTC
+        INC BX
+        JMP PUT_LOOP
+    PUT_FIN:
+        POP BX
+        RET 
+PUT_STR ENDP
+
+CSEG    ENDS 
+    END ANA
+

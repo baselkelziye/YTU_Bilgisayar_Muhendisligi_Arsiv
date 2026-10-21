@@ -1,0 +1,1 @@
+In this project, it is aimed to use image processing methods for image retrieval. To achieve this, I have used Uniform Local Binary Pattern and histogram normalization methods. LBP finds the texture in images and after finding textures, Manhattan Distance is used to find closest three images in a given dataset. 

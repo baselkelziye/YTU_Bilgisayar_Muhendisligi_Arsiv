@@ -1,0 +1,33 @@
+{
+  "jsonPath": "database/students.json",
+  "table": [
+    {
+      "fullname": "Oguzhan Topaloglu",
+      "password": "123",
+      "ID": 19052025,
+      "age": 24,
+      "balance": 500
+    },
+    {
+      "fullname": "Omer Diner",
+      "password": "omer123",
+      "ID": 20011017,
+      "age": 23,
+      "balance": 200
+    },
+    {
+      "fullname": "Talha Celik",
+      "password": "talha123",
+      "ID": 123,
+      "age": 28,
+      "balance": 300
+    },
+    {
+      "fullname": "deneme",
+      "password": "1010",
+      "ID": 1010,
+      "age": 18,
+      "balance": 820
+    }
+  ]
+}

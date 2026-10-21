@@ -1,0 +1,172 @@
+<%- include("header.ejs",{title:"Profil" , activeTab:""}) %>
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>Profil</h4>
+                        <h2 class="text-dark">
+                            Düzenle
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="best-features about-features">
+        <div class="container">
+            <div class="row">
+                <div class="flex m-auto row">
+                    <form action="" class="col-6" id="_pwd_change_form">
+                        <div>
+                            <div class="form-group">
+                                <label for="password_edit">Yeni Şifre</label>
+                                <input type="password" class="form-control" id="password_edit" placeholder="Şifre">
+                            </div>
+                            <div class="form-group">
+                                <label for="passwordRpt_edit">Yeni Şifre Tekrar</label>
+                                <input type="password" class="form-control" id="passwordRpt_edit" placeholder="Şifre Tekrar">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Şifreyi değiştir</button>
+                        </div>
+                    </form>
+                    <form id="edit_form" class="col-6">
+                        <div class="">
+                            <div class="form-group">
+                                <label for="name_edit">Kullanıcı Adı</label>
+                                <input required type="text" value="<%=profile.username%>" class="form-control" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="name_edit">Ad</label>
+                                <input required type="text" value="<%=profile.first_name%>" class="form-control" id="name_edit" placeholder="Ad">
+                            </div>
+                            <div class="form-group">
+                                <label for="surname_edit">Soyad</label>
+                                <input required type="text" value="<%=profile.last_name%>" class="form-control" id="surname_edit" placeholder="Soyad">
+                            </div>
+                            <div class="form-group">
+                                <label for="email_edit">Email</label>
+                                <input required type="email" value="<%=profile.email%>" class="form-control" id="email_edit" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_edit">Telefon</label>
+                                <input required type="text" value="<%=profile.phone_number%>" class="form-control" id="phone_edit" placeholder="05...">
+                            </div>
+                            <div class="form-group">
+                                <label for="address_edit">Adres</label>
+                                <input required type="textarea" value="<%=profile.address%>" class="form-control" id="address_edit" placeholder="Adres">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kaydet</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div>
+                <button class="btn btn-danger" id="__logout">
+                    Çıkış Yap
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/formsender.js"></script>
+
+    <%- include("footer.ejs") %>
+
+        <script>
+            // logout handler
+            document.getElementById("__logout").addEventListener("click", () => {
+                document.cookie = "access_token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                window.location.href = "/login";
+            })
+        </script>
+
+        <script>
+            // Profile Edit form handler
+
+            document.getElementById("edit_form").addEventListener("submit", async (event) => {
+                event.preventDefault();
+
+                var name = document.getElementById("name_edit").value;
+                var surname = document.getElementById("surname_edit").value;
+                var email = document.getElementById("email_edit").value;
+                var phone = document.getElementById("phone_edit").value;
+                var address = document.getElementById("address_edit").value;
+
+
+                var status = await FormSender.EditProfile(name, surname, email, phone, address);
+
+                if (status) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Profil başarıyla düzenlendi.',
+                        icon: 'success',
+                        confirmButtonText: 'Tamam',
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = "/profile";
+                        }
+                    })
+                }
+
+            });
+
+            document.getElementById("_pwd_change_form").addEventListener("submit", async () => {
+                event.preventDefault();
+                var password = document.getElementById("password_edit").value;
+                var passwordRpt = document.getElementById("passwordRpt_edit").value;
+
+
+                var status = await FormSender.ChangePassword(password, passwordRpt);
+
+                if (status) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Şifre başarıyla değiştirildi.',
+                        icon: 'success',
+                        confirmButtonText: 'Tamam',
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            window.location.href = "/profile";
+                        }
+                    })
+                }
+
+
+            })
+
+        </script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="/assets/js/custom.js"></script>
+        <script src="/assets/js/owl.js"></script>
+        <script src="/assets/js/slick.js"></script>
+        <script src="/assets/js/isotope.js"></script>
+        <script src="/assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) {                   //declaring the array outside of the
+                if (!cleared[t.id]) {                      // function makes it static and global
+                    cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                    t.value = '';         // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+
+        </body>
+
+        </html>

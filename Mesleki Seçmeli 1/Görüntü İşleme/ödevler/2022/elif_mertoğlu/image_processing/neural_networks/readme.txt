@@ -1,0 +1,1 @@
+The aim of this project is to better understand artificial neural networks. In the implementation of the code, different combinations of number of layers, number of filters and different filter sizes like 3x3, 5x5 etc. are used. The models are used on CIFAR-10 dataset which includes 10 different categories for different objects. 

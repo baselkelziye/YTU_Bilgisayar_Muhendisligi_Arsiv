@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#1b2838">
+
+    <TextView
+        android:id="@+id/spinner_question_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/spinner_question_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+    <TextView
+        android:id="@+id/spinner_question_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/spinner_question_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="50dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/spinner_question_D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+
+    <TextView
+        android:id="@+id/spinner_question_E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:text="text"
+        android:textColor="#e3e3e3"
+        android:textAlignment="gravity" />
+
+    <CheckBox
+        android:id="@+id/spinner_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:buttonTint="#e3e3e3"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/song_item_share"
+        android:title="Share" />
+
+    <item
+        android:id="@+id/song_item_delete"
+        android:title="Delete" />
+
+    <item
+        android:id="@+id/song_item_add_list"
+        android:title="Add To Play List" />
+
+</menu>

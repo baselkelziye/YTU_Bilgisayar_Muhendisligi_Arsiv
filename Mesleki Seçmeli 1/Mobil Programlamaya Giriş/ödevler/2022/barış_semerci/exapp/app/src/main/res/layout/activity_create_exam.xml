@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateExamActivity"
+    android:id="@+id/examLayout">
+
+    <EditText
+        android:id="@+id/editTextCreateExamTime"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="86dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCreateExamTime"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <EditText
+        android:id="@+id/editTextCreateExamRating"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCreateExamRating"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCreateExamTime"
+        />
+
+    <EditText
+        android:id="@+id/editTextCreateExamQuestionNumber"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/textViewCreateExamRating"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Difficulty:"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateExamTime"/>
+
+    <TextView
+        android:id="@+id/textViewCreateExamQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Question Number:"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCreateExamQuestionNumber" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExam"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <Button
+        android:id="@+id/buttonExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="createExam"
+        android:text="Create Exam"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewExam" />
+
+    <TextView
+        android:id="@+id/textViewCreateExamTime"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Time:"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="103dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewCreateExamQuestionPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Question Point:"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCreateExamQuestionNumber"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCreateExamQuestionPoint" />
+
+    <EditText
+        android:id="@+id/editTextCreateExamQuestionPoint"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCreateExamQuestionNumber" />
+
+    <EditText
+        android:id="@+id/editTextCreateExamTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter exam name..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

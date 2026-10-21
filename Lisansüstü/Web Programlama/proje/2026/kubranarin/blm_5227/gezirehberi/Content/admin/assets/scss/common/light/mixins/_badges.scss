@@ -1,0 +1,12 @@
+//Badge Mixins
+
+// Badge outlined variations
+@mixin badge-outline-variations($color) {
+	color: $color;
+	border: 1px solid $color;
+}
+
+@mixin badge-variations($color) {
+	color: $color;
+	border: 1px solid $color;
+}

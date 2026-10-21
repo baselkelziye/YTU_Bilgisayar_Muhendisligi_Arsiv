@@ -1,0 +1,540 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Yapısal Programlama
+** Ders Bilgisi
+*** Dersin İçeriği
+
+C Programlama Dilinde Veri Tipleri ; Kontrol Deyimleri ; Döngüler ; Diziler ve İşaretçiler ;
+Çok Boyutlu Diziler ; İşaretçi Dizileri ; Karakter Dizileri ; Dinamik Bellek Yönetimi ;
+Fonksiyonlar ; Fonksiyon İşaretçileri ; Özyinelemeli Fonksiyonlar ; Yerel ve Global Değişkenler ;
+Yapılar ; Bitsel İşlemler ; Dosya İşlemleri ; C Önişlemcileri ; Makrolar ; C için Veri Yapıları ;
+Linkli Listeler ; Statik ve Dinamik Kütüphaneler.
+
+*** Haftalık Konular ve İlgili Ön Hazırlık Çalışmaları
+
+| Hafta | Konular                                                                                        |
+|-------+------------------------------------------------------------------------------------------------|
+| <c>   | <l>                                                                                            |
+| 1     | C Programlama Dilinde Veri Tipleri / Kontrol Deyimleri / Döngüler                              |
+| 2     | Diziler / İşaretçiler / İşaretçiler Aritmetiği                                                 |
+| 3     | Çok Boyutlu Diziler / İşaretçi Dizileri / Karakter Dizileri / İşaretçilerin İşaretçisi	 |
+| 4     | Dinamik Bellek Yönetimi ve Fonksiyonlar                                                        |
+| 5     | Fonksiyon İşaretçileri / Özyinelemeli Fonksiyonlar                                             |
+| 6     | Yerel ve Global Değişkenler / Depolayıcı Sınıflar                                              |
+| 7     | Yapılar / Birlikler / Bitsel İşlemler                                                          |
+| 8     | Temel Dosya İşlemleri                                                                          |
+| 9     | Ara Sınav 1                                                                                    |
+| 10    | İleri Dosya İşlemleri                                                                          |
+| 11    | C Önişlemcileri ve Makrolar                                                                    |
+| 12    | Linkli Listeler                                                                                |
+| 13    | Ara Sınav 2                                                                                    |
+| 14    | Statik ve Dinamik Kütüphaneler                                                                 |
+| 15    | Final                                                                                          |
+
+** Genel Bilgiler
+
+printf() ve scanf() fonksiyonlarında kullanılan veri tipi sembolleri
+
+| Sembol | Veri Tipi             |
+|--------+-----------------------|
+| %c     | char                  |
+| %d     | integer               |
+| %s     | string                |
+| %ld    | long integer          |
+| %u     | unsigned integer      |
+| %lu    | unsigned long integer |
+| %f     | float                 |
+| %lf    | double                |
+| %x     | hexadecimal           |
+| %p     | address               |
+
+Bit manipulation operators
+
+| Operator           | Symbol | Form      | Result                    |
+|--------------------+--------+-----------+---------------------------|
+| right shift        | >>     | x >> y    | x shifted right by y bits |
+| left shift         | <<     | x << y    | x shifted left by y bits  |
+| bitwise AND        | &      | x & y     | x bitwise ANDed with y    |
+| bitwise OR         | \vert  | x \vert y | x bitwise ORed with y     |
+| bitwise XOR        | ^      | x ^ y     | x bitwise XORed with y    |
+| bitwise complement | ~      | ~x        | bitwise complement of x   |
+
+** Pointerlar
+*** Pointer oluşturma
+**** Birinci dereceden pointer
+
+Diziler, stringler(char dizisi) veya tek elemanlar için kullanılır.
+
+#+BEGIN_SRC C
+  void main(){
+  int *p; //rastgele adres atanır, if(p) == if(non-zero) olur.
+  int *p2 = NULL; //adresi 0 olur, null pointer denir, if(p) == if(zero) olur.
+  char *char_p; // sizeof(*p) ve sizeof(*char_p) aynıdır. Adresin hafızada kapladığı
+    // alan pointerın işaret ettiği veri tipinden bağımsızdır.
+  double pi = 3.14;
+  // pi değişkenine pointer atamak için 2 yol:
+  double *dp = &pi; 
+
+  double *dp2;
+  ,*dp2 = pi;  // dp2 = &pi de olur.
+
+  int dizi[5] = {1,2,3,4,5};
+  p = dizi; // p = dizi[0] da olur.
+  printf("%d, %d", *p, *(p + 1)); //çıktısı: 1, 2
+  ,*p++;   // işaret edilen sayıyı değil adresi arttırır.
+  ,*(p++); // sayıyı arttırır.
+  }
+#+END_SRC
+
+Pointerlar için [[Dynamic][dinamik olarak hafıza açma]]
+
+
+#+BEGIN_SRC C
+#include <stdio.h>
+#include <stdlib.h> //malloc, calloc gibi fonksiyonlar bu kütüphanede.
+
+void main(){
+int *p = NULL, elemanSayisi = 5;
+p = (int *) malloc(elemanSayisi * sizeof(int));
+p = malloc(elemanSayisi * sizeof *p) // böyle yapmak daha makbulmüş. Yani cast yapmamak ve
+                                     // sizeof(int) yerine sizeof *p kullanmak. Evet parantezsiz kullanılıyor.
+
+// Direk pointer oluştururken de yapılabilir:
+char *cp = calloc(50, sizeof(char)); // char pointer icin calloc kullanmakta fayda var,
+                                      // string alırken stringin sonunun null ile bitmesini sağlar.
+
+}
+#+END_SRC
+**** <<Dynamic>>Dynamic memory allocation
+
+Runtime sırasında hafıza açmaya yarar. Dynamic memory allocation fonksiyonlarını kullanabilmek için stdlib.h
+kütüphanesi include edilmedilir.
+
+| Function | Description                                                                              | Syntax                                 |
+|----------+------------------------------------------------------------------------------------------+----------------------------------------|
+| malloc   | allocates the specified number of bytes                                                  | p = malloc (number *sizeof(int));      |
+| calloc   | allocates the specified number of bytes and initializes them to zero                     | p = calloc (number, sizeof(int));      |
+| realloc  | increases or decreases the size of the specified block of memory, moving it if necessary | p = realloc (p, number * sizeof(int)); |
+| free     | releases the specified block of memory back to the system                                | free(p);                               |
+
+**** Double pointer
+
+Matrisler ve string dizileri(char matrisi gibi de düşünülebilir. stringler 1 pointer geriden geliyor.) için kullanılır.
+
+#+BEGIN_SRC C
+void main(){
+int **matrix = NULL;
+
+}
+#+END_SRC
+** Function Pointers
+
+Basit bir toplama fonksiyonu:
+
+#+BEGIN_SRC C
+  int topla (int a, int b){
+      return a + b;
+  }
+#+END_SRC
+
+Function pointer ile kullanımı:
+
+#+BEGIN_SRC C
+  #include <stdio.h>
+
+  void main(){
+      int (* functionPointer)(); // integer değer döndüren (return) bir fonksiyonu
+				 // işaret eden pointer.
+    //int (* functionPointer)(int, int); // böyle de yazılabilir.
+    //int (* functionPointer)() = topla // initialization
+      functionPointer = topla;
+    //functionPointer = &topla; // böyle de yazılabilir.
+      int sum;
+      sum = (* functionPointer)(5, 10);
+    //sum = functionPointer(5, 10); // böyle de yazılabilir. hoca üstteki iyi dedi.
+      printf("%d", sum); // result 15
+      return 0;
+  }
+#+END_SRC
+
+Not: İşaret edilecek fonksiyonun dönüş tipi ile pointerın tipi uyuşmalı. int topla(int a, int, b) fonksiyonunu char (* fp)(); ile point edemiyoruz.
+
+** Vize
+
+#+BEGIN_SRC C
+void myStrcpyV3(char *str1,char *str2)
+{
+	while(*str2++=*str1++);	//An assignment expression has the value of the left operand after the assignment
+	
+}
+#+END_SRC
+
+#+BEGIN_SRC C
+typedef struct{
+ char OGR_isim[15] , OGR_soyisim[20]; 
+ short OGR_yas;
+ float OGR_puan; 
+}OGR; // ogr tipi oluþturulur. bu tipden yeni degiskenler uretilebilir
+#+END_SRC
+
+#+BEGIN_SRC C
+#include <stdio.h>
+#include <stdlib.h>
+/*
+typedef struct{
+ char gun;
+ char ay;
+ char yil;	
+} TARIH;	//typedef ile tanimlandigi icin tarih tipi baska structure lar icinde de kullanilabilir
+
+typedef struct{
+ char isim[30];
+ int maas; 
+ TARIH tarih;
+}CALISAN; 
+*/
+
+/*
+vtypedef struct {
+ char isim[30];
+ int maas; 
+ struct {
+ 	char gun;
+ 	char ay;
+ 	char yil;
+ }tarih;		// sadece bir kez kullanilabilir
+  
+}CALISAN; 
+*/
+
+
+struct CALISAN{
+ char isim[30];
+ int maas; 
+ struct {
+ 	char gun;
+ 	char ay;
+ 	char yil;
+ }tarih;		// sadece bir kez kullanilabilir
+}; 
+
+
+/*  ILLEGAL KULLANIM (tarih struct'indan bir deðiþken uretilmeli)
+struct CALISAN{
+ char isim[30];
+ int maas; 
+ struct tarih{
+ 	char gun;
+ 	char ay;
+ 	char yil;
+ };		// sadece bir kez kullanilabilir
+};
+*/
+
+int main()
+{
+	//CALISAN calisan2={"ali",7000,{11,10,90}}; //typedef ile tanimlanmissa
+	//CALISAN calisan1;							//typedef ile tanimlanmissa
+	struct CALISAN calisan1;
+	calisan1.tarih.ay=2;
+	calisan1.tarih.gun=12;
+	calisan1.tarih.yil=98;
+	return 0;
+}
+
+
+#+END_SRC
+
+#+BEGIN_SRC C
+# include <stdio.h>
+# include <stdlib.h>
+int main()
+{
+	int sum,sub;
+	int addInt(int, int);
+	int subInt(int, int);
+    /*int (**foo_ptr_array)();
+    foo_ptr_array = calloc( 2, sizeof( int (*)() ) );*/
+	
+	/* or */
+	int (**foo_ptr_array)() = (int (**)())calloc( 2, sizeof( int (*)() ) );
+	
+	/* or */
+	/* int (*foo_ptr_array[2])();  
+	*/
+	
+	foo_ptr_array[0] = addInt;
+	foo_ptr_array[1] = subInt;
+	sum=(*foo_ptr_array[0])( 1,2 );
+	sub=foo_ptr_array[1]( 1,2 );
+	
+	printf("sum:%d sub:%d\n",sum,sub);
+}
+
+int addInt(int n, int m) {
+    return n+m;
+}
+
+int subInt(int n, int m) {
+    return n-m;
+}
+
+
+
+#+END_SRC
+
+#+BEGIN_SRC C
+/*16 soruluk yes/no testi yapýlýyor */
+/* cevap anahtarýný y/n þekline al 16bitlik answers'da tut */
+/* short olarak kiþinin verdiði cevabý al*/
+/* kaç soru bildiðini short olarak yaz*/
+#include <stdio.h>
+int main()
+{ 
+	unsigned short correctanswers = 0,answer2=0,testanswer,result; 
+	short int j,score=0; 
+	char c; 
+	printf("sizeof short %d\n",sizeof(j));
+	/* eger ilk soru en sol bitte tutuluyorsa*/
+	/*for (j=0; j <= 15; j++)
+	{ 
+		scanf ("%c", &c); 
+		if (c == 'y' || c == 'Y') 
+		{
+			answer2=1<<(15-j);
+			correctanswers = answer2 | correctanswers;
+			answer2=0;
+		}
+	}
+	*/
+	/* eger ilk soru en sað bitte tutuluyorsa*/
+	answer2=1;
+	for (j=0; j <= 15; j++)
+	{ 
+		c=getch();
+		putch(c);
+		if (c == 'y' || c == 'Y') 
+			correctanswers = answer2 | correctanswers;
+		answer2<<=1;
+	}
+	
+	
+	printf( "Correct answers :%d\n",correctanswers);
+	printf("Kullanýcýnýn verdiði cevaplar?\n");
+	scanf("%d",&testanswer);
+	result=testanswer^correctanswers;  //aynýysa 0 farklýysa 1
+	printf("result:%d",result);
+	answer2=1;
+	for (j=0; j <= 15; j++)
+	{ 
+		if (answer2&result)
+			score++;
+		answer2=answer2<<1;
+	}
+	printf("score:%d\n",16-score);
+	
+}
+
+#+END_SRC
+
+LİNKED LİST
+#+BEGIN_SRC C
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node{
+    int val;
+    struct node *next;
+};
+
+void push(struct node *, int);
+struct node *pushFront(struct node *, int);
+void list(struct node *);
+void deleteNode(struct node *, int);
+
+int main()
+{
+	struct node *head, *newHead, *dummy;
+	int num;
+	head = malloc(sizeof(struct node));
+	if (head == NULL) {
+    	return 0;
+	}	
+	
+	printf("listenin sonuna eklenmek uzere eleman veriniz\n");
+    scanf("%d",&num);
+	head->val = num;
+	head->next = NULL;
+	
+	printf("listenin sonuna eklenmek uzere eleman veriniz\n");
+    scanf("%d",&num);
+	push(head,num);
+	
+	printf("listenin sonuna eklenmek uzere eleman veriniz\n");
+    scanf("%d",&num);
+	push(head,num);
+	
+	printf("listenin sonuna eklenmek uzere eleman veriniz\n");
+    scanf("%d",&num);
+	push(head,num);
+	
+	list(head);
+	
+	printf("listenin basina eklenmek uzere eleman veriniz\n");
+    scanf("%d",&num);
+	newHead=pushFront(head,num);
+	list(newHead);
+	
+	printf("listeden silinecek elemani veriniz\n");
+	scanf("%d",&num);
+	if (num==newHead->val)
+	{
+		dummy=newHead->next;
+		free(newHead);
+		newHead=dummy;
+	}
+	else
+		deleteNode(newHead,num);
+	list(newHead);
+	
+	
+	return 0;
+
+}
+
+// listenin sonuna node ekler
+void push(struct node *head, int val) {
+    struct node* current = head;
+    while (current->next != NULL) {
+        current = current->next;
+    }
+
+    current->next = malloc(sizeof(struct node));  	
+    current->next->val = val;					
+    current->next->next = NULL;					
+}
+
+// elemanlarý listeler
+void list(struct node *head)
+{
+	struct node* current = head;
+    printf("liste elemanlari:\n");
+	while (current->next != NULL) {
+    	printf("-%d-",current->val);
+        current = current->next;
+    }
+    printf("-%d-\n",current->val);
+}
+
+// listenin baþýna node ekler
+struct node* pushFront(struct node *head, int val) {
+    struct node* newN;
+	newN=malloc(sizeof(struct node)); 
+	newN->next =head;
+	newN->val =val;
+    return newN;
+}
+
+// elemanlarý listeler
+void deleteNode(struct node *head, int val)
+{
+	struct node* current = head, *before=NULL;
+    
+    while ((current->val != val)&&(current->next != NULL))
+	{
+	    before=current;
+		current = current->next;
+	}
+    
+    if (current->next == NULL)
+    	printf("silinmek istenen eleman listede yok\n");
+    else
+    {
+    	before->next=current->next;
+    	free (current);
+	}
+        
+}
+
+
+#+END_SRC
+
+lab:
+
+#+BEGIN_SRC C
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+ 
+typedef struct point {
+   int x,y;
+}POINT ;
+void WRITE(POINT *p,int N);
+void SORT(POINT *p,int N,int (*compare)( int a, int b ));
+
+int ascending( int a, int b ){
+   return b < a;   /* swap if b is less than a */
+}
+
+int descending( int a, int b ){
+   return b > a;   /* swap if b is greater than a */
+}
+ 
+void main() {
+   srand(time(NULL));
+   int N;
+   int i, j;
+   int order;
+   printf("Enter N:"); scanf("%d",&N);
+   POINT *p=(POINT*)malloc(N*sizeof(POINT));
+   printf( "Enter 1 to sort in ascending order,\n"
+           "Enter 2 to sort in descending order: " );
+   scanf("%d",  &order );
+   
+   for (i = 0; i < N; i++) {
+	    (p+i)->x=rand()%9+1;
+	    (p+i)->y=rand()%9+1;
+   }
+   printf("BEFORE\n");
+   WRITE(p,N); 
+   printf("AFTER\n");  
+   if ( order == 1 ) {
+      SORT( p, N, ascending );
+   }
+   else { /* pass function descending */
+      SORT( p, N, descending );
+   }
+   
+   WRITE(p,N);
+   getch();
+}
+
+void WRITE(POINT *p,int N){
+	int i=0;	
+	printf("X - Y \n");
+	printf("------\n");
+	for (i = 0; i < N; i++) 
+		printf("%d - %d \n",(p+i)->x,(p+i)->y);
+}
+
+void SORT(POINT *p,int N,int (*compare)( int a, int b )){
+	int i=0, j=0;
+	int X=0,Y=0;
+	POINT temp;
+	for (i = 1; i < N; i++)
+      for (j = 0; j < N - i; j++) {
+         X=pow(p[j].x,2)+pow(p[j].y,2);
+         Y=pow(p[j+1].x,2)+pow(p[j+1].y,2);
+		 if ((*compare)( X,Y )) {
+            temp = p[j];
+            p[j] = p[j+1];
+            p[j+1] = temp;
+         }
+      } 
+}
+
+#+END_SRC
+

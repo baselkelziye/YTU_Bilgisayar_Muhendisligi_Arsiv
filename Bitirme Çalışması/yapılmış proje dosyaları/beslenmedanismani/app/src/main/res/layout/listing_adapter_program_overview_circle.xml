@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/programOverviewCircleCount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:text="x3"
+        android:background="@drawable/circle"
+        />
+
+    <ListView
+        android:id="@+id/programOverviewCircleListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></ListView>
+</LinearLayout>

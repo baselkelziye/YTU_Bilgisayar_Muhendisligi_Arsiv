@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">Satış İstatistiklerim</h2>
+  {% if stats %}
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered table-hover align-middle">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Ürün ID</th>
+            <th scope="col">Resim</th>
+            <th scope="col">Ad</th>
+            <th scope="col">Toplam Satış Adedi</th>
+            <th scope="col">Ortalama Puan</th>
+            <th scope="col">Toplam Kazanç</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for s in stats %}
+          <tr>
+            <td>{{ s.product_id }}</td>
+            <td>
+              {% if s.image_url %}
+                <img src="{{ url_for('static', filename='uploads/' ~ s.image_url) }}" 
+                     class="img-thumbnail" style="width: 50px; height: 50px;" alt="{{ s.name }}">
+              {% else %}
+                <img src="{{ url_for('static', filename='images/default_product.png') }}" 
+                     class="img-thumbnail" style="width: 50px; height: 50px;" alt="Varsayılan Ürün">
+              {% endif %}
+            </td>
+            <td>
+              <a href="{{ url_for('product_detail', product_id=s.product_id) }}" class="text-decoration-none">
+                {{ s.name }}
+              </a>
+            </td>
+            <td>{{ s.total_quantity_sold if s.total_quantity_sold else 0 }}</td>
+            <td>{{ s.avg_rating|round(2) if s.avg_rating else '-' }}</td>
+            <td>{{ (s.total_quantity_sold * s.price)|round(2) if s.total_quantity_sold else 0 }} TL</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% else %}
+    <div class="alert alert-info" role="alert">
+      Hiç ürününüz yok veya veri yok.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

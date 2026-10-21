@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/note_edit_note_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_edit_text_shape"
+        app:layout_constraintBottom_toTopOf="@id/note_edit_note_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Note Name"
+        android:autofillHints=""
+        android:inputType="text"
+        android:hint="@string/my_note" />
+
+    <EditText
+        android:id="@+id/note_edit_note_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:autofillHints="@android:string/paste_as_plain_text"
+        android:ems="10"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:background="@drawable/rounded_edit_text_shape"
+        android:text="@string/my_note"
+        android:gravity="top|start"
+        android:hint="@string/compose_email_hint"
+        android:maxLines="12"
+        android:minLines="8"
+        app:layout_constraintBottom_toTopOf="@id/note_edit_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/note_edit_note_name" />
+
+    <Button
+        android:id="@+id/note_edit_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/save"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/note_edit_delete_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/note_edit_note_edit_text" />
+
+    <Button
+        android:id="@+id/note_edit_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_button_shape"
+        android:layout_marginBottom="32dp"
+        android:text="@string/delete"
+        android:fontFamily="@font/montserrat"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/note_edit_save_button"
+        app:layout_constraintTop_toTopOf="@id/note_edit_save_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

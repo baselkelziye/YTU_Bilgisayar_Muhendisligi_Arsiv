@@ -1,0 +1,9 @@
+# YOLO Dataset Configuration
+path: /Users/sahindogruca/Desktop/code/ytü/semester-7/computerProject2/data/data_v2
+train: train/images
+val: valid/images
+test: test/images
+
+# Classes
+nc: 5
+names: ['dentigeroz kist', 'keratokist', 'radikuler kist', 'ameloblastoma', 'odontoma']

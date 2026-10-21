@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tr.com.berkaytutal.beslenmedanismani.ProgramSearchFilterActivity"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filterLinearLayoutsHeight"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/listingTextMarginBottom"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/programTitleSearch"
+                android:layout_weight="1"
+
+                android:layout_width="wrap_content" />
+            <EditText
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/filterSearchQueryEditText"
+                android:layout_weight="9"
+                android:layout_width="wrap_content"
+                android:nextFocusForward="@+id/filterTrainerQueryEditText"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filterLinearLayoutsHeight"
+            android:layout_marginBottom="@dimen/listingTextMarginBottom"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/trainerQuery" />
+
+            <EditText
+                android:id="@+id/filterTrainerQueryEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:nextFocusForward="@+id/filterCategoriesSpinner"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filterLinearLayoutsHeight"
+            android:layout_marginBottom="@dimen/listingTextMarginBottom"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/categorySearchSelection" />
+
+            <Spinner
+
+                android:id="@+id/filterCategoriesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:focusable="false"
+                android:nextFocusForward="@+id/filterHardnessSpinner"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filterLinearLayoutsHeight"
+            android:layout_marginBottom="@dimen/listingTextMarginBottom"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/hardnessSearchSelection" />
+
+            <Spinner
+
+                android:id="@+id/filterHardnessSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:focusable="false"
+                android:nextFocusForward="@+id/filterSortBySpinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/filterLinearLayoutsHeight"
+            android:layout_marginBottom="@dimen/listingTextMarginBottom"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sortBySelection"
+                android:layout_weight="1"
+
+                />
+
+            <Spinner
+
+                android:id="@+id/filterSortBySpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <Button
+            android:id="@+id/buttonFilterCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/buttonCancel"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorRedDark"
+            android:textColor="#fff"
+            android:focusable="false"
+            />
+
+        <Button
+            android:id="@+id/buttonFilterApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:text="@string/buttonApply"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@color/colorGreen"
+            android:textColor="#fff"
+            android:focusable="false"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

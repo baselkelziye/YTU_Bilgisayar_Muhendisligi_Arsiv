@@ -1,0 +1,170 @@
+$date
+	Wed Apr 30 16:29:06 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module single_cycle_cpu_tb $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$scope module DUT $end
+$var wire 1 ! clk $end
+$var wire 32 # instr [31:0] $end
+$var wire 1 $ pcsrc $end
+$var wire 32 % readdata [31:0] $end
+$var wire 1 " reset $end
+$var wire 1 & zero $end
+$var wire 32 ' srcb [31:0] $end
+$var wire 5 ( rs2 [4:0] $end
+$var wire 5 ) rs1 [4:0] $end
+$var wire 2 * resultsrc [1:0] $end
+$var wire 32 + result [31:0] $end
+$var wire 1 , regwrite $end
+$var wire 32 - rd2 [31:0] $end
+$var wire 32 . rd1 [31:0] $end
+$var wire 5 / rd [4:0] $end
+$var wire 32 0 pc_target [31:0] $end
+$var wire 7 1 opcode [6:0] $end
+$var wire 1 2 memwrite $end
+$var wire 1 3 jump $end
+$var wire 32 4 immext [31:0] $end
+$var wire 2 5 imm_src [1:0] $end
+$var wire 1 6 funct7b5 $end
+$var wire 3 7 funct3 [2:0] $end
+$var wire 1 8 branch $end
+$var wire 1 9 alusrc $end
+$var wire 32 : alu_result [31:0] $end
+$var wire 2 ; alu_op [1:0] $end
+$var wire 3 < alu_control [2:0] $end
+$var reg 32 = pc [31:0] $end
+$scope module ALU $end
+$var wire 32 > b [31:0] $end
+$var wire 1 & zero $end
+$var wire 3 ? alu_control [2:0] $end
+$var wire 32 @ a [31:0] $end
+$var reg 32 A result [31:0] $end
+$upscope $end
+$scope module ALUDEC $end
+$var wire 3 B funct3 [2:0] $end
+$var wire 1 6 funct7b5 $end
+$var wire 2 C alu_op [1:0] $end
+$var reg 3 D alu_control [2:0] $end
+$upscope $end
+$scope module CU $end
+$var wire 7 E opcode [6:0] $end
+$var wire 2 F resultsrc [1:0] $end
+$var wire 1 , regwrite $end
+$var wire 1 2 memwrite $end
+$var wire 1 3 jump $end
+$var wire 2 G imm_src [1:0] $end
+$var wire 1 8 branch $end
+$var wire 1 9 alusrc $end
+$var wire 2 H alu_op [1:0] $end
+$var reg 11 I controls [10:0] $end
+$upscope $end
+$scope module IG $end
+$var wire 2 J ImmSrc [1:0] $end
+$var wire 32 K instr [31:0] $end
+$var reg 32 L imm_out [31:0] $end
+$upscope $end
+$scope module RF $end
+$var wire 1 ! clk $end
+$var wire 5 M ra1 [4:0] $end
+$var wire 5 N ra2 [4:0] $end
+$var wire 5 O wa3 [4:0] $end
+$var wire 32 P wd3 [31:0] $end
+$var wire 1 , we3 $end
+$var wire 32 Q rd2 [31:0] $end
+$var wire 32 R rd1 [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx R
+b0 Q
+b10000000000000000 P
+b1011 O
+b0 N
+b10 M
+b10000000000000000 L
+b10000010110110111 K
+b11 J
+b111x0110000 I
+b0 H
+b11 G
+b11 F
+b110111 E
+b0 D
+b0 C
+b0 B
+bx A
+bx @
+b0 ?
+b0x0000000000000000 >
+b0 =
+b0 <
+b0 ;
+bx :
+x9
+08
+b0 7
+06
+b11 5
+b10000000000000000 4
+03
+02
+b110111 1
+b10000000000000000 0
+b1011 /
+bx .
+b0 -
+1,
+b10000000000000000 +
+b11 *
+b10 )
+b0 (
+b0x0000000000000000 '
+x&
+bx %
+0$
+b10000010110110111 #
+1"
+0!
+$end
+#5
+1!
+#10
+0!
+0"
+#15
+b10010001101000101000000000000 +
+b10010001101000101000000000000 P
+bx -
+bx Q
+bx '
+bx >
+b101 /
+b101 O
+b101 7
+b101 B
+b1000 )
+b1000 M
+b11 (
+b11 N
+b10010001101000101000000000000 4
+b10010001101000101000000000000 L
+b10010001101000101001010110111 #
+b10010001101000101001010110111 K
+b10010001101000101000000000100 0
+b100 =
+1!
+#20
+0!

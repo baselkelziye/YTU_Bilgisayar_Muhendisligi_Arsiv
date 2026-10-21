@@ -1,0 +1,300 @@
+<%- include("header.ejs",{title:"Sipariş Geçmişim" , activeTab: "order_history" }) %>
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>Siparişlerim</h4>
+                        <h2 class="text-dark">Sipariş Geçmişim</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <br> <br> <br>
+
+        <table class="table  table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Ürün Fotoğrafı</th>
+                    <th scope="col" class="text-center">Ürün Adı</th>
+                    <th scope="col" class="text-center">Adet</th>
+                    <th scope="col" class="text-center">Toplam Fiyat</th>
+                    <th scope="col" class="text-center">Satın Alma Tarihi</th>
+                    <th scope="col" class="text-center">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(const item of products) { %>
+                    <tr id="_PID_<%=item.product_id %>">
+                        <td class="text-center">
+                            <img src="http://165.227.132.99/api/<%=item.image%>" alt="" height="30px">
+                        </td>
+                        <td class="text-center">
+                            <%=item.product_name %>
+                        </td>
+                        <td class="text-center">
+                            <%=item.quantity%>
+                        </td>
+                        <td class="text-center">
+                            <%=item.price * item.quantity%> ₺
+                        </td>
+                        <td class="text-center">
+                            <%=new Date(item.purchase_date).toLocaleDateString('en-GB')%>
+                        </td>
+
+                        <td class="text-center">
+                            <button class="btn btn-info _removeItem" data-pid="<%=item.product_id %>"> Yorum yap </button>
+                        </td>
+                    </tr>
+                    <%}%>
+            </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+    </div>
+    </div>
+
+    <!-- Yorum Pop-Up Modal -->
+    <div id="yorumModal" class="modal">
+        <!-- Modal içeriği -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ürün Yorumu Yap</h2>
+            <p>Ürün yorumunuzu girin:</p>
+            <textarea id="yorumText" rows="4" cols="50"></textarea>
+            <p>Yıldızınız:</p>
+            <div id="yildizlar">
+                <span class="yildiz">&#9733;</span>
+                <span class="yildiz">&#9733;</span>
+                <span class="yildiz">&#9733;</span>
+                <span class="yildiz">&#9733;</span>
+                <span class="yildiz">&#9733;</span>
+            </div>
+            <button id="submitYorum">Yorumu Gönder</button>
+        </div>
+    </div>
+    <!-- Pop-Up Modal Bitişi -->
+
+    <style>
+        .modal {
+            display: none;
+            /* Gizli olarak başlat */
+            position: fixed;
+            /* Sabit konumlandırma */
+            z-index: 1000;
+            /* Yeterli yükseklikte z-index */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Tam genişlik */
+            height: 100%;
+            /* Tam yükseklik */
+            overflow: auto;
+            /* Dışarı taşanları kaydırma çubuğu ile göster */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Siyah arka plan, opaklık ile */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 10% auto;
+            /* Ekranın ortasında */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            /* %50 genişlik */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0
+            }
+
+            to {
+                top: 0;
+                opacity: 1
+            }
+        }
+
+        /* Kapatma Butonu Stili */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Yıldız Stilleri */
+        #yildizlar {
+            unicode-bidi: bidi-override;
+            color: #c5c5c5;
+            font-size: 25px;
+            width: 100%;
+            /* Genişliği ayarlayın */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Yıldızları ortala */
+            margin-bottom: 20px;
+            /* Yorum Gönder butonundan mesafe */
+        }
+
+        #yildizlar span {
+            cursor: pointer;
+            display: inline-block;
+            margin-right: 5px;
+            /* Yıldızlar arası mesafe */
+        }
+
+        #yildizlar span:hover,
+        #yildizlar .selected {
+            color: #ffca08;
+        }
+    </style>
+
+    <script src="/formsender.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var PID = 0;
+
+            // Yorum yap butonu için event listener ekleniyor
+            var yorumButtons = document.querySelectorAll('._removeItem');
+            yorumButtons.forEach(function (btn) {
+                btn.onclick = function () {
+                    document.getElementById('yorumModal').style.display = 'block';
+                    PID = btn.getAttribute('data-pid');
+                }
+            });
+
+            // Yıldız seçimini işleyen fonksiyon
+            var yildizlar = document.querySelectorAll('#yildizlar .yildiz');
+            yildizlar.forEach(function (yildiz, index) {
+                yildiz.onclick = function () {
+                    console.log(index + ' yıldız seçildi');
+                    // Tıklanan yıldız ve öncesindeki tüm yıldızları aktif hale getir
+                    for (let i = 0; i < yildizlar.length; i++) {
+                        if (i <= index) {
+                            yildizlar[i].classList.add('selected');
+                        } else {
+                            yildizlar[i].classList.remove('selected');
+                        }
+                    }
+                };
+            });
+
+            // Kapat butonu için fonksiyon
+            var close = document.getElementsByClassName('close')[0];
+            close.onclick = function () {
+                document.getElementById('yorumModal').style.display = 'none';
+                // Yıldız seçimlerini temizle
+                yildizlar.forEach(function (yildiz) {
+                    yildiz.classList.remove('selected');
+                });
+            };
+
+            // Yorum gönder butonu için fonksiyon
+            document.getElementById('submitYorum').onclick = async function () {
+                var yorumText = document.getElementById('yorumText').value;
+                var yildizSayisi = document.querySelectorAll('#yildizlar .selected').length;
+
+                console.log(PID);
+                var status = await FormSender.SendComment(PID, yorumText, yildizSayisi);
+
+                if (status) {
+                    document.getElementById('yorumModal').style.display = 'none';
+                    // Yıldız seçimlerini temizle
+                    yildizlar.forEach(function (yildiz) {
+                        yildiz.classList.remove('selected');
+                    });
+                    // inputu temizle
+                    document.getElementById('yorumText').value = '';
+
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Yorumunuz gönderildi',
+                        icon: 'success',
+                        confirmButtonText: 'Tamam',
+                    })
+                } else {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Bir hata oluştu',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                }
+
+                document.getElementById('yorumModal').style.display = 'none';
+                // Yıldız seçimlerini temizle
+                yildizlar.forEach(function (yildiz) {
+                    yildiz.classList.remove('selected');
+                });
+            };
+
+            // Dışarı tıklandığında modalı kapat
+            window.onclick = function (event) {
+                if (event.target == document.getElementById('yorumModal')) {
+                    document.getElementById('yorumModal').style.display = 'none';
+                    // Yıldız seçimlerini temizle
+                    yildizlar.forEach(function (yildiz) {
+                        yildiz.classList.remove('selected');
+                    });
+                }
+            };
+        });
+    </script>
+
+
+    <%- include("footer.ejs") %>
+
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) { //declaring the array outside of the
+                if (!cleared[t.id]) { // function makes it static and global
+                    cleared[t.id] = 1; // you could use true and false, but that's more typing
+                    t.value = ''; // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+        </body>
+
+        </html>

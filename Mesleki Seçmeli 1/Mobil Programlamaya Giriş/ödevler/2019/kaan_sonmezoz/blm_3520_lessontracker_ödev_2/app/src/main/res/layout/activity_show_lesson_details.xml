@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="@string/lessonNameHint" />
+
+            <EditText
+                android:id="@+id/lessonName"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/lessonCodeHint" />
+
+            <EditText
+                android:id="@+id/lessonCode"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/instructor" />
+
+            <EditText
+                android:id="@+id/instructor"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/studentGrade" />
+
+            <EditText
+                android:id="@+id/studentGrade"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/aveFloatGrade" />
+
+            <EditText
+                android:id="@+id/aveFloatGrade"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/aveGrade" />
+
+            <EditText
+                android:id="@+id/aveGrade"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enrolledStudentHint" />
+
+            <EditText
+                android:id="@+id/enrolledStudent"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/capacityStudentHint" />
+
+            <EditText
+                android:id="@+id/capacitydStudent"
+                android:layout_weight="70"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:focusable="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

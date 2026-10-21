@@ -1,0 +1,23 @@
+<!-- templates/users/user_edit.html -->
+{% extends "base.html" %}
+{% block content %}
+  <h2>Kullanıcı Düzenle</h2>
+  <form method="POST" action="{{ url_for('update_user', user_id=user.user_id) }}" class="row g-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Ad Soyad</label>
+      <input type="text" name="name" id="name" class="form-control" value="{{ user.name }}" required>
+    </div>
+    <div class="col-md-6">
+      <label for="username" class="form-label">Kullanıcı Adı</label>
+      <input type="text" name="username" id="username" class="form-control" value="{{ user.username }}" required>
+    </div>
+    <div class="col-md-6">
+      <label for="password" class="form-label">Şifre</label>
+      <input type="password" name="password" id="password" class="form-control" value="{{ user.password }}" required>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Güncelle</button>
+      <a href="{{ url_for('list_users') }}" class="btn btn-secondary">Vazgeç</a>
+    </div>
+  </form>
+{% endblock %}

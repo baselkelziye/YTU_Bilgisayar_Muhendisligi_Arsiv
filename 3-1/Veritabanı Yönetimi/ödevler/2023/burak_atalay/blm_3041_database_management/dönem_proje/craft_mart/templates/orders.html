@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+  <h2 class="mb-4">Siparişlerim</h2>
+  {% if orders %}
+    <div class="accordion" id="ordersAccordion">
+      {% for o in orders %}
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading{{ o.order_id }}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#collapse{{ o.order_id }}" aria-expanded="false" 
+                    aria-controls="collapse{{ o.order_id }}">
+                <strong>Sipariş ID:</strong>&nbsp;{{ o.order_id }}
+                - <strong>Toplam Fiyat:</strong> &nbsp;{{ o.total_price }} TL
+                - <strong>Tarih:</strong> &nbsp;{{ o.created_at.strftime('%d %B %Y, %H:%M') }}
+            </button>
+          </h2>
+          <div id="collapse{{ o.order_id }}" class="accordion-collapse collapse" 
+               aria-labelledby="heading{{ o.order_id }}" data-bs-parent="#ordersAccordion">
+            <div class="accordion-body">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-light">
+                    <tr>
+                      <th>Ürün Resmi</th>
+                      <th>Ürün Adı</th>
+                      <th>Adet</th>
+                      <th>Birim Fiyat</th>
+                      <th>Toplam Fiyat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in o.product_list %}
+                    <tr>
+                      <td>
+                        {% if item.image_url %}
+                          <img src="{{ url_for('static', filename='uploads/' ~ item.image_url) }}" 
+                               class="img-thumbnail" style="width: 60px; height: 60px;" alt="{{ item.name }}">
+                        {% else %}
+                          <img src="{{ url_for('static', filename='images/default_product.png') }}" 
+                               class="img-thumbnail" style="width: 60px; height: 60px;" alt="Varsayılan Ürün">
+                        {% endif %}
+                      </td>
+                      <td>{{ item.name }}</td>
+                      <td>{{ item.quantity }}</td>
+                      <td>{{ "{0:.2f}".format(item.price) }} TL</td>
+                      <td>{{ "{0:.2f}".format(item.price * item.quantity) }} TL</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <div class="mt-3 text-end">
+                <strong>Toplam Sipariş Tutarı: {{ o.total_price }} TL</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="alert alert-info" role="alert">
+      Henüz siparişiniz bulunmuyor.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

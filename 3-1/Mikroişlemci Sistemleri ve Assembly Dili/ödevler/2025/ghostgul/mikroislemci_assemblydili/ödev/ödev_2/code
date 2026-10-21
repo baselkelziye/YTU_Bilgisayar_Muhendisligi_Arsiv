@@ -1,0 +1,193 @@
+STAK    SEGMENT PARA STACK 'STACK'
+        DW 20 DUP(?)
+STAK    ENDS
+
+DATA    SEGMENT PARA 'DATA'
+BUFFER  DB 5 DUP(?) 
+DATA    ENDS
+
+CODE    SEGMENT PARA 'CODE'
+        ASSUME CS:CODE, DS:DATA, SS:STAK
+
+START:
+        MOV AX, DATA
+        MOV DS, AX
+
+        ; 8259 PIC initialization
+        MOV AL, 11H       ; ICW1: Edge-triggered, single mode
+        OUT 20H, AL
+        MOV AL, 08H       ; ICW2: Interrupt vector offset at 08H
+        OUT 21H, AL
+        MOV AL, 04H       ; ICW3: Connect to master PIC
+        OUT 21H, AL
+        MOV AL, 01H       ; ICW4: Normal EOI mode
+        OUT 21H, AL
+        MOV AL, 0FEH      ; Mask all interrupts except IRQ1 (optional)
+        OUT 21H, AL
+
+        ; 8251 USART configuration
+        MOV DX, 0303H
+        MOV AL, 01001101B ; Mode register: 8 data bits, 1 stop bit, no parity
+        OUT DX, AL
+        MOV AL, 40H 
+        OUT DX, AL
+
+        MOV AL, 01001101B ; Mode register
+        OUT DX, AL
+
+        MOV AL, 00010101B ; Enable Tx and Rx
+        OUT DX, AL
+
+        ; INT 50H (0x140) and INT 51H (0x144)
+        CLI
+        MOV AX, 0          ; Segment 0 (interrupt vector table)
+        MOV DS, AX         ; Set DS to 0 for interrupt vector table access
+
+        ; Set INT 50H vector
+        MOV AX, OFFSET INT50H_HANDLER ; Offset of the "handler"
+        MOV BX, 0140H      ; Address for INT 50H vector in table
+        MOV [BX], AX       ; Store the offset
+        MOV AX, CS
+        MOV [BX+2], AX     ; Store the segment
+
+        ; Set INT 51H vector
+        MOV AX, OFFSET INT51H_HANDLER ; Offset of the "handler"
+        MOV BX, 0144H      ; Address for INT 51H vector in table
+        MOV [BX], AX       ; Store the offset
+        MOV AX, CS
+        MOV [BX+2], AX     ; Store the segment
+        STI
+
+        ; Initialize pointers and counter
+        MOV SI, OFFSET BUFFER ; SI points to the buffer
+        XOR CX, CX ; Counter for valid characters (initialize to 0)
+
+INPUT_LOOP:
+        MOV DX, 0303H
+WAIT_RX:
+        IN AL, DX ; Wait for RxRDY
+        AND AL, 02H
+        JZ WAIT_RX
+
+        MOV DX, 0301H
+        IN AL, DX ; Read the received data
+        SHR AL, 1 ; Ensure a maximum of 7 bits
+
+        ; Check if input is alphanumeric
+        CMP AL, '0'
+        JL INVALID_INPUT
+        CMP AL, '9'
+        JLE VALID_INPUT
+        CMP AL, 'A'
+        JL INVALID_INPUT
+        CMP AL, 'Z'
+        JLE VALID_INPUT
+        CMP AL, 'a'
+        JL INVALID_INPUT
+        CMP AL, 'z'
+        JG INVALID_INPUT
+
+VALID_INPUT:
+        ; Store the valid input in the buffer
+        MOV [SI], AL
+        INC SI
+        INC CX ; Increment the counter
+
+        ; Echo the entered character to the terminal
+        MOV DX, 0303H
+WAIT_TX_ECHO:
+        IN AL, DX ; Wait for TxRDY
+        AND AL, 01H
+        JZ WAIT_TX_ECHO
+
+        MOV DX, 0301H
+        MOV AL, [SI-1] ; Send the echoed character
+        OUT DX, AL
+
+        CMP CX, 5 ; Check if 5 characters are entered
+        JL INPUT_LOOP
+
+        ; Process the buffer and output shifted characters
+        MOV SI, OFFSET BUFFER ; Reset SI to start of buffer
+        MOV DI, OFFSET BUFFER ; Use DI to traverse buffer for output
+
+PROCESS_OUTPUT:
+        MOV AL, [DI]
+
+        ; Handle shifting for numbers, uppercase, and lowercase
+        CMP AL, '0'
+        JL OUTPUT_NEXT
+        CMP AL, '9'
+        JLE SHIFT_NUMBER
+        CMP AL, 'A'
+        JL OUTPUT_NEXT
+        CMP AL, 'Z'
+        JLE SHIFT_UPPERCASE
+        CMP AL, 'a'
+        JL OUTPUT_NEXT
+        CMP AL, 'z'
+        JG OUTPUT_NEXT
+
+SHIFT_NUMBER:
+        INC AL ; Shift number
+        CMP AL, '9' + 1
+        JNE STORE_OUTPUT
+        MOV AL, '0' ; Wrap around from '9' to '0'
+        JMP STORE_OUTPUT
+
+SHIFT_UPPERCASE:
+        INC AL ; Shift uppercase letter
+        CMP AL, 'Z' + 1
+        JNE STORE_OUTPUT
+        MOV AL, 'A' ; Wrap around from 'Z' to 'A'
+        JMP STORE_OUTPUT
+
+SHIFT_LOWERCASE:
+        INC AL 
+        CMP AL, 'z' + 1
+        JNE STORE_OUTPUT
+        MOV AL, 'a' 
+
+STORE_OUTPUT:
+        MOV [DI], AL
+OUTPUT_NEXT:
+        INC DI
+        CMP DI, OFFSET BUFFER + 5
+        JL PROCESS_OUTPUT
+
+        ; Output the processed characters
+        MOV SI, OFFSET BUFFER
+OUTPUT_LOOP:
+        MOV DX, 0303H
+WAIT_TX_OUTPUT:
+        IN AL, DX ; Wait for TxRDY
+        AND AL, 01H
+        JZ WAIT_TX_OUTPUT
+
+        MOV DX, 0301H
+        MOV AL, [SI] ; Send the character
+        OUT DX, AL
+        INC SI
+        CMP SI, OFFSET BUFFER + 5
+        JL OUTPUT_LOOP
+      
+	; reset all
+        MOV SI, OFFSET BUFFER
+        XOR CX, CX
+        JMP INPUT_LOOP
+
+INVALID_INPUT:
+        JMP INPUT_LOOP
+
+END_PROGRAM:
+        HLT
+
+INT50H_HANDLER:
+        IRET
+
+INT51H_HANDLER:
+        IRET
+
+CODE    ENDS
+        END START
+

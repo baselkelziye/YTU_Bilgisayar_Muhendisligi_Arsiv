@@ -1,0 +1,34 @@
+name: bigDataAnalyticProject
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - cassandra-driver=3.25.0
+  - certifi=2020.6.20
+  - intel-openmp=2021.4.0
+  - libblas=3.9.0
+  - libcblas=3.9.0
+  - liblapack=3.9.0
+  - mkl=2021.4.0
+  - numpy=1.19.5
+  - pandas=0.25.3
+  - pip=21.3.1
+  - py4j=0.10.8.1
+  - pyspark=2.4.0
+  - python=3.6.15
+  - python-dateutil
+  - python_abi=3.6
+  - pytz=2021.3
+  - setuptools=49.6.0
+  - six=1.16.0
+  - tbb=2021.4.0
+  - ucrt=10.0.20348.0
+  - vc=14.2
+  - vs2015_runtime=14.29.30037
+  - wheel=0.37.0
+  - wincertstore=0.2
+  - pip:
+    - cql==1.4.0
+    - thrift==0.15.0
+prefix: 
+

@@ -30,6 +30,3 @@
 
 ## 👨‍🏫 👩‍🏫 Dersi Yürüten Akademisyenler:
 - MSA
-
-## 😔 İçerik yok
-- Henüz dersle alakalı bir döküman ne yazık ki yok. Katkıda bulunmak istersen lütfen bizimle iletişime geç...

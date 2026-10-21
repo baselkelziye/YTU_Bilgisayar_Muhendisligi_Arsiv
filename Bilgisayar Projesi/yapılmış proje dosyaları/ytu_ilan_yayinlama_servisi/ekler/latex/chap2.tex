@@ -1,0 +1,88 @@
+\chapter{ÖN İNCELEME}
+İlan yayınlarının yapıldığı bazı web sayfaları/uygulamaları mevcuttur. Birçoğu işlevsel
+olarak yeterliliğe sahip olsa da hedef kitlesi öğrenciler olarak tasarlanmadığından ele
+alınan soruna çözüm olamamaktadır.
+
+\section{Mevcut Çözümlerin İncelemesi}
+Tablo 2.1' de ilan yayınlanan web uygulamalarından 6'sı karşılaştırmalı olarak
+incelenmiştir. \\
+Bu uygulamaların hepsi internet sayfaları aracılığıyla kullanıcılara ilan sunabilmektedir.
+Bu sayfalardaki ilanların tek ortak özellikleri ise ilan başlığı ve ilan içeriğine yer vermiş
+olmalarıdır. 1 numaralı uygulama, sadece YTÜ personelini ilgilendiren ilanları
+yayımlamaktadır. 2 numaralı uygulama öğrencilere yönelik ilanlar barındırır. 1 ve 2
+numaralı uygulamaların teknik yapıları aynıdır: Bir web sayfası üzerinden, yetki
+gerektirmeksizin görüntülenebilen ilanlar. 3 ve 4 numaralı ilanlar ise YTÜ Bilgisayar
+Mühendisliği öğrencileri hedeflenerek yayımlanan ilanlardır. Şirketler, özellikle YTÜ
+Bilgisayar Mühendisliği öğrencileri için bu ilanların yayımlanmasını istese de, 1 ve 2
+numaralı uygulamalarda olduğu gibi, 3 ve 4 numaralı uygulamalardaki ilanlar da
+herhangi bir yetki gerektirmeksizin herkes tarafından görüntülenebilir. Bu şirketler
+tarafından istenmeyen bir durumdur. 5 numaralı uygulama 1, 2, 3 ve 4 numaralı
+uygulamalardan farklı olarak kullanıcı kaydı gerektirir ve ilanlar sadece kayıtlı
+kullanıcılar tarafından görüntülenebilir. 6 numaralı uygulama bu açıdan 5 numaralı
+uygulamaya benzerdir. Farklılık ise hedef kitlelerindedir. 5 numaralı uygulama sadece
+YTÜ mezun öğrencilerine yönelik iken, 6 numaralı uygulamaya herkes kayıt olabilir. \\
+Web uygulamaları her kullanıcıya aynı arayüzü sunan statik bir yapıda olabileceği gibi,
+kullanıcılardan aldığı bilgilerle, veritabanından sorgulama yaparak oluşturduğu
+sonuçları sunarak çalışan dinamik bir yapıda da olabilir. Dinamik yapıda olan web
+uygulamaları çoğunlukla kullanıcı kaydı almakta ve kullanıcıların sayfalarını
+özelleştirmelerine izin vermektedir. Tablo 2.1’deki örnek 5 ve 6 numaralı uygulamalar
+dinamik web uygulamaları olup, gerçekleştirilmesi hedeflenen İlan Yayınlama Servisi
+projesinde de bu şekilde tasarlanacaktır. Ayrıca proje, öğrenci odaklı, şirket ilanlarına
+açık, üniversite özelinde olacaktır. Bu açıdan Tablo 2.1’deki uygulamaların ortak bir
+paydada birleşmiş hali olacağı söylenebilir.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[]
+\caption{Bazı ilan yayınlanan web Sayfalarının, problemin çözümüne yönelik yetkinlik durumları}
+\label{my-label}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccccc}
+\hline
+\multicolumn{1}{|c|}{NO} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}İlanın Yapıldığı\\ Yer\end{tabular}}                                   & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Öğrenciye \\ Özel? Mi\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Üniversite \\ Özeli Mi?\end{tabular}} & \multicolumn{1}{c|}{İlan Kapsamı}                                                                              & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Firma\\ İlanları\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sistem\\ Üzerinden\\ Başvuru\end{tabular}} \\ \hline
+\multicolumn{1}{|c|}{1}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ personel \\ sayfası\cite{ytuPersonel}\end{tabular}}                                  & \multicolumn{1}{c|}{Hayır}                                                         & \multicolumn{1}{c|}{Evet}                                                            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ personeli\\ bilgilendirme \\ amaçlı\end{tabular}}           & \multicolumn{1}{c|}{Hayır}                                                    & \multicolumn{1}{c|}{Hayır}                                                                \\ \hline
+\multicolumn{1}{|c|}{2}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ resmi \\ web sayfası\cite{ytuResmi}\end{tabular}}                                 & \multicolumn{1}{c|}{Hayır}                                                         & \multicolumn{1}{c|}{Evet}                                                            & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Üniversite kapsamında\\ yer alan ilanlar\end{tabular}}          & \multicolumn{1}{c|}{Hayır}                                                    & \multicolumn{1}{c|}{Hayır}                                                                \\ \hline
+\multicolumn{1}{|c|}{3}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ BM\\ staj ilan sayfası\cite{bmStaj}\end{tabular}}                               & \multicolumn{1}{c|}{Evet}                                                          & \multicolumn{1}{c|}{Hayır}                                                           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}BM öğrencilerine \\ yönelik staj ilanları\end{tabular}}         & \multicolumn{1}{c|}{Evet}                                                     & \multicolumn{1}{c|}{Hayır}                                                                \\ \hline
+\multicolumn{1}{|c|}{4}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ BM \\ İş İlan Sayfası\cite{bmIs}\end{tabular}}                                & \multicolumn{1}{c|}{Evet}                                                          & \multicolumn{1}{c|}{Hayır}                                                           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}BM öğrencilerine \\ yönelik iş ilanları\end{tabular}}           & \multicolumn{1}{c|}{Evet}                                                     & \multicolumn{1}{c|}{Evet}                                                                 \\ \hline
+\multicolumn{1}{|c|}{5}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ Mezun \\ internet sitesi\cite{ytuMezun}\end{tabular}}                             & \multicolumn{1}{c|}{Hayır}                                                         & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sadece \\ mezunlar\end{tabular}}      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}YTÜ mezunlarına \\ yönelik iş ve staj \\ ilanları\end{tabular}} & \multicolumn{1}{c|}{Evet}                                                     & \multicolumn{1}{c|}{Evet}                                                                 \\ \hline
+\multicolumn{1}{|c|}{6}  & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Özel bir şirkete \\ ait iş/staj ilanı \\ internet sitesi\cite{kariyerNet}\end{tabular}} & \multicolumn{1}{c|}{Hayır}                                                         & \multicolumn{1}{c|}{Hayır}                                                           & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Herkese açık\\  iş ve staj ilanları\end{tabular}}               & \multicolumn{1}{c|}{Evet}                                                     & \multicolumn{1}{c|}{Evet}                                                                 \\ \hline
+\multicolumn{1}{l}{}     & \multicolumn{1}{l}{}                                                                                                  & \multicolumn{1}{l}{}                                                               & \multicolumn{1}{l}{}                                                                 & \multicolumn{1}{l}{}                                                                                           & \multicolumn{1}{l}{}                                                          & \multicolumn{1}{l}{}                                                                      \\
+\multicolumn{1}{l}{}     & \multicolumn{1}{l}{}                                                                                                  & \multicolumn{1}{l}{}                                                               & \multicolumn{1}{l}{}                                                                 & \multicolumn{1}{l}{}                                                                                           & \multicolumn{1}{l}{}                                                          & \multicolumn{1}{l}{}                                                                      \\
+\multicolumn{1}{l}{}     & \multicolumn{1}{l}{}                                                                                                  & \multicolumn{1}{l}{}                                                               & \multicolumn{1}{l}{}                                                                 & \multicolumn{1}{l}{}                                                                                           & \multicolumn{1}{l}{}                                                          & \multicolumn{1}{l}{}                                                                      \\
+\multicolumn{1}{l}{}     & \multicolumn{1}{l}{}                                                                                                  & \multicolumn{1}{l}{}                                                               & \multicolumn{1}{l}{}                                                                 & \multicolumn{1}{l}{}                                                                                           & \multicolumn{1}{l}{}                                                          & \multicolumn{1}{l}{}                                                                     
+\end{tabular}%
+}
+\end{table}
+
+
+
+\section{Tasarlanan Çözümün Genel Yapısı}
+
+İlan Yayınlama Servisi projesinde yer alacak özellikler genel hatlarıyla şöyledir:
+\begin{itemize}
+    \item Şirket ve öğrencilerin sisteme kayıt olmaları
+    \item Şirketlerin ilanları parametrelere göre hazırlaması, buna dayalı olarak
+    \item Şirketlerin ilanları parametrelere göre hazırlaması, buna dayalı olarak
+öğrencilerin istedikleri niteliklerdeki ilanları arayabilmeleri ve istedikleri
+ilanlara sistem üzerinden başvurabilmeleri
+    \item Uygunsuz içeriğe sahip ilanların şikayet edilmesine yönelik bir ceza sisteminin
+oluşturulması
+    \item Şirketlerin ilan yayınlamak için YTÜ’ nün vakıflarına bağış yapması ve bu şekilde elde edilen gelirin
+harcanmasına yönelik kayıt tutulması
+\end{itemize}
+
+Bu özelliklerden hareketle sistem için 4 tip kullanıcı belirlenmiştir:
+\begin{itemize}
+    \item Sistem Yöneticisi
+    \item Bağış Kabul Edebilen Vakıflar
+    \item İlan yayımlamak isteyenler 
+    \item İlanları inceleyecek olan öğrenciler
+\end{itemize}
+
+Bu kullanıcılardan sadece sistem yöneticisi 1 tane olacaktır, diğer kullanıcı tiplerinden
+birden fazla olabilecektir. Şirket ve öğrenci kullanıcıları sisteme kayıt olacak, bağış
+kabul birimi kullanıcıları ise sistem yöneticisi tarafından eklenecektir. \\
+Hedeflenen bu çözüm ile öğrenci odaklı bir İlan Yayınlama Servisi oluşturulacaktır.
+Şirket bağışlarından gelir elde edilecek, elde edilen bu gelir öğrenci odaklı çeşitli
+harcamalarda kullanılabilecek ve bu harcamaların kaydı sistem üzerinden takip
+edilebilecektir. En önemlisi ise ilanlar merkezi bir şekilde yönetilebilecektir.

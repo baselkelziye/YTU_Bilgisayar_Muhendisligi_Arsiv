@@ -1,0 +1,16 @@
+{% extends 'base.jinja2' %} {% block content %}
+
+  <h2
+      class="{{ 'text-red-500' if result.will_remove or (not result.success) else 'text-green-500' }} text-2xl font-bold leading-snug"
+  >
+    {{ result.msg }}
+  </h2>
+
+  {% if result.success %}
+
+    <p class="py-4">
+      <span class="font-semibold">Removal Probability: </span>{{ result.prob_remove }}%
+    </p>
+
+  {% endif %}
+{% endblock %}

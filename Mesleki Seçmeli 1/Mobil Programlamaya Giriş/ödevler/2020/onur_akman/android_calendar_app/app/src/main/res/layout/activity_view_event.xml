@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <TextView
+        android:id="@+id/eventNameHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:maxHeight="130px"
+        android:text="Event"
+        android:textColor="@color/white"
+        android:textSize="100px" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollViewer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="130px"
+        android:layout_marginBottom="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Add">
+
+            <LinearLayout
+                android:id="@+id/ViewEventForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ActionButtons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                    <Button
+                        android:id="@+id/updateButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.33"
+                        android:background="@color/colorPrimary"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+
+                    <Button
+                        android:id="@+id/deleteButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.33"
+                        android:background="@color/colorPrimary"
+                        android:text="Delete"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+
+                    <Button
+                        android:id="@+id/shareButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.33"
+                        android:background="@color/colorPrimary"
+                        android:text="Share"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/NameTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Event Name"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/NameInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/DetailTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Event Detail"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DetailInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/DateTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Event Date"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DatelInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/StartingTimeTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Starting"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/StartingTimeInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/EndingTimeTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Until"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/EndingTimeInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/RepeatTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Repeat"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/RepeatInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/AddressTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Address"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/getLoc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/AddLocationInput">
+
+                    <TextView
+                        android:id="@+id/AddressInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textSize="50px" />
+
+                    <Button
+                        android:id="@+id/FindLocationButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Find"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/NotTypeTag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Notification Preferences"
+                    android:textSize="30px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ReminderOnOff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/NotTypeInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/ToneInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/Rem1Info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/Rem2Info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/Rem3Info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="50px" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Home"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/AddButton" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Add"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/SettingsButton" />
+
+
+        <Button
+            android:id="@+id/SettingsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Settings"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+﻿@model GeziRehberi.Models.BlogCardViewModel
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <div class="col-lg-6 px-0">
+                <h1 class="display-4 fst-italic">@Model.Title</h1>    
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <article class="blog-post">
+            <img src="@Model.CoverPhoto" class="img-fluid" alt="...">
+
+           
+            <p class="blog-post-meta">
+                @Model.CreatedDate <a href="#">@Model.Author</a>
+            </p>
+            <p>@Model.Article</p>
+         
+        </article>
+    </div>
+
+</div>

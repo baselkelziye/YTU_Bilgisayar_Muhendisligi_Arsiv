@@ -1,0 +1,38 @@
+drone_count = 4
+
+mutation_rate = 0.01 # mutasyon orani
+generation = 1500 # nesil sayisi
+population_size = 10000 # populasyon buyuklugu
+cross = 2 # crossover kesme sayisi
+
+x_dim = 9 #matrix buyuklugu
+y_dim = x_dim
+start_loc = [0, 0] #baslangic noktasi
+
+plot_every = 150 # hangi aralıklarla cizdirilmeli
+
+--------------------------------------------------------------------------------------------------
+
+RESULT:
+Best individual # 1 :  [1 1 1 1 1 1 1 7 7 7 7 7 7 5 5 5 5 2 3 3 3 1]
+Best individual # 2 :  [7 7 7 7 7 7 7 7 1 2 1 1 1 3 3 3 4 5 5 7 7 7]
+Best individual # 3 :  [8 7 7 7 7 7 7 7 1 1 1 1 1 2 3 4 3 3 3 5 5 5]
+Best individual # 4 :  [1 7 1 1 1 1 1 1 1 7 7 7 7 7 7 7 5 4 5 4 5 5]
+
+Best score:  0.20626293995859213 
+Mean score:  0.38862210662525876
+
+---------------------------------------------------------------------------------------------------
+
+[[ True  True  True  True  True  True  True  True  True]
+ [ True  True  True  True  True  True  True  True  True]
+ [ True  True False  True  True  True  True  True  True]
+ [ True  True  True  True False False  True  True  True]
+ [ True  True  True  True  True  True  True  True  True]
+ [ True  True  True False  True  True  True  True  True]
+ [ True  True  True  True  True  True  True  True  True]
+ [ True  True  True  True  True  True  True  True  True]
+ [False  True  True  True  True  True  True  True  True]]
+
+The best at its best at the generation # 748 with the score of  0.17531055900621118
+The mean at its best at the generation # 821 with the score of  0.3835759912008282

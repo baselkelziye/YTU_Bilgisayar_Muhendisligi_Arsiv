@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-3/diffProject2/polynomial"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _cot, symObjAddr: 0x0, symBinAddr: 0x1000035A4, symSize: 0x3C }
+  - { offsetInCU: 0x3F, offset: 0x3F, size: 0x8, addend: 0x0, symName: _polynom, symObjAddr: 0x1CD0, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x1C0, offset: 0x1C0, size: 0x8, addend: 0x0, symName: _last, symObjAddr: 0x1CD8, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0x1D7, offset: 0x1D7, size: 0x8, addend: 0x0, symName: _cot, symObjAddr: 0x0, symBinAddr: 0x1000035A4, symSize: 0x3C }
+  - { offsetInCU: 0x1FF, offset: 0x1FF, size: 0x8, addend: 0x0, symName: _sec, symObjAddr: 0x3C, symBinAddr: 0x1000035E0, symSize: 0x30 }
+  - { offsetInCU: 0x227, offset: 0x227, size: 0x8, addend: 0x0, symName: _cosec, symObjAddr: 0x6C, symBinAddr: 0x100003610, symSize: 0x30 }
+  - { offsetInCU: 0x24F, offset: 0x24F, size: 0x8, addend: 0x0, symName: _eval, symObjAddr: 0x9C, symBinAddr: 0x100003640, symSize: 0x20 }
+  - { offsetInCU: 0x285, offset: 0x285, size: 0x8, addend: 0x0, symName: _expToPolynom, symObjAddr: 0xBC, symBinAddr: 0x100003660, symSize: 0x3A8 }
+  - { offsetInCU: 0x30C, offset: 0x30C, size: 0x8, addend: 0x0, symName: _printPolynom, symObjAddr: 0x480, symBinAddr: 0x100003A24, symSize: 0x284 }
+  - { offsetInCU: 0x35B, offset: 0x35B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x720, symBinAddr: 0x100003CC4, symSize: 0x30 }
+...

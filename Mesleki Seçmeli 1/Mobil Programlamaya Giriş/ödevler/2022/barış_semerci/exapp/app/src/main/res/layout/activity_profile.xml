@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <GridLayout
+        android:id="@+id/gridLayoutProfile"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewProfile">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/nameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Name:"
+            android:textSize="30sp"
+
+            />
+
+        <TextView
+            android:id="@+id/surnameProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textColor="@color/black"
+            android:text="Surname:"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/emailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:textColor="@color/black"
+            android:layout_column="0"
+            android:text="E-mail:"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/phoneProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textColor="@color/black"
+            android:text="Phone Number:"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/birthDateProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:textColor="@color/black"
+            android:layout_column="0"
+            android:text="Birth Date:"
+            android:textSize="30sp"/>
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewProfileInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <Spinner
+            android:id="@+id/spinnerProfile"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/buttonProfileShare"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="shareExam"
+            android:backgroundTint="@color/black"
+            android:text="Share" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewProfileInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select an exam to share"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutProfile"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* veya istediğiniz bir değer */
+    margin: auto; /* Sayfanın ortasında olmasını sağlar */
+  }
+  
+  .profileItem {
+    margin-bottom: 10px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profileItem strong {
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  

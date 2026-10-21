@@ -1,0 +1,288 @@
+/* GOOGLE FONTS (Poppins / Roboto) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto&display=swap');
+
+/* GENEL AYARLAR */
+/* GENEL AYARLAR */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #343a40; /* Dark ton */
+}
+.navbar-brand {
+  font-weight: 600 !important;
+}
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* BAŞLIKLAR */
+h1, h2, h5 {
+  font-weight: 600;
+}
+
+/* ALERT */
+.alert {
+  border-radius: 10px;
+}
+
+/* KART TASARIMI */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-body {
+  text-align: center;
+  padding: 20px;
+}
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.card .row {
+  margin-bottom: 10px;
+}
+.card .row p {
+  margin-bottom: 0;
+}
+
+/* ÜRÜN KARTI HOVER */
+.product-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* BUTONLAR */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  font-weight: 500;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #218838;
+}
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #c82333;
+}
+.btn-outline-secondary:hover {
+  background-color: #f1f1f1;
+}
+
+/* TABLOLAR */
+.table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: #f9f9f9;
+}
+
+/* RESİMLER */
+.img-thumbnail {
+  border-radius: 50%;
+}
+.product-image {
+  max-width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* HERO (Anasayfa Üst Banner) */
+.hero {
+  position: relative;
+  background: url('/static/images/hero-background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero h1, .hero p, .hero a {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.hero p {
+  font-size: 1.5rem;
+}
+.hero a {
+  z-index: 1;
+}
+
+/* STAR RATING */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.star-rating input[type="radio"] {
+  display: none;
+}
+.star-rating label {
+  color: #ddd;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffc107;
+}
+.star-rating input[type="radio"]:checked ~ label ~ label {
+  color: #ddd;
+}
+.star-rating label:hover i,
+.star-rating input[type="radio"]:checked ~ label i {
+  transform: scale(1.2);
+}
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffc107;
+}
+.star-rating input[type="radio"]:checked ~ label ~ label {
+  color: #ddd;
+}
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label ~ label {
+  color: #ddd;
+}
+.star-rating label:hover i,
+.star-rating input[type="radio"]:checked ~ label i {
+  transform: scale(1.2);
+}
+
+/* FORM / FİLTRE STİLLERİ */
+.filter-form .form-select,
+.filter-form .form-control {
+  border-radius: 6px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+.filter-form .btn-outline-secondary {
+  border-color: #ddd;
+  color: #333;
+}
+
+/* REVIEW FORMU */
+.review-form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.review-form h5 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+.review-form button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 30px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.review-form button:hover {
+  background-color: #218838;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+/* Notification Styles */
+.toast {
+    background-color: white;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #007bff;
+}
+
+.toast .toast-header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.toast .toast-body {
+    padding: 0.75rem;
+}
+
+#notification-area {
+    max-width: 350px;
+    z-index: 1060;
+}
+
+#notification-area .toast:not(:last-child) {
+    margin-bottom: 0.75rem;
+}

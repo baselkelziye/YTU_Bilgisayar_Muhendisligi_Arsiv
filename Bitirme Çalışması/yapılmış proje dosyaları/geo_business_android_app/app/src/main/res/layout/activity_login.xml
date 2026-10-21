@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/login_tv_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@id/logo"
+        android:text="Geo-Business"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/gray"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/login_tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="220dp"
+        android:text=" Username"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/login_et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_tv_username"
+        android:layout_marginTop="20dp"
+        android:theme="@style/ThemeOverlay.Material3.TextInputEditText"
+        android:background="@drawable/oval_background"
+        android:ems="15"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"/>
+
+
+    <TextView
+        android:id="@+id/login_tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="330dp"
+        android:text=" Password"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/login_et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/login_tv_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_background"
+        android:inputType="textPassword"
+        android:ems="15"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:theme="@style/ThemeOverlay.Material3.TextInputEditText" />
+
+    <Button
+        android:id="@+id/login_bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_et_password"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="8"
+        android:backgroundTint="@color/gray"
+        android:text="LOGIN"
+        android:textColor="@color/white"/>
+
+
+
+</RelativeLayout>

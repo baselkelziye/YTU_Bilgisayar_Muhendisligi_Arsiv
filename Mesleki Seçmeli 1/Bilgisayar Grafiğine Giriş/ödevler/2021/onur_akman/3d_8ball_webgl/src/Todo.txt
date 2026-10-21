@@ -1,0 +1,23 @@
+* Instead of Angel's library, use glMatrix library for everything.
+* Extract shader programs from GameObject. Let shader program be given to each object seperately. Then switch programs only when necessary.
+* Add an Empty game object, for management and hierarchy purposes.
+* Refactor into multiple library files and an example program. Lib name: SHOOT (In Turkish fidan). Use ES6 modules.
+* Keyboard input
+* Picking will be added by students.
+* Add a camera class.
+* Give each object a camera object
+
+* Convert collidesWith into a set disabling adding of more 
+  than one objects: on collisions, an object can be added more than
+  once, e.g. when more than one vertex collides. 
+
+* Hierarcy.add must make sure name is unique. e.g. it should not allow a name to be written.
+
+* GameObject: move collider, transform, camera, script into component
+* GameObject: remove detectsCollisionWith(other). Move this functionality to render.
+
+* Test using thousands of objects. Optimize.
+* Should not re-render if not necessary (lazy render).
+
+* Texture mapping
+* Lights (Point, directional, ambient)

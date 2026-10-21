@@ -1,0 +1,83 @@
+VIDEO LİNKİ: https://drive.google.com/file/d/1UHvbGY12v6DoF6g1tB202Eek-FMrJH8k/view?usp=sharing
+
+
+
+
+Programda her komut tek çevrimde çalışmaktadır. Bir COUNT değerinin hesaplanması için dikkate alınan bölüm: lw komutundan COUNT değerini belleğe yazan sw komutuna kadar olan kısımdır.
+Her eleman için temel çevrim sayısı: 116
+
+Bir ARRAY elemanı işlenirken önce dış döngüde bazı hazırlık komutları çalışır:
+lw   x5, 0(x1)       -> ARRAY elemanını bellekten okur
+addi x6, x0, 0       -> count değerini sıfırlar
+addi x7, x0, 1       -> maskeyi 1 yapar, yani 0. biti kontrol etmeye hazırlar
+addi x9, x0, 16      -> kontrol edilecek çift pozisyonlu bit sayısını belirler
+Bu kısım toplam 4 çevrimdir.
+
+Daha sonra iç döngü başlar. 32 bitlik bir sayıda 0, 2, 4, ..., 30 olmak üzere toplam 16 tane çift pozisyonlu bit vardır.
+Bu nedenle iç döngü her eleman için 16 kez çalışır.
+İç döngüde her turda normalde şu komutlar çalışır:
+and  x8, x5, x7          -> ilgili biti kontrol eder
+beq  x8, x0, skip_inc    -> bit 0 ise count artırma komutunu atlar
+add  x7, x7, x7          -> maskeyi 1 bit sola kaydırır
+add  x7, x7, x7          -> maskeyi bir bit daha sola kaydırır, toplamda 2 bit ilerler
+addi x9, x9, -1          -> kalan bit sayısını 1 azaltır
+beq  x9, x0, store_count -> 16 bit tamamlandıysa sonucu kaydetmeye gider
+jal  x0, inner_loop      -> tamamlanmadıysa iç döngünün başına döner
+
+Minimum durumda, yani kontrol edilen çift pozisyonlu bitlerde hiç 1 yoksa, şu komut çalışmaz:
+addi x6, x6, 1           -> count değerini 1 artırır
+
+Bu komut sadece ilgili bit 1 ise çalışır. Bu yüzden minimum çevrim hesabında bu komut sayılmaz.
+İç döngü ilk 15 turda 7 komut çalıştırır:
+15 x 7 = 105 çevrim
+
+Son turda artık 16 çift pozisyonlu bitin tamamı kontrol edilmiş olur.
+Bu yüzden beq x9, x0, store_count komutu sonucu kaydetme bölümüne gider ve jal x0, inner_loop komutu çalışmaz.
+Bu nedenle son tur 7 değil, 6 çevrim sürer.
+Son tur = 6 çevrim
+
+İç döngünün minimum toplamı:
+105 + 6 = 111 çevrim
+
+Buna dış döngüdeki hazırlık komutları eklenir:
+111 + 4 = 115 çevrim
+
+Son olarak bulunan COUNT değeri belleğe yazılır:
+sw x6, 0(x2) -> 1 çevrim
+
+Bu nedenle bir eleman için minimum COUNT hesaplama çevrim sayısı:
+115 + 1 = 116 çevrim
+
+Yani temel formül: COUNT hesaplama çevrim sayısı = 116 + COUNT
+
+Sıra | ARRAY      | COUNT | COUNT hesabı için çevrim sayısı
+-----|------------|-------|-------------------------------
+1    | 0x00000000 | 0     | 116
+2    | 0x00000001 | 1     | 117
+3    | 0x00000200 | 0     | 116
+4    | 0x00400000 | 1     | 117
+5    | 0x80000000 | 0     | 116
+6    | 0x51C06460 | 7     | 123
+7    | 0xDEC287D9 | 9     | 125
+8    | 0x6C896594 | 8     | 124
+9    | 0x99999999 | 8     | 124
+10   | 0xFFFFFFFF | 16    | 132
+11   | 0x7FFFFFFF | 16    | 132
+12   | 0xFFFFFFFE | 15    | 131
+13   | 0xC7B52169 | 9     | 125
+14   | 0x8CEFF731 | 10    | 126
+15   | 0xA550921E | 7     | 123
+16   | 0x0DB01F33 | 8     | 124
+17   | 0x24BB7B48 | 7     | 123
+18   | 0x98513914 | 8     | 124
+19   | 0xCD76ED30 | 10    | 126
+20   | 0xC0000003 | 2     | 118
+
+COUNT hesaplama bölümlerinin toplam çevrim sayısı: 2462
+
+Programın tamamı için çevrim hesabı:
+- Başlangıç hazırlık komutları: 3 çevrim
+- 1-19. elemanlarda her eleman için ek adres sayaç güncelleme ve dış döngü dönüş komutları dahil: 121 + COUNT çevrim
+- 20. elemanda dış döngü dönüşü yapılmadığı için: 120 + COUNT çevrim
+
+Dizinin tamamı için toplam program çevrim sayısı: 2564

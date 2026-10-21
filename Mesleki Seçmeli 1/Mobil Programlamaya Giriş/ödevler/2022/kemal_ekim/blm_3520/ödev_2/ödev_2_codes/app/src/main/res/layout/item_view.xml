@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#DCDCDC"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="6dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/icon_view"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/musicicon"
+        />
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon_view"
+        android:text="Music Name"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:padding="6dp"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/music_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:padding="4dp"
+        android:layout_toEndOf="@id/icon_view"
+        android:layout_below="@id/music_title"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

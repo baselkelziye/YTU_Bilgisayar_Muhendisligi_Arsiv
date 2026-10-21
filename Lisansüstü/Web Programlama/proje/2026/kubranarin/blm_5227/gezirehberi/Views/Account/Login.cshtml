@@ -1,0 +1,165 @@
+﻿@model GeziRehberi.Models.Users
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Giriş Yap";
+}
+
+<!-- login-area-start -->
+<div class="tg-login-area pt-130 pb-130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8 col-md-10">
+                <div class="tg-login-wrapper">
+                    <div class="tg-login-top text-center mb-30">
+                        <h2>Giriş Yap</h2>
+                        <p>Giriş Yap ve Dünyayı Keşfet!</p>
+                    </div>
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div id="tempDataMessage" style="display: none;">@TempData["SuccessMessage"]</div>
+                        <div id="tempDataType" style="display: none;">success</div>
+                    }
+
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div id="tempDataMessage" style="display: none;">@TempData["ErrorMessage"]</div>
+                        <div id="tempDataType" style="display: none;">error</div>
+                    }
+
+                    <div class="tg-login-form">
+                        <div class="tg-tour-about-review-form">
+                            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @id = "loginForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="row">
+                                    <div class="col-lg-12 mb-25">
+                                        @Html.TextBoxFor(m => m.Username, new { @class = "input", placeholder = "Kullanıcı Adı" })
+                                        @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-lg-12 mb-25 password-field-wrapper">
+                                        @Html.PasswordFor(m => m.Password, new { @class = "input", placeholder = "Şifre", @id = "Password" })
+                                        <span class="password-toggle-icon" id="passwordToggle" title="Show/Hide Password">
+                                            <span id="eyeIcon">👁️</span>
+                                        </span>
+                                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <div class="d-flex align-items-center justify-content-between">
+
+                                            <div class="tg-login-navigate mb-25">
+                                                <a href="@Url.Action("Register", "Account")">Kayıt Ol</a>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="tg-btn w-100" id="submitBtn">Giriş Yap</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- login-area-end -->
+
+<style>
+    .password-field-wrapper {
+        position: relative;
+    }
+
+    .password-toggle-icon {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        user-select: none;
+        font-size: 18px;
+        z-index: 10;
+        padding: 5px;
+    }
+
+        .password-toggle-icon:hover {
+            opacity: 0.7;
+        }
+
+    #Password {
+        padding-right: 50px;
+    }
+
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @@keyframes slideDown {
+        from {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">
+    // Password toggle fonksiyonu - jQuery'ye bağımlı değil
+    (function () {
+        function initPasswordToggle() {
+            var passwordField = document.getElementById('Password');
+            var passwordToggle = document.getElementById('passwordToggle');
+            var eyeIcon = document.getElementById('eyeIcon');
+
+            if (passwordField && passwordToggle && eyeIcon) {
+                passwordToggle.onclick = function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    if (passwordField.type === 'password') {
+                        passwordField.type = 'text';
+                        eyeIcon.textContent = '🙈';
+                        passwordToggle.setAttribute('title', 'Hide Password');
+                    } else {
+                        passwordField.type = 'password';
+                        eyeIcon.textContent = '👁️';
+                        passwordToggle.setAttribute('title', 'Show Password');
+                    }
+                    return false;
+                };
+            }
+        }
+
+
+
+        // DOM yüklendikten sonra çalıştır
+        function init() {
+            initPasswordToggle();
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+</script>

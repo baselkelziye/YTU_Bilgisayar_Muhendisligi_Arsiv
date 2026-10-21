@@ -1,0 +1,25 @@
+{
+  "name": "modcom-frontend",
+  "version": "1.0.0",
+  "description": "Frontend css and js generator for modcom",
+  "main": "index.ts",
+  "repository": "https://github.com/volf52/r-science-comment-mod",
+  "author": "Arslan <rslnkrmt2552@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.1.0",
+    "cssnano": "^4.1.10",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build:css": "postcss app.css -o ../static/app.css",
+    "build:js": "tsc --pretty form.ts --outFile ../static/form.js",
+    "watch:js": "yarn run build:js -w"
+  }
+}

@@ -1,0 +1,146 @@
+<%- include("header.ejs",{title:"Ürünlerim" , activeTab: "my_products" }) %>
+
+
+    <!-- Page Content -->
+    <div class="page-heading products-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>Ürün</h4>
+                        <h2 class="text-dark">Ürünlerim</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="about-features d-block">
+            <button class="btn btn-primary float-right" onclick="window.location.href='/add_product'">Ürün ekle</button>
+        </div>
+
+        <br> <br> <br>
+
+        <table class="table  table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Ürün Fotoğrafı</th>
+                    <th scope="col" class="text-center">Ürün Adı</th>
+                    <th scope="col" class="text-center">Satış Adedi</th>
+                    <th scope="col" class="text-center">Fiyat</th>
+                    <th scope="col" class="text-center">Stok</th>
+                    <th scope="col" class="text-center">İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(const item of products) { %>
+                    <tr id="_PID_<%=item.product_id %>">
+                        <td class="text-center">
+                            <img src="http://165.227.132.99/api/<%=item.image%>" alt="" height="30px">
+                        </td>
+                        <td class="text-center">
+                            <%=item.product_name %>
+                        </td>
+                        <td class="text-center">
+                            <%=item.sales_amounts%>
+                        </td>
+                        <td class="text-center">
+                            <%=item.price %> ₺
+                        </td>
+                        <td class="text-center">
+                            <%=item.stock %>
+                        </td>
+                        <td class="text-center">
+                            <button class="btn btn-danger _removeItem" data-pid="<%=item.product_id %>"> Sil </button>
+                            <a href="/edit_product/<%=item.product_id %>">
+                                <button class="btn btn-info _editItem" data-pid="<%=item.product_id %>"> Düzenle </button>
+                            </a>
+                        </td>
+                    </tr>
+                    <%}%>
+
+
+            </tbody>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+
+    </div>
+    </div>
+
+    <script src="/formsender.js"></script>
+
+    <script>
+        // delete change form handler
+        Array.from(document.getElementsByClassName("_removeItem")).forEach(element => {
+            element.addEventListener("click", async (event) => {
+
+                let PID = (element.getAttribute('data-pid'));
+
+                var status = await FormSender.DeleteMyProduct(PID);
+
+                if (status) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Ürün sepetten silindi',
+                        icon: 'success',
+                        confirmButtonText: 'Tamam',
+                    })
+                    OnItemDelete(PID);
+                } else {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Bir hata oluştu',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                }
+            });
+        })
+
+    </script>
+    <script>
+
+        OnItemDelete = (PID) => {
+            document.getElementById("_PID_" + PID).remove();
+        }
+
+    </script>
+
+
+    <%- include("footer.ejs") %>
+
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) { //declaring the array outside of the
+                if (!cleared[t.id]) { // function makes it static and global
+                    cleared[t.id] = 1; // you could use true and false, but that's more typing
+                    t.value = ''; // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+        </body>
+
+        </html>
