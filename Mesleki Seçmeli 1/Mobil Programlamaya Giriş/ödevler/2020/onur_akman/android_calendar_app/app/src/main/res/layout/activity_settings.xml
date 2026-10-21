@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:id="@+id/HeaderMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryDark"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="100px" />
+
+        <Button
+            android:id="@+id/applyButton"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="Apply"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="50px" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollForm"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="175px"
+        android:layout_marginBottom="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Add">
+
+            <LinearLayout
+                android:id="@+id/SettingsForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ToggleButton
+                    android:id="@+id/DarkModeSettings"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textOff="Dark Mode Off"
+                    android:textOn="Dark Mode On" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Default Reminder Time" />
+
+                <Spinner
+                    android:id="@+id/defRemSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginTop="20px"
+                    android:popupBackground="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40px"
+                    android:text="Default Ringtone" />
+
+                <Spinner
+                    android:id="@+id/defRingtone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_marginTop="20px"
+                    android:popupBackground="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/Menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Home"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/AddButton" />
+
+        <Button
+            android:id="@+id/AddButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Add"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/SettingsButton" />
+
+
+        <Button
+            android:id="@+id/SettingsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:text="Settings"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

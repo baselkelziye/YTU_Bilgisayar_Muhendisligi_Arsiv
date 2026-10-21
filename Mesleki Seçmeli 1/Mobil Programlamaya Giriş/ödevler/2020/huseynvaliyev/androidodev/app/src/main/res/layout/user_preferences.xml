@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/buttonMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:backgroundTint="#827397"
+        android:text="Send Mail" />
+
+    <Button
+        android:id="@+id/buttonUserList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:backgroundTint="#827397"
+        android:text="LIST USERS" />
+
+    <Button
+        android:id="@+id/buttonSharedPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:backgroundTint="#827397"
+        android:text="SHARED PREFERENCES" />
+
+    <Button
+        android:id="@+id/buttonWriteNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:backgroundTint="#827397"
+        android:text="WRITE A NOTE" />
+
+    <Button
+        android:id="@+id/buttonSensors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:backgroundTint="#827397"
+        android:text="SENSORS" />
+</LinearLayout>

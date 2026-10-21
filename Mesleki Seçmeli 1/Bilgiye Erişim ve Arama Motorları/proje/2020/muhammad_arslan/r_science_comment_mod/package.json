@@ -1,0 +1,16 @@
+{
+  "name": "modcom",
+  "version": "0.8.0",
+  "description": "Just to build the css files",
+  "repository": "git@github.com:volf52/r-science-comment-mod.git",
+  "author": "Arslan <rslnkrmt2552@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "install": "yarn --cwd frontend install",
+    "build": "yarn --cwd frontend build:css && yarn --cwd frontend build:js"
+  },
+  "engines": {
+    "yarn": "1.x"
+  }
+}

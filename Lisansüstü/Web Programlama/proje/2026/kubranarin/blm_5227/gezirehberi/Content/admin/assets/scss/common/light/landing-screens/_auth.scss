@@ -1,0 +1,126 @@
+/* Auth */
+.auth {
+	.login-half-bg {
+		background: url("../../images/auth/login-bg.jpg");
+		background-size: cover;
+	}
+
+	.register-half-bg {
+		background: url("../../images/auth/register-bg.jpg");
+		background-size: cover;
+	}
+
+	&.lock-full-bg {
+		background: url("../../images/auth/lockscreen-bg.jpg");
+		background-size: cover;
+	}
+
+	.lock-profile-img {
+		width: 90px;
+		height: 90px;
+		border-radius: 100%;
+	}
+
+	.auth-form-light {
+		background: $white;
+
+		select {
+			color: $input-placeholder-color;
+		}
+
+		.input-group {
+			.form-control {
+
+				&:focus,
+				&:active {
+					border-color: $border-color;
+				}
+			}
+		}
+
+		.form-select {
+			background-color: transparent;
+			border: 1px;
+			border-radius: 0;
+			font-size: .9375rem;
+			border-color: $secondary;
+			padding: 15.04px 31.04px;
+		}
+	}
+
+	.auth-form-transparent {
+		background: transparent;
+
+		.form-control,
+		.form-select,
+		.input-group-text {
+			border-color: $secondary;
+
+			&:focus,
+			&:active {
+				border-color: $secondary;
+			}
+		}
+
+		select {
+			outline-color: $secondary;
+		}
+
+		.form-select {
+			background-color: transparent;
+			border: 1px;
+			border-radius: 0;
+			font-size: .9375rem;
+			border-color: $secondary;
+			padding: 15.04px 31.04px;
+		}
+	}
+
+	&.auth-img-bg {
+		padding: 0;
+
+		.auth-form-transparent {
+			@media (min-width:768px) {
+				width: 55%;
+				margin: auto;
+			}
+		}
+	}
+
+	.brand-logo {
+		margin-bottom: 2rem;
+
+		img {
+			width: 150px;
+		}
+	}
+
+	form {
+		.form-group {
+			margin-bottom: 1.5rem;
+
+			label {
+				font-size: .8125rem;
+			}
+
+			.form-control {
+				background: transparent;
+				border-radius: 0;
+				font-size: .9375rem;
+			}
+		}
+
+		.auth-form-btn {
+			padding: 1rem 3rem;
+			line-height: 1.5;
+		}
+
+		.auth-link {
+			font-size: $default-font-size;
+
+			&:hover {
+				color: initial;
+			}
+		}
+	}
+}

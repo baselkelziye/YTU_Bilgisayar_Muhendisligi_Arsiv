@@ -1,0 +1,32 @@
+<!-- templates/users/users_list.html -->
+{% extends "base.html" %}
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Kullanıcı Listesi</h2>
+    <a href="{{ url_for('create_user_form') }}" class="btn btn-success">Yeni Kullanıcı Ekle</a>
+  </div>
+
+  <table class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">User ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">İşlemler</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in users %}
+      <tr>
+        <td>{{ user.user_id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.username }}</td>
+        <td>
+          <a href="{{ url_for('edit_user', user_id=user.user_id) }}" class="btn btn-sm btn-warning">Düzenle</a>
+          <a href="{{ url_for('delete_user', user_id=user.user_id) }}" class="btn btn-sm btn-danger">Sil</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

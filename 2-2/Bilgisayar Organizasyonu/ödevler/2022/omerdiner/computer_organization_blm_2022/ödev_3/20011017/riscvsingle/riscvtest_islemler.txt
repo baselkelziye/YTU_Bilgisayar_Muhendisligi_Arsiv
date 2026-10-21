@@ -1,0 +1,29 @@
+#x0=0
+addi x1,x0,0 #orjinal array i=0
+addi x2,x0,20 # array limit n=20 
+addi x3,x0,20 # counter control j= 20 den başlıyor
+
+whileloop:
+beq x1,x2,endloop # tum arrayi dolasana kadar
+lw x4, 0(x1) #x1+0 adresindeki degeri x4e atar
+lw x5,0(x3) #x5'e  counttaki güncel değeri atar. 
+addi x5,x5,40 # result 40tan itibaren başladığı için yerini ayarlıyor
+sw x4, 0(x5)  #x4'ü  x5'in adresine yazar
+addi x1,x1,1 #i++
+addi x3,x3,1 # j++
+jal x31, whileloop
+endloop:
+  
+  
+  #tum hafızayı yazdırmak icin
+     addi x15,x0,0 #baslangıc
+     addi x10,x0,60 #son
+     #bu sekilde tüm dizileri yazdiriyoruz
+     
+for2:
+  
+     beq x10,x15,endp
+     lw x1,0(x15) # x15 adresindeki degeri x1e atıyor   makine kodu karsiligi 0007a083
+     addi x15,x15,1
+     jal x7,for2
+endp:

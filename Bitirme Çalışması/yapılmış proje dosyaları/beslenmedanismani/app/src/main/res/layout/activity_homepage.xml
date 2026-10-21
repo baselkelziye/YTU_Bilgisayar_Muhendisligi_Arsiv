@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homeSwipe">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/menuHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programs" />
+
+            <ListView
+                android:id="@+id/homeProgramsList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homeListingHeight"></ListView>
+
+            <Button
+                android:id="@+id/homepageSeeAllListingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/allListingsButton"
+                android:textColor="#fff" />
+
+            <TextView
+                style="@style/menuHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trainers" />
+
+            <ListView
+                android:id="@+id/homeTrainersList"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homeListingHeight"></ListView>
+
+            <Button
+                android:id="@+id/homepageSeeAllTrainersButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/allTrainersButton"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+

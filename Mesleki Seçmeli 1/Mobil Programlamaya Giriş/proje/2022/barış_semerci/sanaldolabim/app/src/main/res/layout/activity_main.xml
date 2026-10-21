@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barissemerci.sanaldolabim.MainActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="80dp"
+        android:foregroundGravity="center"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageViewCekmeceEkle"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:onClick="cekmeceEkle"
+            android:src="@drawable/cekmeceekle"
+            app:layout_column="0"
+            app:layout_row="0"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageViewCekmeceleriGor"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:onClick="cekmeceGoster"
+            android:src="@drawable/cekmecelerigor"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="0" />
+
+
+        <ImageView
+            android:id="@+id/imageViewKabineGit"
+
+
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+
+            android:gravity="center"
+
+            android:onClick="kabineGit"
+
+            android:src="@drawable/kabin"
+            app:layout_column="0"
+
+
+            app:layout_row="1" />
+
+
+        <ImageView
+            android:id="@+id/imageViewKombinlerimiGostereGit"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="30dp"
+            android:onClick="kombinlerimiGostereGit"
+            android:src="@drawable/kombinlerigoster"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="1"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageViewEtkinlik"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="19dp"
+            android:gravity="center"
+            android:onClick="etkinligeGit"
+            android:src="@drawable/etkinlikekle"
+            app:layout_column="0"
+            app:layout_row="2"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageViewEtkinlikleriGor"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:onClick="etkinlikleriGoster"
+            android:src="@drawable/etkinliklerigor"
+            app:layout_column="1"
+            app:layout_gravity="start"
+            app:layout_row="2" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sanaldolabim" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barissemerci.sanaldolabim.KabinActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewKabinArkaplan"
+        android:layout_width="361dp"
+        android:layout_height="638dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/erkek" />
+
+
+    <ImageView
+        android:id="@+id/imageViewGozluk"
+        android:layout_width="55dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="572dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewKabinArkaplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="kabinKiyafetSec"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/gozluk" />
+
+    <ImageView
+        android:id="@+id/imageViewSapka"
+        android:layout_width="92dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="kabinKiyafetSec"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sapka" />
+
+    <ImageView
+        android:id="@+id/imageViewAyakkabiSol"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="80dp"
+        android:onClick="kabinKiyafetSec"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ayakkabi" />
+
+    <ImageView
+        android:id="@+id/imageViewAyakkabiSag"
+        android:layout_width="81dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="kabinKiyafetSec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAyakkabiSol"
+        app:srcCompat="@drawable/ayakkabi" />
+
+    <ImageView
+        android:id="@+id/imageViewTshirt"
+        android:layout_width="250dp"
+        android:layout_height="279dp"
+        android:layout_marginBottom="332dp"
+        android:onClick="kabinKiyafetSec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tshirt" />
+
+    <ImageView
+        android:id="@+id/imageViewPantolon"
+        android:layout_width="269dp"
+        android:layout_height="296dp"
+        android:layout_marginBottom="84dp"
+        android:onClick="kabinKiyafetSec"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pantolon" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:onClick="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/kaydet" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPaylas"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/white"
+        android:onClick="kombiniPaylas"
+        android:src="@drawable/paylas"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonSave" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSil"
+        android:layout_width="76dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:onClick="kombiniSil"
+        android:src="@drawable/sil"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageButtonPaylas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

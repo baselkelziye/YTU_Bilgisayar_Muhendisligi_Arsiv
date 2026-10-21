@@ -1,0 +1,37 @@
+* 2019-2020 Bahar Yarıyılı BLM3520 Mobil Programlamaya Giriş Ödev – 2
+** Ders Yürütücüsü: Dr. Öğr. Üyesi M. Amaç GÜVENSAN
+** Konu : Activity, Intent, RecyclerView, SharedPreferences, Internal Storage, Sensors
+** İçerik :
+*** Kullanıcı Giriş Ekranı
+- Şifre Kontrol, Hata Mesajı, Başarılı Giriş Mesajı
+- 3 defa üst üste yanlış kullanıcı adı/şifre girilmesi durumunda uygulama hata mesajı verip sonlanmalı.
+*** Menü Ekranı
+- İlgili Aktivitelere Yönlendirme Ekranı
+*** E-mail Oluşturma ve Gönderme Ekranı
+- Kime, Başlık, İçerik ve Ek(Attachment) Bilgileri
+- E-mail Gönderme işlemi başka bir uygulama tarafından gerçekleştirilmeli (Örn: Gmail)
+*** Kullanıcıları Listeleme Ekranı
+- RecyclerView yardımı ile sistemde kayıtlı kullanıcıların Kullanıcı Adı, Şifre, Resim Bilgilerini gösterme
+*** Kullanıcı Ayarlarını Gösterme/Değiştirme Ekranı
+- Kullanıcı Adı,Cinsiyet,Boy,Kilo,Yaş,Uygulama Modu(Dark/Light) bilgilerini farklı UI komponentlerini kullanarak SharedPreferences’a kaydetme ve SharedPreferences’dan okuma
+*** Not Ekleme/Silme/Güncelleme Ekranı
+- Not yazıp dosya olarak ekleme/silme
+- Not üzerinde güncelleme
+*** Sensör Ekranı
+- Işık sensörü yardımı ile ortam karanlık iken arka plan siyah yazılar beyaz, ortam aydınlık iken arka plan beyaz yazılar siyah gösterilmeli
+- Telefon masa üzerinde 5 sn hareketsiz kalırsa (ivmeölçer sensörü kullanılmalı) uygulama mesaj verip kendini kapatmalı
+** Ekran Görüntüleri
+[[./screenshots/ss1.png]]
+[[./screenshots/ss2.png]]
+[[./screenshots/ss3.png]]
+[[./screenshots/ss4.png]]
+[[./screenshots/ss5.png]]
+[[./screenshots/ss6.png]]
+[[./screenshots/ss7.png]]
+[[./screenshots/ss8.png]]
+[[./screenshots/ss9.png]]
+[[./screenshots/ss10.png]]
+[[./screenshots/ss11.png]]
+[[./screenshots/ss12.png]]
+[[./screenshots/ss13.png]]
+[[./screenshots/ss14.png]]

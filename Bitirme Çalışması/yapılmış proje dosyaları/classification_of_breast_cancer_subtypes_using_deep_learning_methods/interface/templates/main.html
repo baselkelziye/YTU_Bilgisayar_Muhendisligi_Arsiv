@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Classification of Breast Cancer Subtypes Application</title>
+</head>
+<body>
+    <h1>Göğüs Kanseri Alt Tiplerinin Derin Öğrenme Yöntemleri Kullanılarak Sınıflandırılması</h1>
+
+    <script>
+        function handleFileChange() {
+            const fileInput = document.getElementById('fileInput');
+            const selectedImage = document.getElementById('selectedImage');
+        
+            if (fileInput.files && fileInput.files[0]) {
+                const reader = new FileReader();
+        
+                reader.onload = function(e) {
+                    selectedImage.src = e.target.result;
+                    image_path = e.target.result;
+                };
+        
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+    </script>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="myComboBox">Görüntü Boyutu:</label>
+            <select id="myComboBox" name="image_size">
+                <option value="128">128</option>
+                <option value="256">256</option>
+                <option value="512">512</option>
+            </select><br>
+        <label for="myComboBox">Alt Tip Sayısı:</label>
+            <select id="myComboBox" name="num_of_classes">
+                <option value="3">3</option>
+                <option value="7">7</option>
+            </select><br>
+        <label for="fileInput">Görüntü:</label>
+        <input type="file" id="fileInput" name="img" accept="image/*" required oninput="handleFileChange()">
+        <br><img id="selectedImage" src="" alt=""><br>
+        <label for="myComboBox">Model:</label>
+            <select id="myComboBox" name="model">
+                <option value="densenet121">densenet121</option>
+                <option value="inceptionV3">inceptionV3</option>
+                <option value="mobilenetV2">mobilenetV2</option>
+                <option value="nasnetlarge">nasnetlarge</option>
+                <option value="resnet152V2">resnet152V2</option>
+                <option value="xception">xception</option>
+            </select><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+    {% if pred and real %}
+    <div>
+        <h2>Sonuçlar</h2>
+        {% if pred == real %}
+            <p style="color: #28a745;">Tahmin Edilen : {{ pred }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gerçek : {{ real }}</p>
+        {% elif pred != real %}
+            <p style="color: #a72828;">Tahmin Edilen : {{ pred }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gerçek : {{ real }}</p>
+        {% endif %}
+    {% endif %}
+
+    {% if scores %}
+        <table>
+            {% for res in scores %}
+            <tr>
+                {% if forloop.counter == 1 %}
+                    <td>Loss</td>
+                {% endif %}
+                {% if forloop.counter == 2 %}
+                    <td>Accuracy</td>
+                {% endif %}
+                {% if forloop.counter == 3 %}
+                    <td>F1-Score</td>
+                {% endif %}
+                {% if forloop.counter == 4 %}
+                    <td>Cohen-Kappa</td>
+                {% endif %}
+                <td>{{ res }}</td>
+            </tr> 
+            {% endfor %}
+        </table>
+    </div>
+    {% endif %}
+    
+    
+</body>
+</html>

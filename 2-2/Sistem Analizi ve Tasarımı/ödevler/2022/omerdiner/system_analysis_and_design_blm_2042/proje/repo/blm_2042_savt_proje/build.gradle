@@ -1,0 +1,50 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'savtproje'
+version '0.0.1'
+
+def mainClass = 'savtproje.Main'
+
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+
+javafx {
+    version = "15"
+    modules = [
+        'javafx.controls', 'javafx.media'
+        // ,'javafx.web', 'javafx.swing', 'javafx.fxml'
+    ]
+}
+
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+
+
+application{
+    mainClassName(mainClass)
+}
+
+
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes 'Main-Class': mainClass
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

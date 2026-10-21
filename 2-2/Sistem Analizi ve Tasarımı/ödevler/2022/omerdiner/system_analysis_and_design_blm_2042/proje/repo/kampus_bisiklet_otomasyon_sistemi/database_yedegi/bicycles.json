@@ -1,0 +1,26 @@
+{
+  "jsonPath": "database/bicycles.json",
+  "table": [
+    {
+      "ID": 1000,
+      "year": 2022,
+      "costPerMinute": 3,
+      "brand": "Trek",
+      "model": "FX 1"
+    },
+    {
+      "ID": 2000,
+      "year": 2023,
+      "costPerMinute": 5,
+      "brand": "Giant",
+      "model": "Defy Advanced"
+    },
+    {
+      "ID": 352,
+      "year": 2024,
+      "costPerMinute": 7,
+      "brand": "Specialized",
+      "model": "Sirrus X 3.0"
+    }
+  ]
+}

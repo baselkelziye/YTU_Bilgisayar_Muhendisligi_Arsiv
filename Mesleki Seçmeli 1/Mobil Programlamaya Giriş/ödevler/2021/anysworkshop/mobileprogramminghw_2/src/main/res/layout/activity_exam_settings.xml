@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011939"
+    tools:context=".ExamSettingsActivity">
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:hint="Exmp. 50"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="91dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="Exmp. 10"
+        android:inputType="numberDecimal"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDifficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Exam Duration(Minute)"
+        android:textColor="#ffbc91"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="49dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Mark"
+        android:textColor="#ffbc91"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="155dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="100dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:text="Difficulty (2-5)"
+        android:textAlignment="center"
+        android:textColor="#ffbc91"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/saveSettings"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDifficulty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+
+
+    <EditText
+        android:id="@+id/editTextDifficulty"
+        android:layout_width="98dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="415dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:digits="2345"
+        android:maxLength="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2" />
+
+    <Button
+        android:id="@+id/saveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="267dp"
+        android:text="Save"
+        android:onClick="saveExamSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

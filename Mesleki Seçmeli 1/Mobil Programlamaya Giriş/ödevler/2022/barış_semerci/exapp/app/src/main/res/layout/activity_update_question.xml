@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateQuestionActivity">
+
+    <EditText
+        android:id="@+id/editTextUpdateQuestion"
+        android:layout_width="322dp"
+
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="93dp"
+        android:ems="10"
+        android:hint="Enter the question..."
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/textViewUpdateInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearUpdateLayoutOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdateInfo">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkBoxUpdateA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUpdateB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUpdateC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUpdateD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxUpdateE"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextUpdateOptionA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Option A"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextUpdateOptionB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Option B"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextUpdateOptionC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Option C"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextUpdateOptionD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Option D"
+                android:inputType="textPersonName"
+                />
+
+            <EditText
+                android:id="@+id/editTextUpdateOptionE"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:hint="Option E"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewUpdateInfo"
+        android:layout_width="255dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="Don't forget to select the right option!"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/linearUpdateLayoutOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateQuestion"
+        android:text="Update"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearUpdateLayoutOut" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

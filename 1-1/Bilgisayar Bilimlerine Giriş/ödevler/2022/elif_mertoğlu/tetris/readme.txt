@@ -1,0 +1,1 @@
+This code is actually a game we all know, Tetris. It is not well written since it was my first project and I didn't even know functions back in then when I wrote this. It first asks the size of the game, then for every shape it asks whether you want to turn it or not. Once you decide it, then you can place it to the matrix and it calculates your score.

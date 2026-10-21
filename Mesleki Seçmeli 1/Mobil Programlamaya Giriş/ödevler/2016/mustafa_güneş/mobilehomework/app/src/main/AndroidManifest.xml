@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.must.mobilehomework" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ekonomik"
+        android:label="Araba Kirala"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" >
+        </activity>
+        <activity android:name=".UserMainActivity" >
+        </activity>
+        <activity android:name=".RentActivity" >
+        </activity>
+        <activity android:name=".admin.AdminMainActivity" >
+        </activity>
+        <activity android:name=".admin.LogActivity" >
+        </activity>
+        <activity android:name=".admin.AddCarActivity" >
+        </activity>
+        <activity android:name=".admin.LogListActivity" >
+        </activity>
+        <activity android:name=".admin.UserListActivity" >
+        </activity>
+        <activity android:name=".CarSelectActivity" >
+        </activity>
+        <activity android:name=".admin.CarListActivity" >
+        </activity>
+        <activity android:name=".LogDetailActivity" >
+        </activity>
+    </application>
+
+</manifest>

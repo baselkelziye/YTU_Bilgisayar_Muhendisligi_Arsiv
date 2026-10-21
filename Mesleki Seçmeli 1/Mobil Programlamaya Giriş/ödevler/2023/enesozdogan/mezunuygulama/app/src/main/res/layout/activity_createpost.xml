@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Createpost">
+
+    <ImageView
+        android:id="@+id/postImg"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/postTitleET"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Başlık"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/postImg"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/postImg"
+        app:layout_constraintTop_toBottomOf="@+id/postImg" />
+
+    <EditText
+        android:id="@+id/duyuruET"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Duyuru"
+        android:inputType="textMultiLine|textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/postTitleET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/postTitleET"
+        app:layout_constraintTop_toBottomOf="@+id/postTitleET" />
+
+    <TextView
+        android:id="@+id/postDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Post Date"
+        app:layout_constraintEnd_toEndOf="@+id/duyuruET"
+        app:layout_constraintStart_toStartOf="@+id/duyuruET"
+        app:layout_constraintTop_toBottomOf="@+id/duyuruET" />
+
+    <ProgressBar
+        android:id="@+id/postprogressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/postDate"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/postDate"
+        app:layout_constraintTop_toBottomOf="@+id/postDate" />
+
+    <Button
+        android:id="@+id/postSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Yayınla"
+        app:layout_constraintEnd_toEndOf="@+id/postprogressBar"
+        app:layout_constraintStart_toStartOf="@+id/postprogressBar"
+        app:layout_constraintTop_toBottomOf="@+id/postprogressBar" />
+
+    <TextView
+        android:id="@+id/currUserTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="User Name"
+        app:layout_constraintBottom_toTopOf="@+id/postTitleET"
+        app:layout_constraintEnd_toEndOf="@+id/postImg"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/postImg" />
+
+    <Button
+        android:id="@+id/postCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="İPTAL"
+        app:layout_constraintEnd_toEndOf="@+id/postSaveBtn"
+        app:layout_constraintStart_toStartOf="@+id/postSaveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/postSaveBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

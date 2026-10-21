@@ -1,0 +1,40 @@
+BLM3041 Veritabanı Yönetimi 2.Quizi 12.12.2024  A GRUBU 
+Öğrenci No:
+Ad:           Soyad:
+
+1-) Şirkette en yüksek maaşa sahip çalışanın ismini ve soyismini iki farklı yöntemle bulunuz. (15p)
+
+
+
+
+2-) Her bir projede kaç kişinin çalıştığını proje isimlerine göre listeleyiniz. 
+Kişi sayısı 2’den az olan projeleri dahil etmeyiniz. (15p)
+
+
+
+3-) Şirkette, akrabası olmayan kişiler arasından en küçük SSN numarasına sahip çalışanın adı, soyadı ve SSN bilgilerini 
+LIMIT kullanarak bulan sorguyu yazınız. (15p)
+
+
+
+
+4-) “Hardware” departmanında çalışanların sayısını bulan pl/pgSQL fonksiyonunu yazınız. 
+Bu fonksiyon bir sayı döndürmelidir. Fonksiyonu çağırınız.(15p) 
+
+
+
+
+5-) “Research” departmanının ortalama çalışan maaşı 40000’den büyükse, “Research” departmanında çalışan tüm kişilerin maaşlarına 1000 ekleyen pl/pgSQL fonksiyonunu yazınız ve bu fonksiyonu çağırınız. (20p)
+
+
+
+
+6-) SSN numarasını parametre olarak alan, çalışanın görev aldığı proje sayısı 3 ve üstüyse 'aktif çalışan', değilse 'yetersiz proje sayısı' ifadelerini döndüren pl/pgSQL fonksiyonunu yazınız.
+'111111100' SSN numaralı çalışan için fonksiyonu çağırınız. (20p)
+(ipucu: RETURNS TEXT olarak belirttikten sonra fonksiyon içerisinde RETURN 'blah'; yazmak metin ifadesi döndürür.)
+
+
+
+
+
+

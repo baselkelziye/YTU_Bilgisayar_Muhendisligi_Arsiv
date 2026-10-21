@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+  <div class="row g-5">
+    <!-- Ürün Görseli -->
+    <div class="col-lg-6">
+      <div class="text-center">
+        {% if product.image_url %}
+          <img src="{{ url_for('static', filename='uploads/' ~ product.image_url) }}" 
+               class="img-fluid mb-3 product-image shadow-sm rounded" 
+               alt="{{ product.name }}" 
+               data-bs-toggle="modal" data-bs-target="#imageModal" 
+               style="max-height: 400px; object-fit: cover;">
+        {% else %}
+          <img src="{{ url_for('static', filename='images/default_product.png') }}" 
+               class="img-fluid mb-3 product-image shadow-sm rounded" 
+               alt="Varsayılan Ürün" 
+               style="max-height: 400px; object-fit: cover;">
+        {% endif %}
+      </div>
+
+      <!-- Modal (Büyük resim gösterimi) -->
+      <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content border-0">
+            <div class="modal-body p-0">
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-3" 
+                      data-bs-dismiss="modal" aria-label="Close"></button>
+              <img src="{{ url_for('static', filename='uploads/' ~ product.image_url) }}" 
+                   class="img-fluid rounded" alt="{{ product.name }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ürün Bilgileri -->
+    <div class="col-lg-6">
+      <h2 class="fw-bold">{{ product.name }}</h2>
+      <hr class="my-3">
+      <div class="mb-3">
+        <p class="mb-1">Fiyat: <span class="fw-semibold">{{ product.price }} TL</span></p>
+        <p class="mb-1">Kategori: <span class="text-muted">{{ product.category_name }}</span></p>
+        <p class="mb-1">Satıcı: <span class="text-muted">{{ product.seller_name }}</span></p>
+        <p class="mb-1">Puan: 
+          <span class="text-warning fw-semibold">{{ "%.2f"|format(product.rating) }}</span>
+        </p>
+      </div>
+
+      {% if session.user_id != product.seller_id %}
+        <!-- Sepete Ekleme Formu -->
+        <form method="POST" action="{{ url_for('add_to_cart', product_id=product.product_id) }}" class="mb-3">
+          <label for="quantity" class="form-label">Adet</label>
+          <div class="input-group mb-3" style="max-width: 200px;">
+            <button type="button" class="btn btn-outline-secondary" onclick="changeQuantity(-1)">-</button>
+            <input type="text" id="quantity" name="quantity" class="form-control text-center" value="1" readonly>
+            <button type="button" class="btn btn-outline-secondary" onclick="changeQuantity(1)">+</button>
+          </div>
+          <button type="submit" class="btn btn-success">
+            <i class="fas fa-shopping-cart me-2"></i>Sepete Ekle
+          </button>
+        </form>
+      {% else %}
+        <!-- Düzenle/Sil Butonları (Sahibi) -->
+        <div class="mb-3">
+          <a href="{{ url_for('edit_product', product_id=product.product_id) }}" class="btn btn-warning me-2">
+            <i class="fas fa-edit me-1"></i>Düzenle
+          </a>
+          <a href="{{ url_for('delete_product', product_id=product.product_id) }}" class="btn btn-danger">
+            <i class="fas fa-trash-alt me-1"></i>Sil
+          </a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <!-- Yorumlar/Puanlar -->
+  <div class="row g-5">
+    <div class="col-12 col-lg-6">
+      <h4 class="fw-semibold mb-3">Puanlar</h4>
+      <ul class="list-group list-group-flush mb-4">
+        {% for r in reviews %}
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <strong>{{ r.user_name }}</strong>
+            <span class="text-warning">{{ r.rating }} <i class="fas fa-star"></i></span>
+            {% if session.user_id == r.user_id %}
+              <form method="POST" action="{{ url_for('delete_review', review_id=r.review_id) }}" class="d-inline">
+                <button type="submit" class="btn btn-sm btn-danger">Sil</button>
+              </form>
+            {% endif %}
+          </li>
+        {% endfor %}
+        {% if reviews|length == 0 %}
+          <li class="list-group-item">Henüz bir yorum/puan yok.</li>
+        {% endif %}
+      </ul>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      {% if session.user_id == product.seller_id %}
+        <p class="text-muted">Bu ürünü siz satıyorsunuz. Puanlayamazsınız.</p>
+      {% elif session.user_id %}
+        {% if has_reviewed %}
+          <div class="alert alert-info">Bu ürüne zaten puan verdiniz.</div>
+        {% else %}
+          <form method="POST" action="{{ url_for('add_review', product_id=product.product_id) }}" class="review-form p-4 border rounded bg-white shadow-sm">
+            <h5 class="text-center mb-4">Ürünü Puanla</h5>
+            <div class="star-rating mb-3">
+              <input type="radio" id="star1" name="rating" value="1" required />
+              <label for="star1" title="1 yıldız"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star2" name="rating" value="2" />
+              <label for="star2" title="2 yıldız"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star3" name="rating" value="3" />
+              <label for="star3" title="3 yıldız"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star4" name="rating" value="4" />
+              <label for="star4" title="4 yıldız"><i class="fas fa-star"></i></label>
+              <input type="radio" id="star5" name="rating" value="5" />
+              <label for="star5" title="5 yıldız"><i class="fas fa-star"></i></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+          </form>
+        {% endif %}
+      {% else %}
+        <div class="alert alert-warning">
+          Yorum yapmak veya puan vermek için 
+          <a href="{{ url_for('login') }}" class="alert-link">giriş</a> yapmalısınız.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  function changeQuantity(amount) {
+    var quantityInput = document.getElementById('quantity');
+    var currentQuantity = parseInt(quantityInput.value);
+    var newQuantity = currentQuantity + amount;
+    if (newQuantity < 1) {
+      newQuantity = 1;
+    }
+    quantityInput.value = newQuantity;
+  }
+</script>
+{% endblock %}

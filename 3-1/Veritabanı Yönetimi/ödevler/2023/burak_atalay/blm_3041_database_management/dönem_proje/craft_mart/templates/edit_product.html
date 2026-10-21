@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">Ürün Düzenle</h2>
+  <form method="POST" action="{{ url_for('edit_product', product_id=product.product_id) }}" 
+        enctype="multipart/form-data">
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Ürün Adı</label>
+        <input type="text" name="name" id="name" class="form-control" 
+               value="{{ product.name }}" required>
+      </div>
+      <div class="col-md-6">
+        <label for="price" class="form-label">Fiyat</label>
+        <input type="number" step="0.01" name="price" id="price" class="form-control" 
+               value="{{ product.price }}" required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="category_id" class="form-label">Kategori</label>
+        <select name="category_id" id="category_id" class="form-select" required>
+          {% for cat in categories %}
+          <option value="{{ cat.category_id }}" 
+            {% if cat.category_id == product.category_id %}selected{% endif %}>
+            {{ cat.name }}
+          </option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="image" class="form-label">Ürün Fotoğrafı</label>
+        <input type="file" name="image" id="image" class="form-control">
+        {% if product.image_url %}
+        <img src="{{ url_for('static', filename='uploads/' ~ product.image_url) }}" 
+             class="img-thumbnail mt-2" style="width: 150px;" alt="{{ product.name }}">
+        {% endif %}
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="rating" class="form-label">Mevcut Puan</label>
+        <input type="number" step="0.1" name="rating" id="rating" class="form-control" 
+               value="{{ product.rating }}" disabled>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-save me-1"></i>Güncelle
+      </button>
+      <a href="{{ url_for('list_products') }}" class="btn btn-secondary">Vazgeç</a>
+    </div>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Select to see details in the chart"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tall" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMuscle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Muscle" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fat" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWater"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Water" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialogChartCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorRedDark"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/dialogChartSaveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorGreen"
+            android:text="Update"
+            android:textColor="#fff"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

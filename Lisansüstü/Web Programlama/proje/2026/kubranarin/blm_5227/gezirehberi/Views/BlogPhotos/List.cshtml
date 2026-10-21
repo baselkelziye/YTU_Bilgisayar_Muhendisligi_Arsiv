@@ -1,0 +1,103 @@
+﻿
+@model IEnumerable<GeziRehberi.Models.BlogPhotos>
+
+@{
+    ViewBag.Title = "Blog Fotoğrafları";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Blog Fotoğrafları Listesi</h4>
+                    <p class="card-description">
+                        <a href="@Url.Action("Create","BlogPhotos")" class="btn btn-primary btn-sm">
+                            <i class="mdi mdi-plus"></i> Yeni Fotoğraf Ekle
+                        </a>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Blog</th>
+                                    <th>Fotoğraf</th>
+                                    <th>Kapak Fotoğrafı</th>
+                                    <th>Oluşturulma Tarihi</th>
+                                    <th>Aktif / Pasif</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>
+                                            @{
+                                                string blogTitle = "-";
+                                                if (ViewBag.Blogs != null && item.BlogId.HasValue)
+                                                {
+                                                    var blogs = ViewBag.Blogs as IEnumerable<dynamic>;
+                                                    var blog = blogs?.FirstOrDefault(b => (int)b.Id == item.BlogId.Value);
+                                                    blogTitle = blog?.Title ?? "-";
+                                                }
+                                            }
+                                            @blogTitle
+                                        </td>
+                                        <td>
+                                            @if (!string.IsNullOrEmpty(item.PhotoUrl))
+                                            {
+                                                <img src="@item.PhotoUrl" alt="Fotoğraf" style="max-width: 100px; max-height: 100px; border: 1px solid #ddd; padding: 5px;" />
+                                            }
+                                            else
+                                            {
+                                                <span>-</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (item.IsCover == true)
+                                            {
+                                                <span class="badge badge-success">Evet</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-secondary">Hayır</span>
+                                            }
+                                        </td>
+                                        <td>@(item.CreatedDate?.ToString("dd.MM.yyyy") ?? "-")</td>
+                                        <td>
+                                            @if (item.IsActive == true)
+                                            {
+                                                <span class="badge badge-success">Aktif</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Pasif</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-sm btn-warning">
+                                                <i class="mdi mdi-pencil"></i> Düzenle
+                                            </a>
+                                            @using (Html.BeginForm("Delete", "BlogPhotos", new { id = item.Id }, FormMethod.Post, new { @class = "d-inline", onsubmit = "return confirm('Bu fotoğrafı silmek istediğinize emin misiniz?');" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-danger">
+                                                    <i class="mdi mdi-delete"></i> Sil
+                                                </button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

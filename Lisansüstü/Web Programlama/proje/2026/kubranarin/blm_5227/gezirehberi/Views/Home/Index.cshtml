@@ -1,0 +1,142 @@
+﻿@model List<GeziRehberi.Models.BlogCardViewModel>
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Anasayfa";
+}
+
+
+<div class="content-wrapper">
+
+    <div class="row">
+        <div class="row justify-content-center mb-2">
+            <div class="col-md-6">
+
+                <div class="input-group">
+                    <select id="CountryId" class="form-select" style="width:200px;">
+                        <option value="">Ülke</option>
+                        @foreach (var c in ViewBag.Countries)
+                        {
+                            <option value="@c.Id">@c.Name</option>
+                        }
+                    </select>
+                    <select id="CityId" class="form-select" style="width:200px;">
+                        <option value="">Şehir</option>
+                    </select>
+                    <button class="btn btn-primary" id="btnSearch">Ara</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container" id="blogContainer">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="@((item.CoverPhoto ?? "/img/no-photo.png"))"
+                                     alt="@item.Title"
+                                     class="bd-placeholder-img card-img-top"
+                                     width="100%"
+                                     height="225"
+                                     style="object-fit: cover;" />
+                                <div class="card-body">
+                                    <p class="card-text">@item.Article.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <a class="btn btn-sm btn-outline-secondary"
+                                               href="@Url.Action("Detail", "Home", new { id = item.Id })">
+                                                Devamını Oku
+                                            </a>
+
+                                        </div>
+                                        <small class="text-body-secondary">@item.Author</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $("#CountryId").change(function () {
+
+        var countryId = $(this).val();
+
+        $("#CityId").html('<option value="">Şehir</option>');
+
+        if (!countryId) return;
+
+        $.ajax({
+            url: '/Home/GetCities',
+            type: 'GET',
+            data: { countryId: countryId },
+            success: function (cities) {
+
+                $.each(cities, function (i, city) {
+                    $("#CityId").append(
+                        $('<option/>', { value: city.Id, text: city.Name })
+                    );
+                });
+            }
+        });
+    });
+
+    $("#btnSearch").click(function () {
+
+        var countryId = $("#CountryId").val();
+        var cityId = $("#CityId").val();
+
+        $.ajax({
+            url: '@Url.Action("SearchBlogs", "Home")',
+            type: 'GET',
+            data: { countryId: countryId, cityId: cityId },
+            success: function (blogs) {
+
+                $("#blogContainer").empty();
+
+                $.each(blogs, function (i, item) {
+
+                    var card =
+                        `<div class="col">
+                        <div class="card shadow-sm">
+
+                            <img src="${item.CoverPhoto}"
+                                 class="bd-placeholder-img card-img-top"
+                                 style="height:225px;object-fit:cover">
+
+                            <div class="card-body">
+                                <p class="card-text">${item.Article}</p>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a class="btn btn-sm btn-outline-secondary"
+                                           href="/Home/Detail/${item.Id}">
+                                           Devamını Oku
+                                        </a>
+                                    </div>
+
+                                    <small class="text-body-secondary">
+                                        ${item.Author}
+                                    </small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>`;
+
+                    $("#blogContainer").append(card);
+                });
+            }
+        });
+    });
+
+
+</script>

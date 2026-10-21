@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.414933",
+   "Default View_TopLeft":"0,-788",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1520 -y -360 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1520 -y -340 -defaultsOSRD
+preplace inst result -pg 1 -lvl 3 -x 980 -y -100 -defaultsOSRD
+preplace inst reset -pg 1 -lvl 1 -x 180 -y -170 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 550 -y -310 -defaultsOSRD
+preplace inst Asenkron_0 -pg 1 -lvl 2 -x 550 -y -110 -defaultsOSRD
+preplace inst enable -pg 1 -lvl 1 -x 180 -y 10 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1330 -y -520 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -x 980 -y -460 -defaultsOSRD
+preplace netloc reset_gpio_io_o 1 1 1 320 -160n
+preplace netloc enable_gpio_io_o 1 1 1 340 -90n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 -260 340 -420 770 -560 1170
+preplace netloc Asenkron_0_counter 1 2 2 790 -180 1170
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 2 1 760 -480n
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 4 30 -90 330J -190 780 -220 1180
+preplace netloc processing_system7_0_DDR 1 2 3 NJ -360 NJ -360 N
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ -340 NJ -340 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 2 750J -570 1160
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 5 40 90 NJ 90 NJ 90 NJ 90 1500
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 5 40 -250 320J -200 NJ -200 NJ -200 1490
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 3 800 -210 NJ -210 1480
+levelinfo -pg 1 0 180 550 980 1330 1520
+pagesize -pg 1 -db -bbox -sgen 0 -680 1640 160
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_ps7_cnt":"1"
+}

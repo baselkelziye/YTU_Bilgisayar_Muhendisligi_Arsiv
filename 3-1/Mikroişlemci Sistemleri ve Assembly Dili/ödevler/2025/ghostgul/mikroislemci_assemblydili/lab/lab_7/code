@@ -1,0 +1,62 @@
+STAK    SEGMENT PARA STACK 'STACK'
+        DW 20 DUP(?)
+STAK    ENDS
+
+DATA    SEGMENT PARA 'DATA'
+NOTALAR DW 364H, 385H, 364H, 385H, 364H, 485H, 408H, 458H, 
+           545H, 0H, 917H, 728H, 545H, 485H, 0H, 728H, 577H, 
+           485H, 458H, 485H, 458H, 408H, 364H, 545H, 485H, 
+           458H, 408H, 364H, 343H, 364H, 408H, 458H, 408H, 
+           485H, 545H, 485H, 458H, 408H, 364H
+
+SURELER DW 2, 2, 2, 2, 2, 2, 2, 2, 
+           4, 2, 2, 2, 2, 4, 2, 2, 
+           2, 2, 4, 4, 2, 2, 4, 2, 
+           2, 1, 1, 4, 2, 2, 4, 2, 
+           2, 1, 1, 6, 4, 2, 2, 4
+
+NOTASAYISI DW 78
+DATA    ENDS
+
+CODE    SEGMENT PARA 'CODE'
+        ASSUME CS:CODE, DS:DATA, SS:STAK
+	
+START:
+    MOV AX, DATA        ; INIT Data seg
+    MOV DS, AX	        ; 
+    MOV DX, 0AFH        ; INIT 8253
+    MOV AL, 00110111B   ; 00 (counter 0) 11 (16 bit) 011 (mod 3) 1 (bcd) 
+    OUT DX, AL
+    
+    XOR SI, SI
+PLAY_SONG:
+    CMP SI, NOTASAYISI  ; Notaların hepsi bitmiş mi kontrol et
+    JZ RESTART_SONG     ; Notalar bittiyse baştan başlaması için hazırlat
+    MOV AX, NOTALAR[SI] ; SI indisindeki notayı AX'a al
+    MOV DX, 0A9H	; Speaker ile iletişim kur
+    OUT DX, AL		;   önce AX düşük bayt
+    MOV AL, AH          ;   ardından AX büyük 
+    OUT DX, AL          ;     bayt yazdır 
+    MOV CX, SURELER[SI] ; Notanın delayini yükle
+PLAY_DELAY:
+    CALL DELAY		; Notanın Delay prosedürünü çağır
+    LOOP PLAY_DELAY	; Kaç saniye delay varsa o kadar delay yap
+    ADD SI, 2		; sonraki elemana geç 
+    JMP PLAY_SONG       ; sonraki nota için başa dön
+RESTART_SONG:
+    XOR SI, SI         ; indisi resetle
+    JMP PLAY_SONG      ;**burayı yorum satırına al bitirmek için**
+   
+   
+DELAY PROC NEAR
+    PUSH CX
+    MOV CX, 2FFFH       ;  Yönergede bizden istenildiği gibi
+DELAY_LOOP:	 	;  LOOP komuut ile en az 2FFFH adım
+    LOOP DELAY_LOOP	;  boş döngü içeren NEAR tipinde prosedür
+    POP CX
+    RET
+DELAY ENDP
+
+CODE    ENDS
+        END START
+

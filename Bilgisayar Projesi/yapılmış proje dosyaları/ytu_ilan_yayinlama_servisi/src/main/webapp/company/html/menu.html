@@ -1,0 +1,53 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../companymainpage">YTÜ İLAN YAYINLAMA SERVİSİ</span></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="../companymainpage"><span>Anasayfa</span></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">İlan İşlemleri<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href = "../newannouncementcontrolservlet"><span>İlan Oluştur</span></a></li>
+                    <li><a href="../myactiveannouncements"><span>Aktif İlanlarım</span></a></li>
+                    <li><a href="../mypassiveannouncements"><span>Pasif İlanlarım</span></a></li>
+                    <li><a href="../mysuspendedannouncements"><span>Cezalı İlanlarım</span></a></li>
+                    <li><a href="#"><span>Süresi Biten İlanlarım</span></a></li>
+                    <li><a href="../complaintreporttocompany"><span>Ceza Raporları</span></a></li>
+                    <li><a href="../searchmyanninit"><span>İlanlarımda Ara</span></a></li>
+                    <li><a href="../initializelistmyannouncements"><span>İlanlarımı Görüntüle</span></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Paket İşlemleri<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href = "../displaypacketstocompany"><span>İlan Paketlerini Gör</span></a>
+                    </li>
+                    <li>
+                        <a href = "../listmypacketsservlet"><span>Sahip Olduğum Paketler</span></a>
+                    </li>
+                    <li>
+                        <a href = "../companywaitingpacketlist"><span>Bekleyen paket isteklerim</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../companyuserinfo"><span>Profil Düzenle</span></a></li>
+            <li><a href="../logoutservlet"><span class="glyphicon glyphicon-log-out"></span> Çıkış Yap</a></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+</style>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2a475e">
+
+
+    <TextView
+        android:id="@+id/questions_spinner_label"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center_vertical"
+        android:text="Questions"
+        android:textColor="#e3e3e3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/question_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/max_duration_value"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/question_spinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/difficulty_label3"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:text="Difficulty"
+        android:textColor="#e3e3e3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/difficulty_value"
+        app:layout_constraintEnd_toStartOf="@+id/difficulty_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/difficulty_value"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/max_duration_label"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center_vertical"
+        android:text="Max Duration"
+        android:textColor="#e3e3e3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/max_duration_value"
+        app:layout_constraintEnd_toStartOf="@+id/max_duration_value"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/max_duration_value"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/max_duration_value"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="120"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/min_duration_value" />
+
+    <TextView
+        android:id="@+id/min_duration_label"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center_vertical"
+        android:text="Min Duration"
+        android:textColor="#e3e3e3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/min_duration_value"
+        app:layout_constraintEnd_toStartOf="@+id/min_duration_value"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/min_duration_value"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/difficulty_label"
+        android:layout_width="70dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:text="Exam Name"
+        android:textColor="#e3e3e3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/exam_name_value"
+        app:layout_constraintEnd_toStartOf="@+id/difficulty_value"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/exam_name_value" />
+
+    <EditText
+        android:id="@+id/difficulty_value"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="3"
+        android:inputType="number"
+        android:maxLength="1"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exam_name_value" />
+
+    <EditText
+        android:id="@+id/exam_name_value"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Algorithm Analysis 2. Exam"
+        android:inputType="textCapWords"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupHeaderTxt" />
+
+    <EditText
+        android:id="@+id/min_duration_value"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="15"
+        android:inputType="number"
+        android:maxLength="3"
+        android:gravity="center"
+        android:textColor="#e3e3e3"
+        android:textColorHint="#9c9c9c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty_value" />
+
+    <TextView
+        android:id="@+id/signupHeaderTxt"
+        android:layout_width="148dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="left"
+        android:text="Add New Exam"
+        android:textColor="#e3e3e3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/question_spinner"
+        android:layout_width="223dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_duration_value" />
+
+    <ImageButton
+        android:id="@+id/add_exam_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@android:drawable/ic_input_add"
+        android:text="Add"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_spinner" />
+
+    <ImageButton
+        android:id="@+id/edit_exam_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:text="Add"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/max_duration_value" />
+
+
+</android.support.constraint.ConstraintLayout>

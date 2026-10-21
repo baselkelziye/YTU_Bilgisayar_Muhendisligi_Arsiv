@@ -1,0 +1,40 @@
+BLM3041 Veritabanı Yönetimi 2.Quizi 12.12.2024  B GRUBU 
+Öğrenci No:
+Ad:           Soyad:
+
+1-) Şirkette en düşük maaşa sahip departman yöneticisinin ismini ve soyismini iki farklı yöntemle bulunuz. (15p)
+
+
+
+2-) Her bir departmanda maaşı 30000’den büyük olan kaç çalışan olduğunu departman isimlerine göre listeleyiniz. 
+Maaşı 30000’den büyük olan çalışan sayısı 3’ten az olan departmanları dahil etmeyiniz. (15p)
+
+
+
+3-)  Hiçbir projede görev almayan çalışanlardan en büyük SSN numarasına sahip olanı bulunuz.(15p)
+
+
+
+4-) “Research” departmanına bağlı kaç proje yürütüldüğünü bulan ve döndüren pl/pgSQL fonksiyonunu yazınız (fonksiyon sayı döndürmelidir). 
+Fonksiyonu çağırınız. (15p)
+
+
+
+5-)  “Administration” departmanında maaşı departman ortalamasının altında kalan kişilerin maaşına 
+500 ekleyen pl/pgSQL fonksiyonunu yazınız. Fonksiyonu çağırınız.(20p)
+
+
+
+6-) SSN numarası verilen çalışanın 2 veya daha fazla çocuğu var ise 'çocuk yardımı alacak', yoksa 'yardım alamaz' şeklinde dönüş yapan pl/pgSQL fonksiyonunu yazınız.
+'123456789' SSN numaralı çalışan için fonksiyonu çağırınız. (20p)
+(ipucu: RETURNS TEXT olarak belirttikten sonra fonksiyon içerisinde RETURN 'blah'; yazmak metin ifadesi döndürür.)
+
+
+
+
+
+
+
+
+
+

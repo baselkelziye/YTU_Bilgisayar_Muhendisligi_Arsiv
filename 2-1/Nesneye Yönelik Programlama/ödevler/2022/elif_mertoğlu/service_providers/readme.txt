@@ -1,0 +1,1 @@
+This code is written in Java to study object oriented programming. It basically implements an information system for a company, which is selling subscriptions for internet connections from different service providers. 

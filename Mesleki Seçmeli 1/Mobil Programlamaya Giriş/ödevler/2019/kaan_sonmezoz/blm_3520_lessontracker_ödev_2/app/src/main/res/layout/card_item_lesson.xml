@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:contentPadding="5dp" >
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:background="@drawable/card_item_border">
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LESSON CODE"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/lessonCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BLM2342"
+                android:textAlignment="center"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="34"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LESSON NAME"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/lessonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobil Programlaya Giris"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GRADE"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/lessonGrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AA"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

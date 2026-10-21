@@ -1,0 +1,83 @@
+﻿@model IEnumerable<GeziRehberi.Models.Cities>
+
+@{
+    ViewBag.Title = "Şehirler";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Şehirler Listesi</h4>
+                    <p class="card-description">
+                        <a href="@Url.Action("Create")" class="btn btn-primary btn-sm">
+                            <i class="mdi mdi-plus"></i> Yeni Şehir Ekle
+                        </a>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Adı</th>
+                                    <th>Ülke</th>
+                                    <th>Oluşturulma Tarihi</th>
+                                    <th>Aktif / Pasif</th>
+                                    <th>İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            @{
+                                                string countryName = "-";
+                                                if (ViewBag.Countries != null && item.CountryId.HasValue)
+                                                {
+                                                    var countries = ViewBag.Countries as IEnumerable<dynamic>;
+                                                    var country = countries?.FirstOrDefault(c => (int)c.Id == item.CountryId.Value);
+                                                    countryName = country?.Name ?? "-";
+                                                }
+                                            }
+                                            @countryName
+                                        </td>
+                                        <td>@(item.CreatedDate?.ToString("dd.MM.yyyy") ?? "-")</td>
+                                        <td>
+                                            @if (item.IsActive == true)
+                                            {
+                                                <span class="badge badge-success">Aktif</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="badge badge-danger">Pasif</span>
+                                            }
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("Edit", new { id = item.Id })"  class="btn btn-sm btn-success">
+                                                <i class="mdi mdi-pencil"></i> Düzenle
+                                            </a>
+                                            @using (Html.BeginForm("Delete", "Cities", new { id = item.Id }, FormMethod.Post, new { @class = "d-inline", onsubmit = "return confirm('Bu şehri silmek istediğinize emin misiniz?');" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="btn btn-sm btn-danger">
+                                                    <i class="mdi mdi-delete"></i> Sil
+                                                </button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

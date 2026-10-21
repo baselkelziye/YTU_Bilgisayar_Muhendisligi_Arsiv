@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Smart Phonebook</string>
+    <string name="google_maps_api_key">AIzaSyCcmga5bE2Xf11LVKPSipDSL1BEX7SINmI</string>
+
+
+
+    <string name="missing_fields">Missing Fields</string>
+    <string name="create_or_edit_contact_missing_fields_message">You need to fill all fields and select a home location for the new contact. </string>
+    <string name="ok">OK</string>
+    <string name="home_of">"Home of "</string>
+    <string name="add_new_contact">Add New Contact</string>
+    <string name="seconds">sec.</string>
+
+    <string name="send_an_email_to">"Send an E-Mail to "</string>
+    <string name="importing">Importing from default phone book</string>
+
+
+    <!--ActionBar Title Strings-->
+    <string name="action_bar_title_send_new_sms">Send New SMS</string>
+    <string name="action_bar_title_edit_contact">Edit Contact</string>
+    <!--ActionBar Title Strings End-->
+
+    <!--Button Strings-->
+    <string name="button_send">Send</string>
+    <string name="button_call">Call</string>
+    <string name="button_save_contact">Save Contact</string>
+    <!--Button Strings End-->
+
+    <!--EditText Hint Strings-->
+    <string name="hint_name">Name</string>
+    <string name="hint_surname">Surname</string>
+    <string name="hint_enter_your_message">Enter your message</string>
+    <string name="hint_phone_number">Phone number</string>
+    <string name="hint_email_address">E-Mail Address</string>
+    <string name="hint_search">Search</string>
+    <!--EditText Hint Strings End-->
+
+    <!--TextView Strings-->
+    <string name="text_view_select_home_location">Select Home Location</string>
+    <string name="text_view_about">About</string>
+    <string name="text_view_name">Name</string>
+    <string name="text_view_surname">Surname</string>
+    <string name="text_view_email_address">E-Mail Address</string>
+    <string name="text_view_total_incoming_duration">Total Incoming Call Duration</string>
+    <string name="text_view_total_outgoing_duration">Total Outgoing Call Duration</string>
+    <string name="text_view_total_missing_call_count">Total Missing Call Count</string>
+    <string name="text_view_total_sent_message_count">Total Sent Message Count</string>
+    <string name="text_view_total_received_message_count">Total Received Message Count</string>
+    <string name="text_view_home_location">Home Location</string>
+    <!--TextView Strings End-->
+
+    <!--Toast Strings-->
+    <string name="toast_added_to_speed_dial">" added to speed dial"</string>
+    <string name="toast_removed_from_speed_dial">" removed from speed dial"</string>
+    <string name="toast_error_cant_get_location">"We couldn't get your current location, try again later"</string>
+    <string name="toast_call_failed">Call failed</string>
+    <!--Toast Strings End-->
+
+    <!--Notification Strings-->
+    <string name="incoming_sms_notification_ticker">Sms Received:</string>
+    <!--Notification Strings End-->
+
+    <!--Menu Strings-->
+    <string name="menu_add_to_speed_dial">Add to Speed Dial</string>
+    <string name="menu_edit_contact">Edit Contact</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_add_new_contact">Add New Contact</string>
+    <string name="menu_import">Import from Default Phonebook</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_delete_all_messages">Delete All Messages</string>
+    <!--Menu Strings End-->
+
+</resources>

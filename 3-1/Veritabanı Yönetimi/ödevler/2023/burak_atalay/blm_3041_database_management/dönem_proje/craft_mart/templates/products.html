@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+  <!-- Üst Başlık -->
+  <div class="row align-items-center mb-5">
+    <div class="col-lg-8">
+      <h1 class="fw-bold mb-2">Ürünler</h1>
+      <p class="text-muted mb-0">Binlerce ürünü keşfedin ve aradığınızı hemen bulun</p>
+    </div>
+    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+      {% if session.user_id %}
+      <a href="{{ url_for('view_cart') }}" class="btn btn-outline-primary">
+        <i class="fas fa-shopping-cart me-1"></i> Sepeti Görüntüle
+      </a>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Arama Kutusu -->
+  <div class="row mb-4">
+    <div class="col-12">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text bg-white text-secondary" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+        <input 
+          type="text"
+          name="search_query"
+          id="search_query"
+          class="form-control"
+          placeholder="Aradığınız ürün ismini yazınız..."
+          oninput="filterProducts()"
+          aria-label="Arama"
+          aria-describedby="search-addon"
+        >
+      </div>
+      <small class="text-muted">Gerçek zamanlı arama yapabilirsiniz.</small>
+    </div>
+  </div>
+
+  <!-- Filtreleme & Sıralama Formu -->
+  <form method="GET" action="{{ url_for('list_products') }}" 
+        class="row g-3 mb-4 p-3 rounded shadow-sm filter-form" 
+        style="background-color: #f9f9f9;">
+    
+    <div class="col-md-2">
+      <label for="category_id" class="form-label fw-semibold">Kategori</label>
+      <select name="category_id" id="category_id" class="form-select">
+        <option value="">Tümü</option>
+        {% for cat in categories %}
+          <option value="{{ cat.category_id }}"
+            {% if request.args.get('category_id') == cat.category_id|string %}selected{% endif %}
+          >{{ cat.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="col-md-2">
+      <label for="min_price" class="form-label fw-semibold">Min. Fiyat</label>
+      <input 
+        type="number"
+        name="min_price"
+        id="min_price"
+        class="form-control"
+        placeholder="Örn: 10"
+        min="0"
+        value="{{ request.args.get('min_price', '') }}">
+    </div>
+
+    <div class="col-md-2">
+      <label for="max_price" class="form-label fw-semibold">Maks. Fiyat</label>
+      <input
+        type="number"
+        name="max_price"
+        id="max_price"
+        class="form-control"
+        placeholder="Örn: 500"
+        min="0"
+        value="{{ request.args.get('max_price', '') }}">
+    </div>
+
+    <div class="col-md-2">
+      <label for="sort_by" class="form-label fw-semibold">Sırala</label>
+      <select name="sort_by" id="sort_by" class="form-select">
+        <option value="" {% if not sort_by %}selected{% endif %}>Varsayılan</option>
+        <option value="price_asc" {% if sort_by == 'price_asc' %}selected{% endif %}>Fiyat (Artan)</option>
+        <option value="price_desc" {% if sort_by == 'price_desc' %}selected{% endif %}>Fiyat (Azalan)</option>
+        <option value="rating_asc" {% if sort_by == 'rating_asc' %}selected{% endif %}>Puan (Artan)</option>
+        <option value="rating_desc" {% if sort_by == 'rating_desc' %}selected{% endif %}>Puan (Azalan)</option>
+        <option value="sales_desc" {% if sort_by == 'sales_desc' %}selected{% endif %}>En Çok Satan</option>
+        <option value="reviews_desc" {% if sort_by == 'reviews_desc' %}selected{% endif %}>En Çok Değerlendirilen</option>
+      </select>
+    </div>
+
+    <div class="col-md-4 d-flex align-items-end">
+      <button type="submit" class="btn btn-primary me-2 flex-fill">
+        <i class="fas fa-filter me-1"></i>Filtrele
+      </button>
+      <a href="{{ url_for('list_products') }}" class="btn btn-outline-secondary flex-fill">
+        <i class="fas fa-undo me-1"></i>Sıfırla
+      </a>
+    </div>
+  </form>
+
+  <!-- Ürün Listesi -->
+  <div class="row" id="product-list">
+    {% for p in products %}
+      <div class="col-md-4 col-sm-6 col-12 product-item mb-4">
+        <div class="card border-0 h-100 shadow-sm product-card position-relative">
+          <a href="{{ url_for('product_detail', product_id=p.product_id) }}" class="text-decoration-none text-dark">
+            {% if p.image_url %}
+              <img
+                src="{{ url_for('static', filename='uploads/' ~ p.image_url) }}"
+                class="card-img-top"
+                alt="{{ p.name }}"
+                style="height: 220px; object-fit: cover;"
+              >
+            {% else %}
+              <img
+                src="{{ url_for('static', filename='images/default_product.png') }}"
+                class="card-img-top"
+                alt="Varsayılan Ürün"
+                style="height: 220px; object-fit: cover;"
+              >
+            {% endif %}
+            <div class="card-body text-center">
+              <h5 class="card-title fw-semibold mb-2">{{ p.name }}</h5>
+              <p class="text-muted mb-2">Satıcı: {{ p.seller_name }}</p>
+              <p class="card-text fw-semibold text-primary fs-5 mb-1">{{ p.price }} TL</p>
+              <div class="mb-1">
+                <span class="text-warning"><i class="fas fa-star"></i></span>
+                {{ "%.2f"|format(p.rating) }}
+              </div>
+              <span class="badge bg-light text-muted border">
+                {{ p.category_name }}
+              </span>
+              {% if p.review_count is defined %}
+                <p class="mt-2 mb-0 text-secondary small">
+                  <i class="fas fa-comment-alt"></i> {{ p.review_count }} değerlendirme
+                </p>
+              {% endif %}
+            </div>
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+    {% if products|length == 0 %}
+      <div class="col-12">
+        <div class="alert alert-info text-center" role="alert">
+          Aradığınız kriterlerde ürün bulunamadı.
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Real-time Arama -->
+<script>
+  function filterProducts() {
+    const searchQuery = document.getElementById('search_query').value.toLowerCase();
+    const productItems = document.querySelectorAll('.product-item');
+
+    productItems.forEach(item => {
+      const productName = item.querySelector('.card-title').textContent.toLowerCase();
+      if (productName.includes(searchQuery)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+</script>
+{% endblock %}

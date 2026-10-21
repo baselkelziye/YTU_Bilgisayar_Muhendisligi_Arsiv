@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/emailAddressLoginScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:textColor="#fff"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/passwordLoginScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/registerButtonLoginScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDarker"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/loginButtonLoginScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/continueWithoutLoginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/continueWithoutLogin"
+        android:textStyle="italic"
+/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<!-- templates/categories/categories_list.html -->
+{% extends "base.html" %}
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Kategori Listesi</h2>
+    <a href="{{ url_for('create_category_form') }}" class="btn btn-success">Yeni Kategori Ekle</a>
+  </div>
+
+  <table class="table table-hover table-sm align-middle">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Kategori Adı</th>
+        <th>İşlemler</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cat in categories %}
+      <tr>
+        <td>{{ cat.category_id }}</td>
+        <td>{{ cat.name }}</td>
+        <td>
+          <!-- Update ve Delete linkleri -->
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="20dp"
+    card_view:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:backgroundTint="@color/yellow"
+    tools:ignore="MissingClass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/announce_iv_announce"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/announcement"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/announce_tv_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/announce_iv_announce"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/navy_blue"/>
+
+        <TextView
+            android:id="@+id/announce_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/announce_tv_head"
+            android:layout_marginTop="20dp"
+            android:textAlignment="textStart"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/navy_blue"/>
+
+        <TextView
+            android:id="@+id/announce_tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/announce_tv_text"
+            android:layout_marginTop="20dp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/navy_blue"/>
+
+        <TextView
+            android:id="@+id/announce_tv_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/announce_tv_date"
+            android:layout_marginTop="20dp"
+            android:textAlignment="textEnd"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/navy_blue"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

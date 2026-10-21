@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cekmeceActivityLayout"
+    tools:context="com.barissemerci.sanaldolabim.CekmeceActivity">
+
+
+    <EditText
+        android:id="@+id/editTextCekmeceAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/buttonCekmeceyeKiyafetEkle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="56dp"
+        android:onClick="kiyafetSecGit"
+        android:text="Çekmeceye kıyafet ekle"
+        app:layout_constraintStart_toStartOf="@+id/editTextCekmeceAdi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCekmeceAdi" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="25dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewBirinciKiyafet"
+                android:visibility="invisible"
+                android:onClick="kiyafeteGit"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:onClick="kiyafeteGit"
+                android:visibility="invisible"
+                android:tag="1"
+                android:id="@+id/imageViewIkinciKiyafet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewUcuncuKiyafet"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="2"
+                android:onClick="kiyafeteGit"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            >
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:onClick="kiyafeteGit"
+                android:id="@+id/imageViewDorduncuKiyafet"
+                android:layout_width="wrap_content"
+                android:tag="3"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:onClick="kiyafeteGit"
+                android:tag="4"
+                android:id="@+id/imageViewBesinciKiyafet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewAltinciKiyafet"
+                android:layout_width="wrap_content"
+                android:onClick="kiyafeteGit"
+                android:tag="5"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewYedinciKiyafet"
+                android:visibility="invisible"
+                android:onClick="kiyafeteGit"
+                android:tag="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewSekizinciKiyafet"
+                android:visibility="invisible"
+                android:onClick="kiyafeteGit"
+                android:tag="7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewDokuzuncuKiyafet"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kiyafeteGit"
+                android:tag="8"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewOnuncuKiyafet"
+                android:layout_width="wrap_content"
+                android:onClick="kiyafeteGit"
+                android:tag="9"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewOnBirinciKiyafet"
+                android:layout_width="wrap_content"
+                android:onClick="kiyafeteGit"
+                android:tag="10"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewOnIkinciKiyafet"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kiyafeteGit"
+                android:tag="11"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

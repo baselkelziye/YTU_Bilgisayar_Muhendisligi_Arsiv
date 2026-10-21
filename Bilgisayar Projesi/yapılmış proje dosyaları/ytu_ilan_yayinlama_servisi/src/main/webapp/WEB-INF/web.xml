@@ -1,0 +1,57 @@
+<web-app
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+
+    <!-- Config here. -->
+
+<display-name>Archetype Created Web Application</display-name>
+
+    <welcome-file-list>
+        <welcome-file>indexcookies</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/sayfa-bulunamadi.jsp</location>
+    </error-page>
+
+    <context-param>
+        <param-name>pdfFilePath</param-name>
+        <param-value>/home/mgunes/IdeaProjects/ytu-ilan-yayinlama-servisi/pdf/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>imageFilePath</param-name>
+        <param-value>/home/mgunes/IdeaProjects/ytu-ilan-yayinlama-servisi/images/</param-value>
+    </context-param>
+    <context-param>
+        <param-name>commonFilePath</param-name>
+        <param-value>/home/mgunes/IdeaProjects/ytu-ilan-yayinlama-servisi/geneldosya/</param-value>
+    </context-param>
+  
+  <!-- 
+   <filter-mapping>
+  	<url-pattern>/admin/*</url-pattern>
+  	<url-pattern>/dau/*</url-pattern>
+  	<url-pattern>/company/*</url-pattern>
+  	<url-pattern>/student/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<url-pattern>/dau/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<url-pattern>/company/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<url-pattern>/student/*</url-pattern>
+  </filter-mapping> -->
+ 
+</web-app>

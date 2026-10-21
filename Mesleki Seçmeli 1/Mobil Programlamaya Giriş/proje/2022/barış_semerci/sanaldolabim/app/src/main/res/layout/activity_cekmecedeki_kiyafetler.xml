@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barissemerci.sanaldolabim.CekmecedekiKiyafetler">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_marginEnd="5dp"
+                android:id="@+id/imageViewKabin1"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin2"
+                android:layout_marginEnd="5dp"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin3"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="kabineKiyafetEkle"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewKabin4"
+                android:layout_marginEnd="5dp"
+                android:onClick="kabineKiyafetEkle"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin5"
+                android:layout_marginEnd="5dp"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin6"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewKabin7"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin8"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin9"
+                android:layout_width="wrap_content"
+                android:onClick="kabineKiyafetEkle"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewKabin10"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin11"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:onClick="kabineKiyafetEkle"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+
+            <ImageView
+                android:id="@+id/imageViewKabin12"
+                android:onClick="kabineKiyafetEkle"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_launcher_background" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

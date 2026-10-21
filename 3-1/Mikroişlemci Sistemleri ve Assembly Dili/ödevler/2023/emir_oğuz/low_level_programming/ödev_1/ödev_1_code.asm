@@ -1,0 +1,56 @@
+SSG		SEGMENT PARA STACK 'STACK'
+		DW 20 DUP(?)
+SSG		ENDS
+
+DSG		SEGMENT PARA 'DATA'
+arr		DB 1, 7, 12, 16, 21, 27, 30, 39, 47, 50
+n		DW 10
+DSG		ENDS
+
+CSG		SEGMENT PARA 'CODE'
+		ASSUME CS:CSG, DS:DSG, SS:SSG
+		
+MN		PROC FAR
+		PUSH DS
+		XOR AX, AX
+		PUSH AX
+		MOV AX, DSG
+		MOV DS, AX
+		MOV CX, n
+		XOR SI, SI
+		XOR DX, DX
+L1:		TEST arr[SI], 01h
+		JZ L2
+		INC DX
+L2:		INC SI
+		LOOP L1
+		MOV BX, n
+		MOV CX, DX
+		SUB BX, CX
+		MOV AH, 02h
+		MOV DL, 'C'
+		INT 21h
+		MOV AH, 02h
+		MOV DL, ':'
+		INT 21h
+		MOV AH, 02h
+		MOV DL, BL
+		ADD DL, '0'
+		INT 21h
+		MOV AH, 02h
+		MOV DL, ' '
+		INT 21h
+		MOV AH, 02h
+		MOV DL, 'T'
+		INT 21h
+		MOV AH, 02h
+		MOV DL, ':'
+		INT 21h
+		MOV AH, 02h
+		MOV DL, CL
+		ADD DL, '0'
+		INT 21h
+		RETF
+MN		ENDP
+CSG		ENDS
+		END MN

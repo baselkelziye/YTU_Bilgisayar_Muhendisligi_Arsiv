@@ -1,0 +1,94 @@
+BLM3041 Veritabanı Yönetimi 2.Quizi 12.12.2024  A GRUBU 
+Öğrenci No: 21011022
+Ad: Tarık          Soyad: Taşkın
+
+1-) Şirkette en yüksek maaşa sahip çalışanın ismini ve soyismini iki farklı yöntemle bulunuz. (15p)
+
+select fname, lname
+from employee e
+where e.salary in (select max(salary) from employee);
+
+select fname, lname from employee
+order by salary desc
+limit 1;
+
+2-) Her bir projede kaç kişinin çalıştığını proje isimlerine göre listeleyiniz. 
+Kişi sayısı 2’den az olan projeleri dahil etmeyiniz. (15p)
+
+select pname, count(pno)
+from project, works_on
+where pno = pnumber
+group by pname
+having count(pno) >= 2;
+
+3-) Şirkette, akrabası olmayan kişiler arasından en küçük SSN numarasına sahip çalışanın adı, soyadı ve SSN bilgilerini 
+LIMIT kullanarak bulan sorguyu yazınız. (15p)
+
+select distinct fname, lname, ssn
+from employee, dependent
+where ssn not in (select essn from dependent)
+order by ssn asc
+limit 1;
+
+4-) “Hardware” departmanında çalışanların sayısını bulan pl/pgSQL fonksiyonunu yazınız. 
+Bu fonksiyon bir sayı döndürmelidir. Fonksiyonu çağırınız.(15p) 
+
+create or replace function calisanSayisiBul(depname varchar)
+returns numeric as '
+declare toplam numeric;
+begin
+	select count(ssn) into toplam
+	from department, employee
+	where dname = depname and dnumber = dno;
+	return toplam;
+end;
+' language plpgsql;
+
+select calisanSayisiBul('Hardware');
+
+5-) “Research” departmanının ortalama çalışan maaşı 40000’den büyükse, “Research” departmanında çalışan tüm kişilerin maaşlarına 1000 ekleyen pl/pgSQL fonksiyonunu yazınız ve bu fonksiyonu çağırınız. (20p)
+
+create or replace function zamYap(depname varchar)
+returns void as '
+declare ortMaas numeric;
+begin
+	select avg(salary) into ortMaas
+	from department, employee
+	where dname = depname and dnumber = dno;
+
+	if(ortMaas > 4000) then 
+		update employee
+		set salary = salary - 1000
+		where dno in (select dnumber from department where dname = depname);
+	end if;
+end;
+' language plpgsql;
+
+select zamYap('Research');
+
+-- ortalama maas 40000'den azdir (33250).
+--select salary from department, employee where dname = 'Research' and dno = dnumber;
+
+6-) SSN numarasını parametre olarak alan, çalışanın görev aldığı proje sayısı 3 ve üstüyse 'aktif çalışan', değilse 'yetersiz proje sayısı' ifadelerini döndüren pl/pgSQL fonksiyonunu yazınız.
+'111111100' SSN numaralı çalışan için fonksiyonu çağırınız. (20p)
+(ipucu: RETURNS TEXT olarak belirttikten sonra fonksiyon içerisinde RETURN 'blah'; yazmak metin ifadesi döndürür.)
+
+create or replace function calisanDurumu(employeeSSN char)
+returns text as $$
+declare projeSayisi numeric;
+declare msg text;
+begin
+	select count(essn) into projeSayisi
+	from works_on
+	where essn = employeeSSN;
+
+	if(projeSayisi >= 3) then 
+		msg := 'aktif çalışan';
+	else
+		msg := 'yetersiz proje sayısı';
+	end if;
+	return msg;
+end;
+$$ language plpgsql;
+
+select calisanDurumu('111111100');

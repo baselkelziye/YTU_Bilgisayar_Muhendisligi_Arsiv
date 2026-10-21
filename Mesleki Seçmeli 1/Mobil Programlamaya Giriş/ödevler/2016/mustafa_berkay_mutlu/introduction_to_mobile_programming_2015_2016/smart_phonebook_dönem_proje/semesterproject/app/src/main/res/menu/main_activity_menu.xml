@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:smartphonebook="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_mainActivity_add_new_contact"
+        android:title="@string/menu_add_new_contact"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/menu_mainActivity_import_from_default_phonebook"
+        android:title="@string/menu_import"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+    <item
+        android:id="@+id/menu_mainActivity_search"
+        android:title="@string/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        smartphonebook:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</menu>

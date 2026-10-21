@@ -1,0 +1,53 @@
+{% extends 'base.jinja2' %} {% block content %}
+
+  <form method="post">
+    <h2 class="text-gray-900 text-2xl font-bold leading-snug">
+      Comment Moderation
+    </h2>
+
+    <div class="py-4">
+      <label for="model-key" class="block text-gray-700 font-medium"
+      >Model to use</label
+      >
+      <select
+          required
+          name="model"
+          id="model-key"
+          class="block w-full mt-1 rounded-md bg-gray-100 border-transparent focus:border-indigo-500 focus:bg-white focus:ring-indigo-500"
+      >
+        {% for model in models %}
+          <option value="{{ model.name }}">{{ model.display_name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div>
+      <label for="comment" class="block text-sm font-medium text-gray-700">
+        Comment
+      </label>
+      <div class="mt-1">
+      <textarea
+          required
+          minlength="10"
+          maxlength="150"
+          id="comment"
+          name="comment"
+          rows="3"
+          class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"
+      ></textarea>
+      </div>
+    </div>
+
+    <input
+        disabled
+        type="submit"
+        value="Classify"
+        id="submit-btn"
+        class="disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer bg-gradient-to-r from-red-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 mt-6 inline-flex items-center px-6 py-3 text-white font-semibold rounded-md shadow-sm w-full"
+    />
+  </form>
+{% endblock %}
+
+{% block scripts %}
+  <script defer src="{{ url_for('static', path='/form.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,23 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/sahindogruca/Desktop/code/c/ytü/semester-3/diff/diffProject1/main"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _fillDict, symObjAddr: 0x0, symBinAddr: 0x1000016A8, symSize: 0x320 }
+  - { offsetInCU: 0x9E, offset: 0x9E, size: 0x8, addend: 0x0, symName: _fillDict, symObjAddr: 0x0, symBinAddr: 0x1000016A8, symSize: 0x320 }
+  - { offsetInCU: 0x17B, offset: 0x17B, size: 0x8, addend: 0x0, symName: _createDict, symObjAddr: 0x320, symBinAddr: 0x1000019C8, symSize: 0xC8 }
+  - { offsetInCU: 0x1F3, offset: 0x1F3, size: 0x8, addend: 0x0, symName: _contains, symObjAddr: 0x3E8, symBinAddr: 0x100001A90, symSize: 0xDC }
+  - { offsetInCU: 0x245, offset: 0x245, size: 0x8, addend: 0x0, symName: _compute_cost, symObjAddr: 0x4C4, symBinAddr: 0x100001B6C, symSize: 0x13C }
+  - { offsetInCU: 0x2F9, offset: 0x2F9, size: 0x8, addend: 0x0, symName: _compute_gradient, symObjAddr: 0x600, symBinAddr: 0x100001CA8, symSize: 0x1B4 }
+  - { offsetInCU: 0x38D, offset: 0x38D, size: 0x8, addend: 0x0, symName: _compute_gradient_sgd, symObjAddr: 0x7B4, symBinAddr: 0x100001E5C, symSize: 0x2D0 }
+  - { offsetInCU: 0x4B7, offset: 0x4B7, size: 0x8, addend: 0x0, symName: _gradient_descent, symObjAddr: 0xA84, symBinAddr: 0x10000212C, symSize: 0x204 }
+  - { offsetInCU: 0x59F, offset: 0x59F, size: 0x8, addend: 0x0, symName: _gradient_descent_sgd, symObjAddr: 0xC88, symBinAddr: 0x100002330, symSize: 0x20C }
+  - { offsetInCU: 0x695, offset: 0x695, size: 0x8, addend: 0x0, symName: _adam, symObjAddr: 0xE94, symBinAddr: 0x10000253C, symSize: 0x3FC }
+  - { offsetInCU: 0x7F6, offset: 0x7F6, size: 0x8, addend: 0x0, symName: _gd_test, symObjAddr: 0x1290, symBinAddr: 0x100002938, symSize: 0x198 }
+  - { offsetInCU: 0x8A6, offset: 0x8A6, size: 0x8, addend: 0x0, symName: _get_start_comparison, symObjAddr: 0x1428, symBinAddr: 0x100002AD0, symSize: 0x1BC }
+  - { offsetInCU: 0x98F, offset: 0x98F, size: 0x8, addend: 0x0, symName: _sgd_start, symObjAddr: 0x15E4, symBinAddr: 0x100002C8C, symSize: 0x60 }
+  - { offsetInCU: 0xA1E, offset: 0xA1E, size: 0x8, addend: 0x0, symName: _adam_start, symObjAddr: 0x1644, symBinAddr: 0x100002CEC, symSize: 0x90 }
+  - { offsetInCU: 0xACB, offset: 0xACB, size: 0x8, addend: 0x0, symName: _comparison_for5value, symObjAddr: 0x16D4, symBinAddr: 0x100002D7C, symSize: 0x238 }
+  - { offsetInCU: 0xBA7, offset: 0xBA7, size: 0x8, addend: 0x0, symName: _start_for_get_weights, symObjAddr: 0x190C, symBinAddr: 0x100002FB4, symSize: 0x1BC }
+  - { offsetInCU: 0xC8F, offset: 0xC8F, size: 0x8, addend: 0x0, symName: _get_weights, symObjAddr: 0x1AC8, symBinAddr: 0x100003170, symSize: 0x1B8 }
+  - { offsetInCU: 0xD6B, offset: 0xD6B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1C80, symBinAddr: 0x100003328, symSize: 0x960 }
+...

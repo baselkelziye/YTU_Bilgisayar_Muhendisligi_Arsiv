@@ -1,0 +1,81 @@
+STAK    SEGMENT PARA STACK 'STACK'
+        DW 20 DUP(?)
+STAK    ENDS
+
+DATA    SEGMENT PARA 'DATA'
+BUFFER  DB 100 DUP(?) ; yazılanı tutmak için buffer dizisi
+DATA    ENDS
+
+CODE    SEGMENT PARA 'CODE'
+        ASSUME CS:CODE, DS:DATA, SS:STAK
+
+START:
+        MOV AX, DATA
+        MOV DS, AX
+
+        ; 8251 USART konfigurasyonu 
+        MOV DX, 0303H
+        MOV AL, 01001101B ; Mode register: 8 data bits, 1 stop bit, no parity
+        OUT DX, AL
+        MOV AL, 40H 
+        OUT DX, AL
+
+        MOV AL, 01001101B ; Mode register 
+        OUT DX, AL
+
+        MOV AL, 00010101B ; Tx ve Rx hazırla
+        OUT DX, AL
+
+        ; input almaya başla
+        MOV SI, OFFSET BUFFER ; SI point to buffer
+INPUT_LOOP:
+        MOV DX, 0303H
+WAIT_RX:
+        IN AL, DX ; RxRDY bekle
+        AND AL, 02H
+        JZ WAIT_RX
+
+        MOV DX, 0301H
+        IN AL, DX ; Veri oku
+        SHR AL, 1  ; En fazla 7-bit maskesi sağlamak için
+
+        CMP AL, '1' ; input '1' mi diye kontrol et
+        JE PRINT_LAST_3_AND_1
+        
+        ; girilen karakteri kaydet
+        MOV [SI], AL
+        INC SI
+
+        ; girilen karakteri yazdır:
+        MOV DX, 0303H
+WAIT_TX:
+        IN AL, DX ; TxRDY bekle
+        AND AL, 01H
+        JZ WAIT_TX
+        
+        MOV DX, 0301H
+        MOV AL, [SI-1] ; en son girilen karakteri yazdır
+        OUT DX, AL
+
+        ; limite ulaştımı diye kontrol et
+        CMP SI, OFFSET BUFFER + 100
+        JB INPUT_LOOP
+
+PRINT_LAST_3_AND_1:
+        ; '1' karakterini yazdır
+        MOV DX, 0303H
+WAIT_TX_1:
+        IN AL, DX ; TxRDY bekle
+        AND AL, 01H
+        JZ WAIT_TX_1
+
+        MOV DX, 0301H
+        MOV AL, '1'
+        OUT DX, AL
+
+END_PROGRAM:
+        HLT
+
+CODE    ENDS
+        END START
+

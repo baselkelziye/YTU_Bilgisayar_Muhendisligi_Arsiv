@@ -1,0 +1,32 @@
+/* Dropdowns */
+
+.dropdown {
+  .dropdown-toggle {
+    &:after {
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      border-bottom: 0;
+      font: normal normal normal 24px/1 "themify";
+      content: "\e64b";  
+      width: auto;
+      height: auto;
+      vertical-align: middle;
+      line-height: .625rem;
+      font-size: .875rem;
+      margin-left: .3rem;
+    }
+  }
+  .dropdown-menu {
+    margin-top: 2px;
+    font-size: $default-font-size;
+    box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);   
+    .dropdown-item {
+      font-size: .875rem;
+      padding: .25rem 1.5rem;
+      &:active {
+        background: initial;
+      }
+    }
+  }
+}

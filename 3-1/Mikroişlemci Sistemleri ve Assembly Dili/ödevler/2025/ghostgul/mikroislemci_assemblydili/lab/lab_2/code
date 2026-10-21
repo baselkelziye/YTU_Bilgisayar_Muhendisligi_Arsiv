@@ -1,0 +1,140 @@
+; COM tipinde program. a ve b yi 2'den başlatıp a^2 + b^2 = c^2 bulur. 
+
+CODESG SEGMENT PARA 'CODE'
+    ORG 100H
+    ASSUME CS:CODESG, DS:CODESG, SS:CODESG, ES:CODESG
+
+BASLA PROC NEAR
+     
+    MOV a, 2
+    XOR AX, AX
+
+a_loop:
+    INC a
+    MOV b, 2                            ; her yeni a için b 3'den başlicak
+
+b_loop:
+    INC b
+    CMP b, 50
+    JG a_loop
+    MOV AX, a
+    CMP AX, b
+    JE b_loop
+    IMUL AX ; a * a
+    MOV BX, AX                          ; BX'de a^2 var
+    MOV AX, b
+    IMUL AX 
+    ADD AX, BX                          ; AX'de c^2 var 
+    
+    ; karekök alma ve tam sayı kontrolü
+    MOV CX, 0                           ; c^2, karekökünün alınmış hali CX olacak
+    MOV BX, 1   
+calc_sqr:
+    SUB AX, BX
+    CMP AX, 0
+    JL b_loop                           ; b_loop'a geri git çünkü tam sayı değil
+    INC CX
+    CMP AX, 0
+    JE c_bigger_fifty_check
+    ADD BX, 2
+    JMP calc_sqr
+
+    ; c > 50 ise yeni a_loop geç
+c_bigger_fifty_check:
+    CMP CX, 50
+    JG a_loop
+    
+    ; asal check algoritması // CX = c / DX = c^2
+    MOV BX, CX                          ; karekökü alınmış c sayısını kopyala
+prime_check:
+    MOV AX, CX
+    MOV DX, 0                           ; bölme işlemi düzgün olsun diye kalan hep sıfırlanır
+    DEC BX                              ; AX = c, BX = c - 1
+    CMP BX, 1 
+    JE odd_sum_check                    ; c - 1 == 1 doğru ise asaldır, 
+    DIV BX
+    CMP DX, 0
+    JE non_prime_or_even_sum            ; AX / BX'den KALAN (DX) 0 ise asal değildir çünkü bir sayıya bölünmüştür düzgün
+    JMP prime_check
+
+odd_sum_check:
+    MOV AX, a
+    MOV BX, b
+    ADD AX, BX
+    TEST AX, 1                          ;AX'in LSB kontrol et eğer XXX1 ise tek XXX0 ise çifttir
+    JNZ prime_and_odd_sum_result
+    JMP non_prime_or_even_sum
+   
+    
+prime_and_odd_sum_result:
+    MOV SI, 0               
+    ; dizide aynı eleman var mı kontrolü
+check_duplicate_prime:
+    CMP SI, primeOddSumCount            ; dizinin tüm elemanlarını kontrol ettik mi kontrolü
+    JGE add_to_primeOddSum
+
+    MOV AX, primeOddSum[SI]      
+    CMP AX, CX                          ; dizideki eleman == eklemek istediğimiz eleman
+    JE skip_addition                    ; eşitlerse eklemeden dallan
+
+    ADD SI, 2                           ; sonraki elemana geç
+    JMP check_duplicate_prime
+
+add_to_primeOddSum:
+    MOV SI, primeOddSumCount
+    CMP SI, 30                          ; 15 elemanı aştımı kontrolü
+    JGE end_code
+
+    MOV primeOddSum[SI], CX             ; yeni değer ekle 
+    ADD primeOddSumCount, 2             ; bir eleman eklendiğinden eleman sayısını arttır
+    CMP a, 50                           ; a > 50 ise kodu bitir
+    JGE end_code
+    JMP b_loop                   
+
+non_prime_or_even_sum:
+    MOV SI, 0                           ; dizinin en başından başla
+    ; dizide aynı eleman var mı kontrolü
+check_duplicate_nonPrime:
+    CMP SI, nonPrimeOrEvenSumCount      ; her elemanı test ettik mi diye bak
+    JGE add_to_nonPrimeOrEvenSum 
+
+    MOV AX, nonPrimeOrEvenSum[SI]     
+    CMP AX, CX                          ; dizideki eleman elimizdeki elemana eşit mi kontrolü
+    JE skip_addition                    ; eşitse eklemeden dallan
+
+    ADD SI, 2                           ; sonraki elemana geç 
+    JMP check_duplicate_nonPrime      
+
+add_to_nonPrimeOrEvenSum:
+    MOV SI, nonPrimeOrEvenSumCount
+    CMP SI, 30                           ; dizi doldu mu diye bak dolduysa programı bitir
+    JGE end_code                       
+
+    MOV nonPrimeOrEvenSum[SI], CX      
+    ADD nonPrimeOrEvenSumCount, 2      
+    CMP a, 50                            ; a > 50 ise kod bitsin
+    JGE end_code
+    JMP b_loop                         
+    
+    ; eklemek istediğimiz eleman dizide varsa eklemeden geç
+skip_addition:
+    JMP b_loop
+
+end_code:
+    RET
+BASLA ENDP
+    ; data segment
+    a DW ?
+    b DW ?
+    c DW ?
+    n DW 15
+
+    primeOddSumCount DW 0
+    primeOddSum DW 15 DUP(?)
+
+    nonPrimeOrEvenSumCount DW 0
+    nonPrimeOrEvenSum DW 15 DUP(?)
+
+CODESG ENDS
+END BASLA
+

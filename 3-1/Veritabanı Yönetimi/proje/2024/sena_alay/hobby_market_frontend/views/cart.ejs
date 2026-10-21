@@ -1,0 +1,258 @@
+<%- include("header.ejs",{title:"Sepet" , activeTab: "cart" }) %>
+
+
+    <!-- Page Content -->
+    <div class="page-heading contact-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>sepet</h4>
+                        <h2 class="text-dark">sepetim</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-features d-block">
+        <div class="container">
+
+            <table class="table  table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Ürün Fotoğrafı</th>
+                        <th scope="col">Ürün Adı</th>
+                        <th scope="col">Fiyat</th>
+                        <th scope="col">Adet</th>
+                        <th scope="col">İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(const item of cart) { %>
+                        <tr id="_PID_<%=item.id %>">
+                            <td>
+                                <img src="http://165.227.132.99/api/<%=item.image%>" alt="" height="30px">
+                            </td>
+                            <td>
+                                <%=item.name %>
+                            </td>
+                            <td>
+                                <%=item.price %> ₺
+                            </td>
+                            <td class="pl-4">
+                                <span class=" font-weight-bold _qty" data-price="<%=item.price %>">
+                                    <%=item.qty %>
+                                </span>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger _decQty" data-pid="<%=item.id %>"> - </button>
+                                <button class="btn btn-success _incQty" data-pid="<%=item.id %>"> + </button>
+                                <button class="btn btn-secondary _removeItem" data-pid="<%=item.id %>"> Sil </button>
+                            </td>
+                        </tr>
+                        <%}%>
+
+
+                </tbody>
+            </table>
+
+            <br>
+            <hr>
+            <br>
+
+            <div>
+                <h4>
+
+                    Toplam :<span id="_total"> 12 </span> ₺
+                </h4>
+                <br>
+                <button class="btn btn-info" id="_orderBtn"> Satın Al </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/formsender.js"></script>
+
+    <script>
+        // qty change form handler
+
+        Array.from(document.getElementsByClassName("_decQty")).forEach(element => {
+            element.addEventListener("click", async (event) => {
+
+                let PID = (element.getAttribute('data-pid'));
+
+                let qty = GetCurrentQty(PID);
+                if (qty == 0) {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Zaten 0 adet var',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                    return;
+                }
+
+                var status = await FormSender.ChangeQty(PID, -1);
+
+                if (status) {
+                    OnQtyChange(PID, qty - 1);
+                } else {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Bir hata oluştu',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                }
+
+            });
+        })
+
+        Array.from(document.getElementsByClassName("_incQty")).forEach(element => {
+            element.addEventListener("click", async (event) => {
+
+                let PID = (element.getAttribute('data-pid'));
+
+                var status = await FormSender.ChangeQty(PID, 1);
+
+                if (status === true) {
+                    OnQtyChange(PID, GetCurrentQty(PID) + 1);
+                } else {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: status,
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                }
+
+            });
+        })
+
+        Array.from(document.getElementsByClassName("_removeItem")).forEach(element => {
+            element.addEventListener("click", async (event) => {
+
+                let PID = (element.getAttribute('data-pid'));
+
+                var status = await FormSender.DeleteFromCart(PID);
+
+                if (status) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Ürün sepetten silindi',
+                        icon: 'success',
+                        confirmButtonText: 'Tamam',
+                    })
+                    OnItemDelete(PID);
+                } else {
+                    Swal.fire({
+                        title: 'Hata!',
+                        text: 'Bir hata oluştu',
+                        icon: 'error',
+                        confirmButtonText: 'Tamam',
+                    })
+                }
+            });
+        })
+    </script>
+    <script>
+        GetCurrentQty = (PID) => {
+            return Number(document.getElementById("_PID_" + PID).querySelector("._qty").innerText);
+            CalculatePrice();
+        }
+        OnQtyChange = (PID, qty) => {
+            document.getElementById("_PID_" + PID).querySelector("._qty").innerText = qty;
+            CalculatePrice();
+        }
+        OnItemDelete = (PID) => {
+            document.getElementById("_PID_" + PID).remove();
+            CalculatePrice();
+        }
+        CalculatePrice = () => {
+            let total = 0;
+            Array.from(document.getElementsByClassName("_qty")).forEach(element => {
+                total += Number(element.innerText) * Number(element.getAttribute("data-price"));
+            })
+
+            document.getElementById("_total").innerText = total.toFixed(2);
+        }
+        document.onload += CalculatePrice();
+    </script>
+
+    <script>
+        // Add order
+        document.getElementById("_orderBtn").addEventListener("click", () => {
+            Swal.fire({
+                title: 'Sipariş vermek istediğinize emin misiniz?',
+                text: "Bu işlem geri alınamaz!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+
+                confirmButtonText: 'Evet, sipariş ver!',
+                cancelButtonText: 'Hayır, iptal et!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    FormSender.AddOrder().then(res => {
+                        if (res == true) {
+                            Swal.fire({
+                                title: 'Başarılı!',
+                                text: 'Siparişiniz alındı.',
+                                icon: 'success',
+                                confirmButtonText: 'Tamam',
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.href = "/cart";
+                                }
+                            })
+                        } else {
+                            Swal.fire({
+                                title: 'Hata!',
+                                text: 'Bir hata oluştu',
+                                icon: 'error',
+                                confirmButtonText: 'Tamam',
+                            })
+                        }
+                    });
+                }
+            })
+        })
+    </script>
+
+
+    <%- include("footer.ejs") %>
+
+
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/owl.js"></script>
+        <script src="assets/js/slick.js"></script>
+        <script src="assets/js/isotope.js"></script>
+        <script src="assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) { //declaring the array outside of the
+                if (!cleared[t.id]) { // function makes it static and global
+                    cleared[t.id] = 1; // you could use true and false, but that's more typing
+                    t.value = ''; // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+        </body>
+
+        </html>

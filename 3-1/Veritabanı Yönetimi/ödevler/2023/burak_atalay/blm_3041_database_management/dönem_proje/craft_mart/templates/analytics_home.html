@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+  <!-- Başlık ve açıklama -->
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">Analiz / İstatistik Ana Sayfası</h2>
+    <p class="text-muted">Aşağıdaki analiz bölümlerinden birini seçerek detaylı rapor ve istatistiklere ulaşabilirsiniz.</p>
+  </div>
+
+  <!-- Liste / Kart Grupları -->
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <div class="list-group list-group-flush">
+            <a href="{{ url_for('analytics_category_rating') }}"
+               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+              <span>
+                <i class="fas fa-star text-warning me-2"></i>
+                Kategori Ortalama Puanı
+              </span>
+              <i class="fas fa-arrow-right text-secondary"></i>
+            </a>
+            <a href="{{ url_for('analytics_my_top_selling') }}"
+               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+              <span>
+                <i class="fas fa-chart-line text-success me-2"></i>
+                En Çok Satan 5 Ürünüm
+              </span>
+              <i class="fas fa-arrow-right text-secondary"></i>
+            </a>
+            <a href="{{ url_for('analytics_min_rating') }}"
+               class="list-group-item list-group-item-action d-flex justify-content-between align-items-center py-3">
+              <span>
+                <i class="fas fa-filter text-info me-2"></i>
+                Belirli Puanın Üstündeki Ürünler
+              </span>
+              <i class="fas fa-arrow-right text-secondary"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,1 @@
+This code implements naive pattern search where you basically shift the pattern through the text one by one. It takes the size of the pattern and the text as input, and prints whether the pattern's position in the text or pattern not found message and also prints a basic graph for the time passed during calculation. 

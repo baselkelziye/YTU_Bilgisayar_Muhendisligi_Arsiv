@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mb-4">Sepetim</h2>
+{% if cart_items %}
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Ürün Adı</th>
+          <th>Fiyat</th>
+          <th>Adet</th>
+          <th>Ara Toplam</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in cart_items %}
+        <tr>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price }} TL</td>
+          <td>{{ item.quantity }}</td>
+          <td>{{ item.line_price }} TL</td>
+          <td>
+            <a href="{{ url_for('remove_from_cart', product_id=item.product_id) }}" 
+               class="btn btn-sm btn-danger">
+               <i class="fas fa-trash"></i> Kaldır
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+        <tr>
+          <td colspan="3" class="text-end"><strong>Toplam</strong></td>
+          <td><strong>{{ total_price }} TL</strong></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <a href="{{ url_for('checkout') }}" class="btn btn-primary">
+    <i class="fas fa-credit-card"></i> Satın Al
+  </a>
+{% else %}
+  <div class="alert alert-info">
+    Sepetinizde ürün bulunmuyor.
+  </div>
+{% endif %}
+{% endblock %}

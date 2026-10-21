@@ -1,0 +1,114 @@
+$date
+	Sat Apr 27 15:26:32 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module instruction_based_testbench $end
+$var wire 1 ! alu_zero $end
+$var wire 32 " alu_result [31:0] $end
+$var reg 5 # alu_control [4:0] $end
+$var reg 1 $ mem_read $end
+$var reg 1 % mem_write $end
+$var reg 32 & pc [31:0] $end
+$var reg 32 ' read_data1 [31:0] $end
+$var reg 32 ( read_data2 [31:0] $end
+$scope module DUT $end
+$var wire 5 ) alu_control [4:0] $end
+$var wire 32 * input1 [31:0] $end
+$var wire 32 + input2 [31:0] $end
+$var wire 1 ! zero $end
+$var parameter 5 , ALU_ADD $end
+$var parameter 5 - ALU_ADDI $end
+$var parameter 5 . ALU_AND $end
+$var parameter 5 / ALU_ANDI $end
+$var parameter 5 0 ALU_LUI $end
+$var parameter 5 1 ALU_OR $end
+$var parameter 5 2 ALU_ORI $end
+$var parameter 5 3 ALU_SLL $end
+$var parameter 5 4 ALU_SLT $end
+$var parameter 5 5 ALU_SLTI $end
+$var parameter 5 6 ALU_SRA $end
+$var parameter 5 7 ALU_SRL $end
+$var parameter 5 8 ALU_SUB $end
+$var reg 32 9 result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 8
+b1011 7
+b1100 6
+b110 5
+b101 4
+b1010 3
+b1001 2
+b100 1
+b1101 0
+b1000 /
+b11 .
+b111 -
+b1 ,
+$end
+#0
+$dumpvars
+b11110 9
+b10100 +
+b1010 *
+b1 )
+b10100 (
+b1010 '
+b0 &
+0%
+0$
+b1 #
+b11110 "
+0!
+$end
+#10000
+b1111 "
+b1111 9
+b10 #
+b10 )
+b1111 (
+b1111 +
+b11110 '
+b11110 *
+#20000
+b10001000 "
+b10001000 9
+b11 #
+b11 )
+b11001100 (
+b11001100 +
+b10101010 '
+b10101010 *
+#30000
+b11101110 "
+b11101110 9
+b100 #
+b100 )
+#40000
+b1 "
+b1 9
+b101 #
+b101 )
+b10100 (
+b10100 +
+b1010 '
+b1010 *
+#50000
+1!
+b0 "
+b0 9
+b110 #
+b110 )
+b1100100 (
+b1100100 +
+b1100100 '
+b1100100 *
+#60000

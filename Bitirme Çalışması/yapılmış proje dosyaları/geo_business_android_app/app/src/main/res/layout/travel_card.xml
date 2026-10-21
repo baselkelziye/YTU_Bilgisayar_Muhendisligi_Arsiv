@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardElevation="20dp"
+    card_view:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:backgroundTint="@color/yellow"
+    tools:ignore="MissingClass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_id"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_id"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_travelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_username"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_travelDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_username"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_startLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_travelDate"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_startLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_travelDate"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_endLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_startLocation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_endLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_startLocation"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_invoiceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_endLocation"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_invoiceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_endLocation"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_invoicePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_invoiceInfo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_invoicePrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_invoiceInfo"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_invoicePrice"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_invoicePrice"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/gray" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/travel_cv_approveDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_cv_status"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cardcolor"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/travel_tv_approveDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/travel_tv_status"
+                android:layout_marginTop="20dp"
+                android:textAlignment="textStart"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/gray"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

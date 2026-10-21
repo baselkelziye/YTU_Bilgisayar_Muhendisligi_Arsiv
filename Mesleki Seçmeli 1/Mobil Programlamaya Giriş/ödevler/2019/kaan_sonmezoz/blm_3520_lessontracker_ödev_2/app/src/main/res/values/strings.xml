@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Lesson Tracker</string>
+    <string name="nameHint">Name</string>
+    <string name="surnameHint">Surname</string>
+    <string name="idHint">ID Number</string>
+    <string name="phoneNumberHint">Phone</string>
+    <string name="birtdateHint">Birth Date</string>
+    <string name="birthplaceHint">Birth Place</string>
+    <string name="submitButton">SUBMIT</string>
+    <string name="clearButton">CLEAR ALL</string>
+    <string name="addPhotoDescription">ADD PHOTO</string>
+    <string name="addPhotoExistingPhoto">EXISTING PHOTO</string>
+    <string name="addPhotonNewPhoto">NEW PHOTO</string>
+    <string name="navbar_lessons">Lessons</string>
+    <string name="navbar_information">Information</string>
+    <string name="newLesson">ADD</string>
+    <string name="newLessonDialog">New Lesson</string>
+    <string name="cancelNewLesson">CANCEL</string>
+    <string name="next">NEXT</string>
+    <string name="enrolledStudentHint">Enrolled Students</string>
+    <string name="capacityStudentHint">Student Capacity</string>
+    <string name="aveGrade">Average Grade Letter</string>
+    <string name="aveFloatGrade">Average Grade</string>
+    <string name="instructor">Instructor</string>
+    <string name="lessonCodeHint">Lesson Code</string>
+    <string name="lessonNameHint">Lesson Name</string>
+    <string name="studentGrade">Student Grade</string>
+    <string name="mailAddressHint">E-Mail</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

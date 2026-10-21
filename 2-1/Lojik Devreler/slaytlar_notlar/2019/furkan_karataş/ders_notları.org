@@ -1,0 +1,35 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Lojik Devreler
+** Ders Bilgisi
+*** Dersin İçeriği
+
+Sayı Sistemleri; Boole Cebri; Lojik Fonksiyonların İndirgenmesi; Karnaugh Haritaları;
+Quine-McClusky Yöntemi; Kombinezonal Devre Analizi; Kombinezonal Devre Tasarımı;
+Senkron ve Asenkron Devre Yapıları; Ardışıl Devre Analizi; Ardışıl Devre Tasarımı;
+Saklayıcılar, Sayıcılar, Bellekler.
+
+*** Haftalık Konular ve İlgili Ön Hazırlık Çalışmaları
+
+| Hafta | Konular                                                                             |
+|-------+-------------------------------------------------------------------------------------|
+| <c>   | <l>                                                                                 |
+| 1     | Sayısal sistemlerin genel özellikleri                                               |
+| 2     | Boole cebrinin temelleri                                                            |
+| 3     | Lojik fonksiyonlar, kanonik ve standart biçimler                                    |
+| 4     | Lojik kapılar, lojik fonksiyonlarin sadeleştirilmesi                                |
+| 5     | Karnaugh haritaları/diyagramları, Quine –McCluskey yöntemi                          |
+| 6     | Kombinezonsal devreler, aritmetik toplama çıkarma devreleri, seçiciler, dağıtıcılar |
+| 7     | Kod çözücüler, kodlayıcılar, ALU tasarımı, 7–parçalı gösterge                       |
+| 8     | Ardışıl devre temelleri                                                             |
+| 9     | Ara Sınav 1                                                                         |
+| 10    | Ardışıl devrelerin durum tablosu, durum diyagramı ve sonlu durum makineleri         |
+| 11    | Flip-Flop’lar: D, T, SR, JK,flip-flopları, tutucular                                |
+| 12    | Ardışıl devrelerin çözümlenmesi                                                     |
+| 13    | Ardışıl devrelerin tasarımı                                                         |
+| 14    | Saklayıcılar, sayıcılar, bellekler, programlanabilir ardışıl devreler               |
+| 15    | Final                                                                               |
+

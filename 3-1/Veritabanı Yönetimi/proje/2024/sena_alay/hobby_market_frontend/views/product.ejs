@@ -1,0 +1,133 @@
+<%- include("header.ejs",{title:product.name, activeTab: "" }) %>
+
+    <!-- Page Content -->
+    <div class="page-heading about-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h4>Ürün bilgileri</h4>
+                        <h2>
+                            <%=product.name%>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="best-features about-features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h3>
+                            <%=product.name%>
+
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="http://165.227.132.99/api/<%=product.image%>" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="left-content">
+                        <h5>
+                            <%=product.description%>
+                                <%=product.description%>
+                        </h5>
+                    </div>
+                    <div class="mt-5">
+                        Stok : <%=product.stock%>
+                            <br>
+                            Satılan : <%=product.sold%>
+                                <br>
+                                <button class="btn btn-success" id="AddToCartBtn" data-productId="<%=product.id%>">Sepete Ekle</button>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <div class="border-top mt-5">
+                        <% for(const comment of product.comments){%>
+                            <div class="card my-2 p-3">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <%=comment.fullname%>
+                                    </h5>
+                                    <p class="card-text">
+                                        <%=comment.comment%>
+                                    </p>
+                                    <div>
+                                        <ul class="stars d-flex">
+                                            <% for(let i=0;i<comment.stars;i++){%>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <%} %>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <%} %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/formsender.js"></script>
+
+    <%- include("footer.ejs") %>
+
+        <script>
+            document.getElementById("AddToCartBtn").addEventListener("click", e => OnAddToCartRun(e));
+            function OnAddToCartRun(event) {
+                const productId = event.target.getAttribute('data-productId');
+
+                console.log(productId);
+
+                FormSender.AddToCart(productId, 1).then(res => {
+                    if (res == true) {
+                        Swal.fire({
+                            title: 'Başarılı!',
+                            text: 'Ürün başarıyla sepete eklendi.',
+                            icon: 'success',
+                            confirmButtonText: 'Tamam'
+                        })
+                    } else {
+                        alert("Ürün sepete eklenemedi.");
+                    }
+                });
+            }
+        </script>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+        <!-- Additional Scripts -->
+        <script src="/assets/js/custom.js"></script>
+        <script src="/assets/js/owl.js"></script>
+        <script src="/assets/js/slick.js"></script>
+        <script src="/assets/js/isotope.js"></script>
+        <script src="/assets/js/accordions.js"></script>
+
+
+        <script language="text/Javascript">
+            cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+            function clearField(t) {                   //declaring the array outside of the
+                if (!cleared[t.id]) {                      // function makes it static and global
+                    cleared[t.id] = 1;  // you could use true and false, but that's more typing
+                    t.value = '';         // with more chance of typos
+                    t.style.color = '#fff';
+                }
+            }
+        </script>
+
+
+        </body>
+
+        </html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="x-ua-compatible">
+    <title>@ViewBag.Title - Bugunnereyegitsek.com</title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/site/assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- CSS here -->
+    <link rel="stylesheet" href="~/Content/site/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/animate.min.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/flatpicker.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/odometer.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/default.css">
+    <link rel="stylesheet" href="~/Content/site/assets/css/main.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+    <!-- Scroll-top -->
+    <button class="scroll__top scroll-to-target" data-target="html">
+        <i class="fa-sharp fa-regular fa-arrow-up"></i>
+    </button>
+
+    <main>
+        @RenderBody()
+    </main>
+
+
+    <!-- footer-area-start -->
+
+    <!-- footer-area-end -->
+    @RenderSection("Scripts", required: false)
+    <script src="~/Content/site/assets/js/vendor/jquery.js"></script>
+    <script src="~/Content/site/assets/js/bootstrap.min.js"></script>
+    <script src="~/Content/site/assets/js/isotope.pkgd.min.js"></script>
+    <script src="~/Content/site/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/Content/site/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/site/assets/js/jquery.odometer.min.js"></script>
+    <script src="~/Content/site/assets/js/jquery.appear.js"></script>
+    <script src="~/Content/site/assets/js/swiper-bundle.min.js"></script>
+    <script src="~/Content/site/assets/js/flatpickr.js"></script>
+    <script src="~/Content/site/assets/js/nice-select.js"></script>
+    <script src="~/Content/site/assets/js/ajax-form.js"></script>
+    <script src="~/Content/site/assets/js/wow.min.js"></script>
+    <script src="~/Content/site/assets/js/main.js"></script>
+</body>
+</html>

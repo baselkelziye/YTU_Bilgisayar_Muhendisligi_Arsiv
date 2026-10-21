@@ -1,0 +1,104 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+noname.exe -- emu8086 assembler version: 4.08  
+ 
+[ 15/11/2022  --  14:37:43 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       mydata segment para 'data'
+[   2]    0000: 03 00                                 kenar1 dw 3
+[   3]    0002: 04 00                                 kenar2 dw 4
+[   4]    0004: 05 00                                 kenar3 dw 5
+[   5]    0006: 00 00                                 sonuc dw ?
+[   6]        :                                       ends
+[   7]        :                                       
+[   8]        :                                       mystack segment para stack 'stack'
+[   9]    0010: 00 00 00 00 00 00 00 00 00 00 00 00   dw   20  dup(?)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00                         
+[  10]        :                                       ends
+[  11]        :                                       
+[  12]        :                                       mycode segment para 'code'
+[  13]        :                                       assume cs:mycode,ss:mystack,ds:mydata
+[  14]    0040:                                       MAIN proc far
+[  15]    0040: 1E                                    push ds
+[  16]    0041: 33 C0                                 xor ax,ax
+[  17]    0043: 50                                    push ax
+[  18]    0044: B8 00 00                              mov ax,mydata
+[  19]    0047: 8E D8                                 mov ds,ax
+[  20]    0049: A1 00 00                              mov ax,kenar1
+[  21]    004C: 8B 1E 02 00                           mov bx,kenar2
+[  22]    0050: 3B C3                                 cmp ax,bx
+[  23]    0052: 8B 1E 04 00                           mov bx,kenar3
+[  24]    0056: 75 0C                                 jnz false1
+[  25]    0058: 3B C3                                 cmp ax,bx
+[  26]    005A: 75 16                                 jnz ikizKenar
+[  27]    005C: B8 01 00                              mov ax,1
+[  28]    005F: A3 06 00                              mov sonuc,ax
+[  29]    0062: EB 14                                 jmp bitis
+[  30]    0064: 3B C3                                 false1:cmp ax,bx
+[  31]    0066: 75 02                                 jnz cesitkenar
+[  32]    0068: EB 08                                 jmp ikizkenar
+[  33]    006A: B8 03 00                              cesitkenar:mov ax,3
+[  34]    006D: A3 06 00                              mov sonuc,ax
+[  35]    0070: EB 06                                 jmp bitis
+[  36]    0072: B8 02 00                              ikizkenar:mov ax,2
+[  37]    0075: A3 06 00                              mov sonuc,ax
+[  38]    0078:                                       bitis:
+[  39]    0078: CB                                    retf
+[  40]        :                                       endp
+[  41]        :                                       ends
+[  42]        :                                       end MAIN
+[  43]        :                                       
+[  44]        :                                       
+[  45]        :                                       
+[  46]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: 79      -   bytes on last page (l.byte)
+0003: 00      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 01      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 28      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 56      -   check sum (l.byte)
+0013: 2D      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 04      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 05      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 04      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+
+      <!-- Başlık -->
+      <div class="text-center mb-4">
+        <h3 class="fw-bold">Belirli Puanın Üstündeki Ürünler</h3>
+        <p class="text-muted mb-0">Girdiğiniz minimum puanın üstündeki ürünleri listeleyin.</p>
+      </div>
+
+      <!-- Filtre Formu Kartı -->
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <form method="POST" class="row g-3 align-items-end">
+            <div class="col-md-4">
+              <label for="min_rating" class="form-label fw-semibold">Min. Puan</label>
+              <input 
+                type="number" 
+                step="0.1" 
+                name="min_rating" 
+                id="min_rating" 
+                value="{{ min_rating }}" 
+                class="form-control"
+                required
+              >
+            </div>
+            <div class="col-md-4">
+              <label for="limit_val" class="form-label fw-semibold">Kaç Ürün Gösterilsin?</label>
+              <input 
+                type="number"
+                name="limit_val" 
+                id="limit_val" 
+                value="{{ limit_val }}" 
+                class="form-control"
+                required
+              >
+            </div>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-warning w-100">
+                <i class="fas fa-search me-1"></i>Listele
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sonuç Tablosu -->
+      {% if results and results|length > 0 %}
+        <div class="card mt-4 shadow border-0">
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-bordered table-striped table-hover mb-0">
+                <thead class="table-dark">
+                  <tr>
+                    <th>ID</th>
+                    <th>Ürün Adı</th>
+                    <th>Fiyat</th>
+                    <th>Puan</th>
+                    <th>Satıcı</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for prod in results %}
+                  <tr>
+                    <td>{{ prod.product_id }}</td>
+                    <td>{{ prod.name }}</td>
+                    <td>{{ prod.price }}</td>
+                    <td>{{ "%.2f"|format(prod.rating) }}</td>
+                    <td>{{ prod.seller_id }}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      {% elif results is defined %}
+        <div class="alert alert-info mt-3 shadow">
+          <i class="fas fa-info-circle me-1"></i> Bu puanın üzerinde ürün bulunamadı.
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

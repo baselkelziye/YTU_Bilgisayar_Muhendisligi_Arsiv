@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">16011609</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_left_for_register">Swipe Left for Register</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="tag">BLM3520 - Introduction to Mobile Programming - Assignment 2</string>
+    <string name="swipe_right_for_login">Swipe Right for Login</string>
+    <string name="register">Register</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="your_name">Full Name</string>
+    <string name="menu_title">Activities Menu</string>
+    <string name="login_activity">Login Activity</string>
+    <string name="email_activity">Email Activity</string>
+    <string name="list_activity">User List Activity</string>
+    <string name="settings_activity">User Settings Activity</string>
+    <string name="note_activity">Note Activity</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="content">Content</string>
+    <string name="send">Send</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_note">NoteActivity</string>
+</resources>

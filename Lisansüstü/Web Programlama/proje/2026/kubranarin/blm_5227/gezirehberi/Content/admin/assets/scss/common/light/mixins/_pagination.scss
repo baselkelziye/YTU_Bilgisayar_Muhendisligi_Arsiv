@@ -1,0 +1,18 @@
+// Pagination variations
+@mixin pagination-variants($color) {
+  .page-item {
+    &.active {
+      .page-link {
+        background: $color;
+        border-color: $color;
+      }
+    }
+    &:hover {
+      .page-link {
+        background: lighten($color,5%);
+        border-color: $color;
+        color: $white;
+      }
+    }
+  }
+}

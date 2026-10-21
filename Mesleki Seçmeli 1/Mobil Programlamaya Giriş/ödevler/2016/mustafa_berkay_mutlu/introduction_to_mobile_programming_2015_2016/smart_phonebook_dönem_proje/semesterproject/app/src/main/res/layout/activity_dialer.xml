@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="berkay.ders.mobilprogramlama.semesterproject.activity.DialerActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_dialerActivity_phoneNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/editText_dialerActivity_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phone_number"
+            android:textSize="32sp"/>
+
+        <Button
+            android:id="@+id/button_dialerActivity_clear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/ic_backspace_black_48dp"
+            android:onClick="button_dialerActivity_clear_onClick"
+            android:longClickable="true"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/frameLayout_dialerActivity_phoneNumber"
+        android:layout_above="@+id/button_dialerActivity_call"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dialerActivity_firstRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="1"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="2"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="3"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dialerActivity_secondRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout_dialerActivity_firstRow"
+            android:layout_marginTop="10dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="4"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="5"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="6"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dialerActivity_thirdRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout_dialerActivity_secondRow"
+            android:layout_marginTop="10dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="7"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="8"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="9"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_dialerActivity_fourthRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayout_dialerActivity_thirdRow"
+            android:layout_marginTop="10dp">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButtonAsterisk"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="*"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButton0"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="0"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_dialerActivity_dialButtonSharp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                fancy:fb_text="#"
+                fancy:fb_radius="40dp"
+                fancy:fb_textSize="28sp"
+                fancy:fb_defaultColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button_dialerActivity_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fancy:fb_text="@string/button_call"
+        fancy:fb_radius="20dp"
+        fancy:fb_textSize="30sp"
+        android:layout_alignParentBottom="true"
+        fancy:fb_defaultColor="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:onClick="button_dialerActivity_call_onClick"/>
+
+</RelativeLayout>

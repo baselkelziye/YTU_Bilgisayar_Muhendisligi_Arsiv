@@ -1,0 +1,35 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* Sinyaller ve Sistemler
+** Ders Bilgisi
+*** Dersin İçeriği
+
+Temel konseptlere giriş; Sinyaller ve Sistemler; Doğrusal ve Zamanla Değişmeyen Sistemler;
+Sürekli Zamanlı Sistemlerin Zaman Bölgesi Analizleri; Ayrık Zamanlı Sistemlerin Zaman Bölgesi Analizleri;
+Sürekli Zamanlı Fourier Serisi; Ayrık Fourier Dönüşümü; Sürekli Zamanlı Fourier Dönüşümü;
+Bazı Fonksiyonların Fourier Dönüşümleri; Örnekleme ve Yeniden-kurma; Laplace Dönüşümü; z-Dönüşümü.
+
+*** Haftalık Konular ve İlgili Ön Hazırlık Çalışmaları
+
+| Hafta | Konular                                                                                                                                                                                                                                                                                             |
+|-------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <c>   | <l>                                                                                                                                                                                                                                                                                                 |
+| 1     | Sinyaller ve Sistemlere genel bakış / Sürekli zamanlı sinyaller / Ayrık zamanlı sinyaller / Sistemler / Sistem örnekleri / Temel sistem özellikleri / Sinüzoidler ve karmaşık sinüzoidler                                                                                                           |
+| 2     | Spektrum gösterimi / Fourier Serisi analizi ve sentezi / Fourier Serisi’nin üç gösterimi / Zaman-Frekans spektrumu                                                                                                                                                                                  |
+| 3     | Sürekli Fourier Dönüşümü / Fourier Dönüşümünün özellikleri / Belirli sinyallerin spektral içeriği                                                                                                                                                                                                   |
+| 4     | Sürekli zaman sistemlerinin Fourier Analizi / Periyodik ve periyodik olmayan girişlere yanıt / Sürekli zaman filtreleri / Frekans cevabı / Fourier Dönüşümü özelliklerini kullanmaya yönelik örnekler                                                                                               |
+| 5     | Sürekli zamanlı sinyallerin örneklenmesi / Örnekleme ve örtüşme kavramları / Örnekleme ve geri çatma kavramlarının spektrum yaklaşımı / Ayrıktan sürekliye dönüşüm / Örnekleme Teoremi                                                                                                              |
+| 6     | Sürekli Zaman Sistem Analizi / Sürekli zamanlı evrişim / Sürekli Zaman transfer fonksiyonu ve frekans cevabı / Frekans cevabını görselleştirmek için sürekli zaman Bode diyagramları.                                                                                                               |
+| 7     | Evrişim ve frekans cevabı ile ilgili örnekler                                                                                                                                                                                                                                                       |
+| 8     | Sürekli zaman Laplace Dönüşümü / Laplace Dönüşümü özellikleri ve tablosu / Ters Laplace Dönüşümünün hesaplanması                                                                                                                                                                                    |
+| 9     | Ara Sınav 1                                                                                                                                                                                                                                                                                         |
+| 10    | Ayrık-Zamanlı Sistemler / Genel FIR Filtresi / FIR Filtrelerinin Uygulanması / Lineer Zamanla Değişmez (LZD) Sistemler / Evrişim ve LZD sistemler / Kademeli LZD sistemler                                                                                                                          |
+| 11    | FIR sistemlerinin sinüzoidal yanıtları / Kararlı durum ve geçici yanıt / Frekans cevabının özellikleri / Frekans cevabının grafik temsili                                                                                                                                                           |
+| 12    | z-Dönüşümü / z-Dönüşümü ve doğrusal sistemlerin tanımı / z-Dönüşümün özellikleri / z-uzayı ile frekans uzayı arasındaki ilişki                                                                                                                                                                      |
+| 13    | Ara Sınav 2                                                                                                                                                                                                                                                                                         |
+| 14    | Genel IIR Fark Denklemi / Zaman-uzayı cevabı / IIR Filtrenin sistem fonksiyonu / Kutuplar ve sıfırlar /IIR Filtresinin Frekans Tepkisi / Ters z-Dönüşümü ve bazı uygulamalar / Kararlı durum tepkisi ve kararlılık / İkinci dereceden filtreler / İkinci dereceden IIR filtrelerinin frekans cevabı |
+| 15    | Final                                                                                                                                                                                                                                                                                               |
+

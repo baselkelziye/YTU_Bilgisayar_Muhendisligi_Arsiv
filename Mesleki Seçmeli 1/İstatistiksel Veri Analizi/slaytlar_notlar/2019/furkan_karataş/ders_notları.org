@@ -1,0 +1,36 @@
+#+TITLE: YTU CE
+#+SETUPFILE: theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+OPTIONS: \n:t
+#+AUTHOR: Furkan Karataş
+* İstatistiksel Veri Analizi
+** Ders Bilgisi
+*** Dersin İçeriği
+
+Temel istatistiksel kavramlar, tanımlayıcı istatistik, şartlı olasılık, rasgele değişkenler,
+tahmin-ayrık-sürekli olasılık modeller, birleşik ve örnek dağılımlar, hipotez testi, güven aralıkları,
+karmaşıklık matrisi, mantıksal regresyon, doğrusal ve çoklu regresyon ve test teknikleri.
+
+*** Haftalık Konular ve İlgili Ön Hazırlık Çalışmaları
+
+| Hafta | Konular                                                                                                                                                                                                                                                                         |
+|-------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <c>   | <l>                                                                                                                                                                                                                                                                             |
+| 1     | Giriş - Bilimsel Araştırmalar Bağlamında İstatistiksel Yöntemler. Örnekleme. Gözlemsel Çalışmalar ve Deneyler. Veri Keşfi ve Analiz. İstatiksel Çıkarım. R kullanarak hesaplama.                                                                                                |
+| 2     | Veri Keşfi - Veri Görselleştirme ve Özet İstatistik. Değişken Türleri. Kategorik Değişkenleri Keşfetmek. Nümerik Değişkenleri Keşfetmek. Veri Önişleme.                                                                                                                         |
+| 3     | İlişkileri Keşfetmek - Değişkenler Arasındaki İlişkileri Görselleştirme ve Özetleme. İki Sayısal Rastgele Değişken Arasındaki İlişkiler. Kategorik Değişkenler Arasındaki İlişkiler. Sayısal ve Kategorik Değişkenler Arasındaki İlişkiler.                                     |
+| 4     | Olasılık - Belirsizlik Ölçütü Olarak Olasılık. Tümleyen, Birleşim ve Kesişim. Ayrık Etkinlikler. Şartlı Olasılıklar. Bağımsız Etkinlikler. Bayes Teoremi.                                                                                                                       |
+| 5     | Rastgele Değişkenler ve Olasılık Dağılımları - Rassal Değişkenler. Olasılık Dağılımları. Kümülatif Dağılım İşlevi ve quantile.                                                                                                                                                  |
+| 6     | Tahmin - Parametre Tahmini. Nokta Tahmini. Örnekleme dağılımı. Güvenilirlik Aralığı. Hata Marjı.                                                                                                                                                                                |
+| 7     | Hipotez Testi - Popülasyon Ortalamasına İlişkin Hipotez Testleri. İstatistiksel Anlamlılık. t-testlerini kullanarak hipotez testi. Popülasyon Oranı için Hipotez Testi.                                                                                                         |
+| 8     | İki Değişken Arasındaki İlişkinin İstatistiksel Çıkarımı - Bir Sayısal Değişken ile İkili Değişken Arasındaki İlişki. İki ikili Değişken Arasındaki İlişki Üzerinde Çıkarım. İki Nümerik Değişken Arasındaki Doğrusal İlişki ile İlgili Çıkarım.                                |
+| 9     | Ara Sınav 1                                                                                                                                                                                                                                                                     |
+| 10    | Varyans Analizi (ANOVA) - Giriş. ANOVA Varsayımları.                                                                                                                                                                                                                            |
+| 11    | Kategorik Değişkenlerin Analizi - Bir Kategorik Değişken İçin Pearson'un χ2 Testi. Pearson'un χ2 Bağımsızlık Testi. Durum Tabloları.                                                                                                                                            |
+| 12    | Regresyon Analizi - Tek İkili Açıklayıcı Değişkenli Doğrusal Regresyon Modelleri. Basit Doğrusal Regresyon Modellerini Kullanan İstatistiksel Çıkarım. Tek Sayısal Açıklayıcı Değişkenli Doğrusal Regresyon Modelleri. Model Varsayımları ve Teşhisi. Çoklu Doğrusal Regresyon. |
+| 13    | Kümeleme - K-means Kümeleme. Hiyerarşik Kümeleme. Kümelemeden Önce Değişkenleri Standartlaştırma.                                                                                                                                                                               |
+| 14    | Bayes Analizi - Giriş. Önceki ve Sonraki Olasılıklar. Bayes çıkarımı. Tahmin. Hipotez testi.                                                                                                                                                                                    |
+| 15    | Final                                                                                                                                                                                                                                                                           |
+
+
+

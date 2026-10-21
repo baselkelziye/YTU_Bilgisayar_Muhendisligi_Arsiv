@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="BA" for="node" attr.name="base_addr" attr.type="string"/>
+  <key id="BP" for="node" attr.name="base_param" attr.type="string"/>
+  <key id="EH" for="edge" attr.name="edge_hid" attr.type="int"/>
+  <key id="HA" for="node" attr.name="high_addr" attr.type="string"/>
+  <key id="HP" for="node" attr.name="high_param" attr.type="string"/>
+  <key id="MA" for="node" attr.name="master_addrspace" attr.type="string"/>
+  <key id="MX" for="node" attr.name="master_instance" attr.type="string"/>
+  <key id="MI" for="node" attr.name="master_interface" attr.type="string"/>
+  <key id="MS" for="node" attr.name="master_segment" attr.type="string"/>
+  <key id="MV" for="node" attr.name="master_vlnv" attr.type="string"/>
+  <key id="TM" for="node" attr.name="memory_type" attr.type="string"/>
+  <key id="SX" for="node" attr.name="slave_instance" attr.type="string"/>
+  <key id="SI" for="node" attr.name="slave_interface" attr.type="string"/>
+  <key id="SS" for="node" attr.name="slave_segment" attr.type="string"/>
+  <key id="SV" for="node" attr.name="slave_vlnv" attr.type="string"/>
+  <key id="TU" for="node" attr.name="usage_type" attr.type="string"/>
+  <key id="VH" for="node" attr.name="vert_hid" attr.type="int"/>
+  <key id="VM" for="node" attr.name="vert_name" attr.type="string"/>
+  <key id="VT" for="node" attr.name="vert_type" attr.type="string"/>
+  <graph id="G" edgedefault="undirected" parse.nodeids="canonical" parse.edgeids="canonical" parse.order="nodesfirst">
+    <node id="n0">
+      <data key="BA">0x41210000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x4121FFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_Enable_Reg</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/Enable</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">Reg</data>
+      <data key="SV">xilinx.com:ip:axi_gpio:2.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n1">
+      <data key="BA">0x41200000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x4120FFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_counter_Reg</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/counter</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">Reg</data>
+      <data key="SV">xilinx.com:ip:axi_gpio:2.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <node id="n2">
+      <data key="TU">active</data>
+      <data key="VH">2</data>
+      <data key="VT">PM</data>
+    </node>
+    <node id="n3">
+      <data key="VM">BlockDesign</data>
+      <data key="VT">BC</data>
+    </node>
+    <node id="n4">
+      <data key="VH">2</data>
+      <data key="VM">BlockDesign</data>
+      <data key="VT">VR</data>
+    </node>
+    <node id="n5">
+      <data key="BA">0x41220000</data>
+      <data key="BP">C_BASEADDR</data>
+      <data key="HA">0x4122FFFF</data>
+      <data key="HP">C_HIGHADDR</data>
+      <data key="MA">Data</data>
+      <data key="MX">/processing_system7_0</data>
+      <data key="MI">M_AXI_GP0</data>
+      <data key="MS">SEG_Reset_Reg</data>
+      <data key="MV">xilinx.com:ip:processing_system7:5.5</data>
+      <data key="TM">both</data>
+      <data key="SX">/Reset</data>
+      <data key="SI">S_AXI</data>
+      <data key="SS">Reg</data>
+      <data key="SV">xilinx.com:ip:axi_gpio:2.0</data>
+      <data key="TU">register</data>
+      <data key="VT">AC</data>
+    </node>
+    <edge id="e0" source="n3" target="n4"/>
+    <edge id="e1" source="n4" target="n2"/>
+    <edge id="e2" source="n1" target="n2">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e3" source="n0" target="n2">
+      <data key="EH">2</data>
+    </edge>
+    <edge id="e4" source="n5" target="n2">
+      <data key="EH">2</data>
+    </edge>
+  </graph>
+</graphml>

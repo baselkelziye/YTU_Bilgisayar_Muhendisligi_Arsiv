@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">TrainR</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="needInternet">You need internet connection to see this page!</string>
+
+
+    <string name="action_settings">Settings</string>
+    <array name="testArray">
+        <item>berkay</item>
+        <item>berkay</item>
+        <item>berkay</item>
+        <item>berkay</item>
+        <item>berkay</item>
+        <item>berkay</item>
+        <item>berkay</item>
+    </array>
+    <string name="title_activity_base_drawer">BaseDrawerActivity</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!--Comment Strings-->
+    <array name="ratings">
+        <item>" 0 "</item>
+        <item>" 1 "</item>
+        <item>" 2 "</item>
+        <item>" 3 "</item>
+        <item>" 4 "</item>
+        <item>" 5 "</item>
+
+    </array>
+
+    <!--Filter page strings-->
+    <string name="programTitleSearch">Program Title:</string>
+    <string name="trainerQuery">Trainer:</string>
+    <string name="categorySearchSelection">Category:</string>
+    <string name="hardnessSearchSelection">Hardness:</string>
+    <string name="sortBySelection">Sort By:</string>
+    <string name="buttonCancel">Cancel</string>
+    <string name="buttonApply">Filter</string>
+    <string name="all">All</string>
+    <array name="sortBy">
+        <item>Latest</item>
+        <item>Lowest Price</item>
+        <item>Highest Price</item>
+        <item>Title</item>
+        <item>Trainer</item>
+    </array>
+    <array name="hardness">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+
+    </array>
+
+    <!--Body Rates-->
+    <string name="tall">Tall (cm): </string>
+    <string name="weight">Weight (kg): </string>
+    <string name="muscleRate">Muscle (%): </string>
+    <string name="fatRate">Fat (%): </string>
+    <string name="waterRate">Water (%): </string>
+    <string name="update">Update</string>
+    <string name="addNew">Add New</string>
+    <string name="send">Send</string>
+
+    <!--program detay sayfası değişkenleri-->
+    <string name="buythisprogram">Buy This Program</string>
+    <string name="indir">Download</string>
+    <string name="indirildi">In Library!</string>
+    <string name="baslat">Workout!</string>
+    <string name="aboutTrainer">About Trainer</string>
+    <string name="bannedProgram">Banned Program</string>
+
+    <!--profil detay sayfası değişkenleri-->
+    <string name="bodyRates">Body Rates</string>
+    <string name="myPrograms">My Programs</string>
+    <string name="downloadedPrograms">Downloaded Programs</string>
+    <string name="editDetails">Edit Details</string>
+    <string name="updateDetails">Update Details</string>
+
+    <string name="infoPrivateProfile">If you make your profile private you will hide your full name and photo.</string>
+    <string name="privateProfile">Private Profile</string>
+    <string name="thisisprivateprofile">Your profile is private. Click to learn more</string>
+
+    <!--trainer detail page-->
+    <string name="trainersPrograms">Trainer\'s Programs</string>
+    <string name="trainersCertificates">Trainer\'s Certificates</string>
+
+    <string name="bio">Bio</string>
+    <string name="intro">Intro</string>
+    <string name="trainerdidntenteranything">Trainer didn\'t enter anything yet.</string>
+
+
+    <string name="allListingsButton">See All Programs</string>
+    <string name="allTrainersButton">See All Trainers</string>
+
+    <!--Register Page-->
+    <string name="privateprofile">Private Profile</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="email">E-mail</string>
+    <string name="currentpassword">Current Password</string>
+    <string name="password">Password</string>
+    <string name="passwordAgain">Password (again)</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="createnewAccount">Create New Account</string>
+    <string name="continueWithoutLogin">Continue without login</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="passwordsMustbeSame">Passwords Must Be Same!</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_program_review">ProgramReview</string>
+
+
+</resources>

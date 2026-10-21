@@ -1,0 +1,1 @@
+In this project, it is aimed to understand different filters and how their effects change on images according to their sizes. Gauss, Sobel and Laplacian filters are used. The souce code is written in C language to better understand how the convolution process works. 

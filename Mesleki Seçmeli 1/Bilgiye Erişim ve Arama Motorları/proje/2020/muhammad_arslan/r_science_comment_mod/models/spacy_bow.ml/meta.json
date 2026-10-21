@@ -1,0 +1,30 @@
+{
+  "lang":"en",
+  "name":"model",
+  "version":"0.0.0",
+  "spacy_version":">=2.3.5",
+  "description":"",
+  "author":"",
+  "email":"",
+  "url":"",
+  "license":"",
+  "spacy_git_version":"1d4b1dea2",
+  "vectors":{
+    "width":0,
+    "vectors":0,
+    "keys":0,
+    "name":"spacy_pretrained_vectors"
+  },
+  "pipeline":[
+    "textcat"
+  ],
+  "factories":{
+    "textcat":"textcat"
+  },
+  "labels":{
+    "textcat":[
+      "REMOVED",
+      "NOTREMOVED"
+    ]
+  }
+}

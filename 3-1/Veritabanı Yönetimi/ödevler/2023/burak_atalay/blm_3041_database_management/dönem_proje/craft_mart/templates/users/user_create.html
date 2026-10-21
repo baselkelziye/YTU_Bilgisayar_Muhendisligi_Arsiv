@@ -1,0 +1,23 @@
+<!-- templates/users/user_create.html -->
+{% extends "base.html" %}
+{% block content %}
+  <h2>Yeni Kullanıcı Ekle</h2>
+  <form method="POST" action="{{ url_for('create_user') }}" class="row g-3">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Ad Soyad</label>
+      <input type="text" name="name" id="name" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label for="username" class="form-label">Kullanıcı Adı</label>
+      <input type="text" name="username" id="username" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label for="password" class="form-label">Şifre</label>
+      <input type="password" name="password" id="password" class="form-control" required>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Kaydet</button>
+      <a href="{{ url_for('list_users') }}" class="btn btn-secondary">Vazgeç</a>
+    </div>
+  </form>
+{% endblock %}

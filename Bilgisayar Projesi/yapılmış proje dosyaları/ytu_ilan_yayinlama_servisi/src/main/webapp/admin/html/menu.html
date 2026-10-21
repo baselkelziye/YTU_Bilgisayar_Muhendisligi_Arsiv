@@ -1,0 +1,85 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+                <a class="navbar-brand" href="../directadminmainpageservlet">YTÜ İLAN YAYINLAMA SERVİSİ</span></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="../directadminmainpageservlet"><span>Anasayfa</span></a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href='#'>BKB İşlemleri<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href = "../newdonationacceptunit"><span>BKB Oluştur</span></a>
+                    </li>
+                    <li>
+                        <a href='../displaydauservlet'><span>BKB Gör/Düzenle </span></a>
+                    </li>
+                    <li>
+                        <a href="../displaydauaccountings"><span>Muhasebe Kayıtları</span></a>
+                    </li>
+                    <li>
+                        <a href="../createspendingrequest"><span>Harcama isteği oluştur</span></a>
+                    </li>
+                    <li>
+                        <a href="../listspendingrequesttoadmin"><span>Harcama İsteklerini Gör</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href='#'>Paket İşlemleri<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href = "../newannouncementpacketservlet"><span>Paket Oluştur</span></a>
+                    </li>
+                    <li>
+                        <a href = "../displaypackets"><span>Paketleri Gör/Düzenle</span></a>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">İlan İşlemleri<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <!--<li>
+                        <a href='../listannouncementstoadmin'><span>İlanları Gör</span></a>
+                    </li> -->
+                    <li>
+                        <a href='../complaintlisttoadmin'><span>Şikayetler</span></a>
+                    </li>
+                    <li>
+                        <a href="../addcategory"><span>Kategorileri Gör/Ekle</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Veritabanı Arayüzü<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="../departmentlist"><span>Bölüm İşlemleri</span></a>
+                    </li>
+                    <li>
+                        <a href="../mailparameterslist"><span>Mail İşlemleri</span></a>
+                    </li>
+                    <li>
+                        <a href="../readmessageservlet"><span>Mesajları Oku</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../waitingcompanylist"><span>Şirket Kayıt</span></a></li>
+            <li><a href="../logoutservlet"><span class="glyphicon glyphicon-log-out"></span> Çıkış Yap</a></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+</style>

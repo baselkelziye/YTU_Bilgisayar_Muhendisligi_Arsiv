@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define m 487
+#define R 479
+int encrypt(char str[]){
+	int i,key;
+	for(i=key=0;i < strlen(str); i++) 
+		key +=(str[i]-'a')*26*i ;
+	return key;
+}
+int h1(int key){
+	return key % m;
+}
+
+int offset(int key){
+	return R-(key%R);
+}
+int h(int key,int i){
+	return (h1(key) + i*offset(key)) % m ;
+}
+int addHashToTable(){
+	
+	
+}
+int main(){
+	
+	char word[15];
+	char * filename = "smallDictionary.txt";
+	FILE * fp = fopen(filename, "r");
+	if (fp == NULL) return 1;  	//Böyle bir dosya yoksa çalýþma duruyor
+	char c;
+	int count = 0,i,j,key;
+	char hash[m][15];	//m is defined value
+	
+	for(i=0;i<m;i++){				//Hash tablosunu boþaltýyorum //m is defined value
+				for(j=0;j<15;j++){
+				hash[i][j]='\0';
+		}
+	}
+	
+
+	int y;
+	j=0;
+	while((c = fgetc(fp)) != EOF){			//Dosyanýn son karakterine kadar okunuyor 
+	
+		if(c == ' ' || c == '\n')
+		{
+			printf("\n");
+			++count;
+			i=0;
+			while(hash[h(encrypt(word),i)][0]!='\0'){
+				i++;
+			}
+//			if(hash[h(encrypt(word),i)][0]!='\0'){	//çakýþma var m ý yokmu onu kontrol ediyor.ea
+//				y++;
+//			}
+			strcpy(hash[h(encrypt(word),i)],word);  
+			
+			for(j=0;j<15;j++){
+				word[j]='\0';
+			}
+			j=0;
+			
+		}
+		else
+		{
+			printf("%c", c);
+			word[j]=c;
+			j++;
+		}
+	}
+	
+	fclose(fp);
+	
+	for(i=0;i<m;i++){
+		printf("%s\n",hash[i]);
+	}
+	printf("This file has %d words in it.\n", count);
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	printf("Arayacaginiz kelimeyi giriniz: ");
+	char str[15]={'\0'}; 
+   	gets(str); 
+
+   	int r=0;		//girilen kelimenin uzunluðunu 
+	   for(i=0;i<15;i++){		
+			if(str[i]!='\0'){
+				r++;
+			}		
+		}
+	i=0,j=0;
+	int k=0; 	//	k kelimelerdeki eþit olan indislerin eþitlik sayýsýný tutuyor eðer girilen deðer boyutuyla eþ ise kelime bulunmuþ oluyor.
+
+	while(hash[h(encrypt(word),i)][0]!='\0' && str[j]!='\0' && k!=r){		//hash tablosunda bir deðer varsa
+		k=0;
+		printf("J---\n");
+		for(j=0;j<15;j++){
+			printf("%d..%c--",j,str[j]);
+			if(hash[h(encrypt(str),i)][j]==str[j] && str[j]!='\0' && hash[h(encrypt(str),i)][j]!='\0' ){	
+				k++;
+			}
+			printf("%d..%c\n",k,hash[h(encrypt(str),i)][j]);				
+		}
+		j=0;
+		printf("\ni:%d h:%d w:%d\n",i,hash[h(encrypt(word),i)][0]!='\0',str[j]!='\0');
+		i++;
+	}
+	if(k==r){
+		printf("Kelime dogru yazilmistir...\n");
+	}
+	else 
+		printf("Sozlukte bu deger bulunmamaktadir.\n");
+	
+	
+	
+	printf("K:%d\n",k);
+	printf("R:%d\n",r);
+	
+	
+	
+	
+	
+	
+	return 0;
+}

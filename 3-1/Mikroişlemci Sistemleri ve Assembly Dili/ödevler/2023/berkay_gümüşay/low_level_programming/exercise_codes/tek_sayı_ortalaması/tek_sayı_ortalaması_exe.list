@@ -1,0 +1,111 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+Tek Sayý Ortalamasý.exe -- emu8086 assembler version: 4.08  
+ 
+[ 15/11/2022  --  14:00:42 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       myStack segment para stack 'stack'
+[   2]    0000: 00 00 00 00 00 00 00 00 00 00 00 00   dw 20 dup(?)
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00 00 00 00 00 00 00 00 00 
+                00 00 00 00                         
+[   3]        :                                       myStack ends
+[   4]        :                                       myData segment para 'data'
+[   5]        :                                       
+[   6]    0030: 00 00 00 00                           tekTop DD 0
+[   7]    0034: 00 00 00 00                           ciftTop DD 0
+[   8]    0038: 03 00 05 00 09 00 0C 00 00 00 06 00   dizi DW 3,5,9,12,0,6,5,13
+                05 00 0D 00                         
+[   9]    0048: 00 00                                 tekSay DW 0
+[  10]    004A: 00 00                                 ciftSay DW 0
+[  11]    004C: 08 00                                 eleman DW 8
+[  12]    004E: 00 00                                 tekOrt DW 0
+[  13]    0050: 00 00                                 ciftOrt DW ?
+[  14]        :                                       myData ends
+[  15]        :                                       myCode segment para 'code'
+[  16]        :                                       assume cs:myCode,ss:myStack,ds:myData
+[  17]    0060:                                       ANA proc far
+[  18]    0060: 1E                                    push ds
+[  19]    0061: 33 C0                                 xor ax,ax
+[  20]    0063: 50                                    push ax
+[  21]    0064: B8 03 00                              mov ax,myData
+[  22]    0067: 8E D8                                 mov ds,ax
+[  23]    0069: 8B 0E 1C 00                           mov cx,eleman
+[  24]    006D: BE 08 00                              lea SI,dizi
+[  25]    0070: 8B 04                                 don:mov ax , [SI]
+[  26]        :                                       ;shr ax , 1
+[  27]    0072: A9 01 00                              test ax,1
+[  28]    0075: 74 0F                                 jz cift
+[  29]    0077: 01 06 00 00                           add word ptr[tekTop],ax
+[  30]    007B: 83 06 02 00 00                        add word ptr[tekTop+2],0
+[  31]    0080: FF 06 18 00                           inc tekSay
+[  32]    0084: EB 0D                                 jmp arttir
+[  33]    0086: 01 06 04 00                           cift:add word ptr[ciftTop],ax
+[  34]    008A: 83 06 06 00 00                        add word ptr[ciftTop+2],0
+[  35]    008F: FF 06 1A 00                           inc ciftSay
+[  36]    0093: 83 C6 02                              arttir:add SI,2
+[  37]    0096: E2 D8                                 loop don
+[  38]    0098: 8B 16 02 00                           mov dx,word ptr[tekTop+2]
+[  39]    009C: A1 00 00                              mov ax,word ptr[tekTop]
+[  40]    009F: F7 36 18 00                           div tekSay
+[  41]    00A3: A3 1E 00                              mov tekOrt,ax
+[  42]    00A6: 8B 16 02 00                           mov dx,word ptr[tekTop+2]
+[  43]    00AA: A1 00 00                              mov ax,word ptr[tekTop]
+[  44]    00AD: F7 36 18 00                           div tekSay
+[  45]    00B1: A3 1E 00                              mov tekOrt,ax
+[  46]    00B4: CB                                    retf
+[  47]        :                                       endp
+[  48]        :                                       ends
+[  49]        :                                       end ANA
+[  50]        :                                       
+[  51]        :                                       
+[  52]        :                                       
+ 
+===================================================================================================
+ 
+EXE HEADER - bytes from 0000 to 01FF inclusive.
+
+0000: 4D      -   exe signature (M)
+0001: 5A      -   exe signature (Z)
+0002: B5      -   bytes on last page (l.byte)
+0003: 00      -   bytes on last page (h.byte)
+0004: 02      -   512 byte pages in file (l.byte)
+0005: 00      -   512 byte pages in file (h.byte)
+0006: 01      -   relocations (l.byte)
+0007: 00      -   relocations (h.byte)
+0008: 20      -   paragraphs in header (l.byte)
+0009: 00      -   paragraphs in header (h.byte)
+000A: 00      -   minimum memory (l.byte)
+000B: 00      -   minimum memory (h.byte)
+000C: FF      -   maximum memory (l.byte)
+000D: FF      -   maximum memory (h.byte)
+000E: 00      -   SS - stack segment (l.byte)
+000F: 00      -   SS - stack segment (h.byte)
+0010: 28      -   SP - stack pointer (l.byte)
+0011: 00      -   SP - stack pointer (h.byte)
+0012: 66      -   check sum (l.byte)
+0013: FB      -   check sum (h.byte)
+0014: 00      -   IP - instruction pointer (l.byte)
+0015: 00      -   IP - instruction pointer (h.byte)
+0016: 06      -   CS - code segment (l.byte)
+0017: 00      -   CS - code segment (h.byte)
+0018: 1E      -   relocation table adress (l.byte)
+0019: 00      -   relocation table adress (h.byte)
+001A: 00      -   overlay number (l.byte)
+001B: 00      -   overlay number (h.byte)
+001C: 01      -   signature (l.byte)
+001D: 00      -   signature (h.byte)
+001E: 05      -   relocation table - offset inside segment (l.byte)
+001F: 00      -   relocation table - offset inside segment (h.byte)
+0020: 06      -   relocation table - segment anchor (l.byte)
+0021: 00      -   relocation table - segment anchor (h.byte)
+0022 to 01FF  -   reserved relocation area  (00) 
+
+
+
+
+===================================================================================================
