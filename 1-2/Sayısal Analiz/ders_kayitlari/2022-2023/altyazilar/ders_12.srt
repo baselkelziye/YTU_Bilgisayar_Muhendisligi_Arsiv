@@ -1,0 +1,1511 @@
+1
+00:00:34,164 --> 00:00:44,964
+Merhaba arkadaşlar. Bu buradaki isimlerin hepsi proje mi sunacak?
+
+2
+00:00:44,531 --> 00:01:05,531
+Ben sunacaktım hocam. Bera Özler yazmıştım mailde. Bana üç kişiden mesaj geldi. Bera, Mariam Ahmet, Fathallah. Burada mı bilmiyorum. Ve sunmayacaktım. İbrahim. Yok. Andalık Gonçarova.
+
+3
+00:01:05,531 --> 00:01:12,452
+Şimdi arkadaşlar bana proje sunacak olanlar lütfen bana mesaj atsın demiştim.
+
+4
+00:01:14,631 --> 00:01:21,131
+Buraya sunum için gelmiş olanlar niçin atmadılar? Bunu ayrıca merak ediyorum.
+
+5
+00:01:21,651 --> 00:01:30,091
+Ben de çünkü planlarımı hep buna göre yaptım. O yüzden belirli bir saate kadar bakabileceğim.
+
+6
+00:01:30,331 --> 00:01:34,691
+İlk olarak bana isim verenlerden başlıyorum. Beray seni alıyorum.
+
+7
+00:01:35,531 --> 00:01:38,831
+Tamam hocam
+
+8
+00:01:38,831 --> 00:01:41,712
+Beray Özder diyoruz
+
+9
+00:01:41,712 --> 00:01:47,112
+Raporlarınızı YT Online'de açılmış olan yere koyuyorsunuz
+
+10
+00:01:47,112 --> 00:01:49,911
+Beray kaç tanesini çözdün?
+
+11
+00:01:50,712 --> 00:01:52,332
+10 taneyi kodladım hocam
+
+12
+00:01:52,332 --> 00:01:54,112
+10 tane kodlandım
+
+13
+00:01:54,112 --> 00:01:56,371
+Bir de yüzünü görebilme imkanın var mı?
+
+14
+00:01:57,572 --> 00:01:57,811
+Tabii
+
+15
+00:01:57,811 --> 00:02:01,112
+Geldi mi görüntüm?
+
+16
+00:02:01,311 --> 00:02:02,271
+Geldi
+
+17
+00:02:02,271 --> 00:02:29,771
+Seni sanki tanır gibi oldum ama tam da emin değilim. Bu dersi ilk kez alıyorsun. Evet. Okey. Şimdi on tane şeyimiz vardı zaten kodumuz. Ben bunlardan herhangi birini seçeceğim. Son kararın mı on tane? Evet diyorsun. Peki. Newton-Raphson'la başlayalım.
+
+18
+00:02:32,271 --> 00:02:33,011
+Olur mu?
+
+19
+00:02:33,892 --> 00:02:35,471
+Tamam, hangisini isterseniz
+
+20
+00:02:35,471 --> 00:02:39,191
+Tamam, önce şöyle bir koduna bakalım
+
+21
+00:02:39,191 --> 00:02:41,612
+Ne yazdın?
+
+22
+00:02:44,051 --> 00:02:46,431
+Visual Studio Code'da yazdım hocam
+
+23
+00:02:46,431 --> 00:02:49,171
+Mac kullandığım için Devs'i kullanamıyorum
+
+24
+00:02:49,171 --> 00:02:51,051
+Ne kullanamıyorsun?
+
+25
+00:02:51,991 --> 00:02:55,311
+Mac bilgisayar kullandığım için Devs'i kullanmak biraz zor oluyor
+
+26
+00:02:55,311 --> 00:02:57,051
+Tamam, yok onu sormadım
+
+27
+00:02:57,051 --> 00:02:59,031
+Newton-Raphson'u göstereceksin ya
+
+28
+00:02:59,031 --> 00:03:07,632
+Newton'u ayrı bir kod parçası olarak mı yazdın? Bütün denklem çözümleri aynı kodun içerisinde farklı fonksiyonlar olarak mı?
+
+29
+00:03:08,531 --> 00:03:14,492
+Newton-Raphson'u tek başına bir fonksiyon olarak yazdım. İçinde bu polinom almayı ayrı bir fonksiyon olarak yazdım.
+
+30
+00:03:15,171 --> 00:03:17,892
+Türevi dışarıdan mı vereceğiz?
+
+31
+00:03:18,632 --> 00:03:25,931
+Türevi de. Verilen polinomun türevini de almanın bir fonksiyonunu yazdım. Newton-Raphson'un içinde onu kullandım.
+
+32
+00:03:25,931 --> 00:03:33,011
+Tamam. O zaman hemen bir örnekle başlayalım. Zaten bir ya da iki tanesini çalıştıracağım.
+
+33
+00:03:34,311 --> 00:03:37,771
+Tamam. Programın derecesini istiyor.
+
+34
+00:03:37,771 --> 00:03:50,051
+Derecesi iki, bir, eksi dört, eksi beş.
+
+35
+00:03:53,031 --> 00:03:54,351
+Alt sınır istiyor.
+
+36
+00:03:54,351 --> 00:03:58,251
+Aslında başlangıç değeri ne istiyorsun herhalde?
+
+37
+00:03:58,391 --> 00:03:58,511
+Evet.
+
+38
+00:03:58,511 --> 00:04:00,471
+Son Raphson'da başlangıç değeri var.
+
+39
+00:04:00,571 --> 00:04:00,951
+Sıfır.
+
+40
+00:04:05,300 --> 00:04:12,079
+durma koşulu olarak hata istiyor. Peki bir şey soracağım. Newton-Raphson da niye alt ve üst sınır istedi?
+
+41
+00:04:12,079 --> 00:04:25,759
+Aslında şöyle, alt sınırdan başlıyor ama slide'larda bakarken ders notunda üst sınır da alınıyordu. Alt sınırdan başlaması gerektiğini söylüyordu. O yüzden üst sınırda aldım. Ama aslında fonksiyonda kullanılmıyor.
+
+42
+00:04:25,759 --> 00:04:31,759
+Allah Allah, bir kutuna baktım. Benim notlarımda öyle bir şey yok.
+
+43
+00:04:31,759 --> 00:04:55,539
+Vardı hocam. Yani bir aralık alıyor ama alt sınırın türevini alıp ondan başlatıyor iterasyonlara. Neyse bakarım acaba neyi nasıl yorumladık. Durma koşulu tamam yazıyorsa problem değil ben onu bir kontrol edeceğim. 0.001 Tamam.
+
+44
+00:04:55,539 --> 00:04:59,159
+Maksimum iterasyon sayısı istiyor
+
+45
+00:04:59,159 --> 00:05:06,519
+Ama şimdi bunda da çok soruyorum ama iterasyon sayısını söylemem gerekiyor mu?
+
+46
+00:05:07,399 --> 00:05:11,539
+Eğer ki durma koşuluna göre durmak istiyorsa çok yüksek bir iterasyon giriliyor
+
+47
+00:05:11,539 --> 00:05:13,279
+O durma koşulunda duruyor
+
+48
+00:05:13,279 --> 00:05:16,179
+Eğer daha düşük bir iterasyonda çıkması istenirse
+
+49
+00:05:16,179 --> 00:05:19,300
+Yani hangisi önce gelirse aslında onda çıkıyor fonksiyonda
+
+50
+00:05:19,300 --> 00:05:20,719
+Ya Allah Allah
+
+51
+00:05:20,719 --> 00:05:22,759
+O şekilde programlandı
+
+52
+00:05:22,759 --> 00:05:37,779
+Newton-Raphson, her zaman şunu söylüyordum, arka arkaya bulduğum kökler arasındaki mutlak değerce fark, epsilon'dan küçük eşit oluncaya kadar. Niye öyle yapmadın?
+
+53
+00:05:39,240 --> 00:05:47,559
+Atıyorum ben sana 10 bin iterasyon derim, belki 100 iterasyon da bu sağlanacak. Boşuna 10 bine kadar dönüyor.
+
+54
+00:05:47,559 --> 00:05:54,599
+Yok işte hocam yüzde çıkacak yani demek istediğim o. İlk nerede hatayı sağlarsa orada çıkıyor.
+
+55
+00:05:55,039 --> 00:05:55,979
+D-500
+
+56
+00:05:55,979 --> 00:06:00,539
+İkinci iterasyonda bulup çıkabiliyor.
+
+57
+00:06:01,619 --> 00:06:16,579
+İkinci iterasyonda. Çünkü kökü dınk diye verdim başlangıç değerinde. O yüzden bu kadar çabuk çıktı. Evet köklerden biri eksi bir. Peki aynısını bir daha çalıştıralım. Öteki kökü bulacak şekilde bir başlangıç değeri vereceğim.
+
+58
+00:06:17,559 --> 00:06:20,139
+Yine ikinci dereceden fonksiyon
+
+59
+00:06:20,139 --> 00:06:23,559
+Fonksiyon aynıysa sadece aralığı değiştirebilirim
+
+60
+00:06:23,559 --> 00:06:25,739
+İyi tamam
+
+61
+00:06:25,739 --> 00:06:32,139
+Demin sıfır vermiştim değil mi? 6 veriyorum, alt sınır, üst sınır da
+
+62
+00:06:32,139 --> 00:06:37,919
+Bunu anlamadım ama gerçekten ben bunu anlamadım
+
+63
+00:06:37,919 --> 00:06:39,939
+Hemen slide'lara gelip bakacağım
+
+64
+00:06:39,939 --> 00:06:40,939
+6 değil
+
+65
+00:06:40,939 --> 00:06:44,020
+Tamam, hata, hayır
+
+66
+00:06:44,020 --> 00:06:46,819
+Aynı sıfır nokta, sıfır sıfır bir
+
+67
+00:06:46,819 --> 00:06:52,139
+dördüncü iterasyonda beş olarak buluyorum.
+
+68
+00:06:52,159 --> 00:06:53,499
+Tamam beşi buldu doğru.
+
+69
+00:06:53,679 --> 00:06:55,499
+Anlattın sonuçlarımız doğru.
+
+70
+00:06:55,659 --> 00:06:57,479
+Bir tane de TÜLER'e bakalım.
+
+71
+00:07:02,836 --> 00:07:03,836
+İlk önce polinomu alıyor. Bir dakika, ben böyle örnek çözümler yapmıştım. O yüzden onları bulmaya çalışıyorum. Polinomun derecesini mi soruyorsun? Üç. Evet. X küpün kapsayısı. Bir, bir, eksi iki, eksi bir, eksi bir. Hangi? Türevi olsun. Türevi olsun.
+
+72
+00:07:32,836 --> 00:07:33,395
+değer.
+
+73
+00:07:34,596 --> 00:07:35,396
+1,
+
+74
+00:07:38,095 --> 00:07:40,975
+harç değeri de 0,25.
+
+75
+00:07:43,895 --> 00:07:46,955
+Eksi 1.6875.
+
+76
+00:07:51,955 --> 00:07:54,755
+Eksi 1.68.
+
+77
+00:07:57,475 --> 00:07:59,975
+Benden için birazcık fazla.
+
+78
+00:08:00,475 --> 00:08:01,715
+X'i kaç verdim?
+
+79
+00:08:01,715 --> 00:08:04,415
+x'i bir verdiniz.
+
+80
+00:08:06,555 --> 00:08:09,255
+Dur bakayım şimdi ben senin sonucunu şuraya alayım.
+
+81
+00:08:10,875 --> 00:08:13,875
+Bir başkasına da aynı şeyi soracağız.
+
+82
+00:08:14,655 --> 00:08:16,155
+Şunlarla birlikte şu.
+
+83
+00:08:17,215 --> 00:08:18,336
+Okey, peki.
+
+84
+00:08:19,875 --> 00:08:22,175
+Tamam.
+
+85
+00:08:23,375 --> 00:08:25,836
+Senin şansına bu tutmuştu. Teşekkür ediyorum.
+
+86
+00:08:30,228 --> 00:08:47,347
+Buralara notlarımı alıyorum. Bu bir. İkinci olarak Mariam Ahmet burada mı? Evet. Bir dakika, adını yazıyorum.
+
+87
+00:08:53,460 --> 00:08:54,460
+Tamam, seni de bir görebilir miyim? Mümkün mü? Yaptım. Tamam, sende bussun. Okey, tamamdır. Sen kaç tanesini yaptın? 10 tanesini yaptım hocam. 10 tanesini yaptım. Peki, bakalım senin şansına ne çıksın? Senin şansına inverse çıksın. Öğren ekran geliyor mu? Geliyor, görüyorum. Bir inverse'in kotunu aç.
+
+88
+00:09:23,460 --> 00:09:29,460
+Üniversite hesapladım fonksiyonu ya da kodu
+
+89
+00:09:32,755 --> 00:09:33,755
+Inverse. Göstereyim mi? Fonksiyonunu göstereyim mi? Evet. Şu dört numarayı nerede yazdın? Burada. Bir burada dediğin yeri şöyle bir cursor ile çizsene. Nereden nereye kadar? Hangisi dört mu? Ayrı bir fonksiyon olarak yazdığım için. Tamam. Matris'in inverse'ini alacağız. Evet. Burada dört seçtiğinde önce matris alıyoruz.
+
+90
+00:10:02,755 --> 00:10:06,535
+Sonra inversiyonu alıyorum, başka bir fonksiyon sorumlulara
+
+91
+00:10:06,535 --> 00:10:09,476
+Tamam, inversiyonu aldığım fonksiyona geç
+
+92
+00:10:09,476 --> 00:10:11,395
+Oyunlayım
+
+93
+00:10:17,172 --> 00:10:26,571
+İnversini alırken nasıl bir yol izliyorduk, hatırlıyor musun? Hocam birim matrisi kullanarak yaptım.
+
+94
+00:10:26,571 --> 00:10:36,172
+Orjinal matrisi birim matris haline getirirken, birim matris de invers matris haline gelecek. Peki, üçü üçlük bir matrisim var.
+
+95
+00:10:36,172 --> 00:10:38,172
+3
+
+96
+00:10:38,172 --> 00:10:41,491
+Satır satır mı vereceğim?
+
+97
+00:10:41,831 --> 00:10:42,151
+1
+
+98
+00:10:42,151 --> 00:10:44,651
+2
+
+99
+00:10:44,651 --> 00:10:46,532
+3
+
+100
+00:10:46,532 --> 00:10:48,611
+4
+
+101
+00:10:48,611 --> 00:10:50,552
+5
+
+102
+00:10:50,552 --> 00:10:52,572
+6
+
+103
+00:10:52,572 --> 00:10:54,811
+7
+
+104
+00:10:54,811 --> 00:10:57,032
+2
+
+105
+00:10:57,032 --> 00:10:59,072
+9
+
+106
+00:11:03,443 --> 00:11:26,943
+Elimdekilerle kontrol edeceğim. 03, 1 bölü 12, 0,75, 16, 1 bölü 6, 0,08. Okey, bir tane daha yapalım.
+
+107
+00:11:26,943 --> 00:11:29,523
+Hangisi? Aynen.
+
+108
+00:11:30,103 --> 00:11:34,644
+İntegrel olsun. Hangi integrali seçersen seç.
+
+109
+00:11:36,223 --> 00:11:38,183
+Ozan ikisini de yapıyorum.
+
+110
+00:11:38,183 --> 00:11:44,723
+Bir tanesini seçeceksin. Ne? Simpson'ı seçtin. Tamam. Burada neyi soruyorsun bana?
+
+111
+00:11:45,624 --> 00:11:50,844
+Ozan terim sayısı. Polinomun derecesi.
+
+112
+00:11:50,844 --> 00:11:53,443
+Yok. Polinomun terim sayısı.
+
+113
+00:11:53,963 --> 00:11:55,323
+Terim sayısı.
+
+114
+00:11:55,323 --> 00:12:01,563
+Peki benden şeyleri ama niye etkileyim sayıları iki tane
+
+115
+00:12:01,563 --> 00:12:05,743
+Evet sonra neyi soracaksın?
+
+116
+00:12:06,203 --> 00:12:09,003
+Birincisinin kat sayısı
+
+117
+00:12:09,003 --> 00:12:10,223
+Kat sayısı iki
+
+118
+00:12:10,223 --> 00:12:12,883
+Kat sayısı mı?
+
+119
+00:12:13,823 --> 00:12:14,203
+Evet
+
+120
+00:12:14,203 --> 00:12:16,823
+Ama ben şeyi anlamadım
+
+121
+00:12:16,823 --> 00:12:21,983
+Ben x kare artı iki x diye bir polinom vereceğim sana
+
+122
+00:12:21,984 --> 00:12:28,263
+x kare artı 2x tamam 2x'i yazalım sonra x kareyi yazalım olur mu?
+
+123
+00:12:29,164 --> 00:12:34,884
+2x şimdi x'in kat sayısı 2 derecesi de 1
+
+124
+00:12:34,884 --> 00:12:37,003
+Ben mi biliyorum?
+
+125
+00:12:40,064 --> 00:12:44,503
+Tamam sen x kare artı 2x'i nasıl giriyorsun?
+
+126
+00:12:44,503 --> 00:13:01,503
+1 bölü 3 olsun
+
+127
+00:13:01,503 --> 00:13:05,503
+1'i seç
+
+128
+00:13:05,503 --> 00:13:09,223
+Sonra ne istiyorsun?
+
+129
+00:13:10,103 --> 00:13:11,063
+O zaman altısınız.
+
+130
+00:13:11,543 --> 00:13:13,183
+Birden üçe kadar?
+
+131
+00:13:17,024 --> 00:13:17,903
+Altı.
+
+132
+00:13:22,740 --> 00:13:25,819
+16-66. Tamam, doğru.
+
+133
+00:13:29,819 --> 00:13:30,939
+Teşekkür ederim.
+
+134
+00:13:30,939 --> 00:13:34,459
+Raporlarınızı yüklüyorsunuz tamam mı bugün içinde?
+
+135
+00:13:34,459 --> 00:13:36,299
+Yükledim o zaman.
+
+136
+00:13:36,299 --> 00:13:44,740
+Tamam, ben buraya hangilerini çözdürdüğümü notunu alıyorum da. Hafif Sin Üniversitesi ve Simpson.
+
+137
+00:13:46,059 --> 00:13:47,819
+Tamam.
+
+138
+00:13:47,819 --> 00:13:50,979
+Evet, teşekkür ederim. Çıkabilirsiniz de.
+
+139
+00:13:50,979 --> 00:13:55,399
+Andalip, Gonharova.
+
+140
+00:13:56,080 --> 00:13:57,039
+Buradayım hocam.
+
+141
+00:13:57,120 --> 00:13:57,460
+Tamam.
+
+142
+00:14:06,227 --> 00:14:07,227
+Sen kaç tanesini yaptın? Ben de 10 tanesini yaptım. Yüzünü görebilecek miyim? Tamam. Bak kızlar çok çalışkan, hep kızlar gösterdi. Peki, hangisine bakalım sana söyleyeyim ben. Gauss eliminasyonu yapalım. Ekranını paylaş.
+
+143
+00:14:57,524 --> 00:15:01,524
+Görünüyor mu ekranım? Evet, gözüküyor.
+
+144
+00:15:06,676 --> 00:15:16,676
+Bir Gauss-Seidel'ı nerede yazdın ya da Gauss eliminasyonunu? Hangisini seçeyim? Eliminasyon mu? Saydıl mı?
+
+145
+00:15:16,676 --> 00:15:21,676
+Fark etmez. Gauss eliminasyonu olsun.
+
+146
+00:15:22,611 --> 00:15:35,891
+Şimdi kaç tane denklememiz var? Önce bir kodunu görebilir miyim? Tamam. O bölümü açar mısın?
+
+147
+00:15:43,475 --> 00:16:01,475
+Şimdi şu 307'den başlıyor. Öyle gidiyor. Bir dakika dur. Şu, ay çok oynaklı. Zaten çok küçük gözemiyorum. Şu 329'dan itibaren bakacağım. Matrisi aldın.
+
+148
+00:16:05,683 --> 00:16:09,683
+C bilder.
+
+149
+00:16:16,211 --> 00:16:23,211
+Çakma ve çıkarma. Hadi bakalım. Denklemim...
+
+150
+00:16:24,244 --> 00:16:26,244
+iki tane olsun.
+
+151
+00:16:30,163 --> 00:16:39,763
+Neleri istiyorsun? Arkadaşlar bana yardımcı olun. O kadar ince ve küçük ki gözlerim görmüyor. Birinci eşitlik, birinci değişken.
+
+152
+00:16:39,763 --> 00:16:46,163
+Evet, şimdi birinci denklemimizde birinci işte değişkenin kat sayısı.
+
+153
+00:16:46,163 --> 00:16:47,163
+İki.
+
+154
+00:16:47,163 --> 00:16:51,163
+Sonra on ikincinin. Beş.
+
+155
+00:16:51,163 --> 00:16:54,163
+Evet. Sonra o denklem.
+
+156
+00:16:54,163 --> 00:16:58,364
+Tamam şimdi ikinci denklem
+
+157
+00:16:58,364 --> 00:17:01,723
+3, 1, 11
+
+158
+00:17:01,723 --> 00:17:10,204
+Başlangıç değerlerini bana sormadın. Ne aldın başlangıç değerlerini?
+
+159
+00:17:12,323 --> 00:17:14,884
+Bu eliminasyonda biz almıyoruz.
+
+160
+00:17:15,363 --> 00:17:21,263
+Özür dilerim özür dilerim ben Sidon'un sonucuna bakıyorum. Gauss eliminasyonu kaç buldun?
+
+161
+00:17:21,263 --> 00:17:25,783
+2. değişken 2'ye 1. değişken 3
+
+162
+00:17:25,783 --> 00:17:27,483
+3 tamam doğru
+
+163
+00:17:27,483 --> 00:17:33,263
+şimdi şuraya bir Goz eliminasyon diye yazalım
+
+164
+00:17:33,263 --> 00:17:36,123
+peki
+
+165
+00:17:40,084 --> 00:17:41,084
+Enterpolasyonu yaptın mı? Evet, yaptım. Tamam, enterpolasyonu görelim. Kaç tane x, elimizde kaç tane x var? Tamam. 3, 4, 5, 6, 7 tane var. Tamam. x'ler sıfırdan altıya kadar. Tamam, peki birincinin... Öyle mi vereceğim? Tamam. Sıfır eksi dört. Eksi dört yazacaksın.
+
+166
+00:18:10,084 --> 00:18:32,883
+1-2, 2-14, 3-62, 4-160, 5-326, 6-578
+
+167
+00:18:35,883 --> 00:18:38,203
+Peki bizim bulmak istediğimiz...
+
+168
+00:18:38,203 --> 00:18:41,183
+izliyoruz. Bir saniye söyleyeceğim.
+
+169
+00:18:42,123 --> 00:18:43,543
+Dört buçuk.
+
+170
+00:18:48,084 --> 00:19:07,403
+233.375 çıktı. Denklemin ne çıkacağını görebiliyor muyuz? Öyle bir şey yazdırdın mı, yaptın mı? Yok zaten bunu koyduğunda çıkar. Okey, teşekkür ediyorum sana da.
+
+171
+00:19:12,627 --> 00:19:21,907
+Başka isim bildiren yoktu. Lala sen mi göstereceksin? Lala?
+
+172
+00:19:26,259 --> 00:19:37,979
+Hadi Bismillah. Koca? Koca? Gösterecek misin?
+
+173
+00:19:41,460 --> 00:19:52,460
+Çete mi yazdı, ne yaptı? Hocam ben gösterebilirim. Bir dakika, şu koca sesini açtı, kapattı. Peki Halil, Salih, Tosun.
+
+174
+00:19:54,460 --> 00:20:06,460
+Hocam. Bir saniye. Sesim geliyor mu? Geliyor, görüntüm de geliyor. Ekran paylaşayım. Sen kaç tanesini yaptın Halil?
+
+175
+00:20:06,460 --> 00:20:12,119
+Hocam ben hepsini yaptım bir de şeyleri de ekledim. O diğer fonksiyonları trigonometrik.
+
+176
+00:20:13,899 --> 00:20:22,640
+Peki sana mesela bir interpolasyon sorsam ve x sıfırdan başlamasa çözebiliyor musun?
+
+177
+00:20:23,739 --> 00:20:25,739
+Gregory Newton değil mi?
+
+178
+00:20:27,220 --> 00:20:27,540
+Evet.
+
+179
+00:20:29,159 --> 00:20:31,559
+Evet çözebiliyor musunuz öyle türlü?
+
+180
+00:20:32,399 --> 00:20:33,540
+Tamam bir deneyelim.
+
+181
+00:20:34,259 --> 00:20:35,119
+Şuradan kodu açayım.
+
+182
+00:20:38,612 --> 00:20:59,091
+Hocam ben raporu falan yüklemedim ama kodu yaptığım için gösteriyorum. Bugün yüklersin ama değil mi? Tamam, bizden sonra yazalım. Tamam. Rapor dediğim şey şuydu, hangi yöntemleri yazdınız? Bir tabloda yöntemlerin isimleri tındındı. Bir de aslında bunun duyurusunu yapmıştık.
+
+183
+00:20:59,091 --> 00:21:18,751
+Apozun şey istemişti, bütün kodları koy içine, bir de ben derste hangisini size çalıştırın demişsem, onun sonuç haline çalıştırıldı, ekran çıktısı budur diye
+
+184
+00:21:18,751 --> 00:21:21,591
+Yani hepsinin ekran çıktısını eklerim
+
+185
+00:21:21,591 --> 00:21:27,631
+Hepsine gerek yok, ben derste hangisini sorduysam
+
+186
+00:21:27,632 --> 00:21:55,071
+Tamam mı? Bu yeter. Şimdi interpolasyon diyoruz. Beş tane iç değerim var. Tamam. Değerli... Ne? Tamam söylüyorum. Okey. 1891. Burada şey yaptım. Haç değerini aldım. Hepsini almak yerine haç değeriyle kaç tane iç aldım? Ama ben haç değerimi sabit bırakmadım ki.
+
+187
+00:21:55,071 --> 00:21:59,292
+Ama şey değil miydi bu? Değişken, dönüşümsüz
+
+188
+00:21:59,292 --> 00:22:03,671
+Tamam ama hepsi aynı değil
+
+189
+00:22:03,671 --> 00:22:08,091
+Eşitarlıklı değiller mi yani? X-Tar
+
+190
+00:22:08,091 --> 00:22:13,251
+Sen hepsini eşit gibi mi düşündün? O zaman 11
+
+191
+00:22:13,251 --> 00:22:16,871
+Yani X-Tarar ise 11
+
+192
+00:22:16,871 --> 00:22:18,052
+Evet
+
+193
+00:22:18,052 --> 00:22:18,951
+Tamam
+
+194
+00:22:18,951 --> 00:22:22,612
+Şimdi Y'leri istiyorsun. 46
+
+195
+00:22:22,612 --> 00:22:39,052
+66, 81, 93, 101. Hangi yeri istiyoruz? 1895'i istiyorum.
+
+196
+00:22:42,112 --> 00:22:44,332
+Böyle çıkıyor.
+
+197
+00:22:44,331 --> 00:22:52,531
+54. Evet. Evet. Bunun arasında olabilir. Okey. Bir tane daha yapacağız.
+
+198
+00:22:57,523 --> 00:23:02,523
+sözümleri bende olsun ki...
+
+199
+00:23:04,723 --> 00:23:06,723
+Regula falsi?
+
+200
+00:23:06,723 --> 00:23:08,723
+Evet, hocam.
+
+201
+00:23:08,723 --> 00:23:09,723
+Okey.
+
+202
+00:23:09,723 --> 00:23:10,723
+Onda, tím.
+
+203
+00:23:24,372 --> 00:23:27,372
+Denkleme? Ne? Bu yes-to-o ne?
+
+204
+00:23:27,372 --> 00:23:31,372
+Şey işte, polinom var mı? Polinom, evet polinom, polinom.
+
+205
+00:23:31,372 --> 00:23:33,372
+Sadece polinom.
+
+206
+00:23:33,372 --> 00:23:36,372
+Evet. Sonra isteyecek tabii yani.
+
+207
+00:23:36,372 --> 00:23:41,372
+Kaç tane x-to-y var şeyde, sabit sayı da dahil mi?
+
+208
+00:23:41,372 --> 00:23:45,372
+Sabit sayıda? Yani kaçıncı dereceden olduğunu mu soruyorsun?
+
+209
+00:23:45,372 --> 00:23:47,372
+Evet, evet. Aynen.
+
+210
+00:23:47,372 --> 00:23:50,372
+İkinci dereceden?
+
+211
+00:23:50,372 --> 00:23:54,292
+Hayır, yani ikinci derecede ama kaç tane terim sayısı olduğunu soruyorum
+
+212
+00:23:54,292 --> 00:23:56,351
+Bir, iki, üç tane
+
+213
+00:23:56,351 --> 00:24:01,531
+Şimdi birincinin
+
+214
+00:24:01,531 --> 00:24:07,691
+Ama birinci nedir? Yani ben x kareyi mi söyleyeceğim, x kare mi?
+
+215
+00:24:08,251 --> 00:24:11,931
+x kare ise oradan başlıyor, yani fark etmiyor aslında
+
+216
+00:24:11,931 --> 00:24:13,251
+Tamam, büyükten başlıyorum
+
+217
+00:24:13,251 --> 00:24:17,651
+Nasıl fark etmiyor? Nasıl ondan sonra yerleştiriyorsun?
+
+218
+00:24:17,651 --> 00:24:24,331
+Yani başlangıç sırasından hangisini yazmaya başladıysak onu solda sağa doğru yazıyorum
+
+219
+00:24:24,331 --> 00:24:30,592
+Sen öyle alıyorsun. Okey tamam bir, eksi dört, eksi beş. Ay özür dilerim ya
+
+220
+00:24:30,592 --> 00:24:36,592
+Yok hocam yani kat sayısını verin sonra üstünü verin derim. Öyle gidecek
+
+221
+00:24:36,592 --> 00:24:45,131
+Ben üç dedim zaten hata yaptım başka bir şey. Neyse bunu vereyim. Bir pardon üstü iki kat sayısı bir
+
+222
+00:24:45,131 --> 00:24:50,071
+Üstü bir, kat sayısı eksi dört
+
+223
+00:24:54,932 --> 00:24:55,932
+Üstü sıfır, kas sayısı eksi beş. Tamam. Burada eksponensiyel var mı, logaritmik var mı, trigonotik var mı diye soru hepsine sıfır dedim. Sonra işte verdi böyle fonksiyonu. Başlangıç değeri istiyor. Başlangıç değeri eksi bir. Tamam. Beş. Beş. Hata miktarda
+
+224
+00:25:24,932 --> 00:25:45,351
+0.001. Şimdi hangi durma koşulu bunu istiyor? Epsilon'dan küçük mü? Birincisini istiyorum. Bu da maksimum iterasyon.
+
+225
+00:25:45,351 --> 00:25:46,971
+yüzde.
+
+226
+00:25:46,971 --> 00:25:50,951
+Tamam.
+
+227
+00:25:51,191 --> 00:25:52,791
+Köklerden biri eksi bir de.
+
+228
+00:25:53,231 --> 00:25:55,891
+Ben sizin ne yapmaya çalıştığınızı anladım.
+
+229
+00:25:56,911 --> 00:26:00,991
+Durma koşulu üç tane farklı durma koşulu belirlemiştim.
+
+230
+00:26:01,591 --> 00:26:07,051
+Ama ben hep ardışık iki kök arasındaki mutlak değerci farka bakarım.
+
+231
+00:26:07,051 --> 00:26:12,191
+Siz kodlarken üçüne göre de durumu yazmışsınız.
+
+232
+00:26:12,191 --> 00:26:15,891
+hangisi seçilirse ona göre sonlandırıyorsunuz.
+
+233
+00:26:16,731 --> 00:26:18,911
+Evet çünkü orada ayrılıyor galiba.
+
+234
+00:26:19,211 --> 00:26:22,331
+Şöyle iki tane farklı yere ayrılıyor.
+
+235
+00:26:22,411 --> 00:26:25,571
+Tamam yani hayatı kendinize zorlaştırmışsınız.
+
+236
+00:26:26,031 --> 00:26:27,031
+Ama önemli değil.
+
+237
+00:26:27,171 --> 00:26:29,671
+Biraz acemiydim burada daha çok anlamıyordum.
+
+238
+00:26:29,751 --> 00:26:31,091
+Buraya şey yapabilirmişim gerçekten.
+
+239
+00:26:31,691 --> 00:26:35,411
+Hani ikisine de aynı yerlere fazla yazmışım.
+
+240
+00:26:35,751 --> 00:26:38,951
+Peki bak çok güzel bir noktaya parmak bastım.
+
+241
+00:26:38,951 --> 00:26:46,391
+şu anki geldiğin yerde bu kodu yazsam daha optimize yazabilirdim diyebiliyor musun?
+
+242
+00:26:46,731 --> 00:26:51,351
+Ya okuması çok çok daha kolay olurdu şu an yazsam. Yani çok fazla uğraşmışım.
+
+243
+00:26:51,591 --> 00:26:52,831
+Yani yazabilirdin.
+
+244
+00:26:53,451 --> 00:26:54,432
+Evet yazardım.
+
+245
+00:26:54,432 --> 00:27:02,711
+İşte bu senin kendindeki gelişmeyi sana gösteriyor. Bizim istediğimiz aslında bu.
+
+246
+00:27:02,711 --> 00:27:11,491
+bu dönem içerisinde aslında dönem bile değil bir ya da bir buçuk ay içerisinde algoritmamızdaki gelişmeyi görebilmeniz.
+
+247
+00:27:13,032 --> 00:27:25,571
+Yani vaktin olursa bir daha yaz daha optimize yaz bakalım. Başlarına sonuna da time call sistemi ne kadar daha hızlı çalışıyor kontrol edersin.
+
+248
+00:27:25,571 --> 00:27:28,512
+Peki teşekkür ediyorum sana da. Ben teşekkür ederim.
+
+249
+00:27:28,512 --> 00:27:37,592
+yükleyeceksin biliyorsun. Peki Ümit? Ümit Zeynel de.
+
+250
+00:27:42,451 --> 00:27:44,451
+Mustafa Emic!
+
+251
+00:27:47,892 --> 00:27:48,892
+Mustafa Emir. Arkadaşlar, ekranın karşısında değilseniz niye giriyorsunuz? Ya da niye buradasınız? Anlamıyorum ki. Halil, Salih, Tosun, sendin? Sana baktık. Lala, Lala, Koca, Mustafa, Ümit,
+
+252
+00:28:17,892 --> 00:28:23,991
+Hanginiz kodunuzu gösteriyorsunuz projenizi?
+
+253
+00:28:32,500 --> 00:28:46,899
+Sesim geliyor mu hocam? Hayır koca gelmiyor çünkü sesin kapalı. Sesin kapalı. Sesinin kapalı olduğunu görüyorum koca.
+
+254
+00:28:55,220 --> 00:29:02,739
+Açıyorsun, kapatıyorsun. Ha, açıldı. Ses ver bakayım.
+
+255
+00:29:09,299 --> 00:29:16,659
+Koca niye sesini duymuyoruz? Yine kapattım.
+
+256
+00:29:18,867 --> 00:29:22,867
+Benim senin sesini açabilme imkanın var mı? Bir bakayım.
+
+257
+00:29:27,867 --> 00:29:28,867
+Evet hocam.
+
+258
+00:29:29,867 --> 00:29:30,867
+Hah, Ahmet.
+
+259
+00:29:33,867 --> 00:29:37,867
+Tamam, seninkine bakayım. Koca sen bir dur. Ahmet Kerim.
+
+260
+00:29:38,867 --> 00:29:39,867
+Evet.
+
+261
+00:29:39,867 --> 00:29:41,867
+Projemi gösterecek misin?
+
+262
+00:29:41,867 --> 00:29:46,867
+Yok. Benim yoruldum. Zaten ders sandım şimdi.
+
+263
+00:29:46,867 --> 00:29:55,187
+Ders sandın, ondan bile haberin yok. Bugün sınav var, ders konularımız bitti, proje göstermeye bugün de başladım.
+
+264
+00:29:56,388 --> 00:29:56,948
+Ha tamam.
+
+265
+00:29:57,867 --> 00:29:58,827
+O zaman çıkıyorsun.
+
+266
+00:29:59,787 --> 00:30:01,187
+Tamam, iyi günler hocam.
+
+267
+00:30:03,187 --> 00:30:12,007
+Hocam, sen bana çekten yazsana. Sesini ben alamıyorum senin, şu an sesin kapalı.
+
+268
+00:30:18,003 --> 00:30:28,804
+Açık şu an ama sesin gelmiyor. Proje gösterecek misin? Çete yaz.
+
+269
+00:30:30,644 --> 00:30:33,644
+Peki, onu da yaptın mı?
+
+270
+00:30:38,740 --> 00:30:47,740
+Evet, böyle nasıl halledeceğiz bilmiyorum. Peki kameranı açabiliyor musun?
+
+271
+00:30:51,124 --> 00:31:10,624
+Kameram yok. Sesin yok. Ben senin sen olduğunu bile nasıl anlayacağım? Peki nasıl anlaşacağız? Ekranını paylaş. Sakın ekranı da paylaşamıyorum deme.
+
+272
+00:31:19,476 --> 00:31:36,275
+Beş dakika bekleyebilir misiniz? Allah'ım bu nasıl bir şey ya? Bir kamera bulacağım. Ya kameramdan vazgeçtim, ekranını paylaş.
+
+273
+00:31:43,859 --> 00:31:53,859
+Şimdi şuradan chat'i de açıyorum. Onun da yaptık dedi. Sen artık chat'e yazacaksın. Peki bana Newton-Raphson'u aç.
+
+274
+00:32:07,220 --> 00:32:18,339
+bu Newton-Raphson mu? Bunun Newton-Raphson olduğunu nasıl anlayacağım? Biraz in bakayım aşağıya doğru koddan.
+
+275
+00:32:20,403 --> 00:32:27,723
+Kod da aşağıya doğru yiyin. Kime diyorum?
+
+276
+00:32:34,132 --> 00:33:01,931
+Koca bu böyle polinomyal font-count istiyor. Ama ben kodunu görmek istiyorum. Hah dur dur. Newton-Raphson'da formülün olduğu yeri açar mısın bana? Şurada dur. Bu fonksiyonun türevini içinde mi alıyorsun?
+
+277
+00:33:04,132 --> 00:33:07,032
+Nerede alıyorsun fonksiyonun trevini?
+
+278
+00:33:11,347 --> 00:33:13,347
+Peki, okey. Çalıştıralım.
+
+279
+00:33:20,980 --> 00:33:28,339
+Ben ekran çıktısını göremiyorum. Bana ne soruyor şu an?
+
+280
+00:33:29,460 --> 00:33:43,460
+Ne istiyorsun benden? Üçüncü dereceden bir polinom gireceğim. Ama ben kodun çalıştığını göremiyorum, haberin olsun.
+
+281
+00:33:46,516 --> 00:34:04,755
+Koca bu böyle olmayacak. Ben bu şekilde bakamayacağım. Kusura bakma. Lütfen haftaya hem sesi çıksın hem de görüntü olsun. Olmadı bunlara sahip bir arkadaşınla birlikte projeni gösterirsin.
+
+282
+00:34:06,915 --> 00:34:14,995
+Bana bir cevap yaz. Tamam hocam dedin. Okey, böyle çok zorlanıyorum. Yani haksızdan not vermek istemem sana.
+
+283
+00:34:14,995 --> 00:34:15,635
+Ümit
+
+284
+00:34:15,635 --> 00:34:21,135
+Tamam Ümit de yok Mustafa Emir
+
+285
+00:34:25,492 --> 00:34:26,492
+Mustafa Emir, Halil sen hala burada mısın? Buradayım hocam. Bak Halil, bu sana söylüyorum, gelinim sana söylüyorum, gelinim sen alın misali. Dinliyorum hocam. Lala, Ümit, Mustafa. Bunlar niye açtılar? Bunlar ders diye açıp sonra gittiler mi? Bunlar
+
+286
+00:34:55,492 --> 00:35:03,332
+projemi gösterecekti. Ben şimdi belledim bu isimleri. Lala, Ümit ve Mustafa Emir.
+
+287
+00:35:05,431 --> 00:35:16,492
+Sen bunu bir şekilde selamlarımı ilet. Bunlar herhalde proje gösterseler gösterirler de.
+
+288
+00:35:16,492 --> 00:35:39,611
+Koca haftayı gösteriyorsun, anlaştık seninle, tamam hoca dedin. Lala ve Ümit ve Mustafa Emir ders var diye girdiler ve açık bıraktılar. Kesin şu an arka planda sınava çalışıyorlar. Proje göstereceğini de unuttular herhalde. Bilmiyorum.
+
+289
+00:35:39,611 --> 00:36:03,151
+bir beş dakika daha bekliyorum yeni gelen var mı yok mu diye ondan sonra çıkacağım projelerimiz haftaya yine ders saatinde başlayacak şey koymuyorum sırasıyla isim okuyacağım o gün artık kimlere bakarsam onlar yoksa bir sonraki hafta yakalıyor
+
+290
+00:36:03,151 --> 00:36:05,131
+Hocam şu an size mi geliyor mu?
+
+291
+00:36:05,511 --> 00:36:06,311
+Geliyor.
+
+292
+00:36:06,711 --> 00:36:07,271
+Evet tamam.
+
+293
+00:36:07,811 --> 00:36:09,911
+Aç kodunu çok şükür Allah'a aç.
+
+294
+00:36:10,711 --> 00:36:11,811
+Hem de kamerayı atıştım.
+
+295
+00:36:11,811 --> 00:36:12,671
+O.
+
+296
+00:36:13,811 --> 00:36:18,911
+Bu saçlarını görmeyeyim diye lüle lüle saçlarını anladım.
+
+297
+00:36:18,971 --> 00:36:19,651
+Teşekkür ederim.
+
+298
+00:36:20,771 --> 00:36:25,211
+Peki şimdi Newton Raphson'u görmek istiyordum hemen ekran paylaş.
+
+299
+00:36:26,211 --> 00:36:26,531
+Tamam.
+
+300
+00:36:27,591 --> 00:36:29,211
+Demin paylaşmıştım bir güzel.
+
+301
+00:36:31,492 --> 00:36:32,071
+Ne oldu hocam?
+
+302
+00:36:33,151 --> 00:36:36,152
+Ben yurtayım mı? Biraz sıkıntı olabilir
+
+303
+00:36:36,152 --> 00:36:39,152
+Olsun, bunlara şeyim
+
+304
+00:36:39,152 --> 00:36:41,152
+Kodu göstermiştin
+
+305
+00:36:41,152 --> 00:36:44,152
+Şimdi Newton-Raphson'u çalıştırıyoruz
+
+306
+00:36:45,152 --> 00:36:47,152
+Tamam, hemen yapacağım
+
+307
+00:36:51,987 --> 00:36:52,987
+Benden ne istiyor? Ben onu göremiyorum şu an. Göremiyorsunuz bunu. Göremiyorum. Polinom yok. Polinomun derecesini mi istiyorsun? Niye göremiyorsun? Aynen. İngilizce yaptım. Ekran mı küçük? Ya ben run ettiğim vakit olan kısımdaki yeri göremiyorum. Haberin olsun. Hocam, pencereyi paylaşmış olabilir yanlışlıkla. Pencereyi mi paylaştın?
+
+308
+00:37:21,987 --> 00:37:24,068
+Bunu göremiyor musunuz?
+
+309
+00:37:25,147 --> 00:37:27,467
+Ben şu an sadece kodunu görüyorum.
+
+310
+00:37:34,420 --> 00:37:35,420
+Bir dakika. Son oldu mu? Heh, çok şükür oldu oldu. Nift-Raphson dedik. Üç dedi. Üçü de. Tamam, bana neyi soruyorsun? Polinomun countu. Polinomun countu derken derecesini mi istiyorsun? Aynen. Üçüncü dereceden. Evet. Üçüncü derecenin kat sayısı? Evet. Bir.
+
+311
+00:38:04,420 --> 00:38:16,899
+İkinci derece bir, iki o. Şu an üstü istiyor. Derecesi iki, iki yaz. Anladım ben.
+
+312
+00:38:16,899 --> 00:38:31,659
+Kat sayısı istiyor. Ama küf vardı, küf nereye gitti? Polinom count yani üstten daha az, bir daha azdı.
+
+313
+00:38:35,443 --> 00:39:05,323
+Bu exponenti iki diyor. O zaman şöyle söyleyeyim. Sen yeniden çalıştır. Bana şu denklemi gir, nasıl gireceksen yaz kalemle bir yere x küp artı x kare eksi dokuz x eksi dokuz. Yani x küp artı x kare eksi dokuz x eksi dokuz. Tamam, şu an yapacağım.
+
+314
+00:39:05,443 --> 00:39:07,443
+Şimdi yeniden yap
+
+315
+00:39:18,804 --> 00:39:21,804
+Yine ekranı görmüyorum, kodu görüyorum.
+
+316
+00:39:21,804 --> 00:39:23,804
+Şu an yapacağım.
+
+317
+00:39:27,764 --> 00:39:28,403
+Okey.
+
+318
+00:39:31,123 --> 00:39:32,503
+Newton Raphson dedik.
+
+319
+00:39:33,563 --> 00:39:34,623
+Tekrar yanlış yaptım.
+
+320
+00:39:37,543 --> 00:39:37,863
+Yani.
+
+321
+00:39:38,863 --> 00:39:41,363
+X.
+
+322
+00:39:43,603 --> 00:39:45,603
+Üniversites kümmel.
+
+323
+00:39:48,532 --> 00:40:02,131
+artı x kare iki eksi dokuz bir x eksi dokuz sıfır. Dokuz işte oldu.
+
+324
+00:40:02,131 --> 00:40:05,911
+iletişim şeyler sıfır.
+
+325
+00:40:05,911 --> 00:40:07,151
+Sıfır.
+
+326
+00:40:09,212 --> 00:40:12,831
+Intervasyon sayısı yüzde.
+
+327
+00:40:13,451 --> 00:40:13,991
+Yüz.
+
+328
+00:40:15,991 --> 00:40:19,232
+Sıfır nokta sıfır sıfır bir.
+
+329
+00:40:20,032 --> 00:40:21,091
+Sıfır nokta?
+
+330
+00:40:21,631 --> 00:40:22,951
+Sıfır sıfır bir.
+
+331
+00:40:25,372 --> 00:40:26,771
+Sonuç ne?
+
+332
+00:40:28,251 --> 00:40:28,791
+Eksi bir.
+
+333
+00:40:28,791 --> 00:40:31,791
+Eksi bir. Tamam. Köklerden biri eksidir. Onu bulduk.
+
+334
+00:40:32,131 --> 00:40:39,391
+Peki ikinci olarak Simpson olsun. 8 yapalım.
+
+335
+00:40:39,391 --> 00:40:40,571
+Simpson, evet.
+
+336
+00:40:42,892 --> 00:40:49,712
+Ya neredeyse 45 dakikada 5 kişiye baktık. Bu sınıf bitmez. Çok ağır bakım okuyoruz.
+
+337
+00:40:50,731 --> 00:40:56,731
+İntegrali yapıyoruz. İntegralimiz de şudur. x kare artı 2x.
+
+338
+00:40:57,651 --> 00:40:58,892
+x kare artı 2x.
+
+339
+00:41:09,684 --> 00:41:10,684
+Ağabey intervall istiyor.
+
+340
+00:41:10,684 --> 00:41:12,684
+Birden üçe kadar
+
+341
+00:41:12,684 --> 00:41:14,684
+Ağabey intervall istiyor.
+
+342
+00:41:15,668 --> 00:41:18,668
+Altı
+
+343
+00:41:19,860 --> 00:41:49,459
+1666. Okey. Tamamdır. Sen rapor hazırladın mı? Evet, hazırladım. Tamam. Onu da online Yıldız Evi TR'den yüklüyorsun. Tamam mı? Duydun mu? Duydun mu? Online Yıldız Evi TR'den yükleyeceksin. Evet.
+
+344
+00:41:52,820 --> 00:41:54,820
+yüklemeyi unutma!
+
+345
+00:41:57,715 --> 00:42:08,915
+Tamam, bu kadar. Ümit Lala, Mustafa Emir, Okey.
+
+346
+00:42:11,027 --> 00:42:12,027
+Arkadaşlar, 16'da sınavımız var, 75 dakika. Yanınızda hesap makinesi, kalem, silgi, anmayı unutmayın. Tamam mı? Tamam hocam. Kapatıyorum o zaman. Başka gelen olmaz. Aha, Ziya diye biri çıktı. Ziya? Efendim hocam? Proje mi göstereceksin?
+
+347
+00:42:41,027 --> 00:42:43,068
+Hayır, bitmedi daha benimki
+
+348
+00:42:43,068 --> 00:42:48,368
+Tamam, bugün projelere bakıyorum sınav olduğu için, dersimiz yok
+
+349
+00:42:48,368 --> 00:42:49,487
+Aha
+
+350
+00:42:49,487 --> 00:42:53,947
+Yani başka gösterecek kişi yok, kapatıyorum o yüzden
+
+351
+00:42:53,947 --> 00:42:55,967
+Tamam, teşekkür ederim
+
+352
+00:42:55,967 --> 00:42:56,827
+Tamam, hadi hocam
+
+353
+00:42:56,827 --> 00:42:59,807
+Hocam bir şey soracağım, sınavda geri dönebiliyor muyduk sizin sınavınızda?
+
+354
+00:43:00,767 --> 00:43:01,347
+Bir daha söyle
+
+355
+00:43:01,347 --> 00:43:04,068
+Geri dönebiliyor muyduk soruları, geçtiğimiz soruları?
+
+356
+00:43:05,068 --> 00:43:07,388
+Hayır, onu, evet geri dönebiliyorsun
+
+357
+00:43:08,667 --> 00:43:10,788
+Tamam da hocam, onu hatırlamadım da sorayım dedim
+
+358
+00:43:10,787 --> 00:43:17,627
+Ben de bir kontrol edeyim, geri dönülebilir işaretledim. Şimdi hemen onu bir kontrol edeyim.
+
+359
+00:43:18,767 --> 00:43:20,407
+Hocam sesim geliyor mu?
+
+360
+00:43:20,727 --> 00:43:21,068
+Evet.
+
+361
+00:43:22,147 --> 00:43:26,427
+Projede tam olarak neyi göstereceğiz? Projede çıktılarını mı göstereceğiz?
+
+362
+00:43:27,608 --> 00:43:37,367
+Kaç tanesini yaptığımı söyleyeceksin. Yaptıklarından ben bir tanesini seçeceğim. Şöyle bir koduna bakıp input vereceğim, output sonucuna bakacağım.
+
+363
+00:43:37,367 --> 00:43:43,267
+Tamam, şey ben bazılarında işte üstlerle logaritmik falan da yaptım da
+
+364
+00:43:43,267 --> 00:43:45,007
+Tamam olabilir
+
+365
+00:43:45,007 --> 00:43:52,447
+Yani ne demek istediğini anlamadım, yapmış olabilirsin
+
+366
+00:43:52,447 --> 00:43:56,207
+Yani onları da kontrol edecek misiniz ayrı ayrı yok ki sadece kolyonama göre
+
+367
+00:43:56,207 --> 00:43:57,927
+Sen bana o bilgiyi ver
+
+368
+00:43:57,927 --> 00:44:01,067
+Tamam
+
+369
+00:44:01,067 --> 00:44:05,267
+Şey bir de hocam bir şey söyleyeceğim, ben bu dersi alttan alıyorum
+
+370
+00:44:05,267 --> 00:44:14,087
+normalde dersim nesneye yönelikle çakışıyor. Ben size işte önceden yazsam siz bana saati söyleseniz o saatte girebilir miyim?
+
+371
+00:44:14,867 --> 00:44:15,227
+Nereye?
+
+372
+00:44:16,007 --> 00:44:19,667
+İşte oturuma gireyim size projemi göstereyim.
+
+373
+00:44:19,667 --> 00:44:20,748
+Proje göstermeyemi?
+
+374
+00:44:21,108 --> 00:44:21,767
+Evet, evet.
+
+375
+00:44:22,248 --> 00:44:25,328
+Ama ilk izin iste ilk sana bakarım çıkarsın.
+
+376
+00:44:25,767 --> 00:44:27,587
+Tamam, tamam hocam. Teşekkür ederim.
+
+377
+00:44:27,587 --> 00:44:29,567
+Tamam, o kadarını yaparız. Okey.
+
+378
+00:44:32,087 --> 00:44:34,567
+Başka bir yeni gelen yok. Okey.

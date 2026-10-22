@@ -1,0 +1,2407 @@
+1
+00:03:22,003 --> 00:03:50,003
+Artık bugün bu son dersimiz bildiğiniz üzere inşallah hatırlıyorsunuzdur doğru. Hafta ikinci vizemiz var. Ders saatinde olabilir ama size duyuru yapacağız. Çünkü aynı saat diliminde olan alttan alınan diğer derslerin hocaları da bize yapacak olursa,
+
+2
+00:03:50,003 --> 00:04:08,743
+çakışma olmaması adına saati değiştirebiliriz. Ahmet Hoca bunu öğrenecekti diğer derslerin hocalarından. Ona göre saatimizi belirleyeceğiz. Mutlaka OBS üzerinden ve classroom üzerinden sizinle paylaşılır.
+
+3
+00:04:08,743 --> 00:04:20,863
+Bunun dışında önümüzdeki hafta vizeden sonra projesini bitirmiş ve göstermek isteyenler olursa onlara da yavaştan bakmaya başlayacağım.
+
+4
+00:04:20,863 --> 00:04:36,084
+Çünkü bu dersi ben dönemin başında 98 kişiydik. Şu an sanki 120'ye doğru gitti. Bu nasıl bir artış oldu, nereden kaynaklandı bilmiyorum.
+
+5
+00:04:36,084 --> 00:04:46,063
+Bunların kontrolü oldukça zaman alacaktır. Önümüzdeki hafta başlamak istiyorum. Bugün regresyon konusunu size anlatacağım.
+
+6
+00:04:46,563 --> 00:04:55,944
+Regresyon konusu, interpolasyonla karşılaştırırsam çok daha kolay ve daha zevkli gelecektir.
+
+7
+00:04:55,943 --> 00:05:12,223
+aslında ne tür fonksiyon geçirirsek geçirelim bize verilmiş olan noktalardan ister doğru olsun ister kolinom olsun ya da lineer olmayan bir fonksiyon olsun hepsinde yapacağımız işlem aynısı olacak.
+
+8
+00:05:12,223 --> 00:05:25,483
+Bunun üstünü vura vura anlatacağım. Eğer ilk baştaki bu kısmı anlarsak ondan sonraki kısımlar zaten birbirinin tekrarı olacak.
+
+9
+00:05:25,943 --> 00:05:42,923
+Bu sonradan bağlanan arkadaşlar lütfen bu ilk söylediğim niyeti zaten nasıl diyeyim başa da bakmazlar ben aralarda anlatırım.
+
+10
+00:05:42,923 --> 00:05:50,683
+Siz kendi içinizde de mutlaka WhatsApp grubunuz vardır bu vizeyle ilgili olan bilgileri verirsiniz.
+
+11
+00:05:50,683 --> 00:05:55,683
+Şimdi ben yavaş yavaş slide'ıma geçiyorum.
+
+12
+00:05:55,683 --> 00:05:59,243
+Slide'ıma geçiyorum.
+
+13
+00:06:07,764 --> 00:06:12,883
+Selçın, sesim geliyor mu?
+
+14
+00:06:15,795 --> 00:06:17,795
+Hocam benim ses mi geliyor mu?
+
+15
+00:06:17,795 --> 00:06:43,795
+Tamam geliyor. Ali bugün şey sensin, başkan sensin. Arada bir lütfen ses verin. Ya da ben ses deyince bir sesliğe karşılık versin. Çünkü şu an binamızda böyle internet problemi yaşandığı için teknik servistekiler geziniyor. Her an her şey olabilir. Ben böyle boşluğu anlatmış olmayayım.
+
+16
+00:06:43,795 --> 00:06:48,415
+Şu an görüyorsunuz, regresyon yazıyor, değil mi?
+
+17
+00:06:49,196 --> 00:06:49,856
+Evet hocam.
+
+18
+00:06:50,136 --> 00:06:50,795
+Tamamdır.
+
+19
+00:06:50,816 --> 00:06:54,235
+Bir şey, ben bir şeyde haber verebilir miyim? İki gündür internetimde bir sıkıntı var.
+
+20
+00:06:56,075 --> 00:06:58,755
+Aynı şey senin de başına gelebilir yani.
+
+21
+00:06:59,795 --> 00:07:00,476
+Evet hocam.
+
+22
+00:07:01,075 --> 00:07:02,136
+Peki, o ne?
+
+23
+00:07:02,255 --> 00:07:04,095
+Ben bir tane tüm giderse şey yaparım arkadaşlar.
+
+24
+00:07:04,476 --> 00:07:07,395
+Tamam, anladım. Şu Yasin Aktaş.
+
+25
+00:07:09,735 --> 00:07:10,516
+Yasin Bey?
+
+26
+00:07:10,836 --> 00:07:11,495
+Evet hocam.
+
+27
+00:07:11,495 --> 00:07:18,355
+Ya ne kadar çok soru soruyorsun klasrumda? Ne kadar çok soru?
+
+28
+00:07:18,815 --> 00:07:19,555
+Ben mi hocam?
+
+29
+00:07:19,555 --> 00:07:37,555
+Evet. Ben biraz diyorum. İsim benzerliğim oldu. Arkadaşlar biraz Ahmet Hoca şöyle alıştırmış olabilir. Belki o soruları soranlar benim grubumdan değil bilmiyorum. Sizler mühendis olmaya aday gençlersiniz.
+
+30
+00:07:37,555 --> 00:08:05,455
+önerirsiniz. Bazen bazı konularda kendi inisiyatifinizi alın ve kendinize güvenin lütfen. Böyle en ufak şeyleri sormayın. Bu annen neye benziyor? Hani evde bir çocuk olur, her şeyi izin alarak şöyle mi yapacağım, şöyle mi yapacağım diye sorar sorar, sonra başına kendisinin karar vermesi gereken bir durum kaldığında bocalayabilir.
+
+31
+00:08:05,455 --> 00:08:22,195
+her şeyi yani bu bütün hayatınızın her döneminde olsun yani sormak yerine araştırmayı tercih edin. Evet sorun bu Yasin sana özel diye söylemiyorum. Öyle bir isim aklımda kalmış yanılıyor da olabilirim.
+
+32
+00:08:22,195 --> 00:08:37,995
+Kendinize güvenip, insiyatif almak çok önemli bir şey. Ben bunu kendi adıma birazcık geç yaşlarda edindim. Belki bizim zamanımızın yetiştirilme tarzıyla da alakalıydı.
+
+33
+00:08:37,995 --> 00:08:51,296
+Ve bunu taktığım vakit inan hayatı daha farklı algılıyorsunuz, daha özgür oluyorsunuz. Bu da hani büyüklerin hep böyle bir takım nasihatları olur ya, onun gibi bir şey oldu.
+
+34
+00:08:52,195 --> 00:08:56,755
+Şimdi yine ben bağırarak konuşmaya başladım, ses şimdiden gitti.
+
+35
+00:08:56,755 --> 00:09:01,075
+Şimdi regresyon, şu maddelerin hepsini açıyorum.
+
+36
+00:09:01,915 --> 00:09:07,935
+Regresyonun diyebilirsiniz ki, interpolasyondan ne farkı var?
+
+37
+00:09:08,715 --> 00:09:11,296
+Aslında çok büyük bir farkımız yok.
+
+38
+00:09:11,855 --> 00:09:16,215
+Yani her ikisinde de bir takım ölçümler yapılıyor.
+
+39
+00:09:16,695 --> 00:09:20,435
+X değerleri, bunlara karşı verilmiş Y değerleri var.
+
+40
+00:09:20,435 --> 00:09:28,915
+ve ben bu x'e karşılık bu y değerlerini verecek olan fonksiyonları bulmaya çalışıyorum.
+
+41
+00:09:29,755 --> 00:09:40,355
+Enterpolasyonda bulduğum değerler daha gerçekçi olabiliyor fakat regresyonda daha yaklaşık değerler bulmaya çalışıyorum
+
+42
+00:09:40,355 --> 00:09:51,096
+ve benim amacım gerçek değerle yine bulduğum interpolasyon fonksiyonu arasını farkı minimize edebilmek.
+
+43
+00:09:51,816 --> 00:09:55,135
+Zaten şurada yeniden kalemimi çıkarayım.
+
+44
+00:09:55,695 --> 00:09:58,815
+Şurada yine şunu gösteriyoruz.
+
+45
+00:09:59,596 --> 00:10:01,555
+Interpolasyon'da da bu vardı.
+
+46
+00:10:02,135 --> 00:10:06,775
+Bir takım x değerlerine karşılık bir takım y değerleri ölçülüyor.
+
+47
+00:10:06,775 --> 00:10:11,335
+ben gerçek fonksiyonumu bilsem o gerçek fonksiyon bu.
+
+48
+00:10:12,052 --> 00:10:41,171
+Ben gerçek fonksiyonu bilmiyorum. Ne yapıyorum? Bunlara uyabilecek bir fonksiyon uydurmaya çalışıyorum. O da büyük P ile gösterdiğim, enterpolasyon fonksiyonu. Bu ikisi, Yi ve Fxi eşitse zaten cuk diye oturmuş bir fonksiyon buldum demektir. Fakat gerçek dünyada bunların birebir aynısı olan fonksiyonu bulabilmem zor.
+
+49
+00:10:41,171 --> 00:10:50,671
+Benim çözdüğüm sorularda bulabiliyoruz. Çünkü ben onları kendim özel bir fonksiyon belirliyorum, y fonksiyonu.
+
+50
+00:10:51,092 --> 00:10:58,691
+X değeri verirsem y değeri ne olur diye hesaplıyorum. Size veriyorum fonksiyonu bilmiyormuşum gibi.
+
+51
+00:10:58,691 --> 00:11:07,331
+Bunu acaba hangi fonksiyon sağlar diyorum. O yüzden sizin bulduğunuz çözümler gerçek y'ye eşit oluyor.
+
+52
+00:11:07,331 --> 00:11:15,211
+Fakat gerçek dünyada bu interpolasyon fonksiyonu üzerine bir epsilon miktarı ekleniyor.
+
+53
+00:11:16,071 --> 00:11:21,092
+Bu epsilon miktarı artı ya da eksi olabilir. Bir fark var.
+
+54
+00:11:21,611 --> 00:11:32,511
+Bu interpolasyon fonksiyonuna bu error miktarını eklediğim vakit gerçek fonksiyonu elde etmiş oluyoruz.
+
+55
+00:11:32,511 --> 00:11:48,331
+Gördüğünüz gibi enterpolasyonda da, regresyonda da yaptığım şey aynı. Peki enterpolasyon çalışırken biz linear olmayan fonksiyonlar geçirdik.
+
+56
+00:11:48,331 --> 00:11:53,851
+Regresyonda ise linear olmayan fonksiyonlar da uydurabiliriz.
+
+57
+00:11:53,851 --> 00:12:04,711
+Fakat bunları çözebilmek için de linear olmayan fonksiyonları linear hale getireceğim ki benim için çözüm kolay olsun.
+
+58
+00:12:05,492 --> 00:12:13,571
+Burada yazılanların hepsi hikaye yani bu anlattıkları maddeler halinde oralara konulmuş.
+
+59
+00:12:14,151 --> 00:12:16,272
+Bunları bir kez okursunuz.
+
+60
+00:12:18,331 --> 00:12:41,572
+Şimdi regression deyince en önemlisi min square error gelir. Türkçede de yani ortalama kareler falan ama şöyle diyelim en küçük kareler. En küçük kareler yaklaşımı kullanılır. Oldukça kolay ve başarılı bir sonuç verir bize.
+
+61
+00:12:41,572 --> 00:12:45,432
+İşte burada ne diyor en küçük kareler yaklaşımında?
+
+62
+00:12:45,432 --> 00:13:02,831
+Eğer diyor bir fiziksel olayların çoğunda iki veya daha fazla birbirine bağlı değişken bulunur, bir olayın denilsel sonucunun analitik olarak incelenmesi olayın formüle bağlanması ile mümkündür.
+
+63
+00:13:02,831 --> 00:13:09,912
+İşte sana belirli x değerleri için almış olduğu y değerleri veriliyor.
+
+64
+00:13:09,912 --> 00:13:33,891
+İşte bu x'in y'si bu, bunun bilmem nesi bu. Sana deniyor ki şuradaki noktalardan geçen fonksiyonu bu. Ben bunu enterpolasyonda yaptığımda daha gerçekçi sonuçlar uydurabiliyordum. Yani şöyle bir fonksiyon bulup geçirebiliyordum.
+
+65
+00:13:33,891 --> 00:13:55,891
+Regresyonda ise bunu biraz daha yaklaşık hatayla bulmaya çalışıyoruz ve ayrıca ben bu noktalardan bir geçireceğimi de bilmiyorum. Acaba bir doğru mu geçireceğim? Miner bir fonksiyon mu geçirmeliyim? Nam-miner bir fonksiyon mu geçirmeliyim? Bunu da bilmiyorum.
+
+66
+00:13:55,891 --> 00:14:03,891
+Ama en küçük kareler yönteminin en önemli şeyi şudur. Lütfen burayı çok iyi dinleyin.
+
+67
+00:14:03,891 --> 00:14:05,891
+Şimdi
+
+68
+00:14:05,587 --> 00:14:34,587
+Ben şu verilen noktalardan bir doğru geçireceğim diyorum. Elimde 6 tane verim var. Geçirdiğim doğru sadece iki tane veri ile eşleşiyor. Yani buradaki y ile buradaki interpolasyon fonksiyonunun farkı nedir? Sıfırdır. Çünkü birebir örtüşen bulmuşum. Burada da aradaki fark nedir? Epsilon sıfırdır.
+
+69
+00:14:34,587 --> 00:15:02,628
+Şimdi şuraya bakalım. Buradan bu doğru geçmiyor. Ne kadarlık bir fark var diyelim. Artı epsilon'luk bir fark var. Bu da geçmiyor. Ne kadarlık bir fark var y'lerde? Diyelim eksi epsilon. Burada eksi epsilon 1. Efendim burası artı epsilon 3 kadar. Bu da 4 olsun.
+
+70
+00:15:02,627 --> 00:15:15,127
+farklı olsun. Artı ya da eksi yönde bir takım farklar var. İşte en küçük kareler yaklaşımı bu farkları minimize etmeye çalışıyor.
+
+71
+00:15:15,407 --> 00:15:27,087
+Şimdi şöyle bir örnek daha verelim. Şunu silelim. Bunun şurada olması gerekirken y'sinin değeri şurası.
+
+72
+00:15:27,087 --> 00:15:35,028
+Burada çıkması gerekirken bakın şuradaki x değerini verdim. Gerçek fonksiyonun y'si burada.
+
+73
+00:15:35,907 --> 00:15:42,687
+Fakat ben geçirdiğim doğrudan bunun y'sini neresi olarak buluyorum? Burası olarak buluyorum.
+
+74
+00:15:43,287 --> 00:15:47,567
+Burada bir fark var. Bu fark diyelim ki artı yönde 5.
+
+75
+00:15:47,567 --> 00:16:01,347
+Buna bakıyorum. Bunun gerçek y'si şurada bir yerdeyken bu fonksiyonu kullandığım vakit şuradaki x değerini y'sini şurada bir yerde bulacağım.
+
+76
+00:16:01,987 --> 00:16:07,147
+O zaman nedir? Burada da negatif yönde bir fark olsun. Eksi 4 diyelim.
+
+77
+00:16:07,387 --> 00:16:14,687
+Bunda da negatif bir fark var. Eksi 3 diyelim. Bunda da pozitif bir fark var. 3 diyelim.
+
+78
+00:16:14,687 --> 00:16:34,107
+Şimdi ben bütün hataları toplayayım. Hatalar neydi? 5 birim, eksi 4 birim, eksi 3 birim, artı 3 birim. Hatalarım bunlar. Bu hataları toplarsam artı eksi 3 birbirini götürdü. 5 eksi 4 eşittir bir çıktı.
+
+79
+00:16:34,108 --> 00:17:01,668
+Yani hata miktarı 1 gibi oldu. Halbuki 1 olan bir hata yok. 5 birim burada, 4 birim burada 9, 3 birim burada 12, 3 birim burada 15. O yüzden buradaki hataları toplamak artık da eksiler birbirine götürdüğü için hata sanki minimize edilmiş gibi oluyor. Ben de seviniyorum. Çok güzel bir fonksiyon buldum diyorum.
+
+80
+00:17:01,668 --> 00:17:25,348
+Halbuki değil. O zaman ben bu yanılgıdan kurtulmak için ne yapmalıyım? İşte karelerle kastedilen bu. Bunların karelerini alırsam buranın karesi 25, bunun karesi 16, eksi 3'ün karesi 9, artı 3'ün karesi 9, bunların hepsini topladım.
+
+81
+00:17:25,347 --> 00:17:35,427
+işte bir şey çıktı. Ama en azından artı ve eksilen bildirini götürmüyor ve gerçekten bir hata olduğunu görüyorum.
+
+82
+00:17:36,007 --> 00:17:45,687
+Ve benim amacım da buradaki hatayı toplamını belirlediğim hata miktarından küçük işit yapabilmem.
+
+83
+00:17:45,687 --> 00:17:48,867
+en küçük kareler yaklaşımı bu.
+
+84
+00:17:49,307 --> 00:17:57,847
+Hata miktarlarının karelerinin toplamından gidiyor ve bu kareler toplamını minimize etmeye çalışıyor.
+
+85
+00:17:59,067 --> 00:17:59,407
+Peki.
+
+86
+00:18:00,407 --> 00:18:01,347
+Anlaşılmıştır hocam.
+
+87
+00:18:01,779 --> 00:18:02,779
+Efendim? Anlaşılmıştır hocam. Özür dilerim. Evet ses geldi. Teşekkür ederim. Vietonum geç düştü birazcık. O zaman buraya kadar dediklerim bana ne diyor? Senin diyor şöyle bir durumun var. Bir doğru geçireceğim. Gerçek fonksiyonun bu. Gerçek x değerini koydun ve gerçek bir y değerim var. Gerçek y değerim bu. Bir de enterp
+
+88
+00:18:31,779 --> 00:18:57,979
+interpolasyon fonksiyonu olarak bir doğru geçireceğiz. O doğru da bu. Bu ikisi arasındaki farkı alacağız. Yani senin gerçek değerin bu. Çıkarıyorum. Kimi çıkarıyorum? Geçinmek istediğim interpolasyon fonksiyonun bir doğruysa A artı Bx'i çıkarıyorum. Bunu nereye eşitliyorum?
+
+89
+00:18:57,979 --> 00:19:07,640
+farka. D yani distance, gerçekle interpolasyon fonksiyonunun vermiş olduğu y değerleri arasındaki fark.
+
+90
+00:19:07,899 --> 00:19:17,640
+Buna i niye koydum? Elimde i tane nokta varsa, i tane yi değeri, i tane xi değeri olacak.
+
+91
+00:19:17,640 --> 00:19:24,279
+en tane nokta için bu farkları alacağım.
+
+92
+00:19:25,419 --> 00:19:31,680
+Peki ben bu D-İ'leri toplayacağım ama demin ne dedik?
+
+93
+00:19:32,040 --> 00:19:39,479
+Farklar artı eksi olduğunda ve ben bunları topladığımda artılar ve eksiler birbirini götürür.
+
+94
+00:19:40,040 --> 00:19:43,779
+O yüzden farkların karelerini alıyoruz diyeceğiz.
+
+95
+00:19:43,779 --> 00:20:10,459
+Şimdi fark neydi? D, distance yani gerçekle interpolasyon fonksiyonu arasındaki mesafe diye düşünün. Distance neydi? Gerçek y ile geçirmek istediğim interpolasyon fonksiyonu arasındaki farktı. Yazamadım bir türlü. Ben şu an doğru geçirmek istiyorum.
+
+96
+00:20:10,459 --> 00:20:15,039
+N tane noktam varsa buralara i koydum.
+
+97
+00:20:16,439 --> 00:20:19,519
+N tane noktam varsa birden n'e kadar.
+
+98
+00:20:20,099 --> 00:20:22,359
+Şu içteki eksiyi açtım.
+
+99
+00:20:22,579 --> 00:20:26,779
+Eksi a, eksi b, x i'nin karesi oldu.
+
+100
+00:20:27,499 --> 00:20:28,779
+Benim amacım nedir?
+
+101
+00:20:29,139 --> 00:20:34,059
+Bu kareler toplamını minimize etmek.
+
+102
+00:20:34,959 --> 00:20:35,579
+Tamam mı?
+
+103
+00:20:36,879 --> 00:20:39,359
+Şimdi elimde şu formül var.
+
+104
+00:20:39,360 --> 00:20:57,020
+Bakın bunu yeniden söylüyorum. Her şey bunun üzerine kurulu. Regresyonda en küçük kareler yöntemini uyguluyorsan şunu diyorsun. Elimde bir gerçek Y var. Bundan interpolasyon fonksiyonumu çıkaracağım.
+
+105
+00:20:57,019 --> 00:21:11,579
+benim interpolasyon fonksiyonum bir doğru olabilir, bir polinom olabilir, trigonomiklik bir fonksiyon olabilir veya herhangi bir fonksiyon olabilir bu parantezin içinde yer alıyor.
+
+106
+00:21:11,579 --> 00:21:24,739
+Örnek olarak önce bir doğru olsun A-B-X dedik. Bunların hepsi neye eşitti? D'ye eşitti.
+
+107
+00:21:24,739 --> 00:21:42,939
+Peki elimde kaç tane örnek var? N tane örnek var. Öyleyse diyorum ki İ eşittir, birden N'e kadar, Yİ'den, interpolasyon fonksiyonundan X'in yerine koyuyorum.
+
+108
+00:21:43,459 --> 00:21:53,299
+Buradan interpolasyon fonksiyonuna ait bir çıkış üretiyorum. Bu ikisi arasındaki farka bakıyorum. Ve buna da S diyorum.
+
+109
+00:21:53,779 --> 00:22:13,779
+Ama bu farklar artı ve eksiler birbirine götürdüğü için bu farkların da karesini alıyorum diyorum. Bu formül buradan çıktı. Burada eksiyi açtım, eksi a. Eksi ile eksi artı oldu. Niye olmadı ki?
+
+110
+00:22:16,788 --> 00:22:33,187
+Artı bx'i geçireceğim. Çok özür dilerim. Eksi a, eksi bx oldu. Peki bundan sonra ne yapacağım? Kaç tane bilinmeyen var? İki tane a ve b bilinmeyen kat sayılar bunlar.
+
+111
+00:22:33,187 --> 00:22:50,288
+Öyleyse elimdeki S ifadesinin A'ya göre türevini alacağım, sıfır eşitleyeceğim. S'in B'ye göre türevini alıp sıfıra eşitleyeceğim. İki bilimleyenim var, iki tane de denkemin olacak ve bunları çözeceğim.
+
+112
+00:22:50,288 --> 00:23:02,207
+A ve B'nin kat sayılarını bulacağım. Enterpolasyon fonksiyonunda A'yı ve B'yi yerine koyup benim fonksiyonum, geçinmek istediğim fonksiyonum budur diyeceğim.
+
+113
+00:23:02,207 --> 00:23:27,727
+Peki şimdi bu elimizdeki esin A'ya göre türevini alalım. Nasıl alınır A'ya göre türev? Şu sigma'yı en başa koydum. Üst düştü, ikiyi öne aldı. İçinin kendisi Yi, eksi A, eksi B, X, Y. Burada işaretlerin tam tersini almış.
+
+114
+00:23:27,727 --> 00:23:34,907
+Yani bunu ben açarsam bu nedir? Yi-A-Bx
+
+115
+00:23:34,907 --> 00:23:43,927
+Burada artı A artı Bx-Yi almış. Yani değişen hiçbir şey yok.
+
+116
+00:23:44,647 --> 00:23:53,707
+Parantezi düşürdük. Pardon üstü düşürdük. Parantezin kendisi çarpı A'ya göre türev alıyorum.
+
+117
+00:23:53,707 --> 00:24:15,807
+A'ye göre türev alırsam nedir? 1'dir. Burada çarpı 1 var. Öyleyse bunu açalım. 2A sigma var. Artı 2B sigma x i eksi 2 sigma y i. Bunu sıfıra eşitledim.
+
+118
+00:24:15,807 --> 00:24:40,967
+Şimdi gelelim şunun B'ye göre türevini almak. Sigma'yı yine başa yazdık. Üst düştü, 2'yi düşürdüm. İçinin kendisini yazdım. A artı BX eksiye ve B'ye göre türev alacağım. B'ye göre türev alırsam ne olur? X'i. Bunun başında da X'i çarpanı var.
+
+119
+00:24:40,967 --> 00:24:57,288
+O zaman bu ne oldu? 2A, XI, B, XI ikisi de var. Eksi 2XI, YI, sigma'sıyla sıfıra eşitledim.
+
+120
+00:24:58,027 --> 00:25:05,227
+YI'leri eşitliğin sol tarafına al. Bu eksi bu tarafa geçti. Bu eksi bu tarafa geçti.
+
+121
+00:25:05,228 --> 00:25:09,368
+her iki taraftan ikileri sil.
+
+122
+00:25:10,968 --> 00:25:13,328
+O zaman karşımıza ne gelecek?
+
+123
+00:25:14,267 --> 00:25:14,828
+Şu gelecek.
+
+124
+00:25:19,443 --> 00:25:20,443
+iki sildik, iki A pardon A sigma, B sigma x i, sigma y i eşittir 0 falan filan. Bu daha henüz eşitliğin bu tarafına bunu geçirmemiş. Şimdi burada bunlar sabit sayılar olduğu için sigma'nın başlarına çıkarabilirim bunları. Aynen burada çıkarmışım. A kas sayısı dışarıda sigma x i, B kas sayısı dışarıda sigma x i,
+
+125
+00:25:49,443 --> 00:26:17,383
+x'i, y'yi eşitliğin bu tarafına geçirdim. Aynı şeyleri burada yaptım. Burada bir farklı olarak şunu görüyorsunuz. Bu da şudur. Sigma birden n'e kadar a böyle bir şey görüyorsunuz. Bu n tane a'nın çarpımıdır. Yani bu nedir? n tane a'yı toplamak demek. n tane a'yı arka arkaya toplamak, a'yı n'le çarpmaktır.
+
+126
+00:26:17,383 --> 00:26:24,183
+artık elimde benim bu var, iki bilinmeyenim var A ve B, iki tane de denklemin var
+
+127
+00:26:24,183 --> 00:26:32,603
+öyleyse iki bilinmeyenli iki denklemi çözmeye çalışıyorum ve bakıyorum bilinmeyenlerim nedir?
+
+128
+00:26:32,603 --> 00:26:45,683
+A ve B, ben bunu A kas sayılar matrisi diyelim, bu bilinmeyenlerim ve bu da eşittir, çıktı matrisi
+
+129
+00:26:45,683 --> 00:27:14,783
+Öyleyse buraları ne oldu? Sigma Yi'yi buraya aldım. Sigma Xi'yi buraya koydum. A ve B çarpanlar burada. Burada ne var? N var. Sigma Xi, burası da Sigma Xi, burası da Xi'nin karesi toplam. Bunu aslında açarsanız bu nedir? N çarpı A artı B çarpı Xi eşittir Sigma Yi.
+
+130
+00:27:15,683 --> 00:27:21,823
+AXI artı BXI kare eşittir XIYI.
+
+131
+00:27:22,484 --> 00:27:39,524
+Artık bana dense ki size verilmiş olan bu X değerlerine karşılık bu Y değerlerinin alınmış olduğu fonksiyonun ara değerlerini represyon kullanarak bulunuz ve bu verilen değerlerden de bir doğru geçiriniz.
+
+132
+00:27:39,524 --> 00:27:45,343
+Dendiği an kullanacağım şey bu doğru geçirdiğim için.
+
+133
+00:27:45,683 --> 00:28:12,883
+Bunun nasıl çıkarıldığını gördük. Burada önemli olan şey şudur. Bakın bu M toplam X'i bu bir kayıyor, bu buraya geliyor. X'inin karesi AB, Y'i, X'i, Y'i. Biraz sonra buradan ikinci dereceden bir denklem geçirecek olsa bu nasıl değişecek onu göreceğiz.
+
+134
+00:28:12,884 --> 00:28:14,404
+sesim geliyor mu?
+
+135
+00:28:16,764 --> 00:28:17,083
+Tamam.
+
+136
+00:28:17,783 --> 00:28:18,164
+Okey.
+
+137
+00:28:19,423 --> 00:28:26,824
+Şimdi bu kadar belki bazı şeyler oturmamış olabilir ama hemen bir örnekle bunu yapalım.
+
+138
+00:28:27,563 --> 00:28:30,943
+Bunu etakladı çözdüğümde çok daha iyi oluyor.
+
+139
+00:28:31,164 --> 00:28:35,124
+Ben şunun kalemini çıkaracağım.
+
+140
+00:28:36,063 --> 00:28:37,783
+Daha rahat yazabiliyorum çünkü.
+
+141
+00:28:37,904 --> 00:28:39,044
+Bunun kalemi hangisi?
+
+142
+00:28:39,984 --> 00:28:41,024
+Kalem çıktı. Okey.
+
+143
+00:28:41,024 --> 00:28:51,104
+Bana deniyor ki, bana deniyor ki, denemedi, bunu yok etmek istiyorum.
+
+144
+00:28:52,744 --> 00:29:00,503
+Bana dediler ki, senin elimde şu x değerlerim var ve şu yi değerlerim var.
+
+145
+00:29:00,503 --> 00:29:07,484
+Bu xi'ye karşılık bu yi'yi veren fonksiyonu, interpolasyonla bulun.
+
+146
+00:29:07,483 --> 00:29:15,083
+Okey, interpolasyon fonsiyonu olarak da bir doğru kullanım deniyor. Tamam.
+
+147
+00:29:15,923 --> 00:29:16,923
+Diyelim ki ben bunu unuttum. Bu formülü unutmuş olabilirim. Ne yapıyorduk biz? Gerçek fonksiyonu y, çıkarmak istediğim fonksiyon da nedir? a artı bx. Çünkü bana doğru geçir diyor. Tamam mı? a artı bx. Bu. E ben bunun farklarını alıyordum ki minimize etmek için hatayı. Bunun başında kare var.
+
+148
+00:29:45,923 --> 00:29:57,523
+Ondan sonra en tane verim var. Buraya i eşittir. Birden n'e kadar koyuyorduk. Şunlara da i koyuyorduk.
+
+149
+00:29:58,543 --> 00:30:07,883
+Parantezin içini nasıl açıyorduk? yi, eksi a, eksi bxi diyorduk.
+
+150
+00:30:07,883 --> 00:30:24,644
+ve burada karesi vardı. Burada bir sigma'mız var ve bunu da S'ye eşitlemiştik. Kaç tane bilinmeyenin vardı? İki tane. S'ni bir A'ya göre türevini alıyorduk.
+
+151
+00:30:24,644 --> 00:30:40,743
+A'ya göre türevini alırken ne yapıyorduk? Üst düşüyordu. İçerinin aylısını yazıyordum yani şunu ve A'ya göre türev alıyordum. A'ya göre türev alırsam da eksi bir ve bunu sıfıra eşitliyordum.
+
+152
+00:30:40,743 --> 00:30:53,243
+B'ye göre türev aldığımda da yine üst düştü. Parantezin içi B'ye göre türev aldığımda da bunu eksi x ile çarpıp sıfıra eşitliyordu.
+
+153
+00:30:53,243 --> 00:31:01,543
+Benim karşımda iki bilinmeyen iki denklem oluyordu ve bu matrisi yazıyordu.
+
+154
+00:31:02,324 --> 00:31:10,483
+Yani siz de yapsanız bunun açıklığını aynen bir önceki slatlardaki gibi bunu bulacağız.
+
+155
+00:31:10,743 --> 00:31:16,743
+Bunu çok iyi belli, defalarca bunu çıkarmamız gerekmiyor.
+
+156
+00:31:17,743 --> 00:31:22,864
+X'i, X'i, karesi, A, B, Y, X'i, Y'i.
+
+157
+00:31:23,584 --> 00:31:27,724
+Peki, şimdi bunu silelim.
+
+158
+00:31:28,944 --> 00:31:29,724
+Silemedim.
+
+159
+00:31:33,299 --> 00:31:34,299
+Sorumuza geri dönelim. Kalem, kalem, kalem. Kalem nerede? Kalem ne oldu? Evet. Şimdi, benim neye ihtiyacım var bu matriste? N sayısı. N nedir? Kaç tane verim var? Kaç tane verim var? Sıfırdan beşe kadar altı tane verim var. Altıyı yazdım. Sonra neye ihtiyacım var? X'lerin toplamına. X'ler burada. Buradaki X'lerin verilerini
+
+160
+00:32:03,299 --> 00:32:26,319
+topladığım vakit 10, 18, 24, 28, 30. Buraya 30'u yazdık. Bu bunun kaydı böyle aynıydı 30. X'ilerin toplamı, karelerinin toplamı. Hemen X'i karelerine alan bir kolon açtım. Sıfırın karesi, ikinin karesi, dördün karesi, onun karesi. Bunları topladım. 220'yi yazdım.
+
+161
+00:32:26,320 --> 00:32:46,779
+A ve B. Burada Yi'lerin toplamı var. Hemen bana verilen Yi'leri topladım. 66.1. Burada da X ile Yi'nin çarpımlarının toplamı var. X ile Yi'leri çarptı. Bunların toplamı da 470.2.
+
+162
+00:32:46,779 --> 00:33:11,919
+İşte size ne çıktı? Bir matris çözümü. Bunu istediğin şekilde çöz. Matematik dersleri nasıl çözüyorsun? Şunun diskriminantını hesaplıyorsun. 6x220-30x30, diskriminant 420. Delta A'yı nasıl buluyorduk? Birinci kolona gidiyorduk. Y eksenini koyuyorsun.
+
+163
+00:33:11,919 --> 00:33:17,319
+İkinci kolon aynı, bunun diskriminantını buldun 4.36
+
+164
+00:33:17,319 --> 00:33:27,439
+B'de ise ikinci kolona Y'yi koyuyorsun, birinci kolon aynı, diskriminantı buluyorsun 8.38.2
+
+165
+00:33:27,439 --> 00:33:33,619
+A'yı nasıl buluyorduk? Delta A bölü delta, B'de delta B bölü delta
+
+166
+00:33:33,619 --> 00:33:37,239
+A'nın değeri bu, B'nin değeri de bu
+
+167
+00:33:37,239 --> 00:33:50,419
+İster bunu böyle çözersin, ister bu derste matris çözme yöntemlerini gördük, isterseniz onları kullanırsınız ama bunu kullanmak çok daha kolay ve pratik
+
+168
+00:33:50,419 --> 00:34:04,959
+Şimdi elinde bulunmuş olan A var, hesaplanmış olan B var, ben buradan ne geçirdim? Bir doğru, doğru denklemim neydi? Y eşittir, A artı, bunlar niye kayboluyor bilmiyorum
+
+169
+00:34:04,960 --> 00:34:08,840
+Allah Allah kaybolan kalem yazmışım.
+
+170
+00:34:10,439 --> 00:34:12,240
+Kaybolmayan kalem nasıl oluyor?
+
+171
+00:34:15,480 --> 00:34:16,960
+Bundan çıksam?
+
+172
+00:34:19,280 --> 00:34:20,120
+Hiç bilmiyorum.
+
+173
+00:34:21,600 --> 00:34:22,400
+Şuradan mı çıkayım?
+
+174
+00:34:22,460 --> 00:34:24,460
+Bir kaybolan kalemimiz eksikti.
+
+175
+00:34:26,260 --> 00:34:27,740
+Bakalım kaybolacak mı?
+
+176
+00:34:28,320 --> 00:34:29,079
+Kaybolmadı.
+
+177
+00:34:29,079 --> 00:34:29,460
+Evet.
+
+178
+00:34:30,219 --> 00:34:33,040
+Benim interpolasyon şeyim neydi?
+
+179
+00:34:33,039 --> 00:34:56,859
+formülüm A artı Bx'ti. Artık A'yı biliyorum. 1.038. B'yi biliyorum. 1.99. X'i de koydum. İşte diyor seni bu X'e karşılık bu Y değerini veren bir doğru geçirmek istiyorsan yaklaşık doğru fonksiyonun budur diyor.
+
+180
+00:34:56,859 --> 00:35:06,240
+Bu. Şimdi bakalım x'e 0 verelim. y 1.038 çıktı. Burada y nedir? 1.
+
+181
+00:35:06,672 --> 00:35:35,271
+Bir olması gerekirken 1.038 buldum. Yaklaşık aradaki fark nedir? Artı 0.038. İkincisinde belki 5.1 bulamayacağım da 5.3 bulacağım. Buradan bir distans gelecek. Bu distansların karelerinin toplamı da zaten küçük bir epsilon değerine sahip olacağı için ben bunu kabul etmiş olacağım.
+
+182
+00:35:35,271 --> 00:35:44,951
+Yani bana bir doğru geçir dediğinde ya bu benim aklımda kalacak ya da bunu deminki gibi çıkaracağım.
+
+183
+00:35:46,331 --> 00:35:54,251
+Şimdi bu olayı, bunu kapatmak gerekiyor, bunu hiç dönmüyor bile, sinir olduğum hareketler.
+
+184
+00:36:01,204 --> 00:36:16,483
+Bunu bir silelim buraları. Ötekiyle yaptığım için bu bunu silmez. Bunlar da beni var ya hayatımdan bezdiriyor. Hepsi kafasına göre takılıyor. Nerede bunun silgisi? Silgi.
+
+185
+00:36:18,195 --> 00:36:48,075
+Bir yeni bir soru. Artık her şeyi çok rahatlıkla söyleyebiliriz. Neden söyleyebiliriz? Bana diyorlar ki sana şu x'leri verdim ve şu y'leri verdim. Bu x'e karşılık bu y'yi veren fonksiyonu, regresyonda bulunuz. Fonsiyon olarak da bir doğru geçirimiz. Artık benim için hayat çok kolay.
+
+186
+00:36:48,075 --> 00:37:12,736
+doğru geçireceksem kullanacağım matris bu mu? Evet. Nelere ihtiyacım var? X'lerin toplamı, X'lerin karelerinin toplamı, Y'lerin toplamı, X'i ile Y'lerin toplamı. Bunları buralarda buldum. Matris de yerine koydum. Ondan sonra A'yı ve B'yi buldum ve gittim. Fonksiyonu da yerine koydum.
+
+187
+00:37:12,735 --> 00:37:17,175
+Artık bunlar benim, bunları yaklaşık olarak bulacak.
+
+188
+00:37:17,295 --> 00:37:22,875
+Şimdi bakalım, x yerine 0 verdiğimde y 1.48 çıkacak.
+
+189
+00:37:23,235 --> 00:37:24,215
+Burada y 0.
+
+190
+00:37:24,675 --> 00:37:27,375
+1.48'lik bir sapma var.
+
+191
+00:37:28,775 --> 00:37:32,155
+Diğerlerimde belki sapmalarım daha büyük olacak.
+
+192
+00:37:32,155 --> 00:37:43,335
+Eğer bakacağım bu sapmaların toplamı bir hata bedelinden çok büyük oluyorsa o zaman demek ki bu noktalardan bir doğru geçmiyor.
+
+193
+00:37:43,596 --> 00:37:46,035
+O zaman bir polinom geçirmeye çalışacağım.
+
+194
+00:37:46,276 --> 00:37:51,236
+Ya da ne bileyim üstel bir fonksiyon geçirmeye çalışacağım.
+
+195
+00:37:51,695 --> 00:37:56,416
+Ama genelde bizler size geçirmeniz gereken fonksiyonu söyleyeceğiz.
+
+196
+00:37:56,416 --> 00:38:11,615
+gerçek dünyada böyle bir şeyle karşılaşıyorsanız belirli o verileri size verilmiş olan x, y'leri çizdirip yani gözünle ya buradan bir doğru geçmesine olanak yok.
+
+197
+00:38:11,615 --> 00:38:26,255
+Ya bu bir paraboldür. Parabole çok benziyor. Mesela öyle şeyler size kalemim yine gitti yahu. Mesela şöyle noktalar verilmiş size. Şöyle şöyle noktalar tamam mı?
+
+198
+00:38:31,668 --> 00:39:01,187
+belki buradan şöyle bir şey geçireceğim. Bunu yani parabol gibi çizmeye çalıştım. Yani böyle bir şeyi varsa noktaların buradan doğru geçireceğim diye inatlaşmanın bir anlamı yok. Buradan doğru geçirmek en fazla şu noktaları alır. Geri noktalar zaten bu doğrunun üzerinde kalmayacağı için hata payları çok büyük olacak. O zaman da böyle büyük büyük değerler çıkacak.
+
+199
+00:39:01,187 --> 00:39:05,987
+gerçek bu y değerliğinin daha üstünde ya da altında değerler çıkacak.
+
+200
+00:39:06,348 --> 00:39:08,187
+Biri sonuca yaklaştırmayacak.
+
+201
+00:39:08,307 --> 00:39:13,687
+O zaman ben başka bir fonksiyon denemekle uğraşacağım.
+
+202
+00:39:14,487 --> 00:39:17,807
+Şimdi efendim, sizinle diyorum.
+
+203
+00:39:18,127 --> 00:39:18,327
+Okey.
+
+204
+00:39:19,427 --> 00:39:21,348
+Ben boş bulunuyorum, çok pardon.
+
+205
+00:39:21,348 --> 00:39:27,787
+O zaman yine söylüyorum, doğru deyince bilmeniz gereken şey bu.
+
+206
+00:39:27,967 --> 00:39:29,668
+Hepsi bunun üzerine kurulacak.
+
+207
+00:39:29,668 --> 00:39:43,068
+bunun da nasıl çıkarıldığını biliyoruz. Şimdi bu bir bize sorusundu. Burada sorunun da çözümü var ama hemen kalemimi de alayım.
+
+208
+00:39:43,068 --> 00:39:55,907
+Bu soruyu sınıfın büyük bir çoğunu çözememişti. Neden çözememişti? Çünkü ezberlediler. Ezberledikleri için böyle kaldılar.
+
+209
+00:39:55,907 --> 00:40:07,007
+Halbuki onlara ne diyoruz? Yani onlar sizler. Şimdi soru diyor ki aşağıda verilmiş olan noktalardan noktalar niye gelmiyor?
+
+210
+00:40:09,147 --> 00:40:20,367
+Neyse aşağıda noktalar verilmiş bir takım x'ler veriliyor ve y'ler geliliyor. Bu noktalardan y eşittir ax doğrusunu geçiriniz.
+
+211
+00:40:20,367 --> 00:40:37,967
+Şimdi kalıyor öğrenci. Hoca bize doğru diye AX artı B'yi öğretti. Bu da nedir? Ben bunun matrisini ne yazacağım? Hep size ne diyoruz? Gerçekte ki fonksiyonu ne? Y.
+
+212
+00:40:37,967 --> 00:40:56,867
+Geçirmek istenilen interpolasyon fonksiyonu ne? Bir öncekinde doğru geçirmiştim. AX artı B'di. Burada ise geçirmek istediğim fonksiyon AX. Yani bu. Benim interpolasyon fonksiyonum buymuş.
+
+213
+00:40:56,867 --> 00:41:07,867
+büyük F'im. Öyleyse ben ne yapıyorum? Gerçek olan y değeriyle geçirilmesi planlanan fonksiyon arasındaki farkı alıyorum.
+
+214
+00:41:09,287 --> 00:41:18,468
+Benim böyle kaç tane var? i tane değerim var. Yani n tane değerim var. Bunun da başına bir sigma koyalım. Birden n'e kadar.
+
+215
+00:41:18,468 --> 00:41:29,668
+E bu farklar artı ve eksi olduğunda birbirlerini götürüp beni yanıltacağı için de ne yapıyorduk? Bunları karelerinin toplamına alıyorduk.
+
+216
+00:41:30,367 --> 00:41:38,028
+İşte orası bu. Y'yi geçirmek istediğim fonksiyon bunun karelerinin toplamına alıyorum.
+
+217
+00:41:38,028 --> 00:41:48,307
+Şimdi bu fonksiyonda bir tane bilinmeyen var. O da nedir? A. Bir bilinmeyenin varsa bir tane denklemimin olması yeterli.
+
+218
+00:41:48,468 --> 00:42:12,568
+Ben gideceğim bunu, yani bu S'nin kime göre türevini alacağım? Küçük A'ya göre türevini alacağım. Türev ne olacak? Ve bunu sıfıra eşitleyeceğim. Üst düşecek, üst düştü. Figma. İçini yazdım. Y, İ. Çok kötü yazıyorum ama anlayın. İçini yazdım. A, X, İ.
+
+219
+00:42:12,567 --> 00:42:16,547
+çarpı a'ya göre türev.
+
+220
+00:42:16,647 --> 00:42:18,267
+a'ya göre türev de nedir?
+
+221
+00:42:18,827 --> 00:42:20,907
+Eksi x'i.
+
+222
+00:42:22,427 --> 00:42:26,207
+Öyleyse benim burada yapacağım şey bunu da sıfıra eşitleyeceğim.
+
+223
+00:42:26,835 --> 00:42:38,595
+x, z'lerin sigma toplamını yazarım. y, z'lerin de toplamını yazarım. x, z'nin toplamı var. Burada a'yı eşitliğin sol tarafına bırakırsam a'yı bulurum.
+
+224
+00:42:38,595 --> 00:42:50,115
+Geçinmek istediğim interpolasyon fonksiyonu da bu. Bulduğum a'yı da yerine yazarsam otomatikman geçinmek istediğim fonksiyonu bulacağım.
+
+225
+00:42:50,115 --> 00:42:56,676
+Şimdi hemen bunun çözülmüşünü açalım ve çözülmüşün üzerinden gidelim.
+
+226
+00:42:56,835 --> 00:43:05,135
+kalemci ağzım neredesin? Allah Allah. Yine sayfa açılmıyor.
+
+227
+00:43:07,135 --> 00:43:12,176
+Ne yaptık? Aynen burada A'ya göre türev aldım.
+
+228
+00:43:15,603 --> 00:43:17,603
+Niye kalem gelmiyor?
+
+229
+00:43:28,052 --> 00:43:44,291
+A'ya göre türev aldık, üstü düşürdük, içini yazdık, A'ya göre türev aldık, eksi x'i, eksi'yi öne getirmişim. Bunu A solda kalacak şekilde yazdığım vakit karşıma bu çıkıyor.
+
+230
+00:43:44,291 --> 00:43:54,931
+Benim A'yı bulmak için neye ihtiyacım var? x ile yi'nin çarpımların toplamı. x ile yi'leri çarptım ve bunların toplamını aldım.
+
+231
+00:43:54,931 --> 00:44:20,651
+x'inin karesine ihtiyacım var. x'in karelerini aldım, toplamını aldım. Bunları formüde yerine koydum. 101.75 bölü 135. A'nın değeri 0.75. Geçirmek istediğim fonksiyonum bu. Gittim A yerine 0.75'i yazdığımda benim bu noktalardan geçireceğim fonksiyonum bu olur.
+
+232
+00:44:20,651 --> 00:44:46,651
+Hadi bu aklımıza gelmedi. Benim polinomdaki değerim neydi doğru geçirseydim? N, x'lerin toplamı, x'lerin toplamı, x karelerin toplamı, burada ne vardı? A vardı, B vardı. Benim burada B var mı? B yok. Burası otomatikman sıfırdır. Eşittir.
+
+233
+00:44:46,651 --> 00:44:53,511
+Burası yi'lerin toplamı, burası da xi ile yi'lerin toplamı
+
+234
+00:44:53,511 --> 00:45:01,571
+Zaten bunu da çözecek olsam bu kat sayıdan dolayı buradan sadece a gelir yi'ye eşitlenir
+
+235
+00:45:01,571 --> 00:45:07,151
+Buradan da xi'lerin çarpımı a xi'nin toplamlarına eşitlenir
+
+236
+00:45:07,151 --> 00:45:11,772
+Bir tanesinden bile rahatlıkla a'yı bulabilirsin
+
+237
+00:45:11,772 --> 00:45:15,651
+Böyle bile düşünerek yapan olmamış
+
+238
+00:45:15,651 --> 00:45:33,272
+Ezberliyorsunuz. Arkadaşlar ezberleme yok. Senin gerçek y değerin bu. Sana geçir dedikleri fonksiyon bu. Bunların farklarını alıyorum. N tane değerin olduğu için sigma birden n'e kadar diyorum.
+
+239
+00:45:33,271 --> 00:45:42,491
+Farklar artı eksi olabileceği için bunların birbirini götürmesini engellemek için bu farkın karesini alıyorum.
+
+240
+00:45:42,951 --> 00:45:47,631
+Bundan sonra yapacağım şey burada kaç tane bilinmeyen var?
+
+241
+00:45:47,631 --> 00:45:55,831
+A. Sadece A'ya göre türev alıp sıfıra eşitliyorum. İki tane olsaydı o iki değişkene göre türev alıp sıfıra.
+
+242
+00:45:56,131 --> 00:46:01,851
+Üç tane olsaydı o üç değişkene göre türev alıp sıfıra eşitleyecektim.
+
+243
+00:46:01,852 --> 00:46:07,312
+O yüzden ara vermeden evvel şunu da yapalım
+
+244
+00:46:07,312 --> 00:46:15,732
+Şimdi size diyor ki bu verilen noktalar işte her neyse bundan bir parabol geçirin
+
+245
+00:46:15,732 --> 00:46:17,492
+Bakın doğru geçilmiyor
+
+246
+00:46:17,492 --> 00:46:22,772
+Cx² artı Bx artı A diye bir parabol
+
+247
+00:46:22,772 --> 00:46:25,391
+Ben bunu oturur şöyle de verebilirim
+
+248
+00:46:25,391 --> 00:46:29,632
+Ax² artı Bx artı C
+
+249
+00:46:29,632 --> 00:46:31,552
+Bunların hiçbir önemi yok
+
+250
+00:46:31,552 --> 00:46:50,152
+Bunu nasıl verdiğim önemli değil. Bu benim interpolasyon fonksiyonum. Ne yapacağız? Burasını yani şöyle yapalım. Benim elimdeki değer nedir? Gerçek fonksiyon, G fonksiyonu. Bundan ne çıkaracağım?
+
+251
+00:46:50,151 --> 00:46:52,331
+interpolasyon fonksiyonu mu?
+
+252
+00:46:52,731 --> 00:46:56,191
+Enterpolasyon fonksiyonu olarak bana ne vermişler?
+
+253
+00:46:56,651 --> 00:47:03,651
+a artı b x artı c x kareyi vermişler.
+
+254
+00:47:04,051 --> 00:47:06,031
+Enterpolasyon fonksiyonu olarak.
+
+255
+00:47:06,951 --> 00:47:08,991
+E kaç tane değerim vardı benim?
+
+256
+00:47:08,991 --> 00:47:09,811
+N tane.
+
+257
+00:47:10,311 --> 00:47:12,191
+Bunun başına da sigma koyayım.
+
+258
+00:47:12,471 --> 00:47:14,691
+Birden n'e kadar.
+
+259
+00:47:15,291 --> 00:47:16,351
+Burası yi.
+
+260
+00:47:16,851 --> 00:47:19,491
+Bunlar da xi, xi olacak.
+
+261
+00:47:20,179 --> 00:47:48,979
+Bu farklar artı, eksi olur, birbirini götürüyordu. Engellemek için bunu ne yapıyorduk? Farkların karesini alıyorduk. Bunun tamamına S ismini verdik ve bunu da sıfıra eşitledik. Şimdi ne var? Elimdeki fonksiyonunda üç tane bilinmeyen var. A var, B var, C var. Öyleyse ben ne yapacağım? S'ni A'ya göre türevini alıp sıfırlayacağım. İşte burada.
+
+262
+00:47:48,979 --> 00:48:15,179
+S'nin B'ye göre türevini alıp sıfırladım. S'nin C'ye göre türevini alıp sıfırladım. A'ya göre türev nasıl alınacak? A'ya yapalım. İki düştü. İkinin türevi Y'yi, şunu açtım. Eksi A, eksi B, X'i, eksi C, X'i'nin karesi.
+
+263
+00:48:15,179 --> 00:48:32,919
+A'ya göre türev alırsam ne olur? A'nın kat sayısı eksi 1 olduğu için türev ne olur? Eksi 1 olur. Bu eksiyi bunun başına getireyim. Bunu sıfıra eşitleyeyim. İşte burada yaptığımız şey bu.
+
+264
+00:48:32,919 --> 00:48:50,159
+Şimdi B'ye göre türev alırsak X düştü, parantezin içini yazdık. B'ye göre türev alırsam nedir bu? X'i, eksi X'i. Bunu da eksi X'i ile çarpacağım.
+
+265
+00:48:50,159 --> 00:49:02,499
+Burada artılar var. Bunun tam tersini ben yazdım. Bu enterpolasyondan Y'yi çıkarmış. Ben Y'den enterpolasyonu çıkardım. Değişim hiçbir şey olmaz.
+
+266
+00:49:02,919 --> 00:49:14,860
+c'ye göre türev alırsam x düştü, parantezin içi c'ye göre türev alırsam ne olacak? x i'nin karesi ve sıfıra eşit diyeceğim.
+
+267
+00:49:14,860 --> 00:49:20,179
+aynı işlemleri yazarsam bunun matrisi şöyle olacak.
+
+268
+00:49:21,379 --> 00:49:23,519
+E yine bağırdım ben.
+
+269
+00:49:26,139 --> 00:49:40,120
+Delta x, delta x kare, bu bir kaydı, burası delta x oldu, burası delta x kare oldu, burası delta x küp oldu.
+
+270
+00:49:40,120 --> 00:49:51,299
+kaydı. Burası delta x kare, burası delta x küp, burası da delta diyorum arkadaşlar. Sigma x4.
+
+271
+00:49:52,140 --> 00:50:03,959
+Bilinmeyenlerim nedir? A, B ve C. Peki y'lerim nedir? Buradaki y nedir? Sadece delta y var.
+
+272
+00:50:03,959 --> 00:50:21,340
+İkincisinde ne var? Delta Y, X, Y var. İkincisi X, Y var. Üçüncüsünde de X kare Y var. Burayı temizleyelim. Temizlemeyi yine becerebilirsem temizledim.
+
+273
+00:50:21,339 --> 00:50:28,119
+İşte 3 tane denklemin ve bu denklemlerin de matrise geçmiş hali.
+
+274
+00:50:28,939 --> 00:50:30,159
+Bakın aynısı.
+
+275
+00:50:30,919 --> 00:50:37,119
+Eğer ben buradan 3. dereceden geçirmiş olsaydım şuraya x küp eklenecekti.
+
+276
+00:50:38,539 --> 00:50:41,579
+Burası x4 eklenecekti.
+
+277
+00:50:41,779 --> 00:50:43,799
+Buraya x5 eklenecekti.
+
+278
+00:50:43,919 --> 00:50:45,479
+Buraya d gelecekti.
+
+279
+00:50:45,619 --> 00:50:49,239
+Buraya da x küpe y gelecekti.
+
+280
+00:50:49,239 --> 00:51:01,980
+Hep birbirinin aynısı. Beşinci dereceden olsaydı buraya x5, buraya e, buraya da x4 çarpı y olacaktım. Değişen hiçbir şey yok.
+
+281
+00:51:01,980 --> 00:51:12,019
+Hep y'den geçirilmek istenen enterpolasyon fonksiyonunun farkını karelerinin toplamına alıyorum.
+
+282
+00:51:12,019 --> 00:51:19,019
+Bilinmeyenler hangileri ise onlara göre ayrı ayrı türevleri alıp sıfıra eşitliyorum.
+
+283
+00:51:19,440 --> 00:51:47,759
+onların matris formuna geçirmek, bu şekilde yazmak çok daha kolay. Diyelim ki elinizde matris çözümü için yazılmış bir kütüphaneniz var. Hemen bu matrisi, bu çıktıları veriyorsunuz. O size ABC kas sayılarını çözerek veriyor. Siz de hemen bu fonksiyonu da yerine koyuyorsunuz. İşte senin geçirmek istediğin interpolasyon fonksiyonu budur diyorsun.
+
+284
+00:51:47,759 --> 00:51:50,239
+Buraya kadar soru var mı arkadaşlar?
+
+285
+00:51:55,507 --> 00:52:12,907
+Yoksa, ara vermeden önce aynı şekilde bir örnek verilmiş. Bana x'ler ve y'ler verilmiş ve buradan a artı bx artı cx kare olan bir fonksiyon geçirmem istemiyor.
+
+286
+00:52:12,907 --> 00:52:29,107
+matrislerimin ne olduğunu biliyorum. Nelere ihtiyacım var? X'in karelerinin toplamına, X küpe X4'e, X'in Y'le çarpımına, X karenin Y'le çarpımlarına, Y'nin toplamı ve X'in toplamına ihtiyacım var.
+
+287
+00:52:29,107 --> 00:52:39,827
+Hemen bunları matrisde yerine koydum. 3 bilinmeyen 3 denklem. A'yı, B'yi, C'yi buldum. Bulduklarımı da gittim. Fonksiyonda yerine yazdım.
+
+288
+00:52:39,827 --> 00:53:05,287
+B'nin kat sayısı 0 çıktığı için buradan geçirilmesi gereken posisyon buymuş. Bakalım X'e 2 versem 4-3, 1. Evet. X'e 3 versem 9-3, 6. X'e 5 versem 25, 3 daha 22. Cuk cuk diye çıktı. Cuk cuk diye çıkanların sebebi şudur. Ben bunu alıyorum.
+
+289
+00:53:05,287 --> 00:53:19,467
+x'e 2 verdiğimde ne çıkar? Bir buraya bunu yazıyorum. x'e 3 versem ne çıkar? Buraya bunu veriyorum. Sanki bunu ben hiç bilmiyormuşum gibi şunlardan geçen fonksiyonu siz bulun diyorum.
+
+290
+00:53:19,467 --> 00:53:42,548
+Evet, şimdi aradan sonra biz birazcık bu fonksiyonları nasıl seçeceğimizden bahsedeceğiz ve doğrusal olmayan, linear olmayan fonksiyonlar karşıma gelirse aynen bunun gibi nasıl çözüm yolu izleyeceğiz bunlardan bahsedeceğiz.
+
+291
+00:53:42,548 --> 00:53:44,607
+Saatlerimize bakıyorum.
+
+292
+00:53:45,607 --> 00:53:48,988
+2'ye 10 geçe geliyoruz.
+
+293
+00:53:50,247 --> 00:53:50,808
+Tamam mı?
+
+294
+00:53:53,007 --> 00:53:54,348
+Tamamdır hocam.
+
+295
+00:53:54,908 --> 00:53:56,368
+Okey. 2'ye 10 geçe.
+
+296
+00:53:57,847 --> 00:53:58,808
+Görüşmek üzere.
+
+297
+01:15:06,195 --> 01:15:20,795
+giremediğim için her yere klikli klikli sayfayı bir güzel çizdim yine. Şunları bir silelim. Okey. Evet. Aman Allah'ım.
+
+298
+01:15:23,347 --> 01:15:25,788
+Yolanda-Türkis
+
+299
+01:15:31,412 --> 01:15:40,011
+Neyse, ben bazı şeyleri bu arada karıştırıyorum. Evet, başlıyorum şimdi. Saatimiz hatta çeyrek geç oldu.
+
+300
+01:15:40,011 --> 01:15:46,412
+En küçük kareler yönteminde kullanacağımız fonksiyonu nasıl çizeceğiz?
+
+301
+01:15:46,412 --> 01:15:53,412
+Bir, enterprolasyonda olduğu gibi hani bir fark tablosu oluşturuyorduk.
+
+302
+01:15:53,412 --> 01:16:03,051
+fark tablosu kaçıncı derecede şey oluyorsa, sabitleniyorsa uydurduğumuz polinomun derecesi de o oluyordu.
+
+303
+01:16:03,711 --> 01:16:15,291
+İşte yine bize diyor ki fark tablosunu oluşturursun, farkın nerede sabitlendi, kaçıncı ileri dereceden ve oradan o dereceden bir polinom geçirebilirsin diyor.
+
+304
+01:16:15,291 --> 01:16:23,471
+ve elinizdeki verilen x'lerle grafikleri çizersin.
+
+305
+01:16:23,471 --> 01:16:27,471
+Bu grafiklerde bir simetri ararsın.
+
+306
+01:16:28,171 --> 01:16:34,791
+y eksenine göre bir simetri varsa oturduk çizdik mesela verilen noktaları.
+
+307
+01:16:35,451 --> 01:16:37,231
+Şuralarda şöyle bir şeyler var.
+
+308
+01:16:37,691 --> 01:16:40,151
+Aynı noktalar şuralarda verilmiş.
+
+309
+01:16:40,151 --> 01:17:04,111
+y eksenine göre bir simetri yakalıyorsa kullanacağın interpolasyon fonksiyonu budur. Bunu kullanırsın diyor. Eğer verilen değerler periyodik olarak değişiyorsa o zaman sinüs ve kosünüs terimlerinden oluşan bir fonksiyon kullanırsın diyor. Onunla da ilgili örnekler vereceğiz.
+
+310
+01:17:04,111 --> 01:17:08,651
+bazen diyor değerler birbirinden çok ayrık olabilir.
+
+311
+01:17:09,131 --> 01:17:16,391
+Yani bir yerde öyle bir fonksiyon verilir ki mesela burada bir çizim şurada da şöyle noktalarım var.
+
+312
+01:17:16,391 --> 01:17:25,191
+O zaman parçalarım şurada simetrik olarak şu ikinciyi kullanırken burada bir doğruyu kullanabilirim.
+
+313
+01:17:25,531 --> 01:17:28,231
+İki ayrı eğri uydurabilirsiniz diyor.
+
+314
+01:17:28,231 --> 01:17:37,952
+Şimdi en önemli şey buraya kadar olanlarda ben hep doğrusal yani lineal bir fonksiyon kullanıyordum
+
+315
+01:17:37,952 --> 01:17:44,512
+A artı BX, A artı BX artı CX kare belli takatak tak tak
+
+316
+01:17:44,512 --> 01:17:50,111
+Ama bazen verilen değerlere bir polinom uyduramam
+
+317
+01:17:50,111 --> 01:17:53,432
+Lineal değil yani doğrusal değil
+
+318
+01:17:53,432 --> 01:18:01,432
+Mesela bu, a çarpı e üzeri b x diye bir lineer olmayan fonksiyon geçiriyorum.
+
+319
+01:18:02,232 --> 01:18:09,471
+Ya da a çarpı x üzeri b diye bir fonksiyon geçiriyorum.
+
+320
+01:18:09,831 --> 01:18:13,712
+Ya da ne bileyim ben şu an aklıma gelmiyor.
+
+321
+01:18:13,712 --> 01:18:28,792
+Yani böyle e üzeri, x üzeri, çarpı, artı, farklı farklı lineer olmayan fonksiyonlar geçirmek istediğimde ben nasıl regresyonu uygulayacağım?
+
+322
+01:18:29,212 --> 01:18:36,751
+O zaman şunu diyorlar bize, şunlar lineer olmayan fonksiyon, bunları sen lineer hale getir.
+
+323
+01:18:36,751 --> 01:18:41,691
+Linear hale getir ve bildiğin yoldan git
+
+324
+01:18:41,691 --> 01:18:45,531
+Peki ben bunları linear hale nasıl getirebilirim?
+
+325
+01:18:45,531 --> 01:18:54,211
+Yani benim elime bir fonksiyon verilmiş y eşittir a çarpı e üzeri bx
+
+326
+01:18:54,211 --> 01:19:01,352
+Bunu linear hale getirmek istiyorsam her iki tarafımda logaritmasını alıyorum
+
+327
+01:19:01,352 --> 01:19:04,311
+Doğal logaritmayı alayım elen y
+
+328
+01:19:04,311 --> 01:19:20,711
+Burası da ne olur? Ln-A, logaritmada çarpı varsa ne olur? Artı, E üzeri Bx, logaritmasını alacağım, Bx öne düştü, Bx ve Ln-E olur.
+
+329
+01:19:20,711 --> 01:19:29,211
+Eleneğinin 1 olduğunu biliyorum. Ben bunu Y'ye eşitlerim, bunu A'ya eşitlerim.
+
+330
+01:19:29,684 --> 01:19:59,663
+Bunu da b'ye eşitlersem y eşittir. a artı b bu da x'im var. b x diye yine lineer bir fonksiyona dönüştürmüş olabilirim. Ya da şunu alalım. a çarpı x üzeri b y eşittir. Bu lineer değil. Ben bunu lineer hale getiriyorum. Her iki tarafın logaritmasını aldım.
+
+331
+01:19:59,684 --> 01:20:21,383
+Elen-Y eşittir. Elen-A çarpı artı oldu. B düştü. B ve Elen-X. Şimdi bunu nasıl benzeteceğim? Burası Y, burası A, burası B, burası da X.
+
+332
+01:20:21,383 --> 01:20:28,083
+yine sanki y eşittir a artı bx diye bir doğru kullanıyorum.
+
+333
+01:20:28,703 --> 01:20:31,763
+Orada y olan her şey o maddeste.
+
+334
+01:20:31,763 --> 01:20:42,463
+L-N-y, a olan her şey L-N-a, b olan her şey küçük b, x olan her şey de L-N-x olacak.
+
+335
+01:20:42,623 --> 01:20:43,963
+Bir saniye bir ses veriyor.
+
+336
+01:20:49,268 --> 01:21:05,268
+Bunları ilerleyen slaytlarda zaten göreceğiz. Öncelikle size söylemek istediğim şu, linear olmayan bir fonksiyonu linear hale getireceğim. Yani y eşittir a artı bx haline ve ondan sonra bunu aynı şekilde çözeceğiz.
+
+337
+01:21:05,268 --> 01:21:17,268
+Şimdi şunları silelim ve ilerleyelim. İşte aynısını aldık. Mesela y eşittir a çarpı, bakın bu da farklı.
+
+338
+01:21:17,268 --> 01:21:24,707
+eşittik. A çarpı B üzeri X diye bir fonksiyon geçir diyorlar. Linear değil, linear hale getirelim.
+
+339
+01:21:25,348 --> 01:21:40,988
+Elen Y eşittir. A yerine elena, çarpı yerine artı. X düştü. Elen B dedik. Şurasına elen Y, şurasına A dedim. Bu X, burasına da B dedim.
+
+340
+01:21:40,987 --> 01:21:59,488
+Peki büyük B pardon LNB kime eşit oldu? Büyük B'ye. Benim neye ihtiyacım var fonksiyonunda? Küçük B'ye. Burada küçük B'yi çekmek demek E üzeri büyük B'yi çevirmek demek.
+
+341
+01:21:59,488 --> 01:22:24,748
+Burada Elena, Elena kime eşit küçük A? Büyük A'ya eşit. Benim fonksyonda neye ihtiyacım var? Küçük A'ya. Bu da küçük A nedir? Eşittir. E üzeri A. Bu şekilde ben bana verilmiş olanları bir önceki saatte gördüğüm şekilde rahat rahat çözebilirim. Hadi bir örnek yapalım.
+
+342
+01:22:24,747 --> 01:22:39,207
+Bana yine bir takım x değerleri verilmiş, bir takım y değerleri verilmiş ve deniyor ki bu x ve y'lerden a çarpı b üzeri x diye bir fonksiyonu geçir.
+
+343
+01:22:39,207 --> 01:22:49,027
+Evet geçireceğim ama bunu önce ne yapıyordum ben? Şurayı yeniden yapalım. Bu da yapılmış olması lazım.
+
+344
+01:22:49,027 --> 01:22:51,027
+Allah Allah
+
+345
+01:22:51,027 --> 01:22:53,707
+çok sinir
+
+346
+01:22:53,707 --> 01:22:56,787
+burada olması lazım, yokmuş
+
+347
+01:22:56,787 --> 01:22:59,027
+bunu nasıl yapmıştık?
+
+348
+01:23:00,067 --> 01:23:02,027
+Elen
+
+349
+01:23:02,027 --> 01:23:03,087
+uf
+
+350
+01:23:07,699 --> 01:23:15,459
+Allah kimseyi tatlısız bırakmasın. Bazı hocaların tabi tableti var benim olmadığı için ben çok zorlanıyorum.
+
+351
+01:23:15,459 --> 01:23:32,179
+Elen-Y dedik buraya. Elen-Y eşittir. Elen-A. Şunlar Elen çarpı yerini artı. X çarpı Elen-B dedik.
+
+352
+01:23:32,179 --> 01:23:47,040
+Şimdi şu da benim neydi? Bir doğru geçirirsem kullandım matristi. Burası Y, burası büyük A, burası X, burası da büyük B.
+
+353
+01:23:47,040 --> 01:23:54,479
+Şimdi bakacağım. En en, X'in yerine zaten X gelmiş hiçbir şey yazmıyorum.
+
+354
+01:23:54,479 --> 01:24:12,799
+dındın, A, B. Y yerine Y'lerin toplamıydı. Benim için Y artık ne? Elen-Y. Öyleyse burada ne koydun? Elen-Y'lerin toplamı. Demek ki burada Y'lerin logaritmasını alacağım ve bunların toplamını yazacağım sonuç olarak.
+
+355
+01:24:12,799 --> 01:24:26,799
+Burada ne var? X ile Y'nin çarpımı. Benim için XX de burada olduğu gibi. Y'de Elenge. Burada X ile Elenge'lerin çarpımını aldık ve toplamını koyduk.
+
+356
+01:24:26,799 --> 01:24:47,619
+N 5 tane var 5. X'lerin toplamı, X'leri topladım 14. X kareler, X kareleri aldım topladım 54. Karşıma 2 bilinmeyen 2 denklem çıktı. Denklem takımını çözdüm. A'yı şu, B'yi de bu bulduk.
+
+357
+01:24:47,619 --> 01:25:08,920
+Peki A neydi? Elen, hayır böyle elenin, elen A eşittir, A'dı. Benim küçük A'ya ihtiyacım var. A eşittir, E üzeri A'dı. Bulduğum A'nın, nerede A şu? 1.64. E üzeri 1.64'ü aldım. Küçük A'yı buldum.
+
+358
+01:25:08,919 --> 01:25:24,299
+B'de nedir? Elen B. Öyleyse B'de E üzeri büyük B olacak. B'nin değeri de 3.29'du. E üzeri 3.29 aldım. Pardon 1.19 aldım. 3.29 buldum.
+
+359
+01:25:24,299 --> 01:25:38,319
+Ve sonra bana verilmiş olan A çarpı B üzeri X'de bulduğum A ve B değerini yerine yazdım. Demek ki liner olmayan bir fonksiyon geldiğinde bunu liner hale getireceğim.
+
+360
+01:25:38,920 --> 01:25:50,199
+ve yeşittir A artı B doğrusuna benzeteceğim. Burada kimin yerine ne koymuşsa bu matriste de onları yerleştireceğim.
+
+361
+01:25:51,140 --> 01:26:01,039
+Şimdi size şunu veriyorum. Evet burada çözüm var ama şu çözüme hiç bakmayın.
+
+362
+01:26:01,039 --> 01:26:08,039
+lütfen kendiniz bir karalayın ki nerede takıldığınızı anlayın ve bana sorun.
+
+363
+01:26:08,719 --> 01:26:20,539
+Bana şu x değerleri, şu y değerleri verilmiş ve bunlardan y eşittir a çarpı x üzeri b eğrisinin geçirilmesini istiyorlar.
+
+364
+01:26:21,640 --> 01:26:22,239
+Tamam mı?
+
+365
+01:26:23,039 --> 01:26:24,999
+Bunun lineer olmadığını görüyorsun.
+
+366
+01:26:24,999 --> 01:26:28,140
+Şimdi bunu bir lineer hale getirin önce.
+
+367
+01:26:28,140 --> 01:26:32,539
+Sonra klasik bir matrisimiz vardı hatırlayalım
+
+368
+01:26:32,539 --> 01:26:40,100
+F, sigma x, sigma x, sigma x kare
+
+369
+01:26:43,891 --> 01:26:44,891
+Sonra AB, sonrası neydi? Sigma-Y, Sigma-XY'di. Tamam mı? Şimdi şuna neler hale getirin bakalım. Şuradaki matrisde neler değişecek? Tamam mı? 5 dakika size veriyorum. Lütfen kendinizi vererek düzgün yapın ve nereye yapamadığınızı anlayalım.
+
+370
+01:27:13,891 --> 01:27:19,051
+şunu lineer hale getireceğiz, bir doğruya benzeteceğiz.
+
+371
+01:27:19,792 --> 01:27:24,891
+Hangi atamaları yapmışsak bu matrisde de onların yerine onları koyacağız.
+
+372
+01:27:25,891 --> 01:27:27,432
+Çözüme lütfen bakmayın.
+
+373
+01:27:33,203 --> 01:27:36,203
+Evet, süreniz başladı. Saatimi tutuyorum.
+
+374
+01:29:35,731 --> 01:29:37,731
+Durunglessı?
+
+375
+01:30:11,347 --> 01:30:13,347
+bitiren var mı?
+
+376
+01:30:20,051 --> 01:30:22,051
+Sesim geliyor mu?
+
+377
+01:30:23,051 --> 01:30:24,051
+Geliyor hocam.
+
+378
+01:30:24,051 --> 01:30:25,051
+Tamam.
+
+379
+01:30:29,811 --> 01:30:59,011
+Şimdi bize ne denilmiş? y eşittir. a x üzeri b. Bu linear bir şey değil. Bir şeylerin üzerinde bir başka bilinmeyen varsa linear olmaz. Mesela bunun üzerinde ax kare olsaydı bu linear. Bu bir bilinmeyen. e üzeri ya da işte elen üzeri bilmem ne.
+
+380
+01:30:59,011 --> 01:31:09,731
+Bunlar non-linear. Şimdi benim bunu linear hale getirmem gerekiyordu. Her iki tarafı logaritmasını almıştık.
+
+381
+01:31:09,731 --> 01:31:19,451
+Elen y dedim. Elen a dedim. Ya bu h gibi kalıyor ama bu elen yani l bu.
+
+382
+01:31:19,451 --> 01:31:38,392
+çarpı artı oldu. Üst düşer B ve elen X. Şimdi ben bunu neye benzetmek istiyorum? Y eşittir A artı BX'e. Bakıyorum şuraya Y diyorum.
+
+383
+01:31:38,392 --> 01:31:44,112
+Öylesi benim burada Y gördüğüm her yere ne yazacağım artık?
+
+384
+01:31:45,112 --> 01:31:45,731
+Elen Y
+
+385
+01:31:45,731 --> 01:31:52,112
+Çünkü Y'ler Elen Y oldu. Y yerine Elen Y yazacağım
+
+386
+01:31:52,112 --> 01:31:55,371
+Peki A yerine ne yazacağım?
+
+387
+01:31:56,032 --> 01:31:57,412
+Elen A
+
+388
+01:31:57,412 --> 01:32:02,692
+Öylesi ben buradaki A'yı bulacağım
+
+389
+01:32:02,691 --> 01:32:19,951
+bu a'yı sonradan, elen a'yı eşit dediğimde a ne olacak? e üzeri a olacak. Başka ne var? b'inde x. x artık ne oldu? elen x'miş.
+
+390
+01:32:19,951 --> 01:32:34,291
+Öyleyse her gördüğüm x yerine şuraya lnx, burası lnx'in kendisi, lnx, burası lnx'in karesi
+
+391
+01:32:34,291 --> 01:32:39,351
+O yüzden bakıyorum neleri hesaplamışım
+
+392
+01:32:39,351 --> 01:32:46,032
+x'ler artık lnx olduğu için ben bir kere x'lerin logaritmasını almışım
+
+393
+01:32:46,032 --> 01:33:10,211
+Bunları bir topluyorum. Sonra lnx'in karesi var. lnx'in karelerini almışım. Topladım. Sonra neye ihtiyacım var? lny. y'lerin lny'sini almışım. Toplamı. Sonra neye ihtiyacım var? lnx'e lny'nin çarpımı. Çarptık ve bunların toplamını aldım.
+
+394
+01:33:10,211 --> 01:33:25,971
+Bunları getirdim, bu bulduğum sayıları yazdım tak tak tak bu matrise ve bunun sonucunda aynen böyle yazdım. Formüllerim böyle oldu. Ben büyük A ve büyük B'yi buldum.
+
+395
+01:33:25,972 --> 01:33:47,731
+Büyük A'yı bulduğum vakit inşallah bulacağız. Büyük A, hala bulamamışız. Büyük A 1.0.99, Büyük B'de 1.49 çıktı. Nasıl buluyorduk? Önce delta'yı buluyorum, buldum diskriminantı.
+
+396
+01:33:47,731 --> 01:34:09,571
+sonra A'yı bulmak için birinci kolona gidiyorum şuradaki sonuçları koyuyorum. Diskriminantı buluyorum delta A'yı. B'yi bulmak için ikinci kolona bu sefer buradaki değerleri koyuyorum. Diskriminantı buluyorum. A'yı bulmak istiyorsam delta A'nın sonucunu delta'ya.
+
+397
+01:34:10,131 --> 01:34:25,131
+B'yi bulmak istiyorsam da Delta B'nin sonucunu Delta B'ye oranlıyorum. A'yı ve B'yi buldum. Büyük A ve B'yi. Benim neye ihtiyacım var? Geçirilmek istenen fonksiyon küçük A ve küçük B.
+
+398
+01:34:25,131 --> 01:34:42,631
+Peki bunlar neydi şuraya baktığımda? Elen A yani Elen A neye eşitti? Büyük A'ya. Benim küçük A'ya ihtiyacım varsa küçük A'yı bulmak istiyorsam E üzeri büyük A olacak.
+
+399
+01:34:42,631 --> 01:35:04,631
+Peki B nedir burada? B'ye bakıyorum. B, B, B. Hiçbir şey değişmiyor. B olduğu gibi kalıyor. Öyleyse küçük B'de büyük B'ye eşitmiş. Burada bulduğum küçük A küçük B değerlerini de bana verilen fonsiyon da yerine koyuyorum.
+
+400
+01:35:04,631 --> 01:35:32,072
+ve fonsiyonun 3 çarpı x üzeri 1.5. Bir deneyelim x yerine 1 yazalım. Birin 1.5'uncu kuvveti 1, 3 ile çarptığım 3, y 3'ü buldum. x yerine 3 koyarsam 3'ün 1.5'uncu kuvveti 3 ile çarptığımda yaklaşık olarak buradaki sonuca yakın bir değer elde edeceğim.
+
+401
+01:35:32,071 --> 01:35:51,331
+Gördüğünüz gibi fark eden hiçbir şey yok. Bir başka örnek. Bu bakalım neymiş? Bu da bu değerleri sana veriyorum diyor. Şunu geçir diyor.
+
+402
+01:35:51,331 --> 01:36:05,511
+Linear diye linear hale getirdim. Elen-Y, Elen-A çarpı yerine arttı. Üst düştü. Bx, bunun yanında da ne var? Elen-E. Elen-E birdir.
+
+403
+01:36:06,171 --> 01:36:11,611
+Öyleyse benim formülüm bu. Y'nin yerine bunları koyacağım. Y'nin yerine koydum.
+
+404
+01:36:11,611 --> 01:36:21,291
+A'nın yerine, Elena'nın yerine A, bunu büyük A'yı bulduktan sonra küçük A'yı bu şekilde elde edeceğim.
+
+405
+01:36:21,291 --> 01:36:28,111
+B yine orjinal B, X yine orjinal X, bunlarda hiçbir değişiklik yok.
+
+406
+01:36:28,111 --> 01:36:41,712
+Büyük A ve Büyük B'yi bulduğunda Büyük B, Küçük B'ye eşit Büyük A'da E üzeri Büyük A diyerek Küçük A'yı bulduğunda çıkan fonksiyonum bu
+
+407
+01:36:41,712 --> 01:36:57,411
+X yerine 0 koy 0 burası 0 E üzeri 0 1'dir ne kalır 0 93 Y'nin değeri 1 iken ben yaklaşık 0 93 bulmuşum
+
+408
+01:36:57,411 --> 01:37:01,331
+Bunda da öyle bir sapma vardır, bunda da sapma vardır.
+
+409
+01:37:01,492 --> 01:37:09,891
+Eğer bu sapmalar çok çok büyükse o zaman zaten yanlış bir fonksiyon geçirmeye çalışıyorumdur.
+
+410
+01:37:10,331 --> 01:37:12,771
+Farklı bir fonksiyon denemeliyim.
+
+411
+01:37:15,072 --> 01:37:17,131
+Buraya kadar sorusu olan var mı?
+
+412
+01:37:19,352 --> 01:37:22,331
+Linear olmayanları linear hale getireceğiz.
+
+413
+01:37:22,331 --> 01:37:27,271
+Linear hale getirmek her iki tarafın eşitliğin logaritmasını alıyorum.
+
+414
+01:37:27,411 --> 01:37:34,471
+ve bunları y eşittir, a artı b eksi olacak şekilde eşitliyorum.
+
+415
+01:37:35,171 --> 01:37:45,292
+Matrislerimde de ilgili yerleri, hangi dönüşümleri yapmışsam kabulleri, onları hesaplayarak yerleştiriyorum ve çözüme gidiyorum.
+
+416
+01:37:46,971 --> 01:37:51,611
+Bazen karşıma trigonometrik fonksiyonlar gelebilir.
+
+417
+01:37:51,611 --> 01:37:56,671
+Mesela der ki işte verilen noktadan şu
+
+418
+01:37:57,231 --> 01:38:25,231
+doğruyu geçir. Sin-2x'le sin-3x'le geçir. Veya bunun en kaba tabiriyle şu şekilde verilir. Geçirilmek istenen fonksiyon A0, sonra A'nın kas sayıları, posinus x'le çarpımlarının toplamı ve BK'larda sinüslerin toplamı. Yani açık halini şöyle yazalım. En geniş haliyle bir trigonometrik fonksiyon geçirsem,
+
+419
+01:38:25,231 --> 01:38:45,772
+A0 artı A1 cos x, A2 cos 2x, A3 cos 3x, Al cos nx artı sin üstte B0 kas sayısı yok, B1 sin x, B2 sin 2x, B3 sin 3x, Bn sin nx deriz.
+
+420
+01:38:45,771 --> 01:39:10,751
+Yani bana şöyle bir fonksiyon gelebilir. Y eşittir A0 artı A1 cos x'i geçir. Veya bana der ki Y eşittir B1 sin x B2 sin x'i geçir. Ya da bana der ki Y0 A1 cos x bir de B3 sin x 3x diye bir fonksiyon var. Bunu geçir. Önemli değil.
+
+421
+01:39:10,751 --> 01:39:35,151
+Geçirilmek istenen fonksiyonun ne olduğu önemli değil. Ne yapacağız? Gerçek fonksiyon Yi, geçirilmek istenen trigonometrik fonksiyonu buraya yazıyorum. Bunların karelerini alıyorum ve en tane noktanın farklarının toplamı cinsinden yazıyorum.
+
+422
+01:39:35,151 --> 01:39:40,171
+Sonra S'nin kaç tane bilinmeyen varsa
+
+423
+01:39:40,171 --> 01:39:44,412
+Mesela bana dedik ki A0 artı A1 cos x'i geçir
+
+424
+01:39:44,412 --> 01:39:51,111
+Yani burası A0 artı A1 cos x'i geçir dediğine göre
+
+425
+01:39:51,111 --> 01:39:54,592
+Kaç tane bilinmeyen var? A0 ve A1
+
+426
+01:39:54,592 --> 01:39:59,171
+Öyleyse S'in bir A0'a göre türevini alacağım
+
+427
+01:39:59,171 --> 01:40:02,731
+S'in bir de A1'e göre türevini alacağım
+
+428
+01:40:02,731 --> 01:40:13,172
+A0'a göre türevini alsak ne olur? 2 çarpı içinin aynısı A0'a göre türev, eksi 1.
+
+429
+01:40:13,812 --> 01:40:25,252
+A1'e göre türev alacak olursam, 2 üst düşecek, parantezin içi, A1'e göre türev alırsam, cos x'in türevi nedir?
+
+430
+01:40:25,252 --> 01:40:30,912
+eksi sin x, önünde de eksi var, onu da sin x ile çarpacağım.
+
+431
+01:40:31,132 --> 01:40:35,752
+İki bilinmeyenim, iki denklemim olacak ve bunları çözeceğim.
+
+432
+01:40:36,692 --> 01:40:40,112
+Bir tane bunlarla ilgili bir örnek yapalım.
+
+433
+01:40:40,112 --> 01:40:41,291
+Mesela
+
+434
+01:40:46,739 --> 01:40:47,739
+Demin dedik ya, en geniş haliyle bana verilecek olan trigonometrik fonksiyon budur. Bunun içerisinden bir alt şey çekmiş. Sana verdiğim x ve y'lerden şu trigonometrik fonksiyonu geçir. a0 artı a1 bla bla bla bla. Ben ne yapacaktım? Ya bu fonksiyondan yi'yi çıkarırım ya da yi'den bu fonksiyonu çıkarırım.
+
+435
+01:41:16,739 --> 01:41:26,399
+çıkarırım. Hiç fark etmez. Yani işittiğim sağ tarafına, sol tarafına zaten taşırken işaretlerime göre hareket edeceğim.
+
+436
+01:41:27,739 --> 01:41:41,619
+Ve bunu yazdım, farkını aldım. İşte türevini alınca A0'a üstü düşürdü. İçini yazdı. A0'a göre türev alacak. 1'dir. Bunun sonunda 1 var.
+
+437
+01:41:41,619 --> 01:41:58,100
+Şimdi A1'e göre yazacağız, üst düştü, parantezin tamamını yazdık, yani şu farkı ve cos A1'e göre türev alacaksın, A1'e göre türev alırsan nedir? cos X'i yazacağız
+
+438
+01:41:58,100 --> 01:42:01,519
+Geldik, B1'e göre türev alacağız
+
+439
+01:42:01,519 --> 01:42:04,900
+Üst düştü, parantezin kendisi
+
+440
+01:42:04,900 --> 01:42:09,579
+B1'e göre türev alırsam burayı sin x, y yazacağız
+
+441
+01:42:09,579 --> 01:42:17,140
+Sonra y'ler bir tarafta, diğerleri bir tarafta açtığım vakit bu çıkacak
+
+442
+01:42:17,140 --> 01:42:21,479
+Ve ben bunu artık matrise geçirirsem matrisim ne olur?
+
+443
+01:42:22,239 --> 01:42:26,900
+Burası 1'den n'e kadar a0'sa burası n
+
+444
+01:42:26,899 --> 01:42:47,099
+Burası ne oldu? Kosünüs x'i, burası ne oldu? Sinüs x'i, buradaki bilinmeyenler nedir? A0, A1, B1 eşittir. Burada ne var? Delta y'i var.
+
+445
+01:42:47,100 --> 01:43:06,639
+Sonra buraya yazalım. Zaten bunun simetriği. Burada cos x i. Zaten görüyorsun. Burası cos x i'nin karesi. Buradan da sin x cos x var. Burası da sin x cos x.
+
+446
+01:43:06,639 --> 01:43:20,179
+y'si ne oldu? y'i cos'i. Buraya geldik. sin x'i burası, sin x'i cos'i burası, sin kare x'i burası, burası da y'i sin x'i.
+
+447
+01:43:20,899 --> 01:43:31,099
+Yani silelim. Bunu açtığımızda bunları da yine getirdik buraya yerleştirdiğimizde bu çıkacak.
+
+448
+01:43:31,100 --> 01:43:42,019
+Buraya bir değişken daha gelmiş olsaydı yani burada adam bize deseydi ki B2 sin x i daha var o zaman ne olacaktı?
+
+449
+01:43:43,320 --> 01:43:51,519
+Sadece bir de B2'ye göre Trev alacaktım ben. Dört tane bilinmeyen dört tane denklem olacak.
+
+450
+01:43:52,079 --> 01:43:56,639
+Burada bulmuş olduklarımı da sırasıyla bu matrislere yerleştireceğim.
+
+451
+01:43:56,639 --> 01:44:08,679
+Bana verilmiş olan x'lerin kusin üstlerini alıp toplamlarını buraya, bana verilen x'lerin sinüsünü alıp toplamlarını buraya
+
+452
+01:44:08,679 --> 01:44:16,679
+Tabi burada ya derece olarak bunları hesaplayacaksınız ya da radyana çevirerek buna dikkat etmemiz gerekiyor
+
+453
+01:44:16,679 --> 01:44:21,419
+Bunları koyup, tıt tıt yapıp çarpıp bölüp olacak
+
+454
+01:44:23,412 --> 01:44:35,891
+Mesela, daha kolay çözmek istiyorsanız bana şu eğri geçirilmek isteniyor. Adam sinüslerle, kosünüslerle uğraşmak istememiş.
+
+455
+01:44:35,891 --> 01:44:49,811
+Kosünüs x'ler yerine c1, kosünüs x2 yerine c2, sinüs x yerine s1, bunun yerine de s2 koymuş. Daha basitleştirmiş formülü.
+
+456
+01:44:49,811 --> 01:44:56,932
+Bunlara göre A0, A1, A2, B1, B2'ye göre türevlerini alıp sıfıra eşitlemiş.
+
+457
+01:44:57,412 --> 01:45:10,751
+Daha sonra gidiyor C1 olan yerlere cos x, cos 2 x ile C2 olan yerlere cos 2 x'i koyarak bunu çözmeye çalışıyor.
+
+458
+01:45:11,011 --> 01:45:13,111
+Aynen burada olduğu gibi.
+
+459
+01:45:13,112 --> 01:45:42,932
+Tabi bu kadar şeyi bizler derste sormayız ama hep dediğimiz şey nedir? Bana ne verilirse verilsin. Y gerçekle interpolasyon fonksiyonu arasındaki farkı alacağım. Farkın kareleri toplamına alıp bunlardaki değişkenlere göre, bilinmeyenlere göre türevini alıp sıfıra eşitleyip bunları matris formuna indirgeceğim.
+
+460
+01:45:43,111 --> 01:45:50,071
+Eğer geçirilmek istenen fonksiyon, linear bir fonksiyon değil, non-linear bir fonksiyonsa
+
+461
+01:45:50,071 --> 01:45:56,931
+verilen fonksiyonun sağ ve sol her iki tarafında logaritmasını alıp onu linear hale getirip
+
+462
+01:45:56,931 --> 01:46:06,551
+yine aynı matrisler üzerinden sadece neyin yerine ne kullanmışsam onları koyarak çözümleyeceğim.
+
+463
+01:46:06,791 --> 01:46:08,491
+Başka da bir şey yok.
+
+464
+01:46:08,491 --> 01:46:32,811
+Bir tane örnek yapalım sonra yine bir ara verelim. Bana şöyle bir fonksiyon verilmiş. Derece olarak verilmiş x'ler ve y'ler. Burada derece olarak verilmişse derece olarak hesaplarım. Bunlar radyon olarak verilmişse radyon olarak hesaplarım. Fonsiyonum bu.
+
+465
+01:46:32,811 --> 01:46:54,111
+Ben ne yapacağım? Hemen yapacağımız şey nedir? Gerçek yev fonksiyonu yeğiden çıkaracağım. Kimi çıkarıyorum? A0 artı şu A0'da düzgün olsaydı A1 sinüs x i'yi çıkaracağım.
+
+466
+01:46:54,111 --> 01:47:01,471
+Sonra bunların nesine alıyorum? Karesine. Başına da bir sigma koydum mu? Bitti.
+
+467
+01:47:02,191 --> 01:47:09,072
+A0'a göre türev alıp eşitleyeceğim. A1'e göre türev alıp eşitleyeceğim.
+
+468
+01:47:09,072 --> 01:47:14,992
+Ve karşıma şunlar çıkıyor. Ben bunlardan da matrisimi oluşturabilir miyim?
+
+469
+01:47:14,992 --> 01:47:27,132
+matrisde ne var? E, burada ne var? Sinüs x, burada ne var? Sinüs x, burada sin kare var, dın dın dın dın.
+
+470
+01:47:27,492 --> 01:47:38,311
+Buralarda ne var? A0, A1 var. Eşitliğin sol tarafında da neler var? Y ve Y çarpı sin y var.
+
+471
+01:47:38,311 --> 01:47:57,391
+Benim yapacağım şey burada nelere ihtiyacım var? X'in sinüslerine işte aldım. X'in sin kare değerlerine aldım. Y ile sin x'in çarpımına ihtiyacım var. Y'lerin toplamına ihtiyacım var. X'lerin toplamına hiç ihtiyacım yok.
+
+472
+01:47:57,391 --> 01:48:07,371
+buldum A0 ve A1'i gidiyorum burada yerine koyuyorum ve diyorum ki buralardan getirilecek olan trigonometre fonksiyon budur.
+
+473
+01:48:08,011 --> 01:48:13,492
+Bu işin başka bir yolu yok. Yapılacak tek şey var.
+
+474
+01:48:14,231 --> 01:48:16,331
+Defalarca söylüyorum bakın.
+
+475
+01:48:17,772 --> 01:48:20,072
+Hata görmek istemiyorum.
+
+476
+01:48:20,072 --> 01:48:21,511
+Y'den.
+
+477
+01:48:21,971 --> 01:48:48,371
+geçirilmesine istenilen fonksiyon neyse bunu yazıp farkını alıyorsun. Hataları minimize etmek istediğim için. Bu hatalar eksi de olabilir, artı da olabilir. Bunları topladığım vakit artılar ve eksiler birbirini götürür. Bu bana yanlış bilgi verir. O yüzden karelerini alıp işaretten kurtarıyorum bunları.
+
+478
+01:48:48,371 --> 01:49:00,332
+Sonra bu verilen fonksiyonunda bilinmeyenler nelerse bu ifadenin her bilinmeyene göre ayrı ayrı türevini alıp sıfıra eşitliyorum.
+
+479
+01:49:01,192 --> 01:49:07,332
+İki bilinmeyen varsa iki tane denklem çıkıyor. Üç bilinmeyen varsa üç denklem.
+
+480
+01:49:07,332 --> 01:49:28,571
+ve bunları da aynen bu şekilde matrise yerleştiriyorum. Matriste ister matematik dersinde gördüğünüz gibi, isterseniz bu derste gördüğünüz yöntemler gibi bu bilinmeyenleri bulup, fonksiyon da yerine koyup, işte senin fonksiyonun budur diyorsun.
+
+481
+01:49:28,571 --> 01:49:50,332
+Eğer daha lineer bir denklem verilmişse her iki tarafın logaritmasını alıp onu lineer hale getirip aynı işlemleri uyguluyorsunuz. Başka bir şey yok. Burada kosünüslü olarak bir örnek verilmiş. Aynı şeyler burada da yapılıyor.
+
+482
+01:49:50,332 --> 01:50:12,251
+Son bölüm olarak çoklu regresyondan bahsedeceğim. Yine bir ara verelim. 3'te bu konuyu anlatayım. Bu konuda hiç zor değil. Hepsi artık birbirinin aynı olduğunu göreceksiniz. Bir örnek üzerinden de bunu size anlatırım.
+
+483
+01:50:12,251 --> 01:50:16,652
+Şimdi ara veriyoruz, 3'te yeniden bir arada oluyoruz
+
+484
+01:50:16,652 --> 01:50:20,771
+Değil mi? Tamam, hadi görüşürüz
+
+485
+02:03:13,747 --> 02:03:14,747
+bahsedeceğim. Zaten çok fazla bir şey yok. Hepsinin birbirine benzediğini dersin ilk saatlerinde söylemiştim. Sadece bu sefer başlığımız çoklu regresyon. Çoklu regresyon olunca ne oluyor? Genelde yine eri uydurma yöntemlerine benziyor. Yalnız farkı değişken sayısının birden fazla olması. Şimdi ne demek?
+
+486
+02:03:43,747 --> 02:03:51,507
+bizim şimdiye kadar bir x'imiz, o x'e karşılık alınmış y değerlerimiz vardı.
+
+487
+02:03:52,167 --> 02:03:54,067
+Yani bir tane girişimiz vardı.
+
+488
+02:03:54,328 --> 02:03:58,227
+Şimdi ise birden fazla girdimiz var.
+
+489
+02:03:59,347 --> 02:04:02,567
+Mesela burada iki tane girdim var.
+
+490
+02:04:02,987 --> 02:04:04,328
+D ve S diye.
+
+491
+02:04:05,088 --> 02:04:06,547
+Q'da benim çıktım.
+
+492
+02:04:06,547 --> 02:04:10,428
+Yani bundan evvel x girdim, y çıktım oluyordu.
+
+493
+02:04:10,428 --> 02:04:21,228
+burada ise girdilerim D ve S çıktım da Q. Ama bana ömrü bir şeyler veriliyor ki şu örnek olsun mesela.
+
+494
+02:04:21,228 --> 02:04:35,707
+Bana denilecek ki mesela örnek kanal içindeki akışa ilişkin yapılan bir düzenekte boru içindeki akışkanın miktarı borunun çapı.
+
+495
+02:04:35,707 --> 02:04:46,127
+Borunun çapına ben D demişim ve eğimi borunun eğimine de S demişim verilmektedir.
+
+496
+02:04:46,127 --> 02:04:55,507
+Buna göre Q eşittir. Q da o borudan olan akış, akışın miktarı ben bunu tahmin etmeye çalışacağım.
+
+497
+02:04:55,507 --> 02:05:09,567
+y değerim bu, x'lerim çap ve eğim. Borunun çapı ve eğimine bağlı olarak akışın saniyedeki metreküp olarak miktarı soruluyor.
+
+498
+02:05:10,227 --> 02:05:16,507
+Buna göre Q eşitliğindeki A0, A1 ve A2 kas sayılarını belirleyiniz.
+
+499
+02:05:16,507 --> 02:05:40,407
+ve bana da deniyor ki şöyle bir fonksiyon geçiriliyor. Girişlerim çap ve eğim şöyle bir fonksiyon geçiriliyor. Q fonksiyonu bu da akış miktarı. Benim A0, A1, A2 kat sayılarını bulmam gerekiyor. Şimdi birazcık sanki öncekilerinden size farklıymış gibi geliyor.
+
+500
+02:05:40,408 --> 02:06:03,768
+Yeniden başa dönelim. Yani çoklu olmasının sebebi benim inputum birden fazla. Inputum D ve S'di. Fakat yapılan şeyler aynı. Bana verilen fonksiyon hangi fonksiyondu? Bu fonksiyon. Bu fonksiyon lineal bir fonksiyon değil. Bunu lineal hale çeviriyoruz.
+
+501
+02:06:03,767 --> 02:06:07,427
+eşitliğin her iki tarafının logaritmasını aldım.
+
+502
+02:06:07,727 --> 02:06:14,127
+Logaritma Q, logaritma A0, çarpı yerine artı koydum.
+
+503
+02:06:14,127 --> 02:06:19,747
+A1 düştü, logaritma D, çarpı yerine artı koydum.
+
+504
+02:06:20,167 --> 02:06:22,827
+A2 düştü, logaritma S.
+
+505
+02:06:24,127 --> 02:06:28,627
+Bunlarla daha kolay işlem yapabilmem için işte buna Y dedim.
+
+506
+02:06:29,207 --> 02:06:33,687
+Bunun tamamına A0, buna X1 dedim.
+
+507
+02:06:33,767 --> 02:07:03,547
+A1 bulunacak. Buna x2 dedim, A2 bulunacak. Yani elimdekini de y eşittir. A0 artı A1 x1, A2 x2 diye bu hale getirdim. Ben A0, A1, A2'yi bulurum. Daha sonra zaten x2 log s, x1'i log d, x0'ı da log a0 olarak alacağım için, yani geri dönüşüm yapacağım için
+
+508
+02:07:03,547 --> 02:07:10,927
+problem yok. Öyleyse geldik yeniden en başa. Benim gerçek bir fonksiyonum var.
+
+509
+02:07:11,376 --> 02:07:29,376
+Bundan geçirmek istediğim interpolasyon fonksiyonu işte bu. Aralarındaki farkı alıyorum. Farkların karelerini aldım. Başına da kaç tane değerim varsa birden n'e kadar da sigma'yı koydum.
+
+510
+02:07:29,376 --> 02:07:42,315
+Gördüğünüz gibi hiçbir şey değişmiyor. Olması gereken y'den geçirilmesi istenen interpolasyon fonksiyonunun farkının karelerini toplamına alıyorum.
+
+511
+02:07:43,056 --> 02:07:56,376
+Bilinmeyenlerim nedir? a0, a1, a2. Öyleyse ben buradaki ifadeni a0, a1 ve a2'ye göre türellerini alacağım, 0 eşitleyeceğim.
+
+512
+02:07:56,376 --> 02:08:22,475
+diyeceğim. 3 tane bilinmeyenim, 3 tane denklemim olacak. Ben ne yaptım? Non-linear olan bir denklemi her iki tarafın logaritmalarını alarak lineer hale getirdim. Bunlara bir değişken verdim. Yani ben buna A derim, buna gider büyük B derim, buna gider C derim. Ne isim verirsem verim. Benim bulunması gerekenler nedir?
+
+513
+02:08:22,475 --> 02:08:31,776
+aslında A0, A1, A2. D ve S'ler zaten bana soru da verilmiş. Q değerleri de bana soru da verilmiş.
+
+514
+02:08:32,855 --> 02:08:43,056
+Öyleyse bu deminki şurada dedik ya, nerede? Farkların karelerini alacağız. A0, A1 ve A2'ye göre türevlerini alacağız.
+
+515
+02:08:43,056 --> 02:09:04,495
+İşte burada A0'a göre türevini alalım. 2'yi düşürdük, 2 düştü. İçinin kendisi yi-a0-bilmem ne yazdı. A0'a göre türev alırsam eksi 1 ile çarptı. Onları düzenlediğim vakit şu çıktı.
+
+516
+02:09:04,495 --> 02:09:14,215
+Burada A1'e göre travelıyorsam X düştü içi A1'e göre travelıyorsam bunu X1 ile çarptım
+
+517
+02:09:14,215 --> 02:09:24,695
+A2'ye bulacaksam travelıyorsam X düştü içi ve A2'ye göre travelıyorsam X2'yi buldum
+
+518
+02:09:24,695 --> 02:09:27,895
+Eşitledim sıfıra 3 bilim yer 3 denklem
+
+519
+02:09:27,895 --> 02:09:29,835
+Nasıl yerleştirdim?
+
+520
+02:09:29,835 --> 02:09:36,795
+bu y'leri eşittiğim diğer tarafına at, ikileri sadeleştir, sol taraf ne olacak?
+
+521
+02:09:36,995 --> 02:09:44,995
+Sağ tarafta y'lerin toplamı, x'i, y'lerin çarpımı, x'i, ki ile x'i'nin çarpımı.
+
+522
+02:09:44,995 --> 02:09:53,275
+Sonra buraya bakalım, a0 ise burası e, burası sigma x, burası sigma x kare.
+
+523
+02:09:53,275 --> 02:10:17,815
+İşte onlar burada. Sonra buraya geldik. X'i buradaysa Sigma X'i. Sigma X'i'nin karesi. Burası da X'i ile X'i'nin çarpımı. Aşağıya geldik. X'i'nin toplamları. X'i ile X'i'nin çarpımlarının toplamı. X'i'nin karesi.
+
+524
+02:10:17,816 --> 02:10:36,896
+artık bana verilen sayısal değerlerde x1 neye x1 demiştim ben? Logaritma d'ye. Demek ki bana d'ler verilmişti. d'lerin logaritmalarını alıp bunların toplamı nereye yazılacak? İşte buradaki x1'e.
+
+525
+02:10:36,895 --> 02:10:48,355
+x2'lerin toplamı ben kime x2 demişim? Log s'ye. Demek ki sorudaki s'lerin logaritmasını alacağım. Onların toplamlarını alıp
+
+526
+02:10:48,851 --> 02:11:02,251
+Dırt diye buraya yazacağım. Bu da diğerleri. Biri çap, biri derinlikti. Bunların sayısal değerleri, logaritmalarını çarptım, karesini falan aldım. Buralara yerleştirdim.
+
+527
+02:11:02,251 --> 02:11:14,851
+İşte soru da aynı soru. Bana böyle bir tablo veriliyor. Şu fonksiyonu geçiriliyor. Bu fonksiyonu lineer hale geçirdim. Deminki gibi.
+
+528
+02:11:14,851 --> 02:11:26,971
+Bunları A0, A1, A2'ye göre türevlerini aldım. 3 tane denklem falan pişman elde edildi ve bunların içlerini dolduruyorum.
+
+529
+02:11:27,791 --> 02:11:34,011
+Bakın logaritma Q'yu vardı. Bu Y'lerin yerine logaritma Q konuluyordu.
+
+530
+02:11:34,011 --> 02:11:44,731
+Öyleyse Q'nun logaritmalarını aldım toplamı. X1'e log D demiştik. D'nin logaritmasını aldım. Bunların toplamını kullanacağım.
+
+531
+02:11:44,851 --> 02:12:08,572
+S'e x2 demiştim log2'ye. S'in logaritmalarını aldım. Bunların toplamını kullanacağım. Sonra x1'in karesi vardı. x1 şu log d'lerdi. Bunların kareleri. x2'nin karesi log s x2'ydi. Karesi burası. x1'in y ile x1'in x2, x2'in y ile çarpımları.
+
+532
+02:12:08,572 --> 02:12:22,712
+aynı değerlerden çıkarıyorum. Bu çıkan sayısal değerleri bu matristeki ilgili yerlere koydum. Karşıma ne çıktı? A0, A1 ve A2'yi buldum.
+
+533
+02:12:22,712 --> 02:12:31,131
+Bundan sonra benim yazmam gereken şey bir bakalım A0'ı logaritma A0'mış.
+
+534
+02:12:31,131 --> 02:12:43,271
+Öyleyse benim bulduğum şey neydi A0 değeri? A0 bu logaritma A0 ise benim şuradaki A0'a ihtiyacım var demektir.
+
+535
+02:12:43,271 --> 02:13:02,131
+onun taks işlemini yapacağım. Mesela burada x1'i buldum. x1, logaritma d ise d nedir? e üzeri x1'dir. İşte bunu bulacağım. Buradaki d'nin sonucu. Aynı şekilde bir x2 değeri buldum.
+
+536
+02:13:02,131 --> 02:13:27,691
+bunu gidiyorum. A2'yi buldum. Esim de belli. Esimi de gidiyorum. Burada bulduklarımı yerine yazıyorum. A2 geldi buraya. Planca geldi buraya. Burada grotimi A0'dı. A0 bunları açtık, koyduk. Burada işte bunları düzelttim. Karşıma bu çıktı.
+
+537
+02:13:27,691 --> 02:13:41,371
+yaptı. Yaptığım şey aynısı arkadaşlar. Hiçbir farkı yok. Buradaki kimlere x2 demiştim. Onların yerine onu. Log s'e x2 demiştim mesela.
+
+538
+02:13:41,371 --> 02:13:53,751
+Kime x1 demiştim. Log d'ye demiştim. Buradaki log s'i nasıl yazacağım aslında? 0.54 log s ise bu nedir?
+
+539
+02:13:53,751 --> 02:14:13,911
+S üzeri 0.54'tür. Aksi taktirde bunu linear olarak nasıl yazılırdı? Bu üst düşer. 0.54 çarpı log s'ti. Yani ben bunu buldum. Tam ters işlemi yaptım. Burası neydi? D üzeri 2.62 logaritmasını alsam 2.62 log d'di.
+
+540
+02:14:13,911 --> 02:14:23,331
+yani blokte 2.62 idi. Bu nedir? D üzeri 2.62 olacak. Onu da bu şekilde çevirdim. Burada da aynı şey.
+
+541
+02:14:23,331 --> 02:14:35,572
+Logaritma A0, 1.74, 1.75'e eşit. A0, E üzeri 1.74 dedim. Orası da 55.99 çıktı. Koydum.
+
+542
+02:14:35,572 --> 02:14:45,812
+Kısacası hep birbirinin aynısı yaptınız. Unutmayın lineal değilse lineal çeviriyorsunuz.
+
+543
+02:14:46,323 --> 02:15:14,323
+Ondan sonra orijinal y'den geçirilmek istenen fonksiyonun farklarının, karelerinin toplamlarını alıp, bilinmeyene göre türevlerini alıp, sıfıra eşitleyip, matris formunu geçirip, geri kalanları burada ne yazıyor? N kaç tane değer var? 9 tane yazdım. Burada ne yazıyordu? Burada ne yazması gerekir? Şurada vardı buranın ne olduğu mesela.
+
+544
+02:15:14,323 --> 02:15:31,643
+X1'lerin toplamı. Ben kime X1 dedim? LogD'ye. O zaman tablomdaki D'lerin logaritmasını aldım, topladım. Gittim buraya X1'lerin toplamını yazdım.
+
+545
+02:15:31,643 --> 02:15:53,583
+hepsi birbirinin aynı. Artık bunda daha fazla söylenecek bir şey yok. Çoklu regresyonda demek ki inputun bir değil birden fazla o zaman adı çoklu regresyon oluyor. Biraz daha şurada hesaplanacak şeyler daha çok artıyor. Başka da bir şey yok.
+
+546
+02:15:53,584 --> 02:16:20,963
+Regresyonumuz da budur sevgili arkadaşlar. İkinci vizemizi yeniden test olarak yapıyoruz. Ama finale başka türlü çalışmanız gerekiyor. Çünkü test gibi değil. Ya üç ya da dört tane soru sormayız. Dört ya da beş tane soru soracağız. Ve hesap makinesini daha gerçekçi olarak kullanacaksınız.
+
+547
+02:16:20,963 --> 02:16:50,044
+işlem sürelerimiz testler gibi olmayacak daha fazla işlem yapmanız gerekecek o yüzden teste çalışır gibi finale çalışmayın bir de proje yapıyorsunuz proje yaparken bu algoritmaları yazdığınız için algoritmalar aklınızda daha kolay ve net olarak kalacaktır bunu finale çalıştığınız vakit daha iyi bir şekilde anlayacaksınız
+
+548
+02:16:50,963 --> 02:17:10,344
+projelerde kendiniz kodlayın. Proje vermek bize hiçbir şey kazandırmıyor. Hatta külfet oturuyorsun, onlara bakıyorsunuz. Bizim tek bir şeyimiz var. Algoritmayı birinci sınıfta bitirip cebinize atmanız.
+
+549
+02:17:10,344 --> 02:17:34,724
+Yani artık algoritma nasıl düşünüyorum, nasıl kodlayabiliyorum, hata çıkarsa bu hataları düzeltebiliyor muyum? Bu çok önemli. Bunun için bol bol algoritma yazmanız gerekir. O yüzden birinci sınıfta böyle bilgisayar bilimleriyle ilgili olan derslerde hep proje veririz ki ikinci sınıfa çok rahatlıkla geçin.
+
+550
+02:17:34,723 --> 02:17:49,684
+çünkü ikinci sınıfta birdenbire kendinizi algoritma yumanının içinde bulacaksınız. O yüzden çok önemli. Ne olursa olsun eksik yapın ama kendiniz yapın.
+
+551
+02:17:49,684 --> 02:17:54,784
+sadece yaptığınız her şeyi kendiniz için, not için değil.
+
+552
+02:17:57,303 --> 02:18:01,083
+Yani not için yapmak, not için yapmayın.
+
+553
+02:18:02,463 --> 02:18:13,764
+Geleceğiniz için yapın ve siz dördüncü sınıfa gelene kadar teknoloji bile o kadar hızlı ilerliyor ki insan şaşırıyor.
+
+554
+02:18:13,764 --> 02:18:24,584
+Yani bizim öğrenciliğimiz de sizin öğrenciliğiniz arasında dağlar kadar fark var. Mesela hukukta ne değişecek? Anayasa aynı anayasa, yeni maddeler ekleniyor.
+
+555
+02:18:27,603 --> 02:18:28,603
+Tıpta evet bir şeyler değişiyor. Yine kimyada, yani bir periyodik cetvel, diğer şeyleri küçümsemeyeyim ama çok fazla yenilik belirli alanların dışında yok. Hep sabit şeyler, iktisat, işletme, oturmuş olan şeyler var, ufak tefek. Ama bir dört sene sonra gelecek olanlar, belki bunların çok daha üstünde bilgiler de karşılaşılacak. Bunların hep zorunlu dersler değil, seçimlik dersler olarak.
+
+556
+02:18:57,603 --> 02:19:21,603
+düşünün. O yüzden kendinizi geliştirmek her şeyden önemli olmalıdır. Haftaya proje gösterecek olanlar lütfen bana bir mail asın, ben bir liste yaparım. Projenin şeyi bittikten sonra tarihi yani saati, saat de belli olsun da bir 10-15 dakika dinlenirsiniz.
+
+557
+02:19:21,603 --> 02:19:36,623
+denirsiniz. Göstermek isteyenler ondan sonra bana gösterebilir ama bilgi verirseniz sevinirim. Şimdilik bu kadar bu hafta. Bu konumuzu da bitirdik. Vize de görüşmek üzere diyorum. Sorunuz var mı arkadaşlar?
+
+558
+02:19:40,724 --> 02:19:41,724
+her zamanki gibi yok. Hocam. Ardın'ın sesi açıktı, sesi gelmiyor sanırsa. Şu an geliyor. Hocam, projede Gauss-Seidel yöntemini yaparken hani köşegeni bulmak için bir sürü for gerekiyordu onun kısaltısı. Niye bulmak için? Gauss-Seidel yönteminde köşegeni bulabilmek için hani köşegenin çarpımı en büyük olmalıydı ya hocam. Evet. Onu bulmak için bir sürü for gerekiyor diye düşündüm hocam. Tam yapmadım onu ama hani bir ipucu verebilir misiniz?
+
+559
+02:20:10,724 --> 02:20:12,504
+Onun dışında başka bir yöntem var
+
+560
+02:20:12,504 --> 02:20:21,724
+Yani nasıl gerekir? Yani şeyin kaç boyutluysa matrisin o kadar fazla kontrol yapman gerekiyor tabii ki
+
+561
+02:20:21,724 --> 02:20:24,363
+Evet biraz uzun süreceği için
+
+562
+02:20:24,363 --> 02:20:27,484
+Ya da şöyle diyeceksin, ya da şöyle diyeceksin
+
+563
+02:20:27,484 --> 02:20:30,244
+Hiç onun kodunu araştırdınız mı?
+
+564
+02:20:31,624 --> 02:20:34,743
+Araştırmadım, önce kendim yapmaya çalıştım ama
+
+565
+02:20:34,743 --> 02:20:36,444
+Tamam, şöyle söyleyeyim
+
+566
+02:20:36,443 --> 02:20:57,703
+aslında en kolay yolu her kolondaki en büyük olanını bulup onu ilk sıraya taşımak. Sonra ikinci kolona gelenlerde en büyüğü bulup onu ikinci sıraya, üçüncü kolondakilerdekini en büyüğü bulup bir değiştirilen bir daha değiştirilmeyecek şekilde buluyorsunuz.
+
+567
+02:20:57,703 --> 02:21:08,463
+onu bir araştır, onu daha kısa çözebilirsiniz. Hazır bunun kodunu bulursanız da analiz edin, nasıl yaptığını anlayın.
+
+568
+02:21:09,903 --> 02:21:13,823
+Onun üzerinden de geçebilirsiniz ama şöyle bir şey verin.
+
+569
+02:21:13,823 --> 02:21:30,523
+mesela ne olsun? Şurası 1, 1 demeyeyim de 1x1 artı x2 artı 3x3 diyeyim. Şimdi yaparken de hatalı da yapabilirim.
+
+570
+02:21:30,523 --> 02:21:57,183
+5x1 olsun, artı 3x2, artı 2x3, 6x2, x1, burası da x3 olsun. Şimdi bakıyorsun, şurada en büyük birinci kolonda hangisi? 5x1. Bunu alıp birinci sıraya koydun.
+
+571
+02:21:57,183 --> 02:22:10,983
+sonra buradaki bakacaksın ikincilerde en büyük hangisi? Yeri değiştirilmemiş olan onu ikinci sıraya sonra üçüncü kolonda yeri değiştirilmemiş olanlardan hangisi büyük?
+
+572
+02:22:10,983 --> 02:22:26,343
+Onu koyup bakıyorsun böyle bir şey var yöntem var ama bunu bir araştırın ya da bunu diyelim ki bazen çalışıyor bazen çalışmıyor bu gibi durumlarda şunu diyebilirsin
+
+573
+02:22:26,343 --> 02:22:49,383
+ben bu soruda diaguneli en büyük olacak şekilde şeylerimi ben giriyorum. Böyle de diyebilirsin ama o slide'ı bulun o dersin slide'ını dinleyin. Öyle birinci kolondaki en büyük değer hangisi ise onu birinci sıraya çıkarıyorsun. Artık bu beş kas sayısı oraya geldi.
+
+574
+02:22:49,383 --> 02:23:05,363
+Sonra ikincilerdeki en büyük olan hangisi? İkinciyi oraya. Sonra üçüncülerdeki o da üçüncü sıraya. Dördüncü sıraya gelecek olan da dördüncü konumdaki en büyük olan ama yeri değişmemiş olan denklemlerden.
+
+575
+02:23:05,363 --> 02:23:29,804
+mesela sen bu beşi taşıdın buraya ikideki de büyük çıktı ikidekinin yerini değiştirdi buraya gitti birinci kolanı en büyük olan olmadı en küçük olan bir iki deneme yapın benim yaptığım örneklerde onun çıktığını göreceksiniz tamam mı dersen anlatırken de bahsettim diye düşünüyorum o videoya da bakın.
+
+576
+02:23:30,484 --> 02:23:33,484
+Ben de öyle hatırlıyorum da hani bazen çıkmayabiliyor.
+
+577
+02:23:33,484 --> 02:23:40,484
+Evet, bazen çıkmayabiliyor. O da bir sebebi vardı onun çıkmamasının ama şu an hatırlayamadım.
+
+578
+02:23:40,484 --> 02:23:52,484
+Bilmem nereye gelen kas sayının başı bilmem ne oluyorsa onda o işlemiyor. Önce onu kontrol ediyorlar, şunu hatırlayamadım.
+
+579
+02:23:52,484 --> 02:23:58,484
+Eğer öyle bir durum söz konusuysa o denklem takımında o öyle çözülmüyor.
+
+580
+02:23:58,484 --> 02:24:01,303
+O zaman ne yapalım? Hani çözülemez diye
+
+581
+02:24:01,303 --> 02:24:26,463
+Maksimum diagonele nasıl getirilir? Onun kodu mutlaka vardır. Bir bakın. Şimdi o kadar şeyi yani şöyle senin dediğin gibi her birini teker teker en faktöriyel olacak şekilde bütün kombinasyonlara bakarsın. Senin üçü üçlük bir maddesin varsa olabilecek bütün kombinasyonları hesaplarsın. Ama diyelim ki elli kat sayılıysa ben
+
+582
+02:24:29,971 --> 02:24:30,971
+ellinin bütün durumlarını mı bakacağım? Bunu optimize eden şeyler var ama o kadar derine girmeyin. Tamam hocam teşekkür ederim. Bu da Ahmet Hoca'ya soruyorsunuz. Evet Ahmet Hoca şey diyor, mesela işte en boyutlu. Yani oturup bizim şu an bilgisayarda yüze yüzlük bir matrisi alıp da bilmem ne işlemi yaptırmamız da çok uzun sürer. Yani siz yine
+
+583
+02:24:59,971 --> 02:25:16,812
+olabilecek sınır 10-20 yani hepsi için çalışsın ama bazen bazı şeyler ya da öyle bir değişken tanımlayacaksınız ki o değişkeni şeyim byte tanımlayacaksın ya da integer tanımlayacaksın yetmeyecek.
+
+584
+02:25:16,931 --> 02:25:21,291
+Onun da bunu olması gerekiyor. Onu ilk başlarda bilemeyebilirsin.
+
+585
+02:25:21,291 --> 02:25:39,872
+maksimum diyakoneli bir arayın. Kuralı da var dediğim gibi. Bu dediğim şeyin çalışmadığı bir durum var ama şu an onu hatırlayamıyorum. Bir şeyler böyle kontrol ediliyordu. Eğer o varsa bu dediğim kural uygulanmıyor. Ama ne olduğunu şu an hatırlamıyorum.
+
+586
+02:25:41,471 --> 02:25:42,751
+Tamam hocam çok teşekkür ederim.
+
+587
+02:25:43,671 --> 02:25:44,451
+Hadi iyi akşam.
+
+588
+02:25:44,772 --> 02:25:48,111
+Hocam bekleyin şey bir de sinem arkadaşımızın bir sorusu vardı.
+
+589
+02:25:48,652 --> 02:25:48,951
+Tamam.
+
+590
+02:25:48,951 --> 02:26:14,191
+şey 23 Mayıs'tan sonra sunumları hangi sıraya göre yapacağız demiş. Bu mu sıra? Öncelikle ona bakacağım. Tamam mı? Arkadaşlar ben öyle sıra yapmıyorum. Sıra mıra yok. Ben diyeceğim filanca göster. Filanca göster. Eğer hazırsa gösterir. Hazır bir sonraki haftaya kalır.
+
+591
+02:26:14,192 --> 02:26:38,852
+liste yaparsam haksızlık olur. En son haftaya kalacak olanlar biraz daha uğraşır. Herkes sanki sunumlar başlıyormuş gibi, bakacakmış gibi son iki hafta hazır olması lazım. Şansı o çıkmadı, onun şansıdır. Ama önümüzdeki hafta gerçekten bitirmiş olanlar kimlerse göstersin ki sonraki haftalarda süremiz azalsın.
+
+592
+02:26:38,851 --> 02:26:43,851
+Ben liste vermeyeceğim, onun haksızlık olduğunu düşünüyorum
+
+593
+02:26:43,851 --> 02:26:47,851
+Kabul edin ya da etmeyin
+
+594
+02:26:48,451 --> 02:26:53,591
+Hocam sunum dersine herkes katılacak mı yani? Onu sormuşuz yine
+
+595
+02:26:53,591 --> 02:26:57,851
+Ya ne kadar saçma sorular bunlar gerçekten
+
+596
+02:26:58,391 --> 02:27:00,631
+Ben dersin başında ne dedim?
+
+597
+02:27:01,231 --> 02:27:04,531
+Amaç projenizi göstermek, sen projeni göster
+
+598
+02:27:04,531 --> 02:27:08,611
+Ondan sonra sen olmuşsun, olmamışsın önemli değil
+
+599
+02:27:08,611 --> 02:27:17,231
+oturup başkalarının ne yaptığına bakmak istiyorsan bakarsın. Ama amaç sen kendi projenden ve onun sunumundan sorumlusun.
+
+600
+02:27:21,492 --> 02:27:51,471
+Üstünüze ne giyeceğinizi de söyleyeyim mi? Açıp renk olsun. Haa bir şey daha. Lütfen projesini gösteren şeyi açacak kamerayı. Ben artık kim olduğunuzu bir göreyim sizin. Yani tanımıyorum, etmiyorum. Sadece isimler görüyorum. Onu da aşağı yukarı indirmezsem hep aynı isimleri burada görüyorum çünkü. O yüzden kamera açılacak ve ben kim olduğunu bir göreceğim onu.
+
+601
+02:27:51,492 --> 02:28:01,091
+belki aynı kişi aynı şeyleri bana gösteriyor nereden bileyim başka güzel soru
+
+602
+02:28:05,332 --> 02:28:13,332
+Peki. İyi haftalar diliyorum ve iyi akşamlar size. İyi akşamlar hocam. İyi akşamlar. Hoşçakalın.

@@ -1,0 +1,4223 @@
+1
+00:02:12,852 --> 00:02:15,852
+Loks, takk, valkan varða út.
+
+2
+00:04:33,300 --> 00:04:35,300
+Merhaba arkadaşlar.
+
+3
+00:04:40,884 --> 00:04:42,884
+Gamalettin Hasan
+
+4
+00:04:42,884 --> 00:04:48,884
+Aaaa bütün ses verir misin?
+
+5
+00:04:48,884 --> 00:04:51,884
+Muntaha
+
+6
+00:04:51,884 --> 00:04:56,884
+Gamalettin Hasan
+
+7
+00:05:00,435 --> 00:05:01,435
+Katılanların sesini kapatabiliyorum ama bu arkadaşınız hariç nereden ne şekilde bağlandı ki sese kapanmıyor. Bekim, seninki de açık. Lütfen söz verildiğinde mikrofonunuzu açarsanız sevinirim. Ve ne kadar çok yabancı var? Ya da şu an benim karşımdaki sayfa yabancılarla dolu.
+
+8
+00:05:30,435 --> 00:05:51,656
+Neyse şu an 35 kişi var. Dersi alan 100 kişi olduğunu biliyoruz. Yavaş yavaş konuma giriyorum. Öncelikli olarak şöyle bir bilgi vereyim. Diğer grubun hocası Ahmet Hoca Google Classroom oluşturdu.
+
+9
+00:05:51,655 --> 00:06:11,315
+benim grubumu da ekle dedim. Sizin de eklenmiş olmanız lazım. Derslerle ilgili hep aynı şeyleri yaptığımız için yani proje konularımız aynı olduğu için proje ilanlarını onunla ilgili gelecek olan mesajlara lütfen dikkat edin.
+
+10
+00:06:11,315 --> 00:06:26,775
+Çit mesaj göndermeyelim. Onun linkini atar mısınız? Siz üye olmadınız mı? Yani size o linkin sınıfa gönderilmiş olması lazım. Bir saniye.
+
+11
+00:06:32,500 --> 00:06:40,500
+Ama bana davet olarak gelmiş. Nasıl gönderebilirim? Bir saniye.
+
+12
+00:06:55,252 --> 00:06:59,252
+165 öğrenci de siz yok musunuz?
+
+13
+00:06:59,252 --> 00:07:01,252
+Vav, vav, vav.
+
+14
+00:07:03,252 --> 00:07:07,252
+Bir saniye arkadaşlar.
+
+15
+00:07:21,908 --> 00:07:22,908
+Şuradan bir deneyim bakayım. Ne diyecektim başka? Aslında şu ana kadar gördüğümüz konuların bazıları, evet proje içerisinde var. Çok yakında proje raporunu da, yani rapor demeyeyim de projede neler istediğimizle ilgili bir çıktı da atabiliriz. Ama henüz biraz erken çünkü daha yeni yeni algoritmımız da oturmaya başladığı için
+
+16
+00:07:51,908 --> 00:07:58,108
+diye ödevlere geçmeniz biraz zor olur ama en kısa sürede bunu da size aktaracağız.
+
+17
+00:07:58,948 --> 00:08:03,908
+Şimdi geçen hafta biz ekran paylaşımımı yapayım.
+
+18
+00:08:05,687 --> 00:08:15,168
+Denklemlerin, bu üçüncü bölüm, denklemlerin, linear olmayan denklemlerin çözümüne başlamıştık.
+
+19
+00:08:15,168 --> 00:08:19,827
+Bir linear olmayan denklem ne demekti?
+
+20
+00:08:19,827 --> 00:08:35,247
+eğer bilinmeyenin derecesi 2, 3 ve üzerisi içerisinde trigonometrik ifadeler ya da E üzeri gibi ifadeler varsa bu denklemlerimiz linear olmayan denklemlerde.
+
+21
+00:08:35,408 --> 00:08:43,227
+Çünkü çözümleri çok kolay da değil. Bu linear olmayan denklemleri çözerken de bir tane bilinmeyenimiz olacak.
+
+22
+00:08:43,227 --> 00:08:48,387
+birden fazla bilinmeyen varsa onların çözümleri de ayrı.
+
+23
+00:08:52,227 --> 00:08:59,827
+Yine olmayan denklemleri çözerken de kapalı yöntemler ve açık yöntemler diye ikiye ayırmıştık.
+
+24
+00:09:00,247 --> 00:09:02,488
+Şu an herkes görebiliyor mu ekranı?
+
+25
+00:09:05,027 --> 00:09:11,387
+Yasin Aktaş ya da Ali, Ali, Ali Öznyalçın sen açtın sesini, Başkan sen ol.
+
+26
+00:09:11,387 --> 00:09:13,587
+Peki hocam
+
+27
+00:09:13,587 --> 00:09:15,147
+Görüyorsunuz
+
+28
+00:09:15,147 --> 00:09:16,227
+Evet
+
+29
+00:09:16,227 --> 00:09:16,947
+Tamam
+
+30
+00:09:16,947 --> 00:09:20,767
+Kapalı ve açık yöntemler diye ikiye ayırmıştım
+
+31
+00:09:20,767 --> 00:09:22,067
+Kapalı yöntemler
+
+32
+00:09:22,067 --> 00:09:24,527
+Bakın yeniden kısa bir özet çıkıyorum
+
+33
+00:09:24,527 --> 00:09:27,287
+A ve B diye iki tane aralık var
+
+34
+00:09:27,287 --> 00:09:31,687
+Ve kök bu iki aralığın arasında olmak zorunda
+
+35
+00:09:31,687 --> 00:09:37,367
+Yine aralık olmayan bir denklem takımını da çözmek istiyorsak
+
+36
+00:09:37,367 --> 00:09:43,747
+bu verilmiş olan AB kapalı aralığının değerleri, sına değerlerini fonksiyonda yerine koyuyordu.
+
+37
+00:09:44,427 --> 00:09:51,347
+Ters işaretli ise F A ile F B'nin çarpımı bu aralıkta bir kök vardır diyordu.
+
+38
+00:09:51,927 --> 00:10:00,367
+Kapalı yöntemler bırak sayan, yakın sayan bir yöntemler fakat iterasyon sayısı biraz uzun sürebilirdi.
+
+39
+00:10:00,367 --> 00:10:11,947
+Açık yöntemlerde ise iki tane aralık bana verilebilir ama illaki kök bu iki aralık içerisinde olmak zorunda değildir
+
+40
+00:10:11,947 --> 00:10:15,347
+Bıraksama ihtimalleri de vardır
+
+41
+00:10:15,347 --> 00:10:24,627
+Bırak sarlarsa yani ben gittikçe kökten uzaklaştığımı hissediyorsa aralığımı değiştirmem gerekir
+
+42
+00:10:24,628 --> 00:10:32,827
+eğer yakın sarlarsa da çok hızlı bir şekilde kapalı yöntemlere göre köke erişebilirler.
+
+43
+00:10:33,327 --> 00:10:43,587
+Açık yöntemlerde de Newton-Raphson, sekans yöntemi, kiriş yöntemi diye geldik ve en sonda bir yöntem vardı.
+
+44
+00:10:53,940 --> 00:10:57,259
+Bu arada misaf makinesi var mı yanınızda?
+
+45
+00:11:01,460 --> 00:11:13,460
+Çok zannetmiyorum ama ben yine uyarıyorum. Lütfen hesap makinesine sahip olun. Şimdi üçüncü yöntemimiz... Benim yanımda var hocam.
+
+46
+00:11:13,460 --> 00:11:24,460
+Açık yöntemlerde üçüncü yöntemimiz tekrarlama metodu diye Türkçeye çevrilen Fixed Point Iteration Method.
+
+47
+00:11:24,460 --> 00:11:32,840
+diğerlerine göre biraz değişik ama bu da kullanışlı, iyi sonuç alınabilen bir yöntem.
+
+48
+00:11:33,460 --> 00:11:36,099
+Sadece bir kontrol kısmı var.
+
+49
+00:11:36,640 --> 00:11:43,659
+Bir şekilde o kontrol kısmında fals olursa işlemin birazcık uzayabilir.
+
+50
+00:11:44,140 --> 00:11:46,820
+O durumu da zaten yavaş yavaş anlatacağım.
+
+51
+00:11:47,019 --> 00:11:51,259
+Diğer yöntemlere göre biraz anlatması uzun sürecek ama önemli değil.
+
+52
+00:11:51,259 --> 00:12:00,259
+Yine bu yöntemi maddeler halinde üzerinden geçelim.
+
+53
+00:12:01,079 --> 00:12:08,699
+Linear olmayan ve analitik çözümü olmayan bir bilim yani denklemlerin köklerini bulmada kullanılır.
+
+54
+00:12:08,699 --> 00:12:11,699
+Okey. Bir tane de kalem alayım.
+
+55
+00:12:11,699 --> 00:12:24,640
+Kökü bulunacak olan fx fonksiyonu x değişkeni sol tarafta tek kalacak şekilde x eşitli gx olacak şekilde parçalanır.
+
+56
+00:12:24,640 --> 00:12:32,159
+Haa burada ne diyoruz? Burada diyor ki sana bir tane fx fonksiyonu verilecek.
+
+57
+00:12:32,159 --> 00:12:43,079
+bu fx fonksiyonu içerisinde x'i sol tarafta tek başına gelecek şekilde parçalar.
+
+58
+00:12:43,859 --> 00:12:48,320
+Ben mesela elimde x kare artı x diye bir ifade var.
+
+59
+00:12:48,839 --> 00:12:56,539
+Bana deniyor ki sol tarafta x tek başına gelecek şekilde oluşabilecek gx'leri oluştur.
+
+60
+00:12:56,539 --> 00:13:00,899
+Birden fazla oluşturabilirim. Örneklerini göreceğiz.
+
+61
+00:13:00,899 --> 00:13:27,099
+ilk yapacağımız şey bu. İkincisi bu şartı sağlayan birden fazla GX çifti olabilir. Peki ben bu GX'lerden hangisini seçip çözüme gireceğim? Bunun da kuralları var. Anlatacağım. Çözülecek denklem sayısı bir iken ikiye çıkarılır ama denklemler daha basitleştirilmiş olur.
+
+62
+00:13:27,099 --> 00:13:48,900
+Burada ne demek istiyorum? Bir tane fx fonksiyonum varken ben fx fonksiyonunu iki parçaya bölüyorum. Parçalardan bir tanesi x, diğer de gx oluyor. Birken ikiye bölüyorum. Bu aslında işimi zorlaştırmıyor, daha basite indiriliyor.
+
+63
+00:13:48,900 --> 00:13:56,939
+Gx, AB aralığında bazı şartları sağlayıp sağlamadığını kontrol edeceğim.
+
+64
+00:13:56,939 --> 00:14:07,939
+Dedim ki elimde birden fazla Gx'ler oluşabilir. Ben bu bütün Gx'leri kullanabilir miyim? Hangilerini kullanabileceğime bakacağım.
+
+65
+00:14:08,079 --> 00:14:13,320
+Bu AB aralığında bulmak istediğim aralıkta uygun bir Gx mi diye.
+
+66
+00:14:13,320 --> 00:14:30,260
+şartlar sağlanıyorsa başlangıç x değeri yx fonksiyonunda yerine koyularak yeni bir x değeri elde edilecek ve bu işlemler durma noktasına gelinceye kadar devam ettirilecek.
+
+67
+00:14:30,259 --> 00:14:55,719
+Durma noktasını bir hatırlayalım. Durma noktasında demiştik ki arka arkaya hesapladığım iki tane kök değerinin en son bulduğum xk artı bir olsun. Ondan önce bulduğumda xk bunların farkları mutlak değerce belirlediğim hatadan küçük eşitse durabilirim.
+
+68
+00:14:56,307 --> 00:15:16,307
+Bir başka yöntem ne diyordu? İşte sana bir gerçek değer verilecek. Bu gerçek değerden bulduğun en son x değeri çıkarıldığında bu fark epsilon'dan küçük olunca duracak. Ya da işte başka bir durma noktası. 10.000 iterasyon sonra dur.
+
+69
+00:15:16,307 --> 00:15:24,087
+genelde ama genelde ben farklı şeyler örneklerde kullansam bile yapmanızı istediğim bu.
+
+70
+00:15:24,087 --> 00:15:27,467
+Çünkü çok daha hızlı bir şekilde yapabilirsiniz.
+
+71
+00:15:27,867 --> 00:15:30,367
+Kağıt kalemle işlem yaptığınızda.
+
+72
+00:15:31,348 --> 00:15:36,507
+Şimdi bize deniyor ki sana diyorlar bir tane fx fonksiyonu vereceğim.
+
+73
+00:15:36,927 --> 00:15:39,047
+Bu fonksiyonun kökünü bulacaksın.
+
+74
+00:15:39,047 --> 00:15:48,067
+x'i ama bunu bulurken de bu iterasyon yönteminde bu elimdeki fonksiyonu iki parçaya ayıracaksın.
+
+75
+00:15:48,067 --> 00:16:01,528
+Biri x, diğeri gx. Bunu yaparken de bu fx fonksiyonunun içindeki x'i tek başına sol tarafta bırakıp geri kalan kısma gx diyeceğim.
+
+76
+00:16:01,528 --> 00:16:12,367
+aslında gx'i buraya alsam, bu tarafa geçirsem x-gx eşittir 0 yine fx'inize eşit olmuş olacak.
+
+77
+00:16:12,367 --> 00:16:20,647
+Örnek sana fx fonksiyonu olarak bu verisi x'i eşitliğin sol tarafında bırakacaksın.
+
+78
+00:16:21,127 --> 00:16:28,288
+x'i alıp eşitliğin sol tarafına geçirdiğinde sağ tarafta eksisiniz x, eksi 1 kaldı.
+
+79
+00:16:28,287 --> 00:16:48,447
+İşte şurası benim için yx, burası da x. Ben normal fx fonksiyonumu iki parçaya böldüm. Başka bir örnek yapalım. x kare eksi 9x eksi 10 eşittir 0.
+
+80
+00:16:48,447 --> 00:17:00,507
+x'i sol tarafta bırakacağım. Demiştim ki x kareyi sol tarafa atayım. 9x ve eksi 10 eşitliğin bu tarafına geçti.
+
+81
+00:17:00,507 --> 00:17:11,767
+x'i yalnız bırakmak için de buranın kare kökünü aldım. Birinci elde ettiğim gx şurası. Yani bu ne demek? Kök içinde bu.
+
+82
+00:17:11,767 --> 00:17:36,887
+Başka hangi x'i çıkarabilirim? 9'un önündeki x'i eşitliğin sol tarafına atayım. 9x eşittir x kare eksi 10x, eksi 10, x'i bırakırsam x kare eksi 10 bölü 9. Burada da gx burası, burası, x de burası.
+
+83
+00:17:36,888 --> 00:17:40,348
+İki tane şeyim var, denklemi.
+
+84
+00:17:42,268 --> 00:17:47,608
+İkiye böldüm ve iki tane farklı GX'i elde ettim.
+
+85
+00:17:47,968 --> 00:17:50,908
+Ben hangi GX'le yoluma devam edeceğim?
+
+86
+00:17:51,348 --> 00:17:52,388
+Daha bunu bilmiyorum.
+
+87
+00:17:52,888 --> 00:17:54,828
+İki GX'i de kullanabilirim.
+
+88
+00:17:55,248 --> 00:17:57,048
+Hiçbiri uygun olmayabilir.
+
+89
+00:17:57,608 --> 00:17:59,287
+Sadece biri uygun olabilir.
+
+90
+00:17:59,787 --> 00:18:00,807
+Henüz onu bilmiyorum.
+
+91
+00:18:00,807 --> 00:18:06,807
+Şuraya kadar gördüğüm şey, bana verilmiş olan bir FX fonksiyonunu,
+
+92
+00:18:06,888 --> 00:18:16,367
+x sol tarafta kalacak şekilde bölebildiğim kadar farklı x, y, x iki çiftine ayırmam gerekiyor.
+
+93
+00:18:16,367 --> 00:18:19,188
+Bu yöntem nasıl çalışıyor?
+
+94
+00:18:19,528 --> 00:18:21,048
+Şimdi şu grafiğe bakalım.
+
+95
+00:18:21,188 --> 00:18:22,188
+Şu grafiğe bakalım.
+
+96
+00:18:23,188 --> 00:18:26,947
+Birincisine.
+
+97
+00:18:27,507 --> 00:18:28,927
+Benim şeyim ne oluyor?
+
+98
+00:18:29,307 --> 00:18:31,328
+x eşittir gx dedim.
+
+99
+00:18:31,947 --> 00:18:32,548
+Tamam mı?
+
+100
+00:18:33,328 --> 00:18:35,007
+Şimdi x nedir?
+
+101
+00:18:35,227 --> 00:18:36,168
+Bir doğrudur.
+
+102
+00:18:36,168 --> 00:18:54,908
+şu çizdiğim şey doğru x'e karşılık geliyor. x'i sembolize ediyor. Şu da gx'i sembolize etsin. Şu garip şekilde gx'i sembolize etsin. Ben bir başlangıç noktası alıyorum x0. Bunu x de yerine koyuyorum.
+
+103
+00:18:55,380 --> 00:18:58,959
+Bu x0'ı alıyorum, fonksiyon da yerine koyuyorum.
+
+104
+00:19:00,019 --> 00:19:05,819
+Bu fonksiyon da yerine gelen bu x'i alıyorum, doğru da yerine.
+
+105
+00:19:06,519 --> 00:19:07,819
+Yani yine x oluyor.
+
+106
+00:19:07,959 --> 00:19:11,319
+Bu yeni x değerini alıyorum, gx de yerine koyuyorum.
+
+107
+00:19:13,320 --> 00:19:16,959
+gx'teki bu değerin sonucunu alıyorum fonksiyon da yerine.
+
+108
+00:19:16,959 --> 00:19:25,039
+Ve funksiyondakini geyikse, geyikstekini doğruya, doğrudakini geyikse, dın dın dın dın dın dın dın dın dın.
+
+109
+00:19:25,179 --> 00:19:26,420
+En son nereye geliyor?
+
+110
+00:19:26,939 --> 00:19:30,039
+Bu iki tane funksiyonun kesiştiği noktaya.
+
+111
+00:19:30,539 --> 00:19:32,100
+Yani kökü buluyor.
+
+112
+00:19:32,920 --> 00:19:37,060
+Burada kili seçmiş olduğum geyikse yakınsıyor.
+
+113
+00:19:37,560 --> 00:19:39,380
+Doğru bir geyikse almışım.
+
+114
+00:19:40,179 --> 00:19:41,299
+Bir başka alalım.
+
+115
+00:19:41,479 --> 00:19:42,899
+Bu yine benim x doğru.
+
+116
+00:19:42,900 --> 00:19:47,320
+Bu yine seçilmiş olan farklı bir GX doğru.
+
+117
+00:19:47,979 --> 00:19:50,460
+Bir X başlangıç noktasını alıyorum.
+
+118
+00:19:51,699 --> 00:19:53,359
+Fonksiyonda yerine koyuyorum.
+
+119
+00:19:54,179 --> 00:19:59,159
+Fonksiyonda yerine koyduğumda bu çıkan X değerini gidiyorum.
+
+120
+00:20:00,439 --> 00:20:01,920
+Doğruda yerine koyuyorum.
+
+121
+00:20:02,240 --> 00:20:04,060
+Bu değeri alıyorum fonksiyonda.
+
+122
+00:20:04,159 --> 00:20:05,719
+Bu değeri alıyorum doğruda.
+
+123
+00:20:05,839 --> 00:20:06,900
+Bu değeri alıyorum fonksiyonda.
+
+124
+00:20:07,780 --> 00:20:10,999
+Böyle böyle gide gide yine buraya yakınsıyorum.
+
+125
+00:20:11,999 --> 00:20:12,819
+Yine buluyorum.
+
+126
+00:20:12,979 --> 00:20:15,099
+Bu gx değeri de doğru çıkıyor.
+
+127
+00:20:15,739 --> 00:20:18,079
+Şimdi bir başka gx değeri alalım.
+
+128
+00:20:18,379 --> 00:20:20,139
+Bu gx değerimiz bu olsun.
+
+129
+00:20:20,819 --> 00:20:22,619
+Yine x diye doğrumuz var.
+
+130
+00:20:23,119 --> 00:20:26,419
+Yine doğruda bir x noktası aldım başlangıç.
+
+131
+00:20:26,419 --> 00:20:27,579
+Bunu aldım.
+
+132
+00:20:27,879 --> 00:20:29,439
+Gx de yerine koydum.
+
+133
+00:20:29,619 --> 00:20:32,739
+Elde ettiğim sonucu fonksiyon x'de.
+
+134
+00:20:33,179 --> 00:20:35,639
+Elde ettiğim sonucu gx'de.
+
+135
+00:20:35,819 --> 00:20:38,179
+Elde ettiğimi doğruda.
+
+136
+00:20:38,639 --> 00:20:40,179
+Elde ettiğimi gx'de.
+
+137
+00:20:40,179 --> 00:20:42,179
+elde ettiğimi doğru da gittikçe
+
+138
+00:20:42,179 --> 00:20:44,779
+kökten ne oluyorum? Uzaklaşıyorum.
+
+139
+00:20:45,139 --> 00:20:46,779
+Çünkü kök buradaydı.
+
+140
+00:20:47,319 --> 00:20:48,599
+Öyleyse burada ne oluyor?
+
+141
+00:20:48,999 --> 00:20:49,679
+Traksıyor.
+
+142
+00:20:50,299 --> 00:20:52,399
+Ya da bu geyiksim
+
+143
+00:20:52,399 --> 00:20:54,519
+bu yöntemi yapmak
+
+144
+00:20:54,519 --> 00:20:56,439
+için uygun bir geyiks
+
+145
+00:20:56,439 --> 00:20:58,319
+değil. Yaptığım geyiks
+
+146
+00:20:58,319 --> 00:21:00,339
+kontrollerinde buradaki
+
+147
+00:21:00,339 --> 00:21:01,979
+geyiks, buradaki geyiks
+
+148
+00:21:01,979 --> 00:21:04,219
+doğru evet bununla yoluna
+
+149
+00:21:04,219 --> 00:21:06,139
+devam edebilirsin derken
+
+150
+00:21:06,139 --> 00:21:07,999
+buradaki geyiks ise
+
+151
+00:21:07,999 --> 00:21:10,740
+hayır diyor, bu yanlıştır diyor.
+
+152
+00:21:11,839 --> 00:21:14,639
+Şimdi o zaman işlem adımlarım nedir?
+
+153
+00:21:15,659 --> 00:21:18,679
+Elimde fx eşittir 0'de bir fonksiyonum var.
+
+154
+00:21:19,179 --> 00:21:22,159
+Bunu x eşittir gx haline getiriyorum.
+
+155
+00:21:22,479 --> 00:21:24,539
+Birden fazla gx'im de olabilir.
+
+156
+00:21:24,539 --> 00:21:33,399
+Daha sonra bu gx'in ab kapalı aralığımda belli şartları sağlıyor mu sağlamıyor mu bunları kontrol edeceğim.
+
+157
+00:21:33,779 --> 00:21:36,600
+Bir sonraki sayfada bu kontrollerimizi yapacağız.
+
+158
+00:21:37,219 --> 00:21:38,939
+Diyelim ki sağladı.
+
+159
+00:21:40,040 --> 00:21:42,939
+Ben başlangıç x değerimi alıyorum.
+
+160
+00:21:43,820 --> 00:21:45,960
+Y fonksiyonun içine koyuyorum.
+
+161
+00:21:46,680 --> 00:21:48,620
+Yeni bir x değeri elde ediyorum.
+
+162
+00:21:48,620 --> 00:21:52,719
+Sonra bu x değerini alıyorum fonksiyonu da yerine koyuyorum.
+
+163
+00:21:53,320 --> 00:21:54,480
+Yeni bir x değeri.
+
+164
+00:21:54,939 --> 00:21:57,600
+Bunu alıyorum fonksiyonu da yerine koyuyorum.
+
+165
+00:21:58,100 --> 00:21:59,400
+Yeni bir x değeri.
+
+166
+00:21:59,859 --> 00:22:01,999
+Ne zamana kadar devam edeceğim?
+
+167
+00:22:02,880 --> 00:22:04,859
+Durma noktasına gelene kadar.
+
+168
+00:22:05,079 --> 00:22:06,579
+Durma noktası da nedir?
+
+169
+00:22:06,600 --> 00:22:13,299
+en son bulduğum 2x değeri arasındaki mutlak değerce farkı hep kontrol ediyorum.
+
+170
+00:22:13,299 --> 00:22:27,900
+Bu 2 son 2x değeri arasındaki mutlak değerce fark belirlediğim hatadan küçük eşitse duruyorum ve artık en son bulduğum x ediyorum ki bu köktür.
+
+171
+00:22:29,480 --> 00:22:33,600
+Şimdi buraya kadar bir problem yok.
+
+172
+00:22:33,600 --> 00:22:40,359
+Yine dedik ki şu şartı sağlayan geyikslere almalıyım.
+
+173
+00:22:40,540 --> 00:22:44,120
+Acaba bunun için hangi şartlara bakmalıyım?
+
+174
+00:22:44,564 --> 00:23:12,963
+Şimdi olayı kısaca yine bir üzerinden geçelim. Bana bir fonksiyon verildi, bana bir aralık verildi. Ben fonksiyonu x, g, x olarak ayırdım. Birden fazla da ayrılabilir. Okey. Öncelikle şuna bakacağım. Gerçekten fonksiyon bu aralıkta bir köke sahip mi? Ne yapıyordum bu aralıkta bir köke sahip olup olmadığını?
+
+175
+00:23:12,963 --> 00:23:24,564
+a'yı fonksiyonda yerine koyuyorum, b'yi fonksiyonda yerine koyuyorum f-a ve f-b, çarpımlarım negatifse bu aralıkta bir kök var diyordum.
+
+176
+00:23:25,843 --> 00:23:31,683
+Sonra f-x'in ve g-x'in türevlenebilir olması gerekir.
+
+177
+00:23:31,683 --> 00:23:32,803
+E bu da nedir?
+
+178
+00:23:33,183 --> 00:23:39,943
+f-x'in ve g-x'in oluşturduğum bu f-x ve g-x'in türevinin alınabilir olması lazım.
+
+179
+00:23:39,943 --> 00:23:43,623
+Yani tanımsız bir fonksiyon olmayacak.
+
+180
+00:23:44,363 --> 00:23:48,784
+Okey, buraya kadar olanlar bundan önceki yöntemlerde de vardı.
+
+181
+00:23:49,523 --> 00:23:54,564
+Şimdi seçtiğim GX'in doğru GX olup olmadığını kontrol etmem lazım.
+
+182
+00:23:54,943 --> 00:23:55,643
+Ne yapıyorum?
+
+183
+00:23:56,583 --> 00:23:58,683
+GX'in türevini alıyorum.
+
+184
+00:23:59,483 --> 00:24:01,823
+Türeve A değerini koyuyorum.
+
+185
+00:24:02,503 --> 00:24:03,643
+Şuradaki A'yı.
+
+186
+00:24:03,643 --> 00:24:08,723
+Bunun mutlak değer C değeri birden küçük olacak.
+
+187
+00:24:08,723 --> 00:24:19,343
+ve aynı türevi, G'nin türevine B'yi koyuyorum. Bunun da mutlak değerce türevi B'den küçük olacak.
+
+188
+00:24:19,343 --> 00:24:26,983
+Eğer bu iki şartta aynı anda sağlanıyorsa şu anlamı şudur.
+
+189
+00:24:26,983 --> 00:24:41,903
+Bu fonksiyonun Gx'in sağlayan x değerleri yani bu x ile Gx'in çakıştığı kök olarak kabul edebileceğim değer
+
+190
+00:24:41,903 --> 00:24:48,703
+A'da olabilir, B'de olabilir, A ve B arasında herhangi bir sayı olabilir.
+
+191
+00:24:49,703 --> 00:24:52,463
+Hemen çözüme başlayacağım.
+
+192
+00:24:52,463 --> 00:24:59,663
+başlangıç değeri ister A'yı alırsın, ister B'yi istersen bu aralıkta bir değer alabilirsin.
+
+193
+00:25:00,363 --> 00:25:07,924
+Ama genelde size verilir. Verilmezse de ya ilk değerle başlayın ya da son değerle başlayın.
+
+194
+00:25:07,924 --> 00:25:12,803
+Yani kitaplar genelde öyle yapar ama özgürsünüz.
+
+195
+00:25:13,284 --> 00:25:19,243
+Yapacağımız şey bulduğunuz X değeri hemen G'de yerine koymak, yeni bir X elde etmek.
+
+196
+00:25:19,243 --> 00:25:30,123
+bunu G'de yerine koymak, yeni bir X elde etmek, elde ettiğin her son iki X değerinin mutlak değerce hatadan küçük eşit olup olmadığına bakmak.
+
+197
+00:25:31,023 --> 00:25:42,143
+Peki, eğer bunlardan ikisi de birden küçük değilse ya da sadece biri küçükse ne yapacağım?
+
+198
+00:25:42,144 --> 00:26:04,343
+Yani bu şart sağlanmaz ise, ikisi de birden küçük değilse ne yapacağım? Çok dikkatli dinleyin. İki tane şey yapabilirsin. Bir, dersin ki bu GX'den bana hayır gelmiyor, elimde başka GX'ler de varsa onlardan birini seçer.
+
+199
+00:26:04,343 --> 00:26:06,543
+yine aynı şekilde bakarım.
+
+200
+00:26:06,784 --> 00:26:13,103
+Belki o GX bu şartları sağlıyordur ve oradan bir kök değeri bulabilirim.
+
+201
+00:26:14,523 --> 00:26:15,724
+Bunu yapabilirsiniz.
+
+202
+00:26:16,243 --> 00:26:19,263
+Ya da elinizde sadece bir tane GX vardır.
+
+203
+00:26:19,463 --> 00:26:20,823
+Başka GX yoktur.
+
+204
+00:26:21,284 --> 00:26:23,483
+Yeni bir GX gidemezsin.
+
+205
+00:26:23,483 --> 00:26:27,883
+O zaman bir başka şey daha olması lazım elinde izlenecek yol.
+
+206
+00:26:27,883 --> 00:26:30,443
+ve ya, ve ya,
+
+207
+00:26:30,799 --> 00:26:57,799
+Evet, bu şartları sağlamıyor. Türevleri A ve B'ye göre türevlerini alıp birden küçük olduğuna bakıyorum. İkisi de küçük değil. Belki biri küçük, belki diğeri küçük. İkisi de küçük olmayabilir. Ama şu demek değildir ki A ile B arasındaki herhangi bir x değeri bu şartı sağlamaz.
+
+208
+00:26:57,799 --> 00:27:12,359
+Sen şu an sadece A ve B'yi kontrol ediyorsun. Ama A ile B arası diyelim ki A 10, B'de 20, 10 ile 20 arasında belki 13.5 değeri var ki X değeri.
+
+209
+00:27:12,359 --> 00:27:20,160
+13.5 alırsam, türevlerimde 13.5'u yerine koyarsam bu şartı sağlayacağım. Bilmiyorum.
+
+210
+00:27:20,160 --> 00:27:28,420
+O yüzden herhangi bir AB aralığında bir X değeri alıp şu formülü uyguluyorum.
+
+211
+00:27:30,020 --> 00:27:36,180
+Mesela şöyle olsun aldığım X'i değeri diyelim ki 3.
+
+212
+00:27:37,700 --> 00:27:41,259
+Ben şimdi gidiyorum geri 3 değerini koyuyorum.
+
+213
+00:27:43,100 --> 00:27:45,499
+Eksi X'i artı 1.
+
+214
+00:27:46,060 --> 00:27:49,539
+3'den sonra gelen X'in ne olduğunu nasıl bulacağım?
+
+215
+00:27:50,160 --> 00:28:09,039
+Ben ne yapıyordum? Şöyle bir şey yapıyordum ya çözümde. x'in değerini buraya koyuyorum. Buradan çıkan sonuç benim yeni x değerim oluyordu. İşte buradaki sonucu da i artı bir x olarak kabul edip yeniden fonksiyonu da yerine koyuyorum.
+
+216
+00:28:09,039 --> 00:28:22,480
+İkisi arasındaki fark bölü, 2x değeri arasındaki fark mutlak değerci eğer 0 ile 1 arasında kalıyorsa bu x değerini alıp işlem yapabilirsin.
+
+217
+00:28:23,319 --> 00:28:29,179
+Kalmıyorsa bu aralıkta yeni bir x değeri alıp bu kontrolü yapacaksın.
+
+218
+00:28:29,979 --> 00:28:34,239
+Kalmadı yeni bir x değeri bulup bu kontrolü yapacaksın.
+
+219
+00:28:34,239 --> 00:28:50,479
+Bunu elle yapmak elbette zordur ama algoritmasını yazdığım vakit ben bir x i değeri veririm. 0.25 artımla x'i arttırarak bu şartı sağlayan bir değer olup olmadığını bulurum.
+
+220
+00:28:50,479 --> 00:29:04,599
+halen arttırıyorum artık bu B'nin sınırına çıktım o zaman ikna olurum ki bu GX benim aradığım GX değil ben başka bir GX ile yoluma devam edeyim.
+
+221
+00:29:04,599 --> 00:29:18,299
+Şimdi bir örnekle anlattığım şeyleri anlatacağım. Anlamadığınız yere lütfen sorun. Ben chatte bir şey yazılıyor mu görmüyorum çünkü onların hepsi bende kapalı.
+
+222
+00:29:18,299 --> 00:29:26,460
+çete biri bir şey yazarsa biri okusun sesi çıkan biri başka senin çıkıyordu bana soruyu sorarsın.
+
+223
+00:29:27,380 --> 00:29:31,839
+Şimdi bana yine lineer bir denklem verilmiş.
+
+224
+00:29:32,339 --> 00:29:34,320
+Nereden lineer? Lineer olmayan.
+
+225
+00:29:34,320 --> 00:29:36,799
+Çünkü trigonometrik fonksiyon var.
+
+226
+00:29:37,380 --> 00:29:39,939
+Birinci tek değişken mi verilmiş?
+
+227
+00:29:40,120 --> 00:29:48,100
+Evet sadece değişkenim x ve bana deniyor ki 0-1 kapalı aralığında yani a ve b 0-1
+
+228
+00:29:48,100 --> 00:30:12,939
+Bu fonksiyonun iterasyon yöntemiyle bir kökünü bul. Okey bulayım. İlk yapacağım şey nedir? Benim bu fonksiyonumu fx olarak aldım. Okey. Aralığım 0 ve 1. Yapacağım şey nedir? Bir kere burada belki göstermemişim ama bir sonrakinde mi göstermişim?
+
+229
+00:30:12,939 --> 00:30:22,259
+önce şuraya bakalım. Benim yapmam gereken şey nedir? Bu 0-1 aralığında bu fonksiyonun bir kökü var mı? Ne yapacağım?
+
+230
+00:30:23,220 --> 00:30:24,220
+A0, x yerine 0 koyup F0'ı hesaplayacağım. x yerine 1'i koyup F1'i hesaplayacağım. Bakacağım bunlar ters işaretli ise bu aralıkta bir kök vardır diyeceğim. Okey. Yalnız şurada dikkat edin. Burada sinüs x vermiş. Ben evet sinüs yerine x yerine 0 koyuyorum. Bunun derecesi radyanı da 0 oldu.
+
+231
+00:30:53,220 --> 00:31:03,260
+Ama burada verilenleri direkt sinüsün yerine x'in yerine koymak için bunları radyana çevirmem lazım, dereceye çevirmem lazım.
+
+232
+00:31:03,699 --> 00:31:06,240
+Dereceye çevirirken de şöyle yaparsınız.
+
+233
+00:31:06,819 --> 00:31:11,740
+Pi 180 derece ise burada bana ne verilmiş?
+
+234
+00:31:11,740 --> 00:31:14,580
+1, 1 kaç derecedir?
+
+235
+00:31:15,139 --> 00:31:17,919
+Yapacağın şey 180 bölü pi.
+
+236
+00:31:18,339 --> 00:31:22,459
+180 bölü pi neyse x'in yerine gidip onu yazıyorsun.
+
+237
+00:31:22,459 --> 00:31:25,219
+ve buradaki değeri elde ediyorsun.
+
+238
+00:31:26,199 --> 00:31:31,999
+Önce bu aralıkta bir kökün olup olmadığını diğer yöntemlerde olduğu gibi kabul ettim.
+
+239
+00:31:32,199 --> 00:31:32,839
+Evet var.
+
+240
+00:31:33,580 --> 00:31:35,779
+Öyleyse sırada ne var?
+
+241
+00:31:36,339 --> 00:31:42,080
+Ben bu fonksiyonu x sol tarafta kalacak şekilde parçalamam lazım.
+
+242
+00:31:42,080 --> 00:31:48,559
+x'i sol tarafta bırakacak şekilde gidersem x, gx elde edeceğim.
+
+243
+00:31:48,559 --> 00:31:55,979
+eksi sinüs x eşitliğin diğer tarafına, eksi 1'de artı 1 olarak diğer tarafa geçti.
+
+244
+00:31:56,879 --> 00:31:59,919
+Yani benim gx'im nedir? Şurası.
+
+245
+00:32:02,139 --> 00:32:02,359
+Bu.
+
+246
+00:32:03,699 --> 00:32:05,139
+Gx'imi buldum.
+
+247
+00:32:05,699 --> 00:32:07,759
+Bundan sonra yapacağım şey nedir?
+
+248
+00:32:07,759 --> 00:32:12,519
+Acaba bu gx işlem yapmaya uygun mu?
+
+249
+00:32:13,259 --> 00:32:16,879
+İşlem yapmaya uygun olup olmadığını nasıl kontrol ediyordu?
+
+250
+00:32:16,879 --> 00:32:27,799
+Gx'in türevini alıyorum. Hem A'yı hem de B'yi koyup mutlak değer C sonuçlarının birden küçük olup olmadığına bakıyorum.
+
+251
+00:32:28,819 --> 00:32:37,839
+Şimdi bakalım. Gx'im nedir? Eksi sinüs x artı bir. Bunun türevi nedir? Sinüs x'in türevi eksi cos x.
+
+252
+00:32:37,839 --> 00:32:49,499
+önünde eksi var cos x, bir de gitti, pardon sin x mi, cos x mi, önünde eksi vardı, g x'in türevi eksi cos x.
+
+253
+00:32:50,119 --> 00:32:54,319
+Şimdi bu türevi şartı sağlıyor mu sağlamıyor mu diye bakalım.
+
+254
+00:32:54,940 --> 00:33:04,999
+Türevde x yerine 0 koydum, x yerine 1 koydum ama dereceyi geçirmeyi unutmayın ya da radyana çevirerek işian yapıyorsunuz.
+
+255
+00:33:04,999 --> 00:33:18,979
+bunun değerini 1 buldun, bunun değerini 0.54 buldun. 0.54 birden küçük ama 1 birden küçük değil. İkisinin de bu şartı sağlaması lazım.
+
+256
+00:33:19,899 --> 00:33:28,459
+Öyleyse bu şartlar sağlanmıyor. 0-1 aralığında her noktayı ben başlangıç olarak seçemem.
+
+257
+00:33:28,459 --> 00:33:37,819
+ne yapacağım? Ya dönüp ikinci bir GX arayacağım. Bakıyorum burada başka ikinci bir GX çıkaramıyorum.
+
+258
+00:33:38,719 --> 00:33:53,619
+Öyleyse ne yapayım diyorum? Ben diyorum bir tane X'i noktası alayım şu 0-1 aralığında olan ve bu X'i noktasını şu kural gereği arayayım ve doğru X'i bulayım.
+
+259
+00:33:53,619 --> 00:34:06,419
+Bu gibi yerlerde büyük olandan genelde başlanır, ittikçe bu küçültülür ya da küçükten başlarsın, ittikçe arttırarak 1'e doğru gidersin.
+
+260
+00:34:06,419 --> 00:34:15,419
+Ben 1'i almışım. Formülüm x'i eksi, g x'i artı 1 bölü, x'i eksi, x'i artı 1'de.
+
+261
+00:34:15,987 --> 00:34:44,668
+x yerine g'de 1 koydum. Yani cos 1 radyan olarak koydum. g1 olacak. x'i artı 1'in değeri ne olacak? Yani şu 0.58 nereden çıkmış? Şu an bilmiyorum. Bölü x'i x'i 1 eksi yeni bulmuş oldum. x'i artı 1. Yani buradaki değer. Şimdi şunu nereden bulduğumuza bakalım. Nasıl çözüyorduk?
+
+262
+00:34:44,668 --> 00:35:11,668
+alıyorum ben x'i g fonksiyonunda yerine koyuyorum burada yerine koydum yeni bir değer elde ettim yeni değer 0.15 işte bu ikinci değerim demektir bu ikinci değeri koydum ve bu şartı sağlayıp sağlamadığına baktım diyelim ki bu şartı sağladı sağladıysa problem yok
+
+263
+00:35:11,668 --> 00:35:16,807
+Artık ben nereden yoluma devam edeceğini biliyorum.
+
+264
+00:35:17,388 --> 00:35:23,468
+Buna baktığımda bu şartı sağladığını görüyoruz ve olayı çözüyorum.
+
+265
+00:35:24,307 --> 00:35:26,668
+Ne yapıyorum? Şöyle yapalım.
+
+266
+00:35:27,168 --> 00:35:28,947
+X'in yerine 1 koyuyorum.
+
+267
+00:35:31,307 --> 00:35:35,627
+GX'e gidiyorum. X yerine 1 koyduğumda 0.15'i elde ediyorum.
+
+268
+00:35:36,388 --> 00:35:39,307
+Sonra bu 0.15 benim yeni X değerim oluyor.
+
+269
+00:35:39,307 --> 00:35:57,467
+bunu gidiyorum Gx'de yerine koyuyorum 0.84 elde ediyorum 0.84 benim yeni x değerim oluyor bunu gidiyorum G fonksiyonunda yerine koyuyorum 0.25 oluyor bunu böyle böyle devam ettiriyorum nereye kadar?
+
+270
+00:35:58,267 --> 00:36:06,788
+Ardışık iki kök değeri arasındaki mutlak değerce farkın epsilon'dan küçük eşit oluncaya kadar bu işlemi yapıyorum.
+
+271
+00:36:06,787 --> 00:36:17,327
+Peki, hocam, eğer bu şart x eşittir 1 için sağlanmasaydı ne olacaktı?
+
+272
+00:36:17,327 --> 00:36:25,767
+Bu sağlanmasaydı, diyelim ki bu 1'di, bana ne aralığı verilmişti? 0 ile 1 arayayım.
+
+273
+00:36:25,867 --> 00:36:33,227
+Bunu diyecektim ki x'i 0.90 alayım. Değişik bir x alayım. Bu 0.90'ı alacağım, buraya koyacağım.
+
+274
+00:36:33,227 --> 00:36:40,087
+0.90'dan sonra G'de koyup yeni X değerini elde edip onu burada yerine koyacağım.
+
+275
+00:36:40,527 --> 00:36:51,767
+Dın dın bakacağım. Bu şartı sağlıyor mu? Yine sağlamadı. O zaman 0.85'i alıyorum diyelim ki ya da 0.10, 0.10 azalttığımı düşünelim.
+
+276
+00:36:51,767 --> 00:36:59,467
+0.80'i aldım. Aynı şeyi 0.80'de deniyorum. Şart sağlandı. Onu çözüyorum.
+
+277
+00:36:59,467 --> 00:37:07,607
+Ardışık iki kök arasındaki farka bakıyorum ve şey yapıyorum bu köktür diyorum.
+
+278
+00:37:08,587 --> 00:37:09,387
+Yöntem bu.
+
+279
+00:37:10,607 --> 00:37:14,727
+Tabii elle çözüldüğü vakit yöntemler biraz zahmetli oluyor.
+
+280
+00:37:14,727 --> 00:37:19,047
+Fakat programını yazdığımız vakit hiçbir zahmeti yok.
+
+281
+00:37:19,227 --> 00:37:21,107
+Bir yazarken yoruluyoruz.
+
+282
+00:37:21,387 --> 00:37:25,007
+Ondan sonra istemediğin kadar çözebiliyorsun.
+
+283
+00:37:25,987 --> 00:37:28,407
+Şimdi son bir örnek daha vereceğim size.
+
+284
+00:37:29,467 --> 00:37:52,967
+Pardon, vermiyormuşum. Durma koşulları nedir diye verilmiş. Bunları zaten defalarca söyledik. Fonksiyon verildi. Şu aralık dendi. Fonksiyonu da yerine koydum. Zıt işaretli ise bu aralıkta kök vardır dendi. Bu fonksiyonu aldım. GX'i iki parçaya böldüm.
+
+285
+00:37:52,967 --> 00:38:04,887
+Gx'i parçaya bölerken bak bir x sol tarafa gidip sağ tarafta x5-x5 artı 3 kaldı. Bu birinci Gx.
+
+286
+00:38:05,547 --> 00:38:10,208
+Veya x5'i sol tarafa atıp x-3'ü
+
+287
+00:38:10,576 --> 00:38:39,855
+Beşinci dereceden kökünü aldım. Bu da ikinci geyiksim. Bu uygulamada iki tane geyiksim var. Bunlardan hangisi şartı sağlayacak? Sırasıyla önce bunu alırım. Türevine bakarım. Türevine 0 ve 1 ve 3'ü koyar. İkisi de negatiften küçükse bu geyiksle yoluma devam ederim. Eğer değilse yeni geyiksle alır.
+
+288
+00:38:39,855 --> 00:38:57,116
+Yeni Gx'i kontrol ederim. Eğer o da küçük değilse o zaman benim bir çözüm de bulmam lazım. O şartı sağlamayan Gx'in içerisinde o aralıklarda teker teker yeni x değerleri aramaya başlarım.
+
+289
+00:38:57,115 --> 00:39:17,275
+Diyelim ki şart sağlandı. İşte ne yapıyorum? Bulduğum x değerini g'de koydum. Çıkan yeni x değeri. Bunu g'ye koydum. Çıkan yeni değer. G'ye koydum. Çıkan yeni değer. Bu ikisi arasındaki mutlak değerce fark da hatamdan küçük eşit oluncaya kadar devam ediyor.
+
+290
+00:39:17,275 --> 00:39:45,175
+Durma koşulu işte size dediğim bu. Bazıları gerçek kök değerini bulur. Sen her bulduğun son x değer arasındaki farka bakar, hatadan küçük mü diye bakarsın. Ya da sana derler şu kadar iterasyon yap, ondan sonra dur. O kadar iterasyon yaparsın ve durursun. Ama sizden isteyeceğimiz %95 şu hatayla durmanız.
+
+291
+00:39:47,275 --> 00:40:06,315
+Evet, şimdi yeni bir örnek yapıyorum. Aynı zamanda siz de gözünüzde yapmaya çalışın. Size bir fonksiyon verilmiş. Ben yine birazcık sessiz konuşacağım. Size bir fonksiyon verilmiş. Bu fonksiyon.
+
+292
+00:40:06,315 --> 00:40:26,175
+Burada bir başlangıç değeri verilmiş. Bazen başlangıç değeri verilir. Bazen AB diye bir kapalı aralık verilir. Ki genelde verilmesi lazım. Bu örnekte ben yazmamışım. Hemen biraz sonra AB kapalı aralığı şudur diye yazabilirim. Şu da benim hatam.
+
+293
+00:40:26,175 --> 00:40:35,135
+Önce ne yaparız? Bu fonksiyonu bu AB aralığında koyup ters işaretli olup olmadığına bakarız.
+
+294
+00:40:35,795 --> 00:40:43,695
+Koyduk ve ters işaretli olduğunu F'nin ve F'nin gördük bu aralıkta kök olduğunu kabul ettik diyelim.
+
+295
+00:40:43,695 --> 00:40:50,095
+Ondan sonraki aşama ne olacak? Bu Fx'i x eşittir Gx haline getireceğim.
+
+296
+00:40:50,095 --> 00:40:59,875
+mesela bu bir tane GX fonksiyonu almış x kareyi sol tarafa bıraktığında elde ettiği GX bu olmuş.
+
+297
+00:41:00,555 --> 00:41:17,915
+Bir başka GX elde etme türü eşittiğin sol tarafına x kare eksi x'i geçirmiş x ortak parantazını almış böyle bir x bırakıp bu tarafı 3 bölü x eksi 2 olmuş bu ikinci GX'in.
+
+298
+00:41:17,915 --> 00:41:20,695
+Başka geyiksi elde edebilir miyim?
+
+299
+00:41:21,195 --> 00:41:26,675
+2x'i eşittiğin sol tarafında alıp x-3 bölü 2 demiş.
+
+300
+00:41:26,675 --> 00:41:28,835
+Bu da 3. geyiksin.
+
+301
+00:41:29,296 --> 00:41:31,955
+Şimdi senin elinde 3 tane geyiksin var.
+
+302
+00:41:32,576 --> 00:41:34,275
+Hangisiyle yola çıkacağım?
+
+303
+00:41:34,855 --> 00:41:37,076
+Geyiksin türevini alıyorduk.
+
+304
+00:41:37,555 --> 00:41:40,675
+Verilen aralıkları türevde yerine koyuyorduk.
+
+305
+00:41:40,815 --> 00:41:46,436
+Her ikisi de birden küçükse yoluma oradan gönül rahatlığıyla devam ediyordu.
+
+306
+00:41:46,436 --> 00:42:07,436
+değilse ya bunun içinde ara adımları kontrol ediyorum ya da öteki GX'e bakıyorum. Bunun türevi AB aralığında birden küçük mü? Her iki değer için. Bu da küçük çıkmadı. En kolay yolu seçiyorum. Benim elimde başka GX var. Buna bakayım.
+
+307
+00:42:08,052 --> 00:42:12,432
+Bunun türevi A ve B aralıklarında birden küçük mü?
+
+308
+00:42:13,012 --> 00:42:14,451
+Evet küçük.
+
+309
+00:42:14,751 --> 00:42:16,531
+O zaman bundan yoluma devam.
+
+310
+00:42:16,911 --> 00:42:23,031
+Değilse o zaman yeniden ara x değerleri bulmaya çalışalım.
+
+311
+00:42:23,031 --> 00:42:31,691
+Şimdi bakalım bunun türevinin A ve B aralığında birden küçük olduklarını gördük ve çözüme gidelim.
+
+312
+00:42:31,991 --> 00:42:34,011
+Başlangıçta 4 verilmiş.
+
+313
+00:42:34,011 --> 00:42:38,171
+Bunun aralığı da o zaman 4 ile 5 destek.
+
+314
+00:42:39,691 --> 00:42:41,531
+Bunun birinin fonksiyonu 4.
+
+315
+00:42:42,251 --> 00:42:43,491
+Bunu öyle yapmayalım.
+
+316
+00:42:45,592 --> 00:42:47,251
+Bunun kökleri ne olur?
+
+317
+00:42:48,392 --> 00:42:52,011
+Eksi 3 ile artı 1 olsun.
+
+318
+00:42:53,191 --> 00:42:53,831
+Tamam mı?
+
+319
+00:42:54,772 --> 00:42:55,592
+Eksi 3.
+
+320
+00:42:55,991 --> 00:42:59,232
+3 ile 1.
+
+321
+00:42:59,711 --> 00:43:02,431
+Burası 1 ile 4 arasında olsun.
+
+322
+00:43:02,431 --> 00:43:04,731
+A ve B. 1 ile 4 arasında olsun.
+
+323
+00:43:05,171 --> 00:43:05,391
+Tamam.
+
+324
+00:43:06,811 --> 00:43:09,031
+Başlangıç değerimi 4 almışım.
+
+325
+00:43:09,651 --> 00:43:11,651
+Bu aslında GX dediğim şey nedir?
+
+326
+00:43:11,771 --> 00:43:12,011
+X.
+
+327
+00:43:12,232 --> 00:43:13,251
+X önce 4.
+
+328
+00:43:13,671 --> 00:43:15,171
+Fonksiyonda yerine koydum.
+
+329
+00:43:15,231 --> 00:43:15,871
+3.16.
+
+330
+00:43:16,391 --> 00:43:17,571
+Yeni X değerim bu.
+
+331
+00:43:18,071 --> 00:43:19,691
+Fonksiyonda yerine koydum.
+
+332
+00:43:20,052 --> 00:43:21,211
+Yeni X değerim bu.
+
+333
+00:43:21,611 --> 00:43:22,951
+Fonksiyonda yerine koydum.
+
+334
+00:43:23,052 --> 00:43:23,891
+Yeni X değerim.
+
+335
+00:43:23,971 --> 00:43:25,331
+Fonksiyonda yerine koydum.
+
+336
+00:43:25,431 --> 00:43:26,231
+Yeni X değerim.
+
+337
+00:43:26,331 --> 00:43:27,772
+Koydum.
+
+338
+00:43:27,851 --> 00:43:29,451
+Bu ne kadar devam edecek?
+
+339
+00:43:29,452 --> 00:43:34,511
+Aynı zamanda her x değerlerin farkını alıyorum.
+
+340
+00:43:34,632 --> 00:43:37,232
+Bunlar epsilon'dan küçük mü? Hayır değil.
+
+341
+00:43:37,471 --> 00:43:39,412
+Epsilon'dan küçük mü? Hayır değil.
+
+342
+00:43:39,871 --> 00:43:43,452
+Burası epsilon'dan küçük yani hatadan küçük diyelim.
+
+343
+00:43:44,011 --> 00:43:47,272
+O zaman benim bulduğum kök 3'dür diyeceğim.
+
+344
+00:43:47,751 --> 00:43:50,572
+Zaten bu fonksiyonun köklerinden biri de 3'dür.
+
+345
+00:43:51,272 --> 00:43:53,712
+Mesela buradan gidelim.
+
+346
+00:43:54,212 --> 00:43:56,092
+Yine başlangıcı 4 aldık.
+
+347
+00:43:56,092 --> 00:43:59,011
+Bakın burada da ayrı bir şeyle karşılaşacağız.
+
+348
+00:43:59,451 --> 00:44:04,371
+Fonksiyonda yerine koydum yeni x diyelim.
+
+349
+00:44:04,511 --> 00:44:06,611
+Koydum yeni x koydum yeni x.
+
+350
+00:44:06,731 --> 00:44:08,491
+Tıt tıt tıt tıt tıt tıt tıt.
+
+351
+00:44:08,491 --> 00:44:12,471
+Aynı zamanda x'ler arasındaki farklara baktım.
+
+352
+00:44:12,951 --> 00:44:16,151
+Burada epsilon'dan küçük olduğunu görüyorum.
+
+353
+00:44:16,731 --> 00:44:17,951
+Benim köküm nedir?
+
+354
+00:44:18,171 --> 00:44:18,751
+Eksi bir.
+
+355
+00:44:19,371 --> 00:44:23,711
+Bakın farklı gx'den farklı kökleri bana verebiliyor.
+
+356
+00:44:24,151 --> 00:44:25,451
+Bunun kökleri nedir?
+
+357
+00:44:25,971 --> 00:44:27,591
+3 ile eksi bir.
+
+358
+00:44:27,591 --> 00:44:30,731
+Bu geyikse aldığımda 3'ü buldum.
+
+359
+00:44:31,151 --> 00:44:33,791
+Bu geyikse aldığımda eksi 1'i buldum.
+
+360
+00:44:33,871 --> 00:44:36,171
+Ama yaklaşık olarak eksi 1'i buldum.
+
+361
+00:44:36,271 --> 00:44:41,971
+Ama bana dese ki 3 signifikantla al otomatikman eksi 1 diyebilirim.
+
+362
+00:44:42,631 --> 00:44:45,591
+Peki ben bu geyikse alıp gitseydim.
+
+363
+00:44:46,971 --> 00:44:55,591
+Bir kere bu geyikse aldığımda bu geyiksin türevleri A ve B aralıklarında birden küçük değer olmayacaktı.
+
+364
+00:44:55,591 --> 00:45:02,791
+Yaptığınızda görürsünüz olmadığını ve bıraksayacaktı.
+
+365
+00:45:03,171 --> 00:45:07,951
+Ben o kontrolü yapmadım ve bu GX'i kullanarak çözdüğümü düşünelim.
+
+366
+00:45:08,691 --> 00:45:11,331
+GX'e 4 verdim X'e.
+
+367
+00:45:11,651 --> 00:45:13,931
+GX değerine koydum 6.5.
+
+368
+00:45:14,371 --> 00:45:16,571
+6.5 yeni X değerim oldu.
+
+369
+00:45:17,111 --> 00:45:19,311
+Fonksiyonda yerine koydum 19.
+
+370
+00:45:19,911 --> 00:45:23,931
+19 yeni X değerim fonksiyonda yerine koydum 141.
+
+371
+00:45:23,931 --> 00:45:28,811
+141x değerini fonksiyonunda yerine koydum 18250.
+
+372
+00:45:29,491 --> 00:45:33,631
+Bulduğum x değerleri arasındaki fark gittikçe büyüyor.
+
+373
+00:45:34,171 --> 00:45:36,411
+Epsilon'dan çok çok uzaklaşıyor.
+
+374
+00:45:36,931 --> 00:45:44,551
+Zaten ben bu farkın gittikçe büyüdüğünü gördüğümde buradan bir çıkış olmadığını anlıyorum.
+
+375
+00:45:44,552 --> 00:45:53,971
+Bu aynı zamanda buradaki GX'in türevlerinin A ve B aralığında birden küçük olmadığını gösteriyor.
+
+376
+00:45:54,391 --> 00:46:01,552
+Bu GX ile benim fonksiyonumda kök bulmaya bu yöntemle çalışırsam bıraksadığımı gösteriyor.
+
+377
+00:46:02,552 --> 00:46:03,951
+Ama diğerlerine bakın.
+
+378
+00:46:04,532 --> 00:46:14,532
+bulduğun iki kök değerleri arasındaki farklar gittikçe küçülüyor. Gittikçe küçülüyor. Buradaki iterasyon sayısı tamamıyla
+
+379
+00:46:14,532 --> 00:46:28,532
+ε' hatamı kaç verdiğime bağlı olarak değişir. İkisinde de hata aynı ama bunda 2, 4, 6 adımda buldum. Bunda 2, 4, 6, 8, 10 adımda buldum.
+
+380
+00:46:28,532 --> 00:46:39,311
+daha fazla adımda buldum. Neden? Burada başlangıç değerim 4. Ben 3 olan kökü buldum. 4'e daha yakın olduğu için bu 3'ü buldum.
+
+381
+00:46:39,892 --> 00:46:53,331
+Buradaki kök eksi 1. 4'ten daha uzakta olduğu için iterasyon sayımın daha arttığını görebiliyorum. Bunlar arasında böyle ilişkiler kurup çıkarabilirsiniz.
+
+382
+00:46:53,331 --> 00:46:55,651
+Buraya kadar sorunuz var mı?
+
+383
+00:46:58,532 --> 00:47:01,752
+Başka? Çete bir şey yazılmış mı?
+
+384
+00:47:02,372 --> 00:47:03,612
+Yazılmamış hocam
+
+385
+00:47:03,612 --> 00:47:06,612
+Yazılmamış. İyi sevindim
+
+386
+00:47:06,612 --> 00:47:13,072
+Bundan sonra ne var? Evet şimdi yine bir ara vereceğim
+
+387
+00:47:13,072 --> 00:47:18,171
+Aradan sonra artık denklem takımlarının çözülmesine gelecek
+
+388
+00:47:18,171 --> 00:47:22,292
+Yani 3 bilinmeyenle 3 tane denklemin var
+
+389
+00:47:22,292 --> 00:47:24,551
+Bunları çözeceğiz
+
+390
+00:47:24,551 --> 00:47:30,191
+Yani yine aslında tek bilimleyenim var ama 3 tane denklemin var.
+
+391
+00:47:31,951 --> 00:47:35,871
+Denklem takımları diyelim gördüğünüzde zaten anlayacaksınız.
+
+392
+00:47:35,871 --> 00:47:43,691
+Ama öncelikle ben bu denklem takımlarını çözerken matris gibi düşüneceğim elimdeki denklemleri.
+
+393
+00:47:44,271 --> 00:47:51,091
+Matrislerdeki bazı işlemleri, lineer işlemlerden size bahsedeceğim.
+
+394
+00:47:51,251 --> 00:47:54,191
+Ondan sonra yöntemlerimize geçiş yapacağım.
+
+395
+00:47:54,551 --> 00:48:04,871
+Öyleyse şimdi bir ara veriyoruz. İki de gelelim. Tamam? Başka?
+
+396
+00:48:07,351 --> 00:48:12,032
+Tamam hocam. Tamam. Hadi görüşürüz.
+
+397
+01:03:47,155 --> 01:03:58,155
+Merhaba arkadaşlar. Beş geçe mi demiştim yoksa on dört mü demiştim?
+
+398
+01:04:01,780 --> 01:04:03,780
+Kimse mi gelmedi?
+
+399
+01:04:05,780 --> 01:04:07,780
+10 dakika dedin hocam.
+
+400
+01:04:07,780 --> 01:04:09,780
+Yani 5 geçe mi?
+
+401
+01:04:11,780 --> 01:04:13,780
+Galiba evet.
+
+402
+01:04:15,780 --> 01:04:25,780
+Bu arada chatte o linke ulaşamıyoruz gibi bir şeyler yazılmış. Hocam atıldı link.
+
+403
+01:04:25,780 --> 01:04:48,040
+Tamam bu muymuş link? Arkadaşlar arkadaşlarınızdan bir tanesi adının ne olduğunu şu an göremiyorum şeyle başlayan bir açım Şimal Ekiz linki yazmış atıldı diye ona geldiyse sizlere de gelecektir.
+
+404
+01:04:48,039 --> 01:04:56,280
+Öyleyse benim Ahmet Hoca'ya soracak bir sorum kalmadı demektir. Çünkü o dün halledecek de demek ki bugüne bırakmış.
+
+405
+01:05:03,476 --> 01:05:16,755
+Evet, şimdi beş geçedi olduğuna göre yeni konumuza başlayalım. Şurayı bir kapat.
+
+406
+01:05:21,108 --> 01:05:25,108
+Ben yine hatalı yaptım.
+
+407
+01:05:33,492 --> 01:05:36,011
+Arkadaşlar, bir saniye.
+
+408
+01:06:03,891 --> 01:06:05,051
+Ali görüyor musun?
+
+409
+01:06:06,491 --> 01:06:06,811
+Tamam.
+
+410
+01:06:09,751 --> 01:06:13,071
+Şimdi doğrusal denklem takımlarının çözümü.
+
+411
+01:06:13,071 --> 01:06:18,071
+İlk saat dediğim gibi birazcık size matrislerle ilgili bilgileri hatırlatacağım.
+
+412
+01:06:19,891 --> 01:06:21,072
+Belki hatırlıyorsunuz.
+
+413
+01:06:22,572 --> 01:06:23,312
+Bilmiyorum.
+
+414
+01:06:23,492 --> 01:06:27,111
+Kimin ne durumda olduğunu bilmediğim için hızlıca geçmek istiyorum.
+
+415
+01:06:27,111 --> 01:06:44,612
+Şimdi lineal denklem takımlarının çözebilmemiz için bizim bu denklem takımlarının matriz formuna indirgemiz ve üzerinde de bu matrizler üzerinde bir takım işlemler yapmamız gerekecek.
+
+416
+01:06:44,611 --> 01:06:57,631
+Bazen diyeceğiz ki bu matrisi alt üst üçgen matris haline getirin veya diyeceğiz ki bu kas sayılardan oluşan matrisiniz bir birim matrisi olsun.
+
+417
+01:06:58,211 --> 01:07:01,391
+Bazen bir bant matris haline getirin.
+
+418
+01:07:01,751 --> 01:07:05,731
+İşte bazen tersini alın gibi şeyler diyeceğiz.
+
+419
+01:07:05,732 --> 01:07:16,271
+Buradaki alt başlıklarda bir matriz üzerinde neler yapabildiğimizi gösteren alt başlıklar çok kısa olarak üzerinden geçelim.
+
+420
+01:07:16,871 --> 01:07:23,231
+Matriz dediğim şey satırlardan ve sütunlardan oluşan iki boyutlu bir dizi.
+
+421
+01:07:23,752 --> 01:07:25,311
+Bu bir A matrisi.
+
+422
+01:07:25,871 --> 01:07:31,052
+Benim bu konuda her bir satır bir denkleme karşılık gelecek.
+
+423
+01:07:31,051 --> 01:07:37,071
+Her bir kolonda denklemdeki her bir terime karşılık gelecek.
+
+424
+01:07:40,591 --> 01:07:44,571
+Matrisin alt ve üst üçgen matrisi olması ne demek?
+
+425
+01:07:45,211 --> 01:07:55,011
+Yine yöntem gereği bana denecek ki kas sayılar matrisinin bir alt üçgen matrise çevir ya da üst üçgen matrise çevir.
+
+426
+01:07:55,011 --> 01:08:14,011
+Elimde bir kas sayılar matrisi olacak ve ben o matrisi bir alt üçgen matrise çevirmek istiyorsam yapacağım şey köşegenin üzerindeki bütün değerleri sıfır yapacak şekilde bir seri işlem uygulamak.
+
+427
+01:08:14,011 --> 01:08:32,051
+Ne zaman ki köşegenin üzeri sıfırlanacak ki tabii köşegen ve köşegenin altındaki sayılar da değişecek ama işlemlerdeki amacı köşegenin üstünü sıfır yaparsa bu bir alt üçgen matriz.
+
+428
+01:08:32,591 --> 01:08:38,072
+Köşegenin altını 0 yaparsa bu bir üst üçgen matris.
+
+429
+01:08:38,552 --> 01:08:46,512
+Sayılar nerede varsa üst, sayılar nerede varsa alt üçgen matris adını alıyor.
+
+430
+01:08:47,112 --> 01:08:51,332
+Bunların nasıl sıfıra dönüştüklerine birkaç sayı matrisi düşünün.
+
+431
+01:08:51,432 --> 01:08:52,932
+Bunun hepsi sayılarla dolu.
+
+432
+01:08:52,932 --> 01:08:57,272
+Nasıl dönüştüklerine çok farklı yolları var.
+
+433
+01:08:57,572 --> 01:08:59,391
+Ben bir tane yol izleyeceğim.
+
+434
+01:08:59,511 --> 01:09:01,811
+Yöntemlerimde de hep onu kullanacağım.
+
+435
+01:09:02,051 --> 01:09:08,131
+Yine bazen bana denecek ki senin elinde bir kas sayı matrisi var.
+
+436
+01:09:08,651 --> 01:09:10,611
+Bunlar kas sayılardan oluşmuş.
+
+437
+01:09:11,051 --> 01:09:13,731
+Bu matrisi birim matrisi haline getirir.
+
+438
+01:09:13,731 --> 01:09:19,291
+Birim matris sadece diagonal bir geri kalanları sıfır olacak.
+
+439
+01:09:19,511 --> 01:09:27,951
+Öyleyse ben bu matris üzerinden diagonali bir diğerleri sıfır olan bir seri işlem yapacağım birim matrisi olması için.
+
+440
+01:09:27,951 --> 01:09:32,851
+Veya diyecekler ki bir köşegen matris haline getir.
+
+441
+01:09:33,571 --> 01:09:40,091
+Köşegenin dışındaki yani diagonalin dışındaki bütün kas sayılar sıfır olacak.
+
+442
+01:09:40,912 --> 01:09:43,731
+Bu da köşegen matrisimiz olacak.
+
+443
+01:09:44,752 --> 01:09:48,651
+Bazen band matris haline getirin denecek.
+
+444
+01:09:49,272 --> 01:09:50,851
+Band matris nedir?
+
+445
+01:09:50,851 --> 01:09:58,291
+Yine bu i satırlık, j kolonluk kas sayılardan oluşan bir matriz.
+
+446
+01:09:58,291 --> 01:09:59,311
+Şöyle.
+
+447
+01:10:00,000 --> 01:10:11,239
+kalemi alalım. Bir dakika, ne oldu yine? Şuradan kalemi alacağım. Kalem çıkmıyor ki.
+
+448
+01:10:15,347 --> 01:10:17,347
+Kalem?
+
+449
+01:10:19,956 --> 01:10:30,456
+şurada mesela bakın şöyle geldi geldi geldi şöyle bir şey olsun şöyle şöyle şöyle gitti.
+
+450
+01:10:30,456 --> 01:10:43,755
+Bant matrisinde ortadaki bir bölüm sayılarla dolacak diğer tarafları bu bantın altını ve üstünü sıfır haline getireceğim.
+
+451
+01:10:43,755 --> 01:10:51,415
+Böyle bir çevirme işlemi yaparak bu bant matrisi de oluşturursam bu şekilde yoluma devam edeceğim.
+
+452
+01:10:51,615 --> 01:10:54,555
+Yine bir seri dönüşüm işlemi uygulayacağım.
+
+453
+01:10:55,015 --> 01:11:00,715
+Buradaki bantın genişliğinin ne olacağını şu an bir şey söyleyemem.
+
+454
+01:11:00,816 --> 01:11:03,375
+Burada da 3 satır var, burada da 3 satır var.
+
+455
+01:11:03,755 --> 01:11:09,636
+Biri bir kaydırarak yine üçe üçe gelmiş yerde bir bant matrisi olacak.
+
+456
+01:11:10,275 --> 01:11:13,595
+Bir matrisin transpozunu nasıl alınır?
+
+457
+01:11:13,755 --> 01:11:24,235
+bunu da biliyoruz. Satır ve sütunların yerleri değişirse bu matrisin transpozunu alırız. Herhangi bir problem yok. Bunu hepimiz hatırlarız.
+
+458
+01:11:25,036 --> 01:11:40,496
+Bir matrisin simetrik matris adını alabilmesi için matrisin kendisiyle transpozu birbirinin aynısıysa biz bu matrisi simetrik matris denir.
+
+459
+01:11:40,496 --> 01:11:51,176
+A matrisi simetrik bir matris mi? Hemen transpozunu alır. Aynıysa simetrik matristir diyebiliriz.
+
+460
+01:11:52,856 --> 01:12:06,036
+Kofaktör matris nedir? Bu kofaktör matris ilerleyen şeylerde, dönemlerde farklı derslerin içerisinde karşınıza çıkacak bir kavram.
+
+461
+01:12:06,035 --> 01:12:16,995
+veri biliminde, veri madenciliğinde, görüntü işlemede kullanılan yöntemlerin içerisinde yer alan bir olaydır.
+
+462
+01:12:16,995 --> 01:12:28,956
+Kol faktör matrisi yine elinizde bir kas sayılar matrisi var. Bu kas sayılar matrisindeki her bir terimin kol faktörünü hesaplıyorum.
+
+463
+01:12:28,956 --> 01:12:43,056
+mesela A11'in colfaktörünü hesapladım, alfa11 çıktı. İşte A3'ün colfaktörünü hesapladım, alfa33 çıktı. Buna da colfaktör matrisi diyorum.
+
+464
+01:12:43,055 --> 01:13:03,175
+GoFactor matrisi de aslında bunu bir resim olarak düşünün. Bunların her biri piksele karşılık gelsin, bir renge. Ben bu resimden bazı ayırt edici özellikler çıkarmak istiyorum.
+
+465
+01:13:03,176 --> 01:13:19,916
+Bu konfaktör işlemini uygulayarak yani bunu kullanan arka planda bazı yöntemler var. Resimden ayırt edici özellikleri seçebilmek amacıyla orada mesela bu konfaktör olayı gerçekleştiriliyor.
+
+466
+01:13:19,915 --> 01:13:37,555
+Kol faktörün nasıl hesaplandığına bakalım. Mesela ben A11'in kol faktör değerini hesaplayacaksam bulunduğu satır ve sütunu siliyorum. Ortada kalan bu değerlerin determinantını alıyorum.
+
+467
+01:13:37,555 --> 01:13:52,435
+çarpı, eksi bir üzeri, A11 nerede? Birinci satır birinci kolonda, birinci satır birinci kolon, bunların toplamı iki, eksi birin ikinci kuvveti, artı birdir.
+
+468
+01:13:52,435 --> 01:14:01,595
+Bunun değeri artı ve şuradaki determinantın da sonucunu alıp buraya alfa 11 ekliyorum.
+
+469
+01:14:01,595 --> 01:14:08,595
+A3-3'ü hesaplayacaksam, satır ve sütun siliyorum, şuradaki dörtlüyü alıyorum.
+
+470
+01:14:09,235 --> 01:14:10,235
+Sonra bu üç artı üç, yine burası üç artı üç altı olur, eksi birin altıncı kuvvetini alıp alfa bir üçü çıkarıyorum. Kofar faktör maddesi de bu. Yani gerçek dünyada nasıl size örnek vereyim? Hani matematik dersinde görüyoruz burada üç, beş, yedi, sekiz diye sayılar var. Sovat, yani ne olmuş oradaki o sayılar? Oradaki sayılar, atıyorum sen bir şey olduğunu düşün.
+
+471
+01:14:39,235 --> 01:15:03,335
+Böyle örnekler vereyim. Belki bazı şeyler, pardon, aklınızda daha şey kalabilir. Burası değişti. Neden değişti bilmiyorum. Silgiyi falan göremez oldum. Ne olabilir? Mesela şöyle düşünün. Şunlar dökümanlar. Birinci döküman, ikinci döküman, üçüncü döküman olsun.
+
+472
+01:15:03,335 --> 01:15:26,255
+Bunlar da kelimeler. Birinci kelime, ikinci kelime, üçüncü kelime. Sizin elinizde üç tane döküman var. Bunlar da kelimeler. Kabir kelimesi birinci dökümanın içinde beş kez geçiyor. Kabir kelimesi ikinci dökümanda sıfır. Kabir kelimesi üçüncü dökümanda on kez geçiyor.
+
+473
+01:15:26,255 --> 01:15:33,435
+Bu şekilde doküman ve dokümanlardaki kelimelerin sayısından oluşan bir matris var.
+
+474
+01:15:34,435 --> 01:15:41,595
+Senin o matematikte gördüğün 3, 5, 7, 8 gibi sayılarım böyle bir şeye karşılık geldiğini düşünün.
+
+475
+01:15:41,815 --> 01:15:47,995
+Ve ben bu bilginin içinden önemli özellikler çıkarmak istiyorum.
+
+476
+01:15:47,995 --> 01:15:52,075
+Yani hangi kelimeler daha ayırt edici olacak?
+
+477
+01:15:52,075 --> 01:16:11,875
+Yani bakacağım bir kelime hangi dokümanlarda daha fazla gözükmüş, gözükme sayısı nedir? Bu bilgileri kullanarak bir takım yeni değerler elde etmeye çalışacağım. O zaman bunların konfaktör matrislerini kullanmam benim için çok ideal olacak.
+
+478
+01:16:11,875 --> 01:16:31,275
+ya da burası bir resim olabilir. Resmin her scanline'ı ve bunlar da her scanline'deki renge karşılık gelen piksel kodları. Resimden özellikler çıkaracağım. O co-faktörünü alıp bunlardan yola çıkarak bir takım işlemler yapacağım.
+
+479
+01:16:31,275 --> 01:16:38,335
+arka planda kullanım yerleri, sizin göreceğiniz derslerde buraları olabilir.
+
+480
+01:16:38,775 --> 01:16:47,615
+Bir sayısal analizde bunu sadece matematikte görmüş olduğunuz sayılardan oluşan bir matris.
+
+481
+01:16:47,815 --> 01:16:51,475
+Ama gerçek dünyada tabii ki bunların karşılıkları var.
+
+482
+01:16:52,395 --> 01:16:53,555
+Devam edelim.
+
+483
+01:16:54,215 --> 01:16:56,615
+Adjoint matris karşımıza çıkabilir.
+
+484
+01:16:56,615 --> 01:17:17,615
+Almış olduğum konfaktör matrisinin transpozunu alırsam adjoint matrisi elde edelim. Peki adjoint matris nerede kullanılır? Sen bir matrisin tersini almak istiyorsan yani matrisin inversini almak istiyorsan adjoint matrisi
+
+485
+01:17:17,876 --> 01:17:29,876
+aynı A matrisinin determinantına oranlarsan matrisin tersini al diyorsun. Herhangi bir şeyde programlama dilinde program yazarken
+
+486
+01:17:29,876 --> 01:17:41,876
+library'sinde inverse alınıyor, fonksiyon iğneyi çağırıyorsun, parametre olarak matrisi gönderiyorsun, o sana pat diye bir sonuç veriyor.
+
+487
+01:17:41,876 --> 01:17:54,216
+ama arka planda yaptığı şey ona vermiş olduğum matrisin adjointini almak. Adjoint nedir? Demek ki bir konfaktör hesaplanacak. Arka planda bu işlemler yapılıyor.
+
+488
+01:17:54,216 --> 01:18:05,535
+E ben bunları niye görüyorum? Bunları ben yazmak istesem yani bir matrisin inversini almak istesem nasıl kodlayacağım?
+
+489
+01:18:05,695 --> 01:18:13,056
+Matrisin inversini nasıl sayısal yöntemlerle alabilirim? Bu derste bunları göreceğiz.
+
+490
+01:18:13,056 --> 01:18:19,175
+ya da bir matrisin ortogonal matris olup olmadığını nasıl anlayacağım?
+
+491
+01:18:19,355 --> 01:18:27,895
+Ortogonal matris alınması iki matrisin, iki vektörün birbirlerine dik olmasını gerektirir.
+
+492
+01:18:28,335 --> 01:18:35,236
+Bir matrisin kendisi inversine eşitse tersine bu da ortogonal matris oluyor.
+
+493
+01:18:36,136 --> 01:18:39,636
+Matrislerle söyleyebileceğim bilgiler bunlar.
+
+494
+01:18:39,635 --> 01:19:08,295
+Bunun dışında iki tane matrisi toplayıp çıkarabilirsin. Karşılıklı gözlerindeki değerler toplanır ve çıkarılır. Matrisleri çarpmak istiyorsan, iki tane elinde matris var. Bu iki matrisi çarpmak istiyorsan M, N olsun. Bu da İ ve J olsun. Çarpabilmen için N ile İ'nin aynı boyutta olması gerekiyor. Yoksa çarpamazsın.
+
+495
+01:19:08,295 --> 01:19:17,615
+bunun birinci satırı bunun birinci kolonunla çarpılıp yeni matrisin ilk gözüne yazılır.
+
+496
+01:19:19,015 --> 01:19:27,055
+Matrislerde bölme işlemi yoktur. Bir matrisi bir matrise bölemeyiz ama bir matrisi bir sayıya bölebiliriz.
+
+497
+01:19:27,415 --> 01:19:32,896
+Yani bu matrisi beşe bölmek her bir elemanını beşe bölmek demektir.
+
+498
+01:19:32,896 --> 01:19:52,756
+Şimdi bana bir takım matrisler verilecek bunlar bir problem sonucu elde edilmiş matrisler olsun ki ben bu örnekte de denklem takımlarını matrisleri, denklemlerin kas sayılarını matrisleri indirleyeceğim
+
+499
+01:19:52,755 --> 01:20:05,635
+ve bu matrisler üzerinde işte üst üçgen matris, alt üçgen matris, onu yap, bunu yap derken bir takım elementer, bunları temel diye çeviriyoruz, işlemler yapmamız gerekiyor.
+
+500
+01:20:06,115 --> 01:20:14,615
+Bu elementer işlemler nelerdir? Elinizde üç tane denkleminiz olsun. Üç tane denklemin, üç tane de bilinmeyenin var.
+
+501
+01:20:14,615 --> 01:20:28,255
+Genişletilmiş augmented İngilizcesi, kas sayılar matrisini yaz dendiğinde yapılan şey, kas sayıları alıyorsun 1, 3, eksi 1
+
+502
+01:20:28,255 --> 01:20:40,775
+Burası da, yani burası aslında A matrisi, X matrisi, bilinmeyenler matrisi eşittir C
+
+503
+01:20:40,775 --> 01:20:47,395
+Oradaki serin bilinmeyenlerin x1, x2, x3 olacağı gibi x, y, z de olabilir.
+
+504
+01:20:48,035 --> 01:20:54,055
+A matrisi 1, 3, 1, 3, 1, 2, 1, 5, 2'den oluşmuş.
+
+505
+01:20:54,195 --> 01:20:56,755
+C matrisi de 15, 3.
+
+506
+01:20:57,675 --> 01:21:05,235
+Her birinin kat sayılarını alarak oluşturduğum bu matrise argumentik genişletilmiş matris diyorum.
+
+507
+01:21:06,915 --> 01:21:09,895
+Bu elementer işlemler nedir?
+
+508
+01:21:09,895 --> 01:21:16,875
+Bu matrisler üzerinde yapacağım satır işlemleri var. Elementar satır işlemleri. Nedir bunlar?
+
+509
+01:21:17,376 --> 01:21:25,275
+Genişletilmiş bir matriz içerisinde istediğin bir satırı istediğin bir sayıyla çarparsın.
+
+510
+01:21:25,275 --> 01:21:35,796
+Yani sana gerekli olan birinci satırın 2 ile çarpılmasıysa yeni matrizde birinci satırı aldın 2 ile çarptın.
+
+511
+01:21:35,915 --> 01:21:38,056
+2, 6, eksi 2, 20.
+
+512
+01:21:38,855 --> 01:21:39,535
+İşte bu.
+
+513
+01:21:39,535 --> 01:21:50,456
+İşte ben bir matrisi üst üçgen, alt üçgen ya da birim matris, köşegen matris bunları çevirirken yapabileceğim elementer işlemlerden biri bu.
+
+514
+01:21:50,896 --> 01:21:57,535
+Herhangi bir satırı herhangi bir sayıyla çarparak yeni bir satır değeri elde edebilirim.
+
+515
+01:21:58,515 --> 01:22:02,035
+Veya satırların yerini değiştirebilirim.
+
+516
+01:22:02,115 --> 01:22:03,615
+Bu da bir elementer işlem.
+
+517
+01:22:04,115 --> 01:22:08,175
+Bana diyor ki S1 satırıyla S2 satırının yerini değiştir.
+
+518
+01:22:09,175 --> 01:22:12,056
+3-1-2-5 birinci satıra geldi.
+
+519
+01:22:12,195 --> 01:22:14,876
+1-3-1-10 ikinci satıra geldi.
+
+520
+01:22:15,195 --> 01:22:17,575
+Bu da bir elementel işlem.
+
+521
+01:22:18,615 --> 01:22:30,475
+Veya genişletilmiş matriz içerisinde istenildiğinde istenilen iki tane satır toplanarak yeni bir satıra eklenebilir.
+
+522
+01:22:31,115 --> 01:22:35,655
+Veya bir satırı çarparak yeni bir satıra ekleyebilirsin.
+
+523
+01:22:35,655 --> 01:22:41,535
+Mesela burası diyor ki birinci satırla ikinci satırı topla birinci satıra yaz.
+
+524
+01:22:41,935 --> 01:22:43,096
+Şimdi toplayalım.
+
+525
+01:22:43,276 --> 01:22:44,395
+Bir, üç daha dört.
+
+526
+01:22:44,675 --> 01:22:46,695
+Birinci satıra yaz dedi yazdım.
+
+527
+01:22:47,215 --> 01:22:50,316
+Üç eksi bir artı iki birinci satıra yazdım.
+
+528
+01:22:50,715 --> 01:22:53,155
+Eksi bir iki birinci satıra yazdım.
+
+529
+01:22:53,755 --> 01:22:57,316
+On artı beş birinci satıra yazdım on beş.
+
+530
+01:22:58,015 --> 01:23:01,895
+Ya da diyor ki birinci satırı üçle çarp.
+
+531
+01:23:01,895 --> 01:23:05,935
+Birinci satırı gidip 3 ile çarpabilirsin.
+
+532
+01:23:06,495 --> 01:23:09,415
+S1'i 3 ile çarpıp 3. satıra yaz.
+
+533
+01:23:09,835 --> 01:23:21,095
+1'i 3 ile çarptım 12, 2'yi 3 ile çarptım 6, 1'i 3 ile çarptım 3, 15'i 3 ile çarptım 45.
+
+534
+01:23:22,675 --> 01:23:27,075
+Ne ile çarparsam çarpayım, ne ile toplarsam toplayayım.
+
+535
+01:23:27,075 --> 01:23:34,635
+aslında matrislerin içindeki sayılar değişir fakat matrislerin taşıdığı bilgi değişmez.
+
+536
+01:23:35,195 --> 01:23:36,335
+Bilgi aynıdır.
+
+537
+01:23:36,715 --> 01:23:38,195
+Yani ne demek istiyorum?
+
+538
+01:23:38,795 --> 01:23:42,415
+2 bölü 10 ile 1 bölü 5.
+
+539
+01:23:43,055 --> 01:23:50,736
+Baktığımda iki farklı sayı ama ikisini de ikiye böldüm 1 bölü 5 oldu.
+
+540
+01:23:50,736 --> 01:23:56,635
+Bu ikisinin taşıdığı bilgi aynıdır ama sayısal değerleri farklıdır.
+
+541
+01:23:57,075 --> 01:24:07,715
+Bu matrislerde de her ne kadar hangi elementer işlemi yaparsanız yapın, o elementer işlemini yapmamın sebebi matrisi istediğin forma getirmek.
+
+542
+01:24:07,715 --> 01:24:11,376
+Ama matrisin içindeki bilgi değişmez.
+
+543
+01:24:13,215 --> 01:24:15,456
+Başka ne yazmışım şuraya?
+
+544
+01:24:16,036 --> 01:24:23,635
+Orjinal matris ile genişletilmiş ve üzerinde elementer satır işlemi yapılmış matrislerin çözümleri aynıdır.
+
+545
+01:24:24,015 --> 01:24:24,855
+Bir şey değişmez.
+
+546
+01:24:24,855 --> 01:24:34,435
+Yani 2 bölü 10'a da atıyorum 3 bölü 5'i ekle, 1 bölü 5'e de 3 bölü 5'i ekle.
+
+547
+01:24:34,895 --> 01:24:40,816
+Sonuçları farklı olsa da oranladığım vakit hiçbir şeyin değişmediğini görürsünüz.
+
+548
+01:24:41,995 --> 01:24:44,555
+Şimdi gelelim konumuza.
+
+549
+01:24:44,675 --> 01:24:51,755
+Buraya kadar olan şeylerin hepsi bir linearce 1'deki matrislerin kısa bir özetiydi.
+
+550
+01:24:51,755 --> 01:24:57,295
+Şimdi bir madresi inversi nasıl alınır?
+
+551
+01:24:57,684 --> 01:25:16,284
+Bir madrisin inversini nasıl alıyorduk? Matrisi, adjointi, bölü, matrisin determinantını oranlıyorduk, inversini alıyorduk. Ama ben sayısal analizde oturup bunlarla uğraşamam. Ben bir kod yazacağım.
+
+552
+01:25:16,284 --> 01:25:35,764
+öyle bir kod yazayım ki elimde öyle bir algoritmam olsun ki hem tekrarlayan basit bir işlem yapıp her ne kadar çok iteratif gözükse bile hem de kodlayacağım için dört işleme benzeyen bir işlem yapmalıyım.
+
+553
+01:25:35,763 --> 01:25:45,523
+Şimdi ortaya atılan yöntemlerden bir tanesi diyor ki bir matrisi alır bu kas sayılar matrisi.
+
+554
+01:25:45,523 --> 01:26:03,963
+Onu birim matrisle çarparsan ama burada çarpmıyorsun da çarpıyormuş gibi bırakıp bu ikisine elementer işlemler uygulayarak bu A matrisini birim matrise çevirirken
+
+555
+01:26:03,963 --> 01:26:13,203
+bu birim matrise de aynı işlemleri yaptığında elde etmiş olduğum matris A matrisinin inverse olur.
+
+556
+01:26:13,724 --> 01:26:17,143
+Ne demek istedik? Bir daha silelim.
+
+557
+01:26:17,883 --> 01:26:21,963
+Eğer şu A matrisi ve birim matrisi yan yana aldık.
+
+558
+01:26:22,663 --> 01:26:32,343
+Ben bu A matrisi üzerinde A matrisinin birim matrise dönüşebilmesi için bir takım elementer işlemler yapacağım.
+
+559
+01:26:32,343 --> 01:26:36,403
+bu işlemleri aynı anda I'ya da yapıyorum.
+
+560
+01:26:37,483 --> 01:26:46,643
+A, I'ya dönüşürken I'nın dönüştüğü yeni matriste bu A matrisinin inversi oluyor.
+
+561
+01:26:46,823 --> 01:26:47,923
+Çok enteresan.
+
+562
+01:26:49,023 --> 01:26:59,843
+Elemental işlemler yapıyorum şu iki matrise ama hep elemental işlemleri yaparken bunu birim matrise nasıl çeviriyorum diye düşünüyorum.
+
+563
+01:26:59,843 --> 01:27:27,563
+Aynı işlemleri birim matrise yapıyorum. Hop bir bakıyorum inversi alınmış oluyor. Peki şimdi bunu bir örnek ile yapalım. Şuraya bir not yazmışım. Burada bir not var. Sadece kara matrislerin inversi alınır. Bu bir. İki. Her kara matrisin inversi alınamayabilir.
+
+564
+01:27:27,563 --> 01:27:38,923
+A matrisini birim matris haline getirmeye çalışırken bir satır tamamıyla sıfır oluyorsa o matrisin tersi alınamaz.
+
+565
+01:27:38,923 --> 01:27:44,863
+Yani ben buraya bir A matrisi yazdım. Bu A matris, evet kara matris.
+
+566
+01:27:44,863 --> 01:27:57,643
+ve bu A matrisini elementer işlemler yaparken birim matrise çevirirken satırların bir tanesinin tamamı sıfır olduysa bu matrisim tersi alınamaz diyorum.
+
+567
+01:27:58,583 --> 01:28:07,063
+Matrisimiz kara değilse tersi alınmadan önce de bir ön işlem yapılması gerekir.
+
+568
+01:28:07,063 --> 01:28:15,923
+Bunlara o kadar detayına girmiyoruz. Nasıl çevirilir diye biz hep bizlere bir kara matrisin verildiğini düşünelim.
+
+569
+01:28:17,343 --> 01:28:29,843
+Şimdi ilerleyelim. Bu elimdeki A matris. Çekil şuradan. Şu yukarıda bende bir panel açılıyor.
+
+570
+01:28:29,843 --> 01:28:48,183
+şey görmemi engelliyor. Bazen yok oluyor ama şu an olduğu gibi duruyor. Bu benim A matrisim. 1, 2, 3, 4. Bu da benim birim matrisim. Ben bunlar üzerinde elementel bir işlem yapacağım. Bu A matrisi birim matrise dönüşecek.
+
+571
+01:28:48,659 --> 01:28:53,040
+Bu birim matrisi de A matrisinin tersine dönüşecek.
+
+572
+01:28:53,580 --> 01:28:58,540
+Şimdi bu A matrisini birim matrise çevirmek için ne yapmam gerekir?
+
+573
+01:28:59,120 --> 01:29:03,659
+Şu diyagonallerin 1 olması, şunların da 0 olması gerekir.
+
+574
+01:29:04,680 --> 01:29:11,459
+Ben ne tip işlemler yapayım ki diyagonaldekiler 1, şuradakiler de 0 olsun?
+
+575
+01:29:12,239 --> 01:29:15,719
+Bu küçük bir örnek olduğu için buraya da yazmışız.
+
+576
+01:29:15,719 --> 01:29:32,999
+Önce diyor şunları sıfır yap diyor. Sonra diyor diagoneli bir yap diyor. Daha sonra da burayı sıfır yapmalısın diyor. Okey tamam yapalım. Buraya yine bir başka not almışız.
+
+577
+01:29:33,000 --> 01:29:44,799
+Bir yine matrisi yaparken, birim matrisini alırken bir bir gözünde eğer sıfır varsa diyor bunu sıfırdan kurtarmalısın.
+
+578
+01:29:45,180 --> 01:29:50,299
+Buraya sıfır alırsan bu matrisin de inversini bu yöntemle almakta zorlanırsın.
+
+579
+01:29:50,859 --> 01:29:52,999
+Burası eğer sıfırsa bunu nasıl kurtarırsın?
+
+580
+01:29:54,119 --> 01:30:00,159
+Buradaki satırların yerini değiştirerek elementer bir işlem yapabilirsin diyor.
+
+581
+01:30:00,159 --> 01:30:02,279
+Hemen örneğe bakalım.
+
+582
+01:30:02,279 --> 01:30:17,159
+Şimdi öncelikle şuranın A matrisiydi. Burası da birim matrisiydi. Buranın sıfır olması için ne yapmam gerekir? Buranın sıfır olması için. Buraya kural yazılmış.
+
+583
+01:30:17,159 --> 01:30:22,159
+Sen diyor şuradaki diyor 3'ü al diyor.
+
+584
+01:30:23,939 --> 01:30:31,100
+Pardon biri diyor şu yukarıdakini şu aşağıdakinin negatif işaretlisiyle çarp diyor.
+
+585
+01:30:31,740 --> 01:30:40,179
+Yani birinci satırı eksi 3 ile çarp sonra da S2 ile topla ve S2'nin yerine yaz.
+
+586
+01:30:40,179 --> 01:30:40,740
+Neden?
+
+587
+01:30:40,739 --> 01:30:47,559
+Eğer bunu bunun negatif işaretlisiyle çarparsam burası eksi 3 olur.
+
+588
+01:30:48,359 --> 01:30:52,199
+Aşağıdaki satırla toplarsam burası da artı 3.
+
+589
+01:30:52,959 --> 01:30:54,799
+Bunların toplamı 0 olur.
+
+590
+01:30:55,339 --> 01:30:57,459
+S2'ye de git 0 yaz diyor.
+
+591
+01:30:58,059 --> 01:31:00,999
+Ama aynı işlem diğerlerine de uygulanacak.
+
+592
+01:31:01,479 --> 01:31:04,739
+Yani buradaki 2'yi de eksi 3 ile çarpacağım.
+
+593
+01:31:05,499 --> 01:31:06,439
+Eksi 6.
+
+594
+01:31:07,099 --> 01:31:07,739
+4 ile toplayacağım.
+
+595
+01:31:07,739 --> 01:31:09,399
+Eksi 2.
+
+596
+01:31:09,399 --> 01:31:11,839
+eksi 2'yi buraya yazdım.
+
+597
+01:31:12,519 --> 01:31:14,039
+1'i eksi 3 ile
+
+598
+01:31:14,039 --> 01:31:16,179
+çarpacağım. Eksi 3
+
+599
+01:31:16,179 --> 01:31:17,939
+2 ile toplayacağım.
+
+600
+01:31:18,139 --> 01:31:21,179
+0
+
+601
+01:31:21,179 --> 01:31:23,559
+eksi 3
+
+602
+01:31:23,559 --> 01:31:25,559
+yazacağım. 0'ı
+
+603
+01:31:25,559 --> 01:31:27,859
+eksi 3 ile çarpacağım. 0
+
+604
+01:31:27,859 --> 01:31:29,679
+1 ile toplayacağım.
+
+605
+01:31:30,059 --> 01:31:32,019
+Sonucu S2'ye yazacağım. 1
+
+606
+01:31:32,019 --> 01:31:33,439
+Şimdi ne oldu?
+
+607
+01:31:33,619 --> 01:31:36,279
+Birim matriz burasını 0 yaptı.
+
+608
+01:31:36,939 --> 01:31:37,319
+Şimdi
+
+609
+01:31:37,320 --> 01:31:39,939
+şurayı 1 yapmaya çalışalım.
+
+610
+01:31:40,299 --> 01:31:41,840
+Bunların hepsinin 1 olması
+
+611
+01:31:41,840 --> 01:31:43,540
+lazım. Bunları
+
+612
+01:31:43,540 --> 01:31:45,640
+nasıl 1'e çevireceğim?
+
+613
+01:31:46,079 --> 01:31:47,640
+Burada yine elementler işlem
+
+614
+01:31:47,640 --> 01:31:49,100
+olarak bana diyor ki
+
+615
+01:31:49,100 --> 01:31:51,240
+ikinci satırı al.
+
+616
+01:31:51,859 --> 01:31:53,499
+Eksi 1 bölü 2 ile
+
+617
+01:31:53,499 --> 01:31:55,579
+çarp. İkinci satır
+
+618
+01:31:55,579 --> 01:31:57,100
+olarak yaz diyor.
+
+619
+01:31:57,520 --> 01:31:58,600
+Hayda hadi bakalım.
+
+620
+01:31:59,700 --> 01:32:00,999
+S2'ye aldım 0.
+
+621
+01:32:01,299 --> 01:32:03,659
+Eksi 1 bölü 2 ile çarptım 0.
+
+622
+01:32:03,939 --> 01:32:05,159
+S2'ye yazdım.
+
+623
+01:32:05,579 --> 01:32:06,140
+Yazdım.
+
+624
+01:32:06,139 --> 01:32:11,799
+Eksi 2'yi eksi 1 bölü 2 ile çarptım artı 1.
+
+625
+01:32:12,219 --> 01:32:14,740
+S2'ye yazdım artı 1.
+
+626
+01:32:15,600 --> 01:32:20,039
+Eksi 3'ü eksi 1 bölü 2 ile çarptım 3 bölü 2.
+
+627
+01:32:21,719 --> 01:32:24,419
+S2'ye yazdım 3 bölü 2.
+
+628
+01:32:25,380 --> 01:32:30,100
+1'i eksi 1 bölü 2 ile çarptım eksi 1 bölü 2.
+
+629
+01:32:30,520 --> 01:32:32,979
+S2'ye yazdım eksi 1 bölü 2.
+
+630
+01:32:33,587 --> 01:32:34,587
+Tamam, baktık. Burası da diagonal oldu mu bir bir? Evet oldu. Ne kaldı geriye? Burayı sıfır yapmak. Burayı nasıl sıfır yapacağım? Burada da diyor ki S2'yi ikiyle çarp, S1'le topla, S1'e yaz. Bakalım ikiyle çarptım topladım bir. İkiyle çarptım topladım, eksi ikiyle çarptım, eksi iki altı ikiyle topladım, sıfır.
+
+631
+01:33:03,587 --> 01:33:22,308
+eksi 3, 1 ile topladım, eksi 2, eksi 2 ile çarptım, artı 1, S1 ile topladım, 1. Burası ne oldu? Birim matris, burası da ne oldu? A matrisini, inverse oldu. Olay kolay.
+
+632
+01:33:22,307 --> 01:33:32,327
+Şimdi sizin aslında zorlanacağınız şey, hocam siz bunları kafanızdan mı attınız, bu temel dönüşümleri nasıl yaptınız?
+
+633
+01:33:32,327 --> 01:33:46,327
+Ben bunları kafamdan atmadım, bunu her birimiz farklı dönüşümler bularak benzetebiliriz ama birkaç tane yaptıktan sonra aslında bunların rutine bindiğini görüyorsunuz.
+
+634
+01:33:46,327 --> 01:34:16,047
+yaparsınız. Hep aynı şeylerle bir tane yol buluyorsun, dönüşün. Birim matrize çevirmem gerektiğinde hep aynı metodu kullanıyorum. Birden fazla birim matrize çevirme için temel işlemler kombinasyonu bulabilirsiniz. Her kitapta farklı olabilir. Sen de bir şey türetebilirsin ama yeter ki doğru türet. Onu yaz kenara koy. Bir matriz inverse'a çevirilirken hangi işlemler kullanılıyorsa
+
+635
+01:34:16,047 --> 01:34:41,007
+hemen onu al ve bu işlemleri kullan. Burada şu, biraz sonra bir örnek yapacağız geniş ama dedik ki sadece bir matrisin inversini alıyorken temel dönüşüm işlemleri, elementer dönüşüm işlemleri yaparken bir satır sıfırsa onun tersi alınamaz.
+
+636
+01:34:41,007 --> 01:34:49,227
+ya da elinizdeki matris kare matris değilse şey alınamaz, inversi alınamaz.
+
+637
+01:34:50,067 --> 01:34:56,227
+Kare matris değilse ve ben o matrisin tersini almak istiyorsam ne yaparım?
+
+638
+01:34:56,767 --> 01:34:59,547
+Yine genel kültür olsun diye soruyorum.
+
+639
+01:34:59,827 --> 01:35:02,127
+Bu linearce bir şeyi.
+
+640
+01:35:02,808 --> 01:35:04,627
+Elinizde şöyle bir matris var.
+
+641
+01:35:05,267 --> 01:35:06,347
+Kare matris değil.
+
+642
+01:35:06,767 --> 01:35:09,308
+Ben bunun tersini almak istiyorum.
+
+643
+01:35:09,308 --> 01:35:35,688
+Bu matrisin transpozunu alıyor, kendisiyle çarpıyor. Bunun transpozu ne olur? 2'ye çarpı 3 olur. Kendisi de nedir? 3'e çarpı 2'dir. Öyleyse bunun sonucu ne çıkacak? 2'ye 2'lik bir matris. Bu matrisi C matrisi diyor. Çünkü kare bir matris oluyor. Sonra bu C matrisinin tersini transpozuyla çarpıyor.
+
+644
+01:35:35,687 --> 01:35:47,267
+buna da soldan ters diyor. Soldan tersi A matrisi ile de çarparsam zaten inversini verir ya da sağdan çarparsam verir.
+
+645
+01:35:47,687 --> 01:36:01,667
+Kısacası ben kara olmayan bir matrisin tersini alırsam şu şekilde ister soldan ister sağdan alarak kara matrise çevirmiş olabilirim ve bunu kullanırım.
+
+646
+01:36:01,668 --> 01:36:18,468
+Ama bu yine bizim şu an anlattığımız konunun dışında sadece böyle bir şey nasıl yapıldığını bilir. Bu satır sayısı sütün sayısından büyükse, bu da sütün sayısı satır sayısından büyükse fark nedir?
+
+647
+01:36:18,996 --> 01:36:30,996
+Satır sayısı büyükse A transpozu A'la çarpıyorsun. Sütün büyükse A'yı transpozla çarpıyorsun. Sütün daha büyükse C'nin inversini alıyorsun.
+
+648
+01:36:30,996 --> 01:36:46,996
+Burada da zaten aynısı olmuş. AT'yi C inversi AT'yle transpozuyla çarparken, burada A'nın transpozunu C'nin inversiyle çarpıyorsun. Bu da sağdan ters oluyor.
+
+649
+01:36:46,996 --> 01:36:58,415
+yani taşıdığı bilgi olarak bir şey yok. Sayısal değerler değişik olabilir ve kara matrisi de çevirmiş olabiliriz. Bu sadece bir bilgi olarak bir kenarda dursun.
+
+650
+01:36:59,496 --> 01:37:09,635
+Şimdi matrisin inversine alıyoruz. Yani tersine. Yöntemimizin adı ne? Gauss-Jordan eliminasyon yöntemi.
+
+651
+01:37:09,635 --> 01:37:15,196
+Gauss-Jordan eliminasyon yöntemi nasıl değişti çalışıyor?
+
+652
+01:37:15,196 --> 01:37:19,595
+İşte bana birkaç sayılar matrisi verilmiş bu A matrisi.
+
+653
+01:37:19,676 --> 01:37:22,575
+Bu A matrisinin tersini alıyor.
+
+654
+01:37:23,256 --> 01:37:38,195
+Bu gösterdiğim, ilk başta da gösterdiğim Gauss-Jordan eliminasyon yöntemi diyor ki ben bu matrisin diyor birim matrisiyle birlikte bir elementer dönüşüm uygulayıp bunu birim matris haline çevirirken
+
+655
+01:37:38,195 --> 01:37:56,135
+aynı işlemleri buna da yaparsam bunun sonucu kas sayılar matrisinin tersi olur diyor. Peki tamam öyleyse yapalım. Bu bir öncekine göre daha güzel anlatılmış olduğunu göreceksiniz ve şu mavileri takip edin.
+
+656
+01:37:56,135 --> 01:38:05,595
+aslında birbirini tekrar eden işlemler. Ben böyle bir şeyin algoritmasını da yazsam bunlara dikkat edeceğim.
+
+657
+01:38:05,815 --> 01:38:10,835
+Bu maviler bir olursun şu başlıklar. Daha sonra üzerinden geçelim.
+
+658
+01:38:12,436 --> 01:38:17,676
+Diyor ki elindeki matris bu sarıyor. Birinci satırı A1-1'e böl.
+
+659
+01:38:17,955 --> 01:38:25,335
+Çünkü buranın bir yapılması lazım birim matrise çevirirken. Git diyor bütün bu matrisi beşer.
+
+660
+01:38:25,335 --> 01:38:38,175
+5'i 5'e böldüm, 1, 2'yi 5'e böldüm, 0.4, eksi 4'ü 5'e böldüm, 0.8, 1'i 5'e böldüm, 0.2, sıfırları da 5'e böldüm, sıfırdır.
+
+661
+01:38:39,235 --> 01:38:43,996
+Burayı birim matrase çevirirken şu ilk elemanı çevirerek başladım.
+
+662
+01:38:44,895 --> 01:38:48,255
+Sonra ne yapmam lazım? Şuranın sıfırlanması.
+
+663
+01:38:49,315 --> 01:38:51,955
+Sonra şu elemanın sıfırlanması gerekiyor.
+
+664
+01:38:51,955 --> 01:39:11,975
+Bundan sonra yapacağım şey ne olacak? Bana diyor ki iki biri birinci satırla çarp, burası artık bir oldu ya ben bunu bir ile çarparsam kendisini verir ve kendisinden çıkarırsam burası sıfır olacak.
+
+665
+01:39:11,975 --> 01:39:21,255
+Sadece bunu sıfır yapmam yeterli. Diğerleri ne olursa olsun eninde sonunda bir şeyler değişecek.
+
+666
+01:39:21,255 --> 01:39:25,095
+Şimdi burayı nasıl sıfır yaparsın? Bunun bir olduğunu biliyorum.
+
+667
+01:39:25,795 --> 01:39:33,915
+A2-1'i al, birinci satırla çarp ve kendisinden çıkar. 1'den çıkar, burası sıfır olur.
+
+668
+01:39:33,915 --> 01:39:41,235
+1'i aldım, 0,4 ile çarptım, 4'ten çıkardım, 3,6
+
+669
+01:39:41,235 --> 01:39:47,915
+1'i 0,8 ile çarptım, 2'den çıkardım, 2,8
+
+670
+01:39:47,915 --> 01:39:56,156
+1'i 0,2 ile çarptım, 0'dan çıkardım, 0,2 diye gitti
+
+671
+01:39:56,156 --> 01:39:58,135
+Burası da 0 oldu
+
+672
+01:39:58,135 --> 01:40:02,335
+Üçüncü adımda, şimdi birlikte söyleyelim
+
+673
+01:40:02,335 --> 01:40:14,695
+şuranın sıfır olmasını istiyorum. Nasıl bir işlem yaparım? O zaman derim ki A31'i birinci satırla çay
+
+674
+01:40:15,315 --> 01:40:17,176
+Üçüncü satırdan çıkar.
+
+675
+01:40:17,955 --> 01:40:19,215
+Şimdi 2'yi alırım.
+
+676
+01:40:19,895 --> 01:40:21,615
+Birinci satırla çarptım.
+
+677
+01:40:21,955 --> 01:40:22,236
+2.
+
+678
+01:40:23,155 --> 01:40:24,776
+Kendisinden çıkardım.
+
+679
+01:40:25,875 --> 01:40:26,815
+A2 1'i.
+
+680
+01:40:27,116 --> 01:40:28,935
+Bu şöyle olacak.
+
+681
+01:40:30,155 --> 01:40:31,395
+Yani elimde şu olacak.
+
+682
+01:40:31,615 --> 01:40:32,775
+Üçüncü satırdan.
+
+683
+01:40:33,355 --> 01:40:36,855
+A3 1'i birinci satırla çarparak çıkar.
+
+684
+01:40:36,855 --> 01:40:37,555
+2.
+
+685
+01:40:38,115 --> 01:40:39,475
+1 ile çarptım.
+
+686
+01:40:39,595 --> 01:40:39,855
+2.
+
+687
+01:40:40,315 --> 01:40:41,835
+Kendisinden çıkardım.
+
+688
+01:40:41,955 --> 01:40:42,215
+0.
+
+689
+01:40:43,475 --> 01:40:44,015
+Bakın.
+
+690
+01:40:44,015 --> 01:40:52,035
+Aynı kural aynı. Mavileri izleyin. Birinci satırı A1 bire böl çünkü o diagonal.
+
+691
+01:40:52,775 --> 01:40:59,135
+Sonra A2 1'i şurayı al birinci satırla çar kendisinden çıkar.
+
+692
+01:40:59,815 --> 01:41:05,975
+Arkadan gelen deneyde A3 1'i birinci satırla çar üçüncü satırdan çıkar.
+
+693
+01:41:05,975 --> 01:41:15,915
+Eğer bunun dördüncü satırı olmuş olsaydı A4 1'i birinci satırla çarp, dördüncü satırdan çıkar diyecektim.
+
+694
+01:41:17,055 --> 01:41:19,075
+Üçüncü satır işlemi yaptım bu.
+
+695
+01:41:19,616 --> 01:41:20,676
+Şimdi ne gördük?
+
+696
+01:41:21,256 --> 01:41:22,735
+Buraları oldu.
+
+697
+01:41:23,335 --> 01:41:26,076
+Şimdi bu kolona geldim.
+
+698
+01:41:26,655 --> 01:41:30,435
+Bunun birim matris olması için yapmam gereken şey nedir?
+
+699
+01:41:30,555 --> 01:41:31,915
+Şurayı 1 1 yapacağım.
+
+700
+01:41:32,055 --> 01:41:35,195
+Burayı 1 1 yapmak için ne yaparım?
+
+701
+01:41:35,195 --> 01:41:38,555
+İkinci satırı A22'ye böl.
+
+702
+01:41:38,955 --> 01:41:41,415
+İkinci satırı A22'ye böldüm.
+
+703
+01:41:41,515 --> 01:41:43,415
+0 bölü 36 0.
+
+704
+01:41:43,895 --> 01:41:45,996
+3.6 bölü 3.6 1.
+
+705
+01:41:46,475 --> 01:41:49,695
+2.8 bölü 3.6 0.78.
+
+706
+01:41:50,355 --> 01:41:51,935
+Dıdıdı diye gittim.
+
+707
+01:41:53,555 --> 01:41:55,815
+Şimdi buraların 0 olması kaldı.
+
+708
+01:41:56,615 --> 01:42:02,115
+Bir öncekilerden yararlanarak indisler değişiyor sadece.
+
+709
+01:42:02,895 --> 01:42:04,335
+Şurayı 0 yapacağım.
+
+710
+01:42:04,335 --> 01:42:28,995
+Ne yazmam gerekir? Mesela buranın sıfır olması için ne yazmamız gerekir? Yine birinci satırdan çıkaracağım. Kime? A1'i birinci satırla çarpacağım.
+
+711
+01:42:28,995 --> 01:42:35,555
+ama ikinci satırla çarpacağım, birinci satırdan çıkaracağım.
+
+712
+01:42:35,715 --> 01:42:36,715
+Aynı şeyi yaptık.
+
+713
+01:42:36,835 --> 01:42:37,735
+Bunu aldık.
+
+714
+01:42:38,855 --> 01:42:42,335
+Birinci satırın ikincisi bunu sıfır yapmak istiyorum.
+
+715
+01:42:43,155 --> 01:42:44,275
+Bir ile çarptım.
+
+716
+01:42:44,435 --> 01:42:45,755
+Yine kendisi oldu.
+
+717
+01:42:46,395 --> 01:42:48,055
+Kendisinden çıkardım.
+
+718
+01:42:48,175 --> 01:42:50,055
+Sıfır dörtten sıfır oldu.
+
+719
+01:42:50,875 --> 01:42:52,875
+Yine burası nasıl değişti?
+
+720
+01:42:53,055 --> 01:42:54,195
+A bir iki neydi?
+
+721
+01:42:54,195 --> 01:42:55,435
+Sıfır dört.
+
+722
+01:42:55,955 --> 01:42:58,235
+Sıfır yetmiş sekiz ile çarptım.
+
+723
+01:42:58,235 --> 01:43:01,135
+x'i 0.8'den çıkardım.
+
+724
+01:43:01,536 --> 01:43:04,176
+Aynı şeyi diğerleri için yaptık.
+
+725
+01:43:04,595 --> 01:43:05,676
+Burası 0 oldu.
+
+726
+01:43:06,455 --> 01:43:09,176
+Şimdi şurayı 0 yapmak için ne yapacağız?
+
+727
+01:43:10,476 --> 01:43:11,075
+Burada var.
+
+728
+01:43:11,196 --> 01:43:16,315
+Ben ikinci satır için çalışıyorsam burası üçüncü satırdan çıkar.
+
+729
+01:43:17,536 --> 01:43:21,036
+Üçün ikisini ikinci satırla çarp.
+
+730
+01:43:22,416 --> 01:43:25,735
+Üçün ikisini bunun küçük A olması lazımdı.
+
+731
+01:43:25,815 --> 01:43:26,575
+Büyük A olmuş.
+
+732
+01:43:26,575 --> 01:43:29,435
+İkinci satırla çarp. Üçüncü satırdan çıkar.
+
+733
+01:43:30,655 --> 01:43:32,095
+Burası da bitti.
+
+734
+01:43:32,855 --> 01:43:35,755
+Şimdi bunu siz aklınızdan bir düşünün.
+
+735
+01:43:35,975 --> 01:43:37,615
+Yedinci işlemim ne olacak?
+
+736
+01:43:38,455 --> 01:43:40,555
+Artık buranın bir olması lazım.
+
+737
+01:43:40,775 --> 01:43:42,335
+Burayı nasıl bir yapıyorum?
+
+738
+01:43:43,075 --> 01:43:45,775
+Üçüncü satırı A3-3'e böl.
+
+739
+01:43:45,975 --> 01:43:56,335
+Üçüncü satırı A3-3'e bölüyorum.
+
+740
+01:43:56,575 --> 01:44:05,676
+Bölelim. Burası 1 oldu. Bunları 5, 10'da 8'e, 88'e böldüm. Dıt dıt dıt oldu.
+
+741
+01:44:06,735 --> 01:44:09,315
+Şimdi sırada bunların 0 olması var.
+
+742
+01:44:10,036 --> 01:44:19,036
+aynı şeyi uygulayacağım. Şimdi buranın sıfır olması için ne yapmam lazım? Diğerlerinde ne yapıyordum?
+
+743
+01:44:19,036 --> 01:44:36,036
+A, bir üçü alacağım. Üçüncü satırla çarpıp, birinci satırdan çıkaracağım. A, bir üçü aldım. Üçünü satırla çarpıp, birinci satırdan çıkardım. Burası da sıfır oldu.
+
+744
+01:44:36,036 --> 01:44:59,195
+Bunu sıfır nasıl yapacağım? A2-3'ü alacağım, üçüncü satırla çarpacağım ve üçüncü satırdan çıkaracağım. İkinci satırdan çıkaracağım. Çıkardım. Bu kaldı. Burası da birim matris oldu. Benim A matrisim birim matrise dönüştü. Birim matrisini de bu şekilde bir hal aldı.
+
+745
+01:44:59,195 --> 01:45:09,595
+İşte bu hal başlanmıştaki A matrisinin bana inversini buldu. Bu bir matrisin inversini almak.
+
+746
+01:45:09,595 --> 01:45:23,375
+Şimdi sen yine A-C bir dersinde matrisinin inversini al deyince ne yapıyordun? Bir matrisin determinantını hesaplıyorsun. Matrisi adjointine alıyorsun.
+
+747
+01:45:23,375 --> 01:45:30,115
+Adjoint matrisi nasıl alıyorsan onu alıyorsun. Onlardan bir işlem evre ediyorsun.
+
+748
+01:45:30,115 --> 01:45:36,455
+Şimdi ben bunu sayısal yöntemlerle yapıyorum ve bir algoritma yazmam gerekiyor.
+
+749
+01:45:36,975 --> 01:45:42,255
+Algoritmamda aslında ne görüyorsunuz arkadaşlar? Dışta bir for döngün var.
+
+750
+01:45:43,755 --> 01:45:50,595
+Bu önce birinci satırı yapıyor. Şunların işleri hep birinci satır oluyor.
+
+751
+01:45:50,595 --> 01:46:03,655
+Bakın. Sonra dıştaki döngü ikinci satıra geçecek. İkinci satır oldu. Bitiyor sonra dıştaki döngü üçüncü satıra geçti. Üçüncü satır oldu.
+
+752
+01:46:03,655 --> 01:46:24,335
+İçteki döngüde de ne oluyor? Dış 1'deyken A22, A11, A21, A31. A22 iken A12, A32, A33 iken A31, A32. İçteki indislerde öyle dönüyor.
+
+753
+01:46:24,336 --> 01:46:38,976
+Yani ben bu işlemi iki tane tor döngüsüyle, tabi oradaki tor döngülerin başlangıç ve bitişleri önemli, onları ona göre yapmalıyım, bir su içmem gerekiyor.
+
+754
+01:46:41,976 --> 01:46:51,175
+Yapmalıyım ve bu işlemi kodladığım vakit Aslan'a çok hızlı bir şekilde matrisin, inversiyenin alınmış hali.
+
+755
+01:46:51,175 --> 01:47:01,116
+Gauss-Jordan yöntemi en hızlı, en kolaylıkla inverse alabileceğiniz bir yöntem.
+
+756
+01:47:01,595 --> 01:47:05,696
+Inverse için başka bir algoritmaya gerek yok.
+
+757
+01:47:06,196 --> 01:47:07,976
+Algoritma dediğim gibi çok açık.
+
+758
+01:47:08,315 --> 01:47:16,256
+Sen başka kaynakta bunu birim maddese çevirmek için farklı elementer dönüşümler görebilirsin.
+
+759
+01:47:16,256 --> 01:47:33,256
+Sen kendin de eğer doğru yapıyorsan farklı dönüşümlerle birim matrise çevirebilirsin. Ama bir kontrol de etmen lazım doğru çevirdin mi, çevirmedin mi? Bu en basit, en kolay olan elementer dönüşümdür.
+
+760
+01:47:34,375 --> 01:47:36,416
+Sorunuz var mı arkadaşlar buraya kadar?
+
+761
+01:47:40,307 --> 01:47:41,307
+Peki.
+
+762
+01:47:41,307 --> 01:47:43,307
+Dedik yok hocam, sohbete de yatan olmamışmış.
+
+763
+01:47:43,307 --> 01:48:07,307
+Tamam, sağ olasın. Şimdi biz bunları neden gördük? Dedik ki bundan önce bir denklemi çözüyorduk. Elimde en tane bilinmeyenli bir denklem varsa en tane de denklemim olması lazım. Yani en bilinmeyeni en tane denklemle çözüleceğim.
+
+764
+01:48:07,307 --> 01:48:19,227
+İşte burada olduğu gibi kaç tane bilinmeyenin var? X1, X2, Xn tane. Öyleyse benim elimde kaç tane matris olması gerekir? M tane.
+
+765
+01:48:19,227 --> 01:48:30,107
+Tabi burada M dedik ama buradaki M ve N birbirine eşit olması lazım ki bu kara matris olsun. Eğer değilse bu kara matris olmaz.
+
+766
+01:48:30,107 --> 01:48:52,168
+Bunların hepsi elimdeki birinci denklem, elimdeki ikinci denklem, elimdeki meyinci denklem. Bunlar değişkenlerin kas sayıları. İşte bu kas sayılardan oluşan matrisi kas sayılar matrisi diyoruz. Demin işlem yaptığımız A işte bu kas sayılar matrisi.
+
+767
+01:48:52,168 --> 01:49:00,388
+buradaki X bilinmeyenler matrisi benim X'im nelerden oluşuyor? X1, X2 ve X3'den oluşuyor.
+
+768
+01:49:01,447 --> 01:49:08,528
+C'de eşitliğin sağ tarafındaki kas sayılardan oluşan bir matris.
+
+769
+01:49:08,528 --> 01:49:17,807
+Artık benim elimde şöyle bir ifade var. Ben bu denklem takımlarını çözmeye çalışacağım.
+
+770
+01:49:17,807 --> 01:49:32,028
+Şimdi verilen denklem takımında bazen C vektörü 0 olabilir. C vektörünün 0 olması ne demek? Bu eşitliklerin her birinin 0'a eşit olması demek.
+
+771
+01:49:32,028 --> 01:49:51,848
+Eğer C vektörü 0 ise bu denklemlere homojen denklem takımı denir. Eğer C vektörü 0'dan farklıysa, 0'dan farklıysa bunlardan bir tanesi 0 olup bunlar 3-5 olabilir. Hepsi 0 ise homojen.
+
+772
+01:49:51,847 --> 01:50:04,687
+pardon, diğer şartlarda ise homojen olmayan denklem takımları diyoruz ve bu homojen olmayan denklem takımlarının çözümü de bizim dersimizin konusu.
+
+773
+01:50:05,527 --> 01:50:10,007
+Homojen olmayan denklem takımlarını da ikiye ayırarak çözüyoruz.
+
+774
+01:50:10,007 --> 01:50:13,247
+Dolaysız yöntemler ve dolaylı yöntemler.
+
+775
+01:50:13,248 --> 01:50:29,188
+Dolaylı yöntemler çok hızlı bir şekilde sonuca ulaşır. Hızlıdır, kolaydır, dolaysız yöntem ama iteratiftir.
+
+776
+01:50:29,187 --> 01:50:46,447
+yani bir önceki adımı bir sonraki adımda mutlaka kullanırsın. Dolaysız yöntemlerde, adı üstünde, dolaysız başlarsın diye sonuçlandırırsın. Birbirine bağlı işlemler yapmazsın. Bunlara da direkt yöntemler diyoruz.
+
+777
+01:50:46,447 --> 01:51:03,207
+biraz daha komplike yöntemlerdir ama bazı yöntemlerin içerisinde birbirlerini şey taklit eden demeyeyim de birbirlerinin benzerleri yani bir A yöntemi var.
+
+778
+01:51:03,388 --> 01:51:08,188
+A yöntemindeki bir modül B yönteminin içerisinde de yer alıyor.
+
+779
+01:51:08,188 --> 01:51:11,707
+Ben bunları ayrı ayrı yazar bir kenara koyarsam.
+
+780
+01:51:12,020 --> 01:51:18,739
+B yöntemini yazarken de o kütüphaneyi kullanabilirim. A yönteminde de o kütüphaneyi kullanabilirim.
+
+781
+01:51:18,739 --> 01:51:27,139
+Sadece sonuçlara giriş tarzımız birbirinden farklı olur ama en kolayı da bence dolaylı yöntemler.
+
+782
+01:51:27,139 --> 01:51:33,940
+Dolaysız yöntemlerde elle işlem yaptığımız vakit hata yaptığımız olasılığımız biraz daha yüksek olur.
+
+783
+01:51:33,940 --> 01:51:39,459
+Fakat her ikisinde de hesap makinesinde çok iyi kullanmamız gerekir.
+
+784
+01:51:39,459 --> 01:52:05,479
+Biz neleri göreceğiz? Bugün dolaylı yöntemlere biz geçemeyiz ama büyük bir ihtimalle öteki bölüm geçecektir. Hiç önemli değil. İskane yolumuza bakalım. Dolaysız yöntemlerde ise 3 tane yöntem göreceğim. Kremer yöntemi bunu hatırlarsınız, belki de hatırlamayacaksınız bilmiyorum. Çok kolay bir yöntemdir.
+
+785
+01:52:05,479 --> 01:52:29,520
+Sonra eliminasyon, Türkçesi yok etme, elimine etmek. Eliminasyon yönteminde iki tane alt yöntemimiz var. Gauss eliminasyon, bir de Gauss-Jordan. Bunlar aynı Gauss. Jordan gelip bu Gauss eliminasyonunda bir değişiklik yapıyor. Bir başka yöntem ortaya çıkıyor. Bir de Shaloski yöntemi var.
+
+786
+01:52:29,520 --> 01:52:36,479
+Bu da kompakt eliminasyon geçtiği için adı eliminasyon yöntemlerinin içinde veriyoruz.
+
+787
+01:52:37,299 --> 01:52:47,020
+Dolaylı yöntemlerde de yine Jacobi yöntemi, yine bu aynı Gauss olan bu Seidel'de ayrı biri, farklı bir yöntem.
+
+788
+01:52:47,460 --> 01:52:53,100
+Bu da Jacobi üzerinde ufak bir değişiklik yapılarak ortaya atılmış bir yöntem.
+
+789
+01:52:53,099 --> 01:53:06,999
+tam olarak sebebini bilmiyorum. Belki bunun için gerçekten bir matematikçi olmak gerekir ya da şöyle düşünelim bizim için de diyebilirler ki niye bu kadar çok programlama dili var?
+
+790
+01:53:07,299 --> 01:53:17,039
+Neden? Yani bir tanesiyle ben kod yazabiliyorsam neden onlarca var diye biri bize sorduğunda kemküm ederiz.
+
+791
+01:53:17,039 --> 01:53:24,919
+hepsiyle hello yazıyorsun ama birinde write hello, birinde printf hello, birinde bilmem ne, birinde şu bu.
+
+792
+01:53:24,919 --> 01:53:48,020
+Ama derim ki, yani nasıl diyeyim, daha user-friendly yazacaksam, daha böyle sansitik bir şey yazacaksam, daha kütüphaneleri olan bir şeye ihtiyacım varsa uygulamaya kullanacağım diller değişebilir.
+
+793
+01:53:48,020 --> 01:54:00,020
+günümüz koşullarında da değişmiştir. Burada da bir işi yapan bir yöntem varken niye bir başka matematikçi çıkıp bir başka yöntemi geliştirmiş diyebilirsiniz.
+
+794
+01:54:00,199 --> 01:54:11,760
+Onların da işleri bu. Matematikçi bir şeyi daha hızlı nasıl yapabilirim? Daha az işlem ve bu nasıl gerçekleşir? Bu böyle de olur mu diye kendilerine sorular sorup bu soruları çözüyorlar.
+
+795
+01:54:11,759 --> 01:54:22,359
+yani biz de çok farklı bir durumda değiliz. Şimdi kremar yöntemine geçmeden evvel ben yine bir 10 dakika ara vermek istiyorum.
+
+796
+01:54:22,539 --> 01:54:32,999
+Bu sefer unutmayacağım. 3'e 5 var. 3'e 5 geçe kurdu olalım. Bu yöntemlere kaldığımız yerden devam edelim.
+
+797
+01:54:32,999 --> 01:54:35,240
+Ali tamam mı? Kabul ediyor musun?
+
+798
+01:54:37,939 --> 01:54:38,679
+Tamamdır hocam.
+
+799
+01:54:39,339 --> 01:54:42,559
+Tamamdır. Bir şey yine kayboldu, buldum.
+
+800
+02:08:07,891 --> 02:08:19,011
+Merhaba arkadaşlar, geciktim. Bir master öğrencisi odaya girdi. Burada olunca da odaya giriliyor. Bir şeyler sordu, o yüzden. Özür dilerim.
+
+801
+02:08:21,011 --> 02:08:30,611
+Başlıyorum Ali. Tamamdır hocam. Tamam. Şimdi bu yöntem çok çok basit bir yöntem. Zaten göreceksiniz. Aslında konuşmayı bile değmez.
+
+802
+02:08:30,611 --> 02:08:54,391
+Sana diyor ki elinde diyor kat sayılarını aldın bir A matrisin değişkenlerin bir de C değerleri var. İşte bunu diyor kramer yöntemiyle çöz. Kramer yöntemini seçeceksen senin elindeki denklem sayın az olması lazım. Genelde 3-4 tane bilimleyenin ve 4-4 tane denklimin varsa kullanılır.
+
+803
+02:08:54,391 --> 02:09:22,432
+Onun dışında uzun sürebilir. İşte bu. Yaptığı tek şey şudur. Şuradaki C kas sayılarını alıyor. Eğer buradaki kas sayılar maddesindeki birinci kolonu yerine koyuyor ve bir bunun determinantını hesaplayıp orijinal A maddesinin determinantına oranlarsan X1 değerini bulursun diyor.
+
+804
+02:09:22,432 --> 02:09:45,292
+Şu X2 bilinmeyeni bulmak istiyorsan şu C'leri al, ikinci kolona koy, işte koydu. Bunun determinantı bölü orijinal A madrisinin determinantı. C'leri al, üçüncü kolona koy, bunun determinantı bölü orijinal madrisinin determinantı X3.
+
+805
+02:09:45,292 --> 02:09:59,351
+aslında insanın inaması gelmiyor. Nasıl oluyor da böyle bulunuyor? İşte bunu matematikçiler ispatlarla bunun böyle olabileceğini söylüyor. Biz aha bu çok kolay bir yöntem diyoruz.
+
+806
+02:09:59,351 --> 02:10:27,112
+çünkü benim için çok kolay bir tane determinant alınan fonksiyon yazıyorum bir bu matrisi gömdiriyorum bir bu matrisi hadi bunu buna böl diyorum yani bunun sonucunu bunun sonucuna böl diyorum benim için kodu çok kolay ama adamların bunun bu şekilde olduğunu kendilerine ispatlaması gerekiyor ispatlıyor kimin hakkına gelir bunu aldım da buraya koydum bunu bunu oranladım
+
+807
+02:10:27,112 --> 02:10:38,291
+x1 değerini elde ettim demek. Bunun arkası matematik. Ama önü kodlama yazarsam sadece bir determinant almaya bakıyor.
+
+808
+02:10:39,212 --> 02:10:46,612
+İki tane matris gönderiyorum. Tıt tıt. Hesapla determinantlarını böl ve al bilinmeyenlerini.
+
+809
+02:10:46,612 --> 02:10:53,552
+Hemen bir örnek yapalım. Elinizde bunlar verilmiş. Arka sayılar matrisini aldım.
+
+810
+02:10:53,552 --> 02:11:02,292
+2-3-2, 3-2-1, bilinmeyenlerim x1, x2, x3, c kat sayılarım da bu.
+
+811
+02:11:03,031 --> 02:11:05,652
+Böldüğüm a'nın determinantını alacağım.
+
+812
+02:11:05,792 --> 02:11:06,832
+Bunu nasıl alıyordum?
+
+813
+02:11:07,492 --> 02:11:10,852
+2 çarpı, satır ve sütümü siliyorum.
+
+814
+02:11:11,652 --> 02:11:22,132
+Bunların determinantı, bununla bunu çarptım, eksi 1, eksi 2 ile eksi 2'yi çarptım, artı 4, arada eksi var.
+
+815
+02:11:22,131 --> 02:11:28,651
+sonra bunun işareti artı, bunun işareti eksi, bunun işareti artı diye gidiyordu.
+
+816
+02:11:29,191 --> 02:11:31,451
+Eksi, eksi 3 artı oldu.
+
+817
+02:11:31,991 --> 02:11:33,631
+Bunun satır ve sütunu gitti.
+
+818
+02:11:34,191 --> 02:11:38,131
+1 çarpı eksi 1, eksi 3 çarpı eksi 2.
+
+819
+02:11:38,711 --> 02:11:40,571
+Aynı şey 2 için yaptık.
+
+820
+02:11:40,651 --> 02:11:41,631
+Eksi 5 çıktı.
+
+821
+02:11:42,231 --> 02:11:46,771
+Bundan sonra yapacağım şey bunu alıp birinci kolona koymak.
+
+822
+02:11:46,771 --> 02:11:53,631
+bunun determinantını hesaplayıp eksi 5'e bölmek x1'e 1 diyorum.
+
+823
+02:11:54,491 --> 02:12:02,371
+Sonra bunu alıp ikinciye koymak, bunun determinantını hesaplamak, anınkine bölmek x2'yi buldum.
+
+824
+02:12:02,836 --> 02:12:25,836
+Sonra bunu aldım, üçüncü kolona koydum. Bunun determinantı bölü, eksi beş, x üçü buldum. Tek yapacağım şey determinant hesaplayan bir tane fonksiyon yazmak. Başka hiçbir şey yok. Yani elementer hale getirmek, şu matrisi şuna çevirmek falan filan yok gördüğünüz gibi.
+
+825
+02:12:25,836 --> 02:12:40,255
+Şimdi dolarsız yöntemlerden devam ediyoruz. En zor, el oyalayan, yorucu yöntemlerdendir bu eliminasyon yöntemleri.
+
+826
+02:12:40,255 --> 02:12:47,475
+Linear denklem sistemlerini çözer. Her linear denklem sistemini çözer mi?
+
+827
+02:12:48,075 --> 02:12:55,455
+Denklem sayısı ve bilinmeyen sayısının birbirine eşit olması lazım. Yani kare matris olması lazım.
+
+828
+02:12:55,836 --> 02:13:22,236
+bu yöntemleri kullanabilmem için. Denklem sistemi genişletilmiş kas sayılar matrisi şeklinde çalışır. Genişletilmiş kas sayılar matrisi neydi? A kas sayılar matrisiyle en sondaki C matrisini yan yana olarak işlem yaptığımda genişletilmiş matris diyorduk buna. Elementer satır işlemlerini uyguluyorduk. Bunlar neydi?
+
+829
+02:13:22,236 --> 02:13:34,395
+işte bir satırı bir kas sayıyla çarpmak başka satıra eklemek, iki farklı satırı toplayıp başka satıra çarpmak başka satıra bu tip şeyler yapabiliyorduk.
+
+830
+02:13:34,395 --> 02:13:41,975
+ve burada en önemlisi akas sayılar matrisini üst üçgen matris haline getireceğiz.
+
+831
+02:13:41,975 --> 02:13:45,295
+Üst üçgen matris neydi hatırlayalım.
+
+832
+02:13:45,795 --> 02:13:52,635
+Diagonal ve üstü sayılardan aşağısı ise sıfırlardan oluşan matristi.
+
+833
+02:13:53,095 --> 02:14:02,255
+Demek ki ben bu akas sayılar matrisini öyle elementer işlemler yapacağım ki üst üçgen matris haline getireceğim.
+
+834
+02:14:02,255 --> 02:14:19,115
+bu elementer işlemleri de aynı zamanda C matrisine de uygulayacağım ve bunun sonucunda işlemin son adımlarına geldiğinde benim değişkenlerim neyse pat pat pat o değişkenleri de çözmüş olacağız.
+
+835
+02:14:19,115 --> 02:14:26,895
+Peki neden üst üçgen matris haline getirilir? Şu yüzden getirilir.
+
+836
+02:14:26,895 --> 02:14:34,636
+Gauss yok etme eliminasyon yönteminde ben matrislerimi şu şekilde yazıyorum.
+
+837
+02:14:35,155 --> 02:14:39,475
+Birden n'e kadar, i satır, j'de kolon.
+
+838
+02:14:39,935 --> 02:14:41,595
+N tane kolonum var.
+
+839
+02:14:42,155 --> 02:14:45,435
+i satırda satırlarımda birden n'e kadar.
+
+840
+02:14:45,975 --> 02:14:48,375
+Yani aslında benim iki döngüm var yine.
+
+841
+02:14:48,515 --> 02:14:52,755
+Dıştaki döngüm satırlar, içteki döngüm de kolonlar.
+
+842
+02:14:52,755 --> 02:14:59,375
+matrisin kendi bilinmeyenleri ve kaç sayısına hesaplanıyor.
+
+843
+02:14:59,375 --> 02:15:04,755
+Bu Gauss-Jok etme yöntemi diyor ki bunu üst üçgen matris haline getir.
+
+844
+02:15:05,315 --> 02:15:06,496
+Şimdi şöyle yapalım.
+
+845
+02:15:07,735 --> 02:15:09,155
+i'yi 1 alalım.
+
+846
+02:15:09,475 --> 02:15:11,716
+i'yi 1 iken j 1 oldu.
+
+847
+02:15:12,336 --> 02:15:13,315
+a 1, 1.
+
+848
+02:15:14,755 --> 02:15:16,375
+Sonra x 1.
+
+849
+02:15:17,015 --> 02:15:18,115
+j 2 oldu.
+
+850
+02:15:18,755 --> 02:15:19,975
+a 1, 2.
+
+851
+02:15:20,627 --> 02:15:38,827
+J2, A13, J3, dıt dıt diye gitti. Sonra bu iki oldu, burası yok artık. A, J2 olunca burası yine birden başladı. İki, pardon burası dıştaki iki oldu, burası birden başladı.
+
+852
+02:15:38,827 --> 02:15:58,887
+2-2, 2-3, dın dın dın dın dın. Ben elimdeki matris ne hale geldi? Diagonal ve diagonalin üstü bir takım sayılarla altıda sıfır olarak kaldı. Ben işte elimdeki kas sayılar matrisini bu hale getireceğim.
+
+853
+02:15:58,887 --> 02:16:16,808
+Diyelim ki benim elimde bir a kas sayılar matrisi var. Bunu üst üçgen haline getirdim. Bu ne oldu? Bir üst üçgen matris. Diagonal ve üstü sayı. Bilinmeyenlerim ne? X, Y, Z. 3 denklemin var. 3 bilinmeyenim. Bunlar da C var.
+
+854
+02:16:17,567 --> 02:16:27,947
+Çözüyorum. 0 çarpı X artı 0 çarpı Y artı 1 çarpı Z eşittir 2. Burası bana Z'in 2 olduğunu verdi.
+
+855
+02:16:28,888 --> 02:16:40,888
+Şimdi yukarıya gittik. 0 çarpı x, 1 çarpı y, 1 çarpı y, artı, eksi 2 çarpı z, z'i 2 bulmuştu.
+
+856
+02:16:41,407 --> 02:16:47,047
+Eksi 4 yani. Eşittir 8. Buradan y'yi buldum.
+
+857
+02:16:47,047 --> 02:16:58,988
+buraya çıktım. 2 çarpı x, eksi 3 çarpı y, 2 çarpı z eşittir 5, buradan da x'i buldum.
+
+858
+02:16:59,348 --> 02:17:04,947
+Sondan yukarıya doğru çıkarak bütün değişkenlerinin değerlerini bulmuş oldum.
+
+859
+02:17:04,947 --> 02:17:15,327
+Şimdi bunu bir örnekle çözelim. Böyle bir sayı, denklem takımı verildi. 3 tane bilim yeri var.
+
+860
+02:17:15,327 --> 02:17:43,027
+dın dın dın dın. 3 tane de denkelim var. A kas sayılar matrisi şurası oldu. Kas sayıları aldım. Burada değişkenleri x, y, z diye yazmadım. Gerek yok. Zaten biliyorum. Hiç kalabalık yapmasın. Bunlar da C matrisi. Şimdi ben bunlara bir elementer işlem uygulayacağım. Uygularken buranın üst üçgen matrisi olmasını sağlayacağım.
+
+861
+02:17:43,027 --> 02:17:47,287
+buraya yaptığım işlemleri c maddesine de uygulayacağım.
+
+862
+02:17:47,927 --> 02:17:53,087
+Yaparken şunun, şunun, şunun kesin sıfır olması gerekiyor.
+
+863
+02:17:53,527 --> 02:17:54,887
+Diagonerin altını.
+
+864
+02:17:55,507 --> 02:17:59,147
+Üsttekiler de tabii işlem sırasında sayılar değişecek.
+
+865
+02:18:00,147 --> 02:18:03,487
+Nasıl elementler dönüşüm uygulayabilirim?
+
+866
+02:18:03,487 --> 02:18:11,667
+Şimdi burada da farklı kaynaklara baksanız farklı yöntemler, elementer işlemler görebilirsiniz.
+
+867
+02:18:11,667 --> 02:18:19,087
+ama burada da bu yöntemin adı eliminasyon yöntemi, Gauss yönteminde uygulanan şey şu.
+
+868
+02:18:19,767 --> 02:18:22,307
+Birinci satırı diyor A1-1'e böl.
+
+869
+02:18:22,907 --> 02:18:27,628
+Gidiyorum buradaki birinci satırı 3.6'ya bölüyorum.
+
+870
+02:18:28,267 --> 02:18:34,587
+3.6'ya böldüm 1, 3.6'ya böldüm, 3.6'ya, 3.6'ya böldüm.
+
+871
+02:18:35,667 --> 02:18:38,047
+Şimdi ikinci bir işlem yapacağım.
+
+872
+02:18:38,047 --> 02:18:56,508
+diyor ki ikinci satırı A2 1'e böl. Yani ikinci satırı olduğu gibi 4.2'ye böl. Burası 1 olur. İkinci satırdan birinci satırı çıkar, 0 olur.
+
+873
+02:18:56,507 --> 02:19:04,387
+ve bu çıkan sonucu da ikinci satırı da A2-1 ile çarp.
+
+874
+02:19:04,447 --> 02:19:06,407
+Bu A2-1 artık sıfır olacak.
+
+875
+02:19:06,727 --> 02:19:08,667
+Bu da ikinci satırla çarp.
+
+876
+02:19:08,667 --> 02:19:11,867
+Bana diyebilirsiniz ki bu işlemi niye yapıyorum?
+
+877
+02:19:12,467 --> 02:19:15,387
+Zaten ikinci satırı alsam 4.2.
+
+878
+02:19:16,167 --> 02:19:18,527
+A2-1'e bölsem 1.
+
+879
+02:19:19,283 --> 02:19:23,983
+Birden oturup birinci satırı çıkarsam sıfır.
+
+880
+02:19:24,483 --> 02:19:28,343
+Bunu da gidip ikinci satıra yazsam sıfır olur.
+
+881
+02:19:28,803 --> 02:19:30,983
+Burayı zaten sıfırlamış olurum.
+
+882
+02:19:31,723 --> 02:19:35,003
+Fakat niye burada çarpma işlemi yapıyorum?
+
+883
+02:19:35,244 --> 02:19:37,863
+Adam böyle yapmış, bunu kullanmış.
+
+884
+02:19:38,063 --> 02:19:39,823
+Sen farklı bir şey kullan.
+
+885
+02:19:40,283 --> 02:19:41,643
+Bunları sorgulamayalım.
+
+886
+02:19:41,843 --> 02:19:46,503
+Yeter ki doğru işlemleri yap ama farklı bir iterasyon kullan.
+
+887
+02:19:46,503 --> 02:19:48,683
+Yine şurada unutmayalım.
+
+888
+02:19:49,283 --> 02:19:52,804
+Yine tekrar eden bir pattern göreceğiz.
+
+889
+02:19:53,883 --> 02:19:54,903
+Şunları bir sileyim.
+
+890
+02:19:56,043 --> 02:19:57,324
+Çekilir misin lütfen?
+
+891
+02:19:58,723 --> 02:20:00,103
+Şunları siliyorum.
+
+892
+02:20:02,464 --> 02:20:03,423
+Yaptım.
+
+893
+02:20:03,723 --> 02:20:04,923
+Burası sıfırlandı.
+
+894
+02:20:05,063 --> 02:20:06,663
+Şimdi birlikte söyleyelim.
+
+895
+02:20:07,324 --> 02:20:09,723
+Benim amacım şimdi burayı sıfırlamak.
+
+896
+02:20:10,004 --> 02:20:10,603
+Ne yaparım?
+
+897
+02:20:11,464 --> 02:20:12,983
+Burası ikinci satırdı.
+
+898
+02:20:13,263 --> 02:20:14,644
+Üçüncü satırı al.
+
+899
+02:20:16,044 --> 02:20:17,203
+İki bire böldü.
+
+900
+02:20:17,684 --> 02:20:18,703
+Üç bire böl.
+
+901
+02:20:19,283 --> 02:20:31,544
+Bulduğun bu sayı burası 1 olacağı için birinci satırdan çıkar ve üçüncü satırı A31 ile çarp.
+
+902
+02:20:32,144 --> 02:20:35,023
+Sadece şuradaki indisleri değiştirdim.
+
+903
+02:20:35,144 --> 02:20:42,603
+Şurası 3-1, burası üçüncü satır, burası üçüncü satır, burası birinci satır olacak.
+
+904
+02:20:44,004 --> 02:20:45,523
+Yazdığım şeyler hep aynı.
+
+905
+02:20:45,923 --> 02:20:46,824
+Bakım değişiyor.
+
+906
+02:20:46,824 --> 02:20:47,824
+Bunları yaptım.
+
+907
+02:20:48,764 --> 02:20:49,864
+Elimde bu kaldı.
+
+908
+02:20:50,603 --> 02:20:51,663
+Bakın burası gitti.
+
+909
+02:20:52,404 --> 02:20:53,724
+Şimdi sırada ne var?
+
+910
+02:20:54,304 --> 02:20:57,004
+Şurayı üst üçgen matris haline getireceğim.
+
+911
+02:20:57,464 --> 02:20:58,843
+Yine aynı şeyi diyeceğim.
+
+912
+02:20:58,983 --> 02:21:02,944
+Diyeceğim ki ikinci satırı A22'ye böl.
+
+913
+02:21:02,944 --> 02:21:05,004
+İkinci satıra gittim.
+
+914
+02:21:05,184 --> 02:21:06,724
+A22'ye böldüm.
+
+915
+02:21:08,063 --> 02:21:11,144
+Şimdi ne yapmamız gerekiyor?
+
+916
+02:21:11,603 --> 02:21:13,304
+Burayı sıfırlamam gerekir.
+
+917
+02:21:13,603 --> 02:21:15,464
+Burayı nasıl sıfırlıyordumdu?
+
+918
+02:21:15,883 --> 02:21:16,743
+Kuralım neydi?
+
+919
+02:21:17,243 --> 02:21:18,544
+Üçüncü satırı al.
+
+920
+02:21:19,324 --> 02:21:20,243
+3-2'ye böl.
+
+921
+02:21:20,523 --> 02:21:21,324
+Burası 1.
+
+922
+02:21:22,743 --> 02:21:23,383
+Tamam mı?
+
+923
+02:21:23,783 --> 02:21:26,824
+Sonra üçüncü satırdan ikinci satırı çıkar.
+
+924
+02:21:27,343 --> 02:21:28,164
+Burası da 1.
+
+925
+02:21:28,423 --> 02:21:29,823
+Birden 1'i çıkardım.
+
+926
+02:21:29,923 --> 02:21:30,203
+0.
+
+927
+02:21:30,983 --> 02:21:34,123
+Ve üçüncü satırı A3-2 ile çarp.
+
+928
+02:21:34,123 --> 02:21:35,743
+Burası 0 olmuştu.
+
+929
+02:21:35,804 --> 02:21:37,043
+3-2 ile çarptım.
+
+930
+02:21:37,323 --> 02:21:38,343
+Yine 0 oldu.
+
+931
+02:21:39,144 --> 02:21:40,183
+Elde ettim bu.
+
+932
+02:21:40,864 --> 02:21:42,724
+Bundan sonraki adım nedir?
+
+933
+02:21:43,123 --> 02:21:44,203
+A3-3'e böl.
+
+934
+02:21:44,864 --> 02:21:46,403
+A3-3'e böldüm bu.
+
+935
+02:21:47,623 --> 02:21:52,423
+Artık elimde bir üst üçgen matriz.
+
+936
+02:21:53,143 --> 02:21:56,523
+Bu C matrizinin almış olduğu son durum.
+
+937
+02:21:57,343 --> 02:21:58,783
+Hep aynı şeyler.
+
+938
+02:21:59,323 --> 02:22:01,083
+Üçüncü satırı A3-3'e böl.
+
+939
+02:22:01,383 --> 02:22:03,383
+İkinci satırı A2-2'ye böl.
+
+940
+02:22:03,743 --> 02:22:07,303
+Bir ön slide ile birinci satırı A1-1'e böldü.
+
+941
+02:22:08,723 --> 02:22:14,483
+Buralarda ne yapıyorsam üstlerde bakın bunlar üçüncü satır 3-2'ye böl.
+
+942
+02:22:14,483 --> 02:22:21,203
+Burada bakıyorsunuz ikinci satırı 3-2'ye böl.
+
+943
+02:22:21,523 --> 02:22:26,623
+Bakıyorsun bir öncekinde de birinci satırı 1-3'e böl.
+
+944
+02:22:28,023 --> 02:22:29,403
+Pardon ne yaptım ben?
+
+945
+02:22:29,563 --> 02:22:31,383
+İkinci satırı 2-1'e böl.
+
+946
+02:22:32,023 --> 02:22:33,843
+Aynı şeyleri tekrar ediyorum.
+
+947
+02:22:34,364 --> 02:22:36,224
+Sadece indislerim değişiyor.
+
+948
+02:22:36,823 --> 02:22:38,224
+En son bu kaldı.
+
+949
+02:22:39,123 --> 02:22:42,664
+Değişkenlerim, pardon yine kalemi alalım.
+
+950
+02:22:42,663 --> 02:23:07,383
+Oh my god. Kalemi alalım. Değişkenlerimi x, y, z yazdım. Artık biliyorum 0 çarpı x, 0 çarpı y, 1 çarpı z eşittir 2.81. Bu 2.81'dir. 0 çarpı x, 1 çarpı y, 0.489 çarpı z bulduğum bu sayı eşittir x'i 0.17.
+
+951
+02:23:07,383 --> 02:23:09,103
+x'i de buldum.
+
+952
+02:23:09,403 --> 02:23:10,363
+y'i de buldum.
+
+953
+02:23:10,803 --> 02:23:11,823
+Şimdi geldik buraya.
+
+954
+02:23:11,963 --> 02:23:16,863
+1 çarpı x 0667 çarpı y yani şu.
+
+955
+02:23:17,343 --> 02:23:36,343
+Artı x'ı 0.5 çarpı z yani bu eşittir 1.75 Buradan da x'ı çektim bu. Benim yapmış olduğum bu işlem de budur. Şimdi bunu yapalım mesela x3'ü bulalım. Bakın ne oluyor? x3'ü buluyorum.
+
+956
+02:23:36,343 --> 02:23:49,424
+1 bölü A33, 1 bölü A33'üne 1 bölü C3, C3'üne 2.81
+
+957
+02:23:49,424 --> 02:23:51,384
+2.81
+
+958
+02:23:51,384 --> 02:23:57,963
+X3 dedik ama bu aslında X3 nedir? Z'ye karşılık geliyor.
+
+959
+02:23:59,024 --> 02:24:00,463
+Sonra bunun içine bakalım.
+
+960
+02:24:00,463 --> 02:24:11,063
+İ3'tü. 3, 1 daha 4. 4'ten 3'e kadar bunun içine girmeyecek demektir. Gitti. Z nedir? 2.80
+
+961
+02:24:15,092 --> 02:24:22,092
+Bir dakika, niye x81 oldu? Nereye hatalı yaptım ben?
+
+962
+02:24:23,252 --> 02:24:38,691
+Yanlış yazmışım. Z, 2.81 olacak. Burası bu, sıfır değil. Bir önceki 2.81 miydir? Bakayım, orijinalim benim nedir?
+
+963
+02:24:40,275 --> 02:25:03,876
+değiştirdim her şeyi ben. Tabi onların hepsi değişti. Şurada hata var arkadaşlar. Burası 2,81 sezi, burası 0,281 değil, şurası 2,81. Tamam mı? Burası 2,81. Bakın çıktı. Şimdi y'yi hesaplayalım, yani x2'yi hesaplayalım.
+
+964
+02:25:03,876 --> 02:25:32,275
+x2 ne olacak? Yukarısı bana diyor. Bakalım x2'nin ne olduğuna. 1 bölü a22. a22 ne? 1. 1 bölü 1. Açtık parantez. c2. c2 ne? Eksi 0,017. Eksi. Eksi. Bir büyük parantez açalım. Şunun içini yapacağız.
+
+965
+02:25:32,275 --> 02:25:57,975
+J'yi 2 aldım. 2 artı 1 daha 3. 3'ten 3'e kadar. Yani sadece J 3 3'ü ne olacak? A 2 3. A'nın 2 3'ü ne? Eksi 0, 489. Çarpı J 2, X 2 de nedir? Y. Çarpı Y.
+
+966
+02:25:57,975 --> 02:26:23,636
+buradan da bunları eşitledim. Bir şeyi yine hatalı yaptım. 0-17'yi aldım. 0-17'yi aldım. Z, bir saniye, bir saniye. Şu Y'yi hesaplıyorum. Şunları iyi yapmam çok kötü oldu. X2 dedim.
+
+967
+02:26:23,636 --> 02:26:27,095
+A22'yi aldım.
+
+968
+02:26:27,775 --> 02:26:29,136
+Sonra buraya geldim.
+
+969
+02:26:29,595 --> 02:26:30,716
+C2'yi aldım.
+
+970
+02:26:30,835 --> 02:26:31,536
+C2 nedir?
+
+971
+02:26:31,616 --> 02:26:33,216
+Eksi 0.17.
+
+972
+02:26:34,036 --> 02:26:34,835
+Eksi dedim.
+
+973
+02:26:35,496 --> 02:26:37,335
+2'yi yapıyorsam 3.
+
+974
+02:26:37,835 --> 02:26:40,375
+J3'ten 3'e kadar gidecek.
+
+975
+02:26:40,816 --> 02:26:41,375
+A2.
+
+976
+02:26:41,656 --> 02:26:43,195
+A23'ü alacağım.
+
+977
+02:26:43,436 --> 02:26:44,595
+A23 nedir?
+
+978
+02:26:44,595 --> 02:26:46,856
+0.289.
+
+979
+02:26:47,275 --> 02:26:49,475
+Çarpı X3.
+
+980
+02:26:49,895 --> 02:26:51,816
+X3 dediğim şey de Z.
+
+981
+02:26:51,815 --> 02:26:56,995
+bu yukarıda bulmuş olduğum z'nin sonucunu da çarpı olarak buraya yazacağım.
+
+982
+02:26:57,595 --> 02:27:00,335
+Benim burada hesapladığım şey ne olacak?
+
+983
+02:27:00,635 --> 02:27:02,915
+Çıkan şey y değerini verecek.
+
+984
+02:27:03,495 --> 02:27:09,395
+Aynı şeyi yukarıya çıkıp z için gerçekleştireceğim.
+
+985
+02:27:10,575 --> 02:27:11,135
+Ders değil.
+
+986
+02:27:11,975 --> 02:27:14,435
+Z için gerçekleştireceğim.
+
+987
+02:27:15,175 --> 02:27:21,675
+Yani ister bunu bu formülü kullanarak yapalım ki bu formül zaten burada yaptığımı yapıyor.
+
+988
+02:27:21,815 --> 02:27:51,555
+ama böylesi çok temiz. Z bu. Sonra git Z'yi şununla çarp. Y eşittir burası de. Y'yi bul. Sonra git bunu Y ile çarp. Bunu Z ile çarp. X'i de 1 ile çarp. 1.75'i ekle. X'i bul. Sonuçta X, Y, Z'i bulmuş oluruz. Şunu unutmayayım da değiştireyim ama zaten bunu dinlerseniz hatalı olduğunu da bul dinlemeden.
+
+989
+02:27:51,815 --> 02:28:15,535
+görürsünüz. Burada bir sorununuz var mı? Yeniden söylüyorum. Burada şunu üst üçgen matrise geçirirken yaptığım elementer işlemler kitaplarda farklı farklı olabilir. Sen bile farklı bir şekilde toplama, çıkarma, çarpma işlemlerin neler olduğunu söyledik. Üst üçgen matrise getirebilirsin.
+
+990
+02:28:15,535 --> 02:28:24,195
+Ama burada gösterdiğim çok bariz ve patron olduğu için algoritmasını yazmak çok kolay
+
+991
+02:28:24,195 --> 02:28:32,475
+Birinci satırı bakın A11'e böl, ikinci satırı A22'ye böl, üçüncü satırı A33'e böl
+
+992
+02:28:32,475 --> 02:28:34,195
+Sonra geldik
+
+993
+02:28:34,579 --> 02:28:35,579
+Tekrar eden pattern. İkinci satırı A2-1'e böl, ikinci satırdan birinci satırı çıkar. Bir sonraki ne oluyor? Üçüncü satırı A3'e böl, üçüncü satırı birinci satırdan çıkar. İkinci satırı A2-1'le çarp, üçüncü satırı A3-1'le çarp. Sadece iç döngüdeki değişken neyse, dönem değişken nasıl dönüyorsa buraya onlar geliyor. O yüzden bu eliminasyon
+
+994
+02:29:04,579 --> 02:29:09,620
+neydi bunların adı?
+
+995
+02:29:12,260 --> 02:29:15,719
+Temel işlemler demişti, İngilizcesi de aklımdan gitti.
+
+996
+02:29:16,179 --> 02:29:20,160
+Temel işlem adımlarıyla rahatlıkla yapabiliriz.
+
+997
+02:29:24,800 --> 02:29:28,519
+Daha sonra bir yöntem daha verelim.
+
+998
+02:29:29,779 --> 02:29:31,219
+Gauss-Jordan yöntemi.
+
+999
+02:29:31,219 --> 02:29:59,980
+bu Jordan denilen şahıs gidiyor Gauss'a. Ya diyorsan ondan önce diyor bir çalışma yapmıştın diyor. Aynen çalışma bu. A kas sayılar matrisini bir üst üçgen matris haline getirmiştin. X, Y, Z'ler senin bilinmeyenlerin de C'lerin de burada değişmişti. Ve sondan başlayarak çözmüştük. Hani şu yöntemle çözmüştük.
+
+1000
+02:29:59,980 --> 02:30:13,060
+gelip diyor ki bu Jordan ya diyor ben diyor bundan sonra farklı bir şey de yaptım bunun üzerinde bir çalışalım başka bir yöntem ortaya çıksın diyor.
+
+1001
+02:30:13,060 --> 02:30:25,960
+Tabii bunları ben böyle diyorum aralarında böyle konuşma geçti mi bilmiyorum. Önerin nedir diyor. Diyor ki bu elde etmiş olduğum üst üçgen matrisi diyor birim matris haline getir diyor.
+
+1002
+02:30:25,959 --> 02:30:31,959
+Bunları birim matris haline getirirken yaptığım işlemleri buraya da uyguluyorum.
+
+1003
+02:30:31,959 --> 02:30:43,660
+Bunun hepsi birim matris. Burası x, y, z. Burada da sayısal değerler olduğunda hop x'in değeri budur, y'nin değeri budur, z'nin değeri budur diyor.
+
+1004
+02:30:44,020 --> 02:30:52,460
+Şimdi ben yapılmış olan en son adımı gösterim. Sonra bunları göreceğim, göstereceğim. Ne kadar uzatmışım.
+
+1005
+02:30:52,459 --> 02:31:12,839
+üst üçgen matris halini birim matris haline getiriyor. Aynı işlemleri buraya da yapıyor. Olay bitti. Z'nin değeri 0,281, Y'nin değeri 0,12, X'in değeri de 1,81. Bu kadar.
+
+1006
+02:31:12,839 --> 02:31:20,559
+Ha tabii şimdi ne olacak? Elimdeki üst üçgen matrisi ben nasıl birim matris haline getiriyorum?
+
+1007
+02:31:21,359 --> 02:31:28,839
+Unutmayın bundan önceki şeyde bir matrisin inversini alırken ne yapıyorduk?
+
+1008
+02:31:29,499 --> 02:31:33,839
+A matrisini birim matris haline getirmiştik hatırlarsınız.
+
+1009
+02:31:33,839 --> 02:31:46,459
+E orada kullandığım yöntemi al burada kullan. Ben bir matrisi birim matris haline getirmenin eğer fonksiyonuna yazmışsam burada onu hemen o fonksiyonuna sokarım.
+
+1010
+02:31:46,839 --> 02:31:52,619
+Dırt diye burayı birim matris haline getiririm. Ondan sonra işlemim biter.
+
+1011
+02:31:52,979 --> 02:32:01,499
+Burada nasıl bir yol izlemiş? Diyor ki bunu birim matris haline getirmek için sondan başlamış.
+
+1012
+02:32:01,499 --> 02:32:06,399
+önce alfa 2-3'ü bu bir üst üçgen matris haline getirildi.
+
+1013
+02:32:06,839 --> 02:32:09,039
+Bunu diyor sıfırlamam gerekir diyor.
+
+1014
+02:32:09,639 --> 02:32:15,699
+Bunu sıfırlamak için diyor alfa 2-3'ü A3-3 ile çarp diyor.
+
+1015
+02:32:15,699 --> 02:32:21,779
+Şimdi alfa 2-3'ü A3-3 ile çarparsam bunun sonucu yine alfa 2-3 olacak.
+
+1016
+02:32:22,619 --> 02:32:25,579
+Ve alfa 2-3 kendisinden de çıkar diyor.
+
+1017
+02:32:25,759 --> 02:32:29,059
+Kendisinden de çıkarırsam burası sıfır olur.
+
+1018
+02:32:29,556 --> 02:32:58,675
+otomatikman burayı sıfırladı. A33'ü aldı, 1, alfa23 ile çarptı yine kendisi ve kendisinden çıkardı, burası 0. Aynı şeyi C matrisi tarafına da uyguladı. Tabi buraları da üst üçgen matris haline gelirken değişmişti. Alfa23'ü alıyor, buradaki beta3 ile çarpıyor ve beta2'den çıkarıyor. Aynı şeyi yapıyor.
+
+1019
+02:32:58,675 --> 02:33:09,395
+alfa 2, 3'ü aldı. A 3, 3 ile çarpmıştı. Burada da Beto 3 ile çarptı. Buradaki satırdan çıkardı. O da buradaki değerden çıkardı.
+
+1020
+02:33:10,435 --> 02:33:21,615
+Buraya da gama 2 koydu. Öyle uzun uzun kalmasın diye. Yani şöyle kalmasın diye. Bunun tamamına da gama 2 diye bir değişken atadı.
+
+1021
+02:33:21,615 --> 02:33:47,795
+Şimdi sırada ne kaldı? Şunları sıfır yapmak. Bunları sıfır yaparken de önce dedi şuraya sıfır yapayım. Burayı nasıl sıfır yaptı? Alfa 1 3'ü al dedi. Buradaki sayıyı al dedi alfa 1 3'ü. A 3 3 ile çarp dedi. Alfa 1 3'ün kendisi oldu. Ve yine kendisinden çıkardı. Aynı işlemi yaptık. Burası sıfır.
+
+1022
+02:33:47,795 --> 02:34:02,815
+Aynı şeyi buraya uyguladı. A33'ü aldı, alfa13'ü aldı. A33 dediği buranın beta 3'ü bunu aldı. Bu satırdaki ne buradaki de beta 1, beta 1'den çıkardı.
+
+1023
+02:34:03,675 --> 02:34:12,455
+Buna da kısaltma olarak gitti, beta 1 yıldız adını verdi. Tek bir işlem kaldı, artık buranın sıfırlanması.
+
+1024
+02:34:12,455 --> 02:34:16,695
+Burayı nasıl sıfırladı? Artık çok iyi biliyorum.
+
+1025
+02:34:16,695 --> 02:34:18,415
+Alfa 1-2'yi alacağım.
+
+1026
+02:34:19,275 --> 02:34:21,195
+A-2-2 ile çarpacağım.
+
+1027
+02:34:21,775 --> 02:34:23,415
+Kendisinden çıkaracağım.
+
+1028
+02:34:24,135 --> 02:34:25,955
+Aynı işlemi burada yapacağım.
+
+1029
+02:34:26,535 --> 02:34:28,295
+Alfa 2-2'yi alacağım.
+
+1030
+02:34:30,715 --> 02:34:33,575
+Şeyle, Gama 2 ile çarpacağım.
+
+1031
+02:34:34,395 --> 02:34:37,435
+Beta 1'den, Beta 1 yıldızdan çıkaracağım.
+
+1032
+02:34:37,915 --> 02:34:39,776
+Buna da Gama 1 dedi.
+
+1033
+02:34:40,895 --> 02:34:42,255
+Hop, bu hale geldi.
+
+1034
+02:34:42,255 --> 02:34:50,356
+Artık sen rahatlıkla x buradaki sayıya, y buna, z de buna eşittir derseniz
+
+1035
+02:34:50,356 --> 02:35:00,936
+Gauss eliminasyonla Gauss-Jordan arasındaki yöntem her ikisi de önce kas sayılar matrisini bir üst üçgen matris haline getiriyor
+
+1036
+02:35:00,936 --> 02:35:05,755
+Gauss-Seidel yöntemi sondan başlayarak çözüyor
+
+1037
+02:35:05,755 --> 02:35:18,655
+Gauss-Jordan yöntemi de üst üçgen matrisini birim matrisi haline getirip her satırı kendi değişkenindeki değere atıyor. Başka da bir şey yok.
+
+1038
+02:35:20,235 --> 02:35:30,276
+Son olarak, bu ne? Bir başka örnek koymuşum. Bu örneği de siz çözebilirsiniz. Önemli değil.
+
+1039
+02:35:30,276 --> 02:35:37,475
+Dolaysız yöntemler. Bu Scholowski yöntemi biraz uzun olduğu için bunu haftaya bırakıyorum.
+
+1040
+02:35:37,475 --> 02:35:52,835
+Ve haftaya sonra dolaylı yöntemler var. İki tane onları göreceğiz. Ondan sonra sıra sayısal integralde herhalde integrale geçeceğiz.
+
+1041
+02:35:52,835 --> 02:36:14,475
+Bu bizim kaçıncı haftamız? Dördüncü haftamız. Beşinci haftanın integralin hepsi bitmeyebilir. Altıncı hafta integral biter, trev biter. Yedinci haftada artık sırada ne var? Fark tabloları falan var. Onlara geçilir.
+
+1042
+02:36:15,507 --> 02:36:16,507
+Bir şeylere geçirdik. Ha, daha denklem onlar var. Tamam. Vizeye kadar, vizelerin de nasıl yapılacağını henüz bilmiyoruz. Hiçbir bilgimiz yok. Vizelere kadar interpolasyona gelmiş oluruz. Sorunuz var mı arkadaşlar? Yok hocam. Tamam. En kısa sürede de proje şeyinizi ilan edeceğiz. İşte projede de belirli yöntemleri diyeceğiz. Bu yöntemi kodla. Bu yöntemi kodla.
+
+1043
+02:36:45,507 --> 02:36:52,607
+onları istediğin dilde hangi dili programlama dilini geliştirmek istiyorsan kodlayabilirsin.
+
+1044
+02:36:53,827 --> 02:36:59,987
+Şimdiden yazmaya başlarsanız, çünkü baştaki yöntemlerimiz daha kolay, hepsi birikmez.
+
+1045
+02:37:00,127 --> 02:37:04,028
+Çünkü dönemin sonunda bütün derslerin ödevleri mutlaka birikecektir.
+
+1046
+02:37:04,507 --> 02:37:06,507
+Altından çıkılmaz bir hale gelir.
+
+1047
+02:37:07,107 --> 02:37:09,307
+Zamanında yaparsanız iyi olur.
+
+1048
+02:37:10,007 --> 02:37:12,327
+Öyleyse haftaya görüşmek üzere diyorum.
+
+1049
+02:37:12,327 --> 02:37:13,827
+Hayırlı Ramazanlar.
+
+1050
+02:37:13,827 --> 02:37:18,007
+Hadi bakalım. Hoşçakalın, iyi akşamlar.
+
+1051
+02:37:18,528 --> 02:37:19,647
+Hoşçakalın hocam.
+
+1052
+02:37:23,059 --> 02:37:24,059
+süresi ne kadar olacak sorabilir miyim acaba? Ne bir adet? Projenin süresi ne kadar olacak? Dönem sonunda mı projeniz? Evet dönem sonu. Şimdi sayımız birazcık çok fazla ya sınıfın sayısı. Eğer elimizdeki konuları bitirirsek son iki hafta proje gösterimleri. Eğer konumuz bitmezse son bir hafta ama yetmeyebilir, ekstradan bazı saatlerde koyabiliriz.
+
+1053
+02:37:53,059 --> 02:38:06,039
+biliriz. Bunları biz Mayıs ayında anlarız. Konu kaç haftaya kadar sarkacak diye. Tamam mı? Yani okul ne zaman kapanıyor? Haziran'ın son haftası mı?
+
+1054
+02:38:07,799 --> 02:38:22,460
+Tamam değilim bakmamıştım. Pardon. Galiba hocam. Tamam bakmanın takvime de. Tamam ben de bilmiyorum. Bakıyorum ama aklımda kalmıyorum. Siz Mayıs'ın son haftasıymış gibi. Haziran'ın son haftası ve Haziran'ın ilk haftası.
+
+1055
+02:38:23,059 --> 02:38:25,059
+Tamam mı? Tamamdır, teşekkür ederim.
+
+1056
+02:38:25,219 --> 02:38:27,079
+Tamam, mücadelerim. Hadi hoşçakalın.
