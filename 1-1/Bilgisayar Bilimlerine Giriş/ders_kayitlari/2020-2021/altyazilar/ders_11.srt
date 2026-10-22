@@ -1,0 +1,3351 @@
+1
+00:01:29,843 --> 00:01:56,423
+Evet, günaydın arkadaşlar. Hepimiz hoş geldiniz. Yeni bir hafta daha. Hepimize güzellikler ve sağlık getirsin diyerek başlayalım. Öncelikle ödevle ilgili birkaç noktaya değinmek istiyorum. Tabii öncelikle ben bir şeyler söylemeden önce sizin görüşlerinizi alacağım. Ödevle ilgili yorum yapmak isteyen arkadaşınız vardır.
+
+2
+00:02:06,804 --> 00:02:08,804
+soru sormak isteyen
+
+3
+00:02:13,747 --> 00:02:17,747
+Hocam, Atakan?
+
+4
+00:02:17,747 --> 00:02:32,747
+Ben şey sormak istiyorum da, ben yapıyorken kafa karışmış bir şey bir ara bende, şey de eklemişim içine nasıl becerdiysem, şey, yer değiştirme, ERA'deki yer değiştirme algoritması yapmışım ilk başta yanlış gram.
+
+5
+00:02:32,747 --> 00:02:41,747
+Sonradan fark ettim çıkardım onu da, öyle bir şey yapsak, mesela ekstradan fazlalık bir şey yapsak bu puan kırılmasına sebep olur herhalde değil mi?
+
+6
+00:02:41,747 --> 00:02:47,867
+Evet çünkü sizden müşteri bir şey istediği zaman genelde müşterinin istediğini teslim etmeniz beklenir.
+
+7
+00:02:47,867 --> 00:03:05,828
+Tabii ki müşteri daha fazlasını teslim ederseniz memnun olur ama alakasız bir şeyi müşteriye teslim etmeniz demek müşteride bir acaba karşı taraf benim söylediklerimle doğrudan bilgileniyor yoksa kendi söylediklerimi yapıyor diye bir tereddüt oluşturur.
+
+8
+00:03:05,827 --> 00:03:23,707
+O nedenle benim tavsiyem mutlaka istenilenler çerçevesinde ama hani ekstradan o problemle ilgili katacağınız bir şey olursa ben buna açığım, buna hayır demem. Siz kendiniz katıyorsanız bir yerden bulup eklemiyorsanız her zaman yapabilirsiniz bunu.
+
+9
+00:03:23,707 --> 00:03:42,347
+başka eleştirde bulunmak isteyen, yorum yapmak isteyen, memnun olmayan yani genel olarak sorularla ilgili sıkıntısı olan, süreyle ilgili sıkıntısı olan, zorluğuyla ilgili sıkıntısı olan
+
+10
+00:03:42,347 --> 00:03:59,347
+Bu bir fırsattır. Bundan sonra bir hafta sonra yeniden bir ödeviniz olacak. O yüzden ödevle ilgili yorumlarınız varsa şu anda alayım.
+
+11
+00:04:04,436 --> 00:04:05,436
+Erdi.
+
+12
+00:04:05,436 --> 00:04:16,436
+Hocam, cevapları paylaşacak mısınız acaba ödevin? Hani yapma olması gereken cevapları? Hem öğrenmiş oluruz belki eksik bir yerlerimiz varsa.
+
+13
+00:04:16,436 --> 00:04:22,436
+Evet olabilirlerdi. Böyle bir şey planlıyorum. Belki müzik yaptı ki lap saati bunun için uygun olabilir.
+
+14
+00:04:22,436 --> 00:04:24,436
+Teşekkürler.
+
+15
+00:04:24,436 --> 00:04:28,436
+O yüzden bu yorumun için ben de sana teşekkür ederim.
+
+16
+00:04:28,436 --> 00:04:40,735
+Peki o zaman sanırım başka bir yorum yapmayacaksınız. Bununla ilgili ufak bir anket düzenleyeceğim ilerleyen günlerde. Orada en kötü ihtimalle fikrinizi belirtmiş olursunuz.
+
+17
+00:04:41,616 --> 00:04:47,976
+Şimdi biz kaldığımız yerden devam ediyor olacağız. Ben öncelikle bir ekran paylaşımını organize edeyim.
+
+18
+00:05:28,052 --> 00:05:36,812
+Bu sırada bir soru sorayım. Eksi nokta için verilen pozisyon değerini eksi sayıyla yapan var mı aramızda?
+
+19
+00:05:39,411 --> 00:05:42,611
+Problemi eksi sayıyı da gözeterek yapan var mı?
+
+20
+00:05:45,251 --> 00:05:47,411
+Evet, pointin eksi olması, aynen öyle.
+
+21
+00:05:53,043 --> 00:05:54,043
+Peki.
+
+22
+00:05:57,043 --> 00:06:23,043
+Şimdi bu noktada açıkçası point'in eksi olabilme ihtimali düşünmek hesaplaman güzel bir şey. Ben özellikle ödevde bunu belirtmemiştim. Öncelikle bu tür durumlarda ekstra case'leri de dikkate alarak çözmek mümkünse tabii ki çok daha sizi geliştirecek bir yaklaşım olur. O yüzden ben destekliyorum bu tür.
+
+23
+00:06:23,043 --> 00:06:32,724
+yaklaşımlarımızdı. Ama bunu zorunlu kılmamıştım. Ama en azından sıfır ve pozitif değerler için bunu doğru çözebilmek önemliydi.
+
+24
+00:06:32,724 --> 00:06:42,923
+Tabii en çok gelen sorulardan çoğuna cevap vermeye çalıştım maille gönderilen sorulara. Çok kısıtlı bir süre olmasına rağmen hafta sonu gördüklerimin hemen hepsini yanıtlamaya çalıştım.
+
+25
+00:06:43,423 --> 00:06:50,764
+En çok iki yüze ile ilgili yani üstsel gösterimle ilgili soru geldi. Bunu daha önce de belirtmiştim.
+
+26
+00:06:50,763 --> 00:07:11,743
+üstsel gösterim akış diyagramında maalesef mümkün değil. Yani siz yazabilirsiniz ama böyle bir gösterim normalde legal değil. Onun yerine ne yapmak gerekiyor? Ford öngüsünde o çarpım işlemini tekrar tekrar, kaçsa, 2 üzeri 5'se, 5 defa, 2'yi birbiriyle çarpmak gerekiyor.
+
+27
+00:07:11,743 --> 00:07:25,623
+yapılması gereken şey buydu. Çok zorlandığını söyleyen, bulmakta zorlandığını belirten arkadaşlar vardı ama düşündüğünüzde ben size şunu aktarmıştım hatırlarsanız.
+
+28
+00:07:26,623 --> 00:07:38,043
+Dört işlem, for, while, if, aslında bütün problemlerin çözümü. Bunların özelleştirilmiş hali, fonksiyonlar, metotlar yarın, bir gün fazlasıyla kullanacaksınız.
+
+29
+00:07:38,043 --> 00:07:44,584
+bunları tabii ki böyle üst alma fonksiyonu kullanmadan geri kalan hayatınızda yapmayacaksınız.
+
+30
+00:07:44,844 --> 00:07:52,463
+Ama şu anda öğreniyorsunuz. Temelini öğreniyorsunuz. O yüzden de bu tür durumlarda fonksiyon kullanmanızı istemiyorum.
+
+31
+00:07:52,463 --> 00:08:02,064
+Ama karakök alma durumunda örnek veriyorum. Problem karakök almayı gerektiriyorsa o zaman square t isimli fonksiyonu çağırmamız gerekiyor.
+
+32
+00:08:02,064 --> 00:08:10,484
+çünkü bunun karşılığı akış diyagramında yok. Bu tür durumlarda mecburen fonksiyon kullanıyor olacağız.
+
+33
+00:08:10,784 --> 00:08:18,963
+Böyle birkaç tane istisna var. En azından BBG'nin sınırları içerisinde bu birkaç istisna var ama sınırlar büyüdükçe tabii ki o zaman
+
+34
+00:08:18,963 --> 00:08:24,284
+daha serbest bir şekilde fonksiyon kullanımına doğru yavaş yavaş geçiş yapıyor olacağız.
+
+35
+00:08:30,836 --> 00:08:34,155
+Şimdi ekranımı paylaşmak üzereyim.
+
+36
+00:09:01,395 --> 00:09:29,395
+Evet, sanırım şu anda ekran gelmiş olması lazım. Biz en son burada bıraktık. Bir şehrin 365 günlük sıcaklık bilgisi veriliyordu. Yılın en soğuk ve en sıcak günlerini bulup sıcaklık değerleriyle birlikte ekrana yazdıran algoritmanın akış diyagramını istemiştik. Bunu kimler yaptı? El kaldırabilirmiş. Sadece el kaldırsınlar. Ben böyle listeden göreyim. Kimseye söz vermeyeceğim.
+
+37
+00:09:29,395 --> 00:09:52,156
+Yani el kaldırarak çekilmeyin. Ben yaptım işte aman hoca beni kaldırır diye sadece yapanları görmek istiyorum. Bu arada yapmayanlarda yapmadıklarını, belirtmelerinde herhangi bir sıkıntı yok. Ben sadece size bunu bir ödev olarak vermedim. Kimlerin uğraşıp yapabildiğini görmek istiyorum.
+
+38
+00:09:52,155 --> 00:09:59,775
+Peki teşekkür ediyorum el kaldıran arkadaşlara elinize sağ olun
+
+39
+00:09:59,775 --> 00:10:07,616
+Şimdi öncelikle burada sorusu olan var mı? Ben bunu yaptım ama bir soru sormak istiyorum diyen var mı?
+
+40
+00:10:14,004 --> 00:10:22,643
+Evet, en son iki arkadaşımız kaldırmış. Can'la Pelin, onların herhalde soru sormayacaklarını tahmin ediyorum. Onlar ödev yaptıklarını belirtmek için kaldırmışlar.
+
+41
+00:10:24,163 --> 00:10:28,163
+Peki, o zaman sorunun çözümüne geçeceğiz.
+
+42
+00:10:36,371 --> 00:10:38,371
+Şimdi start ile başladık.
+
+43
+00:10:41,371 --> 00:10:44,371
+Start'tan sonra ilk yapmamız gereken nedir?
+
+44
+00:10:49,491 --> 00:10:53,212
+Evet, E kaldırarak lütfen. Evet, Selim.
+
+45
+00:10:54,591 --> 00:10:59,031
+Kullanıcıya mesaj verdim. 365 gün sıcaklık değerlerini giriniz diye.
+
+46
+00:10:59,611 --> 00:11:04,331
+Tamam. Buraya bir mesajı verdik. Bunun içine siz doldurursunuz. Sonra?
+
+47
+00:11:05,851 --> 00:11:07,351
+Ben mi devam edeyim hocam?
+
+48
+00:11:07,631 --> 00:11:09,092
+Evet, bir sonraki adım.
+
+49
+00:11:09,711 --> 00:11:16,351
+Sonra for döngüsü açtım. Birden başlamak üzere birer artarak 365'e kadar. 365 dahil.
+
+50
+00:11:16,351 --> 00:11:29,391
+Bunları T isimli bir diziye aldım input olarak. Daha doğrusu her adımda, döngün adımda T dizisinin input aldım Kulac'ın girdiği değerlere.
+
+51
+00:11:29,631 --> 00:11:33,032
+Tamam, teşekkür ediyorum Selim. Şimdi başka bir arkadaşına devam edeceğim.
+
+52
+00:11:34,291 --> 00:11:38,131
+365 günlüğün değerlerini bir diziye okuduk arkadaşlar.
+
+53
+00:11:39,191 --> 00:11:42,532
+Evet, bundan sonra Ubeydu'luğa söz veriyorum. Ne yapmamız gerekiyor?
+
+54
+00:11:42,531 --> 00:11:53,311
+Hocam en büyük ve en küçük iki tane değişken bilinmeyen atadım hocam.
+
+55
+00:11:53,831 --> 00:11:55,111
+Tamam hemen yazalım.
+
+56
+00:11:55,451 --> 00:11:58,091
+İkisini de A1'e atadım hocam yani şeyin T1.
+
+57
+00:11:58,091 --> 00:12:11,852
+En büyük ve en küçük. İkisini de dizinin ilk elemanına yani şöyle diyelim ikisini değerinde dizinin ilk elemanına atadım.
+
+58
+00:12:12,532 --> 00:12:16,591
+Peki teşekkür ediyorum. Şimdi Umut Can'a söz veriyorum.
+
+59
+00:12:19,591 --> 00:12:24,352
+Hocam bir de ben Kalmuz bir devine atamıştım. Hangi gün olduğunu söylemek için.
+
+60
+00:12:25,131 --> 00:12:34,551
+Şimdi onu konuşacağız. Aslında biraz önce söyledi. Biraz böyle gitsin istiyordum. Ama madem söyledin yapalım.
+
+61
+00:12:41,076 --> 00:13:07,635
+Tekrar söyler misin söylediğini? Önemli çünkü. Count bir, eşittir bir. Count bir. Count bir, eşittir bir yapalım ya da biz. Count bir nedir? Count bir bana hiçbir şey ifade etmiyor. Şey, hangi gün olduğunu belirtmek için de. Hangi hangi gün? Şey yapalım, en büyük gün eşittir bir. En büyük gün neye ifade ediyor? O da şu an tevbi ifade ediyor. O yüzden.
+
+62
+00:13:07,635 --> 00:13:19,015
+Yani olabilir ama ona başka bir şey söylesek. Hala tam tatkın değilim. Yapabilirsin.
+
+63
+00:13:19,875 --> 00:13:23,656
+Max Gün bir mi diyelim hocam? Anlamadım ben şu an soruyu da.
+
+64
+00:13:24,656 --> 00:13:33,195
+Yani soru şu değişken isminden neyi sakladığımızı anlamak istiyorum. Aslında en büyük ve en küçük de çok doğru değil.
+
+65
+00:13:33,195 --> 00:13:41,695
+En sıcak gün işte söyledim ben sana.
+
+66
+00:13:43,215 --> 00:13:45,116
+Şu an en sıcak gün de aynı.
+
+67
+00:13:46,955 --> 00:13:50,076
+Diyorum ki en sıcak gün diyorum değişken ismine.
+
+68
+00:13:52,895 --> 00:13:53,835
+Okey miyiz?
+
+69
+00:13:54,035 --> 00:13:54,796
+Evet, tamam.
+
+70
+00:13:55,656 --> 00:13:57,016
+Şimdi anlaşıldı mı ne demek istediğim?
+
+71
+00:13:57,016 --> 00:14:00,855
+Hocam çok anlamadım ama aynı şeyi diyoruz diye.
+
+72
+00:14:00,855 --> 00:14:09,335
+Umutcan şimdi ben bir değişkende en sıcak günün ismini tutmak istemiyor muyum? Yani değerini kaçıncı gün olduğunu.
+
+73
+00:14:09,656 --> 00:14:09,955
+Aynen.
+
+74
+00:14:10,595 --> 00:14:15,555
+Tamam. O zaman diyorum ki ismine en büyük gün diyeceğimize en sıcak gün diyelim diyorum.
+
+75
+00:14:16,555 --> 00:14:17,436
+Tamam hocam anladım.
+
+76
+00:14:17,675 --> 00:14:17,936
+Yani.
+
+77
+00:14:18,215 --> 00:14:22,576
+Ben onu direkt yaptım. İki tane değişken olacağız için count 1 ile count 2 diyebilirdim.
+
+78
+00:14:22,576 --> 00:14:26,495
+Ben de onu diyorum ki count 1 ve count 2 hiçbir şey ifade etmiyor.
+
+79
+00:14:26,576 --> 00:14:27,275
+Tamam hocam.
+
+80
+00:14:27,275 --> 00:14:44,275
+Bu sadece senin için ifade ediyor ama akış diyagramı takip eden biri için count 1 ve count 2 bu tür kısa programlarda evet bir sıkıntı çıkarmaz ama program uzadığı zaman yani algoritmanız uzadığı zaman o zaman count 1, count 2 bir şey saydığınızı ifade eder. Anlaştık mı?
+
+81
+00:14:44,475 --> 00:14:45,215
+Evet hocam anlaştık.
+
+82
+00:14:45,235 --> 00:14:46,055
+Öbürüne ne diyeceğiz?
+
+83
+00:14:46,815 --> 00:14:48,055
+En soğuk gün.
+
+84
+00:14:48,055 --> 00:15:05,335
+Heh tamam işte bu kadar. İlla bunu vermek zorunda değilsiniz bu arada yani bunu vermezseniz hata olur diye bir şey yok ama buna bugünden alışmanızı istiyorum ki hani değişken isimleri algoritma içerisinde bir şeyleri temsil etsin. Şimdi o zaman en soğuk güne de bir mi diyoruz?
+
+85
+00:15:05,895 --> 00:15:06,195
+Aynen.
+
+86
+00:15:06,695 --> 00:15:06,936
+Tamam.
+
+87
+00:15:07,236 --> 00:15:07,535
+Kapanmıyor.
+
+88
+00:15:07,535 --> 00:15:08,635
+Şimdi seni bırakmıyorum.
+
+89
+00:15:09,115 --> 00:15:09,375
+Tamam.
+
+90
+00:15:09,815 --> 00:15:12,055
+Bir sonraki adımda ne yapacağımızı rica ediyorum sana.
+
+91
+00:15:12,055 --> 00:15:13,815
+Ben bir if notasyonu açtım hemen.
+
+92
+00:15:15,796 --> 00:15:16,275
+Hemen if notasyonu açtım.
+
+93
+00:15:16,275 --> 00:15:18,195
+Pardon, pardon, döngüye girdikten sonra.
+
+94
+00:15:18,335 --> 00:15:19,775
+Dönge bir for döngüsü açtım.
+
+95
+00:15:20,215 --> 00:15:21,595
+Tamam, açalım for döngüsü.
+
+96
+00:15:22,895 --> 00:15:27,995
+Ben ama zaten birinci günü en soğuk ve en sıcak kabul ettim için ikiden başlattım.
+
+97
+00:15:28,355 --> 00:15:30,296
+İndisimiz iki, üç yüz altmış birçe kadar.
+
+98
+00:15:31,855 --> 00:15:32,755
+Birer birer artarak.
+
+99
+00:15:34,095 --> 00:15:39,495
+Peki, şimdi buradan şöyle bir bir diyeceğim.
+
+100
+00:15:41,016 --> 00:15:41,755
+Şuraya geçeceğim.
+
+101
+00:15:43,656 --> 00:15:45,915
+Evet, döngü içerisindeyim.
+
+102
+00:15:46,275 --> 00:15:54,275
+Aynen şimdi if notasyonu açtım bir tane. İf açalım. İçine de yazacağız. Çünkü ben çizersem sıvıramayabiliyorum.
+
+103
+00:15:54,275 --> 00:16:01,275
+Hocam a'ı büyük eşittir max yazdım. Şu anda a benim için bir şey ifade etmiyor. Pardon te.
+
+104
+00:16:01,275 --> 00:16:09,275
+Özellikle bunu yapıyorum ki alışın diye. T'ı? Büyük eşittir max.
+
+105
+00:16:09,275 --> 00:16:11,436
+Max diye bir şey yok mu da?
+
+106
+00:16:12,436 --> 00:16:13,475
+Şey en büyük.
+
+107
+00:16:15,415 --> 00:16:16,895
+Tamam olsun sorun değil.
+
+108
+00:16:17,995 --> 00:16:20,016
+En büyük. Bu kadar mı karşılaştın mı?
+
+109
+00:16:20,656 --> 00:16:25,516
+Yani aynen ben böyle yaptım ama şimdi şey düşünüyorum zaten birden fazla olursa.
+
+110
+00:16:26,315 --> 00:16:30,055
+Yani sen kendi düşündüğünü rahatlıkla taşıyabilirsin.
+
+111
+00:16:30,156 --> 00:16:31,135
+Aynen benim yaptığım.
+
+112
+00:16:31,135 --> 00:16:31,315
+True.
+
+113
+00:16:32,876 --> 00:16:38,095
+True kolunu da Max'ı bu sefer TV'ye eşitledim.
+
+114
+00:16:38,484 --> 00:16:40,484
+en büyük TEU'ya yaşlıydım.
+
+115
+00:16:40,484 --> 00:16:41,563
+TEU
+
+116
+00:16:43,484 --> 00:16:44,484
+TEU
+
+117
+00:16:44,484 --> 00:16:45,484
+Güzel. Sonra?
+
+118
+00:16:45,484 --> 00:16:47,484
+Sonra bir şey yapmadım.
+
+119
+00:16:47,484 --> 00:16:49,484
+Burada bir şey yapmadım.
+
+120
+00:16:49,484 --> 00:16:51,484
+Şey...
+
+121
+00:16:51,484 --> 00:16:54,484
+en soğuk...
+
+122
+00:16:54,484 --> 00:16:56,484
+en sıcak güne...
+
+123
+00:16:58,484 --> 00:17:00,484
+en sıcak güne...
+
+124
+00:17:00,484 --> 00:17:02,484
+en sıcak güneşittir, en sıcak güne artı bir.
+
+125
+00:17:02,484 --> 00:17:03,484
+Heh.
+
+126
+00:17:03,484 --> 00:17:08,883
+Şimdi bir yerim buraya en sıcak gün eşittir, en sıcak gün artı bir dersen ne olur?
+
+127
+00:17:12,723 --> 00:17:14,723
+yani mesela
+
+128
+00:17:17,043 --> 00:17:22,083
+ha bunu ama evet evet şuna almadım galiba. Aynen bunun direk alması gerekiyordu.
+
+129
+00:17:22,843 --> 00:17:24,843
+yani ne yazıcam?
+
+130
+00:17:27,123 --> 00:17:30,164
+bunu tuvu konuna yazmayacağız sanki buna hocam.
+
+131
+00:17:30,164 --> 00:17:33,163
+ben neyi saklamak istiyorum Uğutcan?
+
+132
+00:17:34,803 --> 00:17:37,803
+yani hangi ligiye ihtiyaç duyuyorum?
+
+133
+00:17:37,803 --> 00:17:40,803
+yani şu an
+
+134
+00:17:43,700 --> 00:17:48,200
+kaçıncı gün olduğunu? Soruda bakabilirsin, soruda yazıyor. Neyi saklıyorum?
+
+135
+00:17:49,700 --> 00:17:53,200
+En sıcak ve en soğuk günlerini ve sıcaklık değerlerini.
+
+136
+00:17:53,700 --> 00:17:57,200
+Hangi gün olduklarını ve sıcaklık değerlerini, doğru mu? Evet.
+
+137
+00:17:57,200 --> 00:18:01,200
+O zaman en büyük sıcaklık değeri değiştiyse ne de değişiyor?
+
+138
+00:18:04,200 --> 00:18:07,700
+Günün de değişiyor. Tamam, o zaman en sıcak güne neyi atayacağım?
+
+139
+00:18:07,700 --> 00:18:13,200
+Evet, en sıcak gün ı. Tamam, bu kadar. Bitti. Tamam.
+
+140
+00:18:13,700 --> 00:18:14,480
+Evet hocam
+
+141
+00:18:14,480 --> 00:18:18,359
+Yani bir şey toplamıyorum, arttırmıyorum, bir şey yapmıyorum. Doğru mu?
+
+142
+00:18:19,060 --> 00:18:19,580
+Aynen
+
+143
+00:18:19,580 --> 00:18:25,280
+Tamam peki. Şimdi bu noktada seni teşekkür ediyorum ve başka bir arkadaşımız olacağım
+
+144
+00:18:25,280 --> 00:18:29,400
+Evet başka kim daha anlatmak ister?
+
+145
+00:18:31,060 --> 00:18:32,439
+Mesela güneş su açık
+
+146
+00:18:37,523 --> 00:18:39,523
+Hocam soruyu tekrar söyleyebilir misiniz?
+
+147
+00:18:40,563 --> 00:18:41,244
+Hangi soruyu?
+
+148
+00:18:42,323 --> 00:18:47,463
+Yani, şu an çok kısa bir gidip geldiğim için azıcık kaçırdım.
+
+149
+00:18:47,463 --> 00:18:51,683
+O zaman yapacak bir şey, teşekkür ediyorum. Başka bir arkadaşımızı alacağım.
+
+150
+00:18:52,323 --> 00:18:53,323
+Murat Can, Selçuk.
+
+151
+00:18:58,451 --> 00:18:59,451
+Murat Çansçak.
+
+152
+00:19:03,604 --> 00:19:08,723
+Melih Kendili
+
+153
+00:19:13,268 --> 00:19:15,268
+Melih Kendirli
+
+154
+00:19:15,268 --> 00:19:19,268
+Peki
+
+155
+00:19:19,268 --> 00:19:21,268
+Hamza Cannaz
+
+156
+00:19:21,268 --> 00:19:24,268
+Evet hocam
+
+157
+00:19:24,268 --> 00:19:28,268
+Açıkçası ben yapmamıştım ama deneyebilirim isterseniz
+
+158
+00:19:28,268 --> 00:19:30,268
+Tabii ki
+
+159
+00:19:30,268 --> 00:19:33,268
+En sıcak günü atadık
+
+160
+00:19:33,268 --> 00:19:38,268
+Sonrasında True ve False kollarını birleştirip döngüyü sonlandırabiliriz
+
+161
+00:19:38,268 --> 00:19:41,268
+Bir sonraki günü kontrol etmek için
+
+162
+00:19:41,268 --> 00:19:46,727
+şöyle söyleyeyim şimdi bu döngüyü sonlandırdığımız zaman en küçük kontrolü yapmamış olacağız.
+
+163
+00:19:49,168 --> 00:19:53,648
+Ben onu bir sonraki yani farklı bir döngüde yaparız diye düşünmüştüm de.
+
+164
+00:19:54,047 --> 00:19:58,887
+Tamam çok güzel bunu söyledi iyi oldu. Birçok arkadaşım böyle düşünmüş oluyordu. Şimdi burada ben bir yorum yapayım.
+
+165
+00:19:59,387 --> 00:20:09,467
+Şimdi birinci döngüde en büyüğü bulup işi bitirip ikinci döngüde en küçüğü bulursanız aslında iki defa 365 kere döngülerde dönmüş olursunuz.
+
+166
+00:20:09,467 --> 00:20:25,128
+Halbuki biz işleri aynı döngü içerisinde bitirme şansına sahipsek mümkünse yeni bir döngü açmak istemeyiz. Çünkü yeni bir döngü daha fazla kontrol demek, tekrar aynı turu atmak demek.
+
+167
+00:20:25,128 --> 00:20:39,407
+O yüzden ilk döngüde en büyüğü, ikinci döngüde en küçüğü bulanlar olduysa bu yanlış değil ama bunun iyileştirilmiş versiyonu aynı döngü içerisinde en büyük ve en küçük değerlerini bulmak.
+
+168
+00:20:39,467 --> 00:20:49,647
+O yüzden en büyük ve en küçük aynı döngüde bulduğumuzu düşünerek şimdi ilerlemek istiyorum. Hamza bir kez daha sana söz vereyim. Yapabilir misin?
+
+169
+00:20:51,327 --> 00:20:52,727
+Tamam hocam deneyeyim.
+
+170
+00:20:53,027 --> 00:20:53,567
+Dene lütfen.
+
+171
+00:20:57,491 --> 00:21:01,491
+Şimdi nasıl yapabiliriz?
+
+172
+00:21:01,491 --> 00:21:09,491
+Yani en büyüğü sorguladık. Diyelim ki T, I, M, Büyük, Eşik, M, Büyükten değilse yani M, Büyükten büyük değilse o zaman ne olabilir?
+
+173
+00:21:09,491 --> 00:21:13,491
+M, Büyükten büyük değilse küçük olabilir.
+
+174
+00:21:13,491 --> 00:21:15,491
+Evet küçük olabilir. Başka?
+
+175
+00:21:15,491 --> 00:21:17,491
+Eşit olabilir bir de.
+
+176
+00:21:17,491 --> 00:21:19,491
+Eşit olamaz.
+
+177
+00:21:19,491 --> 00:21:21,491
+Eşit tanımladık orada.
+
+178
+00:21:21,491 --> 00:21:26,491
+Küçük olması bize ne ihtimalini doğuruyor?
+
+179
+00:21:26,491 --> 00:21:31,532
+Sıcaklığın en küçük olduğu günün o gün olduğunu
+
+180
+00:21:31,532 --> 00:21:33,411
+Hayır, onu bilmiyoruz
+
+181
+00:21:33,411 --> 00:21:35,012
+Onun olup olmadığını öğrenmemiz lazım
+
+182
+00:21:35,012 --> 00:21:36,651
+Yani en büyükten küçükse
+
+183
+00:21:36,651 --> 00:21:39,811
+Neye bakmamız lazım?
+
+184
+00:21:40,451 --> 00:21:41,532
+Neyi kontrol etmemiz lazım?
+
+185
+00:21:43,411 --> 00:21:44,752
+En büyükten küçükse
+
+186
+00:21:44,752 --> 00:21:50,551
+Hocam bir an durdu beynim
+
+187
+00:21:50,551 --> 00:21:53,252
+Peki o zaman başka bir arkadaşım söz verelim
+
+188
+00:21:53,252 --> 00:21:54,051
+Muhammed Kasap
+
+189
+00:22:03,604 --> 00:22:06,543
+Muhammed Kasap el kaldırmıştı.
+
+190
+00:22:08,743 --> 00:22:15,883
+Hocam, te, ı, büyük, eşit, en küçük yapıp false koluna en küçük güne atasak doğru olmaz mı?
+
+191
+00:22:17,163 --> 00:22:19,423
+te, ı, büyük, eşit, en küçük.
+
+192
+00:22:19,423 --> 00:22:21,663
+Evet, true false'un içine yine.
+
+193
+00:22:21,663 --> 00:22:27,163
+false koluna da en küçük eşittir te, ı, en soğuk gün eşittir.
+
+194
+00:22:27,163 --> 00:22:32,463
+Ben şu an ne yapıyorum? te, ı, küçük, eşit, en küçük'ü nereye yazacağım?
+
+195
+00:22:32,463 --> 00:22:37,583
+Hayır hocam, T, I, büyük, eşit, en küçük, şeyin içine, true false'un içine
+
+196
+00:22:37,583 --> 00:22:41,683
+True false'un içine, true false'un içi neresi anlayamıyorum ki
+
+197
+00:22:41,683 --> 00:22:44,784
+Ya ifin içi var ya true kolu var
+
+198
+00:22:44,784 --> 00:22:46,583
+İffin içi hocam, ifin içi hocam
+
+199
+00:22:46,583 --> 00:22:50,644
+İffin içine böyle bir şey yazmak istemiyorum ben
+
+200
+00:22:50,644 --> 00:22:53,423
+Çünkü şu an tek kontrolümü yaptım
+
+201
+00:22:53,423 --> 00:22:57,363
+Ama olsun, bir şansımı denedim
+
+202
+00:22:57,363 --> 00:22:58,683
+Kazım Can, Pekcan
+
+203
+00:22:58,683 --> 00:23:06,903
+Hocam false code'la bir iftah açarız. Oraya da te küçük eşit en küçük yaparız.
+
+204
+00:23:06,903 --> 00:23:18,403
+Tamam teşekkür ediyorum. Te küçük eşit en küçük diyorum. Yani eğer te en büyükten küçükse o zaman en küçükten de mi küçük diye bakıyor.
+
+205
+00:23:21,875 --> 00:23:23,075
+Turunkoğlu diyorum.
+
+206
+00:23:26,836 --> 00:23:31,395
+Trukulunda ne yapacağıma kim söyler?
+
+207
+00:23:34,036 --> 00:23:35,156
+Mehmet Alperen
+
+208
+00:23:35,156 --> 00:23:41,655
+En küçük değerine T, I yazarız.
+
+209
+00:23:41,655 --> 00:23:44,655
+Güzel. En küçük değerine T, I yazalım. Peki.
+
+210
+00:23:45,695 --> 00:23:48,895
+Bir de en soğuk günü de I'ye eşitleriz.
+
+211
+00:23:49,395 --> 00:23:52,796
+En soğuk günü de I'ye eşitleyelim. Peki.
+
+212
+00:23:53,695 --> 00:23:55,915
+Alperen, foskonda bir şey yapacak mıyım burada?
+
+213
+00:23:57,335 --> 00:23:58,995
+Bir şey yapmamıza gerek yok bence.
+
+214
+00:23:59,635 --> 00:24:02,495
+Tamam. Teşekkür ediyorum. Bunları birleştirdim.
+
+215
+00:24:02,495 --> 00:24:09,175
+Peki soralım bakalım. Salihcan Akmalık
+
+216
+00:24:12,788 --> 00:24:14,788
+Salihcan Akbalık
+
+217
+00:24:14,788 --> 00:24:16,788
+Efendim hocam?
+
+218
+00:24:16,788 --> 00:24:20,788
+Eee şu anda üstteki ifin foskodunu şey yapacak mıyız?
+
+219
+00:24:20,788 --> 00:24:26,788
+Eee en üstteki if mi?
+
+220
+00:24:26,788 --> 00:24:27,788
+Evet.
+
+221
+00:24:27,788 --> 00:24:31,788
+Bence yapmayacağız hocam.
+
+222
+00:24:31,788 --> 00:24:32,788
+Peki.
+
+223
+00:24:32,788 --> 00:24:37,788
+O zaman buradan döngüye geri dönüyorum.
+
+224
+00:24:37,788 --> 00:24:40,788
+Döngüye geri döndüm.
+
+225
+00:24:40,788 --> 00:24:50,048
+döndüm. Döngüden çıktım. Döngüden çıktıktan sonra ne yapacağımı bana Mustafa Kutay Pekşan söylesin.
+
+226
+00:24:56,948 --> 00:25:03,267
+Mustafa Kutay Pekşan, acil olarak aranıyorsunuz.
+
+227
+00:25:06,900 --> 00:25:10,499
+Mahmud Alomer
+
+228
+00:25:12,915 --> 00:25:39,915
+Evet. Aslında yapmadım da fikrim de yok şu an. Yani zaten sonuna geldik. Çok da özel bir şey düşünmene gerek yok. Takim ettiyse artık algoritmanın sonunda ne yapmamız gerektiği konusunda bir bugüne kadar hani gördüklerinden tahmin yürütebilirsin. Ne yapıyoruz biz? Şu anda?
+
+229
+00:25:39,915 --> 00:25:48,695
+En büyük ve en küçük günleri en sıcak gün ve en soğuk gün bulmaya çalışıyoruz
+
+230
+00:25:48,695 --> 00:25:52,695
+Çok güzel o zaman biz bunları bulduk aslında şimdi yerine ne kaldı?
+
+231
+00:25:54,835 --> 00:25:55,695
+Bir bakayım bir dakika
+
+232
+00:26:05,140 --> 00:26:09,140
+Hocam fikrim yok şu an başka bir arkadaş. Yapsın.
+
+233
+00:26:09,140 --> 00:26:11,140
+Peki, teşekkür ederim. Hakan Ödyaman.
+
+234
+00:26:14,140 --> 00:26:15,140
+Merhaba hocam.
+
+235
+00:26:15,140 --> 00:26:16,140
+Merhabalar.
+
+236
+00:26:17,140 --> 00:26:23,140
+Hocam, benim de bir fikrim yok ya. Oraya kadar ben de düşünebildim de. Tekrar mı deneyeceğiz döngü?
+
+237
+00:26:23,140 --> 00:26:26,140
+Peki, canım sağ olsun Hakan. Teşekkür ediyorum.
+
+238
+00:26:27,140 --> 00:26:29,140
+Barış Bakın.
+
+239
+00:26:30,140 --> 00:26:33,140
+Hocam, şu an her şeyi bulduk. Bunları yazdırmamız lazım.
+
+240
+00:26:33,140 --> 00:26:53,519
+kılmamız lazım. Lütfen. Şimdi output kutucuğu atacağız. Evet. Oraya en büyük gün, pardon. En sıcak gün eşittir. Tırnak içinde en sıcak gün yazacağız. Tamam. Onu bir, ben şöyle bir saniye şöyle yapayım o zaman. Uzun yazıcı almak düşünerek. En sıcak gün.
+
+241
+00:26:57,491 --> 00:27:24,252
+Evet, eşittir. Bu tırnak içinde herhalde. Evet. Bir gün. En soğuk gün. En sıcak gün yazacağım herhalde, bunu demek istiyorsun. Değil mi? Evet, evet, pardon yanlış söyledim. Sonra en soğuk gün yine tırnak içinde, eşittir, en soğuk gün olacak. En soğuk gün. Başka bir şey yazacak mıyım?
+
+242
+00:27:28,403 --> 00:27:41,523
+Hayır. Bizden en şeyleri, değerleri istedi mi? İşte onu ben sana soruyorum. Onu hatırlamıyorum ben yapmadığım için. İstediysen onları da yazabiliriz ama sıkıntı değil hemen. Evet, bence de sıkıntı değil ama
+
+243
+00:27:41,523 --> 00:27:53,244
+şuraya en büyük ve en küçük değerlerini de değişken olarak eklemiş oluyorum. Çocuğumu çiziyorum.
+
+244
+00:27:58,036 --> 00:28:01,795
+ve burada stop diyerek
+
+245
+00:28:03,795 --> 00:28:07,635
+aynı göstermamı tamamlıyorum. Evet, şimdi Selim.
+
+246
+00:28:07,635 --> 00:28:18,195
+Ben ifadelerindeki büyük eşitte küçük eşittir deki eşittir'i sormak istiyordum da en büyük den küçük değiştirmiyor. Sadece en sıcaklığı en soğuk günün değerini değiştiriyor galiba.
+
+247
+00:28:18,195 --> 00:28:20,835
+iki tane aynı değer olursa soracağız.
+
+248
+00:28:20,835 --> 00:28:25,395
+Evet, burada bu önemli bir nokta.
+
+249
+00:28:25,395 --> 00:28:35,295
+Biz burada bir 365 gün çaresinde doğal olarak aynı sıcaklıklarına sahip olan günler olabilir. Soğuk ya da sıcak olmak üzere.
+
+250
+00:28:36,396 --> 00:28:45,695
+Burada sizden en sıcak günleri ve en soğuk günleri de isteyebilirdi isteyen kişi.
+
+251
+00:28:46,415 --> 00:28:52,875
+Fakat o zaman tabii bir gün değil birden fazla gün tutmanız gerekirdi. Bunun için de diziye ihtiyaç duyardınız.
+
+252
+00:28:52,876 --> 00:29:20,915
+Biz burada her günün sıcaklığının birbirinden farklı olduğunu düşündük. Eşit olsaydı da bu çalışırdı. O zaman size en yüksek sıcaklığa sahip olan en sonra gelen günü gösterirdi. Gene aynı şekilde en düşük sıcaklığa sahip olan en sonra günü gösterirdi. Bu algoritmik tasarım içerisinde diğer günleri göstermezdi. Yanlış olur muydu? Hayır. Yanlış olmazdı.
+
+253
+00:29:20,915 --> 00:29:31,675
+ama birçok problemde göreceksiniz sadece bir tane maksimum eleman olmayabilir ya da minimum eleman aynı elemandan birden fazla olabileceği için
+
+254
+00:29:31,675 --> 00:29:41,675
+o zaman sizin bunları bir dizide en sıcak dizisinde ve en soğuk gün dizisinde bunları saklamanız ve sonra birlikte ekrana yazdığımız gerekir.
+
+255
+00:29:42,715 --> 00:29:47,955
+Yani bu şemada sadece en sonra gelen gün etkisi var eşittir. Doğru mu anladım hocam?
+
+256
+00:29:48,615 --> 00:29:49,775
+Evet, aynen öyle.
+
+257
+00:29:49,775 --> 00:29:52,256
+Tamam hocam teşekkürler
+
+258
+00:29:52,256 --> 00:29:52,815
+Rica ederim
+
+259
+00:29:52,815 --> 00:29:54,955
+Başka sorusu olan var mı?
+
+260
+00:29:55,995 --> 00:30:03,455
+Bu çözümle ilgili olarak ya da yanlış diyen ya da ben burayı anlamadım diyen tekrar anlatır mısınız?
+
+261
+00:30:04,195 --> 00:30:05,175
+Şu kısmı diyen
+
+262
+00:30:10,579 --> 00:30:13,579
+Peki. O zaman daha alalım.
+
+263
+00:30:28,276 --> 00:30:31,475
+Evet, bir sonraki algoritmamıza geçiyoruz.
+
+264
+00:30:35,875 --> 00:30:37,875
+Hocam ben bir şey sorabilir miyim?
+
+265
+00:30:38,875 --> 00:30:41,875
+Tabii, her zaman olduğu gibi sorabilirsiniz.
+
+266
+00:30:41,875 --> 00:30:44,716
+Bir önceki sayfaya gelebilir miyiz?
+
+267
+00:30:47,796 --> 00:30:53,796
+Bu şey bizim diagramımızda şayet sıralı verilseydi sıcaklıklar
+
+268
+00:30:53,796 --> 00:30:59,756
+Hiçbir türlü en küçüğe geçmeme ihtimalin olmuş oluyor ya
+
+269
+00:30:59,756 --> 00:31:04,115
+Şimdi bu noktayı da konuşalım
+
+270
+00:31:04,115 --> 00:31:09,495
+Verilen 365 günün değerleri olduğu için
+
+271
+00:31:09,495 --> 00:31:12,835
+Zaten sıcak değerlerinin sıralı olma ihtimali yok
+
+272
+00:31:12,835 --> 00:31:15,035
+Yani 365 gün birinci günden başlayarak
+
+273
+00:31:15,035 --> 00:31:33,495
+yukarı doğru soğuktan sıcağa gitmeyecektir. Ama yarın öbür gün başka bir veri setinde çalışırken veri seti size sıralı verilirse zaten en küçük bulmak ve en büyük bulmak için dizinin hepsini gezmeniz gerekmeyecek. O zaman ne yapacaksınız?
+
+274
+00:31:38,132 --> 00:31:38,851
+Emirhan?
+
+275
+00:31:39,731 --> 00:31:41,571
+İlk elemana son elemana bakacağız.
+
+276
+00:31:41,931 --> 00:31:43,751
+Evet. İlk elemanını en küçük
+
+277
+00:31:43,751 --> 00:31:45,891
+olarak alacaksınız. Son elemanını da en büyük
+
+278
+00:31:45,891 --> 00:31:47,911
+olarak ya da tam tersi büyükten küçülebilir
+
+279
+00:31:47,911 --> 00:31:49,831
+değilse ilk elemanı en büyük, ikinci
+
+280
+00:31:49,831 --> 00:31:51,191
+elemanı en küçük olacak şekilde
+
+281
+00:31:51,191 --> 00:31:54,031
+belirlemiş olacaksınız.
+
+282
+00:31:56,371 --> 00:31:57,251
+Soru sola.
+
+283
+00:31:59,591 --> 00:32:00,271
+Erdi?
+
+284
+00:32:01,732 --> 00:32:04,011
+Burada az önceki soruya da istinaden
+
+285
+00:32:04,011 --> 00:32:05,491
+şey yapabilirdik herhalde.
+
+286
+00:32:06,211 --> 00:32:07,771
+Bu en küçüğü
+
+287
+00:32:07,771 --> 00:32:09,991
+true ve false kollarını en son birleştirip
+
+288
+00:32:09,991 --> 00:32:12,132
+ondan sonra en küçüğü taramasını
+
+289
+00:32:12,132 --> 00:32:14,332
+yaptırabilirdik diye düşündüm.
+
+290
+00:32:14,812 --> 00:32:16,132
+True ve false kollarını
+
+291
+00:32:16,132 --> 00:32:17,711
+birleştirip sonra en küçüğü
+
+292
+00:32:17,711 --> 00:32:19,132
+taramasını yaptırmak nasıl oluyor?
+
+293
+00:32:20,191 --> 00:32:21,531
+Onları birleştirip
+
+294
+00:32:21,531 --> 00:32:23,271
+en küçüğü aramak için
+
+295
+00:32:23,271 --> 00:32:25,871
+t, i küçük eşit en küçüğü
+
+296
+00:32:25,871 --> 00:32:27,971
+oradan sonra birleştirdikten sonra kollara
+
+297
+00:32:27,971 --> 00:32:30,271
+tekrar bir if açıp
+
+298
+00:32:30,271 --> 00:32:32,151
+t, i küçük eşit
+
+299
+00:32:32,151 --> 00:32:33,271
+en küçük deyip tekrar
+
+300
+00:32:33,271 --> 00:32:34,931
+şuradan açıp ife
+
+301
+00:32:34,931 --> 00:32:37,371
+aynen
+
+302
+00:32:37,371 --> 00:32:38,431
+Mümkün mü?
+
+303
+00:32:38,731 --> 00:32:42,471
+Şunu false call'ına koymayalım şurasını.
+
+304
+00:32:43,211 --> 00:32:47,951
+Bu true ve false call'u ilk ifin birleştirelim ondan sonra yapalım diyorsun değil mi?
+
+305
+00:32:48,212 --> 00:32:48,551
+Evet.
+
+306
+00:32:49,632 --> 00:32:53,331
+Şimdi bu da konuşulması gereken bir konu.
+
+307
+00:32:54,591 --> 00:32:56,212
+Arkadaşınız şöyle bir şey öneriyor.
+
+308
+00:32:56,492 --> 00:32:57,132
+Tekrar ediyorum.
+
+309
+00:32:57,971 --> 00:33:03,271
+Şuradaki false call'ındaki işleri, ilk ifin false call'ındakileri.
+
+310
+00:33:04,011 --> 00:33:05,231
+False call'unu da yapmayalım.
+
+311
+00:33:05,352 --> 00:33:06,811
+False call'unu buraya birleştirelim.
+
+312
+00:33:07,371 --> 00:33:08,511
+şuradaki işi
+
+313
+00:33:08,511 --> 00:33:10,911
+ilk if bittikten sonra
+
+314
+00:33:10,911 --> 00:33:13,231
+yeni bir if açıp yapalım diyor.
+
+315
+00:33:13,551 --> 00:33:15,791
+Sizce daha mantıklı, daha mantıklı.
+
+316
+00:33:15,791 --> 00:33:17,111
+Hani sıralı dizi için.
+
+317
+00:33:17,231 --> 00:33:19,431
+Bu problem için değil de. Az önceki durum için
+
+318
+00:33:19,431 --> 00:33:21,651
+biraz da öneri olalım. Yok. Sıralı dizide bir kontrol
+
+319
+00:33:21,651 --> 00:33:23,071
+yok zaten. Tamam.
+
+320
+00:33:24,071 --> 00:33:24,531
+Ubeydullah.
+
+321
+00:33:26,831 --> 00:33:27,191
+Hocam
+
+322
+00:33:27,191 --> 00:33:29,791
+eğer en büyükten büyükse
+
+323
+00:33:29,791 --> 00:33:31,571
+zaten en küçükten
+
+324
+00:33:31,571 --> 00:33:33,471
+en küçük olamaz. O yüzden çok da
+
+325
+00:33:33,471 --> 00:33:35,632
+mantıklı. Evet. Şimdi bu soru
+
+326
+00:33:35,632 --> 00:33:37,212
+yani bunun gündemi gelmiş olması
+
+327
+00:33:37,211 --> 00:33:39,011
+iyi oldu. Zaten
+
+328
+00:33:39,011 --> 00:33:40,591
+en büyükten büyükse
+
+329
+00:33:40,591 --> 00:33:42,631
+en küçükten küçük olma ihtimali
+
+330
+00:33:42,631 --> 00:33:44,691
+olmayacağı için o zaman
+
+331
+00:33:44,691 --> 00:33:46,831
+en büyükten büyük olduğu yerden
+
+332
+00:33:46,831 --> 00:33:48,751
+çıktıktan sonra bir daha en küçükten küçük
+
+333
+00:33:48,751 --> 00:33:51,071
+mu diye sormak doğru olmazdı.
+
+334
+00:33:52,071 --> 00:33:52,691
+O yüzden bu
+
+335
+00:33:52,691 --> 00:33:54,371
+kontrolü biz
+
+336
+00:33:54,371 --> 00:33:56,632
+false call'ında yapıyoruz. Yani eğer
+
+337
+00:33:56,632 --> 00:33:58,091
+en büyükten büyük değilse
+
+338
+00:33:58,091 --> 00:34:00,571
+o zaman en küçükten küçük olma ihtimali
+
+339
+00:34:00,571 --> 00:34:02,331
+olabilir. Yani
+
+340
+00:34:02,331 --> 00:34:04,371
+arka arkaya iki if yaparsanız
+
+341
+00:34:04,371 --> 00:34:06,632
+bu soruda biraz daha
+
+342
+00:34:06,632 --> 00:34:08,872
+fazla işlem yapmış olacaktınız.
+
+343
+00:34:09,132 --> 00:34:09,471
+Atakan?
+
+344
+00:34:10,652 --> 00:34:12,852
+Hocam ama şöyle bir şey sıkıntı
+
+345
+00:34:12,852 --> 00:34:14,831
+çıkarabilir. Yani şu an bu soru
+
+346
+00:34:14,831 --> 00:34:16,891
+da etkilemiyor ama biz bunları günleriyle
+
+347
+00:34:16,891 --> 00:34:18,512
+birlikte alsaydık. Hani işte
+
+348
+00:34:18,512 --> 00:34:20,691
+en düşük değer 1 olsun
+
+349
+00:34:20,691 --> 00:34:22,691
+3 günde almış ereği
+
+350
+00:34:22,691 --> 00:34:24,831
+yapıp alsaydık o zaman sıkıntı çıkabilirdi.
+
+351
+00:34:24,952 --> 00:34:26,732
+Çünkü mesela ilk gün 1
+
+352
+00:34:26,732 --> 00:34:29,031
+ikinci gün 1 verirse en büyüye giriyor
+
+353
+00:34:29,031 --> 00:34:30,811
+büyük eşit olduğu için. Ama
+
+354
+00:34:30,811 --> 00:34:32,971
+en küçüğe girmeyecekti onun gününü tutmayacaktı
+
+355
+00:34:32,971 --> 00:34:34,971
+en küçük de. Mesela öyle bir şeyde
+
+356
+00:34:34,971 --> 00:34:36,051
+sıkıntı çıkabilir bence.
+
+357
+00:34:36,591 --> 00:34:40,492
+Bir bir dediğin zaman ama sonuçta zaten ilk günleri tuttuğu için bir sorun olmuyor.
+
+358
+00:34:41,932 --> 00:34:45,271
+Ya hocam şey ilk gün bir, ikinci günde bir gibi şey yaptım.
+
+359
+00:34:45,292 --> 00:34:49,951
+Tamam ilk gün bir, ikinci günde bir olsa hem en sıcak gün hem en soğuk gün birinci gün oluyor.
+
+360
+00:34:56,307 --> 00:34:57,307
+İnanıyor muyum?
+
+361
+00:34:59,907 --> 00:35:02,707
+Şey, hocam en büyük gün ikinci güne geç...
+
+362
+00:35:02,707 --> 00:35:05,307
+Tamam, en büyük gün ikinci güne geçiyor.
+
+363
+00:35:05,307 --> 00:35:08,307
+En soğuk gün birde kalıyor, o tarafa girmediği için.
+
+364
+00:35:08,307 --> 00:35:13,707
+Ama sonuçta aynı değerlere sahipler. O yüzden ha birinci gün, ha ikinci gün çok bir şey fark etmiyor bizim için.
+
+365
+00:35:13,707 --> 00:35:20,507
+Yani bu sıkıntı yaratmayacak ama çok özel bir gün için belki bu sıkıntı yaratabilir ama...
+
+366
+00:35:20,507 --> 00:35:34,767
+Bu tür en büyük ve en küçük sorunlarında en büyükten büyük değilse zaten o zaman en küçükten küçük olma ihtimali vardır. En büyükten büyükse en küçükten küçük olma ihtimali olmayacağı için bunu ikinci kez konuşabilmek doğru olmayacaktır.
+
+367
+00:35:36,988 --> 00:35:40,307
+Evet başka bir soru var mıydı? Gözden kaçırmayın.
+
+368
+00:35:42,127 --> 00:35:49,027
+Evet şimdi enteresan bir şey. Biriniz soruyorum, bir dakika bekliyorum. Kimse soru sormuyor. Sonra biri soruyor, arkasından herkes soruyor.
+
+369
+00:35:49,027 --> 00:35:57,367
+her sene değişmiyor. İlginçtir. Selim buyur sor. Pardon. Şimdi dizi konusu açılınca aklıma geldi.
+
+370
+00:35:57,467 --> 00:36:08,427
+Bunu dizide verdim dediniz ya. Ben şey soracaktım. En sıcak, en soğuk gün şu günler dizisine bu döngü dışında bir döngüye daha ihtiyacımız olurdu değil mi diye sormak istiyordum.
+
+371
+00:36:10,007 --> 00:36:19,007
+En sıcak ve en soğuk gün dizileri olsaydı mı? Evet. Onlar dizi olsaydı önce çıktı. En büyüğü bulup sonra farklı bir döngü açık mı bulmamıştı?
+
+372
+00:36:19,028 --> 00:36:24,188
+gerekir bu dizileri. Yani onu şu anda konuşmayalım. O zaten baş başına başka bir algoritma.
+
+373
+00:36:25,388 --> 00:36:44,587
+Yapacağız. Tamam o zaman hocam. Yani siz bunu isterseniz kendiniz de çözebilirsiniz. Sosu bir alıştırma sorusu olabilir ama hani böyle bazı algoritmaların nasıl yapılacağı konusunda fikir vermekle birlikte detayına girmek istemiyorum. Çünkü o zaman yani bazı kişiler anlayabilir, bazı kişiler anlayamaz. Yarım yamanak öğrenme şekli olur. Onu tercih etmiyorum.
+
+374
+00:36:45,367 --> 00:36:46,028
+Tamam hocam.
+
+375
+00:36:46,028 --> 00:36:51,267
+Okey. O zaman bir sonraki sorumuza geçebiliriz.
+
+376
+00:36:58,612 --> 00:37:00,612
+verilen bir dizide
+
+377
+00:37:07,155 --> 00:37:08,155
+Tekrar eden
+
+378
+00:37:08,155 --> 00:37:11,155
+Eleman
+
+379
+00:37:11,155 --> 00:37:14,155
+Olup olmadığını
+
+380
+00:37:14,155 --> 00:37:17,155
+Bulan
+
+381
+00:37:17,155 --> 00:37:20,155
+Algoritma, akış diyagramı çizimiz
+
+382
+00:37:35,092 --> 00:37:40,092
+Soruda ne demek istediğimi size bir sorayım. Atakan.
+
+383
+00:37:41,092 --> 00:37:44,092
+Hocam nasıl gidileceğini mi söyleyeyim yoksa sadece sorayım mı açık?
+
+384
+00:37:44,092 --> 00:37:45,092
+Sadece sorayım.
+
+385
+00:37:46,092 --> 00:37:57,092
+Eğer birinci değer, beşinci değere eşitse bunu bulan algoritmayı çizeceğiz yani bir erayda. Herhangi bir değer başka bir değere eşitse bunu bulan algoritmayı çizeceğiz.
+
+386
+00:37:57,092 --> 00:38:06,472
+tam olarak değil ama yanlış da değil. Biraz daha açık istiyorum. Sadece bir kez söylüyorsun çünkü. Farklı bir kişi.
+
+387
+00:38:10,675 --> 00:38:18,035
+farklı farklı farklı Yusuf Kral
+
+388
+00:38:21,331 --> 00:38:33,451
+Hocam sanki benim anladığım kadarıyla bu tekrar eden bir dizi vereceğiz. Orada tekrar eden elemanları bulup onları sanki o dizide o elemanları belirteceğiz sanki. Ben öyle anlıyorum yani.
+
+389
+00:38:33,451 --> 00:38:35,571
+Öyle değil.
+
+390
+00:38:37,051 --> 00:38:38,932
+Teşekkür ederim ama gene de yorum için.
+
+391
+00:38:40,211 --> 00:38:42,211
+Başka bir arkadaşımıza söz vereyim.
+
+392
+00:38:42,731 --> 00:38:46,811
+Verilen bir dizide tekrar eden eleman olup olmadığını sormuştuk. Emirhan Taksoy.
+
+393
+00:38:46,811 --> 00:38:54,831
+Kullanıcıdan dizi alıp tekrar varsa evet tekrar vardır yoksa yoktur şeklinde alıp
+
+394
+00:38:54,831 --> 00:39:00,491
+Peki tekrar edem bir dizi örneği verir misin? 4 elemanlı
+
+395
+00:39:00,491 --> 00:39:04,052
+1, 3, 3, 5 olur
+
+396
+00:39:04,052 --> 00:39:06,751
+1, 3, 5, 3 de olur mu?
+
+397
+00:39:07,591 --> 00:39:08,232
+Olur, tamam
+
+398
+00:39:08,232 --> 00:39:10,732
+Bir tane de tekrar etmeyen verirsen
+
+399
+00:39:10,732 --> 00:39:14,732
+6, 2, 1, 3
+
+400
+00:39:14,731 --> 00:39:25,411
+Teşekkür ediyorum. Yani sonuçta bir tane örnek vermenizin bir zararı yok diye düşünüyorum. Sonuçta hepimiz örnekler üzerine anlatıyoruz.
+
+401
+00:39:26,251 --> 00:39:40,912
+Sol taraftaki dizi örneğinde günik olmayan, her elemanın günik olmayan bir dizi var. Yani her elemanın değişik olmayan bir dizi var. Yani bir eleman tekrar etmiş.
+
+402
+00:39:40,912 --> 00:39:49,812
+Buna bir başka örnek verirsek 1, 1, 2 deseydik gene aynı tekrar eden eleman bulunuyor olacaktı.
+
+403
+00:39:49,912 --> 00:39:56,852
+Ya da 2, 2, 1, 4 deseydik gene tekrar eden eleman bulunacaktı.
+
+404
+00:39:56,851 --> 00:40:11,071
+Öte yandan 3, 5, 0, 1 dediğimizde bu bir unique elemanlardan oluşan yani tekrar eden eleman bulunmayan bir dizi örneği.
+
+405
+00:40:11,071 --> 00:40:22,071
+Bizim bulmak istediğimizde bir dizinin elemanları incelediğimizde tekrar eden eleman varsa ekrana bu dizi unique değildir.
+
+406
+00:40:22,071 --> 00:40:32,511
+bu dizinin elemanları tekrar eden eleman yoksa bu dizinin elemanları uniktir diyecek bir algoritma tasarlamak.
+
+407
+00:41:07,380 --> 00:41:27,439
+Evet, şimdi bu algoritmayı tasarlamanızı istiyorum. Size şimdi bir 10 dakika ara vereceğim. Aradan sonra da bir 10 dakikalık süreniz daha olacak. Yani saat 10.42 yaklaşık olarak 11'de isteyen daha fazla vakit verebilir, isteyen arayı kendine kullanabilir, nasıl isterseniz. Sonuçta en az minimum 10 dakika soruyu çözmek için süreniz olacak.
+
+408
+00:41:27,439 --> 00:41:37,979
+saat 11'de tekrar buluşacağız. Bu soruyu nasıl çözdüğümüzü çözmeye çalıştığınızı tartışıp ondan sonra da biz birlikte çözüleceğiz.
+
+409
+00:41:37,979 --> 00:41:38,439
+Ağustey.
+
+410
+00:41:39,600 --> 00:41:41,659
+Araya girmeden bir şey sorabilir miyim?
+
+411
+00:41:41,679 --> 00:41:41,780
+Ne?
+
+412
+00:41:42,619 --> 00:41:48,179
+Bir tane bile tekrardan eleman bulsa durdurmamız yetiyor mu? Soru için soruyorum.
+
+413
+00:41:48,839 --> 00:41:57,299
+Aynen öyle. Eğer tekrar eden bir tane bile eleman varsa ki daha fazla sayıda tekrar eden eleman ya da eleman grupları olabilir.
+
+414
+00:41:57,439 --> 00:42:01,299
+Bizim için bir tanesinin koşulu bozuyor olması yeterli
+
+415
+00:42:01,299 --> 00:42:02,999
+Tamam hocam teşekkür ederim
+
+416
+00:42:02,999 --> 00:42:03,839
+Rica ederim
+
+417
+00:42:03,839 --> 00:42:04,899
+Başka soru var mı?
+
+418
+00:42:05,579 --> 00:42:07,399
+Soruyla ilgili çözmek için Emirhan
+
+419
+00:42:07,399 --> 00:42:10,959
+Hocam dizinin eleman sayısı belli olacak mı?
+
+420
+00:42:11,039 --> 00:42:12,339
+Ya da kullanıcıdan alacak mı?
+
+421
+00:42:12,579 --> 00:42:17,759
+Evet tabii ki her zaman olduğu gibi dizinin elemanları alabilmeniz için önce dizinin eleman sayısı almanız gerekiyor
+
+422
+00:42:17,759 --> 00:42:18,859
+Teşekkür ederim
+
+423
+00:42:18,859 --> 00:42:19,539
+Rica ederim
+
+424
+00:42:19,539 --> 00:42:23,039
+Bu arada buradaki örnekler sadece 4 elemanlı diziye aittir
+
+425
+00:42:23,039 --> 00:42:26,559
+Biz en elemanlı dizi için bu problemi çözeceğiz
+
+426
+00:42:26,560 --> 00:42:56,499
+her zaman olduğu gibi. Başka soru sola? Peki o zaman size bol şans. Lütfen herkes uğraşsın. Çünkü tekrar rastgele olarak herkese soru soruyor olacağım. Daha önce ödevle, yani daha doğrusu alıştırmayla uğraşmayanlar vardı. Şimdi bu soruyla uğraşmamızı rica ediyorum. Çünkü bu bir uygulama saati. Buradan sonra size sorular soruyor olacağım.
+
+427
+00:42:56,560 --> 00:43:00,280
+şimdiden çabalarınız için teşekkür ediyorum. Görüşmek üzere.
+
+428
+01:00:50,612 --> 01:00:52,612
+Evet arkadaşlar, yeniden merhaba.
+
+429
+01:00:54,612 --> 01:00:56,612
+Neler yaptınız, yapabildiniz mi soruyu?
+
+430
+01:01:03,987 --> 01:01:14,667
+kişiler erdi. Evet hocam yaptım. Ama biraz uzun olmuş öyle mi? Çok ergonik olduğumu emin değilim. Neden öyle düşünüyorsun?
+
+431
+01:01:14,667 --> 01:01:25,107
+Yani çok fazla üç tane Ford öngüsü, çok fazla ilk falan kullandım. Hani belki daha kısa yapan var mıdır bilmiyorum. Peki, Berkay?
+
+432
+01:01:25,107 --> 01:01:31,107
+Hocam yaptım ama Ford öngüsü kullandım. Sonra işte Val kullansam daha iyi olur diye aklıma geldi ama.
+
+433
+01:01:31,107 --> 01:01:35,927
+Ford Döngüsü kullandığım için bulduğundan sonra yine çalışmaya devam edecek. Gerekse işlem oldu. Ama çalışıyor olması lazım.
+
+434
+01:01:36,247 --> 01:01:39,307
+Tamam. Peki. Teşekkür ederim. Kutay?
+
+435
+01:01:40,607 --> 01:01:46,247
+Hocam ben if'ten sonra stop koydum ama öyle bir şey mümkün mü? Ne Ford Döngüsü de yaptım ya.
+
+436
+01:01:46,547 --> 01:01:49,867
+Öyle bir şey maalesef mümkün değil. If'ten sonra yani...
+
+437
+01:01:49,867 --> 01:01:52,647
+Yani Ford sürekli çalışmak zorunda mı? Hani sonu gelene kadar.
+
+438
+01:01:54,787 --> 01:01:58,848
+Kod işi bitene kadar çalışmak zorunda. Eğer if'ten sonra işi bitiyorsa okey.
+
+439
+01:01:58,848 --> 01:02:03,447
+Ama for döngüsü içerisinde if varsa ve if'in sonuna bir stop koyduysan yanlış
+
+440
+01:02:03,447 --> 01:02:07,967
+Mesela Python'da while'dan sonra break diye bir şey var
+
+441
+01:02:07,967 --> 01:02:10,187
+Hani ulaşınca falan veya bir şey olunca
+
+442
+01:02:10,187 --> 01:02:13,428
+Bunda da for'u getirmek için
+
+443
+01:02:13,428 --> 01:02:19,708
+Bilgisayar bilimlerinde break kullanımı doğru bir kullanım değildir
+
+444
+01:02:19,708 --> 01:02:23,848
+Çünkü kodun akışını illegal olarak bozuyorsunuz
+
+445
+01:02:23,848 --> 01:02:29,648
+Eğer wild içerisinde break'e ihtiyaç duyuyorsanız o zaman wild koşulunu ona göre belirlemeniz gerekiyor.
+
+446
+01:02:29,987 --> 01:02:31,047
+Tamamdır hocam. Teşekkürler.
+
+447
+01:02:31,307 --> 01:02:32,208
+Rica ederim. Anıl?
+
+448
+01:02:34,508 --> 01:02:39,487
+Hocam ben bir şeyler çizmeye çalıştım ama valla ne kadar düzgün çalışıyor ben de iyiyim.
+
+449
+01:02:40,148 --> 01:02:43,307
+Peki o zaman Mehmet'e vereyim söz.
+
+450
+01:02:44,168 --> 01:02:50,367
+Hocam sadece bir şey sormak istiyorum. Biz Ford'un üstüne indeksi belli bir sayıya kadar götürüyoruz yani.
+
+451
+01:02:50,888 --> 01:02:51,068
+Evet.
+
+452
+01:02:51,067 --> 01:02:56,647
+İftten sonra bu indeksi o sayıya eşitledim eğer tekrar eder sayı varsa direkt bitirmek için.
+
+453
+01:02:57,367 --> 01:02:58,867
+İndeks direkt en son sayıya eşit.
+
+454
+01:02:58,867 --> 01:03:01,167
+Bunu da yapmamalıyız Mehmet. O da doğru değil.
+
+455
+01:03:02,907 --> 01:03:03,587
+Tamam hocam.
+
+456
+01:03:04,247 --> 01:03:11,287
+For döngüsünden indisi değiştirerek for'un içerisinde çıkmamalıyız.
+
+457
+01:03:11,807 --> 01:03:15,427
+Ne break ile ne de indisi değiştirerek for döngüsünden çıkmamalıyız.
+
+458
+01:03:15,428 --> 01:03:21,627
+yani N'ye kadar gidiyorsanız belirli bir adımda kontrol yapıp I'yi N'ye eşitleyerek çıkılmamalı.
+
+459
+01:03:22,047 --> 01:03:22,388
+Bazar?
+
+460
+01:03:24,987 --> 01:03:37,868
+Hocam ben şöyle yaptım. Değişken yaptım. Onu da I ile arttırdım. İşte A1 eşittir A2 dedim. Doğru, false ise bir daha döngüye giriyor. A2 eşittir A3. N'e kadar böyle gidiyor.
+
+461
+01:03:38,907 --> 01:03:41,308
+Bundan tek tek mi A1, A2 diye kontrol ettin?
+
+462
+01:03:41,308 --> 01:03:43,708
+Yok, for loop yaptım hocam.
+
+463
+01:03:43,708 --> 01:03:56,088
+anladım. Şimdi ben bir kere teşekkür ederim bazen şunu soracağım size. Bu sorudan for mi kullanacağız, while mı kullanacağız? Atakan?
+
+464
+01:03:57,428 --> 01:04:02,348
+Hocam while kullanmamız gerekiyor diye düşündüm ben. Kaç tane while kullanmamız gerekiyor?
+
+465
+01:04:02,368 --> 01:04:12,568
+Benden de forla yaptım hocam ilk denemeden ama şimdi yeni fark ettim. İki tane while'la ilk başta bir forla elemanları alıp sonrasında iki tane while'la daha doğru oluyor gibi.
+
+466
+01:04:12,568 --> 01:04:15,728
+çünkü eşitlendiğinde direkt çıkması için.
+
+467
+01:04:16,467 --> 01:04:18,668
+Evet peki. Uvecunların da bir yorum olacak.
+
+468
+01:04:20,747 --> 01:04:23,068
+Hocam ben bir while before kullandım.
+
+469
+01:04:23,987 --> 01:04:26,168
+Bir while before kullandım. Peki.
+
+470
+01:04:26,168 --> 01:04:33,068
+Şimdi bakalım olması gereken algoritma'nın akış diyagramı nasıl?
+
+471
+01:04:33,728 --> 01:04:35,028
+Birlikte ilerlemeye çalışalım.
+
+472
+01:04:36,308 --> 01:04:37,728
+Bir yerde start dedik.
+
+473
+01:04:39,487 --> 01:04:42,407
+Sonra kullanıcıya mesaj yazdık.
+
+474
+01:04:42,568 --> 01:04:45,708
+eleman sayısını giriniz dedik.
+
+475
+01:04:46,848 --> 01:04:49,267
+Sonra dışarıdan eleman sayısını okuduk.
+
+476
+01:04:51,487 --> 01:04:54,467
+Sonra tekrar bir mesaj yazdık.
+
+477
+01:04:55,127 --> 01:04:56,987
+Dedik ki elemanları tek tek giriniz dedik.
+
+478
+01:04:57,668 --> 01:04:59,047
+Sonra for döngüsünde
+
+479
+01:05:03,668 --> 01:05:09,787
+Birden bir ne kadar. Buna bir dataset diyelim.
+
+480
+01:05:09,787 --> 01:05:12,548
+İsmi ne?
+
+481
+01:05:12,548 --> 01:05:15,107
+I diyelim.
+
+482
+01:05:15,107 --> 01:05:19,787
+Ve burada tek tek okuma yaptık.
+
+483
+01:05:19,787 --> 01:05:24,348
+Okuma işi burada bitti.
+
+484
+01:05:24,348 --> 01:05:27,348
+Sonra
+
+485
+01:05:27,348 --> 01:05:33,347
+Buraya geldik. Artık elimizde yukarıdaki veri gruplarından herhangi bir tanesi var.
+
+486
+01:05:33,347 --> 01:05:44,168
+Şimdi benim amacım tekrar eden eleman var mı yok mu bunu bulmak ve veri karışık verilmiş olduğunu biliyorum sıralı değil.
+
+487
+01:05:45,327 --> 01:05:48,647
+Sıralı olsa daha farklı bir algoritma uygulayabiliriz.
+
+488
+01:05:48,647 --> 01:05:57,387
+Şimdi ilk yapacağınız kağıt üzerinde yapsaydınız bu işi nasıl organize ederdiniz onu sorayım.
+
+489
+01:05:57,567 --> 01:05:59,307
+Yani akış diyagramı çizmeden soruyorum.
+
+490
+01:06:00,647 --> 01:06:02,607
+Sözel olarak anlatsaydınız ne yapardınız?
+
+491
+01:06:03,348 --> 01:06:06,447
+Yusuf Mart
+
+492
+01:06:06,447 --> 01:06:20,367
+Hocam şey mesela birinci elemanı diğer elemanlarla kıyaslardım sonra biri ekarete ederdim sonra ikiyi diğerleriyle kıyaslardım ama biri daha iyi değil hepsini yani bir eksiyle giderdim
+
+493
+01:06:20,367 --> 01:06:27,727
+Çok güzel şimdi demek ki önce birden başlarım diyor arkadaşımız sona kadar giderim diyor eleman var mı yok mu yok
+
+494
+01:06:27,727 --> 01:06:32,568
+sonra ikiden başlarım ikiden sonraki elemanları kontrol ederim diyor
+
+495
+01:06:32,568 --> 01:06:46,248
+Pardon. Sonra 3'ten başlarım ve sonraki elemanlara kadar giderim diyor. Şimdi bunu 4 döngüsüyle yapsaydık.
+
+496
+01:06:50,996 --> 01:06:53,295
+bir bunu for döngüçle organize edelim.
+
+497
+01:06:56,500 --> 01:07:25,299
+I kaçtan başlayacak? Mert? I birden başlayacak. Tamam, I birden başlıyorsun. Kaça kadar gidecek? N'e kadar. Kaça kadar? Düşünün biraz. Birden başlayalım. Hocam N'e kadar gitmesi gerekmiyor mu? Hayır. N-1 mi? Evet.
+
+498
+01:07:26,500 --> 01:07:30,020
+Niye? Çünkü en sonunda bir tane eleman karşılıştıracağım pay bırakacaksın. Doğru mu?
+
+499
+01:07:31,580 --> 01:07:32,299
+Şimdi göreceğiz.
+
+500
+01:07:32,619 --> 01:07:34,060
+Ama hocam şey bir şey diyebilir miyim?
+
+501
+01:07:34,680 --> 01:07:35,400
+Tabii diyebilirsin.
+
+502
+01:07:36,119 --> 01:07:40,680
+Şey hani ikiden başlayıp direkt karşılaştırsak o zaman ne kadar mı giderdi mesela?
+
+503
+01:07:42,099 --> 01:07:45,260
+İkinci elemandan başlasaydık iki ile biri karşılaştırsak da bir daha mısın?
+
+504
+01:07:45,260 --> 01:07:47,319
+İkinci elemandan başlayacağız karşılaştırmaya birazdan.
+
+505
+01:07:47,799 --> 01:07:52,000
+Yani birinci elemandan başlamamız birinci elemanı elimizi aldık geri kalanlarla karşılaştırıyoruz.
+
+506
+01:07:52,000 --> 01:07:53,799
+Şimdi ikinci turdayız.
+
+507
+01:07:53,799 --> 01:07:56,879
+İkinci soru da iç döngüde ne olacak?
+
+508
+01:08:00,279 --> 01:08:00,879
+Emirhan
+
+509
+01:08:00,879 --> 01:08:08,900
+I artı birden başlasın dedim. Okuda J diye bir değişken göndereceğim.
+
+510
+01:08:08,900 --> 01:08:22,819
+Yani ilk döngüde elimize aldığımız eleman birinci elemansa iç döngüde ikinci elemandan karşılaştırmaya başlayacağız. İlk döngüde ikinci elemanı elimize aldıysak iç döngüde üçüncüden başlayacağız karşılaştırmaya.
+
+511
+01:08:22,819 --> 01:08:32,959
+O yüzden de hangi elemanı aldıysak I'ıncı elemanın bir sonraki I artı biri J'den atayarak başlatacak şekilde organize ediyoruz. Nereye kadar gidecek Emrah?
+
+512
+01:08:33,900 --> 01:08:34,680
+M dedim ben.
+
+513
+01:08:35,339 --> 01:08:44,379
+Tamam son elemana kadar gidecek çünkü en sonunda 5'i alacaksınız dış döngüde sonra iç döngüde geriye bir tek 3 kalacak.
+
+514
+01:08:45,239 --> 01:08:49,400
+Peki bunu yaptık. Bundan sonraki adımda ne yapacağız?
+
+515
+01:08:52,819 --> 01:08:54,120
+Dürdane Avcı
+
+516
+01:08:58,868 --> 01:09:28,247
+IF kontrolü yapacağız hocam. Peki, IF de neyi kontrol edeceğiz? Evet, AI, Dataset, Dataset-İ. Çok güzel. Eşitse Dataset-İ. Çok güzel. Bir T değişkeni verip onu da artırıp en son T sıfırdan farklıysa Unique değildir de diyebiliriz. Unique'dir de diyebiliriz. Ya da her seferinde Unique değildir diye mesaj bastırabiliriz.
+
+517
+01:09:28,247 --> 01:09:29,307
+Teşekkür ederim.
+
+518
+01:09:29,907 --> 01:09:30,487
+Teşekkür ederim.
+
+519
+01:09:30,487 --> 01:09:39,427
+Şimdi biz burada her turda elimizdeki elemanı tek tek geriye kalan tüm elemanlarla karşılaştırıyoruz.
+
+520
+01:09:40,627 --> 01:09:45,447
+Bir tane arkadaşımızın söylediği gibi Unique değeri var elimde.
+
+521
+01:09:48,088 --> 01:09:56,588
+Unique değeri ilk etapta Unique 1 olarak set ediliyor.
+
+522
+01:09:58,247 --> 01:10:10,567
+Eğer unic'lik bozulursa unic sıfır olacak şekilde ben bunu organize etmiş oluyorum.
+
+523
+01:10:12,567 --> 01:10:14,967
+Buradan da kontrol ediyorum.
+
+524
+01:10:14,967 --> 01:10:18,967
+Unic 1 ise...
+
+525
+01:10:23,956 --> 01:10:31,555
+true, false, unique yazıyorum.
+
+526
+01:10:34,131 --> 01:10:36,131
+buraya da NATÜLÜK yazıyorum
+
+527
+01:10:42,228 --> 01:10:48,287
+Şimdi bana bu çözümün neden iyi olmadığını kim söyler?
+
+528
+01:10:53,108 --> 01:10:54,108
+Onur Aydın.
+
+529
+01:10:56,467 --> 01:11:00,608
+Çünkü fazladan iş iki var. İki forumda sonuna kadar gitmemiz gerekiyor.
+
+530
+01:11:01,267 --> 01:11:08,627
+Evet, biz iki forumun sonuna giderek her seferinde eşitlik varsa bunu tekrar buluyoruz.
+
+531
+01:11:08,707 --> 01:11:11,528
+Ama zaten ilk bulduğumuz eşitlik de buradan çıkmamız lazım.
+
+532
+01:11:12,587 --> 01:11:19,487
+O yüzden bu tür bir for döngüsü dizaynı yaptığınızda biraz önce sizin söylediğiniz gibi
+
+533
+01:11:19,487 --> 01:11:47,767
+ya break kullanarak çıkabiliyorsunuz ya da döngüdeki indis değerini unique sıfır olan yerde bir anda n'e getirerek j'yi n'e eşitleyerek işte i'yi n-1'e eşitleyerek döngüyü dış güçle bitirmeye çalışıyorsunuz ki bu aslında bizim istemediğimiz bir kullanım şekli çünkü burada adım sayısı belli olmayan bir problem var.
+
+534
+01:11:47,767 --> 01:12:15,008
+verilen input'a göre sonuna kadar da gidebilir. Birinci adımda da çıkabilir. Bu yüzden bizim bu çözümü yanlıştır. Şu anda demiyorum. Buraya break ve çeşitli çıkış noktaları konularak buradan çıkabilir ama bunu görmek istemiyoruz. Bu istemediğimiz bir çözüm şekli.
+
+535
+01:12:15,008 --> 01:12:40,588
+O yüzden buraya şöyle bir kocaman ünlem işareti koyuyorum ve bunun bir soru işareti olduğunu ve tercih edilmemesi gerektiğini bu şekilde size aktarmış oluyorum.
+
+536
+01:12:40,587 --> 01:12:51,867
+Şimdi şu birden itibaren şurayı tekrar dizayn edeceğim. O yüzden de hemen yeni bir sayfayı açacağım. İmrhan söz istemiş.
+
+537
+01:12:53,447 --> 01:12:56,727
+Peki kaç kez tekrar ettiğini bulmak istesek bunu kullanabiliriz değil mi?
+
+538
+01:12:58,207 --> 01:13:09,747
+Kaç kez tekrar, evet kaç kez tekrar etmek istediğini bulmak isteseydiniz evet bunu kullanabilirdiniz ama orada da her elemanın kaç kez tekrar ettiğini bulmak isteseydiniz bunu kullanabilirdiniz.
+
+539
+01:13:09,747 --> 01:13:20,188
+doğru. Şimdi birden itibaren tekrar yapacağız. Bir kere Unique değerine ilk etapta bir diyerek
+
+540
+01:13:20,188 --> 01:13:28,048
+dataset'in Unique olduğunu varsayıyorum. Sonra I'ye bir diyorum.
+
+541
+01:13:32,627 --> 01:13:34,627
+ve Ö.
+
+542
+01:13:37,227 --> 01:13:39,027
+Hatta burayı ben size sorayım.
+
+543
+01:13:40,047 --> 01:13:41,848
+Vile döngüsü içerisine yazacağım.
+
+544
+01:13:44,667 --> 01:13:46,447
+Dış vile döngüsü içerisine.
+
+545
+01:13:50,068 --> 01:13:51,288
+Evet, Onur.
+
+546
+01:13:52,288 --> 01:13:53,548
+I küçüktür n.
+
+547
+01:13:55,407 --> 01:13:56,887
+I küçüktür n.
+
+548
+01:13:58,328 --> 01:14:00,187
+Bir de unic eşittir bir yazdım ben.
+
+549
+01:14:01,107 --> 01:14:05,287
+Unic eşittir bir yazdım. Bunları neyle bağladın?
+
+550
+01:14:08,287 --> 01:14:10,227
+Apostortlu, iki apostortlu.
+
+551
+01:14:11,147 --> 01:14:15,248
+Ona ne diyoruz biz? O C'deki gösterimi?
+
+552
+01:14:16,647 --> 01:14:16,927
+End.
+
+553
+01:14:16,927 --> 01:14:31,267
+Evet. Şimdi arkadaşlar ilk defa bu kullanımı konuşuyor olacağız. Bunu yeri geldiğinde bazen ifte de kullanıyoruz ama ağırlıklı olarak bu while döngüsü için yapılan bir kullanım şekli.
+
+554
+01:14:31,467 --> 01:14:41,608
+İki koşul sağlandığı sürece döngüde kalmanız gerekiyorsa ve bu iki koşulun da birlikte sağlanması gerekiyorsa o zaman araya bir ve ifadesi kullanıyorsunuz.
+
+555
+01:14:41,607 --> 01:14:47,947
+I küçük L olduğu sürece ve unique bir olduğu sürece döngü devam edecek.
+
+556
+01:14:49,387 --> 01:14:58,288
+Bunun bir başka versiyonu veya iki koşuldan birinin sağlanması döngünün devam etmesine yeterliyse o zaman and yerine or yazıyorsunuz.
+
+557
+01:14:58,288 --> 01:15:20,288
+Bunlar logical and ve logical or mantıksal ve mantıksal veya olarak kullanılırlar.
+
+558
+01:15:20,288 --> 01:15:29,328
+çok sıklıkla kullanıyor olacaksınız. Bir döngü için birden fazla V de kullanabilirsiniz.
+
+559
+01:15:29,588 --> 01:15:38,948
+Bir V, bir V'ya da kullanabilirsiniz. Ama şu an için genelde sadece bir V ve V'ya ile genelde problemlerimizi çözüyoruz ama ilerleyen zamanlar bile göreceksiniz.
+
+560
+01:15:39,648 --> 01:15:45,508
+Bir döngünün devam etmesi için ikiden fazla şartın da sağlanması gerekebilir.
+
+561
+01:15:45,508 --> 01:15:48,987
+Peki hemen döngüye girdim ne yapacağım?
+
+562
+01:15:56,819 --> 01:15:57,819
+Selim?
+
+563
+01:15:59,819 --> 01:16:03,819
+J eşittir, I eksi 1 diye değer atayalım.
+
+564
+01:16:03,819 --> 01:16:05,819
+J eşittir?
+
+565
+01:16:06,819 --> 01:16:07,819
+I eksi 1.
+
+566
+01:16:07,819 --> 01:16:08,819
+Niye eksi 1?
+
+567
+01:16:08,819 --> 01:16:13,819
+Pardon, I artı 1. Bir sonrakinden başlamamız gerekiyor, I artı 1 olacak.
+
+568
+01:16:13,819 --> 01:16:17,819
+Evet, bir sonrakinden başlamamız gerekiyor, I artı 1 olacak.
+
+569
+01:16:17,819 --> 01:16:19,819
+Peki, sonra?
+
+570
+01:16:21,819 --> 01:16:25,819
+Sonra da aynen bir tane daha var, döngüsü açalım.
+
+571
+01:16:26,819 --> 01:16:31,639
+Tamam aynı bir tane daha varat dönemisi açalım. Bunun içine ne yazacağımızı kim söyler?
+
+572
+01:16:36,884 --> 01:16:40,463
+Farklı kişiler arkadaşlar. Biraz önceki forların aynısını yapıyoruz.
+
+573
+01:16:43,988 --> 01:16:44,988
+Bütün ön.
+
+574
+01:16:51,123 --> 01:16:56,303
+Betül ön, berke özgen.
+
+575
+01:16:59,828 --> 01:17:02,828
+Evet hocam. Evet belki sendeyiz.
+
+576
+01:17:02,828 --> 01:17:08,828
+while'ın içine bizim array'mizin ismi neydi hocam?
+
+577
+01:17:08,828 --> 01:17:11,828
+eee dataset. ha dataset.
+
+578
+01:17:11,828 --> 01:17:15,828
+dataset j eşitli dataset öyle yazacağız.
+
+579
+01:17:15,828 --> 01:17:17,828
+eee öyle yazmayalım.
+
+580
+01:17:17,828 --> 01:17:23,828
+o zaman yine borda yaptığımız gibi dönelim, sona içine yazacağız.
+
+581
+01:17:23,828 --> 01:17:24,828
+ne yazıcam?
+
+582
+01:17:24,828 --> 01:17:31,727
+while j küçüktür.
+
+583
+01:17:34,328 --> 01:17:35,147
+n.
+
+584
+01:17:37,048 --> 01:17:39,387
+Küçüktür mü yoksa küçük eşittir?
+
+585
+01:17:40,528 --> 01:17:41,967
+Küçük eşittir.
+
+586
+01:17:42,447 --> 01:17:43,828
+Evet, başka?
+
+587
+01:17:45,828 --> 01:17:47,567
+Başka bir şey yazmamız gerekmiyor mu?
+
+588
+01:17:49,188 --> 01:17:51,787
+o while dönüşü içerisinde kalmamız gerekmeyecek mi?
+
+589
+01:17:53,188 --> 01:17:54,467
+Karşılaştırma yaparken.
+
+590
+01:17:54,828 --> 01:18:01,548
+Yani bir koşul sağlandığı sürece bir koşul bozulduğunda çıkacağız ona
+
+591
+01:18:01,548 --> 01:18:08,688
+Peki o zaman başka arkadaşına söz vereyim Umut, Leşar
+
+592
+01:18:08,688 --> 01:18:18,107
+Hocam böyle yaptığımızda zaten unik bir eşitliği bozulduğunda ve küçükken olduğunda ilk wilden çıkmış olmayacağız mı?
+
+593
+01:18:18,107 --> 01:18:22,548
+Ben soru sordum ama Umut önce sorunun cevabını alayım sonrası
+
+594
+01:18:22,548 --> 01:18:27,028
+O zaman yine end diyelim ve unique bir eşittir diyelim.
+
+595
+01:18:27,408 --> 01:18:30,567
+Diyelim. Bir diyelim bakalım. Sonra senin soruna da cevap vereceğim.
+
+596
+01:18:32,168 --> 01:18:37,588
+While, J küçük, eşit end ve unique bir. İçinde ne yapacağım?
+
+597
+01:18:40,147 --> 01:18:46,708
+İçinde J ile I artı biri, pardon J ile I'ye eşitlemem gerekiyor. Dataset J ile I'ye.
+
+598
+01:18:47,887 --> 01:18:48,567
+Eşitlemek?
+
+599
+01:18:49,387 --> 01:18:49,708
+Yani.
+
+600
+01:18:49,707 --> 01:19:14,208
+Evet. Şöyle, ha, if kutucu yazacağım, pardon. Güzel. Peki ne yapacağım? Efendim? Ne yazacağım? Dataset I. Evet. Eşittir J, dataset J. Tamam yazalım, dataset J. Güzel. Bu bir if kutucu yazdım. True call'un.
+
+601
+01:19:14,207 --> 01:19:20,087
+True call'umda wild'dan çıkacağım galiba.
+
+602
+01:19:21,047 --> 01:19:23,687
+O zaman wild'dan çıkmak için neyi değiştirmem lazım?
+
+603
+01:19:24,567 --> 01:19:26,487
+Unique eşittir sıfır diyeceğim.
+
+604
+01:19:26,887 --> 01:19:31,467
+Güzel. Unique eşittir sıfır dedim. Başka bir şey yapmama gerek var mı?
+
+605
+01:19:32,347 --> 01:19:33,247
+Bence şu an yok.
+
+606
+01:19:33,607 --> 01:19:35,447
+Peki true'un ve false call'unu kapattım.
+
+607
+01:19:36,367 --> 01:19:39,347
+Peki if'ten çıktıktan sonra bir şey yapmam gerekiyor mu?
+
+608
+01:19:39,347 --> 01:19:44,427
+iften çıktıktan sonra bir de diğer iften çıkmam gerekiyor.
+
+609
+01:19:45,027 --> 01:19:46,327
+Yok başka bir if yok canlı.
+
+610
+01:19:46,947 --> 01:19:48,587
+Wild'dan çıkacağım bence şu an.
+
+611
+01:19:48,987 --> 01:19:51,927
+Ama Wild'da dönebilmem için bir şeye ihtiyaç var.
+
+612
+01:19:52,787 --> 01:19:53,287
+Evet bu da.
+
+613
+01:19:57,524 --> 01:19:58,723
+Şu an göremedim.
+
+614
+01:19:58,723 --> 01:20:02,883
+Orada otomatik olarak yapılıyor. Bizim while'da bunu kendi elimizle yapmamız lazım.
+
+615
+01:20:05,043 --> 01:20:07,603
+Her turda bunun değişmesi lazım.
+
+616
+01:20:10,643 --> 01:20:12,643
+Peki, evrenciye sözleri.
+
+617
+01:20:13,123 --> 01:20:14,563
+I'yi bir artıracağız hocam.
+
+618
+01:20:15,683 --> 01:20:17,124
+Each while'da.
+
+619
+01:20:18,563 --> 01:20:19,364
+Efendim?
+
+620
+01:20:20,083 --> 01:20:21,524
+Şu an iç döngüdeyim.
+
+621
+01:20:22,083 --> 01:20:22,803
+Evet.
+
+622
+01:20:24,323 --> 01:20:26,003
+İç döngüde artıracak olan nedir?
+
+623
+01:20:26,003 --> 01:20:27,583
+C, pardon C'yi bir arttıracağız.
+
+624
+01:20:27,663 --> 01:20:28,784
+Evet, çok önemli bunlar.
+
+625
+01:20:30,443 --> 01:20:31,343
+C artı bir.
+
+626
+01:20:33,503 --> 01:20:37,503
+While'da döngü indislerini sizin arttırmanız gerekiyor.
+
+627
+01:20:38,003 --> 01:20:39,983
+For'da otomatik olarak artıyor, bunu unutmayın.
+
+628
+01:20:40,643 --> 01:20:41,723
+C'yi bir arttırdım.
+
+629
+01:20:41,783 --> 01:20:44,843
+Peki, While'dan çıktıktan sonra Emre ne yapmam gerekiyor?
+
+630
+01:20:45,443 --> 01:20:46,843
+Şimdi I'yi bir arttırabiliriz.
+
+631
+01:20:47,163 --> 01:20:48,123
+I'yi bir arttıralım.
+
+632
+01:20:51,244 --> 01:20:55,363
+Sonra da buradan buraya geleyim.
+
+633
+01:20:56,003 --> 01:21:00,003
+buradan çıktıktan sonra da Unique
+
+634
+01:21:03,828 --> 01:21:06,647
+bilisayar
+
+635
+01:21:09,140 --> 01:21:13,500
+True, koluna unique mesajı yazdıralım.
+
+636
+01:21:18,260 --> 01:21:23,579
+false ise not unique. Mesajları yazdıralım.
+
+637
+01:21:28,243 --> 01:21:46,783
+Evet. Sonra da stopla bitirelim. Şimdi bir arkadaşınızın sorusu vardı. Umut'undu galiba. Dedi ki böyle olunca acaba döngüde kalır mıyız diye. Onu bir daha alabilir miyim? Umut Deşar.
+
+638
+01:21:46,783 --> 01:22:01,683
+Ya şu an gördüm hani şeyi merak etmiştim ikinci varlığı yönüyü bile eşitlememe gerek var mı acaba diye düşünmüştüm. Ama tamam yani ikinci varlığından çıkmam gerektiğini gördüm.
+
+639
+01:22:01,683 --> 01:22:07,823
+Tamam teşekkür ederim. Şimdi arkadaşlar ben analiz kısmına geçiyorum.
+
+640
+01:22:10,823 --> 01:22:13,743
+Hocam geçmeden önce bir şey sorabilir miyim acaba?
+
+641
+01:22:14,604 --> 01:22:15,443
+Tabii sor.
+
+642
+01:22:15,444 --> 01:22:24,543
+Hocam şimdi biz burada uniye bir dedik. Uniye bir demek yerine uniye, unic eşittir, string unic yazsaydık.
+
+643
+01:22:25,864 --> 01:22:27,543
+Hayır öyle şeyler yapmıyoruz.
+
+644
+01:22:28,104 --> 01:22:28,743
+Olmaz mıydı?
+
+645
+01:22:29,004 --> 01:22:29,284
+Yok.
+
+646
+01:22:29,883 --> 01:22:31,903
+İfi kullanmamak için değil mi? Altlık ifi.
+
+647
+01:22:32,163 --> 01:22:34,544
+Yok ifi kullanmak zorundasın. Başka bir şansın yok.
+
+648
+01:22:37,904 --> 01:22:42,843
+Bilgisayar o tarz bir yaklaşımda çalışmıyor. Bilgisayarda bildiğin kontrol etmen lazım.
+
+649
+01:22:42,843 --> 01:22:46,784
+string yazsan da kontrol etmen lazım, yazmasan da kontrol etmen lazım.
+
+650
+01:22:47,943 --> 01:22:59,243
+Yok hocam şey manası dedim, tırnak içinde unique desek, sonrasında unique değil yapsak, geldiğinde de direkt if almak yerine çıkış, while döngü.
+
+651
+01:22:59,243 --> 01:23:12,824
+Anlıyorum söylediğini ama bunlar şu anki konularımız değil, bunlar problem çözme şekillerimiz değil, bunlar daha sonra programlama diliğinin vermiş olduğu bazı ekstra yetiştiriler.
+
+652
+01:23:12,843 --> 01:23:22,424
+yeteneklerinin kullanılarak işleri biraz daha farklı hale getirip belki bir iki tane kısaltma yapılabilecek işler ama şu an bizim ilgi alanımızda değiller.
+
+653
+01:23:25,104 --> 01:23:27,203
+Akış diyagramında da bu tip kullanımlar yapmıyoruz.
+
+654
+01:23:27,903 --> 01:23:30,983
+Evet analiz yazacağız. Analizde ne yazacağımı ekrana kim söylemek ister?
+
+655
+01:23:35,315 --> 01:23:37,315
+Evet, Elif Sena Yılmaz.
+
+656
+01:23:41,315 --> 01:23:43,315
+I yazmamız lazım.
+
+657
+01:23:43,315 --> 01:23:44,315
+Başka?
+
+658
+01:23:44,315 --> 01:23:45,315
+J
+
+659
+01:23:46,315 --> 01:23:47,315
+Başka?
+
+660
+01:23:48,315 --> 01:23:51,315
+Dataset I'yı da yazmamız lazım galiba.
+
+661
+01:23:51,315 --> 01:23:52,315
+Tamam, güzel. Başka?
+
+662
+01:23:52,315 --> 01:23:54,315
+Bir de Unique.
+
+663
+01:23:55,315 --> 01:23:57,315
+Yazdım. Başka bir şey?
+
+664
+01:23:58,315 --> 01:23:59,315
+Başka?
+
+665
+01:23:59,315 --> 01:24:02,315
+Dataset I'yı da yazmamız lazım.
+
+666
+01:24:02,315 --> 01:24:04,315
+Dataset J'yi de yazmamız lazım.
+
+667
+01:24:04,315 --> 01:24:05,436
+Evet, evet.
+
+668
+01:24:06,275 --> 01:24:08,555
+Bir de n var.
+
+669
+01:24:08,876 --> 01:24:09,115
+Evet.
+
+670
+01:24:09,716 --> 01:24:09,955
+Tamam.
+
+671
+01:24:10,815 --> 01:24:17,516
+Şimdi biz bir tane şuraya bir, üç, beş, yedi diyebiliriz.
+
+672
+01:24:17,516 --> 01:24:18,475
+Böyle bir diziyoruz ama.
+
+673
+01:24:19,176 --> 01:24:23,455
+N4, B1, Unique 1.
+
+674
+01:24:27,475 --> 01:24:29,255
+I küçük N mi? Evet.
+
+675
+01:24:30,355 --> 01:24:31,255
+Unique 1 mi? Evet.
+
+676
+01:24:31,375 --> 01:24:33,315
+İçeri girdik. J'yi 1 arttırdık. 2.
+
+677
+01:24:34,355 --> 01:24:35,816
+C küçük N mi? Evet.
+
+678
+01:24:36,055 --> 01:24:37,035
+Unique 1 mi? Evet.
+
+679
+01:24:37,236 --> 01:24:38,955
+Dataset 1, dataset 2.
+
+680
+01:24:39,816 --> 01:24:41,715
+1'de 1 var, 2'de 3 var.
+
+681
+01:24:41,955 --> 01:24:42,936
+Eşit mi? Değil.
+
+682
+01:24:43,475 --> 01:24:45,355
+Çıktık. J'yi 1 arttırdık.
+
+683
+01:24:46,415 --> 01:24:47,576
+3, 4'tan
+
+684
+01:24:47,576 --> 01:24:49,555
+4'tan küçük eşit mi? Evet.
+
+685
+01:24:50,475 --> 01:24:51,495
+Dataset I'da
+
+686
+01:24:51,495 --> 01:24:53,475
+hala 1 var. Dataset J'de
+
+687
+01:24:53,475 --> 01:24:54,236
+bu sefer ne var?
+
+688
+01:24:55,275 --> 01:24:55,795
+5.
+
+689
+01:24:55,795 --> 01:24:58,515
+1 5'e eşit mi? Değil.
+
+690
+01:24:59,516 --> 01:25:00,996
+Hala unique 1 kaldı.
+
+691
+01:25:02,075 --> 01:25:03,376
+N 4 bunlar değişmiyor.
+
+692
+01:25:03,555 --> 01:25:04,415
+J 4 oldu.
+
+693
+01:25:05,395 --> 01:25:06,275
+4 küçük eşit.
+
+694
+01:25:07,075 --> 01:25:08,016
+4 mi? Evet.
+
+695
+01:25:08,415 --> 01:25:09,275
+Tekrar içeri girdik.
+
+696
+01:25:09,595 --> 01:25:12,535
+1 7 eşit mi? Değil.
+
+697
+01:25:13,336 --> 01:25:13,755
+Çıktık.
+
+698
+01:25:15,275 --> 01:25:15,876
+I kaç oldu?
+
+699
+01:25:17,255 --> 01:25:17,935
+2
+
+700
+01:25:17,935 --> 01:25:21,696
+Döndük.
+
+701
+01:25:21,696 --> 01:25:23,516
+2 küçük 4 mu?
+
+702
+01:25:24,255 --> 01:25:25,435
+Unique 1 mi? Evet.
+
+703
+01:25:25,435 --> 01:25:27,016
+devam ettik. J kaç oldu?
+
+704
+01:25:28,095 --> 01:25:29,275
+Bu sefer 3 oldu.
+
+705
+01:25:31,495 --> 01:25:32,955
+Dataset 2, 3.
+
+706
+01:25:33,535 --> 01:25:35,056
+Dataset 3, 5.
+
+707
+01:25:35,795 --> 01:25:37,575
+3, 5'e eşit mi? Değil.
+
+708
+01:25:38,475 --> 01:25:38,995
+Çıktık.
+
+709
+01:25:39,196 --> 01:25:41,556
+J'yi 1 arttırdık. 4, 4 küçük eşit
+
+710
+01:25:41,556 --> 01:25:43,016
+4 mu? Evet. 3.
+
+711
+01:25:43,516 --> 01:25:45,416
+7'ye eşit mi? Değil.
+
+712
+01:25:46,175 --> 01:25:46,675
+Çıktık.
+
+713
+01:25:47,955 --> 01:25:49,475
+J 5 oldu.
+
+714
+01:25:50,416 --> 01:25:51,696
+Şurada da 5 olmuştu bu arada.
+
+715
+01:25:52,875 --> 01:25:53,336
+5.
+
+716
+01:25:53,336 --> 01:25:55,496
+5 olduğu için döngüden çıktık.
+
+717
+01:25:56,035 --> 01:25:56,755
+Geri döndük.
+
+718
+01:25:57,336 --> 01:25:58,416
+I kaç oldu?
+
+719
+01:25:59,136 --> 01:25:59,675
+3 oldu.
+
+720
+01:26:01,516 --> 01:26:03,115
+3 küçük 4 mu? Evet.
+
+721
+01:26:03,815 --> 01:26:05,016
+Minik 1 mi? Evet.
+
+722
+01:26:05,416 --> 01:26:06,596
+J kaç oldu? 4.
+
+723
+01:26:07,395 --> 01:26:08,996
+4 küçük 4 mu? Evet.
+
+724
+01:26:09,755 --> 01:26:11,416
+Dataset 3, 5.
+
+725
+01:26:11,656 --> 01:26:13,096
+Dataset 4, 7.
+
+726
+01:26:13,715 --> 01:26:15,016
+5, 7'ye eşit mi?
+
+727
+01:26:15,535 --> 01:26:16,675
+Değil. Çıktık.
+
+728
+01:26:17,196 --> 01:26:18,475
+J 5 oldu.
+
+729
+01:26:19,175 --> 01:26:21,475
+5 küçük 4 mu? Küçük eşit.
+
+730
+01:26:21,475 --> 01:26:23,236
+Değil. Çıktık döngüden.
+
+731
+01:26:23,336 --> 01:26:25,215
+I kaç oldu? 4 oldu.
+
+732
+01:26:25,916 --> 01:26:27,535
+4 küçük 4 mu?
+
+733
+01:26:28,816 --> 01:26:29,516
+Değil.
+
+734
+01:26:30,935 --> 01:26:31,435
+Çıktık.
+
+735
+01:26:32,096 --> 01:26:33,175
+Unique hala 1 mi?
+
+736
+01:26:33,736 --> 01:26:35,435
+Evet. Unique 1 olduğu için
+
+737
+01:26:35,435 --> 01:26:36,436
+eleman setimiz
+
+738
+01:26:36,436 --> 01:26:39,576
+unictir diye ekrana yazdık.
+
+739
+01:26:39,576 --> 01:26:41,296
+Eğer verilen
+
+740
+01:26:41,296 --> 01:26:42,755
+set grubumuz
+
+741
+01:26:42,755 --> 01:26:45,895
+1, 1, 3, 5 olsaydı
+
+742
+01:26:45,895 --> 01:26:47,315
+o zaman
+
+743
+01:26:47,315 --> 01:26:49,836
+ilk turda içeri girdikten sonra
+
+744
+01:26:49,836 --> 01:26:52,416
+dataset 1, dataset 2, 1, 1 eşit olduğu için
+
+745
+01:26:52,416 --> 01:26:53,895
+Unique sıfır olacaktı.
+
+746
+01:26:54,416 --> 01:26:56,675
+Unique sıfır olduğu için iç döngüden
+
+747
+01:26:56,675 --> 01:26:57,996
+ilk turda çıkacaktık.
+
+748
+01:26:58,876 --> 01:27:00,175
+I'ye 1 arttıracaktık.
+
+749
+01:27:00,895 --> 01:27:02,615
+Dış döngüde bakacaktık. Unique gene
+
+750
+01:27:02,615 --> 01:27:04,876
+sıfır olduğu için 1'e eşit olmadığı için çıkacaktık.
+
+751
+01:27:05,356 --> 01:27:06,696
+Kontrolümüzde Unique 1'e
+
+752
+01:27:06,696 --> 01:27:08,836
+eşit olmadığı için Not Unique
+
+753
+01:27:08,836 --> 01:27:10,136
+değerini ekrana
+
+754
+01:27:10,136 --> 01:27:11,595
+yazdıracaktı.
+
+755
+01:27:12,675 --> 01:27:13,895
+Buraya kadar soru sona vardı.
+
+756
+01:27:30,260 --> 01:27:32,260
+Evet, soru sorun var mı?
+
+757
+01:27:34,260 --> 01:27:44,260
+For döngüsü kullanmadan, break kullanmadan ve for döngüsünde indişse müdahale etmeden dışarıdan sorunun nasıl çözülebildiğini gördünüz.
+
+758
+01:27:44,260 --> 01:27:50,260
+Adım sayısı belli olmuyor, işlerle break kullanmayacağız, while kullanacağız.
+
+759
+01:27:50,260 --> 01:27:53,260
+Gördüğünüz gibi burada iç içe iki tane döngü yaptık.
+
+760
+01:27:53,260 --> 01:28:12,840
+Yani aslında birazcık fazla iş yapıyoruz ama ilk etapta bunu ilerleyen senelerde göreceksiniz biraz daha optimal, daha verimli diye yüksek bir çözümü var ama ilk aklınıza gelen brute force çözüm de olarak adlandırılan çözüm bu.
+
+761
+01:28:12,839 --> 01:28:20,059
+iç içe iki dönüm yapıyorsunuz. Otomatikman da karmaşıklık bir anda en kareye çıkıyor.
+
+762
+01:28:21,279 --> 01:28:29,879
+Yüz eleman olsaydı oldukça yüksek bir karşılaştırma sayısı mecburen yapmak zorunda kalacaktık.
+
+763
+01:28:31,059 --> 01:28:35,440
+Sormuz yoksa bir sonraki sayfaya geçiyorum.
+
+764
+01:28:35,440 --> 01:28:37,699
+Hocam benim vardı el kaldırdım ama.
+
+765
+01:28:37,859 --> 01:28:39,620
+Görmedim pardon olsun dinliyorum.
+
+766
+01:28:39,620 --> 01:28:46,800
+Ben şeyi anlamadım. O kısmı tekrar edebilir misiniz? Eğer Unix 0 ise nasıl döngüden çıktığını göremedim.
+
+767
+01:28:47,999 --> 01:28:55,340
+Şurada J küçük N ve Unix 1 olduğu sürece dönsün diyoruz.
+
+768
+01:28:55,819 --> 01:28:56,780
+Tamam, tamam.
+
+769
+01:28:56,780 --> 01:29:06,739
+Yani buradaki birinci koşul şu, ikinci koşul da bu. Biz bu koşulu şu noktada kırıyoruz.
+
+770
+01:29:06,739 --> 01:29:09,699
+Tamamdır hocam anladım
+
+771
+01:29:09,699 --> 01:29:11,359
+Teşekkür ederim
+
+772
+01:29:11,359 --> 01:29:12,219
+Mücaldür
+
+773
+01:29:12,219 --> 01:29:13,979
+Şimdi
+
+774
+01:29:13,979 --> 01:29:17,119
+Şöyle yapalım
+
+775
+01:29:23,155 --> 01:29:28,155
+Bir konuya giriş yapacağım. Sadece bir bilgi vereceğim, bir soru vereceğim.
+
+776
+01:29:28,155 --> 01:29:34,155
+Herşam bir gün devam edeceğim. Karakterleri hatırlarsınız, karakter sabitlerini hatırlarsınız.
+
+777
+01:29:34,155 --> 01:29:41,155
+Değişken tiplerimizde işte tam sayı, kesirli sayı, karakterleri saklayan değişkenler vardı.
+
+778
+01:29:41,155 --> 01:29:52,155
+Doğal olarak karakter dizileri de var arkadaşlar. Örneğin biz normalde, şöyle yazalım.
+
+779
+01:29:53,155 --> 01:29:59,336
+Bu bizim tam sayı dizimiz olsun. 1, 2, 3, 4 olsun.
+
+780
+01:30:01,075 --> 01:30:01,516
+Burada
+
+781
+01:30:01,516 --> 01:30:05,755
+Any of integers diyelim.
+
+782
+01:30:09,587 --> 01:30:12,587
+bir de
+
+783
+01:30:14,068 --> 01:30:23,408
+A, B, C gibi karakterleri sakladığımız diziler var.
+
+784
+01:30:24,847 --> 01:30:28,988
+Tabi burada karakterlerin sayısal karşılıklarını saklıyoruz.
+
+785
+01:30:29,207 --> 01:30:32,088
+Kendilerini birebir A, B, C diye değil saklamıyoruz.
+
+786
+01:30:32,527 --> 01:30:36,147
+Peki sayısal karşılıklarını dönüşüm için neden faydalanıyoruz?
+
+787
+01:30:36,647 --> 01:30:38,447
+Neredeki sayısal karşılıklarına bakıyoruz?
+
+788
+01:30:39,967 --> 01:30:40,287
+Emre?
+
+789
+01:30:40,988 --> 01:30:41,767
+ASCII tablosu.
+
+790
+01:30:41,767 --> 01:30:47,547
+Aski table bizim için önemli olan Aski table ama Aski table ile hiçbir zaman ezberlemeyeceksiniz demiştim.
+
+791
+01:30:47,547 --> 01:31:02,788
+Şimdi doğal olarak harfleri böyle sakladığımıza göre rakam karakterleri saklıyor olsaydık da bu sefer 1, 2, 3, 4 rakam karakterlerini saklıyor olacaktık.
+
+792
+01:31:02,787 --> 01:31:22,788
+Şimdi yukarıdaki birin saklanma değeri bir. İkininki iki, üçünki üç, dördünki dört. Çünkü bunlar tam sayı saklıyoruz. Peki aşağı geldiğinizde birin karşılığı nedir? Bellekteki. Evet Selim.
+
+793
+01:31:22,788 --> 01:31:28,268
+Eski tablosunda birin yerin neresiyse orayı işaret ediyor
+
+794
+01:31:28,268 --> 01:31:32,868
+Aynen öyle. Ben şimdi buraya, ben ezberlediğim için yıllar boyunca anlatarak yazıyorum
+
+795
+01:31:32,868 --> 01:31:36,487
+50, 51, 52
+
+796
+01:31:36,487 --> 01:31:44,868
+Yani sıfır rakamıyla dokuz rakamı bellekte arka arkaya geliyor
+
+797
+01:31:44,868 --> 01:31:50,048
+Küçük A ile küçük Z arka arkaya geliyor
+
+798
+01:31:50,047 --> 01:31:59,847
+büyük A ile büyük Z'ye kadar olan tüm karakterler arka arkaya geliyor. Bu bir kural ama kaçtan başladıklarını bilmek zorunda değilsiniz.
+
+799
+01:31:59,987 --> 01:32:06,187
+Ezberlemeyeceksiniz hiçbir zaman sayısal değerini kullanmayacaksınız. Yani en azından dersimiz boyunca.
+
+800
+01:32:06,187 --> 01:32:15,527
+Şimdi yukarıda dedik ki bellekte 1, 2, 3 ve 4 saklanıyor.
+
+801
+01:32:15,527 --> 01:32:26,547
+buraya geldiğimizde rakamları sakladığımızda karakter olarak 49, 50, 51 ve 52 saklanıyor.
+
+802
+01:32:28,967 --> 01:32:33,527
+Bunun detayına perşembe günü daha fazla gireceğiz karakterlerle ilgili olarak.
+
+803
+01:32:33,728 --> 01:32:36,168
+Aynı zamanda artık yavaş yavaş programlamaya da geçiyor olacağız.
+
+804
+01:32:36,167 --> 01:32:46,427
+programlamaya da. Ama benim şimdi sizden istediğim soru şu. Hemen algoritma herhalde 11 olacak.
+
+805
+01:32:54,131 --> 01:33:24,071
+n rakamdan oluşan bir karakter dizisindeki değeri tek bir tam sayı değerine dönüştüren algoritma, akış diyagramı çizimiz.
+
+806
+01:33:34,195 --> 01:33:46,496
+Bu da ne demek? Şu anda ekranda gördüğünüz 4 rakamdan oluşan değer tek bir tam sayıya dönüştürüldü değer kaç olacaktı?
+
+807
+01:33:48,564 --> 01:33:49,564
+Mert?
+
+808
+01:33:49,564 --> 01:33:51,564
+1234 mi?
+
+809
+01:33:51,564 --> 01:33:53,564
+Evet, 1234.
+
+810
+01:33:53,564 --> 01:34:10,564
+Diyelim ki 3, 0, 5 rakamlarından oluşan bir dizi verilseydi 3 elemanlı, bunun tek bir tam sayı değerini çevirdiğimdeki karşılığı 305 olacaktı.
+
+811
+01:34:10,564 --> 01:34:19,543
+tek bir rakam verilseydi bir, bunun başka bir tam sayı değişkenine karşılığı bir olarak yazılacaktı.
+
+812
+01:34:19,663 --> 01:34:24,823
+Halbuki bunun değeri kaçtı? 49'du bellekteki değeri.
+
+813
+01:34:25,904 --> 01:34:38,904
+Bizim istediğimiz size bir en elemandan oluşan karakter dizisi verildiğinde bu karakter dizisindeki elemanları işleyerek tek bir tam sayı değeri elde etmemiz.
+
+814
+01:34:38,904 --> 01:34:41,064
+Evet Emirhan
+
+815
+01:34:41,064 --> 01:34:44,804
+Ya dizi sıfırla başlarsa
+
+816
+01:34:44,804 --> 01:34:47,924
+mesela sıfır otuz beş olur
+
+817
+01:34:47,924 --> 01:34:50,203
+Onu dikkate almayın şu an için
+
+818
+01:34:50,203 --> 01:34:52,883
+Dizi sıfırla başlamayacak
+
+819
+01:34:52,883 --> 01:34:55,203
+Ama güzel bir uç nokta
+
+820
+01:34:55,203 --> 01:34:57,464
+Bunu sonra değerlendiririz
+
+821
+01:34:57,464 --> 01:35:01,644
+Yani biraz daha algoritma geliştirme yeteneğinizin ilerlediğinde buna bakacağız
+
+822
+01:35:01,644 --> 01:35:03,284
+Başka sorusu olan var mı?
+
+823
+01:35:05,224 --> 01:35:05,964
+Evet Ubelullah
+
+824
+01:35:05,964 --> 01:35:11,684
+Asçı tablosundaki değerleri kullanılabilir miyiz?
+
+825
+01:35:11,944 --> 01:35:20,904
+Kullanmayacaksınız. Sadece kullanmanız gereken karakter sabitleri var. Bir tane karakter sabiti, bir tane karakter sabiti.
+
+826
+01:35:21,924 --> 01:35:27,804
+Örneğin bir karakter sabitinden sıfır karakter sabitini çıkardığınızda kaç kalır?
+
+827
+01:35:33,203 --> 01:35:34,203
+Evet Selim?
+
+828
+01:35:35,203 --> 01:35:35,563
+Bir.
+
+829
+01:35:36,243 --> 01:35:48,664
+Bir kalır. Sayısal olarak bir kalır. Dokuz karakter saatinden sıfır karakter saatini çıkardığımızda sayısal olarak dokuz kalır. İşte buradaki bilgiyi kullanarak bu problemi çözüyor olacaksınız. Atakan?
+
+830
+01:35:49,743 --> 01:35:59,063
+Hocam yani basit düşünürsek aslında ödevde yaptığımız o üst alma muhabbetinin aynısını yapacağız. Bu sefer onlarla basamak basamak ilerleyeceğiz.
+
+831
+01:35:59,063 --> 01:36:07,943
+Artık o konuda ben bir şey söyleyemem. Çözüm kısmını biliyorsunuz söylemiyorum. Sadece çözüme yönelik ipuçları veriyorum. Onu bir sonraki derste konuşuyoruz.
+
+832
+01:36:09,783 --> 01:36:19,723
+Analizini yaptığınızda zaten çözümün doğru olup olmanı göreceksiniz. Evet. Bugünkü dersimizin sonuna geldik. Hepinize katıldığınız için, destek verdiğiniz için, katkıda bulunduğunuz için çok teşekkür ederim.
+
+833
+01:36:19,724 --> 01:36:21,584
+Güzel bir hafta diliyorum
+
+834
+01:36:21,584 --> 01:36:27,323
+Sorularınız olursa Perşembe günü derste sorabilirsiniz
+
+835
+01:36:27,323 --> 01:36:30,123
+Bu konuyu zaten daha derinlemesine inceleyiyoruz ama
+
+836
+01:36:30,123 --> 01:36:34,884
+Antrenman olması amacıyla size algoritmamız 11 oldu sanırım
+
+837
+01:36:34,884 --> 01:36:39,123
+11. algoritmamızı da soru olarak vermiş oldum
+
+838
+01:36:39,123 --> 01:36:40,464
+Kendinize iyi bakın, görüşmek üzere

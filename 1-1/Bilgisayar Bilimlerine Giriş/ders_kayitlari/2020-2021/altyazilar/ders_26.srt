@@ -1,0 +1,2807 @@
+1
+00:02:00,980 --> 00:02:15,599
+Günaydın arkadaşlar. Hepiniz hoş geldiniz. Bugün sayımız yine az gözüküyor. Biraz sayımızın artmasını bekledim ama pek değişecek gibi gözükmüyor.
+
+2
+00:02:17,199 --> 00:02:25,980
+Tabii yılın son günü yeni yıla geçiş yapıyoruz. Belki bazı arkadaşlarınız o yüzden katılmamayı tercih etmiş olabilirler.
+
+3
+00:02:25,980 --> 00:02:44,079
+Öncelikle hepinize sağlıklı, huzurlu, mutlu, güzel bir yıl diliyorum. Umarım bu seneden daha güzel bir sene olur. Özellikle bu son yaşadığımız pandemi olayı bir an önce biter diye ümit ediyorum. Ve herkes normal yaşantısına döner.
+
+4
+00:02:44,079 --> 00:02:55,259
+tabi şimdi son iki haftaya girdik 13. haftadayız 14. haftayla beraber
+
+5
+00:02:55,259 --> 00:03:04,079
+önümüzdeki final sınavlarına geçiş yapacağız final sınavları bize benzeri olacaktır
+
+6
+00:03:06,759 --> 00:03:11,879
+genel olarak iki bölümden oluşacak büyük ihtimalle sınav yine aynı şekilde
+
+7
+00:03:11,880 --> 00:03:25,420
+algoritma ağırlıklı olacaktır. Ama genel kültür konuları ve derste gördüğünüz diğer konularda mutlaka belli oranda karşınıza çıkacaktır.
+
+8
+00:03:26,360 --> 00:03:38,579
+Dönem projesi ile ilgili bazı sorular vardı. Onlara geri dönüş yapmadım. Mail ile, kemen sorulara. Belki bugün vaktimiz müsaade derse. Onları da yanıtlıyor olacağım.
+
+9
+00:03:38,579 --> 00:03:54,499
+Bugün operating system ile devam edeceğiz. Arkasından networking ve internet konusuna geçeceğiz. Kısa kısa bilgiler vereceğiz. Belki bildiğiniz bilgiler, belki hiç duymadığınız bilgiler.
+
+10
+00:03:54,499 --> 00:04:06,619
+Tabi bunlar kişiden kişiye göre değişiyor. İlgi alanınıza göre. Daha önceden bu alana ilgi duymuş kişiler bir kısım bilgileri biliyor olabilirler. Ama aradan mutlaka bilmediği bazı bilgiler öğreneceklerdir.
+
+11
+00:04:06,619 --> 00:04:19,599
+Şimdi isterseniz ben ekran paylaşacağım bunun ayarını yapayım. Ondan sonra kaldığımız yerden devam edelim.
+
+12
+00:05:05,235 --> 00:05:10,235
+Evet şimdi görüntümü kapatıyorum. Ekran paylaşımına geçiyorum.
+
+13
+00:05:19,444 --> 00:05:48,124
+sanırım şu anda ekranı görebiliyorsunuz. En son kaldığımız nokta burasıydı. Operating System üzerinde konuşmuştuk. Kernel'in görevlerinden bahsediyorduk. Bütün temel görevler aslında kernel tarafından yürütülüyor. Nedir Process Management, Memory Management, File Management, IO Management, Network Management, Device Driver'larla olan komünikasyon görevi.
+
+14
+00:05:48,124 --> 00:05:59,903
+bunların hepsi aslında kernel'in görevi. Şimdi bu noktada bir hemen devam edeceğiz.
+
+15
+00:06:03,624 --> 00:06:08,403
+Paging denilen bir kavram var. Belki daha önce duymuşsunuzdur.
+
+16
+00:06:08,403 --> 00:06:23,223
+Sizin donumsal olarak memoriniz, RAMiniz yeterli olmalı durumda bir virtual memory yaratılır.
+
+17
+00:06:23,223 --> 00:06:29,223
+Ve bu virtual memory de aslında paging yaklaşımıyla oluşturulur.
+
+18
+00:06:29,763 --> 00:06:32,263
+Secondary storage tarafında yaratılır.
+
+19
+00:06:32,263 --> 00:06:52,263
+ve buradaki önemli olan nokta sizin örneğin 4 GB'lık bir alanınız var ama açmaya çalıştığınız program 8 GB'lık bir alan gerektiriyor ilgili dosyelerle birlikte.
+
+20
+00:06:52,263 --> 00:07:18,683
+burası RAM olsun, burası program olsun. Sizin RAM'e yüklerken 8 GB'ı bir kısmını RAM'e yüklemeniz, bir kısmını da secondary storage tarafında saklamanız gerekiyor ki sürekli olarak RAM ile secondary storage arasında bir bilgi alışverişi gerçekleşsin.
+
+21
+00:07:18,683 --> 00:07:33,123
+Böylece 8 GB'lik programınızı RAM üzerinden çalıştırabilirsiniz. Yoksa elinizdeki RAM kapasitesinden daha büyük olan programların hiçbirini çalıştıramazsınız. Bu kısmı önemli.
+
+22
+00:07:33,123 --> 00:08:02,083
+Memory Manager'ın görevlerinden bir tanesi de bu paging operasyonunu yürütmek. Niye paging deniyor? Data pager'lere bölünüyor ve bu pager'ler genelde birkaç yüz ya da birkaç kilovayttan oluşuyor ve bu pager'ler aslında RAM ile secondary storage arasında sürekli olarak transfer ediliyor.
+
+23
+00:08:02,083 --> 00:08:13,964
+ilgili bölümler çalıştırılacağı zaman böylece RAM boyut yetmemesine rağmen kullanılarak işiniz gerçekleştirilmiş oluyor.
+
+24
+00:08:17,544 --> 00:08:22,104
+Bu ekstra bilgiyi verdikten sonra firmware'den bahsedelim.
+
+25
+00:08:27,091 --> 00:08:29,591
+firmware nedir diye sorayım size.
+
+26
+00:08:50,163 --> 00:08:53,363
+Evet, Evra.
+
+27
+00:08:55,251 --> 00:08:57,251
+eee
+
+28
+00:08:57,251 --> 00:08:58,411
+ne diyecektim?
+
+29
+00:08:58,732 --> 00:09:01,212
+ha makinelerin, sistemlerin kendi içindeki
+
+30
+00:09:01,212 --> 00:09:03,411
+o çalışan parçaların
+
+31
+00:09:03,411 --> 00:09:05,651
+çalışmasını sağlayan yazılım.
+
+32
+00:09:05,911 --> 00:09:07,411
+hani işlemcinin mesela direkt
+
+33
+00:09:07,411 --> 00:09:08,971
+çalışmasını bağlayan
+
+34
+00:09:08,971 --> 00:09:11,331
+çalışmasını sağlayan yazılım.
+
+35
+00:09:12,331 --> 00:09:12,731
+peki
+
+36
+00:09:12,731 --> 00:09:14,772
+eee Selim'den ne fikrim alalım?
+
+37
+00:09:16,051 --> 00:09:17,691
+ben sadece bir şey diyecektim aslında
+
+38
+00:09:17,691 --> 00:09:18,151
+o
+
+39
+00:09:18,151 --> 00:09:22,231
+sistemlerin çalışmasını sağlayan temel yazılım
+
+40
+00:09:22,231 --> 00:09:23,031
+diyecektim.
+
+41
+00:09:24,291 --> 00:09:25,051
+eee aslında
+
+42
+00:09:25,051 --> 00:09:52,891
+çok yanlış değil tabirleriniz doğru. Firmware işletim sistemi olmadan cihazınızın basic IO aktivitelerini gerçekleştirebilmesi ve boot işlemi sırasında yani işletim sistemini yüklemesi sırasındaki temel işleri gerçekleştirebilmesini sağlayan yazılım.
+
+43
+00:09:52,891 --> 00:09:57,871
+Peki firmware güncellemesi deriz.
+
+44
+00:09:57,871 --> 00:10:01,631
+Firmware güncellemesi aslında ne işimize yarar cihazlarda?
+
+45
+00:10:08,916 --> 00:10:09,735
+Evet Selim.
+
+46
+00:10:10,795 --> 00:10:20,695
+Daha önce var olan donanımın bazı kabiliyetlerinden faydalanamıyoruzdur. Bu güncellemekle artık daha fazla kabiliyetinden faydalanırız aynı donanımın.
+
+47
+00:10:20,695 --> 00:10:33,695
+Çok güzel bir tabir ve benzetme yani daha doğrusu tanım oldu. Daha önceden yeteneği sahip olduğunuz donanımsal yeteneği kullanamadığınız yetenekleri yeni bir firmware güncellemesi sonunda kullanabilirsiniz.
+
+48
+00:10:33,695 --> 00:10:53,115
+Örneğin bu televizyonlarda, akıllı televizyonlarda zaman zaman firmware güncellemeleri gelir. Eskiden iOS tarafında, Android tarafında da özellikle Android'de multi-touch özelliği donumsal olarak destekleniyordu ama böyle bir yetenek daha kazandırılmamıştı.
+
+49
+00:10:53,116 --> 00:11:07,856
+bu tür özellikle gömülü sistemlerde gelen firmware desteği sayesinde bilgisayarlarda, PC'lerde de zaman zaman yaşarız ama daha çok bu gömülü sistemlere aktarıldığında etkin bir şekilde farkı görürüz.
+
+50
+00:11:07,856 --> 00:11:16,356
+O donanımsal kabiliyeti artık yazılımla birlikte gerçek hayata uyarlayabiliyorsunuz demektir.
+
+51
+00:11:17,596 --> 00:11:20,216
+Hemen şu tanımı da yazalım.
+
+52
+00:11:37,395 --> 00:11:46,395
+Peki bilgisayardaki bilinen en temel firmware sistemi nedir?
+
+53
+00:11:55,892 --> 00:12:04,051
+eee... peki evrene söz vereyim. BIOS mu hocam? Günaydın. Evet. Kimden geldi ses?
+
+54
+00:12:04,051 --> 00:12:09,812
+Benden hocam. Sesim kötü mü geliyor? Mikrofonum kötü herhalde. Kuramadım bir türlü.
+
+55
+00:12:09,812 --> 00:12:11,731
+Mustafa Bey uzaydan konuşuyor gibisiniz.
+
+56
+00:12:11,731 --> 00:12:18,131
+Uzaydan konuşuyor gibisiniz? Çok kötü ya. Benim gibi bir adamım böyle bir şey. Şu anda nasıl hocam?
+
+57
+00:12:18,131 --> 00:12:22,771
+Niye? Sizin yüksek hedefleriniz var. Uzaya gitmiş olmanız kötü bir şey değil ki.
+
+58
+00:12:22,771 --> 00:12:30,671
+çok tatlı ya, çok güzel. Hocam, ne için alakalı bir şey soracağım? Tabii.
+
+59
+00:12:34,011 --> 00:12:46,351
+BIOS doğru mu bu arada? İnşallah doğru. Doğru doğru. BIOS doğru. Onları yazacağım. Kesinlikle BIOS doğru. En bilinen temel firmware sistemler olarak geçiyor.
+
+60
+00:12:46,351 --> 00:13:08,051
+Hocam normal bir programın kurulumu için hani yeterli gelmeyen RAM'in sanal virtual RAM oluşturaraktan kurulumunu sağlaması, paging oluyor da normalde şimdi benim harddiskim 5-6 parçaya bölüyorum ya.
+
+61
+00:13:08,051 --> 00:13:13,871
+Bu 5-6 parçadaki harddiskim işte en baştaki normal cm'deki C diyelim ona biz
+
+62
+00:13:13,871 --> 00:13:24,251
+C'deki harddiskim belli bir kapasitenin altına işte %10'ların altına boş alanının %10'ların altına düşmesi kısmı da yine paycheck olarak mı tanımlanıyor?
+
+63
+00:13:24,251 --> 00:13:34,111
+Yoksa o başlı başına başka bir şey çünkü komple bütün makinayı bayağı kasıyor artık çocuklarım
+
+64
+00:13:34,111 --> 00:13:37,551
+Yani şunu anlıyorum
+
+65
+00:13:37,551 --> 00:13:48,291
+%10'un altına düştüğü zaman yani harddistteki alan azaldığında makineler genelde yavaşlıyor diyorsunuz değil mi?
+
+66
+00:13:49,611 --> 00:13:50,892
+Bu da paging midir evet?
+
+67
+00:13:51,471 --> 00:13:53,391
+Yok bunu paging olarak yorumlamayalım.
+
+68
+00:13:53,391 --> 00:14:07,291
+Tabii ki eğer büyük bir dosya açıyorsanız paging ile alakalıdır mutlaka ama buradaki mevzu sizin özellikle IO işlemi yapmanın sırasında
+
+69
+00:14:07,291 --> 00:14:30,991
+harddiskiniz o kadar dolu noktaya geliyor ki artık programlar muhtemelen yani programın nasıl diyelim yerleşim biçimi, harddis kullanımını dağıtık bir vaziyette olduğu için onların erişim ne diyelim SSD'de bu çok yaşanmaz ama harddisi daha çok yaşanır.
+
+70
+00:14:30,991 --> 00:14:38,551
+mekanik bir erişim olduğu için bu rotasyonun yani kafa hareketinin bir noktadan bir noktaya gitmesinin uzun sümesine sebebiyet veriyor.
+
+71
+00:14:39,151 --> 00:14:42,191
+Bu yüzden de yavaşlama söz konusu oluyor.
+
+72
+00:14:42,991 --> 00:14:50,691
+Bende SSD var. Yani daha doğrusu normal HDD'nin yanında asıl SSD'de oluyor bu.
+
+73
+00:14:51,291 --> 00:14:56,411
+O ufak, 120'lik, gerçi kurulumları hep diğer HDD'nin üzerine yapmaya çalışıyorum ama
+
+74
+00:14:56,411 --> 00:15:08,051
+ana çalıştıran SSD hızlı olsun yani ama aşırı hızlı. Şimdi bakıyorum, 120'lik mesela SSD, bence çok az.
+
+75
+00:15:09,551 --> 00:15:24,291
+20'nin altına düştüğü anda böyle bayağı yoruyor ne zaman ki birkaç bir şey hemen çünkü şimdi özellikle video şeyleriyle uğraştığın zaman onu silamına oraya at oraya at derken bakıyorsun hemen 100 GB'nin üzerine çıkıyor.
+
+76
+00:15:24,291 --> 00:15:32,392
+zaten harddiskin 120 çıktığı anda bu sefer yavaş diyor. Benim diyor bu kenarda duran şeylerim bunları kasma diyor.
+
+77
+00:15:32,511 --> 00:15:37,431
+Fazla sıkıştı burası burayı boşaltıyor. Ne zaman hemen boşaltıyorum tekrardan eski haline dönüyor.
+
+78
+00:15:37,431 --> 00:15:49,871
+Sanki harddisk de sizin bahsettiğiniz o IOL'ları kullanmak için kendine bir virküm ömür kuruyor da burası bunaltıyor gibi geldi bana size anlatınca ama.
+
+79
+00:15:50,251 --> 00:15:53,931
+Yani ben açıkçası harddisk de öyle bir paging yapısı bilmiyorum.
+
+80
+00:15:54,932 --> 00:16:07,932
+Daha çok orada chunklar şeklinde sakladığımız veriler erişirken mekanik hareketlerde normal eski HDD'lerde yavaşlamasına sebebiyet veriyordu.
+
+81
+00:16:07,932 --> 00:16:15,932
+Ama ben kendim bizzat SSD'yi kullandığım cihazımda belirgin bir yavaşlamaya rastlamadım.
+
+82
+00:16:15,932 --> 00:16:18,932
+Ama doğrudur, buna bir bakacağım.
+
+83
+00:16:18,932 --> 00:16:28,991
+4 işlemci, ben genelde 3 ya da 4 aynı böyle bir de yoğun kapasiteli böyle video olsun, editli olsun bunlarla alakalı şeyler çalıştırıyorum.
+
+84
+00:16:29,452 --> 00:16:37,671
+Normal haliyle çok güzel. Aynı anda işte atıyorum videodaki yani aynı anda 4 tane video taraması yapabiliyorum.
+
+85
+00:16:37,671 --> 00:16:50,271
+farklı konularla alakalı. E şimdi bir süre sonra beni yoruyorsun diyor, harddisk diyor bunu yani bunu hissediyorum ben.
+
+86
+00:16:50,391 --> 00:17:01,131
+Hemen oradan 15.000 GB'i silince biraz böyle bakıyorum yine 4 anda aktif halde. Ama dediğiniz gibi bu SSD midir yoksa dediğiniz gibi unut ben de inanın bilmiyorum.
+
+87
+00:17:01,131 --> 00:17:04,771
+Yani o sırada tabii RAM'inizin bu arada boyutu nedir?
+
+88
+00:17:06,152 --> 00:17:06,551
+16.
+
+89
+00:17:06,551 --> 00:17:33,371
+16. Aslında yüksek bir miktar. Yani RAM ile ilgili sıkıntı olmuyor. Yok güzel makine yaptım. Yani 2TB HDD yaptım. İşte 16 RAM'ın yanına SSD'yi koydum. Ama 2TB şey var diyorsunuz. Hardisk var diyorsunuz. O şeydi hocam. O parçaladım onu. İşte atıyorum. 7-8 parçaya böldüm. Depo için kullandığım kısmı hariç. İşte Linux için kullandığım onu o şekilde. Anladım.
+
+90
+00:17:33,371 --> 00:18:03,351
+Ama sonuçta oraya kurduğum her şey de asıl başlangıç kısımları evet storoşikleri orası ama biliyorsunuz başlangıçları hep C'de. Bu böyle olunca C120 orada çok düşük kalıyor. Herhalde onun biraz şeyi geldi yani. Ama dedim ki o bir paging olduğunu düşünmüyorum. Çünkü benden bir şey bekliyor şimdi sizin paging
+
+91
+00:18:03,351 --> 00:18:11,051
+kolayınızda bu oluşturuluyor değil mi? Yani böyle bir şey olsa zaten virtual memory'yi kendisi oluşturuyor ve bunu
+
+92
+00:18:11,051 --> 00:18:24,111
+tabii, evet, şimdi konuşurken kendinden ayırtacağım. Aynen, aynen. Teşekkür ederim. Şimdi BIOS, Extensible Firmware Interface,
+
+93
+00:18:24,111 --> 00:18:38,151
+Sun'ın şu an Oracle'ın ürünü olduğu Sun's Open Firmware, Common Firmware Enmailement gibi zaman içerisinde farklı firmware'lerle yola devam ediliyor.
+
+94
+00:18:38,811 --> 00:18:43,831
+PC'ler için ama ağırlıklı olarak BIOS kullanılıyor. Basic Input Output Sistemi olarak.
+
+95
+00:18:43,831 --> 00:18:55,991
+burada işletim sistemi olmadan bir cihazın açılmasını sağlıyorsunuz ve cihazın temel görevlerini yerine getirmesini sağlıyorsunuz.
+
+96
+00:18:55,991 --> 00:19:09,432
+Hangi noktadan boot edeceksiniz sırasını belirliyorsunuz. Onun dışında RAM ile ilgili, işlemci ile ilgili ayarlar yapılacaksa bu Basic Input Output sistem üzerinden gerçekleştiriliyor.
+
+97
+00:19:09,432 --> 00:19:15,172
+firmware o yüzden bir cihaz için aslında çok önemli.
+
+98
+00:19:16,172 --> 00:19:17,551
+Gelelim booting proses'e.
+
+99
+00:19:20,471 --> 00:19:25,691
+Booting proses aslında açık hali bootstrapping diye geçiyor.
+
+100
+00:19:34,708 --> 00:19:37,807
+Burada şöyle bir mekanizmamız var.
+
+101
+00:19:39,307 --> 00:19:41,347
+Bir main memorimiz var.
+
+102
+00:19:44,187 --> 00:19:44,947
+Burada
+
+103
+00:19:44,947 --> 00:19:50,208
+bu main memory olarak adlandırdığımız kısmı
+
+104
+00:19:50,208 --> 00:19:51,487
+tabii
+
+105
+00:19:51,487 --> 00:19:55,787
+bunu burada böyle çiziyoruz ama
+
+106
+00:19:55,787 --> 00:19:58,747
+birbirinden farklı iki parçalarda düşünebilirsiniz.
+
+107
+00:19:59,708 --> 00:20:01,087
+Bir ROM bölümü var.
+
+108
+00:20:01,087 --> 00:20:02,587
+Read Only Memory.
+
+109
+00:20:02,587 --> 00:20:23,467
+burada bootloader'ınız bulunuyor. Yani bu booting işlemini konfigüre edecek kısım. Bir de sizin gerçek elektrikle çalışan volatile memory'ınız var. Yani elektrik olduğu sürece bilgiyi saklayıp da. Bir de disk storage'ınız var.
+
+110
+00:20:28,852 --> 00:20:32,312
+Operating System'ınız her zaman burada yüklü.
+
+111
+00:20:37,748 --> 00:21:01,748
+ve booting işlemi başladığı zaman operating system bellek tarafına aktarılıyor ve artık operating system secondary storage'dan bellek kısmına geçmiş oluyor. Bundan sonra bütün operasyonlar buradan yönetiliyor.
+
+112
+00:21:01,748 --> 00:21:21,687
+Şimdi Read Only Memory aslında adı üstünde üzerinde yazılamayan bir birim. Bir kez oluşturuluyor. Ama günümüzde Read Only Memory işte EPROM olarak geçiyor.
+
+113
+00:21:27,687 --> 00:21:31,707
+Erasable, programmable, Read Only Memory olarak geçiyor.
+
+114
+00:21:31,748 --> 00:21:54,127
+siz burada isterseniz zaman içerisinde belirli yazma sayısı kadar bootloaderınızda değişiklik yapabiliyorsunuz. Eskiden bu mümkün değildi. Ama bu böyle düşündüğünüz gibi RAM'e istediğiniz zaman yazabilirsiniz gibi sürekli olarak yazıp tekrar kullanmak şeklinde değil.
+
+115
+00:21:54,127 --> 00:22:06,087
+belirli bir sayısı var. Bunu şu anda flash memory tekniğiyle uyguluyorlar. Bu sayede belli miktarda tekrar modify edilebiliyor.
+
+116
+00:22:07,567 --> 00:22:17,587
+Eğer ihtiyaç oluşursa. Şu soruyu sorabilirsiniz. O zaman niye operating system'ı read-only memory ile tutmuyoruz?
+
+117
+00:22:17,587 --> 00:22:27,187
+her seferinde diskten memoriye yüklüyoruz ki biliyorsunuz bu yükleme işlemi mekanik disklerde uzun sürer, SSD'ler de kısa sürer.
+
+118
+00:22:27,527 --> 00:22:34,487
+Çünkü bu bütün programın storage'tan belleğe alınma işlemini barındırıyor.
+
+119
+00:22:34,487 --> 00:22:40,087
+Burada mikrofonu kapatalım.
+
+120
+00:22:40,087 --> 00:23:01,147
+Burada read-only memory kısmı aslında belirli bir boyuta sahip ve bir işletim sistemi genellikle zaman içerisinde çeşitli değişiklikleri vuruyor.
+
+121
+00:23:01,147 --> 00:23:05,468
+Yeni yetenekler kazanıyor ya da seküriter açıkları giderilmek üzere sürekli olarak güncelleniyor.
+
+122
+00:23:05,468 --> 00:23:12,447
+Böyle bir işletim sistemi read-only memory bölgesinde tutmak doğru değil.
+
+123
+00:23:12,447 --> 00:23:18,748
+Ama şöyle durumlarda kullanmak mantıklı olabilir.
+
+124
+00:23:19,328 --> 00:23:28,667
+Gömül sistemlerde operating sistemi doğrudan read-only memory'un içerisine ya da operating sistemi benzeri çalışacak programı read-only memory'e ekleyerek
+
+125
+00:23:28,667 --> 00:23:43,688
+burada sisteminizin, cihazınızın otomatik olarak buradan çalıştırılmasını ve bu noktadan volatile memory üzerinden görev almasını sağlayabilirsiniz.
+
+126
+00:24:00,596 --> 00:24:06,415
+Genelde Reelonde memorilerde yapılan güncellemeler firmware update olarak geçiyor.
+
+127
+00:24:06,415 --> 00:24:24,596
+Bu da temel olarak bir cihazın nasıl işletim sistemini kendi üzerine yüklediği, operasyonun kısaca anlatıldığı bir şekil olduğu.
+
+128
+00:24:24,596 --> 00:24:29,096
+Şimdi gelelim bir sonraki başlığımıza.
+
+129
+00:24:42,291 --> 00:25:00,411
+Şimdi cihazın aktivitelerinin koordine edilmesi noktası. Bu noktada biz bir programın işlemci üzerinde, işlemci tarafından çalıştırılacak hale dönüştürüldüğü versiyona proses diyoruz.
+
+130
+00:25:00,411 --> 00:25:15,472
+bir örneğin Word programı var. Bu bir program ama siz bunu executable hale getirdiğiniz zaman artık bir aktiviteye dönüştürmüş oluyorsunuz ve bu proses olarak adlandırılıyor.
+
+131
+00:25:15,472 --> 00:25:42,552
+her bir prosesin proses state'leri var. Temel olarak bir proses ready ya da waiting konumunda bulunabilir. Ready konumundaki prosesler işlem görmeye hazır proseslerdir. Waiting konumundaki prosesler daha çok bir cevap bekliyor pozisyonunda.
+
+132
+00:25:42,551 --> 00:25:51,652
+işte IO'dan bir cevap bekliyor olabilir, network'tan bir cevap bekliyor olabilir ya da başka bir prosesten gelecek bir cevabı bekliyor olabilir şeklinde düşünebilirsiniz.
+
+133
+00:25:52,231 --> 00:25:59,691
+Bunlar işlemci tarafından işleme alınacak durumda değildir waiting durumundakiler. Ready durumundakiler hazır bekliyordur.
+
+134
+00:25:59,692 --> 00:26:18,631
+işlemci müsait olduğu zaman bu prosesleri alır ve kullanır. Tabii proseslerin takibini sağladığımız, işlemcinin daha doğrusu işletim sisteminin takibini sağladığı bir proses table vardır.
+
+135
+00:26:18,631 --> 00:26:30,971
+bu proses table'da prosesse ait olan tüm bilgiler hangi noktada kalındığı, hangi değerlere sahip olduğu en son bu bilgiler burada saklanır.
+
+136
+00:26:31,771 --> 00:26:37,871
+Ve bir daha işlemci bu prosesse geldiğinde nereden devam edeceğini bilir işleme.
+
+137
+00:26:37,971 --> 00:26:43,691
+Çünkü eğer öyle olmasaydı prosesleri yarıda bırakıp diğer prosesse geçme şansımız olmazdı.
+
+138
+00:26:44,051 --> 00:26:45,771
+Bunları bir yerde saklamanız gerekiyor.
+
+139
+00:26:45,771 --> 00:26:48,451
+Peki prosesler arası geçişe ne ad veriyoruz?
+
+140
+00:26:48,631 --> 00:26:50,131
+bunu bir daha mı arına?
+
+141
+00:26:55,251 --> 00:26:57,712
+prosesler arası geçişe davranıyoruz.
+
+142
+00:27:06,132 --> 00:27:10,751
+Process Switch ya da bir başka ismiyle Contact Switch.
+
+143
+00:27:13,351 --> 00:27:23,371
+Şimdi aslında time slice'lar var. Bunlar işte millisecond ya da microsecond düzeyinde olduğunu düşünün.
+
+144
+00:27:24,491 --> 00:27:32,871
+CPU bu time slice'ları kullanarak birden fazla programı aynı anda çalıştırma yeteneğine sahip.
+
+145
+00:27:32,871 --> 00:27:45,312
+işte bu programlar çalışırken sizin algılayamayacağınız düzeyde hızlı bir geçiş olduğu için siz programların kesintisiz bir şekilde sürekli çalıştığını düşünüyorsunuz.
+
+146
+00:27:45,312 --> 00:28:01,511
+Aslında arka planda şu anda bilgisayarınızda açık olan tüm programlar proses olarak sürekli switch ediyorlar CPU'da ve siz aradaki kesintiyi anlamada müziği kesintisiz bir şekilde dinlemeye,
+
+147
+00:28:01,511 --> 00:28:08,431
+yazdığınız yazıyı kesintisiz bir şekilde ekranda görmeye, işte arka planda bir şey indirmeye devam ediyorsa
+
+148
+00:28:08,431 --> 00:28:14,431
+bunun kesintisiz bir şekilde devam ediyormuş gibi hissediyorsunuz.
+
+149
+00:28:15,371 --> 00:28:24,931
+Bu context switch yani prosesler arası geçiş tabii çok fazla ve sık olduğunda performans da belli oranda düşüyor.
+
+150
+00:28:24,931 --> 00:28:30,852
+Çünkü her seferinde bir process table'a yükleme yaptığınız, process table'daki son halini almanız demek.
+
+151
+00:28:30,852 --> 00:28:40,632
+Yani aslında hayatımızdadır öyledir. İşler arasında ne kadar fazla geçiş yaparsanız verimliliğiniz o oranda düşer.
+
+152
+00:28:41,532 --> 00:28:50,372
+Tabii biz bundan daha çok etkileniyoruz. Yani herkes bu kadar etkilenmeyebilir ama çoğu insan tek bir işe konsantre olarak daha başarılı olur.
+
+153
+00:28:50,372 --> 00:28:57,371
+Ama elinde 20 tane iş varsa sürekli onlar arasında switch ettiğinde en son nerede kaldığını hatırlamak zorundadır.
+
+154
+00:28:57,371 --> 00:29:08,331
+düşünce sistemini yeni işe göre evirmek zorundadır. Bu biraz zordur. Context switch için çok fazla olması sevdiğimiz bir durum değildir.
+
+155
+00:29:08,331 --> 00:29:22,031
+Tabii bu kuyrukta yer alan prosesler time slice değiştikçe bir dispatcher tarafından
+
+156
+00:29:22,031 --> 00:29:38,691
+dispatcher tarafından, queue management yapan, her seferinde alınır ve CPU'ya aktarılır.
+
+157
+00:29:38,691 --> 00:29:45,691
+Tabii böyle bir durumda her time slice'da bir interrupt oluşturulması gerekir.
+
+158
+00:29:46,831 --> 00:29:48,471
+Bu interrupt nedir bilen var mı?
+
+159
+00:29:53,268 --> 00:29:54,107
+Evet Selim.
+
+160
+00:29:55,627 --> 00:29:58,668
+İşlemcide çalışan var olan bir işlemin kesintiye uğraması.
+
+161
+00:29:59,487 --> 00:29:59,728
+Evet.
+
+162
+00:30:00,967 --> 00:30:05,427
+Şimdi peki neden işlemcide var olan bir işlemin kesintiye uğraması ihtiyacı oluşur?
+
+163
+00:30:07,367 --> 00:30:08,567
+Ben mi cevap veririm yoksa?
+
+164
+00:30:08,667 --> 00:30:09,547
+Tabii verebilirsin.
+
+165
+00:30:10,108 --> 00:30:16,227
+Çünkü o işlem kesintiye uğramazsa biz başka işlemle geçiş yapamayız. Bu sefer aynı anda işlerimizi gerçekleştirmeyiz.
+
+166
+00:30:16,427 --> 00:30:18,227
+Evet. Teşekkür ederim.
+
+167
+00:30:18,787 --> 00:30:21,167
+Örneğin keyboarddan bir değer giriyorsunuz.
+
+168
+00:30:21,167 --> 00:30:35,587
+keyboarddan değil dikilen değerine okunması gerekiyor. Eğer siz CPU'ya bu interrupt'ı göndermezseniz ki bu interrupt'ı kontrol eden mekanizma interrupt handler olarak altlandırılır.
+
+169
+00:30:35,587 --> 00:30:55,467
+O zaman şöyle bir durumla karşılaşırsınız. Klavyeden giren kişi klavyeden bilgiyi girdiğinde o bilginin okunmadığı için diğer klavyeye bastığı tuşun bilgisinin kaydedilmediğini ve işlemediğini görür.
+
+170
+00:30:55,467 --> 00:31:07,607
+keza biraz önceki gibi sizin dispatcherınız prosesleri switch edecektir. Interrupt göndermezse işlemciye işlemci elindeki işi bırakmasın.
+
+171
+00:31:07,607 --> 00:31:13,587
+Bu yüzden CPU bir interrupt sinyali aldığında farklı interrupt sinyalleri vardır.
+
+172
+00:31:13,587 --> 00:31:29,628
+elindeki ilgini cycle tamamlar. Yani cycle'ın ortasında biliyorsunuz hani bir işlemci saatinden başlamıştık ve diyelim ki bir işlem yapıyorsunuz.
+
+173
+00:31:29,628 --> 00:31:42,708
+Toplama işlemi 3 cycle sürüyor. O 3 cycle'ı tamamladıktan sonra o komut işini bitirdikten sonra nerede kaldıysa kaldığı yeri process table'a işaretler ve yeni interrupt neyse
+
+174
+00:31:42,707 --> 00:31:49,707
+inter-app handler ve vasıtasıyla buna karşılık verir ve ilgili işin yapılmasını sağlar.
+
+175
+00:31:50,947 --> 00:31:57,727
+Genellikle multi-programming yapısı bu şekilde ilerler. Bir context switch mekanizması ve inter-app'lar vardır.
+
+176
+00:32:00,727 --> 00:32:05,988
+Time slice'lar farklı prosesler tarafından kullanılır.
+
+177
+00:32:10,932 --> 00:32:12,932
+Notalım başka bir şey olmaz.
+
+178
+00:32:14,932 --> 00:32:15,932
+Şöyle
+
+179
+00:32:22,067 --> 00:32:24,467
+şöyle diyelim şu bilgi de yazalım
+
+180
+00:33:05,652 --> 00:33:15,652
+İşte buna biraz önce keyboard örneğini vermiştik. Mouse'a tıklamak da bu aksiyon olarak, Interapp'da oluşturan bir aksiyon olarak düşünebilirsiniz.
+
+181
+00:33:19,731 --> 00:33:39,332
+Tabii burada deadlock durumları oluşabiliyor. Proseslerin aynı kaynağa ihtiyaç duymaları durumunda ya da birbirlerinin sahip oldukları kaynağı kullanmak istemelerinde. Bununla ilgili çok detay vermeyeceğim ama şöyle düşünebilirsiniz.
+
+182
+00:33:39,332 --> 00:33:50,471
+ellerinde bir proses printer'ı kullanıyor, diğer proses de başka bir birimi kullanıyor diyelim. CD player'ı kullanıyor olsun.
+
+183
+00:33:51,432 --> 00:33:58,592
+Aynı anda printer'ı kullanan CD player'ı ister, CD player'ı kullanan printer'ı isterse bir deadlock oluşur.
+
+184
+00:33:58,592 --> 00:34:16,312
+O yüzden mutlaka bir mekanizma oluşturulması gerekir ki şehir edilen kaynaklar birbirlerine bir deadlock oluşturmayacak şekilde yönetilebilsin.
+
+185
+00:34:16,311 --> 00:34:40,991
+bu kısım önemli. Deadlock kavramı var. İki tane prosesin ellerindeki kaynakları karşılıklı ihtiyaç duyması durumunda ikisi de bir sonraki adımda diğer kaynağa ihtiyaç duyduğu için ellerindeki kullandıkları kaynakları bırakmıyorlar. Böylece bir deadlock oluşuyor ve sistem tıkanıyor.
+
+186
+00:34:40,991 --> 00:34:48,651
+bunu engellemek için mekanizmalar var. Belki ileride bunlarla ilgili daha fazla bilgi sahibi olacaksınız.
+
+187
+00:34:49,951 --> 00:35:00,051
+Günümüzde multi-core operating sistemler yavaş yavaş ortaya atılıyor. Çünkü CPU'lar multi-core hale geldiler.
+
+188
+00:35:00,051 --> 00:35:21,111
+bir single core'daki process management ile multi core'daki process management aynı değil. Çünkü proseslerin farklı core'lar arasında bilgi değişiminin de koordine edilmesi gerekiyor. O yüzden buna uygun yeni donanımsal yapıya uygun işletim sistemleri de zaman içerisinde ortaya atılıyor.
+
+189
+00:35:21,111 --> 00:35:49,371
+Bunun ötesinde security ile ilgili çok önemli noktalar var. Ama bunlara girmeyeceğim. Bu çünkü ayrı bir mevzu demek. Biliyorsunuz işletim sistemleri kullanıcı yönetiminden de sorumlu. Özellikle PC'de aynı anda birden fazla kullanıcı biliyorsunuz PC ortamında aktif olamıyor. Ama serverlerde, sunucularda birden fazla kullanıcı aynı anda aktif bir şekilde bilgisayarın kaynaklarını kullanabiliyor.
+
+190
+00:35:49,371 --> 00:36:11,532
+Bu doğrultuda sizin kullanıcı user management'ı da ilgili ihtiyaçlarınıza göre dizayn etmeniz gerekir. Bir bilgisayarda birden fazla kullanıcı ekantı olabiliyor. Bunun dosyalarını birbirinden bağımsız hale getiriyorsunuz. Birbirlerinin yaptığı işleri görmemesini sağlıyorsunuz ama aynı anda aktif edemiyorsunuz.
+
+191
+00:36:11,532 --> 00:36:28,472
+Fakat sunucuda herkes aynı anda tüm kaynaklara erişme hakkına sahip. Bunu yönetmekte ayrı bir operating system designi gerektiriyor. O yüzden PC operating systemlarla server operating systemlar birbirlerinden bu anlamda ayrılmakta var.
+
+192
+00:36:28,952 --> 00:36:32,672
+Şimdi Selim'e söz vermeden önce Ubeydullah bir şey söylemek istiyordu. Ona söz vereyim.
+
+193
+00:36:34,791 --> 00:36:40,731
+Hocam ben process switch'in bir daha değinebilir misiniz diyecektim de.
+
+194
+00:36:41,532 --> 00:37:11,511
+Process Switch bir CPU'nun bir time slice'da bir prosesi çalıştırırken o proses tamamlanmadan başka bir time slice'a geçildiğinde multitasking özelliğini sağlayabilmek için diğer prosesin kaldığı yerin process table'dan okunması ve mevcut prosesin o anda bulunduğu state'in process table'da yapılması sırasında gerçekleşen işlemlere kontaktörlük.
+
+195
+00:37:11,531 --> 00:37:13,631
+text switch, process switch ismini veriyoruz.
+
+196
+00:37:14,711 --> 00:37:16,791
+Yani hocam biz...
+
+197
+00:37:16,820 --> 00:37:28,419
+Bir şeyden başka bir pencereye geçtiğimiz zaman arkadaki duruyor mu? O yerinde mi duruyor yani? O en son bıraktığınız şeklinde mi duruyor?
+
+198
+00:37:28,700 --> 00:37:32,280
+Sorunu tam anlayamıyorum. Duruyor mu derken neyi kastediyorsun? Net duruyor mu?
+
+199
+00:37:34,080 --> 00:37:38,279
+Yani işlem devam ediyor mu o arka planda olan penceredeki?
+
+200
+00:37:38,279 --> 00:37:49,799
+Şimdi cycle'lar var. Bir işlem işlemini gerçekleştirirken CPU üzerinde diyelim ki toplama işlemi yapıyor o anda.
+
+201
+00:37:49,799 --> 00:37:59,459
+Toplama işlemi bittiği anda o cycle tamamlandığı için o time slice işlemci o prosesi bırakıyor.
+
+202
+00:38:00,360 --> 00:38:07,320
+Sıradaki Q'daki yeni prosesi alıyor. O sırada bahsettiğimiz proses müzik çalma ise duruyor.
+
+203
+00:38:07,320 --> 00:38:14,660
+Word'de tekst yazması duruyor. Editörde bir şey yazıyorsanız duruyor.
+
+204
+00:38:17,559 --> 00:38:19,720
+Anladım hocam. Sağ olun.
+
+205
+00:38:20,720 --> 00:38:28,239
+Bunlar milisaniye cinsinde, milisaniye ya da mikrosaniye seviyesinde olduğu için siz bunları zaten algılayamıyorsunuz.
+
+206
+00:38:28,239 --> 00:38:35,860
+Yani o anda siz algılayana kadar tekrar çalışmış oluyor. Böylece kesintisiz bir hizmet alıyorsunuz. Bilmiyorum soruna cevap oldu mu?
+
+207
+00:38:37,320 --> 00:38:38,980
+Evet hocam. Sağ olun.
+
+208
+00:38:39,279 --> 00:38:40,260
+Rica ederim. Selim?
+
+209
+00:38:41,599 --> 00:38:59,400
+Hocam yanlış anlamadaysam şey demiştiniz. Son zamanlarda multikor kullanmak üzere işletim sistemini düşünüyor demiştiniz. Şu anda kullandığımız modern işletim sistemleri bilgisayarda ya da telefon cihazlarımızda işletimcinin çok çekirdek kabiliyetinden faydalanır mı?
+
+210
+00:38:59,399 --> 00:39:27,219
+Faydalanıyorum. Son yıllarda ortaya çıkan işletim sistemleri bu yetenekleri kullanmak üzerine dizayn ediliyor. Aslında bunu vurgulamak istemiştim. Eskiden multi-core operating sistemlerin multi-core yetenekleri yoktu. Daha çok hali hazırdaki yetenekleriyle donanımı kullanabiliyorlardı. Ama o zaman da aslında tam bir multi-core yapıda çalışmıyorlardı. Performansları düşük oluyordu.
+
+211
+00:39:27,219 --> 00:39:29,519
+Tamam hocam teşekkür ederim
+
+212
+00:39:29,519 --> 00:39:31,419
+Bunu biraz şey gibi de düşünebilirsiniz
+
+213
+00:39:31,419 --> 00:39:36,459
+64 bit bir mimariniz var
+
+214
+00:39:36,459 --> 00:39:41,379
+Yani donanımsal olarak işlemci ortaya koymuşsunuz
+
+215
+00:39:41,379 --> 00:39:46,899
+Bir de 32 bit ve 64 bit olmak üzere operating sistemleriniz var
+
+216
+00:39:46,899 --> 00:39:56,159
+Siz teknik olarak bir 32 bit mimaride 64 bit bir versiyonu çalıştırarak
+
+217
+00:39:56,159 --> 00:40:04,639
+işleminizi yapma şansına sahipsiniz. Ama tam tersini yapma şansına sahip değilsiniz donanımsal olarak.
+
+218
+00:40:05,900 --> 00:40:14,099
+Örnek veriyorum. Yani daha doğrusu ters söyledim galiba. Bir daha düzelteyim. 64 bit donanım üzerinde 32 bit işler yapabilirsiniz.
+
+219
+00:40:14,419 --> 00:40:23,079
+Ama 32 bit donanım üzerinde 64 bit yazılımla iş yapma şansınız yok. Diğer ara böyle bir geçiş dönemi vardı ama artık tamamen birbirinden ayrıldı.
+
+220
+00:40:23,079 --> 00:40:32,419
+32 bit üzerinde mutlaka 32 bit işletim sistemi, 64 bit üzerinde de 64 bitlik işletim sistemi kullanılması gerekiyor.
+
+221
+00:40:34,159 --> 00:40:35,439
+Andım hocam sağ olun.
+
+222
+00:40:36,519 --> 00:40:37,139
+Rica ederim.
+
+223
+00:40:39,199 --> 00:40:46,359
+Evet şimdi 9.47 oldu. Saat 10'a kadar bir ara verelim. Ondan sonra network kısmına, internet kısmına birazcık geçeceğiz.
+
+224
+00:40:47,739 --> 00:40:48,699
+Evet görüşmek üzere arkadaşlar.
+
+225
+00:54:01,780 --> 00:54:22,419
+Evet arkadaşlar, yeniden merhaba. Dersin ikinci bölümüne hoş geldiniz. Şimdi dersin ikinci bölümüne konu olarak, anlatım olarak geçmeden önce her sene yapmış olduğum bir uygulamayı gerçekleştirmek istiyorum. Sınıfta olduğunda boş bir kağıt dağıtıyordum. Şimdi bir anket linki göndereceğim.
+
+226
+00:54:22,419 --> 00:54:31,499
+Yusist'te de bu derste ilgili belli sorular olacak memnuniyet düzeyinizi ölçen orada da objektif bir şekilde değerlendirirsiniz.
+
+227
+00:54:31,499 --> 00:54:45,219
+Ama ben kendi arşivim açısından ve Yusist'te bir yorum yazma kısmı olmadığından sizlere hem 3-4 tane böyle puanlandırma sorusu hem de yorum yazabileceğiniz bir alan gönderiyorum.
+
+228
+00:54:45,879 --> 00:54:49,419
+Buraya derste memnun olduğunuz, memnun olmadığınız kısımları yazmanızı istiyorum.
+
+229
+00:54:49,419 --> 00:55:10,299
+saygı çerçevesi içerisinde tüm eleştirilerinizi yapabilirsiniz dersin. Bir dahaki sene daha iyi verilmesi noktasında eksikler, iyi yönler, memnun oldunuz, memnun olmadığınız şu şekilde düzeltilebilir diye önerileriniz varsa bunları aktaracağınız bir form gönderiyorum şimdi size link olarak.
+
+230
+00:55:10,299 --> 00:55:24,079
+10.01 saat 10'a 10 geçene kadar bu formu doldurmanızı isteyeceğim. Bu formda yazacaklarınız benim için önemli. Daha sonra eleştirileriniz olursa onları da yorumlayacağım.
+
+231
+00:55:25,299 --> 00:55:37,519
+Vakit yetecektir önümüzdeki haftada dersimiz var. O yüzden objektif bir şekilde saygı çerçevesinde her türlü fikrinizi paylaşabilirsiniz. Ben şimdi size
+
+232
+00:55:37,519 --> 00:55:51,099
+linki aktardım. Bu linkten lütfen anketi girip dolduralım.
+
+233
+00:56:08,596 --> 00:56:15,596
+puanlamalar da tabii ki çok önemli ama benim için önemli olan metin olarak yazacağınız görüşleriniz.
+
+234
+01:03:44,019 --> 01:04:10,659
+Arkadaşlar, şu ana kadar 35 kişi doldurmuş. 52 kişi var şu anda derste. O yüzden rıcam tekrar anketi paylaşıyorum. Geri kalan arkadaşları da doldurmaları yönünde teşvik etmek isterim. Devam edenler devam edebilir. 2-3 dakika daha veriyorum. Ama lütfen 2-3 dakika içerisinde toparlayalım. Bu kadar dertli olduğunuzu bilmiyordum.
+
+235
+01:04:25,139 --> 01:04:29,139
+Hocam bir de klavyesi olmayanlar olabilir, o yüzden çok fazla şey yapmıyor.
+
+236
+01:04:29,139 --> 01:04:35,139
+Eee Mustafa Bey, klavyesi olmayanlar biliyorsunuz yeni teknolojide nasıl yazıyorlar?
+
+237
+01:04:35,139 --> 01:04:41,139
+İnanın bilmiyorum klavyesiz nasıl yazıyorlar? Konuşarak mı, sesi mi?
+
+238
+01:04:41,139 --> 01:04:46,139
+Konuşuyorsunuz, konuştuğunuz zaman size speech to text yapıyor.
+
+239
+01:04:46,139 --> 01:04:49,139
+Aaa çok iyi ya, ben hiç onu bir bakıyorum.
+
+240
+01:04:49,139 --> 01:04:52,139
+WhatsApp da yapmıyor musunuz siz?
+
+241
+01:04:52,139 --> 01:04:55,759
+Doğru diyorsun. Yok hiç denemedim ben onu hocam. İnanın denemedim.
+
+242
+01:04:56,139 --> 01:04:57,619
+Lütfen siz. Yok yok.
+
+243
+01:04:58,160 --> 01:04:59,299
+Bence yapabilirsiniz bunu.
+
+244
+01:05:01,220 --> 01:05:07,680
+Bence de. Yani ben o Siri muhabbetlerine hiç girmedim hocam. Yani sekreterim olsun.
+
+245
+01:05:07,959 --> 01:05:18,959
+Siri değil bu. Bu normal Siri'nin dışında sizin birçok uygulamada desteklediği bir speech to text Siri'yi karıştırmayın. Siri zaten çok şu anda yetenekli bir durumda değil.
+
+246
+01:06:37,940 --> 01:06:42,380
+Şu arada bir soru sorabilir miyim? Dersi pek biraz alakası o.
+
+247
+01:06:47,668 --> 01:06:48,867
+Sorabilirsin Meydullah.
+
+248
+01:06:50,727 --> 01:06:51,487
+Hocam, random
+
+249
+01:06:51,487 --> 01:06:54,148
+random fonksiyonu
+
+250
+01:06:54,148 --> 01:07:00,668
+nasıl çalışıyor? Yani neye bağlı olarak çalışıyor?
+
+251
+01:07:01,287 --> 01:07:03,327
+Bildiğim kadarıyla bilgisayar
+
+252
+01:07:03,327 --> 01:07:06,527
+rastgele bir şey üretmekte çok zorlanır.
+
+253
+01:07:06,848 --> 01:07:08,247
+Yani yapamadığı bir şey.
+
+254
+01:07:09,107 --> 01:07:09,787
+Niye böyle bir düşünüyorsun?
+
+255
+01:07:09,787 --> 01:07:11,928
+Random fonksiyonu neye bağlı olarak çalışıyor hocam?
+
+256
+01:07:11,928 --> 01:07:13,247
+Şeyi anlayamadım.
+
+257
+01:07:14,047 --> 01:07:16,387
+Niye öyle bir kanı oluştu sende
+
+258
+01:07:16,387 --> 01:07:18,668
+bir ikisi daha niye zorlansın?
+
+259
+01:07:22,771 --> 01:07:24,771
+Rastgele bir şey çünkü hocam.
+
+260
+01:07:24,771 --> 01:07:35,771
+Tamam, rastgele bir şey üretmek için çok farklı yöntemler var yani rastgele bir şey yiyip sadece bilgisayara üretmek değil, sen rastgele olarak bir şey üretmek istesen nasıl yapabilirsin?
+
+261
+01:07:35,771 --> 01:07:40,771
+Yani kendini elle yapmak isteseydin.
+
+262
+01:07:46,164 --> 01:07:51,983
+algoritma olarak mı? Mesela evet, yani rastgele bir sayı üreteceksin, ne yaparsın?
+
+263
+01:07:59,123 --> 01:08:00,163
+Hiç bilemiyorum hocam.
+
+264
+01:08:02,963 --> 01:08:03,743
+Mesela...
+
+265
+01:08:03,743 --> 01:08:06,223
+Bir şeye bağlı olması gerekmiyor mu bunun?
+
+266
+01:08:07,743 --> 01:08:12,584
+Tamam, bir şeye bağlı olması gerekiyor ama bunun için başlangıç noktası belirlersin.
+
+267
+01:08:13,143 --> 01:08:15,243
+Bu başlangıç noktası da genelde time olur.
+
+268
+01:08:16,323 --> 01:08:19,283
+O andaki time'ı alırsın, o timedeki değeri kullanırsın.
+
+269
+01:08:20,943 --> 01:08:27,983
+O timedeki başlangıç noktası ile prime number'lar üzerinden, yani asal sayılar üzerinden
+
+270
+01:08:27,983 --> 01:08:48,763
+mesela rastgele sayılar üretme olasılığını var. Böyle bu şekilde yapılıyor. Ama hani bu konu biraz daha böyle detaylı bir şekilde anlatılması gereken bir konu. Çünkü farklı yöntemleri var rastgele sayı üretmenin. İstersen bunu önümüzdeki hafta tekrar hatırlatırsan konuşuruz.
+
+271
+01:08:49,304 --> 01:08:50,443
+Tamam hocam.
+
+272
+01:08:50,443 --> 01:08:58,024
+Çünkü bugün şu anda schedule'ımızın zaten gerisinde kaldık biraz. Onu bir tamamlayalım.
+
+273
+01:08:59,283 --> 01:08:59,804
+Tamamdır.
+
+274
+01:09:00,443 --> 01:09:02,063
+Tamam, teşekkür ederim.
+
+275
+01:09:14,899 --> 01:09:19,439
+neyse bakalım ne olmuştu. Evet şu anda 41 kişi olmuş.
+
+276
+01:09:19,439 --> 01:09:20,599
+Eee
+
+277
+01:09:20,599 --> 01:09:22,659
+Açıkçası
+
+278
+01:09:22,659 --> 01:09:25,439
+Eee
+
+279
+01:09:28,532 --> 01:09:30,712
+daha fazla katılım olmasını beklerdim ama
+
+280
+01:09:30,712 --> 01:09:36,872
+benim için yeterli. Şu anda süremizi de aşmamak adına çok teşekkür ediyorum.
+
+281
+01:09:36,992 --> 01:09:38,532
+Buradaki yorumları okuduktan sonra
+
+282
+01:09:39,611 --> 01:09:43,711
+bir tabii ki geri dönüş yapacağım size.
+
+283
+01:09:48,243 --> 01:09:50,403
+Şimdi biz kaldığımız yerden devam edelim.
+
+284
+01:10:02,292 --> 01:10:31,151
+Evet, şimdi biliyorsunuz bilgisayarın kendi iç işlerini kontrol etmesi için donanım parçalarını işletim sistemi olduğundan bahsetmiştik ama bilgisayarlar sadece kendi içlerinde işleri yapmıyorlar. Uzunca bir süredir bilgisayarlar birbirleriyle yaptıkları işlerin sonuçlarını paylaşıyorlar. Bunun için de birbirleriyle haberleşmeleri gerekiyor. Bu çok önemli bir yetenek aslında.
+
+285
+01:10:31,151 --> 01:10:39,292
+ilk etapta iki bilgisayarı birbiriyle bağlayıp birbirleriyle iletişim halinde konuşturabilirsiniz.
+
+286
+01:10:40,171 --> 01:10:51,851
+Ama hedefimiz tabii iki tane bilgisayarın birbiriyle konuşması değil, dünyadaki bütün bilgisayarların birbirleriyle konuşabilir durumda olması demek.
+
+287
+01:10:51,851 --> 01:10:58,451
+Bunun için oluşturduğumuz bu yapıya, bilgisayarları birbirleriyle bağladığımız yapıya network adını veriyoruz.
+
+288
+01:10:59,111 --> 01:11:00,871
+Bunu da hemen bir define edelim.
+
+289
+01:12:26,323 --> 01:12:34,323
+Şimdi bilgisayarların birbirleriyle oluşturduğu bu bağ kurulmuş yapıya, veri paylaşımı için oluşturduğumuz bu yapıya,
+
+290
+01:12:34,323 --> 01:12:40,323
+Network ismi veriyoruz. Bilgisayar ağları Computer Networks diye geçiyor.
+
+291
+01:12:40,323 --> 01:12:51,323
+Computer Networkler, klasifiye ettiğimizde farklı skellere göre adlandırılıyorlar.
+
+292
+01:12:51,323 --> 01:13:06,684
+en küçük skeylde personal area network yine başlayan yapı PAN diye kısaltılır.
+
+293
+01:13:08,143 --> 01:13:10,123
+Arkasından local area network gelir.
+
+294
+01:13:14,420 --> 01:13:17,939
+arkasından Metropolitan Area Network gelir.
+
+295
+01:13:22,644 --> 01:13:25,723
+ve en sonunda da Wide Area Network.
+
+296
+01:13:30,228 --> 01:13:41,028
+gelir. one olmak üzere, lan ve man. Bunların birbirinden farkı nedir?
+
+297
+01:13:44,948 --> 01:13:48,948
+Evet Selim. Yok pardon, Mahmut'a söz vereyim. Mahmut kaldırdı.
+
+298
+01:13:49,948 --> 01:14:07,948
+Hocam, alan genişliği, alan tesiri meselesi var. Yani mesela Personal Area Network'ta sadece kendi bilgisayarımızla iş yapabiliyorken Local Area'da mesela kendi evimizde iş yapıyoruz. Metropolitan tüm şehre etki eden bir sistem. Wide Area bir ülke gibi.
+
+299
+01:14:07,948 --> 01:14:23,067
+Genel olarak doğru arkadaşınızın söylediği birkaç metrelik çaptaki haberleşme short range communication personal area network üzerinden gerçekleşiyor.
+
+300
+01:14:23,067 --> 01:14:30,007
+Bu tarz haberleşen sistemlere burada kullanılan protokollere de bağlı olarak personal area network diyoruz.
+
+301
+01:14:30,007 --> 01:14:45,507
+daha çok bir bina içerisinde ya da binaların, birbirine yakın olan binaların birbirleriyle bağlı olduğu kampüs ortamlarında Local Area Network kullanıyoruz.
+
+302
+01:14:46,448 --> 01:14:55,367
+Metropolitan Area Network intermediate size olarak geçer ve genelde daha çok bir şehir boyutunda ifade edilir.
+
+303
+01:14:55,367 --> 01:15:02,287
+Wide Area Network ise sizin genelde tüm dünyadaki oluşturduğunuz network'e verilen isimdir.
+
+304
+01:15:02,808 --> 01:15:10,067
+Genellikle open network olarak kullanırız bu bilgisayar ağlarının üzerindeki haberleşmeyi.
+
+305
+01:15:10,607 --> 01:15:19,528
+Ama bazı özel kuruluşlar, closed network'lar oluşturarak kendi kurallarını kendi bilgisayar bağlantılarında gerçekleştirebilirler.
+
+306
+01:15:19,527 --> 01:15:30,247
+Şimdi bunlar networklerin ne şekilde bir farklı şekilde klasifiye edersek nasıl sınıflandıracağını bize gösteriyordu.
+
+307
+01:15:32,067 --> 01:15:44,807
+Şimdi bunların bir de topolojik yerleşimleri var. Yani bilgisayarların birbirlerine nasıl bağlı olduğu bilinen iki tane network topolojisi var.
+
+308
+01:15:52,275 --> 01:16:09,495
+Bunlardan bir tanesi BAS Network Topolojisi. Burada bilgisayarlar birbirlerine bir hat üzerinden bağlılar.
+
+309
+01:16:15,988 --> 01:16:23,448
+ve bu hat üzerinden birbirlerine bilgiyi gönderiyorlar. Bir de basa ek olarak bilinen star yapısı var.
+
+310
+01:16:25,448 --> 01:16:36,508
+Burada merkezde haberleşmenin sorumluluğunu taşıyan bir bilgisayar var. Haberleşme bu bilgisayar üzerinden gerçekleşiyor.
+
+311
+01:16:36,508 --> 01:16:44,467
+Buna da star topoloji diyoruz. Bunu bilgisayar ağları dersinde farklı bir şekilde,
+
+312
+01:16:44,467 --> 01:16:55,287
+detaylı bir şekilde görüyor olacaksınız. Peki, bus topolojisini kullandığımız bir örnek ve star topolojisini kullandığımız bir örnek verebilir misiniz?
+
+313
+01:17:08,051 --> 01:17:08,811
+Evet Selim.
+
+314
+01:17:10,811 --> 01:17:22,392
+Bazı için şu an veremeyeceğim galiba ama star için merkezde evimizdeki modemler olmak üzere etrafındaki cihazlarda bizim kullandığımız bilgisayarda telefon olmak üzere örnek verebilirim.
+
+315
+01:17:22,392 --> 01:17:24,371
+Valus Access Pointler
+
+316
+01:17:24,371 --> 01:17:47,892
+Yani bu evinizdeki modeminizin bu görevi gördüğünü düşünürseniz bu bir örnek ya da üniversitede herkesin belirli bir access point üzerinden valus olarak bağlanması gene o bağlantının o access point tarafından yönetilmesi demek.
+
+317
+01:17:47,892 --> 01:17:54,291
+yani radyo sinyalleri o access point'e gidiyor ve o access point üzerinden siz bilgilerinizi aktarıyorsunuz.
+
+318
+01:17:54,632 --> 01:17:58,331
+Bu wireless networklerde çok sık kullanılan bir yapı.
+
+319
+01:17:59,252 --> 01:18:12,412
+Buna ek olarak BUS için Ethernet protokolünü kullandığımız şu anda aslında üniversitelerde de bilgisayarların birbirlerine bağlı olduğu yapıya örnek verebiliriz.
+
+320
+01:18:12,412 --> 01:18:28,092
+1990'lardan itibaren kullanılan bu Ethernet hala en yaygın network ağlarından bir tanesidir. Bu da bus yapısını kullanır. Bilgisayarlar birbirlerine bir hat üzerinden bağlıdırlar.
+
+321
+01:18:28,092 --> 01:18:54,092
+tabi bu hatlarda belirli ekstra aparatlar kullanıyoruz. Bu aparatları isterseniz bir konuşalım. Çünkü ağları birbirleriyle bağlamamız gerekiyor ki gönderdiğimiz sinyalin gücü belirli bir mesafeden sonra düştüğü için o sinyali bir sonraki ağa hatasız bir şekilde taşıyabilirim.
+
+322
+01:18:54,092 --> 01:18:56,092
+Bu kısımda
+
+323
+01:18:57,092 --> 01:19:00,092
+We'll link a
+
+324
+01:19:00,632 --> 01:19:04,592
+Large Bus Network diyelim.
+
+325
+01:19:08,372 --> 01:19:11,671
+from smaller ones.
+
+326
+01:19:14,355 --> 01:19:19,756
+kullanabileceğiniz neler var bir ona bakacağız.
+
+327
+01:19:40,467 --> 01:19:44,047
+Şimdi burada Network 1 olsun.
+
+328
+01:19:46,107 --> 01:19:47,887
+Burada Network 2 olsun.
+
+329
+01:19:51,412 --> 01:20:02,811
+Bu aradaki bağlantıyı sağlayan iki tane bus yapısını bir araya getiren daha büyük bir bus network oluşturmamızı sağlayan cihaz nedir?
+
+330
+01:20:05,939 --> 01:20:35,919
+Evet Selim. Switch olabilir mi? Switch değil daha basit bir versiyonu Repeater. Repeater sizin sinyal, uzun bir bas yani birbirine bağlı aynı networkta olan ama daha fazla bilgisayardan ve uzun mesafeden oluşan bir yapınız varsa Repeater'la gelen sinyali gücünü kaybetmiş sinyali yeniden oluşturarak
+
+331
+01:20:35,939 --> 01:20:43,320
+gücünü kaybetmesinden kaynaklı sıkıntıyı gidererek iletirsiniz ve böyle sinyal kayıpsız bir şekilde karşı tarafa ulaşır.
+
+332
+01:20:45,320 --> 01:20:49,879
+Bu bridge'in görevidir, pardon repeater'ın görevidir.
+
+333
+01:20:50,800 --> 01:21:02,759
+Bridge repeater'dan biraz daha komplekstir ve amacı tüm mesajları diğer basa aktarmak değildir.
+
+334
+01:21:02,759 --> 01:21:14,939
+bir bilgisayarda yani örneğin A bilgisayarından buradaki F bilgisayarına bir mesaj gidecekse bridge bu mesajı aktarır.
+
+335
+01:21:14,939 --> 01:21:24,259
+Ama A bilgisayarından B bilgisayarına gidecekse bu mesaj broadcast şekilde gönderildiği için bridge'e de ulaşır.
+
+336
+01:21:24,359 --> 01:21:28,359
+Bridge B bilgisayarı yan tarafta olmadığı için bunu yan tarafa aktarmaz.
+
+337
+01:21:28,439 --> 01:21:31,759
+Repeater'den farkı budur. Repeater her türlü sinyali aktarır.
+
+338
+01:21:31,759 --> 01:21:39,259
+bridge ise diğer network'e gitmesi gereken sinyalleri aktararak bu işi gerçekleştirir.
+
+339
+01:21:39,259 --> 01:21:52,480
+Şimdi switch ise senin söylediğin ikiden fazla yapıyı birleştirmek için, bas yapısını birleştirmek için kullanılır.
+
+340
+01:21:52,480 --> 01:22:02,380
+ve günümüzde ağırlıklı olarak switch yapısını kullanıyoruz. Çünkü networkler daha kompleks bir hale gelmiş durumdalar.
+
+341
+01:22:15,188 --> 01:22:18,007
+Bir tane de aşağıya doğru bir bas yaptığınızı düşünün.
+
+342
+01:22:19,787 --> 01:22:21,327
+Üç tane farklı
+
+343
+01:22:22,607 --> 01:22:23,887
+bas yapısını
+
+344
+01:22:24,907 --> 01:22:27,727
+Network büyüdüğü için araya bir switch kullanarak
+
+345
+01:22:28,507 --> 01:22:31,307
+yönetmeye başlıyorsunuz. Switch'in sağladığı
+
+346
+01:22:31,827 --> 01:22:33,108
+güzellik şu
+
+347
+01:22:34,387 --> 01:22:35,667
+hem ikiden fazla
+
+348
+01:22:36,188 --> 01:22:39,247
+bası birbiriyle birleştirme şansı tanıyor size
+
+349
+01:22:39,507 --> 01:22:40,267
+hem de
+
+350
+01:22:40,528 --> 01:22:41,547
+mesajlaşma
+
+351
+01:22:43,087 --> 01:22:45,147
+bu bas içerisinde olacaksa burada kalacak
+
+352
+01:22:45,188 --> 01:23:12,028
+Eğer bir mesaj buraya taşınıyorsa ve diyelim ki A'dan E bilgisayarına gidecekse buradan Switch'dan geçiyor ve Switch bu kontrolü yaparak o E bilgisayarının aslında şuradaki lokal basta olmadığını anlıyor ve paketi diğer tarafa gönderiyor.
+
+353
+01:23:12,028 --> 01:23:36,247
+Eğer A, C'ye gönderecek olsaydı o zaman switch bu paketi diğer buslara göndermiyor olacaktı. Genel olarak bus network topolojisi kullanımında bu line uzadıkça sizin araya repeater, bridge, yana switch koymanız gerekiyor.
+
+354
+01:23:36,247 --> 01:23:54,667
+repeater daha çok basit bir çözüm. Genelde günümüzde artık çok sık kullanılıyor bridge. İki tane bus yapısını birleştirmek için ancak kapasiteye sahip. Switch ise multiple bus desteklediği için günümüzde çok sıklıkla switch'i kullanıyoruz.
+
+355
+01:23:54,667 --> 01:24:06,227
+Şimdi gelelim bir sonraki önemli birime router. Router nedir?
+
+356
+01:24:12,851 --> 01:24:14,851
+Kon da bilgisayar var mı?
+
+357
+01:24:24,724 --> 01:24:25,724
+Evet Selim
+
+358
+01:24:25,724 --> 01:24:31,204
+Gelen verileri ilgili alan içine doğru cihazı gönderen cihaz
+
+359
+01:24:31,204 --> 01:24:33,123
+İyi düşün
+
+360
+01:24:33,123 --> 01:24:36,363
+Çok iyi bir tanımı olmadı, bir daha baştan al istersen
+
+361
+01:24:36,363 --> 01:24:38,644
+Cümle olarak biraz kulağa tırmaladı
+
+362
+01:24:38,644 --> 01:24:43,683
+Aldım, router'ın bulunduğu network'e gelen verileri
+
+363
+01:24:43,683 --> 01:24:48,043
+İçinde bulunan network'e gelen verinin gitmesi gereken
+
+364
+01:24:48,043 --> 01:24:49,883
+Switch'tan farkı ne?
+
+365
+01:24:49,883 --> 01:24:52,263
+Genel verilerini yönlendiren neyden hocam?
+
+366
+01:24:52,623 --> 01:24:53,623
+Switch'tan farkı ne?
+
+367
+01:24:53,623 --> 01:25:02,023
+Bu network içinde çalışıyor diye biliyorum. Hani kendi içindeki networkdeki yönlendirme yapıyor. Switch ise network dersine yönlendirme yapıyor.
+
+368
+01:25:02,603 --> 01:25:05,683
+Yanlış cevap. Ama teşekkür ederim. İyi denemeyi de.
+
+369
+01:25:07,423 --> 01:25:10,523
+Şimdi aslında tam tersini söyledim.
+
+370
+01:25:12,304 --> 01:25:22,523
+Birbirinden farklı networklerin aynı adres bloğunda bulunmayan, aynı lokasyonda bulunmayan
+
+371
+01:25:22,523 --> 01:25:33,084
+networklerin birbirleriyle haberleşmesini sağlayabilmek için, paketleri forward edebilmek için kullandığımız bir yapı router.
+
+372
+01:25:33,863 --> 01:25:36,304
+Örneğin burada bir Ethernet network var.
+
+373
+01:25:38,923 --> 01:25:46,343
+Ethernet network'tan bir Wi-Fi network'e bilgi aktarmak istiyorsanız ya da şurada bir tane daha Ethernet network olsun.
+
+374
+01:25:53,619 --> 01:26:22,019
+router olsun. O da bu router ve buraya bağlı olsun. Buradaki bilgisayarlardan çıkan bilgi bu Ethernet network'üne gidecekse, şuradaki network'e gidecekse, işte bu Ethernet network'tan gönderdiğiniz bilgi buraya çıktığında bir adres kontrolü yapılıyor. Router, bu kendi bir lookup table'ı var. Buradan çıkan paketin nereye gitmesi gerektiğine bakıyor.
+
+375
+01:26:22,019 --> 01:26:50,379
+ona göre buradaki router'a mı forward edeceğine karar veriyor. Buraya geldiyse buradaki router bakıyor. Nereye gitmesi gerekiyor paket? Bir sonraki seçeneklerden hangisine gidecekse onu belirliyor. Bu router'a kadar paket ulaşıyor. Bu router'a ulaştıktan sonra router kendi içerisinde local area network'ta bu paketin hangi bilgisayara gitmesi gerektiğini paketin içeriğine bakarak anlıyor.
+
+376
+01:26:50,379 --> 01:26:57,759
+ve buradaki paket taşıma sonlanmış oluyor. Evet, Selim.
+
+377
+01:26:58,719 --> 01:27:03,579
+Hocam ben router ne olduğunu şu anladım da Switch'in buradaki görevi ne peki? Burada Switch ne yapıyor?
+
+378
+01:27:04,579 --> 01:27:19,079
+Switch burada Ethernet Network içerisinde aynı networkta olan farklı uzaklıkta bulunan ve farklı lokal ne diyelim virtual alanlar yaratıyorsunuz.
+
+379
+01:27:19,079 --> 01:27:38,560
+işte örneğin bilgi işlem cihazlarının olduğu bir domen var. Siz o domenindeki bilgisayarların öğrencilerin bulunduğu domenindeki bilgisayarlarla ya da öğretim üyelerinin bulunduğu bilgisayarlarla aynı lokal araya networkta olmasını istemiyorsunuz. O zaman Switch kullanıyorsunuz.
+
+380
+01:27:38,559 --> 01:27:49,519
+Hocam hani bu router şimdi ağlar arasında yönlendirme yapıyor ya switch de teknik olarak onu yapmıyor mu ağlar arası ben o kısmı ayırt edemedim onu sorumlu için
+
+381
+01:27:49,519 --> 01:27:50,799
+Birbirinden farklı
+
+382
+01:27:50,799 --> 01:27:57,419
+Mesela hocam bu gördüğümüz topolojide o switch'in nereye yerleştirebiliriz bir örnek verebilme şansınız var mı hocam?
+
+383
+01:27:58,019 --> 01:27:58,739
+Evet tabii ki
+
+384
+01:28:19,828 --> 01:28:30,828
+Yani router daha büyük ağları yönetmeye yarıyor. Switch'te daha böyle küçük ya da sanal ağlar arasındaki alışveriş sağlıyor.
+
+385
+01:28:30,828 --> 01:28:31,828
+Evet.
+
+386
+01:28:31,828 --> 01:28:47,828
+Bunu söyleyebiliriz. Birbirinden aslında yapısal olarak farklı olan ağların birbirleriyle bağlanmasını ve birbirleriyle uzak noktalardaki ağların haberleşmesini router sağlıyor.
+
+387
+01:28:47,828 --> 01:28:51,207
+bir nevi routerlar gateway olarak da adlandırılıyor.
+
+388
+01:28:52,427 --> 01:28:58,567
+Çıkış noktası, sizin bulunduğunuz network'ün dünyadaki diğer ağlara bağlantı noktası.
+
+389
+01:28:58,728 --> 01:29:03,127
+Bizim Davutpaşa kampüsümüzün çıkış noktasında bir router var.
+
+390
+01:29:04,067 --> 01:29:08,868
+Bütün kampüs kendi içerisinde switchler ile birbirleriyle yönetiliyor.
+
+391
+01:29:08,868 --> 01:29:13,447
+Yani işte bizim fakültemizin kendi bir ana switch'i var.
+
+392
+01:29:13,447 --> 01:29:25,427
+hatta o ana switch'in altında bölümler arasında hatta bölümlerin içinde de switch'ler var. Mesela katlara göre ayırabilirsiniz. Bir switch'i bir kat için edike edebilirsiniz.
+
+393
+01:29:25,427 --> 01:29:39,107
+ya da söylediğim gibi bir switch'e bilgisayarların bulunduğu, işte domain server'ın, web server'ın bulunduğu özel erişim öncesi gereken alan için alabilirsiniz.
+
+394
+01:29:39,107 --> 01:29:56,447
+Bu sayede siz switch ile belli paketlerin kendi içerisinde dolaşmasını ve diğer koruma altında olan bölgelere hiçbir şekilde o bilgisayarların erişememesini teknik olarak sağlamaya çalışıyorsunuz.
+
+395
+01:29:56,487 --> 01:29:59,987
+Haberleşmenin hızlanmasını ve yönetilebilir olmasını sağlamaya çalışıyorsunuz.
+
+396
+01:30:00,307 --> 01:30:02,207
+Artı switch görevi de üstleniyor.
+
+397
+01:30:02,368 --> 01:30:03,408
+Şunu da unutmamak lazım.
+
+398
+01:30:04,127 --> 01:30:08,387
+Arada bir switch olmasa o kadar uzun mesafede bir local area network oluşturma şansınız yok.
+
+399
+01:30:08,387 --> 01:30:15,427
+O zaman repeater ya da bridge kullanmak zorundasınız. Ama o zaman da multiple connection sağlayamamış oluyorsunuz.
+
+400
+01:30:15,427 --> 01:30:23,607
+Tabi bunların çok detayı var. Yani ben size çok kabaca anlatıyorum. Bunların detayını bilgisayar ağlarında fazlasıyla göreceksiniz.
+
+401
+01:30:23,727 --> 01:30:30,647
+Ama birbirinden farklı network tiplerinin birbirleriyle bağlanmasını routerlarıyla sağlıyorsunuz.
+
+402
+01:30:31,167 --> 01:30:38,347
+Aynı tip networkler içerisindeki cihazların birbirleriyle bağlanmasını daha çok switch ile gerçekleştiriyorsunuz.
+
+403
+01:30:38,387 --> 01:30:40,128
+Andım hocam, teşekkür ederim
+
+404
+01:30:40,128 --> 01:30:41,227
+Rica ederim
+
+405
+01:30:41,227 --> 01:30:50,887
+Tabi burada bunlardan bahsettik ama şunu da söylemek lazım
+
+406
+01:30:50,887 --> 01:30:56,027
+Bir network içerisinde cihazların birbirleriyle haberleşmesi için belli kurallara ihtiyaç var
+
+407
+01:30:56,027 --> 01:30:58,567
+Bu kurallarda protokol olarak adlandırılıyor
+
+408
+01:30:58,567 --> 01:31:04,347
+Bu protokoller neler olabilir bana kim söyleyebilir?
+
+409
+01:31:09,460 --> 01:31:14,380
+farklı bir kişi olabilir mi? Kullandığınız haberleşme cihazlarındaki protokolleri?
+
+410
+01:31:17,059 --> 01:31:17,819
+Evren?
+
+411
+01:31:18,999 --> 01:31:20,579
+Wi-Fi protokolleri vardı hocam.
+
+412
+01:31:21,300 --> 01:31:23,300
+Evet, bir Wi-Fi protokolleri var.
+
+413
+01:31:24,599 --> 01:31:25,340
+Başka?
+
+414
+01:31:26,259 --> 01:31:27,679
+Bluetooth protokolleri vardı.
+
+415
+01:31:27,679 --> 01:31:31,140
+Çok güzel, Bluetooth. Bunları aslında konuşmuştuk ama bir hatırlıyoruz.
+
+416
+01:31:32,319 --> 01:31:33,419
+NFC vardı hocam.
+
+417
+01:31:33,999 --> 01:31:34,579
+NFC.
+
+418
+01:31:35,519 --> 01:31:38,639
+Eternet üzerinden haberleşme de bir protokol gerektiriyor biliyorsunuz.
+
+419
+01:31:39,460 --> 01:31:42,000
+Bunun gibi Muhammed Ali
+
+420
+01:31:42,000 --> 01:31:47,320
+Ben de hocam SMTP yani Simple Mail Transfer Protokol
+
+421
+01:31:47,320 --> 01:31:57,099
+Simple Mail Transfer Protokol biraz internet application'ların birbirlerine haberleşme protokolü yani onu biraz daha ayrı tutuyorum.
+
+422
+01:31:57,460 --> 01:32:04,320
+Hani protokol adı altında evet kesinlikle kurallar bütün altında olabilir ama burada bahsettiklerimiz daha çok haberleşme protokolleri.
+
+423
+01:32:04,320 --> 01:32:09,119
+yani bilginin hangi kurallar çerçevesinde taşınacağı.
+
+424
+01:32:09,180 --> 01:32:19,180
+Eternet üzerinde bilgi taşınırken siz kablolu bir taşıma yapıyorsunuz ama Wi-Fi, Bluetooth, NFC ile taşırken kablosuz bir taşıma gerçekleştiriyorsunuz.
+
+425
+01:32:19,760 --> 01:32:22,379
+Bu konuda dikkatli olmakta fayda var.
+
+426
+01:32:28,659 --> 01:32:33,459
+Bu Selim'in gönderdiğine bir bakayım. Çok merak ediyorum.
+
+427
+01:32:34,659 --> 01:32:39,659
+Düşündüğüm şey ise farklı bir şey paylaşmış olabilir.
+
+428
+01:32:43,539 --> 01:33:07,539
+Şimdi bunlar Selim'in paylaştığı bilgi bir protokol olarak değerlendirmeyin lütfen. Bu OSI katmanı dediğimiz burada ayırt etme amaçlı doğru ama hani bunu orada belirtmezsek burada katman katman dediğin kısmı konuşmak lazım.
+
+429
+01:33:07,539 --> 01:33:22,760
+Burada verinin bir bilgisayardan bir bilgisayara aktarılırken kullandığı bir model var. 7 katmanlı. Application, Presentation, Session, Transport, Network Layer, Data Link Layer ve Physical Layer.
+
+430
+01:33:22,759 --> 01:33:42,259
+Burada her bir layer'in görevi var veriyi aktarmak için. Application seviyesinde HTTP gibi, FTP gibi, SSH gibi, DNS gibi protokollerimiz var. Bu protokoller ilgili mesajların nasıl taşınacağını belirliyor.
+
+431
+01:33:42,259 --> 01:33:53,099
+ama hemen alta indiğimiz zaman bilginin taşınımı noktasına geldiğimizde TCP, UDP gibi internet üzerinden haberleşmede kullanılan iki IP protokolü var.
+
+432
+01:33:53,099 --> 01:34:10,459
+Biri TCP, diğeri UTP. TCP'de iki bilgisayara haberleşirken bir session kuruluyor ve bu session'da karşılıklı paketler gönderildikçe paketlerin gönderilmesi sonrasında bir ekme olaçlık mesajı gönderiliyor paketi aldım diye.
+
+433
+01:34:10,459 --> 01:34:32,220
+ama UDP'de böyle bir şey yok. UDP'de siz paketi gönderiyorsunuz. Karşı tarafa ulaşma ihtimalini de göz önünde bulunduruyorsunuz. UDP daha hızlı ama daha az güvenilir. TCP güvenilir ama belirli yükler altında performansı düşüyor. O yüzden hangi uygulamada kullanacağınız çok çok önemli.
+
+434
+01:34:32,220 --> 01:34:35,679
+bu protokolleri.
+
+435
+01:34:37,480 --> 01:34:41,800
+Tabii şöyle söylemekte fayda var.
+
+436
+01:34:42,480 --> 01:34:44,520
+Protokollerin sayısı çok fazla.
+
+437
+01:34:44,660 --> 01:34:46,459
+Hani bu konuya çok detaylı olarak girmiyorum.
+
+438
+01:34:46,580 --> 01:34:48,200
+Biz kendi konumuza dönecek olursak
+
+439
+01:34:48,200 --> 01:34:53,519
+router'ın kendi üzerinde bir forward table'ı var.
+
+440
+01:34:57,844 --> 01:35:00,663
+forwarding table diye geçiyor hatta doğru yazayım ismini.
+
+441
+01:35:06,260 --> 01:35:16,260
+ve bu forwarding table'u kullanılarak router kendisine gelen mesajı nereye aktaracağını biliyor.
+
+442
+01:35:16,260 --> 01:35:20,260
+Bu birbirleriyle routerlar kim kime bağlı tanımlı.
+
+443
+01:35:20,260 --> 01:35:35,260
+Bu noktada aslında bütün bu paketlerin IP adresleri kullanılarak üzerindeki hangi tarafa yönlendirilmesi gerektiğini routerlar karar veriyor ve bu işi yönetiyorlar.
+
+444
+01:35:35,260 --> 01:35:58,359
+dünyadaki bütün internet trafiği routerlar üzerinden gerçekleşiyor. Bazen bizim kampüsten, routerdan çıkıp işte Beşiktaş kampüsüne gidiyorsunuz. Mutlaka router çıkışı gerekiyor. Bazen de bizim kampüsten çıkıp Amerika'ya kadar en tane router üzerinden geçiyorsunuz. Oradan bir bilgiyi getiriyorsunuz. Öyle düşünebilirsiniz.
+
+445
+01:35:58,359 --> 01:36:06,599
+her birinin bir sonraki noktada nereye veriyi aktaracağını bildiğini düşünün gelen paketin adresine bağlı olarak.
+
+446
+01:36:06,599 --> 01:36:16,739
+İşte burada Metropolitan Area Network, LAN, Wide Area Network'taki IP adreslerinin de kullanımı söz konusu.
+
+447
+01:36:16,739 --> 01:36:19,579
+tabi, et
+
+448
+01:36:19,579 --> 01:36:20,659
+je voulais
+
+449
+01:36:24,404 --> 01:36:39,404
+bu paketlerin aktarımı ile ilgili temel cihazlardan bahsettikten sonra bir de Process Communication diye bir konu var. Ondan da bahsedelim.
+
+450
+01:36:40,724 --> 01:36:44,023
+Biraz önce bilgilerin taşımından bahsetmiştik. Biraz da
+
+451
+01:36:44,023 --> 01:36:47,923
+proseslerin
+
+452
+01:36:47,923 --> 01:36:52,724
+farklı kaynaklar üzerinde çalıştığında birbirlerine nasıl haberleştiklerinden bahsedelim.
+
+453
+01:36:57,603 --> 01:36:59,883
+Birden fazla aktivite
+
+454
+01:36:59,883 --> 01:37:03,843
+farklı bilgisayarlar üzerinde, bir network üzerinde çalışabilir.
+
+455
+01:37:04,423 --> 01:37:04,963
+Yani siz
+
+456
+01:37:04,963 --> 01:37:07,543
+distributed computing yapıyor olabilirsiniz.
+
+457
+01:37:08,303 --> 01:37:08,843
+Bir işi
+
+458
+01:37:08,843 --> 01:37:15,743
+alt parçalarını, prosesleri ya da threadleri farklı cihazlara yönlendirmiş olabilirsiniz.
+
+459
+01:37:15,743 --> 01:37:29,243
+İşte burada farklı cihazlar üzerinde çalışıp bu cihazlardan elde edilen verilerin birleştirilmesiyle gerçekleşen işler Interprocess Communication olarak adlandırılıyor.
+
+460
+01:37:29,244 --> 01:37:40,664
+Interprocess Communication aslında bir server client mimarisine dayanıyor.
+
+461
+01:37:50,228 --> 01:37:51,547
+ve burada
+
+462
+01:37:51,547 --> 01:37:56,668
+clientler serverdan talepte bulunuyor.
+
+463
+01:37:57,728 --> 01:37:58,667
+Bu sayede
+
+464
+01:37:58,667 --> 01:38:02,247
+birden fazla client serverdan hizmet alıyorlar.
+
+465
+01:38:02,407 --> 01:38:04,467
+Buna en güzel verilebilecek örnek print server.
+
+466
+01:38:08,115 --> 01:38:36,975
+Siz Printer'a kişisel olarak basmak için bir doküman gönderdiniz. Clientsınız bilgisayarınız. Client olarak Print Server'a gitti. Bu arada aynı bilgisayar üzerinde de bu olabilir ama biz farklı bilgisayar arasındaki durumu konuşuyoruz. Network'e bağlı bir Print Server'ınız var. Print Server network'tan gelen istekleri dinliyor. Siz oraya şunları bas diye gönderdiniz. Server bunu alıyor, Q'ya koyuyor ve sizin isteğinizi gerçekleştirip basım işlemini tamamlıyor.
+
+467
+01:38:36,975 --> 01:38:47,835
+işte burada aynı anda o network'te bulunan farklı kişiler serverdan talepte bulunup serverın istediği dokümanları basmasın, talep edebilirler.
+
+468
+01:38:47,835 --> 01:38:58,695
+Buna ek olarak file server var mesela. Örneğin üniversitede bizim sunucu odamızda bir tane bununla ilgili sunucu var.
+
+469
+01:38:58,695 --> 01:39:07,975
+ve biz bir server üzerinde işlerimizi gerçekleştiriyoruz ama bilgilerimizi ekstra bir file serverda saklıyoruz.
+
+470
+01:39:09,635 --> 01:39:23,495
+File server bize ait olan dokümanlara ulaşmak istediğimizde istenen request'i hangi client istediyse ona ilgili dosyayı açıyor, gönderiyor, aktarıyor.
+
+471
+01:39:23,495 --> 01:39:37,715
+İşte bu da bir başka server client mimarisi. Ama bu server client mimarisinden farklı olarak bir de peer-to-peer mimari var.
+
+472
+01:39:38,715 --> 01:39:46,015
+Process communicationler için. Bu peer-to-peer nedir? Bununla ilgili bir yorum yapabilecek olan var mı?
+
+473
+01:39:46,695 --> 01:39:49,215
+Aslında bunu da sıklıkla kullanıyoruz günlük hayatta.
+
+474
+01:39:50,955 --> 01:39:51,795
+Muhammed Ali.
+
+475
+01:39:51,796 --> 01:40:02,476
+Hocam, 3'tan uca iletişim yöntemi yani herhangi bir sunucu olmadan bir bilgisayarda bir veriyi diğer bilgisayara göndermek.
+
+476
+01:40:03,136 --> 01:40:11,215
+Çok güzel yani her iki bilgisayarda aslında bir nevi server ve client olarak hizmet vermiş oluyorlar.
+
+477
+01:40:12,016 --> 01:40:15,095
+Hem bunu nerede kullanıyoruz onu söyleyelim önce.
+
+478
+01:40:15,735 --> 01:40:16,455
+Mesela ne olabilir?
+
+479
+01:40:16,455 --> 01:40:26,215
+çok sık hayatınızda kullandığınız aslında modelleri var. Evet Selim?
+
+480
+01:40:27,556 --> 01:40:35,455
+Telefonla cihazlar arasında bluetooth özelliği bence en çok mesela telefonla telefon arasında bluetooth ile medya gönderebilirim.
+
+481
+01:40:36,276 --> 01:40:45,535
+Evet bu peer-to-peer hem client hem server modunda çalışıyor. Her iki taraftaki yazılım. Başka ne olabilir?
+
+482
+01:40:46,455 --> 01:41:03,276
+mesela torrentler var. Torrent üzerinden dosya indiriyorsunuz. Burada peer-to-peer haberleşme var. Örnek veriyorum, siz bir film indirmek istiyorsunuz.
+
+483
+01:41:03,276 --> 01:41:13,776
+Bunun çeşitli bilgisayarlar üzerinde olduğunu biliyorsunuz ve size hangi bilgisayarlar üzerinde olduğu bilgisi geldikten sonra artık peer-to-peer haberleşme başlıyor.
+
+484
+01:41:13,775 --> 01:41:22,395
+siz ilgili dosyanın bulunduğu cihazla kendi tarafınıza dosyaların aktarılması işlemini başlatıyorsunuz.
+
+485
+01:41:22,435 --> 01:41:25,395
+Bu şekilde peer-to-peer bir network oluşturuyorsunuz.
+
+486
+01:41:29,055 --> 01:41:30,455
+Evet, Mustafa Bey.
+
+487
+01:41:31,595 --> 01:41:36,895
+Önceden şey vardı. Ben hatırlıyorum ama bu bayağı eskiydi herhalde.
+
+488
+01:41:36,895 --> 01:41:59,916
+yani ben Torrent olsun diye hani şey samiyanı tabirle kırak bir şeyler aradığım zaman sürekli şeyler başka bilgisayarları ama bunlar için kendi açık klasörlerimi daha doğrusu ne kadar verirsen o kadar alırsın mantığı vardı eskiden veyahut da ben öyle biliyorum.
+
+489
+01:41:59,916 --> 01:42:00,515
+Doğru doğru.
+
+490
+01:42:00,515 --> 01:42:05,776
+O şimdi şu anda öyle mi? Yani açtığın kadarıyla mı yoksa?
+
+491
+01:42:06,195 --> 01:42:14,195
+Direkt sünni olarak, şeyde, Torent'te mesela, bir tüpürde her şey, amiyane tabirle ortada mı oluyor tabirle?
+
+492
+01:42:14,195 --> 01:42:22,195
+Yok, bunun farklı mekanizmaları var. Bazen mekanizmalar hala sizin söylediğiniz gibi çalışıyor, paylaştığınız kadar alıyorsunuz.
+
+493
+01:42:22,195 --> 01:42:42,395
+Örneğin siz eğer bir ne diyelim peer-to-peer network yapısında dizayn edilmişse ve bir oyun network içerisine giriyorsanız iki kişi oyun oynarken peer-to-peer artık oynamaya başlıyorlar ilk başta.
+
+494
+01:42:42,396 --> 01:43:02,076
+client üzerinden diyelim ki playstation'da login olduğunuz herkesin IP'leri sunucu üzerinde saklı. Siz eşleşme tamamlandıktan sonra artık oyunu peer-to-peer oynuyorsunuz. Herhangi bir sunucuya, merkezi bir noktaya veriler aktarılmıyor. Doğrudan sizin bilgisayarlarınız arasında transfer ediliyor. Burada böyle bir mekanizma yok.
+
+495
+01:43:03,036 --> 01:43:06,195
+Anlaşıldı. Teşekkür ederim. Rica ederim. Evet Selim.
+
+496
+01:43:06,195 --> 01:43:15,096
+Hocam siz peer-to-peer örnek isteyince Muhammed mesajlaşmaya uygulamalar yazmıştınız. Bu peer-to-peer sayılıyor mu? Ben merak ediyorum bunu sormak istediğim.
+
+497
+01:43:16,675 --> 01:43:18,975
+Yani instant messaging WhatsApp gibi mi?
+
+498
+01:43:20,215 --> 01:43:23,435
+Sanırım onu kastedi. Evet o peer-to-peer sayılıyor mu hocam?
+
+499
+01:43:24,175 --> 01:43:32,395
+Çok emin değilim. Mekanizmasını bilmiyorum. Bildiğim kadarıyla ben yanlış bilmiyorsam bir sunucu mekanizması var orada.
+
+500
+01:43:32,395 --> 01:43:53,275
+sizin mesajınız sunucuya aktarılıyor. Hatta birinci tik de biliyorsunuz karşı tarafa mesajınızın gittiği bilgisi gelir. İkinci tikte de işte okunduğu bilgisi gelir gibi işte böyle özellikler vardı. Sonradan bunlar mavi renk oldu vesaire bir sürü şey çıktı. Ama benim bildiğim peer-to-peer değil.
+
+501
+01:43:54,395 --> 01:43:55,595
+Tamam hocam teşekkürler.
+
+502
+01:43:56,415 --> 01:43:58,895
+Çok iddialı bir yorum yapamayacağım. Ona bir bakmak lazım.
+
+503
+01:43:58,895 --> 01:44:19,615
+Bu yapıyı kullanan mesajlaşma uygulamaları var mıdır? Şunu söyleyebiliriz. Yani burada şeyi bilmiyorum. Sadece sizin lokasyon bilginizi ve IP'nizi tutuyorsa, mesajları tutmuyorsa peer-to-peer haberleşiyor olabilirsiniz mesajlarda.
+
+504
+01:44:19,615 --> 01:44:30,455
+ama bir tane server sizin bu lokasyon bilgilerinizi sakladığı için o kısım mutlaka bir sunucu üzerinden gerçekleşiyordur.
+
+505
+01:44:30,535 --> 01:44:34,535
+Yani bu konuya bir bakmak lazım. Yanlış bir şey söylemeyeyim.
+
+506
+01:44:34,535 --> 01:44:45,675
+Hocam mesela hani WhatsApp birine yazarken bu mesajlar uçsun uça şifrelenmiştir falan diyor ya belki hani iki kişi yazışırken olabilir mi öyle bir şey?
+
+507
+01:44:46,095 --> 01:44:46,735
+Peer to peer?
+
+508
+01:44:46,735 --> 01:44:53,255
+Yani öyle olması lazım, mesajların doğrudan aktarılması lazım ama senin söylemesi başka bir şey
+
+509
+01:44:53,255 --> 01:45:02,335
+Aynen onu diyecektim, onun bir farklı mantığı varmış, ben de onu çok merak ettim, bağıştırmıştım nasıl acaba hani okuyamıyorlar kimse bizim mesajımız diye
+
+510
+01:45:02,335 --> 01:45:10,335
+Aslında yine sunucudan geçiyor hatta internetten geçiyor ama sadece birbirimizin mesajınızı okuyamıyordu, başkası okuyamıyor o kadar diyebiliyorum
+
+511
+01:45:10,335 --> 01:45:11,975
+Evet, Mert
+
+512
+01:45:11,975 --> 01:45:27,955
+Hocam şimdi Whatsapp'ta hani grup chat var ya, peer-to-peer olsa mesela o grup chatte sorun olmaz mı? Bir kişiden bir kişiye peer-to-peer dediniz ya. O yüzden grup chatte olacağınız server olması gerekmiyor mu?
+
+513
+01:45:28,955 --> 01:45:36,796
+Ya şimdi grup chat kısmı farklı. Bunları dediğim gibi mekanizmaları nasıl dizayn ettiklerini bilmiyorum. Okumak lazım.
+
+514
+01:45:36,795 --> 01:45:48,635
+çünkü ikili haberleşmede sizin sunucuya genelde yani benim bildiğim ilk etapta sunucu client mimarisi kullanılıyordu ama şu anda emin olamıyorum.
+
+515
+01:45:48,635 --> 01:45:57,315
+Bunu okuduktan sonra cevap vermek istiyorum. O yüzden yanlış bir şey söylememek adına şu an bu noktada sessizlik hakkımı kullanacağım.
+
+516
+01:46:01,043 --> 01:46:06,444
+ama söylediğini de anlıyorum yani ne demek istediğini bir bakmaktan fayda var.
+
+517
+01:46:08,083 --> 01:46:10,083
+Şimdi
+
+518
+01:46:11,924 --> 01:46:17,484
+bu da birbirleriyle cihazların veri taşımındaki kullandığı
+
+519
+01:46:17,484 --> 01:46:24,763
+process communication'daki iki tane farklı yapı var. Peer to peer ve client server mimarisi dedik.
+
+520
+01:46:27,243 --> 01:46:28,283
+Evet.
+
+521
+01:46:31,667 --> 01:46:33,667
+Bakıyorum.
+
+522
+01:46:37,587 --> 01:46:57,307
+Bir de tabi son dönemde bir Cloud Computing diye bir kavram çıktı. Cloud Computing aslında bir nevi bize dağıtık distribütüt sistemler diyelim.
+
+523
+01:47:00,083 --> 01:47:27,623
+ya da Distributed Computing'de diyebilirsiniz. Dağıtık programlama mantığını bir versiyonunu hayatımızın içine aldı. Şu anda Cloud üzerinden biraz önceki kullandığımız File Server mantığıyla hizmet alıyorsunuz. Sadece File Server değil aynı zamanda işte Software as a Service dediğimiz kavramlar da var. Oradan işte bir programın kullanımıyla ilgili hizmet alabiliyorsunuz.
+
+524
+01:47:27,623 --> 01:47:54,383
+bir bilgisayar, bir işletim sisteminin size doğrudan tahsis edilmesiyle ilgili hizmet alabiliyorsunuz. Cloud Computing bize hem merkezi bir noktada verilerimizin saklanmasını sağlıyor hem de bütün cihazlarımız üzerinden o veriye erişmemizi sağlıyor.
+
+525
+01:47:54,383 --> 01:48:13,843
+Bu sayede biz aslında her bir cihaz için backup alma işlemini ya da bir cihazla yaptığımız işlemi diğer cihaza aktarma sürecini geride bırakmış oluyoruz. Eskiden evde bir iş yapardınız, bunu USB'ye koyardınız, bunu iş yerine götürürdünüz, orada değiştirdiniz, tekrar USB'yi eve taşırdınız.
+
+526
+01:48:13,844 --> 01:48:38,744
+artık bu kavramdan ortadan kalktı. Bunu sağlayan cloud computing yeteneği sadece size veri saklama konusunda değil, aynı zamanda cloud üzerinden software hizmeti, cihaz hizmeti, sunucu kiralama gibi farklı hizmetler almanızı sağlıyor.
+
+527
+01:48:38,743 --> 01:48:48,743
+bu sayede yepyeni bir model oluşmuş durumda. Bu da dağıtık sistemler başlığı altında incelenmesi gereken ayrı bir konu.
+
+528
+01:48:49,523 --> 01:49:00,343
+O yüzden hani burada çok fazla bununla vakit kaybetmeyeceğim. Çünkü bunların hepsi belli başlığı altında uzun bilgiler anlatılması gereken önemli konular.
+
+529
+01:49:00,343 --> 01:49:19,944
+gelelim internet kavramına biliyorsunuz intranet ve internet var iki tane kavram var bunlar nedir bilen var mı ya da interneti biliyorsunuz ama intraneti biliyor musunuz
+
+530
+01:49:26,131 --> 01:49:27,232
+Evet, Muhammed Ali.
+
+531
+01:49:28,731 --> 01:49:39,451
+Hocam, internet global, yani küresel ağ bağlantısına diyorken internet dahili, yani bir merkezde bulunan bilgisayarların ağların birbirine bağlanması olarak.
+
+532
+01:49:40,211 --> 01:49:43,331
+Tamam, peki teşekkür ederim. Genel olarak doğru bir kavram.
+
+533
+01:49:43,331 --> 01:49:59,971
+internet tüm dünyaya açık network'ün içerisindeki oluşturulan bilgisayarların birbirleriyle haberleşmesini sağlayan bir haberleşme altyapısı.
+
+534
+01:49:59,971 --> 01:50:06,151
+Bu sayede herkesin bir IP adresi var, herkesin bir domain name'i var.
+
+535
+01:50:06,152 --> 01:50:12,492
+bu üzerinden kişiler birbirleriyle haberleşebiliyorlar bütün bilgisayarlar.
+
+536
+01:50:14,492 --> 01:50:22,572
+Bu noktada internet ise daha çok şirketlerin kendi içlerindeki networklerinde birbirleriyle haberleşmelerini sağlayacak
+
+537
+01:50:22,572 --> 01:50:26,791
+bağımsız bir internet work yapısı.
+
+538
+01:50:26,791 --> 01:50:40,312
+buradaki aslında önemli nokta internetin belirli bir ağ içerisinde sınırlı olarak erişim sağlanması.
+
+539
+01:50:40,312 --> 01:50:51,212
+İnternetwork dediğiniz zaman da tüm genel dünya çapındaki bilgisayarların birbirleriyle oluşturduğu bağlantıya verilen isim.
+
+540
+01:50:51,212 --> 01:51:11,612
+Burada internet service provider'lar var. Bunlar en üst seviyede olanlar Tire 1, onun altında Tire 2, sonra en son noktada End Systems dediğimiz kullanıcılar var. Her biri host olarak adlandırılıyor.
+
+541
+01:51:11,611 --> 01:51:33,411
+birbirleriyle bir host diğer host haberleşeceği zaman aynı networkta ise ilgili switch üzerinden gitmeden bir yandaki networkta ise switch üzerinden farklı bir networkta ise router üzerinden bu altyapı internet service provider'ların altyapısı kullanılarak haberleşme gerçekleşiyor.
+
+542
+01:51:33,411 --> 01:51:40,951
+biliyorsunuz işte bakır kablolarla genelde bağlantısı alınıyor ama son dönemde fiber kablolar ön plana çıktı.
+
+543
+01:51:41,911 --> 01:51:50,611
+Fiber kablolar üzerinden bilgi taşınımı çok daha az dış şartlardan etkileniyor ve çok daha hızlı gerçekleşiyor.
+
+544
+01:51:50,611 --> 01:51:54,591
+Bu anlamda işte fiber kablolama çalışmaları devam ediyor.
+
+545
+01:51:56,292 --> 01:52:00,111
+Bilgiyi wired taşımak her zaman için bir avantaj.
+
+546
+01:52:00,111 --> 01:52:18,951
+wireless taşımak bilginin güvenliği açısından da bilginin bozulabirliği açısından da önemli bir sıkıntı. O yüzden her zaman wired bitkı önde. Fakat günümüzde wireless haberleşme çok yaygın ve hızları da oldukça ilerlemiş durumda.
+
+547
+01:52:18,951 --> 01:52:39,491
+şimdi internet addressing kavramı var biliyorsunuz. Her bir cihazın bir unique bir IP'si var. Olması isteniyor. Bunun için ne kadarlık bir adresi, ne kadarlık bir byte'de ya da byte'de saklıyoruz.
+
+548
+01:52:51,252 --> 01:52:51,851
+Evet, Selim.
+
+549
+01:52:53,051 --> 01:52:54,531
+4 byte olması lazım.
+
+550
+01:52:54,811 --> 01:52:56,192
+Evet, IP adresleri.
+
+551
+01:52:59,891 --> 01:53:01,351
+32 bit
+
+552
+01:53:05,300 --> 01:53:06,439
+yani 4 byte.
+
+553
+01:53:08,439 --> 01:53:21,199
+Ve bunlar örneğin 192.207.177.133 şeklinde ifade ediliyorlar. Birbirlerinden noktayla ayrılıyorlar.
+
+554
+01:53:22,060 --> 01:53:27,220
+Her birinin farklı bir amacı var. Bu şu an dersimizin konusu değil.
+
+555
+01:53:28,119 --> 01:53:32,099
+Bunun ötesinde bu rakamları kullanarak aslında biz haberleşmiyoruz.
+
+556
+01:53:32,099 --> 01:53:47,160
+internet üzerinde haberleşirken, sayfalar üzerinde ilerlerken bunlar için bir domain name sistemi kullanıyoruz.
+
+557
+01:53:48,160 --> 01:54:01,160
+İşte bu bizim adresimiz yıldız.edu.tr. Bunun için bir domain name server çalışıyor ve biz bu adresi yazdığımızda
+
+558
+01:54:01,160 --> 01:54:22,920
+Yıldız Elytr'nin post edildiği bilgisayarın adresine ise o adrese dönüşüm gerçekleşiyor domain name server tarafından ve bu adrese gitmek istendiği o adrese sorgu atılması istendiğine karar veriliyor ve bilgisayar bu dönüşümü gerçekleştiriyor. Öbür türlü her bir bilgisayarın adresini bizim ezbere bilmemiz gerekirdi. Evet Muhammed Ali.
+
+559
+01:54:22,919 --> 01:54:40,539
+Hocam bu hani routerlardan bahsederken bir yerden bir yere iletişim kuracakken routerlar üzerinden gidiyor ki bu domain name bilgileri routerlar üzerinden mi buluyor? Yani bu routerlar hangi IP'nin hangi domeneyine ait olduğunu nasıl biliyorlar? Veya onların üzerinde mi oluyor bu domain name serverlar? Veya başka bir yerde mi oluyor?
+
+560
+01:54:40,539 --> 01:54:50,259
+Domain Name Server'lara soruyor DNS Lookup Table'ları var. Lookup Table'ında var mı yok mu yoksa gidip Domain Name Server'a soruyor.
+
+561
+01:54:50,259 --> 01:54:58,199
+Bana böyle bir şey geldi. Ben nasıl bir yol izlemeyeyim şeklinde. Ama kendi üzerlerinde tutuyorlar.
+
+562
+01:54:59,459 --> 01:55:05,819
+Anladınız. Sürekli güncellenmesi yani Domain değişebilir. Domain Name Server'lar ve Lookup Table'lar sürekli güncelleniyor.
+
+563
+01:55:05,839 --> 01:55:07,300
+Tabii. Tabii. Aynen öyle.
+
+564
+01:55:08,619 --> 01:55:09,539
+Tamam hocam. Teşekkür ederim.
+
+565
+01:55:10,539 --> 01:55:37,839
+Evet, şimdi biraz daha konumuz var aslında ama saatte 11 oldu. Oldukça uzun bir süredir de dersimize devam ediyoruz. Şimdi birkaç nokta daha kaldı bunlarla ilgili bahsedeceğim. Önümüzdeki hafta onları tamamlayacağım. Önümüzdeki hafta bir de binary search algoritmasını anlatacağım ve dersi bu şekilde noktalayacağız.
+
+566
+01:55:37,839 --> 01:55:50,759
+Şimdi dersi sonlandırmadan önce ödevle ilgili sorularınızı almak istiyorum. Ödevle ilgili sorular varsa bana mail olarak atanlar da sorabilirler. Ondan sonra dersi noktalayacağım. Evet Selim.
+
+567
+01:55:50,759 --> 01:56:19,039
+Hocam hani siz demiştiniz ya istediğim kütüphane sınırımızı koymuyorum diye. Mesela ben grafik arayoculuk kullanmak için ne cursus nokta diye bir kütüphaneye baktım mesela. Ama şimdi düşününce ben bunu dahil etsem projemi acaba siz bunu daha doğrusu projeyi hani bunu bakarken kontrol ederken acaba sizde bu kütüphane var mı diye düşününce emin olamadım. Bunun hakkında bilgi verebilir misiniz? Hani bunu nasıl oluyor? Biz nasıl her istediğimiz kütüphaneyi kullanabiliriz bu kısmı anlamadım.
+
+568
+01:56:19,039 --> 01:56:47,019
+Şöyle normalde kütüphaneler eklenebilir ve sizin tarafınızdan eklenmiş gelmesi gerekiyor ama onun dışında bilgisayarınızda kurulu bir kütüphaneyi kullanmanız gerekiyorsa zaten şöyle bir durum olacak. Bu dönem projelerinizi ya online olarak tek tek kontrol ediyor olacağız ya da bununla ilgili bir video çekmenizi isteyeceğim. O yüzden her halde kendiniz cihazınız üzerinde göstereceksiniz.
+
+569
+01:56:47,020 --> 01:56:52,400
+Yani her türlü kendimiz çalıştırıp göstereceğiz. Öyle bir uyumluluk sorunu olmaz bu zaman.
+
+570
+01:56:53,120 --> 01:57:00,939
+Normal şartlar da olmamız lazım ama özel bir durum olursa bununla ilgili yazılımları da bize göndermenizi isteyeceğiz.
+
+571
+01:57:01,716 --> 01:57:11,716
+Peki hocam, son olarak platform uyumlu zorunluluğu var mı? Mesela benim çalıştıracağım kodun hem Linux'da çalışması hem Windows'da çalışması hem Mac?
+
+572
+01:57:11,716 --> 01:57:13,716
+Evet, evet. Tamam hocam.
+
+573
+01:57:13,716 --> 01:57:30,716
+Buna dikkat etmek gerekiyor. Bunu istememiz sebebi de bir kod yazdığınızda maksimum standartlara uygun yazmanız ki, işte ilgili X platformdan dolayı Y'ye geçtiğinizde bir sorun yaşamıyor olmanız. Buna özen göstermeye çalıştık.
+
+574
+01:57:30,716 --> 01:57:35,995
+Hocam standart derken hepsine uygun şekilde kod mu yazalım yoksa
+
+575
+01:57:35,995 --> 01:57:38,195
+Hayır, ağız isim standartları
+
+576
+01:57:38,195 --> 01:57:40,236
+Tamam hocam teşekkür ederim
+
+577
+01:57:40,236 --> 01:57:44,436
+Evet başka ödevle ilgili sorusu olan
+
+578
+01:57:48,724 --> 01:57:51,103
+bana soru iletmiş olanlar buradan sorabilir. İbrahim.
+
+579
+01:57:53,184 --> 01:58:02,303
+Hocam, bu soruyu daha önce cevaplamıştınız ama hani bu ödeve özel bazı şeyleri serbest bırakmıştınız. Bu ödevde break kullanabilir miyiz?
+
+580
+01:58:02,483 --> 01:58:02,703
+Hayır.
+
+581
+01:58:03,463 --> 01:58:04,543
+Tamamdır, teşekkür ederim.
+
+582
+01:58:04,684 --> 01:58:05,203
+Mücadep.
+
+583
+01:58:06,043 --> 01:58:06,423
+Bazar?
+
+584
+01:58:09,383 --> 01:58:15,523
+Hocam, tahtayı 2D string array olarak oluşturabilir miyiz? Yoksa pointer mı gerek?
+
+585
+01:58:16,644 --> 01:58:18,283
+2D string array nedir?
+
+586
+01:58:18,724 --> 01:58:22,444
+Yani hocam tahta tabloda M2
+
+587
+01:58:22,444 --> 01:58:25,584
+Aynen işte M2 falan yazamıyoruz karakter oluyor
+
+588
+01:58:25,584 --> 01:58:28,343
+Taşları ayırt edemiyorum bu sefer de
+
+589
+01:58:28,343 --> 01:58:32,643
+Belki şey yapabilirsiniz yani çok iyi anlıyorum söylediğini
+
+590
+01:58:32,643 --> 01:58:34,584
+Hemen üzerine düşünelim
+
+591
+01:58:34,584 --> 01:58:40,023
+Taşlara siz rakam verebilirsiniz bu rakamları konlayabilirsiniz
+
+592
+01:58:40,023 --> 01:58:42,904
+Hocam 16 tane şey olacak
+
+593
+01:58:42,904 --> 01:58:44,584
+16 rakam
+
+594
+01:58:44,584 --> 01:58:47,823
+Yani bu sefer 11-12 falan da yazdırmak sıkıntı oldu
+
+595
+01:58:47,823 --> 01:58:50,523
+niye 11-12 yazdırmak sıkıntı olsun?
+
+596
+01:58:52,203 --> 01:58:54,163
+Hocam hata veriyordu. Gene bir deneyim.
+
+597
+01:58:55,084 --> 01:59:02,143
+Hayır şunu söyleyeceğim. 11-12 matrisi integer tanımlamazsanız, karakter tanımlamazsanız 11-12 yazdırabilirsiniz.
+
+598
+01:59:03,423 --> 01:59:04,843
+Karakter matrisini o zaman.
+
+599
+01:59:05,764 --> 01:59:11,743
+Karakter tanımlamazsanız matrisi yazdırabilirsiniz diyor. Karakter tanımlarsanız tabii ki 11'de yazdıramazsınız.
+
+600
+01:59:11,743 --> 01:59:15,323
+Doğru yani söylediğin şey
+
+601
+01:59:15,323 --> 01:59:23,883
+O yüzden karakter matris kullanmayarak sayılarla çözebilirsiniz ama senin söylediğin 2D string nedir onu anlayamadım
+
+602
+01:59:23,883 --> 01:59:33,603
+2D array hocam yani matris ama şey olarak string alabilecek bir matris onu araştırdım
+
+603
+01:59:33,603 --> 01:59:40,643
+Tamam yani karakter matris tanınamakla ilgili bir sıkıntımız yok ama oraya nasıl yazacaksın birden fazla karakter?
+
+604
+01:59:41,743 --> 01:59:49,543
+İşte string olsaydı hocam yazabilsem karakter dizisi değil de bir string dizisi olsa.
+
+605
+01:59:50,084 --> 02:00:04,823
+String matriz nedir anlayabilmiş değilim ama şunu söylüyorsan ben orada yani ilgili pozisyona bir şey yerleştireceğim string olarak diyorsan tam şey yapamadım yani anlayamadım söylediğini.
+
+606
+02:00:06,623 --> 02:00:08,903
+Hani öyle bir form bilmiyorum ne demek istediğini.
+
+607
+02:00:08,903 --> 02:00:11,563
+tercüme edecek bir arkadaşın varsa bana tercüme etsin.
+
+608
+02:00:12,183 --> 02:00:18,643
+Hocam galiba şey, matrisin her bir bölümüne string alabilen bir matris yapabilir miyiz?
+
+609
+02:00:18,643 --> 02:00:20,003
+Soru buydu galiba.
+
+610
+02:00:20,523 --> 02:00:22,343
+Çünkü ben de şu anda.
+
+611
+02:00:23,083 --> 02:00:25,683
+Matrisin her bir bölümüne matris alabilen.
+
+612
+02:00:26,543 --> 02:00:27,623
+Şey, string alabilen.
+
+613
+02:00:28,083 --> 02:00:34,163
+Hocam her bir kelimeyi, bir cümleyi tarif ederken ya da şey yaparken onu karakter dizisi kullanmak yerine
+
+614
+02:00:34,164 --> 02:00:39,384
+string denen tek yapı kullanıp o yapıyı da her bir yüzeye yerleştirmekte uğraşlar.
+
+615
+02:00:39,384 --> 02:00:41,984
+Arkadaşlar karakter dizisiyle string aynı şeyi biliyorsunuz değil mi?
+
+616
+02:00:44,343 --> 02:00:44,884
+Evet hocam.
+
+617
+02:00:45,003 --> 02:00:45,944
+String diye bir yapı yok.
+
+618
+02:00:49,024 --> 02:00:52,684
+Başka dizilerde tek yapı da var belki ondan da demiştir hocam.
+
+619
+02:00:52,863 --> 02:00:55,063
+Ama string diye bir yapı yok C'de.
+
+620
+02:00:56,063 --> 02:00:58,363
+C'de karakter dizisi var oranda string diyoruz.
+
+621
+02:00:58,363 --> 02:01:00,884
+Ama string diye bir tip yok.
+
+622
+02:01:00,883 --> 02:01:06,743
+yani implement etme şeklinizi anlayabilsem okey ben itiraz etmeyeceğim.
+
+623
+02:01:06,743 --> 02:01:20,383
+Bir örnek vereyim mesela. Matris 1.1 ne bileyim Ubeydullah olsun. İşte bu Matris 1.1'de Ubeydullah ismini tutmasını istiyor galiba arkadaş benim anladığım kadarıyla.
+
+624
+02:01:20,563 --> 02:01:28,263
+Orada Ubeydullah stringinin yani karakter dizisinin başlangıç adresini saklayabilirsiniz. Bunda bir sıkıntı yok.
+
+625
+02:01:28,263 --> 02:01:36,343
+bunu yazdırmak için de bunu kullanabilirsiniz. Bu da olur. Ama bunları bilmediğiniz için mesela new string diye bir şey yok.
+
+626
+02:01:40,148 --> 02:01:41,388
+Selim, böyle bir şey yok.
+
+627
+02:01:42,167 --> 02:01:49,448
+Hocam, onu diyorum yani hani bazen de keşke string diye bir şey olsa dedi ya hani ifade etmeye çalıştığı şey belki bu olabilir diye düşündüm.
+
+628
+02:01:49,448 --> 02:01:52,707
+Hocam, şey yaparak yapabiliriz diye düşündüm ben.
+
+629
+02:01:53,267 --> 02:02:03,568
+Selim, keşke diye bir şeyimiz yok. Yani biz keşke üzerinden konuşmuyoruz. Ben bazelim böyle bir şey var, kullanabilir miyim dediğini anladım. Doğru mu bazelim?
+
+630
+02:02:03,568 --> 02:02:09,867
+Hocam, araştırdım. Pointers'la falan yapılıyor diye anladım.
+
+631
+02:02:10,148 --> 02:02:31,787
+Tabii ki pointerla söylediğim şekilde oraya ilgili Ubeydullah'ın adresini saklayıp matriz içerisinde o adresi tutabilirsiniz. Buna bir itirazım yok. Ama bu çok komplike bir yapı. Bunu öğrenmediniz ama eğer kendiniz yapıyorsanız okuyama başkası yapıyorsa kabul etmem.
+
+632
+02:02:33,607 --> 02:02:34,688
+Tamamdır hocam.
+
+633
+02:02:34,687 --> 02:02:42,467
+Hocam şey şeklinde yapabilir miyiz peki? Her bir hücreye bir indiz atasak, başka bir dizi tutsak, karakter dizisi.
+
+634
+02:02:42,467 --> 02:02:43,447
+Olur, tabii ki.
+
+635
+02:02:44,287 --> 02:02:45,407
+Tamam hocam, teşekkürler.
+
+636
+02:02:46,107 --> 02:02:46,547
+Rica ederim.
+
+637
+02:02:51,347 --> 02:02:53,347
+Evet, başka soru?
+
+638
+02:03:02,868 --> 02:03:09,328
+Hocam, ödevle ilgili değil ama mazeret sınavı acaba hangi gün olacak haftaya belli mi? Pazartesi ya da perşembe?
+
+639
+02:03:11,168 --> 02:03:22,847
+Mazeret sınavının tarihi belli değil. Bugün günlerden perşembe. Yarın ben buna karar vermiş olurum. Şu anda henüz netleştirmedim. Sayfada duvara koyacağım.
+
+640
+02:03:24,347 --> 02:03:25,007
+Tamam hocam.
+
+641
+02:03:26,447 --> 02:03:27,128
+Evren?
+
+642
+02:03:27,128 --> 02:03:52,607
+Hocam hani az önce dedik ya açacağımız matrise, integer matris olarak açıp her piyona da bir sayı verebiliriz diye. O şekilde yapsak da pathway işte gidilecek takip edilecek yolu da sıfırlar olarak yazsak çok karışık görünmez mi? Ya evet sorunu çözüyor oyun oynanabilir hale geliyor ama baya karışık görünüyor hocam o zaman da.
+
+643
+02:03:52,607 --> 02:04:01,527
+Şöyle söyleyeyim, bunu gösterim olarak yapabileceğiniz farklı yöntemler var. Yani bir bordu saklamakla ekrana göstermek arasında fark var.
+
+644
+02:04:02,287 --> 02:04:07,548
+Bordu saklamak ayrı bir şey, ekrana göstermek ayrı bir şey. Bence bu ikisini bir oturtmaya çalışın.
+
+645
+02:04:09,187 --> 02:04:17,807
+Yani ekrandaki gösterimi borddaki gibi olmak zorunda değil. Biraz daha farklı gösterebilirsiniz ama yani üzerine biraz düşünmeniz gerektiğini düşünüyorum.
+
+646
+02:04:24,787 --> 02:04:26,787
+Başka tek bir soru var mı?
+
+647
+02:04:32,372 --> 02:04:36,931
+Geçen gün birkaç kişi mail atmıştı. Ondan sonraki sevdikleri var mı?
+
+648
+02:04:45,492 --> 02:05:10,851
+Şimdi şöyle yapalım. Eğer mümkünse siz bu hafta sonu vaktiniz olursa bu söylediğim konu üzerine biraz düşünün. Ondan sonra ne yapabiliriz sorusunu pazartesi günü tekrar ele alalım. Pazartesi günü derste bu bahsettiğiniz sorunu nasıl çözeceğiniz konusundaki birkaç alternatifi konuşalım. Bir maddesi belli bir kısmı kalpler diğer kısmı int olarak yazdıramazsınız.
+
+649
+02:05:10,851 --> 02:05:22,831
+Şöyle, şunu soruyorsanız, %d ve %c kullanarak karakter ve int değerlerini yazdırabilirsiniz ama sakladığınız değerler karakterdir
+
+650
+02:05:22,831 --> 02:05:27,891
+Yazdırmak olmaz mı hocam? Ne demek bu Selim?
+
+651
+02:05:27,891 --> 02:05:35,251
+Hocam sordu ya yazdırabilir miyiz diye, sonra siz %d deyince tamam yani anladım, siz demeden önce yazdım onu
+
+652
+02:05:35,251 --> 02:05:51,191
+Yani şunu diyorum, %D ve %C sadece o andaki aske tablosu karşılığını ya da karakter karşılığını yazdırmanızı sağlar ama yarısını int olarak karakter olarak saklayamazsınız. O yüzden hep karakter olarak saklamak, hep int olarak saklamak lazım.
+
+653
+02:05:52,031 --> 02:05:53,131
+Hocam teşekkür ederim.
+
+654
+02:05:53,591 --> 02:05:54,011
+Rica ederim.
+
+655
+02:05:56,051 --> 02:06:00,771
+Başka kurallarla ilgili? Kafanıza takılan Mehmet Keçeci.
+
+656
+02:06:00,771 --> 02:06:06,672
+Benim biraz farklı bir sorum vardı hocam. Hani demiştiniz ya İlginç, output'a renk verebilirsiniz gibisinden.
+
+657
+02:06:07,511 --> 02:06:08,011
+Output'a?
+
+658
+02:06:08,752 --> 02:06:17,631
+Aynen hocam. Onu biraz araştırdım da galiba bütün iddelerde çalışmıyor bütün kütüphaneler. Onu yapmasak daha iyi olur acaba. Herkese çalışmayabilir çünkü.
+
+659
+02:06:17,631 --> 02:06:29,051
+Şöyle söyleyeyim size. Bunu bir zorunluluk olarak söylemedim. Bir arkadaşınız sorduğu için yapmak isteyenler yapabilir. Kendi bilgisayarınızda göstereceğiniz için daha şık gözükmesini sağlamak adına yapabilirsiniz.
+
+660
+02:06:29,051 --> 02:06:46,131
+Ama bu tür ekstra yapacağınız, kullanacağınız kütüphaneler dert değil. Önemli olan C kodunun, Core C kodunun her yerde çalışabilir olması. Ama görsellik kattığınız işler her yerde çalışmayabilir. Ona bir itirazım yok. Tabii ki onda bir sıkıntı olmayacaktır.
+
+661
+02:06:48,311 --> 02:06:49,091
+Sağ olun.
+
+662
+02:06:49,091 --> 02:06:49,992
+Rica ederim.
+
+663
+02:06:49,992 --> 02:07:17,611
+Görsellik konusunda temiz bir görsellik benim için yeterli. Çok böyle şey bir hani canjanlı bir görüntü ihtiyacım yok. Doğru çalışsın yeter ama bunun doğru çalıştığını da gösterebileceğiniz bir tasarım yapmanız lazım. Ki hani ben orada piyonun ilerlediğini görebileyim. Hangi sayının neye denk geldiğini görebileyim gibi bunlara ihtiyacımız var.
+
+664
+02:07:17,611 --> 02:07:22,511
+Bence bunun üzerine birazcık düşünün. Pazartesi günü bunun üzerine bir kez daha konuşalım.
+
+665
+02:07:23,251 --> 02:07:31,011
+Hocam aslında ben demiştim ya hani bu platformlar arasında problem alınıyor vesaire. Aslında ben bu arayüz için demiştim. Çünkü mesela bir ekranın sırfı...
+
+666
+02:07:31,011 --> 02:07:33,691
+Arayüz için böyle bir sıkıntımız yok Selim.
+
+667
+02:07:34,271 --> 02:07:39,371
+Ağandım. Çünkü temizlemek için çok farklı şeyler söylüyorlar. Mesela sistem komutunu kılabilirsiniz diyor. Bazıları kullanmayın diyor.
+
+668
+02:07:39,811 --> 02:07:42,971
+Tabii. Bunda bir sorun yok. Bunda bir kısıtlamıyorum sizi.
+
+669
+02:07:43,492 --> 02:07:44,992
+Ağdım hocam. Teşekkür ederim. Daha iyi oldu.
+
+670
+02:07:54,100 --> 02:08:05,100
+her önceden bir piyano olabilir demiştik. Bu kısıttan dolayı bazı kuralların değişmesi gerekiyor. Bu kuralların bazılarında yorumlanması gerekiyor. Ufak tefek yorumlar katıp oyunda değiştik yapmak için onu teşkilat edelim. Ali İhsan, sözel olarak söyleyemiyor musun?
+
+671
+02:08:12,948 --> 02:08:14,948
+demek istediğini tamamlayamadım.
+
+672
+02:08:17,047 --> 02:08:18,047
+Ali İhsan?
+
+673
+02:08:18,587 --> 02:08:19,948
+Hocam sesim geliyor mu?
+
+674
+02:08:19,948 --> 02:08:20,747
+Geliyor.
+
+675
+02:08:20,747 --> 02:08:23,047
+Bir piyon olabilir demiştik evet.
+
+676
+02:08:23,248 --> 02:08:27,647
+Bu kısıtlanan bazı kuralların değişmesi gerekiyor dedin. Nedir o kuralların değişmesi gereken?
+
+677
+02:08:28,948 --> 02:08:31,147
+Hocam mesela altı attığımızda
+
+678
+02:08:31,347 --> 02:08:33,147
+yeni piyon oyuna girecekti.
+
+679
+02:08:33,147 --> 02:08:36,647
+Mesela oyuna girdiği yerde rakibin piyonu orada varsa
+
+680
+02:08:37,147 --> 02:08:38,547
+mesela şey diye düşünmüştün.
+
+681
+02:08:38,547 --> 02:08:42,347
+Rakibin piyonu oraya gelemesin tarzında bir kural eklemek.
+
+682
+02:08:42,347 --> 02:08:54,267
+Yok hayır, rakim piyano oradaysa oyuna girdiği yerde yer onu. Senin piyonun varsa oraya oyuna çıkamaz. Bütün tahtada her noktanın şeyi aynı. Değeri.
+
+683
+02:08:57,007 --> 02:08:57,668
+Başka?
+
+684
+02:09:01,716 --> 02:09:03,716
+Var mı Ali İhsan başka soru?
+
+685
+02:09:03,716 --> 02:09:05,716
+Yok hocam, şu anahtarına geldim.
+
+686
+02:09:05,716 --> 02:09:06,716
+Tamam, okey.
+
+687
+02:09:06,716 --> 02:09:11,716
+Belki oyun menüsünü ayrıca yapmamız gereken şeyler var mı? Nedir?
+
+688
+02:09:15,764 --> 02:09:25,423
+yardım meylesi güzel olur, çok güzel olur. Güzel fikir. Bu tür ekstra fikirler zaten sizi biraz daha ön plana çıkartacak.
+
+689
+02:09:29,844 --> 02:09:30,844
+Başka?
+
+690
+02:09:34,228 --> 02:09:35,228
+Emine Rücağım.
+
+691
+02:09:36,728 --> 02:09:40,487
+Eee hocam ben şeye soracaktım. Eee mesela bizim ikiden taşımız var.
+
+692
+02:09:40,487 --> 02:09:41,067
+Hıhı.
+
+693
+02:09:41,067 --> 02:09:44,488
+Ve eee kullanıcı bunu hangisi oyuncağı istedecek değil mi?
+
+694
+02:09:45,927 --> 02:09:47,228
+Diyelim hani ben birinci taşımıyorum.
+
+695
+02:09:47,228 --> 02:09:48,228
+Evet, tabii.
+
+696
+02:09:48,228 --> 02:09:51,427
+Diyelim ki eee kullanıcı ikinci taşı oynamak istedi.
+
+697
+02:09:51,427 --> 02:09:53,828
+Ama ikinci taşı oynayınca da birinci taşın üzerine geliyor.
+
+698
+02:09:53,828 --> 02:09:56,228
+O zaman sıra geçecek mi? Yoksa tekrar sorayım mı?
+
+699
+02:09:56,228 --> 02:09:59,827
+Mesela güzel soru. Hatalı oldu gibisinden mi sormak lazım?
+
+700
+02:09:59,827 --> 02:10:03,228
+Eee bence şey, sorma.
+
+701
+02:10:03,228 --> 02:10:26,747
+sormayın. Ona dikkat etsin. İyi tamam o zaman direkt saraya atlatayım yani. Evet çünkü bu tür hani ekstra kompleks kontroller çıkıyor. Ben olabildiğince sizi hani daha oyunun temel kurallarına implement edeceğiniz bir program yazmanızı istiyorum. Hani öyle ilerlersek çok daha komplike olur. Bence gerek yok. Ama güzel düşünmüşsün. Yani teşekkür ederim.
+
+702
+02:10:43,604 --> 02:11:03,183
+Evet, o zaman teşekkür ediyorum herkese. Hepinize sağlıklı, güzel, mutlu bir yılbaşı diliyorum. Yeni yıl diliyorum. Umarım 2021 çok daha iyi olur. Kendinize iyi bakın. Pazartesi günü görüşmek üzere diyorum. Hoşçakalın. Sağlıklı günler.

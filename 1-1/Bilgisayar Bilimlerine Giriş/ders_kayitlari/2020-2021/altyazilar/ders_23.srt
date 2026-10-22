@@ -1,0 +1,983 @@
+1
+00:01:22,388 --> 00:01:51,148
+Evet, günaydın arkadaşlar. Hoşgeldiniz. 12. hafta başlıyor. Öncelikle sınavlarınız varsa başarılar diliyorum. Son 3 haftaya girdik. Bu hafta hem bugün hem de perşembe günü tekrar yapacağımızı, sorularınızı yanıtlayacağımızı söylemiştim. Sınav haftanız olması dolayısıyla birazcık yükünüzü hafifletmek adına böyle bir karar aldık.
+
+2
+00:01:51,148 --> 00:02:00,928
+zaten konularla ilgili de neredeyse konularımızı bitirdik. Son iki hafta anlatacağımız konularla beraber rahatlıkla müfredatımızı tamamlamış olacağız.
+
+3
+00:02:01,928 --> 00:02:09,307
+Şimdi şuradan başlayalım. Birincisi bu hafta bir aksilik olmasına dönem ödevinizi açıklayacağım.
+
+4
+00:02:10,888 --> 00:02:16,608
+O yüzden hafta sonuna kadar dönem ödevinizi sizlerle paylaşmayı planlıyorum. Onun haberini vereyim.
+
+5
+00:02:16,607 --> 00:02:39,627
+Bunun ötesinde 3. ödevinizi teslim ettiniz. 3. ödevinizle ilgili sorusu olan var mı? Danışmak isteyen, ben bu konuda şöyle bir şeyler yaptım ya da bu zor bir ödevdi, şurayı tam yapamadım diyen varsa onlardan şimdi feedback alacağım hem de sorularını alacağım.
+
+6
+00:02:39,627 --> 00:02:43,987
+Evet sanırım Selim bir el kaldırmış, başlayalım onunla.
+
+7
+00:02:43,987 --> 00:02:47,428
+Hocam sesim geliyor mu? Kulaklık takıyorum da şu anda
+
+8
+00:02:47,428 --> 00:02:48,428
+Evet, geliyor
+
+9
+00:02:48,428 --> 00:02:56,468
+Hocam şey şimdi ben bu ödevde tasardığım algoritma sanırım normal yapmam gereken biraz daha ağır çalışıyordu
+
+10
+00:02:56,468 --> 00:02:58,248
+Çünkü çok fazla değişken kullandım
+
+11
+00:02:58,248 --> 00:03:02,267
+Şimdi ben bunu analizini yaparken çok zorlandım hocam yani nasıl desem
+
+12
+00:03:02,267 --> 00:03:05,828
+Ben bunu tek tek değişken değişken yapamadım
+
+13
+00:03:05,828 --> 00:03:08,507
+Zaten öyle bir şey istemiyorum
+
+14
+00:03:08,507 --> 00:03:12,587
+Evet çünkü ben bota yaptırmayı denedim hani otomatik değiştirirsin diye
+
+15
+00:03:12,587 --> 00:03:38,608
+bir kez için 600 satırlık, 300 satırlık bir şey çıktı. Çok zor oldu. Ben onun yerine şey yaptım. Hani böyle ana yerleri nasıl desem böyle bazı ana yerler oluyor ya hani önemli değişkenleri sadece değişme kısımlarına çıktı dedim. O şekilde ilerledim. Ama onun dışında ben analizde hangi kısımları böyle çıktı alacağım ya da değerlerini not edeceğimi tam şey yapamıyorum hocam. Orada bir tık sorulanıyorum ben.
+
+16
+00:03:38,608 --> 00:04:04,287
+Şimdi ben şöyle bir cevaptayım. Biz analizi yaparken ilk öğrendiğiniz analizde daha küçük problemler için analizi sizlerle paylaşmıştım. Büyük problemler için de bu analizi kullanıyoruz ama bir yerden sonra bu senin söylediğin gibi takip etmesi zorlaşıyor. Böyle bir noktada farklı keyzler için girilen inputlara, istenilen outputlara üretiyor mu? Bunu göstermek önemli analizde.
+
+17
+00:04:04,287 --> 00:04:22,127
+programlar üzerinden yazdığınız programa bir input verdiniz. Bunun karşılığında o case için beklenen output üretiyor mu? Bunu görmek istiyoruz. Analizi buna göre yapmanız gerekiyor. Artı debug, biliyorsunuz özelliği var birçok IDE'nin.
+
+18
+00:04:22,127 --> 00:04:35,167
+debug özelliğini kullanarak da programınızın analizini yapma şansınız var. Ama kağıt üzerinde her adımı bu kadar uzun bir programda tek tek göstermenizi beklemiyorum.
+
+19
+00:04:36,787 --> 00:04:38,547
+Evet anlatacağım hocam teşekkür ederim.
+
+20
+00:04:39,807 --> 00:04:50,067
+Hocam ben de şeyi soracaktım ya. Analiz yaparken birkaç tane hata aldım. Bu yüzden programın başına da bir tane uyarı ekledim.
+
+21
+00:04:50,067 --> 00:04:58,287
+mesela büyük harflere göre yaptığım için işte büyük harfler girmenizi falan rica ettim. Ama küçük harf girildiği zaman hata oluyor.
+
+22
+00:04:58,987 --> 00:04:59,167
+Evet.
+
+23
+00:04:59,167 --> 00:05:04,407
+Ben bu tarz bir iki tane hata bulduğumu da ekledim ben analizlere. Bu sıkıntı olur mu?
+
+24
+00:05:05,607 --> 00:05:10,667
+Yani bu soruyu sorma sebebin nedir? Sıkıntı niye olsun?
+
+25
+00:05:12,507 --> 00:05:15,507
+Yani tam kusursuz çalışmıyor ya o yüzden sordum.
+
+26
+00:05:15,956 --> 00:05:43,815
+Şimdi şöyle, bunu birkaç arkadaşınıza cevap vermiştim. Galiba geçen gün, geçen hafta pazartesi gününde bunu cevaplandırmıştım. Bu ödevde bir sözcük uygulaması gerçekleştirdiniz ve bu sözcükte de bir arama ve sıralama işlemi yaptınız. Bunu yaparken de biraz daha akıllı bir arama yapmak için ilgili harflerin başlangıç noktalarını sakladınız.
+
+27
+00:05:43,815 --> 00:06:00,775
+Burada büyük küçük harf ayrımını yani hepsini kontrol etmeniz güzel olurdu ama bunu zorunlu kılmadım. Küçük ya da büyük harf üzerinden sözlüğünüzü oluşturabilirsiniz diye söylemiştim. Bu yüzden bir endişeye mahal verecek bir durum yok.
+
+28
+00:06:05,620 --> 00:06:20,000
+Evet, başka ödevle ilgili konuşmak isteyen ya da soru sormak isteyen, yorum yapmak isteyen hepsi yapabilirsiniz. Herhangi bir sakınca yok.
+
+29
+00:06:29,843 --> 00:06:51,524
+Peki, bir anladığım kadarıyla soru da yok, yorum da yok. Bu ödevde biliyorsunuz bir kelimeler grubu veriliyor size. Bu kelimeler grubu karışık bir şekilde veriliyor. Öncelikle bu kelime grubunu alfabetik sırada sıralamanız bekleniyor.
+
+30
+00:06:51,524 --> 00:06:59,303
+alfabetik sırada sıralarken neye dikkat etmemiz gerekiyor normal sıralama algoritmasından farklı olarak?
+
+31
+00:07:01,724 --> 00:07:03,163
+Gerekiyordu diyelim ya da.
+
+32
+00:07:09,267 --> 00:07:10,267
+Evet Selim?
+
+33
+00:07:10,267 --> 00:07:19,267
+Ben önce şey düşünün, önce, pardon şimdi ses mi gelmiş lazım. Ben önce şey düşünün, kelimelerin birinci harfini göre sıralama yapalım.
+
+34
+00:07:19,267 --> 00:07:26,267
+Kelimeleri daha doğrusu sıralandıralım. O birinci harflerini göre. Sonra ikinci harflerini göre kendi işlerine grup şeklinde sıralandıralım.
+
+35
+00:07:26,267 --> 00:07:33,267
+Sonra tekrar her bir grup içinde bir tek eleman kalana kadar ben gruplandırarak sıralama yapalım diye düşündüm.
+
+36
+00:07:33,267 --> 00:07:37,267
+Yani bir yaklaşım ama çok efektif olduğunu söyleyemeyeceğim.
+
+37
+00:07:37,267 --> 00:07:39,868
+Buse?
+
+38
+00:07:41,308 --> 00:08:00,047
+Hocam ben Bubble Sword'un iyileşim tirilmiş algoritması gibi yapmaya çalıştım. Yani bir ilk olarak birinci kelimeyi buldum. Yani nasıl anlatsam? Alfabetik sıraya göre en önce gelecek kelimeyi buldum.
+
+39
+00:08:01,327 --> 00:08:04,448
+Bunu kendisi buldun. Birden fazla harf var.
+
+40
+00:08:04,448 --> 00:08:31,727
+Evet hocam ilk önce o yüzden iki tane while kullandım gibi oldu. İki tane döngü iç içe kullandım. Önce birinci satırla ikinci satırı karşılaştıracak. Birinci satırın birincisiyle ikinci satırın ikincisini karşılaştırdı. O şekilde devam etti. Eğer eşitse diğer harfe geçti. İkinci harfe. Eğer eşit değilse ve ikinci minimumsa
+
+41
+00:08:31,727 --> 00:08:51,927
+ikinci minimum ise ikinci minimumu atadı. O şekilde yaptım. Peki biraz anlatımımız karışık oldu ama genel hatlarıyla sanırım anlaşılmıştır diye ümit ediyorum. Atakan.
+
+42
+00:08:51,927 --> 00:09:09,627
+Hocam ben önce uzunluklarını buldurdum bir while içinde len bir len iki olarak. Sonrasında o uzunluğa kadar her aynı harfleri için bir değişkeni bir arttırdım.
+
+43
+00:09:09,627 --> 00:09:18,628
+Sıfırdan başlayıp sonra aynı olduğu harflere kadarki kısmı boşverip bir sonraki harfini karşılaştırıp ikisini yer değiştirdim.
+
+44
+00:09:18,628 --> 00:09:38,407
+değiştirdim. Ona göre. Sonuçta harfler aynı olduğu sürece bir şey yapmadın. Hangisi küçükse ilk farklılıkta onun minimum olduğuna karar verdin. Evet. Diyorsun. Tamam. Peki. Selim'e bir daha söz verelim.
+
+45
+00:09:38,407 --> 00:09:45,868
+Hocam ben az önce bir şey ekleyemi unuttum da benim bir ekleme yapmıştım ama bu yaptığım ekleme genel bir şey.
+
+46
+00:09:45,868 --> 00:09:49,788
+Diğer arkadaşlarım da ekleyebileceği tarzdan bir şey olduğunu düşündüğüm için söylemek istedim.
+
+47
+00:09:49,848 --> 00:09:54,947
+Ben sıralama yaparken kelimelerin yerini değiştirmek yerine kelimelerin sırasını tutacak bir sayı dizi atadım.
+
+48
+00:09:55,467 --> 00:10:02,167
+Yani o kelimelerin her seferinde yerini değiştirmek yerine o sıra dizisindeki indisilerin değerini değiştirerek sıralama yaptım.
+
+49
+00:10:02,167 --> 00:10:18,467
+her seferinde her karakterin yerini değiştirmeyeyim. En sonunda da bitince işlemler o kelime sıra dizisindeki map daha doğrusu sıra değil farklı oluyor çünkü. O mapping'e göre tekrar kelimeleri sıraladım. O şekilde yaptım. Bekleme olarak söylüyorum. Ama algoritma değil.
+
+50
+00:10:18,467 --> 00:10:40,687
+Tamam. Evet bu Selim arkadaşınızın bahsetmiş olduğu kelimelerin her türda yerini değiştirmektense kelimelerin sıralarının yerini değiştirerek en son pozisyonda bir ekstra bir diziyle kelimelerin hangi pozisyonda yer alması gerektiğine karar verdiğiniz noktada en son değişiklikleri yapabilirsiniz.
+
+51
+00:10:40,687 --> 00:10:47,687
+gayet mantıklı bir çözüm ve işi biraz daha az komplike hale getiriyor. O yüzden...
+
+52
+00:10:48,211 --> 00:11:15,671
+Bu çözümün üzerine bir kez daha vurgulayalım. Siz her kelimenin sırasını tutuyorsunuz. Kelimeleri karşılaştırdığınızda küçük olan da büyük olanı yer değiştireceğiniz zaman onların bulundukları pozisyonları diğer dizide değiştirerek en son o dizinin aldığı hal sizin kelimelerinizin bulunması gereken pozisyon olacağı için onların yerleşmesi gereken yerleri o diziye göre yerleştiriyorsunuz son adımda.
+
+53
+00:11:15,671 --> 00:11:29,791
+böylece her türde bu değişikliği yapmamış oluyorsunuz. İki kelimeyi karşılaştırırken birbiriyle hangisi daha büyük küçük derken eşit olduğu sürece harfler karşılaştırmaya devam ediyorsunuz.
+
+54
+00:11:29,791 --> 00:11:44,831
+Ve sonunda bir tanesi birinden küçük olacağı için o küçük olanı yeni küçük olarak belirleyerek algoritmanızda ilerleyebilirsiniz.
+
+55
+00:11:45,671 --> 00:11:47,912
+bunu da vurgulamış oldum.
+
+56
+00:11:48,531 --> 00:11:53,292
+Tabii sıralandıktan sonra yapılması gereken bir iş daha vardı.
+
+57
+00:11:54,512 --> 00:12:08,072
+Bu işte sizin her bir harfle başlayan, her bir yeni harfle başlayan kelime grubunuzun kaçıncı satırdan başladığını saklayacağınız bir diziydi.
+
+58
+00:12:08,072 --> 00:12:36,351
+örneğin işte örnekte A, B, C, D yoktu, E yoktu onlar sıfır olarak verildi diyelim. F vardı F birden başlıyor ondan sonra sonra gene G, H onlar yok L'ye kadar gidiyorsunuz L 2'den başlıyor S 3'den başlıyor T ise 5'den başlıyordu. Bunu kullanmamızın amacı neydi? Bana kim söylemek ister bu ekstra diziyi?
+
+59
+00:12:43,604 --> 00:12:47,964
+farklı bir kişi olsun. Mehmet?
+
+60
+00:12:49,483 --> 00:12:55,604
+Kelime ararken daha az işlem yapabilmek hocam. Çünkü yerini biliyorsak direkt oradan aramaya başlayabiliriz.
+
+61
+00:12:55,843 --> 00:13:05,543
+Evet. İlk harfe bakmamız gerekiyor aradığımız kelimenin. İlk harfini gördükten sonra aradığımız kelimenin direkt o harfin bulunduğu göze gidiyoruz.
+
+62
+00:13:05,543 --> 00:13:14,883
+o gözde kaç yazıyorsa aramaya oradan itibaren başlayacaktık ve her bir arama adımı artı bir olarak gerçekleşecekti.
+
+63
+00:13:14,963 --> 00:13:22,523
+Örneğin S ile başladık. İşte S'nin ilk kelimesini kontrol ettik. Eşleşmiyorsa birinci adama arama tamamlandı.
+
+64
+00:13:23,003 --> 00:13:31,503
+İkinci kelimeye baktık. Eşleşmiyorsa ikinci arama tamamlandı. Üçüncü bir kelime yok. O zaman üç tane arama sonunda kelime olmadığına karar vermiş olduk.
+
+65
+00:13:31,503 --> 00:13:39,423
+eğer ikinci kelimede bunu söyledik o zaman ikinci aramanın sonunda kelimeyi bulduğumuzu söylüyor olacaktık.
+
+66
+00:13:39,503 --> 00:13:40,903
+Yapılması gereken şey buydu.
+
+67
+00:13:43,423 --> 00:13:48,184
+Genel olarak ödevle ilgili benim anlatacaklarım, söyleyeceklerim bu kadar.
+
+68
+00:13:50,563 --> 00:13:51,503
+Umarım faydalı olmuştur.
+
+69
+00:13:54,263 --> 00:14:01,343
+Veya zorluk seviyesi olarak sizi biraz daha bazı bilgileri anlamanızı sağlayacak.
+
+70
+00:14:01,504 --> 00:14:14,144
+katkısı olmuştur. Sürenin de yeterli olduğunu düşünüyorum. Herhangi bir yoruma olan varsa söyleyebilirim. İki hafta sonunuz vardı. O konuda da bir sıkıntı olmadığını düşünüyorum.
+
+71
+00:14:16,364 --> 00:14:20,803
+Evet. O zaman bu şartlarda Kutay.
+
+72
+00:14:22,284 --> 00:14:30,803
+Hocam biz direkt stringi atayamıyor muyuz? Hani değiştirirken TMP diye bir şey oluşturuyorduk. Ona direkt stringi atayamıyorduk.
+
+73
+00:14:31,503 --> 00:14:40,923
+atayamıyorsunuz. Evet. Tek tek harf harf yazmanız gerekiyor. Ya da string.h kütüphanesi var aslında. Bu konuyu açtığı niye oldu? O konuyla ilgili bir daha söyleyeyim.
+
+74
+00:14:40,923 --> 00:14:56,923
+String.h kütüphanesinde bu tarz string işlemlerini karşılaştırma gibi, atama gibi, işte başka konkatenet gibi işlemleri buradaki fonksiyonlarla yapabiliyorsunuz.
+
+75
+00:14:56,923 --> 00:15:13,923
+Ama ben bunu kullanmanızı istemedim. Çünkü temel anlamda bu işlerin nasıl yapıldığını, nasıl yapılması gerektiğini ya da yapan fonksiyonları nasıl yaptığını görmenizi istiyordum. O yüzden size her şeyi kendinizin kodlaması gerektiğini söyledim ödevinizde.
+
+76
+00:15:15,923 --> 00:15:17,223
+Sağ olun hocam.
+
+77
+00:15:17,223 --> 00:15:18,203
+Rica ederim.
+
+78
+00:15:18,203 --> 00:15:32,843
+Evet, şimdi aslında ilk ödevde anket yapmıştım, ikinci ödevde yapmadım. Belki üçüncü ödev için bir anket linki gönderebilirim. En azından sizin yine görüşlerinizi alınmak faydalı olabilir.
+
+79
+00:15:36,443 --> 00:15:46,903
+Şimdi ödev kısmı bu kadar. Gelelim sınavlarımıza. Sınavlarınızda ilk soruyu, yani klasik sınavdaki ilk soruyu, Igozma sorusunu
+
+80
+00:15:46,904 --> 00:16:11,484
+tamamladım. Yani 3-5 kişi kaldı. Onun ötesinde şunu gördüm. O soruda birçok farklı çözüm var ama en büyük sorunun karakter olarak verilen bir grupla nasıl işlem yapılması gerektiğini bilememeniz.
+
+81
+00:16:11,483 --> 00:16:24,223
+çok fazla sayıda if kullanmanız, üst hesaplarken gereksiz işlem yapmanız gibi hatta üstü gösterirken pal fonksiyonu kullanmanız gibi sıkıntılar vardı.
+
+82
+00:16:24,783 --> 00:16:28,383
+O yüzden onların üzerinde birazcık durmak istiyorum.
+
+83
+00:16:29,123 --> 00:16:32,603
+İkinci sorunuza başlayacağım. Henüz ona başlamadım.
+
+84
+00:16:33,883 --> 00:16:40,143
+Tahminimce sınav sonuçlarınızı pazar gününe kadar açıklamış olacağım.
+
+85
+00:16:40,143 --> 00:16:42,283
+bir aksilik olmasına.
+
+86
+00:16:42,772 --> 00:17:07,671
+108 kişi var sınıfta. Oldukça yüksek bir sayı. Herhalde bugüne kadarki en yüksek bilgisayar bilimlerine giriş dersi, kapasitesi diye düşünüyorum. O yüzden kağıtları okumak gerçekten zaman alıyor. Bu konudaki anlayışınız için de teşekkür ediyorum size. Bir hata oluşmaması adına dikkatli okumaya çalışıyorum.
+
+87
+00:17:07,671 --> 00:17:24,172
+sınavın sonucunda çok ciddi derecede bir farklılık olduğunu düşünen arkadaşlar olursa bana tabii ki yazabilirler ama yani 5-10 puan gerçekten sizin aklınıza gelmeyen sebeplerden fark etmiş olabilir.
+
+88
+00:17:24,172 --> 00:17:36,011
+Ama onun dışında ben 80 bekliyordum, 40 aldım, 60 bekliyordum, 30 aldım gibi durumlar olursa tabii ki sorabilirsiniz.
+
+89
+00:17:36,011 --> 00:17:57,992
+ben bir kez daha bakarım toplamada bir hata var mı vesaire diye. Ama onun dışında lütfen gereksiz sorulardan kaçınalım. Çünkü 108 kişiye tek tek bunun cevabını vermen maalesef mümkün değil. İnşallah önümüzdeki senelerde biraz daha az kapasiteli derslere verme şansımız olacaktır diye ümit ediyorum.
+
+90
+00:17:57,992 --> 00:18:06,911
+Şimdi gelelim ben şu ekran paylaşımını yapayım.
+
+91
+00:18:12,692 --> 00:18:13,531
+soruyla ilgili.
+
+92
+00:18:15,991 --> 00:18:17,491
+Birinci vizenin
+
+93
+00:18:17,491 --> 00:18:20,992
+klasik bölümündeki
+
+94
+00:18:20,992 --> 00:18:22,532
+ilk soruyla ilgili.
+
+95
+00:18:23,331 --> 00:18:24,711
+Bunu konuşmuştuk daha önce tabii.
+
+96
+00:18:25,411 --> 00:18:27,411
+Ama bir akış diyagramı
+
+97
+00:18:27,411 --> 00:18:28,771
+üzerine bakalım istiyorum.
+
+98
+00:18:31,811 --> 00:18:33,351
+Şimdi görüntüyü daha
+
+99
+00:18:33,351 --> 00:18:35,071
+paylaşmadım. Hazırlıyorum.
+
+100
+00:19:01,107 --> 00:19:19,288
+Evet, şu an sanırım görebiliyorsunuzdur diye düşünüyorum. Şimdi burada kritik noktalardan başlayalım. Bir tane elimizde sayımız vardı. Hemen şöyle bir yazalım.
+
+101
+00:19:26,355 --> 00:19:29,675
+0, AF, 1 olsun.
+
+102
+00:19:32,316 --> 00:19:32,836
+Bunun
+
+103
+00:19:41,811 --> 00:19:48,471
+Bu bölümün 16 üzeri 0, bu bölümün 16 üzeri 1, 16 üzeri 2, 16 üzeri 3 olduğunu söyleyelim.
+
+104
+00:19:48,471 --> 00:19:59,871
+Şimdi öncelikle şu üst kısmını nesilarken, on gözden bu, burada 16 üzeri 0 değil, 16 üzeri 1 olarak başlatan arkadaşlar.
+
+105
+00:19:59,871 --> 00:20:18,852
+bir defa döngüye girmiş, döngüye bir defa girdiği için de ilk göz, yani ilk işleme tabi tutulacak dizinin son gözü 16 üzeri 1 ile başlamış. Bu yapılan en çok yapılan hatalardan bir tanesi.
+
+106
+00:20:18,852 --> 00:20:42,591
+ikincisi bu noktada kontrol yapılması gerekiyor. Bunlar birer karakter. Bunlar birer sayı değil. Sayı olmadıkları için şöyle ifade edelim tek tırnakla. Bunların sayısal karşılıkları işte 49, 48 gibi bu da 65 vesaire gibi böyle karşılıklar.
+
+107
+00:20:42,591 --> 00:20:56,871
+bunun bir kere nümerik karşılıklarının yani gerçek rakamsal karşılıklarının bir ise bir karşılığının sıfırdan çıkartılarak elde edilmesi gerekiyor.
+
+108
+00:20:56,871 --> 00:21:06,511
+O da nerede? Şurada gördüğünüz işlemin yapılması gerekiyor. Ama bunu yapmadan önce iki tip bilgimiz olduğunu unutmayalım.
+
+109
+00:21:06,511 --> 00:21:17,731
+1-0 ile 9 arasında bir de A ile F arasında. Ben iki kontrol yapmadım. Yapmayanlardan da puan kırmadım. Çünkü bilgilerin doğru verildiğini varsayıyoruz.
+
+110
+00:21:18,371 --> 00:21:27,751
+0 ile 9 arasında ise 0 başlangıç noktasından çıkardım ve o ilgili karakterin değerini elde ettim rakamsal olarak.
+
+111
+00:21:27,751 --> 00:21:53,911
+değilse o zaman A ile F arasındadır dedim. Geçen hafta da söylemiştim. O zaman A'dan çıkarmak gerekiyor ve artı 10 eklemek gerekiyor ki A geldiğinde 10 değerini alsın. Burası önemliydi. Bu kısmı yapmak sorunun önemli bir kısmıydı. Artı bir de 49 gibi, 55 gibi, 65 gibi değerleri kullananlar var. Onlardan da puan kırdım.
+
+112
+00:21:53,911 --> 00:22:05,751
+çünkü onu da daha önce açıklamıştım. Ben bu tarz karakter sorularında ASCII tablosundaki değer karşılıklarını ezberebilmek zorunda değilsiniz demiştim.
+
+113
+00:22:06,151 --> 00:22:14,411
+Ve bunu kullanmanızı istemiyorum demiştim. O yüzden bundan sonraki süreçte böyle bir soru geldiğinde lütfen karakter sabitlerini kullanalım.
+
+114
+00:22:14,411 --> 00:22:20,951
+Onların ASCII tablosundaki hangi değere sahip ise onu kullanmayalım. Çünkü herkes ayrı bir hesap yapmış.
+
+115
+00:22:20,951 --> 00:22:35,532
+kimi 7 rakamından çıkarmış aradaki fark 10 oluyor diye kimi 55 yazmış vesaire hani bunları mümkün olduğunca ASCII tablosundaki sabitleri kullanarak yapalım.
+
+116
+00:22:36,451 --> 00:22:45,431
+Bunun ötesinde şimdi ben burada farkındaysanız n'den başlıyorum hesap yapmaya yani şu f'den başlıyorum.
+
+117
+00:22:45,431 --> 00:23:03,411
+bunun sebebi de 16 üzeri 0 yani 1'den başlayayım o da şu x eşittir 1 toplamında ilk değerine 0 vereyim ve her turda 16 ile çarparak 16 üzeri 1'i 16 üzeri 2'yi 16 üzeri 3'ü elde edeyim.
+
+118
+00:23:04,791 --> 00:23:14,851
+Ama tersten başlayıp bunu bir tane ayrı Ford'a yapanlar var. Ford'a her seferinde 16 üzeri 0'ı 16 üzeri 1'i 16 üzeri 2'yi yeniden hesaplıyor.
+
+119
+00:23:15,431 --> 00:23:31,931
+yani tekrar tekrar çarpıyor. Bu da fazladan iştah. Sadece her turda 16 ile kendisine çarpmanız yeterli. Bir başka grup birinci gözden başlamış. Birinci gözden başladığı için de 16 üzeri 3'ü gene 4 kullanarak
+
+120
+00:23:32,307 --> 00:23:58,907
+üç defa, dört defa, beş defa, onaltıyı kendisine çarpmış, iş bitmiş, bir sonraki turda, bir sonraki harfgenle bir daha onaltıyı kendisine çarparak ilgili sayıyı elde etmiş. Bu da gereksiz bir işlem. O yüzden bunların hepsi tam puan tabii ki alamadılar. Belirli bir puan kırıldı. Bunları niye anlatıyorum? Puan kırıldı hani böyle çok zevkli bir şey değil ama hani nerelerden puanım kırıldı sorusuna cevap vermek için söylüyorum.
+
+121
+00:23:58,907 --> 00:24:06,707
+hepsi sizin bilmeniz gereken seviye ve yapmanız gereken düzeye göre puanlandırılarak kırılıyor.
+
+122
+00:24:06,707 --> 00:24:17,307
+Hani kimi hata daha az puana mal oluyor çünkü onu öngöremeyebilirsiniz ama biraz önce söylediğim gibi karakter sabitleri konusunda çok durduk.
+
+123
+00:24:17,647 --> 00:24:25,047
+Şu kontroller üzerinde çok durduk. Bunlarla ilgili örnek de yaptık. Bununla ilgili ödev de vardı. Bunlara dikkat etmek gerekiyor.
+
+124
+00:24:25,047 --> 00:24:41,807
+toplamı sıfırlamayanlar vardı. Bir hataydı. Toplamı 4 döngüsü içinde, x'i 4 döngüsü içinde 1 ve 0 aset edenler var. Her seferinde 1 ve 0 aset edince o zaman toplam değerini kaybediyorsunuz. Bu da yapılan yanlışlar arasındaydı.
+
+125
+00:24:41,807 --> 00:24:59,328
+onun dışında küçük eşit 9 ve büyük eşit 0 kontrolünü tek tek yapanlar var. A'dan F'ye kontrolleri tek tek yapanlar var. Yani A'ya eşit mi, B'ye eşit mi, C'ye eşit mi?
+
+126
+00:24:59,327 --> 00:25:07,487
+bunun dışında dizinin gözüne işte 15, 14, 13, 12 gibi değerler atayanlar var.
+
+127
+00:25:08,187 --> 00:25:09,907
+A, F değerleri atayanlar var.
+
+128
+00:25:10,347 --> 00:25:14,947
+Bunların hepsinde doğru yapılmayan örneklerin hepsi problemli.
+
+129
+00:25:15,247 --> 00:25:19,147
+En kolay, en hızlı yapılabilecek çözümlerden bir tanesi buydu.
+
+130
+00:25:20,367 --> 00:25:28,427
+Analizde şurada gördüğünüz gibi kısaca göstermeniz doğru bir şekilde ilerlediğine yeterliydi.
+
+131
+00:25:28,427 --> 00:25:39,227
+hani kısacından bahsettiğim hani alt adımlarını da bekliyorum tabii ki yani analizi tamamlamanızı bekliyorum ama buradaki gibi çok kompakt bir şekilde gösterenler olmuş.
+
+132
+00:25:40,127 --> 00:25:48,467
+Tabii bunun dışında bir de şu var, istenilen formatta teslim etmeyenler var sınav kağıdını, DOC teslim eden, JPEG teslim eden.
+
+133
+00:25:48,468 --> 00:26:03,568
+Bunlar da bu sınavlık herhangi bir işlem yapmadım ama bir sonraki sınavda uygun bir formatta teslim etmeyenlere yapabilecek bir şeyim yok. Lütfen onlara dikkat etsinler.
+
+134
+00:26:04,848 --> 00:26:15,128
+RAR dosyası birden fazla dosyayı barındırabiliyor. O yüzden sorulardan biri sınav sonrası gelen iki tane dosyayı yükleyemiyoruz ne yapacağız sınav sırasında gelen.
+
+135
+00:26:15,127 --> 00:26:44,667
+iki dosya yüklemeniz beklenmiyordu. Bir tane RAR dosyası yüklemeniz bekleniyordu çünkü. Panikle PDF'i yükledim, C dosyasını yükleyemiyorum diyenler vardı. Bunları tek bir sıkıştırma formatına koymanız gerekiyor. Bir diğer önemli sıkıntı ise dosyalara verdiğiniz isimler, çok karmaşık ve kötü isimlendirmeler vardı. Dostyalara vereceğiniz isim çok basit. Numaranız, numara nokta C, numara nokta PDF, numara nokta RAR. Bitti.
+
+136
+00:26:45,127 --> 00:26:59,127
+Bu kadar. Daha karmaşık bir şey yapmaya gerek yok. Vizip ya da RAR dosyası oluşturduğunuzda onun içerisinde onu açtığınızda bir klasör oluşması gerekiyor. Ona dikkat etmeniz gerekiyor. Klasörün de sizin gene okul numaranız olması gerekiyor.
+
+137
+00:26:59,127 --> 00:27:05,647
+başka ekleyebileceğim şey var mı diye düşünüyorum.
+
+138
+00:27:07,867 --> 00:27:10,707
+Genel olarak bu soruyla ilgili ekleyeceklerim bunlar.
+
+139
+00:27:11,627 --> 00:27:16,327
+Soru sormak isteyen varsa hemen sorularınızı alabilirim.
+
+140
+00:27:19,700 --> 00:27:21,700
+Şimdi...
+
+141
+00:27:23,859 --> 00:27:25,659
+Şuradan bitirmeye çalışıyorum.
+
+142
+00:27:27,019 --> 00:27:30,159
+Kutay Eyl'in hala havada sanırım soru sormak istemiyorsun herhalde.
+
+143
+00:27:34,355 --> 00:27:42,915
+Evet, şu anda bu birinci vizedeki ilk soruyla ilgili anlaşılmayan, soru sormak isteyen var mı? Tekrar soruyorum.
+
+144
+00:27:47,316 --> 00:28:01,935
+RAR dosyasından içerisini açtığınız zaman sizin bir tane klasör oluşması lazım. Bu klasörün isminin de kendi okul numaranız olması lazım ki bunları böyle rahatlıkla takip edebilelim.
+
+145
+00:28:11,316 --> 00:28:13,615
+Evet, razı için analizim olarak da sorulacak.
+
+146
+00:28:19,412 --> 00:28:46,191
+Evet, hiç soru olmadığına göre herhalde bu konuda anlaşıldı ama hani yani çok zor olmayan bir soru olmasına rağmen, ödevinizle ilişkili olmasına rağmen açıkçası ya da derste bu konuya benzer problemleri görmemize rağmen puanlar tama çok fazla yakın değiller.
+
+147
+00:28:46,191 --> 00:29:04,551
+yani 40 puanlık soruda 30'un üzerinde alan çok fazla sayıda kişi yok. O yüzden hani sormak istediğiniz bir şey varsa lütfen sorun. Bu iyi bir fırsattır. Ama işte hani mesela karakter kısmını fark etmedim diyen arkadaşınız var.
+
+148
+00:29:04,551 --> 00:29:29,412
+sınavda panik yapmayın desem çok anlamsız olacak. Çünkü sınavda insan heyecanlanır. Bazı insan panik yapar, bazısı daha soluk kaldırır. Sadece her geçen gün sınavlarda daha sakin olma ihtimaliniz olacak. Biraz daha rahatlayacaksınız ilerleyen zamanlarda. İlk sınavımız olduğu için olmuş olabilir.
+
+149
+00:29:29,412 --> 00:29:48,391
+inşallah yüz yüze eğitime geçtiğimiz zaman online ortamın baskısı tamamen üzerinizden belki kalkmış olacak. Ama ne kadar sakin olursanız problemler karşısında, o kadar başarılı olursunuz yani maalesef böyle bir gerçek var.
+
+150
+00:29:49,051 --> 00:29:56,871
+Bu gidişle geçemeyeceğiz diyen arkadaşınız var. Valla nasıl öyle bir yorum yaptın demiyorum.
+
+151
+00:29:59,412 --> 00:30:14,412
+yani ortada daha açıklanmış bir sınav sonucu yok. Ben köy durum senaryosu çizimliyince genelde çok yüksek not beklenen arkadaşlarınızda bazen hayal kırıklığı oluyor. O yüzden birazcık...
+
+152
+00:30:14,412 --> 00:30:31,012
+birazcık. Pardon, ben seni yanlış anladım ya. Tamam tamam. Bu gidişle geçemeyeceğiz derken ben dersten örgün eğitime geçmekten bahsediyorsun.
+
+153
+00:30:31,011 --> 00:30:56,131
+Şimdi o kısım tabii ayrı bir sıkıntı. Umarım yani çok hani nasıl diyeyim yayılma hızı söylendiği gibi değildir. Ya da en azından hani belli bir bölgede kalıp sonlanır. Daha kötü bir senaryoyu kimse düşünmek istemiyor.
+
+154
+00:30:56,132 --> 00:31:06,152
+o yüzden umarım bundan daha kötüsü olmadığı baharla birlikte her şey yeniden kantoru sıfırlamış bir şekilde
+
+155
+00:31:11,667 --> 00:31:13,528
+bu kısmı ama
+
+156
+00:31:13,528 --> 00:31:18,088
+başka sormak istediğiniz bir şey de olmadığına göre
+
+157
+00:31:18,088 --> 00:31:19,527
+gelelim
+
+158
+00:31:31,923 --> 00:31:35,523
+Evet, bu sırada bazen ses kötü olabilir.
+
+159
+00:31:35,523 --> 00:31:37,364
+Bu sırada...
+
+160
+00:31:42,516 --> 00:31:58,995
+bağlantımda bir konulması lazım ama bu dersten sonra bir reset atacağım çünkü ben ilgili olan sorunlarla da karşılaşıyorum. Sanırım biraz zoom altyapısı zorlanıyor olabilir.
+
+161
+00:31:58,995 --> 00:32:02,895
+aslında ikinci soru
+
+162
+00:32:02,895 --> 00:32:11,075
+n çarpı emlik bir matrisin x numaralı sütunluğun silmesini sağlayan algoritmanın akış diyelim.
+
+163
+00:32:13,215 --> 00:32:15,815
+Bunun bir sorusu olan var mı?
+
+164
+00:32:16,895 --> 00:32:20,376
+Şöyle göstereyim tekrar paylaşalım.
+
+165
+00:32:20,376 --> 00:32:21,895
+Şuan
+
+166
+00:32:21,895 --> 00:32:27,035
+fırsat varken o soruyu da belki
+
+167
+00:32:31,763 --> 00:32:33,763
+Evet, soru buydu.
+
+168
+00:32:33,763 --> 00:32:36,763
+Bu soruyla ilgili belki sorusu olan varsa
+
+169
+00:32:36,763 --> 00:32:38,763
+bu soruyu da alabilirim.
+
+170
+00:32:54,420 --> 00:32:57,120
+Yani ödevde de ana bir klasör yapabilirsiniz.
+
+171
+00:32:58,199 --> 00:33:00,880
+Sıkıntı olmaması adına.
+
+172
+00:33:02,499 --> 00:33:09,559
+Çünkü isimlendirmelerinizde problem olduğu için ana klasörün altına koymanız daha makul olacaktır.
+
+173
+00:33:11,819 --> 00:33:19,100
+Evet, ikinci soruyla ilgili bir hani kafasında tereddütü olan bir soru sormak isteyen var mı?
+
+174
+00:33:20,100 --> 00:33:20,799
+Evet, Anıl.
+
+175
+00:33:20,799 --> 00:33:34,859
+Hocam ben matrisi kaydırdığım şey pardon sütunu kaydırdığım zaman son sütunda yani C'de yazdığımda zaten kendisi halinde sıfırlıyordu. O yüzden ekstradan bir kod parçası veya akış diyagramını eklemedim ona.
+
+176
+00:33:35,239 --> 00:33:36,679
+Nasıl sıfırlıyor kendisi?
+
+177
+00:33:38,199 --> 00:33:39,359
+Hocam valla onu ben de anlamadım.
+
+178
+00:33:39,359 --> 00:33:39,979
+Ben bir şey yapmadan.
+
+179
+00:33:41,559 --> 00:33:47,100
+Ekranı sıfır olarak yazdırıyordu yani. Boş yazdırmıyordu orayı.
+
+180
+00:33:47,100 --> 00:33:51,160
+Yani hangi platformda yazıyorsun konunu?
+
+181
+00:33:53,239 --> 00:33:54,780
+Dev C++'da
+
+182
+00:33:54,780 --> 00:33:59,360
+Düşünüyorum
+
+183
+00:33:59,360 --> 00:34:01,399
+Hocam ekleme yapabilir miyim bu konu hakkında?
+
+184
+00:34:02,119 --> 00:34:05,540
+Ben size bir ara e-post satmıştım, onda da böyle bir durumda yaşmıştım.
+
+185
+00:34:05,619 --> 00:34:09,239
+Dört tane değişkenim vardı, iki tanesi sıfır atanıyordu, iki tanesi atanmıyordu.
+
+186
+00:34:09,739 --> 00:34:10,940
+İlk değerini vermeyeceğim.
+
+187
+00:34:11,379 --> 00:34:13,960
+Aynen, işte bununla alakalı olabilir diye düşündüm.
+
+188
+00:34:13,960 --> 00:34:17,940
+o yüzden belirtmek istedim. Windows 10 ortamında devsi pp'de yine.
+
+189
+00:34:17,940 --> 00:34:31,800
+Şimdi şöyle bu söylediğiniz problem yani problem demeyelim bu söylediğiniz durum değişkenlerin otomatik olarak bir değer alması o andaki bellekteki değerinin kullanılmasıyla alakalı.
+
+190
+00:34:32,280 --> 00:34:43,940
+Eğer o anda o bellek kısmı sıfır ise siz kaydadığınızda o kısmın sıfır olarak gözükmesi beklenir ama bu örnekte senin söylediğin durumda
+
+191
+00:34:43,960 --> 00:34:49,879
+bir sütunu diğer sütün üzerine kaydırdığımda aslında kendi değerlerini görmeyi beklerim.
+
+192
+00:34:51,140 --> 00:35:00,559
+Çünkü orada kendi değerleri vardı. Nasıl sıfır oluyor orayı anlayabilmiş değilim. O yüzden bunu içeren kodu benimle paylaşırsan onu ona göre ben de sana bir yorum söyleyeyim.
+
+193
+00:35:02,019 --> 00:35:04,780
+Şey hocam, dersten sonra atarım size e-mail'den de.
+
+194
+00:35:04,780 --> 00:35:12,039
+Tamam. Çünkü burada sıfırların olduğu yerde 4, 8, 12 bir tane daha görmeyi beklerim.
+
+195
+00:35:12,039 --> 00:35:17,039
+Evet, başka soru soru soru
+
+196
+00:35:22,291 --> 00:35:41,511
+Peki, şimdi son olarak şunu soracağım. Dersin bu noktasına kadar geldiğimiz konular içerisinde biz şurayı çok iyi anlamadık. Şu konuyu sormak istiyorum. Şurada kafama takılan bir soru oldu. Dersin geçmişine yönelik soru sormak isteyen var mı?
+
+197
+00:35:59,092 --> 00:36:04,431
+gördüğüm kadarıyla herkes bayağı sıkıntısız ders üzerinde ilerliyor.
+
+198
+00:36:09,492 --> 00:36:21,171
+Ama bana biraz kağıtlarınız öyle söylemiyor. Onu söyleyeyim. O yüzden anlamadığınız bir nokta varsa bu tekrar haftasında sormanız çok faydalı olacaktır.
+
+199
+00:36:27,251 --> 00:36:54,131
+Peki. Soru olmadığına göre, bugünkü uygulama dersinde daha fazla bir şey yapmayacağım. Ama önümüzdeki haftaki, yani önümüzdeki derste, perşembe günkü derste birkaç tane örnek sorusu çözeceğim. Tekrar yapmak amacıyla. Onun dışında sorularınız varsa gene yanıtlamaya çalışacağım. Dersin olması gerekenden biraz daha önce biteceğini söyleyebilirim perşembe dersinde.
+
+200
+00:36:54,131 --> 00:37:11,011
+ama bugün tamamen kontrol ettiğim sınavımızdaki hataları konuşmak üzerine ve ödevle ilgili bazıları paylaşmak üzerine planlamıştım. Bir de sizin sorularınızı yanıtlamak üzerine. Şimdi Muhammed Kasab'ın bir sorusu var ona dönelim.
+
+201
+00:37:16,788 --> 00:37:46,767
+Muhammed sesini alamıyoruz. Şimdi alabiliyor musunuz? Evet. Hocam, kütüphaneyi kullanmadan, o kütüphanenin içerdiği bir kodu kullansak çalışır mı? Kütüphaneyi inkulut etmeden mi? Evet. Çalışmaması gerekir. Ben sanırım hata yaptım ama, strcmp kodunu, string cache'ı yazmadan yazdım. Bu yüzden çalışınca kod, ben de
+
+202
+00:37:46,788 --> 00:37:56,387
+O kütüphanenin içermediğini düşündüm ama sonra grupta fark ettim ki o kod string hash'ın bir şeyiymiş, koduymuş.
+
+203
+00:37:57,107 --> 00:37:59,968
+Ben de o yüzden orada bir anılgıya uğradım.
+
+204
+00:38:00,668 --> 00:38:04,707
+Yani stvcmp fonksiyonu string.h'ı inkılatetimden çalıştı mı?
+
+205
+00:38:05,167 --> 00:38:05,968
+Evet çalıştı.
+
+206
+00:38:06,648 --> 00:38:07,527
+Hangi ortam?
+
+207
+00:38:08,128 --> 00:38:09,267
+dc++
+
+208
+00:38:09,267 --> 00:38:11,847
+Windows herhalde?
+
+209
+00:38:12,707 --> 00:38:14,288
+Ha, sınavı bilmiyorum.
+
+210
+00:38:15,027 --> 00:38:16,167
+Windows, Windows sınavı değil.
+
+211
+00:38:16,167 --> 00:38:17,007
+Windows 10
+
+212
+00:38:17,007 --> 00:38:21,207
+Bu tabii enteresan bir durum.
+
+213
+00:38:21,947 --> 00:38:24,927
+strcmp'nin nasıl çalıştığını görmek lazım.
+
+214
+00:38:25,047 --> 00:38:29,407
+Sen de bana kodunu atarsan ben kendi tarafımda bir derleyeyim.
+
+215
+00:38:30,047 --> 00:38:30,508
+Bir bakayım.
+
+216
+00:38:31,507 --> 00:38:42,167
+Normalde string.h'ın bir fonksiyonu strcmp ve onu include etmediğimiz zaman hata mesajı döndürür derleme sırasında.
+
+217
+00:38:43,167 --> 00:38:45,167
+İlgili kütüphane yüklü değildir diye.
+
+218
+00:38:46,167 --> 00:38:50,367
+O yüzden niye öyle bir durum oluşmuş? Şu an yorum yapamıyorum.
+
+219
+00:38:51,027 --> 00:38:53,447
+Tamamdır hocam. Teşekkür ederim bilgilendirme için.
+
+220
+00:38:55,427 --> 00:38:56,067
+Evet başka?
+
+221
+00:39:01,556 --> 00:39:09,955
+Peki. O zaman size sınavlarınızda başarılar dileyemedim gene. Tam tabii kapatacağımız zaman mutlaka bir soru gelir. Alpera.
+
+222
+00:39:09,955 --> 00:39:10,955
+Alpera.
+
+223
+00:39:10,955 --> 00:39:14,755
+Alpera. Hocam ben ilk soruyla ilgili bir şey sormak istiyorum. Tabii.
+
+224
+00:39:14,755 --> 00:39:26,556
+Alpera. Benim akış diyagramımda ben başta hexadecimal sayı tabanındaki rakamları bir diziye karakter dizisine koymuştum.
+
+225
+00:39:26,556 --> 00:39:39,416
+Ondan sonra bana verilen sayıyı o karakterle sene tek tek aradım. Mesela eğer B vermişse 12. sırada buldu. O bulduğum sayıya göre işlemler yapmıştım da.
+
+226
+00:39:41,076 --> 00:39:44,535
+Yani sonuçta tek tek karşılaştırıyorsun öyle değil mi bizdeki elemanlarla?
+
+227
+00:39:45,335 --> 00:39:45,675
+Evet.
+
+228
+00:39:45,675 --> 00:40:03,276
+Evet. O zaman bizim istediğimiz bir çözüm şekli değil. Yanlış mıdır? Çözüm yanlış değildir. Puan alır mısın? Evet alırsın. Ama tek tek 16 tane değeri karşılaştırmak doğru bir çözüm değil.
+
+229
+00:40:04,655 --> 00:40:07,496
+Tamam hocam. Bir de bir şey daha sorayım.
+
+230
+00:40:07,655 --> 00:40:07,835
+Tabii.
+
+231
+00:40:07,835 --> 00:40:21,236
+Mesela akış diyagramlarında biz kendimiz bir tane dizi belirtmek istiyorsak onu nasıl belirtebiliyoruz? Mesela 10 elemanda oluşan bir diziyi belirtmek istiyoruz.
+
+232
+00:40:21,596 --> 00:40:23,456
+Belirtmek istemek ne demek? Onu anlayamadım.
+
+233
+00:40:25,195 --> 00:40:27,096
+Mesela yine bu soru üzerinden gideyim.
+
+234
+00:40:27,096 --> 00:40:43,056
+mesela bana verilen sayıda mesela bir F harf var. Bu F harfine sırasıyla o değer dizisinde başta belirttiğimizde 0 mı 1 mi 2 mi 3 mi diye sonuna kadar gitmiştim mesela. Ama o değer dizisini önceden belirtmiştim.
+
+235
+00:40:44,056 --> 00:40:53,356
+Yani anladım demek istediğini. Yani o dizinin içerisindeki ilgili yani dizinin gözlerindeki değerleri atama işleminden bahsediyorsun.
+
+236
+00:40:54,736 --> 00:40:55,176
+Evet.
+
+237
+00:40:55,175 --> 00:41:02,155
+Tamam tek tek bütün gözlere dizi 0, 0, dizi 1, 1 şeklinde atama yapman lazım
+
+238
+00:41:02,155 --> 00:41:06,515
+Ve hepsini toplu şekilde gösteremiyor muyuz?
+
+239
+00:41:07,275 --> 00:41:11,136
+Yani parantezli C'deki gibi ilklendirme şeklinde diye soruyorsun
+
+240
+00:41:11,136 --> 00:41:14,575
+Yani gösterilebilir çok büyük bir problem değil
+
+241
+00:41:14,575 --> 00:41:16,735
+Hani bunda bir yanlışlık yok
+
+242
+00:41:20,403 --> 00:41:21,403
+Teşekkürler.
+
+243
+00:41:21,403 --> 00:41:22,403
+Rica ederim.
+
+244
+00:41:34,643 --> 00:41:35,764
+Evet, başka sorusu olan
+
+245
+00:41:46,260 --> 00:42:03,159
+Evet, o zaman bakalım son bir şey var mı diye. Yok. Herkese iyi haftalar diliyorum. Sınavlarınızda başarılar diliyorum. Perşembe günkü derste örnek sorular çözmek üzere. Görüşmek üzere diyorum. Kendinize iyi bakın.
+
+246
+00:42:03,499 --> 00:42:04,280
+İyi günler hocam.

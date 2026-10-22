@@ -1,0 +1,3639 @@
+1
+00:00:10,067 --> 00:00:13,507
+ders edelim kapatölye
+
+2
+00:02:36,467 --> 00:02:39,188
+Evet, günaydın arkadaşlar. Hepiniz hoşgeldiniz.
+
+3
+00:02:40,087 --> 00:02:40,908
+Günaydın hocam.
+
+4
+00:02:44,187 --> 00:02:56,068
+Önümüzdeki hafta sınav haftanız. Bu dersin sınavı olmayacak. Bu dersin uygulama saatinde ve kendi saatinde geçmişe yönelik biraz tekrar yapacağız.
+
+5
+00:02:57,068 --> 00:03:05,547
+Ve sorularınız varsa onları yanıtlayacağız, örnek çözeceğiz. Ondan sonraki 13. ve 14. haftada
+
+6
+00:03:05,547 --> 00:03:13,427
+birkaç konumuz daha var. Onları tamamladıktan sonra dönemi tamamlayacağız. Şimdiden tüm sınavlarınızda başarılar dilerim.
+
+7
+00:03:15,848 --> 00:03:21,847
+Muhtemelen önümüzdeki hafta sonuna doğru da dönem ödevimizi açıklamış olacağım.
+
+8
+00:03:22,907 --> 00:03:34,368
+Tabii bir ihtimal bu hafta sonuna yetiştirebilirsem belki öyle bir şey de yapabilirim ama sınav haftamızda yapmak zorunda olduğunuz için değil,
+
+9
+00:03:34,367 --> 00:03:42,207
+belki önce başlamak isteyenler olabilir diye. Şu anda net olarak hangi problem vereceğimi belirlemedim.
+
+10
+00:03:42,607 --> 00:03:51,467
+Aklımda birkaç tane problem var. Sizle paylaşmış olacağım. Yaklaşık olarak bir aylık bir süreniz olacak.
+
+11
+00:03:52,307 --> 00:03:57,907
+Takvibe 3-4 haftalık bir süreniz olacak. Bu sürede güzel bir şeyler yapabileceğinizi düşünüyorum.
+
+12
+00:03:57,907 --> 00:04:16,047
+Bugün bilgisayar mimarisi konusuyla başlayacağız. İşletim sistemine doğru devam edeceğiz. Vaktimiz kalırsa network'a gireceğiz ama herhalde bugün network'a girebileceğimizi zannetmiyorum.
+
+13
+00:04:16,047 --> 00:04:28,787
+Evet şimdi bir arkadaşınızdan mail yazdığını rica etmiştim. Ödevle ilgili iki durumu hatırlatmasını istemiştim. O da chatten yazmış.
+
+14
+00:04:28,787 --> 00:04:40,447
+Şimdi normalde bu ödevde küçük büyük harflerden bir tanesini tercih edip alabilirsiniz diye soranları söyledim.
+
+15
+00:04:40,447 --> 00:04:49,667
+yani küçük ve büyük harfleri aynı anda karışık istemek zorunda değilsiniz ya da böyle bir zorunluluğa sizi bırakmıyorum.
+
+16
+00:04:50,487 --> 00:04:53,487
+Peki küçük büyük harf karışık alınsa ne yapabilirdiniz?
+
+17
+00:05:16,148 --> 00:05:27,367
+herhalde dönemin sonu yaklaştıkça herkese bir suskunluk hali oluşmaya başlıyor. Çok basit bir soru sordum. Küçük büyük harf alınsaydı ne yapabiliriz? Yok moddan bahsetmiyorum.
+
+18
+00:05:40,980 --> 00:05:41,980
+Evet, Buse.
+
+19
+00:05:43,480 --> 00:05:46,519
+Hocam, if ile kontrol ederdim galiba.
+
+20
+00:05:48,039 --> 00:05:50,119
+Yani kontrol edeceksin. Neyi kontrol edeceksin?
+
+21
+00:05:51,419 --> 00:05:58,519
+Şey, ASKİ tablosuna göre büyük harflerin arasında mı yoksa küçük harflerin arasında mı değeri diye kontrol ederdim.
+
+22
+00:05:58,539 --> 00:05:59,459
+Tamam, ettin peki.
+
+23
+00:06:01,639 --> 00:06:05,059
+Ondan sonra ona göre işlemleri yapardım.
+
+24
+00:06:05,059 --> 00:06:21,899
+Şimdi benim sizize vurgulamak istediğim nokta şu tabi ki kontrol yapacaksınız ama bu tür problemlerde genelde ya verilen bilgileri küçük harfe çevirirsiniz ya da büyük harfe çevirirsiniz.
+
+25
+00:06:21,899 --> 00:06:27,919
+kullanıcının girdiğinden bağımsız olarak aldıktan sonra bu dönüşüm işlemini gerçekleştirirsiniz.
+
+26
+00:06:27,919 --> 00:06:35,419
+Ve ondan sonra eğer sözlük için büyük harflerle saklıyorsanız, büyük harflerle, küçük harflerle saklıyorsanız da küçük harflerle saklarsınız.
+
+27
+00:06:36,059 --> 00:06:39,840
+Ama böyle bir beklentim yok. O dönüşümü yapmanızı beklemiyorum. Yapan olursa güzel olur.
+
+28
+00:06:41,079 --> 00:06:48,139
+İkinci soru da şuydu. Aynı kelimeler girilirse ne olacak? Ne olur?
+
+29
+00:06:52,372 --> 00:06:53,372
+Evet Atakan.
+
+30
+00:06:54,531 --> 00:06:59,731
+Hocam yani yan yana iki tane aynı kelimeden olmuş oluyor şu an en azından benim yaptığım case de.
+
+31
+00:07:01,172 --> 00:07:03,811
+Ben bir kelime eksilsin diye uğraşmadım.
+
+32
+00:07:05,332 --> 00:07:08,131
+Peki yan yana nasıl oluyor onu tamamlayalım.
+
+33
+00:07:08,131 --> 00:07:12,931
+Yani şey alt alta işte listede aynı kelimeden iki tane oluyor yine sıralanmış bir şekilde.
+
+34
+00:07:12,931 --> 00:07:16,611
+İşte aynı o şekilde oluyor benimki şu an.
+
+35
+00:07:16,611 --> 00:07:27,751
+Şimdi ikinci nokta da buydu. Bunun da zorununu kılmadım ama normalde böyle bir uygulama yaptığınızda, Dictionary uygulaması, bir sözlükte iki tane aynı kelime olmaz.
+
+36
+00:07:28,712 --> 00:07:36,452
+Yapmanız gereken önce bu kelimeden var mı diye kontrol etmek varsa, kelime hali hazırda var diye kullanıcıya mesaj dönmeniz gerçek bir uygulama bunu gerektirir.
+
+37
+00:07:40,115 --> 00:07:43,115
+Okey miyiz? Nerede?
+
+38
+00:07:43,115 --> 00:07:55,115
+Hocam ben de şeyi soracaktım size. Şimdi kullanmamamız gerekiyor ya string kütüphanesi. Mesela hani ben bir kelime aramamız gerekiyordu. Ben o kelimeyi ararken
+
+39
+00:07:55,115 --> 00:08:06,115
+STRLM fonksiyonuyla hani o kelimin uzunluğu kadar bir döngü döndürüyordum. Hani bunun için o kütüphaneyi kullanmamamız gerektiği için acaba nasıl bir başka alternatif kullanabiliriz?
+
+40
+00:08:06,115 --> 00:08:08,175
+Bunlar biraz takıldım. Ne acaba?
+
+41
+00:08:09,396 --> 00:08:15,215
+Bunu anlatmıştık ama herhalde gözden kaçırdın. Bir kelimenin uzunluğunu bulmak için ne yapmamız gerekiyor?
+
+42
+00:08:20,211 --> 00:08:22,631
+Yani kullanıcıya sorabiliriz.
+
+43
+00:08:22,912 --> 00:08:23,151
+Yok.
+
+44
+00:08:23,251 --> 00:08:28,512
+Başka aklıma gelmiyor. Bir tane CDR'den fonksiyonu biliyorum ama bu da kitap annede olduğunda yasak.
+
+45
+00:08:28,531 --> 00:08:31,391
+Yok, o da değil. Hemen Atakan'a söz vereyim, o söylesin.
+
+46
+00:08:31,931 --> 00:08:34,231
+Hocam, while döndürürüz nula kadar.
+
+47
+00:08:36,011 --> 00:08:44,671
+Her karakter grubunun sonunda nal karakteri olur ve siz nal karakteri göreme kadar bakarsanız kelimenin uzunluğunu bulmuş olursunuz.
+
+48
+00:08:46,351 --> 00:08:47,691
+Tamamdır, teşekkür ederim.
+
+49
+00:08:47,691 --> 00:08:50,831
+Rüzgarlarım. Muhammed Ali bir şey mi söyleyeceksin?
+
+50
+00:08:57,779 --> 00:08:58,060
+Peki.
+
+51
+00:09:00,299 --> 00:09:01,339
+Demek ki
+
+52
+00:09:01,339 --> 00:09:04,379
+string.h fonksiyonu içerisinde olan
+
+53
+00:09:04,379 --> 00:09:07,200
+strlini, strcmp fonksiyonlarını
+
+54
+00:09:07,200 --> 00:09:08,660
+kullanmayacağız. Şimdi
+
+55
+00:09:08,660 --> 00:09:11,200
+diyeceksiniz ki ya bu fonksiyonlar var
+
+56
+00:09:11,200 --> 00:09:13,679
+hazır niye kullanmıyoruz?
+
+57
+00:09:14,339 --> 00:09:14,579
+Bir,
+
+58
+00:09:15,479 --> 00:09:17,919
+bu işin nasıl yapıldığını kendiniz denemeniz için.
+
+59
+00:09:18,779 --> 00:09:18,979
+İki,
+
+60
+00:09:20,659 --> 00:09:23,299
+bu fonksiyonları geri geldiği zaman zaten kullanacaksınız.
+
+61
+00:09:24,019 --> 00:09:24,759
+Şu an için
+
+62
+00:09:24,759 --> 00:09:27,099
+özellikle öğrenmeniz açısından
+
+63
+00:09:27,099 --> 00:09:45,579
+faydalı olduğu için bu fonksiyonları kullanmanızı istemedim. Herhangi bir şekilde işinizi zorlaştırmak için değil. Bir sonraki dönem ya da bir sonraki sene zaten bu fonksiyonları daha fazla kullanıyor olacaksınız. Evet başka bir sorusu olan var mı? Konuya geçeceğim.
+
+64
+00:09:53,076 --> 00:09:54,275
+Evet Mehmet.
+
+65
+00:09:55,276 --> 00:10:01,076
+Hocam ben Number of Search Steps kısmında biraz takılmıştım da hani tam olarak ne isterim anlayamadım.
+
+66
+00:10:01,076 --> 00:10:05,076
+Mesela hani iki kelime olsun A ile başlayalım, Ali ve Ahmet diye.
+
+67
+00:10:05,076 --> 00:10:08,076
+Mesela Ahmet'i arıyorsak burada iki olması lazım değil mi?
+
+68
+00:10:08,076 --> 00:10:10,076
+Evet. Ali arıyorsak bir.
+
+69
+00:10:10,076 --> 00:10:11,076
+Aynen öyle.
+
+70
+00:10:11,076 --> 00:10:12,076
+Tamam hocam sağ olun.
+
+71
+00:10:12,076 --> 00:10:13,076
+Rüzellilerim.
+
+72
+00:10:22,548 --> 00:10:25,627
+Evet şimdi ekonom paylaşayım sizinle.
+
+73
+00:10:37,364 --> 00:10:47,083
+Şimdi konumuz bu hafta Computer Architecture ile başlıyor. Bilgisayar mimarisi dediğim zaman ne anlıyorsunuz?
+
+74
+00:10:49,643 --> 00:10:51,183
+Hemen ilk sorum sormuş olayım.
+
+75
+00:10:52,463 --> 00:10:54,523
+Hocam ekranı göremiyoruz şu an.
+
+76
+00:10:54,523 --> 00:10:55,523
+Şimdi geldi.
+
+77
+00:10:56,303 --> 00:10:56,823
+Evet.
+
+78
+00:11:01,748 --> 00:11:04,307
+Evet, bilgisayar mimar istediğiniz zaman ne anlıyorsunuz?
+
+79
+00:11:08,916 --> 00:11:09,916
+Mahmut?
+
+80
+00:11:09,916 --> 00:11:15,916
+Hocam, farklı ünitelerle bir bilgisayarın oluşumu aklıma geliyor.
+
+81
+00:11:15,916 --> 00:11:19,916
+Tamam. Bu üniteler nelerdir mesela?
+
+82
+00:11:19,916 --> 00:11:34,916
+Bu üniteler en başta dediğimiz bilgi işlem, yani işlemci mesela kendisi ünitedir. Daha sonra GPU ve bellek gibi üniteler.
+
+83
+00:11:34,916 --> 00:11:53,436
+üniteler. Tamam. Güzel. Yani bilgisayarın işini yapmasını sağlayan tüm birimler aslında bilgisayarın mimarisinde birer parça olarak geçiyorlar. Bunların başında CPU geliyor. Central Processing Unit.
+
+84
+00:11:53,436 --> 00:12:20,975
+Evet. Tabii bunun dışındaki parçaları daha önce dersin başında konuşmuştuk. Bilgisayar mimarisi de yer alan parçaları. Central Processing Unit'in ötesinde bir de mobil cihazlar üzerinde ve gömülü cihazlar üzerinde işlemci birimine verdiğimiz bir ad var. Nedir o?
+
+85
+00:12:25,716 --> 00:12:33,395
+mobi cihazlar üzerindeki işlemcilere, gömülü sistemler üzerindeki işlemcilere verdiğimiz
+
+86
+00:12:37,524 --> 00:12:44,964
+Yani CPU'ların karşılığında kullandığımız bir isim var. Mikro prosesörler.
+
+87
+00:12:46,963 --> 00:12:55,923
+Genelde boyutlarının çok daha küçük olması sebebiyle özel dizaynlarıyla mikro prosesör olarak adlandırılıyorlar.
+
+88
+00:12:57,263 --> 00:12:59,784
+Mobil cihazlarda ve embedded sistemlerde.
+
+89
+00:13:10,419 --> 00:13:29,419
+Tabii işte main memory var vesaire bunlardan. Tabii daha önce bahsettik motherboard var. Anakart. Bu anakart aslında bütün bu parçaların birbirleriyle konuşmasını sağlıyor. Çok önemli bir birim. Bunlardan bahsetmiştik. Şimdi...
+
+90
+00:13:30,772 --> 00:13:34,772
+CPU'nun temel yapı taşlarına bakacak olursak neler vardı?
+
+91
+00:13:43,572 --> 00:14:02,572
+Transistörler bu yapı taşlarının en küçük olanından bahsetmiş oluyoruz ama biz biraz daha yukarıki seviyedeki birimlerinden bahsedelim. Yapı taşı demeyelim o zaman. Ben belki yanlış ifade ettim. Birimleri nelerdi?
+
+92
+00:14:05,427 --> 00:14:07,427
+Başka bir kişiyim Mahmut'un dışında.
+
+93
+00:14:13,076 --> 00:14:16,615
+Biraz önce el kaldıranlar tekrar kaldırabilirler göremiyorum şu anda
+
+94
+00:14:18,115 --> 00:14:19,115
+Evren
+
+95
+00:14:21,036 --> 00:14:22,315
+Çekirdek hocam
+
+96
+00:14:23,836 --> 00:14:25,335
+Çekirdek diyebilir miyiz?
+
+97
+00:14:25,335 --> 00:14:26,335
+Diyemeyiz
+
+98
+00:14:27,576 --> 00:14:29,836
+Çünkü işletim sisteminden bahsetmiyoruz
+
+99
+00:14:32,275 --> 00:14:33,275
+Emre
+
+100
+00:14:33,555 --> 00:14:35,275
+Bu kontrol unit
+
+101
+00:14:35,275 --> 00:14:37,275
+Bir kontrol unit
+
+102
+00:14:37,955 --> 00:14:39,195
+Aynen öyle
+
+103
+00:14:40,076 --> 00:14:42,836
+İki aritmetik logik unit
+
+104
+00:14:48,724 --> 00:15:18,383
+Başka? Aslında bir tane daha. Memory unit var. Evet, ona da register unit diyoruz. Bunlar temel olarak CPU'nun birimleri. Register'ı biliyorsunuz, veriyi saklamak için kullandığımız birim. En küçük, en hızlı veriye ulaştığımız birim. Register'dan sonra ne geliyordu? Cache bölgesi geliyordu. Cache'in de seviyeleri vardı. Sonra main memory geliyordu.
+
+105
+00:15:18,383 --> 00:15:26,003
+sonra secondary memory geliyordu. Bu şekilde o memorylerin kapasitesi artıyordu ama maliyetleri de azalıyordu.
+
+106
+00:15:26,444 --> 00:15:34,584
+Register içlerinde birim başına en yüksek maliyete sahip olan memory bölgesi olarak da adlandırabiliriz.
+
+107
+00:15:34,683 --> 00:15:39,203
+Bunların general purpose register'lar var, special purpose register'lar var.
+
+108
+00:15:40,343 --> 00:15:45,603
+Genelde general purpose register'larda siz işleyeceğiniz veriyi saklıyorsunuz.
+
+109
+00:15:45,603 --> 00:15:56,543
+Special Purpose Register'larda da programın akışıyla ilgili, kodlamayla ilgili, instruction'larla ilgili bilgileri saklıyorsunuz.
+
+110
+00:15:56,543 --> 00:16:07,183
+Şimdi, machine language kavramı var. Yani makine diri.
+
+111
+00:16:07,183 --> 00:16:20,643
+ne demiştik? Aslında sıfır ve birlerden oluşan kombinasyonlarla bütün işlerinizi yaptırıyorsunuz demiştik.
+
+112
+00:16:22,224 --> 00:16:35,643
+Ve her bir CPU'nun da bir instruction seti var. Bu instruction sette sizin o CPU'ya yaptırabileceğiniz işlerin hepsi tanımlı.
+
+113
+00:16:35,643 --> 00:16:59,623
+yani toplama, çıkarma, çarpma, bir bilgiyi bir yerden taşıma, rotate etme, shift etme bilgileri gibi hem aritmetik hem de lojik işlerinizi görebileceğiniz, veriyi bir yerden bir yere taşıyabileceğiniz, condition olduğunda, condition'a göre hangi noktadan programa devam edeceğiniz tüm instruction'larınız bu instruction sette tanımlı.
+
+114
+00:16:59,623 --> 00:17:06,903
+iki tane temelde işlemci mimarisi var. Bunları bilen var mı?
+
+115
+00:17:19,155 --> 00:17:20,035
+Evet, Erdi.
+
+116
+00:17:20,935 --> 00:17:23,355
+Bir tanesi 80-86 olabilir mi?
+
+117
+00:17:24,475 --> 00:17:36,295
+Şimdi şöyle, bu özele girersek çok daha fazlasını söyleyebiliriz ama benim söylediğim konsept olarak iki tane işlemci mimarisinden bahsediyorum.
+
+118
+00:17:36,295 --> 00:17:47,095
+Yani ikisinin altında bu söylediğin 80-86'dan tut, hepsi yaralıyor ama benim söylediğim temelde iki bakış açısıyla oluşturulan işlemci mimarisinden bahsediyorum.
+
+119
+00:17:47,095 --> 00:18:07,315
+iki yaklaşım kullanılarak dizayn edilen işlemcilerden bahsediyorum. Bir tanesi risk işlemcileri, bir tanesi de KIS işlemcileri. Riskin açılımı nedir? Bilen var mı?
+
+120
+00:18:07,315 --> 00:18:14,016
+Reduced Instructions Set Computer.
+
+121
+00:18:17,095 --> 00:18:27,196
+Reduced instruction, set computer, kiskin açılımının bir an var mı?
+
+122
+00:18:27,995 --> 00:18:31,376
+Complex instruction, söyledim.
+
+123
+00:18:31,376 --> 00:18:35,975
+Evet, zaman içinde alışıyor insan.
+
+124
+00:18:37,376 --> 00:18:43,215
+Set computer, complex instruction, set computer.
+
+125
+00:18:44,415 --> 00:18:46,275
+Evet, aralarındaki fark ne olabilir?
+
+126
+00:18:58,036 --> 00:18:59,036
+Evet Atakan.
+
+127
+00:19:00,195 --> 00:19:10,036
+Hocam, isimlere bakınca sanki birisinde sıkıştırma işlemi varmış gibi. Yani en azından isimlere bakıp bir mantık yürüttüğümde.
+
+128
+00:19:11,036 --> 00:19:17,036
+Tam olarak öyle değil. Ama yani bir yerden başlamak adına bir yorum katmış oldum. Selim.
+
+129
+00:19:18,036 --> 00:19:22,036
+Reduced olan daha genelleştirilmiş konuklar olabilir.
+
+130
+00:19:22,036 --> 00:19:30,916
+Reduce olanda arkadaşınızın söylediği gibi hem daha genelleştirilmiş komutlar hem de basit komutlardan bahsediyoruz.
+
+131
+00:19:30,916 --> 00:19:35,436
+Yani genelleştirdiğiniz zaman zaten otomatik olarak komutlar da basitleşiyor.
+
+132
+00:19:36,275 --> 00:19:45,796
+Ama kompleks işleri yapmak için Reduce Instruction Set'i kullanıyorsanız o zaman bu basitleştirilmiş komutların kombinasyonlarını oluşturmanız gerekiyor.
+
+133
+00:19:46,415 --> 00:19:49,376
+Bir mimari bu yapının avantajlı olduğunu söylüyor.
+
+134
+00:19:49,376 --> 00:20:14,336
+diğer mimari de diyor ki ben basit işlerde tamam basit komutları kullanıyoruz yani var onlar ben ama diyor kompleks işler için basit komutların kombinasyonundan bir iş yapacağıma o kompleks olan iş içinde instruction tanımlarım bu şekilde bir mimari oluştururum diyor.
+
+135
+00:20:14,335 --> 00:20:19,215
+bir tanesinde basit komutlarla kompleks işleri yapıyor onların kombinasyonlarıyla.
+
+136
+00:20:19,735 --> 00:20:23,775
+Diğerinde o kompleks iş için ayrıca bir komut setine yeni komut tanımlıyor.
+
+137
+00:20:24,235 --> 00:20:29,935
+Doğal olarak CISC mimarisinde daha fazla komut var.
+
+138
+00:20:30,835 --> 00:20:33,375
+Peki birbirine göre avantajları nedir?
+
+139
+00:20:33,655 --> 00:20:36,355
+Yani biri diğerinden net bir şekilde avantajlı diyebilir miyiz?
+
+140
+00:20:46,740 --> 00:20:47,740
+Evet İran?
+
+141
+00:20:47,740 --> 00:20:52,740
+Bence ikisi de kendine göre yöre avantajları ve dezavantajları var.
+
+142
+00:20:52,740 --> 00:20:53,740
+Mesela ne olabilir?
+
+143
+00:20:53,740 --> 00:21:07,740
+Mesela CPU karmaşık ama işte bellek tasarrufu var. Diğeri de daha basit çalışıyor gibi ama yani onun da kullanıldığı yerler var.
+
+144
+00:21:07,740 --> 00:21:16,740
+Biraz şey gibi oldu İran bu, politikacılar gibi oldu. Hani tam böyle hani net bir şey olmadı.
+
+145
+00:21:16,740 --> 00:21:21,399
+hani ikisinin de avantajları var ikisinin de avantajları var ama nedir mesela onlar?
+
+146
+00:21:23,019 --> 00:21:28,499
+Mesela Reduce Instraduction Set Computer daha hızlı tasarlanıyor daha hızlı çalışıyor.
+
+147
+00:21:29,519 --> 00:21:33,320
+Ama çok karmaşık programlar için uygun değil.
+
+148
+00:21:33,960 --> 00:21:35,640
+Tamam peki teşekkür ederim. Buğra?
+
+149
+00:21:35,639 --> 00:21:47,759
+Hocam risk biraz daha genel işler için uygunken SISK'te daha hızlı yapabiliyor diyebilir miyiz?
+
+150
+00:21:49,279 --> 00:21:56,519
+Risk daha genel yapabiliyor. Daha yavaş yapıyor ama SISK'te daha spesifik yapıyor ama daha hızlı yapıyor.
+
+151
+00:21:56,839 --> 00:22:03,100
+Kısmen diyebiliriz. Doğru yanlış değil. Teşekkürler. İram bir daha söz etsin galiba.
+
+152
+00:22:05,640 --> 00:22:08,460
+Yok tamam peki. Selim?
+
+153
+00:22:10,600 --> 00:22:21,159
+Ön diyoruz daha genelleştirilmiş olduğu için bazı şeylerin erişimi nasıl desem daha yüksek seviye olduğu için performansı bence de yeni göre bir tık daha düşük olabilir yazılan işlemin.
+
+154
+00:22:21,159 --> 00:22:30,900
+Ama geliştirilirken yani yapılırken daha hızlı bir şekilde kodu yazılır çünkü insan dilinin daha yakınır diye düşünüyorum.
+
+155
+00:22:30,899 --> 00:22:54,439
+Aslında tam olarak o kısmı doğru değil son söylediğin kısmı çıkartalım. Risk mimarisi kullanan CPU'lar genelde enerji efficient çalışırlar. Genel komutlar kullandıkları için çünkü kompleks instruction'lar genelde çok daha yüksek enerji tüketirler.
+
+156
+00:22:54,439 --> 00:23:19,620
+doğal olarak kompleks instruction set'e sahip olan mimariler biraz daha hızlı özellikle kompleks işler yapılacaksa biraz daha performanslı çalışırlar. Risk o yüzden genel olarak işte ARM işlemci serisi risk mimarisini tercih eder ve cep telefonları gibi enerji kısıtı olan cihazlarda çok tercih edilir.
+
+157
+00:23:19,619 --> 00:23:31,619
+çok avantajlıdır. Enerjiyi verimli kullanır. Sisk ise daha çok Intel'in tercih ettiği PC ortamlarında kullanılan bir mimaridir ve performans odaklıdır.
+
+158
+00:23:32,679 --> 00:23:44,359
+Özellikle karmaşık işleri implemente ettiğinizde birden fazla komutu arka arkaya çalıştırmaktansa tek bir komutta o kompleks işi yapmak performans sağlar ama
+
+159
+00:23:44,359 --> 00:24:03,619
+genelde Sisk mimarisi cihazlar birazcık enerji tüketen cihazlardır. Birazcık yapacağınız işe bağlı performans arıyorsanız, kompleks işlerle uğraşıyorsanız Sisk mimarisi enerji efficient bir tasarım olsun istiyorsanız Risk mimarisi ön plana çıkar.
+
+160
+00:24:07,579 --> 00:24:10,559
+Şimdi bir bakalım.
+
+161
+00:24:10,559 --> 00:24:29,399
+Biz makine dilinden bahsetmiştik. Burada tabii makine dili sıfır ve birlerden oluşuyor dedik ama aritmetik, lojik işlerimiz var. Bunu makine diliyle kodlayacağız ve yaptıracağız.
+
+162
+00:24:29,399 --> 00:24:37,259
+Biz şu ana kadar aritmetik ve lojik operasyonlar için neler öğrendik bana bir hatırlatabilir misiniz?
+
+163
+00:24:37,259 --> 00:24:40,379
+Evet Selim
+
+164
+00:24:41,395 --> 00:25:02,395
+Arismetik olarak toplama, çıkarma, çarpma, bölme, modu vesaire de öğrendik ama içinde farklı işe bu az önce saydığım dört işlemi barındırarak oluşu olabilir onu bilmiyorum. Logik işlemleri olarak da karşılaştırma operatörlerini görmüştük. Eşittir, küçüktür, büyüktür, küçük iştir, büyük iştir gibi.
+
+165
+00:25:02,395 --> 00:25:10,395
+Şimdi şöyle yazalım bir saniye zıcalacağım.
+
+166
+00:25:18,067 --> 00:25:44,707
+Operation kodlarımız var. Bunları işte farklı kombinasyonlarla, sıfır ve birin kombinasyonlarıyla ifade ediyoruz. Operationlarımız neler? Aslında toplama çıkarmada da kullanıyoruz bunları. AND, OR, XOR. Bu tarz logic gate'lerden faydalanıyoruz. Bunlara ek olarak temel işlemler arasında
+
+167
+00:25:44,707 --> 00:26:03,148
+store komutlarımız da var. Shift komutumuz var. Bunun ötesinde jump komutumuz var. Bu şekilde elementary operations diyebiliyoruz. Bunun aslında ismini öyle yazalım.
+
+168
+00:26:03,147 --> 00:26:16,067
+karışıklık olmasın sonra. Bunlar instruction setler içerisinde bulunan temel operasyonlardan bazıları.
+
+169
+00:26:16,227 --> 00:26:17,707
+Hocam bir de not vardı sana.
+
+170
+00:26:18,247 --> 00:26:20,627
+Tabi not da var onu da yazabiliriz. Teşekkürler.
+
+171
+00:26:23,387 --> 00:26:31,527
+Bu elementer operasyonlar tabi doğal olarak operantlarla çalışıyorlar. Yani mesela ent yapacaksanız iki tane operanta ihtiyacınız var.
+
+172
+00:26:31,527 --> 00:26:34,667
+not yapacaksanız bir tane operantta ihtiyacınız var gibi.
+
+173
+00:26:36,227 --> 00:26:37,987
+Shift işlemi nedir?
+
+174
+00:26:39,828 --> 00:26:40,508
+Bilal var mı?
+
+175
+00:26:50,771 --> 00:26:51,611
+Evet Selim.
+
+176
+00:26:52,791 --> 00:26:57,712
+Tam emin değilim ama sağdan ya da soldan bit kaydırma şimdi ne deniyor diye duymuştum.
+
+177
+00:26:58,232 --> 00:27:05,351
+Evet, mesela 0, 1, 1 olsun. Çok basit bir örnekle göstereyim. Bunu sola kaydırırsanız 1, 1, 1, 0 olur.
+
+178
+00:27:07,032 --> 00:27:16,692
+Sağa kaydırırsanız 0, 0, 1, 1 olur. Bu sayıyı ikiyle çarpmak ve ikiye bölmek aslında anlamına gelir.
+
+179
+00:27:16,692 --> 00:27:27,191
+bunu 4 bitle yapmayız genelde 8 ve 8'in katı bitlerle çalışırız bu şekilde bitleri shift edebilirsiniz rotate vardır burada çok
+
+180
+00:27:27,191 --> 00:27:35,492
+rotate ne yapar bitleri burası shift olsun
+
+181
+00:27:39,763 --> 00:27:44,623
+mesela örnek veriyorum 011'i sana rotat ettiğinizde
+
+182
+00:27:44,623 --> 00:27:47,263
+011'i sana rotat ettiğinizde
+
+183
+00:27:51,155 --> 00:27:55,055
+bir, sıfır, bir, bir şeklinde alacaktır.
+
+184
+00:27:57,755 --> 00:28:00,376
+sola rotate etmiş olsaydınız
+
+185
+00:28:00,376 --> 00:28:02,655
+bir, bir,
+
+186
+00:28:03,555 --> 00:28:06,015
+bir, sıfır şeklinde alacaktır.
+
+187
+00:28:07,176 --> 00:28:08,215
+bu şekilde birçok
+
+188
+00:28:08,215 --> 00:28:11,135
+operation yapabiliyorsunuz işlem düzenine.
+
+189
+00:28:11,215 --> 00:28:12,455
+store operation'ı mesela
+
+190
+00:28:12,455 --> 00:28:17,135
+register'daki datanın alınıp memoriye kaydedilmesi
+
+191
+00:28:17,135 --> 00:28:19,255
+işlemine gerçekleştiriyor.
+
+192
+00:28:19,255 --> 00:28:26,095
+ve örneğin bir tane operation code instruction sette oluşturdunuz.
+
+193
+00:28:26,095 --> 00:28:33,336
+İşte 0011 şu kısım operation code olarak adlandırılıyor.
+
+194
+00:28:34,715 --> 00:28:49,215
+Bu kısımda 010101011 bu kısımda operant olarak adlandırılıyor.
+
+195
+00:28:49,255 --> 00:28:55,495
+Yani ne iş yapacağınız ve bu işi hangi veri üzerinde yapacağınız
+
+196
+00:29:00,307 --> 00:29:28,327
+İşlemci üzerinde bu tür kodlar dönüyor. Mesela işte Operation Code diyelim 001 örneğin Store demek. Siz buradaki 3, 5, A7 işlemciye geldiği zaman bakıyor. 3 Store diyor. 5, A7 demek ki ben bu bilgiyi işte saklayacağım anlamına geliyor ve bu şekilde işlemci bu 01 kombinasyonlarından ne yapması gerektiğini biliyor.
+
+197
+00:29:28,327 --> 00:29:43,147
+bu yüzden her bir 0-1 kombinasyonunda bir operation kodu olarak bir anlamı var. Tabii bunları bizim ezbere bilmemiz mümkün değil. Şimdi burada Machine Cycle'ı göstereyim size.
+
+198
+00:29:53,683 --> 00:29:55,683
+bir Fetch var
+
+199
+00:30:09,044 --> 00:30:10,243
+dikode var.
+
+200
+00:30:21,715 --> 00:30:22,915
+bir de Execute var.
+
+201
+00:30:35,380 --> 00:30:37,820
+Evet, şimdi bu fenç işlemi ne yapıyor?
+
+202
+00:30:38,459 --> 00:30:39,459
+Tamam sorayım.
+
+203
+00:30:51,923 --> 00:30:53,063
+Farklı bir kişi olsun.
+
+204
+00:30:55,223 --> 00:30:55,863
+İşlemcideyiz.
+
+205
+00:30:56,284 --> 00:30:56,623
+Emre?
+
+206
+00:30:57,543 --> 00:30:59,763
+Bellek ya da Rejister'dan alıyor sanırım bilgiyi hocam.
+
+207
+00:31:00,184 --> 00:31:12,643
+Evet. Bu fetch işlemi, bir sonraki instruction neyse, ne yapılması gerek diyorsa, bu bilgiyi memory'den alıyor.
+
+208
+00:31:20,756 --> 00:31:32,756
+ve program counter'ı bir arttırıyor. Yani bir sonraki instruction ne olacaksa programda o noktaya getiriyor.
+
+209
+00:31:34,420 --> 00:31:37,779
+bu fetch. decode ne yapıyor?
+
+210
+00:31:44,819 --> 00:31:45,819
+di Kodz.
+
+211
+00:31:49,491 --> 00:32:01,491
+aldığımız bit pattern'ini instruction register içerisindeki çözümlüyor. Yani ne yapılacağına karar veriyor.
+
+212
+00:32:03,859 --> 00:32:13,339
+Instruction, Registra almış olduğunuz, biraz önceki Instruction bilgisinden bahsediyoruz. Son olarak da üçüncü adımda da Execute.
+
+213
+00:32:15,700 --> 00:32:23,700
+Bu da ilgili aksiyonun gerçekleşmesini sağlıyor.
+
+214
+00:32:50,003 --> 00:32:50,843
+Genel olarak
+
+215
+00:32:50,843 --> 00:32:56,883
+CPU tarafındaki döngü bu şekilde gerçekleşiyor.
+
+216
+00:32:58,583 --> 00:32:59,143
+İlgili
+
+217
+00:32:59,143 --> 00:33:00,924
+bilginin
+
+218
+00:33:00,924 --> 00:33:02,283
+memoriden alınması,
+
+219
+00:33:02,603 --> 00:33:06,043
+instruction'ın, bunun çözümlenmesinin yapılması ve sonra
+
+220
+00:33:06,043 --> 00:33:08,143
+execute işleminin gerçekleştirilmesi.
+
+221
+00:33:11,663 --> 00:33:14,543
+Şimdi, şöyle bir şey var.
+
+222
+00:33:15,003 --> 00:33:15,403
+Bu da
+
+223
+00:33:15,403 --> 00:33:17,823
+aslında çok sık
+
+224
+00:33:17,823 --> 00:33:33,143
+konuştuğun konulardan bir tanesidir. Eskiden daha da fazla konuşuluyordu ama bilgisayarların güçlerinin birbiriyle karşılaştırılması. Nasıl yaparız iki bilgisayarın gücünü karşılaştırma işini?
+
+225
+00:33:45,428 --> 00:33:50,147
+Saniyede bu döngüden kaç tane işlem geçiyor olduğuna bakabiliriz?
+
+226
+00:33:51,107 --> 00:34:01,407
+İşte biz işlem geçmesi olarak demeyelim onu. Bilgisayarın bir saati var ve buna oscillator deniyor.
+
+227
+00:34:02,207 --> 00:34:05,227
+Ve bu sürekli olarak bir puls üretiyor.
+
+228
+00:34:05,227 --> 00:34:16,147
+ve bu pulse'ın saniyede kaç defa üretildiği bizim aslında onun işlemci hızını ifade etmemizi sağlıyor.
+
+229
+00:34:16,147 --> 00:34:21,947
+Örneğin 1 GHz dediğiniz zaman saniyede kaç tane pulse üretiyor anlamına geliyor.
+
+230
+00:34:26,996 --> 00:34:27,795
+Evet Selim.
+
+231
+00:34:28,635 --> 00:34:29,615
+Bin 24 mu?
+
+232
+00:34:30,595 --> 00:34:30,915
+Hayır.
+
+233
+00:34:33,255 --> 00:34:37,695
+O zaman bir kilohertz dediğimde ne kadar olduğunu sorayım.
+
+234
+00:34:40,956 --> 00:34:41,635
+Emre?
+
+235
+00:34:42,275 --> 00:34:42,996
+2 üzeri 10 mu?
+
+236
+00:34:44,035 --> 00:34:46,475
+Bir kilobayt dediğimde 2 üzeri 10.
+
+237
+00:34:47,135 --> 00:34:50,875
+Bir megahertz dediğimde kilobayt diyorum, yanlış söylüyorum, bir kilohertz.
+
+238
+00:34:50,875 --> 00:35:18,935
+1 MHz dediğimde 2 üzeri 20. Doğru mu? Doğru hocam. Tamam. Peki 1 GHz dediğimde 2 üzeri 30. Milyar. Efendim? Milyar dedim. Evet. Bir saniyede 2 üzeri 30 tane puls üretebiliyor. Peki 2 tane işlemci var. Biri 1 GHz, diğeri 2 GHz.
+
+239
+00:35:18,935 --> 00:35:22,255
+2 GHz olan 1 GHz'den daha hızlıdır diyebilir miyiz?
+
+240
+00:35:41,492 --> 00:35:43,492
+farklı kişi olsun.
+
+241
+00:35:57,684 --> 00:36:06,104
+Evet. Sonuçta bir yorum yapacaksınız arkadaşlar. Yani diyebilir miyiz? Diyemeyiz. Şu yüzden deriz, şu yüzden diyemeyiz.
+
+242
+00:36:11,411 --> 00:36:12,251
+Evet Mahmut.
+
+243
+00:36:13,931 --> 00:36:16,691
+Yani hocam şimdi düz mantık düşünce diyebilmemiz lazım.
+
+244
+00:36:16,892 --> 00:36:18,852
+1 gigahertz, 2 gigahertz olarak.
+
+245
+00:36:19,411 --> 00:36:21,131
+Yani bence diyebilmemiz lazım.
+
+246
+00:36:22,451 --> 00:36:25,451
+Evet, düz mantık düşündüğümüzde bunu söyleyebiliyor olmamız lazım.
+
+247
+00:36:25,451 --> 00:36:31,451
+Ancak biraz önceki size söylemiş olduğum işlemci mimarisindeki dizayn farklılıklarının nedeniyle
+
+248
+00:36:31,451 --> 00:36:44,351
+ile bir clock cycle, daha doğrusu bir instruction'ın bir işlemcide kaç clock cycle ile diğer işlemcide kaç clock cycle ile çalıştığını bilmiyoruz.
+
+249
+00:36:44,991 --> 00:36:51,931
+Mesela işte toplama komutu birinde 3 cycle da gerçekleşirken diğerinde 5 cycle da gerçekleşiyor olabilir.
+
+250
+00:36:51,931 --> 00:37:01,272
+O yüzden biz doğrudan gigahertzlerine bakarak bir bilgisayar daha hızlıdır ya da daha yavaş diyemeyiz.
+
+251
+00:37:01,451 --> 00:37:23,831
+birbirlerine yakın olan 1.4, 1.6'yı düşünün. Ya da farklı işlemci aileleri var. İşte AMD, Intel. Intel'in bir işlemcisi AMD'ye göre hertz olarak daha yüksek olmasına rağmen AMD'nin daha performanslı çalışma ihtimali var.
+
+252
+00:37:23,831 --> 00:37:29,831
+Tabii hangi cihaz üzerinde çalıştı da bu önemli. O yüzden doğrudan böyle bir şey yapmak mümkün değil. Evet Selim?
+
+253
+00:37:31,452 --> 00:37:40,892
+Hocam aynı mimari dolayı iki işlemciye karşılaştırınca gigaresi farklı olsa bile çekirdek sayısı gibi faktörlerden dolayı da performans değişebilir.
+
+254
+00:37:40,892 --> 00:37:51,632
+Sadece farklı aile değil, aynı ailede de yani olsa, yani Intel işlemcisi olsa bu sefer farklı mimariler var kendi içerisinde de.
+
+255
+00:37:51,632 --> 00:37:55,411
+Yani sadece şey değil, farklı aile olması gerekmiyor.
+
+256
+00:37:55,411 --> 00:38:06,611
+işlemciler biliyorsunuz 86 ile başlıyor, 80, 386, 80, 486 diye devam ediyor. Bunlar da kendi içlerinde komut setleri farklılık gösteriyor.
+
+257
+00:38:07,831 --> 00:38:20,632
+Tabii ki core sayıları vs. bunlar önemli. O yüzden hiçbir zaman doğrudan gigahertz üzerinden bir bilgisayarın daha hızlı ya da daha yavaş olduğunu yorumlamamız sadece genel bir fikir verir.
+
+258
+00:38:20,632 --> 00:38:26,792
+ama net olarak bir karşılaştırma yapamayız. Bunu yapmak için de kullanabiliriz.
+
+259
+00:38:37,844 --> 00:38:39,143
+farklı bir kişi istiyorum.
+
+260
+00:38:41,084 --> 00:38:42,264
+Çok bildiğiniz bir cevap.
+
+261
+00:38:46,579 --> 00:38:47,179
+Evren.
+
+262
+00:38:48,379 --> 00:38:51,020
+Hocam o zaman bilgisayarları açıp aynı teste sokarız.
+
+263
+00:38:52,839 --> 00:38:54,060
+Tamam da bunu...
+
+264
+00:38:54,060 --> 00:38:56,880
+Aynı işlemleri yaptırsak, farklı sürelerde çıksa.
+
+265
+00:38:57,159 --> 00:38:58,239
+Öyle bir söyledin ki.
+
+266
+00:38:58,659 --> 00:38:59,960
+Yani tabii ki böyle yaparız yani.
+
+267
+00:39:00,139 --> 00:39:02,259
+Başka da bir şey yok ki der gibi söyledim.
+
+268
+00:39:02,259 --> 00:39:03,639
+Vardır vardır hocam onun için.
+
+269
+00:39:03,739 --> 00:39:04,579
+Nedir onun ismi?
+
+270
+00:39:06,659 --> 00:39:07,299
+Benchmark.
+
+271
+00:39:07,719 --> 00:39:09,379
+Evet. Benchmarking tester.
+
+272
+00:39:10,599 --> 00:39:11,000
+Yani
+
+273
+00:39:11,000 --> 00:39:15,019
+Benchmarking'i biraz daha açarsan
+
+274
+00:39:15,019 --> 00:39:17,159
+bize başka kelimelerle
+
+275
+00:39:17,159 --> 00:39:18,219
+söylersen ne söylersin?
+
+276
+00:39:20,119 --> 00:39:20,979
+Yani hocam iki
+
+277
+00:39:20,979 --> 00:39:23,079
+makineye de aynı işi yaptıracağız.
+
+278
+00:39:23,459 --> 00:39:25,179
+Evet. İki makineye de
+
+279
+00:39:25,179 --> 00:39:26,779
+aynı işi yaptırdığımız zaman
+
+280
+00:39:26,779 --> 00:39:29,659
+bu işleri gerçekleştirme
+
+281
+00:39:29,659 --> 00:39:31,039
+sürelerini hesaplayarak
+
+282
+00:39:31,039 --> 00:39:33,019
+iki
+
+283
+00:39:33,019 --> 00:39:34,099
+cihazın
+
+284
+00:39:34,099 --> 00:39:37,139
+performansları konusunda fikir sahibi
+
+285
+00:39:37,139 --> 00:39:39,199
+olabiliriz. Ama bu şu demek değil
+
+286
+00:39:39,199 --> 00:39:41,279
+bir konuda daha başarılı
+
+287
+00:39:41,279 --> 00:39:43,039
+daha iyi performans gösteren bir
+
+288
+00:39:43,039 --> 00:39:44,959
+işlemci başka bir işi
+
+289
+00:39:44,959 --> 00:39:46,879
+yaparken diğerine göre daha az
+
+290
+00:39:46,879 --> 00:39:48,859
+performans gösterebilir. Bu çok çok
+
+291
+00:39:48,859 --> 00:39:50,999
+önemli. Yani her zaman için
+
+292
+00:39:50,999 --> 00:39:52,980
+bir işlemci diğerinden
+
+293
+00:39:52,980 --> 00:39:55,160
+her kalemde
+
+294
+00:39:55,160 --> 00:39:57,020
+daha üstündür diyemezsiniz. Yaptırdığınız
+
+295
+00:39:57,020 --> 00:39:59,099
+işe bağlı. Çünkü yaptırdığınız
+
+296
+00:39:59,099 --> 00:40:01,139
+işte memoriye erişmeniz gerekebilir.
+
+297
+00:40:01,839 --> 00:40:02,940
+GPU kullanmanız
+
+298
+00:40:02,940 --> 00:40:04,880
+gerekebilir. Bunlara bağlı
+
+299
+00:40:04,880 --> 00:40:05,260
+olarak
+
+300
+00:40:05,260 --> 00:40:09,020
+işlemcilerin performanslarında
+
+301
+00:40:09,020 --> 00:40:10,479
+benchmarkinglerde
+
+302
+00:40:10,479 --> 00:40:12,940
+çeşitli sapmalar yaşanabilir.
+
+303
+00:40:13,039 --> 00:40:14,599
+farklılıklar görülebilir ama
+
+304
+00:40:14,599 --> 00:40:17,120
+genel olarak benchmarking testlerinden
+
+305
+00:40:17,120 --> 00:40:18,779
+faydalanıyoruz. En son
+
+306
+00:40:18,779 --> 00:40:20,980
+benchmark testlerine bakan var mı aranızda
+
+307
+00:40:20,980 --> 00:40:21,520
+herhangi bir şey?
+
+308
+00:40:27,188 --> 00:40:29,188
+Evet, Mehmet'e söz vereyim.
+
+309
+00:40:29,188 --> 00:40:38,188
+Bak, hocam bakmıştım en son, işte tek çekirdek performansı, çapur çekirdek performansı gibi bayağı farklı faktör var.
+
+310
+00:40:38,188 --> 00:40:40,188
+Üç boyutlu işleme gibi.
+
+311
+00:40:40,188 --> 00:40:44,188
+Yani ne tespit ettin? Aklında kalan bir şey var mı?
+
+312
+00:40:44,188 --> 00:40:54,188
+Yani çok yok ama mesela genelde Intel İşlemciler tek çekirdekte daha iyi performans oluyor. AMD'ler çok çekirdekte performans da oluyor. O tarz şeyler.
+
+313
+00:40:54,188 --> 00:40:59,947
+Anladım. Tamam. Peki. Diğer arkadaşlarımıza söz verelim. Atakan.
+
+314
+00:41:01,127 --> 00:41:08,967
+Hocam ben thermal throttling oluyor mu diye Intel XTU'ydu herhalde. Oradan bakmıştım. Oluyordu. Onu hatırlıyorum şu an. En son yaptığım bir şeyde.
+
+315
+00:41:08,967 --> 00:41:12,088
+Tamam. Teşekkürler. Başka? Emre?
+
+316
+00:41:13,307 --> 00:41:23,228
+Hocam mesela ben dün ekran kartlarının thermal macunu değiştirdim. Onun benchmarklarını kıyasladığım zaman hocam hem sıcaklık olarak hem aldığım
+
+317
+00:41:23,227 --> 00:41:30,467
+benchmark skoru olarak arada dağlar kadar fark vardı. Neyi değiştiririz mi? Tam duyamadım. Termal macunu hocam.
+
+318
+00:41:30,467 --> 00:41:45,807
+Termal macunu tamam doğru anlamışım. Tabii doğru. Peki şu anda oyun bilgisayarı dizayn etmiş kendine kurmuş olan ve bir ekran kartı kullanan var mı? Özel bir GPU kullanan?
+
+319
+00:41:48,647 --> 00:41:52,347
+Evet mesela Bazel'e soralım. Ne kullanıyorsun?
+
+320
+00:41:53,228 --> 00:41:55,247
+Hocam GTX 1060
+
+321
+00:41:55,247 --> 00:41:57,967
+Performansla memnun musun?
+
+322
+00:41:59,247 --> 00:42:06,268
+Yani hocam iyi, 4 yıllık cihaz, fena değil hocam, işlemciyi değiştirdim, yeniledim
+
+323
+00:42:06,268 --> 00:42:09,348
+Tamam, çok güzel, güle güle kullan
+
+324
+00:42:09,348 --> 00:42:11,488
+Mahmut
+
+325
+00:42:11,488 --> 00:42:17,607
+Hocam ben GTX 1070 kullanıyorum, neredeyse düşüyordur
+
+326
+00:42:17,607 --> 00:42:18,527
+Güzel
+
+327
+00:42:18,527 --> 00:42:23,688
+bakarak mı aldın yoksa o dönem aldığında neye göre aldın?
+
+328
+00:42:24,507 --> 00:42:32,207
+Ya hocam ben o dönem aslında bilgisayardan pek anlamıyordum. İşte oradan buradan bildiğim kadarıyla GPU önemlidir diye biliyordum.
+
+329
+00:42:32,827 --> 00:42:43,827
+İşte o yüzden biraz şey yaptım GTX 1070 iyi diye biliyordum. İşte onu aldım ama işte tabii o zamanlarda işlemcim falan çok farkını anlamıyordum doğrusu.
+
+330
+00:42:43,827 --> 00:42:48,988
+işte o yüzden gittim GX1070'e dördüncü nesil işlemci aldım. Öyle bir durum oldu.
+
+331
+00:42:49,568 --> 00:43:10,408
+Anladım. Okey. Bu arada tabii donanımın birbiriyle uyumlu olması çok önemli biliyorsunuz. Bu konuda örnek vermek gerekirse Apple kendi donanımını ve yazılımını birlikte dizayn ettiği için çok daha performanslı ürünler ortaya koyabiliyor.
+
+332
+00:43:10,408 --> 00:43:15,288
+donanımların kendi içerisindeki uyumu da çok önemli.
+
+333
+00:43:16,068 --> 00:43:17,428
+Buna dikkat etmek gerekiyor.
+
+334
+00:43:18,208 --> 00:43:20,868
+Bu kısmı da böylece konuşmuş olduk.
+
+335
+00:43:22,008 --> 00:43:25,488
+Bakalım notlarıma ne var başka diye.
+
+336
+00:43:29,300 --> 00:43:29,999
+hmm
+
+337
+00:43:37,940 --> 00:43:46,019
+Bu arada saatimiz de ara vermek için gelmiş zaten. 9.48, 10'a kadar bir ara verelim. 10'da kaldığımız yerden devam edelim.
+
+338
+00:55:27,315 --> 00:55:29,595
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+339
+00:55:58,931 --> 00:56:06,872
+Evet, bir bilgisayarla diğer cihazlar arasındaki haberleşmeyi sağlayan parçaya ne adı veriliyor onu sorayım.
+
+340
+00:56:24,083 --> 00:56:35,083
+Tekrar soruyorum. Bir bilgisayarla diğer device'lar arasındaki, hayır, bir monitör olabilir bu.
+
+341
+00:56:36,659 --> 00:56:41,659
+cihazın içerisindeki disk drive olabilir, CD drive olabilir, modem olabilir.
+
+342
+00:56:41,659 --> 00:56:47,659
+Controller
+
+343
+00:56:49,492 --> 00:56:53,531
+parçaya verdiğimiz isim, controller. Hemen yazalım.
+
+344
+00:56:57,427 --> 00:57:02,627
+Communication between a computer
+
+345
+00:57:05,652 --> 00:57:08,092
+and other devices.
+
+346
+00:57:11,827 --> 00:57:16,308
+is normally handled.
+
+347
+00:57:23,539 --> 00:57:25,419
+an intermediary.
+
+348
+00:57:29,652 --> 00:57:30,652
+Konuşma.
+
+349
+00:57:33,372 --> 00:57:33,871
+No.
+
+350
+00:57:35,811 --> 00:57:36,731
+Es de kontrol.
+
+351
+00:57:36,731 --> 00:57:37,291
+Konuşma.
+
+352
+00:57:41,235 --> 00:57:42,235
+hemen bir tane
+
+353
+00:57:42,235 --> 00:57:47,235
+figür çizelim.
+
+354
+00:57:47,235 --> 00:57:50,235
+CPU olsun.
+
+355
+00:57:50,235 --> 00:57:52,235
+Burada
+
+356
+00:57:56,980 --> 00:58:05,440
+Bas yapısı var. Birimler bu bas yapısı üzerinden birbirleriyle haberleşiyorlar.
+
+357
+00:58:05,440 --> 00:58:19,119
+Burada bir tane controller var. Bu controller örneğin CD Drive ile haberleşmeyi sağlıyor.
+
+358
+00:58:19,119 --> 00:58:35,520
+Bir tane daha kontrolör düşünün. Bu da modem ile haberleşmeyi sağlıyor. Başka bir kontrolör düşünün. Bu monitör ile haberleşmeyi sağlıyor.
+
+359
+00:58:46,931 --> 00:58:57,171
+Bu da disk ile haberleşmeyi sağlıyor. Bu şekle baktığınız zaman neyi bu haberleşme mantığının dışında görüyorsunuz?
+
+360
+00:59:01,268 --> 00:59:07,667
+Bu şekil üzerindeki farklı olan haberleşme stili farklı olan hangisi?
+
+361
+00:59:07,667 --> 00:59:10,228
+Farklı bir kişi olsun lütfen.
+
+362
+00:59:14,483 --> 00:59:15,483
+Ubeydu'la
+
+363
+00:59:17,483 --> 00:59:19,483
+Main memory mı hocam?
+
+364
+00:59:19,483 --> 00:59:20,483
+Evet, ne farkı var?
+
+365
+00:59:21,483 --> 00:59:26,123
+Herhangi bir kontrollera ihtiyaç duymadan direkt CPU'ya
+
+366
+00:59:26,123 --> 00:59:31,483
+Evet. Herhangi bir kontrollera ihtiyaç duymuyoruz. Ve bu da bize ne sağlıyor?
+
+367
+00:59:32,483 --> 00:59:34,483
+Daha hızlı iletişim kurmayı hocam.
+
+368
+00:59:34,483 --> 00:59:43,483
+Evet. CPU doğrudan main memory'e adres bazında eriştiği için bize çok daha hızlı bir şekilde main memory'e erişim avantajı sağlıyor.
+
+369
+00:59:43,483 --> 01:00:09,763
+sağlıyor. Controller arada bir dönüşüm işlemi gerçekleştirdiği için ki bu controllerlar biliyorsunuz farklı aparatlar için, farklı markalar için özellikle ilgili driverların yüklenmesiyle kullanılabiliyor. O yüzden bunların hepsinin bir bize maliyeti var aradaki dönüşüm cihazından dolayı. Mainframe'de ise böyle bir şey yok.
+
+370
+01:00:13,483 --> 01:00:30,963
+Şimdi Direct Memory Access kullanıyoruz demiştik. DMA. Bu da önemli bir performans sağlıyor bize. İki tip communication'dan bahsediyoruz. Communication tipi var.
+
+371
+01:00:34,771 --> 01:00:38,211
+nedir bunlar? Bir tanesi Parallel Communication
+
+372
+01:00:43,188 --> 01:00:45,487
+diğeri de Serial Communication.
+
+373
+01:00:51,507 --> 01:00:52,787
+farkı nedir?
+
+374
+01:00:58,483 --> 01:01:01,123
+paralel communication, serial communication.
+
+375
+01:01:09,043 --> 01:01:11,363
+Evet, farklı bir arkadaştan yorum bekliyorum.
+
+376
+01:01:17,684 --> 01:01:19,684
+Yani bir tahmin bekliyorum öyle değil.
+
+377
+01:01:22,963 --> 01:01:23,963
+Betülön.
+
+378
+01:01:29,076 --> 01:01:31,635
+Betül Ağın, burada mı?
+
+379
+01:01:35,572 --> 01:01:40,791
+Can Aydın
+
+380
+01:01:46,835 --> 01:01:48,835
+John Johnco
+
+381
+01:01:52,947 --> 01:01:54,188
+Can, Canco
+
+382
+01:01:58,516 --> 01:02:27,115
+Şimdi söz vereceğim de arkadaşlar, birazdan Alper'e söz vereceğim ama bu yani daha önce de konuşmuştuk ama sizde çok olmuyordu, sizde de artmaya başladı. Derse, derste bulunmayacaksanız katılmayın. Sıkıntı yok, sonradan izlersiniz. Yani bu konuda ben biraz hassas davranıyorum belki.
+
+383
+01:02:27,115 --> 01:02:39,135
+hoşnut olmayabilirsiniz. Ama derse katılıyorsanız bilgisayarınızın başında mikrofonunuz açık, kulaklık ya da hoparlörden dersi dinlemek önemli bir şey.
+
+384
+01:02:39,715 --> 01:02:48,895
+Sınıfta böyle bir opsiyonunuz yok diyorsunuz. Fiziksel olarak orada bulunmak zorundasınız. Burada da derse katılmak zorunda değilsiniz. Katılmayın o zaman.
+
+385
+01:02:53,331 --> 01:02:54,891
+hani
+
+386
+01:02:54,891 --> 01:02:58,732
+en azından orada bulunmanız gerektiğini düşünüyorum.
+
+387
+01:03:00,471 --> 01:03:01,091
+yoksa
+
+388
+01:03:01,091 --> 01:03:02,752
+bir esprisi yok yani o işin.
+
+389
+01:03:04,031 --> 01:03:04,672
+evet Alpera.
+
+390
+01:03:10,739 --> 01:03:11,739
+Tamam, bilmiyorum da yorum yapacağım hocam. Paralel bağlanma, seri bağlanma herhalde. Yani onu biraz daha açabilir misin? Paralel olanda daha fazla bilgi gönderilmemelidir belki. Peki. Şimdi senin söylediğinden yola çıkarak ben cevabı vereyim. Paralel communication'da aynı anda bir T alanında farklı hatlar üzerinden
+
+391
+01:03:40,739 --> 01:03:57,280
+bilgiler parallel olarak aktarılırken seri haberleşmede bir sinyal aktarılırken, bir bilgi aktarılırken sinyaller halinde ardı ardına aynı hat üzerinden aktarılıyor.
+
+392
+01:03:57,280 --> 01:04:04,299
+Bir tanesinde bir bilgi aktarılırken farklı lineler üzerinden aynı anda aktarılıyor.
+
+393
+01:04:04,299 --> 01:04:12,199
+diğerinde ise arka arkaya aynı hat üzerinden sinyallerin aktarıldığı bir komünikasyon stilinden bahsediyoruz.
+
+394
+01:04:12,879 --> 01:04:16,799
+Paralel communication'a sahip bir cihaz söyleyebilir misiniz bilgisayarda?
+
+395
+01:04:23,347 --> 01:04:24,347
+Evet Atakan.
+
+396
+01:04:25,347 --> 01:04:34,347
+Hocam, kulaklık, tek girişli olan kulaklıklar bence buna örnek verilebilir. Hani mikrofon ve ses çıkışı aynı şeyde olanlar.
+
+397
+01:04:36,347 --> 01:04:47,347
+Yani onu tercih etmeyeceğim. Daha net bir örnek olması açısından printer'ı tercih edeceğim. Genel olarak printer'larda bu parallel communication'ı kullanıyoruz.
+
+398
+01:04:47,347 --> 01:04:53,347
+Serial communication için verebileceğiniz örnek ne olurdu?
+
+399
+01:04:53,347 --> 01:04:55,067
+Evet Selim
+
+400
+01:04:55,067 --> 01:04:58,987
+Partisi derin en iyi birçok biçim oluydu. SATA port
+
+401
+01:04:58,987 --> 01:05:21,647
+Evet SATA diskler var. Eskiden paralel diskler vardı. Tabi paralel communication'a sahip cihazlar yaratmak biraz daha maliyetli ve daha kompleks bir communication yolu dizayn etmemiz gerekiyor. O yüzden son yıllarda birçok cihaz serial communication'ı kullanıyor.
+
+402
+01:05:21,647 --> 01:05:24,067
+Hocam çok özür diliyorum.
+
+403
+01:05:24,327 --> 01:05:24,647
+Buyurun.
+
+404
+01:05:26,007 --> 01:05:27,247
+Günaydın, kolay gelsin.
+
+405
+01:05:27,667 --> 01:05:27,987
+Günaydın.
+
+406
+01:05:27,987 --> 01:05:37,208
+Bu kulaklığı bağlarken paralelin bana faydası neydi hocam? Oraya o cümleyi kaçırdım herhalde. Yani en büyük faydası neydi?
+
+407
+01:05:38,167 --> 01:05:45,767
+Paralel aynı anda birden fazla bilgiyi farklı hatlar üzerinden transfer etmenizi sağlıyor.
+
+408
+01:05:47,547 --> 01:05:48,847
+Serial'da bu olmuyor mu?
+
+409
+01:05:48,847 --> 01:05:52,508
+Serial'ı arka arkaya transfer etmeniz gerekiyor.
+
+410
+01:05:52,648 --> 01:05:54,068
+Ha sıralı olaraktan.
+
+411
+01:05:54,167 --> 01:05:54,367
+Evet.
+
+412
+01:05:54,367 --> 01:05:58,667
+Ama paralelde gönderilen şeyleri paralel kendisi sıraya koyuyor.
+
+413
+01:05:59,508 --> 01:06:07,587
+Yok hayır orada hat olarak siz örnek veriyorum 8 hat transfer ettiyseniz aynı anda 8 biti gönderme şansıra sahipsiniz.
+
+414
+01:06:08,847 --> 01:06:13,327
+Ama yazıcı örneğinde sıraya koymuyor mu ben mi kafamda oturtamıyorum?
+
+415
+01:06:13,327 --> 01:06:19,387
+8 ay bilgisayarın gönderdiği yazıcıya şeyde yazıcı bunu sıraya koyup o işlemi sıraya alınıyor.
+
+416
+01:06:19,387 --> 01:06:24,907
+O şey, o Q'ye koyuyor. O iş bazında düşünürseniz çok fazla.
+
+417
+01:06:24,987 --> 01:06:31,667
+Pardon, pardon. Ben işlemi, tamam işlevselliği alma bazında herhangi bir sıra yok yani.
+
+418
+01:06:32,187 --> 01:06:33,167
+Yok, hayır.
+
+419
+01:06:34,387 --> 01:06:35,767
+Öbürü mi yanlış anladım?
+
+420
+01:06:36,208 --> 01:06:39,947
+Birinde iş var. İşi sıraya koymak ayrı bir şey.
+
+421
+01:06:39,947 --> 01:06:50,787
+diğerinde bir işi yaparken o işe ait bilgileri göndermek. Yani mesela bir satır bilgilerini gönderiyorsanız onları diyelim ki byte byte gönderiyorsunuz.
+
+422
+01:06:50,787 --> 01:06:58,607
+Aynı anda 8 tane byte gönderebilirsiniz bir tanesinde. Diğerinde 8 tane byte'ı sıra ile arka arkaya göndermeniz gerekiyor.
+
+423
+01:06:58,907 --> 01:07:01,207
+Anladım. Şimdi anladım hocam. Çok teşekkür ederim.
+
+424
+01:07:01,287 --> 01:07:01,887
+Rica ederim.
+
+425
+01:07:01,887 --> 01:07:10,147
+Şimdi bunu konuştuk. Bir sonraki sayfaya geçelim.
+
+426
+01:07:12,727 --> 01:07:23,907
+Tabii communication demek aslında hız ve aktarılan bilgi boyutu da önemli demek.
+
+427
+01:07:26,147 --> 01:07:30,207
+Bir rate'i hangi birimle ifade ediyoruz? Communication rate'i.
+
+428
+01:07:34,452 --> 01:07:37,711
+Communication rate'i hangi birim ile ifade ediyoruz? Evet Atakan.
+
+429
+01:07:39,271 --> 01:07:41,571
+Hocam, çok hertz değilsin gel, megahertz.
+
+430
+01:07:42,131 --> 01:07:43,631
+Yok, değil.
+
+431
+01:07:45,471 --> 01:07:46,151
+Emre?
+
+432
+01:07:46,931 --> 01:07:52,031
+Hocam ben SATA'dan hatırladığım kadarıyla saniyede 6 gigabit diyorduk. Belki öyle olabilir.
+
+433
+01:07:52,792 --> 01:07:56,292
+Yani o zaman bit per second.
+
+434
+01:07:56,292 --> 01:07:56,971
+Aynen.
+
+435
+01:07:57,851 --> 01:07:59,911
+Evet, aynen öyle.
+
+436
+01:07:59,911 --> 01:08:13,651
+genelde işte kilobit per second olabilir, megabit per second olabilir, son dönemde gigabit per second'ları konuşur noktaya geldik tabii.
+
+437
+01:08:14,751 --> 01:08:20,211
+Şu 8 kbps neye denk geliyor?
+
+438
+01:08:29,908 --> 01:08:30,707
+Evet Evren.
+
+439
+01:08:31,607 --> 01:08:33,628
+Kilobyte per second'a geliyor hocam.
+
+440
+01:08:33,648 --> 01:08:53,127
+Evet, bir kilobyte per second'a denk geliyor. Bu kısmı önemli. Genelde kilobyte per second olarak bu birim kullanılır. Bu kilobyte değildir. O yüzden byte olarak ifade etmek istediğiniz zaman sekize bölmeniz gerekir. Senin bir soru mu soracaksın?
+
+441
+01:08:53,987 --> 01:08:55,248
+Evet hocam, sorabilir miyim?
+
+442
+01:08:55,627 --> 01:08:55,867
+Tabii.
+
+443
+01:08:55,867 --> 01:09:10,607
+Hocam 8 kilobit per second'e mesela yazdık ya o kısaltma şeklinde. Genelde speed testi vesaire görüyorum onu. Bit şeklinde algılıyorum da peki saniyede bir kilobayt demek istediğinizde bunun bir kısaltılması var mı? Onu sormak istemiştim. Kapalı karışımlaması için ayırt etmek için.
+
+444
+01:09:11,268 --> 01:09:12,687
+Yani genelde şöyle yazar.
+
+445
+01:09:15,847 --> 01:09:17,247
+Tamam hocam. Teşekkürler.
+
+446
+01:09:17,247 --> 01:09:18,367
+Rica ederim.
+
+447
+01:09:18,367 --> 01:09:27,687
+Evet şimdi tabii bu rate'i konuştuğumuza göre bir de şu kavramdan bahsetmek gerekiyor.
+
+448
+01:09:29,467 --> 01:09:33,268
+Band, şunu düzeltelim yanlış oldu.
+
+449
+01:09:34,227 --> 01:09:34,768
+Bandwidth.
+
+450
+01:09:36,187 --> 01:09:37,667
+Bandwidth nedir?
+
+451
+01:09:50,323 --> 01:09:59,204
+farklı bir kişi olsun. Mesela Esma Nur olsun.
+
+452
+01:10:05,939 --> 01:10:07,139
+Esma Nur
+
+453
+01:10:11,347 --> 01:10:12,347
+Fatih Ay
+
+454
+01:10:15,828 --> 01:10:16,967
+Efendim hocam, buyurun.
+
+455
+01:10:18,328 --> 01:10:19,187
+Soru sormuştum.
+
+456
+01:10:19,967 --> 01:10:21,527
+Bant genişliği.
+
+457
+01:10:21,527 --> 01:10:21,847
+Hı hı.
+
+458
+01:10:26,427 --> 01:10:27,947
+Ne işe yaradığını bilmiyorum.
+
+459
+01:10:28,668 --> 01:10:30,208
+Tamam, peki. Teşekkür ederim.
+
+460
+01:10:30,828 --> 01:10:31,607
+Güneş su açık.
+
+461
+01:10:37,363 --> 01:10:38,724
+Güneş, su, açık
+
+462
+01:10:43,412 --> 01:10:44,532
+Hamza Canmaz
+
+463
+01:10:51,412 --> 01:10:53,211
+Hamza Cambaz
+
+464
+01:10:59,988 --> 01:11:03,347
+Melih Kendirli
+
+465
+01:11:06,996 --> 01:11:08,216
+Melih Kendirili
+
+466
+01:11:14,771 --> 01:11:43,571
+Evet, arkadaşlar, yani gerçekten can sıkıcı bir durum. 6 kişiye sorduysam 1 kişiden cevap alabildim. O cevabı da şöyle cevap almaktan bahsettiğim, hani hocam bilmiyorum dedi, gayet güzel bir şekilde cevap verdi. En azından soruyu takip etmiş. Ama bu arkadaşlarımızın hiçbiri şu anda cevap verme gereği hissetmediler. Ya orada değiller ya da cevap verme gereği hissetmiyorlar.
+
+467
+01:11:43,571 --> 01:12:04,851
+Bunlar hoş şeyler değil. Bu pandeminin ne kadar devam edeceğini bilmiyoruz. Benim amacım sizleri zorlamak değil, birlikte dersi yapmak. Ama bugünkü durum tekrar ederse dersle ilgili çok fazla şey benimle sizinle paylaşmamın bir anlamı olmadığına kanaat getireceğim.
+
+468
+01:12:04,851 --> 01:12:15,551
+çünkü hiçbiriniz hiçbir şekilde katılanları tabii ki tenzih ediyorum. Bir katılım göstermiyorsunuz. Bu konudaki son uyarımı yapıyorum. Bir daha bu konuda uyarı yapmayacağım. Yusuf Kral.
+
+469
+01:12:20,916 --> 01:12:48,695
+Hocam, şans sizin geliyor mu? Geliyor. Bu iletişim kaynaklarındaki beli kapasitelerinin ölçümlendirilmesi, hani bu bit per second, onların işte ölçümlendirilmesi olarak aklımda kalmıştı sanki. Tamam, bir yerden bağlayacağız. Teşekkür ederim yorumun için. Başka birkaç arkadaş daha el kaldım işte, onlardan tekrar rica edeyim. Mehmet var, Mehmet Keçeci.
+
+470
+01:12:48,695 --> 01:12:51,515
+Maksimum veri aktarım hızı bir yol.
+
+471
+01:12:51,515 --> 01:12:51,875
+Evet.
+
+472
+01:12:52,775 --> 01:12:54,916
+Bandfit maksimum veri aktarım hızı.
+
+473
+01:12:55,055 --> 01:13:01,475
+Yani teknik olarak o hattın taşıyabileceği en fazla veri miktarını söylüyor.
+
+474
+01:13:02,355 --> 01:13:06,395
+Mesela sizin evdeki bandfit'iniz nedir?
+
+475
+01:13:08,155 --> 01:13:08,755
+Onu sorayım.
+
+476
+01:13:08,835 --> 01:13:09,375
+Muhammed Ali.
+
+477
+01:13:11,855 --> 01:13:13,596
+Ben de aynı şekilde diyecektim mi hocam?
+
+478
+01:13:13,715 --> 01:13:17,735
+Yani belli bir yol üzerine gidebilecek en fazla, taşıyabileceği en fazla veri miktarı.
+
+479
+01:13:17,735 --> 01:13:22,695
+Evet teşekkür ederim doğru söylüyorsun. Peki senin kullandığın mesela modemin band biti nedir?
+
+480
+01:13:24,375 --> 01:13:35,216
+Hocam yani tam bilmiyorum ama hani KVPS, BPPS onları yani mesela speed test'e sokup çıkardığım sonuçlar ama onlarla band biti tam bilmiyorum.
+
+481
+01:13:35,216 --> 01:13:36,555
+Peki Evren?
+
+482
+01:13:38,975 --> 01:13:40,996
+Hocam benimki 100 megabit.
+
+483
+01:13:40,996 --> 01:13:49,136
+Tamam 100 megabit. Senin fiziksel hattının kapasitesi ne kadar bu konuda bir bilgin var mı?
+
+484
+01:13:49,136 --> 01:13:56,316
+Hocam o da galiba bizim bu evin gelen kablosuna kadar 75'e kadar gelebiliyor maksimum.
+
+485
+01:13:56,676 --> 01:14:09,956
+Şimdi burada iki farklı kavramdan bahsediyoruz. Bir tanesi sizin fiziksel olarak hattınızın taşıyabileceği kapasite. Bu bize Ben tweet'ünüzü söylüyor.
+
+486
+01:14:09,956 --> 01:14:30,055
+bir de tabii kullandığınız cihazın size sağlayabileceği bir bilgi akış hızı var. Bu da ayrı bir bandfit anlamına geliyor. Yani tek bir bandfitten konuşmuyoruz. Birazcık bu hangi cihaz için konuştuğumuz, hangi line için konuştuğumuza bağlı.
+
+487
+01:14:30,055 --> 01:14:40,776
+biliyorsunuz komünikasyonlar içerisinde temelde iki tip komünikasyonlar bastırıyoruz. Bir tanesi wired communication, diğeri de wireless communication.
+
+488
+01:14:42,776 --> 01:14:44,335
+Wired communication.
+
+489
+01:14:48,595 --> 01:14:50,595
+ve wireless communication.
+
+490
+01:14:55,060 --> 01:14:57,780
+Kablolu haberleşme dediğiniz zaman aklınıza ne geliyor?
+
+491
+01:15:01,716 --> 01:15:02,555
+Evet Selim.
+
+492
+01:15:03,635 --> 01:15:08,035
+LAN kablosu ile yapılan yerel ağ haberleşmesi gelir bilmemiz.
+
+493
+01:15:08,055 --> 01:15:27,976
+Local Area Network var. İşte onları önümüzdeki hafta göreceğiz muhtemelen. Metropolitan Area Network var. White Area Network var. Bunun dışında sizin aslında bağladığınız hard disk de wired communication yapıyor cihazınızla.
+
+494
+01:15:27,976 --> 01:15:31,816
+Peki bu hangi port üzerinden gerçekleşiyor?
+
+495
+01:15:34,155 --> 01:15:39,216
+Bağladığınız bir hard disk bilgisayarınızda ne ile haberleşmiş oluyor?
+
+496
+01:15:43,155 --> 01:15:43,735
+Seri?
+
+497
+01:15:45,415 --> 01:15:53,095
+USB portu üzerinden haberleşiyor. Evet, seri haberleşme yöntemini kullanıyor, doğru. Ama USB portu üzerinden haberleşiyor.
+
+498
+01:15:55,195 --> 01:16:08,395
+Şimdi farklı portlarımız var. Portlar da giriş çıkış kapılarımızı oluşturuyor. Bu portlar üzerinden cihazlar birbirleriyle bağlanıyorlar.
+
+499
+01:16:08,395 --> 01:16:18,155
+işte mesela fiziksel portun dışında sanal portlarımız da var. Mesela sanal portlara ne örnek verebilirsiniz?
+
+500
+01:16:27,475 --> 01:16:30,755
+Peki fiziksel portlara ne örnek verebilirsiniz? Bilgisayar üzerine ne var?
+
+501
+01:16:33,635 --> 01:16:34,075
+Selim?
+
+502
+01:16:35,255 --> 01:16:38,635
+Bende M2 portu var, NME'ye dizikleri takmak için.
+
+503
+01:16:39,595 --> 01:16:40,235
+M2?
+
+504
+01:16:40,875 --> 01:16:41,775
+Evet, M.2.
+
+505
+01:16:43,235 --> 01:16:43,555
+Peki.
+
+506
+01:16:44,435 --> 01:16:45,255
+O nedir hocam?
+
+507
+01:16:46,115 --> 01:16:47,076
+Valla bunu ben de bilmiyorum.
+
+508
+01:16:47,736 --> 01:16:53,515
+Hocam, NME'ye şöyle ince uzun dizikler var ya böyle, SS'nin bir sonraki şey,
+
+509
+01:16:53,515 --> 01:17:19,775
+verizyonunu diyeyim. Onları takmak için çok ince bir port. M2, M2 SSD'nin slotunu diyor sanırım hocam. Efendim? SATA M2 miydi? Onlar M2 SSD şeyini diyor sanırım. Bunu bakacağım, bilmiyorum. Ben kullanmadım. O yüzden bir şey söyleyemeyeceğim. Evet, başka port. Nerede?
+
+510
+01:17:19,775 --> 01:17:30,875
+Hocam normal USB port var, HDMI port var. HDMI port var. HDMI var, kulaklık girişi var, sonra internet bağlama.
+
+511
+01:17:31,876 --> 01:17:40,635
+DGA port var çok kullanılmasa da artık. DGA port var. Şarj belki sayılır, şarjı taktığımız laptoplar için.
+
+512
+01:17:41,535 --> 01:17:47,455
+Benim makinede hala 9 bin, 25 bin var hocam. Yani eğer kullanılıyorsa hala.
+
+513
+01:17:47,455 --> 01:17:54,275
+Yani sizi de müzemizde ağırlayacağız o zaman yakında. Öyle mi?
+
+514
+01:17:56,495 --> 01:18:09,415
+Komodor 64'ü geçen çıkardım. Bildiğin kocaman 25 pini var ya Komodor 64'ü. Yani böyle güzel bir şey olamaz ya. Yani tek tek bütün o iğneleri de sayabiliyorsunuz. Bu kadar.
+
+515
+01:18:09,415 --> 01:18:24,635
+işte o dönemin pinleri öyleydi. Şimdi bunlar bu portlar üzerinden siz cihazlarınızı bilgisayarınıza bağlıyorsunuz. Peki bir de sanal portlar var. Onlar nelerdir?
+
+516
+01:18:29,779 --> 01:18:38,779
+Genelde 0 ile 65.535 arasında port isimleri vardır.
+
+517
+01:18:38,779 --> 01:18:40,779
+Evet Atakan.
+
+518
+01:18:40,779 --> 01:18:45,779
+Hocam elim havada kalmış benim, bilmiyorum bu konu hakkında fikrim yok.
+
+519
+01:18:45,779 --> 01:18:47,779
+Ubeydullah.
+
+520
+01:18:49,779 --> 01:18:58,779
+Hocam tahmin edeceğim de, Nvidia'nın bir tane ekran kartı paylaşımı için internet üzerinden bir programı vardı o mu acaba?
+
+521
+01:18:58,779 --> 01:19:08,519
+Yok mesela FTP port diyeyim size. FTP'nin açılımı nedir? Emre?
+
+522
+01:19:09,439 --> 01:19:11,360
+File Transfer Protocol.
+
+523
+01:19:11,360 --> 01:19:25,000
+File Transfer Protocol. Bu kapılar üzerinden haberleşiyorlar. File Transfer Protocol. File Transfer Protocol. File Transfer edilmesi için kullanılan.
+
+524
+01:19:24,999 --> 01:19:29,299
+ve yanlış hatırlamıyorsam 23'tü galiba 23 kapısını kullanıyor.
+
+525
+01:19:29,359 --> 01:19:34,319
+21 olması lazım hocam. 22 ve SSH oradan aklımda kalmış.
+
+526
+01:19:34,319 --> 01:19:53,779
+21 olabilir. 21 de olabilir. Ben de şu anda yanlış söylüyorum. SSH portu var mesela. Arkadaşınızın söylediği gibi. Secure haberleşmeyi sağlayan bir port. Bilgisayarlar bu portlar üzerinden birbirleriyle haberleşiyorlar ve bu sayede bilgi transferi yapıyorlar.
+
+527
+01:19:53,779 --> 01:20:21,259
+Mesela mail için de port kullanıyoruz. Nedir o mail için kullandığımız portlar? Bilen var mı? Evet Muhammed Ali. Simple Mail Transfer Protocol, SMTP. Başka? Mail için. Pop3 var mesela. Ha pop3 var hocam doğru. Bir de IMAP var herhalde.
+
+528
+01:20:21,259 --> 01:20:50,559
+Evet IMAP protokol bunlar. Bunlar farklı portları kullanıyorlar tabii. Şimdi burada bahsetmeye çalıştığım şey şu. Kommunikasyon yaparken farklı kapılar üzerinden birbirleriyle bilgisayarlar haberleşiyor. Ve siz eğer o portların bir tehlike yaratacağını düşünüyorsanız o portların bazılarını kapatabiliyorsunuz. Birçok saldırı da bu portlar üzerinden gerçekleşiyor.
+
+529
+01:20:50,559 --> 01:21:01,539
+bu portlar sizin bilgisayarınıza giriş çıkış kapıları ve bu portlarınız açık olursa bu portlardan gelebilecek saldırılara karşı tedbir almanız gerekiyor.
+
+530
+01:21:02,599 --> 01:21:07,080
+Bunların bir fiziksel portları var biraz önce bahsettiğim gibi bir de sanal portlar var.
+
+531
+01:21:07,080 --> 01:21:18,039
+Fiziksel portlar zaten sizin kontrolünüzde. Sanal portlarsa, evet işte burada Selim'in chatte yazdığı gibi
+
+532
+01:21:18,039 --> 01:21:34,539
+80 HTTP portu, 443 HTTP S portu, secure web bağlantısı istiyorsanız 443 üzerinden yani HTTP S üzerinden bağlantısı alıyorsunuz. Evet Selim dinliyorum seni.
+
+533
+01:21:35,339 --> 01:21:41,779
+Hocam soru sonucu açtım da hani demiştiniz ya bazı portların kapanması daha uygun diye küçük bir eserci eklemeyi yapmak istiyorum.
+
+534
+01:21:41,779 --> 01:21:59,660
+mesela ben makine aldığımda anında böyle bakıyorum giriş loguna yani Çinliler böyle sanki IP'le tarımış gibi böyle otomatik başlatıyorlar böyle direkt. Hani deneye deneye girmeye böyle resmen böyle elsiz güvenlik yöntemi koymazsanız anında ekleniyorsunuz ki bir iki kere yaşadım ilk başlarda yaşadım.
+
+535
+01:21:59,660 --> 01:22:01,860
+Evet tabii doğru söylüyorsun.
+
+536
+01:22:03,479 --> 01:22:04,160
+Her şeyin size.
+
+537
+01:22:04,159 --> 01:22:25,759
+tamam teşekkür ederim. Arkadaşınızın söylediği gibi port sken ederek açık olan portu bulup oradan brute force atak denilen de mesela şifre bu arada brute force'u düzgün yazalım. Yazılımı şöyle olacak.
+
+538
+01:22:28,212 --> 01:22:57,531
+Brute Force Attack dediğimiz zaman sizin bir porta birden fazla bilgi göndererek ve bu sayıyı arttırarak o porta işte Denial of Service dediğimiz bilgisayarın cevap verememesini sağlayacak noktaya kadar getirmek. Bunların çok çeşitli farklı bilgileri var.
+
+539
+01:22:57,531 --> 01:23:12,351
+şimdi çok fazla konuyu dağıtmayalım. Ben tweetten başladık. Bu noktaya kadar geldik ama sonuçta wild communication'da da, wireless communication'da da bizim haberleşme sırasında kullandığımız kapılar var dedik.
+
+540
+01:23:12,591 --> 01:23:22,531
+Çeşitli haberleşme yöntemleri var dedik. Bir de tabii çok önemli olan protokoller var. Protokol dediğiniz zaman ne anlıyorsunuz?
+
+541
+01:23:22,531 --> 01:23:27,651
+gene communication ile ilgili bir bilgi.
+
+542
+01:23:36,564 --> 01:23:54,564
+Protokol aslında iki cihazın ya da iki birimin birbirleriyle haberleşirken kullanacağı kurallara verilen ad. Ne tür protokollerimiz var bildiğiniz haberleşmede?
+
+543
+01:23:59,764 --> 01:24:00,563
+Muhammed Ali?
+
+544
+01:24:02,563 --> 01:24:04,363
+İnternet protokol, IP.
+
+545
+01:24:05,583 --> 01:24:09,803
+Mesela haberleşmede çok sık kullanılan bir protokol, IP protokol.
+
+546
+01:24:11,363 --> 01:24:14,363
+Bunları networking tarafında kullanacağız ama
+
+547
+01:24:14,363 --> 01:24:16,643
+TCP protokol,
+
+548
+01:24:18,583 --> 01:24:19,823
+UDP protokol,
+
+549
+01:24:21,343 --> 01:24:27,323
+bunlar veri haberleşmede, networkingde kullanılan protokoller.
+
+550
+01:24:27,323 --> 01:24:27,923
+Başka?
+
+551
+01:24:32,564 --> 01:24:33,323
+bluetooth.
+
+552
+01:24:36,372 --> 01:25:03,831
+NFC, Wi-Fi. Bunların hepsi haberleşme protokolleri ve hepsinin farklı kuralları var. Siz bu kuralları kullanarak iki tane farklı cihazı birbirleriyle haberleştiriyorsunuz. Bunları gördükten sonra başka neyin protokol olduğunu da söyleyebilirsiniz. Biraz önce arkadaşınız söylemişti. File transfer protokol demiştik.
+
+553
+01:25:10,836 --> 01:25:26,015
+Bunların hepsi protokol, SMTP, SSH, IMAP. Bunların kuralları var. Artık kullandıkları kapılar var. HTTP protokol. HTTP'nin de bir protokolü var.
+
+554
+01:25:27,859 --> 01:25:28,859
+Evet, başka.
+
+555
+01:25:32,948 --> 01:25:34,487
+farklı bir kişi olsun istiyorum.
+
+556
+01:25:42,036 --> 01:25:47,315
+Peki, o zaman devam edeceğiz demektir. Bu kadar yeterli sanırım.
+
+557
+01:25:52,340 --> 01:25:54,499
+Evet, protokoller kısmında konuştuk.
+
+558
+01:25:59,619 --> 01:26:03,559
+Şimdi bakıyorum başka hangi konumuz kaldı değinmemiz gereken.
+
+559
+01:26:04,720 --> 01:26:06,159
+Hocam bir soru sorabilir miyim?
+
+560
+01:26:06,559 --> 01:26:06,779
+Tabii.
+
+561
+01:26:07,739 --> 01:26:12,719
+Biz şimdi dedik ki şu bluetooth, NFC ve wifi bunlar da bir protokol diye.
+
+562
+01:26:13,239 --> 01:26:22,279
+Biz şimdi normalde wifi deyince protokolü mü kastediyor oluyoruz yoksa wifi deyince şeyi işte internet kastediyoruz da bunun bir protokolü mü var?
+
+563
+01:26:22,340 --> 01:26:24,139
+anlamadım sorunu.
+
+564
+01:26:25,299 --> 01:26:30,360
+Yani biz normalde şimdi Wi-Fi, Wi-Fi deyince aklınıza internet geliyor, wireless internet.
+
+565
+01:26:31,740 --> 01:26:37,279
+Yok, Wi-Fi deyince aklınıza wireless internet gelmemeli. Wireless internet diye bir şey yok.
+
+566
+01:26:37,279 --> 01:26:45,020
+İnternet diye bir, bütün bilgisayarların birbirine bağlandığı bir ağ yapısı var.
+
+567
+01:26:45,020 --> 01:26:56,619
+ve siz bu internet ağında, geniş ağda haberleşirken diğer bilgisayarlarla farklı haberleşme yöntemleri kullanıyorsunuz.
+
+568
+01:26:56,619 --> 01:27:10,079
+Örneğin kablolu bağlıysanız, modem üzerinden çıkış yapıyorsanız, modeme doğrudan kabloyla bağlıysanız, siz o zaman kablolu bir şekilde iletişiminizi gerçekleştirmiş oluyorsunuz.
+
+569
+01:27:10,079 --> 01:27:22,879
+Ethernet protokolünü kullanıyorsunuz ev içerisinde diyelim ya da iş yerinde. Öte yandan ev içinde diyelim ki kablolu kullanıyorsunuz, işe gittiniz, işte kablosuz bağlanıyorsunuz.
+
+570
+01:27:22,879 --> 01:27:39,200
+O zaman Wi-Fi protokolünü kullanıyorsunuz. Wi-Fi'in de kendi içerisinde farklı protokolleri var bu arada. Yani IEEE 802 ve başlayan ABGN diye adlandırılan birçok protokol tanımını biz genel olarak ismini
+
+571
+01:27:39,200 --> 01:27:49,820
+hani en üst tepede ifade ettik Wi-Fi protokolü diye. Bunun altında da kendi özel tanımlı olan protokolümüz var.
+
+572
+01:27:49,820 --> 01:28:06,479
+O isimlerin anlamı nasıl 2G, 3G, 4G, 4.5G, 5G var. Bunlar haberleşmenin temel prensiplerini korumakla birlikte haberleşmeyi hızlandıran,
+
+573
+01:28:06,479 --> 01:28:15,519
+haberleşirken hata oranı düşüren yenilikler içeriyorlar. O yüzden ABGN olarak adlandırılıyorlar.
+
+574
+01:28:17,519 --> 01:28:20,819
+İstedim sonra cevap vermiş olayım. Senin chatten yazdığı soruya.
+
+575
+01:28:26,163 --> 01:28:48,463
+Evet, sanırım bu kısım bu kadar. Genel bir bilgi sahibi olmuş oldunuz. Wireless Communication içinde birkaç tane şey yazalım. Wireless Communication'a ne söyleyebilirsiniz? Hangi iletişim tiplerini yazabiliriz? Artık bunu söyleyebilirsiniz diye düşünüyorum.
+
+576
+01:28:58,068 --> 01:28:59,068
+Buse?
+
+577
+01:29:02,003 --> 01:29:04,383
+Hocam, bluetooth olabilir.
+
+578
+01:29:05,663 --> 01:29:05,963
+Peki.
+
+579
+01:29:08,903 --> 01:29:10,323
+Devam edeyim mi, söyleme?
+
+580
+01:29:10,703 --> 01:29:12,323
+Yok, başka birine söz vereceğim.
+
+581
+01:29:12,384 --> 01:29:12,743
+Emircan.
+
+582
+01:29:19,060 --> 01:29:19,620
+Emircan
+
+583
+01:29:24,020 --> 01:29:24,520
+İrem?
+
+584
+01:29:26,279 --> 01:29:28,319
+Ethernet kablosu olabilir mi?
+
+585
+01:29:29,219 --> 01:29:31,000
+Wireless communication'da bahsediyoruz.
+
+586
+01:29:32,619 --> 01:29:33,339
+Wireless.
+
+587
+01:29:34,419 --> 01:29:36,259
+Yani kablosuz bağlantı.
+
+588
+01:29:36,379 --> 01:29:36,759
+Yusuf.
+
+589
+01:29:38,079 --> 01:29:39,020
+Aa, doğru.
+
+590
+01:29:40,499 --> 01:29:44,879
+Hocam eskiden hani SMS falan kullanıyorlardı ya, hani birbirine mesaj falan atıyorlardı.
+
+591
+01:29:45,079 --> 01:29:45,999
+O olabiliyor mu?
+
+592
+01:29:46,259 --> 01:29:47,159
+O olabiliyor mu yani?
+
+593
+01:29:48,999 --> 01:29:52,719
+Biz onu daha genel bir ifadeyle ifade ediyoruz.
+
+594
+01:29:52,860 --> 01:29:53,219
+Nedir o?
+
+595
+01:29:54,020 --> 01:30:07,900
+GSM üzerinden haberleşme. GSM network haberleşme. Hı hı hı. SMS eskiden miydi? Ben anlamadım ya burayı bu kısmı. SMS eski mi oldu?
+
+596
+01:30:08,839 --> 01:30:20,759
+Biraz şey oldu. Eğlenceli oldu bence. Eskiden dedi. Eskiden SMS falan atıyorlardı dedi ya. Şimdi ne atıyorsunuz oğlum? Allah'ım ya.
+
+597
+01:30:20,759 --> 01:30:25,939
+Şimdi instant messaging var. Anlık mesajlaşma.
+
+598
+01:30:31,252 --> 01:30:33,631
+Evet, SMS'in açılımı nedir?
+
+599
+01:30:39,828 --> 01:30:40,828
+Burak.
+
+600
+01:30:45,011 --> 01:30:48,191
+Hocam, yanlışlıkla kaldırdım da, önceki soruya.
+
+601
+01:30:48,771 --> 01:30:50,171
+Evvah, ne yapacağız Bura?
+
+602
+01:30:53,071 --> 01:30:55,511
+Short message gibi bir şey olabilir.
+
+603
+01:30:55,772 --> 01:30:56,932
+Short message service.
+
+604
+01:30:57,551 --> 01:30:58,251
+Service, tamam.
+
+605
+01:30:59,131 --> 01:31:01,131
+Diğer soruya da cevap verebilirsin.
+
+606
+01:31:02,032 --> 01:31:08,772
+Yok hocam, onu da şeyi soracaktım, bu telefonlardaki mobil veri GSM'in içine mi dahil oluyor, onu soracaktım.
+
+607
+01:31:09,612 --> 01:31:14,991
+Yoksa ayrı bir portakol olarak mı geçiyor?
+
+608
+01:31:15,011 --> 01:31:21,791
+Telefonların haberleşmesi bazı istasyonları üzerinden oluyor. GSM şebekesi üzerinden. Cellular Network diyoruz. Hücresel A.
+
+609
+01:31:23,751 --> 01:31:31,011
+Burada tabii ki temel kullanılan bu arada radyo dalgaları arkadaşlar. Bütün bu haberleşme protokollerinde biliyorsunuz.
+
+610
+01:31:31,011 --> 01:31:35,891
+Farklı hertzlerdeki radyo dalgaları üzerinden bilgiyi taşıyoruz.
+
+611
+01:31:35,891 --> 01:31:49,751
+aslında radyo da bu şekilde çalışıyor. EM bandı, FM bandı bunların farklı megahertzlerdeki müzik yayımlarını bu şekilde dinliyorsunuz aslında.
+
+612
+01:31:50,751 --> 01:32:05,251
+Şimdi bluetooth GSM dedik. GSM genel ismi ama bunun için altında 2G, 3G, 4.5G. Arkadaki mikrofonu kapatalım.
+
+613
+01:32:09,171 --> 01:32:37,731
+5G olmak üzere farklı protokoller var hücresel ağlarda. Biz bu protokollerin her birini ayrı bir ne diyelim kural silsilesi olarak kabul ediyoruz. Başka ne söyleyebiliriz? Wi-Fi var. Başka var mı? NFC var. Kablosuz haberleşmeyi sağlayan.
+
+614
+01:32:39,171 --> 01:32:41,012
+Evet İran
+
+615
+01:32:41,012 --> 01:32:43,212
+Televizyon
+
+616
+01:32:43,212 --> 01:32:44,651
+Duyamadım
+
+617
+01:32:44,651 --> 01:32:46,471
+Televizyon
+
+618
+01:32:46,471 --> 01:32:50,811
+Televizyonu ne olarak söylüyorsun?
+
+619
+01:32:52,552 --> 01:32:53,552
+Wireless
+
+620
+01:32:53,552 --> 01:33:01,651
+Onu çok öyle söyleyemeyiz çünkü o bir protokol değil. O bu protokollerden faydalanan bir cihaz. Öyle düşünüyorum.
+
+621
+01:33:03,151 --> 01:33:03,871
+Anladım
+
+622
+01:33:03,871 --> 01:33:05,811
+Muhammed Ali
+
+623
+01:33:05,811 --> 01:33:11,571
+Hocam eskiden kızıl ötesi vardı şu anda herhalde. Kumandalarda hala kullanılıyor.
+
+624
+01:33:11,911 --> 01:33:14,051
+Var. Infrared. Aynen öyle.
+
+625
+01:33:16,892 --> 01:33:23,032
+Infrared'in diğer haberleşmelere göre farkı ne? Bu wireless communication'dekilere göre farkı.
+
+626
+01:33:24,091 --> 01:33:25,591
+Ben mi cevaplayayım hocam?
+
+627
+01:33:26,131 --> 01:33:26,511
+Tabii.
+
+628
+01:33:26,511 --> 01:33:33,712
+Yani tam bilmiyorum ama herhalde kısa mesafede yüksek veri taşıyabiliyor.
+
+629
+01:33:33,712 --> 01:33:43,792
+ama uzun mesafeye yani bluetooth'tan farkı oydu. Yani bluetooth daha uzun mesafeye veya wifi daha uzun mesafeye gidebiliyor. Ama infrared de yani kız ötesinde daha kısa mesafede daha yüksek.
+
+630
+01:33:43,792 --> 01:33:56,951
+Tamam. Şimdi şöyle daha kısa mesafede çalıştığı doğru. Ama bir farkı var diğerlerime göre. Bir özel bir durum ihtiyaç duyuyor haberleşebilmesi için. Berkay?
+
+631
+01:33:57,771 --> 01:33:59,651
+Duvarların içine falan kolay kolay geçemiyor.
+
+632
+01:34:00,591 --> 01:34:02,832
+Yani önünde bir engel varsa hani kolay kolay değil.
+
+633
+01:34:02,831 --> 01:34:05,331
+modemden bilgisayar nişan almamız gerekiyor.
+
+634
+01:34:07,651 --> 01:34:16,111
+Kolay kolay dediğimiz zaman biraz zorlarsa geçermiş gibi bir hava oluyor da önünde bir engel varsa kızılötesiyle haberleşme sağlayamıyorsunuz.
+
+635
+01:34:16,151 --> 01:34:19,991
+O yüzden kumandaların genelde önüne bir şey geldiğinde kumanda çalışmıyor aslında.
+
+636
+01:34:20,631 --> 01:34:22,171
+İnfraredde böyle bir prensip var.
+
+637
+01:34:22,271 --> 01:34:30,731
+İnfraredin pasif infrared hali de var biliyorsunuz bu binaların içerisinde koridorlarda ışıkların yanıp sormesini sağlayan.
+
+638
+01:34:30,731 --> 01:34:42,832
+burada sizin hareketliliğinizi algılayıp ışığı yakıyor. Belli bir süre hareket olmadığında ışığı kapatıyor. Araçlarda kullanıyoruz. Mesela ne vardır park için?
+
+639
+01:34:49,876 --> 01:35:08,835
+Ultrasound sensör vardır. Ultrasonik ses dalgaları ile siz park ederken yakınınızda bir cisim araç var mı, insan var mı? Bunu algılıyorsunuz. Bu da aslında Wireless Communication parçalarından bir tanesidir. Yusuf?
+
+640
+01:35:13,811 --> 01:35:17,511
+El kaldırmış gözüküyorsun. Elim yanlışlıkla kalkmış hocam, kusura bakmayın.
+
+641
+01:35:42,451 --> 01:35:52,511
+Şimdi sırada operating system var. Operating system'a geçmeden önce bir 10 dakika ara vermek istiyorum. 10.40 saat, 10.50'de kaldığımız yerden devam edelim.
+
+642
+01:44:56,275 --> 01:45:25,215
+Evet arkadaşlar, yeniden merhaba. Dersimizin son saatine hoş geldiniz. Şimdi operating system mı konuşacağız? Biraz önce bilgisayar mimarisinden biraz bahsettik. İşlerin nasıl yürüdüğünü konuştuk ama donanımın verimli bir şekilde çalışabilmesi için iyi bir işletim sistemi ne ihtiyaç var? İşletim sistemi nedir diye bir sorayım. Evren bir sorun mu var?
+
+643
+01:45:25,215 --> 01:45:27,475
+Evet hocam, evet hocam
+
+644
+01:45:27,475 --> 01:45:28,255
+Tabii, sonra
+
+645
+01:45:28,255 --> 01:45:32,575
+Az önce hani riskli, kiskin farkını konuştuk ya hocam
+
+646
+01:45:32,575 --> 01:45:37,295
+Daha kompleks işler için kiski kullanmamız gerekiyor diye
+
+647
+01:45:37,295 --> 01:45:45,435
+Şimdi takip etmişsinizdir illaki Apple ARM mimariyle bir tane şeyini tanıttı, laptopını tanıttı
+
+648
+01:45:45,435 --> 01:45:54,035
+Eğer hocam bu kendi içinde bu kadar kompleks kodlara sahip değilse bunu nasıl bir laptopa koyma cesaretini gösterebiliyor?
+
+649
+01:45:54,035 --> 01:45:56,175
+Yani bir şeyi var mı?
+
+650
+01:45:56,175 --> 01:46:23,735
+Bunu şöyle yorumlayalım. Burada keskin bir ifade kullanmak gibi bir niyetimiz yoktu. Bunu üzerine basarak vurgulayayım. Bir risk mimarisi laptopta kullanılmayacağını söyleyemeyiz. Hiçbir zaman bunu söylemiyoruz ama burada yeni tip bir işlemci mimarisi dizayn etmiş olabilirler risk felsefesini kullanarak.
+
+651
+01:46:24,035 --> 01:46:32,055
+risk felsefesi demek bütün işlemcilerin risk felsefesinde olan aynı performans gösterdiği anlamına gelmez.
+
+652
+01:46:32,835 --> 01:46:38,675
+Bu yüzden yeni çıkan işlemcinin komut setine bakmak lazım.
+
+653
+01:46:39,595 --> 01:46:42,275
+Neler olduğuna ve nasıl dizayn edildiğine bakmak lazım.
+
+654
+01:46:42,275 --> 01:46:50,535
+O yüzden risk felsefesini kullanıyor olması bunun kompleks işleri yapamayacağı anlamına gelmez.
+
+655
+01:46:50,535 --> 01:47:01,655
+genel olarak bu iki felsefenin ilk çıkış noktasındaki biz farkı vurguladık. Umarım cevap seni tatmin etmiştir.
+
+656
+01:47:01,735 --> 01:47:03,275
+Anlandı hocam çok teşekkür ederim.
+
+657
+01:47:03,735 --> 01:47:11,496
+Yani detayına bakmak lazım işlemcinin ama önemli bir haber tabii ki. Bu tarz kararlar olabiliyor.
+
+658
+01:47:11,496 --> 01:47:24,996
+uzunca bir süre Android tarafında da Intel işlemci kullanılmıyordu ama daha sonra Android, Intel işlemciye sahip, donanıma sahip cihazlara da destek vermeye başladı biliyorsunuz.
+
+659
+01:47:25,035 --> 01:47:29,675
+İlk başta sadece ARM kullanıyordu. Evet bir soru var gibiydik sonra kalktı herhalde.
+
+660
+01:47:29,856 --> 01:47:32,636
+Ben kaldım da sonra indireceğim. Önemli bir şey değildi. Devam edelim.
+
+661
+01:47:32,636 --> 01:47:38,636
+Tamam peki. Operating system nedir diye sormuştum.
+
+662
+01:47:38,636 --> 01:47:48,275
+Hemen bir kez daha sorumu tekrar edeyim. Operating System nedir? Evet Anıl.
+
+663
+01:47:49,695 --> 01:47:53,596
+Hocam ilk derste bilgisayarın kaynak yönetimini sağlayan yazılım olarak.
+
+664
+01:47:53,596 --> 01:48:05,895
+Aynen öyle. Tekrar bunu duymak istiyordum. Bir işletim sistemi bilgisayarların kaynaklarını verimli bir şekilde kullanmasını sağlayan bir yazılım aslında.
+
+665
+01:48:05,895 --> 01:48:11,555
+Buraya da bir başka karşılığını yazalım.
+
+666
+01:48:32,212 --> 01:48:49,011
+Şimdi hangi işletim sistemleri var? Örneğin Windows var. Örneğin MacOS var. Örneğin Linux var. Örneğin Unix var.
+
+667
+01:48:50,579 --> 01:49:16,379
+Bunlar PC ortamındaki işletim sistemleri. Bunun ötesinde Android gibi iOS gibi mobil işletim sistemlerimiz var. Bunların ötesinde bu bahsettiğimiz işletim sistemlerinin sunucu versiyonları var.
+
+668
+01:49:16,379 --> 01:49:24,420
+sunucularda biliyorsunuz birden fazla kişi aynı anda iş yapabiliyorlar bir bilgisayara bağlanıp.
+
+669
+01:49:26,459 --> 01:49:30,260
+O yüzden çok farklı işletim sistemlerini konuşuyoruz günümüzde.
+
+670
+01:49:30,260 --> 01:49:38,260
+Şimdi bir tarihçesine bakmak gerekirse işletim sistemlerinin...
+
+671
+01:49:43,380 --> 01:49:51,380
+Bu işler ilk başladığı zaman batch processing kavramı vardı.
+
+672
+01:49:57,876 --> 01:49:59,876
+batch processing nedir?
+
+673
+01:50:12,595 --> 01:50:13,595
+Evet Selim
+
+674
+01:50:13,595 --> 01:50:18,375
+Delikli kağıtlar üzerinde okuma yazma yapıyorduk, o muydu?
+
+675
+01:50:19,155 --> 01:50:24,335
+Delikli kağıtlar üzerinden anlatmayalım, o döneme ait bir kullanım prensibi ama
+
+676
+01:50:24,335 --> 01:50:29,215
+batch processing kavramı ondan bağımsız bir kavram
+
+677
+01:50:29,215 --> 01:50:33,675
+O zaman elimizdeki bir veri anlamda mı acaba?
+
+678
+01:50:33,995 --> 01:50:34,995
+Yok, değil tamam
+
+679
+01:50:34,995 --> 01:50:36,495
+Değil
+
+680
+01:50:36,495 --> 01:50:38,055
+Et Atakan
+
+681
+01:50:38,055 --> 01:50:45,095
+Hocam, batch'in yığın gibi bir anlamı vardı. Yani toplu anlamında sanırım.
+
+682
+01:50:45,095 --> 01:51:04,735
+Evet. Bir işi veya birden fazla işi birlikte arka arkaya tek bir sefer içerisinde user ile interakşin olmadan gerçekleştirmeye batch processing diyoruz.
+
+683
+01:51:04,735 --> 01:51:16,116
+eskiden bilgisayarlara yapılacak işler arka arkaya tanımlanırdı. Bilgisayar sıradaki işlemi alır, işini tamamlar, sonucu üretir ve bir sonraki işe geçerdi.
+
+684
+01:51:16,116 --> 01:51:22,835
+İşte bu yapıya, interaktif olmayan yapıya batch processing diyoruz. Hemen bunun karşılığını yazalım.
+
+685
+01:52:07,444 --> 01:52:16,603
+Tabii, batch processing sistemlerde olmazsa olmazlardan bir tanesi Job Queue
+
+686
+01:52:16,603 --> 01:52:32,364
+Ve siz bu Queue'da işlem görecek işleri arkaya saklıyorsunuz. Hangi yapıda çalışıyor? FIFA mantığında çalışıyor. FIFA mantığının açılımı nedir?
+
+687
+01:52:32,364 --> 01:52:48,103
+First in, first out. Yani Q'ya ilk giren ilk önce hizmet alacak anlamına gelir. Daha sonra göreceksiniz bunun LIFO gibi last in, first out örnekleri de var.
+
+688
+01:52:48,103 --> 01:53:03,383
+Ama bizim genelde job queue'sundaki mantığımız ilk giren hizmeti ilk alır mantığıyla FIFO kavramı ile bu hizmeti vermek.
+
+689
+01:53:04,423 --> 01:53:12,563
+Tabi batch processing kullanıcının işe program çalışırken müdahil olmasını engelliyor.
+
+690
+01:53:12,563 --> 01:53:19,323
+Bu da bugünkü çalışma prensimizden oldukça uzak bir yapı bize sunmuş oluyor.
+
+691
+01:53:20,023 --> 01:53:26,363
+Bugünkü yapıya yaklaşmak için atılan bir diğer adım, interactive processing.
+
+692
+01:53:36,467 --> 01:54:04,467
+Interactive Processing'de siz çalıştırdığınız program ile program çalışırken interaction içerisinde oluyorsunuz ve istediğiniz üretilen bir sonucu başka bir seçim yaparak yönlendirme şansına sahip olabiliyorsunuz ya da işte bugünkü Event Trim'ın Programming dediğimiz tasarlanan Window Manager'larla
+
+693
+01:54:04,467 --> 01:54:20,988
+programın içerisinde istediğiniz peti çizebiliyorsunuz. Tek bir yol yok. İsterseniz işte pencereye basıyorsunuz, oradan başka bir seçenek seçiyorsunuz, menüden yapılacak işi seçiyorsunuz gibi. Bu size interaktif bir şekilde işin gerçekleşmesini sağlıyor.
+
+694
+01:54:22,267 --> 01:54:24,447
+Evet, Atakan bir soru soracaksın herhalde.
+
+695
+01:54:24,447 --> 01:54:38,467
+Yani hocam şey gibi değil mi birisinde mesela işte 5 mod 2 girdik o hemen veriyor onu ama öbüründe önce 5 giriyoruz sonra işlemi giriyoruz sonra 2 giriyoruz yani hepsine ayrı ayrı girme şansımız var tarzda bir şey mi oluyor?
+
+696
+01:54:38,467 --> 01:55:07,467
+Yok o çok basit bir ifade olur onu anlatmak için. Siz bir programı verdiğinizde bu program örneğin bir toplama yapacaksa bütün input'u verirsiniz toplama işini yapar size sonucu üretir bu batch processing toplama verdiniz çıkarma verdiniz çarpma verdiniz bunları arka arkaya yapar ve sonucu üretir ama bir interaktif processing'den kastedilen şey örneğin word dokümanına bir şey yazıyorsunuz.
+
+697
+01:55:08,467 --> 01:55:14,287
+Örneğin Word dokümanında bir şey yazarken sürekli olarak yazıp silebilirsiniz. Doğru mu?
+
+698
+01:55:15,927 --> 01:55:16,287
+Evet.
+
+699
+01:55:16,847 --> 01:55:27,607
+Evet. Bu bir interaktif processingtir. Ya da müzik dinliyorsunuz. Müziği istediğiniz yerle durdurabilirsiniz. Tekrar çalıştırabilirsiniz. Bu bir interaktif processingtir. Evet, Mount.
+
+700
+01:55:28,387 --> 01:55:36,467
+Hocam o zaman mesela C, Y, script yazınca bu batch processing gibi mi oluyor? Yani script yazıyoruz. En sonunda bunu şey yapınca...
+
+701
+01:55:36,467 --> 01:55:37,688
+C, Y, script yazmak nedir?
+
+702
+01:55:37,687 --> 01:55:44,647
+demek istediğim kod yazınca mesela bu direkt şey batch processing gibi mi çalışıyor?
+
+703
+01:55:46,087 --> 01:56:03,867
+Yok öyle düşünmeyin. Şimdi siz şu andaki bilgisayarlarınıza yavaş yavaş oraya geliyoruz. Aslında birazcık bütün hikayeyi görmek lazım bunları daha iyi anlamak için. Şu andaki bilgisayarlarınız aynı anda birden fazla işi yapmanıza müsaade ediyor.
+
+704
+01:56:03,867 --> 01:56:15,407
+Bu nasıl gerçekleşiyor? Siz hem müzik dinleyip hem de o sırada internette gezip hem de bir doküman okuyabiliyorsunuz. Bunların hepsi aynı anda gerçekleşiyor.
+
+705
+01:56:17,227 --> 01:56:25,567
+Benç processing olsaydı bunların hiçbirini aynı anda gerçekleştiremezdiniz. Benç processing de bir tanesinin gerçekleşmesi, diğerlerinin beklemesi gerekirdi.
+
+706
+01:56:25,567 --> 01:56:40,807
+O yüzden interaktif processing de de sizin hem programla sürekli olarak haberleşmenizi sağlıyor hem de birden fazla programın çalışmasını sağlıyor.
+
+707
+01:56:43,247 --> 01:56:49,627
+Hocam yani batch processing sadece bir pencere açmamıza izin veriyor gibi bir şey mi?
+
+708
+01:56:49,627 --> 01:57:03,647
+Yani neden bu konuda bu kadar hani nasıl diyeyim şu anki şartları uydurmaya çalışıyorsunuz onu anlamıyorum. Çünkü batch processing tarihte kalmış bir yaklaşım arkadaşlar.
+
+709
+01:57:05,607 --> 01:57:06,387
+Peki hocam.
+
+710
+01:57:06,387 --> 01:57:22,807
+Yani bir pencere açmanızı sağlamak mevzusu değil. Bir tane iş yapması demek. Yani CPU'nun aynı anda başka hiçbir şey çalıştırmayıp, kullanıcı ile de interaksiyon sağlamayıp, input'u alıp, programı çalıştırıp output çıkartması demek.
+
+711
+01:57:22,807 --> 01:57:36,048
+Ama siz C programı çalıştırdığınızda, evet böyle bir mantıkla çalışıyormuş gibi gözükmekle birlikte, C programınız çalışırken aynı anda arka planda diğer programlarınız da çalışıyor.
+
+712
+01:57:36,500 --> 01:57:57,500
+O yüzden bir batch proseslikten bahsetmiyoruz. Ha bu kavramı şöyle kullananlar var, onu söyleyebilirim. Hala bu kavramı kullanan yapılar var. Örneğin bankada bir gece yarısı bir diyelim ki proses tanımıyorsunuz. Bu proses her gece saat 3'te çalışıyor.
+
+713
+01:57:57,500 --> 01:58:10,400
+bu tarz birden fazla proses arka arkaya devreye girip işte sizin arka plandaki faturalarınızla ilgili bazı transferler vesaire arkada yapılacak işleri
+
+714
+01:58:10,400 --> 01:58:19,340
+batch processing pantında yapıyor ama gene eski bir cihaz gibi aynı anda tek bir iş yapmıyor. Bunu sırayla yapıyor.
+
+715
+01:58:19,340 --> 01:58:23,860
+bu, evet buna cronjob deniyor, doğru
+
+716
+01:58:23,860 --> 01:58:31,639
+bu cronjobları tanımayarak veri tabanında ya da farklı işleri yapma şansınız var
+
+717
+01:58:31,639 --> 01:58:35,080
+şimdi çok şeyi merak ediyorsunuz, haklısınız anlıyorum ama
+
+718
+01:58:35,080 --> 01:58:40,940
+hani birazcık ilerleyelim, belki ondan sonra sorularınızı almak daha mantıklı olacak
+
+719
+01:58:40,940 --> 01:58:47,440
+şimdi interaktif processing'e şöyle bir örnek
+
+720
+01:58:47,439 --> 01:58:50,519
+bir video.
+
+721
+01:59:32,532 --> 01:59:50,532
+Bu arada yazdığınız C programlarında her zaman için input'u verip output'u beklemiyorsunuz. Program içerisinde size her input'un sonunda ürettiği output'u sorarak başka adımlarda da tekrar sizinle interakşına geçiyor.
+
+722
+01:59:50,532 --> 01:59:55,511
+batch processing dediğiniz eski yapıda siz bir işi veriyorsunuz.
+
+723
+01:59:56,712 --> 02:00:00,811
+Bir daha o işle ilgili input'u verdikten sonra o programa müdahil olamıyorsunuz.
+
+724
+02:00:01,912 --> 02:00:03,232
+Aradaki temel farklılık bu.
+
+725
+02:00:05,311 --> 02:00:12,171
+Şimdi interaktif processing ve batch processing arasındaki farkı konuşmuş olduk.
+
+726
+02:00:13,171 --> 02:00:17,351
+Bir başka kavram real time processing.
+
+727
+02:00:34,515 --> 02:00:41,835
+Hocam saatler gibi falan olabilir mi? Kronometre gibi nasıl? Yok, değil. Tamamdır.
+
+728
+02:00:50,707 --> 02:00:51,707
+Evet Atakan.
+
+729
+02:00:52,707 --> 02:01:02,707
+Hocam çok mu basit olur diye düşündüm de, sanırım şu anda asıl kullandığımız kısım bu oluyor sanırsam. Bu da verdiğimiz anda verdiğimiz şeyi yapıyor.
+
+730
+02:01:04,707 --> 02:01:05,707
+Peki.
+
+731
+02:01:07,707 --> 02:01:08,707
+Mert?
+
+732
+02:01:10,707 --> 02:01:14,707
+Hocam grafik kartlar olabilir mi? Hani grafiği işliyor ya anlık olarak.
+
+733
+02:01:14,707 --> 02:01:20,568
+Yok öyle söyleyemeyiz. Yani real time processing'i grafik kart üzerinden anlatmayalım.
+
+734
+02:01:29,235 --> 02:01:42,235
+Şimdi bir kere bir bilgisayara bir task verdiğinizde bu task'ın belirtilen bir süre içerisinde tamamlanması aslında real-time processing olarak adlandırılıyor.
+
+735
+02:01:42,235 --> 02:01:53,235
+Belirli deadline'lar içerisinde tabii ki gerçek dünya şartlarını gözeterek bu deadline'lardan bahsediyoruz. Örneğin müzik dinliyorsunuz.
+
+736
+02:01:53,235 --> 02:02:11,996
+müzik dinlemede real time processing olmasa siz müziği kesintili bir şekilde dinleme ihtimaliniz olabilir ya da müziği işte radyodan dinliyorsunuz diyelim o andaki gelen müziği 5 saniye sonra 10 saniye sonra dinleyebilirsiniz eğer real time processing olmasaydı.
+
+737
+02:02:11,995 --> 02:02:24,435
+verdiğiniz işi belirli bir zaman içerisindeki bu süre kısıtlı bir zaman bunu saniyeler ya da milisaniyeler cinsinden ifade ediyoruz.
+
+738
+02:02:25,135 --> 02:02:28,155
+Gerçekleştirme kapasitesine real time processing diyoruz.
+
+739
+02:02:28,815 --> 02:02:39,015
+Burada batch processing'den bahsettiğimiz zaman eski tip cihazlarda siz bununla ilgili bir programı cihaza verdiğinizde real time gerçekleşmiyor da bu iş.
+
+740
+02:02:39,015 --> 02:03:01,515
+bu iş sırası geldiği zaman o işin gerçekleşmesi anlamına geliyordu. Bu da bundan 5 dakika sonra da olabilir, 1 saat sonra da olabilir anlamına geliyordu. O zaman real-time processing'den bahsetmiyoruz. Şu anda Word dokümanını açtığınızda, Excel'i açtığınızda, bir oyunu açtığınızda real-time olarak bunların hepsinin gerçekleştiğini görüyorsunuz.
+
+741
+02:03:01,515 --> 02:03:18,715
+Peki, şimdi eskiden bir kullanıcı bir cihaz üzerinde farklı programlar çalıştırıyordu. Sonra birden fazla kullanıcı yine aynı cihaz üzerinde programlar çalıştırmaya başladı.
+
+742
+02:03:19,916 --> 02:03:30,115
+Ama şu an geldiğimiz noktada biz birden fazla işi aynı anda çalıştırabiliyoruz.
+
+743
+02:03:31,515 --> 02:03:36,155
+Peki bu bizi nereye doğru götürdü?
+
+744
+02:03:39,155 --> 02:03:47,036
+Timesharing özelliğine doğru bizi getirmiş oldu.
+
+745
+02:03:48,036 --> 02:03:50,795
+Peki timesharing özelliği nedir?
+
+746
+02:04:04,532 --> 02:04:05,532
+Evet, Atakan.
+
+747
+02:04:06,532 --> 02:04:24,532
+Hocam, mesela Bluetooth bağlantılarında aynı anda iki cihazın sesi tam olarak aynı anda çıkarmak için senkronize olması ya da bir ara bu LG telefonların muhabbeti vardı, aynı anda şarkı yaşabiliyorsunuz arkadaşınızda falan o tarz bir şey midir diye düşündüm şu an sadece.
+
+748
+02:04:24,532 --> 02:04:30,532
+Biz bunu işletim sistemi ve bilgisayar üzerinde yapılan işler üzerinden değerlendirelim.
+
+749
+02:04:30,532 --> 02:04:33,532
+Senin örneğin biraz daha farklı bir örnek.
+
+750
+02:04:33,532 --> 02:05:02,831
+örnek. Biz burada şunu anlatmak istiyoruz. Eskiden bir bilgisayar üzerinde iş yapılacağı zaman bir kişi yapacağı iş ile ilgili diğer kişinin işini bitirmesini beklerdi. Ama şu andaki bir bilgisayar üzerinde birden fazla kullanıcı bağlanıp aynı anda CPU'yu paylaşarak işlerini paralelde gerçekleştirme şansına sahipler.
+
+751
+02:05:02,831 --> 02:05:09,911
+bu da time sharing yaparak oluyor. Yani size belirli bir zaman veriyor kullanıcı olarak sistem, eşitim sistemi.
+
+752
+02:05:10,591 --> 02:05:23,631
+Diğer kullanıcıya belli bir zaman veriyor. Bu şekilde time sharing mantığını kullanarak siz aynı bilgisayar üzerinde birden fazla kişiye servis, hizmet sunabiliyorsunuz.
+
+753
+02:05:23,631 --> 02:05:26,532
+Gelelim multi programming'e.
+
+754
+02:05:33,300 --> 02:05:34,499
+Multi-programming nedir?
+
+755
+02:05:47,091 --> 02:05:48,091
+Evet Selim.
+
+756
+02:05:48,091 --> 02:05:54,091
+Bir programın aynı anda birden fazla işleri paralel şekilde yapmasını olabilir diye düşünün.
+
+757
+02:05:54,091 --> 02:05:56,091
+Bir programın mı anlayamadım?
+
+758
+02:05:56,091 --> 02:06:02,091
+Bir programın dedim evet. Bir programın birden fazla işe paralel şekilde yapması yani birbirine beklemeden.
+
+759
+02:06:02,091 --> 02:06:13,091
+Peki bir programın birbirine beklemeden paralel şekilde işleri yapması tam benim açımdan açıklayıcı olmadı.
+
+760
+02:06:13,091 --> 02:06:35,172
+sayıcı olmadı. Yani şu şekilde bir program bir iş yapıyor diyelim. Ama kendi içinde programlara ayrıldığını düşünürsek o kendi içinde ayrılan programdan bir tanesine iş yaparken diğer bir programdan beklemeyecek. Yani nasıl desem aynı anda aynı farklı işlevler çalışacak şekilde bir program diye düşündüm. Tamam anlatamadım ama.
+
+761
+02:06:36,172 --> 02:06:41,111
+Yani senin söylediğin başka bir şeye gidiyor aslında. Ubeydu'ndan söz vereyim.
+
+762
+02:06:43,091 --> 02:06:49,772
+Hocam farklı kullanıcılardan alınan bilgileri aynı anda yapmak gibi bir şey mi?
+
+763
+02:06:50,292 --> 02:06:59,032
+Şimdi bunun önce bir tanımını yazalım. Time sharing'in yazarken diğerinin de aslında karşılığını ortaya koymuş olacağız.
+
+764
+02:08:32,275 --> 02:08:57,995
+Şimdi Time Sharing kavramını açıklarken Multiprogramming kavramından faydalanıyoruz ve bu noktada bu Multiprogramming özelliği sayesinde bir T anında sadece bir işin yapıldığı ve zaman dilimini intervallara ayırdığınız bir dizayn oluşturuyorsunuz.
+
+765
+02:08:57,995 --> 02:09:27,975
+Bu sayede siz aslında arka planda işlemciye her bir prosesi belirli bir süre çalıştırma imkanı veriyorsunuz ve bir T anında sadece bir iş yapılıyor normalde herhangi bir fazladan işlemci ya da çekirdek yoksa ve böylece siz yazarken Word dokümanına, internette bir şey okurken, müzik dinlerken bunların hepsi işlemci tarafında bir T anında
+
+766
+02:09:27,995 --> 02:09:39,956
+çalışıyorlar ve sonra tekrar diğerine işlemciyi bırakıyorlar. Aslında siz bunların aynı anda çalıştığını düşünüyorsunuz ama bunlar kesintili bir şekilde işlemciyi kullanarak çalışıyorlar.
+
+767
+02:09:39,956 --> 02:09:56,295
+İşte timesharing mantığı da buradan geliyor. Aslında bugün multiprogramming tekniğinin tekil kullanılıcı ortama aktarıldığı yapıya biz multitasking diyoruz.
+
+768
+02:09:56,295 --> 02:10:17,375
+bunu da yazmakta fayda var. Bizim asıl bilgisayarlarımızın şu anda uygulandığı yapı multitasking olarak adlandırılıyor ve bu sayede siz birden fazla taskı aynı anda yönetebiliyorsunuz.
+
+769
+02:10:17,375 --> 02:10:32,175
+bunu yapan kim? İşletim sistemi. Ve işletim sistemi bu özelliğe sahip. İşletim sistemi bu özelliğe sahip olduğu için siz şu anda birden fazla programı aynı anda çalıştırabiliyorsunuz. Birden fazla taskı aynı anda yapabiliyorsunuz.
+
+770
+02:10:33,395 --> 02:10:42,395
+Peki, şimdi bu kavramları konuştuğumuza göre başka bir şey söyleyecek miydim? Bir bakayım. Şuradaki notlarıma.
+
+771
+02:11:02,036 --> 02:11:15,235
+Evet, multitasking için de aynı anda birden fazla task'ın çalıştırılması özelliği olarak anlandırdıktan sonra gelelim embedded sistem kavramına.
+
+772
+02:11:15,395 --> 02:11:19,935
+Embedded sistem hep söylüyoruz arada nedir diye sorayım.
+
+773
+02:11:35,507 --> 02:11:37,507
+gömülü sistem.
+
+774
+02:11:44,884 --> 02:11:50,763
+örnek verebilir misiniz? Öyle sorayım. En azından başka birilere cevap versin. Gömülü sisteme. Anıl?
+
+775
+02:11:52,083 --> 02:11:54,963
+Hocam BIOS gibi söyleyebilir miyiz?
+
+776
+02:11:55,523 --> 02:12:11,763
+Yok. BIOS tamamen farklı bir şey. Basic Input Output. Bu genelde bilgisayarların donanımlarını temel seviyede konfigüre etmek için kullandığımız bir
+
+777
+02:12:11,763 --> 02:12:16,483
+yazılım o yüzden onu söyleyemeyiz.
+
+778
+02:12:18,083 --> 02:12:18,803
+Evran?
+
+779
+02:12:20,203 --> 02:12:22,143
+Hocam IoT'ler olabilir mi?
+
+780
+02:12:23,643 --> 02:12:24,903
+IoT'ler olabilir.
+
+781
+02:12:26,543 --> 02:12:31,443
+Ama IoT ile ilgili bana hani IoT'ler olabilir mi derken ne tür bir IoT'yi söylüyorsun?
+
+782
+02:12:34,564 --> 02:12:36,223
+IoT dediğin nedir mesela?
+
+783
+02:12:37,623 --> 02:12:40,503
+Hocam akıllı yani nasıl da anlatayım?
+
+784
+02:12:41,763 --> 02:13:08,083
+Şöyle bir sıkıntımız var farkında mısınız? İfade etmekte zorlanıyoruz. Genel olarak hepinizde böyle bir sıkıntı var. Aslında bir şey geliyor aklınıza ama onu tariflemekte zorlanıyoruz. Bu konuda birazcık kendinizi geliştirmeniz lazım. Bunu kişisel olarak söylemiyorum. Belki ona tam hakim olmadığınız için olabilir. Sorun değil. Ama bilip de anlatamıyorsanız burada bir sorun var demektir.
+
+785
+02:13:09,363 --> 02:13:10,843
+Evet evren sözlerinde.
+
+786
+02:13:11,763 --> 02:13:16,403
+Hocam mesela ekmek kızartma makineleri falan var ya
+
+787
+02:13:16,403 --> 02:13:17,403
+Çok güzel
+
+788
+02:13:17,403 --> 02:13:22,923
+Onların ekmeğin kızartıp kızarmadığını anlama sistemleri olabilir
+
+789
+02:13:22,923 --> 02:13:25,443
+Çok güzel, gayet güzel bir örnek oldu şimdi
+
+790
+02:13:25,443 --> 02:13:27,483
+En azından örnek üzerine anlattık
+
+791
+02:13:27,483 --> 02:13:30,703
+O zaman embedded sistemlere şöyle bir tanım yazacağım
+
+792
+02:13:30,703 --> 02:13:35,923
+Devices that are dedicated
+
+793
+02:13:44,115 --> 02:13:46,115
+2 specific tasks
+
+794
+02:13:50,292 --> 02:13:55,931
+such as medical devices,
+
+795
+02:13:59,539 --> 02:14:03,139
+Vehicle Electronics,
+
+796
+02:14:09,524 --> 02:14:11,163
+Home Appliances
+
+797
+02:14:17,235 --> 02:14:29,515
+Cellphones diye devam ediyor. Yani görüntü sistemden bahsediyorsanız, belirli bir taskı yapmak üzere tasarlanmış cihazlardan bahsediyoruz.
+
+798
+02:14:30,315 --> 02:14:37,635
+Bilgisayar belirli bir taskı yapmak için tasarlanmış bir cihaz değil normalde. Birçok taskı yönetmek üzere tasarlanmış bir cihaz.
+
+799
+02:14:37,695 --> 02:14:45,076
+Ama çamaşır makinesi diyorsanız, çamaşır makinesinin görevi çamaşır yıkamaktır ve bununla ilgili programlar vardır.
+
+800
+02:14:45,076 --> 02:15:09,076
+İşte bu bir gömülü sistemdir. Ekmek kızartma makinesi bir gömülü sistemdir. Telefon aslında artık bilgisayar formatına dönüştü. O yüzden akıllı telefonları belki bu kategoride kullanmamak lazım ama eski tip telefonlar, üzerinde işletim sistemi olmayan telefonlar bu kategoride değerlendirilebilir.
+
+801
+02:15:09,076 --> 02:15:23,735
+bunun dışında evdeki cihazlarımız, araba üzerindeki belirli yetenekler bunların hepsi gömülü sistem olarak adlandırılıyor burada bahsettiğimiz yapılar.
+
+802
+02:15:24,115 --> 02:15:36,496
+Doğal olarak gömülü sistemler için doğrudan bir işletim sistemi var diyemeyiz. Bazıları için var. Evet mesela Android Car işletim sistemi var arabalar için.
+
+803
+02:15:39,075 --> 02:15:50,315
+Fakat şu an için IoT device'leri, özellikle buluşuk makinesi, klima vesaire gibi bir işletim sistemi kullanmayı gerektirecek bir durum da yok aslında.
+
+804
+02:15:50,495 --> 02:15:55,575
+Çünkü belirli görevler var ve siz bu görevleri yapmasını istiyorsunuz cihazın.
+
+805
+02:15:55,815 --> 02:16:02,255
+O zaman zaten bir işletim sisteminin karmaşık yapısına ihtiyaç duymuyoruz.
+
+806
+02:16:02,255 --> 02:16:20,735
+O cihazın yapacağı görevler belli ama bizim bilgisayarlarımız gibi çok fazla kaynağı yönetme ihtiyacımız olsa, çok fazla işi aynı anda yapma ihtiyacımız olsa o zaman bir işletim sistemine ihtiyaç duyuluyor. Bu aradaki ayrımı da yapmış oldum.
+
+807
+02:16:24,851 --> 02:16:28,851
+Evet, şimdi gelelim Operative System Architecture'a.
+
+808
+02:16:37,139 --> 02:16:45,139
+Bunu konuşurken de aslında önce softwarelerde bir kategorizasyon yapacağız.
+
+809
+02:16:45,139 --> 02:16:51,139
+Softwarelerdeki kategorizasyon da şu şekilde olacak.
+
+810
+02:16:53,843 --> 02:16:56,003
+Software bir yazılım demek biliyorsunuz.
+
+811
+02:16:57,683 --> 02:16:58,943
+İşletim sistemi de bir yazılım.
+
+812
+02:17:01,183 --> 02:17:05,843
+O yüzden Software en tepede yer aldığını bana sayarsak,
+
+813
+02:17:07,224 --> 02:17:11,063
+bir tarafa Application var bizim uygulamalarımız.
+
+814
+02:17:11,823 --> 02:17:16,623
+Gelirken, diğer tarafa Sistem başlığı gelecek.
+
+815
+02:17:17,323 --> 02:17:19,143
+Sistemin altında iki tane başlık var.
+
+816
+02:17:19,143 --> 02:17:22,123
+Bir, Utility Software.
+
+817
+02:17:22,123 --> 02:17:27,363
+Diğeri de Operating System
+
+818
+02:17:27,363 --> 02:17:31,283
+Hocam Classification yazıyor değil mi orada?
+
+819
+02:17:31,743 --> 02:17:32,943
+Evet Classification yazıyor
+
+820
+02:17:32,943 --> 02:17:37,163
+Operating System'ın altında da iki tane başlık var
+
+821
+02:17:37,163 --> 02:17:39,524
+User Interface
+
+822
+02:17:39,524 --> 02:17:42,723
+ve Kernel
+
+823
+02:17:42,723 --> 02:17:48,063
+Şimdi software dediğinizde bütün bunların hepsini kapsıyor
+
+824
+02:17:48,063 --> 02:17:58,543
+Software'ın altında bizim kullandığımız standart application'lar işte Word, müzik dinlemeyi de video izlemeyi de bunlar veya application software'ı olarak geçiyor.
+
+825
+02:17:58,543 --> 02:18:05,583
+Peki sistem başlığı altına geldiğimizde utility'den kast ettikleri nedir? Utility software dediğimiz şey nedir?
+
+826
+02:18:10,835 --> 02:18:11,835
+Evet Selim.
+
+827
+02:18:11,835 --> 02:18:15,835
+Yardımcı araçlar olabilir diye düşündüm.
+
+828
+02:18:15,835 --> 02:18:19,835
+Sistemi yönetmek için kullandığımız yardımcı araçlar ne örnek verebiliriz?
+
+829
+02:18:19,835 --> 02:18:24,835
+Örnek aklıma gelmedi şükür.
+
+830
+02:18:24,835 --> 02:18:28,835
+Tamam başka birine soralım. Evran.
+
+831
+02:18:28,835 --> 02:18:31,835
+Windows'daki görev yöneticisi olabilir mi mesela hocam?
+
+832
+02:18:31,835 --> 02:18:35,835
+Ama bu işletim sisteminde bir parçası gibi düşünün.
+
+833
+02:18:35,835 --> 02:18:41,055
+Ama olabilir. Çok yanlış değil. Olur. Kutaya söz vereyim.
+
+834
+02:18:47,827 --> 02:18:50,767
+Kutay, göz önceli kaldırmıştım.
+
+835
+02:18:55,796 --> 02:18:58,516
+Sanırım herhalde ben yanlış gördüm.
+
+836
+02:19:00,196 --> 02:19:00,995
+Atakan?
+
+837
+02:19:02,015 --> 02:19:07,335
+Hocam, görev yöneticisini açtığımızda sistem kısmının altında olan her şey sanırım.
+
+838
+02:19:07,915 --> 02:19:12,195
+Mesela işte Windows için otomatik güncellemeleri yöneten parça sayılır herhalde.
+
+839
+02:19:12,435 --> 02:19:14,275
+Çok doğru. Sayılır.
+
+840
+02:19:14,755 --> 02:19:19,216
+Burada third party utility'ler var, bir de işletim sistemine ait olan utility'ler var.
+
+841
+02:19:19,216 --> 02:19:34,935
+Sizin bellek yönetiminiz mesela harddiskinizdeki partition'a ayırma, harddiskinizi temizleme ile ilgili olan bütün sistemsel yazılımların hepsi utility başlığı altında geçiyor.
+
+842
+02:19:34,935 --> 02:19:52,235
+operating system daha genelde kapalı bir yapı olarak adlandırabiliriz ama utility yardımcı yazılımlar, operating system ise core görevi gerçekleşen, gerçekleştiren yazılım olarak adlandırabiliriz bilgisayarın yönetiminde.
+
+843
+02:19:52,235 --> 02:20:09,215
+onun da kendi altında iki tane parçası var. User Interface ve Kernel diye. Kernel bir işletim sisteminin temel yapması gereken tüm işlerden sorumlu olan parça. Bir işletim sisteminin yapması gereken görevler neler? Onları soralım hemen.
+
+844
+02:20:09,215 --> 02:20:18,315
+bir, process management, yani işleri yönetmek, iki,
+
+845
+02:20:22,899 --> 02:20:38,099
+Evet. Bilgisayarın parçalarını yönetiyordu hatırlıyorsanız. Memory Management. Ubeydullah.
+
+846
+02:20:39,476 --> 02:20:42,476
+Can ben input output vermi diyecek.
+
+847
+02:20:42,476 --> 02:20:47,476
+File management, IO management, input output da doğru.
+
+848
+02:20:50,932 --> 02:20:51,932
+Başka.
+
+849
+02:20:55,059 --> 02:20:56,680
+Hocam, eee
+
+850
+02:20:56,680 --> 02:21:00,279
+Network Management
+
+851
+02:21:01,523 --> 02:21:02,523
+Efendim?
+
+852
+02:21:02,523 --> 02:21:08,723
+IO Management dediğimiz giriş çıkış manasında bir şey yani işte ekran, klavye, mouse falan.
+
+853
+02:21:08,723 --> 02:21:12,123
+Aynen öyle giriş çıkış birimlerinin yönetilmesinden bahsediyoruz.
+
+854
+02:21:14,484 --> 02:21:15,583
+Evet Selim.
+
+855
+02:21:16,723 --> 02:21:18,683
+Device Management diye bir şey olabilir mi acaba?
+
+856
+02:21:19,003 --> 02:21:19,483
+Ney management?
+
+857
+02:21:20,163 --> 02:21:20,563
+Device.
+
+858
+02:21:21,843 --> 02:21:24,583
+Device Management çok genel bir ifade.
+
+859
+02:21:24,944 --> 02:21:27,123
+IO Management ile aynı anlama geliyor.
+
+860
+02:21:27,263 --> 02:21:30,784
+O yüzden hani onu birbirinin yerine kullanabiliriz.
+
+861
+02:21:31,523 --> 02:21:53,003
+Şimdi genel olarak bu görevleri var işletim sisteminin. İşletim sisteminin bu görevlerini gerçekleştirmesi için iyi bir karlere ihtiyacımız var. Bu çekirdek seviyesindeki bütün bu işleri yönetiyor.
+
+862
+02:21:53,003 --> 02:22:02,143
+tabi çekirdek seviyesindeki işleri yaparken dışarıdan kullanıcının bu bilgisayarı kullanabilmesi için bilgi veriyor ve bilgi alıyor olması lazım.
+
+863
+02:22:02,323 --> 02:22:09,884
+İşte bunun içinde user interface var. User interface seçenekleri nelerdir bir işletim sisteminde?
+
+864
+02:22:24,115 --> 02:22:24,755
+Evet Selim.
+
+865
+02:22:25,935 --> 02:22:32,795
+Grafiksel bir arayut olabilir, imleçte kontrol edilebileceği ya da komut satırı şeklinde de olabilir diye düşündük.
+
+866
+02:22:32,795 --> 02:22:52,915
+Evet, şimdi komut satırı olarak adlandırdığımız interfej, shell'ler olarak adlandırılıyor, kabuk olarak adlandırılıyor ve siz burada genelde mouse kullanmadan komutlar aracılığı ile işletim sistemine ulaşıyorsunuz, ona yaptırmak istediğiniz işleri yaptırıyorsunuz.
+
+867
+02:22:52,915 --> 02:23:19,815
+aslında eski bir yöntem olmakla birlikte hala çok hızlı grafik user interface'den daha hızlı işlerinizi yaptırmak adına sık kullanılan uzaktaki bilgisayara bilgisayarın yükünü arttırdığı için grafik user interface kurmadan doğrudan portlar üzerinden ulaşarak işlerinizi yaptırabileceğiniz çok hala geçerli bir interface.
+
+868
+02:23:19,815 --> 02:23:30,755
+bu interfaste siz komutları klavye üzerinden yazarak bilgisayarınıza aktarıyorsunuz ya da karşı bilgisayara gönderiyorsunuz.
+
+869
+02:23:30,755 --> 02:23:39,295
+Graphical User's Face'de daha çok bir grafik arayüzü ve window manager yapısı var.
+
+870
+02:23:39,296 --> 02:23:53,056
+ve bu window managerler farklı pencereler üzerinden sizin işlerinizi çeşitli butonlar aracılığıyla çeşitli alanlara tıklayarak gerçekleştirmenizi sağlıyor.
+
+871
+02:23:54,376 --> 02:24:00,016
+Komutların bir nevi grafik arayüzlere esayen edilmiş hali gibi düşünebilirsiniz.
+
+872
+02:24:01,235 --> 02:24:06,215
+Biz genelde şu anda kullandığımız bilgisayarlarda bu yapıda çalışıyoruz.
+
+873
+02:24:06,215 --> 02:24:19,755
+Ama bu bahsettiğim komut satırları üzerinden, terminal ekranları üzerinden yaptıramayacağımız bir iş yok.
+
+874
+02:24:19,755 --> 02:24:25,675
+Yani graphical user interface'den daha kuvvetli bir yapıdan bahsediyoruz.
+
+875
+02:24:28,056 --> 02:24:35,095
+Terminal ve komut satırını konuştuğumuz zaman orada yaptırabileceğiniz her şeyi graphical user interface'de de yaptırabilirsiniz.
+
+876
+02:24:35,095 --> 02:25:01,415
+öyle düşünebilirsiniz. Bakıyorum başka kritik bir şey var mı diye. Şunu da çizelim. Bir yapıdan bahsettiğimizde bir tane kernelimiz var. Bunun etrafında bir user interface var.
+
+877
+02:25:06,195 --> 02:25:07,055
+ve siz
+
+878
+02:25:07,055 --> 02:25:12,075
+kullanıcı olarak
+
+879
+02:25:16,308 --> 02:25:19,308
+dışarıdan bu user interface aracılığıyla
+
+880
+02:25:19,308 --> 02:25:21,107
+kernel'e
+
+881
+02:25:21,107 --> 02:25:23,308
+komut
+
+882
+02:25:23,308 --> 02:25:26,308
+aktararak işletim sistemine
+
+883
+02:25:26,308 --> 02:25:27,308
+...
+
+884
+02:25:29,716 --> 02:25:32,716
+işlerinizi yaptırabiliyorsunuz.
+
+885
+02:25:36,716 --> 02:25:39,716
+Tabii bu noktada
+
+886
+02:25:39,716 --> 02:25:43,716
+biz bir şey unuttuk mu diye bakıyorum şurada.
+
+887
+02:25:43,716 --> 02:25:47,716
+Ha yok unutmamışız tamam. Bunu söylemişiz.
+
+888
+02:25:49,716 --> 02:25:55,716
+Şimdi saat on bir buçuk oldu. İşletim sistemlerinde belli bir noktaya kadar geldik.
+
+889
+02:25:55,716 --> 02:26:10,955
+önümüzdeki hafta işletim sistemleriyle ilgili küçük bir kısım kaldı. O kısmı tamamladıktan sonra, önümüzdeki hafta değil pardon ondan sonraki hafta, önümüzdeki hafta birlikte tekrar yapacağız demiştik.
+
+890
+02:26:10,955 --> 02:26:20,135
+13. hafta orayı tamamlayacağız. Sonra muhtemelen dersin sonunda bir algoritmayla dersi bitireceğiz network kısmından da bahsettikten sonra.
+
+891
+02:26:20,135 --> 02:26:29,915
+son haftada bir iki ufak konuda anlatıp bu dönemi tamamlayacağız gibi şu anda planımızı yapalım. Sorunuz var mı?
+
+892
+02:26:33,556 --> 02:26:39,115
+Hocam, iki sayfa geridekine bir şey geçme şansını da, orayı şey yapamadım ama size zahmet oluyorum.
+
+893
+02:26:40,395 --> 02:26:41,175
+Tabii bakabilirsin.
+
+894
+02:26:44,724 --> 02:26:46,283
+Tamamdır hocam, teşekkür ederim.
+
+895
+02:26:47,523 --> 02:26:48,063
+Rica ederim.
+
+896
+02:26:48,923 --> 02:26:50,043
+Başka sorusu olan var mı?
+
+897
+02:26:52,123 --> 02:26:57,163
+Evet, o zaman hepinizde diyeceğim ama Obeydoğullar bir soru soracakmış.
+
+898
+02:26:59,283 --> 02:27:02,023
+Hocam, Kernel'in tam olarak ne olduğunu soracaktım.
+
+899
+02:27:03,023 --> 02:27:12,383
+Kernel, bütün bu bahsettiğimiz görevleri arka planda müdahale olmadan,
+
+900
+02:27:12,383 --> 02:27:21,523
+kendi kendine çalışarak yönetebilme yeteneğine sahip olan operating sisteminin birimi.
+
+901
+02:27:22,404 --> 02:27:39,904
+Çekirdek kısmına siz ancak yetkili bir kişi müdahale edebilir ve belirli müdahaleleri yapabilir ama kernel kısmı müdahale olmadan tüm bu sistemin yürümesini sağlayacak.
+
+902
+02:27:39,904 --> 02:27:44,084
+işleri gerçekleştiren core kısım.
+
+903
+02:27:47,023 --> 02:27:48,383
+Anladım hocam, sağ olun.
+
+904
+02:27:48,383 --> 02:28:03,923
+Process Management, Memory Management, File Management, bütün bunlar kernel kısmında kodlanmış oluyor ve işletim sistemi bilgisayarın yönetimini buradaki kodlar vasıtasıyla yapıyor.
+
+905
+02:28:03,923 --> 02:28:11,343
+dışarıdan yapılan müdahaleler sadece kullanıcının isteklerini karşılamak için gerçekleşiyor.
+
+906
+02:28:14,663 --> 02:28:18,084
+Hepinize önümüzdeki haftaki sağlığınızda varsa başarılar diliyorum.
+
+907
+02:28:18,743 --> 02:28:20,003
+Sağlıklı günler diliyorum.
+
+908
+02:28:20,343 --> 02:28:21,003
+Kendinize iyi bakın.
+
+909
+02:28:21,563 --> 02:28:22,643
+Pazartesi günü görüşmek üzere.
+
+910
+02:28:23,983 --> 02:28:24,584
+İyi günler hocam.

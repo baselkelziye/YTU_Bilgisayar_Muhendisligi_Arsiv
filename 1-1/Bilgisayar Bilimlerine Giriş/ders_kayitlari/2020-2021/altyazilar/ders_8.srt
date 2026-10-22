@@ -1,0 +1,2307 @@
+1
+00:01:21,524 --> 00:01:31,524
+Günaydın arkadaşlar. Ders aslında başladı. Sadece sayınızın artmasını bekliyorum. Birazdan iki dakika içerisinde aktif olarak derse başlayacağız.
+
+2
+00:02:48,211 --> 00:03:13,251
+Evet, günaydın arkadaşlar, hepinize merhaba. Yeni bir hafta. Güzel geçsin diyelim. Dördüncü haftadayız. Dördüncü haftanın ilk dersi, laboratuvar dersi. Geçtiğimiz haftaki üçüncü haftada yapmış olduğumuz algoritmik bir problem vardı, sordum. Onunla ilgili bugün başlayacağız. Sonrasında bir örnek çözeceğiz.
+
+3
+00:03:13,251 --> 00:03:19,871
+bundan sonraki laboratuvar derslerimiz ağırlıklı olarak örnek çözerek ilerleyecek.
+
+4
+00:03:20,531 --> 00:03:31,611
+Konu anlatımı kısmı daha çok dersin perşembe günkü bölümünde olacak ama şartlara bağlı olarak bazen pazartesi de bunu yapıyor olacağız.
+
+5
+00:03:31,851 --> 00:03:38,432
+Bu hafta perşembe günü 29 Ekim Cumhuriyet Bayramı o yüzden dersimiz olmayacak.
+
+6
+00:03:38,431 --> 00:03:43,871
+önümüzdeki hafta yine pazartesi günü devam ediyor olacağız.
+
+7
+00:03:45,131 --> 00:03:55,351
+Tabii önemli birkaç tane daha algoritma ile ilgili ne diyelim akıştaki notasyonlardan görmedikleriniz var.
+
+8
+00:03:55,351 --> 00:04:01,591
+Onları gördükten sonra zaten artık her türlü problemi çözebilecek bilgiye sahip olacaksınız.
+
+9
+00:04:01,771 --> 00:04:03,471
+Sadece pratik gerekecek.
+
+10
+00:04:04,251 --> 00:04:06,951
+Onun dışında dersin başında sormak isterim.
+
+11
+00:04:06,951 --> 00:04:11,771
+uygulama derslerinde daha çok tabii ki sorular da daha fazla alacağım.
+
+12
+00:04:11,911 --> 00:04:16,531
+Soru sormak isteyen var mı? Öncelikle söz vereyim sormak isteyen varsa.
+
+13
+00:04:22,100 --> 00:04:27,299
+herhangi bir anlamadığı konuyla ilgili geçmişteki ya da dersi. İlkerim, lütfen.
+
+14
+00:04:28,359 --> 00:04:33,980
+Hocam, ben geçen hafta perşembe günü son yarım saat izleyememiştim de kayıtta da bulamadım.
+
+15
+00:04:34,119 --> 00:04:45,239
+Evet. Tabii bu maalesef benim yanıtlayabileceğim bir soru değil. Bu bilgi işlemin ve uzaktan eğitim merkezinin vermesi gereken bir cevap.
+
+16
+00:04:45,239 --> 00:04:52,100
+çünkü hani bilemiyorum nasıl bir problem oldu ya da hani daha sonradan o kısmı eklediler mi?
+
+17
+00:04:52,559 --> 00:04:55,280
+Bilgi işleme mail atarsan onlar sana yardımcı olacaklardır.
+
+18
+00:04:58,803 --> 00:05:28,064
+Evet, Halil İbrahim'den bir cevap geldi. Kayıtlar ayrı ayrı bölünmüş saatlere göre diyor. Belki onunla alakalı olabilir. Teşekkür ederim Halil İbrahim. Açıklama için kerimin belki işine yarar. Bazen sonradan da yükleyebiliyorlar. O yüzden bakmakta fayda var. Evet, başka sorusu olan geçtiğimiz haftaki derslerle ilgili olarak herhangi bir konuyla ilgili ya da ders sizin gidişatıyla ilgili.
+
+19
+00:05:31,540 --> 00:05:41,540
+Peki, o zaman biz kendi işimize bakalım. Şimdi hemen ekran paylaşımını yapalım.
+
+20
+00:05:44,139 --> 00:05:51,540
+Evet, şimdi öncelikle bir geçen hafta arkadaşımızın da uyarısıyla bir düzeltme yapmak istiyorum.
+
+21
+00:05:51,540 --> 00:05:59,619
+Buradaki kubik sayı yerine doğrusu Armstrong olacak.
+
+22
+00:06:00,260 --> 00:06:03,560
+Armstrong sayı olacak.
+
+23
+00:06:05,179 --> 00:06:08,080
+Bu literatürdeki ismi bu şekilde.
+
+24
+00:06:08,900 --> 00:06:20,919
+Kubik sayılar sizin de söylediğiniz gibi işte birin kübü, ikinin kübü, üçünün kübü olan 8, 27, ne diyelim, 125, 64 gibi sayılar.
+
+25
+00:06:21,540 --> 00:06:27,120
+Ama Armstrong sayı basamaklarının küplerini demeyeceğim.
+
+26
+00:06:27,600 --> 00:06:29,880
+Biz burada özel bir Armstrong sayıyı arıyoruz.
+
+27
+00:06:30,540 --> 00:06:32,959
+Üç basamaklı sayılar arasındaki Armstrong sayıyı arıyoruz.
+
+28
+00:06:32,959 --> 00:06:39,279
+Ama Armstrong sayının genel olarak aslında karşımıza çıkan hali şu.
+
+29
+00:06:40,359 --> 00:06:44,959
+A, B, C, D, E diye düşünün.
+
+30
+00:06:44,959 --> 00:06:55,559
+eninci kuvveti, eninci kuvveti, eninci kuvveti, eninci kuvveti.
+
+31
+00:06:55,559 --> 00:06:58,519
+Buradaki L neye denk geliyor arkadaşlar?
+
+32
+00:07:02,516 --> 00:07:03,516
+Hazel?
+
+33
+00:07:03,516 --> 00:07:04,516
+Basamak sayısı hocam.
+
+34
+00:07:04,516 --> 00:07:06,516
+Evet, teşekkür ederim.
+
+35
+00:07:06,516 --> 00:07:17,516
+O yüzden sadece 3 basamak sayılarda değil, diğer farklı basamaktaki sayılarda da Armstrong sayılar var.
+
+36
+00:07:17,516 --> 00:07:21,516
+Örneğin 4 basamaklı sayıda N, 4'e denk gelecek.
+
+37
+00:07:21,516 --> 00:07:27,516
+Rakamların 4. kuvvetlerinin toplamı o sayıya eşitmediği mi diye bakacağız.
+
+38
+00:07:27,516 --> 00:07:32,056
+bakacağız. Beş basamaklı olursa beşinci kuvveti. Evet, sevdiğime bir söz veriyorum.
+
+39
+00:07:33,056 --> 00:07:37,335
+Hocam ben bunu aldım da bizim yapacağımız şey sadece üç basamaklı için geçerli değildi değil mi?
+
+40
+00:07:37,835 --> 00:07:38,736
+Evet, aynen öyle.
+
+41
+00:07:39,056 --> 00:07:39,575
+Tamam hocam.
+
+42
+00:07:48,755 --> 00:08:15,755
+Biz bunu bugün 3 basamaklı sayılar için çözüyor olacağız. Ama ilerleyen zamanlarda birkaç bilgi daha ekledikten sonra bu soruyu tekrar hatırlayıp hatta ben unutursam siz hatırlatın 2 hafta sonra bu sefer tüm işte k basamaklı sayılar için ya da bütün sayılar için bunu çözebiliyor muyuz diye bir kez daha bakacağız.
+
+43
+00:08:15,755 --> 00:08:25,296
+O yüzden bu Armstrong sayıyı şu an sadece 3 basamak sayılar için çözüyorum. İlerleyen zamanlarda bu çözümü genelleştireceğiz.
+
+44
+00:08:25,915 --> 00:08:39,195
+Ve bir çözümün özel haliyle genel hali arasındaki farkı da görmüş olacaksınız. Bilgisayar bilimlerinde mümkünse algoritmik çözümlerinizin genelleştirilebilir olması çok önemli.
+
+45
+00:08:39,195 --> 00:08:51,395
+özel bir problemi çözmektense o problemi de kapsayan ama daha genel bir hükümedeki problemleri de çözebilecek bir çözüm üretmek önemli.
+
+46
+00:08:52,315 --> 00:08:55,375
+O yüzden bu aradaki farkı da vurgulamış olacağız.
+
+47
+00:08:55,375 --> 00:08:59,375
+Şimdi kim bana yardımcı olmak ister bu soruyu çözerken?
+
+48
+00:09:02,275 --> 00:09:04,296
+Evet farklı bir kişi rica edeyim.
+
+49
+00:09:06,075 --> 00:09:07,395
+Evet ben Kaya söz vereyim.
+
+50
+00:09:11,316 --> 00:09:29,316
+Start ile başlamamız gerekiyor önce. Başlayalım Start diyelim. Evet. Ondan sonra kullanıcılar input almamız gerekecek ama önce ne input aldığımızı söyleyelim diye alt tutuyorum ben. O zaman 3 basamaklı sayı yerine izliyorum. Evet.
+
+51
+00:09:40,980 --> 00:10:10,419
+Arkasından üç basamaklı sayıyı okuyacağım. Sayı dedim. O da olur. Olur. Sayı diyelim. Hatta sonra sayı dememizde konuşuyoruz. Evet. Ondan sonra operasyon kutusu açtım. Operasyon kutusu açtık. Evet. Ben onu çizeceğim birazdan. Şey dedim, önce basamakları bulmamız gerekir diye A dedim, B dedim, C dedim, işit koydum onları bulmak için. Tamam.
+
+52
+00:10:10,419 --> 00:10:12,139
+A diyelim, eşittir.
+
+53
+00:10:12,799 --> 00:10:14,820
+Sayı, tam sayı bölmesi 100 dedim.
+
+54
+00:10:15,999 --> 00:10:16,619
+Div yazık.
+
+55
+00:10:16,879 --> 00:10:18,939
+Div 100, evet.
+
+56
+00:10:20,379 --> 00:10:23,719
+Alta B'ye sayı eksi 100 çarpı A, div 10 dedim.
+
+57
+00:10:24,379 --> 00:10:25,779
+Parantez için aldım sayı eksi 100 çarpı A.
+
+58
+00:10:25,779 --> 00:10:30,980
+Sayı eksi 100 çarpı A.
+
+59
+00:10:32,499 --> 00:10:33,919
+Parantez yanlış yerle oldu yani.
+
+60
+00:10:35,459 --> 00:10:35,759
+Peki.
+
+61
+00:10:39,892 --> 00:11:07,551
+Tek tek söylersen o zaman. Parantez açıp. Parantez açtım. Sayı eksi yüz çarpa. Sayı eksi yüz. Bunu da paranteze mi alacağım? Yok, yüz a'dan sonra paranteze alacaksınız. Çarpma zaten işlem önceliği var değil. Ama ben onu öyle yazmayı tercih etmiyorum. Böyle işlem önceliğini görsel olarak görmenin değil. Her şeyi parantez için almanın gerektiğine inanıyorum. O zaman yüz çarpan da etap mı paranteze olmuş. O yüzden biraz önce de parantez yapmıştım. Tamam.
+
+62
+00:11:07,551 --> 00:11:10,011
+Bunu div 10 yaptım
+
+63
+00:11:10,011 --> 00:11:12,732
+Div 10
+
+64
+00:11:12,732 --> 00:11:16,991
+C içinde sayı mod 10 yaptım
+
+65
+00:11:16,991 --> 00:11:19,771
+Sayı mod 10
+
+66
+00:11:19,771 --> 00:11:23,871
+Peki operasyonlarımız bitti mi?
+
+67
+00:11:24,432 --> 00:11:24,732
+Bitti
+
+68
+00:11:24,732 --> 00:11:28,051
+Duyamadım?
+
+69
+00:11:28,551 --> 00:11:28,871
+Bitti
+
+70
+00:11:28,871 --> 00:11:30,271
+Tamam peki
+
+71
+00:11:30,271 --> 00:11:32,631
+Ondan sonra bunları ife yönlendirdim
+
+72
+00:11:32,631 --> 00:11:35,932
+Peki
+
+73
+00:11:35,931 --> 00:11:53,112
+Peki if'e geçelim. Direkt üstüne küp yazabiliyor muyuz bilmiyorum ben. O yüzden A şarpı A şarpı A artı B şarpı B şarpı B artı C şarpı C şarpı C yaptım. Bunu da sayıya işledim. Bunu biraz küçültelim çok büyük çizdim.
+
+74
+00:11:53,112 --> 00:11:56,432
+Hocam bu noktada küp yapabiliyor muyuz?
+
+75
+00:11:57,012 --> 00:11:59,451
+Evet şuna ona cevap vereceğim bir saniye.
+
+76
+00:11:59,451 --> 00:12:12,052
+A çarpı A çarpı A artı B çarpı B çarpı B çarpı B artı C çarpı C çarpı C eşittir sayıdır.
+
+77
+00:12:14,192 --> 00:12:15,112
+Peki.
+
+78
+00:12:19,988 --> 00:12:27,107
+Evet. Doğruysa output verdim, sayınız bir Armstrong sayısı. Yalnızsa da output verdim, sayınız bir Armstrong sayısı değil.
+
+79
+00:12:27,107 --> 00:12:28,147
+Niye?
+
+80
+00:12:28,147 --> 00:12:35,107
+True'yu bu sefer sola yazdım arkadaşlar. Normalde genelde sağa yazılıyor ama sola yazılmayacak diye bir şey yok.
+
+81
+00:12:35,107 --> 00:12:40,867
+If'te mutlaka if'in kolunun true mu false olduğunu mutlaka yazmanız gerekiyor.
+
+82
+00:12:40,867 --> 00:12:48,467
+Yazılmayan if'ler hatalı olarak kabul edilir. Eğer true'ysa Armstrong sayı...
+
+83
+00:13:06,995 --> 00:13:10,315
+diye bir mesaj veriyorum.
+
+84
+00:13:12,635 --> 00:13:14,155
+Bunları birleştiriyorum.
+
+85
+00:13:16,475 --> 00:13:17,235
+Sonra
+
+86
+00:13:17,756 --> 00:13:18,775
+Stop.
+
+87
+00:13:19,035 --> 00:13:19,795
+Stop.
+
+88
+00:13:20,315 --> 00:13:22,355
+Bir ödeme kadar tırnakları mı lütfen?
+
+89
+00:13:23,115 --> 00:13:26,195
+Evet, çok teşekkürler bu hatırlatmanın içinde.
+
+90
+00:13:26,955 --> 00:13:30,795
+Buradaki tırnakları mesaj yazdırdığımız için koymamız gerekiyor.
+
+91
+00:13:30,795 --> 00:13:34,395
+Şimdi ben hızlıca yazdım. Bu arada pardon.
+
+92
+00:13:34,395 --> 00:13:38,756
+Şimdi düzeldi.
+
+93
+00:13:40,935 --> 00:13:44,115
+Nedense evet böyle bir geçiş oldu.
+
+94
+00:13:44,115 --> 00:13:44,295
+Evet.
+
+95
+00:13:45,295 --> 00:13:52,036
+Şimdi burada arkadaşınızın bir sorusu vardı.
+
+96
+00:13:53,536 --> 00:13:57,195
+A küp artı B küp artı C küp yazabilir miyiz diye.
+
+97
+00:13:58,495 --> 00:13:59,435
+Kim cevap vermek ister?
+
+98
+00:14:01,755 --> 00:14:03,055
+Elif, Pehlivan'la?
+
+99
+00:14:03,055 --> 00:14:06,395
+Evet şapka işaretiyle yazabiliyoruz
+
+100
+00:14:06,395 --> 00:14:10,395
+Şimdi şöyle göstereyim
+
+101
+00:14:10,395 --> 00:14:13,875
+if'in içerisine şu kısmını da göstereyim
+
+102
+00:14:13,875 --> 00:14:22,635
+artı b küp artı c küp eşit sayı yazmamalıyız arkadaşlar
+
+103
+00:14:22,635 --> 00:14:29,716
+Üzeri ifadesi özel bir ifadedir fonksiyonla elde edilir
+
+104
+00:14:29,716 --> 00:14:44,156
+akış diyagramı kullanıyorsak mutlaka çarpım kullanacağız. Ya da bu işi en defa yapıyorsak, burada 3, 5 olabilir, 8 olabilir. O zaman göreceksiniz for döngüsü kullanacağız.
+
+105
+00:14:45,995 --> 00:14:57,936
+Tekrar eden işler için for ya da while döngüsü kullanacağız. Bunu bir hafta sonraki derste anlatmış olacağım. Böylece hiçbir sorunumuz kalmayacak ama şu an için tekrar ediyorum.
+
+106
+00:14:57,935 --> 00:15:04,835
+bu tarz bir gösterimi akış diyagramlarında kullanmayacağız. Erdi söz istemişti.
+
+107
+00:15:05,615 --> 00:15:12,855
+Hocam az önceki sorunuz için şey diyemez miyiz? A iki tane çarpı işareti üç. Bu aküp olmaz mı acaba?
+
+108
+00:15:12,855 --> 00:15:27,035
+Hayır. Hiçbir şekilde akış diyagramlarında böyle bir notasyon göstermeyeceğiz. Ama ileride bu tarz işleri gösterirken fonksiyonlar var.
+
+109
+00:15:27,035 --> 00:15:36,375
+pov fonksiyonu var. Bu tarz fonksiyonlarla da ifade ediyor olacağız. Ama en temel hali akış diyagramları için for dönemüsü kullanmaktır.
+
+110
+00:15:36,375 --> 00:15:45,275
+For dönemüsünde bu çarpma işlemi kaç defa yapılacaksa o kadar döngüyü döndürdüğünüz zaman zaten otomatik olarak bu işi yapmış olacaksınız.
+
+111
+00:15:46,335 --> 00:15:53,495
+O yüzden bu yazım, Berkay'ın yazımı doğru. Ama burada bir şeyi daha farklı yapabilirdik.
+
+112
+00:15:53,495 --> 00:16:00,995
+Bu yazımı böyle yazdık doğru dedik ama bir şeyi farklı yapabilirdik. Evet Elif?
+
+113
+00:16:03,316 --> 00:16:08,796
+Hocam ben B sayısını bulurken ilk yüzlem modunu aldım ondan sonra ona böldüm.
+
+114
+00:16:08,796 --> 00:16:17,495
+Tamam oraya geleceğim orası da soracağım sorular arasında ama benim sormaya çalıştığım ifin içerisinde yazdığımız kısımla ilgili. Eren Şekkeli?
+
+115
+00:16:18,915 --> 00:16:22,596
+Hocam sayının 3 basamak dolu olmadığını öğreneceğim.
+
+116
+00:16:23,495 --> 00:16:24,816
+Duyamadım son kısmını
+
+117
+00:16:24,816 --> 00:16:28,415
+Sayının 3 basamaklı olup olmadığını öğrenebilirdik
+
+118
+00:16:28,415 --> 00:16:36,415
+Şimdi şöyle, bu da önemli, kullanıcı hatasından kaynaklı sorunları gidermek için kontrol yapabiliriz
+
+119
+00:16:36,415 --> 00:16:38,115
+Ama
+
+120
+00:16:38,803 --> 00:17:03,843
+Açık söylemek gerekirse, şu anda kullanıcının bilgileri doğru girdiğini kabul ediyoruz. Bir ödev yaparken bu kontrolleri yapmanızı isteyeceğim ama sınav sırasında ekstradan bir şey söylenmemişse, 3 basamaklı sayı giriniz dediğiniz zaman zaten kullanıcının 3 basamaklı sayı girdiğini varsayı olacağız ama önemlidir. Gerçek hayatta böyle bir varsayım yapamazsınız.
+
+121
+00:17:03,843 --> 00:17:24,543
+kullanıcının yapacağı hataları da hesap ederek program yazmalısınız, tasarım yapmalısınız. Bu nokta için de teşekkür ediyorum. Doğru bir tespit. Ama burada biz doğru gelindiğini varsayıyoruz. Başka tekrar soracağım ne olabilir diye. Yazınla ilgili yani gösterin. Emircan.
+
+122
+00:17:24,543 --> 00:17:37,223
+Şöyle hocam ben bu çarpıları A küp, işte bir küp, C küp ben işte şey gibi A, B, C gibi başka bir değere atadım. Bir isim verin. Onlara işledim.
+
+123
+00:17:37,223 --> 00:17:52,483
+Tamam. Okey. Şimdi ben de şöyle göstereyim size. Şurayı siliyorum. Şu kısmı da siliyorum. Bu yazım yanlış değil de demek ki yazım ama arkadaşınızın da söylediği gibi
+
+124
+00:17:56,180 --> 00:18:03,660
+artı B çarpı B artı C çarpı C çarpı C.
+
+125
+00:18:18,291 --> 00:18:35,691
+Ben ifin içerisinde mümkün olduğunca az işlem yapmalıyım. Yani bu şu demek, daha fazla iş yapılıyor anlamında değil, görsellik anlamında kafa karışıklığını ve yazımı kolaylaştırmak için sadece şunu yapmalıyım arkadaşlar.
+
+126
+00:18:36,431 --> 00:18:43,931
+Geri kalan işleri dışarıda halledip karşılaştırma işlerini içeride yapmalıyım. Genel olarak. Ama yanlış değildir biraz önceki yazım.
+
+127
+00:18:43,931 --> 00:18:52,251
+sadece daha derli toplu yapılan işler daha iyi gözüksün diye bu şekilde bir yazım tercih ediyoruz.
+
+128
+00:18:56,019 --> 00:19:06,019
+Şimdi, genel olarak bu kısmı toparladıktan sonra gelelim, biz algoritmik olarak doğru yaptık mı, yapmadık mı buna bakmaya.
+
+129
+00:19:06,019 --> 00:19:11,019
+Şimdi, buna bakmak için öncelikle analiz etmek gerekiyor.
+
+130
+00:19:13,019 --> 00:19:23,019
+Yani, gerçekten tasarladığımız algoritma doğru sonuç üretiyor mu, istenilen input için istenilen output üretiyor mu?
+
+131
+00:19:23,019 --> 00:19:25,019
+Analiz nasıl yapılır, bilen var mı?
+
+132
+00:19:25,019 --> 00:19:25,419
+var mı?
+
+133
+00:19:30,675 --> 00:19:32,896
+tahmin etmek isteyen Esma Nur?
+
+134
+00:19:32,896 --> 00:19:36,495
+Hocam ben komut sisteminde çalıştırdım.
+
+135
+00:19:39,016 --> 00:19:41,976
+Komut sisteminde çalıştırmak nedir? Esma Nur tamamlayamadı.
+
+136
+00:19:42,575 --> 00:19:49,495
+Hocam bir tane uygulama vardı, onun üzerine işledim FlowShot diye. Ondan sonra orada çalıştır butonu vardı.
+
+137
+00:19:50,276 --> 00:19:55,815
+Oraya basınca da denedim internetten bakıp bir tane sayı buldum ve doğru sonucu verdim.
+
+138
+00:19:55,815 --> 00:19:57,815
+Peki Süleyman'a söz vereyim.
+
+139
+00:19:57,815 --> 00:20:08,675
+tüm değişkenleri tek tek bir tablo üzerine yazarız. Daha sonra değişkenlerin değişen değerleri için tek tek analiz ederiz.
+
+140
+00:20:08,675 --> 00:20:18,076
+Evet, şimdi arkadaşlar Esma Ander'ın söylediği çözüm birazcık arka planda kodlanması anlamına geliyor işin.
+
+141
+00:20:20,375 --> 00:20:27,675
+Bu söylediği tool bunu gerçekleştirme yanlış tahmin etmiyorsa ama biz bunu kağıt üzerinde aslında şu anda analiz etmeyi öğreniyoruz.
+
+142
+00:20:27,815 --> 00:20:53,735
+daha sonra tabii ki programını yazıp test edeceğimiz zamanlar gelecek. Ama en hızlı analiz bu tür karmaşık olmayan problemler için kağıt üzerinde yapılacak analizdir. Kağıt üzerinden analiz yapabilmek için de tüm değişkenler yazılır. Sayı A, B, C, A, B, C. Başka bir sanırım değişkenimiz yok.
+
+143
+00:20:53,735 --> 00:21:21,375
+bunun her biri bir değişken. Mesela bir sayı ele alalım. 123. Şimdi 123 sayısını dışarıdan aldık. Sayı div 100 yaptık. Kaç çıkacak? 1 çıkacak. Sonra sayı eksi 100 çarpı a. 123 eksi 123 çıktı. Div 10 yaptık. Ne çıktı? 2 çıktı.
+
+144
+00:21:21,375 --> 00:21:39,815
+son olarak da sayı mod 10 dedim. 123 mod 10'dan 3 çıktı. Sonra birin kübü 1 yani kübü derken 1 3 kez çarpıldığında, B 3 kez çarpıldığında 8, C 3 kez çarpıldığında 27.
+
+145
+00:21:39,815 --> 00:21:51,995
+topladığımızda 36 değerini elde ettim. Sonra en son olarak geldiğinde ABC sayı eşit mi? 36, 123 eşit mi? Hayır değil.
+
+146
+00:21:51,995 --> 00:22:04,336
+O zaman hangi kola gittim? False koluna gittim. Mesaj olarak da Armstrong sayı değil. Bu mesajı ne yazdırabilirdiniz biraz daha güzel olurdu.
+
+147
+00:22:11,796 --> 00:22:12,296
+Atakan.
+
+148
+00:22:13,635 --> 00:22:15,796
+Armstrong sayı değil kısmıda mı hocam?
+
+149
+00:22:16,216 --> 00:22:16,535
+Evet.
+
+150
+00:22:17,535 --> 00:22:20,375
+Girdiğiniz sayı bir Armstrong sayısı değildir.
+
+151
+00:22:20,955 --> 00:22:30,976
+Bir, güzel. Girdiğiniz sayı bir Armstrong sayısı değildir demek daha iyi olurdu. Bir tık daha iyisi Umut Can Demir.
+
+152
+00:22:31,955 --> 00:22:37,515
+Hocam belki şey yapabilirdik, hani ABC yazardık, yanına tırnak içinde sayısı bir Armstrong sayısı değildir.
+
+153
+00:22:37,515 --> 00:22:47,035
+Evet yani ABC yazmayalım çünkü ABC girilen sayı değil. ABC hesaplanan sayı. Onun yerine ne yazalım?
+
+154
+00:22:48,195 --> 00:22:48,935
+Direkt sayı.
+
+155
+00:22:49,675 --> 00:22:54,535
+Sayı virgül Armstrong sayı değildir desek yeterli sanırım değil mi?
+
+156
+00:22:56,215 --> 00:22:56,555
+Aynen.
+
+157
+00:22:56,555 --> 00:23:16,895
+Tamam. Yani arkadaşlar buraya hani daha önce yazmıştık ya değişken yazabiliriz diye sayı virgül tırnak içerisinde armstrong sayı değildir tırnağı kapat yazarsak daha güzel bir ifadeyle kullanıcıya ekranı şunu yazdırmış olacaktık. 123 armstrong bir sayı değildir demiş olacaktık.
+
+158
+00:23:16,895 --> 00:23:43,995
+Şimdi başka bir sayı için test edelim. 153 aldık sayıyı dışarıdan. A divden dolayı 100 oldu. Pardon 1 oldu. Sonra 153-100 dedik 53 kaldı. Div 10 dedik. B5 oldu. Sayı mod 10 dedik. 153 mod 10. 3 çıktı.
+
+159
+00:23:43,995 --> 00:24:01,275
+1 kendisi de çarpıldığında 3 defa, 1, 5 kendisi de çarpıldığında 125, 126 etti, 3 kendisi de çarpıldığında 27 etti, 126, 27 daha kaç etti? 153
+
+160
+00:24:01,275 --> 00:24:22,915
+Bu sefer ABC değişkeninde 153 var. Sayı da 153 değerinde. ABC eşit mi sayıya? Evet eşit. O zaman bu sefer yine Armstrong sayı diyeceğiz ama daha güzeli sayı bir gün Armstrong sayıdır dersek o zaman daha güzel bir ifadeyle ifade etmiş olacağız.
+
+161
+00:24:28,051 --> 00:24:38,251
+Şimdi bu çözümün doğru olduğunu düşünüyoruz. Bir Armstrong sayı ve bir Armstrong sayı olmayan değer için analiz ettik.
+
+162
+00:24:38,812 --> 00:24:47,232
+Tabii farklı keyizler için de analiz edilebilir ama genelde aynı tip keyizler varsa çok fazla analiz yapmaya gerek yok.
+
+163
+00:24:47,331 --> 00:24:57,351
+Burada bir olan bir de olmayan durum için analizi yapmış olduk. Yani 123 yerine 124 yazdığımızda da işlemin yani keyizin değişme olasılığı yok.
+
+164
+00:24:57,351 --> 00:25:03,951
+ama göreceksiniz ileride mesela belki 5 tane belki 8 tane farklı keyiste analiz etmeniz gerekecek.
+
+165
+00:25:03,951 --> 00:25:08,871
+Algoritmanızın her keyiste için doğru çalıştığını göstermek için. Burada iki tane keyisten bahsedelim.
+
+166
+00:25:09,291 --> 00:25:18,751
+Şimdi peki bu çözümden daha kısa bir çözüm ya da daha az işlemli bir çözüm yapmak mümkün mü?
+
+167
+00:25:18,752 --> 00:25:27,612
+burada yaptığımız işlerden daha az işlem sayısıyla bu soruyu çözmek.
+
+168
+00:25:34,963 --> 00:25:36,963
+yapalım, arma.
+
+169
+00:25:49,811 --> 00:25:51,811
+mümkün, evet Esma Nur seni dinliyorum.
+
+170
+00:25:56,756 --> 00:25:58,756
+Hocam ben resmini de attım.
+
+171
+00:25:58,756 --> 00:26:00,756
+Eee...
+
+172
+00:26:00,756 --> 00:26:02,756
+Şimdi...
+
+173
+00:26:02,756 --> 00:26:06,756
+Açabilirseniz, orada ben baya uzattım çünkü.
+
+174
+00:26:06,756 --> 00:26:08,756
+Evet.
+
+175
+00:26:11,859 --> 00:26:13,859
+şunu soracağım
+
+176
+00:26:13,859 --> 00:26:15,859
+burada
+
+177
+00:26:15,859 --> 00:26:19,859
+bakıyorum şimdi paylaşacağım arkadaşlarımla
+
+178
+00:26:19,859 --> 00:26:22,859
+stop sharing diyelim
+
+179
+00:26:22,859 --> 00:26:25,859
+share screen
+
+180
+00:26:25,859 --> 00:26:27,460
+Evet
+
+181
+00:26:31,443 --> 00:26:35,443
+Şu an gördüğünüzü tahmin ediyorum arkadaşınızın çözümünü.
+
+182
+00:26:35,443 --> 00:26:50,443
+Şimdi bir kere bu noktadaki bazı kullanımlar ve akış bizim istemediğimiz türde bir şekil.
+
+183
+00:26:50,443 --> 00:26:59,443
+Ben bu yanlıştır demiyorum ama mesela önce aşağıya doğru akıyor algoritma sonra sağa geçip sonra yukarı doğru gidiyor.
+
+184
+00:26:59,443 --> 00:27:11,203
+Bunu ben herhangi bir ödevde ya da sınav sorusunda görmek istemiyorum şimdiden söyleyeyim ama Esma Nur'un bu çözümü kesinlikle yanlıştır diye söylemiyorum.
+
+185
+00:27:11,203 --> 00:27:21,704
+Bunu kendi kendinize yaparken hani yeri geldiğinde kullanabilirsiniz buna da itirazım yok ama genel alışkanlık itibariyle aşağıya doğru akması gerekiyor.
+
+186
+00:27:21,703 --> 00:27:29,903
+ya da biraz önce benim gösterdiğim gibi bir taraftan bir yazıp öbür taraftan o bira bağlayacaksınız.
+
+187
+00:27:30,523 --> 00:27:34,603
+Ama buradaki tool gereği Esma Nur en hızlı çözümü yapmış.
+
+188
+00:27:35,124 --> 00:27:37,423
+İkincisi burada if farklı gösteriliyor.
+
+189
+00:27:38,443 --> 00:27:40,783
+Alınan input kutucuğu farklı gösteriliyor.
+
+190
+00:27:41,403 --> 00:27:46,703
+Lütfen bunları bilin, farklı gösterimleri.
+
+191
+00:27:46,703 --> 00:27:48,003
+Buna hiçbir itirazım yok.
+
+192
+00:27:48,003 --> 00:28:00,164
+çünkü bu notasyonlar gerçek hayatta karşınıza çıkacak ama bunları bizim dersimiz boyunca ve bizim bölümdeki derslerimiz boyunca bu notasyonları kullanmayın
+
+193
+00:28:00,164 --> 00:28:10,603
+çünkü bizim size gösterdiğimiz notasyonları biz değerlendiriyor olacağız. Zaten çok farklı notasyonlar yok. Hani birkaç tane değişik notasyon var.
+
+194
+00:28:10,603 --> 00:28:15,843
+sizden ve canım bizim size gösterdiğimiz notasyonları derste kullanmanız.
+
+195
+00:28:16,163 --> 00:28:27,663
+Şimdi notasyon kısmını geçersek akış vesaire şekilsel kısmını gelelim burada daha az işlem yapıp yapmadığına arkadaşınızın ben size sorayım.
+
+196
+00:28:33,172 --> 00:28:34,191
+Evet, Selim
+
+197
+00:28:34,971 --> 00:28:38,031
+Yani bir tek daha fazla işlem var gibine geldi.
+
+198
+00:28:38,552 --> 00:28:39,311
+Peki
+
+199
+00:28:39,311 --> 00:28:40,331
+Öncekine göre
+
+200
+00:28:40,851 --> 00:28:41,611
+Sena
+
+201
+00:28:43,411 --> 00:28:50,071
+Birinci basama hani birleştirmiş, ora kısmı kısaltmış ama gerisi daha uzun sanki
+
+202
+00:28:50,571 --> 00:28:51,852
+Peki
+
+203
+00:28:52,631 --> 00:28:55,951
+Başka yorum yapmak isteyen Atakan
+
+204
+00:28:56,971 --> 00:28:58,512
+Hocam bizim işlem
+
+205
+00:28:58,512 --> 00:29:09,131
+şeyimizde kullandığımız hepsini o tek tek yazmış. Farklı kaleler için de o yüzden uzamış. Yani aslında pek fark yok onun dışında bence.
+
+206
+00:29:09,411 --> 00:29:27,631
+Tamam. Şimdi arkadaşlar bir kere önce Esma Nur'a çok teşekkür ediyorum. Niye? Bizim de çözümünü paylaştı ve üzerinde eleştiri yapmamıza müsaade etti. Bu çok önemli. Şu anda burada çok iyi bir çözüm de olsa, çok kötü bir çözüm de olsa,
+
+207
+00:29:27,631 --> 00:29:35,212
+kimin yaptığının hiçbir önemi yok. Hata yapmış olması hatta sizlerden gelen çözümlerde hata olması bizim için daha iyi.
+
+208
+00:29:35,512 --> 00:29:44,252
+Üzerine konuşabileceğimiz, yapmamanız gereken şeyleri vurgulayacağımız bir bakış açısı oluşturmaya çalışıyoruz.
+
+209
+00:29:44,252 --> 00:29:55,651
+O yüzden bu tür katkılarınız benim açımdan çok değerli. Zaten burada açıkçası yanlış bir çözüm yok.
+
+210
+00:29:55,651 --> 00:30:22,591
+ama hani biraz daha az bir işlem mi var, çok mu işlem var onu konuşuyoruz. Burada bir önce şuna vurgu yapayım. Kübü hesaplarken bu gösterimde küp gösterimi işte buradaki üzeri işaretiyle 3 ile gösteriliyor. Bu tool buna müsaade etmiş ama sizden ricam söylediğim gibi 4 işlemi kullanarak bu işleri yapmanız.
+
+211
+00:30:22,591 --> 00:30:46,772
+Onun ötesinde şimdi bakalım burada birileri hesaplarken biz de mod onu almıştık. Yüzleri hesaplarken biz de yüze bölmüştük. Ama onları hesaplarken birden fazla iş var gibi gözüküyor. Esma Nur'a söyleyeyim, sözü vereyim. Sen ne dersin Esma Nur? Sen de aynı fikirde misin?
+
+212
+00:30:46,771 --> 00:30:53,971
+Hücum ben burada biraz fazla uzattım. Tek satırda yazamadım çünkü iki değişken yazmama izin verdi.
+
+213
+00:30:54,771 --> 00:31:13,391
+Tamam ama bir tane halükarda mod 100 de kullansaydık bizim yazdığımız çözümdeki gibi modun çalışma prensibi zaten sayının tam halini kendisiyle çarpıp çıkartıp oradaki geri kalan kısmıyla ilgileniyor.
+
+214
+00:31:13,392 --> 00:31:31,591
+aslında yani çarpma ve çıkartma işlemin modun kendi içerisinde var o yüzden herhangi bir değişiklik olmayacaktır sen eğer bir tane daha az ifade ile yazabilseydin de aynı işi yapmış olacaktık yani sonuçta burada yapılan işte bizim yaptığımız işte birbirine çok çok benziyor.
+
+215
+00:31:31,591 --> 00:31:55,631
+ilk biriler basamağını elde etmek için modon alıyoruz. Yüzler basamağını elde etmek için divyüz yapıyoruz. Onlar basamağını elde etmek için de önce sayının modunu alıyoruz yüze göre, arkasından da onu ona bölüyoruz. O yüzden sonuçta bu işi en az işlemle bu şekilde gerçekleştiriyoruz.
+
+216
+00:31:55,631 --> 00:31:59,951
+Evet şimdi bu paylaşımı sonlandırayım
+
+217
+00:31:59,951 --> 00:32:05,491
+Biz kendi paylaşımıza dönelim
+
+218
+00:32:05,491 --> 00:32:12,271
+Şimdi buraya kadar sorusu olan yoksa yeni bir sahiplere geçiyorum
+
+219
+00:32:17,299 --> 00:32:20,280
+Hocam, benim işlem vardı ama şey
+
+220
+00:32:20,280 --> 00:32:21,299
+İsim?
+
+221
+00:32:23,299 --> 00:32:24,299
+İsim?
+
+222
+00:32:24,299 --> 00:32:25,299
+Erdi
+
+223
+00:32:25,299 --> 00:32:27,299
+Erdi, dinliyorum Erdi
+
+224
+00:32:27,299 --> 00:32:34,299
+Esmandır'ın kullandığı gibi bir program akış diyagramı çizebileceğimiz var mı bildiğiniz bize önerebileceğiniz?
+
+225
+00:32:34,299 --> 00:32:36,299
+Draw IA var
+
+226
+00:32:36,299 --> 00:32:40,299
+Draw IA, bizim şeye uygun değil mi? Simgelere, işaretlere?
+
+227
+00:32:40,299 --> 00:32:45,299
+Yok, hayır. Genelde bizim simgelere, işaretlere uygun bir program bulmanız zor.
+
+228
+00:32:45,299 --> 00:32:57,140
+şu anlamda draw ya da şekilsel olarak çizebiliyorsunuz. Herhangi bir sıkıntı yok. Ama benim söylemek istediğim şu yani sadece çizim amaçlı kullanabilirsiniz.
+
+229
+00:32:58,500 --> 00:33:13,779
+Onun ötesinde Emre bir tane kaynak paylaşmış. AppDiagrams.net diye bunu kullanabilirsiniz. Yani genel olarak bu şekilde diyebilirim.
+
+230
+00:33:15,299 --> 00:33:20,239
+Evet ben şimdi size bir yeni soru veriyorum.
+
+231
+00:33:24,403 --> 00:33:25,483
+üzerinde
+
+232
+00:33:25,483 --> 00:33:28,723
+bulan
+
+233
+00:33:28,723 --> 00:33:30,864
+bulan
+
+234
+00:33:32,435 --> 00:33:51,815
+hatta şöyle diyelim üzerinde bulunan demeyelim de biraz daha farklı yazayım. Başlangıç ve bitiş koordinatları verilen
+
+235
+00:33:54,675 --> 00:33:56,675
+eğrinin
+
+236
+00:34:01,811 --> 00:34:05,571
+tenki fəmini, ve sanki el.
+
+237
+00:34:09,588 --> 00:34:11,907
+algoritma, akış diyagramını çizimiz.
+
+238
+00:34:24,563 --> 00:34:27,683
+Evet, burada bir sorusu olan var mı?
+
+239
+00:34:38,068 --> 00:34:52,568
+Hocam, şey sormak istiyordum ben, bu mesela bazı programlarda oluyor da, şeyi mesela input alacağız da, inputtan önce hani bir output verip işte şöyle şunu yazınız diye haber veriyoruz ya.
+
+240
+00:34:52,568 --> 00:34:53,167
+Evet.
+
+241
+00:34:53,167 --> 00:35:01,668
+Bunun yerine bunu tırnak içinde inputun içine yazabiliyor muyuz? Az önceki arkadaşın hattında öyleydi de yani. Bizim yaptığımız sistemde öyle yapabiliyor muyuz?
+
+242
+00:35:01,668 --> 00:35:07,448
+Bunu şey anlayamadım. Şurada arkadaşın Esma Nur'un herhalde söylüyorsun.
+
+243
+00:35:08,707 --> 00:35:15,667
+Aynen. Direkt input alıyorken orada şey yazmış hocam. Input'un önüne tırnak içinde CD'de yazabiliyoruz ya o tarz.
+
+244
+00:35:17,187 --> 00:35:22,627
+İki kutucukta ayrı olacak. Input ve outputlar.
+
+245
+00:35:22,867 --> 00:35:23,547
+Tamamdır hocam.
+
+246
+00:35:23,608 --> 00:35:28,707
+Aynı kutucukta olmayacak. Ben bu soruyla ilgili başka bir soru sormanızı bekliyorum.
+
+247
+00:35:34,099 --> 00:35:35,099
+Evet Selim.
+
+248
+00:35:36,099 --> 00:35:40,599
+Bu koordinatların x, y'lerini dört seferde mi alacağız ayrı ayrı?
+
+249
+00:35:41,599 --> 00:35:43,099
+Başka nasıl alabiliriz?
+
+250
+00:35:45,599 --> 00:35:52,099
+Yani aslında virgülde alıp sonra bölebiliriz diye düşündüm de tabii şu an yapamayız sanırım.
+
+251
+00:35:52,099 --> 00:35:57,099
+Bir önemi yok ki. Dört tane input alacak. İster virgülde al, ister tek tek al.
+
+252
+00:35:57,099 --> 00:36:04,099
+Ama hani gösterim olarak soruyorsam, yani işte örnek veriyorum x1, y1, x2, y2,
+
+253
+00:36:04,099 --> 00:36:11,099
+şeklinde dördünün arasına virgül koyabilirsiniz. Bunda bir yanlışlık yok. Gösterim olarak soruyorsun. Ubeydullah?
+
+254
+00:36:12,980 --> 00:36:20,039
+Hocam doğrunun doğrusal olması mı gerekiyor? Çizgin. Yani ne olabilir başka?
+
+255
+00:36:23,239 --> 00:36:24,680
+Yani ne bileyim.
+
+256
+00:36:27,159 --> 00:36:27,919
+Evet.
+
+257
+00:36:29,659 --> 00:36:30,599
+Bu sorunla göre.
+
+258
+00:36:30,599 --> 00:36:35,219
+Polinom falan da olamaz yani değil mi?
+
+259
+00:36:35,219 --> 00:36:37,780
+Şimdi güzel soru zaten bunu bekliyordum.
+
+260
+00:36:38,619 --> 00:36:41,820
+Bu eğrinin ne olduğunu kabul ediyoruz.
+
+261
+00:36:42,180 --> 00:36:45,519
+Doğrusal bir yapıda olduğunu kabul ediyoruz.
+
+262
+00:36:46,239 --> 00:36:49,219
+Bu eğrinin lineal bir denkleme olduğunu kabul ediyoruz.
+
+263
+00:36:50,059 --> 00:36:54,659
+Eğer polinom gibi ikinci dereceden, üçüncü dereceden bir eğri olma olasılığı olsaydı
+
+264
+00:36:54,659 --> 00:36:58,479
+bu soruyu çözmek için farklı bir yöntem uygulayacaktık.
+
+265
+00:36:58,479 --> 00:37:09,679
+burada bu eğrinin hemen başına doğrusal ifadesini koyuyoruz.
+
+266
+00:37:10,579 --> 00:37:14,159
+Bu da bize hangi renklerimi karşımıza çıkartıyor?
+
+267
+00:37:14,879 --> 00:37:18,999
+Y eşittir AX artı B renklerimi karşımıza çıkartıyor.
+
+268
+00:37:19,820 --> 00:37:25,699
+Şimdi saat 10.38 size bir 8 dakikalık bir süre veriyorum.
+
+269
+00:37:25,699 --> 00:37:35,899
+ben buradayım. Bu sırada sorularını cevaplayabilirim ama herkes kendi önündeki kağıda bu sorunun akış diyagramını çizmeye çalışacak. Bu soruyu çözmeye çalışacak.
+
+270
+00:37:43,731 --> 00:37:48,291
+Soruda anlaşılmayan bir şey var mı? Öncelikle bir kez daha sorayım. Evet Mert?
+
+271
+00:37:49,672 --> 00:37:56,631
+Hocam şey, eğrinin koordinatlarını kullanıcıdan mı alacağız yoksa verilmiş mi hocam?
+
+272
+00:37:57,891 --> 00:38:04,351
+Evet şimdi bu mesela BBG 1, BBG dersinin biri değil artık, biri kaldıralım.
+
+273
+00:38:04,731 --> 00:38:09,631
+Dersinin efsane sorularından bir tanesidir. Her sene en az elli kez sorulur.
+
+274
+00:38:09,631 --> 00:38:13,771
+buna cevap vermek isteyen nedir? Kimdir?
+
+275
+00:38:20,115 --> 00:38:22,055
+Evet arkadaşlar. Süleyman Çetin.
+
+276
+00:38:23,475 --> 00:38:26,655
+Kullanıcı vermezse biz nereden neyi bileceğiz?
+
+277
+00:38:27,295 --> 00:38:32,555
+Evet, aynen öyle. Çok sempatik bir şekilde Süleyman benim cevabımı aynen verdi.
+
+278
+00:38:33,175 --> 00:38:35,875
+Kullanıcı vermezse biz nereden neyi nasıl bileceğiz?
+
+279
+00:38:36,815 --> 00:38:41,835
+İlk etapta sizin için bilgi sağlayan tek kaynak kullanıcı arkadaşlar.
+
+280
+00:38:41,835 --> 00:38:46,575
+O yüzden input varsa bunu kullanıcı verecektir.
+
+281
+00:38:46,575 --> 00:38:55,055
+çok birkaç istisnai durum dışında onun dışında ilerleyen zamanlarda kaynaklar ne olabilir?
+
+282
+00:38:56,735 --> 00:38:57,575
+Bilgi kaynakları.
+
+283
+00:39:01,364 --> 00:39:01,924
+Mert?
+
+284
+00:39:03,343 --> 00:39:04,463
+Dosyalar olabilir hocam.
+
+285
+00:39:04,543 --> 00:39:06,623
+Evet, mesela dosyalar olabilir. Ubeydullah?
+
+286
+00:39:08,263 --> 00:39:09,443
+Siteler olabilir hocam.
+
+287
+00:39:09,943 --> 00:39:10,143
+Neler?
+
+288
+00:39:10,843 --> 00:39:11,343
+Siteler.
+
+289
+00:39:12,364 --> 00:39:14,623
+Network üzerinden gelen bilgi diyelim.
+
+290
+00:39:14,883 --> 00:39:19,663
+Web sitesinden gelsin, herhangi bir API üzerinden gelsin.
+
+291
+00:39:19,943 --> 00:39:21,544
+Network üzerinden gelen bilgi.
+
+292
+00:39:21,723 --> 00:39:23,763
+Dosyadan gelebilir bilgisayar üzerinden.
+
+293
+00:39:24,103 --> 00:39:27,443
+Ya da herhangi bir network üzerinden size aktarılan bilgi olabilir.
+
+294
+00:39:27,443 --> 00:39:51,864
+Ama Süleyman'ın yazdığı gibi random da üretilebilir değerler. Bu da yanlış değil. Bu noktada tekrar söylüyorum. Eğer bir input varsa bunu kullanıcı mı girecek sorusunu umarım bir daha duymam. Herkesin bilgisinde olsun. Evet bir bilgi isteniyorsa bunu mutlaka kullanıcı temin edecek.
+
+295
+00:44:56,563 --> 00:44:59,123
+Evet arkadaşlar, yapabilen var mı?
+
+296
+00:45:04,947 --> 00:45:05,947
+Berkay?
+
+297
+00:45:07,447 --> 00:45:11,347
+Çok emin değilim hiçbir şey konuşatmıyorum çünkü şimdi bitti de. Söyleyebilirim size.
+
+298
+00:45:11,347 --> 00:45:17,947
+Tamam. Bakacağız birazdan. Başka tamamlayabilen Emre?
+
+299
+00:45:17,947 --> 00:45:20,947
+Ben de hocam daha kontrol etme şansım olmadı ama yaptım.
+
+300
+00:45:20,947 --> 00:45:32,347
+Tamam. Şimdi şöyle yapıyoruz arkadaşlar. Bir 10 dakika ara veriyoruz. Bu sırada arada hani ihtiyacınızı giderdikten sonra bir kontrol için analiz yapabilirsiniz.
+
+301
+00:45:32,347 --> 00:45:45,147
+analizden sonra doğru olduğunu düşünüyorsanız lütfen paylaşın üzerinden bir ilerleyelim. Ondan sonra da birlikte soruyu çözmeye çalışalım. 10 dakikalık bir ara birazdan görüşürüz.
+
+302
+00:58:51,764 --> 00:58:53,764
+Evet arkadaşlar, yeniden merhaba.
+
+303
+00:58:55,523 --> 00:58:57,523
+Kaldığımız yerden devam edelim.
+
+304
+00:58:57,523 --> 00:58:59,523
+Kimler yapabildiler?
+
+305
+00:59:05,972 --> 00:59:13,412
+Hormetsin. İlender. Evet, Uğur'a söz vereyim.
+
+306
+00:59:15,476 --> 00:59:19,075
+Sesim geliyor mu hocam? Evet, unutluyorum.
+
+307
+00:59:21,875 --> 00:59:26,276
+Akış diyagramını teker teker mi söyleyeyim yoksa genel olarak mı anlatayım?
+
+308
+00:59:26,276 --> 00:59:34,675
+Öncelikle biz ne yapmamız gerekiyor onu konuşalım. Yani kağıt üzerinde bu işi yapmak için hangi işlemlere ihtiyacımız var?
+
+309
+00:59:34,675 --> 00:59:41,675
+Bir iki noktadan denklem elde eden formüle ihtiyacımız var öncelikle.
+
+310
+00:59:41,675 --> 00:59:43,875
+Önce neyi hesaplamamız gerekiyor?
+
+311
+00:59:43,875 --> 00:59:45,035
+E'yi mi?
+
+312
+00:59:45,576 --> 00:59:47,175
+Tamam. Onun formülünü söyler misin bana?
+
+313
+00:59:47,755 --> 00:59:54,976
+Tabii ki. İki noktanın Y koordinatlarının farkı bölü X koordinatlarının farkı.
+
+314
+00:59:54,976 --> 01:00:06,196
+Tamam. Şimdi bir kere biz kağıt üzerinde bu işi yapıyor olsaydık bu şekilde yapacaktık ve A değerini elde edecektik.
+
+315
+01:00:06,495 --> 01:00:10,955
+A değerini elde ettikten sonra hangi adımdan geçmemiz gerekiyor?
+
+316
+01:00:10,955 --> 01:00:14,415
+Hangi neyden geçmemiz lazım hocam?
+
+317
+01:00:14,575 --> 01:00:15,295
+Hangi adımdan?
+
+318
+01:00:15,836 --> 01:00:20,855
+Daha sonra da denklemimizi yazabiliriz artık.
+
+319
+01:00:22,056 --> 01:00:23,556
+Nasıl yazacağız?
+
+320
+01:00:23,556 --> 01:00:30,675
+O da şöyle ki bir tane noktayı seçebiliriz ikisinden.
+
+321
+01:00:31,615 --> 01:00:34,556
+Bu x1 ile y1 olsun diyelim.
+
+322
+01:00:35,416 --> 01:00:37,156
+y-y1
+
+323
+01:00:37,156 --> 01:00:42,056
+Eşittir.
+
+324
+01:00:42,056 --> 01:00:43,255
+Eşittir.
+
+325
+01:00:44,656 --> 01:00:46,795
+M ya da A.
+
+326
+01:00:50,075 --> 01:00:53,215
+Çarpı.
+
+327
+01:00:55,696 --> 01:00:58,656
+Parantez içinde x-x1.
+
+328
+01:01:00,476 --> 01:01:03,115
+x-x1.
+
+329
+01:01:04,696 --> 01:01:05,615
+Peki.
+
+330
+01:01:09,523 --> 01:01:17,984
+Bundan sonra ne yapacağız? Bundan sonra y'yi tek başına bırakmak isteyebiliriz. O yüzden y'yi sağ tarafa atabiliriz.
+
+331
+01:01:17,984 --> 01:01:24,923
+Peki, şöyle yapsak daha güzel olmaz mı? Biz şu anda neyi arıyoruz? Aslında b'yi arıyoruz. Doğru değil mi?
+
+332
+01:01:24,923 --> 01:01:37,243
+Evet. Tamam. O zaman şöyle yazsam, b eşittir desem, y eksi ax desem olur mu?
+
+333
+01:01:37,243 --> 01:01:40,963
+sonra B'nin yerine de
+
+334
+01:01:40,963 --> 01:01:42,783
+ya B'nin yerine diyorum
+
+335
+01:01:42,783 --> 01:01:44,643
+Y'nin yerine de Y1'i koysam
+
+336
+01:01:44,643 --> 01:01:49,963
+X'in yerine de X1'i koysam
+
+337
+01:01:49,963 --> 01:01:51,564
+iş çözdür mü?
+
+338
+01:01:56,744 --> 01:01:58,583
+Bunu istiyorum değil mi? A'yı biliyorum
+
+339
+01:01:58,583 --> 01:02:00,704
+X1'i biliyorum, Y1'i biliyorum
+
+340
+01:02:00,704 --> 01:02:04,323
+inanılmıyorum değil mi?
+
+341
+01:02:05,663 --> 01:02:06,643
+katılıyorum şöyle
+
+342
+01:02:06,643 --> 01:02:08,323
+Duyamıyorum seni
+
+343
+01:02:08,323 --> 01:02:09,864
+Size katılıyorum hocam
+
+344
+01:02:09,864 --> 01:02:10,223
+Tamam
+
+345
+01:02:10,223 --> 01:02:13,583
+Şimdi o zaman şöyle yapalım
+
+346
+01:02:13,583 --> 01:02:16,464
+Daha sonraki adımda
+
+347
+01:02:16,464 --> 01:02:20,884
+Y1, AX1 diyelim
+
+348
+01:02:20,884 --> 01:02:23,443
+Böyle bir B'yi evlettim, varsayalım
+
+349
+01:02:23,443 --> 01:02:27,324
+Sonra zaten bu iki adımdan geçtikten sonra da
+
+350
+01:02:27,324 --> 01:02:29,384
+Rahatlıkla denklemimi
+
+351
+01:02:29,384 --> 01:02:33,223
+AX artı B'yi elde edebilirim
+
+352
+01:02:33,223 --> 01:02:35,663
+Çünkü A'yı da öğrenmiş oluyorum, B'yi de öğrenmiş oluyorum
+
+353
+01:02:35,663 --> 01:02:55,964
+Peki buradan şimdi biz start'a geçelim. Start'a geçtikten sonra uzun uzadıya yazmayacağım. Siz oraya not düşersiniz. Başlangıç.
+
+354
+01:02:59,572 --> 01:03:05,891
+ve bitiş koordinat.
+
+355
+01:03:08,532 --> 01:03:23,111
+x1, y1, x2, y2 değerlerini dışarıdan okuyorum.
+
+356
+01:03:24,628 --> 01:03:53,907
+Bu arada ben de otecısından şunu da tüyü kapatalım. Arkasında yapmam gereken şey ana değerini hesaplamak. Bunun içinde y2-y1 diyorum. Bölüm x2-x1 diyorum. Hemen arkasından V'yi bulmak istiyorum.
+
+357
+01:03:54,628 --> 01:04:03,367
+ve y bulmak için de y1-a çarpı x1 diyorum.
+
+358
+01:04:11,411 --> 01:04:14,211
+hemen önekesinden
+
+359
+01:04:16,532 --> 01:04:26,111
+Dünki
+
+360
+01:04:25,844 --> 01:04:33,844
+A diyorum, x diyorum. Hatta şöyle yazalım.
+
+361
+01:04:37,235 --> 01:04:42,935
+x artı diyorum, yükü, b diyorum.
+
+362
+01:04:45,735 --> 01:04:53,935
+Bunu direktten uçmaları stop deyip burayı bitiriyorum.
+
+363
+01:04:54,836 --> 01:04:58,336
+Evet şimdi bu noktada yorum ol ama
+
+364
+01:05:01,635 --> 01:05:02,535
+Evet Elif.
+
+365
+01:05:02,535 --> 01:05:17,015
+Hocam ben x1 ve x2'nin eşit olması durumu için if kutucuğuna koyup ona göre true fos'tan devam ettirmiştim de yani eğer true olursa x eşittir x1 dedim x tek tırnak içinde olarak
+
+366
+01:05:17,015 --> 01:05:21,115
+Yani bunu yapmanın sebebi nedir?
+
+367
+01:05:22,195 --> 01:05:25,995
+O zaman eğim tanımsız olacağı için denklemi yazamaz diye
+
+368
+01:05:25,995 --> 01:05:31,255
+Şimdi güzel bir nokta arkadaşınızın söylediği
+
+369
+01:05:31,256 --> 01:05:34,835
+Eğer şöyle bir denklemimiz olsaydı
+
+370
+01:05:44,628 --> 01:05:50,628
+Yani daha doğrusu böyle bir denklemde böyle bir doğru parçamız olsaydı ya da eğrimiz olsaydı diyelim.
+
+371
+01:05:50,628 --> 01:05:55,628
+O zaman ne olacaktı? x2 ile x1 birbirine eşit olacaktı.
+
+372
+01:05:55,628 --> 01:06:02,628
+Ve x2 ile x1'in beşite olması nasıl bir sorun üretecekti bize?
+
+373
+01:06:05,619 --> 01:06:09,199
+Bilgisayarda sıklıkla kullanılan bir ifadesi vardır. Pazar.
+
+374
+01:06:09,199 --> 01:06:11,759
+Hocam eğim tanımsız olur.
+
+375
+01:06:11,759 --> 01:06:14,319
+Kuyamıyorum, çok kısık geliyorsa.
+
+376
+01:06:14,319 --> 01:06:16,119
+Eğim tanımsız olur hocam.
+
+377
+01:06:16,119 --> 01:06:25,839
+Yani eğimin tanımsız olması demek bizim bölme işleminde yani nerede?
+
+378
+01:06:25,839 --> 01:06:34,040
+Şurada gördüğünüz bölme işleminde x2x1 eşit olursa sıfır değeri olacak ve değeri sıfıra bölmeye çalışacağız.
+
+379
+01:06:34,040 --> 01:06:42,099
+bu da division by zero hatası verecek. Bilgisayarda bu bir hata oluşturacağı için bunun kontrol edilmesi gerekiyor.
+
+380
+01:06:43,599 --> 01:06:54,619
+Biz tabii burada şu tür bir denklemi dikkate aldık. Şöyle, şöyle, böyle. Bu tür bir tüm denklemler için.
+
+381
+01:06:58,068 --> 01:07:24,068
+ax artı b'yi elde edersiniz ama şu kırmızı gibi eğimin sonsuza gittiği denklemin size verilmesi durumunda, o denkleme ait ne diyelim iki koordinatın verilmesi durumunda, bu şu andaki algoritmanız bunu çözmeyecektir. O yüzden arkadaşınız der ki, ben buraya bir if koydum.
+
+382
+01:07:24,068 --> 01:07:28,367
+Bu konuda ne düşünürsünüz?
+
+383
+01:07:37,619 --> 01:07:51,619
+Peki, şimdi bu kısmı yeniden baştan ele alacak olursak o zaman şöyle yapalım. Şurada start diyelim.
+
+384
+01:07:54,804 --> 01:08:11,804
+Şu kısım belli, bunu tekrar yazmayacağım. Bu kısım belli, bunu da tekrar yazmayacağım. Yazdık, ilmi aynısı. Şimdi buraya geldik, ilk değerleri aldık. Bana söyler misin lütfen if nasıl yapacağız şimdi?
+
+385
+01:08:11,804 --> 01:08:17,804
+Yine proses kutucuğunu yazdım. O da aynı şekildeydi.
+
+386
+01:08:17,804 --> 01:08:20,804
+Peki if önce mi proses kutucuğundan sonra mı?
+
+387
+01:08:20,804 --> 01:08:25,804
+Ama önce olması mantıklı şuan fark ettim
+
+388
+01:08:25,804 --> 01:08:30,804
+Eğer if proses kutucunda sonra olursa o zaman aslında pek de önemi yok
+
+389
+01:08:30,804 --> 01:08:31,804
+Evet anladım
+
+390
+01:08:31,804 --> 01:08:37,804
+O zaman if önce olacak, if dedi bana kontrol söylememesi
+
+391
+01:08:37,804 --> 01:08:40,804
+Eksiki eşittir, eksiktir
+
+392
+01:08:46,452 --> 01:09:01,811
+x2, x1 eşitse, true koluna gidiyorum. Ne yapacağım? x'i tek tırnak içinde yazdım, eşittir x1. x eşittir x1 dedim, peki. Oz kolu?
+
+393
+01:09:01,811 --> 01:09:08,691
+Bir de hocam x'i tek tırnak içine aldım, true kolunda. Neden öyle bir şey yapıyorum?
+
+394
+01:09:08,691 --> 01:09:16,452
+yani orada direkt X1'i DR olarak yazacak mesela ama X için öyle bir şey olmadığı için yanlış olmaz mı?
+
+395
+01:09:16,452 --> 01:09:21,452
+Yok. Şimdi ben burada değişkenleri proses kutucunun içinde sadece değişken kullanıyorum.
+
+396
+01:09:22,032 --> 01:09:27,051
+Tek tırnaklı mesaj ekrana yazdırıyorum. Bunu da zaten output kutucunda yapıyorum.
+
+397
+01:09:27,231 --> 01:09:30,532
+O yüzden bunu bir değişken olarak kullanıyorsam böyle yapacağım.
+
+398
+01:09:31,371 --> 01:09:37,251
+Tamam. False kutucunda da yine aynısını yazdım. O denklem kısmına yazdınız.
+
+399
+01:09:37,251 --> 01:09:38,931
+output kutucuğunda.
+
+400
+01:09:40,011 --> 01:09:40,931
+Ne yazmam gerekiyor?
+
+401
+01:09:41,652 --> 01:09:45,231
+Y eşittir, yeme A demiştiniz.
+
+402
+01:09:45,711 --> 01:09:48,731
+A yıldız, x eksi, x bir parantez içinde bu.
+
+403
+01:09:49,172 --> 01:09:50,812
+Şu an bunu böyle yapamayız.
+
+404
+01:09:51,632 --> 01:09:58,291
+Aslında burada başlangıç güzeldi ama bu söylediğin şekilde ilerlemek bir hata olur.
+
+405
+01:09:58,291 --> 01:10:02,672
+Bunu final şekilde soralım bakalım başka kim tamamlamak ister.
+
+406
+01:10:03,032 --> 01:10:04,591
+x eksi, x eksi ne yapacağız?
+
+407
+01:10:07,251 --> 01:10:09,251
+başka
+
+408
+01:10:17,844 --> 01:10:22,784
+Atakan ve Selim'den başka el kaldıracak kim var? Evrene söz veriyorum.
+
+409
+01:10:27,956 --> 01:10:28,715
+Değil mi?
+
+410
+01:10:33,524 --> 01:10:34,803
+Seni duyamıyorum.
+
+411
+01:10:37,103 --> 01:10:37,623
+Ya.
+
+412
+01:10:38,643 --> 01:10:39,923
+Şu an geliyor sesin.
+
+413
+01:10:40,183 --> 01:10:48,883
+Hocam, direkt bir tane output versek, desek ki, verdiğiniz doğrunun eğimi sonsuz oluyor diye, tanımsız oluyor diye.
+
+414
+01:10:49,903 --> 01:10:51,964
+Peki, denkleme ne diyeceğiz?
+
+415
+01:10:53,743 --> 01:10:56,043
+İşte denkleme varmadan bitirmiş olacağız.
+
+416
+01:10:56,563 --> 01:10:58,103
+Çünkü tanımsıza gidiyor olacak.
+
+417
+01:10:58,364 --> 01:10:59,123
+Tamam.
+
+418
+01:10:59,123 --> 01:10:59,643
+Tamam.
+
+419
+01:10:59,643 --> 01:11:01,423
+Tamam.
+
+420
+01:11:03,572 --> 01:11:14,572
+Bu kadar. Evet hocam, yani eğer şeyse doğruysa, direkt stopa götürmemiz lazım bir tane output'u verip, diyeceğiz ki işte dik oluyor sizin eiminiz. Peki.
+
+421
+01:11:14,572 --> 01:11:21,572
+Forksada formal yaptığımız işlemi yapacağız. Anamukutaya söz vereyim.
+
+422
+01:11:21,572 --> 01:11:28,572
+Hocam, direkt eğim x eşittir x2 olmuyor mu? Hani şey denklemi, eğimi sıfır olan.
+
+423
+01:11:28,572 --> 01:11:31,031
+İşte onu ben size soruyorum.
+
+424
+01:11:31,031 --> 01:11:32,672
+X eşittir X2 oluyor.
+
+425
+01:11:32,952 --> 01:11:35,792
+Elif'in de söylemeye çalıştığı buydu.
+
+426
+01:11:36,691 --> 01:11:37,452
+Hemen yazalım.
+
+427
+01:11:38,031 --> 01:11:38,811
+Şunu diyorsun değil mi?
+
+428
+01:11:45,363 --> 01:11:53,863
+Aynen. Tamam. Elif'in de muhtemelen anlatmaya çalıştığı buydu. Peki, false code'una gidersek ne olacak?
+
+429
+01:11:56,204 --> 01:12:04,363
+Yine Kutay, sana sözleyin. Yine mi ben? Evet. Evet. Evet tamam. False code'una gidersek şey,
+
+430
+01:12:04,363 --> 01:12:14,363
+normal direkt işlemlerimizi yapacağız, eğimi bulacağız. Tamam. Yani yandakileri taşıyacağım. Aynen. Tamam. Bir yazalım bakalım.
+
+431
+01:13:08,340 --> 01:13:14,139
+Şimdi oldu mu arkadaşlar ya da hala hatalı bir durum var mı? Selim?
+
+432
+01:13:15,139 --> 01:13:22,139
+Hocam biz niye x-heçtir x-heçtir yazdığımızı tamamlamadım. Direkt e'ye girdiğiniz değerler için eğim hesaplanamaz gibi bir şey yazmayacak mıyız?
+
+433
+01:13:23,539 --> 01:13:25,539
+Biz denklemi istiyoruz ya.
+
+434
+01:13:27,539 --> 01:13:33,340
+Evet ama x-heçtir x-heçtir yazmamızdaki amacı anlamadım ben tam olarak.
+
+435
+01:13:34,139 --> 01:13:36,539
+Kutay buna cevap verebilir misin?
+
+436
+01:13:36,539 --> 01:13:46,899
+Tabii şey x doğrusu x eşittir 5 doğrusu mesela x 5 değeri için bütün y değerlerini alıyor. Hani öyle.
+
+437
+01:13:47,619 --> 01:13:49,619
+O an onu tamam teşekkür ederim.
+
+438
+01:13:49,619 --> 01:14:05,279
+Rica ederim. Şimdi arkadaşlar şu an yazmış olduğum çözüm x'in daha doğrusu denklemin eğiminin tanımsız olduğu sonsuza gittiği case için de doğru sonucu veriyor mu?
+
+439
+01:14:06,539 --> 01:14:13,539
+Burada herhangi bir yanlışlık var mı? İtiraz etmek isteyen yok bu doğru ziyaretliye çözümümüze.
+
+440
+01:14:16,756 --> 01:14:23,256
+Peki, o zaman şunu sorayım. Uğur bir şey söylemek istiyor.
+
+441
+01:14:25,955 --> 01:14:31,756
+Hocam, biraz hızlı düşündüm. Lakin y koordinatlarına da eşit olabilir aynı anda belki.
+
+442
+01:14:32,955 --> 01:14:39,756
+Evet, şimdi güzel bir nokta. y koordinatları da aynı olabilir. Şu an yeşil bir doğru çizdim.
+
+443
+01:14:39,756 --> 01:14:52,436
+Y'nin aynı olduğu. Bu durumu yeşil çizdiğim doğru parçasının bu çözüm çözebiliyor mu? Sağlıyor mu? Muhammed'e sözleyin.
+
+444
+01:14:54,116 --> 01:15:01,915
+Hocam sağlıyor çünkü Y2-Y1 zaten A'yı 0 yapıyor. A'nın 0 olmasında da bir sıkınca yok.
+
+445
+01:15:02,476 --> 01:15:09,296
+Tamam. Yani biz oradan ne elde etmiş olacağız? 0x artı değer neyse onu elde etmiş olacağız değil mi?
+
+446
+01:15:09,756 --> 01:15:11,256
+Evet.
+
+447
+01:15:11,695 --> 01:15:13,436
+Evet. Teşekkür ederim Muhammed.
+
+448
+01:15:13,776 --> 01:15:29,635
+Demek ki biz eğrinin x eksenine paralel olması durumu, eğrinin y eksenine paralel olması durumu ve eğrinin bu eksenleri kesmesi durumları için hepsi için çalışan bir çözüm üretmiş olduk.
+
+449
+01:15:30,355 --> 01:15:32,075
+Yani genel bir çözüm üretmiş olduk.
+
+450
+01:15:33,495 --> 01:15:38,275
+Bu çözümü üretirken de bir tane kontrol kullanmak zorunda kaldık.
+
+451
+01:15:38,275 --> 01:15:46,616
+çünkü x2 ve x1 birbirine eşit olması durumunda division by zero hatası alacağız eğer kontrol etmezsek.
+
+452
+01:15:47,235 --> 01:15:48,635
+Evet, bir arkay bir söz istedi.
+
+453
+01:15:49,756 --> 01:15:52,695
+Başka bir çözüm var da onu da sorabilir miyim size doğru mu diye?
+
+454
+01:15:53,455 --> 01:15:54,475
+Tabii sorabilirsin.
+
+455
+01:15:55,015 --> 01:15:56,295
+Atayım mı işte resmine?
+
+456
+01:15:56,295 --> 01:15:58,995
+Lütfen gönderirsen açalım bakalım.
+
+457
+01:16:02,335 --> 01:16:07,935
+Bu arada bir algoritma akışında mutlaka bir stop olması gerekiyor.
+
+458
+01:16:08,275 --> 01:16:18,275
+bir algoritmanın içerisinde birden fazla stop lütfen yazmayın. Doğru olmayacaktır. Mutlaka kolların en sonunda birleşmesi ve en sonunda algoritmanın sonlanması gerekiyor.
+
+459
+01:16:18,275 --> 01:16:24,275
+Hocam o sağ tarafa hiç bakmayın. Onunla şey daha yazdıklarımıza ekliyordun mu?
+
+460
+01:16:24,275 --> 01:16:28,275
+Önemli değil. Şimdi paylaşım yapacağım.
+
+461
+01:16:40,787 --> 01:16:43,667
+görebiliyorsunuz sanırım arkadaşınızın çözümünü.
+
+462
+01:16:47,252 --> 01:16:56,651
+Budur değil mi? Evet. Sağ tarafı daha yapıyordum yani. Tamam. Şimdi, buradaki senin yaptığın çözümdeki farklılık nedir?
+
+463
+01:16:56,651 --> 01:17:04,551
+Operations kısmında falan farklı yaptım denklemde. Tamam. Şöyle bakalım. x2x1 kontrolü yapıyorsun.
+
+464
+01:17:04,551 --> 01:17:10,852
+False konuna gittiğimiz zaman y2y1, x2x1 farkını bölüyorsun birbirine.
+
+465
+01:17:10,852 --> 01:17:18,211
+M, Y, Y, Y, Y diyorsun. X, X, X, X, Y diyorsun. Buradaki X değeri nedir?
+
+466
+01:17:19,812 --> 01:17:25,871
+İşi daha bulmayacak onu. Y eşittir X. Yani AX artı B tarzı bir değer çıkartmak istiyorum şimdi Y eşit olarak.
+
+467
+01:17:27,092 --> 01:17:29,351
+Burada B, Y karşılık gelen şey nedir?
+
+468
+01:17:30,531 --> 01:17:37,792
+Hani ayrı ayrı AX artı B buldurmak yerine dedik Y eşittir. Bir şey X artı bir şey şeklinde çıkarttık.
+
+469
+01:17:37,791 --> 01:17:59,091
+Şimdi arkadaşlar, arkadaşınızın bu paylaşımı da iyi oldu. Bunu da ben eğer yanlış yorumlamıyorsam, yanlış da anlamıyorsam çözümü. Burada bir M çarpı x eksi x1 artı y1 işlemi var. Bilgisayar bunu yapacaktır. M'i biliyor ama x'i bilmiyor.
+
+470
+01:18:03,507 --> 01:18:09,727
+Anlatabiliyor muyum? İkisi bilmediği için de bu işlemleri yapması mümkün değil.
+
+471
+01:18:09,727 --> 01:18:12,728
+Eee bilinmeyen denklem çıkartmıyor.
+
+472
+01:18:12,728 --> 01:18:23,608
+Hayır. Böyle bir yeteneği yok. Bilgisayara sadece çarpma, bölme, toplama, mod alma gibi işler yaptırabilirsiniz. Kontrol yaptırabilirsiniz. Bir de bu işleri tekrar tekrar yaptırabilirsiniz.
+
+473
+01:18:23,608 --> 01:18:27,707
+Başka hani ona vereyim, o benim adım hesaplasın diye bir şey mümkün değil.
+
+474
+01:18:27,707 --> 01:18:29,707
+Selim?
+
+475
+01:18:29,707 --> 01:18:38,347
+Hocam böyle siteler var matematiksel işlemlerimize böyle ne yazarsak yazalım direkt hesaplayabiliyor. Bunlar nasıl bir mantıklı çalışıyor peki?
+
+476
+01:18:38,347 --> 01:18:56,007
+Aynı mantıklı. Arka planda biri bunun kodunu yazıyor. Nasıl biz burada algoritmasını tasarladık bunun kodunu yazsak çalışacak şu anda. Biri bunun kodunu yazıyor size bu verdiğiniz ekrandaki ifadeyi bir fonksiyon aracılığıyla çözüyor.
+
+477
+01:18:57,627 --> 01:18:58,368
+Anladım hocam.
+
+478
+01:18:58,368 --> 01:19:12,168
+Yani önemli olan birinin bu işi yapan fonksiyonu daha önceden yazdıysa 4 işlem kullanarak o zaman bunu o fonksiyon çözebilir. Yeter ki o işi yapan fonksiyon program metot olsun.
+
+479
+01:19:14,808 --> 01:19:16,168
+Tamam mıyız arkadaşlar?
+
+480
+01:19:16,408 --> 01:19:16,987
+Tamam hocam.
+
+481
+01:19:17,768 --> 01:19:23,448
+Tamam, güzel. Bunun için de teşekkür ediyorum. Arkadaşınıza paylaştığı için öyle için çok iyi oldu.
+
+482
+01:19:23,447 --> 01:19:30,367
+bazen bu anlaşılmayabiliyor yani bilgisayarın bunu çözümleyebileceği düşünebiliyor.
+
+483
+01:19:30,867 --> 01:19:33,087
+O yüzden herkes adına bence güzel bir örnek oldu.
+
+484
+01:19:34,287 --> 01:19:36,347
+Bakalım ikisini de tahsil vermez mi?
+
+485
+01:19:36,707 --> 01:19:41,847
+Evet Erdin'in söylediği gibi bilgisayar ikisinin ne olduğunu bilmediği için hata verecektir.
+
+486
+01:19:42,587 --> 01:19:45,987
+Ama bunun bir fonksiyonu yazma şansınız var.
+
+487
+01:19:47,307 --> 01:19:48,787
+Başka soru soru var mı?
+
+488
+01:19:52,659 --> 01:20:07,419
+Peki. Sorabilir miyim hocam? Tabii sorabiliriz. Ben şey y'lerde eşit olsaydı şey için kastetmiştim. Yani sadece bir nokta ifade etmiş olacağız ama hem x'lerin hem de y'lerin eşit olduğu senaryoda sadece bir nokta elde etmiş oluyoruz ya.
+
+489
+01:20:09,539 --> 01:20:16,340
+Bir önceki akış diyagramında True'u kolunu tekrar ikiye ayırmak zorunda kalabiliriz diye düşünmüştüm.
+
+490
+01:20:17,840 --> 01:20:20,719
+Mavi ile yazılı olan kısımdan bahsediyoruz.
+
+491
+01:20:25,076 --> 01:20:27,635
+Şu an paylaştığınız değil de sizin ekranındakini.
+
+492
+01:20:27,635 --> 01:20:35,315
+Pardon, şimdi önce şunu bir kere doğru soruyorsun. Ekrandakini kaldırayım, kendi ekranını tekrarlayayım.
+
+493
+01:20:37,076 --> 01:20:58,076
+Şu anda maviyle yazılı olan kısımdan basılacak. Evet. Evet. Tamam. Şimdi burada y'lerin eşit olması demek zaten a'nın 0 çıkması demek. Doğru mu? Hıhı. Tamam. a'nın 0 çıktığında b'yi hesapladık diyelim ki 5 çıktı. Sonuç ekranı 0x artı 5 olarak yazılacak.
+
+494
+01:21:02,068 --> 01:21:07,227
+Bu da denklemin doğru olduğunu size söylüyor olacak. y eşittir 5 olacak.
+
+495
+01:21:09,568 --> 01:21:10,707
+Haklısınız hocam.
+
+496
+01:21:10,707 --> 01:21:11,707
+Doğru değil mi?
+
+497
+01:21:11,707 --> 01:21:12,707
+Evet.
+
+498
+01:21:12,707 --> 01:21:19,867
+Tamam. Sadece görsel olarak diyebilirsin ki hani y eşittir 5 yazmıyoruz, hani onu kontrol etmiyoruz, 0x yazıyoruz.
+
+499
+01:21:19,867 --> 01:21:27,707
+Evet, hani onu kontrol edilebilir görsel olarak daha düzgün gözüksün diyor ama biz burada sadece işi yapmanın peşindeyiz.
+
+500
+01:21:27,707 --> 01:21:31,927
+kullanıcı ekrana gösterim şekliyle çok fazla ilgilenmiyoruz.
+
+501
+01:21:33,447 --> 01:21:35,767
+Önemli olan doğru sonuç ekrana yansıtılsın.
+
+502
+01:21:40,068 --> 01:21:41,467
+Bazel'in bir sorusu var.
+
+503
+01:21:42,588 --> 01:21:44,127
+Chat ortamından sormuş.
+
+504
+01:21:44,227 --> 01:21:46,127
+Bir aygortmada iki input yazabilir miyiz?
+
+505
+01:21:46,187 --> 01:21:47,767
+Ne demek ki bazel? Söz vereyim sana.
+
+506
+01:21:53,171 --> 01:22:02,751
+Ben az önce denklemi yazdım hocam. Denklemi sağlamak için denkleme bir input daha, yani bir sayı daha yazabilir miyim?
+
+507
+01:22:04,911 --> 01:22:10,092
+Daha açık söylemem lazım, anlayamıyorum sormak istediği soru. Yani denklemi sağlamak için bir input daha yazabilir miyim?
+
+508
+01:22:10,092 --> 01:22:11,631
+Aynen hocam. Evet hocam.
+
+509
+01:22:12,611 --> 01:22:13,971
+Ne demek işte, ben onu anlamıyorum.
+
+510
+01:22:13,971 --> 01:22:21,371
+Yani hocam, o denkleme, işte bir nokta verdik, o noktayı yazabilir miyiz denkleme? Algoritmada.
+
+511
+01:22:21,371 --> 01:22:44,831
+Burada biz sadece A ve B'yi bulmanın peşindeyiz arkadaşlar. Sonra da bulduğumuz A ve B'yi formatlı bir şekilde ekrana yazdırıyoruz. Onun dışında bulduğumuz değer, ben yanlış anlamıyorsam tabii bazeli, herhangi bir şekilde sağlamayı yapmak için diğer X1, Y1'i koymamızı gerektirecek bir durum yok ya da X2, Y2'yi.
+
+512
+01:22:46,871 --> 01:22:48,791
+Tamamdır hocam. Teşekkürler.
+
+513
+01:22:48,791 --> 01:22:57,091
+Bizim için önemli olan tek şey A ve B'yi bulmak. Onun dışında sağlıyor, sağlamıyor, kontrol etmek için bir ihtiyaç duymuyorum.
+
+514
+01:22:57,091 --> 01:23:11,511
+Çünkü bu yapılacak iş evrenseldir. Matematikte bunun formülü budur. Bilgisayar bunu doğru mu yaptı, yanlış mı hesaplı diye bir kaygıya düşmenize gerek yok.
+
+515
+01:23:11,511 --> 01:23:19,191
+İnsana söyleseydiniz, evet sağlamasını yaptırmak için böyle bir düşünceniz olabilirdi. Ama bilgisayar bu konularda hata yapmaz.
+
+516
+01:23:23,412 --> 01:23:28,531
+sıfır sıfır olursa ne olur diye sordu arkadaş diyor Ömer. Bazen doğru mu bu?
+
+517
+01:23:30,332 --> 01:23:32,632
+Yok hocam bir önceki arkadaşı diyorum ben.
+
+518
+01:23:33,651 --> 01:23:35,191
+Bir önceki arkadaş?
+
+519
+01:23:35,951 --> 01:23:42,871
+Ben onu kastetmiştim hocam evet sıfır bölü sıfırı ama yani çıkıntılık oldu biraz çünkü sadece bir noktaya ifade etmiş oluyorum.
+
+520
+01:23:43,371 --> 01:23:46,971
+Sıfır bölü sıfırı denklem ne olacak arkadaşlar?
+
+521
+01:23:51,155 --> 01:23:53,315
+Söyleyebilir miyim? Umut Can Demir.
+
+522
+01:23:54,315 --> 01:23:58,915
+Hocam, burada şey olmuyor mu mesela, kullanıcıdan biz başlangıçça bitiş noktası istediğimiz halde
+
+523
+01:23:58,915 --> 01:24:02,515
+sıfır bölü sıfır olması için iki tane aynı koordinatları yazması gerekiyor.
+
+524
+01:24:02,515 --> 01:24:09,555
+Şimdi, çok güzel. Ben bunları özellikle tek tek soruyorum ki, herkes hani olayın farkında olsun diye.
+
+525
+01:24:09,555 --> 01:24:16,515
+İki tane aynı koordinatı almış olacaksınız. Bu da tek bir noktaya denk gelecek. O zaman bir eğeriden bahsetmeyeceğiz.
+
+526
+01:24:16,515 --> 01:24:41,915
+Şimdi bu konuşmuş olmamız şöyle iyi. Tabii ki yanlış bilgi verebilir kullanıcı. Bunu da kontrol etmemiz gerekebilir. Bunun da sonucunu yazdırmamız gerekebilir. Ama biz burada ne konuşmuştuk? Kullanıcıya artık başlangıçın bitiş konulatları verilen doğrusal eğri dediğimize göre kullanıcının bilgiler şu anda doğru kabul edilecek. Berke?
+
+527
+01:24:41,915 --> 01:24:53,155
+Hocam bir şey sormak istiyorum. Şu an yaptığımız outputta x artı ve b'yi output olarak veriyoruz ya.
+
+528
+01:24:53,775 --> 01:24:53,995
+Evet.
+
+529
+01:24:54,355 --> 01:24:58,995
+Burada b negatif olursa x artı eksi olarak gözükecek. Bu bir hata olur mu bizim için?
+
+530
+01:24:58,995 --> 01:25:07,615
+Güzel bir soru. Şık durmaz ama değere doğru gözükecek içinde herhangi bir hata oluşturmaz.
+
+531
+01:25:07,615 --> 01:25:15,556
+ama kullanıcıya gösterim şekli çok hoş olmayacaktır. Teşekkür ediyorum bu katkın içinde.
+
+532
+01:25:16,475 --> 01:25:24,155
+Ama A ve B'nin ne olduğunu bildiğimiz için eksi değer olacağını düşündüğümde zaten kullanıcı ihtiyacı olan bilgiyi bilgisayardan almış olacak.
+
+533
+01:25:24,895 --> 01:25:29,315
+Evet sanırım bu soruyla ilgili yeterince tatlıçlık bence güzel de oldu.
+
+534
+01:25:29,836 --> 01:25:33,275
+Değişik fikirler geldi. Hepinize tek tek teşekkür ederim katkı sağlayanlara.
+
+535
+01:25:33,275 --> 01:25:36,395
+Şimdi bir sonraki sorunuza geçeceğim.
+
+536
+01:26:02,452 --> 01:26:04,452
+personally ki sonos.
+
+537
+01:27:00,435 --> 01:27:11,055
+Evet arkadaşlar, kenar uzunlukları verilen bir üçgenin türünü ekrana yazdırır algoritma, akış diyagramı çizimiz. Output olarak ne yazdırabilir program?
+
+538
+01:27:15,956 --> 01:27:16,956
+Çelema
+
+539
+01:27:21,619 --> 01:27:26,600
+Dik üçgen, çeşit kenar üçgen veya ikiz kenar üçgen.
+
+540
+01:27:28,600 --> 01:27:38,859
+Çeşit kenar, ikiz kenar, ikiz kenar, bir de eş kenar. Aslında dik üçgeni katmaya da biliriz.
+
+541
+01:27:39,439 --> 01:27:45,199
+Şimdi, normalde bunların hepsi bir üçgen türüne giriyor arkadaşlar. Teşekkür ediyorum Seyman.
+
+542
+01:27:45,199 --> 01:27:53,679
+Esma Nur'un söylediği gibi girdiğimiz değerlerle üçgen oluşturulamaz da bir çıktıdır.
+
+543
+01:27:55,200 --> 01:28:00,439
+Ama hani üçgenin uzunluklarını, kenar uzunluklarını doğru verdiğini ilk etapta kabul edelim.
+
+544
+01:28:01,719 --> 01:28:08,439
+Selim'in yazdığı, Veydulla'nın yazdığı gibi geniş açıda üçgen, dar açıda üçgen vs. bunları da söyleyebiliriz ama
+
+545
+01:28:08,439 --> 01:28:25,840
+biz daha çok bu dördüyle ilgileniyoruz. İlk etapta bu üçüyle ilgileniyoruz. Sizden yapmanızı istediğim şey verilen kenar uzunluklarını kullanarak bu bilgilerden üçgenin türünü ekrana yazdırmanız.
+
+546
+01:28:26,079 --> 01:28:36,899
+Şimdi bunu önümüzdeki haftaya kadar yapmanızı istiyorum ama böyle önümüzdeki haftaya kadar dediysem hemen basit yapılabilecek bir iş. Yani on beş dakikanızı maksimum alır.
+
+547
+01:28:38,439 --> 01:28:41,039
+Dik üçgen kısmına bakarsınız bir.
+
+548
+01:28:41,660 --> 01:28:43,459
+Acaba onu da yapabiliyor musunuz?
+
+549
+01:28:43,459 --> 01:28:45,060
+Ya da ekstradan ne yazmak gerekiyor?
+
+550
+01:28:46,420 --> 01:28:50,099
+Önümüzdeki hafta, pazartesi günü bu soruyu çözüyor olacağız.
+
+551
+01:28:50,319 --> 01:28:52,160
+Arkasından yine birkaç örnek yapacağız.
+
+552
+01:28:53,060 --> 01:29:00,439
+Bir sonraki perşembede bütün bu for döngüsü, while döngüsü gibi döngüsel işlemleri anlatıp
+
+553
+01:29:00,439 --> 01:29:05,499
+artık birçok soruyu çözebilecek noktaya geleceksiniz.
+
+554
+01:29:05,499 --> 01:29:12,999
+ama belki bu soruyu çözdükten sonra hani bir four while baştan önce önümüzdeki pazartesi yapabilirim vakit kaybetmemek adına.
+
+555
+01:29:13,179 --> 01:29:15,800
+Onun birazcık programa bakacağım ve karar vereceğim.
+
+556
+01:29:15,800 --> 01:29:21,279
+O yüzden önümüzdeki pazartesi derse katılıyor olmanız faydalı olacaktır laboratuvar saatine.
+
+557
+01:29:22,199 --> 01:29:27,219
+Önümüzdeki hafta bu bütün algoritmik notasyonları bitirmek istiyorum.
+
+558
+01:29:27,879 --> 01:29:29,799
+Ondan sonra bol bol soru çözüyor olacağız.
+
+559
+01:29:30,500 --> 01:29:33,459
+Sonra ilerleyen haftalarda dizilere geçeceğiz.
+
+560
+01:29:33,459 --> 01:29:41,219
+ondan sonra matrislerden bahsedeceğiz sonra karakter gruplarını falan anlatacağız. Böyle ilergeye olacağız. Evet Süleyman'ın bir sorusu var.
+
+561
+01:29:42,340 --> 01:29:49,899
+Şey hocam puan alacağımız laplar ne zaman başlayacak bir de gizliler? Onun hakkında bir güncelleme var mı?
+
+562
+01:29:49,899 --> 01:29:54,119
+Şöyle hemen ona da ilgi vereyim soru için teşekkür ederim.
+
+563
+01:29:54,119 --> 01:30:04,759
+puan alacağımız laplar aslında yani ödevlerle başlayacak ve muhtemelen ödevi de önümüzdeki hafta vereceğim.
+
+564
+01:30:05,239 --> 01:30:09,140
+Bu hafta vermeyeceğim çünkü Ford ve Vyond'ı da görmenizi istiyorum.
+
+565
+01:30:09,819 --> 01:30:15,459
+Belki ufak bir iki tane de daha önceki konularla ilgili de soru verebilirim.
+
+566
+01:30:16,920 --> 01:30:20,159
+O ödevlerle birlikte puan almaya başlayacaksınız.
+
+567
+01:30:20,159 --> 01:30:25,859
+ama lap saatlerindeki puan alma durumu birazcık şu anda belirsizliğini koruyor.
+
+568
+01:30:27,379 --> 01:30:36,539
+Çünkü oradaki ne diyelim puan alma işini farklı bir şekilde koordine edebilirim.
+
+569
+01:30:36,619 --> 01:30:38,479
+Önümüzdeki hafta onu size söylüyor olacağım.
+
+570
+01:30:39,259 --> 01:30:42,419
+Sınav tarihlerini rektörlük açıklayacak onu bekliyoruz.
+
+571
+01:30:42,899 --> 01:30:44,359
+Onunla ilgili bir şey söylemem mümkün değil.
+
+572
+01:30:44,359 --> 01:30:51,039
+ama ödevlerinizin eğer laboratuvarda puan almak gibi bir durum olmasa ödevlerinizin sayısı biraz daha artacaktır.
+
+573
+01:30:51,759 --> 01:30:55,079
+Mesela 5 ödev öncesi 7-8'e çıkabilir gibi.
+
+574
+01:31:00,243 --> 01:31:12,783
+Evet, o zaman başka sorunuz yoksa bugünkü dersi noktalıyorum. Hepinize katıldığınız için teşekkür ediyorum. Cumhuriyet bayramınızı kutluyorum. İyi bir hafta diliyorum. Kendinize iyi bakın. Görüşmek üzere.
+
+575
+01:31:14,923 --> 01:31:16,023
+Sizle o yüzden görüşürüz.
+
+576
+01:31:21,555 --> 01:31:22,555
+Görüşürüz, iyiyim.
+
+577
+01:31:22,555 --> 01:31:23,555
+İyi günler hocam.

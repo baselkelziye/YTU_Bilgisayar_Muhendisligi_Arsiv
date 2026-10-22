@@ -47,6 +47,7 @@
 ## 📖 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UFw-BQXsy567TdLto8TLRKwG6VFoOvKf?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Bilgisayar Bilimlerine Giriş Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Efe'nin efsane notları](./slaytlar_notlar/2021/efe_girgin) ✨
 - 📄 **Proje:** [Proje için örnek video 1](https://www.youtube.com/watch?v=Xi_Tmubnw-0&ab_channel=S%C3%BCmG%C3%BCl) ✨
 - 📄 **Proje:** [Proje için örnek video 2](https://www.youtube.com/watch?v=QXdKI89NXtU&ab_channel=MustafaG%C3%BCnd%C3%BCz) ✨

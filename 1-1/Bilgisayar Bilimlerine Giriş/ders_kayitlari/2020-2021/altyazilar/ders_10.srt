@@ -1,0 +1,4015 @@
+1
+00:02:03,763 --> 00:02:07,443
+Evet, günaydın arkadaşlar. Hoş geldiniz.
+
+2
+00:02:08,803 --> 00:02:13,803
+Şu an yaklaşık olarak 34 kişi var.
+
+3
+00:02:14,403 --> 00:02:17,563
+Neden böyle açıkçası merak ediyorum.
+
+4
+00:02:18,403 --> 00:02:21,483
+Normalde yüz küsur kişiyiz.
+
+5
+00:02:22,083 --> 00:02:25,123
+Bugün özel bir durum mu var benim bilmediğim?
+
+6
+00:02:30,036 --> 00:02:58,036
+Hocam biz de buradayız o yüzden bizim de bilme ihtimalimiz çok az. Çok güzel, güzel cevap. Burada olanların bilmesi çok güzel. Güzel cevap ama bazı cevaplar geliyor bazı kişiler siteye giremiyormuş diye enteresan çünkü normalde dersi takip eden sayısı oldukça yüksek ve hani bir problem varsa en azından bildirmek lazım.
+
+7
+00:02:58,036 --> 00:03:06,376
+Eğer öğrenirseniz, duyarsanız lütfen yazın ki ilgi işlemleri duruma aktaralım ya da uzaktan eğitim verkinle.
+
+8
+00:03:07,716 --> 00:03:11,955
+Şimdi biz yavaş yavaş başlayalım gelebilen arkadaşlarla.
+
+9
+00:03:13,436 --> 00:03:17,256
+Bugün döngülerle ilgili örnekler çözmeye devam edeceğiz.
+
+10
+00:03:17,716 --> 00:03:18,936
+Dizilere giriş yapacağız.
+
+11
+00:03:19,695 --> 00:03:21,515
+Yarın bir ödev vereceğim.
+
+12
+00:03:22,915 --> 00:03:26,015
+Yarın sabahtan açıklayacağım ödevi.
+
+13
+00:03:26,015 --> 00:03:37,515
+pazar akşamına kadar süresi olan bir ödev olacak. Pazar gece yarısı 23.59'a kadar ödevi teslim edebileceksiniz.
+
+14
+00:03:38,595 --> 00:03:52,576
+Ödevde hem algoritmik bir soru olacak hem de daha önceki yaptığımız konularla ilgili 2-3 tane çözmeniz gereken problem olacak.
+
+15
+00:03:52,576 --> 00:04:06,716
+Ödevi şöyle planlıyorum eğer sizin için de uygun söyleme görülebiliyorsa duvara koyacağım bu platformdaki duvar üzerinden indirebiliyor olacaksınız.
+
+16
+00:04:07,735 --> 00:04:16,156
+Çözümlerinizi nasıl istediğimi ödev içerisinde belirtiyor olacağım. O çözümleri de ilgili linke yüklüyor olacaksınız.
+
+17
+00:04:16,156 --> 00:04:21,976
+Ama yükleyeceğiniz dosya formatlarına lütfen dikkat edin. Baştan uyarayım.
+
+18
+00:04:22,576 --> 00:04:30,656
+formatlara uygun olmadan kendi belirlediğiniz formatları yüksülerseniz ödevinizi maalesef değerlendiremeyeceğiz.
+
+19
+00:04:30,656 --> 00:04:34,495
+O yüzden ne isteniyor ona dikkat edin.
+
+20
+00:04:35,875 --> 00:04:42,655
+Onun dışında sorularınız olursa mail olarak gönderebilirsiniz eğer çok tereddüt ettiğiniz bir nokta olursa.
+
+21
+00:04:43,836 --> 00:04:51,375
+Söylediğim gibi yarın sabah 10 civarlarında ödevi paylaşmış olacağım.
+
+22
+00:04:51,375 --> 00:05:09,536
+pazar akşamına kadar süreniz olacak. Ödevi kendinizin yapıyor olması en kritik olan nokta. Yani yardım almak, soru sormakta herhangi bir sorun yok ama sorunun çözümünü birebir almak lütfen yapmayın.
+
+23
+00:05:09,536 --> 00:05:23,116
+yani şunu rica ediyorum sizden bugün bu şartlar bazı düşüncelerin maalesef daha sık gerçekleşmesine sebebiyet veriyor.
+
+24
+00:05:23,116 --> 00:05:31,155
+Bunlar uzun vadede bu kolaycılığa kapılanlar maalesef zararını görecekler. Şu an kısa vadede görmüyorlar.
+
+25
+00:05:31,856 --> 00:05:38,375
+Sizden ricam dört senelik bir eğitim hayatımız var. Sonuçta pandemi kısmetsiz sonsuzuna kadar sürmeyecek.
+
+26
+00:05:38,375 --> 00:05:47,175
+tekrar normal hayata döndüğünüzde çok zorlanırsınız. Başka yollardan bu dönemi geçirmeye çalışan arkadaşlar için söylüyorum.
+
+27
+00:05:48,595 --> 00:05:53,336
+Geçtiğimiz dönem çok zorlandık. Bunu çok suistimal eden arkadaşlar oldu.
+
+28
+00:05:54,455 --> 00:06:00,295
+Gerçekten çok zor ödevler olmuyor. Yapabileceğiniz ödevler.
+
+29
+00:06:00,295 --> 00:06:23,175
+Eğer bir sıkıntı yaşarsanız ödevin sonunda benimle düşüncelerinizi paylaştığınızda bir sonraki ödevde ona göre gerekli önlemleri alacağız. Bizim de gözümüzden kaçan bir şey olursa. Ama ne kadar yaparsanız yapın, %50 de yapsanız, %80 de yapsanız kendiniz yapın. İnanın uzun vadede kazanan siz olacaksınız.
+
+30
+00:06:23,668 --> 00:06:52,668
+şu an için nota çok fazla takılmayın. Önünüzde çünkü farklı başka ödevler de olacak. Dönem projesi olacak, sınav olacak vs. Her yerden not anlaşamazsınız. Mevcut. Bu dönem laboratuvar saatinde herhangi bir sınava girip nota almayacaksınız. Buna karar verdim. Çünkü buradaki sıkıntı yukarıdan yani alttan ders alanların bir kısmı
+
+31
+00:06:52,668 --> 00:07:05,368
+dersi takip etme zorluğuna sahip değil. Bazı exceptional durumlardan dolayı böyle bir karar alınmış. Onları da önceden haberdar etmek gerekiyor.
+
+32
+00:07:05,368 --> 00:07:17,068
+Vesaire derken, ne börtüvar saatinde yapacağım sınavlardan vazgeçtim. Onun yerine ödev vereceğim. Değerlendirmede de bunlar olmayacak.
+
+33
+00:07:17,067 --> 00:07:36,507
+Aklıma gelen başka bir şey var mı diye düşünüyorum. Önümüzdeki hafta perşembe günü dersin ikinci yarısında bir oryantasyon eğitimi olacak. Bizim sınıftaki öğrencilerimiz için. Muhtemelen saat 10.30-12 arası, 10.45-12 arası.
+
+34
+00:07:36,507 --> 00:07:50,027
+saat 12'de de bir değişiklik olmazsa bölümün organize edeceği, bölüm hocalarının katılacağı birinci sınıflar için bir tanışma toplantısı gerçekleştirmeyi planlıyoruz.
+
+35
+00:07:50,647 --> 00:07:58,807
+Net değil ama bilgilendirileceksiniz. Büyük ihtimal olacak. Yaklaşık yarım saatlik bir toplantı olacak.
+
+36
+00:07:58,807 --> 00:08:07,388
+çok orada hocaları en azından kısa da olsa 2-3 dakika, 1-2 dakika görüp tanıma şansınız olacak.
+
+37
+00:08:08,248 --> 00:08:14,028
+Bu şartlarda görüşemediğimiz için böyle bir organizasyon yapmaya karar verdik.
+
+38
+00:08:14,028 --> 00:08:17,947
+Böyle başkanımızın da katkısıyla.
+
+39
+00:08:20,147 --> 00:08:28,307
+Onun dışında yani planınızı önümüzdeki hafta öğle arasında 12-40 arasını bu işi ayırırsanız güzel olur.
+
+40
+00:08:28,807 --> 00:08:45,207
+diye düşünüyorum. Aklıma gelen başka bir şey var mı diye düşünüyorum. Sınavlarla ilgili herhangi bir gelişme yok. Onunla ilgili bir gelişme olursa sizi bilgilendireceğim. Benim aklıma gelenler bunlar ders öncesi. Sizin sormak istediğiniz bir şey var mı?
+
+41
+00:08:52,083 --> 00:08:54,083
+Evet Mustafa Bey'e söz veriyim.
+
+42
+00:08:54,083 --> 00:08:57,083
+Hocam günaydın.
+
+43
+00:08:57,083 --> 00:08:58,083
+Günaydın.
+
+44
+00:08:58,083 --> 00:09:01,083
+Bu toplantıya biz de katılabiliyor muyuz?
+
+45
+00:09:01,083 --> 00:09:05,083
+Hocalarımızla tanışmak için de.
+
+46
+00:09:05,083 --> 00:09:13,083
+Yani şöyle, açıkçası birinci sınıfa ilk gelen arkadaşlarımız için organize ettiğimiz bir toplantı.
+
+47
+00:09:13,083 --> 00:09:30,903
+Ama burada bilemiyorum Zoom kapasitesi bildiğim kadarıyla geçen bir çok disiplinli tasarım projesi için bir organizasyonda 300 ile sınırlandırılmıştı. Böyle bir kapasite problemimiz normalde olmaz.
+
+48
+00:09:30,924 --> 00:09:33,664
+O zaman çıkarız hocam. Yerimiz olmayan yerde pek tırmayız.
+
+49
+00:09:33,664 --> 00:09:39,683
+Ama şunu söyleyebilirim. BBG'ye bir dersini alan arkadaşların katılmasında herhangi bir sakınca görmüyorum.
+
+50
+00:09:40,603 --> 00:09:41,664
+Eyvallah hocam.
+
+51
+00:09:41,663 --> 00:09:52,383
+Ama bölüm yönetimi bununla ilgili başka bir karar alır. Bir şey diyemiyorum. Fakat kontenjan açısından BBG1 öğrencilerinin katılmasında herhangi bir problem olmayacaktır.
+
+52
+00:09:52,563 --> 00:10:03,764
+Laboratuvar çok soruluyor. Ben de soruyorum. Çünkü beni de şey yapıyor. Çünkü ben yani işin açıkçası sizden bir şeyler dinlemek bana keyif veriyor.
+
+53
+00:10:03,764 --> 00:10:20,764
+Ama laboratuvarın olduğu saatte de şey var, siz ders veriyorsunuz ki çok hoşuma gidiyor ama işte maalesef oraya da başka bir ders koymak zorunda kalınca laboratuvar olacak mı işin açıkçası? Yani laboratuvar yapılacak mı?
+
+54
+00:10:21,664 --> 00:10:31,063
+Şimdi şöyle biraz önce bahsettiğim gibi laboratuvar saatinde sınav yapılmayacak. Ama laboratuvar saatindeki derslerde uygulama yapılmaya devam edecek.
+
+55
+00:10:31,063 --> 00:10:34,523
+sistem otomatik olarak yoklamayı alıyor.
+
+56
+00:10:35,463 --> 00:10:35,803
+Anladım.
+
+57
+00:10:37,323 --> 00:10:40,523
+Şimdi şöyle bir ifade kullanayım.
+
+58
+00:10:41,383 --> 00:10:47,143
+Derslere katılım ve aktif rol oynamak benim açımdan önemli.
+
+59
+00:10:47,763 --> 00:10:52,183
+Çünkü sizin başarınıza doğrudan etki ettiğini yıllardır tecrübe ediyorum.
+
+60
+00:10:52,183 --> 00:11:08,563
+en zorlanan öğrencinin bile derste bir şeyler katkı yapmaya çalışıyor. Yanlış da söylese, beş defa da yanlış söylese, kendini geliştirdiğini gördüğüm için buna çok önem verdiğimi siz zaten biliyorsunuz.
+
+61
+00:11:08,563 --> 00:11:20,143
+Bu noktada benim özellikle tüm arkadaşlarla uygulama saatinde mutlaka derse katılmaya çalışın.
+
+62
+00:11:21,063 --> 00:11:22,343
+Çünkü kendinizi geliştirmek...
+
+63
+00:11:22,343 --> 00:11:24,483
+Hocam aralarda bile girmeye çalışıyorum ya.
+
+64
+00:11:25,763 --> 00:11:27,763
+Ben yani dediğim gibi...
+
+65
+00:11:27,763 --> 00:11:29,683
+Karasında bile girmeye çalışıyorum.
+
+66
+00:11:29,683 --> 00:11:36,863
+Yani burada önemli olan ilk defa bu işi öğrenmeye çalışanların katılımı çok çok önemli.
+
+67
+00:11:36,863 --> 00:11:47,524
+onun dışında yoklamayla ilgili herhangi bir bize ulaşmış bir bilgi yok ama yoklamanın değerlendirilmesi gerektiğini anlatan birçok yazı geldi.
+
+68
+00:11:47,524 --> 00:11:55,483
+Şu anlamda işte bu haftaki hani öncelikle İzmir'le olan ve yakınlar İzmir'de bulunan arkadaşları geçmiş olsun diyorum.
+
+69
+00:11:55,483 --> 00:12:08,623
+İzmir'de giderek dolayısıyla bu hafta yoklamaya hassasiyet gösterilmesi, sınav yapılmaması gibi bize bazı bilgiler geldi.
+
+70
+00:12:08,623 --> 00:12:13,783
+Bu yüzden totalde yoklamanın önemli olduğunu düşünüyorum. Tabii başka bir bilgi daha vereyim.
+
+71
+00:12:14,603 --> 00:12:17,603
+Derslerde şunu tespit etmeye başladım, başka derslerde.
+
+72
+00:12:19,223 --> 00:12:25,123
+Bilgisayarı açan ve bir daha bilgisayarın başında olmayan arkadaşlar var ve bunun sayısı gün geçtikçe artıyor.
+
+73
+00:12:25,483 --> 00:12:43,843
+Bunu yapacaksanız derse katılmayın arkadaşlar. Yani bu çok büyük bir aslında kendinize de saygısızlık, karşıdaki insana da saygısızlık. Böyle bir bilgisayar başında oturmak gibi bir ihtimaliniz yoksa o zaman hiç açmayın. Ben sınıfta da bunu söylüyorum. O zaman gelmeyin.
+
+74
+00:12:44,148 --> 00:13:14,127
+yani dikkatinizi vermeyeceksiniz. Herkes her hafta konsantre olamayabilir. Ben de her hafta süper bir performans sergileyemem. Bir hafta kötüdür, bir hafta iyidir. Ama çaba harcarım. En iyisini yapmaya çalışırım. Siz de o hafta çok iyi derse katılamayabilirsiniz ama lütfen dinlemeye özen gösterin. Hatta canlı katılmanızın en önemli katkısı şu noktada oluyor. Soru sorma şansına sahipsiniz. Yoksa dersi sonradan izleyerek böyle bir şansınız var ve
+
+75
+00:13:14,127 --> 00:13:16,427
+birçok şeyle belki öyle öğrenebilirsiniz.
+
+76
+00:13:17,028 --> 00:13:24,548
+Ama aklınıza takılan birçok soruyu burada sorma şansınız var ve ben farkındaysanız buna olabildiğince müsaade etmeye çalışıyorum ki
+
+77
+00:13:24,548 --> 00:13:27,868
+interaktif ders yapmamızın bir anlamı olsun diye.
+
+78
+00:13:28,847 --> 00:13:31,747
+Bunlara sizden dikkat etmenizi rica ediyorum.
+
+79
+00:13:31,747 --> 00:13:33,407
+Daha fazla uzatmayayım.
+
+80
+00:13:33,587 --> 00:13:40,368
+Hani birazcık böyle size nasihat gibi oldu ama umarım anlayışla karşılamışsınızdır.
+
+81
+00:13:40,367 --> 00:13:55,607
+Şimdi biz kaldığımız yerden devam edeceğiz. Öncelikle ekranımı kapatıyorum, ekran paylaşımı yapacağım. Bu sırada soru sormak isteyen varsa tabii ki soru sorabilir.
+
+82
+00:14:33,620 --> 00:14:36,419
+en son bu noktada kaldığımızı hatırlıyorum.
+
+83
+00:14:41,043 --> 00:14:45,043
+Bugün sanırım ayın beşi...
+
+84
+00:14:53,683 --> 00:14:55,683
+Şimdi bir bakalım
+
+85
+00:14:57,683 --> 00:14:59,683
+Bugün nasıl bir
+
+86
+00:14:59,683 --> 00:15:01,683
+yapıyla başlayacağımıza
+
+87
+00:15:05,268 --> 00:15:14,568
+Evet. Biz kaçıncı algoritmamızı yapmıştık bir yana bakalım.
+
+88
+00:15:14,568 --> 00:15:23,467
+Algoritma 6 diyelim. Adaki bazı algoritmaları saymadım.
+
+89
+00:15:23,467 --> 00:15:25,467
+Evet.
+
+90
+00:15:27,091 --> 00:15:29,091
+bir şey.
+
+91
+00:15:33,875 --> 00:15:44,615
+Armstrong sayıları bulan algoritma, akış diyagramı çizemiz.
+
+92
+00:15:50,548 --> 00:15:54,948
+Hey hocam bunu yapmıştık herhalde farklı bir yöntemle mi yapacağız yoksa şimdi?
+
+93
+00:15:54,948 --> 00:15:57,028
+Yok bu bütün hepsini bulacakız ya.
+
+94
+00:15:58,387 --> 00:16:05,428
+Şimdi eee arkadaşlar soruyu anlamak birinci işimiz.
+
+95
+00:16:05,428 --> 00:16:07,827
+İstenilini anlamak birinci işimiz.
+
+96
+00:16:07,827 --> 00:16:11,107
+Problemi doğru anlamak birinci işimiz.
+
+97
+00:16:11,107 --> 00:16:13,107
+Neden bunu tekrar ediyorum?
+
+98
+00:16:13,107 --> 00:16:15,027
+Biz bu soruyu yapmadık.
+
+99
+00:16:15,027 --> 00:16:16,627
+Biz hangi soruyu yaptık?
+
+100
+00:16:16,627 --> 00:16:19,468
+El kaldırarak.
+
+101
+00:16:22,451 --> 00:16:49,451
+Emirhan. Bize verilen bir sayının Armstrong sayısı olup olmadığını söyleyen, bulan algoritma, nakış diyagramı çizmiştir. Şu anda biz 3 basamaklı Armstrong sayıları bulan algoritmayı istiyoruz ve kaç tane olduğunu bulanı da istiyoruz. Yani 3 basamaklı kaç tane Armstrong sayı var ve hangileri? Bu bilgiye ihtiyaç duyuyoruz.
+
+102
+00:16:49,451 --> 00:16:54,992
+burada kaç adet olduğunu da yazalım.
+
+103
+00:16:56,551 --> 00:17:04,852
+Şimdi burada biz döngü olarak hangi tip döngü kullanmamız gerekiyor diye sorayım.
+
+104
+00:17:06,992 --> 00:17:07,951
+Evet, Muhammed Eren.
+
+105
+00:17:11,412 --> 00:17:12,831
+While döngüsü olabilir mi?
+
+106
+00:17:14,831 --> 00:17:16,392
+Maalesef while döngüsü değil.
+
+107
+00:17:19,311 --> 00:17:20,632
+Evet, Elif?
+
+108
+00:17:22,231 --> 00:17:24,951
+Adım sayısı belli olduğu için for döngüsü.
+
+109
+00:17:25,031 --> 00:17:26,412
+Neden adım sayısı belli Elif?
+
+110
+00:17:27,091 --> 00:17:28,471
+Üç basamaklı dedik.
+
+111
+00:17:29,092 --> 00:17:33,271
+Evet, peki biz burada dışarıdan bir input alacak mıyız Elif?
+
+112
+00:17:34,651 --> 00:17:35,151
+Hayır.
+
+113
+00:17:35,811 --> 00:17:36,592
+Almayacağız, neden?
+
+114
+00:17:38,531 --> 00:17:41,231
+Çünkü sayıları biz bulacağız direkt.
+
+115
+00:17:41,412 --> 00:17:44,772
+Peki bu döngünün başlangıcı ve bitişi kaç olacak?
+
+116
+00:17:45,891 --> 00:17:51,432
+Yüz ve doksan dokuz, dokuz doksan dokuzu kontrol edeceğiz. Yüzden dokuz doksan dokuza kadar olan sayıdır.
+
+117
+00:17:51,432 --> 00:18:10,452
+Evet. Şimdi o zaman arkadaşlar daha önce bu algoritmayı çözmüştük biliyorsunuz. Size dört dakika veriyorum. Üç basamaklı Armstrong sayıları bulan ve kaç tane olduğunu ve sayıların kendisini ekrana yazdıran algoritmanın akış diyagramını çizmenizi istiyorum.
+
+118
+00:18:10,451 --> 00:18:18,451
+Start ile başlayacaksınız ve sonrasını getireceksiniz. 4 dakikalık süreniz başladı.
+
+119
+00:22:47,635 --> 00:23:13,635
+Evet arkadaşlar, şimdi bir soru gelmiş Anıl'dan FOR döngüsünün içerisinde IF kullanabiliyor muyuz diye. FOR döngüsünün içerisinde FOR, başka bir FOR döngüsü isterseniz WHILE, WHILE'ın içinde FOR, FOR'ın içerisinde IF. Bütün döngülerin içerisinde istediğiniz başka bir akış diyagramı, notasyonunu kullanabilirsiniz. Bunda herhangi bir sakınca yok.
+
+120
+00:23:13,635 --> 00:23:18,295
+Şimdi kimler yapabildi bana chat ortamından?
+
+121
+00:23:23,316 --> 00:23:30,935
+yazarsanız bende ona göre analiz yaptınız mı?
+
+122
+00:23:34,291 --> 00:23:55,132
+Analiz önemli. Bu sırada analize belki bakabilirsiniz. Şimdi bu soruyla ilgili nasıl çözüleceği ile ilgili ben hiçbir şey bilmiyorum. Kafamda kurgulayamıyorum diyen var mı? Ya da tam anlayamıyorum diyen var mı? Söylemesinde herhangi bir ayıp yok. Sormak isteyen soru sorabilir.
+
+123
+00:24:07,059 --> 00:24:10,379
+Evet, Mahmut Mahmudov. Mikrofonun açık mı?
+
+124
+00:24:11,659 --> 00:24:12,939
+Açık hocam.
+
+125
+00:24:13,459 --> 00:24:16,020
+Tamam. Neyi anlayamadığını söyleyemiyor musun?
+
+126
+00:24:16,779 --> 00:24:30,859
+Hocam, ilk önce, ilk başta biz koşul yazıyoruz ya, hani onu tam olarak yani bizim evimizde birden fazla adet koşul var. Hani üç şakanlı olması lazım ve Armstrong sayısı olması lazım.
+
+127
+00:24:30,859 --> 00:24:48,879
+Bunları nasıl tam olarak bildireceğimizi şu an pek olay anlamış değilim. Daha sonra sayısını bulma konusu o kadar da zor gözükmüyor. Çünkü her birini bulduğumuzda sonucun üstüne bir artıracağız.
+
+128
+00:24:50,059 --> 00:24:54,799
+Fakat bunun dışında o koşulları nasıl elde edeceğimizi tam olarak bilmiyoruz.
+
+129
+00:24:54,799 --> 00:24:59,319
+Daha önce verilen bir sayın Alpussu'nun sayı olup olmadığı algoritmasına baktın mı yaptınız?
+
+130
+00:24:59,319 --> 00:25:12,420
+Hocam ben galiba o derste olmamışım çünkü ekonaylı şey olduğu için o dersi bilmiyorum galiba ama diğer derslerin hepsini dinlemiş olacağım ki diğerlerini biliyorum
+
+131
+00:25:12,420 --> 00:25:22,640
+Öncelikle derse katılamayan arkadaşların mutlaka katılamadıkları dersleri sonraki günlerde izlemelerini tavsiye ediyorum
+
+132
+00:25:22,640 --> 00:25:25,000
+İzliyorum hocam bir tek o ders kaldı galiba
+
+133
+00:25:24,999 --> 00:25:37,859
+Selim arkadaşınız internet üzerinden Armstrong sayıları bulup bizimle paylaşmış analiz için kullanabileceğiniz sayıları.
+
+134
+00:25:39,079 --> 00:25:43,699
+Şimdi öncelikle dışarıdan herhangi bir input istemediğimizi söylemiştik.
+
+135
+00:25:45,739 --> 00:25:48,279
+Algoritmaya ne ile başlayacağız arkadaşlar?
+
+136
+00:25:48,279 --> 00:25:49,559
+Start'tan sonra.
+
+137
+00:25:54,675 --> 00:26:11,675
+For döngüsü dedi arkadaşınız. Doğru ama bir tane count değişkeninin ilk değerini 0 yapıyorum. Sonra for döngüsü yazıyorum.
+
+138
+00:26:14,804 --> 00:26:17,024
+Öğü kaçtan başlayacak? 100.
+
+139
+00:26:18,103 --> 00:26:19,383
+Bir bir artacak.
+
+140
+00:26:20,383 --> 00:26:22,343
+Dokuz yüz doksan dokuza kadar
+
+141
+00:26:22,343 --> 00:26:23,883
+gidecek.
+
+142
+00:26:25,383 --> 00:26:27,463
+Burada yapmam gereken nedir?
+
+143
+00:26:28,383 --> 00:26:29,443
+Proses kutucuğunda.
+
+144
+00:26:32,443 --> 00:26:34,484
+Rakamlara ihtiyacım var Atakan.
+
+145
+00:26:36,163 --> 00:26:38,323
+Hocam ben yani biraz
+
+146
+00:26:38,323 --> 00:26:40,003
+hile gibi oldu ama direkt
+
+147
+00:26:40,003 --> 00:26:42,323
+önceki yaptığımız kısımdan kopyaladım.
+
+148
+00:26:42,603 --> 00:26:42,843
+Yani
+
+149
+00:26:42,843 --> 00:26:48,723
+I'yi ilk başta B, div 10 yapmamız lazım.
+
+150
+00:26:50,324 --> 00:26:52,583
+Div 10 nasıl oluyor anlamadım.
+
+151
+00:26:53,623 --> 00:27:00,643
+Yani bir tane proses kutucuğu içinde işte modunu alarak o işte ilk basamağı, ikinci basamağı, üçüncü basamağı.
+
+152
+00:27:00,643 --> 00:27:02,484
+Söyle ne işlemiz lazım.
+
+153
+00:27:04,183 --> 00:27:04,823
+Efendim hocam?
+
+154
+00:27:05,063 --> 00:27:07,844
+İşlem olarak ne yazacağım? Yani satır olarak ne yazacağım?
+
+155
+00:27:07,843 --> 00:27:13,523
+Bir şey çıkarıp B eşittir A div 100 yazdım ben
+
+156
+00:27:13,523 --> 00:27:17,103
+B eşittir A div 100
+
+157
+00:27:17,103 --> 00:27:20,823
+Ben A div 100 yazdım ama siz yazdığınız için I div 100 olacak orası
+
+158
+00:27:20,823 --> 00:27:22,763
+İşte şimdi benim sizden bir ricam var
+
+159
+00:27:22,763 --> 00:27:25,703
+Sizin tarafınızdaki çözümüm benim için hiçbir anlamı yok şu anda
+
+160
+00:27:25,703 --> 00:27:28,483
+Çünkü ben burada başka değişkenler kullanıyorum
+
+161
+00:27:28,483 --> 00:27:30,524
+O yüzden siz buraya uyarlayacaksınız tamam mı?
+
+162
+00:27:31,723 --> 00:27:32,383
+Bunu siliyorum
+
+163
+00:27:32,383 --> 00:27:34,583
+Tekrar buraya uyarlanmış halini soruyorum
+
+164
+00:27:34,583 --> 00:27:39,244
+B eşittir, I div 100 yaptım ben.
+
+165
+00:27:39,244 --> 00:27:40,403
+Yani sınıfına göre.
+
+166
+00:27:43,543 --> 00:27:47,403
+Altına C eşittir, A div 10, mod 10 yaptım.
+
+167
+00:27:48,664 --> 00:27:49,744
+A nedir?
+
+168
+00:27:50,524 --> 00:27:52,943
+I div 10, mod 10 yaptım.
+
+169
+00:27:54,304 --> 00:27:59,363
+I div 10, mod 10.
+
+170
+00:27:59,363 --> 00:28:06,563
+Altına da direkt D eşittir, Ü mod 10 yaptım hocam
+
+171
+00:28:11,604 --> 00:28:21,743
+Böylelikle B yüzler basamağını, C onlar basamağını, D de şeyi göstermiş oluyor. Birler basamağını.
+
+172
+00:28:21,743 --> 00:28:25,823
+Bu değişken isimlerini daha anlamlı versek olur mu?
+
+173
+00:28:25,823 --> 00:28:29,663
+Olabilir hocam. Yüzler, onlar, birler diyebiliriz.
+
+174
+00:28:29,663 --> 00:28:33,663
+Mesela yüzler, onlar, birler diyebiliriz. Ya da her birinin baş hatı diyebilirsin.
+
+175
+00:28:33,663 --> 00:28:36,663
+B, O, B'ye doldurirsin.
+
+176
+00:28:36,663 --> 00:28:55,824
+Bunu da herkese söylüyorum. Bundan sonraki bilgisayar mühendisliği kariyerimizde kullandığınız değişken isimlerine lütfen dikkat edin. Program yazarken de aynı şekilde değişkenin isminin neyi, o değişkenin sakladığı bilgisini temsil etmesi gerekiyor.
+
+177
+00:28:55,823 --> 00:28:58,323
+çok uzun değişken isimleri kullanın demiyor.
+
+178
+00:28:58,823 --> 00:29:01,263
+Yeri geldiğinde programlarda belki kullanacaksınız.
+
+179
+00:29:01,403 --> 00:29:06,663
+Akışta bu kadar kullanamayabilirsiniz ama en azından bakan birinin bunun ne anlama geldiğini anlaması önemli.
+
+180
+00:29:07,183 --> 00:29:09,243
+Peki bu proses kutucuğundan sonra ne olacak?
+
+181
+00:29:09,783 --> 00:29:14,803
+Hocam proses kutucuğunu kapamadan önce ben bir de bunların kareleri toplamı şeklinde,
+
+182
+00:29:15,263 --> 00:29:19,243
+ay küpleri toplamı şeklinde bir tane daha değişken verdim E olarak.
+
+183
+00:29:20,803 --> 00:29:21,563
+Tamam.
+
+184
+00:29:26,228 --> 00:29:31,287
+Ü, mod, on demiştik buraya. Evet, değişkenin ismine ne diyelim?
+
+185
+00:29:33,367 --> 00:29:39,587
+Direkt küp diyebiliriz ya da ben e dedim ama küp dersek daha mantık olursun söylediğiniz şekilde.
+
+186
+00:29:39,587 --> 00:29:42,587
+E diyelim, değişkenin sona yaparız.
+
+187
+00:29:44,207 --> 00:29:55,068
+B çarpı B çarpı B çarpı B artı C çarpı C çarpı C artı D çarpı D çarpı D.
+
+188
+00:29:56,228 --> 00:30:04,408
+sonrasında hocam devam ettirip bu kutucu yani şey ileri ok çıkarıp ben bir if kutucuğu açtım.
+
+189
+00:30:05,887 --> 00:30:11,228
+Şimdi burada ben alan bittiği için maalesef şuraya gitmek durumundayım.
+
+190
+00:30:12,808 --> 00:30:15,607
+Bir tane if kutucu evet ne dedik?
+
+191
+00:30:15,948 --> 00:30:18,507
+If A eşittir E dedim.
+
+192
+00:30:19,867 --> 00:30:20,768
+A nedir?
+
+193
+00:30:21,607 --> 00:30:23,068
+I eşittir E dedim.
+
+194
+00:30:23,068 --> 00:30:37,827
+solda true çıkarttım. Eğer doğruysa I1 Armstrong sayıdır diye yazdırdım.
+
+195
+00:30:37,827 --> 00:30:45,628
+Tamam ben buraya doğrudan şöyle yapıyorum. I yazdırıyorum yerim dar olduğu için. Başka?
+
+196
+00:30:45,628 --> 00:30:55,628
+false kutucuğunda da yani devamında hiçbir şey çıkarmadan aşağıdan birleştirip şeye birleştirdim fork kısmına birleştirdim
+
+197
+00:30:55,628 --> 00:30:57,468
+true call'da başka bir şey yapmayacak mıyız?
+
+198
+00:30:57,888 --> 00:31:01,628
+yok true call'a I1 Armstrong sayı yazdırdım
+
+199
+00:31:01,628 --> 00:31:03,948
+hemen sorayım başka bir arkadaşa
+
+200
+00:31:03,948 --> 00:31:05,628
+sena
+
+201
+00:31:05,628 --> 00:31:09,128
+hocam count'u arttırmamız lazım
+
+202
+00:31:09,128 --> 00:31:13,488
+evet count'u bir arttırmamız lazım çünkü kaç tane sayı olduğunu bulmak istiyoruz
+
+203
+00:31:13,487 --> 00:31:23,887
+bunu böyle diyene kötü yazdım kusura bakmayın alan sıkıntı isminiyle bunu siz 300 bin yazarsınız count eşittir count artı bir
+
+204
+00:31:32,468 --> 00:31:34,468
+bundan iki geldik.
+
+205
+00:31:34,468 --> 00:31:36,468
+burada da
+
+206
+00:31:36,468 --> 00:31:40,468
+count to
+
+207
+00:31:43,124 --> 00:31:45,124
+Ekrana yazdırdık.
+
+208
+00:31:47,124 --> 00:31:50,124
+Ee, şimdi anlaşılmayan bir şey var mı?
+
+209
+00:31:55,667 --> 00:31:57,667
+sormak istediğim şey.
+
+210
+00:32:01,556 --> 00:32:02,556
+Selim?
+
+211
+00:32:04,556 --> 00:32:06,556
+Hocam soracaktım da şimdi anladım.
+
+212
+00:32:06,556 --> 00:32:07,556
+Tamam.
+
+213
+00:32:08,556 --> 00:32:10,556
+Dikkat etmeniz gereken noktaları söylüyorum.
+
+214
+00:32:10,556 --> 00:32:18,556
+Bir, bu akış diyagramında, bu algoritmada dışarıdan bir input almamız gerektirecek bir durum oluşmadı.
+
+215
+00:32:18,556 --> 00:32:22,556
+Çünkü üç basamatta sayılara bakıyoruz. Bazen böyle özel durumlar oluşabilir.
+
+216
+00:32:22,556 --> 00:32:26,556
+Ama bir değer alacağımız zaman her zaman bunu kullanıcı veriyor.
+
+217
+00:32:26,556 --> 00:32:41,995
+başlangıç yüz, bitiş dokuz yüz doksan dokuz her bir sayıya bakıyoruz. Burada her turda yeni sayımız I ile karşımıza geliyor. Buna dikkat etmek lazım.
+
+218
+00:32:41,995 --> 00:32:55,556
+Burada b, c, d isimleri yerine yüzler, onlar ve birler basamağı diyebilirdik. Burada küp diyebilirdik.
+
+219
+00:32:58,895 --> 00:33:04,556
+Muhammed Kasap'tan bir soru geldi. Output vermemiz lazım mı? Vermeden count'u arttırsak olmaz mı?
+
+220
+00:33:05,515 --> 00:33:09,996
+Bu output'u verme sebebi şu anda sayıları bir yerden saklamıyorum.
+
+221
+00:33:09,995 --> 00:33:20,275
+saklasaydım sonra sayıların hepsini bir yerde beraber gösterebilirdim. Saklamak için de birazdan göreceksiniz. Dizilerden faydalanacağız.
+
+222
+00:33:20,855 --> 00:33:29,175
+Birden fazla aynı tipte veriyi saklamak için. Burada bulduğum zaman sayıyı yazdırıyorum. Aynı zamanda adet sayısını arttırıyorum.
+
+223
+00:33:30,655 --> 00:33:39,135
+Burada küplerinin toplamını hesapladık. Sonra I'ya eşit mi diye baktık. Eşitse o zaman bu bir Armstrong sayıları dedik.
+
+224
+00:33:39,135 --> 00:33:47,955
+ve ekrana yazdırdık. Sonra da bulduğumuz için count değerini bir arttırdık. İkiden buraya döndük.
+
+225
+00:33:48,835 --> 00:33:54,795
+Bu çizim çok güzel bir çizim değil. Mevcut kaldığım için böyle yaptım. Sonra da count değerini ekrana yazdırdık.
+
+226
+00:33:56,575 --> 00:33:59,895
+Herhangi bir anlaşılmayan nokta var mı? Soru sormak istiyemem.
+
+227
+00:34:02,695 --> 00:34:03,715
+Evet Selim.
+
+228
+00:34:04,335 --> 00:34:07,255
+Hocam az önce hiç cevaplamıştınız da ben kısmı tam anlamadım.
+
+229
+00:34:07,255 --> 00:34:13,155
+ıyı neden yazdırdığımızı analiz için falan analiz etmek için mi yazdırıyorduk? Ben o kısmı anlamadım tam olarak.
+
+230
+00:34:13,595 --> 00:34:17,475
+Armstrong sayıları yazdırmazsak hangisinin Armstrong sayı olduğunu kullanıcılarla anlayacak?
+
+231
+00:34:19,996 --> 00:34:25,155
+He anladım. Kaç adet deyince ben sadece adet sayısı aldım. Tamam hocam.
+
+232
+00:34:25,496 --> 00:34:26,716
+Ama sayıları bulan diyorum.
+
+233
+00:34:27,735 --> 00:34:28,395
+Anladım. Tamam.
+
+234
+00:34:28,395 --> 00:34:35,716
+Yani dört tane var dedikten sonra hangi sayıları olduğunu da programı çalıştıran kişiye göstermek istediğimiz için ekrana yazmıyorum.
+
+235
+00:34:35,716 --> 00:34:37,916
+Anladım hocam
+
+236
+00:34:37,916 --> 00:34:42,056
+Peki o zaman burada ilerleyebiliriz diye düşünüyorum
+
+237
+00:34:46,132 --> 00:34:50,632
+Şimdi gene bir örnek yapalım.
+
+238
+00:34:54,324 --> 00:35:01,324
+7 diyelim. Bir arabanın benzin tüketimi
+
+239
+00:35:07,731 --> 00:35:15,731
+her saniye bilgi olarak verilmektedir.
+
+240
+00:35:20,500 --> 00:35:23,500
+eksi bir değeri
+
+241
+00:35:23,500 --> 00:35:25,500
+verildiğinde
+
+242
+00:35:25,500 --> 00:35:27,500
+eksi bir değeri
+
+243
+00:35:28,851 --> 00:35:29,871
+araba
+
+244
+00:35:31,411 --> 00:35:33,451
+sürüşünü tamamlamış demektir.
+
+245
+00:35:44,724 --> 00:35:45,603
+Saniye
+
+246
+00:35:45,603 --> 00:35:48,263
+başına
+
+247
+00:35:48,263 --> 00:35:50,624
+yani şöyle diyelim onu
+
+248
+00:35:56,628 --> 00:36:15,827
+her saniye için ortalama yakıt tüketimini ve sürüş ortalamasını
+
+249
+00:36:18,708 --> 00:36:24,708
+ekranı yazdıran algoritma, akış diyagramı çiziriz.
+
+250
+00:36:40,019 --> 00:36:54,519
+Şimdi, dışarıdan sürekli olarak input geliyor. Her turda bu input alıyorsunuz. O saniyedeki ortalama arabanın yakıt tüketimini ekrana yazdırıyorsunuz.
+
+251
+00:36:54,519 --> 00:37:08,519
+Eksi bir girildiğinde araba sürüşünü tamamlıyor ve siz son olarak o aracın sürüş boyuncaki ortalama benzin tüketimini ekrana yazdırıp akışınızı tamamlıyorsunuz.
+
+252
+00:37:08,519 --> 00:37:24,100
+Şimdi size bunun için bir 5 dakika süre veriyorum. Hemen arkasından da bir 10 dakikalık araya gideceğiz. Bu da 9.41 saat. 9.56'da tekrar görüşeceğimiz anlamına geliyor. Soruyla ilgili bir bilgi almak isteyen var mı?
+
+253
+00:37:30,867 --> 00:37:41,867
+Hocam, saniyeleri hani direkt yine bir bir ilerliyor gibi mi yapalım? Yani saniyeler her türda eee bir saniye ilerliyormuş gibi düşünebilirsiniz. Evet Selim?
+
+254
+00:37:41,867 --> 00:37:50,867
+Hocam bu eee inputları eee programın başında almıyoruz değil mi? Bir döngün içinde mi alacağız acaba?
+
+255
+00:37:50,867 --> 00:38:00,867
+Eee her saniye bu input verdiğine göre evet öğreneceksiniz. Peki sürüş ortaması derken o kısmı anlamadım hocam bir de. Sürüş ortaması ne oluyor tam olarak?
+
+256
+00:38:00,867 --> 00:38:05,787
+bütün sürüş boyunca gerçekleşen ortalama.
+
+257
+00:38:07,568 --> 00:38:07,827
+Yapan.
+
+258
+00:38:08,607 --> 00:38:11,728
+Saniye bazında verildiğini düşünürsen bütün sürüşü hesaplayacaksın.
+
+259
+00:38:11,867 --> 00:38:15,048
+Aslında yani daha önceden bu bilgiye yaşıyorsun.
+
+260
+00:38:17,588 --> 00:38:18,548
+Başka soru?
+
+261
+00:38:21,067 --> 00:38:25,387
+Peki. O zaman şimdi iki dakika daha geçti.
+
+262
+00:38:25,487 --> 00:38:28,847
+9.43, 9.58'e kadar süreniz var.
+
+263
+00:38:28,847 --> 00:38:31,107
+görüşmek üzere kolay gelsin.
+
+264
+00:53:27,219 --> 00:53:28,759
+Evet arkadaşlar, yeniden merhaba.
+
+265
+00:53:30,539 --> 00:53:32,359
+Kimler yapabildi soruyu?
+
+266
+00:53:42,356 --> 00:53:44,356
+başka
+
+267
+00:53:49,460 --> 00:54:00,460
+Buse, cevapları, cevapları, başka kim yapabildi soruyu? Evren? Evet, devam edelim.
+
+268
+00:54:07,219 --> 00:54:10,539
+Evet, o zaman varmıyor, ne? Sorry.
+
+269
+00:54:12,659 --> 00:54:13,659
+John Janku
+
+270
+00:54:17,364 --> 00:54:18,364
+Merhaba hocam.
+
+271
+00:54:19,364 --> 00:54:22,364
+Evet, soruyu nasıl çözdüğünü öğrenmek istiyorum.
+
+272
+00:54:24,364 --> 00:54:26,364
+Önce bir tane input aldım benzin için.
+
+273
+00:54:26,364 --> 00:54:28,364
+Duyamadım söyledi.
+
+274
+00:54:28,364 --> 00:54:30,364
+İlk input aldım benzin için.
+
+275
+00:54:30,364 --> 00:54:31,364
+Evet.
+
+276
+00:54:32,364 --> 00:54:37,364
+Sonra saniye ve toplam benzin için sıfıra eşit olan proses yazdım.
+
+277
+00:54:39,364 --> 00:54:40,364
+Peki.
+
+278
+00:54:41,364 --> 00:54:47,364
+Ondan sonra da file'da b'nin eksi bile eşit olmadığı durumları başlattım.
+
+279
+00:54:47,364 --> 00:54:50,803
+Peki, teşekkürler
+
+280
+00:54:50,803 --> 00:54:54,843
+Tekrar B için input aldım, Ersan input aldığımız için
+
+281
+00:54:54,843 --> 00:55:01,923
+Sonra proseste saniyeyi bir yükselttim, toplam benzine ekledim
+
+282
+00:55:01,923 --> 00:55:07,323
+Ve ortalama benzine buldum
+
+283
+00:55:07,323 --> 00:55:08,444
+Evet
+
+284
+00:55:08,444 --> 00:55:10,163
+Sonra da bunları ekrana yazdım
+
+285
+00:55:10,163 --> 00:55:14,224
+Peki, teşekkürler
+
+286
+00:55:14,224 --> 00:55:15,584
+Fatih İlhan
+
+287
+00:55:22,132 --> 00:55:28,351
+Fatih İlhan. Tersi değil. Hakan Aktaş.
+
+288
+00:55:32,947 --> 00:55:39,908
+Hakan Aktaş. Peki, ders de değil. Kazım Can, Pekcan.
+
+289
+00:55:39,908 --> 00:55:45,387
+Efendim hocam. Geliyor mu ses? Sesin geliyor, evet.
+
+290
+00:55:45,387 --> 00:55:59,167
+Hocam, ben sonra da benzin tüketimi derken bize toplam benzini mi vermemiz gerekiyor? Onu mu veriyorlar? Yoksa tüketim miktarını mersaniye veriyorlar? Orasını tam anlayamadım.
+
+291
+00:55:59,167 --> 00:56:03,447
+Birinci cümlede ne yazıyor?
+
+292
+00:56:05,288 --> 00:56:10,687
+Benzin tüketimi her taneye bilgi olarak verilmektedir. Saniye başına kullanılan benzin mi?
+
+293
+00:56:10,687 --> 00:56:11,147
+Evet.
+
+294
+00:56:17,300 --> 00:56:20,300
+Sanırım bir cevap vermeyeceksin peki.
+
+295
+00:56:20,300 --> 00:56:25,300
+Hocam verebilirim aslında da. Çizmedim tam olarak.
+
+296
+00:56:25,300 --> 00:56:27,300
+Çizmen gerekiyordu.
+
+297
+00:56:28,300 --> 00:56:32,300
+Bunları toplayıp saniyeye bölerek ortalamasını bulabiliriz.
+
+298
+00:56:32,300 --> 00:56:36,300
+Evet, kağıt üzerinde böyle yapabiliriz ama bunları çizmeniz gerekiyor.
+
+299
+00:56:36,300 --> 00:56:41,300
+Ekranımın gözükmediğini söylüyor arkadaşımız. Ekran gözükmüyor mu?
+
+300
+00:56:41,300 --> 00:56:42,300
+Ben görüyorum.
+
+301
+00:56:42,300 --> 00:56:56,719
+MUNIS sanırım sende ilgili bir sıkıntı var. Çünkü ekran paylaşımım açık. Hatta şöyle bir çizgiyi gezeyim.
+
+302
+00:57:01,060 --> 00:57:11,480
+Arkadaşlar şimdi tabii sınıfta olsa bu işler çok daha kolay olacak. Tek tek sınıf içerisinde gezerek herkesin bunu yapmasına vesile olmaya çalışıyorum.
+
+303
+00:57:11,480 --> 00:57:24,480
+ama şu anda her yerinizi evinizde ziyaret etme mümkün değil. Bunu böyle işi ciddiye yapmazsanız sonra çok geriden gelirsiniz, zorlanırsınız.
+
+304
+00:57:25,380 --> 00:57:35,279
+Ben yine uyarmış olayım. Bu size verdiğim süreler çok değerli süreler. Burada ben anlatıp doğrusunu sizinle paylaşıp geçebilirim başka bir yöntem.
+
+305
+00:57:35,279 --> 00:57:41,739
+ama önemli olan sizin bunun üzerine kafa yorup yapmaya çalışmanız. Yapmanız değil, yapmaya çalışmanız.
+
+306
+00:57:41,739 --> 00:57:58,899
+O yüzden açıkçası sınıfta bir derste olup cevap vermeyenler var. İki, bu konuda ben düşündüm böyle yapılır deyip çizmeyenler var.
+
+307
+00:57:58,899 --> 00:58:01,160
+Arkadaşınıza özel söylemiyorum.
+
+308
+00:58:01,520 --> 00:58:04,219
+Bunu yani farklı şekillerde tespit ediyoruz.
+
+309
+00:58:04,880 --> 00:58:06,520
+Lütfen bu konuyu önemseyin.
+
+310
+00:58:06,520 --> 00:58:10,259
+Şimdi ben dönecek olursam.
+
+311
+00:58:15,443 --> 00:58:24,563
+Burada Start ile başladık. Start'tan sonra ne yapacağımı sormuş olayım.
+
+312
+00:58:31,251 --> 00:58:36,251
+farklı kişiler. Evren.
+
+313
+00:58:40,916 --> 00:58:50,455
+Geliyor. Geliyor mu hocam sözüm? Evet, geliyor. Ben önce bir tane count değişkeni tanımladım. Tamam, peki tanımıyorum. Count.
+
+314
+00:58:55,027 --> 00:59:03,607
+Evra? Evet, evet, buradayım hocam. Evde aynı zamanda tadilat var. Sonra ben for döngüsüyle yaptım da.
+
+315
+00:59:03,607 --> 00:59:10,007
+Count'a sıfır bir değerini atadım, özür dilerim. Tamam, count'a bir atadık. Peki.
+
+316
+00:59:13,007 --> 00:59:24,847
+Sonra ben for döngüsü açtım. Adım sayısı belli mi? Değil ama... Aması yok. Tamam. Yani kusura bakma burada böyle net bir şekilde
+
+317
+00:59:24,847 --> 00:59:32,307
+kesmek zorundayım. Hepiniz için geçerli. Adım sayısı belli değil. Aması yok arkadaşlar. Forlengüsü olmayacak demektir.
+
+318
+00:59:32,368 --> 00:59:37,388
+Wild olacak demektir. Devam etmek ister misin? Başka birine söz vereyim mi?
+
+319
+00:59:37,708 --> 00:59:39,428
+Yok. Edebilirim hocam herhalde.
+
+320
+00:59:39,428 --> 00:59:39,627
+Tamam.
+
+321
+00:59:41,007 --> 00:59:49,928
+O zaman wild şey ne derim? Eşit değil bir derim. Bizim şeyimiz.
+
+322
+00:59:49,928 --> 00:59:53,347
+Wild diyelim. Wild eşit değil bir mi diyeyim? Böyle mi?
+
+323
+00:59:53,347 --> 00:59:55,687
+Yok yok yok bir tane değişken tanınacağız hocam
+
+324
+00:59:55,687 --> 01:00:00,447
+BM diyeyim benzin miktarının şeyi olsun
+
+325
+01:00:00,447 --> 01:00:02,267
+Peki BM diyelim
+
+326
+01:00:02,267 --> 01:00:06,527
+BM eşit değil bir olsun ama eksi değer verebiliyor muyuz burada?
+
+327
+01:00:07,047 --> 01:00:08,068
+Eşit değil bir mi dedim?
+
+328
+01:00:08,708 --> 01:00:10,347
+Eksi bir özür dilerim hocam
+
+329
+01:00:10,347 --> 01:00:15,347
+Bunlar çok önemli özellikle üstünde durmamın sebebi gerçekten bu tür hatalar çok yapılıyor
+
+330
+01:00:15,928 --> 01:00:18,888
+Yani böyle hata yaptığınızda program çalışma özellikle sanayım
+
+331
+01:00:18,888 --> 01:00:27,087
+ama yani şu an canlı olarak yaptığın için hata yapmanda hiçbir sakınca yok. Önemli olan düzeltme. Evet, eksi değer alabiliyoruz tabii ki.
+
+332
+01:00:29,248 --> 01:00:40,568
+Ondan sonra buna true dedim. Bir saniye. Hocam şu an Ford'an döndürmeye çalışıyorum da başka bir arkadaş yapsa aslında ders için daha iyi olabilir.
+
+333
+01:00:40,587 --> 01:00:41,807
+Başka bir arkadaş daha baksın.
+
+334
+01:00:49,043 --> 01:00:50,243
+İbrahim Çolakki
+
+335
+01:00:53,907 --> 01:00:55,907
+Hocam sesin geliyor mu? Yok.
+
+336
+01:00:57,107 --> 01:01:04,407
+Hocam ben de Ford'an yaptırmaya çalıştım ama yani Weil'a şu an çeviremiyorum. Yani Ford'an tam yapılmamıştım ama.
+
+337
+01:01:05,107 --> 01:01:10,627
+Peki. Weil'dan yapan arkadaşımız Selim ve Atakan dışında el kaldırabilir mi?
+
+338
+01:01:11,907 --> 01:01:13,107
+Mehmet Alperen Avça.
+
+339
+01:01:14,807 --> 01:01:20,567
+Hocam şimdi benim kendi kullandığım değişkenleri kullanmak için o değişkenleri değiştirsek olur mu? Yani baştan başlayacak.
+
+340
+01:01:20,567 --> 01:01:26,167
+Yok hayır count 1 ve bm üzerinden gidelim bir şey fark etmez sadece değişken isimlerini değiştireceksin
+
+341
+01:01:26,167 --> 01:01:30,867
+Tamam o zaman ama ben şey yapmıştım while'dan önce iki tane daha değişken tanımlamıştım
+
+342
+01:01:30,867 --> 01:01:32,367
+Neydi o değişkenler?
+
+343
+01:01:32,367 --> 01:01:41,287
+Bir toplam eşittir 0 yaptım bir de x eşittir 0 yaptım o x ileride şey olacak bana verilecek inputlar olacak
+
+344
+01:01:41,287 --> 01:01:45,467
+Tamam peki o zaman şunu silelim
+
+345
+01:01:52,052 --> 01:02:06,651
+Toplam eşittir 0. Evet. Bir de x eşittir 0. x eşittir 0 dememi gerektirecek bir durum yok. Çünkü bana verilecek inputları ben tanımlamak zorunda değilim. İstediğim yerde x'i kullanabilirim.
+
+346
+01:02:06,651 --> 01:02:19,451
+Şimdi ben girişte bir tane output verdim şey için, kullanıcıya bilgi endirmek için. Araba sözü tamamladığında eksi bir değeri giriniz. Ondan sonra wild döngüsüne girdim.
+
+347
+01:02:19,451 --> 01:02:39,331
+Şimdi buraya arkadaşımızın söylediği araba sürüşü tamamladığında eksi bir giriniz ifadesini yazabilirsiniz. Bence bir kere güzel düşünmüş arkadaşımız. Ben bunu detaylı bir şekilde yazmıyorum. Output kutucuğunun içerisine araba sürüşü tamamladığında eksi bir giriniz ifadesi yazıyorsunuz. Evet, devam edebilirsin.
+
+348
+01:02:39,331 --> 01:02:46,452
+Şimdi y döngüsünün koşulunu şey yaptım. X büyük eşittir sıfır yapmıştım. Yukarıda X tanımladığımız için...
+
+349
+01:02:46,451 --> 01:02:56,451
+Tekrar ediyorum. Siz bir yerde bir değişkeni kullanmaya başladığınız yerden itibaren kullanabilirsiniz. Akış diyagramını tanımlamak diye bir şey yoktur.
+
+350
+01:02:58,451 --> 01:02:59,451
+Tamam mı?
+
+351
+01:03:00,451 --> 01:03:03,451
+Bir de eşittir vardı ama gerek yok herhalde.
+
+352
+01:03:03,451 --> 01:03:04,451
+Eşittir.
+
+353
+01:03:04,451 --> 01:03:10,451
+Yani o döngün içinde eksi bir olursa x'im bir daha döngüye girmeyecek. Yani o yüzden eşittir koymaya gerek yok mu şimdi sanırım?
+
+354
+01:03:10,451 --> 01:03:11,451
+Tamam.
+
+355
+01:03:11,451 --> 01:03:15,451
+Ama ilk başta döngüye girer mi bilmiyorum. Şimdi yukarıda x ile ilgili bir şey yok.
+
+356
+01:03:15,452 --> 01:03:28,831
+Şimdi buradaki demek istediğini şimdi anlıyorum ne demek istediğini bunu da zaten belki konuşacaktık. Şu anda bir x değeri almadığımız için sen x değeri almamız gerektiğini söylüyorsun değil mi?
+
+357
+01:03:29,632 --> 01:03:34,352
+Evet yani ilk başta 0 değeri vererek burayı başlamasını istiyorsun değil mi?
+
+358
+01:03:35,552 --> 01:03:35,871
+Evet
+
+359
+01:03:35,871 --> 01:03:45,232
+Tamam o zaman bunu yapabiliriz senin söylediğin gibi ama bunu yapmanın bir başka yolu da
+
+360
+01:03:45,232 --> 01:03:51,632
+göreceksiniz C programlama dilinde olan do while kullanmak. Yani önce işi yapmak, sonra kontrol yapmak.
+
+361
+01:03:51,632 --> 01:04:04,011
+O yüzden biz onu şu anda yapmadığımız için ben x'e sıfır değerini veriyorum. Sonra x büyük eşit sıfır diyorum.
+
+362
+01:04:07,292 --> 01:04:10,272
+While dönüşü içerisine giriyorum. While dönüşü ne yapacağım?
+
+363
+01:04:10,272 --> 01:04:21,951
+Şimdi ilk önce bir tane output çıkardım ben. Burada şey yaptım. Count dedim, virgül dedim, tırnak açtım. Nokta saniyedeki benzin tüketimini giriniz yazdım.
+
+364
+01:04:21,951 --> 01:04:33,691
+Tamam çok sağ olun. Kullanıcıya şöyle ben kısaca yazıyorum. BMH giriniz yazıyorum. Ama senin söylediğin gibi detaylı bir şekilde yazmak doğru olanı. Sonra?
+
+365
+01:04:34,012 --> 01:04:38,272
+Ondan sonra bir tane X için input kutucuğu açtım.
+
+366
+01:04:38,531 --> 01:04:38,811
+Güzel.
+
+367
+01:04:40,272 --> 01:04:42,751
+X dedik.
+
+368
+01:04:44,132 --> 01:04:45,751
+Sonrasında şey yaptım.
+
+369
+01:04:46,232 --> 01:04:47,872
+Bir tane if kullandım.
+
+370
+01:04:48,052 --> 01:04:49,272
+X eşittir, x'i bir için.
+
+371
+01:04:50,092 --> 01:04:52,792
+Yani bu ileride iş mi yarayacak açıkçası.
+
+372
+01:04:52,792 --> 01:04:53,792
+Şimdi siz bir...
+
+373
+01:04:54,691 --> 01:04:55,652
+Nasıl anlaştım şimdi?
+
+374
+01:04:56,492 --> 01:04:58,792
+Yani x eğer x bir ise bu döngü...
+
+375
+01:04:59,971 --> 01:05:01,751
+Döngünün içindeki prosesleri yapmayacağım.
+
+376
+01:05:01,852 --> 01:05:03,671
+Eğer x eksi bir değilse prosesleri yapacağım.
+
+377
+01:05:05,052 --> 01:05:06,671
+O zaman bu çok doğru bir şey değil.
+
+378
+01:05:08,831 --> 01:05:09,451
+Değil mi?
+
+379
+01:05:09,451 --> 01:05:15,272
+Yani şimdi hocam şöyle diyeyim ben anlatamadım kendimi ondan anlamanız büyük ihtimalle
+
+380
+01:05:15,272 --> 01:05:17,272
+Yok ben anladım söylediğini
+
+381
+01:05:17,272 --> 01:05:20,531
+Bunun başka bir yolu olsa gerek
+
+382
+01:05:20,531 --> 01:05:26,111
+Bunu başka bir koşulu olsa gerek bunu yapmadım
+
+383
+01:05:33,268 --> 01:05:35,268
+Yani...
+
+384
+01:05:35,268 --> 01:05:38,268
+Başta kontrol etmedik bunu zaten diyor Emirhan.
+
+385
+01:05:38,268 --> 01:05:51,268
+Ama şimdi x için mesela eksi bir girdiği zaman mesela trueysa eee proses yapmayacağım. Ondan sonra döngü bittiğinde bir daha döngüye girmeyecek. O proses yapmayacak.
+
+386
+01:05:51,268 --> 01:05:54,268
+Yapılması gereken işlemleri söyle sonra ife bakalım.
+
+387
+01:05:54,268 --> 01:06:03,268
+Eee count'u bir arttırıyorum bir de toplamda toplam eşittir toplam yani toplam eşittir toplam artı x yapıyorum.
+
+388
+01:06:03,268 --> 01:06:23,967
+Tamam. Toplam eşittir. Toplam artı x. Böyle değil mi? Evet. Sonra? Ondan sonra ortalama yakıt tüketimi diye bir değer çıkarıyorum. Bunu eşittir diyorum. Toplam bölü count eksi bir yapıyorum.
+
+389
+01:06:49,043 --> 01:06:52,623
+Yani tam böyle değil de buradan da devamını getirebiliriz.
+
+390
+01:06:53,404 --> 01:06:56,463
+Yani tam böyle değil derken bu söylediklerin buna denk gelmiyor.
+
+391
+01:06:56,723 --> 01:07:03,643
+Ben ortalamayı bir tane prosesle çıkardım önce ondan sonra şey yaptım, output verdim o değeri.
+
+392
+01:07:04,663 --> 01:07:11,823
+Ee yani şunu demek istiyorum ortalamayı piketim dedikten sonra hesabı yapıp burada da ortalamayı verebilirsin öyle değil mi?
+
+393
+01:07:12,343 --> 01:07:14,643
+Evet yani böyle de devam ettirebilirsin.
+
+394
+01:07:14,643 --> 01:07:15,923
+Şöyle yapalım o zaman.
+
+395
+01:07:49,331 --> 01:08:02,891
+Şimdi bundan sonra da bir tane şey hani soru da diyordu her saniye için ortalama yakıt tüketimini yazdıran bir algoritma diyordu. Onun için burada ortalamayı yazdırdım şimdi. Tamam, ben de zaten ne yapacağım?
+
+396
+01:08:03,672 --> 01:08:06,491
+Ortalama yakıt
+
+397
+01:08:12,403 --> 01:08:14,403
+Ketin büyük ortalama diyeceğim.
+
+398
+01:08:17,003 --> 01:08:19,563
+Ondan sonra da artık bağladım.
+
+399
+01:08:20,083 --> 01:08:21,364
+Tamam, böyle değil mi?
+
+400
+01:08:23,164 --> 01:08:27,003
+Şimdi hocam burada bir şey düşünmek istiyorum iki saniye de.
+
+401
+01:08:27,503 --> 01:08:29,303
+Şimdi mesela x'e eksi bir girse
+
+402
+01:08:30,324 --> 01:08:31,343
+Bu kullanıcı
+
+403
+01:08:31,603 --> 01:08:34,164
+Ama şu prosesleri bir daha yapacak. Bize
+
+404
+01:08:34,683 --> 01:08:36,723
+Eksi bir girmiş halde bir tane ortalama verecek.
+
+405
+01:08:37,483 --> 01:08:37,744
+Tamam.
+
+406
+01:08:37,744 --> 01:08:38,523
+Onun için
+
+407
+01:08:38,523 --> 01:08:40,563
+X'den sonra bir tane if kullanmıştım eğer
+
+408
+01:08:40,563 --> 01:08:42,404
+eksi bir ise onları yaptırmamıştım.
+
+409
+01:08:43,723 --> 01:08:44,764
+Tamam anladım.
+
+410
+01:08:45,323 --> 01:08:48,563
+Yani zaten onu konuşacağım ama yapılacak işler bunlar değil mi?
+
+411
+01:08:49,444 --> 01:08:53,823
+Evet bir de en sona bir de toplam sürüş sonundaki ortalamayı yazdım bir de.
+
+412
+01:08:54,244 --> 01:08:56,203
+Tamam teşekkür ediyorum.
+
+413
+01:08:56,584 --> 01:08:58,423
+Çıktıktan sonra bu kısmı da yapacağız.
+
+414
+01:08:58,563 --> 01:09:02,404
+Şuradan çıktıktan sonra ortamını sürsüz.
+
+415
+01:09:02,823 --> 01:09:07,783
+Arkadaşlar şimdi arkadaşınız diyor ki ben burada her türde kullanıcıdan bilgiyi alıyorum
+
+416
+01:09:07,783 --> 01:09:12,223
+ve eksi bir girene kadar da bunu devam ettireceğim diyor.
+
+417
+01:09:12,223 --> 01:09:25,183
+Ama en sonuncu adımda kullanıcı eksi bir girdiğinde ben son işlemi yaptığımda ekrana yanlış bir bilgi basacağım.
+
+418
+01:09:25,563 --> 01:09:30,183
+Bunun için her seferine girilen değer eksi bir'e eşit mi değil mi diye kontrol edeyim.
+
+419
+01:09:30,643 --> 01:09:33,383
+Böylece bu işlemleri eksi bir olmadığı sürece yaptırayım diyor.
+
+420
+01:09:34,043 --> 01:09:35,543
+Ne dersiniz? Emirhan?
+
+421
+01:09:35,543 --> 01:09:38,723
+X input'unu en son alsak
+
+422
+01:09:38,723 --> 01:09:44,084
+Duyamadım?
+
+423
+01:09:46,143 --> 01:09:51,723
+X input'unu alıyoruz ya while dönemizin içinde. Onu işlemleri yaptıktan sonra alsak.
+
+424
+01:09:53,003 --> 01:10:01,103
+Mesela önerilerden bir tanesi. Arkadaşınız diyor ki bu input'u alma işini en sonunda yapsak. Olur mu?
+
+425
+01:10:03,103 --> 01:10:04,523
+While'ın içerisinde Atakan?
+
+426
+01:10:05,543 --> 01:10:13,404
+Hocam bence olmaz. O zaman da çünkü ilk vermesi gereken çıktılar boş kalıyor. Yani hata veririm muhtemelen diye düşünüyorum.
+
+427
+01:10:13,484 --> 01:10:16,584
+İlk başlangıca sıfır olarak versek ekranın bir sarın olur mu?
+
+428
+01:10:19,624 --> 01:10:28,363
+Hocam o zaman ikisi sona koyduğumuzda ikisi girmemiş olduğumuz için ilk döngüde, ilk turda orada hata verir bence ikisi değerleri olmadığı için.
+
+429
+01:10:28,443 --> 01:10:30,583
+Çünkü toplama çıkartma yaptırıyoruz ikisi.
+
+430
+01:10:30,583 --> 01:10:49,043
+Ben açıkçası katılmıyorum ama bakalım başka yorumlara. Muhammed Enes'ten bir yorum gelmiş. Bir kez Veya'ya dışında alırız. Veya'ya girmek gerekiyor. Ondan sonra yorumluza hesabı yapıp en sonunda ikisi olarak devam edebiliriz diyor Muhammed Enes. Doğru mu anlıyorum Muhammed?
+
+431
+01:10:56,083 --> 01:10:58,083
+Umut Can'a söz vereyim.
+
+432
+01:10:58,083 --> 01:11:12,083
+Hocam bence bu Wild'in başında x'i hani direkt 0'dan büyük eşittir dediğimiz yerde hani zaten x yakıt tüketimi olduğu için en küçük 0 olabilecek. Direkt x'i ve eşit olmadığı durumları yazarsak bence.
+
+433
+01:11:12,083 --> 01:11:14,083
+Tamam ne yapalım soru x'i de.
+
+434
+01:11:14,083 --> 01:11:21,083
+Şu en başta en alt kısmında Wild'in giriş kısmında x'i 0'dan büyük eşittir yazdık yani işlemleyebilmek için.
+
+435
+01:11:21,083 --> 01:11:26,924
+O V direkt X'in eksi 1'e eşit olmadığı durumları yazsak yani X eşit değildir bir eksi 1 yazsak.
+
+436
+01:11:27,303 --> 01:11:28,583
+Tamam aynı şeye gelecek.
+
+437
+01:11:30,723 --> 01:11:33,264
+Ama o zaman işte eksi 1'de direkt şey olmayacak mı?
+
+438
+01:11:35,104 --> 01:11:38,083
+Yani şu anda da eksi 1'de çıkıyor varlığın üstüne.
+
+439
+01:11:39,304 --> 01:11:39,863
+Evet tamam.
+
+440
+01:11:41,124 --> 01:11:43,703
+Evet şimdi Muhammed'in söylediği üzerinden gidelim.
+
+441
+01:11:44,103 --> 01:11:46,363
+Gelmek istediğimiz noktalardan bir tanesi buydu.
+
+442
+01:11:46,363 --> 01:11:52,983
+bu tür bir şu andaki gibi bir akış çizdiğinizde arkadaşlarınızın söylediği problemlerle karşılaşıyoruz.
+
+443
+01:11:53,603 --> 01:11:55,903
+Onun yerine dizaynı biraz değiştirelim.
+
+444
+01:12:12,979 --> 01:12:30,479
+bir araba sürüşe başladığı zaman mutlaka bir değer gelecektir. O yüzden buraya diyelim ki ilk tüketim değerini girin izleyelim.
+
+445
+01:12:37,108 --> 01:12:39,108
+okuyalım.
+
+446
+01:12:45,779 --> 01:12:47,779
+şuradan
+
+447
+01:12:47,779 --> 01:12:57,779
+şöyle bir ile yukarı gittiğimi varsayalım. Buraya geldik. Hatta şöyle yapayım.
+
+448
+01:12:57,779 --> 01:12:59,779
+bu
+
+449
+01:13:01,587 --> 01:13:08,747
+while diyelim x büyük eşit 0 olduğu sürece
+
+450
+01:13:13,235 --> 01:13:17,435
+döngünün içerisine girdim. Şimdi döngünün içerisinde ne yapacağım?
+
+451
+01:13:21,811 --> 01:13:23,811
+et kimseler ekstar.
+
+452
+01:13:30,195 --> 01:13:31,195
+Atakan?
+
+453
+01:13:31,195 --> 01:13:41,195
+Hocam, eee basit olarak önceki yaptığımızın aynısını yapacağız fakat eee tüketim değerini bu sefer en sonunda isteyeceğiz şeyden.
+
+454
+01:13:41,195 --> 01:13:42,195
+Count?
+
+455
+01:13:42,195 --> 01:13:44,195
+Count artı bir.
+
+456
+01:13:44,195 --> 01:13:46,195
+Doğru mu?
+
+457
+01:13:46,195 --> 01:13:47,195
+Evet.
+
+458
+01:13:47,195 --> 01:13:48,195
+Toplam?
+
+459
+01:13:50,195 --> 01:13:52,195
+Bir şey yazacak mıyız burayı?
+
+460
+01:13:52,195 --> 01:13:59,195
+Eee toplam artı yani en son içinde burası herhalde toplam artı şey yazacağız, girilen değer.
+
+461
+01:13:59,195 --> 01:14:00,595
+X yani.
+
+462
+01:14:00,595 --> 01:14:01,556
+X aynı.
+
+463
+01:14:03,076 --> 01:14:06,596
+Sonra ortalama.
+
+464
+01:14:06,955 --> 01:14:11,096
+Ortalamayı da X bölü count yazacağız.
+
+465
+01:14:11,475 --> 01:14:11,955
+Ha toplam.
+
+466
+01:14:12,935 --> 01:14:14,335
+X bölü count.
+
+467
+01:14:15,876 --> 01:14:22,655
+Ya o saniyedeki ortalamayı X bölü count en sonunda sürüş ortalamasında toplam bölü count olarak çıkarmayacağız mı hocam?
+
+468
+01:14:23,036 --> 01:14:23,376
+Hayır.
+
+469
+01:14:25,975 --> 01:14:26,736
+O saniyedeki.
+
+470
+01:14:26,835 --> 01:14:28,475
+Toplam bölü count o zaman Brasile'de.
+
+471
+01:14:28,475 --> 01:14:30,935
+O saniyedeki ortalama için ne yazacağız Selim?
+
+472
+01:14:32,556 --> 01:14:35,556
+Kağıtı sonra da arttırmamız gerekmez mi ilk başta bir dediğimiz için?
+
+473
+01:14:38,395 --> 01:14:45,855
+Doğru orayı da konuşacağız ama biraz önceki ifadeyi yazıyorum. Toplam bölü count eksi bir.
+
+474
+01:14:45,855 --> 01:15:00,095
+Hocam bu o saniyedeki yakıt ortalaması olduğunda şimdi ortalamayı biz toplam artı toplam toplam artı x dediğimizde her türlü toplam kat kat artmayacak mı?
+
+475
+01:15:00,095 --> 01:15:04,695
+O yüzden bence direkt x bölü count eksi 1 olması lazım o saniyedeki yakıt ortalaması için.
+
+476
+01:15:05,455 --> 01:15:11,415
+Hayır o saniyedeki yakıt ortalaması için x bölü olmaz çünkü saniyelik olarak veriliyor yakıt tüketimi.
+
+477
+01:15:11,675 --> 01:15:15,495
+Sen onları topluyorsun ondan sonra total o zamana kadar geçen süreye bölüyorsun.
+
+478
+01:15:19,731 --> 01:15:25,351
+Yani sen o saniyeye kadar geçen benzin tüketimini toplamını biliyorsun.
+
+479
+01:15:25,351 --> 01:15:26,551
+Kaç saniye geçtiyse?
+
+480
+01:15:26,551 --> 01:15:29,671
+Yok hocam, son bir saniyedeki ortalama olarak yaptım ben.
+
+481
+01:15:29,671 --> 01:15:31,591
+Öbür kısımda bir saniyedeki ortalama olmaz ki.
+
+482
+01:15:31,591 --> 01:15:33,511
+Son bir saniyeden tüketildiyse onu veriyoruz.
+
+483
+01:15:33,511 --> 01:15:35,031
+Son bir saniye, doğru, haksın.
+
+484
+01:15:35,031 --> 01:15:37,752
+Yani onun ortalaması olmaz, o bir saniyelik tüketim zaten.
+
+485
+01:15:38,671 --> 01:15:44,171
+Sonra arkadaşlar tüketim değerine giriniz.
+
+486
+01:15:46,091 --> 01:15:47,091
+Diyoruz.
+
+487
+01:16:01,011 --> 01:16:03,011
+Sonra ikisi okuyoruz.
+
+488
+01:16:09,492 --> 01:16:31,611
+iki ile buraya dönüyoruz. Şimdi sanırım artık biraz önceki gibi bir sorunumuz kalmadı. En son noktada çıktığımızda ne yapacağız? Neyi yazdıracağız? Ya da neyi hesaplayacağız? Total sürüş tüketimini istiyoruz.
+
+489
+01:16:31,611 --> 01:16:36,211
+Evet, Erdek, seni diyorum.
+
+490
+01:16:38,271 --> 01:16:46,352
+Yok hocam, ben soru sordum da şey için dedim, hani ortalama her saniye için vermemiz gerekmiyor muydu, while döngüsü içinde çıktı olarak?
+
+491
+01:16:46,352 --> 01:16:52,091
+Aynen öyle, hemen onu düzeltelim, şurada, teşekkür ederim uyarı için.
+
+492
+01:16:52,791 --> 01:16:53,352
+Rica ederim.
+
+493
+01:16:53,352 --> 01:17:04,352
+şurada port diyelim bir tane ekrana gösterme kutucu yapalım.
+
+494
+01:17:05,631 --> 01:17:09,892
+Şimdi bir de sürüşün sonunda toplam ortalamayı vermemiz gerekiyor.
+
+495
+01:17:09,892 --> 01:17:12,332
+Yani sürüş boyuncaki benzin tüketimini.
+
+496
+01:17:13,811 --> 01:17:16,271
+Ne yazacağız? Nasıl hesaplayacağız?
+
+497
+01:17:27,636 --> 01:17:30,455
+Evet, şu an 58 kişi var. Cevap bekliyorum.
+
+498
+01:17:37,684 --> 01:17:38,684
+Alperen
+
+499
+01:17:41,652 --> 01:17:47,152
+Hocam zaten en son bulduğumuz ortalama değeri sizin istediğiniz değer oluyor sanırım.
+
+500
+01:17:47,152 --> 01:17:52,652
+Heh, bu kadar. Buraya mesaj olarak tuşunu yazdıralım.
+
+501
+01:17:56,948 --> 01:17:59,948
+sürüş ortalaması
+
+502
+01:18:11,060 --> 01:18:12,060
+ve stoptın.
+
+503
+01:18:15,380 --> 01:18:17,939
+Şimdi herhangi bir problem kaldı mı?
+
+504
+01:18:24,083 --> 01:18:26,763
+Evet, bu algoritma doğru çalışırım arkadaşlar.
+
+505
+01:18:41,235 --> 01:18:45,035
+Hemen analiz yapalım hocam. Bizim hocamız vardı, hemen analiz yapardı.
+
+506
+01:18:46,075 --> 01:18:47,595
+Aa, hiç tanıyamadım. Kim acaba?
+
+507
+01:18:49,715 --> 01:18:58,895
+Vallahi bize hep öyle derdi. Yani bize sürekli böyle baktığınızda hiç uğraşmayın. Hemen analizini yapın yanına hemen ki bence en güzeli, en sağlam.
+
+508
+01:18:59,416 --> 01:19:02,156
+Evet ya, bence iyi demiş yani. Onu dinleyelim o zaman.
+
+509
+01:19:04,795 --> 01:19:06,955
+Evet arkadaşlar, şimdi count bir.
+
+510
+01:19:06,955 --> 01:19:09,435
+Hocam analizle geçmeden bir şey sorabilir miyim?
+
+511
+01:19:09,435 --> 01:19:12,595
+İrem
+
+512
+01:19:12,595 --> 01:19:14,455
+Evet tabi İrem sonra verirsin
+
+513
+01:19:14,455 --> 01:19:20,276
+Bu ortalamayı hesapladık ya sonra tüketim değerine giriniz diye niye dedik ben orayı kaçırdım
+
+514
+01:19:20,276 --> 01:19:22,955
+Tamam şimdi onu birlikte konuşacağız zaten
+
+515
+01:19:22,955 --> 01:19:28,575
+Count bir toplam sıfır bir de neye ihtiyacımız var? X'e ihtiyacımız var
+
+516
+01:19:28,575 --> 01:19:32,335
+Ortalamanın bir ilk değeri var mı? Yok
+
+517
+01:19:32,335 --> 01:19:33,855
+Olması gerekir mi?
+
+518
+01:19:37,619 --> 01:19:39,919
+ortalama büyük değer vermek gerekiyor.
+
+519
+01:19:43,796 --> 01:19:59,796
+Ne oldu size ya? Çok iyi gidiyordunuz. Çok memnundum hepinizden. Birden hiç kimseden cevap gelmiyor. Muhtemelen aynı kişiler nasıl olsa söz alamayacağız diye kaldırmıyorlar. Geri kalanda yani nasıl olsa hoca yapıyor diye bakıyor herhalde. Selim söyler misin lütfen?
+
+520
+01:19:59,796 --> 01:20:05,796
+Bence soruna oluşmaz hocam çünkü ortalamayı atadıktan sonra kullanıyoruz hep ortalamayı.
+
+521
+01:20:05,796 --> 01:20:35,595
+çok güzel. Aynen böyle olması gerekiyor. Şimdi x değerini dışarıdan okuduk daha havayla girmeden. Diyelim ki bir litrelik bir yani saniyede bir gösteren bir benzin tüket. Hatta gerçekçi olsun biraz. O yüzden bir demeyelim de. 5 diyelim. 5 oldu. 5 sıfırdan büyük eşit yani x büyük eşit sıfır mı? Evet öyle. Count kaç oldu? 2. Toplam kaç oldu?
+
+522
+01:20:35,796 --> 01:20:54,075
+5. Ortalama 5 bölü 1. 5 oldu. Sonra ikinci saniyedeki bilgiyi alıyoruz. İkinci saniyedeki bilgi diyelim ki 6. 6'ya aldık. 6 büyük eşit 0 mı? Evet.
+
+523
+01:20:54,075 --> 01:21:06,876
+Evet, count 3 oldu, toplam 11 oldu, toplam 11, count-1, 2, 11 bölü 2, ortalama 5.5.
+
+524
+01:21:09,016 --> 01:21:11,615
+Sonra 7 geldi.
+
+525
+01:21:15,859 --> 01:21:33,139
+7, 7'yi ekledik, döndük, büyükeşit sıfır mı evet, 4 oldu, count, toplam 18 oldu, count 4'tü, 1 çıkardık 3, ortalama 6 oldu.
+
+526
+01:21:35,280 --> 01:21:41,859
+Bu şekilde devam edebilir. Burada eksi 1 geldi, büyükeşit sıfır mı diye kontrol ettik, hayır değil.
+
+527
+01:21:41,859 --> 01:21:52,859
+çıkışta da en son ortalamada 6 vardı onu yazdırdık sürüş ortalaması ne alt olduğunu bulduk herhangi bir sorun var mı?
+
+528
+01:21:59,891 --> 01:22:00,891
+Evet Selim.
+
+529
+01:22:01,691 --> 01:22:14,091
+Hocam analize alakalı değil ama ben döngüde girdiğimiz koşul x1 eşittir sıfırı soracaktım. Bunu eksi bir eşit değildir demememiz için özel bir sebebi var mı yoksa fark etmediği için mi öyle yazdık?
+
+530
+01:22:15,772 --> 01:22:21,131
+Mesela eksi bir eşit değildir dediğinde eksi beş değer gelirse
+
+531
+01:22:23,291 --> 01:22:25,491
+Haa o zaman ama eksi beş
+
+532
+01:22:26,771 --> 01:22:29,331
+Araba diyelim yanlışlıkla eksi değer üretti.
+
+533
+01:22:29,891 --> 01:22:35,311
+Anladım. Yanlışlıkla dolu mu anlamı da mı yoksa sadece yanlışlıkla mı üretiyor?
+
+534
+01:22:35,311 --> 01:22:37,472
+Yani hata yaptı. Anladım.
+
+535
+01:22:38,472 --> 01:22:47,472
+Çeketimi yanlış gösterdi ama tabii ki bu burada böyle uygulanabilir ama gerçek hayatta da zaten yani normalde pozitif değerler gireceğini kullanır.
+
+536
+01:22:47,551 --> 01:22:51,511
+Kabul ettiğimiz için her ikisini de yazabilirdik yani yanlış olmazdı.
+
+537
+01:22:52,031 --> 01:22:53,271
+Tamam hocam.
+
+538
+01:22:53,331 --> 01:22:53,831
+Erdi.
+
+539
+01:22:53,831 --> 01:23:03,291
+Hocam, count'u başta sıfır girsek şey içinde zaten bir azaltlık ortalama hesaplarken sıkıntı olmaz değil mi?
+
+540
+01:23:04,231 --> 01:23:09,311
+Bu kısım önemli, bu kısmı aslında Selim Dere Erba bir başında söylemişti.
+
+541
+01:23:09,972 --> 01:23:12,011
+Bu noktaya dikkatinizi çekmek istiyorum.
+
+542
+01:23:13,551 --> 01:23:17,231
+Burada count'u bir arttırıyoruz, şurada da count'u bir azaltıyoruz.
+
+543
+01:23:18,091 --> 01:23:19,112
+O zaman ne yapmak lazım?
+
+544
+01:23:26,739 --> 01:23:30,899
+Hocam, count'ı sıfırdan başlattığımızda böyle bir şeye ihtiyacımız olmuyor.
+
+545
+01:23:30,899 --> 01:23:32,180
+Deneyelim.
+
+546
+01:23:32,180 --> 01:23:35,219
+Yani ben o şekilde yaptığımda öyle bir sıkıntı görmedim.
+
+547
+01:23:35,219 --> 01:23:40,819
+Count sıfır olsaydı sorunumuz çözülür müydü?
+
+548
+01:23:40,819 --> 01:23:44,500
+Diye bakalım.
+
+549
+01:23:44,500 --> 01:23:47,219
+Çözülür mü arkadaşlar bu haliyle?
+
+550
+01:23:47,219 --> 01:23:50,500
+Bir de hocam şu altındaki count-1'i silmemiz gerekiyor.
+
+551
+01:23:50,500 --> 01:23:52,259
+Ortalama toplanabilir count-1.
+
+552
+01:23:52,259 --> 01:23:54,660
+Count-1'i mutlaka silmemiz gerekiyor.
+
+553
+01:23:54,660 --> 01:23:56,179
+Çok önemli.
+
+554
+01:24:06,068 --> 01:24:07,267
+Şimdi oldu mu?
+
+555
+01:24:09,387 --> 01:24:10,747
+Bence bir sorun yok.
+
+556
+01:24:10,747 --> 01:24:12,988
+Evet, bunun Selin?
+
+557
+01:24:14,267 --> 01:24:16,547
+Oldu diyecektim hocam, sor soramayacaktım.
+
+558
+01:24:16,547 --> 01:24:19,747
+Bunun alternatifi ne olabilirdi? Count birden başlasaydı?
+
+559
+01:24:21,667 --> 01:24:22,547
+Emirhan?
+
+560
+01:24:23,668 --> 01:24:29,187
+Ortalama işlemini count artı birden önce yapabiliriz.
+
+561
+01:24:29,187 --> 01:24:32,947
+Aynen. O zaman hemen şöyle gösterelim.
+
+562
+01:24:32,947 --> 01:24:58,367
+o zaman şunların yerinin değişmesi gerekirdi. Önce ortalama işini yapmamız sonra count'u bir arttırmamız gerekirdi. Eğer count bir olarak kalsaydı. İkiz de olur. Herhangi bir sıkıntı yok. Şimdi bu yaptıklarımızdan sonra hala anlaşılmaya sormak istediğiniz bir yer var mı? Ya da önereceğimiz bir yer.
+
+563
+01:24:58,367 --> 01:25:00,568
+Benim soruma cevap vermediniz zaten
+
+564
+01:25:00,568 --> 01:25:01,847
+Affedersin
+
+565
+01:25:01,847 --> 01:25:04,347
+Benim soruma cevap vermediniz zaten
+
+566
+01:25:04,347 --> 01:25:09,367
+Bir saniye şu anda çok özür diliyorum bir saniye hızı rica edeceğim
+
+567
+01:25:59,859 --> 01:26:15,979
+Arkadaşlar, kusura bakmayın beklettiğim için bir telefon geldi, otomatik bilgisayar da bağlı olduğu için çaldı. O yüzden özür dilerim. Kapatmak için içeriye gittim. Beklediğiniz için teşekkür ederim. Kimin sorusu vardı? Biraz önceki arkadaşımız sorusu.
+
+568
+01:26:15,979 --> 01:26:24,219
+Ben hocam, İrem. İrem, dinliyorum seni. Ben demiştim ki bu ortalama hesapladık, sonra tüketim değerine giriniz diye neden yazdık.
+
+569
+01:26:24,219 --> 01:26:51,059
+Çok doğru söylüyorsun İrem ona da cevap verelim. Şimdi biz her adımda yeni saniyenin değerini almamız gerekiyor. İlk değeri döngüye girmeden aldık birinci saniyedeki değeri. Ondan sonra ne yapıyoruz? Hesaplıyoruz ortalamayı. Sonra ikinci saniyenin değerini alıyoruz. Sonra üçüncü saniyenin, sonra dördüncü saniyenin. Her turda yeni bir değer alıyoruz. O yüzden.
+
+570
+01:26:51,059 --> 01:26:53,919
+Anladım. Anladım. Tamam hocam. Teşekkürler.
+
+571
+01:26:54,220 --> 01:27:17,720
+döngüdeki adım sayısı saniyeye denk düşüyor arkadaşlar. Ekstradan saniye için bir şey yapmanıza gerek yok. Her dakikada denebilirdi buna. Ama bununla ilgili özel bir şey yapmanız gerekirse zaten soru da söylenir. Eksi bir değeri geldiği zaman da otomatik olarak döngü sonlanıyor. Burada while kullandık. Niye? Sürüşün ne zaman tamamlanacağını bilmiyoruz. 10 saniyede sürebilir, 50 saniyede sürebilir.
+
+572
+01:27:17,720 --> 01:27:33,819
+3-5 dakikada sürenir, 1 saatte sürenir. Bu gördüğünüz basit algoritmik çözüm şu anda araçlarda kullanılan size ortalama sürüş bilgisini veren çözümle aynı.
+
+573
+01:27:33,819 --> 01:27:40,540
+Hiçbir farkı yok. Araçtaki ortalama yakıt tüketimimiz bu şekilde hesaplanıyor. Gerçek hayattan bir uygulamak olarak düşünebilirsiniz.
+
+574
+01:27:42,179 --> 01:27:43,319
+Soru soru ama.
+
+575
+01:27:44,819 --> 01:27:46,760
+Hocam ben bir şey sorabilir miyim?
+
+576
+01:27:46,759 --> 01:27:58,739
+İsim? Asude. Evet Asude. Mesela her saniye demeseydi de her dakikaya da atıyorum 10 saniyede bir deseydi bizim nereyi değiştirmemiz gerekecekti?
+
+577
+01:27:58,739 --> 01:28:16,739
+Şimdi şöyle burada bir varsayımımız var. Burada her turun bir saniyeye karşılık geldiğini kabul ediyoruz. Bunu da program yazarken, implemente ederken program içerisinde bir zaman bekletme
+
+578
+01:28:16,739 --> 01:28:23,759
+komutu var. O komuta giriyoruz ve sizden saniyede bir bilgi almasını sağlayabiliyoruz.
+
+579
+01:28:23,819 --> 01:28:29,959
+Aslında araçtaki durumu da aynı şekilde düşünebilirsiniz. Size belli periyotlarla bu bilgiyi veriyor.
+
+580
+01:28:29,959 --> 01:28:37,659
+Ama dakikada bir deseydik bu sefer dakikalık ortalama verebilecektik. Yani biz burada saniyelik ortalama veriyoruz.
+
+581
+01:28:38,379 --> 01:28:41,899
+Bunun dışında farklı nasıl bir senaryo bu aklıma gelmiyor açıkçası.
+
+582
+01:28:41,899 --> 01:29:11,459
+çünkü dakikada bir dediğinizde saniyelik bir ortalama verme şansınız yok size dakikada bir bilgi geliyor ama şunu yapabilirsiniz örneğin şu an saniyelik bilgi alıyoruz 60 tanesi bir araya geldiğinde dakikalık ortalama yalıştırıyor işte bu kontrolü yapıp 60 tane de bir dakikalık ortalamanız şu diye bilgi verebilirsiniz o zaman if'in içerisinde bir if koymanız ve count 60 olduğunda
+
+583
+01:29:11,459 --> 01:29:15,019
+dakikalık ortamınız şudur diye bir mesaj verebilirsiniz.
+
+584
+01:29:16,839 --> 01:29:22,859
+Tamam hocam teşekkür ederim. Rica ederim. X'leri verilerken aracınızına göre gelişi güzel oldu mu?
+
+585
+01:29:24,859 --> 01:29:30,319
+Ne demek bu Ender Vefat? Sesle lütfen mikrofonda.
+
+586
+01:29:31,719 --> 01:29:36,499
+X'leri verilerken hocam aracınızına göre veriledik.
+
+587
+01:29:38,559 --> 01:29:40,099
+Anlayamadım demek istediğini.
+
+588
+01:29:40,099 --> 01:29:44,599
+X'ler genişi güzel sayılar mı buldu? Herhangi bir şey mi buldu?
+
+589
+01:29:46,659 --> 01:29:50,599
+Şimdi X'ler genişi güzel olarak düşünmeyeceksiniz.
+
+590
+01:29:51,123 --> 01:29:57,303
+burada bu x'leri biz dışarıdan veriyoruz. Normal günlük hayatta da aracın ürettiği bir değer var.
+
+591
+01:29:57,303 --> 01:30:05,163
+O ürettiğiniz değeri bu algoritmayı verdiğinizde size tüketimi veriyor. Arka planında bunun fizikle alakalı olan bölümünü
+
+592
+01:30:05,163 --> 01:30:15,003
+ya da işte tüketimle aracın mekanik aksamıyla vesairesiyle alakalı bölümünü zaten hesaba katmıyoruz. Bu x bize verildiğini varsayıyoruz.
+
+593
+01:30:15,003 --> 01:30:22,003
+Ama Selim'in yazdığı gibi analizdeki x'leri rastgele mi verdik? Evet rastgele verdik.
+
+594
+01:30:27,220 --> 01:30:38,220
+Bunun hızıyla vesairesi aracın alakası yok ama gerçek hayatta evet, hızın vesairenin, oradaki yokuşun, devirin, sürtümme kuvvetinin vesaire hepsinin etkisi var.
+
+595
+01:30:38,220 --> 01:30:47,220
+Aracın yükünü, bunların hepsi tek tek aracın tüketimine etki ediyor. Ama sonuçta bu tüketimi hesaplayan bir sensör var.
+
+596
+01:30:47,220 --> 01:31:07,260
+işte o borudan geçen benzin miktarı. Siz o benzin miktarına bağlı olarak aracın anlık tüketimini ekranda görüyorsunuz. Bir de saniyeler verildikçe aracın ortalama tüketimini görüyorsunuz. Başka soru soru? Evet Elif.
+
+597
+01:31:07,260 --> 01:31:20,780
+Hocam hani yani eğer hiç döngünün içine girmeseydi de ortalamanın toplam böyle kant olduğunu bilir miydi? Hani onu döngüde tanımladık ya.
+
+598
+01:31:20,999 --> 01:31:36,900
+Şimdi güzel bir soru aslında. Buraya dikkat çekmesi arkadaşınızın iliği. Buraya yazıyorum. Normalde ortalamanın burada sıfır olarak tanımlanmasının şöyle bir artı soru. Biz gerek yok dedik ama
+
+599
+01:31:36,900 --> 01:31:49,900
+eğer araç ilk tüketim değerine girip yani bir saniye çalışıp durduysa o zaman ortalamanın döngüye girmeden hesaplanması gerekebilir.
+
+600
+01:31:50,800 --> 01:31:53,800
+Ortalama sıfır demeyelim o zaman. Şöyle yapalım.
+
+601
+01:31:57,587 --> 01:31:58,787
+şurada
+
+602
+01:31:58,787 --> 01:32:00,887
+eee
+
+603
+01:32:00,887 --> 01:32:03,587
+orta
+
+604
+01:32:03,587 --> 01:32:06,087
+x değerini atayalım
+
+605
+01:32:06,087 --> 01:32:09,087
+o zaman bir sorunumuz kalmayacaktır diye düşünüyorum.
+
+606
+01:32:09,087 --> 01:32:12,087
+Tamam, teşekkürler.
+
+607
+01:32:15,028 --> 01:32:21,028
+herhangi bir sıkıntı oluşmayacaktır. Bunlar exceptional case'ler. Yani bir saniye çalışıp
+
+608
+01:32:21,028 --> 01:32:28,427
+döngüye girmediyse, o zaman daha doğrusu bir kez döngüye girdiyse diye düşünüyoruz. İlk tüketim değerini
+
+609
+01:32:28,427 --> 01:32:37,827
+eksi bir girmek hiç çalışmadığı anlamına geliyor. O çok doğru değil açıkçası. Tabii bunu böyle yazdım ama şimdi bakıyorum.
+
+610
+01:32:37,827 --> 01:32:45,707
+ilk tüketim değerini 0 girdiysek gene girecek, 1 girdiysek gene girecek.
+
+611
+01:32:48,708 --> 01:32:53,167
+Her harikarda bir tek eksi 1 girildiği zaman girilmeyecek.
+
+612
+01:32:54,167 --> 01:33:00,107
+Eksi 1 olsaydı ortalama değer eksi 1 gözükecek o zaman da arabanın çalışmalarını anlıyor olacaktık.
+
+613
+01:33:00,107 --> 01:33:02,807
+Bu şekilde yazmamızda herhalde bir sakınca yok.
+
+614
+01:33:03,587 --> 01:33:06,107
+Bir sonraki...
+
+615
+01:33:06,107 --> 01:33:11,107
+Evet, algoritma ya, geçeceğiz.
+
+616
+01:33:22,068 --> 01:33:28,548
+Evet, bir bakalım elimizde ne var diye.
+
+617
+01:33:43,923 --> 01:33:46,223
+final sınav notları
+
+618
+01:33:50,931 --> 01:33:56,931
+tek tek girilen
+
+619
+01:34:02,644 --> 01:34:23,644
+ya da bunu şimdi sormayın, birazdan soralım daha mantıklı olacak biz önce konumuza bir giriş yapalım ondan sonra bu soruyu yapsak daha güzel olacak. Şimdi eraylar, konstantlar ve değişkenler.
+
+620
+01:34:27,220 --> 01:34:45,720
+Şimdi, A dediğiniz zaman, 5 dediğiniz zaman bir atama yaptığınızda, burada A1 değişken, B de bir constant, pardon B diyorum, 5 de bir constant oluyor.
+
+621
+01:34:45,720 --> 01:35:02,599
+Bu mutlaka tam sayı olmak zorunda değil. X diyelim, 3.2 diyelim. Bir tanesi tam sayı değişken iken diğeri kesirli sayı değişkeni oluyor. Tipler farklılık gösterebilir.
+
+622
+01:35:09,300 --> 01:35:12,379
+aynı şekilde kesilisiyle tam sabitleyin.
+
+623
+01:35:15,731 --> 01:35:35,731
+olarak da adlandırabiliriz. Şimdi bir değişken sadece bir değer saklar arkadaşlar. Peki biz aynı tipte birden fazla değişken saklamak istiyorsak ne kullanıyoruz? Dizi yapısını kullanıyoruz. Bellekte bu bilgiler arka arkaya saklanıyorlar.
+
+624
+01:35:39,796 --> 01:35:40,796
+Olay.
+
+625
+01:35:45,140 --> 01:35:55,940
+dizimiz olsun. Bu dizide 3, 6, 7 elemanlı olsun. Şimdi diziyi kullanırken köşeli parantezlerden faydalanacağız.
+
+626
+01:35:55,940 --> 01:36:11,140
+Köşeli parantezler içerisinde hangi elemanına erişmek istiyorsak onun bilgisini yazıyor olacağız. Bu mesela 7 elemanlık bir dizi ve dizi 7 yazdığımız zaman dizinin 7. elemanına erişmek istediğinizi söylemiş oluyorsunuz.
+
+627
+01:36:11,140 --> 01:36:21,559
+Dizinin ince sanırım şu anda bir sıkıntı var.
+
+628
+01:36:21,739 --> 01:36:23,220
+Kalemimin şarjı bitmiş olabilir.
+
+629
+01:36:23,860 --> 01:36:25,660
+Aslında ara vermek için de çok güzel bir zaman.
+
+630
+01:36:25,779 --> 01:36:26,860
+Tam zamanı denk geldi.
+
+631
+01:36:28,140 --> 01:36:29,220
+Bir ara verelim 10 dakika.
+
+632
+01:36:29,320 --> 01:36:30,540
+Bu sırada ben de şarj edeyim.
+
+633
+01:36:32,919 --> 01:36:34,059
+Birazdan devam edelim.
+
+634
+01:36:34,140 --> 01:36:35,879
+10.41, 10.51'de devam edelim.
+
+635
+01:36:36,320 --> 01:36:36,900
+Görüşmek üzere.
+
+636
+01:37:41,619 --> 01:37:50,299
+Normalde sizin hazırlıktan tanışıyor olmanız gerekmiyor mu arkadaşlar? Çoğunuz hep farklı sınıflardaydınız. O yüzden tanışmıyorsunuz değil mi?
+
+637
+01:38:51,891 --> 01:39:11,152
+kötü abi ya yemin ederim yani üniversitenin birinci sınıfa başlıyorsun onu da evden başlıyorsun ama neyse ya sorun yok. En azından Mart'tan sonra daha büyük güzel bir gazla başlar. Tahminim öyle.
+
+638
+01:39:47,412 --> 01:39:52,812
+Çok iyi bilmiyorum diller konusunu ama baktığım kadarıyla hepsi birbirinin aynısı abi.
+
+639
+01:39:53,971 --> 01:40:02,271
+Aynısı dediğim yani çok benzerlikleri var. Mantığı aynı ama pronunciation farklı.
+
+640
+01:40:03,412 --> 01:40:11,771
+O farklı yoksa yani Python'ın, Python'da da döngü aynı şekilde yani döngü kuruyorsun ama farklı tipte kuruyorsun.
+
+641
+01:40:11,771 --> 01:40:14,871
+ama o işi yapmak için döngü kurman gerektiğini biliyorsun.
+
+642
+01:40:15,031 --> 01:40:17,411
+Veya CD, şartta fark etmiyor.
+
+643
+01:40:18,211 --> 01:40:25,031
+Ama belli bir yerden sonra özellikle bu algoritma kısmından sonra çok daha böyle oturuyor birçok şey.
+
+644
+01:40:25,131 --> 01:40:30,431
+Oturduktan sonra zaten diller, diller zaten o bizim için çocuk oyuncağı.
+
+645
+01:46:53,011 --> 01:46:58,011
+Evet arkadaşlar, yeniden merhaba. Kaldığımız yerden devam edelim.
+
+646
+01:47:00,011 --> 01:47:11,411
+Dizileri konuşuyorduk. Bu sırada chat ortamından bazı yazışmalar olmuş. Dizi dediğimiz liste mi oluyor?
+
+647
+01:47:12,011 --> 01:47:20,411
+Dizi dediğimiz aynı tıktaki elemanları arka arkaya, bellekte birlikte saklamak için kullandığımız bir veri yapısı.
+
+648
+01:47:20,411 --> 01:47:48,291
+Tek boyutlu dizileri konuşuyoruz şu anda. Hemen yazalım. One dimensional array diye. Tabii bunların two dimensional olanları var. Matriz olarak adlandırılıyor. Üç boyutlu, dört boyutlu diziler de tanımlayabiliyorsunuz. İlk programlama dilinde. Bunları görüyor olacağız ama ilk başta biz dizilerle başlıyor olacağız. En elemanlı dizilerde elemanları saklıyor olacağız.
+
+649
+01:47:48,291 --> 01:47:58,291
+Dizinin ilk gözü C programlama dilinde dizi sıfır olarak adlandırılır. Ondan sonraki gözleri bir bir artarak devam eder.
+
+650
+01:47:58,291 --> 01:48:09,751
+Ve burada yedi tane eleman saklarsınız toplamda. Yani işte beş olsun, bir olsun, dört olsun, eksi bir olsun, sıfır olsun, sekiz ve dokuz olsun.
+
+651
+01:48:09,751 --> 01:48:31,751
+Burada dizinin ilk elemanı 5 değerine sahiptir. Dizinin son elemanı 9 değerine sahiptir. Dizinin boyutu number of elements değil.
+
+652
+01:48:36,787 --> 01:48:47,987
+burada 7'dir. Tabii ki şimdi burada şunu da söyleyebilirsiniz hemen onu da yazalım.
+
+653
+01:48:51,028 --> 01:48:57,028
+diziye sıfırıncı göze, n-1. göze kadar mı erişmek zorundayız? Hayır.
+
+654
+01:48:57,028 --> 01:49:00,028
+algoritmik gösterimde
+
+655
+01:49:00,028 --> 01:49:06,028
+1, 2, 3, 4, 5, 6, 7 olarak da
+
+656
+01:49:06,028 --> 01:49:07,028
+diziyi
+
+657
+01:49:09,028 --> 01:49:11,028
+dizi 1'den
+
+658
+01:49:11,028 --> 01:49:15,028
+dizi 7'ye kadar da erişebilirsiniz.
+
+659
+01:49:15,028 --> 01:49:19,028
+ama C programımı değilimdir. Bu dizi sıfırdan
+
+660
+01:49:19,028 --> 01:49:33,908
+dizi 6'ya kadar olacak şekilde bellekte saklanıyor. Buna dikkat etmek gerekiyor. Önemli olan dizi kullanımında başlangıç indisinizi ne olarak kabul ettiğiniz.
+
+661
+01:49:33,908 --> 01:49:41,147
+İlk etapta çözeceğimiz sorularda dizinin birden başladığını ve n'e kadar gittiğini kabul edeceğiz.
+
+662
+01:49:41,147 --> 01:49:58,108
+Dizi 1'den başlayacak, dizi n'e kadar gidecek. C programının modelinde dizi 0'dan başlayacak, dizi n-1'e kadar gidecek.
+
+663
+01:49:58,108 --> 01:50:11,428
+ve de dizinin boyutunu bize gösteriyor olacak. Bununla ilgili tanımlama yaptığınız zamanı sizinle paylaşıyor olacağım ama
+
+664
+01:50:11,428 --> 01:50:20,167
+önemli olan bunun bellekte nasıl yer aldığı ona bir bakmak. Memory diyelim.
+
+665
+01:50:26,771 --> 01:50:55,771
+daha uzatalım. Burada mesela şurada bir A değişkenimiz var. 5 burada saklanıyor diyelim. x değişkenimiz var. 3.2 burada saklanıyor diyelim. Burayı berlekte ne olduğunu bilmiyoruz. Bir de dizi sıfırıncı gözde yer alan eleman buraya 5 olarak gelecek. Dizi bir de yer alan eleman 1 olarak gelecek.
+
+666
+01:50:56,771 --> 01:51:09,271
+tisi, iki de yer alan eleman, dört olarak gelecek. Bu şekilde, hexadecimal, sıfır, sekiz ve dokuz aşağıda olacak şekilde bu belliye yerleşmiş olacak.
+
+667
+01:51:09,271 --> 01:51:10,891
+Peki, adrese bakalım.
+
+668
+01:51:13,691 --> 01:51:26,271
+Diyelim ki adres burada sıfır, x, bin ve integer bir değer sakladığımızı kabul edelim ve bu mimaride de dört byte'lık bir yer kapladığını söyleyebiliriz.
+
+669
+01:51:26,771 --> 01:51:30,472
+o zaman bil, değerli, milyarleşti, adres ne olur.
+
+670
+01:51:36,372 --> 01:51:41,651
+dizinin ikinci elemanı yani dizi biliniarleştiği adres ne olur?
+
+671
+01:51:49,716 --> 01:51:51,716
+4 byte olduğunu unutmayın.
+
+672
+01:51:54,015 --> 01:51:58,016
+Bir integer sayı 4 byte'lık yer kaplıyor.
+
+673
+01:52:12,724 --> 01:52:24,843
+Arkadaşlar, 4 byte'lık yer kapladığı için bir sonraki elemanın adresi 1004 olacaktır. Bir sonraki elemanın adresi kaç olur?
+
+674
+01:52:29,684 --> 01:52:38,684
+1008 olur. Yani şu anda 5, 1000, 1001, 1002 ve 1003 adresini işgal ediyor demek.
+
+675
+01:52:38,684 --> 01:52:52,684
+5 değeri. 1 değeri 1004, 1005, 1006, 1007 adresini işgal ediyor demek. Peki, eksi 1 yani dizinin 4. elemanına yani dizi 3
+
+676
+01:52:52,684 --> 01:52:56,684
+kaçta yer alıyor?
+
+677
+01:53:04,564 --> 01:53:10,564
+Hocam, şu an yazdığımız şey ondalık sistemde. Enfem ben kafam karıştı bir tık orasının neye göre olduğundan.
+
+678
+01:53:10,564 --> 01:53:12,564
+Bir daha sorar mısın? Sorun duyamadım.
+
+679
+01:53:12,564 --> 01:53:16,564
+Şu an bu yazdığımız bin sayısı ondalık sistemde herhalde değil mi? Ben...
+
+680
+01:53:16,564 --> 01:53:19,564
+Hayır, hexadecimal.
+
+681
+01:53:22,547 --> 01:53:42,547
+başında 0x var. 0x gördüğünüz zaman bu bir hexadecimal. Evet, Kazım camdan doğru cevap geldi. Bir sonraki adres 0x100c olacak. Peki 0 değeri hangi adreste yer alır?
+
+682
+01:53:49,332 --> 01:53:53,332
+16 olacağı için 0, 1, 0, 1, 0 olacak.
+
+683
+01:53:55,332 --> 01:53:58,332
+Ve 8'de 0, x
+
+684
+01:53:59,832 --> 01:54:02,332
+1014 ablis ile yer alacak. Şimdi
+
+685
+01:54:02,832 --> 01:54:18,332
+dizinin elemanları gördüğünüz gibi bellekte sıra ile arka arkaya saklanıyor. Aralarına başka bir şey girme ihtimali yok. Ama değişkenlere baktığımızda a ve x değişkenlerine a benleğin bir bölgesinde x de başka bir bölgesinde saklanabilir. Burada arada bir tane
+
+686
+01:54:19,332 --> 01:54:38,451
+yani şöyle yazılmakta 0x0 0 0 0 8 olsun. Burası 0x0 0 C olsun. Bu da 0x0 0 1 0 olsun.
+
+687
+01:54:39,192 --> 01:54:45,271
+Benleğin bu bölümünde aşağıya doğru devam eden bölümünde farklı bir adres bloğu olduğunu kabul edebilirsiniz.
+
+688
+01:54:45,271 --> 01:54:50,692
+Yani şu kısım bellekte başka bir yalan, şu kısım da bellekte başka bir yalan.
+
+689
+01:54:52,591 --> 01:55:05,912
+Ama burada önemli olan şey şu, dizilerdeki değerler, dizilerde saklanan değerler kontinuos bir şekilde arka arkaya olacak şekilde saklanıyor.
+
+690
+01:55:05,912 --> 01:55:06,431
+Evet Selim.
+
+691
+01:55:07,671 --> 01:55:09,211
+Hocam ben şey sormak istiyordum.
+
+692
+01:55:09,391 --> 01:55:13,811
+Mesela sayı 4 byte'lik yer kaplıyor ya mesela 4 diyelim.
+
+693
+01:55:13,811 --> 01:55:18,611
+şimdi bilgisayar bu beylekteki bu dörde erişmek için sonuçta adresinin bilmesi gerekiyor.
+
+694
+01:55:18,711 --> 01:55:23,591
+Adres için de ayrı bir alan tutuyor mu? Beylikte nasıl erişiyor diye soracaktım.
+
+695
+01:55:25,171 --> 01:55:35,171
+Şöyle değişkenleri tanımladığınız zaman program değerlenirken o değişkenlerin hangi adreste olduğu bilgisi tabii ki saklanıyor.
+
+696
+01:55:35,791 --> 01:55:40,311
+Siz o değişkeni çağırdığınız zaman o bellekteki adrese yönlendiriyorsunuz.
+
+697
+01:55:41,691 --> 01:55:42,731
+Anladım hocam sağ olun.
+
+698
+01:55:42,731 --> 01:55:47,571
+ama bu yani her değişken için bir kez saklanan bir değer.
+
+699
+01:55:51,572 --> 01:55:53,572
+Evet, başka soru sorun var mı?
+
+700
+01:55:56,979 --> 01:56:01,239
+Burada anlaşılmayan bir şey, dizi ile ilgili sormak istediğiniz bir şey.
+
+701
+01:56:05,171 --> 01:56:08,531
+Peki. Şimdi o zaman...
+
+702
+01:56:19,796 --> 01:56:21,796
+78 diye.
+
+703
+01:56:37,076 --> 01:56:40,076
+en kişiden oluşan bir sınıfta
+
+704
+01:56:45,011 --> 01:56:51,011
+final notları açıklanmıştır.
+
+705
+01:56:55,188 --> 01:57:01,668
+Ortalamanın altında kalan öğrenciler
+
+706
+01:57:01,668 --> 01:57:05,667
+Başarılı
+
+707
+01:57:05,667 --> 01:57:08,507
+Pardon, başarısız
+
+708
+01:57:08,507 --> 01:57:10,907
+Öğrenciler başarısız
+
+709
+01:57:15,123 --> 01:57:17,463
+eşit ve üstünde
+
+710
+01:57:22,515 --> 01:57:31,875
+öğrencılar başarılı kabul edilmektedir.
+
+711
+01:57:40,435 --> 01:57:41,435
+başarılı
+
+712
+01:57:43,435 --> 01:57:44,435
+öğrencilerin
+
+713
+01:57:55,380 --> 01:57:56,659
+kaçıncı
+
+714
+01:57:57,679 --> 01:57:58,699
+sırada
+
+715
+01:58:00,499 --> 01:58:01,259
+olduğu
+
+716
+01:58:02,799 --> 01:58:03,819
+bilgisini
+
+717
+01:58:05,880 --> 01:58:06,639
+bulan
+
+718
+01:58:08,439 --> 01:58:10,739
+algoritma, akış diyagramı, çizemiz.
+
+719
+01:58:21,779 --> 01:58:45,779
+Evet, sorumuz bu. Dışarıdan en tane kişinin final notu bilgisi okunacak, bir diziye okunacak. Sonra bu öğrencilerin notları üzerinden başarısız ve başarılı olanları bulup, başarılı öğrencilerin hangi sırada yer aldığı bilgilerini paylaşıyor olacağız.
+
+720
+01:58:45,779 --> 01:59:01,140
+Şimdi en tane öğrenci grubumuz var diyelim. Biri 20 alsın, biri 100 alsın, biri 80, değeri 70, 60, 50, 90 almış olsun.
+
+721
+01:59:01,140 --> 01:59:11,399
+Bu bir örnektir. Buradaki en değeri 3, 6, 7'dir. Ama en değerini her zaman değişken olarak en olarak almamız gerekiyor.
+
+722
+01:59:11,399 --> 01:59:20,479
+Şimdi bu noktada yapmamız gereken işlem nedir? Sadece kağıt üzerine bu işi yapıyor olsaydık ne yapacaktık? Hemen bana kim sorabilmek ister?
+
+723
+01:59:23,559 --> 01:59:24,179
+Berkay?
+
+724
+01:59:24,899 --> 01:59:26,099
+Ortalamaları alacaktık önce.
+
+725
+01:59:27,099 --> 01:59:35,479
+Evet hepsini toplayacağız. Ondan sonra da kaç kişiyse o sayıyı bulacağız. Ortalamayı bulacağız. Sonra ne yapacağız Berkay?
+
+726
+01:59:35,479 --> 01:59:44,179
+Ondan sonra hepsini karşılaştıracağız ve şöyle düşündüğünüz bir şeyi ortalamdan çıkartacağız pozitif aneklis almışsak öyle. Ortalamanın altının üstünde mi onu bulmamız gerekiyorsa.
+
+727
+01:59:44,179 --> 02:00:01,619
+Tamam peki. Yani basit bir ortalama bulma ve ortalamanın üstünde altında yer alma problemi. Bunun farklı versiyonlarını günlük harakta görüyorsunuz. İlk etapta start ile başlıyorum. Hatta şöyle yapalım.
+
+728
+02:00:05,747 --> 02:00:07,747
+Start buraya yazayım.
+
+729
+02:00:09,747 --> 02:00:21,747
+Dışarıdan önce, dışarıya yazacağım output mesajlarını yazmıyorum. Doğrudan inputları alıyorum. Siz bunlara dikkat ederseniz daha fazla örnek çözebilmek adına.
+
+730
+02:00:21,747 --> 02:00:25,747
+Ne aldım? Enden sonra neleri alacağım arkadaşlar?
+
+731
+02:00:26,747 --> 02:00:31,747
+Sınıftaki öğrencilerin final notlarını tek tek okuyacağım.
+
+732
+02:00:31,747 --> 02:00:34,747
+Hepsini bir arada okumuyorum.
+
+733
+02:00:35,747 --> 02:00:37,247
+I kaçtan başlayacak?
+
+734
+02:00:41,684 --> 02:00:44,583
+Birden başlayabilir hocam. Kaça kadar gidecek?
+
+735
+02:00:46,483 --> 02:00:47,983
+N'e kadar gidecek.
+
+736
+02:00:47,983 --> 02:00:49,283
+N'e kadar gidecek.
+
+737
+02:00:49,783 --> 02:00:59,083
+İçeride A dizisine tek tek Öncü gözünü okuma yapıyor.
+
+738
+02:01:01,284 --> 02:01:08,883
+Gene buraya ilgili öğrencinin notuna girmeniz diye bir mesaj output koymadım. Doğrudan değerleri aldım.
+
+739
+02:01:08,883 --> 02:01:12,663
+Hocam o A ne anlamadım ben?
+
+740
+02:01:14,443 --> 02:01:15,383
+A ne arkadaşlar?
+
+741
+02:01:20,180 --> 02:01:21,800
+Malmut, Malmudo?
+
+742
+02:01:21,800 --> 02:01:26,999
+Hocam, A, buradaki öğrencilerin hepsinin notlarının Ereği.
+
+743
+02:01:26,999 --> 02:01:31,799
+A, öğrencilerin notlarını sakladığımız dizi.
+
+744
+02:01:31,799 --> 02:01:33,119
+E, dizi.
+
+745
+02:01:33,119 --> 02:01:34,939
+Tamamdır.
+
+746
+02:01:34,939 --> 02:01:35,939
+Senin?
+
+747
+02:01:35,939 --> 02:01:42,940
+Hocam, ben dizi olduğunu anladım ama ilk başta bunu tanımlamamız gerekmez miydi diğer değişken ayda?
+
+748
+02:01:42,940 --> 02:01:56,580
+Tekrar söylüyorum. Şimdi bu bir ereğ. OneDyneVeginalEreğ. Nasıl değişkenleri tanımlamıyorsak diziyi de tanımlamayacağız akış diyagramında.
+
+749
+02:01:57,680 --> 02:02:07,419
+Tanımlama yapacağımız yer programlama yaparken. Orada göreceksiniz int diyeceğiz, a diyeceğiz, yüz diyeceğiz.
+
+750
+02:02:07,419 --> 02:02:10,099
+yüzlük bir alan açacağız.
+
+751
+02:02:12,099 --> 02:02:16,499
+C programlarında. Evet, Emir Can bir sorusu var ya var. Emirhan ya da.
+
+752
+02:02:16,699 --> 02:02:30,079
+Şöyle hocam, şunu sormak istiyorum. Şimdi biz ortalama bulmak için önce bunların toplamı bulmamız gerekiyor ve toplam bir değişken şey tanımlayıp onu for dönüşsüne koysak koymamız gerekmiyor mu?
+
+753
+02:02:30,080 --> 02:02:51,080
+yapabiliriz ama ben burada okuma işini ve işi yapmayı ayrı göstermek istiyorum. Okuduğumuz yerde bu toplama hesaplayabilirdik ama ben onu tercih etmiyorum. Çünkü şu anda öğrenme aşamasındasınız. Yapacağımız şey okuma işi bittikten sonra önce...
+
+754
+02:02:56,051 --> 02:03:05,531
+bir tane toplam değişkenine sıfır değeri atamak. Sonra for döngüsü içerisinde
+
+755
+02:03:05,531 --> 02:03:21,531
+ö birden başlayarak n'e kadar toplam eşittir toplam artı a i demek.
+
+756
+02:03:29,363 --> 02:03:47,083
+Ortalama bulma işini döngü içerisinde yapmıyorum arkadaşlar. Niye her adımda ortalama hesaplamamı gerektirecek bir durum yok? O yüzden çıktıktan sonra ort diyorum, toplam bölüm ne diyeceğim?
+
+757
+02:03:47,083 --> 02:03:48,964
+Ben diyeceğim.
+
+758
+02:03:51,475 --> 02:03:54,295
+Artık ortalama var. Bundan sonra ne yapacağım?
+
+759
+02:03:58,515 --> 02:03:59,515
+Emircan?
+
+760
+02:04:01,515 --> 02:04:07,515
+Bir tane daha fordöngüs yapacağız. Bu da bize verilen bütün elemanların ortalamadan düşük olup olmadığını bulmak için.
+
+761
+02:04:07,515 --> 02:04:10,515
+Tamam. Bir tane daha fordöngüsüne ihtiyacımız var.
+
+762
+02:04:14,355 --> 02:04:32,855
+gene birden başlayacak, E ne kadar gidecek ve bunu da yapmam gereken ne olacak kontrol olarak farklı bir kişilik olsun. Mesela Yasemin At Hoca.
+
+763
+02:04:37,747 --> 02:04:39,747
+Yasemin Hatvaca
+
+764
+02:04:42,899 --> 02:04:44,899
+Peki, tu wütçes tu son?
+
+765
+02:04:51,188 --> 02:04:57,727
+Tuğçe, susan. Peki, derste yok. Orçun Çelik.
+
+766
+02:05:01,844 --> 02:05:03,123
+Orçun Çelik
+
+767
+02:05:06,204 --> 02:05:17,203
+Peki, derste yok. Mikrofonda katılmadığınız sürece derste olmadığınızı kabul ediyorum. Bir soru sorduğum zaman cevap vermenizi bekliyorum. Muhammed Ali Buğday.
+
+768
+02:05:21,844 --> 02:05:23,103
+Muhammed Ali Buğday.
+
+769
+02:05:26,244 --> 02:05:27,744
+Muhammed Ali Lale.
+
+770
+02:05:29,623 --> 02:05:31,724
+Hocam soruyu tekrar alabilir miyim?
+
+771
+02:05:33,043 --> 02:05:37,483
+Soru şu andaki for bölgüsü içerisinde ne yapmam gerekiyor?
+
+772
+02:05:40,344 --> 02:05:43,403
+Hocam ben bilemedim.
+
+773
+02:05:44,323 --> 02:05:45,764
+Ne yaptığınızda farkında mısın?
+
+774
+02:05:45,764 --> 02:05:52,204
+Açıkçası hocam
+
+775
+02:05:52,204 --> 02:05:54,783
+Döndükten sonra biraz
+
+776
+02:05:54,783 --> 02:05:56,783
+Bir beş dakikada
+
+777
+02:05:56,783 --> 02:05:58,244
+Biliksel başına ayrılmış oldum
+
+778
+02:05:58,244 --> 02:06:00,123
+Kaçırdım sonra da dinleyerek
+
+779
+02:06:00,123 --> 02:06:02,483
+Anlamaya çalıştım ama biraz koptum aslında
+
+780
+02:06:02,483 --> 02:06:04,364
+Peki Kerim Sadıkoğlu
+
+781
+02:06:04,364 --> 02:06:08,083
+Buradayım hocam da ben bilmiyorum
+
+782
+02:06:08,083 --> 02:06:08,903
+Ne yapacağımızı
+
+783
+02:06:08,903 --> 02:06:11,863
+Neyin peşindeyiz peki soruda
+
+784
+02:06:11,863 --> 02:06:14,443
+Hocam şu an kişilerin
+
+785
+02:06:14,443 --> 02:06:19,903
+Sınav sonuç ortalamasını alıp ona göre de kimin geçip kimin kaldığını bulmaya çalışıyoruz döngüde.
+
+786
+02:06:19,983 --> 02:06:21,803
+Elimizde ortalama bilgisi var mı şu an?
+
+787
+02:06:22,123 --> 02:06:22,803
+Hayır.
+
+788
+02:06:24,844 --> 02:06:26,583
+Varmış. Pardon özür dilerim.
+
+789
+02:06:27,303 --> 02:06:30,543
+Tamam var. Elimizde öğrencilerin not bilgileri var mı?
+
+790
+02:06:31,083 --> 02:06:31,543
+Var.
+
+791
+02:06:32,183 --> 02:06:33,603
+O zaman ne yapmamız gerekiyor?
+
+792
+02:06:35,363 --> 02:06:41,163
+Yani şu an tek tek bakıp şey yapmamız gerekiyor. Ortalamanın altında mı üstünde mi onu bulmamız gerekiyor.
+
+793
+02:06:41,284 --> 02:06:43,344
+Bakalım tek tek. Ne yazacağım?
+
+794
+02:06:44,443 --> 02:06:47,223
+İf içerisine.
+
+795
+02:06:49,303 --> 02:06:53,543
+Eğer ortalamanın üstündeyse true koluna, yalnızsa false koluna götüreceğiz.
+
+796
+02:06:53,564 --> 02:06:54,963
+Ağzına ne yazacağım if'i?
+
+797
+02:06:57,443 --> 02:06:59,303
+Sınav sonucunu yazacağız.
+
+798
+02:07:00,803 --> 02:07:02,643
+İfteki kontrol edeceğin koşul nedir?
+
+799
+02:07:04,603 --> 02:07:05,844
+Bilmiyorum hocam.
+
+800
+02:07:06,844 --> 02:07:08,443
+Kendim biraz önce ağzında söyledin.
+
+801
+02:07:10,543 --> 02:07:12,043
+Dotlarına bakacağız dedim.
+
+802
+02:07:12,683 --> 02:07:14,204
+Ortalamayı karşılaştıracağız dedim.
+
+803
+02:07:14,443 --> 02:07:17,403
+Notlarını nerede saklıyoruz?
+
+804
+02:07:19,723 --> 02:07:20,803
+Bilmiyorum.
+
+805
+02:07:22,303 --> 02:07:26,024
+Gözüküyor. Ekranda yazıyor. Söyleyene kadar devam edeceğim.
+
+806
+02:07:28,384 --> 02:07:29,823
+Bilmiyorum hocam.
+
+807
+02:07:30,763 --> 02:07:33,683
+Biz öğrencilerin notlarını hangi değişkene okuduk?
+
+808
+02:07:34,523 --> 02:07:35,284
+En başta yazıyor.
+
+809
+02:07:36,243 --> 02:07:36,704
+En ne?
+
+810
+02:07:37,784 --> 02:07:39,383
+En öğrenci sayısını gösteriyor.
+
+811
+02:07:44,307 --> 02:08:14,287
+Bir fikrim yok hocam şu an. Okuma yaptığımız bir tane daha değişken var? A. Tamam. Demek ki A dizisinde öğrencilerin notlarını saklıyoruz. O zaman şimdi ne ile neyi karşılaştırmam gerekiyormuş? A ile N'i. Tamam. Peki A ile N'i karşılaştıracağım ya. A'nın N mi dedin? Evet. N değil. Neydi ortalama bilgisini sakladığımız değişken?
+
+812
+02:08:14,287 --> 02:08:16,648
+Toplam bölüğe
+
+813
+02:08:16,648 --> 02:08:19,168
+Onu nerede saklıyoruz?
+
+814
+02:08:22,739 --> 02:08:26,739
+Hangi değişiklikler? Bilmiyorum değil, ekranda yazıyor.
+
+815
+02:08:26,739 --> 02:08:27,739
+Iğmocum.
+
+816
+02:08:27,739 --> 02:08:29,739
+Ekranda yazıyor.
+
+817
+02:08:29,739 --> 02:08:31,739
+İğmocum.
+
+818
+02:08:36,435 --> 02:08:44,355
+Görüyor musun benim ekranımı? Görebiliyorum hocam. Toplam bölü en nerede saklanıyor? Ortalamada. Teşekkür ederim.
+
+819
+02:08:48,692 --> 02:09:16,692
+Başka bir arkadaşımıza geçelim. Ne yazıcam? Mehmet. A, I yazmamız lazım hocam. A, I yazıcaz. Tur'u kolunda ne yapıcam? Ben daveteyim mi? Evet lütfen. Tur'uysa başarılı olduğunu söyleyeceğiz. Tur'uysa ekrana ne yazıcaz? Öğrenci başarı yazıcaz.
+
+820
+02:09:16,692 --> 02:09:19,052
+Öğrenci ve öğrenci başarı şekli
+
+821
+02:09:19,052 --> 02:09:21,931
+I yazıyorum. Mesajları yazmıyorum.
+
+822
+02:09:23,611 --> 02:09:24,692
+Fos konuda bir şey çakmayın.
+
+823
+02:09:27,772 --> 02:09:29,291
+Sadece başarıları yazdıracak.
+
+824
+02:09:29,291 --> 02:09:30,251
+Evet.
+
+825
+02:09:33,171 --> 02:09:34,412
+3 yazdım.
+
+826
+02:09:35,232 --> 02:09:37,651
+Hocam afedersiniz bir tık bölüyor gibi oldu ama
+
+827
+02:09:37,651 --> 02:09:41,092
+A, I büyük eşittir. Ortalama dememiz gerekmiyor mu?
+
+828
+02:09:41,511 --> 02:09:42,912
+Evet. Kim söyledi?
+
+829
+02:09:43,811 --> 02:09:44,532
+Atakan hocam.
+
+830
+02:09:44,532 --> 02:10:06,212
+Evet Atakan aynen öyle bunu tamamlamayı bekliyordum. Özellikle böyle yazdım. Bu noktada büyüktür derseniz sorunun istediği cevabı tam olarak vermiş olmazsınız. Biz ne demiştik? Ortalamanın altında kalan öğrenciler başarısız, eşit ve üstünde kalan öğrenciler başarılı demiştik. O yüzden büyük eşit ortalama yapmamız gerekiyor.
+
+831
+02:10:06,211 --> 02:10:24,251
+ve bu şekilde her adımda A, I, Büyük, Eşit, Orta kontrol ettiğimizde bunu sağlayan öğrencinin kaçıncı sırada ise işte birinci sıradaki öğrenci bunu sağlıyorsa birinci bir yazdırıyoruz.
+
+832
+02:10:24,251 --> 02:10:27,692
+İkinci sıradaki öğrenci bunu sağlıyorsa iki yazdırıyoruz gibi düşünebilirsiniz.
+
+833
+02:10:28,351 --> 02:10:34,671
+Şimdi bir fikir gelmiş, Ağrıda söylemiş bir dizi daha oluştursak, başarılı öğrencileri orada tutsak olur.
+
+834
+02:10:35,471 --> 02:10:36,151
+Bunu da yapacağız.
+
+835
+02:10:36,211 --> 02:10:42,791
+Ama ilk etapta sadece dizi üzerinde bir işlem yapmanın nasıl olduğunu göstermek istedim.
+
+836
+02:10:43,431 --> 02:10:48,011
+Şimdi buraya kadar bu algoritmik çözümle ilgili bir solu sola var mı?
+
+837
+02:10:50,831 --> 02:10:54,031
+Ben anlamadım bu değişken ne için kullanılacak.
+
+838
+02:10:54,391 --> 02:10:54,891
+Emir Hal.
+
+839
+02:10:55,771 --> 02:10:58,591
+Hocam en son output'unu verdik ya.
+
+840
+02:10:59,111 --> 02:10:59,371
+Evet.
+
+841
+02:10:59,371 --> 02:11:04,751
+O hani kaçıncı sırada olduğu dediği dizinin içindeki sıra mı?
+
+842
+02:11:05,111 --> 02:11:05,451
+Evet.
+
+843
+02:11:05,451 --> 02:11:11,011
+Ben hani puan sıralaması yapacağız sanmıştım başta da
+
+844
+02:11:11,011 --> 02:11:15,951
+He orada benim hatam olmuş olabilir belki onu çok iyi ifade edemedim
+
+845
+02:11:15,951 --> 02:11:21,371
+Kaçıncı sırada olduğu derken burada indis bilgisini istiyorum dizinin indisi
+
+846
+02:11:21,371 --> 02:11:25,111
+Şu kısma indeks
+
+847
+02:11:25,111 --> 02:11:29,431
+Türkçesiyle indis diyoruz
+
+848
+02:11:34,996 --> 02:11:38,835
+köşeli parantezler içerisindeki kısmı. Evet, başka soru sola?
+
+849
+02:11:44,435 --> 02:11:56,555
+Şimdi birinci turda, burada öğrenci sayısını okuduk. N yerine değişken ismin olarak ne kullanabilirdim? Öneri sola.
+
+850
+02:11:58,707 --> 02:12:00,707
+Hocam, affedersiniz, duyamadım ama.
+
+851
+02:12:01,827 --> 02:12:06,627
+N yerine, N yerine, değişken ismi olarak ne kullanabilirdim?
+
+852
+02:12:07,607 --> 02:12:09,347
+Öğrenci sayısı kullanabiliriz bence.
+
+853
+02:12:09,407 --> 02:12:11,267
+Mesela, öğrenci sayısını diyebilirdik.
+
+854
+02:12:12,747 --> 02:12:15,107
+Gelelim ikinci kısma.
+
+855
+02:12:15,767 --> 02:12:16,907
+Bu kısımda neleri okuyorum?
+
+856
+02:12:17,567 --> 02:12:21,827
+Bu kısımda tek tek öğrencilerin notlarını okuyorum.
+
+857
+02:12:23,048 --> 02:12:26,027
+Birinci turda A1'e birinci öğrenci.
+
+858
+02:12:26,027 --> 02:12:44,587
+İki, I2 olduğunda ikinci öğrenci, I3 olduğunda üçüncü öğrenci olmak üzere her turda öğrenci bilgilerini okuyorum. Sonra işim bitti, okumayı tamamladım.
+
+859
+02:12:44,587 --> 02:12:59,747
+ortalamayı doğru bulmak için toplama sıfırı değerini veriyorum. Şu gördüğünüz döngüde tek tek tüm öğrencilerin notlarını topluyorum. Ama ortalama bulma için döngü içinde yapmıyorum.
+
+860
+02:13:00,507 --> 02:13:08,928
+Döngüden çıktıktan sonra bir kez yapıyorum. Her seferinde de yapabilirim ama gerek yok. Ortalamayı hesapladım.
+
+861
+02:13:08,928 --> 02:13:17,987
+sonra bu ortalamayı hesaplarken ortalamayı daha bilmediğim için başarılı öğrencilere karar veremem.
+
+862
+02:13:18,788 --> 02:13:21,048
+O yüzden bu for dönüşsünde kontrol yapamıyorum.
+
+863
+02:13:22,288 --> 02:13:26,288
+Ortalamayı bulduktan sonra bir sonraki döngüye giriyorum.
+
+864
+02:13:26,288 --> 02:13:34,407
+Tek tek tüm öğrencilerin notları A, I, büyük eşit ortalamadan mı diye bakıyorum.
+
+865
+02:13:34,987 --> 02:13:36,788
+Öyleyse başarılı diyorum.
+
+866
+02:13:36,787 --> 02:13:43,187
+burada mesaj yazmadım sadece öğrenci numaradan yazdım. Sonra da döngüyü bir terapistopla durdurdum.
+
+867
+02:13:44,147 --> 02:13:50,547
+N sıfır olunca otel veriyor sanırım ama kontrol etmeyecektik. Frostchart'ta. Selim N niye sıfır olsun?
+
+868
+02:13:58,899 --> 02:14:07,360
+Selim, boş sınıf olur belki. Boz sınıfı not ortalamasını hesaplamamamız gerekiyor.
+
+869
+02:14:07,360 --> 02:14:15,279
+Hocam, aslında araba, az önceki soruda mesela, az önceki ya da ön önceki araba mesela eksi değer dönebilir dedik ya, bir hata sonucu oluşabilir.
+
+870
+02:14:15,279 --> 02:14:18,679
+O bakımdan dedim aklımda geldi açıkçası.
+
+871
+02:14:18,679 --> 02:14:25,679
+Doğru söylüyorsun ama şunu söylemekte fayda var. Orada bir sensör değer üretirken hata üretebilir.
+
+872
+02:14:25,679 --> 02:14:32,919
+kullanıcı da hata yapabilir ama burada artık kullanıcının sınıftaki öğrenci sayısının doğru verdiğini kabul ediyoruz.
+
+873
+02:14:33,039 --> 02:14:40,279
+Örneğin 5 yerine 6 da verebilir, bir öğrenciyi uğurtup da verebilir. Bunlar hep kullanıcı hataları.
+
+874
+02:14:40,760 --> 02:14:45,699
+Artık kullanıcı ene, eksi, girmiş, sıfa girmiş. Buraları çok düşünmüyoruz. Bunların kontrolünü genelde.
+
+875
+02:14:45,699 --> 02:14:48,679
+Tamam, siz sen söylediğini şimdi daha iyi anladım hocam.
+
+876
+02:14:50,039 --> 02:14:53,260
+Kullanıcının bunu kontrolü bir şekilde yaptığını kabul edebiliriz.
+
+877
+02:14:53,260 --> 02:14:56,980
+Hocam ben de bir soru sorabilir miyim?
+
+878
+02:14:57,000 --> 02:14:57,359
+Buyurun
+
+879
+02:14:57,359 --> 02:15:07,260
+Bu şimdi ilk okuma adisini ilk döngümüzde birden ene kadar okuyoruz ya diziye yani şu öğrencinin şunu tutuşu
+
+880
+02:15:07,260 --> 02:15:15,399
+bunu yaparken öteki döngüdeki, por döngüsündeki toplama işlemini bu döngünün içerisinde yapsak
+
+881
+02:15:15,399 --> 02:15:22,039
+deminki benzin ortalama hız problemi gibi hangisi daha hızlı, hangisi daha verimli bizim için?
+
+882
+02:15:22,039 --> 02:15:30,999
+teşekkür ederim bu sorun için. Buradaki işi alıp bu döngüye okuma sırasında aynı anda yapabilirsiniz.
+
+883
+02:15:31,399 --> 02:15:41,539
+Kesinlikle bu şu andaki haline göre daha hızlı çalışacaktır. Çünkü en defa dönüyorsunuz burada, burada bir en defa daha dönüyorsunuz.
+
+884
+02:15:41,539 --> 02:16:01,219
+Ama benim bunu şu anda iki tane ayrı şekilde yazmamın sebebi okuma işini ve yaptığımız işi birbirinden ayırmak ve ilgili kısımların daha iyi anlaşılmasını sağlamak için. Ama bu işi burada yapsaydınız kesinlikle yanlış olmazdı ve yapabildiniz.
+
+885
+02:16:01,700 --> 02:16:02,459
+Anladım hocam.
+
+886
+02:16:03,379 --> 02:16:07,439
+Yani bu tamamen öğretmek amaçlı yapılmış bir yazım şeklidir.
+
+887
+02:16:07,439 --> 02:16:11,659
+Anlaşılmıştır. Teşekkür ederim.
+
+888
+02:16:11,959 --> 02:16:14,499
+Evet. Başka soru soru var mı?
+
+889
+02:16:19,731 --> 02:16:22,291
+Şimdi o zaman sonraki
+
+890
+02:16:24,331 --> 02:16:26,131
+sorumuza geçeceğiz.
+
+891
+02:16:36,340 --> 02:16:42,840
+Hocam, başarılı öğrencilerin kaçıncı sırada olduğunu bulmayacak mıydık bu bize onu verecek mi direkt?
+
+892
+02:16:46,840 --> 02:16:50,840
+Şurada kaçıncı sırada olduğunu buluyoruz?
+
+893
+02:16:52,840 --> 02:16:55,340
+Ha o anlamda tamam anladım.
+
+894
+02:16:55,340 --> 02:17:00,340
+Şimdi herkes için bir kez daha soruyorum. Bu soruya bir kez cevap vermiştim.
+
+895
+02:17:00,340 --> 02:17:04,840
+Ama bir kez daha söyleyeceğim çünkü bu soruyu bir arkadaşınız daha sordu.
+
+896
+02:17:04,840 --> 02:17:12,360
+kaçıncı sırada derken öğrencinin dizide hangi gözde olduğunu bilgisine ihtiyacımız var.
+
+897
+02:17:13,060 --> 02:17:17,700
+Öğrencinin başarı notunun kaçıncı sırada olduğunu değil, listedeki sıra numarası.
+
+898
+02:17:18,540 --> 02:17:19,479
+Anladım hocam, tamam.
+
+899
+02:17:36,115 --> 02:17:38,515
+bir şehrin
+
+900
+02:17:41,940 --> 02:17:52,139
+365 günlük sıcaklık bilgisi verilmektedir.
+
+901
+02:17:52,139 --> 02:18:08,139
+Yılı en soğuk ve en sıcak günlerini bulup
+
+902
+02:18:08,139 --> 02:18:21,659
+sıcaklık değerleri ile birlikte ekrana yazdıram.
+
+903
+02:18:25,620 --> 02:18:29,620
+Aşı diyelim, çizim.
+
+904
+02:18:37,459 --> 02:18:43,859
+Şimdi, dışarıdan hangi değerler alacağız, hangi inputlar gelmesi gerekiyor onu sorayım önce.
+
+905
+02:18:47,252 --> 02:18:49,252
+Evet, Muhammed Kasap.
+
+906
+02:18:49,252 --> 02:19:14,252
+365 günün sıcaklık bilgisi lazım. Evet, sadece 365 günün 365 tane sıcaklık değerini alacağız. Dışarıdan başka bir kaç tane bilgi alacağımızı, n sayısını almayacağız. Sayı belli, 365 tane alacağız. Şimdi, burada...
+
+907
+02:19:13,620 --> 02:19:27,120
+böyle bir diziye okuma yaptığımızı var mısınız? Değerler ne olacak mesela söyleyebilir misiniz?
+
+908
+02:19:31,219 --> 02:19:34,539
+23, 12, 32
+
+909
+02:19:34,539 --> 02:19:36,600
+Daha hassas olabilir mi?
+
+910
+02:19:37,619 --> 02:19:39,160
+Nasıl yani hocam?
+
+911
+02:19:39,919 --> 02:19:41,719
+Yani ölçümü yapan
+
+912
+02:19:41,980 --> 02:19:44,779
+Olabilir evet hocam. Ne mesela?
+
+913
+02:19:45,299 --> 02:19:47,859
+33,5 olabilir mesela.
+
+914
+02:19:47,859 --> 02:19:49,900
+Ya da 33,52 olabilir direkt.
+
+915
+02:19:50,159 --> 02:19:51,699
+7.2
+
+916
+02:19:51,959 --> 02:19:53,240
+8.4
+
+917
+02:19:53,499 --> 02:19:55,279
+Eksi 2.4 gibi
+
+918
+02:19:55,539 --> 02:19:56,819
+Veriler olabilir, doğru mu?
+
+919
+02:19:57,339 --> 02:19:58,359
+Evet hocam.
+
+920
+02:19:58,619 --> 02:20:00,659
+Sıfır da olabiliriz, doğru olarak.
+
+921
+02:20:00,659 --> 02:20:10,219
+bu şekilde 5, 7, 6.0 diyelim, 5.0 diyelim, 7.1 diyelim, 8.2 diyelim.
+
+922
+02:20:11,519 --> 02:20:13,419
+Bu şekilde değerler veriliyor size.
+
+923
+02:20:14,080 --> 02:20:21,659
+Siz bunların içerisinde, 2, 3, 4, yılın ilk gününü 1 Ocak olarak da kabul edebilirsiniz.
+
+924
+02:20:23,479 --> 02:20:28,299
+O mantıkla daha kafanızda senaryo oluşturmak adına bu şekilde devamı var.
+
+925
+02:20:28,299 --> 02:20:30,619
+365'e kadar devam ediyor.
+
+926
+02:20:38,036 --> 02:20:43,155
+Şimdi, nasıl bir mantıkla ilerleyelim?
+
+927
+02:20:53,332 --> 02:20:55,332
+farklı kişiler olsun.
+
+928
+02:20:55,332 --> 02:20:57,332
+Bu meydanlar.
+
+929
+02:20:57,332 --> 02:21:11,332
+Hocam, en büyük ve en küçük değerleri burada yani iki tane bilinmeyen mi diyeyim.
+
+930
+02:21:11,332 --> 02:21:13,332
+Bayağı zorlandın beydanlar.
+
+931
+02:21:13,332 --> 02:21:17,332
+Kelimeyi unuttum hocam. Değişken evet.
+
+932
+02:21:17,332 --> 02:21:25,131
+Bu sınıfta gördüğüm en belirgin özellik kafanızda bir şey tasarlıyorsunuz ama bunu anlatırken ciddi bir sıkıntı var.
+
+933
+02:21:28,724 --> 02:21:30,763
+İki tane değişken şey yapalım hocam.
+
+934
+02:21:31,643 --> 02:21:32,963
+En büyük ve en küçük.
+
+935
+02:21:34,403 --> 02:21:35,043
+Belirleyelim.
+
+936
+02:21:36,123 --> 02:21:36,363
+Peki.
+
+937
+02:21:40,064 --> 02:21:40,663
+Oradan
+
+938
+02:21:40,663 --> 02:21:45,443
+şey, before döngüsüyle tek tek
+
+939
+02:21:45,443 --> 02:21:48,583
+her birini
+
+940
+02:21:48,583 --> 02:21:53,543
+bir öncekinden büyük olup ya da küçük olup olmadığını deneye deneye gösterebilirsin.
+
+941
+02:21:55,023 --> 02:21:57,363
+Şimdi, Emine hocam bir soru soru var.
+
+942
+02:21:57,363 --> 02:22:10,584
+bize direkt olarak, dizi olarak veriliyor. Arkadaşlar bu değerler dışarıdan 365 adımda okunacak. Biraz önce yaptığımız diyor. Tek tek bu değerleri alacağız. Evet, biraz önce Mahmut'a söz vereyim.
+
+943
+02:22:12,203 --> 02:22:27,343
+Hocam, şöyle bir şey yapabiliriz. Yani eğer modülleri falan saymıyorsak, en büyük en küçük gibi. Mesela for şeyinde tüm değerler, yani mesela bir değeri seçenekler,
+
+944
+02:22:27,363 --> 02:22:36,904
+veya tüm değeri Ford'a seçip daha sonra bunu başka bir Ford'a tüm değerlerle kıyaslayıp en büyük ve en küçüğü bulabiliriz mesela gibi düşünüyorum.
+
+945
+02:22:36,904 --> 02:22:39,063
+Peki. Emin Hanım'ın sözü vereyim.
+
+946
+02:22:40,543 --> 02:22:57,183
+Bu hepsini diziye tanıdıktan sonra tekrar Ford'a seçimde şey diyecek. Farklı bir değişken bulalım mesela, atayalım ya da. Sonra işte o dizideki her yer alan için bundan büyük mü diye kontrol edip eğer büyükse o değişken yerine
+
+947
+02:22:57,183 --> 02:23:23,743
+dizideki elemanı atasak? Tamam, olabilir. Teşekkür ederim. Emirhan? Şöyle aslında aynı şey benim Emirhan'la. İlk başta for döngüsüyle bütün elemanları bir diziye ekleyeceğiz. Ondan sonra da iki tane işte bir tanesi maksimum, bir tanesi minimum olmak üzere değişken belirleyip onları ilk listenin ilk elemanına atayacağız. Sonra sürekli bunları kontrol edeceğiz. Büyük mü, küçük mü diye if döngüleri kontrol edeceğiz.
+
+948
+02:23:23,743 --> 02:23:28,803
+Tamam. Ağustos'a söz istiyorsa 10 kez ona söz vereyim sonra ben anlatacağım.
+
+949
+02:23:29,623 --> 02:23:39,944
+Hocam hepsini tek tek birbiriyle karşılaştırmak yerine en azından sıfırdan büyük dereceler ve sıfırdan küçük dereceler diye belki gruplasak biraz daha kolaylaşır mı?
+
+950
+02:23:40,363 --> 02:23:51,023
+Bilmiyoruz. Şu anda sen gözle gördüğün için düşünüyorsun. Bilgisayar bundan hiçbirini görmüyor. Kim sıfırdan büyük, kim sıfırdan küçük bilmiyoruz. O yüzden o söylediği yapma şansımız yok.
+
+951
+02:23:51,024 --> 02:23:55,484
+Ben şimdi size kısaca ne yapılması gerektiğini anlatacağım
+
+952
+02:23:55,484 --> 02:24:02,063
+Dizideki ilk edemanı elinize alacaksınız 33.5
+
+953
+02:24:02,063 --> 02:24:06,184
+Sonra geri kalan edemanlarını karşılaştıracaksınız
+
+954
+02:24:06,184 --> 02:24:08,343
+33.5 7.2'den büyük mü?
+
+955
+02:24:09,783 --> 02:24:11,363
+Hatta soruyu şöyle soracaksınız
+
+956
+02:24:11,363 --> 02:24:13,304
+7.2 33.5'dan büyük mü?
+
+957
+02:24:14,363 --> 02:24:14,704
+Değil
+
+958
+02:24:14,704 --> 02:24:16,604
+8.3 büyük mü? Değil
+
+959
+02:24:16,604 --> 02:24:19,164
+Eksi 2.4 büyük mü? Değil
+
+960
+02:24:19,164 --> 02:24:32,744
+tek tek hepsini kontrol edeceksiniz. Ne zaman ki şurada mesela 34.0 değerini gördünüz. O zaman artık bu değeri saklayacaksınız. 34.0 değerini.
+
+961
+02:24:33,363 --> 02:24:40,944
+Bundan sonraki adımda bu tarafa doğru ilerlerken artık soracağınız soru yeni değeriniz 34.0'dan büyük mü?
+
+962
+02:24:40,944 --> 02:25:00,744
+Yani ilk etapta kendinize bir maksimum belirlemeniz gerekiyor. Buradaki maksimum belirlerken dışarıdan bir değer verebilirsiniz ama daha akıllıca olanı dizinin ilk elemanını maksimum olarak kabul etmek. Minimum için de aynı şey geçirir. Minimum arıyorsunuz diyelim.
+
+963
+02:25:00,743 --> 02:25:09,363
+33.5 minimum dediniz. Sonra 7.2, 33.5'dan küçük mü dediniz? Evet küçük. O zaman yeni minimumumuz 7.2 olacak.
+
+964
+02:25:09,963 --> 02:25:17,903
+Artık onu saklayacaksınız. Üçüncü eleman artık soruyu sorduğunuzda 8.3 küçük mü? 7.2'den sorusu olacak.
+
+965
+02:25:19,683 --> 02:25:25,583
+Dışarıdan değer vermek neden riskli? Sorusuna da cevap verelim. Ayrıca riskli demiş.
+
+966
+02:25:25,584 --> 02:25:27,923
+siz eğer en küçük değeri
+
+967
+02:25:28,564 --> 02:25:57,363
+örneğin, yani maksimum değeri sıfır dediyseniz, ondan hepsi büyük olacağını kabul ederseniz, o zaman mesela o sınır içerisinde değerlerden yer almayabilir. Örneğin siz sıfır belirlemişsiniz ama daha düşük değerler, eksi iki var, eksi beş var, eksi yedi var ya, çok uç noktalarda değerler vereceksiniz. Diyeceksiniz ki eksi bin derece olamaz, bin derece olamaz. Maksimum ve minimum değerlerini öyle belirleyeceksiniz.
+
+968
+02:25:57,363 --> 02:26:23,823
+Ama buradaki problemde uygun, eksi 100 ya da 100 diyebilirsiniz. Genelde bu sıcaklıktan çok karşılaşmıyoruz. Hadi Sibirya'da eksi 100 ölçüldü diyelim, eksi 500 olsun. 100 derece zaten ölçülme ihtimali normal bir şekilde mümkün değil. O yüzden 100 değerinde maksimum ve minimum için eksi 100 ve 100'ü kullanabilirsiniz.
+
+969
+02:26:23,823 --> 02:26:33,343
+Fakat daha farklı maksimum ve minimum bulma değerlerinde bu maksimum ve min değerlerini range bilemeyeceğiniz için belirleyemeyebilirsiniz.
+
+970
+02:26:33,343 --> 02:26:38,203
+O yüzden her zaman ilk eleman maksimum ve min olarak kabul edilir.
+
+971
+02:26:38,924 --> 02:26:41,244
+Ve bundan sonra geri kalan elemanlarla karşınızda sınırlar.
+
+972
+02:26:41,943 --> 02:26:48,023
+Ve bu maksimum ve min bulma işini birçok problemle karşınıza çıkacaktır, göreceksiniz.
+
+973
+02:26:48,983 --> 02:26:50,943
+Bir soru vardı, o soruyu alayım.
+
+974
+02:26:54,772 --> 02:26:56,772
+bir el kattı yanlış görmeyiz.
+
+975
+02:26:56,772 --> 02:27:02,772
+Hocam ben kaldırdım da. Şimdi biz en büyüğü ve en küçüğü ayrı ayrı bulmuş olacağız ya bu şekilde.
+
+976
+02:27:02,772 --> 02:27:03,772
+Evet.
+
+977
+02:27:03,772 --> 02:27:09,772
+Peki bunu aralık olarak yapsak olmaz mıydı mesela 33.5 ile 7.2'nin arasında olsa?
+
+978
+02:27:09,772 --> 02:27:14,772
+Eğer yanlış çıkarsa ona göre diğerine uç kısma koyardık.
+
+979
+02:27:15,772 --> 02:27:19,772
+Tam demek istediğini anlamadım. Yani aralık olmasına neden ihtiyaç var ki?
+
+980
+02:27:19,772 --> 02:27:22,772
+Şimdi bu şekilde daha hızlı bulmuş olmaz mıyız?
+
+981
+02:27:22,772 --> 02:27:47,032
+yok. Hayır. Hepsini tek tek kontrol etmeniz gerekiyor zaten. Buradaki değerleri bilgisayar görmüyor, tekrar ediyorum. İki tane çizgi çizdiğinizde bu iki çizginin baktığınızda paralel olduğunu söyleyebilirsiniz siz insan olarak. Buna aşağı yukarı karar veriyorsunuz ama gerçekten bunun paralel olup olmadığını bilgisayara gösterdiğinizde bilgisayara veri vermeniz lazım.
+
+982
+02:27:47,031 --> 02:28:05,712
+Emirhan da Maximum'la ilgili güzel bir bilgi vermiş. Maximum'un verdiğin değerden daha büyük bir değer, yani Maximum'a verdiğin değerden dizideki tüm değerlerden daha büyükse bu durum sıkıntı yaratıyor diye.
+
+983
+02:28:06,391 --> 02:28:15,071
+Min için de geçerli, evet aynen öyle atakan. Bu doğru. Şimdi 33.5'u tek tek kontrol edeceğim.
+
+984
+02:28:15,071 --> 02:28:17,471
+bununla, bununla, bununla.
+
+985
+02:28:19,891 --> 02:28:26,411
+Max bulmaya çalışırken bu noktada yeni Max'ın artık 33.5'ün yerine gelecek.
+
+986
+02:28:27,311 --> 02:28:34,071
+34.0 o zaman 34.0'ı bununla kontrol etmeye ve 365'ın sonuna kadar gitmeye devam edeceğim.
+
+987
+02:28:34,151 --> 02:28:42,151
+En sonunda elimde Max olarak 34 kalıyorsa diyeceğim ki 34 ve 10. gün en yüksek sıcaklık ölçülmüştür.
+
+988
+02:28:42,151 --> 02:28:57,111
+keza eksi 2.4 eğer bu dizideki en küçük yaramazsa dördüncü gün en düşük sıcaklık ölçülmüştür diye output'u atacağım.
+
+989
+02:28:57,111 --> 02:29:02,111
+Şimdi tabii biz bunu böyle kabaca algoritmasını sözler olarak konuştuk.
+
+990
+02:29:02,632 --> 02:29:07,632
+Şimdi sizin yapmanız gereken önümüzdeki pazartesiye kadar bu soruyu çözmek.
+
+991
+02:29:08,311 --> 02:29:09,391
+Bu bir ödev değil.
+
+992
+02:29:09,992 --> 02:29:10,852
+Bu bir alıştırma.
+
+993
+02:29:10,852 --> 02:29:19,452
+Pazartesi günü bu sorunun üzerinden ilerleyeceğiz. Ödeviniz yarın açıklanacak. Pazar akşamına kadar süreniz olacak.
+
+994
+02:29:20,772 --> 02:29:27,751
+Teslim koşullarını da orada terkip edebilirsiniz. Bugünlük dersimiz bu kadar. Başka sorusu olan var mı?
+
+995
+02:29:35,924 --> 02:29:39,523
+dizilerle ilgili olarak, for while learnings ile ilgili olarak.
+
+996
+02:29:43,123 --> 02:29:46,844
+Peki, Mehmet Alperen Alucar.
+
+997
+02:29:47,643 --> 02:29:54,403
+Hocam bu dizilerde ilk terimi hep 1 olarak mı kullanacağız yoksa 0 olarak kullanılabilir miyim?
+
+998
+02:29:54,403 --> 02:29:56,563
+Yazmadığınız için 1 olarak kullanın.
+
+999
+02:29:56,563 --> 02:30:04,323
+Sİ programlamaya geçtiğiniz zaman o zaman 0 olarak kullanacaksınız ama akış diyagramlarını 1 olarak kabul edebilirsiniz. Herhangi bir sıkıntı yok.
+
+1000
+02:30:04,323 --> 02:30:05,323
+Tamamdır.
+
+1001
+02:30:05,924 --> 02:30:08,343
+Başka soru sola
+
+1002
+02:30:12,852 --> 02:30:24,852
+Peki, hepimize teşekkür ediyorum önce katıldığınız için. Dersi Bilgisayar Başkanı dinleyenlere daha sonra teşekkür ediyorum. Sonra da derse katkı verenlere özellikle teşekkür ediyorum.
+
+1003
+02:30:24,852 --> 02:30:39,852
+Pazartesi günü bu konularla ilgili daha detaylı örnekler çözüyor olacağız. Merak etmeyin, dizilerle ilgili çok daha fazla örnek çözüyor olacağız. Bununla ilgili bir endişelerinizi gerektirecek bir durum yok. Kendinize iyi bakın, iyi haftalar. Pazartesi kısmında görüşmek üzere, hoşçakalın.
+
+1004
+02:30:39,852 --> 02:30:41,852
+İyi günler hocam, kendinize iyi bakın.

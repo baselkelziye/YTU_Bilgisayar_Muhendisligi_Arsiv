@@ -1,0 +1,1831 @@
+1
+00:02:03,156 --> 00:02:06,275
+Günaydın arkadaşlar. Hepiniz hoşgeldiniz.
+
+2
+00:02:06,616 --> 00:02:07,295
+Günaydın hocam.
+
+3
+00:02:07,795 --> 00:02:08,915
+Mikrofonları kapatalım.
+
+4
+00:02:10,175 --> 00:02:14,895
+Farkında olmadan açık olan arkadaşların, bazı arkadaşların açık mikrofonları var.
+
+5
+00:02:17,375 --> 00:02:23,756
+Bu konuya biraz daha fazla dikkat edelim. Sonra zor durumda kalırsınız. Lütfen rica edeceğim.
+
+6
+00:02:25,475 --> 00:02:28,615
+Ben bazı arkadaşlarınızı görünce kapatıyorum.
+
+7
+00:02:28,615 --> 00:02:36,836
+ama size lütfen özellikle mikrofon ve kamera konusunda bu tür durumlar için hassasiyet gösterin.
+
+8
+00:02:36,836 --> 00:02:41,075
+Kendi iyiliğiniz için tehlikeli durumda oluşmasın.
+
+9
+00:02:42,235 --> 00:02:45,955
+Son haftaya hoş geldiniz. Son derse hoş geldiniz.
+
+10
+00:02:47,235 --> 00:02:50,895
+Senenin ilk dersine hoş geldiniz bizim açımızdan.
+
+11
+00:02:51,535 --> 00:02:52,635
+Güzel bir sene diliyorum.
+
+12
+00:02:54,016 --> 00:02:56,495
+Sağlıkla, huzurla, mutlulukla gelsin inşallah.
+
+13
+00:02:56,496 --> 00:03:13,395
+Şimdi son dersimizde kalan bazı konularımız vardı onları konuşacağız. Networking'i konuşuyorduk. IP adreslere kadar gelmiştik. O noktadan biraz devam edip bir algoritma ile bugün dersi tamamlayacağız.
+
+14
+00:03:15,395 --> 00:03:18,876
+Dönem ödevi ile ilgili sorunuz var mı? Önce onu sorayım.
+
+15
+00:03:28,020 --> 00:03:37,719
+Peki. Herhangi bir soru yok. Güzel. Yapıyorsunuz. Dediğim anda tabii ki istisnasız bir şekilde bir soru gelir. Emre.
+
+16
+00:03:38,360 --> 00:03:40,440
+Sıra bakmayın hocam. Kusaklığı takmam sürdü biraz.
+
+17
+00:03:40,919 --> 00:03:46,099
+Yok yok sorun değil. Bu ama yani gelenekselleşmiş bir şeydir. Tam bir işi bitirirken soru gelir mutlaka.
+
+18
+00:03:47,319 --> 00:03:49,919
+Hocam video mu sunum mu olacak? Karar verdiniz mi?
+
+19
+00:03:49,919 --> 00:03:56,200
+Evet. Çok teşekkür ederim bu soruyu hatırlattığın için. Ben buna karar verdim.
+
+20
+00:03:56,200 --> 00:04:26,060
+video olmasına karar verdim. Dokümana da ekleyeceğim. Buradan da duyuru yapmış olayım. 3-5 dakikalık bir video çekeceksiniz. Videoda istediklerimi söylüyorum. Bir, kamera açık bir şekilde, kendinizi gösterir bir şekilde. Önce kendinizi tanıtacaksınız. Arkasından ödevle ilgili küçük bir giriş yapacaksınız. Ne olduğuna dair sanki ilk defa birini anlatır gibi.
+
+21
+00:04:26,200 --> 00:04:39,380
+söyleyeceksiniz. Arkasından ekranı paylaşıp ekran üzerinden yaptığınız komutları göstererek programın çalışma noktasını, çalışmama noktasını göstereceksiniz.
+
+22
+00:04:39,380 --> 00:04:49,019
+En sonunda da videonun programınızın neler yapamadığını, neleri yaptığını söyleyeceksiniz ama neler yapamadığını söylemeniz yeterli.
+
+23
+00:04:49,019 --> 00:05:07,259
+diğerlerinin yaptığını varsayacağız. Bu noktada önemli olan sizin yaptığınız programın hakim bir şekilde neleri yapıp yapamadığını, ödevden istenenleri ne kadar karşılayabildiğini anlatmanız ve bunu ispatlamanız.
+
+24
+00:05:07,259 --> 00:05:22,119
+Burada şöyle düşünün ödev kontrolü gibi düşünmeniz önemli ama bu programı ilk defa hiç bilmeyen birine anlattığınızda onun da programın yeteneklerini anlaması önemli. Açık anlaşılır bir şekilde anlatmanız gerekiyor.
+
+25
+00:05:22,119 --> 00:05:42,460
+hem video çekme deneyimi yaşayacaksınız. Artık bu pandemi döneminde bu tür ne diyelim olasılıklar artıyor. Hem de bir sunup yapma yeteneğini kazanmaya çalışacaksınız.
+
+26
+00:05:42,460 --> 00:05:44,079
+faydalı olacağına inanıyorum.
+
+27
+00:05:45,719 --> 00:05:48,159
+Ama mutlaka sizin görünmenizi istiyorum.
+
+28
+00:05:48,340 --> 00:05:52,420
+Sebebi yani ders boyunca yüzümüzü neredeyse hiç görmedim.
+
+29
+00:05:52,540 --> 00:05:53,939
+Hiçbirinizin neredeyse hiç tanımıyorum.
+
+30
+00:05:54,499 --> 00:05:56,420
+Sadece ses tonlarınız aklımda kayıtlı.
+
+31
+00:05:57,420 --> 00:06:04,380
+Hem tanımak istiyorum hem de bu tarz bir video ile birazcık deneyim yaşamanızı istiyorum.
+
+32
+00:06:06,219 --> 00:06:06,719
+Evet Selim.
+
+33
+00:06:07,799 --> 00:06:10,299
+Hocam şimdi 3-5 dakika sığdıracağız.
+
+34
+00:06:10,299 --> 00:06:18,260
+bazı case'lerden getirmek için mesela double roll hani iki zarımda aynı anda çıkması gibi şeylerden getirmek için kodu modifiye edebilir miyiz?
+
+35
+00:06:18,260 --> 00:06:19,999
+Yeni sırasında uzamaması için.
+
+36
+00:06:19,999 --> 00:06:23,260
+Yani şöyle diyorum tabii ki yani ayarlayabilirsiniz.
+
+37
+00:06:23,260 --> 00:06:27,559
+Zorca şekilde tabii ki hani belli olacak hani ne yaptığını da.
+
+38
+00:06:28,019 --> 00:06:32,120
+Tabii printf'lerle vesaireyle de gösterebilirsiniz durumu.
+
+39
+00:06:32,759 --> 00:06:38,259
+Hani ben bu işin zorluğunu tahmin ettiğim için sunum kısmındaki kısa süreye sığdırmanın
+
+40
+00:06:38,259 --> 00:07:05,339
+dırmanın size 3 ile 6 dakika diyeyim ki hani en azından biraz daha rahat olun. Hızlı toparlamanız iyi olur ama olmuyorsa da 6 dakikaya kadar videonuz uzayabilir. Yeter ki gereksiz konular olmasın içinde. Yeter ki tamamen bu uygulamayı seri akıcı bir şekilde tanıtın. Belki videoyu bir iki kez çekmeniz gerekebilir. Bazı yerlerde anlaşılmayacak bir durum olursa.
+
+41
+00:07:06,740 --> 00:07:36,679
+Güzel bir soru İrem'den geldi. Hangi kod partisinde ne yapma çalıştığımızı anlatacağız mı? Yoksa çalıştırıp direkt ne yaptığını göstereceğiz. Bir kere neler paylaşılması gerektiği belli. Onları yükleyeceksiniz. Onları zaten biz kontrol ediyor olacağız. Ama vaktiniz müsaade ederse birkaç noktaya değinebilirsiniz kritik olan kod parçalarını gösterip hani burada şu kısmı gerçekledim, şu kısmı için çalıştırıyorum diye süreniz kalırsa bunu da söyleyebilirsiniz. Faydalı olacaktır.
+
+42
+00:07:36,740 --> 00:08:02,439
+Evet güzel soru. Bu videonun linkini nereye ekleyelim? Bir kere videoyu bir yerde saklamanız gerekiyor. Ben o noktada pdf dosyasının içerisinde linkin olmasını istiyorum. Nerede videoyu yüklediğiniz çok önemli değil. Ama linkin mutlaka pdf dosyasına konmasını istiyorum.
+
+43
+00:08:02,439 --> 00:08:07,139
+çünkü o dosyayı açtığımda oradan doğrudan bağlanmak istiyorum.
+
+44
+00:08:10,259 --> 00:08:12,639
+Liste dışı yükleyebilir miyiz demek ne demek?
+
+45
+00:08:16,851 --> 00:08:18,072
+Şöyle söyleyeyim hocam.
+
+46
+00:08:18,072 --> 00:08:20,011
+Kendi lisenize gözükmeyecek şekilde mi?
+
+47
+00:08:20,011 --> 00:08:23,931
+Yok, başka kimseye gözükmeyecek. Sadece elinde linki olanlar görebiliyor videoyu.
+
+48
+00:08:26,251 --> 00:08:34,131
+Böyle bir özelliği var sanırım galiba. Ama şu anda emin değilim. Siz bir bakarsınız.
+
+49
+00:08:38,484 --> 00:08:45,683
+var değil hocam. Evet. Ben bir yerden bir dosyayı indirmek zorunda olmak istemiyorum aslında.
+
+50
+00:08:45,683 --> 00:08:58,244
+Onun yerine YouTube gibi bir kanal üzerinde bulunması, benim oradan açtığımda doğrudan onu izleyebiliyor olmam benim açımdan daha uygun olacaktır.
+
+51
+00:09:03,827 --> 00:09:04,827
+Evet.
+
+52
+00:09:20,179 --> 00:09:29,980
+Arkadaşlar, bu noktayı da netliğe kavuşturalım. Atakan'ın sorduğu soru birkaç kişiden daha gelmişti. Brief explanation, soru da sizden ne istendiği.
+
+53
+00:09:31,239 --> 00:09:43,360
+Diyeceksiniz ki, doküman bizde var zaten sorudan ne istendiğini biliyoruz ama önemli olan bu değil. Sizin kısaca sorunun nasıl bir sistem tasarlanması gerektiğiyle ilgili küçük bir açıklama yazmanız bekleniyor.
+
+54
+00:09:43,360 --> 00:10:01,479
+elinizdeki bilgilerden küçük bir açıklama yazacaksınız. Bütün kuralları yazmadan, oyunla ilgili küçük bir bilgi vererek bu tarz bir oyunun uygulama üzerinden oynanabilir bir program yazılması gerektiğiyle ilgili nasıl bir beklenti olduğunu yazacaksınız.
+
+55
+00:10:01,479 --> 00:10:09,040
+Çok uzun bir şey yazmanıza gerekir. Bu dokümanı okuyan bir kişi ne tarz bir uygulama implement ettiğinizi görmeli.
+
+56
+00:10:13,971 --> 00:10:22,511
+Kurallarda, kurallarda yeni farklı kurallar koyduysanız mutlaka PDF eklemelisiniz. Tabii ki.
+
+57
+00:10:29,652 --> 00:10:35,652
+Evet sanırım bu kadar diye tahmin ediyorum. Şimdi ekran paylaşımına geçeceğim.
+
+58
+00:10:42,964 --> 00:11:11,163
+Her şeyi de söylemekte fayda var, onu da unutmadan hemen söyleyeyim. Haftaya finalleriniz başlıyor. Öncelikle başarılar diliyorum. Sınavımız da önümüzdeki hafta gözüküyor. Sınav stili olarak çok bir değişiklik olmayacak diye düşünüyorum ama ufak tefek farklı soru stilleri belki olabilir. Gene bir iki bölümden oluşabilir sınav ya da klasik bölümdeki sorular da tek tek olabilir.
+
+59
+00:11:11,163 --> 00:11:24,283
+ona daha karar vermedim. Yani örneğin bir soru 40 dakika, diğer ikinci soru 30 dakika, üçüncü soru 40 dakika gibi algoritma sorularını da sessionlara ayırma ihtimalim olabilir.
+
+60
+00:11:26,423 --> 00:11:36,583
+Sorularla ilgili bu sefer doğru yanlışı götürme ihtimali olabilir ya da geri dönülemeyen soru ekleme ihtimalim olabilir.
+
+61
+00:11:36,583 --> 00:11:49,684
+geri dönemeyen soru eklersem o zaman doğru yanlış götürecek şekilde bir değerlendirme yapmam ya da işte tam tersi olacak şekilde bir organizasyon yaparım diye düşünüyorum.
+
+62
+00:11:49,684 --> 00:12:05,623
+Henüz bir hazırlık yapmadım. Genel formattan farklı bir soru gelmeyeceğini düşünebilirsiniz ama bütün bu algoritmik problemler dışında işlediğimiz konularla ilgili de
+
+63
+00:12:05,623 --> 00:12:08,363
+soruların gelme ihtimali olduğunu hatırlatmak isterim.
+
+64
+00:12:14,355 --> 00:12:39,315
+Güzel bir nokta Ubeydu'ların sorduğu. Oyunda zar rastgele geldiği için bazı kezler her zaman ortaya çıkmayabilir diye. Burada şöyle bir şey yapabilirsiniz. İki seçenek sunarsanız zar rastgele atılsın, zar kullanıcı tarafından girilsin diye. Böylece kullanıcı istediği değeri girerek seçeneği oluşturmuş olur.
+
+65
+00:12:39,315 --> 00:12:45,855
+tabi ki bunu yapabilirsiniz anlatırken ama bunu vurgulamakta fayda var.
+
+66
+00:12:52,628 --> 00:12:55,628
+Evet şimdi ekran paylaşımına geçeceğim.
+
+67
+00:13:25,235 --> 00:13:27,096
+Evet, şimdi videomu kapattım.
+
+68
+00:13:29,175 --> 00:13:30,696
+Ekran paylaşımında
+
+69
+00:13:30,696 --> 00:13:37,595
+şu anda yapmış bulunuyorum. Sanırım görebiliyorsunuzdur diye düşünüyorum.
+
+70
+00:13:38,855 --> 00:13:42,955
+En son internet adresin konusundaydık. IP adreslerden bahsetmiştik.
+
+71
+00:13:44,795 --> 00:13:46,756
+Bu IP adreslerin
+
+72
+00:13:46,756 --> 00:13:49,795
+32 bitten oluştuğunu, 4 byte
+
+73
+00:13:49,795 --> 00:13:51,895
+bilgi sakladığını ama
+
+74
+00:13:51,895 --> 00:14:11,776
+şu anda biliyorsunuz 128 bit adresi IP version 6'ya geçmek için çalışmalar devam ediyor. Kısmen geçen yerler, lokasyonlar var ama bunun sebebi de dünyada tüm cihazların unique bir IP adresiyle birbirlerine erişebilir olmasını sağlamak.
+
+75
+00:14:11,775 --> 00:14:25,535
+özellikle IoT device'ların sayısının artması bu noktada IP version 6 kullanımını artık zorunlu hale getirdi.
+
+76
+00:14:28,015 --> 00:14:34,775
+Burada tabii biz IP adresler üzerinden erişmiyoruz demiştik genel olarak.
+
+77
+00:14:35,375 --> 00:14:40,055
+Eriştiğimiz durumlar da var ama bunları ezbere bilmek, sayısal olarak hatıramızda tutmak,
+
+78
+00:14:40,055 --> 00:15:03,115
+yani hatırımızda tutmak çok olası değil. Bunun yerine isimler kullanıyoruz. Domain name'ler var. Bu domenlerin altında da subdomain'ler var. Top level domen'ler var. Bunlar mesela edu, org, net, com gibi domen'ler.
+
+79
+00:15:03,115 --> 00:15:09,096
+bu noktada bunların sonuna country kodlar da eklenebiliyor.
+
+80
+00:15:09,096 --> 00:15:14,035
+İşte com.tr, com.us, uk gibi.
+
+81
+00:15:14,715 --> 00:15:16,635
+co.uk diye geçiyor örneğin.
+
+82
+00:15:17,315 --> 00:15:20,875
+Bu tür ülkelere özel domenler de var.
+
+83
+00:15:22,235 --> 00:15:23,655
+Oradan erişebiliyorsunuz.
+
+84
+00:15:23,655 --> 00:15:33,155
+Bu noktada bunu IP adreslerini yöneten bir yapı var.
+
+85
+00:15:33,256 --> 00:15:36,275
+Internet Corporation for Assigned Names and Numbers diye.
+
+86
+00:15:36,855 --> 00:15:39,275
+Bu non-profit yani kar gütmeyen bir yapı.
+
+87
+00:15:40,275 --> 00:15:47,435
+Burada belirli blok adresleri belirli kuruluşlara sağlıyor.
+
+88
+00:15:47,435 --> 00:15:58,875
+işte örneğin bizim üniversitenin IP adreslerine bakma ihtimaliniz olursa burada belli IP bloklarının kullanıldığını göreceksiniz.
+
+89
+00:15:58,995 --> 00:16:02,896
+Bu bloklar üniversiteye tahsis edilmiş durumda.
+
+90
+00:16:05,596 --> 00:16:13,155
+Şimdi bu domain name ve IP adresten bahsettikten sonra gelelim internet applicationslara.
+
+91
+00:16:22,964 --> 00:16:49,683
+İnternet applications dediğiniz zaman farklı türde application'lar var. File Transfer Protocol, FTP. Bu protokol üzerinden dosya transferi gerçekleştiriyorsunuz. Telnet. Telnet'in Secure versiyonu olan Secure Shell SSH.
+
+92
+00:16:49,683 --> 00:17:05,324
+Bunlar bir bilgisayardan diğer bir bilgisayara herhangi bir window olmadan komut satırıyla erişip o bilgisayar üzerinde işlem yapmanızı sağlayan protokoller.
+
+93
+00:17:05,324 --> 00:17:11,324
+Bu protokoller üzerinden diğer bilgisayarları kontrol edebiliyorsunuz.
+
+94
+00:17:11,324 --> 00:17:14,484
+Onun dışında HTTP var biliyorsunuz.
+
+95
+00:17:17,364 --> 00:17:22,184
+Hyper Text Transfer Protocol.
+
+96
+00:17:24,283 --> 00:17:31,383
+Bütün web sayfalarında HTTP protokolü üzerinden bilgiler aktarılıyor.
+
+97
+00:17:32,044 --> 00:17:34,603
+Bunun secure versiyonu HTTPS diye geçiyor.
+
+98
+00:17:36,504 --> 00:17:37,923
+Elektronik mail var.
+
+99
+00:17:38,184 --> 00:17:39,463
+E-mail diye adlandırıyoruz.
+
+100
+00:17:39,743 --> 00:17:40,324
+E-posta.
+
+101
+00:17:41,324 --> 00:17:51,463
+elektronik posta. Bunun için farklı protokoller var. SMTP, Simple Mail Transfer Protokol.
+
+102
+00:17:55,923 --> 00:18:00,483
+Bunlar sizin e-postalarınızda. Pardon hocam. Evet.
+
+103
+00:18:00,623 --> 00:18:08,844
+Ne derseniz böyle olmam. Şu ekran görüntüsünde ses ibareniz çıkıyor. Ortada da ben şu an yazdığınız kısmı göremiyorum.
+
+104
+00:18:09,344 --> 00:18:11,323
+Pardon bir saniye. Niye hale oldu acaba?
+
+105
+00:18:16,084 --> 00:18:17,523
+Evet, şu an gitti sanırım değil mi?
+
+106
+00:18:18,463 --> 00:18:19,503
+Evet hocam.
+
+107
+00:18:19,863 --> 00:18:21,783
+Teşekkür ederim, evet onu fark etmemişim.
+
+108
+00:18:22,983 --> 00:18:25,323
+Simple Mail Transfer Protokol dedik.
+
+109
+00:18:25,863 --> 00:18:33,584
+Burada da bu protokol vasıtasıyla mailleriniz, mail serverler arasında transfer ediliyor.
+
+110
+00:18:34,303 --> 00:18:37,504
+Bunların hepsi bir protokol içeriyor.
+
+111
+00:18:37,504 --> 00:18:42,504
+Ve bu protokole uygun şekilde bu haberleşme gerçekleşiyor.
+
+112
+00:18:43,243 --> 00:18:43,743
+Bu önemli.
+
+113
+00:18:43,743 --> 00:18:54,984
+B-File FTP transfer protokolü ile SMTP transfer protokolünün rule'ları tamamen birbirinden farklı. Buna göre dizayn edilmiş protokoller.
+
+114
+00:18:55,984 --> 00:19:07,124
+Normalde SMTP protokolü text mesajlarını ASCII kodu ile enkod ederek gönderiyor.
+
+115
+00:19:07,123 --> 00:19:18,883
+ama buna ek olarak non-ASCII veriyi de gönderebilmek için MIME dediğimiz bir başka protokol var.
+
+116
+00:19:18,883 --> 00:19:20,563
+Multi-purpose.
+
+117
+00:19:32,660 --> 00:19:33,660
+internet, mail, extensions,
+
+118
+00:19:41,971 --> 00:19:49,171
+Bu da ileride duyabileceğiniz formatlardan bir tanesi.
+
+119
+00:19:50,611 --> 00:19:58,351
+Onun dışında maillerinize ulaşmak için iki tip aslında yaklaşım var.
+
+120
+00:19:59,031 --> 00:20:10,451
+Bir tanesi protokol olarak post office protokol dediğimiz POP3 post office protokol.
+
+121
+00:20:13,203 --> 00:20:26,963
+protokol, version 3, pop 3, bir de IMAP, internet mail access protokol,
+
+122
+00:20:34,612 --> 00:21:03,911
+Burada Pop3'te mesajlar bilgisayarınıza indiriliyor Pop3 protokolü kullanıldığında. IMAP protokolü kullanıldığında mesajlar sunucuda tutuluyor ve her yerden erişilebiliyor. Son dönemde IMAP kullanımı çok daha popüler bir şekilde yaygın bir şekilde kullanılıyor. Bunlar maillerinize ulaşmanızın ne şekilde olacağını, bir mail client ile bağlandığınızda o maillerin sunucu tarafında mı kalacağını,
+
+123
+00:21:03,911 --> 00:21:08,652
+yoksa sizin bilgisayarınızda indirilip indirilmeyeceğini belirten protokol var.
+
+124
+00:21:09,251 --> 00:21:12,491
+Voice over IP dediğimiz bir protokol var. VoIP.
+
+125
+00:21:14,091 --> 00:21:16,612
+Voice over internet protokol diye açılımı.
+
+126
+00:21:21,428 --> 00:21:50,887
+Bu da sesin data paketleriyle taşınmasını sağlayan bir protokol. Bu sayede Voice over IP, VoIP telefonlar var ve siz iki farklı noktada haberleşirken tamamen ses bilginizi data paketleri üzerinden taşıyorsunuz. Normal bildiğiniz telefon hattıdaki ses bandı üzerinden değil, data bandı üzerinden aktarıyorsunuz.
+
+127
+00:21:51,428 --> 00:22:03,428
+Tabii burada valiz telefonlar var. Bunların hikayesine baktığınızda...
+
+128
+00:22:07,092 --> 00:22:34,231
+Şunu göreceksiniz, 1G var, 2G var, 3G var, 4G var ve 5G işte yolda geliyor bazı yerlerde kullanılmaya başlandı gibi düşünebilirsiniz. Yaklaşık olarak 1980'lerden itibaren kullanılmaya başlayan mobil telefonlar bugüne kadar bu evrimi geçirerek geldiler.
+
+129
+00:22:34,231 --> 00:22:42,231
+ilk telefonlar first generation telefonlar. Aslında bu first generation, second generation'in kısaltma halleri.
+
+130
+00:22:44,231 --> 00:22:58,651
+Daha çok burada ses taşıyan, analog ses bilgisini hava üzerinden taşıyan versiyonlardı.
+
+131
+00:22:58,851 --> 00:23:02,231
+Tek amaç sesli haberleşmeyi kablosuz bir şekilde gerçekleştirmekti.
+
+132
+00:23:02,231 --> 00:23:16,772
+2G'ye geçtiğimiz zaman artık sesler dijital sinyaller olarak enkode edilerek daha verimli bir şekilde gene havadan taşınmaya başlandı.
+
+133
+00:23:16,772 --> 00:23:27,931
+Artı bunlara ek olarak bazı dijital veriler örneğin mesaj verileri 2G ile birlikte telefonlar arasında gönderilmeye alınıp verilmeye başlandı.
+
+134
+00:23:27,931 --> 00:23:48,771
+3G'ye geldiğimiz zaman önemli bir fark yüksek veri hızlarına geçiş gerçekleşti. Bu sayede videolu görüşmeler ve daha yüksek band genişliği aktiviteleri, ihtiyaç duyan aktiviteler 3G ile yapılmaya başlandı.
+
+135
+00:23:48,772 --> 00:23:54,931
+işte televizyon izlemek vs. video izlemek, video göndermek, büyük resimler göndermek gibi.
+
+136
+00:23:55,651 --> 00:24:00,452
+Hani bunu 2G ile de resim göndermeyi yapıyordunuz ama orada daha kısıtlı miktarda bunu yapıyordunuz.
+
+137
+00:24:01,812 --> 00:24:10,711
+4G'de ise tamamen artık çok yüksek hızlarda erişim ve aynı zamanda paket switch IP network dediğimiz yapıya geçildi.
+
+138
+00:24:10,931 --> 00:24:17,312
+Bunun detaylarına daha sonra öğreneceksiniz. Şu anda o noktaya girmeyeceğiz.
+
+139
+00:24:18,771 --> 00:24:23,391
+bakıyorum başka ekstra bir şey söyleyecek miyim diye.
+
+140
+00:24:26,391 --> 00:24:32,731
+Şimdi özellikle son dönemde bir kavram ortaya çıktı.
+
+141
+00:24:34,731 --> 00:24:39,511
+On Demand Streaming Applications.
+
+142
+00:24:40,271 --> 00:24:42,971
+Nedir bu? Bilal var mı?
+
+143
+00:24:53,140 --> 00:24:53,919
+Evet, Emre.
+
+144
+00:24:54,919 --> 00:25:01,339
+Mesela Netflix, YouTube sayılır sanırım. Yani kişi istediği zaman izleyebiliyor.
+
+145
+00:25:01,879 --> 00:25:10,980
+Evet, kişi istediği zaman izleyebiliyor. Şimdi ilk etapta farklı veri dağıtma şekilleri var.
+
+146
+00:25:12,719 --> 00:25:20,560
+Siz burada, örnek veriyorum, bir kullanıcıdan başka bir kullanıcıya göndermek isteyebilirsiniz.
+
+147
+00:25:20,560 --> 00:25:40,400
+buna Unicast deniyor diyoruz. Bunu birden fazla kullanıcıya göndermek istediğinizde en Unicast. Bunun bir alternatif modeli var. Multicast. Belirli bir gruba göndermek istediğinizde. Bu arada şu çizgiyi sileyim.
+
+148
+00:25:44,403 --> 00:26:07,963
+Multikest. Herkese gitsin, ben yayın yapayım diyorsanız, Broadcast mantığını. Yani Network'taki herkese paketimi göndereyim, isteyen alır mantığındaysanız, o zaman Broadcast tercihini yapıyorsunuz. Dediğim gibi bunları zaman içerisinde çok detaylı bir şekilde Network dersinde göreceksiniz. Ama şuraya gelmek istiyorum.
+
+149
+00:26:07,963 --> 00:26:18,223
+son dönemde kullanıcının istediği zamanda ilgili medya uygulamasını istediği noktadan izleyeceği bir yapıya döndü olay.
+
+150
+00:26:19,283 --> 00:26:22,744
+O yüzden bütün düzenle bu şekilde kuruldu.
+
+151
+00:26:23,264 --> 00:26:27,023
+Çok ciddi derecede bir veri akışı şu anda gerçekleşiyor.
+
+152
+00:26:27,023 --> 00:26:41,343
+Bu da verinin bir noktadan başka bir noktaya ne şekilde aktarılacağını gösteren farklı yaklaşımları anlatan bir içerik oldu.
+
+153
+00:26:41,343 --> 00:27:09,243
+Buna da bakabilirsiniz. Nedir, ne değildir? İnternet üzerinde bir veri aktarıldığında, bir veri istendiğinde bu veri hangi şekillerde dağıtılıyor? Bunu okumakta fayda var. Başlık olarak da internet, multimedia, streaming.
+
+154
+00:27:11,343 --> 00:27:22,803
+Burada daha çok amacımız audio ve video aktarımı
+
+155
+00:27:27,476 --> 00:27:46,835
+Bu çok daha önemli hale geldi çünkü diğer bahsettiğimiz verilerin aktarımı görece daha küçük boyutlara sahip özellikle YouTube, Netflix gibi multimedya içeriği sağlayan uygulamalar.
+
+156
+00:27:46,835 --> 00:28:06,935
+Bantwit'te de çok ciddi yer kaplıyorlar. Hatta bunların belli oranda bu kadar yüksek yoğunlukta veri aktarmadan rağmen kesintisiz olmalarının diğer internet sitelerine göre daha iyi, daha kaliteli yörüntü sunmalarının en önemli sebeplelerinden bir tanesi.
+
+157
+00:28:06,935 --> 00:28:16,755
+Belirli anlaşmalar yapıyorlar ve Bantwit'in bir kısmını kendilerine dedike bir şekilde kullanıyorlar. Bu anlaşmaları internet service providerlarla yapıyorlar.
+
+158
+00:28:16,836 --> 00:28:32,836
+bu sayede siz başka bir siteye erişiminiz yavaşken bile burada izlediğiniz görüntülerin yüksek kaliteyle bulunduğunuz noktaya ulaşmasına mümkün hale kılıyorsunuz.
+
+159
+00:28:35,336 --> 00:28:38,136
+Web tarafına da değinelim kısaca.
+
+160
+00:28:42,708 --> 00:28:44,708
+web tarafı dedinize
+
+161
+00:28:48,051 --> 00:28:49,191
+Browserlar var.
+
+162
+00:28:51,331 --> 00:28:52,532
+Tarıyıcılar.
+
+163
+00:28:53,351 --> 00:28:55,071
+Browserlar size
+
+164
+00:28:55,071 --> 00:28:58,352
+istediğiniz bilginin
+
+165
+00:28:58,352 --> 00:28:59,751
+belirli bir formatta
+
+166
+00:28:59,751 --> 00:29:01,751
+bilgisayarda gösterilmesini sağlıyor.
+
+167
+00:29:02,591 --> 00:29:03,071
+Ve
+
+168
+00:29:03,071 --> 00:29:05,351
+browser üzerinden
+
+169
+00:29:05,351 --> 00:29:06,711
+dünyadaki
+
+170
+00:29:06,711 --> 00:29:10,011
+birçok sunucuya erişip
+
+171
+00:29:10,011 --> 00:29:11,051
+web servera
+
+172
+00:29:11,051 --> 00:29:12,111
+ki
+
+173
+00:29:12,111 --> 00:29:15,591
+bu bilgilerin host edildiği yer
+
+174
+00:29:15,591 --> 00:29:18,011
+web server. Web server üzerinden
+
+175
+00:29:18,011 --> 00:29:30,011
+bilgileri talep ediyorsunuz. HTTP protokolüyle sizin bilgisayarınıza geliyor. Her bir erişmeye çalıştığınız
+
+176
+00:29:30,011 --> 00:29:45,951
+dökümanın da webde bir URL adresi var. Buna da uniform resource locator diyoruz.
+
+177
+00:30:17,471 --> 00:30:19,471
+eğer bu doküman açıksa.
+
+178
+00:30:21,791 --> 00:30:23,952
+HTML var. HTML nedir?
+
+179
+00:30:40,980 --> 00:30:46,139
+Hypertext Markup Language, doğru. Muhammed Ali, sana söz vereyim.
+
+180
+00:30:47,400 --> 00:30:50,499
+Aynen bunu diyecektim hocam. Hypertext Markup Language diyecektim hocam.
+
+181
+00:30:50,659 --> 00:30:53,199
+Ama bunu biraz açalım. Ne amaçlı kullanıyoruz?
+
+182
+00:30:55,119 --> 00:31:02,279
+Hocam bu veri paketlerinin yani bilgisayar browser tarafından anlaşılmasını sağlayan,
+
+183
+00:31:02,779 --> 00:31:08,199
+dataların browser tarafından anlaşılıp, görsele düzenini sağlayan bilgisayar.
+
+184
+00:31:08,199 --> 00:31:33,200
+teşekkür ediyorum. Browser'da gönderilen web server tarafından istediğiniz bilginin belirli bir format ile gösterilmesi için kullandığımız dil. Bunun yeni versiyonu HTML5. HTML5 HTML'e göre çok daha fazla yeteneğe sahip. Burada taglerle yazıyorsunuz.
+
+185
+00:31:33,199 --> 00:31:54,359
+İşte head var, body var. Bunun içerisine çeşitli tanımlamalar yaparak tablo tanımlayabiliyorsunuz. İşte paragraf açabiliyorsunuz. Bu sayede formatlı bir şekilde browser tarafında bilginizin şu anda eriştiğiniz internet sitelerindeki gibi göstermesini sağlıyorsunuz.
+
+186
+00:31:55,959 --> 00:31:57,299
+Atakan neyi anlayamadın?
+
+187
+00:31:57,299 --> 00:32:08,299
+Hocam bir söylediğiniz şeyi tam anlayamadım orada bu işte Muhammed Ali mi de abi?
+
+188
+00:32:08,299 --> 00:32:13,359
+Ben işte o hocağa verdikten sonra söylediğiniz zaman ben sesten dolayı mı? Benim internetten dolayı mı bilmiyorum.
+
+189
+00:32:13,819 --> 00:32:18,560
+HTML'in ne amaçla kullanıldığını anlatıyorduk.
+
+190
+00:32:18,559 --> 00:32:35,999
+bir web sayfasının HTML ile görselleştirildiğini, HTML sintaksları kullanarak bilginin browser tarafında ne şekilde sunulması gerektiğini HTML kodlama ile yaptığımızı söyledik.
+
+191
+00:32:36,799 --> 00:32:46,199
+HTML kodlama yaparak bu sayfalar hazırlandığında siz bilgisayarınızdan, client tarafından, serverdan bu sayfaları istediğinizde
+
+192
+00:32:46,199 --> 00:32:55,419
+bu HTML kodlar browser tarafından interpret ediliyor ve bu sayede siz işte farklı tabloları iç içe görüyorsunuz.
+
+193
+00:32:55,419 --> 00:33:02,899
+Paragraf yapılmış, büyük harfle yazılmış, renklendirilmiş şekilde ekranda görüyorsunuz.
+
+194
+00:33:02,959 --> 00:33:10,319
+Bunun için Selim, görselleştirme için tabii ki CSS'den faydalanıyoruz.
+
+195
+00:33:10,319 --> 00:33:23,459
+Ama buradaki HTML'in temel görevi senin de yazdığın gibi sayfanın yapısını belirlemek, tabloları, sayfanın içerisindeki bilgilerin nerede, nasıl konumlanacağını belirlemek ama
+
+196
+00:33:23,459 --> 00:33:31,999
+CSS sadece buna makyaj yapıyor diyelim ama HTML olmadan, CSS'in çok bir esprisi yok.
+
+197
+00:33:31,999 --> 00:33:59,459
+HTML ile bu vücut bölümünü oluşturmanız gerekiyor. Evet, Demircan değişik bir tabir söyledi kullanılan. Böyle şu an için düşünebiliriz ama bunun zamanı geldiğinde sistem programının dersinde ya da ilgi duyduğunuzda çok daha detaylı bir şekilde öğreneceksiniz.
+
+198
+00:33:59,459 --> 00:34:07,539
+Fakat browserlarda HTML diliyle yazılmış sayfaların yorumlandığını söyleyebiliriz.
+
+199
+00:34:07,599 --> 00:34:11,459
+Hatta bazen aynı sayfa birkaç farklı browserda farklı şekilde gözükür.
+
+200
+00:34:12,200 --> 00:34:14,859
+Bunu da görmüşsünüzdür.
+
+201
+00:34:17,079 --> 00:34:20,739
+Tabii sadece HTML statik sayfalar oluşturmanızı sağlıyor.
+
+202
+00:34:20,819 --> 00:34:25,179
+Dinamik sayfa istiyorsanız kullanıcı ile interaktif bir şekilde.
+
+203
+00:34:25,179 --> 00:34:30,439
+ki HTML5 bu konuda daha farklı imkanlar sunuyor ama
+
+204
+00:34:30,439 --> 00:34:34,579
+Dmx sayfalar için başka programlama dilleri de kullanmanız gerekiyor.
+
+205
+00:34:34,679 --> 00:34:38,980
+Örnek vermek gerekirse JavaScript, PHP gibi.
+
+206
+00:34:39,764 --> 00:34:53,764
+bir de XML var biliyorsunuz. Extend Markup Language. Bu Extensible Markup Language sizin verileri bir noktadan bir noktaya taşımanızı sağlıyor.
+
+207
+00:34:53,764 --> 00:35:06,764
+Bunun bir versiyonu da JSON yani bir rakip versiyonu diyelim. Aynı muadil ürün olarak geçiyor. İkisinin birbirine göre artı eksi yönleri var.
+
+208
+00:35:06,764 --> 00:35:13,284
+var. Exameli de şuraya yazmış olalım.
+
+209
+00:35:24,692 --> 00:35:42,692
+eczemelde verilerinizin bir noktadan bir noktaya aktarılmasında kullanmış olduğumuz, verilerinizin temsil edilmesi için kullanmış olduğumuz bir dil.
+
+210
+00:35:47,284 --> 00:35:49,803
+verilerinizi temsil etmek için kullanıyoruz bu dili.
+
+211
+00:35:52,943 --> 00:35:55,103
+Başka bir şey kaldı mı diye bakıyorum.
+
+212
+00:35:56,963 --> 00:35:57,723
+Evet, internet
+
+213
+00:35:57,723 --> 00:36:00,043
+kısmıyla ilgili
+
+214
+00:36:00,043 --> 00:36:02,683
+layer katmanlar
+
+215
+00:36:02,683 --> 00:36:06,483
+bir arkadaşınız paylaşmıştı. Application, Transport Layer, Network Layer,
+
+216
+00:36:07,263 --> 00:36:08,124
+Data Link Layer,
+
+217
+00:36:09,723 --> 00:36:11,003
+Physical Layer şeklinde bu
+
+218
+00:36:11,003 --> 00:36:12,544
+katmanlara girmeyeceğim.
+
+219
+00:36:13,784 --> 00:36:15,183
+Ondan sonrası zaten
+
+220
+00:36:15,183 --> 00:36:28,043
+başka dersin hedefi. Bunlar sizin genel olarak bilmeniz gereken başlıklar. Bunlara şöyle bir kabaca göz atarsanız, ne olduklarını bir kez daha görürseniz iyi olur.
+
+221
+00:36:28,043 --> 00:36:41,464
+Faydasını görürsünüz. Network tarafında bu şekilde internet kısmında biraz konuşmuş olduk. Şimdi yavaş yavaş bir sonraki problemimize geçeceğiz.
+
+222
+00:36:41,464 --> 00:37:10,184
+onunla beraber de kapıya olacağız bu seneyi. Binary Search Algoritm. Bir dizide arama yapma işini daha önce görmüştük. Buna Sequential Search.
+
+223
+00:37:11,464 --> 00:37:19,663
+ya da linear search demiştik.
+
+224
+00:37:20,123 --> 00:37:23,163
+Sıralı ve sırasız dizideki hali birazcık farklıydı.
+
+225
+00:37:23,824 --> 00:37:26,703
+Sıralı dizide biraz daha efektif bir algoritma yapabiliyorduk.
+
+226
+00:37:27,464 --> 00:37:34,923
+Ama en kötü durum senaryosu ikisinde de en adım, en tane eleman sayısı kadar karşılaştırma yapmak demekti.
+
+227
+00:37:34,923 --> 00:37:41,623
+Binary Search Algorithması'nın bir koşulu var. İmplemente etmeden önce bunu söylememiz gerekiyor.
+
+228
+00:37:41,623 --> 00:37:51,743
+Binary Search Algorithması'nda mutlaka arama yapacağınız dizinin sırada olması gerekiyor. Olmazsa olmaz koşulu bu.
+
+229
+00:37:53,284 --> 00:38:01,323
+Sırasız bizde bu algoritmayı implement etme şansımız yok. Peki Binary Search Algorithması nasıl çalışıyor?
+
+230
+00:38:01,323 --> 00:38:14,263
+bunu içinizde bilenler vardır. Hangi mantığı kullanır? Onu. Görelim birlikte. Evet şöyle bir sorayım. Binary Search'la ilgili yorum yapabilecek olan var mı?
+
+231
+00:38:18,931 --> 00:38:19,931
+Emre Can.
+
+232
+00:38:19,931 --> 00:38:28,931
+Eee şöyle hocam bildiğim kadarıyla eee bir dizinin önce şeyi buluyor, ortasındaki elemanı buluyor. Ondan sonra bizim aradığımız elemanla onu karşılaştırıyor.
+
+233
+00:38:28,931 --> 00:38:40,931
+Eğer ondan büyükse eee direkt olarak sağ tarafına geçiyor. Sol tarafı direkt es geçiyor. İşte onu bir eee şey eee sağ tarafına geçtikten sonra yine oradan bir ortadaki elemanı buluyor. Tekrar işte karşılaştırıyor. Böyle sürekli en son zaten istediğimiz elemanı buluyor.
+
+234
+00:38:40,931 --> 00:38:46,931
+Evet, çok güzel. Teşekkür ederim. Buradaki mantık şuna benziyor. Sıfırla yüz arasında bir sayı tuttuğunuzu düşünün.
+
+235
+00:38:46,931 --> 00:39:10,671
+diyelim ki 60 olsun. O sayıyı karşı tarafın tahmin etmesi için her seferinde bir soru hakkı olsun. Bu soruda tahmin ettiği sayıdan daha büyük mü, daha küçük mü olduğu bilgisini alsın. O zaman böyle bir oyunda yapacağınız şey kişinin o sayıyı tahmin ederken uygulayacağı strateji genelde şu olur.
+
+236
+00:39:10,671 --> 00:39:39,631
+önce ortadaki sayıyı sorar 50 sorar aradığım sayı senin aklında tuttuğun sayı büyük mü küçük mü büyük der ondan sonra kişi 75 der 75ten büyük mü küçük mü diye sorar küçük der 50 ile 75 arasındaki sayı nereye denk geliyor 62.5'a denk geliyor diyelim 62 der ondan sonra o küçük der bu sefer 50 ile 62 arasında küçülterek en sonunda 60 değerine ulaşır
+
+237
+00:39:39,631 --> 00:39:56,391
+Bu genelde en hızlı sayıyı tahmin etmelidir. Tabii kendine güvenen hissiyatla tahmin etmeye çalışan kişiler vardır. Ona bir şey diyemem ama bilimsel olarak en hızlı tahmin edilme şekli bu şekilde. Burada da ayrı mantığı göreceğiz. Şöyle ki
+
+238
+00:40:00,000 --> 00:40:06,079
+Emircan arkadaşınızın söylediği gibi şu an ekranında bir ayarlama yapıyorum.
+
+239
+00:40:10,708 --> 00:40:21,887
+Burada 0, 1, 2, 3, 4, 5 de diyebilirsiniz. 1, 2, 3, 4, 5, 6 da diyebilirsiniz. Fark etmez. İsterseniz biz akış diyagramı çizeceğimiz için
+
+240
+00:40:21,887 --> 00:40:33,708
+2, 3, 4, 5, 7 diyelim. Buraya 1, 2, 3, 4, 5, 6 diyelim. İlk tahmini
+
+241
+00:40:33,708 --> 00:40:55,728
+orta noktayla yapacaksınız. Aradığınız eleman örneğin 4 olsun. 4, 3'ten büyük olduğu için ikinci tahmini sağ taraf daha büyük olduğu için kısımda yapmanız gerekiyor. O zaman şu noktayla şu noktanın orta noktasını bulmanız gerekiyor.
+
+242
+00:40:55,728 --> 00:41:03,407
+Onun da burası olduğunu varsayalım. 4 bundan küçük olduğu için sonra burası ile burası arasında bir tahmin yapmanız gerekiyor.
+
+243
+00:41:03,708 --> 00:41:19,807
+ve en sonunda dördü bulduğunuzu göreceksiniz. Önemli olan burada her turda hangi tarafa gideceğimize karar vermek, gittiğimiz tarafta da o orta noktaya bakmak, bulmadığımız sürece devam etmek.
+
+244
+00:41:19,807 --> 00:41:42,928
+tabi burada bir durma koşulu var. Bu durma koşulunu özellikle belirlememiz gerekiyor. Şimdi saat 9.50 bir 10 dakika ara vereceğiz. Ondan sonra 10 dakika süre veriyorum size. Bu binary social yorkmasını internete bakmadan, buna özellikle rica ediyorum, çözmeye çalışın.
+
+245
+00:41:42,928 --> 00:41:51,188
+hedefimiz verilen bir elemanın bir dizide olup olmadığını, varsa nerede olduğunu bulmak.
+
+246
+00:41:52,388 --> 00:42:03,267
+Mantığımız ilk etapta dizinin başlangıç ve son adresiyle başlamak, orta noktaya bakmak, orta noktadan büyükse sağa gitmek, küçükse sola gitmek.
+
+247
+00:42:03,267 --> 00:42:11,188
+Her turda orta noktadan büyükse sağa, küçükse sola gidecek şekilde bir algoritma tasarlamanızı rica ediyorum.
+
+248
+00:42:11,187 --> 00:42:18,347
+Ubeydullah. Hocam sıralı olarak kabul edeceğiz değil mi? Evet sıralamayla uğraşmayacaksınız bu şu andaki durumda.
+
+249
+00:42:20,367 --> 00:42:33,368
+Soru verilen bir dizide aranan bir elemanın olup olmadığını binary search algoritmasıyla bulan daha doğrusu binary search yaklaşımıyla bulan algoritmanın akış diyagramını çiziniz.
+
+250
+00:42:34,507 --> 00:42:37,627
+Evet arkadaşlar 20 dakika sonra görüşmek üzere teşekkür ediyorum.
+
+251
+01:03:13,940 --> 01:03:27,479
+Evet arkadaşlar, yeniden merhaba. 20 dakikalık süreyi tamamladık. Öncelikle bir duyuru yapayım. Bugün hemen biraz sonra ders tamamlandıktan sonra bir mazeret sınavı olacak.
+
+252
+01:03:28,119 --> 01:03:42,519
+Mazeret sınavı saati 10.30 olarak açıklanmıştı. Girecek olanlar varsa, yani buna bölüme direkçe verip kabul alanlar varsa, saat 10.45 ya da 10.50'de başlayacak sınav. Bunun bilgisini vermiş olayım.
+
+253
+01:03:43,940 --> 01:04:00,759
+aramızda birkaç arkadaşımız var ismini hatırladım ama zaten total 2 ya da 3 kişi olması gerekiyor. Gene sistem üzerinden sınav tanımlanmış olacak. Bu noktada şimdi yapabildiniz mi onu sorayım.
+
+254
+01:04:06,132 --> 01:04:07,331
+Evet, Evin Can.
+
+255
+01:04:09,132 --> 01:04:10,931
+Şöyle hemen do while'ı yaptım.
+
+256
+01:04:10,931 --> 01:04:11,931
+Hı hı.
+
+257
+01:04:12,132 --> 01:04:21,731
+Önce, işte kullanıcıdan diziyi aldıktan sonra, sayısıyla beraber, ilk başta start diye bir şey yaptım, onu sıfır atadım.
+
+258
+01:04:21,731 --> 01:04:25,732
+Bir de end diye bir şey belirledim, onu da kullanıcı sayısını bize kaç gerisi, onun bir eksini aldım.
+
+259
+01:04:25,732 --> 01:04:28,132
+Çünkü sıfırdan beşe kadar mesela örnek veriyorum.
+
+260
+01:04:28,132 --> 01:04:32,531
+Ondan sonra do'nun içine girdikten sonra bir mid diye bir diğer atadım, int diğer eline.
+
+261
+01:04:32,531 --> 01:05:00,451
+start ile end'i toplayıp ikiye böldüm. Daha sonrasında if control ile bize verilen dizinin bulduğumuz mid değeri, işte ondan küçükse, o zaman start'ı mid artı bir yaptım. Eğer büyükse, o zaman end'i mid eksi bir yaptım. En sonunda while kısmında da bizim elde ettiğimiz o mid değeri, bu ARL'deki eşit değilse x'e dedim. Ve bu şekilde dönmesini sağladım.
+
+262
+01:05:00,451 --> 01:05:20,672
+Tamam genel olarak doğru gözüküyor teşekkür ederim. Şimdi ben de burada kısaca başlayayım. Bir tane dizimiz var AN olsun bir de aradığımız bir eleman olsun X olsun.
+
+263
+01:05:20,672 --> 01:05:23,471
+Hocam ekranınız yok şu an.
+
+264
+01:05:23,632 --> 01:05:26,911
+Çok pardon hemen ekran paylaşımı yapayım.
+
+265
+01:05:31,603 --> 01:05:33,103
+Teşekkürler uyardığınız için.
+
+266
+01:05:34,923 --> 01:05:38,883
+Şimdi bu üç tane input'u almamız gerekiyor dışarıdan.
+
+267
+01:05:39,923 --> 01:05:46,323
+Bu input'u aldıktan sonra bizim biraz önce arkadaşınızın söylediği farklı değişken isimleri vardı.
+
+268
+01:05:47,003 --> 01:05:51,303
+First'e sıfır diyelim ki pardon buna sıfır demeyelim.
+
+269
+01:05:52,263 --> 01:05:53,083
+Buna bir diyelim.
+
+270
+01:05:54,364 --> 01:05:56,743
+Last'e de N diyelim.
+
+271
+01:06:00,364 --> 01:06:00,883
+Middle'da...
+
+272
+01:06:03,092 --> 01:06:29,512
+First artı Last bölü iki olsun. Böylece medyada bulduk. Şimdi bu atamaları yaptık. Bu atamaları yaptıktan sonra bizim artık burada arkadaşınız dual ile yapmış olabilir. Yanlış değil. Biz ilk başta işi yaptık. Şimdi while ile kontrole başlayacağız.
+
+273
+01:06:29,512 --> 01:06:36,911
+Wild'e kontrolümüz ne olacak? Ben bir daha herkese sorayım. Wild'e kaç tane kontrolümüz olması gerekiyor?
+
+274
+01:06:43,603 --> 01:06:47,143
+Evet, Emircan biraz önce anlatmıştı. Tekrar soruyorum ve halde ne yazıyor? Atakan.
+
+275
+01:06:49,763 --> 01:07:01,883
+Hocam, middle'ın x'den büyük olması kontrolünü yapacağız. Yani böldüğümüz kısmın x'den büyük olması kontrolünü yapacağız.
+
+276
+01:07:02,903 --> 01:07:10,543
+O çok efektif bir çözüm değil Atakan. Biraz daha farklı bir şey arıyoruz. Başka bir kişi Selim olmasın.
+
+277
+01:07:10,543 --> 01:07:39,863
+Evet şu an 50 kişisiniz. 50 kişiden biri herhalde el kaldırabilir diye düşünüyorum. Evet Emre peki. Aradığımız şey A middle'a eşit değil diye bakacağız bence. Eşit olmadığı sürece devam edeceğiz doğru mu? Evet. Bu bir tanesi A middle'dan farklı olduğu sürece X'den dönmeye devam edeceğiz. Başka bir koşula ihtiyacımız var mı?
+
+278
+01:07:57,811 --> 01:08:13,811
+Peki, kimse bir şey söylemeyecek anladığım kadarıyla. O zaman okuşunu yazmıyorum. Biraz sonra bir daha düşünürsünüz. Eşit olmadığı sürece bir şey yapmamız gerekecek. Bu yapacağımız şey de nedir onu sorayım. Ubeydullah.
+
+279
+01:08:18,804 --> 01:08:21,923
+Hocam, first middle'ı, ya ben
+
+280
+01:08:21,923 --> 01:08:25,423
+Ben şu anda şeyi, ifi soruyorum.
+
+281
+01:08:28,323 --> 01:08:29,104
+Bir kontrol yapmam.
+
+282
+01:08:29,104 --> 01:08:36,443
+Küçük olup dizi middle, a middle, küçük müdür, x'den diye bir kontrol koyabilir hocam.
+
+283
+01:08:37,724 --> 01:08:38,484
+Tamam, koyalım.
+
+284
+01:08:38,943 --> 01:08:43,663
+A middle, küçük mü, x'den diye koyduk.
+
+285
+01:08:44,943 --> 01:08:46,523
+Peki, küçüksü ne yapacağız?
+
+286
+01:08:51,636 --> 01:09:18,075
+false goal'u. Yani x a middle'dan büyükse aslında bunun doğru okunması. x a middle'dan büyükse aslında bunu şöyle yazmak daha doğru olur bence. Kafa karışıklığı olmaması açısından. x büyük a middle ise ne diyeceğim?
+
+287
+01:09:18,075 --> 01:09:20,455
+Evet arkadaşlar
+
+288
+01:09:20,455 --> 01:09:23,135
+First
+
+289
+01:09:23,135 --> 01:09:26,275
+First'u middle-aged ile içereceğim
+
+290
+01:09:26,275 --> 01:09:29,055
+Middle-aged demeyeceğim
+
+291
+01:09:29,055 --> 01:09:30,215
+Ne yapacağım
+
+292
+01:09:35,572 --> 01:09:36,091
+Selim?
+
+293
+01:09:37,792 --> 01:09:39,271
+Middle artı bir yapacağız.
+
+294
+01:09:39,491 --> 01:09:41,251
+Middle artı bir yapmamız gerekiyor.
+
+295
+01:09:41,351 --> 01:09:46,771
+Yoksa aynı yerde takılıp kalmamıza sebebiyet veren bir yapı oluştururuz.
+
+296
+01:09:47,992 --> 01:09:55,031
+O yüzden bir sonraki aramaya baktığımız yerin bir sonraki gözünden başlamamız lazım.
+
+297
+01:09:55,891 --> 01:09:56,711
+Last ne olacak?
+
+298
+01:10:03,667 --> 01:10:05,667
+ya da bir değişiklik olacak bu lasta.
+
+299
+01:10:08,667 --> 01:10:11,067
+Farklı bir kişi arkadaşlar. Mahmut?
+
+300
+01:10:11,067 --> 01:10:13,067
+Olmaması lazım hocam.
+
+301
+01:10:13,067 --> 01:10:15,067
+Olmaması lazım.
+
+302
+01:10:15,067 --> 01:10:19,067
+Tamam, burayı böyle yaptık. False tarafına ne demem gerekiyor Mahmut?
+
+303
+01:10:20,067 --> 01:10:25,067
+False tarafına soracağım. Ben direkt middle eşit bir, middle bölü iki yazdım.
+
+304
+01:10:26,067 --> 01:10:31,067
+Öyle olmaması gerekiyor. Şimdi yeni noktaya baktığın zaman bir kez daha göreceksin.
+
+305
+01:10:31,067 --> 01:10:33,067
+şurada hatırlarsan
+
+306
+01:10:33,067 --> 01:10:34,928
+middle artı bir
+
+307
+01:10:34,928 --> 01:10:37,587
+şöyle düşün
+
+308
+01:10:37,587 --> 01:10:40,547
+biz küçük tarafta aradığımızı varsay
+
+309
+01:10:40,547 --> 01:10:43,267
+örneğin ikiyi arıyoruz
+
+310
+01:10:43,267 --> 01:10:45,848
+önce orta noktaya bakmıştık
+
+311
+01:10:45,848 --> 01:10:48,147
+şimdi şu aralığa bakacağız
+
+312
+01:10:48,147 --> 01:10:51,467
+o zaman last ne olmuş oldu?
+
+313
+01:10:53,947 --> 01:10:55,848
+last eşittir middle oluyor
+
+314
+01:10:55,848 --> 01:10:59,127
+evet o aralık ben orayı üç olarak gösterdim ama
+
+315
+01:10:59,127 --> 01:11:01,307
+middle-1 olması gerekiyor.
+
+316
+01:11:02,868 --> 01:11:05,147
+Bir küçükten başlamamız gerekiyor.
+
+317
+01:11:06,667 --> 01:11:07,928
+Burayı da yaptık.
+
+318
+01:11:08,568 --> 01:11:10,307
+Bundan sonra yapmamız gereken bir şey var mı?
+
+319
+01:11:18,899 --> 01:11:20,039
+Evet, farklı bir kişi.
+
+320
+01:11:22,380 --> 01:11:22,839
+Şu anda
+
+321
+01:11:22,839 --> 01:11:24,899
+cursor'ı
+
+322
+01:11:24,899 --> 01:11:29,499
+burası ile burası arasında set ettik.
+
+323
+01:11:30,719 --> 01:11:31,299
+Bunlar tamam.
+
+324
+01:11:32,499 --> 01:11:33,259
+Bir turda.
+
+325
+01:11:33,559 --> 01:11:34,539
+Bundan sonra ne yapacağız?
+
+326
+01:11:43,923 --> 01:11:45,923
+Evet, mouse ile
+
+327
+01:11:45,923 --> 01:11:52,923
+Sonra hocam yeni bir middle belirleyeceğiz bence. Evet, aynen. Yazayım. Middle.
+
+328
+01:11:52,923 --> 01:12:13,923
+First artı last bölü 2 yapacağız yine. Teşekkür ederim. Last bölü 2 yapacağız. Şurada yer bittiği için şöyle döndürdüğümü varsayın. Lütfen biraz kötü bir sıkıştım burada. Buraya geleceğiz.
+
+329
+01:12:13,923 --> 01:12:17,343
+şunların da isimlerini değiştirelim.
+
+330
+01:12:19,343 --> 01:12:24,004
+Harflerinin büyüklüklerini first, last ve middle yapalım.
+
+331
+01:12:25,004 --> 01:12:30,423
+Evet şimdi bu noktada biz farklı olduğu sürece döneceğiz.
+
+332
+01:12:30,423 --> 01:12:33,644
+Ama bir koşulu daha kontrol etmemiz gerekiyor. O koşulu ne olacak?
+
+333
+01:12:36,743 --> 01:12:38,083
+Emirhan'a söz vereyim.
+
+334
+01:12:39,723 --> 01:12:42,324
+Last ve first eşit olmadığı süreci değerli mi?
+
+335
+01:12:42,323 --> 01:12:49,383
+diyebiliriz. Ama şöyle desek, aynı kapıya çıkar mı ya da daha uygun olur mu diye sorayım.
+
+336
+01:12:51,303 --> 01:12:55,803
+First, last'tan küçük eşit olduğu sürece dönsek.
+
+337
+01:12:57,843 --> 01:12:59,803
+Aynen mantıklı olduk bence.
+
+338
+01:12:59,803 --> 01:13:01,023
+Bir deneyelim.
+
+339
+01:13:05,108 --> 01:13:10,048
+Bu noktada en son çıktıktan sonra yapacağımız bir şey var mı?
+
+340
+01:13:20,020 --> 01:13:20,739
+Emirhan
+
+341
+01:13:20,739 --> 01:13:24,440
+Çıktıktan sonra? Evet.
+
+342
+01:13:26,779 --> 01:13:30,440
+If control'ü açarız yine, hangi nedenle çıktığını öğrenmek için.
+
+343
+01:13:30,799 --> 01:13:32,299
+Tamam, çok güzel. Ne yazalım buraya?
+
+344
+01:13:37,043 --> 01:13:39,284
+A middle x'e eşit mi diye bakabiliriz?
+
+345
+01:13:41,283 --> 01:13:43,443
+A middle x'e eşit mi diye bakalım.
+
+346
+01:13:49,108 --> 01:13:50,108
+kolu, false kolu olsun. Sonra da tamamlayacağız. Şimdi bu algoritmamızın doğru olup olmadığını kontrol etmek için analiz yapmamız gerekiyor. N var, first var, last var, middle var,
+
+347
+01:14:09,811 --> 01:14:13,411
+x var, bir de a middle var.
+
+348
+01:14:22,420 --> 01:14:50,680
+Şimdi EN'imiz 6, FIRST'umuz 1, LAST'ımız 6, 6 artı 1, 7 bölü 2, 3 buçuk, tam sayı bölmesinin anlamı 3 oldu. Diyelim ki 4'ü arıyoruz. Baktık A3, 3, 3 4'e eşit mi? Değil, eşit olmadığı için içeri girdik.
+
+349
+01:14:50,680 --> 01:15:16,839
+Peki 4, 3'ten büyük mü? Evet büyük. O zaman first'u middle artı 1 yaptım. Yani first'um 4 oldu. Last'ım 6 olarak kaldı. Middle'ı hesapladım. 4, 6, 4 artı 6, 10. Middle'ım 5 oldu. Geri döndüm. First last'tan küçük eşit mi? Evet. First last'tan küçük eşit.
+
+350
+01:15:16,839 --> 01:15:43,819
+geldim. Burada x'im hala 4, a middle'im, a 5, 5. Farklı mı? Farklı. Tekrar içeri girdim. 4, 5'ten büyük mü? Değil. False koluna gittim. Last middle x'i 1 oldu. Yani 4 oldu. First'im hala 4.
+
+351
+01:15:43,820 --> 01:16:02,640
+4 artı 4 bölü 2, 4 geldi, middle'ım 4 oldu. Döndüm, first last'tan küçük eşit mi? Evet, küçük eşit. Peki, a middle, x'den farklı mı? Hayır değil, 4, 4'e eşit.
+
+352
+01:16:02,640 --> 01:16:19,180
+döngüden çıktım. Gittim middle'a baktım. Dörde eşit mi? Eşit. Direkt kaçıncı sırada bulduğumu ekrana yazdırdım. Şu anda bu bir kez olarak çalıştı. Bir sıkıntı gözükmüyor gibi. Selim?
+
+353
+01:16:20,420 --> 01:16:29,300
+Hocam ilk olarak ben şey demek istiyordum. Biz tam sebeplemesi yapıyoruz ama akış diyagramı hep böyle kullanmışız diye kullanmanız gerekmiyor mu?
+
+354
+01:16:29,299 --> 01:16:55,500
+yazalım. Haklısın bu uyarını. Artık biraz daha konuda hızlı çizim yaptığımız için o kısmı ben de atladım. Hemen düzelteyim. Div 2 yapmamız gerekiyor. Şuraya da div 2 dememiz gerekiyor.
+
+355
+01:16:55,500 --> 01:16:58,660
+Evet, başka bir şey söyleyecek misin?
+
+356
+01:16:59,460 --> 01:17:06,140
+Hocam bir de şey diyecektim, acaba ekstradan böyle evayede ikinci koşu kullanmadan düşünebilir miydik diyecektim.
+
+357
+01:17:06,140 --> 01:17:09,059
+Mesela ben şey diye düşünmüştüm, ne düşünmüşüm?
+
+358
+01:17:09,600 --> 01:17:14,800
+Midlova eşit değildir, değil olmadığı sürece devam etsin diye düşündüm.
+
+359
+01:17:15,319 --> 01:17:23,500
+Sonra alttaki ilk kolundan hani Erso olunca hani biz direkt çıkarmak yerine bir kolda açtım oraya.
+
+360
+01:17:23,500 --> 01:17:25,759
+Amit E eşit mi?
+
+361
+01:17:25,860 --> 01:17:26,559
+Gerçekten mi?
+
+362
+01:17:26,759 --> 01:17:27,539
+Ulamış olurum.
+
+363
+01:17:27,600 --> 01:17:28,119
+Tamam mı hocam?
+
+364
+01:17:28,179 --> 01:17:28,399
+Evet.
+
+365
+01:17:28,520 --> 01:17:30,160
+Oluyor.
+
+366
+01:17:30,280 --> 01:17:31,539
+Emirhan bir şey söyleyecek herhalde.
+
+367
+01:17:32,979 --> 01:17:34,160
+Eşittire gerek var mı?
+
+368
+01:17:34,300 --> 01:17:35,580
+Küçük eşittirin aslında.
+
+369
+01:17:36,100 --> 01:17:37,059
+İşte ona bakacağız.
+
+370
+01:17:37,520 --> 01:17:38,559
+Evet ona bakacağız.
+
+371
+01:17:39,039 --> 01:17:41,399
+Bir başka örnek için bunu denememiz lazım.
+
+372
+01:17:42,300 --> 01:17:45,580
+Buradaki örnekte bu tam olarak gözükmüyor.
+
+373
+01:17:46,140 --> 01:17:47,940
+Şimdi biz dört var mı diye bakmıştık.
+
+374
+01:17:48,059 --> 01:17:50,660
+Dördü bulduk ve ekrana yazdırdık.
+
+375
+01:17:50,740 --> 01:17:52,000
+Burada herhangi bir sıkıntı yok.
+
+376
+01:17:52,000 --> 01:18:08,899
+Diyelim ki burada şöyle bir dizilim olsaydı, şunu düzeltelim 1, 2, 3, 4 olmasın da burada 1, 2, 3, 5, 7, 8 olsun. Şu kısmı silelim.
+
+377
+01:18:13,908 --> 01:18:41,607
+Sonra 6, first, 1, last, 6, middle, 3, x'de, aradığımız x'de yine 4 olsun. Şimdi, a middle, baktığınız zaman 3. 4, 3'ten büyük mü? Evet, büyük. O zaman true koluna gittik. First'ün yeni değeri middle artı 1 oldu, o da 4 oldu, last 6. Middle'ım 5 oldu, x'im hala 4.
+
+378
+01:18:41,607 --> 01:19:06,967
+Döndüm, first last'tan küçük eşit mi? Evet. A middle'ım, yani A5'im kaç? Baktım 7, 7 4'ten farklı mı? Evet. İçeri girdim. 4 7'den büyük mü? 4 7'den büyük değil. O zaman false call'ına gittim. Last middle x'i 1 yaptım. Middle x'i 1 yaptığımda last 4 oldu. First 4 oldu.
+
+379
+01:19:06,967 --> 01:19:17,907
+şu anda küçük eşit olmasaydı ben bu noktada devam etmeyecektim kontrole.
+
+380
+01:19:20,327 --> 01:19:25,408
+A, middle, farklı x mi diye yazmayacaktım. Ama bunun farklı versiyonların yapılma ihtimali var.
+
+381
+01:19:25,488 --> 01:19:30,647
+Önce bunu bir yapalım. Belki modifiye edebiliriz. Hani o eşittir kaldırıp başka bir şey yapabiliriz.
+
+382
+01:19:30,647 --> 01:19:43,227
+ona birlikte bakarız. Şimdi first last baktık. Küçük eşit mi? Evet küçük eşit. Bu yüzden ikinci koşula da bakıyorum. İlk koşul sağlamıyorsa ikinci koşula bakmam zaten.
+
+383
+01:19:45,227 --> 01:19:56,827
+A4, x'e eşit mi diye bakıyorum. A4'te 5 var. 4, 5 eşit mi? Değil. Eşit olmadığı için ne oldu? İçeri girdik.
+
+384
+01:19:56,827 --> 01:20:25,747
+içeri girdiğimiz için bu sefer A4, daha doğrusu 4 değeri A4'ten büyük mü diye baktık. Büyük mü? 4, 5'ten. Hayır değil. O zaman middle eksi 1 oldu last. Middle eksi 1'de 3 oldu. First de 4 oldu. Döndük. Artık middle'ın kaç olduğunun çok bir önemi yok. Çünkü first last'tan küçük eşit mi diye sorduğumuzda hayır değil.
+
+385
+01:20:25,747 --> 01:20:36,887
+çıktık. A middle, x'e eşit mi diye baktık. Eşit değil, o zaman not found dedik. Yani bu case içinde çalışıyor.
+
+386
+01:20:41,395 --> 01:20:50,395
+Ama bunu daha farklı yapabilir miydik? Yani orada eşittir kaldırsak çalışır mı acaba? Evet Selim?
+
+387
+01:20:50,395 --> 01:20:57,395
+Hocam ben soru soracaktım sorabilir miyim? Ben önce bu kısmı bitireyim ondan sonra.
+
+388
+01:21:00,340 --> 01:21:01,119
+Evet Erdi.
+
+389
+01:21:01,859 --> 01:21:06,619
+Hocam ben de bölüyorum ama mazeret sınavı sistemle tanımlanmamış da onu söyleyecektim.
+
+390
+01:21:06,939 --> 01:21:08,919
+Erdi bununla ilgili açıklama yaptın mı zaten derste?
+
+391
+01:21:10,059 --> 01:21:11,819
+Kaçırdım hocam herhalde özür dilerim.
+
+392
+01:21:12,140 --> 01:21:15,179
+Evet sen dersteydin ama herhalde o sırada dinlemiyordun.
+
+393
+01:21:16,499 --> 01:21:22,559
+Mazeret sınavıyla ilgili dersin bitiminde 10.45, 10.50 gibi tanımlanacağını o sırada başlayacağını söyledim.
+
+394
+01:21:22,600 --> 01:21:23,459
+Teşekkür ederim.
+
+395
+01:21:23,680 --> 01:21:24,039
+Mücahede.
+
+396
+01:21:24,819 --> 01:21:27,399
+Evet şimdi neyi konuşuyorduk?
+
+397
+01:21:27,399 --> 01:21:31,760
+first last'tan küçük eşit yerine küçük yazsaydık olur mu diye konuşuyorduk.
+
+398
+01:21:32,579 --> 01:21:33,779
+Evet şimdi size sormuş olayım.
+
+399
+01:21:34,899 --> 01:21:38,899
+Bu koşullarda küçük türü koysak sadece yeterli olur mu?
+
+400
+01:21:48,148 --> 01:21:48,867
+Evet Atakan.
+
+401
+01:21:50,067 --> 01:21:51,407
+Hocam bence yeterli olur.
+
+402
+01:21:52,508 --> 01:21:53,648
+Neden dolayı öyle düşünüyorsun?
+
+403
+01:21:54,227 --> 01:22:02,847
+Hocam çünkü önceki koşulda da bu koşulda zaten küçük eşittir koyduğumuzda hani 4-4'te olduğunda zaten x eşitlenmişti, çıkıyordu.
+
+404
+01:22:02,847 --> 01:22:08,068
+Şimdiki koşulda zaten x direkt olmadığı için bu sefer direkt zaten çıkması gerekiyor.
+
+405
+01:22:08,168 --> 01:22:12,027
+Bir tur fazla anlatması yerine direkt küçük koyarsak daha mantık olur.
+
+406
+01:22:12,427 --> 01:22:15,727
+İçinde bulunmadığı durumlarda daha hızlı bitirmiş olur.
+
+407
+01:22:15,727 --> 01:22:17,527
+Peki. Selim?
+
+408
+01:22:18,148 --> 01:22:36,648
+Ben de yeterli olur diyeceğim. Ben şey diyecektim. First and last zaten birbirine eşitse middle'da o ikisine eşit olacağı için ve zaten biz bunu kontrol edeceğimiz için first and last'ın eşit olma durumu kontrol etmemize gerek yok diye düşündüm.
+
+409
+01:22:37,908 --> 01:22:38,408
+Ubeycullah?
+
+410
+01:22:40,228 --> 01:22:46,548
+Hocam bence onu kontrol edersek döngüye bir defa az girebiliriz hocam.
+
+411
+01:22:46,547 --> 01:22:51,687
+4 ve 4 birbirine eşit olduğu zaman bir daha döngüye girecek.
+
+412
+01:22:52,107 --> 01:22:57,387
+Evet, üçünüzde aynı noktaya değindiniz ve üçünüzün söylediğinde doğru gibi gözüküyor.
+
+413
+01:22:58,047 --> 01:23:01,407
+Burada kontrol ettiğimiz şey A, middle, x'e eşit mi diye kontrol ediyoruz.
+
+414
+01:23:02,927 --> 01:23:07,827
+O yüzden eşitleri çıkartmak şu anda çalışır gibi gözüküyor.
+
+415
+01:23:08,427 --> 01:23:09,648
+Bunu deneyip görebilirsiniz.
+
+416
+01:23:10,447 --> 01:23:12,167
+Ben şu anda bunların izni yapmayacağım.
+
+417
+01:23:12,167 --> 01:23:25,487
+ama çıktıktan sonraki V ile first last'tan büyük mü diye sorsaydınız ya da büyük eşit mi ya da küçük eşit mi işte bu soruya bağlı olarak belki o zaman bu eşittire ihtiyaç duyabilirdiniz.
+
+418
+01:23:25,487 --> 01:23:37,287
+Biz buraya aa middle x'e eşit mi diye koyduğumuz için bu eşittirin gereksiz bir tur daha yaratma ihtimalinden dolayı eşittiri kaldırmak akıllıca gözüküyor.
+
+419
+01:23:37,287 --> 01:23:57,327
+ben genel olarak size binary search'u hızlıca aktardım. Binary search'u bir daha göreceksiniz önümüzdeki dönem ya da önümüzdeki sene. O yüzden bu konuda bir giriş yapmış olduk. Bir arama yaklaşımının ne şekilde daha hızlı olabileceğini gördük.
+
+420
+01:23:57,327 --> 01:24:10,127
+normalde en adımda sequential search'ta, linear search'ta tamamlıyorduk hatırlarsanız. Karmaşıklık en kötü durumda o endi. Peki binary search'ta bu şartlarda ne oluyor?
+
+421
+01:24:17,811 --> 01:24:44,951
+log N alıyor. Bunu da ikinin katları şeklinde, ikinin üstü şeklinde bir sayı alırsanız, sekiz tane eleman varsa, üç adımda, log iki tabanında N olarak düşünebilirsiniz, üç adımda sonuca ulaşıyorsunuz. 1024 tane eleman olsaydı, normalde 1024 kez kontrol yapacağınıza, 10 kez kontrol yaparak, binary search'ta sonuca ulaşıyorsunuz.
+
+422
+01:24:44,951 --> 01:24:52,652
+tabii ki dizinin sıralı olması koşuluyla. O yüzden sıralamak ve sıralı dizilerle çalışmak oldukça önemli.
+
+423
+01:24:54,051 --> 01:25:06,511
+Binary search'u kullanmak, logaritma, en karmaşıklığına sahip algoritmalar dizayn etmek oldukça önemli.
+
+424
+01:25:07,111 --> 01:25:12,411
+Verimliliği çok arttırıyor. EN ile LOGEN arasında ciddi bir fark var. Birinde 1024, birinde 10.
+
+425
+01:25:12,411 --> 01:25:23,971
+ki bu makas gittikçe açılıyor biliyorsunuz. Bunlara algoritma analizi dersinde, veri yapıları dersinde yavaş yavaş görmeye başladığınızda daha aşina olacaksınız.
+
+426
+01:25:24,271 --> 01:25:36,411
+Ama Big O dediğimiz buradaki O notasyonu bir algoritmanın karmaşıklığını ifade ederken kullandığımız bir notasyon, önemli bir notasyon.
+
+427
+01:25:36,411 --> 01:25:55,071
+genelde de input sayısı cinsinden ifade ediyoruz. İşte o n kare olabilir, o n küp olabilir, o n log n olabilir, o 1 olabilir. Bu tarz algoritmaların karmaşıklığını ifade ettiğimiz bir gösterim şekli.
+
+428
+01:25:55,071 --> 01:26:03,271
+algoritmanın karnışıklığı neden önemli? Sizin algoritmanın ne kadar verimli olduğunu bize gösterdiği için önemli.
+
+429
+01:26:04,411 --> 01:26:12,991
+İşte linear search n adımda çözerken binary search log n adımda çözüyor. Aradaki farkı da çok net bir şekilde görmüş oldunuz.
+
+430
+01:26:12,991 --> 01:26:16,611
+Evet, şimdi Selim'in bir sorusu vardı. Onu alabilirim.
+
+431
+01:26:17,071 --> 01:26:21,251
+Hocam, dediğinizi muhtemelen yanlış duydum. O yüzden ben emin olmak için soruyorum.
+
+432
+01:26:21,251 --> 01:26:29,551
+Veya'da iki koşu varsa ve arasında V operatörü varsa birinci koşu geçmeden ikinci koşu kontrol eder mi bilgisayar?
+
+433
+01:26:29,991 --> 01:26:30,471
+Etmez.
+
+434
+01:26:31,191 --> 01:26:32,271
+Tamam hocam teşekkür ederim.
+
+435
+01:26:32,391 --> 01:26:34,871
+Ben de zaten şöyle demiştim belki yanlış anlaşılmıştır.
+
+436
+01:26:34,871 --> 01:26:42,691
+Orse de arasında bir şey dediniz ben sonra ikincisinden bahsedince mutlaka yanlış anladım o yüzden tekrar sormak istedim.
+
+437
+01:26:42,771 --> 01:26:49,471
+First last control yani birinci kontrolü yaptığında eğer başarısız olursa ikinci kontrolü yapmaz.
+
+438
+01:26:49,472 --> 01:27:04,472
+Ant varsa, Ant varsa, Or varsa tabii ki yapar. Burası kritik. V varsa. O yüzden ilk kontrolünüzü, yani hangi kontrolün önce yapılacağını ona göre seçmeniz lazım. Bu da önemli.
+
+439
+01:27:06,072 --> 01:27:14,052
+Yani önce doğru kontrolü yapmanız, onun sonucuna göre diğer kontrole geçmeniz lazım. Bunu göreceksiniz.
+
+440
+01:27:14,051 --> 01:27:25,731
+dizilerde o indiste erişme hakkınız olup olmadığını önce kontrol etmeniz lazım. Ondan sonra o indiste aradığınız bir şey var mı yok mu ya da oradaki değere erişmeye çalışmanız lazım.
+
+441
+01:27:26,251 --> 01:27:35,051
+Önce o değere erişmeye çalışırsanız bazen erişmemeniz gereken bir yere erişirsiniz. O yüzden sınır kontrollerinin her zaman önce yapılması lazım.
+
+442
+01:27:36,431 --> 01:27:37,091
+Anladım hocam.
+
+443
+01:27:37,091 --> 01:27:38,271
+Bana dikkat etmek gerekiyor.
+
+444
+01:27:39,411 --> 01:27:40,331
+Evet başka soru sola.
+
+445
+01:27:45,108 --> 01:28:11,707
+binary source ile ilgili soru sormak isteyen. Bugün biraz mahbursunuz gördüğüm kadarıyla. Çok konsantre değilsiniz. Herhalde aklınız fikriniz ödevde ya da ödevlerinizde sürede azalıyor. O yüzden bugün anlatacaklarımı ben hızlıca size aktardım. Biraz da size ödeviniz içinde süre kalması amacıyla dersin geri kalan kısmını devam etmeyeceğim, tamamlayacağım.
+
+446
+01:28:11,707 --> 01:28:36,667
+Böylece siz de ödevinize odaklanabilirsiniz geri kalan bir buçuk saate aşağı yukarı sürede. En azından biraz daha ilerlersiniz. Hepinize bundan sonraki dönemlerde başarılar diliyorum. Bir kez daha muhtemelen karşılaşma olasılığımız var ilerleyen dönemlerde. Umarım sizin için güzel, faydalı bir dönem olmuştur.
+
+447
+01:28:36,667 --> 01:28:44,607
+daha çok şey öğreneceksiniz, daha yolun başındasınız ama buradaki temel bilgileriniz size çok fayda sağlayacak ileride.
+
+448
+01:28:45,367 --> 01:28:51,828
+Sınava hazırlanırken lütfen defter, kitap, kapalı bir şekilde soruları çözmeye çalışın sınava hazırlandığınız zaman.
+
+449
+01:28:51,828 --> 01:29:00,587
+Çok faydasını görürsünüz. Onun ötesinde ilerleyen dönemlerde şunu tavsiye edeceğim.
+
+450
+01:29:00,587 --> 01:29:07,347
+ikinci sınıftan itibaren yavaş yavaş hocaların araştırma gruplarına giriş yapmaya başlayın.
+
+451
+01:29:07,887 --> 01:29:09,667
+Hocaların hangi konularda çalıştığına bakın.
+
+452
+01:29:11,187 --> 01:29:18,447
+Kendinizi o alanda geliştirmek istediğiniz bir alan varsa o alanda hocalarla birlikte araştırma grubunda yer almak istediğinizi mail atarak,
+
+453
+01:29:18,447 --> 01:29:20,287
+hocalarla görüşerek onlara iletin.
+
+454
+01:29:21,247 --> 01:29:23,327
+Tavsiye ederim. Çok faydasız görürsünüz.
+
+455
+01:29:25,227 --> 01:29:30,187
+Ara ve bitirme projeleriniz geldiğinde üçüncü sınıfta ve doğruncu sınıfta güzel konular seçin.
+
+456
+01:29:30,587 --> 01:29:41,407
+kendinizi geliştirecek konular, sizi temsil edecek, CV'niz de gözüktüğü zaman şık duracak, şıktan kastettiğim biri baktığında aa ne kadar güzel bir şey yapmış diyecek konular seçmeye çalışın.
+
+457
+01:29:45,087 --> 01:29:50,247
+Sağlık diliyorum, kendinize çok iyi bakın, sınavlarınızda başarılar, görüşmek üzere.
+
+458
+01:29:51,647 --> 01:29:52,347
+İyi günler hocam.

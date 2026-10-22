@@ -1,0 +1,2255 @@
+1
+00:01:15,540 --> 00:01:36,319
+Günaydın arkadaşlar. Hepiniz hoş geldiniz. Yılın ilk haftası, dönemin de son haftası. Hepinize güzel bir yıl diliyorum tekrar. Sağlıklı, huzurla, mutlulukla, sevdiklerinizle geçireceğiniz. Umarım bu sene, geçen seneden daha keyifli bir yıl olur.
+
+2
+00:01:36,319 --> 00:01:52,459
+Şimdi biraz geç bağlandım çünkü nedense bugün baya uzun sürdü bağlantı bilmiyorum sizde de böyle bir sorun oldu ama bir şekilde uzunla ilgili bir sıkıntı olabilir.
+
+3
+00:01:54,459 --> 00:02:01,459
+İkincisi şimdi bugün gene kod yazacağımızı söylemiştik son iki hafta kod yazalım diye konuşmuştuk.
+
+4
+00:02:01,459 --> 00:02:07,099
+kod yazacağız ama öncesinde dönem projenizle ilgili sorular varsa onları yanıtlayacağım.
+
+5
+00:02:07,879 --> 00:02:12,419
+Arkasından kod yazacağımız birkaç soruyla ilgileniyor olacağız.
+
+6
+00:02:12,419 --> 00:02:22,579
+Evet, söz sizde dönem projenizle ilgili danışmak istediğiniz konular varsa, sormak istediğiniz noktalar varsa sizden sorularınızı alayım.
+
+7
+00:02:26,548 --> 00:02:27,627
+Evet, Anıl.
+
+8
+00:02:29,567 --> 00:02:37,247
+Hocam, günaydın. Ben şey sormak istiyordum. Bu PDF'de Christian ve Solution olarak istediğiniz şey tam olarak ne?
+
+9
+00:02:39,127 --> 00:02:55,007
+Sorunun kendisini yazmanız gerekiyor. Bir. İki. Solution olarak istediğim şey de çözüm üretirken kullandığınız yaklaşımlar nelerdi? Bunlardan bahsedeceksiniz. Mesela tahtayı nasıl oluşturdunuz?
+
+10
+00:02:56,548 --> 00:03:03,367
+kontrollerinizi nasıl yaptınız. Kısaca bunları anlatmanızı istiyorum. Algoritma şeklinde değil, dikkat çekilmesi gereken nokta.
+
+11
+00:03:03,367 --> 00:03:16,268
+Ben şu şekilde tasarladım, bu sayede şöyle bir avantaj oldu. Ben şu şekilde tasarladım, yeterince efektif olduğunu düşünmüyorum gibi yorum yazmanızı bekliyorum.
+
+12
+00:03:17,007 --> 00:03:22,327
+Peki en fazla 10 tane veya en fazla 20 tane olsun gibi bir sınır var mı?
+
+13
+00:03:22,327 --> 00:03:34,367
+Bir sınır yok. Programınızın dikkat çekici yönlerini ön plana çıkartacak bir anlatım istiyorum. Bu arada biraz sizin seçiciliğinizde kalmış.
+
+14
+00:03:34,887 --> 00:03:35,588
+Tamam hocam sağ olun.
+
+15
+00:03:36,287 --> 00:03:36,807
+Rica ederim.
+
+16
+00:03:38,327 --> 00:03:38,908
+Evet Selim.
+
+17
+00:03:40,268 --> 00:03:45,268
+Hocam şey soracaktım. Yapı ile pointerları kullanmamızda bir sakıncı var mı?
+
+18
+00:03:46,228 --> 00:03:46,567
+Ne ile?
+
+19
+00:03:47,628 --> 00:03:49,247
+Structlarla pointerları.
+
+20
+00:03:50,607 --> 00:03:51,827
+Hayır yok.
+
+21
+00:03:52,327 --> 00:04:04,747
+Ama burada şunu belirteyim. Burada öğrenmediğiniz bir bilgiyi kullandığınızda o bilgiyle ilgili gelecek sorulara karşı da hazırlıklı olmanız gerekiyor.
+
+22
+00:04:05,667 --> 00:04:18,567
+O yüzden kendinizin bildiği, öğrendiği bir şeyi kullanabilirsiniz. Ama aksi takdirde daha güzel yapayım diye yardım alıp yaparsanız bunu istemiyorum.
+
+23
+00:04:18,567 --> 00:04:41,747
+Anladım hocam. Yok yardım değil de en fazla hata çıkarırım. Bir de hocam bir şey soracaktım. E postadan size şey sormuştum. Hani değişkenleri nereye tanımlamamız gerektiği hakkında ekstra detay istemiştim. Birden fazla fonksiyon kullandığımızda ana fonksiyonu tanımlamamız gerektiğini söylemiştiniz de fonksiyonlar tepesinden mi kastetiniz yoksa sadece main içinde mi tanımlama yapabiliriz?
+
+24
+00:04:41,747 --> 00:04:53,087
+Şimdi değişken tanımında lokal ve global değişken olmak üzere genelde iki tip kullandığımız farklı değişken tipi var.
+
+25
+00:04:54,107 --> 00:05:03,247
+Main'in dışında yani ana fonksiyonun dışında ya da fonksiyonun dışında tanımadığınız değişkenler genel olarak global değişken olarak adlandırılır ve kullanılmamalı şu andaki ödevinizde.
+
+26
+00:05:03,247 --> 00:05:07,628
+fonksiyon kullanıp yazacaklar için söylüyorum.
+
+27
+00:05:08,647 --> 00:05:13,387
+Değişken bilgileri fonksiyondan fonksiyona parametre olarak aktarılması gerekiyor.
+
+28
+00:05:13,887 --> 00:05:15,427
+Bunun için iki tip aktarım şekli var.
+
+29
+00:05:15,507 --> 00:05:19,848
+Bir tanesi adres göndermek, bir tanesi değerin kendisine bir kopyasını göndermek.
+
+30
+00:05:20,527 --> 00:05:26,128
+O yüzden bütün değişken tanımları fonksiyon veya ana fonksiyon içerisinde yapılmalı.
+
+31
+00:05:27,387 --> 00:05:31,847
+Fonksiyon kendi içindeki yapabiliriz yani. İlla ana fonksiyon değil lokal olarak.
+
+32
+00:05:31,848 --> 00:05:36,808
+Zaten ana fonksiyonunu tanımladığınız lokal bir ilişkini başka bir fonksiyonla kullanamazsınız.
+
+33
+00:05:37,808 --> 00:05:39,148
+Tamam hocam teşekkür ederim.
+
+34
+00:05:39,967 --> 00:05:47,667
+O konuları çok görmediğiniz için şimdi tabii onu detayını anlatmak için ders de uzun değil, süremiz de yok.
+
+35
+00:05:47,667 --> 00:05:52,068
+Evet hocam hani böyle bu oyunda yani çok ihtiyaç oluyor fonksiyon gerçekten.
+
+36
+00:05:52,187 --> 00:05:52,488
+Çok büyük.
+
+37
+00:05:52,728 --> 00:05:56,948
+Çok büyüyünce gerçekten hemen kafam karışıyor, gitgide beynim sunamaya başlıyor.
+
+38
+00:05:57,028 --> 00:06:00,128
+O yüzden fonksiyonlar başvurmak sonra böyle sorular geldi aklıma.
+
+39
+00:06:00,128 --> 00:06:14,228
+doğru bunu yapmak için yola çıkanlar varsa fonksiyona iki farklı parametre aktarılabilir. Bir adres bilgisi gönderilebilir. Bir de değişkenin adres bilgisi, bir de değişkenin kendisinin bir kopyesi gönderilebilir.
+
+40
+00:06:14,228 --> 00:06:25,228
+Her tanımladığınız değişken tanımladığınız lokasyonda, o lokalde kullanılabilir. İşte x fonksiyonu tanımladıysanız.
+
+41
+00:06:26,208 --> 00:06:31,208
+sadece orada geçerlidir. Ana fonksiyonla tanımdıklarınız sadece ana fonksiyonla geçerlidir.
+
+42
+00:06:31,208 --> 00:06:37,607
+İhtiyaç duyduğunuz değişkeni karşı tarafa göndermeniz gerekir. Bazen de fonksiyondan değer döndürmeniz gerekir.
+
+43
+00:06:37,607 --> 00:06:47,208
+Bir fonksiyondan sadece bir değer döndürebilirsiniz. Yani haklı Selim, bu ödev fonksiyonuna yapılsa çok daha güzel olur.
+
+44
+00:06:47,208 --> 00:06:53,208
+Ama fonksiyon noktasına geçebilmemiz için C'nin önemli noktalarını da anlatmamız gerekiyor.
+
+45
+00:06:53,208 --> 00:07:17,767
+Mars'ın süresi bunun için yeterli değil. O yüzden kendi özel imkanlarıyla öğrenen varsa tabii ki kullanabilir. Eleştirilerden bir tanesi de derste C'yi çok yoğun görmedik. Bazı arkadaşlarımız bir haftada, iki haftada çok hızlı üzerinden geçtiniz. Bu da hiç bilmeyenler için büyük dezavantaj oluşturdu diye eleştiri getirmiş.
+
+46
+00:07:17,767 --> 00:07:45,767
+haklılık payı olmakla birlikte açıkçası bu dersin size yüklediği yükümlülüklerden bir tanesi de size gösterdiğim C programlama tekniğini kendi özel çalışma saatinizde yaz, çizdiğimiz algoritmaları koda dökerek pratik yapmak ve bu sırada C dilini sadece temel while, if, for,
+
+47
+00:07:45,767 --> 00:07:56,867
+işte atama gibi kısımları öğrenmek için kullanmanız gerekiyor. Bu dersin özelinde bu dili öğretmek ya da daha fazla vermek yok.
+
+48
+00:07:56,867 --> 00:08:08,867
+Ama yaptığımız eleştiriye istinader önümüzdeki senelerde özellikle lab saatlerinde daha fazla C-code yazımı gerçekleştireceğimizi söyleyebilirim.
+
+49
+00:08:08,867 --> 00:08:15,767
+bu konuda ben de sizinle aynı fikirdeyim. Ders saatinde değil ama uygulama saatinde bunu yapabiliriz.
+
+50
+00:08:16,507 --> 00:08:17,367
+Evet başka soru Sola.
+
+51
+00:08:20,167 --> 00:08:20,847
+Emre.
+
+52
+00:08:21,647 --> 00:08:27,887
+Hocam geçen hafta analizlerle ilgili kendi bilgisayarımızdan video çekip koyacağız izlemiştiniz. Bunu biraz daha açıklayabilir misiniz?
+
+53
+00:08:27,888 --> 00:08:53,528
+Şöyle, şu anda gösterimi video ile mi yapacağız yoksa bir sunum şeklinde vuzulum üzerinden bağlanarak mı yani 2-3 dakika 5 dakikalık bir sunum şeklinde yapacağız. Tam karar vermedim. Bunu ilerleyen günlerde açıklayacağım. Zaten yaklaşık olarak bir haftalık bir süre kaldı.
+
+54
+00:08:53,527 --> 00:09:00,467
+o zamana kadar mutlaka ders duvarından size duyururum. Zaten perşembe yönde dersimiz var.
+
+55
+00:09:01,227 --> 00:09:13,387
+Buradaki amaç şu, video çekme ihtimalini konuşacak olursak, uygulamanızın neler yapıp neler yapamadığını çektiğiniz videoda anlatmanız gerekecek.
+
+56
+00:09:13,387 --> 00:09:23,447
+Ve bunu tabii göstererek, şimdi burada şu bilgileri alıyoruz, şunu deniyoruz, oyunun şu kısmının çalışıp çalışmadığını görüyorsunuz.
+
+57
+00:09:23,527 --> 00:09:30,607
+bu kısımlar tamam ama şu kısım çalışmıyor, bu kısımda hata alıyorum gibi bir video çekmenizi bekliyorum.
+
+58
+00:09:30,707 --> 00:09:35,587
+Oyununuzu tanıtacaksınız. Yapabildiklerinizi ve yapamadıklarınızı o videoda anlatmanızı bekliyor olacağım.
+
+59
+00:09:35,707 --> 00:09:50,147
+Eğer video seçeneği olursa olmazsa belirleyeceğimiz bir saatte grup grup, bu da yani herkes bize sorular gelecek şekilde sunum yapmanızı bekleyeceğim.
+
+60
+00:09:50,148 --> 00:10:02,208
+ama şu anda bu net değil. Video olursa videonun linkini paylaşmanızı isteyeceğim. Videonun kendisinin değil, onunla not düşmüş olayım.
+
+61
+00:10:06,163 --> 00:10:08,723
+Evet, başka sor soru sola? Evra?
+
+62
+00:10:15,892 --> 00:10:17,132
+Evren duyamıyorum seni.
+
+63
+00:10:18,332 --> 00:10:20,031
+Hocam şimdi duyabiliyor musunuz?
+
+64
+00:10:20,411 --> 00:10:20,971
+Duyabiliyorum.
+
+65
+00:10:21,372 --> 00:10:22,051
+Günaydın hocam.
+
+66
+00:10:22,352 --> 00:10:22,812
+Günaydın.
+
+67
+00:10:22,911 --> 00:10:28,631
+Geçen hafta Perşembe günü gösterimle ilgili bir şeyler düşünmüştük de ben bulamadım.
+
+68
+00:10:28,812 --> 00:10:31,191
+Bulan, ya genel olarak soracağım bulan arkadaş var mı diye.
+
+69
+00:10:31,272 --> 00:10:38,751
+Çünkü ben Matrix'te piyonları oynatmayı ya da işte taş yemeyi, işte final pozisyonuna girmeyi falan yaptım ama
+
+70
+00:10:38,751 --> 00:10:42,531
+gösterimde şu anda çok kötü görünüyor.
+
+71
+00:10:42,531 --> 00:10:56,331
+yani çok kötü görünüyordan kastım gidilen yol birlerle gösteriliyor. Piyonlar 2'den 18'e kadar gösteriliyor. Bunların gösterimiyle ilgili bir çözümü olan var mı? Ben genel ya da size, siz de dahil hocam.
+
+72
+00:10:56,871 --> 00:11:02,191
+Evet teşekkür ediyorum. Cevap vermek isteyenler, Mahmut cevap vermek istiyorsan cevap verebilirsin.
+
+73
+00:11:02,191 --> 00:11:10,432
+Hocam ben aslında bilmiyordum bu yasak olup olmadığını ama ben ASCII kodlarının yardımıyla bunu yaptım biraz.
+
+74
+00:11:10,432 --> 00:11:26,311
+İşte mesela rakamlar matriksin içine integerlar doldurdum ve bu integerlara göre her seferinde print yaptığında işte bu integerın değerini ASCII tablosunda uygunlaştırıp ona göre bir şey yapıyordum.
+
+75
+00:11:26,311 --> 00:11:44,211
+hem bu da şöyle bir şey var 3 değerli şeyler olduğu için piyonlar vesaire işte HG1 olduğu için mesela yeni bir Matrix açtım Matrix 3 karakter doldurdum Matrix'in içine ve her 3 karakteri ona göre farklı bir değişkenle yaptım.
+
+76
+00:11:44,211 --> 00:11:45,131
+Peki.
+
+77
+00:11:46,671 --> 00:11:52,211
+Güzel yani herkesin değişik bir çözümü vardır diye düşünüyorum teşekkür ederim.
+
+78
+00:11:52,991 --> 00:11:53,691
+Bazel?
+
+79
+00:11:53,691 --> 00:12:12,691
+Hocam pointer ile yaptım ben matrisi tanımlarken pointer kullandım. Açıkçası hocam ben çok bilmiyorum yani internette falan baktım. Oldu yani hocam string yazabilirim her matrisin.
+
+80
+00:12:12,691 --> 00:12:28,051
+mantisinin gözünde pointer saklarsanız o pointer'ın adresindeki karakterlerinizi ekrana yazdırabilirsiniz. Böyle bir imkanınız var. Ama formatta yazdırmak gerekiyor. Güzel. Teşekkür ederim. Selim?
+
+81
+00:12:29,731 --> 00:12:40,271
+Ben birden fazla karakter yazmak için arka planda şöyle bir şey düşündüm. Ön planını da söyleyeceğim. Şimdi arka planda matrisle int cinsinden bir matris tuttum.
+
+82
+00:12:40,271 --> 00:12:43,651
+daha önce de buna benzer bir şey konuşmuştuk aslında.
+
+83
+00:12:44,151 --> 00:12:45,111
+Epping tarzı bir şey.
+
+84
+00:12:46,151 --> 00:12:47,331
+Hatta belki aynısı.
+
+85
+00:12:48,171 --> 00:12:51,091
+Int tipinden bir dizi, matris tuttum.
+
+86
+00:12:51,391 --> 00:12:55,831
+Bunun her birinin öncesinde de bir indeks var aslında.
+
+87
+00:12:55,931 --> 00:12:56,431
+İndeks var.
+
+88
+00:12:56,571 --> 00:12:58,711
+Başka bir karakter dizisindeki.
+
+89
+00:12:59,631 --> 00:13:02,651
+Aslında o karakter dizisi de yine bir matris.
+
+90
+00:13:02,831 --> 00:13:04,991
+Çünkü indisliği verilecek.
+
+91
+00:13:05,471 --> 00:13:06,571
+Fotoğrafa da WhatsApp atmıştım.
+
+92
+00:13:06,651 --> 00:13:07,611
+Aynı o tarz aslında.
+
+93
+00:13:07,711 --> 00:13:08,471
+Oraya bakabilirsiniz.
+
+94
+00:13:08,471 --> 00:13:09,571
+Öyle bir şey düşündüm.
+
+95
+00:13:09,571 --> 00:13:18,271
+arka tarafta. Ön planda da printlerken her bir hücreye illa tablo yaparken her bir hücreye illa bir boşluk ayırmak zorunda değil diye düşündüm.
+
+96
+00:13:18,271 --> 00:13:30,691
+Hani bir çarpı pardon üç çarpı birlik de yapılabilir diye düşündüm. Mesela ben iki çarpı birlik yaptım. Yani iki tane boşluk iki tane karakter sığdırabiliyorum her hücreye. O şekilde yapılabilir diye düşündüm.
+
+97
+00:13:31,071 --> 00:13:34,031
+Sonuçta tablo üç çarpı printlerken biz karar veriyoruz.
+
+98
+00:13:34,031 --> 00:14:01,631
+çok teşekkür ederim. Şimdi farklı görüşleri aldık. Bunu normalde çok yapmadan bir uygulama ama bunları çünkü kendinizin çıkartıp bulmanız gerekiyor. Bu da ödevin bir parçası. Şunu rica edeceğim. Yani bu öğrencilikte her zaman olan bir durumdur. Lütfen fikir alışverişinin ötesinde başka bir paylaşımda bulunmayın birbirinizle.
+
+99
+00:14:01,631 --> 00:14:14,051
+arkadaşlarınızı da buna zorlamayın. Çünkü ben herhangi bir şekilde benzer kod parçaları da tespit edersen o arkadaşınıza da
+
+100
+00:14:14,368 --> 00:14:42,307
+sıfır vermek zorunda kalıyorum. O yüzden sorabilirsiniz, danışabilirsiniz, hiçbir sorun yok ama kod alışverişi kesinlikle yapılmamasını rica ediyorum. Kendinizin uğraşmasını ve özellikle kendinizin nereye kadar yapabiliyorsanız o kadar yapmanızı rica ediyorum. Bunun faydasını ilerleyen zamanlarda göreceksiniz. İnşallah tavsiyeme uyarsınız.
+
+101
+00:14:42,307 --> 00:14:43,387
+Vazel?
+
+102
+00:14:46,427 --> 00:14:47,708
+Arada kalmış hocam.
+
+103
+00:14:47,807 --> 00:14:48,447
+Tamam, okey.
+
+104
+00:14:49,947 --> 00:14:52,587
+Peki, sanırım başka soru yok.
+
+105
+00:14:56,851 --> 00:14:57,851
+ekran açalım.
+
+106
+00:15:57,268 --> 00:15:59,587
+Evet, şimdi
+
+107
+00:15:59,587 --> 00:16:03,987
+Bugün birkaç tane
+
+108
+00:16:03,987 --> 00:16:07,207
+kod yazalım istiyorum. Bunlardan
+
+109
+00:16:07,207 --> 00:16:10,268
+ilk ile başlayacağım. Daha önce bu problemi yapmıştık.
+
+110
+00:16:10,987 --> 00:16:12,707
+Ama bunun bir de kod yazımını görelim.
+
+111
+00:16:13,467 --> 00:16:14,608
+Çok da sık kullanılır.
+
+112
+00:16:14,727 --> 00:16:17,647
+Biz veri setinde min ve max'ı ararız.
+
+113
+00:16:18,147 --> 00:16:19,487
+Min ve max'ı bulan
+
+114
+00:16:19,487 --> 00:16:23,528
+programı yazacağız. Şimdi ekranı paylaşıyorum.
+
+115
+00:16:25,528 --> 00:16:26,528
+Evet.
+
+116
+00:16:34,100 --> 00:16:48,299
+sanırım görebiliyorsunuzdur. Evet hocam. Videomu durdurdum. Şimdi min ve max'ı bulmak istiyoruz. int eleman sayısı diyelim.
+
+117
+00:16:53,268 --> 00:16:56,967
+Ben size şu anda reaksiyon alamıyorum yazdıklarımdan.
+
+118
+00:17:00,820 --> 00:17:03,879
+et elaman söyse.
+
+119
+00:17:09,268 --> 00:17:11,268
+Hatta bunu float yapalım.
+
+120
+00:17:17,172 --> 00:17:46,611
+Pardon, bunu float yapamayız. Bir an bende kafam karıştı. int eleman sayısı float veri seti ve buna da 100 diyelim. printf eleman sayısına giriniz. slash n koyarak aşağıya cursor indirelim.
+
+121
+00:17:46,611 --> 00:17:49,151
+%d ile
+
+122
+00:17:52,756 --> 00:17:54,756
+eleman sayısını alalım.
+
+123
+00:17:59,859 --> 00:18:19,239
+Sonra printf elemanları giriniz. slash n ve for döngüsü ile okuyalım elemanları.
+
+124
+00:18:36,115 --> 00:18:58,296
+%f ile okuyorum ve nereye okuyorum? Veri setinin gözlerini okuyorum arkadaşlar. Bakın bu da en çok yapılan atalarla bitirilir. Buraya n yazan var, veri seti n yazan ya da veri seti eleman sayısı yazanlar var. Bu doğru değil. Her türlü da ilgili gözü elemanı okumamız gerekiyor.
+
+125
+00:18:58,296 --> 00:19:01,656
+burada tabi şunu da yazabilirdiniz.
+
+126
+00:19:02,575 --> 00:19:03,275
+printf
+
+127
+00:19:03,275 --> 00:19:06,316
+%dnc
+
+128
+00:19:06,316 --> 00:19:08,735
+elemanı
+
+129
+00:19:08,735 --> 00:19:09,915
+giriniz.
+
+130
+00:19:10,915 --> 00:19:13,176
+Buraya da virgül deyip
+
+131
+00:19:13,176 --> 00:19:15,115
+i artı bir diyebilirdiniz.
+
+132
+00:19:15,855 --> 00:19:16,395
+Böylece
+
+133
+00:19:16,395 --> 00:19:19,476
+şununca elemanı giriniz demiş olunuz.
+
+134
+00:19:20,115 --> 00:19:23,255
+Bundan sonra yapacağımız seyimin ve max bulmada hatırlarsanız
+
+135
+00:19:23,255 --> 00:19:28,255
+min ve max'ı ilk eleman olarak set ediyorduk.
+
+136
+00:19:28,296 --> 00:19:43,255
+şöyle diyebiliriz. Veri seti. Sıfırıncı elemanı en küçük ve en büyük olarak set ettik. Bundan sonra for diyoruz. Çünkü bütün diziyi gezmemiz gerekiyor.
+
+137
+00:19:43,255 --> 00:19:51,455
+i birden başlıyoruz. Çünkü ilk kelemanı binme vaks olarak set ettik. i küçük eleman sayısı diyoruz.
+
+138
+00:19:51,455 --> 00:20:14,495
+ve i artı artı diyoruz. Burada yapılması gerekenler birden fazla olduğu için öncelikle if diyoruz veri seti i diyoruz buraya tek tek bütün elemanlara bakacağımız için büyük min diyoruz.
+
+139
+00:20:14,495 --> 00:20:16,235
+Şimdi
+
+140
+00:20:16,235 --> 00:20:18,055
+tabi
+
+141
+00:20:18,055 --> 00:20:19,835
+bunun farklı
+
+142
+00:20:19,835 --> 00:20:28,135
+çözümleri var. Şu anda minimum ve maksimum elemanları bulmak üzere yol çıktık. Yani min ve maks değerlerini bulmak üzere çıktık.
+
+143
+00:20:29,355 --> 00:20:30,895
+Eğer min'den
+
+144
+00:20:30,895 --> 00:20:35,875
+ki bu maks olacağı özür diliyorum. Ya da min ile başlayalım. Şöyle diyelim.
+
+145
+00:20:37,275 --> 00:20:38,195
+Küçük ise
+
+146
+00:20:38,195 --> 00:20:41,955
+mine
+
+147
+00:20:41,955 --> 00:20:46,315
+veri seti i'ye atıyoruz.
+
+148
+00:20:48,735 --> 00:20:50,776
+Buraya tekrar bir if koymuyorum.
+
+149
+00:20:51,336 --> 00:20:52,815
+Buraya bu sefer else koyuyorum.
+
+150
+00:20:53,776 --> 00:20:57,815
+Niye? Çünkü küçük değil ise bakacağım büyük olup olmadığına.
+
+151
+00:20:58,455 --> 00:21:01,375
+Küçük ise aynı zamanda bir daha büyük olmasına bakmama gerek yok.
+
+152
+00:21:02,095 --> 00:21:07,955
+Veri seti i eğer küçük değilse büyük mü diye bakıyorum.
+
+153
+00:21:11,539 --> 00:21:39,259
+max diyorum, veri seti i diyorum ki bunu birleştirerek yazalım. Daha doğru olacaktır. Veri seti i dedik. Max'ı da yazdık. Her seferinde bu değişiyor. Eğer gerçekten böyle bir veri seti verildiyse ya da hiç değişmiyor. Buraya geldik. printf dizinin
+
+154
+00:21:39,259 --> 00:21:48,799
+en küçük elemanı 2.100'de F
+
+155
+00:21:52,564 --> 00:22:20,283
+dizinin en küçük elemanı daha sonra en büyük elemanı 2.100 de f deyip ilkine min ikincisine max diyorum ve burada artık return 0 deyip programımı noktalıyorum.
+
+156
+00:22:22,564 --> 00:22:39,703
+Evet şimdi bir run diyelim. Hata verecek. Neler yok? Tanımlanmamış. i eksik, min eksik, max eksik. Onları tanımladım. Tekrar run diyorum.
+
+157
+00:22:39,703 --> 00:22:43,843
+şu anda çalıştığı eleman sayısı 4 diyorum.
+
+158
+00:22:43,843 --> 00:22:55,043
+1.2, eksi 2.1, 0.4 ve 5.8 giriyorum.
+
+159
+00:22:58,420 --> 00:23:02,420
+Şu anda hata oldu. Bu hata neden kaynaklanıyorlardır?
+
+160
+00:23:11,635 --> 00:23:12,575
+Evet, Mehmet.
+
+161
+00:23:13,695 --> 00:23:14,815
+Sesim geliyor mu hocam?
+
+162
+00:23:15,055 --> 00:23:15,415
+Geliyor.
+
+163
+00:23:18,175 --> 00:23:22,215
+Ford'ın üstünde iyi birden başlattığımız için olabilir. Sıfırdan başlat.
+
+164
+00:23:22,915 --> 00:23:31,615
+Ama ikinci elemandan başlayacağım ya. Sıfır ilk eleman, onu atadım zaten. Artık karşılaştırma ikinci elemandan başlayacağım. O yüzden birden başladım.
+
+165
+00:23:33,755 --> 00:23:37,935
+Hocam sıfıra da bakmamız gerekmez mi? Sonuçta min ve maksı olma atadık.
+
+166
+00:23:37,935 --> 00:23:40,195
+Zaten min ve maksı olarak atadık. Sıfırın iyi mi daha bakayım?
+
+167
+00:23:40,195 --> 00:23:43,795
+Zaten onları min ve max olarak seçtim. Şurada seçtim ya.
+
+168
+00:23:44,816 --> 00:23:45,595
+Tamam hocam.
+
+169
+00:23:45,755 --> 00:23:49,676
+Onlar default min ve max oldular. Bir sonrakinden başlayacağım karşılaştığında.
+
+170
+00:23:50,676 --> 00:23:52,316
+Evet. Başka?
+
+171
+00:23:59,220 --> 00:24:09,819
+Evet, bir kişi chatten yazmış Berke. Min ve Max integer olarak tanımlandı. Aslında veri setimiz float. Güzel bir nokta.
+
+172
+00:24:09,819 --> 00:24:16,019
+Min ve Max'in yerini değiştirdim. Yani tanımını değiştirdim. Tekrar çalıştıracağım.
+
+173
+00:24:20,435 --> 00:24:30,435
+4 dedim. 1.2, eksi 2.1, 0.4, 5.8 diyorum.
+
+174
+00:24:31,635 --> 00:24:38,835
+Eksi 2.1 en küçük elemanım ve 5.8 de en büyük elemanım olacak şekilde ekrana yazdırıldı.
+
+175
+00:24:38,835 --> 00:24:48,035
+Şimdi, ben diyelim ki şuraya %3.2 f yazsam ya da 3 f2 yazsam olur mu?
+
+176
+00:24:48,035 --> 00:24:50,355
+Bu konuda yoruma olan var mı?
+
+177
+00:24:53,415 --> 00:24:54,616
+Böyle bir şey yazabilir miyim?
+
+178
+00:24:57,535 --> 00:24:58,155
+Evet Selim.
+
+179
+00:24:58,995 --> 00:25:04,915
+Bildiğim kadarıyla noktanın sondaki kısım kadar noktanın sonda kalan rakamları yazılacak.
+
+180
+00:25:05,035 --> 00:25:08,455
+Noktanın sonda kalan iki kadar da sağ kısımdaki sayıları yazılacak.
+
+181
+00:25:08,595 --> 00:25:09,275
+Rakamları pardon.
+
+182
+00:25:10,415 --> 00:25:11,735
+Peki bakalım.
+
+183
+00:25:13,015 --> 00:25:17,335
+4, 1.2, eksi 2.1.
+
+184
+00:25:18,035 --> 00:25:40,516
+0.67089, 5.980. Evet gördüğünüz gibi formatlı yazdırdım. Formatlı yazdırdığımda sadece virgülden sonraki iki basamağı yazdırdı.
+
+185
+00:25:40,516 --> 00:25:51,736
+onu yazdırırken de 98.7 diye devam ettiği için 99 olarak yazdırmış oldu. Buraya kadar sorusu olan var mı? Mahmut?
+
+186
+00:25:52,876 --> 00:25:59,736
+Hocam o zaman oradaki 3.2 sadece ne kadar gidebildiğini ifade ediyor. Yani başka bir şey yok.
+
+187
+00:26:00,135 --> 00:26:08,796
+%3 noktadan önceki kısım için ne kadarlık bir alan kullanacak ki buraya biz daha büyük sayılarla gelebiliriz ama
+
+188
+00:26:08,796 --> 00:26:16,635
+daha küçük sayılar girdiğimiz zaman o kadarlık bir alanı işgal etmesini istediğimizi formatta yazmak için söylüyoruz.
+
+189
+00:26:16,995 --> 00:26:21,656
+Noktadan sonraki kısım ise kesinirli sayının ne kadar hasiliyette yazdırılacağını söylüyor.
+
+190
+00:26:22,476 --> 00:26:24,395
+Aynen. Ondan teşekkür ederim.
+
+191
+00:26:24,755 --> 00:26:25,275
+Rica ederim.
+
+192
+00:26:26,016 --> 00:26:27,196
+Şimdi başka soru soru var.
+
+193
+00:26:28,796 --> 00:26:31,855
+Burada min ve max değerlerini bulduk.
+
+194
+00:26:32,435 --> 00:26:34,376
+Yer bulmak istedik ne yapacaktık?
+
+195
+00:26:34,376 --> 00:26:42,775
+yani hangi veri setindeki kaçıncı sayının en küçük ve kaçıncı sayının en büyük olmasını istedik ne yapacaktık?
+
+196
+00:26:42,775 --> 00:26:47,855
+Yer diyecektik ki buraya şöyle diyelim.
+
+197
+00:26:48,876 --> 00:26:50,435
+Min yer.
+
+198
+00:26:51,816 --> 00:26:52,656
+Efendim o velillah.
+
+199
+00:26:54,335 --> 00:26:57,275
+Şey cevap verecektim hocam.
+
+200
+00:26:57,476 --> 00:27:02,736
+Tamam. Yok ben yazayım ondan sonra yorum alacağım. Teşekkür ederim el kaldırdığınız için.
+
+201
+00:27:02,736 --> 00:27:16,196
+min-max ve min-yar ve max-yar ve sıfır değerini atadım. Yani ilk gözlerimin en küçük ve en büyük değer olduğunu belirledim. Şimdi neyi değiştireceğim? Bana Ubeydullah söyler misin?
+
+202
+00:27:19,196 --> 00:27:22,956
+Hocam, iyi alacağız veri seti yerine.
+
+203
+00:27:23,296 --> 00:27:23,976
+Tamam, ne yazacağım?
+
+204
+00:27:26,296 --> 00:27:27,036
+Ne yazacağız?
+
+205
+00:27:27,035 --> 00:27:40,835
+veri setini şey hocam minimum yerine bakayım bir de. Min yeri alalım hocam oraya. Sadece min yer mi yazacağım?
+
+206
+00:27:45,748 --> 00:27:46,547
+hmm
+
+207
+00:27:52,051 --> 00:27:53,251
+Peki Mahmut?
+
+208
+00:27:55,071 --> 00:28:08,411
+Hocam bence işte if veri seti i küçüktür şeyse yani min ise bunun altında min eşittir veri seti i, onun altına da yer min eşittir i şeklinde yazmamız lazım.
+
+209
+00:28:09,331 --> 00:28:14,411
+Tam olarak istediğim şeyini daha kısaltmak istiyorum. Min ve max değişkenlerinin olmadığını kabul edin.
+
+210
+00:28:16,291 --> 00:28:17,451
+O zaman bilemiyorum hocam.
+
+211
+00:28:18,171 --> 00:28:19,771
+Farklı bir kişi olsun lütfen.
+
+212
+00:28:19,771 --> 00:28:26,191
+min ve max değişkenleri olmadan bunu nasıl değiştirmeniz? Bunu yapmıştık aslında derste.
+
+213
+00:28:35,316 --> 00:28:40,615
+Şu kısmı comment out ediyorum. Şu kısmı ne olabilir mi? Evet, Ubeydullah.
+
+214
+00:28:42,236 --> 00:28:45,015
+Hocam, veri seti min yer mi yapacağız?
+
+215
+00:28:45,475 --> 00:28:47,135
+Evet, veri seti
+
+216
+00:28:47,135 --> 00:28:52,955
+min yer yapacağız. Şimdi artık
+
+217
+00:28:52,955 --> 00:28:56,055
+min yerle doğrudan o değere de erişmiş oldum. Peki,
+
+218
+00:28:56,836 --> 00:28:58,295
+burada ne değişikliği yapacağız Ubeydullah?
+
+219
+00:29:00,875 --> 00:29:01,915
+Orada hocam
+
+220
+00:29:01,915 --> 00:29:04,975
+şey, i'yi
+
+221
+00:29:04,975 --> 00:29:08,095
+min yeri eşit şey yapmamız gerekiyor.
+
+222
+00:29:08,156 --> 00:29:15,676
+Min yer eşittir, iyi diyeceğiz. Sanırım aynı değişikliği burada yapacağız.
+
+223
+00:29:17,316 --> 00:29:17,575
+Evet.
+
+224
+00:29:18,275 --> 00:29:19,336
+Teşekkür ederim.
+
+225
+00:29:21,255 --> 00:29:24,316
+Veri seti max. Buraya da geleceğiz.
+
+226
+00:29:25,555 --> 00:29:31,475
+Max yer eşittir, iyi diyeceğiz.
+
+227
+00:29:31,475 --> 00:29:34,395
+bakalım doğru çalışacak mı?
+
+228
+00:29:34,475 --> 00:29:35,356
+bir kontrol edelim
+
+229
+00:29:35,356 --> 00:29:36,896
+hocam max yer
+
+230
+00:29:36,896 --> 00:29:41,476
+yukarıda veri seti max yer
+
+231
+00:29:41,476 --> 00:29:45,275
+yukarıda derken tanımlamadınız?
+
+232
+00:29:45,275 --> 00:29:46,996
+ikinci koşuldan bahsedeyim
+
+233
+00:29:46,996 --> 00:29:50,155
+şurada evet pardon teşekkür ederim
+
+234
+00:29:50,155 --> 00:29:52,095
+hem bunu yanlış yazmıştım
+
+235
+00:29:52,095 --> 00:29:53,216
+hem de neyi tanımlamadım?
+
+236
+00:29:53,415 --> 00:29:54,976
+min yer ve max yeri tanımlamadım
+
+237
+00:29:54,976 --> 00:29:55,896
+nereye tanımlayacağım?
+
+238
+00:29:56,756 --> 00:29:59,536
+bu sefer integer kısmına tanımlayacağım
+
+239
+00:30:07,284 --> 00:30:08,823
+Hata verdi. Nerede hata var?
+
+240
+00:30:11,383 --> 00:30:11,764
+Emircan?
+
+241
+00:30:11,784 --> 00:30:12,164
+Hocam
+
+242
+00:30:12,164 --> 00:30:15,043
+Hocam yanlış
+
+243
+00:30:15,043 --> 00:30:16,124
+El kaldırarak lütfen.
+
+244
+00:30:16,383 --> 00:30:16,983
+El kaldırarak.
+
+245
+00:30:17,063 --> 00:30:17,503
+Emircan?
+
+246
+00:30:19,143 --> 00:30:21,103
+Şöyle söyleyeceğim, biz en son printf'de minimum
+
+247
+00:30:21,103 --> 00:30:23,164
+maksimum yazdırırız ama
+
+248
+00:30:23,164 --> 00:30:24,643
+onlar hatta elimizde yok şu an bizim.
+
+249
+00:30:24,903 --> 00:30:27,143
+Çok güzel. O zaman ne yazdırmamız gerekiyor?
+
+250
+00:30:27,863 --> 00:30:28,643
+Veri seti
+
+251
+00:30:28,643 --> 00:30:30,643
+yerine
+
+252
+00:30:30,643 --> 00:30:32,843
+değeri yazdırmak istiyorsak
+
+253
+00:30:32,843 --> 00:30:34,643
+veri seti
+
+254
+00:30:34,643 --> 00:30:46,923
+milyar, veri seti, max yer, tabii bir de yerlerini yazdırmak istiyorum.
+
+255
+00:30:46,923 --> 00:30:48,923
+Dizinin...
+
+256
+00:30:52,948 --> 00:30:59,187
+En küçük elemanı bu dedik ve yeri diyelim.
+
+257
+00:31:01,187 --> 00:31:04,387
+Buraya iki nokta koyalım, yüzde D diyelim.
+
+258
+00:31:04,387 --> 00:31:11,708
+Dizinin en büyük elemanı bu ve yeri diyelim.
+
+259
+00:31:11,708 --> 00:31:14,107
+Oraya da yüzde D koyalım.
+
+260
+00:31:19,155 --> 00:31:34,515
+Buraya gelip minyar koyacağız. Çünkü ikinci sıradaki yüzde de buna karşılık geliyor. En sona da Maxier koyacağız. Bir hatamız daha var, o nedir? Evren söyleyecekti sanırım.
+
+261
+00:31:37,176 --> 00:31:40,515
+Hocam, Maxier'i tanımlarken büyük E yazmışsınız.
+
+262
+00:31:41,035 --> 00:31:45,795
+Evet, şimdi çok önemli bir nokta, bilerek yazdım bunu. Maxier'in bir tane harfi büyük.
+
+263
+00:31:45,795 --> 00:32:08,556
+İkisi case sensitivity değildir. Küçük büyük harfi ayrımını önemser. O yüzden değişkenlerinizin kullanılan isimlerin aynı olması gerekir. Başka bir şey kaldı mı? Şu an kalmamış gözüküyor. Dört dedik. Bu sefer bir nokta şöyle bir sayı girelim.
+
+264
+00:32:08,555 --> 00:32:18,275
+345.213 girelim. 0.0007 girelim.
+
+265
+00:32:24,307 --> 00:32:28,147
+5.9999 görelim.
+
+266
+00:32:30,707 --> 00:32:34,287
+Evet, gördüğünüz gibi küsuratı attı.
+
+267
+00:32:34,547 --> 00:32:37,627
+En küçük eleman 0 dedi, yeri 2 dedi.
+
+268
+00:32:38,268 --> 00:32:41,887
+En büyük eleman 345 dedi, yeri 1 dedi.
+
+269
+00:32:42,267 --> 00:32:43,787
+Aslında ne yapmamız gerekiyordu?
+
+270
+00:32:45,127 --> 00:32:45,467
+Evren?
+
+271
+00:32:47,568 --> 00:32:53,087
+Hocam printlerken veri seti milyar yazdığımız yeri artı 1 yazacağız.
+
+272
+00:32:53,087 --> 00:33:13,087
+Çünkü index 0'dan başlıyor dizilerde. Evet teşekkür ederim. Bu tür kullanıcıların anlayacağı dilden ve daha doğru gözükecek şekilde de sizin ne yapmanız gerekiyor? Bazı düzenlemeler yapmanız gerekiyor. Şimdi bunu değiştirdikten sonra tekrar çalıştıralım.
+
+273
+00:33:13,087 --> 00:33:32,687
+başturalım. Bu sırada her değiştirmenizin sonunda ben run'a basıyorum ama aslında arka planda ne de çalışıyor? Compilation işlemde. Yani kodunuzu mutlaka compile etmeniz lazım değişikliklerin programa yansıyabilmesi için. Compile etmezseniz değişiklikler programın çalışmasına yansımayacaktır.
+
+274
+00:33:32,687 --> 00:33:57,807
+5 diyelim, eksi 22.22, eksi 99.99, 5.99 ve 3.1 diyelim, bir de 0.01 diyelim.
+
+275
+00:33:57,807 --> 00:34:20,108
+Evet gördüğünüz gibi yuvarlat iki sayıyı da 5.99 6 oldu. Eksi 99'da eksi 100 oldu. Nereye doğru yuvarladı? Birini yukarı doğru yuvarlamış oldu. Diğerini aşağıya doğru yuvarlamış oldu. Bunu yaparken de 9'lardan dolayı 99'lar 0 oldu ve o da yukarı doğru yuvarlamasına sebebiyet verdi.
+
+276
+00:34:20,107 --> 00:34:25,747
+Şimdi en büyük bulma ve en küçük bulma işinin bu şekilde yapıldığını gördünüz.
+
+277
+00:34:25,747 --> 00:34:31,127
+Ve burada en adımda bu işi gerçekleştirmiş olduk.
+
+278
+00:34:31,807 --> 00:34:36,887
+Bir veri setinin medyanını bulmak isteseydiniz ne yapmanız gerekirdi?
+
+279
+00:34:39,528 --> 00:34:41,507
+Bir veri setinin medyanını.
+
+280
+00:34:45,684 --> 00:34:47,684
+İyi ikiye mi bölecektik hocam?
+
+281
+00:34:47,684 --> 00:34:50,684
+İyi ikiye bölmek ne demek?
+
+282
+00:34:50,684 --> 00:34:52,684
+Eleman sayısını.
+
+283
+00:34:54,684 --> 00:35:02,684
+İkiye bölmek tam, yani böyle hani ne yapmak istediğini anlatmıyor. Biraz daha açık söyleyebilir misin?
+
+284
+00:35:04,916 --> 00:35:05,935
+Ortancı da
+
+285
+00:35:05,935 --> 00:35:07,055
+gerçi evet.
+
+286
+00:35:07,475 --> 00:35:10,376
+Şimdi şöyle isterseniz önce medyan nedir?
+
+287
+00:35:10,455 --> 00:35:11,315
+Bunu bir hatırlayalım.
+
+288
+00:35:12,416 --> 00:35:13,895
+Medyan bir
+
+289
+00:35:13,895 --> 00:35:15,775
+veri grubundaki
+
+290
+00:35:15,775 --> 00:35:17,555
+sıralı bir veri grubundaki
+
+291
+00:35:17,555 --> 00:35:19,475
+küçükten büyüye sıralı bir veri grubundaki
+
+292
+00:35:19,475 --> 00:35:22,075
+ortancı eleman. En ortadaki eleman.
+
+293
+00:35:23,256 --> 00:35:24,155
+Baştan sonra
+
+294
+00:35:24,155 --> 00:35:25,916
+baktığınızda sıralı olan bir dizide
+
+295
+00:35:25,916 --> 00:35:27,715
+en ortada bulunan eleman. O dizinin
+
+296
+00:35:27,715 --> 00:35:29,735
+medyanını gösterir. Mahmut bir şey mi söyleyeceksin?
+
+297
+00:35:30,955 --> 00:35:31,795
+Hocam cevap
+
+298
+00:35:31,795 --> 00:35:33,155
+vermek istiyordum. Tamam.
+
+299
+00:35:33,155 --> 00:35:37,995
+O zaman şimdi sizden isteyin bir 10 dakika ara vereceğiz.
+
+300
+00:35:38,136 --> 00:35:38,616
+10.41.
+
+301
+00:35:39,136 --> 00:35:41,355
+Arkasından size bir 10 dakikalık süre veriyorum.
+
+302
+00:35:42,116 --> 00:35:50,295
+Yapmanızı istediğim şey bir veri setinin medyanını bulan algoritmanın akış diagramını çizmek.
+
+303
+00:35:51,456 --> 00:35:52,496
+Siz bunu yapacaksınız.
+
+304
+00:35:52,956 --> 00:35:54,636
+Ben de kodunu yazacağım döndüğümüz zaman.
+
+305
+00:35:54,935 --> 00:35:55,435
+10.41.
+
+306
+00:35:55,996 --> 00:35:58,996
+11'de bunun kodunu yazmak üzere buluşacağız.
+
+307
+00:35:58,996 --> 00:36:00,956
+Ama bu soruyla uğraşmanız önemli.
+
+308
+00:36:01,075 --> 00:36:02,136
+Çünkü soracağım tek tek.
+
+309
+00:36:02,135 --> 00:36:06,255
+nasıl bir yöntem uydaladınız medyanı bulmak için diye.
+
+310
+00:36:08,095 --> 00:36:10,315
+Hayır, diziyi sıralı kabul etmeyeceksiniz tabii ki.
+
+311
+00:36:10,795 --> 00:36:13,235
+Karışık bir veri grubunun medyanını bulmak istiyorsunuz.
+
+312
+00:36:13,975 --> 00:36:15,955
+O şekilde problemi çözmenizi bekliyorum.
+
+313
+00:36:16,735 --> 00:36:19,095
+Peki, saat 11'de görüşmek üzere.
+
+314
+00:36:19,855 --> 00:36:20,916
+Teşekkür ediyorum arkadaşlar.
+
+315
+00:55:27,699 --> 00:55:29,180
+Evet arkadaşlar yeniden merhaba.
+
+316
+00:55:31,519 --> 00:55:33,519
+Bir soru sormuştum.
+
+317
+00:55:34,299 --> 00:55:39,199
+Bir veri setinde, karışık verilen bir veri setinde medyanı bulmanız isteniyor.
+
+318
+00:55:40,399 --> 00:55:41,519
+Bunu nasıl bulursunuz?
+
+319
+00:55:47,764 --> 00:55:48,603
+Evet, Erdi.
+
+320
+00:55:49,743 --> 00:55:57,264
+Hocam, önce sıralarız. Ben Insortion Sort kullandım. Diğer sortlarla kullanılabilir Bubble Sort vs. ya da Merch Sort.
+
+321
+00:55:57,343 --> 00:55:57,604
+Peki.
+
+322
+00:55:58,083 --> 00:56:12,903
+Ondan sonra da şey yaptım. Önce çift mi, tek mi diye yani eleman sayısına baktım. Çiftse ortadaki iki elemanı toplayıp ikiye bölerek buldum medyanı. Tekse de direkt ortadaki elemanı yazdırdım.
+
+323
+00:56:12,903 --> 00:56:42,603
+Tamam. Şimdi Erdin'in, birazdan söz vereceğim Selim ve Emre'ye. Erdin'in söylediği noktaya şöyle bir dikkat çekmek istiyorum. Medya bulma işinde çift ise işte iki tanesini toplayıp ikiye bölmek bir yaklaşım olabilir. Ya da ikisinden birini almak da bir yaklaşım olabilir. Yani illa toplayıp ikiye bölmeniz gerekmiyor. İki yöntemle kullanılabilir.
+
+324
+00:56:42,903 --> 00:57:12,344
+hiç bakmadan da doğrudan hani tek mi çift mi diye ortadaki elemanı alabilirsiniz. Evet Selim'in de şu anda chatten yazdığı gibi ikisini topluyor ikiye bölümlü bu şekilde kullanılıyor medyan ama göreceksiniz ki bilgisayar bilimlerinde veri grupları ile çalışırken bu detayı hesaba katmadan da işlem yapma şansınız var ama yanlış değil kesinlikle.
+
+325
+00:57:12,344 --> 00:57:19,984
+çünkü zaten teorisi bunu söylüyor. Bu önemli. Peki, sıralarım ve böyle bulurum dedi.
+
+326
+00:57:20,304 --> 00:57:26,564
+Buna ek katkıda bulunmak isteyen biraz önce Selim vardı. Bir de kim vardı?
+
+327
+00:57:28,944 --> 00:57:31,723
+Biri daha iyi kaldı. Emre vardı. Emre'ye söz veriyorum.
+
+328
+00:57:33,403 --> 00:57:36,363
+Benimki de aynı aslında. Sadece farklı bir sort kullandım ben.
+
+329
+00:57:37,284 --> 00:57:38,984
+Peki. Selim?
+
+330
+00:57:38,984 --> 00:58:07,064
+Ben de mutlaka çoğunu aynı yaptım. Ben de insertion sort yaptım. Sadece dediğimi hatırlamıyorum ama eğer tek ise div ikisini alıp bir arttırıp o noktaya kadar sıralım. Daha fazla gitmedim. Eğer çift ise div ikiye göre div yaptım. Sonra iki ekledim. Buraya kadar sadece sıralamaya devam ettim. Daha fazla devam etmedim. Bu kadar fark.
+
+331
+00:58:07,064 --> 00:58:36,323
+Evet şimdi çok kritik bir yer arkadaşınız cevaplamış oldu. Aslında bu problemi ele almamızın sebebi buydu. Medyanı bulmak istediğiniz zaman sıralama işi yapıyorsanız sıralamayı medyana kadar olan kısmını yapmanız gerekiyor. Medyandan sonrasını sıralamaya çalışmak gereksiz bir çaba, gereksiz bir iş yükü. O yüzden çok çok önemli olan şey burada sıralama yapmanız tabii ki bekleniyor ama sıralama algoritmanızın
+
+332
+00:58:36,323 --> 00:58:45,704
+dizinin ortasına kadar çalışması gerekiyor. Bu çok çok önemli bir detay. Bir milyon tane veriniz varsa sadece 500 binini sıralamış oluyorsunuz.
+
+333
+00:58:46,323 --> 00:58:59,723
+Yüksek boyutlu veri setlerine bu önem kazanıyor. Size zaman tasarrufu sağlıyor. Bu aslında detaylar sınavda gelen bazı sorulardaki puanlamayı da belirliyor.
+
+334
+00:58:59,723 --> 00:59:12,203
+Örneğin böyle bir soru sorsaydım tüm diziyi sıralayanlar ile diziyi ortasına kadar sıralayanlar arasında bir puan farkı olacaktı soruyu doğru çözmelerine rağmen.
+
+335
+00:59:13,283 --> 00:59:26,083
+O yüzden sınavlarda algoritmalarınızı tabii ki önce doğru çalışması önemli ama mümkünse ilk aklınıza gelen brute force diye adlandırdığınız chatten yazayım.
+
+336
+00:59:26,083 --> 00:59:43,203
+ilk akla gelen basit çözümler genelde brute force yaklaşımlardır. Bir kısmı brute force yaklaşımların zaten olması gereken efektif çözümlerdir ama bir kısmı değildir. O yüzden bunları iyileştirmek gerekir.
+
+337
+00:59:44,340 --> 01:00:10,899
+Bu konuda sizden ricam size verilen problemin ne istediğini, verilen inputun ne olduğunu ve çıktığının ne olduğunu doğru tespit edip ona göre bir çözüm üretmeye çalışmalısınız. Gelin bunun aslında şöyle diyelim save diyelim ama bu oksiyon şu an için enable edilmemiş gözüküyor. Neden böyle bir şey istediği yoktu böyle bir şey.
+
+338
+01:00:10,899 --> 01:00:34,219
+Evet tamam demek ki şöyle yapacağız demektir. Şu kısım kalsın. Şu kısmı silelim. Minmax'ı silelim. Eleman sayısı kalsın. Şimdi ben bir soru daha soracağım. Bu arada bunu karakter yapalım. Minmax'ı sileyim.
+
+339
+01:00:34,219 --> 01:00:43,759
+Medya bulma neden önemli? Yani ortalama bulmadan farkı nedir? Bir veri setinin medyanını bulmak.
+
+340
+01:00:58,675 --> 01:00:59,796
+Evet, Esma Nur.
+
+341
+01:01:00,916 --> 01:01:03,975
+Hocam ortalamayı direkt veriyor muydu? Çok hatırlamıyorum ama.
+
+342
+01:01:04,435 --> 01:01:04,915
+Nasıl yani?
+
+343
+01:01:06,095 --> 01:01:11,975
+Yani bir sıralı bir şeyin ortalama vermez, pardon hocam. Bu eğer birer birer gidiyorsa verebilirdi.
+
+344
+01:01:13,955 --> 01:01:25,195
+Orada da işte hani toplam bulmak için biliyorsunuz birden ene kadar olan sayılarda formül var. En çarpı en artı bir bölü iki ama hani burada önemli olan şu ortalamayı gene hesaplamak zorundasınız.
+
+345
+01:01:25,195 --> 01:01:30,975
+zorunda bütün sayıları toplayıp ene bölmek zorundasınız ama niye ortalama değil sorusuna emir canı sağ olun.
+
+346
+01:01:32,695 --> 01:01:39,135
+Şöyle hocam ben yanlıştırılamıyorsam bu medyan şeyde kullanılıyor. Mesela çok büyük elimizde bir dizimiz var ve biz bir tane bir şey arıyoruz.
+
+347
+01:01:39,695 --> 01:01:44,536
+Direkt bir medyanı bulursak yani direkt ortalık değere bakarız. Eğer ondan büyükse mesela sağ tarafına bakarız.
+
+348
+01:01:44,735 --> 01:01:50,455
+Küçükse sol tarafına bakarız. Yani daha fazla daha sonra daha hızlı işlem yaparız. O şekilde.
+
+349
+01:01:50,455 --> 01:02:04,935
+Bu uzun vadede belki kullanılabilecek bir yaklaşım ama daha basit bir istatistikteki kullanım amacı var. Ne olabilir? Peki başka yoksa Selim'e söz veriyorum.
+
+350
+01:02:06,356 --> 01:02:16,695
+Ben şunu düşündüm. Biz aritmetik ortamı alırken dizi aslında o da verisiyetine var olmayan bir değeri almış olduğumuz zaman medyan dizinin verisiyetinin ortasındaki var olan bir değeri veriyor.
+
+351
+01:02:16,695 --> 01:02:18,095
+Bununla ilgili bir şey olabilir belki.
+
+352
+01:02:18,095 --> 01:02:41,055
+yanlış değil söylediğim bilgi ama bu da bir ek bilgi. Esas amacımız şu biliyorsunuz ortalama aldığınızda bir veri grubunun orta noktasını ifade etmeyi hedefleriz ama veri grubunda standart sapma çok yüksekse 0 ile 6 varsa o veri grubunun orta noktası 3 olarak gözükür.
+
+353
+01:02:41,055 --> 01:02:50,015
+min sıfır ve max altıysa ve bu çok bizim için her koşulda o veri grubunun ortasını temsil etmez.
+
+354
+01:02:50,515 --> 01:03:00,155
+Çünkü medyanı bulmak istediğinizde o veri grubundaki elemanları dizersiniz ve en ortadaki elemanı alırsınız.
+
+355
+01:03:00,335 --> 01:03:05,135
+Orada bir standart sapladan bağımsız bir veri üretmiş olursunuz.
+
+356
+01:03:05,135 --> 01:03:24,355
+yani örnek veriyorum çok büyük işte 100 var ve eksi 100 var diyelim ya da 0 ile 100 olsun arada hep 49, 50 değil de 22, 23'ler var siz 42, 23'lerin olduğu bu veri grubunda 0 ve 100'ü de ortalamaya katarsanız
+
+357
+01:03:24,355 --> 01:03:33,855
+22, 23'lerin biraz daha yukarı doğru evrildiğini ortalamanın da işte 30, 35 çıktığını görürsünüz ama sizin aslında veri grubunuzun oturduğu nokta
+
+358
+01:03:33,855 --> 01:03:45,955
+22-23'lerdir. O yüzden standart sapması yüksek verilerde medyan kullanmak daha akıllıcadır. Böylece verinin merkezini daha doğru bir şekilde ifade etmiş olursunuz.
+
+359
+01:03:45,955 --> 01:03:57,955
+Verinin merkezini daha doğru ifade etmek adına standart sapması yüksek veri gruplarında medyan bulmayı tercih ediyoruz. Bu ek bilgiyi de vermiş olayım.
+
+360
+01:03:57,955 --> 01:04:12,556
+Şimdi gelelim bu kısma. Veriyi sıralayacağız demiştik hatırlarsak. Selection sort vardı gördüğünüz. Bubble sort vardı. Inserion sort vardı. Selection sortu biz yaptığımızı muhabbet sayalım.
+
+361
+01:04:12,555 --> 01:04:33,135
+for diyelim, i diyelim, 0 olsun, i küçük, element sayısı olsun. Bu arada veri setimi karakter tipine çevirdim. O yüzden böyle %C yapıyorum. %C ile okuyacağım.
+
+362
+01:04:37,844 --> 01:04:41,844
+i6 artı dedim. Bu noktada
+
+363
+01:04:41,844 --> 01:04:49,543
+min diyelim,
+
+364
+01:04:49,543 --> 01:04:51,844
+i diyelim,
+
+365
+01:04:51,844 --> 01:04:55,444
+before vermesini açalım,
+
+366
+01:04:55,444 --> 01:04:57,844
+j eşittir,
+
+367
+01:04:57,844 --> 01:05:02,243
+i artı birden başlayalım,
+
+368
+01:05:02,243 --> 01:05:05,243
+j küçük eleman
+
+369
+01:05:05,243 --> 01:05:07,543
+sayısı,
+
+370
+01:05:07,844 --> 01:05:12,384
+Yukarıda da eleman sayısı eksi bir diyelim.
+
+371
+01:05:22,900 --> 01:05:24,900
+İlk kontrol, gıda, if
+
+372
+01:05:28,307 --> 01:05:33,427
+hatta şöyle yapacağız. Veri seti
+
+373
+01:05:33,427 --> 01:05:35,467
+veri seti
+
+374
+01:05:35,467 --> 01:05:38,027
+küçük
+
+375
+01:05:38,027 --> 01:05:39,827
+veri seti
+
+376
+01:05:39,827 --> 01:05:45,707
+yerine min yazacağız.
+
+377
+01:05:45,707 --> 01:05:47,507
+eğer öyleyse
+
+378
+01:05:47,507 --> 01:05:49,547
+burada
+
+379
+01:05:49,547 --> 01:05:51,787
+yeni min
+
+380
+01:05:51,787 --> 01:05:53,148
+j olacak.
+
+381
+01:05:53,148 --> 01:05:55,947
+Buradan çıktıktan sonra
+
+382
+01:05:55,947 --> 01:06:11,528
+artık yer değiştirme işlemine giriyoruz. İlk iç foldan çıktık. Burada tmp diyelim. tmp'ye veri seti mini alacağım.
+
+383
+01:06:22,867 --> 01:06:23,867
+Bili.
+
+384
+01:06:28,019 --> 01:06:37,019
+yazacağım ve veri seti yine de tvp yazacağım.
+
+385
+01:06:41,427 --> 01:06:42,227
+Tamam mı? Doğru mu?
+
+386
+01:06:48,692 --> 01:06:52,531
+Biz Minehem
+
+387
+01:06:52,531 --> 01:06:55,172
+El kaldıralık Ubeydullah, el kaldıralık lütfen.
+
+388
+01:06:56,371 --> 01:06:56,831
+Emircan
+
+389
+01:06:56,831 --> 01:07:01,231
+Şöyle hocam, şey yaparken TMP'yi değiştirirken orada bir hata yaptık.
+
+390
+01:07:01,631 --> 01:07:03,171
+İylemini yer değişmesi lazım.
+
+391
+01:07:03,891 --> 01:07:04,891
+Şöyle yazsam olur mu?
+
+392
+01:07:05,292 --> 01:07:07,051
+O da aynı, direkt oraya iyi yazsak tamamladık.
+
+393
+01:07:07,511 --> 01:07:07,731
+Tamam.
+
+394
+01:07:08,511 --> 01:07:11,872
+Çok önemli bir hata özellikle yazdım.
+
+395
+01:07:12,351 --> 01:07:15,931
+Buraya Min yazarsanız, veri seti iyi saklamamış olurdunuz.
+
+396
+01:07:15,931 --> 01:07:17,292
+veri seti iyi sakladık.
+
+397
+01:07:17,831 --> 01:07:19,511
+İ'nin üzerine gittik bilgiyi yazdık.
+
+398
+01:07:19,612 --> 01:07:21,511
+Sonra da min'in üzerine gittik.
+
+399
+01:07:22,072 --> 01:07:23,912
+İyi bilgisini yazmış olduk.
+
+400
+01:07:25,111 --> 01:07:27,491
+Hala yanlışlık var yok sorusunu sorayım.
+
+401
+01:07:29,631 --> 01:07:30,631
+Evet Selim.
+
+402
+01:07:31,791 --> 01:07:36,471
+Hocam en iman sayısı eksi bile kadar gidiyorduk da bir yarısına kadar gitmeyecek miydik?
+
+403
+01:07:37,751 --> 01:07:38,772
+Yapacağım şimdi.
+
+404
+01:07:38,951 --> 01:07:39,751
+Onu da düzelteceğim.
+
+405
+01:07:40,211 --> 01:07:42,311
+Henüz oraya gelmedim ama teşekkür ederim uyarın için.
+
+406
+01:07:43,151 --> 01:07:43,651
+Alperen.
+
+407
+01:07:43,651 --> 01:07:47,591
+İçteki for'a kümeli parantezden adım hocam.
+
+408
+01:07:48,732 --> 01:08:11,311
+İçteki for için bu kullanımda bir yanlışlık yok aslında. Çünkü for içinde if kullanıyorum. Bir tane iş yapıyorum. If'in içinde de min kullanıyorum. Bir tane iş yapıyorum. Yani for'a ait bir iş var, if'e ait bir iş var. O yüzden herhangi bir yanlışlık yok. Ama return 0'da yazacağım. Onu da yazalım.
+
+409
+01:08:11,311 --> 01:08:40,311
+ama parantez kullanmak her zaman daha garantidir. Evet şimdi buraya kadar yaptık. Bizden istenen şey şu anda medyanı bulmaktı. Medyanda printf veri seti medyanı %c ile yazdıracağım ve diyeceğim ki veri seti
+
+410
+01:08:44,243 --> 01:08:46,023
+eleman sayısı.
+
+411
+01:08:52,180 --> 01:08:54,180
+iki
+
+412
+01:08:54,180 --> 01:08:57,180
+bakalım bize ne verecek
+
+413
+01:08:57,180 --> 01:09:02,180
+önce bir çalıştırmayı deneyelim
+
+414
+01:09:02,180 --> 01:09:04,180
+hata verdi
+
+415
+01:09:04,180 --> 01:09:07,180
+min yok dedi hemen min yazalım
+
+416
+01:09:07,180 --> 01:09:10,180
+j yok dedi
+
+417
+01:09:10,180 --> 01:09:12,180
+hemen j yazalım
+
+418
+01:09:16,243 --> 01:09:23,684
+ve tmp yok dedi. tmp'yi de karakter tipinde tanımlamamız gerekiyor. tmp'yi de tanımladık.
+
+419
+01:09:23,684 --> 01:09:36,004
+evet şimdi enalma sayısı 5 dedik. girelim a, b ve bir anda hata verdi. ne yapacağız?
+
+420
+01:09:43,699 --> 01:09:44,459
+Evet, Emre?
+
+421
+01:09:45,320 --> 01:09:50,019
+Hocam, elemanları alırken ScanF'de yüzde c'nin soluna bir boşluk bırakmamız lazım.
+
+422
+01:09:51,180 --> 01:09:51,939
+Hemen yapalım.
+
+423
+01:09:54,339 --> 01:09:55,859
+Bir daha deneyelim bakalım.
+
+424
+01:10:05,268 --> 01:10:13,268
+Evet, şimdi bu boşluk bırakma işi tabii çok sempatik bir iş değil. Opey de ulaştık bir şey sormak istiyor galiba.
+
+425
+01:10:14,028 --> 01:10:15,827
+Boşluk bırakmayı soracaktım Hücum.
+
+426
+01:10:16,768 --> 01:10:32,207
+Scan F'in bu da aranışının sebebi Enter tuşuna bastığın zaman onu da bir karakter olarak algıladığı için birleşik olarak yani verdiğiniz bilgiyle Enter'ı da iki karaktermiş gibi algıladığı için Scan F'leri olması gerekenden de ağızı okuyor.
+
+427
+01:10:32,207 --> 01:10:51,247
+boşluk bıraktığınız zaman o zaman o boşluk aslında sizin arada Enter tuşuna bastığınızda bir kadar okumasını engelliyor. Böyle bir çalışma prensi mi var? Enter'a basınca slash n gitmiyor ama ne demek istediğini anlamadım size.
+
+428
+01:10:51,247 --> 01:11:05,227
+Hocam hani orada taratırken boşluğu yazınca biz hem slash en hem boşluk için mi bakıyoruz? Çünkü biz enter basıncı slash en gidiyor ya. Yani boşluk neden slash en enter basıncı kapatıyor o kısmı anlamadım.
+
+429
+01:11:05,967 --> 01:11:08,707
+Ya ScanF'in çalışma prensifinde boşluk görüme kadar var ya.
+
+430
+01:11:10,747 --> 01:11:11,027
+Evet.
+
+431
+01:11:11,208 --> 01:11:18,147
+İlk başta boşluğu gördüğü zaman karakteri aldığında doğal olarak diğerini okumuyor ve slash en de okumamış oluyor.
+
+432
+01:11:18,147 --> 01:11:26,268
+Anladım. Enter karakteri de aynı şey yapıyor. Onu da herhalde algılıyor doğru anındaysa.
+
+433
+01:11:26,327 --> 01:11:33,607
+Enter karakterini nasıl söyleyeyim? Enter karakterini bir karakter olarak okumuyor arada boşluk olduğu için.
+
+434
+01:11:34,488 --> 01:11:35,867
+Tamam hocam. Teşekkürler.
+
+435
+01:11:36,447 --> 01:11:43,488
+Yani çok sempatik bir durum değil. Bunu anlatması da çok kolay değil. Ama böyle bir prensi var. Evet, Ayrı'da.
+
+436
+01:11:43,488 --> 01:11:49,028
+Hocam boşluk bırakmak yerine başka bir çözüm var mı bu sorunu gidermek için?
+
+437
+01:11:52,268 --> 01:12:01,148
+Yani hepsini birlikte alabilirsiniz karakterleri. Karakter karakter almayıp, karakter grubu şeklinde okuyup böyle bir %S ile de okuyabilirsiniz.
+
+438
+01:12:02,087 --> 01:12:03,148
+Tamam, teşekkür ederim.
+
+439
+01:12:03,708 --> 01:12:04,227
+Rica ederim.
+
+440
+01:12:04,587 --> 01:12:10,928
+Şimdi C olduğunu söylemiştik buradaki medyanın. Başka bir şey yapalım.
+
+441
+01:12:13,488 --> 01:12:18,148
+yani ScanF'i kenarlarla kullanmayı tavsiye etmiyorlar. Ne tavsiye ediyorlar Selim?
+
+442
+01:12:25,492 --> 01:12:27,492
+neyle okunması gerektiğini soruyorlar.
+
+443
+01:12:29,492 --> 01:12:32,992
+Evet, şimdi yani ScanF genellikle kullanılan bir fonksiyon.
+
+444
+01:12:32,992 --> 01:12:36,992
+Ama tabii ki dışarıdan yapılacak atakları açık olduğunu daha önce söylemiştik.
+
+445
+01:12:36,992 --> 01:12:42,992
+Şimdi bu detaya girmeyelim. Bu C programlamanın konusu onu orada görürsünüz.
+
+446
+01:12:42,992 --> 01:12:46,492
+Şimdi tekrar çalıştıracağım. Bu sefer
+
+447
+01:12:48,492 --> 01:12:49,992
+5 diyeceğim.
+
+448
+01:12:49,992 --> 01:12:50,992
+A
+
+449
+01:12:51,992 --> 01:12:52,992
+C
+
+450
+01:12:53,992 --> 01:12:54,992
+Z
+
+451
+01:12:55,492 --> 01:12:58,791
+K, F, D, G.
+
+452
+01:13:02,868 --> 01:13:29,987
+sıraladığınız zaman k'yı ekrana yazdırdı doğal olarak. Doğru bir şey. Ananın söylediği cevap doğru bu arada chatten yazdı ama bu dediğim gibi bu dersin konusu değil. Fscanf stream'den okuduğu için aslında file konusuna giriyor. Onu geri geldiği zaman öğreneceksiniz. Şimdi k'yı yazdık. Bizim burada yaptığımız eleman sayısı eksi 1'e kadar gittik. Sonuna kadar gittik.
+
+453
+01:13:29,987 --> 01:13:38,048
+Ama bakalım eleman sayısı bölü 2 yapsaydık ne olurdu? Bir görelim.
+
+454
+01:13:45,076 --> 01:13:56,595
+Z, C, K, M. Bu sefer Z'yi verdi. Niye böyle oldu?
+
+455
+01:14:04,884 --> 01:14:08,023
+Evet, başka soruyecek biri, cevap verecek biri var mı?
+
+456
+01:14:13,300 --> 01:14:14,579
+Evet Selim.
+
+457
+01:14:15,339 --> 01:14:21,739
+Şey düşündüm ben biz eleman sayısına beş gelince bunu ikiye bölünce integer division yapıp
+
+458
+01:14:21,739 --> 01:14:24,819
+Division şey kaç çıkıyor? İki çıkıyor.
+
+459
+01:14:24,819 --> 01:14:29,939
+İkinci indisine kadar gidecek. Onun sağındaki olanı almayacak diye düşündüm.
+
+460
+01:14:29,939 --> 01:14:33,019
+Tamam o zaman ne yapmam gerekiyor? Ne yazılması gerekiyor?
+
+461
+01:14:33,019 --> 01:14:37,980
+Sağına artı bir yazabiliriz ya da emin olamadım ne yazacağımı sana.
+
+462
+01:14:37,980 --> 01:14:39,259
+Şöyle yapsak.
+
+463
+01:14:39,259 --> 01:14:41,539
+Böyle deneyelim evet.
+
+464
+01:14:54,484 --> 01:14:57,484
+Şimdi de beklenen cevabı almış olduk.
+
+465
+01:14:58,484 --> 01:15:05,484
+A, C, K, M, Z, V, K'yı bulmuş olduk. Doğru yaptı. Peki, burada ne tür bir şeyi aslında çok istemiyoruz?
+
+466
+01:15:05,484 --> 01:15:08,484
+C programlama için önemli bir nokta.
+
+467
+01:15:10,683 --> 01:15:14,484
+Ben şu anda yaptığım aslında çok doğru bir şey değil.
+
+468
+01:15:15,484 --> 01:15:20,484
+Eleman sayısı artı 1 bölü 2 yazdığım yer doğru değil. Niye?
+
+469
+01:15:27,475 --> 01:15:30,755
+Kodu dışarıdan okuyan birinin o detayı yakalaması zor.
+
+470
+01:15:31,695 --> 01:15:41,235
+Okey, yanlış değil. Ama daha programlama açısından bir sıkıntısı var bu işin. İş yükü açısından. Selim?
+
+471
+01:15:42,335 --> 01:15:47,115
+Eleman sayısı altı olunca çiftlik, teklik bakımından daha fazla iş yapıyoruz sanki.
+
+472
+01:15:47,955 --> 01:15:50,375
+Yok, o açıdan söylemedim. Anıl?
+
+473
+01:15:51,295 --> 01:15:53,896
+Hocam, her turda ekstradan işlem yapıyoruz.
+
+474
+01:15:53,896 --> 01:15:54,175
+Evet.
+
+475
+01:15:54,175 --> 01:16:02,595
+iyi bir compiler'da her turda aslında işlem yapmaz ama kötü bir compiler'da her turda eleman sayısı artı bir işini yapar.
+
+476
+01:16:02,595 --> 01:16:20,675
+O yüzden bizim burada bir sınır, medya sınırı bir eleman da bir değişken tanımlayıp bunu eleman sayısı artı bir bölü iki dememiz lazım.
+
+477
+01:16:20,675 --> 01:16:21,455
+ok
+
+478
+01:16:25,524 --> 01:16:32,883
+Her turda sınır kontrolünü tekrar tekrar yapmasın kötü bir compiler ile.
+
+479
+01:16:38,292 --> 01:16:40,992
+Medya sınırı da tanınmamız gerekecek.
+
+480
+01:16:46,612 --> 01:17:04,612
+Peki, şimdi bu noktada aslında biz 3, 6, pardon 5 eleman için yaptık. Bir de 6 eleman için yapalım.
+
+481
+01:17:06,292 --> 01:17:17,691
+6 diyelim. A, C, E, Z, G, M. Ne dedik? Z çıktı.
+
+482
+01:17:38,484 --> 01:17:39,763
+Neden kaynaklanabilir?
+
+483
+01:17:42,063 --> 01:17:42,844
+Bu Beydullah.
+
+484
+01:17:43,603 --> 01:17:44,623
+Hocam acaba
+
+485
+01:17:45,903 --> 01:17:47,704
+Tam sayı bölmesi mi yapmamız gerekiyor?
+
+486
+01:17:50,003 --> 01:17:51,543
+Şimdi bir bakalım
+
+487
+01:17:51,803 --> 01:17:54,364
+Eleman sayısı kaç burada? Altı artı bir
+
+488
+01:17:54,863 --> 01:17:55,383
+Yedi
+
+489
+01:17:55,883 --> 01:17:56,664
+Yedi bölü iki
+
+490
+01:17:57,164 --> 01:17:58,443
+Üç buçuktan üç çıktı
+
+491
+01:17:59,223 --> 01:18:01,263
+Sıfır bir iki bunları dizdiğiniz zaman
+
+492
+01:18:02,283 --> 01:18:03,563
+Dize olmaması lazım
+
+493
+01:18:15,252 --> 01:18:16,671
+Evet Selim.
+
+494
+01:18:16,671 --> 01:18:20,831
+PrintF'teki eleman sayısı bölükte mi son mu var acaba?
+
+495
+01:18:20,831 --> 01:18:23,831
+Acaba aynı şeyi buraya yapsak.
+
+496
+01:18:30,644 --> 01:18:32,363
+düzenecek mi bakalım?
+
+497
+01:18:41,492 --> 01:18:46,791
+G, Z, M, G.
+
+498
+01:18:53,171 --> 01:18:55,171
+Şu anda sanki düzelmiş gözüküyor.
+
+499
+01:18:59,796 --> 01:19:07,055
+Peki medya sınırda iyi küçük medya sınırı mı olmalı, iyi küçük eşit medya sınırı mı olmalı?
+
+500
+01:19:20,180 --> 01:19:26,080
+Tekrar ediyorum, Median sınır 4 dönüşünde iyi küçük Median sınır mı olmalı, iyi küçük eşit Median sınır mı olmalı?
+
+501
+01:19:29,239 --> 01:19:30,520
+Farklı bir kişi lütfen.
+
+502
+01:19:32,939 --> 01:19:33,499
+Obedullah.
+
+503
+01:19:34,379 --> 01:19:36,360
+Hocam sıfırdan başladığı için küçük olması.
+
+504
+01:19:37,440 --> 01:19:39,700
+Tabii sorun yok. Eşit olsaydı yanlış olur muydu?
+
+505
+01:19:43,280 --> 01:19:47,619
+Yanlış olmazdı belki ama hocam daha fazla işlem yapardı galiba.
+
+506
+01:19:47,619 --> 01:20:09,999
+Okey, yani bu çok sınır bir soru. Buna bakarsınız sanki gereksiz yere bir küçük eşit koymamamız gerektiği gözüküyor burada. Bu detayı incelersiniz ama bu soruları özellikle gündeme getiriyorum ki hani farklı bakış açıları da kafanızda canlansın diye. Bu detaya şu anda girmenize gerek yok.
+
+507
+01:20:09,999 --> 01:20:19,700
+Peki şu anda harflerin karakter karşılıklarını yazdırdım. Sayısal karşılıklarını yazdırsaydım ne olacaktı? Bir ona bakalım.
+
+508
+01:20:26,195 --> 01:20:40,595
+6 diyelim, A, C, Z, E, M, G olsun. Veri setinin M, yani 122 çıkacaktı. 122 neye denk geliyor acaba?
+
+509
+01:20:47,828 --> 01:20:57,328
+Hangi harfe denk geliyor? Z'ye denk geliyor. 97'den küçüğün başladığını hatırlarsak ki ezberlememiz gerektiğini söylüyorum.
+
+510
+01:20:57,328 --> 01:21:11,328
+Peki, o zaman bunun anlamı şu, C'de %d ile yazdırırsanız ASCII karşılığını alırsınız. %c ile yazdırırsanız karakter karşılığını alırsınız.
+
+511
+01:21:11,328 --> 01:21:24,147
+Bu arada bunu bu şekilde yaptığımız zaman Z'nin gelmiş olması da bir ilginç oldu. Tekrar A, C, E, M, G, Z diyelim 6'da nasıl Z geldi? Demek ki hala bir hatamız var.
+
+512
+01:21:32,340 --> 01:21:33,340
+Evet Yusuf.
+
+513
+01:21:36,340 --> 01:21:48,340
+Hocam, normalde biz burada birden dörde kadar sıraladığımız için hocam, o birden dörde kadar sıraladığımız değerin son harfini alıyoruz. Normalde birden altıya kadar sıralayıp ortanca değeri almamız gerektiğini düşünüyorum ben.
+
+514
+01:21:49,340 --> 01:21:57,340
+Biz birden dörde kadar sıraladığımızda dördüncü sıraladığımız elemanın ortanca harfi olması gerekmiyor mu?
+
+515
+01:21:57,340 --> 01:22:12,399
+Hocam çünkü diğer alt kademelerde daha küçük harfler olabilir. Onların da oltancada yeri gelmiş olması gerekebilir yani. Biz onları görmediğimiz için sadece bir ile dört arasını sıralayıp oradaki dördüncü de yeri alıyoruz. Yani ben öyle düşünüyorum.
+
+516
+01:22:12,639 --> 01:22:15,999
+Tamam peki teşekkür ediyorum Yusuf görüşün için. Selim?
+
+517
+01:22:15,999 --> 01:22:28,779
+Bence az önceki eşittir muhabbetiyle alakalı. Çünkü bu şekilde olunca çift elemanla bir verisleti olunca ortadaki iki eleman sadece sonundakine kadar sıralıyoruz. Dahil olmak üzere sonundakine bakmıyoruz.
+
+518
+01:22:28,779 --> 01:22:41,979
+O zaman bir deneyelim. Unutmayın A, C, Z, M, G. Hemen eşittir koyduk. Bir deneyelim bakalım. İki tane görüş var.
+
+519
+01:22:41,979 --> 01:22:47,780
+A, C, Z, M, N, G.
+
+520
+01:22:50,359 --> 01:22:57,819
+Bunun da C'ye karşılığını bir kez daha yazdıralım ki bu sefer düzeldi fark ettiyseniz.
+
+521
+01:23:03,155 --> 01:23:32,375
+A, C, E, G, M, Z'den G değerini elde ettik. Bu da E değerini elde etmek için medya sınırı eksi birde diyebildik. Demek ki sıralamayla ilgili hiçbir sıkıntımız yok. Esas sıkıntımız şurada görmüş olduğunuz kontroldü. Küçüktür yazdığımızda
+
+522
+01:23:32,375 --> 01:23:39,016
+hatalı bir sonuç üretiyorduk. Medya sınır değerini yanlış belirlemiş oluyorduk sıralama yaparken.
+
+523
+01:23:39,615 --> 01:23:47,095
+Sıralama kısmı önemli. Çünkü sıralamada o medya sınır değerinin de sıralamaya girmiş olması lazım.
+
+524
+01:23:47,215 --> 01:23:53,876
+Oradaki elemanı sıralamaya sokmazsanız, ortadaki eleman ne kalırsa onu ekrana yazdırırsınız.
+
+525
+01:23:53,876 --> 01:24:00,155
+Onu da sıralamaya sokmak için küçük eşit ifadesini kullanmış olduk.
+
+526
+01:24:00,155 --> 01:24:16,876
+Buradaki sort, selection sort, veri setinin ortasına kadar yapılmış bir sort. Bunun yerine farklı bir sort da kullanabilirsiniz tabii ki de. Herhangi bir sıkıntı yok. Buraya kadar sorusu olan var mı?
+
+527
+01:24:26,163 --> 01:24:28,163
+Peki. Obedullah.
+
+528
+01:24:28,163 --> 01:24:36,163
+Hocam, biz bunu yazdırırken Medyan sınırı eksi bir olarak yazdırsaydık da aynı sonucu olur muyduk yani gay?
+
+529
+01:24:36,163 --> 01:24:43,163
+Şöyle yapalım, bu soruncağı alınvermek için. Önce beş karakterle bu sıralamayı yapalım. Gerçekten.
+
+530
+01:24:43,163 --> 01:24:48,163
+Hocam, şeyi değiştirmemiz gerekiyordu. Küçük eşittir.
+
+531
+01:24:48,163 --> 01:24:54,163
+Şunu mu? Önce bunun doğru çalışmadığını görelim de.
+
+532
+01:24:54,163 --> 01:24:55,163
+Tamam.
+
+533
+01:24:55,163 --> 01:24:55,684
+start-up.
+
+534
+01:25:02,707 --> 01:25:10,327
+Z, C, E, A, Nİ, altı istedi bir saniye.
+
+535
+01:25:10,327 --> 01:25:13,207
+Burada bir
+
+536
+01:25:18,996 --> 01:25:20,996
+Evet, 5 diyelim.
+
+537
+01:25:24,564 --> 01:25:40,564
+C, E. Burada sıraladığınız zaman C'nin ortada olması lazım. Bizde E denk geliyor. Şimdi neden E denk geliyor? B diye an sınır, eksi bir yazmamız gerekiyor.
+
+538
+01:25:40,564 --> 01:25:42,463
+RAM diyelim.
+
+539
+01:25:44,203 --> 01:25:45,404
+5 diyelim.
+
+540
+01:25:46,043 --> 01:25:49,904
+A, B, Z, C, E.
+
+541
+01:25:50,863 --> 01:25:52,003
+Şu anda C'yi bulduk.
+
+542
+01:25:52,764 --> 01:25:54,163
+Diyelim ki bunu 6 ile yapalım.
+
+543
+01:25:54,444 --> 01:25:56,084
+6 ile doğru çalışıyorum diye bakalım.
+
+544
+01:25:56,083 --> 01:26:17,583
+6, A, E, E, Z, C, G, M, A, C, E, G, Z, M.
+
+545
+01:26:18,104 --> 01:26:20,744
+Burada da C'yi vermiş oluyor.
+
+546
+01:26:20,843 --> 01:26:21,883
+Yani üçüncüyü vermiş oluyor.
+
+547
+01:26:21,963 --> 01:26:23,603
+Dördü de verebilir de 6 olduğu için.
+
+548
+01:26:23,943 --> 01:26:24,723
+Herhangi bir sakınca yok.
+
+549
+01:26:24,723 --> 01:26:47,104
+biz burada iki çift mi tek mi sayısı kontrolü yapmadan bu soruyu çözdüğümüz için çift sayılı örneklerde 1, 2, 3, 4, 5, 6'da üçüncüyü veriyor. Kontrol yapsaydık 3 ile 4'ü toplayıp 2'ye de bölümündük. Her ikisi de mümkün ama örneğin böyle bir örnekte toplayıp 2'ye bölmek aslında doğru bir sonuç vermeyecektir.
+
+550
+01:26:47,104 --> 01:27:03,803
+bunu da görmüş oldunuz. Sayısal karşılık olarak sayısal karşılık alabilirsiniz ama sıraladığınızda karakterlerde medyan bulmada ikiye bölmeyişi doğru sonuç vermeyecektir. Bunu söylemiş olalım.
+
+551
+01:27:05,084 --> 01:27:06,224
+Evet başka sorusu olan.
+
+552
+01:27:14,547 --> 01:27:23,787
+Peki. O zaman şimdi bugünkü dersimizin sonuna geldik. Bugün ne kod yazmış olduk birlikte. Değişik bir soru görmüş olduk.
+
+553
+01:27:23,787 --> 01:27:35,787
+Ve neden medyanın önemli olduğunu, medyan bulurken neye dikkat etmemiz gerektiğini konuştuk. Minmax bulma işinde yer bulmayla Minmax değerini bulma arasındaki farkları konuştuk.
+
+554
+01:27:35,787 --> 01:27:52,507
+kodlarını yazdık. Karakter, float değişkenlerini gördük. Kod yazarken hata olduğunda ne yapmamız gerektiğini, nasıl düzeltmemiz gerektiğini gördük. Baya bir şey aslında yapmış olduk, iyi de oldu. Evet, çağ taşlarabilirsiniz ödevle ilgili.
+
+555
+01:27:59,956 --> 01:28:02,956
+Mikrofonun açık konuşmanı bekliyorum.
+
+556
+01:28:18,547 --> 01:28:44,247
+Çağatay şöyle söyleyeyim sana, dizi yerine cursor kullanarak menü oluşturmanın herhangi bir sıkıntı yok. Ama mevzumuz tabi dizi yerine cursor kullanma noktası değil, kendi içinde oyunun doğru veri yapıları kullanıp kullanmadığı görsellikte herhangi bir sıkıntı yok. Ama onun dışında doğru veri yapıları kullanmış olman gerekiyor.
+
+557
+01:28:46,167 --> 01:28:48,047
+Evet, başka sorusu olan var mı?
+
+558
+01:28:48,547 --> 01:28:50,088
+ve yazarlar.
+
+559
+01:28:54,899 --> 01:29:23,339
+Peki, o zaman son gün perşembe günü buradan mazeret sınavına girecek arkadaşlara duyurmuş olayım. Perşembe günü mazeret sınavı yapılacak. Onunla ilgili bilgiyi sayfada yani dersin duvarında yayınladım. Sadece mazereti kabul edilenler sınava girebilecekler. Onun ötesinde perşembe günü birkaç bilgi kalmıştı network ve internetle ilgili.
+
+560
+01:29:23,339 --> 01:29:52,979
+sizinle paylaşacağım. Ondan sonra binary search algoritmasını çözeceğim. Sonra da dönemi noktalayacağız. Dolu dolu bir dönem geçirmiş oldunuz. Yani hemen hemen aklımdaki konuların fazlasını yaptık. O yüzden online ortamda sizin de katkılarınızla iyi bir dönem geçirdiğimizi düşünüyorum. Belki de bu seneki en verimli dersim de. O yüzden özellikle katkı sağlayanlara
+
+561
+01:29:52,979 --> 01:30:06,599
+çok çok teşekkür ediyorum. Katılıp dinleyenlere de aynı şekilde teşekkür ediyorum. Perşembe günü son noktaya koyacağız. Ödev tesliminizle ilgili bana hatırlatırsınız.
+
+562
+01:30:07,339 --> 01:30:13,559
+Video mu yoksa kontrol şeklinde mi olacak? O konuyla ilgili bilgiyi de perşembe günü sizlerle paylaşmış olacağım.
+
+563
+01:30:17,399 --> 01:30:22,620
+Sanırım bugünlük bu kadar. Hepinize güzel bir hafta diliyorum, güzel bir sene diyorum.
+
+564
+01:30:22,980 --> 01:30:24,260
+Kendinize iyi bakın, görüşmek üzere

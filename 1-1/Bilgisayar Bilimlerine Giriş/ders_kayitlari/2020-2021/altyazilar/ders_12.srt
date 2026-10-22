@@ -1,0 +1,4183 @@
+1
+00:05:42,483 --> 00:05:51,324
+Günaydın arkadaşlar. Hepinize güzel bir gün diliyorum. 5 dakika beklememene rağmen hala sadece 40 kişi var, kayıtlı.
+
+2
+00:05:51,324 --> 00:06:01,523
+Her geçen gün bu sayı hızlı oluyor. O yüzden çok fazla beklemeyeceğim. Gelen arkadaşlarımıza, hepinize teşekkür ediyorum.
+
+3
+00:06:01,523 --> 00:06:08,923
+Zamanında derse katıldığınız için. Diğer arkadaşlar sonradan takip ederler ders kayıtlarını.
+
+4
+00:06:08,923 --> 00:06:23,763
+Öncelikle bugünkü programımızdan bir bahsedeceğim. Dersin ilk kısmında pazartesi günü kaldığımız yerden, karakter dizilerinden, stringlerden ve karakter problemlerinden bahsedeceğiz.
+
+5
+00:06:23,763 --> 00:06:40,183
+Arkasından ikinci bölümde bir oryantasyon eğitimi gerçekleştireceğiz. Bununla ilgili aslında birkaç hafta önceden planlama yapmıştık ama 29 Ekim'in tatil olması da bile ertelemek durumunda kaldık.
+
+6
+00:06:40,183 --> 00:06:54,243
+bunun ötesinde bizim oryantasyonumuzun dışında sizin almış olduğunuz, üniversitenin yapmış olduğu bir oryantasyon eğitimi de var.
+
+7
+00:06:54,243 --> 00:07:07,663
+Burada anlatılacak bazı bilgileri orada gördünüz. O yüzden oryantasyon eğitimi kısmını birazdan bölüm özelinde, bölüm odaklı gerçekleştireceğiz ama sorularınız varsa yanıtlamaya çalışacağım.
+
+8
+00:07:07,664 --> 00:07:20,823
+saat 12'de bugün bir tanışma toplantısı olacak. Sizlere bir Zoom linki ulaşmış olması gerekiyor. Elinizle geçti mi bugünkü toplantıda Zoom linki?
+
+9
+00:07:21,943 --> 00:07:24,583
+Var hocam. Etkinliklerde var.
+
+10
+00:07:25,164 --> 00:07:25,623
+Efendim?
+
+11
+00:07:27,543 --> 00:07:30,024
+Sistem üzerinde etkinliklerde var hocam. Görünüyor.
+
+12
+00:07:30,024 --> 00:07:56,983
+Tamam, çok güzel. Bu toplantıya katılmanızı öneririm, tavsiye ederim. Bu toplantıda hocalarımız ve araştırma görevimiz arkadaşlarımız olacak, bölüm yönetimi olacak. Amacımız bu zor dönemde, pandemi döneminde birbirimizi fiziksel olarak görmediğimiz bir dönemde yakın olarak tanışmak, varsa belki sorularınızı yanıtlamak, her hocanın kendinden birazcık bahsetmesi,
+
+13
+00:07:56,983 --> 00:08:04,144
+genel olarak hangi hocalardan ders alacağınız önümüzdeki senelerde, ne dönemlerde görmenizi hedefliyoruz.
+
+14
+00:08:04,144 --> 00:08:14,564
+Çok uzun sürmeyecek. Plandan an süre 30-45 dakika. Toplantı 1 saatlik olarak açıldı. En kötü ihtimalle 1 saate kadar sarkar diye düşünebilirsiniz.
+
+15
+00:08:15,023 --> 00:08:22,963
+Bir de ders olanlar derslerine devam edebilirler. Benim için de aslında belki birçok hoca için de çok yoğun bir program olacak.
+
+16
+00:08:22,963 --> 00:08:42,503
+çünkü 9-12 dersimiz var, 12-1 arası bu etkinlik var, 1'de tekrar dersin başlıyor. O yüzden kendinizin de böyle bir programı varsa lütfen biraz felakar yapıp bugünkü toplantıya katılmaya çalışın. Umarım keyifli bir toplantı olur, tanışma olur diyelim.
+
+17
+00:08:42,503 --> 00:09:06,263
+Onun dışında anket göndermiştim. Bir kısmınız anketi doldurmuş ödev gönderenler. Onlara teşekkür ediyorum. Anketteki sonuçları tekrar yorumlayacağım ama gördüğüm kadarıyla süreyle ilgili, zamanlamayla ilgili, ödevin zorluğu, ödevin öğreticiliğiyle ilgili çok önemli bir problem gözükmüyor.
+
+18
+00:09:06,263 --> 00:09:08,483
+genel olarak bir memnuniyet oluşmuş.
+
+19
+00:09:09,064 --> 00:09:16,323
+Tabii ki memnuniyetsiz olan arkadaşlarınızın da memnuniyet düzeyini yükseltmek bir sonraki turdaki hedefimiz.
+
+20
+00:09:16,983 --> 00:09:23,864
+Ama ödev sürelerinde çok çok uzun süreler vermekten artık kaçınıyoruz.
+
+21
+00:09:24,584 --> 00:09:29,564
+Çünkü öyle olunca son dakikaya kalan ödevler oluyor.
+
+22
+00:09:29,564 --> 00:09:31,864
+Bu tarz dedike süreler vereceğiz.
+
+23
+00:09:31,863 --> 00:09:33,643
+ve burada da
+
+24
+00:09:34,868 --> 00:09:59,227
+mümkünse size önceden ödev vereceğimizi paylaşıyor olacağız ki örneğin bu hafta 6. hafta biz 5. hafta bir ödev vermiştik. Şimdi sıra 7. haftada bir ödev vermeye geldi. Önümüzdeki haftada bir ödevimiz olacak bir aksilik olması ve bu gene ders saatinde ödev verilecek. Süresi şu anda belli değil ödeve bağlı olarak değişiklik olacaktır.
+
+25
+00:09:59,227 --> 00:10:07,847
+ikinci ödevinizde önümüzdeki hafta perşembe günü muhtemelen yoruyor olacaksınız. Bir sonuç soran var mı dersi başlamadan önce?
+
+26
+00:10:12,019 --> 00:10:15,019
+Peki sorunuz yoksa o zaman
+
+27
+00:10:15,019 --> 00:10:18,019
+Hemen derste başlayalım
+
+28
+00:10:24,851 --> 00:10:26,851
+açalım.
+
+29
+00:10:36,884 --> 00:10:44,884
+Evet, şu an ekranı görebildiğimizi tahmin ediyorum. Evet, en son pazartesi günü derslerden ayrılırken böyle bir ekranla veda etmiştim size.
+
+30
+00:10:44,884 --> 00:11:02,884
+Burada rakamlardan oluşan bir dizi verildiğinde, bunun tek bir tam sayı üzerinde bu rakamların birlikte oluşturduğu sayı saklayan bir algoritmayı sormuştum. Evet, kim yardımcı olmak ister? Neler yaptınız? Bir bakalım.
+
+31
+00:11:07,251 --> 00:11:11,251
+Öncelikle kim bu soruya bakıp çözebildi onu sorayım.
+
+32
+00:11:24,628 --> 00:11:37,027
+Peki bu arkadaşlarımızın içerisinden kime söz vermek daha uygun olur? Kim cevaplamak ister? Mesela Kazım Can'ı söz vereyim.
+
+33
+00:11:39,747 --> 00:11:41,607
+Alo, sesim geliyor mu hocam?
+
+34
+00:11:41,907 --> 00:11:42,607
+Geliyor, geldim.
+
+35
+00:11:43,107 --> 00:11:44,987
+Günaydın öncelikle. Herkese.
+
+36
+00:11:45,007 --> 00:11:46,728
+Gerda, çok teşekkürler. Sağ olun.
+
+37
+00:11:48,947 --> 00:11:51,968
+Hocam, en rakamdan oluşan bir çarj dizisi alacağız.
+
+38
+00:11:52,787 --> 00:11:53,087
+Evet.
+
+39
+00:11:53,087 --> 00:12:05,547
+kullanıcıdan N alalım. Bir de döngüyle elemanları alalım. Birden E ne kadar A, I diyelim veya herhangi başka bir şey diyebiliriz.
+
+40
+00:12:13,812 --> 00:12:15,812
+mesaj kutucunu gösterelim.
+
+41
+00:12:17,812 --> 00:12:43,312
+Sonra, şu anda ilk defa bu problemlerle uğraştığımız için karakter problemleriyle verilen, ne diyelim, metnin ya da verilen karakter grubunun uzunluğunu alıyoruz ama C programını dinle geçtiğiniz zaman göreceksiniz orada bir uzunluk almayacağız çünkü karakter gruplarının sonuna okuma işleminden sonra bir null karakteri konur.
+
+42
+00:12:43,312 --> 00:12:54,652
+NAL karakteri dediğimiz bir karakterde sıfır değerine sahiptir. Her karakter grubu sıfırla bitecek şekilde okuma yapıldıktan sonra dizayn edilir.
+
+43
+00:12:54,652 --> 00:13:03,871
+O yüzden orada siz dışarıdan okumayı tamamladığınızda kaç karakter okuduysanız verleyin sonuna sistem otomatik olarak sıfır değerini koyar.
+
+44
+00:13:03,871 --> 00:13:17,751
+bir uzunluk almayız. Bunu göreceksiniz. Sadece bugüne özel karakter sorularında boyut alıyorum. Sonra almayacağım.
+
+45
+00:13:17,751 --> 00:13:34,591
+sen dedik. Burada diyelim ki rakamlar isimli bir dizim olsun. Karakter dizisi. Buraya bir okuma yapıyorum.
+
+46
+00:13:38,484 --> 00:14:04,484
+ve bu okumanın sonucunda biraz önceki 3, 0, 5 değerlerini diyelim ki 3 girendiyse diziyi okuyorum. Bunlar karakter sabitleri. Tekrar edeyim. Bunlar karakter oldukları için tek tırnakla gösteriyorum dizide.
+
+47
+00:14:04,484 --> 00:14:09,684
+karakter saklayan değişkenleri hiçbir zaman tek tırnakta göstermeyeceksiniz.
+
+48
+00:14:09,684 --> 00:14:13,043
+Sadece sabit olursa tek tırnakta göstereceksiniz.
+
+49
+00:14:13,123 --> 00:14:16,024
+Değişkenlerle hiçbir zaman tek tırnak kullanılmayacak.
+
+50
+00:14:16,423 --> 00:14:17,903
+Evet Kazım Can, söz sende.
+
+51
+00:14:19,083 --> 00:14:21,824
+Sonrasında toplam diye bir değişken oluşturdum.
+
+52
+00:14:22,024 --> 00:14:23,403
+Sıfır atadım bu değişkene.
+
+53
+00:14:24,263 --> 00:14:26,024
+Peki, toplam sıfır.
+
+54
+00:14:27,543 --> 00:14:29,923
+Tekrar bir for döngüsüne girdik.
+
+55
+00:14:30,543 --> 00:14:31,963
+Yine birden ene kadar.
+
+56
+00:14:32,903 --> 00:14:33,204
+Evet.
+
+57
+00:14:39,923 --> 00:14:43,803
+Sefer içeride çarpan diye bir değişken oluşturdum. Bir atadım buna.
+
+58
+00:14:47,803 --> 00:14:49,743
+İçeride de bir for döngüsü var.
+
+59
+00:14:51,083 --> 00:14:54,563
+J birden en eksi bire kadar dedim bu sefer.
+
+60
+00:14:55,583 --> 00:14:58,243
+Birden en eksi bire kadar.
+
+61
+00:15:00,243 --> 00:15:04,503
+Bu döngü içinde çarpan eşittir çarpan çarpan on yaptım sadece.
+
+62
+00:15:06,583 --> 00:15:08,663
+Çarpan eşittir.
+
+63
+00:15:09,923 --> 00:15:11,604
+çarpan çarpan çarpan
+
+64
+00:15:11,604 --> 00:15:17,843
+döngüden çıktıktan sonra da toplam eşittir toplam artı
+
+65
+00:15:17,843 --> 00:15:24,004
+rakamlar I eksi sıfır karakteri çarpı çarpan
+
+66
+00:15:24,004 --> 00:15:26,464
+o kısmı bir daha alabilir miyim?
+
+67
+00:15:27,303 --> 00:15:33,644
+toplam eşittir toplam artı rakamlar I eksi sıfır karakteri
+
+68
+00:15:34,644 --> 00:15:38,363
+toplam artı rakamlar I
+
+69
+00:15:38,363 --> 00:15:41,983
+eksi sıfır karakteri.
+
+70
+00:15:43,203 --> 00:15:43,343
+Evet.
+
+71
+00:15:44,483 --> 00:15:45,423
+Çarpı çarpan.
+
+72
+00:15:46,403 --> 00:15:48,883
+Bir de çarpan var. O zaman şöyle yazalım.
+
+73
+00:15:49,683 --> 00:15:51,464
+Burası biraz uzun olduğu için.
+
+74
+00:16:09,427 --> 00:16:11,947
+Hangi grupla çarpmış oluyorum? Parantez nerede olacak?
+
+75
+00:16:12,487 --> 00:16:15,167
+Şey, çıkartmanın etrafında olacak.
+
+76
+00:16:15,687 --> 00:16:15,987
+Tamam.
+
+77
+00:16:17,667 --> 00:16:18,268
+Çarpan.
+
+78
+00:16:26,868 --> 00:16:30,167
+Bir de döngülerden çıkıp toplama ekrana yazdıracağız.
+
+79
+00:16:30,727 --> 00:16:31,848
+Tamam, teşekkür ederim.
+
+80
+00:16:39,572 --> 00:16:46,572
+Evet, Kazım Can arkadaşınızın çözümle ilgili bize çizdirdiği akış diyagramı bu şekilde.
+
+81
+00:16:46,572 --> 00:16:51,572
+Bununla ilgili, şimdi sizlerden yorum alayım.
+
+82
+00:17:00,563 --> 00:17:02,563
+Evet, Alper'e söz vereyim.
+
+83
+00:17:04,563 --> 00:17:10,563
+Ben döngü içindeki döngüyü tam anlamadım orada. Ne yapmak istedi? Bence biraz yanlış da oldu çarpanı.
+
+84
+00:17:10,563 --> 00:17:30,543
+Şimdi yanlış olup olmadığı konusunu Öncak analiz yaparak anlayabiliriz. Çarpan, J diyelim. Toplam, rakamları, sanırım,
+
+85
+00:17:30,563 --> 00:17:33,584
+bizim için yeterli olacaktır.
+
+86
+00:17:34,703 --> 00:17:36,363
+Toplam sıfırla başlıyoruz.
+
+87
+00:17:37,383 --> 00:17:39,404
+Ö1, çarpan 1.
+
+88
+00:17:40,604 --> 00:17:43,223
+J1, bir de N vardı.
+
+89
+00:17:44,183 --> 00:17:44,723
+N'de 3.
+
+90
+00:17:46,924 --> 00:17:49,343
+J1, küçük eşit 2.
+
+91
+00:17:50,163 --> 00:17:51,723
+Evet doğru, içeri girdik.
+
+92
+00:17:52,464 --> 00:17:53,663
+Çarpanı 10 ile çarptık.
+
+93
+00:17:55,784 --> 00:17:57,383
+Çarpan değerimiz 10 oldu.
+
+94
+00:17:57,383 --> 00:18:10,004
+devam ettik. J2 oldu. 2 küçük eşit 2. Evet doğru. Çarpını bir daha anla çarptık. Çarpan 100 oldu. Döngüden çıktık iç döngüden.
+
+95
+00:18:11,943 --> 00:18:24,744
+Toplam sıfırdı. Rakamlar I-0. Yani o anda 3 karakteri varsa, 3 karakterinin az ki karşılığı,
+
+96
+00:18:24,744 --> 00:18:45,644
+eksi sıfır karakterinin az ki karşılığı her zaman kaç çıkacak? 3 çıkacak, 3 değeri çıkacak. O yüzden bu yaklaşım doğru. 3 çarpı 100'den 300 oldu. Toplamın yeni değeri 300 oldu. Şu rakamı da buraya yazmış oldum.
+
+97
+00:18:45,643 --> 00:18:57,183
+sonra devam ettik. Geldik I'ya. I' 2 oldu. Çalpan 1, J 1.
+
+98
+00:19:01,268 --> 00:19:09,027
+Toplam şu anda 300 rakamları da 0
+
+99
+00:19:09,027 --> 00:19:17,587
+1 küçük eşit n-1 dediğimiz noktadayız. n kaç?
+
+100
+00:19:17,587 --> 00:19:19,587
+n kaç?
+
+101
+00:19:21,587 --> 00:19:26,867
+değişti mi? 3. Yine 2 defa gideceğiz. 2 defa gittiğimizde elimizde kaç çıkacak?
+
+102
+00:19:27,147 --> 00:19:31,127
+Hocam, NXI olacak iç döngüdeki. NXI bir değil.
+
+103
+00:19:31,848 --> 00:19:32,787
+Kim söyledi?
+
+104
+00:19:33,327 --> 00:19:34,707
+Ben söyledim yine tekrar.
+
+105
+00:19:35,167 --> 00:19:35,968
+Yazmayacağım sen misin?
+
+106
+00:19:36,247 --> 00:19:36,867
+Evet hocam.
+
+107
+00:19:37,447 --> 00:19:38,467
+Ben mi yanlış yazdım?
+
+108
+00:19:39,928 --> 00:19:44,227
+Ben yanlış söylemiş olabilirim bilmiyorum da NXI olması gerekiyor.
+
+109
+00:19:44,407 --> 00:19:46,768
+Hayır, sen yani NXI ile mi çözmüştün?
+
+110
+00:19:47,127 --> 00:19:49,167
+Evet, iç döngüde NXI var.
+
+111
+00:19:49,167 --> 00:19:53,788
+O zaman tamam ben yanlış yazmışım teşekkür ederim düzeltme için.
+
+112
+00:19:54,308 --> 00:19:59,207
+N-I, N-I kaç olacak? I şimdi 2 olduğu için 1 olacak.
+
+113
+00:19:59,207 --> 00:20:07,527
+Bir defa döngüye girecek. Çarpanımız 10 olacak. Çıktık. Toplam arttı 300 arttı.
+
+114
+00:20:07,628 --> 00:20:15,687
+0-0 zaten 0 çıkacağı için oradan 0 gelecek ve toplam yukarı 300 olarak devam edecek.
+
+115
+00:20:15,687 --> 00:20:37,287
+sonra I'yı 1 arttıracağım. I 3 oldu. Çarparım yeniden 1. Bu sefer J gene 1. J'nin bitme noktası I 3 olduğu için ne olacak? 0. Hiç girmeyecek içeri.
+
+116
+00:20:37,287 --> 00:21:01,087
+içeri girmediği için direkt döngüden içeri çıkacak. Çarparımız 1, rakamlar eksi I, yani 5, 5 eksi 0'dan 5 gelecek. 5'i 300'ün üzerine ekleyeceğiz. 305 değerini elde edeceğiz ve toplam ekranı yollayacağız.
+
+117
+00:21:01,087 --> 00:21:14,768
+Yani anlis sonucu bize ne söylüyor? Arkadaşımızın yazdırdığı algoritma da doğru çalıştığını söylüyor. Yanlış çalışır diyen var mı hala?
+
+118
+00:21:20,723 --> 00:21:22,723
+Peki. Hocam.
+
+119
+00:21:22,723 --> 00:21:25,723
+Daha farklı şekilde çözebilirim diye ama.
+
+120
+00:21:25,723 --> 00:21:27,723
+Hocam. Evet.
+
+121
+00:21:27,723 --> 00:21:35,723
+Çarpını 100 bulduktan sonra ne yaptığımızı bir daha söyler misiniz? Toplam 300'e nasıl ulaştığımızı kaçırdığını sanırım.
+
+122
+00:21:35,723 --> 00:21:42,723
+Şimdi çarpını 100 bulduktan sonra rakamlar I kaçtı? 3.
+
+123
+00:21:42,723 --> 00:21:43,723
+3.
+
+124
+00:21:43,723 --> 00:21:54,444
+sıfır sabitinden çıkartıyorum. Aradaki değer, ASKİ tablosundaki karşıtlarını bilmeden ikisi rakamın arasındaki değer mutlaka 3 olmak zorunda.
+
+125
+00:21:55,463 --> 00:22:01,164
+3 çarpı 100, 300 ediyor. Toplam 0'dı. 300'ü 0 eklediğimde toplam 300 oldu.
+
+126
+00:22:01,904 --> 00:22:03,624
+Anladım, tamam. Teşekkürler.
+
+127
+00:22:05,203 --> 00:22:10,343
+Evet, şimdi bu yaptığımız çözümde daha farklı bir şey yapabile mıyız?
+
+128
+00:22:18,900 --> 00:22:19,599
+Evet, Ausu.
+
+129
+00:22:20,799 --> 00:22:28,820
+Hocam ben şöyle düşünmüştüm, bu rakamlar ı, eksi, diğer sıfır karakteri aklıma gelmediği için
+
+130
+00:22:28,820 --> 00:22:36,359
+acaba 48 çıkartarak, hani karakter olan değil de sayısal değer olan 48'i çıkartarak yapabilir miyiz diye düşünüyorum.
+
+131
+00:22:36,379 --> 00:22:40,320
+İkincisi yanlış değil, yapabilirsiniz tabii ama ikincisi ben bunu istemiyorum.
+
+132
+00:22:40,920 --> 00:22:43,179
+Çünkü bu ezberlemek zorunda olmanız demek.
+
+133
+00:22:43,740 --> 00:22:47,779
+Asr tablosundaki karakterlerin değerlerini bilmenize gerek yok.
+
+134
+00:22:47,779 --> 00:22:58,900
+Bunun yolu da az kitabla üstündeki değeri kullanmak istiyorsanız kendisini kullanacaksınız. Sıfırın değerine ihtiyaç duyuyorsanız tek tırnak içerisinde sıfır yazarsanız zaten değerini kullanıyorsunuz.
+
+135
+00:22:59,699 --> 00:23:00,760
+Tamam hocam.
+
+136
+00:23:01,580 --> 00:23:10,219
+Yarın öbür gün küçük A, küçük Z, büyük A, büyük Z ile kullanıyor olacaksınız. Bu sabitleri kullanın. Bunların değerlerini kullanmayın.
+
+137
+00:23:10,719 --> 00:23:11,039
+Tamam.
+
+138
+00:23:11,999 --> 00:23:14,019
+Teşekkürler. Evet Ubeydullah.
+
+139
+00:23:14,019 --> 00:23:17,959
+Hocam iki for'u tek for'a indirebilir miyiz?
+
+140
+00:23:18,659 --> 00:23:32,139
+Deneyelim. Hemen bu örneği şöyle bir tane daha ekleyelim. Sadece for kısmını yeniden yazıyorum.
+
+141
+00:23:35,139 --> 00:23:38,980
+I1'den başlatsın. 1N diyelim. Nasıl yazacağız?
+
+142
+00:23:38,980 --> 00:23:48,499
+Hocam ben I birden değil de direkt J, N'den başlayıp bire kadar eksi bir olarak yapalım.
+
+143
+00:23:48,499 --> 00:23:49,999
+Yapalım, onu yapalım o zaman.
+
+144
+00:23:53,300 --> 00:23:54,640
+I desem sakıncası var mı?
+
+145
+00:23:56,780 --> 00:23:59,219
+I'ya diziyle anlamları demiştik.
+
+146
+00:24:00,719 --> 00:24:02,819
+Yok, bir sıkıntı olmamış. Tamam.
+
+147
+00:24:03,260 --> 00:24:04,340
+Kaça kadar gideceğim?
+
+148
+00:24:05,219 --> 00:24:05,660
+Bire kadar.
+
+149
+00:24:06,219 --> 00:24:06,580
+Tamam.
+
+150
+00:24:08,979 --> 00:24:10,179
+Evet şimdi seni dinliyorum.
+
+151
+00:24:11,879 --> 00:24:14,359
+Sonra rakamlar I.
+
+152
+00:24:15,359 --> 00:24:15,979
+Evet.
+
+153
+00:24:16,979 --> 00:24:19,179
+Eksi sıfır.
+
+154
+00:24:20,299 --> 00:24:21,439
+Karakter oğlum sıfır.
+
+155
+00:24:21,799 --> 00:24:22,099
+Evet.
+
+156
+00:24:23,099 --> 00:24:24,439
+Eşittir sayı demişim hocam.
+
+157
+00:24:26,339 --> 00:24:27,179
+Sayı ne tarafta?
+
+158
+00:24:28,319 --> 00:24:28,939
+Sağ tarafta.
+
+159
+00:24:30,999 --> 00:24:31,419
+Şu mu?
+
+160
+00:24:31,759 --> 00:24:32,039
+Evet.
+
+161
+00:24:32,559 --> 00:24:38,819
+Tamam işte bu sizin asla ve asla yapmamanız gereken bir yazım şekli.
+
+162
+00:24:38,980 --> 00:24:40,819
+Evet, son tarafta olacaktık doğru.
+
+163
+00:24:41,239 --> 00:24:50,819
+Evet, bunu tekrar ediyorum. Arkadaşınızın söylediği iyi oldu. Böyle bir ifadeyi gördüğüm zaman otomatikman sorunun üzerini çizerim.
+
+164
+00:24:52,019 --> 00:25:04,959
+Tekrar ediyorum. Atama hiçbir zaman sağdan sola, pardon soldan sağa yapılmaz. İki, siz sağdan sola yaptığınız için bir işlem üzerine atama yapamazsınız.
+
+165
+00:25:04,959 --> 00:25:16,799
+bunu bu bedulağın söylemesi iyi oldu. Çünkü eminim ki içinizde bunu zaman zaman yapanlar var. Sayı eşittir. Rakamlar
+
+166
+00:25:16,799 --> 00:25:23,659
+I-0 diye düzelttik. Evet bu bedulağın sevindim.
+
+167
+00:25:27,260 --> 00:25:32,400
+Sonuç toplam şeyi yapmıştık değil mi hocam? Toplam eşittir diyeceğiz hocam.
+
+168
+00:25:32,400 --> 00:25:33,159
+bundan sonra.
+
+169
+00:25:34,959 --> 00:25:36,280
+Basamak çarpı,
+
+170
+00:25:37,039 --> 00:25:38,299
+basamak dediğimiz
+
+171
+00:25:38,299 --> 00:25:39,799
+gerçi
+
+172
+00:25:39,799 --> 00:25:43,819
+basamak şey
+
+173
+00:25:43,819 --> 00:25:48,459
+basamak çarpı
+
+174
+00:25:48,459 --> 00:25:49,900
+sayı artı sonuç demişim.
+
+175
+00:25:54,644 --> 00:25:56,644
+Ne yazacağım yani?
+
+176
+00:25:56,644 --> 00:25:59,983
+Bir dakika yüce, ben kafam kırıştı da
+
+177
+00:26:31,988 --> 00:26:35,988
+Yok hocam ben sıkıntılı bir şey yapmışım burada ya. Şu an fark ediyorum da.
+
+178
+00:26:38,488 --> 00:26:39,887
+Bunu düzeltmek isteyen var mı?
+
+179
+00:26:43,635 --> 00:26:44,435
+Selim
+
+180
+00:26:45,635 --> 00:26:53,835
+Before döngüsü açıp basaman iki üzeri en eksi bir, pardon iki üzeri değerini bulmamız gerekiyor.
+
+181
+00:26:53,835 --> 00:26:55,835
+Her türlü üst alıp almamız gerekiyor.
+
+182
+00:26:55,835 --> 00:26:56,835
+Hayır.
+
+183
+00:26:58,835 --> 00:27:00,835
+Hocam basama her...
+
+184
+00:27:00,835 --> 00:27:01,835
+Alpera
+
+185
+00:27:04,435 --> 00:27:09,435
+Hocam bu döngüye girmeden bir tane basamak eşittir 1 veya çarpan eşittir 1 değeri...
+
+186
+00:27:09,435 --> 00:27:12,235
+Çarpan eşittir 1'imiz burada vardı hatırlarsak.
+
+187
+00:27:12,235 --> 00:27:15,495
+Bunu döngünün öncesine alacağım
+
+188
+00:27:15,495 --> 00:27:19,735
+Çarpan eşittir 1 dedim
+
+189
+00:27:19,735 --> 00:27:21,075
+Evet şimdi seni dinliyorum
+
+190
+00:27:21,075 --> 00:27:23,995
+Şimdi de toplam eşittir
+
+191
+00:27:23,995 --> 00:27:33,795
+Toplam artı sayı çarpı çarpan
+
+192
+00:27:33,795 --> 00:27:37,835
+Evet bir de çarpan
+
+193
+00:27:37,835 --> 00:27:39,935
+Çarpan da bir 10 ile çarpmamız lazım
+
+194
+00:27:39,935 --> 00:27:40,875
+Nerede?
+
+195
+00:27:40,875 --> 00:27:42,475
+Onun altında
+
+196
+00:27:42,475 --> 00:27:43,975
+Sağolun
+
+197
+00:27:43,975 --> 00:27:45,815
+Teşekkür ederim
+
+198
+00:27:56,243 --> 00:28:01,763
+Bunun sonunda sanırım toplama ekranı yazdırmam gerekiyor. Bir öncekinde olduğu gibi.
+
+199
+00:28:06,163 --> 00:28:10,323
+Evet. Doğru çalışır mı, yanlış çalışır diyen var mı?
+
+200
+00:28:15,988 --> 00:28:17,988
+Evet, Elif Pehlivanlı.
+
+201
+00:28:17,988 --> 00:28:23,988
+Hocam, bunun için birden N'e gitmemiz gerekmiyor mu? Çarpan giderek büyüyecek yani.
+
+202
+00:28:23,988 --> 00:28:29,988
+İşte onu siz analiz yaparak karar vereceksiniz.
+
+203
+00:28:29,988 --> 00:28:40,988
+Elif Lütfen analiz yapsın bu sorunun analizini ve doğru olup olmadığını, çözümün yanlış olup olmadığını birbirinizden bekliyorum.
+
+204
+00:28:40,988 --> 00:28:43,988
+Hocam, toplamın bir ilk değeri olması gerekmiyor mu?
+
+205
+00:28:43,988 --> 00:28:46,428
+Toplamın ilk değeri zaten burada var.
+
+206
+00:28:47,807 --> 00:28:48,647
+Sağ olun, tamam.
+
+207
+00:28:48,647 --> 00:28:54,287
+Biz yani şu kısmı şöyle göstereyim, şu kısmı şu anda modifiye ediyoruz.
+
+208
+00:28:55,647 --> 00:28:56,627
+Tamam mı?
+
+209
+00:28:57,568 --> 00:28:58,127
+Tamam.
+
+210
+00:29:00,388 --> 00:29:01,888
+Toplamın ilk değeri sıfır.
+
+211
+00:30:01,011 --> 00:30:03,011
+Hocam, bir şey soracağım.
+
+212
+00:30:03,011 --> 00:30:04,011
+Tabi.
+
+213
+00:30:04,011 --> 00:30:10,011
+Bu haliyle döngüye girebilir mi? Çünkü N birden büyük olursa diye düşündüm de ben.
+
+214
+00:30:11,011 --> 00:30:18,011
+Zaten bu döngüde N'den başlıyoruz, bir bir azaltıyoruz. Büyük eşit bir olduğu sürece devam edeceğiz.
+
+215
+00:30:20,011 --> 00:30:25,011
+Döngüleri iki türlü kurgulayabilirsiniz. Bunu kod yazarken de göreceksiniz.
+
+216
+00:30:25,011 --> 00:30:30,011
+Büyükten küçüğe ya da küçükten büyüğe yeter ki artım ve eksimi doğru verin.
+
+217
+00:30:30,011 --> 00:30:35,451
+burada büyükten başlıyoruz, küçüğe doğru gidiyoruz ve eksik diyoruz. Arttırsaydık olmaz.
+
+218
+00:30:36,451 --> 00:30:38,751
+Tamam. Teşekkürler.
+
+219
+00:30:38,971 --> 00:30:39,511
+Rica ederim.
+
+220
+00:30:45,172 --> 00:30:49,172
+Evet sizden cevap bekliyorum. Bu sorunun analizci bu kadar zor olmasa gerek.
+
+221
+00:31:02,708 --> 00:31:04,708
+Teknik isim söylemek istemiyorum.
+
+222
+00:31:11,220 --> 00:31:22,220
+Şu anda ekranda gördüğünüz kısmı biraz önceki algoritmanın akış diyagramı içerisindeki kısımda değiştirirsek doğur çalışır mı?
+
+223
+00:31:25,619 --> 00:31:26,819
+Evet, Atakan.
+
+224
+00:31:27,699 --> 00:31:30,899
+Hocam, bak bu kimse kaldırmayı kaldırayım dedim de.
+
+225
+00:31:30,899 --> 00:31:31,379
+Tamam.
+
+226
+00:31:31,379 --> 00:31:34,739
+Arka taraftaki şeyi bir tekrardan görebilir miyim ben?
+
+227
+00:31:34,739 --> 00:31:36,019
+Şey yap...
+
+228
+00:31:37,219 --> 00:31:37,779
+Neyi?
+
+229
+00:31:37,779 --> 00:31:42,819
+Önceki kısmı da tekrardan bir göz atabilir miyim hocam? Ben uyuyakalmışım diye yeni kalkmıştım.
+
+230
+00:31:42,819 --> 00:31:44,819
+Ona göre hemen şey yaparım.
+
+231
+00:31:44,819 --> 00:31:55,419
+Ne?
+
+232
+00:31:48,307 --> 00:31:49,307
+Tamamdır.
+
+233
+00:31:49,307 --> 00:32:01,707
+Hocam o çalışmaz gibi çünkü 3-0-5 verdiğimizde biz 5'ten başlaması gerekiyor. 5'ten başlayacak yani.
+
+234
+00:32:01,707 --> 00:32:07,507
+Ama 5'i... Yok bir saniye.
+
+235
+00:32:07,507 --> 00:32:12,707
+Yok çalışır hocam herhalde. 3'ü verdiğimizde ENE.
+
+236
+00:32:12,707 --> 00:32:30,648
+Ü3'ten başlayacak. Yani ilk başta 5'i yazacak. 5 çarpı toplama sıfı vermiştik. Toplam artı sayı çarpı çarpan diyor. Çarpan 1'de 5 olacak. Sonrasında 0 çarpı 10. Çarpan 10 olduğunda doğru çalışır hocam.
+
+237
+00:32:31,367 --> 00:32:34,888
+Peki. Teşekkürler Atakan. Berke Özgen'e soralım.
+
+238
+00:32:38,836 --> 00:33:06,415
+Evet hocam. Evet, ben sordum soru. Çarpına çıttı çarpan çarpı 10 diyoruz. Çarpanı birden başlatıyoruz. Ve ı'yı da N'den başlatıyoruz. Yani ı ilk seferinde rakamlar ı ilk seferinde 3 verecek hocam. Çalışıyor mu çalışmaz mı? Bence çalışmaz. Neden çalışmaz?
+
+239
+00:33:06,415 --> 00:33:10,455
+İlk olarak bu ı'yı ters yazdık bence
+
+240
+00:33:10,455 --> 00:33:15,016
+I'ya ben ne atadım? Nesi ters?
+
+241
+00:33:16,416 --> 00:33:19,975
+Ben olsam ı'yı bir yapardım. E ne kadar?
+
+242
+00:33:19,975 --> 00:33:26,475
+Olsam yapabilirsin bir sıkıntı yok. Yani isteyen istediğini yapma hakkına sahip de bunu yazmanızda bir sorun var mı?
+
+243
+00:33:29,495 --> 00:33:31,736
+Üçten bire doğru geri ye doğru gideceğiz
+
+244
+00:33:31,735 --> 00:33:39,355
+Bunu yazmamıza derken programın çalışması açısından değil mi? Evet evet tabii tabii
+
+245
+00:33:39,355 --> 00:33:44,455
+Ben çalışmaz diye düşünüyorum
+
+246
+00:33:44,455 --> 00:33:47,516
+Analiz yaptın mı?
+
+247
+00:33:48,255 --> 00:33:48,815
+Evet yapmadım
+
+248
+00:33:48,815 --> 00:33:50,836
+Tamam teşekkür ederim
+
+249
+00:33:50,836 --> 00:34:00,515
+Şimdi arkadaşlar yani ben sınıfın bir kısmından çok memnunum bir kısmından da hiç memnun değilim
+
+250
+00:34:00,516 --> 00:34:16,096
+bunu belki özelinde söylemiyorum. Lütfen yanlış anlamayın. Ben sizden bir şey rica ettiğim zaman dersle ilgili derse konsantre olup bu konuda birazcık çaba göstermeniz gerekiyor.
+
+251
+00:34:16,395 --> 00:34:25,416
+Anlamayabilirsiniz, yapamayabilirsiniz ama fikir yürütmenizi bekliyorum. Birçok arkadaşınız yanlış da olsa burada söylüyor, düzeltiyoruz.
+
+252
+00:34:25,415 --> 00:34:29,415
+Bir kısım arkadaşınız hiçbir şekilde derse katılmıyor.
+
+253
+00:34:30,055 --> 00:34:33,255
+Ve ben zorla isim söylüyorum ki en sevmediğim kısım.
+
+254
+00:34:34,155 --> 00:34:36,295
+Bunu düzeltmemiz gerekiyor.
+
+255
+00:34:36,615 --> 00:34:38,435
+Bu kötü bir şey değil.
+
+256
+00:34:38,775 --> 00:34:40,875
+Bir şey sorulduğu zaman cevap vermek.
+
+257
+00:34:41,315 --> 00:34:42,895
+Yanlış cevap vermek de ayıp değil.
+
+258
+00:34:43,635 --> 00:34:44,315
+Öğreniyorsunuz.
+
+259
+00:34:45,075 --> 00:34:46,995
+Hata yapmanız bizim açımızdan daha iyi.
+
+260
+00:34:47,395 --> 00:34:50,155
+O hatayı başka biri de yaptıysa doğrusunu öğrenin.
+
+261
+00:34:50,715 --> 00:34:55,395
+O yüzden ben size bir şey rica ettim de analiz yapar mısınız dediğimde
+
+262
+00:34:55,395 --> 00:35:00,696
+ve yaklaşık üzerinden 7-8 dakika geçtiğinde hala bir cevap alamıyorsam bir yerde bir terslik var demektir.
+
+263
+00:35:01,375 --> 00:35:06,435
+Buraya ben gelip robot gibi size anlatıp sonradan dersleri izlemenizi sağlayabilirim.
+
+264
+00:35:06,435 --> 00:35:13,615
+Ama bu işin çevre miçi ders vermenin esprisi kayıt yapıp sonra onları izletmek değil.
+
+265
+00:35:13,735 --> 00:35:15,235
+O zaman canlı olarak yapmayız bunu.
+
+266
+00:35:16,115 --> 00:35:17,255
+Ben kayıtları doldurdum.
+
+267
+00:35:17,355 --> 00:35:19,216
+Büyüklerim sistemi siz de dersi izlersiniz.
+
+268
+00:35:20,216 --> 00:35:25,276
+Bunu interaktif bir şekilde yapmak ki yaptığımız ankette de herkes dersin interaktif olması yönünde.
+
+269
+00:35:25,395 --> 00:35:46,056
+çoğunluk bir fikir bildirmişiz. Bu nasihatı ya da bu konuşmayı ben sıklıkla yapmak istemiyorum. Ama her gün herkesin modu da uygun olmayabilir. Yani ben de her seferinde o derse çok yüksek motivasyonla katıldığım zamanlar olmadığı dönemler oluyor.
+
+270
+00:35:46,056 --> 00:36:06,576
+Ama bu şu demek değil. Biz şu anda zaten yüz küsur kişinin sadece elli sekizi burada. Bir kere bu hani olayın ne kadar sıkıntılı olduğunu gösteriyor. İki, elli sekiz kişiden sürekli olarak on kişi el kaldırıyorsa o zaman bir problem var demektir.
+
+271
+00:36:06,575 --> 00:36:26,675
+Bunu son kez yapıyorum bu konuşmayı. Bundan sonra ben söz verdiğimde birine sen söyler misin dediğimde fikrim yok demesini istemiyorum. Fikir yürütmesini rica ediyorum. Hani bunu nadizane sizden rica ediyorum.
+
+272
+00:36:29,175 --> 00:36:35,075
+O yüzden derse katıldığınızda bilgisayar başında olmayacaksanız derse hiç katılmayın zaten.
+
+273
+00:36:38,900 --> 00:37:03,699
+Bu son uyarımdır. Çünkü artık 6. haftayı dolduruyoruz. Tekrar ediyorum yanlış yapmanız ayıp değil. Yanlış yapmanız sorun değil. Ama katılmamanız bir sorun. Şimdi bu sırada analizi yapan ve yorum yapmak isteyen var mı? Evet farklı bir isim arıyorum. Bugün farklı bir isim arıyorum. Mustafa Bey buyurun.
+
+274
+00:37:03,699 --> 00:37:17,760
+Hocam öncelikle günaydın. Baştan beri dinliyorum. O 10 kişi içerisinde 11'im ama çoğu soruya kaldırmıyorum. Bilginiz olsun. Onu söyleyeyim özellikle.
+
+275
+00:37:17,760 --> 00:37:25,959
+Evet teşekkür ederim. Ben burada bir açıklama yapıyorum. Birçok şeyi bildiğim için şimdi özellikle kaldırmıyorum.
+
+276
+00:37:25,959 --> 00:37:43,939
+Ufak bir açıklama yapayım ben de. Sizin gibi olan bazı konuları daha önceden görmüş ve bilen arkadaşlarımızın kaldırmamasını anlayışla karşılıyorum. Çünkü burada bilmeyen arkadaşlarımızın öğrenmesi önemli. O yüzden bilen daha önceden bu dersi almış arkadaşlarımızdan böyle bir beklentim yok zaten.
+
+277
+00:37:43,940 --> 00:37:59,020
+Arkadaşların da bu arayı biraz uzatmasının sebebi bence uzak olmamız hocam. Yoksa aynı sınıfta olsak bu dördüncü, beşinci hafta çoktan bitmişti yani. Bütün eller havadaydı. O kesin sınıfta olsa eminim yani.
+
+278
+00:37:59,020 --> 00:38:01,060
+Ufak ama öyle olacağını düşünüyorum.
+
+279
+00:38:01,840 --> 00:38:09,120
+Evet bu arada zamanla azalacağına inanıyorum. Yani şurada en az bir 20-30 el göreceğiz inşallah.
+
+280
+00:38:09,340 --> 00:38:09,660
+İnşallah.
+
+281
+00:38:09,659 --> 00:38:19,519
+Hocam ben analizini yaptım. Birler basamağı, yüzler yüzler basamağı birler olmaya başladı. O yüzden çözüm üreteceğini zannetmiyorum.
+
+282
+00:38:19,519 --> 00:38:38,279
+Peki. Şimdi birlikte o zaman bunu yapalım. Çarpan var, I var, N var, rakamlar I var, sayı var, toplam var,
+
+283
+00:38:39,659 --> 00:38:44,819
+Sanırım bu kadar. Elimizdeki değişkenler analize çıkış yapabiliriz.
+
+284
+00:38:45,419 --> 00:38:46,759
+N kaçtır? 3'tür.
+
+285
+00:38:48,059 --> 00:38:50,120
+I kaçtır? 3 ile başlıyor.
+
+286
+00:38:53,159 --> 00:38:57,139
+3 büyük eşit 1 mi? Evet, 1.
+
+287
+00:38:58,059 --> 00:39:00,579
+Sayıya geldik. Bu arada çarpan 1.
+
+288
+00:39:01,279 --> 00:39:02,400
+Rakamlar I kaç?
+
+289
+00:39:03,840 --> 00:39:07,199
+İlk I rakamlar 3 olduğu için 3 değil.
+
+290
+00:39:07,200 --> 00:39:10,280
+5 olacak.
+
+291
+00:39:11,800 --> 00:39:15,620
+Sayı, tekrar şuraya işlemi göstereyim.
+
+292
+00:39:18,200 --> 00:39:21,660
+5 sabitinden 0 sabitinden çıkardığımızın sayının değeri 5 olacak.
+
+293
+00:39:22,260 --> 00:39:25,340
+Toplam, şu anda çarpan bir sayı 5.
+
+294
+00:39:25,840 --> 00:39:27,480
+Toplam 5 oldu.
+
+295
+00:39:28,179 --> 00:39:29,560
+Çarpan 10 oldu.
+
+296
+00:39:32,580 --> 00:39:33,900
+I, 1 azaldı.
+
+297
+00:39:34,380 --> 00:39:36,140
+2, büyük eşit 1 mi?
+
+298
+00:39:36,700 --> 00:39:36,959
+Evet.
+
+299
+00:39:37,200 --> 00:39:54,060
+hala 3. Rakamlarda bu sefer 2'ye geldik. 0. Sayımız kaçtı? Sayımız 5'ti. 5 çarpı çarpanımız nedir?
+
+300
+00:39:57,652 --> 00:39:58,872
+Doğru mu yazdın?
+
+301
+00:39:58,872 --> 00:40:00,872
+Hayır hocam, sanki.
+
+302
+00:40:00,872 --> 00:40:05,652
+Yanlış yazdım. Ne olması gerekiyor? Sayımız 5 değil. Sayımız ne olacak?
+
+303
+00:40:05,652 --> 00:40:06,652
+0.
+
+304
+00:40:06,652 --> 00:40:10,652
+Sayımız 0-0'dan 0 olacak.
+
+305
+00:40:10,652 --> 00:40:15,652
+Sayı 0 olduğu için çarpanın kaç olduğunu çok bir önemi yok.
+
+306
+00:40:15,652 --> 00:40:19,652
+Otomatik olarak burası 0, toplam artı 0, 5 olacak.
+
+307
+00:40:19,652 --> 00:40:21,652
+Çarpan 100 oldu.
+
+308
+00:40:21,652 --> 00:40:25,652
+I, 1 oldu. 1 büyük eşit 1 mi? Evet.
+
+309
+00:40:25,652 --> 00:40:46,091
+rakamlar ö, 3 oldu, 3 sabitinden 0 sabitini çıkardım, sayı 3 oldu, çarpa 100, 300 artı 5, 305 oldu, çıktık ve 305 değerini yazdık.
+
+310
+00:40:47,971 --> 00:40:53,512
+Demek ki bu yazım herhangi bir şekilde hatalı değil, doğru çalışır. Evet Selin.
+
+311
+00:40:53,512 --> 00:40:57,372
+Hocam analize ilgili bir genel soru sorabilir miyim ben?
+
+312
+00:40:57,791 --> 00:40:58,631
+Tabii sorabiliriz.
+
+313
+00:40:58,631 --> 00:41:06,791
+Hocam şimdi ben analize ödevi falan yaparken de analize yaparken şöyle bir şey düşündüm daha doğrusu.
+
+314
+00:41:06,891 --> 00:41:09,291
+Mesela burada çarpan bir on yüz diye gidiyoruz ya.
+
+315
+00:41:09,692 --> 00:41:17,471
+Normalde ben şimdi bakınca I3 bir olunca birinin sonunda 3'den başlayalım ilk o adım olduğu için.
+
+316
+00:41:17,471 --> 00:41:25,631
+üçün sonunda çarpan aslında on oluyor. İkinci adımın sonunda yüz. Birinci adımın sonunda IHT bir önünde pardon bin oluyor.
+
+317
+00:41:25,751 --> 00:41:33,991
+Mesela yani ben genelde analize kod akışına göre daha doğrusu şu yazım akışına göre yapınca çarpan on yüz bin diye gözüküyor.
+
+318
+00:41:33,991 --> 00:41:43,271
+Ama tabii analize bizim işimize yarayan bir on yüz şeklinde gitmesi. Biz bunu analize yazarken neye göre yazıyoruz onu sormak istiyorum.
+
+319
+00:41:43,271 --> 00:41:53,091
+Doğru değil yaptığın açıklama şöyle ki biz şu anda işlem yaparken biz 10-100 bin yazıyoruz.
+
+320
+00:41:53,091 --> 00:42:04,671
+Aslında bir 10-100 olması gerekiyor diye. Hayır, ben şu anda şuradayım çarpan bir. İçeri girdim buradayım çarpan bir. Çarpan bir. Buraya geldim 10 oldu.
+
+321
+00:42:04,671 --> 00:42:13,952
+ha şuradaki gösterime söylüyorsan yani hani kayması gerekir diye söylüyorsan bu çok önemli değil.
+
+322
+00:42:14,471 --> 00:42:15,851
+Tamam onu sordum hocam.
+
+323
+00:42:15,971 --> 00:42:25,232
+Bu akış zaten biri takip ettiğinde bunların değiştiğini gerçek karşılıkların ne olduğunu görebilir ama biraz daha düzgün yazmak istersek
+
+324
+00:42:25,232 --> 00:42:31,351
+tabii ki bunları oldukları yerden sonra bir adım aşağıya kaydırarak yazmamız gerekiyor.
+
+325
+00:42:31,351 --> 00:43:00,411
+Ama bu çok uzun bir yazım olacağı için özellikle derste ben bunu böyle yazmıyorum. Normalde bu adımda çarpan bir. I'nın değeri belli, neye belli, rakamlar belli, sayı burada belli, toplam belli. Ha burada toplam belli değil. Bu adımda bunları yazdıktan sonra bir sonraki adımda bunu aşağıya kaldırabilirsiniz. Seçeneklerden biri o. Ya da bunu da yaparsınız, bu satırda yazarsınız. Burayı değiştirmezsiniz. Çarpanı bir altta 10 yaparsınız.
+
+326
+00:43:00,411 --> 00:43:02,091
+herkeste mümkün.
+
+327
+00:43:02,831 --> 00:43:04,131
+Tamam hocam teşekkür ederim.
+
+328
+00:43:04,131 --> 00:43:06,031
+Ama bu soru da iyi oldu.
+
+329
+00:43:06,551 --> 00:43:11,611
+Çünkü belki bazı kişilerin kafasına takılmış olabilir bu kısım.
+
+330
+00:43:11,872 --> 00:43:12,791
+Bunu da konuşmuş olduk.
+
+331
+00:43:13,271 --> 00:43:19,331
+Evet gördüğünüz gibi bu da çalıştı ve bir öncekine göre döngü sayısını azaltmış olduk.
+
+332
+00:43:19,451 --> 00:43:19,631
+Niye?
+
+333
+00:43:20,251 --> 00:43:24,012
+Çünkü ben zaten döngüde her seferinde bir tur atıyorum.
+
+334
+00:43:24,551 --> 00:43:30,251
+Her turda çarparım 10 ile çarparak bir 10-100 değerlerini elde edebiliyorum.
+
+335
+00:43:30,411 --> 00:43:48,471
+bir öncekinde olduğu gibi her seferinde yeniden çarpma işlemi yapmama gerek yok. Şu andaki gösterim işlem sayısının daha az olmasına nedeniyle daha verimli bir algoritma olarak karşımıza çıkıyor.
+
+336
+00:43:49,012 --> 00:43:56,471
+Evet bunun biraz daha başka bir versiyonu var. Yani birden başlayıp ene kadar giden versiyonu.
+
+337
+00:43:57,972 --> 00:43:59,972
+Pardon.
+
+338
+00:43:59,972 --> 00:44:02,972
+O da yapılabilir ama şu anda
+
+339
+00:44:02,972 --> 00:44:07,972
+Açıkçası onunla vakit kaybetmek istemiyorum.
+
+340
+00:44:07,972 --> 00:44:09,972
+Yeni bir soruya geçmek istiyorum.
+
+341
+00:44:09,972 --> 00:44:12,972
+Bu arada kaçıncı soru olduğuna da bir bakalım.
+
+342
+00:44:12,972 --> 00:44:17,972
+Algoritma 12 olmuş.
+
+343
+00:44:26,164 --> 00:44:33,164
+verilen bir daha doğrusu şöyle yazalım
+
+344
+00:44:36,628 --> 00:44:44,787
+küçük harflerden oluşan bir kelimeyi
+
+345
+00:44:46,324 --> 00:44:47,343
+büyük haklere
+
+346
+00:44:47,343 --> 00:44:49,743
+dönüştü al
+
+347
+00:45:00,659 --> 00:45:02,959
+algoritma, akış diyagramı çizgi.
+
+348
+00:45:10,931 --> 00:45:23,331
+Bu mesela uppercase fonksiyonu gibi düşünebilirsiniz. Size ABC verilecek. Siz bunu büyük A, büyük C, büyük B, büyük C'ye dönüştüreceksiniz. Soru bu.
+
+349
+00:45:24,331 --> 00:45:36,531
+Şimdi saat 9.45 size bunun için bir 10 dakika vereceğim çözmemiz için. Bir 10 dakikada ara vereceğiz. Yani saat 10'u 5 geçip biz görüşüyor olacağız.
+
+350
+00:45:36,531 --> 00:45:45,131
+ister arayı önce yapın sonra soruyla uğraşın ister soruyu önce yapın sonra araya çıkın ama şimdi bu soruyla ilgili sormak istediğiniz bir şey var mı soruyu çözerken Emre?
+
+351
+00:45:45,991 --> 00:45:49,091
+Hocam çıktı da verecek miyiz yoksa sadece değiştirecek miyiz?
+
+352
+00:45:49,191 --> 00:45:50,091
+Çıktı da vereceksiniz.
+
+353
+00:45:53,844 --> 00:45:55,743
+Başka soru soru soru, Alperen
+
+354
+00:45:55,743 --> 00:45:59,844
+Kelimenin kaç harften oluştuğunu alalım mı başta?
+
+355
+00:46:00,784 --> 00:46:02,903
+Bu örnekte de alabilirsiniz.
+
+356
+00:46:04,304 --> 00:46:04,703
+Erti
+
+357
+00:46:04,703 --> 00:46:09,583
+Hocam, bu soruyla ilgili değil aslında, bir önceki soruyla ilgili ufak bir şey soracağım.
+
+358
+00:46:09,983 --> 00:46:14,723
+Az önce hani ikinci çözümde sayı eşittir, rakamları eksi sıfır demiştik ya
+
+359
+00:46:14,723 --> 00:46:15,243
+Evet
+
+360
+00:46:15,243 --> 00:46:21,524
+Orada sayı gibi bir değişken atamak yerine rakamları eşittir, rakamları eksi sıfır desek biz için
+
+361
+00:46:21,524 --> 00:46:22,723
+Hayır, yapamazsınız
+
+362
+00:46:22,723 --> 00:46:24,723
+yapamaz mıyız? Tamam, teşekkür ederim.
+
+363
+00:46:24,723 --> 00:46:34,803
+Karakter dizisine sayı değeri atarsanız karakter şeyini kaybetmiş olursunuz, karakterin kendisini kaybetmiş olursunuz.
+
+364
+00:46:35,423 --> 00:46:36,443
+Tamam, teşekkür ederim.
+
+365
+00:46:37,283 --> 00:46:41,763
+Ama böyle bir engel yoksa tabii ki teknik olarak yapabilirsiniz, bunda bir sıkıntı yok.
+
+366
+00:46:43,103 --> 00:46:46,743
+Başka bir soru var mı? Selim?
+
+367
+00:46:47,483 --> 00:46:51,543
+Hocam çıktı derken direkt diziye mi çıktı diyeceğiz bir yazı olarak gelmesi için?
+
+368
+00:46:52,723 --> 00:46:57,923
+Karakter karakter for dönemesi içerisinde elde ettiğiniz yeni değeri ekrana yazırız.
+
+369
+00:46:57,943 --> 00:46:58,524
+Tamam hocam.
+
+370
+00:47:00,263 --> 00:47:01,064
+Başka sorusu var.
+
+371
+00:47:03,163 --> 00:47:08,143
+Evet peki o zaman ben sizi soruyla ve arayla baş başa bırakıyorum.
+
+372
+00:47:08,723 --> 00:47:11,383
+20 dakika sonra saat 15 geçe görüşmek üzere diyorum.
+
+373
+00:48:49,492 --> 00:48:53,651
+Ara mı verdik? Hoca soru mu sordu? Öyle bir iki dakika kayboldu mu?
+
+374
+00:48:54,452 --> 00:48:56,051
+Ama ara, soruyu çözmüyorsun.
+
+375
+00:48:56,371 --> 00:49:01,571
+On dakika aradayız. Sonra on dakika soruyu çözmek için zamanı verdi hocam. Sonra soruyu çözeceğiz.
+
+376
+00:49:02,211 --> 00:49:08,451
+Burada asker kodlarından gidiyorsunuz. Haberiniz olsun. Bir tavsiye vereyim. Ben bir kahvaltı edeyim. Öptüm onu.
+
+377
+01:08:53,268 --> 01:08:55,087
+Evet arkadaşlar, yeniden merhaba.
+
+378
+01:08:57,487 --> 01:08:59,547
+Kimler soruyu çözebildiler?
+
+379
+01:09:01,387 --> 01:09:02,927
+El kaldırırlarsa ben göreyim.
+
+380
+01:09:10,707 --> 01:09:21,168
+Peki, teşekkür ediyorum. O zaman şimdi yeniden şu soruyu soracağım. Soruyu çözmemde kim yardımcı olmak ister?
+
+381
+01:09:25,171 --> 01:09:26,711
+Buse'ye söz veriyorum.
+
+382
+01:09:29,632 --> 01:09:38,132
+Hocam, öncelikle ben harf sayısını aldım. Ondan sonra bunu bir diziye koydum. Ondan sonra karakteri...
+
+383
+01:09:38,132 --> 01:09:39,092
+Karakteri işleyelim mi?
+
+384
+01:09:39,771 --> 01:09:40,471
+Tabii, tabii.
+
+385
+01:09:42,852 --> 01:09:50,471
+Öncelikle, bu arada kullanıcı mesajlarını yazmıyorum arkadaşlar. Lütfen siz yazmayı unutmayın. Vakitten kazanmak için.
+
+386
+01:09:50,471 --> 01:09:58,471
+aldık. Sonra dışarıdan kelimeyi...
+
+387
+01:10:01,971 --> 01:10:04,651
+okuduk. Burada kelime
+
+388
+01:10:09,460 --> 01:10:11,039
+kelime ı diyelim.
+
+389
+01:10:14,163 --> 01:10:43,903
+Evet. Bu seçim seni diliyorum. Tekrar bir for döngüsü açtım. Evet. I'ya bir atadım. Birer birer artacak. Ve N'ye kadar. Evet. Şimdi yeni bir dizi oluşturdum büyük I diye. Büyük I diye yeni bir dizi oluşturdum derken nasıl? Yani büyük dedim köşeli parantez I dedim. Tamam. Okey.
+
+390
+01:10:44,163 --> 01:10:46,904
+Bir saniyeni rüca ediyorum.
+
+391
+01:10:49,123 --> 01:10:49,684
+Büyük.
+
+392
+01:10:50,643 --> 01:10:51,603
+Önledin, evet.
+
+393
+01:10:53,204 --> 01:10:56,403
+Sonra bu eşittir dedim kelime ı.
+
+394
+01:10:57,064 --> 01:10:58,684
+O zaman şöyle yapalım, pardon.
+
+395
+01:10:59,704 --> 01:11:00,963
+Burası biraz sıkışık oldu.
+
+396
+01:11:02,543 --> 01:11:04,083
+Şöyle bir saniye.
+
+397
+01:11:10,804 --> 01:11:12,804
+şey
+
+398
+01:11:31,412 --> 01:11:35,091
+Eşittir. Kelime A artı
+
+399
+01:11:40,564 --> 01:12:09,363
+Karakter büyük A, yani tek tırnak içinde büyük A, eksi tek tırnak içinde küçük A. Peki. Sonra döngüyü bitirdim, kapattım bunu bir işlem kutusunu alıp. Başka bir şey var mı? Sonra tek tek yazdırdım harfleri, o yüzden bir tane daha döngü açtım. Peki.
+
+400
+01:12:09,363 --> 01:12:15,843
+Buse bunu kendin mi çözdün yoksa bir yerden internetten baktın mı?
+
+401
+01:12:16,584 --> 01:12:17,963
+Kendim çözdüm hocam.
+
+402
+01:12:18,284 --> 01:12:20,223
+Tamam. Teşekkür ederim.
+
+403
+01:12:22,503 --> 01:12:25,323
+Evet.
+
+404
+01:12:25,323 --> 01:12:35,003
+Şimdi arkadaşlar bu noktada bazen çözüm bulamazsanız internetten baktığım zamanlar olacaktır.
+
+405
+01:12:36,003 --> 01:12:37,424
+Bunu yadırgamıyorum.
+
+406
+01:12:37,744 --> 01:12:39,064
+Sonuçta bilgisayar başındayız.
+
+407
+01:12:39,064 --> 01:13:05,083
+derste değiliz sızıfta. O yüzden eğer kendiniz çözmediyseniz lütfen bunu mutlaka vurgulayın. Bunu ben ayıp bir şey olarak görmüyorum. Sadece kendinizin düşünüp düşünemediğini bilmem çok önemli. Yoksa burada yaptığımız birçok sorunun çözümünü zaten internette bir şekilde bulursunuz. Önemli olan bunu kendinizin yapıyor olması.
+
+408
+01:13:05,083 --> 01:13:17,803
+mümkün olduğunuzca da bir çözümü bakmadan bunu yapmaya çalışmanız önemli. Şu anda el kaldıran arkadaşlar gözüküyor. Onlar söz istiyorlar galiba. Bu çözümle ilgili belki de. Belkart.
+
+409
+01:13:19,183 --> 01:13:30,383
+Hocam bunu mesela direkt tek por döngüsüne yapsak daha iyi olmaz mıydı? Kelime yaptık sonra kelime eşittir, kelime artı. Büyük A, eksik küçük A. Sonra Prince'i de oraya alsak. Direkt tek por döngüsüne sınırlar.
+
+410
+01:13:30,383 --> 01:13:57,123
+Daha önce anlatmıştım. Okuduğunuz yerde işlemleri yapabilirsiniz. Burada herhangi bir sorun yok. Ama biz derste daha açık olması açısından okuma, işin yapılma döngüsü ve yazdırılma döngüsünü birbirinden ayırıyoruz. O yüzden bu noktada üç tane farklı döngü görüyorsunuz. Tabii ki aynı döngü de yapabilirsiniz. Emirhan'ın bir söz istiyorlar.
+
+411
+01:13:57,123 --> 01:14:15,743
+Hocam şimdi büyük adam küçük aya çıkardık bir değer elde ettik sayı elde ettik yani kelime ı toplayınca da bir sayı elde ettik büyük ın içine yani sayı girmiş oluyoruz ya ben çıktı da direkt harf vermek yerine sayı verir diye düşünüyorum orada takıldım yani baya
+
+412
+01:14:15,743 --> 01:14:30,023
+Şimdi şöyle bir kere bellekte bütün sakladığınız bilgileri sayısal olarak saklıyorsunuz. İster karakter bilgisi saklayın, ister resim bilgisi, ister ses bilgisi saklayın. Bunların hepsinin bir sayısal karşılığı var.
+
+413
+01:14:30,223 --> 01:14:44,703
+Burada size verilen kelime küçük A, B, C olduğunu varsayarsak A karakteri, B karakteri ve C karakteri bellekte. ASKİ tablosunda hangi sayıya denk geliyorsa o sayısal karşılığı saklanıyorsunuz.
+
+414
+01:14:44,703 --> 01:15:02,084
+sadece bunu C'de de göreceksiniz bunu hem karakter olarak sakladığınızı belirten bir tanımlama yapıyorsunuz hem de bu işlemi yaparken karakter üzerinden bu işlerinizi gerçekleştiriyorsunuz.
+
+415
+01:15:02,084 --> 01:15:08,523
+Ama sonuçta bütün bu işlerin sonunda sayısal değerler birbiriyle toplanıyor ve çıkartılıyor.
+
+416
+01:15:08,523 --> 01:15:22,143
+en son bir sayısal değer elde edildiğinde bunu isterseniz tekrar ediyorum programlama dillerinde göreceksiniz C'de sayısal karşılığını ekrana yazdırabilirsiniz isterseniz harf karşılığını ekrana yazdırabilirsiniz bu mümkün.
+
+417
+01:15:22,144 --> 01:15:32,744
+Burada akış diyagramında bunu belirtmemiz çok mümkün olmadığı için doğrudan sanki sayısal değerine ekranı yazdırıyormuş gibi gözüküyor ama
+
+418
+01:15:32,744 --> 01:15:39,084
+bunu bir programda mı dediği kullanarak yazdığınızda karakter tipinde bir dizi tanımladığınızda otomatik olarak ekrana
+
+419
+01:15:39,503 --> 01:16:05,103
+karakter karşılığı yazdırdığınızda formatlı olarak büyük A, B, C'yi görüyor olacaksınız. Şimdi gelelim diğer soruları almadan şu noktaya. Neden küçük A'dan çıkartıyoruz? Çünkü oradaki karakterin küçük A'ya olan uzaklığı neyse büyük A'ya olan uzaklığı da aynıdır. Bu felsefe ile hareket ediyoruz.
+
+420
+01:16:05,103 --> 01:16:22,883
+örneğin küçük B, A'dan kaç uzaklıkta? 1 uzaklıkta. Demek ki büyük A'dan da 1 uzaklıkta. Bu yüzden kelimeden önce aslında A'yı çıkartıyoruz. Sonra büyük A sabitinin üzerine ekliyoruz. Temel prensip bu. Elif, Sena.
+
+421
+01:16:22,883 --> 01:16:37,063
+Hocam ben ne kaçırdım bilmiyorum ama dizi çıktılarken sadece Output'a ismini koymamız yetmiyor değil mi? Yani Ford döngüsünün içinde yazdırmamız lazım diziyi.
+
+422
+01:16:37,063 --> 01:16:49,783
+Evet gösterimde bu akış diyagramında tek tek yazdırmamız gerekiyor ama C'de göreceksiniz isterseniz tek tek karakter yazdırabilir olacaksınız.
+
+423
+01:16:49,783 --> 01:17:00,143
+isterseniz de orada bir özel yazdırma formatı var %S dediğimiz. O formatla yazdırırsanız komple karakter grubunu ekrana yazdırabiliyorsunuz.
+
+424
+01:17:02,623 --> 01:17:03,423
+Mehmet?
+
+425
+01:17:04,923 --> 01:17:12,463
+Hocam burada büyük I yerine kelime I'ya bir daha kendisini atasak bir sıkıntı olur mu? Yani büyük I yerine kelime I yazsak tekrar.
+
+426
+01:17:12,463 --> 01:17:26,383
+küçük halini kaybetmiş oluruz ama burada büyük harfleri dönüştüren dediğimiz için ve küçük haline de ihtiyaç duymuyorsak tabii ki kelimenin üzerine bunları atayabiliriz hiçbir sorun olmaz.
+
+427
+01:17:27,003 --> 01:17:27,864
+Tamam teşekkür ederim.
+
+428
+01:17:28,444 --> 01:17:29,343
+Rica ederim. Selim?
+
+429
+01:17:30,224 --> 01:17:37,483
+Hocam en son büyüdüğümüz büyük harfleri büyük dizisine atlamak yerine direkt döngü için açıklamak sorunu oluşturuyor muydu?
+
+430
+01:17:37,483 --> 01:17:43,043
+Yani yaptığımız işlerin sonucunu göstermek mi?
+
+431
+01:17:43,923 --> 01:17:55,043
+Yani büyük eşitlik kelime yazdık ya mesela ilk döngüde 10 yerine direkt büyük harf eşitlik yapıp 10 hemen sonrasında döngüden çıkmadan yazdırsaydık hani diziyi atayıp en son.
+
+432
+01:17:55,043 --> 01:18:15,283
+Olur ama genelde bundan sonra yapacağımız işlerde bilgiyi elde ediyorsak yeni bilgiyi ya kendi üzerinde değişikliği yaparız ya da yeni bir dizide bunu saklamayı tercih ederiz. Sonra da onu ekrana yazdırırız. Elde ettiğimiz yerde ekrana yazdırmayı çok uygulamıyoruz.
+
+433
+01:18:15,683 --> 01:18:16,903
+Tamam hocam teşekkürler.
+
+434
+01:18:19,563 --> 01:18:21,123
+Evet başka soru sola.
+
+435
+01:18:21,123 --> 01:18:27,444
+Burada anlaşım pardon Emir Hanım'ın bir sorusu varsa ben.
+
+436
+01:18:31,572 --> 01:18:33,572
+İnanılışlıkları kaldırır mısın hocam?
+
+437
+01:18:33,572 --> 01:18:36,572
+Tamam. Mehmet sen bir soru daha soracak mısın?
+
+438
+01:18:37,572 --> 01:18:39,572
+Yok hocam, teşekkür ederim.
+
+439
+01:18:39,572 --> 01:18:41,572
+Sen de elini indirebilirsin.
+
+440
+01:18:44,572 --> 01:18:54,572
+Şimdi gördüğünüz gibi bu başlangıç ve bitiş noktaları yani işte A sabiti, büyük A sabiti, küçük A sabiti bu tür işler için kullandık.
+
+441
+01:18:54,572 --> 01:19:08,131
+0 karakter sabitini kullandık biraz önce rakam çalıştığı için. Demek ki harflerle ilgili çalışırken ya da karakterlerle ilgili çalışırken bu sabitlerden faydalanacağımız yerler olacak.
+
+442
+01:19:08,131 --> 01:19:25,531
+Burada da birçok derleyici demeyelim editörde olan uppercase yani bir kelimeyi büyük harflere dönüştüren fonksiyonun çalışma prensibini aslında ve çalışma şeklini görmüş oldunuz.
+
+443
+01:19:25,791 --> 01:19:27,771
+Bu da değişik bir örnek olmuş oldu.
+
+444
+01:19:28,671 --> 01:19:29,571
+Şimdi devam edeceğim.
+
+445
+01:19:41,716 --> 01:20:09,495
+Bu arada tabii şunu söylemekte fayda var. Şimdi iki noktayı söyleyeceğim. Bir tanesi geçtiğimiz derste size bir uyarı yapmıştım. Derste katılım yönünde. Derste katılmanızı istememem. Yani sebebi sizin de aktif olarak fikir yürüttüğünüz bir konuda daha çabuk öğrenmenizi teşvik etmek amacıyla. Yoksa benim açımdan en kolayı bildiğimi anlatmak ve hızlıca işi bitirmek.
+
+446
+01:20:09,495 --> 01:20:20,315
+böyle biraz uzuyormuş gibi gözükse de çok farklı bakış açılarını ve farklı fikirleri yanlış da olsa tartışmış oluyoruz ve siz doğruyla yanlış arasındaki farkı da öğrenmiş oluyorsunuz.
+
+447
+01:20:20,315 --> 01:20:29,275
+Artı kendinizi geliştirmiş oluyorsunuz. Yani bu kadar ısaat etmemiz sebebi bu. O yüzden bu hani lütfen zorlama gibi gözükmesin.
+
+448
+01:20:29,615 --> 01:20:38,315
+Tam tersine teşvik ve size uzun vadede iyi dönecek bir antrenman olarak değerlendirirseniz sevinirim.
+
+449
+01:20:38,315 --> 01:20:46,635
+ikincisi de biz şimdi burada bugüne kadar akış diyagramlarıyla algoritmalarımızı ifade ettik.
+
+450
+01:20:46,635 --> 01:21:00,156
+Haftaya pazar testinden itibaren artık C programlama anlatacağız ve bunu çok hızlı bir şekilde ihtiyaç duyduğunuz mutasyonlardan bahsedeceğim.
+
+451
+01:21:00,875 --> 01:21:08,216
+Tanımlama nasıl yapılır, değişken tanıma nasıl yapılır, atama, toplama işaretleri, mod alma nasıl, hangi sintaks kullanılıyor.
+
+452
+01:21:08,315 --> 01:21:24,216
+if, for, while nasıl ifade ediliyor? Bunu pazartesi günü derste neredeyse %80 bitireceğim. Yani pazartesi günü dersten sonra artık bugüne kadar yaptığınız algoritmik çözümlerin kodunu yazabilecek noktaya geleceksiniz.
+
+453
+01:21:24,216 --> 01:21:50,016
+O yüzden pazartesi günkü uygulama dersine katılmanızı çok tavsiye ediyorum. Bir hafta kaybettiğimiz için bazen konuları uygulama saatinde anlatmayı tercih edeceğim. Bu da onlardan bir tanesi. Ödevede hazır olmanız açısından pazartesi anlatıp perşembe üzerinden geçeriz.
+
+454
+01:21:50,016 --> 01:22:03,775
+soracaklarınızı tekrar sorarsınız ya da eksik kalan kısımları tamamlarız. Karşamba itibariyle ödevi aldığınızda artık hem akış diyagramı hem de kod yazacak noktada olacaksınız. Bu yüzden bunu önemsiyorum.
+
+455
+01:22:03,775 --> 01:22:16,915
+Şimdi bir sonraki sorumuza geçeceğiz. Bir sonraki sorumuz da şu. Verilen bir kelimenin palindrom,
+
+456
+01:22:16,915 --> 01:22:25,315
+kelime olup olmadığını bulan
+
+457
+01:22:28,787 --> 01:22:30,787
+algoritma, akış diyagramı çiziyoruz.
+
+458
+01:22:38,644 --> 01:22:56,584
+Muhtemelen 8. haftada matrislere geçeceğiz. Matrislerle ilgili örnekler çözmeye başlıyor olacağız. Sınav haftasıyla ilgili henüz bir duyuru hala yok. Onunla ilgili de bir gelişme olursa sizleri bilgilendiriyor olacağım. Palindrom kelime nedir?
+
+459
+01:22:59,796 --> 01:23:02,455
+Düz ve ters okunuş aynı olan kelimeler.
+
+460
+01:23:02,455 --> 01:23:03,555
+Teşekkür ederim.
+
+461
+01:23:04,335 --> 01:23:09,136
+Tersten okunduğunda ve düzden okunduğunda aynı olan kelimeler.
+
+462
+01:23:09,515 --> 01:23:14,495
+Örneğin ses, örneğin kabak gibi.
+
+463
+01:23:16,175 --> 01:23:18,995
+Anlamlı olmadığı bir örnek de yapalım.
+
+464
+01:23:19,976 --> 01:23:22,835
+Genelde tek sayıda harflere sahip olsa da,
+
+465
+01:23:22,835 --> 01:23:37,755
+açıkçası arada böyle çift harflerden oluşan yani çift sayıda harf sayısına sahip olan örnekleri de var.
+
+466
+01:23:37,755 --> 01:23:46,215
+Evet şimdi bunu çözmenizi rica edeceğim. Burada gene kelimeyi dışarıdan okuyacaksınız.
+
+467
+01:23:46,215 --> 01:24:08,715
+kelimenin karakter sayısı verilecek, kelimenin kendisi verilecek. Arkasından palindrom özelliği taşıyıp taşımadığını bize bulan programı yapacaksınız. Size 5 dakika veriyorum. 5 dakika sonrasında tekrar bu problemin üzerinde konuşuyor olacağız. Evet, sorusu olan var mı öncelikle bu soruyla ilgili?
+
+468
+01:24:15,956 --> 01:24:18,956
+Peki, sorunuz yoksa beş dakikalı sureniz başladı.
+
+469
+01:31:01,811 --> 01:31:04,012
+Evet, soruyu kimler çözebildi?
+
+470
+01:31:12,979 --> 01:31:14,979
+Peki, güzel.
+
+471
+01:31:17,979 --> 01:31:18,979
+Güzel.
+
+472
+01:31:25,171 --> 01:31:31,211
+Mesela Muhammed Ali İlale'ye söz versen yardımcı olabilir mi?
+
+473
+01:31:33,711 --> 01:31:35,592
+Hocam şu an çiziyordum.
+
+474
+01:31:36,052 --> 01:31:38,092
+Bu da başlarımı söyleyebilirim yani.
+
+475
+01:31:39,191 --> 01:31:39,971
+Tamam.
+
+476
+01:31:40,451 --> 01:31:47,711
+Önce istersen akış diagramını çizmeden önce ne yapmamız gerektiği konusunda bize yol gösterebilir misin?
+
+477
+01:31:48,551 --> 01:31:51,071
+Kağıt üzerinde bu işi yapsaydık nasıl yapardık?
+
+478
+01:31:51,171 --> 01:31:52,531
+Böyle bir sözel tarif eder misin?
+
+479
+01:31:53,151 --> 01:31:53,471
+Evet.
+
+480
+01:31:53,631 --> 01:31:54,932
+Ben şöyle düşündüm.
+
+481
+01:31:55,171 --> 01:31:56,731
+ilk önce
+
+482
+01:31:56,731 --> 01:31:58,471
+bize n veriliyor.
+
+483
+01:31:58,651 --> 01:32:00,552
+Tabii bütün kelimeyi okuyacağız.
+
+484
+01:32:01,732 --> 01:32:02,532
+Sonra
+
+485
+01:32:02,532 --> 01:32:05,052
+kelimeyle ilk önce
+
+486
+01:32:05,052 --> 01:32:06,991
+yarısına kadar olan harfleri,
+
+487
+01:32:07,392 --> 01:32:08,572
+karakterleri bulup
+
+488
+01:32:08,572 --> 01:32:10,731
+diğer yarısındakilerle mesela
+
+489
+01:32:10,731 --> 01:32:12,651
+aynı olup olmadığına
+
+490
+01:32:12,651 --> 01:32:13,971
+bakabilirim diye düşündüm.
+
+491
+01:32:14,752 --> 01:32:17,091
+Mesela birinci, sondan birinciyle
+
+492
+01:32:17,091 --> 01:32:17,871
+eşitmediği.
+
+493
+01:32:19,271 --> 01:32:20,871
+Bunun için iç içe
+
+494
+01:32:20,871 --> 01:32:22,731
+iki for döngüsü kullanabiliriz.
+
+495
+01:32:22,731 --> 01:32:24,892
+Mesela ı ve j deriz.
+
+496
+01:32:25,171 --> 01:32:27,171
+işte
+
+497
+01:32:27,171 --> 01:32:29,472
+her seferinde
+
+498
+01:32:29,472 --> 01:32:31,112
+Turu'ya varıyorsa
+
+499
+01:32:31,112 --> 01:32:33,392
+Alindrom diyebiliriz diye şunu.
+
+500
+01:32:33,892 --> 01:32:35,212
+Peki Muhammed
+
+501
+01:32:35,212 --> 01:32:37,091
+şöyle bir şey soracağım. İçi içe iki
+
+502
+01:32:37,091 --> 01:32:39,131
+for dönüşü kullanmak mahiyetli bir iş.
+
+503
+01:32:39,852 --> 01:32:41,551
+Karmışlıkları çok arttırıyor.
+
+504
+01:32:42,451 --> 01:32:43,212
+Onun yerine
+
+505
+01:32:43,212 --> 01:32:45,271
+mesela her
+
+506
+01:32:45,271 --> 01:32:47,491
+adımda soldan ve sağdan ilerliyoruz ya
+
+507
+01:32:47,491 --> 01:32:48,671
+evet.
+
+508
+01:32:49,011 --> 01:32:51,371
+Döngüde her adımda elimize bir
+
+509
+01:32:51,371 --> 01:32:53,011
+bu karakteri alsak
+
+510
+01:32:53,011 --> 01:32:54,491
+bir de bu karakteri alsak
+
+511
+01:32:54,491 --> 01:32:56,591
+eşit olup olmadıklarına
+
+512
+01:32:56,591 --> 01:32:58,331
+baksak bir sonraki
+
+513
+01:32:58,331 --> 01:32:58,932
+adımda
+
+514
+01:32:58,932 --> 01:33:00,731
+örneğin
+
+515
+01:33:00,731 --> 01:33:03,771
+A'yı alsak
+
+516
+01:33:03,771 --> 01:33:05,892
+buradaki A'yı alsak böyle soldan
+
+517
+01:33:05,892 --> 01:33:08,011
+sağ sağdan sola doğru her
+
+518
+01:33:08,011 --> 01:33:10,151
+adımda birini bir arttırsak
+
+519
+01:33:10,151 --> 01:33:11,151
+birini bir azaltsak
+
+520
+01:33:11,151 --> 01:33:14,771
+olabilir mi?
+
+521
+01:33:16,212 --> 01:33:18,072
+Hocam benim dediğim buna
+
+522
+01:33:18,072 --> 01:33:20,371
+varmıyor mu? Ben aslında böyle düşünmüştüm ama
+
+523
+01:33:20,371 --> 01:33:21,431
+birden
+
+524
+01:33:21,431 --> 01:33:22,311
+Birden
+
+525
+01:33:22,311 --> 01:33:27,671
+İki tane döngü olmasına gerek yok.
+
+526
+01:33:28,111 --> 01:33:29,351
+Şimdi onu birlikte yapacağız.
+
+527
+01:33:29,631 --> 01:33:30,411
+Teşekkür ederim.
+
+528
+01:33:31,191 --> 01:33:32,811
+Ağustos'u en kaldırmış.
+
+529
+01:33:35,011 --> 01:33:36,131
+Hocam ben
+
+530
+01:33:36,131 --> 01:33:37,331
+şartlar
+
+531
+01:33:37,331 --> 01:33:38,751
+yani belli şartlara
+
+532
+01:33:38,751 --> 01:33:40,991
+uygulatabilmek için
+
+533
+01:33:40,991 --> 01:33:43,571
+wild öngüsü kullansak olur mu diye düşünmüştüm.
+
+534
+01:33:44,571 --> 01:33:45,691
+Belli şartlara
+
+535
+01:33:45,691 --> 01:33:47,491
+uygulatabilmekten kastettiğin ne de?
+
+536
+01:33:48,151 --> 01:33:49,112
+Yani şöyle
+
+537
+01:33:49,112 --> 01:33:51,011
+önce ben bir
+
+538
+01:33:51,011 --> 01:33:53,991
+palindrom 1 diye
+
+539
+01:33:53,991 --> 01:33:55,951
+kabul yaptım.
+
+540
+01:33:56,451 --> 01:33:57,571
+Sonra dedim ki bu
+
+541
+01:33:57,571 --> 01:33:59,032
+değişkene eğer
+
+542
+01:33:59,032 --> 01:34:01,671
+end 2 artı 1
+
+543
+01:34:01,671 --> 01:34:03,571
+ve palindrom 1 ise
+
+544
+01:34:03,571 --> 01:34:05,851
+girsin döngüye diye düşündüm.
+
+545
+01:34:08,112 --> 01:34:09,112
+Yani
+
+546
+01:34:09,112 --> 01:34:12,112
+birincisi şöyle söyleyeceğim.
+
+547
+01:34:12,511 --> 01:34:13,171
+Biz burada
+
+548
+01:34:13,171 --> 01:34:15,771
+for mı kullanacağız, why mı
+
+549
+01:34:15,771 --> 01:34:17,931
+kullanacağız sorusunun cevabı
+
+550
+01:34:17,931 --> 01:34:19,731
+var. Burada
+
+551
+01:34:19,731 --> 01:34:28,211
+Çünkü kelimenin uzunluğuna bağlı olarak ve benzerliğin bozduğu yere bağlı olarak hangi noktada çıkacağımızı bilmiyoruz.
+
+552
+01:34:28,951 --> 01:34:34,231
+İkincisi while kullanırken biz while koşulunu ne olarak belirleyeceğiz?
+
+553
+01:34:36,392 --> 01:34:38,191
+Ben mi söyleyeyim?
+
+554
+01:34:38,631 --> 01:34:39,131
+Tabii söyle.
+
+555
+01:34:40,091 --> 01:34:46,791
+İşte dedim ki I küçük olsun end of 2 artı 1.
+
+556
+01:34:46,791 --> 01:34:49,231
+Çünkü yarısına kadar gelmesini istiyorum.
+
+557
+01:34:49,231 --> 01:34:51,431
+ama artı bir eklemem gerekiyor.
+
+558
+01:34:51,991 --> 01:34:52,951
+Ve dedim o
+
+559
+01:34:52,951 --> 01:34:55,651
+belirlediğim panidrom değişkenini
+
+560
+01:34:55,651 --> 01:34:57,431
+bire eşitledim. Eğer
+
+561
+01:34:57,431 --> 01:34:59,731
+sıfır olursa pols konuda sıfır yapacağım.
+
+562
+01:35:00,071 --> 01:35:01,351
+Girmeyecek. Tamam.
+
+563
+01:35:01,451 --> 01:35:03,392
+İçeride kontrol ediyorsun
+
+564
+01:35:03,392 --> 01:35:05,392
+panidromu pols. Değil mi? Evet.
+
+565
+01:35:05,951 --> 01:35:07,571
+Tamam. Şimdi seni söyleyelim. Bir yapalım.
+
+566
+01:35:08,431 --> 01:35:09,631
+Start diyelim.
+
+567
+01:35:11,112 --> 01:35:11,731
+N diyelim.
+
+568
+01:35:11,811 --> 01:35:12,532
+Bunu okuyalım.
+
+569
+01:35:14,631 --> 01:35:15,211
+Sonra
+
+570
+01:35:15,211 --> 01:35:17,112
+for dönüşsün içerisinde
+
+571
+01:35:17,112 --> 01:35:19,412
+birden
+
+572
+01:35:19,412 --> 01:35:22,371
+ne kadar
+
+573
+01:35:22,371 --> 01:35:23,972
+kelime
+
+574
+01:35:24,532 --> 01:35:47,331
+I'yı okuyalım. Sonra bu okuma işlemi tamamlandıktan sonra burada bir wild ömüsü yapacağız. Wild ömüsünü sen dedin ki I küçük. Önce şey tanımladım hocam, palindrom eşittir bir dedin. Ha tamam, onu da yazalım. Doğru söylüyorsun, önce onu yazalım.
+
+575
+01:35:47,331 --> 01:36:16,591
+kalindrom eşittir bir dedim. Sonra döngün içindeki koşullar neydi? Sonra I küçük, N div 2 artı bir. I küçük, N div 2 artı bir. Ve? Evet. Kalindrom eşittir bir. Tamam. Şimdi küçük harfle yazayım.
+
+576
+01:36:20,979 --> 01:36:25,599
+Kalindrom eşittir 1 olduğu sürece
+
+577
+01:36:25,599 --> 01:36:30,919
+Döngü için ne yapmam gerekiyor?
+
+578
+01:36:30,919 --> 01:36:33,339
+Bir if kutucuğu açtım hocam.
+
+579
+01:36:33,339 --> 01:36:34,339
+If?
+
+580
+01:36:34,339 --> 01:36:42,539
+Dedim ki kelime ı eşittir kelime n-i artı 1.
+
+581
+01:36:42,539 --> 01:36:45,539
+Yani ilk ile sonucuyu karşılaştırmaya çalışıyorum.
+
+582
+01:36:45,539 --> 01:36:51,320
+N-I, artı bir, eşit diye baktım.
+
+583
+01:36:55,059 --> 01:36:56,239
+Devam edeyim mi?
+
+584
+01:36:56,700 --> 01:36:56,959
+Tabii.
+
+585
+01:36:57,500 --> 01:37:01,239
+Eğer doğruysa, Turukov'una palindrom eşittir bir dedim.
+
+586
+01:37:02,819 --> 01:37:03,880
+Palindrom bir.
+
+587
+01:37:04,840 --> 01:37:06,959
+Yanlışsa sıfır eşitledin.
+
+588
+01:37:08,259 --> 01:37:11,959
+Yanlışsa sıfır eşitledin şurada.
+
+589
+01:37:11,959 --> 01:37:16,880
+şöyle kısaca yazıyorum arkadaşlar çok yerim daraltı için.
+
+590
+01:37:20,532 --> 01:37:38,611
+noktada şuraya geldiğimi varsayın lütfen. Buradan da sonucu yazdırdın değil mi? Evet. Kontrol yaparak palindromun durumuna bağlı olarak. Palindrom 1 ise
+
+591
+01:37:39,475 --> 01:37:41,015
+bir dakika.
+
+592
+01:37:45,140 --> 01:37:55,140
+True false code'a mesajları yazdırdınız. Tamam. Şimdi şurada doğal olarak ben yazamadım.
+
+593
+01:37:55,140 --> 01:38:08,140
+Ö, ö eşittir artı bir diyelim. Arkadaşınız uyarış size. Bu çizim çok güzel olmadı ama biraz aslında bu çözümü yolunu konuşmak için böyle hızlıca çizdim.
+
+594
+01:38:08,140 --> 01:38:34,239
+biraz çizemedim onun için nasıl dersiniz? Şimdi burada elimizde N var, I var, palindom var, kelime I var, bir de aslında kelime N-I artı bir var.
+
+595
+01:38:34,239 --> 01:38:45,579
+Şimdi EN'in değeri 5 olsun kabak kelimesi verilsin. I 1 olsun. Palindrom 1 olsun.
+
+596
+01:38:46,619 --> 01:38:56,439
+N div 2, 5, 2, 2 artı 1, 3. I 3'ten küçük mü? Evet 3'ten küçük. Palindrom 1 mi? Evet palindrom 1. İçeri girdik.
+
+597
+01:38:56,439 --> 01:39:16,119
+kelime I yani bir K değerine sahip. N kaçtı arkadaşlar? 5'ti. 5-1. 5-1 olduğu için artı birden 5'e bakacağız. 5'teki değeri kaçtır? Yine K'dir.
+
+598
+01:39:16,119 --> 01:39:26,499
+if eşit olduğu için true kolunda palindromu 1 yapacağız. Şimdi bu çözükteki ilk dikkat etmemiz gereken noktalardan bir tanesi bu.
+
+599
+01:39:27,239 --> 01:39:32,339
+Eşit olduğunda palindromu tekrar 1'e set etmemize gerek yok. Bunu nasıl yazabilirdik?
+
+600
+01:39:34,719 --> 01:39:35,839
+Evet Selin?
+
+601
+01:39:36,579 --> 01:39:39,259
+Direkt bağlayabilirdik kolu o olmadan o proses.
+
+602
+01:39:39,259 --> 01:39:47,699
+Hayır, yapamazdık. True kolu olmayan if olmaz arkadaşlar. True kolu olmayan if olmaz. Sena?
+
+603
+01:39:50,179 --> 01:40:06,399
+True ile false'un yerini değiştirsek? Nasıl yapacağız onu? Bir dakika, aşağı niy oldu da. Düşüneyim. Eşit değildir desek.
+
+604
+01:40:06,399 --> 01:40:36,219
+Evet. Yani koşulu tersten oluşturmamız gerekiyor. Kelime I eşit değil kelime N-I artı bir dersek true konuda ne yazacağız? Palindrom eşittir sıfır. Fos konuda bir şey yazmayacağız. O yüzden bu gösterim çok mantıklı değil. Kelime I, N-I artı bir eşit mi diye bakmamalıyız. Çünkü zaten değeri bir değiştirmeyeceğiz. Eşit değilse değerini değiştireceğiz. O yüzden eşit değil mi diye bakıp
+
+605
+01:40:36,220 --> 01:40:39,520
+eşitteyse Turukol'unu palindrom eşittir sıfır yazmamayız.
+
+606
+01:40:41,559 --> 01:40:44,180
+Bunu öyle düzelttiğinizi varsayıyorum.
+
+607
+01:40:45,240 --> 01:40:48,259
+Burada eşitlik olduğu için devam ettik döngüye.
+
+608
+01:40:48,360 --> 01:40:49,640
+Ö bir attı, iki oldu.
+
+609
+01:40:50,500 --> 01:40:54,759
+İki olduğunda elimizde ikinci sırada A var.
+
+610
+01:40:55,640 --> 01:40:59,300
+Beş eksi iki artı bir dördüncü sırada A var.
+
+611
+01:41:00,660 --> 01:41:02,259
+A var birbirine eşit mi?
+
+612
+01:41:02,259 --> 01:41:02,860
+Eşit.
+
+613
+01:41:03,419 --> 01:41:05,259
+Yine bozulmadı koşul.
+
+614
+01:41:05,259 --> 01:41:31,799
+Bu arada I şu anda 3 oldu. 3 küçük 3 mu? Koşul sağlanmadı dışarı çıktık. Dışarı çıktığımızda da palindrom 1 olduğu için otomatik olarak bunu yaptık. Ve palindrom diye ekranı yazdık. Peki bunu B, A, A, B için yapsaydık ne olacaktı?
+
+615
+01:41:39,572 --> 01:41:40,572
+n1, n1, n4, endiv 2, 4 bölü 2, artı 1, 3'e kadar gidecekti. 3'e kadar gittiğimiz zaman her iki tarafta birbirine eşit olduğu için son olarak endiv 2 artı 1 geçtiğimiz noktada bunun sonucunda da doğru sonucu verecekti. Peki, a, b, c, d olsaydı gene aynı şekilde a ile d arasında bir farklılık oluşacağı için otomatik
+
+616
+01:42:09,572 --> 01:42:18,851
+döngüden A, D'ye eşit olmadığı için palindrom 0 gelecekti ve ilk koşul sağlansa da while'da, ikinci koşul sağlanmadığı için
+
+617
+01:42:18,851 --> 01:42:24,351
+while'dan çıkmış olacaktı. While'dan çıktığımızda da bir tane ip koymamızın sebebi ne?
+
+618
+01:42:24,991 --> 01:42:29,972
+While'dan neden çıktığımızı bilmiyoruz. Acaba gerçekten palindrom 0 mı oldu?
+
+619
+01:42:30,671 --> 01:42:36,491
+Yoksa biz kontrol edeceğimiz kısımların hepsini kontrol ettik ve herhangi bir sorun yok mu?
+
+620
+01:42:36,491 --> 01:42:45,511
+buna baktık. Şimdi burasıyla ilgili olarak bazı tabii değişiklikler yapacağız ama bir söz isteyen var. Ona bir söz vereyim.
+
+621
+01:42:46,511 --> 01:42:51,891
+Hocam ben burada şeyi soracaktım. 4-1-1 kısmını tam anlayamadım. Tekrar diyebilir misin acaba?
+
+622
+01:42:52,691 --> 01:42:56,152
+4-1-1 kısmını anlayamadım derken. ABAV'de mi?
+
+623
+01:42:57,471 --> 01:43:02,971
+Analizde 4-1-1 yazdık. O kısmı tam anlamadım hocam. Onların nereden geldiğini tam.
+
+624
+01:43:02,972 --> 01:43:24,631
+Bu BABB'yi analiz etseydik M4 olacaktı, I1 olacaktı, palindrom 1 olacaktı, kelime 1 B olacaktı, kelime 4'ün bulunduğu yer B olacaktı, bunun analizi
+
+625
+01:43:24,631 --> 01:43:27,271
+Tamam hocam, anladım, teşekkür ederim
+
+626
+01:43:27,271 --> 01:43:33,111
+yani kabak kelimesinin analizi burada ve ABB'nin analizi burada olacak.
+
+627
+01:43:34,491 --> 01:43:36,351
+Evet, başka soru soru var mı?
+
+628
+01:43:38,291 --> 01:43:44,311
+Peki bunu biraz daha böyle daha şık bir hale yetirebilir miyiz bu çözüm?
+
+629
+01:43:49,844 --> 01:43:54,244
+farklı bir kişi bekliyorum. Daha değişik çözen var mı?
+
+630
+01:43:59,155 --> 01:44:00,155
+Muhammed Kassab
+
+631
+01:44:04,180 --> 01:44:10,180
+Hocam değişik çözüm derken ben FOR'da yanlış olduğunda count'u bir arttırarak çözdüm ama sayılır mı?
+
+632
+01:44:10,180 --> 01:44:17,180
+Yok, şöyle ki FOR'da yani sayılmaz demeyeyim ama efektif bir çözüm değil.
+
+633
+01:44:17,180 --> 01:44:18,180
+İşimiz uzuyor demiştiniz.
+
+634
+01:44:18,180 --> 01:44:27,180
+Evet, FOR'da hepsine bakarsak ilk hatayı gördüğümüz yerde bayağı da çıkabiliyoruz ama FOR'da hepsinin sonuna kadar bakmamız lazım.
+
+635
+01:44:27,180 --> 01:44:31,180
+Senin yaptığın çözüm muhtemelen doğru çalışacaktır ama efektif bir çözüm olmayacaktır.
+
+636
+01:44:31,180 --> 01:44:32,180
+Tamam hocam.
+
+637
+01:44:32,180 --> 01:44:48,180
+boşu boşuna bütün harf ikilinlerini kontrol etmiş olacağız. Halbuki ilkinde A, B, C, D'de olduğu gibi A, L, D farklı olduğu için geri kalanlara bakmamıza gerek kalmayacak ki buradaki örnekler kısa örnekler. Kelime grubumuz adında kontrol sayısı daha da artacaktır.
+
+638
+01:44:48,599 --> 01:44:49,979
+Tamamdır hocam. Teşekkür ederim.
+
+639
+01:44:50,220 --> 01:44:51,720
+Rica ederim. Başka soru soru soru.
+
+640
+01:44:54,940 --> 01:45:00,059
+Selim sana söz vereceğim çünkü başka kaldıran olmadı. Başka nasıl çözebiliriz sorusunun cevabı?
+
+641
+01:45:00,059 --> 01:45:08,699
+Hocam ben değişiklik yaptım sadece çözümün tamamını değiştirmedim ama ben küçük eşittir endiv 2 yaptım onu söyleyecektim
+
+642
+01:45:08,699 --> 01:45:10,400
+Ö küçük eşit 2
+
+643
+01:45:10,400 --> 01:45:12,879
+Endiv 2
+
+644
+01:45:12,879 --> 01:45:21,719
+Buna bir bakmak lazım sınır değerine şu anda emin olamıyorum ama ben daha farklı bir çözüm anlatacağım birazdan
+
+645
+01:45:21,719 --> 01:45:23,379
+Bazen bir söz istedi
+
+646
+01:45:23,379 --> 01:45:28,379
+Hocam benim farklı çözümüm vardı da
+
+647
+01:45:28,379 --> 01:45:28,699
+Evet
+
+648
+01:45:28,699 --> 01:45:29,559
+Söyleyeyim mi?
+
+649
+01:45:30,059 --> 01:45:43,419
+Söyleyebilirsin. Hocam, I'yi birer birer arttırdım. ENI'yi de azalttım. Lupa soktum. Bir de IF kutusu açtım. Eşitse palindrom dedim hocam.
+
+650
+01:45:43,419 --> 01:45:51,739
+Tamam. Şimdi ona benzer bir çözümü ben de yazayım. Şu kısmı yeniden kurgulayacağız.
+
+651
+01:45:51,739 --> 01:46:04,400
+kalitesi, palindrom, bir dedikten sonra, I'ya bir diyorum, J'ye de ben diyorum.
+
+652
+01:46:08,275 --> 01:46:18,515
+burada ı büyük j olduğu sürece and kelime ı
+
+653
+01:46:21,587 --> 01:46:24,947
+eşit kilime j olduğu sürece
+
+654
+01:46:25,948 --> 01:46:29,068
+devam edeceğimiz bir while döngüsü yapıyorum.
+
+655
+01:46:33,524 --> 01:46:35,524
+ve burada
+
+656
+01:46:35,524 --> 01:46:41,524
+I'yı bir arttırıyorum, J'yi bir azaltıyorum.
+
+657
+01:46:43,988 --> 01:46:57,247
+ve çıkan sonuca bağlı olarak eğer Ö küçük eşit j ise
+
+658
+01:47:00,532 --> 01:47:06,532
+ki bu koşulu bir daha konuşacağız. Palindrom olup olmadığını söylüyor olacağım.
+
+659
+01:47:22,068 --> 01:47:38,447
+yazdığım çözümde bazı tabii hatalar var. Onlar da konuşuyor olacağız ama. Öncelikle ne gereksiz, neden kurtulmam gerekiyor bu çözüme göre? Emirhan?
+
+660
+01:47:38,447 --> 01:47:47,667
+Ya emin değilim aslında ama while içinde mesela I birden başlasın, C işte atıyorum ondan başlasın.
+
+661
+01:47:47,667 --> 01:47:49,047
+İkisi de
+
+662
+01:47:49,047 --> 01:47:56,428
+5'e geldiğinde eşittir, kontrol ediyoruz. Sonra yer değişiyorlar. Tekrar aynı kontrolü tekrar yapıyorlar. Mesela J 1'e doğru gidiyor.
+
+663
+01:47:56,587 --> 01:47:59,887
+I 10'a doğru gidiyor. Mesela 1 ve 10'u iki kere kontrol etmiş oluyoruz.
+
+664
+01:48:00,667 --> 01:48:05,428
+Okey. Şimdi buna bakacağız. Bundan önce burada gereksiz olan bir şey var. Berkay.
+
+665
+01:48:06,428 --> 01:48:10,007
+I büyük C'ye de sıkıntı yok mu? Bir de polinron 1 demişiz başta mesela.
+
+666
+01:48:10,007 --> 01:48:11,947
+Evet. Şimdi polinron 1'den kurtulalım.
+
+667
+01:48:13,807 --> 01:48:15,248
+Bu artık gerekmiyor bizden.
+
+668
+01:48:15,947 --> 01:48:17,487
+Şimdi I 1'den
+
+669
+01:48:17,667 --> 01:48:30,508
+J'de N'den başlıyor. Bir koşul koyduk. I büyük J olduğu sürece bu koşula bir daha göz gezdirebiliriz. Ama yapmaya çalıştığımız şeyi bir analize çözmeye çalışalım.
+
+670
+01:48:30,507 --> 01:48:42,567
+kabak kelimesi, burası bir, burası da beş, burada şimdi analiz için çok alan kalmadığı için çek tek açık açık yazmıyorum.
+
+671
+01:48:43,107 --> 01:48:51,587
+Bir ile beş birbirine eşit, bir beşten büyük mü diye sormuşum. Bir kere koşulu değiştirmem lazım.
+
+672
+01:48:52,507 --> 01:48:59,027
+Koşulu yanlış yazdığımı herhalde fark ettiniz. Bunu bir kere değiştirelim.
+
+673
+01:48:59,027 --> 01:49:28,108
+koşulu şöyle yapalım. I küçük J olduğu sürece diyelim. 1 5'ten küçük mü? Evet. Kelime 1, kelime 5'e eşit mi? Evet. Devam ediyorum. Döndüm. I 2 oldu. J 4 oldu. 2 4'ten küçük mü? Evet. Kelime I, kelime J'ye eşit mi? Evet. Döndük. I 3 oldu. J 3 oldu. I küçük J mi? Değil.
+
+674
+01:49:28,108 --> 01:49:33,148
+çıktım döngüden ve burada geldim baktım.
+
+675
+01:49:33,148 --> 01:49:35,248
+Ö küçük J mi? Hayır değil.
+
+676
+01:49:35,568 --> 01:49:36,508
+Not polinom dedim.
+
+677
+01:49:37,347 --> 01:49:39,407
+O zaman şuraya küçük eşit desem.
+
+678
+01:49:41,808 --> 01:49:42,967
+Sorun çözülüyor mu?
+
+679
+01:49:44,588 --> 01:49:46,687
+Şimdilik bu örnekte çözüldü.
+
+680
+01:49:47,347 --> 01:49:48,808
+Hemen bir sonraki örneğe geçiyorum.
+
+681
+01:49:48,987 --> 01:49:50,608
+B, A, A, B olsun.
+
+682
+01:49:51,808 --> 01:49:52,247
+Başladım.
+
+683
+01:49:52,888 --> 01:49:54,368
+1 ve 4'e bakıyorum.
+
+684
+01:49:54,728 --> 01:49:55,888
+1, 4'ten küçük mü? Evet.
+
+685
+01:49:55,987 --> 01:49:57,108
+1, 4'e eşit mi? Evet.
+
+686
+01:49:57,107 --> 01:50:20,788
+Evet, 2 ve 3 oldu. 2, 3'ten küçük mü? Evet. 2, 3'e eşit mi? Evet. Sonra geldim. Ö, 3 oldu. J, 2 oldu. 3, 2'den küçük mü? Hayır. Çıktım. İf'e sordum. 3, küçük eşit 2 mi? Hayır değil. Not palindrom dedim.
+
+687
+01:50:24,435 --> 01:50:31,335
+Bu sefer bir hata oldu. Şimdi burada bir modifikasyona ihtiyacımız var. Ne yapmamız lazım?
+
+688
+01:50:31,335 --> 01:50:34,835
+Evet, Emre.
+
+689
+01:50:34,835 --> 01:50:37,635
+I büyük eşit C diyebiliriz.
+
+690
+01:50:37,635 --> 01:50:40,835
+Hangi noktada büyük eşit diyeceğiz?
+
+691
+01:50:40,835 --> 01:50:42,835
+Son ifte.
+
+692
+01:50:42,835 --> 01:50:45,835
+Hemen bir düzeltmeye gidelim. Bakalım.
+
+693
+01:50:45,835 --> 01:50:50,835
+I büyük eşit C diyelim.
+
+694
+01:50:50,835 --> 01:51:17,616
+Şimdi burada baktığınızda BA, AB için çalışır. Yukarıdaki örnek için çalışır. Ama gelelim ABJD'ye bakalım. Doğru mu değil mi diye bakalım. 1 ve 4. ÖJ'den küçük mü? Evet. Kelime C'ye eşit mi? Değil. Çıktık. 1, büyük eşit 4 mü? Değil. Not palindrom dedik.
+
+695
+01:51:17,616 --> 01:51:20,856
+Ses örneğine bakalım.
+
+696
+01:51:21,595 --> 01:51:22,516
+1, 2, 3.
+
+697
+01:51:24,176 --> 01:51:26,575
+1, 3'ten küçük mü? Evet.
+
+698
+01:51:26,696 --> 01:51:27,996
+1, 3'e eşit mi? Evet.
+
+699
+01:51:29,175 --> 01:51:31,135
+O zaman 2 ve 2 oldular.
+
+700
+01:51:31,976 --> 01:51:32,596
+Geldik.
+
+701
+01:51:33,156 --> 01:51:35,476
+2 küçük 2 mi? Hayır değil.
+
+702
+01:51:35,775 --> 01:51:36,935
+Wilder üstünden çıktık.
+
+703
+01:51:37,855 --> 01:51:39,656
+Sonra İf'e sorduk.
+
+704
+01:51:39,815 --> 01:51:41,956
+2 büyük eşit 2 mi? Evet.
+
+705
+01:51:42,236 --> 01:51:43,796
+Evet olduğu için palindroma gittik.
+
+706
+01:51:43,796 --> 01:51:52,456
+Bunun çalışmama noktası var mıdır? Herhangi bir örnek söyleyebilir misiniz ya da doğru mudur? Muhammed Kasam
+
+707
+01:51:58,996 --> 01:52:00,216
+Muhammed Kasap
+
+708
+01:52:02,335 --> 01:52:07,695
+A, B, C, A
+
+709
+01:52:07,695 --> 01:52:08,475
+Evet
+
+710
+01:52:08,475 --> 01:52:13,755
+Hemen yapalım. Teşekkür ederim. Bakalım bir problemimiz var mı?
+
+711
+01:52:13,755 --> 01:52:14,956
+Şimdi
+
+712
+01:52:16,875 --> 01:52:18,195
+1 ve 4
+
+713
+01:52:19,096 --> 01:52:20,875
+Baktık
+
+714
+01:52:22,676 --> 01:52:24,595
+1, 4'tan küçük mü? Evet.
+
+715
+01:52:24,595 --> 01:52:26,395
+1, 4'e eşit mi? Evet.
+
+716
+01:52:27,155 --> 01:52:28,355
+I, 2 oldu.
+
+717
+01:52:28,355 --> 01:52:46,195
+C3 oldu. 2, 3'ten küçük mü? Evet. Ama kelime I, kelime C'ye eşit değil. Çıktık. 2 büyük eşit 3 mü? Değil. O zaman ne antipa denir onu dedik. Yanlış mı Muhammed?
+
+718
+01:52:49,747 --> 01:52:51,747
+Evet hocam şimdi gördüm kusura bakmayın.
+
+719
+01:52:51,747 --> 01:52:59,747
+Yok yok hayır kusura bakacak bir şey yok. Yani yanlış mı derken sonuç herhangi bir şekilde etkilenmiyor değil mi? Çözüm doğru çalışıyor.
+
+720
+01:52:59,747 --> 01:53:00,747
+Çözüm doğru çıktı.
+
+721
+01:53:00,747 --> 01:53:16,747
+Tamam peki ama gene de bence verdiğin örnek özellikle ödevler için vurgulamış olayım. Farklı bir keyiz olduğu için önemliydi. Bu keyizin de doğru çalıştığını görmemiz gerekiyordu. O yüzden teşekkür ediyorum verdiğin örnek için.
+
+722
+01:53:16,747 --> 01:53:21,147
+Evet, başka sorusu olan var mı çözümle ilgili?
+
+723
+01:53:24,916 --> 01:53:47,596
+Neyi değiştirdik arkadaşlar? Bir tane değişkeni saklayıp, o değişken koşul sağlandığında değişiyor mu, değişmiyor mu? Buna bakıyoruz sağ taraftaki çözümde. Burada bir palindrom değişkeni var ve bunu set ediyoruz. Sonra bir olduğu süredir devam ediyoruz. Eğer koşul sağlanmazsa değiştiriyoruz. Bu bir çözüm.
+
+724
+01:53:47,596 --> 01:54:17,575
+Burada ise tam tersine içeri bir iftihaya yazmıyoruz. Koşunu vane koyuyoruz. Bu koşul sağlandığı sürece diyoruz. Bu sefer soldan ve sağdan kelimenin yaklaşıyoruz. Sadece i'yi bir arttırıp j'yi biraz arttırıyoruz. Bir de sınır değerlerini kontrol etmen noktasında çok çok dikkatli seçiyoruz. İkisi birbirinden farklı ve biraz önce birkaç tane çözüm üzerinde konuşurken aslında bazıları için doğru çalıştığını, bazıları için
+
+725
+01:54:17,575 --> 01:54:39,856
+yanlış çalıştığını gördük yazdığımız birkaç tane çözümün. Buna dikkat etmek gerekiyor. Sınır değerler her zaman için sizi yanıltabilir. İki çözüm için doğru çalışır, bir tanesi için yanlış çalışır. O zaman o sınır değerlerini değiştirmek gerekir. Bu çözümde sorusu olan var mı? Evet Selim.
+
+726
+01:54:39,855 --> 01:54:49,435
+Hocam iki tane soracaktım ben aslında. Birincisi ABC içinde bu çalışır mı acaba diye soracaktım. Orada sanki böyle ortada şey oluyor.
+
+727
+01:54:49,455 --> 01:54:52,555
+Tamam belki gözden kaçırmış olabiliriz. Hemen bir kontrol edelim.
+
+728
+01:54:53,215 --> 01:54:55,195
+Farklı bir case olarak sormak istedim.
+
+729
+01:54:55,875 --> 01:54:58,675
+Tabii ki. ABC'de 1 ve 3'ü kontrol ettik.
+
+730
+01:55:01,255 --> 01:55:01,895
+Oldu.
+
+731
+01:55:02,715 --> 01:55:03,115
+Nasıl oldu?
+
+732
+01:55:03,115 --> 01:55:04,855
+Olmadım. Tamam anladım.
+
+733
+01:55:05,355 --> 01:55:05,595
+Okey.
+
+734
+01:55:05,596 --> 01:55:12,115
+Tamam hocam bir de sağdaki çözüm sadece efektif değil mi yoksa sağdan da kaçırdığımız case'ler var mı diye soracaktım
+
+735
+01:55:12,115 --> 01:55:18,735
+Sağdaki çözümde kaçırdığımız bir case olmaması lazım ama kontrol etmenizde fayda var
+
+736
+01:55:18,735 --> 01:55:24,596
+Ben şu anda ND2 artı bir kısmını detaylı bir şekilde analiz etmedim
+
+737
+01:55:24,596 --> 01:55:26,695
+Orayı bir kontrol etmekte fayda var
+
+738
+01:55:26,695 --> 01:55:27,356
+Tamam hocam
+
+739
+01:55:27,356 --> 01:55:32,375
+Bu çözümle öbür çözüm arasında ufak bir fark var tabii
+
+740
+01:55:32,375 --> 01:55:57,595
+açıkçası end 2 artı 1 yazdığınızda bir işlem yapıyorsunuz ekstradan. Bu mesela bence gerekli bir durum değil. İkincisi kontrol işini iki tane kontrole çıkartıyorsunuz döngüde. Bir if kontrolü var, bir de normal while'daki kontrol var. Ama ilk etapta öğrenilirken, pardon hemen şunu geri alayım.
+
+741
+01:55:57,595 --> 01:56:13,315
+bu tarz yaklaşımlar karışıklık olmaması adına daha çok kullanılır. Problemleri böyle çözerseniz kesinlikle yanlış da puan eksiltme durumu olmayacaktır ilk etaptaki çözümlerde.
+
+742
+01:56:13,315 --> 01:56:26,295
+Çünkü bu biraz daha oturması için zaman alabilir bu çözüm. Burada palindromu set edip onu olduğu sürece devam edip burada da kontrol etmek makul bir çözümdür.
+
+743
+01:56:26,295 --> 01:56:29,955
+ama zaman içerisinde aşağıya bu çözümle doğru kaybınız beklenir.
+
+744
+01:56:31,855 --> 01:56:40,235
+Evet 10.56 oldu. Şimdi 11.05'de tekrar başlayacağız ama 11.05'de başladığımız zaman oryantasyona başlayacağız.
+
+745
+01:56:40,855 --> 01:56:46,035
+Oriyantasyon da belki sorularımız olacaktır. Bölüm tanıtımıyla ilgili bir son sizinle paylaşacağım.
+
+746
+01:56:46,635 --> 01:56:52,835
+Yani yaklaşık yarım saat süreceğini tahmin ediyorum. Ondan sonra 12'ye kadar bir ara vereceğiz. 12'de de tanışma toplantımız olacak.
+
+747
+01:56:52,835 --> 01:57:01,356
+şimdilik bu kadar. 10 dakika sonra yani 9 dakika sonra 11.05'de görüşmek üzere diyorum. Teşekkür ediyorum.
+
+748
+02:07:01,203 --> 02:07:02,723
+Evet arkadaşlar yeniden merhaba.
+
+749
+02:07:03,944 --> 02:07:08,363
+İhsar Mühendisi Bölümünün oryantasyon eğitimini gerçekleştireceğiz.
+
+750
+02:07:08,503 --> 02:07:15,763
+Aslında bu eğitimi genelde birinci sınıflara hep birlikte veriyorduk pandemiden önce.
+
+751
+02:07:16,403 --> 02:07:28,323
+Ama bu sene pandemi koşulları nedeniyle diğer grup daha önce bununla ilgili bir eğitim kısmen aldı.
+
+752
+02:07:28,323 --> 02:07:38,123
+Şimdi sizin eksik kısımlarınızı tamamlamak istiyoruz ama sonuçta bir oryantasyon eğitimini ya da Teknik Üniversitesi zaten sizlere dönem başında vermişti.
+
+753
+02:07:38,843 --> 02:07:47,924
+Hızlıca ilerleyeceğim. İlerlerken sorularınız olursa tabii ki sorularınızı da alacağım ama sunup sonunda da sorabilirsiniz diye düşünüyorum.
+
+754
+02:07:47,923 --> 02:07:52,743
+Şimdi öncelikle şöyle tıklayalım.
+
+755
+02:07:53,243 --> 02:07:59,943
+Bugün üniversiteden, fakülteden, bölümden bahsedeceğiz ve bazı bilmeniz gereken önemli noktaları değiniyor olacağız.
+
+756
+02:08:00,603 --> 02:08:04,663
+Üniversite 1911 yılında kuruluyor.
+
+757
+02:08:05,223 --> 02:08:09,243
+1920'ye kadar kondüktör mektebi alisi dönemi var.
+
+758
+02:08:09,424 --> 02:08:14,424
+Sonra 1937 yılına kadar Nafiye Fen mektebi dönemi yaşanıyor.
+
+759
+02:08:15,343 --> 02:08:19,303
+Burada bazı öğrenim sürelerinde değişiklikler oluyor.
+
+760
+02:08:19,703 --> 02:08:25,084
+Sonra 1969 yılına kadar uzunca bir süre İstanbul Teknik Okulu dönemi başlıyor.
+
+761
+02:08:26,244 --> 02:08:32,244
+82 yılına kadar da İstanbul Devlet Mühendisliği ve Mimarlık Akademisi dönemi olarak devam ediyor.
+
+762
+02:08:32,244 --> 02:08:39,443
+Ve 1982-1992 arasında ilk defa Yıldız Üniversitesi ismi kullanılmaya başlanıyor.
+
+763
+02:08:39,443 --> 02:08:48,223
+O sırada Kocaeli Üniversitesi olmadan önceki kampüsler de buraya dahil bir şekilde hizmet veriyor.
+
+764
+02:08:48,924 --> 02:08:56,143
+Ve 1992 yıllar itibaren Yıldız Teknik Üniversitesi ismiyle öğretim hayatına devam ediyor.
+
+765
+02:08:56,263 --> 02:09:02,903
+Şu anda 11 fakülte, 2 enstitü, 2 meslek yüksek okulu, 1 yabancı diller yüksek okulu olmak üzere
+
+766
+02:09:02,903 --> 02:09:05,543
+toplam bünyesinde yaklaşık olarak
+
+767
+02:09:05,543 --> 02:09:07,783
+40 bin öğrenci ve personel barındıran
+
+768
+02:09:07,783 --> 02:09:09,743
+bir üniversitemiz var.
+
+769
+02:09:10,123 --> 02:09:11,843
+Burada yeni enstitü çalışmaları
+
+770
+02:09:11,843 --> 02:09:12,523
+var şu anda.
+
+771
+02:09:13,983 --> 02:09:15,743
+Bu son
+
+772
+02:09:15,743 --> 02:09:17,424
+bir, bir buçuk aydır devam eden
+
+773
+02:09:17,424 --> 02:09:19,523
+3-4 tane yeni enstitü
+
+774
+02:09:19,523 --> 02:09:21,183
+üzerinde çalışılıyor. Enstitü,
+
+775
+02:09:21,323 --> 02:09:23,463
+Femlinler Enstitüsü ve Sosyal
+
+776
+02:09:23,463 --> 02:09:25,584
+Üniversitesi olmak üzere iki tane enstitü şu anda
+
+777
+02:09:25,584 --> 02:09:27,403
+hizmet veriyor. Bunlar
+
+778
+02:09:27,403 --> 02:09:29,023
+lisans üstü öğrencileri için
+
+779
+02:09:29,023 --> 02:09:30,763
+özellikle
+
+780
+02:09:30,763 --> 02:09:33,343
+araştırma çalışmalarını desteklemek
+
+781
+02:09:33,343 --> 02:09:35,364
+üzere yıllardır faaliyet veren
+
+782
+02:09:35,364 --> 02:09:36,364
+iki enstitümüz
+
+783
+02:09:36,364 --> 02:09:39,263
+mühendislik alanları, fenbirleri
+
+784
+02:09:39,263 --> 02:09:40,903
+enstitüsü altında hizmet veriyor.
+
+785
+02:09:41,724 --> 02:09:43,183
+Ama yakın
+
+786
+02:09:43,183 --> 02:09:45,343
+zamanda bizim bilgisayar
+
+787
+02:09:45,343 --> 02:09:47,504
+mühendisliğinin özelleşmiş konularının
+
+788
+02:09:47,504 --> 02:09:49,343
+daha ağırlıklı
+
+789
+02:09:49,343 --> 02:09:50,504
+olduğu enstitüler
+
+790
+02:09:50,504 --> 02:09:52,803
+yök
+
+791
+02:09:52,803 --> 02:09:55,263
+tarafına sunulacak
+
+792
+02:09:55,263 --> 02:09:55,963
+ve muhtemelen
+
+793
+02:09:55,963 --> 02:09:59,463
+kabul gördükten sonra da eğitim hayatına
+
+794
+02:09:59,463 --> 02:10:01,603
+orada başlayan öğrencilerimiz olacak.
+
+795
+02:10:02,403 --> 02:10:04,123
+Fakültemiz Elektrik-Elektronik
+
+796
+02:10:04,123 --> 02:10:05,363
+Fakültesi ismiyle
+
+797
+02:10:05,363 --> 02:10:07,303
+adlandırılıyor.
+
+798
+02:10:08,083 --> 02:10:10,424
+Eskiden Mühendislik Fakültesi
+
+799
+02:10:10,424 --> 02:10:11,903
+olarak da bir tane
+
+800
+02:10:11,903 --> 02:10:14,223
+hizmet veren bir
+
+801
+02:10:14,223 --> 02:10:16,003
+fakültemiz vardı ama sonra
+
+802
+02:10:16,003 --> 02:10:17,723
+Elektrik-Elektronik Fakültesi olmak üzere
+
+803
+02:10:17,723 --> 02:10:20,243
+ayrıldık uzun yıllardır. Yaklaşık
+
+804
+02:10:20,243 --> 02:10:22,283
+40 senedir böyle devam ediyor.
+
+805
+02:10:23,223 --> 02:10:24,663
+lk.fkl
+
+806
+02:10:24,663 --> 02:10:25,623
+fkl
+
+807
+02:10:25,623 --> 02:10:27,963
+adresine
+
+808
+02:10:27,963 --> 02:10:30,223
+mail atabilirsiniz. Fakülteyle
+
+809
+02:10:30,223 --> 02:10:32,383
+ilgili ulaşmak istediniz,
+
+810
+02:10:32,443 --> 02:10:33,763
+sormak istediğiniz bir şey olursa.
+
+811
+02:10:34,443 --> 02:10:36,223
+Ve ELK.YALS.TR'de fakültenin
+
+812
+02:10:36,803 --> 02:10:38,523
+e-mail adresi.
+
+813
+02:10:40,043 --> 02:10:42,283
+Bunun dışında 5 tane bölüm var
+
+814
+02:10:42,283 --> 02:10:43,183
+fakülte altında.
+
+815
+02:10:44,303 --> 02:10:45,983
+3 tanesi köklü bölümler.
+
+816
+02:10:46,103 --> 02:10:48,323
+Bilgisayar mühendisi, elektrik mühendisi ve elektronik
+
+817
+02:10:48,323 --> 02:10:50,603
+mühendisliği. Kontrol ve otomasyon
+
+818
+02:10:50,603 --> 02:10:52,263
+mühendisliği. O son 10 senedir
+
+819
+02:10:52,263 --> 02:10:52,963
+hizmet veriyor.
+
+820
+02:10:53,391 --> 02:11:12,732
+Biomedikal'de son 2-3 senedir devam ediyor. Şu anda kurulum aşamasında olarak kalmış slide'da ama artık aslında hala kurulum aşamasında yanlış da ifade değil ama artık öğrenci alıp 1. ve 2. sınıflarda şu anda öğrencileriyle yoluna devam eden yeni bir bölümümüz.
+
+821
+02:11:12,732 --> 02:11:27,792
+Bu 5 bölümden 4'ünün ayrı binaları var. Biyomedikal Mühendisliği bu binalar içerisindeki bazı sınıfları ve bazı alanları kullanmak için bölümlerden şu an için almış durumda.
+
+822
+02:11:27,791 --> 02:11:56,551
+Şimdi tabi bu bölümler altında öncelikli hedeflerden biri eğitim öğretimi devam ettirdik ama esas hedefler araştırma yapmak, araştırma çalışmalarını sanayiyle birlikte ürterek sanayilik araştırma çalışmalarına danışmanlık görevi ile katkıda bulunmak ve mümkünse bilimsel araştırma projeleri almak koşulu ile ulusal ve uluslararası projelerde çalışmak.
+
+823
+02:11:56,551 --> 02:12:20,052
+Şimdi zaman içerisinde göreceksiniz. Birinci sınıfın sonundan itibaren birçok hocamızın çalışma grupları var. Onlara dair olabilirsiniz. Bunlarda çeşitli görevler alıp bu projelerden ki bilgi birikiminden faydalanabilirsiniz ve bu projelere katkı sağlayabilirsiniz. Ben bunu çok tavsiye ediyorum.
+
+824
+02:12:20,051 --> 02:12:36,891
+mutlaka hocaların araştırma alanlarını inceleyerek onlara görev almak istediğinizi belirtirseniz size belli adımlar çerçevesinde belli prosedürlere uygun olarak çeşitli görevler vereceklerdir.
+
+825
+02:12:39,631 --> 02:12:48,951
+Bir yönetim şemamız var. Üniversitede bir-iki yerelşik yapı var. Bu iki yerelşik yapıya uygun hareket etmek aslında önemli.
+
+826
+02:12:50,051 --> 02:12:59,891
+en üst noktada rektörlük yer alıyor. Rektörlüklerin altında fakülteler yani dekanlıklar var. Fakültenin başındaki kişi dekan olarak adlandırılıyor.
+
+827
+02:13:00,551 --> 02:13:05,951
+Meslek yükselik uyguları, enstitütler, daire başkanlıkları ve rektörlüğe bağlı bilimler hemen rektörlüğün altında diziliyor.
+
+828
+02:13:06,612 --> 02:13:11,991
+Bölümler ise fakültelerin altında yer alıyor. Bölümlerin içerisinde de ana bilim dalı başkanlıkları var.
+
+829
+02:13:11,991 --> 02:13:21,251
+bizim üç tane ana bilim dalımız var. Bilgisayar bilimleri, yazılım ve donanım olmak üzere. Bu ana bilim dallarının birer başkanları oluyor.
+
+830
+02:13:22,591 --> 02:13:39,991
+Farklı bölümlerde farklı sayıda ana bilim dalları olabiliyor. Bu birazcık o bölümün içerisindeki konuların kendi içerisindeki ağırlıklarına bağlı olarak temel konuların ayrılması prensibine dayanıyor.
+
+831
+02:13:39,991 --> 02:13:55,431
+sonuçta bir mesleğin parçaları ama bizim bölümde de ilgili bazı derslerin yazılım alabilimlerinde, bazı derslerin ilgisayar bilimlerinde, bazı derslerin de donanım alabilimlerinde olduğunu lütfen unutmayın.
+
+832
+02:13:58,691 --> 02:14:04,491
+Akademik ünvanlar, bizler öğretim üyesi olarak geçiyoruz. Öğretim görevlisi değil.
+
+833
+02:14:04,491 --> 02:14:26,871
+Öğretim üyeleri temel olarak 3 ünvan alıyorlar. Profesör, doçent, doktor öğretim üyesi. Öğretim görevlileri daha çok doktor ünvanını almış olan ama doktor öğretim üyesi koşullarını sağlayamamış olan kişilerin aldığı ünvan olarak geçiyor.
+
+834
+02:14:26,871 --> 02:14:41,131
+araştırma görevlileri bizlere yardımcı olan öğretim üyesi yardımcısı ünvanıyla da geçen kişiler bizim bölümümüzde de bugün onları tanıma fırsatımız olacak.
+
+835
+02:14:42,011 --> 02:14:45,031
+Okutman ve uzman olmak üzere biraz daha işte
+
+836
+02:14:46,579 --> 02:15:04,579
+Bazı bölümlerde sadece ders vermek amacıyla yardımcı olan kişilere okutma ifadesi, ünvanı veriliyor. Uzmanlı da daha çok idari yönelendeki kişilere verilen ünvanlardan bir tanesi.
+
+837
+02:15:04,579 --> 02:15:16,579
+Rektör ürümüz var, biliyorsunuz Temer Yılmaz. Rektör yardımcılarımız var. Eğitimden sorumlu, araştırma ve geliştirmeden sorumlu ve yönetim planlamadan sorumlu.
+
+838
+02:15:16,579 --> 02:15:43,940
+Bunun dışında üniversitede bir genel sekreteri ve genel sekreter yardımcısı var. Farklı daire başkanlıkları var. Bilgi işlem daire başkanlığı, öğrenci işlem daire başkanlığı. Bunların daire başkanlığı var. Dekan ve dekan yardımcıları var. Bunlar akademisyen olarak görev alıyorlar. Daire başkanları akademisyen de olabilir, idari bir personel de olabilir. Fakülte sekreterleri var. Önemli bir pozisyonda yer alıyorlar onlar da.
+
+839
+02:15:43,940 --> 02:15:51,279
+bütün bu idari işlerin fakültedeki işleyişinden sorumlular. Bölümlerde ise bölüm başkanı ve bölüm başkan yardımcıları var.
+
+840
+02:15:51,279 --> 02:16:01,039
+Biraz sonra göreceksiniz bizim şemamızda. Bölüm sekreterleri var ve alt tarafta idari çalışanların aldığı bazı ünvanları görüyorsunuz.
+
+841
+02:16:03,440 --> 02:16:11,340
+Bu bütün gruba öğretim elemanı ismini veriyoruz. Öğretim elemanı denildiği zaman bunların hepsini kapsıyor.
+
+842
+02:16:11,339 --> 02:16:17,299
+ama doktor öğretim üyesi, doçent ve profesör ünvanına sahip olan kişiler öğretim üyesi olarak adlandırılıyorlar.
+
+843
+02:16:19,659 --> 02:16:27,759
+Bölümümüzün yönetimsel yazışma adresi bbm-blm.yaz.tv
+
+844
+02:16:27,759 --> 02:16:34,999
+Orjinal bölüm adresimiz yıllarca kullandığımız Computer Engineering'in c.yaz.tv adresiydi.
+
+845
+02:16:34,999 --> 02:16:48,300
+ancak iki sene, belki iki buçuk sene önce sunucularımız, bizim kendi web serverımız, e-mail serverımız kapatıldı bir önceki yönetim tarafından.
+
+846
+02:16:49,079 --> 02:16:57,539
+Sebebini hala bilmiyoruz. Umarım yeni dönemde aktif hale gelecektir. Bize bir açıklama yapılmadı.
+
+847
+02:16:57,539 --> 02:17:15,139
+bunun ötesinde şu anda geçici olarak kullandığımız adres ve BMYıldız.edu.tv adresi öğretim üyelerinin duyurularına ve bilgilerine de AVSYıldız.edu.tv adresinden erişebilirsiniz.
+
+848
+02:17:16,139 --> 02:17:25,359
+Burada istediğiniz öğretim üyesini aratıp çalışma alanlarını, yayınlarını, projelerini ve ilgili başka duyurularını görme şansına sahipsiniz.
+
+849
+02:17:25,359 --> 02:17:32,979
+bölümümüzün temeli 1970'li yıllara dayanıyor. Elektronik hesaplama bilimleri kürsüsü ile faaliyetlerine başlıyor.
+
+850
+02:17:33,539 --> 02:17:40,559
+1982 yılında mühendislik fakültesi bünyesinde bilgisayar bilimleri ve mühendisliği bölümü adıyla hizmet vermeye başlıyor.
+
+851
+02:17:40,559 --> 02:17:48,940
+Yani 2022 yılında 40 senesini bilgisayar mühendisliği adı altında aslında tamamlıyor olacak.
+
+852
+02:17:48,940 --> 02:18:06,919
+oldukça köklün bir bölümümüz 1992 yılında Mühendisliği Fakültesi Elektrik ve Elektronik Fakültesi'ne dönüşüyor. 2000 yılından itibaren de bilgisayar bilimleri ve mühendisliği bölümünün ismi bilgisayar mühendisliği bölümü olarak değiştirilerek yolumuza devam ediyoruz.
+
+853
+02:18:06,919 --> 02:18:20,139
+Şimdi şu anki bölüm yönetimimizi şu anda şemada görüyorsunuz. Bölüm başkanımız Prof. Dr. Nezahmettin Aydın, yardımcıları Dr. Öğretim Üniversitesi Utku Kalay ve Dr. Öğretim Üniversitesi Yunus Emre Selçuk.
+
+854
+02:18:20,139 --> 02:18:33,160
+Bütün bu gördüğümüz kadrodaki kişilerle herhangi bir bölümle ilgili ihtiyaç duyduğumuz konuyla ilgili iletişime yazılıp geçebilirsiniz, yazışabilirsiniz, sıkıntılarınız varsa iletebilirsiniz.
+
+855
+02:18:33,160 --> 02:18:43,279
+Bölüm sekreterimiz, ana sorumluluğumuz Sunat Açalan ve onunla birlikte çalışan Filiz Erkara var. Şu anki pandemi nedeniyle işler.
+
+856
+02:18:43,763 --> 02:18:49,763
+uzaktan main yoluyla ilerliyor. Kendileri dönüşümlü olarak, fiziksel olarak şu anda bölümde yer alıyorlar.
+
+857
+02:18:49,763 --> 02:18:55,763
+Eğer bölüme gitme ihtiyacınız olursa da orada mutlaka biriyle karşılaşacaksınız demektir.
+
+858
+02:18:55,763 --> 02:19:03,763
+Üç tane ana bilim dalı vardı. Bilgisayar Bilimlerinin başında Prof. Dr. Reza Vettin Aydın var.
+
+859
+02:19:03,763 --> 02:19:11,763
+Donanım ana bilim dalı başında, doçen doktor, pardon şu anda ünvanı değişti onun, Prof. Dr. Songül Varlı var.
+
+860
+02:19:11,763 --> 02:19:22,344
+yazdım ana bilimdolarda Prof. Dr. Koyo Kalipsizor. Akademik kadromuzda yaklaşık olarak sayıları görüyorsunuz. Artı bir, eksi bir değişimden oldu.
+
+861
+02:19:22,903 --> 02:19:35,104
+Maalesef bir hocamızı bu süreçte kaybettik, vefat etti kendisi. Veli hocamız, Allah rahmet edilsin diyorum yakından ana tekrar bahsettim diyorum.
+
+862
+02:19:35,104 --> 02:19:44,903
+bu pandemi koronavirüs nedeniyle kendisini kaybettik. Çok çok üzgünüz. Dönem başıydı haber geldiğinde.
+
+863
+02:19:45,383 --> 02:19:52,344
+Memleketinde vefat etmiş. Gerçekten değerli bir hocamız da Allah huzur için yetersin kendisini.
+
+864
+02:19:55,863 --> 02:20:04,763
+Çalışma alanlarımıza gelelim. Gördüğünüz gibi çok farklı çalışma alanlarında projeler yürütüyoruz.
+
+865
+02:20:05,103 --> 02:20:18,623
+bu siber güvenlikten başlıyor, gömülü sistemlere kadar devam ediyor. Şu an gördüğümüz bu slide'taki ağ güvenliği, nesnelerin interneti, akıl dışı şeylerden oluşuyor. Hepsi bilgisayar mühendisliğinin altında çok popüler konular.
+
+866
+02:20:18,624 --> 02:20:38,444
+bazıları multidisiplin diğer mühendislik bölümleriyle de ya da belki bazı başka sosyal bölümlerle de doğrudan ilişkileri ya da dolaylı ilişkileri var ama bu konular şu an aktif olarak bölümümüzde araştırma yapılan ve çalışılan konular.
+
+867
+02:20:38,444 --> 02:20:58,963
+bu konudaki araştırma gruplarını da biraz sonra göreceksiniz. Onlarla iltibata geçebilirsiniz. Bu size açıkçası yeni alanda yapılacak konularda çalışmak önemli bilgi birikimleri sağlayacaktır. Bunları takip etmenizde fayda var.
+
+868
+02:20:58,963 --> 02:21:16,723
+Mekanlarımız şu anda belki bazılarınız hali hazırda bir bölüm mekanlarımızı hiç görmedi bilemiyorum ama birinci katta bir bölüm başkan ve odamız var. Zemin kat o birinci kat ve ikinci kat olmak üzere öğretim elemanlarımızın odaları var.
+
+869
+02:21:16,723 --> 02:21:25,283
+genelde Bodrum katına yer alan genel amaçlı laboratuvarlar donanım ve yazılım için kullanıyoruz. Pandemi dönem öncesinde aktifti.
+
+870
+02:21:25,823 --> 02:21:39,123
+Araştırma laboratuvarlarımız var bunun dışında farklı katlardan bölünmüş. Bu da hocalarımızın yürüttüğü çalışmalar, hastanak arkadaşlarla ilgili öğrenciler lisans ürün ya da lisans ürün öğrenciler çalışıyor.
+
+871
+02:21:39,124 --> 02:22:06,523
+Sınıflar 3 amfi olmak üzere 9 tane sınıfımız var ama bunlardan bir tanesi bir biyomühendislik bölümüne verildi. Bir tanesi de seminersiz odası olmak üzere dönüştürüldü. Böylece 7 sınıfla ve artı 3 amfi ile hizmet veriyoruz. Bir de seminer odamız var. Bir bölümümüz de biyomühendislik bölümüne vermiş olduk.
+
+872
+02:22:06,523 --> 02:22:16,683
+biyomedikal bölümüne. Etüt alanları toplamda aslında 2 artı 1 olarak düşünebilirsiniz.
+
+873
+02:22:17,723 --> 02:22:24,383
+İki tanesi dev blokta zemin katında yer alıyor ve birçok bölümün sahip olmadığı.
+
+874
+02:22:26,131 --> 02:22:35,131
+etüt alanlarında sizler çalışabiliyorsunuz. Kütüphane ortamı gibi iki tane küçük ortamımız var. Üçüncüsü şu an aktif kullanımda değil.
+
+875
+02:22:35,131 --> 02:22:48,131
+Laboratuvar dersi dışında, laboratuvarları ders dışında kullanabiliyorsunuz tabii ki. Ama pandemi döneminde gene fiziksel olarak okula gitmek isterseniz izin alarak kullanma şansınız var.
+
+876
+02:22:48,131 --> 02:22:55,131
+Bir tane toplantı odamız var. Genelde bölüm toplantılarını yürütüyoruz. Bir de sosyalleşme odamız var. İşte orada
+
+877
+02:22:55,131 --> 02:23:02,931
+çeşitli organizasyonlar yapıyoruz. Bazen yemeklerimiz oluyor yıllık olarak. Bazen bir hocamızın yeni ünvan aldığında kutlamasını yapıyoruz gibi.
+
+878
+02:23:03,672 --> 02:23:08,391
+Dinleme odası aynı zamanda da bir araya gelip sohbet etme odası olarak kullandığımız bir mekanımız var.
+
+879
+02:23:11,152 --> 02:23:17,631
+Burada 6 adet araştırma grubumuzun isimlerini görüyorsunuz. Ve bu grupların çok değerli çalışmaları var.
+
+880
+02:23:17,631 --> 02:23:43,471
+akıllı sistemler, bulut bilişimi ve büyük veri, doğal din işleme, işaret ve görüntü işleme, olasılıksal robotik ve yazılım kalitesi olmak üzere 6 araştırma grubumuz var. Bunlar hepsi aktif olarak çalışıyorlar. İlgili başlarındaki hocalarla temasa geçerek onların ya da büyük düzey sayfalarını ziyaret ederek daha fazla bilgi alabilirsiniz.
+
+881
+02:23:43,471 --> 02:24:06,211
+İlk mezunlarını bölümümüz 1986 yılında verdi. Yaklaşık olarak şu anda 1900 lisans, 300 civarında yüksek lisans mezunumuz var. 50 de doktora mezunumuz var ki bu sayılar son birkaç sene de artmış olabilir. Biraz daha yükselmiş olabilir. Bunları zaman zaman güncelliyoruz.
+
+882
+02:24:06,211 --> 02:24:12,291
+vizyonumuzda bilim sektörüne akademik ve teknoloji kanalına yönlü veren dünya çapında bir bölüm olmak.
+
+883
+02:24:12,291 --> 02:24:18,691
+Tabi bu kolay değil bu vizyon ama bu vizyonu koyarak hedefimizin ne kadar büyük olduğunu göstermek istiyoruz.
+
+884
+02:24:19,091 --> 02:24:30,551
+Burada size söylemek istediğim en önemli şey şu anda Yıldız Ekim Üniversitesi Bilgisayarın adısından mezun olan bir kişinin iş durumuyla ilgili en ufak bir kaygısının olmaması gerekiyor.
+
+885
+02:24:30,551 --> 02:24:50,371
+eğer mesleğini seviyorsa ve çaba harcayan, çalışan biriyse. Hele ki bu son dönemde çalışma alanları mühendisliği altına aldığı için çok daha aktif bir şekilde iş imkanı sizin için mümkün olabiliyor.
+
+886
+02:24:50,371 --> 02:25:00,211
+Şimdi tabii şöyle hemen slide'a geri döneyim.
+
+887
+02:25:01,651 --> 02:25:07,011
+Biraz daha hızlanacak olursak öğrenci numaralarınız 8 aneden oluşuyor.
+
+888
+02:25:07,151 --> 02:25:11,831
+Ortadaki 011 BLM'nin kodu olarak karşınıza geliyor.
+
+889
+02:25:11,951 --> 02:25:16,051
+19 giriş yılınız 3 haline aslında öğrenci numaranız şeklinde geliyor.
+
+890
+02:25:16,051 --> 02:25:30,951
+bu şekilde ifade etmeniz size öğrenci numaranızın sorumluluğunda özellikle bölüm sekreterliğinde çok daha işleri hızlandıracaktır. İkili ikili okumaktansa bu şekilde okumak daha işleri hızlı hale getirecektir.
+
+891
+02:25:30,951 --> 02:25:38,851
+4 yıllık bir mühendislik eğitimi boyunca hangi dersleri alacağınızı, hangi yıllarda, kaç kredi olduklarını
+
+892
+02:25:38,851 --> 02:25:45,431
+Bolonya.yıldız yok da Edu.tr üzerinden takip edebilirsiniz.
+
+893
+02:25:46,131 --> 02:25:52,711
+Orada 2018 yılında yenilenmiş eğitim planımızın tüm detaylarını bulabilirsiniz.
+
+894
+02:25:52,711 --> 02:26:00,911
+Bütün zorunlu seçimlik dersleri de burada ulaşabileceğiniz bir adres var.
+
+895
+02:26:00,951 --> 02:26:09,731
+Şurada hemen size bir saniyenizi rica ediyorum. Adresi göndereyim.
+
+896
+02:26:11,351 --> 02:26:16,051
+Bu oyuna Yıldız Evdütere chat ortamından paylaştım.
+
+897
+02:26:16,971 --> 02:26:20,131
+Şimdi tekrar kaldığımız yerden devam edelim.
+
+898
+02:26:21,108 --> 02:26:34,787
+Bizim ÜSİS sisteminde eğitim planlarına erişebiliyorsunuz Bolonya Yıldız Eptere dışında. Bu da bir imkan. Ama Bolonya Yıldız Eptere'de daha fazla bilgiye sahip olabilirsiniz.
+
+899
+02:26:34,787 --> 02:26:43,667
+158 yerel kredi ve 240 AKTS ile mezun olacaksınız. Mezun olma şartınız 2.00 AGNO'ya sahip olmak.
+
+900
+02:26:43,667 --> 02:26:51,147
+zorunlu derslerin yanında seçimlik dersleriniz var ve bunlar için bazı havuzlar tanımlanmış durumda.
+
+901
+02:26:51,788 --> 02:26:55,648
+Burada da size chat ortamından yazdığım adresi görüyorsunuz.
+
+902
+02:26:57,328 --> 02:27:02,148
+Tabii eğitim planları zaman içerisinde güncelleniyor ama genelde ortalama 5 yılda bir güncelleniyor.
+
+903
+02:27:02,148 --> 02:27:08,047
+2018 yılında değiştiği düşünülürse siz mezun olana kadar muhtemelen çok önemli bir değişiklik olmayacaktır.
+
+904
+02:27:08,047 --> 02:27:17,047
+ihtiyaçlar, iç ve dış paylaşlarının öngördükleri değişimler ve gelişen teknolojiler doğrultusunda revizeler yapılıyor.
+
+905
+02:27:17,047 --> 02:27:24,827
+2018 yılında da önemli değişiklikler yapıldı. O yüzden siz oldukça güncel bir eğitim planı üzerinden eğitim alıyorsunuz şu anda.
+
+906
+02:27:28,027 --> 02:27:37,587
+Her yarı yıl derslerin hangi saatlerde olacağını, haftalık ders programını görmek için mutlaka bölüm sayfasını yarı yıl başına takip etmelisiniz.
+
+907
+02:27:37,587 --> 02:27:55,447
+bölüm sayfasından duyurulara mutlaka benli periyotlarla bakmalısınız. Bunlar çok önemli. Okula inşallah fiziksel olarak döndüğünüzde de panolardan bunu takip edebilirsiniz ama artık ağırlıklı olarak her şeyi web üzerinden takip ediyoruz. O yüzden bu konuda duyuruları sıkı bir şekilde takip etmenizi öneririm.
+
+908
+02:27:55,447 --> 02:28:00,927
+gerekiyorsa sekreterliğe ulaşıp sormak istediklerinizi de telefonla sorabilirsiniz.
+
+909
+02:28:00,927 --> 02:28:08,447
+Ama ağırlıklı olarak telefon yerine mail üzerinden haberleşmeyi tercih etmeniz işleri daha hızlandıracaktır.
+
+910
+02:28:10,267 --> 02:28:15,927
+Tabii şu anki bilgi sistemimiz Yusis. Yusis üzerinden derslerinizi seçiyorsunuz.
+
+911
+02:28:15,927 --> 02:28:28,468
+ve burada her ne kadar zaman zaman problemler olsa da şu an için eski orandan çok daha hızlı ders seçimi gerçekleştirebildiğini söyleyebiliriz.
+
+912
+02:28:29,828 --> 02:28:32,768
+Web sayfasının takibinden zaten bahsettik.
+
+913
+02:28:33,227 --> 02:28:38,147
+Vize haftaları genelde 9. hafta ve 2. vize olarak 12 ve 13. haftaydı.
+
+914
+02:28:38,147 --> 02:28:42,548
+Ancak pandemi nedeniyle değerlendirme kriterlerimiz değişti.
+
+915
+02:28:43,108 --> 02:28:45,128
+Birçok derste bir vize yapılıyor.
+
+916
+02:28:45,927 --> 02:28:55,887
+bunun haftası şu anda netleşmedi ama bununla ilgili önümüzdeki birkaç hafta içerisinde bilgi gelecektir. Biz de sizlere aktaracağız.
+
+917
+02:28:57,107 --> 02:29:08,927
+Bizim bölüm özelinde diğer üniversitelerden farklı olduğunu düşündüğümüz noktalardan en önemlileri bir kere iki proje yapıyorsunuz. Bir bilgisayar projesi bir de bitirip bitirme projesi.
+
+918
+02:29:08,927 --> 02:29:24,327
+bu çok çok önemli. İkisinde de sektörde kullanılabilecek çözümler üretmeye çalışıyorsunuz. Gerçekten bir iş yerinde çalıştığınızda yapılabilecek projelere benzer projeler yapmanız sizden bekleniyor.
+
+919
+02:29:25,627 --> 02:29:33,608
+Üçüncü sınıfın ilk döneminde de alabilirsiniz bilgisayar projesini. İkinci döneminde de bitirmeyi de dördüncü sınıfın ilk döneminde de ikinci döneminde de alabilirsiniz.
+
+920
+02:29:33,608 --> 02:29:44,387
+bitirmeyi alabilmek için bilgisayar projesini mutlaka alıp vermiş olmanız gerekiyor. Bu noktada hocalarla mutlaka öncesinde diyaloğa geçin, dönem başlamadan.
+
+921
+02:29:44,887 --> 02:29:59,947
+Hocaların proje konuları liste olarak açıklanıyor. Artı web sayfasında listede olmasa da çalışmak istediğiniz hoca ya da konu varsa onlarla iletişime geçip kendi fikrinizi önerebilir ya da onlardan fikir alabilirsiniz.
+
+922
+02:29:59,947 --> 02:30:13,587
+Yeni eğitim planında çok disiplin tasarım projesi var. Bu 2-3 senedir uygulanıyor ve diğer fakülterin bölümlerindeki öğrencilerle bir grup oluşturuyorsunuz.
+
+923
+02:30:14,004 --> 02:30:20,243
+8 kişiye kadar, şu ana kadar çıktığı zaman da 5-6 kişi olarak oluşuyordu bu grup.
+
+924
+02:30:20,243 --> 02:30:25,283
+Bir, o sene verilen, her sene farklı bir bölüm tarafından veriliyor.
+
+925
+02:30:25,283 --> 02:30:31,123
+Tüm bölümleri kapsayan, tüm disiplinleri elektronik, elektrik kontrolü olabilir.
+
+926
+02:30:31,123 --> 02:30:33,684
+Bir proje gerçekleştiriyorsunuz.
+
+927
+02:30:33,684 --> 02:30:38,963
+Bir kredilik bir ders ama size deneyim katacak.
+
+928
+02:30:38,963 --> 02:30:44,143
+değişik bir aslında uygulama katkı sağladığını düşünüyorum.
+
+929
+02:30:44,463 --> 02:30:46,803
+Dördüncü sınıfa geldiğinizde ilk dönem zaten göreceksiniz.
+
+930
+02:30:47,443 --> 02:30:51,103
+Mutlaka dikkat edin ilk dönem açılıyor, ikinci dönem bu ders açılıyor.
+
+931
+02:30:51,103 --> 02:30:55,663
+O yüzden bu dersi aldığınız zaman vermeye özen göstermeniz gerekiyor.
+
+932
+02:30:56,343 --> 02:30:58,083
+Yazları staj yapmanız bekleniyor.
+
+933
+02:30:59,023 --> 02:31:05,224
+Bunu genelde 30-30 olarak ayırabiliyorsunuz.
+
+934
+02:31:05,223 --> 02:31:12,603
+ve birini genel diğerini meslek istacı olarak seçebiliyorsunuz ama bu detayları staj duyuruları sayfasından görebilirsiniz.
+
+935
+02:31:14,403 --> 02:31:22,323
+Sorunlarınızın çözümü için mutlaka önce danışmanınızla ya da bölüm sekreteriyle görüşün.
+
+936
+02:31:22,823 --> 02:31:30,663
+Sonra çözülemiyorsa bölüm başkanlığına yardımcılar üzerinden sonra bölüm başkanlığına en sonunda dekanlık gerekiyorsa direktörlüğe ulaşın.
+
+937
+02:31:30,663 --> 02:31:50,623
+ama adım adım ilerleyin. Doğrudan dekanlığa gitmek, rektörlüğe gitmek doğru bir çözüm değil. Bu kademeleri geçip geçmelerinizi mutlaka üst kademeler sorgulayacaktır. O yüzden ilk etapta danışmanınızı öğrenin ve danışmanınızı mutlaka irtibata geçirdiği probleminiz varsa.
+
+938
+02:31:50,623 --> 02:31:57,943
+ekleyemediğiniz dersler için dilekçeyle bölüm başkanlığına başvurmanız gerekecektir.
+
+939
+02:31:57,943 --> 02:32:04,043
+Dönem başlarında buna dikkat edin. Takvim bölüm sayfasında duyuruluyor. Bunu mutlaka takip edin.
+
+940
+02:32:07,023 --> 02:32:15,983
+Burada süreç bölümün verdiğiniz dilekçeyi uygun bulması durumunda fakülte yönetimine gönderiliyor.
+
+941
+02:32:15,983 --> 02:32:43,583
+orada yönetim kurulda yerlendiriyor. Eğer uygun bulunursa alınan karar fakülte sekreterliğince gerçekleştiriliyor. Ama dilekçelerin önemli bir kısmı kabul edilmiyor. Çünkü kurallar çok net. Çok exception durumda değişiklik kabul ediliyor. Buna dikkat edin. Yani ben nasıl olsa sonradan çözerim dediğimiz bir problem dilekçeyle büyük ihtimalle o dönem çözülmüyor ve sizin o dersi alamamanızla sonuçlanıyor.
+
+942
+02:32:43,584 --> 02:32:48,783
+gerçekten çok geçerli bir tanımlanmış kurallara uygun bir sebebimiz yok ise.
+
+943
+02:32:50,544 --> 02:32:55,843
+Bir yandan da saate bakmak adına arada 11.32 olmuş devam edelim.
+
+944
+02:32:57,703 --> 02:33:07,544
+Tabii ders seçimleri ikinci sınıftan itibaren randevulu bir şekilde gerçekleşecek ve kendi gününüzde ya da günlerinizde ders seçimi yapmaya dikkat edin.
+
+945
+02:33:08,504 --> 02:33:09,104
+Çok pardon.
+
+946
+02:33:10,444 --> 02:33:11,403
+Buradan geçtik.
+
+947
+02:33:13,584 --> 02:33:32,964
+e-mail isimleriniz bazılarınızın çok enteresan olabiliyor. Burada komik bir ifade kullanılmış. Lütfen kendinizin isim ve soy ismini içeren mail isimleri o alındaysa gene isim ve soy isminizin olduğu bir e-mail adresi üzerinden yazışın.
+
+948
+02:33:32,963 --> 02:33:43,483
+dikkate alınmak istiyorsanız mutlaka bunları kullanın. Diğer başka amaçlarla aldığınız e-mail adreslerini kullanmayın.
+
+949
+02:33:44,443 --> 02:33:54,083
+E tabii burada hitap da önemli. Bir hocanızla ya da bir asistan hocanızla konuşurken, bölüm sekreteriyle iletişim kurarken fark etmez.
+
+950
+02:33:54,083 --> 02:34:00,343
+Kendi arkadaşınızla bile iletişim kurarken biraz daha dikkatli olmak lazım. Kendinizi tanıtın.
+
+951
+02:34:02,291 --> 02:34:11,712
+ve ihtiyacınızın ne olduğunu iletin. Bunlara dikkat edeceğinizi düşünüyorum zaten ama bazen ekstra örneklerimi göremiyoruz.
+
+952
+02:34:11,712 --> 02:34:20,771
+O yüzden lütfen iletişim kurarken sözlü ya da yazılı uygun hitap şekillerini kullanın.
+
+953
+02:34:20,771 --> 02:34:26,611
+Şimdi bilmiyordum, görmemiştim, bana söylenmedi, haftaya sanıyordum.
+
+954
+02:34:26,611 --> 02:34:37,891
+hiçbiri geçerli mazeretler değil. Takip etmek yükümlülüğü size ait. Biz de size bunları aktarma yükümlülüğündeyiz.
+
+955
+02:34:38,891 --> 02:34:51,751
+Arkadaşınızın verdiği yanlış bilgiden dolayı hata yapabilirsiniz. O yüzden bizzat dersin duyurularını takip etmek, sizin açınızdan ya da bölüm duyurularını takip etmek en doğru seçenek olacaktır.
+
+956
+02:34:52,152 --> 02:34:56,251
+Eğer hala bir tereddütümüz varsa hocayla yazışabilirsiniz ya da asistan arkadaşımıza.
+
+957
+02:34:56,611 --> 02:35:18,991
+Tabii yönetmelikler var çok önemli. Öğrencilik hayatınızda size yol gösterecek. Yeri geldiğinde sizin haklı olduğunuz bir durumda bunu ispatlamanızı sağlayacak bütün kurallar, yaptığınız işin doğru olup olmadığını belgeleyen bütün yönetmelikler öğrenci işlerinin sayfasında yer alıyor.
+
+958
+02:35:18,991 --> 02:35:43,211
+Burada kendi özlük haklarınızı öğrenmenizi tavsiye ederim. Böylece kaç kredi alabiliyorsunuz? Bu krediyi alabilmenizin ortalamanız kaç olması gerekiyor? Bir dersi seçerken nelere dikkat etmek gerekiyor gibi bu hakları bilmek faydalı. Merak edenler bu sayfa üzerinden takip edebilirler.
+
+959
+02:35:43,211 --> 02:35:48,652
+Ama kritik olan bilgiler de ara ara bölüm web sayfası üzerinden sizlerle paylaşılıyor.
+
+960
+02:35:48,991 --> 02:36:06,671
+tabi bir de şehir efsaneleri var yani genellikle sözlü olarak yayılan söylentilerle başlayan birinin birinden duyduğu ve yorum katarak yaydığı bir bilgi genelde sizler için bazen hüsran yaratıyor.
+
+961
+02:36:06,671 --> 02:36:35,911
+İşte arkadaşım şu hocadan duymuş dediği bir bilgiyle başlayan hikaye sizleri mağdur ediyor. Mutlaka teyit ediniz bilgileri. Özellikle bazı önemli asparagas haberler çıkabiliyor. Lütfen bu durumda hemen paniğe kapılmayın. Önce bilgiyi teyit edin. İlgili makamlarla görüşün. İlgili hocayla görüşün. Ondan sonra yapmanız gerekenleri ve almanız gereken önlemleri düşünün.
+
+962
+02:36:35,911 --> 02:36:44,031
+gereksiz yere stres yapmayın ya da gereksiz yanlış bilgilerden dolayı mağdur olmayın.
+
+963
+02:36:47,191 --> 02:36:55,371
+Şimdi fotokop yüzden temin edilen noktalar tabii şimdi bu da artık böyle fotokop yüzden olmadan artık dijital ortamdan temin edilen noktlara geldi.
+
+964
+02:36:56,551 --> 02:37:03,431
+Şimdi bunların tabii ki faydası olabilir ama riski de var. İkisi bir arada geliyor.
+
+965
+02:37:03,431 --> 02:37:31,911
+geçmiş senenin notlarını edinip bakmakta bir hani tam anlamıyla bir zarar yok ama risk var. Yanlış tutulmuş bir not sizi mağdur edebilir. Eksik yazılmış bir yeri görmediğiniz için sadece oradan çalışırsanız büyük sıkıntı oluşabilir. Benim şiddetle tavsiye ettiğim şey dersi zamanla dinleyeceksiniz. Defterinize notları alacaksınız. Varsa slide'ları çalışacaksınız.
+
+966
+02:37:31,911 --> 02:37:42,971
+özellikle BBG 1 için, BBG için artık 1 de değil, BBG dersi için çözülmüş algoritmaları kapatıp kendimizi tekrar çözmeye çalışacağız.
+
+967
+02:37:42,971 --> 02:37:48,971
+En güvenilir yol bu dersi geçmenin. Bu nedenle...
+
+968
+02:37:48,884 --> 02:38:04,764
+fotokopiciden ya da dijital ortamdan önceki senelerden temin ettiğiniz notlar her zaman riskli ve oradaki verilerin biri tarafından uzman, bilen bir kişi tarafından verify edilmesi gerekiyor. Buna dikkat etmenizde fayda var.
+
+969
+02:38:04,764 --> 02:38:11,843
+Evet tabi bu slide'da esprili ifadeler de var.
+
+970
+02:38:11,843 --> 02:38:20,903
+isterseniz başka bir bölüme geçebiliyorsunuz. Geçişlerle ilgili kurum içi, yatay geçişle kurumlar arası, yatay geçiş olmak üzere farklı seçenekler var.
+
+971
+02:38:20,903 --> 02:38:30,003
+Ve bunların kurallarını ilgili öğrenci işlerinin sayfasında bulabilirsiniz. Hala başka bir bölüme geçmek için şansınız var.
+
+972
+02:38:30,083 --> 02:38:37,123
+Çok sık da rastladığımız bir durum değil ama tabii ki bölüm değiştirebilir. Hatta isterseniz üniversite bile değiştirebilirsiniz.
+
+973
+02:38:37,123 --> 02:38:45,323
+bunu zaman zaman birinci sınıfın sonunda bazı arkadaşlarınız genelde İTÜ'ye geçiş yaparak gerçekleştiriyorlar.
+
+974
+02:38:45,683 --> 02:38:54,083
+Oradaki kontenjanları o sene iki not ortamasına bağlı olarak zaman zaman da Boğaziçi seçeneği gündeme geliyor ama çok sık olan bir durum değil.
+
+975
+02:38:56,943 --> 02:39:05,923
+Evet yani bölüme ek bölüm okumak isterseniz, çift ana dal yapmak isterseniz bu da mümkün ama bir not ortalaması gerekiyor.
+
+976
+02:39:07,123 --> 02:39:32,403
+Bunlar için öğrenci işlerinin çap ile ilgili kurallarını okumakta fayda var. Genelde 4 yılda bitirilmesi beklenen program, 2 programa çıktığında maalesef 4 yılda pek bitirilemiyor. Genelde 5 yıla uzuyor. Çap yapmayı düşünenler buna dikkat etmeliler. Çok yoğun bir program oluyor.
+
+977
+02:39:32,403 --> 02:39:51,543
+ben saygı duyuyorum çap yapanlara gerçekten ama bence oraya harcayacak efor. Eğer gerçekten o bölüme özel bilginiz yoksa kendi okuduğunuz bölümde uzmanlaşmaya, bilgi seviyenizi yükseltmeye harcansa o efor daha iyi olmuş gibi geliyor. Ben bunu daha çok tavsiye ediyorum.
+
+978
+02:39:51,543 --> 02:40:00,143
+genelde birbirine yakın bölümlerde çarp yapılması isteniyor ki daha çok bize diğer bölümlerden geliyorlar.
+
+979
+02:40:00,143 --> 02:40:10,843
+Endüstriden, elektronikten, matematik muhanesinden gibi ama siz de bunu diğer farklı bölümlerde gerçekleştirme şansına sahipsiniz.
+
+980
+02:40:10,964 --> 02:40:18,863
+Buradaki en büyük sıkıntılar ders çakışmaları oluyor. Genelde bu ders çakışmaları yüzünden okul uzayabiliyor.
+
+981
+02:40:18,863 --> 02:40:30,104
+sınavlar çakıştığı için bütünlemelere girilmek zorunda kalıyor falan. Meşak katlı bir süreç. Bunu hazırsanız ve gerçekten istiyorsanız tabii ki bu imkan size veriliyor.
+
+982
+02:40:32,244 --> 02:40:43,363
+Türkiye'de değişik bir üniversiteyi ziyaret etmek isteyenler varsa, örneğin Opti'ye gitmek istiyorum. Var abi programları var. Daha çok bizden geliyorlar ama bizden de arada gidenler oluyor.
+
+983
+02:40:43,363 --> 02:41:11,663
+bunu değerlendirebilirsiniz. Böyle bir imkan var. Bir ya da iki yarı yıl değişim yapabiliyorsunuz. Erasmus programı var. Türkiye sınırları dışındaki güzel programlardan ama maalesef bu pandemiden dolayı şu an aktif bazı arkadaşlarımız gitse de çoğu öğrencimiz şu an için Erasmus seçeneğini çok aktif bir şekilde değerlendirmiyor.
+
+984
+02:41:11,663 --> 02:41:21,843
+Ama önümüzdeki senelerden itibaren bir aksilik olması da bu pandemi de yavaşladıktan sonra muhtemelen sizin 3. ve 4. sınıfınıza yetişeceğini tahmin ediyorum.
+
+985
+02:41:22,523 --> 02:41:29,083
+Erasmus çok güzel bir seçenek. Yabancı dizi sınavından iyi bir puan almak, ortalamanız yüksek olması, sıralamanızı yükseltiyor.
+
+986
+02:41:29,824 --> 02:41:38,764
+Anlaşmalı olduğunuz üniversitelerle bakıyorsunuz. Sıralamaya göre tercih yapmanız isteniyor. Aralarından seçtiklerinize gidebiliyorsunuz.
+
+987
+02:41:38,763 --> 02:41:47,363
+çok önemli bir deneyim, çok tavsiye ederim. Sadece ders almak için değil, yaşam tecrübesi açısından mutlaka ve mutlaka
+
+988
+02:41:48,340 --> 02:42:00,340
+fırsatınız varsa denenmenin tabii ki kibe çıkıp çıkmaması o sanki kontenjanlara bağlı ama genelde ortalama her sene yirmi, on beş, yirmi öğrencimizi gönderiyoruz.
+
+989
+02:42:00,340 --> 02:42:15,340
+Bunun ötesinde Erasmus'a ek olarak bir de IES'te kulübünün staj imkanı var yurt dışında. O kulübün sorumlusu Elif Hoca, Elif Karsingil.
+
+990
+02:42:15,340 --> 02:42:21,579
+onunla irtibata geçip yazıları yurt dışına staj yapma imkanına sahip olabilirsiniz.
+
+991
+02:42:21,740 --> 02:42:30,639
+Kulübe üye olarak ya da kulübün aktivitelerine faaliyet göstererek özellikle yabancı dil seçiminde önemli rol oynuyor.
+
+992
+02:42:32,399 --> 02:42:40,619
+Bir de Erasmus dışında Mevlana programı var. Dünyanın farklı ülkelerinde, Avrupa dışında da bu programla yararlanabiliyorsunuz.
+
+993
+02:42:40,619 --> 02:42:47,099
+çok programla ilgili bilgim yok ama araştırabilirsiniz. Mevlana Yılzatr'den bilgileri alabilirsiniz.
+
+994
+02:42:48,799 --> 02:42:55,719
+Şimdi bu kısım tabii şu anda yürürlükte olan sistemle çok uyumlu değil ama genel olarak bilgi sahibi olmakta fayda var.
+
+995
+02:42:56,420 --> 02:43:03,499
+Genelde yıl içinde ortalama iki tane ölçme yapılıyor. Biri vize oluyor. Bazı dersler iki vize yapıyor.
+
+996
+02:43:03,920 --> 02:43:09,340
+Bazı dersler bir vize, bir ödev yapıyor. Bazı dersler iki vize, bir sömürsit projey yapıyor. Farklı stiller var.
+
+997
+02:43:09,340 --> 02:43:18,899
+derse de bağlı bu. Bu yüzden bazı derslerin bazı değerlendirme yöntemleriyle daha iyi ölçüldüğünü ya da daha uygun olduğunu lütfen unutmayın.
+
+998
+02:43:19,420 --> 02:43:25,880
+Tabii ki hocanın tercihleri de var ama bazen dersten dolayı da bu tercihi yapmak zorunda kalabiliyoruz.
+
+999
+02:43:26,719 --> 02:43:33,119
+Yıl içi değerlendirmeleri %60, yıl sonu final %40 olarak genelde kabul görüyor.
+
+1000
+02:43:33,119 --> 02:43:38,280
+Ama pandemi döneminde bu esnemeler ya da değişiklikler olabiliyor.
+
+1001
+02:43:38,279 --> 02:43:46,099
+Sınavlara gerçekten bir gerekçeniz yoksa kurallar çerçevesinde katılmazsanız sıfır oluyorsunuz.
+
+1002
+02:43:46,799 --> 02:43:52,399
+Sınavlara katılmanız için fiziksel ortamda mutlaka önce yer almanız gerekiyor.
+
+1003
+02:43:52,399 --> 02:43:55,179
+Son anda gelirseniz büyük karışıklık çıkarıyor.
+
+1004
+02:43:55,719 --> 02:43:57,939
+O yüzden önceden gelmek önemli.
+
+1005
+02:43:58,119 --> 02:44:00,599
+İnşallah önümüzdeki dönemlerde bu gerçekleşecek.
+
+1006
+02:44:00,599 --> 02:44:10,039
+sınav başladıktan sonra da genelde fiziksel ortamda yoklama alınana ve ilgili süre tamamlanana kadar sınav salondan ayrılamıyorsunuz.
+
+1007
+02:44:11,840 --> 02:44:16,419
+Eğer sınavdan biri çıktıysa da artık geç gelen bir öğrenci sınava alınamıyor.
+
+1008
+02:44:16,419 --> 02:44:26,219
+Tükenmez kalemle imzalamanız önemli. Yanınızda kalem silgi gibi böyle kendi ihtiyaçlarınızı bulundurmanız, değiş tokuş yapmamanız,
+
+1009
+02:44:26,219 --> 02:44:41,199
+önem arası diyor. Cep telefonlarını kullanmamanız çok kritik. Kapatmanız isteniyor. En kötü ihtimalle sessiz almanız isteniyor. Masada vesaire de bulundurmamız isteniyor. Bunlar önümüzdeki dönemler için size belli tavsiyeler.
+
+1010
+02:44:42,259 --> 02:44:49,819
+Notlama kısmına geleceğim ama ondan önce bir süreye bakalım. Evet son 15 dakika kaldığı için çok hızlı bir şekilde toparlamam gerekiyor.
+
+1011
+02:44:49,819 --> 02:44:56,959
+AA 4'e denk geliyor, BA 3.5, BB 3 şeklinde aşağıya doğru devam ediyor.
+
+1012
+02:44:57,539 --> 02:45:02,780
+C, C'ye alırsanız dersten başarısınız demek ama D, C'ye alırsanız koşullu başarısınız.
+
+1013
+02:45:02,780 --> 02:45:08,780
+Koşullu başarılı da algoritma 2.0 üzerinde olduğunuz durumda geçerli.
+
+1014
+02:45:08,859 --> 02:45:14,759
+2.0 üzerinde değilse o zaman maalesef D, C'ye aldığınız derslerden de başarısız sayılırsınız.
+
+1015
+02:45:14,759 --> 02:45:34,299
+diğer ifadeler yer alıyor G geçer, K kalır, İ izinli, M muaf, E de eksik olmak üzere. F0 devamsız olduğunuzu gösteriyor. Diğerleri de devam ettiğinizi ama başarılı olamadığınızı gösteriyor. Derslerin %70'ine katılmanız, devam koşulunu sağlamanız açısından önemli.
+
+1016
+02:45:34,299 --> 02:45:44,219
+derste başarılı olmak istiyorsanız derse takip etmek, takip edenlerin benim derslerim için en azından yüzde
+
+1017
+02:45:44,639 --> 02:45:50,159
+80 civarında başarılı olduklarını görüyorum. O yüzden takibinin çok önemli olduğuna inanıyorum.
+
+1018
+02:45:50,159 --> 02:45:56,239
+Dabartuvarda işte kurallar var. Bunlar çok bildiğimiz kurallar, çok üzerinde durmayacağım.
+
+1019
+02:45:56,239 --> 02:46:04,240
+Kullanım kuralları. Öğrenci dekanlığı var. Burada birçok konuda destek alabilirsiniz.
+
+1020
+02:46:04,240 --> 02:46:10,239
+Sıkıntılarınızı ve çeşitli bilgilendirmenizi buradan yapabilirsiniz.
+
+1021
+02:46:10,239 --> 02:46:22,039
+bu ÖGRD, Eryanizet, Eryanizet adresine girerek kampüs hayatıyla ilgili ve diğer sizin kişisel ihtiyaçlarınızla ilgili bilgileri buradan takip edebilirsiniz.
+
+1022
+02:46:22,039 --> 02:46:29,019
+Yeni kurulan, 3-4 sen önce kurulan bir tekamlık ama faydalanabileceğinizi düşündüğünüz bir alan.
+
+1023
+02:46:30,459 --> 02:46:39,739
+Sosyal imkanlar, bunları gördüğünüz oryantasyon sırasında üniversitenin yaptığı çok çeşitli faaliyetleri,
+
+1024
+02:46:40,239 --> 02:47:03,199
+üniversite kampüsünü yürütme şansına sahipsiniz. Umarım bir sonraki dönem en kötü ihtimalle bir sonraki sene normalleşmiş bir şekilde kampüs hayatına geçmiş olursunuz ve yıllarca belki özlemle beklediğiniz kendi ayaklarınızın üzerinde durmaya başladığınız bu dönemde bu tür imkanlardan sonuna kadar faydalanırsınız.
+
+1025
+02:47:03,199 --> 02:47:21,319
+Tabii ki en çok tavsiye ettiğim kulüpler. Kulüplerde yer almak, insanlarla tanışmak, yeni bakış açıları kazanmak çok önemli. Bizim öğrencilerimizin kurduğu Skylab Kulübü de bunlardan bir tanesi.
+
+1026
+02:47:21,319 --> 02:47:32,819
+Ama ben bütün bu kulüpler içerisinden kendinize en uygun olan kulüp ya da kulüplere başvurmanızı ve orada aktif rol oynamanızı öneririm.
+
+1027
+02:47:33,199 --> 02:47:54,319
+tabi ki Skylab kulübüne katılırsanız çok mutlu oluruz. Ben danışmanlığını yürütüyorum Banu Hoca ile birlikte. Burada arkadaşlarımız aktif olarak birçok organizasyon yapıyorlar. Hali hazırda da online ortamda birçok aktif eğitim yapıyorlar. Skylab kulübünün sayfasına gidip oradan bilgi alabilirsiniz. Oradaki arkadaşlarımıza iletişime geçebilirsiniz.
+
+1028
+02:47:54,319 --> 02:48:04,499
+onun dışındaki diğer gruplarını da özellikle kampüste döndüğünüzde aktif olarak yer almanızı çok çok tavsiye ediyorum.
+
+1029
+02:48:04,499 --> 02:48:11,919
+Hem kişisel gelişimimiz açısından hem sosyal network'ınız açısından hem de yeni bazı bilgiler öğrenmek açısından.
+
+1030
+02:48:12,979 --> 02:48:14,919
+Çeşitli spor testlerimiz var.
+
+1031
+02:48:15,259 --> 02:48:18,959
+Yere, olimpik kapıda yüzme hızımız var, fitnes salonu, halı saha, tenis kortları.
+
+1032
+02:48:19,579 --> 02:48:23,919
+Bunlar da sizlerin faydalanabileceği kampüste ki çeşitli spor testleri.
+
+1033
+02:48:24,319 --> 02:48:31,539
+kampüsümüzün şu andaki haritasını görüyorsunuz. Çok da üzerinde konuşmaya gerek yok. Bunu daha önce de görmüşsünüzdür.
+
+1034
+02:48:35,939 --> 02:48:42,599
+Öğrenci rehberimize bu linkten erişebilirsiniz. Tanıtım Katalona da bu linkten erişebilirsiniz.
+
+1035
+02:48:43,919 --> 02:48:53,879
+Evet son olarak aramıza hoş geldiniz. Vakit ayırdınız, dinlediniz. Çok teşekkür ediyorum. Çok hızlı sundum. Bir kısmını zaten biliyordunuz diye tahmin ediyorum.
+
+1036
+02:48:54,319 --> 02:49:05,279
+gerçekten talihsiz bir dönemde üniversite hayatımız başladı ama muhtemelen bugünler hızla geçecek.
+
+1037
+02:49:05,279 --> 02:49:16,459
+İnşallah sağlıkla hep birlikte atlatırsak önümüzdeki sene en kötü ihtimalle tam neyince bekletiniz üniversite hayatını yavaş yavaş yaşamaya başlayacaksınız.
+
+1038
+02:49:16,459 --> 02:49:20,819
+hepinizi samalık diliyorum öncelikle.
+
+1039
+02:49:21,339 --> 02:49:25,579
+Saat 12'deki yani 10 dakika sonraki toplantıya da katılımınızı bekliyoruz.
+
+1040
+02:49:26,079 --> 02:49:27,199
+Bugünkü dersimiz bu kadar.
+
+1041
+02:49:28,279 --> 02:49:31,259
+Sorularınız varsa bana özellikle e-mail ile yazabilirsiniz.
+
+1042
+02:49:31,659 --> 02:49:32,479
+Görüşmek üzere diyorum.
+
+1043
+02:49:32,599 --> 02:49:33,799
+Dersi noktalıyorum.
+
+1044
+02:49:36,399 --> 02:49:38,179
+Slide'ı tabii ki paylaşabilirim.
+
+1045
+02:49:38,644 --> 02:49:44,644
+site'ı sayfamdan, ana site duvardan, bu dersin duvarından paylaşıyor olacağım.
+
+1046
+02:49:49,747 --> 02:49:50,387
+Teşekkürler.
