@@ -1,0 +1,5675 @@
+1
+00:03:20,915 --> 00:03:22,915
+Günaydın arkadaşlar, hoş geldiniz.
+
+2
+00:03:22,915 --> 00:03:24,915
+Günaydın hocam.
+
+3
+00:03:26,915 --> 00:03:27,915
+Nasılsınız, iyisiniz?
+
+4
+00:03:27,915 --> 00:03:28,915
+Günaydın hocam.
+
+5
+00:03:35,668 --> 00:03:43,027
+Zafer, bu Telegram grubuyla alakalı sen kullanıyor musun Telegram?
+
+6
+00:03:43,027 --> 00:03:49,427
+Hocam, benim Telegram kanalım var ama yani chat olarak kullanmıyorum ben orayı.
+
+7
+00:03:49,427 --> 00:03:52,867
+Yani uygulama sende yok mu?
+
+8
+00:03:52,867 --> 00:03:54,307
+Uygulama var.
+
+9
+00:03:54,307 --> 00:04:00,787
+Tamam. Ben sana şey yapacağım, bana bir mail gönderir misin?
+
+10
+00:04:13,367 --> 00:04:25,907
+Bir de arkadaşlar, bu konuda kim gönüllü olmak ister bilmiyorum. Şimdi chat ekranına arada yazılan hani şeyler, derste yazılan şeyler olabilir.
+
+11
+00:04:25,907 --> 00:04:34,967
+Ben görmüyorsam arada hocam çete yazılanlar var bakabilirsiniz diye bakar mısınız diye sorarsanız bana söylerseniz.
+
+12
+00:04:34,987 --> 00:04:36,767
+Ben haber veririm size öyle bir şey olursa.
+
+13
+00:04:36,787 --> 00:04:45,347
+Tamam Atakan. Genel olarak derse odaklanınca buradaki şeyleri bazen unutuyorum. Onu da teşekkür ederim.
+
+14
+00:04:45,347 --> 00:04:55,267
+Tabii çete yazılacak olan şeyler geçen derste de konuştuk. Ders süresince konuyla alakalı şeyler çete yazabilirsiniz.
+
+15
+00:04:55,267 --> 00:04:56,848
+Herkesin mikrofonu olmayabilir.
+
+16
+00:04:57,907 --> 00:05:03,827
+Ama dersin dışında, dersin o anki konusunun dışında bir şey yazacaksanız veya soracaksanız
+
+17
+00:05:03,827 --> 00:05:06,867
+lütfen dersin son 10-15 dakikasını bekleyin.
+
+18
+00:05:06,947 --> 00:05:07,907
+Benim bitirmemi bekleyin.
+
+19
+00:05:08,727 --> 00:05:11,767
+Araya farklı konular girerse konumuz dağılmasın.
+
+20
+00:05:13,067 --> 00:05:19,907
+Kimse hani sizin özel sorularınızı herkes tabii dinlemek durumunda değil.
+
+21
+00:05:19,907 --> 00:05:23,447
+Hem de ders konusu dağılınca öğrenme güçleşiyor.
+
+22
+00:05:23,447 --> 00:05:27,147
+Bunun önüne geçmek için böyle bir protokol belirlemiş olalım.
+
+23
+00:05:29,547 --> 00:05:33,547
+Evet, 40 kişiyiz. Şöyle biraz daha sayımız artsın.
+
+24
+00:05:34,627 --> 00:05:43,768
+Geçen, bir dakika şu katılımcı listesine bir bakayım online yıldızdan geçenki derse kaç kişi katılmış onu görebiliyorum.
+
+25
+00:05:50,932 --> 00:06:00,051
+Yine orada da bir 42 falan var. Katılımcı listesi var da kaç kişinin katıldığı, yani sayacak değilim bir sürü satır var. Neyse.
+
+26
+00:06:01,852 --> 00:06:15,772
+Şimdi bugün geçen dönemki bilgisayar bilimlerine giriş dersinde anlatılan, algoritmayı da içerisine alan konuların bir tekrarı derse giriş maksadıyla bunu yapacağız.
+
+27
+00:06:15,772 --> 00:06:28,972
+Bir buçuk saat bu sürer. Bir de programlama ve algoritma ile alakalı bir slide var. Onun üzerinden bazı şeyler anlatacağım. Ondan sonra dersi tamamlayacağız.
+
+28
+00:06:30,551 --> 00:06:36,332
+Bu sürede işte biraz da arkadaşlar toparlanırsa biraz bekleyelim.
+
+29
+00:06:39,795 --> 00:06:50,915
+Şurada da bir işlem yapıyorum, onu da tamamlayayım. Ondan sonra derse geçeceğiz. Bu arada sormak istediğiniz bir şey varsa sorabilirsiniz tabii ki.
+
+30
+00:07:02,324 --> 00:07:17,324
+Gruba sadece benim dersimi alan, yani bu Yapısal Programlamaya Giriş ve Sayısal Analiz dersini alan arkadaşların katılmasını istiyorum. Diğer gruplardan herhangi bir şey olmazsa iyi olur.
+
+31
+00:07:19,324 --> 00:07:28,324
+Bir de arkadaşlar, grupta yazarız onu artık. O grup bir duyuru amaçlı, bilgilendirme amaçlı. Çok fazla amacı dışında kullanmayalım.
+
+32
+00:07:28,324 --> 00:07:30,924
+İlginç bir şey görürsünüz.
+
+33
+00:07:31,283 --> 00:07:33,204
+Dersle alakalı veya mesleğimizle alakalı.
+
+34
+00:07:33,283 --> 00:07:34,803
+Onu oradan duyurmakta sıkıntı yok.
+
+35
+00:07:35,623 --> 00:07:37,963
+Ama her önümüze gelen şeyi de yazmayalım.
+
+36
+00:07:40,164 --> 00:07:42,083
+Sonra her şey karman çorman oluyor.
+
+37
+00:07:43,083 --> 00:07:44,024
+Tamam bu da bitti.
+
+38
+00:07:45,463 --> 00:07:46,623
+Şunu kapatalım.
+
+39
+00:07:59,124 --> 00:08:10,124
+Geçen dersimizde bir arkadaş, hocam ben bilgisayar bilimlerine girişi almamıştım, ne tavsiye edersiniz gibi bir şeyler söylemişti. Tabii ona söylemeyi unuttum. Burada mı arkadaşımız?
+
+40
+00:08:12,124 --> 00:08:24,624
+İsmini belki chatten, geçen dersin chatini izlesem, oradan hatırlayıp bulabilirdim ama kim olduğunu bilmiyorum, unuttum yani daha yeni tanıştığımız için sizlerle.
+
+41
+00:08:24,624 --> 00:08:34,124
+Şimdi geçen derslerin kayıtlarına bir şekilde erişim sağlayabilirseniz nereden olduğunu bilmiyorum.
+
+42
+00:08:34,124 --> 00:08:38,863
+Burada link paylaşmanıza da gerek yok. Paylaşmayın da zaten.
+
+43
+00:08:40,243 --> 00:08:42,683
+Bu kayıtları izlemenizi tavsiye ederim.
+
+44
+00:08:43,743 --> 00:08:49,204
+Yani bizim flowchart notasyonumuz biraz farklı olabilir diğer kaynaklarına zarar.
+
+45
+00:08:49,203 --> 00:09:11,643
+O flow chart notasyonu ben burada kısmen anlatacağım. O notasyona uygun problem çözmeniz gerekiyor. Bunlar zaman içinde tekrar hatırlatacağım şeyler ama eksikleri kapatmak adına geçen ders, geçen dönemin işte Amaç Bey'den veya Cihan Bey'den hangisinden izlerseniz faydalı olur.
+
+46
+00:09:11,643 --> 00:09:14,704
+Bilal Manar mı ismi? Burada mı Bilal?
+
+47
+00:09:22,836 --> 00:09:23,815
+Neyse.
+
+48
+00:09:29,716 --> 00:09:37,716
+Muhammed Hal herhalde arkadaşını ya tanıyorsun veya hafızan çok iyi çalışıyor. Yani soru sanan.
+
+49
+00:09:40,216 --> 00:09:50,716
+Yok sayısal analizde değildi. Bu sayısal analizde soran arkadaş Bilal olabilir de bir de onun dışında bir arkadaş daha vardı. İlk pazartesi günkü derste öyle bir şeyi sormuştu.
+
+50
+00:09:52,716 --> 00:09:54,716
+Demek ki bir başka arkadaş daha var.
+
+51
+00:09:54,716 --> 00:09:56,816
+Evet.
+
+52
+00:09:57,636 --> 00:09:59,556
+Neyse problem değil arkadaşlar.
+
+53
+00:10:00,115 --> 00:10:02,015
+Şimdi ekran paylaşımı yapalım.
+
+54
+00:10:04,476 --> 00:10:15,736
+Bu ders hani geçen dönem nasıl bölüme yeni başladıysanız hani onun gibi düşünebileceğiniz bir ders olacak biraz belki.
+
+55
+00:10:17,796 --> 00:10:19,675
+Şu an ekran paylaşımı gelmiş olması lazım.
+
+56
+00:10:21,855 --> 00:10:22,415
+Geldi hocam.
+
+57
+00:10:24,716 --> 00:10:34,656
+Biraz gerçi burada yapısı analizde de bazı şeyleri konuştuk ama burada sıfırdan biraz daha bu dersin ruhuna uygun olarak konuşmak daha doğru.
+
+58
+00:10:35,436 --> 00:10:41,595
+Şimdi biz bilgisayar deyince bir bilgisayar möncüsü olarak ne anlamamız lazım bilgisayardan? Öncelikle onunla başlayalım.
+
+59
+00:10:41,595 --> 00:10:59,995
+Bilgisayar aslında bir hesaplama aracı. Bizden farkı, normal bir insandan farkı aynı yapabildiğimiz hesaplama işlemini daha hızlı yapabilmesi, hatasız yapabilmesi, bir de ne demiştik veri saklayabilmesi. Çok büyük verileri saklayabiliyoruz.
+
+60
+00:11:01,076 --> 00:11:08,375
+Tarif ettiğimiz işlem hesaplama işlemi neyse, bakın bu önemli, tarif ettiğimiz hesaplama işlemi neyse onu hatasız yapıyor.
+
+61
+00:11:08,375 --> 00:11:14,195
+Yani x ile y'yi toplayalım diye siz şu şekilde bir şey yapabilirsiniz.
+
+62
+00:11:15,735 --> 00:11:18,615
+Şu an yazamadım bir saniye bir ayar yapmam gerekiyor.
+
+63
+00:11:19,595 --> 00:11:21,315
+İki sayıyı toplamak istiyorsunuz.
+
+64
+00:11:22,035 --> 00:11:25,115
+Bu iki sayıyı toplamak için bir kod yazdınız.
+
+65
+00:11:25,115 --> 00:11:27,115
+Ve bu kodda...
+
+66
+00:11:33,107 --> 00:11:43,107
+Şöyle bir şey oldu, x eşittir. A çarpı B'ye aldınız. Bu da çarpı işlem olduğunu artık biliyorsunuz veya bile öğreneceksiniz.
+
+67
+00:11:43,107 --> 00:11:55,107
+Toplama yaptınız ama böyle bir şey tarif ettiniz. Bu şekilde, hatasız bir şekilde bu işlemi yapar. Ama sizin beklediğiniz sonuç farklı olabilir. Bu hata değildir. Bu bilgisayarın hatası değildir, sizin hatanızdır.
+
+68
+00:11:55,107 --> 00:12:05,988
+İşte bu hatasız işlem yapabilmesi, çok büyük verilerin saklanabilmesi ve bizim çok uzun sürede yapabileceğimiz işlerin çok kısa sürede tamamlanabilmesi bilgisayarın özellikleri.
+
+69
+00:12:06,547 --> 00:12:14,128
+Peki bilgisayar bu veri saklama işini ve işlem yapma konusunu nasıl hallediyor kendi içinde?
+
+70
+00:12:15,767 --> 00:12:20,727
+Şimdi temel olarak bir bilgisayarda olması gereken 3 tane bileşen var. Bunlar nedir arkadaşlar?
+
+71
+00:12:20,727 --> 00:12:23,627
+Her bir bilgisayarın olması gereken bileşenleri.
+
+72
+00:12:23,628 --> 00:12:27,607
+Aslında 4 tane de biz 3 diyelim.
+
+73
+00:12:34,100 --> 00:12:35,100
+Buyur Recep.
+
+74
+00:12:36,100 --> 00:12:52,100
+Biri işlemci diye düşünüyorum. Biri RAM. Biri de sanırım sabit disk olabilir. Bir de işlemci RAM gibi parça birleştirmek için anakart derdim ben.
+
+75
+00:12:53,100 --> 00:13:02,100
+Bu o zaman kişisel bilgisayara yakın bir şey oldu. Temel bilgisayar yani bir mikroçipi de düşünebiliriz. Muhammed, evet.
+
+76
+00:13:02,100 --> 00:13:10,579
+Hocam çok genel olacak ama giriş birimleri, çıkış birimleri bir de işlem yapan birimleri. Yani bir girdi vereceğiz işlem yapacak çıkış yapacak.
+
+77
+00:13:11,239 --> 00:13:19,759
+Yani bu da biraz yakın. Yani giriş çıkış birimleri evet olabilir. Başka zafer.
+
+78
+00:13:21,579 --> 00:13:23,979
+Hocam bir de güç kaynağı diye ekleyecektim ama.
+
+79
+00:13:24,219 --> 00:13:28,440
+Yani onun varlığından şüphe yok yani tamam o da olur.
+
+80
+00:13:28,440 --> 00:13:33,640
+Şimdi arkadaşlar bir bilgisayar sisteminde olması gereken 3 tane temel birim şudur.
+
+81
+00:13:34,500 --> 00:13:36,719
+İşlem birimi olacak buna CPU diyoruz.
+
+82
+00:13:38,839 --> 00:13:47,739
+Hafıza birimi dediğim birinci hafıza CPU'nun doğrudan veri alabileceği temin edebileceği main memory.
+
+83
+00:13:52,820 --> 00:14:00,419
+Bu grafik tablette biraz zor yazıyorum ama buna başka bir çözüm bulacağım. İnşallah biraz daha güzel yazı yazabilir duruma geleceğim.
+
+84
+00:14:00,419 --> 00:14:13,619
+Şimdi bununla aradaki haberleşmeyi ve veri transferini sağlayan bas yapısı. Hatta bu bas yapıları üç tane. Şöyle diyelim.
+
+85
+00:14:14,619 --> 00:14:18,820
+Dördüncü bir yapı temel bilgisayar sisteminde olması gerekli değil.
+
+86
+00:14:18,820 --> 00:14:32,279
+4. yapıya biraz önce bir arkadaşımız Mahmut'ta zannediyorum. Giriş çıkış birimleri olarak bir birim verdi. Olabilir. O 4. yapıya genellikle şunu diyoruz. Şu bas üzerinden.
+
+87
+00:14:35,731 --> 00:14:37,731
+Çeşitli birimler.
+
+88
+00:14:42,131 --> 00:15:04,631
+Bunlar giriş birimi olabilir, çıkış birimi olabilir. Buna peripheral devices diyoruz. Şevresel birimler. Genellikle IO, input-output işlemleri için kullanılıyor. Peki bu basa niye üç tane dedik? Buna bakalım.
+
+89
+00:15:04,631 --> 00:15:14,691
+Temel olarak arkadaşlar bir CPU'da yapılan iş programların koşturulmasıdır.
+
+90
+00:15:14,911 --> 00:15:17,532
+Komutların execution yapılmasıdır.
+
+91
+00:15:18,532 --> 00:15:19,571
+CPU ne yapıyormuş?
+
+92
+00:15:21,231 --> 00:15:25,312
+Program koşturur diyelim.
+
+93
+00:15:27,212 --> 00:15:32,731
+Programı çalıştırır da diyebiliriz veya icra eder diyebiliriz de aslında koşturmaktaki maksat
+
+94
+00:15:32,731 --> 00:15:37,731
+program dediğimiz şey böyle satır satır bir şey ya o peş peşe çalışacak.
+
+95
+00:15:37,971 --> 00:15:42,731
+Hatta bazı idelerde programı run etmek için koşan adam simgesi gösterilir.
+
+96
+00:15:43,251 --> 00:15:44,571
+O programın koşturulması.
+
+97
+00:15:45,291 --> 00:15:49,831
+Peki bu program CPU'da nereden gelecekte koşacak?
+
+98
+00:15:50,511 --> 00:15:55,471
+İşte bu main memory dediğimiz ana bellek veya birinci bellek.
+
+99
+00:15:55,471 --> 00:16:11,791
+Daha çok bunu RAM olarak da görebiliriz ama illaki RAM'de doğrudan olmak durumunda değil. Birinci bellek diyeceğiz buna. Program ve data saklar.
+
+100
+00:16:13,171 --> 00:16:18,691
+Koşturacağımız program data da saklanıyor ve bunun özel bir adı var. Şimdi onu soracağım.
+
+101
+00:16:18,691 --> 00:16:21,971
+Ve bu program ayrıca veriler saklıyor, datayı saklıyor.
+
+102
+00:16:22,992 --> 00:16:25,751
+Koşturulacak olan programın özel adını bilen var mı?
+
+103
+00:16:32,628 --> 00:16:41,388
+Her işletim sistemi olan bir kişisel bilgisayarda veya herhangi bir cep telefonu olur, başka bir şey olur.
+
+104
+00:16:41,388 --> 00:16:51,628
+Evet, bu Program in Execution dediğimiz, koşturulacak olan program veya yürürlükte olan program dediğimiz şeyin özel adı prosesidir arkadaşlar.
+
+105
+00:16:51,628 --> 00:16:56,628
+Şimdi CTRL alt del yaptınız, yapalım bakalım.
+
+106
+00:16:56,628 --> 00:17:01,628
+Evet, bu işletim sistemi olan bir işletim sistemi olan bir işletim sistemi olan bir işletim sistemi olan bir işletim sistemi olan bir herhangi bir cep telefonu olur, başka bir şey olur.
+
+107
+00:17:01,628 --> 00:17:31,607
+Altyazı M.
+
+108
+00:17:00,179 --> 00:17:06,779
+Bunu yapınca şurada bakın bir sürü programların adı var. Bir de şurada bir ID var.
+
+109
+00:17:06,779 --> 00:17:13,979
+Şimdi çalışan bir program proses halinde adlandırılıyor, proses olarak adlandırılıyor. İkisi birbirinden farklı şeyler.
+
+110
+00:17:13,979 --> 00:17:21,780
+Program bizim anladığımız şey, içinde kod yazdık, işte for döngüsü, while döngüsü bir şeyler var. Onu biz anlıyoruz, bilgisayar anlamaz.
+
+111
+00:17:21,780 --> 00:17:29,579
+Birazdan nasıl anlayacağına geleceğiz. Bunu birkaç adımda anlayacağı dile dönüştürdük ve çalışabilir hale getirdik.
+
+112
+00:17:29,579 --> 00:17:37,720
+İster üzerine gittiniz, çift tıkladınız, çalıştırdınız, isterseniz komut satırından adını yazdınız ve bu ne oldu? Proses haline geldi.
+
+113
+00:17:37,720 --> 00:17:45,720
+Proses haline gelmesiyle beraber bu programın çalıştırılabilir halinin bir örneği belleğe yükleniyor.
+
+114
+00:17:46,779 --> 00:17:54,220
+İşte bu bellekte bir yer kaplıyor, bunun kendine ait dataları var ve işte program kodları var.
+
+115
+00:17:54,219 --> 00:18:02,139
+Sonra her bir program kodu buradan satır satır birinci satırdan itibaren tek tek CPU'ya getiriliyor.
+
+116
+00:18:02,339 --> 00:18:06,499
+CPU'da bazı proseslerden, işlemlerden geçiriliyor ve program koşturuluyor.
+
+117
+00:18:07,339 --> 00:18:11,359
+Bu getirme aşamasında bu bus'ı kullanıyoruz.
+
+118
+00:18:11,359 --> 00:18:21,359
+Buradaki bus'ı arkadaşlar adres, bus, data bus, üçüncüsüne ne bilen var mı?
+
+119
+00:18:25,236 --> 00:18:32,435
+Üçüncüyü, geçen dönem görmediniz mi? Veya unuttunuz. Control-Bas.
+
+120
+00:18:35,036 --> 00:18:44,435
+Bende simülatör vardı, onu bulabilirsem size paylaşa bir örnek olarak gösteririm. Birazdan ara verdiğimizde bulurum herhalde.
+
+121
+00:18:44,435 --> 00:18:47,855
+Temel olarak 3 tane bus yapımız vardır arkadaşlar.
+
+122
+00:18:48,075 --> 00:18:55,795
+Bu çok karşılaşacağınız ileride, mülakatlarda vs. veya bazı sınavlarda sorulacak bir sorudur.
+
+123
+00:18:56,635 --> 00:18:59,355
+Bilgisayar sisteminde temelde kaç rejit bus vardır?
+
+124
+00:18:59,355 --> 00:19:01,195
+Peki bunların görevleri ne?
+
+125
+00:19:02,096 --> 00:19:05,416
+Şimdi diyor ki CPU, ben bir komut işleyeceğim.
+
+126
+00:19:06,155 --> 00:19:09,515
+Bu işleyeceğim komutun belleklik adresini biliyorum.
+
+127
+00:19:09,515 --> 00:19:16,115
+Bunun için işte program counter ve instruction register dediğimiz bazı özel registerlar var.
+
+128
+00:19:16,795 --> 00:19:21,395
+Program counter diyor ki git bir nolu adresteki veriyi getir.
+
+129
+00:19:21,575 --> 00:19:25,835
+Yani birinci satırdaki komut bir nolu adreste takılarsın.
+
+130
+00:19:26,695 --> 00:19:30,395
+Bu getirilecek olan adresin bilgisini tutuyor.
+
+131
+00:19:31,575 --> 00:19:36,435
+Yani instruction adresinin hangi nerede bulunduğunu söylüyor bize.
+
+132
+00:19:36,435 --> 00:19:44,335
+Sonra bu kontrol bas gidiyor bellekten bir okuma yapacağını söylüyor.
+
+133
+00:19:45,015 --> 00:19:46,555
+Yani diyor ki bellekten bir şey okuyacağım.
+
+134
+00:19:46,775 --> 00:19:48,255
+Okuyacağımız şeyin ne olduğu önemli değil.
+
+135
+00:19:48,375 --> 00:19:52,795
+Ama burada biz işlemcinin direktifi gereği bir komut okuyacağız.
+
+136
+00:19:53,475 --> 00:19:57,335
+Gidiyoruz adres basın gösterdiği yerden bir okuma işlemi yapıyoruz.
+
+137
+00:19:58,055 --> 00:20:04,275
+Okuduğumuz veriyi alıp databas üzerinden işlemcinin içerisine getiriyoruz.
+
+138
+00:20:04,276 --> 00:20:09,695
+Çünkü işlemcinin içerisinde sonsuz çok fazla büyük bir hafıza sahip değil.
+
+139
+00:20:10,475 --> 00:20:11,615
+Belli bir kapasitesi var.
+
+140
+00:20:12,435 --> 00:20:14,896
+Bunun için bir yardımcı bellek kullandık.
+
+141
+00:20:15,076 --> 00:20:21,816
+Bu yardımcı bellekten adres basın gösterdiği yerden data bas yoluyla veriyi işlemcinin içerisine getiriyoruz.
+
+142
+00:20:23,055 --> 00:20:24,776
+Demek ki bu bas var bu işe yarıyormuş.
+
+143
+00:20:25,435 --> 00:20:26,536
+İşte komut çalıştı.
+
+144
+00:20:27,616 --> 00:20:29,816
+Ne bileyim x eşittir a çarpı b yazdık.
+
+145
+00:20:29,996 --> 00:20:33,635
+Daha sonra da mesela kabul edelim ki x eşittir x artı bir gibi bir şey var.
+
+146
+00:20:33,635 --> 00:20:37,255
+Şimdi bunun güncel değerinin belleğe yüklenmesi lazım.
+
+147
+00:20:37,795 --> 00:20:38,675
+Belleğe geri gidecek.
+
+148
+00:20:39,415 --> 00:20:39,975
+Yine ne yapıyor?
+
+149
+00:20:40,155 --> 00:20:47,635
+Adres bas üzerinden ve data bas üzerinden bu güncel X verisi gönderilebilir.
+
+150
+00:20:48,555 --> 00:20:49,975
+Yani kaydetmek isteyebiliriz.
+
+151
+00:20:50,615 --> 00:20:51,395
+Bu zaman ne yapıyor?
+
+152
+00:20:51,535 --> 00:20:53,555
+Kontrol bas bir yazma sinyali gönderiyor.
+
+153
+00:20:53,655 --> 00:20:54,795
+Belleğe yazı yazacağız diyor.
+
+154
+00:20:56,435 --> 00:20:58,815
+Yazılacak olan veri data bas üzerinden gidiyor.
+
+155
+00:20:58,815 --> 00:21:03,456
+Hangi adrese yazılacaksa o adres de gidiyor ve bellek üzerinde yazma işlemi gerçekleşiyor.
+
+156
+00:21:03,456 --> 00:21:04,736
+Kabaca bu böyle.
+
+157
+00:21:04,995 --> 00:21:14,596
+İşte bunun detayları bilgisayar donanımı, bilgisayar işte neydi o mikro işlemci derslerinde, belki asemli dersinde bunların daha detaylarını göreceksiniz.
+
+158
+00:21:15,435 --> 00:21:18,075
+Demek ki bus yapısı buna sonra yapıyormuş, bu işi yapıyormuş.
+
+159
+00:21:18,155 --> 00:21:19,036
+Peki geldik.
+
+160
+00:21:20,575 --> 00:21:24,556
+İşlemci burada bir komutu şöyle yapalım.
+
+161
+00:21:25,536 --> 00:21:26,396
+Nasıl işleyecek?
+
+162
+00:21:26,536 --> 00:21:27,836
+Bu bilgi de bize lazım.
+
+163
+00:21:28,696 --> 00:21:30,956
+Dedik ya tamam şu buslar üzerinden veri gelecek.
+
+164
+00:21:31,655 --> 00:21:33,155
+Nasıl işliyor arkadaşlar?
+
+165
+00:21:33,155 --> 00:21:34,875
+Burada aşamalı bir durum var.
+
+166
+00:21:36,155 --> 00:21:38,596
+Bir programı işlemci çalıştıracak.
+
+167
+00:21:40,375 --> 00:21:41,816
+Nasıl olacak?
+
+168
+00:21:47,380 --> 00:21:57,979
+Sesim geliyor değil mi? Bir anda bir sessizlik geliyor hocam. Boşla konuşmayalım. Evet, işlemci bir komuta nasıl? Evet Recep.
+
+169
+00:21:57,979 --> 00:22:10,179
+Bir şansımı deneyeceğim. Program belirge iklendikten sonra ana belirge işlemci counter sıfırlayarak ilk başından başlayacak programın.
+
+170
+00:22:10,179 --> 00:22:17,299
+Sonra her seferinde o şey anlattığınız şekilde komut komut alacak.
+
+171
+00:22:17,439 --> 00:22:25,139
+Çalıştırdıktan sonra işlemcinin kendi içinde her bir komutu bellek üzerindeki değişiklikleri yapabilecek.
+
+172
+00:22:25,279 --> 00:22:27,159
+Sonra kontribüartı öğrenecek.
+
+173
+00:22:27,299 --> 00:22:29,619
+Bunun sonuna gelene kadar aynı işlemi tekrar edecek.
+
+174
+00:22:29,619 --> 00:22:30,060
+Tamam.
+
+175
+00:22:30,319 --> 00:22:36,939
+Şimdi cümlenin içinde dedik ki programı çalıştıracak veya komutu çalıştıracak bir gürültü var.
+
+176
+00:22:36,939 --> 00:23:05,339
+arkadaşlar komutu çalıştıracak kısmını soruyorum ben zaten. Yani o kısmı tamam doğru komut çalışacak işte komut nasıl çalıştırılacak? Veya komut nasıl execute edilecek? Bu execution'un doğrudan çevirisi arkadaşlar icra yani bir şeyin gereğini yerine getirmek diye çevirebiliriz tür şeye. Bunu soruyorum. Burada nasıl bir işlem adımı olabilir?
+
+177
+00:23:06,939 --> 00:23:09,639
+Evet Zafer.
+
+178
+00:23:11,139 --> 00:23:15,699
+Hocam yazılan kodu CPU compile etmesi mi gerekiyor ilk önce?
+
+179
+00:23:15,939 --> 00:23:28,979
+CPU compile etmez. Compiler compile eder, program haline dönüştürür, şey, proses haline dönüştürür. Pardon, compiler compile eder, executable hale getirir.
+
+180
+00:23:28,979 --> 00:23:32,960
+Bu executable hali biz çalıştırdığımızda program proses haline gelir.
+
+181
+00:23:33,920 --> 00:23:37,119
+CPU o prosesi tek tek icra edecek, yürütecek.
+
+182
+00:23:38,320 --> 00:23:40,280
+Hani daha o da olmadı.
+
+183
+00:23:40,579 --> 00:23:43,199
+Compiler burada işimize yaramaz CPU'da.
+
+184
+00:23:43,899 --> 00:23:44,420
+Evet Recep?
+
+185
+00:23:45,799 --> 00:23:53,079
+Beylekten geldikten sonra CPU'daki rejisterlerin birini yaştıktan sonra CPU'larda kontrol birimleri vardı.
+
+186
+00:23:53,079 --> 00:23:59,079
+Oraya girdikten sonra işlemci önce ne yapacağına karar verebilir diye düşündüm.
+
+187
+00:23:59,579 --> 00:24:04,079
+Eğer input output ile ilgili bir işlem varsa onu geri işlem yapıp geri gönderir.
+
+188
+00:24:04,079 --> 00:24:11,540
+Aritmetik bir işlem gerekirse aritmetik birimi yönlendirip sonra oradan geri alıp işleyebilir diye düşündüm.
+
+189
+00:24:11,820 --> 00:24:14,899
+Yani biraz daha yakın bir cevap.
+
+190
+00:24:16,419 --> 00:24:17,100
+Ama tam değil.
+
+191
+00:24:18,339 --> 00:24:19,939
+Şimdi evet var mı başka?
+
+192
+00:24:20,600 --> 00:24:22,540
+Hocam benim var da emin değilim tam.
+
+193
+00:24:23,079 --> 00:24:27,779
+Olabilir arkadaşlar emin olmasanız da hani söyleyin bir çeşitlilik sağlayalım.
+
+194
+00:24:28,180 --> 00:24:28,359
+Tamam.
+
+195
+00:24:28,740 --> 00:24:31,439
+Page store execution adımları olabilir mi?
+
+196
+00:24:32,299 --> 00:24:34,939
+Evet bak biraz bir kelime yakaladık.
+
+197
+00:24:36,059 --> 00:24:36,339
+Güzel.
+
+198
+00:24:37,040 --> 00:24:38,919
+Onun sadece sırasını yalnız söyledim.
+
+199
+00:24:39,719 --> 00:24:40,460
+Güzel.
+
+200
+00:24:40,460 --> 00:24:48,299
+Şimdi arkadaşlar proses belleğe yüklendikten sonra her bir komutu öncelikle ne yapmamız lazım?
+
+201
+00:24:48,779 --> 00:24:52,519
+İşlemci de işletebilmek için gidip getirmemiz lazım.
+
+202
+00:24:52,519 --> 00:24:54,519
+Bakın getirmek değil gidip getirmek.
+
+203
+00:24:54,799 --> 00:24:58,639
+Çünkü gideceğimiz yeri bilmemiz gerekiyor.
+
+204
+00:24:58,760 --> 00:25:07,719
+Gideceğimiz yeri burada işte adres bus üzerinden işlemci içerisindeki bir register program counter genellikle bunu bize söylüyor.
+
+205
+00:25:09,159 --> 00:25:11,279
+Gidip getirmek onun için burada önemli.
+
+206
+00:25:11,460 --> 00:25:12,439
+Bu işlemin adı fetch.
+
+207
+00:25:14,159 --> 00:25:15,839
+Fetch instruction diyelim.
+
+208
+00:25:17,999 --> 00:25:19,639
+Gidip getirmek dikkat edelim.
+
+209
+00:25:19,639 --> 00:25:25,259
+Yani gittik, adres bas üzerinden yeri bulduk, data bas üzerinden komutu getirdik.
+
+210
+00:25:25,419 --> 00:25:29,359
+Getirdiğimiz komut sıfır ve birlerden oluşuyor değil mi?
+
+211
+00:25:30,279 --> 00:25:31,100
+Bir şey var.
+
+212
+00:25:32,119 --> 00:25:36,719
+Bunun, çünkü bir C programı değerlendi.
+
+213
+00:25:36,899 --> 00:25:37,719
+Neye göre değerlendi?
+
+214
+00:25:37,820 --> 00:25:41,859
+İşletim sistemine göre, işlemcideki makine diline göre değerlendi.
+
+215
+00:25:42,619 --> 00:25:44,919
+Bu komutun ne olduğunu anlaması lazım işlemcinin.
+
+216
+00:25:46,079 --> 00:25:46,659
+Ne diyeceğiz?
+
+217
+00:25:47,539 --> 00:26:06,539
+decode, instruction diyeceğiz. Yani 0 ve 1'lerim var. Böyle bir şey. Buradan add midir, subtraction midir, nedir? Bunu çözümlemek gerekiyor, decode etmek gerekiyor. Bir anlamda anlaması gerekiyor bunu.
+
+218
+00:26:06,539 --> 00:26:21,900
+Bunun işte şuna ne diyoruz biz? Makine kodu veya opcode diyoruz, operation code. Bu operation kodun içinde add-sub gibi bir yapılacak olan işleme ait bilgiler var. Bir de operantlar var.
+
+219
+00:26:21,900 --> 00:26:40,819
+Yani operation code şu diyelim add, sub gibi bir şey artı operantlar. Operant ne? İşte ne ile ne toplanacak, nereye yazılacak bunun gibi operatörlerin veya operasyonların yardımcı elemanları, verileri daha çok içeriyor.
+
+220
+00:26:41,199 --> 00:26:47,880
+Bunu dekot ettikten sonra artık ne yapacağını işlemci anladı. Toplama mı yapacak? Artık bu görevi yerine getiriyor.
+
+221
+00:26:47,880 --> 00:26:50,179
+Execute instruction.
+
+222
+00:26:51,179 --> 00:27:11,440
+Bu görevi yerine getirdikten sonra diyor ki sonuç yazmak gerekiyorsa işte write back işlemi bir geriye yazma işlemi belleğe bir şeyler yazılacaksa yazılıyor ve bir sonraki komutun getirilmesi için tekrar fresh instruction bu cycle devam ediyor.
+
+223
+00:27:11,440 --> 00:27:28,179
+Ta ki program halt edene kadar yani program beklenmedik bir şekilde sonlanırsa veya program termination dediğimiz programın sonuna gelirsek o zaman bitebilir bu döngü.
+
+224
+00:27:29,720 --> 00:27:32,580
+Evet burayı anladık herhalde. Var mı burayla alakalı bir soru?
+
+225
+00:27:36,627 --> 00:27:54,827
+Şimdi, getirme konusu şurada basın yaptığı bir işlem. Decode etme konusunu kısmen söyledik. Dedik ki işlemci içinde bir çözümleme yapılacak. Execution işlemi, Lojik Devreler dersinde anlatılacak detaylı olarak. Yani toplama işlemi nasıl yapılır?
+
+226
+00:27:54,827 --> 00:28:00,627
+Kısmen burada belki biraz bahsedeceğiz de, bunun daha detayları toplama toplama devreleriyle yapılıyor.
+
+227
+00:28:00,627 --> 00:28:07,007
+Bunun detayına var. Rightback zaten direkt getirmenin biraz daha tam tersi gibi çalışıyor.
+
+228
+00:28:07,767 --> 00:28:13,107
+Peki arkadaşlar burada bu döngü içerisinde en temelde bu işlemler nasıl oluyor?
+
+229
+00:28:13,107 --> 00:28:20,708
+Şimdi CPU dediğimiz yarı iletkenlerden oluşan bir şey, cihaz, küçük bir ayıbıd.
+
+230
+00:28:21,968 --> 00:28:27,388
+Yarı iletken. Burada sıfır ve birler diye bir şeyler söylenmiş.
+
+231
+00:28:28,348 --> 00:28:30,468
+Aslında her şey elektriksel işaretlerle oluyor.
+
+232
+00:28:30,627 --> 00:28:43,248
+Ve bilgi bir şekilde kodlanmış. Bakın dedik ya şu 0 ve 1'lerin karşılıkları var. Peki bu bilgi niye 0 ve 1'lerle kodlanmış? Buradan birazcık ilerleyelim.
+
+233
+00:28:44,467 --> 00:28:51,568
+Bilginin veya verinin kodlanması.
+
+234
+00:28:55,923 --> 00:29:12,524
+Bilgisayar sistemi normalde elektrikle çalışıyor. Yani kullandığımız bilgisayarla da çoğunlukla 0 ile 12 volt veya 0 ile 5 volt dediğimiz aralıkta bir elektriksel seviye var, voltaj var.
+
+235
+00:29:12,524 --> 00:29:21,723
+Ama biz bunu kullanmak yerine, yani bir 0 ile 12 volt arasındaki değerleri kullanmak yerine ne yapıyoruz?
+
+236
+00:29:21,723 --> 00:29:24,983
+0 veya 1 dediğimiz şeyi kullanıyoruz.
+
+237
+00:29:25,663 --> 00:29:26,563
+Şunu şöyle yapalım.
+
+238
+00:29:27,183 --> 00:29:29,383
+Bu 0, 0 volta karşılık geliyor.
+
+239
+00:29:29,604 --> 00:29:34,303
+Bu da eğer 5 voltsa 5 volta, 12 voltsa 12 volta karşılık geliyor.
+
+240
+00:29:34,903 --> 00:29:37,284
+Aradaki değerleri kullanamıyoruz veya kullanmıyoruz.
+
+241
+00:29:38,423 --> 00:29:41,923
+Öncelikle neden şu durumdan bu duruma bir geçiş yapılmış?
+
+242
+00:29:42,023 --> 00:29:43,104
+Bunu bir öğrenmek lazım.
+
+243
+00:29:44,023 --> 00:29:45,303
+Nedir sizce? Sebep ne olabilir?
+
+244
+00:29:45,303 --> 00:29:52,983
+Hocam eş zamanlı olabilmesi için 0 ve 1 kullanmak çok daha mantıklı oluyor.
+
+245
+00:29:52,983 --> 00:30:06,303
+Çünkü yani birden fazla seviye olduğunda birden mesela diyelim 10'a kadar olsun seviye, birden 8'e çıkmasıyla 8'den 5'e düşmesi elektrik seviyesi olduğu için arada bir zaman farkı oluyor.
+
+246
+00:30:06,563 --> 00:30:07,583
+Tamam, güzel.
+
+247
+00:30:07,583 --> 00:30:11,663
+Bir de etkilerden etkilenmemesi için manyetik alan olur.
+
+248
+00:30:11,663 --> 00:30:22,843
+elektrik alandan etkilenip de daha fazla seviye olursa değişim az olduğunda bile sıfırdan bire ya da birden ikiye geçme gibi bir olay olabilir.
+
+249
+00:30:23,523 --> 00:30:24,543
+Tamam, güzel.
+
+250
+00:30:24,563 --> 00:30:25,523
+Bu da sıkıntı yaratır.
+
+251
+00:30:25,863 --> 00:30:31,303
+Tamam, güzel. Teşekkür ederim. Emir, sizden alabiliriz.
+
+252
+00:30:32,483 --> 00:30:37,463
+Hocam ben de genel olarak aynı şeyleri söyleyecektim. Hassaslığı azaltmak için.
+
+253
+00:30:37,464 --> 00:30:40,644
+Hassaslığı arttırmak için değil mi?
+
+254
+00:30:41,203 --> 00:30:41,843
+Hassasiyeti.
+
+255
+00:30:43,023 --> 00:30:46,104
+Ne kadar hassas olursa o kadar doğru olacak çünkü.
+
+256
+00:30:46,964 --> 00:30:48,604
+Yani hatayı azaltmamız gerekiyor.
+
+257
+00:30:48,883 --> 00:30:50,504
+Hassasiyeti arttırmamız gerekiyor.
+
+258
+00:30:50,743 --> 00:30:51,604
+Evet, doğru.
+
+259
+00:30:52,144 --> 00:30:54,483
+Tamam. Başka eklemek isteyen Atakan?
+
+260
+00:30:55,684 --> 00:30:56,944
+Hocam ben şöyle düşündüm.
+
+261
+00:30:57,044 --> 00:31:02,864
+Arada bir mesela 7 değeri de olsaydı, o 1 olsa 12 değeri 2 olsa sıfırdan 12'ye geçiyorken
+
+262
+00:31:02,864 --> 00:31:06,664
+bir yerde 7'nin üstünden de geçmek zorunda kalacakmış gibi düşündüm.
+
+263
+00:31:06,663 --> 00:31:07,943
+Ama neden öyle düşünün bilmiyorum.
+
+264
+00:31:08,823 --> 00:31:09,083
+Tamam.
+
+265
+00:31:09,083 --> 00:31:10,623
+Yanlış bilgiye çıkabilirim.
+
+266
+00:31:10,623 --> 00:31:15,103
+Şimdi şöyle bir aramızda bir protokol yapalım arkadaşlar.
+
+267
+00:31:15,583 --> 00:31:16,903
+Haberleşme protokolü olsun.
+
+268
+00:31:17,263 --> 00:31:26,223
+Diyelim ki ben 0 volt, 1 volt, 2 volt veya arada buçuklu voltları da ekleyeceğiz işte 12 volta kadar.
+
+269
+00:31:28,523 --> 00:31:33,323
+Size işte bir kablo aracılığıyla elinizde bir volt metre veya amper metre var.
+
+270
+00:31:33,323 --> 00:31:37,483
+Bir ucunda birisi var, diğer ucunda bir arkadaş var.
+
+271
+00:31:38,183 --> 00:31:42,703
+İşte bunu gönderirsem A gönderdim, bunu gönderirsem B gönderdim, bunu gönderirsem C gönderdim.
+
+272
+00:31:42,763 --> 00:31:43,663
+Böyle seviyeler.
+
+273
+00:31:43,803 --> 00:31:49,683
+Aradaki seviyeleri de eklersek işte 0.5'leri daha fazla veri gönderebileceğiz, kodlayabileceğiz.
+
+274
+00:31:50,943 --> 00:31:52,883
+Bu şekilde bir sözleşme yaptık aramızda.
+
+275
+00:31:52,983 --> 00:31:58,144
+Aslında bir anlamda gizli bir haberleşme sistemi kurduk iki kişi arasında.
+
+276
+00:31:58,144 --> 00:32:13,364
+Şimdi buradan bir veri gönderen bir arkadaş. Mesela B gönderdiğinde karşıda B'yi okuma olasılığı nedir? Yani bir volt ölçmesi lazım değil mi? Yani bunun B alması için bir volt gibi bir şey ölçmesi lazım bu protokole göre.
+
+277
+00:32:13,364 --> 00:32:33,224
+Şimdi bizim orta bahçeyi biliyor musunuz? Benim şu an arka planımda şöyle çekileyim. Bu orta bahçenin herhalde şey kısmı yemekhane tarafı bir de bunun kapının olduğu kısmı düşün. Kapının olduğu kısımda bir arkadaş ben de orta bahçe yemekhane tarafında duruyorum.
+
+278
+00:32:33,223 --> 00:32:53,303
+Diyeceğim ki işte bu parmağımı kaldırsam bir anla, bunu kaldırsam iki anla. O kadar uzak mesafeden hangi parmağımı kaldırdığımı anlayabilir mi bu arkadaş? Anlayamaz. Yani çünkü gözün algılayacağı mesafe tam anlamıyla. Algılayacağı mesafe biraz yetersiz. Kayıp olur değil mi arkadaşlar? Aynen burada da.
+
+279
+00:32:54,067 --> 00:33:14,567
+İletken üzerindeki dirençten kaynaklı olarak buradan gönderilen bir voltaj, belli miktar ısı ya da başka şeylere maruz kaldığından dolayı 1 volt okuyamayacak. Belki 0.5 volt okuyacak. Ben o arada 0.5 volt diye bir şey de kodladıysam yanlış bir mesaj görecek.
+
+280
+00:33:14,567 --> 00:33:28,507
+Halbuki onun yerine şu aradaki mesafede deseydim ki elim havadaysa şunu algıla işte A algıla işte aşağıdaysa B algıla. Ne bileyim üzerimde kırmızı varsa bir şey algıla yoksa başka bir şey algıla.
+
+281
+00:33:28,507 --> 00:33:43,788
+Hani bir şeyin varlığı veya yokluğuyla bunu temsil etmek ve bunu çeşitlendirmek daha doğru kodlama yapmayı sağlıyor. Çünkü kayıp burada inanılmaz yanlış yönlendirmelere sebep olabilir.
+
+282
+00:33:44,567 --> 00:34:01,687
+İşte bu verinin analog sistemdeki kodlanmasında ortaya çıkan bozucu etkilerden dolayı bir dijital kodlama sistemi ortaya atılmış.
+
+283
+00:34:02,687 --> 00:34:05,887
+Analog devirlerde kodlama var mı? Var analog dünyada.
+
+284
+00:34:06,547 --> 00:34:10,847
+Ama biz bilgisayarlarda bunu henüz daha tam olarak kullanamıyoruz.
+
+285
+00:34:10,847 --> 00:34:12,108
+Çünkü bir sürü problem var.
+
+286
+00:34:12,108 --> 00:34:18,968
+Onun için dijital sistem diyor ki elektriğin varlığına veya yokluğuna. Bu varlık ve yokluk şudur.
+
+287
+00:34:18,968 --> 00:34:19,968
+Çizemedik.
+
+288
+00:34:26,547 --> 00:34:51,547
+bir işte volt değeri olsun. Burası sıfır volt, burası işte on iki volt diyelim. Belli bir noktaya kadar ölçebildiğimiz volt değerleri sıfır bilgisine karşılık gelecek, binary olarak. Belli bir noktadan sonraki ölçebildiğimiz volt değerleri bir bilgisine, binary bir bilgisine karşılık gelecek diyoruz.
+
+289
+00:34:51,547 --> 00:34:55,547
+İşte buraya mesela 7 volt dedik.
+
+290
+00:34:56,167 --> 00:34:57,308
+Buraya da 3 volt dedik.
+
+291
+00:34:57,767 --> 00:34:59,527
+3 volta kadar bir değer gelirse.
+
+292
+00:34:59,527 --> 00:35:04,268
+Çünkü gönderdiğimiz bir 12 volt doğrudan karşı tarafa gitmeyecek.
+
+293
+00:35:04,347 --> 00:35:06,128
+Bir kayıpla gidecek şey üzerine.
+
+294
+00:35:06,268 --> 00:35:08,207
+Bu bilgisayar sisteminde de öyle.
+
+295
+00:35:08,768 --> 00:35:13,967
+İletkenin direnci ne kadar fazlaysa o kayıp orada fazla geliyor.
+
+296
+00:35:14,047 --> 00:35:15,327
+Çünkü ısıyay bir sürü şey gidiyor.
+
+297
+00:35:15,908 --> 00:35:16,547
+Güç kaybı var.
+
+298
+00:35:16,547 --> 00:35:19,108
+belli bir hassasiyetle
+
+299
+00:35:19,108 --> 00:35:22,287
+demek ki burada malzeme bilgisi de önemli
+
+300
+00:35:22,287 --> 00:35:24,647
+gönderilen bir veri
+
+301
+00:35:24,647 --> 00:35:27,128
+7 volta kadarsa
+
+302
+00:35:27,128 --> 00:35:29,428
+bu 1 göndermiş diye algılanacak
+
+303
+00:35:29,428 --> 00:35:32,147
+işte gönderilen bir şey
+
+304
+00:35:32,147 --> 00:35:34,588
+3 volta kadar bir şeyse
+
+305
+00:35:34,588 --> 00:35:36,068
+bu 0 olarak algılanacak
+
+306
+00:35:36,068 --> 00:35:37,427
+mesela 4 volt 5 olsa
+
+307
+00:35:37,427 --> 00:35:38,988
+burada bir kararsızlık durumu olacak
+
+308
+00:35:38,988 --> 00:35:41,628
+buna kararsızlık kuşağı diyoruz
+
+309
+00:35:41,628 --> 00:35:44,867
+bu aranın ne kadar kısa olması
+
+310
+00:35:44,867 --> 00:35:46,488
+ne kadar kısaysa o kadar iyi
+
+311
+00:35:46,487 --> 00:36:06,607
+gibi şeyler, yorumlar. Bunları lojik dersinde daha detaylı göreceksiniz. Demek ki bir yerde elektriğin varlığına veya yokluğuna göre ben bazı anlamlar saklayabiliyorum. Şimdi bu varlık ve yokluğu en güzel eden malzeme, malzeme önemli dedik ya, yarı iletkenler.
+
+312
+00:36:08,287 --> 00:36:12,007
+Yarı şöyle yapalım. Evet Muhammed sorabilirsin.
+
+313
+00:36:12,007 --> 00:36:18,768
+C, belki biraz konudan bağımsız ama ben kuantum programlamaya giriş diye bir kurs alıyorum şu anda.
+
+314
+00:36:18,768 --> 00:36:19,128
+Evet.
+
+315
+00:36:19,588 --> 00:36:29,467
+Onda işte kuantum bilgisayarların mimarisine anlatıldığında bir şeyin hem 1 veya hem 0 olma ihtimalinden de kaynaklanarak bir programda bir mimari yaptıklarını söylüyorlar.
+
+316
+00:36:29,807 --> 00:36:31,628
+Ama bu voltmuzca bağlı bir şey değil herhalde.
+
+317
+00:36:31,728 --> 00:36:32,707
+Oradaki tamamen olasılık.
+
+318
+00:36:33,527 --> 00:36:34,067
+Farklı.
+
+319
+00:36:35,507 --> 00:36:37,068
+Yani güzel bir kurs.
+
+320
+00:36:37,167 --> 00:36:38,208
+Ben de almayı düşündüm.
+
+321
+00:36:38,287 --> 00:36:39,227
+Bilmiyorum nereden alıyorsun?
+
+322
+00:36:39,227 --> 00:36:43,047
+İleride gelecekte önümüzde onları bekliyoruz.
+
+323
+00:36:43,847 --> 00:36:49,847
+Çünkü günümüz bilgisayarlarında bu laf üzerine yani bundan sen söylemeden önce ben başka bir şey söyleyecektim.
+
+324
+00:36:50,647 --> 00:36:51,387
+İyi oldu söyledin.
+
+325
+00:36:52,767 --> 00:36:57,547
+Elektriğin varlığını veya yokluğunu saklamak da tam bir çözüm değil.
+
+326
+00:36:57,767 --> 00:37:00,927
+Hız açısından yeteri bir yani bizi doyuma ulaştırmadı.
+
+327
+00:37:01,947 --> 00:37:04,227
+Hala unsatisfied diyebileceğimiz durumdayız.
+
+328
+00:37:05,107 --> 00:37:05,267
+Niye?
+
+329
+00:37:05,268 --> 00:37:11,068
+Çünkü bir elektriğin 0 volttan 12 volta çıkabilmesi belli bir zaman kaybı.
+
+330
+00:37:12,527 --> 00:37:15,068
+Bu sadece biz bir bit kodlamıyoruz.
+
+331
+00:37:15,428 --> 00:37:24,107
+Yani milyarlarca bit kodlanıyor veya trilyonlarca bit işte petabyte, zotabyte gibi verileri düşünürsek bir sürü veri var.
+
+332
+00:37:25,447 --> 00:37:31,988
+Bu her birinin belli bir işte 5 volta 12 volta çıkartılması belli bir zaman alıyor.
+
+333
+00:37:31,988 --> 00:37:32,887
+Onun için bu bir problem.
+
+334
+00:37:32,887 --> 00:37:36,227
+Hatta neden 12 volttan 5 volta düşürdü?
+
+335
+00:37:36,327 --> 00:37:43,427
+Çünkü 12 volta çıkması için gerektiği süre ile 5 volta çıkmak için gerektiği süre daha farklıdır.
+
+336
+00:37:43,507 --> 00:37:47,327
+5 volt daha uygun bir sürede, daha az bir sürede bunu sağlar.
+
+337
+00:37:47,927 --> 00:37:49,247
+Onun için 5 volt kullanılıyor.
+
+338
+00:37:49,927 --> 00:37:55,587
+Şimdi buradaki bu işlemi yapacak en güzel malzemeler yer iletken malzemeler.
+
+339
+00:37:55,587 --> 00:37:58,327
+İşte en çok bilinen silisyum ve germanyum.
+
+340
+00:37:58,327 --> 00:38:12,727
+Şu an silisyum ve germanyum. Germanyum'un simgesini hatırlamıyorum. GE olabilir. Onun için tam yazdım. Bu yarı rektan fiziği dersinde bunun detaylarını biraz daha böyle fizikçi gözüyle anlatılıyor.
+
+341
+00:38:12,727 --> 00:38:15,848
+Bu ne yapıyor? Bunlar da arkadaşlar.
+
+342
+00:38:17,012 --> 00:38:24,012
+Bir bariyer voltaj diye bir kavram vardır. Orada daha detaylı anlatılır. Ben özet olarak sunayım. Çok da bildiğimden değil de.
+
+343
+00:38:24,012 --> 00:38:37,012
+Bariyer voltaj uygulanana kadar bu bir kapalı bir devre, yalıtkan haldedir. O bariyer voltajı geçtiğiniz zaman, malzemeye uyguladığınız şeyde ne olur? O iletken hale gelir.
+
+344
+00:38:37,012 --> 00:38:45,971
+Teorik olarak derler ki mesela bir tahta. Tahtanın bariyer voltajı çok fazla olduğu için elektronları harekete geçirmek için gerekli voltaj gerilim.
+
+345
+00:38:45,971 --> 00:38:56,291
+Ne olur tahta hemen hemen hiç elektriği iletmez yalıt. Ama çok yüksek bir gerilim verilirse teorik olarak iletimi sağlanacağı söylenir.
+
+346
+00:38:56,412 --> 00:39:04,791
+Bunu fizikçiler daha doğrusunu söylerler. Ben hani böyle bir sokak ağızda demeyelim de okuduğum şeylerden bildiğim kadarını söylemiş olayım.
+
+347
+00:39:04,791 --> 00:39:16,671
+Şimdi bunlar bu malzemeler bariyer voltajı işte birinde 0.7 idi galiba bunda da 0.3 olacaktı yanlış hatırlamıyorsam gibi bir voltaj değeriyle harekete geçiriyor.
+
+348
+00:39:17,311 --> 00:39:23,012
+Ve bunlardan üretilecek elektronik devre elemanları ile biz veriyi kodluyoruz.
+
+349
+00:39:23,012 --> 00:39:30,851
+Önceden yer iletkenler olmadan kondansatörlerle verinin saklanması mümkündü.
+
+350
+00:39:30,851 --> 00:39:34,911
+Kondansatörü biliyorsunuz içerisinde işte veriyi depolayan bir devre elemanı.
+
+351
+00:39:35,751 --> 00:39:39,211
+Ne yapıyorsunuz? Dolduruyorsunuz, şarj ediyorsunuz, belli bir miktarda deşarj oluyor.
+
+352
+00:39:40,091 --> 00:39:45,791
+Eğer kondansatörün içerisinden ölçtüğünüz voltaj değeri belli bir seviyenin üzerindeyse şurada olduğu gibi,
+
+353
+00:39:46,512 --> 00:39:51,031
+işte burada bir vardır, belli bir seviyenin altındaysa sıfır vardır diye şey yaparsınız.
+
+354
+00:39:51,031 --> 00:39:54,751
+Çünkü belli bir deşarj gerçekleşmiştir, işte 3 voltun altına inmiştir.
+
+355
+00:39:55,291 --> 00:39:57,991
+Kondansatörü de bir veya sıfır diye bunu kodlayabilirsiniz.
+
+356
+00:39:57,991 --> 00:40:06,011
+Fakat kondansatörlerin kapasitesinin fazla olması bazı olumsuzluklardan dolayı kondansatörler tam anlamıyla işe yaramıyorlar.
+
+357
+00:40:06,151 --> 00:40:10,551
+Yarı iletken malzemeler burada biraz daha faydalı malzemeler.
+
+358
+00:40:11,431 --> 00:40:15,351
+Bunlardan üretilen en çok kullanılan elemanlardan bir tanesi diyot.
+
+359
+00:40:16,012 --> 00:40:19,571
+Diyot nedir? Belki lisede gördüğünüz şöyle bir simgesi var.
+
+360
+00:40:20,391 --> 00:40:22,531
+Bu ucuna bir voltaj uyguluyorsunuz gerilim.
+
+361
+00:40:22,731 --> 00:40:24,151
+Bu ucunda da bir gerilim var.
+
+362
+00:40:24,151 --> 00:40:47,532
+Burada kullanılan malzemenin bariyer voltajından fazlaysa, fazla ise bu iletken hale geliyor.
+
+363
+00:40:47,532 --> 00:40:52,911
+Eğer daha küçükse, yeterli bir gerilim oluşmamışsa yalıtkan halde.
+
+364
+00:40:52,911 --> 00:41:02,751
+O zaman biz bu diyot üzerinden akım geçiyorsa, herhangi bir şey varsa bunun bir olacağını, akım geçmiyorsa sıfır olacağını düşünebiliriz.
+
+365
+00:41:04,191 --> 00:41:10,751
+Bu diyotun tabii yetersiz olduğu durumlarda transistör var.
+
+366
+00:41:11,331 --> 00:41:12,911
+Transistör de genelde şöyle.
+
+367
+00:41:15,071 --> 00:41:20,891
+Transistör aslında bir neye benzer? Var mı buna bir analoji yapacak benzerlik?
+
+368
+00:41:20,911 --> 00:41:21,891
+Böyle değil miydi hocam?
+
+369
+00:41:22,911 --> 00:41:23,171
+Böyle.
+
+370
+00:41:24,372 --> 00:41:25,151
+Olabilir.
+
+371
+00:41:25,751 --> 00:41:26,651
+Daha böyle güncel.
+
+372
+00:41:27,791 --> 00:41:31,051
+Hani evimizde elektriksel bir iç.
+
+373
+00:41:32,191 --> 00:41:33,411
+O da olabilir.
+
+374
+00:41:33,831 --> 00:41:37,891
+Yok ben biraz daha şey, yani elektriksel olmayan başka bir örnek.
+
+375
+00:41:41,071 --> 00:41:42,251
+Musluk arkadaşlar.
+
+376
+00:41:43,311 --> 00:41:43,991
+Ne yapıyorsunuz?
+
+377
+00:41:44,271 --> 00:41:48,531
+Musluğu sonuna kadar sıkarsanız transistör, su akıtmıyor değil mi?
+
+378
+00:41:48,591 --> 00:41:49,471
+Akımı sıfırlıyorsunuz.
+
+379
+00:41:49,531 --> 00:41:51,251
+Direnci sonsuz yapıyorsunuz neredeyse.
+
+380
+00:41:51,251 --> 00:41:53,091
+Transitor de bunun gibidir.
+
+381
+00:41:53,684 --> 00:42:12,684
+Buradaki bir gerilim bilgisini ayarlayarak, direnç bilgisini ayarlayarak akımı sıfırlayan veya akımı çok artıran ve düşük bir gerilimden, yüksek gerilimden üretmeyi sağlayan ama yine yarı iletken malzemelerden oluşturulan ve bilginin 0 ve 1 olarak kodlanmasını sağlayan bir devre iletim.
+
+382
+00:42:12,684 --> 00:42:16,684
+Bunun detaylarına elektronik devreler dersinde giriyorlar zannediyorum.
+
+383
+00:42:16,684 --> 00:42:40,904
+Çok da sevmem, bilmem detaylarını. Bunun emitteri var, base var, kolektörü var. Şurada bir akım geçiyor, buradan bir akım geçiyor, buradan bir akım geçiyor. Bu akımlar arasında ilişkiler var. Orada anlatırlar bunu. Ama bunun yaptığı şey bir musluk gibi. Sonuna kadar sıkarsanız ne yaparsınız? Direnci sonsuz yaparsınız. Akımı sıfır. Yani V eşittir I şarpı R'de.
+
+384
+00:42:40,903 --> 00:43:01,363
+Bunu ben sonsuz yaparsam akım ne olması durumda ne olur? V bölü sonsuz, sayı bölü sonsuz sıfır olacaktır. Eğer direnci sıfırlarsam bu da sonsuz kadar akacaktır. Yani sonuna kadar musluğu açtığınız akabileceği kadar akar. Aradaki değerler de akım kontrolünü sağlamak için yapılıyor.
+
+385
+00:43:01,364 --> 00:43:20,663
+Biz tabi bu işin analog tarafında değiliz yine. Akımın geçip geçmediğini yani bilginin sıfır veya bir olup olmadığını söylüyor. Bu transistörün icadı ile beraber işlemci içerisinde bir sürü mikro transistör bir araya gelerek birbirine bağlanarak bunu da yine lojik dersinde anlatacaklar.
+
+386
+00:43:20,663 --> 00:43:29,443
+Yani şu bir transistör işte bundan ortaya çıkan şeyde zannediyorum şöyleydi bundan bir başka transistör bağlanıyor.
+
+387
+00:43:29,643 --> 00:43:31,243
+İşte şöyle K gibi çizemiyorum da.
+
+388
+00:43:32,163 --> 00:43:40,203
+Bu transistörler birbirine bağlanarak mantıksal devreler veya işte hafıza elemanları oluşturuyor yarı iletken malzemelerle.
+
+389
+00:43:41,043 --> 00:43:49,923
+İşte mesela bir AND operasyonunu veya AND kapısını duymuşsunuzdur veya OR kapısını duymuşsunuzdur veya flip floplar duymuşsunuzdur.
+
+390
+00:43:49,923 --> 00:44:15,863
+flip-flop veya bunları göreceksiniz. Bunlardan sonra register'lar duymuşsunuzdur. Register'lar gerçi işlemcinin içerisinde de var. Onlara da birazdan gireceğiz. Bunlar en temelde transistör denen elemanlarla yapılıyor. Ve bu transistör denen elemanlarla biz toplama, çıkarma, çarpma, bölme gibi operasyonları yapıyoruz. Hepsinin yaptığı şey yine ne? Sıfır ve birler üzerinden toplama, çıkarma, çarpma, bölme yapmak. Bunu söylemiş olan.
+
+391
+00:44:15,863 --> 00:44:35,063
+Ha bu transistör tam ideal bir eleman mı? Şimdi ona geleceğim. İdeal bir eleman değil. Neden değil? Şimdi işlemci dediğimiz sınırlı bir eleman. Bilgisayarınızın işte masaüstü bilgisayarınızın işlemcisine baktıysanız hani benim ekranımdaki şu kapladığı yer kadar bir yer kaplıyordur. Çizdiğim yer kadar belki biraz daha büyük olabilir.
+
+392
+00:44:35,063 --> 00:44:47,023
+Buraya işte en son i7, i9 işlemcilere bakarsanız işte 40 milyon, 50 milyon civarı, geçenlerde bir yerde okumuştum 50 küsur milyon falan transistör sığdırılıyor, mikro transistör.
+
+393
+00:44:47,543 --> 00:44:52,703
+Normalde transistörün görsellerde bakarsanız baya kocaman elle tutulan bir devre elemandır.
+
+394
+00:44:53,103 --> 00:44:56,543
+Görmeyen var mı transistör içi? Hocam hiç görmedim diyen var mı?
+
+395
+00:45:00,788 --> 00:45:04,627
+Buradaki 55 kişinin 55'i de demek ki transistör görmüş. Çok güzel yani.
+
+396
+00:45:04,627 --> 00:45:05,907
+Ben görmedim hocam.
+
+397
+00:45:05,907 --> 00:45:10,147
+Tamam ya söyleyin, en azından el kaldırın. Ben hiç görmedim diyebilirsiniz.
+
+398
+00:45:10,147 --> 00:45:19,347
+Transistör arkadaşlar, 3 tane bacağı olan, şöyle bakalım, şuradan bulabilmeye çalışalım.
+
+399
+00:45:21,940 --> 00:45:23,819
+transition.
+
+400
+00:45:33,268 --> 00:45:44,268
+Bunun birkaç farklı şekli var. Şu şekilde olan var, bu şekilde alan efektliler var. Bunlar elektronikçiler veya bizim elektronik devreler dersinde daha çok anlatılıyor.
+
+401
+00:45:44,268 --> 00:45:54,268
+Bunun tarihçesine bakarsanız, transitörün tarihçesi diye tarihte önemli bir buluşturgu. Onlara ben girmiyorum. Şöyle bir simgesi vardır.
+
+402
+00:45:54,268 --> 00:46:03,268
+Aslında iki tane diyodun bir şekilde bir araya getirilmesiyle oluşuyor. Belki bu yarı iletken dersinde de bu dönem bazı şeyleri göreceksiniz.
+
+403
+00:46:03,268 --> 00:46:08,907
+Şimdi bu tabii işlemcinin içinde olan transistörler bunlar değil. Onlardan mikro olan şeyler.
+
+404
+00:46:09,587 --> 00:46:11,488
+Şimdi buraya bu kadar eleman sığdırdık.
+
+405
+00:46:12,887 --> 00:46:19,608
+Kabul edelim ki şurada şuraya bir fokus yaparsak şöyle transistörler var.
+
+406
+00:46:20,407 --> 00:46:22,867
+Bu işin neden yetersiz kaldığını anlatmak için söylüyorum.
+
+407
+00:46:24,227 --> 00:46:27,687
+Bunların hepsinden akım geçiyor. Bunlar aktif haldeler veya pasif haldeler.
+
+408
+00:46:27,687 --> 00:46:31,087
+Yani bir veya sıfır haldeler. Bir halindeyken akım geçiriyorlar.
+
+409
+00:46:31,087 --> 00:46:47,647
+Akım geçmesi ne demek? Elektrik akımı. Orada bir direnç var. Çünkü transitörün malzemesinin içerisinde de belli bir direnç var. O dirençle bir akım geçiyor. Orada bir gerilim oluşuyor. Şimdi bunun şu transitörün oluşturduğu gerilimle bir ısı açığa çıkıyor.
+
+410
+00:46:47,647 --> 00:47:07,647
+Bu ısı daha sonra işte bunun ısısı var bunun ısı var işlemciler neden soğutuluyor işte buradaki oluşturulan ısıdan dolayı soğutuluyor hatta ne koyarız işte bazı silikon falan malzemeler konur ki üzerinde bir şey yapıştırırsın işte fan koyarsın işlemciyi soğutmaktır.
+
+411
+00:47:07,647 --> 00:47:16,768
+Hele server gibi bir şeyi düşünürsek, bir ortamı düşünürsek orada ne oluyor? Bir sürü soğutucular kullanıyor.
+
+412
+00:47:16,768 --> 00:47:23,147
+Hatta soğutucu devreden çıktığında ne oluyor arkadaşlar? Termal macun, evet doğru.
+
+413
+00:47:23,807 --> 00:47:30,247
+Soğutucular devreden çıktığında işletim sistemleri bilgisayar otomatik olarak kapatıyor donanıma zarar vermesin diye.
+
+414
+00:47:30,687 --> 00:47:35,087
+Böyle bir durum var. Bu bir bottleneck dediğimiz darboğaz.
+
+415
+00:47:35,087 --> 00:47:49,907
+Şimdi bu durum aslında neden kaynaklı? Ben şu aralığı, şu iki şey aralığını ve şu aralığı, iki nokta arasındaki şu yatay ve düşey aralıkları ne kadar arttırırsam o kadar ne sığdırabilirim?
+
+416
+00:47:51,088 --> 00:47:57,687
+Biraz daha düz mantıkla düşünürsek o kadar çok transistör sığdırabilirim.
+
+417
+00:47:57,687 --> 00:48:17,027
+Fakat burada bir etki ortaya çıkıyor. Arttırmak demek yani bir odaya 80 tane adamı sığdırmaya çalıştırdığınızı düşünün. Sıcaklık artacaktır değil mi? İşte buna rezistif etki dediğimiz direnç etkisi, ısı etkisi de ortaya çıkabiliyor. Bir re etkisi diyor.
+
+418
+00:48:17,027 --> 00:48:28,567
+Fazla açarsam hem yer kalmayacak yani daha az transütör satacağım hem de iki iletken arasına bir yalıtkan girince ne oluyordu?
+
+419
+00:48:32,692 --> 00:49:00,692
+İletken arasına bir yalıtkan girerse ne oluyor? Evet, Recep? Akım iletmez. Tamam, akım iletmez. Orada başka bir şey oluyor. Kapasitör oluyor değil mi? Kondansatör etkisi oluşuyor. Yani iki tane iletken levha arasına bir hava, bir yalıtkan koyduğunuzda orada bir kondansatör, yani bir C etkisi. R-C etkisi dediğimiz bir olay ortaya çıkıyor.
+
+420
+00:49:00,692 --> 00:49:14,532
+Çok fazla sıkıştırırsak R etkisi, çok açarsak C etkisi. İşte bunun optimum hesapları var. Bu R-C etkisinden kurtulmak yani bunun bir düzenli, ne diyelim, bir orta yolunun bulunması lazım.
+
+421
+00:49:15,032 --> 00:49:29,311
+Buna da ne diyoruz? Trade-off diyoruz. Bu bir mesela bilgisayar bilimlerinde ve elektronikteki karşılaştığımız trade-offlardan bir tanesi. Trade-off başka yerlerde duymuşsunuz işte ödünleşme mi deniyor neyse Türkçesi.
+
+422
+00:49:29,311 --> 00:49:34,872
+Bir şeyden ödün verirken başka bir şeyi kazanıyorsunuz.
+
+423
+00:49:34,971 --> 00:49:37,991
+O kazan veya başka bir şeyden ödün verirken başka bir şeyi kazanıyorsunuz.
+
+424
+00:49:38,651 --> 00:49:41,311
+İşte bu RCA etkisi bunlardan bir tanesi.
+
+425
+00:49:42,011 --> 00:49:45,891
+Demek ki yani günümüz bilgisayarları tamam çok hızlı çalışıyor ama
+
+426
+00:49:45,891 --> 00:49:53,431
+hakikaten istenilen olması gereken veya daha fazla gelmesi gereken yere gelemiyor bu durumlardan dolayı.
+
+427
+00:49:53,431 --> 00:49:56,171
+Şimdi son... Efendim Zahir?
+
+428
+00:49:56,171 --> 00:50:03,531
+Hocam anlattığınız şey x86 için geçerli değil mi? Arkadaşekşör x86 olduğu için.
+
+429
+00:50:03,531 --> 00:50:16,971
+Yani işlemci bu mantıkla çalışan bütün işlemciler de gerçek. Ben şey değil, AMD'lerde de olabilir. Bilmiyorum. Marka olarak söylemiyorum. Genel işlemcilerdeki yapılan mimariden ve mantıktan bahsediyorum.
+
+430
+00:50:16,971 --> 00:50:17,651
+Tamam.
+
+431
+00:50:18,552 --> 00:50:23,931
+Hani diğer mesela spesifik bir şey söylersin orada farklı bir metodoloji uygulanıyordur onu bilemem.
+
+432
+00:50:24,092 --> 00:50:26,391
+Ben genel şey üzerinden anlatıyorum.
+
+433
+00:50:27,592 --> 00:50:30,431
+Senin özel bir bildiğim şey varsa alabiliriz.
+
+434
+00:50:31,351 --> 00:50:32,751
+Hocam merak etmiştim.
+
+435
+00:50:32,951 --> 00:50:36,851
+IMR ile x86 arasındaki fark.
+
+436
+00:50:36,851 --> 00:50:42,431
+Şimdi ARM işlemcilerdeki mantık, geliştirme mantığı farklı.
+
+437
+00:50:42,671 --> 00:50:44,331
+Bu mikro işlemciler konusu.
+
+438
+00:50:44,331 --> 00:50:50,212
+Intel veya AMD gibi işlemcilerdeki geliştirme mantığı farklı.
+
+439
+00:50:50,212 --> 00:50:53,072
+Ona da birazdan kısaca farklı bir şekilde değineceğim.
+
+440
+00:50:53,671 --> 00:51:05,352
+Orada instruction set mimarisi, risk ve sisk diye söylenen veya bazı Harvard mimarisi ve Van Nuimum mimarisi dediğimiz geliştirme mimarileri var.
+
+441
+00:51:06,052 --> 00:51:07,751
+Oradaki farklılıktan kaynaklanıyor.
+
+442
+00:51:09,651 --> 00:51:10,572
+Birazdan ona geliriz.
+
+443
+00:51:10,571 --> 00:51:22,491
+Şimdi elektriği bu şekilde tutabilmek sıfır veya bir şekilde demek ki bir yere kadar iyi ama bir yerden sonra maliyetli ve problemli.
+
+444
+00:51:23,231 --> 00:51:28,411
+Özellikle küresel ısınma dediğimiz bir illetle hepimiz karşı karşıyayız.
+
+445
+00:51:29,051 --> 00:51:32,511
+Düşünün bir sürü serverlar çalışıyor, serverları soğutmak gerekiyor.
+
+446
+00:51:33,451 --> 00:51:34,491
+Soğutmak için ne yapıyoruz?
+
+447
+00:51:34,491 --> 00:51:38,131
+Havayı alıyoruz yani klima etkisi dediğimiz bir şey.
+
+448
+00:51:38,132 --> 00:51:39,552
+O havayı alıyor.
+
+449
+00:51:39,732 --> 00:51:42,671
+Havanın işte kurutuyor aslında bir anlamda havayı.
+
+450
+00:51:43,372 --> 00:51:48,811
+Düşünün insanın ciğerlerinin kurutulduğunu yani ciğerde belli bir nem seviyesi vardır akciğerlerimizde.
+
+451
+00:51:49,372 --> 00:51:50,692
+Kurutulursa o ciğer söner.
+
+452
+00:51:51,811 --> 00:51:53,652
+Allah korusun kötü hastalıklar ortaya çıkar.
+
+453
+00:51:54,452 --> 00:51:57,692
+Bizim de yani havamız bir şekilde kurutuluyor.
+
+454
+00:51:57,811 --> 00:51:58,432
+Bu kötü bir şey.
+
+455
+00:51:59,111 --> 00:52:01,052
+Bunun yerine mesela farklı çalışmalar var.
+
+456
+00:52:01,132 --> 00:52:02,792
+İşte kuantum bunlardan bir tanesi.
+
+457
+00:52:03,872 --> 00:52:06,212
+Sonra optik bilgisayarlar var mesela.
+
+458
+00:52:06,372 --> 00:52:07,591
+Onun üzerinde çalışmalar var.
+
+459
+00:52:07,591 --> 00:52:15,831
+Diyorlar ki elektriği değil de ışığı belli bir eleman içerisinde bilgiyi temsil etmek amaçlı kullanabilir miyiz?
+
+460
+00:52:15,951 --> 00:52:17,631
+Yani ışığın varlığı ve yokluğu.
+
+461
+00:52:18,552 --> 00:52:20,591
+Bunun için mesela prizmalarla...
+
+462
+00:52:20,755 --> 00:52:29,435
+Yani aynalardan oluşan bir şey var, işte bir ışık bir hüzmesi veriyorsunuz, o orada dönüp duruyor. O ışığın varlığını ortaya koyacak.
+
+463
+00:52:29,435 --> 00:52:39,555
+Veya orada herhangi bir veri yoksa, ışık bir şekilde yok olursa sıfıra karşılık gelecektir diye farklı çalışmalar var. Tabi bunlar bizim çok fazla alanımıza girmiyor.
+
+464
+00:52:39,555 --> 00:52:49,475
+İşte burada bir materyal mühendisi, malzeme mühendisinin, elektronikçinin gibi ve elektrik mühendislerinin çalıştığı alanlar bunlar.
+
+465
+00:52:49,675 --> 00:52:51,355
+Yeni yeni şeyler ortaya çıkarmak.
+
+466
+00:52:52,355 --> 00:52:54,495
+Bizde mesela mekatronikte bir hoca vardı.
+
+467
+00:52:54,495 --> 00:53:04,215
+Hard disklerin malzemesinin hız açısından çok önemli olduğunu ve yeni bir malzeme geliştirdiğini Japonya'da yapılan bir çalışmadan bahsetmişti.
+
+468
+00:53:05,195 --> 00:53:07,535
+Çünkü hard diskler çok çok daha yavaş biliyorsunuz.
+
+469
+00:53:07,535 --> 00:53:12,436
+Bu yavaşlığın üstesinden gelebilmek için farklı bir malzeme kullanılması.
+
+470
+00:53:12,675 --> 00:53:13,975
+SSD'ler değil yani.
+
+471
+00:53:14,055 --> 00:53:19,755
+SSD'lerden daha fazla hıza sahip olacak bir sistem üzerinde çalışıyorlarmış.
+
+472
+00:53:20,535 --> 00:53:20,815
+Diyelim.
+
+473
+00:53:21,575 --> 00:53:36,955
+Demek ki arkadaşlar hani buraya kadar söylediğimiz şeylerin özeti verinin varlığının veya yokluğunun bu işlemci biriminde saklanması bize bütün verileri simgelememizi, işte komutları oluşturmamızı sağlıyor.
+
+474
+00:53:36,955 --> 00:53:44,436
+Şimdi şu kelime, şu cümle çok önemlidir. Not etmeniz veya unutmamamız lazım.
+
+475
+00:53:44,436 --> 00:54:01,895
+Each CPU ya da processor unit has own instruction set and architecture.
+
+476
+00:54:01,895 --> 00:54:16,675
+Her bir CPU kendisine ait, kendisine specific, şu own specific'ten kastediyorum, bir komut setine ve mimariye sahiptir.
+
+477
+00:54:17,836 --> 00:54:28,156
+Yani herhangi bir firmanın ARM, Intel, AMD hangisi ise bir modelini ele aldığınızda, onun data sheetine baktığınızda bakmanızı tavsiye ederim.
+
+478
+00:54:28,235 --> 00:54:29,255
+Birkaç tane araştırın.
+
+479
+00:54:30,136 --> 00:54:31,395
+Çok rahat bunlara erişebilirsiniz.
+
+480
+00:54:31,395 --> 00:54:33,996
+Instruction setlerine bakın bir sürü instruction vardır.
+
+481
+00:54:34,175 --> 00:54:36,295
+Ve bu başka bir modelde farklı hale gelir.
+
+482
+00:54:37,955 --> 00:54:39,196
+Mimarisi farklıdır.
+
+483
+00:54:39,356 --> 00:54:46,515
+Mesela birisi der ki kararsızlık kuşağı birinde işte bir modelde geçen sene 3. nesil, 4. nesil gibi şeyler deniyor.
+
+484
+00:54:46,655 --> 00:54:48,935
+İşte bu buradan ortaya çıkan şey işlemcilerdeki.
+
+485
+00:54:50,155 --> 00:54:56,916
+İşte birisi 3.8 volta kadar 3.8 volttan sonra biri gösterirken biri 3.7.
+
+486
+00:54:57,535 --> 00:54:58,735
+Bu zaman çok önemli.
+
+487
+00:54:58,735 --> 00:55:13,795
+Çünkü milyarlarca belki şey var, milyonlarca diyebileceğimiz transistör var. Bunların anahtarlanması, harekete geçmesi çok önemli, zaman açısından çok önemli. Bunlar kendilerine özel spesifikasyonlar.
+
+488
+00:55:14,095 --> 00:55:28,196
+Peki biz sadece veriyi saklarken, CPU'da saklarken mi bu 0 ve 1'i kullanıyoruz? Hayır. Şu ana kadar anlattığım her şey RAM için de geçerli, hatta hard disk için de geçerli.
+
+489
+00:55:28,735 --> 00:55:39,355
+RAM'deki yapıda RAM daha çok dinamik yani üyemiz kullandığımız RAM'lerden bahsedecek olursak transistörler ve kondansatörler yardımıyla oluşturuluyor.
+
+490
+00:55:39,476 --> 00:55:41,395
+İşte dinamik RAM'ler var, statik RAM'ler var.
+
+491
+00:55:42,196 --> 00:55:45,595
+Statik RAM'lerde daha çok transistörler kullanılıyor diye biliyorum.
+
+492
+00:55:46,495 --> 00:55:49,855
+İşte cache memoriler var. Onlarda da daha çok transistör mantığı kullanılıyor.
+
+493
+00:55:49,855 --> 00:55:57,655
+İşte veya kondansatörler var. Orada da yine bilgi elektriğin varlığına veya yokluğuna göre kodlanıyor.
+
+494
+00:55:57,655 --> 00:56:04,695
+Hard disklere geldiğimizde, eski hard disklerden bahsedelim, bu silindirli yapıdan bahsedelim önce.
+
+495
+00:56:05,795 --> 00:56:11,635
+Onların üzerinde veri bir manyeter rezistif dirençle, yani orada bir yakma gerçekleşiyor aslında.
+
+496
+00:56:12,815 --> 00:56:18,775
+Elektriğin bir volt olduğunu göstermek için oraya bir elektriksel işaret uygulanıyor ilgili birime.
+
+497
+00:56:18,775 --> 00:56:20,295
+Orada
+
+498
+00:56:20,980 --> 00:56:37,980
+Aslında bir veri saklanıyor. Okurken bir direnç yardımıyla, ne yapıyor? Manyotor rezistif direnç deniyor buna, bir kafa var. Oradaki 0 veya 1 bilgisinin olup olmadığı okurken, oradan bir voltaj ve akım bilgisi okuyabiliyorsa, işte orada 1 vardır.
+
+499
+00:56:37,980 --> 00:56:49,980
+İşte 0 volt sonrası herhangi bir voltaj veya akım bilgisi olmayacağı için 0 bilgisi elde ediliyor. Tabi bu daha yavaş bir şey. Çünkü oradaki bilginin bir analogdan dijitale dönüştürülmesi gerekiyor.
+
+500
+00:56:49,980 --> 00:57:08,219
+Bir de hard disk sürekli dönen bir yapıdır. Günümüz hard diskleri 7200 veya 5400 rpm denen bir metrikle çalışır. Ne demek bu? Rotation per minute veya root per minute'tür. Dakikada bir hard disk 7200 defa dönüyor.
+
+501
+00:57:08,219 --> 00:57:23,079
+Bunu 60'a bölerseniz 120 mi olur? 120 saniyede 120 defa dönüyor. Bunun 1 bölü 120'yi hesaplarsanız 1 bölü 100 diyelim 0.01 Hz'lik bir şey.
+
+502
+00:57:24,119 --> 00:57:27,259
+0 bölü 0.01 Hz diyelim. Doğru hesapladın değil mi?
+
+503
+00:57:27,919 --> 00:57:36,700
+7200'ü 60'a böldük. Buradan 120 bulduk. Bunu da 1 bölü 100 gibi kabul edersek yaklaşık olarak 0 bölü 0.01 Hz.
+
+504
+00:57:36,700 --> 00:57:39,140
+Bu harddiskin çalışma hızı.
+
+505
+00:57:39,799 --> 00:57:43,520
+Basit olarak tabii bu daha detaylı şeyleri var, spesifikasyonları var.
+
+506
+00:57:44,160 --> 00:57:45,299
+İşlemcilerimiz ne kadar?
+
+507
+00:57:45,980 --> 00:57:46,920
+Bu HDD diyelim.
+
+508
+00:57:47,299 --> 00:57:48,399
+RAM'lerimiz ne kadar?
+
+509
+00:57:51,200 --> 00:57:53,939
+Mesela bir RAM hızı söyleyin arkadaşlar.
+
+510
+00:57:54,100 --> 00:57:55,420
+Kendi bilgisayarınıza bakabilirsiniz.
+
+511
+00:57:55,560 --> 00:57:56,619
+Ben şu an hani bakamıyorum.
+
+512
+00:57:58,140 --> 00:57:58,860
+Bildiğim kadarıyla.
+
+513
+00:57:59,520 --> 00:58:01,380
+3200 MHz diyebilirim.
+
+514
+00:58:02,860 --> 00:58:03,380
+3200.
+
+515
+00:58:03,520 --> 00:58:05,280
+Yani bir MHz'ler mertebesinde.
+
+516
+00:58:05,279 --> 00:58:33,139
+Buradaki hertz ne oldu? Megahertz. Yani yaklaşık olarak 10 üzeri 6'lık bir şey. İşlemcilere baktığımızda daha çok gigahertz, işte 3.2 gigahertz deniyor. Burada da bir 10 üzeri 3 kadar bir fark var. Çok hızlı çalışan bir işlemci, ondan daha yavaş çalışan bir şey. Megahertz, RAM, ondan da çok çok daha yavaş çalışan bir ne var? Hard disk var. Böyle bir yapı. Hepsinde mantık nasıl? Bilginin varlığı veya yokluğu.
+
+517
+00:58:33,140 --> 00:58:57,179
+Eskiden CD ve DVD'ler vardı. Gerçi hala vardı da çok kullanılmıyor. Orada da optik olarak yakma işlemi gerçekleşiyor arkadaşlar. Işıkla CD veya DVD üzerine veriler yakılıyor. Pit ve land deniyoruz ona. İşte orada bir ışıktan kaynaklı olarak verinin varlığı yokluğu anlaşılıyor.
+
+518
+00:58:57,179 --> 00:59:17,519
+Hatta CD'yi yazarsanız şu an yakınımda olsa belki gösterme imkanı olurdu. CD'nin yazılan kısımları farklı bir renkte görünür. Normal boş CD ile dolu CD çok rahat ayırt edilebilir. Bu orada bir yakma işleminin gerçekleştiğini, ışıkla bir veri kaydetme işleminin gerçekleştiğini görüyoruz.
+
+519
+00:59:17,519 --> 00:59:19,899
+Tabi onun da kendine göre hızları vardı.
+
+520
+00:59:19,999 --> 00:59:20,739
+Şu an hatırlamıyorum.
+
+521
+00:59:20,840 --> 00:59:21,379
+Önemli değil.
+
+522
+00:59:21,519 --> 00:59:21,859
+Hızlar.
+
+523
+00:59:22,739 --> 00:59:23,559
+Böyle bir durum var.
+
+524
+00:59:24,319 --> 00:59:25,919
+Şimdi bizim siz gelmediniz.
+
+525
+00:59:26,039 --> 00:59:28,159
+DB21 diye bir laboratuvarımız vardı.
+
+526
+00:59:29,299 --> 00:59:38,539
+Orada Core2Dio yaklaşık olarak ben 2007'lerde üniversiteye başladığımda Core2Dio bilgisayarlar, işlemciler yeni yeni çıkmıştı.
+
+527
+00:59:39,539 --> 00:59:41,299
+O işlemcilere sahip, bunu da anlatayım.
+
+528
+00:59:41,439 --> 00:59:42,139
+Şimdi ara vereceğiz.
+
+529
+00:59:42,799 --> 00:59:44,779
+O işlemcilere sahip bilgisayarlar vardı.
+
+530
+00:59:45,779 --> 00:59:46,999
+Şimdi biz orada ne yapıyoruz?
+
+531
+00:59:46,999 --> 00:59:52,059
+Sadece C programlama, BBG gibi derslerde başka hiçbir şey yapmasın.
+
+532
+00:59:52,139 --> 00:59:55,359
+Sadece C gibi işlemleri yapsın diye bir şey istiyorduk.
+
+533
+00:59:55,459 --> 00:59:57,139
+Veya en fazla Java'yı da çalıştırsın.
+
+534
+00:59:57,259 --> 00:59:58,479
+Belki PostgreSQL olabilir.
+
+535
+00:59:59,959 --> 01:00:00,999
+Bilgisayarlar sağlam.
+
+536
+01:00:01,119 --> 01:00:03,099
+Makinelerin hiç arızası yok.
+
+537
+01:00:03,199 --> 01:00:03,739
+Ama yavaş.
+
+538
+01:00:03,939 --> 01:00:05,139
+Öğrenciler şikayet ediyor.
+
+539
+01:00:05,959 --> 01:00:08,599
+Siz olsanız bu bilgisayarlara nasıl bir şey yaparsınız?
+
+540
+01:00:12,179 --> 01:00:14,339
+Yani hızlandırmak adına ne yapılabilir?
+
+541
+01:00:17,907 --> 01:00:35,907
+Core 2 işlemcilerin de gigahertzler mertebesinde, yani hızı, çalışma frekansı. Recep diyor ki, sabit diskleri değiştirebiliriz. Nasıl değiştireceğiz? Nasıl bir sabit disk yazacağız, vereceğiz?
+
+542
+01:00:39,092 --> 01:00:50,092
+root permute, ssd veya şey, güzel. Şimdi arkadaşlar, burada RAM'i arttırmanın çok çok bir faydası olmuyor. Zaten onların da 4 GB RAM'i var.
+
+543
+01:00:50,092 --> 01:01:02,092
+Hani şöyle, eğer çok fazla işlem yapıyorsak, ne bileyim oyun çalıştıracaksak o zaman RAM'in 4 GB değil de 8 GB olması bir anlamda fayda sağlar.
+
+544
+01:01:02,092 --> 01:01:11,932
+Ama C çalıştıracak bir bilgisayarda, Java çalışacak bir bilgisayarda RAM 2 GB olmuş, 4 GB olmuş, 16 GB olmuş çok bir anlamı yok.
+
+545
+01:01:12,511 --> 01:01:13,911
+Çünkü zaten RAM'i doldurmuyorsun.
+
+546
+01:01:15,231 --> 01:01:25,031
+Yani 2 GB RAM'de bir C programı belki en fazla işte 1 MB'lık bir şey, 1000'de 1 gibi bir şey veya 2000'de 1 gibi düşünelim.
+
+547
+01:01:25,831 --> 01:01:26,731
+Rahat rahat sığıyor.
+
+548
+01:01:26,731 --> 01:01:30,571
+Onun için RAM bu tarz bir uygulamada çok fazla işe yaramıyor.
+
+549
+01:01:30,571 --> 01:01:46,752
+Bizim burada darboğazımız neresi? Hard disk. Gittik yaklaşık 5000 liraya işte 20 küsur tane, 30 tane veya daha fazlaydı aslında o zamanlar. Birkaç laboratuvarda faydalanmasın diye. SSD'ler aldık. SSD'leri takıldı ve gayet bilgisayar hızlı açılıyor.
+
+550
+01:01:46,751 --> 01:01:53,251
+Hocam diyorlar yani öğrenciler bir buçuk dakikada açılan bilgisayar işte 10 saniye 15 saniye içinde açılır.
+
+551
+01:01:53,251 --> 01:02:02,711
+Yani aslında şu işlemci hızı ve bu bellek hızı böyle çok basit kullanımlı bir bilgisayar için gayet fazla bir hız.
+
+552
+01:02:04,191 --> 01:02:11,251
+Yani çok isim vermeyelim çok hızlı çalışan bir otomobil alıyorsunuz köy yolunda yürüyorsunuz.
+
+553
+01:02:11,951 --> 01:02:16,251
+Yani stabilize yolda veya toprak bir yolda gidiyorsunuz onun gibi düşünün.
+
+554
+01:02:16,251 --> 01:02:37,411
+Ne olacak? Yani 180-190 yapamayacaksın. Belki 40-50'lerde gideceksin. O zaman neyi yapman lazım? Üzerinde çalıştığın yolu yani en düşük olan birim neyse onu yükseltir. Ha bu arada başka genişleti iyileştirilecek şeyler var mıdır? Vardır. Mesela busların da kendine göre hızları var arkadaşlar. Bu adres bus veya işte veri yollarının hızları var.
+
+555
+01:02:37,411 --> 01:02:43,352
+Onlar da yine yeterli kapasitede biz harddiski düzelterek bu sorunu kısmen çözmüştük.
+
+556
+01:02:44,411 --> 01:02:48,392
+Sonra tabi pandemi girince sorun daha tamamen çözüldü.
+
+557
+01:02:48,472 --> 01:02:49,672
+Şimdi herkes kendi evinde.
+
+558
+01:02:50,371 --> 01:02:53,172
+Evet bir soru var mı burada şu ana kadarki anlattığımız kısımlarda?
+
+559
+01:02:53,431 --> 01:02:54,991
+Herhangi bir anlaşılmayan bir şey var mı?
+
+560
+01:02:59,059 --> 01:03:06,979
+Tamam, saat 10.10 dakika ara verelim. Onu 11 geçe görüşmek üzere. Gelince devam edeceğiz.
+
+561
+01:11:15,891 --> 01:11:17,811
+Zafer senden mail...
+
+562
+01:11:17,811 --> 01:11:19,011
+Sen gönderdin mi mail bana?
+
+563
+01:11:19,791 --> 01:11:22,071
+Gönderdim hocam ama özel emailinden
+
+564
+01:11:22,071 --> 01:11:24,152
+gönderdim. Telefonum yanımdaydı.
+
+565
+01:11:24,551 --> 01:11:25,871
+O zaman şuraya...
+
+566
+01:11:25,871 --> 01:11:27,111
+Yıldız Maili de mi geldi?
+
+567
+01:11:27,991 --> 01:11:30,411
+Aynen. iCloud başlangıçta
+
+568
+01:11:30,411 --> 01:11:31,691
+olması gerekiyor. Tamam.
+
+569
+01:11:32,591 --> 01:11:33,091
+Şimdi
+
+570
+01:11:33,091 --> 01:11:35,812
+Yıldız Maili ise buradan bakmayacağız.
+
+571
+01:11:35,812 --> 01:11:37,051
+Öbür yerden bakacağız.
+
+572
+01:12:00,180 --> 01:12:07,539
+Şu an gelmemiş bana. Doğru mail adresine gönderdiğine emin misin?
+
+573
+01:12:08,819 --> 01:12:11,819
+WhatsApp grubunda yazılı olan mail adresiniz var.
+
+574
+01:12:11,819 --> 01:12:15,659
+Al 1.at.yıldız.edu.tr. Alalım. Aynen.
+
+575
+01:12:15,659 --> 01:12:20,100
+Gelen giden bir mail yok. Spam, spama gitmiş olan mı?
+
+576
+01:12:20,100 --> 01:12:21,459
+Bakayım.
+
+577
+01:12:29,332 --> 01:12:38,332
+Ortada da bir şey görünüyor. Neyse, karantinada kalmış olabilir. Çünkü bir Yıldız'ın spam denetleyicisi var, hemen düşürmüyor.
+
+578
+01:12:38,332 --> 01:12:41,332
+Gmail'den aynı şekilde Gmail'den yollar mısın bana?
+
+579
+01:12:41,332 --> 01:12:44,332
+Tabii, forward yapabilirim Gmail'in.
+
+580
+01:12:44,332 --> 01:12:55,332
+Daha rahat olur. Onu bekleyene kadar ders bitecek belki. Çünkü o önce bir spamları kontrol ediyor, süzüyor bizim Yıldız'ın serverları.
+
+581
+01:12:55,332 --> 01:13:10,912
+Neyse. Evet arkadaşlar devam edelim. Herkes geldi herhalde. Peki bilgi bu şekilde bütün hafıza elemanlarında yani 3 aşağısı da 3 yukarısı da bu böyle.
+
+582
+01:13:10,912 --> 01:13:23,291
+Şimdi şu mimariden bahsetmiştim. Şu yapıdan bahsetmiştim biraz önce. Burada şöyle bir ekleme yapalım. Bir isimde birisi geldi.
+
+583
+01:13:23,291 --> 01:13:40,531
+Herhalde senin adın farklı. Tamam geldi. Şu an gördük. Bu mimaride arkadaşlar, şu bilgisayar mimarisinde, işte işlemci, main memory, bas ve çevresel divaseler dedik.
+
+584
+01:13:40,531 --> 01:13:53,692
+Komut ve datalar main memory'de bu şekilde saklanıyorsa, hepsi bütünleşik olarak saklanıyorsa buna Harvard mimarisi diyoruz.
+
+585
+01:13:53,692 --> 01:13:54,951
+Harvard diyorum, OneNuman.
+
+586
+01:13:56,231 --> 01:13:57,671
+Şöyle olacak derler.
+
+587
+01:14:02,644 --> 01:14:17,843
+Eğer CPU burada Program Memory ile Program Memory, Data Memory'yi birbirinden ayırt edersek,
+
+588
+01:14:19,572 --> 01:14:31,572
+Yani ikisi de memori ama CPU'nun program memorisi ile data memorisine erişimleri farklı kanallardan olacak. Bu da Harvard Mimarisi. Bu ayrım,
+
+589
+01:14:33,072 --> 01:14:45,072
+yani çok eski zamanlardaki bilgisayar, işte bilgisayar mimarilerinde yapılan bir şey. Artık günümüzde tam ikisinin olduğu, yani şu şundandır, bu bundan da diyeceğiniz bir ayrım yok.
+
+590
+01:14:45,072 --> 01:14:51,072
+İkisi birbirinin özelliklerini alıp firmalar buna göre şey geliştiriyorlar.
+
+591
+01:14:51,391 --> 01:15:08,332
+İşte mikroçip olabilir, ondan sonra ARM teknolojileri olabilir, Intel, AMD veya diğer işte Panasonic, yok Motorola gibi firmalar bu şeylerin üstünlüklerini alıp daha iyi tasarım yapma durumundalar.
+
+592
+01:15:08,332 --> 01:15:12,271
+Şimdi böyle olursa ne oluyor? Bir yandan programı alıyor, bir yandan datayı alıyor.
+
+593
+01:15:12,271 --> 01:15:18,051
+OneDum'un mimarisine göre biraz daha şu bus'lar etkin kullanılıyor.
+
+594
+01:15:19,211 --> 01:15:22,551
+Yani kodu alırken datalar hazırlanıyor gibi.
+
+595
+01:15:25,211 --> 01:15:32,792
+Peki, burada herhangi bir sorun yoksa burayı şimdilik değiştireceğim.
+
+596
+01:15:34,471 --> 01:15:41,572
+Demek ki bilgisayar sisteminde bütün hafıza ve işlem elemanlarında sıfır ve birilerinin kullanılacağını gördük.
+
+597
+01:15:42,271 --> 01:16:06,072
+Peki işlemcide bu sıfır ve birler nasıl kullanılacak? Birincisi instruction set için kullanılıyor arkadaşlar. Instruction set encoding diyelim. Yani ben sıfır ve birleri bir araya belli bir mantıkla getireceğim. İşte buna diyeceğim ki add olsun. Bakın decoding değil encoding.
+
+598
+01:16:06,072 --> 01:16:24,012
+Bu şekilde instruction setimde kaç tane komut olmasını istiyorsam her birine ait bir 0 ve 1'ler dizisi olacak. Başka CPU'da bu 0 ve 1'lerle ne yapılıyor? Daha çok önemli olan instruction execution yapılıyor arkadaşlar.
+
+599
+01:16:24,011 --> 01:16:39,251
+Şimdi instruction execution'ın yapıldığı kısım aslında instruction set'in encode edildiği yer işlemcideki kontrol ünitesi dediğimiz instruction set'in bulunduğu ünitedir.
+
+600
+01:16:39,251 --> 01:16:49,231
+Instruction execution'da performs all of instructions.
+
+601
+01:16:51,031 --> 01:16:55,431
+Yani bütün konutların görevi neyse onu yerine getirmek.
+
+602
+01:16:56,031 --> 01:16:57,411
+Toplama yapılacaksa toplama.
+
+603
+01:16:57,871 --> 01:17:01,751
+Şimdi bunun yapılan birim ALU dediğimiz aritmetik lojik ünitesi.
+
+604
+01:17:02,791 --> 01:17:08,551
+Matematiksel ve mantıksal ne kadar işlem varsa bu lojik ünite içerisinde yapılıyor.
+
+605
+01:17:08,551 --> 01:17:29,411
+Peki burada ne var? Sıfır ve birlerden sen toplama yapacaksan normal bildiğimiz toplama işlemini yapacak şekilde devrelerle geliştiriyor. Bunların mesela toplama devresi veya bunların daha çıkarma da toplama cinsinden yapılabileceği için toplama çıkarma devreleri denir.
+
+606
+01:17:29,811 --> 01:17:34,411
+Lojik seviyede bu işlemler yapılıyor. Yani addition diyelim toplama.
+
+607
+01:17:41,716 --> 01:17:54,716
+In-Logic Level. Ne demek Logic Level? İşte 0 ve 1'leri ben input olarak verdiğimde yapılacak olan toplama işlemi, çıkarma işlemi nasıl olacak? Bunların devrelerinin kurulması.
+
+608
+01:17:54,716 --> 01:18:04,716
+Ve bu devreler de yine yarı iletken malzemelerden oluşan lojik kapılarla, lojik seviyede, logic gates dediğimiz elemanlarla yapılıyor.
+
+609
+01:18:04,716 --> 01:18:09,295
+Bunun detaylarını, logic devreler, bizde öyle bir ders var veya digital design diye geçer.
+
+610
+01:18:09,816 --> 01:18:11,736
+Orada bakacaksınız, orada göreceksiniz bunları.
+
+611
+01:18:13,436 --> 01:18:17,335
+Instruction execution, instruction set encoding dedik.
+
+612
+01:18:17,335 --> 01:18:19,275
+Bir şey daha söyleyecektim burada.
+
+613
+01:18:22,396 --> 01:18:24,716
+İşlemciden bir şey daha söyleyecektim de.
+
+614
+01:18:25,315 --> 01:18:26,835
+Neyse birazdan aklıma gelir herhalde.
+
+615
+01:18:28,875 --> 01:18:31,375
+Komut çevrimi buradaki işlemlere göre yapılıyor.
+
+616
+01:18:31,495 --> 01:18:33,275
+Yani bir komut getirilecek.
+
+617
+01:18:34,716 --> 01:18:45,915
+Encode edilmiş komuta göre yani bir çözüm decode işlemi yapılacak. Daha sonra execution yapılacak ve komutun sonucu neyse gerekirse belleğe yazacağız. Instruction set, instruction cycle'a göre.
+
+618
+01:18:48,296 --> 01:18:55,415
+S, de de, RAM'de 3 aşağı 5 yukarı veriler bu şekilde saklanıyor dedik. Bunu da söyledik. Peki.
+
+619
+01:18:55,415 --> 01:19:15,936
+Biz problem çözmek istediğimizde demek ki CPU kullanacağız. Ondan sonra RAM'i kullanacağız. Herhangi bir gerçek dünya problemini ele aldığımızda girip bir CPU'nun komut setindeki bütün komutları ezberlemek zorundayız o zaman.
+
+620
+01:19:15,936 --> 01:19:24,795
+Değil mi? RAM'in belli stüksiyonlarını bilmek zorundayız. Öyle görünüyor. Şu ana kadar anlattıklarımda.
+
+621
+01:19:25,415 --> 01:19:27,335
+Makul mü sizce bu?
+
+622
+01:19:29,675 --> 01:19:32,315
+Bir problem çözeceğiz. İşlemci ne yapıyor?
+
+623
+01:19:33,535 --> 01:19:36,995
+En detaylı kadar. Ondan sonra RAM ne yapıyor? Onları bilmemiz lazım.
+
+624
+01:19:37,055 --> 01:19:38,915
+Veya buslar nasıl çalışıyor? Evet Recep?
+
+625
+01:19:40,755 --> 01:19:44,875
+Bence bazı durumlar için değil, performans gerektiren durumlar için değil en azından.
+
+626
+01:19:45,055 --> 01:19:49,735
+Çünkü bir şey yapınca biz birçok platformda çalışmak isteyebiliriz diye düşünüyorum.
+
+627
+01:19:49,735 --> 01:19:51,855
+Her platformun içine ayrı geliştirmek zaman alır.
+
+628
+01:19:53,576 --> 01:19:53,895
+Tamam.
+
+629
+01:19:53,895 --> 01:20:05,375
+Hocam bir insan için bunu yapmak çok zor olur yani bütün instruksiyonları falan eczeplemek bayağı zor olur.
+
+630
+01:20:06,295 --> 01:20:07,815
+Evet tamam işte hepiniz cevap.
+
+631
+01:20:08,635 --> 01:20:11,495
+Çünkü işlemciden işlemciye bir kere değiştiğini söyledik arkadaşlar.
+
+632
+01:20:11,835 --> 01:20:13,695
+En basitinden instruksiyon set değişiyor.
+
+633
+01:20:14,195 --> 01:20:21,835
+Yani mikrodenetleyici, gömrü sistem dersi falan alırsanız orada işte PIK mikrodenetleyicileri Türkiye'de çok anlatılır.
+
+634
+01:20:21,835 --> 01:20:28,775
+Bunun PIC 16 F84 diye eğitimde çok kullanılan bir şey vardır, entegresi vardır.
+
+635
+01:20:29,475 --> 01:20:33,675
+PIC 16 F877 miydi, 876 miydi?
+
+636
+01:20:34,135 --> 01:20:38,375
+Şundan şuna geçişte bile, F84A'yı da hatta şu.
+
+637
+01:20:39,095 --> 01:20:41,755
+Bundan buna geçişte bile inanılmaz farklılıklar var.
+
+638
+01:20:41,875 --> 01:20:44,035
+Çünkü şey değişiyor, instruction set değişiyor.
+
+639
+01:20:44,035 --> 01:20:49,355
+O instruction setin, yani işlemcinin anlayacağı dilden konuşmak gerekiyor.
+
+640
+01:20:49,355 --> 01:20:52,915
+İşlemcinin anlayacağı değil de onun içerisinde tanımlanmış olan Instruction Set.
+
+641
+01:20:53,376 --> 01:20:58,016
+Bir sürü belki milyar tane işlemci var. Bunları biz ne yapamayız?
+
+642
+01:20:58,915 --> 01:21:00,355
+Hani ezberleyemeyiz.
+
+643
+01:21:00,535 --> 01:21:04,936
+Ne bileyim ezberlesek bile açıp sıfır ve birileri yazarak veya asamideinde bir şey yapamayız.
+
+644
+01:21:05,736 --> 01:21:07,076
+Hani yapılabilen durumlar var.
+
+645
+01:21:07,456 --> 01:21:12,055
+Çok low level seviye programlı geliştirme, gömülü yazılım geliştirme olabilir.
+
+646
+01:21:12,596 --> 01:21:15,816
+O tarz durumlarda bir şey yapılabilir ama çok makul görünmüyor.
+
+647
+01:21:15,815 --> 01:21:30,735
+Şimdi gerçek dünya problemini çözebilmek için tamam işlemcinin ne olduğunu, üzerindeki spesifikasyonun ne olduğunu bileceğiz ama bu bizim için problem çözmemize başka engeller teşkil ediyor.
+
+648
+01:21:30,735 --> 01:21:34,735
+Onun için üzerinde çalıştığımız hardware'e
+
+649
+01:21:37,076 --> 01:21:50,275
+bağımlı bir dil var arkadaşlar. Buna machinele güçlüyoruz. Bu hardware dependent'dır. Yani işlemci değişir, bu dil değişir.
+
+650
+01:21:50,275 --> 01:22:03,576
+Bunun doğrudan kendisinin eküvalenti diyebileceğimiz assembly dili vardır. Bu da hardware dependent'dır.
+
+651
+01:22:03,796 --> 01:22:16,796
+Ve bunlarla program yazabilmek hem taşınabilirlik açısından hem de çok rahat kodlama açısından, işte bir web sayfası yapacağız, kimse assembly de yapmaz bu işi veya makine dilinde yapamaz, yapamazdı zaten.
+
+652
+01:22:16,796 --> 01:22:32,796
+İnteraktivitenin fazla olduğu, kullanıcıya daha çok hitap eden veya temel donanıma doğrudan erişimi gerektirmeyen bir mekanizmayla, bir katmanla, bir şeyle program yazmamız gerekiyor.
+
+653
+01:22:32,796 --> 01:22:34,275
+Buna programlama dilleri diyoruz.
+
+654
+01:22:35,716 --> 01:22:40,895
+Bu hardware independent bir şey.
+
+655
+01:22:43,455 --> 01:22:50,976
+Ben çözeceğim herhangi bir problemi bir programlama diliyle günlük hayattaki konuşma dilimize çok yakın.
+
+656
+01:22:50,976 --> 01:22:52,336
+Ne yapıyorum? Kodluyorum.
+
+657
+01:22:53,095 --> 01:22:56,336
+Ve benim bir source oluşuyor.
+
+658
+01:22:56,335 --> 01:23:07,555
+Mesela source code.c,.py, java,.cs falan filan filan.
+
+659
+01:23:09,175 --> 01:23:15,156
+Bu source kodu alıp bir şekilde hardware'in anlayacağı dile çevirmem gerekiyor.
+
+660
+01:23:16,215 --> 01:23:19,195
+Burada bazı programlara, yardımcı programlara ihtiyacım var.
+
+661
+01:23:19,196 --> 01:23:32,395
+Bu kaynak kod alıp yazıncı programlar olarak derleyici veya yorumlayıcı dediğimiz bir mekanizmayla ne yapıyoruz?
+
+662
+01:23:32,956 --> 01:23:38,036
+Nihai olarak diyelim. Arada başka adımlar da var. Belki onları birazdan ekleriz.
+
+663
+01:23:38,796 --> 01:23:40,276
+Makinenin anlayacağı dile çeviriyor.
+
+664
+01:23:41,715 --> 01:23:42,495
+Kaynak kod.
+
+665
+01:23:44,676 --> 01:23:45,836
+Machine kod.
+
+666
+01:23:45,836 --> 01:23:50,316
+Bu makinenin anlayacağı kod executable bir koddur.
+
+667
+01:23:53,136 --> 01:24:06,176
+Mesela bu kodun boyutu ne bileyim 10 bytes ise belki şurada 10 kilobyte gibi bir şunu büyük bir yapalım.
+
+668
+01:24:07,395 --> 01:24:08,796
+Bir şey elde ediyorsunuz.
+
+669
+01:24:08,816 --> 01:24:12,616
+Çünkü burada ekstra kütüphaneler falan işin işine giriyor veya başka değerler.
+
+670
+01:24:12,615 --> 01:24:28,815
+Böyle makinenin doğrudan çalıştırabileceği çünkü o makineye otantike olan bir kod elde ediyor ve bu executable bir programı ben çift tıkladım çalıştırdım veya ne bileyim comment line'dan açtım.
+
+671
+01:24:28,815 --> 01:24:41,455
+Ne haline geliyor? Bu bir proses haline geliyor. Daha sonra işlemci de yürütülüyor. Demek ki böyle bir aşamadan geçiyor. Bizim demek ki bir programlama dilini kullanmamız lazım.
+
+672
+01:24:41,456 --> 01:24:48,656
+makineyle hitap edebilmek için, donanımla konuşabilmek için ve problemlerimizi donanıma tarif edebilmek için.
+
+673
+01:24:48,736 --> 01:24:49,215
+Evet Recep.
+
+674
+01:24:50,476 --> 01:24:55,236
+Hocam biraz bir soru olacak ama Python makine konulundan mı değerleniyor?
+
+675
+01:24:56,456 --> 01:25:01,995
+Yok onlar interpreter'lı şeyler yani compiler veya interpreter onun için yazdım.
+
+676
+01:25:02,556 --> 01:25:07,276
+Onlar adım adım yorumlayıcılarla dönüştürülüyor.
+
+677
+01:25:07,275 --> 01:25:29,516
+Yani arada şöyle bir şey var. Buna bytecode diyoruz. Aracode. Çünkü işletim sisteminden işletim sistemine o bir ek faktör olarak buraya dahil olacak işletim sistemi. Bu oluşturulan bir şey kaynak kodu bir ara koda dönüştürülüyor.
+
+678
+01:25:29,516 --> 01:25:48,555
+Bu ara kod daha sonra özellikle Java'da Java Virtual Machine gibi veya Python'ın kendine ait mekanizmalarıyla veya C Sharp'ın kendine ait mekanizmalarıyla hangi işletim sistemi üzerinde çalışıyorsak o işletim sisteminin de spesifikasyonlarından geçip makine koduna dönüştürülüyor. Böyle bir yapısı var. Herhalde sen bunu sormak istedin.
+
+679
+01:25:48,555 --> 01:25:50,096
+Evet, sağladım hocam sağ olun.
+
+680
+01:25:50,095 --> 01:25:51,915
+Doğrudan pat diye bir dönüşüm yok.
+
+681
+01:25:52,535 --> 01:25:55,915
+Hatta compiler'ın veya interpreter'ın source kodu alıp
+
+682
+01:25:56,020 --> 01:26:04,020
+Ayrıştırması söz konusu. Bu ayrıştırmalarda sintaks analiz, semantik analiz gibi analizler yapması söz konusu. Çok çok da detaylı şeyler.
+
+683
+01:26:04,020 --> 01:26:14,020
+Onları belki programlama dillerinin kavramları veya şu hesaplama kuramı gibi bir dersler var veya compiler design dersleri var. Orada daha teferruatlı anlatılıyor.
+
+684
+01:26:16,020 --> 01:26:19,020
+Biz burada kısaca böyle söyleyip geçelim.
+
+685
+01:26:19,020 --> 01:26:35,799
+Demek ki bir programlama dili öğreneceğiz ve bu yaptırmak istediklerimizi bir şekilde donanıma tarif edeceğiz. Donanıma ne dersek donanım onu kendi komut repertuarında veya instruction setinde bulunan komutlarla gerçekleştirecek.
+
+686
+01:26:35,799 --> 01:26:46,579
+Mesela bir çarpma işlemi benim işlemcimde yoksa bunu diğer işlemler cinsinden tarif edebilmem lazım.
+
+687
+01:26:47,219 --> 01:26:50,579
+Toplama olmasaydı toplamak kendini tarif edemem gerekirdi.
+
+688
+01:26:51,499 --> 01:26:53,579
+Yani gerekirse bit seviyesinde yazmam gerekirdi.
+
+689
+01:26:53,579 --> 01:27:02,339
+Yani nihayet Allah'tan toplama, çıkarma, çarpma, bölme gibi temel işlemler veya atama işlemleri, karşılaştırma işlemleri hemen hemen her instruction sette bulunuyor.
+
+690
+01:27:02,339 --> 01:27:11,159
+Mesela mikro işlemci dersinde göreceksiniz bu PIC'te doğrudan şey yoktu.
+
+691
+01:27:12,680 --> 01:27:16,579
+8086 işlemcilerde CMP diye bir komut var.
+
+692
+01:27:16,579 --> 01:27:17,139
+Compare.
+
+693
+01:27:18,479 --> 01:27:23,439
+AX'i isterseniz iki register içerisinde karşılaştırıyor, bize bir değer döndürüyor.
+
+694
+01:27:24,060 --> 01:27:26,859
+Bu PIC'lerde öyle bir şey yoktu CMP diye bir komut.
+
+695
+01:27:27,219 --> 01:27:28,420
+Çıkarma yapmak gerekiyordu.
+
+696
+01:27:28,420 --> 01:27:36,979
+veya başka bir mekanizmada işte başka bir şey yapmak gerekiyor gibi ne varsa onun için yazmak gerekiyor.
+
+697
+01:27:36,979 --> 01:27:43,360
+Hele low level seviye bir şey yazacaksanız ASEM dilinde bunu yazmak daha zor.
+
+698
+01:27:43,479 --> 01:27:48,900
+Onun için programlama dilleri bize çok çok kolaylık sağlıyor programları yazabilmek için.
+
+699
+01:27:50,040 --> 01:27:56,240
+Bu neden bir anda işte yıllardır programlama dilleri belli bir devreye gelmemiş?
+
+700
+01:27:56,239 --> 01:28:08,299
+İşte bu bilgisayarların öncelikle askeri alanda, daha sonra sağlık alanda, stratejik alanlarda kullanılması, daha sonra kişisel olarak yaygınlaşması bu interaktifite bir anda hemen ihtiyaç haline gelmedi insanlarda.
+
+701
+01:28:08,959 --> 01:28:15,299
+Yani 30 yıl öncesinde internet yoktu ama 30 yıl öncesinde bilimsel hesaplamalar, askeri uygulamalar yaygınlık olarak kullanılıyordu.
+
+702
+01:28:15,299 --> 01:28:23,799
+Bu zamanla insanların gereksinimleri değiştikçe makinelerde farklı bir gereksinimlerle şeyler, farklı hizmet sunar geldiler.
+
+703
+01:28:23,799 --> 01:28:39,339
+Şimdi burada söyleyeceğim şey veriyi saklarken bir de onu atladık. Veriyi nasıl tepsil edebiliriz sıfır ve birilerle olacağını konuştuk da veri dediğimiz şey ne? Onu konuşalım.
+
+704
+01:28:39,339 --> 01:28:49,880
+Günlük hayatta aslında veriler çoğunlukla analog. Mesela tekst verileri analog data diyelim.
+
+705
+01:28:49,880 --> 01:28:53,559
+Sonra numbers.
+
+706
+01:28:54,559 --> 01:28:57,600
+Numbers başlığı altında integers alabiliriz.
+
+707
+01:28:58,760 --> 01:29:00,900
+Floating point numbers da alabiliriz.
+
+708
+01:29:02,159 --> 01:29:02,939
+Floating point.
+
+709
+01:29:04,159 --> 01:29:06,359
+Sonra kompleks number'lar da alabiliriz mesela.
+
+710
+01:29:09,060 --> 01:29:10,939
+Başka aklıma sayı gelmiyor.
+
+711
+01:29:10,939 --> 01:29:14,340
+Sonra binary veya boolean dediğimiz verileri alabiliriz.
+
+712
+01:29:15,479 --> 01:29:16,479
+Başka ne var?
+
+713
+01:29:17,380 --> 01:29:19,359
+İmaj dediğimiz mesela bir veri var.
+
+714
+01:29:19,880 --> 01:29:41,199
+Analog olarak. Sound veya voice diyebileceğimiz bir başka veri var. Sonra video diyebiliriz. Veya herhangi bir büyüklük. Büyüklüğün İngilizcesi. Yani bir fiziksel büyüklük, fiziksel data diyelim. Any data, any type of data.
+
+715
+01:29:45,779 --> 01:29:54,779
+Bu tarz verileri günlük hayatta biz analog dünyamızda çok çok kullanıyoruz.
+
+716
+01:29:54,779 --> 01:29:59,779
+Metinler mesela karakterlerden oluşuyor. Hatta şuraya karakter ekleyelim.
+
+717
+01:29:59,779 --> 01:30:10,779
+Bunların da artık sıfır ve birlerle kodlanması lazım. Bunların da belli bir sistematiğe göre yapılması gerekiyor.
+
+718
+01:30:10,779 --> 01:30:24,120
+Şimdi karakter dediğim şey büyük A'dan başlasın Z'ye kadar ondan sonra küçük A'dan Z'ye kadar ondan sonra soru işaret, punctuation'lar şunlar falan var.
+
+719
+01:30:24,960 --> 01:30:27,479
+Veya klavye üzerindeki farklı simgeleri görelim.
+
+720
+01:30:28,320 --> 01:30:35,479
+Bunların belli bir sistematikle sıfır ve birler cinsinden kodlanması ve bir sözlük mantığıyla oluşturulması gerekiyor.
+
+721
+01:30:35,480 --> 01:30:39,120
+Yani öyle bir geri güzel kodlanıyor.
+
+722
+01:30:39,259 --> 01:30:41,620
+Yani A dediğim şu 0 ve 1'lerden olsun.
+
+723
+01:30:41,779 --> 01:30:43,960
+Ondan sonra büyük B diğer 0 ve 1'lerden.
+
+724
+01:30:44,140 --> 01:30:46,720
+Bunların arasında böyle bir rastgele bir durum değil.
+
+725
+01:30:47,120 --> 01:30:48,439
+Bir mantıkla kodlanması gerekiyor.
+
+726
+01:30:48,439 --> 01:30:57,460
+İşte ASCII dediğimiz veya Unicode dediğimiz yapılar bunları ne yapıyor?
+
+727
+01:30:57,540 --> 01:30:59,199
+Belli bir sistematiğe göre oluşturuyor.
+
+728
+01:30:59,919 --> 01:31:04,400
+Benim en çok verdiğim örnek burada büyük A 65'e karşılık gelir.
+
+729
+01:31:04,399 --> 01:31:07,499
+Küçük A, 97'ye karşılık gelir.
+
+730
+01:31:07,659 --> 01:31:16,439
+Bunun enleri olarak açarsak, 0, 1, 0, 0, 0, şu olacak herhalde.
+
+731
+01:31:17,299 --> 01:31:20,539
+2 üzeri 6, 64, bir de şu 65.
+
+732
+01:31:21,319 --> 01:31:23,879
+Şu da, 97'de şudur.
+
+733
+01:31:26,259 --> 01:31:27,879
+Büyük B, 66'dır.
+
+734
+01:31:28,159 --> 01:31:29,619
+Küçük B, 98'dir.
+
+735
+01:31:29,699 --> 01:31:30,659
+Böyle devam eder gider.
+
+736
+01:31:30,659 --> 01:31:38,839
+Şimdi şu bit'e baktığımızda, çok seçemiyorum ama, 0'dan 1'e bir dönüşüm.
+
+737
+01:31:38,919 --> 01:31:43,199
+Yani artı 32'lik bir fark vardır ASCII kod tablosunda.
+
+738
+01:31:43,839 --> 01:31:51,019
+Yani bir shift tuşuna veya capstock'a bastığımızda arka planda olan bu bit'in değişmesi oluyor arkadaşlar.
+
+739
+01:31:52,959 --> 01:31:59,179
+Çünkü o klavyeden her yaptığınız bir tuş 0 ve 1'e dönüştürülecek.
+
+740
+01:31:59,179 --> 01:32:09,619
+Bu dönüşümü yaparken öyle bir mantıksal, öyle bir hız olsun ki çok fazla gecikme olmasın, çok fazla maliyet meydana getirmesin. Evet, şimdi alabiliriz.
+
+741
+01:32:10,839 --> 01:32:17,619
+Hocam, sonda yazdığınız çarın kozunda sonda bir olması gerekmiyor mu? Son halesinde.
+
+742
+01:32:18,619 --> 01:32:28,339
+Aynen öyle, aynen öyle. Teşekkür ederim. Şu da bir olacak. Yani bir bit değişim sadece şu olacak. Aynen öyle.
+
+743
+01:32:29,179 --> 01:32:41,399
+Mesela karakterler bu şekilde. Ben bu karakterleri bir araya getirerek, aynı mantıkla yani birbirine concatenation dediğim, bitiştirerek tekstleri veya stringleri oluşturacağım. Karakter katarı dediğimiz şeyler.
+
+744
+01:32:42,679 --> 01:32:46,039
+Boşluk da mesela bunlara dahildir. Yani aradaki boşluk.
+
+745
+01:32:46,779 --> 01:32:54,539
+Şimdi sayılar dediğim şey, sayı kümelerini düşündüğünde pozitif sayılar var. İşte doğal sayılar var, negatifler var.
+
+746
+01:32:54,539 --> 01:33:01,140
+Bunların da belli bir mantıkla, belli bir sistematikle kodlanması gerekiyor.
+
+747
+01:33:01,239 --> 01:33:05,959
+Şimdi integer dediğimiz tam sayılar genel olarak pozitif ve negatif değerleri içeriyor.
+
+748
+01:33:06,599 --> 01:33:08,119
+Burada iki bilgi saklanıyor arkadaşlar.
+
+749
+01:33:08,359 --> 01:33:11,419
+Bir işaret bilgisi, bir de büyüklük bilgisi.
+
+750
+01:33:11,599 --> 01:33:20,119
+Şimdi ben bir bellek elemanımda veya işlemci üzerinde veya bir komut setimde herhangi bir yerde,
+
+751
+01:33:20,119 --> 01:33:28,299
+0 ve 1'lerin olduğu herhangi bir yerde bir şeyi işaret olarak bu 0 ve 1'lerin bulunduğu hücrelerden bir yeri işaret olarak söyleyeceğim.
+
+752
+01:33:28,979 --> 01:33:30,860
+Bir yeri büyüklük olarak söyleyeceğim.
+
+753
+01:33:31,860 --> 01:33:33,159
+Bunun neresi olarak yapılabilir?
+
+754
+01:33:33,360 --> 01:33:35,059
+Ya şuraya koyarız ya buraya koyarız.
+
+755
+01:33:35,199 --> 01:33:37,720
+Ortada bir yere de konur da mesela burada kaç tane?
+
+756
+01:33:37,799 --> 01:33:41,339
+8 tane 8 bitlik bir bellek elemanı olsun, hafıza birimi olsun.
+
+757
+01:33:42,707 --> 01:33:58,067
+Yani kabul edebiliriz ki şurası işaret olsun diyebiliriz mantıken ama çok sağlıklı bir mantık değil. Niye? Aradaki diğer şeyleri pars etmek gerekiyor, değiştirmek gerekiyor, maskeleme yapmak gerekiyor. Onun için genellikle ya şurası ya da burası.
+
+758
+01:33:58,067 --> 01:34:07,807
+Bu kodlama sistemini kullananlar şu msb most significant bit dediğimiz kısmı işaret olarak sign biti olarak ifade etmiş.
+
+759
+01:34:08,388 --> 01:34:13,647
+Bu sign biti biliyorsunuz 1 ise negatif değerli negatif diyelim.
+
+760
+01:34:15,908 --> 01:34:16,447
+Negatif.
+
+761
+01:34:17,187 --> 01:34:21,127
+Sıfır ise pozitif bilgiyi taşıyor.
+
+762
+01:34:21,647 --> 01:34:25,167
+Geri kalan işte buradaki 7 bit de büyüklük bilgisini taşıyor.
+
+763
+01:34:25,167 --> 01:34:35,667
+Mesela integer kaç bit C'yi geçen dönem gördünüz? 4 byte yani 32 bit.
+
+764
+01:34:36,748 --> 01:34:44,068
+Integer pozitif ve negatif değerleri sakladığı için bunun range'ine bakmak istediğimizde tamam 1 bit işarete gitti.
+
+765
+01:34:44,467 --> 01:34:52,847
+Sıfır var. Sıfırdan öyle bir yere doğru gideceğiz ki 2 üzeri 31 eksi 1'e kadar gideceğiz range'imiz maksimum.
+
+766
+01:34:52,847 --> 01:34:56,707
+Bir de geriye doğru 2 üzeri 31 tabi eksi 2 üzeri 31 olacak.
+
+767
+01:34:57,587 --> 01:35:02,407
+Bu değere kadar bütün şeyleri 32 bittik bir integer'da saklayabiliyoruz.
+
+768
+01:35:02,468 --> 01:35:06,047
+Yetmiyorsa işte bunu 8 byte yaparsınız veya 16 byte yaparsınız.
+
+769
+01:35:06,727 --> 01:35:08,508
+Daha farklı şeyler saklayabiliriz.
+
+770
+01:35:08,888 --> 01:35:11,388
+Mantık sistematik bu integer'lar da böyledir.
+
+771
+01:35:12,807 --> 01:35:19,888
+Şimdi floating point'lere baktığımızda floating point'ler işte artı eksi 3,25.
+
+772
+01:35:19,888 --> 01:35:21,648
+Bir işaret biti var.
+
+773
+01:35:21,647 --> 01:35:23,247
+Yine o işaret biti burada aynı.
+
+774
+01:35:23,507 --> 01:35:24,587
+Sine diyoruz.
+
+775
+01:35:26,207 --> 01:35:29,787
+Virgülden öncesi için bir şey, virgülden sonrası için başka bir şey konuya.
+
+776
+01:35:30,027 --> 01:35:33,267
+Bunun detaylarını geçen dönem anlatmışlardır diye tahmin ediyorum.
+
+777
+01:35:33,427 --> 01:35:36,087
+Anlatılmadıysa gelecek döneme birkaç örnek belki yaparız.
+
+778
+01:35:36,807 --> 01:35:37,767
+Birazdan size sorayım.
+
+779
+01:35:39,047 --> 01:35:45,467
+İşte mantı sava eksponant diye bir yer virgülden önceki kısımları, bir yer virgülden sonraki kısımları içeriyor.
+
+780
+01:35:45,467 --> 01:35:54,027
+Bunun bir notasyonu bu şekilde bir mantığı olmakla beraber bu mantık kişiden kişiye yani sistemden sisteme değişir.
+
+781
+01:35:54,407 --> 01:35:56,827
+Artık bunun bir standartı olması lazım.
+
+782
+01:35:57,007 --> 01:36:00,147
+Notasyon biraz farklı bir şey, standart farklı bir şey.
+
+783
+01:36:00,147 --> 01:36:03,987
+Şimdi matematikte notasyonlar vardır.
+
+784
+01:36:04,847 --> 01:36:07,507
+Aynı işlemi yapan birkaç farklı notasyon görebilirsiniz.
+
+785
+01:36:08,568 --> 01:36:12,967
+Ama standart olursa herkes tarafından aynı yapılması gerekiyor.
+
+786
+01:36:12,967 --> 01:36:29,087
+Bunun için, bu işlem için, şurada oku çıkaralım, IEEE 754.2 miydi? 754.1 floating point standartı çıkmış.
+
+787
+01:36:31,467 --> 01:36:39,367
+Bunun iki tane versiyonu var, single precision ve double precision diye 32 bit ve 64 bit tek.
+
+788
+01:36:39,368 --> 01:36:43,008
+Sadece işte 64 daha hassas şeyi saklıyor.
+
+789
+01:36:43,648 --> 01:36:45,368
+Niye daha hassas şeyi saklayacak?
+
+790
+01:36:45,487 --> 01:36:47,968
+Çünkü sayısal analizde de göreceğiz.
+
+791
+01:36:48,068 --> 01:36:49,407
+Hassasiyet bizim için önemli bir şey.
+
+792
+01:36:49,508 --> 01:36:53,688
+Ne kadar çok virgüllü sayılarda hassas olursa hatayı o kadar azaltırız.
+
+793
+01:36:54,847 --> 01:36:56,188
+Hep söylerim örnek olarak veririm.
+
+794
+01:36:56,288 --> 01:37:00,008
+Mayın tarayacaksanız başarınız %90 olsa sıkıntılı olabilir.
+
+795
+01:37:00,508 --> 01:37:01,668
+Çünkü o %1 problem.
+
+796
+01:37:02,288 --> 01:37:04,588
+Ama ne bileyim işte müzik üzerinde işlem yapacaksın.
+
+797
+01:37:04,728 --> 01:37:06,788
+%80 olmuş, %85 olmuş çok önemli değil.
+
+798
+01:37:06,788 --> 01:37:08,388
+Bu hassasiyeti sağlama kadına.
+
+799
+01:37:09,367 --> 01:37:12,027
+kullanılan alternatiflerden bir tanesi.
+
+800
+01:37:12,527 --> 01:37:16,347
+Mesela karmaşık sayılar işte iki tane alandan oluşuyor.
+
+801
+01:37:16,947 --> 01:37:19,267
+Her ikisi de bir floating point olur mu? Olur.
+
+802
+01:37:19,267 --> 01:37:24,607
+O zaman iki tane floating point'i bir araya getirirsem, yani A artı B, İ.
+
+803
+01:37:24,807 --> 01:37:29,507
+Bir de o ikincinin önüne İ gibi bir şeyi varsayarsam karmaşık sayı kodlayabiliyorum.
+
+804
+01:37:30,067 --> 01:37:35,507
+Boolean dediğim şey zaten 0 ve 1'in kendisinde doğrudan 0 ve 1 olan veya burada true false olarak,
+
+805
+01:37:36,207 --> 01:37:37,307
+false true diyelim.
+
+806
+01:37:39,367 --> 01:37:40,607
+olarak saklayan
+
+807
+01:37:41,844 --> 01:38:07,844
+kodlanan bir şey. Şimdi bunlar temel veri tipleridir arkadaşlar. Bunlara biz programlamada genellikle primitifler diyoruz. İlkel veri tipleri. Yani fiziksel hemen hemen her bir büyüklüğü doğrudan bir sayı içeren veya işte ne bileyim bir karakter, bir metin içeren her bir büyüklüğü bunlarla ifade edebiliriz.
+
+808
+01:38:07,844 --> 01:38:23,844
+Şimdi bunlardan yola çıkarak her problemi çözebilmek mümkün değil. Mesela bir görüntü saklayacağız. Görüntü dediğimiz şey satır ve sütunlardan ve onların kesişiminden oluşan piksel dediğimiz elemanlarda oluşan bir veridir.
+
+809
+01:38:25,323 --> 01:38:34,283
+Fotoğraf şekliniz işte bunun satırları vardır, sütunları vardır. Buna çözünürlük diyoruz. Ne kadar fazla satır ve sütun olursa o kadar fazla çözünürlük oluyor.
+
+810
+01:38:34,283 --> 01:39:01,823
+Ne yapıyor? Bir analog datayı örnekleme yaparak bir kamera, bir lens yardımıyla örnekleme yaparak dijitale dönüştürüyor. Bu örnekleme yapmak birazdan detaylı olarak söyleyeceğim. Ne yapmak? Orijinal fiziksel bir büyüklüğü, analog bir büyüklüğü belli bir kayıpla aslında şey yapmak, simgelemek, saklayabilmek. Sakladığımız şey de işte burada satırlar ve üstünlüğü şunların her bir elemanına piksel diyoruz.
+
+811
+01:39:01,823 --> 01:39:08,183
+Bu pix'in içerisinde olabilecek en fazla sayı kaç olacak?
+
+812
+01:39:08,443 --> 01:39:11,083
+Bunu ben şu integer'larla sağlıyorum aslında.
+
+813
+01:39:11,883 --> 01:39:13,863
+Tabii pozitif integer'larla genellikle sağlıyorum.
+
+814
+01:39:13,943 --> 01:39:21,043
+İşte sıfırdan 255'e kadar bir kodlama yapmak istersem 256 tane farklı renk şekli olur.
+
+815
+01:39:21,663 --> 01:39:23,563
+Yani bu 8 bitle bu işi hallederiz.
+
+816
+01:39:23,703 --> 01:39:26,863
+Her bir pix'lerin içinde 8 tane bit olacak.
+
+817
+01:39:27,603 --> 01:39:29,563
+Sonra da diyeceğim ki bir kabul yapacağım.
+
+818
+01:39:29,564 --> 01:39:48,183
+0 diyeceğim simsiyah, 255'te bembeyaz. 0'dan 255'e siyahtan beyaza bir geçiş. Böyle bir derecelendirme yapacağız. Bir interpoasyon gibi bir şey aslında. Bu şekilde bunu bellekte saklamaya çalıştığınızda şöyle bir şey oluyor arkadaşlar. Bir görüntü şuraya yazayım daha sonra sileceğim.
+
+819
+01:39:48,183 --> 01:39:59,863
+Şu bellek dediğimiz şey aslında yani RAM tek boyutlu bir şey. İstersen burada imaj sakla, istersen video sakla, ne saklarsan sakla. Her şey sonuçta tek boyutlu halde.
+
+820
+01:40:00,603 --> 01:40:07,344
+İşte şuraya sıfıra sıfır yani bir matriz gibi düşünürsek sıfıra sıfırıncı piksel burada saklanacak.
+
+821
+01:40:07,344 --> 01:40:14,344
+İşte sıfıra bir burada saklanacak. Bunun en tane satırı en tane sütunu olursa da
+
+822
+01:40:14,344 --> 01:40:20,084
+m-1'e n-1 şurada saklanacağım.
+
+823
+01:40:20,784 --> 01:40:28,924
+Buradaki 0'a 0'dan m çarpı n'e kadarki kısım bana çözünürlüğü bir boyut bilgisi veriyor.
+
+824
+01:40:29,683 --> 01:40:35,323
+Ne kadar çözünürlüğüm fazla olursa o kadar fazla örnekleme yapmışım demektir gerçek dünya.
+
+825
+01:40:35,323 --> 01:40:38,724
+O kadar iyi mi? İyi. Tabii kapasiteyi arttırıyoruz.
+
+826
+01:40:38,723 --> 01:40:51,223
+Bir de bu çözünürlüğün olduğu şu aradaki size yani şu uzunluk ne kadar fazla olursa renk aralığındaki renk geçişlerini o kadar fazla çeşitlendirmişim demektir.
+
+827
+01:40:51,703 --> 01:40:55,543
+İşte burada 8 bit olur, 16 bit olur, 32 bit olur daha fazla olabilir.
+
+828
+01:40:56,003 --> 01:40:58,483
+Bu da renk çeşitliliğini sağlayan bir şey.
+
+829
+01:40:58,483 --> 01:41:04,483
+O zaman bir resmin boyutunu hesaplayalım dersek bir de buna gri seviye diyoruz.
+
+830
+01:41:04,483 --> 01:41:17,403
+Ne diyebiliriz? M çarpı 8 bit bizim resmimizin M çarpı N'e de mesela buna 10 diyelim.
+
+831
+01:41:18,403 --> 01:41:32,823
+Buna da 10 diyelim pek 10 olmaz da yani çarpı 8 bit. Ne oluyor? 800 bit veya bunu byte'a çevirelim dersek 100 byte'lık bir resim elde ediyoruz.
+
+832
+01:41:32,823 --> 01:41:34,543
+Az bir şey, çok fazla değil.
+
+833
+01:41:35,828 --> 01:41:53,828
+Bununla alakalı birkaç hesaplama örneği birazdan yapacağız. Şunlar ne kadar fazla olursa resmimizin çözünürlüğü o kadar iyi, şu ne kadar fazla olursa renk detayları o kadar iyidir diyoruz. Ama yaptığımız her şey içerisinde integer saklamak. O integer'ların da burada 0 ve 1'lerden nasıl kullandığını söyledik.
+
+834
+01:41:53,828 --> 01:42:19,668
+Ses de o şekilde. Hani müzik olur veya bu insan sesi veya speech veya herhangi bir sesi olabilir. Sesin özelliği şudur. Veriyi tek bir boyutlu bir dizi yapıyoruz arkadaşlar. Bu görüntü iki boyutlu. Ses tek boyutlu. Yani ses dediğimiz şey de şöyle bir dalga. Bir sesinizi kaydedip bunun dalga formuna bakarsanız bunu elde edersiniz.
+
+835
+01:42:19,668 --> 01:42:36,247
+Burada yine örneklerimiz var. Bu örnekler belli bir örnekleme frekansına göre artıyor. Bakın burada çözünürlükten bahsettik. Burada sesin çözünürlüğü bir örnekleme frekansına göre oluşuyor.
+
+836
+01:42:36,728 --> 01:42:46,207
+Demişler ki bunu insan kulağında sesleri temsil etmek için bir standartını belirleyelim. Bunun bir sürü standartı var. Şimdilik şunu siliyorum.
+
+837
+01:42:46,207 --> 01:43:02,227
+Bu standart mesela insan kulağı için ve CD kalitesi için FS44100 Hz olarak belirlenmiş. Yani saniyede 44100 tane örnek alarak, dizi elemanı alarak bir ses dosyası saklanıyor.
+
+838
+01:43:03,227 --> 01:43:14,227
+Eğer ben bunu 22.050'ye yani yarıya çevirirsem, YouTube'da 2x yapıyorsunuz ya veya dersleri kayıttan dinlerken örnekleme frekansını düşürmüş oluyorsunuz.
+
+839
+01:43:14,228 --> 01:43:17,708
+Daha örnekler, örnek atlayatlayabiliyorsunuz.
+
+840
+01:43:18,488 --> 01:43:23,448
+Biraz daha azaltırsanız daha hızlı çalışıyor ama kulak ne oluyor? Algılamıyor.
+
+841
+01:43:23,948 --> 01:43:27,708
+İşte kulağın algılama hızı, insan kulağı hangi aralıkları duyar?
+
+842
+01:43:28,408 --> 01:43:33,688
+2 Hz ile 20 kHz arasını duyar arkadaşlar.
+
+843
+01:43:33,848 --> 01:43:35,967
+Bu 20 kHz 20.000 Hz'tir.
+
+844
+01:43:36,868 --> 01:43:42,908
+Bakın bu 20.000 Hz'in en az 2 katı olursa çok kaliteli bir şey olsun diye ne oluyor?
+
+845
+01:43:42,907 --> 01:43:45,447
+44100 demişler bunu.
+
+846
+01:43:45,567 --> 01:43:48,507
+Tabii bu güncel işte DVD'lerde kilohertzler seviyesinde.
+
+847
+01:43:48,507 --> 01:43:54,947
+Yani 20 kilohertz'in biraz üzerinde olacak ki ne duyduğumuzu anlamlandırabilelim.
+
+848
+01:43:55,027 --> 01:43:57,828
+Anlaşılır olsun. Kulak bunu hissedebilir olsun.
+
+849
+01:43:58,467 --> 01:44:00,927
+Hatta YouTube'da açarsanız duyma testleri vardır.
+
+850
+01:44:01,507 --> 01:44:05,187
+İşte belli bir düşük frekanstan başlar, yüksek frekanstan dalgalara doğru gider.
+
+851
+01:44:05,828 --> 01:44:07,707
+2 kilohertz'da duymaya başlarsınız.
+
+852
+01:44:08,267 --> 01:44:11,267
+20 kilohertz'da da kalmazsınız. O daha önceden duyma kesilir.
+
+853
+01:44:11,268 --> 01:44:25,588
+Orada bir dalga sinyalı vardır, ses vardır. Onu duyamayız. Demek ki saniyede en az 44100 tane sample örnek olacak çözünürlükte. Burada nasıl M çarpı N kadarsa burada 44100 tane örnek olacağını görüyoruz.
+
+854
+01:44:25,587 --> 01:44:33,507
+4 dakikalık bir müziğin boyutu nasıl dersek CD kalitesindeki bir müziği 4 dakika dediğim şey 4 çarpı 60 saniyedir.
+
+855
+01:44:34,127 --> 01:44:41,947
+Bu her bir saniyesi de 44 bin 100 tane eleman alacaksa bu kadar tane bellek elemanına ihtiyacım var.
+
+856
+01:44:41,947 --> 01:44:47,167
+Yani şu biraz önce M çarpı N dediğim şey şu hücrelerden bu kadar tane olacak.
+
+857
+01:44:47,407 --> 01:44:48,907
+İşte bu sıfırıncı hücre, birinci hücre.
+
+858
+01:44:49,607 --> 01:44:50,707
+Buraya N diyelim.
+
+859
+01:44:51,447 --> 01:44:54,287
+Şurada N tane elemanlık bir bellekte yer ayıracağım.
+
+860
+01:44:54,287 --> 01:45:00,807
+Ve bu ayırdığım her bir hücrenin çözünürlüğü şu dizi içerisindeki yine range'e bakıyor.
+
+861
+01:45:01,527 --> 01:45:06,687
+Eğer bunu işte 10 bitle simgelerse 2 üzeri 10'a kadar.
+
+862
+01:45:06,867 --> 01:45:08,827
+Tabi burada negatif değerler de var.
+
+863
+01:45:09,947 --> 01:45:14,927
+Eksi 2 üzeri 9'dan artı 2 üzeri 9 eksi 1'e kadar değerler değişiyor.
+
+864
+01:45:15,867 --> 01:45:19,747
+Çünkü sesle negatif değerler de olabiliyor ses formunda.
+
+865
+01:45:20,787 --> 01:45:21,887
+Bu şekilde saklıyoruz.
+
+866
+01:45:21,887 --> 01:45:28,807
+O zaman ben şu çözünürlüğü arttırırsam seste de ne yapabilirim? Sesin kitesini arttırabiliyorum.
+
+867
+01:45:29,488 --> 01:45:34,328
+Bu işsel bilgisayarlarımızda sesin çözünürlüğünü değiştirmek için bazı uygulamalar var.
+
+868
+01:45:34,804 --> 01:46:00,283
+Bu bir yere karşı bir yerden sonra çalışmaz. Niye çalışmaz? Ses kartınızın da belli bir çözünürlük değeri vardır. İşte der ki en fazla 20 bit veya 15 bit veya 18 bit veya 16 bit. Genellikle 16 bit falan kullanılıyor. Siz ses kartınızın alabileceği yani işlem yapabileceği kısma kadar sesinizin çözünürlüğünü, pardon sesin seviyesini arttırabiliyorsunuz.
+
+869
+01:46:00,283 --> 01:46:29,423
+Tamam mı? Videodaydı diyeyim şey de arkadaşlar birden fazla imajın ve gerekirse üzerine eklenen bir sesin yani matrisle sesi birleştiriyorsunuz. Saniyede en az 24 taneydi zannediyorum. İmaj bir araya geç bir şey olacak. Belli bir zamana göre değişim. Ve o saniyenin 24 frame'in değişimine uygun olarak bir ses dosyası bir araya getirilecek. Yukarıdaki aynı şeyler burada da yapılıyor.
+
+870
+01:46:29,423 --> 01:46:42,344
+Onun dışında herhangi bir data mesela örnek vermek gerekirse bir aracın hızının zamana göre değişimini kaydediyor bir araç ve bunu biz işleyeceğiz daha sonra.
+
+871
+01:46:43,083 --> 01:46:46,304
+İşte nerede hızlanmış, nerede yavaşlamış, yollar neye göre değişiyor bu.
+
+872
+01:46:46,763 --> 01:46:50,323
+Bu mesela şuradaki sese benzeyen tek boyutlu bir datadır.
+
+873
+01:46:50,323 --> 01:46:57,183
+Zamana göre hızın değişimi veya öğrencinin aldığı dönemlere göre notların değişimi.
+
+874
+01:46:57,344 --> 01:46:58,723
+Bu da bir data şeklidir.
+
+875
+01:46:58,723 --> 01:47:00,884
+Hangi dönemde kaç ortalaması var?
+
+876
+01:47:01,223 --> 01:47:04,823
+Birinci dönemde şu kadar, ikinci dönemde bu kadar veya derslere göre değişim.
+
+877
+01:47:05,363 --> 01:47:09,304
+Bunların hepsi bir veya birden fazla boyuta göre değişen veriler.
+
+878
+01:47:10,304 --> 01:47:12,903
+Burada yapılması genelde soru olarak sorulabilecek,
+
+879
+01:47:12,903 --> 01:47:14,823
+yani biz belki derste burada sormayız da,
+
+880
+01:47:15,524 --> 01:47:18,083
+bir görüntünün boyutu tam olarak nasıl hesaplanır?
+
+881
+01:47:18,723 --> 01:47:21,823
+Veya bir ses dosyası nasıl boyut acıcısından hesaplanır?
+
+882
+01:47:22,403 --> 01:47:28,583
+Veya bir tekste, bir tekst dosyası nasıl bir boyuta sahip olabilir?
+
+883
+01:47:28,583 --> 01:47:57,304
+Bunların tespit edilmesi lazım. Bunun için önce şunları bilmek gerekiyor. Bizim bitlerimiz var. Bu bir bit dediğimiz şey ya sıfır olacak veya bir olacak dedik. Ben bu bir bitle en fazla kaç bilgi saklayabilirim? Ya sıfırı ya bir bir saklayacağım için iki tane bir durum saklayabilirim. Var veya yok gibi bir şey. Mesela şu an bir yoklama yapacak olsam yaptığım yoklamada her birinizin bir bitlik bir veriyle varlığınızı veya yokluğunuzu saklayabilirim.
+
+884
+01:47:57,304 --> 01:48:18,184
+Ama mesela numaralarınızı saklamak istiyoruz. O zaman bu bir bit işe yaramıyor değil mi? Ne olacak? Daha fazla bitlere ihtiyaç var. İşte bunlardan 8 tane bite bir byte denmiş. Bunun 4 biti bir araya gelirse nibble deniyor. Bunları assembly'de daha detaylı anlatıyorlar veya işte lojikte çok fazla girmiyorum.
+
+885
+01:48:18,183 --> 01:48:24,303
+İşte neyse bunun bir tane bir şey daha vardı.
+
+886
+01:48:24,403 --> 01:48:25,523
+Nipple diye bir şey vardı.
+
+887
+01:48:25,743 --> 01:48:28,503
+İlk dörtlüsü nipple, son dörtlüsü nipple falan oluyordu.
+
+888
+01:48:29,523 --> 01:48:31,863
+Bir byte da tabii çok fazla yeterli bir şey değil.
+
+889
+01:48:32,703 --> 01:48:42,903
+Burada ben 1024 tane byte'ı, aslında 1024'ten kastım 2 üzeri 10 tane byte'ı bir araya getirerek bir kilo byte oluşturuyorum.
+
+890
+01:48:43,583 --> 01:48:46,443
+Buradaki kilodan kastımız neymiş demek ki?
+
+891
+01:48:46,443 --> 01:49:01,623
+kilo iki yüzleri ona karşılık yedim. Şöyle diyelim. K eşittir iki yüzleri on. Bu da yetmiyor. Bir yirmi dört tane kilobyte'ı büyük B ile yazıyoruz.
+
+892
+01:49:01,623 --> 01:49:13,804
+Yani iki yüzleri bin yirmi dört tane kilobyte'ı bir araya getirdi. İki yüzleri on tane neyi bulacağım? Mega pardon.
+
+893
+01:49:16,443 --> 01:49:18,684
+Şurayı yanlış yaptık.
+
+894
+01:49:21,044 --> 01:49:22,923
+1024 tane byte, 1 kilobyte.
+
+895
+01:49:23,063 --> 01:49:31,904
+1024 tane kilobyte, yani 2 üzeri 10 tane kilobyte, 1 megabyte.
+
+896
+01:49:31,904 --> 01:49:32,904
+Şimdi...
+
+897
+01:49:33,747 --> 01:49:53,747
+Mega'yı yazarken de şu Mega yerine 2 üzeri 10'u getirdik. Ne oldu? Kiloya ulaşırız. Bu kiloda da bir 2 üzeri 10 vardı. Yani 2 üzeri 20 tane ne oluyor? Aslında bunlar byte cinsinden yazılabiliyor.
+
+898
+01:49:53,747 --> 01:50:01,608
+Şimdi benim bilgisayarım işte 4 megabyte RAM'i var dediğinizde onu birazdan nasıl olacağını, kaç bitten oluşabileceğini yazacağız.
+
+899
+01:50:02,387 --> 01:50:10,788
+Yine 1024 tane megabyte'ı bir araya getirirsek bu 2 üzeri 10 tane megabyte'tır.
+
+900
+01:50:10,788 --> 01:50:16,288
+Bu da 1 gigabyte diyoruz. Demek ki bu 1 gigabyte da giga.
+
+901
+01:50:17,207 --> 01:50:23,247
+2 üzeri 30 byte'a karşılık geliyor. Hatta şunlara B yazalım ne olacak problem değil.
+
+902
+01:50:23,747 --> 01:50:31,727
+terabyte olduğunu söylüyor. Bunları arttırabilir işte terabyte için veya işte zeta, veta falan onlar arttırıp gider bu mantıkla.
+
+903
+01:50:33,047 --> 01:50:38,667
+Şimdi biriniz bir bilgisayarındaki RAM'in kapasitesini söylesin. Hangisi daha fazlaymış onu görelim. Hani bir yarış yapalım.
+
+904
+01:50:44,595 --> 01:50:48,595
+Söyleyin arkadaşlar. Bir arkadaş söylesin, ona göre rastgele bir işlem yapalım.
+
+905
+01:50:50,595 --> 01:50:51,595
+16.
+
+906
+01:50:51,595 --> 01:50:53,595
+6 falan değil mi? Efendim?
+
+907
+01:50:53,595 --> 01:50:54,595
+16.
+
+908
+01:50:54,595 --> 01:50:57,595
+16 Mega mı?
+
+909
+01:50:57,595 --> 01:51:00,595
+16 GB.
+
+910
+01:51:00,595 --> 01:51:03,595
+16 GB RAM varmış, bayağı iyi.
+
+911
+01:51:03,595 --> 01:51:12,595
+Şimdi, bunun kaç bit olduğunu veya bir işlemci bu 16 GB'ı adresleme yapacak.
+
+912
+01:51:12,595 --> 01:51:16,116
+Yani 16 GB biraz önce dedik ya gideceğiz komutu getireceğiz bir adresten.
+
+913
+01:51:16,196 --> 01:51:20,476
+Şimdi bu adresten getirebilmek için adresten yapabilmemiz lazım.
+
+914
+01:51:21,155 --> 01:51:30,915
+Bu 16 GB'ı ben kaç bir şey yapabilirim, temsil edebilirim, kodlayabilirim öyle söyleyeyim.
+
+915
+01:51:30,915 --> 01:51:40,595
+Yani 0.byte, 1.byte, 2.byte, 3.byte, 16 GB.byte gibi en son olması gereken byte gibi bir adresleme yapmam gerekiyor.
+
+916
+01:51:40,595 --> 01:51:56,195
+Bunun için şuradaki dönüşümü kullanacağız. 16 dediğimiz şey 2 üzeri 4'tür. Gigabyte dediğimiz şey de 2 üzeri 30'dur. Bu kadar tane byte ediyor değil mi arkadaşlar? Demek ki 2 üzeri 34 tane byte'a ihtiyacım var.
+
+917
+01:51:56,195 --> 01:52:10,875
+Benim her bir byte'ı göstermek için, o zaman ne yapacağım? Her bir byte için, yani bunu bir 8, belleğimde eğer 8 bitlik elemanlardan oluşuyorsa, ne yapacağız? 34 tane byte ihtiyacım var.
+
+918
+01:52:10,875 --> 01:52:21,276
+Bu 34'den işte 0, 0, 0, 0, 0'dan ne 1, 1, 1, 1, 1, 1, hepsi 1 olana kadar.
+
+919
+01:52:21,915 --> 01:52:34,335
+Bu diyecek ki sıfırıncı byte 0, 0, 0 ile 2 üzeri 34 eksi birinci byte 8'li bu değerle gösteriyor.
+
+920
+01:52:34,335 --> 01:52:36,655
+Aradaki geçişleri yani birer birer artırır.
+
+921
+01:52:36,715 --> 01:52:39,795
+Yani bunlara bir ekleyin, iki ekleyin, üçe yani bir ekleyin.
+
+922
+01:52:40,155 --> 01:52:43,415
+Aradaki değerleri, byte'ları bulursunuz.
+
+923
+01:52:43,515 --> 01:52:44,655
+Adres hesabı yaparsınız.
+
+924
+01:52:45,855 --> 01:52:48,155
+Bakın RAM üzerinde de işlemler hemen hemen bu şekilde.
+
+925
+01:52:48,155 --> 01:52:53,615
+Yani bir RAM yaptığınızda işte belleğin sıfırıncı adresi işte sıfır sıfır sıfır sıfıra karşılık geliyor.
+
+926
+01:52:54,215 --> 01:52:56,715
+En son adresi de bir bir bir birre karşılık geliyor.
+
+927
+01:52:56,915 --> 01:52:57,655
+Otuz dört.
+
+928
+01:52:57,655 --> 01:53:11,536
+Peki burada 2 üzeri 34 tane, en değil 2 üzeri 34 farklı şekilde buna karşılık gelecekmiş bellekte bu kadar hücre var.
+
+929
+01:53:11,536 --> 01:53:17,536
+Ve bu hücrelerin hep bir byte olduğunu yani 8 bit olduğunu söylüyoruz.
+
+930
+01:53:18,275 --> 01:53:22,855
+O zaman 2 üzeri 34 çarpı, şöyle dedim burada yazmayalım.
+
+931
+01:53:22,855 --> 01:53:34,615
+Bu zaman 2 üzeri 34 çarpı 8 bit dediğimizde ve bu 2 üzeri 34 çarpı 2 üzeri 3 deriz.
+
+932
+01:53:35,175 --> 01:53:40,895
+Toplamda 2 üzeri 37 tane bit sığdırabiliyormuşuz.
+
+933
+01:53:41,956 --> 01:53:45,536
+Yani 2 üzeri 34 ile 8'e çarptığınızda bu kadar tane bit var.
+
+934
+01:53:46,175 --> 01:53:47,635
+Bitleri adresleyebilir miyiz?
+
+935
+01:53:47,875 --> 01:53:49,495
+Bitler adreslenmez pek.
+
+936
+01:53:49,495 --> 01:53:52,015
+Yani genellikle byte byte adresleme yapılır.
+
+937
+01:53:52,015 --> 01:53:58,116
+Bu da verinin, belleğin kaç bitlik organize edilmesiyle alakalıdır.
+
+938
+01:53:58,195 --> 01:54:03,575
+Eğer belleğiniz 8 bitlik bölümlere her bir hücresi 8 bit olacak şekilde organize edilmişse,
+
+939
+01:54:04,195 --> 01:54:09,456
+2 üzeri 34 tane hücreniz var demektir bellekte.
+
+940
+01:54:09,995 --> 01:54:12,456
+Bu hücrenin her birinin içinde de 8 tane bit var.
+
+941
+01:54:12,816 --> 01:54:14,316
+Ama bu bitleri adresleyemeyiz artık.
+
+942
+01:54:14,435 --> 01:54:15,915
+Yani burada herhangi bir adresleme yapılmaz.
+
+943
+01:54:15,915 --> 01:54:21,435
+Bu bellek bu kadar tane 0 veya 1 değerini alıyormuş.
+
+944
+01:54:21,435 --> 01:54:29,995
+Bunların içindeki elektronik devre sayısına baktığınızda bu kadar belki yarı iletken malzeme veya belki daha fazlası kullanılacak.
+
+945
+01:54:31,015 --> 01:54:31,756
+Evet soru var mı?
+
+946
+01:54:33,295 --> 01:54:34,495
+Hocam ben bir şey sorabilirim.
+
+947
+01:54:35,615 --> 01:54:40,695
+Hani şimdi yukarıda ses tipine tek boyutlu bir dizide kaydediliyor dedik ya.
+
+948
+01:54:41,939 --> 01:54:51,939
+Ama mesela video izlerken ya da müzik dinlerken aynı frekansda olsa dahi farklı müzik aletlerini algılayabiliyoruz. Yani bu nasıl oluyor?
+
+949
+01:54:51,939 --> 01:55:03,939
+O sesin stereo olarak veya iki kanallı kayıt. Şimdi şundan bahsediyorsun. Sinemadasın, sağ tarafından araba geliyor, araba giderken sol tarafındaki şeyden geçiyor.
+
+950
+01:55:03,939 --> 01:55:17,320
+Birden fazla kanallan sesin kaydedilmesi yani bir fazla dizi olması demektir. Stereoda olursa iki tane dizi olur. Veya işte daha yüksek dereceden daha kaliteli durumlar olursa 3-4 tane ses kaydı olabilir.
+
+951
+01:55:18,140 --> 01:55:19,239
+Hocam aslında şey.
+
+952
+01:55:19,239 --> 01:55:32,419
+Bu o. Videoyla eş zamanlı senkronize olarak şey olması da bu örnekleme frekansıyla alakalı. O 24 frame'in 44100 sesin örnekleme frekansı ise o şekilde olması.
+
+953
+01:55:32,419 --> 01:55:40,259
+Bazen konuşur ama karşıdakinin ağzının hareketleriyle konuştuğu şeyler farklı oluşur. O da insanı rahatsız eder. Böyle bir durum.
+
+954
+01:55:41,519 --> 01:55:53,100
+Hocam, steril değil de benim bahsettiğim şey mesela gitarda çaldığınızla, piyanoda çaldığınızla aynı frekansta çalsanız da sesleri ayırt edebiliyoruz. Bu nasıl oluyor?
+
+955
+01:55:53,099 --> 01:56:19,679
+Ona tını deniyor. Sesin tınısı. Bir şeyin ses kaydediciler öyle bir frekansta kaydediyor ki hem gitarın sesini saklayabiliyor hem şeyi saklayabiliyor. Yani sonuçta orada bir örnekleme var. Birazdan ona geleceğim ama. Bu örtüşmenin olmaması, işte harmoninin sağlanması için, uyumun sağlanması için orada farklı bir mekaniz var. O sayısal işaret işleme ve sinyal sistemler dersinde anlattığımız konunun bir parçası.
+
+956
+01:56:20,559 --> 01:56:21,259
+Teşekkürler.
+
+957
+01:56:21,259 --> 01:56:21,939
+Rica ederim.
+
+958
+01:56:23,099 --> 01:56:33,739
+Demek ki arkadaşlar bir bellek bölgesinin kaç tane bit içerdiğini yani 16 GB'lik bir RAM'iz varsa 2 üzeri 37 tane bit varmış.
+
+959
+01:56:33,739 --> 01:56:37,739
+Bu bitleri dediğim gibi adresleyemiyoruz ama bitleri adresleyebiliriz.
+
+960
+01:56:38,659 --> 01:56:39,459
+Bunu böyle söyleyelim.
+
+961
+01:56:40,879 --> 01:56:43,539
+Örnek olarak mesela şu sorulabilir.
+
+962
+01:56:43,539 --> 01:56:50,540
+İşte bir metinde text has...
+
+963
+01:57:02,515 --> 01:57:03,695
+Mesela...
+
+964
+01:57:09,779 --> 01:57:34,179
+Yani bir metin 100 tane farklı karakterden oluşuyor. Aslında 100 farklı karakter demeyelim de buna. Şöyle 100 tane karakter var bu metinde. Bu karakterler de şöyle diyelim.
+
+965
+01:57:35,891 --> 01:57:36,971
+May...
+
+966
+01:57:41,043 --> 01:57:44,543
+The number of characters şöyle diyelim.
+
+967
+01:57:47,764 --> 01:58:02,764
+distinct charge is 50. 50 tane farklı karakterle ben 100 karakterlik bir tekst oluşturdum.
+
+968
+01:58:02,764 --> 01:58:13,764
+Böyle bir şey. Şimdi demek ki benim 100 tane karakterim olacaksa 100 elemanlı bir tekstizim olacak.
+
+969
+01:58:13,764 --> 01:58:17,024
+Yani birinci karakterim, ikinci karakterim, üçüncü karakterim.
+
+970
+01:58:17,544 --> 01:58:19,323
+Burada yüz tane elemanım olacak bu dizide.
+
+971
+01:58:19,583 --> 01:58:21,264
+Genellikle ben dizileri bu şekilde söylerim.
+
+972
+01:58:21,324 --> 01:58:24,644
+İşte bu sıfırıncı, C üzerinden konuşacaksak bu da doksan dokuzuncu karakter.
+
+973
+01:58:26,243 --> 01:58:29,923
+Yüz karakterin her birisi acaba kaç tane yer kaplayabilir?
+
+974
+01:58:30,164 --> 01:58:30,963
+Bir de şunu bulacağız.
+
+975
+01:58:30,963 --> 01:58:33,784
+Yani diyeceğiz ki burada yüz tane karakter var.
+
+976
+01:58:33,903 --> 01:58:36,003
+Bunların hepsi de şu kadar şu kadar bit olacak.
+
+977
+01:58:36,683 --> 01:58:39,804
+Bu benim hafızada kaplayabilecek yerimi söyleyecek.
+
+978
+01:58:40,444 --> 01:58:41,723
+Hani aski falan demedik.
+
+979
+01:58:41,723 --> 01:58:46,723
+Şimdi ben 50 karakteri acaba kaç tane bitle temsil edebilirim?
+
+980
+01:58:47,383 --> 01:58:49,343
+Bunun dönüşümünü yapmaktan.
+
+981
+01:58:49,423 --> 01:58:51,423
+Geçen dönem anlatmışlardır ama hızlıca söyleyelim.
+
+982
+01:58:51,944 --> 01:58:53,624
+Şimdi test yapacağız.
+
+983
+01:58:53,764 --> 01:58:54,683
+2 üzeri i kadar.
+
+984
+01:58:56,304 --> 01:58:59,804
+2 üzeri i'nin 50'den büyük veya eşit olması lazım.
+
+985
+01:59:00,523 --> 01:59:04,064
+i de bizim buradaki number of, hatta n diyelim, number of bitimiz.
+
+986
+01:59:05,163 --> 01:59:09,484
+Şimdi 1 olsa olmaz, 2 olsa olmaz, 5 olsa olmuyor.
+
+987
+01:59:09,484 --> 01:59:11,704
+En az 6 olacak.
+
+988
+01:59:11,964 --> 01:59:18,264
+6'dan fazla olabilir mi olur ama ben asgari olması gereken en az hafıza birimini bulmak istiyorum.
+
+989
+01:59:18,863 --> 01:59:25,164
+O zaman her bir şeyimiz 6 tane bitten oluşursa 50 tane karakteri kodlayabilirim.
+
+990
+01:59:25,204 --> 01:59:26,644
+Bu kodlamalar burada önemli değil.
+
+991
+01:59:26,704 --> 01:59:28,644
+Yani 0, 0, 0'a hangisi gelecek?
+
+992
+01:59:28,863 --> 01:59:30,363
+1, 1, 1'e hangisi gelecek?
+
+993
+01:59:30,504 --> 01:59:31,504
+Aradaki seviyeler ne olacak?
+
+994
+01:59:31,583 --> 01:59:32,083
+O önemli değil.
+
+995
+01:59:33,583 --> 01:59:35,304
+Sadece kaybitten oluşalım.
+
+996
+01:59:35,304 --> 01:59:41,143
+Demek ki 600 bitlik bir şeye ihtiyaç var.
+
+997
+01:59:41,704 --> 01:59:47,124
+Bunu byte'a çevirmek isterseniz çevrilebilir mi? Çevrilebilir mi? Farklı yerde yazabilirsiniz.
+
+998
+01:59:47,704 --> 01:59:50,784
+Mesela byte'a çevirmenin yolu şu şekilde olabilir arkadaşlar.
+
+999
+01:59:51,984 --> 01:59:56,984
+Şu yüzü yaklaşık olarak 200 üzeri 6 desek olmaz.
+
+1000
+01:59:57,103 --> 01:59:59,903
+2 üzeri 7 diyelim. 128 olsun önemli değil.
+
+1001
+02:00:00,144 --> 02:00:02,043
+Şuna da 2 üzeri 2 diyelim.
+
+1002
+02:00:02,043 --> 02:00:26,223
+Bu da 4 olsun. Madem yüksek verdik bundan biraz düşük veririm. Yani iki yüzde dokuz tane 512'ye çıktı. Yaklaşık olarak 512. Demek ki 9 yetmiyor. Yani iki yüzleri 10 tane farklı bu kadar sayıda bit içeriyecek. Yani ikili şekilde bu da böyle yazılabilir.
+
+1003
+02:00:26,223 --> 02:00:46,023
+Şimdi 2 üzeri 10'a biz ne demiştik? 1 kilobayt demiştik. Bu da yaklaşık olarak 1 kilobayt cinsinden yazabiliriz. Yani 600 bitin kaplayacağı yer yaklaşık olarak tabii yani ya yarım kilobayt ile 1 kilobayt arasında bir değere sahiptir diyebiliriz.
+
+1004
+02:00:46,023 --> 02:00:51,003
+Mesela bir resim üzerinde bunu yapalım.
+
+1005
+02:00:54,363 --> 02:00:57,283
+512'ye 512'lik bir resim var.
+
+1006
+02:00:57,423 --> 02:01:02,764
+Her bir pikselim 16 veya diyelim ki 16 demeyelim burada.
+
+1007
+02:01:05,823 --> 02:01:09,704
+400 çeşit renk gerektirsin.
+
+1008
+02:01:10,803 --> 02:01:15,043
+Pek 400 çeşit olmaz da ya 65536 falan oluyor.
+
+1009
+02:01:15,043 --> 02:01:24,823
+önemli. Şimdi çözünürlüğü 512 çarpı 512 tane piksel olacak. Yani bu kadar tane eleman var.
+
+1010
+02:01:25,484 --> 02:01:35,204
+Ve bu elemandan her biri 400 farklı renk içerecek. Şimdi ben 400'ü aynı şurada olduğu gibi hesap edersem 9 olsa 512 oluyor, geçiyor.
+
+1011
+02:01:35,204 --> 02:01:44,284
+8 olsa 256. Demek ki her biri 9 bitlik bir şey içerecek. Şimdi bu 512 2 üzeri 9. Şu da 2 üzeri 9.
+
+1012
+02:01:44,787 --> 02:02:05,427
+Çarpı 9 bit. Yani 9 biti daha fazla şey yapamaz. Burada mesela 2 üzeri 18 tane çarpı 9 bitlik bir durum var. Bunu daha sonra kilobayta çevirebilirsin. Yaklaşık olarak da bir kilobayta, işte şu kadar kilobayttır diyebiliriz. 2 üzeri 20'ye yaklaşıyor dikkat ederseniz.
+
+1013
+02:02:05,427 --> 02:02:32,407
+2 üzeri 20 dersek ne oluyordu? 1 megaya ulaşıyorduk. Şimdi 9 tane 2 üzeri 20 dersek yaklaşık olarak 9 megabit veya bunu 8'e bölerseniz, şurayı 8 kabul edersek bu 1 megabit'a yakın bir şey elde edebiliriz deriz yaklaşık olarak.
+
+1014
+02:02:32,407 --> 02:02:52,868
+Anlaşılmayan bir şey var mı burada? Şuradan megayı bulduk. Bir şeyin megası. 9 tane bit olursa, bunu bir byte olarak yaklaşık bir byte kabul edersek bu bir megabayta yaklaşıyor diyebiliriz. Evet Selim.
+
+1015
+02:02:53,567 --> 02:02:59,368
+Hocam megabit ifade etmek çalışırken B'sinin küçük megabayt ifade etmek çalışırken B'sinin büyük mü yazıyoruz?
+
+1016
+02:02:59,567 --> 02:02:59,847
+Aynen.
+
+1017
+02:03:00,427 --> 02:03:01,267
+Tamam hocam sağ olun.
+
+1018
+02:03:01,267 --> 02:03:17,707
+Kilobit, ondan sonra ne bileyim gigabit. Mesela internet hızlarında gigabit per second diyorlar değil mi? Şöyle yazıyorlar. Saniyede aktarılan gigabit miktarı gibi. Evet süremiz geldi. Bir 10 dakika ara verelim. Geldiğimizde tekrar devam ederiz arkadaşlar.
+
+1019
+02:06:56,115 --> 02:06:58,935
+Evet Recep, neyi çok merak ediyordun anlamadım.
+
+1020
+02:07:01,235 --> 02:07:02,775
+16, 18...
+
+1021
+02:07:02,775 --> 02:07:09,935
+Hocam, MHR, şey, piyanoyla bir gitarın aynı frame castoff, onu sormuştu, cevabınız anladım ama.
+
+1022
+02:07:09,935 --> 02:07:11,215
+Tamam, tamam.
+
+1023
+02:07:11,996 --> 02:07:13,015
+Şimdi ona geleceğiz.
+
+1024
+02:07:15,835 --> 02:07:19,675
+Önce verilerin nasıl saklanabileceğini konuştuk.
+
+1025
+02:07:21,975 --> 02:07:25,815
+Şimdi biraz daha gerçek dünyaya yaklaşıyoruz. Makinenin en temelinden başladık.
+
+1026
+02:07:26,115 --> 02:07:41,595
+Yavaş yavaş gerçek dünyaya doğru ilerliyoruz. Ondan sonra diyeceğiz ki algoritmaya bir giriş yapacağız. Gelecek derste algoritma ile alakalı tasarım problemler o şekilde devam edeceğiz. Bir yandan da tabii programlama ile alakalı işler olacak.
+
+1027
+02:07:41,595 --> 02:07:52,495
+Şimdi diğer gruplar, tabii diğer grup, hani biraz daha farklı ders işliyor olabilir.
+
+1028
+02:07:53,395 --> 02:07:58,895
+İşte belki bunlar, onlar bu hafta flowchartlarla bir şeyler çizmiştir, yazmıştır olabilir. Problem değil.
+
+1029
+02:07:59,935 --> 02:08:04,135
+Biz nihayet olarak hani sınavlardan önce gelmemiz gereken yerler var.
+
+1030
+02:08:04,435 --> 02:08:10,516
+Hani ben İstanbul'dan Ankara'ya Bursa üzerinden sizi götürebilirim.
+
+1031
+02:08:10,516 --> 02:08:32,856
+Fatih Hocam ne bileyim Sakarya üzerinden sizi götürebilir. Hedefler aynı olacak şekilde 3 aşağı 5 yukarı aynı noktaya geleceğiz. Zaten ortak ders notlarımız var. Ama benim bazı şeyim, hani üslubum farklı olabilir, her yiğidin yolu geç farklıdır derler.
+
+1032
+02:08:32,855 --> 02:08:43,275
+tavsiyem diğer grubda izleyebiliyorsanız izleyin. İyi olur. Birazcık bu konuları öğrenmek gerekiyor. Bazı şeylere bakmak gerekiyor. Evet, Zafer.
+
+1033
+02:08:45,935 --> 02:08:49,075
+Hocam sınavlar ve ödevler ortak mı oluyor?
+
+1034
+02:08:49,075 --> 02:09:12,836
+Tabii ortak. Ortak olduğu için zaten biz bir noktada hocayla kesişeceğiz. Zaten onun için ortak ders notlarımız var. Ama bu derse bir hazırlık gibi bu kısımları anlatmam gerekiyor. Ben bazı yerlerde flowchart çizeceğim, bazı yerlerde kodu kendim yazacağım dersin ilerleyen zamanlarında. Bu da birazcık farklılık gösterilir.
+
+1035
+02:09:12,836 --> 02:09:19,196
+Mesela Fatih Hoca benim bildiğim ben onun kendisinin asistanı iken genellikle şeyden anlatırdı.
+
+1036
+02:09:19,356 --> 02:09:22,315
+Ya psodokot üzerinden ya da flowchart üzerinden anlatırdı.
+
+1037
+02:09:23,056 --> 02:09:25,255
+Ben ikisini de yapmaya çalışacağım.
+
+1038
+02:09:26,836 --> 02:09:31,675
+Laboratuvar saatlerimizi de bu anlamda etkin bir şekilde kullanmayı düşünüyorum.
+
+1039
+02:09:31,815 --> 02:09:37,395
+Önümüzdeki hafta mesela normal ders saat şey laboratuvar saatinde konumuza devam edeceğiz.
+
+1040
+02:09:37,395 --> 02:09:44,795
+Ta ki asistan arkadaşlar ne zaman size laboratuvar ve uygulama yaparsa o zaman ben olmam dersin.
+
+1041
+02:09:44,856 --> 02:09:45,836
+İyi geri asistanı gelir.
+
+1042
+02:09:46,675 --> 02:09:48,435
+Onunla faaliyetler yürütürsünüz.
+
+1043
+02:09:52,243 --> 02:09:54,243
+Bir, iki, üç dakikamız daha var.
+
+1044
+02:09:56,243 --> 02:10:06,243
+Yani geçen bir arkadaşınız daha çok işte ben bu dersi almadım falan, geçen dersi almadım diye sorunca, bir de bazı şeyleri derleyip toparlamak gerekiyor.
+
+1045
+02:10:06,243 --> 02:10:13,243
+Farklı farklı hocalardan farklı şeyleri değişik bakış açılarıyla dinlemek iyi olur. Ben böyle şeyi severim.
+
+1046
+02:10:13,243 --> 02:10:16,243
+Ben de zaman zaman işte bu gider başkalarının derslerini dinlerim mesela.
+
+1047
+02:10:16,243 --> 02:10:22,563
+Bu temel bir ders de olsa bazı şeyleri farklı açılardan görmek gerekiyor.
+
+1048
+02:10:25,104 --> 02:10:27,703
+Biraz önce arkadaşımız Emir sordu.
+
+1049
+02:10:28,124 --> 02:10:30,743
+Müzik benim doktora tezimde çalıştığım alan.
+
+1050
+02:10:32,383 --> 02:10:36,464
+Oradan mesela işin sinyal işleme boyutunu da biraz anlatacağım.
+
+1051
+02:10:36,563 --> 02:10:38,563
+Ondan sonra algoritma tarafına giriş yapacağız.
+
+1052
+02:10:42,836 --> 02:10:43,836
+Birkaç dakikamız daha var. Nasıl, bu hafta her şey yolunda gitti mi? Dersleriniz, katılımlar falan nasıldı? Bizim bu sabah ders olunca biraz sanki katılım az gibi. Dersi alan yaklaşık 90 kişi var ama şu an şey olarak... Yani sayı benim açımdan çok önemli değil. 3 kişi de olsa, 300 kişi de olsa bildiğim şekilde anlatıp önemli olan sizden ne kadar interaktif,
+
+1053
+02:11:12,836 --> 02:11:19,836
+ve stdio.h
+
+1054
+02:11:19,836 --> 02:11:36,955
+300 kişilik sınıf geçen dönem vardı. Genel olarak evet öyle bir şey olabilir. Özellikle sabah dersleri daha az katılımlı oluyor. Benim öğleden sonra bir nesne tabanlı programlama dersim var. Geçen neredeyse tam kapasite ders yapmıştık.
+
+1055
+02:11:36,955 --> 02:11:57,995
+255 kişiye ders verdiğim zamanlarda hani bu sefer bir soru soruyoruz. Yani burada mesela aktif katılım olan isimlerini işte işte Selim katılıyor, Zafer katılıyor, Atakan biraz önce katıldı, Barışcan katılıyor. Zaten üst sıralara çıkıyor arkadaşlar şeyde bu participant sitesinde.
+
+1056
+02:11:57,995 --> 02:12:13,195
+3-5 kişi belki 10 kişi ama 255 kişi olunca 50 kişinin aktif katılımı da benim sefer zor duruma sokuyordu. Yani bir tek şey tekrana bir şey yazılıyor. Her şey yazıldığında onları takip edebilmek biraz daha zor haline geliyordu.
+
+1057
+02:12:13,196 --> 02:12:20,196
+90 kişi fena değil yani bunların 60'ı katılmış bu da güzel bir sayı inşallah daha da artar.
+
+1058
+02:12:21,336 --> 02:12:27,615
+Dersi derste öğrenmek benim temel en çok önem verdiğim şeylerden bir tanesi.
+
+1059
+02:12:27,715 --> 02:12:39,815
+Çünkü ben burada monolog şeklinde anlatıp yani kendim soru soru kendim cevap vererek anlatmış olsam çok iyi bir sanatkarhane bir ders anlatacak olsam o durumda.
+
+1060
+02:12:39,815 --> 02:12:56,556
+Bu dersin kaydı daha sonradan dinlenir ve faydalı olabilir. Ama yeri geliyor soru soruyoruz, yeri geliyor başka bir konuya atlıyoruz. Yani sizinle etkileşim halindeyiz, sizlerden soru geliyor. Bu kaydı daha sonradan dinlemek ben olsam dinlemem yani biraz zor oluyor.
+
+1061
+02:12:57,875 --> 02:13:06,075
+Onu biraz yani ya iki iki sızda falan dinleyeceksiniz. Kısmen o şeyler farklılaşıyor. Evet devam edelim arkadaşlar.
+
+1062
+02:13:06,075 --> 02:13:17,915
+Şimdi temel veri tiplerimizi nasıl saklayacağımızı gördük. Analog datalar genellikle bu şekilde kodlanıyormuş. Analog datadan bir dijital dataya genel olarak dönüşümden bu şekilde.
+
+1063
+02:13:20,335 --> 02:13:35,975
+Peki analogdan dijital aslında bu bir kodlama. Yani analog herhangi bir datayı dijital kodlama iş. Arka planında bunun biraz daha bir şeyi var. Herhangi bir analog data. Bu analog dataya biz genellikle sinyal diyoruz.
+
+1064
+02:13:35,975 --> 02:13:37,276
+Analog sinyal olarak söylüyor.
+
+1065
+02:13:37,336 --> 02:13:43,015
+İşte zamana göre değişen bir XT fonksiyonu veya işareti dediğimiz bir şey.
+
+1066
+02:13:43,436 --> 02:13:44,436
+Bu bir ses olabilir.
+
+1067
+02:13:45,216 --> 02:13:48,035
+İşte havanın sıcaklığı olabilir zamana göre değişen.
+
+1068
+02:13:48,655 --> 02:13:53,115
+Ne bileyim dolar veya herhangi bir döviz biriminin, dövizin gün içerisindeki seyri olabilir.
+
+1069
+02:13:53,276 --> 02:13:55,115
+Ekonomik veriler veya herhangi bir şey.
+
+1070
+02:13:56,235 --> 02:14:00,735
+Derste mesela katılımcı sayısı, saniye saniye dersteki katılımcı sayısı ne kadar oluyor?
+
+1071
+02:14:00,856 --> 02:14:02,395
+Bir ortamın sıcaklığı nasıl değişiyor?
+
+1072
+02:14:02,395 --> 02:14:16,375
+Bu şöyle çizdirildiğinde bir veridir arkadaşlar. Ben bu veriyi bilgisayarda bu şekilde doğrudan saklayabilir miyim? Gerçek hayatta bir şey var. Bunu doğrudan saklayabilir miyiz?
+
+1073
+02:14:19,891 --> 02:14:31,891
+Saklayamayız hocam. Bitlere indirgememiz gerekir. Bilgisayarın anlayabilmesi için verileri. Nokta nokta şekilde saklayabiliriz kesiklikle.
+
+1074
+02:14:31,891 --> 02:14:46,891
+Tamam, diyor ki yani bu şekilde olmaz. Ben diyorum ki o zaman şu genlik değerlerini yazalım. T'nin bir değeri için x, t değerim var. Şuradaki değeri için x, t değerim var.
+
+1075
+02:14:46,891 --> 02:15:06,252
+Bunlar da bir floating point. Bunları alıp her bir noktanın aradaki değerlerin hepsini alıp floating point şeklinde o zaman saklayabilir miyim? O olsa Furkan. Yani şuradaki değerin ne olduğunu biliyorum, bunu biliyorum, bunu biliyorum. Hepsinin ne olduğunu biliyorum.
+
+1076
+02:15:07,031 --> 02:15:12,991
+Saklayabiliriz ama sonsuz bilgi çıkabilir. O yüzden belli bir aralık bulmamız lazım.
+
+1077
+02:15:12,991 --> 02:15:28,972
+Aynen güzel. Çok iyi oldu. Doğru bir cevap. Şimdi zaman dediğimiz şey arkadaşlar sonsuz tane şey içeriyor. Aralık içeriyor. Bilgi içeriyor. Ve analog bir data, bu analog sinyal veya data dediğimiz bir şey.
+
+1078
+02:15:28,972 --> 02:15:36,512
+Sonsuz defa, sonsuz tane detay içeriyor.
+
+1079
+02:15:37,072 --> 02:15:42,652
+Şimdi benim bilgisayarımın belleği, kapasitesi veya işlemcim bütün kapasite elemanlarım sonludur.
+
+1080
+02:15:43,592 --> 02:15:47,292
+Bu sonsuz durumdan sonlu duruma bir şekilde geçeceğiz.
+
+1081
+02:15:47,292 --> 02:15:52,512
+Bu geçiş de hem yatay eksende hem t ekseninde hem de x t ekseninde olacak.
+
+1082
+02:15:52,511 --> 02:16:02,691
+Bu x t eksenindeki yani t boyunca yapılacak olan sonlu durumdan sonsuzlu duruma geçme olayına sampling diyoruz örnekleme.
+
+1083
+02:16:04,131 --> 02:16:05,151
+Yani ne yapacağız?
+
+1084
+02:16:06,191 --> 02:16:08,691
+Burada belli zaman aralıklarını alacağız.
+
+1085
+02:16:08,891 --> 02:16:10,431
+Ya bunları niye çizemiyorum ben ya?
+
+1086
+02:16:12,431 --> 02:16:15,911
+Şu şeyin azizliğine uğruyoruz.
+
+1087
+02:16:17,431 --> 02:16:18,531
+Şöyle yapmaya çalışayım.
+
+1088
+02:16:18,951 --> 02:16:21,111
+Yukarıdan aşağıya belki daha ara çizerim.
+
+1089
+02:16:22,511 --> 02:16:24,511
+Bu arada...
+
+1090
+02:16:29,011 --> 02:16:57,391
+belli şeyleri kayıp vererek alıyoruz. Buna sampling deniyor ve elde ettiğimiz şey işaret. Artık t değil t yerine n oldu. Yani bu bir dizimizin indisleri dediğimiz yani integer a dizisi 100 dedik. n eşittir 0 işte a'nın en ince elemanı diyebileceğimiz C'de böyle bir duruma geldik.
+
+1091
+02:16:57,391 --> 02:17:03,751
+Ve burada bunların şöyle değerleri var.
+
+1092
+02:17:08,275 --> 02:17:35,575
+gibi gibi. Tamam, birebir çizmeye gerek yok. Ve bu xn şeklinde yazılıyor. Şurayı silelim. Bu sayede ben ne yapıyorum? Şu n'in max değerine göre, n max diyelim, bir bellek allokasyonu, bellek tahsisi yapıyorum. n max tane verim olacak.
+
+1093
+02:17:35,575 --> 02:17:46,255
+Ve burada dizimizin eleman sayısını belirledik. Sıfırdan başlıyor, birer birer gidiyor. Peki bu dizinin her bir elemanının alabileceği range ne kadar olacak?
+
+1094
+02:17:46,255 --> 02:18:01,595
+İşte bu xn ekseninde yani y ekseninde yapılan ayrıklaştırma ya da bu da bir discretizyondur. Buna genel olarak discretizyondur deniyor.
+
+1095
+02:18:01,595 --> 02:18:03,595
+ayrıklaştırma.
+
+1096
+02:18:04,656 --> 02:18:09,496
+Ama zamandaki yapılan şey sampling'tir.
+
+1097
+02:18:10,195 --> 02:18:14,415
+Genlik ekseninde amplitude'da yapılan şey buna quantization deniyor.
+
+1098
+02:18:16,716 --> 02:18:17,835
+Quantization.
+
+1099
+02:18:19,436 --> 02:18:20,076
+Ne yapıyoruz?
+
+1100
+02:18:21,076 --> 02:18:28,655
+Şu kısımları, şu gelen maksimum noktaları, geldiği değerlere göre sıfırdan,
+
+1101
+02:18:28,655 --> 02:18:39,675
+Bunun maxına göre, maxına kadar, buraya buraya max diyelim, aralıklandırıyoruz. Ne demek aralıklandırma?
+
+1102
+02:18:45,556 --> 02:18:49,916
+Şöyle başka bir renkte çizelim.
+
+1103
+02:19:01,716 --> 02:19:15,315
+Burası 0'ın olduğu şey, şurası da max'ın olduğu şey. Yani ben burayı 0, 0, 0, 0, kaç tane bitim olacaksa onunla, şurayı da birbirbirlerle, tabii arada nokta nokta diyelim, bu birden başlasın, bu da sıfırdan.
+
+1104
+02:19:15,315 --> 02:19:28,216
+Kaç tane sıfır olacaksa ona kodladım, burası da kaç tane bit olacaksa birbiriyle dolu olacak şekilde kodladım. Şimdi şunun karşılık geldiği nokta mesela,
+
+1105
+02:19:32,147 --> 02:19:34,147
+sil bunu buradan neyse şöyle yapalım.
+
+1106
+02:19:37,147 --> 02:19:40,147
+Şunun karşılık geldiği nokta şu bit olsun.
+
+1107
+02:19:41,647 --> 02:19:45,147
+Yani bunun 0 ve 1'ler karşılığı var. Diğerinin 0 ve 1'ler karşılığı var.
+
+1108
+02:19:46,147 --> 02:20:01,147
+Bu şekilde hem her bir hücrenin kaç bit içereceğini hesap ediyoruz, hem de hangi değer, hangi eleman, hangi değere karşılık gelecek 0 ve 1'ler cinsinden onu buluyoruz.
+
+1109
+02:20:01,147 --> 02:20:06,528
+Şimdi şu range, 0 ile max arasındaki range ne olacak?
+
+1110
+02:20:06,907 --> 02:20:10,528
+2 üzeri i'den küçük veya eşit olacak.
+
+1111
+02:20:10,647 --> 02:20:12,787
+Ben buradan 2 üzeri n diyelim buna.
+
+1112
+02:20:13,387 --> 02:20:15,627
+Gerçi şuradaki n ile karşı karıştırılmadan.
+
+1113
+02:20:15,747 --> 02:20:17,807
+Buna m diyelim arkadaşlar hadi.
+
+1114
+02:20:18,707 --> 02:20:20,627
+m number of bits sayısı.
+
+1115
+02:20:25,971 --> 02:20:50,652
+Kaç tane number of bits? Bitlerin sayısı. Yani bu da m tane bit içerecek, bu da m tane bit içerecek. Dolayısıyla benim bu verim, analog verim n max, çarpı m kadar bit içerecek bir duruma geliyor. Burayı anladık mı? Önce zamanda örnekleme yaptım, sonra genlikte örnekleme yaptım.
+
+1116
+02:20:50,652 --> 02:20:54,732
+Zamanda ayrıklaştırmanın adı sampling.
+
+1117
+02:20:56,192 --> 02:21:00,271
+Genlikte ayrıklaştırmanın adı quantization.
+
+1118
+02:21:01,172 --> 02:21:15,692
+Burada öyle bir durum var ki hem zaman ekseninde yani t yatay eksende hem de düşe eksende yaptığım ayrıklaştırma orijinal veriden bir kayıp sağlıyor mu?
+
+1119
+02:21:15,692 --> 02:21:17,931
+Sağlıyor. Orijinal veride bir kayıba neden oluyor.
+
+1120
+02:21:18,531 --> 02:21:20,031
+Bu kayıp nasıl olacak?
+
+1121
+02:21:20,652 --> 02:21:40,671
+İşte ses ise, görüntü ise insan kulağının gözünün ayırt etmeyeceği, rahatsız olmayacağı bir şekilde olacak. Veya bir seçim olacak. Seçimde işte anketler yapılıyor. O anket doğru bir şekilde yani istatistiksel tekniklere uygun olarak belli bir örnek sayısıyla yapılması gerekir.
+
+1122
+02:21:40,671 --> 02:21:52,091
+Bunlar hep yapılan örnekleme işlemleri. Görüntüde de var, sinyalde de var, resimde var, ne bileyim müzikte var, konuşmada var, var, var, var.
+
+1123
+02:21:53,711 --> 02:22:02,911
+Peki, arkadaşımızın sorduğu soruya geldik. Analog sinyaller nasıl birbirine karışmıyor?
+
+1124
+02:22:02,911 --> 02:22:10,831
+Yani bir ses kayıt edildiğinde nasıl işte oradaki enstrümanlar birbirine karışmıyor.
+
+1125
+02:22:12,251 --> 02:22:19,931
+Şimdi her bir sinyal teorik olarak sinizoidal sinyallerin toplamı cinsinden oluşturulabiliyor arkadaşlar.
+
+1126
+02:22:21,511 --> 02:22:26,251
+Şimdi telefonlarınızın tuşlarına bir yarım dakika şey yapalım.
+
+1127
+02:22:26,251 --> 02:22:28,371
+Veyahut ben yapayım bir dakika.
+
+1128
+02:22:29,891 --> 02:22:31,311
+Telefonumun sesini açıyorum.
+
+1129
+02:22:32,911 --> 02:22:44,491
+Duyuyorsunuz herhalde. Şimdi bir numara tuşlayacağım ve tuşladığım numaradaki her bir tuşa bastığımda farklı tonlarda ses duyacaksınız.
+
+1130
+02:22:53,620 --> 02:23:00,080
+Hissedebiliyorsunuz değil mi farklılığı? Duyamadım diyen var mı? Evet. Anlaşılıyor hocam.
+
+1131
+02:23:00,080 --> 02:23:15,159
+İşte bu anlaşılabilirlik şu arkadaşlar. Her bir ses içerisinde farklı temel sinyal dediğimiz veya doğal sinyal dediğimiz farklı sinüzoidal, sinüs veya kosünüs sinyaller içermesinden kaynaklı.
+
+1132
+02:23:15,159 --> 02:23:25,759
+Bizim bu telefon tuşlarını iki tane sinuzoidal ile kodlamışlar. Buna DTMF deniyor. Şuradan size hemen bir Google görsellerden bir örneğini bulurum.
+
+1133
+02:23:34,324 --> 02:23:47,324
+Böyle birisi online lectures diye bir şey yapmış. Dün birisi bana gönderdi, bir ders için kayıt lazım. DTMF diyelim. DTMT yazdık yalnız.
+
+1134
+02:23:52,500 --> 02:23:53,500
+İmash.
+
+1135
+02:24:00,659 --> 02:24:18,899
+Şu görsel bizim işimizi görür. Bakın, 697 Hz'lik bir sinüzoidal dalgayla 1209'luk bir sinüzoidal dalga 1'e karşılık giriyormuş. Bu iki tane sinüs dalgası. Şimdi fizikte dalgaları gördünüz. Bu şudur arkadaşlar.
+
+1136
+02:24:18,899 --> 02:24:31,599
+Bir tane sinuz oyular işaret var. Bir de başka bir işaret var. Tabii ben bu sinuz oyular olarak çizemiyorum ama şurada var mı acaba sinuz dalgası? Yok.
+
+1137
+02:24:33,899 --> 02:24:46,079
+Birisinin şöyle bir sinuz, öbürü biraz daha frekanslı fazla. Birisi 697. Bu ikisini bir araya getirip aslında toplamak demek ki toplamak gibi düşüneceğiz.
+
+1138
+02:24:46,079 --> 02:24:49,379
+Bir araya getirdiğimizde bu ikisinin toplamı oluşuyor.
+
+1139
+02:24:50,059 --> 02:24:55,099
+Ve bu oluşan toplam bize bir sesini gösteriyor.
+
+1140
+02:24:55,139 --> 02:24:56,539
+Tabi bir de bunun genlik bilgisi var.
+
+1141
+02:24:57,999 --> 02:25:04,359
+Şimdi müzikte enstrümanlara baktığınızda bir Do notasını, hadi size şuradan göstereyim.
+
+1142
+02:25:08,084 --> 02:25:12,444
+Önce şu ekran paylaşımda sesi de açmam gerekecek.
+
+1143
+02:25:12,444 --> 02:25:30,643
+Audio representation konusunda bu bir nota işte bu hangisiyle çalınmış, violansler mi neyse artık veya gitar da olabilir.
+
+1144
+02:25:30,643 --> 02:25:33,863
+Böyle bir notanın zaman düzleminde böyle bir karşılığı var.
+
+1145
+02:25:34,264 --> 02:25:37,924
+Bir melodi diyelim hatta buna dalga formunun böyle bir karşılığı var.
+
+1146
+02:25:39,143 --> 02:25:50,923
+Şimdi aynı notayı farklı enstrümanlarla seslendirdiğinizde tınıdan timbr dediğimiz tınıdan kaynaklı olarak farklı dalga formları görüyoruz.
+
+1147
+02:25:52,283 --> 02:25:59,764
+Mesela bu C6 dediğimiz bizde doğru emi olarak şey yapıyoruz da burada C1, C2 veya A1, A2 o tarz şeylerle kodlanıyor.
+
+1148
+02:25:59,764 --> 02:26:00,883
+C6 notası.
+
+1149
+02:26:01,424 --> 02:26:02,804
+Hocam ekranı göremiyoruz.
+
+1150
+02:26:03,284 --> 02:26:04,363
+Yer ekran gözüküyor.
+
+1151
+02:26:05,664 --> 02:26:06,883
+Yeşil ekran da görünüyor.
+
+1152
+02:26:07,584 --> 02:26:07,964
+Evet.
+
+1153
+02:26:08,284 --> 02:26:08,903
+Masa üstüne.
+
+1154
+02:26:09,624 --> 02:26:12,063
+Tamam o zaman şimdi görüyorsunuz herhalde.
+
+1155
+02:26:13,444 --> 02:26:14,223
+Evet görüyoruz.
+
+1156
+02:26:14,223 --> 02:26:16,223
+Tamam ses de duyduyordur.
+
+1157
+02:26:17,584 --> 02:26:24,783
+Şimdi C6 notası bu şekilde bir sinüs dalgasıdır arkadaşlar.
+
+1158
+02:26:25,963 --> 02:26:27,304
+Frekansı neymiş?
+
+1159
+02:26:28,604 --> 02:26:29,683
+1047 ile.
+
+1160
+02:26:29,764 --> 02:26:47,104
+Tabi 1047 çarpı F0. Evet bir örnekleme yok. 1047 Hz ile bu C6 notası sentezlenemiyor. Yaklaşık olarak bunun frekans düzlemindeki karşılığı da şu yaklaşık 1047 şuralarda birer.
+
+1161
+02:26:47,103 --> 02:26:59,084
+Aynı şeyi oboe denilen cihazla, enstrümanla bunu yaparsak yine 1047'lik ama bunun 1047 dışında ekstra bileşenleri var.
+
+1162
+02:26:59,084 --> 02:27:00,843
+Buna timbre diyoruz.
+
+1163
+02:27:01,723 --> 02:27:05,483
+Klarnetle bunu yaptığımızda böyle bir şey.
+
+1164
+02:27:05,584 --> 02:27:06,983
+Bakın şunlar birbirinden farklı.
+
+1165
+02:27:07,084 --> 02:27:07,944
+Karakteristik açılı.
+
+1166
+02:27:08,323 --> 02:27:12,803
+İşte bu karakteristik açılı farklı timbre kavramıdır.
+
+1167
+02:27:12,803 --> 02:27:22,343
+Bir şey kaydedildiğinde, müzik kaydedildiğinde bu sinizoidaller birbirine karışmayacak şekilde örnekleme yapılması gerekir.
+
+1168
+02:27:23,743 --> 02:27:25,223
+Music Information Retrieval.
+
+1169
+02:27:25,403 --> 02:27:26,183
+Şöyle yazalım.
+
+1170
+02:27:27,584 --> 02:27:30,723
+Hani karışmamasının sorusunun cevabına daha gelmedik.
+
+1171
+02:27:32,304 --> 02:27:34,663
+Karışmaması sorusunun cevabı şu.
+
+1172
+02:27:34,664 --> 02:27:45,744
+Öyle bir örnekleme yapayım ki bu cihaz enstrümanların dataları, dalga formları birbirine karışmasın.
+
+1173
+02:27:46,404 --> 02:27:58,384
+Bu da örnekleme teoremi dediğimiz işaretin içerisindeki en yüksek bileşenli frekansın en az iki katı kadar bir örnekleme yapılması gerektiğini söylüyor bize.
+
+1174
+02:27:58,384 --> 02:28:04,923
+Bu iki kat nereden çıkıyor? Hani 44100 dedik insan kulağı 2 ile işte 20 hertz arasını duyar dedik ya.
+
+1175
+02:28:05,744 --> 02:28:12,024
+İşte aynı orada olduğu gibi 20 hertz'in iki katı yaklaşık 44100 o CD kalitesinde belirlenmiş bir standarttır.
+
+1176
+02:28:13,404 --> 02:28:20,884
+Burada da olduğu gibi bu şeylerin frekansların en az iki katı kadar bir örnekleme yapılacak.
+
+1177
+02:28:20,884 --> 02:28:29,084
+Ve bu yapılan örnekleme sonrasında bütün enstrümanlar birbirine karışmayacak.
+
+1178
+02:28:29,283 --> 02:28:34,723
+Eğer örneklemeyi iki kattan daha düşük yaparsak şöyle bir olasılık vardır.
+
+1179
+02:28:36,363 --> 02:28:42,304
+Bunu geri çatma, reconstruction yaptığımızda enstrümanlar birbirine karışır. Mevzu bu.
+
+1180
+02:28:43,344 --> 02:28:46,664
+Mesela şimdi şurada bir şey vardı. Neredeydi o?
+
+1181
+02:28:58,484 --> 02:29:09,324
+Burada tek sesli şöyle bir durum var. Aşağıda bir örnek daha vardı. Yok burada yokmuş o.
+
+1182
+02:29:10,868 --> 02:29:11,687
+Kışı olabilir.
+
+1183
+02:29:19,156 --> 02:29:20,396
+Nerede ki tu ya?
+
+1184
+02:29:38,772 --> 02:29:40,491
+Yok şurada olacak.
+
+1185
+02:29:47,924 --> 02:29:52,424
+Evaluation, hmm, general recognition.
+
+1186
+02:29:58,420 --> 02:30:05,159
+Burada çeşitliliği duyabiliyorsunuz. Niye durmadım?
+
+1187
+02:30:09,652 --> 02:30:37,332
+Çeşitliliği duyabiliyorsunuz. Bu her bir enstrümanın, yani öyle bir ses kaydedicisi, örnekleyici sampling ve quantization mekanizması olacak ki, bu kaydedici, buradaki, bu müziğin içindeki bütün melodi üreten cihazların, enstrümanların, niye cihazlayıp duruyorsa, enstrümanların her birinin ulaştığı maksimum frekans bilgilerini bilecek.
+
+1188
+02:30:37,332 --> 02:30:43,451
+O frekans bilgilerinin iki katı kadar, en az iki katı kadar bir örnekleme frekansıyla ses kaydı alacak.
+
+1189
+02:30:44,152 --> 02:30:47,192
+Eğer bunu bu şekilde yapmazsa enstrümanlar birbirine karışır.
+
+1190
+02:30:49,352 --> 02:30:50,291
+Mesela bu böyle.
+
+1191
+02:30:52,212 --> 02:30:53,431
+Bu da biraz daha...
+
+1192
+02:30:53,431 --> 02:30:58,172
+İnsan sesi de mesela burada aynı notayı insan sesi de seslendiriyor.
+
+1193
+02:30:58,172 --> 02:31:14,332
+Yani bir Do notasını verdiğinizde bunu insan sesiyle de üretseniz aynı hertzte ondan sonra bir enstrümanla da üretseniz aynı hertzte bir karşılığı var. Bunların karışmaması için o örnekleme teoremi önemli.
+
+1194
+02:31:16,031 --> 02:31:23,952
+Yani enstrümanların bir notasında sabit bir frekans değeri olmadığı için ve bu frekans değerleri bir araya gelince kendilerine özgü bir şey oluşturucu ayırt edebiliyoruz. Doğru mu?
+
+1195
+02:31:23,951 --> 02:31:40,391
+Enstrümanları ayırt etmek şu açıdan farklı. Her enstrümanın kendine ait, şuradaki örnekte olduğu gibi, timbre özelliği vardır. O ayrı mevzu. O recognition'a girer, makine öğrenmesine girer. Onu burada detaylandırmayalım.
+
+1196
+02:31:40,391 --> 02:32:00,591
+Her birinin kendine ait bir temel frekansı vardır bir de ekstra frekans bileşenleri vardır. Yani bu C6'da 1047 miydi neydi işte o sabit. Ama sen bunu işte insan sesiyle veya başka sesle gösterecek olursan, temsil edecek olursan ekstra frekanslar işin içine giriyor.
+
+1197
+02:32:00,591 --> 02:32:18,671
+Çünkü aslında buna gürültü diyoruz. Şu sinüzoidal yolla oluşturduğumuz sinyal herhangi bir ek bileşen içermiyor. Temiz bir sinyal. Ben bunu bir enstrümanla seslendirdiğimde ekstra bileşenler getiriyor. Aslında buna gürültü diyebiliriz.
+
+1198
+02:32:18,672 --> 02:32:34,032
+Hatta şurada adam ADSR diyoruz buna biraz fazla ses üflemiş. Biraz fazla üfleyince asıl frekansı bastıran ekstra bir bileşen eklenmiş burada.
+
+1199
+02:32:35,132 --> 02:32:46,931
+Veya burada mesela öyle bir şey yok. Normal kendi frekansında bir notayı üretmiş veya ne bileyim o boede bir mesela flütte olur ya adam elini yanlış tutar hava girer oradan farklı bir ses çıkar.
+
+1200
+02:32:46,931 --> 02:33:00,252
+Bu ekstra karakteristiğe ait şeyler buradaki de ona ait olabilir ama asıl olması gereken işte şuradaki kaçtı bin küsür işte bin kırk yedi olan frekansımız olacak.
+
+1201
+02:33:01,111 --> 02:33:09,471
+Mesela bir sesin üretilmesinde de A sesi üretiyorsunuz. A sesi şu şekilde üretilir. Bunun ses production mekanizmasında anlatıyoruz.
+
+1202
+02:33:09,471 --> 02:33:26,391
+T ile XT arasında bir şey. Gerçi bu XT değil pardon. Ses yolundan, gırtlaktan çıkıp ağızdan üretilmesine geçen süre şöyle bir şey oluyor. Şurada bir peak noktası oluşuyor sonra azalıp gidiyor.
+
+1203
+02:33:26,391 --> 02:33:31,191
+Bunu speech production modelde çizdiriyoruz.
+
+1204
+02:33:31,391 --> 02:33:32,891
+Bu sesin kendisi değil.
+
+1205
+02:33:33,731 --> 02:33:39,751
+A dediğinizde şu ses yolunda belli bir noktaya ulaşır doyum noktasına.
+
+1206
+02:33:39,831 --> 02:33:43,691
+Mesela a dediğinizde iki defa yaparsanız o zaman şunu üretirsiniz.
+
+1207
+02:33:43,891 --> 02:33:47,631
+Yani iki defa pik yapan veya üç defa pik yapan bir şey üretirsiniz.
+
+1208
+02:33:47,811 --> 02:33:49,931
+Bunlar hep karşılığı olan şeyler.
+
+1209
+02:33:50,391 --> 02:33:52,591
+Neyse zamanınız pek kalmadı.
+
+1210
+02:33:52,931 --> 02:33:54,231
+Bu konuyu şimdilik bitiriyorum.
+
+1211
+02:33:54,232 --> 02:34:05,612
+Şimdi arkadaşlar gerçek dünyada bu tarz datalarla ve dataların nasıl saklanacağı, bunların nasıl işleneceği ile alakalı sabahtan bu zamana kadar konuştuk.
+
+1212
+02:34:05,732 --> 02:34:07,472
+Peki gerçek dünya.
+
+1213
+02:34:08,051 --> 02:34:16,051
+Bu dataları ne yapacak? Bir, bu datalar üzerinde processing dediğimiz işlemler yapacak. Data processing.
+
+1214
+02:34:18,051 --> 02:34:30,051
+İşte bir input olarak bir datayı vereceğiz. Bilgisayar madem bunu çok hızlı işliyor, işte PC'ye verdik, kompütüra. Bir output olarak yeni bir data üreteceğiz.
+
+1215
+02:34:30,051 --> 02:34:44,651
+Veya gerçek dünyada data olmasına gerek yok. Datayı biz oluşturabiliriz. O zaman real life veya real time problem dediğimiz gerçek dünya problemlerinin nasıl çözüleceği ile alakalı bazı kavramlar var.
+
+1216
+02:34:45,551 --> 02:34:52,291
+Real life problems. Ne demek bu real life problems?
+
+1217
+02:34:52,291 --> 02:34:59,571
+Herhangi bir konuda size bir input giriş verileri verilecek veya bunu siz bulacaksınız.
+
+1218
+02:35:00,351 --> 02:35:06,311
+Bu giriş verilerinden bir çıkış elde edilmesi istenecek ve bu çıkışla girişle çıkış arasındaki bir fonksiyonu yazmanız gerekecek.
+
+1219
+02:35:07,371 --> 02:35:09,451
+Geçen sayısal analiz dersinde konuşmuşum.
+
+1220
+02:35:09,511 --> 02:35:12,851
+Bir havuz problemi çözmek istediğimizde işte havuzda musluklar var.
+
+1221
+02:35:13,751 --> 02:35:15,971
+Bazıları bunların dolduruyor bazıları boşaltıyor.
+
+1222
+02:35:16,051 --> 02:35:17,991
+Bu muslukların çalışma hızlarını biliyoruz.
+
+1223
+02:35:17,991 --> 02:35:23,411
+Havuzun ne kadar sürede dolacağını veya ne kadar sürede boşalacağına dair hesaplamalar yapmak istersek.
+
+1224
+02:35:24,071 --> 02:35:31,651
+Öncelikle bizim işte T1 musluğu, T2 musluğu bunlar artı dolduran musluklar, eksi T3 musluğu bu bilgiler var elimizde.
+
+1225
+02:35:32,231 --> 02:35:38,711
+Havuzun hacmi var. Bunlar bize input olarak verildiğinde biz bir şekilde bir fonksiyon üretiyoruz.
+
+1226
+02:35:38,711 --> 02:35:49,831
+Yani 4 tane girişimiz var. Bu bir f fonksiyonu. Burada da işte bir t çıkış ne kadar sürede hesaplama ne kadar sürede dolacağını gösteren bir çıkış bilgisi.
+
+1227
+02:35:51,291 --> 02:36:07,411
+Bizim burada bu ders kapsamında yapacağımız asıl iş şu f denilen şeyin tasarlanması. Bu f denilen şey aslında problemi çözecek bir sistem modeli, sistem fonksiyonu, davranış fonksiyonu, transfer fonksiyonu.
+
+1228
+02:36:07,412 --> 02:36:11,172
+Bunlar hep kullanılan kavramlar diye genel bir ifadedir.
+
+1229
+02:36:11,632 --> 02:36:16,391
+Ama bu fonksiyonun üretilmesiyle alakalı çok çok daha önemli bir kavram var.
+
+1230
+02:36:16,912 --> 02:36:17,512
+Buna da ne diyoruz?
+
+1231
+02:36:17,572 --> 02:36:18,412
+Algoritma diyoruz.
+
+1232
+02:36:20,191 --> 02:36:21,751
+Ne demek algoritma?
+
+1233
+02:36:22,591 --> 02:36:29,592
+Verilen giriş verilerinden çıkış verilmesini sağlayan fonksiyonu bulan bulma süreçleri.
+
+1234
+02:36:30,372 --> 02:36:31,372
+Girişler var.
+
+1235
+02:36:32,272 --> 02:36:33,772
+Bu girişlerden çıkış üreteceğiz.
+
+1236
+02:36:33,932 --> 02:36:36,072
+Bunu yapmak için bir fonksiyona ihtiyacımız var.
+
+1237
+02:36:36,072 --> 02:36:40,912
+Bu fonksiyonun tasarlanması süreci bize neyi söyleyecek söylüyor?
+
+1238
+02:36:41,092 --> 02:36:41,971
+Algoritmayı söylüyor.
+
+1239
+02:36:42,352 --> 02:36:44,492
+Tabi bu her zaman matematiksel bir şey değil.
+
+1240
+02:36:44,492 --> 02:36:51,512
+Yani böyle bir illaki bir x kare artı y kare gibi sayısal analizde gördüğünüz, göreceğiniz bir fonksiyon değil arkadaşlar.
+
+1241
+02:36:52,191 --> 02:36:53,532
+İşte bir sayı dizisi girdiniz.
+
+1242
+02:36:53,652 --> 02:36:55,572
+Bu sayı dizisinden en büyüğü arıyorsunuz.
+
+1243
+02:36:56,412 --> 02:36:56,852
+İşte ne var?
+
+1244
+02:36:57,272 --> 02:36:58,232
+Bunun da bir girişi var.
+
+1245
+02:36:58,452 --> 02:37:00,772
+N tane elemandan oluşan bir girişi var.
+
+1246
+02:37:01,232 --> 02:37:02,232
+Bir tane çıkışı var.
+
+1247
+02:37:02,231 --> 02:37:06,351
+var veya yok veya olan değer neyse o değer gibi bir şey.
+
+1248
+02:37:07,351 --> 02:37:09,491
+İşte bu geliştirme süreci algoritma.
+
+1249
+02:37:10,211 --> 02:37:12,111
+Algoritmayı geçen dönem kısmen gördünüz.
+
+1250
+02:37:12,311 --> 02:37:14,251
+Burada bu dönem biraz daha bunu ilerleteceğiz.
+
+1251
+02:37:14,251 --> 02:37:29,891
+Bir de bunun gerçek bir bilgisayar ortamında gerçekleştirilmesi, hayata geçilmesi yani implementation dediğimiz karşılığı olan bir programı ki var arkadaşlar.
+
+1252
+02:37:29,891 --> 02:37:47,531
+Algoritma daha kısmen soyuttur, programlama somuttur. Kafanızda bir problemin çözümüne ilişkin bir taslak oluşturursunuz. Bu taslağı alıp kurallarına uygun olarak bir programlama dilinde yazarsınız. Bu da bir programlama süreci oluyor.
+
+1253
+02:37:47,531 --> 02:37:54,211
+Algoritmanın işte tarihsel girişimini falan burada hiç anlatmıyorum. Geçen dönem gördünüz, görmediyseniz onları okumanız gerekiyor.
+
+1254
+02:37:55,492 --> 02:38:05,171
+Özelliklerine baktığımızda algoritma unambiguous, herhalde doğru yazmışımdır.
+
+1255
+02:38:07,252 --> 02:38:33,451
+finite, sets and finite, sets of sets demeyelim. Sets diyebiliriz ama başta sequence and sets of instructions.
+
+1256
+02:38:33,451 --> 02:38:42,831
+Bir algoritma analizi, algoritma tasarlama kitabına baktığınızda bu kelimeyi veya işte clear denebilir.
+
+1257
+02:38:43,151 --> 02:38:46,131
+Bu kelimeyi göreceksiniz.
+
+1258
+02:38:46,271 --> 02:38:48,451
+Şunlardan işte set veya sequence diyeceksiniz.
+
+1259
+02:38:48,531 --> 02:38:49,252
+Bu üçünü göreceksiniz.
+
+1260
+02:38:49,851 --> 02:38:51,511
+Algoritma ile alakalı temel bir şey.
+
+1261
+02:38:52,411 --> 02:38:56,391
+Şimdi problemi çözerken matematikte problem çözdüğümüzü düşünelim.
+
+1262
+02:38:56,851 --> 02:38:58,531
+Yani test sorusu çözüyorsunuz.
+
+1263
+02:38:58,531 --> 02:38:59,871
+Ne yapıyorsunuz?
+
+1264
+02:39:00,091 --> 02:39:02,031
+İşte şununla şunu toplarım.
+
+1265
+02:39:02,031 --> 02:39:03,811
+İşte bununla bunu sadeleştiririm.
+
+1266
+02:39:03,932 --> 02:39:04,551
+Mesela ne var?
+
+1267
+02:39:05,291 --> 02:39:07,651
+2T eşittir 4.
+
+1268
+02:39:08,271 --> 02:39:09,131
+İşte bu bunu ne yapıyor?
+
+1269
+02:39:09,231 --> 02:39:09,571
+Götürüyor.
+
+1270
+02:39:09,671 --> 02:39:10,671
+T eşittir 2 diyorsun.
+
+1271
+02:39:10,811 --> 02:39:12,351
+Bu matematikte olabilen bir şey.
+
+1272
+02:39:12,491 --> 02:39:16,932
+Ama bilgisayarda bu unambiguous, bu bilinmeyen bir şey.
+
+1273
+02:39:17,451 --> 02:39:17,612
+Niye?
+
+1274
+02:39:18,192 --> 02:39:23,972
+Biz nihai olarak her şeyi instruction sette, yani CPU'nun anlayacağı dilde yazmamız gerekiyor.
+
+1275
+02:39:24,411 --> 02:39:27,651
+CPU hiçbir zaman bu bunu götürür diye bir şey bilmez.
+
+1276
+02:39:28,391 --> 02:39:28,811
+Tamam mı?
+
+1277
+02:39:28,811 --> 02:39:32,911
+Bunun bunu götüreceğini nasıl olacağını ancak tarif ederseniz bilir.
+
+1278
+02:39:33,691 --> 02:39:34,292
+O da nedir?
+
+1279
+02:39:34,831 --> 02:39:41,351
+İşte T'yi yalnız bırakmak için T'nin önünde bir kas sayı varsa onu işte alırsın, kendisine bölersin, karşı tarafı da bölersin gibi bir şey.
+
+1280
+02:39:41,891 --> 02:39:42,991
+Tarif etmeniz gerekiyor.
+
+1281
+02:39:43,671 --> 02:39:46,051
+Burada tarif kesin bir hüküm gibidir.
+
+1282
+02:39:46,651 --> 02:39:51,991
+Yani siz burada yoğurt karadır diye bilgisayara tarif ederseniz yoğurdu kara yaparsınız.
+
+1283
+02:39:52,551 --> 02:39:56,411
+Mantıksal bir programlama dili vardı şeyde Prolog diye.
+
+1284
+02:39:56,591 --> 02:39:58,271
+Biz öğrencilere ödev veriyorduk.
+
+1285
+02:39:58,271 --> 02:40:18,031
+İşte child-ebeveyn ilişkisi. Arkadaş child-ebeveyn ilişkisini yanlış tasarlamış şey çıkıyordu. Bir ebeveynin birden fazla çocuğu çıkabileceği gibi yani anne veya baba bir çocuğun birden fazla ebeveyni çıkıyordu. Çünkü tarif yanlış olursa bilgisayar sistemi hata yapmaz. Tarifiniz neyse ona göre çalışır.
+
+1286
+02:40:18,031 --> 02:40:33,912
+Burada da onun gibi yapılacak bir işlemin çok makine dilindeki komutlar karşılığı cinsinden tarif edilmesi gerekiyor. Biz elbette makine dilini kullanmayacağız ama unambiguity dediğimiz şu kavram bize bunu söylüyor.
+
+1287
+02:40:33,912 --> 02:40:40,712
+Algoritma yazarken özellikle pseudokot yazarken veya flowchart yazarken işte karesini al.
+
+1288
+02:40:40,811 --> 02:40:42,772
+Karesini al diye şeyi bilgisayar bilmez.
+
+1289
+02:40:43,372 --> 02:40:44,192
+Ne bileyim sırala.
+
+1290
+02:40:44,292 --> 02:40:46,552
+Sıraladığı iş denen şeyi bilgisayar bilmez.
+
+1291
+02:40:47,432 --> 02:40:52,572
+Yani algoritmada onun için yani kısadan yazı vereyim diye yaptığınız şeyler yanlış olur.
+
+1292
+02:40:53,212 --> 02:40:55,412
+Sıralamanın nasıl olacağını tarif etmeniz gerekiyor.
+
+1293
+02:40:55,412 --> 02:40:58,091
+İşte 5. dereceden kuvvet alacaksınız.
+
+1294
+02:40:58,171 --> 02:41:01,432
+5. dereceden kuvvet almak nasıldır onu tarif etmeniz gerekiyor.
+
+1295
+02:41:01,431 --> 02:41:06,271
+Çünkü özellikle pseudo kodda ve flow chartta bizler ne anlatıyoruz size?
+
+1296
+02:41:06,731 --> 02:41:07,991
+Temel operasyonları anlatıyoruz.
+
+1297
+02:41:08,071 --> 02:41:12,651
+Toplama, çıkarma, çarpma, bölme, eşitlik, karşılaştırma ve atama işlemleri.
+
+1298
+02:41:12,731 --> 02:41:14,111
+Başka herhangi bir operasyon yok.
+
+1299
+02:41:15,991 --> 02:41:21,091
+Her şeyi yani bu sıralamadır ne bileyim karşılaştırmanın her şeyi bunlar cinsinden yazmanız gerekiyor.
+
+1300
+02:41:21,191 --> 02:41:21,951
+Probleminiz neyse.
+
+1301
+02:41:22,711 --> 02:41:24,311
+Sonlu olacak diyoruz.
+
+1302
+02:41:24,851 --> 02:41:29,752
+Sonlu olması algoritmanızın bir yerde tamamlanması anlamına geliyor.
+
+1303
+02:41:29,752 --> 02:41:31,931
+Yani sonsuza kadar çalışacak bir şey olmayacak.
+
+1304
+02:41:32,671 --> 02:41:34,132
+Proses bir şekilde bitmesi lazım.
+
+1305
+02:41:34,272 --> 02:41:38,451
+Çünkü bilgisayar dedi ki program proses haline gelecek, işlem tarafından işletilecek.
+
+1306
+02:41:38,791 --> 02:41:40,612
+Bu prosesin bir yerde son bulması lazım.
+
+1307
+02:41:40,612 --> 02:41:47,112
+Bunu yaparken algoritmanızın sonlu adımlar içerecek şekilde tasarlanması gerekiyor.
+
+1308
+02:41:48,671 --> 02:41:54,612
+Bir de bu sonlu adımlar kullandığınız instruction set'e bağlı.
+
+1309
+02:41:54,711 --> 02:41:57,752
+Instruction set dediğimiz bir işlemci,
+
+1310
+02:41:57,752 --> 02:42:02,431
+Bugün gidin bakın mesela bir dersten sonra bir ara herhangi bir işlemcinin data sheet'ini içerin.
+
+1311
+02:42:02,891 --> 02:42:05,852
+İçerisinde belki 700, 800 veya 10 bin tane komut olsun.
+
+1312
+02:42:06,420 --> 02:42:23,420
+10.000 tane komut cinsinden bir şey yazabileceksiniz. Yani 10.000 birinci bir komut o işlemcide yoksa yapamazsınız. Sonluluğu bu da ifade ediyor. Hem ambiguity yani belirsizliği ifade eden bir şeydir. Instruction setin dışında bir şey yazmak hem de sonluluğu ifade eden bir şeydir.
+
+1313
+02:42:23,420 --> 02:42:39,619
+Ve bunların belli bir sekvensi, bir sıralaması veya bir kümesi olacak. Yani benim A, B, C diye makinemde komutlar var. Üç komutlu bir makine.
+
+1314
+02:42:39,620 --> 02:42:48,440
+Ben bütün problemlerimi çözerken A, B, C'yi kullanırsam unambiguous özelliğini sağlamış oluyorum.
+
+1315
+02:42:49,300 --> 02:43:01,079
+A, B, C'yi belli bir sayıda işte bunların işte ne bileyim önce A'yı kullan sonra B'yi kullan A'yı kullan B'yi kullan bunların belli sonsuz olmayacak şekilde sıralarsam finite özelliğini sağlamış oluyorum.
+
+1316
+02:43:01,079 --> 02:43:13,000
+Bunların belli bir mantıksal sırayla gelmesi de bu sekvens özelliğini veya bunların hepsinin bir araya gelmesi bir küme olacağı özelliğini söylüyor.
+
+1317
+02:43:13,659 --> 02:43:17,399
+Mantıksal sıraya gelmesi özelliği belki de en önemli özelliklerden bir tanesi.
+
+1318
+02:43:17,399 --> 02:43:24,920
+Çünkü herkes programlama dilinin kurallarını veya işte makine dilinin kurallarını öyle veya böyle bir şekilde öğreniyor.
+
+1319
+02:43:25,460 --> 02:43:29,879
+Yani nerede noktalı bir gül kullanılacak, döngü nasıl tanımlanıyor, if nasıl tanımlanıyor bunu biliyoruz.
+
+1320
+02:43:29,879 --> 02:43:37,219
+Ama önemli olan bunların mantıksal bir sıraya, işte baştan aşağıya, yukarıdan aşağıya doğru mantıksal bir sırayla sıralanması.
+
+1321
+02:43:37,879 --> 02:43:41,879
+Şimdi kız, bayan arkadaşlar burada bilirler, hanımlar bilirler.
+
+1322
+02:43:42,720 --> 02:43:46,159
+Kek yapacağız. Kek yaparken önce ne yapılıyor? Birisi söylesin.
+
+1323
+02:43:46,879 --> 02:43:49,280
+Erkeklerden kek yapanlar varsa onlara da söyleyebilir.
+
+1324
+02:43:51,500 --> 02:43:56,039
+Veya erkekler de çay yapacağız. Onun nasıl olacağını söylesin. Biraz daha basit bir şey soralım.
+
+1325
+02:43:59,956 --> 02:44:29,456
+Bir resipiye ihtiyacımız var sanki. Neye ihtiyaç var? Tarif. Tamam. Bir tarif listesi. Yok, tarif senden. Yani biz hazırcı değiliz. Tarifi sen yapıyorsun. Anıl demiş ki su kaynatılır, su ısıtılır. Önce ısınır mı, kaynar mı? Önce ısıtırız, ondan sonra kaynar herhalde değil mi? Suyu kaynatırız diyen var. Bayanlardan kimse destek vermiyor mu bize?
+
+1326
+02:44:29,956 --> 02:44:39,176
+Şimdi mesela suyu kaynatmadan, mer oradan gidelim. Herkes erkek mi burada?
+
+1327
+02:44:40,515 --> 02:44:44,176
+Suyu kaynatmadan, yumurta ile şeker çırpılır Hasan söyledi.
+
+1328
+02:44:44,895 --> 02:44:46,655
+Hocam ben yardımcı olayım.
+
+1329
+02:44:46,655 --> 02:44:47,216
+Tamam.
+
+1330
+02:44:49,976 --> 02:44:53,356
+Önce 3 yumurta kırıyoruz. Bunları da söyleyeyim mi?
+
+1331
+02:44:53,595 --> 02:44:59,695
+Sonra bir su bardağı şeker. Bunları köpürene kadar çekmemiz gerekiyor.
+
+1332
+02:44:59,695 --> 02:45:00,035
+Tamam.
+
+1333
+02:45:01,035 --> 02:45:03,996
+Sonrasında işte belirli miktarda sıvı yağ, süt.
+
+1334
+02:45:05,176 --> 02:45:06,535
+Ondan sonra...
+
+1335
+02:45:06,535 --> 02:45:08,215
+Bunu karıştırıyor muyuz şeyin önüne?
+
+1336
+02:45:09,755 --> 02:45:13,475
+Sıvı yağ ile sütü o biraz önceki yaptığımız karışımı içine mi ekliyoruz?
+
+1337
+02:45:13,495 --> 02:45:14,735
+Evet içine ekliyoruz.
+
+1338
+02:45:14,875 --> 02:45:15,975
+Şimdi bir dakika bak.
+
+1339
+02:45:16,055 --> 02:45:17,155
+Herif'in söylediği şey de güzel.
+
+1340
+02:45:17,375 --> 02:45:18,395
+Sıralı bir işlem var.
+
+1341
+02:45:18,515 --> 02:45:25,235
+Önce dedi ki yapacağımız şey yumurtayla nedir?
+
+1342
+02:45:25,335 --> 02:45:26,775
+Şekeri karıştıracağız.
+
+1343
+02:45:26,895 --> 02:45:28,095
+Çöpükleşene kadar dedi.
+
+1344
+02:45:28,176 --> 02:45:29,676
+Bak dikkat edin bir de kadar var.
+
+1345
+02:45:29,695 --> 02:45:34,035
+köpük olana kadar bir süreçten bahsediyor.
+
+1346
+02:45:34,095 --> 02:45:35,775
+Tekrarlı bir işlemden bahsediyor.
+
+1347
+02:45:36,636 --> 02:45:39,235
+Ondan sonra dedi ki işte diğerlerini ekleyeceğiz.
+
+1348
+02:45:39,335 --> 02:45:44,715
+Eğer ben bu köpükleşene kadar olmadan bunu yaparsam sırayı bozmuş olurum.
+
+1349
+02:45:44,795 --> 02:45:46,115
+Sırayı bozarsam Elif ne olur?
+
+1350
+02:45:49,536 --> 02:45:50,855
+İkiniz kötü olur.
+
+1351
+02:45:51,215 --> 02:45:51,695
+Kötü olur.
+
+1352
+02:45:51,895 --> 02:45:52,635
+Tamam devam edelim.
+
+1353
+02:45:52,695 --> 02:45:54,615
+Biraz daha başka analizler yapalım.
+
+1354
+02:45:54,615 --> 02:45:57,655
+Hem de faydalanacak birileri çıkar.
+
+1355
+02:45:58,635 --> 02:45:59,515
+Unu ekledik.
+
+1356
+02:45:59,695 --> 02:46:00,735
+Diğer şeyler ekledik.
+
+1357
+02:46:01,456 --> 02:46:06,075
+Önce sıvı yağ ile süt ekledikten sonra tekrar çırpıyoruz onlarda karistini.
+
+1358
+02:46:06,555 --> 02:46:11,176
+Ondan sonra unu, kabartma tozunu, şeker ve alini eleyerek ekliyoruz.
+
+1359
+02:46:11,756 --> 02:46:13,256
+Sonra çırpıyoruz.
+
+1360
+02:46:13,655 --> 02:46:18,655
+Sonra da isteğe göre içine tatlandıracak bir şeyler ekleyebiliyorsunuz.
+
+1361
+02:46:18,756 --> 02:46:21,215
+Peki ne kadar ekleyeceğiz?
+
+1362
+02:46:21,676 --> 02:46:23,975
+Mesela un ne kadar eklenecek?
+
+1363
+02:46:25,015 --> 02:46:27,495
+Bir karşılaştırma yapmak gerekiyor değil mi?
+
+1364
+02:46:27,495 --> 02:46:35,715
+Evet yani o her keki göre değişiyor çünkü her yumurtanın büyüklüğü aynı değil onu biraz kendiniz karar vermeniz gerekiyor.
+
+1365
+02:46:35,715 --> 02:46:46,315
+Demek ki bir karşılaştırma noktası olacak. Tamam çok güzel bir tarif oldu teşekkür ederim. Bir arkadaş da burada herhalde bir yerden kop yola yapıştır yaptı.
+
+1366
+02:46:47,655 --> 02:46:51,535
+Şimdi arkadaşlar çok güzel bir tarif teşekkür ederiz katkı için.
+
+1367
+02:46:51,536 --> 02:47:03,476
+Öncelikle dedi ki arkadaşımız bir işin öncelik sırası var. Hatta Zafer dedi ki bir tarif olacak. Evet bu bir deney yapar gibi bir tarif. Anne ölçüsüz diye bir arkadaşımız.
+
+1368
+02:47:03,476 --> 02:47:19,515
+Şimdi burada yapılan işlemlerin belli bir sırayla yapılacağını öğreniyoruz. Aynen algoritmada belli bir sırayla olur. Yani önce çorabı giyip sonra ayakkabıyı giyeriz değil mi? Önce ayakkabıyı giyip çorabı giymiyoruz daha sonra. Aynen bunun gibi. Burada da yani acayip olur.
+
+1369
+02:47:19,515 --> 02:47:26,896
+Kekinizi işte şey yapmamak için veya probleminizin doğru çıktı vermesi için bu işlemlerin doğru bir sırayla olması lazım.
+
+1370
+02:47:27,836 --> 02:47:36,836
+Bir. Sonra dedi ki şuraya kadar çırpalım veya şu iş olana kadar tekrar bu işi yapalım.
+
+1371
+02:47:36,836 --> 02:47:42,676
+Bir tekrarlı işlemden bahsediyoruz. Bir de dedi ki ben özellikle sordum ne kadar ekleyeceğiz?
+
+1372
+02:47:42,816 --> 02:47:47,495
+İşte onun bir limiti şey var ölçüsü var dedi. Yani bir karşılaştırma işlemi yapacağız.
+
+1373
+02:47:47,495 --> 02:47:56,495
+İşte bu sequence olan, sonlu olan ve unambiguous olan işlemlerin bilgisayarda tarif edilmesi
+
+1374
+02:47:57,523 --> 02:48:01,623
+problemi çözen işlemlerin tarif edilmesi nedir arkadaşlar? Algoritmadır.
+
+1375
+02:48:02,383 --> 02:48:12,623
+Pekala, burada algoritma deyince karşımıza temelde üç tane işlem, üç tane üçtür işlem çıkıyor. Dört tane değil, dördüncüsü yok. Bunu benden çok duyacaksınız.
+
+1376
+02:48:13,143 --> 02:48:17,243
+Burada bir sequential işlemler.
+
+1377
+02:48:21,172 --> 02:48:42,172
+Birazdan örnek vereceğim. Conditional operations. Bakın şu an çok güzel yazıyor bu kalem ama bazen delirtiyor beni. Niye böyleyse. Diğeri de repetitive operations. Tekrarlı işlemler.
+
+1378
+02:48:42,172 --> 02:48:49,272
+Şimdi ben yakın zamanda Azerbaycan'da bir üniversiteye ders veriyordum uzaktan.
+
+1379
+02:48:50,032 --> 02:48:50,831
+Orada hocalar var.
+
+1380
+02:48:50,991 --> 02:48:52,951
+Tabii Türkçe anlatıyorum, Azerbaycan'da bilmiyorum.
+
+1381
+02:48:53,991 --> 02:48:56,151
+Burada da Zafer belki...
+
+1382
+02:48:56,151 --> 02:48:56,971
+Zafer nerelisin?
+
+1383
+02:48:58,712 --> 02:48:59,411
+Rusya hocam.
+
+1384
+02:48:59,752 --> 02:49:00,212
+Rusya.
+
+1385
+02:49:02,352 --> 02:49:06,631
+Onlar diyor ki sequential'a hekti yapılar diyor.
+
+1386
+02:49:07,771 --> 02:49:09,411
+Conditional'a budaklı yapılar.
+
+1387
+02:49:09,411 --> 02:49:37,511
+Repetitivide UNEC, University of Economy diye bir şey orada bizim üniversitede bir şeyleri var, protokolü var. Tekrarlı yapılar da devirli yapılar diyordu. Yani anlaşıyoruz da tabii onların kendilerine ait şeyler var. Onlara da hep söylüyordum bakın bu üçüncüden başka dördüncü bir şey yok. Bir yerden sonra dördüncü bir şey olmadığı için başka şeylere ihtiyaç duyacağız. Yeri gelince onları anlatacağım.
+
+1388
+02:49:37,511 --> 02:49:56,532
+Demek ki biz yaptığımız bütün operasyonları sıralı bir şekilde yazacağız ve bu sıralı işlemler sonlu olacak ve unambiguous olacak. Hepsi açık ve seçik ifadeler olacak. Ondan sonra bu işlemlerin arkadaşlar 3 farklı türde olduğunu söyledik.
+
+1389
+02:49:56,532 --> 02:50:12,271
+Mesela a eşittir a artı bir veya a eşittir beş bunlar sıralı olarak yapılacak şeyler. Sonra if diye bir şey eğer diye bir şey karşımıza gelecek. Bu belli işlerin yapılıp belli işlerin yapılmaması gerektiğini.
+
+1390
+02:50:12,271 --> 02:50:26,712
+Şimdi bir program çalışırken sıralı yapı üzerinde kodlama yapıyorsak yani A dedik, A dedik, B, A program böyle akarken kesinlikle ve kesinlikle bütün bu sıralı işlemlerin hepsi yapılacak demek.
+
+1391
+02:50:26,712 --> 02:50:39,252
+Ama if dediğimizde buraya bir şart yazıyoruz. İşte A olacak, B olacak. İşte şuraya da şunu koyalım. Sonra else dediğimizde işte B olacak, A olacak.
+
+1392
+02:50:39,252 --> 02:51:00,392
+Şu kısım yapılmazken bu kısım yapılacak. Bu kısım yapılırken bu kısım yapılmayacak. Bu kısım yapılırken öbür kısım yapılmayacak. Belli bir kısım yapılıp yapılmadığını söylüyoruz. Bakın bu bir tekrarlı bir işlem değildir. Şartlı bir işlemdir. Repetitive operation'da tekrarlı işlemlerde de belli bir operasyonun belli bir duruma göre tekrar tekrar yapılması.
+
+1393
+02:51:00,392 --> 02:51:14,112
+Ve burada biz genellikle repetitive operation'larda unclear olan durumları gösterirken bir tekrarlı işlemden bahsedeceğiz.
+
+1394
+02:51:14,112 --> 02:51:28,772
+Bir de clear olan veya belirli, şöyle diyelim, definite, indefinite olan bir şekilde ayırma yapalım.
+
+1395
+02:51:28,771 --> 02:51:45,991
+Yani tekrarlı olan bir işlem kaç defa tekrar edeceği belli. İşte nedir? Mesela birden yüze kadar, ne bileyim elliden otuza kadar bir tekrar olacağını, başlangıcı belli, bitişi belli olan genellikle for diye ifade ettiğimiz bir keyword da yapılıyor.
+
+1396
+02:51:45,991 --> 02:52:11,991
+indefinite olan da işte until search, until find mesela bulana kadar veya till greater than bir şey, bir şeyden büyük olana kadar gibi belli bir şey ne zaman biteceği belli olmayan ve biz de daha çok bunu while ve do while olarak göreceğimiz yapılarla saldırıyoruz.
+
+1397
+02:52:11,991 --> 02:52:15,951
+Bakın başka dördüncü bir şey burada bu algoritmada yok.
+
+1398
+02:52:16,628 --> 02:52:26,227
+Dolayısıyla bu dördüncü bir şey programlamada da doğrudan yok. Programlama dili bana ekstra bazı kolaylıklar sağlarsa onları daha sonra inceleyeceğiz.
+
+1399
+02:52:26,227 --> 02:52:37,907
+Şimdi bu genel girişi yaptıktan sonra 50 geçiyor, süremiz doldu. Pazartesi günü, algoritma nasıl geliştirilir örneklerinden başlayıp, daha sonra diyeceğiz ki iyi algoritma nedir?
+
+1400
+02:52:37,907 --> 02:52:42,067
+Bugün belki biraz daha detaylı gittik ama iyi algoritmanın ne olduğunu anlatacağız.
+
+1401
+02:52:42,067 --> 02:52:55,988
+Ve bu algoritmayı bir programlama dilinde ve bizim dersimizde C'de nasıl gerçek hayata uygulayabiliriz, gerçekleştirebiliriz? Bunlar üzerinde çalışmalar yapacağız. Pazartesi görüşelim diyelim. Var mı bir sorunuz?
+
+1402
+02:52:59,956 --> 02:53:01,975
+İsteydiniz, sorduğunuz, soracağınız şey.
+
+1403
+02:53:02,795 --> 02:53:03,575
+İyi günler hocam.
+
+1404
+02:53:04,456 --> 02:53:06,456
+Evet ben Zafer senden mesajı aldım.
+
+1405
+02:53:06,595 --> 02:53:07,775
+Bir grup kuracağım arkadaşlar.
+
+1406
+02:53:08,015 --> 02:53:09,716
+Muhtemelen size mail ile göndereceğim.
+
+1407
+02:53:09,916 --> 02:53:13,075
+Yalnız mail ile gönderdiğim grup linkini başka gruplara göndermeyin.
+
+1408
+02:53:13,195 --> 02:53:14,735
+Sadece kendi gruplarım olsun istiyorum.
+
+1409
+02:53:14,935 --> 02:53:17,775
+Sayısal analiz ve şey için tek bir grup kuracağım.
+
+1410
+02:53:17,876 --> 02:53:19,275
+Yapısal programlamaya giriş için.
+
+1411
+02:53:19,976 --> 02:53:21,376
+Hepinize iyi hafta sonları.
+
+1412
+02:53:21,495 --> 02:53:22,035
+Görüşmek üzere.
+
+1413
+02:53:22,155 --> 02:53:23,495
+Hocam bir şey diyebilir miyim?
+
+1414
+02:53:23,655 --> 02:53:26,075
+Sayısal analizde farklı grupta olanlar var burada.
+
+1415
+02:53:26,475 --> 02:53:27,855
+Hani herkes aynı grupta değil mi?
+
+1416
+02:53:27,855 --> 02:53:31,415
+Benim iki grubumdan birinde olsun da hangisi olduğu önemli değil.
+
+1417
+02:53:34,316 --> 02:53:36,235
+Evet herkese iyi günler arkadaşlar.
+
+1418
+02:53:36,595 --> 02:53:37,796
+Görüşmek üzere. Hoşçakalın.
+
+1419
+02:53:37,796 --> 02:53:38,476
+İyi günler hocam.

@@ -1,0 +1,5631 @@
+1
+00:00:37,460 --> 00:00:56,300
+Arkadaşlar, merhabalar. Merhaba hocam. Bir beş dakika sonra falan başlayalım. Bütün USB'ler dolu da grafik tableti takamıyorum. Kopyalama işlemi devam ediyor. Hem de herkes toparlanında durur.
+
+2
+00:02:24,147 --> 00:02:35,147
+Bu arada bir arkadaşınızın bir sorusu vardı. İsmini hatırlayamadım. Ahmet Akip, evet şunu da hatırladım.
+
+3
+00:02:37,147 --> 00:02:47,147
+Fonksiyon yazmanın ölçüsü ne olacak? Yani her kod tekrarı olan yerde fonksiyon yazmak zorunda mı istiyor? Doğru değil mi Ahmet?
+
+4
+00:02:47,147 --> 00:02:51,147
+Evet hocam, bir de optimize eder mi diye sormuştum.
+
+5
+00:02:51,147 --> 00:03:01,467
+Şimdi fonksiyonların programlama açısından, modelleme açısından en uygun tasarım aracı olduğu Aşker.
+
+6
+00:03:01,567 --> 00:03:05,668
+Yani modülerize etme açısından çok güzel bir optimizasyon aracı fonksiyon yazmak.
+
+7
+00:03:06,228 --> 00:03:18,008
+Ama mesela bir satırlık bir şey printf bir şeyi zaten o kendisi bir fonksiyon olduğu için o tarz şeyleri bir satırlık iki satırlık şeyleri ufak tefek şeyleri fonksiyon olarak yazmaya gerek yok.
+
+8
+00:03:18,008 --> 00:03:20,208
+Benim demek istediğim şu.
+
+9
+00:03:21,287 --> 00:03:23,168
+Mesela bir dizi sıralayacaksınız.
+
+10
+00:03:23,388 --> 00:03:25,008
+Daha sonra yazdırma yapacaksınız.
+
+11
+00:03:26,048 --> 00:03:28,567
+Bunların hepsi belki program aşaması.
+
+12
+00:03:28,668 --> 00:03:34,467
+Programda sürekli çağrılabilen subrutinler dediğimiz alt program parçaları.
+
+13
+00:03:35,347 --> 00:03:39,508
+Ve bunu fonksiyon yazmadan düşünürsek,
+
+14
+00:03:40,627 --> 00:03:43,387
+büyük ihtimalle programımızda birkaç yerde tekrar edecek.
+
+15
+00:03:43,387 --> 00:03:46,527
+İşte ne bileyim bir dizi sıralanacak veya başka bir şey yapılacak.
+
+16
+00:03:46,627 --> 00:03:47,987
+Dizinin elemanları tekrar yazılacak.
+
+17
+00:03:48,008 --> 00:03:53,188
+Bunun gibi bir subrutini fonksiyon haline getirmek gerekiyor.
+
+18
+00:03:54,347 --> 00:04:01,347
+Ki bu duplicated kod hem kod kalabalığını engelliyor hem de şu açıdan faydalı.
+
+19
+00:04:02,107 --> 00:04:04,747
+Bu dizi yazdırma işleminde bir değişiklik yapmak istedin.
+
+20
+00:04:04,847 --> 00:04:07,228
+Mesela ne bileyim araya yıldızlar koyarak yazmak istedin.
+
+21
+00:04:07,868 --> 00:04:11,688
+Eğer bunu kopyala yapıştır kopyala yapıştır yaparsan kodun her yerinde değiştirmen lazım.
+
+22
+00:04:11,688 --> 00:04:20,448
+Buna gerek kalmasın diye bir defa fonksiyon yazıp sadece fonksiyonun içerisindeki kodu değiştirmek yeterli oluyor.
+
+23
+00:04:20,847 --> 00:04:25,847
+Bu açıdan da faydalı hızlı bir şekilde kod geliştirmeyi sağlıyor.
+
+24
+00:04:27,828 --> 00:04:30,808
+Optimize olmasında bir de şöyle bir problem var yalnız.
+
+25
+00:04:30,807 --> 00:04:42,508
+Fonksiyon çağrısı demek programın akışının kesilip başka bir alt programın çağrılması ve o kesinti esnasında bazı yedekleme işlemlerinin yapılması anlamına geliyor.
+
+26
+00:04:42,747 --> 00:04:54,287
+Eğer bir sistem programlama veya low level seviye programlama yapacaksak ve bu bahsettiğimiz program sürekli tekrar etmeyen bir şeyleri içeriyorsa o zaman gerek yok.
+
+27
+00:04:54,287 --> 00:05:00,827
+Yani bir defa yapılan bir program parçası var ve bu ileride tekrar etmeyecekse çok fazla gerek yok.
+
+28
+00:05:00,888 --> 00:05:07,927
+Ama tekrarlı bir şey ne bileyim 5 satır 6 satır dahi olsa sürekli tekrar eden 2 veya daha fazla tekrarda da olabilir.
+
+29
+00:05:08,907 --> 00:05:11,987
+Ne olması lazım? Fonksiyonla yazılması lazım.
+
+30
+00:05:12,487 --> 00:05:14,528
+O açıdan önemli.
+
+31
+00:05:15,008 --> 00:05:17,168
+Bazen işte makroları kullanıyoruz C'de.
+
+32
+00:05:17,468 --> 00:05:19,607
+O define ile yazdığımız şeyler aslında makrodur.
+
+33
+00:05:19,607 --> 00:05:27,167
+Hani define max 3 dediğimizde biraz daha kısa bir şekilde kod yazmayı sağlıyor.
+
+34
+00:05:27,307 --> 00:05:32,227
+Kodun çalışmasında iyi tarafları var.
+
+35
+00:05:32,347 --> 00:05:34,307
+Tabi onlar biraz daha yapısal programlama konuları.
+
+36
+00:05:34,347 --> 00:05:35,887
+Onun için şimdiden bunlara girmeyeceğim.
+
+37
+00:05:36,587 --> 00:05:38,887
+Ama genel olarak iyi diyebilirim.
+
+38
+00:05:40,047 --> 00:05:42,587
+Hatta object-oriented programlama yaparken
+
+39
+00:05:44,807 --> 00:05:46,847
+mesela bir get işlemi var.
+
+40
+00:05:47,227 --> 00:05:49,007
+Bir sayının elde edilmesini istiyorsunuz.
+
+41
+00:05:49,008 --> 00:05:52,347
+get ID number falan diyorsunuz Java'da veya C Sharp'da.
+
+42
+00:05:52,987 --> 00:05:54,968
+Her iş için ayrı fonksiyonlar yazılıyor.
+
+43
+00:05:56,588 --> 00:05:58,448
+O kadar fazla modülerle önem veriyor.
+
+44
+00:05:58,448 --> 00:06:06,888
+Çünkü yazılım mühendisliği tarafında yapılacak iyi bir planlama, kodun hızlı çalışmasının önüne geçen bir şey.
+
+45
+00:06:08,108 --> 00:06:16,047
+Günümüz derleyicileri, günümüz bilgisayarları, işlemciler ve önemliler artık daha hızlı olduğu için çok daha az hız sorunu oluşturuyorlar.
+
+46
+00:06:16,047 --> 00:06:20,807
+Tabii lol, devil seviyede iş farklı. O zaman biraz daha duruma göre düşünmek lazım.
+
+47
+00:06:21,651 --> 00:06:26,651
+Genel olarak herhalde senin soruna böyle cevap vermiş olabilir Muhammed.
+
+48
+00:06:26,651 --> 00:06:28,651
+Evet hocam, sağ olun.
+
+49
+00:06:28,651 --> 00:06:43,651
+Evet, 30 saniye kaldı. Şu bir biterse mouse'umu da kullanamıyorum. Onun için dosya kopyalama, bakın dip kopyalama zor bir şey.
+
+50
+00:06:43,651 --> 00:06:52,211
+Bir yerden bir yere bir şeyi kopyalarken tabi bayağı zaman alıyor. Onun için sığ kopyalama, pointer kullanıma daha uygun.
+
+51
+00:06:55,956 --> 00:07:05,956
+Şimdi o zaman şöyle diyelim arkadaşlar, olana kadar ben ekranımı paylaşayım. Son dersini kısa bir tekrarını yapalım. Evet, sorabilirsin.
+
+52
+00:07:05,956 --> 00:07:11,956
+Hocam, 23 Nisan'da laboratuvar dersimiz sınava gidecek ya.
+
+53
+00:07:11,956 --> 00:07:16,956
+Sınava gitmeyecek. 23 Nisan pazartesi mi, cuma mı?
+
+54
+00:07:16,956 --> 00:07:19,956
+Pazartesi hocam, laboratuvar saatine denk geliyor.
+
+55
+00:07:19,956 --> 00:07:21,956
+Onu o zaman söyleyelim.
+
+56
+00:07:21,956 --> 00:07:22,956
+Cuma mı?
+
+57
+00:07:22,956 --> 00:07:24,956
+Cuma olması lazım.
+
+58
+00:07:24,956 --> 00:07:33,255
+Hocam şeyde programda tatil gözüküyormuş TAP2'de o yüzden sormak istedim.
+
+59
+00:07:34,255 --> 00:07:41,255
+Yani bizi sadece 23 Nisan'da şey etkiliyor yani teorik dersimizi etkiliyor bir de Ramazan bayramını da etkiliyor.
+
+60
+00:07:42,296 --> 00:07:45,415
+Onun için laboratuvar açısından bir problem yok.
+
+61
+00:07:47,575 --> 00:07:50,536
+Haftaya size yine asistan hocalarınız laboratuvar yapacak.
+
+62
+00:07:52,615 --> 00:07:53,755
+Hadi 40 saniye.
+
+63
+00:07:53,755 --> 00:07:55,976
+Bir artıyor bir azalıyor.
+
+64
+00:07:57,415 --> 00:07:59,735
+80 megabayt şeyi kopyalayamadı.
+
+65
+00:08:00,456 --> 00:08:08,756
+Şimdi arkadaşlar neyse biz şuradan kısaca birkaç şey hatırlayalım.
+
+66
+00:08:09,775 --> 00:08:13,555
+Son dersimizde pointerlar konusunu kullanmıştık.
+
+67
+00:08:14,275 --> 00:08:15,275
+Çoğunu anlattık.
+
+68
+00:08:15,435 --> 00:08:20,355
+Birkaç matrislerle alakalı anlatacağım bir şey kaldı.
+
+69
+00:08:20,355 --> 00:08:22,256
+Ondan sonra bugün bayağı bir örnek yapacağız.
+
+70
+00:08:23,755 --> 00:08:34,755
+Şimdi bir x değişkeni oluşturulduğunda bunun pointer değişkenini oluşturarak ne yapıyorum? Pointer vasıtasıyla değişkene erişebiliyordum.
+
+71
+00:08:34,755 --> 00:08:41,455
+Bunu oluşturmak için değişkenin önüne aynı tür olduğunu ifade edeceğim. Bir de yıldız işareti koyacaktım.
+
+72
+00:08:42,135 --> 00:08:49,095
+Değişkenin adresinin değeri adresini almak istiyorsam da ampersand operatörüyle referans yapma işlemi kullanıyorduk.
+
+73
+00:08:49,195 --> 00:08:50,695
+Referancing diyorduk ona değil mi?
+
+74
+00:08:51,675 --> 00:08:52,355
+Referancing.
+
+75
+00:08:52,355 --> 00:09:00,875
+Şurada da dereferans yapıyorduk. Bu ne yapıyordu? Px'in gösterdiği yerdeki değeri al. Ne bileyim bununla değiştir.
+
+76
+00:09:01,315 --> 00:09:12,375
+Bunu aynı şekilde biz diziler için de kullanmıştık pointerı. Diziler için içine girdi bir pointer aritmetik konusuna bakmak gerekiyordu. Niye? Çünkü dizinin üzerinde dolaşmamız lazım.
+
+77
+00:09:13,035 --> 00:09:20,255
+Şöyle bir ilklendirilmiş bir dizim olsun. Bu dizinin böyle ilklendirilmesi sonucunda ne oluyordu?
+
+78
+00:09:20,256 --> 00:09:23,776
+İlk 3 eleman 1, 2, 4 geri kalanlar otomatik olarak 0 oluyordu.
+
+79
+00:09:24,595 --> 00:09:25,636
+Bunu da söylemiş olalım.
+
+80
+00:09:26,196 --> 00:09:29,795
+Bütün düzeyi 0'lamak istiyorsanız hiç başka bir şey kullanmanıza gerek yok.
+
+81
+00:09:30,575 --> 00:09:34,155
+İlk elemanını 0 yapmanız diğer elemanları da 0 yapmanız anlamına gelir.
+
+82
+00:09:34,295 --> 00:09:36,155
+Hiç statik falan kullanmaya gerek yok.
+
+83
+00:09:36,216 --> 00:09:37,476
+Bazı yerlerde statik kullanılıyor.
+
+84
+00:09:38,216 --> 00:09:39,716
+Statik başka amaçla da kullanılır.
+
+85
+00:09:39,756 --> 00:09:42,556
+Onun için karışmasın diye direkt bu önden düzeyi 0'layabilirsiniz.
+
+86
+00:09:43,396 --> 00:09:44,956
+Bunu da söylemiş olalım.
+
+87
+00:09:44,956 --> 00:09:48,155
+Şimdi bir de matrisler üzerinde.
+
+88
+00:09:48,155 --> 00:09:55,396
+İşte bu M matrisi diyelim ne bileyim 5'e 5'lik bir matris olsun.
+
+89
+00:09:56,896 --> 00:10:01,715
+Ve bu matrisin elemanlarını da işte şöyle ilklendiriyoruz.
+
+90
+00:10:03,135 --> 00:10:11,456
+0,0, 0,0 işte her bir kaç tane satırınız varsa her bir satır için şunlar.
+
+91
+00:10:12,155 --> 00:10:18,055
+Kaç tane sütununuz varsa her bir sütun için bu kadar eleman yazabilirsiniz ama ben hatta direkt 0 yazmak istiyorum.
+
+92
+00:10:18,155 --> 00:10:20,316
+Bakalım ne olacak? Doğrudan şey.
+
+93
+00:10:20,956 --> 00:10:28,495
+Şimdi son derste dizileri anlattık da matrislerin fonksiyonlara gönderilmesi için neler yapabiliriz?
+
+94
+00:10:29,715 --> 00:10:36,735
+Tabii matrislerin fonksiyonuna göndereceğimizi konuştuk da pointer kullanarak bunu nasıl çağırabiliriz ona bakalım.
+
+95
+00:10:36,735 --> 00:10:38,775
+Bir yazdır diye bir fonksiyonum olsun istiyorum.
+
+96
+00:10:39,495 --> 00:10:44,415
+M'yi göndereceğim ve sonra size'ını göndereceğim.
+
+97
+00:10:44,995 --> 00:10:46,456
+Şimdi bunu nasıl yazmam lazım arkadaşlar?
+
+98
+00:10:46,575 --> 00:10:47,635
+Void yazdır dedik.
+
+99
+00:10:48,155 --> 00:10:49,555
+Evet söyleyin bakalım.
+
+100
+00:10:54,995 --> 00:11:08,995
+İlk yazacağımız parametre nasıl olacak burada? Bu fonksiyonun tanımında. Pointer kullanmadan şu an onu soruyorum sadece. Evet, sonunda bitti.
+
+101
+00:11:10,995 --> 00:11:16,995
+Nasıl bir fonksiyon yazmamız lazım? Bu fonksiyonu yazdırmak için tanımımız ne olacak?
+
+102
+00:11:24,403 --> 00:11:48,403
+Evet arkadaşlar int matris 5. Emir Çağrı doğru, Recep Selim doğru, Kerim doğru. Yusuf o şekilde değil de sütun bilgisini yazmak gerekiyor. Arkadaşlar şu şekilde tanımlayabiliriz. Satır yazmadan sütun bilgisini yazabiliriz.
+
+103
+00:11:48,403 --> 00:12:06,723
+Tabi bunun 5 yerine ne bileyim kullanacağınız bir define parametresi yani define değeri de yazılabilir. O önemli değil. Sonra ben m, integer n diyorum. Çünkü iki tane ne gelecek? Şuradaki fonksiyon çağrısına bakarak iki tane integer geleceğini görüyorum. Buraya iki tane değişken yazdım.
+
+104
+00:12:06,723 --> 00:12:15,003
+Sonra ne yapacağız? Burada bir tane i ve j değişkenlerim olsun. Bir for döngüsüyle elemanlarımızı yazacağız.
+
+105
+00:12:15,003 --> 00:12:39,003
+İ eşittir 0, İ küçüktür M, İ artı artı or, J eşittir 0, J küçüktür M, J artı artı printf, %d.
+
+106
+00:12:39,003 --> 00:12:41,403
+Şimdi bunların varyasyonlarını birazdan yazacağız arkadaşlar.
+
+107
+00:12:41,484 --> 00:12:42,883
+%3D diyelim hatta.
+
+108
+00:12:44,444 --> 00:12:45,163
+Matrisin.
+
+109
+00:12:45,984 --> 00:12:49,363
+Tabi buna M dersek arkadaşlar şuna büyük M diyelim de.
+
+110
+00:12:52,303 --> 00:12:52,944
+Evet.
+
+111
+00:12:53,703 --> 00:12:55,084
+Ben de onu fark ettim.
+
+112
+00:12:56,503 --> 00:12:57,523
+İyi bir güce.
+
+113
+00:12:57,643 --> 00:13:00,803
+Benim isimlendirme konusunda böyle ders anlattıkken biraz sorunum oluyor.
+
+114
+00:13:01,543 --> 00:13:02,243
+Şimdi bu ne yapar?
+
+115
+00:13:02,303 --> 00:13:02,943
+Yan yana yazar.
+
+116
+00:13:03,023 --> 00:13:04,643
+Matris formatında yazmak istiyorum.
+
+117
+00:13:04,943 --> 00:13:06,883
+Bunun için şurada bir backslash n koyacağım.
+
+118
+00:13:06,883 --> 00:13:14,883
+Evet bu bu kadar. Şimdi gelelim bunu bir execute edelim bakalım nerede hatalarımız varmış.
+
+119
+00:13:16,883 --> 00:13:22,543
+Matris diyelim. Matris pointer diyelim hatta.
+
+120
+00:13:31,187 --> 00:13:55,948
+Evet, bakın, 0, 0, 0, sonuç 3. Bazı arkadaşlarınız bana kod gönderiyor. Arkadaşlar, C'de yazın. C++ olarak kaydetmeyin. Bunu ne için söylüyorum? Laboratuvarda C++ gönderirseniz puanınız kırılır. C++ başka, C başka. C++ C'yi kapsıyor diyebilirsiniz ama derleyiciler bakımından farklılık var. Doğrudan yazıp C kodu göndermeyin lütfen.
+
+121
+00:13:55,948 --> 00:14:00,767
+Sonra puanınızı düşünce sebeplerden bir tanesi o oluyor.
+
+122
+00:14:01,868 --> 00:14:07,028
+Şimdi arkadaşlar şuna eş değer pointer aritmetiğini de kullanabileceğimiz başka neler yazabiliriz.
+
+123
+00:14:07,768 --> 00:14:13,088
+Aynı fonksiyonu yazdır diye yazıyorum buraya void yazdır.
+
+124
+00:14:14,208 --> 00:14:18,467
+Şimdi bu dizinin ilk elemanın adresini tutan bir şey m diyebiliriz buna.
+
+125
+00:14:18,467 --> 00:14:20,128
+Hatta yine büyük m diyelim.
+
+126
+00:14:23,067 --> 00:14:24,088
+Onun için bu bir pointer.
+
+127
+00:14:24,087 --> 00:14:26,507
+Geri kalan şeyler aynı.
+
+128
+00:14:27,007 --> 00:14:29,407
+Int, m, int, m.
+
+129
+00:14:30,207 --> 00:14:33,507
+Yine şunu bakın kapatıyorum.
+
+130
+00:14:34,407 --> 00:14:34,967
+Bu ne yapıyor?
+
+131
+00:14:35,527 --> 00:14:44,548
+Gelen pointer'a şu köşeli parantezler aracılığıyla i artı j kadar bir pointer aritmetiği gerçekleştiriyor.
+
+132
+00:14:44,548 --> 00:14:46,427
+Şimdi i ve j'nin ilk değerleri sıfır.
+
+133
+00:14:47,167 --> 00:14:51,268
+m'ye sıfır ekleyerek sıfırıncı satıra aldı.
+
+134
+00:14:51,847 --> 00:14:53,727
+Sonra j ekleyerek birinci satıra.
+
+135
+00:14:53,728 --> 00:14:57,308
+Sonra J1 olduğunda sıfırıncı satırın birinci hücresine gidiyor.
+
+136
+00:14:57,868 --> 00:15:06,128
+Pointer aritmetiğinin daha derinleri şeyde, nedir o şeyde kullanacağız, yapısal programlama dersinde göreceğiz.
+
+137
+00:15:07,687 --> 00:15:17,708
+Şu an için sadece bunları hani bu iki varyasyonu bilmeniz bu ders kapsamında algoritma geliştirip bu geliştirdiğiniz algoritmayı tasarlamak için yeterli.
+
+138
+00:15:17,708 --> 00:15:21,708
+Şimdi conflicted types 4 yazdır.
+
+139
+00:15:26,580 --> 00:15:39,139
+Haa, bunu şöyle mi alacaktık? Yok, öyle da alamayız ki. Prototip mi istiyor? Haa, evet. Şunu yazınca, şundan dolayı olabilir.
+
+140
+00:15:42,676 --> 00:15:45,855
+pointer olunca prototip yazmak gerekiyordu.
+
+141
+00:15:47,915 --> 00:15:53,735
+Uyumsuz dönüşüm dedi. Şimdi bunu bu şekilde yazmak yerine şöyle yapacaktık.
+
+142
+00:15:54,835 --> 00:15:55,955
+Şöyle alalım.
+
+143
+00:15:58,815 --> 00:16:01,315
+M'ye i kadar ekle diyorum.
+
+144
+00:16:02,835 --> 00:16:05,835
+Bu eklediğimiz yerdeki değeri al.
+
+145
+00:16:12,019 --> 00:16:30,120
+Artıcı bunu şu şekilde yazmak gerekecek zannediyorum. Öyle yanlış hatırlamıyorsam. Evet. Burada da şunu yapacağız. Ve şunu yapacağız. Şöyle olacak. Tabii şunu kapatacağız şimdilik.
+
+146
+00:16:37,364 --> 00:16:56,364
+Sıkıntımız var. Tabii şunu çok kullanmayacağız arkadaşlar. Biz diğer şekilde kullanacağımız için yeterli. Şimdi ne demiş? Tumene argüment şu olmayacak zannediyorum.
+
+147
+00:16:59,988 --> 00:17:04,087
+0, 1, 2, 3, 4. Yalnız bizim dizimiz böyle değil. Niye böyle?
+
+148
+00:17:08,019 --> 00:17:12,019
+m'nin artı isi artı j'si
+
+149
+00:17:15,284 --> 00:17:16,483
+Şurada
+
+150
+00:17:29,044 --> 00:17:33,044
+Hocam o yıldız bir dışta mı olacak acaba parantezin bir dışından?
+
+151
+00:17:33,044 --> 00:17:39,044
+Şurada olabilir mi diyorsun? Yani gidip oradaki değeri getirecek de şu an oradaki değerlere 1 ekliyor.
+
+152
+00:17:39,044 --> 00:17:47,044
+Bir tane de şurada şey olacak. Şu parantezlerden bir tanesi gereksiz gibi ama neyse.
+
+153
+00:17:47,044 --> 00:17:51,044
+Zaten o parantezler sebebiyle şu an farklı bir şey alıyoruz.
+
+154
+00:17:56,147 --> 00:18:22,547
+Evet, bakın. Ne yapıyor? M adresine gidiyor. M adresinden i kadar satıra gidiyor. Anıl, o söylediğin de doğru. Ama hani orada bir çarpma işlemi var. Sonra buradan elde ettiği bu değeri gidip j inci stundaki değerini buluyor. Şey, bu satırdaki j inci stuna gidiyor ve o j inci stundaki adresten o değeri getiriyor. Bu da kullanılabilir mi? Kullanılabilir.
+
+155
+00:18:22,547 --> 00:18:26,668
+Ama bu ders kapsamında yani yapısal programlama için demiyorum.
+
+156
+00:18:26,767 --> 00:18:34,688
+Yapısal programlamaya giriş kapsamında bir matrisi fonksiyona göndermek için şu birinciyi kullanmanızı ben tavsiye ederim.
+
+157
+00:18:34,688 --> 00:18:36,847
+Yani hiç pointerada kullanmaya gerek yok.
+
+158
+00:18:36,947 --> 00:18:42,387
+Onun için ben diyorum ki burada şöyle yapacağız.
+
+159
+00:18:44,467 --> 00:18:47,907
+Bu ders kapsamında bunu kullanmanız yeterlidir diyeceğiz.
+
+160
+00:18:47,907 --> 00:18:59,727
+Şimdi şu gönderilen şeyde argümanla bunlar arasında bir fark var.
+
+161
+00:18:59,727 --> 00:19:09,467
+Çünkü diyor ki bu bir matriz. O zaman bu matrizin adresini göndermek gerekir diyor.
+
+162
+00:19:10,667 --> 00:19:13,368
+Bunun adresini gönderince tabii şimdi şu aktif oldu.
+
+163
+00:19:15,287 --> 00:19:16,707
+Şöyle yapacağız.
+
+164
+00:19:17,907 --> 00:19:19,907
+O warning ondan kaynaklı.
+
+165
+00:19:22,087 --> 00:19:23,427
+Şimdi tabi bunu da kapatacağız.
+
+166
+00:19:29,332 --> 00:19:52,332
+Yukarıdaki şey de uygun hale getirilecek. Neyse, bu şu an için çok önemseyeceğimiz bir şey değil arkadaşlar. Sadece pointer ile de bunun pointer aletleri ile kullanımı mümkün. Onun için şimdilik hatta şu prototopi de silelim. Bizim için lazım olan bir matrisi gönderin bu şekilde.
+
+167
+00:19:52,332 --> 00:19:54,672
+Şey yapabiliriz, yapabiliyoruz mesela.
+
+168
+00:19:55,991 --> 00:20:06,451
+Bütün matristeki her bir elemanın adreslerini elde edip, o adresleri fonksiyonda ayrı ayrı kullanabilme gibi birçok algoritma orada geliştirilebilir.
+
+169
+00:20:07,111 --> 00:20:10,552
+Pointer konusu orada bize farklı kolaylıklar sağlıyor.
+
+170
+00:20:11,412 --> 00:20:14,672
+Diyelim, bu şimdilik yeter.
+
+171
+00:20:15,971 --> 00:20:18,832
+Dizi için zaten geçenlerde konuşmuştuk.
+
+172
+00:20:18,832 --> 00:20:19,891
+Dizi de ne yapıyorduk?
+
+173
+00:20:20,332 --> 00:20:22,031
+Yani şöyle gönderebiliriz.
+
+174
+00:20:22,332 --> 00:20:25,332
+Ya desek dizi gönderebiliyoruz.
+
+175
+00:20:26,251 --> 00:20:32,451
+Veya dizinin bu adresini veya dizinin sıfırıncı elemanın adresini.
+
+176
+00:20:32,532 --> 00:20:33,711
+Bunlar üçü de aynı şeydi.
+
+177
+00:20:33,811 --> 00:20:38,692
+Bunların üçü de pointer olduğu için burada pointerlaştığı şekilde almamız gerekiyor dedik.
+
+178
+00:20:39,971 --> 00:20:42,772
+Bunlar yazarak arkadaşlar geliştirilebilecek şeyler.
+
+179
+00:20:42,772 --> 00:20:45,492
+Bunlar üzerinde uygulama yapmanız lazım.
+
+180
+00:20:46,571 --> 00:20:47,552
+Konu basit.
+
+181
+00:20:47,791 --> 00:20:50,992
+Kurallar 3-5 tane kurallar ama bu kurallardan çok fazla şey türüyor.
+
+182
+00:20:50,991 --> 00:20:55,291
+Yani kuralları birbirine kombine ederek çok karışık işlemler yapılabiliyor.
+
+183
+00:20:56,211 --> 00:21:03,911
+Şimdi gelelim bazı son derste algoritmik olarak kalan örneklerimiz var.
+
+184
+00:21:04,031 --> 00:21:05,831
+Kısaca onların üzerinden bir geçelim.
+
+185
+00:21:06,111 --> 00:21:10,531
+Sonra bugün normalde uygulama saati için asistan hocalarımızın hazırladığı örnekler var.
+
+186
+00:21:10,611 --> 00:21:11,251
+Onlara bakacağız.
+
+187
+00:21:13,171 --> 00:21:15,071
+Bu şekilde devam edeceğiz.
+
+188
+00:21:15,871 --> 00:21:17,311
+En son şöyle bir örneğimiz vardı.
+
+189
+00:21:17,411 --> 00:21:18,451
+Şuraya bir PowerPoint açayım.
+
+190
+00:21:18,451 --> 00:21:22,611
+seçim sistemi örneğinde kalmıştık.
+
+191
+00:21:23,611 --> 00:21:25,331
+12 Nisan diyelim.
+
+192
+00:21:44,627 --> 00:21:52,047
+Bu seçim sistemlerinde ki örneğimiz neydi arkadaşlar? Birinci durum.
+
+193
+00:21:58,324 --> 00:22:01,003
+Burada bir sıkıntı var.
+
+194
+00:22:17,683 --> 00:22:46,683
+Birinci case'imiz neydi? Herkes bir partiye oy verecek. Yani o zaman burada bir her vatandaş diyelim, iyi inci partiye oy verecek veya her öğrenci iyi inci sorunun cevabını verecek gibi söyleyelim.
+
+195
+00:22:47,683 --> 00:22:51,084
+O zaman burada bir veri yapısı kullanmamız gerekiyor.
+
+196
+00:22:52,003 --> 00:22:53,923
+Mesela kazanan partiyi bulmamız için.
+
+197
+00:22:54,663 --> 00:22:55,603
+Nasıl bir veri yapısı?
+
+198
+00:22:55,704 --> 00:22:58,163
+Değişken kullanarak bu soruyu çözmemiz biraz zor.
+
+199
+00:22:59,103 --> 00:22:59,603
+Neden zor?
+
+200
+00:23:00,384 --> 00:23:02,483
+Yani en tane vatandaş olabilir.
+
+201
+00:23:02,683 --> 00:23:05,204
+Bu en tane vatandaş için en tane değişken kullanılır.
+
+202
+00:23:05,204 --> 00:23:10,724
+Onun için değişkenden biraz daha fazla veri saklamamı, kolay veri saklamamı sağlayan ne var?
+
+203
+00:23:11,404 --> 00:23:12,463
+İşte dizi var diyeceğiz.
+
+204
+00:23:12,463 --> 00:23:20,903
+Şimdi burada dizimizin indislerini ve değerlerini mantıksal olarak şekillendireceğiz.
+
+205
+00:23:20,903 --> 00:23:35,743
+Şimdi diyeceğiz ki 0. vatandaştan veya 1. vatandaştan V. vatandaşa kadar kaç tane vatandaş varsa her birinin hangi partiye oy verdiğini şurada bir x değeriyle saklayabiliriz.
+
+206
+00:23:35,883 --> 00:23:39,143
+Bu x'in değerleri de parti olsun.
+
+207
+00:23:39,143 --> 00:24:04,843
+Şimdi diyeceğiz ki seçimin kim kazanacağını bilmesi için partiler de en tane olabilir. Kaç tane parti olduğunu bilmiyorum. O zaman partileri de bir yerde saklayacağız. Birinci partiden P'ye. Bunların başlangıçtaki değerleri sıfır olacak. Burada kim hangi partiye oy verdiyse sayısal değer olarak oy verdiyse gidecek buradaki değer bir arttırılacak.
+
+208
+00:24:04,843 --> 00:24:27,803
+Yani burada yaparken, burada analiz yaparken şuradan şunu doldururken yapacağımız şey ne olacak arkadaşlar? Bir for döngüsü. Bunların flowchartını çiziyorum çünkü kodu çok böyle yazıp uzun uzun anlatılacak şeyler değil. Bir for döngüsü. İ'den, sı hani birden başlatacağız eğer buradaki örneğe göre bakacaksak. V'ye kadar gideceğiz. V'ye dahil olmak üzere. Birer birer artacağız.
+
+209
+00:24:27,803 --> 00:24:43,283
+Şimdi ne yapacak? Buradaki birinci vatandaş kime oy verdi? Bu kime oy verdiyse yani şu içerideki değer neyse 1 ile P arasında bir değer olmak durumunda gideceğiz. Oradaki ilgili hücreyi bir arttıracağız. Bunu nasıl yapıyorduk?
+
+210
+00:24:46,675 --> 00:24:59,136
+Bunun iki yolunu göstermiştim. Önce ilk yolda her bir şeyin bulurken iç içe bir döngüyle yapıyorduk. O biraz kötü dedik geçen derste. Burada ne yapacağız?
+
+211
+00:24:59,136 --> 00:25:14,475
+İndis'ten kastımız, ha, Emir Can'ın dediği daha doğru veya Furkan'ın söylediği. Şimdi bu mesela vatandaş dizisi diyelim, buna da parti dizisi diyelim.
+
+212
+00:25:14,475 --> 00:25:26,396
+Diyeceğiz ki partinin hangi indisini artıracağız? Vatandaşının iyinci indisi artacak.
+
+213
+00:25:27,175 --> 00:25:30,195
+Artı artı diyorum. Şuraya C şeklinde yazalım. Kendi değer bir artsın.
+
+214
+00:25:31,435 --> 00:25:40,915
+İ'den başladık. Vatandaş dizisini geziyoruz. Vatandaşın iyinci dizisinde iyinci elemanındaki değer neyse içerideki değer.
+
+215
+00:25:40,915 --> 00:25:59,175
+Git o partinin ilgili değeridir. O değeri bir arttır diyoruz. Sonra buradan stop diyebiliriz. Artık burada ne var arkadaşlar? Burada kim hangi parti kaç tane oy aldıysa o değerler var.
+
+216
+00:25:59,175 --> 00:26:19,795
+1'den P'ye 8, 6, 3, 5, 7, 0 gibi değerler var. Bunların mesela histogramını çizdirmek istersek ne yapacağız? Histogram çizdirmek için nasıl bir algoritma önerirsiniz?
+
+217
+00:26:26,548 --> 00:26:34,548
+Şöyle yatay histogram çizelim. Birincisinde 8 tane olacak. Dikey, düşeyi çizdirmek biraz daha karmaşık da.
+
+218
+00:26:36,852 --> 00:26:38,852
+İkincisinde 6 tane olacak.
+
+219
+00:26:44,211 --> 00:27:08,211
+İki tane iç içe for ile diyor arkadaşlarımız. Ne yapacağız arkadaşlar? Bir kere birinci forda, şöyle kısaca şey yapayım, birinci forda her bir P'yi yani birden P'ye kadar bir döngümüz var. Bu birden P'ye kadar ki döngümüz, bu P dizisi artık. Bu sefer de birden P'nin iyisine kadar bir başka döngümüz var. Bu içeride ne yapıyoruz? Yıldız bastırıyoruz sadece.
+
+220
+00:27:08,211 --> 00:27:11,771
+İşte birincisinde ilk eleman 8.
+
+221
+00:27:11,912 --> 00:27:12,791
+Birden P'ye baktık.
+
+222
+00:27:12,851 --> 00:27:13,592
+İlk eleman 8.
+
+223
+00:27:13,711 --> 00:27:15,371
+Birden 8'e kadar yıldız bas.
+
+224
+00:27:15,991 --> 00:27:16,592
+Sonra dön.
+
+225
+00:27:17,371 --> 00:27:17,651
+Ne yap?
+
+226
+00:27:17,892 --> 00:27:18,451
+6.
+
+227
+00:27:18,631 --> 00:27:20,292
+Birden 6'ya kadar yıldızlar bas.
+
+228
+00:27:20,412 --> 00:27:22,871
+İşte burada son satırda ve alt satıra indirirsiniz.
+
+229
+00:27:23,531 --> 00:27:23,792
+Ne oluyor?
+
+230
+00:27:23,892 --> 00:27:26,511
+Bu şekilde histogram çizdirebiliyoruz.
+
+231
+00:27:26,591 --> 00:27:27,792
+Burada anlaşılmayan bir şey var mı?
+
+232
+00:27:29,311 --> 00:27:30,932
+Seçim sisteminin ilk örneği buydu.
+
+233
+00:27:31,811 --> 00:27:33,171
+Hocam neden histogram çizdirebiliyor?
+
+234
+00:27:33,171 --> 00:27:33,491
+Gelelim.
+
+235
+00:27:36,292 --> 00:27:37,211
+Görselleştirmek için.
+
+236
+00:27:37,211 --> 00:27:54,612
+Histogram bir görselleştirme aracıdır. Yani şu diziye bakıp bir şey belki anlamak zor olabilir. Hangisi daha şey olmuş, daha fazla oy almış biraz zor görürsün ama şuradan baktığında eğer yüz tane şey varsa, en fazla hangisi yüksekse onu daha hızlı görürsün. Data visualization aracıdır o.
+
+237
+00:27:54,612 --> 00:27:57,732
+Şimdi gelelim ikinci durum.
+
+238
+00:28:00,732 --> 00:28:07,072
+Her vatandaş K tane partiye oy versin.
+
+239
+00:28:13,875 --> 00:28:37,875
+Yani iki parti, üç parti, dört parti. Şimdi burada şuna bakacağız. Vatandaş bir partiye oy verince dizi kullanıyorduk. Bir vatandaş iki tane partiye oy veriyor. Üçe, dörde, beşe. Dolayısıyla benim dizi burada işime yaramaz. Ne yapmamız lazım? Matris kullanmamız gerekiyor. Bir kere hangi veri yapısını kullanacağımızı tespit etmek en başta yapmamız gereken bir iştir.
+
+240
+00:28:37,875 --> 00:28:43,595
+Şimdi matrisin satır ve sütunlarını buna göre modellemem gerekiyor.
+
+241
+00:28:44,495 --> 00:28:45,975
+İki şekilde de modelleyebiliriz.
+
+242
+00:28:45,975 --> 00:28:53,475
+Deriz ki burası her bir vatandaşın birinci vatandaştan veya inci vatandaşa kadar yapacağım şekilde olabilir.
+
+243
+00:28:54,056 --> 00:28:56,716
+Şurası da birinci partiden k'ıncı partiye kadar.
+
+244
+00:28:57,776 --> 00:28:59,815
+Kaç tane parti varsa o.
+
+245
+00:29:00,575 --> 00:29:01,855
+Şimdi şöyle yapınca ne olacak?
+
+246
+00:29:01,995 --> 00:29:05,295
+Birinci vatandaş birebir diyelim.
+
+247
+00:29:05,295 --> 00:29:33,575
+Birinci vatandaş birinci partiye kime oy verdi? Birinci vatandaşın verdiği ikinci partiye verdiği oy. Yani yine burada bir P dizimiz var. Bu birden başlıyor P'ye kadar gidiyor. Burada bir ile P arasında sayılar var ama kaç tane? K tane partiye oy verebilir. Üç tane, beş tane. O K'yı tabii sınırlı vermek gerekiyor.
+
+248
+00:29:33,575 --> 00:29:43,695
+Burada ikinci vatandaşın aynı şekilde işte ve inci vatandaş kaç tane hangi partilere oy verdi?
+
+249
+00:29:44,475 --> 00:29:44,835
+Birinci.
+
+250
+00:29:45,095 --> 00:29:50,715
+Şimdi bunun bu yapıyla tasarlayabileceğiniz gibi alternatif olarak şu şekilde de yapılabilir.
+
+251
+00:29:50,815 --> 00:29:51,475
+Buna eşittir.
+
+252
+00:29:51,535 --> 00:29:52,435
+Hiçbir fark yoktur.
+
+253
+00:29:53,195 --> 00:29:54,355
+Bunun transpozunu alın.
+
+254
+00:29:56,695 --> 00:29:59,575
+Birinci vatandaş, ikinci vatandaş, ve inci vatandaş.
+
+255
+00:30:00,535 --> 00:30:01,335
+Hiçbir şey fark etmez.
+
+256
+00:30:01,335 --> 00:30:03,215
+Bu tamamen tasarım yöntemidir.
+
+257
+00:30:03,575 --> 00:30:16,615
+İkinci vatandaş P'inci parti. K'inci parti pardon. K tane şey. Bu da bunun tamamen eşitidir arkadaşlar. Hiçbir fark yoktur. Şöyle diyelim.
+
+258
+00:30:18,855 --> 00:30:32,895
+Peki burada yani herkes şu an eşit puanda oy verecek. Yani birinci vatandaş birinci oyunu 3 nolu partiye verdi. Birinci vatandaş ikinci oyunu 4 nolu partiye verdi.
+
+259
+00:30:32,896 --> 00:30:37,515
+Burada puan yok. Birinci oy, ikinci oy. Yani oylar sayılıyor.
+
+260
+00:30:38,776 --> 00:30:42,416
+Şimdi burada peki şu P dizisini oluştururken ne yapmamız lazım?
+
+261
+00:30:43,236 --> 00:30:45,956
+İlk başta P'nin içerisinde sıfırı yaptığımızı kabul edelim.
+
+262
+00:30:49,748 --> 00:31:13,748
+Diyeceğiz ki, arkadaşlar, bir kere, hani şuradaki şunu esas alalım, yukarıdaki şeyi esas alalım. Her bir vatandaşın hangi partiye oy verdiğini saymak için bir döngüye ihtiyacım var. Bu döngü mesela, i ile başlayan döngü, birinci baştan, birinciden başlayacak ve inci vatandaşa kadar birer birer artacak.
+
+263
+00:31:13,748 --> 00:31:31,987
+Sonra bu vatandaş hangi partilere oy verdi? Onu bulmak için J diyorum. Birinci oyundan başladı. K'ıncı oya kadar eşit olacak şekilde birer birer artırıyoruz.
+
+264
+00:31:31,987 --> 00:31:47,127
+Şimdi buna da O matrisi diyelim. O matrisindeki İ, Y, J neye karşılık gelir? İ inci elemanın J inci oyu kime verdiğini söylüyor.
+
+265
+00:31:47,127 --> 00:31:51,207
+O'nun İ'sinin J'si.
+
+266
+00:31:52,607 --> 00:31:56,108
+İ inci vatandaş, J inci oy.
+
+267
+00:31:57,047 --> 00:31:58,108
+Kime verdi?
+
+268
+00:31:58,667 --> 00:32:03,827
+Bu elde ettiğim bilgi şu P1 ile P arasındaki değerlerden bir tanesi.
+
+269
+00:32:04,787 --> 00:32:05,187
+Tamam mı?
+
+270
+00:32:05,187 --> 00:32:15,727
+O zaman diyorum ki ben elde ettiğim bu değeri indis olarak kullanıp P'nin O'sundaki İ'deki, J'deki değeri alayım.
+
+271
+00:32:15,727 --> 00:32:17,187
+Bunu bir arttırayım.
+
+272
+00:32:18,367 --> 00:32:26,627
+İşte burası bir, burası iki, burası da üç.
+
+273
+00:32:27,327 --> 00:32:28,647
+Hatta stop.
+
+274
+00:32:32,948 --> 00:32:34,948
+Bunda anlaşılmayan bir şey var mı?
+
+275
+00:32:39,443 --> 00:32:53,784
+Vatandaşların verdikleri oylar, tamam mı? K tane partiye oy verebiliyor. Bunu da herhalde kodlamak zor değildir diye tahmin ediyorum. Ben bunun kodunu yazamam diyen var mı aranızda?
+
+276
+00:32:55,316 --> 00:33:01,316
+yazamam diyen varsa BBG dersine bir daha geri dönsüm diyeceğim. Yok, öyle demiyorum tabii ki.
+
+277
+00:33:01,316 --> 00:33:08,316
+Evet, şimdi gelelim üçüncü case'mize. Burada bir soru yoksa.
+
+278
+00:33:13,652 --> 00:33:29,652
+Her vatandaş her partiye puan vererek oylama yapmalı.
+
+279
+00:33:31,284 --> 00:34:00,284
+Yani oylar, önce veri yapısını düşünelim. Şimdi birden V'ye kadar vatandaşlarımız var, birden P'ye kadar partilerimiz var arkadaşlar. Ve bir de her bir vatandaşın her bir hangi parti hangi oyu vereceğini söyleyen bir bilgimiz var. O zaman yine nasıl bir veri yapı saklayacağız? Matris olacak değil mi? Ama bu matris biraz önceki matristen farklı.
+
+280
+00:34:00,284 --> 00:34:28,303
+Yani bir vatandaşın k. şeye verdiği oy değil. Vatandaş sayısı çarpı 2 olmaz. Öyle bir şeye gerek yok. Yani P tane parti olur. Şöyle diyeceğiz arkadaşlar. Birinci kısım mesela burası birden V'ye vatandaşın verdiği durumları gösteriyor. Şurada da birden P'ye partiler.
+
+281
+00:34:28,304 --> 00:34:44,584
+Yani şurada bir i. vatandaş j. partiye kaç oy vermiş, kaç puan vermiş? Onun bilgisi saklanıyor. Tamam mı? Vatandaş sayısı çarpı 2 dersek olmaz.
+
+282
+00:34:44,583 --> 00:34:49,203
+Bunun transpozunu da düşünebiliriz.
+
+283
+00:34:49,203 --> 00:34:57,063
+Burası satırlarda vatandaşları sütunlarda şeyleri de saklayabiliriz.
+
+284
+00:34:57,123 --> 00:34:57,923
+O da olur arkadaşlar.
+
+285
+00:34:58,103 --> 00:35:01,083
+Herhalde Hasan'ın ve kimdi?
+
+286
+00:35:01,743 --> 00:35:03,303
+Çet hemen kaydı göremedim.
+
+287
+00:35:04,523 --> 00:35:07,563
+Emircan'ın söylediği şeyler buna karşılıyor.
+
+288
+00:35:07,683 --> 00:35:13,223
+B. vatandaşa 1. partiden P. partiye kadar.
+
+289
+00:35:14,583 --> 00:35:29,603
+Tamam burada demek ki ne olacak? İşte belli bir aralıkta hani puan aralığı da ne diyelim? Puan aralığı 1 ile 100 arasında veya ne bileyim 1 ile 10 arasında olsun.
+
+290
+00:35:29,603 --> 00:35:38,803
+Bu 1 ila 101 ila 10 arası programda veri girişi yaparken işte vatandaş numarasını giriniz işte 5 numaralı vatandaş.
+
+291
+00:35:39,364 --> 00:35:46,743
+Birinci partiye verdiğiniz oy 0, ikinci partiye verdiğiniz oy 1, üçüncü partiye verdiğiniz oy işte 101 giremeyecek mesela.
+
+292
+00:35:47,743 --> 00:35:51,123
+Öyle bir kontrolle if ile kontrol veya do while ile bir kontrol yapılabilir.
+
+293
+00:35:51,903 --> 00:35:57,923
+Ama bakın burada vatandaş her bir vatandaş birden fazla partiye oy verebiliyor.
+
+294
+00:35:57,923 --> 00:36:26,104
+Ve bu verdikleri oylar puan üzerinden gidiyor. Bu aslında biraz daha hani herkesin herkese belli bir puan verebilmesi daha şey gibi değil mi? Daha adil gibi geliyor. Hani bilmiyorum ben bu siyasal hani şey siyasal bilimci olmak lazım. Hani bu seçim sistemlerinde nasıl bir algoritma düşünülüyor bilmiyorum da. Herkes herkese belli bir oranda oy verecek diye düşünüyor. Hatta eksi oy bile verilebilir.
+
+295
+00:36:26,103 --> 00:36:28,143
+O da bir şey aklıma geldi şu an.
+
+296
+00:36:28,883 --> 00:36:33,643
+Şimdi inci vatandaşın C inci partiye verdiği puan.
+
+297
+00:36:34,083 --> 00:36:36,363
+Şimdi biz burada seçimi kim kazandı buna bakacağız.
+
+298
+00:36:37,343 --> 00:36:40,563
+Bizim mesela şu O matrisimiz olsun.
+
+299
+00:36:40,983 --> 00:36:42,243
+O da neyi saklıyoruz?
+
+300
+00:36:42,563 --> 00:36:44,423
+O'nun İ'sinde ve J'sinde.
+
+301
+00:36:46,423 --> 00:36:47,983
+Neyi saklıyoruz arkadaşlar?
+
+302
+00:36:48,983 --> 00:36:51,743
+Her bir vatandaşın verdiği puanı hangi parti?
+
+303
+00:36:51,743 --> 00:37:12,843
+O zaman biz yine P dizisi oluştursak, puan dizisi diyelim. Bu puan dizisinde de her bir vatandaş acaba ne kadar, yani her bir partiye ne kadar puan almış bu işlem zorunda onu bulmak istiyoruz.
+
+304
+00:37:12,843 --> 00:37:27,304
+Yani burada yapacağımız şey P'nin O'sunda yani şurada alacağımız bir puan değeri var.
+
+305
+00:37:28,596 --> 00:37:51,596
+alacağımız puan değeri ama neye göre gidecek? Neye göre şekillenecek? C'ye göre şekillenecek değil mi? Şu örnekten, şuradakinden bahsetmiyorum çünkü o zaman iş değişir. Şuradaki C'nin durumuna göre o zaman bir döngümüz var. Bu i'den başladı. Birden v'ye kadar birer birer artıyor.
+
+306
+00:37:52,083 --> 00:37:53,083
+Bu J birden başladı, birer bir artıyor tabi B'ler dahil. P'ye kadar gidiyoruz. Peki ben şu puan şeyine ilgili puanı nasıl getireceğim? Şimdi puanın
+
+307
+00:38:12,820 --> 00:38:20,820
+puanın, J'si ne demek arkadaşlar? J inci partinin puan bilgisi. Bunlar da ilk başta sıfır.
+
+308
+00:38:24,148 --> 00:38:45,148
+Puanın J'si başlangıçası. Buna ne ekleyeceğim arkadaşlar? Artı eşittir diyebiliriz. Buna ne ekleyeceğim? Şu, ilgili hücredeki sayısal değer ekleyeceğiz. Yani O maddesindeki İ'nin İ'ye J'yi ekleyeceğiz. Tamam mı?
+
+309
+00:38:45,148 --> 00:39:12,267
+Bu döngü tamamlandığında ne olacak? Birinci vatandaş birinci partiye kaç puan verdiyse o puan gidiyor o partiye ekleniyor. İkinci partiye kaç puan verdiyse gidiyor o puan ekleniyor. Üçeye ne verdiyse gidiyor ekleniyor. Sonra ikinci vatandaş için aynı şey yapılıyor. Ne oluyor? Bu döngülerde bütün puan sistemi şuradaki şeylerde toplanmış oluyor.
+
+310
+00:39:12,267 --> 00:39:15,807
+Tamam mı? Şu puan dizisinde yapmış.
+
+311
+00:39:15,907 --> 00:39:20,867
+Bakın ne kullandık? Bu problemi çözebilmek için bir matriz kullandık, bir dizi kullandık.
+
+312
+00:39:20,867 --> 00:39:31,527
+Şimdi size böyle bir soru sorulsaydı, şurada yani genellikle şu kısımda, şu bölümde herkes bir matriz tasarlayabiliyor.
+
+313
+00:39:31,627 --> 00:39:37,027
+Ama şurada önce bir matriz tasarlıyor arkadaş. Ne gereği varsa bilmiyorum.
+
+314
+00:39:37,747 --> 00:39:40,807
+Sonra topluyor, çıkarıyor, tekrar bunu bir dizi şeklinde getiriyor.
+
+315
+00:39:42,267 --> 00:39:48,307
+Eğer bu problem diziyle çözecekse ve siz matrizle çözüyorsanız iyi bir algoritma tasarlamadınız demektir.
+
+316
+00:39:48,527 --> 00:39:50,407
+Bu da bizim dersimizin doğasına uygun değil.
+
+317
+00:39:50,547 --> 00:39:57,947
+Belki BBG seviyesinde çözülebilir de bu derste bu puan işlemi bu dizi üzerinde hesaplanacaktır.
+
+318
+00:39:58,047 --> 00:39:58,987
+Bunu düşünmemiz lazım.
+
+319
+00:40:01,447 --> 00:40:03,167
+Evet, var mı burada bir sorun?
+
+320
+00:40:10,739 --> 00:40:37,539
+Evet, şimdi herkesin verdiği puan, mesela bunu biraz daha geliştirelim. İkinci örnekte kazanan nasıl seçiliyor? Herkesin burada seçimleri yine P üzerinde hesaplanıyor. En fazla P'nin en büyük değeri kimdeyse o kazandı. Yani burada da P max'ı bulacağız, şurada da P max'ı bulacağız. Yine burada da P max'ı bulacağız.
+
+321
+00:40:37,539 --> 00:40:41,379
+Bizim içerisindeki puanlar içerisindeki en büyük değeri kim aldıysa onu bulacağız.
+
+322
+00:40:47,635 --> 00:41:17,315
+Oldu mu? Şimdi dördüncü case'miz son case. Hani biraz daha bunu... Aynı puan almak yok. Yani aynı puan varsa o zaman diyeceğiz ki önce dizinin maksimumunu bulursunuz. Yani şuradan bir maksimum değeri bulursunuz. Bunu en defada bulabiliriz değil mi? Şuradan maksimum bulmak en kes, en step, maksimum için. Sonra bu diziye bir defa daha dolaşırsınız.
+
+323
+00:41:17,315 --> 00:41:21,875
+Maksimuma eşit olan birden fazla varsa dersiniz ki koalisyon olacak.
+
+324
+00:41:22,195 --> 00:41:28,155
+İşte şu kişi şu partiyle bu parti beraber kazandılar diyebilirsiniz.
+
+325
+00:41:28,455 --> 00:41:31,435
+O zaman en defa daha dönmek gerekiyor.
+
+326
+00:41:32,255 --> 00:41:33,555
+İki parti olması da gerekmiyor.
+
+327
+00:41:33,875 --> 00:41:37,275
+Ve 100 partinin 10 tanesi belki aynı şeyi aldı.
+
+328
+00:41:37,335 --> 00:41:40,415
+O zaman 10 partili bir koalisyon olacak demektir.
+
+329
+00:41:42,115 --> 00:41:42,755
+Evet.
+
+330
+00:41:43,435 --> 00:41:44,955
+Tabii biz burada sayısal düşünüyoruz.
+
+331
+00:41:45,035 --> 00:41:46,215
+Başka türlü düşünmüyoruz.
+
+332
+00:41:46,275 --> 00:41:46,995
+O bizim işimiz değil.
+
+333
+00:41:47,316 --> 00:41:50,095
+Gelelim arkadaşlar.
+
+334
+00:41:50,095 --> 00:41:58,095
+Her partiye, her vatandaşın...
+
+335
+00:42:01,364 --> 00:42:08,364
+verdiği oy bir kritere göre
+
+336
+00:42:10,547 --> 00:42:12,547
+ağırlıklandırılacaktır.
+
+337
+00:42:17,460 --> 00:42:39,460
+Şimdi yine vatandaşımız var, partimiz var, partiye vereceğimiz bir oy var. Mesela burası birden P'ye kadar partiler, birden V'ye kadar vatandaşlar. Arkadaşlar bir saniye, affedersiniz. Efendim, teşekkür ederim.
+
+338
+00:44:38,420 --> 00:44:40,420
+Evet arkadaşlar.
+
+339
+00:44:43,860 --> 00:44:48,659
+İkinci ve üçüncü örnekleri matriz kullanmadan da yapabiliriz. Nasıl yapacağız?
+
+340
+00:44:50,059 --> 00:45:09,659
+Hocam, ben şey diye düşündüm de, şimdi her bir dizinin bir elemanı için, yani içiçe for açsak, ilk dizinin işte iyisi için mesela, alt forda ikinci dizinin işçisini mesela sorgulasak, o da şey olsa mesela, ilk dizimiz vatandaş olsa, vatandaşların şey olsa,
+
+341
+00:45:09,659 --> 00:45:15,019
+İkinci dizimizde tamamen sıfırlardan oluşan bir dizi olsa, o da partinin oylarını belirten.
+
+342
+00:45:15,499 --> 00:45:23,040
+Sonra biz ilk dizideki şey yapsak, ilk dizinin, ilk forumuz ilk dizinin elemanlarını saysa.
+
+343
+00:45:24,119 --> 00:45:28,739
+İkinci forumuz da parti şeyleri için solgu yapsa bize.
+
+344
+00:45:28,879 --> 00:45:33,739
+Yani mesela oy veriyor musunuz diye bir değişken atasak forum içine.
+
+345
+00:45:33,739 --> 00:45:36,659
+Olur. Yani şimdi bir dakika önce toparlayalım.
+
+346
+00:45:36,659 --> 00:45:43,559
+Burada bir vatandaş diye bir dizimiz olacak yine. Birden V'ye kadar. Bir de parti diye dizimiz olacak.
+
+347
+00:45:44,559 --> 00:45:48,599
+Bir ses geliyor.
+
+348
+00:45:51,599 --> 00:46:04,739
+Şimdi bu da olacak. Birden V'ye, birden P'ye. Tamam. Mesela üçüncü vatandaşın hangi partilere oy verdiğini nasıl saklayacağız?
+
+349
+00:46:09,364 --> 00:46:11,364
+3. Vatandaşı.
+
+350
+00:46:11,364 --> 00:46:22,364
+Şöyle olsa hocam, mesela her bir vatandaş için partilisini baştan sona forla taratsak ve sonra ona uygun girdi alsak, belli bir değer girdi alsak ve ona yerleştirsek.
+
+351
+00:46:22,364 --> 00:46:29,364
+Diyorsun ki 3. Vatandaşın verdiği puanları giriniz. 1'e kim ver, 1'e kaç puan verdi, 2'ye kaç puan verdi.
+
+352
+00:46:29,364 --> 00:46:31,364
+İçişe forla hallederiz diye düşünüyorum.
+
+353
+00:46:31,364 --> 00:46:33,364
+Şurada doldururuz diyorsun.
+
+354
+00:46:33,364 --> 00:46:36,364
+Ve onu da o değer kadar arttırırız.
+
+355
+00:46:36,364 --> 00:46:38,663
+programlamayla olabilir, yapılabilir.
+
+356
+00:46:39,224 --> 00:46:49,904
+Ama mesela üçüncü vatandaşın verdiği oy bilgilerini saklamak istiyorsak daha sonra iş bitince bu bilgileri kaybedeceğimiz için yansıtamayacağız.
+
+357
+00:46:50,384 --> 00:46:51,064
+Öyle de bir durum var.
+
+358
+00:46:52,544 --> 00:46:52,983
+Öyle değil mi?
+
+359
+00:46:54,283 --> 00:46:55,544
+Yani ayrık ayrık değil mi?
+
+360
+00:46:56,264 --> 00:46:59,383
+Yok şimdi üçüncü vatandaşın verdiği bilgileri buraya dağıttık.
+
+361
+00:46:59,523 --> 00:47:02,803
+Bu buraya gitti, bu buraya gitti, bu buraya gitti, bu da buraya geldi.
+
+362
+00:47:02,803 --> 00:47:12,103
+Tabii yani bir için ayrı o şey yapacaksak doğru ama sadece mesela partilerin toplamda kaç ay olduğunu hesaplamak istiyorsak o zaman kullanılabilir.
+
+363
+00:47:12,103 --> 00:47:12,743
+Ne düşünüyorsun?
+
+364
+00:47:14,444 --> 00:47:16,463
+Yani toplamda olur.
+
+365
+00:47:17,323 --> 00:47:18,023
+Toplamda olur.
+
+366
+00:47:18,563 --> 00:47:23,483
+Ama bu bilgiler eğer saklansın istiyorsak bunu matris de yapmak daha doğru.
+
+367
+00:47:23,584 --> 00:47:24,503
+Yani dediğin yanlış değil.
+
+368
+00:47:24,523 --> 00:47:27,243
+Sadece problemin şeyine göre düşünmek lazım.
+
+369
+00:47:28,864 --> 00:47:29,343
+Ağılacağım.
+
+370
+00:47:29,343 --> 00:47:33,863
+Şimdi arkadaşlar devam edelim.
+
+371
+00:47:39,956 --> 00:47:45,956
+Buraya bir not gireceğiz, puan gireceğiz yine.
+
+372
+00:47:51,092 --> 00:48:10,291
+İşte i'inci partiye, j'inci vatandaş bir puan girilir. Ama bu puan girilmeden önce diyoruz ki bu puanın belli bir değeri, yani yüz üzerinden yine puan girsin ama bu yürecek puan belli bir fonksiyondan geçirirsin.
+
+373
+00:48:10,291 --> 00:48:18,932
+Şuraya o'nun iyisinin, pardon, j'sinin iyisi diyeceğiz, j'ye iyi dedik burada.
+
+374
+00:48:21,092 --> 00:48:38,291
+F eşittir. Ne olacak? Bu girilen bir V değeri var. V çarpı hatta V demeyelim fx gibi bir fonksiyondan dönen değer olacak. Bir x değeri kullanıcıdan alıyoruz puan değeri. Hatta buna P diyelim niye x diyorsak.
+
+375
+00:48:38,292 --> 00:48:41,292
+Bu girdiğimiz puan değeri bir fonksiyona gidecek.
+
+376
+00:48:41,891 --> 00:48:45,672
+O fonksiyondan bir sonuç dönecek ve o dönen sonuç buraya aktarabilir.
+
+377
+00:48:45,812 --> 00:48:47,132
+Doğrudan P'yi aktarmıyoruz.
+
+378
+00:48:47,231 --> 00:48:53,251
+Biraz öncekilerde şurada yaptığımız şey kullanıcıdan giriş yaparken doğrudan bir P puanını buraya yazmıştık.
+
+379
+00:48:53,352 --> 00:48:54,852
+Şimdi yapacağımız şey biraz daha farklı.
+
+380
+00:48:56,511 --> 00:48:58,831
+Hesaplama yaparken yine şunun aynısı.
+
+381
+00:48:58,952 --> 00:49:02,172
+Yani şuradaki döngülerde olduğu gibi yine en büyük değeri bulacağız.
+
+382
+00:49:02,172 --> 00:49:11,632
+Şimdi bu P'nin başka bir değere dönüşmesi için mesela kriter ne olabilir? Bu F fonksiyon içerisinde ne yazabiliriz?
+
+383
+00:49:12,212 --> 00:49:26,632
+Zafer demiş ki IQ seviyesine göre şey. O zaman diyeceğiz ki kişinin IQ'su ile P'si arasında, puan bilgisi arasında bir fonksiyon olacak.
+
+384
+00:49:26,632 --> 00:49:28,011
+Sayısalarına diz gibi düşünün.
+
+385
+00:49:28,612 --> 00:49:33,252
+Ne bileyim IQ'su yüksek IQ ile P'yi doğru olantılı olarak verelim.
+
+386
+00:49:34,072 --> 00:49:36,791
+Tabi bir dakika burada şöyle bir dönüşüm yapmak gerekiyor.
+
+387
+00:49:37,831 --> 00:49:41,112
+Hani bir kat sayıda bunu çarpıp bir dönüşüme göre bir şey yapacaksınız.
+
+388
+00:49:41,812 --> 00:49:42,892
+Veya eğitim durumu.
+
+389
+00:49:43,212 --> 00:49:50,812
+İşte artık bu tarafını çok önemsemiyorum ama bu fonksiyon P'yi farklı bir değere dönüştürüyor.
+
+390
+00:49:50,811 --> 00:49:51,651
+Tamam mı?
+
+391
+00:49:52,211 --> 00:49:57,591
+İşte aldığı para, eğitim derecesi, işte kraliyet, burjuva, köylü demiş Yusuf.
+
+392
+00:49:57,691 --> 00:49:59,312
+Mesela ona göre Q bölü 100 olabilir.
+
+393
+00:49:59,611 --> 00:50:01,631
+Şimdi IQ bölü 100 olabilir.
+
+394
+00:50:02,731 --> 00:50:05,312
+Şey yani buradan elde edilen farklı bir değer var.
+
+395
+00:50:05,471 --> 00:50:09,491
+Bu farklı bir değer doğrudan hani P atanması yerine bu farklı bir değer atanıyor.
+
+396
+00:50:10,491 --> 00:50:12,331
+Bu da tabii yapılabilir.
+
+397
+00:50:13,791 --> 00:50:14,431
+Diyelim.
+
+398
+00:50:15,871 --> 00:50:18,191
+Tabii burası artık float hale geliyor.
+
+399
+00:50:18,471 --> 00:50:19,611
+Hani bir float matrisi.
+
+400
+00:50:19,612 --> 00:50:23,912
+O float maddesi üzerinden bir frekans sayacağız.
+
+401
+00:50:24,032 --> 00:50:27,972
+O frekans sayacağımız puanlar da float türlü olacak.
+
+402
+00:50:38,516 --> 00:50:40,516
+Şimdi...
+
+403
+00:50:42,516 --> 00:50:45,516
+Saatimiz kaç? 50 geçiyor.
+
+404
+00:50:54,132 --> 00:51:04,132
+Bir ara verelim arkadaşlar 10 dakika. Geldiğimizde zaten bu şeyle alakalı bir tane Fahat Hoca'nın ders notlarıyla alakalı iki tane algoritmamız kaldı.
+
+405
+00:51:04,132 --> 00:51:14,132
+Geldikten sonra hatta onları ben kodlayarak konuşacağız. Ondan sonra laboratuvar sorularına bakarız. Uygulamada neler hazırlamış hocalarınız. Onlar üzerinden geçeriz ve derse devam ederiz.
+
+406
+00:51:14,132 --> 00:51:16,132
+Saat 15'te görüşmek üzere.
+
+407
+01:00:25,172 --> 01:00:35,411
+Evet arkadaşlar, şu ana kadar ki kısımda herhangi bir soru sorunuz var mı?
+
+408
+01:00:39,699 --> 01:00:41,099
+Pekala.
+
+409
+01:00:46,356 --> 01:01:02,356
+Şimdi iki tane algoritmadan bahsedeceğim. Önce kısaca bir yazalım. Daha önce birincisini yazalım. Linear sort with counting algoritması. Şimdiye kadar biz sort algoritmalarından belki Selection Sort ve Bavu Sort'u gördük.
+
+410
+01:01:02,356 --> 01:01:05,796
+Farklı bir algoritma.
+
+411
+01:01:07,796 --> 01:01:14,675
+Şu ana kadar yaptığımız bazı işlemleri tekrar etmeyi sağlayan yani bazı algoritmalar içerisinde barındırıyor.
+
+412
+01:01:16,075 --> 01:01:16,716
+With counting.
+
+413
+01:01:19,135 --> 01:01:27,576
+Bu diyor ki bir elemandan küçük k tane sayı varsa bu elemanın yeri k artı birdir.
+
+414
+01:01:27,575 --> 01:01:47,675
+Yani ne diyelim kendisinden küçük k tane eleman varsa k sayıda eleman varsa yok.
+
+415
+01:01:47,675 --> 01:02:01,595
+Kendisinden küçük K eleman diyelim ya. Evet K eleman varsa bu elemanın yeri K artı 1'dir.
+
+416
+01:02:02,716 --> 01:02:11,335
+Yani bir dizimizde elemanlarımız olacak. Bu elemanların işte kendisinden küçük kaç tane elemanlarının olduğuna bakacağız.
+
+417
+01:02:11,335 --> 01:02:17,355
+ve bu elemanlarda göre k artı birinci nokta bu elemanın yeri olacak.
+
+418
+01:02:17,655 --> 01:02:18,575
+Mesela şöyle bir örnek.
+
+419
+01:02:22,452 --> 01:02:41,751
+Bir A dizimiz olsun. 3, 1, 4, 8. Öncelikle 3'ten kaç tane küçük eleman var? 1'den kaç tane küçük eleman var? 4'ten kaç tane? 8'den kaç tane küçük eleman var? Bunları bulmamız gerekiyor arkadaşlar.
+
+420
+01:02:41,751 --> 01:02:47,292
+Bunu bir B dizisinde veya K dizisinde tutalım.
+
+421
+01:02:47,511 --> 01:02:48,491
+K'yi de söyledik.
+
+422
+01:02:50,331 --> 01:02:52,051
+Üçten kaç tane küçük eleman var?
+
+423
+01:02:52,151 --> 01:02:53,452
+Bunu bulmak için ne yapıyoruz?
+
+424
+01:02:53,571 --> 01:02:54,771
+Buradan başlıyoruz.
+
+425
+01:02:55,691 --> 01:02:56,531
+Buna bakıyoruz.
+
+426
+01:02:57,251 --> 01:02:59,511
+Bundan sonrakilerden bakmamız daha doğru.
+
+427
+01:03:00,291 --> 01:03:01,231
+Bu bundan küçük mü? Evet.
+
+428
+01:03:01,371 --> 01:03:03,452
+Bu bundan küçük mü? Hayır.
+
+429
+01:03:03,551 --> 01:03:05,651
+O zaman üçten küçük bir tane varmış.
+
+430
+01:03:06,791 --> 01:03:07,571
+Bir için bakacağız.
+
+431
+01:03:07,571 --> 01:03:09,492
+Birin dışındaki elemanlara bakıyoruz.
+
+432
+01:03:09,791 --> 01:03:11,211
+İşte bundan küçük mü? Hayır.
+
+433
+01:03:11,751 --> 01:03:34,771
+Bundan küçük mü? Hayır. Bundan küçük mü? Hayır. Bunda sıfır tane var. Dörtten küçük ne var? İki tane var. Sekizden küçük kaç tane var? Üç tane var. Yani üçten küçük bir tane olacağı için üçüncü yeri ne olacak? K artı bir. Yani iki olacaktır diyor. O zaman buradan bir de K artı biri hesaplarsak yani buna bir artı bir eklersek.
+
+434
+01:03:38,900 --> 01:03:51,900
+Bunu 2 yapacağız, burayı 1 yapacağız, burayı 3 yapacağız, burayı 4 yapacağız. Ve yeni bir B dizisinde bakın, burası K artı 1 diyelim, bu B dizisinde,
+
+435
+01:03:55,099 --> 01:04:06,900
+K artı 1'i kullanarak, hatta şuraya K artı 1 yazabiliriz, K artı 1'i kullanarak 3'ün yeri 2 olacakmış. Şimdi bunu C olarak düşünmeyin, hani 1, 2, 3, 4 şeklinde düşünelim.
+
+436
+01:04:06,900 --> 01:04:10,180
+Yoksa ona göre bir format belirlememiz gerekecekti.
+
+437
+01:04:11,199 --> 01:04:12,659
+3'ün yeri 2 olacakmış.
+
+438
+01:04:12,760 --> 01:04:14,600
+Buradan şuna bakaraktan şuraya söyleyeyim.
+
+439
+01:04:14,740 --> 01:04:15,440
+O zaman 3 burada.
+
+440
+01:04:15,600 --> 01:04:16,999
+1'in yeri 1 olacakmış.
+
+441
+01:04:18,039 --> 01:04:19,519
+4'ün yeri 3 olacakmış.
+
+442
+01:04:20,280 --> 01:04:21,559
+8'in yeri 4 olacakmış.
+
+443
+01:04:22,639 --> 01:04:23,559
+Bir dakika burayı niye...
+
+444
+01:04:25,240 --> 01:04:30,039
+Ve bu şekilde 1, 3, 4, 8 diye sıralıyoruz.
+
+445
+01:04:30,440 --> 01:04:31,419
+Genel mantık bu şekilde.
+
+446
+01:04:33,679 --> 01:04:35,279
+Şimdi bunu kodlayalım.
+
+447
+01:04:39,347 --> 01:04:39,968
+diyelim.
+
+448
+01:04:44,532 --> 01:05:13,731
+Şimdi linear sort word with counting yaparken öncelikle her bir elemanın yani şu k dizisini bulmamız gerekiyor. Şuradan şöyle bir şey alayım arkadaşlar. Bunu ben direkt main'de yazacağım. Size diyeceğim ki bunu fonksiyonel hale getirin. Daha sonra hani belki bakarsanız cuma günü kontrol ederim. Random bir şey sorabilirim. Önce benim bir dizim var arkadaşlar. Bu dizimiz kaç elemanlı olsun? 10 elemanlı olsun dedik.
+
+449
+01:05:14,532 --> 01:05:18,752
+Daha sonra bu 10 elemanlı diziye göre bir kalan dizim olacak. Bu da 10 elemanlı.
+
+450
+01:05:20,011 --> 01:05:23,191
+Bir de int, ye dizi diyelim. Yeni dizi.
+
+451
+01:05:24,951 --> 01:05:27,552
+Bu da 10 elemanlı olacak. Sıralanmış dizimiz.
+
+452
+01:05:29,112 --> 01:05:38,271
+Ve bunların hepsinin işte en azından kalan dizisinin ilk elemanlarının sıfır olmasını söylüyoruz.
+
+453
+01:05:39,271 --> 01:05:40,191
+Bir saniye.
+
+454
+01:05:46,516 --> 01:05:56,516
+Kalan dizimiz sıfır şeylerle doğsun. Daha sonra ona göre şey yapacağız. Kalan mı desek yani? Kalan dedi ki küçük diyelim arkadaşlar.
+
+455
+01:05:56,516 --> 01:06:09,516
+Evet, önce dizinin elemanlarını kullanıcıdan alacağız. Bunun için bir for döngüsüne ihtiyacımız var. For, i eşittir, sıfır, i küçüktür.
+
+456
+01:06:09,516 --> 01:06:11,595
+Şu 10 yerine de gelin.
+
+457
+01:06:12,175 --> 01:06:13,335
+Kötü bir şey yapmayalım.
+
+458
+01:06:13,436 --> 01:06:14,876
+Define maximum 10 diyorum.
+
+459
+01:06:16,135 --> 01:06:24,896
+Bu maksimumu alıp buraya, buraya, buraya ve bundan sonraki her yerde kullanıyoruz.
+
+460
+01:06:26,096 --> 01:06:26,655
+E++.
+
+461
+01:06:28,815 --> 01:06:30,635
+Kullancıdan değer almamız isteniyor.
+
+462
+01:06:30,635 --> 01:06:31,315
+Printf.
+
+463
+01:06:36,052 --> 01:06:38,052
+Eleman giriniz.
+
+464
+01:06:42,612 --> 01:06:44,612
+yüzde de.
+
+465
+01:06:48,628 --> 01:07:14,628
+Ampersand dizinin iyisi. Bu dizinin elemanları girildikten sonra her bir elemanın kendisinden büyük olanlarını, olan elemanları bulmak için bir araştırma yapmam gerekiyor. Küçük dizimi de dolduracağım. Bunun için nasıl bir şey yaparız arkadaşlar? Nasıl bir döngü kullanmak gerekiyor?
+
+466
+01:07:18,771 --> 01:07:26,771
+Her bir elemanın kendisinden küçük kaç tane eleman var?
+
+467
+01:07:29,684 --> 01:07:40,484
+Evet, for içinde for, iç içe for. Güzel. Yapacağımız şey şu olacak arkadaşlar, tabii bir de j değişkenimize ihtiyacımız var.
+
+468
+01:07:42,996 --> 01:07:49,996
+Şimdi i eşittir 0'dan bir kere n ince elemana kadar, i küçüktür n'e kadar bütün elemanları tek tek tarayacağız.
+
+469
+01:07:50,996 --> 01:07:54,996
+Bütün elemanları tek tek tararken ben i ince elemanı tutacağım bir kenarda.
+
+470
+01:07:55,996 --> 01:08:02,996
+i ince eleman dışındaki diğer elemanları bir gezmem gerekiyor. O zaman j eşittir 0 desem,
+
+471
+01:08:02,996 --> 01:08:14,176
+İ ince eleman dışındaki elemanları da J ile gezeceğim.
+
+472
+01:08:15,076 --> 01:08:19,856
+Tabi ikisi de sıfırdan başlıyor çünkü dizide hangi eleman nerede onu bilmiyoruz.
+
+473
+01:08:19,856 --> 01:08:22,356
+Mecburen sıfırdan başlayıp aramaya devam edeceğiz.
+
+474
+01:08:22,356 --> 01:08:39,975
+Diyeceğiz ki dizinin i ince elemanı büyükse dizinin j ince elemanından.
+
+475
+01:08:41,315 --> 01:08:42,376
+Ne demek bu?
+
+476
+01:08:42,376 --> 01:08:48,415
+Yani kendisinden daha küçük bir eleman varsa bu eleman hangi şeydir?
+
+477
+01:08:49,176 --> 01:08:51,955
+İlgili yerdeki değeri arttıracağız.
+
+478
+01:08:51,955 --> 01:09:14,915
+İlgili yer ne olacak? Küçük dizisi. Küçük dizisinin hangi indisi olacak? Küçük dizisinin hangi indisi olmasını bekliyoruz? İyi değil mi? Çünkü benden küçükleri hesap ediyorum. Benden küçük kaç tane? O zaman küçüğün iyisi diyeceğiz. Plus plus. Niye plus plus? Burada da oradan zaten sıfırlamıştık.
+
+479
+01:09:14,915 --> 01:09:22,856
+Şimdi bu döngü bittiğinde i ince eleman için baktık. Sonra i artı birinci eleman için bu işlemleri yapacağız.
+
+480
+01:09:24,315 --> 01:09:27,635
+Ve küçüğün i'sini bulduk. Sonra yapacağımız şey ne olacak?
+
+481
+01:09:28,755 --> 01:09:38,035
+Arkadaşlar dizinin tabi burada işin içine sıfır da dahil olduğu için bir arttırmaya gerek yok.
+
+482
+01:09:38,036 --> 01:09:41,775
+C doğrudan hani şuradaki K artı bir dizisini arttırmaya gerek yok.
+
+483
+01:09:41,875 --> 01:09:48,235
+Sıfır dahil olduğu için doğrudan aslında bunu bularak frekansları bularak yeni yerleri bulmuş oluyoruz.
+
+484
+01:09:49,516 --> 01:09:51,956
+Yapacağım şey şu şeyi alıyorum.
+
+485
+01:09:54,936 --> 01:09:58,895
+B dizisinin ilgili hücresine A dizisindeki elemanı kopyalamak.
+
+486
+01:09:58,895 --> 01:10:04,796
+Yani yeni dizinin hangi elemanı ilgili elemanı.
+
+487
+01:10:04,796 --> 01:10:17,055
+Yani hangisindeki küçük i'deki elemanını al, i'deki hücresine pardon o elemanı, dizinin i inci elemanını kopyala.
+
+488
+01:10:18,576 --> 01:10:19,195
+Tamam.
+
+489
+01:10:21,055 --> 01:10:22,415
+Küçükteki i değerine git.
+
+490
+01:10:22,555 --> 01:10:23,456
+Niye bir arttırmadık?
+
+491
+01:10:23,536 --> 01:10:26,996
+Çünkü C'de sıfırdan başladığı için diziler bir arttırmaya gerek yok.
+
+492
+01:10:27,076 --> 01:10:28,816
+Doğrudan şurada yeri bulmuş oluyoruz.
+
+493
+01:10:29,796 --> 01:10:33,716
+Küçük i'deki değer neyse dizinin i inci değerini oraya kopyaladık.
+
+494
+01:10:33,716 --> 01:10:35,816
+Sonra hadi gelin bir de bunu ekrana yazdıralım.
+
+495
+01:10:39,444 --> 01:10:40,444
+Printf,
+
+496
+01:10:42,243 --> 01:10:43,403
+ve şöyle.
+
+497
+01:10:46,612 --> 01:10:53,612
+%d, %3t hatta. Yeni dizinin
+
+498
+01:10:55,636 --> 01:10:57,155
+İyisini yazdır.
+
+499
+01:11:02,931 --> 01:11:06,931
+İndirdikten sonra, şimdi şunu bir compile edelim.
+
+500
+01:11:23,123 --> 01:11:31,123
+Burada maksimum diye bir şey kullanacağız. Burada da maksimum diye bir şey kullanacağız.
+
+501
+01:11:33,123 --> 01:11:39,123
+Şimdi şu maksimumda 10 tane eleman girmek, uzun uzun eleman girmeyi pek sevme 5 tane eleman yaptım.
+
+502
+01:11:40,123 --> 01:11:43,123
+Herhalde bitmiştir. Bakalım çalıştıralım.
+
+503
+01:11:43,123 --> 01:11:53,743
+Eliniz 8453 99 3458 99
+
+504
+01:11:53,743 --> 01:11:56,223
+Sizce iyi bir algoritma mı bu?
+
+505
+01:12:00,564 --> 01:12:02,883
+Aynı elemanlara girersek çalışmayacak düzgün.
+
+506
+01:12:04,323 --> 01:12:09,444
+Bir kere correctness accuracy'de bir problem var. Onu kim söyledi? Kaçırdım.
+
+507
+01:12:09,444 --> 01:12:10,444
+Ben söyledim hocam.
+
+508
+01:12:11,324 --> 01:12:17,883
+Yol, tamam. Aynı elemanda problem var. Şimdi aynı elemanda problem varsa o zaman şuraya eşittir desek olur mu?
+
+509
+01:12:20,643 --> 01:12:22,003
+Yol, Berkay.
+
+510
+01:12:24,324 --> 01:12:26,083
+Sanırım olur da emin olamadım şu an.
+
+511
+01:12:26,083 --> 01:12:45,083
+Hani mesela burada yapacağımız şey şu. Kendisini de dahil edip bakıyoruz ki kendisi veya daha küçük elemanlar varsa sayalım. İşte iki var, iki var, daha önce iki var. Herhalde burada bu olması lazım.
+
+512
+01:12:52,020 --> 01:13:21,999
+3, 5, 3, 2, 6. Bakın burada bir yerde şey oldu. Şurada dizinin dışına taştı. 3, 5, 3, 2, 6 bir yerde sıkıntı var. Şimdi ikisini de arttırmış olduk herhalde. En küçükten 2-3 tane olsa 0. eleman hiçbir zaman bulmaz. Evet. Orada mesela o 0. eleman daima şey oluyor. En az birinci indistir kalıyor. Mesela bu bir problem. Bunun üzerine birazcık kafa yarmak gerekiyor.
+
+513
+01:13:22,020 --> 01:13:31,280
+Ama ben yani correctness güzel bir şey. Başka bu algoritmanın arızası ne var arkadaşlar? İyi bir algoritmadan kastımız ne olabilir?
+
+514
+01:13:34,836 --> 01:14:00,836
+N kare artı N işlem oluyor demiş Anıl. Evet. Zaten biz Selection Sort'ta veya Bubble Sort'ta da N karelik bir işlem yapıyorduk. Bellekte çok yer kaplıyor sanki. Evet. Bakın normal bir dizimiz var. Bir küçükler için N elemanlı bir dizi daha söyledik. Burada yeni bir dizi daha ekledik. İki N tane diziye ihtiyaç var.
+
+515
+01:14:00,836 --> 01:14:03,016
+ve n kare.
+
+516
+01:14:03,135 --> 01:14:06,356
+Hani n kareden n'e düşürse anlayacağım da.
+
+517
+01:14:08,236 --> 01:14:09,696
+Yine n kare, yine n kare.
+
+518
+01:14:09,775 --> 01:14:11,255
+Bubble sort o zaman daha iyi zaten.
+
+519
+01:14:11,635 --> 01:14:13,696
+Veya selection sort daha iyi değil mi arkadaşlar?
+
+520
+01:14:14,676 --> 01:14:14,916
+Peki.
+
+521
+01:14:16,336 --> 01:14:19,376
+Hem bellek açısından hem şey açısından iyi bir ayvolutma değil.
+
+522
+01:14:19,535 --> 01:14:23,916
+Peki bunu biraz daha işlem açısından iyileştirmek istersek ne yapabiliriz?
+
+523
+01:14:24,295 --> 01:14:27,056
+O zaman diyeceğiz ki arkadaşlar şurada.
+
+524
+01:14:28,215 --> 01:14:30,196
+Hep sıfırıncı elemandan bakma.
+
+525
+01:14:30,836 --> 01:14:39,755
+i eşittir sıfıra baktıysan i artı birinci elemandan başlayarak aramaya git.
+
+526
+01:14:40,755 --> 01:14:43,355
+Tabi onu nasıl yapalım? Şöyle yapalım.
+
+527
+01:14:43,355 --> 01:14:44,715
+Buna bir eşit değer.
+
+528
+01:14:46,795 --> 01:14:49,975
+Bu n kareyi birazcık azaltalım. n kare bölü 2 yapalım mesela.
+
+529
+01:14:50,236 --> 01:14:52,196
+Yine çok iyi değil de biraz daha iyi.
+
+530
+01:14:53,236 --> 01:14:56,175
+Şimdi i eşittir sıfırdan maksimuma kadar bakacağız.
+
+531
+01:14:56,376 --> 01:14:57,395
+Yine bu sabit.
+
+532
+01:14:57,395 --> 01:15:01,135
+Evet diyorum ki şurada j eşittir i artı 1'e bak.
+
+533
+01:15:02,175 --> 01:15:07,675
+Çünkü dizinin ilk elemanına zaten bakıldı.
+
+534
+01:15:08,875 --> 01:15:09,615
+Değil mi?
+
+535
+01:15:10,395 --> 01:15:15,655
+İlk elemanına bakıldıktan sonra gelip tekrar o elemana tekrardan bakmaya gerek yok.
+
+536
+01:15:17,336 --> 01:15:19,895
+Bir sonraki adımda ikinci elemana bakmak gerekiyor.
+
+537
+01:15:19,955 --> 01:15:22,196
+Bir sonraki adımda onu zaten i ile hallediyoruz.
+
+538
+01:15:22,515 --> 01:15:25,696
+O zaman diyoruz ki şu kalan elemanlara baksın.
+
+539
+01:15:25,696 --> 01:15:48,056
+Ve burada yapacağımız şey şu olacak. Dizinin iyisi yine dizinin J'sinden büyükse küçüğün iyisini arttırıyoruz. Değilse yani dizinin J'si bu şartı sağlıyorsa küçük aslında yine aynı işlemle çok bir fark etmiyor. J++ yapacağız arkadaşlar.
+
+540
+01:15:48,056 --> 01:16:07,576
+Çünkü bu taraf daha küçükse gidecek o taraftakini bir sayacak. Dolayısıyla bir o taraftan bir bu taraftan. Yani if'in içerisindeki şu bloklardan kesin kesin çalışacak. Bir oradan bir buradan hallediyoruz. Sonra yine mesela şurayı kapatalım.
+
+541
+01:16:11,315 --> 01:16:19,315
+Şöyle alalım. Küçük i, küçük j artı artı, hani şu artı artı dışarıya gelecek.
+
+542
+01:16:19,315 --> 01:16:30,315
+j incelemanı bir arttırmak için. Ne yaptık? Sıfırdan max'a kadar n'e kadar, i artı birden n'e kadar.
+
+543
+01:16:30,315 --> 01:16:38,315
+Şimdi şu kodun şu kısmını alıyorum. Hatta şunu da alayım. Bir analiz edelim bakalım bu kod kaç defa çalışır.
+
+544
+01:16:38,315 --> 01:16:43,955
+Aslında bugün o aktörümüz kalsa bu analiz meselesine de gireceğiz.
+
+545
+01:16:44,356 --> 01:16:45,095
+Oh çok kötü oldu.
+
+546
+01:16:46,095 --> 01:16:47,555
+Şuradan bir sınıf yıkakalım.
+
+547
+01:17:14,963 --> 01:17:38,963
+Şimdi bakın, birincisinde arkadaşlar, döngünün içine girince kesin kesin yapılacak olan işlem ne? If işlemi. İkincisinde de yapılacak işlem if işlemi. O zaman burada temel operasyon dediğimiz basic operasyon, comparison yani if. Basic operation, if. Ben bu if'in maliyetine bir birimlik bir maliyet diyorum.
+
+548
+01:17:38,963 --> 01:17:43,724
+Bu bir birimlik maliyet şu algoritmada ne kadar olacak bu algoritmada ne kadar olacak ona bakalım.
+
+549
+01:17:44,603 --> 01:17:46,603
+Yani şu if'i bir birim alacağız.
+
+550
+01:17:47,443 --> 01:17:48,824
+Şuradaki if'i bir birim alacağız.
+
+551
+01:17:48,984 --> 01:17:50,083
+Else dikkate almıyoruz.
+
+552
+01:17:50,324 --> 01:17:52,364
+Aslında else'i de dikkate almak gerekir de önemli değil.
+
+553
+01:17:53,644 --> 01:17:56,484
+Geldiğimiz zaman burada bir toplam sembolü bir işlem var.
+
+554
+01:17:56,544 --> 01:17:58,103
+Bu döngü olduğu için bu toplam sembolüdür.
+
+555
+01:17:58,103 --> 01:18:00,563
+i eşittir sıfırdan başlıyor max'a kadar.
+
+556
+01:18:01,883 --> 01:18:04,203
+Max dahil değil max eksi 1'e kadar.
+
+557
+01:18:04,804 --> 01:18:07,563
+Çünkü bu küçüktür toplam sembolünde dahil edilmez.
+
+558
+01:18:08,963 --> 01:18:11,583
+J eşittir sıfırdan max eksi bire kadar.
+
+559
+01:18:12,883 --> 01:18:15,063
+Bir birimlik işlem yapıldığını söylüyorum.
+
+560
+01:18:15,184 --> 01:18:16,723
+Yani burada kaç tane işlem var?
+
+561
+01:18:16,824 --> 01:18:17,883
+Max tane işlem var.
+
+562
+01:18:18,684 --> 01:18:20,624
+Bu max'a da gelin n diyelim arkadaşlar.
+
+563
+01:18:20,943 --> 01:18:21,883
+Kafa karıştırmasın.
+
+564
+01:18:22,523 --> 01:18:25,023
+n çarpı birden içteki şey n tane oluyor.
+
+565
+01:18:26,224 --> 01:18:31,184
+Burası da sıfırdan n eksi bire kadar n çarpı n'den n kare tane işlem yapılıyor.
+
+566
+01:18:32,603 --> 01:18:32,843
+Tamam.
+
+567
+01:18:33,243 --> 01:18:35,303
+Max yerine n eksi bire yazalım hatta doğrudan.
+
+568
+01:18:43,220 --> 01:18:46,079
+Buradaki terimler i'ye ve j'ye bağlı olmadığı için ne olacak?
+
+569
+01:18:46,259 --> 01:18:48,180
+Terim sayısı kadar sabitin çarpımı.
+
+570
+01:18:49,079 --> 01:18:49,999
+N tane terim var.
+
+571
+01:18:50,140 --> 01:18:51,299
+İlk önce buradan n'i bulduk.
+
+572
+01:18:51,419 --> 01:18:53,579
+Daha sonra terim sayısı kadar sabitin çarpımı.
+
+573
+01:18:54,039 --> 01:18:55,100
+Yine burada da n tane terim var.
+
+574
+01:18:55,159 --> 01:18:56,180
+N kare tane işlem oldu.
+
+575
+01:18:56,720 --> 01:18:57,879
+Şimdi şuraya baktığımızda
+
+576
+01:18:57,879 --> 01:19:02,740
+i eşit sıfırdan n-1'e kadar gidiyor.
+
+577
+01:19:03,919 --> 01:19:05,739
+Bu j eşittir.
+
+578
+01:19:05,739 --> 01:19:11,640
+Bakın burada i artı birden n-1'e kadar gidiyor.
+
+579
+01:19:11,640 --> 01:19:13,240
+ve yine burada da bir tane işlem var.
+
+580
+01:19:14,160 --> 01:19:15,859
+Şuradaki terim sayısı kaç tane?
+
+581
+01:19:15,999 --> 01:19:16,679
+n-1
+
+582
+01:19:16,679 --> 01:19:17,600
+eksi i
+
+583
+01:19:17,600 --> 01:19:19,639
+eksi 1 artı 1
+
+584
+01:19:19,639 --> 01:19:21,639
+n-1
+
+585
+01:19:21,639 --> 01:19:22,679
+eksi i
+
+586
+01:19:22,679 --> 01:19:23,940
+eksi 1 artı 1
+
+587
+01:19:23,940 --> 01:19:25,080
+bu kadar tane terim var.
+
+588
+01:19:25,720 --> 01:19:26,359
+Şunlar gidecek.
+
+589
+01:19:26,479 --> 01:19:27,339
+Yani şurası ne olacak?
+
+590
+01:19:28,039 --> 01:19:28,599
+n-1
+
+591
+01:19:28,599 --> 01:19:29,819
+eksi i tane işlem.
+
+592
+01:19:31,919 --> 01:19:32,760
+n-1
+
+593
+01:19:32,760 --> 01:19:34,699
+eksi i tane.
+
+594
+01:19:35,199 --> 01:19:35,839
+Burada da yine
+
+595
+01:19:35,839 --> 01:19:38,519
+i'ye bağlı bir kısım var.
+
+596
+01:19:38,639 --> 01:19:40,319
+Onun için burayı şöyle parçalıyorum.
+
+597
+01:19:40,319 --> 01:19:43,519
+i eşittir sıfırdan n-1'e kadar.
+
+598
+01:19:44,079 --> 01:19:46,039
+Bunun n-1'lik kısmını 1 alıyorum.
+
+599
+01:19:46,999 --> 01:19:47,620
+Eksi diyorum.
+
+600
+01:19:48,199 --> 01:19:49,379
+Şurası iyilik kısım.
+
+601
+01:19:50,139 --> 01:19:52,400
+i eşittir sıfırdan n-1'e kadar.
+
+602
+01:19:53,679 --> 01:19:54,139
+Gelelim.
+
+603
+01:19:54,539 --> 01:19:55,539
+Şu kısım nedir arkadaşlar?
+
+604
+01:19:55,979 --> 01:19:58,059
+n tane n-1'in çarpımı değil midir?
+
+605
+01:19:58,179 --> 01:20:00,539
+Şurası n çarpı n-1.
+
+606
+01:20:01,440 --> 01:20:01,919
+Eksi.
+
+607
+01:20:02,599 --> 01:20:03,279
+Şurası nedir?
+
+608
+01:20:03,479 --> 01:20:08,779
+1'den n-1'e kadar olan, pardon sıfırdan n-1'e kadar olan sayıların toplamıdır.
+
+609
+01:20:08,779 --> 01:20:10,959
+bu toplam sembolünden biliyoruz. Yani ne demek?
+
+610
+01:20:11,639 --> 01:20:12,319
+n-1
+
+611
+01:20:12,319 --> 01:20:15,179
+çarpı n-2
+
+612
+01:20:15,179 --> 01:20:16,379
+n artı
+
+613
+01:20:16,379 --> 01:20:18,319
+pardon n çarpı n artı 1
+
+614
+01:20:18,319 --> 01:20:20,199
+n-1 çarpı n
+
+615
+01:20:20,199 --> 01:20:21,559
+bölü 2 olacak.
+
+616
+01:20:22,940 --> 01:20:26,139
+n tane n-1
+
+617
+01:20:26,139 --> 01:20:28,279
+şimdi 2 tane n tane n-1
+
+618
+01:20:28,279 --> 01:20:30,440
+eksi 1 tane n tane n-1 ne olur?
+
+619
+01:20:31,199 --> 01:20:32,259
+n tane n-1
+
+620
+01:20:32,259 --> 01:20:34,940
+bölü 2 oldu. Yani yaklaşık olarak
+
+621
+01:20:34,940 --> 01:20:36,339
+yaklaşık olarak n kare
+
+622
+01:20:36,339 --> 01:20:37,919
+bölü 2 oldu.
+
+623
+01:20:38,779 --> 01:20:40,979
+Burada n karelik bir algoritma vardı.
+
+624
+01:20:41,220 --> 01:20:43,080
+Yani bu n karelik algoritma şu demek.
+
+625
+01:20:43,220 --> 01:20:44,220
+Matrisi nasıl tarıyor?
+
+626
+01:20:45,319 --> 01:20:45,999
+Böyle tarıyor.
+
+627
+01:20:48,440 --> 01:20:49,159
+n kare bölü
+
+628
+01:20:49,159 --> 01:20:50,139
+ikilik algoritma
+
+629
+01:20:50,139 --> 01:20:53,359
+ne yapıyor? İşte şu şekilde.
+
+630
+01:20:56,359 --> 01:20:58,339
+Şu alt köşe gelen şu kısmını taramıyor.
+
+631
+01:20:58,479 --> 01:21:00,800
+İşte şurayı artırıp gidiyor. Yarı yarıya bir tarama
+
+632
+01:21:00,800 --> 01:21:02,800
+işlemi var. Veya şöyle diyelim
+
+633
+01:21:02,800 --> 01:21:04,759
+arkadaşlar. Daha düzgün olsun.
+
+634
+01:21:05,859 --> 01:21:06,679
+İkincisi şöyle.
+
+635
+01:21:08,779 --> 01:21:10,779
+Tamam mı?
+
+636
+01:21:12,459 --> 01:21:13,020
+Anlaşıldı mı?
+
+637
+01:21:15,959 --> 01:21:18,279
+Ama yine bellek açısından iyi değil.
+
+638
+01:21:18,999 --> 01:21:19,300
+Kötü.
+
+639
+01:21:20,459 --> 01:21:22,539
+Doğruluk açısından aynı eleman olursa
+
+640
+01:21:22,539 --> 01:21:23,979
+bir kötü durum var.
+
+641
+01:21:24,720 --> 01:21:26,499
+Onun için bunları dikkate
+
+642
+01:21:26,499 --> 01:21:27,220
+almak gerekiyor.
+
+643
+01:21:28,660 --> 01:21:30,440
+Çok fazla kullanılan bir sorting algoritması
+
+644
+01:21:30,440 --> 01:21:30,919
+değil mesela.
+
+645
+01:21:32,679 --> 01:21:34,459
+Şimdi son olarak bir algoritmamız daha
+
+646
+01:21:34,459 --> 01:21:36,139
+var. Onu da kodlayalım.
+
+647
+01:21:37,580 --> 01:21:38,239
+Burada da
+
+648
+01:21:38,239 --> 01:21:44,959
+Bu da linear sort ama biraz daha farklı bir şekilde yapıyor.
+
+649
+01:21:45,299 --> 01:21:46,719
+Önce bunun kodunu yazacağım.
+
+650
+01:21:47,219 --> 01:21:50,579
+Ben şöyle diyelim önce ne yaptığını söyleyeyim.
+
+651
+01:21:52,759 --> 01:21:54,259
+Bu da linear sorttu herhalde de.
+
+652
+01:21:59,699 --> 01:22:06,699
+Diyor ki, arkadaşlar bu algoritma, bir A dizimiz var.
+
+653
+01:22:09,587 --> 01:22:36,587
+Öncelikle bu dizinin içindeki en büyük elemanı bul ve bu en büyük elemana göre yeni bir B dizisi oluştur. Onun değerine göre. Yani 0'dan 8'e kadar 9 elemanlı bir dizi. Sonra diyor ki, bu elemanları ilgili yere kopyala.
+
+654
+01:22:36,587 --> 01:22:40,207
+Yani A'nın 3'ünü git B'nin 3'üne kopyala.
+
+655
+01:22:40,727 --> 01:22:43,768
+B'nin 3'ünde ne var? Burada 3 var.
+
+656
+01:22:44,207 --> 01:22:46,348
+A'nın 8'ini git B'nin 8'ine kopyala.
+
+657
+01:22:46,428 --> 01:22:48,988
+A'nın 6'sını git B'nin 6'sına kopyala falan.
+
+658
+01:22:50,308 --> 01:22:52,468
+İşte 7'yi git burada 7'ye kopyala.
+
+659
+01:22:52,587 --> 01:22:53,668
+5'i gel buraya kopyala.
+
+660
+01:22:53,727 --> 01:22:56,227
+Ve bunun ilk baştaki bütün değerleri de eksi 1 olsun diyoruz.
+
+661
+01:22:59,027 --> 01:23:00,848
+Pozitif değerlerden olduğunu kabul edelim.
+
+662
+01:23:00,948 --> 01:23:02,327
+Hani sıfırı da kabul edeceksin çünkü.
+
+663
+01:23:02,327 --> 01:23:09,767
+Sonra bunu şey yaparken diziyi gez, eksi bir dışında bir değer gördüysen o gördüğün değer yazma.
+
+664
+01:23:09,767 --> 01:23:16,668
+Eksi bir dışındaki değerleri yaz, eksi birleri yazma. Yani 3, 5, 6, 7, 8 bu şekilde sıralarsın.
+
+665
+01:23:17,627 --> 01:23:22,787
+Tamam mı? 3, 5, 6, 7, 8. O zaman önce ne yapacağız arkadaşlar?
+
+666
+01:23:23,887 --> 01:23:30,127
+Dizinin en büyüğünü bir bulacağız. Bu dizinin en büyüğüne göre yeni bir dizide yer açacağız.
+
+667
+01:23:30,128 --> 01:23:36,888
+Ve yeni diziye bu elemanları ilgili indiz değerlerine göre ilgili indizlere kopyalıyoruz.
+
+668
+01:23:36,988 --> 01:23:39,528
+Tabi dizinin önce ne olması lazım? Bir ilklendirilmesi lazım.
+
+669
+01:23:40,528 --> 01:23:43,848
+Bu ilklendirmeyi yaptıktan sonra ne yapacağız?
+
+670
+01:23:44,528 --> 01:23:51,628
+Bu eksi bir dışında artık neye göre ilklendirdiyseniz eksi bir dışındaki elemanları sıralayıp hatta ne yaparsınız?
+
+671
+01:23:51,628 --> 01:23:54,468
+Eksi bir dışındaki elemanları şu diziye alabilirsiniz.
+
+672
+01:23:54,748 --> 01:23:55,468
+Üçü buraya al.
+
+673
+01:23:55,467 --> 01:24:03,507
+Yani eksi bir dışında nerede bir eleman görürsen bir işaretçiyle K dizisi, K işaretçisiyle buraya kopyalarsın A dizisinin üzerine.
+
+674
+01:24:03,587 --> 01:24:11,107
+A dizisinde ne olur? 3, 5, 6, 7, 8 diye A dizisinin yeni hali sıralanmış olur.
+
+675
+01:24:11,948 --> 01:24:17,167
+Bunu da yapmak mümkün. Sonra bu diziyi boş bırakabiliriz.
+
+676
+01:24:19,248 --> 01:24:20,388
+Anlaşılmayan bir şey var mı burada?
+
+677
+01:24:28,467 --> 01:24:37,467
+En büyük elemanı bulmadan bu algoritma da yapamıyoruz. Şimdi bunun kodunu yazacaktım, yazmayacağım. Size ödev gibi bir şey vereceğim Cuma gününe.
+
+678
+01:24:37,467 --> 01:24:47,467
+Bunu da iyileştirmeler yapmanızı isteyeceğim. Ben rastgele soracağım. Belki 5-6 kişiye sorarız. İlk 5-6 kişiye sorarız bunu. Geçen seferde yaptığımız şekilde.
+
+679
+01:24:47,467 --> 01:24:56,467
+Bu algoritmanın kodlaması ve daha iyi nasıl bir şey yapılabilir? Ona yönelik çözümlerinizi isteyeceğim. Farklı farklı görüşler alacağım sizlerden.
+
+680
+01:24:56,467 --> 01:24:59,547
+Bunlar ek puan olarak değerlendirecek.
+
+681
+01:24:59,847 --> 01:24:59,988
+Bir.
+
+682
+01:25:00,328 --> 01:25:02,048
+Şimdi bu algoritmada şöyle bir problem var.
+
+683
+01:25:02,127 --> 01:25:03,287
+Ben bazı problemlere sorayım.
+
+684
+01:25:03,368 --> 01:25:07,527
+Belki siz çözüm ararken bu problemlerden çıkış noktası bulabilirsiniz.
+
+685
+01:25:09,008 --> 01:25:10,988
+Elemanlarından bir tanesi kabul edelim ki.
+
+686
+01:25:13,107 --> 01:25:15,467
+Yani orijinal elemanlarımızdan bir tanesi.
+
+687
+01:25:15,648 --> 01:25:20,107
+İşte 3 olsun, 8 olsun, 999 olsun.
+
+688
+01:25:21,308 --> 01:25:25,287
+Ne bileyim 10 üzeri 6 eksi 5'in değeri neyse o olsun.
+
+689
+01:25:26,467 --> 01:25:27,587
+0 olsun 1 olsun.
+
+690
+01:25:30,508 --> 01:25:32,588
+Maksimumdan birden fazla olma durumu var.
+
+691
+01:25:33,247 --> 01:25:34,067
+İşin içinde.
+
+692
+01:25:35,328 --> 01:25:36,707
+Şimdi şöyle bir dizi içeriği.
+
+693
+01:25:36,787 --> 01:25:41,088
+10 üzeri 6-5'in değeri neyse işte 1 milyondan 5 çıkarırsa ne olur?
+
+694
+01:25:41,747 --> 01:25:43,027
+9-9'dan 5 mi?
+
+695
+01:25:43,828 --> 01:25:44,508
+Neyse o değer.
+
+696
+01:25:45,188 --> 01:25:49,087
+Şimdi ben bu A dizisinden B dizisini oluştururken maksimumu buluyorsam
+
+697
+01:25:49,087 --> 01:25:53,207
+gereksiz bir sürü uzun bir B dizisi oluşturacağım.
+
+698
+01:25:53,207 --> 01:25:54,567
+Bakın böyle bir problemi var bunun.
+
+699
+01:25:54,567 --> 01:25:56,868
+Aslında çok hızlı bir algoritmadır.
+
+700
+01:25:57,447 --> 01:25:57,887
+Niye hızlı?
+
+701
+01:25:58,227 --> 01:25:59,407
+En küçüğü bulmak için ne yapıyoruz?
+
+702
+01:25:59,467 --> 01:26:01,267
+Pardon en büyüğü bulmak için ne yapıyoruz arkadaşlar?
+
+703
+01:26:01,787 --> 01:26:02,967
+En defa deneme yapıyoruz.
+
+704
+01:26:03,648 --> 01:26:06,008
+Sonra en defa deneyince bir dizi açıyoruz.
+
+705
+01:26:07,607 --> 01:26:10,607
+O dizinin dinamik olarak nasıl açılacağını gelecek dönem göreceğiz.
+
+706
+01:26:11,067 --> 01:26:13,787
+Açtığımız bu diziyi de baştan sona atama yapıyoruz.
+
+707
+01:26:13,787 --> 01:26:15,227
+Yani diyoruz ki git bunu buraya yaz.
+
+708
+01:26:15,307 --> 01:26:16,107
+Yani şöyle bir şey yapacak.
+
+709
+01:26:16,107 --> 01:26:25,648
+B'nin A'sının İ'sine doğrudan A'nın İ'sini kopyala demek değil midir bu?
+
+710
+01:26:25,768 --> 01:26:27,048
+A'nın İ'sini alacak.
+
+711
+01:26:28,447 --> 01:26:29,447
+Yani 3'ü alacak.
+
+712
+01:26:29,828 --> 01:26:30,328
+Hangi şeye?
+
+713
+01:26:30,408 --> 01:26:32,587
+B'nin A'nın İ'sini iyiyince elemanına kopyalayacak.
+
+714
+01:26:32,688 --> 01:26:34,067
+Doğrudan bu da en defalık bir şey.
+
+715
+01:26:34,908 --> 01:26:39,947
+Daha sonra eksi bir dışındakileri de tekrar orijinal dizeyi yazarken o da en defa yapılacak bir şey.
+
+716
+01:26:40,048 --> 01:26:41,208
+Çok hızlı bir şekilde bakın.
+
+717
+01:26:41,207 --> 01:26:50,567
+Yani en karmaşıklıkla veya en fazla üç engin bir şeyle yine en mertebesinde en kareye çıkmadık çok hızlı yapabiliyoruz.
+
+718
+01:26:50,627 --> 01:26:54,547
+Ama korkunç miktarda bir bellek allokasyonu gerekebilir.
+
+719
+01:26:54,867 --> 01:26:57,267
+İçerideki maksimum değerin büyüklüğünden dolayı.
+
+720
+01:26:59,647 --> 01:27:00,627
+Sıkıntısı burada zaten.
+
+721
+01:27:03,707 --> 01:27:05,247
+Bundan anlaşılmayan bir şey var mı arkadaşlar?
+
+722
+01:27:05,247 --> 01:27:15,988
+Arkadaşlar bunun kodlamasını ve bu bahsettiğim problemlere yönelik sizin alternatif çözümlerinizi cuma günü bekleyeceğim.
+
+723
+01:27:17,007 --> 01:27:22,068
+Burada şu da hani ilk derse katılan erken katılan kim olursa o şeyi kapar.
+
+724
+01:27:22,207 --> 01:27:23,128
+İlk kaç kişi diyelim?
+
+725
+01:27:24,268 --> 01:27:25,367
+Beş kişi diyelim bu sefer.
+
+726
+01:27:25,848 --> 01:27:28,247
+Geçen hafta geçenkinde üç kişi demiştik.
+
+727
+01:27:29,247 --> 01:27:33,647
+200-120-62, 190-1183, 190-1149.
+
+728
+01:27:33,647 --> 01:27:36,907
+Hadi 7 olsun tamam daha fazla olmaz ama.
+
+729
+01:27:38,707 --> 01:27:42,427
+Dinamik atama yapamadan nasıl bu? Diyeceğiz ki şöyle bir şey diyeceksiniz.
+
+730
+01:27:42,707 --> 01:27:50,647
+Yani ona ekstra çözümler kendiniz üretebilirsiniz ama girilen elemanlar işte 0 ile integer'ın değeri arasında olsun.
+
+731
+01:27:51,367 --> 01:27:54,427
+Maksimum değeri arasında olsun. Şu an için öyle bir şey söyleyebiliriz.
+
+732
+01:27:54,427 --> 01:28:03,587
+Ama zaten çözüm olarak sunacağınız şeyler de dizilerin size'ı da integer'ın maksimum değeri kadar olacağını kabul etmeniz lazım.
+
+733
+01:28:03,667 --> 01:28:05,767
+Veya ekstra çözümler kendini sunabilirsiniz.
+
+734
+01:28:06,587 --> 01:28:10,687
+Çok fazla dersin dışına da diğer derslerin dışına sınırına girmeden.
+
+735
+01:28:12,247 --> 01:28:16,307
+Yani burada hocam ben şöyle bir şey yaparım daha iyi oluyor gibisinden bir şey.
+
+736
+01:28:16,307 --> 01:28:21,307
+Mesela linear sort with counting ile bunu belki hibritleştirebilirsiniz.
+
+737
+01:28:21,307 --> 01:28:25,908
+Biraz önceki algoritmayla ikisini beraber kullanabilirsiniz. Bir bakın bakalım.
+
+738
+01:28:27,507 --> 01:28:30,187
+Evet, şimdi arkadaşlar...
+
+739
+01:28:33,332 --> 01:28:38,332
+Gelelim uygulama için hazırlanan sorulara bir bakalım.
+
+740
+01:28:40,332 --> 01:28:43,332
+Bunlardan bir tanesi zaten...
+
+741
+01:28:44,332 --> 01:28:56,332
+Yani evet, şu algoritma üzerinde bunun gerçeklenmesi bahsettiğim gibi, sizin buzdaki karşılaştığımız bazı sorunlara önerdiğiniz çözümler.
+
+742
+01:29:01,140 --> 01:29:02,140
+Hulrullah Mahmoud.
+
+743
+01:29:18,100 --> 01:29:43,100
+Yok, böyle yazdığım slide'ları İbrahim zaten kayıtlardan alabilirsiniz. Yani düzeltme yapmam gerekiyor. Bu sefer yanlış anlaşılan şeyler oluyor. Onun için hani burada böyle yapıştınız diye daha önce birkaç defa yani ufak defa yazmışım. Geçen dönem elektronik bölümünde oldu. Yani o da şuydu, söyleyeyim. 2 üzeri 5 mi? 2 üzeri 5'i yok. 2 üzeri 6'ı yanlışlıkla 32 diye yazmışım.
+
+744
+01:29:43,100 --> 01:29:50,759
+Daha sonra da hatta düzeltmişim dersin ilerleyen zamanlarında ama o 32 olarak ders notunda kalmış yazdığım şeyde.
+
+745
+01:29:51,360 --> 01:29:55,199
+Sonra sınav esna sınavdan sonra vizeden sonra bir itiraz olmuştu.
+
+746
+01:29:55,839 --> 01:29:58,879
+Sınavı yenilemek zorunda, şey o soruyu iptal etmek zorunda kalmıştım.
+
+747
+01:29:59,899 --> 01:30:03,159
+Onun için dersteki zaten bu kayıtları izleme imkanınız var.
+
+748
+01:30:03,979 --> 01:30:06,219
+Düzeltme yapmam gerekiyor. O da bana çok zaman kaybetir.
+
+749
+01:30:06,219 --> 01:30:10,659
+Onun için bunu şu an için böyle bir talebe olumlu cevap veremiyorum. Kusura bakmayın.
+
+750
+01:30:13,100 --> 01:30:31,299
+Yani arada böyle şeyler çıkabiliyor maalesef. Ki bunu söyleyen arkadaşlara, itiraz eden arkadaşlara cevap olsun diye o zamanlar şey de yapmıştım. Yani dersin ilgili sayfası, işte kayıtlardan, dakikayı, saati, işte şu saatte, şu dakikada onu düzelttiğimi de söylemiştim ama.
+
+751
+01:30:31,299 --> 01:30:40,600
+Yani iki üzeri beşin, iki üzeri altının işte yanlış hesaplanmasını gerekçe gösterecek bir sorunun iptalini istemek de birazcık abes bir durumdu.
+
+752
+01:30:40,600 --> 01:30:42,600
+Neyse.
+
+753
+01:30:44,600 --> 01:30:46,879
+Şimdi gelelim.
+
+754
+01:30:50,804 --> 01:31:04,043
+Şuradan. Buradakilerin bazılarını bugün yetiştirebilsek bugün yetmezse diğer derste çözeceğiz arkadaşlar. Hatta bir tanesi kolaydı, bir tanesinde farklı bir yaklaşım sunmuştu, onu beğendim.
+
+755
+01:31:09,555 --> 01:31:27,635
+Şu uygulamayla alakalı şeyi paylaşacağım ama. Şimdi dizinin tersini bulunuz demişiz arkadaşlar. Ne yapmıştık bu? Sizinle bu konuyu konuştuk. İlk yaklaşımımız ne olacaktı? Ne olabilirdi? En basit yaklaşım.
+
+756
+01:31:36,564 --> 01:31:44,064
+Ondan daha basit bir yaklaşım vardı arkadaşlar. Svet'ten daha basit.
+
+757
+01:31:46,003 --> 01:32:01,403
+Yeni bir dizi oluştururuz, sonundan başa doğru diziyi kopyalarız, başka bir diziyi aktarırız. Tamam. Dedi ki bu ekstra bellek gerektirir ve en defa işlem yapmak gerektirir. Çok iyi bir şey değil dedik. Onun yerine ne yapıyorduk? Şurada şöyle bir şey yapalım.
+
+758
+01:32:01,403 --> 01:32:07,323
+hatta bunun dokümanlarını da farklı kaynaklardan bir şeyler yaparak kazanıyoruz.
+
+759
+01:32:07,364 --> 01:32:08,424
+Onun yerine ne yapıyorduk arkadaşlar?
+
+760
+01:32:08,684 --> 01:32:13,603
+i ince elemanla en eksi i ince elemanı.
+
+761
+01:32:14,184 --> 01:32:15,903
+C'de bu biraz daha farklı oluyor.
+
+762
+01:32:15,983 --> 01:32:16,864
+Onunla şu an geleceğiz.
+
+763
+01:32:17,683 --> 01:32:18,283
+Şununla şunu.
+
+764
+01:32:19,443 --> 01:32:21,443
+Bununla bunu yer değiştirdik.
+
+765
+01:32:21,503 --> 01:32:23,423
+Peki burada biz hangi döngüyü kullanmıştık?
+
+766
+01:32:24,803 --> 01:32:26,603
+Hatta onun kodunu da yazdık diye hatırlıyorum.
+
+767
+01:32:29,364 --> 01:32:30,943
+Hangi döngüyü kullandık?
+
+768
+01:32:31,403 --> 01:32:33,903
+For döngüsü kullandık değil mi?
+
+769
+01:32:34,483 --> 01:32:35,683
+Yani şöyle bir şey yazmıştık.
+
+770
+01:32:35,783 --> 01:32:38,143
+Hızlıca i eşittir sıfırdan başlayacağız.
+
+771
+01:32:39,403 --> 01:32:41,523
+i küçüktür n bölü 2 olacak.
+
+772
+01:32:42,703 --> 01:32:44,043
+i artı artı diyeceğiz.
+
+773
+01:32:45,243 --> 01:32:47,843
+Sonra bir tane işte temp değişkenimiz var.
+
+774
+01:32:48,763 --> 01:32:49,923
+Bir de d dizimiz var.
+
+775
+01:32:51,243 --> 01:32:51,683
+Ne yapıyorduk?
+
+776
+01:32:51,763 --> 01:32:56,084
+Tempe dizinin i'sini alıyorduk.
+
+777
+01:32:58,183 --> 01:33:00,203
+Dizinin neresine yazacağız?
+
+778
+01:33:04,787 --> 01:33:24,787
+Dizinin i'sini alacağız. Nereye aktaracağız? i ince elemanı. Dizinin n, evet, eksi i. Eksi i, eksi 1 var mı? Var. Var mı? Yok.
+
+779
+01:33:24,787 --> 01:33:35,927
+Şimdi n-i dersek arkadaşlar dizinin n-i elemanına ulaşmış olur. Onun için var. C'de diziler 0'dan n-1. elemana kadardır.
+
+780
+01:33:37,148 --> 01:33:47,847
+Eksi 1 olması gerekecek. Yani eksi 1'i demezsek 0. elemanı dizinin n-1. elemanına yani dizinin dışına kopyalamaya çalışırız.
+
+781
+01:33:47,847 --> 01:33:58,627
+Bunu oraya aldık. Sonra dizinin n-i-1. elemanına temp yapacağız. Bu döngü böyle devam edip gidecek.
+
+782
+01:33:59,847 --> 01:34:07,727
+Şimdi buna alternatif bir çözüm. Şöyle while döngüsüyle bunu yapalım demiş arkadaşlar. Birazcık binary search mantığı gibi.
+
+783
+01:34:07,727 --> 01:34:11,067
+Diyoruz ki şuraya left diyelim.
+
+784
+01:34:12,267 --> 01:34:13,027
+Buraya da diyelim.
+
+785
+01:34:14,407 --> 01:34:15,868
+Left'i sıfırdan başlatıyorum.
+
+786
+01:34:16,927 --> 01:34:19,047
+Right'ı da n-1'den başlatıyorum mecburen.
+
+787
+01:34:19,868 --> 01:34:21,207
+Yani kodumuz şu şekilde olacak.
+
+788
+01:34:21,207 --> 01:34:23,807
+Start diyorum.
+
+789
+01:34:24,527 --> 01:34:25,527
+Flowchart değil kod.
+
+790
+01:34:26,167 --> 01:34:27,368
+Left eşittir sıfır.
+
+791
+01:34:28,127 --> 01:34:29,587
+Right eşittir n-1.
+
+792
+01:34:31,047 --> 01:34:37,547
+Sonra diyeceğiz ki while left kısım right'tan küçükken.
+
+793
+01:34:37,547 --> 01:34:44,307
+Bakın eşit olduğunda zaten ne demektir? İkisi birbirine eşit olunca orta noktaya geldik.
+
+794
+01:34:46,087 --> 01:34:56,807
+Orta noktaya geldiğimizde duracağız. Left right'tan küçükken diyorum ki dizinin lefti ile right'ını yer değiştir, left'i bir artır, right'ı bir azaltır.
+
+795
+01:34:56,807 --> 01:35:25,687
+Yani bir tane yine temporary değişkenimiz olacak. T eşittir dizinin left'i. Ondan sonra dizinin left'ine dizinin right'ını alacağız. Dizinin right'ına da T'yi kopyalayacağız. Sonra left ve right'ı bir artıracağız. Left plus plus, right minus minus. Bu kadar.
+
+796
+01:35:26,808 --> 01:35:52,787
+Bakın burada n bölü 2'lik bir işlem var. Burada böyle bir kontrol var. Burada böyle daha kompakt bir şekilde yazmış asistan hocalarınız. Güzel dolmuş. Farklı bir yaklaşım. Şunu analiz ettiğimizde bakın şu işlem arkadaşlar bir defa yapılır. Bu döngü kaç defa dönüyor? n bölü 2 defa dönüyor değil mi içerisi? Şuradaki işlemden n bölü 2 defa yapılacak.
+
+797
+01:35:52,787 --> 01:35:57,847
+Ama bu m bölü 2'nin önüne parantez içinde bir şey getireceğiz.
+
+798
+01:35:57,927 --> 01:35:59,448
+Bakın burada bir dizi erişimi var.
+
+799
+01:35:59,668 --> 01:35:59,847
+1.
+
+800
+01:36:00,967 --> 01:36:02,728
+Artı bir tane eşittir operatörü var.
+
+801
+01:36:02,827 --> 01:36:03,368
+Artı 1.
+
+802
+01:36:04,207 --> 01:36:06,927
+Şurada iki tane matematiksel işlem var.
+
+803
+01:36:07,528 --> 01:36:09,088
+Artı bir tane dizi erişimi var.
+
+804
+01:36:09,308 --> 01:36:09,907
+Artı 3.
+
+805
+01:36:10,547 --> 01:36:11,987
+Artı bir tane assignment var.
+
+806
+01:36:12,648 --> 01:36:13,528
+Artı 1.
+
+807
+01:36:14,088 --> 01:36:15,627
+Artı bir tane daha dizi erişimi var.
+
+808
+01:36:15,767 --> 01:36:16,308
+Artı 1.
+
+809
+01:36:17,088 --> 01:36:19,808
+Artı şurada iki tane işlem var.
+
+810
+01:36:19,888 --> 01:36:20,787
+Bir de dizi erişimi var.
+
+811
+01:36:20,787 --> 01:36:21,088
+3.
+
+812
+01:36:21,487 --> 01:36:22,467
+Bir de eşittir 4.
+
+813
+01:36:22,787 --> 01:36:49,127
+Artı 4 yani n bölü 2 çarpı 4, 6, 10, 11. 11 çarpı n bölü 2'lik bir işlem varmış bakın şu dizinin içinde. Peki şurada nasıl olacak? Şimdi bu n bölü 2 dönecekse bu dizi n bölü 2 defa hatta n bölü 2 artı 1 defa artış olacak. n bölü 2 artı 1 defa şu işlem yapılacak. Bunu görüyoruz.
+
+814
+01:36:49,127 --> 01:37:00,728
+Şurada nasıl? N bölü 2 artı bir defa N bölü 2 hesaplanacak. Zaten bu aslında sabit bir sayı. Yani aynı bu şekilde bu işlem yapılacak. Bir de küçüktür için bu işlem yapılacak.
+
+815
+01:37:00,727 --> 01:37:04,127
+Yani n bölü 2
+
+816
+01:37:05,203 --> 01:37:33,523
+Artı bir defa üç tane işlem yapılacak orada. Bir de başlangıçta toplam bir işlem var. On bir tane m bölü iki, ondan sonra m bölü iki artı bir çarpı üç tane şu işlemden artı bir bu kadar tane işlem yapılacak. Arada belki gözden kaçırdığım şeyler olabilir. Şuraya baktığımız zaman, left right'tan küçükken diyoruz, şurada iki tane işlem var, burada üç tane işlem var,
+
+817
+01:37:33,523 --> 01:37:37,083
+Burada iki tane işlem var. Ne oldu?
+
+818
+01:37:37,924 --> 01:37:41,003
+2, 3, 2, 4, 7, 8, 9.
+
+819
+01:37:41,163 --> 01:37:49,303
+9 çarpı şuradaki left ve right dizinin tam ortasına kadar geleceği için aslında şu gizli bir m bölü 2'dir.
+
+820
+01:37:49,943 --> 01:37:53,064
+9 çarpı m bölü 2'ye yakın bir işlem yapılıyor.
+
+821
+01:37:53,523 --> 01:37:59,143
+Şu başlangıçtaki 3-4 tane işlemde atarsak 9 çarpı m bölü 2 artı 4-5 tane.
+
+822
+01:37:59,523 --> 01:38:00,763
+Ne var? Şurada bir tane bu.
+
+823
+01:38:00,763 --> 01:38:04,123
+Burada 4 tane işlem var.
+
+824
+01:38:04,843 --> 01:38:13,823
+N'in değerine göre yaklaşık olarak bakın burası 11 m bölü 2 artı m bölü 2 artı 1 şarkı 3 artı 1 tane işlem yapılıyor bizim eski algoritmada.
+
+825
+01:38:14,343 --> 01:38:16,384
+Şurada bu işi biraz daha hızlı halledebiliyoruz.
+
+826
+01:38:18,203 --> 01:38:19,983
+Tamam mı? Var mı anlaşılmayan bir şey?
+
+827
+01:38:22,983 --> 01:38:24,703
+Bellek açısından bir fark var mı?
+
+828
+01:38:25,483 --> 01:38:27,163
+Bellek açısından şöyle bir fark var.
+
+829
+01:38:27,323 --> 01:38:28,883
+Yani ekstra bir dizi kullanmıyoruz.
+
+830
+01:38:28,884 --> 01:38:31,443
+Şu algoritmada sadece temp kullanmıştık.
+
+831
+01:38:32,604 --> 01:38:34,784
+Bir de i değişkeni kullanmıştık.
+
+832
+01:38:36,163 --> 01:38:38,724
+Şurada tempimiz zaten var.
+
+833
+01:38:38,903 --> 01:38:41,263
+i'nin dışında bir tane r değişkenimiz var.
+
+834
+01:38:43,163 --> 01:38:43,604
+Tamam mı?
+
+835
+01:38:43,723 --> 01:38:46,843
+Yani bir tane ekstradan değişken kullandık i yerine.
+
+836
+01:38:50,163 --> 01:39:01,663
+Daha çok bellekten kastımız artı bir tane bellek. İşlem açısından baktığımızda bu biraz daha, hani yine n tane bakın arkadaşlar buna da kabaca n diyoruz, buna da kabaca n diyoruz.
+
+837
+01:39:01,663 --> 01:39:11,663
+Ha bu ikisinin farkını bulmak için işte 100 elemanlı bir dizide veya 10 milyon elemanlı dizide süre ölçersiniz sabit bir bilgisayarda, ona göre bakarsınız.
+
+838
+01:39:11,663 --> 01:39:19,663
+Bakın yine şurada da yapılan işlemler, i++ burada da var, i++ gibi bir şey burada da var.
+
+839
+01:39:19,663 --> 01:39:33,723
+karşılaştırma işlemi şurada olduğu gibi burada da var. Hatta bir tane işte bölme işlemi fazladan var. Bunu yani 9n bölü 2 artı 4 zaten şuradakinden daha iyi olduğunu, daha güzel olduğunu söylüyor.
+
+840
+01:39:36,684 --> 01:39:45,903
+Peki bu böyleydi. Yapacağımız şey grafiksel olarak hani bunun bu şekilde devam edeceğini bulacağız. Şimdi dizideki en sık geçen elemanı bulunması.
+
+841
+01:39:45,903 --> 01:40:07,244
+Bunu da biz örnek olarak sizlerle yaptık ama burada da ikinci bir yaklaşım sunmuşlar. Majority voting yani en fazla oyu alan kişinin bulunması. Hatta bunu da iki defa yapmıştık değil mi arkadaşlar? İki farklı şekilde. Önce bir iç içe döngüyle yaptık. Sonra dedik ki yani bugün de yine kısaca tekrar etmiş olduk. Ek bir diziyle bunu yapabiliriz.
+
+842
+01:40:07,244 --> 01:40:13,123
+Dizi boyutunun yarısından fazla sayı dizi içerisinde bulunan eleman.
+
+843
+01:40:13,284 --> 01:40:15,864
+Yani majöritedeki kastı burada şeymiş burada.
+
+844
+01:40:15,964 --> 01:40:17,443
+Yarıdan fazlalığına da bakıyor.
+
+845
+01:40:18,424 --> 01:40:20,464
+Yani illaki en fazla geçmesi gerekmeyecek.
+
+846
+01:40:20,524 --> 01:40:21,904
+Bir de yarıdan fazlasına bakacak.
+
+847
+01:40:22,504 --> 01:40:23,123
+E ne yapacaksınız?
+
+848
+01:40:23,223 --> 01:40:25,983
+En fazla bulunan eleman burada kaç tane?
+
+849
+01:40:26,184 --> 01:40:28,863
+Bir, iki, üç, dört, beş tane.
+
+850
+01:40:29,504 --> 01:40:30,704
+Dizinin boyutu kaç tane?
+
+851
+01:40:31,623 --> 01:40:32,363
+Kaç eleman?
+
+852
+01:40:32,363 --> 01:40:35,464
+Yarıdan fazla olduğu için beş büyüktür.
+
+853
+01:40:35,583 --> 01:40:36,083
+Sekiz bölüktür.
+
+854
+01:40:36,083 --> 01:40:37,783
+O zaman diyoruz ki majority 3.
+
+855
+01:40:38,283 --> 01:40:41,143
+Şimdi burada 3 en fazla.
+
+856
+01:40:42,204 --> 01:40:44,344
+Bunu bulduktan sonra bir de majority'ye bakıyoruz.
+
+857
+01:40:44,344 --> 01:40:46,524
+İşte 3 büyük değil.
+
+858
+01:40:46,783 --> 01:40:47,323
+Büyük değil.
+
+859
+01:40:47,884 --> 01:40:48,063
+Neden?
+
+860
+01:40:48,363 --> 01:40:49,183
+5 bölü 2'den.
+
+861
+01:40:49,423 --> 01:40:51,163
+Aslında tam da büyük oluyor da.
+
+862
+01:40:51,344 --> 01:40:52,083
+Pardon 3 olur mu?
+
+863
+01:40:52,143 --> 01:40:53,543
+2 büyük değil.
+
+864
+01:40:53,623 --> 01:40:54,344
+5 bölü 2'den.
+
+865
+01:40:54,543 --> 01:40:55,563
+Yarısından fazla değil.
+
+866
+01:40:55,604 --> 01:40:56,583
+Onun için majority olmuyor.
+
+867
+01:40:56,623 --> 01:40:57,363
+Ama önemli değil bu.
+
+868
+01:40:57,423 --> 01:40:58,524
+Yani bu ekstra bir kontrol.
+
+869
+01:40:59,964 --> 01:41:01,123
+Şimdi burada ilk çözüm.
+
+870
+01:41:01,943 --> 01:41:04,563
+Hatta direkt hocanızın çözümünü size şöyle göstereyim.
+
+871
+01:41:09,043 --> 01:41:38,323
+İlk çözüm, bizim de geçenlerde yaptığımız, partinin en fazla oyu alan olduğu gibi, her bir parti için bir iç içe döngü, yani birinci parti için kalan elemanlara bakıyoruz ve bu birinci partinin countuna bakıyoruz. Sonra ikinci partinin countuna, ikinci döngüde bakıyoruz. Eğer bu count daha fazlaysa, maksimum count daha fazlaysa, ne yapıyoruz? Maksimumu güncelliyoruz.
+
+872
+01:41:38,323 --> 01:41:54,843
+Ek bir dizi kullanmadan yaptık bakın burada. İşte bir maksimum count değişkenimiz var. İşte count değişkenimiz var. Dizinin elemanları burada girildi. Sonra dizinin elemanları girdikten sonra diyoruz ki sıfırıncı elemandan başla. Sıfırıncı elemanın frekansını sıfır kabul et.
+
+873
+01:41:54,843 --> 01:42:02,163
+Evet ve diğer kalan elemanlar hatta burada sıfırdan başlamış çünkü kendisini de dahil edecek.
+
+874
+01:42:02,884 --> 01:42:07,183
+Bu elemandan kaç tane daha var dizi içerisinde bunu hesapla bir döngü içerisinde.
+
+875
+01:42:08,103 --> 01:42:15,344
+Hesapladıktan sonra diyoruz ki bu elde ettiğim şu count değeri maksimum count'tan fazlaysa artık maksimum count'un bu count değeridir.
+
+876
+01:42:16,043 --> 01:42:21,103
+İndeksim de nedir? O elemanı gösterir. Frekansı ve elemanı bu şekilde sakladık.
+
+877
+01:42:21,103 --> 01:42:24,624
+Sonra ne yapıyoruz? Diğer elemanlar için bunu yapıyoruz.
+
+878
+01:42:24,624 --> 01:42:28,344
+Diğer elemanlar için bunu yaptıktan sonra şu iki döngü bitiyor.
+
+879
+01:42:28,484 --> 01:42:30,143
+Bu döngü bittikten sonra biz neyi buluyoruz?
+
+880
+01:42:30,204 --> 01:42:31,924
+Dizide en sık geçen elemana bakıyoruz.
+
+881
+01:42:32,963 --> 01:42:36,643
+Bir de n bölü 2'den büyük olup olmadığına bakıyoruz bu maksimum count'un.
+
+882
+01:42:36,704 --> 01:42:40,904
+Eğer büyükse diyoruz ki bu bir çoğunluk vardır, majority vardır.
+
+883
+01:42:41,863 --> 01:42:44,704
+Bu majority'nin değerini burada ekrana yazıyoruz arkadaşlar.
+
+884
+01:42:47,323 --> 01:42:48,603
+Bu basit bir soru.
+
+885
+01:42:48,603 --> 01:42:49,963
+Şimdi buna ikinci bir yaklaşım.
+
+886
+01:42:50,904 --> 01:42:52,904
+Onun kaynağını da vermişler sizinle paylaşacağım.
+
+887
+01:42:52,904 --> 01:42:54,984
+sunulmuş.
+
+888
+01:42:56,603 --> 01:43:00,363
+Bu tabii o n kare karmaşıklıkta olan bir şey.
+
+889
+01:43:00,584 --> 01:43:02,503
+Yani şu koda tekrar bakacak olursak.
+
+890
+01:43:05,804 --> 01:43:06,863
+Neden n kare?
+
+891
+01:43:07,724 --> 01:43:12,704
+Şurada sıfırdan n'e kadar, burada da sıfırdan n'e kadar şuradaki işlem n çarpı n defa yapılacak.
+
+892
+01:43:12,823 --> 01:43:13,603
+Birer birer artıyor.
+
+893
+01:43:14,304 --> 01:43:15,743
+Burada n karelik bir işlem var.
+
+894
+01:43:16,564 --> 01:43:17,803
+Gerisinde başka bir şey yok zaten.
+
+895
+01:43:17,924 --> 01:43:20,663
+Bunlar direkt n kare artı n'lik başka basit işlemler.
+
+896
+01:43:20,663 --> 01:43:45,363
+Yani n² defa bu döngü dönüyor. Burada buna ek olarak işte Morse Voiting algoritması demiş. Bir tane diyor ki aday olan bir majör eleman belirliyoruz. Bu adayın frekansını hesaplıyoruz. Bunun majör eleman olmama olasılığı için n bölü 2'den büyük olup olmadığını kontrol ediyoruz.
+
+897
+01:43:45,363 --> 01:43:56,443
+Yani geri kalan n bölü iki tane n bölü iki elemandan büyük mü değil mi bu aday? Anlatabildim mi?
+
+898
+01:43:56,823 --> 01:44:14,583
+100 tane elemanımız var işte bir tanesini majör olarak seçtik. Bu elemanın frekansı şeye bakacak 50'den 50'yi geçiyor mu? Büyük olup olmadı. Eğer bunu sağlıyorsa bu zaten hiç diğer elemanlara bakmadan
+
+899
+01:44:14,583 --> 01:44:33,443
+majority'dir diyebileceğiz. Ondan sonra soru 3'e geçiyor. Şimdi şöyle bir onun kodunu yazalım. Bu güzel bir algoritma. Morse Voiting. Bunun kaynakları da vereceğim size sonra. PDF'de hazırlamış hocalarınız.
+
+900
+01:44:45,332 --> 01:44:46,832
+şöyle bir şey yapalım.
+
+901
+01:44:50,676 --> 01:44:52,676
+Diyelim ki bir dizimiz olsun.
+
+902
+01:44:58,452 --> 01:45:01,952
+Ve bu maksimum sayıda elemana eşit olsun.
+
+903
+01:45:03,151 --> 01:45:09,952
+Tabii maksimum sayıda elemanı bunu limitlemek istersen hep söylediğim şey kullanıcıdan bir end sayısı size alalım.
+
+904
+01:45:10,651 --> 01:45:14,151
+Buna göre bu dizinin belli bir parçasını kullanalım istiyoruz.
+
+905
+01:45:15,651 --> 01:45:23,952
+Bunu yaptıktan sonra bir majority elemanın indeksi int, max index diyorum, max i.
+
+906
+01:45:23,952 --> 01:45:26,611
+Bu bilgiye ihtiyacım var.
+
+907
+01:45:27,591 --> 01:45:29,452
+Sonra aday olan bir tane şeyimiz var.
+
+908
+01:45:29,632 --> 01:45:30,751
+Bunların count'una bakacağız.
+
+909
+01:45:30,832 --> 01:45:32,712
+Bir de i döngü değişkenimiz yeterli.
+
+910
+01:45:34,411 --> 01:45:36,312
+Sonra kullanıcıdan bir i sayısı alalım.
+
+911
+01:45:36,532 --> 01:45:37,352
+Şey n sayısı alalım.
+
+912
+01:45:38,271 --> 01:45:39,172
+Enter the size.
+
+913
+01:45:41,672 --> 01:45:42,672
+Size, scanf.
+
+914
+01:45:44,672 --> 01:45:46,151
+Yüzde de koştuk.
+
+915
+01:45:51,347 --> 01:46:02,527
+Şimdi arkadaşlar, eni ben yanlış girersem, yani maksimum linkten büyük girmemem lazım. O zaman bunu tekrar tekrar yapmak için ne yapmam gerekir sizce?
+
+916
+01:46:07,699 --> 01:46:17,699
+Yes, do while. Yani diyeceğiz ki bir do işlemiyle n girmeyi bir dene. Aslında bu bir deneme işlemi. Şu an için yaptığımız n girmeyi dene.
+
+917
+01:46:17,699 --> 01:46:32,699
+Girdikten sonra buraya bir şart yazacağız. Şimdi bu yazacağımız şartı sizlerden bir soralım. Bakalım buraya şart olarak ne yazalım. Kerim Sadıkoğlu.
+
+918
+01:46:34,036 --> 01:46:36,036
+Yazmayın arkadaşlar.
+
+919
+01:46:36,036 --> 01:46:40,036
+Kerim Sadıkoğlu
+
+920
+01:46:47,091 --> 01:46:49,091
+Yasemin Atmaca
+
+921
+01:46:55,123 --> 01:47:22,123
+Evet. Mesela, Fukan yazmış zaten. n büyükken maksimumdan bu döngü dönecek. Yani büyük olduğu müddetçe tekrar tekrar değerler gireceğiz. Peki. Sonra elemanları gireceğiz arkadaşlar. Şuradaki eleman giriniz kısmını doğrudan buraya alalım.
+
+922
+01:47:22,123 --> 01:47:28,684
+Max'a göre değil tabii n'e göre elemanlar kullanıcıdan alınacak.
+
+923
+01:47:29,824 --> 01:47:35,623
+Sonra diyorum ki majority index'imiz başlangıçta 0 olsun.
+
+924
+01:47:37,004 --> 01:47:38,884
+Maximum i eşittir 0 olsun.
+
+925
+01:47:38,884 --> 01:47:44,643
+Ve bunun counter'ına ilk başta bir tane eleman var dedik.
+
+926
+01:47:45,543 --> 01:47:46,423
+Sonra bakıyoruz.
+
+927
+01:47:46,423 --> 01:47:48,563
+for.
+
+928
+01:47:49,883 --> 01:47:51,883
+Birinci elemandan başlayabiliriz.
+
+929
+01:47:51,964 --> 01:47:53,223
+Çünkü bir sıfırı kabul ettik.
+
+930
+01:47:53,283 --> 01:47:54,484
+Birinci elemandan başlayalım.
+
+931
+01:47:55,344 --> 01:47:56,423
+Sonuncu elemana kadar.
+
+932
+01:48:00,627 --> 01:48:10,627
+while'dan sonra yıldız olması zorunda. Bunu söylemiştim, tek istisna budur. Normal while ile karışmaması için do while'ı buraya yazmak zorundayız, yoksa hata alırız.
+
+933
+01:48:10,627 --> 01:48:13,627
+Yazmamak zorun olur, öyle söyleyeyim.
+
+934
+01:48:13,627 --> 01:48:17,627
+E, şey alırsınız, hata alırsınız.
+
+935
+01:48:17,627 --> 01:48:21,627
+i eşittir birden n'e kadar i++.
+
+936
+01:48:21,627 --> 01:48:28,627
+Zafer bu senin do while döngüsünü hiç kullanmadığını gösteriyor.
+
+937
+01:48:30,420 --> 01:48:46,019
+while'da da kullanılıyordan kastım, Selim, eğer while'da kullanırsan döngünün içerisinde çalıştırmazsın. Yani pekden bir şey yok. Eğer döngünün içerisinde bir şeyler yapmak istiyorsan kullanmayacaksın. Boş bir while döngüstür, onu anlatmıştım diye hatırlıyorum.
+
+938
+01:48:46,019 --> 01:48:51,799
+Şimdi birinci elemandan eninci elemana kadar bakacağız.
+
+939
+01:48:51,799 --> 01:49:11,579
+Şimdi diyoruz ki if eğer dizinin min indeksindeki eleman yani pardon maksimum indeksteki elemana ilk başta aday olarak kabul ettiğimiz yani bu eleman eşittir eşittir dizinin i inci elemanına.
+
+940
+01:49:11,579 --> 01:49:15,659
+Buna eşitse count'u bir arttırıyorum.
+
+941
+01:49:15,760 --> 01:49:16,920
+Bir dakika şöyle yapacağız.
+
+942
+01:49:21,395 --> 01:49:22,395
+counter bir arttırdım. Eşit değilse, counter'ı biraz azaltıyorum bu sefer. Çünkü bu elemandan daha az, bundan daha fazla olma olasılığı var diyoruz. Sonra yapacağımız şey, count acaba sıfıra geldiyse, eşittir şey, if-
+
+943
+01:49:51,395 --> 01:50:08,796
+Count eşittir eşittir sıfır olduysa bu şey elemanı, i inci elemanı, maksimum indeksteki elemanı i yap, bunun countunu 1 yap diyorum.
+
+944
+01:50:10,015 --> 01:50:18,436
+Çünkü bunu azaltınca, bir dakika şurada else var arkadaşlar, şunu azaltınca bunun sıfıra düşme olasılığı var.
+
+945
+01:50:18,435 --> 01:50:23,435
+Eğer sıfıra düştüyse iyi ince elemanı güncelledik.
+
+946
+01:50:26,415 --> 01:50:28,235
+Burada şartı bozan şey ne?
+
+947
+01:50:28,415 --> 01:50:31,075
+Dizinin iyi ince elemanının ne olması?
+
+948
+01:50:31,175 --> 01:50:33,015
+Max i'den farklı olması durumu.
+
+949
+01:50:33,815 --> 01:50:42,155
+Şimdi bunu yaptıktan sonra, bu dizi bütün elemanları dolaştıktan sonra artık bizim aday olan bir elemanımız oldu.
+
+950
+01:50:42,315 --> 01:50:44,915
+Bu aday olan elemanla bütün diziyi dolaşacağım.
+
+951
+01:50:44,915 --> 01:50:51,175
+Ve bu aday elemanın bütün dizide kaç tane olduğunu hesap edeceğiz.
+
+952
+01:50:51,955 --> 01:50:56,815
+Diyeceğiz ki for, i tabi burada şey var, candidate eşittir.
+
+953
+01:50:58,256 --> 01:50:58,935
+Onu yanmamız lazım.
+
+954
+01:50:59,755 --> 01:51:02,355
+Dizinin max i'deki elemanıdır.
+
+955
+01:51:05,475 --> 01:51:08,835
+Sonra bir tane count değişkenimi tekrardan sıfırlıyorum.
+
+956
+01:51:08,975 --> 01:51:11,375
+Candidate'den acaba burada dizide kaç tane var?
+
+957
+01:51:11,375 --> 01:51:22,555
+for, i eşittir, sıfır, i küçüktür, n, i plus plus, candidate'imiz var.
+
+958
+01:51:22,715 --> 01:51:24,175
+R'in i'inci elemanı.
+
+959
+01:51:24,235 --> 01:51:28,935
+Aslında şu an candidate dediğimiz şey dizinin en büyük elemanı, en fazla geçen eleman.
+
+960
+01:51:29,355 --> 01:51:33,395
+Ama bir de n bölü 2'den büyük olup olmadığını kontrol edeceğiz ya.
+
+961
+01:51:33,395 --> 01:51:34,575
+Bir de öyle şart var ya.
+
+962
+01:51:34,735 --> 01:51:38,135
+Onun için burada tekrardan candidate'in kaç tane olduğunu saymamız gerekiyor.
+
+963
+01:51:38,135 --> 01:51:39,455
+Array deyince elemanı.
+
+964
+01:51:45,076 --> 01:52:15,055
+Bunu da yapalım, bir ara verelim. Array'ın iyiyince elemanı eşittir eşittir count, şey, candidate ise count plus plus yapıyoruz. Bu bitiyor, bu bitiyor. Bittikten sonra if count büyüktür eşittir n bölü 2 ise printf yüzde de boşluk.
+
+965
+01:52:15,076 --> 01:52:15,955
+count yapıyoruz.
+
+966
+01:52:22,195 --> 01:52:40,595
+else printf no majority yani n bölü 2'den daha fazla olan bir eleman yoktur diyoruz. Şöyle diyelim, majority versiyon 2.
+
+967
+01:52:40,595 --> 01:52:47,315
+Aslında bize göre versiyon 3. İlk başta en kötü algoritmadan başladık.
+
+968
+01:52:47,315 --> 01:52:51,895
+ARR yok arkadaşlar dizi olacak.
+
+969
+01:53:02,996 --> 01:53:05,575
+Enter size, işte altı diyelim.
+
+970
+01:53:11,699 --> 01:53:26,859
+4 tane olduğunu söylüyor. Yani candidate'in şeyini de yazarsak, 3'ten 4 tane var diyecek. Hatta şuraya %d element, %d frequency,
+
+971
+01:53:32,467 --> 01:53:34,467
+%d.
+
+972
+01:53:34,467 --> 01:53:39,467
+Kendi yazarsak şöyle olur.
+
+973
+01:53:46,899 --> 01:53:47,899
+Altyazı M.
+
+974
+01:53:52,627 --> 01:54:21,267
+3'ün olduğundan 3 tane var falan dedi. Bakın yaptığımız şey ne arkadaşlar? 0. indisin, değerini 0'a atadık, 1 yaptık. Sonra dedik ki, bu dizinin 0.sıyla birbirini eşitme. Eşitse counter 1 arttırıyoruz. Hatta şöyle şey üzerinden yapabilirsek, daha belki açıklayıcı olur.
+
+975
+01:54:22,627 --> 01:54:23,347
+Biraz.
+
+976
+01:54:26,996 --> 01:54:28,996
+Şu kısmı alalım.
+
+977
+01:54:28,996 --> 01:54:30,755
+Öyle yapalım.
+
+978
+01:54:33,811 --> 01:54:53,191
+Oluyor, oluyor. Yani şey, n bölü 2, 6'yı 2'ye böldü, 3 eşittir dedik ya, buna göre oluyor, problem değil. Zaten şu majority n bölü 2'ye ekleme soru. Normalde frekansı en fazla geçeni istiyoruz biz.
+
+979
+01:54:59,252 --> 01:55:01,131
+Niye burayı aldık? Yanlış aldık.
+
+980
+01:55:05,332 --> 01:55:07,332
+Şuradalacağız.
+
+981
+01:55:13,043 --> 01:55:15,403
+Bazı şeyleri böyle analiz ederek
+
+982
+01:55:15,403 --> 01:55:17,683
+daha iyi anlarız arkadaşlar.
+
+983
+01:55:19,083 --> 01:55:19,623
+Şimdi diyoruz ki
+
+984
+01:55:19,623 --> 01:55:21,123
+maksimum indisimiz var.
+
+985
+01:55:22,763 --> 01:55:23,323
+Mesela
+
+986
+01:55:23,323 --> 01:55:24,464
+çiz diyelim.
+
+987
+01:55:26,424 --> 01:55:27,203
+6, 3,
+
+988
+01:55:27,424 --> 01:55:29,023
+3, 8, 2,
+
+989
+01:55:29,283 --> 01:55:31,724
+6, 3 diyelim.
+
+990
+01:55:31,863 --> 01:55:33,064
+3, 6, 7.
+
+991
+01:55:33,863 --> 01:55:35,543
+Hadi bir 3 daha olsun. 8 eleman.
+
+992
+01:55:36,304 --> 01:55:37,464
+Yani n dediğimiz şey 8.
+
+993
+01:55:38,563 --> 01:55:39,343
+Şimdi maksimum
+
+994
+01:55:39,343 --> 01:55:40,623
+i dediğimiz bir eleman var.
+
+995
+01:55:40,623 --> 01:55:41,563
+Max i.
+
+996
+01:55:41,563 --> 01:55:44,823
+başlangıçta 0. Bunun count'u
+
+997
+01:55:44,823 --> 01:55:46,003
+başlangıçta 1.
+
+998
+01:55:47,623 --> 01:55:48,243
+Sonra
+
+999
+01:55:48,243 --> 01:55:50,563
+neyse dizinin max ise dizinin
+
+1000
+01:55:50,563 --> 01:55:52,443
+i'si iyi tutabiliriz.
+
+1001
+01:55:52,503 --> 01:55:54,623
+Sıfırdan şey birden başlatacak şekilde.
+
+1002
+01:55:56,023 --> 01:55:56,363
+Zaten
+
+1003
+01:55:56,363 --> 01:55:58,703
+max i'ler ve count'lar
+
+1004
+01:55:58,703 --> 01:56:00,783
+değişecek. Şimdi arkadaşlar şurada
+
+1005
+01:56:00,783 --> 01:56:02,623
+başladık. Maksimum i'ye 0 dedik.
+
+1006
+01:56:03,003 --> 01:56:04,283
+Count'a 1 dedik.
+
+1007
+01:56:05,163 --> 01:56:06,323
+i'de birden başladık.
+
+1008
+01:56:06,423 --> 01:56:08,863
+Dizinin max i'si. Dizinin max i'si dediğimiz
+
+1009
+01:56:08,863 --> 01:56:09,224
+şey ne?
+
+1010
+01:56:09,224 --> 01:56:12,343
+dizinin sıfırıncı elemanı.
+
+1011
+01:56:12,483 --> 01:56:14,384
+Şu pivot dediğimiz eleman.
+
+1012
+01:56:15,043 --> 01:56:16,104
+Dizinin i'sinden
+
+1013
+01:56:16,104 --> 01:56:18,524
+eşit mi? Değil. Eşit olmadığı
+
+1014
+01:56:18,524 --> 01:56:20,503
+için count'u ne yaptı? Bir azalttı. Bunu sıfır
+
+1015
+01:56:20,503 --> 01:56:22,503
+yaptı. Şöyle diyelim sıfır
+
+1016
+01:56:22,503 --> 01:56:24,463
+yaptı. Count sıfıra
+
+1017
+01:56:24,463 --> 01:56:26,444
+eşit mi? Evet. Count sıfıra eşit olduğu
+
+1018
+01:56:26,444 --> 01:56:27,664
+için bakın artık bu
+
+1019
+01:56:27,664 --> 01:56:30,444
+eleman i'yi max i'yi yapıyor.
+
+1020
+01:56:30,564 --> 01:56:32,423
+Yani biri şunu alıyor.
+
+1021
+01:56:33,323 --> 01:56:34,704
+Aday olan eleman bunu yaptı.
+
+1022
+01:56:35,404 --> 01:56:36,404
+Sonra count'unu bunun
+
+1023
+01:56:36,404 --> 01:56:38,683
+bir yaptı. Şu başlangıçtaki duruma geri geldik.
+
+1024
+01:56:39,224 --> 01:56:42,204
+Sonra dedi ki dizinin max i'si.
+
+1025
+01:56:42,444 --> 01:56:43,243
+Dizinin birinci değil.
+
+1026
+01:56:43,304 --> 01:56:45,103
+Artık şu bizim piyot değil.
+
+1027
+01:56:46,043 --> 01:56:46,484
+Tamam mı?
+
+1028
+01:56:48,543 --> 01:56:49,624
+Dizinin max i'si.
+
+1029
+01:56:49,724 --> 01:56:51,024
+Dizinin i'sine eşit mi?
+
+1030
+01:56:51,183 --> 01:56:52,283
+İ'miz kaç oldu bu arada?
+
+1031
+01:56:52,444 --> 01:56:53,564
+Tabii i'mizde 2 oldu.
+
+1032
+01:56:53,963 --> 01:56:56,523
+Yani birden 2'ye geçtik döngü bitince.
+
+1033
+01:56:57,404 --> 01:56:58,103
+Bu buna eşit mi?
+
+1034
+01:56:58,224 --> 01:56:58,423
+Evet.
+
+1035
+01:56:58,624 --> 01:57:00,163
+Eşit olduğu için count'u ne yapıyor?
+
+1036
+01:57:00,264 --> 01:57:00,844
+1 artırıyor.
+
+1037
+01:57:01,444 --> 01:57:02,543
+Bunu 1 artırması ne demek?
+
+1038
+01:57:02,643 --> 01:57:03,804
+Bunu 2 yapacak demektir.
+
+1039
+01:57:04,503 --> 01:57:07,323
+Sonra eşit olduğu için else kısmını yapmayacak.
+
+1040
+01:57:07,323 --> 01:57:08,484
+Count sıfıra eşit mi?
+
+1041
+01:57:08,804 --> 01:57:09,043
+Değil.
+
+1042
+01:57:09,224 --> 01:57:10,724
+Gidecek i'yi 3 artıracak.
+
+1043
+01:57:11,183 --> 01:57:11,704
+3 yapacak.
+
+1044
+01:57:13,743 --> 01:57:15,283
+Sonra devam ediyoruz.
+
+1045
+01:57:16,363 --> 01:57:17,003
+Arkadaşlar.
+
+1046
+01:57:17,783 --> 01:57:19,484
+Dizinin max i'de kelimanı 3.
+
+1047
+01:57:20,503 --> 01:57:21,163
+Buna eşit mi?
+
+1048
+01:57:21,344 --> 01:57:23,103
+Hayır. Eşit olmadığı için
+
+1049
+01:57:23,103 --> 01:57:25,484
+count'u ne yaptı? 1 azalttı.
+
+1050
+01:57:26,864 --> 01:57:27,064
+Bu
+
+1051
+01:57:27,064 --> 01:57:29,284
+dizinin i'sine eşit olmadığı için
+
+1052
+01:57:29,284 --> 01:57:30,303
+count'u 1 yaptı.
+
+1053
+01:57:31,543 --> 01:57:32,743
+Count sıfıra eşit mi dedi?
+
+1054
+01:57:33,344 --> 01:57:35,624
+Değil. Count sıfıra eşit olmadığı için
+
+1055
+01:57:35,624 --> 01:57:37,463
+herhangi bir güncelleme yapmadı
+
+1056
+01:57:37,463 --> 01:57:37,743
+çıktı.
+
+1057
+01:57:37,743 --> 01:57:49,243
+yaptı şey iyi 4 yaptık şu an iyimiz şurada bu buna eşit mi değil değil dediğin kantu 0
+
+1058
+01:57:49,243 --> 01:57:57,904
+yaptı kantu 0 yaptıktan sonra Max iyi yani ikiyi bir dakika burada bir yerde atam yaptık acaba
+
+1059
+01:57:57,904 --> 01:58:01,844
+problem değil tamam
+
+1060
+01:58:01,844 --> 01:58:04,163
+max i'ye atacak
+
+1061
+01:58:04,163 --> 01:58:06,243
+yani 4'ü atacak arkadaşlar
+
+1062
+01:58:06,243 --> 01:58:08,223
+count'u da tekrardan 1 yapıyor
+
+1063
+01:58:08,223 --> 01:58:09,543
+bu buna eşit mi?
+
+1064
+01:58:10,103 --> 01:58:12,284
+değil count'u tekrar 0 yaptı
+
+1065
+01:58:13,204 --> 01:58:14,344
+2 ile 6'yı
+
+1066
+01:58:14,344 --> 01:58:15,144
+kontrol edecek
+
+1067
+01:58:15,144 --> 01:58:17,443
+0 yaptıktan sonra diyecek ki burada
+
+1068
+01:58:17,443 --> 01:58:19,484
+5 olmuştu bunu 5 yaptı
+
+1069
+01:58:19,484 --> 01:58:22,043
+şu gitti count'unu tekrar bunu yaptı
+
+1070
+01:58:22,043 --> 01:58:23,764
+bu buna eşit mi? değil
+
+1071
+01:58:23,764 --> 01:58:25,823
+değil dediği için bunun
+
+1072
+01:58:25,823 --> 01:58:28,204
+counter'ını tekrar işte bu 6
+
+1073
+01:58:28,204 --> 01:58:30,124
+olacak. Sonra bu buna eşit mi?
+
+1074
+01:58:30,503 --> 01:58:32,163
+Evet. Bu buna eşit
+
+1075
+01:58:32,163 --> 01:58:34,284
+olduğu için en son 6 max i de 6
+
+1076
+01:58:34,284 --> 01:58:35,984
+count da da 2 oldu.
+
+1077
+01:58:37,243 --> 01:58:38,383
+Count da 2 olduktan
+
+1078
+01:58:38,383 --> 01:58:39,943
+sonra döngüden çıktık.
+
+1079
+01:58:40,404 --> 01:58:42,363
+Döngüden çıktıktan sonra kodun kaldığımız
+
+1080
+01:58:42,363 --> 01:58:43,863
+yerine gidiyoruz. Yani aday olarak
+
+1081
+01:58:43,863 --> 01:58:46,484
+aslında şunu bulmuş oluyoruz.
+
+1082
+01:58:47,704 --> 01:58:48,344
+3'ü
+
+1083
+01:58:48,344 --> 01:58:49,243
+bulmuş oluyoruz arkadaşlar.
+
+1084
+01:58:49,823 --> 01:58:51,124
+Burada şöyle bir durum var.
+
+1085
+01:58:53,723 --> 01:58:54,404
+Şurada
+
+1086
+01:58:54,404 --> 01:58:57,803
+tabii 4 4 4 diye bir şey olsaydı
+
+1087
+01:58:57,803 --> 01:58:59,963
+öncesinde onu bir denemek lazımdı. Biraz üzerinde
+
+1088
+01:58:59,963 --> 01:59:01,223
+şey yapmak gerekiyor ama
+
+1089
+01:59:01,223 --> 01:59:03,864
+algoritma bu şekilde çalışıyor. En fazla
+
+1090
+01:59:03,864 --> 01:59:06,004
+şeyi buluyor. Bu bulduğumuz
+
+1091
+01:59:06,004 --> 01:59:06,443
+eleman
+
+1092
+01:59:06,443 --> 01:59:08,404
+bu bulduğumuz eleman
+
+1093
+01:59:09,203 --> 01:59:31,203
+Ne yapacak? Devam edecek. Aşağıda n bölüki ile kıyaslanacak. Tabi elemanın aday olarak biz neyi bulduk? A'nın altısındaki eleman, yani 3'ü bulduk. Sonra diyoruz ki kodun devamında sayıyoruz. Tekrardan bakın sayacağız. Bu saydığımızda ne olacak? Artık 6'dan, 3'ten kaç tane olduğunu bulacağız. İşte 3'ten 4 tane var.
+
+1094
+01:59:31,203 --> 01:59:39,244
+3'ten 4 tane olacağı için şuradaki işlem artık gerçek anlamda bulduğumuz adayın sayısını buluyoruz ve ekrana yazdırıyoruz.
+
+1095
+01:59:39,564 --> 01:59:41,343
+Şurada en böyle 2'ye çok takılmaya gerek yok.
+
+1096
+01:59:47,155 --> 01:59:58,155
+Adayda problem yok aslında arkadaşlar. Yani farklı case'ler için deneyebilirsiniz. Bulduğumuz adayın tekrar frekansı...
+
+1097
+01:59:59,155 --> 02:00:12,155
+Hocam şöyle olsa, 4 tane üst üste başlangıçta olsa ilk 4 sırada, sonraki şeyler hep farklı farklı olsa aday yanlış çıkmaz mı?
+
+1098
+02:00:12,155 --> 02:00:17,155
+Sonraki 7 tanesi falan farklı değerler olsa.
+
+1099
+02:00:19,155 --> 02:00:23,536
+4, 5, 6, 7, 8, 9, 10.
+
+1100
+02:00:25,135 --> 02:00:28,075
+Şimdi şöyle yapalım.
+
+1101
+02:00:38,931 --> 02:00:59,931
+Çok şey geliyor arkadaşlar, şimdi şuraya bir bakalım, ondan sonra tek tek şey yazdıklarına bakacağım. İ'imiz de başlangıçta bir. Şimdi dizinin max i'si, yani dizinin sıfırıncı elemanı, dizinin i'sine eşit mi? Evet. Count'u bir artırdık, iki oldu.
+
+1102
+02:00:59,931 --> 02:01:18,711
+Count to 1 artılık else girmedik. Count sıfıra değil dedik. Dizi 2 yaptık. 2 ile dizinin max isine bakıyoruz. Evet count'u 3 yaptık. Devam ettik. I3 oldu. Şunlara aynı şekilde girmedik.
+
+1103
+02:01:18,711 --> 02:01:24,211
+Sonra dizinin max iyisi 3 dediğimiz şey.
+
+1104
+02:01:26,151 --> 02:01:32,651
+Tabi bu problem üzerinde şey en sık elemanı şimdi burada aday üzerinden gideceğimiz için herhalde tamam demek istediğinizi öyle anladım.
+
+1105
+02:01:32,991 --> 02:01:35,091
+Tamam oraya doğru gideceğiz. Orada bir problem olabilir.
+
+1106
+02:01:35,851 --> 02:01:40,671
+Şimdi 3'den sonra bakacağımız şey dizinin max iyisiyle dizinin 3'üne bakacağız.
+
+1107
+02:01:40,792 --> 02:01:43,491
+Yani 4'e bakacağız. İyi dediğim şey 4. Eşit değil.
+
+1108
+02:01:43,491 --> 02:01:45,152
+Count to 2 yaptık.
+
+1109
+02:01:46,531 --> 02:01:49,071
+Bunu 4 yapınca buradayız.
+
+1110
+02:01:49,771 --> 02:01:50,371
+Eşit değil.
+
+1111
+02:01:50,652 --> 02:01:51,731
+Count to 1 yaptık.
+
+1112
+02:01:52,491 --> 02:01:54,671
+Bunu 5 yaptık.
+
+1113
+02:01:54,792 --> 02:01:56,271
+Count to 0 eşit olmadığı için.
+
+1114
+02:01:57,091 --> 02:01:57,451
+Ne oldu?
+
+1115
+02:01:57,612 --> 02:01:58,171
+Eşit değil.
+
+1116
+02:01:58,311 --> 02:01:58,551
+0.
+
+1117
+02:01:58,551 --> 02:02:02,891
+0 olunca max'in i'si eşittir i diyor.
+
+1118
+02:02:03,491 --> 02:02:05,792
+Max'in i'sinin i'ye eşit olması ne demek?
+
+1119
+02:02:06,431 --> 02:02:10,471
+Şuradaki 5 değerini buraya getirdik demektir.
+
+1120
+02:02:11,051 --> 02:02:12,671
+Count to da tekrardan 1 yaptık.
+
+1121
+02:02:13,491 --> 02:02:36,491
+Bu buna eşit mi? Tabii şu sonra 6 oldu. Şuraya bakıyoruz. Eşit mi? Değil. Eşit olmadığı için count'u biraz azalttık. 0 yaptık. 0 yaptıktan sonra max i'yi güncelliyoruz. Bu 6 oldu diyoruz. Ha şeyi unutuyor. Anladım demek istediniz. Tamam. Bunu unutuyor. Bu da zaten arkadaşlar şuna bakıyor.
+
+1122
+02:02:36,491 --> 02:02:39,751
+N bölü 2 kıstas ya.
+
+1123
+02:02:40,411 --> 02:02:42,691
+N bölü 2'den daha büyük bir şey olacak mı?
+
+1124
+02:02:42,751 --> 02:02:44,511
+İlerilerde yani böyle bir şey var mı?
+
+1125
+02:02:44,951 --> 02:02:45,751
+Bir adaya bakacak.
+
+1126
+02:02:46,551 --> 02:02:52,031
+Yani birbirini takip eden iki tane değer bir şekilde bulması lazım burada.
+
+1127
+02:02:53,312 --> 02:02:55,071
+Gelelim 6'ya baktık.
+
+1128
+02:02:55,751 --> 02:02:56,391
+Olmadı.
+
+1129
+02:02:56,531 --> 02:02:57,312
+7'ye bakacağız.
+
+1130
+02:02:58,592 --> 02:02:59,292
+Eşit mi değil?
+
+1131
+02:02:59,691 --> 02:03:01,051
+1 yaptı, 0 yaptı.
+
+1132
+02:03:02,131 --> 02:03:03,951
+7'den sonra 8'e bakacak.
+
+1133
+02:03:04,431 --> 02:03:05,131
+Eşit mi değil?
+
+1134
+02:03:06,491 --> 02:03:28,571
+10'a bakacak. Sonra 9'a bakacak. Eşit mi değil. En son burada ne kaldı? Max i'de 9 oldu. Count'ta da ne oldu? 1 oldu. Öyle değil mi? Biraz 0 oldu. Zaten bize Max i lazım. Dizinin 9. elemanını yani şunu aday olarak alıp ne yapıyor? Tekrardan bir dolaşıyor bir tane eleman görüyor.
+
+1135
+02:03:28,571 --> 02:03:31,452
+İşte burada şöyle bir problem var.
+
+1136
+02:03:33,092 --> 02:03:35,471
+Evet dizinin en fazla elemanını burada bulamıyoruz.
+
+1137
+02:03:37,071 --> 02:03:39,931
+Bu bir tane eleman, bu aday eleman.
+
+1138
+02:03:41,312 --> 02:03:42,611
+İşte bunu kaybetmemesi lazım.
+
+1139
+02:03:42,711 --> 02:03:43,431
+Niye kaybediyor ki?
+
+1140
+02:03:43,431 --> 02:03:43,812
+Bir dakika.
+
+1141
+02:03:44,831 --> 02:03:46,491
+Şurada izlerken bir hata mı yaptım acaba?
+
+1142
+02:03:49,191 --> 02:03:49,872
+Furkan?
+
+1143
+02:03:50,471 --> 02:03:52,752
+Hocam ben şimdi şey düşündüm de.
+
+1144
+02:03:53,271 --> 02:03:57,792
+Aslında burada hani şimdi bu sonuca göre no majority diyecek ya.
+
+1145
+02:03:58,571 --> 02:04:05,051
+Bu 3'ün mayort olması için dizinin yarısından fazla olması gerekiyor.
+
+1146
+02:04:05,172 --> 02:04:07,111
+Yani 10'sa 5 tane en az olması gerekiyor.
+
+1147
+02:04:07,732 --> 02:04:13,771
+Zaten en başta 5 tane 3 olursa o count sıfırlanmadan aday olarak 3 alacak sanırım.
+
+1148
+02:04:14,131 --> 02:04:15,812
+Aynen. Oraya ulaşmayacak.
+
+1149
+02:04:15,931 --> 02:04:17,831
+Yani şu count sıfıra ulaşmayacak hiçbir zaman.
+
+1150
+02:04:18,271 --> 02:04:20,092
+N bölü 2'ye göre bakarken makul.
+
+1151
+02:04:21,092 --> 02:04:23,532
+Ama mesela ben burada şuna bakmak istiyorum.
+
+1152
+02:04:24,012 --> 02:04:25,391
+Dizinin maksimum iyisi.
+
+1153
+02:04:25,391 --> 02:04:30,751
+Burada şunu yapabiliriz arkadaşlar. Makul olur mu bilmiyorum.
+
+1154
+02:04:33,171 --> 02:04:41,331
+Sıfırdan başlarız, yine sayarız. Eşitse say dedik, eşit değilse bunu yedekleriz. Tamam mı?
+
+1155
+02:04:41,331 --> 02:04:52,692
+Bunu yedekleme de yani maksimum i'nin yedeği, count'un yedeği deriz. Kaldığımız yerden yeni bir maksimum sayarız. Onu gelince isterseniz kodlayın ben size.
+
+1156
+02:04:52,692 --> 02:05:02,932
+Doğrudan en fazlayı bulmaya ilişkin bir örnek, onu yapalım. Bunun üzerinden onu dönüştürelim. Ondan sonra zaten ders bitir. Saat 15 geçe görüşürüz arkadaşlar.
+
+1157
+02:05:03,171 --> 02:05:21,311
+Yani M bölü 2 olduğu için şey direkt bulunuyor. Engin'in de dediği gibi oradan iş çıkıyor ama ben hani M bölü 2'ye gerek kalmadan olur mu diyecektim. Onu başka bir şekilde yapmak lazım. Gelince bir onun üzerinde kafa yoralım. Aklıma şu an bir şey geldi onu denersek herhalde olur diye düşünüyorum.
+
+1158
+02:14:01,939 --> 02:14:09,259
+Evet arkadaşlar, şimdi benim düşüncüm hayatım şöyle.
+
+1159
+02:14:11,604 --> 02:14:38,003
+Mesela elemanlarımız var. 4, 8, 3, 4, 6, 3, 4, 4, 2, 5, 0. Diyorum ki ilk elemanı majörite olarak kabul edeceğim. Bunun da işte m eşittir 0, count eşittir 1. Sonra her bir elemanı, bir de bunların yedeği olacak.
+
+1160
+02:14:38,003 --> 02:14:54,583
+Yedek M ve Yedek Count. Bunlar başlangıçta sıfır olabilir. Aklıma gelen bir çözüm bu. Bakalım olacak mı? Sonra diyorum ki buradan başla i eşittir buradan başla. Bu buna eşit mi? Eşitse counter 1 arttır.
+
+1161
+02:14:54,583 --> 02:15:06,703
+Eşit değilse ne yap? Bunu major olarak kabul et ve yedekle diyeceğim.
+
+1162
+02:15:07,223 --> 02:15:09,944
+Çünkü bunun şey olmaz ama bir dakika olmaz ya.
+
+1163
+02:15:11,324 --> 02:15:14,824
+En sık olan yok olmaz.
+
+1164
+02:15:16,203 --> 02:15:18,863
+Yani buna bakacak daha sonra buna bakacak.
+
+1165
+02:15:18,863 --> 02:15:20,663
+Aynı şeyi bunun için yapacak.
+
+1166
+02:15:20,663 --> 02:15:24,104
+Arkadaşlar bir saniye.
+
+1167
+02:15:24,223 --> 02:15:25,144
+Şöyle özür dilerim.
+
+1168
+02:15:25,223 --> 02:15:25,843
+Okuldan arıyorlar.
+
+1169
+02:17:24,020 --> 02:17:53,419
+Evet arkadaşlar, şimdi şöyle düşündüğümde sürekli majorda hani güncellenecek. Onun için yani bir diziye gerek duyuyoruz arkadaşlar. Dizi tek bir değişkenle çözülmüyor bu soru doğrudan. Ben başka bir şey düşünmüştüm. Peş peşe takip eden elemanlar için daha önce böyle bir algoritma, buna benzer bir algoritma geliştirmiştim. Yani o şuydu, dizide en uzun takip eden, en uzun değişmeyen elemanın bulunması.
+
+1170
+02:17:54,020 --> 02:18:11,960
+Longest common subseqüent diye bir algoritmadır bu. Ama burada zannediyorum olmaz. Çünkü ya diziye ihtiyaç var ya da işte dediğim gibi iç içe iki defa döngüyle kontrol etmek gerekiyor. Bir hesap yapmak gerekiyor. Buradan çıkış bulamak. Mesela önerisi olan var mı başka?
+
+1171
+02:18:11,959 --> 02:18:25,020
+Başka basit bir problem ama algoritmasını korumak, ifade etmek ve iyi algoritmasını yazmak bayağı şey yapıyor, emek istiyor.
+
+1172
+02:18:28,564 --> 02:18:30,564
+Var mı tavsiyesi olan?
+
+1173
+02:18:35,443 --> 02:18:40,443
+Yanlış düşünmüşsünüz. Şimdi gelelim.
+
+1174
+02:18:44,051 --> 02:18:46,051
+Bu yalnız şey...
+
+1175
+02:18:46,051 --> 02:18:51,051
+Hocam, sizin yazdığınız algoritmada aynı olmayan elemanları buluyorsunuz değil mi?
+
+1176
+02:18:51,051 --> 02:18:53,051
+Aynı olan.
+
+1177
+02:18:53,051 --> 02:18:58,051
+Yok, şey, az önceki sürekli majör yenilenecek ya.
+
+1178
+02:19:00,051 --> 02:19:13,051
+Aynı olmayanlar, yani sürekli, yani majör da, yedek majör da sürekli güncellenir. Ben mesela majörü 4 kabul ettim. Yani daha sonra 8'e bakacağım. Eşit olsaydı majörü 1 arttıracaktım.
+
+1179
+02:19:13,051 --> 02:19:15,551
+Eşit olmadığı için majörü güncellemem gerekiyor.
+
+1180
+02:19:15,691 --> 02:19:17,171
+Mevcut majörü de yediye atıyorum.
+
+1181
+02:19:17,511 --> 02:19:20,531
+Yani yedekte dört var, mevcut majörü de sekiz var.
+
+1182
+02:19:21,211 --> 02:19:22,232
+Counter'larda bir bir.
+
+1183
+02:19:22,971 --> 02:19:25,351
+Sonra üç gelince ne oldu?
+
+1184
+02:19:26,971 --> 02:19:31,072
+Üç majörü de olacak farklı olduğu için yedekte sekiz olacak.
+
+1185
+02:19:31,211 --> 02:19:33,912
+Sonra dört gelince dört majörü de olacak, yedekte üç olacak.
+
+1186
+02:19:33,912 --> 02:19:37,632
+Halbuki ben bu dördün şuradaki frekansını sildim, kaybettim.
+
+1187
+02:19:38,611 --> 02:19:40,011
+Onun için diziye ihtiyaç duyuyoruz.
+
+1188
+02:19:41,711 --> 02:19:42,151
+Tamam mı?
+
+1189
+02:19:45,940 --> 02:20:02,940
+Evet, şimdi, bu sorunun, bu algoritmanın çıkış noktası n bölü 2'den dolayı Morse-Voyting algoritm. Çünkü n bölü 2 olursa, biraz önce Engin'in de söylediği gibi, n bölü 2'den azalta azalta belli bir noktaya geliriz ve döngü tamamlanır zaten.
+
+1190
+02:20:02,940 --> 02:20:08,280
+Şimdi matrisin transpozunun bulunmasıyla alakalı bir algoritma.
+
+1191
+02:20:08,759 --> 02:20:13,700
+Bunu zaten sizinle sayısal analizde de görüyoruz.
+
+1192
+02:20:14,259 --> 02:20:16,120
+Bir matrisin transpozunu almak ne demek?
+
+1193
+02:20:16,120 --> 02:20:20,599
+Matrisin iyisinin j'si yerine j'sinin iyisini yazmak demektir.
+
+1194
+02:20:21,219 --> 02:20:22,579
+Bunu kodda nasıl yaparız?
+
+1195
+02:20:23,520 --> 02:20:24,899
+Yeni bir matris tanımlayacağız.
+
+1196
+02:20:25,160 --> 02:20:27,620
+Boyutları m'e n ise ne olacak?
+
+1197
+02:20:27,780 --> 02:20:29,139
+N'e m'lik bir matris olacak.
+
+1198
+02:20:29,140 --> 02:20:35,980
+ve matrisi okurken i'nin j'si yerine j'nin i'sini alıp yeni matrisi kopyalayacağız.
+
+1199
+02:20:36,620 --> 02:20:38,919
+Tabi burada kare matrisi olursa işimiz daha kolay.
+
+1200
+02:20:39,680 --> 02:20:44,739
+Kare olmayan bir matris olursa döngünün değişkenlerini ona göre ayarlamak gerekiyor.
+
+1201
+02:20:46,140 --> 02:20:47,419
+Size bir çalışma sorusu.
+
+1202
+02:20:48,800 --> 02:20:54,940
+Böyle bir matris verildiğinde matrisi 90 derece döndüren, şu tarafa döndüren bir kod yazması istiyorum.
+
+1203
+02:20:54,940 --> 02:21:00,039
+Yani bakarsınız bunu da bir yerlerde sorarız.
+
+1204
+02:21:00,920 --> 02:21:01,959
+Yani ne olacak?
+
+1205
+02:21:02,620 --> 02:21:04,240
+Bunu böyle 90 derece döndürünce.
+
+1206
+02:21:04,719 --> 02:21:05,940
+Transpozunu almış oluruz.
+
+1207
+02:21:06,079 --> 02:21:06,980
+Yok, transpoz değil.
+
+1208
+02:21:07,480 --> 02:21:09,560
+1, 2, 3 şuraya gelecek.
+
+1209
+02:21:09,959 --> 02:21:15,079
+3, 2, 1, 6, 5, 4, 9, 8, 7.
+
+1210
+02:21:15,940 --> 02:21:18,480
+Yani bir görüntünün 90 derece döndürülmesini düşünün.
+
+1211
+02:21:18,600 --> 02:21:19,259
+Aynen onun gibi.
+
+1212
+02:21:19,919 --> 02:21:22,880
+Buradaki pikseller, şuradaki piksel şuraya geliyor.
+
+1213
+02:21:22,880 --> 02:21:24,259
+Bu işte buraya geliyor.
+
+1214
+02:21:24,940 --> 02:21:32,139
+transpozu olsa transpozu direkt şu 1-2-3 ama burada 3-2-1 şeklinde.
+
+1215
+02:21:33,660 --> 02:21:39,020
+Veya bu tarafa 90 derece döndürebilirsiniz veya maddesi mirror yapabilirsiniz.
+
+1216
+02:21:39,020 --> 02:21:53,719
+1-2-3-4-5-6-7-8-9 yerine bunu 7-8-9-4-5-6-1-2-3 bu da 180 derece şöyle mirror yapmak demektir.
+
+1217
+02:21:53,719 --> 02:21:55,020
+Değil mi? 180 derece.
+
+1218
+02:21:57,800 --> 02:21:59,540
+Evet. Buna bir bakarsınız.
+
+1219
+02:22:00,339 --> 02:22:02,800
+Bundan daha şey, biraz daha güzel bir soru.
+
+1220
+02:22:04,079 --> 02:22:12,839
+Binary maddesin, yani 0 ve 1'ler oluşan maddesin, köşegene göre simetrik olması için ne kadar değişiklik yapmamız gerekiyor?
+
+1221
+02:22:12,839 --> 02:22:16,320
+Yani 0'dan 1'e veya 1'den 0'a değişiklik yapmamız isteniyor.
+
+1222
+02:22:17,740 --> 02:22:22,839
+Şimdi mesela burada bunun simetrik olması için bakacağımız şey şu biri.
+
+1223
+02:22:23,719 --> 02:22:51,339
+0 veya 0'ı 1 yapmak yeterli oluyor değil mi? Şuradaki örnekte baktığımızda şunlar aynı. Şuradaki 1 veya bu 1 ve bu 1 şuradakilerle değişiklik yapılması lazım. Ya bunları 1 yapacağız ya da bunları 0 yapacağız. Diğerleri yapmaya. Bir de şurada bir değişiklik yapmak gerekiyor. Bunda 3 defa bunda 1 defa. Şimdi bunun en basit yöntem olarak ne düşünürsünüz?
+
+1224
+02:22:54,899 --> 02:22:56,899
+Simetrik matrisin tanımından
+
+1225
+02:23:05,683 --> 02:23:11,683
+İki üçgeni ayıralım. Üstteki üçgende döngüyü döndürüp farklı olanı renk gelince bir arttıralım.
+
+1226
+02:23:11,683 --> 02:23:16,683
+Evet. Daha basit bir şey. Simetrik maddesinin tanımı neydi?
+
+1227
+02:23:16,683 --> 02:23:27,683
+İ, C ve C'ye bakarım eşit mi diye. Eşitse hiçbir şey yapmıyor. Eşit değilse flip'i arttırırım gibi bir şey.
+
+1228
+02:23:27,683 --> 02:23:31,683
+Ama daha basit bir şey istiyorum arkadaşlar. Daha basit düşünce.
+
+1229
+02:23:31,683 --> 02:23:38,983
+Siz maşallah direkt lep demeden leblebi hatta kuruyemiş dükkanını aldınız.
+
+1230
+02:23:40,663 --> 02:23:42,904
+Simetrik maddesinin tanımı ne arkadaşlar?
+
+1231
+02:23:46,548 --> 02:23:49,127
+Matrisin transpozunun eşit olması.
+
+1232
+02:23:50,747 --> 02:23:56,407
+Matris ile matrisin transpozu birbirine eşitse o zaman simetrik.
+
+1233
+02:23:56,727 --> 02:23:58,848
+O zaman matrisi alacağız.
+
+1234
+02:23:59,987 --> 02:24:01,747
+İkisini birbiriyle karşılaşacağız.
+
+1235
+02:24:01,847 --> 02:24:04,947
+Yani burada m çarpı n'lik bir matris var.
+
+1236
+02:24:06,107 --> 02:24:08,388
+Burada da n çarpı n'lik bir matris var.
+
+1237
+02:24:09,287 --> 02:24:11,527
+Bunların tek tek bütün satırlarına bakacağız.
+
+1238
+02:24:11,527 --> 02:24:13,728
+Bunlar birbirine eşitse tamam sorun yok.
+
+1239
+02:24:13,808 --> 02:24:15,767
+Eşit değilse counter'u bir arttıracağız.
+
+1240
+02:24:16,548 --> 02:24:19,307
+yani tek tek bütün şeyleri gezeceğiz.
+
+1241
+02:24:19,527 --> 02:24:20,807
+O zaman tek tek gezerken
+
+1242
+02:24:20,807 --> 02:24:23,027
+ne yapacağız? İki tane for döngüsü
+
+1243
+02:24:23,027 --> 02:24:23,948
+olacak değil mi arkadaşlar?
+
+1244
+02:24:24,847 --> 02:24:27,107
+Bu iki for döngüsü içinde bütün değerler gezecek.
+
+1245
+02:24:27,268 --> 02:24:29,048
+Yani bütün değerlerin
+
+1246
+02:24:29,048 --> 02:24:29,867
+gezilmesi ne demek?
+
+1247
+02:24:30,687 --> 02:24:32,948
+En kare defa bir işlem
+
+1248
+02:24:32,948 --> 02:24:33,768
+yapacağız demektir.
+
+1249
+02:24:34,867 --> 02:24:36,147
+Buradaki karmaşıklık bu şekilde.
+
+1250
+02:24:37,187 --> 02:24:39,048
+Hocam vayla yapsak daha iyi olmaz mı?
+
+1251
+02:24:39,167 --> 02:24:40,507
+Eşit değilse direkt çıksın.
+
+1252
+02:24:41,388 --> 02:24:43,107
+Hayır. En az kaç tane
+
+1253
+02:24:43,107 --> 02:24:45,048
+işlem yapmak gerekiyor? Saymamız gerekiyor.
+
+1254
+02:24:45,048 --> 02:24:51,128
+Yani bunu simetrik hale getirmek için kaç defa dönüşüm yapmamız gerektiğini bilmemiz gerekiyor.
+
+1255
+02:24:51,588 --> 02:24:54,067
+Simetrik hale getirmek istiyoruz.
+
+1256
+02:24:55,208 --> 02:24:58,927
+Simetrik mi değil mi bunun kontrolünü yapmak için while döngüsü daha güzel.
+
+1257
+02:24:59,147 --> 02:25:00,048
+Yani o zaman direkt çıkarız.
+
+1258
+02:25:00,708 --> 02:25:01,967
+İlk bozan durumda.
+
+1259
+02:25:03,327 --> 02:25:03,568
+Tamam.
+
+1260
+02:25:03,988 --> 02:25:04,667
+Bunu hallettik.
+
+1261
+02:25:04,827 --> 02:25:06,568
+Demek ki transposuna bakacağız.
+
+1262
+02:25:07,548 --> 02:25:14,268
+Transposuna baktıktan sonra yapacağımız şey transposunun kendisiyle eşit olmalı.
+
+1263
+02:25:14,268 --> 02:25:18,768
+Yani şuradaki kodu hemen size hızlıca göstereyim.
+
+1264
+02:25:20,048 --> 02:25:21,248
+İşte eleman sayısı giriliyor.
+
+1265
+02:25:21,367 --> 02:25:23,088
+Matrisin elemanları kullanıcıdan alınıyor.
+
+1266
+02:25:23,168 --> 02:25:24,367
+Matris ekrana yazdırıyor.
+
+1267
+02:25:24,448 --> 02:25:27,147
+Bakın yazılan kodlar hala fonksiyonsuz.
+
+1268
+02:25:27,228 --> 02:25:29,208
+Çünkü diğer grup fonksiyonları görmemiş.
+
+1269
+02:25:30,848 --> 02:25:33,088
+Doğrudan işte böyle tekmeğin içerisinde yazıyorlar.
+
+1270
+02:25:33,708 --> 02:25:34,967
+Sonra transpozunu alıyoruz.
+
+1271
+02:25:35,208 --> 02:25:36,908
+Transpozunu almak ne demek arkadaşlar?
+
+1272
+02:25:38,048 --> 02:25:42,327
+Yeni matrisin iyisinin j'sine eski matrisin j'sinin iyisini yazmak.
+
+1273
+02:25:43,048 --> 02:25:44,607
+Sonra bakıyoruz.
+
+1274
+02:25:44,747 --> 02:25:46,207
+İki maddesin arasındaki
+
+1275
+02:25:46,207 --> 02:25:48,527
+farklılıkları hesap ediyoruz. Kaç tane
+
+1276
+02:25:48,527 --> 02:25:50,567
+farklı değer var? Transpozmanın iyisinin
+
+1277
+02:25:50,567 --> 02:25:52,327
+jisi, a'nın iyisinin
+
+1278
+02:25:52,327 --> 02:25:54,107
+jisinden farklıysa flip art yap.
+
+1279
+02:25:54,908 --> 02:25:55,747
+Şimdi bu flipler
+
+1280
+02:25:55,747 --> 02:25:58,148
+simetrik olacağı için
+
+1281
+02:25:58,148 --> 02:26:00,467
+aynı şeyi yani ya yukarıdan ya
+
+1282
+02:26:00,467 --> 02:26:02,747
+aşağıdan değiştirmemiz gerekiyor. Bunu ikiye bölüyoruz.
+
+1283
+02:26:03,307 --> 02:26:04,408
+Bu kadar sayıda dönüşüme
+
+1284
+02:26:04,408 --> 02:26:05,507
+ihtiyaç vardır diyoruz.
+
+1285
+02:26:06,227 --> 02:26:08,107
+Bu basit yöntemde.
+
+1286
+02:26:09,747 --> 02:26:10,327
+Biraz daha
+
+1287
+02:26:10,327 --> 02:26:11,447
+hani bunu
+
+1288
+02:26:11,447 --> 02:26:15,627
+karmaşık hale getirelim dersek
+
+1289
+02:26:15,627 --> 02:26:17,548
+şu
+
+1290
+02:26:17,548 --> 02:26:19,467
+şeye göre baksak
+
+1291
+02:26:19,467 --> 02:26:23,347
+diagonal'e göre baksak
+
+1292
+02:26:23,347 --> 02:26:25,067
+diagonal'in üstündeki
+
+1293
+02:26:25,067 --> 02:26:27,207
+ve altındaki
+
+1294
+02:26:27,207 --> 02:26:29,287
+kısımlar
+
+1295
+02:26:29,287 --> 02:26:31,627
+yani komşuları
+
+1296
+02:26:31,627 --> 02:26:33,187
+arasında bir farklılık varsa
+
+1297
+02:26:33,187 --> 02:26:34,907
+diğerlerine bakmaya gerek kalmadan
+
+1298
+02:26:34,907 --> 02:26:37,607
+diagonal üzerinden bunu karşılaştırsak
+
+1299
+02:26:37,607 --> 02:26:39,487
+daha şey olur
+
+1300
+02:26:39,487 --> 02:26:41,268
+ve daha az yer tutarız arkadaşlar.
+
+1301
+02:26:41,447 --> 02:26:49,227
+Yine aslında en karelik bir şey gibi dolaşacak ama daha az yer tutmak yani transpozuna gerek kalmayacak.
+
+1302
+02:26:50,207 --> 02:26:53,048
+Trans şey üzerinden, diakonel üzerinden bir karşılaştırma yapacağız.
+
+1303
+02:26:53,908 --> 02:26:55,067
+Soru 7 bugün kalacak.
+
+1304
+02:26:55,787 --> 02:26:56,647
+Ne yaparız arkadaşlar?
+
+1305
+02:26:57,487 --> 02:27:00,247
+Maddisin yine i'sinin j'sinden başlarız.
+
+1306
+02:27:01,327 --> 02:27:09,607
+i'sinin j'sinden başlayıp hiç transpozunu almadan sadece şu satıra bakıyoruz.
+
+1307
+02:27:09,607 --> 02:27:12,348
+bu satırla beraber bundan sonra
+
+1308
+02:27:12,348 --> 02:27:14,128
+şuna bakacağız. Yani şöyle çizeyim.
+
+1309
+02:27:15,607 --> 02:27:16,307
+Birinci satırda
+
+1310
+02:27:16,307 --> 02:27:18,268
+buraya bakacağız, buraya bakacağız, buraya bakacağız,
+
+1311
+02:27:18,367 --> 02:27:20,167
+buraya bakacağız, buraya bakacağız ve bununla beraber
+
+1312
+02:27:20,167 --> 02:27:21,467
+bununla bunu kontrol edeceğiz.
+
+1313
+02:27:22,128 --> 02:27:23,408
+Şununla şunu kontrol edeceğiz.
+
+1314
+02:27:24,007 --> 02:27:26,387
+Şununla şuradakini kontrol edeceğiz.
+
+1315
+02:27:27,147 --> 02:27:28,227
+Ve farklılık varsa
+
+1316
+02:27:28,227 --> 02:27:30,067
+bununla da nereyi kontrol edeceğiz?
+
+1317
+02:27:30,147 --> 02:27:31,827
+Burayı kontrol edeceğiz. Ama
+
+1318
+02:27:31,827 --> 02:27:34,447
+birinci satırda kontrol edeceğimiz
+
+1319
+02:27:34,447 --> 02:27:36,367
+şey aralık şurası ve
+
+1320
+02:27:36,367 --> 02:27:38,467
+şurası. Diagonale göre bakıyoruz.
+
+1321
+02:27:38,467 --> 02:27:45,027
+Sonra ikinci satırda şuna zaten şurada bakmıştık ya şuradan başlıyoruz.
+
+1322
+02:27:46,899 --> 02:28:08,899
+Pardon, buradan, bir dakika, nereden başlayacağız? Aynı mantık. Buradan başlayacağız. Sonra buna bakacağız. Şuraya bakmaya gerek yok. Çünkü buna zaten biraz önce şuradan itibaren baktık. Sonra ikinci satırda buna bakacağız, buna bakacağız, buna bakacağız. Bu şekilde devam edeceğiz.
+
+1323
+02:28:08,899 --> 02:28:15,379
+Bütün şeyler satır sayısına göre J'ler satır sayısına göre işte şuna bakılacak.
+
+1324
+02:28:15,600 --> 02:28:19,800
+Hatta şunlara da gerek yok. J olduğu için bu direkt en son şuna bakıyoruz.
+
+1325
+02:28:20,580 --> 02:28:22,879
+Şuna bakıyoruz, buna bakıyoruz, buna bakıyoruz, buna bakıyoruz.
+
+1326
+02:28:23,839 --> 02:28:32,240
+Ve şuradaki alt üçgen, üst üçgenle veya üst üçgenden bakarsak alt üçgenle ne olmuş oluyor? Kontrol edilmiş oluyor.
+
+1327
+02:28:32,240 --> 02:28:41,160
+Şimdi bunun kodunu şöyle hızlıca yazacak olursak for i eşittir 0, i küçüktür en defa bir kere bu işi yapacağız.
+
+1328
+02:28:41,240 --> 02:28:43,339
+Yani bütün satırlar için bakacağız i artı artı.
+
+1329
+02:28:44,280 --> 02:28:47,519
+Sonra for j'yi 0'dan başlatıyorum.
+
+1330
+02:28:49,260 --> 02:28:52,459
+Her bir satır için bakacağız ama burada her bir satırın her bir hücresine bakmayacağız.
+
+1331
+02:28:52,459 --> 02:28:54,679
+j küçük i olana kadar diyoruz.
+
+1332
+02:28:55,859 --> 02:28:56,779
+j plus plus.
+
+1333
+02:28:57,639 --> 02:28:58,940
+Şimdi birincisinde ne olacak?
+
+1334
+02:28:58,940 --> 02:29:19,480
+Birincisi zaten doğrudan I0 olduğu için burada hiçbir şeye sağına soluna bakmıyoruz. O direkt ikinci döngüye girmeden çıkacak. Sonra ikincisinde yani I1 olduğunda ne yapacak? J0'dan buna bakacak. Şununla beraber şunu kontrol edecek işte.
+
+1335
+02:29:19,479 --> 02:29:22,839
+Bu kontrolü de nasıl yapacağız? Şöyle yapacağız.
+
+1336
+02:29:22,839 --> 02:29:32,239
+If A'nın i, j'si ile A'nın i, j'si A'nın j, i'sinden farklıysa
+
+1337
+02:29:35,667 --> 02:29:57,667
+flip plus plus gibi bir değişkenle ne yapıyoruz? Bunu sayıyoruz. Ve bakın burada tek bir sayma yapacağımız için aşağıya doğru veya yukarıya doğru, alt üstgen veya üst üstgen, bunu direkt printf, %d, flip diye yazabiliriz. Hiç bölü 2'ye de gerek yok. Biraz öncekinde bölü 2'ye gerek vardı. Hem yukarıdan hem aşağıdan.
+
+1338
+02:29:57,667 --> 02:30:02,688
+Üst köşeden elemanlarını, alt köşeden elemanlarını toplayıp farklarını alsak bulamaz.
+
+1339
+02:30:02,688 --> 02:30:05,327
+Şimdi fark toplam üzerinden olmaz Mehmet.
+
+1340
+02:30:06,048 --> 02:30:07,368
+Şöyle anladım.
+
+1341
+02:30:08,267 --> 02:30:10,848
+İ'si, i eşittir.
+
+1342
+02:30:11,708 --> 02:30:13,048
+Nasıl diyeceğiz? Şöyle diyeceğiz.
+
+1343
+02:30:14,428 --> 02:30:23,008
+i artı g'nin büyük olduğu noktalarda yani şuradaki elemanları toplarım diyorsun.
+
+1344
+02:30:23,008 --> 02:30:37,167
+Sonra i artı g'nin küçük olduğu elemanları yani şuradaki elemanları toplarım diyorsun. Olur. Bu toplam arasındaki farkın mutlak değerine bakarım diyorsun. Ona göre kaç tane olacak? O da olur. O da olabilir. Güzel.
+
+1345
+02:30:40,127 --> 02:30:43,407
+Yalnız orada aklıma şu takılıyor.
+
+1346
+02:30:49,203 --> 02:30:50,023
+Şimdi...
+
+1347
+02:30:53,396 --> 02:30:55,396
+Mesela bu 1, bu 0.
+
+1348
+02:30:59,667 --> 02:31:27,907
+Bu 0, bu 1. O zaman toplamda bir şey problem olabilir, Anıl. Öyle değil mi? Çünkü buranın toplamı gerçi 1 oldu, buranın da yok. Ama evet, bak buranın toplamı da 1, buranın toplamı da 1. Anıl, ne diyorsun? Yani ben burada yanlış bir şey mi yaptım yoksa doğru muyum?
+
+1349
+02:31:29,667 --> 02:31:35,487
+Yani o case'den dolayı biraz sıkıntı var bunda.
+
+1350
+02:31:37,987 --> 02:31:48,447
+Şuna bakarak arkadaşlar sadece alttan veya üstten simetrik şey, diagonale göre diagonalın altını veya üstünü kontrol edip ne yapıyoruz?
+
+1351
+02:31:48,627 --> 02:31:50,147
+Hiç transpozunu almaya gerek yok.
+
+1352
+02:31:50,227 --> 02:31:52,667
+Bakın burada da kod nasıl çalışacak?
+
+1353
+02:31:53,388 --> 02:31:57,667
+Biraz öncekinde transpozunu alırken n kare defa çalıştırdık.
+
+1354
+02:31:57,667 --> 02:32:04,947
+Hatta şurada bakın n'den n'e n kare ile çalışacak.
+
+1355
+02:32:05,407 --> 02:32:10,708
+Bir de n karenin yanında n kare kadar ek bellek ihtiyacımız var.
+
+1356
+02:32:10,708 --> 02:32:19,307
+Şurada baktığımızda sıfırdan n'e kadar sıfırdan i'ye kadar.
+
+1357
+02:32:20,227 --> 02:32:22,528
+j eşittir şey, i eşittir bu.
+
+1358
+02:32:23,147 --> 02:32:26,108
+Burada bir tane işlem var bir karşılaştırma yapalım desek.
+
+1359
+02:32:26,107 --> 02:32:29,987
+Burada i'ler dahil değil.
+
+1360
+02:32:30,067 --> 02:32:31,047
+Şurası i olur.
+
+1361
+02:32:32,007 --> 02:32:36,487
+Birden n'e kadar i'lerin toplamı da n çarpı n artı 1 bölü 2 oluyor.
+
+1362
+02:32:37,847 --> 02:32:40,887
+Yani yaklaşık olarak n kare bölü 2'lik.
+
+1363
+02:32:41,427 --> 02:32:42,467
+Ama şurada n kare.
+
+1364
+02:32:43,187 --> 02:32:48,307
+Hem işlem açısından bu yöntem, diagonal'a göre bakmak daha verimli oldu.
+
+1365
+02:32:48,307 --> 02:32:54,187
+Hem de bellek açısından birinci algoritma n karelik bir bellek kullanıyordu.
+
+1366
+02:32:54,187 --> 02:33:04,127
+Pardon. İki tane n karelik bir bellek kullanıldı. Burada sadece n karelik bir bellek memory olarak bakarsak burada n karelik bir memory var.
+
+1367
+02:33:06,267 --> 02:33:07,888
+Hocam bir şey sorabilir miyim?
+
+1368
+02:33:10,067 --> 02:33:10,407
+Buyurun.
+
+1369
+02:33:11,207 --> 02:33:15,787
+Sol köşedeki hücreyi de sağ alt köşedeki hücreyi atlasak olur muydu?
+
+1370
+02:33:15,787 --> 02:33:32,687
+Olur. Yani sıfıra sıfırdan başlamayıp yalnız i'yi birden başlatacağız. N-1'e kadar mı gideceğiz? Yok. Solot j'yi kaça götüreceğiz?
+
+1371
+02:33:34,287 --> 02:33:45,667
+İlkine gerek yok da sonuncusu için nasıl bir şey yaparız şu an bilemedim. Yani i'yi birden başlatabiliriz. Öyle görünüyor. Yani bu satırdan başlayabilir.
+
+1372
+02:33:45,787 --> 02:34:15,767
+Altyazı M.
+
+1373
+02:33:50,324 --> 02:34:13,324
+mi bir dakika? İ'sinin? Şimdi i'yi birden başlatırsak yalnız şunları kontrol edemeyiz. Yani bire i'yi birden başlatınca hiçbir zaman j'nin şurada j'ye i şu kontrolü şununla şunu kontrol edemeyiz yalnız Selim.
+
+1374
+02:34:13,324 --> 02:34:16,324
+Hangisi hocam anlamadım.
+
+1375
+02:34:16,324 --> 02:34:25,303
+İ'yi birden başlatırsak şu sıfırıncı şuradaki ile şuradakini kontrol edemeyiz veya buradaki ile bundakini kontrol edemeyiz.
+
+1376
+02:34:26,923 --> 02:34:29,004
+Çünkü İ'nin bir şekilde sıfır olması lazım.
+
+1377
+02:34:30,164 --> 02:34:30,904
+Teşekkür ederim.
+
+1378
+02:34:31,963 --> 02:34:40,143
+Hocam İ'yi sıfırdan başlatırız tamam ama J'yi İ artı birden başlatıp J küçüktür N'e kadar desek olur mu?
+
+1379
+02:34:40,143 --> 02:34:46,263
+O da şey olur İ artı bir yaparsak üst üçgenden bakmak gibi oluyor. Öyle değil mi?
+
+1380
+02:34:46,324 --> 02:34:48,864
+Köşe gene bakmamış.
+
+1381
+02:34:48,864 --> 02:34:53,743
+Yani şu an yani şimdi de zaten bakmıyor direkt şeye eşit olmayacak için.
+
+1382
+02:34:53,743 --> 02:34:55,544
+Şu an alt üçgene bakıyoruz.
+
+1383
+02:34:55,643 --> 02:34:57,544
+Alt üçgenle üst üçgeni karşılaşıyoruz.
+
+1384
+02:34:57,663 --> 02:35:01,544
+Eğer i artı birden başlasak ne olacak?
+
+1385
+02:35:02,143 --> 02:35:06,724
+Üst üçgen üzerinden kontrol yapıp üsttekilerle alttakileri yine şurada aynı şekilde kontrol yapacağız.
+
+1386
+02:35:06,803 --> 02:35:07,163
+O da olur.
+
+1387
+02:35:09,163 --> 02:35:09,984
+Tamamdır hocam.
+
+1388
+02:35:10,743 --> 02:35:10,984
+Evet.
+
+1389
+02:35:11,243 --> 02:35:12,103
+Var mı başka sorunuz?
+
+1390
+02:35:26,484 --> 02:35:38,484
+Evet, şimdi yedinci bir soru var. Bunun için de şu an çok fazla, zaten bu tek bir soru. Bunun kodunu, Cuma günü inşallah yazarız, onun üzerinden çalışırız. Bugünlük bu kadar yeter.
+
+1391
+02:35:40,484 --> 02:35:49,484
+Şimdi arkadaşlar, iyi algoritma ile dersimize başladık. İyi algoritmanın az çok bu adım sayılarının hesaplanması kısmı kaldı.
+
+1392
+02:35:49,484 --> 02:36:12,524
+Fonksiyonları da gördüğümüz için Cuma günü şu örneği yapacağız. İteratif olan algoritmaların nasıl analiz edileceğini. Yani bir iteratif bir fonksiyonumuz var. For döngüsüyle veya işte bazı döngülerle oluşturmuş bir fonksiyonumuz var. Bunu analiz edersek bu döngünün sonunda çalışma sonucu nasıl olur? Basit örnekler üzerinden buna bakacağız.
+
+1393
+02:36:12,523 --> 02:36:20,163
+Bir de random işlemleri hakkında konuşacağız. Cuma günü saat 10'da görüşmek üzere diyelim.
+
+1394
+02:36:21,723 --> 02:36:28,483
+Çarşamba günü sayısal analiz için şu an hala bir şey belli değil. Yarın akşam tekrar ben size bilgi vereceğim.
+
+1395
+02:36:30,163 --> 02:36:39,103
+Yani ders olmazsa da dediğim gibi cumartesi günü veya işte pazar günü bunun telafisini yapmamız gerekiyor.
+
+1396
+02:36:39,103 --> 02:36:44,623
+Peki ondan sonraki hafta şey olursa quiz olursa quiz'e kadarki konularımızı bitirmiş olalım.
+
+1397
+02:36:45,223 --> 02:36:48,363
+Benden sayısal analiz grubum, kendi grubum haber beklesin lütfen.
+
+1398
+02:36:49,743 --> 02:36:50,303
+Evet Zafer.
+
+1399
+02:36:52,563 --> 02:36:59,103
+Yaptığınız şeydeki çoğunluk salı demişti ama salı yapma imkanımız yok değil mi?
+
+1400
+02:36:59,803 --> 02:37:04,823
+Yarın için şöyle yapılabilir mi? Yapılır.
+
+1401
+02:37:04,823 --> 02:37:25,383
+Yani ben yapmak isterim ama çarşamba günde ders yapma ihtimalim var. Kesin bir şey belli değil. Gelecek salıya da bırakmak istemiyorum. Çünkü gelecek salı olursa hem Ramazan girdi onun bir yorgunluğu olacak hem de şey olacak arkadaşlar. Artık illaki Ramazan'ın içindeyiz.
+
+1402
+02:37:25,383 --> 02:37:31,003
+Quiz'in bir gün öncesinde de ders yapmak istemiyorum öyle demek isteyeyim.
+
+1403
+02:37:32,403 --> 02:37:37,103
+Yani konular yetişmiş koştur koştur quiz'e hazırlanmak sizin için zor olur.
+
+1404
+02:37:38,663 --> 02:37:43,263
+Onun için cumartesi veya pazar günü, cumartesi günü daha ağırlıktaydı.
+
+1405
+02:37:43,903 --> 02:37:45,903
+Oradaki ankette cumartesi yaparız.
+
+1406
+02:37:46,903 --> 02:37:48,704
+Eğer çarşamba yapamazsak.
+
+1407
+02:37:49,883 --> 02:37:52,363
+Evet herkese iyi akşamlar arkadaşlar. Görüşmek üzere.
+
+1408
+02:37:53,863 --> 02:37:55,043
+Hoşçakalın. Kendinize iyi bakın.

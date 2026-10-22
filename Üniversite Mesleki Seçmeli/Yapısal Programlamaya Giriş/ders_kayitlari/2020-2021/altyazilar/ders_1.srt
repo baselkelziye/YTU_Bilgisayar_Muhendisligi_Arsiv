@@ -1,0 +1,1927 @@
+1
+00:05:35,060 --> 00:05:53,060
+Evet, arkadaşlar, merhabalar, hepiniz hoş geldiniz. Sesim geliyor mu? Evet, geliyor hocam. Tamamdır, güzel, bir sorun yok. Öncelikle hepinize hayırlı uğurlu yeni bir dönem diliyorum. Sağlıklı, başarılı olur inşallah.
+
+2
+00:05:53,060 --> 00:05:59,639
+Bilgisayar bilimli, şey yapısal programlamaya giriş eski adını hatırladım bir anda.
+
+3
+00:06:00,859 --> 00:06:07,460
+Önceden bu dersimizin adı bilgisayar bilimlerine giriş 2 olarak geçiyordu.
+
+4
+00:06:08,979 --> 00:06:11,080
+Evet, benim ismim Ahmet Elbir.
+
+5
+00:06:11,859 --> 00:06:17,820
+Bilgisayar Mühendisliği Bölümü Bilgisayar Bilimleri Ana Bilim Dalı'nda doktor öğretim görevlisi olarak çalışıyorum.
+
+6
+00:06:18,400 --> 00:06:20,719
+Öğretim görevlisi doktor olarak çalışıyorum.
+
+7
+00:06:20,719 --> 00:06:27,140
+Yaklaşık 8 yıldır bu bölümde önceden araştırma görevlisiydim.
+
+8
+00:06:27,140 --> 00:06:32,640
+Geçen seneden bu zamana öğretim görevlisi doktor olarak devam ediyorum.
+
+9
+00:06:34,999 --> 00:06:39,460
+Bu ilk derste birazcık tanışalım, sizi tanıyayım.
+
+10
+00:06:40,479 --> 00:06:45,100
+Sizin bir beklentiniz, düşünceleriniz nedir onu alalım deyip bitireceğim.
+
+11
+00:06:45,100 --> 00:06:50,839
+Normalde hepinizin malumu bu ders şu saatler laboratuvar seansı.
+
+12
+00:06:51,939 --> 00:06:57,580
+Tabi teoride bir şeyler yapmadan laboratuvar yapmanın çok bir anlamı yok.
+
+13
+00:06:57,699 --> 00:07:00,839
+Ama en azından tanışma seansımızı bu saate çekelim.
+
+14
+00:07:01,839 --> 00:07:03,280
+Ben sizi tanıyayım, siz beni tanıyın.
+
+15
+00:07:04,100 --> 00:07:06,820
+Merak ettiğiniz şeyler olabilir, beklentileriniz olabilir.
+
+16
+00:07:07,839 --> 00:07:10,399
+Bu konuda bir hasbihal edelim istedim.
+
+17
+00:07:10,399 --> 00:07:20,199
+Şöyle bakarsak dersimizin öncesi ve sonrası hakkında bazı bilgiler vereceğim size.
+
+18
+00:07:20,619 --> 00:07:25,060
+Yaklaşık 20-25 dakika konuşacağım. Bazı hatırlatmalarda bulunacağım.
+
+19
+00:07:25,819 --> 00:07:32,259
+Sonra sizlerden sorularınız varsa, düşünceleriniz varsa bunları ifade etmenizi rica edeceğim.
+
+20
+00:07:33,139 --> 00:07:36,179
+Onun için öncelikle bir ekran paylaşımı yapayım size arkadaşlar.
+
+21
+00:07:36,179 --> 00:07:55,959
+Bir de şunu sorayım. Herkes bu gruptan değil mi? Diğer gruptan bir katılım olmaması lazım. Geçen dönemin ilk dersinde herkes bir gruba sistemdeki bir sıkıntıdan dolayı yönlendirilmişti. Zannediyorum bu sene öyle bir problem olmadı.
+
+22
+00:07:59,987 --> 00:08:02,987
+Herkes herhalde olması gerektiği yerde.
+
+23
+00:08:02,987 --> 00:08:04,747
+Pekala.
+
+24
+00:08:08,531 --> 00:08:30,531
+Tamamdır. Yani katılmayanlar olabilir. Normal mevcudumuz 85 civarıydı, öyle hatırlıyorum. Şimdi arkadaşlar, Bilgisayar Mühendisliği lisans programına Bolonya sayfasından tıkladığınızda derslerle alakalı bilgilere erişebiliyorsunuz. Bu 2018 yılında oluşturulmuş yeni bir programdı.
+
+25
+00:08:30,531 --> 00:08:40,151
+Tabi artık 2018 bile bence geride kaldı. Bunda da bir güncelleme yapmak gerekiyor ama şu an için bu müfredatı takip etmek durumundayız.
+
+26
+00:08:40,331 --> 00:09:00,292
+Burada geçen sene, geçen dönem gördüğünüz bilgisayar bilimlerine giriş BLM 10.11 dersinin devamı niteliğinde olan BLM 10.12 dersi yapısal programlamaya giriş adıyla verilen derste tıkladığınızda bu dersle alakalı bazı kaynaklar göreceksiniz.
+
+27
+00:09:00,531 --> 00:09:03,572
+Ve dersin içeriğine ulaşacağız.
+
+28
+00:09:03,892 --> 00:09:09,811
+Şimdi bu dersin içeriğiyle alakalı şeyleri Cuma sabahki dersimizde daha çok ifade etmek istiyorum.
+
+29
+00:09:10,531 --> 00:09:12,471
+Bu ders bizim için nerede?
+
+30
+00:09:12,712 --> 00:09:16,051
+Yani bizim kariyerimizde nereye oturması gerekiyor?
+
+31
+00:09:16,051 --> 00:09:17,651
+Neler açısından önemli?
+
+32
+00:09:18,631 --> 00:09:19,851
+Bunu bir süre konuşalım.
+
+33
+00:09:21,231 --> 00:09:26,351
+Geçen dönem yani birinci sınıf olarak gelen arkadaşların şöyle bir durumu vardı.
+
+34
+00:09:26,351 --> 00:09:38,231
+Belki lisede şu ana kadar en fazla bilgisayarla yaptığı şey oyun oynamak, belki Word'de, Excel'de program ödev hazırlamaktı, internete girmek gibi aktiviteler iş ediyordu.
+
+35
+00:09:38,371 --> 00:09:47,411
+Fakat geçen dönemle beraber bir bilgisayara bilgisayar mühendisi gözüyle bakacak bilgi ve beceriler elde edilmeye başladınız.
+
+36
+00:09:47,411 --> 00:09:50,392
+O yola istinaden bu bölümü tercih ettiniz.
+
+37
+00:09:50,392 --> 00:10:09,572
+Bu 10-11 derste bilgisayar nedir? Bilgisayar sisteminin temel bileşenleri nelerdir? Bilgisayar sistemi nasıl çalışıyor? Niçin bilgisayar kullanıyoruz? Gibi sorulara bazı cevaplar aradınız ve algoritmalara giriş gibi bazı konular gördünüz.
+
+38
+00:10:09,572 --> 00:10:17,511
+Zannediyorum 5. 6. haftadan sonra işte flow şartlar, algoritmalar ve C programlamaya girişle bir içerik karşınıza geldi.
+
+39
+00:10:17,511 --> 00:10:23,612
+Çoğunuz belki bu konuda daha önce hiç yapamadığınız yani hiç görmediğiniz şeyler gördünüz.
+
+40
+00:10:23,972 --> 00:10:24,691
+Öyle düşünüyorum.
+
+41
+00:10:25,051 --> 00:10:27,851
+Genellikle çünkü böyle tepkiler geliyor.
+
+42
+00:10:28,771 --> 00:10:32,171
+Ve bu bazınıza çok kolay geldi, bazınıza zor geldi.
+
+43
+00:10:33,631 --> 00:10:40,892
+Üniversite sınavı sisteminin verdiği alışkanlıkla bu dersi çalışmaya, bu ders üzerinde ders çalıştınız.
+
+44
+00:10:40,892 --> 00:10:45,511
+Ama bu çalışmanızın belki çok fazla işe yaramadığını gördünüz.
+
+45
+00:10:45,511 --> 00:10:50,631
+Çünkü üniversite sınavı mantığında test mantığı, çeşitli soru tiplerini görüyorsunuz.
+
+46
+00:10:51,231 --> 00:10:52,892
+Fakat burada hoca bir soru soruyor.
+
+47
+00:10:53,851 --> 00:11:00,691
+Yani hiç daha önce böyle bir soru çözmedik tarzında tepkiler veya düşünceler sizde meydana gelmiştir.
+
+48
+00:11:01,252 --> 00:11:02,752
+Bunlar gayet normal şeylerdir.
+
+49
+00:11:02,752 --> 00:11:08,071
+Çünkü bir mesleğin başındasınız, daha ilk adım atıyorsunuz.
+
+50
+00:11:08,071 --> 00:11:17,571
+Ve pandemi süreciyle birçoğunuz yine okul görmeden, hazırlığı da atlayıp geçenler olduğunu düşünerek bunu söylüyorum.
+
+51
+00:11:18,371 --> 00:11:23,471
+Bir üniversite hayatının içinde buldunuz. Değişik değişik dersler belki geldi.
+
+52
+00:11:23,471 --> 00:11:31,451
+Hiç lisede gördüğünüz şekilde hoca hızlı bir şekilde anlatıyor. Hiç böyle detaylı belki şeyler görmediğinizi düşünüyorsunuz. Bunlar normaldir ve haklıdır.
+
+53
+00:11:31,451 --> 00:11:47,031
+İşte bu ders yapısal programlamaya giriş dersi geçen dönemki elde ettiğiniz altyapı bilgisini alıp biraz daha ileriye algoritma geliştirmenin nasıl daha iyi bir noktaya geleceğine dair bir ders.
+
+54
+00:11:48,192 --> 00:11:58,711
+Programlamayla bunu destekliyoruz. Zaten yapısal programlamaya giriş adından da anlaşılabileceği gibi bir yine programlama burada ana tema.
+
+55
+00:11:58,711 --> 00:12:03,711
+Ama bununla beraber algoritma geliştirmede...
+
+56
+00:12:03,731 --> 00:12:14,131
+Nasıl daha çözüme odaklı, daha iyi şeyler öğrendiriz, daha iyi algoritmalar geliştirebiliriz. Bununla alakalı bilgi ve becerileri göreceğiz.
+
+57
+00:12:14,131 --> 00:12:28,931
+Peki bu ders bizi nereye aktaracak, nereye gönderecek diye soracak olursak, gelecek dönem yapısal programlama diye ve alt seviye programlama diye, belki ayrık matematiği de bunun içine alabiliriz.
+
+58
+00:12:28,931 --> 00:12:33,511
+Temel olarak gelecek dönemki 3 derse bizi yönlendiriyor.
+
+59
+00:12:34,631 --> 00:12:41,111
+Hatta bunun içine benim yine verdiğim bilgisayar mühendisleri için sinyaller ve sistemler dersini de katarsak,
+
+60
+00:12:42,471 --> 00:12:47,251
+ilginçtir ki gelecek dönem 3 tane dersin ikinci güzyalında 3 dersi de ben veriyorum.
+
+61
+00:12:48,231 --> 00:12:51,831
+Yapısal programlama, ayrı matematik ve sinyaller sistemler.
+
+62
+00:12:51,831 --> 00:12:53,711
+Bir de buna alt seviye programlamayı koyalım.
+
+63
+00:12:53,711 --> 00:12:59,371
+Buradaki bilgiler oradaki dersin bir şekilde altyapısını oluşturacak.
+
+64
+00:13:00,772 --> 00:13:10,092
+Benim kanaatime göre gelecek dönem yapısal programlama dersinin içeriği de bu dönem verilebilir de biraz daha müfredat sade gitsin.
+
+65
+00:13:10,092 --> 00:13:13,471
+Hani öğrene öğrene giderim diye bu şekilde düzenlenmiş.
+
+66
+00:13:14,172 --> 00:13:17,412
+Dolayısıyla bunun öncesinde bilgisayar bilimlerine girişten aldık.
+
+67
+00:13:18,231 --> 00:13:22,312
+Sizi üçüncü döneme ikinci yılın yüz yarı yılına naklediyoruz.
+
+68
+00:13:22,312 --> 00:13:24,532
+Ve bununla kalmıyor.
+
+69
+00:13:25,532 --> 00:13:41,032
+İkinci yılın bahar yarı yılında nesne yönelimi programlama, ondan sonra sistem analizi, tasarımı, veri yapıları, algoritmalar dersinde doğrudan üzerine bir şeyler koyacağınız, doğrudan kullanacağınız bir dersin temelleri de yine bu derste atılıyor.
+
+70
+00:13:41,172 --> 00:13:43,212
+Bir bilgi temel şeyler de burada atılıyor.
+
+71
+00:13:44,371 --> 00:13:45,212
+Bununla da kalmıyor.
+
+72
+00:13:46,092 --> 00:13:48,431
+Biraz daha detaylandıralım.
+
+73
+00:13:48,431 --> 00:14:02,111
+Algoritma analizi gibi, işletim sistemleri gibi, veri tabanı yönetimi gibi, hatta mikro işlemcileri de, 3. sınıftaki dersleri de tamamını dikkate alırsak, onların da burada temeli atılıyor. Özellikle algoritma analizi.
+
+74
+00:14:02,291 --> 00:14:14,851
+Çünkü ben burada anlattığım C dersinin temelleri, C dersiyle alakalı konular size algoritma analizinde de lazım olacak, veri yapılarında da lazım olacak, işletim sistemlerinde zaten lazım oluyor.
+
+75
+00:14:14,851 --> 00:14:19,491
+hepsinin şeyi bu dönemlerde atılıyor. Birinci sınıfın derslerinde atılıyor.
+
+76
+00:14:20,991 --> 00:14:24,551
+Onun için belki birkaç farklı derse bölünmüş olması sizin için bir avantaj.
+
+77
+00:14:24,611 --> 00:14:31,452
+Bir derste anlamadığınızı veya bir hocadan anlamadığınızı işte bir başkasından daha iyi anlama imkanınız olabiliyor.
+
+78
+00:14:32,651 --> 00:14:35,172
+Bir de irregular durumda olan öğrenciler oluyor bazen.
+
+79
+00:14:35,172 --> 00:14:38,391
+Çünkü bu dersin bildiğim kadarıyla ön koşulu yok.
+
+80
+00:14:38,392 --> 00:14:53,332
+Yani geçen dönem bilgisayar bilimlerinde giriş dersi almamış veya başka bir bölümden yatay geçişle, dikey geçişle bu bölüme gelmiş o ders sayılmış da oradan yapısal programlama girişle, C programlamaya girişle tanışacak öğrenciler için önemli bir ders.
+
+81
+00:14:53,331 --> 00:14:59,691
+Fatih Hocam'la beraber bu dersi ilk sene, ilk defa ben resmi olarak vereceğim.
+
+82
+00:15:00,851 --> 00:15:06,611
+2013 yılından bu yana bu dersi ben laboratuvar uygulamalarında yardımcı oluyorum.
+
+83
+00:15:06,751 --> 00:15:12,571
+Dersin Fatih Hocam'la, Amaç Hocam'la, Cihan Hocayla, İrem Hanım'la falan onlara yardımcı oldum.
+
+84
+00:15:12,571 --> 00:15:18,871
+Artık bu seneden itibaren ilk defa bu dersi resmi olarak hoca olarak veriyoruz teorik tarafıyla.
+
+85
+00:15:18,871 --> 00:15:27,172
+Onun için önemli 3 artı 2'lik bir ders laboratuvar kısmında olduğunu söyleyelim.
+
+86
+00:15:29,211 --> 00:15:38,491
+Geçen dönemden eğer bilgisayar bilimlerine girişte çok fazla bir eksiğiniz yoksa bu dersi halledebilmek, geçebilmek çok çok kolay olacak bu konuda.
+
+87
+00:15:39,312 --> 00:15:41,172
+Hani çok istisna olacağını zannetmiyorum.
+
+88
+00:15:41,351 --> 00:15:42,832
+Yani hocam geçen dönem çok iyiydi.
+
+89
+00:15:42,991 --> 00:15:43,731
+AA ile geçtim.
+
+90
+00:15:43,812 --> 00:15:46,871
+Bu dönem işte FF ile kaldım diyeni pek görmedim.
+
+91
+00:15:46,871 --> 00:15:53,191
+Eksiği olanların da bu dönem ve bu eksikleri çok rahat bir şekilde kapatacağını düşünüyorum.
+
+92
+00:15:53,952 --> 00:15:56,812
+Dediğim gibi bu ders birazcık dolgu gibi düşünelim.
+
+93
+00:15:57,651 --> 00:16:02,612
+İlk dönemle 3. ve 4. dönemler arasında bir bağlantı kuruyor.
+
+94
+00:16:03,923 --> 00:16:21,923
+Bir de farklı bir bakış açısı size sağlayacak. Bu bakış açısı şudur, ilk dönem dersinize giren hocalardan farklı bir hoca kadrosu ile karşı karşıyasınız. Onların soru stilleri, derste bakış açıları farklıdır. Bizimkiler farklı olabilir.
+
+95
+00:16:21,923 --> 00:16:33,063
+Her ne kadar biz yıllardır beraber çalışsak da her yiğidin yoğurtu işi farklı dediğimiz için burada biraz daha farklı bir üslupla karşı karşıya kalacaksınız.
+
+96
+00:16:33,483 --> 00:16:34,543
+Bu da bir zenginliktir.
+
+97
+00:16:35,723 --> 00:16:36,903
+Ben bununla kalmayın derim.
+
+98
+00:16:37,004 --> 00:16:44,563
+İşte Corsera gibi EDX gibi farklı platformlarda bu konuların anlatıldığı online dersler var.
+
+99
+00:16:44,703 --> 00:16:46,543
+Onları da takip etmenizi tavsiye ederim.
+
+100
+00:16:46,703 --> 00:16:48,983
+Zaman zaman bu tür paylaşımlarda da bulunacağım size.
+
+101
+00:16:49,764 --> 00:16:50,604
+Bu neyi sağlar?
+
+102
+00:16:50,604 --> 00:17:04,703
+Bu size çeşitlilik yani kim ne yapıyor belli bir kaynağa bağlı kalmadan daha kapsamlı bir hem bilgi hem de tecrübe kazanmanızı sağlıyor.
+
+103
+00:17:05,604 --> 00:17:08,104
+O açıdan bunun da önemli olduğunu düşünüyorum.
+
+104
+00:17:09,923 --> 00:17:13,623
+Şimdi ben dersin içeriğiyle alakalı dediğim gibi cuma günü konuşacağım arkadaşlar.
+
+105
+00:17:13,623 --> 00:17:19,584
+Birazcık benimle ve sizlerle nasıl iletişim kuracağız?
+
+106
+00:17:19,583 --> 00:17:30,503
+Bunlarla alakalı şey konuşalım. Ha bir de bu arada bazı arkadaşlarla ki aranızda vardır haftada 3 gün görüşeceğiz.
+
+107
+00:17:31,303 --> 00:17:37,283
+Çarşamba günü sayısal analiz dersinde de ben varım. Muhtemelen aranızda vardır bu arkadaşlar.
+
+108
+00:17:38,663 --> 00:17:44,183
+Dolayısıyla birazcık benimle bu dönem fazla karşılaşacaksınız. Özellikle birinci sınıf arkadaşlar için söylüyorum bunu.
+
+109
+00:17:44,183 --> 00:17:58,043
+Onun için bir iletişim eksikliği olmasın. Genel bazı kurallar söyleyeyim. Kural değil de hatırlatma bağında bazı şeyler söylemek istiyorum.
+
+110
+00:17:58,043 --> 00:18:20,784
+Şimdi dersin konusunu içeren sizin merak ettiğiniz kendi kariyerinizde okul ile benim dersimle alakalı veya herhangi bir dersle alakalı merak ettiğiniz şeyleri doğrudan birinci şahıslardan öğrenmek sizin için en doğrusu.
+
+111
+00:18:21,443 --> 00:18:27,343
+Hep söylediğim bir şeydir kendi derslerinde. İkinci el bilgiye hiçbir zaman güvenmemek gerekiyor. Bu akademide de böyle.
+
+112
+00:18:28,043 --> 00:18:36,103
+Birinin bir makalesini birisi okumuştur, özetlemiştir. Siz o özeti okuyarak o makale hakkında çok sağlıklı bilgiye ulaşamayabilirsiniz.
+
+113
+00:18:36,983 --> 00:18:45,083
+Veya bir kitap özeti. Ancak o kitabı özetleyen kişinin anladığı kadarını hatta daha azını edinebiliyorsunuz.
+
+114
+00:18:46,403 --> 00:18:53,563
+Bu bir bilgiye erişimde yani gündelik herhangi bir problemi çözeceğimiz bir bilgiye erişimde belki çok problem değil ama
+
+115
+00:18:53,563 --> 00:19:03,763
+Ama sizinle alakalı önemli mevzularda ikinci dereceden kaynak ve daha yüksek dereceden kaynaklar sıkıntı teşkil ediyor.
+
+116
+00:19:04,504 --> 00:19:07,743
+Örneğin ödev ne zaman teslim edilecek veya ödev formatı ne?
+
+117
+00:19:08,664 --> 00:19:20,843
+Arkadaşımdan duydum, işte ne bileyim diğer grubun hocası işte kendi grubunda derste şöyle söyledi veya söylemiş gibi şeyler spesifik şartlar altında söylenmiş olabilir.
+
+118
+00:19:20,843 --> 00:19:43,923
+Doğru da olabilir ama buna hiçbir zaman hayatınızın hiçbir yerinde ikinci el bilgiye doğrudan güvenmeyin arkadaşlar. Hepiniz üniversite mezunu olacaksınız ve inşallah daha üst düzeylerde eğitimler alacaksınız. Dolayısıyla bu tarz durumlarda birinci el bilgi kaynağı bence sizin vazgeçilmeniz olması lazım.
+
+119
+00:19:43,923 --> 00:20:01,183
+Bunu söylerken İsmail Cem şimdi bir şey yazdı. Ben de tam lafı oraya getireceğim. Burada hem bir tecrübemden bahsedeceğim hem de tavsiyemden bahsedeceğim. Benim iletişim bilgilerim şu an ekranı görüyorsunuz. Avesis A1 yazarsanız.
+
+120
+00:20:03,092 --> 00:20:30,691
+Avesis Ahmet Elber yazarsanız, burada bazı bilgilerimiz var. Bazen dokümanlarımı işte burada paylaşıyorum. İşte okuldaki dahili telefon numaram okulda bulunduğum zaman ulaşılabilecek bir numaramdır. Şurada duyurular dokümanlar. Buraya e-mail adresimi yazmadım. Aslında yazılabiliyor. Neden yazmadım? Çünkü web sayfalarını webmining yaparak crawl ediyorlar.
+
+121
+00:20:30,691 --> 00:20:49,071
+Buradan bizim e-mail adreslerini çekip bir sürü spam mail geliyor. Bu olmasın diye ben size zaten herkesin bildiği bir şey al1.yıldız.tr yazınca hatta al1.yıldız.tr uzantılı baya bir benim hesabım vardır.
+
+122
+00:20:49,071 --> 00:20:53,432
+İşte Gmail'im de aynı, hat mail'im de aynı, MSN'im de aynı.
+
+123
+00:20:54,612 --> 00:21:00,351
+Yaklaşık o zamanlar Gmail'i aldığımda randevuyla, hani bu şey davetiyeyle iş yapıyordu Gmail.
+
+124
+00:21:01,171 --> 00:21:05,231
+Onun için birkaç farklı kanaldaki ID'lerim aynıdır.
+
+125
+00:21:05,992 --> 00:21:08,211
+Bu e-mail adresinden ulaşabilirsiniz.
+
+126
+00:21:08,211 --> 00:21:12,452
+Şimdi iletişimde dedim ya birden fazla dersinize giriyorum.
+
+127
+00:21:13,452 --> 00:21:15,312
+Şöyle bir şey iyi olur.
+
+128
+00:21:15,312 --> 00:21:22,831
+adınızın, soyadınızın mümkünse mail adresinde bulunması, nickname gibi bir şeyler olmasını pek tercih etmiyorum.
+
+129
+00:21:22,831 --> 00:21:28,092
+Çünkü hitap ettiğim, muhatap olduğum kişinin kim olduğunu bilmek isterim.
+
+130
+00:21:28,371 --> 00:21:31,452
+Ve isminizle hitap etmek isterim.
+
+131
+00:21:32,231 --> 00:21:34,672
+Saygı, sevgi çerçevesinde olması nedeniyle.
+
+132
+00:21:36,151 --> 00:21:42,252
+Hangi dersten olduğunuzu, isminizin numaranızı yazıp sorunuzu altında istediğiniz gibi sorabilirsiniz.
+
+133
+00:21:42,251 --> 00:21:48,491
+Genellikle benim geri dönüşlerim ortalama olarak kısadır. Hızlı bir şekilde geri dönerim.
+
+134
+00:21:49,291 --> 00:21:54,431
+Ve burada bazı iletişimi kolaylaştırmak için başka şeyler de paylaşacağım. Birazdan ona geliyorum.
+
+135
+00:21:55,431 --> 00:22:04,111
+Böyle bir iletişim eksikliği olmaması adına birinci elden bana ulaşmanız için bu kanalları kullanabilirsiniz arkadaşlar.
+
+136
+00:22:05,111 --> 00:22:09,971
+Dediğim gibi bilginin kaynağı önemli. Oradan duydum, buradan duydum.
+
+137
+00:22:09,971 --> 00:22:23,691
+Yani benden özellikle dersimizle alakalı benden bir şey duymadan hani benim söylediğim bir şey olmadan hareket etmemenizi işte ödevlerle alakalı olabilir, sınavla alakalı olabilir veya başka bir şeyle alakalı olabilir.
+
+138
+00:22:24,351 --> 00:22:31,511
+Çünkü herkesin kafasında farklı sorular bulabiliyor. Normaldir. Yani ilk defa üniversite hayatını yaşıyorsunuz.
+
+139
+00:22:31,511 --> 00:22:39,092
+İşte uzaktan eğitimin verdiği ayrı bir dezavantajlar. Bunları bir araya getirince iletişim çok çok daha önemli hale geliyor.
+
+140
+00:22:39,971 --> 00:22:41,631
+Eksik bir şey olmasın istiyor.
+
+141
+00:22:44,971 --> 00:22:50,211
+Bununla alakalı bir tecrübemden bahsedeceğim ve konuşmamı beş dakika sonra falan bitireceğim.
+
+142
+00:22:50,511 --> 00:22:51,251
+Böyle planladım.
+
+143
+00:22:52,291 --> 00:22:59,291
+Geçen dönem kontrol mühendisinde belki viral olarak aranızda, öğrenciler arasında da yayılmıştır bu haberler.
+
+144
+00:23:00,191 --> 00:23:01,031
+Bir sınav yaptık.
+
+145
+00:23:01,111 --> 00:23:02,191
+Orada bir ders veriyordum.
+
+146
+00:23:02,291 --> 00:23:03,671
+İki yüz elli beş kişilik bir ders.
+
+147
+00:23:05,411 --> 00:23:06,931
+WhatsApp grubu varmış.
+
+148
+00:23:06,931 --> 00:23:20,331
+Bu Whatsapp grubunu kimler yönetiyor bilmiyoruz. O zamanlar tabii isimler var da şu an aklımda falan değil. Bilgi paylaşımı amaçlı arkadaşlar iyi niyetle açıyorlar ve yaklaşık 200 kişilik bir Whatsapp grubu.
+
+149
+00:23:22,172 --> 00:23:30,172
+Sonra sınav gününde 5-6 kişinin veya 10 kişinin sınava bir sabotajı oluyor diyelim.
+
+150
+00:23:30,172 --> 00:23:36,532
+WhatsApp grubunda sınav sorularının cevapları, test sınavı yapmıştık o zamanlar.
+
+151
+00:23:36,612 --> 00:23:39,612
+Onun cevaplarına ilişkin ekran paylaşımları oluyor falan.
+
+152
+00:23:41,351 --> 00:23:44,952
+Ben işte neyse test olduğu için 15-20 dakikada sonuçları açıkladım.
+
+153
+00:23:44,952 --> 00:23:47,472
+İşte USİS sistemine gireceğim çünkü zaman kayboluyordu.
+
+154
+00:23:47,571 --> 00:23:48,431
+Hemen de girmem lazım.
+
+155
+00:23:49,452 --> 00:23:50,431
+O anda bir mail geldi.
+
+156
+00:23:50,491 --> 00:23:55,132
+Hocam işte şu zaman aralığında WhatsApp grubu yazışmaları budur.
+
+157
+00:23:55,231 --> 00:23:57,812
+İşte falanca kişi soru istiyor, öbürü cevabı yazıyor.
+
+158
+00:23:58,579 --> 00:24:14,339
+Tamamen bir skandal. Neden skandal? Çünkü hukuksuz bir iş yapılıyor. Savcılığı da işin içine alması gerektiren, en azından disiplin kurulunu devreye almamız gerektiren bir durum. Gereğinin yapılmasın diye çocuk da söylemiş arkadaş.
+
+159
+00:24:15,699 --> 00:24:26,260
+Neyse, işlem yaptık. Kim suçludur, kim değildir. Şimdi 200 kişinin bir şekilde ayıklanması lazım. Orada paylaşım yapanların numaralarından isimlerin numaraları falan belli oldu da.
+
+160
+00:24:26,260 --> 00:24:28,960
+Yani gören var, görmeyen var.
+
+161
+00:24:29,500 --> 00:24:31,879
+Tabii bu paylaşımlara kızanlar var.
+
+162
+00:24:32,160 --> 00:24:33,480
+Bayağı sıkıntılı bir süreç.
+
+163
+00:24:34,359 --> 00:24:39,179
+Onun için bu tarz WhatsApp gruplarınıza da çok çok dikkat edin arkadaşlar.
+
+164
+00:24:39,179 --> 00:24:47,260
+Kimin kurduğu belli olmayan, özellikle üst sınıflardan sabotaj olabilecek kötü niyetli insanlar olabilir.
+
+165
+00:24:47,440 --> 00:24:50,039
+Yani milyonda bir de olsa olabiliyor maalesef.
+
+166
+00:24:50,840 --> 00:24:53,039
+Bu tarz durumlara çok çok dikkat etmenizi isterim.
+
+167
+00:24:53,859 --> 00:24:56,059
+Ve ben önlem olarak şunu yapmıştım geçen dönem.
+
+168
+00:24:56,059 --> 00:24:57,659
+Belki bu dönemde yapmayı düşüneceğim.
+
+169
+00:24:58,780 --> 00:25:00,559
+Bir Telegram grubu kurdum.
+
+170
+00:25:00,679 --> 00:25:07,859
+Bazı hocalarımız WhatsApp grubunu kendi kurmuş da ben WhatsApp grubunun çok telefon numaramı paylaşmak istemiyorum.
+
+171
+00:25:08,859 --> 00:25:10,899
+Bazılarımızda telefon numaralarımız var.
+
+172
+00:25:11,160 --> 00:25:16,719
+İşte burs komisyonundan veya farklı komisyonlarından bizim numaralarımıza ulaşım sağlayabilirsiniz ama
+
+173
+00:25:16,719 --> 00:25:21,219
+şahsi numarayı öğrenci arkadaşlar bazen kötüye kullanabiliyorlar.
+
+174
+00:25:21,219 --> 00:25:24,459
+Yani zamansız arama veya zamansız mesaj gönderme şeklinde.
+
+175
+00:25:24,459 --> 00:25:51,839
+Onun için Telegram'ı daha çok tercih ediyorum. O da isabet oldu. Yani bu kopya mevzusu olduğunda WhatsApp'ın sözleşme ile alakalı süreci daha başlamamıştı. Bir ay sonra WhatsApp işte herkese sözleşme onayı tarzında bir şey yapınca millet Telegram kullanmaya başladı. Bizim grubun sayısı da bayağı artmıştı. Ben geçen dönemki derslerimde işte yani 200 kişilik gruplarımız falan oldu. Bizim bölümde 100 kişi falan vardı galiba öyle zannediyorum.
+
+176
+00:25:51,839 --> 00:25:57,479
+İletişim ve ulaşılabilirlik açısından çok bir sıkıntı yaşamadık bu Telegram grubu sayesinde.
+
+177
+00:25:58,539 --> 00:26:01,719
+Ben bunu ilerleyen zamanlarda bir grup açarım.
+
+178
+00:26:02,819 --> 00:26:08,300
+Verdiğim iki ders için hem sayısal analizi hem de yapısal programlamaya giriş dersini kapsayacak şekilde.
+
+179
+00:26:09,119 --> 00:26:10,579
+Biraz daha zaman geçsin istiyorum.
+
+180
+00:26:10,739 --> 00:26:13,520
+İşte laboratuvarlar başlasın hemen bu işi yapmaya gerek yok.
+
+181
+00:26:14,219 --> 00:26:15,239
+Sizlerle paylaşırım.
+
+182
+00:26:15,239 --> 00:26:18,879
+Oradan böyle faydalı görebileceğim ders notu link.
+
+183
+00:26:18,880 --> 00:26:33,880
+Bir başka üniversitedeki bir kaynak okumanıza faydalı olacak, sizin açınızdan meslek açığından faydalı olacak bir şey olursa oradan paylaşıyorum veya anlık haberler oradan söyleyebiliyoruz.
+
+184
+00:26:34,699 --> 00:26:42,900
+Bir öğrenciye ulaşmak gerekiyor. Sizin aranızda haber hızlı yayıldığı için bu tarz grupları kullanmak aslında güzel bir şey.
+
+185
+00:26:42,899 --> 00:26:52,299
+Bizler sizleri bölüm olarak ve hocalarımız olarak işte Fatih Hocam'la, Banu Hocam'la bu dönem sizlerle beraber bu dönemde beraber olacağız.
+
+186
+00:26:53,319 --> 00:27:01,479
+Hani bir meslek arkadaşı, iş arkadaşı gibi görüyoruz ve bizler sizler mezun olunca en iyi yerlerde olmanızı isteriz.
+
+187
+00:27:02,139 --> 00:27:09,599
+Dolayısıyla bu derslerin, bu birliklerin, bu iletişimin amacı hepimizin birbirine faydalı olması.
+
+188
+00:27:09,779 --> 00:27:12,119
+Kimse kimseye zarar vermesin.
+
+189
+00:27:12,119 --> 00:27:15,119
+Asıl gayemiz bu olsun isteriz.
+
+190
+00:27:17,859 --> 00:27:20,899
+Şimdi ben mesela kısaca kendimden bahsedeyim.
+
+191
+00:27:21,399 --> 00:27:24,219
+Birinci, ikinci sınıflarda bu dönem dersim var.
+
+192
+00:27:24,999 --> 00:27:27,259
+Bir de üçüncü sınıf algoritma analizi dersim var.
+
+193
+00:27:28,039 --> 00:27:29,719
+Geçen dönem daha çok ikinci sınıftaydı.
+
+194
+00:27:29,800 --> 00:27:31,419
+Üç tane ikinci sınıf dersi veriyordum.
+
+195
+00:27:32,559 --> 00:27:36,339
+2020 Temmuz, geçen sene Temmuz ayında doktoradan mezun oldum.
+
+196
+00:27:36,919 --> 00:27:38,359
+Nizamettin Hoca danışmanımdır.
+
+197
+00:27:38,359 --> 00:27:48,079
+Sinyal işleme, müzik sinyal processing dediğimiz derin öğrenme, makine öğrenmesi, yapay zeka gibi konuları içeren konularda çalışıyoruz.
+
+198
+00:27:49,079 --> 00:27:56,600
+İmkan olur ilerleyen zamanlarda ara proje, bitirme projesi gibi proje derslerinin zamanını gelince veya farklı platformlarda
+
+199
+00:27:57,107 --> 00:28:09,107
+Bu konular üzerine de konuşuruz. Bunu şunun için söylüyorum. Bu yaptığım çalışmaların hepsi benim de işte birinci sınıfta hatta ben meslek lisesi ve bilgisayar mezunuyum.
+
+200
+00:28:09,107 --> 00:28:24,107
+Orada öğrendiğim algoritma dersleri sayesindedir. Algoritma bu işin temelidir arkadaşlar. Ve algoritma geliştirmenin bir algoritması olmadığı için bu konuda hani oldum diyemiyorsunuz, oldum derseniz öldüm demektir.
+
+201
+00:28:24,107 --> 00:28:45,047
+Sürekli yeni şeyler, yeni problemler çözerek kendinizi geliştirmeniz gerekiyor. Süreç bu şekilde ilerliyor. Hiçbir zaman tamam ben her şeyi hallettim diyemiyoruz maalesef. Yani bir matematikteki üstlü sayılar konusu gibi değil. Yani bir fizikteki basınç konusu gibi değil. Tam bir yabancı dil öğrenmek gibi düşünebilirsiniz.
+
+202
+00:28:45,047 --> 00:28:51,827
+İngilizce öğrenince grameri öğrenmekle ne okuduğunuzu anlayabilirsiniz tam olarak.
+
+203
+00:28:52,667 --> 00:28:57,667
+Ne bir şey yazabilirsiniz, ne konuşabilirsiniz veya ne dinlediğinizi anlayabilirsiniz.
+
+204
+00:28:58,347 --> 00:28:59,767
+Daha çok kelime öğreneceksiniz.
+
+205
+00:29:00,327 --> 00:29:01,487
+Kelimenin ucu bucağı yok.
+
+206
+00:29:02,227 --> 00:29:03,548
+Daha çok pratik yapacaksınız.
+
+207
+00:29:03,688 --> 00:29:04,867
+Daha çok kitap okuyacaksınız.
+
+208
+00:29:05,727 --> 00:29:09,907
+Belli bir seviyenin ortalamanın üzerine geçince bunun meyvelerini yiyeceksiniz.
+
+209
+00:29:09,907 --> 00:29:11,427
+Aynı algoritma da bu şekilde.
+
+210
+00:29:12,227 --> 00:29:14,907
+Ama hiçbir zaman tamam ben zirve noktasındayım.
+
+211
+00:29:15,047 --> 00:29:22,887
+Diyemiyoruz. Hepimiz için bu böyle. Zor bir şey gelir. Biz de yapamayız. Yapamadığımız durumlarda o diyor. Anlayamıyoruz. Bunlar normal şeyler.
+
+212
+00:29:24,287 --> 00:29:34,227
+Ki bu üniversitenin size sağlayacağı şeyde şu tarz problemler nasıl çözülür, şu dili nasıl öğrenilir, programlama dili nasıl öğrenilir değildir.
+
+213
+00:29:34,227 --> 00:29:38,787
+Size bir meslek kavramı, meslek nosyonu katmaktır amaç.
+
+214
+00:29:38,788 --> 00:30:03,427
+Hep hukuk fakültesinden örnek verilir. Hukuk fakültesinde bir kanun, anayasa öğretilmez. Anayasanın ruhu, mantığı öğretilir. Eğer ki anayasa değişirse, sen anayasa maddeler ezberletiyorsan yasa değişir. O zaman adam kendini güncellemesi gerekiyor. Halbuki bunun mantığını, ruhunu öğretirse bu güncellemeye göre kendini de insanlar update ediyorlar.
+
+215
+00:30:03,427 --> 00:30:27,548
+Bizim mesleğimiz de böyle. Bazen mantığın mantığı da değişiyor. Hiç karşımıza çıkmamış yeni bir şey çıkıyor. Onun mantığını da öğreniyoruz birçok konuda. Ama yıllardır bilgisayar mühendisliğinin artık oturmuş, öncelerden elektrikle, elektronikle beraber olan hesap kürsüsü falan diye adı verilen bölümler, şimdi artık bilgisayar mühendisliği oturmuş bir branş haline geldi.
+
+216
+00:30:27,548 --> 00:30:35,468
+Hatta kendi içinden yazılım gibi, veri bilimi gibi, yapay zeka gibi yeni branşlar çıkartmaya başladı. O kadar oturmuş bir durumda.
+
+217
+00:30:36,368 --> 00:30:45,488
+İşte bunun mantığını, nosyonunu öğrenmek sizi bu işte sürekli taze tutmaya yarayacaktır.
+
+218
+00:30:46,268 --> 00:30:54,928
+Diyelim, sözü çok uzatmayayım. Sizin dersle alakalı düşünceleriniz, beklentileriniz, sorularınız varsa bunları alayım.
+
+219
+00:30:54,927 --> 00:31:04,847
+Aklıma gelenler bunlar. Böyle bir tanışmış olalım diye istedim. Bir de kısa şunu söyleyeyim arkadaşlar.
+
+220
+00:31:04,847 --> 00:31:14,327
+Ben ders anlatırken çoğunlukla iki ekran kullanıyorum. Chatten yazılanları takip etmeye çalışıyorum.
+
+221
+00:31:14,507 --> 00:31:20,887
+Ama chatten nelerin yazılması konusunda sizlerden bazı ricam olacak ve bunu bir protokol olarak belirleyelim.
+
+222
+00:31:20,887 --> 00:31:29,768
+Ders anlatırken dersin dışında dersin konusuyla alakalı bir şey yazmamanızı veya mikrofonla sormamanızı rica ediyorum.
+
+223
+00:31:30,587 --> 00:31:32,087
+Zaman zaman oluyor böyle şeyler.
+
+224
+00:31:33,048 --> 00:31:34,927
+Çünkü benim ders anlatırken dikkatim dağılıyor.
+
+225
+00:31:34,927 --> 00:31:45,087
+Bir, mümkün oldukça sorularınızı mikrofonla eğer dersin içeriğine dair bir sorunuz varsa bununla sorarsanız daha iyi olur.
+
+226
+00:31:45,087 --> 00:31:53,427
+Çünkü ben bu ekranda sağ taraftaki size bakmadığım diğer ekranda sizlere bir şey yazarak anlatacağım veya kodlayarak anlatacağım.
+
+227
+00:31:54,067 --> 00:32:09,267
+O arada bir de bu tarafa bakıp hani chat'teki konuyu anlamak veya cümleleri anlamak zor olabiliyor. Bunun yerine sözel olarak ifade ederseniz, anlama konusunda çok çok daha kolay olur, iletişim daha rahat olur diye düşünüyorum.
+
+228
+00:32:09,267 --> 00:32:19,207
+Dersin dışında sorularınız olacak mıdır? İllaki olacaktı. Yani ödev ile alakalı olabilir. Yani dersin dışında derken dersin o anki konusunun dışındaki konular.
+
+229
+00:32:19,207 --> 00:32:37,248
+Ne bileyim başka herhangi bir konu olabilir bölümle alakalı bir şey olur. Dersin son 10-15 dakikası ben anlatmayı bırakırım. Orada sorularınız varsa sorularınızı alırız. İsteyen çıkar isteyen devam eder. Kısaca bir muhabbet bir sohbet yapmış oluruz.
+
+230
+00:32:37,248 --> 00:32:39,968
+Genellikle sizlerden şöyle bir talep geliyor.
+
+231
+00:32:40,067 --> 00:32:42,727
+Hocam ders daha interaktif olsun diye.
+
+232
+00:32:43,588 --> 00:32:49,828
+Bu interaktiften ne anlaşıldığı birazcık tam ne anlama geldiği zannediyorum anlaşılmamış.
+
+233
+00:32:50,507 --> 00:32:51,788
+Şimdi bazı dersler vardır.
+
+234
+00:32:53,707 --> 00:32:55,268
+Hep kavramlar üzerine gider.
+
+235
+00:32:55,408 --> 00:32:57,508
+O kavramlar üzerinde hep böyle birisi konuşur.
+
+236
+00:32:57,508 --> 00:32:59,687
+Siz onlardan işte not alırsınız, özel çıkarsınız.
+
+237
+00:32:59,748 --> 00:33:01,828
+Özellikle sosyal derslerde bu biraz böyle oluyor.
+
+238
+00:33:01,928 --> 00:33:03,807
+Bizim bazı derslerimizde var mühendislikte.
+
+239
+00:33:03,807 --> 00:33:14,227
+Bazı dersler vardır işte matematikseldir işlem yapılır işte bir tahta veya buradaki grafik tablet kullanacağım en onun üzerinden bir işlemler yapılır.
+
+240
+00:33:15,067 --> 00:33:17,267
+Bazı dersler vardır işte kod yazarız.
+
+241
+00:33:18,767 --> 00:33:24,227
+Ama burada sadece konuşan ben olursam bu interaktiflik bir yere kadar sağlanıyor bir yerden sağlanmıyor.
+
+242
+00:33:24,227 --> 00:33:28,607
+Çünkü karşılıklı etkileşimin olması lazım.
+
+243
+00:33:28,608 --> 00:33:44,748
+Onun için bir soru sorduğumda mümkünse işte bir buradaki raise hand kullanılarak veya mikrofonla veya yazarak cevap vermeniz dersin interaktivitesini arttıracaktır diye düşünüyorum.
+
+244
+00:33:44,748 --> 00:33:57,828
+Çünkü bu hani ben bir monolog sanatçısı değilim. Yani tek başıma konuşayım, tek başıma bazı şeyleri anlatayım. Hani vardır öyle sanatçılar. Çok da güzel icra ederler vazifelerini.
+
+245
+00:33:57,827 --> 00:33:59,367
+Benim öyle bir yeteneğim yok.
+
+246
+00:34:00,447 --> 00:34:04,807
+Derste normalde sizlerle örgün eğitimde beraber olsak çok da soru soran biriyimdir.
+
+247
+00:34:05,127 --> 00:34:07,007
+Zaman içinde bunu göreceksiniz.
+
+248
+00:34:08,027 --> 00:34:12,307
+Özellikle bildiğiniz şeylerden bilmediğiniz şeylere nasıl gidebiliriz?
+
+249
+00:34:13,167 --> 00:34:22,867
+Bilinenden bilinene, kolaydan zora, nasıl yola çıkarızın anahtarı benim anlayışımda sorularla bu kapıları açmaya çalışmaktır.
+
+250
+00:34:22,867 --> 00:34:24,427
+Sorulardan sorular türetirim.
+
+251
+00:34:25,187 --> 00:34:27,027
+Bir soru sorarım, siz bir cevap verirsiniz.
+
+252
+00:34:27,027 --> 00:34:30,947
+Onun içinden fark etmediğimiz yeni yeni sorular çıkar, yeni kavramlar çıkar.
+
+253
+00:34:31,627 --> 00:34:37,367
+Dersi bu şekilde anlatmaya çalışırım ama burada önemli olan sorularıma bir şekilde sizlerden cevap gelmesi.
+
+254
+00:34:37,367 --> 00:34:43,187
+Yani önemli olan cevabında bilmiyor diyebiliriz de doğrudan söyleyebilirsiniz, utanılacak bir şey yok.
+
+255
+00:34:43,287 --> 00:34:50,527
+Bir şekilde cevap gelirse bu interaktivite, bu etkileşim daha güzel bir noktaya gelir diyelim.
+
+256
+00:34:51,727 --> 00:34:54,507
+İngilizce yabancı uyruklu arkadaşlar var galiba.
+
+257
+00:34:54,508 --> 00:35:17,707
+Dersin dili Türkçe. Son olarak onu da söyleyeceğim artık. Susacağım. Eğer gerekiyorsa, if necessary, I can give extra explanation about course subject. Bunu da söylemiş olalım. Ama bildiğim kadarıyla ders Türkçe olduğuna göre çoğunuz bu konuda Türkçe yeterli konusunda sıkıntı yaşamıyordur.
+
+258
+00:35:17,707 --> 00:35:24,288
+Erasmus'tan gelen falan var mı aranızda hiç? Yabancı bir yerden katılan.
+
+259
+00:35:27,347 --> 00:35:32,487
+Farklı statülerden çünkü gelen öğrenci grupları oluyor. Peki, yok.
+
+260
+00:35:33,127 --> 00:35:36,308
+Evet, sizin düşüncelerinizi, sorularınız varsa onları alayım arkadaşlar.
+
+261
+00:35:36,508 --> 00:35:41,107
+Bir de size anket göndereceğim. Onu Cuma gününe kadar doldurmanızı istiyorum.
+
+262
+00:35:41,247 --> 00:35:45,107
+Biraz da hani dersle alakalı beklentileriniz ne olur? Onları öğrenme kadar.
+
+263
+00:35:45,107 --> 00:35:47,947
+Cuma günü dersin konularını tanıtacağım.
+
+264
+00:35:48,367 --> 00:35:49,827
+Orada bir derse giriş yapacağız.
+
+265
+00:35:50,271 --> 00:35:59,572
+ve zannediyorum cuma gününde yine üç saatini tamamlamadan belki bir buçuk iki saatlik bir ders yaparız ve bitiririz. Evet, sizi dinliyorum. Ben sustum.
+
+266
+00:36:08,307 --> 00:36:10,307
+Yok mu sorunuz? Her şey açık mı?
+
+267
+00:36:13,684 --> 00:36:17,184
+Sesim geliyor mu? Ben boşluğa konuşmuyorum.
+
+268
+00:36:17,184 --> 00:36:19,184
+Geliyor hocam.
+
+269
+00:36:19,184 --> 00:36:20,184
+Evet.
+
+270
+00:36:20,184 --> 00:36:26,184
+Hiç aklınıza bir şey takılmıyor mu? Yani ben sorayım o zaman bazı şeyler sizden gelmeyecekse.
+
+271
+00:36:26,184 --> 00:36:32,184
+Mesela, buyurun İsmail. Bir şey soracaksınız galiba.
+
+272
+00:36:34,184 --> 00:36:35,184
+Tamam.
+
+273
+00:36:35,184 --> 00:36:42,784
+İlk defa yani geçen sene hazırlığı bu geçen dönem hazırlığı atlayıp gelenler kimler?
+
+274
+00:36:42,784 --> 00:36:44,783
+Artı bir falan bir şeyler yazabilirseniz.
+
+275
+00:36:46,584 --> 00:36:47,904
+O el kaldıranlar var.
+
+276
+00:36:50,123 --> 00:36:52,044
+Sadece yoğunluğa bakmak istiyorum.
+
+277
+00:36:52,143 --> 00:36:55,404
+Bunu belki yapacağım anketle daha fazla test edeceğim.
+
+278
+00:36:56,524 --> 00:36:58,024
+O baya güzel.
+
+279
+00:36:59,803 --> 00:37:00,463
+Anlaşıldı.
+
+280
+00:37:00,463 --> 00:37:16,563
+Yani bir dersin mevcudunun yaklaşık %30'u gibi bir artı bir geldi şu an. Bu önemli bir sayı. Hiç kampüs yüzü görmemiş arkadaşlar var aramızda. İnşallah o da en kısa sürede bir çözüme ulaşır.
+
+281
+00:37:18,023 --> 00:37:26,923
+Hazırlıktan atlayıp gelenler kimler? Hazırlığı okuyup gelenler affedersiniz yani ilk defa değil de.
+
+282
+00:37:30,452 --> 00:37:31,452
+Tamam.
+
+283
+00:37:33,452 --> 00:37:34,452
+Güzel.
+
+284
+00:37:36,452 --> 00:37:44,452
+Dersi yükseltmek veya alttan alıp geçmek için alanlar kimler? Yani var mı? El kaldırabilirsiniz.
+
+285
+00:37:44,452 --> 00:37:46,452
+Bu Zoom'un anket şeyi çalışmıyor.
+
+286
+00:37:48,452 --> 00:37:51,452
+Nedense onu bir sordum ama çözüm üretilmedi.
+
+287
+00:37:53,452 --> 00:37:59,452
+Tamam. Bu arkadaşlarımı da ya dersi yükseltmek için veya tekrar almak için alanlar. Pekala.
+
+288
+00:38:00,452 --> 00:38:26,431
+İnşallah güzel bir dönem olmasını diliyorum. Sizlerden arkadaşlar sorularınız, beklentileriniz varsa yani illaki sorularınız vardır ve dönem içinde, zaman içinde olacaktır. Hani şu an aklınıza gelenleri sorabilirsiniz. Hiçbir şekilde çekinmeyin. Benim çünkü şu an aklıma başka bir şey gelmiyor. Bugün için planladığım zaten laboratuvar seansı da olduğu için kısa tutmak istedim.
+
+289
+00:38:31,027 --> 00:38:48,267
+Lab ile alakalı da şunu söyleyeyim, üçüncü, dördüncü haftadan itibaren uygulama ve lab olacak. Cevap vereceğim İsmail. Uygulamalarda asistan hocalarımız bizim gibi bağlanıp bazı sorular çözecek.
+
+290
+00:38:48,267 --> 00:38:57,267
+Laboratuvarlarda da, belki geçen dönem yapılmıştır veya nasıl yapıldı bilmiyorum, hatta onu sorayım soru olarak. Geçen dönem laboratuvarlar nasıl oldu?
+
+291
+00:38:57,267 --> 00:39:03,847
+Bir arkadaş mikrofonla ifade edebilirse.
+
+292
+00:39:04,868 --> 00:39:07,587
+Derste C dili öğreneceğiz. C dili üzerinde çalışacağız.
+
+293
+00:39:09,767 --> 00:39:11,428
+Normal ders işledi.
+
+294
+00:39:11,587 --> 00:39:21,167
+Yani laboratuvarda bir hoca veya bir asistan, Amaç Bey, Cihan Bey veya herhangi bir asistan hoca size bir soru verip,
+
+295
+00:39:21,167 --> 00:39:30,227
+O soru üzerinde işte 40 dakika içinde bu soruyu çözün, gönderin, ona göre puan alacaksınız tarzında bir şey olmadı herhalde.
+
+296
+00:39:31,248 --> 00:39:32,807
+VMA nedir? Ben onu anlamadım.
+
+297
+00:39:33,568 --> 00:39:37,547
+Oldu hocam. Cihan Hoca'da 20 dakikamız vardı, quiz şeklinde.
+
+298
+00:39:38,027 --> 00:39:39,227
+Hocanın kendisi mi yapıyordu onu?
+
+299
+00:39:39,527 --> 00:39:40,987
+Evet, hocanın kendisi yapıyordu.
+
+300
+00:39:42,947 --> 00:39:48,807
+Peki o quiz şu muydu? Yani bir program yazma üzerine mi veya işte kağıt üzerinde bir şey çözme üzerine miydi?
+
+301
+00:39:48,807 --> 00:39:53,227
+Yani ilk başta Fall Chart'da sonra Fall Chart'da Combined'e kod vardı.
+
+302
+00:39:53,227 --> 00:40:05,608
+Tamam. Güzel. Diğer grupta böyle bir şey olmamış zannediyorum. Yazılanlardan onu anladım. Amaç Bey'in grubunda. Çakışan öğrenciler olduğu için QİZ.
+
+303
+00:40:05,607 --> 00:40:21,287
+Şimdi QE's değil de arkadaşlar bizimkisi şu olacak Fatih Hoca ile onu konuştuk. Size bir sayfa göstereceğim. Orada ders planı üzerinde bazı şeyleri detaylı açıklayacağız. Fatih Hoca'nın Google site sayfası.
+
+304
+00:40:21,287 --> 00:40:27,347
+Şimdi belli haftalarda laboratuvar sınavı gibi bir şey olacak.
+
+305
+00:40:27,507 --> 00:40:31,007
+Yani bunu bir vize sınavında nasıl bir zaman belirleniyor?
+
+306
+00:40:31,607 --> 00:40:36,327
+İşte 6. hafta 1. laboratuvar, 5. hafta 1. uygulama gibi.
+
+307
+00:40:37,207 --> 00:40:47,167
+Uygulamalarda hocalarımız gelip işte biz nasıl ders anlatıyorsak onlar da bir soru üzerinde sizinle bir pratik yapılacak, bir seans olacak bu pazartesi günü.
+
+308
+00:40:47,667 --> 00:40:49,367
+Laboratuarda bir sınav gibi düşünün.
+
+309
+00:40:49,367 --> 00:40:58,907
+Gelecek size bir soru sorulacak. Bu soruyu 45 dakika işte 40 dakika içinde yapıp sisteme yüklemeniz söylenecek ve ondan puan alacaksınız.
+
+310
+00:40:58,907 --> 00:41:02,947
+Ve bu puanlar belli bir değerlendirmeye tabi olacak.
+
+311
+00:41:03,287 --> 00:41:11,287
+Şimdi Fatih Amasyalı Google site yazarsanız ders kaynaklarını da oraya yükleyeceğiz arkadaşlar biz.
+
+312
+00:41:12,367 --> 00:41:16,287
+Dersimizin koordinatörü Fatih Hoca olduğu için onun sayfasından bu işi yüklendi.
+
+313
+00:41:16,287 --> 00:41:32,187
+Şurada yapısal programlamaya giriş diğerinin altında bir şey görürsünüz. Burada haftalık ders içeriği kısmı var. Bu biraz daha güncellenecek, tam kesin haline gelmedi.
+
+314
+00:41:32,187 --> 00:41:48,007
+Bu ders içeriğinde şurada uygulamalar ve labların hangi tarihlerde olacağı söylenecek ve o tarihlerde o laboratuvara katılmanız gerekiyor puan almanız için.
+
+315
+00:41:49,087 --> 00:41:53,807
+Beğerlendirme için biz söyle söylemiştik işte vizeden bir vize olacak bundan yüzde otuz.
+
+316
+00:41:54,767 --> 00:41:59,407
+Dört tane laboratuvardan en yüksek üçünün ortalamasını alacağız ve bu da yüzde otuz.
+
+317
+00:41:59,527 --> 00:42:01,327
+Yıl içinin yüzde altmışını teşkil edecek.
+
+318
+00:42:02,187 --> 00:42:07,547
+Bir final projesi vereceğiz. Bu finalin de %40 olacak. Final sınavı şeklinde yapmıyoruz.
+
+319
+00:42:08,267 --> 00:42:14,907
+Vizeyi de mesela herkesin vize yaptığı bir haftada yapmayalım. Zaten yoğun oluyorsunuz. Başka dersleriniz oluyor.
+
+320
+00:42:15,647 --> 00:42:19,387
+Biraz daha ilerleyen haftalarda bir vize sınavı yapalım diye düşündük.
+
+321
+00:42:20,019 --> 00:42:32,019
+Şu an için bunu bir geçici program, üzerinde ufak tefek üretişler yapılacak, bazı şeyler belirlenecek. Böyle bir programı size söylemiş olayım. Yani genel olarak düşündüğümüz şeyler bunlar.
+
+322
+00:42:34,019 --> 00:42:43,019
+Yapısal Programlamak Gürgüç kapatılmış. Yapısal Programlama, o CAF, ona bakarız farklı bir konu.
+
+323
+00:42:43,019 --> 00:43:01,240
+Yani bu vize işte 12. hafta olur, 11. hafta olur burada ufak bir değişiklik olabilir. Bir de şu sarıyla gösterilen uygulama ve laboratuvar sütunun doldurulacak bölümü var. İşte şu tarihte birinci uygulama, şu tarihte birinci laboratuvar, ikinci uygulama, ikinci laboratuvar diye bir şey olacak.
+
+324
+00:43:01,239 --> 00:43:19,699
+Normal örgün zamanda olsaydınız hem bilgisayar bilimlerine girişte hem de yapısal programlamaya giriş derslerinde biz sizlere bölümün içindeki CAD laboratuvar dediğimiz, computer-aided design laboratuvar dediğimiz laboratuvarlarda soru veriyorduk.
+
+325
+00:43:19,699 --> 00:43:24,779
+40 dakika içinde cevaplamanızı istiyorduk. 20'şer, 25'er kişi alınıyordu laboratuvarın kapasitesine göre.
+
+326
+00:43:24,780 --> 00:43:30,400
+Burada ya puanınız o an veriliyor veya daha sonra değerlendirmek üzere sizlerden toplanıyordu.
+
+327
+00:43:30,960 --> 00:43:38,360
+Ama bunun pandemi süreciyle beraber bu şekilde uygulanması daha doğru.
+
+328
+00:43:38,799 --> 00:43:39,960
+Çok da bir şey fark etmiyor.
+
+329
+00:43:40,680 --> 00:43:42,479
+Hatta bazı şeyler açısından daha kolay.
+
+330
+00:43:42,979 --> 00:43:45,040
+Neyse onun detaylarını daha sonra söyleyeceğim arkadaşlar.
+
+331
+00:43:45,880 --> 00:43:49,640
+Fahit Hoca'nın sitesinde burada ders kodları, bazı ders notları da olacak.
+
+332
+00:43:49,760 --> 00:43:54,100
+Ben de size ayrıca şeyler paylaşacağım ama buradaki geçmiş uygulamalar, geçmiş sınav örnekleri,
+
+333
+00:43:54,099 --> 00:43:55,739
+Buradaki kaynaklara erişebilirsiniz.
+
+334
+00:43:56,279 --> 00:43:57,739
+Şimdi şuradaki bazı sorulara bakayım.
+
+335
+00:43:57,859 --> 00:44:01,699
+Burada bu anlattıklarımla alakalı sorularınız varsa yazabilirsiniz veya söyleyebilirsiniz.
+
+336
+00:44:03,339 --> 00:44:05,459
+Nesne Önen'i programlama kapatıldı.
+
+337
+00:44:05,619 --> 00:44:09,759
+Şu an yani muhtemelen diğer bir gruptan almışsınızdır.
+
+338
+00:44:09,819 --> 00:44:11,979
+Grup değişimi çok böyle olabilen bir şey değil.
+
+339
+00:44:12,199 --> 00:44:12,699
+Onu bilmiyorum.
+
+340
+00:44:13,279 --> 00:44:17,719
+Yani ben grubu açtığımda zaten herkes duymuştur.
+
+341
+00:44:17,719 --> 00:44:23,519
+Bir anda çünkü yaklaşık yarım saat içerisinde benim açtığım grup 50 kişiye ulaştı.
+
+342
+00:44:24,099 --> 00:44:47,759
+Final projesinin final sınavından farkı şu. Geçen senelerde de yapıldı. Bir algoritmayı çalışıp, yani derste anlatılmayan veya öyle çok basit olmayan bir algoritmayı çalışıp, bununla alakalı bir kodlama yapıp, test işlemleri yapıp, bunu bize bir video ile ve bir raporla sunmanızı bekleyeceğiz.
+
+343
+00:44:47,759 --> 00:44:48,959
+detaylarını açıklayacağız.
+
+344
+00:44:50,419 --> 00:44:58,579
+Yani belli bir final aralığında, saat aralığında işte saat 3'te sınav başlıyor, 5'e kadar soruları cevaplayın gönderin şeklinde değil.
+
+345
+00:44:59,359 --> 00:45:04,739
+Belki 10 günlük, 15 günlük bir içeriği olan bir algoritma belirlenecek.
+
+346
+00:45:04,839 --> 00:45:11,239
+Bu algoritmalar iki kişi de aynı olmayacak veya işte dersin diğer grubundaki herhangi bir kişinin de aynı olmayacak.
+
+347
+00:45:11,239 --> 00:45:12,759
+Herkes bir algoritma belirlenecek.
+
+348
+00:45:13,359 --> 00:45:14,299
+Bunu biz onaylayacağız.
+
+349
+00:45:14,939 --> 00:45:16,999
+Belki derste sunum da yaptırabiliriz.
+
+350
+00:45:17,759 --> 00:45:33,019
+Sayısal analiz dersindeki göstereceğimiz algoritmalardan olmayacak mesela ona dikkat ediyoruz. Bu tarz bir içerik belirleyeceğiz. Tabi onun zamanı herhalde döneme 3-4 hafta kala bir duyuruları yapılır, detayları belirlenir. O şekilde devam ederiz.
+
+351
+00:45:33,019 --> 00:45:59,079
+Şimdi final dışında küçük ödev veya proje hocayla düşünmedik Fatih hocayla. Hani ben çalışma soruları hazırlayalım diye konuştuk. O da şudur. Yani dersin konusuyla alakalı derste çözdüğümüz sorulara ek olarak sizin pratik yapmanız için bazı sorular şu an hala hazırda bazı ders notlarında var da onlara biraz daha ekleme yapalım. Siz daha çok pratik yapın diye böyle bir şey var.
+
+352
+00:45:59,079 --> 00:46:19,039
+Ama bu ödevler hani sizlerden geriye şeyler beklenilen bir ödevler olmayacak. Yani şu güne kadar yapın gönderin. Çünkü şu programda, şu içerikte, şu notlandırmada bir kesin karar kıldık gibi öyle bir şey var. Buna ayrıca bir ödev veya bir şey eklemeyeceğiz. Ama pratik amaçlı.
+
+353
+00:46:19,668 --> 00:46:21,668
+Bazı şeyler bekleyeceğiz.
+
+354
+00:46:23,668 --> 00:46:27,027
+Şurada bir soru daha vardı, onu atladım.
+
+355
+00:46:30,068 --> 00:46:49,267
+Finalde öyle testifen yok. Yani öyle bir şey düşünmelik. Direkt derste anlattığımız konuların sizin tarafından uygulanması, bunun anlattığımız konuların içeriğine uygun olarak raporlanması, izah edilmesi, anlaşılması orada beklediğimiz hedef kazanımlarınız olacak.
+
+356
+00:46:49,267 --> 00:46:51,267
+Başka sorusu olan...
+
+357
+00:46:54,516 --> 00:47:08,516
+Benim birkaç tavsiyem olacak onun haricinde. Şu an kaç kişiyiz? 68 kişiyiz. Yani yine bir 15 kişi falan yok ama yine tecrübelerimden hani yola çıkarak yaklaşık 8 yıldır bu işi yapıyoruz.
+
+358
+00:47:08,516 --> 00:47:22,815
+Şimdi bu ders, arkadaşlar Emircan söyleyeyim, bu ders ilgi gerektiren, böyle hani ezberlenecek bir ders değil. Anlaşılacak, pratik yapılacak bir ders.
+
+359
+00:47:22,815 --> 00:47:32,295
+Onun için bir eksiklerinizi kapatmak için falancanın ders notu, işte internette buldum, işte bir falanca yerinin kursunu buldum.
+
+360
+00:47:32,575 --> 00:47:43,516
+Hepsi belki çok faydalı olabilir ama dersten almanız gereken puanla alakalı ve işte bizim anlattıklarımızla alakalı birinci dereceden kaynak derse katılmaktır arkadaşlar.
+
+361
+00:47:44,895 --> 00:47:50,635
+Onun için derse katılımınızın, aktif katılımınızın hatta çok iyi olması lazım.
+
+362
+00:47:50,635 --> 00:48:03,876
+Genelde dersten başarısız olanların hep insidansına baktığımızda ya derse katılmayan, derse katılıp sınıftaysa ilgisiz olan veya uzaktan eğitimse sadece varlığı var.
+
+363
+00:48:03,876 --> 00:48:11,715
+Ben herhangi bir şekilde burada devam etmiş mi, etmemiş mi, izlemiş, kaç hafta sınıfta kalmış ona bakmam.
+
+364
+00:48:12,575 --> 00:48:17,456
+Yani zaten derslerin çakışma probleminden dolayı aynı ders, başka bir ders de alabiliyorsunuz.
+
+365
+00:48:17,455 --> 00:48:32,255
+Böyle olunca devam zorunluluğu gibi bir şey de nispi olarak ortadan kalkıyor. Dolaylı olarak ortadan kalkıyor. Bu sebeple derse aktif katılım sizin başarınızı etkileyen önemli şeylerden bir tanesi. Diğeri de anlamadığınızı sormak.
+
+366
+00:48:32,255 --> 00:48:58,135
+Yani bildiğiniz bir şeyi, bilmediğiniz bir şeyi sormaktan çekinmeyin. Belki yani utanıyorsunuzdur, çekiniyorsunuzdur da çekinecek bir şey yok. Ben de bazı şeyleri yanlış yapıyor olabilirim ders içerisinde. Çünkü ekrana bakarak ders anlatmak, sınıfta ders anlatmakten hakikaten zor. Arada yanlışlıklar yapıyoruz, düzeltiyoruz. Sizlerden düzeltmeler geliyor. Çok iyi oluyor. Hem de bu dikkati gösteriyor. Onun için aktif katılım her zaman iyidir.
+
+367
+00:48:58,135 --> 00:49:04,615
+Bu başarısızlık durumlarının en sık görüleni derse aktif katılımın veya iş katılımın olmamasıdır.
+
+368
+00:49:05,295 --> 00:49:07,376
+Bakıyor hoca işte bir şeyler anlatıyor arkadaş.
+
+369
+00:49:07,615 --> 00:49:09,175
+İkinci hafta olmuş, üçüncü hafta olmuş.
+
+370
+00:49:09,395 --> 00:49:10,456
+Hani çok fazla çalışmıyor.
+
+371
+00:49:11,155 --> 00:49:12,395
+Finale veya vizeye geliyor.
+
+372
+00:49:12,555 --> 00:49:16,195
+İşte son iki günde, üç günde bizim dersimizle alakalı şeyler halledilecek bir şey değil.
+
+373
+00:49:16,435 --> 00:49:19,035
+Hani ezberlenecek bir şey olsa ezberler geçersin sınavda.
+
+374
+00:49:19,555 --> 00:49:19,975
+Öyle değil.
+
+375
+00:49:20,956 --> 00:49:21,956
+Pratik yapmak gerekiyor.
+
+376
+00:49:21,956 --> 00:49:29,616
+Ben haftada bizim dersimizin saati dışında 2-3 saat kodlama yapmanızı yani C üzerinde kod yazmanızı istiyorum.
+
+377
+00:49:30,196 --> 00:49:34,196
+Zaten Banu Hocam'la da sayısal anı nezizde vereceğimiz bir proje ödevi var.
+
+378
+00:49:34,316 --> 00:49:37,616
+Onu da C'de yazılması gerektiği konusunda mutabık kaldık.
+
+379
+00:49:38,556 --> 00:49:39,935
+Geçen dönemlerde de öyle oluyordu.
+
+380
+00:49:40,056 --> 00:49:41,556
+Oradaki ödevi de C'de yazacaksınız.
+
+381
+00:49:41,655 --> 00:49:42,516
+Öyle konuşmuştuk.
+
+382
+00:49:43,956 --> 00:49:45,056
+Herhangi bir doküman paylaşıyor.
+
+383
+00:49:45,056 --> 00:49:51,036
+Şimdi dokümanlar bu Fatih Hocam'ın sitesinde dersin geçen seneki dokümanlar olarak bulunacak arkadaşlar.
+
+384
+00:49:51,035 --> 00:50:11,715
+Ben faydalı gördüğüm bir tutorial sitesi olur, bir YouTube kanalı olur, ne bileyim bir üniversitenin ders notlarının bulunduğu sayfa olur. Onları farklı kanallardan işte Telegram açarsak Telegram üzerinden veya Google Classroom açabilirim. Yani Telegram'dan vazgeçip bazen o da olabiliyor. Onun üzerinden paylaşırım.
+
+385
+00:50:11,715 --> 00:50:18,096
+Açarsam zaten hem sayısal analiz için hem de bu ders için yapısal programıma giriş için de kurup açacağım.
+
+386
+00:50:18,816 --> 00:50:21,676
+Orada birçok paylaşım bulacağım.
+
+387
+00:50:21,795 --> 00:50:31,396
+Ama bu paylaşımlar dersinle alakalı doğrudan dersin içeriğiyle alakalı veya ne bileyim dersin konusunu anlatacağım konuyla alakalı bir şeyler değildir.
+
+388
+00:50:31,396 --> 00:50:33,835
+Zaten onlar Fatih Hoca'nın sayfasında var. Ekstradır.
+
+389
+00:50:34,995 --> 00:50:36,736
+Not tutmanızı tavsiye ederim.
+
+390
+00:50:36,736 --> 00:50:42,536
+Eğer ki ben bir şeyler yazıyorsam ve bunu not edin bu lazım olur diyorsam iyi olur.
+
+391
+00:50:42,676 --> 00:50:50,176
+Çünkü kendi tuttuğunuz notlar ileride çalışırken bir yerlerde hatırlamak gerektiğini duyduğunuzda onlar size yardımcı olacaktır.
+
+392
+00:50:50,675 --> 00:50:59,675
+Her şey bu derste not tutulur mu? Pek de tutulmaz. Hani onu da söyleyeyim. Yani ben bir program yazarken, benim yazdığım programı sizin deftere yazmanıza gerek yok.
+
+393
+00:50:59,675 --> 00:51:11,675
+Ama mesela ben, hocam yazdığınız programların kaynak kodunu gönderir misiniz diye sizlerden soru geliyor. Tamam gönderirim diyorum ama ne yapıyorum? Şöyle snip tool alıyorum.
+
+394
+00:51:14,195 --> 00:51:27,195
+Kod neredeyse, onun ekran görüntüsünü alıp, görüntü olarak göndereceğim. Oradaki kodu arkadaş yazsın istiyorum. Şöyle bir görüntü gönderin. Kabul edin ki burada program kodu var.
+
+395
+00:51:27,195 --> 00:51:39,195
+Yazın ki hatalarınızı görün. Yani nerede noktalı virgül kullanılır, printf nasıl çalışıyor, scanf nasıl çalışıyor veya işte burada hoca bir swap işlemi anlattı, sıralama algoritması anlattı.
+
+396
+00:51:39,195 --> 00:51:43,855
+Bunu nasıl yaptı onu yazarak en güzel şekilde kodlayarak öğreniyorsunuz.
+
+397
+00:51:43,896 --> 00:51:45,116
+Bir hata yapmanız gerekiyor.
+
+398
+00:51:45,216 --> 00:51:47,036
+O hatayı işte İde size söylüyor.
+
+399
+00:51:47,975 --> 00:51:55,236
+Geçen dönem belki bununla alakalı bir şeyler yaptınız ama artık bu dönem bu işin içine daha fazla aktif bir şekilde girmeniz gerekiyor.
+
+400
+00:51:56,315 --> 00:51:59,675
+Sadece defter çok iyi bir çözüm değil Emre Can.
+
+401
+00:52:01,935 --> 00:52:07,675
+Hatta bazı arkadaşlar hiç defter tutmadan çok güzel sürekli kodluyorlar.
+
+402
+00:52:07,675 --> 00:52:13,995
+Ve bu kodlama sayesinde hatalarını çok güzel gideriyor ve çok güzel program yazıyorlar.
+
+403
+00:52:15,595 --> 00:52:29,955
+Geçen dönem hangi şey yapıldı bilmiyorum ama ben tuarlarda sorun yaşamamız adına CodeBlocks veya DevC++ üzerinde kod yazmanızı tavsiye ediyorum.
+
+404
+00:52:29,955 --> 00:52:35,195
+Diğer Linux, Ubuntu, MacOS gibi ortamlarda da vardır buna benzer uygulamalar.
+
+405
+00:52:36,015 --> 00:52:37,236
+Onlardan birini tercih edebilirsiniz.
+
+406
+00:52:37,236 --> 00:52:43,755
+Fakat derste anlattığımız C standardına ki o standartların gerektiği yerde üzerlerine gerektiği vurguları yapacağım.
+
+407
+00:52:44,475 --> 00:52:47,136
+O standarda uygun kod yazmanız gerekiyor.
+
+408
+00:52:47,975 --> 00:52:51,395
+Mesela C kodu istiyoruz. C++ kodu gelmemesi lazım bize.
+
+409
+00:52:52,575 --> 00:53:02,115
+Çünkü asistan hoca veya ben onu kontrol ederken kendi bilgisayarım üzerindeki işte spesifikasyon üzerinden size anlattığım spesifikasyon üzerinden anlatacağım.
+
+410
+00:53:02,755 --> 00:53:05,175
+Burada bir hatayla karşılaşırsam siz mağdur oluyorsunuz.
+
+411
+00:53:05,175 --> 00:53:17,175
+Ya işte hocam ben liseden işte bilmem şuradan buradan C++ biliyordum, biraz karıştırmışım bu tarz mazeretler daha sonra iyi olmuyor. Bu soruyu sorduğunuz iyi oldu Barış.
+
+412
+00:53:18,235 --> 00:53:22,595
+Windows kullanıyorsanız DevC veya CodeBlocks yeterli.
+
+413
+00:53:22,595 --> 00:53:45,475
+Mesela Visual Studio kullanan arkadaşlar var. Visual Studio'nun konfigürasyonuyla DLC farklı. DLC üzerinde hem de daha küçük bir programdır. Kod yazmanız benim açımdan daha iyi olur. Sizin açınızdan da iyi olur. Eğer bir hatalı bir şey olursa bu sefer yeterli puanı alamıyorsunuz. Almanız gereken puanı alamıyorsunuz. Hata yapmış oluyorsunuz.
+
+414
+00:53:45,475 --> 00:53:50,515
+Xcode üzerinde macpost'tan bahsediyorsunuz zannediyorum Zafer.
+
+415
+00:53:50,815 --> 00:53:54,655
+Yazabilirsiniz ama benim derste anlattığım standarda dikkat edin.
+
+416
+00:53:55,315 --> 00:54:01,395
+Bir kod gönderirken size bazı online ideler göndereceğim.
+
+417
+00:54:01,955 --> 00:54:04,315
+Online GDB diye bir site var.
+
+418
+00:54:05,255 --> 00:54:08,296
+Başka bir platformda yazdığınız kodu orada da çalıştırın.
+
+419
+00:54:08,375 --> 00:54:10,576
+Eğer orada çalışıyorsa ondan sonra gönderin.
+
+420
+00:54:11,136 --> 00:54:15,015
+Çünkü benim anlattığım standartlar da oradakili standartlarla uyuşuyor.
+
+421
+00:54:15,475 --> 00:54:43,916
+sorun yaşamamış oluruz. Aynı dili konuşmamız gerekiyor. Çünkü C derleyicileri standartları farklı olabiliyor. İşte C ile C++ çok fazla karışıyor. Şunu çok az gördüm ama görüyoruz maalesef. İşte C kodu istiyoruz. Java kodu gönderiyor. C++ kodu gönderiyor. Python gönderiyor. Hayır. Bu ders yapısal programına giriş dersi C dersi C programlama dili dışında herhangi bir dil olmayacak. Bunu da söylemiş olalım. Başka sorumuz var mı?
+
+422
+00:54:49,108 --> 00:55:05,108
+Benim aklıma bir soru daha geldi. Onu da söyleyeyim, ondan sonra bitireceğim. Kitap tavsiyesi isteyen arkadaşlar oluyor. Dersin sılabısında, Bolonya sayfasında bir kitap var.
+
+423
+00:55:05,108 --> 00:55:09,887
+Introduction to Algorithm Saktı. Hemen de yanımdaymış.
+
+424
+00:55:11,308 --> 00:55:15,887
+Bu MIT'nin algoritmaya giriş kitabı.
+
+425
+00:55:18,608 --> 00:55:25,288
+Ama bu algoritmaya giriş kitabı arkadaşlar, algoritma analizine kadar ki bütün konuları içeriyor.
+
+426
+00:55:25,387 --> 00:55:30,847
+Yani belki bu kitabın %15'i ile bu dönem meşgul olacağız.
+
+427
+00:55:31,387 --> 00:55:34,127
+Veya belki %20'si kadarıyla meşgul olacağız.
+
+428
+00:55:34,128 --> 00:55:56,608
+Bunun farklı şekillerde kitap ücretleri çok bağlı. MIT'nin sayfasındaki Introduction to Algorithm kursuna bakarsanız oradan temin edebilirsiniz dersin içeriğine ait notları. Kitap ona uyumludur. PDF falan çözümler var da onu ben doğrudan tavsiye etmem. Ben kendim kitap kullanmaya çalışıyorum. Bize ücretsiz de gönderiliyor.
+
+429
+00:55:56,608 --> 00:56:01,927
+Kitap ağırdır ama. Hani C programlama öğretir mi? Öğretmez.
+
+430
+00:56:02,968 --> 00:56:09,228
+Algoritma kavramını daha böyle pseudokot, yapay kod üzerinden size anlatmaya çalışır.
+
+431
+00:56:10,008 --> 00:56:12,908
+Biraz zor mudur? Zordur. Ama olabilir.
+
+432
+00:56:13,288 --> 00:56:16,707
+C ile alakalı kitap tavsiyesi isteyenler oluyor.
+
+433
+00:56:17,887 --> 00:56:21,087
+Şimdi arkadaşlar C ile alakalı Türkçe kitaplar bende de var.
+
+434
+00:56:21,548 --> 00:56:24,268
+Birkaç tane hatta yeri gelince şimdi göstermeyeceğim de.
+
+435
+00:56:24,267 --> 00:56:42,267
+O kitaplar faydalı olabilir mi? Olabilir. Ama derste anlattığımız veya yaptığımız kodlamalar, sizin yapacağınız ödevler o kitaptakilerin okumaya gerek kalmadan size yeterince eğitimi, yeterince öğrenme becerisini sağlayacak içeriktedir.
+
+436
+00:56:43,108 --> 00:56:51,267
+Yani oradaki anlatılan her şeyi siz ödevi yaparsanız veya işte burada dersleri dinlerseniz çok rahat öğrenmiş oluyorsunuz.
+
+437
+00:56:51,267 --> 00:57:13,867
+Buna destek olarak ben birkaç tutorial sitesi size göndereceğim. Link göndereceğim. Onlar yeterli olur. Türkçe kitaplar için söylüyorum. Çünkü Türkçe kitapların çoğunda seviye maalesef hani böyle lise seviyesi diyebileceğimiz mükemmel sayı bulmak için hoca kod yazmış. Aşağıya cevapları bırakmış veya ekran görüntüsünü yazmış.
+
+438
+00:57:13,867 --> 00:57:18,727
+bu yani inputu ver, outputu al şeklinde programlar oluyor.
+
+439
+00:57:18,847 --> 00:57:22,968
+İşte if nasıl kullanılır, for nasıl kullanılır, fonksiyon nasıl yazılır, pointer nedir?
+
+440
+00:57:23,407 --> 00:57:25,968
+Bunları zaten derste anlatıyoruz. Onun için bir kitaba gerek yok.
+
+441
+00:57:26,608 --> 00:57:28,987
+Yabancı kitaplar işte Data'nin kitabı var.
+
+442
+00:57:28,987 --> 00:57:35,067
+Bu da biz zaten çoğunlukla Data slide'ları üzerinden ders yürüteceğiz programlama tarafında.
+
+443
+00:57:36,207 --> 00:57:38,447
+O kitaplara da ben çok gerek olacağını düşünmüyorum.
+
+444
+00:57:38,447 --> 00:57:45,567
+Ama tercihleriniz daha çok yabancı dilde yazılmış olan kitaplar üzerine olabilir.
+
+445
+00:57:47,268 --> 00:57:52,268
+Şuraya baktığımda mesela Problem Solving and Program Design in C.
+
+446
+00:57:52,887 --> 00:57:55,347
+Koftman diye, Henry Koftman diye bir adam var.
+
+447
+00:57:55,447 --> 00:57:56,688
+Henley diye yazılıyor.
+
+448
+00:57:58,067 --> 00:58:01,188
+Bunun birkaç farklı kitabı var.
+
+449
+00:58:01,188 --> 00:58:05,427
+İşte algoritma üzerine, veri yapıları üzerine, data structure üzerine.
+
+450
+00:58:05,427 --> 00:58:08,187
+kaliteli kitaplardır.
+
+451
+00:58:10,767 --> 00:58:14,047
+İnternetteki datalarına bakabilirsiniz, kaynaklarına bakabilirsiniz.
+
+452
+00:58:14,987 --> 00:58:19,887
+Kitap okumak sizin için daha çok bir aktivite, bir hobi olmalı mesleğinizde.
+
+453
+00:58:20,687 --> 00:58:23,567
+Ancak o amaçla bu kitaplardan faydalı olursunuz.
+
+454
+00:58:23,787 --> 00:58:29,567
+Ama derste zaten anlatılan şeyler, yapılan ödevler sizin bu dersi geçmeniz için,
+
+455
+00:58:30,247 --> 00:58:32,867
+bu dersten elde etmeniz gereken başarı için yeterli.
+
+456
+00:58:32,867 --> 00:58:39,347
+Derste anlatmadığımız herhangi bir şeyi sizlere sormayacağız, sizlerden beklemeyeceğiz.
+
+457
+00:58:40,403 --> 00:58:49,403
+Geçen dönem BBG'yi almamış olmanız birazcık problem. Hani şöyle, algoritma nedir, programlama nedir, bunları belki geçen dönemden bilmiyorsanız.
+
+458
+00:58:49,403 --> 00:58:57,403
+Ama ben cuma gününden itibaren zaten oradaki geçen dönemin bir revizyonunu yapacağım bir anlamda.
+
+459
+00:58:57,403 --> 00:59:07,403
+Algoritma açısından baktığımızda da biz bu derste algoritmanın ne olduğu, nasıl geliştirmesi gerektiği ve iyi algoritma nedir?
+
+460
+00:59:07,403 --> 00:59:30,164
+Bu tarz konular üzerinde çalışacağız. Çok fazla bir eksiğiniz yok. Almış olmanız belki yarışa 100 metre 200 metre önceden başlamış olmanız anlamına gelirdi. Almadıysanız bu yarışı kaybedecek değilsiniz. Yani öyle bir şey olsaydı zaten biz bu derse ön koşarak o dersi koyardık. Yani bölüm öyle bir şey koyardı. Koyulmamış. Demek ki yapılabilir bir şey.
+
+461
+00:59:30,163 --> 00:59:51,463
+Yani geçen dönemden mesela 100 döneminden baktığımda ayrık matematik dersini alanlar vardı, üstten alanlar vardı. Onlar biraz zorlanmıştır çünkü tam algoritmaya vakıf olamıyorlar ama programlama dersi ve buradaki bu ders size bilmediğiniz şeyleri veya hiç daha önce tecrübesi olmayan şeyleri öğretmeye yönelik bir ders.
+
+462
+00:59:51,463 --> 01:00:06,563
+Orada biraz daha yani ilk 5-6 hafta bilgisayar nedir, işlemci nedir, işletim sistemi nedir gibi konular anlatılıyor. Ondan sonra flowchart algoritmaya geliyor. Onun için bu dersi dikkatli takip etmenizi tavsiye ederim.
+
+463
+01:00:06,563 --> 01:00:19,863
+Şimdi uzaktan eğitimim verdiği bir avantaj da var. Diğer arkadaşlarınız işte diğer gruplardan da dersleri takip edebilirsiniz. Benden anlamadığınız bir şeyi Fatih Hocam'dan da dinlemenizi tavsiye ederim. Çünkü bu böyle öğreniliyor.
+
+464
+01:00:19,863 --> 01:00:46,863
+C koduyla ilgili bilgim çok az. Bununla ilgili pratik kazanmak için bir kitap veya kurs. Kurs da burada kitapla alakalı düncelerimi söyledim. C koduyla alakalı her şeyi ders dinleyerek yani birisi anlatsın ben dinleyeyim çok fazla öğrenilmiyor. Onun yerine ben burada anlatılanları uygularsanız birçok para verip öğreneceğiniz kursun içeriğini burada alacaksınız. Gerek yok diye söyleyebilirim.
+
+465
+01:00:46,863 --> 01:00:47,423
+Söyleyebilirim.
+
+466
+01:00:49,803 --> 01:00:49,984
+Tamam.
+
+467
+01:00:50,223 --> 01:00:56,043
+Yani temel C zaten bu bölümü kazanan herhangi bir programlama geçmişi olan için demiyorum.
+
+468
+01:00:56,124 --> 01:01:00,023
+Bu bölümü kazanan herkesin çok rahat öğrenebileceği bir dildir programlama dili.
+
+469
+01:01:00,463 --> 01:01:01,823
+Ekstra bir kaynak.
+
+470
+01:01:03,004 --> 01:01:14,183
+Hani hem maddi açıdan size bir yük getireceği gibi bu dersten veya ona da bir zaman ayıracağın için ayrıca bir zaman şeyi getirecektir.
+
+471
+01:01:14,264 --> 01:01:15,543
+Zaman maliyeti getirecektir.
+
+472
+01:01:15,543 --> 01:01:22,284
+Bir koltuğa iki karpuz sığmaz derler ya yani dönem içinde zannediyorum birinci sınıfsanız 7-8 dersiniz var.
+
+473
+01:01:22,903 --> 01:01:30,443
+Bir de o tarz işte dışarıdaki bir özel kurs işte yine buradaki yine paralel olarak özel bir kurs bence gereksiz.
+
+474
+01:01:32,264 --> 01:01:37,583
+Yani herhangi bir kursda A kursu B kursu ben bilmiyorum yani öyle bir şeye bilmiyorum.
+
+475
+01:01:37,963 --> 01:01:39,844
+Hangi C compiler'ı indirelim?
+
+476
+01:01:39,844 --> 01:02:00,564
+devc veya codeblocks yani c compiler değil ide olarak onu kullanacaksınız. Zaten içerisinde bu bizim bahsettiğimiz standartlara uygun c derleyicileri var arkadaşlar. Devc veya codeblocks compiler değildir, ide'dir. Onu düzeltelim. Bunlardan bir tanesi sizin için faydalı olur.
+
+477
+01:02:00,563 --> 01:02:19,123
+Evet benim başka söyleyeceğim şey kalmadı. Çok fazla uzatmayalım. Cuma günü de biraz mevzu kalsın. Hepinize tekrardan başarılı güzel bir dönem diliyorum. Mail adresim var. Şu an için herhangi bir WhatsApp, Telegram grubu, Google Classroom kurmadım.
+
+478
+01:02:19,124 --> 01:02:37,403
+İlerleyen zamanlarda sınıfın gidişatına, olayların gidişatına bakarak USIS üzerinden size mail gönderirim. Şu kodla sisteme girebilirsiniz. Grup oluştururuz. Oradan iletişimimizi gerekirse onlar üzerinden sağlarız.
+
+479
+01:02:38,387 --> 01:02:44,387
+İletişim bilgilerim verdiğim şekilde mail adresimdir veya işte sayfamızdır veya buradaki dahili telefon numaramızdır.
+
+480
+01:02:44,387 --> 01:02:50,387
+Sorunuz yoksa arkadaşlar hepinize iyi günler, iyi bir hafta diliyorum, iyi bir dönem diliyorum.
+
+481
+01:02:50,387 --> 01:02:54,387
+Sağlıcakla kalın, kendinize iyi bakın. Görüşmek üzere.
+
+482
+01:02:59,027 --> 01:03:01,027
+İyi günler arkadaşlar, hoşçakalın.
