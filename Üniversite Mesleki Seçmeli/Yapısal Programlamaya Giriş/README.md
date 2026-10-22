@@ -27,6 +27,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Yapısal Programlamaya Giriş Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 [Çıkmış sorular linki](https://drive.google.com/drive/folders/12XtTMnoavz1FXqoc9KRWrsNdBP194h9R?usp=drive_link) ✨
 - 📄 [Proje için örnek video 1](https://www.youtube.com/watch?v=WKaQ02BHpaY) ✨
 - 📄 [Proje için örnek video 2](https://www.youtube.com/watch?v=raSGGF2Hhdg&t=141s&ab_channel=Ay%C5%9FeKaya) ✨
