@@ -31,6 +31,7 @@
 
 ## 📖 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Devre Teorisi ve Elektronik Devreler Ders Kayıtları Altyazıları](./ders_kayitlari/) ✨
 - 📄 **Not:** [Rayene'in el yazısı notları](./Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.

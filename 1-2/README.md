@@ -37,6 +37,7 @@
 #### 📚 Faydalı Olabilecek Kaynaklar
 
 - 📄 **Çıkmış:** [Çıkmış sorular linki](https://drive.google.com/drive/folders/1UqeiZKjms40t1aZmv70D82XrtBU3jC2C?usp=drive_link) ✨
+- 📄 **Ders Kayıtları:** [Devre Teorisi Ders Kayıtları Altyazıları](./Devre%20Teorisi%20ve%20Elektronik%20Devreler/Devre%20Teorisi/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
@@ -76,6 +77,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [Devre Teorisi ve Elektronik Devreler Ders Kayıtları Altyazıları](./Devre%20Teorisi%20ve%20Elektronik%20Devreler/ders_kayitlari/) ✨
 - 📄 **Not:** [Rayene'in el yazısı notları](./Devre%20Teorisi%20ve%20Elektronik%20Devreler/Elektronik%20Devreler/slaytlar_notlar/2021/RayeneBech.pdf) GitHub render edemiyorsa indirin... ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
