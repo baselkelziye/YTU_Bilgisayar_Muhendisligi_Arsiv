@@ -1,0 +1,7671 @@
+1
+00:00:53,588 --> 00:01:05,048
+Arkadaşlar, merhaba. Bu hafta, geçen haftadan kaldığımız noktadan, Ohm kanunundan ele alarak devam edeceğiz. Kirchhoff akımlar ve gerilimler yasasını göreceğiz.
+
+2
+00:01:05,567 --> 00:01:21,848
+Dersin başında şeyi hatırlatayım, Google Classroom grubunu oluşturdum. Onunla ilgili usus üzerinden mail attım ama yine burada da chat ekranı üzerinden Google Classroom ders grubunu paylaşayım.
+
+3
+00:01:21,848 --> 00:01:25,867
+Direkt linke tıklayarak gruba üye olabiliyorsunuz.
+
+4
+00:01:25,928 --> 00:01:29,608
+Dersle ilgili olarak ders notlarını ve duyuruları yine oradan yapacağız.
+
+5
+00:01:31,087 --> 00:01:33,668
+Dolayısıyla gruba üye olun diye tekrar hatırlatmış olayım.
+
+6
+00:01:33,668 --> 00:01:35,827
+Chat ekranında linkini koydum.
+
+7
+00:01:36,527 --> 00:01:47,168
+Buradan sizde Google Classroom grup linki buradan dersi sizde kendinize ekleyin.
+
+8
+00:01:47,167 --> 00:01:56,147
+Şimdi geçen haftadan kaldığımız noktadan devam edeceğimizi söylemiştik. Bununla ilgili olarak sunum üzerinden devam edelim.
+
+9
+00:02:01,939 --> 00:02:03,819
+Evet, temel olarak bugün göreceklerimiz
+
+10
+00:02:03,819 --> 00:02:05,999
+10 kanunu, Kirşof
+
+11
+00:02:05,999 --> 00:02:07,759
+gerilimler, Kirşof
+
+12
+00:02:07,759 --> 00:02:09,439
+akımlar yasası, daha sonra
+
+13
+00:02:09,439 --> 00:02:12,299
+paralel seri devreler ve sonrasında da
+
+14
+00:02:12,299 --> 00:02:13,900
+gerilim bölücü ve akım bölücü
+
+15
+00:02:13,900 --> 00:02:15,219
+devreleri inceliyor olacağız.
+
+16
+00:02:15,459 --> 00:02:17,679
+Tabi bu şu ana kadar biz sadece bu
+
+17
+00:02:17,679 --> 00:02:19,939
+anlatımı direnç elemanı üzerinden
+
+18
+00:02:19,939 --> 00:02:21,799
+yapacağız. Dolayısıyla direnç elemanını da tanıyor
+
+19
+00:02:21,799 --> 00:02:23,239
+olacağız bu süreç içerisinde.
+
+20
+00:02:24,979 --> 00:02:26,059
+Ve bu şekilde
+
+21
+00:02:26,059 --> 00:02:27,879
+ilerliyor olacağız. Birazcık
+
+22
+00:02:27,879 --> 00:02:29,919
+bu hafta yoğun geçecek
+
+23
+00:02:29,919 --> 00:02:31,619
+ama temel kavram olduğu için zaten
+
+24
+00:02:31,619 --> 00:02:32,599
+bildiğiniz konular olacak.
+
+25
+00:02:33,399 --> 00:02:35,279
+Genel çerçevede hatırlatma
+
+26
+00:02:35,279 --> 00:02:37,679
+babında ilerliyor olacağız.
+
+27
+00:02:39,499 --> 00:02:41,659
+Dediğim gibi bu dersleri
+
+28
+00:02:41,659 --> 00:02:43,499
+inceli olacağız. Öncelikli olarak arkadaşlar
+
+29
+00:02:43,499 --> 00:02:43,899
+bir
+
+30
+00:02:43,899 --> 00:02:47,620
+direnç elemanına ilişkin olarak veya
+
+31
+00:02:47,620 --> 00:02:49,620
+direncin
+
+32
+00:02:49,620 --> 00:02:51,659
+ne olduğuna dair bir tanımlama yapmak
+
+33
+00:02:51,659 --> 00:02:52,179
+gerekiyor.
+
+34
+00:02:53,919 --> 00:02:55,839
+Burada resistivity
+
+35
+00:02:55,839 --> 00:02:57,479
+dediğimiz bir kavram var. Bu
+
+36
+00:02:57,479 --> 00:02:59,159
+temel olarak aslında
+
+37
+00:02:59,159 --> 00:03:01,559
+herhangi bir materyalin kendi
+
+38
+00:03:01,559 --> 00:03:03,599
+yapısıyla ilgili olan bir özellik.
+
+39
+00:03:04,179 --> 00:03:05,439
+Bu aslında birim
+
+40
+00:03:05,439 --> 00:03:07,399
+alan ve birim uzunlukta
+
+41
+00:03:07,399 --> 00:03:09,759
+akıma karşı gösterilmiş olan direnç
+
+42
+00:03:09,759 --> 00:03:11,199
+olarak tanımlanabilir. Yani
+
+43
+00:03:11,199 --> 00:03:12,999
+aslında
+
+44
+00:03:12,999 --> 00:03:15,739
+birim alan
+
+45
+00:03:15,739 --> 00:03:17,579
+ve birim uzunluk için tanımlanan
+
+46
+00:03:17,579 --> 00:03:19,599
+materyal için özel olarak
+
+47
+00:03:19,599 --> 00:03:21,779
+ve unik olarak belli olan
+
+48
+00:03:21,779 --> 00:03:22,439
+bir değer bu.
+
+49
+00:03:23,359 --> 00:03:24,300
+Burada tabii
+
+50
+00:03:24,300 --> 00:03:27,059
+kullanılan materyalin son
+
+51
+00:03:27,059 --> 00:03:31,339
+atomik katmanındaki
+
+52
+00:03:31,340 --> 00:03:33,480
+elektron sayısından veyahut da
+
+53
+00:03:33,480 --> 00:03:35,300
+buradaki sıcaklıkla birlikte
+
+54
+00:03:35,300 --> 00:03:37,320
+veyahut ne kadar serbest
+
+55
+00:03:37,320 --> 00:03:39,300
+elektron olabildiğiyle ilgili olarak
+
+56
+00:03:39,300 --> 00:03:41,340
+resistivity değeri materyelden
+
+57
+00:03:41,340 --> 00:03:43,140
+materyelden değişiklik gösterilebiliyor.
+
+58
+00:03:44,359 --> 00:03:45,520
+Tabi iletken
+
+59
+00:03:45,520 --> 00:03:47,560
+bir madde için bu değer
+
+60
+00:03:47,560 --> 00:03:49,520
+aslında düşük. Çünkü
+
+61
+00:03:49,520 --> 00:03:51,539
+serbest elektron sayısı fazla olduğu
+
+62
+00:03:51,539 --> 00:03:53,439
+için burada bir
+
+63
+00:03:53,439 --> 00:03:55,420
+aslında elektron denizi
+
+64
+00:03:55,420 --> 00:03:57,460
+içerisinde hareket
+
+65
+00:03:57,460 --> 00:03:59,039
+ettiğimizi düşünebiliriz. Dolayısıyla
+
+66
+00:03:59,039 --> 00:04:01,200
+metaller için bu resistivity değeri
+
+67
+00:04:01,199 --> 00:04:03,499
+düşük hatta ihmal edilebilir
+
+68
+00:04:03,499 --> 00:04:04,519
+seviyelerde.
+
+69
+00:04:07,019 --> 00:04:07,939
+Burada
+
+70
+00:04:07,939 --> 00:04:11,579
+tabii miktar, elektron miktarı
+
+71
+00:04:11,579 --> 00:04:13,399
+serbest elektron miktarı etki
+
+72
+00:04:13,399 --> 00:04:15,499
+ettiği gibi aynı zamanda
+
+73
+00:04:15,499 --> 00:04:17,559
+burada bu elektronların mobilitesi
+
+74
+00:04:17,559 --> 00:04:19,380
+de etki ediyor ve dolayısıyla
+
+75
+00:04:19,380 --> 00:04:20,899
+bu mobilitede de
+
+76
+00:04:20,899 --> 00:04:23,160
+bu yüklü parçacıkların
+
+77
+00:04:23,160 --> 00:04:25,519
+hızıyla alakalı. Dolayısıyla
+
+78
+00:04:25,519 --> 00:04:27,039
+materyalden materyale
+
+79
+00:04:27,039 --> 00:04:31,179
+ve aynı zamanda bu malzemenin
+
+80
+00:04:31,179 --> 00:04:33,099
+ucuna uygulanmış olan
+
+81
+00:04:33,099 --> 00:04:34,879
+gerilim
+
+82
+00:04:34,879 --> 00:04:36,979
+potansiyeliyle birlikte değişen bir
+
+83
+00:04:36,979 --> 00:04:39,119
+mobility değeri olduğunu da söylememiz mümkün
+
+84
+00:04:39,119 --> 00:04:39,399
+oluyor.
+
+85
+00:04:40,439 --> 00:04:43,279
+Burada farklı malzemeler
+
+86
+00:04:43,279 --> 00:04:43,839
+için
+
+87
+00:04:43,839 --> 00:04:46,859
+resistivity değerlerini görüyoruz.
+
+88
+00:04:46,939 --> 00:04:48,939
+Resistivity değeri aslında baktığımız zaman
+
+89
+00:04:48,939 --> 00:04:51,019
+birim olarak ohm santimetre
+
+90
+00:04:51,019 --> 00:04:53,059
+birimine sahip. Metalik veya
+
+91
+00:04:53,059 --> 00:04:54,899
+iletgen malzemeler için bunların çok
+
+92
+00:04:54,899 --> 00:04:56,939
+düşük değerlere sahip olduğunu görüyoruz.
+
+93
+00:04:57,419 --> 00:04:58,819
+Yarı iletgenler için ve
+
+94
+00:04:58,819 --> 00:05:00,539
+yalıtkanlar için ise
+
+95
+00:05:00,539 --> 00:05:03,839
+sahip olduğu resistivity değerleri
+
+96
+00:05:03,839 --> 00:05:05,319
+oldukça yüksek bir şekilde
+
+97
+00:05:05,319 --> 00:05:07,599
+karşımıza çıkıyor. Bunları tablo üzerinden
+
+98
+00:05:07,599 --> 00:05:08,399
+görmüş oluyoruz.
+
+99
+00:05:09,479 --> 00:05:11,739
+Resistivity değeri ile direnç arasındaki
+
+100
+00:05:11,739 --> 00:05:13,639
+ilişkiyi nasıl tanıyacağız? Resistivity
+
+101
+00:05:13,639 --> 00:05:14,899
+dediğimiz kavram
+
+102
+00:05:14,899 --> 00:05:17,579
+birim alan ve birim
+
+103
+00:05:17,579 --> 00:05:19,339
+uzunluk için tanımlanan bir yapıydı.
+
+104
+00:05:20,359 --> 00:05:21,399
+Dolayısıyla bunu
+
+105
+00:05:21,399 --> 00:05:25,239
+herhangi bir alan
+
+106
+00:05:25,239 --> 00:05:27,659
+keyfi bir alan değeri ve
+
+107
+00:05:27,659 --> 00:05:29,219
+keyfi bir uzunluk değeri için
+
+108
+00:05:29,219 --> 00:05:31,460
+dikkate aldığımızda
+
+109
+00:05:31,460 --> 00:05:34,119
+bunun etkisi direnç olarak
+
+110
+00:05:34,119 --> 00:05:36,040
+ortaya çıkıyor. Net direnç olarak ortaya
+
+111
+00:05:36,040 --> 00:05:37,939
+çıkıyor. Burada L'den
+
+112
+00:05:37,939 --> 00:05:40,279
+kasıt malzemenin
+
+113
+00:05:40,279 --> 00:05:41,540
+uzunluğu
+
+114
+00:05:41,540 --> 00:05:43,859
+A ile ifade edilirse kesit
+
+115
+00:05:43,859 --> 00:05:46,300
+alanı. Dolayısıyla bir malzemeye
+
+116
+00:05:46,300 --> 00:05:47,960
+ilişkin olarak direnç değerini
+
+117
+00:05:47,960 --> 00:05:49,779
+resistivity değeriyle
+
+118
+00:05:49,779 --> 00:05:51,279
+uzunluğunun çarpımının
+
+119
+00:05:51,279 --> 00:05:53,960
+alan değerine bölünmesi şeklinde ifade edebiliriz.
+
+120
+00:05:54,020 --> 00:05:54,520
+Dolayısıyla
+
+121
+00:05:54,959 --> 00:06:02,959
+Alan değeri büyüdükçe malzemenin direnç değerinin azaldığını, uzunluk arttıkça da direnç değerinin arttığını buradan söyleyebiliriz.
+
+122
+00:06:04,079 --> 00:06:08,439
+Burada Rho ile ifade edilen sabitimiz resistivity değeri.
+
+123
+00:06:08,539 --> 00:06:10,999
+Bu ise malzemeden malzemeye farklılık gösteriyor.
+
+124
+00:06:10,999 --> 00:06:26,699
+Bunun hesaplanmasında da temel olarak malzemenin işte belirli bir oda sıcaklığındaki serbest elektron miktarı ve bunlar üzerinden malzemenin ne kadar serbest elektronu olduğu, birim hacimde ne kadar serbest elektronu olduğu üzerinden yapılan bir hesap.
+
+125
+00:06:26,799 --> 00:06:30,619
+Dolayısıyla malzemeden malzeme farklılık gösteren bir değer olmuş oluyor.
+
+126
+00:06:30,619 --> 00:06:36,199
+Geçen hafta gördüğümüz nokta itibariyle Ohm Kanunu bize şunu söylüyordu.
+
+127
+00:06:36,199 --> 00:06:55,079
+Deneysel olarak görülmüştür ki bir malzemenin, iki terminalli elemanın uçları arasında uygulamış olduğumuz gerilim değerine göre akım değeri doğrusal bir şekilde değişiyorsa, doğru orantılı bir şekilde değişiyorsa bu durumda bu eleman bir direnç elemanıydı.
+
+128
+00:06:55,079 --> 00:07:03,140
+ve bir direnç elemanı uçuşlarındaki gerilim ile akım arasındaki oran aslında malzemeye özgü bir şey olarak ortaya çıkıyordu.
+
+129
+00:07:04,099 --> 00:07:14,359
+Tabi burada devremizi kurduğumuz tel gibi kavramların veya tel gibi elemanların değerlerini ihmal ettiğimiz durum için bunu konuşuyoruz yine.
+
+130
+00:07:14,360 --> 00:07:26,840
+Burada gerilim değeri olarak volt, akım değeri olarak amper değerini tanımlıyoruz.
+
+131
+00:07:27,940 --> 00:07:30,820
+Dolayısıyla ohm kanunu da bu şekilde hatırlamış olduk.
+
+132
+00:07:31,320 --> 00:07:39,200
+Şimdi özel bir takım elemanlar vardı veyahut da bu direnç elemanı diye tanımladığımız elemanın özel uç durumlarından bahsedebiliriz.
+
+133
+00:07:40,159 --> 00:07:49,279
+Bunlardan bir tanesi bu direnç elemanının direnç değerinin çok düşük olduğu hatta sıfıra yaklaştığı durumdan bahsedebiliriz.
+
+134
+00:07:49,279 --> 00:07:52,959
+Bu tür elemanları arkadaşlar kısa devre eleman deniyor.
+
+135
+00:07:53,059 --> 00:08:06,040
+Kısa devre eleman aslında kendisi yerine bir tel koyduğumuzda yani ideal bir tel koyduğumuzda bağlantı elemanı olarak aynı etkiyi gösterecek bir yapı olarak ortaya çıkıyor.
+
+136
+00:08:06,040 --> 00:08:09,360
+Yani R değerimiz direnç değerimizin sıfır olduğunu varsayabiliriz.
+
+137
+00:08:10,239 --> 00:08:16,140
+Eğer direnç değerimiz sıfırsa OM kanundan hareketle bu eleman üzerindeki gerilim düşümü sıfır olacak.
+
+138
+00:08:16,359 --> 00:08:26,239
+Yani buradaki OM kanunu yürüttüğümüzde aslında bize söylediği buradaki V değeri bu elemanın uçları arasındaki gerilim farkı aslında değil mi?
+
+139
+00:08:26,280 --> 00:08:27,420
+Bunu bu şekilde hatırlıyoruz.
+
+140
+00:08:27,519 --> 00:08:30,340
+Yani uçlar arasında ne kadarlık bir gerilim düşümü yapar bu eleman.
+
+141
+00:08:30,459 --> 00:08:31,540
+Bize bunu söylüyordu bu.
+
+142
+00:08:31,540 --> 00:08:34,099
+direnç değeri sıfır olduğu için
+
+143
+00:08:34,099 --> 00:08:36,040
+bunun uçlar arasındaki
+
+144
+00:08:36,040 --> 00:08:37,719
+gerilim düşümü de sıfır olmuş olacak.
+
+145
+00:08:38,280 --> 00:08:39,859
+Bu durumda bu eleman
+
+146
+00:08:39,859 --> 00:08:40,579
+üzerinden
+
+147
+00:08:40,579 --> 00:08:43,739
+ne kadar akım akarsa
+
+148
+00:08:43,739 --> 00:08:45,939
+aksın uçlarında gerilim
+
+149
+00:08:45,939 --> 00:08:47,820
+düşümünün sıfır olduğunu söylemiş oluyoruz.
+
+150
+00:08:47,840 --> 00:08:49,500
+Bu kısa devre elemanına karşılık geliyor.
+
+151
+00:08:50,159 --> 00:08:54,120
+Bunu ilk dersteki
+
+152
+00:08:55,000 --> 00:08:58,180
+ampermetre elemanıyla birlikte özdeşleştirerek
+
+153
+00:08:58,180 --> 00:08:58,980
+hatırlayabiliriz.
+
+154
+00:08:59,819 --> 00:09:03,559
+Ampermetre elemanı da kısa devre eleman eşdeğeri bir yapıdaydı.
+
+155
+00:09:03,839 --> 00:09:05,859
+Devreye bağlarken seri olarak bağlıyorduk.
+
+156
+00:09:05,979 --> 00:09:11,879
+Bağlama şeklimizde devredeki kablo bağlantısını çıkartıp aradaki kopan bağlantıyı ampermetre ile sağlamaktı.
+
+157
+00:09:12,419 --> 00:09:16,659
+Dolayısıyla bütün akım bu eleman üzerinden geçmeliydi ki biz akımı ölçebilelim.
+
+158
+00:09:16,879 --> 00:09:20,119
+Dolayısıyla kısa devre elemanını bu şekilde hatırlayabiliriz.
+
+159
+00:09:20,859 --> 00:09:25,779
+Yine direnç elemanının bir uç durumu ise sonsuz direnç olduğu durum.
+
+160
+00:09:25,779 --> 00:09:27,499
+aslında bu
+
+161
+00:09:27,499 --> 00:09:29,259
+teknik olarak
+
+162
+00:09:29,259 --> 00:09:31,959
+bağlantıyı kopardığımız bir duruma
+
+163
+00:09:31,959 --> 00:09:32,739
+karşılık geliyor.
+
+164
+00:09:34,699 --> 00:09:35,339
+Bunu
+
+165
+00:09:35,339 --> 00:09:38,219
+pratik olarak tanımlayabilmek için ise
+
+166
+00:09:38,219 --> 00:09:39,599
+eleman üzerinden
+
+167
+00:09:39,599 --> 00:09:42,179
+geçen akım değerinin ne olduğunu
+
+168
+00:09:42,179 --> 00:09:43,179
+hesaplamamız lazım.
+
+169
+00:09:44,019 --> 00:09:45,499
+Yine 10 kanundan hareketle
+
+170
+00:09:45,499 --> 00:09:48,039
+elemanın uçları arasındaki geyelim
+
+171
+00:09:48,039 --> 00:09:49,919
+düşümü bölü direnç değeri şeklinde bunu
+
+172
+00:09:49,919 --> 00:09:50,859
+hesaplayabiliriz.
+
+173
+00:09:51,316 --> 00:10:00,076
+Fakat burada direnç değerinin sonsuza doğru gittiği durum için akım değerimiz sıfıra doğru yaklaşacaktır.
+
+174
+00:10:00,895 --> 00:10:05,955
+İdeal durumda da sonsuz dirençli bir eleman üzerinden geçen akım sıfır olarak bunu ifade edebiliriz.
+
+175
+00:10:06,595 --> 00:10:12,996
+Bu ise bu elemanın uçları arasına biz ne kadar gerilim uygularsak uygulayalım.
+
+176
+00:10:13,715 --> 00:10:18,535
+Bu eleman üzerinden akan akım sıfır olacaktır şeklinde özetleyebileceğimiz bir durum oluşturuyor.
+
+177
+00:10:19,535 --> 00:10:24,915
+Yine bu elemanı da hatırlayabilmek için yine ilk derse bahsetmiş olduğumuz voltmetre elemanı düşünebiliriz.
+
+178
+00:10:24,996 --> 00:10:30,435
+Voltmetre elemanı gerilimini ölçmek istediğimiz diğer elemanlara paralel bir şekilde bağlanıyordu.
+
+179
+00:10:31,176 --> 00:10:38,676
+Dolayısıyla üzerinden akım geçmesi durumunda aslında ölçmek istediğimiz eleman ilişkin gerilim ölçümüne bir bozulma olurdu.
+
+180
+00:10:39,415 --> 00:10:47,676
+Dolayısıyla voltmetre elemanı açık devre bir eleman ki üzerinden akım akamasın ve ölçmek istediğimiz eleman ilişkin bunun gerilimini net bir şekilde ölçebilelim.
+
+181
+00:10:47,676 --> 00:10:50,775
+Bu şekilde de bunu hatırlamamız mümkün olacaktır.
+
+182
+00:10:52,955 --> 00:10:58,055
+Direnç tanımı yapabildiğimiz gibi arkadaşlar bir de iletkenlik, conductance tanımı yapabiliriz.
+
+183
+00:10:59,076 --> 00:11:05,356
+Bu iletkenlik kavramı ise direncin çarpıma göre tersi şeklinde bir bölü R şeklinde tanımlayabileceğimiz bir yapı.
+
+184
+00:11:06,055 --> 00:11:13,036
+OM kanundan hareketle biz gerilim bölü akım değerimizi direnç değeri olarak R değeri olarak tanımlayabildiğimiz gibi
+
+185
+00:11:13,036 --> 00:11:22,036
+Benzer şekilde akım bölü gerilim değerimizi de biz iletkenlik cinsinden tanımlayabiliyoruz veya iletkenlik birimi olarak tanımlayabiliyoruz.
+
+186
+00:11:23,856 --> 00:11:39,896
+Direncin birimi ohm olarak tanımlanırken arkadaşlar iletkenliğin birimi Siemens veya ohm'un tersten yazılmış hali şeklinde tanımlayacağımız bir terim olarak ortaya çıkıyor.
+
+187
+00:11:39,895 --> 00:11:46,195
+T-Mens veya Oum'un ters olarak yazılmış hali şeklinde bunu görebilirsiniz.
+
+188
+00:11:46,315 --> 00:11:52,315
+Sembol olarak da Grek alfabesindeki sembolün terse çevrilmiş halini kullanıyoruz.
+
+189
+00:11:53,595 --> 00:12:06,075
+Yine burada iletkenlikle ilgili olarak malzemeye ilişkin kullandığımız malzemenin uzunluk ve kesit alanına bağlı olarak yine hesap yapmamız mümkün.
+
+190
+00:12:06,075 --> 00:12:12,135
+bu iki farklı bakış açısı, bunlardan bir tanesi mesela üstte yazmış olduğumuz, işaretlediğim formül
+
+191
+00:12:12,135 --> 00:12:17,775
+elemanın uçlarına gerilim ve gerilim değeri uyguladığımızda elde ettiğimiz akım değeriyle alakalı bir durum.
+
+192
+00:12:18,615 --> 00:12:22,395
+Diğeri ise malzemenin kendi özelliğinden dolayı hesapladığımız iletkenlik durumu.
+
+193
+00:12:22,495 --> 00:12:25,536
+Bu ikisi birbiriyle örtüşecek şekilde çalışacaktır.
+
+194
+00:12:26,295 --> 00:12:30,275
+Tıpkı direnç değerini hesaplarken kullanmış olduğumuz formüldeki gibi
+
+195
+00:12:30,275 --> 00:12:41,135
+Yani burada resistivity değerinden ve kesit alanıyla malzeme uzunluğundan direnç değerini hesapladığımız gibi iletgenlik değerini de benzer şekilde hesaplamamız mümkün.
+
+196
+00:12:41,295 --> 00:12:46,275
+Bir bölüsü şeklinde olduğu için bir bölüsü üzerinden bunu hesaplıyor biliyoruz.
+
+197
+00:12:47,175 --> 00:12:57,755
+Burada sigma yine malzemeyi özgün olarak hesaplamış olduğumuz veya biliyor olduğumuz hesaplanmış ve verilmiş olan bir değer kondüktiviti değeri.
+
+198
+00:12:57,756 --> 00:13:12,476
+Bu da analoji olarak düşünecek olursak nasıl ki iletkenlik direncin çarpmaya göre tersi ise kondaktivitide rezistivitinin çarpmaya göre tersi olarak benzer değere sahip olmuş oluyor.
+
+199
+00:13:14,715 --> 00:13:23,316
+Yine direnç elemanını tanımaya devam edecek olursak arkadaşlar direnç elemanı üzerinde harcanan gücü şu şekilde bulabiliriz.
+
+200
+00:13:23,316 --> 00:13:34,916
+Güç tanımıyla ilgili olarak ilk derste de görmüştük ki bir elemanın üzerindeki gerilim düşümüyle elemanın üzerinden geçen akım değerinin çarpımı elemanın gücü olarak ortaya çıkıyordu.
+
+201
+00:13:34,916 --> 00:13:44,515
+Eğer bu güç değerimiz pozitifse eleman devreden güç çekiyor, güç değerimiz negatifse devreye güç veriyor anlamında bunları görüyorduk.
+
+202
+00:13:44,884 --> 00:13:55,503
+Şimdi şu ana kadar görmüş olduğumuz akım gerilim OM kanunu ve iletgenlik direnç kavramlarından hareketle güce ilişkin farklı yazım şekilleri elde etmemiz mümkün.
+
+203
+00:13:56,243 --> 00:14:02,144
+Akım çarpı gerilim değeri üzerinden direnç elemanının gücünü hesaplamak istersek yazabileceğimiz durumlardan bir tanesi.
+
+204
+00:14:02,443 --> 00:14:08,363
+Gerilim değerini yine akım çarpı direnç olarak güncelleyip i kare r şeklinde güç değerimizi hesaplamak.
+
+205
+00:14:08,724 --> 00:14:13,083
+Veyahut da akım değerini v bölü r olarak yazarak v kare bölü r şeklinde bunu tanımlayabiliriz.
+
+206
+00:14:13,983 --> 00:14:20,603
+Benzer şekilde yine gerilim değerimizi akım bölü iletkenlik şeklinde yazabildiğimiz için i kare bölü g şeklinde yazabiliriz.
+
+207
+00:14:20,763 --> 00:14:31,963
+Yine benzer şekilde akım değerimizi v çarpı g şeklinde ifade edebildiğimiz için v kare çarpı g şeklinde de yine direnç elemanı üzerinden harcanan güç değeri eş değer olarak hesaplamak mümkün.
+
+208
+00:14:32,483 --> 00:14:37,143
+Bu gösterimlerin direnç ve iletkenlik şeklinde gösterimlerin avantajı nerede?
+
+209
+00:14:37,143 --> 00:14:46,303
+Bunun avantajları arkadaşlar önümüzdeki hafta göreceğimiz düğüm ve çevre denklemleriyle ilişkili olarak ortaya çıkacak.
+
+210
+00:14:46,823 --> 00:15:01,843
+Örneğin düğüm denklemlerini yazarken dirençler üzerinden yazmak ve çevre akımları için formülasyonu yazarken bunu iletgenlik cinsinden yazmak daha basit, daha pratik bir formülasyon elde etmemizi sağlıyor.
+
+211
+00:15:01,843 --> 00:15:06,803
+Dolayısıyla aynı şeyin farklı notasyonlarla ifadesi gibi bunları düşünmemiz mümkün.
+
+212
+00:15:07,143 --> 00:15:12,483
+Şimdi burada güç değerlerimize baktığımız zaman
+
+213
+00:15:12,483 --> 00:15:20,303
+R ve G değerlerini incelediğimizde bunların her zaman için pozitif değerlere sahip olduğunu görebiliriz.
+
+214
+00:15:20,783 --> 00:15:24,723
+Diğer yandan negatif değer alma ihtimali olan gerilim ve akım değerlerine ilişkin
+
+215
+00:15:24,723 --> 00:15:27,323
+hepsinin karesel olarak formüle katıldığını görüyoruz.
+
+216
+00:15:27,863 --> 00:15:30,023
+Dolayısıyla net bir şekilde şunu söyleyebiliriz ki
+
+217
+00:15:30,023 --> 00:15:37,343
+direnç elemanı her zaman için devreden güç çeken, güç tüketen bir eleman olarak ortaya çıkmaktadır.
+
+218
+00:15:40,043 --> 00:15:44,023
+Dolayısıyla bu gücü nasıl biz görüyoruz?
+
+219
+00:15:44,083 --> 00:15:45,503
+Harcanan bu gücü nasıl görüyoruz?
+
+220
+00:15:45,583 --> 00:15:46,623
+Nereye harcıyor bu gücü?
+
+221
+00:15:47,223 --> 00:15:53,283
+Direnç elemanı üzerinden akım aktığı vakit üzerindeki gerilim düşümüyle birlikte
+
+222
+00:15:53,283 --> 00:16:00,963
+bunu oranlı bir şekilde hesapladığımızda elde ettiğimiz güç değeri aslında ısı olarak kaybedilen bir güç olarak ortaya çıkıyor.
+
+223
+00:16:01,063 --> 00:16:07,003
+Dolayısıyla devreden çekmiş olduğu gücü ısıl olarak yayan bir eleman şeklinde bunu düşünebiliriz.
+
+224
+00:16:07,723 --> 00:16:15,023
+Yine direnç elemanının iki uç değeri için inceleme yapacak olursak, açık devre ve kısa devre elemanları için inceleyecek olursak,
+
+225
+00:16:15,743 --> 00:16:18,503
+kısa devre elemanı için ne demiştik?
+
+226
+00:16:18,583 --> 00:16:20,884
+Eleman üzerindeki gerilim düşümü sıfır olacak.
+
+227
+00:16:20,884 --> 00:16:24,003
+Çünkü elemanın herhangi bir direnç gösterme imkanı yok.
+
+228
+00:16:24,344 --> 00:16:26,684
+Dolayısıyla uçlar arasındaki gerilim farkı sıfır.
+
+229
+00:16:26,824 --> 00:16:30,884
+Bundan hareketle bu elemanın gücünün sıfır olduğunu görebiliriz.
+
+230
+00:16:31,523 --> 00:16:43,943
+Yine açık devre eleman için inceleme yaptığımızda da açık devre elemanın üzerinden akan akım sıfır olduğundan dolayı bu elemanın da harcadığı gücü sıfır olarak hesaplamamız mümkün.
+
+231
+00:16:45,023 --> 00:16:49,843
+Şimdi birkaç devre çözümlemesine ilişkin kullanacağımız kavramlar var.
+
+232
+00:16:49,843 --> 00:16:52,783
+Onlardan bahsedelim. Terimsel olarak kavramlarımız var.
+
+233
+00:16:53,883 --> 00:16:57,883
+Birincisi düğüm kavramı. İngilizcesi nod olarak geçiyor. Birinci terim.
+
+234
+00:16:58,663 --> 00:17:05,963
+Bu en az iki elemanın terminallerinin bağlı olduğu nokta olarak tanımlayacağımız bir yapı.
+
+235
+00:17:06,663 --> 00:17:15,623
+Örneğin sağdaki şekilde bir ile işaretlenmiş olan nokta aslında biz düğüm olarak ifade edebiliriz.
+
+236
+00:17:15,623 --> 00:17:21,683
+Düğümler genellikle elemanların terminallerinin birleştiği noktada işaretleniyor.
+
+237
+00:17:22,183 --> 00:17:23,823
+Halbuki şunu da söyleyebiliriz.
+
+238
+00:17:25,403 --> 00:17:31,623
+Bir tel üzerindeki gerilim düşümü sıfır olacağı için aslında şunu söyleyebiliriz.
+
+239
+00:17:32,843 --> 00:17:41,543
+Buradaki işaretlemiş olduğumuz bütün tel, bütün kablolar aslında, elemanlara kadar giden kablolar.
+
+240
+00:17:41,543 --> 00:17:43,623
+aslında bunların hepsi
+
+241
+00:17:43,663 --> 00:17:45,404
+Aynı düğme karşılık geliyor.
+
+242
+00:17:45,503 --> 00:17:46,443
+Bunlar bir düğüm.
+
+243
+00:17:46,563 --> 00:17:49,604
+Yani nokta sol olarak bunu ifade etmek istersem graf üzerinde.
+
+244
+00:17:50,104 --> 00:17:52,443
+Bunların birleştiği yerde bunu işaretliyorum ama
+
+245
+00:17:52,443 --> 00:17:58,363
+buradaki düğümün hepsi, burada işaretlemiş olduğum kabloların hepsi aslında birinci düğüm olarak ifade edebileceğim bir değer.
+
+246
+00:17:59,023 --> 00:18:00,363
+Birinci düğme neler bağlı?
+
+247
+00:18:01,723 --> 00:18:05,344
+Bağımsız akım kaynağımın pozitif terminali bağlı.
+
+248
+00:18:06,363 --> 00:18:08,424
+3 tane direnç elemanım var burada.
+
+249
+00:18:08,424 --> 00:18:11,963
+R1, R2 ve R3 elemanları var.
+
+250
+00:18:11,963 --> 00:18:17,063
+bu R1, R2 ve R3 elemanlarının birer terminali de yine bir numaralı düğme bağlı.
+
+251
+00:18:17,704 --> 00:18:21,643
+Dolayısıyla bu düğme 1, 2, 3, 4 tane elemanın bağlı olduğunu görüyoruz.
+
+252
+00:18:22,384 --> 00:18:26,183
+Burada yine düğümlerden bir tanesini referans olarak seçeceğimizi belirtiyorduk.
+
+253
+00:18:26,283 --> 00:18:29,483
+Dolayısıyla burada iki numaralı düğümü biz referans olarak seçebiliriz.
+
+254
+00:18:30,143 --> 00:18:32,064
+Referans seçtiğimiz düğümün anlamı neydi?
+
+255
+00:18:32,263 --> 00:18:34,423
+Diğer bütün gerilimler, ne gerilim mesela?
+
+256
+00:18:34,903 --> 00:18:37,003
+Burada düğümlerin gerilimlerinden bahsediyoruz.
+
+257
+00:18:37,003 --> 00:18:41,483
+Bu düğüm gerilimleri bu referansa göre, görece hesaplanan değerler.
+
+258
+00:18:42,883 --> 00:18:45,184
+Dolayısıyla bu referans düğümümüze neler bağlı?
+
+259
+00:18:45,283 --> 00:18:53,964
+Yine burada da işaretlemeyi yapacak olursak bu düğüme bağlı bir sonraki elemana kadar giden bütün teller aslında aynı düğümdür.
+
+260
+00:18:53,964 --> 00:18:58,964
+Dolayısıyla burada işaretlemiş olduğumuz yerlerin hepsi aynı gerilim seviyesine sahip.
+
+261
+00:18:59,043 --> 00:19:04,423
+Hatta ben burayı referans olarak seçtiğim için burası sıfır voltluk bir gerilim değerine sahip.
+
+262
+00:19:04,943 --> 00:19:06,083
+Bu düğme neler bağlı?
+
+263
+00:19:06,083 --> 00:19:21,183
+İşte akım kaynağımızın negatif terminali R3, R2 dirençlerimizin birer terminali ve R1 ve R2 dirençlerimizin birer terminali ve R4 numaralı direncimizin de bir terminali bu düğme iki numaralı düğme bağlı.
+
+264
+00:19:21,884 --> 00:19:26,063
+Dolayısıyla burada da iki numaralı düğmede yine dört tane terminalin bağlı olduğunu görüyoruz.
+
+265
+00:19:26,143 --> 00:19:29,063
+Terminal demek elemanların uçları demek aslında.
+
+266
+00:19:29,683 --> 00:19:31,244
+Peki üç numaralı düğmene bağlı?
+
+267
+00:19:31,243 --> 00:19:38,643
+3 numaralı düğme de arkadaşlar gördüğünüz gibi R3 direncinin bir terminali ile R4 direncinin bir terminali bağlı.
+
+268
+00:19:38,723 --> 00:19:42,343
+2 tane elemanın bağlı olduğu bir düğüm olarak ortaya çıkmış oluyor.
+
+269
+00:19:42,443 --> 00:19:45,303
+Dolayısıyla bunun Türkçesi ne olarak ifade edeceğiz?
+
+270
+00:19:45,423 --> 00:19:46,803
+Düğüm olarak geçiyor.
+
+271
+00:19:47,463 --> 00:19:50,203
+İngilizcesi ise nod olarak geçen bir yapı.
+
+272
+00:19:51,903 --> 00:19:55,343
+Bir başka kavram arkadaşlar yol kavramı.
+
+273
+00:19:55,343 --> 00:19:57,243
+bu yol kavramı ise
+
+274
+00:19:57,243 --> 00:20:01,663
+kendini tekrar etmeyen
+
+275
+00:20:01,663 --> 00:20:04,963
+düğümler arası bir network.
+
+276
+00:20:05,303 --> 00:20:07,783
+İçerisinde loop barındırmayacak.
+
+277
+00:20:09,423 --> 00:20:10,963
+Dolayısıyla bakın burada
+
+278
+00:20:10,963 --> 00:20:13,963
+vermiş olduğumuz devre için
+
+279
+00:20:13,963 --> 00:20:16,543
+birden
+
+280
+00:20:16,543 --> 00:20:24,283
+şurası için bunu ele alalım.
+
+281
+00:20:25,083 --> 00:20:34,163
+1 numaralı düğümden 3 numaralı düğüme, 3 numaralı düğümden 2 numaralı düğüme ilerlediğim zaman burada bir yol elde etmiş oluyorum.
+
+282
+00:20:34,283 --> 00:20:38,283
+Burada geçtiğim dirençler 2 tane direnci geçerek bu yolu tamamladım.
+
+283
+00:20:38,283 --> 00:20:44,283
+Veyahut da 1'den yola çıkarak 2'ye, 2'den yola çıkarak 3'e gittiğim başka bir yol da tanımlayabilirim.
+
+284
+00:20:44,903 --> 00:20:51,503
+Burada önemli olan herhangi bir nodun tekrar bu dizi içerisinde yer almaması.
+
+285
+00:20:51,623 --> 00:20:53,384
+Bu PET olarak tanımlanan bir yapı.
+
+286
+00:20:53,384 --> 00:20:56,303
+Şimdi loop veya çevrim kavramı var.
+
+287
+00:20:57,044 --> 00:20:59,083
+Çevre veya çevrim diye geçiyor.
+
+288
+00:21:00,344 --> 00:21:04,264
+Bu kavram, burada da önemli olan node ve loop kavramları.
+
+289
+00:21:05,363 --> 00:21:10,124
+Loop kavramında ise başlangıç ve bitiş düğümünün aynı olma koşulu var.
+
+290
+00:21:10,264 --> 00:21:20,583
+Dolayısıyla burada mesela 3 numaralı düğümden başlayıp 3'den 1'e, 1'den 2'ye, 2'den tekrar 3'e geldiğimiz durum.
+
+291
+00:21:20,583 --> 00:21:22,024
+Yani şöyle çizecek olursak.
+
+292
+00:21:23,423 --> 00:21:24,583
+Nasıl vermiş?
+
+293
+00:21:24,684 --> 00:21:25,524
+3'ten 1'e.
+
+294
+00:21:28,263 --> 00:21:28,583
+Bakayım.
+
+295
+00:21:29,303 --> 00:21:31,903
+Başka bir çizim şeklimiz var mı?
+
+296
+00:21:32,343 --> 00:21:33,723
+Şunu koyabilmiş.
+
+297
+00:21:39,763 --> 00:21:54,743
+Neyse, işaretle gösterelim. 3 numaralı düğümden hareketle geldim. 1 numaralı düğüme geldim. 1 numaralı düğümden 2 numaralı düğüme geçtim. Bu yolla da ilerlemem mümkün. Buradaki yolla da ilerlemem mümkün. Bu başka bir loop oluşturuyor.
+
+298
+00:21:54,743 --> 00:22:02,944
+3'ten çıktığım bire şu soldaki direnç üzerinden 2. düğme ve tekrar 3. düğme geldiğim loop ise başka bir çevrim oluşturuyor.
+
+299
+00:22:02,944 --> 00:22:10,423
+Burada hangi elemanlardan geçiyorsan, farklı elemanlardan geçiyorsan bu yine farklı bir çevrim olarak ortaya çıkıyor.
+
+300
+00:22:10,483 --> 00:22:11,963
+Bir soru var galiba soruyu alalım.
+
+301
+00:22:13,103 --> 00:22:16,383
+Hocam loopların kendisi pad sayılmıyor değil mi?
+
+302
+00:22:17,063 --> 00:22:23,343
+Şimdi burada koşul olarak şunu söylemiştik ya, pad içerisinde bir düğümün tekrar etmemesi gerekiyordu.
+
+303
+00:22:23,343 --> 00:22:28,443
+loop'lar dolayısıyla başlangıç ve bitiş düğümleri aynı olduğu için bir pet olarak tanımlayamıyoruz onu.
+
+304
+00:22:29,283 --> 00:22:30,203
+Tamam hocam sağ olun.
+
+305
+00:22:30,503 --> 00:22:31,283
+Farklılar yani.
+
+306
+00:22:32,363 --> 00:22:32,603
+Tamam.
+
+307
+00:22:33,583 --> 00:22:35,323
+Bir de branch kavramı var.
+
+308
+00:22:35,323 --> 00:22:45,083
+Branch kavramı ise birden ikiye gittiğimiz durum için ele alalım.
+
+309
+00:22:46,243 --> 00:22:49,303
+Aslında pet kavramının bir alt bileşeni bu.
+
+310
+00:22:49,304 --> 00:23:08,564
+Sadece bir elemanı içeren durum. Bir elemanı geçen iki terminali veya iki düğümü tanımlayan durum. Bizim için burada önemli olanlar arkadaşlar özellikle node kavramı önemli bir de loop kavramı önemli. Diğerleri de yardımcı tanımlar şeklinde düşünebilirsiniz.
+
+311
+00:23:08,563 --> 00:23:21,443
+Node dediğimiz zaman, Node'un aslında aynı gerilime sahip birbirine komşu tellerle birlikte tanımlayabildiğimiz bir komşuluk olduğunu mutlaka hatırlayalım.
+
+312
+00:23:21,444 --> 00:23:39,944
+Loop'un ise başlangıç ve bitiş düğümü aynı olan bir çevrimi içerdiğini, kapalı bir çevrimi içerdiğini, farklı elemanlardan geçen çevrimlerin farklı loop'lar olduğunu, her bir loop için farklı bir denklem bütününü veya denklem takımını yazabileceğimizi hatırlayalım.
+
+313
+00:23:39,944 --> 00:23:47,223
+Bunu da bu bilgiyi de devre elemanlarıyla ilişkin gelirim ve akım değerlerini çözerken kullanmaya çalışacağız zaten.
+
+314
+00:23:56,564 --> 00:24:09,363
+Örneğin verilen devre için devredeki eleman sayılarını belirleyelim.
+
+315
+00:24:09,363 --> 00:24:27,363
+Burada bir bağımsız gerilim kaynağımız AB düğme arasında bir direncimiz BE düğme arasında direncimiz BCCD ve FD arasında birer direncimiz olduğunu görüyoruz.
+
+316
+00:24:27,363 --> 00:24:42,363
+B'den C'ye, C'den D'ye ilerlediğimizde bu bir kapalı çevrim oluşturmamakla birlikte bu bir PET yapısı oluşturuyor.
+
+317
+00:24:42,363 --> 00:24:42,883
+oluşturuyor.
+
+318
+00:24:44,723 --> 00:24:45,924
+Yine benzer şekilde
+
+319
+00:24:45,924 --> 00:24:48,084
+E'den D'ye
+
+320
+00:24:48,084 --> 00:24:50,203
+D'den C'ye, C'den
+
+321
+00:24:50,203 --> 00:24:52,183
+B'ye, B'den E'ye
+
+322
+00:24:52,183 --> 00:24:53,803
+dolaştığımız bir yapı ise
+
+323
+00:24:53,803 --> 00:24:56,523
+bu aslında başlangıç ve bitiş düğümleri
+
+324
+00:24:56,523 --> 00:24:57,543
+ortak olduğu için
+
+325
+00:24:57,543 --> 00:25:00,403
+burada bir çevrim oluşturmuş
+
+326
+00:25:00,403 --> 00:25:02,223
+oluyoruz. Yani kavramsal olarak bu şekilde
+
+327
+00:25:02,223 --> 00:25:03,964
+düşünebiliriz. Bu arada
+
+328
+00:25:03,964 --> 00:25:06,424
+E ve D şeklinde işaretlenmiş olan
+
+329
+00:25:06,424 --> 00:25:08,244
+iki farklı düğüm şeklinde işaretlenmiş
+
+330
+00:25:08,244 --> 00:25:10,004
+olan düğümlerin aynı
+
+331
+00:25:10,004 --> 00:25:12,343
+olduğunu, eşdeğer olduğunu söyleyebiliriz.
+
+332
+00:25:12,363 --> 00:25:14,343
+dolayısıyla bunlar tek bir düğme karşılık
+
+333
+00:25:14,343 --> 00:25:16,303
+geliyor. Dolayısıyla burada
+
+334
+00:25:16,303 --> 00:25:18,343
+yine C ve F
+
+335
+00:25:18,343 --> 00:25:19,963
+aynı zamanda G ile
+
+336
+00:25:19,963 --> 00:25:21,763
+işaretlenmiş olan uçlarında
+
+337
+00:25:21,763 --> 00:25:24,263
+gerilim düşümü olmadığı için birbirine
+
+338
+00:25:24,263 --> 00:25:26,443
+komşu doğrudan gidilebilir herhangi bir eleman
+
+339
+00:25:26,443 --> 00:25:27,663
+geçmeden gezilebilir
+
+340
+00:25:27,663 --> 00:25:30,363
+noktaları olduğunda düşünecek olursak
+
+341
+00:25:30,363 --> 00:25:32,423
+C, F ve G düğümlerinin
+
+342
+00:25:32,423 --> 00:25:34,383
+de eş değer eş düğümler olduğunu
+
+343
+00:25:34,383 --> 00:25:35,903
+söylememiz mümkün.
+
+344
+00:25:37,023 --> 00:25:38,343
+Örnek üzerinden ilerlediğimizde bunu
+
+345
+00:25:38,343 --> 00:25:39,243
+elde etmiş oluyoruz. Şimdi
+
+346
+00:25:39,244 --> 00:25:44,224
+Kirchhoff'un akımlar kanununa gelecek olursak arkadaşlar,
+
+347
+00:25:45,504 --> 00:25:49,163
+Kirchhoff'un akımlar kanunu bize şunu söylüyor.
+
+348
+00:25:50,343 --> 00:25:55,824
+Herhangi bir düğme giren ve çıkan akım toplamı sıfır değerine eşittir.
+
+349
+00:25:56,864 --> 00:26:00,004
+Bunu bir başka ifadeyle söylemek gerekirse,
+
+350
+00:26:00,004 --> 00:26:07,804
+bir düğme giren akımları, pozitif çıkan akımları negatif yönde olarak ifade edebiliriz veya ters yönde ifade edebiliriz.
+
+351
+00:26:07,803 --> 00:26:10,603
+Dolayısıyla bunların birbirine eşit olması da gerekiyor.
+
+352
+00:26:10,703 --> 00:26:16,743
+Yani giren akımların toplamıyla çıkan akımların toplamı birbirine eşittir şeklinde bunu da dönüştürmek mümkün.
+
+353
+00:26:17,423 --> 00:26:22,263
+Bunu aslında kapalı bir eğri üzerinde de düşünebiliriz.
+
+354
+00:26:22,383 --> 00:26:27,683
+Devre üzerindeki herhangi bir elemanları kapsayıcı şekilde bir eğri çizdiğimizde
+
+355
+00:26:27,683 --> 00:26:33,423
+bu eğri üzerinden giren akımlarla bu eğrinin dışına çıkan akımların
+
+356
+00:26:33,423 --> 00:26:37,243
+yine toplamının sıfır olması gerektiği şeklinde de bunu özetleyebiliriz.
+
+357
+00:26:37,243 --> 00:26:46,064
+Pratik olarak ise herhangi bir düğme giren akımlarla çıkan akımlar toplamı sıfırı verecektir diye bunu düşünmemiz mümkün.
+
+358
+00:26:46,143 --> 00:26:50,303
+Tabi burada yükün korunumundan hareketle bunu söyleyebiliyoruz.
+
+359
+00:26:50,403 --> 00:26:55,564
+Toplam yük değişmeyeceği için, kapalı bir sistem olduğu için, toplam yükün değişmesi mümkün olmadığı için
+
+360
+00:26:55,564 --> 00:27:03,443
+buraya herhangi bir düğme giren akımla çıkan akımların toplamının sıfır olması gerektiğini söylemiş oluyoruz.
+
+361
+00:27:03,443 --> 00:27:12,103
+Burada özellikle göreceğiniz haliyle bir düğme giren akımları pozitif yönlü tanımladık.
+
+362
+00:27:12,943 --> 00:27:19,243
+Yine düğümden ayrılan, düğümden dışarı doğru giden akımları ise negatif yönlü olarak tanımlamamız mümkün.
+
+363
+00:27:19,923 --> 00:27:24,503
+Formülü bu şekilde de veya Kirşof'un akım kanunu bu şekilde de ifade edebiliriz.
+
+364
+00:27:25,023 --> 00:27:30,663
+Veyahut da giren akımları eksi yönlü, çıkan akımları artı yönlü tanımlamamız da mümkün.
+
+365
+00:27:31,483 --> 00:27:37,583
+Bunu düğüm içerisinde tutarlı bir şekilde yaptıktan sonra düğümden düğüme farklı bir şekilde verebiliriz.
+
+366
+00:27:37,583 --> 00:27:44,263
+Sıkıntı yok ama düğüm içinde girenlerin işaretiyle çıkanların işaretinin aynı olmasına dikkat etmemiz gerekiyor.
+
+367
+00:27:45,083 --> 00:27:47,923
+Kirşof'un gerilimler kanunu ise bize şunu söylüyor.
+
+368
+00:27:47,924 --> 00:27:51,183
+herhangi bir devre içerisinde
+
+369
+00:27:51,599 --> 00:28:10,239
+Çok gözlü bir devre de olabilir bu. Tek gözlü bir devre de olabilir. Herhangi bir çevrim içerisinde dolaştığımız vakit bu çevrim içerisindeki yer alan elemanların gerilim toplamı, her bir eleman üzerindeki gerilim düşümlerinin toplamı sıfırı vermek durumunda.
+
+370
+00:28:10,239 --> 00:28:23,620
+Bu da enerjinin elemanlar üzerindeki harcanmış olan güçle de alakalı bir şekilde de bunu söyleyebiliriz.
+
+371
+00:28:23,679 --> 00:28:31,979
+Örneğin tek çevrim bir devrimiz varsa burada toplam gücün sıfır olmasından hareketle de bunu çıkartmamız mümkün.
+
+372
+00:28:31,979 --> 00:28:36,159
+Tek çevrim olduğu için her bir elemandan geçecek akım aynıdır.
+
+373
+00:28:36,159 --> 00:28:42,179
+Dolayısıyla bu bize elemanların gerilim düşünülenin toplamının sıfır olacağını da getirmiş olur.
+
+374
+00:28:43,359 --> 00:28:45,899
+Burada çevrimden kasıt loop arkadaşlar.
+
+375
+00:28:46,139 --> 00:28:47,679
+Yine loop kavramını hatırlayalım.
+
+376
+00:28:47,819 --> 00:28:52,619
+Burada loop kavramına ilişkin olarak az önce mesela ne demiştik?
+
+377
+00:28:52,819 --> 00:28:55,879
+Düğme giren akımları biz pozitif yönünü tanımlayalım.
+
+378
+00:28:55,999 --> 00:28:58,619
+Referans yönü olarak çıkanları negatif tanımlayalım.
+
+379
+00:28:59,139 --> 00:29:05,939
+Burada da benzer bir şekilde çevrim için arkadaşlar kullandığımız çevrim için biz bir tane yön belirliyor olalım.
+
+380
+00:29:05,939 --> 00:29:08,319
+mesela şu yönü belirlemiş olalım.
+
+381
+00:29:08,959 --> 00:29:10,219
+Buna ilişkin olarak bu
+
+382
+00:29:10,219 --> 00:29:12,279
+çevrim yönünü düşündüğümüzde bir
+
+383
+00:29:12,279 --> 00:29:14,439
+numaralı elemanın gerilim düşümü
+
+384
+00:29:14,439 --> 00:29:16,699
+uçları arasında şu yönünü ilerlediğimizde
+
+385
+00:29:16,699 --> 00:29:18,239
+uçları arasındaki gerilim
+
+386
+00:29:18,239 --> 00:29:20,919
+düşümü negatif. Yani bu uca
+
+387
+00:29:20,919 --> 00:29:22,279
+göre daha düşük bir
+
+388
+00:29:22,279 --> 00:29:24,739
+potansiyele sahip. Dolayısıyla bu elemanın
+
+389
+00:29:24,739 --> 00:29:26,339
+gerilim değerini eksi V1
+
+390
+00:29:26,339 --> 00:29:27,960
+olarak hesaba kattık.
+
+391
+00:29:28,819 --> 00:29:30,299
+Ama yön bu
+
+392
+00:29:30,299 --> 00:29:31,779
+şekilde bir yön seçtiğim için.
+
+393
+00:29:32,239 --> 00:29:33,999
+Çizmiş olduğum yönü seçtiğim için.
+
+394
+00:29:34,639 --> 00:29:35,639
+İkinci elemana ilişkin
+
+395
+00:29:35,640 --> 00:29:37,780
+İkin olarak uçlar arasındaki gerilim
+
+396
+00:29:37,780 --> 00:29:39,860
+düşümü benim seçmiş olduğum çevre
+
+397
+00:29:39,860 --> 00:29:41,780
+yönüyle uyumlu. Dolayısıyla artı V2
+
+398
+00:29:41,780 --> 00:29:43,879
+üçüncü eleman içinde çevre
+
+399
+00:29:43,879 --> 00:29:45,839
+yönümü elemanın
+
+400
+00:29:45,839 --> 00:29:47,879
+uçlar arasındaki gerilim düşümüyle
+
+401
+00:29:47,879 --> 00:29:49,900
+ters yönlü olduğu için yine eksi V3
+
+402
+00:29:49,900 --> 00:29:51,820
+değerine denkleme katıp
+
+403
+00:29:51,820 --> 00:29:53,400
+eksi V1 artı V2
+
+404
+00:29:53,400 --> 00:29:55,640
+eksi V3 eşittir sıfır şeklinde
+
+405
+00:29:55,640 --> 00:29:57,699
+Kirşof bir gerilim kanunu
+
+406
+00:29:57,699 --> 00:30:00,019
+tanımlayabiliriz. Veya benzer şekilde
+
+407
+00:30:00,019 --> 00:30:01,799
+burada seçmiş olduğum
+
+408
+00:30:01,799 --> 00:30:03,719
+çevre yönünü bu şekilde
+
+409
+00:30:03,719 --> 00:30:05,419
+tanımlarsam. Bu durumda
+
+410
+00:30:05,419 --> 00:30:06,939
+V3 numaralı elemanın
+
+411
+00:30:06,939 --> 00:30:09,639
+gerilim düşümü tanımladığım yönle uyumlu
+
+412
+00:30:09,639 --> 00:30:11,719
+V2'ninki ters, V1'inki aynı.
+
+413
+00:30:12,219 --> 00:30:13,659
+Dolayısıyla aynı yönle olanlar
+
+414
+00:30:13,659 --> 00:30:15,659
+artı, dolayısıyla artı V1
+
+415
+00:30:15,659 --> 00:30:17,659
+eksi V2 artı V3 eşittir sıfır
+
+416
+00:30:17,659 --> 00:30:18,820
+şeklinde de yazabilirim.
+
+417
+00:30:20,179 --> 00:30:21,859
+Burada da yine az önce yaptığımız
+
+418
+00:30:21,859 --> 00:30:23,599
+gibi yani akım kanununda yaptığımız
+
+419
+00:30:23,599 --> 00:30:25,839
+gibi herhangi bir çevrim
+
+420
+00:30:25,839 --> 00:30:27,460
+için, herhangi bir loop için
+
+421
+00:30:27,460 --> 00:30:28,979
+çevre yönünü
+
+422
+00:30:28,979 --> 00:30:31,439
+tutarlı bir şekilde belirleyip
+
+423
+00:30:31,439 --> 00:30:33,639
+farklı çevreler için, farklı looplar
+
+424
+00:30:33,639 --> 00:30:35,579
+için yönler farklı olabilir ama bir çevre
+
+425
+00:30:35,579 --> 00:30:37,539
+için bunu tutarlı bir şekilde tanımlarsam
+
+426
+00:30:37,539 --> 00:30:39,559
+burada yazacağım Kirchhoff
+
+427
+00:30:39,559 --> 00:30:41,279
+gerilimler kanununa dayanan
+
+428
+00:30:41,279 --> 00:30:43,679
+denklemim tutarlı olmuş olacaktır.
+
+429
+00:30:44,419 --> 00:30:45,459
+Dolayısıyla Kirchhoff'un
+
+430
+00:30:45,459 --> 00:30:47,759
+gerilimler kanunu da bu şekilde özetlememiz
+
+431
+00:30:47,759 --> 00:30:49,739
+mümkün. Birisi
+
+432
+00:30:49,739 --> 00:30:51,579
+diyor ki bir düğme giren ve
+
+433
+00:30:51,579 --> 00:30:53,439
+çıkan akımların toplamı sıfırdır.
+
+434
+00:30:53,979 --> 00:30:55,799
+Diğeri de diyor ki bir çevrim içerisinde
+
+435
+00:30:55,799 --> 00:30:57,339
+bu çok gözlü bir devre de olabilir.
+
+436
+00:30:57,820 --> 00:30:59,739
+Bunun herhangi bir çevrim için, herhangi
+
+437
+00:30:59,739 --> 00:31:00,699
+bir loopu için
+
+438
+00:31:00,699 --> 00:31:03,339
+çevre üzerindeki
+
+439
+00:31:03,339 --> 00:31:05,279
+gerilim toplamı sıfır
+
+440
+00:31:05,279 --> 00:31:07,439
+olmak durumunda bunu belirtmiş oluyor.
+
+441
+00:31:15,059 --> 00:31:30,099
+Şimdi bir örnek üzerinden hareket etmek gerekirse, Kirchhoff'un akımlar kanunu kullanarak burada bizden R3 elemanı üzerinden geçen akım değerini belirlememiz isteniyor.
+
+442
+00:31:30,099 --> 00:31:46,199
+Burada bizim bildiğimiz düğüm üzerinden giren ve çıkan akımların toplamının sıfır olması gerektiği devreyi incelediğimiz vakit devrede şöyle işaretleyerek gösterelim.
+
+443
+00:31:53,748 --> 00:32:05,727
+görüyorsunuz herhalde. Burada bir bağımsız akım kaynağımız var. Bağımsız akım kaynağı bizim için belirleyici bir yapı oluşturmuş oluyor.
+
+444
+00:32:10,508 --> 00:32:21,727
+İki tane düğüm için hesaplama yapmamız uygun olacak. Bunlardan bir tanesi şuradaki düğüm, ikincisi ise buradaki düğüm için. Bunu düşünebiliriz.
+
+445
+00:32:21,727 --> 00:32:32,707
+görünebiliriz. Bu düğümlerin aynı tel üzerinde olduğunu da varsayacak olursak aslında ortak bir düğüm. Şuradaki düğüm için biz hesabımızı yapabiliyor olacağız.
+
+446
+00:32:39,539 --> 00:33:08,759
+bize ek bir bilgi olarak bir de şu verilmiş. Bağımsız gerilim kaynağımız üzerinden 3 amperlik bir akım çekildiği bilgisi de verilmiş. Bu bilgileri kullanarak aslında tek bir düğüm üzerinden Kirchhoff'un akım kanunu kullanarak hesabımızı yapmamız mümkün. Şuradaki düğümü tek bir düğüm olarak ele alalım. Burada akım kaynağımızdan dolayı bu düğme doğru giren 5 amperlik bir akım olduğunu görüyoruz.
+
+447
+00:33:08,759 --> 00:33:37,760
+Bu düğümden çıkan iyi akımı var. Yine düğümden çıkan 2 amperlik bir akımımız var. Yine bu düğme giren şeyle gerilim kaynağımızla uygun referans yönünde verilen ve aslında burada ipucunu da şuradan alalım. Bu gerilim kaynağı sisteme 3 amperlik bir akım sağlıyor dediğine göre kendi referansıyla uyumlu bir yönde bunu sağlayacak. Dolayısıyla şu yönde de 3 amperlik bir akım tanımlamamız mümkün.
+
+448
+00:33:37,759 --> 00:33:51,639
+O zaman elimizde bir düğüm var. 5 amper, 3 amper, 2 amper ve İ şeklinde tanımlayabileceğimiz bir düğümle karşılaşmış oluyoruz.
+
+449
+00:33:51,699 --> 00:33:56,359
+Buradan düğüm değerini çektiğimiz vakit İ değerinin 8 girdi, 2 çıktı.
+
+450
+00:33:56,499 --> 00:34:00,919
+Dolayısıyla İ için 6 amperlik bir değer kaldığını söylememiz mümkün.
+
+451
+00:34:00,919 --> 00:34:13,859
+Burada bunu bilebilmek için tabi doğal olarak şu ana kadar gördüğümüz konuyla bunu bilebilmek için şu gerilim kaynağı üzerinden 3 amperlik akım geçiyor bilgisini biliyor olmamız gerekiyor.
+
+452
+00:34:14,459 --> 00:34:15,499
+Soru var galiba.
+
+453
+00:34:16,499 --> 00:34:21,359
+Hocam şey bu R2'de 2 amperi kendi mi verdi yoksa biz bir yerde mi bulduk?
+
+454
+00:34:21,359 --> 00:34:22,639
+R2'ye girerken.
+
+455
+00:34:22,639 --> 00:34:26,539
+R2 elemanı üzerinden geçen akımın da 2 amper olduğu verilmiş bize.
+
+456
+00:34:26,739 --> 00:34:27,599
+Yani devre üzerinde.
+
+457
+00:34:28,339 --> 00:34:29,099
+Tamam hocam.
+
+458
+00:34:29,099 --> 00:34:31,539
+Verilenlerle çizdik yani bunları
+
+459
+00:34:31,539 --> 00:34:34,359
+Hocam
+
+460
+00:34:34,359 --> 00:34:35,580
+Efendim
+
+461
+00:34:35,580 --> 00:34:37,679
+Evet, sildiğiniz zaman
+
+462
+00:34:37,679 --> 00:34:40,519
+Şu akım kaynağından
+
+463
+00:34:40,519 --> 00:34:48,039
+Voltaj kaynağına doğru bir, gerilim kaynağına doğru bir akım gitmesi durumu var mı?
+
+464
+00:34:49,120 --> 00:34:49,819
+Şimdi bize
+
+465
+00:34:49,819 --> 00:34:56,879
+Yani bunu direnç elemanların değerlerine göre, buralar gerilim düşümlerine göre bulmamız gerekiyor ama
+
+466
+00:34:56,879 --> 00:35:07,120
+Bize net olarak söylenen gerilim kaynağının bunların etkisine rağmen devreye 3 amperlik bir akım sağladı.
+
+467
+00:35:07,120 --> 00:35:09,039
+Yani bu yönlü 3 amperlik bir akım var.
+
+468
+00:35:09,700 --> 00:35:14,779
+Bunu işte direnç elemanları, yani başka türlü örneklerde şöyle karşılaşacağız.
+
+469
+00:35:15,279 --> 00:35:20,939
+İşte bize direnç elemanların değerlerini verecek, devredeki diğer kaynak değerleri de mevcut.
+
+470
+00:35:21,359 --> 00:35:25,359
+Biz bunlardan hareketle buradaki 3 amper yani akım değerini bulmaya çalışacağız.
+
+471
+00:35:25,359 --> 00:35:35,699
+Bunlara rağmen kaynak sisteme 3 amperlik akım verebiliyormuş. Şu andaki soruda verilen bilgiyle bu kadarını anlayabiliyoruz.
+
+472
+00:35:43,635 --> 00:35:44,815
+Devam edecek olursak.
+
+473
+00:35:50,915 --> 00:35:52,976
+Yani basit bir örnek ama
+
+474
+00:35:52,976 --> 00:35:55,096
+yine tek bir düğüm üzerinden
+
+475
+00:35:55,096 --> 00:35:56,955
+giren ve çıkan akımlar cinsinden
+
+476
+00:35:56,955 --> 00:35:58,535
+verilen bir durum var.
+
+477
+00:35:59,215 --> 00:36:01,095
+İşte İB
+
+478
+00:36:01,095 --> 00:36:03,215
+verilmediği durumda diğer akım değerleri
+
+479
+00:36:03,215 --> 00:36:05,035
+verilmiş. İşte İE verilmediği durumda
+
+480
+00:36:05,035 --> 00:36:06,295
+diğer akım değerleri verilmiş.
+
+481
+00:36:06,816 --> 00:36:08,896
+Yine bu düğüm içerisinde giren ve çıkan akım
+
+482
+00:36:08,896 --> 00:36:10,675
+değerlerini referans olarak doğru bir şekilde
+
+483
+00:36:10,675 --> 00:36:12,535
+yazdığımızda bunu çözebiliyoruz. Yani
+
+484
+00:36:12,535 --> 00:36:14,755
+i a artı i b
+
+485
+00:36:14,755 --> 00:36:17,195
+eksi i c eksi i e
+
+486
+00:36:17,195 --> 00:36:19,115
+eksi i d'nin sıfır olması gerekiyor.
+
+487
+00:36:19,676 --> 00:36:21,476
+Bununla birlikte değerleri yerine koyarak
+
+488
+00:36:21,476 --> 00:36:23,075
+istenilen, verilen ve
+
+489
+00:36:23,075 --> 00:36:25,075
+istenilen değerleri
+
+490
+00:36:25,075 --> 00:36:26,615
+bulmamız mümkün oluyor.
+
+491
+00:36:26,775 --> 00:36:28,356
+Dolayısıyla çok üzerinde durmayacağım.
+
+492
+00:36:29,875 --> 00:36:31,676
+Yine benzer bir örnek.
+
+493
+00:36:34,455 --> 00:36:35,335
+Bir düğüm için
+
+494
+00:36:35,335 --> 00:36:38,975
+yine incelediğimiz bir durum.
+
+495
+00:36:40,216 --> 00:36:41,055
+Şöyle gelsin.
+
+496
+00:36:41,055 --> 00:36:49,395
+Burada gerilim kaynağı üzerinden düğme doğru akan akım değerini bilmiyoruz.
+
+497
+00:36:49,975 --> 00:36:53,735
+Ama bununla birlikte diğer elemanlar üzerinden geçen akımları biliyoruz.
+
+498
+00:36:53,735 --> 00:36:58,856
+Bu durumda I akımını bulmak yine bu düğme giren ve çıkan akımlar cinsinden bulmamız mümkün.
+
+499
+00:36:59,375 --> 00:37:05,496
+Gerilim kaynakları için referans akım yönümüzü eksi terminalinden artı terminaline doğru tanımlıyorduk hatırlayacak olursanız.
+
+500
+00:37:05,635 --> 00:37:10,755
+Burada da elektronların akım yönü negatif terminalden pozitif terminale doğruydu.
+
+501
+00:37:10,755 --> 00:37:18,155
+Ama baktığımız zaman aslında ters yönde de pozitif yüklü, sanal pozitif yüklerin hareket ettiği bir senaryo olmuş oluyordu.
+
+502
+00:37:18,715 --> 00:37:21,055
+Bu da zaten akım olarak tanımladığımız durumdu.
+
+503
+00:37:21,095 --> 00:37:27,295
+Dolayısıyla akım yönü kaynağın içinden eksiden artıya doğru tanımladığımız yön olarak ortaya çıkıyordu referans olarak.
+
+504
+00:37:27,435 --> 00:37:29,095
+Burada da ona uyumlu bir şekilde verilmiş.
+
+505
+00:37:29,955 --> 00:37:32,895
+Bu durumda diğer kollardaki akım değerlerimizi de görüyoruz.
+
+506
+00:37:32,955 --> 00:37:38,315
+1.9 giren yönde, 0.5 giren yönde, 3 çıkan yönde, yine I giren yönde.
+
+507
+00:37:38,316 --> 00:37:41,695
+Dolayısıyla girenlerin toplamı çıkana işte olacak.
+
+508
+00:37:41,835 --> 00:37:46,835
+Dolayısıyla I akımımız 0.6 mA olarak bir değere sahip olmuş oluyor.
+
+509
+00:37:47,475 --> 00:37:55,255
+Devredeki elemanlara göre farklı elemanlar kullanıldığı vakit I'yi ben bu yönde seçmiş olmama rağmen I eğer negatif çıkmış olsaydı bunun anlamı neydi?
+
+510
+00:37:56,195 --> 00:38:03,695
+Devrede devreye güç sağlayan başka bir eleman var ve bu gerilim kaynağı devreden güç tüketiyor anlamına gelecekti.
+
+511
+00:38:03,695 --> 00:38:18,516
+Fakat burada baktığımız vakit akım yönü ve gerilim yönü dikkate aldığımız vakit bu elemanın gücü 3x0.6 mA'dan 1.8 mW olarak elde edeceğimiz bir değer ve negatif bir değer.
+
+512
+00:38:18,675 --> 00:38:23,815
+Dolayısıyla bu eleman devreye güç sağlıyor olarak bunu hesaplamamız mümkün oluyor.
+
+513
+00:38:24,796 --> 00:38:30,695
+Yine benzer bir örnek için bunu ele alacak olacak az önce söylediğimiz durum.
+
+514
+00:38:30,695 --> 00:38:38,076
+aynı örnek için giren akım değerlerini pozitif yönlü çıkanları negatif yönlü olarak aldığımızda
+
+515
+00:38:38,076 --> 00:38:42,315
+I akımını bu sefer eksi 1.6 mA olarak bulmuş oluyoruz.
+
+516
+00:38:42,375 --> 00:38:43,375
+Bunun anlamı ne demek?
+
+517
+00:38:43,875 --> 00:38:48,895
+Devrede görmediğimiz bir tarafta devreye güç sağlayan başka bir eleman var.
+
+518
+00:38:48,895 --> 00:38:55,076
+Bununla birlikte bu gerilim kaynağı üzerinde ters yönlü bir akım da oluşturuyor.
+
+519
+00:38:55,175 --> 00:38:58,936
+Bu durumda zaten bu gerilim kaynağı aslında devreden güç çekiyor.
+
+520
+00:38:58,936 --> 00:39:01,376
+Ne demek bu? Aslında şarj oluyor gibi düşünebiliriz.
+
+521
+00:39:01,816 --> 00:39:04,876
+Devreden güç çeken, güç tüketen bir eleman olarak çalışıyor.
+
+522
+00:39:05,036 --> 00:39:11,216
+Akımın negatif yönlü olmasının etkisi de gerilim kaynağı için böyle bir sonuç oluşturuyor.
+
+523
+00:39:14,675 --> 00:39:36,395
+Şimdi aynı problemi farklı bir bakış açısıyla ele alalım. Burada yine Kirchhoff'ın akımlar kanunu kullanarak I akımını bulmamız mümkün. Fakat burada verilenler az önceki verilenlerden farklı. Burada ise her bir eleman üzerinde akım, gerilim, düşümleri verilmiş. Yani elemanların terminalleri arasındaki gerilim farkı bize verilmiş.
+
+524
+00:39:36,395 --> 00:39:58,915
+Bu durumda biz bunu kullanarak elemanların her bir üzerinde geçen akımı bulabiliriz. Örneğin R1 direnci üzerinden geçen akımı artıdan eksiye doğru bir referans yönünde tanımlayan yani elemandaki gerilim düşümüyle uyumlu olacak şekilde.
+
+525
+00:39:58,915 --> 00:40:23,335
+Dolayısıyla şurada bir İ1 akımı tanımlayalım. Yine artıdan eksiye doğru olacak şekilde burada İ2 akımı tanımlayalım. Yine artıdan eksiye olacak şekilde İ3 akımı tanımlayalım. Bu durumda I1 neye eşit olacak? I1, I2 ve I3'ün toplamına eşit olacak. I1, I2 ve I3'ü nasıl bulacağız? Onları da Ohm kanundan faydalanarak bulmamız mümkün.
+
+526
+00:40:23,335 --> 00:40:29,815
+Örneğin şu elemanı dikkate alacak olursak eleman üzerindeki gerilim düşümü 2 volt.
+
+527
+00:40:29,815 --> 00:40:35,355
+Yani burada da aslında izleyeceğimiz yol Ohm kanunu V bölü R şeklinde hareket edeceğiz.
+
+528
+00:40:35,475 --> 00:40:38,215
+Dolayısıyla 2 bölü 7K.
+
+529
+00:40:38,435 --> 00:40:40,415
+Dolayısıyla bu neye karşılık gelecek?
+
+530
+00:40:40,755 --> 00:40:51,135
+2 bölü 7000'den elde ettiğimiz değer işte mili amper cinsinden bir değer olacak.
+
+531
+00:40:51,575 --> 00:40:53,315
+Biraz sonra hesaplarını benzer şekilde.
+
+532
+00:40:53,335 --> 00:41:01,915
+İ2 için de 4 volt bölü 2K hesabını yaptığımız zaman burada da 2 miliamperlik bir değer elde edeceğiz.
+
+533
+00:41:02,075 --> 00:41:09,995
+I3 için ise 1.75 volt bölü 5K'dan hareket edecek olursak kaç oluyor?
+
+534
+00:41:11,435 --> 00:41:17,715
+0.35 miliamper gibi bir değer oluyor herhalde.
+
+535
+00:41:17,716 --> 00:41:46,276
+bir sorum vardı bakalım. I1'de 0.29 mA olarak hesaplamış diyecek. Teşekkür ederiz. 0.29 mA. Dolayısıyla bu değerleri de kullanarak bizim I akımını hesaplamamız mümkün. I artı I3 artı I2 eşittir I1 olacaktı. Buradan hareketle buradan hareketle de yine Ohm kanunu kullanarak
+
+536
+00:41:47,715 --> 00:42:06,015
+değerimizi eksi 2.06 mA olarak bulmamız mümkün. Yine devreden güç çeken bir gerilim kaynağı durumu söz konusu olmuş oluyor. Bu örneğimizle birlikte de silelim.
+
+537
+00:42:13,876 --> 00:42:23,235
+Şimdi akımlar kanununda olduğu gibi gerilimler kanundan hareketle de eleman gerilimlerini bulmamız mümkün.
+
+538
+00:42:23,836 --> 00:42:27,275
+Akımlar kanunu kullanarak kollardaki akımları bulduk.
+
+539
+00:42:27,376 --> 00:42:31,155
+Düğümden ayrılan veya düğüme giren herhangi bir koldaki akımı bulmamız mümkündü.
+
+540
+00:42:31,835 --> 00:42:36,755
+Gerilimler kanunu kullanarak da arkadaşlar herhangi bir elemanın gerilim değerini bulmamız mümkün olacak.
+
+541
+00:42:36,755 --> 00:42:40,195
+Burada yine iki örneğimiz var.
+
+542
+00:42:40,195 --> 00:42:42,355
+bu iki örnek üzerinden hareket edecek olursak
+
+543
+00:42:42,355 --> 00:42:44,056
+seçilen referans yönü
+
+544
+00:42:44,056 --> 00:42:46,195
+gösterilen şekilde saat yönünde
+
+545
+00:42:46,195 --> 00:42:47,635
+bir çevrim yönü.
+
+546
+00:42:48,195 --> 00:42:50,416
+Bu durumda eğer ki bu çevrim yönümüzle
+
+547
+00:42:50,416 --> 00:42:52,315
+ters yönlü
+
+548
+00:42:52,315 --> 00:42:54,216
+olarak bir eleman varsa bunun
+
+549
+00:42:54,216 --> 00:42:56,416
+gerilim düşümünü eksi olarak alıyorduk.
+
+550
+00:42:56,515 --> 00:42:58,195
+Böyle bir notasyon
+
+551
+00:42:58,195 --> 00:43:00,155
+kullanalım demiştik. Ona sadık kalalım.
+
+552
+00:43:00,695 --> 00:43:02,115
+Dolayısıyla burada
+
+553
+00:43:02,115 --> 00:43:06,075
+birinci devre
+
+554
+00:43:06,075 --> 00:43:08,515
+örneğimiz için hareket edecek olursak
+
+555
+00:43:08,515 --> 00:43:09,956
+eksi
+
+556
+00:43:09,955 --> 00:43:11,315
+5 volt. Çünkü
+
+557
+00:43:11,315 --> 00:43:12,875
+çevrim yönümüz
+
+558
+00:43:12,875 --> 00:43:15,135
+elemanın
+
+559
+00:43:15,135 --> 00:43:17,835
+eksi terminalinden gelerek ilerliyor.
+
+560
+00:43:18,115 --> 00:43:19,675
+Eksi 7 volt.
+
+561
+00:43:20,456 --> 00:43:21,495
+Burada da eleman için
+
+562
+00:43:21,495 --> 00:43:23,855
+artı Vx gerilimi eşittir.
+
+563
+00:43:24,355 --> 00:43:25,795
+0 volt olacak. Bu durumda
+
+564
+00:43:25,795 --> 00:43:27,275
+Vx gerilimimizin
+
+565
+00:43:27,275 --> 00:43:29,575
+12 volt olduğunu söyleyebiliriz. Burada
+
+566
+00:43:29,575 --> 00:43:32,035
+tek çevrim bir göz olduğu için
+
+567
+00:43:32,035 --> 00:43:34,755
+kolda akan
+
+568
+00:43:34,755 --> 00:43:37,315
+i akımını da yine
+
+569
+00:43:37,315 --> 00:43:39,895
+aslında direnç elemanı
+
+570
+00:43:39,895 --> 00:43:42,135
+üzerinden geçen akım olarak da
+
+571
+00:43:42,135 --> 00:43:43,876
+hesaplamamız mümkün. Dolayısıyla bu
+
+572
+00:43:43,876 --> 00:43:46,035
+direnç elemanı üzerindeki geçen akımı hesaplayıp
+
+573
+00:43:46,035 --> 00:43:47,655
+bunu ana kol akımı olduğunu
+
+574
+00:43:47,655 --> 00:43:50,035
+söyleyebileceğiz. Dolayısıyla 12 volt bölü
+
+575
+00:43:50,035 --> 00:43:51,855
+100 amperden 0
+
+576
+00:43:51,855 --> 00:43:54,055
+bölgül 12 amperlik bir
+
+577
+00:43:54,055 --> 00:43:55,975
+0 bölgül 12 amperlik bir
+
+578
+00:43:55,975 --> 00:43:58,035
+akımın da devrede aktığını söylememiz
+
+579
+00:43:58,035 --> 00:43:59,876
+mümkün. Yine ikinci örneği
+
+580
+00:43:59,876 --> 00:44:02,175
+ele alacak olursak burada seçmiş olduğumuz
+
+581
+00:44:02,175 --> 00:44:03,775
+referans çevre yönü yine
+
+582
+00:44:03,775 --> 00:44:04,736
+saat yönünde
+
+583
+00:44:04,736 --> 00:44:07,815
+elemanlardan birinci
+
+584
+00:44:07,815 --> 00:44:09,635
+gerilim kaynağına uyumlu
+
+585
+00:44:09,635 --> 00:44:11,095
+referans yönünde bir
+
+586
+00:44:11,095 --> 00:44:14,175
+yön seçmişiz. Dolayısıyla 3 volt
+
+587
+00:44:14,175 --> 00:44:16,355
+artı 1 volt
+
+588
+00:44:16,355 --> 00:44:18,095
+artı Vx
+
+589
+00:44:18,095 --> 00:44:20,235
+eşittir 0 olacak. Bu durumda
+
+590
+00:44:20,235 --> 00:44:22,195
+Vx gerilimimiz eksi 4 volt
+
+591
+00:44:22,195 --> 00:44:23,615
+olduğunu söylememiz mümkün.
+
+592
+00:44:24,975 --> 00:44:26,376
+Bu durumda Ix akımı
+
+593
+00:44:26,376 --> 00:44:27,876
+için veyahut da
+
+594
+00:44:27,876 --> 00:44:29,915
+ana kol akımı da oluyor bu
+
+595
+00:44:29,915 --> 00:44:31,755
+aynı zamanda. Ana koldan
+
+596
+00:44:31,755 --> 00:44:33,915
+geçen akım direnç elemanı üzerinden
+
+597
+00:44:33,915 --> 00:44:36,175
+geçen akım olacak. Dolayısıyla direnç elemanının
+
+598
+00:44:36,175 --> 00:44:37,775
+akımını hesaplayayım.
+
+599
+00:44:37,775 --> 00:44:48,655
+Bu da Vx bölü 10'dan dolayısıyla eksi 4 bölü 10 dolayısıyla 0.4 amperlik bir değer olmuş oluyor.
+
+600
+00:44:48,736 --> 00:44:58,995
+Dolayısıyla burada ben yönü böyle seçmiş olsam bile aslında burada akan akım bu yönlü akan akımın eksi 0.4 amper olduğunu söyleyebiliriz.
+
+601
+00:44:59,415 --> 00:45:02,455
+Veya bir başka deyişle aynı devreyi ben tekrar çizmiş olsam.
+
+602
+00:45:07,027 --> 00:45:23,767
+ben bu devre üzerinde akan akımı ters yönlü olarak 0.4 amper olarak da tanımlayabilirim. Bu ikisinin aynı şey olduğunu daha önceki dersimizde de söylemiştik zaten. Dolayısıyla elemana ilişkin, devreye ilişkin çözümlemelerimizi bu şekilde yapmamız mümkün.
+
+603
+00:45:27,923 --> 00:45:31,043
+Şimdi yine, şöyle birazcık ilerletelim.
+
+604
+00:45:38,483 --> 00:45:48,723
+Şimdi az önceki yaptığımız örnek tek gözlü bir devreydi. Fakat biz Kirchhoff'un gerilim kanunu çok gözlü devrelerde de kullanabiliriz.
+
+605
+00:45:50,543 --> 00:46:03,623
+Bunu yaparken yine izleyeceğimiz yol bir çevrim yönü belirleyip bu çevrim yönü doğrultusunda çevrimi kapattığımızda bu çevrime giren bütün elemanların gerilim değerleri toplamının sıfır olmasını sağlamak.
+
+606
+00:46:03,623 --> 00:46:24,403
+Burada aslında iki tane çevrim olmakla birlikte göreceğiniz üzere birinci göz için, şuradaki gözümüz için R2 direnci üzerindeki gerilim düşümü aslında koldaki diğer kaynaklara ve devre elemanlarına bağlı olarak belirlenebiliyor.
+
+607
+00:46:24,403 --> 00:46:26,123
+Çünkü onların değerini biliyoruz.
+
+608
+00:46:26,123 --> 00:46:40,344
+Dolayısıyla verilen yönde saat yönünde yine bir çevre seçtiğimiz vakit çevrim seçtiğimiz vakit çevrim yönü seçtiğimizde bu birinci çevrim için gerilim değerlerimizin hesabını yazalım.
+
+609
+00:46:40,344 --> 00:46:55,344
+Şöyle şuna bir diyelim. Birinci çevrim için bunu yazacak olursak seçmiş olduğumuz yön ile ilgili elemanın gerilim düşüm yönleri doğru olduğu için burayı 4 volt olarak ele alacağız.
+
+610
+00:46:55,344 --> 00:47:03,043
+diğer eleman için çevre yönümüzle referanslar ters yönlendirilmesi için eksi 36 volt.
+
+611
+00:47:03,903 --> 00:47:11,004
+Bir de VR2 elemanımız var. Bunun artısından eksisine doğru ilerlediği için VR2 eşittir sıfır olarak bunu alabiliriz.
+
+612
+00:47:11,064 --> 00:47:17,323
+Bu durumda VR2 gerilim değerimizin 32 volt olarak gerçekleştiğini bulmuş oluyoruz.
+
+613
+00:47:17,364 --> 00:47:22,223
+Burası demek ki 32 volt olarak verilen referansta hesaplamak mümkün.
+
+614
+00:47:22,223 --> 00:47:29,883
+Şimdi aynı işlemi ikinci çevre için yapacağız ve ikinci çevre için bunu yaptığımızda da
+
+615
+00:47:34,099 --> 00:47:40,939
+Burada A ve B terminalleri arasındaki farkı bulmaya çalışacağız. Gerilim farkını bulmaya çalışacağız.
+
+616
+00:47:41,040 --> 00:47:49,839
+Bunu yaparken burada değerini bilmediğimiz bir takım elemanlar var. Ama biz referans olarak şu noktayı seçecek olursak arkadaşlar,
+
+617
+00:47:50,700 --> 00:47:57,419
+aslında biz çevremizi bu kadar uzun bir çevre olarak seçmek durumunda değiliz. Çevremizi şöyle de tamamlayabiliriz.
+
+618
+00:47:57,419 --> 00:48:04,479
+Bakın bu VR2 elemanından geçtim. 12 volt gerilim düşümü olan direnç elemanından geçtim.
+
+619
+00:48:05,120 --> 00:48:10,099
+Fasulye elemanından geçtim ve daha sonra AB terminalinden çevreyi bitirmem de mümkün.
+
+620
+00:48:11,059 --> 00:48:19,219
+Dolayısıyla burada iki farklı çevre de alabilirim. İkinci çevrede B terminalinden başlar, B düğümünden başlar, A düğümünden geçer.
+
+621
+00:48:19,979 --> 00:48:23,280
+Diğer elemanlardan geçerek tekrar B düğümüne dönmemiz mümkün.
+
+622
+00:48:23,280 --> 00:48:28,680
+Dolayısıyla ben burada da seçtiğim çevre, şu ilk çizmiş olduğum 2 ile işaretlemiş olduğum çevre olsun.
+
+623
+00:48:29,320 --> 00:48:36,839
+Bu durumda bu çevreyle ters referansda eksi Vr'ye 2 gerilim var. Dolayısıyla eksi 32 volt şurada yazdık.
+
+624
+00:48:37,460 --> 00:48:41,479
+Daha sonra direnç elemanımız var. Bununla uyumlu olarak 12 voltluk yönü seçtim.
+
+625
+00:48:42,180 --> 00:48:46,019
+Fasulye elemanı için yine doğru yönlü olarak 14 volt değerimiz var.
+
+626
+00:48:46,019 --> 00:48:54,379
+ve son olarak da A, B düğümleri arasındaki artıdan eksiye doğru tanımlanmış olan Vx gerilim düşümü var.
+
+627
+00:48:55,039 --> 00:48:57,499
+Bu Vx değerini de buraya bu şekilde yazmamız mümkün.
+
+628
+00:48:57,599 --> 00:49:05,599
+Dolayısıyla artık Vx gerilimini çektiğimizde bunu da şurası 26-32 6 volt olarak elde etmemiz mümkün.
+
+629
+00:49:05,599 --> 00:49:13,219
+Bu da çevre tanımlamasına ilişkin bir esnekliğe sahip olduğumuzu bize göstermiş oluyor kabaca.
+
+630
+00:49:25,780 --> 00:49:35,080
+Aynı örnek üzerinden hareketle değerler biraz değişik fakat yine VR2'yi bularak başlayacağız. Aynı yöntem yönümüzü seçtik.
+
+631
+00:49:36,339 --> 00:49:46,319
+Şimdi bakın burada şu referans yönler ve değerler bizi şaşırtmasın. Referans yön doğru olduğu için buradaki değeri olduğu gibi kullanacağım.
+
+632
+00:49:46,319 --> 00:49:55,459
+Dolayısıyla eksi 8 volt, eksi 12 volt, artı VR2 sıfır olacak. Dolayısıyla VR2'yi 20 volt olarak bulmamız mümkün.
+
+633
+00:49:55,780 --> 00:50:11,820
+Bu durumda VR1 gerilimini bize vermiş. VR1 neresi? Şuradaki gerilim değerimiz. Bu bizde mevcut iken biz Vx gerilimini bulacağız yine.
+
+634
+00:50:16,596 --> 00:50:20,035
+Yine aynı mantık çerçevesinde hareket etmemiz mümkün.
+
+635
+00:50:23,699 --> 00:50:51,120
+büyük çevrim, buradaki çevrim üzerinden hareket edersek, VR1 gerilimimizi biliyoruz. V2 gerilimini buradan hesapladık. 24 volt. Aslında burada da sorulan Vx, Vx'i yine benzer şekilde bulmamız mümkün ama herhalde soruda bir hata var. Şunu V2'yi sorduğunu varsayarak düzeltmiş olalım. Ben de hemen not olarak şuradan bunu düzelteyim.
+
+636
+00:50:57,012 --> 00:51:18,371
+Bu da bir hata olmuş. Dolayısıyla özel bir çevrim tanımlamadan, büyük çevrim üzerinden bunu yapabildik. Bir kontrol edeyim. Saati 54 geçiyor. Kaç örneğimiz kaldı? Örnekler birbiriyle benzer olduğu için çok da tekrar etmemek adına kontrol ediyorum.
+
+637
+00:51:24,148 --> 00:51:31,367
+Şimdi az önceki örneğimiz iki gözlü bir devreydi. Üç gözlü bir devre içinde benzer bir durum söz konusu olabilir.
+
+638
+00:51:32,427 --> 00:51:41,867
+Burada yalnız dikkat edecek olursanız bir tane bağımsız akım kaynağımız var. Bu bağımsız akım kaynağını gerilim kanununda nasıl devreye alacağız?
+
+639
+00:51:43,748 --> 00:51:53,827
+Şunu hatırlayacak olursak aslında gayet rahat bir şekilde alabiliriz. Bir akım kaynağının özelliği şuydu. Bağlı olduğu kola üzerinde yazılan değer kadar akımını sağlıyordu.
+
+640
+00:51:54,148 --> 00:52:00,368
+üzerindeki gerilim düşmüyse devredeki diğer elemanlar tarafından belirlenen bir durumdu.
+
+641
+00:52:00,427 --> 00:52:04,087
+Dolayısıyla bunu dikkate alarak devrimizi çözmemiz mümkün.
+
+642
+00:52:04,947 --> 00:52:07,668
+Burada bizden Vx gerilimini bulmamız isteniyor.
+
+643
+00:52:08,767 --> 00:52:11,668
+Devrede verilen çeşitli akım ve gerilim değerleri var.
+
+644
+00:52:11,787 --> 00:52:13,908
+Bunları kullanarak hesaplamamızı yapacağız.
+
+645
+00:52:14,668 --> 00:52:16,347
+Şöyle hareket edelim.
+
+646
+00:52:16,447 --> 00:52:18,988
+Birinci çevrimden hareket edecek olursak,
+
+647
+00:52:18,988 --> 00:52:21,388
+Şunları tekrar alayım şöyle.
+
+648
+00:52:22,368 --> 00:52:28,067
+Şurada birinci çevrim olarak işaretlenmiş olduğumuz çevrimden hareket edecek olursak
+
+649
+00:52:28,067 --> 00:52:33,427
+eksi 60 volt artı V8 artı V10 sıfıra eşit.
+
+650
+00:52:33,427 --> 00:52:37,668
+Burada V8 değerini Ohm kanundan bulmamız mümkün.
+
+651
+00:52:38,467 --> 00:52:47,588
+Akım ve gerilim düşüm referansları aynı yönlü olduğu için bu eleman üzerindeki işaretlenmiş olan artı eksi yönündeki gerilim düşümü
+
+652
+00:52:47,587 --> 00:53:03,527
+40 volt olacaktır. Dolayısıyla burada V10 gerilimimizi 20 volt olarak bulmamız mümkün. Daha sonra iki numaralı işaretlemiş olduğumuz çevrimde hareket etmemiz mümkün.
+
+653
+00:53:06,947 --> 00:53:16,587
+Bir saniye bir şey kontrol edeceğim. İkinci çevrim üzerinden hareket etmemiz mümkün. Burada yalnız şeyi bilmiyoruz. Bakın burada.
+
+654
+00:53:17,587 --> 00:53:28,687
+İki ohmluk direnç üzerinden akan akım değerini bilmiyoruz. Dolayısıyla bu şekilde hareket etmek belki bir eksikliğe sebep olacak.
+
+655
+00:53:29,627 --> 00:53:37,307
+Fakat şöyle hareket edebiliriz. V10 elemanının gerilim değerini biz 20 volt olarak bulduk.
+
+656
+00:53:37,307 --> 00:53:43,487
+Dolayısıyla İ10 akım değerimizi ohm kanundan hareketle 2 amper olarak hesaplamamız mümkün.
+
+657
+00:53:43,487 --> 00:54:02,347
+Bu durumda 5 amper düğme giriyor. 2 amper çıkmış. Dolayısıyla I4 akımının da bu durumda ne olması gerekiyor? 3 amper değerine sahip olması gerekiyor. Bunu görüyoruz. I4'ü yanlış mesaflıyor. 3 amper olması gerekiyor.
+
+658
+00:54:07,059 --> 00:54:19,039
+Dolayısıyla artık V4 elemanın üzerinden 3 Amper akıyor. 4 Ohm'luk bir direnç. O zaman V4 değerimizde biz 12 Volt olarak, gerilim düşümünde 12 Volt olarak bulmamız mümkün.
+
+659
+00:54:19,039 --> 00:54:34,039
+İşte bu durumda, şimdi artık bu çevreyi kullanıp I2'yi hesaplamama gerek var mı? I2'yi hesaplamama gerek yok. Buradaki çevreyi aslında ben daha pratik olacak şekilde şu çevre olarak seçsem,
+
+660
+00:54:34,039 --> 00:54:47,939
+Zaten iki tane bildiğim değer var. Bir de ilgilendiğim değer. Üç tane değişkenle ikisini biliyorum. Bu çevreyi çözmem mümkün. O zaman bu yönlü olarak seçmiş olduğum çevre yönüyle ilişkili olarak
+
+661
+00:54:47,939 --> 00:55:09,059
+eksi V10 artı V4 artı Vx'in 0 olduğunu söyleyebiliriz. V10 değerimiz 20 volttu. Eksi 20 artı 12 volt artı Vx eşittir 0. Bu durumda da Vx'i 8 volt olarak elde etmemiz mümkün.
+
+662
+00:55:09,059 --> 00:55:24,280
+Bunu bir adım daha ilerletmek istersek aslında şuradaki I2 üzerinden çözmek istersek burada aslında buradaki akım kaynağımızın değeriyle ilişkilendirmemiz gerekiyor.
+
+663
+00:55:24,280 --> 00:55:36,280
+Fakat biz sadece gerilim değeriyle ilgilendiğimiz için farklı bir çevre alarak buradaki I2 akımının atmış olduğu iki ohmluk direnci ekarte edip devremizi çözmüş oluyoruz.
+
+664
+00:55:41,940 --> 00:55:52,940
+Burada özel bir durum var mı? Onu kontrol edeyim. Yine benzer şekilde farklı çevreler almamız mümkün.
+
+665
+00:55:55,284 --> 00:55:58,863
+Benzer örnekler olduğundan dolayı geçiyorum bunları arkadaşlar.
+
+666
+00:56:00,863 --> 00:56:01,923
+Soru var herhalde.
+
+667
+00:56:05,652 --> 00:56:31,511
+Şimdi bunu AC gibi göstermiş ama bunları şunu belki farklı bir kaynak koyamadığı için böyle konulmuştur. Bunları görmezden gelebilirsiniz. Yani bunlar DC kaynak. Çünkü değerimiz DC olduğu için bunlar DC kaynak. Normalde bu sembol AC kaynak sembolü fakat koyarken hatalı konulmuş. Onları DC kaynak olarak düşünmemiz uygun olur.
+
+668
+00:56:31,511 --> 00:56:46,091
+Aynı örnek olduğu için arkadaşlar benzer veyahut da aynı örnekler olduğu için sizin incelemenize bırakarak bu chapter'ı böyle kapatıyorum.
+
+669
+00:56:46,091 --> 00:56:57,871
+Şimdi saatimizde 3 olduğu için bir ara verelim 10 dakika kadar. Daha sonrasında ise yine konumuz devam ediyor olacak.
+
+670
+00:56:57,871 --> 00:57:04,111
+Burada da yine seri ve paralel devrelere ilişkin tanımlamaları yapıyor olacağız.
+
+671
+00:57:04,231 --> 00:57:05,991
+Dolayısıyla şimdi bir 10 dakika ara vereceğim.
+
+672
+00:57:06,331 --> 00:57:09,011
+Sorunuz varsa şu ana kadar olanlarla ilgili sorabilirsiniz.
+
+673
+00:57:10,351 --> 00:57:12,971
+15'i 10 geçe dersimize devam edeceğiz.
+
+674
+00:57:17,940 --> 00:57:21,219
+Sorunuz varsa sorabilirsiniz bu arada. Ben bilgisayar başındayım.
+
+675
+01:08:27,060 --> 01:08:29,359
+Evet arkadaşlar, devam edelim kaldığımız yerden.
+
+676
+01:08:31,159 --> 01:08:36,079
+Şimdi seri ve paralel devreleri ilişkin olarak konuyu inceleyeceğiz.
+
+677
+01:08:46,484 --> 01:08:50,924
+Öncelikli olarak tek çevrimli bir devreyi ele alalım.
+
+678
+01:08:51,283 --> 01:08:58,383
+Bu devre üzerinde biz Kirchhoff gerilim kanunu uyguladığımızda aslında şunu göreceğiz.
+
+679
+01:08:58,603 --> 01:09:02,943
+Buradaki her bir eleman üzerinden geçen akım aynı olacak.
+
+680
+01:09:02,943 --> 01:09:06,703
+dolayısıyla
+
+681
+01:09:06,703 --> 01:09:08,803
+bu şekildeki bir
+
+682
+01:09:08,803 --> 01:09:10,763
+devre yapısında
+
+683
+01:09:10,763 --> 01:09:13,443
+üzerinden geçen akımın
+
+684
+01:09:13,443 --> 01:09:15,883
+aynı olduğu
+
+685
+01:09:15,883 --> 01:09:17,663
+elemanlar için, yani matematiksel olarak
+
+686
+01:09:17,663 --> 01:09:19,603
+aynı sonucu vermesinden bahsetmiyorum.
+
+687
+01:09:20,423 --> 01:09:21,524
+Mesela buradaki
+
+688
+01:09:21,524 --> 01:09:23,803
+kaynak değerlerini değiştirdiğimizde
+
+689
+01:09:23,803 --> 01:09:24,204
+diğer
+
+690
+01:09:24,204 --> 01:09:27,704
+ana koldan geçen akım her bir eleman için
+
+691
+01:09:27,704 --> 01:09:29,984
+aynı şekilde değişecektir. Aslında bunu kastediyoruz.
+
+692
+01:09:31,003 --> 01:09:31,863
+Böyle bir durum için
+
+693
+01:09:31,863 --> 01:09:36,863
+aslında bu devredeki bütün elemanların birbirine seri olarak bağlandığını söyleyebiliriz.
+
+694
+01:09:38,703 --> 01:09:41,103
+Tabii bu genel olarak söyleyebileceğimiz bir durum.
+
+695
+01:09:41,203 --> 01:09:48,083
+Özelliğinde ise bu bir tek çevrim devri olduğu için bu tek çevrim devreye ilişkin bilinmeyenleri bulmak isteyebiliriz.
+
+696
+01:09:49,303 --> 01:09:58,984
+Örneğin devremizde eğer ki bir akım kaynağı varsa bu akım kaynağı zaten devredeki ana kol akımını belirleyen bir değer olacaktır.
+
+697
+01:09:59,823 --> 01:10:10,644
+Eğer eleman olarak sadece bağımsız gerilim kaynaklarımız varsa ve bunların değerlerini biliyorsak bu durumda ana kol akımını şu şekilde hesaplamamız mümkün.
+
+698
+01:10:12,064 --> 01:10:14,844
+Yine burada bir çevrim seçtiğimizi düşünelim.
+
+699
+01:10:14,963 --> 01:10:16,463
+Çevrim yönü seçtiğimizi düşünelim.
+
+700
+01:10:16,603 --> 01:10:18,424
+Saat yönünde bir çevrim yönü seçmiş olalım.
+
+701
+01:10:18,524 --> 01:10:23,183
+Burada iyi ana kol akımının yönüyle eşit değer bir şekilde seçmiş olalım.
+
+702
+01:10:23,183 --> 01:10:30,903
+Bu durumda eksi vs1 artı vr1 artı vs2 artı vr2 şeklinde.
+
+703
+01:10:31,283 --> 01:10:37,663
+Tabi devreye göre bu yönler farklılık gösterebilir, tanımlar farklılık gösterebilir ama bu örnek için bu şekilde yazmamız mümkün.
+
+704
+01:10:39,523 --> 01:10:41,523
+Bunun sıfır eşit olduğunu söyleyebiliriz.
+
+705
+01:10:42,603 --> 01:10:49,623
+Daha sonrasında 10 kanundan faydalanarak r1 direnci üzerindeki yerim düşümünün i çarpı r1 olduğunu,
+
+706
+01:10:49,623 --> 01:10:51,744
+R2 direnç üzerindeki yerim düşümünde
+
+707
+01:10:51,744 --> 01:10:54,083
+i çarpı R2 olduğunu söyleyebiliriz.
+
+708
+01:10:54,143 --> 01:10:55,963
+Bu durumda bu devreye
+
+709
+01:10:55,963 --> 01:10:58,103
+özel olarak ana kol akım değerinin
+
+710
+01:10:58,103 --> 01:10:59,943
+yönleri farklı
+
+711
+01:10:59,943 --> 01:11:01,683
+olduğundan dolayı
+
+712
+01:11:01,683 --> 01:11:03,963
+VS1 ile VS2 arasındaki
+
+713
+01:11:03,963 --> 01:11:06,064
+farkın R1 artı
+
+714
+01:11:06,064 --> 01:11:08,064
+R2 direncine bölüm şeklinde olduğunu
+
+715
+01:11:08,064 --> 01:11:09,123
+söylememiz mümkün.
+
+716
+01:11:09,784 --> 01:11:12,263
+Aslında baktığımızda burada R1 artı
+
+717
+01:11:12,263 --> 01:11:14,344
+R2 biraz sonra da göreceğiz.
+
+718
+01:11:15,804 --> 01:11:16,644
+Devredeki
+
+719
+01:11:16,644 --> 01:11:18,123
+seri dirençlere karşılık
+
+720
+01:11:18,123 --> 01:11:20,004
+gelmiş olacak. Seri direnç eş değerine
+
+721
+01:11:20,004 --> 01:11:21,064
+karşılık gelmiş olacak.
+
+722
+01:11:22,123 --> 01:11:23,424
+Vs1-
+
+723
+01:11:23,424 --> 01:11:26,103
+Vs2 ise buradaki
+
+724
+01:11:26,103 --> 01:11:28,064
+net gerilim düşümüne karşılık
+
+725
+01:11:28,064 --> 01:11:29,924
+gelmiş olacak. Kaynak net gerilim düşümüne
+
+726
+01:11:29,924 --> 01:11:31,803
+karşılık gelmiş olacak. Dolayısıyla
+
+727
+01:11:31,803 --> 01:11:34,023
+özetle devredeki
+
+728
+01:11:34,023 --> 01:11:35,903
+gerilim kaynaklarının toplamının
+
+729
+01:11:35,903 --> 01:11:37,963
+devredeki dirençlerin
+
+730
+01:11:37,963 --> 01:11:40,163
+toplamına bölümü ana kol akımını
+
+731
+01:11:40,163 --> 01:11:42,224
+bize veriyor olacak. Devrede bir bağımsız
+
+732
+01:11:42,224 --> 01:11:43,704
+akım kaynağı olmadığı sürece.
+
+733
+01:11:44,883 --> 01:11:46,323
+Bu da bizi aslında
+
+734
+01:11:46,323 --> 01:11:48,784
+seri devre tanımına götüren bir yapı
+
+735
+01:11:48,784 --> 01:11:49,623
+olmuş olacak.
+
+736
+01:11:51,903 --> 01:11:52,583
+Yine
+
+737
+01:11:52,583 --> 01:11:54,984
+tek çevrim
+
+738
+01:11:54,984 --> 01:11:56,943
+bir devreden bahsettiğimiz durum için
+
+739
+01:11:56,943 --> 01:11:59,284
+veya genelleştirdiğimiz
+
+740
+01:11:59,284 --> 01:12:00,963
+bir durum için de geçerli.
+
+741
+01:12:01,564 --> 01:12:02,883
+Devre içerisinde, kapalı
+
+742
+01:12:02,883 --> 01:12:05,204
+sistem içerisindeki harcanan
+
+743
+01:12:05,204 --> 01:12:07,263
+ve sağlanan
+
+744
+01:12:07,263 --> 01:12:09,023
+güçlerin toplamının sıfır
+
+745
+01:12:09,023 --> 01:12:09,903
+olması gerekiyor.
+
+746
+01:12:11,223 --> 01:12:12,663
+Harcanan güçler pozitif,
+
+747
+01:12:13,003 --> 01:12:14,704
+tüketilen güçler negatif. Dolayısıyla
+
+748
+01:12:14,704 --> 01:12:16,383
+pozitif ve negatif yönlü bu
+
+749
+01:12:16,383 --> 01:12:18,864
+güç toplamlarının sıfır olması lazım. Veya bir başka
+
+750
+01:12:18,864 --> 01:12:20,883
+deyişle harcanan güç
+
+751
+01:12:20,883 --> 01:12:22,784
+sağlanan güce eşit
+
+752
+01:12:22,784 --> 01:12:23,623
+olmak durumunda.
+
+753
+01:12:25,724 --> 01:12:26,664
+Bunu herhangi bir
+
+754
+01:12:26,664 --> 01:12:28,164
+devre elemanı üzerinden
+
+755
+01:12:28,164 --> 01:12:30,823
+devre üzerinden yaptığımızda
+
+756
+01:12:30,823 --> 01:12:37,004
+bu eşitliği görmemiz
+
+757
+01:12:37,004 --> 01:12:38,844
+mümkün. Örneğin buradaki
+
+758
+01:12:38,844 --> 01:12:39,903
+verilmiş olan
+
+759
+01:12:39,903 --> 01:12:41,883
+sayısal örnekte
+
+760
+01:12:42,612 --> 01:12:47,131
+Elemanlar üzerindeki gerilim düşümleriyle akım yönleri referans akım yönleri verilmiş.
+
+761
+01:12:47,131 --> 01:12:50,112
+Buna göre her bir eleman için güçlerini hesaplamamız mümkün.
+
+762
+01:12:50,231 --> 01:13:01,851
+Şurada 8 volt düşümü ve 7 amperlik akım değerine sahip olan eleman aslında akım yönü referanslı eksi gerilim düşümü olarak eksiden artıya doğru gittiği için sisteme enerji veren bir eleman.
+
+763
+01:13:02,151 --> 01:13:08,911
+Yine benzer şekilde eksi 12 volt ve 5 amper yönlerine dikkat edilecek olursak sisteme enerji veren bir eleman.
+
+764
+01:13:08,911 --> 01:13:11,191
+yine 3 amper
+
+765
+01:13:11,191 --> 01:13:13,931
+eksiden artıya doğru gidecek şekilde
+
+766
+01:13:13,931 --> 01:13:15,711
+tanımlanmış. Dolayısıyla bu da güç veren
+
+767
+01:13:15,711 --> 01:13:17,332
+bir eleman. Diğerlerinin
+
+768
+01:13:17,332 --> 01:13:19,691
+gerilim düşümüyle akım yönleri aynı olduğu için
+
+769
+01:13:19,691 --> 01:13:21,711
+güç tüketen elemanlar yani artı yönlü
+
+770
+01:13:21,711 --> 01:13:23,171
+güç değerleri çıkıyor.
+
+771
+01:13:23,751 --> 01:13:25,491
+Her birisi için akım ve gerilim değerlerini
+
+772
+01:13:25,491 --> 01:13:27,571
+çarpıp topladığımızda sıfır sonucunu elde
+
+773
+01:13:27,571 --> 01:13:29,531
+etmeyi bekliyoruz. Yine bundan
+
+774
+01:13:29,531 --> 01:13:31,371
+ilişkin bir örnek burada mevcut.
+
+775
+01:13:31,851 --> 01:13:33,711
+Bunun güzelliği şu
+
+776
+01:13:33,711 --> 01:13:35,871
+yani farklı bir örnek olması
+
+777
+01:13:35,871 --> 01:13:37,211
+şöyle ortaya çıkıyor.
+
+778
+01:13:37,211 --> 01:13:54,211
+Burada bağımlı bir kaynak için, bağımlı bir gerilim kaynağı için hatta gerilime bağlı olarak değişen bir gerilim kaynağına ilişkin bir devre elemanıyla devre çözümlemesini yapmamız istenmiş.
+
+779
+01:13:55,332 --> 01:13:58,211
+Burada her bir eleman için güçleri de hesaplayacağız.
+
+780
+01:13:58,851 --> 01:14:00,071
+Bunu nasıl yapabiliriz?
+
+781
+01:14:00,811 --> 01:14:01,531
+Şöyle alalım.
+
+782
+01:14:02,972 --> 01:14:06,612
+Kirşof gerilimler kanunu kullanarak ilerlememiz mümkün.
+
+783
+01:14:06,612 --> 01:14:08,612
+veya single loop bir devre olduğu için
+
+784
+01:14:08,612 --> 01:14:10,631
+de benzer şekilde ilerlememiz mümkün.
+
+785
+01:14:11,372 --> 01:14:11,912
+Burada
+
+786
+01:14:11,912 --> 01:14:14,232
+şu yönlü bir
+
+787
+01:14:14,232 --> 01:14:15,711
+çevre seçmiş olsak.
+
+788
+01:14:15,912 --> 01:14:17,652
+Eksi 120 volt
+
+789
+01:14:17,652 --> 01:14:20,872
+artı V30
+
+790
+01:14:20,872 --> 01:14:22,591
+artı
+
+791
+01:14:22,591 --> 01:14:24,251
+işte bu elemana da
+
+792
+01:14:24,251 --> 01:14:28,512
+şu yönlü olarak VB diyelim
+
+793
+01:14:28,512 --> 01:14:29,991
+bağımlı kaynak olduğu için
+
+794
+01:14:29,991 --> 01:14:31,451
+VB
+
+795
+01:14:31,451 --> 01:14:34,512
+eksi VA eşittir
+
+796
+01:14:34,512 --> 01:14:36,251
+sıfır değerine sahip olacak.
+
+797
+01:14:36,612 --> 01:14:38,272
+bunu buluyoruz. Bu arada
+
+798
+01:14:38,272 --> 01:14:40,811
+VB
+
+799
+01:14:40,811 --> 01:14:41,931
+dediğimiz gerilim
+
+800
+01:14:41,931 --> 01:14:44,311
+VA yani şu yönlü gerilimin
+
+801
+01:14:44,311 --> 01:14:46,732
+değer olarak iki katına eşit.
+
+802
+01:14:46,851 --> 01:14:48,491
+Dolayısıyla bunun da
+
+803
+01:14:48,491 --> 01:14:49,851
+aslında
+
+804
+01:14:49,851 --> 01:14:52,192
+2VA olduğunu
+
+805
+01:14:52,192 --> 01:14:54,531
+söylememiz mümkün. Yön olarak, referans
+
+806
+01:14:54,531 --> 01:14:56,272
+olarak değer CVA'nın
+
+807
+01:14:56,272 --> 01:14:58,212
+iki katı ve
+
+808
+01:14:58,212 --> 01:15:00,751
+yön olarak da seçmiş olduğumuz
+
+809
+01:15:00,751 --> 01:15:01,692
+referans yönünde
+
+810
+01:15:01,692 --> 01:15:03,531
+bir değere sahip.
+
+811
+01:15:06,612 --> 01:15:09,531
+Şimdi dolayısıyla biz burada aslında
+
+812
+01:15:09,531 --> 01:15:11,972
+ana kol akımını da bilmiyoruz.
+
+813
+01:15:12,591 --> 01:15:13,671
+Nasıl hareket edeceğiz?
+
+814
+01:15:14,632 --> 01:15:15,472
+V30
+
+815
+01:15:15,472 --> 01:15:17,531
+A eksi
+
+816
+01:15:17,531 --> 01:15:19,112
+VA
+
+817
+01:15:19,112 --> 01:15:21,811
+eşittir. 120 gibi bir değere
+
+818
+01:15:21,811 --> 01:15:22,912
+sahibiz. Birinci
+
+819
+01:15:22,912 --> 01:15:25,552
+elde ettiğimiz eşitlik bu.
+
+820
+01:15:26,151 --> 01:15:27,132
+İkinci olarak da
+
+821
+01:15:27,132 --> 01:15:30,052
+artı VA değil mi hocam?
+
+822
+01:15:31,731 --> 01:15:31,951
+Evet.
+
+823
+01:15:32,132 --> 01:15:33,871
+Artı VA. Tamam. Artı VA
+
+824
+01:15:33,871 --> 01:15:34,712
+düzelttim.
+
+825
+01:15:36,612 --> 01:15:38,612
+Bir de şunu biliyoruz.
+
+826
+01:15:39,932 --> 01:15:42,651
+Devre üzerinde gerilim
+
+827
+01:15:42,651 --> 01:15:46,772
+düşünlerine bakacak olursak az önceki single loop devre mantığından hareketle
+
+828
+01:15:46,772 --> 01:15:48,511
+devredeki gerilim
+
+829
+01:15:48,511 --> 01:15:52,612
+kaynaklarının direnç değerine bölümü de ana kol akımını bize verecekti.
+
+830
+01:15:53,852 --> 01:15:56,472
+Veyahut da şöyle de söyleyebiliriz. Bir başka deyişle.
+
+831
+01:15:57,731 --> 01:16:00,011
+VA dediğimiz gerilim neye eşit?
+
+832
+01:16:00,671 --> 01:16:02,912
+Şu i akımı yönünü belirleyecek olursak
+
+833
+01:16:02,912 --> 01:16:04,912
+VA dediğimiz gerilim
+
+834
+01:16:04,912 --> 01:16:07,171
+eksi
+
+835
+01:16:07,171 --> 01:16:09,512
+15 çarpı i'ye eşit.
+
+836
+01:16:10,472 --> 01:16:11,652
+V30 dediğimiz
+
+837
+01:16:11,652 --> 01:16:12,891
+gerilim neye eşit?
+
+838
+01:16:13,391 --> 01:16:15,352
+Bu da 30 çarpı
+
+839
+01:16:15,352 --> 01:16:17,292
+i değerine eşit. Dolayısıyla bunların
+
+840
+01:16:17,292 --> 01:16:19,251
+toplamı 120 yapacak. Bu durumda
+
+841
+01:16:19,251 --> 01:16:21,251
+15 i değerinin
+
+842
+01:16:21,251 --> 01:16:23,272
+120 voltta eşit olduğunu
+
+843
+01:16:23,272 --> 01:16:23,912
+görüp
+
+844
+01:16:23,912 --> 01:16:26,712
+i değerine de
+
+845
+01:16:26,712 --> 01:16:28,891
+ne oluyor o zaman?
+
+846
+01:16:29,231 --> 01:16:29,751
+6 mı oluyor?
+
+847
+01:16:31,092 --> 01:16:32,531
+8
+
+848
+01:16:32,531 --> 01:16:34,451
+amperlik
+
+849
+01:16:34,451 --> 01:16:36,451
+bir değeri eşit olduğunu
+
+850
+01:16:36,451 --> 01:16:37,871
+görmüş oluyoruz. Burada
+
+851
+01:16:37,871 --> 01:16:40,351
+önemli olan buradaki bağımlı
+
+852
+01:16:40,351 --> 01:16:41,472
+kaynağımızla ilgili
+
+853
+01:16:42,068 --> 01:16:49,287
+bunu nasıl devreye alınacak? Aslında herhangi bir elemanmış gibi hesaba kattık ve bu şekilde bunu kullandık.
+
+854
+01:16:49,347 --> 01:16:52,408
+Şimdi devrede harcanan güçlere bakalım.
+
+855
+01:16:54,187 --> 01:16:58,248
+Gerilim kaynağımızın referans akım yönüyle gerilim yönleri ters olduğu için
+
+856
+01:16:58,248 --> 01:17:03,847
+eksi 120 çarpı 8 kadarlık bir devreye güç sağladığını görüyoruz.
+
+857
+01:17:03,847 --> 01:17:22,327
+30 Ohmluk direnç için yine 8 Amper çarpı İkare R'den, R çarpı İ'den de hesaplayabiliriz. İkare R'den hesaplayalım burada. İkare çarpı 30 pozitif bir güç tükettiğini görüyoruz.
+
+858
+01:17:22,327 --> 01:17:35,407
+Bu durumda bağımlı kaynağımızın arkadaşlar bakın akım referans yönüyle gerilim referans yönü aynı olduğu için bu eleman da aslında burada güç tükettiğini söyleyebiliriz.
+
+859
+01:17:35,407 --> 01:17:46,627
+VA değerimizi bulalım. Akım değerimizi biz 8 amper olarak bulduğumuza göre VA değerimiz şu yönlü VA değerimiz bizimle olmuş oluyor. Yine 120'ye meşte olmuş oluyor.
+
+860
+01:17:50,003 --> 01:18:03,003
+120'ye eşit olmuş oluyor. Dolayısıyla burada 120 çarpı akan akımımızda neydi? 8 amper. Bu kadarlık bir güç tükettiğini söyleyebiliriz.
+
+861
+01:18:03,563 --> 01:18:12,283
+Şimdi buradaki direnç elemanına baktığımızda ise referans, gerilim ve akım yönleri ters. Bunun değeri negatif çıkıyor.
+
+862
+01:18:12,283 --> 01:18:25,563
+Şimdi bunu nasıl ele alacağız? Bunun da değeri eksi, akım değerim, gerilim değerimiz belli zaten. 120 çarpı 8 miydi? 8 olarak bunu da.
+
+863
+01:18:30,036 --> 01:18:32,715
+ele almamız mümkün. Bir şey yanlış hesapladım ama ne?
+
+864
+01:18:33,496 --> 01:18:36,235
+VA'nın kendisi eksi 15'i demiştik VA'ya.
+
+865
+01:18:37,235 --> 01:18:43,456
+VA'ya eksi 15'i mi demiştik? Yani 8 olarak i'yi bulduk.
+
+866
+01:18:44,895 --> 01:18:46,675
+Eksi eksi götüreceksin sanki.
+
+867
+01:18:48,755 --> 01:18:52,235
+Hocam üstteki 2 VA ya, onu 240 yapacağız sanırım.
+
+868
+01:18:53,536 --> 01:18:54,195
+Şunu mu?
+
+869
+01:18:55,575 --> 01:18:56,335
+Evet hocam.
+
+870
+01:18:56,335 --> 01:19:19,695
+Evet buradaki gerilim değeriyle akım değerini çarptık. Şunun yerine bunu yanlış yazmışız. VA 120 değerine sahip. VB dediğimiz değer 2x120 yani 240'a eşit. Bu şekilde ele aldığımız zaman doğru oluyor mu bakalım. Eksi eksi bir tane fazlalık kaldı. Bir şeyden bir kontrol edeyim bir saniye.
+
+871
+01:19:32,595 --> 01:19:47,855
+15-10'luk dirençten geçen akımı burada pozitif olarak bulmuş. Bunu nasıl ele alacağız? Bizim akım değerimiz eksi eksiden artı dediğimiz durum oluyor değil mi? Tekrar bakalım.
+
+872
+01:19:47,855 --> 01:19:54,235
+Evet hocam, eksi 15 iyi demiştik V'ye, bir de referans yönüne göre eksiyi de başladığımız için eksi eksi artı olması lazım.
+
+873
+01:19:54,235 --> 01:20:15,255
+Tamam. Bir tane baştaki şu eksi V'a'dan dolayı referans yönünü veremediğim, yanlış verdiğimiz için öyle oldu. Tamam. Bu referans yönünden dolayı bir eksi var. V'a'nın kendisi de eksi oldu. Dolayısıyla 8'in karesi çarpı 15'lik, kare R'ye kadarlık bir güç tüketimini de pozitif olarak bulmamız mümkün oluyor. Tamam. Okey o zaman.
+
+874
+01:20:16,316 --> 01:20:17,375
+Hocam bir şey sorabilir miyim?
+
+875
+01:20:17,695 --> 01:20:18,115
+Buyurun.
+
+876
+01:20:19,055 --> 01:20:21,595
+Burada 15'i neden artı yazdık?
+
+877
+01:20:21,595 --> 01:20:24,875
+15'e ne yazdık?
+
+878
+01:20:25,095 --> 01:20:29,395
+Çoğu i olan kısımda, akımı bulduğumuz kısımda en altta.
+
+879
+01:20:30,915 --> 01:20:31,695
+Şurada mı?
+
+880
+01:20:31,915 --> 01:20:34,095
+Orası. 15'i neden artıyor zuluyor?
+
+881
+01:20:35,956 --> 01:20:37,155
+Bakalım şimdi.
+
+882
+01:20:38,816 --> 01:20:50,735
+Burada eksi 120, 30 çarpı i, 2 va ve eksi va var ya, bunların toplamını ele alacak olursak,
+
+883
+01:20:51,595 --> 01:20:52,595
+bir soru var.
+
+884
+01:20:58,868 --> 01:21:16,128
+Şimdi gerilim referans yönümüz burada ters ya, bundan dolayı bir eksilik daha geldi. Dolayısıyla şu şeyi bir saniye bakalım. Yani bizim yaptığımızdan farklı bir şekilde yapmış ya, o yüzden tekrar bakıyorum.
+
+885
+01:21:16,128 --> 01:21:18,368
+Eksi 120'den geldik.
+
+886
+01:21:18,568 --> 01:21:22,128
+Artı V30, artı 2VA, eksi V, eşittir 0.
+
+887
+01:21:22,968 --> 01:21:25,708
+Şunun için yazacağımız değer İ çarpı 30.
+
+888
+01:21:25,708 --> 01:21:26,048
+Evet.
+
+889
+01:21:26,827 --> 01:21:32,247
+VA için yazacağımız değer eksi yönlü olduğu için eksi VA çarpı İ olacak.
+
+890
+01:21:33,628 --> 01:21:38,827
+Pardon VA'yı hesaplarken eksi İ çarpı 15 olacak.
+
+891
+01:21:38,987 --> 01:21:41,167
+Dolayısıyla VA dediğimiz değer eksi 15 İ.
+
+892
+01:21:41,868 --> 01:21:42,147
+Tamam.
+
+893
+01:21:42,747 --> 01:21:43,927
+Burada 2VA var.
+
+894
+01:21:43,927 --> 01:21:52,147
+2VA'yı yazmak istediğimiz zaman eksi 30i gelecek. Bu da artı 15i olarak.
+
+895
+01:21:52,147 --> 01:21:59,267
+Ama hocam yukarıdakinde ters olmuyor. Yani VA tamam ama sonuç olarak artıdan eksiye gidiyor.
+
+896
+01:21:59,347 --> 01:22:05,247
+Orayı toplam olarak koymayacak mıyız? Oraya eksi yazmak, oraya artı yazmak.
+
+897
+01:22:05,868 --> 01:22:13,307
+Tekrar bir bakalım. Şu tamam zaten. Eksisinden girdim. Akım yönümde bulunan referans yönüm ters olduğu için
+
+898
+01:22:13,307 --> 01:22:35,307
+eksi 120 volt buradan gelecek. Referans gerilim yönü artı eksi çeşitliğim çevre yönüyle uyumlu. Artı V30. Burada artı 2VA değerim gelecek. Doğrudan gerilim değerini yazdım. VB diye karıştırmadım. Buraya baktığımda da eksi VA değerine sahibiz değil mi? Burası tamam. Şimdi şuraya geldiğimiz vakit ne olacak?
+
+899
+01:22:41,108 --> 01:22:57,147
+30i, akım yönümüzü bu şekilde seçtiğimiz için 30i. VA için baktığımızda, şimdi biz akımı bu yönlü olarak yazdık ya, pardon bir üstte gitti.
+
+900
+01:22:57,147 --> 01:23:22,447
+Şimdi şu yönlü gerilim düşümü 15i'ye eşit değil mi? Bu yönlü gerilim düşümü 15i'ye eşit ama biz buradaki referansı artısı burası eksisi burası olacak şekilde va olarak tanımlarsak bu va gerilimimiz aslında bunun ters yönünde olmuyor mu? O yüzden eksi 15i demiyor muyuz buna?
+
+901
+01:23:22,448 --> 01:23:50,188
+Normalde hani bakın şu yönlü olarak tanımlamış olduk saydık gerilim referansımızı bu uçtan bu uca gerilim düşümü 15i olacaktı. 15i kadar bir fark olacaktı. Fakat ben VA'yı artısı burası eksisi burası şeklinde tanımladım ya böyle olduğu için hani ilk tanımlamada şunun eksi şu 15i kadar fark olduğuna göre bu eksi burası eksi 15i kadar fark olacak.
+
+902
+01:23:50,188 --> 01:23:56,927
+Buysa VA'ya eksi 15'i yedemem normal
+
+903
+01:23:56,927 --> 01:24:05,488
+Evet hocam peki şu yukarıdaki alternatif güç kaynağı
+
+904
+01:24:05,488 --> 01:24:07,708
+Şu bağımsız kaynak için mi?
+
+905
+01:24:07,848 --> 01:24:08,128
+Evet
+
+906
+01:24:08,128 --> 01:24:09,288
+Bağımlı kaynak için mi?
+
+907
+01:24:09,488 --> 01:24:10,368
+Evet hocam bağımlı
+
+908
+01:24:10,368 --> 01:24:19,148
+Bağımlı kaynağımız içinde VA gerilimini tanımlarken artısı burası eksisi burası ya
+
+909
+01:24:19,148 --> 01:24:25,628
+Bu doğrultuyla, bu doğrultu birbirinden farklı olduğu için veya yönler farklı olduğu için
+
+910
+01:24:25,628 --> 01:24:29,887
+eksi 30'u mu? Şu eksi 30'u diyorsunuz değil mi? Şundan şu uyumlu olmadı diye.
+
+911
+01:24:30,027 --> 01:24:30,508
+Evet hocam.
+
+912
+01:24:31,508 --> 01:24:36,468
+Tamam. Şimdi burada tanımlamış olduğumuz yön artısı burası, eksisi burası ya.
+
+913
+01:24:37,427 --> 01:24:40,988
+Şimdi genlik olarak düşünmeyelim bunu. Yönü de dikkate alalım.
+
+914
+01:24:41,747 --> 01:24:45,947
+Burası daha yüksek bir potansiyel. Burası daha düşük bir potansiyel.
+
+915
+01:24:45,947 --> 01:24:51,548
+bu VA olarak tanımladığımız gerilim ise negatif bir gerilim değil mi bu durumda?
+
+916
+01:24:53,048 --> 01:24:55,268
+Yani şu tanımlamış olduğumuz yönlere göre.
+
+917
+01:24:56,268 --> 01:25:01,768
+Aynı gerilim değerini buraya taşıdığımızda bakın şu yön ile seçtiğimiz referans yön ile
+
+918
+01:25:01,768 --> 01:25:09,407
+VA referans yönü birbirine ters olduğuna göre benzer şekilde bunu da ters yönde yazmamız normal.
+
+919
+01:25:09,408 --> 01:25:16,968
+Sadece büyüklüğünü değil, yönünü de alıyoruz.
+
+920
+01:25:16,968 --> 01:25:19,027
+Evet, yönünü de dikkate alıyoruz.
+
+921
+01:25:27,252 --> 01:25:54,252
+Bu durumda ne olmuş oldu? Bizim kendi notasyonumuzla yaptığımız durumdan fark şuydu. Ben sanki VA şu yöndeymiş gibi almıştım. Ters yön olduğunu unutmuştum. Öyle bir fark oldu bizim yaptığımızda. Bizim yaptığımızda 15 ohmluk direncin harcadığı negatif gibi çıkıyordu. Ama yönünü dikkate alınca eksi olarak onu düzeltmiş olduk. Eksinin eksisi pozitif olarak düzelmiş olmuştu.
+
+922
+01:25:54,252 --> 01:26:02,891
+Buradaki notasyonda da bu yönü de dikkate aldığımızda uygun hesaplama yapmış oluyoruz.
+
+923
+01:26:02,891 --> 01:26:06,391
+Zaten 8 amper olduğunu, ana kol akımını biz de bulmuştuk.
+
+924
+01:26:07,531 --> 01:26:10,451
+Buradaki notasyonda bizim yazdığımızdan farklı bir durum.
+
+925
+01:26:11,031 --> 01:26:15,012
+Şunların işaretleri var herhalde bizim ilk yaptığımız duruma göre.
+
+926
+01:26:15,191 --> 01:26:24,051
+Ama buradaki farklılıkla ilgili olarak da VA geriliminin referans yönlerinin ters yönlü olarak verilmiş olmasını dikkate alabilirsiniz.
+
+927
+01:26:24,252 --> 01:26:27,632
+bu şekilde düşünmemiz mümkün.
+
+928
+01:26:44,564 --> 01:26:51,663
+Yine aslında buradaki konumuz bizim seri ve paralel devreler. Arada güçle ilgili bir durum var. Ona bakıyoruz şu anda.
+
+929
+01:26:52,883 --> 01:27:01,584
+Yine benzer bir örnek. Devremizde bir bağımlı kaynağımız var. Referans yönlerinde dikkate alarak bunu yazacak olursak seçmiş olduğumuz çevre yönünde.
+
+930
+01:27:02,883 --> 01:27:12,703
+Bağımlı kaynağımız Vx gerilimiyle bağlı olarak yazılmış. Burada tanımlamış olduğumuz referans değerinin eksisinden giriyor. Dolayısıyla eksi Vx.
+
+931
+01:27:12,703 --> 01:27:42,123
+12 voltluk bir kaynak var. Bunun eksi referansından girdiği için. Eksi 12. Burada şunu şöyle gösterelim. Tam olsun. Buradaki elemanlar için artı eksi şeklinde gerilim referans yönlerini seçmiş olalım. Bu durumda ana kol akımımız da iyi olacak şekilde bu elemanlar üzerindeki gerilim düşümünün dirençler toplamı çarpı iyi olduğunu söyleyebiliriz.
+
+932
+01:27:42,123 --> 01:27:48,784
+Son olarak da artı eksi referans yönünde bağımlı kaynağımızın gerilim düşümü var. Bunların toplamının sıfır olması gerekiyor.
+
+933
+01:27:49,883 --> 01:27:56,564
+Burada iki tane Vx ve i'ye ilişkin hesap yapmamız lazım.
+
+934
+01:28:00,383 --> 01:28:03,983
+Bu hesabı da şu şekilde ilerletelim.
+
+935
+01:28:04,903 --> 01:28:07,003
+Ne oldu burası? 15i
+
+936
+01:28:07,003 --> 01:28:12,083
+artı 3VX
+
+937
+01:28:12,083 --> 01:28:17,203
+eşittir 12 diye yazabileceğimiz bir durum oldu. Bununla birlikte
+
+938
+01:28:17,203 --> 01:28:21,063
+şunu söyleyebilir miyiz?
+
+939
+01:28:27,891 --> 01:28:29,512
+Aynı şeyde bir saniye.
+
+940
+01:28:34,771 --> 01:28:38,431
+Şu Vx gerilimimizi nasıl tanımlayabiliriz?
+
+941
+01:28:38,531 --> 01:28:43,992
+Ohm kanundan harekette eleman üzerindeki gerilim düşümü bölü akım şeklinde bunu tanımlayabiliriz.
+
+942
+01:28:44,091 --> 01:28:50,091
+Yalnız dikkat edecek olursanız burada tanımlanan gerilim yönüyle akım referans yönleri birbirine ters olduğu için
+
+943
+01:28:50,091 --> 01:28:55,171
+burada elemanın uçları arasındaki gerilim düşümü akım yönü takip edecek olursak
+
+944
+01:28:55,171 --> 01:29:00,751
+bu uçtan bu uca eksiden artıya doğru eksi Vx kadarlık bir gerilim düşümü var.
+
+945
+01:29:00,751 --> 01:29:02,532
+Dolayısıyla eksi Vx bölü 30.
+
+946
+01:29:03,171 --> 01:29:08,751
+Ana kol akımının yani i değerimizin eksi Vx bölü 30 olduğunu söyleyebiliriz.
+
+947
+01:29:08,812 --> 01:29:11,011
+Bu durumda tek bilinmeyene düşmüş oluyoruz.
+
+948
+01:29:12,011 --> 01:29:20,111
+Yazdığımız zaman da denklemde yerine koyduğumuz zaman da akım değeri için eksi 4 bölü 25 amperlik bir değer elde etmiş oluyoruz.
+
+949
+01:29:21,672 --> 01:29:24,831
+Her bir eleman üzerinde harcanan güçlere bakacak olursak.
+
+950
+01:29:24,831 --> 01:29:27,491
+birinci eleman için
+
+951
+01:29:27,491 --> 01:29:29,871
+i kare çarpı r'lik bir
+
+952
+01:29:29,871 --> 01:29:31,891
+hesap yapmamız lazım
+
+953
+01:29:31,891 --> 01:29:35,711
+burada ne yapmış
+
+954
+01:29:35,711 --> 01:29:37,911
+24 bölü 5'den vx
+
+955
+01:29:37,911 --> 01:29:39,751
+gerilim v kare bölü r yapmış
+
+956
+01:29:39,751 --> 01:29:41,852
+pardon v kare bölü r hesabı yapmış
+
+957
+01:29:41,852 --> 01:29:43,951
+elemanın üzerindeki gerilim
+
+958
+01:29:43,951 --> 01:29:45,992
+düşümü vx'di 24 bölü
+
+959
+01:29:45,992 --> 01:29:47,711
+5'in karesi bölü
+
+960
+01:29:47,711 --> 01:29:51,931
+direnç değerimizde 30 dolayısıyla
+
+961
+01:29:51,931 --> 01:29:53,971
+elde etmiş olduğumuz güç değeri harcanan güç
+
+962
+01:29:53,971 --> 01:29:56,211
+değeri burada mevcut. 12 voltluk
+
+963
+01:29:56,211 --> 01:29:57,431
+kaynakla ilgili olarak
+
+964
+01:29:57,431 --> 01:29:59,571
+akım değerimiz
+
+965
+01:29:59,571 --> 01:30:02,132
+dikkat edecek olursanız negatif. Dolayısıyla
+
+966
+01:30:02,132 --> 01:30:03,951
+bu eleman da sistemden
+
+967
+01:30:03,951 --> 01:30:05,991
+güç tüketen bir eleman olarak ortaya
+
+968
+01:30:05,991 --> 01:30:07,251
+çıkmış oluyor.
+
+969
+01:30:08,331 --> 01:30:08,851
+Buradaki
+
+970
+01:30:08,851 --> 01:30:12,091
+hesabımızı hangi şekilde yapmışız
+
+971
+01:30:12,091 --> 01:30:13,251
+onu da kontrol edelim.
+
+972
+01:30:15,251 --> 01:30:16,371
+i çarpı
+
+973
+01:30:16,371 --> 01:30:18,071
+v şeklinde hesabımızı
+
+974
+01:30:18,071 --> 01:30:18,671
+yapmışız.
+
+975
+01:30:19,911 --> 01:30:21,891
+Akım ve gerilim yönlerinin
+
+976
+01:30:21,891 --> 01:30:23,531
+referansı birisi eksi
+
+977
+01:30:23,531 --> 01:30:25,811
+eksisinden girdiği için akım.
+
+978
+01:30:25,951 --> 01:30:27,851
+Dolayısıyla eksi güç hesabında
+
+979
+01:30:27,851 --> 01:30:29,071
+bir eksi değerimiz var.
+
+980
+01:30:29,711 --> 01:30:31,031
+Akım değerimiz de eksi.
+
+981
+01:30:32,611 --> 01:30:33,851
+Eksi 4 bölü 25
+
+982
+01:30:33,851 --> 01:30:35,531
+çarpı
+
+983
+01:30:35,531 --> 01:30:37,251
+gerilim değerimiz de 12 volttu.
+
+984
+01:30:37,331 --> 01:30:39,351
+Dolayısıyla eksi eksi artı oldu. Bu da
+
+985
+01:30:39,351 --> 01:30:41,471
+devreden güç tüketen bir eleman
+
+986
+01:30:41,471 --> 01:30:43,011
+olarak çalıştığını görmüş oluyoruz.
+
+987
+01:30:43,551 --> 01:30:44,871
+8 ohumluk eleman için
+
+988
+01:30:44,871 --> 01:30:47,271
+i kare r hesabından
+
+989
+01:30:47,271 --> 01:30:49,251
+hareket ettik. Şunu şöyle koymak
+
+990
+01:30:49,251 --> 01:30:50,351
+daha faydalı olacak.
+
+991
+01:30:52,951 --> 01:30:53,231
+Burada
+
+992
+01:30:53,231 --> 01:30:54,551
+i kare r
+
+993
+01:30:54,551 --> 01:30:57,251
+güç hesabından hareket ettik.
+
+994
+01:30:57,631 --> 01:30:59,351
+Dolayısıyla sonucun pozitif çıkması garanti.
+
+995
+01:31:00,131 --> 01:31:01,551
+Son olarak bağımlı
+
+996
+01:31:01,551 --> 01:31:03,231
+kaynağımız için bakalım. Bağımlı
+
+997
+01:31:03,231 --> 01:31:04,191
+kaynağımız için
+
+998
+01:31:04,191 --> 01:31:09,151
+hangisinden hareketle bunu yaptık?
+
+999
+01:31:09,331 --> 01:31:11,391
+Şöyle yine parantez içerisine
+
+1000
+01:31:11,391 --> 01:31:13,271
+alalım. I çarpı V'den
+
+1001
+01:31:13,271 --> 01:31:14,711
+hareketle bunu yapıyoruz.
+
+1002
+01:31:15,471 --> 01:31:17,031
+i değerimiz negatif bir değer.
+
+1003
+01:31:17,811 --> 01:31:19,291
+Vx değerimiz pozitif bir
+
+1004
+01:31:19,291 --> 01:31:21,291
+değerdi. Dolayısıyla 4Vx
+
+1005
+01:31:21,291 --> 01:31:23,191
+pozitif. Dolayısıyla şuradan çıkacak
+
+1006
+01:31:23,191 --> 01:31:24,471
+değerimiz negatif bir
+
+1007
+01:31:24,471 --> 01:31:26,811
+değere sahip olmuş oluyor. Bu da
+
+1008
+01:31:26,811 --> 01:31:29,391
+sisteme gücü bu elemanın
+
+1009
+01:31:29,391 --> 01:31:31,351
+sağlamış olduğunu bu devre için
+
+1010
+01:31:31,351 --> 01:31:32,791
+belirtmiş oluyor.
+
+1011
+01:31:33,411 --> 01:31:34,811
+Sorumuz var galiba. Alalım.
+
+1012
+01:31:35,611 --> 01:31:36,531
+Hocam şey burada
+
+1013
+01:31:36,531 --> 01:31:39,351
+8 ve 7 onluk dirençleri
+
+1014
+01:31:39,351 --> 01:31:41,431
+artı eksi diye belirledik ki
+
+1015
+01:31:41,431 --> 01:31:43,111
+onu hani eksi artı yapsaydık
+
+1016
+01:31:43,111 --> 01:31:44,691
+olur mu ya? Değişen bir şey olur mu?
+
+1017
+01:31:45,771 --> 01:31:47,031
+Burada şuna
+
+1018
+01:31:47,031 --> 01:31:49,371
+hani uyalım demiştik
+
+1019
+01:31:49,371 --> 01:31:51,271
+ya. Anakol akımının
+
+1020
+01:31:51,271 --> 01:31:53,072
+nasıl veriyorsak dirençler bir kere
+
+1021
+01:31:53,072 --> 01:31:54,872
+pasif elemanlar değil mi? Bunların analizini
+
+1022
+01:31:54,872 --> 01:31:56,951
+yaptığımızda görmüştük. Dolayısıyla
+
+1023
+01:31:56,951 --> 01:31:59,051
+akım yönüyle uyumlu olmaları gerekiyor.
+
+1024
+01:31:59,132 --> 01:32:01,051
+Anakol akımını şu yönde verdiğimiz
+
+1025
+01:32:01,051 --> 01:32:02,891
+için değer olarak konuşmuyorum
+
+1026
+01:32:02,891 --> 01:32:04,451
+ama şu anda yön olarak konuşuyorum.
+
+1027
+01:32:04,971 --> 01:32:07,411
+Bu yönde verdiğimiz için direnç elemanların
+
+1028
+01:32:07,411 --> 01:32:09,251
+yönü de güç tüketebilmeleri
+
+1029
+01:32:09,251 --> 01:32:11,391
+adına bu referans
+
+1030
+01:32:11,391 --> 01:32:12,691
+yönlerinde olması gerekiyor.
+
+1031
+01:32:13,632 --> 01:32:15,292
+Eğer akım yönünü belirlememiş
+
+1032
+01:32:15,292 --> 01:32:17,092
+olsaydım bunları ters yönünü
+
+1033
+01:32:17,092 --> 01:32:18,951
+çevirirdim ama bunlarla uyumlu olacak
+
+1034
+01:32:18,951 --> 01:32:20,731
+şekilde akım yönünü de aşağı yönünü
+
+1035
+01:32:20,731 --> 01:32:22,211
+belirlemem uyumlu olurdu.
+
+1036
+01:32:22,931 --> 01:32:24,651
+Burada akım yönü
+
+1037
+01:32:24,651 --> 01:32:26,631
+belli olduğu için bunları da ona
+
+1038
+01:32:26,631 --> 01:32:27,811
+uyumlu şekilde yaptım.
+
+1039
+01:32:28,451 --> 01:32:29,091
+Yön verdim.
+
+1040
+01:32:30,996 --> 01:32:35,996
+Hocam, ilk dirençte peki neden eksiyede artı ediyor?
+
+1041
+01:32:37,115 --> 01:32:37,675
+30 olmak.
+
+1042
+01:32:38,535 --> 01:32:48,996
+Dirençte özel olarak burada şeyi tanımlamış, Vx değerini tanımlamış ama Vx ve I değerlerini incelediğimiz zaman İ değeri negatif çıktı.
+
+1043
+01:32:50,815 --> 01:32:56,035
+Dolayısıyla bu da sisteme bu gücü verdiği için bu da kendi içinde uyumlu oldu.
+
+1044
+01:33:02,195 --> 01:33:03,416
+Hocam, sesim geliyor mu?
+
+1045
+01:33:04,115 --> 01:33:04,355
+Evet.
+
+1046
+01:33:05,115 --> 01:33:14,395
+Hocam, bu güç kaynaklarındaki gücü değerini watt olarak bulurken, diğer dirençlerdeki gücü m watt olarak buluyoruz. Neden yani m watt?
+
+1047
+01:33:16,395 --> 01:33:18,796
+Bir bakayım, dikkat etmemiştim ona.
+
+1048
+01:33:21,555 --> 01:33:29,975
+Çıkan değer, çünkü şu hesap sonucunda çıkan değer zannedersem 0.768 watt gibi bir şey oluyor. Bir hesabını tekrar yapayım.
+
+1049
+01:33:32,195 --> 01:33:36,256
+24 bölü 5
+
+1050
+01:33:47,572 --> 01:34:10,412
+4x24, bölü 5, bölü 5, bölü 30. Evet, çıkan sonuç 0.768 W oluyor da, onu hani görsel olarak daha uygun bir şekilde verebilme kadar miliwata çevirip vermiş. Hani şey için mi diye tekrar bakayım dedim. Buradaki değerlerimiz miliampere de direkt onu mu yazdık?
+
+1051
+01:34:10,412 --> 01:34:17,452
+çıkan sonuç 0.700 küsur atlı olduğu için onu miliwata çevirip göstermiş. Yoksa özel bir durum yok.
+
+1052
+01:34:18,332 --> 01:34:26,191
+Hesabı yaptığınızda aynı şey çıkıyor. Ama yine şurada da 24 bölü 5'in karesi olduğunu tekrar söylemekte fayda var.
+
+1053
+01:34:26,191 --> 01:34:28,851
+Yani 24'ün karesi değil. Onlar biraz eksik kalmış.
+
+1054
+01:34:45,971 --> 01:34:50,651
+Bir ara resüme bastım ama herhalde görüyorsunuzdur sunumunu.
+
+1055
+01:34:51,551 --> 01:34:52,131
+Görüyor musunuz?
+
+1056
+01:34:53,231 --> 01:34:53,571
+Tamam.
+
+1057
+01:34:55,571 --> 01:34:56,331
+Burasıydı.
+
+1058
+01:34:56,451 --> 01:34:59,011
+Dolayısıyla orada milivatla ilgili özel bir durum yok.
+
+1059
+01:35:00,151 --> 01:35:11,691
+Şimdi tıpkı tek çevrim bir devreyi incelediğimiz gibi tek bir referans ve referans haricinde bir tane daha düğümün olduğu devreler de var.
+
+1060
+01:35:12,511 --> 01:35:15,812
+Bunlar da single node pair devreler olarak tanımlanıyor.
+
+1061
+01:35:15,971 --> 01:35:28,131
+Bunlar da temel olarak aslında devredeki değerlerin değişmesiyle birlikte her bir eleman üzerinde gerilim düşümü aynı şekilde değişen elemanlardan oluşan devreler olmuş oluyor.
+
+1062
+01:35:28,131 --> 01:35:40,872
+Bu tür devrelere yani üzerlerindeki gerilim düşümleri değişen değerlerle birlikte eş anlı ve eş yönlü olarak değişen elemanlara sahip devreleri de arkadaşlar paralel devreler deniyor.
+
+1063
+01:35:41,811 --> 01:35:44,011
+Örneğin şekildeki devreyi incelediğimizde
+
+1064
+01:35:44,011 --> 01:35:46,651
+şöyle gösterelim.
+
+1065
+01:35:46,731 --> 01:35:48,651
+Şekildeki devreyi incelediğimizde
+
+1066
+01:35:48,651 --> 01:35:52,971
+bir tane referans düğüm seçtik.
+
+1067
+01:35:53,152 --> 01:35:55,051
+Bunun haricinde şunu söyleyebiliriz ki
+
+1068
+01:35:55,051 --> 01:35:58,571
+buradaki alttaki düğümlerin hepsi 0 volt değerine sahip.
+
+1069
+01:35:58,731 --> 01:36:00,171
+Aynı düğüm.
+
+1070
+01:36:00,971 --> 01:36:02,651
+Üstteki düğümlerimiz ise yine
+
+1071
+01:36:02,651 --> 01:36:07,271
+tel üzerinden başka hiçbir elemandan geçmeden erişebildiğim düğümler olduğu için
+
+1072
+01:36:07,271 --> 01:36:09,332
+burada bizim tek düğümümüz.
+
+1073
+01:36:09,332 --> 01:36:25,791
+Dolayısıyla buranın sıfır volta göre bir V gerilimi olduğuna göre buradaki bağımsız kaynağın, direncin, ikinci bağımsız kaynağın, ikinci direncin hepsinin üzerindeki gerilim düşümlerinin aynı olduğunu söylememiz mümkün.
+
+1074
+01:36:25,891 --> 01:36:30,352
+Devredeki değerler değiştikçe de bunlar eş yönlü ve eş anlı olarak değişiyor olacak.
+
+1075
+01:36:30,471 --> 01:36:35,931
+Dolayısıyla bu da paralel bir devre yapısına işaret ediyor olacak.
+
+1076
+01:36:39,332 --> 01:36:49,052
+Buradaki devreden hareketle arkadaşlar verilen referans yönlerinde kullanarak bu devreyi çözülemek istersek.
+
+1077
+01:36:49,051 --> 01:36:50,531
+şöyle ilerleyelim.
+
+1078
+01:36:52,291 --> 01:36:53,291
+Burada
+
+1079
+01:36:53,291 --> 01:36:56,171
+vermiş olduğumuz referans yönlerine
+
+1080
+01:36:56,171 --> 01:36:56,931
+bağlı olarak
+
+1081
+01:36:56,931 --> 01:37:01,771
+120 amperlik
+
+1082
+01:37:01,771 --> 01:37:04,451
+akım kaynağını
+
+1083
+01:37:04,451 --> 01:37:05,851
+ele alacak olursak
+
+1084
+01:37:05,851 --> 01:37:07,351
+burada referans yönü
+
+1085
+01:37:07,351 --> 01:37:09,911
+gerilim referans yönüyle akım
+
+1086
+01:37:09,911 --> 01:37:11,531
+referans yönü birbirinden farklı.
+
+1087
+01:37:12,571 --> 01:37:14,131
+Yani eksisinden girip artısına doğru
+
+1088
+01:37:14,131 --> 01:37:15,651
+ilerliyor. Bu durumda bu eleman
+
+1089
+01:37:15,651 --> 01:37:18,031
+devreye
+
+1090
+01:37:18,031 --> 01:37:20,471
+enerji sağlayan bir eleman olarak
+
+1091
+01:37:20,471 --> 01:37:22,632
+bunu tanımlayabiliriz bu referanstan dolayı.
+
+1092
+01:37:24,811 --> 01:37:25,492
+Çünkü
+
+1093
+01:37:25,492 --> 01:37:28,711
+sıfır volta olarak da burayı seçtik. Bu sıfır volta
+
+1094
+01:37:28,711 --> 01:37:30,511
+göre tanımlayacağımız
+
+1095
+01:37:30,511 --> 01:37:32,291
+bir gerilim değerine sahip olacak burası.
+
+1096
+01:37:33,132 --> 01:37:34,311
+Şimdi ortak
+
+1097
+01:37:34,311 --> 01:37:35,311
+düğümlerimiz de var.
+
+1098
+01:37:39,791 --> 01:37:41,132
+Efendim bir soru var.
+
+1099
+01:37:42,412 --> 01:37:44,291
+Hocam demiştik ya o
+
+1100
+01:37:44,291 --> 01:37:45,852
+kaynak devri
+
+1101
+01:37:45,851 --> 01:37:48,091
+Devre kaynak olarak
+
+1102
+01:37:48,091 --> 01:37:49,931
+bir eleman sağlıyor dedik ya
+
+1103
+01:37:49,931 --> 01:37:51,951
+eksi artıya bakarak
+
+1104
+01:37:51,951 --> 01:37:53,911
+yorum yaptık da o tam tersi de
+
+1105
+01:37:53,911 --> 01:37:55,831
+olamaz mıydı? O bizim belirlediğimiz
+
+1106
+01:37:55,831 --> 01:37:57,651
+bir şey değil mi? Mesela oradaki
+
+1107
+01:37:57,651 --> 01:37:58,851
+negatif olamaz mı?
+
+1108
+01:37:59,191 --> 01:38:01,811
+Şimdi biz bunu bu şekilde
+
+1109
+01:38:01,811 --> 01:38:03,971
+tanımladık ama gerilim değerimiz
+
+1110
+01:38:03,971 --> 01:38:05,911
+negatif çıkabilir. Yani senin dediğin buna
+
+1111
+01:38:05,911 --> 01:38:07,831
+karşılık geliyor. Negatif
+
+1112
+01:38:07,831 --> 01:38:09,611
+çıkabilir. Negatif çıktığı zaman
+
+1113
+01:38:09,611 --> 01:38:12,031
+bu sistemden
+
+1114
+01:38:12,031 --> 01:38:13,731
+enerji tüketen bir eleman haline
+
+1115
+01:38:13,731 --> 01:38:14,491
+gelmiş olacak.
+
+1116
+01:38:15,851 --> 01:38:33,731
+Yani bunu sonuç olarak söylesek belki daha doğru olurdu. Şu an için vermiş olduğumuz referanslara göre hareket ediyoruz diye söyleyeyim. Çıkan sonuç itibariyle yani şurada göreceğiniz V değerinin pozitif olması itibariyle sisteme enerji sağladığını nihai sonuç olarak söylemiş olalım. Şimdilik öyle düzeltelim bunu.
+
+1117
+01:38:33,731 --> 01:38:36,131
+yani burada da benzer
+
+1118
+01:38:36,131 --> 01:38:37,951
+şekilde ben hani
+
+1119
+01:38:37,951 --> 01:38:40,311
+sona gelip sondan söylediğim için böyle oldu
+
+1120
+01:38:40,311 --> 01:38:42,171
+yine buradaki
+
+1121
+01:38:42,171 --> 01:38:43,511
+eleman içinde çıkan
+
+1122
+01:38:43,511 --> 01:38:44,991
+gerilim değerimiz
+
+1123
+01:38:46,547 --> 01:38:48,827
+Bütün elemanlardaki gerilim değerleri aynı ya.
+
+1124
+01:38:49,268 --> 01:38:52,627
+Elde ettiğimiz artı eksi yönlü gerilim pozitif 2 volt.
+
+1125
+01:38:52,807 --> 01:38:56,087
+Dolayısıyla bu elemanda artık devreden enerji tüketen bir eleman olmuş oluyor.
+
+1126
+01:38:56,147 --> 01:38:58,388
+Ama bunları sonuç olarak söyleyecek olalım.
+
+1127
+01:38:58,508 --> 01:38:58,787
+Tamam mı?
+
+1128
+01:38:58,807 --> 01:39:00,347
+Şimdi hemen baştan söylememiş olalım.
+
+1129
+01:39:01,287 --> 01:39:07,148
+Şimdi burada paralel devre olduğu için buradaki bütün elemanlar üzerinde iki düğüm var zaten.
+
+1130
+01:39:07,728 --> 01:39:10,487
+Her bir eleman üzerindeki gerilim düşümü eş değer olacak.
+
+1131
+01:39:10,487 --> 01:39:14,487
+Bu durumda biz mesela şu koldaki...
+
+1132
+01:39:14,487 --> 01:39:16,007
+Anotation'ı açalım.
+
+1133
+01:39:16,547 --> 01:39:33,588
+Örneğin üstteki düğümle referans düğümü arasındaki gerilim farkını V olarak tanımlamışsak buradaki R1 direnci üzerinden geçen akımı V bölü R1 yani 30V şeklinde tanımlamamız mümkün.
+
+1134
+01:39:33,588 --> 01:39:38,448
+O zaman buradaki akım değerimiz 30V değerine karşılık gelecek.
+
+1135
+01:39:39,067 --> 01:39:42,147
+Yine bu kolda 30 amperlik bir akım akıyor.
+
+1136
+01:39:42,768 --> 01:39:45,088
+Bu kolda 120 amperlik bir akım var.
+
+1137
+01:39:45,087 --> 01:39:55,047
+Yani şöyle yazacak olursak 30V burada 30A ve son olarak şu kolda da benzer bir hesabı yapabiliriz.
+
+1138
+01:39:56,087 --> 01:39:59,087
+Referans gerilim değerimiz V volt diye tanımlamıştık.
+
+1139
+01:39:59,787 --> 01:40:08,347
+V bölü R'den yani bu da 15V'lik bir akım değerine karşılık gelecek.
+
+1140
+01:40:08,347 --> 01:40:18,087
+Şimdi bu durumda üstteki düğme giren ve çıkan akım değerlerini topladığımızda bunun sıfır etmesi gerekiyor.
+
+1141
+01:40:18,527 --> 01:40:20,627
+Kirşof'un akımlar kanunu gereği.
+
+1142
+01:40:21,227 --> 01:40:35,887
+Buradan da hesap yapacak olursak 120 girmiş diğerlerinin hepsi çıkan 30 ve artı 30 artı 15 ve'nin 120'ye eşit olması lazım.
+
+1143
+01:40:35,887 --> 01:40:40,587
+Yani bu durumda da 45V değerimiz 90'a eşit oluyor.
+
+1144
+01:40:40,707 --> 01:40:42,827
+V değerini 2 volt olarak bulmuş oluyoruz.
+
+1145
+01:40:42,947 --> 01:40:45,727
+Bu sonuç itibariyle şimdi başta söylediğim şeyi düzeltelim.
+
+1146
+01:40:45,867 --> 01:40:54,547
+Gevilim değerimiz pozitif olduğu için de artık net bir şekilde bu elemanın eksi bir güç değerine sahip olduğu,
+
+1147
+01:40:54,667 --> 01:40:58,867
+bu elemanın ise pozitif bir güç değerine sahip olduğunu söylememiz mümkün oluyor.
+
+1148
+01:40:58,867 --> 01:41:11,247
+Hesabımızı yapacak olursak V çarpı İ değeriyle 2 volt çarpı 120 amper bu elemanın 240 watt sisteme güç sağladığını görmüş oluyoruz.
+
+1149
+01:41:11,247 --> 01:41:12,408
+eksi 240 watt
+
+1150
+01:41:12,408 --> 01:41:15,247
+V çarpı İ değerini kullanacağız.
+
+1151
+01:41:15,387 --> 01:41:16,947
+Referans yönlerimiz birbirine
+
+1152
+01:41:16,947 --> 01:41:18,908
+ters çıktığı için veyahut da
+
+1153
+01:41:18,908 --> 01:41:21,067
+gerilim referansının eksisinden
+
+1154
+01:41:21,067 --> 01:41:22,988
+girdiği için eksi V volt yani
+
+1155
+01:41:22,988 --> 01:41:24,307
+eksi 2 volt
+
+1156
+01:41:24,307 --> 01:41:27,107
+çarpı 120 amper
+
+1157
+01:41:27,107 --> 01:41:29,208
+şeklinde bu hesabı yapın sizde arkadaşlar.
+
+1158
+01:41:29,428 --> 01:41:30,787
+240 volt wattı
+
+1159
+01:41:30,787 --> 01:41:32,208
+elde etmiş olalım.
+
+1160
+01:41:32,807 --> 01:41:35,047
+R1 direnci için bu hesabı nasıl yapabiliriz?
+
+1161
+01:41:35,147 --> 01:41:36,887
+Üzerinden geçen akım değerimiz
+
+1162
+01:41:36,887 --> 01:41:38,488
+gerilim değerimiz belli ve
+
+1163
+01:41:38,488 --> 01:41:40,087
+R değerimiz de
+
+1164
+01:41:40,087 --> 01:41:41,487
+belli.
+
+1165
+01:41:42,487 --> 01:41:44,187
+1 bölü 30 ohm. Dolayısıyla
+
+1166
+01:41:44,187 --> 01:41:46,527
+V kare bölü R'den bu hesabı
+
+1167
+01:41:46,527 --> 01:41:48,447
+yapabiliriz. 4 bölü
+
+1168
+01:41:48,447 --> 01:41:50,247
+1 bölü 30
+
+1169
+01:41:50,247 --> 01:41:50,687
+yani
+
+1170
+01:41:50,687 --> 01:41:55,767
+120 watt yapmış oluyor değil mi?
+
+1171
+01:41:56,227 --> 01:41:57,087
+4 bölü
+
+1172
+01:41:57,087 --> 01:41:59,407
+1 bölü 30. 30 yukarı çıktı.
+
+1173
+01:42:00,187 --> 01:42:02,087
+30 çarpı 4. 120 watt yapmış oluyor.
+
+1174
+01:42:02,447 --> 01:42:04,347
+Bu devreden enerji çektiği anlamına
+
+1175
+01:42:04,347 --> 01:42:06,287
+gelir. Diğer
+
+1176
+01:42:06,287 --> 01:42:08,107
+bağımsız kaynağımız için bakalım.
+
+1177
+01:42:08,107 --> 01:42:16,087
+Bağımsız kaynağımızın referans yönü, gerilim referans yönü bu şekilde ve akım değeri de artısından eksisine doğru devam ediyor.
+
+1178
+01:42:16,187 --> 01:42:18,128
+Dolayısıyla burada yönler birbiriyle aynı.
+
+1179
+01:42:19,227 --> 01:42:24,628
+2 voltluk bir gerilim düşümü olacak eleman üzerinde ve 30 amperlik bir akım değeri var.
+
+1180
+01:42:24,727 --> 01:42:33,107
+Dolayısıyla I çarpı R'den 60 watt kadar, bu değil yalnız şuradaki, 60 watt kadar enerji tükettiğini görüyoruz.
+
+1181
+01:42:33,807 --> 01:42:36,908
+Son olarak R2 eleman için bu işlemi yapalım.
+
+1182
+01:42:36,908 --> 01:42:39,247
+yerlim düşümü bu yönlü olarak
+
+1183
+01:42:39,247 --> 01:42:40,967
+2 volt ve kare bölü R'den
+
+1184
+01:42:40,967 --> 01:42:42,307
+hareket edecek olursak
+
+1185
+01:42:42,655 --> 01:42:52,735
+ve kare bölü R'den hareket edecek olursak, 4 bölü 1 bölü 15, 4 çarpı 15, 60 wattlık enerji tükettiğini yine bu elemanın içinde görmüş oluyoruz.
+
+1186
+01:42:56,404 --> 01:43:05,324
+benzer örnekler olduğu için bir sonraki örneğimiz ne? Bu seri. İki örnek sonra mı geçiyoruz? Tamam.
+
+1187
+01:43:07,744 --> 01:43:17,744
+Benzer bir örnek. Burada paralel bir devre yapısı var. Bütün elemanlar aynı terminallere bağlı.
+
+1188
+01:43:17,744 --> 01:43:24,843
+Veyahut da bütün elemanların bir terminali birinci düğme, ikinci terminali referans düğme bağlı.
+
+1189
+01:43:24,843 --> 01:43:44,643
+Dolayısıyla burada paralel bir devre olduğunu söyleyebiliriz. Paralel devrenin özelliği neydi? Her bir eleman üzerindeki gerilim düşümü eşit olacak. Bunu söyleyebiliriz. Tek çevrim veyahut da seri devredeki özellik de neydi? Ana kol akımı ve dolayısıyla bütün elemanlar üzerinden geçen akım değeri eş oluyordu.
+
+1190
+01:43:44,643 --> 01:43:49,523
+Şimdi tanımladığımız referans gerilim ile
+
+1191
+01:43:55,475 --> 01:44:04,635
+Tanımladığımız referans gerilim değeri ile bizim düğümümüz arasındaki üstteki düğüm arasındaki gerilim farkı yine V olarak tanımlamış olalım.
+
+1192
+01:44:05,635 --> 01:44:14,236
+Bu durumda her bir eleman için gerilim düşümünü veyahut da Akım Kirchhoff'un akımlar denklemini yazmamız mümkün.
+
+1193
+01:44:15,095 --> 01:44:20,375
+Şu ortak bir düğüm olduğu için buna giren ve çıkan bütün akım değerlerinin toplamını ele alacağız.
+
+1194
+01:44:20,375 --> 01:44:23,496
+örneğin ix akımını
+
+1195
+01:44:23,496 --> 01:44:24,896
+bu yönlü eleman için
+
+1196
+01:44:24,896 --> 01:44:27,355
+2 kilo ohmluk eleman için bu yönlü
+
+1197
+01:44:27,355 --> 01:44:28,656
+olarak tanımlanmış zaten
+
+1198
+01:44:28,656 --> 01:44:31,575
+bağımsız akım kaynağının yönü
+
+1199
+01:44:31,575 --> 01:44:33,415
+belli bağımlı akım kaynağının yönü
+
+1200
+01:44:33,415 --> 01:44:35,415
+belli yine 6 kilo ohmluk
+
+1201
+01:44:35,415 --> 01:44:37,295
+direnç içinde aşağı yönlü tanımlanmış
+
+1202
+01:44:37,295 --> 01:44:38,495
+bu durumda çıkan akım
+
+1203
+01:44:38,495 --> 01:44:41,075
+i6 giren akım
+
+1204
+01:44:41,075 --> 01:44:43,475
+2 ix daha sonrasında
+
+1205
+01:44:43,475 --> 01:44:45,115
+yine giren akım 0.0
+
+1206
+01:44:45,115 --> 01:44:47,016
+24 amper
+
+1207
+01:44:47,016 --> 01:44:49,255
+ix de yine buraya
+
+1208
+01:44:49,255 --> 01:44:51,355
+giren akım şeklinde bunu yazmamız mümkün.
+
+1209
+01:44:51,795 --> 01:44:53,355
+Dolayısıyla ilk denklemimizi
+
+1210
+01:44:53,355 --> 01:44:54,635
+Kirchhoff'un
+
+1211
+01:44:54,635 --> 01:44:57,495
+akımlar yasasına bağlı olarak yazdık.
+
+1212
+01:44:57,555 --> 01:44:59,095
+Burada yeşille işaretli olan
+
+1213
+01:44:59,095 --> 01:45:00,735
+eş düğümlere ilişkin olarak.
+
+1214
+01:45:01,495 --> 01:45:03,495
+Daha sonrasında i6 yönlü olarak
+
+1215
+01:45:03,495 --> 01:45:05,056
+vermiş olduğumuz akım için
+
+1216
+01:45:05,056 --> 01:45:07,416
+V gerilimine eşit
+
+1217
+01:45:07,416 --> 01:45:09,135
+olacağını biliyoruz. Dolayısıyla burada
+
+1218
+01:45:09,135 --> 01:45:11,115
+i6
+
+1219
+01:45:11,115 --> 01:45:12,955
+akımını çekmemiz mümkün.
+
+1220
+01:45:13,336 --> 01:45:15,435
+Aynı yönlü olarak tanımlı olduğu için
+
+1221
+01:45:15,435 --> 01:45:17,156
+V bölü 6000
+
+1222
+01:45:17,156 --> 01:45:19,115
+şeklinde bunu tanımlayabiliriz.
+
+1223
+01:45:19,255 --> 01:45:20,836
+Daha sonrasında
+
+1224
+01:45:20,836 --> 01:45:23,295
+ix akımımız var.
+
+1225
+01:45:23,416 --> 01:45:24,575
+ix akımını bulalım.
+
+1226
+01:45:24,815 --> 01:45:27,656
+ix akımı yalnız dikkat edecek olursanız
+
+1227
+01:45:27,656 --> 01:45:31,535
+v gerilim referansıyla
+
+1228
+01:45:31,535 --> 01:45:32,935
+ters yönlü olarak verilmiş.
+
+1229
+01:45:33,035 --> 01:45:34,735
+Dolayısıyla ix'i
+
+1230
+01:45:34,735 --> 01:45:36,875
+eksi v bölü 2000 şeklinde
+
+1231
+01:45:36,875 --> 01:45:37,795
+tanımlayabiliriz.
+
+1232
+01:45:38,075 --> 01:45:40,575
+ix akımını eksi v bölü 2000
+
+1233
+01:45:40,575 --> 01:45:42,016
+şeklinde tanımlayabiliriz.
+
+1234
+01:45:42,495 --> 01:45:44,836
+O zaman 2 ix akımı
+
+1235
+01:45:44,836 --> 01:45:46,615
+içinde 2 çarpı eksi v bölü
+
+1236
+01:45:46,615 --> 01:45:47,895
+2000 değerini yazabiliriz.
+
+1237
+01:45:47,895 --> 01:45:49,935
+zaten 24 mA yazdık.
+
+1238
+01:45:50,035 --> 01:45:51,735
+İX'i de hesaplamıştık. Dolayısıyla
+
+1239
+01:45:51,735 --> 01:45:54,175
+denklemimiz sadece V'ye bağlı olarak
+
+1240
+01:45:54,175 --> 01:45:55,876
+hesaplanabilir bir duruma
+
+1241
+01:45:55,876 --> 01:45:56,635
+gelmiş oluyor.
+
+1242
+01:45:58,215 --> 01:45:59,275
+Bu durumda
+
+1243
+01:45:59,275 --> 01:46:02,056
+V değerini çektiğimizde 14.4
+
+1244
+01:46:02,056 --> 01:46:03,696
+voltluk bir değeri
+
+1245
+01:46:03,696 --> 01:46:05,015
+hesaplamış oluyoruz.
+
+1246
+01:46:09,455 --> 01:46:11,895
+Bize sorulan biri de bağımsız
+
+1247
+01:46:11,895 --> 01:46:13,455
+akım kaynağının sisteme
+
+1248
+01:46:13,455 --> 01:46:15,356
+sağladığı gücü sormuş.
+
+1249
+01:46:15,355 --> 01:46:18,515
+bunu hesaplayalım.
+
+1250
+01:46:19,335 --> 01:46:20,895
+Burada gerilim değerimizin
+
+1251
+01:46:20,895 --> 01:46:22,635
+referans yönü artıdan
+
+1252
+01:46:22,635 --> 01:46:24,675
+eksiye doğru ve gerilim değerimiz de
+
+1253
+01:46:24,675 --> 01:46:26,675
+pozitif değerli çıktığı için
+
+1254
+01:46:26,675 --> 01:46:28,155
+bu eleman
+
+1255
+01:46:28,155 --> 01:46:30,535
+akım yönü gerilim referansının
+
+1256
+01:46:30,535 --> 01:46:32,895
+eksisinden artısına doğru ilerlemiş oluyor.
+
+1257
+01:46:34,135 --> 01:46:34,895
+Değer
+
+1258
+01:46:34,895 --> 01:46:36,735
+olarak da hesapladığımızda aynı şey veriyor.
+
+1259
+01:46:36,855 --> 01:46:38,415
+Dolayısıyla bu eleman sisteme
+
+1260
+01:46:38,415 --> 01:46:40,575
+güç sağlayan bir eleman
+
+1261
+01:46:40,575 --> 01:46:41,195
+olmuş oluyor.
+
+1262
+01:46:42,315 --> 01:46:44,695
+Hesabımızı v çarpı i şeklinde yapmamız
+
+1263
+01:46:44,696 --> 01:46:46,196
+mümkün. Gerilim değerimiz
+
+1264
+01:46:46,196 --> 01:46:48,776
+şu yönlü olarak
+
+1265
+01:46:48,776 --> 01:46:50,776
+akım yönüyle dikkate
+
+1266
+01:46:50,776 --> 01:46:52,196
+alacak olursak
+
+1267
+01:46:52,196 --> 01:46:54,796
+eksi 14.4 voltmuş gibi
+
+1268
+01:46:54,796 --> 01:46:56,356
+akım yönünden farklı olduğu için
+
+1269
+01:46:56,356 --> 01:46:58,856
+ele alalım. Akım değerimizde
+
+1270
+01:46:58,856 --> 01:47:00,856
+24 mA
+
+1271
+01:47:00,856 --> 01:47:03,155
+olduğu için elde edeceğimiz
+
+1272
+01:47:03,155 --> 01:47:04,535
+güç değeri
+
+1273
+01:47:04,535 --> 01:47:06,356
+345 mW
+
+1274
+01:47:06,356 --> 01:47:08,576
+şeklinde negatif bir değer olmuş
+
+1275
+01:47:08,576 --> 01:47:09,436
+oluyor.
+
+1276
+01:47:11,216 --> 01:47:12,595
+Benzer örnekler
+
+1277
+01:47:12,595 --> 01:47:14,496
+olduğu için sadece bu şekilde
+
+1278
+01:47:14,495 --> 01:47:17,135
+dikkat edeceğimiz noktaları vermiş olalım.
+
+1279
+01:47:18,895 --> 01:47:20,835
+Bunda özel bir durum var mı?
+
+1280
+01:47:20,955 --> 01:47:22,835
+Yani bu örnekte de benzer şekilde
+
+1281
+01:47:22,835 --> 01:47:26,235
+paralel elemanlar olduğu için
+
+1282
+01:47:26,235 --> 01:47:28,435
+birinci düğümle referans düğüm arasında
+
+1283
+01:47:28,435 --> 01:47:29,855
+Vx gerilimi tanımladık.
+
+1284
+01:47:30,875 --> 01:47:32,995
+Üstteki düğüm için giren ve çıkan akımları
+
+1285
+01:47:32,995 --> 01:47:35,255
+Kirchhoff'un akımlar kanunu
+
+1286
+01:47:35,255 --> 01:47:36,415
+çerçevesinde yazdık.
+
+1287
+01:47:42,515 --> 01:47:50,375
+Bunların her birisi Vx'e bağlı olarak tanımlı çıktı. Dolayısıyla tek değişkene bağlı Vx'i çektiğimizde 54 volt olmuş oluyor.
+
+1288
+01:47:50,955 --> 01:47:58,315
+Buna göre her bir koldaki akımı da bu gerilim değerine bağlı olarak 54 bölü 18, 54 bölü 9.
+
+1289
+01:47:58,315 --> 01:48:05,395
+Daha sonra da Vx değerimizi de 54 olarak bulduğumuza göre 5.4'lük bir akım değeri de IB kolunda var.
+
+1290
+01:48:05,395 --> 01:48:12,595
+eksi 5.4 amperlik bir akım değeri olarak da IB'yi bulmamız mümkün oluyor bu sayede.
+
+1291
+01:48:13,635 --> 01:48:20,095
+Yani 54 bölü 18 3 amper, 54 bölü 9 6 amper olarak da bu değeri hesaplamış oluyoruz.
+
+1292
+01:48:22,855 --> 01:48:26,835
+IA'yı bulun demiş, IB'yi, IC'yi bulun demiş. Bunları bulmuş olduk.
+
+1293
+01:48:26,916 --> 01:48:31,995
+Dolayısıyla özel bir örnek değildi. Üzerinden geçmiş olduk.
+
+1294
+01:48:38,260 --> 01:48:42,119
+Şimdi seri elemanlarla ilgili olarak tanımımız neydi?
+
+1295
+01:48:42,219 --> 01:48:44,399
+Single loop devrede de vermiştik bunu.
+
+1296
+01:48:45,819 --> 01:48:52,720
+Üzerlerinden geçen akım değerimiz diğer parametrelerin değişmesiyle eş yönlü olarak değişen elemanlardı.
+
+1297
+01:48:56,139 --> 01:49:05,600
+Dolayısıyla üzerinden geçen akımlar baktığımız zaman 60 voltluk bağımsız kaynakla 8 ohmluk direnç arasında bu ilişkiyi söyleyebiliriz.
+
+1298
+01:49:05,600 --> 01:49:08,140
+Dolayısıyla bu elemanlar birbirine seri olarak bağlı.
+
+1299
+01:49:08,219 --> 01:49:15,480
+Seri olarak bağlılığın bir özelliği de iki elemanın ortak bir terminale sahip olması şeklinde ifade edebileceğimiz bir durum.
+
+1300
+01:49:16,399 --> 01:49:20,520
+Burada 8 ohmluk direnç ile 4 ohmluk direnç için bunu söyleyemeyiz.
+
+1301
+01:49:21,379 --> 01:49:26,120
+Bunların ortak düğümüne, ortak terminaline başka bir eleman daha bağlanmış.
+
+1302
+01:49:26,120 --> 01:49:29,379
+Dolayısıyla 8 ile 4 arasındaki serilik bozulmuş durumda.
+
+1303
+01:49:31,059 --> 01:49:35,520
+Aynı şeyi farklı bir devre yapısı için de söylememiz mümkün.
+
+1304
+01:49:35,600 --> 01:49:37,859
+birbiriyle ardışık
+
+1305
+01:49:37,859 --> 01:49:40,020
+ortak düğümü olan devre grubu da
+
+1306
+01:49:40,020 --> 01:49:41,719
+birbiriyle seridir diyebiliriz.
+
+1307
+01:49:41,780 --> 01:49:43,859
+Yani burada R3 ile 36 voltluk
+
+1308
+01:49:43,859 --> 01:49:45,739
+kaynak birbirine seri olmakla birlikte
+
+1309
+01:49:45,739 --> 01:49:47,480
+ortak tek bir terminalleri vardı.
+
+1310
+01:49:48,380 --> 01:49:49,880
+R4 işte fasulye
+
+1311
+01:49:49,880 --> 01:49:51,940
+eleman diğer eleman
+
+1312
+01:49:51,940 --> 01:49:53,219
+ve VSE1 gibi
+
+1313
+01:49:53,219 --> 01:49:55,959
+saymış olduğumuz buradaki işaretli elemanlar
+
+1314
+01:49:55,959 --> 01:49:57,719
+arasında da her bir
+
+1315
+01:49:57,719 --> 01:49:59,800
+çiftin her bir birbirini takip eden
+
+1316
+01:49:59,800 --> 01:50:01,920
+çift arasında ortak terminallerle
+
+1317
+01:50:01,920 --> 01:50:03,520
+tanımladığımız bir
+
+1318
+01:50:03,519 --> 01:50:09,059
+düğüm dizisi olduğu için bu elemanların da birbirine seri olduğunu söylememiz mümkün.
+
+1319
+01:50:09,639 --> 01:50:12,439
+R2 direncinin herhangi bir serilik söz konusu değil.
+
+1320
+01:50:13,619 --> 01:50:24,679
+Paralel elemanlar için ise paralel elemanların terminalleri iki adet ortak terminal barındırmaları paralelliği tanımlıyor.
+
+1321
+01:50:25,579 --> 01:50:38,340
+Devrede görmüş olduğunuz yapıda bütün bağımsız kaynaklarla direnç elemanları her bir çift iki adet ortak terminal barındırıyor.
+
+1322
+01:50:38,419 --> 01:50:42,139
+Dolayısıyla buradaki her bir eleman çifti kendi arasında paralel.
+
+1323
+01:50:42,200 --> 01:50:46,379
+Dolayısıyla bütün elemanlar da birbirine paralel olarak tanımlamak mümkün.
+
+1324
+01:50:46,379 --> 01:50:50,260
+mesela bir başka devre yapısını
+
+1325
+01:50:50,260 --> 01:50:51,299
+inceleyecek olursak
+
+1326
+01:50:51,299 --> 01:50:53,079
+bağımlı kaynağımız
+
+1327
+01:50:53,079 --> 01:50:56,480
+2 onluk direnç arasında
+
+1328
+01:50:56,480 --> 01:50:58,200
+bunların üst
+
+1329
+01:50:58,200 --> 01:51:00,799
+terminalleriyle alt terminalleri
+
+1330
+01:51:00,799 --> 01:51:02,039
+ortak olduğunu görüyoruz.
+
+1331
+01:51:02,099 --> 01:51:03,099
+Kendi aralarında ortak.
+
+1332
+01:51:03,159 --> 01:51:04,760
+Dolayısıyla bu ikisi birbirine paralel.
+
+1333
+01:51:05,679 --> 01:51:08,319
+Bunun haricinde başka bir paralellik
+
+1334
+01:51:08,319 --> 01:51:09,219
+tanımlayamıyoruz.
+
+1335
+01:51:11,839 --> 01:51:14,079
+Bir başka paralelliği ise
+
+1336
+01:51:14,079 --> 01:51:16,159
+tekil elemanlar için
+
+1337
+01:51:16,159 --> 01:51:17,639
+bu paralelliği tanımlayamadık ama
+
+1338
+01:51:17,639 --> 01:51:20,279
+eleman grupları arasında bunu tanımlamak
+
+1339
+01:51:20,279 --> 01:51:22,379
+da mümkün. Bu seferki paralelliği
+
+1340
+01:51:22,379 --> 01:51:23,620
+ise şöyle tanımlıyoruz.
+
+1341
+01:51:24,499 --> 01:51:26,159
+60 voltluk kaynakla
+
+1342
+01:51:26,159 --> 01:51:27,999
+8 ohmluk direnç birbirine
+
+1343
+01:51:27,999 --> 01:51:30,279
+seriydi ama bunların oluşturmuş
+
+1344
+01:51:30,279 --> 01:51:31,839
+olduğu eleman grubu ile
+
+1345
+01:51:31,839 --> 01:51:33,799
+10 ohmluk direnç
+
+1346
+01:51:33,799 --> 01:51:36,699
+birbirine paralel olmuş oluyor. Bunu da
+
+1347
+01:51:36,699 --> 01:51:38,119
+şöyle ifade edelim.
+
+1348
+01:51:41,119 --> 01:51:42,119
+Burada belki
+
+1349
+01:51:42,119 --> 01:51:44,279
+şekil farklı çizilmiş
+
+1350
+01:51:44,279 --> 01:51:46,039
+ondan farklı
+
+1351
+01:51:46,039 --> 01:51:47,780
+hissetilebiliriz ama
+
+1352
+01:51:47,780 --> 01:51:49,819
+buradaki eleman ile
+
+1353
+01:51:49,819 --> 01:51:50,860
+bunun
+
+1354
+01:51:50,860 --> 01:51:53,239
+terminalleri ile
+
+1355
+01:51:53,239 --> 01:51:55,739
+10 onluk direncin
+
+1356
+01:51:55,739 --> 01:51:58,200
+terminalleri ortak. Dolayısıyla 10 onluk
+
+1357
+01:51:58,200 --> 01:52:00,140
+direnç ile 60'ın
+
+1358
+01:52:00,140 --> 01:52:02,019
+8'e seri olduğu
+
+1359
+01:52:02,019 --> 01:52:04,159
+eleman grubu birbirine paralel
+
+1360
+01:52:04,159 --> 01:52:06,019
+şeklinde tanımlanabiliyor.
+
+1361
+01:52:06,780 --> 01:52:08,159
+Dolayısıyla paralellik sadece
+
+1362
+01:52:08,159 --> 01:52:09,700
+tekil elemanlar üzerinde değil
+
+1363
+01:52:09,700 --> 01:52:12,019
+eleman grupları
+
+1364
+01:52:12,019 --> 01:52:13,860
+arasında da tanımlanmış oluyor.
+
+1365
+01:52:14,719 --> 01:52:15,980
+Tekrar bir süreye ve
+
+1366
+01:52:15,980 --> 01:52:17,560
+slide sayımıza bakalım.
+
+1367
+01:52:20,560 --> 01:52:22,280
+Bu biraz örneklerden
+
+1368
+01:52:22,280 --> 01:52:23,679
+dolayı uzun sürecek ama
+
+1369
+01:52:23,679 --> 01:52:25,860
+10 dakika
+
+1370
+01:52:25,860 --> 01:52:28,039
+kadar ara verene kadar örnekler üzerinde
+
+1371
+01:52:28,039 --> 01:52:28,700
+ilerleyelim.
+
+1372
+01:52:29,555 --> 01:52:48,855
+Verilen devre yapısı üzerinde serilik ve paralelliği inceleyelim isteniyor. Burada göreceğiniz üzere ortak bir terminal paylaşan 40 ve 20 ohmluk dirençler birbirine seri. Bunların oluşturmuş olduğu eşdeğer 60 ohmluk dirence ise 240 ohmluk direnç paralel.
+
+1373
+01:52:48,855 --> 01:52:58,755
+Bunların oluşturmuş olduğu gruba 2 ohmluk direnç seri, şuraya kadar olan devre grubuna karşılık 50 ohmluk direnç paralel.
+
+1374
+01:52:58,755 --> 01:53:07,175
+Yine bunlara 125 ohm, 50 ohm ve çizerek göstersem daha anlamlı olabilir.
+
+1375
+01:53:13,460 --> 01:53:34,460
+Şurada kırmızıyla işaretlemiş olduğum terminalleri, yine kırmızıyla çizmiş olduğum eleman grubu ise, 50 Ohm, 125 Ohm ve 120 mA'lık kaynaklar ile burada işaretlemiş olduğum devre grubu birbirine paralel olarak ifade edilebilir, verilebilir.
+
+1376
+01:53:39,028 --> 01:53:48,267
+Bu buradaki şekilde ise 5 amperlik kaynakla 5 ohmluk direnç birbirine seriyim.
+
+1377
+01:53:49,207 --> 01:53:54,287
+Bunlara 4 ohmluk direncin paralel olduğunu görüyoruz.
+
+1378
+01:53:54,367 --> 01:54:00,128
+Şuraya kadar devreyi tek bir elemana indirgemiş olsak yani şu eleman grubunu ele alsak.
+
+1379
+01:54:00,128 --> 01:54:06,007
+Bu eleman grubu ile arkadaşlar 4 ohmluk direnç paralel olmuş oluyor.
+
+1380
+01:54:06,007 --> 01:54:12,287
+Ve 2 ohmluk direnç etrafında bir kısa devre elemanı olduğu için aslında yok hükmünde.
+
+1381
+01:54:12,947 --> 01:54:15,548
+Dolayısıyla çizerek göstermek gerekirse tekrar.
+
+1382
+01:54:17,807 --> 01:54:25,047
+2 ohmluk direnç terminalleri arasında kısa devre elemanı olduğu için akım kısa devre elemandan geçmeyi tercih edecek.
+
+1383
+01:54:25,568 --> 01:54:28,307
+Dolayısıyla şu ikisi birbirine seriydi.
+
+1384
+01:54:29,928 --> 01:54:31,187
+Bunlar birbirine seri.
+
+1385
+01:54:31,187 --> 01:54:34,487
+bunların oluşturmuş olduğu
+
+1386
+01:54:34,487 --> 01:54:36,487
+çizmiş olduğum terminallere
+
+1387
+01:54:36,487 --> 01:54:38,928
+4 ohmluk direnç paralel
+
+1388
+01:54:38,928 --> 01:54:40,287
+dolayısıyla bunları şöyle
+
+1389
+01:54:40,287 --> 01:54:42,847
+ikinci bir gruba alacak olursam
+
+1390
+01:54:42,847 --> 01:54:44,828
+ve terminallerini
+
+1391
+01:54:44,828 --> 01:54:46,007
+çizecek olursam
+
+1392
+01:54:46,007 --> 01:54:47,547
+göreceğiniz üzere
+
+1393
+01:54:47,547 --> 01:54:50,587
+4 ohmluk şuradaki direncimizle
+
+1394
+01:54:50,587 --> 01:54:52,688
+buradaki dışta
+
+1395
+01:54:52,688 --> 01:54:54,568
+çizmiş olduğum grup birbirine paralel
+
+1396
+01:54:54,568 --> 01:54:56,888
+bunların tamamına ise
+
+1397
+01:54:56,888 --> 01:54:58,568
+şunun
+
+1398
+01:54:58,568 --> 01:54:59,627
+tamamına ise
+
+1399
+01:54:59,627 --> 01:55:04,907
+1.5 ohmluk direnç ve 2 amperlik kaynak seri olmuş oluyor.
+
+1400
+01:55:05,208 --> 01:55:06,108
+Bir soru var galiba.
+
+1401
+01:55:07,727 --> 01:55:13,608
+Hocam kısa devreye sebep olan bağlantı var olmasaydı 2 ohmluk direnç hangi değerine paralel olurdu?
+
+1402
+01:55:14,907 --> 01:55:24,847
+Eğer şu kısa devre elemanı olmamış olsaydı şurada çizmiş olduğum gruba 2 ohmluk direnç seri olacaktı.
+
+1403
+01:55:24,847 --> 01:55:27,428
+2 ohmluk direnç ile bu grubun
+
+1404
+01:55:27,428 --> 01:55:29,288
+birleştiği üst gruba ise
+
+1405
+01:55:29,288 --> 01:55:31,487
+4 ohmluk direnç paralel
+
+1406
+01:55:31,487 --> 01:55:33,688
+olacaktı. Yani araya ekstradan
+
+1407
+01:55:33,688 --> 01:55:35,547
+eğer şu kısa devre
+
+1408
+01:55:35,547 --> 01:55:37,667
+olmamış olsaydı 4 ile
+
+1409
+01:55:37,667 --> 01:55:39,708
+buradaki grubun arasına
+
+1410
+01:55:39,708 --> 01:55:41,507
+2 ohmluk direnç seri olarak
+
+1411
+01:55:41,507 --> 01:55:42,627
+eklenmiş oluyordu.
+
+1412
+01:55:42,627 --> 01:55:44,267
+Adım hocam sağ olun.
+
+1413
+01:55:46,627 --> 01:55:48,287
+Dolayısıyla devre için
+
+1414
+01:55:48,287 --> 01:55:50,628
+gruplama yaparak serilik
+
+1415
+01:55:51,388 --> 01:55:52,807
+ve paralelliği tanımlamamız
+
+1416
+01:55:52,807 --> 01:55:53,507
+mümkün oluyor.
+
+1417
+01:55:54,847 --> 01:55:57,247
+Buna bakmıştık. Buraya bakalım.
+
+1418
+01:55:57,927 --> 01:56:00,467
+Yine benzer bir mantığı burada da bizden istiyor.
+
+1419
+01:56:01,627 --> 01:56:06,227
+3 ve 6 ohmluk dirençlerin birbirine paralel olduğunu söyleyebiliriz.
+
+1420
+01:56:06,287 --> 01:56:10,427
+Çünkü kendi aralarında 2 tane ortak terminal barındırıyorlar.
+
+1421
+01:56:11,028 --> 01:56:21,427
+Bu gruba 5 ohm ve 3 ohmluk dirençler seri ve buna yine 3 ve 9 ohmluk paralel dirençlerin oluşturmuş olduğu grupta seri olmuş oluyor.
+
+1422
+01:56:21,427 --> 01:56:29,007
+Dolayısıyla paralel bu grup 3, 5 ve alttaki grup birbirine seri.
+
+1423
+01:56:29,607 --> 01:56:40,587
+En sağdaki kolu tek bir grup olarak ele alacak olursak en sağdaki grup 5 ohm, 3 ohm ve 1 amperlik kaynağı paralel olarak yerleşmiş durumda.
+
+1424
+01:56:42,347 --> 01:56:44,567
+Saat et de tekrar kontrol edelim.
+
+1425
+01:56:44,567 --> 01:56:54,267
+şu akım ve gerilim kaynaklarının paralel seri bağlanmasıyla ilgili olarak durumu ele alıp ondan sonra ara veririz.
+
+1426
+01:56:55,387 --> 01:57:00,407
+Gerilim kaynaklarını seri bağlayarak aslında şunu elde edebiliriz.
+
+1427
+01:57:00,487 --> 01:57:06,987
+Gerilim kaynaklarının toplamı kadar sisteme gerilim değeri veya potansiyel sağlama imkanımız var.
+
+1428
+01:57:06,987 --> 01:57:15,767
+Dolayısıyla seri birbirine seri olarak bağlı gerilim kaynaklarının yönlü olarak değerlerini topluyoruz.
+
+1429
+01:57:15,807 --> 01:57:16,747
+Yönüne dikkat ediyoruz.
+
+1430
+01:57:16,867 --> 01:57:33,227
+Örneğin bu iki terminal arasına şurada açık renkli olarak çizilmiş terminaller arasına yerleştirilmiş olan V1, V2 ve V3 kaynaklarına bağlı olarak bu uçlar arasındaki potansiyel farkı bunu da tanımlarken şöyle tanımlayalım.
+
+1431
+01:57:34,100 --> 01:58:02,219
+Yani ben şu elemanlar yerine tek bir tane kaynak koyacağım. Bu kaynağın da artı ucu burası, eksi ucu burası olacak. Dolayısıyla ben eksi uçtan girerek artı uca doğru toplama, yönlü toplama işlemini yapacağım. Dolayısıyla ne olmuş olacak? Artı V3, eksi V2, eksi V1. Bu kaynağın gerilim değerinin eksisinden artısına kadar doğru giden gerilim değeri olmuş oldu.
+
+1432
+01:58:02,219 --> 01:58:09,199
+Dolayısıyla bunun da negatifi bizim artı ve eksi yönlü olarak elde edeceğimiz gerilim değerimiz olmuş oluyor.
+
+1433
+01:58:10,440 --> 01:58:19,439
+Veyahut da yani bu yönlü karıştırmak istemezseniz artıdan eksiye doğru bunun eş değerini toplayarak yönlü olarak toplamamız da mümkün olabilir.
+
+1434
+01:58:19,579 --> 01:58:21,600
+Yani daha az belki karıştırmış olur.
+
+1435
+01:58:29,652 --> 01:58:31,631
+Bu şekli çok açıklamaya gerek var mı?
+
+1436
+01:58:31,671 --> 01:58:40,711
+Birbirine seri olarak bağlı 1.5 voltluk kalem piller aslında yerleşim itibariyle farklı görünmekle birlikte
+
+1437
+01:58:40,711 --> 01:58:46,172
+birisinin artı terminali diğerinin eksi terminaline bağlı şekilde yerleşmiş durumda.
+
+1438
+01:58:46,172 --> 01:58:55,332
+Dolayısıyla bu pil grubunun artı terminaline baktığımız zaman burası buraya göre 1.5 volt daha yüksek potansiyele sahip.
+
+1439
+01:58:55,332 --> 01:59:00,111
+Burası buraya göre 1.5 volt potansiyeli yüksek potansiyele sahip.
+
+1440
+01:59:00,611 --> 01:59:03,111
+Bu düğüm buraya göre fazla potansiyele sahip.
+
+1441
+01:59:03,291 --> 01:59:05,532
+Burası da buraya göre fazla potansiyele sahip.
+
+1442
+01:59:05,951 --> 01:59:14,652
+Dolayısıyla bu referansa göre diğer ucumuz hepsinin toplamı kadar bir gerilim değerine sahip oluyor kabaca.
+
+1443
+01:59:14,652 --> 01:59:27,652
+Devre çözümlerinde de mesela tek çevrim devrelerde de seri gerilim kaynaklarının bu şekilde yönlü olarak toplanmasından faydalanabiliriz.
+
+1444
+01:59:29,411 --> 01:59:36,971
+Tıpkı tek çevrim devrelerde dirençleri toplayabildiğimiz gibi bu ilk slide'daki örnekte vardı hatırlayacak olursanız.
+
+1445
+01:59:37,611 --> 01:59:41,912
+Dolayısıyla elimizde böyle pek çok kaynağın yer aldığı bir tek çevrim devre varsa
+
+1446
+01:59:41,912 --> 01:59:46,351
+burada basitleştirme adına bütün kaynakları yönlü olarak toplayabiliriz.
+
+1447
+01:59:46,991 --> 01:59:51,571
+Bu durumda hepsinin eksi artı yönleri aynı referansta değil.
+
+1448
+01:59:51,571 --> 01:59:55,071
+Mesela şurayı artı bir referans yönü olarak seçmişsem
+
+1449
+01:59:55,071 --> 02:00:05,631
+artı 9, artı 12, 1 volt düştü 11, 5 daha arttı 16 voltluk bir referans gerilim farkı oluşturuyor uçlar arasında.
+
+1450
+02:00:05,631 --> 02:00:08,651
+eşdeğer gerilim kaynağımız.
+
+1451
+02:00:08,771 --> 02:00:10,131
+Onu koyduk.
+
+1452
+02:00:11,211 --> 02:00:12,851
+Yöne dikkat etmek kaydıyla
+
+1453
+02:00:12,851 --> 02:00:14,131
+vermiş olduğumuz
+
+1454
+02:00:14,131 --> 02:00:15,951
+yöne dikkat etmek kaydıyla
+
+1455
+02:00:15,951 --> 02:00:18,231
+bu kaynağı
+
+1456
+02:00:18,231 --> 02:00:20,611
+devre içerisinde yerini taşıyabiliriz.
+
+1457
+02:00:20,691 --> 02:00:22,471
+Yani sağda olmak
+
+1458
+02:00:22,471 --> 02:00:23,811
+yerine solda da olabilir ama
+
+1459
+02:00:23,811 --> 02:00:26,571
+gerilim referans yönünü doğru tutturmamız
+
+1460
+02:00:26,571 --> 02:00:28,771
+gerekiyor. Bu da ne demek? Örneğin
+
+1461
+02:00:28,771 --> 02:00:31,731
+bunun içinde
+
+1462
+02:00:31,731 --> 02:00:34,511
+referansımızı çevre yönünden almışsak
+
+1463
+02:00:34,512 --> 02:00:39,152
+çevre akım yönümüz kaynağın eksisinden girip artısından çıkmak durumunda.
+
+1464
+02:00:39,652 --> 02:00:44,172
+Bu kaynağı taşıdığımda da çevre akım yönünü tutturacak şekilde
+
+1465
+02:00:44,172 --> 02:00:47,812
+eksi ve artı gerilim referans yönlerini uygun şekilde vermem gerekiyor.
+
+1466
+02:00:48,312 --> 02:00:51,872
+Yine benzer şekilde iki tane direnç kaldı ve bunlar birbirine seri olduğu için
+
+1467
+02:00:51,872 --> 02:00:59,771
+bunlar için de eşdeğer direnç 320 ohm deyip buradan ana kol akımını bulmamız mümkün olabiliyor.
+
+1468
+02:00:59,771 --> 02:01:09,971
+Dolayısıyla çıkaracağımız bilgi çek çevrim devrelerde gerilim kaynaklarını yönlü olarak toplayarak eş değer gerilim kaynağı elde edebiliyoruz.
+
+1469
+02:01:10,851 --> 02:01:13,771
+Gerilim kaynaklarının paralel bağlanması sıkıntılı bir durum.
+
+1470
+02:01:14,851 --> 02:01:18,991
+Sadece gerilim değerleri eşitse olabilecek bir durum.
+
+1471
+02:01:19,231 --> 02:01:22,131
+Bunun haricinde pratikte sıkıntılı bir durum.
+
+1472
+02:01:23,271 --> 02:01:25,731
+Eğer gerilim değerlerimiz farklıysa bu şu anlama geliyor.
+
+1473
+02:01:25,732 --> 02:01:33,452
+Gerilim değeri düşük olan gerilim kaynağımız aslında bir pil gibi düşünelim şarj olması lazım şarj oluyor gibi bir etki oluşturacak.
+
+1474
+02:01:35,732 --> 02:01:44,851
+Dolayısıyla bu aradaki bağlantıyı sağlayan kablo elemanında çok düşük dirence sahip olduğu için çok yüksek bir akımla aslında şarj ediyor gibi düşünebiliriz.
+
+1475
+02:01:45,431 --> 02:01:54,051
+Eğer pratikte gerilim kaynakları üzerinden geçen akım değerleri bu yüksek akım değerlerini desteklemiyorsa dolayısıyla gerilim kaynağı zarar görecektir yanacaktır.
+
+1476
+02:01:54,051 --> 02:02:00,012
+Dolayısıyla bu şekilde bağlantı ideal bir bağlantı şekli değil.
+
+1477
+02:02:04,532 --> 02:02:21,591
+Buna benzer bir durumu yanlışlıkla ben oluşturmuştum. Kuru aküyü ters referans yönüyle yanlışlıkla şarj etmiştim ve artık pilin artı ve eksi yönleri dönmüştü. Öyle bir durum olmuştu benzer şekilde sizin de belirttiğiniz üzere.
+
+1478
+02:02:25,043 --> 02:02:28,103
+Yani kuru akünün yönlerini değiştirebilmiştim.
+
+1479
+02:02:31,572 --> 02:02:36,331
+pratikte yapmamız gereken bir durum.
+
+1480
+02:02:37,131 --> 02:02:38,072
+Bir de
+
+1481
+02:02:38,072 --> 02:02:39,572
+ideal bir durum olarak
+
+1482
+02:02:39,572 --> 02:02:42,011
+akım kaynaklarının paralel bağlanmasından
+
+1483
+02:02:42,011 --> 02:02:42,912
+bahsedebiliriz.
+
+1484
+02:02:44,051 --> 02:02:44,371
+Burada
+
+1485
+02:02:44,371 --> 02:02:47,811
+aslında
+
+1486
+02:02:47,811 --> 02:02:49,971
+bir düğüm
+
+1487
+02:02:49,971 --> 02:02:52,291
+üzerinden bu işlemi yapacak olursak
+
+1488
+02:02:52,291 --> 02:02:53,971
+mesela bir
+
+1489
+02:02:53,971 --> 02:02:55,992
+noktayı referans gibi seçtiğimizi
+
+1490
+02:02:55,992 --> 02:02:57,811
+düşünelim. Diğer düğümden
+
+1491
+02:02:57,811 --> 02:02:59,211
+çıkacak akım değeri
+
+1492
+02:02:59,211 --> 02:03:01,731
+bu paralel kaynakların toplamı
+
+1493
+02:03:01,731 --> 02:03:03,491
+şeklinde tanımlanabilecek bir durum.
+
+1494
+02:03:04,112 --> 02:03:05,551
+Dolayısıyla bu
+
+1495
+02:03:05,551 --> 02:03:07,472
+beyaz içi boş düğümler arasında
+
+1496
+02:03:07,472 --> 02:03:09,612
+akacak akım, akması gereken
+
+1497
+02:03:09,612 --> 02:03:10,932
+akım, bu paralel
+
+1498
+02:03:10,932 --> 02:03:13,572
+bağımsız kaynakların akım
+
+1499
+02:03:13,572 --> 02:03:15,572
+değerlerinin yönlü toplam olarak
+
+1500
+02:03:15,572 --> 02:03:17,612
+ortaya çıkıyor. Yine yön
+
+1501
+02:03:17,612 --> 02:03:19,331
+referansına dikkat edecek olursanız
+
+1502
+02:03:19,331 --> 02:03:21,091
+yukarı yönlü olarak verildiği için
+
+1503
+02:03:21,091 --> 02:03:23,551
+yukarı yönlü olan akım kaynakları pozitif
+
+1504
+02:03:23,551 --> 02:03:25,151
+aşağı yönlü olanlar negatif
+
+1505
+02:03:25,151 --> 02:03:27,331
+eklenecek. Aynı şeyi
+
+1506
+02:03:27,331 --> 02:03:29,191
+gerilim kaynağı için de tanımlamış olalım.
+
+1507
+02:03:29,211 --> 02:03:32,151
+burada açık renkli terminallere
+
+1508
+02:03:32,151 --> 02:03:34,031
+eş değer olarak bir gerilim kaynağı
+
+1509
+02:03:34,031 --> 02:03:36,311
+tek bir gerilim kaynağı koyacaksak ve bunun için
+
+1510
+02:03:36,311 --> 02:03:38,131
+artı yönü üst tarafta
+
+1511
+02:03:38,131 --> 02:03:40,112
+tanımlamışsak artı
+
+1512
+02:03:40,112 --> 02:03:42,572
+tarafı üstte olan gerilim kaynakları
+
+1513
+02:03:42,572 --> 02:03:43,851
+artı olarak
+
+1514
+02:03:43,851 --> 02:03:45,612
+toplama gelecek
+
+1515
+02:03:45,612 --> 02:03:48,372
+ters yönlü olanlar eksi olarak
+
+1516
+02:03:48,372 --> 02:03:50,211
+toplama girecek yine bu şekilde de
+
+1517
+02:03:50,211 --> 02:03:51,411
+aklımıza tutabiliriz
+
+1518
+02:03:51,411 --> 02:03:58,072
+son olarak bir de bu seri
+
+1519
+02:03:58,072 --> 02:04:01,792
+pardon paralel bağlı akım kaynakları için
+
+1520
+02:04:01,792 --> 02:04:07,112
+bir devre basitleştirme örneği var. Ona bakalım şimdi.
+
+1521
+02:04:08,652 --> 02:04:11,932
+Burada birbirine paralel 3 tane akım kaynağımız var.
+
+1522
+02:04:12,031 --> 02:04:16,051
+Bu akım kaynakları yerine tek bir tane akım kaynağı koyabileceğimizi söylemiştik.
+
+1523
+02:04:16,531 --> 02:04:21,631
+Burada akım kaynağının sadece diğerlerine paralel olması yeterliydi.
+
+1524
+02:04:21,631 --> 02:04:23,691
+Arada eleman olması durumu değiştirmiyor.
+
+1525
+02:04:24,511 --> 02:04:31,791
+Dolayısıyla eş değer akım kaynağının referans yönünde yukarı yönlü verdiğimize göre yukarı yönlü olanlar artı olarak katkı yapacak.
+
+1526
+02:04:32,351 --> 02:04:37,071
+Artı 2.5, eksi 2.5 ve eksi 3.
+
+1527
+02:04:37,071 --> 02:04:44,151
+Dolayısıyla eş değer akım kaynağımızın değeri eksi 3 amper olarak ve yukarı yönlü olarak tanımlanmış oldu.
+
+1528
+02:04:45,051 --> 02:04:47,711
+Bu durumda iki tane direnç değerim var.
+
+1529
+02:04:47,711 --> 02:04:56,691
+Bunlar da 5'er ohm değerine sahip olduğu için aslında her ikisinden de bu akım değerim ikiye bölünerek geçecek.
+
+1530
+02:04:57,172 --> 02:05:01,831
+Bu durumda her birisinden eksi 1.5 amper değer geçiyor olacak.
+
+1531
+02:05:01,831 --> 02:05:08,491
+dolayısıyla her birisinin
+
+1532
+02:05:08,491 --> 02:05:10,991
+gerilimi de bunlar da birbirine paralel olduğu için
+
+1533
+02:05:10,991 --> 02:05:14,691
+eksi 1.5 çarpı 5
+
+1534
+02:05:14,691 --> 02:05:16,871
+ohmdan 7.5 volt
+
+1535
+02:05:16,871 --> 02:05:18,631
+ama değerimizde negatif olarak
+
+1536
+02:05:18,631 --> 02:05:20,951
+yani bu artı eksi referans
+
+1537
+02:05:20,951 --> 02:05:21,731
+yönüne göre
+
+1538
+02:05:21,731 --> 02:05:24,671
+eksi 7.5 voltluk bir
+
+1539
+02:05:24,671 --> 02:05:26,891
+gerilim
+
+1540
+02:05:26,891 --> 02:05:28,651
+düşümüne sahip olmuş olacağız.
+
+1541
+02:05:28,652 --> 02:05:31,551
+sonrasında
+
+1542
+02:05:31,551 --> 02:05:33,532
+dirençlerin seri ve paralel
+
+1543
+02:05:33,532 --> 02:05:35,152
+bağlanmasıyla ilgili olarak eşdeğer
+
+1544
+02:05:35,152 --> 02:05:36,131
+duruma geçiyoruz ama
+
+1545
+02:05:36,131 --> 02:05:38,952
+yine bir kısa ara verelim arkadaşlar
+
+1546
+02:05:38,952 --> 02:05:40,051
+10 dakika kadar
+
+1547
+02:05:40,051 --> 02:05:43,232
+16'yı 20 geçe devam edecek
+
+1548
+02:05:43,232 --> 02:05:45,131
+şekilde aslında benim amacım biraz daha
+
+1549
+02:05:45,131 --> 02:05:47,592
+bu slide'ı da bitirip bir sonraki
+
+1550
+02:05:47,592 --> 02:05:49,512
+gerilim bölücüye geçmekte ama
+
+1551
+02:05:49,512 --> 02:05:51,812
+büyük ihtimalle ona geçemeyebiliriz ama
+
+1552
+02:05:51,812 --> 02:05:53,172
+şimdilik
+
+1553
+02:05:53,172 --> 02:05:55,211
+böyle ilerleyelim
+
+1554
+02:05:55,211 --> 02:05:57,672
+10 dakika kadar ara vermiş olalım
+
+1555
+02:05:57,671 --> 02:06:00,711
+bununla
+
+1556
+02:06:00,711 --> 02:06:02,851
+16.20'de devam ediyor olacağız.
+
+1557
+02:06:13,811 --> 02:06:28,311
+Bundan sonraki kısımda dediğim gibi dirençlerin seri ve paralel bağlanması durumunda paralel ve seri bağlı direnç eleman grubu yerine eşdeğer elemanlar koyabilir miyiz? Bunların değerleri nedir? Onlara bakıyor olacağız.
+
+1558
+02:06:28,971 --> 02:06:36,412
+Sonrasında da bu paralel ve seri devre bilgisini kullanarak gerilim bölücü ve akım bölücü devreleri inceliyor olacağız.
+
+1559
+02:06:36,412 --> 02:06:43,572
+Yani az önce yaptığımız örnekte aslında bir akım bölücü devreydi ama adını vermeden bunu yapmış olduk.
+
+1560
+02:06:43,811 --> 02:06:53,591
+Şimdi dediğim gibi 16-20 geçe devam ederiz. Arada sorunuz olursa ben bilgisayar başındayım. Sorabilirsiniz. Bir kısa ara vermiş olalım.
+
+1561
+02:17:08,659 --> 02:17:16,880
+Evet arkadaşlar, devam edelim. Seri ve paralel dirençler ve eşdeğer direnç hesabında konusunda kalmıştık.
+
+1562
+02:17:19,219 --> 02:17:20,979
+Kısımımıza devam edelim oradan.
+
+1563
+02:17:25,652 --> 02:17:41,612
+Şimdi tek çevrim devre üzerinden yine hareket edelim. Amacımız birbirine seri olarak bağlı dirençlerin yerine tek bir eşdeğer direnç koyabilir miyiz? Bunu bulmak istiyoruz. Amacımız böyle bir şey.
+
+1564
+02:17:41,612 --> 02:17:48,092
+Bununla ilgili olarak tek çevrim devreden hareketle biz aslında şunu yazabiliriz
+
+1565
+02:17:48,092 --> 02:17:55,931
+Verilen devre için bu yönlü bir çevre seçsek ve Kirchhoff'un gerilimler yasasını kullanıyor olsak
+
+1566
+02:17:55,931 --> 02:17:58,071
+şunu söyleyebiliriz
+
+1567
+02:17:58,071 --> 02:18:04,311
+Vs, V1 artı, V2 artı nokta nokta nokta, Vn'e eşit olacak
+
+1568
+02:18:04,311 --> 02:18:08,731
+Burada en adet dirençten oluşan seri bağlı bir direnç dizisinden bahsediyoruz
+
+1569
+02:18:08,731 --> 02:18:15,891
+Seri bir devre olduğu için ana kol akımı ve bütün elemanlardan geçen akım değerimiz eşit olacağı için
+
+1570
+02:18:15,891 --> 02:18:23,591
+bunu aynı zamanda İ çarpı R1 artı İ çarpı R2 artı nokta nokta nokta artı
+
+1571
+02:18:23,591 --> 02:18:30,872
+İ çarpı İ çarpı Rn şeklinde ifade etmemiz mümkün.
+
+1572
+02:18:30,872 --> 02:18:42,111
+büyük N olarak tekrar yapalım. Ve yine bunu İ parantezinde R1 artı, R2 artı, nokta, nokta, nokta, artı, Rn şeklinde de ifade edebiliriz.
+
+1573
+02:18:42,111 --> 02:18:52,291
+Bu şu anlama geliyor. Burada eğer ki biz bu bütün seri dirençlerin yerine tek bir eşdeğer direnç koyabiliyor olsaydık zaten şunu yazacaktık.
+
+1574
+02:18:52,291 --> 02:18:53,471
+vs eşittir.
+
+1575
+02:18:53,592 --> 02:18:57,832
+I çarpı R equivalent yani eşdeğer direnci eşit olacaktır.
+
+1576
+02:18:58,391 --> 02:19:01,071
+Birebir eşleştirme yaptığımızda şunu görüyoruz.
+
+1577
+02:19:01,652 --> 02:19:12,552
+Demek ki bu şekilde seri dizi olarak bağlı bir direnç grubu için eşdeğer tekil bir direnç koymak istersen bu direnç değerlerin toplamını eşit oluyor.
+
+1578
+02:19:12,551 --> 02:19:31,671
+elde ettiğimiz sonuç öyleyse seri dirençler için bunların yerine tek bir direnç koymak istiyorsam bu seri eşdeğer dirence karşılık geliyor ve burada yapacağımız hesap eşdeğer direnç değeri de her bir direnç değerinin toplamı şeklinde ifade edebileceğimiz bir durumu oluşturmuş oluyor.
+
+1579
+02:19:47,796 --> 02:19:55,635
+Burada dikkat etmek gereken bir nokta var. Az önceki devreyi hatırlayalım. Az önceki devrede şöyle bir yapı vardı.
+
+1580
+02:19:57,315 --> 02:20:12,636
+Bir tane DC kaynağımız vardı. Buna bağlı olarak aslında burada bir sürü direncimizden oluşan bir seri direnç dizimiz vardı.
+
+1581
+02:20:13,515 --> 02:20:16,995
+Buna eşdeğer olarak biz şunu oluşturmuştuk. Artı, eksi,
+
+1582
+02:20:21,139 --> 02:20:25,500
+Bu bizim gerilim kaynağımıza ilişkin terminaller.
+
+1583
+02:20:26,120 --> 02:20:31,499
+Bu da eş değer dirence ilişkin olarak bir terminal grubu olsun.
+
+1584
+02:20:31,739 --> 02:20:36,419
+Aslında biz bu iki terminali birbirine bağlayarak devrimizi tamamlamıştık.
+
+1585
+02:20:37,100 --> 02:20:38,839
+Aynı şey burada da söz konusu aslında.
+
+1586
+02:20:38,839 --> 02:20:51,060
+Biz şuradaki artı eksi terminalleri yerine şurada görmüş olduğumuz tek dirençlik iki terminali devre elemanını bağladık.
+
+1587
+02:20:51,139 --> 02:21:01,199
+Dolayısıyla burada eş değer direncin iki tane terminal ucundan görüldüğü şekliyle eş değerini hesaplıyor olacağız.
+
+1588
+02:21:01,320 --> 02:21:13,160
+Yani bakın burada AB terminallerinden baktığımız zaman şurada birbirine seri olan 10, 30 ve 100 onluk dirençlere eş değeri hesapça 140 olacak.
+
+1589
+02:21:13,360 --> 02:21:17,759
+Ama bu AB terminallerinden baktığım zaman yine bunu görüyor olacağım.
+
+1590
+02:21:17,759 --> 02:21:31,299
+Bu hangi terminalden baktığımız bizim için önemli. İlerleyen aşamalarda Norton TV'nin teoremlerini incelerken biz Norton TV'nin eş değerlerini belirli bir terminalden bakarak hesaplıyor olacağız.
+
+1591
+02:21:31,860 --> 02:21:42,759
+Dolayısıyla bu terminalden bakma kavramını bu terminal uçları arasındaki eş değerliği dikkat ederek öğrenelim.
+
+1592
+02:21:42,759 --> 02:21:51,059
+Pratik olarak mesela deney yapıyor olsaydık seri dirençleri nasıl ölçecektik?
+
+1593
+02:21:51,059 --> 02:21:58,679
+Seri dirençleri ölçmek için aslında her bir direncin değerinin toplamak yerine daha pratik bir yol var.
+
+1594
+02:21:59,379 --> 02:22:03,199
+Çünkü netice itibariyle pratikte dirençlerin belirli toleransları var.
+
+1595
+02:22:03,319 --> 02:22:09,819
+Bu toleransları da dikkate alarak belki çok hassas hesap yapıp tekil tekil eşdeğer direnç hesabı yapılabilir ama
+
+1596
+02:22:09,820 --> 02:22:18,680
+Pratikte elimizde seri bağlı dirençler varsa bunun eş değerini ölçmek istiyorsak seri bağlı direnç grubunun iki tane boş ucu olacak.
+
+1597
+02:22:18,820 --> 02:22:20,500
+İki tane terminali olmak durumunda.
+
+1598
+02:22:20,660 --> 02:22:23,839
+Çünkü diğer bütün uçlar diğerleriyle ortak bir şekilde kullanılıyor.
+
+1599
+02:22:24,500 --> 02:22:35,880
+Dolayısıyla boşta kalan iki ucu arasında bizim multimetremizi direnç ölçme konumuna getirip bu iki uç arasındaki direnci ölçebiliriz.
+
+1600
+02:22:35,940 --> 02:22:38,279
+Bu pratikte bizim yapabileceğimiz bir yöntem.
+
+1601
+02:22:38,279 --> 02:22:41,100
+burada dirençlerin herhangi bir
+
+1602
+02:22:41,100 --> 02:22:43,080
+yönü olmadığı için ya da direnç
+
+1603
+02:22:43,080 --> 02:22:45,220
+değerinin bir yönü olmadığı için polaritesi
+
+1604
+02:22:45,220 --> 02:22:45,940
+olmadığı için
+
+1605
+02:22:45,940 --> 02:22:49,380
+ölçüm referanslarımı yani kırmızı
+
+1606
+02:22:49,380 --> 02:22:51,199
+ve siyah olarak görmüş olduğunuz
+
+1607
+02:22:51,199 --> 02:22:53,080
+kablolar bizim aslında kırmızı
+
+1608
+02:22:53,080 --> 02:22:55,360
+kablo pozitif referansımız
+
+1609
+02:22:55,360 --> 02:22:56,619
+siyah kablo
+
+1610
+02:22:56,619 --> 02:22:58,880
+ortak referansımız yani
+
+1611
+02:22:58,880 --> 02:23:01,119
+0 volt veyahut da ortak referans
+
+1612
+02:23:01,119 --> 02:23:03,179
+dediğimiz uç. Burada kırmızı
+
+1613
+02:23:03,179 --> 02:23:05,000
+ve siyah kablonu yerine değiştirsek de
+
+1614
+02:23:05,000 --> 02:23:06,339
+ölçeceğimiz değer için bir
+
+1615
+02:23:06,339 --> 02:23:08,239
+değişiklik olmayacaktır.
+
+1616
+02:23:08,660 --> 02:23:10,860
+Dolayısıyla pratikte seri boğalı dirençleri
+
+1617
+02:23:10,860 --> 02:23:12,899
+de bu şekilde multimetremizi
+
+1618
+02:23:12,899 --> 02:23:14,619
+direnç ölçme konumuna getirerek
+
+1619
+02:23:14,619 --> 02:23:16,619
+yani 10 metre konumundayken
+
+1620
+02:23:16,619 --> 02:23:18,720
+seri direnç değerini ölçmemiz
+
+1621
+02:23:18,720 --> 02:23:19,379
+mümkün oluyor.
+
+1622
+02:23:20,059 --> 02:23:23,039
+Hocam? Efendim? Peki deminki devrede
+
+1623
+02:23:23,039 --> 02:23:25,039
+herhangi bir yerde bir güç kaynağı
+
+1624
+02:23:25,039 --> 02:23:25,559
+olsaydı
+
+1625
+02:23:25,559 --> 02:23:28,879
+bunu ters yapıştırdığımız zaman daha mı fazla
+
+1626
+02:23:28,879 --> 02:23:30,520
+şey olacaktık? Şöyle
+
+1627
+02:23:30,520 --> 02:23:32,319
+eğer ki amacımız
+
+1628
+02:23:32,319 --> 02:23:34,899
+şu ise eğer ki amacımız
+
+1629
+02:23:34,899 --> 02:23:40,279
+eşdeğer direnç ölçmekse yani belirli bir terminal ucundan veya terminal kapısından
+
+1630
+02:23:40,279 --> 02:23:47,459
+baktığımızdaki eşdeğer direnci ölçmek ise pratikte mutlaka devredeki güç kaynağını
+
+1631
+02:23:47,459 --> 02:23:49,199
+ayırarak bunu yapmamız gerekiyor.
+
+1632
+02:23:49,879 --> 02:23:53,599
+Eğer güç kaynağını ayırmazsak farklı bir ölçüm elde ederiz.
+
+1633
+02:23:54,159 --> 02:23:57,659
+Dolayısıyla bu örneğimizde de güç kaynağı yok zaten.
+
+1634
+02:23:58,259 --> 02:24:01,599
+Sadece direnç elemanlarının seri bağlı bir durumunu ölçüyoruz.
+
+1635
+02:24:01,599 --> 02:24:04,039
+Biraz sonra paralel bağlı durumu göreceğiz.
+
+1636
+02:24:04,039 --> 02:24:05,519
+Orada da benzer bir mantık var.
+
+1637
+02:24:05,959 --> 02:24:12,500
+Bir terminal çiftinden baktığımızdaki eşdeğer direnci yine paralel bağlı dirençler içinde benzer bir mantıkla ölçebiliriz.
+
+1638
+02:24:12,852 --> 02:24:27,971
+Bunu bir adım daha ilerletecek olursak yine bir terminal kapısının ardında yerleşik olan karmaşık bir direnç devresine seri paralel bağlı karmaşık bir direnç devresine karşılık olarak da eşdeğer direnci benzer bir mantıkla ölçebileceğiz.
+
+1639
+02:24:27,971 --> 02:24:36,891
+Ama bunlardaki gereklilik devrede veya ölçüm yaptığımız dirençlerde bir kaynak beslemesi olmaması gerekiyor.
+
+1640
+02:24:36,891 --> 02:24:41,991
+Bunu yapmanın en kolay yolu da işte ölçeceğimiz terminallerden birini devreden çıkartmak.
+
+1641
+02:24:42,071 --> 02:24:44,991
+Pratikte bu şekilde yapmak mümkün oluyor bunu.
+
+1642
+02:24:45,212 --> 02:24:47,991
+Dediğim gibi devrede bir kaynak olmayacak bunu yapabilmek için.
+
+1643
+02:24:48,091 --> 02:24:49,411
+Eşteğer direnç ölçebilmek için.
+
+1644
+02:24:52,551 --> 02:24:57,352
+Şimdi seri bağlı dirençlerde güç dağılımı nasıl oluyor?
+
+1645
+02:24:58,131 --> 02:25:02,251
+Şimdi inceleyeceğimiz devre neticede tek çevrime sahip bir devre.
+
+1646
+02:25:02,251 --> 02:25:04,951
+Dolayısıyla bunlardan geçen akım hepsinde aynı.
+
+1647
+02:25:04,951 --> 02:25:06,711
+Bütün elemanlar üzerinde geçen akım aynı.
+
+1648
+02:25:06,831 --> 02:25:09,731
+Dolayısıyla I kare R formülünden hareket edecek olursak
+
+1649
+02:25:09,731 --> 02:25:18,792
+her bir elemanda harcanan güç kendi direnç değeriyle doğru orantılı bir şekilde hesaplanabilecek.
+
+1650
+02:25:19,591 --> 02:25:20,651
+Bunu söyleyebiliriz.
+
+1651
+02:25:20,651 --> 02:25:27,712
+Dolayısıyla burada R1 değeri ne kadar yüksekse o dirençte harcanan güç o kadar yüksek olacak.
+
+1652
+02:25:27,871 --> 02:25:29,712
+Doğru orantılı bir şekilde yüksek olacak.
+
+1653
+02:25:29,831 --> 02:25:30,811
+Bunu söyleyebiliriz.
+
+1654
+02:25:30,811 --> 02:25:40,432
+ve burada da akım değeri eşit olduğu için doğrusal bir orantıyla direnç değerine bağlı olduğunu söylememiz mümkün.
+
+1655
+02:25:42,892 --> 02:25:46,831
+Paralel dirençlere gelecek olursak yine aynı şeyi yapmak istiyoruz.
+
+1656
+02:25:47,712 --> 02:25:50,292
+Elimizde paralel bağlı bir direnç grubu var.
+
+1657
+02:25:51,532 --> 02:25:54,032
+Bir kaynakla da bunu beslediğimizi varsayalım.
+
+1658
+02:25:54,032 --> 02:26:00,271
+Bu kaynağımız bizim bir akım kaynağı olması pratik olarak daha anlamlı gibi duruyor şu aşamada.
+
+1659
+02:26:00,271 --> 02:26:02,432
+Ama herhangi bir kaynak da olabilir. Bu fark etmez.
+
+1660
+02:26:04,091 --> 02:26:11,392
+Böyle bir yapıda karmaşık direnç devresinin yerine tek bir eşdeğer direnç koyabilir miyim diye bunu araştırıyorum.
+
+1661
+02:26:12,011 --> 02:26:21,331
+Bunu yapabilmek için yine bu sefer Kirchhoff'un akım kanununu kullanarak bunu yapacağız.
+
+1662
+02:26:21,331 --> 02:26:33,591
+Şimdi baktığımız zaman bizim kaynağımız IS akımına sahip ve diğer kollardaki akım yönlerini de verilen yönlerde tanımlamış olalım.
+
+1663
+02:26:33,591 --> 02:26:39,432
+Bu durumda Kirchhoff'un akımlar kanunu kullanarak şunu yazmamız mümkün.
+
+1664
+02:26:40,012 --> 02:26:49,231
+IS kaynak akımımız I1 artı I2 artı nokta nokta nokta artı IN'e eşit olmak durumunda.
+
+1665
+02:26:49,831 --> 02:26:51,271
+Ben burada şunu da biliyorum.
+
+1666
+02:26:51,331 --> 02:26:53,511
+bu paralel bağlı bir yapı olduğu için
+
+1667
+02:26:53,511 --> 02:26:55,491
+her bir eleman üzerindeki geyelim düşümü
+
+1668
+02:26:55,491 --> 02:26:57,292
+eşit olacak. Buna da V diyelim.
+
+1669
+02:26:58,031 --> 02:26:58,731
+Bu durumda
+
+1670
+02:26:58,731 --> 02:27:00,731
+IS akımımız
+
+1671
+02:27:00,731 --> 02:27:03,251
+V bölü R1
+
+1672
+02:27:03,251 --> 02:27:05,311
+artı V bölü R2
+
+1673
+02:27:05,311 --> 02:27:07,371
+artı nokta nokta nokta artı
+
+1674
+02:27:07,371 --> 02:27:09,151
+V bölü Rn
+
+1675
+02:27:09,151 --> 02:27:10,451
+şeklinde hesaplanabiliyor.
+
+1676
+02:27:11,111 --> 02:27:13,271
+Güzel. Ben bu devreyi çözdüm.
+
+1677
+02:27:13,531 --> 02:27:14,951
+Yapmak istediğim neydi? Bu
+
+1678
+02:27:14,951 --> 02:27:17,391
+direnç grubu yerine tek bir eleman
+
+1679
+02:27:17,391 --> 02:27:19,231
+koymak. Tek bir eşdeğer direnç
+
+1680
+02:27:19,231 --> 02:27:21,131
+elemanı koymaktı. Eğer bu
+
+1681
+02:27:21,131 --> 02:27:22,971
+şekilde bir devreye indirgeyebiliyor
+
+1682
+02:27:22,971 --> 02:27:25,031
+olsaydım I S değerim
+
+1683
+02:27:25,031 --> 02:27:26,232
+neye eşit olacaktı?
+
+1684
+02:27:27,771 --> 02:27:28,911
+V gerilimim
+
+1685
+02:27:28,911 --> 02:27:30,852
+eş değer devre olacağı için ben
+
+1686
+02:27:30,852 --> 02:27:32,911
+kaynağı aynen korudum.
+
+1687
+02:27:33,092 --> 02:27:35,111
+Elemanlar üzerindeki gerilim düşümünde
+
+1688
+02:27:35,111 --> 02:27:36,952
+değişmemesi lazım.
+
+1689
+02:27:37,051 --> 02:27:38,991
+O zaman bu eş değer
+
+1690
+02:27:38,991 --> 02:27:40,971
+dirençte de yine V gerilim olması lazım.
+
+1691
+02:27:41,792 --> 02:27:42,952
+Bölü R
+
+1692
+02:27:42,952 --> 02:27:44,611
+eş değer direncim olacak.
+
+1693
+02:27:45,232 --> 02:27:46,572
+Yine eleman değerlerimizi
+
+1694
+02:27:46,572 --> 02:27:48,452
+hatta şunu bir adım daha götürelim.
+
+1695
+02:27:48,572 --> 02:27:50,171
+V parantezini aldığımız zaman
+
+1696
+02:27:50,171 --> 02:27:57,071
+1 bölü R1 artı 1 bölü R2 artı nokta nokta artı 1 bölü Rn değerini elde edeceğiz.
+
+1697
+02:27:57,611 --> 02:28:00,011
+Demek ki şunu elde ediyoruz.
+
+1698
+02:28:00,231 --> 02:28:11,971
+1 bölü R eş 1 bölü R1 artı 1 bölü R2 artı nokta nokta artı 1 bölü Rn değerine eşit oluyormuş.
+
+1699
+02:28:12,691 --> 02:28:22,551
+paralel bağlı devrelerde bu şekilde eşdeğer direnci bulmamız mümkün oluyor. Bunu elde etmiş olduk.
+
+1700
+02:28:23,532 --> 02:28:31,931
+Şimdi aynı kavram burası için de geçerli. Yani bir terminal ucundan baktığım zamanki eşdeğer direnci buluyorum. Şöyle mesela ayıralım.
+
+1701
+02:28:31,931 --> 02:28:43,372
+Şurada bir sadece kaynaktan oluşan terminalleri şurada işaretlediğim uçlar olan bir eleman var.
+
+1702
+02:28:43,372 --> 02:28:51,851
+Bu tarafta da yine bir paralel direnç cizisinden oluşan bir eleman grubum var.
+
+1703
+02:28:52,431 --> 02:29:01,251
+Ben bu eleman grubuna bu terminalden baktığım zaman gördüğümdeki eşdeğer dirence karşılık gelen tek bir elemanı bağlayabiliyormuşum.
+
+1704
+02:29:01,931 --> 02:29:06,571
+Yine terminalden baktığım zamanki eşdeğer dirençten bahsedebiliriz.
+
+1705
+02:29:07,611 --> 02:29:11,731
+Bu kavram dediğim gibi Norton, Thevenin eşdeğerlerinde çok daha anlam kazanacak.
+
+1706
+02:29:12,491 --> 02:29:14,831
+Yavaş yavaş bunu oturtmaya çalışalım.
+
+1707
+02:29:16,051 --> 02:29:23,331
+Zaten bunu paralellik ve serilik kavramlarında eşdeğer direnç hesabında da yürütüyor olacağız.
+
+1708
+02:29:23,331 --> 02:29:26,091
+Ama kavram kabaca bu şekilde tanımlıyor.
+
+1709
+02:29:26,631 --> 02:29:27,591
+Tanımladığımız bir kavram.
+
+1710
+02:29:27,592 --> 02:29:50,831
+Yine pratikte arkadaşlar paralel direnç dizisini aslında hesapla bulmak kolay. Az önce vermiş olduğumuz formül çerçevesinde bunu yapabiliriz. Ama pratikte bunu yapmak için yine toleransları ve kayıpları göz ardında atacak şekilde pratik olarak şöyle bir ölçüm yapabiliriz.
+
+1711
+02:29:50,831 --> 02:29:57,971
+Paralel bağlı dirençlerden oluşturmuş olduğum devre grubunun iki terminalli bir eleman gibi düşünebilirim.
+
+1712
+02:29:57,971 --> 02:30:05,992
+Arka tarafında yani o terminalden baktığım zaman arka tarafta karmaşık bir devre de olabilir. Paralel bir direnç dizisi de olabilir. Önemli değil.
+
+1713
+02:30:06,691 --> 02:30:11,031
+Ben neticede paralel bağlı bu devre grubunun iki tane terminali olacaktır.
+
+1714
+02:30:11,031 --> 02:30:23,291
+ortak iki tane her bir devre elemanı diğeriyle ortak birer terminale sahip olduğu için bunları birleştirdiğimde bu devre grubunun iki tane ucu olacak ve bu bir terminale denk geliyor.
+
+1715
+02:30:23,291 --> 02:30:38,731
+Terminal çiftine denk geliyor. Bu terminal uçları arasında yine 10 metre ile yani multimetre mi direnç ölçme kademesine getirerek ölçüm yaptığımda aslında gördüğüm değer bu paralel direnç dizisine karşılık eş değer dirençleri.
+
+1716
+02:30:38,731 --> 02:30:42,871
+yani paralel bağlı dirençlerin eş değerini bulmuş oluyorum.
+
+1717
+02:30:42,971 --> 02:30:53,591
+Yine burada da şu söz konusu direnç dizisinin veya eş değer direncin bir polaritesi olmadığı için
+
+1718
+02:30:53,591 --> 02:30:57,991
+10 metremin uçlarının yönlerini değiştirsem de yine aynı değeri görürüm.
+
+1719
+02:30:58,591 --> 02:31:02,471
+Tıpkı seri dirençlerde olduğu gibi yine dikkat edeceğimiz bir nokta var.
+
+1720
+02:31:02,471 --> 02:31:14,272
+devrede enerji varken veya devreye kaynak bağlı iken bu şekilde bir eşdeğer direnç ölçümü yapmamız anlamlı sonuç vermeyecektir. Bir soru var galiba onu görmeye çalışıyorum.
+
+1721
+02:31:19,572 --> 02:31:46,791
+10 metre ölçüm yaparken açık devre mi? Bu 10 metre dediğimiz yapı volt metre veya amper metreden farklı. Aslında şöyle düşünebilirsiniz. Devreye, evet kaynak gibi davranıyor. Devreye bir test kaynak değeri sağlıyor ve bir ölçüm gerçekleştiriyor.
+
+1722
+02:31:46,791 --> 02:31:59,072
+örneğin bir gerilim değeri uygulayıp uçlardaki akım değerini kontrol ediyor ve buna göre bir eş değer direnç hesabını veya devre direnç hesabını sağlamış oluyor.
+
+1723
+02:31:59,072 --> 02:32:04,851
+Yoksa bu amper metre veya volt metreden farklı bir durum oluşturmuş oluyor.
+
+1724
+02:32:08,691 --> 02:32:15,871
+Burada yine tıpkı seri devrelerde güç dağılımını hesapladığımız gibi paralel devrelerde de yapabiliriz bunu.
+
+1725
+02:32:16,971 --> 02:32:22,771
+Seri devrelerde güç direnç değerine doğru orantılı bir şekilde hesaba katılıyordu.
+
+1726
+02:32:23,331 --> 02:32:28,112
+Veyahut da direnç değeriyle doğru orantılı olarak elemanlar arasında paylaştırılıyordu.
+
+1727
+02:32:28,831 --> 02:32:36,991
+Paralel elemanlı, paralel bağlı bir devrede bunu incelediğimizde ise aslında bu sefer hesabımızı V kare bölü R'den yapalım.
+
+1728
+02:32:36,991 --> 02:32:41,811
+her bir elemandaki gerilim düşümü paralel bağlı oldukları için eşit.
+
+1729
+02:32:41,811 --> 02:32:51,151
+Dolayısıyla v kare bölü r hesabını yaptığımızda burada paralel bağlı olan elemanların direnç değeri yükseldikçe harcadıkları güç azalacak.
+
+1730
+02:32:51,271 --> 02:32:57,311
+Dolayısıyla direnç değeriyle ters orantılı bir güç değerine sahip olacak bu elemanlar.
+
+1731
+02:32:58,851 --> 02:33:06,291
+Direnç değeriyle ters orantılı bir şekilde güç değerine sahip olmuş olacaklar.
+
+1732
+02:33:06,291 --> 02:33:10,431
+Bunu da V kare bölü R hesabından, güç hesabından doğrulayabiliriz.
+
+1733
+02:33:10,891 --> 02:33:12,872
+Bütün elemanların gerilim değerleri eşit.
+
+1734
+02:33:13,291 --> 02:33:14,451
+Dolayısıyla V kareler eşit.
+
+1735
+02:33:14,851 --> 02:33:21,331
+Her bir elemanın kendi direnci ne kadar yüksekse üzerine düşen güç o kadar azalmış olacak.
+
+1736
+02:33:23,591 --> 02:33:29,431
+Seri bağlı devreler için ve paralel bağlı devreler için arkadaşlar bir gösterimimiz var.
+
+1737
+02:33:29,431 --> 02:33:38,772
+Paralel bağlı dirençler için iki adet dik çizgiyi paralel bağlantıyı göstermek için kullanabiliyoruz.
+
+1738
+02:33:38,831 --> 02:33:41,451
+Seri bağlı devreler için de virgül kullanabiliriz.
+
+1739
+02:33:42,931 --> 02:33:54,791
+Dolayısıyla şekilde görmüş olduğunuz devre mantığı için R1, R2 ve R3 dirençlerinin birbirine paralel olduğunu formal olarak göstermek adına
+
+1740
+02:33:54,791 --> 02:34:02,791
+R1 çift çizgi R2 çift çizgi R3 şeklinde bunların birbirine paralel olduğunu belirtmiş oluyoruz.
+
+1741
+02:34:12,211 --> 02:34:19,911
+Şimdi benzer bir mantığı arkadaşlar şimdi seri ve paralel devreleri direnç değeri üzerinden değerlendirdik.
+
+1742
+02:34:20,552 --> 02:34:25,611
+Benzer bir mantığı bu elemanların iletkenlik değeri üzerinden de yapabiliriz.
+
+1743
+02:34:26,471 --> 02:34:27,331
+Yani ne yapacağız?
+
+1744
+02:34:27,611 --> 02:34:31,451
+Elimizde bir takım direnç elemanları var.
+
+1745
+02:34:31,611 --> 02:34:36,552
+Bunları seri bağlayacağız ama bu direnç elemanların biz iletkenlik değerlerini kullanacağız.
+
+1746
+02:34:36,552 --> 02:34:40,231
+Ve eş değer iletkenlik hesabı yapmaya çalışacağız.
+
+1747
+02:34:40,231 --> 02:34:42,071
+şimdi
+
+1748
+02:34:42,071 --> 02:34:44,951
+yine tek çevrim bir devremiz var
+
+1749
+02:34:44,951 --> 02:34:47,151
+seri devrelerde bu şekilde hareket ediyorduk
+
+1750
+02:34:47,151 --> 02:34:51,751
+birden çok direnç elemanımız var
+
+1751
+02:34:51,751 --> 02:34:52,911
+ve bunların iletkenlik
+
+1752
+02:34:52,911 --> 02:34:53,892
+değeriyle ilgileniyoruz
+
+1753
+02:34:53,892 --> 02:34:57,072
+yine tek bir çevrim olduğu için yapacağımız işlem
+
+1754
+02:34:57,072 --> 02:34:59,131
+Kirchhoff'un gelinler kanunu
+
+1755
+02:34:59,131 --> 02:35:00,951
+kullanmak ve bu da bizi şuna
+
+1756
+02:35:00,951 --> 02:35:01,531
+götürür
+
+1757
+02:35:01,531 --> 02:35:03,691
+v in eşittir
+
+1758
+02:35:03,691 --> 02:35:05,991
+v1 artı v2
+
+1759
+02:35:05,991 --> 02:35:07,271
+nokta nokta nokta
+
+1760
+02:35:07,271 --> 02:35:08,771
+vn'e kadar gidiyor olsun
+
+1761
+02:35:08,771 --> 02:35:23,771
+Burada şunu hatırlayacak olursak i çarpı r eşittir v şeklinde dirence bağlı ohm kanunu verirken iletkenlik içinde v çarpı g eşittir i şeklinde bunu tanımlayabiliyorduk.
+
+1762
+02:35:23,771 --> 02:35:24,331
+biliyorduk.
+
+1763
+02:35:25,871 --> 02:35:27,791
+Bu durumda akım
+
+1764
+02:35:27,791 --> 02:35:29,871
+değerim bütün elemanlar için aynı
+
+1765
+02:35:29,871 --> 02:35:32,091
+olduğu için geyelim değerlerimizi
+
+1766
+02:35:32,091 --> 02:35:33,471
+hesaplamamız gerekirse
+
+1767
+02:35:33,471 --> 02:35:34,311
+burada
+
+1768
+02:35:34,311 --> 02:35:37,451
+i bölü
+
+1769
+02:35:37,451 --> 02:35:39,451
+g1 artı
+
+1770
+02:35:39,451 --> 02:35:41,731
+i bölü g2 artı
+
+1771
+02:35:41,731 --> 02:35:42,691
+nokta nokta nokta
+
+1772
+02:35:42,691 --> 02:35:45,811
+i bölü gn şeklinde bunu ifade
+
+1773
+02:35:45,811 --> 02:35:47,631
+edebiliriz. Toparlayacak olursak da
+
+1774
+02:35:47,631 --> 02:35:48,891
+bunu i parantezinde
+
+1775
+02:35:48,891 --> 02:35:51,471
+1 bölü g1 artı nokta nokta
+
+1776
+02:35:51,471 --> 02:35:53,071
+artı bir bölü
+
+1777
+02:35:53,071 --> 02:35:54,951
+gn şeklinde ifade edebiliriz.
+
+1778
+02:35:55,731 --> 02:35:57,131
+Bu bizim en adet dirençten
+
+1779
+02:35:57,131 --> 02:35:59,091
+oluşan bir seri bağlı
+
+1780
+02:35:59,091 --> 02:36:01,151
+devremiz için, seri direnç devresi
+
+1781
+02:36:01,151 --> 02:36:03,331
+için elde etmiş olduğumuz
+
+1782
+02:36:03,331 --> 02:36:04,811
+denklemimiz bu.
+
+1783
+02:36:05,411 --> 02:36:07,391
+Peki biz burada seri bağlı
+
+1784
+02:36:07,391 --> 02:36:09,031
+dirençler
+
+1785
+02:36:09,031 --> 02:36:10,631
+yerine tek bir eşdeğer
+
+1786
+02:36:10,631 --> 02:36:12,951
+eleman koymak istesek
+
+1787
+02:36:12,951 --> 02:36:15,171
+bu durumda da şunu yazmamız gerekiyordu
+
+1788
+02:36:15,171 --> 02:36:16,411
+v in eşittir.
+
+1789
+02:36:17,131 --> 02:36:18,711
+Burada elemanımız
+
+1790
+02:36:18,711 --> 02:36:20,171
+v olsun.
+
+1791
+02:36:20,171 --> 02:36:22,351
+V değerini de nasıl yazacağız?
+
+1792
+02:36:22,531 --> 02:36:24,391
+İ bölü G eşdeğer
+
+1793
+02:36:24,391 --> 02:36:25,331
+şeklinde yazacağız.
+
+1794
+02:36:26,372 --> 02:36:27,991
+Eşleştirme yapacak olursak
+
+1795
+02:36:27,991 --> 02:36:29,792
+V yine V in, İ ye iyi.
+
+1796
+02:36:29,971 --> 02:36:31,512
+Demek ki çıkan sonuç
+
+1797
+02:36:31,512 --> 02:36:33,411
+1 bölü
+
+1798
+02:36:33,411 --> 02:36:35,592
+eşdeğer iletkenlik
+
+1799
+02:36:35,592 --> 02:36:38,092
+1 bölü G1 artı 1 bölü
+
+1800
+02:36:38,092 --> 02:36:40,092
+G2 artı nokta nokta artı
+
+1801
+02:36:40,092 --> 02:36:42,271
+1 bölü Gn şeklinde
+
+1802
+02:36:42,271 --> 02:36:44,031
+iletkenliklerin
+
+1803
+02:36:44,031 --> 02:36:46,351
+seri bağlı olduğu durumda
+
+1804
+02:36:46,351 --> 02:36:47,911
+eşdeğer iletkenliği bu şekilde
+
+1805
+02:36:47,911 --> 02:36:49,932
+bulabiliyoruz. Bakın ne oldu?
+
+1806
+02:36:50,171 --> 02:36:56,291
+direnç değeri üzerinden paralel bağlı eşdeğer direnci nasıl hesaplıyorsak
+
+1807
+02:36:56,291 --> 02:37:02,191
+iletgenlik içinde seri bağlı devrede eşdeğer iletgenlik aynı şekilde hesaplanıyormuş.
+
+1808
+02:37:03,111 --> 02:37:04,291
+Şimdi bu işlemi bir de
+
+1809
+02:37:09,043 --> 02:37:30,403
+paralel devreler için yapalım. Aynı mantık burada da söz konusu olacak. Burası için bir gerilim kaynağı bağlamış ama önemli değil. Akım kaynağı da bağlayabilirdik. Yine akım kaynağı üzerinden hareket edelim isterseniz. Yani bizim kullanacağımız eşdeğer devre şöyle bir şey olsun.
+
+1810
+02:37:41,332 --> 02:38:05,672
+G1, G2, G3, Gn şeklinde gitsin. Burada da İS gerilimimiz var. Ben şunu araştırmak istiyorum. Burada aynı kaynağı kullanarak bunlar yerine bir tane eşdeğer iletkenlik değerine sahip olan tek bir eleman koyabilir miyim?
+
+1811
+02:38:05,672 --> 02:38:30,811
+Yine aynı hesabı yapabiliriz. Şu kollardaki akım değerlerimiz I1, I2, IN şeklinde gitsin. Öyleyse IS eşittir I1 artı I2 artı nokta nokta nokta artı IN şeklinde gidebilir. Yine aynı şekilde formülümüzü yazalım. I çarpı R, V'ye eşit olduğu gibi V çarpı G'de I'ye eşit olacak. Burada akım değerlerimizi yerine yazacak olursak.
+
+1812
+02:38:36,691 --> 02:38:47,691
+akım değerlerimizi yerine yazacak olursak, her bir elemanın üzerindeki düşen gerilimi de eşit olduğunu biliyor olduğumuz için şunu yazabiliriz.
+
+1813
+02:38:47,691 --> 02:38:49,691
+İ bölü
+
+1814
+02:38:49,691 --> 02:38:51,691
+Pardon
+
+1815
+02:38:51,691 --> 02:38:55,971
+Şeyin ne yazacaktık?
+
+1816
+02:38:56,052 --> 02:38:59,811
+V çarpı G1
+
+1817
+02:38:59,811 --> 02:39:01,831
+artı V çarpı G2
+
+1818
+02:39:01,831 --> 02:39:04,311
+artı nokta nokta artı V çarpı
+
+1819
+02:39:04,311 --> 02:39:08,112
+Gn şeklinde bu akım değerimizi yazabiliriz. V parantezini
+
+1820
+02:39:08,112 --> 02:39:09,872
+aldığımızda da G1, G2
+
+1821
+02:39:09,872 --> 02:39:12,071
+nokta nokta nokta artı Gn'e kadar
+
+1822
+02:39:12,071 --> 02:39:15,671
+gittiğini görüyoruz.
+
+1823
+02:39:15,671 --> 02:39:41,751
+Eş değer devre için bu hesabı yapmış olsaydık Is'nin neye eşit olması lazım? V çarpı eş değer iletkenliğe eşit olması lazım. Dolayısıyla buradaki değerleri eşleştirdiğimizde bu değerin eş değer iletkenlik olması lazım. Dolayısıyla eş değer iletkenlik paralel bağlı devreler için iletkenlik değerlerinin toplamı şeklinde ortaya çıkmış oluyor arkadaşlar.
+
+1824
+02:39:41,751 --> 02:39:49,872
+Direnç ve iletkenlik cinsinden seri ve paralel devrelerde eş değer durumları bu şekilde tanımlamış ve hesaplamış oluyoruz.
+
+1825
+02:39:51,571 --> 02:39:55,671
+Bunun haricinde ne var? Bakayım bir süreye ve slide'lara bakalım.
+
+1826
+02:39:59,531 --> 02:40:07,511
+Kaç örneğimiz var? İki örnek ve bir özet tablo şeklinde gidiyor.
+
+1827
+02:40:12,691 --> 02:40:21,271
+Verilen örnekte iyi akımını ve 80 voltluk kaynaktaki gücü bulmamız isteniyor.
+
+1828
+02:40:22,231 --> 02:40:35,372
+Şimdi burada iki farklı özellikten faydalanacağız. Bunlardan bir tanesi tek çevrim devredeki bağımsız gerilim kaynaklarının eşdeğerliliğinden,
+
+1829
+02:40:35,372 --> 02:40:40,771
+ikincisi ise seri bağlı dirençlerin eşdeğerliliğinden faydalanıyor olacağız.
+
+1830
+02:40:40,771 --> 02:40:46,712
+Bu iki özelliği kullandığımızda örneğin ben bu devrede
+
+1831
+02:40:51,347 --> 02:41:07,027
+Kaynakları ve dirençleri oynatırsam ana kol akımında herhangi bir değişikliğe sebebiyet vermem. Dolayısıyla buradaki kaynakları birbirine yaklaştıralım. 80 voltluk kaynak, şu 30 voltluk kaynağı buna yaklaştıralım.
+
+1832
+02:41:11,827 --> 02:41:36,727
+ve son olarak buradaki kaynağımızı da 80 voltluğa yaklaştıralım. Ama yönlerine dikkat edin. Eğer bir referans, çevrim, akım yönü seçmiş olsaydım bu yönde, bu yön hiç değişmeyecek. Dolayısıyla bu yön kaynağın artısından eksisine giriyor. Dolayısıyla bunu değiştirmeyeceğiz. Dolayısıyla bu kaynağı taşıdığımda 20 voltluk değer bu şekilde gelmiş olacak.
+
+1833
+02:41:36,727 --> 02:41:45,487
+Dolayısıyla ben bu kaynaklar yerine eşdeğer tek bir kaynak koymak istesem ve yönünü de bu şekilde belirleysem ne olur bakalım.
+
+1834
+02:41:45,487 --> 02:41:54,087
+Artı yönü üst taraf. Bunun artı yönü, eksi yönü bu şekilde. Dolayısıyla 30 katkı yapacak, 80 katkı yapacak, 20 volt.
+
+1835
+02:41:54,728 --> 02:42:01,487
+Buna ters yönde katkı yapacak. Dolayısıyla 90 voltluk bir eşdeğer gerilim kaynağımızdan bahsedebiliriz.
+
+1836
+02:42:01,487 --> 02:42:26,167
+Benzer şekilde direnç elemanlarını da ele alalım. Direnç elemanlarını da 10 Ohm, 7 Ohm, 5 Ohm ve 8 Ohm olarak birbirine seri olarak yerleştiğini biliyoruz.
+
+1837
+02:42:26,167 --> 02:42:52,607
+Şurada baktığımız zaman gördüğümüz eş değer direnci ne olarak söyleyebiliriz? Seri devre. Dolayısıyla bunları toplayabiliriz. 17, 22 ve 30 ohmluk bir değer elde ediyoruz. Dolayısıyla bu devrenin seri kaynaklarını birleştirdiğimizde ve seri dirençleri birleştirdiğimizde eş değeri şu olmuş oluyor.
+
+1838
+02:42:56,308 --> 02:43:20,887
+90 volt, 30 ohm. Demek ki ana kol akımı, iyi akımımız 90 bölü 30'dan 3 amper olacak. Dolayısıyla buradaki eşdeğer devre olduğu için burayı 3 amper olarak bulmuş oluyoruz. Bizden ne istiyor bir de? 80 voltluk kaynaktaki gücü istiyor. 80 voltluk kaynaktaki gücümüz verilen yönlere göre dikkate alacak olursak,
+
+1839
+02:43:20,887 --> 02:43:27,728
+eksi 80 volt çarpı 3 amperden 240 wattlık bir değere karşılık gelmiş oluyor.
+
+1840
+02:43:30,727 --> 02:43:32,747
+Bu şekilde çözmüş olalım.
+
+1841
+02:43:36,755 --> 02:43:54,856
+Bir başka örneğimizde 3 adet akım kaynağı olan paralel bağlı bir devre için 10 Ohm'luk V ile verilmiş olan gerilim değerini bulmamız isteniyor.
+
+1842
+02:43:55,516 --> 02:44:02,295
+Şimdi burada yine paralel bağlı akım kaynakları var. Paralel bağlı akım kaynaklarını aslında birleştirebildiğimizi biliyoruz.
+
+1843
+02:44:02,295 --> 02:44:06,915
+ve devrenin geri kalanında paralel elemanlar olduğu için dirençleri de oynatabiliriz.
+
+1844
+02:44:07,535 --> 02:44:14,135
+Öncelikli olarak devrenin bir kademe elemanların yeri oynatılmış halini çizelim.
+
+1845
+02:44:15,616 --> 02:44:18,755
+5 amperlik bir direnç kaynağımız var.
+
+1846
+02:44:20,215 --> 02:44:25,495
+Buna paralel 1 amperlik başka bir kaynağımız var ama yönü ters.
+
+1847
+02:44:25,495 --> 02:44:37,855
+Yine son olarak da 6 amperlik son akım kaynağımız da var. Bunlar bu şekilde iki terminalli bir grup oluştursun.
+
+1848
+02:44:37,855 --> 02:44:49,055
+Şimdi biz bu koldan akan akımı inceleyip bunun yerine bu kaynaklar yerine tek bir akım kaynağı koymak istiyor olsaydık arkadaşlar
+
+1849
+02:44:49,055 --> 02:44:57,196
+bu akım kaynağının yönüyle doğru yönlü olacak şekilde elemanların katkısını yönlü olarak toplayacaktık.
+
+1850
+02:44:57,196 --> 02:45:07,355
+Bu durumda aynı yönlü 5 amper, eksi 1 amper, 6 amper toplamda 10 amperlik bir eş değer akım kaynağından bahsedebiliriz.
+
+1851
+02:45:07,855 --> 02:45:28,595
+Şimdi direnç elemanları içinde bunların da yerlerini oynattığımız durum için 10 Ohm ve 10 Ohm şeklinde yazabileceğimiz bir durum. Paralel devreler, şuradan baktığımızda gördüğümüz eş değer direncimiz paralel oldukları için ne olacak? Yarı yarıya olacağı için 5 Ohm.
+
+1852
+02:45:28,595 --> 02:45:36,215
+O zaman bizim burada görmüş olduğumuz devreye eş değer olarak elemanları indirgediğimizde elde edeceğimiz yapı bu.
+
+1853
+02:45:36,735 --> 02:45:40,815
+Dolayısıyla ana kol akımımız da 10 bölü 5'ten 2 amper olarak elde edilir.
+
+1854
+02:45:42,915 --> 02:45:45,535
+Dolayısıyla şurada 2 amperlik bir değer var.
+
+1855
+02:45:46,635 --> 02:45:49,135
+Elemanların üzerindeki gerilimlerin eşit olması lazım.
+
+1856
+02:45:49,336 --> 02:45:51,015
+V, V şeklinde olması lazım.
+
+1857
+02:45:51,015 --> 02:46:03,175
+O zaman bu kollardaki akımlarımız V bölü 10 artı V bölü 10 eşittir 2 amper olacağı için her bir koldan akacak akım 1 ampere karşılık gelmiş olur.
+
+1858
+02:46:03,175 --> 02:46:15,116
+O zaman şurada 1 amperlik bir akım varsa bu V yönlü yerim değerimiz 1 çarpı 10'dan 10 watt olarak hesaplanmış olacak.
+
+1859
+02:46:17,135 --> 02:46:20,055
+Dolayısıyla bu örneği de böyle tanımlamış olalım.
+
+1860
+02:46:21,015 --> 02:46:24,315
+Ben neyi yanlış yaptım?
+
+1861
+02:46:25,755 --> 02:46:26,275
+Bakalım.
+
+1862
+02:46:30,227 --> 02:46:32,928
+Hocam, şey yaptınız galiba. Neyi yanlış yaptık?
+
+1863
+02:46:33,247 --> 02:46:39,327
+Şey, yani amperi volt gibi düşündünüz, yanlışlıkla, onu böldünüz.
+
+1864
+02:46:41,007 --> 02:46:43,127
+Yani bize amper verdi, evet çarpacaktık.
+
+1865
+02:46:43,207 --> 02:46:50,527
+Tamam, tamam, okey. Çarpacağımız zaman, ben böldüm, onu beşe böldüm, halbuki çarpacaktık, tamam, okey o zaman.
+
+1866
+02:46:55,572 --> 02:47:04,691
+Tekrar bir kontrol edelim. Gerilim değeri, akım değerimizi doğru bulduk değil mi? 11, 10, 10 amper. Her birine 5'er,
+
+1867
+02:47:04,691 --> 02:47:07,691
+5'er,
+
+1868
+02:47:09,172 --> 02:47:13,751
+Her birine ne kadar akım akmış olacak 10 amperi paylaştıracağımız zaman.
+
+1869
+02:47:14,271 --> 02:47:16,751
+Her birine 5'er amper gelecek.
+
+1870
+02:47:16,951 --> 02:47:21,092
+Yani şuradan biz 2 yazdık ama buradan akacak akım 5 amper olacak.
+
+1871
+02:47:21,271 --> 02:47:22,651
+Şuradan da 5 amper akacak.
+
+1872
+02:47:23,191 --> 02:47:28,471
+Dolayısıyla bu kaynakları topladığımızda elde ettiğimiz eşdeğer akım değeri 10 amperi sağladık.
+
+1873
+02:47:29,192 --> 02:47:33,352
+Dolayısıyla 5 ile 10'u çarptığımızda da 50 voltluk bir değeri elde etmiş olacağız.
+
+1874
+02:47:33,512 --> 02:47:34,491
+Tamam düzeltmiş olalım.
+
+1875
+02:47:34,491 --> 02:47:55,371
+Şimdi eşdeğer direnç durumunda seri ve paralel bağlı devreler için her bir direnç değerini arttırmamızın eşdeğer dirence katkısı ne yönlü oluyor?
+
+1876
+02:47:55,471 --> 02:47:56,212
+Bunu inceleyelim.
+
+1877
+02:47:56,271 --> 02:47:57,691
+Buna ilişkin iki sorumuz var.
+
+1878
+02:47:57,691 --> 02:48:03,191
+Seri bağlı dirençlerde her bir direnç değerinde eşit olduğunu varsayalım.
+
+1879
+02:48:03,192 --> 02:48:07,811
+direnç değerini arttırmamız doğal olarak eşdeğer direnç değerini arttıracaktır.
+
+1880
+02:48:09,072 --> 02:48:15,411
+Paralel bağlı durumda ise direnç değerini arttırmamızın etkisi nasıl olacak?
+
+1881
+02:48:16,951 --> 02:48:20,712
+Hem direnç değeri hem de direnç adediyle ilgili bunu inceleyelim.
+
+1882
+02:48:21,311 --> 02:48:26,771
+Direnç değerini arttırdığımızda her birisi eşitse en adet direncimiz var.
+
+1883
+02:48:28,151 --> 02:48:32,271
+Dolayısıyla direnç değerini arttırdığımızda eşdeğer direncimiz yine artacak.
+
+1884
+02:48:32,271 --> 02:48:53,131
+Fakat miktarlara gelelim. Seri bağlı devrede direnç miktarını arttırırsak aynı değere sahip direnç miktarını arttırırsak direnç değerimiz artar. Fakat paralel bağlı devrede aynı değere sahip direnç değerlerimizden daha fazla kullanırsak paralel olarak bu durumda ise direnç değerimiz düşmüş olacaktır.
+
+1885
+02:48:53,131 --> 02:49:00,151
+Aynı direnç değerini en yerine mesela iki ene bölmek durumunda kalabiliriz paralel bağlı devrede.
+
+1886
+02:49:00,191 --> 02:49:02,072
+Dolayısıyla burada iki şeyi söyleyebiliriz.
+
+1887
+02:49:03,112 --> 02:49:10,731
+Aynı dirence sahip yeni dirençler eklersek seri devrede direnç değerimiz artar.
+
+1888
+02:49:11,472 --> 02:49:17,371
+Aynı direnç değerine sahip paralel dirençlere yeni paralel dirençler eklersek direnç değerimiz düşer.
+
+1889
+02:49:17,371 --> 02:49:20,411
+direnç değerimizi
+
+1890
+02:49:20,411 --> 02:49:22,511
+arttırdığımızda en adet
+
+1891
+02:49:22,511 --> 02:49:24,411
+direncimiz var. Buradaki direnç değerlerini
+
+1892
+02:49:24,411 --> 02:49:26,532
+arttırdığımızda seri bağlı mantıkta
+
+1893
+02:49:26,532 --> 02:49:28,172
+eş değer direncimiz artar.
+
+1894
+02:49:29,032 --> 02:49:30,451
+Paralel mantıkta da
+
+1895
+02:49:30,451 --> 02:49:32,612
+mesela başta en adet
+
+1896
+02:49:32,612 --> 02:49:34,472
+direncimiz var. Bunlar birbiriyle paralel
+
+1897
+02:49:34,472 --> 02:49:36,231
+bağlı. Her birinin değeri R.
+
+1898
+02:49:36,711 --> 02:49:38,691
+Bu R değerlerini arttırdığımda da
+
+1899
+02:49:38,691 --> 02:49:40,052
+yine paralel devre içinde
+
+1900
+02:49:40,052 --> 02:49:42,571
+direnç değerim artar. Bu iki durumu da
+
+1901
+02:49:42,571 --> 02:49:44,471
+bu soru üzerinden
+
+1902
+02:49:44,471 --> 02:49:45,411
+tanımlamış olduk.
+
+1903
+02:49:45,411 --> 02:50:00,911
+Son olarak burada bir özet tablo var. Bu özet tablo ders boyunca anlattığımız şeylerin bir özeti. Burada bir dualiteden bahsedebiliriz. Yani birbirinin ikili durumları gibi ifade edebileceğimiz bir durumlar.
+
+1904
+02:50:00,911 --> 02:50:15,051
+Örneğin direnç ile iletkenlik birbirinin duali. Seri bağlı direnç devrelerin eş değeri paralel bağlı iletkenlik değerlerinin eş değerine benzer şekilde hesaplanıyor.
+
+1905
+02:50:15,051 --> 02:50:36,011
+Veya tersini düşünelim. Seri bağlı dirençler için eşdeğer direnç paralel bağlı iletkenlik değerlerinin eşdeğeriyle aynı şekilde hesaplanıyor. Akım ile gerilim dolayısıyla birbiriyle ikili eşdeğerlik oluşturuyor gibi tanımlayabileceğimiz bir durum.
+
+1906
+02:50:36,011 --> 02:50:47,131
+Bunu yine daha çok çevre ve düğüm denklemlerinde yani önümüzdeki haftadaki konularda daha detaylı bir şekilde daha pratik bir şekilde kullanımlarını göreceğiz.
+
+1907
+02:50:47,832 --> 02:50:53,791
+Ama temel olarak bu özet tablo üzerinde de derste gördüğümüz konuları siz de tekrar etmiş olabilirsiniz.
+
+1908
+02:50:54,051 --> 02:50:57,752
+Bu nokta itibariyle bu haftalık konuyu bitirelim.
+
+1909
+02:50:57,752 --> 02:51:07,212
+Aslında gerilim bölücü ve akım bölücü devrelere de girmek istiyordum ama onu önümüzdeki hafta yine dersin başında tamamlayıp.
+
+1910
+02:51:07,572 --> 02:51:20,971
+diğer konuya öyle geçeriz. Dolayısıyla benim bu hafta için söyleyeceklerim bu kadar. Bu haftayla ilgili, dersle ilgili sormak istediğiniz bir şey varsa onu alabiliriz. Yoksa da dersi sonlandırabiliriz arkadaşlar. Var mı sorumuz?
+
+1911
+02:51:30,420 --> 02:51:32,160
+Evet, bir tepki alalım arkadaşlar.
+
+1912
+02:51:35,199 --> 02:51:36,099
+Yok galiba hocam.
+
+1913
+02:51:37,279 --> 02:51:39,760
+Tamam, yoksa da yok diye söylerseniz iyi oluyor.
+
+1914
+02:51:40,840 --> 02:51:47,319
+Peki, şimdi ben şeyleri, slide'ları ve sunumları yine Google Group üzerinden ilan ettim arkadaşlar.
+
+1915
+02:51:47,520 --> 02:51:48,459
+Orayı kullanacağız.
+
+1916
+02:51:49,180 --> 02:51:59,340
+Siz de orayı aktif şekilde kullanırsanız genel olarak bir soru sorup o soruya ilişkin cevabı ortak bir yerde tartışıyor olalım ve herkes bunu görüyor olsun.
+
+1917
+02:51:59,340 --> 02:52:28,219
+orayı kullanalım. Deneyler içinde yine duyurularda orayı kullanmayı hedefliyoruz. Yakın zamanda da deney gruplarını ve deney tariflerini ilan etmiş olacağız. Simülasyon üzerinden yapılacak. Bununla ilişkili yönergeyi de bizim asistan arkadaşlarımız size duyuracak. Yakın bir zamanda da deneylerimiz başlıyor olacak. İlk deneyimiz zaten Ohm kanunuyla ilgili seri ve paralel devreler olduğu için şu an itibariyle bile bunları yapabilir durumdayız.
+
+1918
+02:52:29,339 --> 02:52:36,219
+Bunu söylemiş olayım. Bunun dışında başka bir şeyimiz de yoksa arkadaşlar ben teşekkür ediyorum. Haftaya görüşmek üzere. Herkese iyi akşamlar.
