@@ -1,0 +1,2075 @@
+1
+00:03:08,147 --> 00:03:10,147
+Merhaba arkadaşlar, ses geliyor mu?
+
+2
+00:03:12,147 --> 00:03:13,147
+Geliyor hocam.
+
+3
+00:03:14,147 --> 00:03:16,147
+O zaman başlıyoruz.
+
+4
+00:04:05,780 --> 00:04:08,659
+Şu an slide gösterisini görüyorsunuz herhalde.
+
+5
+00:04:11,987 --> 00:04:23,987
+Evet hocam. Tamam peki. Şimdi en son çoklu dosyaların nasıl değerleneceğini, make'in ne olduğunu, make file'in ne olduğunu derste konuştuk.
+
+6
+00:04:27,987 --> 00:04:41,707
+Geldik multi-thread programlamaya. Şu ana kadar ki çalıştığımız programlama usulünde şöyle bir şey var. Sizin programınız main'in bulunduğu yerden başlıyor. Main satırı şöyle diyelim.
+
+7
+00:04:44,564 --> 00:05:11,984
+Aşağıda da return 0 var. Hani programın bittiği yer. Buradan buraya doğru şöyle bir akış düzenleniyor. Böyle niyeyse bozuluyor bazen. Bir saniye. Neyse, kalemim yok şu an. Bir şekilde normal bir akış var. Ha, bazen bir fonksiyona gidiyoruz. İşte bulunduğumuz yerden hani şu da mouse'un hareketi buna benzer olsun.
+
+8
+00:05:11,984 --> 00:05:33,483
+Fonksiyona gidiyoruz. Fonksiyondan geri dönüyoruz. Program akışı belli bir süre main'in akışı kesiliyor. Fonksiyon akışı devam ediyor. Yani şöyle bir main akışı var. Buradan bir fonksiyona gittik. Fonksiyonla geri geldik. Main akışı devam ediyor. Yani şurada arada bir main kesintiye uğraya diyebiliriz. Arkadaşlar şu kalemi bir saniye getireyim de öyle yapalım.
+
+9
+00:06:42,932 --> 00:07:12,911
+Program akışı, şöyle baştan alalım. Bir yerden başladı, programın başlangıcı yerden. Bunu assemblyize mesela görürsünüz veya göreceksiniz. Böyle başladı, program bu şekilde akmaya devam ediyor ve bir yerde duruyor. Bazı durumda nasıl yapıyorduk? Yine main'den başlıyoruz. Şurada bir f fonksiyonunuz, burada bir g fonksiyonunuz, burada bir h fonksiyonunuz var. Böyle akıyor. Onda sonra f'ye gidiyorsun, f'den geri geliyorsun. Sonra g'ye gidiyorsun, g'den geri geliyorsun.
+
+10
+00:07:12,911 --> 00:07:29,551
+Gerekirse haşa gidiyorsun, haştan geri geliyorsun ve böyle gidiyor. Dolayısıyla aslında tek akışlı bir yapıdan bahsediyoruz. Şu ana kadar ki gördüğümüz bütün programlarda bir tane akış var.
+
+11
+00:07:29,551 --> 00:07:58,331
+Multi Threat yapı ise mevcut bilgisayar donanımını dikkate aldığınızda bir tane CPU'muz var. Bu CPU'yu acaba daha verimli kullanmak için ve bizim programımız da kendi içerisinde farklı iş parçacıklarına bölünse acaba aynı anda birden fazla akış ile bu işlem yapılabilir mi?
+
+12
+00:07:58,332 --> 00:07:59,332
+düşüncesi.
+
+13
+00:08:00,412 --> 00:08:15,472
+Tabi bunun detayları işletim sistemi dersinde bunun daha hani proses nedir, program nedir, thread nedir, multi-thread yapılar nelerdir, kısıtları nelerdir, özellikleri nelerdir bunlar o derste daha detaylı olarak ele alınacak.
+
+14
+00:08:15,472 --> 00:08:26,732
+Ama bize şu an için lazım olan bir programın içerisinde çoklu thread, multi-thread nasıl yaratılabilir, nasıl yönetilebilir bununla alakalı detaylara bakmak.
+
+15
+00:08:26,731 --> 00:08:51,731
+Normalde hocam biraz önce dediniz ki CPU bir tane ise yani işlemleri yapacak olan birim bir tane ise normalde şunlar çalışır ama bu nasıl çalışacak? Burada da mantık şu arkadaşlar işlemci o kadar hızlı çalışıyor ki GHz'ler seviyesinde sizin örneğin bir programınız var ve bu program birim olarak şu şekilde bir parça olsun.
+
+16
+00:08:51,732 --> 00:09:03,692
+Bu parçayı yönetebilmek için siz programınızı kendi içerisinde mantıksal olarak fonksiyonlara zaten bölüyorsunuz.
+
+17
+00:09:04,131 --> 00:09:08,051
+Diyorsunuz ki şu bir fonksiyon, bu bir fonksiyon, böyle bir fonksiyonlar olsun.
+
+18
+00:09:09,152 --> 00:09:15,372
+Sonra da diyorsunuz ki bu fonksiyon şu fonksiyonla aynı anda çalışabilir.
+
+19
+00:09:16,392 --> 00:09:20,752
+Buna işlerin paralelleştirmesi, task paralelizm diyoruz.
+
+20
+00:09:21,732 --> 00:09:28,752
+Normalde işte önceki yazdığımız programları hatırlayın veya projenizde yazdığınız programları hatırlayın.
+
+21
+00:09:29,392 --> 00:09:32,051
+Fonksiyonun biri çalışıyor biri bitiyor, biri çalışıyor biri bitiyor.
+
+22
+00:09:32,051 --> 00:09:41,372
+İşte bir fonksiyondan öbür fonksiyona geçiş yapıyorsun ama aynı anda herhangi bir T anında iki fonksiyonun yan yana çalıştığı durum sizde yok.
+
+23
+00:09:41,512 --> 00:09:42,631
+Şu ana kadar görmedik.
+
+24
+00:09:42,631 --> 00:10:04,372
+Aynı anda çalışma veya şöyle diyelim bir fonksiyonun belli bir kısmı var. Şuna mesela f1 fonksiyonu diyeyim. Şuna da f2 fonksiyonu diyelim. Ve bu iki fonksiyonu işte kodda şu şekilde çağırdınız. f1'i çağırdınız, f2'yi çağırdınız.
+
+25
+00:10:04,372 --> 00:10:28,331
+Şimdi biz buradan neyi anlıyoruz? F1 fonksiyonu tamamlanacak, ondan sonra F2 fonksiyonu tamamlanacak. Herhangi bir yerde böyle bir şey çağırdığımızı düşünelim. Ama şu yapılabiliyor. F1 fonksiyonunun belli bir kısmı yapılırken, F2 fonksiyonun da belli bir kısmı yapılabiliyorsa, böyle bir durum varsa işte multi threat size bunu sağlıyor.
+
+26
+00:10:28,331 --> 00:10:42,292
+İşlemci eğer bir tane ise bunu zaman paylaşımı esas alınarak ama çok hızlı değişimlerle yani biz onu gözle falan ayırt edemiyoruz. Bir saniyenin çok çok altında olan bir durum.
+
+27
+00:10:42,772 --> 00:11:09,811
+bu şekilde görebiliyoruz. İşlemci zaten birden fazlaysa bu daha güzel. Bir işlemcide f1 fonksiyonuyla alakalı rutinler çalışırken öbür işlemcide f2 fonksiyonuyla alakalı rutinler çalışıyor ve buna gerçek paralelizm diyoruz. Sanal paralelizm dediğimiz ikisi bir arada çalışıyor ama birinin bir kısmı birinin bir kısmı çalışıyor. Bu mantıklı ve bu da yapılabilir bir şey. Eskiden olan bir şey.
+
+28
+00:11:09,811 --> 00:11:12,291
+multitask zaten bu şekilde oluyordu.
+
+29
+00:11:12,411 --> 00:11:20,931
+Diğeri de ikisinin gerçek anlamda paralel olarak çalışması, birden fazla işlemci üzerinde çalışması olarak karşımıza gelen bir yapı.
+
+30
+00:11:21,411 --> 00:11:29,571
+Detaylı ve donanımsal temelleri dediğiniz gibi daha sonra siz bilgisayar organizasyonu, onunla işletim sistemleri, dersleri alacaksınız.
+
+31
+00:11:29,671 --> 00:11:31,911
+Orada daha yerine oturacak.
+
+32
+00:11:33,171 --> 00:11:34,971
+Peki bu ne işimize yarayacak?
+
+33
+00:11:35,312 --> 00:11:38,871
+Tamam iki tane iş, üç tane iş, N tane iş var.
+
+34
+00:11:38,871 --> 00:11:47,471
+Bunların bazıları birbiriyle paralel olarak çalışabiliyorsa ve ben bunları çalıştırıyorsam ne işime yarayacak?
+
+35
+00:11:47,471 --> 00:11:52,511
+İşte şu an yaptığımız, kullandığımız uygulamalardaki işlere yarayacak.
+
+36
+00:11:53,312 --> 00:12:01,691
+Ben şu an mesela bir yandan yazı yazıyorum, buraya bir şeyler yazıyorum, bir yandan konuşuyorum, bir yandan sunum size aktarılıyor Zoom uygulaması üzerinden.
+
+37
+00:12:02,391 --> 00:12:06,531
+Burada tek bir uygulama var, bu tek bir uygulamanın altında bir sürü fonksiyon var.
+
+38
+00:12:06,531 --> 00:12:13,611
+Bu fonksiyonlar böyle kol kola el ele ne yapıyor arkadaşlar? Belli görevleri yerine getiriyorlar.
+
+39
+00:12:14,171 --> 00:12:18,571
+İşte şu yazı yazdığım işlemle alakalı şey size ayrı bir şeyle ayrı bir fonksiyon.
+
+40
+00:12:19,451 --> 00:12:22,331
+Konuşurken konuşmanın aktarılması ayrı bir fonksiyon.
+
+41
+00:12:22,451 --> 00:12:27,911
+Mesela konuşmanın aktarılmasında kullanılan gürültü giderimi var. O belki ayrı fonksiyon.
+
+42
+00:12:28,611 --> 00:12:32,651
+Hadi bu belki karmaşık bir örnek. Şunu söyleyelim. Word'u açsınız yazı yazıyorsunuz.
+
+43
+00:12:32,651 --> 00:12:38,491
+yazı yazarken mesela bazen kelimeleri hatalı yaptığınızda kelimelerin altını çiziyor değil mi?
+
+44
+00:12:38,531 --> 00:12:40,371
+İşte böyle bir şey yazdınız, işte bir şey yazdınız.
+
+45
+00:12:40,971 --> 00:12:42,911
+Altını şöyle kırmızıyla çiziyor.
+
+46
+00:12:43,911 --> 00:12:44,952
+Halbuki buna olması lazım.
+
+47
+00:12:45,992 --> 00:12:50,111
+Hani önce bütün yazıyı bitireceksiniz, elinizde klavyeden çekeceksiniz.
+
+48
+00:12:50,891 --> 00:13:01,091
+Ondan sonra bu spell check dediğimiz imla noktalama veya yazım kurallarına uygunluk açısından şey,
+
+49
+00:13:01,091 --> 00:13:04,851
+Hatta şu an semantik uygunluk da yapıyor Word uygulaması gibi şeyler
+
+50
+00:13:04,851 --> 00:13:09,191
+İşte bu tarz bir yandan bir şey yaparken öbür yandan bir şey yapamaz
+
+51
+00:13:09,191 --> 00:13:10,671
+Hani biraz daha farklı bir örnek
+
+52
+00:13:10,671 --> 00:13:14,891
+Web browser açtınız Google Chrome, Opera, ondan sonra Edge
+
+53
+00:13:14,891 --> 00:13:18,531
+Aynı anda birden fazla tab açık, sayfa açık
+
+54
+00:13:18,531 --> 00:13:24,272
+Ve siz belki birinde müzik dinliyorsunuz, birinde işte e-mail adresiniz var
+
+55
+00:13:24,272 --> 00:13:29,431
+Tek bir uygulama, tek bir uygulamanın altında farklı farklı işlemler diyebiliriz
+
+56
+00:13:29,432 --> 00:13:31,432
+Bunlara multi-thread diyoruz.
+
+57
+00:13:32,352 --> 00:13:37,592
+Tabi bu C yapısal bir programlama dili olduğu için multi-thread özellikleri sağlıyor.
+
+58
+00:13:37,971 --> 00:13:40,032
+Bunlarla alakalı nedir ne değildir bakacağız.
+
+59
+00:13:40,792 --> 00:13:45,331
+Şu ana kadar threadingin ne olduğunu burada ben biraz önce yazarak anlattım.
+
+60
+00:13:45,331 --> 00:13:51,532
+Aslında execution'un asenkron olması demek.
+
+61
+00:13:51,531 --> 00:14:00,811
+Şimdi senkron ve asenkron kavramlarını çok farklı farklı yerlerde göreceksiniz.
+
+62
+00:14:03,151 --> 00:14:08,011
+Şimdi şunu sorayım. Senkron olmak mı iyi, asenkron olmak mı iyi?
+
+63
+00:14:11,700 --> 00:14:12,559
+Ne dersiniz?
+
+64
+00:14:20,340 --> 00:14:24,479
+Veya bu kavramlar neler? Senkron ne demek? Asenkron ne demek?
+
+65
+00:14:28,851 --> 00:14:38,851
+Telefonunuzda mesela senkronizasyon ayarları var. Hiç uğraştınız mı telefonunuzun senkronizasyon ayarlarıyla? Yapmazsanız ne oluyor mesela?
+
+66
+00:14:40,179 --> 00:14:41,439
+Evet, yok mu fikir olan?
+
+67
+00:14:44,884 --> 00:14:49,284
+Telefonunuzla mail adresinizi senkronize etmezseniz ne oluyor arkadaşlar?
+
+68
+00:14:51,483 --> 00:14:59,983
+Mail adresinize bir mail geldiğinizde o mail, mail sunucunuzda kalıyor, telefonunuzda göremiyorsunuz. Oradaki uygulamaya düşmüyor.
+
+69
+00:15:01,023 --> 00:15:04,463
+Demek ki bunu senkron yapmak, senkronize etmek lazım.
+
+70
+00:15:05,743 --> 00:15:13,523
+Senkron yapmak, belli şeyleri belli kontrollerle birbiriyle denkleştirmek, eşitlemek gibi düşünebiliriz.
+
+71
+00:15:13,523 --> 00:15:29,244
+Aslında bir protokol belirliyorsunuz. Mail önce gelecek, ondan sonra mailin gelme işi bitecek. Mesela o iş bittikten sonra benim uygulamamda bu mail görünecek.
+
+72
+00:15:29,483 --> 00:15:40,463
+Veya bunun senkron eski telsizler vardı. Şimdi telsizlerde şöyle bir yapı var. Bu tarafta bir kişi düğmeye basar, konuşur, karşıya ses gider, ondan sonra dinler.
+
+73
+00:15:40,463 --> 00:16:01,523
+Anlık bir yapı her zaman olmuyor. Bu senkron yaptır. Asenkron yapıda da şu anki sizinle yaptığımız eğitim. Ben bir yandan konuşurken siz bir yandan dinleyebiliyorsunuz. Eğer bunu senkron gibi bir receive ve send mantığıyla yapmak istesek şöyle bir yapı ortaya çıkar.
+
+74
+00:16:01,523 --> 00:16:28,744
+tabi gerçek hayatta uygulaması mümkün değil. Ben konuşmaya başlayacağım. Konuşuyorum, konuşuyorum, konuşuyorum. O havada bir yerde söylediklerim duruyor, bir bufferlanıyor. Sonra konuşmam bitiyor. Diyorum ki benim konuşmam bitti. Artık siz de duymaya başlayın. O gecikmeli bir şekilde artık tabii olacak. Araya bir zaman girdiğini düşünün. Siz de benim söylediklerimi, benim konuştuğum sıranın şeyiyle gelen verip duymaya başladığınızı düşünün.
+
+75
+00:16:28,744 --> 00:16:36,904
+Bu threadler, tabi senkron yapı gerçek hayatta bu tarz iletişim durumlarında çok sağlıklı değil
+
+76
+00:16:36,904 --> 00:16:39,803
+Ama kullanıldığı yapılar var, kullanılmadığı yapılar var
+
+77
+00:16:39,803 --> 00:16:42,824
+Asenkron bir yapı sağlatıyoruz aslında burada
+
+78
+00:16:42,824 --> 00:16:45,303
+Asenkronluktan kastımız da şu
+
+79
+00:16:45,303 --> 00:16:50,284
+Örneğin sizin yine programınızı şöyle diyelim F1 gibi
+
+80
+00:16:50,284 --> 00:16:57,363
+F2, F3, Fn gibi en tane fonksiyonu olsun
+
+81
+00:16:57,363 --> 00:17:04,843
+ve bu f1, f2, fn'den siz k tanesini seçtiniz.
+
+82
+00:17:04,843 --> 00:17:07,244
+Aradan herhangi k tanesini seçtiniz.
+
+83
+00:17:07,884 --> 00:17:12,543
+Bu seçtiğiniz fonksiyonlardan bazıları paralel olarak çalışabilir.
+
+84
+00:17:13,483 --> 00:17:15,583
+Eş zamanlı olarak çalışabilir diyorsunuz.
+
+85
+00:17:16,384 --> 00:17:24,843
+Bu çalışanlar artık örneğin k'nın içerisinde bir tanesi f8 olsun, bir tanesi f20 olsun, bir tanesi f3 olsun.
+
+86
+00:17:24,843 --> 00:17:34,203
+F3'ün belli bir kısmı çalışacak, f20'nin belli bir kısmı bu ikisi beraber çalışacak, f8'in belli bir kısmı yine bunlarla beraber çalışacak.
+
+87
+00:17:34,823 --> 00:17:36,903
+Kimin ne kadar nasıl çalıştığını bilmiyoruz.
+
+88
+00:17:37,603 --> 00:17:43,263
+Ama normalde biliyoruz ki şu N tane içerisinden bazıları biri önce biri sonra çalışması gerekiyor.
+
+89
+00:17:44,623 --> 00:17:45,423
+Buna dikkat edelim.
+
+90
+00:17:45,723 --> 00:17:47,603
+Buradaki diğer açıklamalar bununla yakalı şeyler.
+
+91
+00:17:47,743 --> 00:17:49,703
+Burada bazı örnekler var söylediğimiz şeyler.
+
+92
+00:17:49,703 --> 00:17:54,123
+threadler gerçek uygulamaları da çok çok gerekli arkadaşlar.
+
+93
+00:17:54,323 --> 00:18:01,343
+Çünkü gerçek uygulamalar mutlaka asenkron çalışma mantığına, gerçek hayat zaten asenkrona çok yakın olduğu için birçok senaryomuz.
+
+94
+00:18:01,783 --> 00:18:08,323
+Uygulamayı da buna simüle edeceğimiz için multiple thread çalışan, asenkron çalışan yapılara ihtiyacımız var.
+
+95
+00:18:09,423 --> 00:18:10,563
+Bunları okursunuz.
+
+96
+00:18:12,703 --> 00:18:15,203
+Normalde bir de bizim process kavramımız var.
+
+97
+00:18:15,203 --> 00:18:42,983
+Proses arkadaşlar yine genel bir kavram. Sizin yazdığınız bir programı execute ettiğinizde çalıştırdığınızda çalışan program proses olarak aktif entity diyoruz buna proses olarak adlandırılıyor. Fakat prosesin birden fazla oluşturulması mümkün mü mümkün? Yani birden fazla siz proses oluşturup bu prosesleri aralarında haberleştirip bir büyük uygulama meydana getirebiliyorsunuz.
+
+98
+00:18:43,279 --> 00:19:10,120
+Az önce verdiğim örneği şöyle revize edelim. Word uygulaması gibi bir şey yapacağız. Word uygulamasında ekrana yazı yazmak için bir proses, ondan sonra spell check için bir başka proses, işte oradaki ekrandaki yazıların şeklini değiştirmek için bir başka proses olduğunu farz edelim. Bunları farklı farklı proseslerle yapmak, aradaki senkronizasyonu, ondan sonra veri haberleşmesini sağlamak açısından maliyetli.
+
+99
+00:19:10,120 --> 00:19:31,540
+Bir kere her prosesin kendisine ait bir bellek bölgesi var. Bunu sizlerle konuştuk. Bir program, bir işi yapacak bir program için üç tane proses oluşturuyorsanız üç ayrı bellek bölgesi var. Hatırlarsanız dizilerde mesela bazı hatalar alıyorduk. Bir proses bir başka prosesin bellek uzayına erişemiyordu.
+
+100
+00:19:31,539 --> 00:19:39,779
+Erişememesi demek, prosesler arasındaki haberleşmemenin zorlaşması, ekstra kontroller getirilmesi demek.
+
+101
+00:19:39,779 --> 00:19:51,339
+Onun için zaman içerisinde proseslerin çok olması yerine bir proses arasında birden fazla thread oluşturulması esasıyla program düzenlenmesi yapıldı.
+
+102
+00:19:52,899 --> 00:19:58,220
+Farklı tabii şeyler var, hani prosesler ve threadler arasında farklı detaylar var. Bunları şimdilik geçiyorum.
+
+103
+00:19:58,219 --> 00:20:02,859
+threadlerle alakalı da farklı uygulamalar, farklı problemler var.
+
+104
+00:20:02,979 --> 00:20:06,539
+Yani threadler her anlamıyla çok kullanışlı zaman zaman olmayabiliyor.
+
+105
+00:20:06,699 --> 00:20:11,539
+Bunlardan bir tanesi bir kere threadin oluşturulması nasıl olacak?
+
+106
+00:20:11,539 --> 00:20:18,899
+Çünkü aşağıda donanımla doğrudan uğraşacağımız, donanımı doğrudan yöneteceğimiz bir yapı söz konusu.
+
+107
+00:20:19,659 --> 00:20:24,779
+Bunun oluşturulması için işletim sisteminden izin almak gerekiyor.
+
+108
+00:20:24,899 --> 00:20:27,419
+İşletim sistemiyle uyumlu çalışmak gerekiyor.
+
+109
+00:20:27,419 --> 00:20:48,419
+Windows'da yazdığınız bir thread Linux'de veya başka şeyde çalışmayabilir. Bu bir problem. Sonra threadlerin kendi içerisinde haberleşmeleri gereken durumlar olabilir. İşte mesela bir üretici tüketici problemimiz var. Belli kaynaklar üretilmeden belli kaynakların tüketilmemesi gerekiyor.
+
+110
+00:20:48,419 --> 00:20:52,220
+önce üretim yapılacak ama üretildikçe tüketilecek.
+
+111
+00:20:52,979 --> 00:20:55,919
+Düşünün şöyle bir bufferımız var veya belleğimiz var.
+
+112
+00:20:56,539 --> 00:20:58,099
+Burada 10 tane item alalım.
+
+113
+00:20:59,880 --> 00:21:03,679
+Bir tanesi buraya üretim yapıyor, prodüs ediyor, bir tanesi konsüm ediyor.
+
+114
+00:21:04,800 --> 00:21:09,699
+Aynı uçak bileti, otobüs bileti aldığınız web sayfaları gibi düşünün.
+
+115
+00:21:09,699 --> 00:21:18,580
+üretici olan işte firma oraya günlük olarak veya işte aylık olarak otobüs biletleriyle alakalı kaynaklar oraya ekleyecek.
+
+116
+00:21:19,000 --> 00:21:24,919
+Ama bu eklemeyi yaparken bir yandan da tüketimin devam edebilmesi lazım. Gerçek hayat senaryosu bize bunu söyler.
+
+117
+00:21:25,759 --> 00:21:35,779
+Dolayısıyla bu üretim ve tüketim arasındaki mekanizmanın senkronize bir şekilde yerine göre sağlanması veya haberleşmenin sağlanması gerekiyor gibi gibi farklı şeyleri var.
+
+118
+00:21:35,779 --> 00:21:37,419
+Bunları geçelim
+
+119
+00:21:37,419 --> 00:21:40,399
+Şimdi context switching dediğimiz bir kavram var
+
+120
+00:21:40,399 --> 00:21:42,940
+Bu da normalde işletim sistemleri kavramı
+
+121
+00:21:42,940 --> 00:21:44,940
+Ben orada bunları daha detaylı anlatıyorum
+
+122
+00:21:44,940 --> 00:21:46,000
+Üçüncü sınıf ders ama
+
+123
+00:21:46,000 --> 00:21:47,880
+Şimdi şöyle düşünelim arkadaşlar
+
+124
+00:21:47,880 --> 00:21:49,640
+Bir saniye elimizde CPU var
+
+125
+00:21:49,640 --> 00:21:52,419
+Kavruyordum ki şu an için bir tane
+
+126
+00:21:52,419 --> 00:21:54,660
+Yani bu CPU'nun görevi neydi?
+
+127
+00:21:54,839 --> 00:21:56,759
+İşte patch instruction yapıyordu
+
+128
+00:21:56,759 --> 00:21:58,199
+Decode instruction yapıyordu
+
+129
+00:21:58,199 --> 00:22:00,000
+Execute instruction yapıyordu ve
+
+130
+00:22:00,000 --> 00:22:02,399
+Gerekirse writeback gibi işlem yapıyordu
+
+131
+00:22:02,399 --> 00:22:05,100
+Sizin bir programınız var
+
+132
+00:22:05,099 --> 00:22:33,499
+P1 programınız var bir de P2 programınız var. Bu tek bir CPU üzerinde bu iki proses eş zamanlıymış gibi çalışacak. Bakın gerçek bir eş zamanlılık burada olmaz. Çünkü bir tane şey var. Düşünün markette bir tane kasa var iki tane müşteri var. E ne olacak? Ya önce biri bitecek ondan sonra diğeri bitecek ya da belli zaman aralıklarında diyeceğiz ki işte parça parça sizlerin işlerinizi yapalım ama o belli zaman aralığı bile bölünemez.
+
+133
+00:22:33,500 --> 00:22:40,919
+Şimdi P1 prosesi zaman içerisinde mesela girdi işlemci de işletildi.
+
+134
+00:22:41,011 --> 00:22:55,551
+P1 prosesi içerideyken P2 prosesinin CPU'nun içerisine girmesi mümkün değil. Buna bir T süresi diyoruz, T1 süresine kadar. Sonra arada bir boşluk oluyor. Diyor ki tamam P1 biraz çalıştı, biraz da P2 çalışsın.
+
+135
+00:22:56,551 --> 00:23:07,211
+T2 zamanına kadar P2 çalışıyor. Sonra P1 kaldığı yerden devam ediyor, sonra P2 kaldığı yerden devam ediyor. Böyle bunlar işleri bitene kadar, işlemciden çıkana kadar çalışıyorlar.
+
+136
+00:23:07,211 --> 00:23:35,011
+Şu aradaki geçen T1'in çıkıp P2'nin işlemciye girmesi için geçen süreye context switching time diyoruz. Bu işlemin kendisine de context'in switch edilmesi diyoruz. Context switch. Context içerik demek. İçerikten kastımız da buradaki bir proses demektir. Bu prosesin içeriği alınıyor, switch ediliyor, değiştiriliyor. Aradaki şu boşluk zamanında context switching time diyoruz. Burada bir sorumuz var mı?
+
+137
+00:23:35,011 --> 00:23:53,732
+tabi olay tek bir single cpu işlem ünitesi ise böyle elimizde yeterince fazladan kaynak vardır cpu vardır o zaman olaylar biraz daha farklılaşıyor çünkü p1 bir işlemcide çalışırken p2'yi başka bir işlemde çalıştırabiliriz buraya girmiyoruz şimdilik
+
+138
+00:23:53,732 --> 00:24:02,992
+Peki buraya kadar thread kavramını ve genel şeyleri anlattık. Bu thread'i biz seed'e nasıl oluşturacağız?
+
+139
+00:24:03,331 --> 00:24:11,412
+Seed'e de arkadaşlar bunun donanıma kadar belli özelliklerinde destekleyen bizim bir p-thread kütüphanemiz var.
+
+140
+00:24:12,272 --> 00:24:17,772
+Tabi thread'ler oluşturulduğunda her thread'in ID'si üzerinden bu işlem yapıcı yapılıyor.
+
+141
+00:24:17,771 --> 00:24:39,231
+Nasıl ki bir dizinin kendisine ait pointerı var, bir file'ın kendisine ait pointerı var ve siz bunun üzerinden işlem yapıyorsunuz. Burada da genellikle thread id'ler çalışıyor. Thread id dediğimiz her bir thread'e ait unik bir değer, integer değer alıyor, pozitif integer hatta.
+
+142
+00:24:39,231 --> 00:24:54,331
+bazen integer olmadığı durumları da görebiliyoruz ama bizim burada kullandığımız şu alttan thread'e olan birçok şeyde integer değerleri göreceksiniz. Bu integer olmadığı değer durumları çok fazla dikkate almayalım şimdilik.
+
+143
+00:24:55,611 --> 00:25:07,551
+Ve şu pthread.h kütüphanesini çalışmanıza include ederek, dahil ederek thread oluşturma, thread'i sonlandırma, thread'le alakalı fonksiyon yazma gibi şeyleri yapacağız.
+
+144
+00:25:07,551 --> 00:25:23,391
+tabi bunların belli kuralları var. Şimdi o kuralları bu derste göstereceğiz. Birincisi P-Tread'in Crate oluşturması. Şimdi bu sayfadaki kodlarda dikkatinizi bir şey çekmesi lazım arkadaşlar. Kırmızı yazanlarda bir şey dikkatinizi çekiyordur. Nedir bu?
+
+145
+00:25:28,276 --> 00:25:30,716
+Hocam, bütün kodlarda şöyle bir şey var.
+
+146
+00:25:33,176 --> 00:25:34,575
+Diyebileceğiniz ne var arkadaşlar?
+
+147
+00:25:44,531 --> 00:25:46,531
+Evet, ne görüyorsunuz?
+
+148
+00:25:52,180 --> 00:25:54,180
+Hiçbir şey dikkatinizi çekmiyorum arkadaşlar.
+
+149
+00:26:00,403 --> 00:26:15,563
+Genellikle soru sorma noktasında hani maille çok şeysiniz ama sınıf esnasında sınıfta soru sorma noktasında niyeyse çok ketum kalıyorsunuz. Heh çok güzel. Alttan türe var. Teşekkür ederim Yunus.
+
+150
+00:26:16,543 --> 00:26:25,563
+Yunus bana bir mail gönder. Sana artı beş ortalamana ekleme yapacağım. Dersten sonra bir tane unutma tamam mı?
+
+151
+00:26:25,563 --> 00:26:46,283
+Şimdi bu alttan tre bir standart. Ne standartı? POSIX dediğimiz bir standart arkadaşlar. Birçok uygulamada, birçok programlama kütüphanelerinde bu alttan treyi görürsünüz. Şöyle şeylerdir.
+
+152
+00:26:46,283 --> 00:27:10,343
+Peki kim yapmış bunu? İşte POSIX yıllar önce bu threadlerle alakalı standartlar veya işletim sistemlerle alakalı belli standartlar veya bunun diğer şeyleri de var. Hani IEEE'nin 754 bilmem ne notasyon standartı olduğu gibi burada da POSIX'in standartı olmuş ve fonksiyonların her bir kelimesini alttan treyle ayırıyor olur.
+
+153
+00:27:10,343 --> 00:27:18,363
+Normalde başkası şeyler de vardır camel case falan da vardır da bu posic standartı şeydir zaten posic thread diye de geçiyor
+
+154
+00:27:18,363 --> 00:27:26,223
+Peki threadlerin oluşturulması için ne yapıyormuşuz? P-thread crate oluşturuyormuşuz bakın bu P-thread crate şöyle çalışıyormuş
+
+155
+00:27:26,223 --> 00:27:34,843
+Integer değer döndürüyor buraya bir thread idc'nin pointer'ını P-thread türünden bir pointer sunuyoruz
+
+156
+00:27:34,843 --> 00:27:44,143
+Sonra bu threadlerin özellikleriyle alakalı pthread attribütleriyle alakalı bir başka pointer daha sunuyoruz.
+
+157
+00:27:44,143 --> 00:27:46,883
+pthreadlerin attribütleri olacak.
+
+158
+00:27:48,123 --> 00:27:55,463
+Sonra bu threadin çalışacağı bir fonksiyon pointerı sunuyoruz.
+
+159
+00:27:55,503 --> 00:27:59,523
+Bakın bu bir fonksiyon pointerları tanımlanınca nasıl oluyordu?
+
+160
+00:27:59,523 --> 00:28:08,443
+işte mesela bir normal pointer'ı şu şekilde tanımlarken fonksiyon pointer'ını şöyle tanımlıyorduk hatırlarsanız.
+
+161
+00:28:09,083 --> 00:28:14,103
+Bakın buraya da verilmesi gereken şey bir tane function pointer veya fonksiyonun adını veriyoruz.
+
+162
+00:28:14,103 --> 00:28:21,503
+Bir de bu fonksiyon pointer'ının istediği kullanacağı argümanları burada veriyoruz.
+
+163
+00:28:22,323 --> 00:28:24,443
+Bu argümanlar da void pointer türünden.
+
+164
+00:28:24,443 --> 00:28:43,583
+Fonksiyonun kendisi de dikkat ederseniz void pointer türünden olacak. Peki bir thread'i oluşturmak nasıl olacak? İşte p-thread kütüphanesinden bir tane thread pointer ile thread değişkeni oluşturabiliyorsunuz.
+
+165
+00:28:43,583 --> 00:28:53,583
+Thread attribute'leri, thread'lerin özellikleriyle alakalı şeyleri şu pthread attribute altındaki şeydeki pointer ile oluşturuyorsunuz.
+
+166
+00:28:53,583 --> 00:29:03,763
+Şu çalışacak olan bir başlangıç thread rutini, birazdan örnekle göreceğiz, bu rutinin return'in çalışacağı argümanlar ve bu pthread kredin dönüş değeri.
+
+167
+00:29:04,383 --> 00:29:10,203
+Eğer siz thread'i başarılı bir şekilde oluşturursanız, buradan sıfır değer dönüyor.
+
+168
+00:29:10,204 --> 00:29:39,183
+Eğer thread oluşturulamadıysa bazen oluşturulamayabilir aynı dosyanın açılıp kapanması gibi o zaman buradan bir error numarası hata numarası döndürülüyor. Fonksiyon bu şekilde yapılandırılmış şekildedir. Ve bunun kuralları bakın çok sert. Nasıl sert? Şurada diyor ki bir tane fonksiyon pointer vereceksin. Ondan sonra şurada şu türden bir şey vereceksin. Şurada da vereceğin argümanlar void pointer türünde oluyor.
+
+169
+00:29:39,183 --> 00:30:00,004
+Yani integer doğrudan veremiyorsun. Caste yaparak vereceksin gibi. Gelelim örneğimize. Şimdi bu örnek bunları mesela kopyala yapıştır doğrudan herhangi bir şekilde dc++'da çalıştırabilirsiniz arkadaşlar. Ben burada hepsini çalıştırmayacağım. Sadece bakın burada bazı
+
+170
+00:30:00,000 --> 00:30:06,000
+programlarının çıktıları da var belki. İnceleyeceğiz ve dersimizin bir kısmını tamamlayacağız bununla.
+
+171
+00:30:06,000 --> 00:30:18,000
+İşte programda bir tane p-thread'den id oluşturduk. Thread'in id'sini tutacağız. Sonra, thread'in özelliklerini varsayılan olarak kullanmak isteyebiliriz.
+
+172
+00:30:18,000 --> 00:30:25,000
+Yani mesela diyoruz ki, şurada şu thread özellikleri varsayılan olarak kullanacaksa buraya null değer yazabiliriz.
+
+173
+00:30:25,000 --> 00:30:30,000
+Şu ikinci kısma. Şuraya null değerler yazabiliriz.
+
+174
+00:30:30,000 --> 00:30:54,900
+Bunun dışında istersek argümanları da navlayabiliriz ama şu an için gerek değil. p-thread, create yaptık. id'nin pointer'ını vermemiz gerekiyor. Çünkü bu bir pointer değil. Bu bir değer tutuyor. Yine hep başka şeylerde olduğu gibi integer, p başka şey, integer, i başka şey. Bu değer tutar, bu adres tutar.
+
+175
+00:30:54,899 --> 00:31:02,959
+Biz burada id tutacaksak bunun id türünden şeyini alacağız. Ama fonksiyon kendisi id istediği için ampersant kullanıyoruz.
+
+176
+00:31:04,059 --> 00:31:14,059
+Neden ampersant kullanıyoruz? Çünkü bu id'nin değeri değişecek. İşletim sistemi bir tane thread oluşturacak, o thread'e bir tane kimlik numarası atayacak, o kimlik numarasını da şunun üzerinde çalıştıracağız.
+
+177
+00:31:14,799 --> 00:31:21,319
+Daha sonra ben bu thread üzerinde, thread'i öldüreceksem, thread üzerinde başka şeyler yapacaksam bu id değeri üzerinden yapacağım.
+
+178
+00:31:21,319 --> 00:31:48,979
+Şurayı null veriyoruz. Diyoruz ki şuraya bir tane thread function diye bir tane şey var. Fonksiyonum var. Bunun adresini ver diyorum. Ve herhangi bir argüman verme burayı da null ver diyorum. Bakın fonksiyonun yapısı da şu kurala uyması gerekiyor. Bakın bu fonksiyon integer değer döndürür. Şu. Ama bu şu özellikte olması gereken bir fonksiyon. Bu threadle ilişkilenmiş olan fonksiyon.
+
+179
+00:31:48,979 --> 00:31:54,859
+Diyor ki void pointer türünde değer döndürebilir, void pointer türünde argümanlar alabilir
+
+180
+00:31:54,859 --> 00:32:01,299
+Peki bu niye böyle yapılmış? İşte bu fonksiyon jenerik çalışacak
+
+181
+00:32:01,299 --> 00:32:06,519
+İstediğiniz türde değer döndürebilirsiniz, istediğiniz türde değer parametre alabilirsiniz
+
+182
+00:32:06,519 --> 00:32:15,379
+Yani buraya gelişler ve buradan gidişler istediğiniz türde olabilir diye void pointer alacaksınız, void pointer döndüreceksiniz
+
+183
+00:32:15,379 --> 00:32:43,559
+Eğer illa bir şeyleri return etmek istiyorsanız. Sonra içerisine yazacağınız şeyler içerik normal program akışınız artık o fonksiyonun ne yapmasını istiyorsanız yazıyorsunuz. Şimdi burada eğer diyor ki return değeri sıfırsa thread başarılı bir şekilde oluşturuldu değilse oluşturulamadı. Main'den çık. Return değeri sıfırsa bir şey daha yapılıyor. Bakın şu main içerisinde sürekli bir döngüye giriyoruz.
+
+184
+00:32:43,559 --> 00:32:54,839
+while döngüsü zaten fonksiyon içerisinde de bir şey var. Peki biz burada nasıl bir çıktı görürüz? Sizce ekranda bunu çalıştırdığınızda nasıl bir şey görebiliriz?
+
+185
+00:33:00,211 --> 00:33:08,211
+Hani iki trendin de başarılı bir şekilde çalıştırıldığını görürsek, kabul edersek...
+
+186
+00:33:15,347 --> 00:33:19,347
+neye benzer bir şey görünür arkadaşlar? Ekranda printfler ne yazar?
+
+187
+00:33:24,468 --> 00:33:44,047
+Hocam bir I am thread function yazar, bir I am main function yazar. İkisi gidip gelir. İkisi gidip gelir de mesela hep I am main main main I am thread thread thread böyle mi olacak yoksa karışık mı olacak? Yani bunun bir sırasını öngörebilmek mümkün mü?
+
+188
+00:33:48,596 --> 00:34:15,856
+Oğuzlu değil mi Sorhan? Evet hocam. Yani bir onu bir onu yazar dedin ya, hangisinin önce yazacağına dair bir fikrin var mı? Yok. Karışık olabilir belki. Karışık zaten karışık olması gerekiyor, fikrimizin de olmaması gerekiyor. Çünkü bu programın aslında şu an iki tane akışı var. Birisi main. Yani biraz önce çizdiğim gibi main kendi içinde akacak. Şu while döngüsünden dolayı sonsuza kadar.
+
+189
+00:34:15,856 --> 00:34:43,295
+Threat function da kendi içinde akacak. Bu da while dönmüş olduğu için. Dolayısıyla ikisi kol kola gidecek. Peki bu ikisini işlemciye alıp işlemciye sokup çıkartan işletim sistemi ne yapıyor? Kendi kafasına göre belli bir kriteri var. Bir main'i alıyor bir thread function alıyor. Bir main'i alıyor bir thread function alıyor. Ama bakın bir tane proses var. Aktif bir tane prosesin altında iki tane execution flow görüyoruz burada.
+
+190
+00:34:43,295 --> 00:34:50,415
+Şimdi şöyle kodu çalıştırayım. Önce tabii şunu kapatıp tekrar açacağız.
+
+191
+00:34:54,739 --> 00:35:00,959
+Bakın hiçbir şey yapmadık. Sadece kodu kopyalı yapıştır yaptım. Compile ve run diyelim.
+
+192
+00:35:05,043 --> 00:35:10,984
+Hafta 14 mi oluyor? 15 mi neyse ben düzeltirim onu.
+
+193
+00:35:20,403 --> 00:35:42,843
+thread'in nasıl çalışacağının şeyi yok arkadaşlar. Öngörebileceğimiz bir şey yok ki zaten öngöremiyoruz. Bakın şöyle biraz yavaşlatayım. Bir böyle geliyor. I am main diyor. I am thread diyor. Bakın yani şu an tabii çok fazla şey var. Şununla alakalı şöyle bir şey yapsak. Bizim bir slip function'ımız var.
+
+194
+00:35:50,228 --> 00:35:51,387
+Bu da bimdielim.
+
+195
+00:35:56,211 --> 00:36:01,771
+Hani yazdırdıktan sonra biraz uyutalım.
+
+196
+00:36:05,396 --> 00:36:14,396
+biraz daha akışı en azından yavaş görürüz. Bakın önce main, sonra thread function dedi. Şimdi ikisi uyuyor.
+
+197
+00:36:14,396 --> 00:36:29,396
+Uyuduğu için, şunu biraz daha azaltayım, yüz falan yapalım. Uyuduğu için tekrardan işlemci sırasına gelip tekrardan çalışması da bir süre alacak.
+
+198
+00:36:34,516 --> 00:36:43,135
+Gerçi bunların uyanması lazım. Tekrardan uyanması belli bir şey sürebiliyor. Onun için neyse bu olmadı.
+
+199
+00:36:43,135 --> 00:36:57,235
+Ama bakın şey karmaşık. İlk execution'un başladığı şeye bakalım. O dikkatinizi belki çeker. Bakın ilk satırda o kadar hızlı atıyor ki işte durdurmak şey.
+
+200
+00:36:57,235 --> 00:37:08,395
+İlk satırda mesela bakıyorsunuz ki şu fonksiyon çalıştı, bu fonksiyon çalışır çalışmaz, bu thread çalışır, I am thread function önce yazar diye bir düşünce olabilir.
+
+201
+00:37:09,516 --> 00:37:12,655
+Bunu da önce yazabilir, şunu da önce yazabilir eğer thread başarılı olduysa.
+
+202
+00:37:13,295 --> 00:37:16,155
+Thread başarılı olamadıysa zaten doğrudan şuradan çıkıp gidecek.
+
+203
+00:37:17,335 --> 00:37:18,556
+Bu mesela basit bir örnek.
+
+204
+00:37:20,255 --> 00:37:25,175
+Şuna gelelim, işte burada GCC üzerinden nasıl bunun değerleneceğini söylüyor.
+
+205
+00:37:25,175 --> 00:37:43,115
+sadece gcc'de derlerken arkadaşlar output yani işte mesela diyorsunuz ki gcc myprogram.c treo işte ne bileyim myprog.exe yap ama bu execution'u yaparken şu lp tre de eklemeniz gerekiyor.
+
+206
+00:37:43,115 --> 00:37:53,236
+Bu link demektir l ptre kütüphanesini benim şu uygulamama linkle bunu yapmazsanız şey çalışmaz zaten devsi bunu otomatik olarak yapıyor.
+
+207
+00:37:53,236 --> 00:38:17,816
+Mesela bakın şurada farklı bir program var. Burada iki tane thread create yapıyoruz. İki tane thread create yapıyorsak iki tane thread id'sine ihtiyacımız var. İki thread de kendi içinde bir de main thread var. Aslında üç tane thread'li bir yapı. Diyoruz ki while döngüsü sıfırdan ikiye kadar önce bir tane thread oluşturur.
+
+208
+00:38:21,556 --> 00:38:45,435
+Sonra bir tane daha thread oluştur. Yani ne oldu? Kol kola yürüyen üç tane threadimiz olacak. İki farklı terminal değil. O iki farklı terminal olursa Emircan o proses olur. Şu an threadler üzerinde tek bir. Yani bunu terminal olarak düşünmeyin. Çünkü thread ürettiği şeyi terminal'e gönderiyorsa o bir çıktı. Ama thread'in asıl çalışması işlemci üzerinde.
+
+209
+00:38:45,435 --> 00:38:52,675
+İki farklı terminal üzerinde bunların printflerini yazdırabilmek için threadler arası haberleşme yapmak gerekiyor.
+
+210
+00:38:53,335 --> 00:38:54,115
+Bu ayrı bir mesele.
+
+211
+00:38:54,635 --> 00:38:55,015
+Tamam mı?
+
+212
+00:38:56,916 --> 00:39:03,475
+Evet bakın ikisi de do something fonksiyonunu çağıracak ama pthread'in self diye bir özelliği var.
+
+213
+00:39:03,475 --> 00:39:06,736
+Her biri kendi id'sini mesela şurada bastıracak.
+
+214
+00:39:07,596 --> 00:39:10,155
+Diyecek ki işte ben birinci thread'im, ikinci thread'im.
+
+215
+00:39:10,315 --> 00:39:13,355
+İşte bununla alakalı ekrana şöyle veriler bastırıyor.
+
+216
+00:39:13,475 --> 00:39:15,195
+Bu kodu çalıştırın, deneyin arkadaşlar.
+
+217
+00:39:15,195 --> 00:39:41,255
+Mesela birinci thread'ın id'si 1 olsun, ikinci thread'ın id'si 2 olsun. Ne yapıyor? Eğer diyor bu birinci thread çalışıyorsa, birinci thread şu ifadeyi yazacak, değilse bu ifadeyi yazacak. Sonra arada bir bakın şu for sıfırdan şu değere kadar bir boş döngü vermiş. Bakın şöyle bir döngü. Bu ne demek? Durduk yere bir döngü çevir, belli bir küçük bekleme miktarı, az bir miktar bekleme oluşturur demektir.
+
+218
+00:39:41,255 --> 00:40:10,935
+sonra bakın şurada basit bir slip vermiş uyku vermiş belki şunu biraz daha azaltabilir dedik biraz önce ben milisaniye cinsinden yazdım ama bunu biraz daha azaltabilirdik ortada bir main var bir tane şey var thread 1 var bir de thread 2 var ve bu çalıştırıldığında mesela şöyle görüyorsunuz işte slip faksiyonunu yazmadığımızda thread başarılı bir şekilde oluşturdu birinci thread çalışıyor işte thread başarılı bir şekilde oluşturdu ikinci thread çalışıyor gibi şeyler
+
+219
+00:40:10,935 --> 00:40:15,595
+Yani bu slip fonksiyonunun detayına bakılabilir.
+
+220
+00:40:17,535 --> 00:40:33,955
+Peki ben bir threadden, threadin çalışmasından geriye değer döndürmek istiyorsam, şu ana kadar bakın bir şey yapmadık, basit olarak herhangi bir argüman göndermedik, argüman da almadık thread çalışmasından.
+
+221
+00:40:33,955 --> 00:40:42,255
+thread işini bitirdikten sonra buradan geriye bir değer döndürmek istesek ne yapıyoruz?
+
+222
+00:40:42,935 --> 00:40:49,575
+Diyoruz ki bu thread'i exit yaparken şu return dediğimiz bir değişken var.
+
+223
+00:40:49,575 --> 00:40:51,556
+Mesela burada integer türdeymiş.
+
+224
+00:40:52,335 --> 00:40:53,355
+Bununla return yap.
+
+225
+00:40:54,455 --> 00:40:55,235
+Bu da ne demek?
+
+226
+00:40:55,675 --> 00:41:01,215
+Thread'in çalışmasından dönecek değerin kullanılması için dışarıya bir veri gönderiyorsun.
+
+227
+00:41:01,216 --> 00:41:20,656
+Normalde burada return deyip bir şey yapmıyoruz. Tamam mı? P thread eksit olsun, p thread'i kapatalım ve kapanırken de bu değeri return et. Burada integer olabildiği gibi isterseniz structure'ın da bir değişkenli olur. Ve aynı şekilde ikinci thread tamamlandırken bunu return et diyormuş.
+
+228
+00:41:20,655 --> 00:41:29,315
+tabi her zaman her thread'i tek bir fonksiyonla işte buradaki do something fonksiyonla eşitlemek mümkün değil, zorunlu değil.
+
+229
+00:41:30,035 --> 00:41:35,895
+İsterseniz f1 fonksiyonlu birinci thread ile f2 fonksiyonlu ikinci thread ile ilişkilendirebiliyorsunuz.
+
+230
+00:41:35,895 --> 00:41:42,495
+Ama dikkat etmeniz gereken hem v1 fonksiyonu void pointer döndürecek hem de f2 fonksiyonu void pointer'u döndürecek.
+
+231
+00:41:43,115 --> 00:41:45,935
+İşte aldığı parametreler de şu şekilde olacaklar.
+
+232
+00:41:45,935 --> 00:41:51,935
+Şimdi threadlerin çalıştırılması, create edilmesi böyle de
+
+233
+00:41:51,935 --> 00:41:59,715
+İşin bittiğinde threadlerin işlerini tamamlanmasında belli senkronizasyonları yapmamız gerekebiliyor
+
+234
+00:41:59,715 --> 00:42:01,335
+Ve zaten çoğunlukla da yapıyoruz
+
+235
+00:42:01,335 --> 00:42:04,695
+O bu da threadlerin join etmesiyle alakalı
+
+236
+00:42:04,695 --> 00:42:08,475
+Şimdi dikkat edin arkadaşlar burada iki tane thread var dedik
+
+237
+00:42:08,475 --> 00:42:11,195
+Şey olarak oluşturduğumuz bir de main var üç
+
+238
+00:42:11,195 --> 00:42:18,535
+Bu program çalıştırıldığında önce main thread biterse sizce ne olur?
+
+239
+00:42:20,532 --> 00:42:49,952
+Main demek ne demek? Ana program. Main thread'in önce bitmesi sizce ne anlama gelir? Program kapanır mı? Program kapanacak. Yanda çalışan iki tane thread var. Onlar işlerini tamamlayamadan belki main'in önce bitme ihtimali. Bu iyi bir şey değil. Düşünün yani ben Word gibi bir uygulama yapıyorum. Ana programım şey bir şekilde pat diye kapanıyor. Diğer şeyler yarıda kalıyor.
+
+240
+00:42:50,532 --> 00:43:06,392
+Bu iyi bir şey değil. Dolayısıyla program kapanmadan önce, proses tamamlanmadan önce, threadlerin işlerini bitirmesine izin vermek için bu threadlerin buraya katılması, yani main'in bulunduğu yere katılması gerekiyor.
+
+241
+00:43:06,392 --> 00:43:20,292
+Bu da şu demek, bu çalışacak, bu çalışacak, bu çalışacak, öyle bir T zamanı gelecek ki bunlar, şu da main olsun, bunlar burada duracak, bekleyecek, yani işlemleri tamamlanacak. Ondan sonra main biraz daha devam edecek.
+
+242
+00:43:20,532 --> 00:43:23,311
+ve program burada tamamlanacak demektir.
+
+243
+00:43:24,432 --> 00:43:25,491
+Bunu da join ile yapıyoruz.
+
+244
+00:43:26,192 --> 00:43:27,551
+Bu join ile yaparken şu oluyor.
+
+245
+00:43:27,551 --> 00:43:29,612
+Diyor ki thread id 0.
+
+246
+00:43:30,911 --> 00:43:34,811
+Burada tid'yi bakın şuraya global değişken olarak koymuşuz.
+
+247
+00:43:34,892 --> 00:43:37,692
+Pek adetimiz değil ama thread'lerle bunlar yapılabilir.
+
+248
+00:43:38,231 --> 00:43:40,851
+Thread id 0'ın buraya gelmesini bekle.
+
+249
+00:43:41,892 --> 00:43:44,371
+Bu gelirken bir tane parametre ile gelecek.
+
+250
+00:43:44,371 --> 00:44:08,931
+O gelen parametrede ptr0 değişkenine şurada integer pointer ile tuttuğumuz bir değer var. Void pointer olarak buradan bir değer gelecek. O değeri al ve şurada tut. Şu ptr'nin olduğu yerdeki adres tut. Bakın thread'in kendisine ait bellek bölgesindeki şu return değeri, global değişken değeri geliyor, şurada yakalanıyor. Aynısını thread1 içinde yapıyoruz.
+
+251
+00:44:08,931 --> 00:44:17,031
+Dolayısıyla önce thread 0 bitecek tamamlanacak ondan sonra thread 1 tamamlanacak ondan sonra main tamamlanacak
+
+252
+00:44:17,031 --> 00:44:25,331
+Şurada da bu threadlerden geriye döndürülen değiller mesela birinden 100 dönecek birinden 200 dönecek bunların değerlerini şurada ne yapıyoruz ekrana bastırıyoruz
+
+253
+00:44:25,331 --> 00:44:28,711
+Bu örnekte fena bir örnek değil inceleyebilirsiniz arkadaşlar
+
+254
+00:44:28,711 --> 00:44:31,971
+Buraya kadar bir sorumuz var mıydı?
+
+255
+00:44:35,699 --> 00:44:55,800
+Peki, şöyle yapacağız. Şimdi size ayrıca bazı kaynaklar paylaşacağım. Burada da yine threadlerin oluşturulması. Mesela thread attribute ile alakalı bu derste bir şey anlatmıyoruz. İşletim sistemlerinin konusu ve bu çok detaylı bir konu.
+
+256
+00:44:55,800 --> 00:45:00,820
+Yani sadece thread add tribütlerinin düzenlenmesi yarım dönemlik bir konu olabilir.
+
+257
+00:45:00,820 --> 00:45:02,580
+Yani çok şeydir.
+
+258
+00:45:03,060 --> 00:45:07,380
+Biz genellikle default değerler kullanıyoruz ama her zaman default değerler işimize yaramıyor maalesef.
+
+259
+00:45:07,479 --> 00:45:09,760
+Extra şeyler çalışmamız gerekiyor.
+
+260
+00:45:10,220 --> 00:45:14,699
+Burada bu kaynakta adım adım benim anlattıklarımın daha farklı versiyonları var.
+
+261
+00:45:15,540 --> 00:45:19,900
+Mesela diyor ki şurada number of thread'in 5 olsun.
+
+262
+00:45:21,560 --> 00:45:24,759
+Hatta bu kodu kopyalayalım arkadaşlar biraz önceki şeye.
+
+263
+00:45:32,436 --> 00:45:43,115
+Tabii kötü bir kopyalama yapıyoruz. Şöyle biraz toplayalım.
+
+264
+00:45:51,603 --> 00:46:03,643
+Evet, 5 tane thread idc için ayar açtık. Sonra for döngüsüyle diyoruz ki her bir şey için kaçıncı thread oluşturacağımızı söylüyoruz.
+
+265
+00:46:03,703 --> 00:46:11,944
+İşte ne yapıyoruz ki şu threadlerin t'si kadar yani sıfırıncı threadi, birinci threadi gönder. Bunlar ne demek? Bunlar pointer demek zaten.
+
+266
+00:46:11,944 --> 00:46:23,083
+default değerleri gönder, print hellle fonksiyonunu gönder ve buraya argüman olarak bakın bir void t türünde şey göndeririz.
+
+267
+00:46:23,083 --> 00:46:27,324
+Yani birine sıfır gidecek, birine bir girecek ama void pointer'a dönüştürülmüş şekilde.
+
+268
+00:46:27,944 --> 00:46:29,964
+Void pointer'ları zaten size anlatmıştık.
+
+269
+00:46:30,523 --> 00:46:39,343
+Eğer diyoruz ki burada rc dediğimiz return değerimiz hatalıysa, işte şey ise burada bir hata var demektir.
+
+270
+00:46:39,343 --> 00:47:04,343
+Daha sonra işte p-thread, exit, null demiş. Yani programı kapatıyor. Mesela burada join de yapmamış. Join de yapabilirdi. Şu an burada ne göreceğiz arkadaşlar? 0'dan 5'e, 4'e kadar, 4 dahil olmak üzere, 5 tane mesaj göreceğiz. Ama bu mesajların 0, 1, 2, 3, 4 sırasıyla şurada yazılması her zaman söz konusu değil. Karışık olabilir. Şimdi görelim.
+
+271
+00:47:09,652 --> 00:47:10,892
+multi-threads.
+
+272
+00:47:15,764 --> 00:47:31,023
+Bakın, sıfır yazdı, biri yazdı, ikiyi yazdı, oluşturuyorum dedi. Sonra dedi ki ben sıfırıncı tredim, birinci tredim, ikinci tredim, üçüncü tredim, dördüncü tredim. Mesela oluşturma ve şey yazdım o şekilde.
+
+273
+00:47:31,023 --> 00:47:43,764
+Şimdi ben bunları biraz daha değişik sıralarla çalıştırsam şu hello world ifadeleri 0, 1, 2, 3, 4 diye görülmeyebilir.
+
+274
+00:47:43,983 --> 00:47:51,023
+Tabi şu an oluşturulma sırası ile hızlıca kuyruğa giriyorlar da bunu böyle defalarca çalıştırın.
+
+275
+00:47:51,023 --> 00:47:58,423
+Şu hello world ifadeleri ne bileyim 2 önce 0 sonra 1 daha sonra görebilirsiniz.
+
+276
+00:47:58,423 --> 00:48:00,383
+engel yok.
+
+277
+00:48:00,883 --> 00:48:04,644
+Çünkü bakın şurada basit bir şekilde sıfırdan şeye kadar değerler dönüyor.
+
+278
+00:48:04,764 --> 00:48:05,743
+Başka bir şey yapılmıyor.
+
+279
+00:48:11,731 --> 00:48:34,551
+yine 0, 1, 2, 3, 4, gönlü. Şu an sadece denk geliyor ama bunu defalarca denildiğinizde illaki onun karmaşık olduğunu göreceksiniz. Böyle bir yapı var. Bakın peki buraya gelen thread idsi, bakın void pointer ile gelen şey nasıl kullanacağız? Hatırlarsanız void pointerlarda bir değeri kullanmak istediğinizde kullanacağınız süre cast yapmanız gerekiyordu. Onu orada anlatmıştım.
+
+280
+00:48:34,551 --> 00:48:43,531
+İşte burada da ne oluyor? Bu thread id olarak gelen değer işte burada long türüne veya integer türüne cast yapılıyor ondan sonra kullanılıyor.
+
+281
+00:48:44,511 --> 00:48:48,272
+Herhangi bir şekilde exit ederken de bir return yapmıyoruz.
+
+282
+00:48:49,072 --> 00:48:56,912
+Eğer return yapacaksak bunu join ile hem buradan dönen değeri alıp hem de threadlerin tamamlanmasını isteyebiliyoruz.
+
+283
+00:48:58,231 --> 00:49:02,011
+Şurada başka bakın burada da join'li hali var.
+
+284
+00:49:02,011 --> 00:49:14,912
+Kim önce şey yapacak mesela şunu da alalım. Şuraya aslında sadece join ile alakalı kısımları alsak yeterli olur.
+
+285
+00:49:18,867 --> 00:49:45,607
+Bu p thread exit null ne demek? Main thread'in döndüreceği değer demektir. Şu. Çünkü şu an bu main ile alakalı. Şuradakilerde yukarıda oluşturduğumuz threadlerin alacağı şeyler. Bunlar mesela nasıl join edecek? Önce thread 0'ın join etmesi, sonra thread 1'in join etmesi, sonra thread 2, 3, 4. Bu sırayla ne yapıyor? O threadlerin işlerini tamamlasınlar. Ondan sonra main işini bitirsin diyoruz.
+
+286
+00:49:45,607 --> 00:49:53,607
+Bunu yazmazsak main önceden kapanır gidebilir ve istemediğimiz kötü sonuçlar görebiliriz
+
+287
+00:49:53,607 --> 00:49:57,847
+Hocam peki bu sırayla gelmelerine sebep olabilir mi?
+
+288
+00:49:59,048 --> 00:49:59,448
+Şu mu?
+
+289
+00:50:01,347 --> 00:50:05,387
+Sırayla tamamlanmalarına sebep olacak o kesin
+
+290
+00:50:05,387 --> 00:50:12,088
+Ama sırayla şu içeriğinin yazmalarıyla alakalı bir şey değil
+
+291
+00:50:12,088 --> 00:50:14,127
+Tamam mı?
+
+292
+00:50:14,127 --> 00:50:37,767
+O işlerin execution'un bitmesini sağlıyor, sırayla bitmesini sağlıyor. Diyor ki önce thread 0 bitecek, ondan sonra thread 1 bitecek, sonra thread 2 bitecek. Ama içeride çalışma esnasında thread 0'ın belki şu iki satırı çalışıyor, thread 1'in üç satırı çalışıyor, öbürünün ne bileyim bir satırı çalışıyor, ona müdahale edemez. Tamam mı?
+
+293
+00:50:41,940 --> 00:50:53,619
+Pekala, şimdi 50 geçiyor arkadaşlar. Bir de size jeneriklerle alakalı anlatacağım şeyler var ama bir 12 dakika ara verelim. Bir saat daha ders yapacağız.
+
+294
+00:50:54,719 --> 00:51:06,659
+Yani threadler konusu kabaca bu şekilde yeterli bu ders için. Daha detaylısı gelecek dönemlerde göreceğimiz derslerde. Saat tam 10'da kaldığımız yerden devam edelim.
+
+295
+01:02:23,380 --> 01:02:47,339
+Evet arkadaşlar. Şimdi bu normalde void pointer'ların ve jeneriklerin bulunduğu kısım her zaman anlatmıyoruz ama işte vakit kaldı için birazcık bahsedeceğim. Tabi bu slide örneği adım adım anlattığı için tekrardan kod yazmayı gerektiren bir şey değil. Aslında bu bir soruyla başlıyor.
+
+296
+01:02:47,339 --> 01:02:57,279
+mevcut bilgilerimizi kullanarak öyle bir fonksiyon yazalım ki bu fonksiyon herhangi bir tipteki veriyi işleyebilir olsun.
+
+297
+01:02:57,279 --> 01:03:05,199
+Örneğin en tane elemanlı dizimiz var. Bu pointer yani integer dizisi olabilir, başka diziler olabilir.
+
+298
+01:03:06,039 --> 01:03:11,060
+Her türden şeyi destekleyecek türde bir şey olsun istiyoruz.
+
+299
+01:03:12,039 --> 01:03:13,479
+Bunu nasıl yaparız?
+
+300
+01:03:13,479 --> 01:03:30,199
+C, NULL'un, ceneriklerin burada örneğin bir swap fonksiyonu. Şu an bu fonksiyon iki tane integer'ı şey yapıyor. Peki ben swap iki tane float'u swap etmek istesem, iki tane karakteri, iki tane structure değişkenine swap etmek istesem ne yapacağım?
+
+301
+01:03:30,199 --> 01:03:42,839
+İşte swap integer, swap person gibi, swap float gibi farklı fonksiyonlar yazmam lazım. Bu da çok iyi bir şey değil. Tamam swap'in burada ne olduğunu falan anlatıyor bunları geçelim.
+
+302
+01:03:43,479 --> 01:03:57,960
+Olay kurgusu bu 3 slide'da gayet güzel anlatılmış. 12, 13, 14. Stanford'ın slide'ları. Bunları zaten sizinle paylaşacağım. Adım adım bütün satırı anlatıyor.
+
+303
+01:03:59,420 --> 01:04:10,399
+Peki ben bir short değişken için bunu yapmak istesem. O zaman kodu kopyala yapıştır, intleri short yap gibi bir mantık kullanmayacağız. Artık bu bir yerden sonra yönetilmez hale gelir.
+
+304
+01:04:13,479 --> 01:04:36,519
+ve kafayı karıştıran bir şey. Yani biz burada stringlerle boğuşmaya çalışıyoruz. Swap, short, swap, int, swap bilmem ne şeklinde. Acaba herhangi bir şeyi swap yapan, işte mesela swap string demiş, bir şey yapabilir miyiz diye geleceğiz, oraya doğru ilerliyoruz.
+
+305
+01:04:36,519 --> 01:04:41,699
+adım adım anlattığı için bu aradaki slide'lar dediğim gibi biraz uzatıyor meseleyi.
+
+306
+01:04:43,540 --> 01:04:47,980
+Aslında swap string bize bir fikir veriyor arkadaşlar.
+
+307
+01:04:49,540 --> 01:04:51,960
+Şimdi string karakterlerden oluşan bir şey.
+
+308
+01:04:52,359 --> 01:04:55,320
+Karakterler integer'lara dönüştürülebiliyor hatırlarsanız.
+
+309
+01:04:55,320 --> 01:05:06,139
+Bu mantığı kullanarak her türden acaba bir veriyi byte dizisi şeklinde bir jenerik swap, jenerik işte ekrana yazdır, jenerik bir fonksiyon.
+
+310
+01:05:06,519 --> 01:05:12,760
+hani böyle swap bilmem ne yazmak yerine daha jenerik bir şey yapabilir miyiz?
+
+311
+01:05:13,499 --> 01:05:14,219
+Sağlayacağız.
+
+312
+01:05:15,519 --> 01:05:19,380
+Şimdi jenerik swap örneğinden önce ilerleyelim.
+
+313
+01:05:20,019 --> 01:05:22,100
+Dikkat etmemiz gereken 3 tane şey var.
+
+314
+01:05:23,880 --> 01:05:26,219
+Pointer'ları almamız gerekiyor.
+
+315
+01:05:26,380 --> 01:05:28,339
+İlla ki pointer olacak ki swap olsun.
+
+316
+01:05:28,880 --> 01:05:30,380
+Bir tane temporary olacak.
+
+317
+01:05:31,460 --> 01:05:34,579
+Sonra bir tane bu temporary'e a'yı tempo atacağız.
+
+318
+01:05:34,579 --> 01:05:36,279
+Bu hepsinde olan şeyler.
+
+319
+01:05:36,519 --> 01:05:51,279
+O zaman şöyle bir swap fonksiyonu yapıyoruz. Bir tane data için bir pointer, onu sonra ikinci data için bir pointer, bir tane temporary değişken sonra bunların yer değiştirmesi. Genel fonksiyonumuz bu olacak.
+
+320
+01:05:51,279 --> 01:05:55,179
+Bir saniye
+
+321
+01:06:20,052 --> 01:06:28,831
+Tabii şu ana kadar ki gördüğümüz bu şeyi her türden veri için bir şeyle yapabiliriz arkadaşlar.
+
+322
+01:06:29,791 --> 01:06:33,911
+Hani fonksiyon pointer ile ama fonksiyon pointerı tam anlamıyla burada işe yaramayacak.
+
+323
+01:06:34,851 --> 01:06:42,591
+Hani yine sıralama ağırlık öğretmesi örneğinde olduğu gibi artan sıralama, azalan sıralama iki tane yan fonksiyon yazıyordunuz.
+
+324
+01:06:43,431 --> 01:06:47,451
+Daha genel haline üst generic wrapper fonksiyonu da yazıyorduk.
+
+325
+01:06:47,451 --> 01:07:02,211
+Burada o da işe yaramaz çünkü swap işlemi şu 3 satırdan olan bir şey. Ve şöyle bir şey görüyoruz. Integer olsa 4 byte bir şey, short olsa 2 byte, karakter olsa 8 byte şeyler olacak.
+
+326
+01:07:02,211 --> 01:07:24,671
+Çünkü bu bir pointer. O zaman farklı bir temp bize gerekiyor. Bu verilerin de kopyalanması da farklı ifade edecek. Bakalım nasıl bir şeyle şey yapacağız. Şimdi bu size of fonksiyonuyla bir değişkenin türünü şey size'ını elde edebiliriz.
+
+327
+01:07:24,671 --> 01:07:32,511
+biraz da biraz şey böyle matematikler pointer manipülasyonu ile pointer aritmeti ile bunu mümkün hale getirecek.
+
+328
+01:07:33,971 --> 01:07:42,531
+Şimdi diyor ki ben buraya ilk aşamada herhangi bir türde pointer alacaksam bunu void pointer yaparım.
+
+329
+01:07:43,931 --> 01:07:44,891
+Bu bana neyi sağlar?
+
+330
+01:07:46,751 --> 01:07:52,171
+Int ise int, string ise string, karakter ise karakter, ondan sonra plot ise float yapmayı sağlar.
+
+331
+01:07:52,171 --> 01:08:05,471
+Sonra şunları açacağız. Buraya iki tane pointer aldık. Alacağımız şey bir temporarist taş. Fakat şunu kullanabilmemiz için bizim cast yapmamız gerekiyor.
+
+332
+01:08:05,971 --> 01:08:14,871
+Cast yapmamız için de bunun buraya gönderilen değerin ne olduğunu bilmemiz lazım. Fakat bilemiyoruz. Acaba başka bir şey mi gerekiyor?
+
+333
+01:08:14,871 --> 01:08:35,811
+İşte burada üçüncü bir şey olarak, bir byte olarak acaba bu gelen veri kaç byte'lık bir veridir? Olayı integer'dan, karakterden, float'tan ayırt edip gelen verinin boyutunu byte olarak almaya dayanan bir şey. Şöyle üçüncü bir parametre aldık.
+
+334
+01:08:37,632 --> 01:08:43,311
+Ve fonksiyonumuz ne hale geldi? Şu şekile geldi. Ondan sonra devam ediyoruz.
+
+335
+01:08:44,871 --> 01:08:57,051
+şu bir tane tempimiz olacak. Bu tempin üzerine data pointer 1'deki değeri aktaracağız. Sonra işte data pointer 2'deki değeri aktaracağız. Ve bunları işte swap yapmış olacağız.
+
+336
+01:08:57,351 --> 01:09:10,051
+O zaman diyoruz ki buraya bir değişken tanımlamak yerine ben şu gelen verinin her bir byte'ını alsam, bunu bir karakter dizisinde tutsam.
+
+337
+01:09:10,051 --> 01:09:11,051
+tutsam. Zaten şuraya bir zaten şey geliyor. Hani bunu dynamic memory allokasyonuyla falan sağlarız. Sonra buradaki veriyi temp üzerine kaydetsem olur mu? Olabilir demişler. Yani bakın bir string karakter dizisini burada bu işlemi manipüle ediyorlar. Sonra yapacağımız şey ne olacak? Böyle bir şey tanımladıysak temp'in bulunduğu yere data pointer birdeki şeyi alacağız ama fakat bu da doğrudan atamaya
+
+338
+01:09:40,051 --> 01:09:41,171
+yani müsait bir şey değil.
+
+339
+01:09:42,992 --> 01:09:48,591
+İşte size anlattığımız memcopy veya strcpy fonksiyonları dikkat ederseniz bu tarz şeyleri yapıyordu.
+
+340
+01:09:50,111 --> 01:09:54,372
+Böyle bir şey yapmak yerine çünkü dereferans yapamıyordu void pointer'ı.
+
+341
+01:09:54,572 --> 01:09:56,391
+Arada anlattığım şeyleri burada geçiyor.
+
+342
+01:09:56,492 --> 01:09:58,731
+Dereferans yerine memcopy'i kullanacağız diyor.
+
+343
+01:09:59,471 --> 01:10:01,412
+Burada memcopy'i birazcık bahsetmişti.
+
+344
+01:10:01,412 --> 01:10:07,152
+Memory move dediğimiz şey biraz daha farklı bir fonksiyon.
+
+345
+01:10:07,572 --> 01:10:08,811
+İşte overlapleri falan şey yapıyor.
+
+346
+01:10:08,872 --> 01:10:09,311
+Geçiyoruz.
+
+347
+01:10:09,311 --> 01:10:18,551
+Yani şurada atama yapmak yerine bu atamanın yerine memcopy veya memmove, memori move'u kullanalım demiş. Dolayısıyla ne yapıyor? Şu temp'in olduğu yere
+
+348
+01:10:19,155 --> 01:10:47,315
+data pointer 1'den gelen N tane byte'lık veriyi kopyalıyor. Aslında şu bir ne olmuş oluyor? Bizim için buffer oluyor. Ondan sonra aynısını ne yapacak? Data pointer 1'den data pointer 2'ye aktaracak. Geçelim buraları. Şunu da yapamayacağı için. Bunun yerine de bir memory copy. Sonra bir memory copy daha üçüncüsünün yerine gelecek. Bu şekilde jenerik bir bakın ne yaptık arkadaşlar? Slap yaptık.
+
+349
+01:10:47,315 --> 01:11:05,615
+Dolayısıyla biz bu fonksiyonu çağırırken şöyle bir şey diyoruz. X'i gönder, X'in adresini gönder, Y'nin adresini gönder. Bunlar ne olur? Şuradaki void pointer'lar aktarılır. Bir de X'in saydığını gönder. Bu ister bir structure değişken olsun, ister şey olsun, ne olduğundan bağımsız olarak ne yapabiliyor?
+
+350
+01:11:05,615 --> 01:11:07,975
+jenerik bir şekilde çalışabiliyor.
+
+351
+01:11:09,115 --> 01:11:10,535
+Burada bir sorumuz var mı?
+
+352
+01:11:12,155 --> 01:11:19,455
+Daha kapsamlı hali, bakın evet şurada integer için, işte şurada short için çalışan hali.
+
+353
+01:11:20,496 --> 01:11:23,095
+Hocam orada size ki veri tipi tam neydi?
+
+354
+01:11:25,155 --> 01:11:30,596
+Şu mu? Bu integer türde bir değer tutan, alttan tırı t'lerin hepsi aslında integer türdedir.
+
+355
+01:11:30,596 --> 01:11:33,675
+Bir şeylerin boyutu veya bir şeylerin a'yı dişini tutar.
+
+356
+01:11:33,675 --> 01:11:35,575
+genellikle pozitif integerler tutur.
+
+357
+01:11:36,155 --> 01:11:40,575
+Alttan tere t olması da genellikle pozitif olduğunu göstermek için kullanılan bir şey belirteş.
+
+358
+01:11:40,655 --> 01:11:42,355
+Ama hepsini integer gibi düşünebilsiniz.
+
+359
+01:11:44,115 --> 01:11:46,895
+Bu şekilde iki farklı veri tipini swipleyebilir miyiz?
+
+360
+01:11:46,935 --> 01:11:49,955
+İki farklı veri tipini swiplemekten kastımız ne Furkan?
+
+361
+01:11:50,955 --> 01:11:54,655
+Yani integer olan bir şeyle short olan bir şey mi swip demek istiyorsun?
+
+362
+01:11:56,315 --> 01:11:58,235
+Yok. Şimdi o başka bir mesele.
+
+363
+01:11:59,495 --> 01:12:01,655
+Yani bizim buradaki swipten kastımız
+
+364
+01:12:01,655 --> 01:12:06,155
+Şuraya tekrar geri gelelim biraz yukarı çıkacağız ama
+
+365
+01:12:15,123 --> 01:12:16,663
+Neredeydi o?
+
+366
+01:12:19,699 --> 01:12:22,140
+bir liste şeklinde swapler vardı ya.
+
+367
+01:12:24,459 --> 01:12:25,080
+Allah Allah.
+
+368
+01:12:36,724 --> 01:13:06,343
+Yani bu kadar her bir şey için ayrı ayrı swap yazmamak için bu yaptığımız bir şey. Sonuçta integer ile integer'ı swap ediyorsun. Float ile float swap ediyorsun. Buradaki mesele o. Senin dediğin öyle bir şey yok. Zaten öyle bir swap işlemi yapmaya bilmiyorum gerek olan bir durum var mı? Integer ile float'ı swap etmek. Çünkü bunlar farklı veriler. Yani gerek olmayabilir. Yani hiç kullanıldığını görmedim açıkçası.
+
+369
+01:13:06,724 --> 01:13:08,203
+Varsa da ben bilmiyorum
+
+370
+01:13:08,203 --> 01:13:11,564
+Bakın burada işte karakterleri swap ettiriyor
+
+371
+01:13:11,564 --> 01:13:14,104
+Ondan sonra bir tane structure oluşturuyorsunuz
+
+372
+01:13:14,104 --> 01:13:17,163
+İşte o structure'ları kendisine swap ettirebiliyorsunuz
+
+373
+01:13:17,163 --> 01:13:18,564
+Yaptığımız şey basit
+
+374
+01:13:18,564 --> 01:13:20,064
+Void pointer kullanmak
+
+375
+01:13:20,064 --> 01:13:24,064
+Bu void pointer'ları bir byte dizisine aktarmak
+
+376
+01:13:24,064 --> 01:13:27,304
+Normalde bakın şurası da arkadaşlar bu şekilde yazılmaz
+
+377
+01:13:27,304 --> 01:13:29,023
+Dynamic memory allokasyonu yaparsınız
+
+378
+01:13:29,023 --> 01:13:30,124
+Malloc yazarsınız
+
+379
+01:13:30,124 --> 01:13:33,304
+Hani N tane byte'lık bir yer açarsınız
+
+380
+01:13:33,304 --> 01:13:34,243
+Çıkar türde
+
+381
+01:13:34,244 --> 01:14:03,463
+sonra bu alanlara bu değerleri kopyalayıp sonuçta veriler bit cinsinden değil mi? Bit cinsinden. Bu floating point de olsa bit cinsinden. İşte ne bileyim karakter de olsa bit cinsinden. Bitler bir araya gelince byte'ları oluşturuyor mu? Evet byte'ları oluşturuyor. O zaman benim bir tane karakterim bir byte ise şuraya kaç tane karakter geleceğini söyleyip o kadar byte'lık bir yer açıyorum. Açtığım bu yer üzerinden değişiklik sağlıyoruz.
+
+382
+01:14:04,243 --> 01:14:29,263
+Olayın özeti burada bu. Yardımcı fonksiyonlarımızı söyledik. Fakat arkadaşlar burada işin sonuna geldiğimizde bu void pointer'ın güçlü bir şey olduğunu fakat tehlikeli olduğunu, herhangi bir type checking ile alakalı bir şey olmadığını görüyoruz.
+
+383
+01:14:29,264 --> 01:14:36,283
+integerlarla baktığınızda olay farklı başka şeylerle baktığınızda olay farklı.
+
+384
+01:14:37,283 --> 01:14:45,643
+Mesela C hiçbir zaman bir integer'ın yarısının swap edilmesine size izin vermeyecek diyor mesela.
+
+385
+01:14:45,643 --> 01:14:48,423
+Bunu diyor acaba nasıl şey yapabiliriz?
+
+386
+01:14:49,324 --> 01:14:52,604
+Bu şeyin altında böyle bir swap C şeyi var arkadaşlar.
+
+387
+01:14:54,483 --> 01:14:56,744
+Şimdi gelelim bu olayın birinci tarafı.
+
+388
+01:14:56,744 --> 01:15:15,724
+İkinci tarafında acaba bir array'in öyle bir fonksiyon yazın ki bu array'in ilk ve son elementlerini değiştirsin.
+
+389
+01:15:16,104 --> 01:15:20,244
+Az önceki örnekle şu örneği şimdi beraber düşüneceğiz.
+
+390
+01:15:21,204 --> 01:15:22,444
+Bu da baya uzun gitmiş.
+
+391
+01:15:22,444 --> 01:15:51,444
+Şimdi olay şöyle olsa işte bir tane integer elemanımız var dizimiz var daha sonra bir tane fonksiyon yaz diyorum baştakini ve sondakini şey yap o zaman ne yaparız şu başlangıçtaki bu pointer'ı göndeririz kaç tane eleman olduğunu göndeririz buraya sonra deriz ki bu dizin içerisinde şu değişikliği yap bu bir pointer olarak geldiği için burada yapılan değişiklik şurayı değiştirecektir dolayısıyla 1 ile 5'in
+
+392
+01:15:52,444 --> 01:15:53,964
+yer değiştirdiğini görürüz.
+
+393
+01:15:55,824 --> 01:16:00,983
+Tabi bunu şu şekilde de yapacağız.
+
+394
+01:16:01,084 --> 01:16:06,724
+Biraz önceki swap fonksiyonumuza bu şekilde şunu göndersek.
+
+395
+01:16:06,863 --> 01:16:07,584
+Array'i gönder.
+
+396
+01:16:08,684 --> 01:16:09,983
+Array'in son elemanını gönder.
+
+397
+01:16:10,104 --> 01:16:11,423
+Bu sıfırıncı eleman, bu sıfırıncı eleman.
+
+398
+01:16:11,503 --> 01:16:15,264
+Bir de array'in her bir elemanın size'ını gönder.
+
+399
+01:16:15,964 --> 01:16:19,283
+Az önceki fonksiyonla bunu yaptığımızı gösteriyor.
+
+400
+01:16:19,283 --> 01:16:22,283
+Bakın şu jenerik bir halde.
+
+401
+01:16:22,444 --> 01:16:29,003
+Cenerik sebeple. Fakat bu sefer şuna ihtiyaç duyuyoruz arkadaşlar. Bakın.
+
+402
+01:16:29,395 --> 01:16:45,836
+Integer dizisinin herhangi iki elementini yer değiştirmek için şöyle bir swap and int fonksiyonu yazdık. Yukarıdaki sebebi kullandık. Ama bu integer dizisi değil de karakter dizisi, bilmem ne dizisi, şu dizisi, bu dizisi olsa o zaman ne yapacağız?
+
+403
+01:16:45,836 --> 01:17:10,796
+bu sefer tamam swap'ten kurtulduk ama şöyle bir sürü fonksiyonlar türedi. Az öncekinin aynı başladığımız noktanın biraz daha şeyine geldi. Ufacık bir problemde değişiklik yaptığımızda. O zaman diyoruz ki acaba bunu da jenerik hale getirsek herhangi tipten iki tane şeyin çalışacağı bir şey yapsak o zaman ne olabilir?
+
+404
+01:17:10,795 --> 01:17:23,235
+void olarak bir array alıyoruz pointer bir de array'in hangi elemanını alacağımızı söylüyoruz ve şu swap fonksiyonumuzu çağırıyoruz.
+
+405
+01:17:23,235 --> 01:17:33,055
+Diyoruz ki array'in ilk elemanıyla işte array'in son elemanını al bir de bunun size'ını gönder o zaman bunu swap yap ama bu çalışacak mı?
+
+406
+01:17:33,055 --> 01:17:41,955
+Bakın şu size of array arkadaşlar bu void pointer türünden olduğu için sabit bir şey olacak.
+
+407
+01:17:41,955 --> 01:17:48,915
+Halbuki karakterse 1 olması lazım, integer ise 4 olması lazım, short ise 2 olması lazım.
+
+408
+01:17:49,576 --> 01:17:55,056
+Öyle karışık. Dolayısıyla bunu birazcık değiştirmek gerekiyor.
+
+409
+01:17:56,135 --> 01:18:00,235
+Çünkü şu size'ı bulamıyoruz. Size'ı bulsak zaten çok kolay.
+
+410
+01:18:00,235 --> 01:18:08,275
+şu fonksiyon güzel çalışacak. Size bulamadığımız için ikinci parametrenin bağımlılığı olacağı için
+
+411
+01:18:08,275 --> 01:18:15,435
+void pointer ile bu bilgiyi kaybettiğimiz için çalışmayacak. Bu zaman diyor ki bunu biraz daha değiştirelim.
+
+412
+01:18:17,435 --> 01:18:24,695
+Herhangi bir tipte çalışacak şekilde. Yine aynı mantıkla arkadaşlar. Buraya bir argüman alıyoruz.
+
+413
+01:18:24,695 --> 01:18:54,616
+işte kaçıncıyı değiştireceğinizi alıyoruz bir de elementlerin byte cinsinden hani bu dizinin elementleri kaçar byte'dan oluşuyor buraya bakın bir parametre daha alıyor aynı şu swap'de yaptığımızın şeyini hani çünkü bana size gerekiyor eğer böyle bir işlem yapacaksam bu size bilgisini de buraya alıyor dolayısıyla pointer aritmetiği bilgisini de kullanarak bunun bu işin içerisinden çıkabiliyoruz
+
+414
+01:18:54,696 --> 01:18:58,776
+Şimdi şöyle şu aradaki ispata dair şeyleri geçiyorum.
+
+415
+01:19:00,776 --> 01:19:05,395
+Bakın diyor ki fonksiyonu aldık.
+
+416
+01:19:05,716 --> 01:19:07,976
+Dizinin başlangıç pointerını aldık.
+
+417
+01:19:08,895 --> 01:19:09,996
+Kaç eleman olacağını aldık.
+
+418
+01:19:10,116 --> 01:19:11,196
+Şu başlangıç olacak.
+
+419
+01:19:11,395 --> 01:19:12,595
+Şu sonuncu eleman olacak.
+
+420
+01:19:12,856 --> 01:19:15,356
+Tabi senaryomuz ilk ve son elemanları yer değiştirmek.
+
+421
+01:19:15,356 --> 01:19:24,595
+Bir de buraya şu gelen elementlerin byte cinsinden şeylerini, size'larını alıyoruz ve bunu gönderiyoruz.
+
+422
+01:19:24,696 --> 01:19:28,955
+başka bir şey burada var mı?
+
+423
+01:19:31,656 --> 01:19:39,416
+Fakat şurada void pointer ile alakalı yapılacak olan işlem hala olmayacak.
+
+424
+01:19:39,576 --> 01:19:43,015
+Çünkü C'nin buna özel bir şeyi yok.
+
+425
+01:19:43,136 --> 01:19:45,735
+Void pointer üzerinde pointer aritmeti yapılamıyor.
+
+426
+01:19:46,815 --> 01:19:48,696
+Ve bu şu an için olmayacak.
+
+427
+01:19:48,696 --> 01:19:52,395
+O zaman diyoruz ki yine karakter dizisi mantığından çalış.
+
+428
+01:19:52,395 --> 01:20:15,696
+hangi dizi gelirse gelsin o diziyi karakter dizisine kest edelim. Array var. Bu array'in eninci elemanı var ama eninci elemanına ulaşmak için de ne yapmamız lazım? Şu byte türü cinsinden elemanlara çevirmemiz yani pointer artmetini çarpmamız gerekiyor. Integer ise burayı dört ile çarpacağız çünkü karakter birer birer şey.
+
+429
+01:20:15,695 --> 01:20:22,455
+Temel birim bizim için karakter, integer ise 4. Zaten şuraya 4 bilgisi gelecekti.
+
+430
+01:20:23,091 --> 01:20:52,331
+şuraya 4 bilgisi gelecekti veya 2 bilgisi gelecek veya işte bir structure diziyse o bilgi gelecek. Ne yapıyor? Bu ikisini birleştirip SWEP fonksiyonunu çağırıyor. Böyle devam ediyor arkadaşlar. Herhalde olayın özü anlaşılmıştır. Örneğin böyle bir integer diziniz varsa diyoruz ki numaraları gönder, kaç tane eleman olduğunu gönder, kaç eleman olduğu ne? İşte burada 5 tane eleman var. Ben sıfırıncıyla şunu değiştireceğim bu senaryo üzerinde.
+
+431
+01:20:52,331 --> 01:21:19,331
+bunu gönder. Sonra bunlardan her biri kaç tane elementten oluşuyor? Ne kadar byte'tan oluşuyor? Bu bilgiyi gönder. Bu bilgi burada alınınca, şuraya gelince biraz önceki swap fonksiyonumuzu çağırıyoruz. O orada swap ediliyor. Bu şekilde bakın bir dizinin isterseniz birinci sonucu değil herhangi iki tane elementini jenerik olarak değiştirebiliyorsunuz.
+
+432
+01:21:19,331 --> 01:21:44,051
+Mesela burada yaptığı örnekler işte shortları yapıyor. Daha sonra işte karakterleri yapıyor. Daha sonra işte işte herhangi bir structure elementini yapıyor. Bu jenerikler bununla alakalı şeyler. Bundan sonra mesela array rotasyon problemlerimiz var. Array'in içerisinden belli bir noktayı alıp işte yani bu mesela genetik algoritmada yaptığımız bir şey.
+
+433
+01:21:44,051 --> 01:21:51,251
+Genetik algoritma hani bu biyolojiden hatırladığımız genlerin çaprazlanması alakalı şeyler vardır.
+
+434
+01:21:51,251 --> 01:21:55,931
+Mesela 0-1-1-0 diyelim böyle bir gen bilginiz var.
+
+435
+01:21:56,632 --> 01:21:59,492
+1-1-0-0 bir de böyle bir gen bilginiz var.
+
+436
+01:22:00,312 --> 01:22:05,191
+İşte diyelim ki bunun şu kısmıyla şunun şu kısmını çaprazladığımızda ne elde edeceğiz?
+
+437
+01:22:05,371 --> 01:22:08,971
+0-1-0-0 birinci jenerasyon 1 olacak.
+
+438
+01:22:09,651 --> 01:22:13,211
+Ondan sonra 1-1-1-0 öbürü de bu olacak.
+
+439
+01:22:14,051 --> 01:22:17,591
+Şunun şu kısmını da bunun bu kısmını alıyorsun.
+
+440
+01:22:17,831 --> 01:22:19,532
+Bunun bu kısmını da bunun bu kısmını alıyorsun.
+
+441
+01:22:19,791 --> 01:22:20,651
+Yeni nesil üretiyorsun?
+
+442
+01:22:20,651 --> 01:22:23,371
+Şimdi mesela bu da aynı integer dizilerinde olduğu gibi.
+
+443
+01:22:24,111 --> 01:22:25,831
+İşte 1, 2, 3, 4, 5, 6 böyle bir şey var.
+
+444
+01:22:25,931 --> 01:22:27,551
+Bir de şurada şöyle bir şey var.
+
+445
+01:22:28,151 --> 01:22:30,931
+Yani kendisi üzerinden mesela bir rotasyon yapacaksın.
+
+446
+01:22:31,071 --> 01:22:32,831
+Üç birim bunu rotate et.
+
+447
+01:22:33,711 --> 01:22:35,252
+Çevir gibi düşünülebilir.
+
+448
+01:22:36,491 --> 01:22:39,252
+Bununla alakalı mesela bunu nasıl rotate ederiz?
+
+449
+01:22:39,571 --> 01:22:42,731
+Yukarıdaki yazılan fonksiyonları da kullanarak.
+
+450
+01:22:42,731 --> 01:22:44,972
+örneğe devam etmiş.
+
+451
+01:22:45,631 --> 01:22:46,791
+Mesela bubble sort.
+
+452
+01:22:47,571 --> 01:22:51,631
+Şimdi biz bubble sort'u mesela integer için kullanıyoruz da.
+
+453
+01:22:52,371 --> 01:22:56,511
+Bubble sort'un integer için değil, işte karakter için olanı da olur.
+
+454
+01:22:56,731 --> 01:22:59,051
+Ne bileyim bir structure dizisi için olanı da olur.
+
+455
+01:22:59,692 --> 01:23:01,332
+Objektif sort yapıyoruz.
+
+456
+01:23:01,332 --> 01:23:05,452
+İşte algoritma burada bubble sort'u adım adım anlatıyor.
+
+457
+01:23:06,412 --> 01:23:07,711
+Bunu geçelim.
+
+458
+01:23:09,231 --> 01:23:11,231
+Diyor ki integer bubble sort.
+
+459
+01:23:11,231 --> 01:23:16,871
+Yani bu iş için int bubble sort, bilmem ne bubble sort, o bubble sort, bu bubble sort yazmayacağız.
+
+460
+01:23:18,651 --> 01:23:20,851
+Jenerik olan bir bubble sort olacak.
+
+461
+01:23:20,972 --> 01:23:25,452
+Mesela ascending ve descending'i mesela bizim size yaptığımız örneği burada göstermiş.
+
+462
+01:23:27,851 --> 01:23:32,551
+Acaba demiş ki, gerçi şu swap ile alakalı şeyler bunu geçelim.
+
+463
+01:23:34,371 --> 01:23:36,631
+Bu zaten bizim yaptığımız örneğin aynısı arkadaşlar.
+
+464
+01:23:36,631 --> 01:23:40,491
+Yani artan veya azalan sıralama şeklinde burayı swap ettiriyor.
+
+465
+01:23:40,491 --> 01:24:01,511
+ve şu şeyde kullandığı swap bizim jenerik swap bakın hangi algoritmaya göre swap yapacaksa şey yapacak ama bakın hala burası integer'a dayalı bunu biraz önceki şekilde biraz daha geniştirdiğinizde işte structure üzerinde bir bubble sort yani jenerik bir bubble sort tam anlamıyla yapılabiliyor.
+
+466
+01:24:01,511 --> 01:24:18,091
+şunları geçelim arkadaşlar zaten şey bu quicksortu bir örnek olarak sizlere ben anlattım veya scan directory mesela bulunduğunuz directory de bu hazır fonksiyonları bunları yani çok lazım değil şu an tüm bize
+
+467
+01:24:18,931 --> 01:24:40,391
+Bunu sağlayabiliyoruz. Son olarak bir de şuna bakalım. Bunun devamı var. Bu integer bubble sortu olayın biraz daha ötesine girip daha böyle jenerik yapabilirsek diye jenerik bir bubble sort haline getirelim ve bunu bir kütüphane yapalım.
+
+468
+01:24:40,391 --> 01:25:10,271
+İşte bubble sort nokta haş kütüphanemiz olsun her türden şeyi ne yapsın sort edebilsin veriyi sıralayabilsin diye baktığımızda o zaman nasıl bir şey yapılıyor diyor ki bu bir bubble sort olacak cennelik bubble sort gerçi burada integer dizisine çevirmiş ama hani devamını burada hani aynı mantıkla anlatıyor ama bu gelen şey artık integer değil void pointer olacak void pointer olacağı için benim burada kaç tane element aldığım
+
+469
+01:25:10,272 --> 01:25:21,891
+dışında bu elementlerin her birinin byte cinsinden size'ını alıyor. Yani n tane elementin var, bu n elementin her bir tanesinin byte'ı. Integer ise integer, şey ise şey.
+
+470
+01:25:23,732 --> 01:25:40,171
+Karşılaştırmayı da, comparison da nihayet olarak şey üzerinden yapıyoruz. Sonuçta bir şeyi bir şeyle karşılaştırırken hani kişilerin kilolarını karşılaştırırsın, ne bileyim boylarını karşılaştırırsın, obje olarak düşündüğünde ne bileyim bir polinomun derecesini karşılaştırırsın.
+
+471
+01:25:40,271 --> 01:26:01,231
+Yine bu comparison fonksiyonunu mesela şöyle bir şey yapabiliriz ama bakın şuraya ne oldu? Üçüncü bir parametre ekledik ve bunun üzerinden gidiyor ve artık şu kalabalıktan bizi kurtaracak aşamaya doğru getiriyor generic function. Şöyle devam edelim. En son yazılmış halini göreceğiz.
+
+472
+01:26:01,231 --> 01:26:08,451
+bunu aldık, bunu aldık diyor ki yukarıdaki swap fonksiyonunu çağır normal bir şey yapabilir.
+
+473
+01:26:08,551 --> 01:26:14,131
+Swap fonksiyonunu çağırırken de şuna göre şu comparison fonksiyonu ascending olsun, descending olsun.
+
+474
+01:26:15,411 --> 01:26:18,851
+Eğer ascending olduysa tamam değilse hani devam edecek.
+
+475
+01:26:19,411 --> 01:26:20,871
+Bakın burada bir detay daha vereyim.
+
+476
+01:26:22,971 --> 01:26:25,011
+Normalde bubble sort algoritması arkadaşlar.
+
+477
+01:26:25,011 --> 01:26:31,211
+Biraz önce şurada detayı vardı da yukarıda.
+
+478
+01:26:31,211 --> 01:26:32,951
+Mesela şöyle bir dizi düşünelim.
+
+479
+01:26:33,131 --> 01:26:40,511
+2, 5, 4, 6, 7.
+
+480
+01:26:42,231 --> 01:26:51,031
+Bu diziyi siz sıralamak istediğinizde bir defa for döngüsü çevirseniz yeterli olur mu?
+
+481
+01:26:55,315 --> 01:27:05,255
+Olmaz. Nasıl olmaz? Sadece bu diziyi, bu örnekle ama. Evet, 4 ile 5'in yeri de isteye ediyor.
+
+482
+01:27:06,156 --> 01:27:15,935
+He, yani ama şöyle, tabii bütün bir diziyi check edeceğiz önce. Arkadaşlar, bir saniye, ufak bir mesaj var da hemen.
+
+483
+01:27:31,283 --> 01:27:39,323
+Bu diziyi çek edeceğiz. 2 ile 5'e bakacağız. Sırası bozulmuş mu bozulmamış. 5 ile 4'e bakacağız. Sırası bozulmuş. O zaman ne olacak? 2, 4, 5 olacak.
+
+484
+01:27:39,483 --> 01:27:45,043
+İşte 5 ile 6'ya bakacağız. Sıra fısı bozulmuş mu bozulmamış. 6 ile 7'ye bakacağız. Bozulmuş mu bozulmamış.
+
+485
+01:27:45,543 --> 01:27:54,283
+Bakın bu Bubble Store algoritmasında şöyle bir flag değişken kullanılır. Bir iterasyon boyunca. Bu bir iterasyon boyunca ne demek?
+
+486
+01:27:54,283 --> 01:28:00,963
+Dizinin başından başladığının en ince elemanına kadar gidiyorsun. Hiçbir kez swap yapmadıysan bu dizi zaten sıralı halledir.
+
+487
+01:28:01,283 --> 01:28:29,824
+Bakın şu an mesela bir tane swap yaptık ya bu diziyi baştan tekrar bir check ediyoruz. Yani mesela 2 ile 5'e baktık, 5 ile 4'e baktık, yer değiştirdik, işte 5 ile 6'ya baktık, yer değiştirdik, 6 ile 7'ye baktık. Sonra bir iterasyon daha gidiyoruz. Hani bir defa swap yaptığımız için 2 ile 4'e baktık, bir şey yok. 4'e baktık, 4-5'e baktık, bir şey yok. 5-6'ya baktık, bir şey yok. 6-7'ye baktık, bir şey yok. Şu swap değişkeni yani bu bulim değişken ilk başta false oluyor. Yani false değerde.
+
+488
+01:28:29,823 --> 01:28:44,144
+hiç gezinti boyunca swap işlemi yapmadığımız için artık ne oluyor? Bu dizi zaten sıralı hale geliyor. Dolayısıyla n kareden daha az defa bir karşılaştırma yaparak bu algoritmayı sonlandırabilmek mümkün.
+
+489
+01:28:44,723 --> 01:28:54,083
+Sadece burada hani biz bul değişken kullanmıyoruz. Hani bunun yerine bir int veya başka bir şey kullanılabilir. Ama böyle bir yapıyla bubble sortu mesela şu algoritma kısmını söylüyorum.
+
+490
+01:28:54,083 --> 01:29:10,503
+önce dışta bir döngü mesela buna swap it dediğimiz bir şey olacak mesela diyor ki hiç swap etmediysen return ya ben bunun yerine şunu yaparım hani böyle return kullanmak yerine derim ki swap it
+
+491
+01:29:14,100 --> 01:29:22,659
+ki bu dizi en az bir defa bir check yapılacak. Swap it'ı da başta değişken olarak bir false değişken ile başlatırım.
+
+492
+01:29:23,440 --> 01:29:33,539
+Derim ki önce karşılaştır. Eğer swap it true olduysa tamam bu iş bitsin. Bir defa true olması tekrardan dönsün diyebiliriz.
+
+493
+01:29:33,539 --> 01:29:42,079
+Evet, bakın bubble sortu jenerik hale şunun sayesinde getirmeye başladık. Zaten swap fonksiyonumuz jenerik olmuştu.
+
+494
+01:29:42,079 --> 01:29:50,059
+Bunun sayesinde array'in i'inci elemanıyla i-1. elemanını da swap yapabiliyoruz.
+
+495
+01:29:51,140 --> 01:29:52,879
+Sadece şuna bakmamız gerekiyor.
+
+496
+01:29:55,579 --> 01:30:02,859
+Fonksiyonun aldığı, swap edilecek parametrelerin size'ı burada birazcık sıkıntılı.
+
+497
+01:30:02,859 --> 01:30:04,239
+Onun için şöyle bir şey yapıyoruz.
+
+498
+01:30:04,239 --> 01:30:15,719
+Mevcut elemanımız ve current elemanımız array'in işte i-1. elemanı olarak gelip byte cinsinden bir karakter cinsine aktarılıyor şurada.
+
+499
+01:30:16,399 --> 01:30:24,119
+Şu da diğer i. eleman i ve i-1. eleman üzerinde alırsak. Bunları void pointer'da tutuyoruz.
+
+500
+01:30:24,119 --> 01:30:28,640
+Bu tuttuğumuz void pointer elementleri swap fonksiyonuna gönderiyoruz.
+
+501
+01:30:28,640 --> 01:30:34,239
+İşte bakın bu şekilde tam anlamına bir jenerik gelmiş bir şey buluyoruz.
+
+502
+01:30:34,540 --> 01:30:42,659
+Sonra da yapacağımız şey şu, bulunduğumuz iki element arasındaki komparajını yaptığımızdaki şurayı da jenerik hale getirmek lazım.
+
+503
+01:30:42,659 --> 01:30:47,600
+Bunu da tamamlarsak zaten her anlamıyla burası bubble sort fonksiyonu şey çalışıyor.
+
+504
+01:30:48,140 --> 01:30:53,500
+Şimdi benim size derste gösterdiğim bu quick sort fonksiyonu da kendi içerisinde böyle jeneriktir.
+
+505
+01:30:53,500 --> 01:31:11,320
+Siz bunun içerisine integer gönderirseniz integer'a göre, karakter gönderirseniz karaktere göre şey yapar. Ama yüksek seviyeli programlama dilleri kullananlar varsa arkadaşlar aranızda burada işte Java'da C, Sharp'da falan orada zaten type bilgisini doğrudan elde edebiliyorsunuz.
+
+506
+01:31:11,319 --> 01:31:34,639
+mesela sizde şuraya bir değişken geliyorsa diyorsunuz ki get type diyorsunuz işte bu bir integer. O type'a göre işlem yapmak kolay. Ama bakın C'de type bilgisini elde etmek mümkün değil. Size of bilgisi var ancak size değeri var. Bu size'ı alıp karakter pointerı, karakter dizisi türünden üzerinde işlem yapmak mümkün olacak.
+
+507
+01:31:34,639 --> 01:31:58,239
+Şimdi burada da bunun daha detayını söylemişti. Şeyle de tabii devam ettiriyor. İşte diyor ki bu descending ve ascending fonksiyonlarını da değiştirmemiz lazım. Çünkü artık burası void pointer'lar alacak. Bunların da hani nasıl olacağını devam ettirmiş. Daha fazlasına gerek yok herhalde. Olayın özeti yani en söylediğimiz şeyler yeterlidir diye düşünüyorum.
+
+508
+01:31:58,239 --> 01:32:24,320
+Bunu ekstradan anlattım. Sadece void pointer'ların, fonksiyon pointer'larının ve ceneriklerin nasıl olacağına dair güzel örnekler. Yani bununla alakalı bu Stanford'ın bir CS dersi var. Hangisiydi bu? CS 107. İşte buradaki linklerden falan girip daha detaylarına bakabilirsiniz. İleride bu tarz şeyler lazım olur diğer sınıflarınızda. Evet benim anlatacaklarım bu kadar arkadaşlar. Sizin bir sorunuz var mı?
+
+509
+01:32:24,320 --> 01:32:31,159
+Hürden bu konuyu ekstra diyorsunuz ya yani finalde çıkmaz anlamında mı?
+
+510
+01:32:31,600 --> 01:32:39,159
+Ekstradan kastım şu sonuçta void pointer'ın ondan sonra fonksiyon pointer'ın bir uygulaması mı uygulaması
+
+511
+01:32:39,159 --> 01:32:46,499
+ama biraz böyle manipülatif bir manipülatif demeyelim de modifiye yaparak belli şeyleri anlatıyorum.
+
+512
+01:32:46,499 --> 01:33:07,719
+Ben gidip de kimseye bu jenerik olarak bir bubble sort fonksiyonunu yazın. Zaten test olacağı için öyle bir şey yazdırmamız mümkün değil. O tarz bir soru sormaz. Ama bu pointerların birbirine kest edilmesi, ondan sonra size of'larla beraber kullanılmasıyla alakalı güzel ekran çıksı soruları sorabiliriz.
+
+513
+01:33:08,692 --> 01:33:31,692
+Çünkü yeni bir konu değil, mevcut konuların bir uygulaması gibi düşünün. Size anlattığımız konuların bir uygulaması gibi düşünün. Burada mesela iki şeyi swap ettirmişiz. Öyle bir veri vereceğiz ki, öyle bir fonksiyona gidecek ki o fonksiyon void pointer'lar alacak, onların size'ları üzerinden işlem yapacak gibi gibi düşünün. Bu tarz şeye de bakmanızda fayda var. O anlamda sınavda çıkabilir tabii ki.
+
+514
+01:33:31,692 --> 01:33:38,011
+Peki hala başka sorumuz var mı?
+
+515
+01:33:39,811 --> 01:33:49,831
+Evet dönemi bu şekilde tamamlamış olduk arkadaşlar. Haftaya biliyorsunuz işte bayram tatili sürenin nedeniyle bir boşluğumuz var. Ondan sonraki hafta sınavlarımız başlıyor.
+
+516
+01:33:49,831 --> 01:34:18,011
+Sınav tarihi bölüm sayfasında ilan edilmiş. Oradan takip edersiniz. Bazen güncellemeler olabiliyor çakışmalardan dolayı, sınıf değişikliklerinden dolayı. Son anda sınavdan bir gün önce tekrar yerlerinizi kontrol edin ki bir hata olmasın. Size söylenen sınıflarda lütfen sınava girin. Bir başka hocaya kağıdınız giderse mağdur olan siz oluyorsunuz. Önce sınava girmedi oluyor.
+
+517
+01:34:18,011 --> 01:34:37,132
+özellikle bu final döneminde çok sıkıntılı. Sınava girmediği düzeltmek kolay bir şey değil. Vize döneminde hızlıca notlar değiştirilebiliyor ama final döneminde hakikaten zor. Onun için hangi sınıfta sınava gireceğine dair biz size duyuru yapacağız. O duyurları azami bir şekilde dikkate alın.
+
+518
+01:34:37,131 --> 01:35:05,111
+Şimdiden sınavlarınızda başarılar dilerim. Final dönemimizde başarılar dilerim. Gelecek dönemlerde artık karşılaşır mıyız bilemiyorum. Bazı derslerimiz beraber olacak ama umarım hepiniz için faydalı bir dönem olmuştur. Ben açıkçası bu derse tekrar geri dönmüş olmakla beraber keyif aldım. Güzel, faydalı şeyler oldu. Umarım sizler adına da bu fayda olmuştur diyelim. Kendinize iyi bakın, başarılar dilerim arkadaşlar.
+
+519
+01:35:05,111 --> 01:35:06,731
+Sağ olun hocam, iyi günler.

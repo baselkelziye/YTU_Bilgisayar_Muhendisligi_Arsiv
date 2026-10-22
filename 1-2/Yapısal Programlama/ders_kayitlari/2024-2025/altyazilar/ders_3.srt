@@ -1,0 +1,3443 @@
+1
+00:04:52,052 --> 00:04:56,071
+Arkadaşlar merhabalar. Sesim geliyor mu acaba?
+
+2
+00:05:59,475 --> 00:06:07,475
+Evet, derste şu şeyde kaldık. Type definition'da.
+
+3
+00:06:11,987 --> 00:06:13,747
+İsmail yanlış bir şey bastın herhalde.
+
+4
+00:06:31,603 --> 00:06:39,143
+Evet, enumeration void data type gördük. Şimdi type theft kısmı kalmıştı. Buradan alıp konumuza devam edeceğiz.
+
+5
+00:06:42,223 --> 00:06:44,024
+Gerçi daha programımız gelmemiş.
+
+6
+00:06:52,531 --> 00:06:55,331
+Burada yapay zekadan da arkadaşlar var değil mi arkadaşlar?
+
+7
+00:07:04,980 --> 00:07:08,419
+Yapay Zeka bölümünden arkadaşlar var mı?
+
+8
+00:07:21,427 --> 00:07:26,427
+Peki, başlıyorum hemen.
+
+9
+00:07:35,956 --> 00:07:37,956
+.
+
+10
+00:07:55,987 --> 00:08:19,307
+Evet. Şimdi bu type definition çok basit bir şey. Herhangi bir C ifadesini kendi ifadenizle yeniden isimlendirmede kullanıyorsunuz. Aslında yine bu da bir ön işlemci, substitution diyeceğim dediğimiz şeylerden. Nasıl ki biz işte define kelimesinde şöyle define yazdığımızda oluyor ve oluyor.
+
+11
+00:08:31,923 --> 00:08:38,183
+Define yazdığımızda bu değerleme aşamasında şuraya verdiğimiz şey işte max deyip 10 diyorduk.
+
+12
+00:08:39,103 --> 00:08:42,344
+Eğer nerede max görürse onun yerine 10 yazıyordu.
+
+13
+00:08:43,003 --> 00:08:44,264
+Bu da şuna karşılık geliyor.
+
+14
+00:08:44,563 --> 00:08:46,403
+Bir tane C ifadesi veriyoruz.
+
+15
+00:08:47,423 --> 00:08:48,883
+Long integer dediğim şey.
+
+16
+00:08:49,483 --> 00:08:54,104
+Diyor ki bu kod içerisinde int 32 olarak geçecek ve burada noktalı bir gir kullanıyoruz.
+
+17
+00:08:54,863 --> 00:08:57,583
+TypeTest tam bir ön işlemci gibi değil arkadaşlar.
+
+18
+00:08:57,783 --> 00:08:59,123
+Onun için diyez ile başlamıyor.
+
+19
+00:08:59,123 --> 00:09:01,423
+Ve long int ifademiz var.
+
+20
+00:09:01,923 --> 00:09:03,803
+bu j olsun demiş.
+
+21
+00:09:04,824 --> 00:09:06,264
+Bu şekilde bir değişken
+
+22
+00:09:06,264 --> 00:09:08,063
+tanımlamak yerine isterseniz şöyle
+
+23
+00:09:08,063 --> 00:09:10,383
+değişken tanımlayabiliyorsunuz.
+
+24
+00:09:11,184 --> 00:09:12,083
+Onun için kullanımı
+
+25
+00:09:12,083 --> 00:09:13,304
+gayet kolay bir şey.
+
+26
+00:09:14,863 --> 00:09:15,523
+Böyle yapalım.
+
+27
+00:09:16,804 --> 00:09:18,144
+Ben mesela diyorum ki
+
+28
+00:09:18,144 --> 00:09:18,723
+define
+
+29
+00:09:18,723 --> 00:09:21,903
+integer ne olsun tam
+
+30
+00:09:21,903 --> 00:09:23,423
+sayı olsun diyorum.
+
+31
+00:09:24,543 --> 00:09:25,923
+Daha sonra bu tam sayı
+
+32
+00:09:25,923 --> 00:09:26,843
+ifadesini
+
+33
+00:09:26,843 --> 00:09:30,383
+aşağıda kullanırken
+
+34
+00:09:30,383 --> 00:09:31,423
+tam sayı
+
+35
+00:09:31,423 --> 00:09:33,383
+X, Y şeklinde
+
+36
+00:09:33,383 --> 00:09:34,164
+kullanıp
+
+37
+00:09:34,164 --> 00:09:36,784
+programı derlediğimde
+
+38
+00:09:36,784 --> 00:09:40,644
+hafta 3 diyelim.
+
+39
+00:10:30,388 --> 00:10:34,868
+böyle bir tek olan bir tek olan bir tek.
+
+40
+00:10:38,227 --> 00:10:42,588
+Bir dakika, niye define to your type definition? Duyar mısınız arkadaşlar?
+
+41
+00:10:43,867 --> 00:10:52,467
+Define your type definition. Type definition integration. Sınıfı mıyız?
+
+42
+00:10:57,748 --> 00:11:25,627
+olabilir. Burada da parantez açık kopartlamıştır. Evet, kullanılma gayet basit. Şimdi biz bunları nerede kullanacağız? Structure'larda çok kullanacağız. Şimdi structure tanımlarına gelince yine konuşuyoruz da structure arkadaşlar şu şekilde tanımlanıyor. Structure kendi mesela polinom tarzında veya ne bileyim karmaşık sayı tarzında kendi veriklerimizi tasarlamada kullandığımız bir şey. Mesela complex number üretelim.
+
+43
+00:11:25,627 --> 00:11:33,407
+kompleks number. Bu bir şey, bizim kendisimiz. Kompleks sayıların ne şeyi vardır?
+
+44
+00:11:33,407 --> 00:11:45,727
+Float bir real partı vardır. Bir de float imaginary partı vardır. Şimdi biz bu kompleks number veri türünden değişken tanımlarken şunu yapacağız.
+
+45
+00:11:46,407 --> 00:11:54,887
+Kompleks number, struct, kompleks number işte C1 diyelim. Her ne zamanki bu ifadeyi kullanırsak,
+
+46
+00:11:54,887 --> 00:11:58,347
+Önüne struct kelimesini yazmamız gerekiyor. Bu birazcık uzun bir şey.
+
+47
+00:11:59,127 --> 00:12:02,868
+Ve program yazmayı güçleştiriyor. Mesela bir fonksiyon yazalım.
+
+48
+00:12:02,868 --> 00:12:10,347
+İşte void full fonksiyonu yazalım. Ve bu full fonksiyonuna C1 sayısını göndermek istiyoruz.
+
+49
+00:12:11,027 --> 00:12:15,188
+C1'i buraya gönderdiysem, C1'in türü neyse bunu da buraya yazman lazım.
+
+50
+00:12:15,367 --> 00:12:21,468
+Onun için buraya tekrar gelip structure, struct, complex number,
+
+51
+00:12:21,468 --> 00:12:45,087
+C diye bir şey yazacağız ki ancak böyle olacak. Bu olmasın diye bu tarz şeylerde, bu tarz tanımlamalarda şunu yapıyoruz. Bunun başına bir typedef. Burada C ile alakalı tanımlama nereden nereye başlıyor, nereden bittiyor, ne dersiniz?
+
+52
+00:12:45,087 --> 00:12:51,147
+TypeDap'in kullanımında C mesela TypeDap integer tam sayıdır.
+
+53
+00:12:51,827 --> 00:12:53,427
+Boşluğu nereye koymam lazım?
+
+54
+00:12:58,676 --> 00:13:02,535
+Şundan sonra bir boşluk koyup şunu tamamlamıştık. Burada boşluğu nereye koyacağız?
+
+55
+00:13:07,668 --> 00:13:09,668
+var mı böyle bir şey olan?
+
+56
+00:13:17,043 --> 00:13:42,983
+yok mu hiç öneri sorum arkadaşlar? Şimdi C ifadesi olarak tanımladığım şey şuradan başlıyor. Bu tanımın ifadesi bakın şuraya kadar geliyor. Yani noktalı bir yere kadar geliyor. O zaman diyeceğim ki ben örneğin kompleks diyeceğim buraya type tap'in içinde. Artık bu şekilde bir şey yazmak yerine kompleks deyip C2 diyelim. Şunun yerine şöyle daha kısa bir şekilde yazabileceğim.
+
+57
+00:13:42,983 --> 00:13:47,203
+veya buraya da ikinci olarak mesela bir parametre daha bana alalım kompleks.
+
+58
+00:13:50,283 --> 00:13:53,643
+C2 diyelim buna da. Şuraya da C2 değerini gönderiyoruz.
+
+59
+00:13:54,643 --> 00:13:55,923
+Bu şekilde yazacağız.
+
+60
+00:13:56,383 --> 00:14:01,963
+Bunun prototipini alırken burada şu detaya dikkat etmemiz gerekiyor.
+
+61
+00:14:02,823 --> 00:14:03,904
+Mesela bunu değerlediğimde.
+
+62
+00:14:09,043 --> 00:14:14,203
+ne incompletmiş? Ha gerçi bunlar warning arkadaşlar, herhangi bir şey yok.
+
+63
+00:14:15,203 --> 00:14:18,623
+Programın çalışmasını engelleyen bir şey yok. Bu sadece warninglerimiz o.
+
+64
+00:14:19,683 --> 00:14:22,143
+Bunun içerisinde bir şeyler yazarız, o sıkıntı değil.
+
+65
+00:14:22,884 --> 00:14:24,323
+Sıkıda number diyeceğiz.
+
+66
+00:14:26,003 --> 00:14:31,144
+Şimdi, bunun prototipini yazarken, dikkat etmemiz gereken şey şu.
+
+67
+00:14:31,843 --> 00:14:33,823
+Ben bu prototipi şuraya yazabilirim.
+
+68
+00:14:36,823 --> 00:14:37,943
+Sizce olur mu?
+
+69
+00:14:39,043 --> 00:14:39,724
+Buye asak.
+
+70
+00:14:49,203 --> 00:15:15,403
+Olmaz. Neden olmaz? Çünkü daha structure değişkenimiz tanımamıyız. Tamam. Demek ki bunu ne yapacağız arkadaşlar? Önce structure'ı tanımlayacağız. Ondan sonra bu şeyi yapacağız. Şimdi eğer type test yapmamış olsaydım ne yapabilirim ki? Sadece işte şu structure değişkeniyle alakalı, kompleks number değişkeniyle alakalı şu tarz şey olacak. Type test'i yaptığım için ikisini de yazabilirim.
+
+71
+00:15:15,403 --> 00:15:33,803
+Şimdi typedef'i bile burada şu amaçla kullanabiliriz. İkinci versiyonu da söyleyelim. Ben diyebilirim ki typedef, struct, şu kompleks number isimli değişkenim, number isimli değişkenim, tanımlamam.
+
+72
+00:15:33,803 --> 00:15:38,323
+ne olsun bunun yerine bir boşluk bırakalım.
+
+73
+00:15:39,063 --> 00:15:41,083
+İşte kompleks gmp.
+
+74
+00:15:42,143 --> 00:15:43,363
+Şöyle diyelim.
+
+75
+00:15:44,384 --> 00:15:45,903
+Bunu da şu şekilde yazayım.
+
+76
+00:15:47,543 --> 00:15:48,503
+Kompleks diyelim.
+
+77
+00:15:50,103 --> 00:15:57,763
+Önce ifadeyi structure olarak yani şu şekilde tanımlayıp şöyle yapmadan, typedef kullanmadan böyle yaparsınız.
+
+78
+00:15:58,483 --> 00:16:01,863
+Daha sonra isterseniz dersiniz ki bu şöyle de yazılabilir.
+
+79
+00:16:01,863 --> 00:16:28,623
+tabi o zaman hatta büyük harfle yazalım. İçisi de aynı olduğu görürsün. Biraz önce yaptığımın aynısı ama en çok en yaygın kullanılan site web'i şurada kullanmaktır. Geri kalan şu tarz kullanımları çok fazla tercih etmiyoruz. Yani kimse size C dilini Türkçeleştirin diye bir şey yapmanızı beklemez. Ama bu tarz bir structure tanımlamalarımızda böyle bir araçla ne yapabiliyorsunuz?
+
+80
+00:16:28,623 --> 00:16:32,863
+daha kısa, daha mantıklı görünen şeyler yapabiliyoruz.
+
+81
+00:16:35,604 --> 00:16:41,263
+Şimdi gelelim bu kısımları anlattık ama birazcık tekrar tutmaniyetinde hızlı da olsa anlatacağım.
+
+82
+00:16:41,523 --> 00:16:44,863
+Bizim expressionlarımız var, yani ifadelerimiz var.
+
+83
+00:16:44,863 --> 00:16:55,003
+Bunlar kendi içinde sabit ifadeler, bütünsel ifadeler, floating point ifadeler ve pointer içeren ifadeler diye dört alan gruba ayrılabilir.
+
+84
+00:16:55,003 --> 00:17:01,424
+sabit ifadelerimiz içerisinde sabit değerlerin olduğu, işte integer, floating point numberların olduğu şeyler.
+
+85
+00:17:02,064 --> 00:17:05,003
+Bakın şu durduk yere bir 5 yazmanız bir ifadedir.
+
+86
+00:17:05,703 --> 00:17:10,503
+Kodun içerisinde istediğimiz yerde girip şöyle bir şey yapabilirsiniz.
+
+87
+00:17:10,503 --> 00:17:12,623
+İşte 5 dersiniz noktaları mı dersiniz?
+
+88
+00:17:14,023 --> 00:17:15,644
+Ve buraya bir 5 diye bir döndürmüş.
+
+89
+00:17:18,064 --> 00:17:19,863
+Tabii şu an niye hata veriyor?
+
+90
+00:17:20,144 --> 00:17:21,703
+Bu kompleksi ne yapacağız?
+
+91
+00:17:21,843 --> 00:17:22,783
+Önce şuraya alacağız.
+
+92
+00:17:22,784 --> 00:17:38,823
+Ondan sonra bu hatayı aldık. Bakın şuradaki şu beş ifadesi herhangi bir sıkıntı oluşturan bir şey değil. Şunları zaten konuştuk arkadaşlar. Burada girdi olarak veritik dönüşümü nasıl olurdu bunlardan bahsettim. Şuranın sonucu kaç olur?
+
+93
+00:17:44,500 --> 00:17:50,500
+Nasıl bir yol izleriz? Önce hangi işlem? Şartma mı olur? Önce bölme mi olur?
+
+94
+00:17:54,867 --> 00:17:56,488
+Önce çarpma sonra bölme.
+
+95
+00:17:57,487 --> 00:17:58,567
+En sonunda da toplama.
+
+96
+00:17:59,887 --> 00:18:01,027
+Float olduğu için
+
+97
+00:18:01,027 --> 00:18:02,848
+3.0'da
+
+98
+00:18:02,848 --> 00:18:04,987
+oradaki değeri tramvize float olarak verecek.
+
+99
+00:18:05,087 --> 00:18:06,507
+Interagir'de topladığımız zaman
+
+100
+00:18:06,507 --> 00:18:07,807
+float'lu bir değer verecek.
+
+101
+00:18:08,387 --> 00:18:08,607
+Güzel.
+
+102
+00:18:09,748 --> 00:18:11,968
+Şuranın sonucunu kaç olacak o zaman?
+
+103
+00:18:12,847 --> 00:18:14,167
+8 bölümüş.
+
+104
+00:18:15,687 --> 00:18:15,947
+Yani.
+
+105
+00:18:17,147 --> 00:18:17,427
+20.
+
+106
+00:18:18,607 --> 00:18:20,767
+26.0 değil mi?
+
+107
+00:18:21,847 --> 00:18:23,107
+26 olması lazım.
+
+108
+00:18:23,107 --> 00:18:28,527
+Şununla da 5'i topladığınızda genel sonucunuz 31.0 olacak.
+
+109
+00:18:30,068 --> 00:18:31,927
+Bütünsel ifadelerimiz var.
+
+110
+00:18:32,667 --> 00:18:35,327
+Aslında bir değişken kullanarak yapılan şeyler.
+
+111
+00:18:35,448 --> 00:18:36,987
+Bakın bunların hepsi legal işlemler.
+
+112
+00:18:37,568 --> 00:18:40,027
+Şu durduk yere bir değişken ismini bir yerde yazabilirsiniz.
+
+113
+00:18:40,708 --> 00:18:42,588
+İki değişken arasında zaten şunu yapabilirsiniz.
+
+114
+00:18:43,247 --> 00:18:45,327
+Eğer ki veriler birbirine dönüşebiliyorsa
+
+115
+00:18:45,327 --> 00:18:48,707
+illaki aynı türleri yazmak zorunda değilsiniz.
+
+116
+00:18:48,787 --> 00:18:49,527
+Birbiriyle şey yapabilirsiniz.
+
+117
+00:18:49,607 --> 00:18:50,548
+Mesela şu çalışır mı?
+
+118
+00:18:50,787 --> 00:18:51,228
+Çalışır.
+
+119
+00:18:51,228 --> 00:18:54,347
+Çünkü ben size söylemiştim bu karakterin bir karşılığı vardı.
+
+120
+00:18:54,448 --> 00:18:55,928
+Bu 97'ye karşılık geliyor.
+
+121
+00:18:56,588 --> 00:19:00,528
+K değişkenin içerisindeki değer neyse ondan 97 elde edersiniz.
+
+122
+00:19:00,628 --> 00:19:04,607
+Aslında kar dediğim şey 8 bitlik yani bir başlık bir integer.
+
+123
+00:19:05,247 --> 00:19:08,347
+Tam sayı sıfırdan 255'e kadar değerler alan bir şey.
+
+124
+00:19:08,488 --> 00:19:13,687
+Sadece onu bir sembole atadığımız için işte kullandığımız semboler atadığımız için böyle şeyler dönecek.
+
+125
+00:19:14,367 --> 00:19:16,128
+Şurada elde edeceğimiz sonuç ne olur?
+
+126
+00:19:16,647 --> 00:19:19,168
+Önce tip dönüşümü gerçekleşir sonra toplama yaparız.
+
+127
+00:19:19,168 --> 00:19:20,408
+Böyle bir sonuç elde ediyoruz.
+
+128
+00:19:21,107 --> 00:19:35,028
+Floating point expression'larda dikkat etmemiz gereken şey eğer ki operatörün solundaki ve sağındaki şeylerden en az bir tanesi floating point sayıysa ifade kendi içerisinde tamamen floating point'a dönüşüyordu.
+
+129
+00:19:35,327 --> 00:19:42,067
+Ama mesela şurada olduğu gibi bir şey varsa burada toplama mı önce yapılacak, tip dönüşüm mü önce yapılacak?
+
+130
+00:19:42,867 --> 00:19:45,028
+Bunun şeyine bakmamız lazım.
+
+131
+00:19:45,168 --> 00:19:47,988
+Tip dönüşüm type testing her zaman daha önce yapılıyordu.
+
+132
+00:19:47,987 --> 00:19:50,547
+o zaman şurası kendi içerisinde 4.0
+
+133
+00:19:50,547 --> 00:19:52,447
+olacak. 3'leri toplayınca
+
+134
+00:19:52,447 --> 00:19:53,947
+7.0 elde edeceksiniz.
+
+135
+00:19:54,587 --> 00:19:56,327
+Şimdi şunlar da pointer expressionları.
+
+136
+00:19:56,947 --> 00:19:58,387
+Eğer sizin p gibi bir
+
+137
+00:19:58,387 --> 00:20:00,107
+pointer'ınız varsa
+
+138
+00:20:00,107 --> 00:20:01,747
+bu bir adresi ifade ediyorsa
+
+139
+00:20:01,747 --> 00:20:04,308
+doğrudan bu pointer ifadeyi
+
+140
+00:20:04,308 --> 00:20:06,127
+yazabilirsiniz. Pointer'ın
+
+141
+00:20:06,127 --> 00:20:08,187
+türüne göre p artı 1 dediğimizde
+
+142
+00:20:08,187 --> 00:20:10,327
+burada aslında p artı
+
+143
+00:20:10,327 --> 00:20:12,367
+1 çarpı side of
+
+144
+00:20:12,367 --> 00:20:14,327
+p dediğimiz bir
+
+145
+00:20:14,327 --> 00:20:16,247
+işlem oluyor. İntegre'de
+
+146
+00:20:16,247 --> 00:20:18,147
+Bu 4 olacağı için
+
+147
+00:20:18,147 --> 00:20:20,267
+pardon aslında size of p
+
+148
+00:20:20,267 --> 00:20:21,647
+değil de size of integer diyelim.
+
+149
+00:20:22,547 --> 00:20:24,147
+Bunun tanımlandığı şeye göre
+
+150
+00:20:24,147 --> 00:20:26,147
+p artı 4
+
+151
+00:20:26,147 --> 00:20:28,007
+şeklinde gidecektir. Veya işte
+
+152
+00:20:28,007 --> 00:20:30,027
+şuradaki her bir elemente
+
+153
+00:20:30,027 --> 00:20:31,907
+pointer üzerinden de erişim
+
+154
+00:20:31,907 --> 00:20:32,827
+sağlayabiliyoruz.
+
+155
+00:20:34,847 --> 00:20:36,227
+Şu precedence associative
+
+156
+00:20:36,227 --> 00:20:38,087
+bunları anlattığım için bunları geçiyorum
+
+157
+00:20:38,087 --> 00:20:40,007
+arkadaşlar. Burada da ben size detaylı
+
+158
+00:20:40,007 --> 00:20:42,247
+tablosunu verdim. Bunları
+
+159
+00:20:42,247 --> 00:20:44,247
+geçebiliriz. Virgüle dikkat
+
+160
+00:20:44,247 --> 00:20:45,747
+ederim virgülde neydi?
+
+161
+00:20:46,067 --> 00:20:47,987
+Soldan sağa doğru işlem yapılıyordu.
+
+162
+00:20:48,667 --> 00:20:50,327
+Ama virgüllü
+
+163
+00:20:50,327 --> 00:20:51,607
+bir ifade eğer return
+
+164
+00:20:51,607 --> 00:20:54,167
+return
+
+165
+00:20:54,167 --> 00:20:56,267
+3,4,5
+
+166
+00:20:56,267 --> 00:20:58,367
+döndürürseniz ve bu return'un
+
+167
+00:20:58,367 --> 00:21:00,387
+karşılığını bir yerde alırsanız elde edeceğiniz
+
+168
+00:21:00,387 --> 00:21:01,287
+değer hangisi oluyordu?
+
+169
+00:21:03,547 --> 00:21:04,227
+5 oluyordu.
+
+170
+00:21:04,227 --> 00:21:06,347
+3 malı. Evet 5 olacaktı.
+
+171
+00:21:06,747 --> 00:21:08,307
+Çünkü 3'den
+
+172
+00:21:08,307 --> 00:21:10,187
+sonra önce 3'e bakıyor, sonra 4'e
+
+173
+00:21:10,187 --> 00:21:12,047
+bakıyor, sonra 5'e bakıyor. Soldan sağa doğru
+
+174
+00:21:12,047 --> 00:21:14,067
+bir ifadeyi işlettiğinde buradan geriye
+
+175
+00:21:14,067 --> 00:21:15,948
+dönemde aslında 5 olacak.
+
+176
+00:21:16,827 --> 00:21:17,927
+Yani bunu şöyle de yapabilirsiniz.
+
+177
+00:21:18,067 --> 00:21:20,827
+X eşittir 3,4,5
+
+178
+00:21:20,827 --> 00:21:21,147
+diyelim.
+
+179
+00:21:22,107 --> 00:21:22,767
+Hemen deneyelim.
+
+180
+00:21:25,327 --> 00:21:26,367
+Şunları siliyorum arkadaşlar.
+
+181
+00:21:26,528 --> 00:21:28,327
+Type-tap ile alakalı daha sonra ileride
+
+182
+00:21:28,327 --> 00:21:29,887
+çok uzun uzun konuşacağız zaten.
+
+183
+00:21:29,887 --> 00:21:31,728
+Her örneğimizde Type-tap'ı
+
+184
+00:21:31,728 --> 00:21:33,567
+kullandıysam. Onun için bunları geçelim.
+
+185
+00:21:36,187 --> 00:21:37,948
+X eşittir
+
+186
+00:21:37,948 --> 00:21:40,107
+3,4
+
+187
+00:21:40,107 --> 00:21:40,687
+diyelim.
+
+188
+00:21:52,051 --> 00:21:58,411
+Let's click identify. Ha, burada gerçi doğrudan olmaz. Onun için hani şöyle diyelim o zaman void f diyelim.
+
+189
+00:21:59,091 --> 00:22:00,691
+Void f diyelim. Pardon integer f.
+
+190
+00:22:04,211 --> 00:22:04,771
+Return.
+
+191
+00:22:05,771 --> 00:22:06,811
+2, 3, 4.
+
+192
+00:22:08,331 --> 00:22:09,751
+Şu ya da
+
+193
+00:22:09,751 --> 00:22:11,431
+fonsiyonunu alalım.
+
+194
+00:22:15,059 --> 00:22:17,059
+kompiyonun, prototipinun.
+
+195
+00:22:17,059 --> 00:22:19,059
+Ayrıca.
+
+196
+00:22:21,059 --> 00:22:24,059
+Evet, burada görüldüğü gibi en son elde edilecek şey bu oldu.
+
+197
+00:22:24,059 --> 00:22:28,059
+Ha durduk yere şöyle bir şey yazsak işe olayım, iki birbiri üç birbiri dört.
+
+198
+00:22:28,059 --> 00:22:35,059
+Olur ama hani bu bir anlamı ifade etmeyeceğim.
+
+199
+00:22:35,059 --> 00:22:42,059
+Parantezlerin işlem önceliğinde rolü var, bunu zaten biliyoruz. Binary aritmetik operatörler.
+
+200
+00:22:42,059 --> 00:22:56,080
+Şimdi operatörleri farklı açılardan sınıflandırabiliriz. Yani derecelerine göre sınıflandırabilirsiniz. Başta işte matematiksel operatörler onun ortasında ne bileyim mantıksal operatörler gibi sınıflandırırsınız.
+
+201
+00:22:56,080 --> 00:23:09,999
+Bir sınıflandırma şekli de şu. Unary yani tek operantlı. Binary iki operant. Bir de törneri var.
+
+202
+00:23:12,059 --> 00:23:13,800
+Burada 3 operantlar işte.
+
+203
+00:23:14,059 --> 00:23:17,979
+Turn-el operatörümüz şu soru işareti, Conditioned Operatör, birazdan geldik.
+
+204
+00:23:18,799 --> 00:23:24,100
+Kullandığımız operatörlerin neredeyse %80'i veya %70'i binary operatörler.
+
+205
+00:23:24,100 --> 00:23:25,539
+Ne demek? 2 tane operatör.
+
+206
+00:23:25,619 --> 00:23:31,280
+Kendisinden önce, kendisinden sonra, soluna ve sağına operant alacak operatörlerdir.
+
+207
+00:23:31,360 --> 00:23:39,479
+İşte toplama çıkarma işlemleri, sonra karşılaştırma işlemleri gibi, kaydırma işlemleri gibi şeyler burada karşımıza geliyor.
+
+208
+00:23:39,479 --> 00:23:47,379
+Şimdi bu kalan operatörü dediğimiz reminder operatörlerle alakalı bir detay var.
+
+209
+00:23:47,600 --> 00:23:53,119
+Diğer aritmetik operatörlerin aksine diğer aritmetik operatörlerden kastımız ne toplama.
+
+210
+00:23:53,859 --> 00:23:59,339
+Toplamanın koluna ve sağına integer sayılar da alabilirsiniz, quoting point sayılar da alabilirsiniz.
+
+211
+00:23:59,519 --> 00:24:05,499
+Fakat kalan operatörü yani modül operasyonu sadece integer operantlar alacaktır.
+
+212
+00:24:05,499 --> 00:24:17,539
+Eğer iki operandınızla negatifse, reminder'ınız yani kalanınız negatif olabilir, pozitif olabilir. Sizin bu implementasyonla değişebiliyor.
+
+213
+00:24:17,919 --> 00:24:25,059
+Bu ansız standartında aşağıdaki reminder operatörü ile division operatörü arasında şöyle bir ilişki var.
+
+214
+00:24:25,059 --> 00:24:53,839
+Eğer A ve B tam sayılarımız varsa bu A şuna eşit oluyor. A mod B artı A bölü B çarpı B'ye. Yani A ile B arasındaki ilişki bu şekilde çıkabiliyor. Tabi bu birazcık detaylı bir şey. Ama şunu bilmemiz lazım. 2.0 modulation 6.0. Böyle bir şey yapmıyoruz. Onun yerine 2 mod 6.6 mod 2 neyse. Bunu kullanacağız.
+
+215
+00:24:53,839 --> 00:24:57,780
+Asignment operatörleri de yine binary operatörler.
+
+216
+00:24:58,080 --> 00:24:58,899
+Bunu da geçiyorum.
+
+217
+00:25:02,199 --> 00:25:05,920
+Aritmetik operatörlerde şu ifadenin karşılığı ne olacak?
+
+218
+00:25:06,179 --> 00:25:08,360
+Bunun açılımını, değerini istemiyorum.
+
+219
+00:25:08,440 --> 00:25:09,099
+Açılımı nedir?
+
+220
+00:25:10,299 --> 00:25:12,099
+Bunlardan birini söyleyelim hemen geçelim.
+
+221
+00:25:16,115 --> 00:25:21,415
+Sağ tarafı komple parantez alıyoruz. Ondan sonra M artı deyip parantez ediyoruz.
+
+222
+00:25:22,335 --> 00:25:32,095
+M eşittir. M artı şurayı olduğun gibi parantezde M artı X eksi Y alıyoruz. Peki önce neresi burada hesaplanacak?
+
+223
+00:25:32,835 --> 00:25:35,515
+Parantez içi M ile toplanacak.
+
+224
+00:25:35,515 --> 00:25:41,175
+Yani normalde arka planda demek ki şöyle bir parantez içine bu operatör kendisi alıyor.
+
+225
+00:25:41,175 --> 00:26:05,935
+önce burayı hesaplayacaksınız sonra M'nin mevcut değerini bunun üzerine ekleyip M'nin bir sonraki adımda bir sonraki terazındaki değerini elde etmiş olacaksınız. İşte buradaki değerlere göre bu kaç olacak? N dediğimiz şey 4'müş, X 2.5'müş, Y de 1'miş. O zaman burası bir quoting point sayı olacak. Ne oluyor? 6.5, 5.5 oluyor yanlış değilsem.
+
+226
+00:26:05,935 --> 00:26:14,375
+M dediğimiz şey de 3'müş. 3 artı 5,5, 8,5. Peki M'nin güncel değeri ne olacak arkadaşlar?
+
+227
+00:26:17,336 --> 00:26:19,495
+8,5 mu olacak? 9 mu olacak? Ne olacak?
+
+228
+00:26:27,284 --> 00:26:55,704
+M'yi integer olarak tanımladıysak, bu taraftan elde edilen 8.5 değeri, 8.5 doğru hesapladım değil mi? 3 var. Şurada da 6.5, 1 çıkardım, 8.5. Dolayısıyla şuradan elde edilen şey integer'a dönüştürülecek. Burada da integer yaparken bu virgülden sonraki basamak atılıyordu. Ve oradan M'nin güncel değeri 8 olacaktır. Diğerlerini de buna göre değerlendirebilirsiniz.
+
+229
+00:26:59,316 --> 00:27:17,316
+Post-bix incrementta şöyle bir durum var. Hepsi 1 artırıyor ama post-bix yaparken şunu elce diyorsunuz. Önce yapacağınız değeri elde ediyorsunuz. Daha sonra ikinci aşamada A'nın değerini 1 artırıyorsunuz.
+
+230
+00:27:17,316 --> 00:27:26,816
+Şöyle bir şey yaptığınızda A eşittir B artı artı dediğinizde A'da A'ya mesela sıfır diyelim B'ye de bir diyelim
+
+231
+00:27:26,816 --> 00:27:35,156
+A'da elde edilen değer A bir olacak B'deki elde edeceğimiz değer iki olacaktır
+
+232
+00:27:35,156 --> 00:27:38,055
+Hani A ve B iki olmayacaktır
+
+233
+00:27:38,055 --> 00:27:44,195
+Eğer ise bunu pre inkırması şeklinde düşünürsek A eşittir sıfır B eşittir bir diyelim
+
+234
+00:27:44,195 --> 00:27:47,695
+A eşittir artı artı B dediğimizde
+
+235
+00:27:47,695 --> 00:27:51,735
+şimdi önce A'yı yani şuradaki şeyi arttırıyoruz
+
+236
+00:27:51,735 --> 00:27:53,555
+B'nin değeri 1 olduğu için 2 oluyor
+
+237
+00:27:53,555 --> 00:27:56,815
+bu iki değeri assignment operatörüyle A'ya atanıyor
+
+238
+00:27:56,815 --> 00:27:57,735
+A 2 oluyor
+
+239
+00:27:57,735 --> 00:27:59,935
+B'nin değeri de zaten 2 olmuştu
+
+240
+00:27:59,935 --> 00:28:01,455
+bu şekilde bir farkı var
+
+241
+00:28:01,455 --> 00:28:03,995
+şimdi burada aslında şöyle bir durum var
+
+242
+00:28:03,995 --> 00:28:09,855
+bu artı artı operatörünün çalışmasında şöyle bir şey gerçekleşiyor
+
+243
+00:28:09,856 --> 00:28:14,235
+T gibi geçici bir değişkene B'yi atıyorsunuz.
+
+244
+00:28:15,735 --> 00:28:17,676
+Ondan sonra B'yi bir artırıyoruz.
+
+245
+00:28:17,875 --> 00:28:19,836
+B eşittir, B artı bir oluyor.
+
+246
+00:28:21,496 --> 00:28:25,915
+Ve T'de bu eski değer, B'de de güncel değer oluyor.
+
+247
+00:28:26,955 --> 00:28:31,235
+Eğer ki biz burada B'nin güncel değerine mesela for dönüşünde,
+
+248
+00:28:31,235 --> 00:28:32,316
+işte ne yapıyorsun?
+
+249
+00:28:32,536 --> 00:28:38,756
+İşte x eşittir sıfır diyorsun, x küçüktür on diyorsun, x artı artı diyorsun.
+
+250
+00:28:38,755 --> 00:29:07,795
+Şuraya elde edilen, burada elde edilen değer yine x'in güncel değeri olacak. Ama bu iki aşamalı bir şey olduğu için biraz gecikmeli olacak. Şu biraz daha hızlı yapılan bir şey. Hani por döngülerinde işte artı artı x mi hızlı çalışır, x artı artı mı çalışır? Normalde hani Assemblis seviyesinde bakarsak x artı artı olan daha hızlı çalışır. Ama neticesi aynı oluyor. Ama işte bu tarz bir assignment işlemi yapacaksak, çünkü burada assignment yapmıyoruz.
+
+251
+00:29:07,795 --> 00:29:13,135
+ve Simon's işlemi şurada olduğu gibi yapacaksak şu kullanımlara dikkat etmemiz gerekiyor.
+
+252
+00:29:13,795 --> 00:29:14,375
+Örneğin burada.
+
+253
+00:29:15,375 --> 00:29:17,536
+Bu zaten bu örnekleri de yapmıştık sizde.
+
+254
+00:29:18,155 --> 00:29:20,295
+Şurada göreceğimiz değerler ne olacak arkadaşlar?
+
+255
+00:29:21,355 --> 00:29:21,896
+Şu ikisinde.
+
+256
+00:29:23,195 --> 00:29:24,935
+Şunun benzerlerini konuştuk sizlerle.
+
+257
+00:29:31,827 --> 00:29:32,827
+İkisi de 5 olacak.
+
+258
+00:29:34,487 --> 00:29:41,967
+Evet, şurada herhangi bir değer değişimi, yani gözlemlemeyeceğiz ilk aşamada. İkisi de burada 5-5 olacak.
+
+259
+00:29:42,588 --> 00:29:47,208
+Şurada da neyi göreceğiz? Arttırılmış güncel değerlerine 6 ve 4 olacak.
+
+260
+00:29:47,208 --> 00:29:55,527
+Ama burada iş değişiyor. Çünkü bu printf bir anlamda bir assignment gibi karakteristir gösterecek bize.
+
+261
+00:29:56,267 --> 00:30:00,287
+Ve assignment yapmış olduğumuz için eski değerini muhafaza ediyoruz.
+
+262
+00:30:00,287 --> 00:30:07,567
+Şurada da tam 5-5 başladığımızda 6-4, 6-4 şeklinde sonucu göreceğiz.
+
+263
+00:30:09,147 --> 00:30:12,927
+Şöyle durumlarda, biraz belki kafayı bu karıştırıyor.
+
+264
+00:30:15,668 --> 00:30:21,147
+İlk sıranın 5-5 olmasının, az önce söylediğim gibi aslında burada ne var?
+
+265
+00:30:21,267 --> 00:30:26,008
+A eşittir, J artı artı, B eşittir, K eksi eksi gibi bir assignment var.
+
+266
+00:30:26,008 --> 00:30:29,688
+Yani şuradaki şeye bunu atıyorsun, buradaki şeye bunu atıyorsun.
+
+267
+00:30:30,287 --> 00:30:33,287
+Bunun sebebi de şuradaki anlattığım şey tamam mı?
+
+268
+00:30:36,588 --> 00:30:37,887
+Oldu mu? Valla.
+
+269
+00:30:40,688 --> 00:30:40,947
+Evet.
+
+270
+00:30:42,327 --> 00:30:53,688
+Bu tarz bir durumda hem işlem önceliği hem de bu increment, decrement operatörlerinin post-increment, pre-increment olma durumuna göre dikkate almamız gerekiyor.
+
+271
+00:30:53,847 --> 00:30:55,707
+Biraz daha ki kafayı karıştıran şeyler bunlar.
+
+272
+00:30:55,707 --> 00:30:59,688
+Şimdi buradan elde edeceğimiz değer burada saklanacak.
+
+273
+00:31:00,287 --> 00:31:14,368
+Dolayısıyla yani eksi operatörünün sol operandı olacak. Bu M'nin birinci mevcut değeri yani buraya 1 gelecek. Ama M'nin güncel değeri daha sonradan 2 olacak. Dolayısıyla şu eksinin soluna 1 gelmiş oluyor.
+
+274
+00:31:15,008 --> 00:31:26,207
+Eksinin sağına bu işlem yapılmadan önce C'nin bir azaltılması gerekiyor. İşte şu da eksi 1 olacak. Dolayısıyla burada 1 eksi 1 gibi bir şey yani iki değerini elde edeceğiz.
+
+275
+00:31:26,207 --> 00:31:37,607
+Şurada da tabi şu ifadeler şunlar birbirinden bağımsız arkadaşlar şu yani kod arada arada devam eden şeyler değil ne yapıyoruz?
+
+276
+00:31:37,607 --> 00:31:50,007
+M'ye önce artı artıcı çarpı iki şimdi çarpı yapmak için önce şunun hesaplanması gerekiyor j'nin değeri sıfırdı önce burayı bir arttırdık bir oldu bir çarpı iki yani iki elde ettik
+
+277
+00:31:50,007 --> 00:32:17,587
+M'ye de 2 kadar ekleyeceğiz. M'nin mevcut değeri de 1'di. Bunları birbirinden bağımsız değerlendirin. 1 artı 2'den 3 değerini elde edeceğiz. Şimdi şu birazcık değişik. M'yi buradan başlatsanız, buradan başlatsanız, bu birazcık implementation dependent dediğimiz bir şey. Farklı farklı konuslar görebilirsiniz. Onun için bu tarz şeyler de çok fazla karşınıza gelmiyor veya test etmiyoruz, sormuyoruz.
+
+278
+00:32:17,587 --> 00:32:29,048
+Gelelim koma operatörüne. Şimdi koma operatörü farklı yerlerde özellikle şu for döngüsünde birden fazla değişkenli işlem yapacaksınız.
+
+279
+00:32:29,287 --> 00:32:37,688
+Kullanılabilecek şey. Burada yapılacak şey nedir arkadaşlar? Önce J'ye sıfır atanıyor. Sonra K'ya yüz atanıyor. Ondan sonra şarta bakıyorsunuz.
+
+280
+00:32:38,647 --> 00:32:46,367
+Sonra döngün içindeki işleri yapıyorsunuz. Sonra buraya geliyorsunuz. Sonra J'yi bir arttırıyorsunuz. Sonra K'yı bir azaltıyorsunuz. Sonra tekrar şarta bakıyorsunuz.
+
+281
+00:32:46,367 --> 00:33:10,347
+Şimdi for döngüsüyle alakalı şöyle bir genelde yanılsa mı oluyor onunla alakalı bir şuradan bir slide ayarlamıştım. Bu gerçi Java ama problem değil aynısı orada da var. Trace edersiz yani for döngüsünü isterseniz int, ingleşiktir şey yapın veya burada olduğu gibi yapın fark etmez.
+
+282
+00:33:10,347 --> 00:33:14,427
+Önce değişikten tanımlanıyor şu assignment bir defa çalışacak
+
+283
+00:33:14,427 --> 00:33:20,467
+Yani bu döngü mesela 2 değil de 20 olsaydı bu döngü dönecek 20'ye kadar dönecek
+
+284
+00:33:20,467 --> 00:33:23,627
+Ama şu atama bir defa yapılacak başka yapılmayacak
+
+285
+00:33:23,627 --> 00:33:28,747
+Bu atama yapıldıktan sonra hemen sonra ne olacak şu şartın kontrol edilmesi lazım
+
+286
+00:33:29,364 --> 00:33:35,523
+Önce atamayı yapıyoruz, hemen şartımızı kontrol ediyoruz. Eğer ki şartımız doğruysa döngünün içine atlıyoruz.
+
+287
+00:33:36,304 --> 00:33:44,123
+Döngünün içine atladıktan sonra şu döngünün içinde kaç tane expression varsa, yani noktalı bir gün, noktalı bir gün, noktalı bir gün, belki on tane expression var.
+
+288
+00:33:44,703 --> 00:33:51,624
+Bunların hepsi bittikten sonra şuraya geliyoruz. Buraya geldikten sonra ne yapıyoruz? Şimdi ne yapacağız? Sırada ne olabilir?
+
+289
+00:33:55,892 --> 00:33:56,651
+Bundan sonra
+
+290
+00:33:56,651 --> 00:34:03,171
+Döngünün devam edip etmeyeceğini kontrol etmemiz lazım. Onun için tekrardan şu şartı kontrol ediyoruz.
+
+291
+00:34:05,031 --> 00:34:05,852
+Bakın şuraya.
+
+292
+00:34:06,192 --> 00:34:10,812
+I artı artıdan sonra. I küçük müdür? İki etkili. Eğer doğruysa tekrar içeri girdik.
+
+293
+00:34:11,291 --> 00:34:14,131
+Tekrar I artı artı yaptık. Tekrar kontrol ettik.
+
+294
+00:34:14,572 --> 00:34:16,211
+Şimdi devam edecek mi, etmeyecek mi?
+
+295
+00:34:20,532 --> 00:34:22,012
+Tekrar bir şey yazacak mıyız?
+
+296
+00:34:22,451 --> 00:34:23,131
+Yazmayacağız.
+
+297
+00:34:24,012 --> 00:34:31,211
+Yazmayacağız. Çünkü i eşittir, iki oldu. i küçüttür, iki olmadı. Onun için ne yapacağız? Buradan devam edeceğiz. Peki ben bu satıra geldiğimde i'nin değeri kaç oldu?
+
+298
+00:34:34,675 --> 00:34:35,356
+2 oldu.
+
+299
+00:34:35,995 --> 00:34:36,675
+İ'nin değeri 2.
+
+300
+00:34:36,775 --> 00:34:41,215
+Bundan sonra eğer bu döngüdeki şu değişkeni aşağılarda bir yerde kullanacaksam
+
+301
+00:34:41,215 --> 00:34:47,915
+İ'nin değerinin 2 olarak kaldığını veya 2 olarak en son duruma geldiğini hesap edip
+
+302
+00:34:47,915 --> 00:34:50,115
+ona göre diğer işlemlerini de kullanmam lazım.
+
+303
+00:34:50,815 --> 00:34:52,795
+Bu da çok çok yapılan hatalardan bir tanesi.
+
+304
+00:34:54,016 --> 00:35:00,295
+Şuradaki ifademizde de döngüyü 2 tane kontrolle, 2 tane değişkenle kontrol ediyoruz.
+
+305
+00:35:00,295 --> 00:35:02,015
+k-c'nin
+
+306
+00:35:02,015 --> 00:35:04,795
+sıfırdan büyük olması.
+
+307
+00:35:05,475 --> 00:35:06,575
+Bu döngü mesela
+
+308
+00:35:06,575 --> 00:35:08,356
+kaç defa dönelim? Hani şunu
+
+309
+00:35:08,356 --> 00:35:10,335
+100 değil de 10 yapalım.
+
+310
+00:35:12,795 --> 00:35:14,475
+Kaç defa mesela şuradaki
+
+311
+00:35:14,475 --> 00:35:15,595
+print desek
+
+312
+00:35:15,595 --> 00:35:18,415
+falan filan
+
+313
+00:35:18,415 --> 00:35:19,575
+bir şeyler print ettiriyoruz.
+
+314
+00:35:21,155 --> 00:35:22,716
+Kaç defa döndürürüz
+
+315
+00:35:22,716 --> 00:35:23,216
+bu döngüyü?
+
+316
+00:35:24,555 --> 00:35:26,095
+10 kere döner hocam herhalde.
+
+317
+00:35:27,335 --> 00:35:27,815
+Emin misin?
+
+318
+00:35:30,295 --> 00:35:31,175
+Değilim.
+
+319
+00:35:33,516 --> 00:35:34,196
+Kimdi o arkadaş?
+
+320
+00:35:34,196 --> 00:35:35,036
+Ne de yapalım.
+
+321
+00:35:37,555 --> 00:35:39,015
+Emin olmayan arkadaşımız.
+
+322
+00:35:39,036 --> 00:35:39,295
+Pardon.
+
+323
+00:35:40,655 --> 00:35:41,875
+K'yı da azaltıyormuşuz.
+
+324
+00:35:42,175 --> 00:35:44,795
+Şimdi şöyle düşünün.
+
+325
+00:35:45,435 --> 00:35:47,976
+J eşittir sıfır ve K eşittir on.
+
+326
+00:35:50,396 --> 00:35:52,155
+Bu bir defaya mahsus yapılacak değil mi?
+
+327
+00:35:54,075 --> 00:35:55,875
+Sonra şu şarta bakacağız.
+
+328
+00:35:56,675 --> 00:35:59,475
+K'dan R'yi çıkarttığımızda sıfırdan büyük mü?
+
+329
+00:35:59,675 --> 00:35:59,875
+Evet.
+
+330
+00:36:00,295 --> 00:36:02,315
+ondan sonra ne olacak?
+
+331
+00:36:02,795 --> 00:36:04,175
+Bir şeyler yapacağız. Sonra
+
+332
+00:36:04,175 --> 00:36:05,695
+j 1 olacak.
+
+333
+00:36:06,755 --> 00:36:07,895
+Sonra bu olacak.
+
+334
+00:36:09,355 --> 00:36:10,735
+k eksi j 0'dan
+
+335
+00:36:10,735 --> 00:36:12,415
+büyütmü. Evet.
+
+336
+00:36:13,335 --> 00:36:14,395
+Tekrar içeriye geleceğiz.
+
+337
+00:36:14,535 --> 00:36:16,295
+j'yi 2 yapacağız. k'yı
+
+338
+00:36:16,295 --> 00:36:17,435
+8 yapacağız.
+
+339
+00:36:18,395 --> 00:36:20,175
+8 eksi 2 şey mi?
+
+340
+00:36:20,395 --> 00:36:22,215
+V'yi. Bakın
+
+341
+00:36:22,215 --> 00:36:24,055
+döngünün tekrar sayısı yani şuradaki
+
+342
+00:36:24,055 --> 00:36:26,215
+print sayısına bakıyorum. Yani bir print yaptık
+
+343
+00:36:26,215 --> 00:36:28,095
+şurada. Bir print daha yaptık. Burada
+
+344
+00:36:28,095 --> 00:36:29,375
+bir print daha yaptık. 3 oldu.
+
+345
+00:36:29,375 --> 00:36:53,476
+Sonra 3'e 7 olduğunda 7-3 sıfırdan küçük mü? Değil. Bir print daha yaptık. 4'e 6 olduğunda 6-4 sıfırdan küçük mü? Değil. Bir print daha yaptık. 5'e 5 olduğunda 5-5 sıfırdan küçük mü? Değil. O zaman çıktık.
+
+346
+00:36:53,476 --> 00:36:55,315
+peki
+
+347
+00:36:55,315 --> 00:36:57,675
+c'nin ve k'nın değerleri
+
+348
+00:36:57,675 --> 00:36:58,696
+kaşa gelmiş burada
+
+349
+00:36:58,696 --> 00:37:01,536
+genelde deriz ki bu döngü
+
+350
+00:37:01,536 --> 00:37:02,776
+5 defa döner ama
+
+351
+00:37:02,776 --> 00:37:05,436
+en son değerler bununla olacak
+
+352
+00:37:05,436 --> 00:37:07,276
+peki size şu soruyu
+
+353
+00:37:07,276 --> 00:37:09,455
+sorsaydım bu da çok önemli bir soru
+
+354
+00:37:09,455 --> 00:37:10,735
+aslında algoritma analizinde
+
+355
+00:37:10,735 --> 00:37:13,375
+şuradaki şu karşılaştırma
+
+356
+00:37:13,375 --> 00:37:15,396
+işlemi kaç
+
+357
+00:37:15,396 --> 00:37:16,856
+defa yapılır
+
+358
+00:37:16,856 --> 00:37:20,955
+soruyu önce şöyle yapalım
+
+359
+00:37:20,955 --> 00:37:23,095
+i eşittir 0'dan
+
+360
+00:37:23,095 --> 00:37:24,875
+i küçüktür 5'e kadar
+
+361
+00:37:24,875 --> 00:37:26,355
+i artı artı.
+
+362
+00:37:27,135 --> 00:37:29,235
+Kaç defa number of
+
+363
+00:37:29,235 --> 00:37:30,675
+calculation şey
+
+364
+00:37:30,675 --> 00:37:32,855
+komparajın yapılmış mesela şurada.
+
+365
+00:37:33,036 --> 00:37:33,855
+Önce şundan bakalım.
+
+366
+00:37:35,036 --> 00:37:36,056
+Şimdi sıfır için
+
+367
+00:37:36,056 --> 00:37:38,375
+bir küçüktür bakacağız değil mi?
+
+368
+00:37:39,655 --> 00:37:41,075
+Sonra küçük olduğu için
+
+369
+00:37:41,075 --> 00:37:43,175
+içeriye gireceğiz. Bir şey yapacağız. Bir yapacağız.
+
+370
+00:37:43,256 --> 00:37:44,315
+Bir için bir daha bakacağız.
+
+371
+00:37:45,175 --> 00:37:46,355
+İki için bir daha bakacağız.
+
+372
+00:37:46,875 --> 00:37:49,015
+Üç için bir daha bakacağız ve döngüyü çalıştıracağız.
+
+373
+00:37:49,015 --> 00:37:50,735
+Yani burada loop olacak.
+
+374
+00:37:50,915 --> 00:37:52,556
+Burada loop olacak. Burada loop olacak.
+
+375
+00:37:52,555 --> 00:37:54,295
+burada loop olacak. Sonra 4 için
+
+376
+00:37:54,295 --> 00:37:56,495
+bir daha bakacağız. Küçüktür loop olacak.
+
+377
+00:37:57,375 --> 00:37:58,255
+5 için bir daha
+
+378
+00:37:58,255 --> 00:37:59,435
+bakmak zorundayız.
+
+379
+00:38:00,755 --> 00:38:02,475
+Ama loop olmayacak.
+
+380
+00:38:03,215 --> 00:38:04,655
+Oysa döngünün içerisindeki
+
+381
+00:38:04,655 --> 00:38:06,375
+şuradaki işlemler 5 defa
+
+382
+00:38:06,375 --> 00:38:08,635
+ama şu karşılaştırma işlemi
+
+383
+00:38:08,635 --> 00:38:10,375
+6 defa olacak.
+
+384
+00:38:11,275 --> 00:38:12,715
+Birden başta saydık ne olurdu?
+
+385
+00:38:12,835 --> 00:38:14,175
+O zaman yine 5 defa olurdu ama
+
+386
+00:38:14,175 --> 00:38:15,855
+döngünün içi bu sefer 4 defa olacak.
+
+387
+00:38:16,435 --> 00:38:18,715
+Evet burada da şu karşılaştırma işlemi
+
+388
+00:38:18,715 --> 00:38:20,135
+toplamda ne kadar oluyor?
+
+389
+00:38:20,135 --> 00:38:22,475
+6 defa gerçekleşiyor.
+
+390
+00:38:22,555 --> 00:38:25,635
+mesela bizim bu algoritmaları
+
+391
+00:38:25,635 --> 00:38:27,455
+analiz ederken zaman karmaşıklığı
+
+392
+00:38:27,455 --> 00:38:29,395
+veya bellek karmaşıklığı analizlerinde
+
+393
+00:38:29,395 --> 00:38:31,575
+döngülerin tekrar sayısı bizim için önemli
+
+394
+00:38:31,575 --> 00:38:32,075
+olduğu için
+
+395
+00:38:32,692 --> 00:38:42,871
+döngünün tekrar sayısında genellikle şuradaki karşılaştırma operasyonu üzerinden yaparız. Eğer bu bir for dönüklü ise. Burada sorumuz var mı?
+
+396
+00:38:50,547 --> 00:39:08,308
+Relational Operatörler'de karşılaştırma operatörleri. Bunların farkları, diğer operatörlerden farkları, bunlar geriye değer olarak true-false döndürüyor. Ama bizde true-false diye bir şey yok. True yerine bir, false yerine sıfır döndürüyor. Şöyle de bir detay var.
+
+397
+00:39:10,808 --> 00:39:12,207
+Bunu şöyle göstereyim.
+
+398
+00:39:20,724 --> 00:39:25,063
+Örneğin if dediniz, eksi beş, eksi bir diyelim.
+
+399
+00:39:30,739 --> 00:39:35,299
+Burada biz ekranda eksi bir görür müyüz?
+
+400
+00:39:40,244 --> 00:39:42,244
+Evet, yenme var.
+
+401
+00:39:44,244 --> 00:39:54,563
+Şimdi sıfır dışındaki bütün sayısal değerler, yani bir, sıfır nokta hatta şöyle desek
+
+402
+00:39:58,708 --> 00:40:03,267
+sıfır dışındaki bütün sayısal değerlerimiz true olarak kabul ediliyor.
+
+403
+00:40:03,267 --> 00:40:09,907
+Ben buraya hasbelkeler while yazsam ne olacak? Ne göreceğiz burada?
+
+404
+00:40:13,108 --> 00:40:14,127
+Onsuz döngü değil mi?
+
+405
+00:40:14,787 --> 00:40:17,287
+Onsuz döngü, yani onsuz tane eksi bir gelimiz.
+
+406
+00:40:17,647 --> 00:40:20,347
+Şimdi mesela sayısal analizde en çok yaptığınız hatalardan biri şu.
+
+407
+00:40:21,127 --> 00:40:24,307
+Bir beklenen değer var. Beklenen değerimiz mesela 5 olsun.
+
+408
+00:40:25,087 --> 00:40:28,427
+Hatta 5.0 diyelim. Bir de hesapladığınız değer var.
+
+409
+00:40:28,967 --> 00:40:30,868
+Bu da 4.0 olsun.
+
+410
+00:40:31,587 --> 00:40:33,667
+Bu ikisi arasındaki fark eşittir, eşittir.
+
+411
+00:40:33,667 --> 00:40:35,528
+Ama tabii burada şöyle diyeyim ben tabii.
+
+412
+00:40:36,368 --> 00:40:39,147
+Integer beklenen, bir de hesaplanan diyelim.
+
+413
+00:40:39,727 --> 00:40:41,267
+Hatta integer demeyelim, double diyelim.
+
+414
+00:40:43,108 --> 00:40:50,347
+Diyorsunuz ki beklenen değerle hesaplanan değer arasındaki fark hatta bu farkın F-Sürüt valisi.
+
+415
+00:40:52,128 --> 00:40:53,868
+Yani bunu da yazalım ki.
+
+416
+00:40:56,387 --> 00:41:07,267
+İkisi arasındaki farkınız eşittir eşittir 0.001 olana kadar bu döngüyü çevir demek istiyorsunuz.
+
+417
+00:41:07,887 --> 00:41:12,788
+Burada şu fark hiçbir zaman şuna eşit olmayabilir ve sonsuz döngüye girersiniz.
+
+418
+00:41:13,108 --> 00:41:19,247
+Yani buradaki, aradaki iki şeyin farkı, şurası tamamen sıfır olmayacaktır.
+
+419
+00:41:19,807 --> 00:41:24,587
+Hadi sıfıra yakın, sıfır nokta sıfır sıfır bire yakın bir şey oldu.
+
+420
+00:41:25,127 --> 00:41:27,387
+Şu eşittir operatörü zaten farklı çalışıyordu.
+
+421
+00:41:27,508 --> 00:41:31,788
+Aslında eşittir operatörü bir anlamda, eşit eşit operatörü bir anlamda çıkarma yapıyor.
+
+422
+00:41:32,227 --> 00:41:35,648
+Dolayısıyla burada hiçbir zaman sıfır değeri, yani false değeri elde edemeyeceksiniz.
+
+423
+00:41:36,307 --> 00:41:40,408
+False değeri elde edemediğiniz için bu sürekli true olacak ve döngünüz sürekli dönecektir.
+
+424
+00:41:40,407 --> 00:42:04,627
+Onun için diyor ki işte bu fark küçüktür, eşittir veya aslında tam tersiyle küçüktür. İşte şu aradaki epsilon değerinin altına gelene kadar bu fark devam etsin dersiniz. O zaman daha doğru bir sonuç elde edersiniz. Bunun nedenlerinden bir tanesi bu. Dolayısıyla hani sıfır bizim için şey, sıfır dışındaki değerler bir kuru diyeceğimiz şeyler.
+
+425
+00:42:04,627 --> 00:42:14,907
+Mesela şunlara baktığımız zaman bunların sonucu nedir desek, mesela şurada nasıl bir şey elde edeceğiz, şunlar zaten kolay bunları geçelim de şu nasıl çalışacak
+
+426
+00:42:22,387 --> 00:42:25,267
+Bakın bütün operatörler burada karmaşık bir vaziyette.
+
+427
+00:42:27,447 --> 00:42:33,387
+Sağdan sol dolu M, büyük eşitim, N'den diyeceğiz. Ondan sonra burada çıkan...
+
+428
+00:42:34,387 --> 00:42:36,348
+Yani önce şuna bakmamız lazım.
+
+429
+00:42:39,228 --> 00:42:43,427
+Burada gerçi asoşiyatı ki tablosu yok da şu yukarıda var.
+
+430
+00:42:45,747 --> 00:42:49,367
+Relational operatörde soldan sağa doğru, sağdan sol doğru değil.
+
+431
+00:42:49,367 --> 00:43:04,928
+Dolayısıyla şuraya geldiğimizde önce yapılacak olan şey şuradaki operasyon ondan sonra yapılacak olan şey buradaki operasyon. Peki J küçük eşit midir M'den?
+
+432
+00:43:09,460 --> 00:43:11,460
+Şunun sonucu nedir?
+
+433
+00:43:16,563 --> 00:43:36,164
+Doğru değil mi arkadaşlar? C, sıfır, M'den küçük eşit. Bu bir demektir. Yani true yerine true yazmıyoruz. Buraya bir yazıyoruz. Peki bir büyük eşit midir? Neden? E bu da doğru. O zaman etiadenin geneli ne oluyor? Bize bir olarak veriliyor. Buna dikkat edelim.
+
+434
+00:43:36,164 --> 00:43:47,324
+mesela gerçi burada olmaz da hani şurada bir de 4 çarpı deseydik şurada bir şeydi.
+
+435
+00:43:59,123 --> 00:44:07,104
+4 çarpı deseydik. Şimdi şu ifadeden gelecek olan bir birimiz var. Ondan sonra buradaki çarpma işlemi var.
+
+436
+00:44:08,743 --> 00:44:17,144
+Tabii şuraya da belki parantez içerisinde var. Ne oluyor? 4 ile true'yu çarpmak aslında 4 çarpı 1 yapmak demektir. O da sonucu birer gidebilecektir.
+
+437
+00:44:18,063 --> 00:44:23,703
+Lojik operasyonlarımız var. Lojik operasyonlarımızda iki tane lojik ifadeyi birleştirmek için kullanılıyor.
+
+438
+00:44:23,703 --> 00:44:27,064
+ne demek iki tane lojik ifadenin birleşmesi?
+
+439
+00:44:27,064 --> 00:44:35,043
+Bir it de veya while da hatta for da iki tane veya daha fazla şart sunmak demek.
+
+440
+00:44:35,804 --> 00:44:38,883
+Hem şu şart doğru olacak hem bu şart doğru olacak.
+
+441
+00:44:39,283 --> 00:44:43,783
+Dolayısıyla bunların doğruluğu da kendi içinde ayrıca lojik operasyonlar gerekiyor.
+
+442
+00:44:43,903 --> 00:44:48,283
+Mesela diyorsunuz ki A küçüktür ve bu bir şartımız.
+
+443
+00:44:49,223 --> 00:44:51,443
+Tabi burada A, B demeyelim de şöyle karışmasın.
+
+444
+00:44:51,443 --> 00:45:00,024
+X küçüktür Y, X küçüktür D. Şurada A yerine getirin bunu koyun. Burada B yerine getirin bunu koyun.
+
+445
+00:45:00,024 --> 00:45:06,704
+Şu tabi şu da sıra olacak. O zaman hem A'nın hem de B'nin bir olduğu durum doğru olduğu durumda burası doğru çıkacaktır.
+
+446
+00:45:07,283 --> 00:45:15,723
+A'lı övredirken diğer durumlarda sıfır çıkacaktır. Bunu biraz daha genişletirseniz A veya B'den en az bir tanesi doğruysa şey olacaktır.
+
+447
+00:45:15,723 --> 00:45:21,164
+Bu tarz durumlarda şu kısa yol, kısa devre operasyonları dediğimiz şey var.
+
+448
+00:45:21,164 --> 00:45:22,423
+0
+
+449
+00:45:26,516 --> 00:45:27,876
+Bunun sonucu nedir?
+
+450
+00:45:38,003 --> 00:45:39,003
+Öğmenin, yerim.
+
+451
+00:45:44,500 --> 00:45:46,500
+Buradan elde edeceğimiz sonuç ne olabilir?
+
+452
+00:45:54,452 --> 00:46:18,091
+Sıfır değil mi? Çünkü V işleminin sol tarafı tamamen sıfır olmuş. Sağ tarafına hiç bakmaya gerek yok. Bu zaten sıfırdır. Hiçbir şekilde sağ tarafla ilgilenmeye gerek yok. Yani bir boş kümeyle bir başka kümenin kesişimi nedir? O da boş küme yani sıfırdır. Öyle düşünemeksiniz. Peki şurada bunun sonucu ne olacak?
+
+453
+00:46:23,092 --> 00:46:35,092
+Bu da her zaman birdir. Şuradaki, soldaki işlem önce zaten bu taraf değerlendirilecek. Bu birse bundan sonrakine bakmaya gerekir. Bu da bir. Peki bunun sonucu nedir?
+
+454
+00:46:40,083 --> 00:46:51,643
+Bu ifadenin sonucu x küçüktür y'nin sonucu neyse odur. Yani x küçüktür y'dir. Eğer bu true ise true olur. False ise false olur. Yani sıfır ise sıfır, bir ise bir olur.
+
+455
+00:46:52,443 --> 00:47:02,723
+Negation'da ne oluyor? Bir mantıksal ifadenin sonucunu işte x içerisinde bir mantıksal ifade yazdınız. Bu ifadenin sonucunu tam tersine alıyorsunuz.
+
+456
+00:47:02,723 --> 00:47:09,723
+İşte x küçüktür y, mesela bu true gibi bir şey gelmişse bu sonucu false yapıyor. Eğer false geldiyse true yapıyorsunuz.
+
+457
+00:47:10,083 --> 00:47:38,643
+şunları incelersiniz. Bunları geçeceğim. Hep senin çözümleri var arkadaşlar. Şimdi bit manipulation operasyonları var. Bit seviyesinde N, OR, XOR ve bit byte complement dediğimiz işlemler. Bir de SHIP işlemleri var. Şimdi şöyle bazı örneklere bakalım. Örneğin sizin 5 dev'i değeriniz var. 5 dev'i değer. Bunu 16 bit'lik gösterimde şu şekilde gösterelim.
+
+458
+00:47:38,643 --> 00:48:05,483
+Bunu bir bit sola doğru kaydırmak demek. Şuradaki her şeyi sola doğru kaydırıyorsun. Baş taraftan da sıfırla besleme yapıyorsun. Dolayısıyla şu sıfır bakın gidip bir yerden taşıp da başa gelmiyor. O rotasyondur. Ne oluyor? Her şeyi kaydırıyorsunuz. Bu sıfır dışarı gidiyor. Veya burada bir de olabilirdi. Şuraya şey geliyor. Dolayısıyla ne yaptınız? Aslında burada bir ikiyle çarpmış gibi bir şey elde ediyorsun.
+
+459
+00:48:05,484 --> 00:48:31,903
+255 dediğimiz sayı var. 255 şuna karşı gelecektir. Bunu da 3 bit bu tarafa sağa doğru bu yöne kaydırıyorsunuz. 3 bit sağa kaydırdınız. Şunu elde edeceksiniz. Şimdi 255'i bir bölün diye bölün. Ne olur? 128 mi oluyor? 250, yaklaşık 128. Bir daha bölün 64, bir daha bölün 32. Tabi bu yaklaşıkları işte 30'e karşı gerçek.
+
+460
+00:48:31,903 --> 00:48:57,604
+Şurada 8 dediğimiz bir sayı var. Yani bu 2 üzeri 3 aslında. Bunu 10 defa şifre diyorsunuz. 10 defa şifre için de buraya geldik. 2 üzeri 13'e karşı geliyor. Veya 1 dediğimiz sayımız var. Bunu 15 defa şifre dediğimizde eğer bu işaretli sayıysa şuradaki veri 0'ya gelecek için bu işaretli sayılarla etki 2 üzeri 15'e karşı geliyor. Bu değeri elbette.
+
+461
+00:48:57,604 --> 00:49:23,703
+Bu taraf eşitler, diğer eşitler, benzer şeyler bunlara bakarsınız. Sonra bit manipulation işlemlerinde bir expression'ın hexadesimal değerini mesela şunun ant yapılmasını istiyorum. Bunlar decimal değerler. O zaman bunu ant'imizi binary'ye ama binary'ye çevirmek için de önce hexadesimale çevirirsiniz.
+
+462
+00:49:23,703 --> 00:49:48,103
+Bu ifadenin hexadecimal karşılığı nedir? Önce 2'yi açıyoruz. Şudur. Sonra 4'ü açıyoruz. Orası 4. Sonra B'yi açıyoruz. Bu D dediğim şey kaçtır? 10 A'ya karşılık gelecek. 11 B olacak. 12 C olacak. 13 B olacak. Yani 13. Şu da 13'ün bu aynı bir karşılığı. Şurada da 6 olacaktır.
+
+463
+00:49:48,103 --> 00:49:59,003
+ve burada da 5722 değeri var. O da şuna karşılıklı oluyor. Bu ikisini end yaptığımızda bitleri karşılıklı olarak ikisi de birse sonuç bir, diğer durumlar sonuç sıfır.
+
+464
+00:49:59,003 --> 00:50:17,463
+Şu durum bir olacak, şu durum bir olacak, diğerleri sıfır olacak. Böyle göreceğiz. Bunu da tekrar Higda Desimale'e çevirdiğinde bakın şurası sıfır, şu dört, şu kısım altı, pardon beş, şu kısımda iki oluyor.
+
+465
+00:50:17,463 --> 00:50:19,783
+5, 2, 4
+
+466
+00:50:19,783 --> 00:50:24,363
+Bunu da desimale çevirmek istediğimde nasıl çevireceğiz bunu desimale?
+
+467
+00:50:27,923 --> 00:50:30,243
+Biriniz söyleyin bakalım nasıl çeviriyoruz?
+
+468
+00:50:36,884 --> 00:50:58,304
+Cam, 16'nın kuvvetleri ile çarpacağız, artacak şekilde. Nasıl çarpacağız? 2'yi kaçta çarpacağım? 16 üzeri 0. 16 üzeri 0, güzel. Artı 5'i 16 üzeri 1 ile artı 4'e 16 üzeri 2 ile çarpacağım. Oradan elde ettiğimiz sonucun değeri de şuna karşılıklı.
+
+469
+00:50:58,304 --> 00:51:13,384
+Eğer burada or yapacaksak karşılıklı bitirelim en az bir tanesi bir ise sonuç bir, ikisi de sıfırsa sonuç sıfır oluyor. Bakın şu sıfır, ondan sonra diğerleri bir, şu sıfır, şu sıfır böyle devam edip gidiyor.
+
+470
+00:51:13,384 --> 00:51:14,384
+XOR dediğimiz şey XOR'un biraz farklı durumu var A ve B gibi iki tane binary durumun olsun bunların dört farklı kombinasyonu vardır 0 0 0 1 1 0 ve 1 1 1 XOR A XOR B dediğimiz şey girdilerin aynı olduğu yani ikisinin de aynı olduğu durumlar 0 girdilerin farklı olduğu durumlar 1 1 XOR bu şifrelemede kriptolojide çok kullanılan bir operasyonu
+
+471
+00:51:43,384 --> 00:51:47,964
+anahtarla bir veri ilişkiremede extordan faydalanıyoruz.
+
+472
+00:51:48,644 --> 00:51:53,564
+Dolayısıyla bakın 0, 0 ise 0, 1, 1 ise 0, 1, 0 ise veya 0 ise 1.
+
+473
+00:51:54,284 --> 00:51:56,843
+O derece şekilde extort dediğimiz operasyon.
+
+474
+00:51:57,863 --> 00:52:01,443
+Şu da negation dediğimiz bitwise negation ne yapıyor?
+
+475
+00:52:01,583 --> 00:52:03,623
+0'ları 1, 1'leri 0 yapıyor.
+
+476
+00:52:04,203 --> 00:52:06,483
+Bunlar bit seviyesinde yapılan işlemler ortaya çıkıyor.
+
+477
+00:52:07,663 --> 00:52:09,644
+Bunların tabi assignment operatörleri var.
+
+478
+00:52:09,763 --> 00:52:12,644
+Önce kaydır, işte assignment yap, ondan sonra önce assignment yap.
+
+479
+00:52:12,643 --> 00:52:39,003
+Yani toplama neyse aynı mantıkla bunlar da çalışıyor. C, s, falan konuştuk, saygı konuştuk. Conditional operatöre gelelim. Kısa yoldan conditional operatör bir ilk deyimi yazmak yerine basit işlemleri daha kısa yoldan yazmanın bir aracı. Şöyle yapıyoruz. Önce bir şart condition sunuyoruz. Conditional ifade. Yani burada true veya false çıkacak bir ifade olması lazım. Diyorsun ki noktalı bir şey, doğru işaret.
+
+480
+00:52:39,003 --> 00:53:05,943
+Eğer buradan gelecek olan sonuç duru ise döndürülecek olan değer işte A diyelim. Döndürülmeyecek olan yani pol ise döndürülecek olan değer şurada B olacak. Şimdi A ve B burada durduk yere kalmayacak. İşte bunu bir değere atayalım diyeceğiz. X diyelim mesela. Dolayısıyla X'in değeri şart doğruysa A olacak. Şart yanlısı B olacak. Şimdi bunun farklı şeyleri kullanımları vardır. Mesela ne demiş?
+
+481
+00:53:05,943 --> 00:53:09,904
+X'i Y'den küçük de X'in değeri Z'ye atansın.
+
+482
+00:53:10,083 --> 00:53:11,764
+D ise Y'nin değeri Z'ye atan.
+
+483
+00:53:12,363 --> 00:53:14,104
+Burada ihmal edilen bir durum var.
+
+484
+00:53:14,184 --> 00:53:14,583
+Ne sizce?
+
+485
+00:53:16,643 --> 00:53:17,163
+Burada.
+
+486
+00:53:22,708 --> 00:53:33,067
+x ve y arasındaki ilişkiyle eşitlik ihmal ediliyor değil mi arkadaşlar? Yani x, y'ye eşitse ne olacak? Şu an mesela burada define edilmemiş. O zaman onu şöyle diyebiliriz.
+
+487
+00:53:33,067 --> 00:53:38,347
+X küçükse Y'den mesela X'i atasın tamam.
+
+488
+00:53:39,507 --> 00:53:47,947
+Değilse diyorum ki X eşittir eşitse Y'ye ne yapsın?
+
+489
+00:53:48,087 --> 00:53:49,307
+Bir daha içine koyuyorum.
+
+490
+00:53:50,187 --> 00:53:51,088
+Bir yapsın.
+
+491
+00:53:51,888 --> 00:53:53,908
+O da değilse sıfır falan diyeceğim.
+
+492
+00:53:54,208 --> 00:53:58,347
+Böyle iç içe bunları operatörü iç içe kullanabiliyor.
+
+493
+00:53:58,347 --> 00:54:00,708
+Şuradaki şartlı ifademizin
+
+494
+00:54:00,708 --> 00:54:03,007
+Bakın
+
+495
+00:54:03,007 --> 00:54:04,967
+Şu şartlı ifademiz
+
+496
+00:54:04,967 --> 00:54:06,228
+True kolu burası
+
+497
+00:54:06,228 --> 00:54:08,108
+Old kolu burası olacak
+
+498
+00:54:08,108 --> 00:54:09,027
+Ama bunun da
+
+499
+00:54:09,027 --> 00:54:11,767
+İçinde bunun sonucuna göre
+
+500
+00:54:11,767 --> 00:54:12,708
+Şu kısım
+
+501
+00:54:12,708 --> 00:54:14,807
+True ise buraya gelecek
+
+502
+00:54:14,807 --> 00:54:16,708
+Değilse şuraya gelecek
+
+503
+00:54:16,708 --> 00:54:18,748
+Şuraya y diyebiliriz
+
+504
+00:54:18,748 --> 00:54:21,928
+İkisi y'den küçükse
+
+505
+00:54:21,928 --> 00:54:23,547
+İkisi döndür
+
+506
+00:54:23,547 --> 00:54:25,928
+İkisi birbirine eşitse
+
+507
+00:54:25,928 --> 00:54:26,767
+Bir döndür
+
+508
+00:54:26,767 --> 00:54:30,967
+X, Y'den büyükse Y'ye döndür şeklinde bir şey söyleyebiliriz.
+
+509
+00:54:31,087 --> 00:54:34,068
+Tabi bunu da yine başta V gibi bir tane değişkeni atacağız.
+
+510
+00:54:37,127 --> 00:54:39,367
+Şimdi bir de memora operatörlerimiz var.
+
+511
+00:54:40,107 --> 00:54:45,208
+Bunları, şunun ne olduğunu konuşacağız.
+
+512
+00:54:46,087 --> 00:54:48,387
+Bunları konuşacağız. Structure'larla alakalı.
+
+513
+00:54:48,507 --> 00:54:51,687
+Şunu zaten biliyoruz. Bir dizinin istediğimiz ilgisine ulaşmak.
+
+514
+00:54:52,487 --> 00:54:56,467
+Şimdi şu ana kadar biz bunları gördük mü arkadaşlar?
+
+515
+00:54:56,467 --> 00:55:01,107
+şu sembolleri başka yerlerde gördük değil mi? Şu başka ne işe yarıyordu?
+
+516
+00:55:05,076 --> 00:55:07,076
+Çünmeyi şöyle.
+
+517
+00:55:09,556 --> 00:55:11,556
+Bir önceki slaidlerde bunları gördük.
+
+518
+00:55:16,371 --> 00:55:27,911
+Evet, şu ne işe yarıyor arkadaşlar, yıldız? Çarpma operasyonu değil mi? Şu bitwise N, yani bit seviyesinde N, şu da çarpma.
+
+519
+00:55:29,752 --> 00:55:35,771
+Peki, bunları ondan ayıran, bu anlamlardan ayıran artılık ne?
+
+520
+00:55:43,860 --> 00:55:53,999
+Birisi adres alıyormuş, diğeri dereferans yapıyormuş. Bunu çarpmadan ayıran veya bunu bitwise ant'tan ayıran farklı şey ne? Ne olabilir?
+
+521
+00:55:54,019 --> 00:55:59,419
+Hocam, bir tane ifadenin başına gelirse belki o zaman kullanılıyordu.
+
+522
+00:56:00,899 --> 00:56:09,360
+Yani şunu söyleyeceğiz. Bir şeyi bir şeyle çarparken iki tane operasyona ihtiyacımız var. İki operanda ihtiyacımız var. A çarpı B'dir.
+
+523
+00:56:09,360 --> 00:56:17,360
+Eğer siz bunu sadece çarpı b gibi bir şeklinde yazarsanız bu pointer bir ifadenin adresteki gösterdiği değer.
+
+524
+00:56:18,380 --> 00:56:22,380
+İşte diyorsun ki a diye bir adres var a'nın gösterdiği adresteki değer diyor.
+
+525
+00:56:22,700 --> 00:56:29,260
+Aynı şey burada da bir şeyi bir şeyle ent yapmak demek 3 ile 8 veya 3 ile 2'si ent yaparsın.
+
+526
+00:56:29,260 --> 00:56:33,919
+2 operant alın ama burada tek operant varsa bu bir şeyin adresi demektir.
+
+527
+00:56:34,299 --> 00:56:36,919
+Scanf'te mesela biz bunu kullanıyoruz diyebiliriz.
+
+528
+00:56:37,499 --> 00:56:38,959
+Şunları daha sonra konuşacağız arkadaşlar.
+
+529
+00:56:38,959 --> 00:56:41,379
+Structural'ın üyelerine erişimle alakalı.
+
+530
+00:56:42,079 --> 00:56:46,159
+Biz de pointer kullanılarak, biz de pointer kullanmadan şeyler zamanı gelince konuşacağız.
+
+531
+00:56:46,779 --> 00:56:48,279
+Şimdi control flow'a gelelim.
+
+532
+00:56:48,879 --> 00:56:50,139
+Bir ara vereceğiz birazdan ama.
+
+533
+00:56:50,139 --> 00:56:51,239
+Gerçi 50 olmuş.
+
+534
+00:56:51,659 --> 00:56:52,699
+Tamam, 10 dakika ara verelim.
+
+535
+00:56:52,779 --> 00:56:54,139
+Control flow'dan devam ederiz.
+
+536
+01:07:26,164 --> 01:07:27,664
+Evet arkadaşlar, devam edelim.
+
+537
+01:08:13,588 --> 01:08:20,967
+if ifadesi zaten bu artık görmekten belki gına geldiği bir konu. Çok fazla bunlara bakmayacağız.
+
+538
+01:08:22,707 --> 01:08:34,907
+Sadece if de arkadaşlar şuna dikkat edelim. Eğer ki tek bir ifadenin bu şarta bağlı olarak çalışmasını istiyorsanız parantez koymayabilirsiniz.
+
+539
+01:08:34,907 --> 01:08:36,608
+şöyle bir şeyle
+
+540
+01:08:36,608 --> 01:08:40,727
+eğer ki ikisinizin değeri
+
+541
+01:08:40,727 --> 01:08:43,667
+x0'dan farklıysa
+
+542
+01:08:43,667 --> 01:08:45,928
+ne olacak? Şu çalışacak.
+
+543
+01:08:47,187 --> 01:08:49,768
+x0'dan farklı olsa da olmasa da
+
+544
+01:08:49,768 --> 01:08:50,707
+ne olursa olsun
+
+545
+01:08:50,707 --> 01:08:53,407
+statement 2 de çalışacaktır.
+
+546
+01:08:54,287 --> 01:08:56,087
+İki tane şeyi yan yana koymuş olmak
+
+547
+01:08:56,087 --> 01:08:58,047
+onun için alt alta koymuş olmak
+
+548
+01:08:58,047 --> 01:09:00,168
+birazcık dikkat edilmesi gereken şey.
+
+549
+01:09:00,927 --> 01:09:02,808
+Bu tarz durumlara düşmemek için
+
+550
+01:09:02,808 --> 01:09:04,707
+yapacağımız şey şu olacak.
+
+551
+01:09:04,907 --> 01:09:15,308
+her durumda küme parantezleriyle if bloklarını veya gerekirse else if bloklarını açık kapatan bir satırı bile yazacak olsanız.
+
+552
+01:09:15,847 --> 01:09:22,668
+Yoksa işte hocam ben yani nedense tutarsız sonuçlar alıyorum diyorsunuz bazen işte beklediğim sonucu elde edemiyorum.
+
+553
+01:09:22,888 --> 01:09:24,268
+Başka anlamsız şeyler geliyor.
+
+554
+01:09:24,888 --> 01:09:26,467
+Onun nedenlerinden bir tanesi de budur.
+
+555
+01:09:27,347 --> 01:09:28,507
+Nested if de yapabilirsiniz.
+
+556
+01:09:28,647 --> 01:09:30,187
+İç içe ifler de kullanılabilir.
+
+557
+01:09:30,187 --> 01:09:54,607
+tabi burada şeye dikkat etmek gerekiyor. Dangling else dediğimiz yani boşa çıkan bir else ifadesi. Bunu şöyle düşünelim. Şu if bloğumuz var. Şurada else ifimiz var. Burada else imiz var. Peki burada neye göre çalışacak? Şimdi A küçüktüreceği ise bunu göreceğiz. Değilse bunu çalıştıracağız.
+
+558
+01:09:54,607 --> 01:10:16,147
+tabi bu ifade A'nın B'den küçük olduğu durumlar için olur. Eğer A, B'den küçük değilse bir şart daha sunacağız. Bu şart doğruysa B küçüktür C olacak. Yani B küçüktür C ise. Şimdi A, B'den küçük, B, C'den küçük, şurada bir else var. Bu da return C yapıyor.
+
+559
+01:10:16,147 --> 01:10:31,767
+öyle bir if yapısı tasarlarsınız ki bu blog içerisinde mesela burada hep return return kullanılmış hiçbir şekilde hiçbir şartta else'lerden bir tanesi çalışmayabilir. Mesela burada hangisi çalışmaz?
+
+560
+01:10:40,500 --> 01:10:44,319
+Hangi şey çalışmaz, şu mu çalışmaz, şu mu çalışmaz?
+
+561
+01:10:48,595 --> 01:10:49,595
+veya çalışırım.
+
+562
+01:10:58,579 --> 01:11:02,659
+Geçen haftanın kayıtlarını şeyde paylaştım.
+
+563
+01:11:04,540 --> 01:11:09,059
+WhatsApp kanaldan takip ediyorsanız bir link var, o linke yükledim.
+
+564
+01:11:10,920 --> 01:11:14,299
+İzlemeye açılma şeklinde değil, onu kurtaramadılar.
+
+565
+01:11:14,719 --> 01:11:16,180
+Ayrıca şey yüklediler.
+
+566
+01:11:16,959 --> 01:11:18,619
+Online yıldızda yayınlanamıyormuş.
+
+567
+01:11:19,659 --> 01:11:22,739
+Bana gönderdiler, ben de şey yükledim, driver yükledim.
+
+568
+01:11:23,519 --> 01:11:27,539
+Evet, burada sıkıntılı bir şey var mı arkadaşlar?
+
+569
+01:11:28,579 --> 01:11:33,300
+A, B ve C değişkenlerinin farklı durumlarına göre sıkıntılı gördüğüm bir şey var mı?
+
+570
+01:11:39,347 --> 01:11:54,268
+A'nın B'den küçük olduğu durum, B'nin C'den küçük olduğu durum demiş. Şurada da diğer şartımız var. Evet. Var mı fiktor olan?
+
+571
+01:12:00,404 --> 01:12:11,404
+İyi o zaman düşün bakalım bu tarz şeyler. Şimdi Switch ifadesi çok kullanmayacağız ama zaman zaman bu iç içe geçmiş ifleri daha düzgün bir surette yazmayı sağlıyor.
+
+572
+01:12:11,404 --> 01:12:20,404
+Genel olarak şöyle işte Switch'te bir çoklu değer alacak bir expression yapıyorsunuz. Ve daha sonra parantez açıyorsunuz.
+
+573
+01:12:20,404 --> 01:12:27,404
+Daha sonra case'leri yazıyorsunuz. İşte case iki nokta diyorsunuz. Burada yapacağınız işlemleri söylüyorsunuz.
+
+574
+01:12:27,404 --> 01:12:44,244
+ve burada bir break kullanmak gerekiyor arkadaşlar. C programlamada dönem boyunca break ifadesini sadece switch içerisinde kullanabilsin. Bunun dışında herhangi bir yerde break kullanmanız ödevlerimizde, sınavlarımızda uygun değil. Bu olursa zaten çözümü kabul etmiyoruz.
+
+575
+01:12:44,944 --> 01:12:56,023
+Farklı case'leri söyledikten sonra işte kaç tane case'imiz varsa default case'imizde an altta default ile ifade ediyorsunuz. Her case için bir tane break kullanmak gerekiyor. Switch'ten dışarı çıkmak için.
+
+576
+01:12:56,023 --> 01:13:18,904
+Şimdi şu expression'ın şuraya gelmeden şöyle bir örnek bakalım. Çok fazla C'deki expression ifadesi böyle çok yönlü, çok farklı şekillerde kullanılabilir değil. Mesela day4 denmiş. Yani burada integer türde şeyler kullanabiliyoruz arkadaşlar.
+
+577
+01:13:18,904 --> 01:13:28,904
+Gidip de buraya başka bir şey her zaman sunamıyoruz. Mesela karakter gibi bir şey söyleyebiliriz.
+
+578
+01:13:28,904 --> 01:13:30,904
+C eşittir.
+
+579
+01:13:32,904 --> 01:13:33,904
+A diyelim.
+
+580
+01:13:36,904 --> 01:13:40,904
+O zaman burada da şuna bakacağız.
+
+581
+01:13:53,524 --> 01:13:57,264
+Peki, sizce bunun karakter de kabul etmesinin nedeni ne olabilir?
+
+582
+01:14:10,547 --> 01:14:23,807
+Niye böyle bir, hani, integer'ı kabul ediyor da diğerlerini niye kabul ediyor? Karakteri nasıl kabul ediyor? Bunun sebebi ne olabilir?
+
+583
+01:14:28,212 --> 01:14:54,751
+Evet, aslında bu da integer, aski değerlerine bakıyor. Yani aslında bir anlamda type testik tip dönüşümü gerçekleşiyor. Şuradaki değerin sayısal konucuna bakıyor. Bu da zaten bir C değişken. Karakter zaten bir anlamda integer'ın farklı bir hali. Buna bakıyor. Siz mesela bunun yerine girip 65 desek
+
+584
+01:14:54,100 --> 01:14:59,100
+Gerçi doğrudan hani ne yapacak? A dediğim şey 65 olursa gidecek bunu alacak.
+
+585
+01:15:00,499 --> 01:15:18,520
+Peki burada şunu kaldırsak ne olur? Bu renkleri kaldırsak ne olur? Şu 65'i sağlamayacağı için sağladı. Ondan sonra case 2'yi de göreceği için doğrudan hani bununla eşleştirmiyor. Bununla eşleşiyorsa şunu da da eşleştirecek. Ne yapıyor?
+
+586
+01:15:18,520 --> 01:15:20,739
+ve sonraki dalı. Bunu da kaldırsak.
+
+587
+01:15:26,836 --> 01:15:33,135
+Peki, burada C yerine ben 2 desem
+
+588
+01:15:37,747 --> 01:15:49,327
+iki şuna karşılık geldiği için hem buna hem de şuna karşılık çıkıyor. Mesela burada bir de default case koyalım.
+
+589
+01:16:00,564 --> 01:16:02,564
+Bu da mesela 22 oldu.
+
+590
+01:16:06,387 --> 01:16:17,787
+ne yapacak? Hiçbirine denk gelmediği için en son default olan yani varsayılı olarak yazılması gereken şeyi yazacak. Böyle bir kullanımı var. Ama mesela burada şunu yapamıyoruz.
+
+591
+01:16:17,787 --> 01:16:35,187
+k, c mesela 2 diyelim. Bu nedir? Bu bir stringtir. Bu stringe işte a, b desek. Buradan gelecek iki karakterli şeyi burada caserine bakalım.
+
+592
+01:16:35,187 --> 01:16:40,127
+ya bir mütevcir ya da karakter olması lazım. Veya float içinde bu yapılamıyor. Bunlara dikkat edelim.
+
+593
+01:16:41,728 --> 01:16:49,147
+While döngüsü bunlar bildiğimiz şeyler ama hızlıca önlemek verelim. While döngüsü şöyle bir condition veriyorsunuz.
+
+594
+01:16:49,707 --> 01:16:57,568
+Condition doğru olduğu gibi burası çalışıyor. Kabul edelim ki bu döngüdeki şu condition hiçbir zaman doğru olmadı.
+
+595
+01:16:57,568 --> 01:17:02,568
+Dolayısıyla while döngüsünün hiç çalışmama ihtimali var. Bu önemli.
+
+596
+01:17:02,568 --> 01:17:23,267
+Bir de while'in farklı yazılım şekilleri vardır. Bazen işte şöyle yapar, şunu şey yapar. Şöyle bir şey gibi. Buraya bir şart sunarsınız. Bu ne demektir? Eğer bu şartınız doysa sonsuz döngüye girer. Şartınız yalnızsa sonsuz döngüye girmez. Şu aradaki durduk yere açılmış kapanmış anonim bloğu işledir.
+
+597
+01:17:25,148 --> 01:17:32,507
+Do while döngüsü ise şeyden farkı nedir? İşte do deyip şöyle kapatıyorsunuz. Buraya while yazıyorsunuz.
+
+598
+01:17:32,568 --> 01:17:35,008
+Şart sonradan sorulduğu için burada condition
+
+599
+01:17:35,008 --> 01:17:39,767
+Döngün içerisindeki tekrarlı işlemlerin en az bir defa yapılma ihtimali var.
+
+600
+01:17:40,008 --> 01:17:43,267
+En az bir defa yapılır. Yapılma ihtimali var demek yanlış. Bir defa yapılır.
+
+601
+01:17:44,008 --> 01:17:47,807
+İki veya daha fazla olabilir. Şartınız doğruysa iki defa olur.
+
+602
+01:17:48,587 --> 01:17:53,068
+Üç defa olabilir. Artık şey olur. Şartınız yalnızsa bir defa çalışacaktır.
+
+603
+01:17:53,867 --> 01:17:56,087
+Oradan için zaten biraz önce detaylı söyledim.
+
+604
+01:17:56,087 --> 01:17:58,387
+Bir de null statement'lar var arkadaşlar.
+
+605
+01:17:58,387 --> 01:18:10,928
+bir şeyi göz ardı etmek için, omit etmek için, expressionlardaki şuradaki şeyleri omit etmek için
+
+606
+01:18:10,928 --> 01:18:14,447
+bazı ifadeler null statement dönemiyor.
+
+607
+01:18:14,447 --> 01:18:17,927
+Mesela şu get card geçen hafta derste görmüştük.
+
+608
+01:18:18,048 --> 01:18:23,027
+Mesela bir integer scanf yaptığımız, yani %D'li bir şey yaptığımız.
+
+609
+01:18:23,027 --> 01:18:32,188
+Sonra bir scanf veya işte buradaki gibi get var, bir de c aldığınızda bir önceki satırda girdiğiniz enter tuşu ne oluyordu?
+
+610
+01:18:32,507 --> 01:18:37,507
+Saklanıyordu. Dolayısıyla bu tarz şeyler eğer döngülerde kullanılacaksa dikkat etmemiz lazım.
+
+611
+01:18:38,067 --> 01:18:44,688
+Size bir karakter okuyor. Eğer bu karakter bir space karakteri ise yani boşluksa ne yapıyor?
+
+612
+01:18:46,328 --> 01:18:51,688
+Bir daha okutturuyor size. Ve döngü bakmış şurada ne yapmış? Hiç gövdesi olmadan kapatmış.
+
+613
+01:18:51,688 --> 01:18:54,508
+Bu ne demek? Şunu hatta kopyalıyorum.
+
+614
+01:18:58,260 --> 01:19:06,220
+boşluk dışında bir şey girene kadar karakter okumamızı sağlayacaktır.
+
+615
+01:19:21,747 --> 01:19:51,168
+şu an Enter giriyorum, boşluk giriyorum. Yani bu Get Car fonksiyonu tek basmalık, tek klavye hareketli bir şeydir. Enter giriyorum, boşluğa basıyorum, taba basıyorum. Hep bunlar boşluk şeyler. Ama bunun dışında mesela T'ye basayım. T'ye bastığında bu karakteri elde etti ve döngüden çıkabildik. Return 0'ı görecek şekilde. Bunlar işte bu tarz şeylerde mesela doğru düzgün bir karakter girilene kadar böyle bir döngü çevrebilirsiniz. Bakın ne oluyor?
+
+616
+01:19:51,747 --> 01:20:17,187
+Şurası boş. Aslında ne oluyor? Döngünün içindeki gördüğü kısmı şurada yapıyor. Peki şöyle bir şey yapmak. Şunu da söyleyelim. Integer i eşittir 1 diyelim. Diyorum ki noktalı birgür şu kısım boş olsun. i küçüktür 5 noktalı birgür.
+
+617
+01:20:17,187 --> 01:20:24,747
+Şurada işte j art artı gibi bir şeyler yapsın.
+
+618
+01:20:26,428 --> 01:20:28,447
+Print j yapsın.
+
+619
+01:20:28,447 --> 01:20:29,007
+Print f.
+
+620
+01:20:29,008 --> 01:20:33,428
+.
+
+621
+01:20:38,036 --> 01:21:00,296
+Şurada da i art art yap. Bu çalışır mı sizce? Şuradan ayrı düşünelim. Şuraya ayrı düşünelim. Bakın assignment kısmı boş. Chart kısmı bu şekilde. Şurası da boş. Ama aslında boş değil.
+
+622
+01:21:00,296 --> 01:21:02,775
+Çünkü
+
+623
+01:21:02,775 --> 01:21:04,515
+Tabi şey
+
+624
+01:21:04,515 --> 01:21:07,076
+Integra bir C değer atlayacağız
+
+625
+01:21:07,076 --> 01:21:09,376
+Bir C değişkeni tanımlayalım
+
+626
+01:21:13,684 --> 01:21:42,703
+Herhangi bir engel yok. Yani şurada bir şey iyi eşittir, biz yazmış olmak zorunda değiliz. Şurada da iyi artı artı yazmış olmak zorunda değiliz. Yani bu şartı olan müdahaleyi şurada yapıyoruz. Ama bunlar doğru programlama kullanımları değil. Bakın çalışıyor. Yani biz nasıl dizinin dördüncü elemanı derken bunu yazıyorsak, dördüncüsü dediğinde yine aynısı çıkıyorsa, şu ikinci de aynıdır. Bunu geçen derste konuştuk.
+
+627
+01:21:42,703 --> 01:22:01,343
+Ama yani biz burada programlama tırıyı yapmayacağız. Sonuçta bir problemi çözen program yapıyoruz ve bunun herkes tarafından anlaşılmasını istiyoruz. Dolayısıyla ne olacak arkadaşlar? Şunu şuraya yazmak ve inturization'da burada yaptığımız bir söylemeler en doğru, düzgün olanı şeyler değil.
+
+628
+01:22:08,756 --> 01:22:31,875
+Bir de şu var. Bir if ifadesinde noktalı birbiri buraya koyarsanız ne olur? Kabul edebilirim ki C'nin değeri 1'e eşitse buradan true sonucu çıktı. True sonucundan dolayı siz hiçbir şey yapmıyorsunuz demektir.
+
+629
+01:22:31,875 --> 01:22:41,975
+c'nin değeri 1'e eşit değilse ne yapıyorsunuz? O noktalı birgilden bir sonraki eylemi yapacağınız için ne oluyor?
+
+630
+01:22:41,975 --> 01:22:53,875
+J'yi 0 yapıyoruz. Veya bir diğer yanlış yapılan şey de şu if dediniz j eşittir 0 dediniz. Veya while dediniz i eşittir 5 dediniz.
+
+631
+01:22:54,815 --> 01:22:58,475
+Şimdi şuradaki sonuçlu mu çıkar? Olsun mu çıkar? Bu ne iş yapar?
+
+632
+01:23:10,003 --> 01:23:12,003
+Birincinin sonu nedir?
+
+633
+01:23:42,484 --> 01:24:02,084
+Birincide atama yapıyoruz. C eşittir sıfır ataması. Ve orada sıfır diye bir sonuç çıkıyor. Yani bu false dediğimiz bir ifade. Burada da i eşittir beştir. Beş dediğimiz şey çıkıyor. Yani şu sonsuz döngü yapacaktır. Birincisi de şartı doğru olmayan bir if sonucu karşımıza getirecektir.
+
+634
+01:24:02,084 --> 01:24:07,484
+İçişe döngüler bildiğimiz şeylerdir diye düşünüyorum.
+
+635
+01:24:08,303 --> 01:24:10,924
+Hocam ben içişe döngülere dair hiçbir fikrim yok diyen var mı?
+
+636
+01:24:11,924 --> 01:24:13,943
+Hiç görmedim, bilmiyorum ya.
+
+637
+01:24:15,984 --> 01:24:17,123
+Nasıl çalıştığına dair.
+
+638
+01:24:19,684 --> 01:24:21,884
+Sadece kısaca şuradan o zaman şunu göstereyim.
+
+639
+01:24:43,764 --> 01:24:46,163
+Mesela çarpım tablo dediğimiz şey.
+
+640
+01:24:50,996 --> 01:25:17,855
+Şimdi, bu sisteme alt krimklere takılmıyor arkadaşlar. Bakın burada bir kordon gütü var. Bu kordon gütü hiç parantez falan açmamış. Şurada bir değer yazılıyor. Yani C, 1'den 9'a kadar değerler yazılacak. Sonra alt satıra geçiliyor. Sonra bakın şurada, I eşittir 1'den 9'a kadar, C eşittir 1'den 9'a kadar demiş. Ve şurada açılan şey şurada kapanıyor. Şurada açılan şey şurada kapanıyor.
+
+641
+01:25:17,855 --> 01:25:39,115
+ne olacak? Bu I1, J1 için çalışacak. Ondan sonra I1, J2 için çalışacak. I1, J3 için çalışacak. En son I1, J9 için çalışacak. J'nin değeri 10 olacak. J'nin değeri 10 olduğu için ne olacak? Bu döngü tekrar etmeyecek. Şöyle şuraya alalım hatta.
+
+642
+01:26:06,484 --> 01:26:13,043
+Yani İ ve C'yi şu şekilde analiz edecek olursak, İ değeri, G değeri, bire birden başlıyor da
+
+643
+01:26:13,043 --> 01:26:28,244
+Bire ikiyi çalıştıracak, bire üçü çalıştıracak, nokta nokta nokta, bire dokuza gelecek, bire on olacak ama repeat etmeyecek, repeat etmediği için bu döngü iptal, daha sonra ikiye birden devam edecek.
+
+644
+01:26:28,244 --> 01:26:34,984
+Zorası en içteki döngü, inner loop, tamamlanmadan dıştaki döngüye sıra gelmiyor
+
+645
+01:26:44,020 --> 01:27:02,020
+Şimdi break, continue ve go to ifadeleri programlamada var. Yerine göre kullanmak gerekebiliyor ama algoritma tasarımını birazcık ihlal ettiği için ve tasarım kurallarına aykırı olduğu için biz hiçbir şekilde switch dışında break kullanımını hariç tutalım.
+
+646
+01:27:02,819 --> 01:27:07,020
+Hiçbir yerde break, continue ve go to ifadelerini kullanmayacağız arkadaşlar.
+
+647
+01:27:07,020 --> 01:27:13,020
+Bunlar do not biz herhangi bir ödevinizde işte laboratuvarda çözümlerinizde bunları istemiyoruz.
+
+648
+01:27:14,020 --> 01:27:32,700
+Evet şimdi preprocesörlere bakalım biraz artık yeni konularımız. Birinci preprocesörümüz makro prosesörü. Makro dediğim şey bir substitution arkadaşlar. Normalde makro, Excel'de hiç makro kullananımız var mı arasında?
+
+649
+01:27:37,939 --> 01:27:59,579
+bir görevi kaydediyorsunuz ve o kaydettiğiniz görevi daha sonra çalıştırdığınızda o görevle neler tanımlanırsa sizin için yapıyor. Bir anlamda bir fonksiyon ama fonksiyonla farkı var size. Mesela diyorum ki arkadaşlar, ben şuraya veriler gireceğim. İşte bir gireceğim, iki gireceğim.
+
+650
+01:27:59,579 --> 01:28:03,979
+Şuradaki verileri şuraya bir buton ekleyeceğim
+
+651
+01:28:03,979 --> 01:28:10,719
+Burada buton nereden ekleniyordu? Hadi bakalım bulabilirsek
+
+652
+01:28:10,719 --> 01:28:17,779
+Şu simgelerden şöyle bir buton ekleyelim
+
+653
+01:28:17,779 --> 01:28:24,480
+Ben buradaki butona bastığımda şuradaki değer
+
+654
+01:28:24,480 --> 01:28:27,340
+Şunlar hop yalanacak
+
+655
+01:28:27,339 --> 01:28:43,319
+Şuradaki sayfa 2'ye mesela şurada üst kısma sürekli mesela 1-2 gelsin. Ondan sonra bir şey gelsin. Bu 1-2 aşağıya gitsin. Böyle ne zaman butona basarsan şey olsun. Bunun için şunu yapıyorum. Önce şurayı silelim.
+
+656
+01:28:45,899 --> 01:28:55,679
+Ekle diyelim. Makro nerede burada? Makro, makro, makro. Makro kaydet diyoruz. Makro bir olsun.
+
+657
+01:28:57,340 --> 01:29:05,340
+Şimdi diyorum ki şurayı kopyalay. Şu an kaydediyoruz. Şurayı kopyalay. Şuraya gel. Şuraya bir satır...
+
+658
+01:29:19,315 --> 01:29:33,555
+Veya şöyle diyelim, şunu buraya yapıştır, ondan sonra çık bir tane ekle. Bakın hiçbir böyle anlamsız görünem bir şeyler yap. Sonra buraya geri gel. Nerede bu makroşeyi?
+
+659
+01:29:35,572 --> 01:29:37,572
+übetliği kaydetmelik.
+
+660
+01:29:40,572 --> 01:29:42,572
+Herhalde şu an kaydetmiştir.
+
+661
+01:29:46,036 --> 01:29:53,715
+makroları görelim. Bakın makro 1 diye bir şey var. Ben diyorum ki şuna gel makro açar.
+
+662
+01:29:55,956 --> 01:30:05,235
+Burada bir şey bakın artık bu tıklanabilir hale geldi. Şimdi şuraya 1 ve 2 ekle diyorum. Yazdım, tıkladım. Ne yaptı? Geldi bunu buraya kaydedi.
+
+663
+01:30:05,235 --> 01:30:30,396
+2 ve 3 diyorum. Geldim tıkladım. Bunu buraya getirdim. Artık bunu ne yaparsınız? Böyle bir şeyiniz varsa tıklarsınız. Yani bunu kaydedersiniz. Bir tarafa böyle kaydeder. Bu bir makrodur. Hatta bunun arka planında kodu var. Farklı bir dilde yazılıyor. Makro diyelim. Makroları görüntüle.
+
+664
+01:30:30,396 --> 01:30:50,855
+düzenle dediğimizde çıkıyor bakın. Şöyle diyor ki ben bu makroyu çalıştırdığımda şuradan bir selection yap, range'i seç. Ondan sonra bunu kopyala. İkinci sayfada bir yere git. Sonra onu oradan seç. Oraya yapıştır. Sonra işte alta bir tane şey ekle ve bir kod var.
+
+665
+01:30:50,855 --> 01:31:19,675
+Bunun kendine ait güzel bir dili var. Biz bunu C'de de yapabiliyoruz. Bunu göreceğiz. Makro tasarlarken ön işlemcidir bu bunlar arkadaşlar. Aynısı define ve max on yazmak gibidir. Burada diyoruz ki define ifadesi de başta. Bunun makro olacağını söylemek için bir kere şöyle iki kelimeli bir şey, bir eylem ifadeden bir şey yazmak iyi oluruz.
+
+666
+01:31:19,675 --> 01:31:48,155
+İşte ne bileyim minimum değer minimum vali gibi bir şey. Sonra boşluk bırakıyorsunuz. Bu makroya karşılık gelen ifadeyi yazıyorsunuz. Eğer ifadeniz aşağıya taşacaksa slash işaret koyup devam edeceksin. İlla buradaki olduğumuz string değil. Bu herhangi bir C'deki olduğu gibi noktalı bir gibi bitirilmiyor artık. Ve makronun mutlaka tanımından sonra yapmanız gereken şey şuraya şey yazın. Boşluk koymayın. Bunu teker teker görelim.
+
+667
+01:31:57,555 --> 01:32:08,375
+define macro 1. En basit macro, örneğin sürekli kullanacağınız bir stringimiz vardır. İşte menü diyelim mesela. Menü yaz.
+
+668
+01:32:11,923 --> 01:32:30,923
+Hoşgeldiniz. Backslashen bir toplama. Backslashen iki çıkarma dediniz. Eğer ki bunu aşağıdan devam etmek istiyorsanız şöyle bir slash koyuyorsunuz.
+
+669
+01:32:34,547 --> 01:33:03,267
+backslash, N, 3 çarpma. Sonra bu ifadeyi çağırıyoruz. Aslında çağırmıyoruz. O bize geliyor. Normal bir fonksiyon çağırılır arkadaşlar. Bakın ben ff fonksiyonu şu şekilde çağırdığımda programın akışı yedinci satırdan onuncu satıra geçen bir şey. Ama burada makroyu anımladığımda kod içerisinde yazdığınızda, işte mesela burada bir yüzde s yazılacak.
+
+670
+01:33:04,547 --> 01:33:31,247
+Diyelim ki bu yüzde şurada menü alttan pre yaz diye ifade etmiş. Daha derleme aşamasındayken bakın ilk hafta bunu size anlattım. O kayıtlı kodlara bakarsanız şu menü yaz kayboluyor. Bakın şurada onun karşısında ne varsa geliyor. Aslında ne oluyor? O bizim yazdığımız yere getiriliyor, kopyalanıyor ve kod expansion ediliyor.
+
+671
+01:33:31,247 --> 01:33:36,567
+şu kadar yazdığımız şeyin yerine şurada yazdığımız string ipad gelip kopyalalım.
+
+672
+01:33:37,227 --> 01:33:44,187
+Hocam ne kolaylığı var? Fonksiyona göre ne fark var? Fonksiyona göre en temel farkı biz fonksiyona dallama branş yapıyoruz.
+
+673
+01:33:44,908 --> 01:33:51,327
+Yedinci satıra, onuncu satıra gidiyorum. Bu stack memory'in kullanılması, fazladan kullanılması anlamında.
+
+674
+01:33:51,527 --> 01:33:59,727
+Burada öyle bir şey yok. Daha zaten program derlenmeden bile, yani hiç daha bellek çalışma aşamasına gelmeden ne yapıyorsun?
+
+675
+01:33:59,728 --> 01:34:01,708
+şöyle bir şey getirip buraya yapıştırıyor.
+
+676
+01:34:02,287 --> 01:34:03,827
+Kod yazmayı kolaylaştırıyor.
+
+677
+01:34:04,448 --> 01:34:12,387
+Böyle çok sık kullanılan işte p sayısı olabilir veya çok birazdan göreceğiz başka fonksiyon alan şeyi, parametre alanları var.
+
+678
+01:34:12,387 --> 01:34:22,167
+Çok kullanılacak böyle bazı operasyonları makro yazmak programın daha rahat yazılmasını, kısmen daha hızlı olmasını sağlayabiliyor.
+
+679
+01:34:22,287 --> 01:34:25,488
+Fonksiyon tanımlamaya göre hızlı bir şey.
+
+680
+01:34:25,848 --> 01:34:27,547
+Çünkü kodun kendisi var burada zaten.
+
+681
+01:34:27,728 --> 01:34:29,027
+Hiçbir fonksiyona gitmiyorsun.
+
+682
+01:34:29,728 --> 01:34:58,788
+Bunu böyle söylemiş olalım. Evet mesela buffer length'imiz var. 512 diye buraya bir değer tanımlayacaksınız. Burada parantez kullanılmış. Hiç sıkıntı değil. Ne oluyor? Bu bir süre sonra direkt 512 yazmadık ki hani şey olsun diye. Şunun yerine değerleme aşamasına ne olacak? Buraya gelip olduğu gibi kopyalım. Bu bize ne değer döndürecek? 512 değerini döndürüyor. Dolayısıyla 512 uzunluklu bir karakterimiz oluşacak.
+
+683
+01:34:58,787 --> 01:35:20,227
+Peki bunu foksiyon benzeri makrolar yaparken ne yapacağız? Aynı ama diyorsunuz ki bu bir tane parametre alacak veya iki tane parametre alacak. İşte bir sayıyı iki ile çarp. Şimdi bir sayıyı iki ile çarpmak aslında kendisi de toplamak demek. Çarpma işlemi işlem türesi açısından biraz maliyetlidir.
+
+684
+01:35:20,227 --> 01:35:26,627
+Toplama yaparsanız eğer bir sayının 2 çarpı A mı daha hızlı olur? A artı A mı daha hızlı olur?
+
+685
+01:35:26,687 --> 01:35:29,747
+Derseniz A artı A mikro işlemci seriyetinde daha hızlı olur.
+
+686
+01:35:30,347 --> 01:35:32,727
+Dolayısıyla ne yapıyor? Bu şekilde bir tanımlama yapılmış.
+
+687
+01:35:33,387 --> 01:35:37,267
+Ben bunu çağırırken, bakın şu çağıracağım şeyde noktalı bilgiyi kullanıyorum.
+
+688
+01:35:37,367 --> 01:35:40,287
+Çünkü bu makronun çağrısı ve burada bir ifade, bir atama var.
+
+689
+01:35:40,387 --> 01:35:42,247
+Atama nedeniyle noktalı bilgiyi kullanıyorum.
+
+690
+01:35:42,887 --> 01:35:46,187
+Ama bu makroyu tanımladığım yerde hiçbir şekilde noktalı bilgiyi koymayın.
+
+691
+01:35:46,787 --> 01:35:50,027
+Şuraya parametresini yazacağım. Şuraya da o parametrelin gereğini yapacağım.
+
+692
+01:35:50,027 --> 01:36:08,047
+Şimdi bunun bir yan etkisi var. Onu göstereyim. Parametreleri kullanırken şey çok önemli değil de. Parantez kullanmak önemli. Define. Saatımız oturum geçiyor. Bunlar bir kere herhalde.
+
+693
+01:36:08,047 --> 01:36:31,708
+mark by bu. Bir a sayısı alacağız dedik. Diyorum ki a artı a. Bu şekilde yaz. Menü yaz dedim. Print et diyorum. Bir %d ile bunu gösterelim. Veya illa ki %d olması gerekiyor. Integer x diyelim eşittir.
+
+694
+01:36:31,707 --> 01:36:33,707
+multiplication.
+
+695
+01:36:34,739 --> 01:36:48,739
+by, tool, 5 gönder. Ve şurada da ikisinin değerini yazdık. Bu normal kullanım.
+
+696
+01:36:55,091 --> 01:36:59,611
+Şurada da negatif sayılım, eksi üç diyelim.
+
+697
+01:37:04,819 --> 01:37:11,659
+birincisi de 10, öbürüm de x6. Şunlara da bir x6 yani kod. Ama burada şöyle bir durum var arkadaşlar.
+
+698
+01:37:13,700 --> 01:37:20,539
+Kabul edeyim ki ben, şu kodu şöyle alayım. Arkadaşlar pardon bir saniye. Efendim.
+
+699
+01:38:10,484 --> 01:38:20,883
+Şimdi şu eksi 3 yerine şöyle bir şey versek 2 çarpı 3 verelim arkadaşlar.
+
+700
+01:38:24,435 --> 01:38:26,435
+Şurada ne görürüz?
+
+701
+01:38:28,435 --> 01:38:30,435
+Şunun sonucunda.
+
+702
+01:38:43,060 --> 01:38:46,259
+Bir sıkıntı olur mu? Göreceğim bir ayak.
+
+703
+01:38:47,759 --> 01:38:51,799
+12 görürüz. Şimdi bakın, aslında bu ne olacak? Neye dönüşecek arkadaşlar?
+
+704
+01:38:53,339 --> 01:38:56,179
+Ben bu kodu çağırdığımda şuradaki ifade şuna dönüşecek.
+
+705
+01:38:56,999 --> 01:39:01,139
+2 çarpı 3 artı 2 çarpı 3'e dönüşecek.
+
+706
+01:39:01,919 --> 01:39:05,259
+Ben buraya çünkü böyle bir ifade göndermiyorum, şu geliyor.
+
+707
+01:39:05,839 --> 01:39:12,679
+2 çarpı 3 değil de 2A3 desem, yani gerçi A denmez de ne diyebiliriz?
+
+708
+01:39:13,060 --> 01:39:18,560
+Başka bir sembol koyayım diyorum.
+
+709
+01:39:22,560 --> 01:39:23,859
+Alttan tre koyalım.
+
+710
+01:39:25,659 --> 01:39:27,760
+Compile dediğimde zaten bunu kabul etmiyor.
+
+711
+01:39:27,879 --> 01:39:31,740
+Buraya diyor ki bir integer constant yazmam lazım.
+
+712
+01:39:32,560 --> 01:39:33,499
+Bu bu şekilde olacak.
+
+713
+01:39:34,839 --> 01:39:35,859
+Şimdi bunda sıkıntı yok.
+
+714
+01:39:36,280 --> 01:39:37,719
+Şimdi ben şöyle bir macro daha yazacağım.
+
+715
+01:39:39,799 --> 01:39:40,199
+Define.
+
+716
+01:39:40,199 --> 01:39:42,379
+S küre diyelim.
+
+717
+01:39:42,659 --> 01:39:43,920
+Bir şeyin karesini aldım.
+
+718
+01:39:44,659 --> 01:39:45,760
+X diye bir şey alalım.
+
+719
+01:39:47,820 --> 01:39:50,460
+Ve burada X çarpı X diyorum.
+
+720
+01:39:54,739 --> 01:39:57,559
+Ben aynı şekilde şunu alıyorum.
+
+721
+01:40:01,619 --> 01:40:03,619
+sqr fonksiyonunu çağırdım.
+
+722
+01:40:06,619 --> 01:40:11,699
+Şey, sqr macrosunuk yazdım. İki çarpı üç. Burada ne göreceğiz konuştu?
+
+723
+01:40:33,332 --> 01:40:46,811
+36. 36 değil arkadaşlar maalesef. Pardon, burada evet 36 oldu. Soruyu şöyle diyeyim. 2 artış diyor. Yanlış yaptım.
+
+724
+01:40:52,467 --> 01:41:15,487
+25. İşte 25 değil. Şimdi 2 artı 3 buraya gittiğinde bu kod nasıl dönüşecek? 2 artı 3 çarpı 2 artı 3 şeklinde dönüşecek. Dolayısıyla ne oluyor? Bu kod bu hale geldiyse sizin buradan elde edeceğiniz şey 13 olacaktır. Önce çarpmayı, ondan sonra toplamayı.
+
+725
+01:41:15,487 --> 01:41:19,927
+Peki bunu nasıl üstesinden geliriz?
+
+726
+01:41:20,547 --> 01:41:23,807
+Bu tarz bir makro tasarladığında SQR1 diyelim
+
+727
+01:41:23,807 --> 01:41:29,347
+Tanımladığımız yerde
+
+728
+01:41:29,347 --> 01:41:32,127
+Parantez kullanacağız
+
+729
+01:41:32,127 --> 01:41:35,987
+Her bir şey için, parametre için
+
+730
+01:41:35,987 --> 01:41:38,187
+Dilekli şu bir parantez içinde altın
+
+731
+01:41:38,187 --> 01:41:44,247
+Şunu da bir parantez içerisinde alalım
+
+732
+01:41:44,247 --> 01:42:14,227
+Altyazı M.
+
+733
+01:41:48,020 --> 01:41:51,699
+Şöyle
+
+734
+01:41:51,699 --> 01:41:52,900
+çağıracağım.
+
+735
+01:41:56,500 --> 01:42:21,840
+Burada çalışacak olan kod parantez 2 artı 3 parantez 2 artı 3 örnekleri bilerek bu şekilde aşamalı yaptım. Bakın burada şöyle bir kod yazdığımda eğer bu toplamaysa ve burada yaptığım şey mesela 2 artı 3 gönderebilirim, 2 çarpı 3 gönderebilirim. Sıkıntı yok. 2 artı 3 göndersen ne olacak?
+
+736
+01:42:21,840 --> 01:42:28,500
+2 artı 3 artı 2 artı 3 yani bir sürü 2 artı 3 de bir tane artı 3 tane artı görürsün.
+
+737
+01:42:29,080 --> 01:42:32,200
+Çarpı göndersen zaten çarpmanın kendisine göre önceliği var.
+
+738
+01:42:32,340 --> 01:42:36,959
+Burada şuradaki operatörden kaynaklı sıkıntı yok ama normalde bunda da yazmamız lazım.
+
+739
+01:42:36,959 --> 01:42:38,260
+Ama bakın ne oluyor?
+
+740
+01:42:38,979 --> 01:42:42,159
+Burada bir işte dikkat etmek gereken durum var.
+
+741
+01:42:42,340 --> 01:42:43,799
+İşte buna koyşun diyelim.
+
+742
+01:42:47,559 --> 01:42:49,659
+Bu uyarıya dikkat etmemiz gerekiyor.
+
+743
+01:42:49,659 --> 01:43:03,260
+şunun gereği de burada düzenleniz lazım. Peki iki sayıdan en küçüğünü bulan bir makro tasarlayalım. Conditional operatörü gördük.
+
+744
+01:43:04,319 --> 01:43:10,059
+Burada karşımıza birkaç farklı şey gelecek. Ona göre de dersi sonlandırırız arkadaşlar.
+
+745
+01:43:10,059 --> 01:43:23,019
+define mean diyorum. Şimdi iki tane sayı gelecekse iki tane buraya parametre almanız lazım.
+
+746
+01:43:23,939 --> 01:43:28,899
+Şurada olduğu gibi a, b, ben x, y dedim. O zaman bundan sonra şunu diyeceğiz.
+
+747
+01:43:28,899 --> 01:43:32,860
+Şimdi bizim burada conditional operatörün nasıl çalışıyor?
+
+748
+01:43:32,860 --> 01:44:02,839
+şöyle bir şeydir. Önce şart itiniyoruz. X küçükse Y'den, conditional operator, X'i gönder, Y'i gönder. Hatta daha düzgün yapmak için X küçük eşittir Y'den diyelim. Çünkü zaten eşitse ikisi de aynı yönetir. Şöyle bir şey yazabiliriz. Ama burada yine gelecek olan şeyler, parametreler karmaşık olabileceği için bir kere bu ifadenin kendisi bütünsel bir reyim içinde
+
+749
+01:44:02,839 --> 01:44:23,500
+tercih etmiş. Şunu bu parantez içerisinde almak en doğru. Bir de gelen değişkenleri tek tek parantez içerisinde almamız gerekiyor. Çünkü olur da bir gıcıklık olur. Bunu bu şekilde yüceltabiliriz. Aklıma bir şey geldi. Şimdi bunu çalıştırmadan bir de onu dönelim.
+
+750
+01:44:36,148 --> 01:44:39,888
+Şimdi Secure bir fonksiyonu, Secure bir makrosuna.
+
+751
+01:44:40,887 --> 01:44:41,187
+Şunu.
+
+752
+01:44:45,779 --> 01:44:47,319
+2 artı 3 değil de
+
+753
+01:44:48,339 --> 01:44:49,619
+şöyle çağırsak
+
+754
+01:44:51,919 --> 01:44:52,939
+bunda ne görürüz
+
+755
+01:44:56,019 --> 01:44:57,299
+şöyle yukarı alalım
+
+756
+01:44:58,059 --> 01:44:59,339
+daha göremiyorum
+
+757
+01:45:04,220 --> 01:45:04,979
+şurada
+
+758
+01:45:07,800 --> 01:45:15,219
+bakın burada tam böyle çünkü bu ne olacak? s küreye bir x çarpı x ama benim buradan gönderdiğim şey 2 artı 3
+
+759
+01:45:15,779 --> 01:45:20,800
+çarpı 2 artı 3, yani parantez içerisinde gönderir.
+
+760
+01:45:25,587 --> 01:45:27,027
+Nerede onları olacak?
+
+761
+01:45:30,547 --> 01:45:31,228
+Çağlaş
+
+762
+01:45:35,220 --> 01:46:04,220
+Şurada mı? Satır numarası söyler misin? Ha tabii tabii şey 13 değil, şunlar 11 evet. Yani anladım. Evet şurası 11 olacak. Şimdi burada baktığımızda o zaman şey şu da 2 artı 3 yani bu 25 olacak. Bunları yanlış yapmayalım. Şurada gönderdiğimizde 2 artı 3 çarpı 2 artı. Bakın burada 25'i göreceğiz.
+
+763
+01:46:05,220 --> 01:46:11,100
+13'ü yukarıda bir arkadaş yazdı diye.
+
+764
+01:46:11,100 --> 01:46:13,120
+Her da sen yazmışsın tamam.
+
+765
+01:46:14,539 --> 01:46:16,300
+Bu şekilde düşünelim.
+
+766
+01:46:17,859 --> 01:46:19,800
+Minimum bulurken de şunu yapacağız.
+
+767
+01:46:20,839 --> 01:46:21,740
+Print et diyorum.
+
+768
+01:46:22,740 --> 01:46:23,199
+Üzlede.
+
+769
+01:46:26,612 --> 01:46:30,072
+minimum 3,1,7
+
+770
+01:46:38,292 --> 01:46:40,371
+...
+
+771
+01:46:45,332 --> 01:46:51,211
+Şimdi şunu birazcık genişletelim. Ben 3 sayının
+
+772
+01:46:51,211 --> 01:46:55,571
+3 sayının
+
+773
+01:46:55,412 --> 01:47:16,471
+minimumunu istiyorsam. Şöyle bir şey yazabiliriz değil mi? Bunu üç genişleterek yazabiliriz. Bunu zaten size çalışma sorusu olarak vereceğim. Şunu, şu kısmı size çalışma sorusu doldu. Peki ben şunu kullanarak üç sayının
+
+774
+01:47:16,471 --> 01:47:46,452
+Altyazı M.
+
+775
+01:47:20,307 --> 01:47:21,747
+en küçüğünü nasıl bulalım?
+
+776
+01:47:24,067 --> 01:47:29,728
+Aslında üçlüyü yazmaya gerek yok. Eğer iki tanesini kullanıyorsam şöyle bir şey yapabilirim.
+
+777
+01:47:30,627 --> 01:47:33,307
+Minimum 2,6
+
+778
+01:47:33,307 --> 01:47:38,967
+şurada da 7. İstersen bunu dört sayı için yap. Minimum
+
+779
+01:47:38,967 --> 01:47:42,967
+3,8. Şu yediyi silerim.
+
+780
+01:47:45,907 --> 01:47:47,728
+Şimdi ben bu kodu
+
+781
+01:47:47,728 --> 01:47:50,287
+expand ettiğimde
+
+782
+01:47:50,307 --> 01:48:02,708
+Sının için şu gelecek, bunun için bu gelecek, bir de en genel için en genel hali gelecek ve kodun nasıl genişlediğini gördüm.
+
+783
+01:48:03,567 --> 01:48:05,488
+Ben yine elbette sonuçta şurada.
+
+784
+01:48:10,228 --> 01:48:17,587
+3 argüman gerekiyor. Tabii şunu yazdık ya, şunu silelim. Min versiyon 2 diyelim veya min 3 diyelim.
+
+785
+01:48:21,716 --> 01:48:24,716
+Şurada da bir tane parantez eksiğimi bu arada.
+
+786
+01:48:27,716 --> 01:48:28,716
+İkiyi bana veriyor.
+
+787
+01:48:28,716 --> 01:48:37,716
+Şimdi hatırlarsanız size ilk hafta bir şey yapmıştık, uygulama yapmıştık ilk derste.
+
+788
+01:48:39,716 --> 01:48:40,716
+Şu benim kodum.
+
+789
+01:48:40,716 --> 01:48:46,716
+Ben bu kodu terminalde bakalım burada GCC çalışıyor mu?
+
+790
+01:48:51,060 --> 01:49:11,959
+G, C, C burada çalışmıyor. Ama hatırlarsanız G, C, C dedik. Ondan sonra C, C, C dedik. Tresav. Temps demiştik. Tresav. Ondan sonra neydi? Soru 1.O diye.
+
+791
+01:49:11,959 --> 01:49:16,959
+Hatta bu GCC'nin tam yolunu bir bulayım ben bilgisayarında bir saniye
+
+792
+01:49:16,959 --> 01:49:23,659
+Pete eklemeye gerek yok şimdi hiç vaktimiz çok yok
+
+793
+01:49:28,340 --> 01:49:29,340
+Çılığa sebe.
+
+794
+01:49:37,203 --> 01:49:50,603
+Bunu sürekli yazmak istemiyoruz. Şey yapacaksak şöyle yapacağız. Program files'in içindeki, dfcpp'in içindeki gcc'ye bunu gönder. Atladığımız bir şey yoksa bu böyle olacak.
+
+795
+01:49:50,603 --> 01:50:06,703
+x86
+
+796
+01:50:04,180 --> 01:50:07,379
+Bu pahalı şey olduğu için böyle bir cmd açayım.
+
+797
+01:50:10,547 --> 01:50:21,267
+Anastop, CD desktop, CD hafba x.
+
+798
+01:50:42,100 --> 01:50:43,639
+şu peti tanıtamadık.
+
+799
+01:50:45,100 --> 01:50:45,560
+Niyeyse.
+
+800
+01:50:46,059 --> 01:50:56,819
+Neyse, onu size bırakayım. Yani şu save tent dosyasını, bunu açtığınızda kodu değerlerseniz, değerlediğiniz yerde şunun genişletilmiş haline bakın.
+
+801
+01:50:57,600 --> 01:51:02,659
+Şurada yazdığınız ifadenin şunun biraz daha karmaşık, dört değişken olacak halini görüntü.
+
+802
+01:51:02,759 --> 01:51:03,600
+Onu da size bırakalım.
+
+803
+01:51:04,020 --> 01:51:06,659
+Ama üçte halinde kendiniz şurada yazın arkadaşlar.
+
+804
+01:51:07,699 --> 01:51:08,679
+Burada bir sorumuz var mı?
+
+805
+01:51:08,679 --> 01:51:10,679
+Evet.
+
+806
+01:51:12,115 --> 01:51:20,115
+Şimdi bu makroyu biz bu şekilde yazıyorsak daha değerlenmeden geliyor. Yani bu tamamen bir substitution arkadaşlar.
+
+807
+01:51:23,335 --> 01:51:29,115
+Substitution var, no jump. Yani bir fonksiyon dallanması, atlaması yok.
+
+808
+01:51:30,115 --> 01:51:38,515
+Dikkat edelim. Şu side efektlere mesela ben minimuma böyle bir şey gönderdiğimde ne olacak? Bunların konuşlarıma sizler bakarsınız.
+
+809
+01:51:38,515 --> 01:52:01,675
+Macro ile fonksiyonların arasındaki fark. Şimdi macronun avantajı nedir? Fonksiyonların çağrısından gelecek olan overhead'i macro da yapmıyorsunuz. Çünkü fonksiyonu çağırmıyorsunuz. Bir diğer avantajı herhangi bir tip kısıtlaması olmadan makrolar konumlayabilirsiniz. Dolayısıyla birkaç data türünü destekleyebilir şekilde. Bunlar avantajları.
+
+810
+01:52:01,675 --> 01:52:03,935
+Rezorantajlarına baktığımızda
+
+811
+01:52:03,935 --> 01:52:14,295
+her makroyu çağırdığınızda yani yazdığınızda onun makronun tekrardan gelip yapıştırılması yani substitution yapılması lazım.
+
+812
+01:52:14,435 --> 01:52:21,655
+Bu da farklı side efektlere biraz önce bahsettiğimiz side efektlere yani yan etkilere meydan verebilir.
+
+813
+01:52:22,955 --> 01:52:26,655
+Fonksiyon işte tanımlanmadan olacağı için kodu uzatabiliyor yer yer.
+
+814
+01:52:26,655 --> 01:52:29,195
+Böyle durumlar var. Kod tekrar olabiliyor.
+
+815
+01:52:29,196 --> 01:52:54,016
+Bazen kodu debug etmeyi zorlaştırıyor. Mesela biz debug ederken doğrudan breakpoint koyup debug yapabiliyoruz. Ama makrolarda böyle bir debug yok. Çünkü mesela ben şuraya breakpoint koysam, execute ve debug desem, yes diyelim, bu satıra gelene kadar kod çalışıyor. Ama bu satıra gelene kadar makro diye bir şey kalmıyor zaten. Şunun yerine şuradaki kod gelip yapıştırılmış oluyor.
+
+816
+01:52:54,016 --> 01:52:59,016
+Ben bu makro doğru mu çalışacak, yanlış mı çalışacak? Test edebilmem biraz doğrulaşıyor.
+
+817
+01:52:59,016 --> 01:53:02,016
+C-Bug yapmada böyle sıkıntılarımız olabiliyor.
+
+818
+01:53:02,016 --> 01:53:08,016
+Makro definition'ını kaldırabiliyoruz. Bunları birazcık buradan anlatalım dersi sonlandırıca.
+
+819
+01:53:08,016 --> 01:53:17,016
+Örneğin sen false 1 diye bir define yaptın. Bununla alakalı bir kod üzerinde işlemler yapıyorsun.
+
+820
+01:53:17,016 --> 01:53:24,015
+Bundan sonra bunu undefination yapıyorsun, geçersiz kılıyorsun. Sonra diyorsun ki bu satırdan ilkbaren false scroll olacak.
+
+821
+01:53:24,015 --> 01:53:26,175
+Define, undefine
+
+822
+01:53:26,175 --> 01:53:29,336
+Bazı built-in makrolarımız var
+
+823
+01:53:29,336 --> 01:53:32,895
+Siz kod içerisinde mesela line yazdığınızda
+
+824
+01:53:32,895 --> 01:53:36,135
+Force kodun kaçıncı noktasındasınız
+
+825
+01:53:36,135 --> 01:53:37,595
+Hangi dosyadasınız
+
+826
+01:53:37,595 --> 01:53:38,555
+Saatiniz kaç
+
+827
+01:53:38,555 --> 01:53:39,435
+Tarihiniz kaç
+
+828
+01:53:39,435 --> 01:53:42,875
+Eğer bu compilerınız standart
+
+829
+01:53:42,875 --> 01:53:47,715
+Ansu C standartına uygunsa bir verecek şekilde size bazı bilgiler döndürüyor
+
+830
+01:53:47,715 --> 01:53:48,336
+Deneyelim
+
+831
+01:53:54,931 --> 01:54:03,051
+%D diyorum. Alttan tıra, alttan tıra, line. Peki bunlar sizce nerede arkadaşlar? Biz burada yazmadık.
+
+832
+01:54:07,572 --> 01:54:21,572
+Bu alttan, tre, alttan, tre, line nerede olabilir? Bak, 28 diyor, 28. satırın bilgisindeki agenda.
+
+833
+01:54:21,572 --> 01:54:27,131
+header'da hangi header'da olabilir soru?
+
+834
+01:54:31,188 --> 01:54:39,267
+Standart input output olabilir mi hocam? Evet, standart input output içerisinde genellikle bunlar bulunuyorlar. Buildin makrolarımız.
+
+835
+01:54:41,407 --> 01:54:54,368
+İşte kodun ne zaman değerlendiği ile alakalı bilgileri böyle loglamak istiyorsanız, kodun kaçıncı satırında olduğunuzu loglamak istiyorsanız bunları kullanabilirsiniz.
+
+836
+01:54:54,368 --> 01:54:55,827
+şu ne işe yarar sizce?
+
+837
+01:54:58,748 --> 01:55:01,247
+Yani kodun kaçıncı satırında olduğunu bilmek.
+
+838
+01:55:02,108 --> 01:55:03,908
+Benim için neden önemli bir program çalışırken?
+
+839
+01:55:11,123 --> 01:55:13,123
+Yazdıklarını hep göremiyorum da.
+
+840
+01:55:17,684 --> 01:55:45,543
+düşünün böyle program yazdınız. Şurada da şunu çağırıyorsun. Şurada da. Şimdi kod acaba buraya kadar doğru bir gün kazasız belasız çalıştı mı? Yani bir kodun bazı açılardan debug edilmesi bunlardan mümkün olabilir. Buraya kadar kod sıkıntısız çalıştıysa ve bu mesajı gördüysem tamam sıkıntı yok demektir.
+
+841
+01:55:45,543 --> 01:55:51,763
+Ama buraya gelmeden arada bir şey olduysa ve başka şeyler görüyorsan demek ki yukarıda bir yerde sıkıntı var.
+
+842
+01:55:53,763 --> 01:55:59,723
+Bir de değerlemenin conditional compile edilmesi sürekli konusunda bakalım kaç şeymiş.
+
+843
+01:56:00,963 --> 01:56:02,763
+Bunu bitireyim öyle tamamlayacağız arkadaşlar.
+
+844
+01:56:02,943 --> 01:56:03,364
+Kısa bir şey.
+
+845
+01:56:04,443 --> 01:56:06,544
+Şimdi biz kodu değerlerken
+
+846
+01:56:09,544 --> 01:56:10,843
+Line time şu mu?
+
+847
+01:56:16,051 --> 01:56:17,811
+Hangi tabloyu? Şurayı.
+
+848
+01:56:22,707 --> 01:56:28,927
+Bunlar zaten ders noktalarında var. Bir sorun mu var? Yoksa şey. Merak ettim bir şey mi?
+
+849
+01:56:36,404 --> 01:56:37,404
+Geçebilir miyim?
+
+850
+01:56:40,692 --> 01:57:02,971
+kodusunu almana gerek yok. Bunların şeyi var. PDF olarak ders notlarında var zaten. Şimdi Conditioned Compilation şunu yapıyor arkadaşlar. Sizin bu proporcet sorularınızı if, else gibi veya else if, and if gibi şeylerle koşullu değerleme yaptırabiliyorsunuz. Bakın koşullu değerlemeden bahsedelim. Yani bunlar değerledikten sonra karşınıza gelecek şeyler değil.
+
+851
+01:57:02,971 --> 01:57:26,091
+Mesela diyeceksiniz ki ben kodumu Windows işletim sistemi ise Windows'a göre değerlemek istiyorum. Başlangıçta mesela bir işletim sistemi bilgisi gelecek. Linux'e, Linux'e göre değerlemek istiyorum. Mesela GCC değerlecisini değerlemek istemiyorum. Veya işte GCC'nin kendisine göre bir command line opsiyonları vardı. Bunun opsiyonları koşullu olarak kullanabiliyorum.
+
+852
+01:57:26,091 --> 01:57:47,231
+Mesela deniyor ki şurada basit örneklerimiz var. Eğer x eşittir 1 ise x'in önceki değerini undefined x'i 0 yap. Yani bundan sonra kullanacağın x değeri 0 olabilir. Eğer x 2 ise x'in önceki değerlerini undefined x'i 3 olarak gör. O da değilse y'yi 4 olarak gör.
+
+853
+01:57:47,232 --> 01:58:06,052
+Yani bizim aşağıda int mail'in içinde veya diğer konksiyonlarda kullanacağımız x ve y'lerin farklı değerlerini nasıl alacağını bu şekilde söyleyebiliyorsunuz. Başlangıçta mesela bir yerlerde x değişkeniniz var, çağırıyorsunuz belki. Konksiyon çağırımıza gelecek olan şey yok.
+
+854
+01:58:06,052 --> 01:58:28,511
+veya şu bir tane eğer diyor bir tane test diye bir şey define edilmişse bunu şöyle if defined test veya bu böyle bir makro tanımlanmışsa if defined makro bunu not define et yani yürürlükten kaldırtabiliyorsun.
+
+855
+01:58:28,511 --> 01:58:36,251
+Test edilmişse şuna bak, şu işi yap, test edilmemişse şu işi yap. Şunlar şunların kısa yoldan gösterilir.
+
+856
+01:58:37,071 --> 01:58:43,092
+If define'ı test, test ettiğimiz bir makro şey, test diye bir makro şey, test yazılmış mı? Define edilmiş mi?
+
+857
+01:58:43,511 --> 01:58:47,492
+Veya böyle bir makro tanımlı mı? Böyle bir makro tanımlı değil mi?
+
+858
+01:58:48,031 --> 01:58:52,552
+Tanımlıysa şu işi yap, tanımlı değilse bu işi yap şeklinde farklı şeyler yaptırabiliyorsunuz.
+
+859
+01:58:52,552 --> 01:59:18,132
+İnkulut'u zaten söyledik. En son derste hatırlarsanız hani küçüktür olma durumu, büyüktür olma durumuyla alakalı İnkulut'u söylemiştik. Line control'yla alakalı bakın burada şeyler var bunlara bakarsınız. Daha sonraki gelecek dersinizde çarşamba günü şu koşullu değerlemeyle alakalı bir iki tane örneğim vardı. Şu an uzatmayalım. Bunu derste gösteririz. O şekilde derse devam ediyoruz. Herhangi bir sorunuz var mı?
+
+860
+01:59:23,796 --> 01:59:30,695
+98'e falan geldik. Line kontrolü geçelim 98 zamanı. Tamam. Yüzünlü şeyden, saattan devam edeceğiz.
+
+861
+01:59:31,515 --> 01:59:35,775
+Peki arkadaşlar, çarşamba günü görüşmek üzereler size. Hepinize iyi günler, iyi akşamlar.

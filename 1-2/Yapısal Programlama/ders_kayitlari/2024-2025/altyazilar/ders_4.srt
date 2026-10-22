@@ -1,0 +1,2603 @@
+1
+00:08:37,812 --> 00:08:45,812
+Arkadaşlar merhabalar. Ses geliyor mu acaba?
+
+2
+00:08:51,508 --> 00:08:53,508
+Hocam hoşgeldiniz.
+
+3
+00:09:00,371 --> 00:09:05,871
+Yapay zeka bölümünden arkadaşlar da burada varlar herhalde. Mail ulaşmıştır diye tahmin ediyorum.
+
+4
+00:09:11,155 --> 00:09:12,155
+Aşkıcılandır.
+
+5
+00:09:16,019 --> 00:09:23,779
+C, A, Hocam ben şimdi size yetkiyi devrediyorum. Ekran paylaşıp, ikiyi beş geçe başlarsanız herkes katılmak olur.
+
+6
+00:09:32,851 --> 00:09:57,971
+Şimdi arkadaşlar, bu haftaya kadar ki gördüğümüz konuları da içerecek şekilde hocamız size iki tane soru çözecek. Bunların açıklamasını, işte arka planda problemi ne olduğunu falan anlatacak. Gelecek haftada şu ana kadar ve işte bu hafta içinde göreceğimiz konulardan laboratuvarda quiz tarzında bir soru sorulacak, size soru verilecek ve yüklemeniz istenecek.
+
+7
+00:09:57,971 --> 00:10:16,951
+Geçen dönem BBG dersi alan arkadaşlar bu konuya aşinadırlar. Uygulama 3-5 tutarı benzer. Sizlere ayrıca uyulması gereken kurallarla alakalı bir bilgilendirme meydi ve duyurusu yapacağız. Bu hafta sadece bir uygulama ve laboratuvara hazırlık gibi düşünebilirsiniz.
+
+8
+00:10:16,951 --> 00:10:24,871
+Bunun dışında yarınki sayısal analiz ders için bölümümüzün kurucularından Yahya hocamız vefat etti.
+
+9
+00:10:24,871 --> 00:10:30,071
+Banu hocam ve ben cenazede bulunacağımız için ders yapmayacağız.
+
+10
+00:10:30,231 --> 00:10:35,751
+Bunun daha sonra telafisini sizlere online olarak yaparız.
+
+11
+00:10:36,811 --> 00:10:40,292
+Daha sonra ne zaman nasıl telafi olur onun hakkında bilgi vereceğiz.
+
+12
+00:10:41,111 --> 00:10:44,671
+Özetle yarın öğleden sonra sayısal analizi dersi yok.
+
+13
+00:10:45,851 --> 00:10:46,871
+Ben de buradayım.
+
+14
+00:10:46,951 --> 00:10:59,532
+Hocamız size anlatırken bazı sorular sorabilir. Katılım ne kadar çok sağlarsınız. O kadar sizin için faydalı olur. Hepinize başarılar, kolaylıklar dilerim. Tala Hocam, Tala Hocam, söz siz de buyurun.
+
+15
+00:11:00,911 --> 00:11:01,432
+Bekleyin.
+
+16
+00:11:02,951 --> 00:11:04,231
+Bir beşe kadar bekleyin.
+
+17
+00:11:04,892 --> 00:11:05,491
+Tamamdır.
+
+18
+00:15:11,059 --> 00:15:13,059
+Merhaba arkadaşlar. Derslerimizin başlayalım.
+
+19
+00:15:15,059 --> 00:15:17,040
+Araştırma göre isimlerini takip edeceğim.
+
+20
+00:15:17,879 --> 00:15:19,159
+Bugün siz de derste gözünüz.
+
+21
+00:15:19,959 --> 00:15:21,559
+Onlar hakkında iki tane uzaması için.
+
+22
+00:15:24,059 --> 00:15:28,320
+İlk sorumuz.
+
+23
+00:15:33,199 --> 00:15:35,240
+Hocam sesiniz çok temiz gelmiyor.
+
+24
+00:15:35,359 --> 00:15:36,839
+Mikrofonu yakınlaştırabilir misiniz?
+
+25
+00:15:37,439 --> 00:15:38,439
+Pardon.
+
+26
+00:15:38,439 --> 00:15:41,139
+şu an iyi mi?
+
+27
+00:15:41,400 --> 00:15:42,759
+şu an çok daha iyi teşekkürler
+
+28
+00:15:42,759 --> 00:15:44,179
+teşekkür ederim
+
+29
+00:15:44,179 --> 00:15:47,079
+ilk sorumuz
+
+30
+00:15:47,079 --> 00:15:48,359
+psikolojisini bulan
+
+31
+00:15:48,359 --> 00:15:50,999
+evlen bir dizicik met psikolojisini
+
+32
+00:15:50,999 --> 00:15:52,679
+unutulmadığını kontrol eden varsa
+
+33
+00:15:52,679 --> 00:15:53,859
+bu üçlü yakına yazdığım
+
+34
+00:15:53,859 --> 00:15:56,999
+bir soru istediğimde yazacağım
+
+35
+00:15:56,999 --> 00:15:58,999
+psikolojisini
+
+36
+00:15:58,999 --> 00:15:59,759
+akara akara
+
+37
+00:15:59,759 --> 00:16:02,399
+ekran paylaşımımız yok herhalde
+
+38
+00:16:02,399 --> 00:16:05,179
+arkadaşlar soruları görsün
+
+39
+00:16:05,179 --> 00:16:07,179
+Evet.
+
+40
+00:16:11,443 --> 00:16:17,143
+Pistagor üçlüsünü kullanan bir programını yazacağız.
+
+41
+00:16:17,643 --> 00:16:18,543
+Verilen bir cidimizde.
+
+42
+00:16:20,423 --> 00:16:24,643
+Pistagor bağımsızı akar artı, karartı, eşitli cekare.
+
+43
+00:16:25,723 --> 00:16:30,583
+Bunun için bu cidde olan üçlü kompilasyonları tamamlamamız gerekiyor.
+
+44
+00:16:33,284 --> 00:16:38,023
+Çünkü herhangi bir kompilasyon bu eşitliği sağlayabilir.
+
+45
+00:16:38,023 --> 00:16:41,983
+Sizce bir
+
+46
+00:16:41,983 --> 00:16:42,763
+verilen
+
+47
+00:16:42,763 --> 00:16:46,024
+kombinasyonlar
+
+48
+00:16:46,024 --> 00:16:47,824
+bulan programı nasıl
+
+49
+00:16:47,824 --> 00:16:49,923
+yapabiliriz? Mesela öncelikle ikili kombinasyonlar
+
+50
+00:16:49,923 --> 00:16:51,524
+nasıl bulabiliriz?
+
+51
+00:16:51,664 --> 00:16:52,723
+Daha sonra da üçlüye geçelim.
+
+52
+00:16:55,583 --> 00:16:56,743
+Üçlü olan var mı?
+
+53
+00:16:57,284 --> 00:16:59,344
+Bütün kombinasyonları
+
+54
+00:16:59,344 --> 00:16:59,723
+tek tek
+
+55
+00:16:59,723 --> 00:17:02,103
+yazmamız gerekiyor.
+
+56
+00:17:03,083 --> 00:17:04,723
+Mesela ikili kombinasyonlar da 3-13 ile
+
+57
+00:17:04,723 --> 00:17:05,304
+başlarım.
+
+58
+00:17:05,304 --> 00:17:11,083
+Üçlü kombinasyonla ihtiyaçmışlar.
+
+59
+00:17:23,155 --> 00:17:27,155
+İsterseniz birkaç dakika düşünmeyi alet ediyorlar nasıl?
+
+60
+00:17:27,155 --> 00:17:31,155
+Böylelikle kombinasyonları yani bütün ihtimalleri nasıl?
+
+61
+00:18:33,491 --> 00:18:34,491
+Valla makara.
+
+62
+00:18:46,067 --> 00:18:58,067
+Geçen dönem selection software görüntü. Oradakine benzer de altını kapanacağız. İki tane indisimiz olacak. İlk indisimiz olacak.
+
+63
+00:18:58,067 --> 00:19:16,007
+Öncelikle ilk şeyden başlayacağız. Sonra diğer olasılık olabilir. İkinci indis. Ardından bütün kombinasyonu bulmak istediğimiz için bu ilk şeyimiz olacak. Sonra bütün ihtimalle tek tek
+
+64
+00:19:16,067 --> 00:19:20,067
+Yine iltisleri artıracağız ve bunlarla iki kombinasyonları bulacağız.
+
+65
+00:19:22,067 --> 00:19:25,067
+Böylece üçte bütün kombinasyonları bulmuşum.
+
+66
+00:19:26,067 --> 00:19:27,067
+Sonraki aşamada...
+
+67
+00:19:35,028 --> 00:19:37,907
+I1 arttıracağız.
+
+68
+00:19:39,067 --> 00:19:42,867
+Böylelikle bu 13'ün geri kalanıyla kombinasyonuna çalışacağız.
+
+69
+00:19:43,707 --> 00:19:46,307
+Bunun için de J'yi baştan başlatmanın bir manası olmaz.
+
+70
+00:19:46,507 --> 00:19:49,707
+Çünkü zaten I, J'de 3.13 kombinasyonu duymuştuk.
+
+71
+00:19:49,827 --> 00:19:52,468
+Eğer buradan başlattığında da aynısını tekrarlamış olur.
+
+72
+00:19:52,468 --> 00:19:54,807
+O yüzden daha sonraki şeylere bakacağız.
+
+73
+00:19:55,307 --> 00:19:56,887
+Aynısını ekstraklık oldu gibi.
+
+74
+00:19:58,128 --> 00:20:02,247
+Daha sonra burada da J'yi arttırıp 13'te tam bütün kombinasyonuna bakacağız.
+
+75
+00:20:02,247 --> 00:20:08,548
+Böyle giderek i'leri arttırarak devam etmişti.
+
+76
+00:20:09,327 --> 00:20:15,507
+En sonuçlu hale geldiğimizde i ve j'ye 12-8 kumaritmanı buluştuklarında bütün kumaritmanı bulmuş olduk.
+
+77
+00:20:18,900 --> 00:20:27,900
+Bu da seleksiyon sorakta zaten bundardan en küçüğünü bulup aşağı koyduk. Daha sonra geri kalanlar içerisinde karar veriyor. Ama benziyor.
+
+78
+00:20:28,900 --> 00:20:37,900
+Bir ilgitçey kullanacağız. Üçlü kombinasyonda işler biraz daha karışık.
+
+79
+00:20:42,708 --> 00:20:45,907
+Kombinasyon olmak için bu sefer 3. sehtenler var.
+
+80
+00:20:47,907 --> 00:20:56,107
+İyice bu sefer de baş k'ya artıracağız. K'yı 1 artırtık. 3, 13, 5'in olmuştuk.
+
+81
+00:20:58,507 --> 00:21:05,507
+Daha sonra 3, 13, 6'yı çalıştık. Daha sonra 1 artıracağız. Bunu buluşacağız ve böyle geçtik.
+
+82
+00:21:05,507 --> 00:21:16,708
+K en son ulaştığı zaman, bu kadar ileri girişik, zaten 3-13 kombinasyonumuz bu, herhalde 3-5'e baktıklı.
+
+83
+00:21:17,807 --> 00:21:21,587
+K yine, bu kadar buradan başlayacağız, aynı kombinasyonu bulma mantıklı.
+
+84
+00:21:23,167 --> 00:21:29,587
+Bu sefer K, C'den bir sonraki dene başlayacak ve bütün ileri tarih alarak ya 3 kombinasyonu atacak.
+
+85
+00:21:29,587 --> 00:21:35,587
+Böylece en son hale geldiğimizde
+
+86
+00:21:35,587 --> 00:21:40,587
+3'lü kombinasyonu bulacağız
+
+87
+00:21:40,587 --> 00:21:48,587
+Ardından bu kombinasyonları bulduktan sonra bu denklemizi sağlayanlara seçmemiz gerekiyor
+
+88
+00:21:48,587 --> 00:21:56,587
+Ancak bunlar her zaman mesela burada sırayla geldiğimizde 3-5-4 gelecek
+
+89
+00:21:56,587 --> 00:22:06,587
+Bu her zaman bu denklerini sağlamayabilir. O yüzden bunun üçlü kombinasyonu yani her birine satönesle konmamız lazım.
+
+90
+00:22:13,076 --> 00:22:20,695
+İhtimallerize denediğimiz zaman, hem C'yi buraya koyduğumuzda, B'yi bir tanesi koyduğumuzda, A'yı bir tanesi koyduğumuzda
+
+91
+00:22:20,695 --> 00:22:26,536
+İhtimallerize denediğiniz için, buraylık dağlayan herhangi bir ihtimalle varsa, bu üçlü kombinantıda biz de koyduğumuzu üçlü.
+
+92
+00:22:27,215 --> 00:22:28,536
+Denemiş olacağız.
+
+93
+00:22:29,775 --> 00:22:31,775
+Buraya kadar soru olan var mı?
+
+94
+00:22:31,775 --> 00:22:32,775
+Tamam.
+
+95
+00:22:42,932 --> 00:22:44,932
+Hoşçakalın. Geç.
+
+96
+00:22:50,932 --> 00:22:56,491
+Öncelikle, stantat, altı tıkhanesini ekledim.
+
+97
+00:22:58,372 --> 00:23:02,091
+Ancak program başlamıştığımız, cinsmen.
+
+98
+00:23:04,731 --> 00:23:09,692
+Verilen diziyi tutmak için, sayıları tutmak için biz olacağız.
+
+99
+00:23:12,171 --> 00:23:16,371
+Ancak bu diziyi direkt sayıya şeklinde dolaşacağız ama
+
+100
+00:23:16,371 --> 00:23:22,371
+daha generic olması açısından bu macrolarda gerçekleştirdik.
+
+101
+00:23:22,371 --> 00:23:33,371
+Şimdi define max da macrolarda compile'dan önce kuralın yerine yazılıyor.
+
+102
+00:23:37,107 --> 00:23:41,107
+Daha sonra bizim 3 döngümüz olacak.
+
+103
+00:23:43,227 --> 00:23:44,187
+3'ün git için.
+
+104
+00:23:51,539 --> 00:23:56,539
+ve karaden aldığınızda biraz beş binler etkileriniz var.
+
+105
+00:24:00,307 --> 00:24:03,667
+Bir de eğer psikolojik güçlü kaç tane bulunuyoruz?
+
+106
+00:24:03,667 --> 00:24:06,147
+Ancak şimdi değişken
+
+107
+00:24:10,963 --> 00:24:15,963
+Şimdi ilk olarak Print SES de kullanıcıya dizinin boyutuna girmesi için.
+
+108
+00:24:29,172 --> 00:24:36,172
+Ardından scanfile kaç eleman gelmek istediğimi
+
+109
+00:24:36,172 --> 00:24:38,172
+Yani bu şey tanımlıyor artık
+
+110
+00:24:38,172 --> 00:24:48,172
+Benim boyutunu da alacağız çünkü zaten bizim maksimum boyutu konjinik etliği elemanı da sunacak
+
+111
+00:24:48,172 --> 00:24:56,172
+Ardından tek tek bunları okuyacağız bunun içinde
+
+112
+00:24:59,251 --> 00:25:03,251
+Bu ilk dengelerin ilişkisi kırgıdan başlıyor.
+
+113
+00:25:03,251 --> 00:25:07,251
+Ulanıcının gelmek istediği eleman sayısına karakteri alacak.
+
+114
+00:25:07,251 --> 00:25:09,251
+Eğer sıkıntılı bir artırmak,
+
+115
+00:25:09,251 --> 00:25:15,251
+Prince'e hangi ücreti gideceğini yapacağız.
+
+116
+00:25:22,867 --> 00:25:32,467
+parsı faintini isteyeceğini kısa, akıdan scannf de, bunu tr'ye atacağız.
+
+117
+00:25:35,107 --> 00:25:43,027
+Bildiğim ki pointer'lar, web'e yazdığımız zaman, scannf fonksiyonuna o hücrenin adresini vermemiştir.
+
+118
+00:25:43,027 --> 00:25:52,587
+Evet değişkeniz bu bir adres
+
+119
+00:25:56,276 --> 00:25:59,276
+Ama aslında başka bir yanıta ayrılır.
+
+120
+00:26:04,675 --> 00:26:14,276
+Amacımız bu hücrenin adresini şeye vermek. Eğer doğrudan değeri verirsek, böyle yazdığımız zaman doğrudan değeri alır.
+
+121
+00:26:15,475 --> 00:26:18,276
+Açıklık adresini vermek için antarası aldık.
+
+122
+00:26:21,875 --> 00:26:25,475
+Böylece değeri nereye alacağını?
+
+123
+00:26:31,412 --> 00:26:41,651
+arzından 3 for yapalım
+
+124
+00:27:16,276 --> 00:27:21,276
+Şimdi burada eğer sıfırdan başladıysak zaten 3 kombinasyonu. Tekrar, aynı şey.
+
+125
+00:27:21,276 --> 00:27:28,276
+Ama bir sonraki elemanımızdan kombinasyonu da süper. Bir sonraki İngilizcen var.
+
+126
+00:27:32,372 --> 00:27:33,052
+onun içinde
+
+127
+00:27:33,052 --> 00:27:36,591
+yeni bir
+
+128
+00:27:36,591 --> 00:27:38,091
+videonunla
+
+129
+00:27:38,091 --> 00:27:38,711
+başlayacağız.
+
+130
+00:27:38,971 --> 00:27:43,531
+Bu seferinde.
+
+131
+00:27:46,067 --> 00:27:46,787
+ve,
+
+132
+00:27:59,299 --> 00:28:06,299
+çapı
+
+133
+00:28:20,500 --> 00:28:39,020
+İlk konularımız var, bunu şortlaz. Bence bunlarla, biz iyiye, tamamen yapabiliriz. Bence hepsini karatmamamız gerektiriz. Bunun için de, bu da, öyle iyi iş.
+
+134
+00:28:41,971 --> 00:28:45,971
+o zaman x falan, x falan.
+
+135
+00:28:45,971 --> 00:28:52,971
+Aynı işleri 3 planın içinde yapıyoruz.
+
+136
+00:29:10,420 --> 00:29:23,420
+Şimdi de karesini bulduk ama bunlar sıralı gelmeyebilir. 3-5-4-4-5 kurut olur. 3-5-4-5 kurut olur.
+
+137
+00:29:23,420 --> 00:29:27,420
+3-5-5-5 kurut olur.
+
+138
+00:29:27,420 --> 00:29:39,420
+Bunun için de x'e eşitliği yapıyoruz.
+
+139
+00:29:40,420 --> 00:29:47,879
+x artı d y eşit vardır.
+
+140
+00:29:49,879 --> 00:29:55,100
+Bir de y artı d x eşit vardır.
+
+141
+00:29:55,820 --> 00:29:57,799
+Böylelikle hepsi bütün size geri gelmiş.
+
+142
+00:30:02,451 --> 00:30:12,451
+Böyle ise o zaman vitamin, psikolojik konusu oluyor. Ayrıca psikolojik konusu değilim.
+
+143
+00:30:39,571 --> 00:31:07,571
+kullanan, her psikolojik gibi yazacak. Eğer, bu değerlendirilse bütün kombinasyonlar tek tek deniyor. 3, 3, 3 var. Ancak, kullanadıysa, F-T-N-S-T-R olması lazım. Büyük bir üniversite gibi. Bu zamanda psikolojik gibi kullanamadı.
+
+144
+00:31:18,259 --> 00:31:30,259
+Bir de şey özellikle var. İldiğiniz gibi eğer tek bir gen ya da fordansman tek bir parada varsa bu parantez bir kormaya değil.
+
+145
+00:31:30,259 --> 00:31:36,259
+Ama şöyle bir kocamanın doğru şartını, ben, bir kocaman.
+
+146
+00:31:36,259 --> 00:31:42,259
+Evet, bir kocamanın doğru kormaya değil.
+
+147
+00:31:42,259 --> 00:31:47,259
+Şimdi bir, ben ne yapalım?
+
+148
+00:32:21,652 --> 00:32:22,291
+Bu komple.
+
+149
+00:32:31,539 --> 00:32:38,539
+ve
+
+150
+00:32:41,460 --> 00:32:48,659
+On boy orki, altı, normalde.
+
+151
+00:33:00,788 --> 00:33:02,788
+ve bu.
+
+152
+00:33:37,811 --> 00:33:39,811
+ve bu da bende kısırlarla konuşuruz.
+
+153
+00:33:41,311 --> 00:33:42,311
+Ve bu da bende.
+
+154
+00:33:54,516 --> 00:33:57,516
+İlk, kodra, namastidin, şey var.
+
+155
+00:34:18,195 --> 00:34:19,195
+C, çıçı.
+
+156
+00:34:46,963 --> 00:34:50,363
+Bir sonra da, co-review-cum işlemleri denet edeceğiz.
+
+157
+00:34:51,864 --> 00:34:57,363
+Co-review-cum, genel, görüntü, işlem için kullanan her şey.
+
+158
+00:34:58,563 --> 00:35:04,963
+Ağır, stinger, ünlü, stinger, ünlü, stinger ve generallik de çok fazla kullanılma olsun.
+
+159
+00:35:07,064 --> 00:35:11,963
+Pardon, sesiniz çok kesilmeye başladı şu anda. Anlaşılmıyor peki.
+
+160
+00:35:13,463 --> 00:35:14,463
+Şu an iyi mi?
+
+161
+00:35:14,463 --> 00:35:18,824
+Şu an daha iyi de giderek azalıyor ilerleyen makin.
+
+162
+00:35:18,824 --> 00:35:19,324
+Az önce de böyle.
+
+163
+00:35:20,623 --> 00:35:21,263
+Allah Allah.
+
+164
+00:35:22,184 --> 00:35:23,004
+Tamam, dışı biraz.
+
+165
+00:35:30,068 --> 00:35:31,068
+konvojisyon işlemini. Konvojisyon işleminde bir input'u matrisini sürdü. Ve onun özellik çıkarmak için kernel bulundu. Bu kernel'i sırasıyla her bir elemanın öncelikle en üst köşeden itibaren başlıyordu. Yani şu böyle
+
+166
+00:36:02,835 --> 00:36:30,835
+şu üç keneleri input'un en üst köşesine oturuyoruz. Ve karşılık gelen elemanları çarpıyoruz. Mesela burada bir ile bir çarpıcağım. Ardından iki ile sıfır, üç ile bir, beş ile sıfır, altı ile iki, yedi ile bir. Bu şekilde üst üste koyduğumda karşılık gelen elemanları çarpıyoruz.
+
+167
+00:36:35,315 --> 00:37:01,315
+Ardından çarpımların toplamına alıyoruz. Daha sonra çıkanı da çıkış atısına yazıyoruz. Sonraki seferde ise sahip 1'de bu bir sağ karnetik. Karşımkilerden gelen elemanları tekrar arttırıyoruz. Ve çıkış atısına yazıyoruz.
+
+168
+00:37:01,315 --> 00:37:14,315
+Ancak burası son noktasına geldiği için daha ileri gidemiyor. Orada değer yok. Bundan dolayı bir alt satıra geçiyor.
+
+169
+00:37:14,315 --> 00:37:24,315
+Burada da aynı işlem yaptı. Karşılık yerine hemen aç çarpıyor. Sonra bir saat kaydediyor. Çarpıya topluyor.
+
+170
+00:37:24,315 --> 00:37:32,935
+Burada da bir alt satıya inemediği için işlem burada bitiriyor. Burada birkaç şey var.
+
+171
+00:37:35,896 --> 00:37:40,616
+Bir de çıkış matrisinin boyutu ne olmalı?
+
+172
+00:37:41,536 --> 00:37:51,015
+Girişinde dört tane eleman var. Aslında bu konvolütsiyon işlemde şöyle hayal edilebilir. Ortasındaki elemanı çıkışta yazmış gibi hayal edilebilir.
+
+173
+00:38:10,003 --> 00:38:13,003
+Buraya, mesela şurası, froy ile eşleşiyor.
+
+174
+00:38:14,003 --> 00:38:19,003
+Fortunun şurası, şuraya, en son olarak froy ekliyorum.
+
+175
+00:38:19,003 --> 00:38:27,003
+Böylece ortadaki pixelen işleme sokunuşları hayal edince daha iyi rahat anlayabilirsiniz.
+
+176
+00:38:27,003 --> 00:38:32,003
+Böyle olduğuna şunu, ne deniriz?
+
+177
+00:38:32,003 --> 00:38:39,003
+Burada üç boyutuz olduğu için kendini izleyelim.
+
+178
+00:38:40,003 --> 00:38:57,003
+Burada bir satıra kayboluyor. Yani şuradaki satırları saklayamıyor. Burada yazılmamış. Bir de aynı şekilde en sonuna geldiğimiz zaman da...
+
+179
+00:39:01,588 --> 00:39:06,008
+Bu satırı yok oldu ve şu satır.
+
+180
+00:39:06,008 --> 00:39:07,588
+Tamam hocam.
+
+181
+00:39:07,588 --> 00:39:08,588
+Efendim.
+
+182
+00:39:08,588 --> 00:39:10,588
+Şimdi ben de katıldım.
+
+183
+00:39:10,588 --> 00:39:13,588
+Şu linki açar mısınız, chat'teki linki?
+
+184
+00:39:13,588 --> 00:39:20,588
+Arkadaşlar, bu konvolüsyon işlemi aslında bir operasyon, bir operatör gibi de düşünebilirsiniz.
+
+185
+00:39:20,588 --> 00:39:28,588
+Size bir sinyal, iki boyutlu, tek boyutlu bir sinyal verildiğinde aşağıya doğru inelim hocam.
+
+186
+00:39:28,588 --> 00:39:41,788
+Sinyal verildiğinde bunun üzerinden bazı ayırt edici özellikleri elde etmeniz gerekebilir. Sağ tarafta çarpı işareti var oraya basabilirsiniz.
+
+187
+00:39:45,387 --> 00:39:50,527
+Ayırt edici özellikleri çıkartırken de bu tarz filtrelere ihtiyacımız var. Biraz daha aşağı inelim.
+
+188
+00:39:50,527 --> 00:40:19,467
+Şimdi bakın orijinal bir input görüntünüz var bir de bununla alakalı kernel dediğimiz veya filtre dediğimiz veya çekirdek dediğimiz fonksiyonunuz var bu da bir matriz genellikle 3'e 3, 5'e 5'lik şeyler seçilir kernellar seçilir bunu bir resim üzerinde gezdirerek resimdeki gürültüyü giderebilirsiniz veya bir resimden işte kenar bilgisi, köşe bilgisi, ortalama renk bilgisi gibi farklı bilgiler elde edebilirsiniz
+
+189
+00:40:19,467 --> 00:40:21,567
+Bu bilgiler ne işimize yarayacak?
+
+190
+00:40:21,948 --> 00:40:31,007
+Yapay zeka makine öğrenmesi gibi çalışmalarda bir şeylerin tahmin edilmesinde, bir şeylerin sınıflandırılmasında bu tarz ayırt edici özellikler doğrudan kullanılır.
+
+191
+00:40:31,627 --> 00:40:35,827
+Resmin orijinalini doğrudan kullanmak her zaman bize doğru fikir vermeyebiliyor.
+
+192
+00:40:36,487 --> 00:40:40,808
+Onun için burada bir ön işlem olarak bu tarz filtreleme yapıyoruz.
+
+193
+00:40:41,427 --> 00:40:44,687
+Hocamızın size anlattığı bu konvolisyon operasyonu bu.
+
+194
+00:40:44,687 --> 00:40:46,247
+Bunun tek boyutlu oranı da var.
+
+195
+00:40:46,247 --> 00:40:53,867
+Yani bir dizi üzerinde bu sefer 3'e 3'lük değil tek bir dizi gezdirmek 3 elemanlı 5 elemanlı dizi gezdirmek gibi
+
+196
+00:40:53,867 --> 00:40:58,807
+Peki bunu matematikteki hangi işlemle ilişkilendirebiliriz?
+
+197
+00:40:58,887 --> 00:41:01,747
+Aslında bir ağırlıklı aritmetik ortalama yapılıyor
+
+198
+00:41:01,747 --> 00:41:10,248
+İşte oradaki kerneldaki katsayılarla çarpıp topluyorsunuz ve kerneldaki katsayıların toplamına bölüyorsunuz
+
+199
+00:41:10,767 --> 00:41:15,067
+Şimdi bunun detaylarını hocamız size odlayacak
+
+200
+00:41:15,067 --> 00:41:17,067
+Buyurun hocam devam edebiliriz
+
+201
+00:41:17,067 --> 00:41:19,067
+Teşekkürler
+
+202
+00:41:21,067 --> 00:41:23,067
+Geçelim
+
+203
+00:41:28,148 --> 00:41:30,247
+İnanın şükür.
+
+204
+00:41:35,380 --> 00:41:42,380
+Açın tam, eee, uzerine alabileceğim, maxisene alabileceğim maxisinde.
+
+205
+00:41:42,380 --> 00:41:47,380
+Şimdi makro tamam.
+
+206
+00:42:09,043 --> 00:42:19,043
+Açıklarınız.
+
+207
+00:42:19,956 --> 00:42:25,155
+ve sonunda da çiftleri, ayakkabı, altı, siktir.
+
+208
+00:42:38,643 --> 00:42:44,643
+3'ünde bu üstlerden almamız gerekiyor.
+
+209
+00:42:59,699 --> 00:43:00,019
+Çok güzel.
+
+210
+00:43:00,320 --> 00:43:00,699
+Yaptım.
+
+211
+00:43:06,132 --> 00:43:18,851
+Bir, öncelikle şu şeyi kendilerini, hem yasay inserinde hem geyseninde, yani maddesi gezer gibi geziyoruz.
+
+212
+00:43:18,851 --> 00:43:25,331
+Bunun için iki tane ihtiyaç var ve üstüne koyduğumuz zaman bütün elemanların çarpılamalarını sağlıyorum.
+
+213
+00:43:25,331 --> 00:43:36,052
+Onun için de kendilerini gezmemiz lazım. O yüzden tutmaları dört. İki şey dört var.
+
+214
+00:43:36,132 --> 00:43:37,132
+Mm-hmm
+
+215
+00:43:40,628 --> 00:43:43,628
+Bizi konvalitmini toplamak için
+
+216
+00:43:43,628 --> 00:43:48,187
+Denklerden çatktan sonra topladığımız bir kişiye
+
+217
+00:43:53,619 --> 00:44:03,260
+Evet.
+
+218
+00:44:19,059 --> 00:44:20,059
+Abrecenlarımız.
+
+219
+00:44:25,748 --> 00:44:36,947
+Ardından kenar boyutu açacağız ve çıkış boyutuna karar ineceğiz.
+
+220
+00:45:06,003 --> 00:45:18,003
+Oradaki, bu iki listlerin çevresine işleme soktuğunu düşündüğümüz zaman sadece şu ortadaki dört tanesinin çizgi olduğu.
+
+221
+00:45:18,003 --> 00:45:33,003
+Bu sefer de şuradaki, kişisel işleme sokanımız, şurada değer yok. O yüzden sadece şu dördün işleme soktuğunu,
+
+222
+00:45:33,003 --> 00:45:36,003
+karşıdik gelen pixel azalıyor.
+
+223
+00:45:36,003 --> 00:45:43,003
+Bundan dolayı bu kenarlardan bir pixel, bir satır, bir stok ayrı mızı olur.
+
+224
+00:45:43,003 --> 00:45:49,003
+Kenar boyutumuz 3 olduğu durumda.
+
+225
+00:45:49,003 --> 00:45:57,003
+Out size.
+
+226
+00:45:57,003 --> 00:46:00,783
+İçin, bir şey.
+
+227
+00:46:06,804 --> 00:46:14,403
+Ancak zaten yukarıdan iki şey gidiyor. Ancak merkezlik konum değil.
+
+228
+00:46:14,403 --> 00:46:22,403
+Orta ayrıca bir kısalleri koyuyor. Yani 4-3 gidiyoruz.
+
+229
+00:46:22,403 --> 00:46:29,404
+Bu olduğumuz ikna huylu eğer 5 olsaydı yanlardan iki güzel.
+
+230
+00:46:29,404 --> 00:46:32,443
+Oduğunda dört
+
+231
+00:46:32,443 --> 00:46:36,664
+Yedi altı
+
+232
+00:46:36,664 --> 00:46:44,524
+Çok pardon sesli yine kesilmeler başladı
+
+233
+00:46:53,300 --> 00:46:56,520
+Yani biraz düşük geliyor sesiniz, az geliyor yani.
+
+234
+00:46:57,839 --> 00:46:58,839
+Allah Allah.
+
+235
+00:47:01,640 --> 00:47:03,640
+Biraz daha yüksek konuşmaya çalışayım.
+
+236
+00:47:05,279 --> 00:47:06,519
+Şu an daha iyi.
+
+237
+00:47:07,559 --> 00:47:08,439
+Tamamdır.
+
+238
+00:47:09,740 --> 00:47:10,579
+Eee.
+
+239
+00:47:13,748 --> 00:47:15,748
+Bu şekilde
+
+240
+00:47:15,748 --> 00:47:17,748
+yapıyoruz.
+
+241
+00:47:17,748 --> 00:47:19,748
+Kenar işlem
+
+242
+00:47:19,748 --> 00:47:21,748
+karşılıklı olmamak için
+
+243
+00:47:21,748 --> 00:47:23,748
+ancak bu
+
+244
+00:47:25,748 --> 00:47:27,748
+genelde kenarlar
+
+245
+00:47:27,748 --> 00:47:31,748
+tek oluyor.
+
+246
+00:47:31,748 --> 00:47:33,748
+Çünkü merkez piste de
+
+247
+00:47:33,748 --> 00:47:37,748
+çevresine işlem yaptığımız için
+
+248
+00:47:37,748 --> 00:47:39,748
+sayede genelde tek
+
+249
+00:47:39,748 --> 00:47:41,748
+kenarlar tercih ediyor ama
+
+250
+00:47:41,748 --> 00:47:48,748
+3-4-4 olabilir ama geldi 8.
+
+251
+00:47:48,748 --> 00:48:02,748
+Bu için kullanışının doğru girip girmediğini kontrol etmemiz lazım.
+
+252
+00:48:02,748 --> 00:48:04,748
+Evet.
+
+253
+00:48:11,476 --> 00:48:16,476
+kutu sayesinin atı bir ulaşması lazım.
+
+254
+00:48:16,476 --> 00:48:18,476
+Buraya yazılır.
+
+255
+00:48:18,476 --> 00:48:22,476
+Ya da
+
+256
+00:48:22,476 --> 00:48:27,476
+kendisi artık bir tek olmasını
+
+257
+00:48:27,476 --> 00:48:30,476
+burada
+
+258
+00:48:43,699 --> 00:48:53,699
+Sporuc'da hata verirken, input size maksanda yükse bu hata, yani çiftse hatana bakacak.
+
+259
+00:48:53,699 --> 00:49:00,699
+Ya da, kind of size büyük girilmiştir, büyüsen, output size'nız mega.
+
+260
+00:49:00,699 --> 00:49:11,699
+Vurada, inputlar zor değildir, tekrar tutabilirsiniz ki.
+
+261
+00:49:11,699 --> 00:49:27,699
+Ama buraya bunu bir daha kopyalayıp yapıştırmak yerine, kullanıcıyı doğru geri gelene kadar tekrar yeni geri gelmesini sağlamak için nasıl bir kullanılabiliriz? Yani buraya var yazabiliriz bile.
+
+262
+00:49:27,699 --> 00:49:32,699
+Ama iki kere daha önce yazacağım. Bunun için hangi yapıştırmalıyım?
+
+263
+00:49:32,699 --> 00:49:33,699
+Kullanım var.
+
+264
+00:49:49,619 --> 00:50:13,619
+mobile apps kullanabiliriz. Böylece işlem bir kere gerçekleşir. Daha sonra şu koşullar değerlendirilir. Eğer yanlışsa tekrar başlayabilen ve tekrar konulardan girebilenler. Böylece doğru gidiyorlar.
+
+265
+00:50:13,619 --> 00:50:43,599
+C,
+
+266
+00:50:19,764 --> 00:50:21,764
+Yeni boyutunu açacağız.
+
+267
+00:50:27,764 --> 00:50:29,764
+Eğer buraya kadar geçtiyse bakalım.
+
+268
+00:50:29,764 --> 00:50:33,764
+Geriler durdu. Artık matçıları okumaya başlayacağız.
+
+269
+00:51:17,619 --> 00:51:19,619
+tek tek
+
+270
+00:51:21,619 --> 00:51:25,619
+istersen ulaşacağız ve
+
+271
+00:51:25,619 --> 00:51:27,619
+açısı okuyacağız.
+
+272
+00:51:27,619 --> 00:51:29,619
+iyiyiz
+
+273
+00:51:29,619 --> 00:51:35,619
+size ne kadar?
+
+274
+00:51:40,148 --> 00:51:41,148
+Tak, olabiliyoruz.
+
+275
+00:51:44,851 --> 00:51:45,851
+ular, tör.
+
+276
+00:52:00,403 --> 00:52:10,903
+çok
+
+277
+00:52:14,387 --> 00:52:16,387
+başsak konularını kodla.
+
+278
+00:52:18,387 --> 00:52:20,387
+Şimdi nolgesin geçmişim.
+
+279
+00:52:24,724 --> 00:52:27,583
+İyi bir şey, iyi bir şey mi?
+
+280
+00:52:27,583 --> 00:52:29,583
+Söyleyin.
+
+281
+00:52:29,583 --> 00:52:31,583
+Değerini atalım çok teşekkür ederim.
+
+282
+00:52:43,731 --> 00:52:50,731
+artı, ay işlemi çorbuk için yapacağız.
+
+283
+00:53:23,764 --> 00:53:25,764
+Teşekkürler.
+
+284
+00:53:46,931 --> 00:53:53,659
+Evet.
+
+285
+00:54:07,155 --> 00:54:08,155
+Hoşçakalın.
+
+286
+00:54:13,427 --> 00:54:14,427
+Bu üçer, üçer
+
+287
+00:54:45,556 --> 00:54:48,556
+Çekal hangi masyip boyutu bakacağız.
+
+288
+00:55:01,235 --> 00:55:02,175
+çıktı.
+
+289
+00:55:02,175 --> 00:55:05,596
+Sonuç var.
+
+290
+00:55:05,995 --> 00:55:07,696
+Çıktı boyut kadar işlem yapması için.
+
+291
+00:55:09,956 --> 00:55:11,235
+Buraya
+
+292
+00:55:11,235 --> 00:55:12,135
+A3 size
+
+293
+00:55:12,135 --> 00:55:12,915
+göre
+
+294
+00:55:12,915 --> 00:55:16,295
+gele
+
+295
+00:55:16,295 --> 00:55:19,735
+açsın.
+
+296
+00:55:19,735 --> 00:55:21,195
+A3 arası burada.
+
+297
+00:55:48,019 --> 00:55:50,019
+İmbrutluğun çizgi.
+
+298
+00:56:06,291 --> 00:56:36,271
+...
+
+299
+00:56:29,652 --> 00:56:35,652
+Bunun için de iki tane de kentra ulaşmak için boşluk, boşluk, boşluk, boşluk, boşluk.
+
+300
+00:56:42,003 --> 00:56:49,003
+Aşkı
+
+301
+00:57:13,427 --> 00:57:26,227
+O yüzden her bir çıkış için ayrı bir sınav çıkışı çıkıyor.
+
+302
+00:57:26,227 --> 00:57:30,227
+O yüzden her bir sınav çıkışı çıkıyor.
+
+303
+00:57:30,227 --> 00:57:42,227
+Daha sonra iki fiks, karşılıkların çarpımını sınav yapacağız.
+
+304
+00:57:44,052 --> 00:58:11,831
+M
+
+305
+00:58:07,635 --> 00:58:15,475
+İkişlik karşılık. Ardından, her input açısından hem de kernel üzerinde, eş zamanla olarak,
+
+306
+00:58:15,475 --> 00:58:37,556
+bunun içinde, input ince satır, müşür, nasıl satır? Onu kernel'ın,
+
+307
+00:58:37,635 --> 00:58:40,635
+yaparken kimi temizle yapacağız.
+
+308
+00:58:40,635 --> 00:58:43,635
+İleride bu ileri bir zaman.
+
+309
+00:58:45,635 --> 00:58:48,635
+Input'la ileri bir şey yapacağım.
+
+310
+00:58:48,635 --> 00:58:52,635
+İkisi karşı karşıya gelmiş olacağım.
+
+311
+00:58:54,635 --> 00:58:56,635
+Teşekkür ederim.
+
+312
+00:59:03,956 --> 00:59:05,956
+kendimi tancakladım.
+
+313
+00:59:05,956 --> 00:59:07,956
+sıkasın olup da iç yerden falan.
+
+314
+00:59:15,507 --> 00:59:24,107
+Bunları sıra sıra bir tutarttığım zaman, aynı zamanda input ile aynı şekilde harfetmeyiz. Karşılık kendine affeyle, açığa kalın.
+
+315
+00:59:27,155 --> 00:59:36,155
+Şimdi bunları aldığımız zaman şu kenar geldiği zaman inputta çarpımı bulmuşum.
+
+316
+00:59:36,155 --> 00:59:40,155
+Yani ilk...
+
+317
+00:59:41,427 --> 00:59:48,427
+ve
+
+318
+00:59:52,628 --> 00:59:58,128
+Structuralistlerinden başladık. Structuralistlerinden bir şey, kafana ekleyecek.
+
+319
+00:59:59,128 --> 01:00:04,128
+Zaferin structuralistleri bu şekilde.
+
+320
+01:00:07,380 --> 01:00:09,380
+Çıktım hafısını ödüreceğim.
+
+321
+01:00:09,380 --> 01:00:11,380
+Genel olarak.
+
+322
+01:00:11,380 --> 01:00:14,380
+Counter aritmetininde,
+
+323
+01:00:14,380 --> 01:00:16,380
+Counter aritmetin ile bunun
+
+324
+01:00:16,380 --> 01:00:17,380
+arka yazma
+
+325
+01:00:17,380 --> 01:00:19,380
+anılıklar.
+
+326
+01:00:19,380 --> 01:00:21,380
+Birinci bir
+
+327
+01:00:21,380 --> 01:00:23,380
+ad ki
+
+328
+01:00:23,380 --> 01:00:26,380
+aslında şu isabet
+
+329
+01:00:26,380 --> 01:00:37,380
+...
+
+330
+01:00:34,324 --> 01:00:36,324
+gösterimde, string.
+
+331
+01:00:44,659 --> 01:00:54,099
+Bu, bu, bu şeye göre
+
+332
+01:00:59,795 --> 01:01:04,795
+Yereğin etikine göre farklı adımlar
+
+333
+01:01:04,795 --> 01:01:06,795
+Tabii ki mesela şurası 0
+
+334
+01:01:06,795 --> 01:01:11,795
+1 0 olursa
+
+335
+01:01:11,795 --> 01:01:13,795
+Bu integer ise
+
+336
+01:01:13,795 --> 01:01:15,795
+4 by 12
+
+337
+01:01:15,795 --> 01:01:17,795
+Şurana şey
+
+338
+01:01:17,795 --> 01:01:18,795
+0
+
+339
+01:01:18,795 --> 01:01:21,795
+14
+
+340
+01:01:21,795 --> 01:01:24,795
+Şurası mesela
+
+341
+01:01:24,795 --> 01:01:25,795
+6
+
+342
+01:01:25,795 --> 01:01:29,795
+Yani değişken olursa, buna bir ekran edilir.
+
+343
+01:01:31,795 --> 01:01:36,795
+Aslında o değişkenin boyutunu bildiği için 4 adres hakkı.
+
+344
+01:01:37,795 --> 01:01:44,795
+Ardından asterisk ile bunun içindeki değeri al.
+
+345
+01:01:48,692 --> 01:01:52,291
+Uy, farklı, işte, takıyasak.
+
+346
+01:02:06,195 --> 01:02:11,195
+Sofetim, skimşehir, halkın, sünnede yedir, halkın.
+
+347
+01:02:14,324 --> 01:02:18,483
+Ereğe, satırları seçip, ardına da ilerliyoruz.
+
+348
+01:02:18,483 --> 01:02:20,003
+Ve da her,
+
+349
+01:02:20,003 --> 01:02:23,044
+pointu.
+
+350
+01:02:51,411 --> 01:02:55,411
+ifade düşüneştık, geçin, oraya ne yazıklıız.
+
+351
+01:02:57,411 --> 01:02:59,411
+Ben bir şey, bu da var mı?
+
+352
+01:02:59,411 --> 01:03:01,411
+Bunu da sadece düşünsün.
+
+353
+01:03:02,411 --> 01:03:09,411
+Yine, bu bir yerle, aynı bir şey.
+
+354
+01:03:18,420 --> 01:03:25,739
+Aşk,
+
+355
+01:04:39,092 --> 01:04:41,092
+ve üstüne geçen.
+
+356
+01:05:20,788 --> 01:05:21,788
+Evet.
+
+357
+01:06:25,715 --> 01:06:26,155
+Hoşçakalın.
+
+358
+01:07:01,139 --> 01:07:02,139
+Evet.
+
+359
+01:07:14,931 --> 01:07:16,231
+Sıra bir kez yol çarpma.
+
+360
+01:07:16,391 --> 01:07:17,851
+Çıkta o halde.
+
+361
+01:07:19,151 --> 01:07:21,151
+Konuşma işlemi böyle.
+
+362
+01:07:23,331 --> 01:07:24,491
+Sıra bir zaman arkadaşlar.
+
+363
+01:07:29,780 --> 01:07:41,319
+Arkadaşlar, bu 10 dakika ara verelim. Geldiğimizde devam edeceğim ben. Hocam, teşekkür ederiz. Siz ayrılabilirsiniz. 3-10 geçe, ben devam edeceğim arkadaşlar.
+
+364
+01:07:48,052 --> 01:07:49,931
+Sağ ol hocam, bana yetki verir misin?
+
+365
+01:07:53,071 --> 01:07:57,012
+Benim ismime sağ tıklayınca işte, make of diye bir şey var orada.
+
+366
+01:07:59,331 --> 01:08:00,671
+Tamam, teşekkür ederim.
+
+367
+01:08:59,988 --> 01:09:02,787
+Benim sesimde bir problem var mı arkadaşlar?
+
+368
+01:09:10,739 --> 01:09:13,739
+Yok, yan kin et, bir geç.
+
+369
+01:09:26,676 --> 01:09:35,136
+Şimdi, gerçi 10 dakika süremiz var. Ben hazırlığımı yapayım arkadaşlar. Siz de dinlenin. Öyle devam edelim.
+
+370
+01:20:02,707 --> 01:20:04,188
+Evet, devam edelim.
+
+371
+01:20:06,188 --> 01:20:08,108
+Şöyle ekranımı paylaşayım.
+
+372
+01:20:17,395 --> 01:20:40,395
+Şimdi az önce bahsettiğimiz imaj konvolüsyon nedir? Normalde bu iki boyutta da olur, tek boyutta da olur. Bir dizinin üzerinde bir başka diziyi veya bir maddisinin üzerinde bir başka maddisi hatta üç boyutlu dizi düşünürsek onun içerisinde üç boyutlu bir şeyi dolaştırmak, bütün bir baştan sona gezdirmektir.
+
+373
+01:20:40,395 --> 01:21:05,736
+İşe yaradı çok çok şey var. Bugünkü yapay zeka, derin öğrenme zaten bunun üzerinden çok fazla ilerliyor. Konvolüsyonel nörel networkler diyoruz. Örneğin böyle bir girin görüntünüz var. Bunda bir keskinleştirme yapmak istiyorsunuz. Belli çizgilerin keskinleştirmesini istiyorsunuz. Bu mesela keskinleştirme kernelıdır. Böyle bir şeyi gezdirirseniz. Bu ne yapıyor aslında?
+
+374
+01:21:05,736 --> 01:21:14,976
+merkezdeki piksellerden bu merkezdekinin dört komşusunu alt üst yukarı aşağı dört komşusunu farkına alıyor.
+
+375
+01:21:16,096 --> 01:21:21,096
+İşte merkezdekinin beş katı diğerlerinin de farkını alarak böyle bir şey elde ediyor.
+
+376
+01:21:21,096 --> 01:21:32,375
+Veya bakın şurada diagonal olarak yani bakın burada köpeğin fotoğrafındaki edge'ler kenarlara dikkate alırsak
+
+377
+01:21:32,375 --> 01:21:39,255
+Diagonal edge'lerimiz var. Kulağının mouse'a göre düşüneceksiniz. Şuralar olabilir. Şunlar diagonaldir.
+
+378
+01:21:39,255 --> 01:21:46,215
+Yani eğik çizgiler diyebileceğimiz şeyler. Yataylar veya dikeyler değil. Dikkat edelim.
+
+379
+01:21:46,495 --> 01:21:55,635
+Eğer ki bu diagonali tespit etmek istiyorsak, şu iki köşeye bir verirsek, diğer öbür köşeye de eksi bir verirsek veya bunu tam tersinden de düşünebilirsiniz.
+
+380
+01:21:55,635 --> 01:22:06,675
+Diagonalin değerlerini alıp öbür diagonaldeki yani yardımcı köşe genindeki değerleri ondan çıkartarak bu çift diğerisi de belirginleşti diyor.
+
+381
+01:22:07,455 --> 01:22:11,215
+Veya en yaygın yapılan şeylerden bir tanesi ortalama filtresi.
+
+382
+01:22:11,215 --> 01:22:14,835
+Bu doğrudan aslında şunlar da ortalama ama burada doğrudan bir ortalama yapmıyoruz.
+
+383
+01:22:15,595 --> 01:22:19,075
+Ortalama filtresi buranın toplamı içerisindeki sayılar 16.
+
+384
+01:22:19,235 --> 01:22:20,715
+Onun için 1 bölü 16'ya bölecek.
+
+385
+01:22:20,715 --> 01:22:30,136
+her bir pikseli önce 1 ile sonra 2 ile işte merkezdekini 4 ile çarpıp yani o 3'e 3'lük alana girenleri çarpıp böyle bir şey veriyor.
+
+386
+01:22:30,136 --> 01:22:32,515
+Ben şöyle göstereyim.
+
+387
+01:22:33,716 --> 01:22:38,735
+Mesela sizin elinizde bu tarz uygulamaların nihai hedefi nedir?
+
+388
+01:22:38,836 --> 01:22:41,315
+Onları söylemek adına şöyle bir örnek vereyim.
+
+389
+01:22:42,556 --> 01:22:44,395
+Örneğin bir veri setiniz var.
+
+390
+01:22:44,395 --> 01:22:55,776
+göğüs hastalıkları, pulmonar hastalıklarla alakalı zatüre, covid, normal bu tarz hastalıklara dair elinde röntgen görüntüleri var.
+
+391
+01:22:55,916 --> 01:23:01,776
+Bu röntgen görüntülerinden yola çıkarak bu kişide hangi hastalık var? Bunun tahminini yapabilirsiniz.
+
+392
+01:23:01,776 --> 01:23:08,756
+Tabi bunu yapabilmek için çevrelerinde bu tarz şeyler özellikle önce konvolüsyon işlemleri gerçekleşiyor.
+
+393
+01:23:08,756 --> 01:23:14,435
+tahmin yapacak şey. En sonunda bakın bu bir konvasyonel neural network yapay sinir ağ dediğimiz şey.
+
+394
+01:23:14,955 --> 01:23:23,175
+Girişte böyle bir görüntünüz varken bunun üzerinden işte işlem yapa yapa yapa diyeceksiniz ki bu işte hastalıklıysa bir tahmin et.
+
+395
+01:23:23,616 --> 01:23:32,595
+Değilse sıfır tahmin et. Böyle bir etiketleme yapıyorsunuz. Şöyle de bir örneğini göstereyim. Bakın şurada örnek bir şey imaj göstermiş.
+
+396
+01:23:32,595 --> 01:23:41,336
+Ben buna identity yaptığımda şu ne yapar sizce? Şu matriz. Böyle bir maddese bütün bir şeyde girdirsek ne olur?
+
+397
+01:23:48,564 --> 01:24:00,564
+elde edeceğimiz şey sizce ne olabilir? Ortada bir var, diğer çevrede, teriflede sıfır var. Aynı resmi elde edersiniz değil mi? Çünkü pikselin tam ortasındaki değeri alıyorsunuz.
+
+398
+01:24:00,564 --> 01:24:09,564
+Çevredekileri tamamen sıfırla çarpıyorsunuz. Aldığınız şeyi de ortaya getirip yazıyorsunuz. Sadece çevreden birer piksel bir kayıbımız olur.
+
+399
+01:24:09,564 --> 01:24:19,363
+olur. İşte 500'e 500'e ne olacak? 498'e 498 gibi işte yukarıdan aşağıdan sağdan soldan birer tane pitleri yok ediyorsunuz bir matristen.
+
+400
+01:24:19,963 --> 01:24:27,363
+Böyle bir şey elde ediyorsunuz. Mesela burada şarpın dediğimizde belli noktaları şarp edeceğimiz şey geliyor.
+
+401
+01:24:27,363 --> 01:24:33,183
+Mesela ben bu şarpın da şurası eksi 1'miş. Git bunu eksi 2 yap. Ona göre eksi 2 diyeceğim.
+
+402
+01:24:35,064 --> 01:24:39,383
+2 diyemedik. Şöyle bir şey yap dediğimde biraz daha farklı bir sonuç veriyor.
+
+403
+01:24:39,383 --> 01:24:44,623
+yani tabi bunu tutarlı doğru filtrelerle koymak lazım. Bu tarz filtrelerin bankası var arkadaşlar.
+
+404
+01:24:45,604 --> 01:24:55,083
+Teşitli filtre bankaları. Bunlar sayesinde sizler mesela şarpın değil de gauss simbolür dediğimiz bir gauss gürültüsü.
+
+405
+01:24:55,564 --> 01:24:58,583
+Şimdi gauss yoğunluk fonksiyonu nasıl bir şey? Çan elbisi dediğimiz şey ya.
+
+406
+01:24:59,203 --> 01:25:03,504
+Burada da yanlardan birden başlıyor en köşelerden sonra ortaya doğru iki.
+
+407
+01:25:03,504 --> 01:25:08,564
+En tepede en ortada da en yüksek değer olacak şekilde bir gauss filtresi oluşturuyor.
+
+408
+01:25:08,564 --> 01:25:27,784
+Bunların farklı farklı kullanım alanları var. Her filtre her amaçla kullanılmaz. Mesela photoshop falan kullananınız varsa aranızda veya görüntü üzerinde işlem yapan bazı görüntülerde şey görürsünüz. Siyah beyaz salt and paper dediğimiz şeyler görürsünüz. Şöyle göstereyim.
+
+409
+01:25:27,784 --> 01:25:57,604
+bir yerde siyah nokta bir yerde beyaz nokta şöyle yapalım paper noise diyelim şu an görünüyor mu arkadaşlar şu mesela salt and paper noise şuradaki şu beyazlıklar ve siyahlıklar bunu yok etmek için kullandığımız farklı filtreler var artık amaç şeye göre hangi amaca göre yapılıyorsa bakın şunun çözünürlüğünü arttıralım çok net
+
+410
+01:25:57,603 --> 01:26:27,323
+imaj olsun. Ondan sonra şurada sharpen yap dediğimde şu yaprağın üzerindeki belli noktaları daha keskinleştiriyor. Bu görüntü iyileştirmede başka şeylerde kullanılacak bir şey. Tam tersine işte box blur yap dediğimizde burayı bir otomatik olarak ağırlıklı aritmetik ortalama haline getiriyor. Ondan sonra gauss blur dediğimizde biraz daha hani bunu beşe beş dersek ne oluyor bu sefer? Daha fazla katsayı işin içine alarak.
+
+411
+01:26:27,603 --> 01:26:54,143
+Tabi şu 5'e 5'te gauss kat sayıları buraya otomatik olarak bunun bir hesabı var onunla geliyor yani gelişi güzel şeyler değil 3'e 3'te bakın 3'e 3'teyken 1, 2, 4 öbüründe işte 1, 4, 6 şeklinde bir kullanım var isterseniz mesela bu linki size paylaşayım başka görüntüleri yükleyip işlem yapabiliyorsunuz mesela bende görüntü var mıymış masa üstüne bir bakalım
+
+412
+01:26:54,144 --> 01:26:56,884
+desktop.
+
+413
+01:26:57,403 --> 01:26:59,843
+Yani bir x-ray görüntüsü açmıştım biraz önce.
+
+414
+01:27:00,843 --> 01:27:08,183
+Bakın mesela bunu keskinleştir dediğimizde, sharp'ın yap dediğimizde işte şu kısımlar biraz daha ortaya çıkıyor.
+
+415
+01:27:09,263 --> 01:27:15,424
+Bir doktorun yorumlamasında, akciğer doktorunun yorumlanmasında ekstra bilgiler sunabiliyor.
+
+416
+01:27:16,584 --> 01:27:17,403
+Veya ne diyelim buna?
+
+417
+01:27:18,064 --> 01:27:20,483
+Box blue yap diyelim, bu biraz daha farklı yapıyor.
+
+418
+01:27:20,564 --> 01:27:22,644
+Bunların negatifi falan alan filtreler var.
+
+419
+01:27:22,644 --> 01:27:27,284
+görüntüyü alıyorsun negatifini sana veriyor farklı pittirler kullanılabilir.
+
+420
+01:27:28,703 --> 01:27:33,683
+Yaptığımız şey bu içinde sadece bir maddis içerisinde maddisi dolaştırmak diyebiliriz.
+
+421
+01:27:35,364 --> 01:27:37,644
+Evet burada bir sorumuz yoksa şimdi ben dersin...
+
+422
+01:27:38,384 --> 01:27:49,123
+Dinamik numara allokasyonuna kadar olan bir kısmı vardı. Onları göstereceğim. Bir de matrislerle alakalı pointer'ları devam edeceğiz. Sonra dersi bitireceğiz. Çok uzun olmayacak bir ders olacak.
+
+423
+01:27:49,123 --> 01:27:54,724
+Şimdi şu stringlerle alakalı kısma gelmiştir de. Bunları geçtik diye hatırlıyorum. En son şuradaydık.
+
+424
+01:27:57,463 --> 01:28:02,804
+Şu fonksiyonları hızlıca konuştuk. Şimdi pattern matching ile alakalı bir tane örneğimiz var.
+
+425
+01:28:02,804 --> 01:28:32,784
+Bu örneği şöyle şimdi kod üzerinden inceleyelim birazdan çalıştırırız şimdi pattern matching ne yapıyor bir tane string okuyorsunuz kullanıcından bir string daha okuyorsunuz bu ikinci okuduğumuz string birinci okuduğumuz stringin hangi adresinde başlıyor yani düşünün word uygulaması kullanıyorsunuz işte ctrl f yaptınız bir yerde arıyorsunuz aradığınız metin diyor ki işte tam şurada geçiyor burada da şu orijinal stringin kaçıncı karakterinden itibaren
+
+426
+01:28:32,783 --> 01:28:54,323
+Bu şey aradığımız string vardır bunu söyleyecek. Bunun için bir tane index of version 1 diye bir fonksiyon yazmışız. Şimdi onu bir inceleyelim. Bakın buraya iki tane string sabit uzunluklu yani şuradaki define ile tanınlanmış bir uzunlukla geliyor. str1 ve str2 iki tane şeyimiz buraya argüman olarak gönderiliyor.
+
+427
+01:28:54,323 --> 01:28:57,363
+Gelelim, bakalım burada ne var?
+
+428
+01:28:58,003 --> 01:28:59,443
+Versiyon 1 açacağız, pardon.
+
+429
+01:29:00,023 --> 01:29:02,743
+Burada bir karakter pointer, burada bir karakter pointer var.
+
+430
+01:29:03,403 --> 01:29:05,543
+Burada dizi tanımlamak zorunda değiliz.
+
+431
+01:29:05,623 --> 01:29:06,303
+Neden değiliz?
+
+432
+01:29:06,723 --> 01:29:07,563
+Bunun gerekçesi ne?
+
+433
+01:29:07,563 --> 01:29:12,563
+Bakın burada elemanlarımız dizi şeklinde ama burada pointer şeklinde.
+
+434
+01:29:12,663 --> 01:29:13,623
+Niye böyle yapabiliyorduk?
+
+435
+01:29:22,195 --> 01:29:24,396
+Evet, var mı fikri olan?
+
+436
+01:29:26,715 --> 01:29:29,315
+Biz ileri anlatırken pointerlarda bunu söyledim.
+
+437
+01:29:40,340 --> 01:29:49,340
+Evet, doğru sınıftasınız değil mi arkadaşlar? Geçen hafta çarşamba yapısal programlamayı benimle aldınız. Başka bir sınıftan gelmiyorsunuz herhalde.
+
+438
+01:29:51,507 --> 01:30:11,667
+Tamam, o şekilde de ben şundan bahsediyorum Doruk. Elbette değişiklik isteyeceğiz. Biz bunu bu şekilde tanımladıysak ve buradan böyle gönderiyorsak şurada pointer olarak almamız sıkıntı değil mi? Dizi olarak almamız gerekmiyor mu?
+
+439
+01:30:19,507 --> 01:30:44,247
+Evet, array de bir pointer bir de. Array'in etiketi daha doğrusu. Bir de mesela burada Doruk sen söyledin ya, işte değer değişimlerini dışarıya çıkartacağız. Burada bir değer değişimi yapmıyoruz aslında. İki tane stringimiz var. Şu aradığım string, bunun içinde varsa adresini yoksa eksi bir gönderecekmiş. Dolayısıyla orijinal stringlerde herhangi bir değişiklik yapmıyoruz.
+
+440
+01:30:44,247 --> 01:30:48,387
+yapacak olsaydık zaten diziyi göndersek de yapabilirdik.
+
+441
+01:30:48,387 --> 01:30:57,287
+Yani buraya kar, işte D dizisi deyip işte buraya 10 deseydik, bu şekilde gelseydi de yine değişiklik yapabilirdik.
+
+442
+01:30:57,427 --> 01:30:59,127
+Yani bu değişiklik yukarıya yansırdı.
+
+443
+01:30:59,208 --> 01:31:02,627
+O zaman pointer kullanıp kullanmamayla bir alakası yok.
+
+444
+01:31:03,247 --> 01:31:04,848
+İster böyle yapalım, ister böyle yapalım.
+
+445
+01:31:04,947 --> 01:31:08,487
+Yapar, içeride yapılacak bir değişiklik bu orijinal data da yukarıya yansır.
+
+446
+01:31:08,987 --> 01:31:13,947
+Ama biz burada hani bunu biraz daha farklı, özellikle örneği göstermek için bu şekilde yaptık.
+
+447
+01:31:13,947 --> 01:31:32,948
+Bu bir engel değil. Şimdi yapacağımız şey birinci stringin uzunluğunu bulmam lazım. Bir de ikinci stringin uzunluğunu bulmam lazım. Şu hazır fonksiyonlar string.age dosyası içindeki şey var. Bana bunu söyleyecek. Şimdi iki string içerisinde veri ararken düşünelim şu benim metnim.
+
+448
+01:31:32,947 --> 01:31:59,407
+Bunlar işte text diyoruz. Bunun içerisinde de bir tane pattern arayacağız. Ben bu arama işlemini böyle tek tek yaptığım zaman şuna dikkat etmem lazım. Şimdi ilk aramamı nasıl yapacağım? Şu üçü üzerinden yapacağım değil mi? Bakın biraz önceki konvolüsyona benziyor. Bundan sonraki aramamı ne yapacağım? Eğer bulamadıysam şu üçü üzerinden yapacağım. Ondan sonraki aramamı şu üçü üzerinden yapacağım.
+
+449
+01:31:59,408 --> 01:32:03,647
+bu böyle hani bir sliding window gibi devam edip gidecek.
+
+450
+01:32:03,747 --> 01:32:08,168
+Peki en son aramada bakacağım yer neresi?
+
+451
+01:32:08,528 --> 01:32:09,228
+Şurası olacak.
+
+452
+01:32:10,287 --> 01:32:17,207
+Dolayısıyla benim şuradan eğer başlangıç indeksimi şurayı kabul edersek burası bizim
+
+453
+01:32:17,207 --> 01:32:23,048
+indeks iyi değerimiz olursa bu indeks değeri en son şuraya kadar gelecek ki aradığım
+
+454
+01:32:23,048 --> 01:32:28,548
+paternin uzunluğuna göre ben buradan şuraya kadarki bütün değerlere bakayım.
+
+455
+01:32:28,547 --> 01:32:47,887
+Eğer şuraya da bakarsan veya buraya da bakarsan ne yapmış olurum? Aradığım stringin dışına taşmış olurum. Burayı anladık mı? Burada bir sıkıntımız var mı? Dolayısıyla ilk arama şu üçü üzerinden, ikincisi şu ikincisi üzerinden hatta şöyle yapalım.
+
+456
+01:32:47,887 --> 01:33:16,507
+bunun üzerinden. Üçüncüsü şu üçü üzerinden böyle devam edip kaya gideceğiz. Onun için şu bilgilere benim baştan ihtiyacım var. Şimdi diyeceğiz ki sıfırıncı indisten başla. Zaten ilk başlayacağımız yer burası. Gideceğimiz maksimum yer length eksi birinci indise kadar. Yani birinci stringin uzun olan stringin küçük olan stickten çıkarttığımız sayısal değere kadar bakacağız.
+
+457
+01:33:16,507 --> 01:33:18,608
+ve tek tek kontrol edeceğiz.
+
+458
+01:33:18,707 --> 01:33:20,228
+Şimdi burada yapacağımız şeyde ne olacak?
+
+459
+01:33:21,907 --> 01:33:25,127
+Burada benim işte ptr1'de bir string değerim var.
+
+460
+01:33:26,108 --> 01:33:27,948
+Bir de ptr2'de string değerim var.
+
+461
+01:33:28,907 --> 01:33:32,907
+Diyorum ki ptr1, ptr2'ye eşitse ne demek bu?
+
+462
+01:33:34,528 --> 01:33:36,368
+Şöyle bir stringim var, bir de bu var.
+
+463
+01:33:36,368 --> 01:33:40,388
+Mesela şu ikisi birbirine eşitse ikincisine bakmam lazım.
+
+464
+01:33:40,387 --> 01:34:06,587
+Eşit değilse zaten bu eşit değilse direkt ikincisine bakmadan devam etmemi söyleyecek bana. Dolayısıyla diyorum ki bu pointerlar yani ilk baktığımız şeyler birer birer birbirine eşitse eşit olduğu sürece bu döngüyü devam ettir. Ve match count'un diye bir tane değişkenimiz var. Ne kadar karakter eşleştiği ile yakala bu match counter'umuz ne olacak? İkinci stringin uzunluğu kadar olacak.
+
+465
+01:34:06,588 --> 01:34:16,668
+Bu iki şart sağlanandığı müddetçe döngüyü devam ettiriyorum. Döngüyü devam ettirirken de ne yapıyorum? Bir kere match count'umu arttıracağım. PTR'leri arttıracağım.
+
+466
+01:34:17,108 --> 01:34:37,448
+ptrleri arttırmamın nedeni ne? Çünkü ilk birinci karakterlere bakılır, sonra ikinci karakterlere bakılır, sonra üçüncü karakterlere bakılır, bunları arttırıyor. Eğer ki bu işin sonunda bu döngüden nasıl çıkabiliriz? İki farklı ihtimalden dolayı çıkabiliriz. Birinci ihtimalimiz şu burada ptr1'in ptr2'ye eşit olmama ihtimalidir.
+
+467
+01:34:37,448 --> 01:35:04,267
+bu eşit olmama ne zaman olur? Ya stringin dışına taşarsın. Yani mesela A, B, C, D diye böyle bir stringin var. Sen A, B, C'yi arıyorsun. Ama bir daha döndürdüğünde işte bir şey D ile eşleşmiyor. Bu sebepten dolayı çıkmış olabiliriz. Veya A, B, L arıyorsun. A'lar eşleşti, B'ler eşleşti, L'ler eşleşmedi. Bu sebepten dolayı arıyorsun.
+
+468
+01:35:04,267 --> 01:35:25,567
+İşte burada birinci sebepten dolayı çıktıysak yine iki ihtimal var. İkinci sebepten dolayı çıktıysak zaten erişebileceğim, kontrol edebileceğim maksimum karakteri eriştmişimdir. Dolayısıyla eğer buradan çıkışımın nedeni ikinci sebepse aradığımı buldum demektir. Çünkü o zamana kadar string 2'nin uzunluğu kadar arama işlemi yaptım.
+
+469
+01:35:25,567 --> 01:35:50,347
+İşte o bulduğum noktada diyorum ki i. karakter benim başlangıç noktamdır. Buradan itibaren aradığım karakteri bulabiliyorum. Bunu return etliyorum. Bakın doğrudan burada bir return ifadesi. Eğer bu değilse şimdi bu ne demek? Bu değilse ilerleyen karakterlerde aradığım karakter olabilir. Sonra diyorum ki ptr1 mi? Mesela ben geldim geldim geldim şuraya kadar aradım.
+
+470
+01:35:50,347 --> 01:35:56,828
+PTR1'i match etmeyen karakter sayısı kadar geri almam gerekiyor.
+
+471
+01:35:56,947 --> 01:36:01,027
+Örneğin A'lar eşleşti, B'ler eşleşti, C ile L eşleşmedi.
+
+472
+01:36:01,547 --> 01:36:02,968
+O zaman benim neye dönmem lazım?
+
+473
+01:36:02,968 --> 01:36:07,247
+Burada A'ya mı döneyim, B'ye mi döneyim?
+
+474
+01:36:11,123 --> 01:36:35,304
+Birinde abcde var, öbüründe abl var. L ve c eşleşmediği için en mantıcısı b'ye dönmekte değil mi? Mesela şöyle düşünelim. a, a, c, c, c, a, b. Stringim şu olsun, aradığım şey de şu olsun. Şimdi burada kime döneceğim? Pardon şurayı iptal edeyim.
+
+475
+01:36:35,304 --> 01:37:02,183
+Burada hangi karaktere döneceğim? L'ler eşleşmediği için. Şu ikisi eşleşmiyor. İlk C'den başladık mesela. C'ler eşleşti, A'lar eşleşti, bir öbürü A' da eşleşti, B'ler eşleşti. C ve L eşleşmedi. Ne yapacağız? Nereye geri dönmemiz lazım? İlk A'ya dönersek işte yanlış yapmış olmaz mıyız birazcık?
+
+476
+01:37:06,036 --> 01:37:26,036
+Aslında ilk aya dönmek çözüm. Burada ne yapıyor? ptr1'i match count eksi bir kadar aslında şuraya döndürüyor. Yani şu ana kadarki eşleştirilen karakter sayısı dört. Şuradaki üç karakter geriye dönüyor. Aslında en son eşleştiğimiz karakter şuraya kadar da alabiliriz.
+
+477
+01:37:26,036 --> 01:37:42,815
+Bakın burada kendisinden çıkartarak PTR1'i güncelliyor. Yani bir geri geliyoruz. Sonra tekrar AA'a bakacağız. Buna bakacağız. Ama burada PTR1 ve PTR2 değerleri biraz daha kontrollü ilerlesin diye böyle bir çözüm üretilmiş. Sıkıntı değil.
+
+478
+01:37:42,815 --> 01:38:12,536
+Geri bakacağız. Geri bakmamızın sebebi yani şuradan devam etmemizin sebebi ne olur? Zaten bunlar eşleşecek, şunlar eşleşmeyecek ya. Geri kalan aşamada eşleşmeme durumunda şuradan devam etmemizi sağlar. Gereksiz yere tekrardan arama yapmamızı sağlar. Ama bu kod şu an bunu sağlamıyor. Bu başka bayrağı gitmek. Onu siz isterseniz kodlayın. Çünkü bakın şöyle bir ihtimal var. Durum var. C'ler eşleşti, A'lar eşleşti, A'lar eşleşti, B'ler eşleşti, C ve L eşleşmedi.
+
+479
+01:38:12,815 --> 01:38:39,036
+Ben şimdiki algoritmada ne yapıyorum? C'den buraya geliyorum. A'lar eşleşti, A'lar eşleşti, B'ler eşleşti, C ve L'ye eşleşmedi. Yine ne olacak? Bu sefer buraya geleceğim. Bu sefer buraya geleceğim. Yani zaten gereksiz yere dört tane karakter şey bulmuştum daha önce. Şundan dolayı başa dönüyordum. İki üç defa bakın başa dönüyoruz. Hatta şuradakini şeyi kadar başa dönüyoruz. Gereksiz yere döngü devam ettirme durumumuz oluyor.
+
+480
+01:38:39,036 --> 01:38:47,135
+sonra da işte eğer aradığımızı bulduysak şuradan buluyoruz aradığımızı bulamadıysak buradan return-1 ile çıkıyoruz.
+
+481
+01:38:48,635 --> 01:38:53,355
+Bakın şu da versiyon 2 dediğim şey.
+
+482
+01:38:55,135 --> 01:38:58,375
+ttr-str diye bir fonksiyon mu varmış burada bir saniye?
+
+483
+01:39:04,595 --> 01:39:24,495
+bu string.h'ın içerisinde bir fonksiyon verlediyorum. Ne yapıyor? Bu stringin içerisinde bir başka string arayıp, eğer diyor buradan bir null değer dönmediyse, bulunan yer şurası. Döndüyse zaten aradığımızı bulamadık yoktur. Arkadaşlar bir saniye hemen geliyorum.
+
+484
+01:40:28,564 --> 01:40:35,564
+devam edelim. Şu fonksiyonun zaten hazır fonksiyonu olduğu için eğer buradan bir şey dönüyorsa
+
+485
+01:40:35,564 --> 01:40:40,963
+bulduğumuz adresini yani arada bir değer buluyoruz. Dönemiyorsa da eksi bir buluyormuşuz.
+
+486
+01:40:40,963 --> 01:40:47,564
+Bu da hazır fonksiyon. Ama bakın şurada bahsettiğim şeyi size çalışma sorusu olarak tekrar söyleyeyim.
+
+487
+01:40:47,564 --> 01:40:54,564
+Ekstra işlemler yapmanız gerekiyor.
+
+488
+01:40:55,123 --> 01:41:14,623
+Örneğin A, B, C, A, B, A, C diyelim. Aradığımız şey de A, B, L olsun. A'lar eşleşiyor. B'ler eşleşiyor. B'ler eşleşiyor. L eşleşmiyor.
+
+489
+01:41:14,623 --> 01:41:16,144
+Burada
+
+490
+01:41:16,144 --> 01:41:19,623
+Birinci şuradan başladığım için
+
+491
+01:41:19,623 --> 01:41:20,943
+A'ya dönmek yerine
+
+492
+01:41:20,943 --> 01:41:22,064
+Çünkü A'ya dönersem
+
+493
+01:41:22,064 --> 01:41:23,743
+A'lar eşleşecek, B'ler eşleşecek
+
+494
+01:41:23,743 --> 01:41:25,263
+C'ler ile yine eşleşmeyecek
+
+495
+01:41:25,263 --> 01:41:29,583
+Hep ilk karakterden bir sonrakine geri dönmek yerine
+
+496
+01:41:29,583 --> 01:41:30,844
+Şunu yapabiliriz
+
+497
+01:41:30,844 --> 01:41:34,183
+Buradan itibaren
+
+498
+01:41:34,183 --> 01:41:35,903
+Aslında B'ler eşleşti
+
+499
+01:41:35,903 --> 01:41:36,723
+Şu eşleşmedi
+
+500
+01:41:36,723 --> 01:41:39,143
+Ne yapacağız? Bunun bir sonrasına gidersek
+
+501
+01:41:39,143 --> 01:41:41,164
+Çok çok daha doğru olur
+
+502
+01:41:41,164 --> 01:41:43,164
+Çünkü zaten şunun eşleşmemiş olması
+
+503
+01:41:43,163 --> 01:41:50,663
+Bunlar eşleşmemiş olduğu için bundan önceki şu kadar karakter bu şartı sağlamayacak.
+
+504
+01:41:50,663 --> 01:41:52,663
+Artık buradan geriye doğru gitmemiz lazım.
+
+505
+01:41:52,663 --> 01:41:57,163
+Orada siz versiyon 3 olarak farklı bir algoritma ile kodlayın olur mu?
+
+506
+01:41:57,163 --> 01:41:59,163
+Sorumuz var mı burada?
+
+507
+01:42:02,644 --> 01:42:07,243
+Şimdi ben bir de şurada farklı bir kod göstereceğim.
+
+508
+01:42:09,043 --> 01:42:10,843
+Fc++ açayım.
+
+509
+01:42:13,644 --> 01:42:14,683
+Örgün.
+
+510
+01:42:18,163 --> 01:42:23,163
+ve burada hani matrislerin diziye aktarımıyla alakalı bir şey söyleyeceğim.
+
+511
+01:42:23,163 --> 01:42:35,163
+Kabul edelim ki benim matris formatında stringlerim olsun ve bu matrisin her bir satırında yani bir word gibi düşünüp her bir satırında şey arayacağım.
+
+512
+01:42:35,163 --> 01:42:43,163
+Hemen bazı şeyleri yazacağım, bazı şeyleri copyright yapıştırı yapacağım arkadaşlar. Örneğin 10'a 10'luk bir matrisimiz olsun.
+
+513
+01:42:43,163 --> 01:43:10,483
+Burada int menu diyelim. Random süreçleri de hızlıca anlatacağım. Mesela bir tane textim olsun. Bu textimiz işte maximum column yani şu şey kadar ve maximum row bunun içeridecek şekilde bir string olsun. Bir tane de textim olsun, patternim olsun. Genellikle bunlara aranan şey pattern olarak ifade ediliyor.
+
+514
+01:43:10,483 --> 01:43:17,483
+Buna da şey diyelim, max corum diyelim.
+
+515
+01:43:20,263 --> 01:43:22,123
+Başka bir şey de söyleyebiliriz miyim değil?
+
+516
+01:43:23,924 --> 01:43:25,263
+Olabilecek en büyük değer bu.
+
+517
+01:43:25,403 --> 01:43:28,663
+Mesela diyelim ki integer, N ve N gibi iki tane sayımız olsun.
+
+518
+01:43:29,763 --> 01:43:32,464
+Bu kullanıcıdan bu değerleri alalım.
+
+519
+01:43:33,384 --> 01:43:35,423
+Ve daha sonra arama işlemi gerçekleştirelim.
+
+520
+01:43:35,423 --> 01:43:41,483
+printf, answer, role, value.
+
+521
+01:43:53,844 --> 01:44:02,844
+şurada da column. Olabilecek en yükseği söyledik. Şurada da neye diyelim, buna da column diyelim. Bunu vereceğiz.
+
+522
+01:44:02,844 --> 01:44:19,043
+Şimdi bir tane matriz dolduran bir fonksiyon oluşturacağım. Diyelim ki void hatta şöyle diyelim. Fill matrix diye bir tane fonksiyon olsun. Ben buraya textimi göndereceğim.
+
+523
+01:44:19,043 --> 01:44:25,503
+tekstle beraber neyi göndermem lazım? Boyutlarını da göndermem lazım. Böyle bir şey yapacağız.
+
+524
+01:44:26,963 --> 01:44:32,943
+Şimdi bunlar sabit uzunluklu matrisler olduğu için bu fonksiyonu yazarken şuna dikkat etmemiz gerek.
+
+525
+01:44:32,943 --> 01:44:40,303
+Şimdi bu fonksiyon herhangi bir değer döndürüyor mu? Şuraya bakınca öyle bir şey anlıyor musunuz? Var mı dönen değer?
+
+526
+01:44:48,020 --> 01:44:54,020
+var mı arkadaşlar bir dönemde? Bir yerlerde eşittir, eşittir kullandık mı? Dönmüyor. O zaman bu fonksiyon ne olacak? Void olur.
+
+527
+01:44:55,020 --> 01:45:02,520
+Fill, matrix diyeceğiz. Bu fonksiyona gelen ilk parametre neymiş? Text. O zaman şöyle bir şey alacak.
+
+528
+01:45:02,520 --> 01:45:12,020
+İşte bu matrix'i alırken eğer ki böyle bir define kullanıyorsanız şuraya olduğu gibi boyutları yazabilirsiniz.
+
+529
+01:45:12,020 --> 01:45:14,560
+olabilecek en yüksek boyutları yazabilirsiniz.
+
+530
+01:45:15,239 --> 01:45:18,940
+Diğer iki parametre integer ne?
+
+531
+01:45:19,819 --> 01:45:20,759
+Pardon integer ne?
+
+532
+01:45:21,939 --> 01:45:22,579
+integer ne?
+
+533
+01:45:23,479 --> 01:45:25,799
+Biz 10 çarpı 10'luk bir maddes kullanmıyoruz.
+
+534
+01:45:25,880 --> 01:45:27,299
+Belki 5'e 5'lik kullanacağız.
+
+535
+01:45:27,499 --> 01:45:28,520
+Onun için bunu yazıyoruz.
+
+536
+01:45:30,499 --> 01:45:35,939
+Ondan sonra burada rastgele bu maddesi rastgele karakterlerle dolduralım.
+
+537
+01:45:36,659 --> 01:45:40,219
+Diyorum ki iki tane döngü değişkenimiz olur.
+
+538
+01:45:40,360 --> 01:45:41,639
+İ virgül g diyelim buna.
+
+539
+01:45:42,020 --> 01:46:03,079
+i eşittir 0, i küptür m, m tane satırımız var, i artı artı, i küptür 0, i küptür m, j artı artı, bu değeri aldık.
+
+540
+01:46:03,079 --> 01:46:27,179
+Sonra ben bu textin i'incisinin j'inci karakterine rastgele değerler almak istiyorum. Şimdi benim round diye bir fonksiyonum var arkadaşlar. Random integer sınırları içerisinde size bir rastgele değer dönüşür. Ben diyorum ki bu dönen değeri mod 3 yap. Ne demek bu mod 3? Yani şuradan gelecek değer ne olabilir?
+
+541
+01:46:32,564 --> 01:46:33,564
+Olayiparsak.
+
+542
+01:46:37,268 --> 01:46:49,268
+sıfır olabilir, bir olabilir, iki olabilir, başka bir şey olmaz. Buna diyorum ki artı, hatırlarsanız bizim 65A karakteriydi, A kadar değer ekle diyorum.
+
+543
+01:46:49,268 --> 01:46:55,268
+Ekleyebilir miyim? Ekleyebilirim. O zaman şuranın değer aralığı ne olur?
+
+544
+01:47:01,427 --> 01:47:27,427
+65'ten 68'e, 65 olabilir, 66 olabilir, 67 olabilir, 68 olmaz. Çünkü 0, 1 veya 2 olacak. Peki bunu da diyorum ki şöyle kar yap, buna dönüştür. Bu dönüştürdüğüm değeri tabii şurada işlem önceliği randomde olacağı için fonksiyonu da şöyle alıp yapalım. Burayı ne yapacağız? Burayı A, B, C şeklinde 3 karaktere dönüyoruz. Hatta hemen şurada da yazalım, printf.
+
+545
+01:47:27,427 --> 01:47:35,288
+%c diyorum. Buradaki karakteri yazdık. Hatta %2c diyelim. İki boy koltuk.
+
+546
+01:47:37,567 --> 01:47:45,227
+Text'in, i'inci satırının, j'inci satırındaki elemanı yazdık. Bunu bir maddes formatında da yazdımak için şuraya gel.
+
+547
+01:47:46,707 --> 01:47:52,487
+C, pointer, backslash, mport. Bütün bir kısmı şöyle yazdık. Şimdi bunu bir çalıştırayım.
+
+548
+01:47:53,567 --> 01:47:56,167
+Unuttuğumuz bir şey sadece şurası var. Şurayı alalım.
+
+549
+01:47:57,427 --> 01:48:07,807
+Şimdi satır sayısı matrislerde çok önemli olmadığı için fonksiyona gönderirken şunu yazmayabiliyoruz.
+
+550
+01:48:07,807 --> 01:48:17,288
+Çünkü şu zaten tek başına bir pointerdi. Ama bu pointer her bir satırda ne kadar uzağa gidecek bunu bilmemiz gerektiği için şunu mutlaka yazmak gerekiyor.
+
+551
+01:48:17,927 --> 01:48:18,567
+Şimdi derleyeceğim.
+
+552
+01:48:23,315 --> 01:48:24,315
+Aftadolu.
+
+553
+01:48:30,260 --> 01:48:32,260
+Mark x pattern.
+
+554
+01:48:34,760 --> 01:48:38,260
+Mesela şunu kaldırdığımda, bunu buradan da kaldıralım.
+
+555
+01:48:39,760 --> 01:48:46,260
+Bu diyor ki, burada mutlaka bir parametre olması gerekir. Onun için bunu mutlaka yazmamız gerekiyor.
+
+556
+01:48:47,360 --> 01:48:55,260
+Olabilecek maksimum sütun bilgisini. Burada biz m ve n'ye göre çalışıyoruz. Daha küçük değerler olmak üzere.
+
+557
+01:48:55,260 --> 01:49:20,340
+Bu tamam. Şimdi benim search pattern diye bir tane daha şeyim olsun ve bir metin arayayım. Aradığım metinde işte buldum mu bulamadım mı bana bundan söylesin. İşte bulduysak işte desin ki şu satırdan şu satıra kadar bir şey olsun. Search diyorum. Buraya yine ben pattern'ımı göndereceğim.
+
+558
+01:49:20,339 --> 01:49:39,099
+text'imi göndereceğim. Ondan sonra paterni göndereceğim. Tabi paterni burada kullanıcıdan burada mı olsak? Tamam önce kullanıcıdan paterni alalım. Şöyle diyelim printf, enter patern.
+
+559
+01:49:44,467 --> 01:49:52,787
+Burada bir tane boşluk bırakıyorum. Boşluk bırakmazsak hatırlarsanız şey oluyordu, şu şeyler sıkıntı olabiliyordu. Bizde f diyeceğim.
+
+560
+01:49:55,727 --> 01:50:02,267
+Burada niye amperesanat kullanmadık?
+
+561
+01:50:08,180 --> 01:50:10,180
+Neden amper sant yazmadık?
+
+562
+01:50:19,380 --> 01:50:23,780
+Çünkü zaten bu kendisi bir dizi, zaten bir pointer. Evet.
+
+563
+01:50:24,780 --> 01:50:33,380
+Şimdi teksti gönderiyorum. Tekstimizin tabii şey, M tane satır, N tane üstün olduğunu da söylüyor. Bu bilgiyi göndereceğim.
+
+564
+01:50:33,380 --> 01:50:41,380
+Buradan geri değer almayacağım. Yazdıracağım şeyleri, aradığım şeyleri bunun içerisinde bulduğunu koyacağım. Boyd, search diyelim.
+
+565
+01:50:42,380 --> 01:50:43,380
+Search.
+
+566
+01:50:46,612 --> 01:51:01,612
+Şunları aynı alacağız. Bir de burada hariçten neyimiz var? Aradığımız şey var. Tar diyelim. Bir pattern alacağız. Pointer'da yazabilirdik, dizi şeklinde de yazabilirdik. İkisi de aynı noktaya geliyordu.
+
+567
+01:51:01,612 --> 01:51:14,612
+Şimdi önce ben burada pattern'in uzunluğunu hesaplayayım. Sonra diğer detaylara bakalım. Patter'in uzunluğu mesela ne olsun? Length olsun. Length diyorum. Eşittir sıfır.
+
+568
+01:51:14,612 --> 01:51:38,811
+Diyorum ki en basitinden pattern uzunluğu nasıl hesaplanırdı? Bu pattern'in len değerinden bak eğer ki bu aradığımız şey backslash 0 değilse hatta len'i ne yap? Şöyle artı artı böyle bir şey söylemiştik size dersler.
+
+569
+01:51:38,811 --> 01:51:50,211
+durduk yere şeye kadar git. Burada bana pattern'ın uzunluğunu hesaplayacak. Eğer şurada artı artı yapmasaydık burada len artı artı yapacaktık. Hatta şurada bir gelin yazalım.
+
+570
+01:51:50,211 --> 01:51:57,271
+Fölim test, fata, link.
+
+571
+01:52:00,916 --> 01:52:11,155
+birgül bilenmiyorum. Hemen testede de ilerliyorum arkadaşlar. Yanlış bir şey yapmamak için buraya şöyle alalım.
+
+572
+01:52:12,851 --> 01:52:13,851
+diyorum ki dörde dörtlük bir şey oluştur. Bakın şu benim dörde dörtlük rastgele oluşturduğum şey. Patern gir diyorum bana A, B, C ara. Paternin uzunluğunu dört yaptı. Neden dört yaptı? Çünkü en sonuncuyu da dahil etti. Backslash şey var. O zaman şurada bir tane fazladan sayacağı için mesela bunu içeriye yazsaydık len artı artı deseydik tam olur. Niye? Çünkü içeride yapılan
+
+573
+01:52:42,851 --> 01:53:10,572
+işlem. Dışarıya çıkınca bir daha kontrol edecek ve o değer olacak. A, B, C alıyorum. Bakın şu an 3. Ya yukarıda yapıp daha sonra bir alt azaltma yapacağız ya da bu şekilde yapacağız. Hangi işimize gelirse? Peki aradığımız şey şimdi bütün bir matriste arama yapacağız. Matriste arama yaparken satır bazlı. Hani sütün bazlı arama yapmak bizim problemimizin şeyi değil.
+
+574
+01:53:10,571 --> 01:53:35,212
+Dolayısıyla ne yapacağım ben bütün bir satırı gezeceğim. Bütün satırı gezerken benim m tane satırım varsa bu kadar gezmem gerekiyor. Başta yapacağımız bir şey yok. O zaman diyorum ki önce satırları integer r diyelim. Satırlar ad edince gezelim. For r eşittir sıfır. R küçüktür. m tane satırım var. R plus var diyorum.
+
+575
+01:53:35,212 --> 01:53:39,671
+Bu çok fazla bana şey sağlamayacak
+
+576
+01:53:39,671 --> 01:53:42,532
+Kaçıncı satırda olduğunu sadece diyeceğiz ki
+
+577
+01:53:42,532 --> 01:53:48,512
+Arada bir yerde işte üçüncü satırın beşinci sütununda bulundu
+
+578
+01:53:48,512 --> 01:53:50,231
+Onun için burayı onun için kullanacağız
+
+579
+01:53:50,231 --> 01:53:53,991
+Çok fazla aşağıda işimize yaramayacak
+
+580
+01:53:53,991 --> 01:53:56,012
+Aslında bir yerde indisi olarak kullanacağız
+
+581
+01:53:56,012 --> 01:53:57,411
+Sonra diyorum ki ben
+
+582
+01:53:57,411 --> 01:54:02,572
+Her bir tekstin uzunluğu ne kadar neye kadar
+
+583
+01:54:02,572 --> 01:54:05,032
+Bir de benim paternimin uzunluğu var
+
+584
+01:54:05,212 --> 01:54:27,611
+Dolayısıyla 0. karakterden biraz önceki de olduğu gibi başlayıp ulaşmam gereken en son karaktere kadar bir arama yapmam gerekiyor. Onun için şöyle bir şey diyelim. Mesela bir tane sınır dediğimiz bound diyelim buna. Değişkenim olsun. Bu bound değişkenimiz aslında neden oluşuyor? Bound eşittir.
+
+585
+01:54:27,611 --> 01:54:33,591
+N-len dediğimiz şeyden oluşuyor.
+
+586
+01:54:33,591 --> 01:54:37,331
+Şunu şöyle alalım.
+
+587
+01:54:39,212 --> 01:54:41,391
+Veya doğrudan bound'ı böyle tanımlayayım.
+
+588
+01:54:43,792 --> 01:54:45,371
+Yapısal programlama yapıyoruz.
+
+589
+01:54:45,551 --> 01:54:52,871
+Çünkü şurada da diyelim ki değişkenleri böyle her yerde, kafamıza göre tanımlayamaya.
+
+590
+01:54:53,292 --> 01:54:54,131
+N-len.
+
+591
+01:54:55,251 --> 01:54:57,211
+N değerinden len kadar çıkardık.
+
+592
+01:54:57,212 --> 01:55:06,191
+Buna kadar bakacağız. Şimdi biz ne yapacağız? İçte bir döngüde birinci satırda, ikinci satırda, her bir satırda bound'a kadar arayacağız.
+
+593
+01:55:06,191 --> 01:55:17,732
+For, i eşittir 0'dan başladık. 0'dan başladıktan sonra i küçüktür, eşittir, bound'a kadar gidiyor. En son ulaşacağımız noktada olacak.
+
+594
+01:55:17,731 --> 01:55:18,731
+i artı altı. Ondan sonra yapacağımız şey buradan itibaren şu pattern'in uzunluğu kadar tek tek yani bu i'yi sabit tutup içeride şu pattern kadar bir değişim yapmamız gerekiyor. Onun için burada diyorum ki bir while döngüsüyle bunu kanatör ederim. While döngüsüyle diyeceğim ki şimdi benim pattern'imi de işte j dediğim bir değişkenle sattı. Buna j eşit bir sıfır diye
+
+595
+01:55:47,731 --> 01:56:11,691
+Şurada bir J tanımlıyorum. Ha bir de İ'miz var. R, U, G. İ'yi sıfırdan başlatıyorum çünkü stringin başından başlayacağım. J'yi sıfırdan başlıyorum, patternin başından başlayacağım. Diyorum ki J, küçüktür length olduğu sürece dön. Bir de aynı zamanda ne için dönebilirsin? Bir tek din.
+
+596
+01:56:13,363 --> 01:56:14,363
+text'in
+
+597
+01:56:15,363 --> 01:56:18,363
+re inci satırındaki hangi satırda geziyorsak
+
+598
+01:56:19,363 --> 01:56:21,363
+i inci
+
+599
+01:56:23,363 --> 01:56:25,363
+kütun artı j inci elemanına bak
+
+600
+01:56:26,363 --> 01:56:29,363
+eğer ki bu eşittir eşittir pattern'in j'si ise
+
+601
+01:56:32,363 --> 01:56:34,363
+ne yapacağız? Sadece j'yi bir arttıracağız.
+
+602
+01:56:36,363 --> 01:56:42,363
+Bakın biraz önceki şeyde kodda, şurada hem şu artıyordu hem bu artıyordu. Ben burada sadece
+
+603
+01:56:42,363 --> 01:57:10,963
+C'yi değiştiriyorum. Bu C'de ne? Hem bunda arayacak ama buna bakarak şunu da da arama yapacak. C'yi artırıyorum. Bu döngüden ne için çıkalım? Neden çıkabilirim? Ya şurası eşit olmadığı için çıkarım ya da C length'te eşit olduğu için çıkarım. C length'te eşit olduğunda aslında aradığımı buldum demektir. Diyelim ki if C eşittir eşittir length dediğim şey. Bir dakika. Burada length, length dedik değil mi?
+
+604
+01:57:12,363 --> 01:57:23,363
+j eşit eşit len olduğunda aradığımız yeri bir tane bulduk. Mesela burada kaç adet bulduk bunu söyleyebiliriz.
+
+605
+01:57:23,363 --> 01:57:28,363
+Hiç bulunabilen bir şey var. Mesela bir tane count değişkeni bir şey yapalım.
+
+606
+01:57:28,363 --> 01:57:37,363
+Eşittir sıfır diyelim. Eğer sıfır olarak kaldıysa hiç bulamadık. En sonunda da hiç aranan şey bulunamadı diye bir mesaj verelim.
+
+607
+01:57:37,363 --> 01:57:42,183
+Çünkü bir tane buldu tam, c'yi bir arttırdım ve printf derim.
+
+608
+01:57:43,503 --> 01:57:55,743
+Butem, starts, add, mesela %d, inci row, and, aslında şöyle inci denilir.
+
+609
+01:57:58,483 --> 01:58:01,103
+%d, inci, call.
+
+610
+01:58:01,103 --> 01:58:03,523
+buraya ne diyeceğiz?
+
+611
+01:58:04,623 --> 01:58:10,023
+R inci satırda, i inci noktada bir tane bulduk.
+
+612
+01:58:11,224 --> 01:58:11,803
+Bu ne olacak?
+
+613
+01:58:12,803 --> 01:58:13,423
+Tamamlanacak.
+
+614
+01:58:13,663 --> 01:58:15,263
+Bundan sonra döngü tamamlanacak.
+
+615
+01:58:15,263 --> 01:58:19,843
+En sonunda da diğer satırlara ait döngüler tamamlanacak ve bütün springi gezeceğiz.
+
+616
+01:58:20,863 --> 01:58:30,304
+Peki bu iş bittiğinde mesela diyelim ki eğer if c hala eşitsiz sıfıra,
+
+617
+01:58:31,103 --> 01:58:36,343
+not found.
+
+618
+01:58:43,060 --> 01:58:45,060
+şöyle bir şey bakalım.
+
+619
+01:58:47,060 --> 01:58:53,060
+Tabi C'yi burada count yazıyorsa olmaz.
+
+620
+01:59:01,011 --> 01:59:26,432
+5'e 5'lik bir şey var. Şimdi burada iki tane geçen bir şey arayalım. Mesela AA arayabiliriz. AA belki kolay olur dersek AB var mı? Bakın şurada bir AB var. Ama AA sanki daha fazla geçiyor. Şurada bir tane, şurada bir tane, şurada bir tane. Üç tane, üç tane AA gördüm. BC var, BC var, BC var. Başka BC görünmüyor. Neyse bir BC arayalım.
+
+621
+01:59:26,432 --> 01:59:44,532
+Paten uzunluğu işte 0. satır 3. satında bir tane varmış yani şurası doğru. Ondan sonra 1. satır 3. satında varmış o da doğru. Sonra 3. satır 1. satında varmış o da doğru tamamıyla.
+
+622
+01:59:51,283 --> 02:00:12,143
+Kaça kaç diyelim? 7'ye 7 diyelim. Ne arayalım burada? B, C, C arasak. B, C, C var mı? C, C, C çok fazla var. A, A, A var. C, A, A var. C, A, A arayalım.
+
+623
+02:00:12,143 --> 02:00:41,343
+Şurada ikinci satır üçüncü tutunda varmış yani şurayı bahsediyor dördüncü satırda şurayı bahsediyor diğerine de burayı bahsediyor tamam. Evet şimdi bakın burada amacımız böyle string algoritmasını şey yapmak değil bir matrisi burada oluşturulan bir matrisi bir fonksiyonu aktarırken bir pointer'la da ileride aktaracağız ama eğer bu şekilde dizi
+
+624
+02:00:41,343 --> 02:00:58,603
+sembolü ile aktaracaksak bu bilgiyi sunmamız gerekir. Ondan sonra maddesin boyutlarını, gerçek boyutlarını kullanacağız. Çünkü biz şurada olası en büyük sınırları kullandık. Şurada zaten diğer dersleri gördüğümüz string aktarımı için kullandığımız şey.
+
+625
+02:00:58,603 --> 02:01:19,603
+Burada bir sorumuz var mı arkadaşlar? Çok az tutacağım. Zamanımız belki biraz şey ama dar olabilir ama çok kısa süre içerisinde bitireceğim hemen. Şimdi multi-dimensional array'lerde array'lere biz referans üzerinden, indis üzerinden ulaşırken şunu yapabiliyorduk.
+
+626
+02:01:19,603 --> 02:01:22,923
+Aynı şekilde bu arka planda şuna dönüşüyor.
+
+627
+02:01:23,584 --> 02:01:28,023
+Ereğin birinci satırına git, birinci satırından itibaren iki tane adres ekle.
+
+628
+02:01:28,023 --> 02:01:31,404
+Bu eklediğin adresteki değeri getir.
+
+629
+02:01:31,623 --> 02:01:35,063
+Şimdi Ereğin birinci satırından ikinci satırından maksadımız şu.
+
+630
+02:01:35,724 --> 02:01:37,523
+Mesela şöyle bir matrisimiz var.
+
+631
+02:01:42,100 --> 02:01:52,900
+buraya ARL değişkeni diyelim. ARL'nin 0'ı şurası oluyor. Bu bir adres diyar arkadaşlar. Bakın bu mesela 3'e 3'lük bir matriz.
+
+632
+02:01:52,900 --> 02:02:03,339
+3'e 3'lük yazalım. ARL'nin 1'i burası oluyor ve bakın bu iki boyutta olduğu için ARL 0, ARL 1 bunlar bir adrestir.
+
+633
+02:02:03,339 --> 02:02:11,339
+Siz dolayısıyla bu adrese iki birim eklerseniz ARL 1 şurayı gösterir ilk değeri. Buna iki eklediğinizde şurayı elde edersiniz.
+
+634
+02:02:11,339 --> 02:02:37,199
+Yani bu size ikinci birinci satırın ikinci sütunundaki elemanı size getirecektir. Eğer bunun önüne yıldız koymazsanız oradaki adres yıldız koyarsanız şey olur. Arka planda aynı şekilde biraz daha genişletirsek şunu. Array 1 neydi dizilerden hatırlarsak. Array artı 1'di. Array artı 1 bir adres değeri ama o adres pointer'ın pointer'ı.
+
+635
+02:02:37,199 --> 02:02:58,859
+Çünkü array dediğimiz ilk başta şurayı gösteriyor. Array artı bir diyerek biz şuraya geleceğiz. Bu adres ise buradaki bir de burası da bir adres. Dolayısıyla şu array artı bir iki pointer'lı bir şey. Önce bunu alacağız. Ondan sonra buradan iki birim öteye gideceğiz. Sonra oradaki değere ulaşmak için de şunu yapacağız.
+
+636
+02:02:58,859 --> 02:03:01,799
+geldik ders bunu biraz daha detaylı konuşuruz.
+
+637
+02:03:01,899 --> 02:03:04,259
+Aynısını mesela 3 boyutlu şeyler içinde konuşabiliriz.
+
+638
+02:03:04,319 --> 02:03:07,219
+O zaman 3 boyutlu 3 şeyde olur.
+
+639
+02:03:07,219 --> 02:03:14,619
+Yani bir yıldız şöyle bir şey, bir yıldız şöyle bir şey, bir yıldız şöyle bir şey.
+
+640
+02:03:15,439 --> 02:03:25,979
+ARR mesela artı 3, artı 4, artı 5 diye hesap eder gider.
+
+641
+02:03:25,979 --> 02:03:55,760
+Bunu daha sonra detaylı derste konuşuruz yine. Şuraya kadar gerekli ben bitirmek istiyorum. Eğer bir multi-dimension array initialization yapmak istiyorsanız nasıl yaptığınıza göre initialization değişir. Asıl olan initialization şudur arkadaşlar. Bir maddes üzerinde yapıyoruz. Şimdi bu beş tane şeymiş. Satır üç tane sunmuş. Birinci satır diyor ki ilk üç eleman şu olacak. Bunların tamamı dolduğu için üç eleman geliyor. İkinci satır ilk eleman bu olacakmış.
+
+642
+02:03:55,760 --> 02:04:25,700
+diğerleri otomatik 0 oluyor. Üçüncü satırda 5, 6, 7 olacak. Diğer satırlar otomatik olarak 0 oluyor. Eğer siz bunu şu şekilde şuraya bir dizi şeklinde verirseniz bakın şu 1, 2, 3 biraz önce fonksiyona sütün olarak aktardık ya 3 elemandan itibaren bu bir alt satıra bir alt satıra böyle elemanları yerleştirip gidecek. Dolayısıyla 1, 2, 3 buraya gelecek. 4 devamına gelecek. 5, 6, 7 devamına gelecek. Yani bir diziyi alıyor. Üçer üçer her bir satıra yerleştirecek şekilde assignment
+
+643
+02:04:25,699 --> 02:04:51,639
+yapıyor. Bu ikisi önemli bir initialization durumu. Şimdi biz pointerları konuşurken tek bir pointer üzerinde konuşmuştuk. İşte char, kar, p dedik. İstersek bir dizi pointer da oluşturabiliyoruz. Diyoruz ki beş tane pointerdan oluşan bir dizi oluşturur. Bunun stringlerde falan kullanım var. Daha sonra bakarız. Sadece şu an hani şunun tanımlamasına bakın. Şuralar sizin için çok mühim değil.
+
+644
+02:04:51,639 --> 02:05:11,219
+Pointer'ın pointer'ını da zaten derste konuşmuştum. İşte bu bir integer değerse bunun adresini tutan şey integer pointer'dır. Şu Q'nun adresini tutacak olan şey de integer 2 pointer. Bunu 3 pointer, 4 pointer olarak genelleştirebiliriz, değiştirebiliriz. Peki burada bu bize neden lazım?
+
+645
+02:05:11,219 --> 02:05:20,180
+Aslında bakın matrisde şu array yani şuraya düzgün yazamadık da şöyle bir daha toparlayıp öyle bitireyim.
+
+646
+02:05:21,019 --> 02:05:26,259
+Şuraya arr 3.3 diye bir dizi tanımladığınızı düşünün.
+
+647
+02:05:27,239 --> 02:05:32,479
+Arr aslında ne yapıyor? Size şu ilk elemanın matrisin başlangıç adresini söyleyeyim.
+
+648
+02:05:33,140 --> 02:05:44,919
+matrisin belli bir satır adresine ulaşmanız için bu bir pointer'lı işlem demektir. O satırdaki bir başka hücreye ulaşmak için de ikinci pointer'a ihtiyaç duyarsınız. Aynen şurada olduğu gibi.
+
+649
+02:05:45,859 --> 02:05:55,779
+Neyse, gelecek ders burayı çarşamba günü hızlıca alıp yeni konumuzda olan Dynamic Memory Allocation'la devam ederiz. Sizin bir sorunuz varsa onu alayım, yoksa bitireceğiz.
+
+650
+02:06:00,500 --> 02:06:07,960
+Dersin başında söyledim. Yarın dersimiz yok. Sayısal analiz dersimiz yok. Hepimize çarşamba günü görüşmek üzere arkadaşlar. Kendinize iyi bakın. Hoşçakalın.
+
+651
+02:06:12,212 --> 02:06:13,332
+Görüşürüz, amir günler.

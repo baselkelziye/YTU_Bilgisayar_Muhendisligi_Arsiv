@@ -1,0 +1,4743 @@
+1
+00:02:02,323 --> 00:02:09,324
+Bu kanala bir link paylaştım. Kendi WhatsApp grubunuz varsa, oraya da arkadaşlarınız bağlanmak isterse diye paylaşabilirsiniz.
+
+2
+00:02:13,491 --> 00:02:14,491
+falan kimse yok.
+
+3
+00:02:43,891 --> 00:02:49,292
+Biz sizde şu storage classları çalıştık arkadaşlar değil mi? Register, static, extern.
+
+4
+00:02:51,491 --> 00:02:55,331
+Diğer grup bunu anlatmamış ama niyeyse şaşırdım ben.
+
+5
+00:03:02,292 --> 00:03:10,292
+dersin sonuna doğru sınavla alakalı konuşacağız ve gelecek haftaki dersle alakalı konuşacağız.
+
+6
+00:03:12,792 --> 00:03:16,292
+Nasrullah sesimiz geliyor mu? Şu an sen katılmışsın.
+
+7
+00:03:23,860 --> 00:03:25,860
+Biz duyuyor musunuz? Nasrullah.
+
+8
+00:03:28,099 --> 00:03:30,099
+Tamam, teşekkür ederim.
+
+9
+00:03:40,756 --> 00:03:56,235
+Dinamik Memorallukasyonu ile alakalı matriz multiplication örneğini yapalım. Ondan sonra zaten bu konu bitiyor.
+
+10
+00:04:08,020 --> 00:04:22,319
+Bu argümanlarla alakalı konuyu da pazartesi bitirmiştik. Structure'lara kadar geldik. Önce bir konuyu bitirelim.
+
+11
+00:04:28,500 --> 00:04:35,500
+Dinamik olarak iki tane matresimiz olacak. Bu matresleri çarpacağız.
+
+12
+00:04:44,500 --> 00:04:45,699
+net görünüyor mu oradan?
+
+13
+00:05:09,043 --> 00:05:13,543
+şöyle bir matriximiz olsun, şey fonksiyonumuz olsun.
+
+14
+00:05:18,451 --> 00:05:41,951
+create matrix diyelim. Buraya ben m ve n gibi iki tane boyut vereyim. Buradan maddes oluşturalım. Bu birinci şeyim. Diğeri bu madde ise sayısal değerler dolduralım.
+
+15
+00:05:41,951 --> 00:05:45,571
+Bunu ne diyebiliriz? Void diyelim.
+
+16
+00:05:46,351 --> 00:05:47,712
+Tiyelim matriks diyoruz.
+
+17
+00:05:49,812 --> 00:05:53,751
+Buraya da matriksin pointer'ını alalım.
+
+18
+00:05:54,891 --> 00:05:55,652
+M'yi alalım.
+
+19
+00:05:56,451 --> 00:05:57,111
+N'yi alalım.
+
+20
+00:05:59,992 --> 00:06:03,151
+Hocam niye void diye soracak olabilirsiniz.
+
+21
+00:06:04,032 --> 00:06:05,691
+Oluşturulmuş bir matriksimiz var.
+
+22
+00:06:05,992 --> 00:06:08,352
+Pointer'ımız, yerimiz açılmış, her şey hazır.
+
+23
+00:06:08,351 --> 00:06:35,451
+sadece o bölgeye gidip değerler yazacağız. Onun için oradan bir değer almayacağız. Bu tarz bir şeyde void dışında bir şey kullanmakla biraz mantıksız geliyor. Çünkü ben buraya zaten parametre almak zorundayım. Bir pointer almak zorundayım. Aldığım bu pointer'ı tekrar return etmenin bir anlamı var mı? Yok. Yani şöyle bir şey yapsak da olur mu? Elbette olur.
+
+24
+00:06:35,451 --> 00:06:38,871
+Burada bir şeyler yaptık.
+
+25
+00:06:39,831 --> 00:06:41,172
+Matrix'i doldurduk.
+
+26
+00:06:41,231 --> 00:06:41,551
+Return.
+
+27
+00:06:42,591 --> 00:06:43,231
+Matrix.
+
+28
+00:06:43,651 --> 00:06:45,231
+Çok anlamlı bir şey değil.
+
+29
+00:06:45,331 --> 00:06:47,051
+Zaten buraya parametre olarak geliyor.
+
+30
+00:06:47,791 --> 00:06:54,911
+Burada parametre olmayan, şurada tanımladığım başka bir şey olsaydı, bunu return etseydim anlardım ama gerek yok.
+
+31
+00:06:55,112 --> 00:06:57,132
+Onun için burayı void yapalım.
+
+32
+00:06:58,712 --> 00:06:59,911
+Bir şeyde return etmeyelim.
+
+33
+00:07:02,411 --> 00:07:04,571
+Bir tane de metodumuz.
+
+34
+00:07:05,451 --> 00:07:18,451
+print matrix olsun. Bu da yazılırmak için. Bu da boyut olacak. Bir başka şey de matrisi çarpmak için olacak.
+
+35
+00:07:18,451 --> 00:07:29,451
+İşte burada iş değişiyor. İki matrisi çarpınca ortaya yeni bir şey çıkacağı için o zaman burada integer pointer, sheet pointer göndereceğiz.
+
+36
+00:07:29,451 --> 00:07:38,451
+Multipli, matrix diyelim. Hatta matrices.
+
+37
+00:07:41,451 --> 00:07:59,231
+Buraya ne alacağız? İki tane matris alacağız. M1 diyelim. İşte burada şey karışıyor. Bir tanesinin boyutu M, öbürünün boyutu M. Ondan sonra integer pointer M2 diyeceğiz.
+
+38
+00:08:05,939 --> 00:08:11,539
+Buna da K, V, G, L, böyle bir şey olacak.
+
+39
+00:08:17,267 --> 00:08:21,267
+Böyle bir yapı. Eksiğimiz var. Buradan da bir şey dikörüne diyeceğiz.
+
+40
+00:08:25,684 --> 00:08:45,223
+Peki. Başka eksiğimiz herhalde yok gibi. Gelelim ana programa. Önce birinci madresin boyutları m ve l olsun. İkinci madresin boyutu k ve l olsun.
+
+41
+00:08:49,748 --> 00:09:12,508
+Çünkü bilgileri mail üzerinde almam lazım. M ve N'yi, K ve L'yi. Create marketin içerisinde kullanıcıdan alsam ne olacak? Burada aldığımda kalacağım. Yani M değerini kullanıcıdan alınız, işte N'yi kullanıcıdan aldık gibi bir şey uygularsak bu M ve N'yi şuradan elde edemem.
+
+42
+00:09:12,508 --> 00:09:20,508
+Ancak elde etmem için ekstra manipülasyonlar yapmam lazım. Dolayısıyla bunları ana programda, ana fonksiyonunda alıyorum.
+
+43
+00:09:38,035 --> 00:09:41,635
+Bunu aldıktan sonra create matris fonksiyonumu çağırıyorum.
+
+44
+00:09:42,635 --> 00:09:43,635
+M'e.
+
+45
+00:09:44,175 --> 00:09:49,635
+Bu fonksiyonu bu şekilde çağırdıysam buradan bana bir değer dönecek demektir. O zaman
+
+46
+00:09:49,996 --> 00:09:51,735
+benim integer
+
+47
+00:09:51,735 --> 00:09:54,035
+m1 diye bir matrisim olacak.
+
+48
+00:09:54,035 --> 00:09:55,235
+m1 değil.
+
+49
+00:09:56,435 --> 00:09:59,435
+Buradan elde ettiğim değeri burada tutuyoruz.
+
+50
+00:10:00,695 --> 00:10:02,035
+Kopyalıyorum.
+
+51
+00:10:02,035 --> 00:10:06,175
+.
+
+52
+00:10:05,812 --> 00:10:07,812
+on the job.
+
+53
+00:10:12,371 --> 00:10:14,112
+Bunlar da şöyle açıklama yazabiliriz.
+
+54
+00:10:14,112 --> 00:10:15,631
+Formatrix 1.
+
+55
+00:10:17,631 --> 00:10:18,731
+Formatrix.
+
+56
+00:10:23,635 --> 00:10:31,795
+Şurada ikinci maddisiniz siz. Bu da hazır. Ne yapacağım? Maddileri doldurmam lazım.
+
+57
+00:10:43,412 --> 00:10:45,412
+maddisi dolduracağız.
+
+58
+00:10:47,171 --> 00:10:48,171
+fill matriks
+
+59
+00:10:48,171 --> 00:10:51,412
+m1'i gönder, m'yi gönder, m'yi gönder.
+
+60
+00:10:52,811 --> 00:10:54,292
+aynısını
+
+61
+00:10:54,292 --> 00:10:56,292
+bir daha alıyorum.
+
+62
+00:10:57,811 --> 00:10:59,651
+m2'yi gönder,
+
+63
+00:10:59,651 --> 00:11:01,651
+a'yı gönder,
+
+64
+00:11:03,811 --> 00:11:04,811
+bu da tamam.
+
+65
+00:11:05,611 --> 00:11:08,611
+Sonra maddisi yazdıralım.
+
+66
+00:11:10,412 --> 00:11:12,412
+print matriks
+
+67
+00:11:22,259 --> 00:11:31,619
+Bakın, mail ne gibi oldu? Hangi bir arayüz gibi oldu değil mi? Yani user interface gibi bir şey değil. Burada sadece o fonksiyonları çağırıyoruz.
+
+68
+00:11:38,323 --> 00:11:40,323
+E, iki, K, bir, götür.
+
+69
+00:11:43,823 --> 00:11:48,323
+Ondan sonra maddesi çarpacağız. Üçüncü bir maddesimiz var artık.
+
+70
+00:11:52,820 --> 00:11:54,820
+mevcistir.
+
+71
+00:11:59,860 --> 00:12:05,860
+ne yaptık? Önce M1'i gönderdik. M1'in boyutlarını gönderdik. M1'in boyutları M1 gibi M.
+
+72
+00:12:05,860 --> 00:12:10,860
+M2'yi gönderdik. Bunun boyutları K1 ile.
+
+73
+00:12:10,860 --> 00:12:17,860
+Şey de yapabilirdik. İstersek burada M3'ü de gönderip bu fonksiyonu void ile yapabilirdik. Olur muydu? Olurdu.
+
+74
+00:12:17,860 --> 00:12:20,860
+Buradan bir şey return etmeye gerek kalmayabilirdim.
+
+75
+00:12:20,860 --> 00:12:27,860
+Ama benim matriz oluşturma diye bir şey yapmam lazım.
+
+76
+00:12:27,860 --> 00:12:52,239
+Burada da operasyon yapacağım. Şimdi şurada bir malloc kullanacağız. Şey pardon, burada bir malloc kullanacağız. O kullandığım malloc şurada tekrar kod kendini tekrar etmeyecek. Dolayısıyla buraya bir parametre olarak almak yerine bunun içinde yapıp daha sonra bunu return etmek daha şu an için kolayıma geldi. Başka şekillerde de fonksiyon elbette yapılabilir.
+
+77
+00:12:52,239 --> 00:13:05,199
+maddesleri çarptık. Artık ne var? Üçüncü maddesin ekrana bastırılması var. M3'ü al. Efendim?
+
+78
+00:13:08,720 --> 00:13:16,259
+Şunu sileceğiz. Sonra bu maddesin ne oluyor? M çarpı neylik? K çarpı neylik maddesi çarpıldığında M çarpı L'lik mi oldu?
+
+79
+00:13:16,260 --> 00:13:35,959
+Birincisi m'ye neylik, öbürste k'ye neylik, eğer şu n ve k birbirine eşitse m çarpı neylik bir matris elde edeceğiz. Eğer elde edebilsek. Sonra return 0. Başka bir şey yok herhalde. Gelelim dolduralım.
+
+80
+00:13:35,959 --> 00:13:49,959
+Şimdi mantifisi return create edeceğiz. Bir tane burada pointer oluşturuyoruz. m eşittir. Clear allocation yapalım, çi de temiz olsun.
+
+81
+00:13:49,959 --> 00:13:58,959
+Şimdi m tane satırı ifade edecek şekilde bizim şey oluşturdu.
+
+82
+00:14:02,067 --> 00:14:04,067
+Anlamadım mı?
+
+83
+00:14:04,067 --> 00:14:06,067
+Artıkçan nereli, artıkçan nereli.
+
+84
+00:14:06,067 --> 00:14:07,067
+Tamam.
+
+85
+00:14:07,067 --> 00:14:09,067
+Şöyle yapalım.
+
+86
+00:14:12,067 --> 00:14:18,067
+Onlar basit şeyler arkadaşlar. M tane integer pointer kadar yer açıyoruz. Bu
+
+87
+00:14:20,067 --> 00:14:24,067
+bize satırlarımızın oluşturulmasını söylüyor. Sonra
+
+88
+00:14:31,604 --> 00:14:41,604
+Efendim? Şöyle yapıldı, calloc bu şekildeydi. Number of elementin m tane, şurada da iki parametre göreceğiz.
+
+89
+00:14:41,604 --> 00:14:59,604
+i sıfırdan başladık. i küçüktürmeye kadar, i arttı. Matrixin i'si...
+
+90
+00:15:14,451 --> 00:15:15,791
+E virgül saygı.
+
+91
+00:15:18,151 --> 00:15:20,971
+Burada şunu söyleyebiliriz.
+
+92
+00:15:22,971 --> 00:15:24,332
+If
+
+93
+00:15:24,332 --> 00:15:26,231
+matrix
+
+94
+00:15:26,231 --> 00:15:28,811
+eşittir eşittir null ise
+
+95
+00:15:28,811 --> 00:15:31,751
+return
+
+96
+00:15:31,751 --> 00:15:33,091
+null
+
+97
+00:15:37,076 --> 00:16:02,076
+Bunu döndürebiliriz. Aynı şekilde şurada if matriksin i'si eşittir eşittir nullsaysayar return, return null. Bu da değilse şuraya kadar sağlıklı bir şekilde geldik demektir.
+
+98
+00:16:02,076 --> 00:16:08,076
+Burada bitiriyoruz. Create matris tamam. Peel matrisi de ne yapacağız?
+
+99
+00:16:08,076 --> 00:16:14,076
+Buraya gelen matrisin içerisine rastgele sayılar atayalım. Bu basit bir şey.
+
+100
+00:16:40,052 --> 00:16:46,771
+Size herhangi bir kısır verilmediyse arkadaşlar bu şekilde pointer da olsa şey de olsa matrisi bu şekilde kullanmanızda herhangi bir sıkıntı yok.
+
+101
+00:16:47,851 --> 00:16:51,852
+Yani isterseniz pointerla da yazın ama niye kendimizi zorlayalım ki?
+
+102
+00:16:53,111 --> 00:16:55,432
+Şunu yazmak çok çok daha basit, pratik bir şey.
+
+103
+00:16:56,472 --> 00:17:05,491
+Random mesela diyelim ki burada da %m çarpı n'lik değerler olacak şekilde.
+
+104
+00:17:05,491 --> 00:17:07,171
+Hatta m artı n diyelim.
+
+105
+00:17:10,052 --> 00:17:15,272
+Sadece uydurdum işte şunlara göre şey. Hatta içerisinde sıfırdan fazla değerler olsun. Artı bir diye.
+
+106
+00:17:16,031 --> 00:17:17,572
+Burayı rastgele dolduralım.
+
+107
+00:17:19,171 --> 00:17:22,111
+Aynısını print ederken de buraya alacağım.
+
+108
+00:17:25,311 --> 00:17:25,952
+Printed.
+
+109
+00:17:27,471 --> 00:17:28,331
+Yüzde.
+
+110
+00:17:30,052 --> 00:17:31,031
+Üçteye diyelim.
+
+111
+00:17:44,788 --> 00:17:56,788
+Bu da tamam. Geldik çarpma işlemi. Şimdi çarpma işlemi yaparken bir önce kontrol yapalım. Diyor ki, şu N ile K'nın birbirine eşit olması lazım.
+
+112
+00:17:56,788 --> 00:18:10,788
+Eşit değilse diyelim, N, different from, K ise doğrudan return. Baştan buna göre eşit. Eğer eşitse o zaman devam edeceğiz. Eşitse ne yapacağız?
+
+113
+00:18:10,788 --> 00:18:19,668
+M3 diyelim önce. Burada M3 yok. M3 diye bir matrizim olacak. M3 matrizim nereden oluşturacak?
+
+114
+00:18:19,668 --> 00:18:29,628
+İşte şu create matriz istediğimiz fonksiyonun oluşturacağı bir şey olacak. Create matrize ben ne göndereceğim?
+
+115
+00:18:29,628 --> 00:18:42,107
+2 matrisin boyutlarının çarpımının olacağı boyutlar M ve L'yi gösterir. Burada bu kadar yer açılacak.
+
+116
+00:18:43,488 --> 00:18:51,788
+Açıldıktan sonra elimizde M var, N var, K var, L var, her bütün değerler var.
+
+117
+00:18:51,788 --> 00:18:53,847
+E, şunların sonuçları da var.
+
+118
+00:18:54,667 --> 00:18:55,527
+Boş yerim de var.
+
+119
+00:18:56,487 --> 00:18:57,088
+Art ne oluyor?
+
+120
+00:18:57,588 --> 00:19:03,247
+Matris çarpma algoritmasıyla burayı doldurup en sonunda da şu M3'ü return edelim.
+
+121
+00:19:04,508 --> 00:19:09,228
+Şimdi bilerek şunu neden burayı integer pointer yaptığının herhalde anlaşılmıyız.
+
+122
+00:19:09,228 --> 00:19:19,148
+Buraya normalde M3 yapıp burada tekrardan şu kodun aynısını create matris kodunu yazıp işlem yapabilir miydim?
+
+123
+00:19:19,228 --> 00:19:19,868
+Yapabilirdim.
+
+124
+00:19:19,867 --> 00:19:25,147
+Ama gereksiz yere kod tekrar yapmış oluyordum. Burada zaten hazır bir tane fonksiyonum var.
+
+125
+00:19:25,147 --> 00:19:32,347
+Peki maddesi nasıl çarpacağız? İki tane maddesin çarpımı nasıl yapılır?
+
+126
+00:19:32,347 --> 00:19:38,107
+Ne oluyordu? Şöyle powerpoint açalım.
+
+127
+00:19:51,859 --> 00:19:53,859
+Bu da bir sayılarım var.
+
+128
+00:19:53,859 --> 00:19:55,859
+Burada da sayılarımız var.
+
+129
+00:19:55,859 --> 00:19:57,859
+Şöyle.
+
+130
+00:20:02,836 --> 00:20:25,836
+kabul edelim ki şöyle bir şey olsun. Ben birinci satırı alacağım önce. Birinci sütunla karşılıklı olarak çarpacağım. Buradaki noktaya getireceğim değil mi? Dolayısıyla bir döngü bu satırı gezmek ve aynı zamanda buradaki sütunu gezmek için.
+
+131
+00:20:25,836 --> 00:20:43,856
+Şimdi o döngünün içerisinde teker teker elemanları gezmek için bir döngüye daha ihtiyacım var. O sonucu buraya yazıyorum. Bir döngü de bundan sonraki işlemler için. Dolayısıyla iç içe kaç tane döngü lazım? Üç tane döngü lazım.
+
+132
+00:20:43,856 --> 00:20:46,756
+Peki
+
+133
+00:20:46,756 --> 00:20:49,896
+Birinci döngümüz
+
+134
+00:20:49,896 --> 00:20:52,655
+Gerçi burada da
+
+135
+00:20:52,655 --> 00:20:54,196
+Şöyle diyelim
+
+136
+00:20:54,196 --> 00:20:55,716
+Birinci döngümüz
+
+137
+00:20:55,716 --> 00:20:58,295
+Döngümüz J ile
+
+138
+00:20:58,295 --> 00:21:00,596
+Şimdi K diyeceğim
+
+139
+00:21:00,596 --> 00:21:01,336
+Burada K var
+
+140
+00:21:01,336 --> 00:21:02,755
+K'nın yerine ne diyelim
+
+141
+00:21:02,755 --> 00:21:04,935
+K, L, M, M
+
+142
+00:21:04,935 --> 00:21:07,376
+Bunların hepsi kullanılmış
+
+143
+00:21:07,376 --> 00:21:09,236
+X diyelim
+
+144
+00:21:09,236 --> 00:21:13,795
+Birinci döngüm kaçtan başlayacak?
+
+145
+00:21:13,855 --> 00:21:15,415
+hangi değişikliği
+
+146
+00:21:20,627 --> 00:21:26,028
+İndan İngilizavar.
+
+147
+00:21:29,460 --> 00:21:31,859
+Burada diyeceğiz ki, M3'ün
+
+148
+00:21:33,960 --> 00:21:34,960
+bir şeyinin
+
+149
+00:21:35,559 --> 00:21:39,559
+bir şeyi
+
+150
+00:21:40,627 --> 00:21:42,627
+artı eşittir.
+
+151
+00:21:44,227 --> 00:21:46,227
+M1'in
+
+152
+00:21:47,427 --> 00:21:48,627
+bir şeyinin
+
+153
+00:21:48,627 --> 00:21:49,627
+bir şeyi
+
+154
+00:21:50,027 --> 00:21:51,027
+şarpı
+
+155
+00:21:52,428 --> 00:21:53,627
+M2'nin
+
+156
+00:21:54,027 --> 00:21:56,427
+bir şeyinin
+
+157
+00:21:57,627 --> 00:21:58,627
+öyle değil mi?
+
+158
+00:22:00,427 --> 00:22:02,427
+Şimdi ben M1'i
+
+159
+00:22:02,427 --> 00:22:06,427
+birinci maddisi şuradaki gibi şuraya M1 desek
+
+160
+00:22:07,027 --> 00:22:08,427
+şu M2 desek
+
+161
+00:22:09,027 --> 00:22:10,427
+birinci maddiste
+
+162
+00:22:10,627 --> 00:22:22,387
+satır sabit kalacak, sütun değişecek. İkinci maddeste sütun sabit kalacak, satır değişecek. Peki o zaman ne yapacağız?
+
+163
+00:22:24,887 --> 00:22:39,727
+Şimdi satır sabit kalacak, sütun değişecekse, şu değişecek olan kısım şurası olması lazım ki bunu değiştir, değiştir, değiştir, sürekli şarpa. O zaman şuraya ne diyelim? X eşittir 0 diyelim.
+
+164
+00:22:40,627 --> 00:22:52,627
+X küçüktür ne diyeceğiz? Boyut nereye kadar gidecek? M'ye kadar, N'ye kadar, K'ya kadar, L'ye kadar?
+
+165
+00:22:53,627 --> 00:23:00,827
+N'ye kadar gidecek. Niye? Çünkü N ve K zaten eşit. X küçüktür N olana kadar.
+
+166
+00:23:00,827 --> 00:23:27,667
+X artı. O zaman şurası ne olacakmış? X olacak. Bu X oluyorsa şuranın da X olması lazım. Burası bitti. Şu ne olacak? Burada X ile alakalı bir şey yazacak mıyız? Yazmayacağız. Devam edelim. Bu sütunu geziyordu. Satırı gezmemizi sağlayan şey de o zaman şurada olacak. Buraya J'ye çıkmış.
+
+167
+00:23:27,668 --> 00:23:30,928
+C, kaça kadar gidecek?
+
+168
+00:23:35,124 --> 00:23:37,624
+sıfırdan başladıkta kaşa kadar gidiyoruz.
+
+169
+00:23:38,624 --> 00:23:41,823
+m tane satır olduğu için m olacak değil mi?
+
+170
+00:23:43,124 --> 00:23:45,124
+c artı artı
+
+171
+00:23:47,923 --> 00:23:49,124
+yani burası da
+
+172
+00:23:50,523 --> 00:23:51,923
+j inci
+
+173
+00:23:52,323 --> 00:23:54,124
+eee şeyden başla
+
+174
+00:23:55,124 --> 00:23:56,124
+şuraya kadar
+
+175
+00:23:56,823 --> 00:23:58,323
+peki buraya ne yazacağız?
+
+176
+00:23:59,323 --> 00:24:01,323
+burada da i kaldı yani
+
+177
+00:24:01,323 --> 00:24:02,723
+i eşittir sıfır
+
+178
+00:24:03,423 --> 00:24:04,923
+i küçüktür
+
+179
+00:24:11,251 --> 00:24:21,691
+kaçıncı şeye kadar gitmesi lazım burası? Önce şurayı dolduralım. Sıfırdan başlayıp şuradan M olduğundan emin misiniz?
+
+180
+00:24:24,019 --> 00:24:25,599
+Birisi neye kadar gidiyor?
+
+181
+00:24:28,039 --> 00:24:29,699
+Böyle düşünün arkadaşlar bakın.
+
+182
+00:24:31,899 --> 00:24:33,599
+Şuradaki şeyi hesaplamak için
+
+183
+00:24:33,599 --> 00:24:38,099
+Burada böyle geziyorum, burada böyle geziyorum.
+
+184
+00:24:40,200 --> 00:24:44,360
+Birden M'ye kadar, birden M'ye kadar.
+
+185
+00:24:44,679 --> 00:24:47,360
+Yani burada M tane şey varsa burada da M tane şey olacak.
+
+186
+00:24:49,619 --> 00:24:53,179
+Şurası bana şunu söylüyor zaten.
+
+187
+00:24:54,019 --> 00:25:02,780
+N'ye kadar olacağını. Şurada da M'ye kadar dersek, bu da doğru gibi. Şurada kaça kadar diyeceğiz?
+
+188
+00:25:07,059 --> 00:25:09,619
+M var, N var, K var, L var.
+
+189
+00:25:12,699 --> 00:25:13,619
+N'ye kadar.
+
+190
+00:25:14,479 --> 00:25:16,079
+N tane satır mı yok ama benim?
+
+191
+00:25:16,860 --> 00:25:17,799
+L'ye kadar.
+
+192
+00:25:19,360 --> 00:25:20,179
+İyi küçüktür.
+
+193
+00:25:21,159 --> 00:25:24,359
+Sonuçta burada elde edeceğimiz matris M çarpı L'lik olacak.
+
+194
+00:25:25,580 --> 00:25:26,019
+O zaman
+
+195
+00:25:26,019 --> 00:25:30,160
+M tane satır mı olacaksa acaba şurası M'ye kadar
+
+196
+00:25:30,160 --> 00:25:34,259
+şurası L'ye kadar olacak olmasın?
+
+197
+00:25:39,763 --> 00:26:00,763
+ve burası da iyi bir gözü. C olup. Değil mi? Şu an doğru mu? He? Neredeki yanlış? Anlamadım demek istediğim.
+
+198
+00:26:06,228 --> 00:26:07,228
+Evet.
+
+199
+00:26:07,228 --> 00:26:12,228
+Tamam doğrusunu söyle.
+
+200
+00:26:12,228 --> 00:26:17,228
+İlk şey.
+
+201
+00:26:19,188 --> 00:26:21,188
+demek istediğini anlamadım haline.
+
+202
+00:26:21,188 --> 00:26:24,188
+m1
+
+203
+00:26:24,188 --> 00:26:26,188
+i, x
+
+204
+00:26:26,188 --> 00:26:28,188
+şimdi
+
+205
+00:26:28,188 --> 00:26:32,188
+şu döngü nasıl çalışacak? j0 iken
+
+206
+00:26:32,188 --> 00:26:36,188
+yani satırı sabit tutuyorsun
+
+207
+00:26:36,188 --> 00:26:41,188
+evet, şurası i, x gibi
+
+208
+00:26:41,188 --> 00:26:44,188
+şurası
+
+209
+00:26:44,188 --> 00:26:45,188
+bu doğru sanki
+
+210
+00:26:45,188 --> 00:26:48,188
+evet, bu bittikten sonra
+
+211
+00:26:48,188 --> 00:26:51,568
+maddesimizdeki çarpma işlemi gerçekleşmiş oluyor.
+
+212
+00:26:51,568 --> 00:26:56,507
+Yani belki indislerde ufak tefek hatamız vardır ayrımcısına.
+
+213
+00:26:57,048 --> 00:26:58,228
+Buradan da bunu bir turn ediyorum.
+
+214
+00:26:58,728 --> 00:26:59,667
+Başka bir şey var mı? Yok.
+
+215
+00:27:01,048 --> 00:27:04,387
+Şuradaki şeyleri, sınırları, sayılar belki şey olabilir.
+
+216
+00:27:05,387 --> 00:27:09,948
+Şu M'ler, N'ler, K'lar, N'ler belki çok takipçil olabilir ama mantık bu şekilde.
+
+217
+00:27:10,768 --> 00:27:14,268
+Önce satırı şey yani elementer aslında şey yapıyoruz.
+
+218
+00:27:15,007 --> 00:27:16,528
+İlk çarpacağımız şey şey olacak.
+
+219
+00:27:16,528 --> 00:27:19,068
+iki vektörün harçlık olarak çarpması.
+
+220
+00:27:19,967 --> 00:27:21,208
+Burada şunu da yapabiliriz.
+
+221
+00:27:22,868 --> 00:27:27,808
+Bir tane yardımcı şey tutarsınız, yazarsınız, metot.
+
+222
+00:27:29,647 --> 00:27:31,188
+Void diyelim.
+
+223
+00:27:33,787 --> 00:27:35,548
+Hatta void de olmasın.
+
+224
+00:27:37,208 --> 00:27:37,728
+Gerçi.
+
+225
+00:27:41,364 --> 00:27:49,364
+voice olabilir. Multiply Array.
+
+226
+00:27:52,660 --> 00:28:16,500
+iki erreyin çarpımını sağlayan bir şey. Buraya bir E1, A1 alalım. Birinci erreyi. Şuraya ikinci erreyi alalım. Ondan sonra bunların boyutlarını alırsınız ki boyutları sabit olmak zorunda integer, N olsun. Bir de üçüncü olarak A3 alalım.
+
+227
+00:28:20,147 --> 00:28:24,347
+şu ikisini alacağız, şunun üzerinde çarpını yapacağız.
+
+228
+00:28:27,747 --> 00:28:32,448
+Yardımlı bir metod gibi, şimdi for, major, i diyelim.
+
+229
+00:28:47,284 --> 00:29:02,483
+Aslında şey, tek bir değer döndüreceğiz. Pardon, burada A3'e gerek yok. Şimdi ben A1 ve A2'yi karşılıklı olarak çarpacağım. Bu çarpımları bir yerde toplayacağım. Integer tp eşittir 0 diyelim.
+
+230
+00:29:06,195 --> 00:29:34,195
+diyeceğim ki A1'in i'inci değeriyle A2'nin i'inci değerini çarp toplam üzerine bunları kümres olarak ekle. Şurada A1'e gerek yok. Buradan elde ettiğimiz toplamı da integer olarak return edelim. Return pp.
+
+231
+00:29:34,675 --> 00:29:44,035
+Şimdi burada nasıl bir şey çağıracağız? Şunun yerine. Bu kodu şuna, şunu kullanacak şekilde yapmak.
+
+232
+00:29:44,035 --> 00:29:45,275
+Son döngü sağ ol.
+
+233
+00:29:45,275 --> 00:29:46,075
+Efendim?
+
+234
+00:29:46,075 --> 00:29:47,275
+Son döngü sağ ol.
+
+235
+00:29:47,275 --> 00:29:50,675
+Hangi son döngü? Yok. Döngü.
+
+236
+00:29:50,675 --> 00:29:58,675
+Ha evet. Şu döngü yerine. Şurayı şöyle yorum satırı yapacak olursak.
+
+237
+00:29:58,675 --> 00:30:02,675
+Evet.
+
+238
+00:30:03,859 --> 00:30:24,859
+diyeceğiz ki M3'ün İ'sinin C'si eşittir. Multipli R'e yap. Şimdi buraya iki tane dizi vermemiz lazım. Birincisiniz M1'in İ'si diyeceğiz. Oradaki satırı alacağız.
+
+239
+00:30:24,859 --> 00:30:43,859
+B2'nin x'ini alacağız. Gerçi burada x yok, j'yi alacağız. Bunların boyutları ne? İkisinin de tütün boyutlarının aynı olması neye kadar azıcık değil mi?
+
+240
+00:30:44,700 --> 00:30:49,419
+Birgül ne? Bu şekilde de aynısı olur mu? Olur.
+
+241
+00:30:53,044 --> 00:31:04,044
+Sonuçta, mass multiplication aslında bir elementer çarpma işleminden türetilen bir şey. Şimdi şu prototipleri teker teker yukarıya taşıyalım.
+
+242
+00:31:22,420 --> 00:31:24,420
+Böyle bir şey yapılabilir mi? Bunda yapılamam.
+
+243
+00:31:27,420 --> 00:31:28,420
+Efendim?
+
+244
+00:31:29,420 --> 00:31:31,420
+Alta basılı bir şey.
+
+245
+00:31:31,420 --> 00:31:32,420
+Öyle mi?
+
+246
+00:31:36,500 --> 00:31:38,500
+Word gibi değildir.
+
+247
+00:31:41,971 --> 00:31:43,971
+Evet.
+
+248
+00:31:48,627 --> 00:31:50,627
+Print Matrix Multiply Matrices
+
+249
+00:31:55,827 --> 00:31:57,827
+Bye everyone.
+
+250
+00:32:30,451 --> 00:32:33,451
+Evet, herhangi bir hatamız görünmüyor.
+
+251
+00:32:39,188 --> 00:32:49,188
+4'e 3'lük bir matris ile 3'e 2'lik bir şeyi çarp dediğimizde 4'e 2'lik bir şey bulacağız.
+
+252
+00:32:49,188 --> 00:33:08,188
+7, 2, 7 ile şunları çarptığımızda 7 kere 2, 14. 2 kere 2, 4, 18. 7 kere 1, 7. Şunla şurayı çarpınca oluyor mu? Olmuyor.
+
+253
+00:33:08,188 --> 00:33:10,188
+Bir yerde demek ki hatamız var.
+
+254
+00:33:11,188 --> 00:33:13,188
+7 kere 2, 14.
+
+255
+00:33:13,188 --> 00:33:15,188
+1 kere 2, 4, 18.
+
+256
+00:33:15,188 --> 00:33:16,188
+7 kere 1, 7.
+
+257
+00:33:16,188 --> 00:33:18,188
+18, 7 daha.
+
+258
+00:33:18,188 --> 00:33:20,188
+25 olması lazım.
+
+259
+00:33:20,188 --> 00:33:22,188
+15, 20 olmasın.
+
+260
+00:33:24,188 --> 00:33:26,188
+Bir bakalım nerede hatamız var.
+
+261
+00:33:39,955 --> 00:33:41,955
+Şimdi önce şuna bakalım.
+
+262
+00:33:51,763 --> 00:34:21,343
+3'e 2'likle 2'ye 2'lik çarpsın. 2 çarpı 3 ile 3 çarpı 3, 2 kere 3, 6, 3 kere 3, 9, 15. Bu doğruymuş. Ondan sonra 3, 1, 5 ile mesela 3, 1'i çarptığımızda 3 kere 3, 9, pardon 5, 5 ile 3, 1'i çarparsak 15, 5 ile 20. Bu doğru çalışıyor. Bunda sıkıntı yok.
+
+263
+00:34:21,764 --> 00:34:23,923
+Surdanek probleem izvara hijabha
+
+264
+00:34:30,195 --> 00:34:33,195
+Evet.
+
+265
+00:34:33,195 --> 00:34:50,195
+Sütun olarak o bilgiyi nasıl verebiliriz? Evet, burada öyle bir açmaz var. Oradaki sütun bilgisini alıp bir yere kopyalamamız gerekecek. Yani bir geçici bir diziye almamız lazım.
+
+266
+00:34:50,195 --> 00:34:53,195
+O zaman da yapacağımız şey ne olacak?
+
+267
+00:34:53,195 --> 00:35:00,195
+İşte M2'nin o sütununu olduğu gibi kopyalayıp işte bir mallocla önce yer açacağız.
+
+268
+00:35:00,195 --> 00:35:05,195
+O yer açtığımız yeri oraya kopyalamamız gerek.
+
+269
+00:35:05,195 --> 00:35:07,195
+Başka bir yolu olabilir mi?
+
+270
+00:35:07,195 --> 00:35:11,195
+Efendim?
+
+271
+00:35:11,195 --> 00:35:14,195
+Hoş parantez parantez.
+
+272
+00:35:20,532 --> 00:35:23,532
+Çünkü burada aslında bir adresini veriyoruz.
+
+273
+00:35:28,980 --> 00:35:32,980
+Yani şu şey olmuyor. Pointless. Pointless.
+
+274
+00:35:33,980 --> 00:35:51,980
+Pointless. Nasıl yapacağız? Yani şöyle, o satırdaki bütün tutunu söylememiz gerekiyor ya, hangisi ise, oradaki verileri alıp, geçini bir diziye kopyalayıp, o diziyi buraya return et, şey göndermesi parametre olarak tutmamız lazım.
+
+275
+00:35:51,980 --> 00:35:55,580
+Efendim?
+
+276
+00:35:57,719 --> 00:35:58,599
+Nasıl satır satır?
+
+277
+00:36:03,668 --> 00:36:13,668
+Yani şöyle, maddesi çarpında öyle bir şey var mı? Ben şurayla, bu satırla, üst tutunu çarparak maddesi çarpıyorum.
+
+278
+00:36:25,556 --> 00:36:49,675
+Böyle bir şey olması için bilmiyorum yani. Ayrıca şey yapmamız gerekmeyecek modelin için. Yani şu birinci satırı almak noktasında sıkıntımız yok da burada ben ikinci satırı pardon şuradan bir satır alsam sen bundan bahsediyorsun.
+
+279
+00:36:49,675 --> 00:36:52,695
+Nerede tutacağız?
+
+280
+00:36:53,055 --> 00:36:55,355
+Hani burada ilk sıra işlem gerekir.
+
+281
+00:36:57,175 --> 00:37:02,535
+Bu satır çünkü benim şuradaki satır çarpmamla hiçbir işime, sadece oradaki ilk elemanı alabilirim.
+
+282
+00:37:03,475 --> 00:37:05,675
+Mutlaka mutlaka sütunu almam gerekiyor.
+
+283
+00:37:06,416 --> 00:37:08,195
+Yani burada şöyle bir şey düşüneceğiz.
+
+284
+00:37:09,015 --> 00:37:18,115
+Bir tane işte vektör oluşturma şey yani bir tane matrisin bir satırını alıp bir yere geçici kopyalamamız gerekiyor dizi şeklinde.
+
+285
+00:37:18,115 --> 00:37:20,655
+orada da stütün olarak bunu alacağız.
+
+286
+00:37:21,115 --> 00:37:26,735
+O başka bir şey işte.
+
+287
+00:37:27,915 --> 00:37:29,095
+Onu yapana kadar şu var.
+
+288
+00:37:29,695 --> 00:37:32,736
+Biz hazırlı şuradan faydalanmamı istedik.
+
+289
+00:37:33,815 --> 00:37:35,095
+Burada tabii ne olur?
+
+290
+00:37:35,276 --> 00:37:46,255
+Önce M2'nin J'inci ilgili satırının J'in sütunundaki bütün değerleri alınalım.
+
+291
+00:37:46,255 --> 00:37:52,195
+yani M2'nin x'inin g'sini tamamen alıp bir yerde kaydetmemiz lazım.
+
+292
+00:37:52,935 --> 00:37:56,255
+Diyelim ki mesela burada şunu söyleyebiliriz.
+
+293
+00:37:58,215 --> 00:38:00,916
+Her sütunumuzun boyutu ne kadar olacak ki?
+
+294
+00:38:00,916 --> 00:38:04,935
+integer işte tmp diyelim.
+
+295
+00:38:06,736 --> 00:38:08,456
+Eşittir malloc.
+
+296
+00:38:12,456 --> 00:38:17,096
+N çarpı N virgül sidoc.
+
+297
+00:38:18,776 --> 00:38:19,875
+İlk kadar.
+
+298
+00:38:20,276 --> 00:38:21,395
+Çünkü bu sabit.
+
+299
+00:38:23,776 --> 00:38:28,356
+Bu kadar yer bana her zaman şey olacağı için sabit.
+
+300
+00:38:28,355 --> 00:38:56,515
+Şimdi ben şurada şunu yapabilirim. Tabi burada yine bir for dönüşünü çevirmek gerekecek. Diyeceğiz ki for x eşittir 0, x küçüktür aynı hesaba geliyor. N x artı artı tmp'nin x'ine
+
+301
+00:38:58,356 --> 00:39:00,356
+eşittir.
+
+302
+00:39:00,356 --> 00:39:03,356
+M2'nin x, c'sini kopyalamıyoruz.
+
+303
+00:39:06,356 --> 00:39:08,356
+Şimdi buraya da ne yapalım?
+
+304
+00:39:08,356 --> 00:39:10,356
+TMP'yi gündü.
+
+305
+00:39:11,356 --> 00:39:13,356
+TMP zaten bir dizi.
+
+306
+00:39:14,356 --> 00:39:16,356
+Bunu gönderleriz.
+
+307
+00:39:17,356 --> 00:39:19,356
+Şimdi olduk herhalde.
+
+308
+00:39:19,356 --> 00:39:22,356
+Arada başka yanlış bir şey yapmalıyız.
+
+309
+00:39:23,356 --> 00:39:25,356
+Ama ne oldu?
+
+310
+00:39:25,356 --> 00:39:27,356
+Çok şey fark etmedi.
+
+311
+00:39:28,356 --> 00:39:55,656
+O bir döngü şu onu açıklayayım. 2'ye 3, 3'e 2 diyelim. 2 çarpı 4, 8, 3 çarpı 3, 9, 17, 5 daha 22. Bakın şu an doğru. Şimdi nasıl bir şey var? Gerçi ekrandakilerin de görmesi için şeye yazmam lazım. Şu kodu şöyle alacağım.
+
+312
+00:39:58,355 --> 00:39:59,295
+Analiz eder gibi
+
+313
+00:40:03,027 --> 00:40:05,327
+biraz daha düşülebilirsek.
+
+314
+00:40:16,724 --> 00:40:21,724
+karmaşıklık analizi açısından inceleyelim.
+
+315
+00:40:26,900 --> 00:40:28,900
+Şimdi çok bir farkı olmadı.
+
+316
+00:40:37,460 --> 00:40:39,900
+Şimdi şuraya dikkat edecek olursak
+
+317
+00:40:54,643 --> 00:41:03,343
+Suranın karmaşıklığı ne? Bu fonksiyonun kaç defa çalışacağı ile alakalı. Bu fonksiyon ne kadar dönüyor?
+
+318
+00:41:05,143 --> 00:41:11,543
+Ne kadardır? N defa dönecek şekilde. Şunlar hani çok önemli değil. Dolayısıyla burası N karmaşıklık.
+
+319
+00:41:13,324 --> 00:41:16,664
+Bu döngü ne kadar dönüyor kendi içinde? Bu da N defa dönüyor.
+
+320
+00:41:18,443 --> 00:41:20,503
+Şu ikisi ne kadar toplamda döner?
+
+321
+00:41:21,003 --> 00:41:22,283
+2N defa dönüyor.
+
+322
+00:41:22,283 --> 00:41:44,824
+Bunu kapsayan şuradaki for döngüsü ne kadar dönüyor? Bu da L defa dönüyor. O zaman buranın geneli ne kadar dönecek? L çarpı iki en kadar. Bunu kapsayan şu da en tepedeki de M defa dönecek. O zaman L çarpı iki en kadar.
+
+323
+00:41:44,824 --> 00:42:08,444
+Eğer bu bir kare maddesi olsaydı M, L ve N aynı değer olarak kabul edelim. Hepsine de N diyelim. N, N, bir de bir N burada var. 2 çarpı N küp olacaktır. Bu tarz şeylerde biz bu kat sayıları ignore ediyoruz, kabul etmiyoruz. Yani yok, bu arzı değil.
+
+324
+00:42:08,443 --> 00:42:16,303
+Ardocam. Dolayısıyla yine N küplük bir şey. Şunun iki N olması veya N olması çok ciddi bir şey fark ettirmiyor.
+
+325
+00:42:17,863 --> 00:42:25,623
+Karmaşıklık açısından. N'yi N kare yapmak ayrı mesele. N'yi iki N, üç N, beş N yapmak ayrı mesele.
+
+326
+00:42:26,183 --> 00:42:30,323
+Orada çok bir performans kaybı yok. Bu şekilde bir karmaşıklık söyleyebiliriz.
+
+327
+00:42:31,563 --> 00:42:32,963
+Sorumuz var mı burada arkadaşlar?
+
+328
+00:42:32,963 --> 00:42:51,364
+Evet bu şekilde bakın bu örnekle dinamik memura allokasyonu ondan sonra fonksiyonların kullanımı hepsini bir arada görmüş olduk. Saatimiz kaç? Neyse biraz daha.
+
+329
+00:42:59,572 --> 00:43:09,532
+Burada başka patladığımız bir şey var mıymış? Şu get operation main argümanlarıyla alakalı bir tane hazır bir şey vardı. Onu da bulayım arkadaşlar. Bir saniye.
+
+330
+00:43:13,331 --> 00:43:18,772
+alok, struct, typedef, fscansiz abi.
+
+331
+00:43:18,772 --> 00:43:21,891
+Yish.
+
+332
+00:43:37,012 --> 00:43:42,771
+Bunları konuştuk zaten sizle. Meyne argümanlar nasıl alınacak diye.
+
+333
+00:43:54,483 --> 00:44:05,483
+Geçen hafta matrisi nasıl sıkıştıracağımı örneğini yapmıştık. Sparse matrisi, dense matrisi nasıl oluyor, bunu basit bir şekilde nasıl sıkıştırırız, daha az veri nasıl yapılır.
+
+334
+00:44:05,483 --> 00:44:17,483
+İşte şu matris compression dediğimiz, burada da aynı örneğin farklı bir versiyonu var. Bunlar zaten size paylaştığım şeylerde göreceksiniz. Şuna bakalım.
+
+335
+00:44:40,947 --> 00:45:02,247
+Şimdi bu main argümanlarını kullanıcıdan istediğimizde biz en son derste işte iflerle argüman sayısına göre gelen argümanların değerlerine göre belli kontroller yapmıştık. Hatırlarsanız pazartesi günü işte 3 tane argüman almanız gerekiyor ama 2 tane gönderilmiş. İşte kullanıcıya mesajlar yazılmıştır.
+
+336
+00:45:02,247 --> 00:45:11,607
+Bunu biraz daha operasyonları alıp daha düzenli yapan get operation dediğimiz bir şey var.
+
+337
+00:45:12,427 --> 00:45:15,967
+Ama bu işte Windows'da çalışıyor mu şimdi görelim.
+
+338
+00:45:17,027 --> 00:45:18,067
+Çalışmayabilir çünkü.
+
+339
+00:45:21,267 --> 00:45:21,907
+Güzel.
+
+340
+00:45:23,407 --> 00:45:25,867
+Aslında şey Linux üzerinde yapılmış bir şey.
+
+341
+00:45:25,867 --> 00:45:34,787
+Şimdi bu argüman vektörü, argüman counter'ı alıp bunu operasyonları şeyde bir geçici değerde tutuyorsun.
+
+342
+00:45:35,628 --> 00:45:43,967
+Tuttuğun değeri göre eğer burada A aldıysan şunu yap, B aldıysan bunu yap, C aldıysan şunu yap şeklinde farklı şeyler.
+
+343
+00:45:43,967 --> 00:45:47,347
+Ve yine bunun üzerinde farklı mesajlar veriyorsun.
+
+344
+00:45:47,528 --> 00:45:53,227
+Diyorsun ki mesela sen bu programı böyle çalıştırdın sıkıntı yok, bu şekilde çalıştırdın sıkıntı yok.
+
+345
+00:45:53,227 --> 00:46:19,168
+Ama mesela şu şekilde çalıştırdığında belki problem var. Böyle bir play'in yok. Yani böyle bir tanımlı zaman yok. Bunlara yönelik hatalar verdirtebiliyorsun. İşte mesela şöyle bir şey çalışmasını istemiyorsan bu ne demek? Tire A diye bir parametre alacakmış. Tire tire diye bir parametre. Tire B diye bir parametre var. Ama senin programın bu şekilde çalışmayacaksa buna yönelik burada mesajlar vermen gerekiyor. Get operation fonksiyonu bunun için kullanılan hazır bir şey.
+
+346
+00:46:19,168 --> 00:46:27,407
+gelen şeyi kendi içerisinde parse edip buna göre işte burada switch ile kullanıp beraber şey yapabiliyorsunuz.
+
+347
+00:46:27,407 --> 00:46:32,568
+Çok hani soracağımız bir şey değil, test edeceğim bir şey değil ama bu tarz command line operasyonlarında
+
+348
+00:46:32,568 --> 00:46:39,248
+hani kendin kodu yazmıyorsam bunu da kullanarak biraz da sistematik bir şekilde kontrol sağlamak mümkün.
+
+349
+00:46:40,007 --> 00:46:43,047
+Kodu siz de paylaşırız, isterseniz bunu birazcık karıştırırsınız.
+
+350
+00:46:44,147 --> 00:46:48,668
+Şunlar bakın hepsi programı farklı farklı şekillerde çalıştırmanın yolları.
+
+351
+00:46:49,168 --> 00:46:51,668
+Mesela bizim LS fonksiyonu var
+
+352
+00:46:54,468 --> 00:46:55,468
+Neydi ya?
+
+353
+00:46:56,168 --> 00:46:57,168
+PowerShell
+
+354
+00:47:03,315 --> 00:47:30,855
+Şimdi bu LS dosyalarının nasıl listeleceğini söylüyorum. Bunlarla ilgili her LS dersek size bunun nasıl çalışacağına dair sintaks bilgileri veriyor. Diyor ki neler yapabilirsin burada daha detaylı olarak şeyleri falan var. Diyor ki daha detay istiyorsan başka başka işte şuralara falan gez demiş. Böyle bir şey var.
+
+355
+00:47:30,855 --> 00:47:35,075
+tabi bu dir fonksiyonunun aslında şey
+
+356
+00:47:35,075 --> 00:47:45,095
+dir fonksiyonunun, dir komutunun bir muadili veya işte buradaki şey
+
+357
+00:47:45,095 --> 00:47:50,255
+size bu detayları veriyor. Bu detaylar da bunun içerisine bir parametre alınacak.
+
+358
+00:47:50,395 --> 00:47:54,715
+Bu parametrelerin nasıl yazılacağına dair burada ekstra bilgiler falan sunduyor.
+
+359
+00:47:54,715 --> 00:47:56,715
+Yani LSE
+
+360
+00:48:01,684 --> 00:48:03,684
+...kır, işte bölü...
+
+361
+00:48:04,343 --> 00:48:06,343
+...ve yaparsan başka şey...
+
+362
+00:48:06,343 --> 00:48:09,343
+...görünecek. Gerçi burada niye göstermiyor ki?
+
+363
+00:48:11,984 --> 00:48:15,343
+...havrı şeyleri olduğu için belki bunu desteklemiyorlar oradan. İşte...
+
+364
+00:48:16,623 --> 00:48:18,124
+...böyle bir şey yok demiş.
+
+365
+00:48:18,124 --> 00:48:19,124
+Böyle bir açam.
+
+366
+00:48:22,708 --> 00:48:25,827
+Bunu da, şeyde bakacağız buna, CMD'de.
+
+367
+00:48:29,652 --> 00:48:55,711
+Bu sayfa sayfa bütün dosyaları, klasörleri size listeleyen bir şey. Bulunduğunuz o şeyin altında ne var ne yok her şeyi listeliyor. Ctrl C yapalım dursun. En alt şeylere kadar bütün şeyleri girebilen bir yapısı var. Burada mesela bir algoritma çalışıyor arka planda. Sen bir kaynak veriyorsun. Biz bunu nereye yazdık?
+
+368
+00:48:55,711 --> 00:49:00,211
+Baya da 60-20
+
+369
+00:49:04,244 --> 00:49:13,403
+C'nin içindeki, user'sın içerisindeki şöyle bir şey, bu bir ana klasör. Bu klasörün altında şunlar var, bunun da altında bir sürü klasörler, dosyalar var.
+
+370
+00:49:13,403 --> 00:49:22,244
+Öyle bir şey ki bir ağaç gibi bütün her şeyi tek tek gezmeye çalışıyor. Bu Slash ise bunu yapan bir araç.
+
+371
+00:49:22,244 --> 00:49:31,603
+Dolayısıyla burada çalışan komutla, dır bölü, işte v yaptığında çalışan komut aslında farklı farklı programlar çalışıyor.
+
+372
+00:49:31,603 --> 00:49:39,363
+Buna göre bir gezinme gerçekleşiyor. Bu main argümanlarıyla alınıp buna göre programın farklılaştırılması dediğimiz şeyler.
+
+373
+00:49:42,003 --> 00:50:00,523
+Peki arkadaşlar. Şimdi şeye geri gelecek olursak. Biz biraz önce matriz örneğini yaparken aslında kötü bir programlama şeyi yaptık. Ne olduğunu şöyle göstereyim.
+
+374
+00:50:08,083 --> 00:50:18,884
+herhangi bir fonksiyona aktarılacak olan parametrelerin veya fonksiyona gönderilecek olan argümanların sayısının çok fazla olmaması lazım.
+
+375
+00:50:18,884 --> 00:50:34,083
+Yani şu iyi bir programlama alışkanlığı değil. Elbette zorunlu kalınırsa çok fazla parametre gönderilebilir ama bu otomatik olarak sizin programınızın stack memorisini gereksinize dolduran bir şey.
+
+376
+00:50:34,083 --> 00:50:37,124
+bir sürü oraya parametre aktarıyorsunuz.
+
+377
+00:50:37,124 --> 00:50:41,484
+Bunların returnlerini de düşünseniz return de bir ekstra yük getiriyor.
+
+378
+00:50:42,344 --> 00:50:50,844
+Şimdi ben matris diye kendim bir tip tanımlasam, M1'i M'yi ve N'yi kendi içerisinde barındırsa
+
+379
+00:50:50,844 --> 00:50:54,563
+şu üç parametreyi bir parametre indirebiliyoruz.
+
+380
+00:50:54,643 --> 00:50:56,083
+Şurada da bir üç parametre var.
+
+381
+00:50:56,924 --> 00:50:57,624
+Dolayısıyla ne olacak?
+
+382
+00:50:57,903 --> 00:51:02,103
+Burayı iki parametreyle yönetebilir hale geleceğiz.
+
+383
+00:51:02,104 --> 00:51:06,964
+algoritmik açıdan değil programlama açısından kolay yapmışız.
+
+384
+00:51:07,784 --> 00:51:11,823
+Veya işte sayısal analizde bizim işte projenizde yapacağınız ne var?
+
+385
+00:51:13,363 --> 00:51:17,003
+Fonksiyonlar var. Fonksiyonların polinom derse kat sayıları var.
+
+386
+00:51:17,444 --> 00:51:19,744
+Ondan sonra eksponentleri var, kuvvetleri var.
+
+387
+00:51:20,963 --> 00:51:25,624
+Dolayısıyla baktığımız zaman bazı değerler var ki tek bir büyüklükle ifade edilmiyorlar.
+
+388
+00:51:26,823 --> 00:51:29,164
+Tıpkı karmaşık sayılarda olduğu gibi.
+
+389
+00:51:29,164 --> 00:51:53,024
+Şimdi karmaşık sayı doğası gereği, yapısı gereği, tanımı gereği hem real parti hem de imajinlar parti olan bir yapı. O zaman ben her karmaşık sayı operasyonunda işte bunun real parti için bir tane değişken, imajinlar parti için bir tane değişken o fonksiyona gönder, fonksiyonlar, return al, bunlarla uğraşmak yerine farklı bir programlama praktyayı yapmam lazım.
+
+390
+00:51:53,023 --> 00:52:01,563
+Bir de şöyle bir şey düşünelim. Şuraya bir komut satırı açayım. Mesela int main dedik.
+
+391
+00:52:08,532 --> 00:52:33,011
+şöyle bir fonksiyonunuz olsun. Get complex number diye bir fonksiyon yazacağım. Bu bir rastgele bir kompleks sayı üretecek. Kompleks sayının nesi var? Bir tane real part var, bir tane de imajinal part var. Ben return diyerek re'yi ve e'yi aynı anda, i'yi aynı anda return edemem. Böyle bir şey yok. Ya re'yi return ederim ya i'yi return ederim.
+
+392
+00:52:33,011 --> 00:52:48,011
+get complex number yapmak için tek çare ne olur? Şuraya pointer alırsınız. Integer işte real part için bir pointer, integer imaginer part için bir tane pointer alırsınız. Burada kullanıcıdan değerler okunu.
+
+393
+00:52:50,011 --> 00:52:51,011
+%d'ye
+
+394
+00:52:54,011 --> 00:52:55,011
+%d diyelim.
+
+395
+00:53:02,675 --> 00:53:31,675
+real adresi ile imajiner adresi ile bu değerler oluşturup sonra dersiniz ki, re'nin gösterdiği yerdeki değere git, re'yi gönder yaz, imajiner'in gösterdiği yerdeki değere git, buraya da i yaz dersiniz.
+
+396
+00:53:31,675 --> 00:53:57,675
+return yapmaya gerek kalmaz. Şurayı da void yapar. Bir tane karmaşık sayının okunması. Çünkü return yaparak bunu yapmak mümkün değil. İşte diyelim ki bu çok çok daha uzun bir şey olsa ve yönetilmesi zor hale gelse böyle ilikel parametrelerle tek tek uğraşmak birazcık canımızı sıkan bir şey program yazmayı zorlaştırıyor.
+
+397
+00:53:57,675 --> 00:54:09,896
+Bunun yerine artık biz kendi çiftlerimizi tanımlayacağız. Saat 15 geçe kadar bir ara verelim. Döndüğümüzde bunun nasıl olacağına başlamış oluruz.
+
+398
+00:58:45,907 --> 00:58:47,107
+Hangi bir ev acaba?
+
+399
+00:58:47,107 --> 00:58:48,108
+Ben tek bir.
+
+400
+00:58:48,108 --> 00:58:49,407
+Öğrenimde mi?
+
+401
+00:58:49,407 --> 00:58:51,407
+Bir, iki yıl önce.
+
+402
+00:58:51,407 --> 00:58:52,407
+Öğrenimde mi?
+
+403
+00:58:52,407 --> 00:58:54,407
+Şimdi, bir, iki yıl önce.
+
+404
+00:58:54,407 --> 00:58:56,407
+Sonra da bir.
+
+405
+00:58:56,407 --> 00:58:58,407
+Burası, vatandaşları.
+
+406
+00:58:58,407 --> 00:58:59,407
+Olabilir.
+
+407
+00:58:59,407 --> 00:59:03,407
+Aramızda ikinci sınıfta öğrenmeyi var mı acaba?
+
+408
+00:59:03,407 --> 00:59:06,407
+Çok güzel. Başka bir.
+
+409
+00:59:06,407 --> 00:59:07,407
+Çok teşekkür ederim.
+
+410
+00:59:07,407 --> 00:59:08,407
+Bir şey yapalım.
+
+411
+00:59:08,407 --> 00:59:09,407
+Bir de.
+
+412
+00:59:09,407 --> 00:59:11,407
+Sağ ol.
+
+413
+01:08:15,795 --> 01:08:17,796
+Evet arkadaşlar, devam edelim.
+
+414
+01:08:22,804 --> 01:08:29,804
+Şimdi şöyle bir eskiden kalan örnek vardı, onu buldum. Bunu da anlatayım da şöyle devam edeceğiz.
+
+415
+01:08:29,804 --> 01:08:51,804
+Şimdi bizim alışveriş yapıyoruz. İki çeşit ürünümüz olsun, yiyecek ve diğer türler diye. Bunları alışveriş sepetine atacağım ürünleri ama ürünlerin türüne göre bunları iki kategoriye ayıracağım. Yiyecek ve diğer türler.
+
+416
+01:08:51,804 --> 01:09:13,743
+basket dizim içerisinde her bir ürünün fiyat bilgisini tutacağım. Başka bir yerde bunların adreslerini tutarak yiyecekler ve diğer türdeki şeyler olarak şurada tuttuğum fiyat bilgilerine erişmeye çalışacağım.
+
+417
+01:09:13,743 --> 01:09:29,704
+dolayısıyla bakın burada bir şey oluyor. Bir yerde fiyat bilgisi tutuyorum bellekte. O adres üzerine bir bağlantı kurarak şuradaki pointer'ın o fiyat bilgisine erişmeye çalışacağım. Böyle bir yapı kuracağız burada.
+
+418
+01:09:29,704 --> 01:09:59,684
+Diyorum ki önce kaç tane item eklemek istiyorsun bunu kullanıcıdan alıyoruz ve bunun için bir yer açıyoruz. Basket dizimiz eklenen itemların fiyatlarını, ücretlerini saklayan bir şeydir. Bu ücretlerin bulunduğu bellek bölgelerinin adreslerinde şuradaki ptr food ve ptr addır dediğimiz şeyle tutacağız. Şimdi bunlar bir bellek hücresi olduğu için onu tutan şeyler mecburen ikinci pozitif olmak zorundayız.
+
+419
+01:09:59,704 --> 01:10:08,964
+sorununda kalıyor. Çünkü bir değer var, o değeri gösteren bir işi var, bir de onu gösteren, dolaylı yoldan gösteren bunlar olacak.
+
+420
+01:10:10,144 --> 01:10:17,564
+Diyorum ki işte birinci ürünün fiyatını bir basketin içerisinde bunu kaydediyoruz. Bunun tipini geri diyoruz.
+
+421
+01:10:17,564 --> 01:10:25,403
+Tabii yiyecek veya diğer tipi. Tip bilgisi girdiğimizde şuna bakılıyor. Diyor ki,
+
+422
+01:10:25,403 --> 01:10:49,843
+PTR Food başlangıçta size bir kadar yani iki birimlik oluşturulmuş. PTR Adır'da iki birimlik oluşturulmuş. Ben mesela yüz tane item gireceğim. Bu iki birimlik oluşturulan şey yeni itemlar girdikçe diziler kendisini genişletecek. Otomatik olarak artacak.
+
+423
+01:10:49,843 --> 01:10:59,843
+Diyorum ki bu food ile alakalı şey eğer size eşitse yani doluysa önce size'ın iki katına çıkar ve bunu reallocation yap.
+
+424
+01:11:00,603 --> 01:11:08,024
+Reallocation yaptıktan sonra ptr food'un ilgili gözüne, counter'ına bu basketin iyincisinin adresini sağlıyoruz.
+
+425
+01:11:08,024 --> 01:11:21,223
+Dolayısıyla ne oluyor? Bir tane bir yerde fiyat girdik ama o yiyecek türünde bir şeyse, food türünde bir şeyse onun adresini şu pointer üzerinde tutuyoruz.
+
+426
+01:11:21,464 --> 01:11:34,904
+Şimdi önceden pişlerde şey vardı, şu anda da belki vardı bilmiyorum, işte alışveriş yapıyorsun, toplam gıda harcamaların işte 500 liralık işlem yaptın, onlardan 300'ü gıda, onu ayrı hesaplıyor.
+
+427
+01:11:34,903 --> 01:11:38,863
+gıda dışı hesaplamalar, temizlik ürünleri bilmem ne onu ayrı hesaplıyor.
+
+428
+01:11:38,983 --> 01:11:39,963
+Bakın bu da onun gibi bir şey.
+
+429
+01:11:41,143 --> 01:11:44,163
+Sadece şurada ptr foodta adresleri tutuyoruz.
+
+430
+01:11:46,303 --> 01:11:51,663
+Bu işte food değilse öbür işte diğerleri işte other dediğim şey ptr other.
+
+431
+01:11:52,223 --> 01:11:53,103
+Aynı şey orada da var.
+
+432
+01:11:53,383 --> 01:11:57,703
+İşte bunun da size dolduysa önce iki katına çıkar, yerini aç.
+
+433
+01:11:57,703 --> 01:12:04,703
+Ondan sonra da o ilgili girilen şey food dışında bir şeyse şurayla ilişkilendirir.
+
+434
+01:12:04,903 --> 01:12:19,903
+Bakın şuranın mantığı gayet. Sadece burada hem bir realoc var hem de tuttuğumuz sakladığımız değerinin adresini bir başka yerde indeksleme. Sonra diyorum ki ben bu ptrfut...
+
+435
+01:12:20,435 --> 01:12:30,435
+ve işte ptr, other üzerinden hangi ürünler gıda tarafına gitmiş, hangi ürünler gıda dışı tarafına gitmiş bunlara erişmek istiyorum.
+
+436
+01:12:30,435 --> 01:12:43,435
+Çünkü asıl olan değerlerimiz nerede? Şu basketin içerisinde. Artık basket yok. Şunlar üzerinden o iki kategoriye, o iki listeye erişmeye çalışıyorum.
+
+437
+01:12:43,435 --> 01:13:07,055
+Burada da ne yapıyoruz? Ptr'nin iyisini bilerek yazsın ki bu bellek adresini göstersin diye. O adresteki değere gidiyoruz bakın. Bakın bu kendisi bir adres. Pointer adresi. O adresin gösterdiği yerdeki değer de sizin fiyat bilgisini söyleyen şeyiniz. Bu böyle bir örnek. Yıllar önce asistanlığım zaman da biz bunu anlatıyorduk.
+
+438
+01:13:07,055 --> 01:13:31,355
+Mesela bu dört, işte bu food olsun. Altı, bu da food olsun. Üç, bu bir olsun. Dokuz, bu da food olsun. Bakın ne oldu? Food listesi reallocate edildi. Çünkü iki tane vardı. Üçüncüyü aldık. Üçüncüyü aldığımız için ne oluyor? O listeyi genişletiyoruz.
+
+439
+01:13:31,355 --> 01:13:59,995
+işte sonra oturt dört diyelim bu da bir olsun. Nihay olarak ne olacak? Cod içerisinde üç tane item diğerinin içerisinde iki tane item olacak şekilde bunlar saklanıyor. Şey açısından baktığımızda bakın önce biz ne girdik? Dördü girdik. Dördün adresi neymiş? BA1410. Ondan sonra altıyı girdik. Bunlar double olduğu için sekiz sekiz gidecek.
+
+440
+01:13:59,995 --> 01:14:02,375
+10'dan 18'e geçiyor.
+
+441
+01:14:03,476 --> 01:14:06,075
+Ondan sonra 6'dan sonra 4, 6, 3'ü girdik.
+
+442
+01:14:06,075 --> 01:14:09,315
+Bakın 18, 18'e 8 ekleyin.
+
+443
+01:14:10,555 --> 01:14:11,296
+26.
+
+444
+01:14:11,915 --> 01:14:14,395
+Şeye çevirdiğinizde şuna karşılık gelecektir.
+
+445
+01:14:15,995 --> 01:14:17,675
+BA1420.
+
+446
+01:14:19,355 --> 01:14:24,315
+Bu şekilde adresleri kendisi peş peşe olacak şekilde düzenleyip düğüverdik.
+
+447
+01:14:24,775 --> 01:14:27,855
+Şurada 3 demişiz.
+
+448
+01:14:27,855 --> 01:14:29,335
+Ondan sonra 9
+
+449
+01:14:29,335 --> 01:14:30,055
+Efendim?
+
+450
+01:14:30,755 --> 01:14:30,876
+2
+
+451
+01:14:30,876 --> 01:14:36,715
+Bu adresi gösteriyor ama
+
+452
+01:14:36,715 --> 01:14:38,115
+Evet oradaki değer şey
+
+453
+01:14:38,115 --> 01:14:39,755
+Atlamalı gidebilir miyiz?
+
+454
+01:14:41,195 --> 01:14:42,755
+Bu şey üzerinden
+
+455
+01:14:42,755 --> 01:14:44,435
+Adresin gösterdiği yer üzerinde
+
+456
+01:14:44,435 --> 01:14:45,096
+Ne yapıyorsunuz?
+
+457
+01:14:45,215 --> 01:14:46,316
+Orijinal değerlere
+
+458
+01:14:46,316 --> 01:14:48,695
+Saklanan fiyat bilgilerine
+
+459
+01:14:48,695 --> 01:14:50,656
+Gelişim sağlayabiliyorsunuz
+
+460
+01:14:50,656 --> 01:14:53,115
+Bu bir
+
+461
+01:14:53,115 --> 01:14:53,955
+Bir de
+
+462
+01:14:53,955 --> 01:14:57,156
+Şu tarz bir örnek
+
+463
+01:14:57,156 --> 01:15:06,075
+sivrinde yapmadık da bunu da hızlıca göstereyim. Bunu dinamik berlekle de yapabiliriz. Normal sabit uzunluklu berlekle de yapabiliriz.
+
+464
+01:15:07,275 --> 01:15:15,915
+Şimdi kullanıcılar işte şeylere adaylara oy veriyorlar arkadaşlar. Kabul edelim ki on tane kullanıcı oy verecek.
+
+465
+01:15:16,976 --> 01:15:24,615
+Ve işte birinci aday, ikinci aday, üçüncü aday, onuncu adaya kadar işte partilerimiz var veya işte aday numaralarımız var.
+
+466
+01:15:24,615 --> 01:15:32,655
+Oy veren kişiler hangi şeye oy verdiğini burada kullanıcıdan alacağız.
+
+467
+01:15:33,395 --> 01:15:35,095
+1'e mi oy verdi, 2'ye mi oy verdi?
+
+468
+01:15:35,895 --> 01:15:36,975
+Kazanan parti kim?
+
+469
+01:15:37,935 --> 01:15:39,235
+Bunu öğrenmek istiyoruz.
+
+470
+01:15:40,255 --> 01:15:41,855
+Şimdi oyların içerisinde ne var?
+
+471
+01:15:42,935 --> 01:15:46,015
+1, 2, 3, 4, 5, 3, 5, 1 gibi.
+
+472
+01:15:46,675 --> 01:15:48,235
+Yani şurası şöyle bakıldığında.
+
+473
+01:15:49,735 --> 01:15:52,035
+Birinci kişi mesela 2'ye oy verdi.
+
+474
+01:15:52,175 --> 01:15:53,655
+Sonra 5'e oy verdi.
+
+475
+01:15:53,656 --> 01:16:02,596
+2'ye verdi, 0'a verdi veya 1'e diyelim 0 olmasın, 3'e verdi, 7'ye verdi, burası devam edip gidiyor.
+
+476
+01:16:04,976 --> 01:16:09,116
+Soru şu, buradan en yüksek oyu kim aldım?
+
+477
+01:16:11,915 --> 01:16:18,656
+Burada neye bakmamız lazım? Her bir eleman kaç defa tekrar etmiş? Bu bilgiyi bulacağım.
+
+478
+01:16:19,444 --> 01:16:43,023
+tekrar edenler arasında da en çok tekrar eden kim? Bunu bulacağız. Dolayısıyla bakın iki aşamalı bir durum var. Benim burada her bir elemanın kaç defa tekrar ettiğini bir yerde saklamam gerekiyor. Bu birinci seçenek. Aslında saklamadan da yapabilir miyiz? Yapılabilir. Mesela şurada oylar dizimiz var.
+
+479
+01:16:43,023 --> 01:17:13,003
+İçin, bir şey yok.
+
+480
+01:16:48,756 --> 01:16:50,756
+K, puşuruya alayım.
+
+481
+01:16:54,836 --> 01:16:56,836
+Birer kadar kapatalım.
+
+482
+01:16:59,604 --> 01:17:26,303
+kullanıcıdan kime oy aldığını, kime oy verdiğini söyletir. Tabi burada şey, bir do while gibi şeyle diyebilirsin ki, verdiğin oy bilgisi 1 ile 10 arasında bir ID olsun, 11 ile alakasız yanlış bir değer girme. Bunun kontrolünü yaptığımızı kabul edelim. Şimdi bu iş bittikten sonra ne var? Dizimizin içerisinde şöyle sayılar var. Ben şöyle bir şey yapsam,
+
+483
+01:17:26,303 --> 01:17:34,183
+desem ki en yüksek oyu alan kişi şu an için integer max diyelim.
+
+484
+01:17:34,183 --> 01:17:35,683
+Yani şurada.
+
+485
+01:17:41,684 --> 01:18:11,663
+sıfır olsun. Yani sıfırıncı veya gerçi burada sıfır yok da. Tamam sıfır alayım. Şu oyların sıfırıncısı yani ilk verilen kişi en yüksek olsun diye böyle bir kabulle başlıyor. Şimdi ne yapacağım? Spor i eşittir sıfır, i küçüktür ne? i art artı diye bütün bir diziyi gezmem lazım.
+
+486
+01:18:11,684 --> 01:18:28,544
+Şimdi max dediğim şeyin şu en yüksek kabul ettiğim şeyin adedini hesaplayacağım. Yani bu max'ıncı olan elemandan kaç defa tekrar edilmiş. Şimdi bunun bir frekansını tutmam lazım. Buna da C diyelim.
+
+487
+01:18:28,544 --> 01:18:58,003
+bunu bulacağız. Ama ondan sonra diyeceğiz ki acaba bundan daha büyük olan var mı? İşte neyi tutmamız lazım? Bir de maksimum 2 veya işte bir başka değişken tutacağız ki en yüksek şunu kabul ettik. Bunun diğerleri şey mi? Dolayısıyla şu max'ın counter'ını sıfırdan başlattım.
+
+488
+01:18:58,003 --> 01:19:26,663
+Max'ı da şeyden başlatın. Burada bir döngü daha ihtiyacımız oluyor. Anlatabildim mi? Çünkü şu mesela ikinci kişiye vermiş. Kabul edelim ki diyorum ki iki şey olsun en yüksek olsun. Şimdi burada bakacağım kaç tane iki var bunların hepsini sayacağım. Diyeceğim ki daha sonra işte şu Max'da iki var. Yani sıfırıncı eleman iki. Counter'da beş. Öbürlerini de saymam lazım. Daha sonra diyeceğiz ki işte şunu sayacağız.
+
+489
+01:19:28,003 --> 01:19:33,503
+diğer elemanları isteyeceğiz. Max dışında elemanları isteyeceğiz. Böyle biraz zorlanarak da olsa bunu yaparız.
+
+490
+01:19:33,503 --> 01:19:47,203
+Ama program neye dönüyor? İç içe iki tane döngüye dönüyor. Max ile bu bir sonraki bulduğun farklı bir elemanı karşılaştır.
+
+491
+01:19:47,203 --> 01:19:58,004
+O karşılaştırdığın daha yüksekte Max'ı güncele. Yani bir dizinin elemanları içerisinde en büyüğü bulurken nasıl önce birinciyi en büyük kabul edip daha sonra birinciyi güncelleyip,
+
+492
+01:19:58,003 --> 01:19:59,003
+güncelliyoruz. Burada da ona benzer bir mantık kurgulayabiliyoruz ama burada iki tane döngüyle bu iş yapılabilir. Başka türlü bir döngüyle olacak bir şey yok. Her elemanın frekansını saymak gerekiyor. Bu olmasın diye bu biraz algoritmik olarak n karelik bir karmaşıkla götürüyor. O zaman şunu yapacağız. Yedek bir tane dizim var. P dizim olsun. İlk başta hepsi sıfırlarla doldurulmuş vaziyette. Ben diyeceğim ki
+
+493
+01:20:28,003 --> 01:20:42,783
+Bütün oyların bilgilerini aldıysam şöyle bir şey yaparım. P'nin oylarının i inci değerini bir tane arttır.
+
+494
+01:20:44,383 --> 01:20:49,223
+Şimdi ne yapacak? Önce oyların iyisine bakacak. Oyların iyisini de mesela şöyle alalım.
+
+495
+01:20:52,627 --> 01:20:59,747
+Şu döngü tamamlandığında, işte iki var, beş var, ikiye oy vermiş, bire oy vermiş, üçe, üçe vermiş, yediye vermiş. Böyle devam etkiliyor.
+
+496
+01:21:02,468 --> 01:21:05,827
+Oy, şey, P dizimizde içi sıfır, sıfır, sıfır.
+
+497
+01:21:07,627 --> 01:21:10,187
+Böyle sıfırlarla dolu bir dizimiz var.
+
+498
+01:21:11,068 --> 01:21:18,187
+Şimdi diyor ki, önce iki var, oyların iyisi iki, P'nin ikisi de sıfırdı. Bunu ne yapacak? Bir arttır.
+
+499
+01:21:19,147 --> 01:21:22,147
+Sonra beş var, gidecek beşi bir arttıracak.
+
+500
+01:21:22,627 --> 01:21:50,988
+Sonra bir iki daha var. İkiyi bir arttıracak. Bu sayede hangi partiden ve hangi adaydan ne kadar oy alınmış, kim ne kadar oy alınmış bu bilgiye ekledi. Şimdi bunun karmaşıklığı ne? Suranın karmaşıklığı. Bu en defa dönecek bir şey. Peki ben P'nin içerisindeki en büyük değeri bulsam ve onun ID'sini elde etsem en fazla oyalan şeyi bulmaz mıyım?
+
+501
+01:21:50,987 --> 01:21:56,787
+Bir tane max'ım vardı, yukarıda max'ı bulduk zaten, max eşit 0 oldu.
+
+502
+01:21:56,787 --> 01:21:58,988
+Bir for dönüşü daha.
+
+503
+01:22:03,572 --> 01:22:08,572
+diyeceğim ki if, hatta bunu birden başlayacağız.
+
+504
+01:22:12,572 --> 01:22:21,572
+t şeyin, max'ıncı elemanı, pardon, t'nin iyisi, birden başladık.
+
+505
+01:22:22,572 --> 01:22:29,572
+büyüktür t'nin max'ından ise, çünkü ben max diye bir yer gösteriyorum zaten.
+
+506
+01:22:29,572 --> 01:22:32,311
+max eşitidir.
+
+507
+01:22:33,451 --> 01:22:37,191
+Bunun sayesinde ne yapmış oluyoruz?
+
+508
+01:22:38,511 --> 01:22:45,272
+En yüksek oy almış şeyin adresini veya indeksini max üzerinde tutmuş oluyoruz.
+
+509
+01:22:46,072 --> 01:22:46,652
+Sonra ne yaptık?
+
+510
+01:22:46,652 --> 01:22:50,231
+C, pointer, %d.
+
+511
+01:22:53,731 --> 01:22:56,652
+En yüksek oy alan parti hangisi?
+
+512
+01:22:56,871 --> 01:22:57,771
+Max'ıncı parti.
+
+513
+01:22:57,771 --> 01:23:21,291
+oy sayısına E'nin maksimum. Neden kazandık? Zamandan kazandık. İlk yaptığım gibi yaptık. Neden kaybettik? Bellekten kaybettik. Yani neden? Bellekten niye kaybettik? Aday sayısı kadar, parti sayısı kadar ekstra bir yerde bunu tutmamız gerekir.
+
+514
+01:23:21,292 --> 01:23:37,771
+kabul edelim ki oyların sayısı 50 milyon olsun. Partinin sayısı 10 olsun. Birinci yaklaşımda 50 milyonu sayabilmek için en büyüğü sayabilmek için 50 milyon çarpı 50 milyon kadar döngü çevirecektik ancak öyle olacak.
+
+515
+01:23:37,771 --> 01:23:46,771
+Ama burada parti sayısı 50 milyonluk oyları 10 elemanlı bir dizinin içerisinde frekanslar üstlüyoruz.
+
+516
+01:23:47,711 --> 01:23:52,451
+Bir tarafta o kadar zaman kaybı, bir tarafta 10 tanelik bellek kaybı. Hangisi daha avantajlı?
+
+517
+01:23:53,531 --> 01:23:57,011
+En kötü bir bilgisayar sisteminde bile 10 tanelik yeriniz vardır.
+
+518
+01:23:57,011 --> 01:24:05,051
+Basit bir bilgisayar düzenin yani ilk belleği olmasa bile 10 tane integra veya yer tutacak kadar bir belleğiniz vardır herhalde.
+
+519
+01:24:05,051 --> 01:24:09,751
+O kadar döngü çevirmek yerine ne yapıyorsunuz? Bunu elde etmiş oluyorsunuz.
+
+520
+01:24:11,451 --> 01:24:18,251
+Şimdi geri kalan şey aynı. Bu en basit bir seçim sistemi oyu sayma şeyin üzerine.
+
+521
+01:24:19,072 --> 01:24:20,251
+Bunu biraz geliştirelim.
+
+522
+01:24:40,564 --> 01:24:42,564
+Bu bahsettiğimiz şuydu.
+
+523
+01:24:44,163 --> 01:24:49,763
+Diyelim ki, herkes tek partiye değil de üç partiye oy verebilirsin.
+
+524
+01:24:51,763 --> 01:24:55,564
+Şimdi bakın, orijinal veri yapımız burada değişecek mi? Değişecek.
+
+525
+01:24:56,763 --> 01:25:01,564
+Kişilerin verdikleri partiler şurada oy verdiler.
+
+526
+01:25:02,064 --> 01:25:03,564
+Oy vermeye başladı.
+
+527
+01:25:04,564 --> 01:25:07,064
+Diyeceksin ki şurada üç tane partiye oy ver.
+
+528
+01:25:07,064 --> 01:25:27,244
+Şimdi birinci kişinin, iyinci kişinin verdiği oy, oylar iyile tutuluyor. Şimdi kişi üç tane partiye oy verecek de nasıl bir şey yapacağız? Ya üç tane dizi tutarsın, oylar bir, oylar iki, oylar üç veya bunu daha basit anlamda maddese çeviririz. Çevirelim.
+
+529
+01:25:27,244 --> 01:25:53,443
+Şurayı geç. Bunlar hikaye. O zaman herkes üç partiye oy verecekse, tabii üçü de hani şimdilik böyle ön kabulle yapıyoruz da, buraya üç dedik. Kişinin verdiği oylar yüzde de, yüzde de, yüzde de olsun. Oyların sıfırı.
+
+530
+01:25:57,811 --> 01:26:00,131
+Oyların birini, oyladım.
+
+531
+01:26:05,231 --> 01:26:06,251
+Artık ne var?
+
+532
+01:26:07,431 --> 01:26:09,831
+Herkesin oy verdiği oylar şu şekilde.
+
+533
+01:26:11,671 --> 01:26:14,031
+Mesela diyor ki, 2-5-3'e verdim ben diyor.
+
+534
+01:26:15,871 --> 01:26:23,371
+Ondan sonra, 1-3 artık böyle bir herkes, 3'er 3'er bilgi sunacaklar.
+
+535
+01:26:24,031 --> 01:26:25,291
+Böyle devam edip gidiyor burası.
+
+536
+01:26:25,291 --> 01:26:30,071
+Peki bunları şimdi nasıl sayacağız?
+
+537
+01:26:33,619 --> 01:27:02,159
+Yine, kabul edilir ki birden ona kadar partilerimiz olsun. Yani şuraya girilecek şeyler bir yandan arasındaki sayıları. Hatta sıfırı da dahil edelim, problem değil. Sıfırdan dokuza kadar on tane partimiz var. Her birinin ailesi bu değerlerden bir tanesi. Şimdi ben ne yapacağım? Oyların hepsini sayarken, şimdi oyların iyisinin sıfırına bakacağım. Oyların iyisinin birine bakacağım. Oyların iyisinin ikisine bakacağım.
+
+538
+01:27:02,159 --> 01:27:04,259
+O zaman şöyle bir şey yapabiliriz.
+
+539
+01:27:05,159 --> 01:27:08,399
+Ya deriz ki burada oyların iyisinin sıfırını bir arttır.
+
+540
+01:27:10,099 --> 01:27:14,059
+Ondan sonra oyların iyisinin birini bir arttır.
+
+541
+01:27:14,980 --> 01:27:16,059
+İkisini bir arttır.
+
+542
+01:27:16,139 --> 01:27:16,939
+Ya böyle yaparsın.
+
+543
+01:27:18,059 --> 01:27:21,579
+Ama bu sistem ileride değiştirdi ki herkes on partiye kadar oy verebilir.
+
+544
+01:27:22,719 --> 01:27:27,819
+O zaman şuraya bir for döngüsü daha koyup bu şekilde yapmak.
+
+545
+01:27:27,819 --> 01:27:30,179
+Yine 3 partideydi 10 tane şey olsa
+
+546
+01:27:30,179 --> 01:27:31,419
+4
+
+547
+01:27:31,419 --> 01:27:34,079
+G eşittir 0
+
+548
+01:27:34,079 --> 01:27:37,139
+G küçük bir tür 2
+
+549
+01:27:37,139 --> 01:27:42,819
+Pardon 0 olacak 1 olacak 2 de olacak küçük eşittir diyeceğiz
+
+550
+01:27:42,819 --> 01:27:48,139
+Çünkü 3 tane parti veya 3 diyelim evet daha mantıklı
+
+551
+01:27:54,579 --> 01:27:55,339
+konumider.
+
+552
+01:28:00,500 --> 01:28:23,100
+Evdeki bilgisayar olmayacak çok etkile, bilgisayar bana zor geliyor. Şöyle burayı sayarız. Şimdi bunun içerisinde de bu P dinlisinin içerisinde de neler var? Yine frekanslar var. Şurada bir şey değişecek mi? En yüksek part şeyi oy alan ki burada değişecek.
+
+553
+01:28:23,100 --> 01:28:38,459
+Çünkü nihayet olarak biz toplam hangi adaya veya partiye oy çıkmış onun en yükseğine bakıyoruz. Zaten bunu burada saydık. Şu kadar bir değişiklik ve bunu sağ olasın.
+
+554
+01:28:44,724 --> 01:28:46,563
+seçim versiyon 2 diye.
+
+555
+01:28:54,707 --> 01:28:58,707
+redefinition demiş. Max'ı bir yerde redefinition etmişiz.
+
+556
+01:29:02,707 --> 01:29:06,707
+Şurada bir var, bir de yukarıda var.
+
+557
+01:29:10,131 --> 01:29:12,131
+G, MİDEOK
+
+558
+01:29:29,363 --> 01:29:35,844
+Burada doğrudan n sayısı kaçmış? Ha, n'i bir kullanıcıdan alacağız. İşte 4 girelim.
+
+559
+01:29:37,283 --> 01:29:41,983
+Diyeceğim ki birinci, yani hiç printf param olmadığı için doğrudan yazıp geçiyoruz.
+
+560
+01:29:42,903 --> 01:29:57,784
+2'ye oy veriyorum, 3'e oy veriyorum, 1'e oy veriyorum. Ondan sonra 1'e oy veriyorum, 4'e oy veriyorum, 6'ya oy veriyorum, 2'ye oy veriyorum, 6'ya oy veriyorum, 1'e, 2'ye ve 5'e diyelim.
+
+561
+01:29:57,784 --> 01:30:00,284
+ne olacak kim kazanacak burada?
+
+562
+01:30:03,544 --> 01:30:04,863
+Bir kazanmış.
+
+563
+01:30:05,404 --> 01:30:06,683
+Şimdi birden üç tane var.
+
+564
+01:30:06,803 --> 01:30:07,564
+İkiden de mi üç tane?
+
+565
+01:30:08,363 --> 01:30:11,463
+Tabi burada en yüksek first okurunsa bakıyor.
+
+566
+01:30:11,544 --> 01:30:13,123
+En yüksek yani şeye bakıyor.
+
+567
+01:30:13,963 --> 01:30:21,523
+Mesela aynı sayıda maksimum oya ulaşan birden fazla varsa onu da mesela dahil ettirebilirsiniz.
+
+568
+01:30:21,523 --> 01:30:27,463
+Mesela bir tane dizi oluşturup dinamik dizi o dinamik dizi içerisinde onları da tutturulabilir.
+
+569
+01:30:27,783 --> 01:30:57,503
+İlla kazananlar tek bir tane olmak zorunda değil. Aynı öyle şey var. Burayı anladık değil mi? Sadece veri yapısını değiştirdik. Şimdi ikinci versiyon buymuş. Üçüncü versiyonumuz herkes her partiye doğrudan şey vermesin puan vererek yapsın. İşte ben falanca partiye şu puanı veriyordum gibisinden. Şimdi veri yapısı burada tamamen değişecek.
+
+570
+01:30:57,783 --> 01:31:02,383
+Şunu alayım bunun üzerinden gösterelim
+
+571
+01:31:08,180 --> 01:31:14,080
+oylarımız var. Şu statik tamamen sıfır yapmak için arkadaşlar. Şurayı şöyle yapalım.
+
+572
+01:31:18,515 --> 01:31:23,515
+10'a olduk mesela bir şey olsun dedik. Yani bunu normalde define'la yaparız da.
+
+573
+01:31:25,515 --> 01:31:29,515
+10 tane kişinin vereceği oylar var, öyle söyleyelim.
+
+574
+01:31:30,915 --> 01:31:32,915
+Ve herkes her partiye oy vermek lazım.
+
+575
+01:31:33,715 --> 01:31:37,515
+Birinci partiye kaç puan veriyorsun? İkiye kaç puan veriyorsun? Üçe kaç puan veriyorsun?
+
+576
+01:31:37,915 --> 01:31:43,515
+Dolayısıyla 10 tane kişi 10 tane değer verecek. Toplamda 1 tane değer taklayacağız.
+
+577
+01:31:43,715 --> 01:31:46,115
+Şurada oyların puanlarını tutuyoruz.
+
+578
+01:31:48,515 --> 01:32:11,056
+Ben en başarılı partiyi bulurken nasıl bir şey yapacağım? Bu iyinci kişinin C'inci partiye verdiği puan bir yerde duruyor. O zaman ben bütün bu matrisi gezeceğim. Matrisde hangi partiye ne kadar oy alın? Bu oyların puanlarını toplayıp bir yerde saklamam gerekir.
+
+579
+01:32:11,055 --> 01:32:38,055
+bu zaman bütün şurayı gezmemiz lazım gezeriz bu kolay puanları da şurada T'de tutuyoruz T'nin i'incisine veya başka bir yere ne yazacağız? T'de sıfırlar var bütün puanları seçmek için ne yazmamız lazım? toplamamız için
+
+580
+01:32:41,619 --> 01:32:46,259
+İYİNCİ Parti'nin puanını hesaplamamız için ne yapmamız gerekiyor? Şuraya bir şey yazmamız lazım.
+
+581
+01:32:52,404 --> 01:32:54,404
+Yani P'nin iyisi benzer.
+
+582
+01:32:57,555 --> 01:33:24,075
+Şimdi P'nin İ'si, bu İ'inci partinin puanı değil mi arkadaşlar? Peki bu puan nereden gelecek? Oylar içerisinde İ'inci partiye İ'inci kişinin C'inci partiye verdiği oy. Bana ne lazım? İ'inci partiye verilen oylar lazım. Onları alacağım, P'yi de toplayacağım. Yani kümül açık olarak şu artı eşit.
+
+583
+01:33:24,075 --> 01:33:47,335
+Ama şu şekilde yaparsam ne olur? İ inci kişinin J inci partiye verdiği oyu yapacak. Ama bunu ters çevirirsek J inci partiye pardon J inci partiye İ inci kişinin verdiği oy desek J burada ne? Satırı gösteriyor.
+
+584
+01:33:47,335 --> 01:34:06,835
+Burada İ'inci partiye pardon nasıl idi İ'inci kişinin J'inci partiye verdiği oy vardı şurada ne yaptık tam tersinden aldık yani matrisi şöyle düşünürsek
+
+585
+01:34:12,851 --> 01:34:29,311
+Evet. Bu birinci kişi, işte bu birinci parti, ikinci parti, nokta nokta nokta, onuncu parti. Birinci kişi işte bire kaç verdi? Dört puan verdi. İşte ikiye altı puan verdi. İkinci kişi buraya üç puan verdi. Bana şu bilgi lazım burada.
+
+586
+01:34:29,311 --> 01:34:31,751
+Bunları yer değiştirsem
+
+587
+01:34:31,751 --> 01:34:35,131
+Diyorum ki
+
+588
+01:34:35,131 --> 01:34:37,131
+J. partiye
+
+589
+01:34:37,131 --> 01:34:39,171
+İ. kişinin verdiği oy
+
+590
+01:34:39,171 --> 01:34:40,291
+Çünkü J ne olacak?
+
+591
+01:34:41,051 --> 01:34:44,192
+Sürekli aşağıya doğru birinci satır, ikinci satır, ikinci satır
+
+592
+01:34:44,192 --> 01:34:46,931
+Buraya doğru geçecek
+
+593
+01:34:46,931 --> 01:34:49,351
+Bu döngüler tamamlandığında
+
+594
+01:34:49,351 --> 01:34:51,811
+Şunun içerisinde neyi bulacağız?
+
+595
+01:34:52,231 --> 01:34:52,931
+Toplam puanı
+
+596
+01:34:52,931 --> 01:34:56,631
+Hangi partiye ne kadarlık toplam puan çıkmış?
+
+597
+01:34:57,331 --> 01:34:59,251
+Bundan sonrası şunun aynısı
+
+598
+01:34:59,311 --> 01:35:02,091
+Bir öde de yapım için en ayı.
+
+599
+01:35:06,420 --> 01:35:15,420
+En yüksek oyu alan, en yüksek puanı alan parti şudur. İşte algıl puan da budur deyip işi bitirebiliriz. Burada tabi şöyle bir şey yok.
+
+600
+01:35:18,420 --> 01:35:26,420
+Ne oluyor? P'nin İ'sini J'yi tam tersinden yukarıdan aşağıya doğru sayıyoruz. Gerisi basit şeyler.
+
+601
+01:35:27,420 --> 01:35:30,420
+Burada anlaşılmayan bir şey yok.
+
+602
+01:35:30,420 --> 01:35:32,760
+Bir sonraki aşama
+
+603
+01:35:32,760 --> 01:35:36,059
+Herkesin oyu eşit sayılmasın.
+
+604
+01:35:37,020 --> 01:35:46,739
+Mesela verdiği puan veya verdiği oy ödediği vergiye göre geri dönüşme yaptığı katkıyla falan diye ağırlıklandırılsın.
+
+605
+01:35:46,739 --> 01:35:53,920
+O zaman kişinin verdiği oy bilgisini şöyle almış.
+
+606
+01:35:58,931 --> 01:36:27,671
+oy verecek ve oyuyla alakalı ekstra ve o kişinin kat sayı bilgisini tutacağız. Mesela diyeceğiz ki, tabi burada hani senaryoyu değiştirebilirsiniz de. Çin'de var mesela, kişinin vatandaşlık puanı diye bir şey tutuyor. Yani oradaki artık kredici sporumuz var ya, hani Amerika'da da falan da var. Öyle bir bilgi tutuyor. O bilgiye göre hani senin oyunun derecesini şey yapıyor.
+
+607
+01:36:27,671 --> 01:36:32,772
+Bu bilgiyi alıyorsun, bir de diğer bilgi, tabi o bilgi kullanıcıdan alınmaz, doğrudan direkt gelir.
+
+608
+01:36:33,911 --> 01:36:41,171
+Bununla bir kat sayı ve ağırlıklandırma yaparak puanını verirsin, o puana göre de nihayet puanı oluşturursun.
+
+609
+01:36:41,171 --> 01:36:45,251
+Artık burası biraz daha ucu açık noktalarda devam edip gidebiliyor.
+
+610
+01:36:45,731 --> 01:36:48,612
+Tabi bunu dinamik bellek olarak da düşünebilirsiniz arkadaşlar.
+
+611
+01:36:48,792 --> 01:36:55,451
+Burada statik yani basit algoritmik sorular olduğu için diğer grup çözülmüş, biz de şey yapalım.
+
+612
+01:36:55,452 --> 01:37:10,131
+Bunu normalde önceden şey vardı. Yapısal programlamaya giriş dersimiz vardı. Orada hani biraz daha algoritmik konular olduğu için orada anlatıyorduk. Burada basitçe anlatmış olabilir. Peki şimdi biz asıl konumuza geri gelelim arkadaşlar.
+
+613
+01:37:34,739 --> 01:38:04,719
+biraz sayısal analizinin de çalışması olsun. Benim polinom şeklinde fonksiyonum olsun. Şimdi bir polinom oluşturmak için ekleriz arkadaşlar. Zannediyorum beşinci haftayı ekledim diye biliyorum ama eklemek zorunda da değilim. Video kayıtlarında var zaten. Eğer eksikler varsa hepsini bulamam. Geçen seneki kayıtlardan bulup paylaşmaya çalışırız.
+
+614
+01:38:04,739 --> 01:38:07,539
+Yani video kayıtlarından bakmak sizin birazcık sorumluluk.
+
+615
+01:38:09,059 --> 01:38:11,440
+Şimdi hepsini kontrol edemiyorum artık.
+
+616
+01:38:12,739 --> 01:38:18,299
+Şimdi polinom ile alakalı bir yapı oluşturalım.
+
+617
+01:38:19,440 --> 01:38:21,239
+Biliyorsunuz ki polinom şöyle bir şey.
+
+618
+01:38:21,239 --> 01:38:42,199
+A x üzeri N artı B x üzeri N-1 artı alt taraftan artı
+
+619
+01:38:45,652 --> 01:38:47,911
+L dediğimiz x'leri sıfır.
+
+620
+01:38:51,539 --> 01:39:12,539
+Şöyle bir yapı olsun arkadaşlar. Şimdi bir polinomun reprezent edilmesi için, bilgisayar tarafından anlaşılabilmesi için iki tane şeye ihtiyacı var. Aslında önce terim sayısını alacaksınız. Terim sayısı kadar teriminiz olacak. Her bir terimin de kat sayısı ve derecesini tutacağız.
+
+621
+01:39:12,539 --> 01:39:20,859
+Şimdi bu yapıyı en basit şekilde nasıl gösterebiliriz? Bir matris de gösterebiliriz. İntajör
+
+622
+01:39:20,859 --> 01:39:32,819
+M matrisi olsun veya polinom matrisi olsun. Dizide de olabilir ama şimdi tamam önce de diziyle başlayalım.
+
+623
+01:39:32,819 --> 01:39:36,159
+Poly diyelim.
+
+624
+01:39:38,159 --> 01:39:38,579
+Bir dakika.
+
+625
+01:39:39,839 --> 01:39:40,079
+Poly.
+
+626
+01:39:41,519 --> 01:39:45,619
+Mesela max kadar, maksimum terim kadar.
+
+627
+01:39:53,652 --> 01:40:22,431
+max'ın yani buradaki şeyler işte 0, 1, 2, 3, 4, indislerimiz dereceleri göstersin. Kolinomun içindeki kat sayılarda değerlerde onun kat sayılarını göstersin. Anlatabildim mi? Mesela diyelim ki bu 2, 4, 0, 0, eksi 7. Bu nedir mesela?
+
+628
+01:40:27,315 --> 01:40:54,275
+Yani bu polinomu nasıl söyleriz? 2 artı 4x artı 0, 0, eksi 7 x üzeri 4 mu olur? x üzeri 4. Yani şu, eksi 7 x üzeri 4 artı 4x artı 2.
+
+629
+01:40:54,275 --> 01:40:56,615
+Bu buna karşılık geliyor.
+
+630
+01:40:56,615 --> 01:40:58,915
+Efendim?
+
+631
+01:41:02,899 --> 01:41:06,019
+O şekilde yazdırırız mesela yazalım hadi void
+
+632
+01:41:07,579 --> 01:41:09,259
+Polynom, pointer
+
+633
+01:41:10,259 --> 01:41:12,139
+Buraya array gelecek
+
+634
+01:41:14,219 --> 01:41:15,780
+Pointed olarak gelecek
+
+635
+01:41:17,739 --> 01:41:19,899
+Bir tane de size gelecek
+
+636
+01:41:22,179 --> 01:41:26,939
+Genellikle polinomları tersten hani biz en yüksek dereceyi baştan yazdırız ya
+
+637
+01:41:27,979 --> 01:41:28,979
+i diyelim
+
+638
+01:41:29,179 --> 01:41:29,979
+or
+
+639
+01:41:30,339 --> 01:41:31,779
+i eşittir
+
+640
+01:41:31,779 --> 01:41:37,299
+n tane eleman varsa burada n'den başlatalım.
+
+641
+01:41:38,440 --> 01:41:42,260
+i büyüktür, eşittir, sıfır olduğu sürece i plus plus diye.
+
+642
+01:41:42,760 --> 01:41:44,999
+Minus, minus, azaltarak gideceğiz.
+
+643
+01:41:45,799 --> 01:41:48,379
+Diyeceğiz ki bunu printf yapalım.
+
+644
+01:41:50,499 --> 01:41:51,739
+Yazalım onu.
+
+645
+01:41:52,959 --> 01:41:57,659
+%d x üzeri işareti.
+
+646
+01:41:57,659 --> 01:42:23,739
+%100'de de şöyle bir şey. Burada kat sayımız ARR'nin iyisi. Derecemiz de iyi olacak. Şurada da N7'den başlayacağız. Her bir polinom terimi yazınca araya da bir tane artı koyalım.
+
+647
+01:42:23,739 --> 01:42:47,199
+tabi burada sıfıra eşitlik olursa bir tane artı sondan fazla gelir. Şu bitince de şuraya şöyle bir şey yapalım. Şimdi olur yani. Bunu da yazdırmak için poly'yi gönder, max'ı gönder.
+
+648
+01:42:51,060 --> 01:42:56,859
+Ama şöyle bir şey yapsak, yani sıfır üzeri bilmem ne böyle bir şey, sıfır çarpı şey görünmesin.
+
+649
+01:42:56,859 --> 01:43:05,759
+If ARD'nin iyinci elemanı sıfır değilse bunu yaz.
+
+650
+01:43:10,195 --> 01:43:14,596
+Çünkü sıfırsa öyle bir terim yazması çok sevimli olmaz değil mi?
+
+651
+01:43:21,203 --> 01:43:28,583
+Poly, ilkel diyelim. İlkel'in İngilizcesi neydi ya? Bunu unuttuk. Primitifah.
+
+652
+01:43:32,948 --> 01:43:34,147
+Bunlar, bariyaro.
+
+653
+01:43:42,355 --> 01:43:45,795
+incompatible devirye.
+
+654
+01:43:51,188 --> 01:43:51,587
+Ne?
+
+655
+01:43:53,368 --> 01:43:54,287
+Yok.
+
+656
+01:43:54,408 --> 01:43:56,347
+Implicit olarak bir declaration
+
+657
+01:43:56,347 --> 01:43:57,648
+dediği
+
+658
+01:43:57,648 --> 01:44:00,007
+üstü parantezle doğrudan bir
+
+659
+01:44:00,007 --> 01:44:01,387
+şeyimiz yok da.
+
+660
+01:44:02,227 --> 01:44:03,047
+Biraz anladan.
+
+661
+01:44:04,887 --> 01:44:06,148
+Evet.
+
+662
+01:44:21,268 --> 01:44:24,347
+şey, iple alakalı bir durum değil.
+
+663
+01:44:27,796 --> 01:44:34,355
+sıfır yazmamasını bekliyorduk. ARR'nin iyisi sıfırdan farklıysa.
+
+664
+01:44:38,644 --> 01:44:40,644
+İyi yaz alacak.
+
+665
+01:44:46,804 --> 01:44:58,243
+Pardon, sıfırsa şöyle diyelim. Şurada da bir tane art yazmayacağız.
+
+666
+01:45:13,076 --> 01:45:26,576
+Öyle bir şey çıkartabiliyoruz x, 0 şeklinde. Hatta burada doğrudan katsayı yazacağız. x, 0 diye bir şey yok.
+
+667
+01:45:29,076 --> 01:45:31,076
+Böyle bir efele oldu.
+
+668
+01:45:31,076 --> 01:45:33,076
+Peki.
+
+669
+01:45:35,604 --> 01:45:43,223
+Peki bu problemde biz sadece polinoma ekrana yazdık.
+
+670
+01:45:43,223 --> 01:45:44,223
+Ekrana yazdık.
+
+671
+01:45:44,223 --> 01:45:45,163
+Efendim?
+
+672
+01:45:49,104 --> 01:45:50,223
+N değerini?
+
+673
+01:45:53,223 --> 01:45:55,284
+Hiç anlamıyorum söylediğini yani.
+
+674
+01:45:57,183 --> 01:46:02,643
+Almadık değil. Şurada maksimum kadar bir şey. İstersen alabilirsin. Yani kullanıcıdan alabilirsin. Problem değil.
+
+675
+01:46:02,643 --> 01:46:06,363
+maksimum olarak gönderiyorum.
+
+676
+01:46:07,243 --> 01:46:07,423
+Tamam.
+
+677
+01:46:09,043 --> 01:46:12,563
+Şimdi burada sadece ekrana yazdırmak için işlem yapıyoruz.
+
+678
+01:46:12,723 --> 01:46:14,464
+Daha işin şey boyutu yok.
+
+679
+01:46:16,243 --> 01:46:20,343
+Polinomun mesela bir tx değerinin hesaplanması düşünün.
+
+680
+01:46:21,623 --> 01:46:22,523
+Ne yapılabilir?
+
+681
+01:46:22,523 --> 01:46:24,423
+Mesela işte p5'i hesapla.
+
+682
+01:46:26,863 --> 01:46:29,343
+Void diyelim.
+
+683
+01:46:30,423 --> 01:46:31,003
+Calculate.
+
+684
+01:46:32,643 --> 01:46:33,403
+Oli giyelim.
+
+685
+01:46:34,403 --> 01:46:37,063
+Buraya bir işte şey alacağız.
+
+686
+01:46:40,724 --> 01:46:47,204
+bir tane de x değeri alacağız. Yani px hesabı gibi. Şimdi burada ne yaparız?
+
+687
+01:46:51,444 --> 01:47:15,603
+Dur, onlar zaten burada var işte. Daha yani yapıyı bozmuyoruz. Şunun üzerinden gideceğiz. Yoksa o matrize alırsak o da ayrı bir şey. O da tam çözüm değil. Şimdi ereğimiz var. Ereğin içerisinde kat sayılarımız var. İndetlerimiz zaten derecelerimiz. Kaçıncı dereceye kadar olduğumuzun bilgisi burada var. X'in değeri var. O zaman polinomu değerlendirmek kalacak.
+
+688
+01:47:15,603 --> 01:47:26,823
+ne yapacağız? Bütün bir polinomu gezeceğiz. İster burada n'den başla, ister şeyden başla. Hani baştan başla, sıfırdan başlayalım.
+
+689
+01:47:29,223 --> 01:47:30,644
+İyi küçüktür.
+
+690
+01:47:34,643 --> 01:47:41,423
+Bir tane işte sum diye bir şeyimiz olur. Eşittir sıfır veya value diyelim.
+
+691
+01:47:47,188 --> 01:48:14,188
+var, bir artı eşitir. Şimdi ne olacak? İinci terim üzerine x'in power'ını alacağız önce. Onu şey yapacağız. Yani bir power hesabı için ayrıca bir for'a gerek yok. Allah'tan şöyle bir şey var. Efendim? Onun içinde var tabii yani. Ama onun içindeki senin bahsettiğin for'la yapılan bir şey değil.
+
+692
+01:48:14,188 --> 01:48:30,588
+Çünkü x üzeri N'i hesaplamak için o kendi içinde x üzeri önce N bölü 2'yi buluyor. O da onun N bölü 2'sini buluyor. Yani N defa yerine log N defada çalışacak şekilde bir hesapla şey oluyor. Onu ben size tahtada gösterdim de hatırlıyorum.
+
+693
+01:48:30,587 --> 01:48:33,587
+Şimdi yapacağımız şey şu
+
+694
+01:48:33,587 --> 01:48:37,087
+N'inci kuvvetini alacağız
+
+695
+01:48:37,087 --> 01:48:38,627
+X'in pardon
+
+696
+01:48:38,627 --> 01:48:40,327
+İ'inci kuvvetini alacağız önce
+
+697
+01:48:40,327 --> 01:48:44,707
+Bunu da şeyle çarpacağız
+
+698
+01:48:44,707 --> 01:48:46,827
+Kat sayıyla çarpacağız
+
+699
+01:48:46,827 --> 01:48:48,467
+Yani ARR'nin
+
+700
+01:48:48,467 --> 01:48:50,987
+İ'siyle çarpacağız
+
+701
+01:48:50,987 --> 01:48:54,048
+Önce x üzeri 0 hesaplanacak
+
+702
+01:48:54,048 --> 01:48:56,188
+O x üzeri 0'ın kat sayısı neyse
+
+703
+01:48:56,188 --> 01:48:57,847
+Onu getirip buraya ekleyeceğiz
+
+704
+01:48:57,847 --> 01:48:58,167
+Değil mi?
+
+705
+01:48:58,167 --> 01:49:00,647
+yanlış bir şey yapmaysek.
+
+706
+01:49:05,492 --> 01:49:08,492
+İkisini olarak aynı şey orada alabiliriz.
+
+707
+01:49:12,180 --> 01:49:38,680
+fleriz, o da sıkıntı neyiz. Onlar basit şeyler. Nerede? Neleri kullanabiliriz? Her kütüphane değil de mat.hc kullanmanızda bir sıkıntı yok. Yani gidip regular expression kütüphanesi kullanmanızı beklemiyoruz. Ama bu tarz power işlemini kullanabilirsiniz.
+
+708
+01:49:38,680 --> 01:49:43,079
+Şurada da printf ile ekrana yazalım
+
+709
+01:49:48,020 --> 01:49:48,659
+106
+
+710
+01:49:48,659 --> 01:49:52,159
+e
+
+711
+01:50:09,652 --> 01:50:11,652
+Böyle bir sonuç
+
+712
+01:50:20,948 --> 01:50:26,948
+Bakın daha bunları kullanıcından almadık arkadaşlar. Daha bir de o derdimiz var.
+
+713
+01:50:28,948 --> 01:50:36,948
+Alklı et poly, erayı gönder, şey poly'yi gönder. Ondan sonra max'ı gönder.
+
+714
+01:50:37,948 --> 01:50:44,948
+x olarak da 3 diye bir şey göndersek. Yani x, şey 2 diyelim.
+
+715
+01:50:44,948 --> 01:50:48,948
+Şunu geçirelim.
+
+716
+01:50:54,068 --> 01:51:05,747
+P2-102 oluyor mu? 2 üzeri 4, 16, 7 ile çarpın 70, 42, 102. Doğru mu?
+
+717
+01:51:08,787 --> 01:51:14,547
+2 üzeri 4, 16, 70 ile 16'yı çarptanız. Tamam.
+
+718
+01:51:15,588 --> 01:51:16,387
+Güzel.
+
+719
+01:51:17,187 --> 01:51:18,547
+Burada da Bexdlaş'a.
+
+720
+01:51:21,619 --> 01:51:40,619
+Peki ben bu polinomun türevini almak istesem vesaire başka başka şeyler yaptım. Her seferinde şöyle bir ilkel veriye bağlı olarak bunu tek tek göndermem gerekiyor. Bu bir. Az önce arkadaşınız güzel bir şey söyledi. Hocam dedi burada sıfır olan terimleri de tutmak zorundayız.
+
+721
+01:51:40,619 --> 01:52:00,919
+Bu yapıyı birazcık değiştirsek, gereksizlik terimleri tutmasak daha güzel olacak. O zaman sıfır dışında terimlerin olduğu polinomu saklayacak bir yapı oluştursak, polinom primitif versiyon 2 diyeceğim buna. O zaman yapıyı değiştireceğiz. Böyle olmaz.
+
+722
+01:52:00,919 --> 01:52:26,939
+Biz şu an sırtımızı indislere yasladık. Dedi ki indisler bizim derecelerimiz. Onların içerisinde de koopişentlerimiz var. Biliyoruz ki şu 3. dereceli polinomun 3. dereceli teriminin kat sayısı. Ama sıfır. Böyle olmasın istiyorsak şöyle bir şey tutacağız.
+
+723
+01:52:26,939 --> 01:52:39,259
+terim sayısı çarpı şey kadar o terimin hangisi hangi derece ve hangi katsayı ait olduğundan iki tane değer diyor.
+
+724
+01:52:40,480 --> 01:52:42,560
+Bu iki değerler de şöyle olsun.
+
+725
+01:52:42,560 --> 01:52:48,959
+Diyelim ki birincisi katsayı ikincisi derece olsun.
+
+726
+01:52:49,119 --> 01:52:51,179
+İki üzeri işte üç gibi bir şey.
+
+727
+01:52:52,579 --> 01:52:53,480
+Bu böyle bir şey olsa.
+
+728
+01:52:53,480 --> 01:52:55,420
+Ondan sonra
+
+729
+01:52:55,420 --> 01:53:00,079
+Burada sıralamaya da belki gerek yok. 4 üzeri 1 gibi bir şey olsa
+
+730
+01:53:00,079 --> 01:53:06,039
+diğer sıfırları tutmama gerek yok. Şimdi bu nedir?
+
+731
+01:53:08,740 --> 01:53:10,319
+2 üzeri
+
+732
+01:53:10,319 --> 01:53:14,039
+2 çarpı x üzeri 3
+
+733
+01:53:14,039 --> 01:53:16,640
+artı şuraya da eksi diyelim
+
+734
+01:53:16,640 --> 01:53:21,420
+4 çarpı x üzeri 1
+
+735
+01:53:21,419 --> 01:53:28,919
+böyle bir yapı sunabiliriz. Şimdi polyprint de değişecek. Calculate poly de değişecek.
+
+736
+01:53:29,199 --> 01:53:37,299
+Polyprint'i de yapalım. Artık burada ne var? Bir matris var. O zaman burada bir matris olacaksa şöyle bir şey tutmamız lazım.
+
+737
+01:53:37,439 --> 01:53:44,579
+Ya ikinci dereceden pointer tutacaksın. Buraya da işte ikinci şey alacaksın. Yani gerçi ikiyi almaya gerek yok.
+
+738
+01:53:45,419 --> 01:53:47,739
+Neye yeterli? Çünkü her şeyde iki var. Bu yapı sağır.
+
+739
+01:53:47,739 --> 01:53:49,659
+Biceski
+
+740
+01:53:49,659 --> 01:53:52,239
+bu şuraya
+
+741
+01:53:52,239 --> 01:54:10,699
+kolinomu P'si diyelim artık karışmasın. İkincileriden bir şey geliyor. Kaç tane eleman olduğunun bilgisi nerede? Şuradaki max bilgisinde, satır sayısında. O zaman ben şeyden başlayacağım. Hiç burada tabii sıralı olmadığı için sıfırdan başlarım.
+
+742
+01:54:10,700 --> 01:54:21,000
+i küçüktür, N'ye kadar derim, i artı artı derim. Hiç sıfır diye bir kontrol yapmama belki gerek yok çünkü kat sayılarımız şey.
+
+743
+01:54:22,440 --> 01:54:25,459
+Şuraya olduğu gibi temizleyelim. Ne dizleyeceğiz?
+
+744
+01:54:25,459 --> 01:54:26,880
+Printf.
+
+745
+01:54:30,355 --> 01:54:31,695
+bu P'nin
+
+746
+01:54:31,695 --> 01:54:35,395
+belki şöyle yapalım
+
+747
+01:54:35,395 --> 01:54:36,995
+%d
+
+748
+01:54:36,995 --> 01:54:38,635
+x
+
+749
+01:54:38,635 --> 01:54:40,535
+üzeri
+
+750
+01:54:40,535 --> 01:54:43,415
+%d
+
+751
+01:54:43,415 --> 01:54:46,696
+virgül
+
+752
+01:54:46,696 --> 01:54:49,696
+ataşırı da artı
+
+753
+01:54:49,696 --> 01:54:53,196
+P'nin
+
+754
+01:54:53,196 --> 01:54:55,135
+iyisinin
+
+755
+01:54:55,135 --> 01:54:57,135
+sıfırı
+
+756
+01:54:57,135 --> 01:54:59,835
+bize kat sayıyı söylüyordu.
+
+757
+01:55:00,355 --> 01:55:10,116
+bir gün T'nin İ'sinin bir de dereceyi söylüyor. Bu böyle sonuna kadar gidecek. Şuna da gerek kalmayacak.
+
+758
+01:55:11,675 --> 01:55:17,355
+Tabii en sonuncusunda bir artı yazacaksın belki ama işte şurada belki şey eksi 1'e kadar gidersin.
+
+759
+01:55:18,036 --> 01:55:24,495
+Şunu en son bir daha şurada alırsın. Şuraya bir artı versin. Gerçi artıya gerek yok.
+
+760
+01:55:24,495 --> 01:55:31,056
+şöyle yaparsak işte o iyiyi de en son elde ettiğimiz yer bu şekilde gösterilir.
+
+761
+01:55:32,455 --> 01:55:34,515
+Polyprint'i bir çalıştıralım bakalım olacak mı?
+
+762
+01:55:35,896 --> 01:55:37,135
+Şuraya bir terim daha ekleyelim.
+
+763
+01:55:39,135 --> 01:55:40,615
+Tabii burada da şey var.
+
+764
+01:55:40,756 --> 01:55:42,396
+Şu an max kadar çalışıyoruz.
+
+765
+01:55:44,095 --> 01:55:46,375
+Diğerleri 0,0 diye devam ediyor.
+
+766
+01:55:47,335 --> 01:55:48,375
+Şuraya da şunu ekleyelim.
+
+767
+01:55:48,375 --> 01:55:50,735
+4. dereceden
+
+768
+01:55:50,735 --> 01:55:54,515
+pardon 5 çarpı
+
+769
+01:55:54,515 --> 01:55:56,775
+4 olsun bu dair.
+
+770
+01:55:57,815 --> 01:55:59,475
+Yani bu ne demek? Artı
+
+771
+01:55:59,475 --> 01:56:02,555
+5 çarpı x üzeri 4.
+
+772
+01:56:07,283 --> 01:56:12,003
+O zaman şöyle bir kontrol yapmamız lazım değil mi? Yine mecbur yapacağız.
+
+773
+01:56:17,716 --> 01:56:20,716
+sıfırdan farklıysa yazdır.
+
+774
+01:56:20,716 --> 01:56:22,716
+Aynı için şuraya da söyleyelim.
+
+775
+01:56:30,195 --> 01:56:32,195
+İlmi, tipi.
+
+776
+01:56:32,195 --> 01:56:34,195
+Varsiyo.
+
+777
+01:56:38,292 --> 01:56:44,292
+Şurada bir tane eksiğimiz var. Şu polyprinti değiştirelim.
+
+778
+01:56:55,347 --> 01:57:01,347
+Şu an calculation işlemini izledik yapmadım. Para vereceğim çünkü.
+
+779
+01:57:06,260 --> 01:57:23,680
+test argument incompatible demiş. Bu şeyle alakalı, şu normal bir matriz ya, mallocla oluşturulmuş bir matriz değil. Bununla alakalı bir şey. Belki şu an basmayacak ama bakalım ne diyecek.
+
+780
+01:57:25,520 --> 01:57:35,439
+Evet, şuradaki matrizi bu pointer'a kestirilmedi çünkü dönüştürmek lazım. Nasıl yapabiliriz? Doğrudan burayı matriz olarak alalım.
+
+781
+01:57:36,260 --> 01:57:38,739
+Şöyle diyelim
+
+782
+01:57:38,739 --> 01:57:42,660
+Kaç satır olduğu önemli değil ama iki tütün olduğu önemli
+
+783
+01:57:42,660 --> 01:57:43,899
+Satır olduğu bilgisi burada
+
+784
+01:57:43,899 --> 01:57:46,379
+Böyle yapabiliriz
+
+785
+01:57:58,931 --> 01:58:06,931
+200 tüp eksi 4x tabi aradaki artıdan dolayı eksi 4x oldu. Artı 5x üzeri 4. Tamam.
+
+786
+01:58:08,931 --> 01:58:14,931
+Dikkat ederseniz bu tarz ilkel verilere bağlı olmak çok ciddi sıkıntılar oluşturuyor.
+
+787
+01:58:14,931 --> 01:58:23,931
+Acaba biz kendimiz polinom diye bir yapı kursak, şunlarla uğraşmasak diye şey yapacağız. Arada falan.
+
+788
+01:58:30,515 --> 01:58:32,435
+Beşkeçe görüşelim arkadaşlar.
+
+789
+02:07:36,595 --> 02:07:52,215
+Şimdi geçen hafta şey sadece bir tane örnek çözmüştü. Zaten kısa sürmüştü. Onun için bir tane örnek var. Onu birazdan yüklerim. Normalde dördüncü haftaya kadar her şey ders notları içerisinde var. Bu haftayı da yükleyeceğim arkadaşlar.
+
+790
+02:07:53,375 --> 02:08:00,475
+Dolayısıyla eksik bir şey yok. Şu iki klasör yüklenecek. Bugün içerisinde ders bitince yüklenmiş olur.
+
+791
+02:08:00,475 --> 02:08:15,315
+Şimdi structure ve union bizim kendi veri tiplerimizi tanımlamamızı sağlayan bir C programlama kolaylığı.
+
+792
+02:08:16,436 --> 02:08:25,855
+Her zaman bu şekilde ilkel veri tipleriyle doğrudan muhatap olmak program yazmayı zorlaştıran bir şey.
+
+793
+02:08:25,855 --> 02:08:38,955
+kabul ederim ki öğrencilerin adı, soyadı, yaşı, videsi, finali bunları bir yerde tutup bunlar üzerinde işlem yapacaksınız.
+
+794
+02:08:40,015 --> 02:08:44,235
+Veya polinomların kat sayıları, dereceleri bunların üzerinde işlem yapacaksınız.
+
+795
+02:08:44,235 --> 02:08:47,495
+Şimdi öğrenci açısından baktığımızda şöyle bir durum var.
+
+796
+02:08:52,372 --> 02:09:22,111
+Daha çok gerçek dünyadaki nesnelerimiz burada dikkate alınabilir. Mesela öğrenci adı için eleman tutacaksın. Karakter pointerı yapman lazım. Bu pointerlarda mesela diyeceğiz ki N tane öğrencinin ismi için isim de mesela maksimum 50 karakter olsun. Şöyle bir şey yapmamız lazım.
+
+797
+02:09:22,372 --> 02:09:26,772
+10 tane öğrenci
+
+798
+02:09:30,804 --> 02:09:37,744
+50 rank aslında işte bir isim olsa olsa 50 karakter olur şeklinde. Aynısını soyad için de yapacaksın.
+
+799
+02:09:44,083 --> 02:10:01,363
+Dolayısıyla şey oluyor, yönetilmesi zor oluyor. Nasıl zor oluyor? Mesela öğrenci bilgilerini ekrana yazdır diye bir fonksiyon yaptığımızı düşünelim. O fonksiyona, hadi bir de şöyle şey aktaralım, integer, N tane öğrencinde yaşını tutacağız.
+
+800
+02:10:01,363 --> 02:10:04,843
+Böyle bir şey.
+
+801
+02:10:05,143 --> 02:10:07,943
+Veya bunları dinamik numara allokasyonuyla yaptığınızı düşünün.
+
+802
+02:10:08,903 --> 02:10:13,923
+Şuradaki en yerine daha pointerla bunları sakladığınızı düşünelim.
+
+803
+02:10:13,923 --> 02:10:19,703
+Şimdi bunlar için bir fonksiyon yazdığında, işte B yazdı, öğrenci yazdı.
+
+804
+02:10:20,783 --> 02:10:25,863
+Diyorsun ki işte adları gönder, soyadları gönder, yaşları gönder.
+
+805
+02:10:27,124 --> 02:10:27,403
+Tamam.
+
+806
+02:10:27,403 --> 02:10:54,603
+Bunu yazarken de şuradaki tanımlara uygun olarak fonksiyonları ayarlanmak gerekiyor. Bunu bir defa belki yazmak şey de sonra diyeceksin ki öğrencilerin ekstradan doğum yeri bilgilerini de tutmak istiyoruz. İleride işte beş ay sonra programda güncelleme yaptın. Baştan aşağıya fonksiyonları nerede çağırdıysan o fonksiyon çağrılarında değişiklik yapman gerekiyor.
+
+807
+02:10:54,603 --> 02:11:23,823
+Fonksiyonların tanımlarında değişiklik yapman gerektir. Bir tane sonuçta fonksiyon yazmıyorsun. Belki 10 tane fonksiyon yazıyorsun. Kodu baştan aşağıya revize etmen gerekir. Halbuki bu şekilde böyle bir yapı olması yerine öğrenci yaz desem ve ben buraya bir öğrenci türünde o türünde bir değişiklikten alsam öğrencinin içerisinde yaptığım bütün değişiklikler şurada bir değişiklik yapmama gerek kalmadan sisteme adapte olacak.
+
+808
+02:11:24,603 --> 02:11:41,603
+Ama burada öğrenci yardım edin ve ileride şunların üzerine ekstra bir şey getirdiğimde şunları değiştireceğim. Aşağıda başka değişiklikler yapacağım. Dolayısıyla daha kolay program yazmayı ve yönetmeyi sağlıyor. Bir de ilkel verilere primitive obsession dediğimiz.
+
+809
+02:11:46,228 --> 02:11:52,228
+kod kuturu vardır. Şurada ilkel verilere bağlı kalıyorsun. Burada ondan tutuyorsun.
+
+810
+02:11:52,228 --> 02:11:58,228
+Ve gerçek dünyadaki herhangi bir nesneyi bu şekilde modelleyip bunun üzerinde işlem yapabiliyorsun.
+
+811
+02:11:59,228 --> 02:12:06,228
+Nihai olarak elbette yine ilkel verilere ihtiyacımız var. Bir insanın yaşını tutmak için elbette integer adı ihtiyaç duyacaksın.
+
+812
+02:12:06,228 --> 02:12:10,228
+Boyunu, kilosunu tutmak için elbette flow to double'a ihtiyacım var.
+
+813
+02:12:10,228 --> 02:12:27,287
+Ama o tanımlama esnasında yaptığım bir defa yaptığım şey olacak. Diğer kısımlarda bu parametre geçişlerini veya programın parametre aktarımlarını bu tanımladığın şey üzerinden gerçekleştirmeyi sağlayalım. Bunlara structure diyor.
+
+814
+02:12:27,287 --> 02:12:32,647
+Nesne tabanlı programıma gelecek dönem bahar gününüzde göreceksiniz.
+
+815
+02:12:33,547 --> 02:12:36,227
+Bunun biraz da geliştirilmiş belki.
+
+816
+02:12:36,387 --> 02:12:43,167
+Tamamen gerçek dünyadaki nesnelerin davranışlarına ilişkin şeyler çıkıyor, özellikler çıkıyor.
+
+817
+02:12:43,247 --> 02:12:44,387
+Orada onları da sağlatıyor.
+
+818
+02:12:45,907 --> 02:12:51,147
+Mesela nesneler arası alt üst ilişkisi olan durumlar var.
+
+819
+02:12:52,367 --> 02:12:54,187
+Şimdi mesela öğrenci var diyelim.
+
+820
+02:12:54,567 --> 02:12:56,588
+Öğrencinin ilgilerini ekrana yazdırıyoruz.
+
+821
+02:12:57,287 --> 02:13:18,567
+Bir de normal sivil vatandaş olsun. Onun da bilgilerini ekrana yazdırır yalnız bir sistem olsun. Şimdi öğrencinin de adı var, sivil vatandaşın da adı var. Şimdi ben Sİ'de yaparken şunu yapmak zorundayım. Hem öğrencinin adı için bir tanımlama, sivilin adı için bir başka tanımlama yapacağım. Yani ad ikisinde de geçmek zorunda.
+
+822
+02:13:18,567 --> 02:13:22,047
+Ama işte nesne tabanlı programında şey diyecekler
+
+823
+02:13:22,047 --> 02:13:25,927
+İşte bu insan üst bir varlık
+
+824
+02:13:25,927 --> 02:13:30,467
+Onun altında işte öğrenci, sivil, türetilmiş varlıklar
+
+825
+02:13:30,467 --> 02:13:32,887
+İsim, soy isim hepsinde olacak
+
+826
+02:13:32,887 --> 02:13:35,267
+Kendilerine ait ayırt edici özellikler
+
+827
+02:13:35,267 --> 02:13:41,367
+İşte öğrenci numarası, sivil vatandaşın ne bileyim social security number gibi değerleri
+
+828
+02:13:41,367 --> 02:13:43,447
+Onlar alt niteliklere ait şeyler
+
+829
+02:13:43,447 --> 02:13:46,247
+O varlıklar arasında ilişki olacak
+
+830
+02:13:46,247 --> 02:14:04,407
+Bu daha temel şeyde seviyede structure'larla yapacağımız şeyler. Buradan birazcık bakalım. Şimdi structure'ların tanımı var. İç içe structure'lar yapabiliyoruz. İç içe structure'lar çok çok işimize yarayacak.
+
+831
+02:14:04,407 --> 02:14:32,187
+Çünkü bununla dizilerle yapamadığımız bazı operasyonları linkli liste dediğimiz yeni bir veri yapısı tanımlayacağız. Onlarla gerçekleştireceğiz. İç işe yapılarla. Structure'ların dizilerine bakacağız. Şu ana kadar biz fonksiyonları gördük. Dizileri gördük. Dizileri nasıl gördük? Dinamik diziler. Bir de sabit uzunluklu diziler. Structure'ların da dinamik olanları var. Sabit uzunluklu olanları var.
+
+832
+02:14:32,187 --> 02:14:55,387
+İşte dizileri fonksiyona fesat aktarmıştık. Structure'ları da dizi olarak fonksiyona göndereceğiz. Normal bir değişkeni fonksiyona gönderdiğimizde bir şey oluyordu. Dizi olarak gönderdiğimizde başka bir şey oluyordu. Şu ana kadar öğrendiklerimizin üzerine bir structure şarpanı geldi. Yani onların hepsini tekrar etmiş gibi bir şey olacak. Diğerleri de zaten union falan temel şeyler.
+
+833
+02:14:55,387 --> 02:15:23,927
+Normalde arkadaşlar öğrencilerin bilgilerini toplarken veya yazılırken diziler yerine göre faydalı olabiliyor. Ama yönetilmesi zor, ülkelere fazla takım kalıyorsun. Bir de diller yapısı gereği peş peşe olmak zorunda gereken bir yapılar. Elemanları ard arda ardışıl saklaman gerekiyor. Her zaman istediğin kadar ardışıl eleman bulamayabiliyorsun. Farklı sebeplerden dolayı.
+
+834
+02:15:23,927 --> 02:15:38,927
+Bu da programın zaman zaman crash etmesine yani bozulmasına neden olabiliyor. Bunun yerine biz bir yapı tanımlayıp, structure yapısı tanımlayıp diyoruz ki bundan sonraki bütün çalışan...
+
+835
+02:15:39,663 --> 02:15:56,563
+öğrenci artı neyse, şeylerini bu isim üzerinden gerçekleştir. İkide bir öğrenci çalıştı, öğrenci oluştururken ismini al, soy ismini al, ID'sini al, maaşını al, ne falanlar varsa. Bunları ayrı ayrı tutmamıza gerek yok.
+
+836
+02:15:57,403 --> 02:16:03,223
+Şimdi bu derste bunun tanımını ve temel özelliklerini göreceğiz. Gelecek hakkında buna devam ederiz.
+
+837
+02:16:06,424 --> 02:16:08,623
+En basitinden sıkıntı, şöyle yapalım.
+
+838
+02:16:09,663 --> 02:16:16,204
+Bizim buradaki structure örneğimiz ne olsun? Kişiler olsun veya öğrenciler olsun.
+
+839
+02:16:25,971 --> 02:16:53,971
+İlk başta bunları dynamic memory allocation olmadan yapacağız. Sonra dynamic memory allocation bunu da sağlayacak şekilde yapacağız. Şimdi structure tanımlarken structure kelimesini kullanıyorsunuz. Mesela diyelim ki öğrenci veya student diyelim. Şöyle parantez açıyoruz ve noktalı birbiri otomatik kendisi koyuyor. Burada mesela ne var? Integer ID olsun.
+
+840
+02:16:53,971 --> 02:17:13,971
+Bu bir tane id'ye sahip olacak. Card, işte name olsun. Name'leri de 50 karakter olsun. Başka ne olabilir? Surneğim falan tutmayacağım ben burada. Bir tane de alan ekleyeyim, onu da siz söyleyin. Bu da age olsun.
+
+841
+02:17:17,587 --> 02:17:31,987
+bir de gender. Şimdi bu şekilde structure tanımladıktan sonra bir integer değişken nasıl tanımlanıyoruz?
+
+842
+02:17:34,579 --> 02:17:58,899
+Int, i, g bunun gibi bir şey. Bu tek bir tane değişken tanımı. Siz de tek bir eleman tanımlayacaksanız diyorsunuz ki structure, struct, yani sizin şu int dediğiniz şeye karşılık geldiğinde burası. S1. Bu kadar.
+
+843
+02:17:58,899 --> 02:18:26,940
+sürekli böyle bu şekilde structure student, structure student yazmak yerine şöyle bir şey yapıyor. Bizim bir type defimiz vardı hatırlarsanız. Type definition ne yapıyordu? Bir C ifadesi veriyordu. Mesela diyordun ki int tam sayı olsun. Art int yerine tam sayı yazabiliyorsun. Bu biraz anlamsız bir type definition. İşte daha anlamlısı structure'larda karşılığında geliyor. Diyoruz ki bundan sonra structure student
+
+844
+02:18:26,940 --> 02:18:55,480
+nerede görürsen bunun yerine git mesela suyu düz gelsin. Genellikle biz structure'ların tanımlarında büyük harflerle söyleriz. Bunun bir C'nin değişken tipi değil ve kendi tanımlılığımız değişken tipi olduğunu göstermek için şu şekilde yapabildiğimiz bir şey diyoruz ki S2 yap. İkisi de aynıdır. Bizim tercih ettiğimiz şey şöyle kullanmamış. Bunun doğrudan bir structure olduğunu anlarız.
+
+845
+02:18:55,480 --> 02:19:07,719
+Daha güzeli, şu tanımlamadan daha maalesef, belki burada bir online kayıt olduğu için ekran göğünsü alma imkanı yok.
+
+846
+02:19:07,719 --> 02:19:18,340
+Bu yapıyı şu şekilde önce böyle tanımlayıp daha sonra bunu ikinci satırda yapmak yerine, typef bir şey, C ifadesi, boşluk şeydi.
+
+847
+02:19:18,339 --> 02:19:42,159
+benimki type tap'i şuraya taşıyor. C ifadesi bakın buradan başlıyor. Şuraya kadar. Şuraya kadar. Noktalı birbirine kadar. Boşluk. Onu da sağlayan bir yapı. Sizden beklediğimiz structure tanrı da bu.
+
+848
+02:19:48,339 --> 02:19:51,559
+tabi burada şey yok diğer yok arkadaşlar.
+
+849
+02:19:51,559 --> 02:19:53,159
+Oradan type de bir düşün.
+
+850
+02:19:54,479 --> 02:19:58,399
+Şu an bakın structure student dediğimiz şey S1 aynı.
+
+851
+02:20:00,919 --> 02:20:01,759
+Şurada da student.
+
+852
+02:20:03,919 --> 02:20:07,319
+Yani ben şunu yazmasaydım.
+
+853
+02:20:07,419 --> 02:20:08,520
+Gerçi seneceğiz şu an.
+
+854
+02:20:09,379 --> 02:20:11,020
+Bir dakika ya ben bu yorum satırı yapmamızı dedim.
+
+855
+02:20:11,959 --> 02:20:13,479
+Şunun yerine şunu yapmış ol.
+
+856
+02:20:13,479 --> 02:20:18,800
+Şimdi en basitinden şuna bakalım.
+
+857
+02:20:18,800 --> 02:20:19,399
+Parinter.
+
+858
+02:20:20,999 --> 02:20:22,440
+Bizim bir size lockumuz var değil mi?
+
+859
+02:20:22,479 --> 02:20:23,319
+Yüzde D diyelim.
+
+860
+02:20:25,800 --> 02:20:26,519
+Size lock.
+
+861
+02:20:28,039 --> 02:20:32,459
+Bu kaç bastıracak?
+
+862
+02:20:34,559 --> 02:20:34,919
+Dört.
+
+863
+02:20:35,139 --> 02:20:35,859
+Dört byte.
+
+864
+02:20:38,859 --> 02:20:39,779
+Size lock.
+
+865
+02:20:39,779 --> 02:21:02,219
+bir şey tipi olarak veya size of S2 diye. Şimdi bunun size nedir? İntegre 4 byte, bir karakter kaç byte? 1 byte. O zaman 50 tane uzunluk varsa 50 byte, 54 byte, 55 byte'lık bir şey görmemiz lazım.
+
+866
+02:21:02,219 --> 02:21:10,419
+50, 54, ha evet 58, 54
+
+867
+02:21:10,419 --> 02:21:18,020
+Şu ikisinde 64 göstermiş. Neden 64 oldu?
+
+868
+02:21:19,400 --> 02:21:24,539
+Şimdi bunu bellekte sığdırabilmek için, yerleştirebilmek için
+
+869
+02:21:24,539 --> 02:21:32,199
+hem ikinin katı hem de şey peş peşe getiriyor ve o araya mesela bir tane karakter eklemiştir.
+
+870
+02:21:32,219 --> 02:21:32,559
+dedikia.
+
+871
+02:21:32,948 --> 02:21:52,948
+dörtten sonra elli geldiği için bunu ikinin katına tamamladık. Bu aslında şey bunun izalanması, alignment dediğimiz bir konu var. Bellek de bunu yerleştirirken önce ID'yi gidiyor, ondan sonra şu anda AC alıyor, ondan sonra ellilik yer alacak, ondan sonra bir tane yer alacak.
+
+872
+02:21:52,948 --> 02:21:58,948
+Mesela bunun değişimleri farklılık gösteriyor. Bakın şu an 60'lı oldu.
+
+873
+02:21:58,948 --> 02:22:04,948
+Tanımlama sırasına göre bellekte yer düşecek. Çünkü şu an nasıl bir yapı var?
+
+874
+02:22:04,948 --> 02:22:09,948
+Gidiyor önce i için bir yer açıyor. i'nin adresine bakabiliriz.
+
+875
+02:22:14,675 --> 02:22:16,675
+%p diyelim.
+
+876
+02:22:16,675 --> 02:22:26,675
+Bunun adresine bakalım.
+
+877
+02:22:30,899 --> 02:22:40,339
+adresi içinde diyeceğiz ki adres yok değil. Tabi student'ın adresi yoksa mesela burada da C1'in adresine bakalım.
+
+878
+02:22:45,860 --> 02:23:00,499
+Şurada da C2'nin adresine bakalım. Çünkü student kendisi bir tanımlama, o PD2'yken bir şey ifade etmiyor. O tanımlama üzerinden oluşturduğumuz şey şu PD2 olarak bir bellek ve adrese karşılıklı yerlidir.
+
+879
+02:23:04,915 --> 02:23:15,915
+Şimdi, fe, 4c'den başlıyormuş. 4c'ye bundan sonraki azalarak gidiyordu. Bu bakın, stack bölgesinde oluşturulan şeyler.
+
+880
+02:23:15,915 --> 02:23:27,915
+1,0'dan başlıyor. Siz şu 1,0'a şu kadar değer eklerseniz şuna karşılık gelir. Veya d0'dan bu kadar, 60, 60 diyor.
+
+881
+02:23:27,915 --> 02:23:33,015
+Mesela şöyle bir şey yapmak, gender'ı epey alalım.
+
+882
+02:23:35,252 --> 02:23:37,252
+nasıl olacağını.
+
+883
+02:23:38,531 --> 02:23:41,252
+Yine 64 yaptı. Şunu da tepeye alalım.
+
+884
+02:23:46,004 --> 02:23:58,083
+dördün katları şeklinde gittiğimizde şimdi yine 60 oldu. Şimdi bir byte alıyor, sonra elli byte daha alıyor, elli bir. Bunun en yakın dördün katı var, elli altı mı var?
+
+885
+02:23:58,083 --> 02:23:59,083
+52 var. Muhtaranın orada 52. Şimdi 52 olsa 56, 60. Onun için 60 görüyoruz. Eğer ki araya şey alırsak, bunu başka bir yere gönderirsek, şimdi bu bir byte. Bir byte'ın en yakın kompüsü işte 4 byte. 3 byte orada size boşa gidecek. Sonra bunu alıyorsun, bunu alıyorsun. Aradaki 3 byte'ı
+
+886
+02:24:28,083 --> 02:24:57,883
+bir de 50'den dolayı onu da 63, onu da 64'e tamamlayacak. 50, 54, 58, 59, aradaki 3, 62, toplam 64'e tamamlayacak şekilde bir şey oluyor. Bunlar genellikle hizalamanın yolu çok yok da işte bu tarz karakterli olan şeyleri ya en başa ya en sona koyup mümkünse de şunların boyutlarına gördüğün katı olacak şekilde.
+
+887
+02:24:57,883 --> 02:25:13,443
+mesela 50 değil de 48 yapsak hatta 47 yapsak ne olur burası 47 bir tane de bu var 48 çok çok daha temiz bir şekilde 48 olunca 56 tam yani fit bir şekilde oturtabilirsiniz.
+
+888
+02:25:13,443 --> 02:25:33,583
+Peki tanımlama bu şekilde. Biz bu structure üyelerine, s'lerin id değerine, edge değerine, name değerine nasıl değer okuyacağız ve onları nasıl ekrana yazdıracağız, nasıl erişeceğiz?
+
+889
+02:25:33,583 --> 02:25:39,703
+Burada yeni bir operatör karşımıza geliyor. Mesela diyelim ki değişkenimizi oluşturduk.
+
+890
+02:25:39,703 --> 02:25:50,863
+Printf, enter, id, name, age, gender, respectively.
+
+891
+02:25:54,963 --> 02:26:08,884
+C1'e veya C2'ye ikisi de aynı şeyi zaten fark ediyoruz. C, gene. Şimdi alacağım şey önce ID, yüzde D. İster böyle, ister ayrı ayrı yapabilirsiniz. Önemli. Ondan sonra bir tane yüzde C alalım.
+
+892
+02:26:10,884 --> 02:26:24,943
+Diliyorum ki C1'in ID alanına nokta operatörünü burada kullanıyoruz. Yalnız bu nokta operatörünü kullanırken bu şeyi, değişkeni tanımladığımızda
+
+893
+02:26:24,963 --> 02:26:46,903
+pointer kullanmama dürümü var. Pointer kullanırsak o nokta operatörünü kullanmayacağız. Başka bir operatör yazıyor. S1 nokta neyim diyoruz. Şimdi biz normal bir değişkeni integer'ı şeyde okurken ne yapıyorduk? Skenf'te ampersand kullanıyorduk.
+
+894
+02:26:46,903 --> 02:27:02,843
+Şimdi benim burada S1'in adresi, S1 kendisi bir şey, adres tutar. Hatta şöyle göstereyim, fprintf, %p diyelim, S1 diyelim, bakalım ne yazacak.
+
+895
+02:27:06,835 --> 02:27:08,835
+Şurayı da kapatacağım şimdilik.
+
+896
+02:27:13,363 --> 02:27:15,363
+Aynı düzilerde olduğu gibi
+
+897
+02:27:17,764 --> 02:27:23,963
+Şu bahsettiğim şey 62 FDD090 dediğim şey
+
+898
+02:27:25,963 --> 02:27:27,963
+S1'in adresi
+
+899
+02:27:32,363 --> 02:27:40,963
+Muhtemelen bu bir değer tutuyor arkadaşlar. Etiketi farklı bir şey gösteriyor. Dolayısıyla bunu bir adres gibi düşünürsek bunun üzerinden doğrudan işlem yapmamız mümkün değil.
+
+900
+02:27:40,963 --> 02:28:04,303
+Burası S1'in ID'si dediğimizde bu S1 structure'nın ID değerini getir demektir. Bizim oraya bir veri girişi yapmamız gerekiyorsa ampersand kullanacağız. Bu bir integer olduğu için. Name alırken name'in kendisi zaten bir pointer tutuyor ya. Yani dizi olduğu için. Burada ampersand yazmak zorunda değiliz.
+
+901
+02:28:04,303 --> 02:28:06,363
+bir yerlerine devamlı geçelim.
+
+902
+02:28:08,423 --> 02:28:11,203
+İsim aldık. Ondan sonra ne vardı? Age vardı.
+
+903
+02:28:12,663 --> 02:28:15,983
+%D alacağız. Bir de gender alacağız. %C diyelim.
+
+904
+02:28:17,263 --> 02:28:18,663
+Hatta %D'yi şöyle alayım.
+
+905
+02:28:23,283 --> 02:28:25,283
+S1 nokta
+
+906
+02:28:25,283 --> 02:28:29,683
+Age alıyoruz.
+
+907
+02:28:30,963 --> 02:28:33,363
+Ben bu age'i alıp Enter'a basacağım.
+
+908
+02:28:33,744 --> 02:28:35,223
+Bu Enter hafızada kalacak.
+
+909
+02:28:36,343 --> 02:28:38,664
+Flash diye bir şey yazıp standart input'u
+
+910
+02:28:38,664 --> 02:28:41,403
+temizlemem lazım ki bundan sonra
+
+911
+02:28:41,403 --> 02:28:43,663
+eğer gender bilgisini
+
+912
+02:28:43,663 --> 02:28:45,163
+okuyacaksam
+
+913
+02:28:45,163 --> 02:28:48,743
+sıkıntı yaşamıyor İngilizce.
+
+914
+02:28:50,743 --> 02:28:52,263
+S1 nokta
+
+915
+02:28:52,263 --> 02:28:56,324
+Bu doğru mu?
+
+916
+02:28:58,663 --> 02:29:01,343
+Bu bir tek karakter olduğu için bu bir pointer değil.
+
+917
+02:29:01,443 --> 02:29:02,363
+Tek bir değer tutan bir şey.
+
+918
+02:29:02,423 --> 02:29:03,903
+Onun için burada da amperesant kullanıyoruz.
+
+919
+02:29:04,743 --> 02:29:06,144
+Bilerek bunların etkisini koydum.
+
+920
+02:29:06,223 --> 02:29:12,403
+Yani bir stringiniz varsa, bu şekilde bir şeyiniz varsa, bu kendisi bir adreşlik olduğu için bunu yazmak zorunda değiliz.
+
+921
+02:29:12,403 --> 02:29:20,723
+Ama onun dışında integer, flow, karakter, hangi türden değişkenimiz varsa amperesant da söylemek zorundasınız.
+
+922
+02:29:20,803 --> 02:29:21,603
+Veri girişi bu şekilde.
+
+923
+02:29:25,427 --> 02:29:39,167
+Şimdi burada bir integer girdik ya, integer girdikten sonra enter'a basıyorsun, o hafızada kazıyor, o gelen hafızada şey %c'ye atanıyor, sen gender'ı okuyamadan program devam edip gidiyor.
+
+924
+02:29:40,007 --> 02:29:49,447
+Şunlarda zaten bu bir integer olacağı için okuyacağın şey, onu doğrudan space karakter olarak alıp, space karakter görüp doğrudan atıyor.
+
+925
+02:29:49,447 --> 02:30:11,788
+integer üzerine atama yaptığında onda sıkıntı yaşamıyorsun ama bunu karakter alıp bununla problem yaşayabiliyoruz. Ya işte şöyle yapacağız ya da şey standart bir su flash yaptığımız. Peki ekrana yazdırma işi böyleyse, veri okuma işi böyleyse ekrana yazdırma ne olacak? Bunların ampersansız halledi.
+
+926
+02:30:11,788 --> 02:30:26,008
+fprintf, %d, %s, %d, %c, nedir bu?
+
+927
+02:30:26,007 --> 02:30:43,467
+s1.id, virgül s1.name, virgül s1.gen, h, virgül s1.gender.
+
+928
+02:31:03,156 --> 02:31:08,156
+2 girelim, Ahmet girelim. Sonra H girelim.
+
+929
+02:31:08,156 --> 02:31:15,156
+2 Ahmet, 33 C. Tamam mı?
+
+930
+02:31:15,156 --> 02:31:22,156
+Buraya kadar olan şeyler çok basit şeyler. Şimdi birazcık karmaşık açacağım.
+
+931
+02:31:22,156 --> 02:31:32,156
+Ben bu yaldırma işlemini fonksiyonunda yapmak istiyorum. Yani void diyeceğim ki, trend, info.
+
+932
+02:31:32,156 --> 02:31:40,916
+Aynı bir değişkeni aktarır gibi buraya stüdyon türünde bir S değişkeni alıyorum.
+
+933
+02:31:43,696 --> 02:31:50,075
+Şunu da şöyle buraya kaydediyorum. Hatta burası S1 olsun veya S olsun. Şunları S yapalım.
+
+934
+02:31:54,644 --> 02:31:59,644
+ne oluyor? Buraya gelen bu S, call by value ile aktarılıyor.
+
+935
+02:32:01,943 --> 02:32:08,644
+Dikkat edin. Tek bir structur değişkeni call by value veya pass by value ile aktarılacak.
+
+936
+02:32:09,863 --> 02:32:19,543
+Dolayısıyla senin burada bir S1 değişkenin, S2 değişkenin varsa, onun içeriği olduğu gibi şu fonksiyonun lokal değişkenine buradaki S'ye kopyalanıyor.
+
+937
+02:32:21,883 --> 02:32:23,743
+Burada şimdi şöyle bir detay var.
+
+938
+02:32:24,644 --> 02:32:46,703
+bir integer i ve j yaptığımızda i'ye mesela 5 atayalım. j eşittir i yaparsak ne olur? i'nin içerisindeki değer j'ye aktarılır. Bu eşittir operatörü bu iki değişken üzerinde atama işlemine tanımlı olduğu için bu böyledir.
+
+939
+02:32:46,703 --> 02:33:04,983
+tanımlı olmasa bunu yapamayız. Mesela stringlerde karakter dizilerinde olmuyor. Bir stringi öbür stringi eşitli atayan bir. Peki bu structure'lar için böyle mi? Evet structure'lar için de böyle. Ben şurada S1 için girdiğim verileri önce ekrana bir yazdırayım.
+
+940
+02:33:04,983 --> 02:33:06,983
+print info diyorum.
+
+941
+02:33:08,863 --> 02:33:20,383
+Print info diyorum. Hem fonksiyonu aktarımını göreceğiz hem de burada şu call by value'nun hem bu açıdan hem de eşit bir operatör açısından nasıl yapılmıyor göreceğiz.
+
+942
+02:33:21,103 --> 02:33:25,004
+S1'i yavgı dedi. Sonra diyorum ki S2 eşittir, S1 olsun.
+
+943
+02:33:25,663 --> 02:33:31,543
+Ne oluyor? S2'nin bir adresi var, oturduğu adres var. S1'in de oturduğu adresi var.
+
+944
+02:33:31,544 --> 02:33:41,524
+S1'in içindeki memberlar karakter dizisi hariç yani string hariç hepsi olduğu gibi kopyalanıyor.
+
+945
+02:33:42,063 --> 02:33:49,124
+Karakter dizisi niye kopyalanmayacak? Çünkü şu string bir tane oluşturmuş bir, bu stringin de pointer'ı kopyalanıyor.
+
+946
+02:33:50,804 --> 02:33:59,264
+Pointer'ı kopyalandıktan sonra iki tane member var, o iki member'ın işte kendine ait ID'si, age'i, gender'ı var.
+
+947
+02:33:59,263 --> 02:34:14,203
+Bunlar iki tane kopya ve birebir aynı S1 ile aynı olan değerleri tutuyorlar. S1'deki name ile S2'deki name ile aynı stringi point ediyorlar. Böyle bir yapıda var. Şöyle çizecek olursam.
+
+948
+02:34:17,716 --> 02:34:19,716
+ID bir tanesi için var.
+
+949
+02:34:20,716 --> 02:34:21,716
+Gender var.
+
+950
+02:34:26,355 --> 02:34:28,755
+neydi öbürü de? Age miydi? Age.
+
+951
+02:34:30,155 --> 02:34:35,755
+S1 için birebir aynı değer. Bunun da name'i var. Ayrı mesele.
+
+952
+02:34:36,156 --> 02:34:46,555
+Ama bu name bir başka yerdeki string'i point ediyor. Öbüründe de işte şuradaki name bir başka yerdeki string'i point ediyor.
+
+953
+02:34:46,555 --> 02:35:01,775
+geri kalan işte id'si, gender'ı ve age'i yazamıyorum çok fazla. Kendine özel, kendine has primitive datalar olduğu için bunları bu şekilde tutuyorlar.
+
+954
+02:35:02,355 --> 02:35:14,915
+Şimdi gelelim şurada şeyi görelim. Şimdi print info s1 yap diyorum. S1'i s2'ye atar. Sonra print info s2'ye atıyorum.
+
+955
+02:35:20,115 --> 02:35:22,115
+Burayı da şöyle.
+
+956
+02:35:26,036 --> 02:35:30,416
+Şu print info'nun yukarıya yazılması lazım.
+
+957
+02:35:30,416 --> 02:35:33,415
+Şimdi şöyle bir detay söyleyelim.
+
+958
+02:35:33,415 --> 02:35:39,956
+Önce structure'ı tanımlayacaksın ki şu fonksiyonun içerisindeki structurant ifadesi anlamlı olur.
+
+959
+02:35:39,956 --> 02:35:47,216
+Bizim bunu alıp şuraya söylememiz olmayacak.
+
+960
+02:35:47,216 --> 02:35:51,456
+Çünkü diyecek ki burada structurant diye bir şey şu ana kadar bilinmiyor, unknown durum.
+
+961
+02:35:51,456 --> 02:36:09,695
+Structure zaten kendisi bir tanımlama. O bir prototip. Yani prototip ne için? O deklarasyonu yapıyorsunuz. Şu zaten bir deklarasyonmuş. Bu function deklarasyon. Bu da structure'nin kendisi zaten bir tanımlama olduğu için.
+
+962
+02:36:15,095 --> 02:36:21,355
+Structure dizisi tanımlamıyor. Structure üzerinden dizi şeklinde eleman tanımlamış.
+
+963
+02:36:21,455 --> 02:36:23,295
+oraya geldik.
+
+964
+02:36:26,215 --> 02:36:29,755
+Şimdi S1 ve S2 dedik.
+
+965
+02:36:31,975 --> 02:36:37,575
+Keşke Python gibi bir interpretive bir dil olsa da daha rahat görebsek ama yapacak bir şey yok.
+
+966
+02:36:38,335 --> 02:36:46,935
+Şimdi bir diyorum, Ahmet diyorum, ondan sonra TG22 diyelim, gender'ı ne diyelim.
+
+967
+02:36:46,936 --> 02:37:05,576
+şurada yazılan değerle buradayız olan değer aynı şey görüyoruz. Şimdi eşittir operatörünün demek ki bunu birebir deep copy yaptığını ama except for error yani
+
+968
+02:37:09,108 --> 02:37:10,108
+linki.
+
+969
+02:37:11,108 --> 02:37:13,108
+Haric olmak üzere deep copy yaptığını bilir.
+
+970
+02:37:14,108 --> 02:37:20,108
+Şuradaki id'nin değeri, age'in değeri, gender'ın değeri otomatik olarak oraya kopyalanıyor.
+
+971
+02:37:21,108 --> 02:37:23,108
+Şimdi bunu şöyle göstereceğim.
+
+972
+02:37:24,108 --> 02:37:28,108
+Şimdi strcopy diye bizim bir şeyimiz vardı değil mi? Fonsiyonumuz vardı.
+
+973
+02:37:29,108 --> 02:37:37,108
+Diyorum ki s1'in name alanına git, deneme diye bir şey yaz.
+
+974
+02:37:39,108 --> 02:37:41,608
+S1'in neymini buna yaz.
+
+975
+02:37:44,887 --> 02:37:49,968
+Print info fonksiyonunu tekrar çağır.
+
+976
+02:37:59,347 --> 02:38:02,947
+C1 ve C2 için. Bir de bunu görelim.
+
+977
+02:38:06,579 --> 02:38:11,219
+şu incompatible dediğimiz şundan kaynaklı arkadaşlar.
+
+978
+02:38:24,211 --> 02:38:25,211
+bir.
+
+979
+02:38:42,739 --> 02:39:07,439
+bir, Ahmet, yirmi iki, yirmi iki giriyor, ondan sonra E'ye giriyordum. Bakın burada bu deneme oldu, bu Ahmet kaldı. Çünkü car name alanı var ya, ilk başta şurada oluşturulan, ben burada ona değer olarak klavyeden bir şeye girdim, şu oluyor. Şimdi ben S1'in name'ini deneme yaptım.
+
+980
+02:39:07,439 --> 02:39:16,359
+Acaba bir şekilde ulaşıp şu name'in içerisindeki değeri değiştirebilirsem
+
+981
+02:39:16,359 --> 02:39:20,359
+Yani name'in kendi tuttuğu değeri değiştirebilirsem
+
+982
+02:39:20,359 --> 02:39:23,019
+Eskisiyle şey yapabilirsem ikisinde de değişir
+
+983
+02:39:23,019 --> 02:39:25,179
+Onun bir yoluna bakmak lazım
+
+984
+02:39:25,179 --> 02:39:32,579
+Şu an sadece S1'in name alanına bir başka yerde deneme diye bir string tutturduk
+
+985
+02:39:32,579 --> 02:39:35,079
+O stringin adresini şuraya aktarıyoruz
+
+986
+02:39:35,080 --> 02:39:41,539
+Ama S1'in name'i içerisindeki o değer dipkop olarak değişmiyor dikkat edip
+
+987
+02:39:41,539 --> 02:39:47,600
+Bir tane biraz önce işte Ahmet diye girdiğim bir string var o bir yerde duruyor
+
+988
+02:39:47,600 --> 02:39:50,759
+Deneme diye bir string de daha sonradan giriyor diğerine
+
+989
+02:39:50,759 --> 02:39:52,820
+Dolayısıyla S2'ye bu yansıtılmadı
+
+990
+02:39:52,820 --> 02:39:54,960
+Bu farkla dikkat ediyoruz
+
+991
+02:39:54,960 --> 02:39:56,059
+Ama şunu yapabilsek
+
+992
+02:39:56,059 --> 02:40:03,540
+S1'in name olarak gösterdiği stringin adresine gidip o adresteki stringi değiştirsek
+
+993
+02:40:03,539 --> 02:40:32,979
+Bunu S1'de de, S2'de de görebiliriz. Şimdi bunun yolu var mı bilmiyorum hatırlamıyorum. S1'in name alanına adres olarak ulaşıp pointerla ulaşıp eğer o pointerdaki değeri değiştirebilme imkanımız olursa zannediyorum olabilir. Ama bir bakayım gelecek derse kadar şey yapalım. Normal kullanımda dip copy'nin şu tarz bir şeyde string için olmadığının kanıtı bu.
+
+994
+02:40:33,539 --> 02:40:43,739
+Öbür değişkenler mesela şöyle de yapalım. S1.id'yi mesela burada 0 yapayım.
+
+995
+02:40:48,308 --> 02:41:09,308
+göreceğim şey ikisinin id'sini biraz önce aynıydı şurada. Şurada ne oldu? Birisi 0 öbürüsü işte neyse o klavyeden ne geliyse bu oluyor ama string için durum çok daha farklı. Dizi olduğu için bir diyelim veya 111 diyelim.
+
+996
+02:41:09,308 --> 02:41:10,367
+aaa diyelim.
+
+997
+02:41:14,027 --> 02:41:17,867
+Şimdi 111, 111, burada 0, burada 111.
+
+998
+02:41:17,907 --> 02:41:19,127
+Çünkü burada dipkop yapıldı.
+
+999
+02:41:20,267 --> 02:41:24,287
+String'te de normalde ben daha sonra şunu değiştirdiğim için bunu görüyorum.
+
+1000
+02:41:25,008 --> 02:41:27,367
+Değiştirmeseydim zaten ikisi de aynı olarak kalacak.
+
+1001
+02:41:28,168 --> 02:41:29,427
+Aradaki farkı anladık mı?
+
+1002
+02:41:32,148 --> 02:41:33,127
+Peki arkadaşlar.
+
+1003
+02:41:33,127 --> 02:41:49,568
+Demek ki bir structure'ın memberlarına printf ile veri girişi bu şekilde. Structure'ın tek bir değişkeninin aktarımı bu şekilde. Başka structure'larla neler yapabiliriz? Şimdi geliyoruz oraya.
+
+1004
+02:41:52,047 --> 02:41:56,787
+Kodu şişirmemek adına şöyle bir şey yapacağım. Yine student isminde bir structure'ım var.
+
+1005
+02:42:02,260 --> 02:42:03,279
+Şimdi student
+
+1006
+02:42:03,279 --> 02:42:05,699
+üzerinden
+
+1007
+02:42:05,699 --> 02:42:07,499
+s1 değişkeni
+
+1008
+02:42:07,499 --> 02:42:08,619
+tanımladık. Bu okey.
+
+1009
+02:42:09,339 --> 02:42:10,959
+Student üzerinden
+
+1010
+02:42:10,959 --> 02:42:13,359
+pointer s1 de
+
+1011
+02:42:13,359 --> 02:42:13,919
+tanımlayabilir.
+
+1012
+02:42:14,519 --> 02:42:16,699
+S veya p s1 diyebiliriz.
+
+1013
+02:42:18,039 --> 02:42:19,579
+Bunu ne için yapıyor olabiliriz?
+
+1014
+02:42:20,860 --> 02:42:21,699
+p s1
+
+1015
+02:42:21,699 --> 02:42:23,199
+eşittir ampersan
+
+1016
+02:42:23,199 --> 02:42:25,799
+s1 olsun.
+
+1017
+02:42:26,079 --> 02:42:27,100
+Nasıl ki bir integer
+
+1018
+02:42:27,100 --> 02:42:29,760
+değişkenin adresini integer pointerda
+
+1019
+02:42:29,760 --> 02:42:30,399
+tutuyorsak
+
+1020
+02:42:30,399 --> 02:42:33,019
+Bunun adresini de
+
+1021
+02:42:33,019 --> 02:42:35,239
+aynı türden pointer türünde tutabiliriz.
+
+1022
+02:42:36,219 --> 02:42:37,639
+İstersek şunu da yapabiliriz.
+
+1023
+02:42:37,980 --> 02:42:40,480
+Double pointer ES2 diyelim.
+
+1024
+02:42:42,339 --> 02:42:43,699
+Bu da ES2
+
+1025
+02:42:43,699 --> 02:42:45,179
+Ampersand
+
+1026
+02:42:45,179 --> 02:42:47,620
+ES'dir.
+
+1027
+02:42:49,099 --> 02:42:49,699
+Shift pointer,
+
+1028
+02:42:49,859 --> 02:42:51,639
+Tech pointer, 5 pointer artık nasıl
+
+1029
+02:42:51,639 --> 02:42:53,559
+yapabiliyorsunuz? İstediğiniz kadar
+
+1030
+02:42:53,559 --> 02:42:54,359
+yapabiliyorsunuz.
+
+1031
+02:42:55,800 --> 02:42:57,660
+Peki biz malloc
+
+1032
+02:42:57,660 --> 02:42:59,819
+kullandığımızda normal bir dizi için
+
+1033
+02:42:59,819 --> 02:43:01,979
+ne ihtiyacımız vardı?
+
+1034
+02:43:03,079 --> 02:43:04,319
+Birinci dereceden pointer'a
+
+1035
+02:43:04,319 --> 02:43:06,440
+ihtiyacımız vardı. Aynı şekilde bunu
+
+1036
+02:43:06,440 --> 02:43:08,459
+TS1'i malloc içinde
+
+1037
+02:43:08,459 --> 02:43:09,319
+kullanabiliriz.
+
+1038
+02:43:10,139 --> 02:43:11,519
+TS1 eşittir.
+
+1039
+02:43:12,359 --> 02:43:14,139
+Malloc işte mesela
+
+1040
+02:43:14,139 --> 02:43:15,120
+10 elemanlı
+
+1041
+02:43:15,120 --> 02:43:17,799
+side-doc student kadar
+
+1042
+02:43:17,799 --> 02:43:19,760
+yer aç.
+
+1043
+02:43:20,159 --> 02:43:21,519
+TS1'de bunu saklar.
+
+1044
+02:43:22,299 --> 02:43:23,579
+Burada ne yapıyoruz?
+
+1045
+02:43:23,760 --> 02:43:26,079
+Student türünde pointer'a çeviriyoruz.
+
+1046
+02:43:27,659 --> 02:43:28,939
+Malloc kullanabiliriz.
+
+1047
+02:43:28,940 --> 02:43:29,800
+Sonra free
+
+1048
+02:43:29,800 --> 02:43:32,800
+esedir.
+
+1049
+02:43:36,079 --> 02:43:36,459
+Şu an
+
+1050
+02:43:36,459 --> 02:43:37,980
+10 elemanlı veya
+
+1051
+02:43:37,980 --> 02:43:40,539
+isterseniz buraya n gibi bir değer
+
+1052
+02:43:40,539 --> 02:43:41,700
+yazabilirsiniz.
+
+1053
+02:43:43,300 --> 02:43:44,739
+Kullanjıdan n alıp
+
+1054
+02:43:44,739 --> 02:43:46,940
+n elemanlı bir
+
+1055
+02:43:46,940 --> 02:43:49,260
+structure oluşturabiliyorsunuz.
+
+1056
+02:43:50,219 --> 02:43:51,060
+Peki n elemanlı
+
+1057
+02:43:51,060 --> 02:43:52,920
+structure'ın varsa ben bu structure'a
+
+1058
+02:43:52,920 --> 02:43:53,819
+nasıl erişeceğim?
+
+1059
+02:43:56,499 --> 02:43:57,700
+Çok basit.
+
+1060
+02:43:57,699 --> 02:43:59,579
+normal dizilerde oluyor.
+
+1061
+02:43:59,879 --> 02:44:01,759
+I eşittir, sıfırdan, I düşüktür,
+
+1062
+02:44:01,819 --> 02:44:03,219
+N'e kadar, I artı artı.
+
+1063
+02:44:05,779 --> 02:44:06,499
+Mesela
+
+1064
+02:44:06,499 --> 02:44:07,339
+Scanner ile
+
+1065
+02:44:07,339 --> 02:44:10,359
+Structure'ın elemanlarının
+
+1066
+02:44:10,359 --> 02:44:11,599
+içerisine değer okuyorum.
+
+1067
+02:44:13,139 --> 02:44:13,899
+Scanner
+
+1068
+02:44:13,899 --> 02:44:16,399
+Şimdi bir tane %D
+
+1069
+02:44:16,399 --> 02:44:17,639
+alacağız ID için.
+
+1070
+02:44:19,019 --> 02:44:20,399
+Bir %S alacağız
+
+1071
+02:44:20,399 --> 02:44:22,439
+isim için. %D
+
+1072
+02:44:22,439 --> 02:44:23,959
+alacağız yaş için.
+
+1073
+02:44:24,159 --> 02:44:26,299
+%C alacağız. Tek seferde hepsini alalım.
+
+1074
+02:44:26,299 --> 02:44:27,760
+Diyorum ki
+
+1075
+02:44:27,760 --> 02:44:29,319
+PS1'in
+
+1076
+02:44:29,319 --> 02:44:31,099
+i'incisinin
+
+1077
+02:44:31,099 --> 02:44:34,939
+id alanına
+
+1078
+02:44:34,939 --> 02:44:35,719
+git değer oku.
+
+1079
+02:44:36,919 --> 02:44:37,859
+Bakın ne kadar karışık.
+
+1080
+02:44:37,919 --> 02:44:38,859
+PS1'in
+
+1081
+02:44:38,859 --> 02:44:40,739
+i'incisinin
+
+1082
+02:44:40,739 --> 02:44:43,219
+tabi
+
+1083
+02:44:43,219 --> 02:44:44,899
+yanlışımız var şu an.
+
+1084
+02:44:45,179 --> 02:44:46,899
+ID alanına name alanına
+
+1085
+02:44:46,899 --> 02:44:47,339
+değer oku.
+
+1086
+02:44:48,239 --> 02:44:50,379
+Bunlar PS1'in i'incisi
+
+1087
+02:44:50,379 --> 02:44:52,459
+ilgili dizinin
+
+1088
+02:44:52,459 --> 02:44:54,679
+kaçıncı elemanı olduğunu söylüyorum ama
+
+1089
+02:44:54,679 --> 02:44:56,859
+id alanının adresine gitmemiz için
+
+1090
+02:44:56,859 --> 02:44:58,719
+burada amperesan az önce olduğu gibi
+
+1091
+02:44:58,719 --> 02:44:59,499
+kullanmamız gerekiyor.
+
+1092
+02:45:00,340 --> 02:45:01,999
+name'de yine kullanmanı da gerek yok.
+
+1093
+02:45:02,999 --> 02:45:04,620
+Bu kendisi zaten bir adres tutuyor.
+
+1094
+02:45:06,539 --> 02:45:10,860
+ps1'in
+
+1095
+02:45:10,860 --> 02:45:12,019
+i imcisinin
+
+1096
+02:45:12,019 --> 02:45:14,420
+gen şey
+
+1097
+02:45:14,420 --> 02:45:16,120
+h alanına
+
+1098
+02:45:16,120 --> 02:45:18,480
+burada da amperesan kullanacağız.
+
+1099
+02:45:20,159 --> 02:45:20,700
+Aynı şekilde
+
+1100
+02:45:20,700 --> 02:45:22,179
+ps1'in
+
+1101
+02:45:22,179 --> 02:45:24,519
+i imcisinin
+
+1102
+02:45:24,679 --> 02:45:27,719
+gender alanına
+
+1103
+02:45:27,719 --> 02:45:29,700
+burada da amperesat kullanacağız.
+
+1104
+02:45:31,700 --> 02:45:34,439
+Bu şekilde değer aktarımı sağlayabiliyorsunuz.
+
+1105
+02:45:38,227 --> 02:45:50,227
+Burada anlaşılmayan bir şey, hocam, hiç ilginçti. Normalde ps1'in i'inci adresi, integer'in i'inci adresi neydi? Şöyle bir şeydi.
+
+1106
+02:45:50,227 --> 02:46:02,227
+Burada da bir üst dereceden bir tane değişkenimiz var. O değişkenin ilgili üye değişkenine gidiyoruz. Onun adresini söylüyoruz. Bu şekilde değer okuyabiliyoruz.
+
+1107
+02:46:02,227 --> 02:46:07,227
+Yazdırırken de ampersantları kullanmadan yazdırabilirsiniz.
+
+1108
+02:46:07,227 --> 02:46:33,727
+O da var, onu da geleceğim. Bu pointer kullanmamızın bir sebebi normal bir değişkenin adresini tutmak için veya malloc gibi şeylerde kullanabilmemiz. Bunun dışında bizim şunu yapabilmemiz mümkün. Student üzerinde işte mesela en elemanlı bir dili tanımacağız. Student, R, R diyelim.
+
+1109
+02:46:33,727 --> 02:46:36,448
+işte max kadar
+
+1110
+02:46:36,448 --> 02:46:40,887
+gittiniz bir tane de define max tanımladınız
+
+1111
+02:46:45,332 --> 02:46:52,832
+10 dediniz. Ne yapıyorsunuz? 10 elemanlı bir dizi tanımlamış. Integer'larda olduğu gibi tanımlamış olabilirsiniz.
+
+1112
+02:46:52,832 --> 02:47:02,832
+Burada student array yazacak olsaydık, şu ps1 yerine aynı şeyler geçerli olurdu. Yani std array diyelim hatta buraya.
+
+1113
+02:47:02,832 --> 02:47:14,832
+Şu satırı kopyalıyorum. 1'den n'e kadar değil, 1'den max'a kadar diyorum. std array.
+
+1114
+02:47:14,832 --> 02:47:29,271
+şunların i.sinin ailesi, fsc'nin ailesi her şey aynı. Normal değişkenlerden hiçbir farkı yok. Sadece bir üst tanımlama yapmış oluyoruz arkadaşlar.
+
+1115
+02:47:31,971 --> 02:47:44,092
+Bu da böyle. Burada bir sorumuz var mı? Peki ben bu diziyi listeye aktarsam. Şimdi burada iki tane şey yapalım.
+
+1116
+02:47:44,091 --> 02:47:59,771
+void, print list diyeyim. Bir student türünde listenin yazılması. Diyorum ki bu şöyle bir dizi de olsa, böyle bir dizi de olsa bu zaten kendi bir pointer'dır.
+
+1117
+02:48:00,591 --> 02:48:12,451
+Döp ki buraya bir tane liste gelecek. Ve bu listenin eleman sayısı gelecek, N değeri gelecek. Bu şekilde normal bir integer listesinden hiçbir farkı olmadan pointer ile bunu alabilirsiniz.
+
+1118
+02:48:12,451 --> 02:48:14,771
+şu şekilde yazmıyorum.
+
+1119
+02:48:16,311 --> 02:48:18,051
+Bu şekilde yazarsan şunu kabul eder.
+
+1120
+02:48:19,391 --> 02:48:20,271
+Şunu kabul etmez.
+
+1121
+02:48:20,271 --> 02:48:22,291
+Bir tanesi mallocla bir tanesi yer alır.
+
+1122
+02:48:22,371 --> 02:48:25,371
+Ama şu şekilde yazarsan ikisini de kabul edecek bir şey.
+
+1123
+02:48:26,391 --> 02:48:27,731
+Integer i diyelim.
+
+1124
+02:48:29,891 --> 02:48:34,671
+Forth i eşittir sıfırdan i küçüktene kadar git.
+
+1125
+02:48:36,471 --> 02:48:37,991
+i plus plus.
+
+1126
+02:48:37,991 --> 02:48:40,491
+Şimdi normalde
+
+1127
+02:48:40,491 --> 02:48:43,051
+şu kodu alıp
+
+1128
+02:48:48,819 --> 02:48:50,819
+Böyle bir şey yapabiliriz.
+
+1129
+02:48:51,619 --> 02:48:53,220
+Bunu da anlatayım, bırakacağım.
+
+1130
+02:48:54,220 --> 02:48:55,219
+Prenter.
+
+1131
+02:48:56,019 --> 02:48:57,219
+Bu arada şu
+
+1132
+02:48:57,819 --> 02:48:58,819
+Girde dur.
+
+1133
+02:49:02,260 --> 02:49:07,559
+kendi ismini de imza atıyorsunuz arkadaşlar. Başkasının adına lütfen imza atmayın. Sıkıntı yaşamayalım.
+
+1134
+02:49:07,559 --> 02:49:10,560
+%d
+
+1135
+02:49:10,560 --> 02:49:13,959
+%s
+
+1136
+02:49:13,959 --> 02:49:16,559
+%d
+
+1137
+02:49:16,559 --> 02:49:18,559
+%c
+
+1138
+02:49:18,559 --> 02:49:20,360
+%d
+
+1139
+02:49:26,260 --> 02:49:28,659
+birgül. Şu da
+
+1140
+02:49:28,659 --> 02:49:39,939
+listin iyinci elemanının idsi, listin iyinci elemanının name'i, listin iyinci elemanının age'i ama burada ampersand yok. Listin iyinci elemanının gender'ı.
+
+1141
+02:49:41,220 --> 02:49:42,940
+Böyle ekrana bastırırsınız.
+
+1142
+02:49:44,360 --> 02:49:45,839
+Yalnız bundan daha güzeli var.
+
+1143
+02:49:46,959 --> 02:49:48,239
+Diyorum ki ben bu
+
+1144
+02:49:48,239 --> 02:49:51,719
+satırdaki elemanı zaten şurada print info diye bir tane
+
+1145
+02:49:51,719 --> 02:49:52,979
+fonksiyonum var.
+
+1146
+02:49:54,479 --> 02:49:55,699
+Print info için.
+
+1147
+02:49:56,260 --> 02:50:14,039
+daha önce çiftçisini görelim. Ama burada şimdi eleman girmemiz lazım. Daha sonra onu devam ederiz. Bunun yerine diyorum ki print info fonksiyonunu çarpeyim. Bu print info fonksiyonu da listin iyisini gönder.
+
+1148
+02:50:17,268 --> 02:50:28,068
+Şimdi bir fonksiyona bir dizinin iyi ince elemanını göndermek demek, yani şöyle void f fonksiyonuna integer x gibi bir değişken aldığınız düşünün.
+
+1149
+02:50:29,027 --> 02:50:33,148
+f'i de çağırırken dizinin beşinci elemanını gönderiyorsun. Bu nedir?
+
+1150
+02:50:33,788 --> 02:50:37,747
+Dizinin beşinci elemanını bu fonksiyonun içerisinde birebir dip pop'u yapmak demektir.
+
+1151
+02:50:39,167 --> 02:50:44,028
+Shallow pop'u değildir, dikkat edin. Oradaki değer buradaki x'e birebir pop'u alınacak demektir.
+
+1152
+02:50:44,028 --> 02:51:09,208
+Burada da ne oluyor? Listin i ince elemanı şuradaki şey kopyalanıyor. Buradakinin içerisinde kopyalanmıştır sonra sen geliyorsun bunu yazıyorsun. Dolayısıyla ne yapayım? Şuna gerek yok. Çünkü listenin içerisindeki her bir elemanı yazdırmak zaten aslında şu. Sen sadece şu fonksiyonla ilgili elemanın indisini gönderiyorsun ve buraya birebir kopyalama yapılıyor.
+
+1153
+02:51:09,207 --> 02:51:11,547
+Hocam şunu diyebilirsin.
+
+1154
+02:51:11,627 --> 02:51:16,087
+Ya hocam bu kadar çok sayıda fonksiyon çağrısı yapmak performansı yavaşlatmaz mı?
+
+1155
+02:51:17,087 --> 02:51:19,847
+Bu da bir yazılım mühendisliği trade-off aslında.
+
+1156
+02:51:20,147 --> 02:51:28,628
+Siz yazılım mühendisliği kriterlerini yerine getirirseniz bir kod yazarken bu tarz küçük algoritmik şeyler çok dikkate alınmıyor arkadaşlar.
+
+1157
+02:51:29,367 --> 02:51:32,208
+Asıl kriterler yerine gelirse o çok çok daha performanslı bir şey.
+
+1158
+02:51:32,208 --> 02:51:36,268
+Hedeflenen, istenen şey şöyle bir şey yapmak değildir.
+
+1159
+02:51:37,287 --> 02:51:38,227
+Böyle bir şey yapmaktır.
+
+1160
+02:51:39,207 --> 02:52:06,027
+Bunu da gösterin. Hatta şurada print info kısmı silelim. Bunun detaylarına gelecek derste artık tatilden ve sınavdan sonraki derste devam edeceğiz. Sadece bugün structure nasıl tanımlanır? Structure üzerinde eşittir operatörünün rolü ne? Bir structure'a değer nasıl okunur? Değerler nasıl ekrana yazdırılır? Structure'ın tek bir üyesi fonksiyonu nasıl test ediliyor?
+
+1161
+02:52:06,027 --> 02:52:29,867
+veya StructureDigity fonksiyonu nasıl test ediliyor? StructureDigity'nin sabit uzunluklu veya dinamik uzunluklu tanımları nedir? Şöyle bunları görmüş olduk. Daha devam edeceğiz. Belki diğer gruplara göre biraz da ileride olabiliriz. Bu temel şeyleri yapabilmek önemli arkadaşlar. Şimdi şurada ne varmış?
+
+1162
+02:52:29,867 --> 02:52:35,547
+Bu freeyi de göstermek için sddli bir eklememiz lazım
+
+1163
+02:52:35,547 --> 02:52:46,427
+Başka bir hatamız var mıymış? Print info diye bir şeyimiz yokmuş
+
+1164
+02:52:53,236 --> 02:53:01,196
+Bir de warning olabilir ama şey görmedim. Mesela print info var, print list yok. Onu görmedi nedense. Onu da bir bekleyelim.
+
+1165
+02:53:06,611 --> 02:53:11,331
+Şu an için başka bir şeye gerek yok arkadaşlar. Bu temel şeyleri görelim.
+
+1166
+02:53:13,411 --> 02:53:17,611
+Bir structure'ın içerisindeki üye değişken,
+
+1167
+02:53:19,011 --> 02:53:21,451
+kendi türünden bir şey olabilir.
+
+1168
+02:53:22,291 --> 02:53:24,292
+Yani ben buraya bir üye olarak
+
+1169
+02:53:25,571 --> 02:53:26,851
+student
+
+1170
+02:53:30,995 --> 02:53:43,115
+S yazabilir miyim? Böyle bir şey yaptığımı düşündüğümde mantıklı bir şey görüyor musunuz? Şu doğru bir şey mi?
+
+1171
+02:53:44,115 --> 02:54:13,595
+bir veri tipi var. O veri tipinin içinde kendinden bir tane daha var. Efendim? Tanımlanması bitmeden, yani daha tanım, aslında tanımlanması bitmeden değil de, hani bu iç içe açıyorsun da kendinden bir daha çıkıyor ya, ne diyorlar ona? Matruşka. Aynı onun gibi bir şey. Sonsuza kadar giden bir tanımlamadır. Dolayısıyla böyle bir şey zaten mümkün değil.
+
+1172
+02:54:14,115 --> 02:54:42,656
+incomplete olduğu zaten bir gerekçe. Yani daha tanımlama bitmemiş. Ama şunu yapabiliyoruz. Başka bir struktur zaten yapılabilir. Şunu yapabiliyoruz. Şimdi structure student üzerinden oluşturulan değişken bir şeydir. Structure student pointer başka bir şeydir. Bu şu şekilde sağlanabilir.
+
+1173
+02:54:44,115 --> 02:54:49,115
+Bu ne işimize yarayacak? Onun ne işimize yaradığında da linked listeler konusu var onu göreceğiz.
+
+1174
+02:54:49,115 --> 02:54:50,115
+Evet evet.
+
+1175
+02:54:51,115 --> 02:54:52,115
+Aynen.
+
+1176
+02:54:52,115 --> 02:55:00,115
+Kendi adresi değil, kendi türünden bir adresi yani structure stu adresi kendi içinde tutacak.
+
+1177
+02:55:00,115 --> 02:55:05,115
+Integer başka bir şeydi, integer pointer başka bir şeydi, farklı türlerdi.
+
+1178
+02:55:05,115 --> 02:55:08,115
+Burada da kendi türünden bir pointer tutuyor.
+
+1179
+02:55:08,115 --> 02:55:10,115
+Bu pointer ne işe yarayacak?
+
+1180
+02:55:10,115 --> 02:55:40,016
+yarayacak. Link listleri falan görünce normal dizilerin çalışmadığı, linked listelerin daha performanslı çalıştığı yapıları görünce onu kullanacağız. Şimdilik bunu yorum satırı yapayım. Sadece böyle bir hani spoiler vermiş olalım. Gelecek dersle devam ederiz sonraki derslerde. Şimdi gelecek hafta arkadaşlar zannediyorum henüz bir tatil olacağına dair resmi bir duyuru yapılmadı bayram sonrası. Ama biz diğer hocalarla da zaten konuştuk ki ben size bunu çok önce
+
+1181
+02:55:40,015 --> 02:56:09,895
+Sıra'dan söylemiştim. Bilet almak isteyenler şimdiden biletini alsınlar rahat rahat gidip gelsinler diye. Gelecek hafta dersimizi tamamen online yapacağız. Ben de burada yokum, siz de burada yoksunuz. Derse katılım online yıldız üzerinden olacak. Ben yine yapay zeka öğrencileri için linki paylaştırırım. Olay bu şekilde. Gelecek hafta diğer gruplar eğer bizden geri kaldıysa sadece sınava yönelik işte biraz geçmiş konuları da içerecek şekilde
+
+1182
+02:56:09,895 --> 02:56:21,235
+soru çözmeyi planlıyorum. Eğer strcura gelmediler, büyük ihtimalle gelmemişlerdir onlar. Böyle 2-3 tane soru çözüp 2 saat veya 2,5 saatlik bir ders yaparız.
+
+1183
+02:56:24,655 --> 02:56:36,455
+İşte şeyler de belli değil. Diğer sınıflar nereye kadar geldiler? 3 grup olduğu için en geride olan grup kimse ona göre bir sınav olur. Muhtemelen biz şu an konu olarak diğerlerine göre en ilerideyiz.
+
+1184
+02:56:36,455 --> 02:57:01,696
+Bunu söyleyebiliriz. Bu bir. Diğeri sınavla alakalı hemen hemen bütün detayları şu an için ben de bilmiyorum. 2-2,5 yıldır belki bu dersi bir ara verdik. Klasik olur. İçeriği dediğimiz gibi en geride olan sınıfa göre olur ama bununla alakalı teferratlı bilgiyle gelecek hafta ders esnasına veririm diye düşünüyorum.
+
+1185
+02:57:01,696 --> 02:57:26,436
+Sizlerin bir sorusu var mı? Önce online tarafa bir soru verelim. Dersin kodları da yükleniyor arkadaşlar. Geçen haftayı bir tane örnek yaptığımız için yüklenmeyeceğiz. Onu da yükleriz. Hepinize şimdiden iyi tatiller, iyi bayramlar. Sınavlarımızda da önce görüşeceğiz sizlerle. Hoşçakalın.
+
+1186
+02:57:26,435 --> 02:57:38,155
+Dosyaların yüklenme yeri daha önce söyledik OBSD ders ayrıntılarında. Nereden değil nereye yüklediğini sormamız lazım. Onu da ben zaten size açtım.
