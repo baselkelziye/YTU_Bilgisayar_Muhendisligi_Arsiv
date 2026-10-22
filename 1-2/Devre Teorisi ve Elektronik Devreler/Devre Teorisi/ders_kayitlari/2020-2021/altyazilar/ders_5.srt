@@ -1,0 +1,4595 @@
+1
+00:00:49,460 --> 00:01:04,460
+Arkadaşlar, merhabalar. Geçen hafta kaldığımız noktadan devam edeceğiz. Geçen hafta hatırlayacak olursanız devre teorisi teoremlerini inceliyorduk. Bunlardan ilki linearite ve süperpozisyon kavramıydı.
+
+2
+00:01:05,259 --> 00:01:14,800
+Linearlik kavramı aslında tanım olarak ne olduğunu vermiştik. Daha sonra bunun pratikteki karşılığının şu olduğunu söylemiştik.
+
+3
+00:01:14,800 --> 00:01:23,300
+Birden fazla kaynağın yer aldığı bir devrede kaynakların toplam etkisini bir elemana karşı toplam etkisini
+
+4
+00:01:23,300 --> 00:01:30,040
+her bir elemanın sadece bir seferinde sadece bir kaynağın olduğu durum için
+
+5
+00:01:30,040 --> 00:01:37,259
+diğer kaynakların sıfırlandığı durum için tek tek hesaplayıp bunların tekil etkilerini yönlü olarak topladığımızda
+
+6
+00:01:37,259 --> 00:01:44,220
+bu sonucun aslında bütün kaynaklar devredeyken ki toplu etkiye eşdeğer olduğunu söylemiştik.
+
+7
+00:01:44,800 --> 00:01:54,320
+Toplamsallık ve süperpozisyon bunu gerektiriyordu. Burada tabii kaynakları sıfırlamanın anlamı ne pratikte onu da konuşmuştuk hatırlayacak olursanız.
+
+8
+00:01:55,120 --> 00:02:05,040
+Gerilim kaynakları için kaynağı sıfırlamak, kaynağın yerine kısa devre eleman koymak demekti. Akım kaynakları için ise açık devre eleman koymak şeklinde bir karşılık buluyordu.
+
+9
+00:02:05,040 --> 00:02:13,040
+Bu süperpozisyon yaklaşımının hem DC hem AC devrelerde karşılığının olduğunu söylemiştik. Geçerli olduğunu söylemiştik.
+
+10
+00:02:14,799 --> 00:02:29,899
+Sonrasında da örnekleri çözerek dersimizi sonlandırmıştık. Bu haftada kaynak dönüşümü Norton, Thevenin ve Maksimum Güç üzerine konularımızı işliyor olacağız.
+
+11
+00:02:30,999 --> 00:02:38,639
+Sonrasında tabi bugün için kısa sınavı tanımladık. Görmüşsünüzdür herhalde online Yıldız Edytr'de hesaplarınızla tanımlandı sınav.
+
+12
+00:02:38,639 --> 00:02:40,960
+Sınavı gördünüz diye tahmin ediyorum.
+
+13
+00:02:41,659 --> 00:02:42,460
+Evet hocam gördüm.
+
+14
+00:02:43,059 --> 00:02:43,799
+Tamamdır.
+
+15
+00:02:44,799 --> 00:02:52,079
+Sınavımız karma bir sınav olacak. Çoktan seçmeli ve klasik soruların olduğu bir sınav olacak.
+
+16
+00:02:54,399 --> 00:02:59,659
+Geçen hafta söylemiştik hatırlayacak olursanız. Hayır ilk üç hafta değil.
+
+17
+00:03:02,559 --> 00:03:04,699
+Şöyle paylaşımı tekrar açıyorum.
+
+18
+00:03:09,491 --> 00:03:33,791
+Evet, ilk 3 haftaymış. Tamam, okey. İlk 3 haftanın konuları. Dolayısıyla bu teoremler kısmı yok. Zaten onlar sarkmıştı, bir hafta sarkmıştı. Şu anda 8 Nisan haftasındayız ama hala kaynak dönüşümün Norton, Thevenin Max Power taraflarında devam ediyoruz. Bir hafta kaymış durumda. Dolayısıyla şu konular üzerinden bir kısa sınavımız olacak.
+
+19
+00:03:33,791 --> 00:03:48,532
+Dediğim gibi çoktan seçmeli ve klasik kısımları var. Klasik kısımlar için dosya yüklemeniz gerekiyor. Makul boyutlarda dosya boyutlarını sınav süresi içerisinde yüklemeye dikkat edin arkadaşlar.
+
+20
+00:03:49,151 --> 00:04:00,111
+Ayrıyeten bir şey tanımlı değil. Dosya yükleme süresi tanımlı değil. Yine sınav süresi içerisinde çözümlerinizi yapıp bu yüklemelerinizi yapmanızı bekliyoruz.
+
+21
+00:04:04,211 --> 00:04:07,571
+Şimdi dersimize kaldığımız yerden devam edelim.
+
+22
+00:04:08,891 --> 00:04:13,831
+Kaynak dönüşümleri dediğimiz şey aslında Norton TV'nin teoreminin altyapısını oluşturuyor.
+
+23
+00:04:13,931 --> 00:04:16,191
+Ona kaynaklık eden bir teorem.
+
+24
+00:04:18,391 --> 00:04:22,652
+Bunu daha önce benzer bir takım yaklaşımlarda görmüştük.
+
+25
+00:04:22,791 --> 00:04:28,331
+Örneğin üçgen ve delta bağlantıları vardı hatırlayacak olursanız.
+
+26
+00:04:28,331 --> 00:04:35,431
+orada direnç bağlantılarını üçgen veya yıldız şeklinde kullanabiliyorduk.
+
+27
+00:04:36,451 --> 00:04:41,331
+Dolayısıyla bu devre topolojisine göre daha basit çözümlere bizi götürüyordu.
+
+28
+00:04:42,191 --> 00:04:46,531
+Benzer şekilde bir başka mantığı da eşdeğer direnç hesabında yapmıştık
+
+29
+00:04:46,531 --> 00:04:48,631
+veya eşdeğer iletkenlik hesabında yapmıştık.
+
+30
+00:04:49,432 --> 00:04:54,731
+Karmaşık bir devre yapısı yerine eşdeğer bir direnç elemanını, tekil bir elemanı koyabiliyorduk.
+
+31
+00:04:55,731 --> 00:04:57,271
+Dolayısıyla bu tür dönüşümleri görmüştük.
+
+32
+00:04:58,271 --> 00:05:00,851
+Benzer bir mantık da kaynak dönüşümü için de geçerli.
+
+33
+00:05:01,931 --> 00:05:04,431
+Burada bir eşdeğerlik bizim için önemli.
+
+34
+00:05:04,791 --> 00:05:09,751
+Mesela bunu paralel ve seri eşdeğer dirençlerde nasıl hesaplamıştık?
+
+35
+00:05:10,551 --> 00:05:14,691
+İki tane uçtan baktığımız, herhangi iki uçtan baktığımız bir terminal için
+
+36
+00:05:14,691 --> 00:05:19,551
+bu terminalden gördüğümüz eşdeğer direnci hesaplıyorduk.
+
+37
+00:05:19,551 --> 00:05:23,932
+Bu terminalden baktığımız zaman dememizin sebebi ne?
+
+38
+00:05:24,651 --> 00:05:26,211
+Bu şu şekilde düşüneceğiz bunu.
+
+39
+00:05:26,211 --> 00:05:42,171
+Bu iki terminali bir kaynağa bağladığımız zaman bu iki terminal arasında oluşan gerilim değeriyle bu terminalden bir kolundan akacak akım miktarı tekil direnci koyduğumuz durumda orijinal devredeki durumla eşdeğer olmalı.
+
+40
+00:05:42,232 --> 00:05:43,211
+Yani bir eşdeğerlik olmalı.
+
+41
+00:05:44,171 --> 00:05:46,211
+Aynı şey kaynak dönüşümü için de geçerli.
+
+42
+00:05:47,012 --> 00:05:49,231
+Dolayısıyla biz kaynak dönüşümü yaptığımız zaman
+
+43
+00:05:49,231 --> 00:05:54,612
+dönüşümde kullandığımız elemanlar haricindeki elemanlar için
+
+44
+00:05:54,612 --> 00:05:58,271
+gerilim akım karakteristiklerinin aynı olması gerekiyor
+
+45
+00:05:58,271 --> 00:06:00,311
+veya akım gerilim değerlerinin aynı olması gerekiyor.
+
+46
+00:06:01,031 --> 00:06:04,831
+Eğer ek yardımcı diğer başka elemanlar yoksa bunun anlamı da şu olacak.
+
+47
+00:06:06,211 --> 00:06:08,691
+Kaynak dönüşümü yaptıktan sonra
+
+48
+00:06:08,691 --> 00:06:11,731
+kaynak dönüşümü yaptığımız iki uç arasında
+
+49
+00:06:11,731 --> 00:06:13,991
+yine bir terminalden baktığımız durum için
+
+50
+00:06:13,991 --> 00:06:26,391
+Bu terminalin uçları arasındaki gerilim farkıyla bu uçları bir yük direncine bağladığımız zaman bu koldan akacak akım değerinin eşdeğer olması gerekliliğini ortaya koymuş oluyor.
+
+51
+00:06:26,452 --> 00:06:32,451
+Yani orijinaliyle dönüştürdüğümüz kaynak şeklinin eşdeğer akım ve gerilim değerleri üretmesi gerekiyor.
+
+52
+00:06:33,432 --> 00:06:35,312
+Bunu şu şekilde tanımlayabiliriz.
+
+53
+00:06:35,572 --> 00:06:38,671
+Örneğin bizim bakmış olduğumuz terminal AB terminali olsun.
+
+54
+00:06:38,671 --> 00:06:42,592
+Bu terminalden baktığımız vakit şöyle bir şeye karşılık gelir bu.
+
+55
+00:06:42,591 --> 00:06:45,211
+gösterim olarak da şöyle gösterilir.
+
+56
+00:06:47,371 --> 00:06:49,671
+Bu terminalden baktığımız zaman
+
+57
+00:06:49,671 --> 00:06:51,851
+bu AB uçları arasında
+
+58
+00:06:51,851 --> 00:06:53,591
+göreceğimiz gerilim eğer ki
+
+59
+00:06:53,591 --> 00:06:55,471
+iddiamız şuysa
+
+60
+00:06:55,471 --> 00:06:57,791
+bir gerilim kaynağı ve buna
+
+61
+00:06:57,791 --> 00:06:59,211
+seri dirence karşılık
+
+62
+00:06:59,211 --> 00:07:01,771
+bir akım kaynağı ve buna paralel
+
+63
+00:07:01,771 --> 00:07:03,991
+bir direnç eşdeğer olarak oluşturulabilir
+
+64
+00:07:03,991 --> 00:07:05,971
+ve bu ikisi arasında
+
+65
+00:07:05,971 --> 00:07:07,891
+belirli bir formülasyona bağlı
+
+66
+00:07:07,891 --> 00:07:09,571
+olarak kaynak dönüşümü
+
+67
+00:07:09,571 --> 00:07:11,731
+yapılabilir. Böyle bir iddiamız varsa
+
+68
+00:07:11,731 --> 00:07:12,471
+bunun anlamı şu.
+
+69
+00:07:14,371 --> 00:07:15,831
+Birinci durum ve ikinci
+
+70
+00:07:15,831 --> 00:07:17,891
+durum için AB terminalleri
+
+71
+00:07:17,891 --> 00:07:19,671
+arasındaki gerilim düşümünün aynı
+
+72
+00:07:19,671 --> 00:07:20,331
+olması lazım.
+
+73
+00:07:21,831 --> 00:07:23,471
+İkinci senaryoda bu AB
+
+74
+00:07:23,471 --> 00:07:25,851
+terminallerine bir yük direnci bağladığımızda
+
+75
+00:07:25,851 --> 00:07:26,331
+RL
+
+76
+00:07:26,331 --> 00:07:29,671
+RL şeklinde yük direnci
+
+77
+00:07:29,671 --> 00:07:31,511
+bağladığımızda bu kollarda
+
+78
+00:07:31,511 --> 00:07:33,151
+akacak akımın da aynı olması lazım.
+
+79
+00:07:33,491 --> 00:07:35,951
+I-I diyelim. Eğer bunlar eşitse
+
+80
+00:07:35,951 --> 00:07:37,611
+gerilimler de eşitse
+
+81
+00:07:37,611 --> 00:07:39,931
+bu dönüşümün eşdeğer
+
+82
+00:07:39,931 --> 00:07:41,011
+olduğunu söyleyebiliriz.
+
+83
+00:07:44,596 --> 00:07:50,435
+Burada iki uç arasında aynı gerilim oluşturmak istediğimize göre, şimdi açık devre durumu için değerlendirelim.
+
+84
+00:07:50,536 --> 00:07:51,195
+Ne olacak bu?
+
+85
+00:07:51,855 --> 00:07:55,035
+Açık devre durumu için direnç üzerinden herhangi bir akım okmıyor.
+
+86
+00:07:55,135 --> 00:07:58,875
+Bizim burada göreceğimiz gerilim değeri aslında Vs gerilimine eşit olacak.
+
+87
+00:07:59,655 --> 00:08:05,735
+Peki bu terminalde baktığımızda burada da Vs'yi görmek isteyeceğimiz için eşit olması gerekiyor diye eşlerlikten dolayı.
+
+88
+00:08:05,735 --> 00:08:13,016
+Bu durumda R direnci üzerinde ve akım kaynağı üzerindeki gerilim düşümünde Vs olması lazım.
+
+89
+00:08:13,016 --> 00:08:16,836
+AB terminalleri açık devre olarak çalışıyor.
+
+90
+00:08:16,915 --> 00:08:19,136
+Dolayısıyla bu akım kaynağından dolaşan akım
+
+91
+00:08:19,136 --> 00:08:21,596
+IS akımı direkt direnç üzerinden geçecektir.
+
+92
+00:08:22,155 --> 00:08:25,316
+O zaman R direncinin gerilim düşümü Vs olabilmesi için
+
+93
+00:08:25,316 --> 00:08:29,295
+Vs'nin IS çarpı R'ye eşit olması lazım.
+
+94
+00:08:29,375 --> 00:08:33,735
+İşte bu da bizim aradığımız dönüşümü sağlayan durum.
+
+95
+00:08:34,475 --> 00:08:35,835
+Burada dikkat edecek olursanız
+
+96
+00:08:35,835 --> 00:08:40,115
+kaynak hem gerilim kaynağında hem akım kaynağında
+
+97
+00:08:40,115 --> 00:08:41,575
+aynı direnç değerlerini kullandık.
+
+98
+00:08:43,015 --> 00:08:58,276
+Dolayısıyla burada geçerli koşulumuz bu şart çerçevesinde gelin kaynağına seri bir direnci eşdeğer olarak akım kaynağına paralel bir direnç olarak yazabileceğimiz anlamına geliyor.
+
+99
+00:08:58,535 --> 00:09:00,235
+Yine burada bir başka inceleme daha yapalım.
+
+100
+00:09:00,235 --> 00:09:04,935
+buraya bir yük direnci bağlayacak olsak
+
+101
+00:09:04,935 --> 00:09:06,235
+örneğin şöyle
+
+102
+00:09:06,235 --> 00:09:10,335
+burada bir RL direnci olmuş olsa
+
+103
+00:09:10,335 --> 00:09:12,536
+bu RL direnci üzerinden geçecek akımı
+
+104
+00:09:12,536 --> 00:09:13,776
+şimdi hesaplamaya çalışalım
+
+105
+00:09:13,776 --> 00:09:18,316
+bu Vs bölü R artı RL olacaktır değil mi?
+
+106
+00:09:20,676 --> 00:09:22,996
+aynı şekilde buraya da bir başka
+
+107
+00:09:22,996 --> 00:09:25,996
+yük direnci bağlayalım
+
+108
+00:09:25,996 --> 00:09:27,975
+bu koldan geçecek akımı bulmaya çalışalım
+
+109
+00:09:27,975 --> 00:09:30,155
+bu durumda
+
+110
+00:09:30,155 --> 00:09:32,276
+ana kol akımı
+
+111
+00:09:32,276 --> 00:09:35,055
+ters orantılı şekilde birbirleri arasında
+
+112
+00:09:35,055 --> 00:09:36,276
+paylaştırılacak. Dolayısıyla
+
+113
+00:09:36,276 --> 00:09:38,395
+ı s dediğimiz akım kaynağımız
+
+114
+00:09:38,395 --> 00:09:41,096
+bu ikisinin
+
+115
+00:09:41,096 --> 00:09:43,375
+eşdeğer direnci
+
+116
+00:09:43,375 --> 00:09:45,235
+çerçevesinde paylaştırılacak
+
+117
+00:09:45,235 --> 00:09:47,335
+veyahut da tersiyle orantılı bir şekilde
+
+118
+00:09:47,335 --> 00:09:51,015
+böyle bir duruma karşılık geleceğiz.
+
+119
+00:09:51,115 --> 00:09:52,816
+Değil mi? I akımımız, buradan
+
+120
+00:09:52,816 --> 00:09:54,155
+geçecek olan akımımız
+
+121
+00:09:54,155 --> 00:09:56,976
+şu koldan geçecek akımımız
+
+122
+00:09:56,975 --> 00:09:58,455
+buna eşit olacak.
+
+123
+00:09:59,455 --> 00:10:00,575
+R kolundan.
+
+124
+00:10:00,635 --> 00:10:02,775
+RL kolundan akan akımımız neye eşit olacak?
+
+125
+00:10:03,475 --> 00:10:04,755
+O da IS çarpı
+
+126
+00:10:04,755 --> 00:10:06,855
+R bölü R artı RL'ye eşit
+
+127
+00:10:06,855 --> 00:10:08,635
+olacak. Burada bizim IS
+
+128
+00:10:08,635 --> 00:10:10,555
+çarpı R dediğimiz değer az önce
+
+129
+00:10:10,555 --> 00:10:12,455
+yapmış olduğumuz hesaplamadan dolayı zaten
+
+130
+00:10:12,455 --> 00:10:14,195
+VS'ye eşit. Dolayısıyla
+
+131
+00:10:14,195 --> 00:10:16,215
+VS bölü R artı RL'lik
+
+132
+00:10:16,215 --> 00:10:18,335
+bir akımın akacağını şu koldan
+
+133
+00:10:18,335 --> 00:10:20,275
+akan akımın da bu olduğunu söylemiş oluyoruz.
+
+134
+00:10:20,315 --> 00:10:21,775
+Dolayısıyla bunlar da birbirine
+
+135
+00:10:21,775 --> 00:10:24,275
+eşit ve tutuyor. Dolayısıyla eş
+
+136
+00:10:24,275 --> 00:10:25,975
+değerliği de sağlamış olduk.
+
+137
+00:10:25,975 --> 00:10:26,735
+Bu komiteli.
+
+138
+00:10:26,915 --> 00:10:27,155
+Buyurun.
+
+139
+00:10:28,155 --> 00:10:35,375
+Şu is çarpı rel bölü rel artı rel dediğimiz kısım re üzerinden geçen akım değil mi?
+
+140
+00:10:35,975 --> 00:10:38,095
+Evet şu ok işaretiyle göstermeye çalıştım.
+
+141
+00:10:38,175 --> 00:10:39,415
+R üzerinden geçen akım.
+
+142
+00:10:39,815 --> 00:10:40,015
+Tamam.
+
+143
+00:10:40,455 --> 00:10:44,255
+Bundan geçen akım karşı tarafla orantılıydı ya o yüzden dolayı bu şekilde yazdım.
+
+144
+00:10:45,615 --> 00:10:49,795
+Buradan geçen akım da şu is çarpı rel karşı tarafın direnciyle orantılı.
+
+145
+00:10:50,795 --> 00:10:53,275
+Dolayısıyla bu eşdeğerliği de göstermiş olduk burada.
+
+146
+00:10:53,275 --> 00:11:11,535
+Bu bize şunu getiriyor. Ben seri bir gerilim kaynağına seri bir direnç ikilisi yerine bir akım kaynağı ve buna paralel bir direnç koyabilirim. Bu bana nasıl bir kolaylaştırma sağlar? Örneğin elimdeki devre şu yapıdaysa.
+
+147
+00:11:19,124 --> 00:11:26,604
+Böyle yapıda bir devrem olsun. Ben biliyorum ki şunun yerine akım kaynağı ve paralel direnç yazabilirim. O zaman devrem şuna dönüşmez mi?
+
+148
+00:11:30,004 --> 00:11:32,704
+Bu şundan gelen direnç.
+
+149
+00:11:33,043 --> 00:11:35,063
+Diğerleri de devrede olan dirençler.
+
+150
+00:11:37,504 --> 00:11:40,523
+Bu şekilde hepsi birbirine paralel bir yapıya dolaşıyor.
+
+151
+00:11:40,663 --> 00:11:41,983
+Dolayısıyla şunu görüyoruz.
+
+152
+00:11:42,483 --> 00:11:46,764
+Bu kaynak dönüşümün temelde bize katkısı devrenin daha basit topolojilere indirgenerek
+
+153
+00:11:46,764 --> 00:11:49,344
+daha pratik bir şekilde çözülmesini sağlamak olacak.
+
+154
+00:11:52,684 --> 00:11:55,063
+Bu örnek için bu şekilde.
+
+155
+00:11:57,163 --> 00:11:59,183
+Şu anda bu örnek için bunu inceledik.
+
+156
+00:12:00,004 --> 00:12:01,483
+Tamamdır.
+
+157
+00:12:02,443 --> 00:12:05,404
+Biraz sonra olayın daha detayını gördüğümüz zaman
+
+158
+00:12:05,404 --> 00:12:11,623
+Norton TV'nin teoremine geçtiğimiz zaman genelleştirilmiş haline orada bakacağız.
+
+159
+00:12:14,704 --> 00:12:18,764
+Şimdi az önce yaptığımız durum bağımsız kaynaklar için geçerliydi.
+
+160
+00:12:19,323 --> 00:12:21,243
+Aynı şey bağımlı kaynaklar için de geçerli.
+
+161
+00:12:21,303 --> 00:12:25,904
+Dolayısıyla ben burada bir bağımlı kaynak, gerilim kaynağı ve buna seri bir direnç gördüğüm vakit
+
+162
+00:12:25,903 --> 00:12:29,903
+Bunun yerine de bir akım kaynağı ve buna paralel bir direnç koyabilirim.
+
+163
+00:12:30,843 --> 00:12:40,483
+Yalnız dikkat edin burada vs değerinin karşılığını vs ve r'ye ikilisine karşılık bir akım kaynağı ve paralel direnç hesap.
+
+164
+00:12:40,483 --> 00:13:01,303
+Dikkat edeceğimiz nokta bu gerilim kaynağı nereye bağlıysa bu düzenlemeden sonra bu topoloji değişiklikinden sonra o referans mesela akım kontrolü bir gerilim kaynağı ise o akım değeri nereye ilişkinse yani şurada Vs'yi eğer ki biz yazarak söylesem daha pratik olacak.
+
+165
+00:13:01,303 --> 00:13:11,343
+Eğer ki biz Vs'yi A çarpı İx şeklinde yazıyorsak bu İx nereye aitse bu topoloji değişiminden sonra İx kaybolmasın.
+
+166
+00:13:11,403 --> 00:13:13,583
+Yani İx'i yanlışlıkla şuralara falan yazmayalım.
+
+167
+00:13:14,143 --> 00:13:15,363
+Ona dikkat etmemiz gerekiyor.
+
+168
+00:13:15,503 --> 00:13:20,223
+Onun dışında bağımsız kaynakla olan durumun eş değeri bir senaryo burada da geçerli.
+
+169
+00:13:23,883 --> 00:13:29,523
+Şimdi bu kaynak dönüşümü pratikteki karşılığını bir başka adımda da şöyle buluyor.
+
+170
+00:13:30,383 --> 00:13:32,083
+Aslında biz nereden yola çıktık?
+
+171
+00:13:32,083 --> 00:13:38,724
+Bir kaynak ve buna seri bir direnç olarak ortaya temelimizi aldık.
+
+172
+00:13:39,283 --> 00:13:44,923
+Bu aslında arkadaşlar ideal olmayan, yani bizim pratikte karşılaşacağımız gerilim kaynaklarındaki durum.
+
+173
+00:13:45,603 --> 00:13:47,683
+Gerilim kaynaklarının bir iç direnci oluyor.
+
+174
+00:13:47,823 --> 00:13:54,283
+Dolayısıyla ideal durumda biz gerilim kaynağından sonsuz akım çekebiliriz.
+
+175
+00:13:54,383 --> 00:13:56,123
+Yani teorik olarak tabii.
+
+176
+00:13:56,123 --> 00:14:08,423
+Ama bu iç direncinden dolayı, kaynağın iç direncinden dolayı mümkün olmuyor ideal durum için. Dolayısıyla bu akımı limitleyici bir iç direnç olarak ortaya çıkmış oluyor.
+
+177
+00:14:08,423 --> 00:14:28,123
+Madem gerçekte pratikte bu iç direnç var, devrelerin çalışma mantığını daha iyi modelleyebilmek adına bu yapılar, bu modeller yani kaynağı seri bir direnç ve akım kaynağına paralel bir direnç olmak üzere yapı bunlar üzerine kurulmuş durumda.
+
+178
+00:14:29,004 --> 00:14:34,783
+Yine şimdi ideal gerilim kaynağı için bu şekilde konuştuk ama ideal akım kaynağı içinde senaryo aynı şekilde.
+
+179
+00:14:34,783 --> 00:14:38,743
+İdeal bir akım kaynağının iç direnci yoktur.
+
+180
+00:14:39,323 --> 00:14:42,864
+Dolayısıyla şu en genel senaryomuz ise bir akım kaynağına ilişkin.
+
+181
+00:14:43,983 --> 00:14:45,903
+Direncin olmaması demek ne demek?
+
+182
+00:14:46,083 --> 00:14:48,504
+Buradaki direncin aslında sonsuz olması demek.
+
+183
+00:14:48,643 --> 00:14:50,743
+Şurada herhangi bir kayıp olmayacak bu kolda.
+
+184
+00:14:52,423 --> 00:14:57,823
+İdeal gerilim kaynağı için en genel modelimiz buysa bir iç direncin olmaması şu anlama gelecek.
+
+185
+00:14:58,123 --> 00:15:00,343
+Direncin sıfır olması anlamına gelecek.
+
+186
+00:15:01,303 --> 00:15:07,903
+Dolayısıyla bu iki durumda bunlar birbirine bu şekilde ideal ve ideal olmayan durumları sağlamış olacağız.
+
+187
+00:15:08,543 --> 00:15:10,143
+Ayrıyeten şu ortaya çıktı.
+
+188
+00:15:13,004 --> 00:15:19,063
+Bunlar arasında ideal kaynaklar arasındaki dönüşümün de kabaca nasıl olabileceğine ilişkin bir yapı ortaya çıkmış oldu.
+
+189
+00:15:26,004 --> 00:15:36,703
+Şimdi örneğin ideal olmayandan kasıt pratikte karşılaşabileceğimiz bir kaynak ve yük direnci. Yük direnci de load, yükten geliyor. RL olarak belirtiliyor arkadaşlar.
+
+190
+00:15:37,983 --> 00:15:50,844
+Bu yük direnci üzerinde oluşacak gerilim düşümü ne olur diye bakacak olursak arkadaşlar, burada I-L akımının yük direnci üzerindeki gerilim düşümü bölü direnç değeri olduğunu biliyoruz.
+
+191
+00:15:50,844 --> 00:16:07,504
+Aynı zamanda VL gerilim düşümü için şunu da söyleyebiliriz. Bu kaynak gerilim bölücü gibi iki tane dirençle birlikte çalışacak ve akımını bulduktan sonra da bu akım değerini yük direnciyle oranlayacağız.
+
+192
+00:16:07,504 --> 00:16:18,724
+Bu yüzden VL değeri için RS artı RL akım değerimiz çarpı RL'yi de kullanmış olabiliyoruz. Bu durumda şunları inceleyelim.
+
+193
+00:16:20,844 --> 00:16:32,764
+Eğer ki yük direncimizin değeri sıfır olursa bu durumda VL'deki değerimiz ne olacak? Yük direncimiz sıfır olursa.
+
+194
+00:16:37,524 --> 00:16:42,004
+yük direncimiz sıfır olursa VL'deki değerimiz ne oluyor?
+
+195
+00:16:47,796 --> 00:16:49,555
+Sıfırla çarptığınız için sıfır olmaz mı?
+
+196
+00:16:49,755 --> 00:16:51,195
+Evet sıfır oluyor.
+
+197
+00:16:52,475 --> 00:16:53,236
+Bu durumda
+
+198
+00:16:53,236 --> 00:16:57,815
+benzer şekilde
+
+199
+00:16:57,815 --> 00:16:59,835
+bu yükten geçecek akım
+
+200
+00:16:59,835 --> 00:17:01,136
+bu durumda neye eşit olacak?
+
+201
+00:17:01,315 --> 00:17:02,915
+Yük direncimiz sıfır olduğuna göre
+
+202
+00:17:02,915 --> 00:17:05,615
+geçecek akım aslında sadece
+
+203
+00:17:05,615 --> 00:17:07,296
+R-S ile belirli. Bu da
+
+204
+00:17:07,296 --> 00:17:08,896
+V-S bölü R-S'ye eşit olacak.
+
+205
+00:17:09,476 --> 00:17:11,735
+Peki yük direnci üzerinde harcanan
+
+206
+00:17:11,735 --> 00:17:12,455
+güç ne olacak?
+
+207
+00:17:13,955 --> 00:17:14,375
+Bu da
+
+208
+00:17:14,375 --> 00:17:17,355
+gerilim değeri sıfır olduğuna göre
+
+209
+00:17:17,355 --> 00:17:19,636
+sıfırla çarptığımız durumda yine sıfır volt
+
+210
+00:17:19,636 --> 00:17:21,095
+olacak. Dolayısıyla bu
+
+211
+00:17:21,095 --> 00:17:23,775
+ideal olmayan kaynak
+
+212
+00:17:23,775 --> 00:17:25,415
+için biz buradan bir
+
+213
+00:17:25,415 --> 00:17:27,395
+güç olarak limite
+
+214
+00:17:27,395 --> 00:17:29,816
+ulaşmış oluyoruz. Ters yöndeki limitine
+
+215
+00:17:29,816 --> 00:17:31,555
+bakalım. Kaynak
+
+216
+00:17:31,555 --> 00:17:32,595
+pardon
+
+217
+00:17:32,595 --> 00:17:35,715
+yük direncimiz sonsuz değere sahip olursa
+
+218
+00:17:35,715 --> 00:17:37,495
+bu durumda açık devre gibi
+
+219
+00:17:37,495 --> 00:17:38,796
+çalışacak. Dirilim
+
+220
+00:17:38,796 --> 00:17:41,635
+değerimiz Vs'ye eşit olacak. Vl değerimiz
+
+221
+00:17:41,635 --> 00:17:43,555
+Vs'ye eşit olacak. Onu
+
+222
+00:17:43,555 --> 00:17:44,976
+şurada görelim.
+
+223
+00:17:45,636 --> 00:17:49,455
+Burada RL terimine bağlı bir fonksiyon olarak bunu düşünelim.
+
+224
+00:17:49,955 --> 00:17:54,736
+Limit RL sonsuza giderken bu terim 1'e yakın sıyacak.
+
+225
+00:17:54,836 --> 00:17:57,615
+Dolayısıyla VL vs'ye eşit olacak değil mi?
+
+226
+00:17:58,435 --> 00:18:00,935
+Bir başka pratik açıdan da bakacak olursak.
+
+227
+00:18:00,935 --> 00:18:03,056
+Açık devre eleman akım akmıyor.
+
+228
+00:18:03,355 --> 00:18:05,696
+RL üzerinde herhangi bir gerilim düşümü yok.
+
+229
+00:18:06,096 --> 00:18:09,035
+Dolayısıyla bu uçlarda göreceğim gerilim vs'ye eşit oluyor.
+
+230
+00:18:11,016 --> 00:18:14,775
+Ama açık devre elemanı olduğu için bu sefer akım değerimiz sıfır.
+
+231
+00:18:14,775 --> 00:18:16,175
+Buradan akım değeri akmayacak.
+
+232
+00:18:16,555 --> 00:18:17,515
+Onu da şurada görelim.
+
+233
+00:18:18,075 --> 00:18:22,655
+R'lerinin sonsuz olması teorik olarak da I'L'yi sıfıra götürecektir.
+
+234
+00:18:22,735 --> 00:18:23,895
+Dolayısıyla akım değerimiz sıfır.
+
+235
+00:18:23,975 --> 00:18:26,215
+Bu durumda da güç değerimiz sıfır olmuş oluyor.
+
+236
+00:18:26,915 --> 00:18:27,475
+Bu ne demek?
+
+237
+00:18:27,675 --> 00:18:35,775
+Biz bu ideal olmayan gerilim kaynağından yük direnç değerimizi arttırır,
+
+238
+00:18:36,015 --> 00:18:39,415
+belirli bir sıfır değerinden itibaren arttırmaya başladığımız anda
+
+239
+00:18:39,415 --> 00:18:42,835
+bu eleman üzerinde harcanan güç önce sıfır.
+
+240
+00:18:43,556 --> 00:18:45,395
+Demek ki arada bir yerde yükseliyor.
+
+241
+00:18:45,495 --> 00:18:47,096
+Belirli bir değere yükseliyor.
+
+242
+00:18:47,236 --> 00:18:48,636
+Daha sonra tekrar sıfıra düşüyor.
+
+243
+00:18:49,476 --> 00:18:54,316
+Yük dediğimiz şey karesel olarak hesaplanan pozitif bir şey olduğu için kaynak açısından da.
+
+244
+00:18:54,836 --> 00:18:57,775
+Gerçi bunu yük direnci için söylüyorduk.
+
+245
+00:18:58,296 --> 00:18:59,555
+Dolayısıyla pozitif olacak.
+
+246
+00:18:59,695 --> 00:18:59,796
+Evet.
+
+247
+00:19:00,596 --> 00:19:01,995
+Pozitif olması gereken bir değer.
+
+248
+00:19:02,215 --> 00:19:03,596
+Dolayısıyla şu anlama geliyor bu.
+
+249
+00:19:04,176 --> 00:19:07,176
+Sıfır değerinden başlıyor ben yük direncimi arttırdıkça.
+
+250
+00:19:07,176 --> 00:19:09,656
+Belirli bir değerde büyük ihtimalle bir tepe yapıyor.
+
+251
+00:19:09,775 --> 00:19:11,055
+Daha sonra tekrar sıfıra iniyor.
+
+252
+00:19:11,836 --> 00:19:12,775
+Bu şu anlama gelir.
+
+253
+00:19:12,835 --> 00:19:24,335
+Benim ideal olmayan bir gerilim kaynağı kullandığım durumda bu gerilim kaynağına bağlamış olduğum yük direncinden maksimum güç çekebilmek için belirli bir takım koşulları sağlamam gerekir.
+
+254
+00:19:24,435 --> 00:19:25,535
+Bu sonuca varmış oluyorum.
+
+255
+00:19:26,035 --> 00:19:29,635
+Bu noktada bizi Max Power teoribine götürecek zaten.
+
+256
+00:19:29,855 --> 00:19:32,775
+Bir dersin sonunda yetişirse onu görmüş olacağız.
+
+257
+00:19:34,235 --> 00:19:39,555
+Benzer bir şey arkadaşlar ideal ve ideal olmayan akım kaynağı içinde geçerli.
+
+258
+00:19:39,555 --> 00:19:43,475
+ideal akım kaynağında
+
+259
+00:19:43,475 --> 00:19:45,935
+aslında herhangi bir direnç iç direnç yok.
+
+260
+00:19:47,615 --> 00:19:50,855
+Ama ideal olmayan akım kaynağında
+
+261
+00:19:50,855 --> 00:19:54,115
+akım değerinin belirli bir kısmı
+
+262
+00:19:54,115 --> 00:19:56,095
+iç dirençten geçeceği için
+
+263
+00:19:56,095 --> 00:19:59,555
+uçlarda oluşabilecek akım değerini
+
+264
+00:19:59,555 --> 00:20:02,335
+limitleyen bir senaryo oluşmuş oluyor burada.
+
+265
+00:20:02,335 --> 00:20:04,875
+Veyahut da gerilim bölücü olarak çalışmış oluyor aslında.
+
+266
+00:20:05,016 --> 00:20:06,535
+Buraya bir yük direnci bağladığımızda
+
+267
+00:20:06,535 --> 00:20:12,455
+bir gerilim değerimizi bölen bir etkende bulunmuş oluyor.
+
+268
+00:20:12,935 --> 00:20:17,855
+Dolayısıyla dışarı vereceğimiz gücün belirli bir kısmı aslında bu iç dirençte harcanmış oluyor.
+
+269
+00:20:18,535 --> 00:20:20,975
+Aynı benzer analizleri burada da yapacak olursak,
+
+270
+00:20:21,475 --> 00:20:25,395
+ideal olmayan bir akım kaynağımız için bir yük direncini bağladığımızda
+
+271
+00:20:25,395 --> 00:20:28,895
+bu yük direnci üzerinden geçecek akım aslında neye eşit olacak?
+
+272
+00:20:29,035 --> 00:20:31,735
+Az önce benzer bir şekilde hesaplama yapmıştık.
+
+273
+00:20:31,736 --> 00:20:34,756
+IS akımı iki parçaya bölünecek.
+
+274
+00:20:35,016 --> 00:20:38,556
+Bu koldan geçen akım buradaki direnç değeriyle orantılı olacak.
+
+275
+00:20:39,056 --> 00:20:40,556
+Dolayısıyla IS çarpı.
+
+276
+00:20:40,880 --> 00:20:51,859
+RS bölü, RS artı RL akım değerimiz, yük direncinden geçecek akım değeri, VL üzerindeki gerilim değerimiz de IL çarpı RL şeklinde hesaplanabilir.
+
+277
+00:20:52,639 --> 00:21:01,959
+Benzer analizi burada da yapalım. Yük direncinin sıfır olduğu duruma karşılık olarak, yük direncinin sıfır olması durumunda VL sıfıra varır.
+
+278
+00:21:01,959 --> 00:21:10,959
+V'lerin sıfıra varması, I, L için bir değer var burada ama güç olarak baktığımızda güç değerinin sıfır olduğunu gösteriyor.
+
+279
+00:21:11,560 --> 00:21:21,399
+Benzer şekilde yük direncinin sonsuza ulaşmasıyla birlikte bu şuradaki değerin sıfıra yakınlamasına sebep olur.
+
+280
+00:21:22,439 --> 00:21:29,299
+Dolayısıyla burada bir akım akmıyor. I, L akımı sıfır olduğu için yine burada güç değerinin de sıfır olduğunu söyleyebiliriz.
+
+281
+00:21:29,359 --> 00:21:31,539
+Yine aynı şeyi burada da ortaya çıkartmış olduk.
+
+282
+00:21:31,959 --> 00:21:42,499
+İdeal olmayan bir akım kaynağı kullandığımızda direnç değerimizi sıfırdan sonuçta kadar değiştirdiğimiz bir senaryo için aslında çıkan grafik kabaca şöyle bir şey oluyor.
+
+283
+00:21:45,139 --> 00:21:47,380
+Şurası bizim R eksenimiz olsun.
+
+284
+00:21:48,279 --> 00:21:50,219
+Sıfır için sıfırdan başlıyor.
+
+285
+00:21:50,919 --> 00:21:59,399
+Belirli bir yerde bir tepe değeri yapıp daha sonra tekrar sonsuzda asimtotik olarak sıfıra yaklaşıyor ama ben onu çok güzel çizemedim şimdi.
+
+286
+00:21:59,399 --> 00:22:20,639
+Dolayısıyla yine burada da bir tepe değeri var. Ben bu topoloji çerçevesinde yani ideal olmayan bir akım kaynağı kullandığımda buradan sonsuz bir akım çekme imkanı veya sonsuz bir gerilim alma imkanı yok. Demek ki pratikte bu tür kaynaklar bu tür durumlarda yanarak bozuluyor.
+
+287
+00:22:20,639 --> 00:22:28,759
+ve bu da bizi yine maksimum power noktasına akım kaynağı üzerinden götürmüş oluyor.
+
+288
+00:22:28,899 --> 00:22:31,379
+Her iki durum içinde bu senaryo geçerli olmuş oldu.
+
+289
+00:22:34,499 --> 00:22:36,939
+RS neden paralel?
+
+290
+00:22:37,499 --> 00:22:40,279
+Eğer RS'yi buraya seri bir şekilde verecek olursak
+
+291
+00:22:45,523 --> 00:23:05,923
+Şey açısından bir kere farklılık var. İdeal gerilim kaynağını düşünelim. Kaynak var, ona seri bir direnç olacak. Bu gayet akla yatkın bir şey değil mi? Çünkü kaynağın serisinde bir direncin ve enerji harcayan elemanın olması mantıklı.
+
+292
+00:23:05,923 --> 00:23:29,704
+Oradan eşdeğeri hesapladığımızda çıkan direnç seride çıkmıyor. Seride koymuş olsaydık sıfır çıkacaktı. Paralelde bir değer üretiyor. Bunun anlamı da şu. Bu elemanlar aslında IS akımını bölüyor. Yani dışarı aktarabileceğimiz akım değerini eğer biz paralelde bir direnç koyarsak bölmüş oluruz. Dışarı IS'nin tamamı çıkmamış olacak bu durumda.
+
+293
+00:23:29,704 --> 00:23:36,764
+Eğer seriyi koymuş olsaydık, varsa öyle bir şey olmuş olsaydı, yine ISA akımının tamamı dışarı çıkabilirdi.
+
+294
+00:23:42,836 --> 00:23:48,475
+Hocam, peki burada bir şey sorabilir miyim? Demin biz bunları birbirine değiştirebiliyoruz demiştik.
+
+295
+00:23:48,475 --> 00:24:06,915
+Hani, volt, voltaj kaynağından, buraya. Deminkinde hocam, orası sınırsız olduğu zaman, akım kaynağında bir şey oluyor, bir geçiş oluyor ama voltaj kaynağında bir geçiş olmuyor.
+
+296
+00:24:06,915 --> 00:24:11,756
+Voltaj kaynağındaki iç direncin sıfır olması senaryosu var.
+
+297
+00:24:11,876 --> 00:24:18,435
+Yani ideal kaynakta, ideal gerilim kaynağında iç direnç sıfır, ideal akım kaynağında paralel direnç sonsuz.
+
+298
+00:24:19,556 --> 00:24:21,275
+Bu şekilde birbirlerine eşler oluyorlar.
+
+299
+00:24:21,916 --> 00:24:23,215
+Birbirinin tersi oluyor.
+
+300
+00:24:23,495 --> 00:24:23,916
+Evet, evet.
+
+301
+00:24:23,916 --> 00:24:24,995
+Evet, anladım.
+
+302
+00:24:25,975 --> 00:24:29,295
+Şimdi chatte bir takım yorumlar vardı, onlara tekrar bir bakalım.
+
+303
+00:24:29,295 --> 00:24:40,795
+gerilimden ziyade akım kaynağı için bahsediyorsak akımı bölmüş oluyoruz.
+
+304
+00:24:40,795 --> 00:24:43,876
+Dolayısıyla evet gerilimi limitliyoruz gibi söyleyebiliriz.
+
+305
+00:24:47,395 --> 00:24:54,795
+İç direncin gücüyle ilgili olarak yani iç direncin bu modeli şuna geliyor.
+
+306
+00:24:55,455 --> 00:24:58,675
+Kaynağın ürettiği bütün güç dışarıya sağlanamıyor.
+
+307
+00:24:58,675 --> 00:25:04,415
+İçeride belirli bir kısmı bağlanan yük direncinin değerine göre değişim gösteriyor.
+
+308
+00:25:05,115 --> 00:25:10,875
+O az önce oluşturduğumuz tek unimodel bir tane grafik vardı ya, belirli bir yerde tepe yapıyordu.
+
+309
+00:25:11,915 --> 00:25:15,715
+Aslında onu görmek açısından da faydalı olduğu durum.
+
+310
+00:25:17,595 --> 00:25:24,255
+Ama niye burada paralel, burada seri olduğunu az önceki mantık çerçevesinde açıklayabildiğimizi düşünüyorum.
+
+311
+00:25:26,775 --> 00:25:28,615
+Son yorumla ilgili olarak.
+
+312
+00:25:28,675 --> 00:25:30,415
+bu şekilde cevap vermiş olalım.
+
+313
+00:25:34,067 --> 00:25:37,607
+Tamam, teşekkürler. Buna bakmıştık.
+
+314
+00:25:44,307 --> 00:25:55,987
+Buradaki bu iki konu bizim açımızdan şöyle önemli. Bir içeriye bakayım. Acaba onu sonuna koymamış mıydık ya? Hemen bakıyorum bir saniye. Tamam var.
+
+315
+00:25:56,768 --> 00:26:10,707
+İşte az önce bahsettiğim gibi bu konular bizi aslında şeye götürecek. Max Power teoremine götürecek. Burada bir elle çözüm olarak bunu yapacak olursak, bu ikisinin birbirine eşit olduğu durumda neyle karşılaşıyoruz?
+
+316
+00:26:10,707 --> 00:26:17,627
+bir hesap olarak bunu yapalım. Max Power'da tekrar değinmiş oluruz veya zaman yetmezse zaten yaptık diye geçebiliriz.
+
+317
+00:26:19,447 --> 00:26:27,127
+İçeride benim asla bypass edemeyeceğim bir R direncim var. Hatta RS diyelim sorsa olduğu için.
+
+318
+00:26:27,907 --> 00:26:37,807
+Biz bu iki terminalli ideal olmayan kaynağa bir tane yük direnci bağladık. Bize sorulan şey bu durumda RS, RL'ye eşit olsa
+
+319
+00:26:37,807 --> 00:26:42,148
+veya yük direncini iç dirençle eşit olarak seçersek ne olur şeklinde bir soru var.
+
+320
+00:26:46,324 --> 00:27:00,043
+Burada düşen gerilim, evet, Vs bölü 2, burada Vs bölü 2 olacak. Akım değerimize baktığımızda ne olacak? Akım değerimizde Vs bölü 2rs şeklinde bir değer alacak.
+
+321
+00:27:00,043 --> 00:27:15,983
+Bunu da biz gelip akım değerimizde, bu bizim akım değerimizde, gerilim değerimizde de çarpacak olursak, yani Vs bölü 2 ile çarpacak olursak, Vs kare bölü 4, Rs gibi bir değer elde etmiş oluruz.
+
+322
+00:27:15,983 --> 00:27:28,983
+Bakın, bu RL değerimiz, Rs'den biraz daha küçük veya biraz daha yüksek olduğu durumlarda elde edeceğimiz senaryo, bundan daha küçük değerler olacak.
+
+323
+00:27:30,043 --> 00:27:41,503
+veya bir başka söyleyiş şekliyle RL direncini nasıl seçmeliyiz ki bu eleman üzerinde yani yük direnci üzerinde harcanan güç maksimum olsun.
+
+324
+00:27:42,323 --> 00:27:46,883
+Bunu çözmekte Max Power tarafına kalsın şimdilik. Nasıl yapacağımızı burada söyleyelim.
+
+325
+00:27:48,023 --> 00:27:54,824
+Burada bir fonksiyon elde edeceğiz. Güce ilişkin olarak bir fonksiyon elde edeceğiz. Bu fonksiyon RL'ye bağlı bir fonksiyon olacak.
+
+326
+00:27:54,824 --> 00:28:20,883
+Az önceki grafiklerden biliyoruz ki bu güç terimi aslında tek tepecikli bir grafik şeklinde oluşacak. Uç limit değerlerde sıfıra ulaşıyor çünkü. Demek ki ben bunun eğiminin sıfır olduğu yeri bulursam aslında bu bana RL değerinin kaynaktan en fazla güç çekmemi sağlayacak durum olduğunu belirtecek.
+
+327
+00:28:20,883 --> 00:28:47,883
+O zaman şunu yapacağım ben. Gücün RL'ye göre kısmı türevini alıp sıfıra eşitleyeceğim. Bunu yaptığım noktada bu denklemi sağlayan RL değeri bizim için kaynaktan bu ideal olmayan kaynaktan en fazla gücü çekmemizi sağlayan durum olacak. Orada nihayetlendiririz ama burası için söylemek gerekirse RL'nin iç direnci eşit olduğu anda biz en fazla gücü çekebiliyoruz.
+
+328
+00:28:47,883 --> 00:29:17,643
+çekebiliyoruz. Yük direncimiz iç kaynaktan biraz az biraz fazlalaşırsa burada görmüş olduğunuz tepeden sağa veya sola doğru ilerlemiş oluyoruz. Bu da elde ettiğimiz güç miktarını daha düşük bir konuma getirmiş oluyor. Aynı şey akım kaynağı içinde geçerli. Benzer bir analiz onun içinde yani şu gücün kısmı türevi üzerinden yapacağımız hesabı Max Power tarafına bırakarak
+
+329
+00:29:17,643 --> 00:29:19,563
+Burayı geçiyorum şimdilik.
+
+330
+00:29:22,843 --> 00:29:26,623
+Burada eş değerlilikle ilgili hesap yapmak gerekiyor diye bahsetmiştik.
+
+331
+00:29:26,703 --> 00:29:30,763
+Aslında biz bu hesabımızı kabaca şöyle yapmıştık.
+
+332
+00:29:30,863 --> 00:29:32,963
+R'lerin eşit olduğu durum için yapmıştık.
+
+333
+00:29:33,423 --> 00:29:35,923
+Şimdi bir de tersten şöyle ele alalım.
+
+334
+00:29:36,723 --> 00:29:42,103
+Yük direnci bağlandığı durumda ve açık devre iken ki durumları ele alacağız.
+
+335
+00:29:42,283 --> 00:29:45,763
+Yük direnci bağlandığında bu koldan geçecek akımlar eşit olmalı.
+
+336
+00:29:45,764 --> 00:29:52,004
+yük direncini kaldırdığımda da bu terminaller arasındaki gerilim eşit olmalı.
+
+337
+00:29:53,163 --> 00:29:58,303
+Bu durumda bu iki kaynak dönüşümü arasındaki ilişki RS2 ile RS1 arasında nedir?
+
+338
+00:29:58,303 --> 00:30:01,564
+VS ile IS arasında kabaca çıkartmıştık.
+
+339
+00:30:03,204 --> 00:30:06,523
+Peki bu en genel durum için bunu nasıl çözmeliyiz?
+
+340
+00:30:10,228 --> 00:30:22,007
+Burada da aslında şu ortaya çıkıyor. Bunların birbiriyle eşdeğerlik, yani dirençlerinde birbiriyle eşdeğerlik oluşturduğunu görüyor olacağız. Bir örnek üzerinden ele alacak olursak,
+
+341
+00:30:27,731 --> 00:30:34,791
+Verilen devre için şuradaki yapıda bir eş değer akım kaynağı ve paralel direnç ikilisini oluşturmaya çalışalım.
+
+342
+00:30:35,511 --> 00:30:43,791
+Bunun için yapacağımız hesap aslında verilen devre için I, L ve V, L değerlerini hesaplamak olacak ilkün olarak.
+
+343
+00:30:43,791 --> 00:30:52,832
+Bu durumda I, L değerini hesaplarken 18 volt bölü 9 kilo ohmdan buradan 2 miliamperlik bir değer elde etmiş oluruz.
+
+344
+00:30:52,832 --> 00:31:03,011
+VL değeri içinde 2 amperlik bir değer 2 miliamper çarpı 6 kilo ohmdan 12 voltluk bir gerilim düşümü elde etmiş oluruz.
+
+345
+00:31:03,072 --> 00:31:05,072
+Şimdi bizim yapmak istediğimiz ne?
+
+346
+00:31:05,812 --> 00:31:10,871
+Bu devre yerine bir tane akım kaynağı ve buna paralel bir direnç koyarak
+
+347
+00:31:10,871 --> 00:31:18,931
+yine burada aynı 6K'lık 6 kilo ohmluk yük direncini koyarak
+
+348
+00:31:18,931 --> 00:31:22,231
+şu koldan geçecek akımı 2 miliamper olarak elde etmek.
+
+349
+00:31:22,231 --> 00:31:29,691
+Buradaki gerilim düşümünü de 12 volt olarak elde etmek şeklinde bir hesap yapmamız gerekiyor.
+
+350
+00:31:29,772 --> 00:31:35,211
+Burada IS değerimiz ve RS buna da R diyelim şimdilik.
+
+351
+00:31:35,871 --> 00:31:39,871
+Bu R değerimizi nasıl hesaplayacağız ona bakalım.
+
+352
+00:31:41,511 --> 00:31:49,272
+Şimdi şuradaki gerilim değerimiz 12 volt olduğuna göre demek ki bu elemanın da üzerindeki gerilim düşümü 12 volt olacak.
+
+353
+00:31:49,272 --> 00:31:52,551
+benzer şekilde buraya doğru
+
+354
+00:31:52,551 --> 00:31:54,231
+akan akımımız neye eşit olacak
+
+355
+00:31:54,231 --> 00:31:56,852
+Is-2 mA eşit olacak
+
+356
+00:31:56,852 --> 00:31:57,352
+değil mi
+
+357
+00:31:57,352 --> 00:32:00,371
+dolayısıyla Is-2
+
+358
+00:32:00,371 --> 00:32:02,592
+çarpı R değerimiz
+
+359
+00:32:02,592 --> 00:32:04,492
+12 volt olarak elde edeceğimiz
+
+360
+00:32:04,492 --> 00:32:05,291
+bir değer olacak
+
+361
+00:32:05,291 --> 00:32:08,112
+yine yük dirençlerini
+
+362
+00:32:08,112 --> 00:32:10,032
+kaldırdığımız durum için senaryoyu
+
+363
+00:32:10,032 --> 00:32:10,772
+inceleyelim
+
+364
+00:32:10,772 --> 00:32:12,731
+bu durumda
+
+365
+00:32:12,731 --> 00:32:15,931
+yük direnci yerine sonsuz verdiğimiz
+
+366
+00:32:15,931 --> 00:32:17,431
+bir duruma karşılık gelir bu
+
+367
+00:32:17,431 --> 00:32:20,031
+bu durumda şurada göreceğimiz
+
+368
+00:32:20,031 --> 00:32:21,071
+gerilim değeri bizim
+
+369
+00:32:21,071 --> 00:32:23,491
+18 volt olacaktır değil mi?
+
+370
+00:32:23,671 --> 00:32:25,711
+Yani şu yük direncini kaldırdığımız durum için.
+
+371
+00:32:26,231 --> 00:32:27,691
+Benzer bir senaryoyu buradaki
+
+372
+00:32:27,691 --> 00:32:29,891
+kaynakta yük direncini kaldırdığımız
+
+373
+00:32:29,891 --> 00:32:31,531
+durum içinde sağlayabilmek adına
+
+374
+00:32:31,531 --> 00:32:35,191
+bir başka denklem olarak da
+
+375
+00:32:35,191 --> 00:32:36,691
+Is çarpı R'nin
+
+376
+00:32:36,691 --> 00:32:39,331
+18 olması gerektiğini söyleyebiliriz.
+
+377
+00:32:39,411 --> 00:32:39,892
+Değil mi burada?
+
+378
+00:32:40,071 --> 00:32:42,771
+Is bu eleman yok, yük direncimiz yok.
+
+379
+00:32:42,871 --> 00:32:44,351
+Dolayısıyla bütün akım buradan akacak.
+
+380
+00:32:44,911 --> 00:32:46,392
+Bu iki denklem üzerinden
+
+381
+00:32:46,392 --> 00:32:48,272
+IS ve R hesabımızı
+
+382
+00:32:48,272 --> 00:32:50,731
+şuradaki
+
+383
+00:32:50,731 --> 00:32:52,392
+değerler cinsinden elde etmemiz
+
+384
+00:32:52,392 --> 00:32:53,571
+mümkün olur.
+
+385
+00:32:54,452 --> 00:32:55,612
+Şöyle gidelim.
+
+386
+00:32:55,731 --> 00:32:57,431
+IS çarpı R 18'de.
+
+387
+00:32:57,511 --> 00:32:59,592
+18-2R eşittir 12.
+
+388
+00:33:00,172 --> 00:33:02,371
+Dolayısıyla 12'yi bu tarafa atacak olursak
+
+389
+00:33:02,371 --> 00:33:03,672
+6 eşittir 2R.
+
+390
+00:33:04,092 --> 00:33:05,851
+R dediğimiz şey bu milyamperde
+
+391
+00:33:05,851 --> 00:33:07,252
+dolayısıyla kilo ohm çıkacak.
+
+392
+00:33:07,752 --> 00:33:09,612
+3 kilo ohm olarak elde etmiş oluyoruz.
+
+393
+00:33:10,472 --> 00:33:12,052
+2 farklı denklem elde ettik.
+
+394
+00:33:12,172 --> 00:33:13,212
+Tekrar etmiş olayım.
+
+395
+00:33:13,692 --> 00:33:15,511
+Birincisi yük direnci devredeyken
+
+396
+00:33:15,511 --> 00:33:19,911
+ikincisi yük direnci 6 değil de sonsuz değerine sahipken
+
+397
+00:33:19,911 --> 00:33:25,691
+sonsuz değerine sahip olduğu durumda sanki yük direnci devreden kopartılmış gibi etki yapıyor.
+
+398
+00:33:26,452 --> 00:33:27,752
+Öyleyse açık devre var.
+
+399
+00:33:28,631 --> 00:33:32,851
+VL yükümüz, VL gerilim düşümüz 18 volta eşdeğer olur.
+
+400
+00:33:33,392 --> 00:33:36,711
+Dolayısıyla aynı senaryoya ilişkin 2 denklem 2 bilinmeyen
+
+401
+00:33:36,711 --> 00:33:41,392
+R direncini çektiğimizde bunun eşit olması gerektiğini burada görmüş oluyoruz.
+
+402
+00:33:41,391 --> 00:33:48,271
+Dolayısıyla ilk başta yaptığımız varsayım bizim genelleştireceğimiz bir kural olarak ortaya çıkmış oldu bu noktada.
+
+403
+00:33:48,691 --> 00:33:50,091
+Peki IS için ne diyeceğiz?
+
+404
+00:33:50,171 --> 00:33:56,731
+Bu durumda da IS için 3K olduğuna göre 6 mA mi oluyor?
+
+405
+00:33:57,851 --> 00:34:00,711
+6 mA'lık bir değere sahip olmuş oluyor.
+
+406
+00:34:01,251 --> 00:34:09,251
+Zaten eşit olduğu durumda da iki değerin arasındaki oranı biz IS değeri olarak elde ediyorduk.
+
+407
+00:34:09,251 --> 00:34:11,571
+Aynı sonucu yine bu şekilde elde etmiş olduk.
+
+408
+00:34:19,699 --> 00:34:24,699
+Burada bizim bulduğumuzdan farklı bir durum var mı? Yok, tamam.
+
+409
+00:34:35,219 --> 00:34:46,039
+Yani verdiğimiz en genel model için, burada bahsedilen en genel durum için aslında akım kaynağı paralelinde seri direnç, paralel direnç olduğunu söylemiştik.
+
+410
+00:34:46,719 --> 00:34:55,119
+Ama idealle bunu nasıl yaklaştıracağız? İdeal durumda kaynağın akım değerinin yük direncine aktarılabilmesi gerekiyor.
+
+411
+00:34:55,779 --> 00:34:59,900
+Bu da bir akım bölücü olarak burada iç direncin bulunmamasıyla kaynaklanıyor.
+
+412
+00:34:59,900 --> 00:35:02,959
+İç direncin bulunmaması burada, buranın açık devre olması demek.
+
+413
+00:35:02,959 --> 00:35:16,260
+Bu durumda da aslında az önce sonuç olarak elde etmiştik. İdeal akım kaynağındaki iç direncin yani paralel olarak yerleşen iç direncin sonsuz olmasından bahsediyoruz.
+
+414
+00:35:17,219 --> 00:35:25,659
+Gerilim kaynağı için ise ideal bir gerilim kaynağı için seri olan iç direncin sıfır olmasından bahsediyoruz.
+
+415
+00:35:25,659 --> 00:35:32,300
+Bu iki sonuca varmıştık az önce de. Yine burada da bunları tekrarlamış oluyoruz.
+
+416
+00:35:32,299 --> 00:35:36,959
+Bizim çözümümüz için de kullandığımız yöntemleri burada kullanmış oldu.
+
+417
+00:35:38,739 --> 00:35:44,199
+Bu da güç hesabıyla ilgili durumlar var. O yüzden tekrar üzerinde durmamak üzere geçiyorum.
+
+418
+00:35:46,760 --> 00:35:54,959
+Burada şunu yaptı tabii onu deneysel olarak farklı R, S değerleri için R, L'yi fixledik diyelim.
+
+419
+00:35:55,519 --> 00:35:59,940
+Farklı R, S değerleri için çekilen güçleri de bir yandan incelemiş oldu.
+
+420
+00:35:59,940 --> 00:36:19,740
+Kabaca az önce çıkarttığımız grafiğin örnekler şeklinde bir karşılığını elde etmiş oluyor. İdeal durumunda yine hem teorik hem pratik olarak iç direnci eşit bir yük direnci kullanma durumunda kaynaktan en yüksek gücü çektiğimiz duruma karşılık geldiğini deneysel olarak da burada göstermiş oldu.
+
+421
+00:36:19,739 --> 00:36:41,459
+Benzer bir mantık. Bu devremiz içinde ideal olmayan bir akım kaynağımız var. Bu ideal olmayan akım kaynağı yerine ideal olmayan bir gerilim kaynağı koyabiliriz. Veyahut da sorunun soruluş şeklini düşünecek olursak kaynak dönüşümüyle bunu gerilim kaynağına dönüştürebilir miyiz?
+
+422
+00:36:41,459 --> 00:36:51,660
+Burada yine şu iki hesabı yapacağız. Mevcut yük direnci varken I, L ve V, L değerlerine bir bakalım.
+
+423
+00:36:52,539 --> 00:37:05,499
+Yük direnci varken burada I, L dediğimiz akım değerimiz neye eşit olacak? 5 mA bölü 350 ikisinin toplamı ve karşıdakinin çarpımı.
+
+424
+00:37:05,499 --> 00:37:24,119
+çarpı 50. Bu durumda da 5 bölü 7 miliamperlik bir değer elde etmiş oluyoruz. VL gerilimine bakacak olursak VL gerilimimizde akam 5 bölü 7'lik bir akım değerimiz vardı miliamper olarak. Çarpı 300 ohmla da bunu çarptığımızda
+
+425
+00:37:29,427 --> 00:37:31,487
+Bu şekilde bir VL değeri elde ediyoruz.
+
+426
+00:37:31,608 --> 00:37:33,408
+Hesapta bir yanlışlık mı yaptım diye bakıyorum.
+
+427
+00:37:34,007 --> 00:37:34,388
+50.
+
+428
+00:37:35,107 --> 00:37:36,947
+50 ile çarp. 7.
+
+429
+00:37:38,167 --> 00:37:38,407
+Tamam.
+
+430
+00:37:39,188 --> 00:37:41,207
+Şimdi elde etmek istediğimiz şey ne?
+
+431
+00:37:42,867 --> 00:37:48,087
+Bir gerilim kaynağı ve buna seri bir direnç ile bunu ortaya koymak istiyoruz.
+
+432
+00:37:49,268 --> 00:37:52,028
+Şuraya kadar olan kısmı için eşdeğerlik yapacağız.
+
+433
+00:37:52,127 --> 00:37:53,627
+Bir de yük direncimizi bağladık.
+
+434
+00:37:53,627 --> 00:38:00,247
+Şimdi yük direncimiz devredeyken I, L ve V, L'nin buradaki değerlere eşit olması gerekiyor.
+
+435
+00:38:00,327 --> 00:38:03,667
+Biz buradaki V, S'yi ve R'yi bilmiyoruz. Ne seçeceğimizi bilmiyoruz.
+
+436
+00:38:04,167 --> 00:38:07,247
+R, L değerimiz ama yine aynı 300 ohmluk yük direncimiz olacak.
+
+437
+00:38:07,927 --> 00:38:15,447
+Bu durumda I, L dediğimiz akımımız V, S bölü R artı 300 olarak yazabileceğimiz bir değer.
+
+438
+00:38:17,288 --> 00:38:19,788
+Peki V, L için ne diyebiliriz?
+
+439
+00:38:19,788 --> 00:38:20,907
+VL içinde
+
+440
+00:38:20,907 --> 00:38:24,108
+300 çarpı VS bölü
+
+441
+00:38:24,108 --> 00:38:25,948
+R artı 300
+
+442
+00:38:25,948 --> 00:38:27,927
+olduğunu söyleyebiliriz. Demek ki buradan
+
+443
+00:38:27,927 --> 00:38:32,128
+şu değerin 5 bölü 7'ye eşit olması
+
+444
+00:38:32,128 --> 00:38:33,707
+gerektiği bu değerinde
+
+445
+00:38:33,707 --> 00:38:36,407
+500 bölü 7'ye eşit
+
+446
+00:38:36,407 --> 00:38:37,427
+olması gerektiğini
+
+447
+00:38:37,427 --> 00:38:40,247
+söyleyebiliriz. Baktığınız zaman
+
+448
+00:38:40,247 --> 00:38:42,108
+bu iki denklem aslında aynı
+
+449
+00:38:42,108 --> 00:38:43,307
+denklem. Yani bunlar
+
+450
+00:38:43,307 --> 00:38:46,127
+bu iki bilinmeyeni çözmek için
+
+451
+00:38:46,127 --> 00:38:48,067
+yeterli değil. Dolayısıyla ne yapabiliriz?
+
+452
+00:38:48,067 --> 00:38:50,728
+yük direncini kaldırdığımız
+
+453
+00:38:50,728 --> 00:38:52,907
+senaryo içinde durumu ele alabiliriz.
+
+454
+00:38:52,987 --> 00:38:54,728
+Yük direncini kaldırdığımız durumda
+
+455
+00:38:54,728 --> 00:38:56,987
+yani bunun yerine
+
+456
+00:38:56,987 --> 00:38:58,788
+sonsuz bir direnç koyduğumuzda
+
+457
+00:38:58,788 --> 00:38:59,747
+burada
+
+458
+00:38:59,747 --> 00:39:02,728
+bütün akım
+
+459
+00:39:02,728 --> 00:39:04,627
+RS üzerinden dönecek.
+
+460
+00:39:04,627 --> 00:39:06,127
+O zaman benim burada göreceğim
+
+461
+00:39:06,127 --> 00:39:08,288
+VL gerilimim neye eşit olacak?
+
+462
+00:39:08,588 --> 00:39:10,587
+VL değerim bu ikinci senaryo için
+
+463
+00:39:10,587 --> 00:39:11,368
+yıldız diyelim.
+
+464
+00:39:12,167 --> 00:39:14,307
+VL değerimiz neye eşit olmuş olacak?
+
+465
+00:39:14,527 --> 00:39:16,627
+5 çarpı 50'lik bir değer eşit
+
+466
+00:39:16,627 --> 00:39:18,687
+olmuş olsun. Diğer taraftan
+
+467
+00:39:18,687 --> 00:39:20,567
+burası için bu senaryoyu ele alacak
+
+468
+00:39:20,567 --> 00:39:22,288
+olursak. Burada da
+
+469
+00:39:22,288 --> 00:39:24,507
+ayırdığımız için akım
+
+470
+00:39:24,507 --> 00:39:26,727
+akmıyor. Dolayısıyla Vs'yi Vl'yi
+
+471
+00:39:26,727 --> 00:39:28,627
+eşit olarak görebilirim. O zaman ben burada
+
+472
+00:39:28,627 --> 00:39:30,267
+Vs değerini
+
+473
+00:39:30,267 --> 00:39:31,167
+250
+
+474
+00:39:31,167 --> 00:39:34,507
+milivolt olarak
+
+475
+00:39:34,507 --> 00:39:36,867
+elde etmiş oluyorum. Vs'yi elde ettikten
+
+476
+00:39:36,867 --> 00:39:38,547
+sonra şurası için
+
+477
+00:39:38,547 --> 00:39:40,407
+yapalım bunu. Vs'nin
+
+478
+00:39:40,407 --> 00:39:42,447
+250 milivolt olduğu durum için
+
+479
+00:39:42,447 --> 00:39:43,767
+50
+
+480
+00:39:43,767 --> 00:39:45,887
+350
+
+481
+00:39:45,887 --> 00:39:48,007
+50 eşittir. R artı
+
+482
+00:39:48,007 --> 00:39:49,847
+300. Sonuç olarak da
+
+483
+00:39:49,847 --> 00:39:51,747
+R'yi de 50 ohm olarak
+
+484
+00:39:51,747 --> 00:39:53,807
+bulmuş olduk. Dolayısıyla aynı şey burada
+
+485
+00:39:53,807 --> 00:39:55,847
+da geçerli. Kaynak dönüşümü
+
+486
+00:39:55,847 --> 00:39:57,267
+sırasında
+
+487
+00:39:57,267 --> 00:39:59,867
+eş değer
+
+488
+00:39:59,867 --> 00:40:00,947
+direnç durumunu
+
+489
+00:40:00,947 --> 00:40:04,067
+hesaplamış, elde etmiş oluyoruz.
+
+490
+00:40:04,147 --> 00:40:04,567
+Eş değer
+
+491
+00:40:04,567 --> 00:40:07,447
+yani bu eş değer direnç demeyelim de
+
+492
+00:40:07,447 --> 00:40:10,067
+direnç değerleri kaynak dönüşümü
+
+493
+00:40:10,067 --> 00:40:11,787
+sonucunda elde edeceğimiz direnç değerleri
+
+494
+00:40:11,787 --> 00:40:13,367
+aslında birbirine eşit olmalıymış.
+
+495
+00:40:14,207 --> 00:40:15,867
+Akım kaynağından, gerilim kaynağından
+
+496
+00:40:15,868 --> 00:40:17,847
+dönerken de bu senaryo benzer şekilde
+
+497
+00:40:17,847 --> 00:40:18,888
+geçerliymiş.
+
+498
+00:40:20,067 --> 00:40:21,927
+Az önce yaptığı gibi yine
+
+499
+00:40:21,927 --> 00:40:24,028
+güç üzerinden bu hesabı
+
+500
+00:40:24,028 --> 00:40:25,907
+yürütüyor. Güç üzerinden
+
+501
+00:40:25,907 --> 00:40:27,207
+yürüttüğümüz zaman bu
+
+502
+00:40:27,207 --> 00:40:29,828
+iç kaynağın
+
+503
+00:40:29,828 --> 00:40:32,207
+kaynak iç direncinin değerlerine
+
+504
+00:40:32,207 --> 00:40:33,427
+göre çekilen
+
+505
+00:40:33,427 --> 00:40:35,308
+güç miktarına bakıyor.
+
+506
+00:40:36,188 --> 00:40:38,127
+Bunlara ilişkin bir tepe değer belirliyor
+
+507
+00:40:38,127 --> 00:40:40,288
+ve kabaca deneysel olarak
+
+508
+00:40:40,288 --> 00:40:42,668
+gösteriyor. Biliyoruz ki
+
+509
+00:40:42,668 --> 00:40:44,707
+yük direncinin
+
+510
+00:40:44,707 --> 00:40:48,187
+iç direnci eşit olduğu durumda
+
+511
+00:40:48,187 --> 00:40:50,088
+yük direnci tarafından
+
+512
+00:40:50,088 --> 00:40:52,047
+en fazla güç çekilebilir durumda.
+
+513
+00:40:52,607 --> 00:40:54,627
+Yine teorik olarak bunun ispatını da
+
+514
+00:40:54,627 --> 00:40:56,207
+dediğim gibi Max Power tarafına
+
+515
+00:40:56,207 --> 00:40:57,448
+bırakmış olalım.
+
+516
+00:41:00,448 --> 00:41:02,347
+Dolayısıyla eş değerlik için
+
+517
+00:41:02,347 --> 00:41:07,808
+eş değerlik için kriterimiz
+
+518
+00:41:07,808 --> 00:41:10,728
+herhangi bir terminalden
+
+519
+00:41:10,728 --> 00:41:12,567
+baktığımız durum için bu terminale
+
+520
+00:41:12,567 --> 00:41:14,067
+bir yük direnci bağlandığı zaman
+
+521
+00:41:14,067 --> 00:41:27,008
+Bütün değerleri için bu geçerli. Yük direncinin bütün değerleri için yük direncinde oluşacak gerilim düşümüyle yük direnci üzerinden akacak akımı bu baktığımız terminal tarafındaki kaynak.
+
+522
+00:41:27,539 --> 00:41:33,379
+Aynı şekilde karşılayabiliyorsa farklı yapılar, farklı topolojiler bunlar birbirine eşdeğerdir.
+
+523
+00:41:33,859 --> 00:41:44,119
+Bu eşdeğerliklere ilişkin olarak temel örneklerden birisi de şimdi gördüğümüz gibi gerilim kaynağına seri dirençle akım kaynağına paralel direncin eşdeğerlik durumlarıydı.
+
+524
+00:41:44,119 --> 00:41:57,219
+Bunları incelediğimiz zaman seri dirençle, gerilim kaynağındaki seri iç dirençle akım kaynağındaki paralel iç direncin aslında birbirlerine eşit olduğunu görüyoruz eşdeğerlikten hareketle.
+
+525
+00:41:57,539 --> 00:41:59,780
+bunu ortaya çıkartmış olduk.
+
+526
+00:41:59,900 --> 00:42:01,720
+Bir de yük direncinden
+
+527
+00:42:01,720 --> 00:42:03,779
+en fazla gücü çekebilmek
+
+528
+00:42:03,779 --> 00:42:05,679
+adına seçmemiz
+
+529
+00:42:05,679 --> 00:42:07,560
+gereken yük direncinin iç dirençte
+
+530
+00:42:07,560 --> 00:42:09,599
+eşit bir değer olması gerektiği ortaya çıkıyor.
+
+531
+00:42:10,120 --> 00:42:11,560
+Bu durumda da zaten her iki
+
+532
+00:42:11,560 --> 00:42:13,319
+eleman birbirine eş değer olduğu için
+
+533
+00:42:13,319 --> 00:42:15,419
+gücün yarısı iç dirençte
+
+534
+00:42:15,419 --> 00:42:17,440
+yarısı yük direncinde harcanacaktır.
+
+535
+00:42:17,859 --> 00:42:19,139
+Dolayısıyla yük direncinden
+
+536
+00:42:19,139 --> 00:42:21,380
+çekebileceğimiz maksimum güç de
+
+537
+00:42:21,380 --> 00:42:23,599
+orada verilmiş olan
+
+538
+00:42:23,599 --> 00:42:25,479
+ideal kaynağın, modelde verilmiş olan
+
+539
+00:42:25,479 --> 00:42:27,439
+ideal kaynağın sağladığı gücün yarısı
+
+540
+00:42:27,439 --> 00:42:29,399
+olabilir. En fazla yarısı olabilir.
+
+541
+00:42:29,559 --> 00:42:31,620
+Bunu da ortaya çıkartmış olduk.
+
+542
+00:42:32,379 --> 00:42:33,519
+Şimdi süre olarak bir
+
+543
+00:42:33,519 --> 00:42:35,279
+bakıyorum. 47 geçiyor.
+
+544
+00:42:35,419 --> 00:42:37,480
+Örneklerden sonra kaç örneğimiz varmış?
+
+545
+00:42:37,559 --> 00:42:38,159
+Hemen bir bakayım.
+
+546
+00:42:39,799 --> 00:42:41,319
+2 tane örneğimiz var. O zaman
+
+547
+00:42:41,319 --> 00:42:42,760
+örnekleri hızlıca bitirelim.
+
+548
+00:42:43,260 --> 00:42:45,379
+Sonrasında Norton Tevenine geçmiş olalım.
+
+549
+00:42:48,400 --> 00:42:49,080
+Burada
+
+550
+00:42:49,080 --> 00:42:51,620
+karmaşık bir devre görüyoruz aslında.
+
+551
+00:42:51,620 --> 00:42:53,859
+Biz şu ana kadar gördüğümüz yöntemlerden
+
+552
+00:42:53,859 --> 00:42:55,520
+hareketle bunu çözmeye çalışsak
+
+553
+00:42:55,520 --> 00:42:57,760
+işte bir düğüm burada, iki düğüm burada,
+
+554
+00:42:57,879 --> 00:43:00,139
+üçüncü düğüm burada, üç düğüm üzerinden
+
+555
+00:43:00,139 --> 00:43:01,620
+düğüm denklemleri yazabilirim veya
+
+556
+00:43:01,620 --> 00:43:03,720
+üç tane çevre üzerinden çevre denklemleri
+
+557
+00:43:03,720 --> 00:43:05,279
+yazabilirim bu devreyi çözebilmek için.
+
+558
+00:43:05,760 --> 00:43:07,559
+Ama pratik bir yol olarak ben burada
+
+559
+00:43:07,559 --> 00:43:10,120
+kaynak dönüşümlerinden faydalanabilirim.
+
+560
+00:43:10,300 --> 00:43:11,580
+Bundan nasıl faydalanacağız?
+
+561
+00:43:12,459 --> 00:43:14,019
+Şu şekilde örneğin
+
+562
+00:43:14,019 --> 00:43:15,440
+burada görmüş olduğunuz
+
+563
+00:43:15,440 --> 00:43:18,120
+akım kaynağı ve buna paralel
+
+564
+00:43:18,120 --> 00:43:19,879
+direnç yerine ben buraya
+
+565
+00:43:19,879 --> 00:43:21,739
+bir gerilim kaynağı ve buna paralel
+
+566
+00:43:21,739 --> 00:43:23,400
+buna seri bir
+
+567
+00:43:23,400 --> 00:43:26,900
+direnç koyabilirim.
+
+568
+00:43:27,020 --> 00:43:28,859
+Dolayısıyla hani topolojik olarak
+
+569
+00:43:28,859 --> 00:43:30,459
+neye benzeyecek? Önce onu görelim.
+
+570
+00:43:31,239 --> 00:43:32,739
+Topolojik olarak hani yönleri de
+
+571
+00:43:32,739 --> 00:43:34,679
+dikkate alacak olursak burada
+
+572
+00:43:34,679 --> 00:43:37,280
+şu yönlü
+
+573
+00:43:37,280 --> 00:43:39,140
+bir kaynak ve buna seri
+
+574
+00:43:39,140 --> 00:43:41,539
+bir direncimiz
+
+575
+00:43:41,539 --> 00:43:42,959
+olacak. Şöyle bir yapı olacak.
+
+576
+00:43:44,840 --> 00:43:45,340
+Şu ikisi
+
+577
+00:43:45,340 --> 00:43:45,819
+yerine
+
+578
+00:43:45,819 --> 00:43:49,140
+bunu yerleştirmiş olacağız. Kaynağı
+
+579
+00:43:49,140 --> 00:43:50,200
+özellikle ters çizdim.
+
+580
+00:43:51,340 --> 00:43:53,060
+Yön olarak dikkat etme açısından.
+
+581
+00:43:53,400 --> 00:43:57,379
+Daha sonrasında buna bir ikinci direnç bağlı.
+
+582
+00:43:57,459 --> 00:44:02,799
+Bu ikinci direnci aslında serilikten hareketle tek bir dirençmiş gibi düşünebilir.
+
+583
+00:44:02,879 --> 00:44:14,420
+O yüzden şunu da sisteme dahil ettiğimiz zaman elde edeceğimiz eşdeğer devre kaynak dönüşümü ve seri dirençler çerçevesinde şu noktaya kadar getirmiş olacağız bunu.
+
+584
+00:44:14,799 --> 00:44:19,459
+Burada bir tane 8-10'luk direncimiz var.
+
+585
+00:44:19,860 --> 00:44:21,280
+Ve sonrasında bir de şuraya bakalım.
+
+586
+00:44:23,400 --> 00:44:31,400
+Şimdi buraya baktığımızda da aslında bir kaynak dönüşümü burada da mümkün olabilir.
+
+587
+00:44:32,140 --> 00:44:36,579
+Bu gerilim kaynağı ve seri direnç yerine şunu koyabiliriz.
+
+588
+00:44:37,959 --> 00:44:41,860
+Bir seri iç direnç ve bir akım kaynağı koyabiliriz.
+
+589
+00:44:43,459 --> 00:44:46,099
+Dolayısıyla şurası 3 ohm olan durum.
+
+590
+00:44:46,480 --> 00:44:49,900
+Burası ne oldu? 4, 2 daha 6 oldu değil mi?
+
+591
+00:44:50,599 --> 00:44:52,299
+Şurası 8'di burası 3'dü.
+
+592
+00:44:52,299 --> 00:44:56,659
+Şimdi bakın şurada bir paralel devre yapısı var.
+
+593
+00:44:56,819 --> 00:45:01,139
+Bu paralel devre yapısını indirgeyerek şuna gelebiliriz.
+
+594
+00:45:08,755 --> 00:45:14,575
+Bir adım daha ilerletip şunun yerine bir gerilim kaynağı ve seri direnç koyabiliriz.
+
+595
+00:45:23,731 --> 00:45:47,072
+Şu ikisinin seriliğinden hareketle bir işlem yapabiliriz. Tek göz devrede kaynakların birbirine seri olması durumunda bunları toplayabiliriz. Dolayısıyla eşdeğer durumları bu şekilde indirgeyebiliriz. Bizim aradığımız aslında neydi? Birazcık geri giderek, bu en uç noktaya kadar ilerletmiş olduk ama bizden istenen aslında şu V0 gerilimiydi.
+
+596
+00:45:47,072 --> 00:46:07,051
+V0'ı aslında şurada V0 ve burada V0 olarak yine görüyoruz. Dolayısıyla aslında şuradaki V0 gerilimi bizim aradığımız şey. Bakın kaynak dönüşümleriyle V0'ı kaybetmeden burada iki gözlü bir devreye kadar düşük topolojik olarak çözüm elde etme imkanımız oluyor.
+
+597
+00:46:07,051 --> 00:46:23,551
+Dediğimiz gibi adımları ilerletecek olursak şu iki birim için eş değer gerilim kaynağı için vs değerimiz ikisinin çarpımı olacaktı 12 değeri.
+
+598
+00:46:23,611 --> 00:46:30,011
+Fakat kaynak yönüne dikkat edin. Kaynak yönü aşağı doğru. Bu da da referans yönümüz aşağı doğru oldu.
+
+599
+00:46:30,011 --> 00:46:58,452
+Buna seri 1'de direnç olacak. Seri direnç değeri şu ikisine karşılık paralel direncin kendisiydi. 4 ohmluk direnci koyduk. Burada seri 2 tane direncimiz var. Oradan 6 ohm'u hesapladık. Şu ikisi yerine tekrar kaynak dönüşümü yaparak ilerliyoruz. Burada 12 bölü 6 2 amperlik bir akım değeri elde ettik. Ve bu 6 ohmluk seri direnci de bu kaynağı paralel olarak yerleştirdik.
+
+600
+00:46:58,452 --> 00:47:03,532
+daha hızlı bir şekilde çözmüş oldu burada. Çünkü V0'a kadar düşmemiz yeterliydi.
+
+601
+00:47:04,231 --> 00:47:08,992
+Birbiriyle paralel elemanlar şeklinde devreyi elde etmiş olduk.
+
+602
+00:47:08,992 --> 00:47:17,312
+Bu noktada yapacağımız işler kaynakları birleştirip bu elemanlar üzerindeki gerilim değerini bulmak olabilir.
+
+603
+00:47:18,912 --> 00:47:25,892
+İki gözlü duruma düşmek adına da 6 ve 3 ohmluk dirençlerin paralelliği 2 ohm yapar. Onu kullanabiliyoruz.
+
+604
+00:47:25,891 --> 00:47:48,092
+Bunu kullandığımız vakit kaynaklar tersiyonlu olduğu için net bunların katkısı 2 amper olarak gerçekleşmiş olacak. Şu koldan geçen akım 2 amper bölü 10 çarpı 2 yani 0.4 amper 8 ohmdan da geçtiğine göre 3.2 voltluk bir V0 değerini hesaplamış oluyoruz.
+
+605
+00:47:48,092 --> 00:47:57,332
+Yani gördüğünüz gibi bu yöntemin kullanımı devre çözümüne ilişkin daha basit topolojileri bize götürdüğü için avantajlı olmuş oluyor.
+
+606
+00:47:59,871 --> 00:48:02,011
+Dakikamızı tekrar kontrol edelim. Tamam.
+
+607
+00:48:03,192 --> 00:48:08,371
+Benzer şekilde I0 akımını bulmaya yönelik olarak bir örnek var.
+
+608
+00:48:09,272 --> 00:48:11,571
+Burada neler yapabiliriz?
+
+609
+00:48:13,112 --> 00:48:14,231
+Var mı sizin fikriniz?
+
+610
+00:48:20,820 --> 00:48:28,039
+Mesela şu tarafta kaynağı seri hale getirdiğimiz vakit bir ilerleme sağlayabiliriz.
+
+611
+00:48:31,539 --> 00:48:41,739
+Soldan başlayalım. Önce topolojik olarak çizelim. Daha sonra bizi nihai hedefe ulaştırıyor mu diye bakabiliriz.
+
+612
+00:48:44,019 --> 00:48:50,999
+Sağdaki akım kaynağının gerilim kaynağı çekebiliriz. Her ikisini aynı anda yapalım. Topolojik olarak iki adımı bir seferde atmış olalım.
+
+613
+00:48:50,999 --> 00:49:01,639
+Dolayısıyla şuradaki şu çizmiş olduğum terminaller açısından bu tarafa baktığım haliyle bunun eş değeri olarak şunu yazabileceğimizi biliyoruz.
+
+614
+00:49:03,219 --> 00:49:09,179
+Burada gerilim değerimiz 30 volt olacak. Direnç değerimiz 6 ohm olacak.
+
+615
+00:49:09,999 --> 00:49:13,919
+Burada bunlara paralel bir 3 ohmluk direncimiz var.
+
+616
+00:49:14,819 --> 00:49:18,720
+Şurada eksi artı 5 voltluk bir kaynağımız var.
+
+617
+00:49:18,720 --> 00:49:22,639
+7 ohmluk bir direncimiz var.
+
+618
+00:49:22,720 --> 00:49:24,300
+Bize buradan geçen akım soruluyor.
+
+619
+00:49:24,300 --> 00:49:33,479
+Bir de şu taraftaki bu seferde bu iki terminalden baktığımız haliyle olan devre eş değeri için kaynak dönüşümü yapalım.
+
+620
+00:49:34,019 --> 00:49:38,959
+3 amperlik bir kaynak akım kaynağı bir de 5 ohmluk bir direnç buna paralel olarak var.
+
+621
+00:49:39,060 --> 00:49:48,580
+O zaman bunun yerine yine 5 ohmluk bir seri direnç ve 3 kere 5 de 15 yapacak şekilde artı ve eksi.
+
+622
+00:49:48,720 --> 00:49:51,840
+bir tane de gerilim kaynağını buraya bağlayabiliriz.
+
+623
+00:49:53,700 --> 00:49:55,959
+Peki bu noktadan sonra nasıl ilerleyeceğiz?
+
+624
+00:50:00,436 --> 00:50:01,755
+Bundan sonra ne yapalım?
+
+625
+00:50:24,563 --> 00:50:25,563
+Var mı fikri olan?
+
+626
+00:50:40,724 --> 00:50:54,443
+30 voltlu akım kaynağı. Az önce gerilim kaynağından akım kaynağı yapmıştık. Hiç değiştirmeyelim mi diyorsunuz yani? Evet. Belki daha pratik bir şey çıkıyordur. Bakalım isterseniz.
+
+627
+00:51:03,188 --> 00:51:12,827
+Evet, bakın şurada bu 6 Ohmluk direnci biz buraya taşıyabiliriz veya taşımasak da şu ikisinin birbirine paralel olduğunu biliyoruz değil mi?
+
+628
+00:51:13,547 --> 00:51:21,047
+Şu uçlardan baktığımız haliyle 6 Ohmluk direnç ile 3 Ohmluk direnç birbirine paralel. Bu bilgiyi kullanalım önce.
+
+629
+00:51:22,147 --> 00:51:28,767
+Dolayısıyla 6 Ohm, 3 Ohm paralel olduğu için 6 paralel 3, 2 Ohmluk bir direnç elde ederiz.
+
+630
+00:51:28,767 --> 00:51:36,368
+Bu durumda kaynağımız için 2,0, 5 amperlik değerlerimiz var.
+
+631
+00:51:36,368 --> 00:51:39,967
+Şimdi geri kalanını yazacak olursak.
+
+632
+00:51:43,411 --> 00:52:11,211
+7, 10. Bize şuradan geçen akım soruluyor. Burada yine benzer bir mantık aslında geçerli. Bunu olduğu gibi koruyacaktık. Pardon. Şurada 5, 10 dönüştürdüm. 15 voltluk kaynağımız da burada var. Kalsın. Şimdi burada artık şunun yerine, bunun yerine bir gerilim kaynağı koyarsam daha pratik bir sonuç elde etmiş olurum. Bu kaçtı bu arada? 5 volttu.
+
+633
+00:52:11,211 --> 00:52:29,132
+Bunun yerine bir gerilim kaynağı koyalım. 10 voltluk bir kaynak. Buna seri bir direncimiz var. Değeri kaç olacak? Bu değer kaçtı? 2 ohm. Daha sonrasında bu düğümden sonra eksi artı bir 5 voltluk kaynağımız var.
+
+634
+00:52:36,563 --> 00:52:57,664
+Buradaki değerimizde 5 Ohm, pardon, volt yazdım. Ve artı eksi 15 volt haline gelmiş oldu. Şurayı birleştirebiliriz. Burayı birleştirdiğimiz haliyle, bakın kaynak yönleri aynı olduğu için, 15 voltluk bir kaynak,
+
+635
+00:52:57,664 --> 00:53:15,284
+2 Ohm, 7 Ohm, bu tarafta da yine 5 Ohm ve 15 Volt'luk bir başka kaynak.
+
+636
+00:53:15,284 --> 00:53:17,063
+Şu son taraf güzel olmadı.
+
+637
+00:53:34,260 --> 00:54:02,539
+Buradan nasıl hareket edebiliriz? Aslında bir adım daha atıp şunlar yerine paralel iç dirençli akım kaynakları cinsinden yazacak olursak, akım değerimiz ne olacak? 7.5 Amper bir akım kaynağımız var ve buna paralel bir direnç. Gerçi o zaman paralel dirençler adet olarak artmış oluyor.
+
+638
+00:54:02,539 --> 00:54:05,039
+Daha pratik ne yapabiliriz?
+
+639
+00:54:07,719 --> 00:54:11,079
+Bir adım daha atmamıza gerek var mı? Tekrardan düşünelim.
+
+640
+00:54:23,443 --> 00:54:44,143
+Bir tanesini çevirerek ilerlemek bakalım. Ne olacak? Bir tane akım kaynağı olacak. Buna paralel direncimiz olacak. Bir tanesini çevirdik. Yine paralel bir direncimiz var. Akım kaynağı, direncimiz var. Gerilim kaynağımız var. Aslında çok pratik olmadı.
+
+641
+00:54:47,987 --> 00:55:00,187
+bir tık daha ilerleyelim. Şöyle yapalım. 7 Ohm yasası. Bu tarafı da çevirelim. Dolayısıyla burası 7.5 Amper. Direnç değerimiz de 2.
+
+642
+00:55:02,036 --> 00:55:06,895
+Evet, bunu da çevirelim. Onu da şu tarafa doğru çiziyorum artık.
+
+643
+00:55:09,895 --> 00:55:22,115
+Akım kaynağı, paralel direnç, 7 Ohmluk direncimiz. Burada yine direnç 5 Ohm, şu 2 idi, bu 7.5.
+
+644
+00:55:22,115 --> 00:55:28,135
+Ve son olarak bir tane daha akım kaynağımız var. Bunun değeri de ne olacak arkadaşlar?
+
+645
+00:55:28,135 --> 00:55:31,915
+15, 5, 7 miydi?
+
+646
+00:55:32,635 --> 00:55:33,615
+15, 5, 3.
+
+647
+00:55:34,415 --> 00:55:36,155
+3 amperlik bir değer de burada var.
+
+648
+00:55:36,755 --> 00:55:37,716
+Şimdi dolayısıyla
+
+649
+00:55:37,716 --> 00:55:41,995
+iki tane paralel kaynak var.
+
+650
+00:55:41,995 --> 00:55:45,635
+Aynı yönlü oldukları için bunların toplam katkısını
+
+651
+00:55:45,635 --> 00:55:48,995
+şöyle bir çevrini yaptığımızda hesaba katabiliriz.
+
+652
+00:55:49,935 --> 00:55:52,075
+Artı şuradaki iki tane direncimiz var.
+
+653
+00:55:52,175 --> 00:55:53,775
+Bunların serilikleri söz konusu.
+
+654
+00:55:53,935 --> 00:55:56,435
+Yani bu devreyi şuna indirgemiş olacağız.
+
+655
+00:55:56,555 --> 00:55:57,495
+Bir tane kaynak,
+
+656
+00:55:58,135 --> 00:56:13,475
+2 ile 5 ohmlukların paralel hali bir de 7 ohmluk direncin burada kaldı. İşte burada IS değerimiz kaç olacak? 3, 7,5, 10,5 mu oluyor? 10,5 değeri.
+
+657
+00:56:13,475 --> 00:56:18,155
+2 ile 5'in paraleli kaç yapıyorsa artık onu hesaplarız.
+
+658
+00:56:18,875 --> 00:56:21,455
+Daha sonrasında 7'den geçecek akım şuna eşit olacak.
+
+659
+00:56:21,455 --> 00:56:36,715
+10.5 bölü 7 artı 2 ile 5'in paraleli çarpı 2 ile 5'in paralel değeri şeklinde 7 onluk dirençten geçen akımı hesaplayabiliriz.
+
+660
+00:56:36,775 --> 00:56:40,575
+Yani burada dolan başlı oldu biraz ama
+
+661
+00:56:40,576 --> 00:56:41,056
+Hmm.
+
+662
+00:56:45,396 --> 00:57:05,715
+yapabiliriz de burada yöntemi sonuna kadar nasıl kullanabiliriz, nasıl genişletebiliriz onu göstermek adına böyle çeşitlendirmiş olduk. Yoksa bu devreyi de aslında bir düğüm, iki düğüm bunları da birleştirir. İki düğüm üzerinden hesaplamak mümkün düğüm denklemleriyle de.
+
+663
+00:57:05,715 --> 00:57:09,855
+İşte bu kaynak dönüşümünü nasıl çeşitlendiririz onu göstermek istedim.
+
+664
+00:57:17,076 --> 00:57:24,275
+Bakalım hepsi paralel miydi? Peki şu durumu bozuyor bu, 5 voltluk durumu bozuyor, onu kurtarmak lazımdı.
+
+665
+00:57:25,416 --> 00:57:33,375
+Hocam onu da düşünme, onu sanki ara durumda yapsak, hani böyle ara işlemlerde kaynak dönüşümü yapabiliyoruz ya, belki daha iyi olur diye düşündüm.
+
+666
+00:57:33,735 --> 00:57:38,795
+Çünkü sahada 5-10 var, 3 amper var mesela, hepsi yani çoğu paralel gibi soldaki, sahadaki.
+
+667
+00:57:40,155 --> 00:57:44,175
+Kesinlikle öyle görünüyor ama yani şu durumu bozuyor bence.
+
+668
+00:57:44,576 --> 00:57:45,875
+Anladın mı hocam, sağ olun.
+
+669
+00:57:47,076 --> 00:57:54,875
+Dolayısıyla yani bu yöntemi de böyle nihai adımlarına kadar nasıl çeşitlendirebiliriz onu görmüş olduk.
+
+670
+00:57:55,315 --> 00:57:58,495
+Şimdi bundan sonrasında Norton TV'nin teoremlerine geçeceğiz arkadaşlar.
+
+671
+00:57:58,495 --> 00:58:02,335
+Dolayısıyla şimdi bir ara verebiliriz.
+
+672
+00:58:02,416 --> 00:58:06,116
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey varsa alayım.
+
+673
+00:58:07,015 --> 00:58:09,416
+Yoksa bir 10 dakika kadar ara verelim.
+
+674
+00:58:11,336 --> 00:58:13,796
+Hocam ders evge değil de PDF'leri yükleyecek misiniz?
+
+675
+00:58:13,795 --> 00:58:19,755
+PDF'leri yüklemedik mi? Evet yüklemedik değil mi? Tamam. Şu anda hemen yükleyeyim onunla uğraşayım. Tamam.
+
+676
+00:58:21,415 --> 00:58:21,875
+Sağ olun.
+
+677
+00:58:27,347 --> 00:58:31,828
+10 dakika ara diyelim arkadaşlar. 15'de devam ederiz.
+
+678
+01:01:38,164 --> 01:01:49,084
+Sınavla ilgili dersin başında söylediğim şeyi tekrar hatırlatayım. Saat 4'te başlayacak sınavımız. Çoktan seçmeli ve klasik soruların olduğu karma bir sınav olacak.
+
+679
+01:01:50,803 --> 01:02:04,084
+Özellikle klasik sorular için çözümlerinizi birer dosya olarak yüklemeniz gerekiyor. Dosya yükleme sınav süresi dahilinde olacak. Ek bir süre yok. Onları söylemiştim.
+
+680
+01:02:04,084 --> 01:02:14,204
+Konularda daha önceki hafta söylediğim gibi ilk 3 haftanın yani bizim planımız vardı hatırlayacak olursanız o planımızdaki ilk 3 haftanın konularıydı.
+
+681
+01:02:14,204 --> 01:02:32,424
+Yani nelerdi onlar? Bakacak olursak işte bu OM yasası, seri paralel devreler, Kirchhoff gerilim, Kirchhoff akımlar kanunları ve sonrasında da düğün ve çevre denklemleri bu 3 haftanın konusundan olacak.
+
+682
+01:02:32,423 --> 01:02:38,423
+kısasınavımız. Dersin başında bunu söylemiştim. Tekrar soran olmuş. O yüzden hatırlatmak istedim.
+
+683
+01:09:58,739 --> 01:10:00,239
+Evet arkadaşlar devam edelim.
+
+684
+01:10:00,379 --> 01:10:01,679
+Kaldığımız yerden
+
+685
+01:10:01,679 --> 01:10:04,140
+Norton TV'nin
+
+686
+01:10:04,140 --> 01:10:05,680
+teoremleriyle devam edecektik.
+
+687
+01:10:10,979 --> 01:10:12,399
+Şimdi Norton
+
+688
+01:10:12,399 --> 01:10:14,539
+ve TV'nin teoremleri
+
+689
+01:10:14,539 --> 01:10:16,059
+aslında temel olarak
+
+690
+01:10:16,059 --> 01:10:16,899
+şunu söylüyor.
+
+691
+01:10:18,019 --> 01:10:19,959
+Doğrusal elemanlardan oluşan bir
+
+692
+01:10:19,959 --> 01:10:21,259
+kompleks devremiz olsun.
+
+693
+01:10:22,299 --> 01:10:23,739
+Bu kompleks devrenin
+
+694
+01:10:23,739 --> 01:10:25,539
+bir yük direnci herhangi bir
+
+695
+01:10:25,539 --> 01:10:27,739
+RL değeri için bunu sağlayacaktır
+
+696
+01:10:27,739 --> 01:10:28,239
+tabii ki.
+
+697
+01:10:28,739 --> 01:10:47,939
+Bu yük direncine etkisini eşdeğer olarak sadece bir bağımsız gerilim kaynağı ve buna seri bir direnç veya bağımsız bir akım kaynağı ve buna paralel bir direnç şeklinde eşdeğerini oluşturabiliriz diyor.
+
+698
+01:10:48,699 --> 01:10:50,879
+Norton ve Teve'nin teoremleri bunu söylüyor.
+
+699
+01:10:50,879 --> 01:10:58,839
+Tevenin ideal olmayan bir gerilim kaynağı ile bu kompleks linear devrenin karşılığını oluşturmayı özetliyor.
+
+700
+01:10:59,359 --> 01:11:10,219
+Norton teoremi ise kompleks devrenin bir yük direncine etkisini eşdeğer olarak bir ideal olmayan akım kaynağı ile oluşturabileceğimizi söylüyor.
+
+701
+01:11:11,239 --> 01:11:16,219
+Dolayısıyla burada her bir yöntem için aslında ikişer tane bilinmeyen ortaya çıkmış oluyor.
+
+702
+01:11:16,219 --> 01:11:33,219
+Tevenin teoremi için eşdeğer devrenin ideal kaynağı ve iç direnç değerini RTH ve VTH, Tevenin gerilim ve Tevenin direnci şeklinde isimlendirebileceğimiz bu iki parametresini hesaplamamız gerekiyor.
+
+703
+01:11:34,079 --> 01:11:42,659
+Veya bu kompleks devreye eşdeğer olarak ideal olmayan bir akım kaynağı içinde Norton akımı ve Norton direncini hesaplamamız gerekiyor.
+
+704
+01:11:42,659 --> 01:11:58,100
+Aslında biz biliyoruz ki bu kompleks devreye eşdeğer olarak ben A'ya karşılık B'yi yazabiliyorsam ve bir başka bilgi A'ya karşılık C'yi yazabiliyorsam aslında B ile C arasındaki ilişkiyi az önce zaten kaynak dönüşümü cinsinden tanımlamıştık.
+
+705
+01:11:58,259 --> 01:12:08,900
+Dolayısıyla ben burada RTH ve RN ile ilgili ilişkiyi ve benzer şekilde VTH ile IN arasındaki ilişkiyi az önce çıkartmıştık.
+
+706
+01:12:08,900 --> 01:12:10,299
+Bunu söyleyebilirim.
+
+707
+01:12:10,299 --> 01:12:12,960
+Peki olay ne?
+
+708
+01:12:13,239 --> 01:12:18,460
+Aslında bu kompleks devreye karşılık VTH ve RTH doğrudan nasıl hesaplanır?
+
+709
+01:12:18,820 --> 01:12:22,159
+Yine kompleks devreye karşılık IN ve RN nasıl hesaplanır?
+
+710
+01:12:22,839 --> 01:12:24,900
+Buna bir bakış açısı şu olabilir.
+
+711
+01:12:25,680 --> 01:12:28,359
+Sadece tevenin eşdeğeri için yöntemleri öğreniriz.
+
+712
+01:12:28,479 --> 01:12:33,299
+Daha sonra teveninden Norton'a dönüşümü zaten kaynak dönüşümüyle elde edebiliyoruz.
+
+713
+01:12:33,799 --> 01:12:35,279
+Bu noktadan hareket edebiliriz.
+
+714
+01:12:35,279 --> 01:12:37,579
+Buradaki temel bir kavram arkadaşlar.
+
+715
+01:12:37,579 --> 01:12:43,259
+devrenin bir terminalden bakıldığı haliyle eş değerinin elde edilmesi.
+
+716
+01:12:43,719 --> 01:12:45,040
+Bu terminal neresi?
+
+717
+01:12:45,639 --> 01:12:47,159
+Terminali şöyle ifade ediyoruz.
+
+718
+01:12:47,159 --> 01:12:55,059
+Şurada kompleks devremizin aslında şu noktalı çizgilerle işaretlediğimiz yapı olduğunu,
+
+719
+01:12:55,680 --> 01:13:04,659
+bunun iki adet terminali olduğunu, bu terminalin bir başka devre elemanına ki burada bir yük direnci bağlanarak etki gösterdiğini düşünelim.
+
+720
+01:13:04,659 --> 01:13:12,779
+Burada da noktalı çizgiler çerçevesinde bu kompleks devrenin eş değerini burada oluşturuyoruz.
+
+721
+01:13:12,839 --> 01:13:17,919
+Yani bu yük direnci bu eş değerliliği oluşturduğumuz sistemin dışında bir yapı.
+
+722
+01:13:18,400 --> 01:13:19,279
+Ona dikkat edelim.
+
+723
+01:13:19,839 --> 01:13:21,600
+Özellikle söylemek istedim.
+
+724
+01:13:21,600 --> 01:13:47,040
+Burada biz şu yönde bakmış olduğumuz bu iki terminal arasında bu yönde bakmış olduğumuz kompleks devrenin eş değerini yine bu iki terminal arasında bu yönde bakmış olduğumuz ideal olmayan gerilim kaynağı ve yine buradaki iki terminal arasında bu yönde bakmış olduğumuz ideal olmayan akım kaynağı olarak yazabileceğimizi Norton ve Temen'in teoremleri çerçevesinde söylemiş oluyoruz aslında.
+
+725
+01:13:50,036 --> 01:13:55,275
+Dediğim gibi problem burada kompleks devreden TV'nin parametrelerini belirlemek.
+
+726
+01:13:55,375 --> 01:13:57,315
+Yani VTH ve RTH'i belirlemek.
+
+727
+01:13:57,395 --> 01:14:01,036
+Yoksa zaten TV'nin varsa elimizde Norton'u hesaplamak kolay.
+
+728
+01:14:02,015 --> 01:14:04,655
+Dolayısıyla burada da benzer akışı izliyor olacağız.
+
+729
+01:14:05,315 --> 01:14:08,415
+TV'nin eşdeğeri için yöntemleri tanımlayacağız.
+
+730
+01:14:08,575 --> 01:14:12,355
+Buradan yola çıkarak önce TV'nin hesaplayıp sonra Norton'u hesaplayabilirsiniz.
+
+731
+01:14:12,675 --> 01:14:19,855
+Veyahut da bu aradaki dönüşümü, iki adımlı dönüşümü pratik bir halde pratikleştirip doğrudan hesaplamak da mümkün olabilir.
+
+732
+01:14:20,036 --> 01:14:36,296
+Şimdi birinci yöntem verilen bir kompleks devrenin terminalleri ucundan baktığımız haliyle eşlerini yazmak istediğimizde birinci yöntem bu terminallerden baktığımız taraf için kaynak dönüşümleri yaparak neticede burada lineer elemanlar var.
+
+733
+01:14:36,396 --> 01:14:36,796
+Ne olabilir?
+
+734
+01:14:37,095 --> 01:14:40,495
+İşte bağımlı kaynak, bağımsız kaynak, direnç gibi elemanlar var.
+
+735
+01:14:41,015 --> 01:14:44,315
+Ve hepsi için aslında bu kaynak dönüşümlerini tanımlamış oluyoruz.
+
+736
+01:14:44,315 --> 01:14:57,675
+Böyle olduğu için kaynak dönüşümleri yapa yapa yapa bir gerilim kaynağı ve seri direnç kalıncaya kadar bu kaynak dönüşümünü yürütmek demek aslında devreye ilişkin tevenin parametrenin belirlemeye karşılık geliyor.
+
+737
+01:14:58,155 --> 01:15:00,735
+Bir örnek üzerinde bunu ilerletelim.
+
+738
+01:15:01,655 --> 01:15:02,955
+Adım adım gidelim pardon.
+
+739
+01:15:04,355 --> 01:15:08,476
+Burada yük direncimiz ikinci bir network, ikinci bir ağ.
+
+740
+01:15:08,655 --> 01:15:10,415
+Az önce söylemeye çalıştığım buydu.
+
+741
+01:15:10,415 --> 01:15:14,975
+Bizim ilgilendiğimiz bu sol taraftaki karmaşık devre iki terminalli bir eleman.
+
+742
+01:15:15,435 --> 01:15:18,915
+Bunu yine iki terminalli olan network B'ye bağlayacağız.
+
+743
+01:15:19,036 --> 01:15:21,855
+Ki burada network B sadece bir yük direncinden oluşuyor.
+
+744
+01:15:22,935 --> 01:15:23,855
+Ne yapacağız şimdi?
+
+745
+01:15:24,036 --> 01:15:25,435
+Birinci yöntemi yürütmek istersek.
+
+746
+01:15:25,555 --> 01:15:27,495
+Kaynak dönüşümleri yaparak ilerleyeceğiz.
+
+747
+01:15:27,615 --> 01:15:32,415
+Burada bir ideal olmayan gerilim kaynağı var.
+
+748
+01:15:32,515 --> 01:15:35,055
+Bunu bir akım kaynağına çevirirsek paralel direnç.
+
+749
+01:15:35,155 --> 01:15:37,396
+Dolayısıyla 3 ile 6 birbirine paralel gelecek.
+
+750
+01:15:37,396 --> 01:15:41,056
+Oradan 2 ohmluk bir direnç paralel olarak var.
+
+751
+01:15:41,135 --> 01:15:42,476
+Bir de akım kaynağımız var.
+
+752
+01:15:42,616 --> 01:15:46,275
+O akım kaynağını da yine kaynak dönüşümüyle gerilim kaynağını dönüştürürsek
+
+753
+01:15:46,275 --> 01:15:53,595
+2 ohmla 7 ohm birbirine seri olacak ve 9 ohmluk RTH değerini hesaplamış olacağız.
+
+754
+01:15:54,116 --> 01:15:55,735
+Gerilim değerini nasıl ele alacağız?
+
+755
+01:15:57,916 --> 01:15:59,455
+Önce akım kaynağı için bakalım.
+
+756
+01:15:59,896 --> 01:16:06,175
+Akım kaynağı için baktığımızda 4 amperlik bir kaynak var.
+
+757
+01:16:06,175 --> 01:16:13,215
+Daha sonrasında da 2'ye 7, 9 yapacaktı.
+
+758
+01:16:13,916 --> 01:16:15,155
+Onu da tekrar dönüştürdüm.
+
+759
+01:16:15,256 --> 01:16:17,495
+Biz de ne olduğunu şu anda kafadan hesaplayamadım.
+
+760
+01:16:17,556 --> 01:16:18,735
+Şöyle örnek üzerinden gidelim.
+
+761
+01:16:19,495 --> 01:16:26,116
+Birinci yapacağımız işlem buradaki ideal olmayan kaynak için ideal olmayan akım kaynağı olarak yazmak.
+
+762
+01:16:26,276 --> 01:16:28,916
+3 ohm de olduğu gibi geldi.
+
+763
+01:16:29,715 --> 01:16:33,375
+Akım kaynağı karşılığı da 12 bölü 3'den 4 ampere olarak geldi.
+
+764
+01:16:33,375 --> 01:16:36,976
+Burada bu iki direncin seriliği paralelliğinden faydalanacağız.
+
+765
+01:16:38,135 --> 01:16:47,756
+Daha sonrasında da buradaki kaynağımızı tekrar dönüştürürsek 8 voltluk bir kaynak ve 2 ohmluk bir direnç olacak.
+
+766
+01:16:48,055 --> 01:16:53,135
+Seri olduğu için de 8'e 9'luk bir değere gelmiş olacak.
+
+767
+01:16:53,135 --> 01:17:05,275
+Dolayısıyla bu karmaşık devreden yola çıkarak kaynak dönüşümlerini arda arda kas kat uygulayarak 8 voltluk TV'nin gerilim değerini ve 9 ohmluk TV'nin eş değer direncini hesaplamış olduk.
+
+768
+01:17:05,835 --> 01:17:09,615
+Dolayısıyla birinci yöntemin yürütülmesi bu şekilde olmuş oluyor.
+
+769
+01:17:10,035 --> 01:17:13,595
+Güçle ilgili hesap daha önce yaptığımız gibi olduğu için tekrar onun üzerinde durmuyorum.
+
+770
+01:17:13,595 --> 01:17:28,116
+İkinci yöntemimiz ise arkadaşlar sistemde ilk başta kaynak dönüşümlerini yaparken açık kaynak durumunu ele alarak bir çözüm yapmıştık ya ona benzer bir durum.
+
+771
+01:17:28,875 --> 01:17:33,375
+Hangi uç durumlara karşılık geliyor aslında bakın burada açıklanmış yöntem.
+
+772
+01:17:33,375 --> 01:17:42,655
+Aslında devrenin yük direncini devreden çıkarttığımız durumda bu terminaller arasında kalan gerilim değerine bakalım.
+
+773
+01:17:42,655 --> 01:17:46,655
+Bir de bu devrenin bu...
+
+774
+01:17:47,188 --> 01:18:03,407
+çizikli çizgilerle işaretli devrenin terminallerini kısa devre yaptığımızda buradan geçecek akım değerine bakalım diyor. Yani yük direnciğine bağladığımız zaman da benzer şekilde fonksiyon gösteriyor. Bu hangi durumlara karşılık geliyor sizce? RL'nin hangi özel durumlarına karşılık geliyor?
+
+775
+01:18:11,604 --> 01:18:38,923
+Bir daha sorar mısın? Sorayım. Şimdi biz burada kesikli, çizgili, taraflı veya burada pembeyle, işaretli, kompleks devreyle ilgileniyoruz ya. Bu ikinci metot olarak diyor ki, sen RL'yi çıkart, daha sonra bu iki terminal arasındaki gerilimi ölç, bunu VOC, Open Circuit Voltage olarak kaydet diyor. Daha sonra da yine RL'yi çıkartmıştık ya, bu iki terminal arasında bir tane kısa devre eleman koy, buradan geçen akımı ölç diyor.
+
+776
+01:18:38,923 --> 01:18:52,163
+Bunlar sana şunlara ilişkin bir bilgi verecek diyor. Bu yöntemde direnci çıkarttık, açık devre yaptık ve kısa devre tel koyduk. Bunlar R'lerin hangi uç değerlerine karşılık geliyor?
+
+777
+01:18:56,595 --> 01:19:24,795
+Yani RL'nin iki tane uç değeri var. Bunlardan bir tanesi sıfır, diğeri de sonsuz. Evet. Dolayısıyla yani RL'nin herhangi bir genel hali için değil, özel iki uç değeri için çözüm yapmış oluyoruz. Bu karmaşık devre için RL'yi çıkartıp kısa devre ve açık devre değerlerini ölçmek, madem bu devreler eşdeğer, bu taraf için de RL'yi çıkarttıktan sonra açık devre gerilim ve kısa devre akımlarını ölçmeye eşdeğer olmalı.
+
+778
+01:19:24,795 --> 01:19:31,735
+Şimdi ben burada bu kompleks devrede RL'yi çıkartıp bu uçlar arasındaki gerilim ve ölçtümde bu aslında
+
+779
+01:19:31,735 --> 01:19:35,915
+Tamam şimdi onu söyleyeceğim zaten.
+
+780
+01:19:36,415 --> 01:19:37,995
+Pratik bir şekilde hesaplamak için.
+
+781
+01:19:38,735 --> 01:19:44,235
+Bu iki devre birbirine eşdeğer olduğuna göre RL'yi çıkarttığımız zaman açık devre gerilimini ölçtüm, not ettim.
+
+782
+01:19:44,695 --> 01:19:46,956
+Bunun Thevenin eşdeğerindeki karşılığı ne?
+
+783
+01:19:47,276 --> 01:19:48,335
+RL'yi çıkartalım.
+
+784
+01:19:49,475 --> 01:19:52,675
+RL'yi çıkarttığımızda şöyle çizerek göstereyim.
+
+785
+01:19:54,795 --> 01:20:01,095
+RL'yi çıkarttık. Burası açık devre oldu artık. Benim burada ölçmüş olduğum gerilim neye eşit olacak arkadaşlar?
+
+786
+01:20:03,255 --> 01:20:23,415
+Veya hesapladığım da diyebilirim. Neye eşit olacak? Açık devre oldu burası. Yani bu üç tane eleman vardı. Açık devre oldu. Akım akmıyor. Dolayısıyla VTH dediğimiz gerilim eşit olacak. Demek ki ben bu kompleks devrede RL'yi çıkartıp bu uçlarda gerilim ölçtüğünde VTH'i zaten bulmuş oluyorum.
+
+787
+01:20:23,415 --> 01:20:51,415
+Peki kısa devreye gelelim şimdi. Kısa devrede ne oluyor bakalım. Ben bu RL yerine kısa devre eleman koyarsam buradan geçen akım not ettim. Ölçtüm, not ettim. Burada da bunun yerine kısa devre eleman koydum. Ve bir akım değeri ölçtüm. I diye bir akım değeri ölçtüm. Bu akım değeri bunlarla nasıl ilişkili? Çok pratik bir şekilde. İyi dediğimiz akım VTH bölü RTH eşit. Ben bunu zaten az önce bulmuştum. Dolayısıyla bu bana RTH'i bulmamı sağlayacak.
+
+788
+01:20:51,415 --> 01:21:05,036
+Demek ki RTH dediğimiz değer VOC bölü IOC dediğimiz akıma karşılık gelecek. IOC dediğimizde neydi? Bizim şuradaki ölçmüş olduğumuz akım değeri. Bu şekilde eşleştirme yapmış oluyoruz.
+
+789
+01:21:05,036 --> 01:21:20,015
+Evet. Dolayısıyla pratiklik olması açısından ben buraya bir RL yükü bıraksam, onun üzerinden hesap yapsam buraya başka terimler girecek, iş uzayacak. Kısa devre yaptığım zaman hızlı bir şekilde çözüm elde edebiliyorum. İkinci yöntem de bu şekilde.
+
+790
+01:21:21,415 --> 01:21:23,395
+Clear edelim.
+
+791
+01:21:24,875 --> 01:21:27,055
+Buna ilişkin aynı örnek üzerinden ilerleyelim.
+
+792
+01:21:28,955 --> 01:21:30,435
+Devremizi açık devre yaptık.
+
+793
+01:21:30,515 --> 01:21:33,215
+Şuradaki gerilim ölçeceğiz veya hesaplayacağız.
+
+794
+01:21:33,315 --> 01:21:34,235
+Aynı işlemde.
+
+795
+01:21:34,355 --> 01:21:38,315
+Şimdi buradaki hesabımıza bakacak olursak 7 onluk direnç üzerinden zaten akım akmıyor.
+
+796
+01:21:38,415 --> 01:21:39,175
+Bu gitti.
+
+797
+01:21:39,895 --> 01:21:41,675
+3 on var, 6 on var.
+
+798
+01:21:41,775 --> 01:21:43,595
+Gerilim bölücü olarak çalışacaklar.
+
+799
+01:21:43,695 --> 01:21:47,015
+Buraya 2 V, buraya V kadar değil mi?
+
+800
+01:21:47,675 --> 01:21:48,455
+Gerilim düşecek.
+
+801
+01:21:48,555 --> 01:21:50,115
+Dolayısıyla 12 bölü 3 X.
+
+802
+01:21:50,115 --> 01:21:57,435
+4 yapar. VOC dediğimiz gerilim 4 voltla yanlış mı hesapladık? Hemen yanlış hesaplamışım.
+
+803
+01:21:58,035 --> 01:22:05,815
+Hocam tersi yaptık sanki. 8 volt olacaktı. V'ye 2V olacaktı. Direnci kadar gerilim düşecekti. V'ye 2V.
+
+804
+01:22:05,815 --> 01:22:18,095
+Ben V'ye 3V mi dedim? 2V'ye V dedik hocam. V'ye V mi dedik? Tamam peki. Dolayısıyla burada 2X'lik gerilim düşümü olacak.
+
+805
+01:22:18,095 --> 01:22:28,676
+Toplamda 3x, 12 bölü 3, 4. Burada 2 kat düşeceği için 8 voltluk değer elde ettik. Bu zaten VOC dediğimiz değer doğrudan VTV'nin eşit.
+
+806
+01:22:28,676 --> 01:22:34,756
+Şimdi kısa devre yaptığımız durumu ele alalım. Bu durumda da şu koldan geçecek akımı bulmaya çalışıyoruz.
+
+807
+01:22:35,316 --> 01:22:43,575
+Bunun için devre analiziyle bunu yapmamız mümkün. İki tane kol var. Bunlar üzerinden hesap yapabiliriz.
+
+808
+01:22:43,575 --> 01:22:55,335
+7 ile 6 birbirine paralel 3 bunlara seri. Dolayısıyla 7 ile 6'nın paralelliğinden 3'ün serisinden çıkan eş değer direncimizi
+
+809
+01:22:55,764 --> 01:22:57,863
+gerilim değerimize bölersek
+
+810
+01:22:57,863 --> 01:22:59,623
+şu ana kol akımını
+
+811
+01:22:59,623 --> 01:23:01,483
+bulmuş oluruz. Ana kol akımı ikiye
+
+812
+01:23:01,483 --> 01:23:03,704
+ayrılacak. Direnç
+
+813
+01:23:03,704 --> 01:23:05,543
+değerlerine göre ters orantılı bir şekilde
+
+814
+01:23:05,543 --> 01:23:07,283
+bölünecek. Dolayısıyla
+
+815
+01:23:07,283 --> 01:23:08,764
+I, M, ana kol main
+
+816
+01:23:08,764 --> 01:23:11,603
+akımımızı 13'e
+
+817
+01:23:11,603 --> 01:23:13,364
+bölüp 6 ile
+
+818
+01:23:13,364 --> 01:23:15,143
+çarptığımız durumda da
+
+819
+01:23:15,143 --> 01:23:16,364
+biz buradaki
+
+820
+01:23:16,364 --> 01:23:19,163
+akım değerimizi elde ederiz.
+
+821
+01:23:19,604 --> 01:23:20,703
+Bu akım değerini
+
+822
+01:23:20,703 --> 01:23:23,363
+VTH 8 volta böldüğümüzde
+
+823
+01:23:23,363 --> 01:23:25,243
+RTH değerimizi elde ederiz ki bu
+
+824
+01:23:25,243 --> 01:23:28,104
+9 olma karşılık geliyor zaten hesap olarak da.
+
+825
+01:23:28,923 --> 01:23:37,343
+Dolayısıyla devrenin eş değerini bu açık devre ve kısa devre mantığından hareketle hızlıca hesaplamış olduk.
+
+826
+01:23:37,843 --> 01:23:39,683
+Yani bunun iki yönü var tabii.
+
+827
+01:23:39,863 --> 01:23:41,863
+Yani pratikteki yönü çok daha anlamlı.
+
+828
+01:23:42,344 --> 01:23:43,683
+Direkt voltmetreyi getirin.
+
+829
+01:23:44,183 --> 01:23:46,383
+Devre karmaşık, black box ne olduğunu bilmiyoruz.
+
+830
+01:23:46,403 --> 01:23:47,023
+Hiç önemli değil.
+
+831
+01:23:47,444 --> 01:23:49,023
+Uçlarını ölçtük, gerilim değeri.
+
+832
+01:23:49,944 --> 01:23:52,403
+Sonra ampermetre olarak uçları birleştirdik.
+
+833
+01:23:52,484 --> 01:23:53,423
+Akım değerini ölçtük.
+
+834
+01:23:53,423 --> 01:23:55,464
+bu iki değeri kullanarak VTH
+
+835
+01:23:55,464 --> 01:23:57,104
+RTH'i hesapladık.
+
+836
+01:23:57,503 --> 01:23:59,223
+Deneylerde böyle bir sorumuz var.
+
+837
+01:23:59,383 --> 01:24:01,304
+Bu soruya ilişkin olarak Black Box
+
+838
+01:24:01,304 --> 01:24:02,984
+bir devre geldiğinde bunun
+
+839
+01:24:02,984 --> 01:24:05,083
+eş değerini eğer ki içeride bağımlı
+
+840
+01:24:05,083 --> 01:24:06,944
+kaynak yok bilgisi verilmişse
+
+841
+01:24:06,944 --> 01:24:09,304
+pratik bir şekilde böyle çözebiliyorsunuz.
+
+842
+01:24:11,344 --> 01:24:12,363
+Üçüncü bir yöntem
+
+843
+01:24:12,363 --> 01:24:13,643
+Efendim?
+
+844
+01:24:14,883 --> 01:24:17,183
+RTH içeridekilerin eş değer
+
+845
+01:24:17,183 --> 01:24:18,444
+direnci mi?
+
+846
+01:24:20,783 --> 01:24:21,543
+RTH
+
+847
+01:24:21,543 --> 01:24:23,103
+onu şimdi söyleyeceğiz aslında.
+
+848
+01:24:23,103 --> 01:24:25,023
+özel bir durum için söyleyeceğiz onu.
+
+849
+01:24:25,543 --> 01:24:26,923
+Ama bu ikinci
+
+850
+01:24:26,923 --> 01:24:28,783
+yöntem için bahsediyorduk ya. İkinci
+
+851
+01:24:28,783 --> 01:24:30,583
+yöntem için pratikte
+
+852
+01:24:30,583 --> 01:24:32,264
+elimde black box bir devre var.
+
+853
+01:24:33,423 --> 01:24:34,883
+Uçlardaki gerilimi ölçtüm.
+
+854
+01:24:35,423 --> 01:24:36,843
+Volt metre ile. Sonra uçları
+
+855
+01:24:36,843 --> 01:24:38,963
+amper metre ile birleştirdim. Akımı ölçtüm.
+
+856
+01:24:39,743 --> 01:24:40,764
+İlk ölçtüğüm gerilim
+
+857
+01:24:40,764 --> 01:24:42,583
+değeri zaten VTH'a eşit.
+
+858
+01:24:43,723 --> 01:24:44,783
+RTH yani
+
+859
+01:24:44,783 --> 01:24:46,443
+TV'nin direncimizle
+
+860
+01:24:46,443 --> 01:24:48,264
+ölçtüğüm açık
+
+861
+01:24:48,264 --> 01:24:52,843
+açık devre geriliminin açık devre
+
+862
+01:24:52,843 --> 01:24:54,663
+akımına bölünmesiyle elde ediliyor.
+
+863
+01:24:54,823 --> 01:24:57,223
+Yani az önce
+
+864
+01:24:57,223 --> 01:24:59,023
+yazmıştık şimdi silinmiş de
+
+865
+01:24:59,023 --> 01:25:03,003
+VOC bölü ISC
+
+866
+01:25:03,003 --> 01:25:05,143
+dediğimiz değer RTH'a eşit.
+
+867
+01:25:05,283 --> 01:25:07,023
+Ben bu arada bunu sürekli herhalde
+
+868
+01:25:07,023 --> 01:25:09,123
+açık devre akımı
+
+869
+01:25:09,123 --> 01:25:11,043
+diye mi söyledim? Kısa devre akımı
+
+870
+01:25:11,043 --> 01:25:12,283
+olacak. Düzeltelim.
+
+871
+01:25:13,243 --> 01:25:14,984
+Bunun buna oranı da RTH
+
+872
+01:25:14,984 --> 01:25:17,183
+olacak. İkinci yöntem
+
+873
+01:25:17,183 --> 01:25:19,083
+için. Şimdi üçüncü yönteme gelelim.
+
+874
+01:25:19,183 --> 01:25:21,183
+Az önce sizin bahsettiğiniz duruma karşılık
+
+875
+01:25:21,183 --> 01:25:22,883
+geliyor. Burada yine
+
+876
+01:25:22,883 --> 01:25:25,403
+devreden RL'yi çıkartıyoruz.
+
+877
+01:25:25,543 --> 01:25:27,403
+Açık devre oluşturuyoruz ve uçlardaki
+
+878
+01:25:27,403 --> 01:25:29,183
+gerilimi ölçüp not ediyoruz. Veya
+
+879
+01:25:29,183 --> 01:25:31,543
+gerilimi hesaplayabiliriz. Yani açık devredeyken
+
+880
+01:25:31,543 --> 01:25:32,844
+gerilimi hesaplayabiliriz.
+
+881
+01:25:33,583 --> 01:25:35,284
+Daha sonrasında ise şunu yapıyoruz.
+
+882
+01:25:35,943 --> 01:25:37,083
+Devredeki bütün
+
+883
+01:25:37,083 --> 01:25:39,663
+bağımsız kaynakları sıfırlıyoruz.
+
+884
+01:25:40,443 --> 01:25:41,243
+Bağımsız kaynakları
+
+885
+01:25:41,243 --> 01:25:43,163
+sıfırlamak demek şu kompleks devre için
+
+886
+01:25:43,163 --> 01:25:45,163
+bahsediyorum. Dolayısıyla bu
+
+887
+01:25:45,163 --> 01:25:47,183
+devrenin iç yapısını bildiğimiz bir durum için
+
+888
+01:25:47,183 --> 01:25:48,443
+yani teorik bir durum için
+
+889
+01:25:48,443 --> 01:25:50,924
+gerilim kaynağını sıfırlamak
+
+890
+01:25:50,924 --> 01:25:52,804
+bunun yerine bir kısa devre eleman koymak.
+
+891
+01:25:53,704 --> 01:25:54,823
+Akım kaynağını sıfırlamak
+
+892
+01:25:54,823 --> 01:25:56,384
+bunu açık devre yapmak demek.
+
+893
+01:25:57,664 --> 01:25:58,524
+Daha sonrasında
+
+894
+01:25:58,524 --> 01:26:00,984
+şu terminalden baktığımız haliyle
+
+895
+01:26:00,984 --> 01:26:02,463
+eş değer direnci hesaplıyoruz.
+
+896
+01:26:03,323 --> 01:26:04,484
+İşte bu eş değer direnç
+
+897
+01:26:04,484 --> 01:26:05,524
+RTH'e eşit.
+
+898
+01:26:06,484 --> 01:26:08,244
+İlk ölçtüğümüz gerilim değeri de
+
+899
+01:26:08,244 --> 01:26:10,344
+VTH'e eşit. Şimdi bunu eş değerlik
+
+900
+01:26:10,344 --> 01:26:11,543
+üzerinden ele alalım.
+
+901
+01:26:12,903 --> 01:26:13,924
+Yöntem bize diyor ki
+
+902
+01:26:13,924 --> 01:26:16,183
+RL'yi çıkart açık devre gerilimini ölç.
+
+903
+01:26:16,244 --> 01:26:18,584
+Az önce gördük ki bu eş değer devrede
+
+904
+01:26:18,584 --> 01:26:20,644
+ben RL'yi çıkartıp gerilim ölçersem
+
+905
+01:26:20,643 --> 01:26:22,743
+bu zaten VTH'i veriyordu. Onu not ettim.
+
+906
+01:26:23,643 --> 01:26:24,903
+İkinci olarak diyor ki
+
+907
+01:26:24,903 --> 01:26:26,723
+devrede, yani şu
+
+908
+01:26:26,723 --> 01:26:28,563
+tarafında, eşdeğer devrede gerilim
+
+909
+01:26:28,563 --> 01:26:29,783
+kaynaklarını sıfırla.
+
+910
+01:26:30,643 --> 01:26:32,083
+Bunu yerine kısa devre eleman koy.
+
+911
+01:26:32,723 --> 01:26:34,263
+Koyacağız. Sıfırlamak demek bu demek.
+
+912
+01:26:35,283 --> 01:26:37,023
+Koyduk. Daha sonrasında
+
+913
+01:26:37,023 --> 01:26:39,103
+da şu terminallerden
+
+914
+01:26:39,103 --> 01:26:40,983
+baktığımız haliyle R eşdeğeri
+
+915
+01:26:40,983 --> 01:26:42,963
+hesaplayacağız. R eşdeğer içeride bir tek
+
+916
+01:26:42,963 --> 01:26:45,063
+sıfırladığım zaman
+
+917
+01:26:45,063 --> 01:26:45,803
+şu kalmadı mı?
+
+918
+01:26:49,524 --> 01:26:51,243
+RTH. Dolayısıyla ben buradan
+
+919
+01:26:51,243 --> 01:26:53,063
+baktığımda görmüş olduğum
+
+920
+01:26:53,063 --> 01:26:55,143
+eşdeğer direnç RTH'e zaten eşit.
+
+921
+01:26:55,243 --> 01:26:57,263
+O zaman bu kural burası için de
+
+922
+01:26:57,263 --> 01:26:59,303
+geçerli. Ne demek
+
+923
+01:26:59,303 --> 01:27:01,404
+bu? Bu terminallerden
+
+924
+01:27:01,404 --> 01:27:03,283
+baktığım haliyle içerideki bağımsız
+
+925
+01:27:03,283 --> 01:27:05,583
+kaynakları sıfırlarsam
+
+926
+01:27:05,583 --> 01:27:07,364
+deactivate demiş. Yani
+
+927
+01:27:07,364 --> 01:27:09,223
+gerilim kaynaklarını kısa
+
+928
+01:27:09,223 --> 01:27:11,223
+akım kaynaklarını açık devre
+
+929
+01:27:11,223 --> 01:27:13,284
+yapmak. Zaten R eşi
+
+930
+01:27:13,284 --> 01:27:15,323
+hesaplayabilirim. Bu da RTH'e
+
+931
+01:27:15,323 --> 01:27:17,143
+eşit olmuş olacak. Bu da
+
+932
+01:27:17,143 --> 01:27:19,483
+üçüncü yöntemimiz. Buna ilişkin örneğimize
+
+933
+01:27:19,483 --> 01:27:21,623
+bakalım. Yine
+
+934
+01:27:21,623 --> 01:27:23,544
+açık devre gerilim değerimizi ölçtük.
+
+935
+01:27:23,643 --> 01:27:25,303
+8 volt değerini elde ettik. Şimdi
+
+936
+01:27:25,303 --> 01:27:27,583
+kaynağımızı sıfırladık. 2 ile
+
+937
+01:27:27,583 --> 01:27:29,564
+3 ohm birbirine paralel
+
+938
+01:27:29,564 --> 01:27:31,483
+kalmış olacak değil mi? Şimdi adım
+
+939
+01:27:31,483 --> 01:27:32,623
+adım gidelim isterseniz.
+
+940
+01:27:34,603 --> 01:27:35,323
+Değişmesi.
+
+941
+01:27:37,003 --> 01:27:37,463
+Kaynağı
+
+942
+01:27:37,463 --> 01:27:38,843
+sıfırlayalım öncelikli olarak.
+
+943
+01:27:40,043 --> 01:27:40,323
+3
+
+944
+01:27:40,323 --> 01:27:43,503
+6. Gerilim kaynağı yerine
+
+945
+01:27:43,503 --> 01:27:44,744
+kısa devre eleman koydum.
+
+946
+01:27:45,643 --> 01:27:47,403
+Burada da 7 ohmluk bir direnç var.
+
+947
+01:27:47,403 --> 01:27:50,783
+şu ikisi birbirine paralel oldu.
+
+948
+01:27:50,923 --> 01:27:52,923
+2 ohm buradan var. 7 ohmla bu
+
+949
+01:27:52,923 --> 01:27:54,683
+2 ohm birbirine seri. Demek ki
+
+950
+01:27:54,683 --> 01:27:57,123
+burada
+
+951
+01:27:57,123 --> 01:27:59,704
+9 ohmluk bir eş değer direnç
+
+952
+01:27:59,704 --> 01:28:01,183
+hesaplamış oluyor. Bu 9 ohm da
+
+953
+01:28:01,183 --> 01:28:02,263
+zaten bizim için
+
+954
+01:28:02,263 --> 01:28:05,103
+RTH'a eşit oluyordu.
+
+955
+01:28:05,483 --> 01:28:06,603
+Bunu da
+
+956
+01:28:06,603 --> 01:28:09,403
+paralellik ve
+
+957
+01:28:09,403 --> 01:28:11,463
+serilikten hareketle hesaplamış
+
+958
+01:28:11,463 --> 01:28:13,183
+olduk. Şimdi dördüncü
+
+959
+01:28:13,183 --> 01:28:13,903
+yöntemimiz
+
+960
+01:28:13,903 --> 01:28:17,223
+özel bir durum için geçerli.
+
+961
+01:28:17,403 --> 01:28:25,483
+Dördüncü yöntem arkadaşlar kompleks devre içerisinde bağımsız kaynaklar varsa bu yöntemi kullanacağız.
+
+962
+01:28:25,583 --> 01:28:26,103
+Çok önemli.
+
+963
+01:28:26,983 --> 01:28:30,343
+İçeride bağımsız kaynaklar varsa bu yöntemi kullanacağız.
+
+964
+01:28:30,483 --> 01:28:31,123
+Neden dolayı?
+
+965
+01:28:31,203 --> 01:28:33,744
+Daha önceki yöntemler geçersiz oluyor.
+
+966
+01:28:33,884 --> 01:28:44,943
+Çünkü kaynakları sıfırladığımız zaman mesela açık devre etkisini veya kısa devre etkisini yük direnciyle olduğu durumdan farklı bir durum oluşturuyor bağımlı kaynak üzerinde.
+
+967
+01:28:44,943 --> 01:28:52,884
+Bu durumda dördüncü yöntem içeride kompleks devre içerisinde bağımlı kaynaklar varsa bu yapıyı kullanacağız.
+
+968
+01:28:53,384 --> 01:28:54,463
+Burada şunu yapıyoruz.
+
+969
+01:28:55,763 --> 01:28:58,143
+Tevenin eş değerini hesaplayabilmek adına.
+
+970
+01:28:59,404 --> 01:29:04,824
+Öncelikli olarak yine R'li çıkartıp açık devre gerilim değerini ölçtük.
+
+971
+01:29:04,923 --> 01:29:07,223
+Bu VOC dediğimiz değeri not ettik.
+
+972
+01:29:07,343 --> 01:29:09,384
+Bu doğrudan VTH'a eşit.
+
+973
+01:29:09,703 --> 01:29:09,943
+Güzel.
+
+974
+01:29:10,524 --> 01:29:13,684
+Fakat RTH'i hesaplayabilmek için ne yapacağız?
+
+975
+01:29:13,684 --> 01:29:18,384
+Bu durumda arkadaşlar yük direnci yerine bir tane test kaynağı bağlayacağız.
+
+976
+01:29:19,024 --> 01:29:23,083
+Bu test kaynağının bağımsız bir kaynak olması lazım.
+
+977
+01:29:23,704 --> 01:29:28,964
+Bu test kaynağı ile birlikte bunun total etkisini devrede çözümleyeceğiz.
+
+978
+01:29:29,163 --> 01:29:35,324
+Şimdi bu belirleyici bir şey olduğu için bir parametremizi azaltmış olacağız.
+
+979
+01:29:35,324 --> 01:29:43,504
+Burada temel olarak akım kaynağı ile eşdeğer durum veya gerilim kaynağı ile oluşturulabiliyor.
+
+980
+01:29:43,684 --> 01:29:45,424
+bunlara karşılık durumları
+
+981
+01:29:45,424 --> 01:29:46,824
+inceleyeceğiz.
+
+982
+01:29:49,324 --> 01:29:51,384
+Tabi test kaynağını
+
+983
+01:29:51,384 --> 01:29:52,324
+bağlayarken
+
+984
+01:29:52,324 --> 01:29:55,564
+şimdi top linier bir devre
+
+985
+01:29:55,564 --> 01:29:57,344
+olduğunu söylemiştik. Çok önemli
+
+986
+01:29:57,344 --> 01:29:58,624
+ikinci noktamız da şu.
+
+987
+01:29:59,484 --> 01:30:01,484
+Biz sadece test kaynağından
+
+988
+01:30:01,484 --> 01:30:03,344
+gelen etkiyi inceleyeceğiz burada
+
+989
+01:30:03,344 --> 01:30:05,404
+bağımlı kaynak üzerinde. Dolayısıyla
+
+990
+01:30:05,404 --> 01:30:07,344
+içeride yine bağımsız
+
+991
+01:30:07,344 --> 01:30:09,303
+kaynakları sıfırladıktan sonra
+
+992
+01:30:09,303 --> 01:30:11,204
+test kaynağını uygulayacağız.
+
+993
+01:30:12,524 --> 01:30:13,184
+Tamam mı? Yani
+
+994
+01:30:13,183 --> 01:30:15,003
+test kaynağını uygulamak aslında
+
+995
+01:30:15,003 --> 01:30:16,883
+üçüncü yöntemin üzerine bir
+
+996
+01:30:16,883 --> 01:30:19,423
+ekstra adımmış gibi tanımlarsak
+
+997
+01:30:19,423 --> 01:30:21,003
+daha akılda kalıcı olmuş olur.
+
+998
+01:30:22,043 --> 01:30:22,823
+Tekrar edelim.
+
+999
+01:30:23,023 --> 01:30:25,063
+İçeride bağımlı kaynak
+
+1000
+01:30:25,063 --> 01:30:26,843
+varsa kullanacağımız yöntem
+
+1001
+01:30:26,843 --> 01:30:28,963
+dördüncü yöntem. Bunun
+
+1002
+01:30:28,963 --> 01:30:31,263
+adımları da şunlar. Kompleks
+
+1003
+01:30:31,263 --> 01:30:32,263
+devre black box
+
+1004
+01:30:32,263 --> 01:30:34,823
+RL yük direncini çıkart.
+
+1005
+01:30:34,923 --> 01:30:36,943
+Uçlar terminallerdeki gerilimi ölç.
+
+1006
+01:30:37,423 --> 01:30:39,083
+Bu VTH gerilimine eşit
+
+1007
+01:30:39,083 --> 01:30:41,163
+olacak. Daha sonra
+
+1008
+01:30:41,163 --> 01:30:43,003
+kompleks devre
+
+1009
+01:30:43,003 --> 01:30:44,884
+içerisindeki bağımsız kaynakları
+
+1010
+01:30:44,884 --> 01:30:46,703
+sıfırla ve
+
+1011
+01:30:47,123 --> 01:31:02,163
+yük direnci yerine bir tane test kaynağı bağla ve test kaynağı ile birlikte bu test kaynağı üzerinden geçen akım ve gerilim değerlerine dikkate aldığımızda bu bize RTH'i verecek.
+
+1012
+01:31:02,163 --> 01:31:11,384
+Şimdi bu durumu yine madem bu iki devre birbirine eşdeğer, kompleks devre ile Thevenin eşdeğeri birbirine eşit, bu durumu burada test ederek görelim.
+
+1013
+01:31:11,384 --> 01:31:25,563
+Yöntem bize ne diyor? RL'yi çıkart, uçlardaki gerilimi ölç. RL'yi çıkarttığımız zaman ölçtüğümüz gerilim akım akmayacağı için VTH. Bunu zaten buradan gördük. Bu VTH'e eşit olduğunu gördük.
+
+1014
+01:31:25,563 --> 01:31:38,484
+Şimdi şeye bakalım. İkinci adımına bakalım. İkinci adım diyor ki içerideki bağımsız kaynakları sıfırla. Sıfırladım. Gerilim kaynağı olduğu için kısa devre eleman koydum.
+
+1015
+01:31:38,484 --> 01:32:04,363
+yük direnci yerine de bir tane test kaynağı bağlı. Mesela burası için bir tane akım kaynağı bağlayalım. Bunun da 1 amper olduğunu hipotetik olarak varsayalım. Bu durumda bağımlı kaynak burada olmadığı için çözümü doğrudan görüyoruz aslında. Bizim burada ölçeceğimiz gerilim değeri doğrudan RTH'a eşit olmuş olacak değil mi?
+
+1016
+01:32:04,363 --> 01:32:16,304
+Buradaki V gerilimimiz 1 çarpı RTH. Dolayısıyla ölçmüş olduğumuz gerilim genlik olarak RTH'e eşit olmuş oluyor.
+
+1017
+01:32:16,304 --> 01:32:27,583
+Bu senaryo içeride bu kompleks devre içerisinde bağımlı kaynaklar olduğunda da benzer şekilde eş değerliliği sağlamamızı mümkün kılıyor arkadaşlar.
+
+1018
+01:32:27,583 --> 01:32:29,823
+Örnek üzerinden bakalım.
+
+1019
+01:32:30,083 --> 01:32:34,463
+Yani burada şey olmadığı için hızlı bir şekilde çözüm olacak.
+
+1020
+01:32:35,363 --> 01:32:36,984
+VOC'yi ölçtük 8 volt.
+
+1021
+01:32:38,043 --> 01:32:40,844
+Bağımsız kaynakları sıfırladık.
+
+1022
+01:32:41,623 --> 01:32:47,603
+Dolayısıyla geriye 9 ohmluk bir eşdeğer direnç kaldı.
+
+1023
+01:32:47,603 --> 01:32:57,984
+Biz burada 1 voltluk bir kaynak uygularsak akacak akım 0.1 amper olacak.
+
+1024
+01:32:58,963 --> 01:33:10,023
+Buradan hesapla da zaten devreyi çözdüğümüzdeki eşdeğer direnci hesapladığımızdaki durumla aynı akım değerini ve direnç değerini elde etmiş oluyoruz.
+
+1025
+01:33:10,023 --> 01:33:20,103
+Yani buradaki olay sıfırladıktan sonra bağımsız kaynağı devreyi çözdük ve şu kol üzerinde geçen akım ve gerilim değerlerini birbirine oranladık.
+
+1026
+01:33:20,923 --> 01:33:24,523
+Aslında içeride bağımlı kaynak olduğu durumda daha anlamlı olacak.
+
+1027
+01:33:27,823 --> 01:33:30,743
+Onu bir sonraki örnekte gelecek.
+
+1028
+01:33:30,883 --> 01:33:35,063
+Şimdi yöntem dörde ilişkin karmaşık örnek şurada var.
+
+1029
+01:33:35,423 --> 01:33:36,763
+Adım adım gelelim o zaman ona.
+
+1030
+01:33:42,131 --> 01:34:00,131
+Şimdi bakın, burada sorunun açıklamasında, buradaki devrede 1 kilo ohmluk direncin aslında yük direnci olduğunu, şurada bu network'ün 1 kilo ohmluk dirence bakan tarafı için çözümleyin dediği için anlıyoruz.
+
+1031
+01:34:00,131 --> 01:34:24,511
+anlıyoruz. Dolayısıyla bizim burada anladığımız ilk durum şu. Bu RL direncimiz aslında bu. Bizim eşdeğerliğini aradığımız devre ise bu iki terminalden içeriye doğru baktığımız haliyle işte Thevenin eşdeğeri ve Norton eşdeğerlerini bulmak istiyoruz.
+
+1032
+01:34:24,511 --> 01:34:47,471
+Şimdi burada içeride bir bağımlı kaynak olmadığı için arkadaşlar açık devre iken gerilim değerimizi hesaplasak aslında bu bize ve yine kısa devre iken akım değerimizi hesaplasak bize çözümü verecektir. Daha sonrasında şunu bulup Thevenin eşlerini bulup Norton eşlerine geçeriz.
+
+1033
+01:34:47,471 --> 01:35:08,011
+Öncelikli olarak açık devre için RL'yi çıkarttım. Buradaki gerilim değerimize bakalım kaç oluyor. 3 kilo ohmluk direnç üzerinden herhangi bir akım olmayacak. Dolayısıyla buradaki akım değerimizi de 2 miliamper olarak belirlemiş oluyoruz.
+
+1034
+01:35:08,011 --> 01:35:14,791
+Dolayısıyla 2 kilo ohmluk direnç üzerinde düşecek akım miktarımız ne olur?
+
+1035
+01:35:16,031 --> 01:35:17,191
+Onu bulalım.
+
+1036
+01:35:17,191 --> 01:35:24,671
+Bu akım yönümüz şu yönlü olacağı için 2 kere 2 4'lük bir düşüm olacak.
+
+1037
+01:35:26,191 --> 01:35:28,551
+Sıfırlık bir değer elde etmiş oluyoruz değil mi?
+
+1038
+01:35:28,811 --> 01:35:30,671
+4 burada, 4 burada.
+
+1039
+01:35:32,291 --> 01:35:36,671
+Buraya kalan gerilim miktarı 0 mı olmuş olacak?
+
+1040
+01:35:41,971 --> 01:36:09,431
+Devreden çıkarttık. Akım akmıyor. Bir tek gözümüz kaldı. Bu gözdeki akım değerini akım kaynağı belirler. O zaman bu gözde akacak akım miktarı 2 miliamper. 2 kilo ohmluk direnç üzerinde gerilim düşümü 4 volt olur. Yönü şu yönde olduğu için artı, eksi bu şekilde belirleyebiliriz. Dolayısıyla şu iki uçtan baktığımızdaki gerilim düşümü ne olacak? Sıfır mı oluyor?
+
+1041
+01:36:19,315 --> 01:36:25,495
+Yönlerimiz artı eksi diye arkadaşlar, toplanarak gelecek. Fark olarak değil de toplanarak gelecek. Tekrar bakın.
+
+1042
+01:36:27,355 --> 01:36:35,656
+Çıkarttım devreden. Bu iki terminal ucundan bakıyorum. Açık kaynak gerilimini ölçeceğim. Akım akmadığı için tek bir göze düştüm.
+
+1043
+01:36:36,315 --> 01:36:45,215
+Bu gözde devredeki akımı, akım kaynağı belirleyeceği için 2 mA'lık akım değerimiz bu yönde akacaktır.
+
+1044
+01:37:00,212 --> 01:37:17,011
+Şimdi şöyle, o çıkan sonucu şöyle bakalım. Yoruma baktım da şimdi chat tarafında. Dolayısıyla 2 mA'lık akım bu yönde akacak. O zaman bu referans yönlerini bu eleman için böyle belirlememiz lazım. Bu yöndeki gerilim düşümü 4 volt olacak.
+
+1045
+01:37:17,011 --> 01:37:26,471
+ve ben şu aradaki gerilim farkını istediğime göre şöyle bir çevre yazdığım zaman bu gerilimin 8 volt olduğunu görmüş oluyoruz.
+
+1046
+01:37:26,531 --> 01:37:32,031
+Şimdi bu eleman için baktığımızda da eleman güç harcayan bir eleman olarak ortaya çıkmış oluyor.
+
+1047
+01:37:33,031 --> 01:37:36,231
+Dolayısıyla hani sıfır değil ona dikkat edelim diyecektim.
+
+1048
+01:37:37,271 --> 01:37:42,451
+Ve VOC dolayısıyla VTH değerimizin 8 volt olduğunu hesaplamış olduk.
+
+1049
+01:37:42,451 --> 01:38:08,451
+Şimdi benzer şekilde pratik olması açısından şunu yapabiliriz. İçerideki kaynakları sıfırlayıp terminaller üzerinden baktığımız haliyle eşdeğer direnci hesaplayabiliriz. Bizim terminallerimiz şunlardı. Bu terminaller üzerinden içeri baktığımızda gerilim kaynağını sıfırlamak için kısa devre eleman koyduk.
+
+1050
+01:38:08,451 --> 01:38:15,691
+akım kaynağını sıfırlamak için buraya bir açık devre eleman koyduk.
+
+1051
+01:38:15,851 --> 01:38:23,411
+Bu noktadan baktığımızda gördüğümüz direnç, eşdeğer direnç, 3 ile 2 kilo ohm'un birbirine seri olduğu durum olmuş oluyor.
+
+1052
+01:38:23,411 --> 01:38:30,611
+Dolayısıyla eşdeğer direncimiz 5 kilo ohm. Bu eşdeğer direnç aynı zamanda RTH'a da eşit olacaktı.
+
+1053
+01:38:30,612 --> 01:38:36,671
+bu durumda eşdeğer TV'nin devrimizi
+
+1054
+01:38:41,876 --> 01:39:11,855
+Böyle çizebiliyoruz. RL'de 1 kilo Ohm'du. Buradaki değerlerimiz 5 kilo Ohm. Buradaki değerimiz 8 volt. Bu şu anlama geliyor. Ben bu devre için, bu devre yerine, bu iki elemandan oluşan devreyi koyarsam, buradaki yük direncim ne olursa olsun, 1K, 2K, 5K hiç önemli değil, ne olursa olsun, bu iki devrenin burada oluşturacağı akım değeriyle, bu yük direnci üzerindeki oluşturacağı yeri
+
+1055
+01:39:11,855 --> 01:39:24,975
+düşümü her zaman için eşit olacaktır. Bu yöntemlerden bir tanesini kullanarak hesaplamış olduk. Peki kısa devre akımı kullanarak hesaplayalım bir de bunu. Kısa devre akımı kullanacak olursak da.
+
+1056
+01:39:33,108 --> 01:39:58,547
+Onun için karmaşıklaşıyor tabii. 3K. Bunun yerine kısa devre eleman koyduk. Akım kaynağımız var. Bu şekilde geliyor. 2 mA. Böyle baktığımız zaman tabii iki gözlü bir devre haline gelmiş oldu. Yine çözümleyerek şu koldaki akımı bulmamız mümkün. Ne üzerinden gidelim burada? Çevre üzerinden gidebiliriz belki.
+
+1057
+01:39:58,547 --> 01:40:00,887
+çevre üzerinden gidecek olursak
+
+1058
+01:40:00,887 --> 01:40:08,047
+eksi 4 artı I1 çarpı 2K
+
+1059
+01:40:08,047 --> 01:40:12,367
+ha burada şey oldu tabi bakın
+
+1060
+01:40:12,367 --> 01:40:16,267
+süper mesh konusu vardı ya
+
+1061
+01:40:16,267 --> 01:40:19,407
+aynı kaynağı iki farklı çevre kullandığı vakit
+
+1062
+01:40:19,407 --> 01:40:22,148
+bir denklemimizi yitirmiş oluyorduk
+
+1063
+01:40:22,148 --> 01:40:26,907
+çevrelerden birisini şu şekilde alarak bunu bypass edebiliyorduk
+
+1064
+01:40:26,907 --> 01:40:28,707
+Dolayısıyla iç çevremiz bu olsun yine
+
+1065
+01:40:34,420 --> 01:40:55,719
+Dolayısıyla i1 değerimiz ne eşit olacak? Eksi 2 miliampere eşit olacak değil mi? Bu kolda akacak akım. Yine bu da dış çevre için alacak olursak, Eksi 4 artı I2 çarpı 2K artı I2 çarpı 3K bu da sıfır eşit olacak.
+
+1066
+01:40:55,719 --> 01:41:03,539
+İ2'yi de buradan elde etmemiz mümkün oluyor.
+
+1067
+01:41:03,539 --> 01:41:05,439
+Dört karşı tarafı atsak.
+
+1068
+01:41:09,332 --> 01:41:28,391
+4 bölü 5K gibi bir değer oluyor. Elde etmiş olduğumuz 8 voltla da ilgili bölüm işlemini gerçekleştirirsek, 8 volt bölü 4 bölü 5K işlemini de yaparsak, 2K'nın üzerinden İ1 akımında geçmiyor mu?
+
+1069
+01:41:28,391 --> 01:41:33,491
+2K üzerinden İ1 akımında geçiyor. Şurası için değil mi?
+
+1070
+01:41:33,491 --> 01:41:33,911
+Evet.
+
+1071
+01:41:34,411 --> 01:41:40,871
+Yönleri de aynı olduğu için artı İ1 diye bunu ifade edebiliriz. İ1'imiz eksi 2 idi.
+
+1072
+01:41:42,672 --> 01:41:48,851
+Dolayısıyla eksi 2, eksi 4, 8 mi geçmiş olacak karşıya? 8 bölü 5K olacak değil mi?
+
+1073
+01:41:49,891 --> 01:41:57,071
+İ1 için eksi 2 yazarsak 4, 4 de burada var 8, karşıya attık. 8 bölü 5K olmuş oldu.
+
+1074
+01:41:57,071 --> 01:42:03,811
+Bu durumda oranladığımız zaman da 5K'lık RTH direncini hesaplamış oluyoruz.
+
+1075
+01:42:03,851 --> 01:42:10,051
+Evet uyarı için teşekkürler. Böylelikle bir başka yöntemle de aynı sonucu elde edebildiğimizi gördük.
+
+1076
+01:42:10,491 --> 01:42:16,651
+Tabi burada yöntemleri seçerken pratiklik açısından hangisi bize uygunsa onu kullanabiliriz.
+
+1077
+01:42:17,651 --> 01:42:21,511
+Yani burada RTH hesaplamak daha pratik geldi örneğin bu karmaşık devre için.
+
+1078
+01:42:22,211 --> 01:42:26,571
+Yine buradan hareketle Norton eşlerini nasıl hesaplayacağız?
+
+1079
+01:42:27,071 --> 01:42:30,651
+Norton eşdeğerini hesaplarken Norton direnci 5K olacak yine.
+
+1080
+01:42:31,171 --> 01:42:38,091
+Fakat akım kaynağımızın değeri de 8 bölü 5K şeklinde hesaplayacağımız bir değere sahip olmuş olacak.
+
+1081
+01:42:38,211 --> 01:42:39,931
+Onu da burada gösteriyor zannedersem.
+
+1082
+01:42:42,211 --> 01:42:45,591
+8 bölü 5K 1.6 mA'lık bir değer yapar.
+
+1083
+01:42:46,091 --> 01:42:50,931
+Norton eşdeğerini de kaynak dönüşümünden gelen bilgiyle zaten 5K'ya eşit olacaktı.
+
+1084
+01:42:51,631 --> 01:42:56,591
+Dolayısıyla bu şekilde Thevenini bulup Norton'a dönmemiz mümkün olmuş oluyor.
+
+1085
+01:42:57,071 --> 01:43:02,451
+Benzer bir yapı olduğu için şurayı da kontrol ederek bunu geçiyorum.
+
+1086
+01:43:02,451 --> 01:43:08,692
+Asıl örneğini çözmek isteyeceğimiz durum içeride bağımlı kaynak varkenki durum.
+
+1087
+01:43:10,211 --> 01:43:15,451
+Bağımlı kaynak olduğu durumlarda arkadaşlar yöntem 4 ile tabir ettiğimiz yöntemi kullanacağız.
+
+1088
+01:43:15,552 --> 01:43:16,631
+Yöntem 4 ne diyordu?
+
+1089
+01:43:17,451 --> 01:43:25,871
+Öncelikli olarak eşlerini hesaplamak istediğimiz iki terminalli devre için açık devre gerilimini hesaplayacağız.
+
+1090
+01:43:25,871 --> 01:43:37,111
+ölçeceğiz. Daha sonrasında da içerideki bağımsız kaynakları sıfırlayıp bir test kaynağı bağlayıp sonucu görmeye çalışacağız.
+
+1091
+01:43:37,971 --> 01:43:47,711
+Şimdi burada içeride bir bağımlı kaynak var. Bağımlı kaynak yine terminal uçları arasındaki referans gerilime bağlı olarak tanımlanmış.
+
+1092
+01:43:47,711 --> 01:43:54,351
+Bu durumda açık kaynak gerilimi Vx'i bulmak istersek şurada herhangi bir akım değerimiz yok.
+
+1093
+01:43:54,351 --> 01:44:04,731
+Dolayısıyla bu gözdeki akım değerimizi bağımlı kaynağımız belirliyor.
+
+1094
+01:44:04,851 --> 01:44:08,771
+Bu bağımlı kaynağımızın akım değeriyle de hesap yapacak olursak
+
+1095
+01:44:08,771 --> 01:44:16,691
+burada elde ettiğimiz değer Vx bölü 4000 çarpı 2K'lık bir gerilim düşümü.
+
+1096
+01:44:16,691 --> 01:44:19,591
+Bu direnç üzerinde oluşmuş olacak.
+
+1097
+01:44:19,731 --> 01:44:21,471
+Üzerine yazarak şimdi ilerleyelim.
+
+1098
+01:44:21,471 --> 01:44:44,731
+Buradaki açık kaynak durumu için 3K üzerinden akım akmaz. Buradaki akım yönünü bağımlı kaynak belirliyor. Bu yönlü bir akım var. Dolayısıyla buradaki referans yönlerimizi de böyle belirleyelim. Dolayısıyla burada VX bölü 4000'lik bir akım değeri var. Bunu 2K ile çarptığımızda da bu bizim gerilim değerimiz oldu.
+
+1099
+01:44:44,731 --> 01:44:52,731
+Şimdi bu iki terminal arasındaki gerilim farkına bakacak olursak da eksi yönden eksi yönden dolayısıyla bu ikisinin toplamı olacak.
+
+1100
+01:44:52,731 --> 01:45:00,771
+4 artı 2K var. 4000 gitti. Vx bölü 2
+
+1101
+01:45:01,427 --> 01:45:29,367
+ona karşılık gelir. Neye eşit olacak arkadaşlar? Buradaki Vx gerilimine eşit olacak. Bu durumda diyebiliriz ki Vx bölü 2 eşittir 4, Vx gerilimimiz 8 volt olarak elde edilmiş oluyor. Bu bizim VOC dediğimiz gerilim değeriydi. Bu aynı zamanda Thevenin eşdeğerini yazmak istediğimizde Thevenin eşdeğer gerilimine de eşit olacak. Bunu belirledik. Daha sonrasında ikinci adıma geçecek olursak,
+
+1102
+01:45:29,367 --> 01:45:38,087
+İkinci adımda bağımsız kaynağı sıfırlayıp bir test kaynağı bağlayıp test kaynağı üzerindeki akım gerilim değerlerine bakmamız gerekiyordu.
+
+1103
+01:45:38,087 --> 01:45:40,547
+Şimdi onu yapmaya çalışalım.
+
+1104
+01:46:05,524 --> 01:46:17,024
+yöntemde ikinci yaklaşımımız, içerideki bağımsız kaynakları sıfırlayalım. Daha sonrasında ise bir test gerilimi buraya bağlayalım.
+
+1105
+01:46:22,195 --> 01:46:29,095
+ve bu durumda şuradan geçen gerilim ve akım değerlerimizi kontrol etmeye çalışalım.
+
+1106
+01:46:29,995 --> 01:46:34,695
+Şimdi yine benzer bir mantık burada da söz konusu olmuş olacak.
+
+1107
+01:46:36,175 --> 01:46:39,895
+İşte birinci çevremizi böyle alalım, ikinci çevremizi yine böyle alalım.
+
+1108
+01:46:40,515 --> 01:46:43,695
+Bu durumda i1 ve i2 dediğimiz durumlar oluşacak.
+
+1109
+01:46:44,335 --> 01:46:49,335
+i1 dediğimiz akım değerimiz eksi vx bölü 4000'e eşit olacak.
+
+1110
+01:46:49,335 --> 01:47:09,655
+Diğer durumda ise büyük çevre için bakacak olursak 2K çarpı İ1 artı İ2 artı 3K çarpı İ2 artı 1 volt eşittir 0 gibi bir denklem yazabiliriz.
+
+1111
+01:47:09,655 --> 01:47:38,575
+1V burada var. Vx gerilimimiz aslında 1V oluyor. Vx'in 1 olduğunu buraya test gerilimi bağladığımız zaman elde etmiş oluyoruz. O zaman eksi 1 bölü 4000 i1 değerimiz 2K ile çarpacak olursak bunu eksi 0.5V oradan gelir. Artı 2K i2 artı 3K i2 artı 1V eşittir 0 değeri elde etmiş oluruz.
+
+1112
+01:47:38,575 --> 01:47:55,215
+Bunları karşıya atacak olursak 0.5 volt eşittir. 5K İ2 oluyor. İ2 dediğimiz değerde 0.5 volt bölü 5K olarak hesaplanabilir.
+
+1113
+01:47:56,135 --> 01:48:08,335
+Bu durumda da ne yapacak? 0.1, 0.1 mA'lık bir değere karşılık gelmiş oluyor.
+
+1114
+01:48:08,575 --> 01:48:12,255
+elde ettiğimiz akım değerimiz bu.
+
+1115
+01:48:12,335 --> 01:48:13,295
+Gerilim değerimiz neydi?
+
+1116
+01:48:13,376 --> 01:48:15,015
+Gerilim değerimiz de 1 volttu.
+
+1117
+01:48:15,015 --> 01:48:19,235
+Dolayısıyla bu ikisinin oranı bize RTH'ı verecek.
+
+1118
+01:48:19,895 --> 01:48:26,715
+1 volt bölü 0.1 çarpı 10 üzeri eksi 3.
+
+1119
+01:48:30,515 --> 01:48:34,295
+0.1 çarpı 10 üzeri eksi 3 mü oldu? Bakalım bir daha.
+
+1120
+01:48:35,896 --> 01:48:36,315
+5
+
+1121
+01:48:36,315 --> 01:48:41,015
+0.1 mA, evet.
+
+1122
+01:48:42,035 --> 01:48:48,036
+1 bölü 0.1 dediğimiz zaman da, evet buradan da 10 üzeri 3 yukarı çıkar.
+
+1123
+01:48:48,776 --> 01:48:55,415
+1 bölü 0.1 dediğimiz buradan da 10 gelir ve dolayısıyla 10K'lık RTH değerini hesaplamış olduk.
+
+1124
+01:48:55,415 --> 01:49:20,916
+Burada şurada görmüş olduğumuz uygulamada direkt kısa devre durumu üzerinden hesap yapmış. Çünkü bağımsız kaynak devredeyken bağımlı kaynağımızda da değer oluşuyor. Ama garanti olması açısından biz buraya test kaynağı bağlayıp bu test kaynağı üzerindeki akım ve gerilim değerlerini oranlayarak RTH'i bulduk.
+
+1125
+01:49:20,915 --> 01:49:30,315
+Yani size tavsiyem çok kafa karıştırıcı oluyor. Eğer böyle içeride bir bağımlı kaynak varsa mutlaka test kaynağı üzerinden ilerlemeye çalışın.
+
+1126
+01:49:30,315 --> 01:49:42,276
+Buradaki çözüm, görmüş olduğunuz çözüm, bağımsız kaynakları olduğu gibi bıraktı, kısa devre akımını ölçtü.
+
+1127
+01:49:42,276 --> 01:49:53,155
+Ama her zaman için içeride bir bağımlı kaynak olup da, bağımsız kaynak olup da bağımlı kaynağa değer üretmeyebilir.
+
+1128
+01:49:53,715 --> 01:49:57,775
+O durumda yanlış bir yöntem uygulamış olabilirsiniz.
+
+1129
+01:49:57,775 --> 01:50:03,035
+Tavsiyem içeride bağımlı kaynak varsa test kaynağı bağlayarak bu çözümü elde etmeniz.
+
+1130
+01:50:03,615 --> 01:50:13,635
+Burada iki gözlü devre üzerinde test kaynağı bağladığımız durumda iki gözlü devre üzerinde çözümlememizi yapıp biz bu i2 akımını bulduk.
+
+1131
+01:50:13,715 --> 01:50:17,655
+i2 akımı da zaten bu test kaynağından geçen akımdı.
+
+1132
+01:50:17,655 --> 01:50:24,275
+Gelilimi akımı oranlayarak diğer yöntemde olduğu gibi bu akım değerimizi bulmuş olduk.
+
+1133
+01:50:27,775 --> 01:50:46,935
+Şimdi asıl önemli olan ve kafa karıştırıcı olan örnek bu örnek. Burada bir bağımsız kaynak da yok. Böyle bir durumda işte bu devrenin kısa devre akımını ölçmeye çalışsak sıfır değeriyle karşılaşıyoruz.
+
+1134
+01:50:48,876 --> 01:50:53,055
+Hemen bakayım bir saniye. Kaç dakika sürermiş? Şöyle.
+
+1135
+01:50:58,963 --> 01:51:02,383
+Hemen hızlıca anlatayım. Burada bitirelim. Max Power sonraya kalsın.
+
+1136
+01:51:06,260 --> 01:51:16,799
+özellikle bu devre için çözümü yapmak gerekirse öncelikli olarak açık devre gerilimini ölçeceğiz. Açık devre gerilim için ne demek? Burayı açtık.
+
+1137
+01:51:18,100 --> 01:51:31,899
+İ akımımız nedir? Sıfır. Dolayısıyla şuradaki gerilim değerimiz sıfır. Gerilimin sıfır olması demek VOC geriliminde sıfır olduğu anlamına gelir. Demek ki bizim burada eşdeğer devremizde VTH değerimiz sıfır olacak.
+
+1138
+01:51:31,899 --> 01:51:56,019
+Şimdi devrede ikinci durumda içerideki bağımsız kaynakları sıfırladık. Zaten bağımsız kaynak yok. Bir tane test kaynağı bağladım. Buradaki test kaynağı olarak akım kaynağı tercih edilmiş. Çünkü bu doğrudan koldaki akım değerini de belirleyecek ve akım değeri buradaki gerilim belirleyecek. Akım değerimiz 1 amper. Dolayısıyla iyi akımımız eksi 1 değerinde. Buradaki gerilim değerimiz eksi 1.5 volt olmuş oluyor.
+
+1139
+01:52:01,876 --> 01:52:07,876
+Yine buradaki gerilim değerimizi hesaplamamız lazım. Onu nasıl hesaplayacağız? Hemen bakalım şuradan.
+
+1140
+01:52:14,355 --> 01:52:23,675
+Şuradaki akım değerlerini yazacak olursak bunu sağlayabiliriz. Burası V test gerilimimiz. Şu düğüm. V test bölü 2 aşağı yönüne akan akımımız.
+
+1141
+01:52:23,675 --> 01:52:49,655
+Burada İ de var. İ'miz eksi 1 amper. Bu ikisinin toplamı buradan akan akıma eşit olacak. O da eksi 1.5 volt eksi V test dediğimiz değer bölü 3 amper. Dolayısıyla tek bilinmeyen tek bir denklem haline getirmiş oluyoruz ve buradan elde etmiş olduğumuz test gerilimi miktarımız 0.6 volt.
+
+1142
+01:52:49,655 --> 01:52:59,255
+Akım değerimizi de hesaplayacak olursak buradan, akım değerimiz de 1 amperdi zaten, dolayısıyla 0.6 ohmluk bir direnç elde etmiş oluruz.
+
+1143
+01:52:59,255 --> 01:53:07,135
+O zaman bu devrenin eş değeri Vth'ı 0, Rth'ı 0.6 ohm olan böyle bir eş değer devre.
+
+1144
+01:53:09,035 --> 01:53:14,775
+Garanti olması açısından içeride bağımlı kaynak varsa yöntem 4'ü kullanalım diyelim arkadaşlar.
+
+1145
+01:53:14,776 --> 01:53:23,756
+ve Max Power ile ilgili kısmı önümüzdeki haftaya bırakarak dersimizi bitirmiş olalım.
+
+1146
+01:53:25,036 --> 01:53:36,756
+Bu session'ı bitirip arkadaşlar kapatıp buradan bu session'ı kapattıktan sonra tekrar kısa sınav session'ına bağlanmanız gerekiyor.
+
+1147
+01:53:36,756 --> 01:53:42,756
+Saat dörtte tanımlı. Şimdiden başarılar. Sormak istediğiniz bir şey varsa hemen alabilirim.
+
+1148
+01:53:42,755 --> 01:53:46,195
+Kısa sınavımızda başarılar diyeceğim şimdi.
+
+1149
+01:53:51,699 --> 01:53:57,419
+soracak bir şey yok herhalde. Haftaya görüşmek üzere arkadaşlar. Sınavda başarılar.
