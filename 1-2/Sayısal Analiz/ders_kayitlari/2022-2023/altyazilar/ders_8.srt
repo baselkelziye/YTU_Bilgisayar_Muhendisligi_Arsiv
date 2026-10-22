@@ -1,0 +1,2283 @@
+1
+00:02:00,180 --> 00:02:28,379
+Bir cevap bekliyorum. Merhaba hocam, merhaba hocam. Şimdi gençler, nasıl yapsam bilemiyorum. Ne demek istedim şimdi? Öncelikle size bir bilgi vermem gerekiyor. Bir dakika, demin Ahmet Hoca ile konuştuk. Bir yere yazdım ama,
+
+2
+00:02:33,747 --> 00:02:59,747
+Şimdi biliyorsunuz 26 Nisan'da yani haftaya bizim vizemiz var. Ama pazartesi gününe koymuşlar vizeyi. Herhalde bazı çakışmaları engellemek için çünkü çakışan dersleri de alan öğrenciler falan varmış. Tam da bilgim yok açıkçası. Saat 17'de.
+
+3
+00:02:59,747 --> 00:03:20,508
+sınavın çoktan seçmeli test olacağını söylemiştik. Ama bugün anlatacağımız konu dahil değil. Çünkü normalde 8. hafta bu hafta vizelerin olması. Bu enterpolasyonda vizelerden sonra yakalırdı.
+
+4
+00:03:20,507 --> 00:03:29,767
+ama şimdi değişim olduğu için interpolasyonu bu hafta anlatacağım ve bu hafta çok ders yapmayacağım.
+
+5
+00:03:29,928 --> 00:03:31,787
+Onun da şimdi sebebini söyleyeceğim.
+
+6
+00:03:32,587 --> 00:03:36,407
+Neyse, 26 haftaya vize var.
+
+7
+00:03:36,647 --> 00:03:39,067
+3 Mayıs'ta dersimiz var.
+
+8
+00:03:40,127 --> 00:03:42,688
+10 Mayıs'ta da ders var.
+
+9
+00:03:43,608 --> 00:03:49,007
+17 Mayıs'ta projelere bakmaya başlayacağız dedik.
+
+10
+00:03:49,007 --> 00:04:12,467
+ama aynı zamanda da vize 2'yi yapacağız. Yani ders saatinde mi vize 2'yi yapar, projeye bakarız yoksa yine akşam saati mi vizeyi alırız, yapısal programlama dersinin nasıl bir stratejisi olacak ona bağlı olarak bu değişecek, bu bilgiyi size veririz.
+
+11
+00:04:12,468 --> 00:04:22,027
+bitirmiş olanların projesine 17'sinde bakılır. 24 ve 31'inde de yine projelerimize bakacağız.
+
+12
+00:04:22,027 --> 00:04:30,648
+Projelerinizde başlamışsınız. Başlamayanlar varsa lütfen acele etsinler ve hızlıca başlasınlar.
+
+13
+00:04:32,008 --> 00:04:40,027
+Bunun dışında size başka ne söyleyebilirim bu konuda aklıma geldikçe söylerim.
+
+14
+00:04:40,027 --> 00:05:07,828
+İlk defa grup olarak biz önde gidiyoruz. Bu tarihte çok az görülmüş bir durumdur. Ahmet Hoca bu hafta sonlu farkları anlatacak. Ben ise entegrasyon, enterpolasyonu anlatacağım. Ama öncesinde sonlu farklar üzerinden kısa bir özet geçeceğiz. Çünkü enterpolasyonda onu kullanacağız.
+
+15
+00:05:07,828 --> 00:05:13,108
+Şimdi ekran paylaşımı yapalım
+
+16
+00:05:16,627 --> 00:05:26,867
+sonlu farklar dedik. Şurada bir iki şeyin üzerinden geçeceğim.
+
+17
+00:05:28,627 --> 00:05:45,747
+Özür dilerim. Şimdi sonlu farklar ne işe yarıyordu? Aslında sonlu farklar matematiği diye matematikte önemli bir konu var demiştik.
+
+18
+00:05:45,747 --> 00:06:00,347
+fonksiyonların ayrık noktalarından elde edilen bazı değerlerle fonksiyonun bilinmeyen noktasındaki değerlerini tahmin etmede kullanılacak.
+
+19
+00:06:01,007 --> 00:06:08,267
+Enterpolasyonu gördüğümüzde çıkardığımız formülde bazı parametreler olacak.
+
+20
+00:06:08,668 --> 00:06:10,607
+Bu ileri olabilir, geri olabilir.
+
+21
+00:06:10,607 --> 00:06:17,148
+Bunlar da sonluk farklar tablosundan elde etmiş olduğumuz değerleri kullanacağız.
+
+22
+00:06:22,067 --> 00:06:25,028
+Ponksiyonun bir x değerleri var.
+
+23
+00:06:25,168 --> 00:06:27,567
+İşte ponksiyonda yerine koyuyoruz.
+
+24
+00:06:27,708 --> 00:06:29,668
+F değerlerini elde ediyoruz.
+
+25
+00:06:29,907 --> 00:06:39,068
+Ama bu x değerleri arasında her zaman eşit miktarda aralık olması gerekmiyor.
+
+26
+00:06:39,067 --> 00:06:49,247
+Yani x0 ile x1 arasındaki h kadar artım, x1 ile x2 arasında h kadar artım hep böyle gidecek diye bir kural yok.
+
+27
+00:06:50,047 --> 00:06:55,867
+Bu x değerleri arasındaki farklar birbirinden de farklı olabilir.
+
+28
+00:06:56,207 --> 00:07:01,067
+O zaman bizim interpolasyonda yapacağımız işlemler de değişecek.
+
+29
+00:07:01,067 --> 00:07:07,527
+Ama en kolayı bu x'ler arasındaki artımın eşit olmasıdır.
+
+30
+00:07:07,528 --> 00:07:26,087
+eşit değilse onu eşit yapacak değişken dönüşümlerini göreceğiz. Bir de başlangıç noktasının x'in başlangıç noktasının sıfırdan başlıyor olması ve olmaması da farklılıklar getirecek.
+
+31
+00:07:26,087 --> 00:07:46,708
+Bu sonlu farklarda farklı operatörler var demiştik. İleri, geri, işte ortalama ve merkezi fark operatörleri gibi. Kullanımı en kolay olan, kitaplarda genellikle tercih edilen ve benim de derste kullandığım ileri fark operatörü, şu delta.
+
+32
+00:07:46,708 --> 00:08:06,168
+ileri fark operatörü neydi? Ben bulunduğum bu önemli arkadaşlar x ekseni şuradayım ben. Şu x noktasının ileri farkını almak istiyorsam yani x'i fonksiyonda yerine koydum.
+
+33
+00:08:06,167 --> 00:08:15,727
+fx bu noktadaki ileri fark değeri nedir dendiğinde fonksiyonun ilerisindeki değer ne olur?
+
+34
+00:08:16,127 --> 00:08:25,647
+Bu aradaki mesafeyi h dersek x'in üzerine h eklersem buna da ne diyelim? x1 diyelim.
+
+35
+00:08:25,647 --> 00:08:36,927
+ilerisindeki değer yani fonksiyonun x artı h'deki değeriyle x'deki değeri arasındaki farkı alıyor.
+
+36
+00:08:37,387 --> 00:08:47,767
+Bu ileri farkın derecesi 1, bu 2. dereceden 3. 4. n. dereceye kadar gidiyordu.
+
+37
+00:08:47,767 --> 00:08:59,488
+Bunları da birbirinin yerine koyarak çıkarıyorduk ve zaten karşımıza belirli bir kuralla oluşturulmuş bir denklem çıkıyordu.
+
+38
+00:09:01,148 --> 00:09:03,607
+İleri farklı dedik.
+
+39
+00:09:05,247 --> 00:09:08,327
+Bir de şöyle demiştim hatırlayın.
+
+40
+00:09:09,327 --> 00:09:12,587
+Diyelim ki elimde bir fx0 değeri var.
+
+41
+00:09:12,967 --> 00:09:16,068
+Yani fonksiyonunda x yerine x0 koydum.
+
+42
+00:09:16,068 --> 00:09:23,047
+bunu böyle göstermek yerine bu slide'larda işte ben diyeceğim ki F0.
+
+43
+00:09:23,700 --> 00:09:24,700
+Ben diyeceğim ki F1. F1 dediğim şey X1 değeri. Bunları da bilelim. Burada biraz daha değişik var. Burada bir i var. Yani şu benim i'ler 0, 1, 2 diye gidiyor. i'yi 0 aldım ve şurası 0 noktası olsun. Şu 0 noktasının ileri farkını bulunca ilerisindeki değer,
+
+44
+00:09:53,700 --> 00:10:13,319
+1, 2, 3, 4 diye arttığı için yani buradaki h değeri 1, buradaki değer de 1 olduğu için f'i artı 1 yani i sıfırsa 1 fazlası f1'den f'i'nin yani f0'ın farkını alıyoruz.
+
+45
+00:10:13,319 --> 00:10:16,479
+Bu gösterimler size şaşırtmasın.
+
+46
+00:10:16,479 --> 00:10:26,880
+Ben niçin ikinci, üçüncü, eninci dereceye kadar ileri farklara ihtiyacım olur?
+
+47
+00:10:27,259 --> 00:10:28,439
+Yine hatırlayalım.
+
+48
+00:10:28,899 --> 00:10:40,079
+Fark tablolarını yaptığımız vakit o fark tablolarının aralarındaki işlem, yani neyse o tablolar geldiğinde yine hatırlatma yaparız.
+
+49
+00:10:40,079 --> 00:10:55,879
+Şunun ikinci dereceden ileri farkı nedir deyince ne yapıyorduk? Birinci dereceden ileri farkı delta ile yeniden çarpıyorum.
+
+50
+00:10:55,880 --> 00:11:22,460
+Delta F'inin ne olduğunu biliyorum. Yukarıda bana verilmiş F'i artı bir eksi F'i. Delta'yı yani şu ikinci olan delta'yı bunlarla çarpıyorum. Delta F'i artı bir eksi delta F'i. Ben bu F'inin ne olduğunu zaten biliyorum. Yine başladı bunlar. Yukarıda çıkarılmıştır. I artı bir eksi F'i.
+
+51
+00:11:22,459 --> 00:11:42,239
+Peki i artı 1'in değeri ne olacak? İlerisindeki değer nedir? i artı 2. Öyleyse i artı 2'den kendisini çıkaracağım. Yani i artı 1'i çıkardım. Bu ikisinin de farkını alırsam ikinci dereceden türevi görüyorduk.
+
+52
+00:11:42,239 --> 00:11:46,859
+Bunların da topladım bu
+
+53
+00:11:46,859 --> 00:11:50,859
+Aslında burada ne var demiştik? Binom açılımı var
+
+54
+00:11:50,859 --> 00:11:53,939
+Bir, Allah'ım yarabbim
+
+55
+00:11:53,939 --> 00:11:56,239
+Bir, iki, bir
+
+56
+00:11:56,239 --> 00:12:01,859
+İşareti artı, eksi ve artıydı
+
+57
+00:12:01,859 --> 00:12:08,079
+Ben i. noktadaki ileri farkı alıyorsam
+
+58
+00:12:08,079 --> 00:12:15,419
+en sondaki i, sonra i artı 1, sonra i artı 2 diye gidiyordu.
+
+59
+00:12:16,099 --> 00:12:24,679
+Geri farkları aldığımızda da burası sol taraf i'den başlayıp i artı 1, i artı 2 diye gidiyordu.
+
+60
+00:12:26,019 --> 00:12:29,039
+Ama genelde ileri farkı kullanacağız dedik.
+
+61
+00:12:29,039 --> 00:12:38,079
+Peki, 3. dereceden ileri fark deyince artık nasıl yazarım, nasıl yapılacağını biliyorum
+
+62
+00:12:38,079 --> 00:12:46,799
+Bu zaten benim 2. derecedense, bunun başına bir tane daha ileri fark operatörü koyduk
+
+63
+00:12:46,799 --> 00:12:51,619
+Bunları bununla çarptık ve aynı işlemleri yaptık
+
+64
+00:12:51,619 --> 00:12:55,519
+Peki, öyleyse bu nasıl gidecek?
+
+65
+00:12:55,519 --> 00:13:05,139
+Kas sayıları binomdu, 1, 1 ile 2'yi çarp topladım, 3, 2 ile 1'i topladım, 3 ve 1
+
+66
+00:13:05,139 --> 00:13:10,919
+İşareti artı, eksi, artı ve eksi
+
+67
+00:13:10,919 --> 00:13:13,679
+Ne ile başlıyordu en son?
+
+68
+00:13:13,679 --> 00:13:20,659
+F ile, burası F'i artı 1, F'i artı 2
+
+69
+00:13:20,659 --> 00:13:50,640
+ve
+
+70
+00:13:21,364 --> 00:13:51,243
+Burası da F'i artı üç dört. İşte burada zaten aynısını çıkardık. Artık bunun dördüncüsü, beşincisi, altıncısı hepsini çok rahatlıkla yapabilirim. Dediğim gibi hep ileri farkı kullanıyoruz. Geri farkı kullanmıyorum ben. Yani bana biraz ters geliyor. Kalemi oynatırken zorlanıyorum çünkü alışkanlık öyle oldu.
+
+71
+00:13:51,364 --> 00:14:12,103
+Ama sadece geri farkı da hatırlayalım. Ben şu x noktasının geri farkını alacaksam geçmişindeki değeri alacağım. Bu da nedir? x'den eksi h'yi çıkaracağım. Buradaki artımlar bir bir gittiği için aslında çıkardığım şey eksi bir.
+
+72
+00:14:12,103 --> 00:14:20,383
+Öyleyse ne olacak? Büyük olan bu taraf F-İ'den kimi çıkarıyorum? İ-1'i çıkarıyorum
+
+73
+00:14:20,383 --> 00:14:25,463
+Bunun da yine ikinci, üçüncü derecelerini yapabiliriz
+
+74
+00:14:25,463 --> 00:14:29,783
+Ama unutmayalım, geri farklı F-İ soldan başlıyor
+
+75
+00:14:29,783 --> 00:14:33,603
+Yine binom kas sayıları var, yine artı, eksi gidiyor
+
+76
+00:14:33,603 --> 00:14:39,383
+sadece şöyle de aklınızda kalabilir.
+
+77
+00:14:39,803 --> 00:14:41,603
+Büyük olan solda.
+
+78
+00:14:42,303 --> 00:14:45,883
+Bakın burada i, i-2'den daha büyük.
+
+79
+00:14:46,303 --> 00:14:49,843
+İleri farkta da büyük olan i artı 3.
+
+80
+00:14:50,383 --> 00:14:55,503
+i'den de büyük ilerisinde olduğu için ilk başta yer alıyor.
+
+81
+00:14:56,243 --> 00:14:59,603
+Merkezi farktan ise hiç bahsetmiyorum.
+
+82
+00:14:59,603 --> 00:15:19,423
+Ama o da x'i, burası x'de, bu taraftan ve bu taraftan öyle noktalar alınıyor ki bunun tamamı h'se yani 1'se, buraları 1 bölü 2 ya da h bölü 2, burası da 1 bölü 2 oluyor.
+
+83
+00:15:19,423 --> 00:15:22,323
+Aynı şeyler devam ediyor.
+
+84
+00:15:22,323 --> 00:15:45,703
+Şöyle bir formülümüz vardı. İleri farkı ben kat sayılarını hızlı bir şekilde hesaplamak istiyorsam yapacağım şey bu formüldü. Şurada da bir tane örnek yapmıştık. Beşinci dereceden F5'i hesaplıyorum.
+
+85
+00:15:45,703 --> 00:16:05,224
+Şimdiye kadar ne yapıyorduk? İşte delta'yı bul, sonra onu delta ile çarp, diyelim bu sonucu buldum, bunu delta ile çarptım, etti küp, bunu buldum, delta ile çarptım, 4. dereceden, bunu buldum, delta ile çarptım, 5. dereceden olur.
+
+86
+00:16:05,224 --> 00:16:27,084
+Bu kadar uğraşma diyor. Bunun genelleştirilmiş hali budur. 5. dereceden almak istiyorsan sigma 0'dan 5'e kadar işaretlerim artı eksi gittiği için eksi 1'in iyinci kuvveti 0 olduğunda burası artı 1 olduğunda eksi diye gidiyor.
+
+87
+00:16:27,084 --> 00:16:51,824
+aynen burada olduğu gibi. 5'in i. faktöriyeli bana Fibonacci sayısının kat sayılarını veriyor. 1, 5, 10, 10, 5, 1 diye. Bu da F5 i neydi? İleri farktan buluyorsam en son i oluyor. i sıfırdan başlıyor.
+
+88
+00:16:51,823 --> 00:17:03,823
+en büyük olan da i artı en yani sıfır artı beş beş beşe kadar gidiyor. Ben buradan da çok rahatlıkla bunu çıkarabiliyorum.
+
+89
+00:17:03,823 --> 00:17:13,063
+Çıkarma yollarımız var. Peki sonra dedik ki sonlu fark tabloları gelecek. Ben bu
+
+90
+00:17:13,587 --> 00:17:14,587
+Yani bunlar tablo. Evet tablo. Sonlu farklar demekte yani ben bu tablolarım bir yerde sonlanıyor. Şurada gördüğünüz gibi bu sonsuza kadar gitmiyor. Farkta ben elimdeki fonksiyonumun değerlerini, tınlar x inputlarım, bu inputlar sonucunda yapmış olduğum ölçümlerde almış olduğum f değerleriyle
+
+91
+00:17:43,587 --> 00:17:53,348
+bunlardan yararlanarak ben ileri geri merkezi hangi operatör olursa olsun fark tabloları oluşturuyorum.
+
+92
+00:17:53,887 --> 00:18:03,747
+Ve burada gördüğünüz şeyler mesela bakın birinci dereceden ileri fark, ikinci dereceden, üçüncü, dördüncü dereceden ileri farklar.
+
+93
+00:18:03,747 --> 00:18:09,887
+Ama i0 için, i1, i2, i3 için alınmış.
+
+94
+00:18:10,367 --> 00:18:12,808
+Peki bunları nasıl oluşturuyordum?
+
+95
+00:18:12,807 --> 00:18:31,887
+Ben delta F0'ın, hatırlayalım, ileri farkını nasıl alıyorduk? Bunun ilerisindeki değer neydi? İ artı, ilerisindeki değer bir, eksi, kendisi diyorduk.
+
+96
+00:18:31,887 --> 00:18:53,927
+O yüzden birinci dereceden ileri farkta delta F0 nasıl bulunacak? F1'in değerinden F0'ı çıkaracağım. Delta F1 nasıl bulunacak? F2'den F1, delta F2, F3'den F2, F3'de F4'den F3.
+
+97
+00:18:53,927 --> 00:19:17,727
+Bu işleme ne kadar süre devam ediyordu? Ya burası sıfırlanıncaya kadar ya da herhangi bir yerde sabit kalıncaya kadar. Mesela şurada sabit kalsın. 3-3. Bunu sıfıra kadar götürmemin bir anlamı yok. Götürsem 3'den 3 çıktı sıfır, 3'den 3 çıktı sıfır, sıfırdan sıfır çıktı sıfır.
+
+98
+00:19:17,727 --> 00:19:27,587
+Zaten bunlar çarpan olarak kullanılacağından çarpan da sıfır olup etkisiz eleman olduğunda sabit sayıda bırakabiliyorum.
+
+99
+00:19:28,407 --> 00:19:36,007
+İkinci dereceden türevi hesapladığında delta kare F0'ı bulmak için şu değerden bunu
+
+100
+00:19:36,007 --> 00:19:42,748
+F1 delta kare F1'i bulmak için F2'den F1'i, F3'den F2'yi çıkarıyordum.
+
+101
+00:19:42,748 --> 00:19:50,808
+3. dereceden ileri farkta F0'ı bulmak için bundan bunu, bundan bunu
+
+102
+00:19:50,808 --> 00:19:56,427
+4. dereceden F0'ı bulmak için de bundan bunu çıkarıyorum
+
+103
+00:19:56,427 --> 00:20:01,867
+başka bunlar ileri gelin gidelim
+
+104
+00:20:01,867 --> 00:20:04,448
+burada bir tane örneğimiz vardı
+
+105
+00:20:04,448 --> 00:20:08,688
+bana bir deney sonucunda x değerleri var
+
+106
+00:20:08,687 --> 00:20:37,867
+inputları bunlar, bu inputlara karşı alınmış outputlar bunlar. Bana denecek ki ileride eksi iki buçukta fonksiyonun değeri ne olur? Sen dersin eksi on sekiz ile eksi iki arasında bir sayı olacak ama kaç olacak? Bunu nasıl bulacağım? Bu x ve y değerlerini kullanarak ben bir fonksiyon uydurmaya çalışacağım.
+
+107
+00:20:37,867 --> 00:20:40,468
+interpolasyon buna yarayacak.
+
+108
+00:20:40,884 --> 00:21:07,123
+Enterpolasyondaki yöntemlerden biri de Gregory interpolasyonu. Bu Gregory interpolasyonunda da ileri dereceden birinci, ikinci, üçüncü, dördüncü, artık kaç tanesine ihtiyacım varsa başlangıç f0 değerlerine ihtiyacım olacak. O yüzden bu tabloları kuracağım ben.
+
+109
+00:21:07,123 --> 00:21:21,924
+Formül içinde delta F0 dediğinde, delta F0 bu olduğu için burayı, delta kare F0 dediğinde burayı, delta küp F0 dediğinde burayı alman gerekecek.
+
+110
+00:21:23,503 --> 00:21:27,863
+Bazen bana x değerlerini aynen buradaki gibi verebilir.
+
+111
+00:21:28,724 --> 00:21:30,363
+Artım 1 diyor.
+
+112
+00:21:30,363 --> 00:21:36,744
+Bakın artımlar 1 burada ama her zaman 1 olmak zorunda değil.
+
+113
+00:21:37,123 --> 00:21:43,503
+birinin dışında yine sabit olabilir ama 5-5 artabilir, 3-3 artabilir.
+
+114
+00:21:44,123 --> 00:21:48,884
+Başlangıç değeri 0 olabilir ve olmayabilir.
+
+115
+00:21:49,464 --> 00:21:53,223
+Bu şartlarda nasıl hareket edeceğimizi göreceğiz.
+
+116
+00:21:54,683 --> 00:22:00,244
+Bir de şurada ben bir ölçüm sırasında bir hata yapayım.
+
+117
+00:22:00,244 --> 00:22:02,803
+Bir epsilon hatası yaptım.
+
+118
+00:22:02,803 --> 00:22:09,543
+bu fark tablosunu oluştururken hatanın nasıl yayıldığını görüyoruz.
+
+119
+00:22:10,403 --> 00:22:17,223
+Mesela şuradaki delta F2'yi hesaplıyorum.
+
+120
+00:22:17,604 --> 00:22:19,303
+Delta F2 nedir?
+
+121
+00:22:19,843 --> 00:22:22,564
+Şundan, şunun farkı.
+
+122
+00:22:23,403 --> 00:22:27,583
+Şundan dediğim şeyde bir artı epsilon fazlalık var.
+
+123
+00:22:27,583 --> 00:22:30,403
+İşte buraya gelen fazlalık o.
+
+124
+00:22:30,403 --> 00:22:48,343
+Delta F3 nedir? F4'den burayı çıkarıyorum. Buradan da eksi epsilon geldi. Bunlar aynı şekilde devam edip edip şurasında 20 çarpı epsilon kadar bir eksiklik var.
+
+125
+00:22:48,343 --> 00:22:57,343
+O yüzden bazen şurada yapılmış olan ölçüm sırasında yapılmış olan hatalardan burası sıfıra gitmeyebilir.
+
+126
+00:22:57,343 --> 00:23:08,503
+Desimal sayılarla çalışıyorsun, dön noktadan sonra diyelim ki tek dijit aldın, hassaslığı biraz bozdun, burası sıfıra gitmeyebilir.
+
+127
+00:23:08,503 --> 00:23:17,183
+Ya da bu arada yaptığın bir takım işlemlerden dolayı, hatalı işlemlerden dolayı burası sıfıra gitmeyebilir.
+
+128
+00:23:17,184 --> 00:23:29,244
+o yüzden çok büyük farklar oluşuyorsa burada kontrol etmem gerekir hem ölçümlerimi hem de adımlarımı ki hata var bunu çözeyim.
+
+129
+00:23:29,624 --> 00:23:37,284
+Ama yani şurası diyelim ki 0-1 diye bir şey oldu ya da 0-1 oldu. Bunları o kadar önemsemem.
+
+130
+00:23:37,284 --> 00:23:44,104
+Burada noktadan sonra yapmış olduğum round işlemleri buna sebebiyet verebilir.
+
+131
+00:23:44,104 --> 00:24:02,184
+Evet, geçen haftayı bu şekilde özetledik, paylaşımını durdurduk. Şimdi yeniden interpolasyonumuza geçelim.
+
+132
+00:24:02,824 --> 00:24:05,003
+Hocam, yeni konuya geçmeden bir şey sorabilir miyim size hemen?
+
+133
+00:24:05,384 --> 00:24:05,624
+Evet.
+
+134
+00:24:06,904 --> 00:24:10,443
+Sınavla ilgili bir şey soracak mısın? Sınavınızın süresi belli mi ve soru sayısı?
+
+135
+00:24:10,443 --> 00:24:15,583
+Bu senin için neden önemli? Önce bunu öğrenin
+
+136
+00:24:15,583 --> 00:24:20,264
+Yani süre hocam şey için önemli kendinizi ayarlama kaçısından birazcık
+
+137
+00:24:20,264 --> 00:24:25,923
+Mesela bizim takvimimizde mesela iki saat yazıyor ama doğru olup olmadığını bilmiyoruz bu konuda
+
+138
+00:24:25,923 --> 00:24:36,403
+Bir öğrenci bir sınavdan çıkıp diğer sınava girerken arada mesafe olsun diye
+
+139
+00:24:36,847 --> 00:24:58,847
+Bir de bazı dersler, özellikle algoritma gibi derslerde, yani bu bir standart oluşmuş bir şey. Bizim bölümde hiçbir sınav programına bir saat ya da yarım saat olarak konulmaz. Ama denir ki bize süre iki saati aşmasın.
+
+140
+00:24:58,847 --> 00:25:13,868
+Hoca sorduğu sorunun içeriğine, derinliğine, zorluğuna, kolaylığına, sayısına göre buna der ki yarım saat, der ki bir saat, der ki bir saat on beş dakika bunu ona göre ayarlarız.
+
+141
+00:25:13,868 --> 00:25:33,227
+o iki maksimum süredir ama tam zamanında başlamak zorundasın. Önemli olan bizim bu şeylerde online'da sistemi tanımlarken oraya ben ne kadar süresi olacaksa onu gireceğim.
+
+142
+00:25:33,227 --> 00:25:46,647
+diyelim ki 75 dakika sana elbette sınavın başında süren söylenecek. Bu sınavın süresi 75 dakikadır ve 75. dakikada da sistem kapanacak.
+
+143
+00:25:46,907 --> 00:25:59,487
+Eğer klasik sınav gibi yapıp sınav kağıdını sisteme yüklemeniz gerektiğinde bunda dikkat etmeniz gerekir. Belki diğer sınavlarda olabilir.
+
+144
+00:25:59,487 --> 00:26:03,708
+sınav kağıdınızı, fotoğrafını çektin, yükledin.
+
+145
+00:26:04,087 --> 00:26:11,748
+Bunlar biraz zaman aldığı için bazen hoca sınavın 5 dakikasını düşünerek bunun için ayırır.
+
+146
+00:26:12,388 --> 00:26:18,788
+Bazen size der yani bütün süreniz bu, kağıdını yüklemeniz için de bu olacak.
+
+147
+00:26:19,407 --> 00:26:24,347
+Biz test yapacağımız için öyle kağıt yükleme problemleriniz de olmayacak.
+
+148
+00:26:24,347 --> 00:26:33,827
+çok fazla evet sorularımızı hazırladık ama tam sayıyı şu an söylemeyeyim çünkü üzerinden geçiyoruz.
+
+149
+00:26:35,028 --> 00:26:45,928
+Şöyle bir durumlar olacaktır. Şimdi bir klasik soru gibi olmayacaktır. Yani klasik soruda daha fazla kağıt kalemi kullanman gerekiyor.
+
+150
+00:26:45,928 --> 00:27:05,847
+evet bunda da kağıt kalemi kullanmaya ihtiyacın olacak mutlaka yanınızda bulundurun çözüm için ama bir test sınavı olduğu için çok bir iki işlemde hemen sonuca ulaşacaksın yani öyle satırlarca bir şey çözmek yok.
+
+151
+00:27:05,847 --> 00:27:16,588
+bazıları ise sadece okuyacağım ve bizim derslerde konuştuğumuz şuna dikkat edin buna dikkat edin gibi dediğimiz şeyler karşınıza çıkabilir.
+
+152
+00:27:17,107 --> 00:27:23,368
+Bu tip şeyler olabilir ama ya bir saat olur ya bir saat 15 dakika olur.
+
+153
+00:27:24,648 --> 00:27:34,448
+Sınav sorusu da ya 15'tir ya da 20'dir ama bir soru vardır ki sadece yarım dakikanı alır bir soru vardır ki iki dakikanı alır.
+
+154
+00:27:34,447 --> 00:27:39,447
+Ama böyle 5 dakikanızı alacak bir soru olmaz. Tamam mı?
+
+155
+00:27:41,207 --> 00:27:42,267
+Tamam efendim teşekkürler.
+
+156
+00:27:42,267 --> 00:27:47,267
+Şimdi yine ekranı yaptık.
+
+157
+00:27:50,527 --> 00:27:55,967
+Ben niye çıkartıyorum?
+
+158
+00:28:03,988 --> 00:28:09,988
+Kapatacağız, interpolasyon, şunu açacağız. Görüyor musunuz?
+
+159
+00:28:12,988 --> 00:28:13,988
+Enterpolasyon yazan.
+
+160
+00:28:13,988 --> 00:28:16,988
+Efendim?
+
+161
+00:28:16,988 --> 00:28:18,988
+Şimdi geldim.
+
+162
+00:28:18,988 --> 00:28:23,988
+Sayfalarda dönüyor, hareket ediyor.
+
+163
+00:28:26,988 --> 00:28:28,988
+Evet hocam, sıkıntı yok.
+
+164
+00:28:28,988 --> 00:28:30,988
+Tamam, sen bugün başkan sen oldun.
+
+165
+00:28:30,988 --> 00:28:41,348
+aldım. Otomatikman. Şimdi konumuz enterpolasyon. İsmi çok böyle wow dedirtilecek bir isim. Ama çok severim
+
+166
+00:28:41,348 --> 00:28:51,528
+enterpolasyonu. Aslında regressionu da çok severim. Neden severim? Sanki böyle yoktan bir şeyi var ediyorsunuz.
+
+167
+00:28:51,527 --> 00:29:14,647
+yani mesela şu şekle bakın şurada bir takım noktalar var size deniyor ki bu noktalardan geçen en uygun fonksiyonu bulun şimdi tabi o kadar çok nokta var ki bu noktaların her birinin üzerinden geçen bir fonksiyon bulabilmeye imkan yok
+
+168
+00:29:14,647 --> 00:29:26,367
+Bunları minimum hatayla sağlayacak ve daha fazla noktanın üzerinden geçebilecek bir fonksiyon çıkaracağız.
+
+169
+00:29:26,367 --> 00:29:42,687
+Bu fonksiyon mesela burada bir sürü çizgi görüyorsunuz. Bunlardan mesela ne bileyim linear interpolasyon var. Burada renkleri var kırmızı. Şunlardan bir tanesi.
+
+170
+00:29:42,687 --> 00:29:50,007
+logaritmik bir fonksiyon geçebilirsin, eksponansiyel bir polinom geçirebilirsin.
+
+171
+00:29:50,007 --> 00:29:54,547
+Ama hepsi yaklaşık olarak birbirine benzer.
+
+172
+00:29:54,988 --> 00:30:02,848
+Benim de amacım buradan geçen, minimum hatayla geçen bir fonksiyon oluşturmam.
+
+173
+00:30:03,208 --> 00:30:12,667
+Bu bir doğru da olabilir, bu bir parabol olabilir, bu ne bileyim çok dalgalanan bir polinom olabilir.
+
+174
+00:30:12,687 --> 00:30:20,307
+derecesi 5. 6. 7. derecelerden artık bilmiyoruz ne çıkarsa bahtımıza.
+
+175
+00:30:21,428 --> 00:30:25,767
+Peki, interpolasyonun önce kısa bir tanımını yapalım.
+
+176
+00:30:26,827 --> 00:30:37,167
+Enterpolasyon, tablo halinde değerleri verilen bir değişkenin tabloda olmayan bir değerini bulma olarak tanımlanabilir.
+
+177
+00:30:37,708 --> 00:30:39,247
+Ne demek istedik?
+
+178
+00:30:39,247 --> 00:30:45,247
+Mesela şurada bir takım x değerlerine karşılık alınmış bir takım y değerleri var.
+
+179
+00:30:46,107 --> 00:30:51,167
+Hiç burada ölçümü yapılmamış bir x değeri soruluyor size.
+
+180
+00:30:51,687 --> 00:30:55,567
+Bunu değeri ne olur? Ne bileyim ben ne olur?
+
+181
+00:30:55,568 --> 00:31:25,068
+İşte onu bilebilmek için bana önceden tablo olarak verilmiş yani tablo dediğime bakmayın şu input'a karşılık şu output'lar alındı diye verilmiş bir veri var elimde o verilerden yararlanarak elimde hiç ölçümü yapılmamış bir input'a karşılık ölçüm yapılsaydı hangi sonucu alırdım bilgisini bana vermek için
+
+182
+00:31:25,068 --> 00:31:27,407
+bu interpolasyonu kullanacağız.
+
+183
+00:31:28,508 --> 00:31:37,967
+İşte bir fx fonksiyonunun x0'dan xn gibi ayrık noktalarında alınmış olan fonksiyon değerleri var.
+
+184
+00:31:37,967 --> 00:31:55,008
+F0'dan fn bu fonksiyonu daha basit ve bilinen bir fx fonksiyonu ile ifade edilmesini biz interpolasyon
+
+185
+00:31:55,007 --> 00:31:56,247
+fonksiyonu deriz.
+
+186
+00:31:56,692 --> 00:31:57,692
+Gerçekteki fonksiyon fx. Yani işte iki, dört, altı, sekiz, on diye x değerlerin varsa bunun fx değeri ne olur? 2x olur fx değeri. İşte x'e bir veririm, iki olur. x'e iki veririm, dört olur. Aradaki değerler de beş veririm,
+
+187
+00:32:26,692 --> 00:32:56,491
+10 olur. Şu, gerçekteki değerdir. Ama benim enterpolasyonla bulduğum ise büyük fx'dir. Benim amacım, neyse o arka sayfadaymış, bu enterpolasyon fonksiyonuyla şuradaki küçük fx arasındaki farkı minimum yapmak. Ne kadar minimum olursa benim uydurmaya çalıştığım fonksiyon, gerçek fonksiyonu,
+
+188
+00:32:56,491 --> 00:33:07,272
+o kadar yakın olur diyoruz. Bu enterpolasyon fonksiyonu bir polinom olabilir. Artık kaçıncı dereceden olursa, hangisini uygun görüyorsa.
+
+189
+00:33:08,052 --> 00:33:19,211
+Üslü bir ifade olabilir. E üzeri bilmem ne. Trigonometrik bir fonksiyon olabilir. Ya da çok daha özel bir fonksiyon olabilir.
+
+190
+00:33:19,211 --> 00:33:47,591
+Peki ben interpolasyon fonksiyonunu nasıl seçeceğim? Yani bir doğrumu geçireceğim? Polinom mu? Trigonometrik bir fonksiyon mu? Ne geçirmeliyim? İlk başta bunu bilemem. Şöyle bir veriye bakarım. Verinin dağılımı nasıldır? Bende bir şeyler uyandırıyor mu? Yakın bir şey hissedersem o fonksiyonu denerim.
+
+191
+00:33:47,591 --> 00:33:52,811
+daha iyi sonuç alabilir miyim diye bir başka komisyonu denerim.
+
+192
+00:33:53,031 --> 00:34:00,451
+Onu bunu en iyi sonucu hangisinde alırsam enterpolasyonumu onun üzerine gerçekleştiririm.
+
+193
+00:34:00,451 --> 00:34:07,251
+Ve ben artık o alanda çalışan biriysem diyelim ki ben sürekli ısı ölçüyorum.
+
+194
+00:34:07,491 --> 00:34:09,211
+İç ısı, dış ısı.
+
+195
+00:34:09,212 --> 00:34:18,111
+dışarıda, içeride ısının nasıl artıp azaldığı hakkında sürekli o işte ilgilendiğim için bir takım fikrim var.
+
+196
+00:34:18,111 --> 00:34:30,132
+İlk başlarda en başarılı hangi fonksiyondan sonuç almışsam, işte bir doğru geçirmek mi, polinom geçirmek mi hep önceliğimi ona veririm.
+
+197
+00:34:30,132 --> 00:34:42,452
+Eğer fx fonksiyonumuz ab kapalı aralığında sürekli ise interpolasyon fonksiyonu olarak bir polinom kullanılır.
+
+198
+00:34:43,111 --> 00:34:51,492
+Demek ki bir bana veri ab kapalı aralığı diye verilmişse öncelikle kullanacağım şey polinom olmalı.
+
+199
+00:34:52,152 --> 00:34:57,531
+Gerçek fx değeriyle bu neden böyle oluyor hiç anlayamıyorum.
+
+200
+00:34:57,531 --> 00:35:09,011
+interpolasyon fonksiyonu arasındaki farkın, mutlak değerce farkın belirlediğim hata miktarından küçük eşit olması gerekiyor.
+
+201
+00:35:10,151 --> 00:35:22,011
+Eğer periyodu 2P olan sürekli bir fonksiyon verildiyse, yani bana der ki P bölü 2 ile 3P bölü 2 arasında,
+
+202
+00:35:22,011 --> 00:35:39,651
+yani o zaman benim burada bir polinom geçirmem falan saçma bir şey olur. İyi bir sonuç zaten elde edemem. O zaman diyor sürekli bir periyodu 2 pi olan sürekli bir fonksiyonu varsa kullanacağım interpolasyon fonksiyonu da budur.
+
+203
+00:35:39,651 --> 00:35:52,271
+0'dan n'e kadar ak kosünüs kx, 1'den n'e kadar bk sinüs x. Kosünüs de gördüğünüz gibi a0.
+
+204
+00:35:52,947 --> 00:35:53,947
+kas sayısı var. Yani a0 artı a1 cosx artı a2 cosx 2x bla bla bla bla bla. Sinüsüm b0 yok. b1 sinüs x, b2 sinüs 2x diye gider. Yine amacım nedir? Gerçekle interpolasyon arasındaki mutlak ve değerce farkım epsilon'dan küçük oldu.
+
+205
+00:36:22,947 --> 00:36:48,067
+olması. Şimdi, interpolasyonunda çeşitleri var. İşte yok doğrusal enterpolasyon, kubik enterpolasyon, doğrusal enterpolasyonunu da farklı farklı şekillerde çözebiliriz. Bunları böyle bir aranjman gibi yaparak sizlere anlatmak istiyorum.
+
+206
+00:36:48,067 --> 00:37:06,947
+Ben şu üç tane noktanın size verilmiş olduğumu pardon iki tane nokta verilmiş olsun x1 noktası şu nokta fonksiyonu da yerine koydum fx1 x2 noktası fonksiyonu da yerine koydum x2
+
+207
+00:37:06,947 --> 00:37:17,888
+şöyle iki tane noktam var ve bana deniyor ki acaba x3'ü verirsem sana bunun f'i ne olur?
+
+208
+00:37:17,888 --> 00:37:29,308
+Yani y değeri ne olur? Bilmiyorum ne olur. O zaman diyorum ki ben şu iki nokta arasından konumuz doğrusal interpolasyon.
+
+209
+00:37:29,308 --> 00:37:47,388
+bir doğru geçirdiğimi düşüneyim. Şu doğruyu geçirdim, çizdim. Ben bu doğrunun ne olduğunu bulursam, x yerine de x3'ü koyduğumda doğrunun değeri neyse bana fx3'ü verecek.
+
+210
+00:37:47,387 --> 00:38:02,087
+Evet bu doğruyu nasıl bulabilirim? Bu doğruyu yazmayanın en kolay yolu eğimini bulmaktan geçer. Doğrunun herhangi bir noktadaki eğimini alacağım.
+
+211
+00:38:02,087 --> 00:38:30,248
+Önce şu rengi değiştirelim, yeşil olsun. Şu x1 ile x2 noktasını kullanarak bir eğim yazıyorum. Eğim neydi? Şöyle alırsak, şuradaki tanjant alfa. Tanjant alfa neydi? Karşının. Karşı ne? F2'den F1'i çıkardım.
+
+212
+00:38:30,248 --> 00:38:42,927
+komşuya oranı komşu nedir? x2'den x1'i çıkardı. Ben zaten x1, x2 bunları fonksiyona koyduğum değerleri biliyorum.
+
+213
+00:38:42,927 --> 00:38:46,647
+Benim x3'e ihtiyacım var.
+
+214
+00:38:47,367 --> 00:38:49,547
+Öylesi şu bilgiyi de bilmeliyim.
+
+215
+00:38:49,547 --> 00:39:03,028
+Ben x1 ile x3 arasındaki eğimi de alsam, x3 ile x2 noktası arasındaki eğimi de alsam, x1 ile x2 arasındaki eğimi de alsam,
+
+216
+00:39:03,528 --> 00:39:12,107
+hadi şuraya canım sıkıldı x4 koydum noktayı çıktım, x3 ile x4 arasındaki eğimi de alsam,
+
+217
+00:39:12,107 --> 00:39:21,767
+eğimler birbirine eşittir. Buradaki bütün noktaların birbirleriyle olan eğimleri birbirine eşittir.
+
+218
+00:39:21,767 --> 00:39:32,987
+Bundan yararlanarak ya ben x1 ile x3 arasındaki eğimi de alıp buna eşitlersem buradaki sonucu zaten biliyorum.
+
+219
+00:39:32,987 --> 00:39:47,687
+çünkü bütün değerlere sahibim. Bunun eğimi x3'ün ister x1 ile olan eğimini yazarım. x3'ün ister x2 ile olan eğimini yazarım. Buna eşit olacağını biliyorum.
+
+220
+00:39:48,179 --> 00:40:09,899
+Bu örnekte de ne yapmışız? x3 ile x1'in eğimini almışız. O zaman o da şurası. Yine tangente alfatesi. Karşını, karşı nedir? fx3'den fxx1 çıkacak. Komşu da nedir? x3'den x1 çıkacak.
+
+221
+00:40:09,899 --> 00:40:31,479
+Sen bunu gidip şöyle de yazabilirsin. X2 ile X3'ü alsaydın. Fx2'den Fx3 çıktı. 2-x3. Bunun da eğimi bununla aynıdır.
+
+222
+00:40:31,479 --> 00:40:42,659
+ama bilinmeyenleri koyup buradan x3'ü rahatlıkla x3'ü biliyorum fx3'ü bulabiliriz.
+
+223
+00:40:42,659 --> 00:40:45,199
+Şimdi bir tane örnek yapalım.
+
+224
+00:40:49,715 --> 00:40:56,115
+Şunun üstünde soru var mı diye bakayım. Ben de bu panel geliyor, görmüyorum. Evet, yokmuş.
+
+225
+00:40:56,115 --> 00:41:08,115
+Bir yanda diyor, ifx fonksiyonu için bazı değerler verilmiş. Yani x, gördüğünüz gibi eksi 2 ile 6 kapalı aralığımda değerler var.
+
+226
+00:41:08,115 --> 00:41:15,315
+Ve buradaki artımlar sabit değil. Ne 1, ne de sabit. Değişik.
+
+227
+00:41:15,315 --> 00:41:20,995
+Bunların da bu ölçümlerin de sonucunda fx fonksiyonunun aldığı değerler var.
+
+228
+00:41:21,795 --> 00:41:28,275
+Bu bir önce gördüğümüz doğrusal interpolasyonla bunu çözelim.
+
+229
+00:41:29,055 --> 00:41:32,615
+Bana deniyor ki şurada ne yok? f2 yok.
+
+230
+00:41:34,495 --> 00:41:39,315
+Yani x'e 2 verirsem fonksiyonun değeri ne olur?
+
+231
+00:41:39,315 --> 00:41:47,255
+Yani x'e 2 verirsem fonsiyonun değeri şu aralıkta bir şey olacak ama ne olacak bilmiyorum
+
+232
+00:41:47,255 --> 00:41:56,955
+Bu f2'nin değerini x1 ve x3'ü kullanarak doğrusal interpolasyon metodu ile bulunuz
+
+233
+00:41:56,955 --> 00:42:03,815
+5 şıkkında da x2 ile 6 kullanarak bulunuz
+
+234
+00:42:03,815 --> 00:42:09,275
+Şimdi önünüzde mutlaka bir kağıt kalem vardır diye düşünüyorum
+
+235
+00:42:09,315 --> 00:42:15,436
+bana öncelikle şu a şıkkı için bir formülü yazar mısınız?
+
+236
+00:42:16,155 --> 00:42:18,815
+Toplama çıkarma işlemini yazmayın.
+
+237
+00:42:18,815 --> 00:42:30,555
+Yani ben şuradaki x2'yi fonksiyona yerine koyduğumda f2'yi bulmak istiyorum.
+
+238
+00:42:31,675 --> 00:42:34,275
+Nasıl bir denklem yazmalıyım?
+
+239
+00:42:34,275 --> 00:42:42,375
+2, 1 ile 3 arasında gördüğünüz gibi 2, eksi 2 ile 6 arasında
+
+240
+00:42:42,375 --> 00:42:49,576
+Evet, lütfen doğru ya da yanlış bir şey yapmaya çalışın
+
+241
+00:43:11,027 --> 00:43:12,027
+Önce bildiğimiz noktalar için eğimi yazalım. Sonra bilmediğimiz noktayı bilinen noktalardan herhangi birine göre eğimi yazalım. Ondan sonrası zaten çarptın, böldün, sonucu gördün. Yapıyorsunuz değil mi?
+
+242
+00:43:40,148 --> 00:43:42,148
+Evet hocam. Tamam.
+
+243
+00:43:52,596 --> 00:43:56,596
+Hocam chatten bir yorum geldi de bir soru sordu arkadaşlar.
+
+244
+00:43:56,596 --> 00:44:00,596
+Ben çünkü chatleri göremiyorum fullscreen olunca.
+
+245
+00:44:01,596 --> 00:44:09,596
+FX'leri çıkarıp, X'lerin farkına bölmüyor muyuz?
+
+246
+00:44:09,596 --> 00:44:14,596
+Ya güzel kardeşim, nasıl yapıldığını anlattın.
+
+247
+00:44:14,596 --> 00:44:29,956
+Bana şimdi bunu sorma. Sen kendin lütfen kağıda yap. Ben sonucu açtığımda yaptığında karşılaştır. Doğruysa ne âlâ. Değilse neresini acaba anlamadık o zaman sorun.
+
+248
+00:44:36,275 --> 00:44:37,275
+Şimdi mesela bakalım. Şimdiye kadar yazılmış olurdu. Bana F2'yi soruyor. F1 ve 1 ve 3'ü kullan diyor. 1'in ve 3'ün de zaten tablodaki değerlerini biliyorum. Ben F1 ve F3 zaten hani şöyle bile yapsanız şurası 1, burası 3, 1'deyken sonuç 0.84 şurada bir değer olsun.
+
+249
+00:45:06,275 --> 00:45:32,935
+3'teyken sonuçta 0, 14 şurada bir değer olsun. Demek benim şöyle bir fonksiyonum var. Ve ben şimdi ne yapmam gerekiyor? Şu doğrunun eğimini alacağım. Şu doğrunun eğimi nedir? F3'den F1'i çıkardım, 3'den de 1'i çıkardım. Eşittir.
+
+250
+00:45:32,935 --> 00:45:44,856
+Benden istenen nedir? 2. 2'nin de ya bir noktasına göre eğimini alacağım ya da 3 noktasına göre eğimini alacağım.
+
+251
+00:45:44,856 --> 00:45:57,155
+Canım hangisini istiyorsam. 1'e göre almışım ben. Öyleyse eğim nedir? Y'lerin farkı f2-f1, x-1.
+
+252
+00:45:57,155 --> 00:46:02,355
+3'ün ve 1'in fonksiyonda değerleri belli
+
+253
+00:46:02,355 --> 00:46:05,636
+F2'nin ise belli değil
+
+254
+00:46:05,636 --> 00:46:09,215
+Bunları çıkardım, çarptım, böldüm
+
+255
+00:46:09,215 --> 00:46:12,275
+F2'nin değeri 0.49 çıktı
+
+256
+00:46:12,275 --> 00:46:17,955
+Şimdi bakalım zaten burası 0.49
+
+257
+00:46:17,955 --> 00:46:23,675
+Bunların illa bu aralığa gelir diyemem
+
+258
+00:46:23,675 --> 00:46:35,295
+çünkü değişkenlerin bir küçük bir büyük bir küçük bir büyük böyle fark ettiği için şu an ben bir fonksiyon uydurmadım.
+
+259
+00:46:35,295 --> 00:46:48,835
+Sadece eğimden gittim. Bir sonraki yöntemde bu noktalardan geçen doğruyu bulacağım. O doğru üzerinde x'e istediğini koyup alacaksın.
+
+260
+00:46:48,835 --> 00:46:56,835
+Şu an siz şu x'lerden bu fx'leri veren fonksiyonun hangi fonksiyon olduğunu bilmiyorsunuz.
+
+261
+00:46:57,496 --> 00:47:00,235
+Çünkü onu bulan bir yöntem değil.
+
+262
+00:47:00,755 --> 00:47:08,156
+Bu sadece eğimi kullanarak söylenen x noktasında fonksiyonun almış olduğu değeri bana veriyor.
+
+263
+00:47:09,335 --> 00:47:10,735
+B şıkkına bakalım.
+
+264
+00:47:11,496 --> 00:47:16,535
+f2 değerini x2 ile 6 arasında verin.
+
+265
+00:47:16,535 --> 00:47:17,375
+Tamam.
+
+266
+00:47:18,835 --> 00:47:26,195
+eksi 2'nin değeri eksi 90, bunun değeri eksi 27'ymiş.
+
+267
+00:47:27,035 --> 00:47:28,955
+Yine nasıl yapacağız?
+
+268
+00:47:29,515 --> 00:47:34,455
+F6'dan eksi F2'nin değerini çıkardım.
+
+269
+00:47:34,955 --> 00:47:37,755
+6'dan da eksi 2'yi çıkardım.
+
+270
+00:47:37,755 --> 00:47:42,595
+Sonra 2'yi ya eksi 2 ya da 6 ile eğimini aldım.
+
+271
+00:47:43,035 --> 00:47:45,195
+Ben 6 ile eğimini almışım.
+
+272
+00:47:45,195 --> 00:47:57,996
+F2'nin F6'dan farkı, 2'nin 6'dan farkı yine bilinmeyen olarak burada sonuç yine aynı sonucu verecektir.
+
+273
+00:47:59,095 --> 00:48:13,195
+Yani farklı x değerlerini verip x eşittir 2'de ne olur diye sorulduğunda 1 ile 3'ü verdim farklı sonuç, eksi 2 ile 6'yı verdim farklı sonuç çıkacak diye bir şey yok.
+
+274
+00:48:13,195 --> 00:48:24,835
+Ama unutmayın bakın burası önemli ben size desem ki bu x değerlerini sağlayan fx fonksiyonu nedir?
+
+275
+00:48:24,835 --> 00:48:30,415
+O zaman bu yöntemi kullanamazsın çünkü ortada fonksiyon falan yok.
+
+276
+00:48:30,415 --> 00:48:34,915
+Bu sadece eğim bilgisini kullanarak
+
+277
+00:48:35,219 --> 00:48:36,219
+x noktasında merak edilen x noktasında fonksiyonun alabileceği değeri tahmin etmeye çalışıyor. O kadar. Peki, şimdi gelelim. Bu noktalardan geçen bir fonksiyonun ne olduğu bana sorulsa ne yapacağım? Onu görelim. Bir ara verelim arkadaşlar. Beş geçe gelelim.
+
+278
+00:49:05,219 --> 00:49:06,560
+Tamam mı?
+
+279
+00:49:08,620 --> 00:49:09,379
+Anlaştık mı?
+
+280
+00:49:10,280 --> 00:49:11,120
+Anlaştık.
+
+281
+00:49:11,699 --> 00:49:12,080
+Okey.
+
+282
+01:03:19,923 --> 01:03:20,923
+Hazır mıyız? Hazırız hocam. Tamam. Şimdi dedik ki verilen noktalardan bir doğru geçirdiğimizde doğrunun ne olduğunu bilmeyip sadece o verilen ilk noktasında fonksiyonun hangi değeri aldığını bulmak istiyorsak eğimden yararlanırız dedik. Ama ya doğruya ihtiyacımız olursa ne olacak? İşte onda da izleyeceğimiz yol,
+
+283
+01:03:49,923 --> 01:04:05,043
+şu yine bu da bir doğrusal enterpolasyon yöntemi. Yine bir kapalı aralığımız var. X değişkeni AB kapalı aralığında ve bir Fx'e A'yse
+
+284
+01:04:05,043 --> 01:04:13,043
+interpolasyon fonksiyonu
+
+285
+01:04:13,043 --> 01:04:14,983
+bu niye aşağıya kaydı?
+
+286
+01:04:15,923 --> 01:04:18,043
+şunun kalemi çıkmıyor şu an
+
+287
+01:04:18,043 --> 01:04:22,083
+interpolasyon fonksiyonu
+
+288
+01:04:22,083 --> 01:04:24,323
+büyük F olduğunu biliyoruz
+
+289
+01:04:24,323 --> 01:04:27,743
+ve bir doğru geçirmek istiyorum
+
+290
+01:04:27,743 --> 01:04:29,303
+bu doğru olduğuna göre
+
+291
+01:04:29,303 --> 01:04:31,263
+doğrum da nedir benim?
+
+292
+01:04:31,483 --> 01:04:32,623
+ax artı b
+
+293
+01:04:32,623 --> 01:04:34,583
+birinci dereceden bir doğru
+
+294
+01:04:34,583 --> 01:04:48,983
+Burada x yerine a koyduğunda gerçekte nasıl f a'yı elde ediyorsam, interpolasyonda da a koyduğunda aynı değeri elde edeceğim.
+
+295
+01:04:48,983 --> 01:04:51,523
+Ya da buna yaklaşıkta diyebiliriz.
+
+296
+01:04:51,523 --> 01:05:00,763
+gerçek fonksiyona x yerine b koyduğumda fb elde ediyorsam
+
+297
+01:05:00,763 --> 01:05:04,843
+interpolasyon fonksiyonunda da fb'yi elde edeceğim.
+
+298
+01:05:04,843 --> 01:05:09,644
+Amacım nedir? Bu ikisinin birbirine çok çok yakın olması.
+
+299
+01:05:10,703 --> 01:05:17,523
+Verilen a-b aralığındaki noktalardan da bana bir doğru geçir deniyor.
+
+300
+01:05:17,523 --> 01:05:24,803
+Doğru'mda ax artı bir bana geçir. Gerçekte bu mudur değil midir bilmiyorum.
+
+301
+01:05:25,303 --> 01:05:31,563
+Enterpolasyon fonksiyonunun bir doğru olduğu söylendiği için de büyük fx diyorum.
+
+302
+01:05:32,603 --> 01:05:40,144
+Şimdi ne yapacağım? Yapacağım şey şu enterpolasyonda aralığım benim nedir?
+
+303
+01:05:40,144 --> 01:06:09,644
+a ve b. Önce x yerine a'yı koydum. Küçük a'yı. a x yerine küçük a'yı koyduk. Artı b. Fonksiyon neye eşit olacak? Büyük f a'ya. Büyük f a'da yaklaşık olarak küçük f a'ya eşitti. f a'yı eşitledik. Sonra x yerine b'yi koydum. x yerine b'yi koyduk. Büyük a b artı büyük b eşittir.
+
+304
+01:06:09,644 --> 01:06:28,343
+interpolasyondaki x'in yerinde de b var. fb'yi de küçük fb'yi eşitledim. Neden büyük f'lere eşitlemedim? Zaten benim amacım bu interpolasyon fonksiyonu bunu bulmak. Daha bunun ne olduğunu bilmiyorum.
+
+305
+01:06:28,884 --> 01:06:39,063
+Yaklaşık olarak bunlara eşit olacağını biliyorum. Bunu bilmiyorum, bunu bile bilmem a ve b kat sayılarını bilmemi gerektiriyor.
+
+306
+01:06:39,644 --> 01:07:00,563
+Öyleyse iki tane bilinmeyenim var. Büyük A ve büyük B. İki tane de denklemin var. Bunları çözüyorum. Şurada artı, şuna eksi, şuna eksi, buna eksi dersem B'ler birbirini götürürse burası ne oldu?
+
+307
+01:07:00,563 --> 01:07:09,683
+A, A-B eşittir, F-A-FB
+
+308
+01:07:09,683 --> 01:07:12,944
+Benim bilinmeyenim nedir?
+
+309
+01:07:12,944 --> 01:07:17,944
+A, F-A-FB'nin altına A-B'yi getirdim.
+
+310
+01:07:18,900 --> 01:07:48,299
+A'nın ne olduğunu bulabilmek için bunu çözüyorum. Ay bu iğrençlikten kurtulmalıyız. Bunu çözüyorum. A'yı buldum. Gidiyorum. Ya bunda ya da bunda fark etmez. A'yı yerine koyuyorum ve B'yi elde ediyorum. A'yı yerine koyduğunuzda da B'yi elde ediyoruz.
+
+311
+01:07:48,299 --> 01:07:56,059
+o zaman elimde hem B'yi bulmak hem de A'yı bulmam için iki tane denklemin var.
+
+312
+01:07:56,600 --> 01:08:00,740
+Küçük A küçük B'nin, F A F B'nin ne olduğunu biliyorum.
+
+313
+01:08:01,379 --> 01:08:04,039
+Benim interpolasyon fonksiyonum da bu.
+
+314
+01:08:04,800 --> 01:08:14,019
+Büyük A'yı ve büyük B'yi bulursam işte diyelim ki buldum 5x artı 3 gibi bir interpolasyon fonksiyonum olacak.
+
+315
+01:08:14,019 --> 01:08:15,800
+Bu da ne demektir?
+
+316
+01:08:15,799 --> 01:08:29,739
+sana verilmiş olan inputları bu fonksiyonda yerine koyduğunda elde ettiğin f değerleri yaklaşık olarak gerçek f değerlerine eşittir çıkacak.
+
+317
+01:08:32,239 --> 01:08:37,799
+Peki, burada da işte yaptığımız şey bu.
+
+318
+01:08:37,800 --> 01:08:55,800
+Bu interpolasyon fonksiyonunda A yerine gittik bunu koyduk. X, B yerine de bunu koyduk. Artık benim elimde bir önceki yöntemde olduğu gibi işte 5 olursa bunun değeri ne olur gibi bir soru değil.
+
+319
+01:08:55,800 --> 01:09:17,959
+senin interpolasyon fonksiyonun bu. Sen git buraya x'e ne koyarsan koy. 3, 5, 7, 113, 500, 702 fark etmez. O x değerinde fonksiyonun eğer o noktalardan bir doğru geçiyorsa sonucu budur.
+
+320
+01:09:17,959 --> 01:09:41,200
+Doğru geçip geçmediğini nereden bileceğiz hocam? Elbette bilemezsiniz. İlk başlarda böyle bir şey verildiğinde doğru geçirirsin, parabol geçirirsin, üstel bir fonksiyon geçirirsin, trigonometrik geçirirsin. En az hatayı hangisi vermişse onunla yoluna devam edersin.
+
+321
+01:09:41,200 --> 01:09:45,739
+ama sınavda ödev gibi şeylerde biz size diyeceğiz.
+
+322
+01:09:45,879 --> 01:09:51,940
+Buradan şöyle bir polinom geçir, şunu geçir çünkü zaman yetmez.
+
+323
+01:09:53,319 --> 01:09:56,500
+Şimdi ikisi arasındaki farkı anladınız.
+
+324
+01:09:56,860 --> 01:09:59,780
+Burada elimde bir fonksiyonum var.
+
+325
+01:10:00,360 --> 01:10:05,440
+Bununla ilgili bir örneğim olsaydım ama buraya koymamışım.
+
+326
+01:10:07,080 --> 01:10:10,200
+Bununla ilgili örnek çok kolay.
+
+327
+01:10:10,200 --> 01:10:38,420
+şöyle bir şey yapalım. Bize densin ki x değerleri işte demin ki ya Allah Allah şöyle yapıyorum ben bu şeye sinir oldum şu kalemi alıyorum kırmızı olsun bana diyorlar ki x'in değerleri 2, 4 ve 6
+
+328
+01:10:38,419 --> 01:10:50,419
+fx'in değerleri de şöyle bir şey olsun 2x artı 1 olsun ben bunu bulmaya çalışacağım.
+
+329
+01:10:50,419 --> 01:10:58,679
+4, 5, 9, 12 ve 13 bunlar verilmiş.
+
+330
+01:10:58,679 --> 01:11:08,840
+acaba bu değerlerden nasıl bir doğru geçirirsin ki bu değerleri sağlasın?
+
+331
+01:11:08,840 --> 01:11:12,920
+Ve ben 7 nedir deyince hemen fonksiyonda yerine koy budur.
+
+332
+01:11:13,359 --> 01:11:17,120
+1 nedir deyince hemen fonksiyonda yerine koy bul.
+
+333
+01:11:17,684 --> 01:11:22,963
+Peki, bu şeylerden gidelim.
+
+334
+01:11:31,380 --> 01:11:55,380
+AB aralığı vereceğiz. O zaman buradaki AB aralığım nedir benim? 2 ile 6. Şimdi bakalım. FA'nın değeri nedir? 5. FB'nin değeri nedir? 13. Ondan sonra bölü A-B-4.
+
+335
+01:11:55,380 --> 01:12:21,799
+F'a neydi? 5'ti. B neydi? 6'tı. 30. A 2. F B 13. Doğru yapıyorum inşallah. 26. B 6 A'da burası da 4. Şimdi burası ne oldu? 30'dan 26'yı çıkardım. 4. Bölü 4. Burası 1.
+
+336
+01:12:21,799 --> 01:12:36,920
+Burası ne oldu? 5'den eksi 13'ü çıkardım. Burası eksi 8. Aşağısı da eksi 4. Burası da artı 2 çıktı.
+
+337
+01:12:36,920 --> 01:12:57,600
+interpolasyon fonksiyonum ne oldu? 2x artı 1. Bakın zaten gerçek fonksiyonum da 2x artı 1'di. Ben bunu bilmiyorum. Bana ölçümler yapmışlar. Bunları veriyorlar. Buradan da diyorlar bir doğru geçir. Ya da ben bir doğru geçiriyorum.
+
+338
+01:12:57,600 --> 01:13:24,860
+İşte koydum formülünde yerine doğrundu 2x artı 1. Ne kadar doğru? Koyduğum her değerde aynı sonucu elde ediyorsam ben o zaman fx ile küçük fx arasındaki fark nedir? Sıfırdır. Epsilon hatamdan bile küçük. Yani hata denilen bir şey yok çünkü sonuç sıfır.
+
+339
+01:13:24,859 --> 01:13:33,119
+Sana bundan sonra gelip 10 nedir deseler sen gideceksin x yerine 10 koyacaksın 2, 20, 21 diyeceksin
+
+340
+01:13:33,119 --> 01:13:40,899
+Sana diyecekler ki eksi 5 se ne olacak gideceksin x yerine eksi 5 koyacaksın eksi 9 diyeceksin
+
+341
+01:13:40,899 --> 01:13:43,380
+Anlatabildim mi arkadaşlar?
+
+342
+01:13:44,540 --> 01:13:46,659
+Bu formülü de nasıl çıkardık?
+
+343
+01:13:48,240 --> 01:13:53,159
+Doğru da verilen bir a'yı koydum bir de b'yi koydum
+
+344
+01:13:53,159 --> 01:14:21,960
+Bunları gerçek fonksiyon gibi eşitledim. A'yı çektik, B'yi çektik. Bulduklarımızı fonksiyonda yerine koyduk. İşte bana doğrunun denklemi çıktı. Soru var mı? Soru yok hocam. Peki. Şimdi burada ekran çeviremiyorduk. Ekranı çevirebilmek için bunları siliyorsun.
+
+345
+01:14:23,159 --> 01:14:26,219
+Bunu kapatıyorsun, öyle ekran dönüyor.
+
+346
+01:14:27,540 --> 01:14:34,059
+Şimdi yine kuatratik.
+
+347
+01:14:34,519 --> 01:14:41,339
+Kuatratik demek ikinci dereceden bir fonksiyon demektir.
+
+348
+01:14:41,339 --> 01:14:52,719
+İkinci dereceden bir fonksiyonsa benim üç tane nokta gereklidir kuatratik bir interpolasyon uygulanabilmesi için.
+
+349
+01:14:53,159 --> 01:15:01,380
+kuatratil Türkçesine eğrisel diye çeviriyorlar ama ikinci dereceden bir fonksiyon gelecek buraya.
+
+350
+01:15:01,960 --> 01:15:07,460
+İkinci dereceden fonksiyonum y eşittir ax artı bx artı c.
+
+351
+01:15:07,460 --> 01:15:10,139
+Ben yine bundan çıkacağım.
+
+352
+01:15:10,859 --> 01:15:13,040
+Yine şuradaki kaleme geçiyorum.
+
+353
+01:15:13,859 --> 01:15:13,999
+Bu.
+
+354
+01:15:15,719 --> 01:15:19,240
+Peki bana üç tane nokta gereklidir.
+
+355
+01:15:19,419 --> 01:15:22,180
+Bana verilen noktalar x sıfır noktası.
+
+356
+01:15:22,179 --> 01:15:29,859
+fonksiyonu da yerine koydum. Y0. Yani yerine koymadım. Ortada henüz bir fonksiyon.
+
+357
+01:15:30,224 --> 01:15:44,224
+Yok ama bunun bu değeri bana verilmiş. x1'i koyarsan y1 elde edersin, x2'yi koyarsan da y2'yi elde edersin diyor.
+
+358
+01:15:44,224 --> 01:15:53,224
+Ve bu üç noktadan geçen kuatratik bir fonksiyon, ikinci dereceden bir polinom geçireceğim.
+
+359
+01:15:53,224 --> 01:16:07,904
+Buradan geçirdiğim ikinci derecede şöyle düzgün, şöyle bir şey, düzgün de çizemedim. Böyle bir şey olsun. Tamam olsun. Ama bu nedir? Bu fonksiyon nedir? Bilmiyorum ne olduğunu.
+
+360
+01:16:07,904 --> 01:16:18,944
+Ve bana diyor ki x3'de işte ne olursa şu arada bir değer verilsin fonksiyonun değeri ne olur? Bunu bulacaksın.
+
+361
+01:16:18,943 --> 01:16:41,843
+Yöntemlerden bir tanesi işte diyor x0'ı y0 böyle bir ikilim var. x1 y1 diye bir ikilim. x2 y2 diye bir ikilim var. Benim bir de x3'üm var. Buna karşılık bana neyi soruyor? fx3'ü soruyor. Nasıl bulacağız?
+
+362
+01:16:41,843 --> 01:17:02,843
+Buradan geçirilen ikinci dereceden bir denklem ise x'lerin yerine x0'ın değerini koyuyorum. x0'da fonksiyon y0 değerini veriyor. Bunu yazıyorum. x1'i koyuyorum fonksiyonda x yerine y1'de değeri y1'e eşitliyorum.
+
+363
+01:17:02,843 --> 01:17:08,503
+x yerine x2'yi koyuyorum fonksiyonda, y2'yi eşitliyorum.
+
+364
+01:17:09,143 --> 01:17:11,923
+3 bilinme yani 3 denklemin çıkıyor.
+
+365
+01:17:12,563 --> 01:17:17,483
+Buradan da gidiyorsun, a'yı, b'yi, c'yi hesaplıyorsun.
+
+366
+01:17:18,143 --> 01:17:21,763
+Bu fonksiyonda yerine koyuyorsun, işle diyorsun.
+
+367
+01:17:22,303 --> 01:17:26,823
+Şu şu değerlerden geçen kuatratik fonksiyonu budur.
+
+368
+01:17:28,103 --> 01:17:30,723
+Biz böyle kullanmayız.
+
+369
+01:17:30,723 --> 01:17:32,443
+Neden kullanmayız?
+
+370
+01:17:32,843 --> 01:18:01,543
+ya illa üçüncü dereceden mi geçecek? Dört olur, beş olur. Yani diyelim ki onuncu dereceden bir fonksiyon. Ben buraya oturup on tane denklem yazacağım. On tane bilinmeyen var. On tane denklem, on tane bilinmeyenli çözeceğim. Çok uzun. Bunlarla uğraşılmaz. Bunların yerine adamlar ortaya yöntemler atıyorlar.
+
+371
+01:18:01,543 --> 01:18:03,623
+Yine burayı silelim.
+
+372
+01:18:05,623 --> 01:18:09,663
+Bu yöntemlerden bir tanesi de o.
+
+373
+01:18:10,323 --> 01:18:13,123
+Tamam henüz o yönteme geçmedik.
+
+374
+01:18:13,643 --> 01:18:18,903
+Ya oturur diyor, bu üç tane denklemin var, üç bilinmeyeni çözersin.
+
+375
+01:18:19,063 --> 01:18:22,763
+On tane, onuncu derecedense on tane denklemin var.
+
+376
+01:18:23,463 --> 01:18:26,863
+On tane denklem, on bilinmeyen, onu çözersin diyor.
+
+377
+01:18:27,003 --> 01:18:28,403
+Bu birinci yoldur diyor.
+
+378
+01:18:28,403 --> 01:18:48,903
+İkinci yol ise yine aynı şekil var. İkinci yol ise biraz daha karışık. Şöyle karışık. Yani bu ikinci dereceden olduğu için böyle bu üçüncü, dördüncü dereceden olsa buraya durmadan yeni terimler eklenecek.
+
+379
+01:18:48,903 --> 01:19:06,383
+Şu formül nasıl çıkarıldı bunlar da ayrı hikayeler ama bir başka çözüm yolu da B0, B0, fx0'a eşittir diyor.
+
+380
+01:19:06,383 --> 01:19:15,463
+Sonra B1 diyor. B1 x-x0, B1'in nasıl hesaplandığını göstereceğiz.
+
+381
+01:19:15,463 --> 01:19:20,843
+Sonra B2, x-x0, x-x1
+
+382
+01:19:21,747 --> 01:19:40,747
+Dördüncü dereceden olsaydı burası B3 olacaktı. x-x0, x-x1, x-x2 diye gidecekti. Böyle bla bla diye devam ediyor. Bunların hepsi çok el oyalayan ve külfetli işlemler aslında.
+
+383
+01:19:40,747 --> 01:19:56,588
+Peki B2 nasıl çözülüyor? B2'de ne var? X1 ve X0 var. X1 ve X0 noktasındaki eğimi yazıyor yine. Fx1-fx0 bölü X1-x0.
+
+384
+01:19:56,588 --> 01:20:13,588
+Peki B2 ne olacak? B2'de de, pardon burada yanlış anlatmışım, B1'de X0 ile X1 arasındaki eğimi yazdım.
+
+385
+01:20:13,588 --> 01:20:28,468
+Burada ise x2 ile x1 arasındaki ve x1 ile x0 arasındaki eğimler yazılıyor. Bunların farkı alınıyor. x2 eksi x0 deniyor.
+
+386
+01:20:28,468 --> 01:20:51,008
+Eğer burada B3 gaz sayısı olsaydı, Fx3'ün Fx1'le, Fx2'nin Fx1'le, Fx1'in Fx0'la, tabi bunların da şeyleri var, bu farklarını alıp her birini de kendisi, aslında şöyle, olay çok büyüyor.
+
+387
+01:20:51,007 --> 01:21:05,167
+bunu böyle yazdık şurası B3 olsaydı bunun yanında bir çarpan daha olacaktı bu çarpan da 3 ile 1'i 3 ile x0'ı alacaktı
+
+388
+01:21:05,167 --> 01:21:17,227
+B4 geldiğinde bunlara yenileri eklenecekti gördüğünüz gibi işin rengi çok değişiyor yani bunları akılda tutmak da problem
+
+389
+01:21:17,227 --> 01:21:23,227
+hadi kodunu yazdım defalarca aynı şeyleri hesaplayıp kullanıyorum.
+
+390
+01:21:23,987 --> 01:21:30,567
+İşte bunlarla uğraşmak yerine yani niye bu beni hep yalancı çıkarıyor?
+
+391
+01:21:31,367 --> 01:21:38,807
+Uğraşmak yerine Gregory Newton interpolasyon yöntemini geliştiriyorlar.
+
+392
+01:21:38,807 --> 01:22:02,447
+Peki şurada hemen şuna bir örnek verecek olursak bana bu 3 nokta veriliyor. Bu noktaları kullanılarak eğrissel interpolasyon metodu ile çözlüyor. İkinci dereceden bir polinom olacak bu ve x buçuk 2 buçuk değerine karşılık gelen y değerini de bulun diyor.
+
+393
+01:22:02,447 --> 01:22:12,627
+Benim noktalarım buydu, formülüm de buydu. B1 x eksi x0, B2 ise x eksi x0, x eksi x1
+
+394
+01:22:12,627 --> 01:22:15,048
+Burada başka ne yapmış?
+
+395
+01:22:15,048 --> 01:22:44,548
+bakıyorum x0'ın yerine 1 koymuş x-1 burası da x-1 x-2 evet bunlar da var peki sonra b0'a fx0'a eşit olduğunu söylemiştik
+
+396
+01:22:44,548 --> 01:22:50,188
+B1'in nasıl eşitleneceğini, hesaplanacağını gösteren formülüm buydu.
+
+397
+01:22:50,387 --> 01:22:53,148
+X1 ile X0 noktasındaki eğimdi.
+
+398
+01:22:53,768 --> 01:23:04,947
+B2'ninki ise X1 ile X1, X1 ile X0 arasındaki eğimlerin farklarının bu X değerlerinin birbirlerine oranıydı.
+
+399
+01:23:04,947 --> 01:23:11,947
+bulduğum B0, B1 ve B2'leri de gidip burada yerine koyduk.
+
+400
+01:23:12,887 --> 01:23:17,767
+Çarptık, böldük, topladık ve şu fx değerini elde ettik.
+
+401
+01:23:18,036 --> 01:23:47,036
+Sonra bana iki buçuğu soruyor. Gidiyorum fonksiyona iki buçuk değerini koyuyorum ve değerini buluyorum. Ama size diyorum ki oturup şu fonksiyonu bulmak için bu kadar zahmetli bir şeyle uğraşmayalım. Çünkü ben bunu aslında daha hızlı bir şekilde bulacağım. Size formüllerin çıkarılması biraz zor gibi gelebilir ama inanın çok daha kolay ve efektif.
+
+402
+01:23:47,036 --> 01:23:56,015
+Bir de düşünün yani buradan ikinci derece değil üçüncü derece geçseydi buraya yeni şeyler eklenecekti.
+
+403
+01:23:56,436 --> 01:24:05,455
+B3, x-x0, x-x1, x-x2 sonra onun B3 kat sayısı bulunacak.
+
+404
+01:24:05,455 --> 01:24:14,955
+Bir üst derece olsa buraya bir terim daha geldi. Burada B4'ü hesaplayacağım. Olay çok karışacaktı.
+
+405
+01:24:14,955 --> 01:24:24,076
+Bu yüzden bunlardan kurtulmak amacıyla Gregory Nifton interpolasyon yöntemi geliştirilmiş.
+
+406
+01:24:24,855 --> 01:24:30,055
+Bugün bunun nasıl çıkarıldığını size anlatacağım.
+
+407
+01:24:30,735 --> 01:24:32,995
+Belki bir tane daha örnek yaparım.
+
+408
+01:24:33,995 --> 01:24:35,995
+Çünkü visede bu konular yok.
+
+409
+01:24:35,995 --> 01:24:49,015
+İse'den sonraki hafta bir örnek daha yapıp konuyu hatırlatıp sonra bundaki istisnai durumlardan bahsedeceğiz.
+
+410
+01:24:49,015 --> 01:24:55,195
+Sonra Lagrange interpolasyonuna geçeceğiz ve interpolasyon konusunu bitireceğiz.
+
+411
+01:24:55,675 --> 01:24:58,495
+Sonraki haftada regula geçeceğiz.
+
+412
+01:24:58,495 --> 01:25:20,336
+Şimdi Gregory Nifton, interpolasyonu, yine bu ünlü bir matematikçi, diyor ki bu interpolasyon fonksiyonu, formülün F0, birden n'e kadar sana verilmiş olan kaç tane input verisi varsa o,
+
+413
+01:25:20,335 --> 01:25:32,575
+K'nın i'inci kombinasyonu ve ileri derecede fark, i'inci dereceden ileri fark kimi F0'ı.
+
+414
+01:25:33,655 --> 01:25:37,635
+Ana enterpolasyon fonksiyonu başlangıcım bu.
+
+415
+01:25:43,507 --> 01:25:47,507
+Tamam mı? Çekilir şuradan. Bu.
+
+416
+01:25:50,707 --> 01:25:51,707
+Peki, bunu biraz açalım. F0'ı koyduk. 1'den n'e kadarsak bu nedir? K birinci kombinasyon, birinci dereceden ileri fark F0 artı, i2 oldu. K'nın ikili kombinasyonu, delta 2 F0 nokta. Nokta nokta, K'nın n'inci kombinasyonu, delta n'inci
+
+417
+01:26:20,707 --> 01:26:40,248
+dereceden F0, ileri farktan F0. Tamam. Peki, şimdi buradaki F0'lar, zaten bana bir fonksiyonun X1, X0 diye bir takım X değerleri ve F değerleri verilecek. Oradaki F0'ı kullanıyorum.
+
+418
+01:26:40,247 --> 01:27:00,307
+Delta F0, Delta kare F0, Delta N F0 bunları bilmiyorum. Bunları nereden çıkaracaktım? Fark tablosundan. Demek ki ben verilen değerler üzerinden bir fark tablosu oluşturacağım. O fark tablosundaki değerleri de buraya koyacağım.
+
+419
+01:27:00,307 --> 01:27:11,807
+Bunun dışında ne var? K'nın i'inci faktöriyeli var. K'nın i'inci faktöriyeli nasıl açılırdı? Bu nasıl açılırdı? Hatırlayalım.
+
+420
+01:27:11,807 --> 01:27:21,807
+K! bölü, İ! K-İ!
+
+421
+01:27:21,807 --> 01:27:31,507
+Şimdi yukarıdakine K!'i kadar açayım ki,
+
+422
+01:27:32,987 --> 01:27:37,527
+mesela bunun burası da aslında şurada K-İ! var.
+
+423
+01:27:37,527 --> 01:27:42,867
+bunun bir öncesi, bunun bir fazlası bu böyle gidiyor.
+
+424
+01:27:43,627 --> 01:27:48,748
+Payda da i! bölü bu vardı. Bunlar da birbirini götürüyor.
+
+425
+01:27:48,748 --> 01:28:03,747
+O yüzden aşağıda payda da i! kalıyor. Yukarıda da k bu kaçıncıysa 3 mü 5 mi neyi yapıyorsam k eksi 5 artı 1 de bırakıyorum.
+
+426
+01:28:03,747 --> 01:28:10,327
+çünkü bunun devamı aşağıdaki şununla faktör yerle birbirini götürüyor.
+
+427
+01:28:11,107 --> 01:28:13,747
+Benim başka bir de neye ihtiyacım var?
+
+428
+01:28:13,747 --> 01:28:16,807
+Bu K. K değeri nedir?
+
+429
+01:28:17,287 --> 01:28:23,207
+K değeri de x, i-x0 bölü h.
+
+430
+01:28:23,887 --> 01:28:32,467
+Yani i1 ise x1 ile x0, 2 ise x2 ile x0 diye gidecek.
+
+431
+01:28:32,467 --> 01:28:47,068
+Tabi bu da birden n'e kadar diye devam ettiği için aslında burası 1 ise x0-1, 2 ise x0-x1, x0-x2 diye de gidecek
+
+432
+01:28:47,068 --> 01:28:56,648
+Şimdi bu da kapınızda bir şey olarak kalır. Bunu da geçin. İleride bunu göreceğiz. Yani benim şöyle bir interpolasyon fonksiyonum var.
+
+433
+01:28:56,648 --> 01:29:13,347
+Buradaki sigma'yı toplama olarak açtım. Bunların ileri fark operatörleri olduğunu biliyoruz. Kombinasyonun da K ve İ ise girişleri nasıl alındığını biliyoruz. Peki devam edelim.
+
+434
+01:29:13,347 --> 01:29:16,767
+Devam edelim
+
+435
+01:29:16,767 --> 01:29:19,448
+Geldik buraya
+
+436
+01:29:19,448 --> 01:29:23,547
+Şimdi yeniden kalemi aldık
+
+437
+01:29:23,547 --> 01:29:26,648
+F0'ı buraya koyduk
+
+438
+01:29:26,648 --> 01:29:27,928
+Şimdi burada ne var?
+
+439
+01:29:28,467 --> 01:29:30,487
+K'nın birinci faktöriyeli
+
+440
+01:29:30,487 --> 01:29:33,228
+K'nın birinci faktöriyeli neydi?
+
+441
+01:29:34,088 --> 01:29:34,728
+Ne olabilir?
+
+442
+01:29:35,948 --> 01:29:37,728
+K'nın birinci faktöriyeli
+
+443
+01:29:37,728 --> 01:29:39,588
+Tamam öyle yazayım
+
+444
+01:29:39,588 --> 01:29:41,967
+K'nın birinci faktöriyeli yazdım
+
+445
+01:29:41,967 --> 01:29:47,068
+Delta, F0, K'nın ikinci faktöriyeli,
+
+446
+01:29:47,636 --> 01:30:12,476
+Şimdi bunu şöyle gösterelim. Bu ne olacak? K, K-1, K-2. Bunu faktöryelde bırakayım ki bu aslında eksi 3, eksi 4, eksi 5 diye girecek. Aşağısı ne olacak? K2'de? 2! çarpı K-2!
+
+447
+01:30:12,476 --> 01:30:20,196
+Şu yukarıdaki ile bu yukarıdaki gittiği vakit burada K çarpı K-1 bölü 2 faktörü yer kaldı.
+
+448
+01:30:21,216 --> 01:30:22,836
+Delta kare F0.
+
+449
+01:30:23,555 --> 01:30:25,356
+K3'ü nasıl yazacağım?
+
+450
+01:30:25,875 --> 01:30:28,136
+K, K-1, K-2.
+
+451
+01:30:28,676 --> 01:30:32,095
+K-3. faktörü yer aşağısıyla gitti.
+
+452
+01:30:32,415 --> 01:30:34,076
+3 faktörü yer kaldı.
+
+453
+01:30:34,755 --> 01:30:37,955
+Bunu n'e kadar devam ettirebilirsiniz.
+
+454
+01:30:38,455 --> 01:30:40,935
+Sonra ne gelecek?
+
+455
+01:30:40,935 --> 01:31:02,015
+K'nın yerine koyacağım değer X, İ, X, 0 bölü H. Bütün K'lar yerine bunu koyuyorum. Çünkü neden? İki tane ardışık arasındaki, kök arasındaki değer H'di. Bu H1 ise bunun paydası 1'dir.
+
+456
+01:31:02,015 --> 01:31:20,675
+bazen bu 1, 2, 3 farklı sayılar olabilir o zaman 2'ye bölünebilir veya x'in her bir değerinde ç'ler de değişecek, h'ler de değişecek o zaman formül çok karışacağı için değişken dönüşümü kullanılacak
+
+457
+01:31:20,676 --> 01:31:23,595
+Şu an eşit olduğunu kabul edelim.
+
+458
+01:31:25,136 --> 01:31:27,156
+Yine bunu silelim.
+
+459
+01:31:29,235 --> 01:31:32,356
+Kapatıyoruz. Böyle bir işkence çekiyoruz.
+
+460
+01:31:33,235 --> 01:31:33,555
+Sonra.
+
+461
+01:31:34,256 --> 01:31:36,695
+Şimdi şu yukarıya bakalım.
+
+462
+01:31:39,116 --> 01:31:43,036
+Biz şu yukarıdaki satırla kapattık bir öncekini.
+
+463
+01:31:43,775 --> 01:31:46,195
+Peki k yerine ne koyacağız dedik?
+
+464
+01:31:46,195 --> 01:31:49,455
+x'i x'i x0 bölü h koydum.
+
+465
+01:31:49,455 --> 01:31:56,516
+K yerine x-x0 bölü H.
+
+466
+01:31:56,956 --> 01:31:58,615
+Bunların hepsini yazdım.
+
+467
+01:31:59,395 --> 01:32:01,356
+Sonra burası ne olacak?
+
+468
+01:32:08,819 --> 01:32:10,819
+Burası ne olacak?
+
+469
+01:32:14,131 --> 01:32:34,131
+H aşağıya indi. x-x0 delta f0. Bunu H ile çarptım. Paydaları eşitledim H. Burası x-x0-H bölü H oldu. Burada da H var, burada da H var. Bunlar HH diye aşağıya geldim.
+
+470
+01:32:34,131 --> 01:32:46,332
+Burada bunun yukarısına 2H eklendi, bunun yukarısına 1H eklendi, burası X0, delta küp F0, artı diye gitti.
+
+471
+01:32:47,371 --> 01:32:52,011
+Bundan sonra yapacağım işlem biraz düzenleme yapalım.
+
+472
+01:32:52,011 --> 01:33:03,371
+mesela şurada x0'a h'yi eksi parantezine alırsam şurayı eksi parantezine alırsam x0 artı h ediyordu.
+
+473
+01:33:03,551 --> 01:33:17,771
+x0 artı h nedir? x1. Burası x'i x'i x1 oldu. Burası da x1. Burası x0'a iki tane h eklersem burası x2 elde edildi.
+
+474
+01:33:17,771 --> 01:33:20,951
+Sonra bunu biraz daha sadeleştirelim.
+
+475
+01:33:21,411 --> 01:33:29,812
+İşte x'i x'i x'i 0, x'i x'i x'i 1, x'i x'i 1, x'i 2 geldi.
+
+476
+01:33:30,691 --> 01:33:34,391
+Sonra bana dedi ki, şurası önemli.
+
+477
+01:33:34,932 --> 01:33:38,572
+Şimdi esas gerçek formül şu.
+
+478
+01:33:39,871 --> 01:33:45,151
+Çünkü ben x'ı 0'ın başlangıç değerinin ne olduğunu bilmiyorum.
+
+479
+01:33:45,151 --> 01:34:08,031
+H'nin X'deki artımların ne olduğunu bilmiyorum. Bu artımların hepsi yani bana verilen X değerleri 1, 2, 3, 4 böyle birer birer artım gidiyorsa zaten bu H'ler 1 olacağı için paydalardan kalkacak.
+
+480
+01:34:08,031 --> 01:34:14,991
+Bunun bir de başlangıç değeri 0 olsaydı bu 0 x0 olacaktı.
+
+481
+01:34:15,471 --> 01:34:19,511
+Öyleyse bütün buradaki x0'lara 0 gelecekti.
+
+482
+01:34:20,491 --> 01:34:22,791
+Formül biraz basitleşecekti.
+
+483
+01:34:23,231 --> 01:34:28,291
+Ama bana verilen x değerlerinde 0 olmayabilir.
+
+484
+01:34:29,051 --> 01:34:31,731
+O zaman buradaki x0'ları kaldıramam.
+
+485
+01:34:32,251 --> 01:34:34,991
+Artımlar her zaman 1 olmayabilir.
+
+486
+01:34:34,991 --> 01:34:37,991
+O zaman buradaki h'leri kaldıramam.
+
+487
+01:34:38,031 --> 01:34:45,031
+Bu formülün en genel hali budur. Ama bu formülü basitleştirmek demek şudur.
+
+488
+01:34:45,551 --> 01:35:04,071
+Artımlar eğer 1 ise yani H 1 ise ve X0 başlangıcı da 0 ise formülde gittim H'ler yerine 1, X0'lar yerine 0 koyarsam formülüm şu hale gelecek.
+
+489
+01:35:04,072 --> 01:35:15,932
+Burada biraz daha ileri giderek x iyiye de x dersem formülüm bu hale gelecek.
+
+490
+01:35:15,932 --> 01:35:21,432
+Bunu ezberlemek, anlamak çok kolay.
+
+491
+01:35:21,432 --> 01:35:47,092
+Eğer x sıfırdan başlıyorsa yani x sıfır sıfırsa bana verilen x değerleri arasındaki fark birse bir polinom geçirilmesi isteniyorsa bu polinomun derecesi ne olursa olsun benim interpolasyon fonksiyonum şöyle yazılıyor.
+
+492
+01:35:47,091 --> 01:35:57,451
+F0 artı X delta F0
+
+493
+01:35:57,451 --> 01:36:00,791
+Bu bir bölü faktörü yeldir yazmadı.
+
+494
+01:36:00,791 --> 01:36:13,471
+Artı X eksi X1 delta kare F0 burası iki faktörü yeldir.
+
+495
+01:36:13,811 --> 01:36:42,732
+Bundan sonrası x, x-1, x-2, burası delta küp f0, bölü 3 faktörüeldir. Bundan sonrakini yaz dersem x, x-1, x-2, x-3, 4. dereceden f0'ın ileri farkı, bölü 4 faktörüel olacak.
+
+496
+01:36:42,732 --> 01:37:05,392
+Bu formül işte basit olduğu için eğer H değerim 1 değilse, başlangıcım 0 ile başlamıyorsa bir değişken dönüşümü işlemi yapılarak formülün bu hale getirilerek kullanılması sağlanacak.
+
+497
+01:37:05,392 --> 01:37:09,511
+Bu önümüzdeki sınavdan sonrakinin konusu.
+
+498
+01:37:09,511 --> 01:37:23,511
+Şu an şunu bilir, ben Gregory Nifton interpolasyonu çalışacaksam bu formülün nasıl çıkarıldığını bilelim ama bana en son hali gerekli.
+
+499
+01:37:23,511 --> 01:37:38,831
+gerekli. Enterpolasyon fonksiyonu bu. Burada n'i açtım. Bu hale getirdim. Burada da k n'leri açtım. Kombinasyonları bu hale getirdim.
+
+500
+01:37:38,831 --> 01:38:01,391
+K yerine koyacağım değer bu. K'lar yerine bu değeri koydum. Koyabilirsek, Mauss'um yine gitti. K'ları koydum. K'lara koydum. İşte paydaları falan filanı eşitledim. Bu hale getirdim.
+
+501
+01:38:01,391 --> 01:38:14,251
+Burada eksi parantezleri alarak bu x1, 2h eklersen x2, 3h eklersen x3 olduğunu bildiğim için en son da bu hale geldi.
+
+502
+01:38:14,251 --> 01:38:30,611
+Bu durum eğer x0, 0 değilse buradaki x0'ları kaldıramam. Tablomda x0'ın değeri 5 mi verilmiş? Buradaki x0'lara hep 5 yazmak zorundayım.
+
+503
+01:38:31,392 --> 01:38:55,112
+Ama x0, 0 verilmişse otomatikman buralardan 0 gidiyor. Aksi takdirde x0'ın değeri neyse o yazılır. Eğer artımlar 1 değil, diyelim ki bütün artımlar 3, öyleyse buradaki h'ler yerine hep 3 gelecek. 3, 3'ün karesi, 3'ün küpü, 3'ün dördüncü kuvveti gider.
+
+504
+01:38:55,112 --> 01:39:00,112
+Eğer hepsi birse bu H'leri de formülden sileceğim
+
+505
+01:39:00,112 --> 01:39:18,931
+Peki hocam aynı H'ler değil yani şöyle değerlerim var 2 var, 7 var, 15 var, 16 var, burada fark 5, burada fark 8, burada fark efendim bilmem kaç
+
+506
+01:39:18,931 --> 01:39:29,252
+o zaman ilgili yerde nedir? Buradaki fark 2 mi? O zaman buraya 2, buradaki fark 5 mi? Buradakine 5 yazman gerekir.
+
+507
+01:39:29,252 --> 01:39:43,752
+Ama bunlar işi çok karıştırdığı ve beni hata yapmayı sürüklediği için ben elimdeki bu değerleri öyle bir ara işlem yapacağım ki
+
+508
+01:39:43,752 --> 01:39:55,752
+x0'ın başlangıcını 0, x'ler arasındaki artımı da 1'e dönüştürerek en basit haliyle fonksiyonu,
+
+509
+01:39:55,752 --> 01:40:00,011
+interpolasyon fonksiyonunu bu şekilde kullanacağım.
+
+510
+01:40:01,311 --> 01:40:03,511
+Şimdi bir tane örnek yapalım.
+
+511
+01:40:03,511 --> 01:40:09,632
+Bana deniyor ki işte bir yere gittim bir ölçüm yaptım.
+
+512
+01:40:10,011 --> 01:40:12,811
+X'in bu değerlerine karşılık.
+
+513
+01:40:12,979 --> 01:40:24,979
+f'in bu değerlerini elde etti. Bunu Gregory-Nifton interpolasyonunu kullanarak uygun olan fonksiyonu bulmuş.
+
+514
+01:40:24,979 --> 01:40:35,979
+Tamam, bulalım. Önce bakıyorum. Enterpolasyon fonksiyonunun en basit halini kullanabilir miyim? Şurayı da biliyorum.
+
+515
+01:40:35,979 --> 01:40:56,000
+Şurası x0, x1, x2, şurası x3, 4, 5, 6, burası da x6. Bunlar da biliyorum ki şurası f0, burası f1, burası da f6.
+
+516
+01:40:56,000 --> 01:40:59,919
+x'in başlangıç değeri sıfırmış.
+
+517
+01:41:00,880 --> 01:41:05,680
+Artımlara bakıyorum x'deki artımlar hep bir, h'de bir.
+
+518
+01:41:05,680 --> 01:41:12,680
+O zaman ben o Gregory Nifton'un en basit halini kullanabilirim.
+
+519
+01:41:13,700 --> 01:41:15,399
+Keşke o formül gelseydi.
+
+520
+01:41:16,219 --> 01:41:19,679
+Neyse, o formül...
+
+521
+01:41:22,996 --> 01:41:29,476
+Şimdi buraya yazmayayım çıkacak. O formül şu formül.
+
+522
+01:41:30,996 --> 01:41:31,996
+Ama formülü de yazmamışım buraya ya. O formül şu formül. Şimdi bu formülde nelere ihtiyacım var? F0'ı biliyorum. E, x'leri tamam bilmiyorum. Zaten bulunacak değer x'e bağlı bir fonksiyon oluşturacağım. Benim nelere ihtiyacım var? Şu ileri farklara. Birinci, ikinci, üçüncü dereceden. Onları nasıl buluyordum? Sonlu fark tablosunu buluyordum.
+
+523
+01:42:00,996 --> 01:42:30,836
+oluşturuyordum. Şimdi birinci dereceden ileri farkla F0'ı bulalım. İleri farksa ne yapıyordum? Eksi 2'den eksi 4'ü çıkarıyorum. Ne olur? Eksi 2'den eksi 4'ü çıkarırsam eksi 2 artı 4 artı 2 kalır. 14'den eksi 2'yi çıkardım 16. 62'den 14'ü çıkardım 48. 160'dan 62 98.
+
+524
+01:42:30,996 --> 01:42:59,676
+38, 326'dan 160, 166, 578'den 326'yı çıkardım 252. Bu kolonun hepsi sabitlendi mi? Ya da 0 oldu mu? Hayır. Öyleyse ne yapacağım? 2. dereceden ileri farkı hesaplayacağım. Delta kare, mesela burası neydi? Delta kare F0'dı. Delta kare F0 ne olacak? 16'dan 2'yi çıkardım 14.
+
+525
+01:42:59,676 --> 01:43:19,156
+Delta kare F1'i 48'den 16'yı çıkardım, 32. Delta kare F2'i 98'den 48'i çıkardım, 50. Böyle yaptım, yaptım. Baktım burası yine sabit değil. Öyleyse 3. dereceden ileri farkı aldım.
+
+526
+01:43:19,155 --> 01:43:27,535
+32'den 14'ü çıkardım, 18, 50'den 12'yi çıkardım, 18, hepsi sahip.
+
+527
+01:43:27,535 --> 01:43:30,395
+Artık bunu devam ettirmeme gerek yok.
+
+528
+01:43:30,735 --> 01:43:40,295
+Çünkü burası 0, 0, 0, 4. 5. 0, 0, 6. 0 diye devam eder.
+
+529
+01:43:40,955 --> 01:43:44,615
+Peki, benim formülüm neydi?
+
+530
+01:43:44,615 --> 01:44:14,055
+Formülüm neydi neydi diye duruyorum ama bir türlü ortada formül yok. Şuraya yazalım formülüm, interpolasyon fonksiyonu. Eğer h1 x0'da 0 ise neydi? f0 artı x delta f0 artı x x-1 bölü 2 faktöriyel delta kare
+
+531
+01:44:14,615 --> 01:44:40,475
+F0 artı x, x-1, x-2 bölü 3! delta küp F0. Bunu daha fazla yazmıyorum çünkü F3'te bittiğini görüyorum. F3'te bu bitti. Peki şimdi koyalım. F0'ın değeri nedir?
+
+532
+01:44:40,475 --> 01:45:09,216
+x-4 koydum, x, delta f0'ın değeri nedir? delta f0'ın değeri 2 koydum, x x-1 bölü 2 faktörü yani 2'dir, delta kare f0 nedir? 14, 14'ü yazdık, artı x x-1 x-2 bölü 3 faktörü yani 6, delta küp f0 nedir? 18
+
+533
+01:45:09,855 --> 01:45:10,855
+18'i yazdık, çarptık, böldük, şu değer çıktı. 3x küp eksi 2x kare artı 4 eksi 4. Yani bu x değerlerine karşılık bu f değerlerinin alındığı durumda bir fonksiyon uyduracaksam bu üçüncü dereceden bir polinom olurmuş. Şuradaki üçüncü derece aslında
+
+534
+01:45:39,855 --> 01:45:49,716
+bana şunu da söylüyor. İleri fark 3'te bu sabitlendiyse benim fonksiyonum 3. dereceden olmak zorundadır.
+
+535
+01:45:50,275 --> 01:46:06,716
+Ne kadar doğrulukla buldum? x yerine 0 koysam eksi 4 çıkacak. İşte eksi 4. x yerine 1 koysam 3, 2 çıkardım 1, 1 daha 2, eksi 4'ü çıkardım eksi 2.
+
+536
+01:46:06,716 --> 01:46:22,635
+x yerine 6'yı koysam da 578 çıkacak. Çünkü sıfır hatayla buldum. Çünkü elimle özellikle ben böyle bir şey yazıp bunun x, f değerlerini verdim ki düzgün bir sonuç çıksın diye.
+
+537
+01:46:22,635 --> 01:46:38,656
+sonra adamın biri geldi bana dedi ki x 3.5 ise f ne olur? Git burada x yerine 3.5 koy, sonuç neyse odur. %100 de buna güvenebilirsin.
+
+538
+01:46:38,655 --> 01:46:53,695
+Ama yeniden söylüyorum. Başlangıç değeri sıfır ve artımlar birse formülün en basit halini kullanıyorsun. Yoksa o komplike halini kullanacağım.
+
+539
+01:46:53,695 --> 01:47:18,076
+Ben onu kullanmak istemiyorum. Kullanmak istemiyorsam da değişken dönüşümü diye bir ara işlem yapıyoruz. O değişken dönüşümü x'i yeniden sıfırmış gibi x'in değerlerinin de farkı birmiş gibi olayı bana hazırlıyor tabloyu ve oradan yoluma devam ediyorum.
+
+540
+01:47:18,076 --> 01:47:39,255
+O yüzden oraları biraz karışık. Şimdi vize öncesi oraya girmiyorum ama dediğim gibi interpolasyon da vizeye dahil değil. Bu hafta konuyu burada bitiriyorum. Vizeden sonra interpolasyon konusunu ama lütfen bir bakarak gelin. Tamam mı?
+
+541
+01:47:41,255 --> 01:47:43,195
+Sorunuz var mı arkadaşlar?
+
+542
+01:47:46,316 --> 01:47:47,676
+Sanırım yok hocam.
+
+543
+01:47:48,076 --> 01:48:13,736
+Tamam. Sınavam dikkatli çalışın. Başka ne söyleyeyim? Hesap makinesi yanınızda olsun ya da olmasın. Yani bilgisayarda da hesap yapabilirsiniz. Hiç fark etmez. Ben sizlere güveniyorum. Siz de benim güvenimi boşa çıkartmayın. Ne demek istediğimi anlatabilmişimdir diye düşünüyorum.
+
+544
+01:48:13,735 --> 01:48:31,455
+Hepinize iyi bayramlar diliyorum. Ailenizle güzel bir bayram geçirin. Ondan sonraki zaten haftaya, bayram bu hafta, haftaya görüşelim. Haa haftaya derse gelecek misiniz?
+
+545
+01:48:31,455 --> 01:48:38,975
+vize haftaları ders olmuyor diye biliyorum hocam ama oluyor mu?
+
+546
+01:48:38,975 --> 01:48:46,875
+Haftaya ders değil olmuyor. Ha özür dilerim ya. Tamam haftaya vize haftası olmuyor. Ondan sonra, vizelerden sonra.
+
+547
+01:48:49,475 --> 01:48:49,875
+Bir düşünce.
+
+548
+01:48:50,875 --> 01:48:52,835
+Online devam edecek galiba değil mi hocam?
+
+549
+01:48:53,435 --> 01:48:53,775
+Ders.
+
+550
+01:48:53,775 --> 01:48:54,175
+Söyle.
+
+551
+01:48:55,235 --> 01:48:57,975
+Ders online olarak yani online yüzle karışım olarak devam edecek.
+
+552
+01:48:57,975 --> 01:49:01,275
+Evet. Etecek ama aynen böyle anlatacağım.
+
+553
+01:49:01,275 --> 01:49:09,275
+Yani çünkü tatlıyı kullanabilme imkanım olmayacak. Tatlıyı bir şey yazsam onlar dinleyecek olan tatlıyı görmüyor.
+
+554
+01:49:09,876 --> 01:49:10,876
+Yani aynı hesaba gidiyor da neyse bilmiyorum. Akışa bırakalım olayları. İyi bayramlar diliyorum ve iyi akşamlar size. İyi bayramlar hocam teşekkürler. Hadi hoşçakalın. Hocam, sınavda soruların birden fazla cevabı olabilir değil mi? Yani Ahmet Hoca bugün tam konuşmadık demişti de sizinle. Hani sınavdan önce beliriz. O ne geçti ben de onunla konuşmadım demekti.
+
+555
+01:49:39,876 --> 01:49:53,315
+o benimle konuşmadıysa ya şimdi dedim ya soruları hazırlamaya başladık ama tam bitmedi ama eğer varsa zaten bunu biz size söyleriz sınavın başında.
+
+556
+01:49:55,175 --> 01:49:56,556
+Tamam hocam.
+
+557
+01:49:56,615 --> 01:49:57,255
+Tamam mı?
+
+558
+01:49:57,896 --> 01:49:58,995
+Teşekkür ederim.
+
+559
+01:49:59,515 --> 01:50:05,776
+Tamam. Şu an şimdi ne desem yalan. Bilmiyorum. Dan yetleşmedi tam.
+
+560
+01:50:06,716 --> 01:50:08,675
+Hocam sonuç haklar var demiştiniz değil mi?
+
+561
+01:50:08,675 --> 01:50:24,096
+Hayır, sonlu farklar, sonlu farkları tek başına sormanın bir esprisi olmaz. Çünkü o bu konunun içeriğindedir. Sonlu farklardan da sormayız. Yani sonlu farklara kadar çalışın. Tamam mı?
+
+562
+01:50:24,515 --> 01:50:26,495
+Hocam önceki soruya geri dönebiliyor muyuz?
+
+563
+01:50:27,575 --> 01:50:35,755
+Evet, ben dönülmemesini adil bulmuyorum. Ahmet hocayı da ikna ettim. Sorulara dönülebilecek.
+
+564
+01:50:35,755 --> 01:50:36,876
+Teşekkürler.
+
+565
+01:50:36,876 --> 01:50:53,515
+ama dediğim gibi ne olur kendi gayretinizde yapın çünkü final klasik olacağı için finalde çok bocalarsınız o yüzden kendi gayretinizde yaparsınız sizin için çok iyi olur.
+
+566
+01:50:53,515 --> 01:50:57,935
+Zaten iki vizeye çalışırsanız finale çalışmanız bile gerek yok.
+
+567
+01:50:57,935 --> 01:51:21,736
+şey dedim ikinci vizede de ağırlık daha fazla farklar, interpolasyon ve regresyon olacaktır. Ben vizeleri iyi çalışırsam finale ne çalışayım? Sadece şöyle bir hızlıca bakmak kalır. Daha ağır olan, içerik olan derslerinize zaman ayırırsınız. Tamam mı? Çıkabilir miyiz artık?
+
+568
+01:51:23,015 --> 01:51:24,435
+Tamamdır hocam, teşekkür ederiz.
+
+569
+01:51:24,495 --> 01:51:25,596
+İyi, hadi hoşçakalın.
+
+570
+01:51:25,596 --> 01:51:27,476
+İyi bayramlar, iyi günler hocam
+
+571
+01:51:27,476 --> 01:51:28,896
+İyi bayramlar hepimize
