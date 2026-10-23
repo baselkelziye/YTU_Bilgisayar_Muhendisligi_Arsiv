@@ -249,6 +249,7 @@
 
 #### 📚 Faydalı Olabilecek Kaynaklar
 
+- 📄 **Ders Kayıtları:** [İş Sağlığı ve Güvenliği 2 Ders Kayıtları Altyazıları](./%C4%B0%C5%9F%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1%20ve%20G%C3%BCvenli%C4%9Fi%202/ders_kayitlari/) ✨
 - 📄 [Genel Çıkmış Sorular](https://drive.google.com/drive/folders/1imIiwx0xxIPWREGP-YqotnFdUku8Ealf)
   - ℹ️ Kaynaklar öğrenciler tarafından oluşturulmuştur. Bundan dolayı içeriklerin doğruluğu garanti edilemez.
 
