@@ -19,7 +19,16 @@ readme_olustur/main
 AGENTS.md
 !readme_olustur/*.json
 
-# graphify: sadece son graf ve rapor takip edilir; cache, manifest, snapshot ve ara dosyalar yerel kalır
+# graphify: son graf (gzip'li, LFS'siz GitHub limitinin altında), rapor ve
+# semantik (LLM) önbellek takip edilir; ham graph.json, AST önbelleği (CPU ile
+# bedavaya yeniden üretilir), manifest, snapshot ve ara dosyalar yerel kalır.
 graphify-out/*
-!graphify-out/graph.json
+!graphify-out/graph.json.gz
 !graphify-out/GRAPH_REPORT.md
+!graphify-out/cache/
+graphify-out/cache/*
+!graphify-out/cache/semantic/
+
+# Claude Code: kolayca yeniden üretilebilir, takip edilmez
+.claude/settings.json
+CLAUDE.md
